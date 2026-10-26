@@ -17,6 +17,11 @@ Barry exactly (with source) or label a paraphrase.
   Loron et al. (2026) argue that Prototaxites was not a fungus. Earp (2024) places the Yea
   Baragwanathia beds mostly in the Early Devonian, which weakens the Silurian-Baragwanathia
   claim. Each is recorded in the relevant card.
+- **Card quality** (Claude): a separate Sonnet agent audited a sample of four cards
+  (`docs/audits/2026-10-26-card-sample-audit.md`). Of 58 claims, 44 were supported, 0 wrong,
+  2 misattributed, 7 overstated and 5 unverifiable. The errors were lost hedges and citation
+  drift, not wrong numbers. The nine flagged claims are fixed. All cards stay `draft`: no number
+  in them should become a model prior until it has been checked against its primary source.
 - **Card conventions settled in use** (Claude): names follow current nomenclature (`Aglaophyton
   majus`, file `aglaophyton-majus.md`); citations use the conventional volume year, and the DOI
   checker accepts the print or online year; DOIs may contain brackets (SICI form).
