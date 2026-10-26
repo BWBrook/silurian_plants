@@ -1,0 +1,72 @@
+# Charter
+
+Status: **Stage 0, orientation** (opened 2026-10-26). No research question is chosen yet.
+
+## The idea
+
+Barry's starting point, in his words (chat, 2026-10-26): "a simulation modelling project on the
+evolution of early land plants (late Ordovician to early Devonian), but it's a very nascent
+thought". He frames it as "a long-term development project that might prove infeasible or
+uninteresting, but is worth … at least exploring", with no hurry, and with the structure left
+free to evolve.
+
+## Why this interval
+
+Between roughly 470 and 393 Ma, land plants went from a dispersed-spore record with no
+recognisable bodies, through centimetre-scale leafless axes, to lycopsids and euphyllophytes with
+leaves, roots, secondary-growth precursors and metre-scale height. Nearly every innovation that
+defines vascular plants appears in that window: desiccation-tolerant spores, cuticle and
+stomata, lignified conducting cells, branching sporophytes independent of the gametophyte,
+apical dominance, leaves and roots. The same plants are implicated in changes to weathering,
+atmospheric CO2 and O2, river form and soil. The record is unusually uneven, with abundant spores
+and a few exceptional deposits (the Rhynie Chert above all) set against long gaps in
+megafossils, so most explanations of the pattern remain verbal. That combination of a major
+evolutionary transition, rich constraints and few quantitative tests is the case for modelling.
+
+## What would make it worth doing
+
+A framing earns a modelling programme if it meets all four tests:
+
+1. **Discriminating evidence.** Competing hypotheses predict outcomes that the fossil, proxy or
+   experimental record can tell apart: trait sequences, timing, size distributions, diversity
+   or disparity patterns, geochemical signals.
+2. **Novelty.** The model adds something the precedents (`docs/precedents.md`) do not: a
+   mechanism, a coupling, a confrontation with data, or a reanalysis that changes a conclusion.
+3. **Tractability.** The data can be assembled and the model run with resources on the mesh,
+   without years of bespoke data collection.
+4. **Interest.** Barry finds the question worth his attention.
+
+If no framing passes tests 1 and 2 after orientation, the project is parked with a short written
+account of why. That account is itself a useful output.
+
+## Route
+
+0. **Orientation** (current): taxon cards (`taxa/`), a period primer (`docs/primer.md`), a review
+   of modelling precedents (`docs/precedents.md`) and candidate framings (`docs/framings.md`).
+   Ends with a choice of framing, which is Barry's call on a recommendation from the agents.
+1. **Sketch:** the smallest end-to-end model of the chosen framing, deterministic where possible.
+2. **Ground:** null models, baselines and the data the model will confront (trait matrices built
+   from the cards, occurrence data, proxy series).
+3. **Enrich:** one mechanism at a time, each motivated by a discrepancy with data.
+4. **Compare:** contrasts that discriminate between competing explanations.
+5. **Synthesise:** what is robust, what depends on representation, and what is next.
+
+Stages are a guide, not approval gates. Barry's operating principle applies: reversible work
+proceeds and is shown afterwards; first public release, submission and outward-facing messages
+are his decisions.
+
+## Outputs
+
+The repository is private for now. Candidate outputs, in any combination: the card collection
+and trait matrix as an open dataset, a review or perspective, a modelling paper with code and
+data archived, and the human–AI correspondence record published alongside.
+
+## Contributors and AI roles
+
+- Barry W. Brook: originator, scientific adviser and final reviewer.
+- Claude Opus 5.5 (Anthropic, `claude-opus-5-5`) in Claude Code: orchestration, programme
+  design, synthesis, framings, tooling.
+- Claude Sonnet 5.5 (Anthropic) subagents: literature research and first drafts of taxon cards,
+  the primer and the precedents review.
+
+`docs/decisions.md` records who decided what and when, for the eventual statement of AI roles.
