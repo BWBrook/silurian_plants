@@ -33,7 +33,8 @@ Run `check`, `index` and `matrix` after editing cards, and `dois` after adding r
   with first author, year, title and DOI, so `dois` can compare them.
 - Separate observation, interpretation and speculation; present disputes with both sides.
 - Cards record ages as ICS stage names; give finer ages in `range.notes` with their source.
-  Older literature uses pre-GTS2020 Early Devonian boundaries, which differ by several Myr.
+  Literature before 2024 mostly uses the GTS2012 Early Devonian boundaries (Lochkovian 419.2,
+  Pragian 410.8, Emsian 407.6 Ma), which differ from ours by up to 3 Myr; see `docs/primer.md` §1.
 - Card traits: `absent` means observed absent, `unknown` means not preserved or not reported,
   `na` means not applicable. Add vocabulary to `tools/cards.py` when a real case needs it.
 - A card is `draft` until a second agent or Barry has checked its facts; then `reviewed`.

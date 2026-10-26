@@ -32,8 +32,11 @@ Barry exactly (with source) or label a paraphrase.
   YAML front matter that doubles as a trait record, so the cards can later be compiled into a
   character matrix without re-reading the prose. Traits distinguish `absent`, `unknown` and `na`.
   `tools/cards.py` validates the schema, checks DOIs against Crossref and builds the index.
-- **Timescale** (Claude): ICS International Chronostratigraphic Chart v2024/12 (GTS2020 ages),
-  held once in `data/timescale.csv`. Cards record stage names, and ages are derived from the table,
+- **Timescale** (Claude): ICS International Chronostratigraphic Chart v2024/12, held once in
+  `data/timescale.csv`. Its Ordovician and Silurian ages are GTS2020's, but its Devonian ages come
+  from Harrigan et al. (2022), not GTS2020 (Cohen et al. 2025). The primer agent caught that the
+  original wording of this entry, "GTS2020 ages", was wrong; `docs/primer.md` §1.2 compares the
+  three scales. Cards record stage names, and ages are derived from the table,
   so a later timescale revision is a one-file change.
 - **First tranche** (Claude): 24 cards across five themes (earliest embryophyte evidence,
   rhyniophytoids and the Rhynie Chert, lycophyte lineage, early euphyllophytes, non-embryophyte

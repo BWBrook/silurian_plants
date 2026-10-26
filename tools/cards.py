@@ -280,7 +280,7 @@ def cmd_matrix():
         rows.append(row)
     rows.sort(key=lambda r: -(r[6] or 0))
     with open(ROOT / "data" / "traits.csv", "w", newline="") as f:
-        w = csv.writer(f)
+        w = csv.writer(f, lineterminator="\n")
         w.writerow(header)
         w.writerows(["" if v is None else v for v in r] for r in rows)
     print(f"wrote data/traits.csv ({len(rows)} taxa)")
