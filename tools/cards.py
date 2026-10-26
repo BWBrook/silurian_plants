@@ -7,12 +7,15 @@
     uv run tools/cards.py check   # schema and vocabulary checks on taxa/*.md
     uv run tools/cards.py dois    # every DOI in taxa/ and docs/ against Crossref
     uv run tools/cards.py index   # rewrite taxa/README.md
+    uv run tools/cards.py matrix  # rewrite data/traits.csv from the cards' trait records
 """
 
 import csv
 import json
 import re
 import sys
+import time
+import unicodedata
 import urllib.error
 import urllib.parse
 import urllib.request
@@ -66,7 +69,8 @@ REQUIRED = ["name", "authority", "rank", "kind", "group", "lineage", "placement_
 SECTIONS = ["In brief", "Morphology and anatomy", "Age and distribution",
             "Affinity and controversies", "Ecology and physiology",
             "Why it matters for modelling", "Open questions"]
-DOI_RE = re.compile(r"\b10\.\d{4,9}/[^\s\"'<>\])]+[^\s\"'<>\]).,;:]")
+DASHES = str.maketrans({c: "-" for c in "\u2010\u2011\u2012\u2013\u2014\u2212"})
+DOI_RE = re.compile(r"\b10\.\d{4,9}/[^\s\"]+")
 
 
 def timescale():
@@ -130,7 +134,7 @@ def check_card(path, stages):
             problems.append(f"reference {i + 1} lacks a cite string")
         elif "doi" not in ref:
             problems.append(f"reference {i + 1} lacks a doi key (use null if none exists)")
-        elif ref["doi"] is not None and not DOI_RE.fullmatch(str(ref["doi"])):
+        elif ref["doi"] is not None and not DOI_RE.fullmatch(clean_doi(str(ref["doi"]))):
             problems.append(f"reference {i + 1} doi {ref['doi']!r} is malformed")
     headings = re.findall(r"^## (.+)$", body, re.M)
     for s in SECTIONS:
@@ -153,35 +157,62 @@ def cmd_check():
     return 1 if n_bad else 0
 
 
+def clean_doi(raw):
+    """Strip trailing prose punctuation and unbalanced closing brackets (DOIs may contain both)."""
+    doi = raw.rstrip(".,;:'")
+    for opener, closer in ("()", "[]", "<>"):
+        while doi.endswith(closer) and doi.count(closer) > doi.count(opener):
+            doi = doi[:-1].rstrip(".,;:'")
+    return doi
+
+
 def crossref(doi):
-    url = "https://api.crossref.org/works/" + urllib.parse.quote(doi)
+    url = "https://api.crossref.org/works/" + urllib.parse.quote(doi, safe="/")
     req = urllib.request.Request(url, headers={"User-Agent": "silurian_plants-cards/0.1"})
-    try:
-        with urllib.request.urlopen(req, timeout=30) as r:
-            msg = json.load(r)["message"]
-    except urllib.error.HTTPError as e:
-        return {"error": f"HTTP {e.code}"}
-    except (urllib.error.URLError, TimeoutError) as e:
-        return {"error": str(e)}
-    year = (msg.get("issued", {}).get("date-parts") or [[None]])[0][0]
+    for attempt in range(5):
+        try:
+            with urllib.request.urlopen(req, timeout=30) as r:
+                msg = json.load(r)["message"]
+            break
+        except urllib.error.HTTPError as e:
+            if e.code not in (429, 500, 502, 503, 504) or attempt == 4:
+                return {"error": f"HTTP {e.code}"}
+        except (urllib.error.URLError, TimeoutError) as e:
+            if attempt == 4:
+                return {"error": str(e)}
+        time.sleep(2 ** attempt)
+    years = {(msg.get(k, {}).get("date-parts") or [[None]])[0][0]
+             for k in ("issued", "published-print", "published-online")} - {None}
     authors = msg.get("author") or []
-    return {"title": " ".join(msg.get("title") or [""]), "year": year,
-            "first_author": authors[0].get("family", "") if authors else ""}
+    return {"title": " ".join(msg.get("title") or [""]), "years": sorted(years),
+            "first_author": authors[0].get("family", "") if authors else "",
+            "first_given": authors[0].get("given", "") if authors else ""}
+
+
+def norm(s):
+    s = unicodedata.normalize("NFKD", s).translate(DASHES)
+    return "".join(c for c in s if not unicodedata.combining(c)).lower()
 
 
 def words(s):
-    return {w for w in re.findall(r"[a-z]{4,}", s.lower())}
+    return {w for w in re.findall(r"[a-z]{4,}", norm(s))}
 
 
 def cmd_dois():
     occurrences = {}
-    for path in card_paths() + sorted(DOCS.glob("**/*.md")):
+    for path in card_paths():
+        meta, _ = read_card(path)
+        for ref in meta.get("references") or []:
+            if isinstance(ref, dict) and ref.get("doi"):
+                doi = clean_doi(str(ref["doi"])).lower()
+                occurrences.setdefault(doi, []).append((path.relative_to(ROOT), ref.get("cite", "")))
+    for path in sorted(DOCS.glob("**/*.md")):
         lines = path.read_text().splitlines()
         for i, line in enumerate(lines):
-            for doi in DOI_RE.findall(line):
+            for raw in DOI_RE.findall(line):
                 context = " ".join(lines[max(0, i - 1): i + 1])
-                occurrences.setdefault(doi.lower(), []).append((path.relative_to(ROOT), context))
-    with ThreadPoolExecutor(8) as pool:
+                occurrences.setdefault(clean_doi(raw).lower(), []).append((path.relative_to(ROOT), context))
+    with ThreadPoolExecutor(3) as pool:
         records = dict(zip(occurrences, pool.map(crossref, occurrences)))
     n_bad = 0
     for doi, rec in sorted(records.items()):
@@ -194,13 +225,14 @@ def cmd_dois():
                 issues = []
                 if overlap < 0.6:
                     issues.append(f"title overlap {overlap:.0%}")
-                if rec["year"] and str(rec["year"]) not in context:
-                    issues.append(f"year {rec['year']} not in citation")
-                if rec["first_author"] and rec["first_author"].lower() not in context.lower():
+                if rec["years"] and not any(str(y) in context for y in rec["years"]):
+                    issues.append(f"year ({'/'.join(map(str, rec['years']))}) not in citation")
+                names = {norm(rec["first_author"]), norm(rec["first_given"])} - {""}
+                if names and not any(n in norm(context) for n in names):
                     issues.append(f"first author {rec['first_author']} not in citation")
                 if not issues:
                     continue
-                issue = "; ".join(issues) + f" — Crossref: {rec['first_author']} {rec['year']}, {rec['title']}"
+                issue = "; ".join(issues) + f" — Crossref: {rec['first_author']} {'/'.join(map(str, rec['years']))}, {rec['title']}"
             n_bad += 1
             print(f"{path}: {doi}\n  {issue}")
     print(f"{len(records)} distinct DOIs, {n_bad} flagged")
@@ -229,8 +261,34 @@ def cmd_index():
     return 0
 
 
+def cmd_matrix():
+    stages = timescale()
+    traits = sorted(NUMERIC_TRAITS) + list(TRAIT_STATES)
+    header = ["slug", "name", "group", "kind", "first", "last", "first_ma", "last_top_ma"]
+    for t in traits:
+        header += [f"{t}_min", f"{t}_max"] if t in NUMERIC_TRAITS else [t]
+    tops = dict(zip(list(stages)[1:], list(stages.values())[:-1]))
+    rows = []
+    for path in card_paths():
+        meta, _ = read_card(path)
+        rng, tr = meta["range"], meta.get("traits") or {}
+        row = [path.stem, meta["name"], meta["group"], meta["kind"], rng["first"], rng["last"],
+               stages.get(rng["first"]), tops.get(rng["last"])]
+        for t in traits:
+            v = tr.get(t) or {}
+            row += [v.get("min"), v.get("max")] if t in NUMERIC_TRAITS else [v.get("state")]
+        rows.append(row)
+    rows.sort(key=lambda r: -(r[6] or 0))
+    with open(ROOT / "data" / "traits.csv", "w", newline="") as f:
+        w = csv.writer(f)
+        w.writerow(header)
+        w.writerows(["" if v is None else v for v in r] for r in rows)
+    print(f"wrote data/traits.csv ({len(rows)} taxa)")
+    return 0
+
+
 if __name__ == "__main__":
-    commands = {"check": cmd_check, "dois": cmd_dois, "index": cmd_index}
+    commands = {"check": cmd_check, "dois": cmd_dois, "index": cmd_index, "matrix": cmd_matrix}
     if len(sys.argv) != 2 or sys.argv[1] not in commands:
         sys.exit(__doc__)
     sys.exit(commands[sys.argv[1]]())

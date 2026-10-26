@@ -12,6 +12,7 @@ recorded in `docs/decisions.md`.
   is generated.
 - `docs/`: charter, decisions, primer, precedents review, candidate framings.
 - `data/timescale.csv`: ICS v2024/12 stage base ages, the single source of numerical ages.
+- `data/traits.csv`: generated trait matrix, one row per card.
 - `tools/cards.py`: card validation, DOI checking and index generation.
 
 ## Commands
@@ -20,9 +21,10 @@ recorded in `docs/decisions.md`.
 uv run tools/cards.py check   # schema and vocabulary
 uv run tools/cards.py dois    # DOIs in taxa/ and docs/ against Crossref
 uv run tools/cards.py index   # regenerate taxa/README.md
+uv run tools/cards.py matrix  # regenerate data/traits.csv
 ```
 
-Run `check` and `index` after editing cards, and `dois` after adding references.
+Run `check`, `index` and `matrix` after editing cards, and `dois` after adding references.
 
 ## Conventions
 

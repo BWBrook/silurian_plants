@@ -1,0 +1,25 @@
+slug,name,group,kind,first,last,first_ma,last_top_ma,axis_diameter_mm_min,axis_diameter_mm_max,height_cm_min,height_cm_max,branching,leaves,stomata,conducting_tissue,sporangium_position,spores,heterospory,rooting,gametophyte
+early-glomeromycotan-fungi,Early arbuscular mycorrhizal (glomeromycotan) fungi,fungus,assemblage,Darriwilian,Emsian,469.4,393.47,,,,,na,na,na,na,na,na,na,na,na
+ordovician-cryptospores,Ordovician cryptospore assemblages,cryptospore-plant,dispersed_spores,Darriwilian,Hirnantian,469.4,443.1,,,,,unknown,unknown,unknown,unknown,unknown,cryptospores,unknown,unknown,unknown
+ambitisporites,Ambitisporites,incertae-sedis,dispersed_spores,Katian,Lochkovian,452.8,413.02,,,,,unknown,unknown,unknown,unknown,unknown,trilete,unknown,unknown,unknown
+tortotubus-protuberans,Tortotubus protuberans,fungus,mesofossil,Rhuddanian,Emsian,443.1,393.47,,,,,na,na,na,na,na,na,na,na,na
+cooksonia,Cooksonia,rhyniophytoid,megafossil,Sheinwoodian,Lochkovian,432.9,413.02,0.2,1.5,1,6,isotomous,absent,present,tracheids,terminal,trilete,absent,unknown,unknown
+nematothallus,Nematothallus,nematophyte,mesofossil,Ludfordian,Lochkovian,425.0,413.02,,,,,na,na,na,na,na,na,na,na,na
+zosterophyllum,Zosterophyllum,zosterophyll,megafossil,Ludfordian,Emsian,425.0,393.47,0.3,5.1,4.5,11.6,mixed,absent,present,tracheids,lateral,unknown,absent,rooting-axes,unknown
+aberlemnia-caledonica,Aberlemnia caledonica,rhyniophytoid,megafossil,Pridoli,Lochkovian,422.7,413.02,0.4,1.8,6.7,,isotomous,absent,unknown,unknown,terminal,unknown,unknown,unknown,unknown
+prototaxites,Prototaxites,nematophyte,megafossil,Pridoli,Givetian,422.7,,56,,,883,none,na,na,na,na,na,na,unknown,na
+baragwanathia-longifolia,Baragwanathia longifolia,lycopsid,megafossil,Lochkovian,Pragian,419.62,410.62,,,,,unknown,microphylls,unknown,tracheids,lateral,unknown,unknown,unknown,unknown
+partitatheca,Partitatheca,cryptospore-plant,mesofossil,Lochkovian,Lochkovian,419.62,413.02,,2,,,isotomous,absent,present,unknown,terminal,cryptospores,unknown,unknown,unknown
+aglaophyton-majus,Aglaophyton majus,protracheophyte,megafossil,Pragian,Emsian,413.02,393.47,,6,,20,isotomous,absent,present,hydroids,terminal,trilete,absent,rhizoids,known
+asteroxylon-mackiei,Asteroxylon mackiei,lycopsid,megafossil,Pragian,Emsian,413.02,393.47,,10,,30,mixed,enations,present,tracheids-G,lateral,trilete,absent,rooting-axes,unknown
+drepanophycus-spinaeformis,Drepanophycus spinaeformis,lycopsid,megafossil,Pragian,Givetian,413.02,,5.9,18,,,mixed,microphylls,present,tracheids-G,lateral,unknown,unknown,rhizomes,unknown
+eophyllophyton-bellum,Eophyllophyton bellum,basal-euphyllophyte,megafossil,Pragian,Pragian,413.02,410.62,,,,,unknown,megaphylls,unknown,tracheids,lateral,unknown,unknown,unknown,unknown
+horneophyton-lignieri,Horneophyton lignieri,protracheophyte,megafossil,Pragian,Emsian,413.02,393.47,,2,,20,isotomous,absent,present,tracheids,terminal,trilete,absent,rhizomes,known
+psilophyton,Psilophyton,basal-euphyllophyte,megafossil,Pragian,Eifelian,413.02,387.95,1.5,5,30,60,mixed,enations,present,tracheids-P,terminal,trilete,absent,rhizomes,unknown
+rhynia-gwynne-vaughanii,Rhynia gwynne-vaughanii,rhyniopsid,megafossil,Pragian,Emsian,413.02,393.47,,3,,20,mixed,absent,present,tracheids-S,terminal,trilete,absent,rhizoids,known
+rhynie-chert-gametophytes,Rhynie Chert gametophytes,incertae-sedis,megafossil,Pragian,Emsian,413.02,393.47,2,,0.4,2,mixed,absent,present,tracheids,na,na,na,rhizoids,known
+riccardiothallus-devonicus,Riccardiothallus devonicus,bryophyte,megafossil,Pragian,Pragian,413.02,410.62,,,,,isotomous,absent,unknown,unknown,unknown,unknown,unknown,unknown,known
+winfrenatia-reticulata,Winfrenatia reticulata,lichen,mesofossil,Pragian,Pragian,413.02,410.62,,,,,na,na,na,na,na,na,na,na,na
+pertica,Pertica,basal-euphyllophyte,megafossil,Emsian,Eifelian,410.62,387.95,,,100,300,pseudomonopodial,absent,unknown,unknown,terminal,trilete,absent,unknown,unknown
+renalia-hueberi,Renalia hueberi,zosterophyll,megafossil,Emsian,Emsian,410.62,393.47,1,1.5,11,30,pseudomonopodial,absent,unknown,tracheids,terminal,trilete,absent,unknown,unknown
+sawdonia-ornata,Sawdonia ornata,zosterophyll,megafossil,Emsian,Emsian,410.62,393.47,,5,,,pseudomonopodial,enations,present,tracheids,lateral,trilete,absent,unknown,unknown

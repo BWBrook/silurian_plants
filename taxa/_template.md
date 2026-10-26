@@ -1,5 +1,5 @@
 ---
-# Taxon card template. Copy to taxa/<slug>.md (lowercase, hyphenated: aglaophyton-major.md).
+# Taxon card template. Copy to taxa/<slug>.md (lowercase, hyphenated: asteroxylon-mackiei.md).
 # The front matter is data: tools/cards.py validates it and builds taxa/README.md from it.
 # Use null for "not yet looked up". For traits, distinguish observed `absent` from `unknown`
 # (not preserved or not reported) and `na` (not applicable, e.g. stomata in a fungus).
