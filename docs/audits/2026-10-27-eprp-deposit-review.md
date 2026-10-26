@@ -20,8 +20,8 @@ judgements in `docs/framings.md` and corrects one claim in `docs/precedents.md`.
   `context/deposits/rogger2026-treed-vegetation-model/Manifest.toml`, the Julia lockfile of the
   TREED deposit. The EPRP session added it to the context manifest and its script during this
   review, so the manifest now has 89 entries. The project's `data/eprp/.gitattributes`, which
-  stops git from converting line endings so that the hashes hold on any checkout, is the only
-  file the manifest builder reports as unlisted.
+  stops git from converting line endings so that the hashes hold on any checkout, is now skipped
+  by the manifest builder like `.gitignore`, so the builder reports no unlisted files.
 - **Numbers.** Recomputed the PBDB core and flagged totals and the per-stage counts, collections,
   genera and dispersed-spore rows with DuckDB. All are identical to `record/README.md` §3
   (2,628 core and 1,076 flagged occurrences).

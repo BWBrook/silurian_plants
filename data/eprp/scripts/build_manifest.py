@@ -14,7 +14,7 @@ from pathlib import Path
 
 AREAS = ["library", "record", "context", "pointers"]
 FIELDS = ["path", "description", "source", "source_version", "licence", "script", "rows", "sha256", "extracted"]
-IGNORE = {"README.md", "MANIFEST.tsv", ".gitignore", ".DS_Store"}
+IGNORE = {"README.md", "MANIFEST.tsv", ".gitignore", ".gitattributes", ".DS_Store"}
 
 rows, problems = [], []
 for area in AREAS:
