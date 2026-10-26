@@ -34,11 +34,11 @@ traits:
   height_cm:
     min: 30
     max: 60
-    note: "Secondary compilation only (Wikipedia 'Psilophyton', accessed 2026-10-26): P. dapsile about 30 cm, P. forbesii about 60 cm, citing Kasper et al. 1974 and Andrews et al. 1968, which I could not read. Fragmentary specimens make these lower bounds for the species, not a genus range."
+    note: "Textbook reconstructions, not measurements: P. dapsile about 30 cm, P. forbesii about 60 cm (Taylor et al. 2009, p. 259, as relayed by Wikipedia 'Psilophyton'). Not yet usable as model priors; check against the species descriptions (Andrews et al. 1968; Kasper et al. 1974)."
   axis_diameter_mm:
-    min: 1.5
-    max: 5
-    note: "Example axes of P. crenulatum: 3 mm (basal) and 5 mm (apical section), growing tip 1.5 mm (Doran & Tomescu 2025). Other species not compiled; main axes of P. forbesii and P. princeps are probably stouter."
+    min: null
+    max: null
+    note: "No measured range compiled. Spot measurements on two axes of P. crenulatum, in a study of emergences: 3 mm (basal) and 5 mm (apical section), growing tip 1.5 mm (Doran & Tomescu 2025). Other species not compiled; main axes of P. forbesii and P. princeps are probably stouter."
   branching:
     state: mixed
     note: "Varies by species. P. crenulatum: 2-7 dichotomies per vegetative branch, double dichotomies appearing as trifurcations (Doran 1980). P. dawsonii: isotomous and anisotomous junctions (Niklas & Banks 1985). Compilations report a differentiated main axis with spiral laterals in P. princeps and P. forbesii, but Tomescu & Whitewoods (2024) score branches of all orders as irregular and radially symmetrical."
@@ -74,6 +74,12 @@ habitat: >-
 status: draft
 updated: 2026-10-26
 references:
+  - cite: "Andrews HN, Kasper AE, Mencher E (1968). Psilophyton forbesii, a new Devonian plant from northern Maine. Bulletin of the Torrey Botanical Club 95: 1-11."
+    doi: 10.2307/2483801
+  - cite: "Kasper AE, Andrews HN, Forbes WH (1974). New fertile species of Psilophyton from the Devonian of Maine. American Journal of Botany 61: 339-359."
+    doi: 10.1002/j.1537-2197.1974.tb12253.x
+  - cite: "Taylor TN, Taylor EL, Krings M (2009). Paleobotany: The Biology and Evolution of Fossil Plants, 2nd edn. Academic Press, Burlington."
+    doi: null
   - cite: "Doran JB (1980). A new species of Psilophyton from the Lower Devonian of northern New Brunswick, Canada. Canadian Journal of Botany 58: 2241-2262."
     doi: 10.1139/b80-259
   - cite: "Doran JB, Tomescu AMF (2025). On the origin of euphyllophyte roots: hypotheses from an Early Devonian Psilophyton. Annals of Botany 137: 1689-1708."
@@ -146,11 +152,11 @@ The Pragian record is *P. primitivum* from the Posongchong Formation, dated by s
 
 ## Affinity and controversies
 
-Banks proposed the subdivision Trimerophytina in 1968 (reviewed in Banks 1975) to hold *Psilophyton* and relatives. It is now treated as a paraphyletic grade or "plexus": fossil-inclusive analyses find the seed-free euphyllophyte lineages (psilotopsids, equisetopsids, living ferns) unrelated and separated by leafless extinct lineages (Rothwell & Nixon 2006; Tomescu & Whitewoods 2024). Emsian actinostelic plants with regularly arranged laterals (*Kenrickia*, *Gothanophyton*, *Wilhowia*) belong to the plexus leading to lignophytes and seed plants (Toledo et al. 2021; Tomescu & Whitewoods 2024; Gensel 2022), in contrast to *Psilophyton*, whose branches have irregular taxis; whether *Psilophyton*-type architecture is ancestral to theirs is untested. No analysis samples Devonian euphyllophytes evenly, and the monophyly of the 14+ species is untested.
+Banks proposed the subdivision Trimerophytina in 1968 (reviewed in Banks 1975) to hold *Psilophyton* and relatives. It is now treated as a paraphyletic grade or "plexus": fossil-inclusive analyses find the seed-free euphyllophyte lineages (psilotopsids, equisetopsids, living ferns) unrelated and separated by leafless extinct lineages (Rothwell & Nixon 2006; Tomescu & Whitewoods 2024). Emsian actinostelic plants with regularly arranged laterals (*Kenrickia*, *Gothanophyton*, *Wilhowia*) belong to the plexus leading to lignophytes and seed plants (Toledo et al. 2021; Tomescu & Whitewoods 2024; Gensel 2022 instead treats *Wilhowia* as a unique lineage fitting no recognised euphyllophyte group), in contrast to *Psilophyton*, whose branches have irregular taxis; whether *Psilophyton*-type architecture is ancestral to theirs is untested. No analysis samples Devonian euphyllophytes evenly, and the monophyly of the 14+ species is untested.
 
 ## Ecology and physiology
 
-Trimerophytes were common on moist upper channel bars at Gaspé and apparently germinated and grew rapidly on freshly deposited flood muds (Griffing et al. 2000; an inference from facies). In situ erect axes of cf. *P. forbesii* occur in the Trout Valley Formation (Gastaldo 2016). Plants carried arthropod chewing and sucking wounds, wound periderm, coprolites and zygomycete spores (Banks & Colthart 1993; Banks 1981), cortical fungal bodies to 175 µm (Stubblefield & Banks 1983), and in *P. diakanthon* two spine types and a discontinuous cortical fibre layer (Colston et al. 2023). No roots are known: *P. crenulatum* had rhizomatous parts and 2,090 emergences on 28 axes, 62% on lower sides, with a probable rooting role (Doran & Tomescu 2025). Reproduction was apparently homosporous with trilete spores; the gametophyte is unknown.
+Trimerophytes were common on moist upper channel bars at Gaspé and apparently germinated and grew rapidly on freshly deposited flood muds (Griffing et al. 2000; an inference from facies). In situ erect axes of cf. *P. forbesii* occur in the Trout Valley Formation (Gastaldo 2016). Plants carried wounds suggestive of animal (perhaps arthropod) feeding, wound periderm, presumed coprolites and zygomycete spores (Banks & Colthart 1993; Banks 1981), cortical fungal bodies to 175 µm (Stubblefield & Banks 1983), and in *P. diakanthon* two spine types and a discontinuous cortical fibre layer (Colston et al. 2023). No roots are known: *P. crenulatum* had rhizomatous parts and 2,090 emergences on 28 axes, 62% on lower sides, with a probable rooting role (Doran & Tomescu 2025). Reproduction was apparently homosporous with trilete spores; the gametophyte is unknown.
 
 ## Why it matters for modelling
 

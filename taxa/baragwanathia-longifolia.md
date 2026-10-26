@@ -17,8 +17,9 @@ range:
     limestone (as cited by McSweeney et al. 2022). The older Yea 'Lower Plant Assemblage' was
     argued to be Gorstian (Rickards 2000) or Pridoli (Garratt & Rickards 1987) from graptolites, but
     brachiopod biostratigraphy and revised mapping place the Yea beds in the Pridoli-Lochkovian,
-    mostly Early Devonian (Earp 2024). Lochkovian is therefore the conservative first occurrence for
-    this species. Baragwanathia-grade lycopsids are recorded independently from the Pridoli of Bohemia
+    mostly Early Devonian (Earp 2024), though Earp calls the question only partially answered because
+    several localities, including the Gorstian-graptolite sites, lack brachiopod control. Lochkovian is
+    therefore the conservative first occurrence for this species, not a demonstrated one. Baragwanathia-grade lycopsids are recorded independently from the Pridoli of Bohemia
     (B. brevifolioides, graptolite-dated) and, tentatively, Kazakhstan (Pšenička et al. 2021; Bek et al. 2024).
 regions: [Gondwana]
 localities:
@@ -97,7 +98,7 @@ Preservation is poor. Tims & Chambers (1984) describe compressions and impressio
 
 Elles identified the associated graptolite as Monograptus uncinatus, an early Ludlow species, which gave Lang & Cookson's flora its Silurian age (as reported by Tims & Chambers 1984). Jaeger (1966) described it as a new species, M. thomasi, found M. aequabilis (a basal Lochkovian index) in plant beds 1,500 ft below the M. thomasi horizon, and concluded that the earliest adequately dated Baragwanathia was basal Lochkovian. Garratt (1978) distinguished two Yea assemblages separated by about 1,700 m of virtually unfossiliferous strata: an Early Devonian upper one and a lower one claimed as Ludlow. Hueber (1983) disputed this on the grounds that Silurian sediments of Wales, Czechoslovakia, New York and Podolia show no precursors. Garratt et al. (1984), Garratt & Rickards (1987; Monograptus cf. prognatus, Pridoli) and Rickards (2000; Gorstian) defended Silurian ages, and Kotyk et al. (2002) and Kenrick et al. (2012) accepted them.
 
-Recent work reverses much of this. McSweeney et al. (2022) call the Ludlow-to-Pragian age 'contentious' and adopt Pragian-Emsian for Ghin Ghin Road; Earp (2024) finds the Yea Broadford Formation Pridoli-Lochkovian with most of it Early Devonian, treats the monograptid identifications as unreliable, and notes that a Gorstian Bohemograptus record came from a road-making stockpile. Earp did not identify any Yea plant locality with a supported Silurian age, although some localities lack brachiopod control. The Silurian record of the genus now rests on B. brevifolioides from the Pridoli Neocolonograptus ultimus Biozone of Karlštejn, Czech Republic (Kraft & Kvaček 2017, 2021), and a Baragwanathia sp. from the Pridoli of Kazakhstan that a later compilation marks with a query (Pšenička et al. 2021; Bek et al. 2024). Pšenička et al. (2021) still list the Victorian assemblage as Ludfordian, so the literature is not uniform.
+Recent work reverses much of this. McSweeney et al. (2022) call the Ludlow-to-Pragian age 'contentious' and adopt Pragian-Emsian for Ghin Ghin Road; Earp (2024) finds the Yea Broadford Formation Pridoli-Lochkovian with most of it Early Devonian, treats the monograptid identifications as unreliable, and notes that a Gorstian Bohemograptus record came from a road-making stockpile. Earp did not identify any Yea plant locality with a supported Silurian age, but calls the question only partially answered: several localities, including the two Gorstian-graptolite sites, lack brachiopod control, and one is more likely Pridoli. The secure Silurian record of the genus is B. brevifolioides from the Pridoli Neocolonograptus ultimus Biozone of Karlštejn, Czech Republic (Kraft & Kvaček 2017, 2021), and a Baragwanathia sp. from the Pridoli of Kazakhstan that a later compilation marks with a query (Pšenička et al. 2021; Bek et al. 2024). Pšenička et al. (2021) still list the Victorian assemblage as Ludfordian, so the literature is not uniform.
 
 ## Affinity and controversies
 

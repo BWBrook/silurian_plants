@@ -18,7 +18,8 @@ range:
     textbook record is the top of the Wenlock (Homerian) of Co. Tipperary, Ireland (Edwards and
     Feehan 1980); detrital-zircon maximum depositional ages of 426 +/- 2 Ma (Ireland) and
     427 +/- 2 Ma (Capel Horeb, Wales) are consistent with a late Wenlock to early Ludlow age
-    (Garza et al. 2024), but that study does not mention the Czech material. Last: Lochkovian is
+    (Garza et al. 2024; youngest-mode ages at one kernel bandwidth, sensitive to method, with younger
+    grains attributed to Pb loss, so maxima rather than depositional ages), but that study does not mention the Czech material. Last: Lochkovian is
     the youngest securely dated record found in the sources read (C. hemisphaerica, C. paranensis,
     charcoalified C. pertoni). Edwards and Feehan (1980) state that the genus reaches the end of
     the Lower Devonian, but I found no dated Pragian or Emsian record in the sources read.
@@ -56,16 +57,17 @@ traits:
   stomata:
     state: present
     note: >-
-      Stomata and a thick-walled sterome are documented in C. pertoni and C. hemisphaerica
-      (Edwards et al. 1992); a stoma is figured on the subtending axis of Lochkovian charcoalified
+      Stomata and a thick-walled sterome were first documented in C. pertoni and C. hemisphaerica
+      by Edwards et al. (1986); a stoma is figured on the subtending axis of Lochkovian charcoalified
       C. pertoni from North Brown Clee Hill (Edwards and Kenrick 2015, from Edwards et al. 1992).
       Boyce (2008) argues they were sparse (as summarised by Edwards and Kenrick 2015).
   conducting_tissue:
     state: tracheids
     note: >-
-      Demonstrated only in Lochkovian C. pertoni: tubes with differentially thickened walls
-      in axes of Lochkovian C. pertoni (Edwards et al. 1992), including a charcoalified tracheid cast
-      with annular thickenings (Edwards and Kenrick 2015). Silurian specimens preserve no anatomy.
+      Tracheids with wall thickenings are demonstrated only in Lochkovian charcoalified C. pertoni
+      (Edwards et al. 1992), including a tracheid cast with annular thickenings (Edwards and Kenrick
+      2015). Conducting cells and vascular strands have been interpreted in Pridoli C. bohemica
+      (Libertin et al. 2022); older Silurian specimens preserve no anatomy.
   sporangium_position:
     state: terminal
     note: Single terminal sporangia, discoidal, lentil-shaped or hemispherical.
@@ -98,6 +100,8 @@ habitat: >-
 status: draft
 updated: 2026-10-26
 references:
+  - cite: "Edwards D, Fanning U, Richardson JB (1986). Stomata and sterome in early land plants. Nature 323: 438-440."
+    doi: 10.1038/323438a0
   - cite: "Edwards D, Feehan J (1980). Records of Cooksonia-type sporangia from late Wenlock strata in Ireland. Nature 287: 41-42."
     doi: 10.1038/287041a0
   - cite: "Edwards D, Davies KL, Axe L (1992). A vascular conducting strand in the early land plant Cooksonia. Nature 357: 683-685."
@@ -166,7 +170,7 @@ Boyce (2008) argued that once desiccation resistance, support and conduction are
 - Sporangium to spore scaling: 3 to 5 mm sporangium with 10 to 15 µm spores in C. barrandei; 18 to 38 µm spores elsewhere; no spore counts exist.
 - Timing: macrofossil first appearance 432 to 427 Ma, against dispersed trilete spores from the Late Ordovician; the macrofossil record probably under-samples earlier plants (inference).
 - Latitudinal spread: about 20° S (Poland, Přídolí; Pšenička et al. 2021) to 50 to 60° S (Bolivia, Ludlow; Morel et al. 1995).
-- Stomata present but sparse; tracheids only demonstrated from the Lochkovian.
+- Stomata present but sparse; tracheids with wall thickenings demonstrated only from the Lochkovian, with conducting cells interpreted in Pridoli C. bohemica.
 
 ## Open questions
 
