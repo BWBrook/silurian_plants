@@ -16,9 +16,12 @@ judgements in `docs/framings.md` and corrects one claim in `docs/precedents.md`.
 - **Documentation.** Read the top-level README, the four area READMEs and `pointers/eprp_pointers.md`
   in full.
 - **Integrity.** `scripts/build_manifest.py` recomputed the sha256 and row counts of all 88
-  delivered files; all match, and the manifests were unchanged by the run. One file is unlisted:
+  delivered files; all match, and the manifests were unchanged by the run. One file was unlisted:
   `context/deposits/rogger2026-treed-vegetation-model/Manifest.toml`, the Julia lockfile of the
-  TREED deposit.
+  TREED deposit. The EPRP session added it to the context manifest and its script during this
+  review, so the manifest now has 89 entries. The project's `data/eprp/.gitattributes`, which
+  stops git from converting line endings so that the hashes hold on any checkout, is the only
+  file the manifest builder reports as unlisted.
 - **Numbers.** Recomputed the PBDB core and flagged totals and the per-stage counts, collections,
   genera and dispersed-spore rows with DuckDB. All are identical to `record/README.md` §3
   (2,628 core and 1,076 flagged occurrences).
@@ -108,7 +111,7 @@ ranges. Several card taxa are absent from PBDB or misnamed there: *Aglaophyton* 
 
 1. Compile a dispersed-spore occurrence dataset for the Darriwilian to Emsian. It is the largest
    data gap for F3, and the deposit confirms that no existing source covers it.
-2. Add TREED's `Manifest.toml` to the context manifest, on the EPRP side.
+2. Done on the EPRP side on 2026-10-27: TREED's `Manifest.toml` is now in the context manifest.
 3. Precedents and framings were updated on 2026-10-27 to reflect this review (`docs/decisions.md`).
 
 ## References
