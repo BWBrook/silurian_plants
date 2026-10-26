@@ -18,6 +18,9 @@ the purpose, the criteria a framing must meet and the planned route.
 - [docs/framings.md](docs/framings.md): candidate research questions and a recommendation.
 - [docs/decisions.md](docs/decisions.md): dated decision record.
 - [data/timescale.csv](data/timescale.csv): ICS v2024/12 stage ages.
+- [data/eprp/](data/eprp/README.md): literature, PBDB and Macrostrat records, Earth-system context
+  and software pointers extracted from Barry's EPRP programme.
+- [docs/audits/](docs/audits/): independent checks of the cards and of the EPRP deposit.
 - [tools/cards.py](tools/cards.py): card validation, Crossref DOI checks and index generation
   (`uv run tools/cards.py check|dois|index`).
 

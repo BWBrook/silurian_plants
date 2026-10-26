@@ -1,0 +1,2 @@
+# Byte-exact: files must match the sha256 values in MANIFEST.tsv on every checkout
+* -text

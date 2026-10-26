@@ -1,0 +1,1032 @@
+binning_rule,interval,interval_base_ma,interval_top_ma,interval_overlaps_window,major_group,group_in_core,n_occurrences,n_collections,n_genera
+as_entered,Phanerozoic,538.8,0.0,yes,ALL_CORE,yes,1,1,0
+as_entered,Phanerozoic,538.8,0.0,yes,ALL_INCLUDING_FLAGGED,mixed,1,1,0
+as_entered,Phanerozoic,538.8,0.0,yes,plantae_other_or_indet,yes,1,1,0
+as_entered,Early Ordovician,486.85,471.3,yes,ALL_INCLUDING_FLAGGED,mixed,2,2,2
+as_entered,Early Ordovician,486.85,471.3,yes,algae_unspecified,no,1,1,1
+as_entered,Early Ordovician,486.85,471.3,yes,green_algae,no,1,1,1
+as_entered,Ordovician,486.85,443.1,yes,ALL_INCLUDING_FLAGGED,mixed,1,1,1
+as_entered,Ordovician,486.85,443.1,yes,green_algae,no,1,1,1
+as_entered,Tremadocian,486.85,477.1,yes,ALL_INCLUDING_FLAGGED,mixed,4,3,3
+as_entered,Tremadocian,486.85,477.1,yes,acritarchs_prasinophytes,no,4,3,3
+as_entered,Floian,477.1,471.3,yes,ALL_INCLUDING_FLAGGED,mixed,6,6,4
+as_entered,Floian,477.1,471.3,yes,acritarchs_prasinophytes,no,1,1,1
+as_entered,Floian,477.1,471.3,yes,algae_unspecified,no,1,1,1
+as_entered,Floian,477.1,471.3,yes,green_algae,no,3,3,1
+as_entered,Floian,477.1,471.3,yes,red_algae,no,1,1,1
+as_entered,Dapingian,471.3,469.4,yes,ALL_INCLUDING_FLAGGED,mixed,5,5,2
+as_entered,Dapingian,471.3,469.4,yes,algae_unspecified,no,1,1,0
+as_entered,Dapingian,471.3,469.4,yes,green_algae,no,4,4,2
+as_entered,Middle Ordovician,471.3,458.2,yes,ALL_INCLUDING_FLAGGED,mixed,2,2,1
+as_entered,Middle Ordovician,471.3,458.2,yes,green_algae,no,1,1,0
+as_entered,Middle Ordovician,471.3,458.2,yes,red_algae,no,1,1,1
+as_entered,Darriwilian,469.4,458.2,yes,ALL_CORE,yes,3,3,2
+as_entered,Darriwilian,469.4,458.2,yes,ALL_INCLUDING_FLAGGED,mixed,11,7,7
+as_entered,Darriwilian,469.4,458.2,yes,acritarchs_prasinophytes,no,1,1,1
+as_entered,Darriwilian,469.4,458.2,yes,algae_unspecified,no,2,2,1
+as_entered,Darriwilian,469.4,458.2,yes,green_algae,no,4,2,2
+as_entered,Darriwilian,469.4,458.2,yes,plantae_other_or_indet,yes,3,3,2
+as_entered,Darriwilian,469.4,458.2,yes,red_algae,no,1,1,1
+as_entered,Late Ordovician,458.2,443.1,yes,ALL_INCLUDING_FLAGGED,mixed,3,3,2
+as_entered,Late Ordovician,458.2,443.1,yes,green_algae,no,2,2,1
+as_entered,Late Ordovician,458.2,443.1,yes,red_algae,no,1,1,1
+as_entered,Sandbian,458.2,452.8,yes,ALL_CORE,yes,9,8,3
+as_entered,Sandbian,458.2,452.8,yes,ALL_INCLUDING_FLAGGED,mixed,24,13,13
+as_entered,Sandbian,458.2,452.8,yes,algae_unspecified,no,1,1,0
+as_entered,Sandbian,458.2,452.8,yes,green_algae,no,11,3,8
+as_entered,Sandbian,458.2,452.8,yes,plantae_other_or_indet,yes,9,8,3
+as_entered,Sandbian,458.2,452.8,yes,red_algae,no,3,3,2
+as_entered,Katian,452.8,445.2,yes,ALL_CORE,yes,2,2,1
+as_entered,Katian,452.8,445.2,yes,ALL_INCLUDING_FLAGGED,mixed,18,11,9
+as_entered,Katian,452.8,445.2,yes,algae_unspecified,no,2,2,0
+as_entered,Katian,452.8,445.2,yes,green_algae,no,8,5,4
+as_entered,Katian,452.8,445.2,yes,plantae_other_or_indet,yes,2,2,1
+as_entered,Katian,452.8,445.2,yes,red_algae,no,6,4,4
+as_entered,Hirnantian,445.2,443.1,yes,ALL_CORE,yes,1,1,1
+as_entered,Hirnantian,445.2,443.1,yes,ALL_INCLUDING_FLAGGED,mixed,7,7,6
+as_entered,Hirnantian,445.2,443.1,yes,dispersed_spores,yes,1,1,1
+as_entered,Hirnantian,445.2,443.1,yes,green_algae,no,5,5,4
+as_entered,Hirnantian,445.2,443.1,yes,red_algae,no,1,1,1
+as_entered,Llandovery,443.1,432.9,yes,ALL_INCLUDING_FLAGGED,mixed,11,10,4
+as_entered,Llandovery,443.1,432.9,yes,algae_unspecified,no,3,3,0
+as_entered,Llandovery,443.1,432.9,yes,green_algae,no,7,6,3
+as_entered,Llandovery,443.1,432.9,yes,red_algae,no,1,1,1
+as_entered,Rhuddanian,443.1,440.5,yes,ALL_INCLUDING_FLAGGED,mixed,1,1,1
+as_entered,Rhuddanian,443.1,440.5,yes,green_algae,no,1,1,1
+as_entered,Silurian,443.1,419.62,yes,ALL_CORE,yes,14,3,12
+as_entered,Silurian,443.1,419.62,yes,ALL_INCLUDING_FLAGGED,mixed,16,5,14
+as_entered,Silurian,443.1,419.62,yes,dispersed_spores,yes,6,1,6
+as_entered,Silurian,443.1,419.62,yes,green_algae,no,2,2,2
+as_entered,Silurian,443.1,419.62,yes,nematophytes_and_thalloid_problematica,yes,2,1,2
+as_entered,Silurian,443.1,419.62,yes,pbdb_lycophytes_incl_zosterophylls,yes,1,1,1
+as_entered,Silurian,443.1,419.62,yes,pbdb_psilophytes_incl_trimerophytes,yes,5,3,3
+as_entered,Aeronian,440.5,438.6,yes,ALL_INCLUDING_FLAGGED,mixed,8,8,1
+as_entered,Aeronian,440.5,438.6,yes,algae_unspecified,no,1,1,0
+as_entered,Aeronian,440.5,438.6,yes,green_algae,no,7,7,1
+as_entered,Telychian,438.6,432.9,yes,ALL_CORE,yes,2,2,1
+as_entered,Telychian,438.6,432.9,yes,ALL_INCLUDING_FLAGGED,mixed,18,12,10
+as_entered,Telychian,438.6,432.9,yes,acritarchs_prasinophytes,no,6,1,5
+as_entered,Telychian,438.6,432.9,yes,algae_unspecified,no,1,1,0
+as_entered,Telychian,438.6,432.9,yes,green_algae,no,9,9,4
+as_entered,Telychian,438.6,432.9,yes,plantae_other_or_indet,yes,2,2,1
+as_entered,Sheinwoodian,432.9,430.6,yes,ALL_CORE,yes,2,2,1
+as_entered,Sheinwoodian,432.9,430.6,yes,ALL_INCLUDING_FLAGGED,mixed,17,12,7
+as_entered,Sheinwoodian,432.9,430.6,yes,algae_unspecified,no,7,7,0
+as_entered,Sheinwoodian,432.9,430.6,yes,green_algae,no,3,3,3
+as_entered,Sheinwoodian,432.9,430.6,yes,nematophytes_and_thalloid_problematica,yes,2,2,1
+as_entered,Sheinwoodian,432.9,430.6,yes,red_algae,no,5,5,3
+as_entered,Wenlock,432.9,426.7,yes,ALL_CORE,yes,21,5,13
+as_entered,Wenlock,432.9,426.7,yes,ALL_INCLUDING_FLAGGED,mixed,62,21,31
+as_entered,Wenlock,432.9,426.7,yes,acritarchs_prasinophytes,no,27,7,9
+as_entered,Wenlock,432.9,426.7,yes,dispersed_spores,yes,17,1,11
+as_entered,Wenlock,432.9,426.7,yes,green_algae,no,11,10,8
+as_entered,Wenlock,432.9,426.7,yes,pbdb_seed_plants,yes,1,1,1
+as_entered,Wenlock,432.9,426.7,yes,plantae_other_or_indet,yes,3,3,1
+as_entered,Wenlock,432.9,426.7,yes,red_algae,no,3,3,1
+as_entered,Homerian,430.6,426.7,yes,ALL_CORE,yes,14,7,4
+as_entered,Homerian,430.6,426.7,yes,ALL_INCLUDING_FLAGGED,mixed,29,16,10
+as_entered,Homerian,430.6,426.7,yes,acritarchs_prasinophytes,no,3,1,2
+as_entered,Homerian,430.6,426.7,yes,algae_unspecified,no,4,4,0
+as_entered,Homerian,430.6,426.7,yes,dispersed_spores,yes,2,1,2
+as_entered,Homerian,430.6,426.7,yes,green_algae,no,3,3,2
+as_entered,Homerian,430.6,426.7,yes,nematophytes_and_thalloid_problematica,yes,5,5,1
+as_entered,Homerian,430.6,426.7,yes,pbdb_psilophytes_incl_trimerophytes,yes,4,1,1
+as_entered,Homerian,430.6,426.7,yes,plantae_other_or_indet,yes,3,2,0
+as_entered,Homerian,430.6,426.7,yes,red_algae,no,3,3,2
+as_entered,Homerian,430.6,426.7,yes,streptophyta_not_embryophyta,no,2,2,0
+as_entered,Gorstian,426.7,425.0,yes,ALL_CORE,yes,3,3,1
+as_entered,Gorstian,426.7,425.0,yes,ALL_INCLUDING_FLAGGED,mixed,5,4,2
+as_entered,Gorstian,426.7,425.0,yes,algae_unspecified,no,1,1,0
+as_entered,Gorstian,426.7,425.0,yes,nematophytes_and_thalloid_problematica,yes,3,3,1
+as_entered,Gorstian,426.7,425.0,yes,red_algae,no,1,1,1
+as_entered,Ludlow,426.7,422.7,yes,ALL_CORE,yes,12,7,4
+as_entered,Ludlow,426.7,422.7,yes,ALL_INCLUDING_FLAGGED,mixed,31,20,15
+as_entered,Ludlow,426.7,422.7,yes,acritarchs_prasinophytes,no,3,2,3
+as_entered,Ludlow,426.7,422.7,yes,algae_unspecified,no,2,2,0
+as_entered,Ludlow,426.7,422.7,yes,green_algae,no,8,8,5
+as_entered,Ludlow,426.7,422.7,yes,pbdb_lycophytes_incl_zosterophylls,yes,3,3,1
+as_entered,Ludlow,426.7,422.7,yes,pbdb_tracheophyta_other_or_indet,yes,2,2,1
+as_entered,Ludlow,426.7,422.7,yes,plantae_other_or_indet,yes,7,6,2
+as_entered,Ludlow,426.7,422.7,yes,red_algae,no,6,3,3
+as_entered,Ludfordian,425.0,422.7,yes,ALL_CORE,yes,1,1,0
+as_entered,Ludfordian,425.0,422.7,yes,ALL_INCLUDING_FLAGGED,mixed,11,8,2
+as_entered,Ludfordian,425.0,422.7,yes,acritarchs_prasinophytes,no,1,1,1
+as_entered,Ludfordian,425.0,422.7,yes,algae_unspecified,no,6,6,0
+as_entered,Ludfordian,425.0,422.7,yes,pbdb_tracheophyta_other_or_indet,yes,1,1,0
+as_entered,Ludfordian,425.0,422.7,yes,red_algae,no,3,3,1
+as_entered,Pridoli,422.7,419.62,yes,ALL_CORE,yes,65,26,22
+as_entered,Pridoli,422.7,419.62,yes,ALL_INCLUDING_FLAGGED,mixed,76,34,25
+as_entered,Pridoli,422.7,419.62,yes,acritarchs_prasinophytes,no,2,2,1
+as_entered,Pridoli,422.7,419.62,yes,algae_unspecified,no,3,3,0
+as_entered,Pridoli,422.7,419.62,yes,dispersed_spores,yes,11,1,5
+as_entered,Pridoli,422.7,419.62,yes,green_algae,no,6,5,2
+as_entered,Pridoli,422.7,419.62,yes,nematophytes_and_thalloid_problematica,yes,3,1,3
+as_entered,Pridoli,422.7,419.62,yes,pbdb_lycophytes_incl_zosterophylls,yes,6,5,2
+as_entered,Pridoli,422.7,419.62,yes,pbdb_psilophytes_incl_trimerophytes,yes,28,17,3
+as_entered,Pridoli,422.7,419.62,yes,plantae_other_or_indet,yes,17,11,9
+as_entered,Devonian,419.62,358.86,yes,ALL_CORE,yes,3,3,1
+as_entered,Devonian,419.62,358.86,yes,ALL_INCLUDING_FLAGGED,mixed,5,5,2
+as_entered,Devonian,419.62,358.86,yes,green_algae,no,2,2,1
+as_entered,Devonian,419.62,358.86,yes,pbdb_psilophytes_incl_trimerophytes,yes,1,1,1
+as_entered,Devonian,419.62,358.86,yes,plantae_other_or_indet,yes,2,2,0
+as_entered,Early Devonian,419.62,393.47,yes,ALL_CORE,yes,199,45,57
+as_entered,Early Devonian,419.62,393.47,yes,ALL_INCLUDING_FLAGGED,mixed,204,46,59
+as_entered,Early Devonian,419.62,393.47,yes,acritarchs_prasinophytes,no,2,1,1
+as_entered,Early Devonian,419.62,393.47,yes,dispersed_spores,yes,30,3,15
+as_entered,Early Devonian,419.62,393.47,yes,fungi,no,1,1,0
+as_entered,Early Devonian,419.62,393.47,yes,nematophytes_and_thalloid_problematica,yes,6,5,2
+as_entered,Early Devonian,419.62,393.47,yes,pbdb_bryophytes,yes,2,2,1
+as_entered,Early Devonian,419.62,393.47,yes,pbdb_ferns_cladoxylopsids_sphenophytes,yes,1,1,1
+as_entered,Early Devonian,419.62,393.47,yes,pbdb_lycophytes_incl_zosterophylls,yes,5,5,2
+as_entered,Early Devonian,419.62,393.47,yes,pbdb_psilophytes_incl_trimerophytes,yes,62,31,9
+as_entered,Early Devonian,419.62,393.47,yes,pbdb_tracheophyta_other_or_indet,yes,49,12,3
+as_entered,Early Devonian,419.62,393.47,yes,plantae_other_or_indet,yes,44,25,25
+as_entered,Early Devonian,419.62,393.47,yes,streptophyta_not_embryophyta,no,2,2,1
+as_entered,Lochkovian,419.62,413.02,yes,ALL_CORE,yes,55,20,22
+as_entered,Lochkovian,419.62,413.02,yes,ALL_INCLUDING_FLAGGED,mixed,62,26,27
+as_entered,Lochkovian,419.62,413.02,yes,acritarchs_prasinophytes,no,1,1,1
+as_entered,Lochkovian,419.62,413.02,yes,algae_unspecified,no,2,2,0
+as_entered,Lochkovian,419.62,413.02,yes,dispersed_spores,yes,13,3,7
+as_entered,Lochkovian,419.62,413.02,yes,green_algae,no,3,3,3
+as_entered,Lochkovian,419.62,413.02,yes,nematophytes_and_thalloid_problematica,yes,6,3,5
+as_entered,Lochkovian,419.62,413.02,yes,pbdb_lycophytes_incl_zosterophylls,yes,6,5,1
+as_entered,Lochkovian,419.62,413.02,yes,pbdb_psilophytes_incl_trimerophytes,yes,10,4,3
+as_entered,Lochkovian,419.62,413.02,yes,pbdb_tracheophyta_other_or_indet,yes,2,2,1
+as_entered,Lochkovian,419.62,413.02,yes,plantae_other_or_indet,yes,18,10,5
+as_entered,Lochkovian,419.62,413.02,yes,red_algae,no,1,1,1
+as_entered,Pragian,413.02,410.62,yes,ALL_CORE,yes,52,13,36
+as_entered,Pragian,413.02,410.62,yes,ALL_INCLUDING_FLAGGED,mixed,67,19,43
+as_entered,Pragian,413.02,410.62,yes,acritarchs_prasinophytes,no,1,1,1
+as_entered,Pragian,413.02,410.62,yes,algae_unspecified,no,1,1,0
+as_entered,Pragian,413.02,410.62,yes,dispersed_spores,yes,11,4,6
+as_entered,Pragian,413.02,410.62,yes,fungi,no,5,1,2
+as_entered,Pragian,413.02,410.62,yes,green_algae,no,4,4,2
+as_entered,Pragian,413.02,410.62,yes,nematophytes_and_thalloid_problematica,yes,8,2,5
+as_entered,Pragian,413.02,410.62,yes,pbdb_lycophytes_incl_zosterophylls,yes,5,4,3
+as_entered,Pragian,413.02,410.62,yes,pbdb_psilophytes_incl_trimerophytes,yes,13,6,9
+as_entered,Pragian,413.02,410.62,yes,pbdb_tracheophyta_other_or_indet,yes,2,2,2
+as_entered,Pragian,413.02,410.62,yes,plantae_other_or_indet,yes,13,7,12
+as_entered,Pragian,413.02,410.62,yes,red_algae,no,2,2,1
+as_entered,Pragian,413.02,410.62,yes,streptophyta_not_embryophyta,no,2,1,1
+as_entered,Emsian,410.62,393.47,yes,ALL_CORE,yes,254,43,26
+as_entered,Emsian,410.62,393.47,yes,ALL_INCLUDING_FLAGGED,mixed,268,52,33
+as_entered,Emsian,410.62,393.47,yes,acritarchs_prasinophytes,no,5,2,4
+as_entered,Emsian,410.62,393.47,yes,algae_unspecified,no,5,5,0
+as_entered,Emsian,410.62,393.47,yes,dispersed_spores,yes,18,2,8
+as_entered,Emsian,410.62,393.47,yes,green_algae,no,4,4,3
+as_entered,Emsian,410.62,393.47,yes,nematophytes_and_thalloid_problematica,yes,4,4,2
+as_entered,Emsian,410.62,393.47,yes,pbdb_bryophytes,yes,1,1,1
+as_entered,Emsian,410.62,393.47,yes,pbdb_ferns_cladoxylopsids_sphenophytes,yes,2,2,2
+as_entered,Emsian,410.62,393.47,yes,pbdb_lycophytes_incl_zosterophylls,yes,3,3,3
+as_entered,Emsian,410.62,393.47,yes,pbdb_psilophytes_incl_trimerophytes,yes,30,22,8
+as_entered,Emsian,410.62,393.47,yes,pbdb_tracheophyta_other_or_indet,yes,169,30,0
+as_entered,Emsian,410.62,393.47,yes,plantae_other_or_indet,yes,27,22,2
+as_entered,Eifelian,393.47,387.95,yes,ALL_CORE,yes,92,24,33
+as_entered,Eifelian,393.47,387.95,yes,ALL_INCLUDING_FLAGGED,mixed,102,31,41
+as_entered,Eifelian,393.47,387.95,yes,algae_unspecified,no,2,2,2
+as_entered,Eifelian,393.47,387.95,yes,dispersed_spores,yes,52,6,21
+as_entered,Eifelian,393.47,387.95,yes,green_algae,no,4,4,4
+as_entered,Eifelian,393.47,387.95,yes,pbdb_ferns_cladoxylopsids_sphenophytes,yes,2,2,0
+as_entered,Eifelian,393.47,387.95,yes,pbdb_lycophytes_incl_zosterophylls,yes,3,3,2
+as_entered,Eifelian,393.47,387.95,yes,pbdb_progymnosperms,yes,2,2,1
+as_entered,Eifelian,393.47,387.95,yes,pbdb_psilophytes_incl_trimerophytes,yes,8,6,4
+as_entered,Eifelian,393.47,387.95,yes,pbdb_tracheophyta_other_or_indet,yes,14,4,1
+as_entered,Eifelian,393.47,387.95,yes,plantae_other_or_indet,yes,11,9,4
+as_entered,Eifelian,393.47,387.95,yes,red_algae,no,3,3,1
+as_entered,Eifelian,393.47,387.95,yes,streptophyta_not_embryophyta,no,1,1,1
+as_entered,Middle Devonian,393.47,382.31,yes,ALL_CORE,yes,124,35,42
+as_entered,Middle Devonian,393.47,382.31,yes,ALL_INCLUDING_FLAGGED,mixed,124,35,42
+as_entered,Middle Devonian,393.47,382.31,yes,dispersed_spores,yes,13,2,9
+as_entered,Middle Devonian,393.47,382.31,yes,nematophytes_and_thalloid_problematica,yes,2,2,2
+as_entered,Middle Devonian,393.47,382.31,yes,pbdb_ferns_cladoxylopsids_sphenophytes,yes,13,9,8
+as_entered,Middle Devonian,393.47,382.31,yes,pbdb_lycophytes_incl_zosterophylls,yes,10,9,6
+as_entered,Middle Devonian,393.47,382.31,yes,pbdb_progymnosperms,yes,3,3,2
+as_entered,Middle Devonian,393.47,382.31,yes,pbdb_psilophytes_incl_trimerophytes,yes,20,16,6
+as_entered,Middle Devonian,393.47,382.31,yes,pbdb_seed_plants,yes,2,2,2
+as_entered,Middle Devonian,393.47,382.31,yes,pbdb_tracheophyta_other_or_indet,yes,28,5,0
+as_entered,Middle Devonian,393.47,382.31,yes,plantae_other_or_indet,yes,33,12,7
+as_entered,Givetian,387.95,382.31,yes,ALL_CORE,yes,468,107,92
+as_entered,Givetian,387.95,382.31,yes,ALL_INCLUDING_FLAGGED,mixed,479,113,100
+as_entered,Givetian,387.95,382.31,yes,acritarchs_prasinophytes,no,2,2,2
+as_entered,Givetian,387.95,382.31,yes,dispersed_spores,yes,91,11,41
+as_entered,Givetian,387.95,382.31,yes,green_algae,no,6,6,4
+as_entered,Givetian,387.95,382.31,yes,pbdb_ferns_cladoxylopsids_sphenophytes,yes,32,21,10
+as_entered,Givetian,387.95,382.31,yes,pbdb_lycophytes_incl_zosterophylls,yes,58,47,11
+as_entered,Givetian,387.95,382.31,yes,pbdb_progymnosperms,yes,35,21,7
+as_entered,Givetian,387.95,382.31,yes,pbdb_psilophytes_incl_trimerophytes,yes,30,21,8
+as_entered,Givetian,387.95,382.31,yes,pbdb_seed_plants,yes,2,2,1
+as_entered,Givetian,387.95,382.31,yes,pbdb_tracheophyta_other_or_indet,yes,193,45,1
+as_entered,Givetian,387.95,382.31,yes,plantae_other_or_indet,yes,27,22,13
+as_entered,Givetian,387.95,382.31,yes,red_algae,no,2,2,1
+as_entered,Givetian,387.95,382.31,yes,streptophyta_not_embryophyta,no,1,1,1
+as_entered,Aeronian to Telychian,,,,ALL_INCLUDING_FLAGGED,mixed,1,1,0
+as_entered,Aeronian to Telychian,,,,algae_unspecified,no,1,1,0
+as_entered,Alexandrian,,,,ALL_CORE,yes,2,1,2
+as_entered,Alexandrian,,,,ALL_INCLUDING_FLAGGED,mixed,6,3,4
+as_entered,Alexandrian,,,,acritarchs_prasinophytes,no,4,2,2
+as_entered,Alexandrian,,,,dispersed_spores,yes,2,1,2
+as_entered,Arenig,,,,ALL_INCLUDING_FLAGGED,mixed,5,2,5
+as_entered,Arenig,,,,acritarchs_prasinophytes,no,4,1,4
+as_entered,Arenig,,,,algae_unspecified,no,1,1,1
+as_entered,Ashbyan,,,,ALL_INCLUDING_FLAGGED,mixed,12,9,3
+as_entered,Ashbyan,,,,green_algae,no,2,2,1
+as_entered,Ashbyan,,,,red_algae,no,10,7,2
+as_entered,Ashgill,,,,ALL_INCLUDING_FLAGGED,mixed,17,11,6
+as_entered,Ashgill,,,,green_algae,no,9,7,3
+as_entered,Ashgill,,,,red_algae,no,8,7,3
+as_entered,Berounian,,,,ALL_CORE,yes,1,1,1
+as_entered,Berounian,,,,ALL_INCLUDING_FLAGGED,mixed,1,1,1
+as_entered,Berounian,,,,plantae_other_or_indet,yes,1,1,1
+as_entered,Blackhillsian,,,,ALL_INCLUDING_FLAGGED,mixed,4,4,1
+as_entered,Blackhillsian,,,,green_algae,no,4,4,1
+as_entered,Blackriveran,,,,ALL_INCLUDING_FLAGGED,mixed,19,7,8
+as_entered,Blackriveran,,,,acritarchs_prasinophytes,no,10,1,5
+as_entered,Blackriveran,,,,red_algae,no,9,6,3
+as_entered,Bohdalec,,,,ALL_INCLUDING_FLAGGED,mixed,1,1,1
+as_entered,Bohdalec,,,,green_algae,no,1,1,1
+as_entered,Bolindian,,,,ALL_INCLUDING_FLAGGED,mixed,1,1,1
+as_entered,Bolindian,,,,green_algae,no,1,1,1
+as_entered,Canadian,,,,ALL_INCLUDING_FLAGGED,mixed,1,1,1
+as_entered,Canadian,,,,green_algae,no,1,1,1
+as_entered,Caradoc,,,,ALL_CORE,yes,1,1,1
+as_entered,Caradoc,,,,ALL_INCLUDING_FLAGGED,mixed,197,134,8
+as_entered,Caradoc,,,,green_algae,no,27,26,4
+as_entered,Caradoc,,,,plantae_other_or_indet,yes,1,1,1
+as_entered,Caradoc,,,,red_algae,no,169,116,3
+as_entered,Caradoc to Ashgill,,,,ALL_INCLUDING_FLAGGED,mixed,1,1,1
+as_entered,Caradoc to Ashgill,,,,red_algae,no,1,1,1
+as_entered,Cassinian,,,,ALL_INCLUDING_FLAGGED,mixed,1,1,1
+as_entered,Cassinian,,,,red_algae,no,1,1,1
+as_entered,Castlemainian,,,,ALL_INCLUDING_FLAGGED,mixed,2,2,1
+as_entered,Castlemainian,,,,algae_unspecified,no,2,2,1
+as_entered,Chatfieldian,,,,ALL_INCLUDING_FLAGGED,mixed,13,12,6
+as_entered,Chatfieldian,,,,green_algae,no,6,5,3
+as_entered,Chatfieldian,,,,red_algae,no,7,7,3
+as_entered,Chatfieldian to Edenian,,,,ALL_INCLUDING_FLAGGED,mixed,4,3,2
+as_entered,Chatfieldian to Edenian,,,,green_algae,no,4,3,2
+as_entered,Chazyan,,,,ALL_INCLUDING_FLAGGED,mixed,11,9,4
+as_entered,Chazyan,,,,green_algae,no,1,1,1
+as_entered,Chazyan,,,,red_algae,no,10,8,3
+as_entered,Chazyan to Blackriveran,,,,ALL_INCLUDING_FLAGGED,mixed,2,2,2
+as_entered,Chazyan to Blackriveran,,,,green_algae,no,2,2,2
+as_entered,Clinton,,,,ALL_INCLUDING_FLAGGED,mixed,2,2,1
+as_entered,Clinton,,,,green_algae,no,2,2,1
+as_entered,Costonian to Harnagian,,,,ALL_INCLUDING_FLAGGED,mixed,2,2,2
+as_entered,Costonian to Harnagian,,,,acritarchs_prasinophytes,no,1,1,1
+as_entered,Costonian to Harnagian,,,,red_algae,no,1,1,1
+as_entered,Devonian to Carboniferous,,,,ALL_CORE,yes,1,1,1
+as_entered,Devonian to Carboniferous,,,,ALL_INCLUDING_FLAGGED,mixed,1,1,1
+as_entered,Devonian to Carboniferous,,,,plantae_other_or_indet,yes,1,1,1
+as_entered,Devonian to Early Devonian,,,,ALL_CORE,yes,3,1,3
+as_entered,Devonian to Early Devonian,,,,ALL_INCLUDING_FLAGGED,mixed,3,1,3
+as_entered,Devonian to Early Devonian,,,,pbdb_psilophytes_incl_trimerophytes,yes,1,1,1
+as_entered,Devonian to Early Devonian,,,,pbdb_tracheophyta_other_or_indet,yes,1,1,1
+as_entered,Devonian to Early Devonian,,,,plantae_other_or_indet,yes,1,1,1
+as_entered,Devonian to Eifelian,,,,ALL_CORE,yes,1,1,1
+as_entered,Devonian to Eifelian,,,,ALL_INCLUDING_FLAGGED,mixed,1,1,1
+as_entered,Devonian to Eifelian,,,,pbdb_tracheophyta_other_or_indet,yes,1,1,1
+as_entered,Devonian to Late Devonian,,,,ALL_CORE,yes,6,1,6
+as_entered,Devonian to Late Devonian,,,,ALL_INCLUDING_FLAGGED,mixed,6,1,6
+as_entered,Devonian to Late Devonian,,,,dispersed_spores,yes,4,1,4
+as_entered,Devonian to Late Devonian,,,,pbdb_psilophytes_incl_trimerophytes,yes,1,1,1
+as_entered,Devonian to Late Devonian,,,,plantae_other_or_indet,yes,1,1,1
+as_entered,Devonian to Late Givetian,,,,ALL_CORE,yes,2,1,2
+as_entered,Devonian to Late Givetian,,,,ALL_INCLUDING_FLAGGED,mixed,2,1,2
+as_entered,Devonian to Late Givetian,,,,pbdb_psilophytes_incl_trimerophytes,yes,2,1,2
+as_entered,Devonian to Middle Devonian,,,,ALL_CORE,yes,1,1,1
+as_entered,Devonian to Middle Devonian,,,,ALL_INCLUDING_FLAGGED,mixed,1,1,1
+as_entered,Devonian to Middle Devonian,,,,pbdb_psilophytes_incl_trimerophytes,yes,1,1,1
+as_entered,Early Devonian to Emsian,,,,ALL_CORE,yes,1,1,1
+as_entered,Early Devonian to Emsian,,,,ALL_INCLUDING_FLAGGED,mixed,1,1,1
+as_entered,Early Devonian to Emsian,,,,plantae_other_or_indet,yes,1,1,1
+as_entered,Early Devonian to Middle Devonian,,,,ALL_CORE,yes,105,36,21
+as_entered,Early Devonian to Middle Devonian,,,,ALL_INCLUDING_FLAGGED,mixed,116,41,27
+as_entered,Early Devonian to Middle Devonian,,,,green_algae,no,11,5,6
+as_entered,Early Devonian to Middle Devonian,,,,nematophytes_and_thalloid_problematica,yes,12,10,3
+as_entered,Early Devonian to Middle Devonian,,,,pbdb_bryophytes,yes,6,6,1
+as_entered,Early Devonian to Middle Devonian,,,,pbdb_lycophytes_incl_zosterophylls,yes,3,2,1
+as_entered,Early Devonian to Middle Devonian,,,,pbdb_psilophytes_incl_trimerophytes,yes,65,25,5
+as_entered,Early Devonian to Middle Devonian,,,,pbdb_tracheophyta_other_or_indet,yes,2,2,1
+as_entered,Early Devonian to Middle Devonian,,,,plantae_other_or_indet,yes,17,12,10
+as_entered,Early Emsian,,,,ALL_CORE,yes,53,11,29
+as_entered,Early Emsian,,,,ALL_INCLUDING_FLAGGED,mixed,66,17,35
+as_entered,Early Emsian,,,,algae_unspecified,no,1,1,0
+as_entered,Early Emsian,,,,dispersed_spores,yes,30,1,14
+as_entered,Early Emsian,,,,green_algae,no,9,6,4
+as_entered,Early Emsian,,,,nematophytes_and_thalloid_problematica,yes,3,3,2
+as_entered,Early Emsian,,,,pbdb_ferns_cladoxylopsids_sphenophytes,yes,1,1,1
+as_entered,Early Emsian,,,,pbdb_lycophytes_incl_zosterophylls,yes,3,3,3
+as_entered,Early Emsian,,,,pbdb_psilophytes_incl_trimerophytes,yes,13,7,7
+as_entered,Early Emsian,,,,plantae_other_or_indet,yes,3,3,2
+as_entered,Early Emsian,,,,red_algae,no,3,2,2
+as_entered,Early Givetian,,,,ALL_CORE,yes,186,26,41
+as_entered,Early Givetian,,,,ALL_INCLUDING_FLAGGED,mixed,197,34,46
+as_entered,Early Givetian,,,,dispersed_spores,yes,113,7,25
+as_entered,Early Givetian,,,,green_algae,no,8,7,3
+as_entered,Early Givetian,,,,nematophytes_and_thalloid_problematica,yes,1,1,1
+as_entered,Early Givetian,,,,pbdb_ferns_cladoxylopsids_sphenophytes,yes,1,1,1
+as_entered,Early Givetian,,,,pbdb_lycophytes_incl_zosterophylls,yes,7,5,4
+as_entered,Early Givetian,,,,pbdb_progymnosperms,yes,23,13,4
+as_entered,Early Givetian,,,,pbdb_psilophytes_incl_trimerophytes,yes,28,15,4
+as_entered,Early Givetian,,,,plantae_other_or_indet,yes,13,8,3
+as_entered,Early Givetian,,,,red_algae,no,2,2,1
+as_entered,Early Givetian,,,,streptophyta_not_embryophyta,no,1,1,1
+as_entered,Early Givetian to Middle Givetian,,,,ALL_INCLUDING_FLAGGED,mixed,2,1,1
+as_entered,Early Givetian to Middle Givetian,,,,green_algae,no,2,1,1
+as_entered,Eastonian,,,,ALL_INCLUDING_FLAGGED,mixed,13,12,2
+as_entered,Eastonian,,,,green_algae,no,1,1,1
+as_entered,Eastonian,,,,red_algae,no,12,11,1
+as_entered,Edenian,,,,ALL_INCLUDING_FLAGGED,mixed,7,4,3
+as_entered,Edenian,,,,green_algae,no,7,4,3
+as_entered,Edenian to Maysvillian,,,,ALL_INCLUDING_FLAGGED,mixed,2,2,1
+as_entered,Edenian to Maysvillian,,,,green_algae,no,2,2,1
+as_entered,Edenian to Richmondian,,,,ALL_INCLUDING_FLAGGED,mixed,5,5,1
+as_entered,Edenian to Richmondian,,,,green_algae,no,5,5,1
+as_entered,Eifelian to Early Frasnian,,,,ALL_CORE,yes,7,1,7
+as_entered,Eifelian to Early Frasnian,,,,ALL_INCLUDING_FLAGGED,mixed,7,1,7
+as_entered,Eifelian to Early Frasnian,,,,pbdb_lycophytes_incl_zosterophylls,yes,2,1,2
+as_entered,Eifelian to Early Frasnian,,,,pbdb_psilophytes_incl_trimerophytes,yes,2,1,2
+as_entered,Eifelian to Early Frasnian,,,,plantae_other_or_indet,yes,3,1,3
+as_entered,Eifelian to Early Givetian,,,,ALL_CORE,yes,146,11,26
+as_entered,Eifelian to Early Givetian,,,,ALL_INCLUDING_FLAGGED,mixed,146,11,26
+as_entered,Eifelian to Early Givetian,,,,dispersed_spores,yes,135,10,21
+as_entered,Eifelian to Early Givetian,,,,pbdb_lycophytes_incl_zosterophylls,yes,7,5,4
+as_entered,Eifelian to Early Givetian,,,,pbdb_psilophytes_incl_trimerophytes,yes,3,2,2
+as_entered,Eifelian to Early Givetian,,,,plantae_other_or_indet,yes,1,1,0
+as_entered,Eifelian to Famennian,,,,ALL_CORE,yes,13,1,9
+as_entered,Eifelian to Famennian,,,,ALL_INCLUDING_FLAGGED,mixed,13,1,9
+as_entered,Eifelian to Famennian,,,,dispersed_spores,yes,13,1,9
+as_entered,Eifelian to Frasnian,,,,ALL_CORE,yes,1,1,1
+as_entered,Eifelian to Frasnian,,,,ALL_INCLUDING_FLAGGED,mixed,1,1,1
+as_entered,Eifelian to Frasnian,,,,plantae_other_or_indet,yes,1,1,1
+as_entered,Eifelian to Givetian,,,,ALL_CORE,yes,20,12,11
+as_entered,Eifelian to Givetian,,,,ALL_INCLUDING_FLAGGED,mixed,32,23,12
+as_entered,Eifelian to Givetian,,,,dispersed_spores,yes,4,1,4
+as_entered,Eifelian to Givetian,,,,pbdb_ferns_cladoxylopsids_sphenophytes,yes,1,1,1
+as_entered,Eifelian to Givetian,,,,pbdb_lycophytes_incl_zosterophylls,yes,7,4,3
+as_entered,Eifelian to Givetian,,,,pbdb_progymnosperms,yes,2,2,1
+as_entered,Eifelian to Givetian,,,,pbdb_psilophytes_incl_trimerophytes,yes,3,3,2
+as_entered,Eifelian to Givetian,,,,plantae_other_or_indet,yes,3,3,0
+as_entered,Eifelian to Givetian,,,,streptophyta_not_embryophyta,no,12,12,1
+as_entered,Eifelian to Middle Devonian,,,,ALL_CORE,yes,12,3,5
+as_entered,Eifelian to Middle Devonian,,,,ALL_INCLUDING_FLAGGED,mixed,12,3,5
+as_entered,Eifelian to Middle Devonian,,,,pbdb_progymnosperms,yes,1,1,1
+as_entered,Eifelian to Middle Devonian,,,,pbdb_psilophytes_incl_trimerophytes,yes,1,1,1
+as_entered,Eifelian to Middle Devonian,,,,pbdb_tracheophyta_other_or_indet,yes,6,1,0
+as_entered,Eifelian to Middle Devonian,,,,plantae_other_or_indet,yes,4,2,3
+as_entered,Emsian to Eifelian,,,,ALL_CORE,yes,10,8,3
+as_entered,Emsian to Eifelian,,,,ALL_INCLUDING_FLAGGED,mixed,14,9,5
+as_entered,Emsian to Eifelian,,,,acritarchs_prasinophytes,no,2,1,1
+as_entered,Emsian to Eifelian,,,,pbdb_lycophytes_incl_zosterophylls,yes,2,1,2
+as_entered,Emsian to Eifelian,,,,pbdb_tracheophyta_other_or_indet,yes,1,1,1
+as_entered,Emsian to Eifelian,,,,plantae_other_or_indet,yes,7,7,0
+as_entered,Emsian to Eifelian,,,,streptophyta_not_embryophyta,no,2,2,1
+as_entered,Emsian to Givetian,,,,ALL_CORE,yes,29,1,15
+as_entered,Emsian to Givetian,,,,ALL_INCLUDING_FLAGGED,mixed,29,1,15
+as_entered,Emsian to Givetian,,,,dispersed_spores,yes,29,1,15
+as_entered,Emsian to Middle Devonian,,,,ALL_CORE,yes,3,1,1
+as_entered,Emsian to Middle Devonian,,,,ALL_INCLUDING_FLAGGED,mixed,3,1,1
+as_entered,Emsian to Middle Devonian,,,,pbdb_ferns_cladoxylopsids_sphenophytes,yes,2,1,1
+as_entered,Emsian to Middle Devonian,,,,pbdb_tracheophyta_other_or_indet,yes,1,1,0
+as_entered,Franklinian to Edenian,,,,ALL_INCLUDING_FLAGGED,mixed,3,2,2
+as_entered,Franklinian to Edenian,,,,red_algae,no,3,2,2
+as_entered,Furongian to Tremadocian,,,,ALL_CORE,yes,1,1,1
+as_entered,Furongian to Tremadocian,,,,ALL_INCLUDING_FLAGGED,mixed,1,1,1
+as_entered,Furongian to Tremadocian,,,,plantae_other_or_indet,yes,1,1,1
+as_entered,Gamachian,,,,ALL_INCLUDING_FLAGGED,mixed,11,4,6
+as_entered,Gamachian,,,,acritarchs_prasinophytes,no,9,2,5
+as_entered,Gamachian,,,,red_algae,no,2,2,1
+as_entered,Gedinnine,,,,ALL_INCLUDING_FLAGGED,mixed,2,2,1
+as_entered,Gedinnine,,,,red_algae,no,2,2,1
+as_entered,Gisbornian to Eastonian,,,,ALL_INCLUDING_FLAGGED,mixed,10,4,1
+as_entered,Gisbornian to Eastonian,,,,red_algae,no,10,4,1
+as_entered,Gisbornian to Harnagian,,,,ALL_INCLUDING_FLAGGED,mixed,7,7,1
+as_entered,Gisbornian to Harnagian,,,,red_algae,no,7,7,1
+as_entered,Givetian to Early Frasnian,,,,ALL_CORE,yes,53,2,37
+as_entered,Givetian to Early Frasnian,,,,ALL_INCLUDING_FLAGGED,mixed,53,2,37
+as_entered,Givetian to Early Frasnian,,,,dispersed_spores,yes,29,2,15
+as_entered,Givetian to Early Frasnian,,,,nematophytes_and_thalloid_problematica,yes,1,1,1
+as_entered,Givetian to Early Frasnian,,,,pbdb_ferns_cladoxylopsids_sphenophytes,yes,2,1,2
+as_entered,Givetian to Early Frasnian,,,,pbdb_lycophytes_incl_zosterophylls,yes,3,1,3
+as_entered,Givetian to Early Frasnian,,,,pbdb_progymnosperms,yes,1,1,1
+as_entered,Givetian to Early Frasnian,,,,pbdb_psilophytes_incl_trimerophytes,yes,7,1,6
+as_entered,Givetian to Early Frasnian,,,,pbdb_seed_plants,yes,3,1,3
+as_entered,Givetian to Early Frasnian,,,,plantae_other_or_indet,yes,7,2,6
+as_entered,Givetian to Frasnian,,,,ALL_CORE,yes,28,2,17
+as_entered,Givetian to Frasnian,,,,ALL_INCLUDING_FLAGGED,mixed,28,2,17
+as_entered,Givetian to Frasnian,,,,dispersed_spores,yes,27,1,16
+as_entered,Givetian to Frasnian,,,,pbdb_ferns_cladoxylopsids_sphenophytes,yes,1,1,1
+as_entered,Givetian to Late Devonian,,,,ALL_CORE,yes,27,6,12
+as_entered,Givetian to Late Devonian,,,,ALL_INCLUDING_FLAGGED,mixed,27,6,12
+as_entered,Givetian to Late Devonian,,,,dispersed_spores,yes,1,1,1
+as_entered,Givetian to Late Devonian,,,,pbdb_ferns_cladoxylopsids_sphenophytes,yes,1,1,1
+as_entered,Givetian to Late Devonian,,,,pbdb_lycophytes_incl_zosterophylls,yes,1,1,1
+as_entered,Givetian to Late Devonian,,,,pbdb_progymnosperms,yes,4,2,2
+as_entered,Givetian to Late Devonian,,,,pbdb_psilophytes_incl_trimerophytes,yes,3,2,3
+as_entered,Givetian to Late Devonian,,,,pbdb_tracheophyta_other_or_indet,yes,13,1,0
+as_entered,Givetian to Late Devonian,,,,plantae_other_or_indet,yes,4,4,4
+as_entered,Gorstian to Ludfordian,,,,ALL_INCLUDING_FLAGGED,mixed,1,1,0
+as_entered,Gorstian to Ludfordian,,,,algae_unspecified,no,1,1,0
+as_entered,Helderbergian to Emsian,,,,ALL_INCLUDING_FLAGGED,mixed,1,1,1
+as_entered,Helderbergian to Emsian,,,,green_algae,no,1,1,1
+as_entered,Homerian to Gorstian,,,,ALL_INCLUDING_FLAGGED,mixed,4,2,1
+as_entered,Homerian to Gorstian,,,,algae_unspecified,no,2,2,0
+as_entered,Homerian to Gorstian,,,,red_algae,no,2,2,1
+as_entered,Hunneberg,,,,ALL_INCLUDING_FLAGGED,mixed,39,10,7
+as_entered,Hunneberg,,,,acritarchs_prasinophytes,no,38,9,6
+as_entered,Hunneberg,,,,algae_unspecified,no,1,1,1
+as_entered,Ibexian,,,,ALL_INCLUDING_FLAGGED,mixed,1,1,1
+as_entered,Ibexian,,,,algae_unspecified,no,1,1,1
+as_entered,Idavere,,,,ALL_INCLUDING_FLAGGED,mixed,8,6,2
+as_entered,Idavere,,,,green_algae,no,8,6,2
+as_entered,Idavere to Johvi,,,,ALL_INCLUDING_FLAGGED,mixed,4,1,3
+as_entered,Idavere to Johvi,,,,green_algae,no,4,1,3
+as_entered,Jeffersonian,,,,ALL_INCLUDING_FLAGGED,mixed,2,2,2
+as_entered,Jeffersonian,,,,green_algae,no,2,2,2
+as_entered,Johvi,,,,ALL_INCLUDING_FLAGGED,mixed,15,15,1
+as_entered,Johvi,,,,green_algae,no,15,15,1
+as_entered,Katian to Hirnantian,,,,ALL_INCLUDING_FLAGGED,mixed,3,2,3
+as_entered,Katian to Hirnantian,,,,green_algae,no,2,1,2
+as_entered,Katian to Hirnantian,,,,red_algae,no,1,1,1
+as_entered,Keila,,,,ALL_INCLUDING_FLAGGED,mixed,7,6,3
+as_entered,Keila,,,,green_algae,no,6,5,2
+as_entered,Keila,,,,red_algae,no,1,1,1
+as_entered,Kirkfieldian,,,,ALL_INCLUDING_FLAGGED,mixed,4,1,3
+as_entered,Kirkfieldian,,,,green_algae,no,2,1,1
+as_entered,Kirkfieldian,,,,red_algae,no,2,1,2
+as_entered,Late Emsian,,,,ALL_CORE,yes,5,5,1
+as_entered,Late Emsian,,,,ALL_INCLUDING_FLAGGED,mixed,10,10,2
+as_entered,Late Emsian,,,,algae_unspecified,no,3,3,0
+as_entered,Late Emsian,,,,green_algae,no,1,1,0
+as_entered,Late Emsian,,,,pbdb_lycophytes_incl_zosterophylls,yes,1,1,1
+as_entered,Late Emsian,,,,plantae_other_or_indet,yes,4,4,0
+as_entered,Late Emsian,,,,red_algae,no,1,1,1
+as_entered,Late Emsian to Eifelian,,,,ALL_CORE,yes,9,3,7
+as_entered,Late Emsian to Eifelian,,,,ALL_INCLUDING_FLAGGED,mixed,9,3,7
+as_entered,Late Emsian to Eifelian,,,,pbdb_ferns_cladoxylopsids_sphenophytes,yes,2,1,2
+as_entered,Late Emsian to Eifelian,,,,pbdb_psilophytes_incl_trimerophytes,yes,6,3,4
+as_entered,Late Emsian to Eifelian,,,,plantae_other_or_indet,yes,1,1,1
+as_entered,Late Givetian,,,,ALL_CORE,yes,7,6,7
+as_entered,Late Givetian,,,,ALL_INCLUDING_FLAGGED,mixed,9,8,7
+as_entered,Late Givetian,,,,algae_unspecified,no,1,1,0
+as_entered,Late Givetian,,,,pbdb_ferns_cladoxylopsids_sphenophytes,yes,1,1,1
+as_entered,Late Givetian,,,,pbdb_lycophytes_incl_zosterophylls,yes,2,2,2
+as_entered,Late Givetian,,,,pbdb_psilophytes_incl_trimerophytes,yes,1,1,1
+as_entered,Late Givetian,,,,pbdb_seed_plants,yes,2,2,2
+as_entered,Late Givetian,,,,plantae_other_or_indet,yes,1,1,1
+as_entered,Late Givetian,,,,streptophyta_not_embryophyta,no,1,1,0
+as_entered,Late Givetian to Early Frasnian,,,,ALL_CORE,yes,246,10,32
+as_entered,Late Givetian to Early Frasnian,,,,ALL_INCLUDING_FLAGGED,mixed,246,10,32
+as_entered,Late Givetian to Early Frasnian,,,,dispersed_spores,yes,237,8,23
+as_entered,Late Givetian to Early Frasnian,,,,pbdb_ferns_cladoxylopsids_sphenophytes,yes,2,1,2
+as_entered,Late Givetian to Early Frasnian,,,,pbdb_progymnosperms,yes,2,1,2
+as_entered,Late Givetian to Early Frasnian,,,,pbdb_psilophytes_incl_trimerophytes,yes,2,1,2
+as_entered,Late Givetian to Early Frasnian,,,,plantae_other_or_indet,yes,3,2,3
+as_entered,Late Givetian to Late Devonian,,,,ALL_CORE,yes,19,7,9
+as_entered,Late Givetian to Late Devonian,,,,ALL_INCLUDING_FLAGGED,mixed,19,7,9
+as_entered,Late Givetian to Late Devonian,,,,pbdb_progymnosperms,yes,9,6,3
+as_entered,Late Givetian to Late Devonian,,,,pbdb_psilophytes_incl_trimerophytes,yes,7,5,3
+as_entered,Late Givetian to Late Devonian,,,,plantae_other_or_indet,yes,3,3,3
+as_entered,Late Lochkovian,,,,ALL_CORE,yes,1,1,0
+as_entered,Late Lochkovian,,,,ALL_INCLUDING_FLAGGED,mixed,1,1,0
+as_entered,Late Lochkovian,,,,plantae_other_or_indet,yes,1,1,0
+as_entered,Llandeilo,,,,ALL_INCLUDING_FLAGGED,mixed,1,1,0
+as_entered,Llandeilo,,,,algae_unspecified,no,1,1,0
+as_entered,Llandovery to Ludlow,,,,ALL_CORE,yes,1,1,1
+as_entered,Llandovery to Ludlow,,,,ALL_INCLUDING_FLAGGED,mixed,1,1,1
+as_entered,Llandovery to Ludlow,,,,pbdb_seed_plants,yes,1,1,1
+as_entered,Llandovery to Silurian,,,,ALL_CORE,yes,1,1,1
+as_entered,Llandovery to Silurian,,,,ALL_INCLUDING_FLAGGED,mixed,2,1,1
+as_entered,Llandovery to Silurian,,,,algae_unspecified,no,1,1,0
+as_entered,Llandovery to Silurian,,,,plantae_other_or_indet,yes,1,1,1
+as_entered,Llandovery to Wenlock,,,,ALL_INCLUDING_FLAGGED,mixed,1,1,1
+as_entered,Llandovery to Wenlock,,,,green_algae,no,1,1,1
+as_entered,Llanvirn,,,,ALL_INCLUDING_FLAGGED,mixed,2,2,2
+as_entered,Llanvirn,,,,red_algae,no,2,2,2
+as_entered,Lochkovian to Eifelian,,,,ALL_CORE,yes,1,1,0
+as_entered,Lochkovian to Eifelian,,,,ALL_INCLUDING_FLAGGED,mixed,1,1,0
+as_entered,Lochkovian to Eifelian,,,,plantae_other_or_indet,yes,1,1,0
+as_entered,Lochkovian to Pragian,,,,ALL_CORE,yes,2,2,0
+as_entered,Lochkovian to Pragian,,,,ALL_INCLUDING_FLAGGED,mixed,2,2,0
+as_entered,Lochkovian to Pragian,,,,plantae_other_or_indet,yes,2,2,0
+as_entered,Ludfordian to Pridoli,,,,ALL_CORE,yes,3,1,3
+as_entered,Ludfordian to Pridoli,,,,ALL_INCLUDING_FLAGGED,mixed,3,1,3
+as_entered,Ludfordian to Pridoli,,,,pbdb_lycophytes_incl_zosterophylls,yes,1,1,1
+as_entered,Ludfordian to Pridoli,,,,pbdb_psilophytes_incl_trimerophytes,yes,1,1,1
+as_entered,Ludfordian to Pridoli,,,,plantae_other_or_indet,yes,1,1,1
+as_entered,Ludlow to Pridoli,,,,ALL_CORE,yes,2,2,2
+as_entered,Ludlow to Pridoli,,,,ALL_INCLUDING_FLAGGED,mixed,4,3,3
+as_entered,Ludlow to Pridoli,,,,green_algae,no,2,1,1
+as_entered,Ludlow to Pridoli,,,,pbdb_lycophytes_incl_zosterophylls,yes,1,1,1
+as_entered,Ludlow to Pridoli,,,,plantae_other_or_indet,yes,1,1,1
+as_entered,Marshbrookian to Eastonian,,,,ALL_INCLUDING_FLAGGED,mixed,2,2,1
+as_entered,Marshbrookian to Eastonian,,,,red_algae,no,2,2,1
+as_entered,Maysvillian,,,,ALL_INCLUDING_FLAGGED,mixed,4,2,4
+as_entered,Maysvillian,,,,green_algae,no,2,1,2
+as_entered,Maysvillian,,,,red_algae,no,2,1,2
+as_entered,Maysvillian to Ashgill,,,,ALL_INCLUDING_FLAGGED,mixed,1,1,1
+as_entered,Maysvillian to Ashgill,,,,green_algae,no,1,1,1
+as_entered,Maysvillian to Richmondian,,,,ALL_INCLUDING_FLAGGED,mixed,1,1,1
+as_entered,Maysvillian to Richmondian,,,,green_algae,no,1,1,1
+as_entered,Middle Devonian to Eifelian,,,,ALL_INCLUDING_FLAGGED,mixed,1,1,1
+as_entered,Middle Devonian to Eifelian,,,,algae_unspecified,no,1,1,1
+as_entered,Middle Devonian to Late Devonian,,,,ALL_CORE,yes,82,54,13
+as_entered,Middle Devonian to Late Devonian,,,,ALL_INCLUDING_FLAGGED,mixed,83,55,14
+as_entered,Middle Devonian to Late Devonian,,,,green_algae,no,1,1,1
+as_entered,Middle Devonian to Late Devonian,,,,pbdb_ferns_cladoxylopsids_sphenophytes,yes,1,1,1
+as_entered,Middle Devonian to Late Devonian,,,,pbdb_lycophytes_incl_zosterophylls,yes,51,45,5
+as_entered,Middle Devonian to Late Devonian,,,,pbdb_progymnosperms,yes,18,18,1
+as_entered,Middle Devonian to Late Devonian,,,,pbdb_psilophytes_incl_trimerophytes,yes,3,3,2
+as_entered,Middle Devonian to Late Devonian,,,,pbdb_tracheophyta_other_or_indet,yes,6,5,1
+as_entered,Middle Devonian to Late Devonian,,,,plantae_other_or_indet,yes,3,2,3
+as_entered,Middle Givetian,,,,ALL_CORE,yes,96,7,36
+as_entered,Middle Givetian,,,,ALL_INCLUDING_FLAGGED,mixed,98,8,38
+as_entered,Middle Givetian,,,,dispersed_spores,yes,78,4,20
+as_entered,Middle Givetian,,,,green_algae,no,1,1,1
+as_entered,Middle Givetian,,,,pbdb_lycophytes_incl_zosterophylls,yes,2,2,1
+as_entered,Middle Givetian,,,,pbdb_progymnosperms,yes,6,3,6
+as_entered,Middle Givetian,,,,pbdb_psilophytes_incl_trimerophytes,yes,5,2,5
+as_entered,Middle Givetian,,,,pbdb_seed_plants,yes,2,2,2
+as_entered,Middle Givetian,,,,plantae_other_or_indet,yes,3,1,2
+as_entered,Middle Givetian,,,,streptophyta_not_embryophyta,no,1,1,1
+as_entered,Middle Ordovician to Late Ordovician,,,,ALL_INCLUDING_FLAGGED,mixed,16,14,4
+as_entered,Middle Ordovician to Late Ordovician,,,,green_algae,no,15,13,3
+as_entered,Middle Ordovician to Late Ordovician,,,,red_algae,no,1,1,1
+as_entered,Mohawkian,,,,ALL_INCLUDING_FLAGGED,mixed,12,12,3
+as_entered,Mohawkian,,,,green_algae,no,1,1,1
+as_entered,Mohawkian,,,,red_algae,no,11,11,2
+as_entered,Oandu,,,,ALL_INCLUDING_FLAGGED,mixed,4,4,3
+as_entered,Oandu,,,,green_algae,no,2,2,2
+as_entered,Oandu,,,,red_algae,no,2,2,1
+as_entered,Oandu to Nabala,,,,ALL_INCLUDING_FLAGGED,mixed,1,1,1
+as_entered,Oandu to Nabala,,,,green_algae,no,1,1,1
+as_entered,Onnian to Eastonian,,,,ALL_INCLUDING_FLAGGED,mixed,2,2,1
+as_entered,Onnian to Eastonian,,,,red_algae,no,2,2,1
+as_entered,Paadla,,,,ALL_INCLUDING_FLAGGED,mixed,2,2,1
+as_entered,Paadla,,,,algae_unspecified,no,1,1,0
+as_entered,Paadla,,,,red_algae,no,1,1,1
+as_entered,Paleozoic to Triassic,,,,ALL_CORE,yes,3,1,3
+as_entered,Paleozoic to Triassic,,,,ALL_INCLUDING_FLAGGED,mixed,3,1,3
+as_entered,Paleozoic to Triassic,,,,pbdb_ferns_cladoxylopsids_sphenophytes,yes,1,1,1
+as_entered,Paleozoic to Triassic,,,,pbdb_seed_plants,yes,2,1,2
+as_entered,Pirgu,,,,ALL_INCLUDING_FLAGGED,mixed,6,4,3
+as_entered,Pirgu,,,,green_algae,no,6,4,3
+as_entered,Pragian to Early Emsian,,,,ALL_CORE,yes,8,2,5
+as_entered,Pragian to Early Emsian,,,,ALL_INCLUDING_FLAGGED,mixed,8,2,5
+as_entered,Pragian to Early Emsian,,,,pbdb_psilophytes_incl_trimerophytes,yes,6,2,3
+as_entered,Pragian to Early Emsian,,,,plantae_other_or_indet,yes,2,2,2
+as_entered,Pragian to Emsian,,,,ALL_CORE,yes,4,1,4
+as_entered,Pragian to Emsian,,,,ALL_INCLUDING_FLAGGED,mixed,7,3,5
+as_entered,Pragian to Emsian,,,,algae_unspecified,no,1,1,0
+as_entered,Pragian to Emsian,,,,green_algae,no,2,2,1
+as_entered,Pragian to Emsian,,,,pbdb_lycophytes_incl_zosterophylls,yes,2,1,2
+as_entered,Pragian to Emsian,,,,pbdb_psilophytes_incl_trimerophytes,yes,1,1,1
+as_entered,Pragian to Emsian,,,,pbdb_tracheophyta_other_or_indet,yes,1,1,1
+as_entered,Pragian to Middle Devonian,,,,ALL_CORE,yes,10,2,6
+as_entered,Pragian to Middle Devonian,,,,ALL_INCLUDING_FLAGGED,mixed,10,2,6
+as_entered,Pragian to Middle Devonian,,,,pbdb_lycophytes_incl_zosterophylls,yes,3,1,2
+as_entered,Pragian to Middle Devonian,,,,pbdb_psilophytes_incl_trimerophytes,yes,1,1,1
+as_entered,Pragian to Middle Devonian,,,,pbdb_tracheophyta_other_or_indet,yes,2,1,1
+as_entered,Pragian to Middle Devonian,,,,plantae_other_or_indet,yes,4,2,2
+as_entered,Pridoli to Helderbergian,,,,ALL_CORE,yes,2,2,1
+as_entered,Pridoli to Helderbergian,,,,ALL_INCLUDING_FLAGGED,mixed,2,2,1
+as_entered,Pridoli to Helderbergian,,,,pbdb_lycophytes_incl_zosterophylls,yes,1,1,1
+as_entered,Pridoli to Helderbergian,,,,pbdb_tracheophyta_other_or_indet,yes,1,1,0
+as_entered,Raikkula,,,,ALL_INCLUDING_FLAGGED,mixed,2,1,1
+as_entered,Raikkula,,,,green_algae,no,1,1,0
+as_entered,Raikkula,,,,red_algae,no,1,1,1
+as_entered,Rakvere,,,,ALL_INCLUDING_FLAGGED,mixed,4,3,2
+as_entered,Rakvere,,,,green_algae,no,4,3,2
+as_entered,Rawtheyan to Hirnantian,,,,ALL_INCLUDING_FLAGGED,mixed,1,1,1
+as_entered,Rawtheyan to Hirnantian,,,,green_algae,no,1,1,1
+as_entered,Rhuddanian to Aeronian,,,,ALL_CORE,yes,1,1,0
+as_entered,Rhuddanian to Aeronian,,,,ALL_INCLUDING_FLAGGED,mixed,68,12,12
+as_entered,Rhuddanian to Aeronian,,,,acritarchs_prasinophytes,no,57,10,10
+as_entered,Rhuddanian to Aeronian,,,,green_algae,no,10,10,2
+as_entered,Rhuddanian to Aeronian,,,,plantae_other_or_indet,yes,1,1,0
+as_entered,Richmondian,,,,ALL_INCLUDING_FLAGGED,mixed,29,26,8
+as_entered,Richmondian,,,,acritarchs_prasinophytes,no,2,1,1
+as_entered,Richmondian,,,,green_algae,no,8,7,4
+as_entered,Richmondian,,,,red_algae,no,19,19,3
+as_entered,Richmondian to Ashgill,,,,ALL_INCLUDING_FLAGGED,mixed,6,3,2
+as_entered,Richmondian to Ashgill,,,,green_algae,no,3,3,1
+as_entered,Richmondian to Ashgill,,,,red_algae,no,3,3,1
+as_entered,Richmondian to Gamachian,,,,ALL_INCLUDING_FLAGGED,mixed,1,1,1
+as_entered,Richmondian to Gamachian,,,,green_algae,no,1,1,1
+as_entered,Richmondian to Llandovery,,,,ALL_INCLUDING_FLAGGED,mixed,3,3,1
+as_entered,Richmondian to Llandovery,,,,green_algae,no,3,3,1
+as_entered,Rocklandian,,,,ALL_INCLUDING_FLAGGED,mixed,6,4,2
+as_entered,Rocklandian,,,,red_algae,no,6,4,2
+as_entered,Rootsikula,,,,ALL_CORE,yes,1,1,0
+as_entered,Rootsikula,,,,ALL_INCLUDING_FLAGGED,mixed,1,1,0
+as_entered,Rootsikula,,,,plantae_other_or_indet,yes,1,1,0
+as_entered,Sandbian to Katian,,,,ALL_INCLUDING_FLAGGED,mixed,1,1,1
+as_entered,Sandbian to Katian,,,,red_algae,no,1,1,1
+as_entered,Sarka,,,,ALL_CORE,yes,1,1,1
+as_entered,Sarka,,,,ALL_INCLUDING_FLAGGED,mixed,1,1,1
+as_entered,Sarka,,,,plantae_other_or_indet,yes,1,1,1
+as_entered,Shermanian,,,,ALL_INCLUDING_FLAGGED,mixed,13,7,4
+as_entered,Shermanian,,,,green_algae,no,1,1,1
+as_entered,Shermanian,,,,red_algae,no,12,6,3
+as_entered,Siegen,,,,ALL_CORE,yes,2,1,2
+as_entered,Siegen,,,,ALL_INCLUDING_FLAGGED,mixed,2,1,2
+as_entered,Siegen,,,,nematophytes_and_thalloid_problematica,yes,1,1,1
+as_entered,Siegen,,,,pbdb_psilophytes_incl_trimerophytes,yes,1,1,1
+as_entered,Silurian to Lochkovian,,,,ALL_CORE,yes,9,2,5
+as_entered,Silurian to Lochkovian,,,,ALL_INCLUDING_FLAGGED,mixed,9,2,5
+as_entered,Silurian to Lochkovian,,,,pbdb_psilophytes_incl_trimerophytes,yes,1,1,1
+as_entered,Silurian to Lochkovian,,,,plantae_other_or_indet,yes,8,2,4
+as_entered,Soudleyan to Actonian,,,,ALL_INCLUDING_FLAGGED,mixed,4,2,2
+as_entered,Soudleyan to Actonian,,,,green_algae,no,2,2,1
+as_entered,Soudleyan to Actonian,,,,red_algae,no,2,2,1
+as_entered,Soudleyan to Marshbrookian,,,,ALL_INCLUDING_FLAGGED,mixed,2,1,2
+as_entered,Soudleyan to Marshbrookian,,,,green_algae,no,1,1,1
+as_entered,Soudleyan to Marshbrookian,,,,red_algae,no,1,1,1
+as_entered,Telychian to Sheinwoodian,,,,ALL_INCLUDING_FLAGGED,mixed,2,2,2
+as_entered,Telychian to Sheinwoodian,,,,algae_unspecified,no,1,1,1
+as_entered,Telychian to Sheinwoodian,,,,green_algae,no,1,1,1
+as_entered,Tremadoc,,,,ALL_INCLUDING_FLAGGED,mixed,14,5,7
+as_entered,Tremadoc,,,,acritarchs_prasinophytes,no,13,4,6
+as_entered,Tremadoc,,,,green_algae,no,1,1,1
+as_entered,Trentonian,,,,ALL_INCLUDING_FLAGGED,mixed,2,2,2
+as_entered,Trentonian,,,,green_algae,no,1,1,1
+as_entered,Trentonian,,,,red_algae,no,1,1,1
+as_entered,Turinian,,,,ALL_INCLUDING_FLAGGED,mixed,18,10,5
+as_entered,Turinian,,,,green_algae,no,5,5,2
+as_entered,Turinian,,,,red_algae,no,13,6,3
+as_entered,Volkhov,,,,ALL_INCLUDING_FLAGGED,mixed,1,1,1
+as_entered,Volkhov,,,,acritarchs_prasinophytes,no,1,1,1
+as_entered,Vormsi,,,,ALL_INCLUDING_FLAGGED,mixed,1,1,1
+as_entered,Vormsi,,,,green_algae,no,1,1,1
+as_entered,Wenlock to Ludlow,,,,ALL_CORE,yes,2,2,1
+as_entered,Wenlock to Ludlow,,,,ALL_INCLUDING_FLAGGED,mixed,4,4,2
+as_entered,Wenlock to Ludlow,,,,green_algae,no,2,2,1
+as_entered,Wenlock to Ludlow,,,,pbdb_psilophytes_incl_trimerophytes,yes,1,1,1
+as_entered,Wenlock to Ludlow,,,,plantae_other_or_indet,yes,1,1,0
+as_entered,Whiterockian,,,,ALL_INCLUDING_FLAGGED,mixed,10,8,6
+as_entered,Whiterockian,,,,green_algae,no,7,7,4
+as_entered,Whiterockian,,,,red_algae,no,3,2,2
+as_entered,Wildernessian,,,,ALL_INCLUDING_FLAGGED,mixed,21,18,2
+as_entered,Wildernessian,,,,green_algae,no,21,18,2
+as_entered,Yapeenian,,,,ALL_INCLUDING_FLAGGED,mixed,10,10,1
+as_entered,Yapeenian,,,,algae_unspecified,no,10,10,1
+time_contain,Tremadocian,486.85,477.1,yes,ALL_INCLUDING_FLAGGED,mixed,18,8,9
+time_contain,Tremadocian,486.85,477.1,yes,acritarchs_prasinophytes,no,17,7,8
+time_contain,Tremadocian,486.85,477.1,yes,green_algae,no,1,1,1
+time_contain,Floian,477.1,471.3,yes,ALL_INCLUDING_FLAGGED,mixed,10,10,5
+time_contain,Floian,477.1,471.3,yes,acritarchs_prasinophytes,no,1,1,1
+time_contain,Floian,477.1,471.3,yes,algae_unspecified,no,1,1,1
+time_contain,Floian,477.1,471.3,yes,green_algae,no,7,7,2
+time_contain,Floian,477.1,471.3,yes,red_algae,no,1,1,1
+time_contain,Dapingian,471.3,469.4,yes,ALL_INCLUDING_FLAGGED,mixed,17,17,3
+time_contain,Dapingian,471.3,469.4,yes,algae_unspecified,no,13,13,1
+time_contain,Dapingian,471.3,469.4,yes,green_algae,no,4,4,2
+time_contain,Darriwilian,469.4,458.2,yes,ALL_CORE,yes,4,4,3
+time_contain,Darriwilian,469.4,458.2,yes,ALL_INCLUDING_FLAGGED,mixed,15,11,9
+time_contain,Darriwilian,469.4,458.2,yes,acritarchs_prasinophytes,no,1,1,1
+time_contain,Darriwilian,469.4,458.2,yes,algae_unspecified,no,3,3,1
+time_contain,Darriwilian,469.4,458.2,yes,green_algae,no,4,2,2
+time_contain,Darriwilian,469.4,458.2,yes,plantae_other_or_indet,yes,4,4,3
+time_contain,Darriwilian,469.4,458.2,yes,red_algae,no,3,3,2
+time_contain,Sandbian,458.2,452.8,yes,ALL_CORE,yes,9,8,3
+time_contain,Sandbian,458.2,452.8,yes,ALL_INCLUDING_FLAGGED,mixed,72,47,19
+time_contain,Sandbian,458.2,452.8,yes,acritarchs_prasinophytes,no,1,1,1
+time_contain,Sandbian,458.2,452.8,yes,algae_unspecified,no,1,1,0
+time_contain,Sandbian,458.2,452.8,yes,green_algae,no,33,22,11
+time_contain,Sandbian,458.2,452.8,yes,plantae_other_or_indet,yes,9,8,3
+time_contain,Sandbian,458.2,452.8,yes,red_algae,no,28,21,4
+time_contain,Katian,452.8,445.2,yes,ALL_CORE,yes,2,2,1
+time_contain,Katian,452.8,445.2,yes,ALL_INCLUDING_FLAGGED,mixed,110,91,21
+time_contain,Katian,452.8,445.2,yes,acritarchs_prasinophytes,no,2,1,1
+time_contain,Katian,452.8,445.2,yes,algae_unspecified,no,2,2,0
+time_contain,Katian,452.8,445.2,yes,green_algae,no,63,52,13
+time_contain,Katian,452.8,445.2,yes,plantae_other_or_indet,yes,2,2,1
+time_contain,Katian,452.8,445.2,yes,red_algae,no,41,37,6
+time_contain,Hirnantian,445.2,443.1,yes,ALL_CORE,yes,1,1,1
+time_contain,Hirnantian,445.2,443.1,yes,ALL_INCLUDING_FLAGGED,mixed,7,7,6
+time_contain,Hirnantian,445.2,443.1,yes,dispersed_spores,yes,1,1,1
+time_contain,Hirnantian,445.2,443.1,yes,green_algae,no,5,5,4
+time_contain,Hirnantian,445.2,443.1,yes,red_algae,no,1,1,1
+time_contain,Rhuddanian,443.1,440.5,yes,ALL_INCLUDING_FLAGGED,mixed,1,1,1
+time_contain,Rhuddanian,443.1,440.5,yes,green_algae,no,1,1,1
+time_contain,Aeronian,440.5,438.6,yes,ALL_INCLUDING_FLAGGED,mixed,10,10,2
+time_contain,Aeronian,440.5,438.6,yes,algae_unspecified,no,1,1,0
+time_contain,Aeronian,440.5,438.6,yes,green_algae,no,9,9,2
+time_contain,Telychian,438.6,432.9,yes,ALL_CORE,yes,2,2,1
+time_contain,Telychian,438.6,432.9,yes,ALL_INCLUDING_FLAGGED,mixed,18,12,10
+time_contain,Telychian,438.6,432.9,yes,acritarchs_prasinophytes,no,6,1,5
+time_contain,Telychian,438.6,432.9,yes,algae_unspecified,no,1,1,0
+time_contain,Telychian,438.6,432.9,yes,green_algae,no,9,9,4
+time_contain,Telychian,438.6,432.9,yes,plantae_other_or_indet,yes,2,2,1
+time_contain,Sheinwoodian,432.9,430.6,yes,ALL_CORE,yes,2,2,1
+time_contain,Sheinwoodian,432.9,430.6,yes,ALL_INCLUDING_FLAGGED,mixed,17,12,7
+time_contain,Sheinwoodian,432.9,430.6,yes,algae_unspecified,no,7,7,0
+time_contain,Sheinwoodian,432.9,430.6,yes,green_algae,no,3,3,3
+time_contain,Sheinwoodian,432.9,430.6,yes,nematophytes_and_thalloid_problematica,yes,2,2,1
+time_contain,Sheinwoodian,432.9,430.6,yes,red_algae,no,5,5,3
+time_contain,Homerian,430.6,426.7,yes,ALL_CORE,yes,15,8,4
+time_contain,Homerian,430.6,426.7,yes,ALL_INCLUDING_FLAGGED,mixed,30,17,10
+time_contain,Homerian,430.6,426.7,yes,acritarchs_prasinophytes,no,3,1,2
+time_contain,Homerian,430.6,426.7,yes,algae_unspecified,no,4,4,0
+time_contain,Homerian,430.6,426.7,yes,dispersed_spores,yes,2,1,2
+time_contain,Homerian,430.6,426.7,yes,green_algae,no,3,3,2
+time_contain,Homerian,430.6,426.7,yes,nematophytes_and_thalloid_problematica,yes,5,5,1
+time_contain,Homerian,430.6,426.7,yes,pbdb_psilophytes_incl_trimerophytes,yes,4,1,1
+time_contain,Homerian,430.6,426.7,yes,plantae_other_or_indet,yes,4,3,0
+time_contain,Homerian,430.6,426.7,yes,red_algae,no,3,3,2
+time_contain,Homerian,430.6,426.7,yes,streptophyta_not_embryophyta,no,2,2,0
+time_contain,Gorstian,426.7,425.0,yes,ALL_CORE,yes,3,3,1
+time_contain,Gorstian,426.7,425.0,yes,ALL_INCLUDING_FLAGGED,mixed,5,4,2
+time_contain,Gorstian,426.7,425.0,yes,algae_unspecified,no,1,1,0
+time_contain,Gorstian,426.7,425.0,yes,nematophytes_and_thalloid_problematica,yes,3,3,1
+time_contain,Gorstian,426.7,425.0,yes,red_algae,no,1,1,1
+time_contain,Ludfordian,425.0,422.7,yes,ALL_CORE,yes,69,28,22
+time_contain,Ludfordian,425.0,422.7,yes,ALL_INCLUDING_FLAGGED,mixed,90,43,26
+time_contain,Ludfordian,425.0,422.7,yes,acritarchs_prasinophytes,no,3,3,1
+time_contain,Ludfordian,425.0,422.7,yes,algae_unspecified,no,9,9,0
+time_contain,Ludfordian,425.0,422.7,yes,dispersed_spores,yes,11,1,5
+time_contain,Ludfordian,425.0,422.7,yes,green_algae,no,6,5,2
+time_contain,Ludfordian,425.0,422.7,yes,nematophytes_and_thalloid_problematica,yes,3,1,3
+time_contain,Ludfordian,425.0,422.7,yes,pbdb_lycophytes_incl_zosterophylls,yes,7,6,2
+time_contain,Ludfordian,425.0,422.7,yes,pbdb_psilophytes_incl_trimerophytes,yes,29,18,3
+time_contain,Ludfordian,425.0,422.7,yes,pbdb_tracheophyta_other_or_indet,yes,1,1,0
+time_contain,Ludfordian,425.0,422.7,yes,plantae_other_or_indet,yes,18,12,9
+time_contain,Ludfordian,425.0,422.7,yes,red_algae,no,3,3,1
+time_contain,Lochkovian,419.62,413.02,yes,ALL_CORE,yes,56,21,22
+time_contain,Lochkovian,419.62,413.02,yes,ALL_INCLUDING_FLAGGED,mixed,65,29,28
+time_contain,Lochkovian,419.62,413.02,yes,acritarchs_prasinophytes,no,1,1,1
+time_contain,Lochkovian,419.62,413.02,yes,algae_unspecified,no,2,2,0
+time_contain,Lochkovian,419.62,413.02,yes,dispersed_spores,yes,13,3,7
+time_contain,Lochkovian,419.62,413.02,yes,green_algae,no,3,3,3
+time_contain,Lochkovian,419.62,413.02,yes,nematophytes_and_thalloid_problematica,yes,6,3,5
+time_contain,Lochkovian,419.62,413.02,yes,pbdb_lycophytes_incl_zosterophylls,yes,6,5,1
+time_contain,Lochkovian,419.62,413.02,yes,pbdb_psilophytes_incl_trimerophytes,yes,10,4,3
+time_contain,Lochkovian,419.62,413.02,yes,pbdb_tracheophyta_other_or_indet,yes,2,2,1
+time_contain,Lochkovian,419.62,413.02,yes,plantae_other_or_indet,yes,19,11,5
+time_contain,Lochkovian,419.62,413.02,yes,red_algae,no,3,3,2
+time_contain,Pragian,413.02,410.62,yes,ALL_CORE,yes,54,14,36
+time_contain,Pragian,413.02,410.62,yes,ALL_INCLUDING_FLAGGED,mixed,69,20,43
+time_contain,Pragian,413.02,410.62,yes,acritarchs_prasinophytes,no,1,1,1
+time_contain,Pragian,413.02,410.62,yes,algae_unspecified,no,1,1,0
+time_contain,Pragian,413.02,410.62,yes,dispersed_spores,yes,11,4,6
+time_contain,Pragian,413.02,410.62,yes,fungi,no,5,1,2
+time_contain,Pragian,413.02,410.62,yes,green_algae,no,4,4,2
+time_contain,Pragian,413.02,410.62,yes,nematophytes_and_thalloid_problematica,yes,9,3,5
+time_contain,Pragian,413.02,410.62,yes,pbdb_lycophytes_incl_zosterophylls,yes,5,4,3
+time_contain,Pragian,413.02,410.62,yes,pbdb_psilophytes_incl_trimerophytes,yes,14,7,9
+time_contain,Pragian,413.02,410.62,yes,pbdb_tracheophyta_other_or_indet,yes,2,2,2
+time_contain,Pragian,413.02,410.62,yes,plantae_other_or_indet,yes,13,7,12
+time_contain,Pragian,413.02,410.62,yes,red_algae,no,2,2,1
+time_contain,Pragian,413.02,410.62,yes,streptophyta_not_embryophyta,no,2,1,1
+time_contain,Emsian,410.62,393.47,yes,ALL_CORE,yes,312,59,46
+time_contain,Emsian,410.62,393.47,yes,ALL_INCLUDING_FLAGGED,mixed,344,79,58
+time_contain,Emsian,410.62,393.47,yes,acritarchs_prasinophytes,no,5,2,4
+time_contain,Emsian,410.62,393.47,yes,algae_unspecified,no,9,9,0
+time_contain,Emsian,410.62,393.47,yes,dispersed_spores,yes,48,3,21
+time_contain,Emsian,410.62,393.47,yes,green_algae,no,14,11,6
+time_contain,Emsian,410.62,393.47,yes,nematophytes_and_thalloid_problematica,yes,7,7,3
+time_contain,Emsian,410.62,393.47,yes,pbdb_bryophytes,yes,1,1,1
+time_contain,Emsian,410.62,393.47,yes,pbdb_ferns_cladoxylopsids_sphenophytes,yes,3,3,3
+time_contain,Emsian,410.62,393.47,yes,pbdb_lycophytes_incl_zosterophylls,yes,7,7,5
+time_contain,Emsian,410.62,393.47,yes,pbdb_psilophytes_incl_trimerophytes,yes,43,29,9
+time_contain,Emsian,410.62,393.47,yes,pbdb_tracheophyta_other_or_indet,yes,169,30,0
+time_contain,Emsian,410.62,393.47,yes,plantae_other_or_indet,yes,34,29,4
+time_contain,Emsian,410.62,393.47,yes,red_algae,no,4,3,2
+time_contain,Eifelian,393.47,387.95,yes,ALL_CORE,yes,92,24,33
+time_contain,Eifelian,393.47,387.95,yes,ALL_INCLUDING_FLAGGED,mixed,103,32,42
+time_contain,Eifelian,393.47,387.95,yes,algae_unspecified,no,3,3,3
+time_contain,Eifelian,393.47,387.95,yes,dispersed_spores,yes,52,6,21
+time_contain,Eifelian,393.47,387.95,yes,green_algae,no,4,4,4
+time_contain,Eifelian,393.47,387.95,yes,pbdb_ferns_cladoxylopsids_sphenophytes,yes,2,2,0
+time_contain,Eifelian,393.47,387.95,yes,pbdb_lycophytes_incl_zosterophylls,yes,3,3,2
+time_contain,Eifelian,393.47,387.95,yes,pbdb_progymnosperms,yes,2,2,1
+time_contain,Eifelian,393.47,387.95,yes,pbdb_psilophytes_incl_trimerophytes,yes,8,6,4
+time_contain,Eifelian,393.47,387.95,yes,pbdb_tracheophyta_other_or_indet,yes,14,4,1
+time_contain,Eifelian,393.47,387.95,yes,plantae_other_or_indet,yes,11,9,4
+time_contain,Eifelian,393.47,387.95,yes,red_algae,no,3,3,1
+time_contain,Eifelian,393.47,387.95,yes,streptophyta_not_embryophyta,no,1,1,1
+time_contain,Givetian,387.95,382.31,yes,ALL_CORE,yes,757,146,119
+time_contain,Givetian,387.95,382.31,yes,ALL_INCLUDING_FLAGGED,mixed,785,164,133
+time_contain,Givetian,387.95,382.31,yes,acritarchs_prasinophytes,no,2,2,2
+time_contain,Givetian,387.95,382.31,yes,algae_unspecified,no,1,1,0
+time_contain,Givetian,387.95,382.31,yes,dispersed_spores,yes,282,22,51
+time_contain,Givetian,387.95,382.31,yes,green_algae,no,17,15,8
+time_contain,Givetian,387.95,382.31,yes,nematophytes_and_thalloid_problematica,yes,1,1,1
+time_contain,Givetian,387.95,382.31,yes,pbdb_ferns_cladoxylopsids_sphenophytes,yes,34,23,12
+time_contain,Givetian,387.95,382.31,yes,pbdb_lycophytes_incl_zosterophylls,yes,69,56,14
+time_contain,Givetian,387.95,382.31,yes,pbdb_progymnosperms,yes,64,37,9
+time_contain,Givetian,387.95,382.31,yes,pbdb_psilophytes_incl_trimerophytes,yes,64,39,10
+time_contain,Givetian,387.95,382.31,yes,pbdb_seed_plants,yes,6,6,5
+time_contain,Givetian,387.95,382.31,yes,pbdb_tracheophyta_other_or_indet,yes,193,45,1
+time_contain,Givetian,387.95,382.31,yes,plantae_other_or_indet,yes,44,32,17
+time_contain,Givetian,387.95,382.31,yes,red_algae,no,4,4,1
+time_contain,Givetian,387.95,382.31,yes,streptophyta_not_embryophyta,no,4,4,3
+time_contain,(none: age range not within one stage),,,,ALL_CORE,yes,1250,289,219
+time_contain,(none: age range not within one stage),,,,ALL_INCLUDING_FLAGGED,mixed,1918,688,283
+time_contain,(none: age range not within one stage),,,,acritarchs_prasinophytes,no,157,37,26
+time_contain,(none: age range not within one stage),,,,algae_unspecified,no,17,17,2
+time_contain,(none: age range not within one stage),,,,dispersed_spores,yes,547,34,74
+time_contain,(none: age range not within one stage),,,,fungi,no,1,1,0
+time_contain,(none: age range not within one stage),,,,green_algae,no,186,162,26
+time_contain,(none: age range not within one stage),,,,nematophytes_and_thalloid_problematica,yes,23,19,4
+time_contain,(none: age range not within one stage),,,,pbdb_bryophytes,yes,8,8,1
+time_contain,(none: age range not within one stage),,,,pbdb_ferns_cladoxylopsids_sphenophytes,yes,27,19,14
+time_contain,(none: age range not within one stage),,,,pbdb_lycophytes_incl_zosterophylls,yes,102,82,17
+time_contain,(none: age range not within one stage),,,,pbdb_progymnosperms,yes,40,34,6
+time_contain,(none: age range not within one stage),,,,pbdb_psilophytes_incl_trimerophytes,yes,205,108,21
+time_contain,(none: age range not within one stage),,,,pbdb_seed_plants,yes,9,6,8
+time_contain,(none: age range not within one stage),,,,pbdb_tracheophyta_other_or_indet,yes,114,35,4
+time_contain,(none: age range not within one stage),,,,plantae_other_or_indet,yes,175,110,74
+time_contain,(none: age range not within one stage),,,,red_algae,no,291,209,9
+time_contain,(none: age range not within one stage),,,,streptophyta_not_embryophyta,no,16,16,1
+time_major,Tremadocian,486.85,477.1,yes,ALL_INCLUDING_FLAGGED,mixed,63,24,17
+time_major,Tremadocian,486.85,477.1,yes,acritarchs_prasinophytes,no,55,16,12
+time_major,Tremadocian,486.85,477.1,yes,algae_unspecified,no,3,3,1
+time_major,Tremadocian,486.85,477.1,yes,green_algae,no,4,4,3
+time_major,Tremadocian,486.85,477.1,yes,red_algae,no,1,1,1
+time_major,Floian,477.1,471.3,yes,ALL_INCLUDING_FLAGGED,mixed,15,12,10
+time_major,Floian,477.1,471.3,yes,acritarchs_prasinophytes,no,5,2,5
+time_major,Floian,477.1,471.3,yes,algae_unspecified,no,2,2,2
+time_major,Floian,477.1,471.3,yes,green_algae,no,7,7,2
+time_major,Floian,477.1,471.3,yes,red_algae,no,1,1,1
+time_major,Dapingian,471.3,469.4,yes,ALL_INCLUDING_FLAGGED,mixed,18,18,4
+time_major,Dapingian,471.3,469.4,yes,acritarchs_prasinophytes,no,1,1,1
+time_major,Dapingian,471.3,469.4,yes,algae_unspecified,no,13,13,1
+time_major,Dapingian,471.3,469.4,yes,green_algae,no,4,4,2
+time_major,Darriwilian,469.4,458.2,yes,ALL_CORE,yes,4,4,3
+time_major,Darriwilian,469.4,458.2,yes,ALL_INCLUDING_FLAGGED,mixed,40,32,15
+time_major,Darriwilian,469.4,458.2,yes,acritarchs_prasinophytes,no,1,1,1
+time_major,Darriwilian,469.4,458.2,yes,algae_unspecified,no,3,3,1
+time_major,Darriwilian,469.4,458.2,yes,green_algae,no,15,13,6
+time_major,Darriwilian,469.4,458.2,yes,plantae_other_or_indet,yes,4,4,3
+time_major,Darriwilian,469.4,458.2,yes,red_algae,no,17,14,4
+time_major,Sandbian,458.2,452.8,yes,ALL_CORE,yes,11,10,5
+time_major,Sandbian,458.2,452.8,yes,ALL_INCLUDING_FLAGGED,mixed,376,249,27
+time_major,Sandbian,458.2,452.8,yes,acritarchs_prasinophytes,no,11,2,5
+time_major,Sandbian,458.2,452.8,yes,algae_unspecified,no,1,1,0
+time_major,Sandbian,458.2,452.8,yes,green_algae,no,92,73,12
+time_major,Sandbian,458.2,452.8,yes,plantae_other_or_indet,yes,11,10,5
+time_major,Sandbian,458.2,452.8,yes,red_algae,no,261,179,5
+time_major,Katian,452.8,445.2,yes,ALL_CORE,yes,2,2,1
+time_major,Katian,452.8,445.2,yes,ALL_INCLUDING_FLAGGED,mixed,167,136,25
+time_major,Katian,452.8,445.2,yes,acritarchs_prasinophytes,no,2,1,1
+time_major,Katian,452.8,445.2,yes,algae_unspecified,no,2,2,0
+time_major,Katian,452.8,445.2,yes,green_algae,no,94,78,17
+time_major,Katian,452.8,445.2,yes,plantae_other_or_indet,yes,2,2,1
+time_major,Katian,452.8,445.2,yes,red_algae,no,67,62,6
+time_major,Hirnantian,445.2,443.1,yes,ALL_CORE,yes,1,1,1
+time_major,Hirnantian,445.2,443.1,yes,ALL_INCLUDING_FLAGGED,mixed,18,11,12
+time_major,Hirnantian,445.2,443.1,yes,acritarchs_prasinophytes,no,9,2,5
+time_major,Hirnantian,445.2,443.1,yes,dispersed_spores,yes,1,1,1
+time_major,Hirnantian,445.2,443.1,yes,green_algae,no,5,5,4
+time_major,Hirnantian,445.2,443.1,yes,red_algae,no,3,3,2
+time_major,Rhuddanian,443.1,440.5,yes,ALL_CORE,yes,3,2,2
+time_major,Rhuddanian,443.1,440.5,yes,ALL_INCLUDING_FLAGGED,mixed,75,16,15
+time_major,Rhuddanian,443.1,440.5,yes,acritarchs_prasinophytes,no,61,12,11
+time_major,Rhuddanian,443.1,440.5,yes,dispersed_spores,yes,2,1,2
+time_major,Rhuddanian,443.1,440.5,yes,green_algae,no,11,11,2
+time_major,Rhuddanian,443.1,440.5,yes,plantae_other_or_indet,yes,1,1,0
+time_major,Aeronian,440.5,438.6,yes,ALL_INCLUDING_FLAGGED,mixed,12,11,3
+time_major,Aeronian,440.5,438.6,yes,algae_unspecified,no,1,1,0
+time_major,Aeronian,440.5,438.6,yes,green_algae,no,10,10,2
+time_major,Aeronian,440.5,438.6,yes,red_algae,no,1,1,1
+time_major,Telychian,438.6,432.9,yes,ALL_CORE,yes,2,2,1
+time_major,Telychian,438.6,432.9,yes,ALL_INCLUDING_FLAGGED,mixed,32,25,14
+time_major,Telychian,438.6,432.9,yes,acritarchs_prasinophytes,no,6,1,5
+time_major,Telychian,438.6,432.9,yes,algae_unspecified,no,6,6,1
+time_major,Telychian,438.6,432.9,yes,green_algae,no,17,16,6
+time_major,Telychian,438.6,432.9,yes,plantae_other_or_indet,yes,2,2,1
+time_major,Telychian,438.6,432.9,yes,red_algae,no,1,1,1
+time_major,Sheinwoodian,432.9,430.6,yes,ALL_CORE,yes,2,2,1
+time_major,Sheinwoodian,432.9,430.6,yes,ALL_INCLUDING_FLAGGED,mixed,17,12,7
+time_major,Sheinwoodian,432.9,430.6,yes,algae_unspecified,no,7,7,0
+time_major,Sheinwoodian,432.9,430.6,yes,green_algae,no,3,3,3
+time_major,Sheinwoodian,432.9,430.6,yes,nematophytes_and_thalloid_problematica,yes,2,2,1
+time_major,Sheinwoodian,432.9,430.6,yes,red_algae,no,5,5,3
+time_major,Homerian,430.6,426.7,yes,ALL_CORE,yes,36,13,16
+time_major,Homerian,430.6,426.7,yes,ALL_INCLUDING_FLAGGED,mixed,96,40,39
+time_major,Homerian,430.6,426.7,yes,acritarchs_prasinophytes,no,30,8,11
+time_major,Homerian,430.6,426.7,yes,algae_unspecified,no,6,6,0
+time_major,Homerian,430.6,426.7,yes,dispersed_spores,yes,19,2,12
+time_major,Homerian,430.6,426.7,yes,green_algae,no,14,13,9
+time_major,Homerian,430.6,426.7,yes,nematophytes_and_thalloid_problematica,yes,5,5,1
+time_major,Homerian,430.6,426.7,yes,pbdb_psilophytes_incl_trimerophytes,yes,4,1,1
+time_major,Homerian,430.6,426.7,yes,pbdb_seed_plants,yes,1,1,1
+time_major,Homerian,430.6,426.7,yes,plantae_other_or_indet,yes,7,6,1
+time_major,Homerian,430.6,426.7,yes,red_algae,no,8,8,3
+time_major,Homerian,430.6,426.7,yes,streptophyta_not_embryophyta,no,2,2,0
+time_major,Gorstian,426.7,425.0,yes,ALL_CORE,yes,3,3,1
+time_major,Gorstian,426.7,425.0,yes,ALL_INCLUDING_FLAGGED,mixed,5,4,2
+time_major,Gorstian,426.7,425.0,yes,algae_unspecified,no,1,1,0
+time_major,Gorstian,426.7,425.0,yes,nematophytes_and_thalloid_problematica,yes,3,3,1
+time_major,Gorstian,426.7,425.0,yes,red_algae,no,1,1,1
+time_major,Ludfordian,425.0,422.7,yes,ALL_CORE,yes,83,37,26
+time_major,Ludfordian,425.0,422.7,yes,ALL_INCLUDING_FLAGGED,mixed,128,69,39
+time_major,Ludfordian,425.0,422.7,yes,acritarchs_prasinophytes,no,6,5,3
+time_major,Ludfordian,425.0,422.7,yes,algae_unspecified,no,13,13,0
+time_major,Ludfordian,425.0,422.7,yes,dispersed_spores,yes,11,1,5
+time_major,Ludfordian,425.0,422.7,yes,green_algae,no,16,14,7
+time_major,Ludfordian,425.0,422.7,yes,nematophytes_and_thalloid_problematica,yes,3,1,3
+time_major,Ludfordian,425.0,422.7,yes,pbdb_lycophytes_incl_zosterophylls,yes,11,10,3
+time_major,Ludfordian,425.0,422.7,yes,pbdb_psilophytes_incl_trimerophytes,yes,29,18,3
+time_major,Ludfordian,425.0,422.7,yes,pbdb_tracheophyta_other_or_indet,yes,3,3,1
+time_major,Ludfordian,425.0,422.7,yes,plantae_other_or_indet,yes,26,19,11
+time_major,Ludfordian,425.0,422.7,yes,red_algae,no,10,7,3
+time_major,Lochkovian,419.62,413.02,yes,ALL_CORE,yes,58,23,22
+time_major,Lochkovian,419.62,413.02,yes,ALL_INCLUDING_FLAGGED,mixed,67,31,28
+time_major,Lochkovian,419.62,413.02,yes,acritarchs_prasinophytes,no,1,1,1
+time_major,Lochkovian,419.62,413.02,yes,algae_unspecified,no,2,2,0
+time_major,Lochkovian,419.62,413.02,yes,dispersed_spores,yes,13,3,7
+time_major,Lochkovian,419.62,413.02,yes,green_algae,no,3,3,3
+time_major,Lochkovian,419.62,413.02,yes,nematophytes_and_thalloid_problematica,yes,6,3,5
+time_major,Lochkovian,419.62,413.02,yes,pbdb_lycophytes_incl_zosterophylls,yes,6,5,1
+time_major,Lochkovian,419.62,413.02,yes,pbdb_psilophytes_incl_trimerophytes,yes,10,4,3
+time_major,Lochkovian,419.62,413.02,yes,pbdb_tracheophyta_other_or_indet,yes,2,2,1
+time_major,Lochkovian,419.62,413.02,yes,plantae_other_or_indet,yes,21,13,5
+time_major,Lochkovian,419.62,413.02,yes,red_algae,no,3,3,2
+time_major,Pragian,413.02,410.62,yes,ALL_CORE,yes,54,14,36
+time_major,Pragian,413.02,410.62,yes,ALL_INCLUDING_FLAGGED,mixed,69,20,43
+time_major,Pragian,413.02,410.62,yes,acritarchs_prasinophytes,no,1,1,1
+time_major,Pragian,413.02,410.62,yes,algae_unspecified,no,1,1,0
+time_major,Pragian,413.02,410.62,yes,dispersed_spores,yes,11,4,6
+time_major,Pragian,413.02,410.62,yes,fungi,no,5,1,2
+time_major,Pragian,413.02,410.62,yes,green_algae,no,4,4,2
+time_major,Pragian,413.02,410.62,yes,nematophytes_and_thalloid_problematica,yes,9,3,5
+time_major,Pragian,413.02,410.62,yes,pbdb_lycophytes_incl_zosterophylls,yes,5,4,3
+time_major,Pragian,413.02,410.62,yes,pbdb_psilophytes_incl_trimerophytes,yes,14,7,9
+time_major,Pragian,413.02,410.62,yes,pbdb_tracheophyta_other_or_indet,yes,2,2,2
+time_major,Pragian,413.02,410.62,yes,plantae_other_or_indet,yes,13,7,12
+time_major,Pragian,413.02,410.62,yes,red_algae,no,2,2,1
+time_major,Pragian,413.02,410.62,yes,streptophyta_not_embryophyta,no,2,1,1
+time_major,Emsian,410.62,393.47,yes,ALL_CORE,yes,592,128,105
+time_major,Emsian,410.62,393.47,yes,ALL_INCLUDING_FLAGGED,mixed,637,153,119
+time_major,Emsian,410.62,393.47,yes,acritarchs_prasinophytes,no,9,4,5
+time_major,Emsian,410.62,393.47,yes,algae_unspecified,no,10,10,0
+time_major,Emsian,410.62,393.47,yes,dispersed_spores,yes,107,7,40
+time_major,Emsian,410.62,393.47,yes,fungi,no,1,1,0
+time_major,Emsian,410.62,393.47,yes,green_algae,no,17,14,6
+time_major,Emsian,410.62,393.47,yes,nematophytes_and_thalloid_problematica,yes,13,12,3
+time_major,Emsian,410.62,393.47,yes,pbdb_bryophytes,yes,3,3,1
+time_major,Emsian,410.62,393.47,yes,pbdb_ferns_cladoxylopsids_sphenophytes,yes,8,6,5
+time_major,Emsian,410.62,393.47,yes,pbdb_lycophytes_incl_zosterophylls,yes,20,16,9
+time_major,Emsian,410.62,393.47,yes,pbdb_psilophytes_incl_trimerophytes,yes,120,68,13
+time_major,Emsian,410.62,393.47,yes,pbdb_tracheophyta_other_or_indet,yes,226,49,4
+time_major,Emsian,410.62,393.47,yes,plantae_other_or_indet,yes,95,69,32
+time_major,Emsian,410.62,393.47,yes,red_algae,no,4,3,2
+time_major,Emsian,410.62,393.47,yes,streptophyta_not_embryophyta,no,4,4,1
+time_major,Eifelian,393.47,387.95,yes,ALL_CORE,yes,238,35,42
+time_major,Eifelian,393.47,387.95,yes,ALL_INCLUDING_FLAGGED,mixed,249,43,51
+time_major,Eifelian,393.47,387.95,yes,algae_unspecified,no,3,3,3
+time_major,Eifelian,393.47,387.95,yes,dispersed_spores,yes,187,16,27
+time_major,Eifelian,393.47,387.95,yes,green_algae,no,4,4,4
+time_major,Eifelian,393.47,387.95,yes,pbdb_ferns_cladoxylopsids_sphenophytes,yes,2,2,0
+time_major,Eifelian,393.47,387.95,yes,pbdb_lycophytes_incl_zosterophylls,yes,10,8,5
+time_major,Eifelian,393.47,387.95,yes,pbdb_progymnosperms,yes,2,2,1
+time_major,Eifelian,393.47,387.95,yes,pbdb_psilophytes_incl_trimerophytes,yes,11,8,5
+time_major,Eifelian,393.47,387.95,yes,pbdb_tracheophyta_other_or_indet,yes,14,4,1
+time_major,Eifelian,393.47,387.95,yes,plantae_other_or_indet,yes,12,10,4
+time_major,Eifelian,393.47,387.95,yes,red_algae,no,3,3,1
+time_major,Eifelian,393.47,387.95,yes,streptophyta_not_embryophyta,no,1,1,1
+time_major,Givetian,387.95,382.31,yes,ALL_CORE,yes,966,198,150
+time_major,Givetian,387.95,382.31,yes,ALL_INCLUDING_FLAGGED,mixed,1006,227,164
+time_major,Givetian,387.95,382.31,yes,acritarchs_prasinophytes,no,2,2,2
+time_major,Givetian,387.95,382.31,yes,algae_unspecified,no,1,1,0
+time_major,Givetian,387.95,382.31,yes,dispersed_spores,yes,328,27,55
+time_major,Givetian,387.95,382.31,yes,green_algae,no,17,15,8
+time_major,Givetian,387.95,382.31,yes,nematophytes_and_thalloid_problematica,yes,4,4,3
+time_major,Givetian,387.95,382.31,yes,pbdb_ferns_cladoxylopsids_sphenophytes,yes,50,34,15
+time_major,Givetian,387.95,382.31,yes,pbdb_lycophytes_incl_zosterophylls,yes,89,70,18
+time_major,Givetian,387.95,382.31,yes,pbdb_progymnosperms,yes,71,44,9
+time_major,Givetian,387.95,382.31,yes,pbdb_psilophytes_incl_trimerophytes,yes,95,60,14
+time_major,Givetian,387.95,382.31,yes,pbdb_seed_plants,yes,11,9,8
+time_major,Givetian,387.95,382.31,yes,pbdb_tracheophyta_other_or_indet,yes,227,51,1
+time_major,Givetian,387.95,382.31,yes,plantae_other_or_indet,yes,91,51,29
+time_major,Givetian,387.95,382.31,yes,red_algae,no,4,4,1
+time_major,Givetian,387.95,382.31,yes,streptophyta_not_embryophyta,no,16,16,3
+time_major,Frasnian,382.31,372.15,no,ALL_CORE,yes,274,12,43
+time_major,Frasnian,382.31,372.15,no,ALL_INCLUDING_FLAGGED,mixed,274,12,43
+time_major,Frasnian,382.31,372.15,no,dispersed_spores,yes,264,9,33
+time_major,Frasnian,382.31,372.15,no,pbdb_ferns_cladoxylopsids_sphenophytes,yes,3,2,3
+time_major,Frasnian,382.31,372.15,no,pbdb_progymnosperms,yes,2,1,2
+time_major,Frasnian,382.31,372.15,no,pbdb_psilophytes_incl_trimerophytes,yes,2,1,2
+time_major,Frasnian,382.31,372.15,no,plantae_other_or_indet,yes,3,2,3
+time_major,Famennian,372.15,358.86,no,ALL_CORE,yes,19,7,9
+time_major,Famennian,372.15,358.86,no,ALL_INCLUDING_FLAGGED,mixed,19,7,9
+time_major,Famennian,372.15,358.86,no,pbdb_progymnosperms,yes,9,6,3
+time_major,Famennian,372.15,358.86,no,pbdb_psilophytes_incl_trimerophytes,yes,7,5,3
+time_major,Famennian,372.15,358.86,no,plantae_other_or_indet,yes,3,3,3
+time_major,(none),,,,ALL_CORE,yes,280,118,79
+time_major,(none),,,,ALL_INCLUDING_FLAGGED,mixed,321,150,92
+time_major,(none),,,,algae_unspecified,no,1,1,0
+time_major,(none),,,,dispersed_spores,yes,24,4,18
+time_major,(none),,,,green_algae,no,39,31,12
+time_major,(none),,,,nematophytes_and_thalloid_problematica,yes,14,11,3
+time_major,(none),,,,pbdb_bryophytes,yes,6,6,1
+time_major,(none),,,,pbdb_ferns_cladoxylopsids_sphenophytes,yes,3,3,2
+time_major,(none),,,,pbdb_lycophytes_incl_zosterophylls,yes,58,50,7
+time_major,(none),,,,pbdb_progymnosperms,yes,22,20,3
+time_major,(none),,,,pbdb_psilophytes_incl_trimerophytes,yes,85,40,13
+time_major,(none),,,,pbdb_seed_plants,yes,3,2,3
+time_major,(none),,,,pbdb_tracheophyta_other_or_indet,yes,21,8,2
+time_major,(none),,,,plantae_other_or_indet,yes,44,30,27
+time_major,(none),,,,red_algae,no,1,1,1

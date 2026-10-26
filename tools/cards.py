@@ -5,7 +5,7 @@
 """Validate taxon cards, check cited DOIs against Crossref, and build the card index.
 
     uv run tools/cards.py check   # schema and vocabulary checks on taxa/*.md
-    uv run tools/cards.py dois    # every DOI in taxa/ and docs/ against Crossref
+    uv run tools/cards.py dois    # every DOI in taxa/ and docs/ (except frozen audits) against Crossref
     uv run tools/cards.py index   # rewrite taxa/README.md
     uv run tools/cards.py matrix  # rewrite data/traits.csv from the cards' trait records
 """
@@ -206,7 +206,7 @@ def cmd_dois():
             if isinstance(ref, dict) and ref.get("doi"):
                 doi = clean_doi(str(ref["doi"])).lower()
                 occurrences.setdefault(doi, []).append((path.relative_to(ROOT), ref.get("cite", "")))
-    for path in sorted(DOCS.glob("**/*.md")):
+    for path in sorted(q for q in DOCS.glob("**/*.md") if "audits" not in q.parts):
         lines = path.read_text().splitlines()
         for i, line in enumerate(lines):
             for raw in DOI_RE.findall(line):

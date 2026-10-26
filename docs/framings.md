@@ -1,7 +1,8 @@
 # Candidate framings
 
-Draft, 2026-10-26, Claude Opus 5.5. I drafted it before reading `docs/precedents.md` and revised it
-afterwards, so where the two agree they are independent assessments, and where they disagree the
+Draft, 2026-10-26, Claude Opus 5.5; facts updated 2026-10-27 after the review of the EPRP deposit
+(`docs/audits/2026-10-27-eprp-deposit-review.md`). I drafted it before reading `docs/precedents.md`
+and revised it afterwards, so where the two agree they are independent assessments, and where they disagree the
 disagreement is stated. It is written for Barry to react to; choosing a framing is his call
 (charter, test 4). Each framing gives the question, why it is open, the model, the evidence that
 could discriminate between explanations, and an assessment against the charter's tests. Full
@@ -88,7 +89,9 @@ no demography and no fit to dated fossils, a limitation Niklas himself stated. H
 only for leafy trees (Falster & Westoby 2003; Falster et al. 2017). The review found no
 quantitative height or buckling model for leafless axes.
 
-**Model.** The F1 engine with sporophyte architecture made explicit: light competition among
+**Model.** The F1 engine with sporophyte architecture made explicit (design references: TREED's
+carbon-economy trade-offs, Rogger et al. 2026; fossil-based whole-plant function, Matthaeus et al.
+2023): light competition among
 axes, hydraulic and mechanical limits on height set by axis diameter and conducting-tissue type
 (Wilson & Fischer 2011), gas exchange against a CO2 path (Dahl et al. 2022), and dispersal by
 height. Run with and without competition, and with innovations unlocked at their fossil dates or
@@ -135,10 +138,21 @@ useful to them as well as a test of their result. Circularity has to be handled:
 these same first appearances as minimum constraints, so the test is of the maxima and of the
 consistency between spore and megafossil channels, not of the minima.
 
-**Assessment.** Discriminating evidence: strong. Novelty: high, confirmed by the review (its Gap
-6) and made timely by Hooper et al. (2026). Tractability: high, a self-contained study. Interest:
-depends on Barry's appetite for a record-focused study, though it builds the observation model
-that F1 and F2 need.
+**Data in hand (EPRP review, 2026-10-27).** The megafossil channel exists but is thin: PBDB has
+259 core land-plant occurrences before the Emsian, 2 of them in the Sheinwoodian. The spore channel
+does not exist yet: PBDB holds one Ordovician spore record, so dispersed-spore occurrences must be
+compiled from the literature. Macrostrat's rock record is North American and mostly marine, while
+the early plant record is mainly European, peri-Gondwanan and South Chinese, so the observation
+model needs another sampling proxy. EPRP's validation of the candidate tools (`tbea`, PyRate,
+StratPal) has already found pitfalls that bite on a gap-dominated record
+(`data/eprp/pointers/eprp_pointers.md`).
+
+**Assessment.** Discriminating evidence: strong once both channels exist. Novelty: high for land
+plants, confirmed by the review (its Gap 6) and made timely by Hooper et al. (2026); the approach
+itself is established for birds and winged insects (Crouch 2022; Schachat et al. 2022). Tractability:
+moderate, because the spore compilation is real work, although a megafossil-only first pass is
+possible now. Interest: depends on Barry's appetite for a record-focused study, though it builds
+the observation model that F1 and F2 need.
 
 ## F4. From cosmopolitan to provincial: dispersal and spore biogeography
 
@@ -155,15 +169,21 @@ similarity among regions through time.
 **Evidence.** Similarity matrices of spore and megafossil assemblages by stage and region.
 
 **Assessment.** Discriminating evidence: good in principle. Novelty: probably high (not covered
-by the review's strands, so unchecked). Tractability: lower, because palaeogeographic and
-palaeoclimate inputs and a spore compilation are real work. A strong second-phase project.
+by the review's strands, so unchecked). Tractability: moderate. The palaeogeographic and
+palaeoclimate inputs are now on the mesh: 21 PALEOMAP elevation maps, HadCM3 and cGENIE climate
+fields and a plate-model index, plus gen3sis as an engine (EPRP review, 2026-10-27). The spore
+compilation shared with F3 remains, and no reliable full-plate model exists before 410 Ma. A strong
+second-phase project.
 
 ## F5. Closing the loop between evolving plants and the carbon cycle
 
 **Question.** Could plausibly evolving early vegetation have driven Late Ordovician cooling, the
 Siluro-Devonian fall in CO2 and the rise of O2? Every Earth-system treatment prescribes the plant
 effects (Lenton et al. 2012, 2016; Porada et al. 2016; Dahl et al. 2022), and the published
-verdicts on shallow versus deep rooting conflict.
+verdicts on shallow versus deep rooting conflict. Eco-evolutionary vegetation has been coupled to
+the carbon cycle for later intervals (Rogger et al. 2024; TREED, Rogger et al. 2026), and FLORA with
+SCION finds an Ordovician window of opportunity for plant expansion (Gurung et al. 2022). What
+remains open is the coupling for leafless early plants in this interval.
 
 **Where the review and I differ.** The review ranks this among its three most promising gaps (its
 Gap 4): replace the prescribed colonisation, C:P and weathering factors with outputs of an
@@ -201,9 +221,9 @@ fungal partnerships) attach to this world as modules rather than standing as sep
 |---|---|---|---|---|
 | F1 Sporophyte takeover | moderate alone; good with F2 | high (confirmed) | high | core mechanism |
 | F2 Height race | moderate–good | high (confirmed) | high | core mechanism, same engine as F1 |
-| F3 Record and timescale | strong | high (confirmed); timely | high | first deliverable; observation model for all |
-| F4 Spore biogeography | good | probably high (unchecked) | lower | second phase |
-| F5 Closed-loop carbon cycle | moderate (low-resolution proxies) | high | low as a first study | third stage |
+| F3 Record and timescale | strong once spores are compiled | high for plants (confirmed); timely | moderate (spore compilation) | first deliverable; observation model for all |
+| F4 Spore biogeography | good | probably high (unchecked) | moderate (inputs on the mesh) | second phase |
+| F5 Closed-loop carbon cycle | moderate (low-resolution proxies) | moderate (coupling built for later intervals) | low as a first study | third stage |
 | F6 Vulnerability and recovery | weak–moderate | moderate | moderate | application once F1 and F3 exist |
 | F7 Whole-flora world | — | — | low | destination |
 
@@ -222,6 +242,9 @@ One programme with two strands, built on shared machinery.
 
 F4, F5 and F6 follow once there is a working world to put on a map, couple to a carbon cycle or
 stress with climate.
+
+The EPRP review lowers F3's tractability but not its standing: the recommendation holds, with a
+dispersed-spore compilation as its first task, and that compilation also serves F4.
 
 The choice is not urgent, and the next tranche serves every framing: card review, the size and
 trait compilation, an audit of occurrence data and its licensing (Paleobiology Database, the Capel

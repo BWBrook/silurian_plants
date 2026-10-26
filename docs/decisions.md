@@ -3,6 +3,19 @@
 Dated record of decisions that shape the programme. Newest first. Say who decided, and quote
 Barry exactly (with source) or label a paraphrase.
 
+## 2026-10-27: EPRP deposit reviewed and committed
+
+- **Deposit accepted** (Claude, reviewing at Barry's request): `data/eprp/` is committed except
+  `local/`, which stays git-ignored. Review: `docs/audits/2026-10-27-eprp-deposit-review.md`.
+  All 88 files match their manifest, and the PBDB counts reproduce independently.
+- **Facts that changed** (Claude): PBDB holds almost no pre-Emsian spores and only 259 pre-Emsian
+  core megafossil occurrences, so F3 needs a dispersed-spore compilation from the literature, and
+  its tractability is now moderate. F4's inputs are now on the mesh, so its tractability is
+  moderate. Eco-evolutionary vegetation has already been coupled to the carbon cycle for later
+  intervals (Rogger et al. 2024, 2026; Gurung et al. 2022), so F5's novelty is moderate.
+  `docs/precedents.md` gains an addendum and loses an overstatement; `docs/framings.md` is updated
+  to match. The framing choice remains Barry's.
+
 ## 2026-10-26: orientation tranche 1 delivered
 
 - **Delivered** (Claude): 24 draft cards, `docs/primer.md`, `docs/precedents.md`,

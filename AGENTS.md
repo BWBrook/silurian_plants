@@ -13,6 +13,12 @@ recorded in `docs/decisions.md`.
 - `docs/`: charter, decisions, primer, precedents review, candidate framings.
 - `data/timescale.csv`: ICS v2024/12 stage base ages, the single source of numerical ages.
 - `data/traits.csv`: generated trait matrix, one row per card.
+- `data/eprp/`: material extracted from Barry's EPRP programme: literature, PBDB and Macrostrat
+  records, climate and palaeogeography context, and software pointers. Treat it as inputs, not
+  verified facts. Read each area's README before use, and regenerate tables with its scripts
+  rather than editing them. `data/eprp/local/` is git-ignored (unlicensed, no-derivatives or bulky
+  material) and exists only on mac-mini; rebuild it from `deep-server` with the scripts.
+- `docs/audits/`: independent checks of cards and deposits.
 - `tools/cards.py`: card validation, DOI checking and index generation.
 
 ## Commands

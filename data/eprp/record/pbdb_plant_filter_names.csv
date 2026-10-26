@@ -1,0 +1,684 @@
+d_subset,d_basis,name_accepted_else_identified,n_occurrences,n_collections
+acritarchs_prasinophytes,pbdb_tree:Acritarcha/Archaeplastida,Acanthodiacrodium,5,5
+acritarchs_prasinophytes,pbdb_tree:Acritarcha/Archaeplastida,Acritarcha,8,8
+acritarchs_prasinophytes,pbdb_tree:Acritarcha/Archaeplastida,Archaeoperisaccus,1,1
+acritarchs_prasinophytes,pbdb_tree:Acritarcha/Archaeplastida,Athabascaella,4,4
+acritarchs_prasinophytes,pbdb_tree:Acritarcha/Archaeplastida,Baltisphaeridium,18,14
+acritarchs_prasinophytes,pbdb_tree:Acritarcha/Archaeplastida,Caldariola glabra,11,11
+acritarchs_prasinophytes,pbdb_tree:Acritarcha/Archaeplastida,Chomotriletes,1,1
+acritarchs_prasinophytes,pbdb_tree:Acritarcha/Archaeplastida,Comasphaeridium,6,6
+acritarchs_prasinophytes,pbdb_tree:Acritarcha/Archaeplastida,Cymatiosphaera,7,7
+acritarchs_prasinophytes,pbdb_tree:Acritarcha/Archaeplastida,Deunffia,1,1
+acritarchs_prasinophytes,pbdb_tree:Acritarcha/Archaeplastida,Dictyotidium,1,1
+acritarchs_prasinophytes,pbdb_tree:Acritarcha/Archaeplastida,Domasia,1,1
+acritarchs_prasinophytes,pbdb_tree:Acritarcha/Archaeplastida,Estiastra,1,1
+acritarchs_prasinophytes,pbdb_tree:Acritarcha/Archaeplastida,Estiastra magna,2,2
+acritarchs_prasinophytes,pbdb_tree:Acritarcha/Archaeplastida,Eupoikilofusa,9,8
+acritarchs_prasinophytes,pbdb_tree:Acritarcha/Archaeplastida,Filisphaeridium,1,1
+acritarchs_prasinophytes,pbdb_tree:Acritarcha/Archaeplastida,Goniosphaeridium,8,7
+acritarchs_prasinophytes,pbdb_tree:Acritarcha/Archaeplastida,Gorgonisphaeridium,1,1
+acritarchs_prasinophytes,pbdb_tree:Acritarcha/Archaeplastida,Korilophyton,1,1
+acritarchs_prasinophytes,pbdb_tree:Acritarcha/Archaeplastida,Leiofusa,14,11
+acritarchs_prasinophytes,pbdb_tree:Acritarcha/Archaeplastida,Lophosphaeridium,18,13
+acritarchs_prasinophytes,pbdb_tree:Acritarcha/Archaeplastida,Micrhystridium,8,8
+acritarchs_prasinophytes,pbdb_tree:Acritarcha/Archaeplastida,Micrhystridium stellatum,4,4
+acritarchs_prasinophytes,pbdb_tree:Acritarcha/Archaeplastida,Nucellosphaeridium,3,3
+acritarchs_prasinophytes,pbdb_tree:Acritarcha/Archaeplastida,Peteinosphaeridium,6,3
+acritarchs_prasinophytes,pbdb_tree:Acritarcha/Archaeplastida,Peteinosphaeridium coronula,1,1
+acritarchs_prasinophytes,pbdb_tree:Acritarcha/Archaeplastida,Poikilofusa,2,2
+acritarchs_prasinophytes,pbdb_tree:Acritarcha/Archaeplastida,Poikilofusa spinata,1,1
+acritarchs_prasinophytes,pbdb_tree:Acritarcha/Archaeplastida,Polyancistrodorus,1,1
+acritarchs_prasinophytes,pbdb_tree:Acritarcha/Archaeplastida,Polyancistrodorus radiosus,1,1
+acritarchs_prasinophytes,pbdb_tree:Acritarcha/Archaeplastida,Pterospermella,1,1
+acritarchs_prasinophytes,pbdb_tree:Acritarcha/Archaeplastida,Rhopaliophora florida,4,4
+acritarchs_prasinophytes,pbdb_tree:Acritarcha/Archaeplastida,Rhopaliophora palmata,5,5
+acritarchs_prasinophytes,pbdb_tree:Acritarcha/Archaeplastida,Tasmanites,7,5
+acritarchs_prasinophytes,pbdb_tree:Acritarcha/Archaeplastida,Tenuirica wadeiae,9,9
+acritarchs_prasinophytes,pbdb_tree:Acritarcha/Archaeplastida,Trachysphaeridium,10,10
+acritarchs_prasinophytes,pbdb_tree:Acritarcha/Archaeplastida,Vavososphaeridium,4,4
+acritarchs_prasinophytes,pbdb_tree:Acritarcha/Archaeplastida,Veryhachium,12,7
+acritarchs_prasinophytes,plant_organ:marine palyn,Acritarch indet.,1,1
+acritarchs_prasinophytes,plant_organ:marine palyn,Diacrodia indet.,1,1
+algae_unspecified,name_curated,Alga indet.,1,1
+algae_unspecified,name_curated,Algae indet.,3,3
+algae_unspecified,name_curated,Paleoclosterium leptum,1,1
+algae_unspecified,name_curated,Paleodidymoprium didymum,1,1
+algae_unspecified,name_curated,Paleooedogonium micrum,1,1
+algae_unspecified,pbdb_tree:Algae,Algae,51,51
+algae_unspecified,pbdb_tree:Algae,Fucoides serra,17,17
+algae_unspecified,pbdb_tree:Algae,Vendotaenia,1,1
+embryophyta_pbdb_tree,pbdb_tree:Embryophyta,Acanthotriletes,13,10
+embryophyta_pbdb_tree,pbdb_tree:Embryophyta,Actinoxylon banksii,1,1
+embryophyta_pbdb_tree,pbdb_tree:Embryophyta,Anapiculatisporites,4,4
+embryophyta_pbdb_tree,pbdb_tree:Embryophyta,Aneurophytales,3,3
+embryophyta_pbdb_tree,pbdb_tree:Embryophyta,Aneurophyton,13,13
+embryophyta_pbdb_tree,pbdb_tree:Embryophyta,Aneurophyton germanicum,7,7
+embryophyta_pbdb_tree,pbdb_tree:Embryophyta,Aneurophyton hallii,2,2
+embryophyta_pbdb_tree,pbdb_tree:Embryophyta,Apiculatisporis,29,29
+embryophyta_pbdb_tree,pbdb_tree:Embryophyta,Apiculiretusispora,9,5
+embryophyta_pbdb_tree,pbdb_tree:Embryophyta,Apiculiretusispora brandtii,2,2
+embryophyta_pbdb_tree,pbdb_tree:Embryophyta,Arachnoxylon kopfi,1,1
+embryophyta_pbdb_tree,pbdb_tree:Embryophyta,Archaeopteris,1,1
+embryophyta_pbdb_tree,pbdb_tree:Embryophyta,Archaeopteris boyi,1,1
+embryophyta_pbdb_tree,pbdb_tree:Embryophyta,Archaeosigillaria,31,30
+embryophyta_pbdb_tree,pbdb_tree:Embryophyta,Archaeosigillaria vanuxemi,10,10
+embryophyta_pbdb_tree,pbdb_tree:Embryophyta,Barinophyton,1,1
+embryophyta_pbdb_tree,pbdb_tree:Embryophyta,Barrandeina,1,1
+embryophyta_pbdb_tree,pbdb_tree:Embryophyta,Barrandeina dusliana,9,9
+embryophyta_pbdb_tree,pbdb_tree:Embryophyta,Barsassia ornata,1,1
+embryophyta_pbdb_tree,pbdb_tree:Embryophyta,Bergeria,3,3
+embryophyta_pbdb_tree,pbdb_tree:Embryophyta,Cairoa lamanekii,2,2
+embryophyta_pbdb_tree,pbdb_tree:Embryophyta,Calamophyton,4,4
+embryophyta_pbdb_tree,pbdb_tree:Embryophyta,Calamophyton primaevum,8,8
+embryophyta_pbdb_tree,pbdb_tree:Embryophyta,Calamospora,35,35
+embryophyta_pbdb_tree,pbdb_tree:Embryophyta,Callixylon,2,2
+embryophyta_pbdb_tree,pbdb_tree:Embryophyta,Catenalis digitata,1,1
+embryophyta_pbdb_tree,pbdb_tree:Embryophyta,Caulopteris,3,2
+embryophyta_pbdb_tree,pbdb_tree:Embryophyta,Cephalopteris,1,1
+embryophyta_pbdb_tree,pbdb_tree:Embryophyta,Cladophlebis,1,1
+embryophyta_pbdb_tree,pbdb_tree:Embryophyta,Cladoxylon,3,3
+embryophyta_pbdb_tree,pbdb_tree:Embryophyta,Cladoxylopsida,3,3
+embryophyta_pbdb_tree,pbdb_tree:Embryophyta,Converrucosisporites,1,1
+embryophyta_pbdb_tree,pbdb_tree:Embryophyta,Convolutispora,15,15
+embryophyta_pbdb_tree,pbdb_tree:Embryophyta,Cooksonia,23,17
+embryophyta_pbdb_tree,pbdb_tree:Embryophyta,Cooksonia hemisphaerica,6,6
+embryophyta_pbdb_tree,pbdb_tree:Embryophyta,Cooksonia pertoni,4,4
+embryophyta_pbdb_tree,pbdb_tree:Embryophyta,Crenaticaulis,3,2
+embryophyta_pbdb_tree,pbdb_tree:Embryophyta,Dadoxylon,2,2
+embryophyta_pbdb_tree,pbdb_tree:Embryophyta,Dawsonites,10,10
+embryophyta_pbdb_tree,pbdb_tree:Embryophyta,Dawsonites arcuatus,8,8
+embryophyta_pbdb_tree,pbdb_tree:Embryophyta,Diatomozonotriletes,3,3
+embryophyta_pbdb_tree,pbdb_tree:Embryophyta,Distichophytum,2,2
+embryophyta_pbdb_tree,pbdb_tree:Embryophyta,Drepanophycus,46,44
+embryophyta_pbdb_tree,pbdb_tree:Embryophyta,Drepanophycus gaspianus,11,11
+embryophyta_pbdb_tree,pbdb_tree:Embryophyta,Drepanophycus spinaeformis,37,36
+embryophyta_pbdb_tree,pbdb_tree:Embryophyta,Dutoitea,1,1
+embryophyta_pbdb_tree,pbdb_tree:Embryophyta,Dutoitia,2,2
+embryophyta_pbdb_tree,pbdb_tree:Embryophyta,Dutoitia pulchra,1,1
+embryophyta_pbdb_tree,pbdb_tree:Embryophyta,Emphanisporites,25,18
+embryophyta_pbdb_tree,pbdb_tree:Embryophyta,Emphanisporites rotatus,11,11
+embryophyta_pbdb_tree,pbdb_tree:Embryophyta,Eocooksonia,4,3
+embryophyta_pbdb_tree,pbdb_tree:Embryophyta,Eophyllophyton bellum,1,1
+embryophyta_pbdb_tree,pbdb_tree:Embryophyta,Eospermatopteris,10,10
+embryophyta_pbdb_tree,pbdb_tree:Embryophyta,Euphyllophytina,466,95
+embryophyta_pbdb_tree,pbdb_tree:Embryophyta,Gilboaphyton,1,1
+embryophyta_pbdb_tree,pbdb_tree:Embryophyta,Gilboaphyton goldringiae,1,1
+embryophyta_pbdb_tree,pbdb_tree:Embryophyta,Gosslingia,3,3
+embryophyta_pbdb_tree,pbdb_tree:Embryophyta,Gosslingia breconensis,2,2
+embryophyta_pbdb_tree,pbdb_tree:Embryophyta,Granulatisporites,4,3
+embryophyta_pbdb_tree,pbdb_tree:Embryophyta,Harringtonia,2,2
+embryophyta_pbdb_tree,pbdb_tree:Embryophyta,Haskinsia,15,14
+embryophyta_pbdb_tree,pbdb_tree:Embryophyta,Haskinsia sagittata,3,3
+embryophyta_pbdb_tree,pbdb_tree:Embryophyta,Heidiphyllum,1,1
+embryophyta_pbdb_tree,pbdb_tree:Embryophyta,Heliosporites,1,1
+embryophyta_pbdb_tree,pbdb_tree:Embryophyta,Hicklingia edwardi,1,1
+embryophyta_pbdb_tree,pbdb_tree:Embryophyta,Hoegia,1,1
+embryophyta_pbdb_tree,pbdb_tree:Embryophyta,Horneophyton lignieri,1,1
+embryophyta_pbdb_tree,pbdb_tree:Embryophyta,Hostinella,43,38
+embryophyta_pbdb_tree,pbdb_tree:Embryophyta,Hyenia,9,7
+embryophyta_pbdb_tree,pbdb_tree:Embryophyta,Iridopteris eriensis,2,2
+embryophyta_pbdb_tree,pbdb_tree:Embryophyta,Laevigatosporites,1,1
+embryophyta_pbdb_tree,pbdb_tree:Embryophyta,Langoxylon asterochlaenoideum,1,1
+embryophyta_pbdb_tree,pbdb_tree:Embryophyta,Legrandia sporangifera,1,1
+embryophyta_pbdb_tree,pbdb_tree:Embryophyta,Leiotriletes,24,18
+embryophyta_pbdb_tree,pbdb_tree:Embryophyta,Leiotriletes sphaerotriangulus,1,1
+embryophyta_pbdb_tree,pbdb_tree:Embryophyta,Lepidodendron,1,1
+embryophyta_pbdb_tree,pbdb_tree:Embryophyta,Lepidodendropsis,2,2
+embryophyta_pbdb_tree,pbdb_tree:Embryophyta,Lerichea krystofovitchii,1,1
+embryophyta_pbdb_tree,pbdb_tree:Embryophyta,Loganiella canadensis,1,1
+embryophyta_pbdb_tree,pbdb_tree:Embryophyta,Loganophyton,2,2
+embryophyta_pbdb_tree,pbdb_tree:Embryophyta,Lorophyton,1,1
+embryophyta_pbdb_tree,pbdb_tree:Embryophyta,Lycophyta,1,1
+embryophyta_pbdb_tree,pbdb_tree:Embryophyta,Lycopodites,1,1
+embryophyta_pbdb_tree,pbdb_tree:Embryophyta,Lycopsida,2,2
+embryophyta_pbdb_tree,pbdb_tree:Embryophyta,Lycospora,4,2
+embryophyta_pbdb_tree,pbdb_tree:Embryophyta,Margophyton,2,2
+embryophyta_pbdb_tree,pbdb_tree:Embryophyta,Microreticulatisporites,1,1
+embryophyta_pbdb_tree,pbdb_tree:Embryophyta,Niayssioidea belgica,1,1
+embryophyta_pbdb_tree,pbdb_tree:Embryophyta,Palaeostigma,7,6
+embryophyta_pbdb_tree,pbdb_tree:Embryophyta,Palaeostigma sewardi,1,1
+embryophyta_pbdb_tree,pbdb_tree:Embryophyta,Periastron,1,1
+embryophyta_pbdb_tree,pbdb_tree:Embryophyta,Perotrilites,16,15
+embryophyta_pbdb_tree,pbdb_tree:Embryophyta,Pertica,2,2
+embryophyta_pbdb_tree,pbdb_tree:Embryophyta,Pertica varia,1,1
+embryophyta_pbdb_tree,pbdb_tree:Embryophyta,Pilasporites,1,1
+embryophyta_pbdb_tree,pbdb_tree:Embryophyta,Planisporites,2,1
+embryophyta_pbdb_tree,pbdb_tree:Embryophyta,Praeramunculus,18,18
+embryophyta_pbdb_tree,pbdb_tree:Embryophyta,Protocephalopteris praecox,2,2
+embryophyta_pbdb_tree,pbdb_tree:Embryophyta,Protolepidodendron,13,13
+embryophyta_pbdb_tree,pbdb_tree:Embryophyta,Protopteridium,9,9
+embryophyta_pbdb_tree,pbdb_tree:Embryophyta,Protopteridium hostinense,3,3
+embryophyta_pbdb_tree,pbdb_tree:Embryophyta,Protopteridophyton,1,1
+embryophyta_pbdb_tree,pbdb_tree:Embryophyta,Pseudosporochnus,23,19
+embryophyta_pbdb_tree,pbdb_tree:Embryophyta,Pseudosporochnus krejcii,2,2
+embryophyta_pbdb_tree,pbdb_tree:Embryophyta,Psilodendrion spinulosum,1,1
+embryophyta_pbdb_tree,pbdb_tree:Embryophyta,Psilophytites,2,2
+embryophyta_pbdb_tree,pbdb_tree:Embryophyta,Psilophyton,67,59
+embryophyta_pbdb_tree,pbdb_tree:Embryophyta,Psilophyton dawsonii,2,2
+embryophyta_pbdb_tree,pbdb_tree:Embryophyta,Psilophyton princeps,12,12
+embryophyta_pbdb_tree,pbdb_tree:Embryophyta,Psilophytopsida,3,3
+embryophyta_pbdb_tree,pbdb_tree:Embryophyta,Reimannia,1,1
+embryophyta_pbdb_tree,pbdb_tree:Embryophyta,Reimannia aldenense,1,1
+embryophyta_pbdb_tree,pbdb_tree:Embryophyta,Rellimia,21,18
+embryophyta_pbdb_tree,pbdb_tree:Embryophyta,Rellimia thomsonii,11,8
+embryophyta_pbdb_tree,pbdb_tree:Embryophyta,Renalia,1,1
+embryophyta_pbdb_tree,pbdb_tree:Embryophyta,Renalia hueberi,1,1
+embryophyta_pbdb_tree,pbdb_tree:Embryophyta,Rhachiopteris,1,1
+embryophyta_pbdb_tree,pbdb_tree:Embryophyta,Rhacophyton,2,1
+embryophyta_pbdb_tree,pbdb_tree:Embryophyta,Rhynia,2,1
+embryophyta_pbdb_tree,pbdb_tree:Embryophyta,Runcaria heinzelinii,1,1
+embryophyta_pbdb_tree,pbdb_tree:Embryophyta,Schizopodium,1,1
+embryophyta_pbdb_tree,pbdb_tree:Embryophyta,Sciadophyton,3,3
+embryophyta_pbdb_tree,pbdb_tree:Embryophyta,Serrulacaulis furcatus,4,4
+embryophyta_pbdb_tree,pbdb_tree:Embryophyta,Sigillaria,2,2
+embryophyta_pbdb_tree,pbdb_tree:Embryophyta,Sphenopteris,2,2
+embryophyta_pbdb_tree,pbdb_tree:Embryophyta,Sphondylophyton hyenioides,1,1
+embryophyta_pbdb_tree,pbdb_tree:Embryophyta,Sporogonites,1,1
+embryophyta_pbdb_tree,pbdb_tree:Embryophyta,Sporogonites exuberans,8,8
+embryophyta_pbdb_tree,pbdb_tree:Embryophyta,Stenokoleos,2,2
+embryophyta_pbdb_tree,pbdb_tree:Embryophyta,Svalbardia,2,2
+embryophyta_pbdb_tree,pbdb_tree:Embryophyta,Svalbardia avelinesiana,3,3
+embryophyta_pbdb_tree,pbdb_tree:Embryophyta,Svalbardia banksii,1,1
+embryophyta_pbdb_tree,pbdb_tree:Embryophyta,Svalbardia polymorpha,1,1
+embryophyta_pbdb_tree,pbdb_tree:Embryophyta,Svalbardia scotica,3,3
+embryophyta_pbdb_tree,pbdb_tree:Embryophyta,Taeniocrada,32,28
+embryophyta_pbdb_tree,pbdb_tree:Embryophyta,Taeniopteris,1,1
+embryophyta_pbdb_tree,pbdb_tree:Embryophyta,Tetraxylopteris,2,2
+embryophyta_pbdb_tree,pbdb_tree:Embryophyta,Thamnocladites vanopdenboschii,2,2
+embryophyta_pbdb_tree,pbdb_tree:Embryophyta,Tracheophyta,3,3
+embryophyta_pbdb_tree,pbdb_tree:Embryophyta,Triletes,1,1
+embryophyta_pbdb_tree,pbdb_tree:Embryophyta,Triloboxylon,2,2
+embryophyta_pbdb_tree,pbdb_tree:Embryophyta,Trimerophyton,3,3
+embryophyta_pbdb_tree,pbdb_tree:Embryophyta,Uralia,1,1
+embryophyta_pbdb_tree,pbdb_tree:Embryophyta,Verrucosisporites,27,14
+embryophyta_pbdb_tree,pbdb_tree:Embryophyta,Wattieza,1,1
+embryophyta_pbdb_tree,pbdb_tree:Embryophyta,Wattieza givetiana,1,1
+embryophyta_pbdb_tree,pbdb_tree:Embryophyta,Xenocladia medullosina,3,3
+embryophyta_pbdb_tree,pbdb_tree:Embryophyta,Yarravia,9,7
+embryophyta_pbdb_tree,pbdb_tree:Embryophyta,Yarravia oblonga,1,1
+embryophyta_pbdb_tree,pbdb_tree:Embryophyta,Yuguangia,1,1
+embryophyta_pbdb_tree,pbdb_tree:Embryophyta,Zosterophyllales,1,1
+embryophyta_pbdb_tree,pbdb_tree:Embryophyta,Zosterophyllum,26,23
+embryophyta_pbdb_tree,pbdb_tree:Embryophyta,Zosterophyllum divaricatum,1,1
+embryophyta_pbdb_tree,pbdb_tree:Embryophyta,Zosterophyllum myretonianum,5,5
+fungi,name_curated,Winfrenatia sp. n. gen.,1,1
+fungi,pbdb_tree:Fungi,Fungi,1,1
+fungi,pbdb_tree:Fungi,Palaeomyces,4,1
+green_algae,pbdb_tree:Chlorophyta,Abacella delicatula,1,1
+green_algae,pbdb_tree:Chlorophyta,Anomaloides reticulatus,2,2
+green_algae,pbdb_tree:Chlorophyta,Apidium,2,2
+green_algae,pbdb_tree:Chlorophyta,Apidium indicum,1,1
+green_algae,pbdb_tree:Chlorophyta,Archaeobatophora typa,1,1
+green_algae,pbdb_tree:Chlorophyta,Calathida,1,1
+green_algae,pbdb_tree:Chlorophyta,Chaetocladus,5,4
+green_algae,pbdb_tree:Chlorophyta,Chlorophyta,1,1
+green_algae,pbdb_tree:Chlorophyta,Coelosphaeridium,4,4
+green_algae,pbdb_tree:Chlorophyta,Contexta binata,2,2
+green_algae,pbdb_tree:Chlorophyta,Cyclocrinites,31,31
+green_algae,pbdb_tree:Chlorophyta,Cyclocrinites dactioloides,4,4
+green_algae,pbdb_tree:Chlorophyta,Cyclocrinites globosus,3,3
+green_algae,pbdb_tree:Chlorophyta,Cyclocrinites halli,5,5
+green_algae,pbdb_tree:Chlorophyta,Cyclocrinites nikitini,1,1
+green_algae,pbdb_tree:Chlorophyta,Cyclocrinites porosus,3,3
+green_algae,pbdb_tree:Chlorophyta,Cyclocrinites pyriformis,5,5
+green_algae,pbdb_tree:Chlorophyta,Cyclocrinites spaskii,1,1
+green_algae,pbdb_tree:Chlorophyta,Dasycladacea,4,4
+green_algae,pbdb_tree:Chlorophyta,Dasycladaceae,7,7
+green_algae,pbdb_tree:Chlorophyta,Dasycladales,1,1
+green_algae,pbdb_tree:Chlorophyta,Dasyporella,4,4
+green_algae,pbdb_tree:Chlorophyta,Dasyporella silurica,1,1
+green_algae,pbdb_tree:Chlorophyta,Diplopora,1,1
+green_algae,pbdb_tree:Chlorophyta,Fisherites,2,2
+green_algae,pbdb_tree:Chlorophyta,Fisherites reticulatus,10,10
+green_algae,pbdb_tree:Chlorophyta,Hedstroemia,7,7
+green_algae,pbdb_tree:Chlorophyta,Hedstroemia australe,1,1
+green_algae,pbdb_tree:Chlorophyta,Inocladus,1,1
+green_algae,pbdb_tree:Chlorophyta,Inocladus divaricata,1,1
+green_algae,pbdb_tree:Chlorophyta,Inocladus lesquereuxi,1,1
+green_algae,pbdb_tree:Chlorophyta,Inocladus newlini,1,1
+green_algae,pbdb_tree:Chlorophyta,Inocladus verus,1,1
+green_algae,pbdb_tree:Chlorophyta,Ischadites,18,18
+green_algae,pbdb_tree:Chlorophyta,Ischadites mammillaris,3,3
+green_algae,pbdb_tree:Chlorophyta,Jimaodanus waukeshaensis,1,1
+green_algae,pbdb_tree:Chlorophyta,Kamaena,3,3
+green_algae,pbdb_tree:Chlorophyta,Lancicula,3,3
+green_algae,pbdb_tree:Chlorophyta,Lancicula alta,3,3
+green_algae,pbdb_tree:Chlorophyta,Lancicula wolfi,4,4
+green_algae,pbdb_tree:Chlorophyta,Leiosphaeridia,15,15
+green_algae,pbdb_tree:Chlorophyta,Lepidolites,1,1
+green_algae,pbdb_tree:Chlorophyta,Leptopoterion,1,1
+green_algae,pbdb_tree:Chlorophyta,Linoporella,1,1
+green_algae,pbdb_tree:Chlorophyta,Litanaia,3,2
+green_algae,pbdb_tree:Chlorophyta,Litanaia cracens,1,1
+green_algae,pbdb_tree:Chlorophyta,Litanaia robusta,2,2
+green_algae,pbdb_tree:Chlorophyta,Litopora spatiosa,1,1
+green_algae,pbdb_tree:Chlorophyta,Mastopora concava,23,23
+green_algae,pbdb_tree:Chlorophyta,Medusaegraptus,7,7
+green_algae,pbdb_tree:Chlorophyta,Moniliporella,1,1
+green_algae,pbdb_tree:Chlorophyta,Palaeoporella,3,3
+green_algae,pbdb_tree:Chlorophyta,Palaeoporella variabilis,1,1
+green_algae,pbdb_tree:Chlorophyta,Pseudopalaeoporella,7,7
+green_algae,pbdb_tree:Chlorophyta,Receptaculites,109,102
+green_algae,pbdb_tree:Chlorophyta,Receptaculites elongatus,3,3
+green_algae,pbdb_tree:Chlorophyta,Receptaculites neptuni,1,1
+green_algae,pbdb_tree:Chlorophyta,Receptaculites poelmi,1,1
+green_algae,pbdb_tree:Chlorophyta,Receptaculitidae,5,5
+green_algae,pbdb_tree:Chlorophyta,Rhabdoporella,2,2
+green_algae,pbdb_tree:Chlorophyta,Rhabdoporella catenularia,1,1
+green_algae,pbdb_tree:Chlorophyta,Rhabdoporella glomerata,1,1
+green_algae,pbdb_tree:Chlorophyta,Sinuatoporella,1,1
+green_algae,pbdb_tree:Chlorophyta,Soanites,3,3
+green_algae,pbdb_tree:Chlorophyta,Sphaeroporella,1,1
+green_algae,pbdb_tree:Chlorophyta,Sycidium,1,1
+green_algae,pbdb_tree:Chlorophyta,Thalassocystis striata,2,2
+green_algae,pbdb_tree:Chlorophyta,Udoteaceae,1,1
+green_algae,pbdb_tree:Chlorophyta,Uva,1,1
+green_algae,pbdb_tree:Chlorophyta,Vermiporella,19,18
+green_algae,pbdb_tree:Chlorophyta,Vermiporella fragilis,1,1
+green_algae,pbdb_tree:Chlorophyta,Vermiporella myna,3,3
+green_algae,pbdb_tree:Chlorophyta,Verticillopora,1,1
+green_algae,pbdb_tree:Chlorophyta,Verticillopora annulata,1,1
+plant_unlinked_name,name_curated,? Enigmophytospora simplex,1,1
+plant_unlinked_name,name_curated,? Euomphalopteris sp.,1,1
+plant_unlinked_name,name_curated,? Pachytheca sp.,1,1
+plant_unlinked_name,name_curated,? Protaxites loganii,1,1
+plant_unlinked_name,name_curated,Aberlemnia sp.,1,1
+plant_unlinked_name,name_curated,Anaeurophyton germanicum,1,1
+plant_unlinked_name,name_curated,Bojophyton pragensis,1,1
+plant_unlinked_name,name_curated,Camptozonotriltes aliquantus,1,1
+plant_unlinked_name,name_curated,Conchulophyton quadrosii n. gen. n. sp.,1,1
+plant_unlinked_name,name_curated,Eorhynia primigenia,1,1
+plant_unlinked_name,name_curated,Huia recurvata,1,1
+plant_unlinked_name,name_curated,Hunanodendrum typicum,2,2
+plant_unlinked_name,name_curated,Lycopodolica tsegelnjuki,1,1
+plant_unlinked_name,name_curated,Minarodendron cathaysiense,1,1
+plant_unlinked_name,name_curated,Nemadophyton dechenianum,1,1
+plant_unlinked_name,name_curated,Nematasketum diversiforme,2,2
+plant_unlinked_name,name_curated,Nikitinspoirites sp.,1,1
+plant_unlinked_name,name_curated,Nodospora sp.,1,1
+plant_unlinked_name,name_curated,Pachytheca ashlayer,1,1
+plant_unlinked_name,name_curated,Pachytheca cf. fasciculata,1,1
+plant_unlinked_name,name_curated,Pachytheca indet.,1,1
+plant_unlinked_name,name_curated,Pachytheca sp.,7,7
+plant_unlinked_name,name_curated,Pachytheca stellimicans,1,1
+plant_unlinked_name,name_curated,Palaeogeminella folkii,1,1
+plant_unlinked_name,name_curated,Pathytheca sp.,2,2
+plant_unlinked_name,name_curated,Phacelophyton yushanensis,3,3
+plant_unlinked_name,name_curated,Proteolobus wallii,1,1
+plant_unlinked_name,name_curated,Pseudlepidodendron scharianum,1,1
+plant_unlinked_name,name_curated,Retustoriletes raise,1,1
+plant_unlinked_name,name_curated,Salopella australia,1,1
+plant_unlinked_name,name_curated,Salopella brasiliana n. sp.,1,1
+plant_unlinked_name,name_curated,Sawdonia ornata,1,1
+plant_unlinked_name,name_curated,cf. Sawdonia sp.,1,1
+plant_unlinked_name,name_spore_form_genus,? Spinozonotriletes cf. naumovii,1,1
+plant_unlinked_name,name_spore_form_genus,Acinosporites acanthomammillatus,5,5
+plant_unlinked_name,name_spore_form_genus,Acinosporites lindlarensis,1,1
+plant_unlinked_name,name_spore_form_genus,Acinosporites macrospinosus,2,2
+plant_unlinked_name,name_spore_form_genus,Acinosporites salopiensis,3,3
+plant_unlinked_name,name_spore_form_genus,Actinosporites acanthomammillatus,1,1
+plant_unlinked_name,name_spore_form_genus,Actinosporites lindlarensis,1,1
+plant_unlinked_name,name_spore_form_genus,Ambagisporites daedaleus,7,7
+plant_unlinked_name,name_spore_form_genus,Ambitisporites tripapillatus,4,4
+plant_unlinked_name,name_spore_form_genus,Ancyrospora ampulla,1,1
+plant_unlinked_name,name_spore_form_genus,Ancyrospora ancyrea,3,3
+plant_unlinked_name,name_spore_form_genus,Ancyrospora carnarvonensis,6,6
+plant_unlinked_name,name_spore_form_genus,Ancyrospora furcula,1,1
+plant_unlinked_name,name_spore_form_genus,Ancyrospora langii,8,8
+plant_unlinked_name,name_spore_form_genus,Ancyrospora melvillensis,1,1
+plant_unlinked_name,name_spore_form_genus,Ancyrospora multifurcata,1,1
+plant_unlinked_name,name_spore_form_genus,Ancyrospora simplex,1,1
+plant_unlinked_name,name_spore_form_genus,Ancyrospora sp.,1,1
+plant_unlinked_name,name_spore_form_genus,Aneurospora cf. heterodontus,1,1
+plant_unlinked_name,name_spore_form_genus,Aneurospora semizonalis,1,1
+plant_unlinked_name,name_spore_form_genus,Apiculiretispora sp.,1,1
+plant_unlinked_name,name_spore_form_genus,Archaeozonotriletes aff. extensus,1,1
+plant_unlinked_name,name_spore_form_genus,Archaeozonotriletes confusus,1,1
+plant_unlinked_name,name_spore_form_genus,Archaeozonotriletes variabilis,2,2
+plant_unlinked_name,name_spore_form_genus,Auroraspora macromanifestus,10,10
+plant_unlinked_name,name_spore_form_genus,Auroraspora micromanifestus,11,11
+plant_unlinked_name,name_spore_form_genus,Auroraspora minuta,3,3
+plant_unlinked_name,name_spore_form_genus,Auroraspora sp.,1,1
+plant_unlinked_name,name_spore_form_genus,Biharisporites parviornatus,1,1
+plant_unlinked_name,name_spore_form_genus,Biornatispora dentata,1,1
+plant_unlinked_name,name_spore_form_genus,Biornatispora pseudospinosa,1,1
+plant_unlinked_name,name_spore_form_genus,Brochotriletes hudsonii,1,1
+plant_unlinked_name,name_spore_form_genus,Calyptosporites microspinosus,8,7
+plant_unlinked_name,name_spore_form_genus,Calyptosporites proteus,1,1
+plant_unlinked_name,name_spore_form_genus,Calyptosporites proximocavatus,8,8
+plant_unlinked_name,name_spore_form_genus,Calyptosporites sp.,5,5
+plant_unlinked_name,name_spore_form_genus,Calyptosporites stolidotus,7,7
+plant_unlinked_name,name_spore_form_genus,Calyptosporites velatus,14,14
+plant_unlinked_name,name_spore_form_genus,Camptozonotriletes caperatus,1,1
+plant_unlinked_name,name_spore_form_genus,Camptozonotriletes leptohymenoides,2,2
+plant_unlinked_name,name_spore_form_genus,Chelinospora concinna,2,2
+plant_unlinked_name,name_spore_form_genus,Corystisporites multispinosus,2,2
+plant_unlinked_name,name_spore_form_genus,Corystisporites sp.,1,1
+plant_unlinked_name,name_spore_form_genus,Cymbosporites hormiscoides,8,8
+plant_unlinked_name,name_spore_form_genus,Dibolisporites,29,23
+plant_unlinked_name,name_spore_form_genus,Geminospora,4,3
+plant_unlinked_name,name_spore_form_genus,Geminospora lemurata,10,10
+plant_unlinked_name,name_spore_form_genus,Gneudnaspora devellomedium,1,1
+plant_unlinked_name,name_spore_form_genus,Gneudnaspora divellomedium,7,7
+plant_unlinked_name,name_spore_form_genus,Gneudnaspora kernickii,7,7
+plant_unlinked_name,name_spore_form_genus,Grandispora,26,12
+plant_unlinked_name,name_spore_form_genus,Honseleria verticillata,2,2
+plant_unlinked_name,name_spore_form_genus,Hystrichosporites corystus,1,1
+plant_unlinked_name,name_spore_form_genus,Hystricosporites cf. delectabilis,1,1
+plant_unlinked_name,name_spore_form_genus,Hystricosporites corystus,1,1
+plant_unlinked_name,name_spore_form_genus,Hystricosporites furcatus,1,1
+plant_unlinked_name,name_spore_form_genus,Hystricosporites grandis,1,1
+plant_unlinked_name,name_spore_form_genus,Hystricosporites spp.,1,1
+plant_unlinked_name,name_spore_form_genus,Lophozonotriletes somphus,4,4
+plant_unlinked_name,name_spore_form_genus,Lophozonotriletes tylophorus,1,1
+plant_unlinked_name,name_spore_form_genus,Medusaspora dringii,2,2
+plant_unlinked_name,name_spore_form_genus,Perotriletes,1,1
+plant_unlinked_name,name_spore_form_genus,Puctatisporites confossus,1,1
+plant_unlinked_name,name_spore_form_genus,Rhabdosporites,26,20
+plant_unlinked_name,name_spore_form_genus,Samarasporites eximius,1,1
+plant_unlinked_name,name_spore_form_genus,Samarasporites praetervisus,1,1
+plant_unlinked_name,name_spore_form_genus,Samarasporites triangulatus,1,1
+plant_unlinked_name,name_spore_form_genus,Samarisporites,6,5
+plant_unlinked_name,name_spore_form_genus,Samarisporites triangulatus,7,7
+plant_unlinked_name,name_spore_form_genus,Spinizonotriletes cf. echinatus,1,1
+plant_unlinked_name,name_spore_form_genus,Spinozonotriletes cf. naumovii,2,2
+plant_unlinked_name,name_spore_form_genus,Spinozonotriletes naumovii,1,1
+plant_unlinked_name,name_spore_form_genus,Streelispora newportensis,5,5
+plant_unlinked_name,name_spore_form_genus,Tetrahedraletes cf. medinensis,1,1
+plant_unlinked_name,name_spore_form_genus,Tetrahedraletes sp.,1,1
+plant_unlinked_name,name_spore_form_genus,Tholisporites chulus,1,1
+plant_unlinked_name,name_spore_form_genus,Verruciretusispora dubia,1,1
+plant_unlinked_name,name_spore_form_genus,Verruciretusispora pallida,1,1
+plant_unlinked_name,name_spore_form_genus,cf. Auroraspora macromanifestus,1,1
+plant_unlinked_name,name_spore_form_genus,cf. Calyptosporites velatus,1,1
+plant_unlinked_organ,plant_organ:axis,<zosterophylloid>,1,1
+plant_unlinked_organ,plant_organ:axis,? Protoarticulata indet.,1,1
+plant_unlinked_organ,plant_organ:axis,? Psilophyte indet.,1,1
+plant_unlinked_organ,plant_organ:axis,Anapaulia moodyi,1,1
+plant_unlinked_organ,plant_organ:axis,Anisophyton cf. gothanii,1,1
+plant_unlinked_organ,plant_organ:axis,Baragwanthia longifolia,1,1
+plant_unlinked_organ,plant_organ:axis,Bathurstia cf. denticulata,1,1
+plant_unlinked_organ,plant_organ:axis,Bathurstia denticulata n. gen. n. sp.,1,1
+plant_unlinked_organ,plant_organ:axis,Bathurstia sp.,1,1
+plant_unlinked_organ,plant_organ:axis,Ciguelia juvenile n. gen. n. sp.,1,1
+plant_unlinked_organ,plant_organ:axis,Crossia virginiana,1,1
+plant_unlinked_organ,plant_organ:axis,Dictoxylon sp.,2,2
+plant_unlinked_organ,plant_organ:axis,Kidstonophyton discoides,1,1
+plant_unlinked_organ,plant_organ:axis,Langiophyton mackei,1,1
+plant_unlinked_organ,plant_organ:axis,Lyonophyton rhyniensis n. gen. n. sp.,1,1
+plant_unlinked_organ,plant_organ:axis,Oricilla bilinearis n. gen. n. sp.,1,1
+plant_unlinked_organ,plant_organ:axis,Sawdonia ornata,7,7
+plant_unlinked_organ,plant_organ:axis,Sawdonia sp.,2,2
+plant_unlinked_organ,"plant_organ:axis,leaf",Lycopodia <sp.>,1,1
+plant_unlinked_organ,"plant_organ:axis,leaf",Lycopodia ? sp.,1,1
+plant_unlinked_organ,"plant_organ:axis,leaf",Lycopodia indet.,20,20
+plant_unlinked_organ,"plant_organ:axis,leaf",Minarodendron cathaysiense,1,1
+plant_unlinked_organ,"plant_organ:axis,non-seed repro",Jugumella burubaensis,4,4
+plant_unlinked_organ,"plant_organ:axis,non-seed repro",Oocampsa catheta,1,1
+plant_unlinked_organ,plant_organ:cuticle,Paleocuticularia perforata n. gen. n. sp.,1,1
+plant_unlinked_organ,"plant_organ:cuticle,fertile axis",Aarabia brevicaulis n. gen. n. sp.,1,1
+plant_unlinked_organ,plant_organ:fertile axis,"<""Leclerqia"">",1,1
+plant_unlinked_organ,plant_organ:fertile axis,Anisophyton cf. gothanii,1,1
+plant_unlinked_organ,plant_organ:fertile axis,Caia langii n. gen. n. sp.,1,1
+plant_unlinked_organ,plant_organ:fertile axis,Eorhynia primigenia,1,1
+plant_unlinked_organ,plant_organ:fertile axis,Estinnophyton gracile,1,1
+plant_unlinked_organ,plant_organ:fertile axis,Foozia minuta,2,2
+plant_unlinked_organ,plant_organ:fertile axis,Gosferia curvata,2,2
+plant_unlinked_organ,plant_organ:fertile axis,Gumuia zyzzata,2,2
+plant_unlinked_organ,plant_organ:fertile axis,Incertae sedis,1,1
+plant_unlinked_organ,plant_organ:fertile axis,Isidrophyton iniguezii,1,1
+plant_unlinked_organ,plant_organ:fertile axis,Lycopodolica tsegelnjucki n. sp.,1,1
+plant_unlinked_organ,plant_organ:fertile axis,Newspeciesd newspecies,1,1
+plant_unlinked_organ,plant_organ:fertile axis,Odonax borealis n. sp.,1,1
+plant_unlinked_organ,plant_organ:fertile axis,Pertonella dactylethra n. gen. n. sp.,1,1
+plant_unlinked_organ,plant_organ:fertile axis,Salopella australis,2,2
+plant_unlinked_organ,plant_organ:fertile axis,Salopella caespitosa,1,1
+plant_unlinked_organ,plant_organ:fertile axis,Salopella indet.,1,1
+plant_unlinked_organ,plant_organ:fertile axis,Salopella marcensis n. sp.,1,1
+plant_unlinked_organ,plant_organ:fertile axis,Salopella sp.,2,2
+plant_unlinked_organ,plant_organ:fertile axis,Sawdonia ornata,2,2
+plant_unlinked_organ,plant_organ:fertile axis,Sawdonia wyomingense n. sp.,1,1
+plant_unlinked_organ,plant_organ:fertile axis,Stockmansella langii,1,1
+plant_unlinked_organ,plant_organ:fertile axis,Stocksmansella langii,3,3
+plant_unlinked_organ,plant_organ:fertile axis,Tarrantia salopensis n. gen. n. sp.,1,1
+plant_unlinked_organ,plant_organ:fertile axis,Tortilicaulis transwalliensis,1,1
+plant_unlinked_organ,plant_organ:fertile axis,Trichopherophyton teuchansii,1,1
+plant_unlinked_organ,plant_organ:fertile axis,Urpicalis steemansii,2,2
+plant_unlinked_organ,plant_organ:fertile axis,Uskiella reticulata n. sp.,1,1
+plant_unlinked_organ,plant_organ:fertile axis,cf. Salopella sp.,1,1
+plant_unlinked_organ,plant_organ:fertile axis,cf. Tortilicaulis sp.,1,1
+plant_unlinked_organ,plant_organ:fertile axis,cf. Uskiella reticulata,1,1
+plant_unlinked_organ,"plant_organ:fertile axis,microspore",Salopella allenii,1,1
+plant_unlinked_organ,"plant_organ:fertile axis,root",Metacladophyton tetraxylum,1,1
+plant_unlinked_organ,"plant_organ:fertile axis,sterile axis","""Forania"" indet.",1,1
+plant_unlinked_organ,"plant_organ:fertile axis,sterile axis","<""Kaulangiophyton"">",1,1
+plant_unlinked_organ,"plant_organ:fertile axis,sterile axis","<""Leclercqia"">",1,1
+plant_unlinked_organ,"plant_organ:fertile axis,sterile axis",Chaleuria cirrosa,1,1
+plant_unlinked_organ,"plant_organ:fertile axis,sterile axis",Compsocradus laevigatus,1,1
+plant_unlinked_organ,"plant_organ:fertile axis,sterile axis",Estinnophyton gracile,1,1
+plant_unlinked_organ,"plant_organ:fertile axis,sterile axis",Konioria andrychoviensis,1,1
+plant_unlinked_organ,"plant_organ:fertile axis,sterile axis",Oocampsa catheta,1,1
+plant_unlinked_organ,"plant_organ:fertile axis,sterile axis",Sawdonia acanthotheca n. sp.,1,1
+plant_unlinked_organ,"plant_organ:fertile axis,sterile axis",Sawdonia ornata,1,1
+plant_unlinked_organ,plant_organ:flower,Ancyrospora cf. ancyrea brevispinosa,1,1
+plant_unlinked_organ,plant_organ:leaf,Gingkophytopsis sp.,1,1
+plant_unlinked_organ,"plant_organ:leaf,multi organs",Ginkophytopsis belgica,1,1
+plant_unlinked_organ,"plant_organ:leaf,sterile axis",Lycopodolica sp.,1,1
+plant_unlinked_organ,plant_organ:megaspore,Hystricosporites multifurcatus,1,1
+plant_unlinked_organ,plant_organ:megaspore,Hystricosporites obscurus,1,1
+plant_unlinked_organ,plant_organ:megaspore,Lagenicula paulispinosa,1,1
+plant_unlinked_organ,plant_organ:megaspore,Lagenoisporites sp.,1,1
+plant_unlinked_organ,plant_organ:megaspore,Triangulartisporites sp.,1,1
+plant_unlinked_organ,plant_organ:megaspore,Zonalesporites sp.,1,1
+plant_unlinked_organ,"plant_organ:megaspore,microspore",Coronispora variabilis,1,1
+plant_unlinked_organ,"plant_organ:megaspore,microspore",Grandispora,1,1
+plant_unlinked_organ,plant_organ:microspore,? Cymbosporites senex,1,1
+plant_unlinked_organ,plant_organ:microspore,Acinosporites acanthomammillatus,4,4
+plant_unlinked_organ,plant_organ:microspore,Acinosporites apiculatus,1,1
+plant_unlinked_organ,plant_organ:microspore,Acinosporites lindlarensis,1,1
+plant_unlinked_organ,plant_organ:microspore,Acinosporites macrospinosus,1,1
+plant_unlinked_organ,plant_organ:microspore,Acinosporites parviornatus,3,3
+plant_unlinked_organ,plant_organ:microspore,Acinosporites salopiensis,1,1
+plant_unlinked_organ,plant_organ:microspore,Acinosporites sp.,1,1
+plant_unlinked_organ,plant_organ:microspore,Ambitisporites avitus,1,1
+plant_unlinked_organ,plant_organ:microspore,Ambitisporites dilutus,2,2
+plant_unlinked_organ,plant_organ:microspore,Ambitisporites sp.,2,2
+plant_unlinked_organ,plant_organ:microspore,Ancyrospora ancyrea,1,1
+plant_unlinked_organ,plant_organ:microspore,Ancyrospora grandispinosa,4,4
+plant_unlinked_organ,plant_organ:microspore,Aneurospora goensis,1,1
+plant_unlinked_organ,plant_organ:microspore,Aneurospora indet.,1,1
+plant_unlinked_organ,plant_organ:microspore,Aneurospora semizonalis,1,1
+plant_unlinked_organ,plant_organ:microspore,Archaeozonotriletes chulus,2,2
+plant_unlinked_organ,plant_organ:microspore,Archaeozonotriletes variabilis,1,1
+plant_unlinked_organ,plant_organ:microspore,Artemopyra brevicosta,1,1
+plant_unlinked_organ,plant_organ:microspore,Artemopyra sp.,1,1
+plant_unlinked_organ,plant_organ:microspore,Auroaspora aurora,1,1
+plant_unlinked_organ,plant_organ:microspore,Auroraspora aurora,3,3
+plant_unlinked_organ,plant_organ:microspore,Auroraspora macromanifestus,14,14
+plant_unlinked_organ,plant_organ:microspore,Auroraspora micromanifestus,3,3
+plant_unlinked_organ,plant_organ:microspore,Auroraspora minuta,1,1
+plant_unlinked_organ,plant_organ:microspore,Biornatispora apiculata,1,1
+plant_unlinked_organ,plant_organ:microspore,Biornatispora dentata,1,1
+plant_unlinked_organ,plant_organ:microspore,Biornatispora pseudospinosa,1,1
+plant_unlinked_organ,plant_organ:microspore,Biornatispora reticulata,1,1
+plant_unlinked_organ,plant_organ:microspore,Brochotriletes foveolatus,1,1
+plant_unlinked_organ,plant_organ:microspore,Calyptosporites microspinosus,4,4
+plant_unlinked_organ,plant_organ:microspore,Calyptosporites sp.,1,1
+plant_unlinked_organ,plant_organ:microspore,Calyptosporites velatus,10,10
+plant_unlinked_organ,plant_organ:microspore,Cheilotetras caledonica,1,1
+plant_unlinked_organ,plant_organ:microspore,Chelinospora timanica,1,1
+plant_unlinked_organ,plant_organ:microspore,Circumsporites melvillensis,1,1
+plant_unlinked_organ,plant_organ:microspore,Cosmosporites microspinosus,2,2
+plant_unlinked_organ,plant_organ:microspore,Cosmosporites velatus,4,4
+plant_unlinked_organ,plant_organ:microspore,Craspedispora ghadamisensis,1,1
+plant_unlinked_organ,plant_organ:microspore,Craspedispora paranaensis,1,1
+plant_unlinked_organ,plant_organ:microspore,Cymbosporites echinatus,1,1
+plant_unlinked_organ,plant_organ:microspore,Cymbosporites proteus,1,1
+plant_unlinked_organ,plant_organ:microspore,Cymbosporites sp.,1,1
+plant_unlinked_organ,plant_organ:microspore,Cymbosporites verrucosus,1,1
+plant_unlinked_organ,plant_organ:microspore,Diaphanospora riciniata,1,1
+plant_unlinked_organ,plant_organ:microspore,Dibolisporites,28,22
+plant_unlinked_organ,plant_organ:microspore,Dibolisporites cf. gibberosus major,1,1
+plant_unlinked_organ,plant_organ:microspore,Dyadospora murusattenuata,1,1
+plant_unlinked_organ,plant_organ:microspore,Dyadospora murusdensa,1,1
+plant_unlinked_organ,plant_organ:microspore,Geminospora,1,1
+plant_unlinked_organ,plant_organ:microspore,Geminospora lemurata,1,1
+plant_unlinked_organ,plant_organ:microspore,Grandispora,9,2
+plant_unlinked_organ,plant_organ:microspore,Hispanaediscus lamontii,1,1
+plant_unlinked_organ,plant_organ:microspore,Hispanaediscus verrucatus,1,1
+plant_unlinked_organ,plant_organ:microspore,Hispanaediscus wenlockensis,1,1
+plant_unlinked_organ,plant_organ:microspore,Hystricosporites delectabilis,1,1
+plant_unlinked_organ,plant_organ:microspore,Incertae sedis,1,1
+plant_unlinked_organ,plant_organ:microspore,Laevolancis divellomedium,1,1
+plant_unlinked_organ,plant_organ:microspore,Laevolancis plicata,1,1
+plant_unlinked_organ,plant_organ:microspore,Perinotriletes mutabalis,1,1
+plant_unlinked_organ,plant_organ:microspore,Pseudodyadospora petasus,1,1
+plant_unlinked_organ,plant_organ:microspore,Rhabdosporites,20,17
+plant_unlinked_organ,plant_organ:microspore,Samarisporites,2,1
+plant_unlinked_organ,plant_organ:microspore,Spinozonotriletes cf. naumovii,1,1
+plant_unlinked_organ,plant_organ:microspore,Spores indet.,1,1
+plant_unlinked_organ,plant_organ:microspore,Stenozonotriletes extensus major,1,1
+plant_unlinked_organ,plant_organ:microspore,Synorisporites downtonensis,1,1
+plant_unlinked_organ,plant_organ:microspore,Synorisporites indet.,1,1
+plant_unlinked_organ,plant_organ:microspore,Synorisporites spp.,1,1
+plant_unlinked_organ,plant_organ:microspore,Synorisporites tripapillatus,1,1
+plant_unlinked_organ,plant_organ:microspore,Tetrahedraletes medinensis,1,1
+plant_unlinked_organ,plant_organ:microspore,Tholisporites densus,1,1
+plant_unlinked_organ,plant_organ:microspore,Tholisporites punctatus,1,1
+plant_unlinked_organ,plant_organ:microspore,Tholisporites tenuis,1,1
+plant_unlinked_organ,plant_organ:multi organs,Longostachys latisporophyllus,1,1
+plant_unlinked_organ,plant_organ:non-seed repro,<Trimerophyte>,1,1
+plant_unlinked_organ,plant_organ:non-seed repro,Macivera gracilis,1,1
+plant_unlinked_organ,plant_organ:non-seed repro,Rhyniophytina indet.,1,1
+plant_unlinked_organ,plant_organ:plant debris,Pachytheca sp.,1,1
+plant_unlinked_organ,plant_organ:sterile axis,"""Forania"" indet.",1,1
+plant_unlinked_organ,plant_organ:sterile axis,<Articulale>,1,1
+plant_unlinked_organ,plant_organ:sterile axis,<Lycopsids>,1,1
+plant_unlinked_organ,plant_organ:sterile axis,<Morphotype I>,1,1
+plant_unlinked_organ,plant_organ:sterile axis,<Morphotype II>,1,1
+plant_unlinked_organ,plant_organ:sterile axis,<Morphotype III>,1,1
+plant_unlinked_organ,plant_organ:sterile axis,Bitelaria dubjanskii,1,1
+plant_unlinked_organ,plant_organ:sterile axis,Bowerophylloides mendozaensis,1,1
+plant_unlinked_organ,plant_organ:sterile axis,Mosellophyton hefteri,1,1
+plant_unlinked_organ,plant_organ:sterile axis,Protosawdonia prima n. gen. n. sp.,1,1
+plant_unlinked_organ,plant_organ:sterile axis,Sawdonia ornata,4,4
+plant_unlinked_organ,plant_organ:sterile axis,cf. Sawdonia ornata,1,1
+plantae_unplaced_pbdb_tree,pbdb_tree:Plantae,Actinophyllum,4,4
+plantae_unplaced_pbdb_tree,pbdb_tree:Plantae,Actinopodium nathorstii,1,1
+plantae_unplaced_pbdb_tree,pbdb_tree:Plantae,Alectorurus,1,1
+plantae_unplaced_pbdb_tree,pbdb_tree:Plantae,Amphidoxodendron dichotomum,2,2
+plantae_unplaced_pbdb_tree,pbdb_tree:Plantae,Angarolaminariopsis zinovae,1,1
+plantae_unplaced_pbdb_tree,pbdb_tree:Plantae,Aphyllopteris,7,7
+plantae_unplaced_pbdb_tree,pbdb_tree:Plantae,Asterocalamites,1,1
+plantae_unplaced_pbdb_tree,pbdb_tree:Plantae,Asteroxylon,3,3
+plantae_unplaced_pbdb_tree,pbdb_tree:Plantae,Avelinesia antiqua,3,3
+plantae_unplaced_pbdb_tree,pbdb_tree:Plantae,Baragwanathia,1,1
+plantae_unplaced_pbdb_tree,pbdb_tree:Plantae,Baragwanathia longifolia,3,3
+plantae_unplaced_pbdb_tree,pbdb_tree:Plantae,Biharisporites,7,7
+plantae_unplaced_pbdb_tree,pbdb_tree:Plantae,Blasaria,2,2
+plantae_unplaced_pbdb_tree,pbdb_tree:Plantae,Bogutschanophycus,1,1
+plantae_unplaced_pbdb_tree,pbdb_tree:Plantae,Bythotrephis,1,1
+plantae_unplaced_pbdb_tree,pbdb_tree:Plantae,Camarozonotriletes,2,1
+plantae_unplaced_pbdb_tree,pbdb_tree:Plantae,Camptotriletes,4,4
+plantae_unplaced_pbdb_tree,pbdb_tree:Plantae,Chauvinia scharyana,11,11
+plantae_unplaced_pbdb_tree,pbdb_tree:Plantae,Cirratriradites,2,2
+plantae_unplaced_pbdb_tree,pbdb_tree:Plantae,Coactilum,1,1
+plantae_unplaced_pbdb_tree,pbdb_tree:Plantae,Codonophycus austinii,1,1
+plantae_unplaced_pbdb_tree,pbdb_tree:Plantae,Colpodexylon,10,9
+plantae_unplaced_pbdb_tree,pbdb_tree:Plantae,Colpodexylon deatsii,2,2
+plantae_unplaced_pbdb_tree,pbdb_tree:Plantae,Cristatisporites,7,6
+plantae_unplaced_pbdb_tree,pbdb_tree:Plantae,Cryptoxylon forfarense,1,1
+plantae_unplaced_pbdb_tree,pbdb_tree:Plantae,Cyclogranisporites,10,10
+plantae_unplaced_pbdb_tree,pbdb_tree:Plantae,Cystosporites,2,1
+plantae_unplaced_pbdb_tree,pbdb_tree:Plantae,Dalejophyton nemejci,1,1
+plantae_unplaced_pbdb_tree,pbdb_tree:Plantae,Densosporites,6,6
+plantae_unplaced_pbdb_tree,pbdb_tree:Plantae,Dictyotriletes,8,6
+plantae_unplaced_pbdb_tree,pbdb_tree:Plantae,Dixopodoxylon goense,1,1
+plantae_unplaced_pbdb_tree,pbdb_tree:Plantae,Duisbergia mirabilis,3,3
+plantae_unplaced_pbdb_tree,pbdb_tree:Plantae,Enigmophyton,2,1
+plantae_unplaced_pbdb_tree,pbdb_tree:Plantae,Enigmophyton superbum,1,1
+plantae_unplaced_pbdb_tree,pbdb_tree:Plantae,Eohostimella heathana,1,1
+plantae_unplaced_pbdb_tree,pbdb_tree:Plantae,Flabellofolium,6,5
+plantae_unplaced_pbdb_tree,pbdb_tree:Plantae,Ginkgophytopsis,1,1
+plantae_unplaced_pbdb_tree,pbdb_tree:Plantae,Gravisporites,1,1
+plantae_unplaced_pbdb_tree,pbdb_tree:Plantae,Haplostigma,20,18
+plantae_unplaced_pbdb_tree,pbdb_tree:Plantae,Howisonia,1,1
+plantae_unplaced_pbdb_tree,pbdb_tree:Plantae,Hymenozonotriletes,7,6
+plantae_unplaced_pbdb_tree,pbdb_tree:Plantae,Ibyka amphikoma,1,1
+plantae_unplaced_pbdb_tree,pbdb_tree:Plantae,Jenisseiphyton,1,1
+plantae_unplaced_pbdb_tree,pbdb_tree:Plantae,Jenisseiphyton lebedevii,1,1
+plantae_unplaced_pbdb_tree,pbdb_tree:Plantae,Kazakhstanelia,1,1
+plantae_unplaced_pbdb_tree,pbdb_tree:Plantae,Krithodeophyton,1,1
+plantae_unplaced_pbdb_tree,pbdb_tree:Plantae,Latosporites,1,1
+plantae_unplaced_pbdb_tree,pbdb_tree:Plantae,Leclercqia,3,3
+plantae_unplaced_pbdb_tree,pbdb_tree:Plantae,Leclercqia complexa,7,7
+plantae_unplaced_pbdb_tree,pbdb_tree:Plantae,Leptophloeum australe,3,3
+plantae_unplaced_pbdb_tree,pbdb_tree:Plantae,Lyginodendron,1,1
+plantae_unplaced_pbdb_tree,pbdb_tree:Plantae,Nematophyton,1,1
+plantae_unplaced_pbdb_tree,pbdb_tree:Plantae,Nematoplexus,1,1
+plantae_unplaced_pbdb_tree,pbdb_tree:Plantae,Nematoplexus rhyniensis,1,1
+plantae_unplaced_pbdb_tree,pbdb_tree:Plantae,Nematothallus pseudovasculosa,2,2
+plantae_unplaced_pbdb_tree,pbdb_tree:Plantae,Nothia aphylla,1,1
+plantae_unplaced_pbdb_tree,pbdb_tree:Plantae,Pachytheca,1,1
+plantae_unplaced_pbdb_tree,pbdb_tree:Plantae,Palaeocancellus,1,1
+plantae_unplaced_pbdb_tree,pbdb_tree:Plantae,Parka,1,1
+plantae_unplaced_pbdb_tree,pbdb_tree:Plantae,Parka decipiens,1,1
+plantae_unplaced_pbdb_tree,pbdb_tree:Plantae,Pectinophyton,1,1
+plantae_unplaced_pbdb_tree,pbdb_tree:Plantae,Pectinophyton norvegicum,1,1
+plantae_unplaced_pbdb_tree,pbdb_tree:Plantae,Phyllothecotriletes,1,1
+plantae_unplaced_pbdb_tree,pbdb_tree:Plantae,Pinakodendron,1,1
+plantae_unplaced_pbdb_tree,pbdb_tree:Plantae,Plantae,96,72
+plantae_unplaced_pbdb_tree,pbdb_tree:Plantae,Proaulopora,9,9
+plantae_unplaced_pbdb_tree,pbdb_tree:Plantae,Protobarinophyton obrutschevii,1,1
+plantae_unplaced_pbdb_tree,pbdb_tree:Plantae,Protohyenia janovii,1,1
+plantae_unplaced_pbdb_tree,pbdb_tree:Plantae,Protolepidodendropsis,3,3
+plantae_unplaced_pbdb_tree,pbdb_tree:Plantae,Protophyllum,3,3
+plantae_unplaced_pbdb_tree,pbdb_tree:Plantae,Prototaxites,32,31
+plantae_unplaced_pbdb_tree,pbdb_tree:Plantae,Punctatisporites,41,36
+plantae_unplaced_pbdb_tree,pbdb_tree:Plantae,Quadrisporites,1,1
+plantae_unplaced_pbdb_tree,pbdb_tree:Plantae,Raistrickia,4,3
+plantae_unplaced_pbdb_tree,pbdb_tree:Plantae,Rebuchia,2,2
+plantae_unplaced_pbdb_tree,pbdb_tree:Plantae,Retusotriletes,109,50
+plantae_unplaced_pbdb_tree,pbdb_tree:Plantae,Retusotriletes simplex,3,3
+plantae_unplaced_pbdb_tree,pbdb_tree:Plantae,Rhabdophyton striatus,1,1
+plantae_unplaced_pbdb_tree,pbdb_tree:Plantae,Rhopalophyllum,1,1
+plantae_unplaced_pbdb_tree,pbdb_tree:Plantae,Selaginellites gracilis,1,1
+plantae_unplaced_pbdb_tree,pbdb_tree:Plantae,Sporangites,1,1
+plantae_unplaced_pbdb_tree,pbdb_tree:Plantae,Stenozonotriletes,13,13
+plantae_unplaced_pbdb_tree,pbdb_tree:Plantae,Stenozonotriletes simplex,1,1
+plantae_unplaced_pbdb_tree,pbdb_tree:Plantae,Stigmophyton sturi,5,5
+plantae_unplaced_pbdb_tree,pbdb_tree:Plantae,Sulcocladus multipunctatus,1,1
+plantae_unplaced_pbdb_tree,pbdb_tree:Plantae,Thamnocladus,1,1
+plantae_unplaced_pbdb_tree,pbdb_tree:Plantae,Thursophyton milleri,6,6
+plantae_unplaced_pbdb_tree,pbdb_tree:Plantae,Trileites,25,23
+plantae_unplaced_pbdb_tree,pbdb_tree:Plantae,Zonotrichites lissaviensis,1,1
+red_algae,pbdb_tree:Rhodophyta,Angusticellularia,1,1
+red_algae,pbdb_tree:Rhodophyta,Aquirrea fluegelii,1,1
+red_algae,pbdb_tree:Rhodophyta,Craticula gotlandica,2,2
+red_algae,pbdb_tree:Rhodophyta,Epiphyton,7,7
+red_algae,pbdb_tree:Rhodophyta,Graticula,2,2
+red_algae,pbdb_tree:Rhodophyta,Halysis,4,4
+red_algae,pbdb_tree:Rhodophyta,Halysis moniliformis,1,1
+red_algae,pbdb_tree:Rhodophyta,Kordephyton,1,1
+red_algae,pbdb_tree:Rhodophyta,Leveilleites hartnageli,1,1
+red_algae,pbdb_tree:Rhodophyta,Ludlovia,2,2
+red_algae,pbdb_tree:Rhodophyta,Ludlovia multispora,1,1
+red_algae,pbdb_tree:Rhodophyta,Paleophyllum,4,3
+red_algae,pbdb_tree:Rhodophyta,Paleophyllum mazourkensis,1,1
+red_algae,pbdb_tree:Rhodophyta,Parachaetetes,4,4
+red_algae,pbdb_tree:Rhodophyta,Prismostylus fibratum,49,49
+red_algae,pbdb_tree:Rhodophyta,Rhodophyta,2,2
+red_algae,pbdb_tree:Rhodophyta,Solenopora,100,99
+red_algae,pbdb_tree:Rhodophyta,Solenopora spongioides,3,3
+red_algae,pbdb_tree:Rhodophyta,Solenoporaceae,5,5
+red_algae,pbdb_tree:Rhodophyta,Tetradium,189,152
+red_algae,pbdb_tree:Rhodophyta,Tetradium approximatum,4,4
+red_algae,pbdb_tree:Rhodophyta,Tetradium huronense,9,9
+streptophyta_not_embryophyta,pbdb_tree:Streptophyta,Charophyta,1,1
+streptophyta_not_embryophyta,pbdb_tree:Streptophyta,Karpinskya,1,1
+streptophyta_not_embryophyta,pbdb_tree:Streptophyta,Palaeonitella,1,1
+streptophyta_not_embryophyta,pbdb_tree:Streptophyta,Palaeonitella cranii,1,1
+streptophyta_not_embryophyta,pbdb_tree:Streptophyta,Reniera verrucosa,1,1
+streptophyta_not_embryophyta,pbdb_tree:Streptophyta,Spongiophyton,17,17
+streptophyta_not_embryophyta,pbdb_tree:Streptophyta,Streptophyta,2,2
+streptophyta_not_embryophyta,pbdb_tree:Streptophyta,Trochiliscus,1,1

@@ -1,0 +1,457 @@
+project_id,project_name,stage,stage_base_ma,stage_top_ma,unit_env_class,n_units_overlapping_stage_all_columns,n_units_overlapping_stage_active_columns,n_units_spanning_stage_midpoint_active_columns,n_active_columns_overlapping_stage,n_active_columns_spanning_stage_midpoint,area_km2_active_columns_overlapping_stage,area_km2_active_columns_spanning_stage_midpoint,note
+1,North America,Givetian,387.95,382.31,ALL,601,598,308,333,268,8243245.3,6914175.5,
+1,North America,Givetian,387.95,382.31,marine_only,490,487,231,239,197,6519501.0,5527897.7,
+1,North America,Givetian,387.95,382.31,nonmarine_only,22,22,18,20,18,476619.2,400204.3,
+1,North America,Givetian,387.95,382.31,both_marine_and_nonmarine,4,4,3,4,3,109328.1,66414.7,
+1,North America,Givetian,387.95,382.31,unknown,85,85,56,83,56,1460508.2,1022690.1,
+1,North America,Givetian,387.95,382.31,ANY_marine,494,491,234,241,200,6579600.2,5594312.4,units with at least one marine (or non-marine) entry; overlaps marine_only/both or nonmarine_only/both
+1,North America,Givetian,387.95,382.31,ANY_nonmarine,26,26,21,22,20,531514.3,460303.4,units with at least one marine (or non-marine) entry; overlaps marine_only/both or nonmarine_only/both
+1,North America,Eifelian,393.47,387.95,ALL,657,652,312,323,276,8327488.1,6519297.1,
+1,North America,Eifelian,393.47,387.95,marine_only,556,551,242,263,213,7197302.3,5325319.7,
+1,North America,Eifelian,393.47,387.95,nonmarine_only,22,22,7,18,7,381723.3,159410.4,
+1,North America,Eifelian,393.47,387.95,both_marine_and_nonmarine,12,12,5,10,5,239487.7,145361.7,
+1,North America,Eifelian,393.47,387.95,unknown,67,67,58,67,58,1083264.6,1004116.1,
+1,North America,Eifelian,393.47,387.95,ANY_marine,568,563,247,267,218,7276029.9,5470681.4,units with at least one marine (or non-marine) entry; overlaps marine_only/both or nonmarine_only/both
+1,North America,Eifelian,393.47,387.95,ANY_nonmarine,34,34,12,25,12,584092.4,304772.1,units with at least one marine (or non-marine) entry; overlaps marine_only/both or nonmarine_only/both
+1,North America,Emsian,410.62,393.47,ALL,471,467,293,306,256,7539885.2,6286769.2,
+1,North America,Emsian,410.62,393.47,marine_only,386,382,230,243,199,6440497.6,5210413.3,
+1,North America,Emsian,410.62,393.47,nonmarine_only,10,10,6,8,5,132047.6,96878.5,
+1,North America,Emsian,410.62,393.47,both_marine_and_nonmarine,7,7,4,5,4,96043.1,79038.8,
+1,North America,Emsian,410.62,393.47,unknown,68,68,53,64,53,1086752.6,1000987.5,
+1,North America,Emsian,410.62,393.47,ANY_marine,393,389,234,247,203,6519536.3,5289452.1,units with at least one marine (or non-marine) entry; overlaps marine_only/both or nonmarine_only/both
+1,North America,Emsian,410.62,393.47,ANY_nonmarine,17,17,10,12,9,210775.2,175917.3,units with at least one marine (or non-marine) entry; overlaps marine_only/both or nonmarine_only/both
+1,North America,Pragian,413.02,410.62,ALL,412,409,293,298,252,6979434.4,5656862.2,
+1,North America,Pragian,413.02,410.62,marine_only,336,333,227,238,194,5930165.5,4645215.3,
+1,North America,Pragian,413.02,410.62,nonmarine_only,9,9,6,9,6,135538.8,88146.7,
+1,North America,Pragian,413.02,410.62,both_marine_and_nonmarine,2,2,2,2,2,35104.8,35104.8,
+1,North America,Pragian,413.02,410.62,unknown,65,65,58,62,57,1074805.2,1026301.6,
+1,North America,Pragian,413.02,410.62,ANY_marine,338,335,229,240,196,5965270.3,4680320.2,units with at least one marine (or non-marine) entry; overlaps marine_only/both or nonmarine_only/both
+1,North America,Pragian,413.02,410.62,ANY_nonmarine,11,11,8,11,8,170643.7,123251.6,units with at least one marine (or non-marine) entry; overlaps marine_only/both or nonmarine_only/both
+1,North America,Lochkovian,419.62,413.02,ALL,492,489,316,297,269,6740737.1,5924081.3,
+1,North America,Lochkovian,419.62,413.02,marine_only,418,415,259,247,218,5818291.4,4984323.0,
+1,North America,Lochkovian,419.62,413.02,nonmarine_only,5,5,1,5,1,78548.5,28297.5,
+1,North America,Lochkovian,419.62,413.02,both_marine_and_nonmarine,2,2,2,2,2,35104.8,35104.8,
+1,North America,Lochkovian,419.62,413.02,unknown,67,67,54,64,54,1117603.3,1001836.3,
+1,North America,Lochkovian,419.62,413.02,ANY_marine,420,417,261,249,220,5853396.2,5019427.8,units with at least one marine (or non-marine) entry; overlaps marine_only/both or nonmarine_only/both
+1,North America,Lochkovian,419.62,413.02,ANY_nonmarine,7,7,3,7,3,113653.3,63402.3,units with at least one marine (or non-marine) entry; overlaps marine_only/both or nonmarine_only/both
+1,North America,Pridoli,422.7,419.62,ALL,512,511,322,305,278,7219925.3,6850066.4,
+1,North America,Pridoli,422.7,419.62,marine_only,449,448,267,256,229,6306244.7,5960240.3,
+1,North America,Pridoli,422.7,419.62,nonmarine_only,1,1,0,1,0,28297.5,0.0,
+1,North America,Pridoli,422.7,419.62,both_marine_and_nonmarine,3,3,2,3,2,27377.8,23898.6,
+1,North America,Pridoli,422.7,419.62,unknown,59,59,53,57,53,1075205.4,1006785.8,
+1,North America,Pridoli,422.7,419.62,ANY_marine,452,451,269,258,231,6330143.3,5984138.9,units with at least one marine (or non-marine) entry; overlaps marine_only/both or nonmarine_only/both
+1,North America,Pridoli,422.7,419.62,ANY_nonmarine,4,4,2,4,2,55675.4,23898.6,units with at least one marine (or non-marine) entry; overlaps marine_only/both or nonmarine_only/both
+1,North America,Ludfordian,425.0,422.7,ALL,517,516,362,325,309,8005301.8,7616186.8,
+1,North America,Ludfordian,425.0,422.7,marine_only,453,452,303,270,254,7024725.8,6700824.1,
+1,North America,Ludfordian,425.0,422.7,both_marine_and_nonmarine,4,4,4,4,4,24387.1,24387.1,
+1,North America,Ludfordian,425.0,422.7,unknown,60,60,55,59,55,1070720.9,956135.7,
+1,North America,Ludfordian,425.0,422.7,ANY_marine,457,456,307,272,257,7040447.7,6720962.3,units with at least one marine (or non-marine) entry; overlaps marine_only/both or nonmarine_only/both
+1,North America,Ludfordian,425.0,422.7,ANY_nonmarine,4,4,4,4,4,24387.1,24387.1,units with at least one marine (or non-marine) entry; overlaps marine_only/both or nonmarine_only/both
+1,North America,Gorstian,426.7,425.0,ALL,486,485,377,334,316,8088676.4,7706203.7,
+1,North America,Gorstian,426.7,425.0,marine_only,424,423,324,281,267,7184579.8,6840262.3,
+1,North America,Gorstian,426.7,425.0,both_marine_and_nonmarine,4,4,1,4,1,24387.1,12242.7,
+1,North America,Gorstian,426.7,425.0,unknown,58,58,52,55,51,952537.8,914382.6,
+1,North America,Gorstian,426.7,425.0,ANY_marine,428,427,325,282,268,7196822.5,6852505.0,units with at least one marine (or non-marine) entry; overlaps marine_only/both or nonmarine_only/both
+1,North America,Gorstian,426.7,425.0,ANY_nonmarine,4,4,1,4,1,24387.1,12242.7,units with at least one marine (or non-marine) entry; overlaps marine_only/both or nonmarine_only/both
+1,North America,Homerian,430.6,426.7,ALL,539,538,412,347,339,8367189.7,8166855.2,
+1,North America,Homerian,430.6,426.7,marine_only,479,478,354,297,285,7481163.5,7203584.6,
+1,North America,Homerian,430.6,426.7,nonmarine_only,2,2,2,2,2,7560.0,7560.0,
+1,North America,Homerian,430.6,426.7,both_marine_and_nonmarine,1,1,1,1,1,12242.7,12242.7,
+1,North America,Homerian,430.6,426.7,unknown,57,57,55,56,54,1029180.8,999262.3,
+1,North America,Homerian,430.6,426.7,ANY_marine,480,479,355,298,286,7493406.1,7215827.3,units with at least one marine (or non-marine) entry; overlaps marine_only/both or nonmarine_only/both
+1,North America,Homerian,430.6,426.7,ANY_nonmarine,3,3,3,3,3,19802.7,19802.7,units with at least one marine (or non-marine) entry; overlaps marine_only/both or nonmarine_only/both
+1,North America,Sheinwoodian,432.9,430.6,ALL,505,504,443,377,376,9350589.7,9346348.6,
+1,North America,Sheinwoodian,432.9,430.6,marine_only,440,439,382,319,319,8346889.3,8346889.3,
+1,North America,Sheinwoodian,432.9,430.6,nonmarine_only,2,2,1,2,1,7560.0,4577.9,
+1,North America,Sheinwoodian,432.9,430.6,both_marine_and_nonmarine,2,2,2,2,2,15224.9,15224.9,
+1,North America,Sheinwoodian,432.9,430.6,unknown,61,61,58,60,57,1050598.4,1035451.0,
+1,North America,Sheinwoodian,432.9,430.6,ANY_marine,442,441,384,321,321,8362114.1,8362114.1,units with at least one marine (or non-marine) entry; overlaps marine_only/both or nonmarine_only/both
+1,North America,Sheinwoodian,432.9,430.6,ANY_nonmarine,4,4,3,3,3,19802.7,19802.7,units with at least one marine (or non-marine) entry; overlaps marine_only/both or nonmarine_only/both
+1,North America,Telychian,438.6,432.9,ALL,558,556,425,398,364,9954096.8,9448927.4,
+1,North America,Telychian,438.6,432.9,marine_only,494,492,370,349,316,9062652.6,8565897.5,
+1,North America,Telychian,438.6,432.9,nonmarine_only,3,3,1,3,1,14972.0,4577.9,
+1,North America,Telychian,438.6,432.9,both_marine_and_nonmarine,2,2,2,2,2,15224.9,15224.9,
+1,North America,Telychian,438.6,432.9,unknown,59,59,52,56,51,1053355.1,959983.9,
+1,North America,Telychian,438.6,432.9,ANY_marine,496,494,372,351,318,9077877.4,8581122.4,units with at least one marine (or non-marine) entry; overlaps marine_only/both or nonmarine_only/both
+1,North America,Telychian,438.6,432.9,ANY_nonmarine,5,5,3,4,3,27214.7,19802.7,units with at least one marine (or non-marine) entry; overlaps marine_only/both or nonmarine_only/both
+1,North America,Aeronian,440.5,438.6,ALL,468,466,410,369,363,9430956.8,9323695.3,
+1,North America,Aeronian,440.5,438.6,marine_only,403,401,351,316,310,8486011.9,8397684.4,
+1,North America,Aeronian,440.5,438.6,nonmarine_only,7,7,5,7,5,96116.5,51839.1,
+1,North America,Aeronian,440.5,438.6,both_marine_and_nonmarine,3,3,3,3,3,20907.8,20907.8,
+1,North America,Aeronian,440.5,438.6,unknown,55,55,51,51,49,1065916.4,916920.2,
+1,North America,Aeronian,440.5,438.6,ANY_marine,406,404,354,319,313,8506919.7,8418592.2,units with at least one marine (or non-marine) entry; overlaps marine_only/both or nonmarine_only/both
+1,North America,Aeronian,440.5,438.6,ANY_nonmarine,10,10,8,10,8,117024.3,72746.9,units with at least one marine (or non-marine) entry; overlaps marine_only/both or nonmarine_only/both
+1,North America,Rhuddanian,443.1,440.5,ALL,416,415,352,338,315,9017995.8,7675992.7,
+1,North America,Rhuddanian,443.1,440.5,marine_only,352,351,291,285,260,8070389.8,6698952.1,
+1,North America,Rhuddanian,443.1,440.5,nonmarine_only,6,6,6,6,6,75901.0,75901.0,
+1,North America,Rhuddanian,443.1,440.5,both_marine_and_nonmarine,3,3,3,3,3,20907.8,20907.8,
+1,North America,Rhuddanian,443.1,440.5,unknown,55,55,52,52,51,1122736.1,1091666.8,
+1,North America,Rhuddanian,443.1,440.5,ANY_marine,355,354,294,288,263,8091297.7,6719859.9,units with at least one marine (or non-marine) entry; overlaps marine_only/both or nonmarine_only/both
+1,North America,Rhuddanian,443.1,440.5,ANY_nonmarine,9,9,9,9,9,96808.8,96808.8,units with at least one marine (or non-marine) entry; overlaps marine_only/both or nonmarine_only/both
+1,North America,Hirnantian,445.2,443.1,ALL,329,329,306,282,274,7423583.9,7083504.5,
+1,North America,Hirnantian,445.2,443.1,marine_only,274,274,252,234,227,6539993.2,6222776.3,
+1,North America,Hirnantian,445.2,443.1,both_marine_and_nonmarine,1,1,1,1,1,4416.3,4416.3,
+1,North America,Hirnantian,445.2,443.1,unknown,54,54,53,53,52,1119440.8,1096578.2,
+1,North America,Hirnantian,445.2,443.1,ANY_marine,275,275,253,235,228,6544409.4,6227192.6,units with at least one marine (or non-marine) entry; overlaps marine_only/both or nonmarine_only/both
+1,North America,Hirnantian,445.2,443.1,ANY_nonmarine,1,1,1,1,1,4416.3,4416.3,units with at least one marine (or non-marine) entry; overlaps marine_only/both or nonmarine_only/both
+1,North America,Katian,452.8,445.2,ALL,1098,1096,507,469,393,12139817.4,10240532.6,
+1,North America,Katian,452.8,445.2,marine_only,998,996,439,407,339,11036583.9,9243496.3,
+1,North America,Katian,452.8,445.2,nonmarine_only,2,2,1,2,1,37477.4,26704.3,
+1,North America,Katian,452.8,445.2,both_marine_and_nonmarine,4,4,1,4,1,33983.8,24062.0,
+1,North America,Katian,452.8,445.2,unknown,94,94,66,79,62,1510105.1,1264829.3,
+1,North America,Katian,452.8,445.2,ANY_marine,1002,1000,440,407,339,11036583.9,9243496.3,units with at least one marine (or non-marine) entry; overlaps marine_only/both or nonmarine_only/both
+1,North America,Katian,452.8,445.2,ANY_nonmarine,6,6,2,6,2,71461.2,50766.3,units with at least one marine (or non-marine) entry; overlaps marine_only/both or nonmarine_only/both
+1,North America,Sandbian,458.2,452.8,ALL,1049,1047,473,445,391,10644664.7,9104901.0,
+1,North America,Sandbian,458.2,452.8,marine_only,931,930,403,371,336,9329688.2,8428801.9,
+1,North America,Sandbian,458.2,452.8,nonmarine_only,2,2,1,2,1,29686.5,26704.3,
+1,North America,Sandbian,458.2,452.8,both_marine_and_nonmarine,1,1,0,1,0,3837.8,0.0,
+1,North America,Sandbian,458.2,452.8,unknown,115,114,69,99,64,1853858.1,958628.4,
+1,North America,Sandbian,458.2,452.8,ANY_marine,932,931,403,371,336,9329688.2,8428801.9,units with at least one marine (or non-marine) entry; overlaps marine_only/both or nonmarine_only/both
+1,North America,Sandbian,458.2,452.8,ANY_nonmarine,3,3,1,3,1,33524.3,26704.3,units with at least one marine (or non-marine) entry; overlaps marine_only/both or nonmarine_only/both
+1,North America,Darriwilian,469.4,458.2,ALL,706,702,343,398,299,8021984.2,5959808.6,
+1,North America,Darriwilian,469.4,458.2,marine_only,587,584,272,332,240,7289966.1,5261042.0,
+1,North America,Darriwilian,469.4,458.2,nonmarine_only,1,1,0,1,0,2982.2,0.0,
+1,North America,Darriwilian,469.4,458.2,unknown,118,117,71,97,67,1296837.8,962516.1,
+1,North America,Darriwilian,469.4,458.2,ANY_marine,587,584,272,332,240,7289966.1,5261042.0,units with at least one marine (or non-marine) entry; overlaps marine_only/both or nonmarine_only/both
+1,North America,Darriwilian,469.4,458.2,ANY_nonmarine,1,1,0,1,0,2982.2,0.0,units with at least one marine (or non-marine) entry; overlaps marine_only/both or nonmarine_only/both
+1,North America,Dapingian,471.3,469.4,ALL,415,413,373,332,323,6890559.3,6719103.4,
+1,North America,Dapingian,471.3,469.4,marine_only,334,332,294,273,263,6199930.8,6004236.9,
+1,North America,Dapingian,471.3,469.4,unknown,81,81,79,70,70,1006231.0,1006231.0,
+1,North America,Dapingian,471.3,469.4,ANY_marine,334,332,294,273,263,6199930.8,6004236.9,units with at least one marine (or non-marine) entry; overlaps marine_only/both or nonmarine_only/both
+1,North America,Floian,477.1,471.3,ALL,574,572,399,401,354,8067882.3,7060100.4,
+1,North America,Floian,477.1,471.3,marine_only,488,486,328,344,298,7374062.9,6381788.1,
+1,North America,Floian,477.1,471.3,nonmarine_only,1,1,0,1,0,9947.5,0.0,
+1,North America,Floian,477.1,471.3,unknown,85,85,71,74,66,1132766.7,952448.9,
+1,North America,Floian,477.1,471.3,ANY_marine,488,486,328,344,298,7374062.9,6381788.1,units with at least one marine (or non-marine) entry; overlaps marine_only/both or nonmarine_only/both
+1,North America,Floian,477.1,471.3,ANY_nonmarine,1,1,0,1,0,9947.5,0.0,units with at least one marine (or non-marine) entry; overlaps marine_only/both or nonmarine_only/both
+1,North America,Tremadocian,486.85,477.1,ALL,681,678,458,434,408,9042319.7,8256235.1,
+1,North America,Tremadocian,486.85,477.1,marine_only,604,601,393,379,354,8338650.2,7607036.0,
+1,North America,Tremadocian,486.85,477.1,unknown,77,77,65,71,63,1079253.0,919100.9,
+1,North America,Tremadocian,486.85,477.1,ANY_marine,604,601,393,379,354,8338650.2,7607036.0,units with at least one marine (or non-marine) entry; overlaps marine_only/both or nonmarine_only/both
+7,Caribbean,Givetian,387.95,382.31,ALL,9,9,9,8,8,457941.7,457941.7,
+7,Caribbean,Givetian,387.95,382.31,marine_only,1,1,1,1,1,131011.3,131011.3,
+7,Caribbean,Givetian,387.95,382.31,unknown,8,8,8,7,7,326930.4,326930.4,
+7,Caribbean,Givetian,387.95,382.31,ANY_marine,1,1,1,1,1,131011.3,131011.3,units with at least one marine (or non-marine) entry; overlaps marine_only/both or nonmarine_only/both
+7,Caribbean,Eifelian,393.47,387.95,ALL,11,11,9,9,8,529180.3,457941.7,
+7,Caribbean,Eifelian,393.47,387.95,marine_only,2,2,1,1,1,131011.3,131011.3,
+7,Caribbean,Eifelian,393.47,387.95,unknown,9,9,8,8,7,398169.0,326930.4,
+7,Caribbean,Eifelian,393.47,387.95,ANY_marine,2,2,1,1,1,131011.3,131011.3,units with at least one marine (or non-marine) entry; overlaps marine_only/both or nonmarine_only/both
+7,Caribbean,Emsian,410.62,393.47,ALL,9,9,9,9,9,529180.3,529180.3,
+7,Caribbean,Emsian,410.62,393.47,marine_only,1,1,1,1,1,131011.3,131011.3,
+7,Caribbean,Emsian,410.62,393.47,unknown,8,8,8,8,8,398169.0,398169.0,
+7,Caribbean,Emsian,410.62,393.47,ANY_marine,1,1,1,1,1,131011.3,131011.3,units with at least one marine (or non-marine) entry; overlaps marine_only/both or nonmarine_only/both
+7,Caribbean,Pragian,413.02,410.62,ALL,9,9,8,9,8,529180.3,457941.7,
+7,Caribbean,Pragian,413.02,410.62,marine_only,1,1,1,1,1,131011.3,131011.3,
+7,Caribbean,Pragian,413.02,410.62,unknown,8,8,7,8,7,398169.0,326930.4,
+7,Caribbean,Pragian,413.02,410.62,ANY_marine,1,1,1,1,1,131011.3,131011.3,units with at least one marine (or non-marine) entry; overlaps marine_only/both or nonmarine_only/both
+7,Caribbean,Lochkovian,419.62,413.02,ALL,8,8,7,8,7,457941.7,406603.6,
+7,Caribbean,Lochkovian,419.62,413.02,marine_only,1,1,1,1,1,131011.3,131011.3,
+7,Caribbean,Lochkovian,419.62,413.02,unknown,7,7,6,7,6,326930.4,275592.3,
+7,Caribbean,Lochkovian,419.62,413.02,ANY_marine,1,1,1,1,1,131011.3,131011.3,units with at least one marine (or non-marine) entry; overlaps marine_only/both or nonmarine_only/both
+7,Caribbean,Pridoli,422.7,419.62,ALL,3,3,3,3,3,145829.8,145829.8,
+7,Caribbean,Pridoli,422.7,419.62,unknown,3,3,3,3,3,145829.8,145829.8,
+7,Caribbean,Ludfordian,425.0,422.7,ALL,4,4,4,4,4,217068.4,217068.4,
+7,Caribbean,Ludfordian,425.0,422.7,marine_only,1,1,1,1,1,71238.6,71238.6,
+7,Caribbean,Ludfordian,425.0,422.7,unknown,3,3,3,3,3,145829.8,145829.8,
+7,Caribbean,Ludfordian,425.0,422.7,ANY_marine,1,1,1,1,1,71238.6,71238.6,units with at least one marine (or non-marine) entry; overlaps marine_only/both or nonmarine_only/both
+7,Caribbean,Gorstian,426.7,425.0,ALL,4,4,4,4,4,217068.4,217068.4,
+7,Caribbean,Gorstian,426.7,425.0,marine_only,1,1,1,1,1,71238.6,71238.6,
+7,Caribbean,Gorstian,426.7,425.0,unknown,3,3,3,3,3,145829.8,145829.8,
+7,Caribbean,Gorstian,426.7,425.0,ANY_marine,1,1,1,1,1,71238.6,71238.6,units with at least one marine (or non-marine) entry; overlaps marine_only/both or nonmarine_only/both
+7,Caribbean,Homerian,430.6,426.7,ALL,4,4,4,4,4,217068.4,217068.4,
+7,Caribbean,Homerian,430.6,426.7,marine_only,1,1,1,1,1,71238.6,71238.6,
+7,Caribbean,Homerian,430.6,426.7,unknown,3,3,3,3,3,145829.8,145829.8,
+7,Caribbean,Homerian,430.6,426.7,ANY_marine,1,1,1,1,1,71238.6,71238.6,units with at least one marine (or non-marine) entry; overlaps marine_only/both or nonmarine_only/both
+7,Caribbean,Sheinwoodian,432.9,430.6,ALL,4,4,4,4,4,217068.4,217068.4,
+7,Caribbean,Sheinwoodian,432.9,430.6,marine_only,1,1,1,1,1,71238.6,71238.6,
+7,Caribbean,Sheinwoodian,432.9,430.6,unknown,3,3,3,3,3,145829.8,145829.8,
+7,Caribbean,Sheinwoodian,432.9,430.6,ANY_marine,1,1,1,1,1,71238.6,71238.6,units with at least one marine (or non-marine) entry; overlaps marine_only/both or nonmarine_only/both
+7,Caribbean,Telychian,438.6,432.9,ALL,4,4,4,4,4,217068.4,217068.4,
+7,Caribbean,Telychian,438.6,432.9,marine_only,1,1,1,1,1,71238.6,71238.6,
+7,Caribbean,Telychian,438.6,432.9,unknown,3,3,3,3,3,145829.8,145829.8,
+7,Caribbean,Telychian,438.6,432.9,ANY_marine,1,1,1,1,1,71238.6,71238.6,units with at least one marine (or non-marine) entry; overlaps marine_only/both or nonmarine_only/both
+7,Caribbean,Aeronian,440.5,438.6,ALL,4,4,4,4,4,217068.4,217068.4,
+7,Caribbean,Aeronian,440.5,438.6,marine_only,1,1,1,1,1,71238.6,71238.6,
+7,Caribbean,Aeronian,440.5,438.6,unknown,3,3,3,3,3,145829.8,145829.8,
+7,Caribbean,Aeronian,440.5,438.6,ANY_marine,1,1,1,1,1,71238.6,71238.6,units with at least one marine (or non-marine) entry; overlaps marine_only/both or nonmarine_only/both
+7,Caribbean,Rhuddanian,443.1,440.5,ALL,4,4,4,4,4,217068.4,217068.4,
+7,Caribbean,Rhuddanian,443.1,440.5,marine_only,1,1,1,1,1,71238.6,71238.6,
+7,Caribbean,Rhuddanian,443.1,440.5,unknown,3,3,3,3,3,145829.8,145829.8,
+7,Caribbean,Rhuddanian,443.1,440.5,ANY_marine,1,1,1,1,1,71238.6,71238.6,units with at least one marine (or non-marine) entry; overlaps marine_only/both or nonmarine_only/both
+7,Caribbean,Hirnantian,445.2,443.1,ALL,6,6,6,6,6,471665.3,471665.3,
+7,Caribbean,Hirnantian,445.2,443.1,unknown,6,6,6,6,6,471665.3,471665.3,
+7,Caribbean,Katian,452.8,445.2,ALL,7,7,7,7,7,542903.9,542903.9,
+7,Caribbean,Katian,452.8,445.2,marine_only,1,1,1,1,1,71238.6,71238.6,
+7,Caribbean,Katian,452.8,445.2,unknown,6,6,6,6,6,471665.3,471665.3,
+7,Caribbean,Katian,452.8,445.2,ANY_marine,1,1,1,1,1,71238.6,71238.6,units with at least one marine (or non-marine) entry; overlaps marine_only/both or nonmarine_only/both
+7,Caribbean,Sandbian,458.2,452.8,ALL,7,7,7,7,7,542903.9,542903.9,
+7,Caribbean,Sandbian,458.2,452.8,marine_only,1,1,1,1,1,71238.6,71238.6,
+7,Caribbean,Sandbian,458.2,452.8,unknown,6,6,6,6,6,471665.3,471665.3,
+7,Caribbean,Sandbian,458.2,452.8,ANY_marine,1,1,1,1,1,71238.6,71238.6,units with at least one marine (or non-marine) entry; overlaps marine_only/both or nonmarine_only/both
+7,Caribbean,Darriwilian,469.4,458.2,ALL,7,7,7,7,7,542903.9,542903.9,
+7,Caribbean,Darriwilian,469.4,458.2,unknown,7,7,7,7,7,542903.9,542903.9,
+7,Caribbean,Dapingian,471.3,469.4,ALL,7,7,7,7,7,542903.9,542903.9,
+7,Caribbean,Dapingian,471.3,469.4,unknown,7,7,7,7,7,542903.9,542903.9,
+7,Caribbean,Floian,477.1,471.3,ALL,7,7,7,7,7,542903.9,542903.9,
+7,Caribbean,Floian,477.1,471.3,unknown,7,7,7,7,7,542903.9,542903.9,
+7,Caribbean,Tremadocian,486.85,477.1,ALL,9,9,5,7,5,542903.9,449866.7,
+7,Caribbean,Tremadocian,486.85,477.1,marine_only,1,1,0,1,0,50844.6,0.0,
+7,Caribbean,Tremadocian,486.85,477.1,unknown,8,8,5,7,5,542903.9,449866.7,
+7,Caribbean,Tremadocian,486.85,477.1,ANY_marine,1,1,0,1,0,50844.6,0.0,units with at least one marine (or non-marine) entry; overlaps marine_only/both or nonmarine_only/both
+8,South America,Givetian,387.95,382.31,ALL,23,23,23,23,23,2690205.5,2690205.5,
+8,South America,Givetian,387.95,382.31,marine_only,18,18,18,18,18,2361571.5,2361571.5,
+8,South America,Givetian,387.95,382.31,unknown,5,5,5,5,5,328634.0,328634.0,
+8,South America,Givetian,387.95,382.31,ANY_marine,18,18,18,18,18,2361571.5,2361571.5,units with at least one marine (or non-marine) entry; overlaps marine_only/both or nonmarine_only/both
+8,South America,Eifelian,393.47,387.95,ALL,31,31,24,24,24,2871136.2,2871136.2,
+8,South America,Eifelian,393.47,387.95,marine_only,20,20,17,19,17,2542502.3,2325085.8,
+8,South America,Eifelian,393.47,387.95,nonmarine_only,5,5,1,5,1,512958.5,45009.1,
+8,South America,Eifelian,393.47,387.95,both_marine_and_nonmarine,1,1,1,1,1,172407.4,172407.4,
+8,South America,Eifelian,393.47,387.95,unknown,5,5,5,5,5,328634.0,328634.0,
+8,South America,Eifelian,393.47,387.95,ANY_marine,21,21,18,19,18,2542502.3,2497493.2,units with at least one marine (or non-marine) entry; overlaps marine_only/both or nonmarine_only/both
+8,South America,Eifelian,393.47,387.95,ANY_nonmarine,6,6,2,6,2,685365.9,217416.4,units with at least one marine (or non-marine) entry; overlaps marine_only/both or nonmarine_only/both
+8,South America,Emsian,410.62,393.47,ALL,41,41,17,28,17,3217858.3,1971234.4,
+8,South America,Emsian,410.62,393.47,marine_only,25,25,10,19,10,2421274.9,1455079.1,
+8,South America,Emsian,410.62,393.47,nonmarine_only,10,10,2,10,2,1157949.2,187521.3,
+8,South America,Emsian,410.62,393.47,both_marine_and_nonmarine,1,1,0,1,0,172407.4,0.0,
+8,South America,Emsian,410.62,393.47,unknown,5,5,5,5,5,328634.0,328634.0,
+8,South America,Emsian,410.62,393.47,ANY_marine,26,26,10,19,10,2421274.9,1455079.1,units with at least one marine (or non-marine) entry; overlaps marine_only/both or nonmarine_only/both
+8,South America,Emsian,410.62,393.47,ANY_nonmarine,11,11,2,11,2,1330356.6,187521.3,units with at least one marine (or non-marine) entry; overlaps marine_only/both or nonmarine_only/both
+8,South America,Pragian,413.02,410.62,ALL,34,34,27,27,27,3122821.1,3122821.1,
+8,South America,Pragian,413.02,410.62,marine_only,17,17,14,14,14,1723222.3,1723222.3,
+8,South America,Pragian,413.02,410.62,nonmarine_only,5,5,5,5,5,644990.7,644990.7,
+8,South America,Pragian,413.02,410.62,both_marine_and_nonmarine,7,7,3,7,3,822812.5,425974.1,
+8,South America,Pragian,413.02,410.62,unknown,5,5,5,5,5,328634.0,328634.0,
+8,South America,Pragian,413.02,410.62,ANY_marine,24,24,17,17,17,2149196.4,2149196.4,units with at least one marine (or non-marine) entry; overlaps marine_only/both or nonmarine_only/both
+8,South America,Pragian,413.02,410.62,ANY_nonmarine,12,12,8,12,8,1467803.2,1070964.8,units with at least one marine (or non-marine) entry; overlaps marine_only/both or nonmarine_only/both
+8,South America,Lochkovian,419.62,413.02,ALL,37,37,28,29,28,3406697.6,3311660.4,
+8,South America,Lochkovian,419.62,413.02,marine_only,16,16,7,11,7,1421421.1,908959.8,
+8,South America,Lochkovian,419.62,413.02,nonmarine_only,5,5,5,5,5,644990.7,644990.7,
+8,South America,Lochkovian,419.62,413.02,both_marine_and_nonmarine,11,11,11,11,11,1429076.0,1429076.0,
+8,South America,Lochkovian,419.62,413.02,unknown,5,5,5,5,5,328634.0,328634.0,
+8,South America,Lochkovian,419.62,413.02,ANY_marine,27,27,18,19,18,2433072.9,2338035.7,units with at least one marine (or non-marine) entry; overlaps marine_only/both or nonmarine_only/both
+8,South America,Lochkovian,419.62,413.02,ANY_nonmarine,16,16,16,16,16,2074066.7,2074066.7,units with at least one marine (or non-marine) entry; overlaps marine_only/both or nonmarine_only/both
+8,South America,Pridoli,422.7,419.62,ALL,21,21,21,21,21,2010868.9,2010868.9,
+8,South America,Pridoli,422.7,419.62,marine_only,6,6,6,6,6,797479.1,797479.1,
+8,South America,Pridoli,422.7,419.62,nonmarine_only,8,8,8,8,8,656025.6,656025.6,
+8,South America,Pridoli,422.7,419.62,both_marine_and_nonmarine,3,3,3,3,3,425974.1,425974.1,
+8,South America,Pridoli,422.7,419.62,unknown,4,4,4,4,4,131390.2,131390.2,
+8,South America,Pridoli,422.7,419.62,ANY_marine,9,9,9,9,9,1223453.2,1223453.2,units with at least one marine (or non-marine) entry; overlaps marine_only/both or nonmarine_only/both
+8,South America,Pridoli,422.7,419.62,ANY_nonmarine,11,11,11,11,11,1081999.7,1081999.7,units with at least one marine (or non-marine) entry; overlaps marine_only/both or nonmarine_only/both
+8,South America,Ludfordian,425.0,422.7,ALL,22,22,18,18,18,1584894.8,1584894.8,
+8,South America,Ludfordian,425.0,422.7,marine_only,10,10,6,6,6,797479.1,797479.1,
+8,South America,Ludfordian,425.0,422.7,nonmarine_only,8,8,8,8,8,656025.6,656025.6,
+8,South America,Ludfordian,425.0,422.7,unknown,4,4,4,4,4,131390.2,131390.2,
+8,South America,Ludfordian,425.0,422.7,ANY_marine,10,10,6,6,6,797479.1,797479.1,units with at least one marine (or non-marine) entry; overlaps marine_only/both or nonmarine_only/both
+8,South America,Ludfordian,425.0,422.7,ANY_nonmarine,8,8,8,8,8,656025.6,656025.6,units with at least one marine (or non-marine) entry; overlaps marine_only/both or nonmarine_only/both
+8,South America,Gorstian,426.7,425.0,ALL,18,18,18,18,18,1584894.8,1584894.8,
+8,South America,Gorstian,426.7,425.0,marine_only,6,6,6,6,6,797479.1,797479.1,
+8,South America,Gorstian,426.7,425.0,nonmarine_only,8,8,8,8,8,656025.6,656025.6,
+8,South America,Gorstian,426.7,425.0,unknown,4,4,4,4,4,131390.2,131390.2,
+8,South America,Gorstian,426.7,425.0,ANY_marine,6,6,6,6,6,797479.1,797479.1,units with at least one marine (or non-marine) entry; overlaps marine_only/both or nonmarine_only/both
+8,South America,Gorstian,426.7,425.0,ANY_nonmarine,8,8,8,8,8,656025.6,656025.6,units with at least one marine (or non-marine) entry; overlaps marine_only/both or nonmarine_only/both
+8,South America,Homerian,430.6,426.7,ALL,16,16,15,16,15,1255365.2,1160328.0,
+8,South America,Homerian,430.6,426.7,marine_only,4,4,3,4,3,467949.4,372912.3,
+8,South America,Homerian,430.6,426.7,nonmarine_only,8,8,8,8,8,656025.6,656025.6,
+8,South America,Homerian,430.6,426.7,unknown,4,4,4,4,4,131390.2,131390.2,
+8,South America,Homerian,430.6,426.7,ANY_marine,4,4,3,4,3,467949.4,372912.3,units with at least one marine (or non-marine) entry; overlaps marine_only/both or nonmarine_only/both
+8,South America,Homerian,430.6,426.7,ANY_nonmarine,8,8,8,8,8,656025.6,656025.6,units with at least one marine (or non-marine) entry; overlaps marine_only/both or nonmarine_only/both
+8,South America,Sheinwoodian,432.9,430.6,ALL,15,15,15,15,15,1160328.0,1160328.0,
+8,South America,Sheinwoodian,432.9,430.6,marine_only,3,3,3,3,3,372912.3,372912.3,
+8,South America,Sheinwoodian,432.9,430.6,nonmarine_only,8,8,8,8,8,656025.6,656025.6,
+8,South America,Sheinwoodian,432.9,430.6,unknown,4,4,4,4,4,131390.2,131390.2,
+8,South America,Sheinwoodian,432.9,430.6,ANY_marine,3,3,3,3,3,372912.3,372912.3,units with at least one marine (or non-marine) entry; overlaps marine_only/both or nonmarine_only/both
+8,South America,Sheinwoodian,432.9,430.6,ANY_nonmarine,8,8,8,8,8,656025.6,656025.6,units with at least one marine (or non-marine) entry; overlaps marine_only/both or nonmarine_only/both
+8,South America,Telychian,438.6,432.9,ALL,29,29,19,19,19,1503367.7,1503367.7,
+8,South America,Telychian,438.6,432.9,marine_only,9,9,5,5,5,426044.9,426044.9,
+8,South America,Telychian,438.6,432.9,nonmarine_only,11,11,5,10,5,945932.6,300941.9,
+8,South America,Telychian,438.6,432.9,both_marine_and_nonmarine,5,5,5,5,5,644990.7,644990.7,
+8,South America,Telychian,438.6,432.9,unknown,4,4,4,4,4,131390.2,131390.2,
+8,South America,Telychian,438.6,432.9,ANY_marine,14,14,10,10,10,1071035.6,1071035.6,units with at least one marine (or non-marine) entry; overlaps marine_only/both or nonmarine_only/both
+8,South America,Telychian,438.6,432.9,ANY_nonmarine,16,16,10,10,10,945932.6,945932.6,units with at least one marine (or non-marine) entry; overlaps marine_only/both or nonmarine_only/both
+8,South America,Aeronian,440.5,438.6,ALL,20,20,20,20,20,1629437.5,1629437.5,
+8,South America,Aeronian,440.5,438.6,marine_only,6,6,6,6,6,552114.7,552114.7,
+8,South America,Aeronian,440.5,438.6,nonmarine_only,5,5,5,5,5,300941.9,300941.9,
+8,South America,Aeronian,440.5,438.6,both_marine_and_nonmarine,5,5,5,5,5,644990.7,644990.7,
+8,South America,Aeronian,440.5,438.6,unknown,4,4,4,4,4,131390.2,131390.2,
+8,South America,Aeronian,440.5,438.6,ANY_marine,11,11,11,11,11,1197105.4,1197105.4,units with at least one marine (or non-marine) entry; overlaps marine_only/both or nonmarine_only/both
+8,South America,Aeronian,440.5,438.6,ANY_nonmarine,10,10,10,10,10,945932.6,945932.6,units with at least one marine (or non-marine) entry; overlaps marine_only/both or nonmarine_only/both
+8,South America,Rhuddanian,443.1,440.5,ALL,21,21,21,21,21,1801844.9,1801844.9,
+8,South America,Rhuddanian,443.1,440.5,marine_only,6,6,6,6,6,629484.9,629484.9,
+8,South America,Rhuddanian,443.1,440.5,nonmarine_only,11,11,11,11,11,1040969.8,1040969.8,
+8,South America,Rhuddanian,443.1,440.5,unknown,4,4,4,4,4,131390.2,131390.2,
+8,South America,Rhuddanian,443.1,440.5,ANY_marine,6,6,6,6,6,629484.9,629484.9,units with at least one marine (or non-marine) entry; overlaps marine_only/both or nonmarine_only/both
+8,South America,Rhuddanian,443.1,440.5,ANY_nonmarine,11,11,11,11,11,1040969.8,1040969.8,units with at least one marine (or non-marine) entry; overlaps marine_only/both or nonmarine_only/both
+8,South America,Hirnantian,445.2,443.1,ALL,22,22,20,22,20,2457351.8,2127822.1,
+8,South America,Hirnantian,445.2,443.1,marine_only,3,3,1,3,1,412534.9,83005.2,
+8,South America,Hirnantian,445.2,443.1,nonmarine_only,8,8,8,8,8,1029934.9,1029934.9,
+8,South America,Hirnantian,445.2,443.1,both_marine_and_nonmarine,7,7,7,7,7,883491.8,883491.8,
+8,South America,Hirnantian,445.2,443.1,unknown,4,4,4,4,4,131390.2,131390.2,
+8,South America,Hirnantian,445.2,443.1,ANY_marine,10,10,8,10,8,1296026.7,966497.0,units with at least one marine (or non-marine) entry; overlaps marine_only/both or nonmarine_only/both
+8,South America,Hirnantian,445.2,443.1,ANY_nonmarine,15,15,15,15,15,1913426.7,1913426.7,units with at least one marine (or non-marine) entry; overlaps marine_only/both or nonmarine_only/both
+8,South America,Katian,452.8,445.2,ALL,34,34,22,22,22,2462838.0,2462838.0,
+8,South America,Katian,452.8,445.2,marine_only,3,3,3,3,3,485611.0,485611.0,
+8,South America,Katian,452.8,445.2,nonmarine_only,11,11,8,8,8,1031574.3,1031574.3,
+8,South America,Katian,452.8,445.2,both_marine_and_nonmarine,14,14,7,8,7,970343.9,814262.6,
+8,South America,Katian,452.8,445.2,unknown,6,6,4,6,4,484728.3,131390.2,
+8,South America,Katian,452.8,445.2,ANY_marine,17,17,10,10,10,1299873.6,1299873.6,units with at least one marine (or non-marine) entry; overlaps marine_only/both or nonmarine_only/both
+8,South America,Katian,452.8,445.2,ANY_nonmarine,25,25,15,16,15,2001918.1,1845836.8,units with at least one marine (or non-marine) entry; overlaps marine_only/both or nonmarine_only/both
+8,South America,Sandbian,458.2,452.8,ALL,19,19,13,13,12,1305193.9,1218341.8,
+8,South America,Sandbian,458.2,452.8,marine_only,3,3,3,3,3,485611.0,485611.0,
+8,South America,Sandbian,458.2,452.8,nonmarine_only,1,1,1,1,1,53352.1,53352.1,
+8,South America,Sandbian,458.2,452.8,both_marine_and_nonmarine,9,9,5,6,5,688192.7,601340.6,
+8,South America,Sandbian,458.2,452.8,unknown,6,6,4,6,4,484728.3,131390.2,
+8,South America,Sandbian,458.2,452.8,ANY_marine,12,12,8,9,8,1173803.7,1086951.6,units with at least one marine (or non-marine) entry; overlaps marine_only/both or nonmarine_only/both
+8,South America,Sandbian,458.2,452.8,ANY_nonmarine,10,10,6,6,5,688192.7,601340.6,units with at least one marine (or non-marine) entry; overlaps marine_only/both or nonmarine_only/both
+8,South America,Darriwilian,469.4,458.2,ALL,15,15,13,14,13,1396090.8,1223683.4,
+8,South America,Darriwilian,469.4,458.2,marine_only,5,5,4,5,4,663360.1,507278.7,
+8,South America,Darriwilian,469.4,458.2,nonmarine_only,1,1,1,1,1,53352.1,53352.1,
+8,South America,Darriwilian,469.4,458.2,both_marine_and_nonmarine,5,5,4,5,4,704069.8,531662.4,
+8,South America,Darriwilian,469.4,458.2,unknown,4,4,4,4,4,131390.2,131390.2,
+8,South America,Darriwilian,469.4,458.2,ANY_marine,10,10,8,9,8,1211348.6,1038941.2,units with at least one marine (or non-marine) entry; overlaps marine_only/both or nonmarine_only/both
+8,South America,Darriwilian,469.4,458.2,ANY_nonmarine,6,6,5,6,5,757421.9,585014.5,units with at least one marine (or non-marine) entry; overlaps marine_only/both or nonmarine_only/both
+8,South America,Dapingian,471.3,469.4,ALL,10,10,8,8,8,638668.9,638668.9,
+8,South America,Dapingian,471.3,469.4,marine_only,6,6,4,4,4,507278.7,507278.7,
+8,South America,Dapingian,471.3,469.4,unknown,4,4,4,4,4,131390.2,131390.2,
+8,South America,Dapingian,471.3,469.4,ANY_marine,6,6,4,4,4,507278.7,507278.7,units with at least one marine (or non-marine) entry; overlaps marine_only/both or nonmarine_only/both
+8,South America,Floian,477.1,471.3,ALL,6,6,6,6,6,309139.2,309139.2,
+8,South America,Floian,477.1,471.3,marine_only,2,2,2,2,2,177749.1,177749.1,
+8,South America,Floian,477.1,471.3,unknown,4,4,4,4,4,131390.2,131390.2,
+8,South America,Floian,477.1,471.3,ANY_marine,2,2,2,2,2,177749.1,177749.1,units with at least one marine (or non-marine) entry; overlaps marine_only/both or nonmarine_only/both
+8,South America,Tremadocian,486.85,477.1,ALL,8,8,6,6,6,309139.2,309139.2,
+8,South America,Tremadocian,486.85,477.1,marine_only,4,4,2,2,2,177749.1,177749.1,
+8,South America,Tremadocian,486.85,477.1,unknown,4,4,4,4,4,131390.2,131390.2,
+8,South America,Tremadocian,486.85,477.1,ANY_marine,4,4,2,2,2,177749.1,177749.1,units with at least one marine (or non-marine) entry; overlaps marine_only/both or nonmarine_only/both
+10,North American Ediacaran,Givetian,387.95,382.31,ALL,23,23,22,22,22,346834.5,346834.5,North American Ediacaran project: columns lie inside project 1's; do not add areas
+10,North American Ediacaran,Givetian,387.95,382.31,marine_only,1,1,1,1,1,4209.2,4209.2,North American Ediacaran project: columns lie inside project 1's; do not add areas
+10,North American Ediacaran,Givetian,387.95,382.31,unknown,22,22,21,21,21,342625.3,342625.3,North American Ediacaran project: columns lie inside project 1's; do not add areas
+10,North American Ediacaran,Givetian,387.95,382.31,ANY_marine,1,1,1,1,1,4209.2,4209.2,units with at least one marine (or non-marine) entry; overlaps marine_only/both or nonmarine_only/both; North American Ediacaran project: columns lie inside project 1's; do not add areas
+10,North American Ediacaran,Eifelian,393.47,387.95,ALL,23,23,21,21,21,327007.5,327007.5,North American Ediacaran project: columns lie inside project 1's; do not add areas
+10,North American Ediacaran,Eifelian,393.47,387.95,marine_only,1,1,1,1,1,4209.2,4209.2,North American Ediacaran project: columns lie inside project 1's; do not add areas
+10,North American Ediacaran,Eifelian,393.47,387.95,unknown,22,22,20,20,20,322798.3,322798.3,North American Ediacaran project: columns lie inside project 1's; do not add areas
+10,North American Ediacaran,Eifelian,393.47,387.95,ANY_marine,1,1,1,1,1,4209.2,4209.2,units with at least one marine (or non-marine) entry; overlaps marine_only/both or nonmarine_only/both; North American Ediacaran project: columns lie inside project 1's; do not add areas
+10,North American Ediacaran,Emsian,410.62,393.47,ALL,35,35,28,28,28,371303.4,371303.4,North American Ediacaran project: columns lie inside project 1's; do not add areas
+10,North American Ediacaran,Emsian,410.62,393.47,marine_only,2,2,2,2,2,26086.9,26086.9,North American Ediacaran project: columns lie inside project 1's; do not add areas
+10,North American Ediacaran,Emsian,410.62,393.47,unknown,33,33,26,26,26,345216.6,345216.6,North American Ediacaran project: columns lie inside project 1's; do not add areas
+10,North American Ediacaran,Emsian,410.62,393.47,ANY_marine,2,2,2,2,2,26086.9,26086.9,units with at least one marine (or non-marine) entry; overlaps marine_only/both or nonmarine_only/both; North American Ediacaran project: columns lie inside project 1's; do not add areas
+10,North American Ediacaran,Pragian,413.02,410.62,ALL,28,28,26,26,26,342992.2,342992.2,North American Ediacaran project: columns lie inside project 1's; do not add areas
+10,North American Ediacaran,Pragian,413.02,410.62,marine_only,2,2,2,2,2,26086.9,26086.9,North American Ediacaran project: columns lie inside project 1's; do not add areas
+10,North American Ediacaran,Pragian,413.02,410.62,unknown,26,26,24,24,24,316905.3,316905.3,North American Ediacaran project: columns lie inside project 1's; do not add areas
+10,North American Ediacaran,Pragian,413.02,410.62,ANY_marine,2,2,2,2,2,26086.9,26086.9,units with at least one marine (or non-marine) entry; overlaps marine_only/both or nonmarine_only/both; North American Ediacaran project: columns lie inside project 1's; do not add areas
+10,North American Ediacaran,Lochkovian,419.62,413.02,ALL,29,29,29,29,29,371475.9,371475.9,North American Ediacaran project: columns lie inside project 1's; do not add areas
+10,North American Ediacaran,Lochkovian,419.62,413.02,marine_only,2,2,2,2,2,26086.9,26086.9,North American Ediacaran project: columns lie inside project 1's; do not add areas
+10,North American Ediacaran,Lochkovian,419.62,413.02,unknown,27,27,27,27,27,345389.0,345389.0,North American Ediacaran project: columns lie inside project 1's; do not add areas
+10,North American Ediacaran,Lochkovian,419.62,413.02,ANY_marine,2,2,2,2,2,26086.9,26086.9,units with at least one marine (or non-marine) entry; overlaps marine_only/both or nonmarine_only/both; North American Ediacaran project: columns lie inside project 1's; do not add areas
+10,North American Ediacaran,Pridoli,422.7,419.62,ALL,32,32,31,31,31,384410.2,384410.2,North American Ediacaran project: columns lie inside project 1's; do not add areas
+10,North American Ediacaran,Pridoli,422.7,419.62,marine_only,1,1,1,1,1,21877.7,21877.7,North American Ediacaran project: columns lie inside project 1's; do not add areas
+10,North American Ediacaran,Pridoli,422.7,419.62,unknown,31,31,30,30,30,362532.5,362532.5,North American Ediacaran project: columns lie inside project 1's; do not add areas
+10,North American Ediacaran,Pridoli,422.7,419.62,ANY_marine,1,1,1,1,1,21877.7,21877.7,units with at least one marine (or non-marine) entry; overlaps marine_only/both or nonmarine_only/both; North American Ediacaran project: columns lie inside project 1's; do not add areas
+10,North American Ediacaran,Ludfordian,425.0,422.7,ALL,34,34,31,31,31,384410.2,384410.2,North American Ediacaran project: columns lie inside project 1's; do not add areas
+10,North American Ediacaran,Ludfordian,425.0,422.7,marine_only,1,1,1,1,1,21877.7,21877.7,North American Ediacaran project: columns lie inside project 1's; do not add areas
+10,North American Ediacaran,Ludfordian,425.0,422.7,unknown,33,33,30,30,30,362532.5,362532.5,North American Ediacaran project: columns lie inside project 1's; do not add areas
+10,North American Ediacaran,Ludfordian,425.0,422.7,ANY_marine,1,1,1,1,1,21877.7,21877.7,units with at least one marine (or non-marine) entry; overlaps marine_only/both or nonmarine_only/both; North American Ediacaran project: columns lie inside project 1's; do not add areas
+10,North American Ediacaran,Gorstian,426.7,425.0,ALL,32,32,30,31,30,384410.2,356294.5,North American Ediacaran project: columns lie inside project 1's; do not add areas
+10,North American Ediacaran,Gorstian,426.7,425.0,marine_only,1,1,1,1,1,21877.7,21877.7,North American Ediacaran project: columns lie inside project 1's; do not add areas
+10,North American Ediacaran,Gorstian,426.7,425.0,unknown,31,31,29,30,29,362532.5,334416.8,North American Ediacaran project: columns lie inside project 1's; do not add areas
+10,North American Ediacaran,Gorstian,426.7,425.0,ANY_marine,1,1,1,1,1,21877.7,21877.7,units with at least one marine (or non-marine) entry; overlaps marine_only/both or nonmarine_only/both; North American Ediacaran project: columns lie inside project 1's; do not add areas
+10,North American Ediacaran,Homerian,430.6,426.7,ALL,32,32,30,31,30,384410.2,356294.5,North American Ediacaran project: columns lie inside project 1's; do not add areas
+10,North American Ediacaran,Homerian,430.6,426.7,marine_only,1,1,1,1,1,21877.7,21877.7,North American Ediacaran project: columns lie inside project 1's; do not add areas
+10,North American Ediacaran,Homerian,430.6,426.7,unknown,31,31,29,30,29,362532.5,334416.8,North American Ediacaran project: columns lie inside project 1's; do not add areas
+10,North American Ediacaran,Homerian,430.6,426.7,ANY_marine,1,1,1,1,1,21877.7,21877.7,units with at least one marine (or non-marine) entry; overlaps marine_only/both or nonmarine_only/both; North American Ediacaran project: columns lie inside project 1's; do not add areas
+10,North American Ediacaran,Sheinwoodian,432.9,430.6,ALL,33,33,31,31,31,384410.2,384410.2,North American Ediacaran project: columns lie inside project 1's; do not add areas
+10,North American Ediacaran,Sheinwoodian,432.9,430.6,marine_only,2,2,2,2,2,37449.7,37449.7,North American Ediacaran project: columns lie inside project 1's; do not add areas
+10,North American Ediacaran,Sheinwoodian,432.9,430.6,unknown,31,31,29,30,29,362532.5,346960.5,North American Ediacaran project: columns lie inside project 1's; do not add areas
+10,North American Ediacaran,Sheinwoodian,432.9,430.6,ANY_marine,2,2,2,2,2,37449.7,37449.7,units with at least one marine (or non-marine) entry; overlaps marine_only/both or nonmarine_only/both; North American Ediacaran project: columns lie inside project 1's; do not add areas
+10,North American Ediacaran,Telychian,438.6,432.9,ALL,35,35,31,31,31,384410.2,384410.2,North American Ediacaran project: columns lie inside project 1's; do not add areas
+10,North American Ediacaran,Telychian,438.6,432.9,marine_only,2,2,2,2,2,37449.7,37449.7,North American Ediacaran project: columns lie inside project 1's; do not add areas
+10,North American Ediacaran,Telychian,438.6,432.9,unknown,33,33,29,29,29,346960.5,346960.5,North American Ediacaran project: columns lie inside project 1's; do not add areas
+10,North American Ediacaran,Telychian,438.6,432.9,ANY_marine,2,2,2,2,2,37449.7,37449.7,units with at least one marine (or non-marine) entry; overlaps marine_only/both or nonmarine_only/both; North American Ediacaran project: columns lie inside project 1's; do not add areas
+10,North American Ediacaran,Aeronian,440.5,438.6,ALL,29,29,29,29,29,349036.0,349036.0,North American Ediacaran project: columns lie inside project 1's; do not add areas
+10,North American Ediacaran,Aeronian,440.5,438.6,marine_only,2,2,2,2,2,37449.7,37449.7,North American Ediacaran project: columns lie inside project 1's; do not add areas
+10,North American Ediacaran,Aeronian,440.5,438.6,unknown,27,27,27,27,27,311586.3,311586.3,North American Ediacaran project: columns lie inside project 1's; do not add areas
+10,North American Ediacaran,Aeronian,440.5,438.6,ANY_marine,2,2,2,2,2,37449.7,37449.7,units with at least one marine (or non-marine) entry; overlaps marine_only/both or nonmarine_only/both; North American Ediacaran project: columns lie inside project 1's; do not add areas
+10,North American Ediacaran,Rhuddanian,443.1,440.5,ALL,29,29,29,29,29,349036.0,349036.0,North American Ediacaran project: columns lie inside project 1's; do not add areas
+10,North American Ediacaran,Rhuddanian,443.1,440.5,marine_only,2,2,2,2,2,37449.7,37449.7,North American Ediacaran project: columns lie inside project 1's; do not add areas
+10,North American Ediacaran,Rhuddanian,443.1,440.5,unknown,27,27,27,27,27,311586.3,311586.3,North American Ediacaran project: columns lie inside project 1's; do not add areas
+10,North American Ediacaran,Rhuddanian,443.1,440.5,ANY_marine,2,2,2,2,2,37449.7,37449.7,units with at least one marine (or non-marine) entry; overlaps marine_only/both or nonmarine_only/both; North American Ediacaran project: columns lie inside project 1's; do not add areas
+10,North American Ediacaran,Hirnantian,445.2,443.1,ALL,48,48,45,45,44,546240.1,544397.2,North American Ediacaran project: columns lie inside project 1's; do not add areas
+10,North American Ediacaran,Hirnantian,445.2,443.1,marine_only,7,7,7,6,6,153444.5,153444.5,North American Ediacaran project: columns lie inside project 1's; do not add areas
+10,North American Ediacaran,Hirnantian,445.2,443.1,nonmarine_only,2,2,2,2,2,222.4,222.4,North American Ediacaran project: columns lie inside project 1's; do not add areas
+10,North American Ediacaran,Hirnantian,445.2,443.1,unknown,39,39,36,37,36,392573.1,390730.3,North American Ediacaran project: columns lie inside project 1's; do not add areas
+10,North American Ediacaran,Hirnantian,445.2,443.1,ANY_marine,7,7,7,6,6,153444.5,153444.5,units with at least one marine (or non-marine) entry; overlaps marine_only/both or nonmarine_only/both; North American Ediacaran project: columns lie inside project 1's; do not add areas
+10,North American Ediacaran,Hirnantian,445.2,443.1,ANY_nonmarine,2,2,2,2,2,222.4,222.4,units with at least one marine (or non-marine) entry; overlaps marine_only/both or nonmarine_only/both; North American Ediacaran project: columns lie inside project 1's; do not add areas
+10,North American Ediacaran,Katian,452.8,445.2,ALL,49,49,44,45,43,546240.1,501675.4,North American Ediacaran project: columns lie inside project 1's; do not add areas
+10,North American Ediacaran,Katian,452.8,445.2,marine_only,7,7,7,6,6,153444.5,153444.5,North American Ediacaran project: columns lie inside project 1's; do not add areas
+10,North American Ediacaran,Katian,452.8,445.2,nonmarine_only,2,2,2,2,2,222.4,222.4,North American Ediacaran project: columns lie inside project 1's; do not add areas
+10,North American Ediacaran,Katian,452.8,445.2,unknown,40,40,35,37,35,392573.1,348008.5,North American Ediacaran project: columns lie inside project 1's; do not add areas
+10,North American Ediacaran,Katian,452.8,445.2,ANY_marine,7,7,7,6,6,153444.5,153444.5,units with at least one marine (or non-marine) entry; overlaps marine_only/both or nonmarine_only/both; North American Ediacaran project: columns lie inside project 1's; do not add areas
+10,North American Ediacaran,Katian,452.8,445.2,ANY_nonmarine,2,2,2,2,2,222.4,222.4,units with at least one marine (or non-marine) entry; overlaps marine_only/both or nonmarine_only/both; North American Ediacaran project: columns lie inside project 1's; do not add areas
+10,North American Ediacaran,Sandbian,458.2,452.8,ALL,45,45,44,44,43,507051.2,503431.2,North American Ediacaran project: columns lie inside project 1's; do not add areas
+10,North American Ediacaran,Sandbian,458.2,452.8,marine_only,7,7,7,6,6,153444.5,153444.5,North American Ediacaran project: columns lie inside project 1's; do not add areas
+10,North American Ediacaran,Sandbian,458.2,452.8,nonmarine_only,2,2,2,2,2,222.4,222.4,North American Ediacaran project: columns lie inside project 1's; do not add areas
+10,North American Ediacaran,Sandbian,458.2,452.8,unknown,36,36,35,36,35,353384.3,349764.3,North American Ediacaran project: columns lie inside project 1's; do not add areas
+10,North American Ediacaran,Sandbian,458.2,452.8,ANY_marine,7,7,7,6,6,153444.5,153444.5,units with at least one marine (or non-marine) entry; overlaps marine_only/both or nonmarine_only/both; North American Ediacaran project: columns lie inside project 1's; do not add areas
+10,North American Ediacaran,Sandbian,458.2,452.8,ANY_nonmarine,2,2,2,2,2,222.4,222.4,units with at least one marine (or non-marine) entry; overlaps marine_only/both or nonmarine_only/both; North American Ediacaran project: columns lie inside project 1's; do not add areas
+10,North American Ediacaran,Darriwilian,469.4,458.2,ALL,63,63,56,57,56,587556.2,548367.3,North American Ediacaran project: columns lie inside project 1's; do not add areas
+10,North American Ediacaran,Darriwilian,469.4,458.2,marine_only,10,10,10,10,10,168091.5,168091.5,North American Ediacaran project: columns lie inside project 1's; do not add areas
+10,North American Ediacaran,Darriwilian,469.4,458.2,nonmarine_only,2,2,2,2,2,222.4,222.4,North American Ediacaran project: columns lie inside project 1's; do not add areas
+10,North American Ediacaran,Darriwilian,469.4,458.2,unknown,51,51,44,45,44,419242.3,380053.4,North American Ediacaran project: columns lie inside project 1's; do not add areas
+10,North American Ediacaran,Darriwilian,469.4,458.2,ANY_marine,10,10,10,10,10,168091.5,168091.5,units with at least one marine (or non-marine) entry; overlaps marine_only/both or nonmarine_only/both; North American Ediacaran project: columns lie inside project 1's; do not add areas
+10,North American Ediacaran,Darriwilian,469.4,458.2,ANY_nonmarine,2,2,2,2,2,222.4,222.4,units with at least one marine (or non-marine) entry; overlaps marine_only/both or nonmarine_only/both; North American Ediacaran project: columns lie inside project 1's; do not add areas
+10,North American Ediacaran,Dapingian,471.3,469.4,ALL,58,58,58,57,57,587556.2,587556.2,North American Ediacaran project: columns lie inside project 1's; do not add areas
+10,North American Ediacaran,Dapingian,471.3,469.4,marine_only,10,10,10,10,10,168091.5,168091.5,North American Ediacaran project: columns lie inside project 1's; do not add areas
+10,North American Ediacaran,Dapingian,471.3,469.4,nonmarine_only,2,2,2,2,2,222.4,222.4,North American Ediacaran project: columns lie inside project 1's; do not add areas
+10,North American Ediacaran,Dapingian,471.3,469.4,unknown,46,46,46,45,45,419242.3,419242.3,North American Ediacaran project: columns lie inside project 1's; do not add areas
+10,North American Ediacaran,Dapingian,471.3,469.4,ANY_marine,10,10,10,10,10,168091.5,168091.5,units with at least one marine (or non-marine) entry; overlaps marine_only/both or nonmarine_only/both; North American Ediacaran project: columns lie inside project 1's; do not add areas
+10,North American Ediacaran,Dapingian,471.3,469.4,ANY_nonmarine,2,2,2,2,2,222.4,222.4,units with at least one marine (or non-marine) entry; overlaps marine_only/both or nonmarine_only/both; North American Ediacaran project: columns lie inside project 1's; do not add areas
+10,North American Ediacaran,Floian,477.1,471.3,ALL,69,69,68,68,68,627072.0,627072.0,North American Ediacaran project: columns lie inside project 1's; do not add areas
+10,North American Ediacaran,Floian,477.1,471.3,marine_only,9,9,9,9,9,179351.7,179351.7,North American Ediacaran project: columns lie inside project 1's; do not add areas
+10,North American Ediacaran,Floian,477.1,471.3,nonmarine_only,2,2,2,2,2,222.4,222.4,North American Ediacaran project: columns lie inside project 1's; do not add areas
+10,North American Ediacaran,Floian,477.1,471.3,unknown,58,58,57,57,57,447497.9,447497.9,North American Ediacaran project: columns lie inside project 1's; do not add areas
+10,North American Ediacaran,Floian,477.1,471.3,ANY_marine,9,9,9,9,9,179351.7,179351.7,units with at least one marine (or non-marine) entry; overlaps marine_only/both or nonmarine_only/both; North American Ediacaran project: columns lie inside project 1's; do not add areas
+10,North American Ediacaran,Floian,477.1,471.3,ANY_nonmarine,2,2,2,2,2,222.4,222.4,units with at least one marine (or non-marine) entry; overlaps marine_only/both or nonmarine_only/both; North American Ediacaran project: columns lie inside project 1's; do not add areas
+10,North American Ediacaran,Tremadocian,486.85,477.1,ALL,73,73,70,69,69,629692.5,629692.5,North American Ediacaran project: columns lie inside project 1's; do not add areas
+10,North American Ediacaran,Tremadocian,486.85,477.1,marine_only,10,10,10,10,10,182538.8,182538.8,North American Ediacaran project: columns lie inside project 1's; do not add areas
+10,North American Ediacaran,Tremadocian,486.85,477.1,nonmarine_only,2,2,2,2,2,222.4,222.4,North American Ediacaran project: columns lie inside project 1's; do not add areas
+10,North American Ediacaran,Tremadocian,486.85,477.1,unknown,61,61,58,58,57,450118.4,446931.3,North American Ediacaran project: columns lie inside project 1's; do not add areas
+10,North American Ediacaran,Tremadocian,486.85,477.1,ANY_marine,10,10,10,10,10,182538.8,182538.8,units with at least one marine (or non-marine) entry; overlaps marine_only/both or nonmarine_only/both; North American Ediacaran project: columns lie inside project 1's; do not add areas
+10,North American Ediacaran,Tremadocian,486.85,477.1,ANY_nonmarine,2,2,2,2,2,222.4,222.4,units with at least one marine (or non-marine) entry; overlaps marine_only/both or nonmarine_only/both; North American Ediacaran project: columns lie inside project 1's; do not add areas
+12,Indonesia,Givetian,387.95,382.31,ALL,1,0,0,0,0,0.0,0.0,
+12,Indonesia,Givetian,387.95,382.31,unknown,1,0,0,0,0,0.0,0.0,
+12,Indonesia,Eifelian,393.47,387.95,ALL,1,0,0,0,0,0.0,0.0,
+12,Indonesia,Eifelian,393.47,387.95,unknown,1,0,0,0,0,0.0,0.0,
+12,Indonesia,Emsian,410.62,393.47,ALL,1,0,0,0,0,0.0,0.0,
+12,Indonesia,Emsian,410.62,393.47,unknown,1,0,0,0,0,0.0,0.0,
+12,Indonesia,Pragian,413.02,410.62,ALL,1,0,0,0,0,0.0,0.0,
+12,Indonesia,Pragian,413.02,410.62,unknown,1,0,0,0,0,0.0,0.0,
+12,Indonesia,Lochkovian,419.62,413.02,ALL,1,0,0,0,0,0.0,0.0,
+12,Indonesia,Lochkovian,419.62,413.02,unknown,1,0,0,0,0,0.0,0.0,
+12,Indonesia,Pridoli,422.7,419.62,ALL,1,0,0,0,0,0.0,0.0,
+12,Indonesia,Pridoli,422.7,419.62,unknown,1,0,0,0,0,0.0,0.0,
+12,Indonesia,Ludfordian,425.0,422.7,ALL,1,0,0,0,0,0.0,0.0,
+12,Indonesia,Ludfordian,425.0,422.7,unknown,1,0,0,0,0,0.0,0.0,
+12,Indonesia,Gorstian,426.7,425.0,ALL,1,0,0,0,0,0.0,0.0,
+12,Indonesia,Gorstian,426.7,425.0,unknown,1,0,0,0,0,0.0,0.0,
+12,Indonesia,Homerian,430.6,426.7,ALL,1,0,0,0,0,0.0,0.0,
+12,Indonesia,Homerian,430.6,426.7,unknown,1,0,0,0,0,0.0,0.0,
+12,Indonesia,Sheinwoodian,432.9,430.6,ALL,1,0,0,0,0,0.0,0.0,
+12,Indonesia,Sheinwoodian,432.9,430.6,unknown,1,0,0,0,0,0.0,0.0,
+12,Indonesia,Telychian,438.6,432.9,ALL,1,0,0,0,0,0.0,0.0,
+12,Indonesia,Telychian,438.6,432.9,unknown,1,0,0,0,0,0.0,0.0,
+12,Indonesia,Aeronian,440.5,438.6,ALL,1,0,0,0,0,0.0,0.0,
+12,Indonesia,Aeronian,440.5,438.6,unknown,1,0,0,0,0,0.0,0.0,
+12,Indonesia,Rhuddanian,443.1,440.5,ALL,1,0,0,0,0,0.0,0.0,
+12,Indonesia,Rhuddanian,443.1,440.5,unknown,1,0,0,0,0,0.0,0.0,
+12,Indonesia,Hirnantian,445.2,443.1,ALL,1,0,0,0,0,0.0,0.0,
+12,Indonesia,Hirnantian,445.2,443.1,unknown,1,0,0,0,0,0.0,0.0,
+12,Indonesia,Katian,452.8,445.2,ALL,1,0,0,0,0,0.0,0.0,
+12,Indonesia,Katian,452.8,445.2,unknown,1,0,0,0,0,0.0,0.0,
+12,Indonesia,Sandbian,458.2,452.8,ALL,1,0,0,0,0,0.0,0.0,
+12,Indonesia,Sandbian,458.2,452.8,unknown,1,0,0,0,0,0.0,0.0,
+12,Indonesia,Darriwilian,469.4,458.2,ALL,1,0,0,0,0,0.0,0.0,
+12,Indonesia,Darriwilian,469.4,458.2,unknown,1,0,0,0,0,0.0,0.0,
+12,Indonesia,Dapingian,471.3,469.4,ALL,1,0,0,0,0,0.0,0.0,
+12,Indonesia,Dapingian,471.3,469.4,unknown,1,0,0,0,0,0.0,0.0,
+12,Indonesia,Floian,477.1,471.3,ALL,1,0,0,0,0,0.0,0.0,
+12,Indonesia,Floian,477.1,471.3,unknown,1,0,0,0,0,0.0,0.0,
+12,Indonesia,Tremadocian,486.85,477.1,ALL,1,0,0,0,0,0.0,0.0,
+12,Indonesia,Tremadocian,486.85,477.1,unknown,1,0,0,0,0,0.0,0.0,
