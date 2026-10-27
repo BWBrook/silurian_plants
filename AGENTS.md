@@ -39,6 +39,12 @@ Run `check`, `index` and `matrix` after editing cards, and `dois` after adding r
 - Facts, numbers and citations come from sources read in the task, never from memory. Every
   DOI is verified against Crossref; never guess one. In references lists, one reference per line
   with first author, year, title and DOI, so `dois` can compare them.
+- When a source cannot be read in full (paywall, blocked supplement, print only), add it to
+  `docs/closed-literature.csv` with what it would settle; Barry obtains these through his
+  institutional login. Never bypass access controls. PDFs he obtains go in `library/closed/`,
+  which is git-ignored: copyrighted texts are never committed.
+- Never send Barry's email address or other personal data to any service or API, including ones
+  that ask for a contact email.
 - Separate observation, interpretation and speculation; present disputes with both sides.
 - Cards record ages as ICS stage names; give finer ages in `range.notes` with their source.
   Literature before 2024 mostly uses the GTS2012 Early Devonian boundaries (Lochkovian 419.2,
