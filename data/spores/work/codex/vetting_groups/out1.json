@@ -1,0 +1,479 @@
+{
+  "items": [
+    {
+      "group_id": "G001",
+      "verdict": "accept",
+      "reason": "Dyadospora murusdensa is corroborated in Jordanian early Llandovery assemblages by a [later regional comparison](https://www.researchgate.net/publication/259093595_Latest_Ordovician-earliest_Silurian_acritarchs_and_chitinozoans_from_subsurface_samples_in_Jebel_Asba_Kufra_Basin_SE_Libya)."
+    },
+    {
+      "group_id": "G002",
+      "verdict": "doubtful",
+      "reason": "Both genera are credible in Jordanian Silurian assemblages, but the combined Aeronian–Ludfordian range needs horizon-specific confirmation before supporting a pre-Wenlock occurrence."
+    },
+    {
+      "group_id": "G003",
+      "verdict": "doubtful",
+      "reason": "These simple triletes are plausible Silurian records, but the whole-Silurian well assignment does not resolve their individual horizons or confirm an early occurrence."
+    },
+    {
+      "group_id": "G004",
+      "verdict": "doubtful",
+      "reason": "An unspecified Emphanisporites record from an unspecified Soviet locality with a whole-Silurian age lacks sufficient provenance and dating for acceptance."
+    },
+    {
+      "group_id": "G005",
+      "verdict": "doubtful",
+      "reason": "Llandovery Ambitisporites is credible in England, but this summary does not securely associate both listed genera with dated English Llandovery specimens."
+    },
+    {
+      "group_id": "G006",
+      "verdict": "doubtful",
+      "reason": "The historical names are compatible with simple early Silurian spores, but the Birmingham specimens and their particular Llandovery horizons remain uncorroborated."
+    },
+    {
+      "group_id": "G007",
+      "verdict": "doubtful",
+      "reason": "Retusotriletes is plausible in this interval, but the Kentucky occurrence needs a sampled horizon rather than an age inherited from the paper's broader stratigraphic discussion."
+    },
+    {
+      "group_id": "G008",
+      "verdict": "doubtful",
+      "reason": "Archaeozonotriletes chulus is credible in the later part of this interval, but the Aeronian endpoint is unsupported by the pooled stratigraphic synthesis."
+    },
+    {
+      "group_id": "G009",
+      "verdict": "doubtful",
+      "reason": "This Middle Ordovician trilete claim predates the accepted Katian record and lacks modern confirmation of the identification and specimen-bearing horizon."
+    },
+    {
+      "group_id": "G010",
+      "verdict": "doubtful",
+      "reason": "The whole-Silurian review entry does not establish a dated Soviet occurrence of Stenozonotriletes subgranulatus or distinguish it from the disputed older report."
+    },
+    {
+      "group_id": "G011",
+      "verdict": "doubtful",
+      "reason": "Leiotriletes from early Silurian Deerlijk is plausible, but the original specimen needs reassessment to distinguish a genuine trilete aperture from cryptospore breakage."
+    },
+    {
+      "group_id": "G012",
+      "verdict": "doubtful",
+      "reason": "The whole-Silurian grouping combines smooth and ornamented spores without resolving their horizons within a study that also includes substantial Devonian material."
+    },
+    {
+      "group_id": "G013",
+      "verdict": "doubtful",
+      "reason": "The Libyan Silurian spores are credible collectively, but this pooled list combines early smooth spores with younger assemblages and cannot establish their individual pre-Wenlock occurrences."
+    },
+    {
+      "group_id": "G014",
+      "verdict": "doubtful",
+      "reason": "The Gotland genera are credible Silurian spores, but their assignment to Llandovery samples is unconfirmed and cannot be inferred from the accepted Wenlock record."
+    },
+    {
+      "group_id": "G015",
+      "verdict": "accept",
+      "reason": "Burgess's type-area assemblages and subsequent taxonomic compilations support these cryptospore morphologies across the Hirnantian–Rhuddanian interval in southwest Wales."
+    },
+    {
+      "group_id": "G016",
+      "verdict": "accept",
+      "reason": "Tetrahedraletes medinensis is an established component of the type-Llandovery cryptospore succession within this bounded interval."
+    },
+    {
+      "group_id": "G017",
+      "verdict": "reject",
+      "reason": "The historical Ambitisporites vavrdovae identification belongs to the pseudo-trilete cryptospore genus Imperfectotriletes and cannot support this [true-trilete grouping](https://orbi.uliege.be/bitstream/2268/294152/1/1-s2.0-S0034666722001403-main.pdf)."
+    },
+    {
+      "group_id": "G018",
+      "verdict": "accept",
+      "reason": "Velatitetras reticulata is a recognised enveloped tetrad from the type-Llandovery study, consistent with the supplied Hirnantian–Aeronian bounds."
+    },
+    {
+      "group_id": "G019",
+      "verdict": "accept",
+      "reason": "The Rhuddanian type-area assemblage contains established dyad and tetrad cryptospores, although some historical species names require synonym reconciliation."
+    },
+    {
+      "group_id": "G020",
+      "verdict": "accept",
+      "reason": "The Pennsylvania dyads and enveloped pseudodyads are supported by the accepted Tuscarora assemblages, although several listed names represent taxonomic recombinations rather than additional taxa."
+    },
+    {
+      "group_id": "G021",
+      "verdict": "accept",
+      "reason": "Ambitisporites dilutus belongs to the younger type-Llandovery assemblage beginning in the late Aeronian and continuing into the Telychian."
+    },
+    {
+      "group_id": "G022",
+      "verdict": "accept",
+      "reason": "Rare Ambitisporites is consistent with the recognised Pennsylvania Llandovery spore record and the assemblages retained in the curated compilation."
+    },
+    {
+      "group_id": "G023",
+      "verdict": "accept",
+      "reason": "These dyad and tetrad cryptospores are established components of Pennsylvania Llandovery assemblages retained in the curated regional record."
+    },
+    {
+      "group_id": "G024",
+      "verdict": "reject",
+      "reason": "Ambitisporites imperfectus requires cryptospore reassessment, while Emphanisporites protophanus lacks corroboration at these Ordovician horizons, leaving this claimed trilete grouping unsupported."
+    },
+    {
+      "group_id": "G025",
+      "verdict": "doubtful",
+      "reason": "Both cryptospores are plausible in Late Ordovician Iran, but later Alborz discoveries do not independently verify the horizons attributed to this Zagros document."
+    },
+    {
+      "group_id": "G026",
+      "verdict": "doubtful",
+      "reason": "The avitus–dilutus component is plausible in Llandovery Iran, but the broad acritarch survey does not supply verified spore-bearing horizons for this group."
+    },
+    {
+      "group_id": "G027",
+      "verdict": "doubtful",
+      "reason": "These broadly identified spores lack modern specimen confirmation and taxon-specific horizons within the whole-Silurian Krasnoyarsk assignment."
+    },
+    {
+      "group_id": "G028",
+      "verdict": "doubtful",
+      "reason": "The unspecified Leiotriletes identification and whole-Silurian Kalinin age provide insufficient evidence for a securely dated early occurrence."
+    },
+    {
+      "group_id": "G029",
+      "verdict": "doubtful",
+      "reason": "The Polish Stenozonotriletes entry lacks a verified specimen-bearing horizon and modern identification, so the broad Silurian assignment remains provisional."
+    },
+    {
+      "group_id": "G030",
+      "verdict": "doubtful",
+      "reason": "The Darriwilian Punctatisporites identification is an unconfirmed pre-Katian trilete claim, even though cryptospore evidence from the broader Bohemian record is credible."
+    },
+    {
+      "group_id": "G031",
+      "verdict": "doubtful",
+      "reason": "The synthesis does not resolve whether these Shropshire spores come from Llandovery, Wenlock or younger Silurian horizons."
+    },
+    {
+      "group_id": "G032",
+      "verdict": "doubtful",
+      "reason": "Retusotriletes warringtonii appears in historical Llandovery zonations, but a corresponding Scottish specimen-bearing horizon is not corroborated for this review entry."
+    },
+    {
+      "group_id": "G033",
+      "verdict": "doubtful",
+      "reason": "The mixed Libyan list combines plausible early Ambitisporites with other taxa whose Rhuddanian–Aeronian provenance is unresolved in this predominantly Cambrian–Ordovician study."
+    },
+    {
+      "group_id": "G034",
+      "verdict": "accept",
+      "reason": "The [Awantjish borehole study](https://pubs.geoscienceworld.org/csp/cjes/article/13/9/1310/49499/Les-acritarches-de-la-Formation-d-Awantjish?searchresult=1) documents spores alongside marine palynomorphs in an upper Llandovery succession, supporting this broadly identified trilete component."
+    },
+    {
+      "group_id": "G035",
+      "verdict": "reject",
+      "reason": "The living moss names Funaria hygrometrica and Polytrichum alpestre do not establish indigenous Middle Ordovician fossils and must not enter the fossil occurrence dataset."
+    },
+    {
+      "group_id": "G036",
+      "verdict": "accept",
+      "reason": "The [Massanutten study](https://www.sciencedirect.com/science/article/pii/0034666778900349) documents trilete spores from fossiliferous lower Massanutten siltstones assigned to the Llandovery."
+    },
+    {
+      "group_id": "G037",
+      "verdict": "doubtful",
+      "reason": "The broad regional review does not resolve the Bolivian spore horizons within its whole-Silurian assignment, particularly for Emphanisporites."
+    },
+    {
+      "group_id": "G038",
+      "verdict": "accept",
+      "reason": "Later type-Llandovery work supports Ambitisporites dilutus in the late Aeronian of southwest Wales, which falls within the supplied interval."
+    },
+    {
+      "group_id": "G039",
+      "verdict": "accept",
+      "reason": "The type-Llandovery record corroborates the early Welsh dyad and tetrad assemblage, with historical Nodospora names requiring modern synonym reconciliation."
+    },
+    {
+      "group_id": "G040",
+      "verdict": "reject",
+      "reason": "Laevigatosporites desmoinesensis is a [Carboniferous spore taxon](https://repository.si.edu/bitstream/handle/10088/7174/paleo_1985_Phillips_Peppers_DiMichele_coals_IJCG.pdf), making its uncorroborated Llandovery assignment unsuitable as an indigenous occurrence."
+    },
+    {
+      "group_id": "G041",
+      "verdict": "accept",
+      "reason": "The Illinois Fort Atkinson material is the documented type occurrence of Tetrahedraletes grayii, supporting its [Late Ordovician cryptospore record](https://orbi.uliege.be/bitstream/2268/294152/1/1-s2.0-S0034666722001403-main.pdf)."
+    },
+    {
+      "group_id": "G042",
+      "verdict": "doubtful",
+      "reason": "The Pennsylvania cryptospores are credible, but this combined Llandovery–Wenlock range does not resolve the individual horizons of Nodospora burnhamensis and Nodospora oyleri."
+    },
+    {
+      "group_id": "G043",
+      "verdict": "accept",
+      "reason": "Nodospora retimembrana represents a recognised enveloped tetrad from the New York Llandovery record, subsequently treated within Velatitetras."
+    },
+    {
+      "group_id": "G044",
+      "verdict": "accept",
+      "reason": "These Pennsylvania dyads and tetrads are established Llandovery cryptospores, supported by the original Tuscarora studies and subsequent taxonomic compilation."
+    },
+    {
+      "group_id": "G045",
+      "verdict": "accept",
+      "reason": "The Tuscarora component of the original Pennsylvania study supports these Llandovery tetrads, although historical Nodospora taxonomy should be reconciled before species-level analysis."
+    },
+    {
+      "group_id": "G046",
+      "verdict": "doubtful",
+      "reason": "The original study samples both Llandovery Tuscarora and Wenlock strata, so the combined range requires species-specific separation before establishing early occurrences."
+    },
+    {
+      "group_id": "G047",
+      "verdict": "doubtful",
+      "reason": "Ambitisporites is plausible in the Cotentin succession, but the pooled Llandovery–Wenlock age does not identify its actual spore-bearing horizon."
+    },
+    {
+      "group_id": "G048",
+      "verdict": "doubtful",
+      "reason": "This whole-Silurian grouping from a predominantly Devonian study lacks horizon-specific evidence separating the smooth early spores from younger components."
+    },
+    {
+      "group_id": "G049",
+      "verdict": "accept",
+      "reason": "The curated Irish Llandovery record retains Ambitisporites dilutus from Emo and Smith's Slieve Aughty study, supporting presence within this interval."
+    },
+    {
+      "group_id": "G050",
+      "verdict": "doubtful",
+      "reason": "The Clare occurrence is plausible, but its individual horizon is not independently confined to the supplied Aeronian–Sheinwoodian bounds or their pre-Wenlock portion."
+    },
+    {
+      "group_id": "G051",
+      "verdict": "doubtful",
+      "reason": "Ambitisporites avitus is credible in the Irish succession, but the Galway entry pools Llandovery and Wenlock ages without resolving the specimen-bearing horizon."
+    },
+    {
+      "group_id": "G052",
+      "verdict": "doubtful",
+      "reason": "The Clare Ambitisporites record is credible, but its broad Llandovery–Wenlock assignment cannot establish an Aeronian or otherwise securely pre-Wenlock occurrence."
+    },
+    {
+      "group_id": "G053",
+      "verdict": "accept",
+      "reason": "The Lower Llandovery Medina Group tetrads are corroborated by the fuller Miller and Eames account, although this earlier report duplicates that research."
+    },
+    {
+      "group_id": "G054",
+      "verdict": "doubtful",
+      "reason": "The unspecified Irish Archaeozonotriletes record lacks a taxon-specific horizon within the whole-Silurian range and cannot inherit the age of regional Ambitisporites assemblages."
+    },
+    {
+      "group_id": "G055",
+      "verdict": "accept",
+      "reason": "The Anticosti tetrad record is supported by the accepted Llandovery assemblages in the curated compilation, although its relationship to later accounts requires deduplication."
+    },
+    {
+      "group_id": "G056",
+      "verdict": "doubtful",
+      "reason": "Irish Llandovery Ambitisporites is established, but this progress-review entry combines Llandovery and Wenlock material without identifying the contributing horizons."
+    },
+    {
+      "group_id": "G057",
+      "verdict": "accept",
+      "reason": "The Medina Group study establishes these cryptospore morphologies in Lower Llandovery New York, within the supplied broader Llandovery bounds."
+    },
+    {
+      "group_id": "G058",
+      "verdict": "doubtful",
+      "reason": "Speciososporites is not corroborated as a Silurian Amazonas occurrence, and the broad Palaeozoic study requires checking for a younger sample or misassigned age."
+    },
+    {
+      "group_id": "G059",
+      "verdict": "reject",
+      "reason": "The inclusion of [Permian Dulhuntyispora](https://library.dbca.wa.gov.au/static/Journals/080325/080325-51.pdf) makes this pooled whole-Silurian assignment unsupported, with Acanthotriletes requiring separate reassessment."
+    },
+    {
+      "group_id": "G060",
+      "verdict": "doubtful",
+      "reason": "The Quebec tetrad entry may represent comparison material in a Missouri acritarch paper, and its local occurrence and assigned Late Ordovician horizon remain unverified."
+    },
+    {
+      "group_id": "G061",
+      "verdict": "doubtful",
+      "reason": "Tetrahedraletes is plausible in the Missouri Upper Ordovician, but this paper's acritarch record does not independently establish the indexed tetrad occurrence."
+    },
+    {
+      "group_id": "G062",
+      "verdict": "accept",
+      "reason": "The [original Libyan study](https://pubs.geoscienceworld.org/gsa/geology/article-abstract/10/4/197/188820/Caradocian-land-plant-microfossils-from-Libya?redirectedFrom=fulltext) documents independently dated Caradocian spore tetrads, supporting presence within the supplied Sandbian–Katian bounds."
+    },
+    {
+      "group_id": "G063",
+      "verdict": "accept",
+      "reason": "The Libyan Late Ordovician tetrads are retained in subsequent curated cryptospore compilations, supporting this bounded occurrence without establishing its exact stage."
+    },
+    {
+      "group_id": "G064",
+      "verdict": "accept",
+      "reason": "The Kentucky comparison refers to documented Ashgill tetrads from the Elkhorn Formation, a provenance explicitly identified in [Smelror's account](https://njg.geologi.no/images/NJG_articles/NGT_67_2_143-150.pdf)."
+    },
+    {
+      "group_id": "G065",
+      "verdict": "accept",
+      "reason": "The New York comparison is supported by the established Llandovery Medina Group tetrads, although it should not be counted as a new independent assemblage."
+    },
+    {
+      "group_id": "G066",
+      "verdict": "accept",
+      "reason": "Libyan Llandovery tetrads are corroborated by subsequent cryptospore studies and the curated regional compilation."
+    },
+    {
+      "group_id": "G067",
+      "verdict": "accept",
+      "reason": "Ambitisporites is established in the latest Llandovery–earliest Wenlock type-area succession, although only the below-boundary specimens establish pre-Wenlock presence."
+    },
+    {
+      "group_id": "G068",
+      "verdict": "accept",
+      "reason": "Hill and colleagues contribute to the curated Libyan Rhuddanian cryptospore assemblage, supporting the coarse tetrad identification without resolving a modern species name."
+    },
+    {
+      "group_id": "G069",
+      "verdict": "doubtful",
+      "reason": "Tetrahedraletes is plausible in the Egyptian well, but the presumed whole-Silurian age and unspecified identification lack sufficient independent confirmation."
+    },
+    {
+      "group_id": "G070",
+      "verdict": "reject",
+      "reason": "The [original study](https://www.researchgate.net/publication/252899780_Silurian-age_fossils_from_the_Paleozoic_Parana_Basin_southern_Brazil) sampled cryptospores in Goiás and discussed Mato Grosso do Sul for stratigraphic comparison, so this locality assignment is unsupported."
+    },
+    {
+      "group_id": "G071",
+      "verdict": "doubtful",
+      "reason": "The [documented tetrads](https://www.researchgate.net/publication/252899780_Silurian-age_fossils_from_the_Paleozoic_Parana_Basin_southern_Brazil) come from Goiás within the Paraná Basin, so the Paraná label needs geographical reconciliation before acceptance as a separate occurrence."
+    },
+    {
+      "group_id": "G072",
+      "verdict": "reject",
+      "reason": "Martin's Schizaeoisporites sp. I was reassigned to the Moyeria lineage, whose [euglenid identity](https://dspace.library.uu.nl/bitstream/1874/410621/1/Pellicle_ultrastructure_demonstrates_that_Moyeria_is_a_fossil_euglenid.pdf) excludes it from the land-plant spore dataset."
+    },
+    {
+      "group_id": "G073",
+      "verdict": "doubtful",
+      "reason": "The Deerlijk succession contains credible early terrestrial palynomorphs, but these historical Leiotriletes identifications require specimen-level revision and separation of their Ordovician and Silurian horizons."
+    },
+    {
+      "group_id": "G074",
+      "verdict": "accept",
+      "reason": "Achab's subsequent Awantjish borehole account corroborates the upper Llandovery spore-bearing succession, although overlapping thesis and article records require deduplication."
+    },
+    {
+      "group_id": "G075",
+      "verdict": "doubtful",
+      "reason": "Some Johnson specimens originally described as possible Ambitisporites were subsequently compared with Imperfectotriletes, so this group needs specimen-level confirmation of genuine trilete apertures."
+    },
+    {
+      "group_id": "G076",
+      "verdict": "accept",
+      "reason": "The Tuscarora dyads, pseudodyads and tetrads form an established Pennsylvania Llandovery cryptospore assemblage, despite later recombinations of several historical names."
+    },
+    {
+      "group_id": "G077",
+      "verdict": "doubtful",
+      "reason": "The Moldavian spores are broadly plausible Silurian forms, but their identifications and specimen-bearing horizons are uncorroborated within the undivided Silurian assignment."
+    },
+    {
+      "group_id": "G078",
+      "verdict": "doubtful",
+      "reason": "The deep-well Punctatisporites entry lacks independently verified sample dating and evidence excluding younger downhole contamination or an erroneous Silurian correlation."
+    },
+    {
+      "group_id": "G079",
+      "verdict": "doubtful",
+      "reason": "Ambitisporites avitus is plausible in Jujuy, but the combined Llandovery–Wenlock formation range does not securely date the reported specimen."
+    },
+    {
+      "group_id": "G080",
+      "verdict": "doubtful",
+      "reason": "The Salta occurrence requires a formation and sampled horizon because its broad Llandovery–Wenlock assignment does not establish a pre-Wenlock record."
+    },
+    {
+      "group_id": "G081",
+      "verdict": "doubtful",
+      "reason": "The historical Punctatisporites dilutus identification is plausible, but this Devonian-focused study does not resolve its actual horizon within the whole-Silurian database assignment."
+    },
+    {
+      "group_id": "G082",
+      "verdict": "accept",
+      "reason": "The Bohemian tetrad morphotype is consistent with the cryptospore record retained after later review, although its precise stage within the supplied interval remains unresolved."
+    },
+    {
+      "group_id": "G083",
+      "verdict": "doubtful",
+      "reason": "Tetrahedraletes medinensis is securely known in Llandovery assemblages, but this hemisphere-wide pooled range is a synthesis rather than a dated locality occurrence."
+    },
+    {
+      "group_id": "G084",
+      "verdict": "doubtful",
+      "reason": "The Ukrainian morphological survey provides no verified specimen-specific ages linking these genera to the pre-Wenlock portion of its whole-Silurian range."
+    },
+    {
+      "group_id": "G085",
+      "verdict": "reject",
+      "reason": "The pooled Silurian assignment includes Lycospora, whose accepted record begins much later according to the [taxonomic review](https://www.sciencedirect.com/science/article/pii/S0034666711002065), making this assemblage unsupported as indexed."
+    },
+    {
+      "group_id": "G086",
+      "verdict": "doubtful",
+      "reason": "The unspecified Laevigatisporites entry shares an unreliable whole-Silurian assignment with an anachronistic assemblage and lacks independently verified specimens or horizons."
+    },
+    {
+      "group_id": "G087",
+      "verdict": "accept",
+      "reason": "The Cedarberg cryptospore tetrads are retained in the curated South African record, with the Ordovician–Silurian boundary uncertainty contained within the supplied bounds."
+    },
+    {
+      "group_id": "G088",
+      "verdict": "doubtful",
+      "reason": "Appalachian Nodospora-type tetrads are credible, but this abstract pools Llandovery and Wenlock material without resolving the contributing specimens and horizons."
+    },
+    {
+      "group_id": "G089",
+      "verdict": "doubtful",
+      "reason": "The Egyptian tetrad identification is plausible, but neither specimen documentation nor independent Rhuddanian–Aeronian dating is sufficiently corroborated for this particular entry."
+    },
+    {
+      "group_id": "G090",
+      "verdict": "doubtful",
+      "reason": "Both tetrad genera are credible in Pennsylvania Llandovery rocks, but the short morphological contribution does not independently resolve the indexed specimens' provenance and ages."
+    },
+    {
+      "group_id": "G091",
+      "verdict": "accept",
+      "reason": "[Smelror](https://njg.geologi.no/images/NJG_articles/NGT_67_2_143-150.pdf) explicitly records tetrad type A from the upper Vik and Bruflat formations and assigns these occurrences to the Telychian."
+    },
+    {
+      "group_id": "G092",
+      "verdict": "accept",
+      "reason": "[Smelror](https://njg.geologi.no/images/NJG_articles/NGT_67_2_143-150.pdf) explicitly records tetrad type B from the Bruflat through basal Braksøya formations, supporting the Telychian–early Sheinwoodian interval."
+    },
+    {
+      "group_id": "G093",
+      "verdict": "doubtful",
+      "reason": "The Lithuanian borehole summary does not establish the actual horizon or modern identification of Archaeozonotriletes siluriensis within its whole-Silurian assignment."
+    },
+    {
+      "group_id": "G094",
+      "verdict": "doubtful",
+      "reason": "The textbook does not independently substantiate a Scottish Llandovery Retusotriletes warringtonii occurrence, and general zonal membership cannot establish that geographical assignment."
+    },
+    {
+      "group_id": "G095",
+      "verdict": "accept",
+      "reason": "African Llandovery Ambitisporites dilutus is corroborated by the [Libyan avitus–dilutus assemblages](https://emrlibrary.gov.yk.ca/emrlibrary/gsc/bulletins/364/bu_364.pdf), although this textbook citation supplies no independent locality."
+    }
+  ]
+}

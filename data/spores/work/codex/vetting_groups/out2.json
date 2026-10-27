@@ -1,0 +1,474 @@
+{
+  "items": [
+    {
+      "group_id": "G096",
+      "verdict": "reject",
+      "reason": "Ambitisporites imperfectus belongs to the subsequently recognised pseudotrilete cryptospore complex and does not establish true triletes in this interval ([taxonomic reassessment](https://journals.tubitak.gov.tr/earth/vol21/iss6/2/))."
+    },
+    {
+      "group_id": "G097",
+      "verdict": "accept",
+      "reason": "Richardson's Libyan dyads and tetrads are corroborated by the curated Late Ordovician–Rhuddanian cryptospore record."
+    },
+    {
+      "group_id": "G098",
+      "verdict": "accept",
+      "reason": "The reported pseudodyad is consistent with the independently retained Late Ordovician Libyan cryptospore assemblages."
+    },
+    {
+      "group_id": "G099",
+      "verdict": "accept",
+      "reason": "Tetrahedraletes and the associated dyads and enveloped tetrads are corroborated in Libyan assemblages within the Katian–Telychian interval."
+    },
+    {
+      "group_id": "G100",
+      "verdict": "accept",
+      "reason": "The Nodospora forms belong to Richardson's credible Libyan cryptospore succession spanning the Late Ordovician and early Llandovery."
+    },
+    {
+      "group_id": "G101",
+      "verdict": "accept",
+      "reason": "Dyadospora and the enveloped tetrads recorded under Nodospora are corroborated in Rhuddanian–Aeronian Libyan assemblages."
+    },
+    {
+      "group_id": "G102",
+      "verdict": "accept",
+      "reason": "The curated Libyan Llandovery record independently supports these dyad and enveloped-tetrad groups within the assigned interval."
+    },
+    {
+      "group_id": "G103",
+      "verdict": "reject",
+      "reason": "The historical Ambitisporites vavrdovae identification represents the pseudotrilete cryptospore Imperfectotriletes vavrdovae rather than a true-trilete occurrence ([taxonomic reassessment](https://journals.tubitak.gov.tr/earth/vol21/iss6/2/))."
+    },
+    {
+      "group_id": "G104",
+      "verdict": "accept",
+      "reason": "Rhuddanian Libyan assemblages contain the corresponding enveloped tetrads and pseudodyads, including revised Velatitetras and Pseudodyadospora records."
+    },
+    {
+      "group_id": "G105",
+      "verdict": "accept",
+      "reason": "Ambitisporites avitus and A. dilutus are corroborated in Aeronian–Telychian Libyan assemblages."
+    },
+    {
+      "group_id": "G106",
+      "verdict": "accept",
+      "reason": "The Aeronian Libyan record includes the enveloped tetrad subsequently treated as Velatitetras retimembrana."
+    },
+    {
+      "group_id": "G107",
+      "verdict": "accept",
+      "reason": "These dyads and tetrads are corroborated in the curated Aeronian–Telychian Libyan cryptospore assemblages."
+    },
+    {
+      "group_id": "G108",
+      "verdict": "accept",
+      "reason": "Ambitisporites avitus supports an Aeronian true-trilete occurrence, although the accompanying A. imperfectus must be excluded as a pseudotrilete cryptospore."
+    },
+    {
+      "group_id": "G109",
+      "verdict": "doubtful",
+      "reason": "The Nematothallus abstract does not securely associate the Pennsylvania Ambitisporites with a particular horizon within its pooled Silurian range."
+    },
+    {
+      "group_id": "G110",
+      "verdict": "doubtful",
+      "reason": "Upper Ordovician Tetrahedraletes is credible, but this classification abstract's particular Illinois provenance and stratigraphic assignment remain uncorroborated."
+    },
+    {
+      "group_id": "G111",
+      "verdict": "doubtful",
+      "reason": "The study reports poorly preserved spores across the Llandovery–Wenlock boundary without securely establishing this identification in a Telychian sample ([original study](https://nora.nerc.ac.uk/id/eprint/19228/))."
+    },
+    {
+      "group_id": "G112",
+      "verdict": "accept",
+      "reason": "The Paraguayan assemblage contains rare dissociated trilete spores with independent marine-fossil evidence supporting its late Llandovery age ([original report](https://www.geologiadelparaguay.com.py/A-new-record-of-early-silurian.pdf))."
+    },
+    {
+      "group_id": "G113",
+      "verdict": "doubtful",
+      "reason": "Neither listed species is corroborated as a true trilete in the curated Ashgill Czech assemblage, leaving their identification unresolved."
+    },
+    {
+      "group_id": "G114",
+      "verdict": "doubtful",
+      "reason": "The list mixes pseudotriletes and Rugosphaera-like cryptospores with uncorroborated true-trilete identifications, so the pooled age–taxon association is unreliable."
+    },
+    {
+      "group_id": "G115",
+      "verdict": "accept",
+      "reason": "Tritonialetes vacuolus is retained in the curated Ashgill Czech assemblage, supporting an other-spore occurrence within this interval."
+    },
+    {
+      "group_id": "G116",
+      "verdict": "accept",
+      "reason": "The curated Ashgill Czech assemblage corroborates the listed dyad and tetrad groups within the assigned interval."
+    },
+    {
+      "group_id": "G117",
+      "verdict": "doubtful",
+      "reason": "The Hirnantian occurrence of these forms is plausible, but their identification as genuine trilete spores is not corroborated by the curated Czech assemblage."
+    },
+    {
+      "group_id": "G118",
+      "verdict": "doubtful",
+      "reason": "Rugospora-like names and Ambitisporites imperfectus do not securely represent true triletes, while the Archaeozonotriletes identification and Sandbian lower bound remain uncorroborated."
+    },
+    {
+      "group_id": "G119",
+      "verdict": "accept",
+      "reason": "The curated Ashgill Czech record contains Tritonialetes vacuolus, supporting presence within this bracket without demonstrating a Sandbian first occurrence."
+    },
+    {
+      "group_id": "G120",
+      "verdict": "accept",
+      "reason": "The dyads and tetrads are corroborated in Late Ordovician Czech assemblages, although the broad bracket does not establish their presence in the Sandbian."
+    },
+    {
+      "group_id": "G121",
+      "verdict": "accept",
+      "reason": "Vallatialetes aureolatus is retained in the curated Ashgill Czech assemblage and is consistent with the Hirnantian Kosov record."
+    },
+    {
+      "group_id": "G122",
+      "verdict": "accept",
+      "reason": "Tritonialetes vacuolus is corroborated in the Late Ordovician Kosov assemblage, supporting the Hirnantian occurrence."
+    },
+    {
+      "group_id": "G123",
+      "verdict": "doubtful",
+      "reason": "Ambitisporites dilutus is plausible in Silurian Essex, but the pooled Silurian assignment lacks a corroborated occurrence horizon."
+    },
+    {
+      "group_id": "G124",
+      "verdict": "doubtful",
+      "reason": "The broad Silurian bracket pools spores associated with younger Silurian assemblages and does not establish a pre-Wenlock Suffolk occurrence."
+    },
+    {
+      "group_id": "G125",
+      "verdict": "accept",
+      "reason": "Taylor's electron-microscopy study documents well-preserved Tetrahedraletes medinensis tetrads from the Upper Ordovician Drakes Formation of southern Ohio."
+    },
+    {
+      "group_id": "G126",
+      "verdict": "doubtful",
+      "reason": "The study's examined tetrads are Upper Ordovician, and this separate Llandovery Ohio assignment was not corroborated for the comparative Tetrahedraletes material."
+    },
+    {
+      "group_id": "G127",
+      "verdict": "accept",
+      "reason": "The Ohio dyad occurrence is corroborated by subsequent ultrastructural investigations of Lower Silurian material from the same region."
+    },
+    {
+      "group_id": "G128",
+      "verdict": "doubtful",
+      "reason": "The cited study examines Homerian–Pridoli Welsh assemblages and does not independently verify the comparative Artemopyra record as Llandovery Pennsylvania material."
+    },
+    {
+      "group_id": "G129",
+      "verdict": "doubtful",
+      "reason": "The informal hilate taxon comes from a study of younger Silurian Welsh assemblages, leaving its pooled Rhuddanian–Pridoli assignment insufficiently resolved."
+    },
+    {
+      "group_id": "G130",
+      "verdict": "accept",
+      "reason": "The Hanadir Shale cryptospore assemblage is a corroborated Darriwilian Saudi record supported by subsequent taxonomic and core studies."
+    },
+    {
+      "group_id": "G131",
+      "verdict": "doubtful",
+      "reason": "The study reports caving contamination in well cuttings, so these pooled cryptospore ranges require sample-specific confirmation before their older ages can be accepted ([author's abstract](https://myulg.academia.edu/Departments/Geology_Evolution_and_Diversity_Dynamics_EDDy_Lab/Documents))."
+    },
+    {
+      "group_id": "G132",
+      "verdict": "doubtful",
+      "reason": "Although the Ambitisporites identifications are plausible, caved cuttings and a pooled Katian–Telychian range do not securely date these particular reports ([author's abstract](https://myulg.academia.edu/Departments/Geology_Evolution_and_Diversity_Dynamics_EDDy_Lab/Documents))."
+    },
+    {
+      "group_id": "G133",
+      "verdict": "doubtful",
+      "reason": "The pooled Silurian age and documented caving contamination prevent this Nodospora report from establishing a securely dated early Silurian occurrence ([author's abstract](https://myulg.academia.edu/Departments/Geology_Evolution_and_Diversity_Dynamics_EDDy_Lab/Documents))."
+    },
+    {
+      "group_id": "G134",
+      "verdict": "accept",
+      "reason": "The Ohio dyads and enveloped dyads are corroborated by ultrastructural studies of Rhuddanian Centerville Formation material."
+    },
+    {
+      "group_id": "G135",
+      "verdict": "accept",
+      "reason": "Tetrahedraletes is consistent with the reported Llandovery Xiushan microfossil assemblage, independently of the disputed botanical interpretation of the associated macroscopic remains."
+    },
+    {
+      "group_id": "G136",
+      "verdict": "doubtful",
+      "reason": "Simple triletes are plausible in the Xiushan Formation, but the grouped Apiculiretusispora and other identifications lack sufficient corroboration for this Aeronian–Telychian assignment."
+    },
+    {
+      "group_id": "G137",
+      "verdict": "accept",
+      "reason": "The Appalachian Upper Ordovician–Llandovery Tetrahedraletes record is independently corroborated by the curated North American assemblages."
+    },
+    {
+      "group_id": "G138",
+      "verdict": "accept",
+      "reason": "The Turkish Late Ordovician enveloped-tetrad assemblage is retained in the curated Ashgill record, including the revised Velatitetras species."
+    },
+    {
+      "group_id": "G139",
+      "verdict": "accept",
+      "reason": "The comparative New York occurrence is corroborated by the accepted Llandovery record of Nodospora retimembrana, subsequently recombined as Velatitetras retimembrana."
+    },
+    {
+      "group_id": "G140",
+      "verdict": "accept",
+      "reason": "The Pennsylvania Llandovery cryptospore record independently corroborates the enveloped tetrads and dyads cited in this taxonomic comparison."
+    },
+    {
+      "group_id": "G141",
+      "verdict": "doubtful",
+      "reason": "Libyan Ambitisporites avitus is credible, but this in situ catalogue's pooled entry does not establish the particular dispersed-spore provenance or horizon."
+    },
+    {
+      "group_id": "G142",
+      "verdict": "accept",
+      "reason": "Velatitetras rugulata is retained in the curated Rhuddanian British record, supporting its presence within the assigned Llandovery interval."
+    },
+    {
+      "group_id": "G143",
+      "verdict": "accept",
+      "reason": "Both Segestrespora species are retained in the curated Rhuddanian British cryptospore assemblage."
+    },
+    {
+      "group_id": "G144",
+      "verdict": "accept",
+      "reason": "Ambitisporites dilutus supports an Aeronian Libyan true-trilete occurrence, while the accompanying vavrdovae form should be treated as a pseudotrilete cryptospore."
+    },
+    {
+      "group_id": "G145",
+      "verdict": "doubtful",
+      "reason": "Darriwilian Saudi tetrads are corroborated elsewhere, but this unspecified tetrad has not been securely linked to a documented specimen and horizon in the cited contribution."
+    },
+    {
+      "group_id": "G146",
+      "verdict": "accept",
+      "reason": "The study directly documents Ohio dyads from Upper Ordovician Preachersville and Rhuddanian Centerville samples ([original study](https://www.researchgate.net/publication/248295344_Ultrastructure_of_lower_Paleozoic_dyads_from_southern_Ohio_II_Dyadospora_murusattenuata_functional_and_evolutionary_considerations))."
+    },
+    {
+      "group_id": "G147",
+      "verdict": "doubtful",
+      "reason": "Libyan Llandovery Ambitisporites is credible, but this general treatment's entry lacks a verified link to its underlying locality and dated sample."
+    },
+    {
+      "group_id": "G148",
+      "verdict": "accept",
+      "reason": "The Xinjiang dyad, tetrad and monad assemblage is corroborated by the curated Ashgill regional record."
+    },
+    {
+      "group_id": "G149",
+      "verdict": "doubtful",
+      "reason": "The studied Welsh Borderland sporangia are Upper Silurian–Lower Devonian, and comparisons with older dispersed dyads do not establish this Shropshire age–taxon grouping."
+    },
+    {
+      "group_id": "G150",
+      "verdict": "accept",
+      "reason": "Tetrahedraletes occurs in the upper Los Azules assemblage, whose early Caradoc age is independently supported by conodonts and graptolites ([original report](https://bibliotecadigital.exactas.uba.ar/collection/paper/document/paper_00262803_v45_n3_p225_Ottone))."
+    },
+    {
+      "group_id": "G151",
+      "verdict": "doubtful",
+      "reason": "Llandovery cryptospores are corroborated in San Juan, but this particular Cheilotetras identification and Aeronian–Telychian occurrence were not independently confirmed."
+    },
+    {
+      "group_id": "G152",
+      "verdict": "accept",
+      "reason": "The curated Telychian Argentine record explicitly retains Laevolancis divellomedia from this study, supporting cryptospore presence within the assigned interval."
+    },
+    {
+      "group_id": "G153",
+      "verdict": "accept",
+      "reason": "The Laevolancis and Imperfectotriletes reports are corroborated by the detailed Saudi Llandovery borehole studies underlying this overview."
+    },
+    {
+      "group_id": "G154",
+      "verdict": "doubtful",
+      "reason": "An unnamed tetrad is plausible in Rhuddanian Saudi assemblages, but the label alone does not corroborate its identification or sampled horizon."
+    },
+    {
+      "group_id": "G155",
+      "verdict": "accept",
+      "reason": "The curated Nuayyim-2 assemblage supports Rhuddanian true triletes through Ambitisporites avitus, although the historical vavrdovae identification must remain a cryptospore."
+    },
+    {
+      "group_id": "G156",
+      "verdict": "accept",
+      "reason": "Nuayyim-2 contains a corroborated Rhuddanian cryptospore assemblage with dyads, tetrads and monads retained in the curated Saudi record."
+    },
+    {
+      "group_id": "G157",
+      "verdict": "accept",
+      "reason": "Ambitisporites avitus and A. dilutus are corroborated in Saudi Llandovery assemblages, supporting presence within this broader borehole interval."
+    },
+    {
+      "group_id": "G158",
+      "verdict": "accept",
+      "reason": "The listed hilate monad and enveloped-dyad groups are consistent with the corroborated Rhuddanian–Aeronian Saudi borehole assemblages."
+    },
+    {
+      "group_id": "G159",
+      "verdict": "accept",
+      "reason": "The dyads, tetrads and pseudotrilete monads are corroborated in the Saudi early Silurian record within this broader sampled interval."
+    },
+    {
+      "group_id": "G160",
+      "verdict": "accept",
+      "reason": "Segestrespora laevigata, Velatitetras laevigata and Pseudodyadospora laevigata are retained in the curated Rhuddanian Saudi assemblage."
+    },
+    {
+      "group_id": "G161",
+      "verdict": "accept",
+      "reason": "Archaeozonotriletes chulus is corroborated in Saudi Telychian assemblages within the assigned interval, without establishing its presence at the Aeronian lower bound."
+    },
+    {
+      "group_id": "G162",
+      "verdict": "accept",
+      "reason": "Imperfectotriletes vavrdovae is a corroborated Saudi Llandovery cryptospore and should remain outside the true-trilete category."
+    },
+    {
+      "group_id": "G163",
+      "verdict": "accept",
+      "reason": "Velatitetras anatoliensis supports cryptospore presence within the assigned Saudi interval, although the informal Hispanaediscus forms require their individual sampled ranges."
+    },
+    {
+      "group_id": "G164",
+      "verdict": "doubtful",
+      "reason": "Llandovery Paraná Tetrahedraletes is corroborated, but the review's pooled Katian–Telychian assignment does not securely associate these spores with its older bound."
+    },
+    {
+      "group_id": "G165",
+      "verdict": "doubtful",
+      "reason": "The anomalous Silurian Schizaeoisporites identification lacks specimen-level reassessment, so misidentification, contamination and database miscoding remain unresolved."
+    },
+    {
+      "group_id": "G166",
+      "verdict": "accept",
+      "reason": "The curated Irish Telychian assemblage explicitly retains Tetrahedraletes medinensis from this study, supporting cryptospore presence within the assigned interval."
+    },
+    {
+      "group_id": "G167",
+      "verdict": "doubtful",
+      "reason": "Late Ordovician Zhejiang cryptospores are credible, but these particular Stegambiquadrella and Nodospora burnhamensis identifications are not corroborated by the curated regional species list."
+    },
+    {
+      "group_id": "G168",
+      "verdict": "accept",
+      "reason": "The curated Zhejiang Ashgill–Llandovery record corroborates Tetrahedraletes, Dyadospora and the tetrad subsequently treated as Velatitetras retimembrana."
+    },
+    {
+      "group_id": "G169",
+      "verdict": "doubtful",
+      "reason": "The accepted Oostduinkerke cryptospore assemblage does not independently authenticate this mixed list of true-trilete claims, pseudotriletes and ornate taxa at the assigned age."
+    },
+    {
+      "group_id": "G170",
+      "verdict": "doubtful",
+      "reason": "Tritonialetes vacuolus is corroborated in Czech Ashgill assemblages, but its attribution to the Belgian borehole rather than comparative literature remains unverified."
+    },
+    {
+      "group_id": "G171",
+      "verdict": "accept",
+      "reason": "The Oostduinkerke cryptospore assemblage is retained as Ashgillian in the curated Belgian record and supports presence within the assigned interval."
+    },
+    {
+      "group_id": "G172",
+      "verdict": "accept",
+      "reason": "The curated Arisaig Telychian assemblage explicitly includes Ambitisporites dilutus, supporting a true-trilete occurrence within this broader range."
+    },
+    {
+      "group_id": "G173",
+      "verdict": "accept",
+      "reason": "Laevolancis divellomedia is explicitly retained in the curated Arisaig Telychian assemblage, with divellomedium representing an alternative spelling rather than another species."
+    },
+    {
+      "group_id": "G174",
+      "verdict": "doubtful",
+      "reason": "The triletes are documented at this age, but the sampled wells lie in the Parnaíba and Marajó basins rather than the stated Paraíba location ([original study](https://orbi.uliege.be/bitstream/2268/17261/1/Le%20Herisse%20et%20al%20%202001.pdf))."
+    },
+    {
+      "group_id": "G175",
+      "verdict": "doubtful",
+      "reason": "The cryptospore assemblage and age are corroborated, but Brazil(Paraiba) misrepresents the study's Parnaíba–Marajó provenance ([original study](https://orbi.uliege.be/bitstream/2268/17261/1/Le%20Herisse%20et%20al%20%202001.pdf))."
+    },
+    {
+      "group_id": "G176",
+      "verdict": "accept",
+      "reason": "The preliminary Rhuddanian Saudi Ambitisporites report is corroborated by the subsequent Nuayyim-2 study and should not be counted as an independent assemblage."
+    },
+    {
+      "group_id": "G177",
+      "verdict": "accept",
+      "reason": "The reported Rhuddanian dyads and tetrads are corroborated by the subsequent detailed Saudi borehole studies."
+    },
+    {
+      "group_id": "G178",
+      "verdict": "accept",
+      "reason": "The Paraguayan Llandovery cryptospore assemblage is retained in the curated regional record, supporting presence within the assigned interval."
+    },
+    {
+      "group_id": "G179",
+      "verdict": "accept",
+      "reason": "The curated Paraguayan record supports Llandovery Ambitisporites and Telychian Archaeozonotriletes within this interval, without placing all listed taxa in the Rhuddanian."
+    },
+    {
+      "group_id": "G180",
+      "verdict": "reject",
+      "reason": "The synthesis places its demonstrated Tetrahedraletes in the younger Los Azules Formation and does not report a Floian Salta occurrence ([source synthesis](https://insugeo.org.ar/publicaciones/docs/scg_16/15-Vergel.htm))."
+    },
+    {
+      "group_id": "G181",
+      "verdict": "accept",
+      "reason": "The synthesis explicitly documents Los Azules Tetrahedraletes in San Juan within this broad interval, although formation-wide ages must not be assigned to every specimen ([source synthesis](https://insugeo.org.ar/publicaciones/docs/scg_16/15-Vergel.htm))."
+    },
+    {
+      "group_id": "G182",
+      "verdict": "accept",
+      "reason": "Imperfectotriletes-bearing assemblages from the Salar del Rincón succession support cryptospore presence near the Ordovician–Silurian boundary within the assigned bracket ([source synthesis](https://insugeo.org.ar/publicaciones/docs/scg_16/15-Vergel.htm))."
+    },
+    {
+      "group_id": "G183",
+      "verdict": "accept",
+      "reason": "The cited Ohio dyad material is corroborated by Taylor's early Silurian ultrastructural records, although the monograph supplies a secondary report."
+    },
+    {
+      "group_id": "G184",
+      "verdict": "doubtful",
+      "reason": "This hemispheric compilation pools long-ranging and younger Silurian triletes without a specific locality–horizon association establishing the proposed early bound."
+    },
+    {
+      "group_id": "G185",
+      "verdict": "reject",
+      "reason": "The Floian La Rioja assignment is unsupported for these monads and appears to transfer an age from older marine-palynomorph sections to younger cryptospore records."
+    },
+    {
+      "group_id": "G186",
+      "verdict": "doubtful",
+      "reason": "Telychian Ambitisporites avitus is plausible, but its particular New Brunswick sample and age were not corroborated independently of the paper's younger spore assemblages."
+    },
+    {
+      "group_id": "G187",
+      "verdict": "doubtful",
+      "reason": "Tetrahedraletes medinensis is plausible in the Iranian succession, but the specific sample and its placement across the Llandovery–Wenlock boundary remain unverified."
+    },
+    {
+      "group_id": "G188",
+      "verdict": "doubtful",
+      "reason": "The review's younger mesofossils and comparisons with older dispersed dyads do not securely establish this particular Katian–Telychian Shropshire grouping."
+    },
+    {
+      "group_id": "G189",
+      "verdict": "doubtful",
+      "reason": "The monads are credible in Argentine boundary and Llandovery assemblages, but their placement specifically in Katian–Hirnantian San Juan beds remains uncorroborated."
+    }
+  ]
+}

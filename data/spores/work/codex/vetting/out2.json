@@ -1,0 +1,424 @@
+{
+  "items": [
+    {
+      "doc": "13611",
+      "verdict": "doubtful",
+      "in_wellman2013": "no",
+      "reason": "The Silurian Lycospora identification is inconsistent with the genus's accepted record, which begins much later; misidentification, contamination or an erroneous age association needs investigation. The remaining broadly identified spores do not independently establish a pre-Wenlock assemblage.",
+      "checked": "Input title, taxa and ages; Wellman 2013 reference list; [Bek's review of Lycospora](https://www.sciencedirect.com/science/article/pii/S0034666711002065)."
+    },
+    {
+      "doc": "13842",
+      "verdict": "accept",
+      "in_wellman2013": "yes",
+      "reason": "Abundant compact tetrahedral tetrads from the Soom Shale are credible cryptospores. The original latest Ordovician–earliest Silurian uncertainty does not undermine their inclusion within the target interval.",
+      "checked": "Wellman 2013 reference list and South African assemblages; [Gray et al. 1986 abstract](https://www.cambridge.org/core/journals/geological-magazine/article/age-of-the-cedarberg-formation-south-africa-and-early-land-plant-evolution/D8648F90B423D46FED56E9CE6E385BD4)."
+    },
+    {
+      "doc": "13954",
+      "verdict": "doubtful",
+      "in_wellman2013": "no",
+      "reason": "Nodospora-type cryptospore tetrads are credible in Appalachian Llandovery rocks, but this meeting abstract combines Llandovery and Wenlock material. The particular pre-Wenlock occurrence and its identification were not verified.",
+      "checked": "Input title, taxa and publication type; Wellman 2013 reference list and Llandovery USA assemblages; original abstract not read."
+    },
+    {
+      "doc": "14018",
+      "verdict": "doubtful",
+      "in_wellman2013": "no",
+      "reason": "Tetrahedraletes is plausible in Egyptian early Silurian sediments, but the genus alone cannot establish a Rhuddanian–Aeronian age. The original specimen documentation and independent dating were not verified.",
+      "checked": "Input title, taxa and ages; Wellman 2013 reference list; original treatment not read."
+    },
+    {
+      "doc": "14250",
+      "verdict": "doubtful",
+      "in_wellman2013": "no",
+      "reason": "Tetrahedraletes and Nodospora are credible early Silurian cryptospore morphologies. However, the short morphology contribution was not checked for specimen provenance or evidence supporting the database's Llandovery assignment.",
+      "checked": "Input title and taxa; Wellman 2013 reference list and Llandovery USA assemblages; original contribution not read."
+    },
+    {
+      "doc": "14611",
+      "verdict": "accept",
+      "in_wellman2013": "yes",
+      "reason": "The Norwegian Telychian cryptospore tetrads and simple Ambitisporites spores are credible. Occurrences assigned to the Sheinwoodian must remain separate from the pre-Wenlock records.",
+      "checked": "Wellman 2013 reference list; input stage-specific ranges; [Smelror 1987 author-hosted paper record](https://www.researchgate.net/publication/264006645_Llandovery_and_Wenlock_miospores_and_spore-like_microfossils_from_the_Ringerike_district_Norway)."
+    },
+    {
+      "doc": "14653",
+      "verdict": "doubtful",
+      "in_wellman2013": "no",
+      "reason": "The combined Silurian and Lochkovian borehole records do not demonstrate that Leiotriletes, Stenozonotriletes or Acanthotriletes occurred before the Wenlock. Their actual sample ages and identification require checking.",
+      "checked": "Input title, taxa and ages; Wellman 2013 reference list; original borehole account not read."
+    },
+    {
+      "doc": "15965",
+      "verdict": "doubtful",
+      "in_wellman2013": "no",
+      "reason": "Llandovery Ambitisporites is credible, but this textbook row also includes numerous younger Silurian–Devonian spores. The pooled taxa and age ranges cannot establish individual early occurrences.",
+      "checked": "Input title, taxa, locations and ages; Wellman 2013 reference list; textbook passages not read."
+    },
+    {
+      "doc": "16121",
+      "verdict": "accept",
+      "in_wellman2013": "no",
+      "reason": "The Libyan dyads and tetrads are accepted Late Ordovician–Llandovery records, although the listed Ambitisporites identifications require distinction from subsequently recognised pseudotrilete cryptospores. The supplied 1989 citation is absent literally; Wellman cites this chapter as Richardson 1988.",
+      "checked": "Wellman 2013 reference list and Libyan assemblages; [Steemans 1999 reference to the chapter as Richardson 1988](https://orbi.uliege.be/handle/2268/119800)."
+    },
+    {
+      "doc": "16168",
+      "verdict": "doubtful",
+      "in_wellman2013": "no",
+      "reason": "Ambitisporites is plausible in Silurian Pennsylvania, but this Nematothallus conference abstract does not provide a verified pre-Wenlock spore occurrence in the evidence checked. Its broad Silurian range cannot supply a precise occurrence age.",
+      "checked": "Input title, taxon and publication type; Wellman 2013 reference list; original abstract not read."
+    },
+    {
+      "doc": "16552",
+      "verdict": "doubtful",
+      "in_wellman2013": "no",
+      "reason": "Upper Ordovician Tetrahedraletes is credible, but the classification abstract's Illinois specimen provenance and age control were not verified. It should not supply an independent occurrence without that documentation.",
+      "checked": "Input title, taxon and publication type; Wellman 2013 reference list and Ashgill USA assemblages; original abstract not read."
+    },
+    {
+      "doc": "17238",
+      "verdict": "doubtful",
+      "in_wellman2013": "no",
+      "reason": "The study reports poorly preserved spores in a succession spanning the Llandovery–Wenlock boundary, with spores becoming common in the Riccarton Group. A securely identified pre-Wenlock Ambitisporites or Tetrahedraletes occurrence needs sample-level confirmation.",
+      "checked": "Wellman 2013 reference list; [White et al. abstract in the NERC repository](https://nora.nerc.ac.uk/id/eprint/19228/)."
+    },
+    {
+      "doc": "17444",
+      "verdict": "accept",
+      "in_wellman2013": "yes",
+      "reason": "The Paraguayan assemblage contains tetrads and rare dissociated trilete spores, with independent marine fossils supporting a Llandovery age. The reported mid-Telychian interpretation is credible.",
+      "checked": "Wellman 2013 reference list; [Gray et al. 1992 paper](https://www.geologiadelparaguay.com.py/A-new-record-of-early-silurian.pdf)."
+    },
+    {
+      "doc": "17957",
+      "verdict": "accept",
+      "in_wellman2013": "yes",
+      "reason": "The Late Ordovician dyads and tetrads are retained in the curated Czech assemblage. This does not validate every database trilete assignment: rugose forms appear under Rugosphaera in the revised list, and the ornate trilete claims require separate verification.",
+      "checked": "Wellman 2013 reference list and Ashgill Perunica assemblage; input taxon classifications."
+    },
+    {
+      "doc": "17964",
+      "verdict": "accept",
+      "in_wellman2013": "yes",
+      "reason": "The Late Ordovician cryptospore assemblage is credible and retained in the curated compilation. The database's Sandbian lower bound and assignments of Rugospora or incompletely marked monads to true triletes should not be accepted automatically.",
+      "checked": "Wellman 2013 reference list and Ashgill Perunica assemblage; input taxa and pooled age ranges."
+    },
+    {
+      "doc": "18080",
+      "verdict": "doubtful",
+      "in_wellman2013": "no",
+      "reason": "The broad Silurian interval is pooled with explicitly Ludlow–Pridoli records, including Synorisporites and Retusotriletes. Neither the summary abstract nor the database row establishes which listed spores actually predate the Wenlock.",
+      "checked": "Wellman 2013 reference list; [Molyneux 1991 abstract](https://popups.uliege.be/0037-9395/index.php?id=1397); input taxa and ages."
+    },
+    {
+      "doc": "18162",
+      "verdict": "reject",
+      "in_wellman2013": "no",
+      "reason": "The Darriwilian–Katian assignment conflates ages of components of the Clew Bay mélange with its younger microflora. The associated work identifies Silurian, specifically Wenlock, palynomorph-bearing sediments, so these spores cannot substantiate the encoded Ordovician occurrence.",
+      "checked": "Wellman 2013 reference list; [Williams et al. 1994 abstract](https://research.ucc.ie/en/publications/a-late-caledonian-melange-in-ireland-implications-for-tectonic-mo/); [Williams et al. 1996 abstract](https://pubs.geoscienceworld.org/gsl/jgs/article-abstract/153/5/771/112482/Implications-of-new-microfloral-evidence-from-the?redirectedFrom=PDF)."
+    },
+    {
+      "doc": "18412",
+      "verdict": "accept",
+      "in_wellman2013": "yes",
+      "reason": "Electron microscopy documents well-preserved permanent Tetrahedraletes medinensis tetrads from the Upper Ordovician Drakes Formation. This is credible evidence for the tetrads irrespective of uncertainty over their precise botanical affinity.",
+      "checked": "Wellman 2013 reference list and Ashgill USA assemblage; [Taylor 1995 author-uploaded paper](https://www.researchgate.net/publication/229241128_Ultrastructure_of_Tetrahedraletes_medinensis_Strother_and_Traverse_Wellman_and_Richardson_from_the_Upper_Ordovician_of_southern_Ohio)."
+    },
+    {
+      "doc": "18519",
+      "verdict": "accept",
+      "in_wellman2013": "yes",
+      "reason": "The Ohio early Silurian dyad record is consistent with the independently documented ultrastructural material. Acceptance concerns the cryptospores, not a definitive assignment of their producers to living liverwort groups.",
+      "checked": "Wellman 2013 Taylor 1995 citation; [Nature bibliographic record](https://www.nature.com/articles/373391b0); [Wellman and Gray 2000 review of Taylor's Ohio material](https://raymondltremblay.github.io/Lab_Botanica_Humacao/PDF/rstb.2000.0612.pdf)."
+    },
+    {
+      "doc": "18537",
+      "verdict": "doubtful",
+      "in_wellman2013": "yes",
+      "reason": "The new Welsh assemblages are Homerian–Pridoli, outside the target interval. Earlier Tetrahedraletes or Ambitisporites records in this row may represent comparisons or previously published ranges and need tracing to their original occurrences.",
+      "checked": "Wellman 2013 reference list and younger assemblage entries; input title and ages; [2026 review describing this study's Homerian cryptospores](https://www.sciencedirect.com/science/article/abs/pii/S0012825226000875)."
+    },
+    {
+      "doc": "18701",
+      "verdict": "accept",
+      "in_wellman2013": "yes",
+      "reason": "The Saudi Darriwilian cryptospores are an accepted Middle Ordovician record, subsequently corroborated by further core studies. The listed monads, dyads and tetrads provide no requirement for an anomalously early true-trilete occurrence.",
+      "checked": "Wellman 2013 reference list and Llanvirn Saudi assemblage; [subsequent Hanadir cryptospore study](https://www.sciencedirect.com/science/article/abs/pii/S0034666714001390)."
+    },
+    {
+      "doc": "18821",
+      "verdict": "doubtful",
+      "in_wellman2013": "yes",
+      "reason": "The Saudi spore identifications are credible, but Wellman's explicit use of this paper is for Wenlock assemblages. Its pooled Ordovician–Llandovery ranges do not establish pre-Wenlock occurrences of the numerous ornate Silurian–Devonian taxa.",
+      "checked": "Wellman 2013 reference list and Wenlock Saudi assemblage; input taxa and ages; original sample distributions not read."
+    },
+    {
+      "doc": "18976",
+      "verdict": "accept",
+      "in_wellman2013": "no",
+      "reason": "The Ohio Dyadospora, Pseudodyadospora and enveloped dyads are supported by ultrastructural investigations of Upper Ordovician–early Silurian material. Their occurrence is credible even though this particular 1996 citation is absent from the supplied list.",
+      "checked": "Wellman 2013 reference list; [Wellman and Gray 2000 discussion of Taylor 1996](https://raymondltremblay.github.io/Lab_Botanica_Humacao/PDF/rstb.2000.0612.pdf)."
+    },
+    {
+      "doc": "19046",
+      "verdict": "doubtful",
+      "in_wellman2013": "no",
+      "reason": "Early Silurian Tetrahedraletes and simple triletes are plausible, but the associated Apiculiretusispora identification and Aeronian–Telychian placement were not independently verified. The vascular-plant interpretation does not itself authenticate the listed dispersed-spore occurrences.",
+      "checked": "Wellman 2013 reference list; [Cai et al. 1996 publisher record](https://www.nature.com/articles/379592a0), whose full text was unavailable; input taxa and ages."
+    },
+    {
+      "doc": "19047",
+      "verdict": "accept",
+      "in_wellman2013": "yes",
+      "reason": "Tetrahedraletes across the Late Ordovician–Llandovery interval is an accepted record synthesised in this boundary review. Individual occurrences should retain their original locality and stratigraphic provenance.",
+      "checked": "Wellman 2013 reference list and Ordovician–Llandovery assemblages citing Gray 1988; input taxon."
+    },
+    {
+      "doc": "19092",
+      "verdict": "accept",
+      "in_wellman2013": "yes",
+      "reason": "The Turkish cryptospores and late Ashgill Ambitisporites avitus–dilutus morphon are credible, with the earliest triletes constrained by marine palynomorphs. The row's younger ornate taxa must not all be transferred into its Ordovician interval.",
+      "checked": "Wellman 2013 reference list and Turkish assemblages; [Steemans et al. 1996 abstract](https://www.sciencedirect.com/science/article/pii/0034666795001190)."
+    },
+    {
+      "doc": "19185",
+      "verdict": "reject",
+      "in_wellman2013": "yes",
+      "reason": "The paper assigns the Clew Bay palynomorph-bearing turbidites a Wenlock age, and Wellman likewise uses it under Wenlock Ireland. Its cryptospores are credible, but the encoded pre-Wenlock age extension is unsupported.",
+      "checked": "Wellman 2013 reference list and Wenlock Ireland entry; [Williams et al. 1996 abstract](https://pubs.geoscienceworld.org/gsl/jgs/article-abstract/153/5/771/112482/Implications-of-new-microfloral-evidence-from-the?redirectedFrom=PDF)."
+    },
+    {
+      "doc": "19212",
+      "verdict": "doubtful",
+      "in_wellman2013": "no",
+      "reason": "This catalogue concerns in situ spores and combines broad Silurian ranges with younger taxa such as Streelispora newportensis and Synorisporites downtonensis. The supplied row does not establish a particular pre-Wenlock dispersed-spore occurrence.",
+      "checked": "Input title, taxa and ages; Wellman 2013 reference list; original catalogue entries not read."
+    },
+    {
+      "doc": "19284",
+      "verdict": "accept",
+      "in_wellman2013": "yes",
+      "reason": "The review supports credible Llandovery cryptospores and simple Ambitisporites, and is used in Wellman's Rhuddanian compilation. Its much broader taxon list also includes younger spores and incorrectly classed dyad or tetrad descriptions that require individual treatment.",
+      "checked": "Wellman 2013 reference list and Rhuddanian UK entry citing Richardson 1996; input taxon classifications and ages."
+    },
+    {
+      "doc": "19344",
+      "verdict": "doubtful",
+      "in_wellman2013": "no",
+      "reason": "Darriwilian Saudi tetrads are independently credible, but the unspecified tetrad in this earlier general contribution was not linked to a documented sample or illustration. It should not be counted as a separately verified occurrence.",
+      "checked": "Input title and taxon; Wellman 2013 reference list; [later Saudi Middle Ordovician study](https://www.sciencedirect.com/science/article/abs/pii/S0035159817300612); original 1992 contribution not read."
+    },
+    {
+      "doc": "19443",
+      "verdict": "accept",
+      "in_wellman2013": "no",
+      "reason": "The study examines Dyadospora murusattenuata from the Upper Ordovician Preachersville Member and Rhuddanian Centerville Formation. Sample provenance and electron microscopy support genuine dyads at these ages.",
+      "checked": "Wellman 2013 reference list; [Taylor 1997 author-uploaded paper, including materials and methods](https://www.researchgate.net/publication/248295344_Ultrastructure_of_lower_Paleozoic_dyads_from_southern_Ohio_II_Dyadospora_murusattenuata_functional_and_evolutionary_considerations)."
+    },
+    {
+      "doc": "19547",
+      "verdict": "doubtful",
+      "in_wellman2013": "no",
+      "reason": "Llandovery Ambitisporites avitus is credible, but this general palynological treatment does not supply a verified locality–sample–age association in the material checked. Its Libyan and Colombian entries should be traced to primary records.",
+      "checked": "Input title, taxa, locations and ages; Wellman 2013 reference list and Libyan Llandovery assemblages; original treatment not read."
+    },
+    {
+      "doc": "19557",
+      "verdict": "accept",
+      "in_wellman2013": "yes",
+      "reason": "The Xinjiang dyad, tetrad and monad assemblage is retained in Wellman's Ashgill compilation. These are credible Late Ordovician cryptospores, without an anomalously early true-trilete claim.",
+      "checked": "Wellman 2013 reference list and Ashgill Tarim/Xinjiang assemblage; input taxa."
+    },
+    {
+      "doc": "20028",
+      "verdict": "reject",
+      "in_wellman2013": "no",
+      "reason": "Katian Lycospora is incompatible with the accepted history of that genus, whose earliest reviewed records are Upper Devonian. Reject this taxon–age association; the evidence checked does not determine whether it arose through identification error, contamination or database miscoding.",
+      "checked": "Input taxon and age; Wellman 2013 reference list; [Bek's review of Lycospora](https://www.sciencedirect.com/science/article/pii/S0034666711002065)."
+    },
+    {
+      "doc": "20245",
+      "verdict": "doubtful",
+      "in_wellman2013": "no",
+      "reason": "The studied sporangia and spore masses are Upper Silurian–Lower Devonian. Their credible Tetrahedraletes and Velatitetras do not by themselves substantiate the database's Ordovician–Llandovery occurrence, which requires tracing through the comparative discussion.",
+      "checked": "Input title, taxa and ages; Wellman 2013 reference list; [Edwards et al. 1999 article record](https://academic.oup.com/botlinnean/article/130/2/111/2567124); full text not retrieved."
+    },
+    {
+      "doc": "20323",
+      "verdict": "accept",
+      "in_wellman2013": "no",
+      "reason": "Tetrahedraletes from the Los Azules Formation is corroborated in the subsequent Argentine synthesis alongside conodont and graptolite evidence. The pooled formation-level material should not be assumed to have one Sandbian age without checking the sampled member.",
+      "checked": "Wellman 2013 reference list; [Vergel et al. 2002 discussion of Ottone et al. and Los Azules members](https://www.insugeo.org.ar/publicaciones/docs/scg_16/15-Vergel.htm)."
+    },
+    {
+      "doc": "20431",
+      "verdict": "accept",
+      "in_wellman2013": "yes",
+      "reason": "The Argentine Llandovery cryptospore record is credible; Wellman specifically retains Telychian Laevolancis divellomedia and Hispanaediscus verrucatus from this study. The pooled ranges do not establish that every listed trilete occurs as early as the Aeronian.",
+      "checked": "Wellman 2013 reference list and Telychian Argentina assemblage; input taxa and ages."
+    },
+    {
+      "doc": "20442",
+      "verdict": "accept",
+      "in_wellman2013": "no",
+      "reason": "Aeronian–Telychian Laevolancis and Imperfectotriletes are consistent with the detailed Saudi borehole studies retained by Wellman. Imperfectotriletes should remain a cryptospore, and this overview should not be counted independently of the underlying borehole records.",
+      "checked": "Input title and taxa; Wellman 2013 reference list and Saudi Llandovery assemblages based on Steemans et al. 2000 and Wellman et al. 2000."
+    },
+    {
+      "doc": "20445",
+      "verdict": "doubtful",
+      "in_wellman2013": "no",
+      "reason": "An unspecified Rhuddanian tetrad is plausible in Saudi Arabia, but 'Tetrad sp' provides insufficient morphological information to establish an embryophytic cryptospore. The particular specimen and its stratigraphic context were not checked.",
+      "checked": "Input title, taxon and age; Wellman 2013 reference list and Saudi Rhuddanian assemblages; original chapter not read."
+    },
+    {
+      "doc": "20447",
+      "verdict": "accept",
+      "in_wellman2013": "yes",
+      "reason": "The Nuayyim-2 cryptospore-rich assemblage and rare simple triletes are retained in the curated Rhuddanian Saudi record. Imperfectotriletes represents pseudotrilete cryptospores and must not be added to true-trilete diversity.",
+      "checked": "Wellman 2013 reference list and Rhuddanian Saudi assemblage; [Steemans et al. 2000 author-uploaded chapter record](https://www.researchgate.net/publication/233500798_Cryptospores_and_trilete_spores_from_the_Llandovery_Nuayyim-2_Borehole_Saudi_Arabia)."
+    },
+    {
+      "doc": "20448",
+      "verdict": "accept",
+      "in_wellman2013": "yes",
+      "reason": "The Hawiyah-151 dyads, tetrads, monads and simple Ambitisporites form part of the curated Saudi early Silurian record. The row also covers younger Silurian intervals, so individual species require their actual sampled ranges.",
+      "checked": "Wellman 2013 reference list and Rhuddanian Saudi assemblage; [Wellman et al. 2000 chapter record](https://www.researchgate.net/publication/233500934_Spore_assemblages_from_a_Silurian_sequence_in_Borehole_Hawiyah-151_from_Saudi_Arabia)."
+    },
+    {
+      "doc": "20509",
+      "verdict": "reject",
+      "in_wellman2013": "no",
+      "reason": "Rhuddanian Ancyrospora ancyrea is not a credible spore record: the species is documented from Devonian assemblages, whereas this paper concerns chitinozoans. A taxonomic or indexing conflation is the likely explanation, although the original erroneous entry was not located.",
+      "checked": "Wellman 2013 reference list; [Soufiane and Achab article abstract and taxonomy](https://www.chitinozoa.net/reference/8670); [Richardson's treatment of Ancyrospora ancyrea](https://palass.circle-interactive.co.uk/product/2013)."
+    },
+    {
+      "doc": "20618",
+      "verdict": "accept",
+      "in_wellman2013": "no",
+      "reason": "Early Silurian Paraná Basin Tetrahedraletes is corroborated by the curated Brazilian assemblages. The broad Katian–Telychian bracket does not independently demonstrate a Katian Brazilian occurrence, and this review is a secondary source.",
+      "checked": "Input title, taxon and ages; Wellman 2013 reference list and Brazilian Llandovery assemblages citing Gray et al. 1985."
+    },
+    {
+      "doc": "20909",
+      "verdict": "doubtful",
+      "in_wellman2013": "no",
+      "reason": "The Silurian Schizaeoisporites identification is highly anomalous compared with documented younger fern-spore assemblages. Without the original illustration or a later reassessment, contamination, misidentification and database miscoding cannot be distinguished.",
+      "checked": "Input title, taxon and ages; Wellman 2013 reference list; [Ji 1995 treatment of Schizaeoisporites in Cretaceous assemblages](https://www.jipb.net/EN/abstract/abstract23693.shtml); original Soviet account not read."
+    },
+    {
+      "doc": "21113",
+      "verdict": "accept",
+      "in_wellman2013": "yes",
+      "reason": "The Irish cryptospores are credible, with Tetrahedraletes medinensis explicitly retained under Telychian Ireland by Wellman. Reworked Ordovician marine palynomorphs in these successions should not be used to assign an Ordovician age to the cryptospores.",
+      "checked": "Wellman 2013 reference list and Telychian Ireland entry; [Maziane-Serraj et al. 2000 paper](https://www.vliz.be/imisdocs/publications/279500.pdf)."
+    },
+    {
+      "doc": "21120",
+      "verdict": "reject",
+      "in_wellman2013": "no",
+      "reason": "The Dapingian–Darriwilian true-trilete interpretation of Ambitisporites vavrdovae and Archaeozonotriletes is unsupported by the checked evidence. This review is not confirmation of such an early trilete occurrence; pseudotrilete cryptospores and database age associations require separation.",
+      "checked": "Wellman 2013 reference list, which contains Steemans et al. 2000 but not Steemans 2000; [Steemans 2000 abstract](https://orbi.uliege.be/handle/2268/13127); [Wang and Zhang's explanation of pseudotrilete Imperfectotriletes](https://pmc.ncbi.nlm.nih.gov/articles/PMC2842664/)."
+    },
+    {
+      "doc": "21208",
+      "verdict": "accept",
+      "in_wellman2013": "yes",
+      "reason": "The Zhejiang Late Ordovician–early Silurian cryptospores are retained in the curated regional assemblages. Some older Nodospora identifications are represented by revised nomenclature, including Velatitetras retimembrana.",
+      "checked": "Wellman 2013 reference list and Zhejiang Ashgill, Rhuddanian and Llandovery assemblages."
+    },
+    {
+      "doc": "21354",
+      "verdict": "accept",
+      "in_wellman2013": "yes",
+      "reason": "The Oostduinkerke cryptospore assemblage is accepted as Ashgillian and supersedes an earlier Cambrian interpretation of the borehole succession. This acceptance does not authenticate the database's Emphanisporites protophanus as an Ordovician true trilete.",
+      "checked": "Wellman 2013 reference list and Ashgill Belgium assemblage; [Steemans 2001 abstract](https://www.researchgate.net/publication/233500103_Ordovician_Cryptospores_from_the_Oostdunikerke_borehole_Brabant_Massif_Belgium)."
+    },
+    {
+      "doc": "21441",
+      "verdict": "accept",
+      "in_wellman2013": "yes",
+      "reason": "The Arisaig sequence provides credible Llandovery Tetrahedraletes, Laevolancis and simple Ambitisporites. Most ornate spores in the pooled row belong to the later Silurian diversification and must not be assigned wholesale to the Telychian.",
+      "checked": "Wellman 2013 reference list and Nova Scotia Llandovery assemblages; [Beck and Strother 2001 abstract](https://pubs.geoscienceworld.org/aasp/palynology/article-abstract/25/1/127/110435/SILURIAN-SPORES-AND-CRYPTOSPORES-FROM-THE-ARISAIG?redirectedFrom=fulltext)."
+    },
+    {
+      "doc": "21513",
+      "verdict": "accept",
+      "in_wellman2013": "yes",
+      "reason": "The Tianguá cryptospore assemblages and simple Ambitisporites are credible Llandovery records retained in the curated Brazilian compilation. The individual Aeronian versus Telychian assignments should follow the core-specific marine and terrestrial palynology.",
+      "checked": "Wellman 2013 reference list and Brazilian Llandovery assemblages; [Le Hérissé et al. 2001 paper](https://orbi.uliege.be/bitstream/2268/17261/1/Le%20Herisse%20et%20al%20%202001.pdf)."
+    },
+    {
+      "doc": "21575",
+      "verdict": "accept",
+      "in_wellman2013": "no",
+      "reason": "The Rhuddanian Saudi tetrads, dyads and Ambitisporites are corroborated by the subsequent Nuayyim-2 study from the same authors. Treat this conference contribution as preliminary reporting rather than an independent additional assemblage.",
+      "checked": "Input title and taxa; Wellman 2013 reference list and Rhuddanian Saudi assemblage; [subsequent Steemans et al. 2000 chapter record](https://www.researchgate.net/publication/233500798_Cryptospores_and_trilete_spores_from_the_Llandovery_Nuayyim-2_Borehole_Saudi_Arabia)."
+    },
+    {
+      "doc": "21598",
+      "verdict": "reject",
+      "in_wellman2013": "no",
+      "reason": "The encoded Tremadocian–Dapingian cryptospore age conflicts with the checked Leinster reappraisal, which places the relevant Kilcullen succession in the late Llandovery–early Wenlock and identifies its Ordovician palynomorphs as reworked. Reject the early Ordovician association rather than the existence of the cryptospores.",
+      "checked": "Input bibliography; Wellman 2013 reference list; [Brück and colleagues' Leinster reappraisal abstract](https://www.cambridge.org/core/journals/earth-and-environmental-science-transactions-of-royal-society-of-edinburgh/article/abs/new-palynological-data-from-the-leinster-lower-palaeozoic-massif-southeastern-ireland/A3C964B086952183ADB17C1FDE349F70), published under a fuller title and author list."
+    },
+    {
+      "doc": "21733",
+      "verdict": "accept",
+      "in_wellman2013": "yes",
+      "reason": "The Paraguayan Llandovery cryptospores and simple Ambitisporites are retained in the curated Rhuddanian assemblage. The broad Llandovery range should not substitute for the individual sample and zonal assignments.",
+      "checked": "Wellman 2013 reference list and Rhuddanian Paraguay assemblage; [Steemans and Pereira 2002 paper](https://www.geologiadelparaguay.com.py/Llandovery-Miospore.pdf)."
+    },
+    {
+      "doc": "21736",
+      "verdict": "accept",
+      "in_wellman2013": "no",
+      "reason": "The synthesis supports Tetrahedraletes from Los Azules and Imperfectotriletes-bearing assemblages near the Ordovician–Silurian boundary. Its Floian marine-palynomorph sections do not demonstrate Floian occurrences of these cryptospores.",
+      "checked": "Wellman 2013 reference list; [Vergel et al. 2002 full online synthesis](https://www.insugeo.org.ar/publicaciones/docs/scg_16/15-Vergel.htm)."
+    },
+    {
+      "doc": "21879",
+      "verdict": "doubtful",
+      "in_wellman2013": "no",
+      "reason": "The Ohio dyad material is consistent with accepted early Silurian ultrastructural studies. However, the monograph's pooled Silurian trilete taxa and age associations were not checked, so the row cannot establish all of them before the Wenlock.",
+      "checked": "Input title, taxa and ages; Wellman 2013 reference list; [Wellman and Gray 2000 review of the Ohio dyad evidence](https://raymondltremblay.github.io/Lab_Botanica_Humacao/PDF/rstb.2000.0612.pdf); monograph not read."
+    },
+    {
+      "doc": "21884",
+      "verdict": "doubtful",
+      "in_wellman2013": "no",
+      "reason": "The row combines Floian and younger Silurian intervals with cryptospore monads and distinctly younger ornate triletes. This suggests pooled age–taxon associations rather than a demonstrated Floian spore assemblage; the original passages are needed.",
+      "checked": "Input title, taxa and ages; Wellman 2013 reference list; bibliographic identification of the IANIGLA overview; relevant full-text passages not retrieved."
+    },
+    {
+      "doc": "21977",
+      "verdict": "doubtful",
+      "in_wellman2013": "no",
+      "reason": "Telychian Ambitisporites avitus is plausible, but the same row contains Lochkovian material and younger characteristic taxa such as Emphanisporites micrornatus and Streelispora newportensis. The pre-Wenlock occurrence requires the paper's sample-specific spore determinations.",
+      "checked": "Input title, taxa and ages; Wellman 2013 reference list; study bibliography and regional summaries; original spore tables not read."
+    },
+    {
+      "doc": "22002",
+      "verdict": "doubtful",
+      "in_wellman2013": "no",
+      "reason": "Tetrahedraletes medinensis is plausible in the Iranian Silurian succession, but its long range cannot distinguish Llandovery from Wenlock strata. The original sample identification and dating were not verified, leaving the pre-Wenlock assignment uncertain.",
+      "checked": "Input title, taxon and Rhuddanian–Sheinwoodian range; Wellman 2013 reference list; original 2003 occurrence documentation not read."
+    },
+    {
+      "doc": "22019",
+      "verdict": "doubtful",
+      "in_wellman2013": "no",
+      "reason": "The mesofossil evidence principally concerns younger Silurian–Devonian plants, whereas the early dispersed cryptospores provide comparative background. The listed Katian–Telychian taxa need tracing to their original dispersed occurrences before this review supplies dataset records.",
+      "checked": "Input title, taxa and ages; Wellman 2013 reference list; [Edwards and colleagues' later review distinguishing early dispersed spores from younger mesofossils](https://doi.org/10.1111/nph.12645); original 2000 passages not read."
+    },
+    {
+      "doc": "22139",
+      "verdict": "doubtful",
+      "in_wellman2013": "no",
+      "reason": "Late Ordovician Laevolancis and Imperfectotriletes are plausible, but the overview also contains younger Silurian Emphanisporites. The particular Argentine locality and horizon supporting the Katian–Hirnantian monad assignment were not verified, and this appears to duplicate the overview indexed as doc 21884.",
+      "checked": "Input title, taxa, ages and comparison with doc 21884; Wellman 2013 reference list and Argentine boundary assemblages; original occurrence passages not read."
+    }
+  ]
+}

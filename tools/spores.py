@@ -139,7 +139,7 @@ def cmd_build():
         sys.exit("fix crosswalks first")
     base, top = stages()
     con = duckdb.connect()
-    for name in ("age_names", "locations", "spore_genera", "wellman_series", "wellman_regions", "exclusions"):
+    for name in ("age_names", "locations", "spore_genera", "wellman_series", "wellman_regions", "exclusions", "doc_vetting", "group_vetting"):
         con.execute(f"create table {name} as select * from read_csv_auto('{XW / (name + '.csv')}', all_varchar=true)")
     con.execute("create table base as select * from (values " +
                 ", ".join(f"('{s}', {b}, {top.get(s, 'null')})" for s, b in base.items()) +
@@ -151,12 +151,17 @@ def cmd_build():
                g.spore_class, g.confidence as class_confidence, ao.ics_oldest, ay.ics_youngest,
                {RANK.format(c='ao.confidence')} as ra, {RANK.format(c='ay.confidence')} as ry,
                coalesce(s.TIDR in ('A', 'B', 'C', 'R'), false) as flag_reworked_or_caved,
-               coalesce(s.TSYN = 'X', false) as flag_synonym_list, coalesce(s.TNEW = 'X', false) as flag_new_taxon, false as flag_questionable
+               coalesce(s.TSYN = 'X', false) as flag_synonym_list, coalesce(s.TNEW = 'X', false) as flag_new_taxon, false as flag_questionable,
+               coalesce(gv.verdict, v.verdict, 'not-vetted') as vetting
         from {SPORES} s
         left join spore_genera g on g.genus = s.TGEN
         left join locations l on l.tloc = s.TLOC
         left join age_names ao on ao.age_name = s.oldage
         left join age_names ay on ay.age_name = coalesce(nullif(trim(s.youngage), ''), s.oldage)
+        left join doc_vetting v on v.doc = s.TDOC
+        left join group_vetting gv on gv.doc = s.TDOC and gv.ics_oldest = ao.ics_oldest and gv.ics_youngest = ay.ics_youngest
+             and gv.location = s.TLOC and gv.class_group = case when g.spore_class like 'cryptospore%' then 'cryptospore'
+                 when g.spore_class like 'trilete%' then 'trilete' else 'other' end
         where s.TMIC = 'S' and s.TDOC not in (select doc from exclusions)""")
     con.execute(f"""
         create table well as
@@ -164,7 +169,7 @@ def cmd_build():
                a.region_as_given || ' - ' || a.country || coalesce(', ' || nullif(a.locality, ''), '') as location,
                r.palaeo_unit, g.spore_class, g.confidence as class_confidence, w.ics_oldest, w.ics_youngest,
                {RANK.format(c='w.confidence')} as ra, {RANK.format(c='w.confidence')} as ry,
-               false, false, false, coalesce(a.questionable_affinity = 'True', false)
+               false, false, false, coalesce(a.questionable_affinity = 'True', false), 'curated' as vetting
         from read_csv_auto('{OUT / 'sources' / 'wellman2013_taxa.csv'}', all_varchar=true) t
         join read_csv_auto('{OUT / 'sources' / 'wellman2013_assemblages.csv'}', all_varchar=true) a using (entry_id)
         left join wellman_regions r on r.region_as_given = a.region_as_given
@@ -186,24 +191,26 @@ def cmd_build():
     con.execute(f"""
         create table fa as
         with x as (select o.*, g.class_group from occ o join ({groups}) g using (spore_class) where usable),
+        sets as (select 'strict' as record_set, * from x where vetting in ('accept', 'curated', 'not-vetted')
+                 union all select 'inclusive', * from x where vetting <> 'reject'),
         levels as (
-            select class_group, spore_class, palaeo_unit, record_id, source, youngest_top_ma, oldest_base_ma from x
-            union all select class_group, '(all)', palaeo_unit, record_id, source, youngest_top_ma, oldest_base_ma from x
-            union all select class_group, spore_class, '(all)', record_id, source, youngest_top_ma, oldest_base_ma from x
-            union all select class_group, '(all)', '(all)', record_id, source, youngest_top_ma, oldest_base_ma from x)
-        select class_group, spore_class, palaeo_unit,
+            select record_set, class_group, spore_class, palaeo_unit, record_id, source, youngest_top_ma, oldest_base_ma from sets
+            union all select record_set, class_group, '(all)', palaeo_unit, record_id, source, youngest_top_ma, oldest_base_ma from sets
+            union all select record_set, class_group, spore_class, '(all)', record_id, source, youngest_top_ma, oldest_base_ma from sets
+            union all select record_set, class_group, '(all)', '(all)', record_id, source, youngest_top_ma, oldest_base_ma from sets)
+        select record_set, class_group, spore_class, palaeo_unit,
                count(distinct source || ':' || record_id) as n_sources,
                max(youngest_top_ma) as fa_certain_ma,
                arg_max(source || ':' || record_id, youngest_top_ma) as fa_certain_record,
                max(oldest_base_ma) as fa_possible_ma,
                arg_max(source || ':' || record_id, oldest_base_ma) as fa_possible_record
-        from levels group by all order by class_group, spore_class, fa_certain_ma desc""")
+        from levels group by all order by record_set desc, class_group, spore_class, fa_certain_ma desc""")
     con.execute(f"copy fa to '{OUT / 'first_appearances.csv'}' (header)")
     con.execute(f"""
         copy (select o.spore_class, o.palaeo_unit, b.stage, b.base_ma,
                      count(distinct o.source || ':' || o.record_id) as n_sources
               from occ o join base b on b.base_ma > o.youngest_top_ma and coalesce(b.top_ma, 0) < o.oldest_base_ma
-              where o.usable group by all order by b.base_ma desc, o.spore_class, o.palaeo_unit)
+              where o.usable and o.vetting <> 'reject' group by all order by b.base_ma desc, o.spore_class, o.palaeo_unit)
         to '{OUT / 'presence_by_stage.csv'}' (header)""")
     for t, f in (("occ", "occurrences.csv"), ("fa", "first_appearances.csv")):
         print(f"wrote data/spores/{f} ({con.execute(f'select count(*) from {t}').fetchone()[0]} rows)")

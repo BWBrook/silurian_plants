@@ -47,10 +47,22 @@ The pilot is recorded in `docs/audits/2026-10-27-codex-pilot.md`.
 
 - **Rows are reports, not samples.** Palynodata rows are mentions in documents, so one assemblage
   can recur across papers. Count sources (documents or Wellman entries), not rows.
-- **The oldest records need vetting.** Raw first appearances of trilete spores are driven by early
-  Soviet and French reports of Ordovician triletes that later work doubts. `crosswalks/doc_vetting.csv`
-  (in progress) records a verdict for every document with usable records older than the Wenlock,
-  and first appearances should be read with it.
+- **The oldest records are vetted, in two passes.** Raw first appearances were driven by early
+  Soviet and French reports of Ordovician trilete spores that later work doubts.
+  - `crosswalks/doc_vetting.csv` gives a verdict for each of the 121 documents with usable records
+    older than the Wenlock: 53 accept, 54 doubtful, 14 reject.
+  - `crosswalks/group_vetting.csv` refines this to 189 record groups (one document × age range ×
+    location × class group): 91 accept, 86 doubtful, 12 reject. It catches cases such as a credible
+    synthesis whose Floian age for a cryptospore row is not demonstrated.
+  - Both passes are by Codex `gpt-6.1-sol`. Group verdicts override document verdicts.
+    `first_appearances.csv` gives a `strict` set (accepted, curated and unvetted records) and an
+    `inclusive` set (adding doubtful ones); rejected records are never used.
+- **First appearances in the strict set** (all regions):
+  - cryptospores certain by 458.2 Ma and possible from 469.4 Ma (Darriwilian);
+  - trilete spores certain by 445.2 Ma and possible from 458.2 Ma (Katian).
+  
+  The Dapingian cryptospores of Rubinstein et al. (2010) are absent because Palynodata stops in
+  2006. The post-2006 literature (MVD-B) is the next layer.
 - **Ages are crosswalked, not re-dated.** Each record carries the ICS stage range implied by its
   age names. Palynodata's own numeric ages are 2006-era and are not used.
 - **Spore classes are morphological.** Following Hooper et al. (2026), a trilete spore marks an
