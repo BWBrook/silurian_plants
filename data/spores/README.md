@@ -22,6 +22,7 @@ crosswalks, and `uv run tools/spores.py inputs` regenerates the work lists they 
 |---|---|
 | `occurrences.csv` | One row per taxon record from either source: genus and taxon, location, palaeogeographic unit, spore class, ICS stage range and ages, age confidence, flags (reworked or caved, synonym list, new taxon, questionable affinity), and `usable` |
 | `first_appearances.csv` | Per spore class (and class group) × palaeogeographic unit (and all units): number of sources; `fa_certain_ma`, the oldest age at which a record is certainly present (its youngest bound); `fa_possible_ma` (its oldest bound); and the records behind each |
+| `effort_by_stage.csv` | Palynological sampling effort: per palaeogeographic unit × stage, the number of Palynodata documents with datable records of any palynomorph, and how many report spores (excluding documents whose spores were rejected in vetting) |
 | `presence_by_stage.csv` | Number of distinct sources per spore class × unit × ICS stage, from usable records whose range overlaps the stage |
 
 `usable` means all of the following:
@@ -70,5 +71,11 @@ The pilot is recorded in `docs/audits/2026-10-27-codex-pilot.md`.
 - **Palaeogeographic units come from present-day locations** through terrane rules (Avalonia,
   Baltica, Laurentia, peri-Gondwanan Europe, Gondwanan regions, South China and others). No plate
   rotation is applied.
-- **Absence of spores is not yet represented.** Documents reporting marine palynomorphs but no
-  spores (sampling effort) are in `data/external/spores/` but not yet in this dataset.
+- **Sampling effort is represented, coarsely.** `effort_by_stage.csv` counts the palynological
+  documents per stage. The crosswalks were extended to the non-spore rows by Codex (147 locations,
+  188 age names, 2026-10-27).
+  - The share of documents reporting spores rises from 1–4% (Tremadocian–Sandbian) to about 8%
+    (Katian–Hirnantian), 15–18% (Llandovery–Wenlock), 22–25% (Ludlow–Pridoli) and 57–66% (Lochkovian–Emsian).
+  - Sampling stays at 400–700 documents per stage through the Ordovician and Silurian.
+  - Read this with care: a document counts in every stage its records overlap; marine studies
+    may not report land-derived spores; and facies composition changes through time.

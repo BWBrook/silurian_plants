@@ -212,6 +212,27 @@ def cmd_build():
               from occ o join base b on b.base_ma > o.youngest_top_ma and coalesce(b.top_ma, 0) < o.oldest_base_ma
               where o.usable and o.vetting <> 'reject' group by all order by b.base_ma desc, o.spore_class, o.palaeo_unit)
         to '{OUT / 'presence_by_stage.csv'}' (header)""")
+    con.execute(f"""
+        copy (
+          with r as (
+            select s.TDOC as doc,
+                   s.TMIC = 'S' and s.TDOC not in (select doc from doc_vetting where verdict = 'reject') as is_spore,
+                   l.palaeo_unit, bo.base_ma as oldest_base_ma, by_.top_ma as youngest_top_ma
+            from read_csv_auto('{PALY / 'palynodata_taxon_window.csv'}', all_varchar=true) s
+            join locations l on l.tloc = s.TLOC
+            join age_names ao on ao.age_name = s.oldage
+            join age_names ay on ay.age_name = coalesce(nullif(trim(s.youngage), ''), s.oldage)
+            join base bo on bo.stage = ao.ics_oldest join base by_ on by_.stage = ay.ics_youngest
+            where s.TDOC not in (select doc from exclusions)
+              and least({RANK.format(c='ao.confidence')}, {RANK.format(c='ay.confidence')}) >= 2
+              and bo.base_ma - by_.top_ma <= 25 and l.palaeo_unit not in ('unknown'))
+          select r.palaeo_unit, b.stage, b.base_ma, count(distinct r.doc) as n_docs,
+                 count(distinct r.doc) filter (where r.is_spore) as n_docs_with_spores,
+                 count(distinct r.doc) - count(distinct r.doc) filter (where r.is_spore) as n_docs_without_spores
+          from r join base b on b.base_ma > r.youngest_top_ma and coalesce(b.top_ma, 0) < r.oldest_base_ma
+          group by all order by b.base_ma desc, r.palaeo_unit)
+        to '{OUT / 'effort_by_stage.csv'}' (header)""")
+    print("wrote data/spores/effort_by_stage.csv")
     for t, f in (("occ", "occurrences.csv"), ("fa", "first_appearances.csv")):
         print(f"wrote data/spores/{f} ({con.execute(f'select count(*) from {t}').fetchone()[0]} rows)")
     print("wrote data/spores/presence_by_stage.csv")

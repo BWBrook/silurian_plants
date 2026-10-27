@@ -1,0 +1,101 @@
+{
+ "type": "object",
+ "additionalProperties": false,
+ "required": [
+  "items"
+ ],
+ "properties": {
+  "items": {
+   "type": "array",
+   "items": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+     "age_name",
+     "ics_oldest",
+     "ics_youngest",
+     "confidence",
+     "basis",
+     "source"
+    ],
+    "properties": {
+     "age_name": {
+      "type": "string"
+     },
+     "ics_oldest": {
+      "type": "string",
+      "enum": [
+       "Tournaisian",
+       "Famennian",
+       "Frasnian",
+       "Givetian",
+       "Eifelian",
+       "Emsian",
+       "Pragian",
+       "Lochkovian",
+       "Pridoli",
+       "Ludfordian",
+       "Gorstian",
+       "Homerian",
+       "Sheinwoodian",
+       "Telychian",
+       "Aeronian",
+       "Rhuddanian",
+       "Hirnantian",
+       "Katian",
+       "Sandbian",
+       "Darriwilian",
+       "Dapingian",
+       "Floian",
+       "Tremadocian",
+       ""
+      ]
+     },
+     "ics_youngest": {
+      "type": "string",
+      "enum": [
+       "Tournaisian",
+       "Famennian",
+       "Frasnian",
+       "Givetian",
+       "Eifelian",
+       "Emsian",
+       "Pragian",
+       "Lochkovian",
+       "Pridoli",
+       "Ludfordian",
+       "Gorstian",
+       "Homerian",
+       "Sheinwoodian",
+       "Telychian",
+       "Aeronian",
+       "Rhuddanian",
+       "Hirnantian",
+       "Katian",
+       "Sandbian",
+       "Darriwilian",
+       "Dapingian",
+       "Floian",
+       "Tremadocian",
+       ""
+      ]
+     },
+     "confidence": {
+      "type": "string",
+      "enum": [
+       "high",
+       "medium",
+       "low"
+      ]
+     },
+     "basis": {
+      "type": "string"
+     },
+     "source": {
+      "type": "string"
+     }
+    }
+   }
+  }
+ }
+}

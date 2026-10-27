@@ -1,0 +1,756 @@
+{
+  "items": [
+    {
+      "age_name": "Baoto",
+      "ics_oldest": "Sandbian",
+      "ics_youngest": "Katian",
+      "confidence": "low",
+      "basis": "Inferred Baota/Pagoda Formation spelling; identity tentative",
+      "source": "[ChinaLEX, Baota Formation](https://chinalex.geolex.org/formations/Baota%20Fm)"
+    },
+    {
+      "age_name": "Early Llandeilian",
+      "ics_oldest": "Darriwilian",
+      "ics_youngest": "Darriwilian",
+      "confidence": "medium",
+      "basis": "Subdivision of Llandeilian; retains existing Darriwilian correlation",
+      "source": "existing crosswalk analogue"
+    },
+    {
+      "age_name": "Mohawkian",
+      "ics_oldest": "Sandbian",
+      "ics_youngest": "Katian",
+      "confidence": "high",
+      "basis": "North American series spanning middle Sandbian to early Katian",
+      "source": "[Bergström et al. 2009, regional correlations](https://app.ingemmet.gob.pe/biblioteca/pdf/Reg-149.pdf)"
+    },
+    {
+      "age_name": "Rakvere",
+      "ics_oldest": "Katian",
+      "ics_youngest": "Katian",
+      "confidence": "high",
+      "basis": "Baltic regional stage within Katian",
+      "source": "[Estonian Ordovician chart 2023](https://stratigraafia.info/materjalid/eesti_strat/Ordovician_2023.pdf)"
+    },
+    {
+      "age_name": "Late Llandeilian",
+      "ics_oldest": "Darriwilian",
+      "ics_youngest": "Darriwilian",
+      "confidence": "medium",
+      "basis": "Subdivision of Llandeilian; retains existing Darriwilian correlation",
+      "source": "existing crosswalk analogue"
+    },
+    {
+      "age_name": "Rocklandian",
+      "ics_oldest": "Sandbian",
+      "ics_youngest": "Sandbian",
+      "confidence": "medium",
+      "basis": "North American regional interval within Sandbian",
+      "source": "[Macrostrat, Rocklandian](https://www.macrostrat.org/lex/intervals/165)"
+    },
+    {
+      "age_name": "Richmondian",
+      "ics_oldest": "Katian",
+      "ics_youngest": "Katian",
+      "confidence": "high",
+      "basis": "Upper Cincinnatian stage preceding Gamachian",
+      "source": "[USGS Ordovician correlation chart 2014](https://ngmdb.usgs.gov/Geolex/resources/docs/Ordovician_1925-2014.pdf)"
+    },
+    {
+      "age_name": "Uhaku",
+      "ics_oldest": "Darriwilian",
+      "ics_youngest": "Darriwilian",
+      "confidence": "high",
+      "basis": "Baltic regional stage within upper Darriwilian",
+      "source": "[Estonian Ordovician chart 2023](https://stratigraafia.info/materjalid/eesti_strat/Ordovician_2023.pdf)"
+    },
+    {
+      "age_name": "Late Sheinwoodian",
+      "ics_oldest": "Sheinwoodian",
+      "ics_youngest": "Sheinwoodian",
+      "confidence": "high",
+      "basis": "Subdivision of ICS Sheinwoodian",
+      "source": "ICS v2024/12 stage list (data/timescale.csv)"
+    },
+    {
+      "age_name": "Middle Cambrian",
+      "ics_oldest": "Tremadocian",
+      "ics_youngest": "Tremadocian",
+      "confidence": "low",
+      "basis": "Wholly older than table; clamped to Tremadocian",
+      "source": "existing crosswalk analogue"
+    },
+    {
+      "age_name": "Lasnamagi",
+      "ics_oldest": "Darriwilian",
+      "ics_youngest": "Darriwilian",
+      "confidence": "high",
+      "basis": "Lasnamägi regional stage within Darriwilian",
+      "source": "[Estonian Ordovician chart 2023](https://stratigraafia.info/materjalid/eesti_strat/Ordovician_2023.pdf)"
+    },
+    {
+      "age_name": "Proterozoic",
+      "ics_oldest": "Tremadocian",
+      "ics_youngest": "Tremadocian",
+      "confidence": "low",
+      "basis": "Wholly older than table; clamped to Tremadocian",
+      "source": "existing crosswalk analogue"
+    },
+    {
+      "age_name": "Oandu",
+      "ics_oldest": "Katian",
+      "ics_youngest": "Katian",
+      "confidence": "high",
+      "basis": "Baltic regional stage within lower Katian",
+      "source": "[Estonian Ordovician chart 2023](https://stratigraafia.info/materjalid/eesti_strat/Ordovician_2023.pdf)"
+    },
+    {
+      "age_name": "Harnagian",
+      "ics_oldest": "Sandbian",
+      "ics_youngest": "Sandbian",
+      "confidence": "high",
+      "basis": "Burrellian substage below approximate Katian boundary",
+      "source": "[Cocks 2010, Caradoc regional correlation](https://onlinelibrary.wiley.com/doi/10.1111/j.1475-4983.2010.00984.x)"
+    },
+    {
+      "age_name": "Cincinnatian",
+      "ics_oldest": "Katian",
+      "ics_youngest": "Hirnantian",
+      "confidence": "high",
+      "basis": "Edenian through Gamachian regional series",
+      "source": "[Bergström et al. 2009, regional correlations](https://app.ingemmet.gob.pe/biblioteca/pdf/Reg-149.pdf)"
+    },
+    {
+      "age_name": "Early Cincinnatian",
+      "ics_oldest": "Katian",
+      "ics_youngest": "Katian",
+      "confidence": "medium",
+      "basis": "Lower Cincinnatian, Edenian and adjacent Katian strata",
+      "source": "[Bergström et al. 2009, regional correlations](https://app.ingemmet.gob.pe/biblioteca/pdf/Reg-149.pdf)"
+    },
+    {
+      "age_name": "Rawtheyan",
+      "ics_oldest": "Katian",
+      "ics_youngest": "Katian",
+      "confidence": "high",
+      "basis": "Pre-Hirnantian upper Ashgill stage",
+      "source": "[Molyneux et al. 2023, British Ordovician correlations](https://nora.nerc.ac.uk/id/eprint/533834/1/11_gslspecpub2022-235.pdf)"
+    },
+    {
+      "age_name": "Late Champlainian",
+      "ics_oldest": "Sandbian",
+      "ics_youngest": "Katian",
+      "confidence": "medium",
+      "basis": "Upper Champlainian taken as Trentonian; historical scope varies",
+      "source": "[USGS Ordovician correlation chart 2014](https://ngmdb.usgs.gov/Geolex/resources/docs/Ordovician_1925-2014.pdf)"
+    },
+    {
+      "age_name": "Edenian",
+      "ics_oldest": "Katian",
+      "ics_youngest": "Katian",
+      "confidence": "high",
+      "basis": "Basal Cincinnatian regional stage",
+      "source": "[USGS Ordovician correlation chart 2014](https://ngmdb.usgs.gov/Geolex/resources/docs/Ordovician_1925-2014.pdf)"
+    },
+    {
+      "age_name": "Idavere",
+      "ics_oldest": "Sandbian",
+      "ics_youngest": "Sandbian",
+      "confidence": "high",
+      "basis": "Lower Haljala substage within Sandbian",
+      "source": "[Geocollections, Idavere Substage](https://geoloogia.info/en/stratigraphy/25)"
+    },
+    {
+      "age_name": "Late Precambrian",
+      "ics_oldest": "Tremadocian",
+      "ics_youngest": "Tremadocian",
+      "confidence": "low",
+      "basis": "Wholly older than table; clamped to Tremadocian",
+      "source": "existing crosswalk analogue"
+    },
+    {
+      "age_name": "Late Hirnantian",
+      "ics_oldest": "Hirnantian",
+      "ics_youngest": "Hirnantian",
+      "confidence": "high",
+      "basis": "Subdivision of ICS Hirnantian",
+      "source": "ICS v2024/12 stage list (data/timescale.csv)"
+    },
+    {
+      "age_name": "Kunda",
+      "ics_oldest": "Darriwilian",
+      "ics_youngest": "Darriwilian",
+      "confidence": "high",
+      "basis": "Baltic regional stage within lower Darriwilian",
+      "source": "[Estonian Ordovician chart 2023](https://stratigraafia.info/materjalid/eesti_strat/Ordovician_2023.pdf)"
+    },
+    {
+      "age_name": "Middle Llandeilian",
+      "ics_oldest": "Darriwilian",
+      "ics_youngest": "Darriwilian",
+      "confidence": "medium",
+      "basis": "Subdivision of Llandeilian; retains existing Darriwilian correlation",
+      "source": "existing crosswalk analogue"
+    },
+    {
+      "age_name": "Keila",
+      "ics_oldest": "Sandbian",
+      "ics_youngest": "Katian",
+      "confidence": "medium",
+      "basis": "Baltic stage crosses Sandbian–Katian boundary near its base",
+      "source": "[Bergström et al. 2009, regional correlations](https://app.ingemmet.gob.pe/biblioteca/pdf/Reg-149.pdf)"
+    },
+    {
+      "age_name": "Late Volkov",
+      "ics_oldest": "Dapingian",
+      "ics_youngest": "Darriwilian",
+      "confidence": "medium",
+      "basis": "Volkhov spelling variant; upper stage crosses Darriwilian base",
+      "source": "[Bergström et al. 2009, regional correlations](https://app.ingemmet.gob.pe/biblioteca/pdf/Reg-149.pdf)"
+    },
+    {
+      "age_name": "Middle Rhuddanian",
+      "ics_oldest": "Rhuddanian",
+      "ics_youngest": "Rhuddanian",
+      "confidence": "high",
+      "basis": "Subdivision of ICS Rhuddanian",
+      "source": "ICS v2024/12 stage list (data/timescale.csv)"
+    },
+    {
+      "age_name": "Volkhov",
+      "ics_oldest": "Dapingian",
+      "ics_youngest": "Darriwilian",
+      "confidence": "high",
+      "basis": "Baltic stage includes Dapingian and earliest Darriwilian",
+      "source": "[Bergström et al. 2009, regional correlations](https://app.ingemmet.gob.pe/biblioteca/pdf/Reg-149.pdf)"
+    },
+    {
+      "age_name": "Idwian",
+      "ics_oldest": "Rhuddanian",
+      "ics_youngest": "Aeronian",
+      "confidence": "low",
+      "basis": "Idwian base below Aeronian; follows Middle Llandoverian analogue",
+      "source": "existing crosswalk analogue"
+    },
+    {
+      "age_name": "Nabala",
+      "ics_oldest": "Katian",
+      "ics_youngest": "Katian",
+      "confidence": "high",
+      "basis": "Baltic regional stage within Katian",
+      "source": "[Estonian Ordovician chart 2023](https://stratigraafia.info/materjalid/eesti_strat/Ordovician_2023.pdf)"
+    },
+    {
+      "age_name": "Early Kunda",
+      "ics_oldest": "Darriwilian",
+      "ics_youngest": "Darriwilian",
+      "confidence": "high",
+      "basis": "Lower subdivision of Kunda regional stage",
+      "source": "[Estonian Ordovician chart 2023](https://stratigraafia.info/materjalid/eesti_strat/Ordovician_2023.pdf)"
+    },
+    {
+      "age_name": "Siedlce",
+      "ics_oldest": "Ludfordian",
+      "ics_youngest": "Pridoli",
+      "confidence": "medium",
+      "basis": "Polish regional series includes upper Ludlow and lower Pridoli",
+      "source": "[Modliński and Szymański 2001, Polish Silurian correlations](https://gq.pgi.gov.pl/article/download/7980/pdf_118/0)"
+    },
+    {
+      "age_name": "Middle Llanvirnian",
+      "ics_oldest": "Darriwilian",
+      "ics_youngest": "Darriwilian",
+      "confidence": "medium",
+      "basis": "Subdivision of Llanvirn; retains existing Darriwilian correlation",
+      "source": "existing crosswalk analogue"
+    },
+    {
+      "age_name": "Late Kukruse",
+      "ics_oldest": "Sandbian",
+      "ics_youngest": "Sandbian",
+      "confidence": "high",
+      "basis": "Upper subdivision of Kukruse regional stage",
+      "source": "[Estonian Ordovician chart 2023](https://stratigraafia.info/materjalid/eesti_strat/Ordovician_2023.pdf)"
+    },
+    {
+      "age_name": "Vormsi",
+      "ics_oldest": "Katian",
+      "ics_youngest": "Katian",
+      "confidence": "high",
+      "basis": "Baltic regional stage within upper Katian",
+      "source": "[Estonian Ordovician chart 2023](https://stratigraafia.info/materjalid/eesti_strat/Ordovician_2023.pdf)"
+    },
+    {
+      "age_name": "Pushgillian",
+      "ics_oldest": "Katian",
+      "ics_youngest": "Katian",
+      "confidence": "medium",
+      "basis": "Spelling variant of Pusgillian, basal Ashgill",
+      "source": "[Molyneux et al. 2023, British Ordovician correlations](https://nora.nerc.ac.uk/id/eprint/533834/1/11_gslspecpub2022-235.pdf)"
+    },
+    {
+      "age_name": "Early Onnian",
+      "ics_oldest": "Katian",
+      "ics_youngest": "Katian",
+      "confidence": "high",
+      "basis": "Subdivision of Onnian, upper Streffordian",
+      "source": "existing crosswalk analogue"
+    },
+    {
+      "age_name": "Gamachian",
+      "ics_oldest": "Hirnantian",
+      "ics_youngest": "Hirnantian",
+      "confidence": "high",
+      "basis": "Ellis Bay regional stage; Hirnantian correlation reaffirmed",
+      "source": "[Zimmt et al. 2024, Ellis Bay stratigraphy](https://finneganlab.org/wp-content/uploads/2024/08/zimmt-et-al-2024.pdf)"
+    },
+    {
+      "age_name": "Late Whitcliffian",
+      "ics_oldest": "Ludfordian",
+      "ics_youngest": "Ludfordian",
+      "confidence": "medium",
+      "basis": "Upper subdivision of Whitcliffian, upper Ludlow",
+      "source": "existing crosswalk analogue"
+    },
+    {
+      "age_name": "Vendian",
+      "ics_oldest": "Tremadocian",
+      "ics_youngest": "Tremadocian",
+      "confidence": "low",
+      "basis": "Terminal Precambrian unit; wholly older, clamped to Tremadocian",
+      "source": "existing crosswalk analogue"
+    },
+    {
+      "age_name": "Late Idavere",
+      "ics_oldest": "Sandbian",
+      "ics_youngest": "Sandbian",
+      "confidence": "high",
+      "basis": "Upper subdivision of Idavere substage",
+      "source": "[Geocollections, Idavere Substage](https://geoloogia.info/en/stratigraphy/25)"
+    },
+    {
+      "age_name": "Kukruse",
+      "ics_oldest": "Sandbian",
+      "ics_youngest": "Sandbian",
+      "confidence": "high",
+      "basis": "Baltic regional stage at base of Upper Ordovician",
+      "source": "[Estonian Ordovician chart 2023](https://stratigraafia.info/materjalid/eesti_strat/Ordovician_2023.pdf)"
+    },
+    {
+      "age_name": "Actonian",
+      "ics_oldest": "Katian",
+      "ics_youngest": "Katian",
+      "confidence": "high",
+      "basis": "Lower Streffordian substage within Katian",
+      "source": "[Cocks 2010, Caradoc regional correlation](https://onlinelibrary.wiley.com/doi/10.1111/j.1475-4983.2010.00984.x)"
+    },
+    {
+      "age_name": "Whitlandian",
+      "ics_oldest": "Floian",
+      "ics_youngest": "Floian",
+      "confidence": "medium",
+      "basis": "Follows existing Middle Arenigian correlation convention",
+      "source": "existing crosswalk analogue"
+    },
+    {
+      "age_name": "Pirgu",
+      "ics_oldest": "Katian",
+      "ics_youngest": "Katian",
+      "confidence": "high",
+      "basis": "Baltic regional stage immediately below Porkuni/Hirnantian",
+      "source": "[Estonian Ordovician chart 2023](https://stratigraafia.info/materjalid/eesti_strat/Ordovician_2023.pdf)"
+    },
+    {
+      "age_name": "Johvi",
+      "ics_oldest": "Sandbian",
+      "ics_youngest": "Sandbian",
+      "confidence": "high",
+      "basis": "Jõhvi, upper Haljala substage",
+      "source": "[Geology of Estonia, Haljala subdivisions](https://geoloogia.info/geology/text.html); [Geocollections, Haljala Stage](https://geoloogia.info/en/stratigraphy/24)"
+    },
+    {
+      "age_name": "Early Gamachian",
+      "ics_oldest": "Hirnantian",
+      "ics_youngest": "Hirnantian",
+      "confidence": "medium",
+      "basis": "Lower Gamachian within Hirnantian under revised Ellis Bay correlation",
+      "source": "[Zimmt et al. 2024, Ellis Bay stratigraphy](https://finneganlab.org/wp-content/uploads/2024/08/zimmt-et-al-2024.pdf)"
+    },
+    {
+      "age_name": "Blackriveran",
+      "ics_oldest": "Sandbian",
+      "ics_youngest": "Sandbian",
+      "confidence": "medium",
+      "basis": "Traditional Blackriveran corresponds to Turinian Sandbian interval",
+      "source": "[Brett et al. 2018, Kentucky Ordovician field guide](https://www.igcp653.org/wp-content/uploads/2020/05/Brett_et_al_2018_The_classic_Upper_Ordovician_stratigraphy_and_paleontology_of_the_eastern_Cincinnati_Arch.pdf)"
+    },
+    {
+      "age_name": "Middle Paleozoic",
+      "ics_oldest": "",
+      "ics_youngest": "",
+      "confidence": "low",
+      "basis": "Informal interval with inconsistent boundaries; too broad to assign",
+      "source": "none checked"
+    },
+    {
+      "age_name": "Late Costonian",
+      "ics_oldest": "Sandbian",
+      "ics_youngest": "Sandbian",
+      "confidence": "high",
+      "basis": "Upper subdivision of Aurelucian Costonian substage",
+      "source": "[Cocks 2010, Caradoc regional correlation](https://onlinelibrary.wiley.com/doi/10.1111/j.1475-4983.2010.00984.x)"
+    },
+    {
+      "age_name": "Late Richmondian",
+      "ics_oldest": "Katian",
+      "ics_youngest": "Katian",
+      "confidence": "high",
+      "basis": "Upper subdivision of Richmondian, below Gamachian",
+      "source": "[USGS Ordovician correlation chart 2014](https://ngmdb.usgs.gov/Geolex/resources/docs/Ordovician_1925-2014.pdf)"
+    },
+    {
+      "age_name": "Middle Tarannon",
+      "ics_oldest": "Telychian",
+      "ics_youngest": "Telychian",
+      "confidence": "low",
+      "basis": "Follows existing Tarannon correlation; subdivision unverified",
+      "source": "existing crosswalk analogue"
+    },
+    {
+      "age_name": "Middle Clintonian",
+      "ics_oldest": "Telychian",
+      "ics_youngest": "Sheinwoodian",
+      "confidence": "low",
+      "basis": "Subdivision uncalibrated; retain existing Clintonian parent range",
+      "source": "existing crosswalk analogue"
+    },
+    {
+      "age_name": "Leintwardinian",
+      "ics_oldest": "Gorstian",
+      "ics_youngest": "Ludfordian",
+      "confidence": "low",
+      "basis": "Retains boundary-straddling interpretation in Late Leintwardinian analogue",
+      "source": "existing crosswalk analogue"
+    },
+    {
+      "age_name": "Early Keila",
+      "ics_oldest": "Sandbian",
+      "ics_youngest": "Katian",
+      "confidence": "medium",
+      "basis": "Keila crosses Katian base near its base; early subdivision unresolved",
+      "source": "[Bergström et al. 2009, regional correlations](https://app.ingemmet.gob.pe/biblioteca/pdf/Reg-149.pdf)"
+    },
+    {
+      "age_name": "Costonian",
+      "ics_oldest": "Sandbian",
+      "ics_youngest": "Sandbian",
+      "confidence": "high",
+      "basis": "Aurelucian substage within Sandbian",
+      "source": "[Cocks 2010, Caradoc regional correlation](https://onlinelibrary.wiley.com/doi/10.1111/j.1475-4983.2010.00984.x)"
+    },
+    {
+      "age_name": "Early Proterozoic",
+      "ics_oldest": "Tremadocian",
+      "ics_youngest": "Tremadocian",
+      "confidence": "low",
+      "basis": "Wholly older than table; clamped to Tremadocian",
+      "source": "existing crosswalk analogue"
+    },
+    {
+      "age_name": "Late Clintonian",
+      "ics_oldest": "Telychian",
+      "ics_youngest": "Sheinwoodian",
+      "confidence": "low",
+      "basis": "Subdivision uncalibrated; retain existing Clintonian parent range",
+      "source": "existing crosswalk analogue"
+    },
+    {
+      "age_name": "Early Edenian",
+      "ics_oldest": "Katian",
+      "ics_youngest": "Katian",
+      "confidence": "high",
+      "basis": "Lower subdivision of basal Cincinnatian stage",
+      "source": "[USGS Ordovician correlation chart 2014](https://ngmdb.usgs.gov/Geolex/resources/docs/Ordovician_1925-2014.pdf)"
+    },
+    {
+      "age_name": "Early Pushgillian",
+      "ics_oldest": "Katian",
+      "ics_youngest": "Katian",
+      "confidence": "medium",
+      "basis": "Lower Pusgillian, basal Ashgill",
+      "source": "[Molyneux et al. 2023, British Ordovician correlations](https://nora.nerc.ac.uk/id/eprint/533834/1/11_gslspecpub2022-235.pdf)"
+    },
+    {
+      "age_name": "Cautleyan",
+      "ics_oldest": "Katian",
+      "ics_youngest": "Katian",
+      "confidence": "high",
+      "basis": "Pre-Hirnantian Ashgill stage",
+      "source": "[Molyneux et al. 2023, British Ordovician correlations](https://nora.nerc.ac.uk/id/eprint/533834/1/11_gslspecpub2022-235.pdf)"
+    },
+    {
+      "age_name": "Early Soudleyan",
+      "ics_oldest": "Sandbian",
+      "ics_youngest": "Sandbian",
+      "confidence": "high",
+      "basis": "Subdivision of Soudleyan within Burrellian",
+      "source": "existing crosswalk analogue"
+    },
+    {
+      "age_name": "Late Paleozoic",
+      "ics_oldest": "Tournaisian",
+      "ics_youngest": "Tournaisian",
+      "confidence": "low",
+      "basis": "Upper Palaeozoic extends beyond table; clamped to Tournaisian",
+      "source": "existing crosswalk analogue"
+    },
+    {
+      "age_name": "Late Marshbrookian",
+      "ics_oldest": "Katian",
+      "ics_youngest": "Katian",
+      "confidence": "medium",
+      "basis": "Upper subdivision of Cheneyan Marshbrookian substage",
+      "source": "[Cocks 2010, Caradoc regional correlation](https://onlinelibrary.wiley.com/doi/10.1111/j.1475-4983.2010.00984.x)"
+    },
+    {
+      "age_name": "Latorp",
+      "ics_oldest": "Tremadocian",
+      "ics_youngest": "Floian",
+      "confidence": "medium",
+      "basis": "Obsolete unit combines Hunneberg and Billingen; includes latest Tremadocian",
+      "source": "[Geology of Estonia, Latorp subdivisions](https://geoloogia.info/geology/text.html); [Northern Estonia magnetostratigraphy study](https://academic.oup.com/gji/article/180/1/147/597213)"
+    },
+    {
+      "age_name": "Early Whitcliffian",
+      "ics_oldest": "Ludfordian",
+      "ics_youngest": "Ludfordian",
+      "confidence": "medium",
+      "basis": "Lower subdivision of Whitcliffian, upper Ludlow",
+      "source": "existing crosswalk analogue"
+    },
+    {
+      "age_name": "Skiddavian",
+      "ics_oldest": "Floian",
+      "ics_youngest": "Darriwilian",
+      "confidence": "medium",
+      "basis": "Palynodata gives the Arenigian span; retains existing Arenig correlation",
+      "source": "existing crosswalk analogue"
+    },
+    {
+      "age_name": "Late Bringewoodian",
+      "ics_oldest": "Gorstian",
+      "ics_youngest": "Gorstian",
+      "confidence": "medium",
+      "basis": "Subdivision of Bringewoodian within Gorstian",
+      "source": "existing crosswalk analogue"
+    },
+    {
+      "age_name": "Trentonian",
+      "ics_oldest": "Sandbian",
+      "ics_youngest": "Katian",
+      "confidence": "medium",
+      "basis": "Historical Trentonian straddles Sandbian–Katian boundary",
+      "source": "[USGS Ordovician correlation chart 2014](https://ngmdb.usgs.gov/Geolex/resources/docs/Ordovician_1925-2014.pdf)"
+    },
+    {
+      "age_name": "Late Soudleyan",
+      "ics_oldest": "Sandbian",
+      "ics_youngest": "Sandbian",
+      "confidence": "high",
+      "basis": "Subdivision of Soudleyan within Burrellian",
+      "source": "existing crosswalk analogue"
+    },
+    {
+      "age_name": "Billingen",
+      "ics_oldest": "Floian",
+      "ics_youngest": "Floian",
+      "confidence": "high",
+      "basis": "Baltic regional stage below Volkhov/Dapingian boundary",
+      "source": "[Estonian Ordovician chart 2023](https://stratigraafia.info/materjalid/eesti_strat/Ordovician_2023.pdf)"
+    },
+    {
+      "age_name": "Late Chazyan",
+      "ics_oldest": "Darriwilian",
+      "ics_youngest": "Sandbian",
+      "confidence": "medium",
+      "basis": "Upper Chazyan; retain parent envelope across basal Sandbian",
+      "source": "[Bergström et al. 2009, regional correlations](https://app.ingemmet.gob.pe/biblioteca/pdf/Reg-149.pdf)"
+    },
+    {
+      "age_name": "Moridunian",
+      "ics_oldest": "Floian",
+      "ics_youngest": "Floian",
+      "confidence": "medium",
+      "basis": "Follows existing Early Arenigian correlation convention",
+      "source": "existing crosswalk analogue"
+    },
+    {
+      "age_name": "Middle Eltonian",
+      "ics_oldest": "Gorstian",
+      "ics_youngest": "Gorstian",
+      "confidence": "medium",
+      "basis": "Subdivision of Eltonian within Gorstian",
+      "source": "existing crosswalk analogue"
+    },
+    {
+      "age_name": "Late Niagaran",
+      "ics_oldest": "Sheinwoodian",
+      "ics_youngest": "Gorstian",
+      "confidence": "low",
+      "basis": "Approximated by Lockport interval; informal subdivision and upper limit uncertain",
+      "source": "[Cramer et al. 2011, North American Silurian correlations](https://bpb-us-w2.wpmucdn.com/u.osu.edu/dist/f/94/files/2014/05/Cramer-et-al-2011-Lethaia-ywldxc.pdf)"
+    },
+    {
+      "age_name": "Holocene",
+      "ics_oldest": "Tournaisian",
+      "ics_youngest": "Tournaisian",
+      "confidence": "low",
+      "basis": "Wholly younger than table; clamped to Tournaisian",
+      "source": "existing crosswalk analogue"
+    },
+    {
+      "age_name": "Early Tremadocian",
+      "ics_oldest": "Tremadocian",
+      "ics_youngest": "Tremadocian",
+      "confidence": "high",
+      "basis": "Subdivision of ICS Tremadocian",
+      "source": "ICS v2024/12 stage list (data/timescale.csv)"
+    },
+    {
+      "age_name": "Aseri",
+      "ics_oldest": "Darriwilian",
+      "ics_youngest": "Darriwilian",
+      "confidence": "high",
+      "basis": "Baltic regional stage within Darriwilian",
+      "source": "[Estonian Ordovician chart 2023](https://stratigraafia.info/materjalid/eesti_strat/Ordovician_2023.pdf)"
+    },
+    {
+      "age_name": "Late Onnian",
+      "ics_oldest": "Katian",
+      "ics_youngest": "Katian",
+      "confidence": "high",
+      "basis": "Subdivision of Onnian, upper Streffordian",
+      "source": "existing crosswalk analogue"
+    },
+    {
+      "age_name": "Early Hirnantian",
+      "ics_oldest": "Hirnantian",
+      "ics_youngest": "Hirnantian",
+      "confidence": "high",
+      "basis": "Subdivision of ICS Hirnantian",
+      "source": "ICS v2024/12 stage list (data/timescale.csv)"
+    },
+    {
+      "age_name": "Early Pirgu",
+      "ics_oldest": "Katian",
+      "ics_youngest": "Katian",
+      "confidence": "high",
+      "basis": "Lower subdivision of Pirgu regional stage",
+      "source": "[Estonian Ordovician chart 2023](https://stratigraafia.info/materjalid/eesti_strat/Ordovician_2023.pdf)"
+    },
+    {
+      "age_name": "Late Riphean",
+      "ics_oldest": "Tremadocian",
+      "ics_youngest": "Tremadocian",
+      "confidence": "low",
+      "basis": "Wholly older than table; clamped to Tremadocian",
+      "source": "existing crosswalk analogue"
+    },
+    {
+      "age_name": "Middle Homerian",
+      "ics_oldest": "Homerian",
+      "ics_youngest": "Homerian",
+      "confidence": "high",
+      "basis": "Subdivision of ICS Homerian",
+      "source": "ICS v2024/12 stage list (data/timescale.csv)"
+    },
+    {
+      "age_name": "Maysvillian",
+      "ics_oldest": "Katian",
+      "ics_youngest": "Katian",
+      "confidence": "high",
+      "basis": "Middle Cincinnatian regional stage",
+      "source": "[USGS Ordovician correlation chart 2014](https://ngmdb.usgs.gov/Geolex/resources/docs/Ordovician_1925-2014.pdf)"
+    },
+    {
+      "age_name": "Late Sinian",
+      "ics_oldest": "Tremadocian",
+      "ics_youngest": "Tremadocian",
+      "confidence": "low",
+      "basis": "Wholly older than table; clamped to Tremadocian",
+      "source": "existing crosswalk analogue"
+    },
+    {
+      "age_name": "Ludian",
+      "ics_oldest": "Tournaisian",
+      "ics_youngest": "Tournaisian",
+      "confidence": "low",
+      "basis": "Paris Basin upper Eocene unit; wholly younger, clamped to Tournaisian",
+      "source": "[Rennes Basin study, 2016](https://comptes-rendus.academie-sciences.fr/geoscience/articles/10.1016/j.crte.2016.02.002/)"
+    },
+    {
+      "age_name": "Acadian",
+      "ics_oldest": "Tremadocian",
+      "ics_youngest": "Tremadocian",
+      "confidence": "low",
+      "basis": "Middle Cambrian regional series; wholly older, clamped to Tremadocian",
+      "source": "[Middle Cambrian (Acadian Series) trilobites study, 2002](https://www.cambridge.org/core/journals/journal-of-paleontology/article/abs/middle-cambrian-acadian-series-conocoryphid-and-paradoxidid-trilobites-from-the-upper-chamberlains-brook-formation-newfoundland-and-new-brunswick/7BC419443FF9EB20932AA05799837BD1)"
+    },
+    {
+      "age_name": "Marshbrookian",
+      "ics_oldest": "Katian",
+      "ics_youngest": "Katian",
+      "confidence": "medium",
+      "basis": "Cheneyan substage above approximate Katian base",
+      "source": "[Cocks 2010, Caradoc regional correlation](https://onlinelibrary.wiley.com/doi/10.1111/j.1475-4983.2010.00984.x)"
+    },
+    {
+      "age_name": "Longvillian",
+      "ics_oldest": "Sandbian",
+      "ics_youngest": "Katian",
+      "confidence": "medium",
+      "basis": "Historical broad Longvillian includes later Woolstonian; boundary-spanning envelope",
+      "source": "[Cocks 2010, Caradoc regional correlation](https://onlinelibrary.wiley.com/doi/10.1111/j.1475-4983.2010.00984.x)"
+    },
+    {
+      "age_name": "Middle Aeronian",
+      "ics_oldest": "Aeronian",
+      "ics_youngest": "Aeronian",
+      "confidence": "high",
+      "basis": "Subdivision of ICS Aeronian",
+      "source": "ICS v2024/12 stage list (data/timescale.csv)"
+    },
+    {
+      "age_name": "Late Pushgillian",
+      "ics_oldest": "Katian",
+      "ics_youngest": "Katian",
+      "confidence": "medium",
+      "basis": "Upper Pusgillian, basal Ashgill",
+      "source": "[Molyneux et al. 2023, British Ordovician correlations](https://nora.nerc.ac.uk/id/eprint/533834/1/11_gslspecpub2022-235.pdf)"
+    },
+    {
+      "age_name": "Early Marshbrookian",
+      "ics_oldest": "Katian",
+      "ics_youngest": "Katian",
+      "confidence": "medium",
+      "basis": "Lower subdivision of Cheneyan Marshbrookian substage",
+      "source": "[Cocks 2010, Caradoc regional correlation](https://onlinelibrary.wiley.com/doi/10.1111/j.1475-4983.2010.00984.x)"
+    },
+    {
+      "age_name": "Early Taranakian",
+      "ics_oldest": "Tournaisian",
+      "ics_youngest": "Tournaisian",
+      "confidence": "low",
+      "basis": "New Zealand Miocene interval; wholly younger, clamped to Tournaisian",
+      "source": "[Kennett 1966, New Zealand Upper Miocene–Lower Pliocene sections](https://paperspast.natlib.govt.nz/periodicals/TRSGEO19661125.2.2/1)"
+    },
+    {
+      "age_name": "Middle Tremadocian",
+      "ics_oldest": "Tremadocian",
+      "ics_youngest": "Tremadocian",
+      "confidence": "high",
+      "basis": "Subdivision of ICS Tremadocian",
+      "source": "ICS v2024/12 stage list (data/timescale.csv)"
+    }
+  ]
+}
