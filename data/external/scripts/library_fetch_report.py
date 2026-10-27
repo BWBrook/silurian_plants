@@ -3,6 +3,9 @@
 Usage (on deep-server, from _tools/): python3 library_fetch_report.py [--out STORE/_build]
 Reads manifest.tsv, attempts.tsv, _build/works.tsv and the quarantine folder. Writes fetch_results.tsv and fetch_counts.tsv.
 No network. Rows cover every work of the fetched subsets (priority_spores, cards) that `fetch` selected.
+Held copies get a full-text test: text_words counts words in STORE/text/<W>.txt, and fulltext_check is `short_under_1500`
+below MIN_WORDS (an abstract or landing page passes the title and identity checks; review found six such), `no_text` when
+the PDF has no text layer, otherwise `ok`.
 """
 
 import argparse
@@ -18,6 +21,15 @@ import library as L  # noqa: E402
 
 ROUTE_OF_HOST = {"PubMed Central OA": "pmc_open_access_bucket", "Internet Archive": "internet_archive_scan",
                  "CORE": "core_repository_link", "Semantic Scholar": "semantic_scholar_oa_link"}
+MIN_WORDS = 1500
+
+
+def fulltext(store, wid):
+    p = store / "text" / f"{wid}.txt"
+    if not p.exists():
+        return "", "no_text"
+    n = len(p.read_text(encoding="utf-8", errors="replace").split())
+    return str(n), "ok" if n >= MIN_WORDS else ("no_text" if n == 0 else "short_under_1500")
 
 
 def route(host, kind_hint=""):
@@ -83,11 +95,12 @@ def main():
                 p = qfiles[wid][-1]
                 data = p.read_bytes()
                 size, sha, path = str(len(data)), hashlib.sha256(data).hexdigest(), f"quarantine/{p.name}"
+        words, check = fulltext(store, wid) if outcome in ("ok", "no_text") else ("", "")
         rows.append({"openalex_id": wid, "doi": w["doi"], "subsets": ";".join(subs), "outcome": outcome, "route": rt, "host": host,
                      "url": url, "bytes": size, "sha256": sha, "quarantine": quar, "attempts": len(att), "path": path,
-                     "note": note, "title": w["title"][:140]})
+                     "text_words": words, "fulltext_check": check, "note": note, "title": w["title"][:140]})
     fields = ["openalex_id", "doi", "subsets", "outcome", "route", "host", "url", "bytes", "sha256", "quarantine", "attempts",
-              "path", "note", "title"]
+              "path", "text_words", "fulltext_check", "note", "title"]
     L.write_tsv(out / "fetch_results.tsv", rows, fields)
     counts = []
     for sub in ("priority_spores", "cards", "all"):
@@ -95,6 +108,7 @@ def main():
         c = Counter(r["outcome"] for r in sel)
         routes = Counter(r["route"] for r in sel if r["outcome"] in ("ok", "no_text"))
         counts.append({"subset": sub, "works_attempted": len(sel), "held_ok": c["ok"], "held_no_text": c["no_text"],
+                       "held_short_under_1500": sum(1 for r in sel if r["fulltext_check"] == "short_under_1500"),
                        "quarantined": c["quarantined"], "failed": c["failed"], "no_copy": c["no_copy"], "withdrawn": c["withdrawn"],
                        "routes_held": "; ".join(f"{k} {v}" for k, v in routes.most_common()),
                        "mb_held": round(sum(int(r["bytes"] or 0) for r in sel if r["outcome"] in ("ok", "no_text")) / 1e6, 1)})

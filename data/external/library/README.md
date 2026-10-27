@@ -227,6 +227,26 @@ The 7 mismatches were withdrawn with `library.py withdraw` (reasons are in `mani
 a conference abstract volume containing the expected abstract among others (W2230006337), a different conference abstract (W2254873166), a whole journal issue's front matter (W4405796352) and a newsletter issue (W7155675004).
 The 2 unclear copies were kept: W2594148471 (a preprint with a different title) and W4406765794 (OCR text only an OCR notice).
 
+### Full-text test (added after the project's review, 2026-10-27)
+
+The title match and the identity check both pass an abstract or a landing page whose title is right. The project's
+review found six such "held" priority-spore texts, after Codex extraction invented taxa for three of them. So
+`fetch_results.tsv` now carries `text_words` (words in `STORE/text/<W>.txt`) and `fulltext_check`. That column is
+`short_under_1500` below 1,500 words, `no_text` where the PDF has no text layer, and `ok` otherwise; see
+`scripts/library_fetch_report.py`. The test flags; it does not decide. Of the 202 held copies, 188 are `ok`, 5 are
+`no_text` and 9 are `short_under_1500`, all reviewed:
+
+- **Not full text: treat as no copy (7).**
+  - Six priority-spore items are abstracts or landing pages, found by the project's review: W2161939239 (308 words),
+    W2340029582 (358), W2782897901 (359), W4380485495 (612), W2080475227 (705) and W4380485474 (752). They were dropped
+    from the spore layer and listed in `docs/closed-literature.csv`.
+  - W4406765794 (cards, 16 words) is a table of sample numbers and conodont colour-alteration values from a figure
+    file, not the paper.
+- **Complete short papers: keep (2).** W4205470492 is the two-page nomen novum note (*Fossil Imprint* 77: 53–54). W2048864911
+  is Steemans et al. 2009, a one-page Brevia (*Science*, p. 353).
+
+Nothing was withdrawn from the store on the strength of this test.
+
 ### Cited-DOI intended-work check (Codex gpt-6.1-terra)
 
 All 623 cited works were compared with the project's own citation lines (the line or lines in `taxa/` and `docs/` where each DOI appears): **623 `same_work`, no `different_work`, no `unclear`**

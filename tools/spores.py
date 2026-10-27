@@ -85,17 +85,24 @@ def cmd_inputs():
     return 0
 
 
+# Short texts that EPRP's review found to be complete papers (data/external/library/README.md, full-text test)
+KEEP_SHORT = {"W4205470492", "W2048864911"}
+
+
 def cmd_mvdb():
     """Flatten the Codex MVD-B extractions into source tables."""
     out_dir = WORK / "codex" / "mvdb" / "out"
     papers = {r["openalex_id"]: r for r in csv.DictReader(open(WORK / "codex" / "mvdb" / "papers.csv"))}
+    fulltext = {r["openalex_id"]: r.get("fulltext_check", "") for r in
+                csv.DictReader(open(ROOT / "data" / "external" / "library" / "fetch_results.tsv"), delimiter="\t")}
     asm_rows, taxa_rows, dropped = [], [], []
     squash = lambda x: re.sub(r"[\s\-\u2010-\u2014]+", "", re.sub(r"-\s*\n\s*", "", x)).lower()
     for path in sorted(out_dir.glob("*_sol.json")):
         pid = path.name.split("_")[0]
         doc = json.loads(path.read_text())
         text = Path(ROOT / papers[pid]["text"]).read_text(encoding="utf-8", errors="replace") if pid in papers else ""
-        if len(text.split()) < 1500:
+        check = fulltext.get(pid, "")
+        if check in ("short_under_1500", "no_text") and pid not in KEEP_SHORT or not text:
             dropped.append((pid, len(text.split())))
             continue
         t = squash(text)
