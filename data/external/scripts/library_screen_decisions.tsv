@@ -26,14 +26,14 @@ W2322522088	include	spore_terms	1
 W3152237147	include	spore_terms	4		same title as W220268062 (conference version); both kept
 W4390291004	include	spore_terms	5		
 W1820528062	include	spore_terms	5		
-W2075902280	include	spore_terms	5		
+W2075902280	exclude				spores only in the Middle Devonian assemblage; window-age assemblage is chitinozoans and phytoplankton (Codex check)
 W2228470445	include	spore_terms	2		
 W3021120787	include	spore_terms	4	3	
 W3023177371	include	spore_terms	4		
 W1981140311	include	spore_terms	4		version of W3023177371
-W1479948401	include	spore_terms	5		
+W1479948401	include_borderline	spore_terms	5		grade lowered after Codex check
 W1606023253	include_borderline	spore_terms	5		
-W1762144596	include	spore_terms	5		
+W1762144596	include_borderline	spore_terms	5		grade lowered after Codex check
 W1928060349	include	spore_terms	2		
 W1961525925	include	spore_terms	2		
 W1989808170	include	spore_terms	1	2	
@@ -87,7 +87,7 @@ W2416853722	include	spore_terms	6
 W2526181592	include	spore_terms	7		
 W2551628060	include	spore_terms	7	4,6	
 W2603753482	include_borderline	spore_terms	2		
-W4298208550	include	spore_terms	5		
+W4298208550	exclude				synthesis of existing Zenta Range palynomorph knowledge, Tremadocian to Pennsylvanian (Codex check)
 W2607326084	include	spore_terms	2		
 W2752535463	include	spore_terms	4		
 W2767741140	include	spore_terms	1		
@@ -140,7 +140,7 @@ W7155675004	include	spore_terms	4
 W7168290385	include	spore_terms	5		
 W4390427292	include	spore_terms	5		
 W2742638358	include	spore_terms	7		
-W3171257164	include	spore_terms	4		
+W3171257164	include_borderline	spore_terms	4		grade lowered after Codex check
 W2031485164	include	palynology_title_only	4		
 W2105785448	include	palynology_title_only	4		
 W2087996039	include	palynology_title_only	3		
@@ -181,7 +181,7 @@ W4406011917	include	palynology_title_only	5		version of W4403186927
 W4408318991	include	palynology_title_only	4		
 W4414498311	include_borderline	palynology_title_only	5		
 W4415070774	include_borderline	palynology_title_only	2		
-W7135205057	include	palynology_title_only	5		
+W7135205057	exclude				assemblage dated Eifelian-Givetian, outside the window (Codex check)
 W7160856947	include	palynology_title_only	5		
 W2097284759	include_borderline	palynology_title_only	2		
 W2326927084	include_borderline	palynology_title_only	5		
@@ -257,3 +257,5 @@ W4251043503	exclude				age or facies paper; spores incidental or younger
 W4312219048	exclude				methods paper (digital identification of miospores)
 W7117498951	exclude				methods paper (digital identification of miospores)
 W7161634996	exclude				methods paper (digital identification of miospores)
+W2776142699	include_borderline	spore_terms	1		Rhynie chert dispersed spores (Lower Devonian); added after Codex check, title-only rule R3 missed it
+W2033254699	include_borderline	spore_terms	5		Chigua Formation: late Emsian-early Eifelian assemblage; added after Codex check

@@ -201,7 +201,8 @@ def main():
         canon_of[r["openalex_id"]] = r["openalex_id"]
         for m in filter(None, r["merged"].split(";")):
             canon_of[m] = r["openalex_id"]
-    tiers_of = {r["openalex_id"]: set(r["tiers"].split(";")) for r in index_rows}
+    subset_seed_tiers = {"priority_spores", "cards"}  # phase 2 fetch seeds, not classification tiers
+    tiers_of = {r["openalex_id"]: set(r["tiers"].split(";")) - subset_seed_tiers for r in index_rows}
 
     cited_files = defaultdict(set)
     cited_doi_rows = []
@@ -261,6 +262,8 @@ def main():
                 priority[cw] = dict(s, via=wid)
 
     # ---- works
+    manifest = L.load_manifest(store)
+    held_ids = {w for w, m in manifest.items() if m["status"] in L.OPEN_HELD and (store / (m.get("path") or f"pdf/{w}.pdf")).exists()}
     works, abstracts, closed = [], [], []
     for r in index_rows:
         wid = r["openalex_id"]
@@ -297,14 +300,14 @@ def main():
             closed.append({"doi": row["doi"], "title": title, "first_author": row["first_author"], "year": row["year"],
                            "venue": row["venue"], "publisher": publisher_of(rec), "subset": ";".join(
                                s for s in subsets if s in ("priority_spores", "cards")), "region": region,
-                           "priority_reason": "; ".join(reasons)})
+                           "priority_reason": "; ".join(reasons), "open_copy_held": "yes" if wid in held_ids else "no"})
     fields = ["openalex_id", "doi", "year", "first_author", "title", "venue", "type", "language", "oa_status", "has_oa_pdf_url",
               "tiers", "subsets", "region", "in_project", "access"]
     L.write_tsv(out / "works.tsv", works, fields)
     L.write_tsv(out / "abstracts.tsv", abstracts, ["openalex_id", "abstract"])
     closed.sort(key=lambda r: (r["subset"], str(r["year"]), r["first_author"]))
     with open(out / "closed_candidates.csv", "w", newline="", encoding="utf-8") as f:
-        w = csv.DictWriter(f, ["doi", "title", "first_author", "year", "venue", "publisher", "subset", "region", "priority_reason"],
+        w = csv.DictWriter(f, ["doi", "title", "first_author", "year", "venue", "publisher", "subset", "region", "priority_reason", "open_copy_held"],
                            lineterminator="\n")
         w.writeheader()
         w.writerows(closed)

@@ -49,6 +49,10 @@ def log_credits(store, label):
 
 
 if __name__ == "__main__":
+    if len(sys.argv) > 1 and sys.argv[1] == "fetch":
+        if L.TDM_ROUTES:
+            sys.exit("TDM routes are active; refusing to fetch")
+        print("library_run: publisher TDM routes active: none (library.TDM_ROUTES is empty); open routes only", flush=True)
     store = sys.argv[sys.argv.index("--store") + 1] if "--store" in sys.argv else None
     label = " ".join(a for a in sys.argv[1:] if not a.startswith("/"))
     try:

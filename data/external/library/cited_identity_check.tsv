@@ -1,0 +1,624 @@
+openalex_id	cited_dois	codex_verdict	codex_note	title_word_overlap	min_year_difference	citation_lines	openalex_title	openalex_year
+W1483075066	10.1111/j.1365-2745.2010.01735.x	same_work	Title and first author match; the years differ by one.	1.00	1	1	Influence of four major plant traits on average height, leaf‐area cover, net primary productivity, and biomass density in single‐species for	2010
+W1491840636	10.1111/boj.12307	same_work	Title, first author, year and venue match.	0.82	0	2	Fungal colonization of the rooting system of the early land plantAsteroxylon mackieifrom the 407-Myr-old Rhynie Chert (Scotland, UK)	2015
+W1495792817	10.1111/boj.12175	same_work	Title, first author, year and venue match.	1.00	0	1	The earliest wood and its hydraulic properties documented inc. 407-million-year-old fossils using synchrotron microtomography	2014
+W1537124191	10.3133/b1300	same_work	Title, author and year match, although OpenAlex labels the record paratext.	1.00	0	1	Index of generic names of fossil plants, 1820-1965	1970
+W1547007594	10.1126/science.276.5312.544	same_work	Title, author, year and venue match.	1.00	0	1	The Rise of Plants and Their Effect on Weathering and Atmospheric CO 2	1997
+W1577031841	10.1002/2014gl060457	same_work	Title, first author, year and venue match.	1.00	0	2	New constraints on atmospheric CO2 concentration for the Phanerozoic	2014
+W1607208140	10.1111/j.1095-8339.2012.01231.x	same_work	Title, first author, year and venue match.	1.00	0	1	New dyad-producing plants from the Lower Devonian (Lochkovian) of the Welsh Borderland	2012
+W1644617459	10.1111/j.1529-8817.2010.00873.x	same_work	Title, authors, year and venue match; the trailing numeral appears to be a footnote marker.	1.00	0	1	TEMPORAL VARIATION IN ISOMORPHIC PHASE AND SEX RATIOS OF A NATURAL POPULATION OF ULVA PERTUSA (CHLOROPHYTA)1	2010
+W1663995113	10.1038/37918	same_work	Title, authors, year and venue match.	1.00	0	1	The origin and early evolution of plants on land	1997
+W1674936354	10.1038/19516	same_work	Title, first author, year and venue match.	1.00	0	1	Archaeopteris is the earliest known modern tree	1999
+W1820528062	10.1111/j.1469-8137.2010.03433.x	same_work	Title, first author, year and venue match.	1.00	0	2	Early Middle Ordovician evidence for land plants in Argentina (eastern Gondwana)	2010
+W1843710198	10.1139/cjes-2013-0057	same_work	Title, author, year and venue match.	1.00	0	1	Early Devonian graptolites and graptolite biostratigraphy, Arctic Islands, Canada	2013
+W1899133017	10.1111/j.1095-8339.2011.01207.x	same_work	Title, first author, year and venue match.	1.00	0	2	A new group of Early Devonian plants with valvate sporangia containing sculptured permanent dyads	2012
+W1909836501	10.1038/35066546	same_work	Title, first author, year and venue match.	1.00	0	1	Evolution of leaf-form in land plants linked to atmospheric CO2 decline in the Late Palaeozoic era	2001
+W1914447994	10.1093/genetics/156.2.893	same_work	Title, author, year and venue match.	1.00	0	1	The Evolution of Haploid, Diploid and Polymorphic Haploid-Diploid Life Cycles: The Role of Meiotic Mutation	2000
+W1930382086	10.1017/s009483730000693x	same_work	Title, author, year and venue match.	1.00	0	1	Computer simulations of early land plant branching morphologies: canalization of patterns during evolution?	1982
+W1937644529	10.1111/pala.12187	same_work	Title, first author, year and venue match.	1.00	0	1	Could land‐based early photosynthesizing ecosystems have bioengineered the planet in mid‐Palaeozoic times?	2015
+W1946581037	10.1017/s0953756202226313	same_work	Title, year and venue match, though OpenAlex omits the author.	1.00	0	1	Prototaxites: A 400 MYR Old Giant Fossil, A Saprophytic Holobasidiomycete, or A Lichen?	2002
+W1947719426	10.1111/jse.12043	same_work	Title, first author, year and venue match despite a spacing error.	0.89	0	1	Report of Drepanophycus Göppert ( L ycopsida) from the Middle Devonian of Xinjiang, China	2013
+W1951962363	10.1111/j.1475-4983.2012.01143.x	same_work	Title, first author, year and venue match, but the project lines disagree on co-authors.	1.00	0	2	Spore assemblages from the Lower Devonian Xujiachong Formation from Qujing, Yunnan, China	2012
+W1953237448	10.1111/j.1095-8339.2011.01195.x	same_work	Title and authors match; the years differ by one.	1.00	0	1	Evidence for a fungal affinity for Nematasketum, a close ally of Prototaxites	2011
+W1963523665	10.1016/0034-6667(72)90020-6	same_work	Title, author, year and venue match.	1.00	0	1	Dispersed spores associated with leclercqia complexa banks, bonamo and grierson from the late middle devonian of Eastern New York State (U.S	1972
+W1964129293	10.1038/nature01884	same_work	Title, first author, year and venue match.	1.00	0	2	Fragments of the earliest land plants	2003
+W1964275193	10.1126/science.276.5312.583	same_work	Title, author, year and venue match.	1.00	0	1	Early Forest Soils and Their Role in Devonian Global Change	1997
+W1964309047	10.1007/s11434-013-5799-x	same_work	Title, authors, year and venue match.	1.00	0	1	Earliest record of megaphylls and leafy structures, and their initial diversification	2013
+W1966590432	10.1186/s12870-015-0481-x	same_work	Title, first author, year and venue match.	1.00	0	1	Establishment of Anthoceros agrestis as a model species for studying the biology of hornworts	2015
+W1967088333	10.3897/phytokeys.20.4007	same_work	Title, authors, year and venue match.	1.00	0	1	New and existing combinations in Palaeotropical Phlegmariurus (Lycopodiaceae) and lectotypification of the type species Phlegmariurus phlegm	2013
+W1970000258	10.1016/j.revpalbo.2005.08.005	same_work	Title, authors, year and venue match.	1.00	0	1	A new species of the Devonian lycopod genus, Leclercqia, from the Emsian of New Brunswick, Canada	2005
+W1970514128	10.1130/0091-7613(1996)024<0055:neflpf>2.3.co;2	same_work	Title, first author, year and venue match.	1.00	0	1	New evidence for land plants from the lower Middle Ordovician of Saudi Arabia	1996
+W1970700775	10.1086/660195	same_work	Title, first author, year and venue match.	1.00	0	1	A New Species of Leclercqia Banks, Bonamo et Grierson (Lycopsida) from the Middle Devonian of North Xinjiang, China, with a Possible Climbin	2011
+W1973725657	10.1086/673240	same_work	Title, first author, year and venue match.	1.00	0	1	Spore Wall Ultrastructure of the Lower Devonian Zosterophylls Renalia hueberi and Zosterophyllum divaricatum	2013
+W1974360698	10.1038/ngeo1376	same_work	Title, authors, year and venue match.	1.00	0	1	Palaeozoic landscapes shaped by plant evolution	2012
+W1975426100	10.2216/i0031-8884-32-5-356.1	same_work	Title, first author, year and venue match.	1.00	0	1	Gametangia, gametes, fertilization and zygote development in Ulothrix flacca var. roscoffensis (Chlorophyta)	1993
+W1976728957	10.1111/j.1095-8339.1998.tb02092.x	same_work	Title, first author, year and venue match.	1.00	0	1	Permanent dyads in sporangia and spore masses from the Lower Devonian of the Welsh Borderland	1998
+W1977383096	10.2110/palo.2012.p12-004r	same_work	Title, first author, year and venue match.	1.00	0	1	PALEOENVIRONMENTAL INFERENCES FROM THE CLASSIC LOWER DEVONIAN PLANT-BEARING LOCALITY OF THE CAMPBELLTON FORMATION, NEW BRUNSWICK, CANADA	2012
+W1977743584	10.1016/j.palaeo.2015.01.024	same_work	Title, authors, year and venue match.	1.00	0	1	Diversity patterns of the vascular plant group Zosterophyllopsida in relation to Devonian paleogeography	2015
+W1978141863	10.1130/g23384a.1	same_work	Title, first author, year and venue match.	1.00	0	1	Devonian landscape heterogeneity recorded by a giant fungus	2007
+W1979081238	10.1002/j.1537-2197.1985.tb08379.x	same_work	Title, authors, year and venue match.	1.00	0	1	BRANCHING IN PSILOPHYTON: A NEW SPECIES FROM THE LOWER DEVONIAN OF NEW BRUNSWICK, CANADA	1985
+W1980370324	10.1086/668685	same_work	Title, first author, year and venue match.	1.00	0	1	Archaeopterid Root Anatomy and Architecture: New Information from Permineralized Specimens of Famennian Age from Anti-Atlas (Morocco)	2013
+W1982257474	10.2307/2441808	same_work	Title, author, year and venue match.	1.00	0	1	THE SPORANGIUM OF HORNEOPHYTON LIGNIERI (RHYNIOPHYTINA)	1974
+W1982310683	10.1126/science.208.4441.295	same_work	Title, authors, year and venue match.	1.00	0	1	Devonian Gametophytes with Anatomically Preserved Gametangia	1980
+W1982800406	10.1016/s0016-7037(98)00078-7	same_work	Title, first author, year and venue match.	1.00	0	1	Molecular characterization of some enigmatic Lower Devonian fossils	1998
+W1982836970	10.1371/journal.pone.0075706	same_work	Title, first author, year and venue match.	1.00	0	1	Diversity Dynamics of Silurian–Early Carboniferous Land Plants in South China	2013
+W1983021579	10.1144/pygs.48.1.41	same_work	Title, authors, year and venue match.	1.00	0	1	Přídolí graptolites from the Humevale Formation at Ghin Ghin and Cheviot, Victoria, Australia	1990
+W1983876384	10.1017/s001675681100077x	same_work	Title and author match; the years differ by one.	1.00	1	2	Lochkovian plants from the Xitun Formation of Yunnan, China, and their palaeophytogeographical significance	2011
+W1984037202	10.1666/08071.1	same_work	Title, authors, year and venue match.	1.00	0	1	A physiologically explicit morphospace for tracheid-based water transport in modern and extinct seed plants	2010
+W1984113581	10.1038/ngeo1390	same_work	Title, first author, year and venue match.	1.00	0	2	First plants cooled the Ordovician	2012
+W1984262293	10.1017/s0263593300000808	same_work	Title, first author and year match.	1.00	0	1	Charophyte algae from the Rhynie chert	2003
+W1984291465	10.1038/ncomms1831	same_work	Title, first author, year and venue match.	1.00	0	2	Contrasting arbuscular mycorrhizal responses of vascular and non-vascular plants to a simulated Palaeozoic CO2 decline	2012
+W1985461362	10.1016/s0034-6667(01)00060-4	same_work	Title, first author, year and venue match.	1.00	0	1	An Early Devonian flora, including Cooksonia, from the Paraná Basin (Brazil)	2001
+W1985497529	10.2110/palo.2011.p11-094r	same_work	Title, first author, year and venue match.	1.00	0	1	SELECTIVE FEEDING IN AN EARLY DEVONIAN TERRESTRIAL ECOSYSTEM	2012
+W1985627400	10.1016/j.revpalbo.2014.09.006	same_work	Title, authors, year and venue match.	1.00	0	1	An analysis of vegetational change in the Lower Devonian: New data from the Lochkovian of the Welsh Borderland, U.K.	2014
+W1986427871	10.1111/j.0022-3646.1985.00235.x	same_work	Title, first author, year and venue match despite spacing and a trailing numeral.	0.89	0	1	LIGHT, TEMPERATURE AND PHOTOPERIOD AS FACTORS CONTROLLING REPRODUCTION INULOTHRIX ZONATA(ULVOPHYCEAE)1	1985
+W1990216328	10.1016/j.revpalbo.2012.03.012	same_work	Title, first author, year and venue match.	1.00	0	1	Riccardiothallus devonicus gen. et sp. nov., the earliest simple thalloid liverwort from the Lower Devonian of Yunnan, China	2012
+W1990866222	10.1126/science.1208882	same_work	Title, first author, year and venue match.	1.00	0	2	A Simple Type of Wood in Two Early Devonian Plants	2011
+W1991612932	10.1073/pnas.0604090103	same_work	Title, authors, year and venue match.	1.00	0	1	The diversification of Paleozoic fire systems and fluctuations in atmospheric oxygen concentration	2006
+W1993225152	10.1111/j.1469-8137.2009.03054.x	same_work	Title and authors match; one project line uses the following year.	1.00	0	2	The evolution of the land plant life cycle	2009
+W1993577708	10.1086/337711	same_work	Title, first author, year and venue match.	1.00	0	1	Leclercqia, Haskinsia, and the Role of Leaves in Delineation of Devonian Lycopod Genera	1988
+W1993636787	10.1016/j.revpalbo.2006.02.006	same_work	Title, authors, year and venue match.	1.00	0	1	Leclercqia complexa from the Early Devonian (Emsian) of northern New Brunswick, Canada	2006
+W1994184421	10.1017/s0016756800009821	same_work	Title, year and venue match; OpenAlex appears to list Cai's given name Chong-Yang as the first-author surname.	1.00	0	1	New observations on a Pridoli plant assemblage from north Xinjiang, northwest China, with comments on its evolutionary and palaeogeographica	1993
+W1994498836	10.1098/rstb.1935.0009	same_work	Title, author, year and venue match; OpenAlex adds a section numeral.	1.00	0	1	IV—On plant-remains from the Silurian of Victoria, Australia, that extend and connect floras hitherto described	1935
+W1995103304	10.1111/j.1095-8339.1983.tb00717.x	same_work	Title, author, year and venue match.	1.00	0	1	A new species of Baragwanathia from the Sextant Formation (Emsian) Northern Ontario, Canada	1983
+W1995834340	10.1130/g30443.1	same_work	Title, authors, year and venue match.	1.00	0	1	Paleozoic vegetation and the Siluro-Devonian rise of fluvial lateral accretion sets	2010
+W1995907703	10.1111/j.1095-8339.2005.00434.x	same_work	Title, first author, year and venue match.	1.00	0	1	The stomatal apparatus of Lycopodium japonicum and its bearing on the stomata of the Devonian lycophyte Drepanophycus spinaeformis	2005
+W1996082106	10.1111/nph.12009	same_work	Title and first author match; the years differ by one.	1.00	1	1	The earliest records of internally stratified cyanobacterial and algal lichens from the Lower Devonian of the Welsh Borderland	2012
+W1996510333	10.1016/j.revpalbo.2011.06.007	same_work	Title, first author, year and venue match.	1.00	0	1	New plant taxa from the Lower Devonian (Lochkovian) of the Welsh Borderland, with a hypothesis on the relationship between hilate and trilet	2011
+W1997049280	10.1086/653130	same_work	Title, author, year and venue match.	1.00	0	1	The Origins and Early Evolution of the Megaphyllous Leaf	2010
+W1998138507	10.1126/science.1161648	same_work	Title, authors, year and venue match.	1.00	0	1	A Chronology of Paleozoic Sea-Level Changes	2008
+W1998420479	10.1344/105.000001619	same_work	Title, author, year and venue match despite a spacing error.	0.83	0	1	The fossil recordand evolution of freshwater plants: A review	2003
+W1998637593	10.2307/2399751	same_work	Title, author, year and venue match.	1.00	0	1	Thoughts on the Early Lycopsids and Zosterophylls	1992
+W1998939816	10.1080/03115517808527779	same_work	Title, author, year and venue match despite spacing errors.	0.75	0	1	New evidence for a Silurian (Ludlow) age for the earliestBaragwanathiaflora	1978
+W2000876997	10.1144/gsl.sp.2000.180.01.05	same_work	Title, first author and year match.	1.00	0	1	Coastal-fluvial palaeoenvironments and plant palaeoecology of the Lower Devonian (Emsian), Gaspé Bay, Québec, Canada	2000
+W2001131420	10.1144/sp339.5	same_work	Title, first author and year match.	1.00	0	2	Palaeogeographic and palaeoclimatic considerations based on Ordovician to Lochkovian vegetation	2010
+W2002138016	10.3732/ajb.92.7.1152	same_work	Title, first author, year and venue match.	1.00	0	1	New insights into Paleozoic charophyte morphology and phylogeny	2005
+W2002669063	10.1080/0028825x.1975.10430356	same_work	Title, author, year and venue match.	1.00	0	1	The New Zealand Species of Tmesipteris (Psilotaceae)	1975
+W2005254058	10.1016/0034-6667(79)90037-x	same_work	Title, authors, year and venue match.	1.00	0	1	Observations on Nothia aphylla Lyon ex Høeg	1979
+W2005364852	10.1016/j.revpalbo.2014.08.018	same_work	Title and first author match; the years differ by one.	1.00	0	2	Cryptospores from the Hanadir Shale Member of the Qasim Formation, Ordovician (Darriwilian) of Saudi Arabia: taxonomy and systematics	2014
+W2005675033	10.1086/427484	same_work	Title, first author, year and venue match.	1.00	0	1	Nothia aphylla: The Issue of Clonal Development in Early Land Plants	2005
+W2007128241	10.1038/357683a0	same_work	Title, first author, year and venue match.	1.00	0	1	A vascular conducting strand in the early land plant Cooksonia	1992
+W2007868347	10.1016/0034-6667(72)90007-3	same_work	Title, author, year and venue match.	1.00	0	1	Devonian plants from fair Isle, Scotland	1972
+W2007890326	10.2307/2656589	same_work	Title, first author, year and venue match.	1.00	0	1	The development of Archaeopteris: new evolutionary characters from the structural analysis of an Early Famennian trunk from southeast Morocc	2000
+W2008436885	10.1144/0016-76492010-043	same_work	Title, first author, year and venue match.	1.00	0	4	A high-precision U–Pb age constraint on the Rhynie Chert Konservat-Lagerstätte: time scale and other implications	2011
+W2008646544	10.1046/j.1529-8817.2002.01174.x	same_work	Title, first author, year and venue match; the trailing numeral appears to be a footnote marker.	1.00	0	1	PHYLOGENY OF THE GENUS COLEOCHAETE (COLEOCHAETALES, CHAROPHYTA) AND RELATED TAXA INFERRED BY ANALYSIS OF THE CHLOROPLAST GENE rbcL1	2002
+W2008865308	10.1130/g20363.1	same_work	Title, first author, year and venue match.	1.00	0	2	Charcoal in the Silurian as evidence for the earliest wildfire	2004
+W2009180161	10.3732/ajb.1000047	same_work	Title, first author, year and venue match for the cited comment.	1.00	0	1	The enigmatic Devonian fossil Prototaxites is not a rolled‐up liverwort mat: Comment on the paper by Graham et al. (AJB 97: 268–275)	2010
+W2009531249	10.1086/337897	same_work	Title, authors, year and venue match.	1.00	0	1	Water-Conducting Cells in Early Fossil Land Plants: Implications for the Early Evolution of Tracheophytes	1991
+W2010726608	10.1002/j.1537-2197.1962.tb14953.x	same_work	Title, author, year and venue match.	1.00	0	1	RECONSTRUCTIONS OF ARCHAEOPTERIS, AND FURTHER CONSIDERATION OF ITS PHYLOGENETIC POSITION	1962
+W2010754184	10.1006/jtbi.2000.2107	same_work	Title, first author, year and venue match.	1.00	0	1	Transpiration and Assimilation of Early Devonian Land Plants with Axially Symmetric Telomes—Simulations on the Tissue Level	2000
+W2011473035	10.1016/s0034-6667(01)00051-3	same_work	Title, first author, year and venue match.	1.00	0	1	Archaeopteris from the Upper Famennian of Belgium: heterospory, nomenclature, and palaeobiogeography	2001
+W2011981374	10.1111/j.1469-8137.2007.02080.x	same_work	Title, authors, year and venue match.	1.00	0	1	Rhynie chert: a window into a lost world of complex plant–fungus interactions	2007
+W2012138704	10.1002/j.1537-2197.1974.tb12253.x	same_work	Title, first author, year and venue match.	1.00	0	1	NEW FERTILE SPECIES OF PSILOPHYTON FROM THE DEVONIAN OF MAINE	1974
+W2012157659	10.1144/sp339.6	same_work	Title, first author and year match.	1.00	0	1	The land plant cover in the Devonian: a reassessment of the evolution of the tree habit	2010
+W2012196423	10.2216/i0031-8884-22-3-267.1	same_work	Title, authors, year and venue match.	1.00	0	1	Zygospore germination and meiosis in Closterium ehrenbergii Meneghini (Conjugatophyceae)	1983
+W2013111689	10.1002/j.1537-2197.1982.tb13278.x	same_work	Title, author, year and venue match.	1.00	0	1	THE OCCURRENCE, EVOLUTION, AND PHYLOGENETIC SIGNIFICANCE OF PARENCHYMA IN COLEOCHAETE BRÉB. (CHLOROPHYTA)	1982
+W2013277649	10.1073/pnas.1323926111	same_work	Title, first author, year and venue match.	1.00	0	2	Phylotranscriptomic analysis of the origin and early diversification of land plants	2014
+W2013358419	10.1080/08912969009386532	same_work	Title, author, year and venue match despite a spacing error.	0.83	0	1	Parka decipiensand land plant spore evolution	1990
+W2013387368	10.1002/j.1537-2197.1980.tb07665.x	same_work	Title, authors, year and venue match.	1.00	0	1	PITTING IN PSILOPHYTON DAWSONII, AN EARLY DEVONIAN TRIMEROPHYTE	1980
+W2013960063	10.1038/2031082b0	same_work	Title, author, year and venue match.	1.00	0	1	Probable Fertile Region of Asteroxylon mackiei K. and L.	1964
+W2015143487	10.1139/b80-259	same_work	Title, author, year and venue match.	1.00	0	1	A new species of Psilophyton from the Lower Devonian of northern New Brunswick, Canada	1980
+W2015681184	10.1111/let.12070	same_work	Title, authors, year and venue match.	1.00	0	1	Composition and dynamics of the great Phanerozoic Evolutionary Floras	2014
+W2016282171	10.1086/668613	same_work	Title, first author, year and venue match.	1.00	0	1	Reproductive Organs and In Situ Spores of Asteroxylon mackiei Kidston & Lang, the Most Complex Plant from the Lower Devonian Rhynie Chert	2013
+W2016401316	10.1080/03115519508619099	same_work	Title, authors, year and venue match.	1.00	0	1	Conodonts of disparate Lower Devonian zones, Wilson Creek Shale, Tyers-Walhalla area, Victoria, Australia	1995
+W2018598255	10.1002/j.1537-2197.1985.tb08325.x	same_work	Title, authors, year and venue match.	1.00	0	1	EVIDENCE FOR XYLEM CONSTRICTIONS IN THE PRIMARY VASCULATURE OF PSILOPHYTON DAWSONII, AN EMSIAN TRIMEROPHYTE	1985
+W2019106037	10.1111/j.1502-3931.1985.tb00680.x	same_work	Title, authors, year and venue match.	1.00	0	1	Silurian fungal remains: probable records of the Class Ascomycetes	1985
+W2019839279	10.1098/rstb.1998.0195	same_work	The title, authors and year match.	1.00	0	3	Terrestrial-marine teleconnections in the Devonian: links between the evolution of land plants, weathering processes, and marine anoxic even	1998
+W2019954396	10.1086/344557	same_work	The title, year and venue match; OpenAlex lists Shougang as the first author rather than Hao.	1.00	0	1	Structure of the Earliest Leaves: Adaptations to High Concentrations of Atmospheric CO 2	2003
+W2020361426	10.1038/nature10819	same_work	The title, first author and year match.	1.00	0	1	Surprisingly complex community discovered in the mid-Devonian fossil forest at Gilboa	2012
+W2021385166	10.1016/j.revpalbo.2006.03.021	same_work	The title, first author and year match.	0.86	0	1	Charcoal in the Early Devonian: A wildfire-derived Konservat–Lagerstätte	2006
+W2021509716	10.2307/2445878	same_work	The title, author and year match.	1.00		1	Adaptive walks through fitness landscapes for early vascular land plants	1997
+W2021681869	10.1098/rstb.1942.0001	same_work	The title, authors and year match.	1.00	0	1	The lower Devonian flora of the Senni Beds of Monmouthshire and Breconshire	1942
+W2021818162	10.1016/j.biosystems.2008.05.023	same_work	The title, first author and year match.	1.00	0	1	Modeling the fitness of plant morphologies across three levels of complexity	2008
+W2022450489	10.1007/s12229-008-9012-x	same_work	The title, author and year match.	1.00	0	2	Homologous Versus Antithetic Alternation of Generations and the Origin of Sporophytes	2008
+W2023120221	10.1126/science.1111347	same_work	The title, first author and year match.	1.00	0	1	Lichen-Like Symbiosis 600 Million Years Ago	2005
+W2024136071	10.3732/ajb.1300271	same_work	The title, first author and year match.	1.00	0	1	Applying morphometrics to early land plant systematics: A new Leclercqia (Lycopsida) species from Washington State, USA	2014
+W2026087043	10.1111/j.1755-6724.2011.00482.x	same_work	The title, authors and year match.	1.00	0	1	A New Zosterophyll Plant, Ramoferis gen. nov., from the Posongchong Formation of Lower Devonian (Pragian) of Southeastern Yunnan, China	2011
+W2026371909	10.1016/j.quascirev.2011.11.021	same_work	The title and first author match; the years differ by one.	1.00	1	1	Robust estimates of extinction time in the geological record	2011
+W2027075928	10.1080/0028825x.1987.10413360	same_work	The title, authors and year match.	1.00	0	1	Chromosome numbers for the New Zealand species of Psilotum and Tmesipteris , and the phylogenetic relationships of the psilotales	1987
+W2028151170	10.1016/j.ecolmodel.2010.09.014	same_work	The title and first author match; the years differ by one.	1.00	1	1	The evolution of CSR life-history strategies in a plant model with explicit physiology and architecture	2010
+W2028152005	10.1016/0034-6667(85)90006-5	same_work	The title, author and year match.	1.00	0	1	Early silurian palynomorphs from the tuscarora formation in central Pennsylvania and their paleobotanical and geological significance	1985
+W2028833680	10.1111/j.1469-185x.1994.tb01273.x	same_work	The title, author and year match; OpenAlex classifies it as a review.	1.00	0	1	ALTERNATION OF GENERATIONS IN LAND PLANTS: NEW PHYLOGENETIC AND PALAEOBOTANICAL EVIDENCE	1994
+W2029009393	10.1002/gj.997	same_work	The title, authors and year match.	1.00	0	3	Silurian and Lower Devonian plant assemblages from the Anglo‐Welsh Basin: a palaeobotanical and palynological synthesis	2004
+W2029352783	10.1002/j.1537-2197.1993.tb15325.x	same_work	The authors and year match, and the title differs only by an apparent trailing character.	0.90	0	1	Plant‐animal‐fungal interactions in Early Devonian Trimerophytes From Gaspé, Canadal	1993
+W2030805804	10.1002/j.1537-2197.1976.tb13204.x	same_work	The title, author and year match.	1.00	0	1	LECLERCQIA COMPLEXA (LYCOPSIDA, MIDDLE DEVONIAN): ITS ANATOMY, AND THE INTERPRETATION OF PYRITE PETRIFACTIONS	1976
+W2032075041	10.1016/j.crpv.2008.08.002	same_work	The title and authors match; the years differ by one.	1.00	0	1	L’évolution des premiers arbres : les stratégies dévoniennes	2008
+W2032102452	10.1111/j.1759-6831.2010.00096.x	same_work	The title and authors match, and the cited years are 2010 and 2011.	1.00	0	2	Early evolution of life cycles in embryophytes: A focus on the fossil evidence of gametophyte/sporophyte size and morphological complexity	2010
+W2035299838	10.1111/j.1469-8137.2009.03056.x	same_work	The title and first author match; the years differ by one.	1.00	0	4	Earliest rooting system and root : shoot ratio from a new Zosterophyllum plant	2009
+W2035822133	10.1038/nature05705	same_work	The title, first author and year match.	1.00	0	1	Giant cladoxylopsid trees resolve the enigma of the Earth’s earliest forest stumps at Gilboa	2007
+W2036261648	10.1016/s0034-6667(01)00058-6	same_work	The title, author and year match.	1.00	0	1	Rotted wood–alga–fungus: the history and life of Prototaxites Dawson 1859	2001
+W2036650982	10.1111/nph.12670	same_work	The title, author and year match.	1.00	0	2	The nature and evolutionary relationships of the earliest land plants	2014
+W2038242897	10.2307/2399750	same_work	The title, author and year match.	1.00	0	1	Phylogenetic Relationships of the Zosterophylls and Lycopsids: Evidence from Morphology, Paleoecology, and Cladistic Methods of Inference	1992
+W2038273791	10.1038/ncomms5485	same_work	The title, first author and year match.	1.00	0	1	A Cenozoic-style scenario for the end-Ordovician glaciation	2014
+W2039198316	10.1139/b04-049	same_work	The title, author and year match.	1.00	0	1	Induced apogamy in Tmesipteris (Psilotaceae)	2004
+W2039879168	10.1073/pnas.1319091111	same_work	The title, first author and year match.	1.00	0	1	The fossilized birth–death process for coherent calibration of divergence-time estimates	2014
+W2040828597	10.1016/j.epsl.2011.08.042	same_work	The title and year match, and OpenAlex shortens Le Hir to Hir.	1.00	0	1	The climate change caused by the land plant invasion in the Devonian	2011
+W2041239910	10.3732/ajb.1100245	same_work	The title and first author match; the years differ by one.	1.00	1	1	Aeroterrestrial Coleochaete (Streptophyta, Coleochaetales) models early plant adaptation to land	2011
+W2041335329	10.1086/336782	same_work	The title, first author and year match.	1.00	0	1	A New Species of Sawdonia with Notes on the Origin of Microphylls and Lateral Sporangia	1975
+W2041856985	10.1111/j.1502-3931.1979.tb01017.x	same_work	The title, first author and year match.	1.00	0	1	The earliest vascular land plants: continuing the search for proof	1979
+W2042632567	10.1086/669914	same_work	The title, authors and year match.	1.00	0	1	Forania Plegiospinosa, gen. et sp. nov.: A Zosterophyll from the Early Devonian of New Brunswick, Canada, with a Novel Emergence Type	2013
+W2042865811	10.1086/297089	same_work	The title, first author and year match.	1.00	0	2	The Gametophyte Generation of Some Early Devonian Land Plants	1993
+W2042880085	10.1016/0034-6667(95)00119-0	same_work	The title, first author and year match.	1.00	0	1	Ordovician and Silurian cryptospores and miospores from southeastern Turkey	1996
+W2042937731	10.1111/j.1469-8137.2007.02008.x	same_work	The title, first author and year match.	1.00	0	2	Fungal endophytes in a 400‐million‐yr‐old land plant: infection pathways, spatial distribution, and host responses	2007
+W2043114724	10.1126/science.1065156	same_work	The title, first author and year match.	1.00	0	1	The Closest Living Relatives of Land Plants	2001
+W2043151796	10.1017/s0263593300000778	same_work	The title, author and year match.	1.00	0	1	Embryophytic sporophytes in the Rhynie and Windyfield cherts	2003
+W2043162718	10.15517/rbt.v62i3.12330	same_work	The title and year match, and Barón corresponds to the cited first author's name Rincon Baron.	0.57	0	1	Esporogénesis, esporodermo y ornamentación de esporas maduras en Lycopodiaceae	2014
+W2044797544	10.1111/nph.12210	same_work	The title, first author and year match.	1.00	0	1	Next‐generation dynamic global vegetation models: learning from community ecology	2013
+W2046556443	10.1016/0034-6667(72)90005-x	same_work	The title, first author and year match.	1.00	0	1	Leclercqia complexa gen. et sp. nov., a new Lycopod from the late middle devonian of eastern New York	1972
+W2046954615	10.1016/j.earscirev.2011.01.007	same_work	The title, authors and year match.	1.00	0	1	The Palaeozoic geography of Laurentia and western Laurussia: A stable craton with mobile margins	2011
+W2047225827	10.1006/bojl.1994.1055	same_work	The title, first author and year match.	1.00	0	1	Lower Devonian coalified sporangia from Shropshire: Salopella Edwards & Richardson and Tortilicaulis Edwards	1994
+W2048319710	10.1144/0016-76492011-072	same_work	The title, first author and year match.	1.00	0	1	Siluro-Devonian landscapes of southern Britain: the stability and nature of early vascular plant habitats	2012
+W2048864911	10.1126/science.1169659	same_work	The title, first author and year match.	1.00	0	3	Origin and Radiation of the Earliest Vascular Land Plants	2009
+W2049287837	10.1139/b78-196	same_work	The title, author and year match.	1.00	0	1	Observations on hypnospores in Ulothrix zonata (Chlorophyceae)	1978
+W2049326886	10.1038/287041a0	same_work	The title, authors and year match.	1.00	0	1	Records of Cooksonia-type sporangia from late Wenlock strata in Ireland	1980
+W2050881650	10.1666/0094-8373(2008)034[0179:hgwcti]2.0.co;2	same_work	The title, author and year match.	1.00	0	2	How green was Cooksonia? The importance of size in understanding the early evolution of physiology in the vascular plant lineage	2008
+W2051320606	10.1038/378244a0	same_work	The title, first author and year match.	1.00	0	1	The oldest fossil lichen	1995
+W2051361972	10.1111/j.0022-3646.1985.00228.x	same_work	The first author and year match, and the title differs only by an apparent footnote marker.	1.00	0	1	LIGHT AND TEMPERATURE AS FACTORS REGULATING SEASONAL GROWTH AND DISTRIBUTION OF ULOTHRIX ZONATA (ULVOPHYCEAE)1	1985
+W2052144451	10.1016/j.revpalbo.2012.03.008	same_work	The title, first author and year match.	1.00	0	1	Notes on sporangia and spore masses containing tetrads or monads from the Lower Devonian (Lochkovian) of the Welsh Borderland, U.K.	2012
+W2053298097	10.1134/s0031030109010110	same_work	The title, first author and year match.	1.00	0	1	The most ancient terrestrial lichen Winfrenatia reticulata: A new find and new interpretation	2009
+W2053659818	10.1016/j.revpalbo.2007.09.002	same_work	The title and first author match; the years differ by one.	1.00	0	1	Earth's oldest liverworts—Metzgeriothallus sharonae sp. nov. from the Middle Devonian (Givetian) of eastern New York, USA	2007
+W2053955906	10.1111/j.1095-8339.1983.tb00715.x	same_work	The title, first author and year match.	1.00	0	1	A late Wenlock flora from Co. Tipperary, Ireland	1983
+W2054731803	10.1016/s0034-6667(00)00038-5	same_work	The title, author and year match.	1.00	0	1	A reconsideration of Wattieza Stockmans (here attributed to Cladoxylopsida) based on a new species from the Devonian of Venezuela	2000
+W2054852759	10.1080/01916122.1983.9989263	same_work	The title, authors and year match despite missing spaces in OpenAlex.	0.89	0	1	The morphology and ultrastructure of spores of the Early Devonian trimerophytePsilophyton(Dawson) Hueber & Banks	1983
+W2055801152	10.1086/648988	same_work	The title, authors and year match despite missing spaces in OpenAlex.	0.67	0	3	A New Definition and a Lectotypification of the GenusCooksoniaLang 1937	2010
+W2056047887	10.1038/nature11777	same_work	The title and author match; the years differ by one.	1.00	1	1	Ediacaran life on land	2012
+W2056458619	10.1126/science.215.4540.1625	same_work	The title, author and year match.	1.00	0	1	Lower Devonian Gametophytes: Relation to the Phylogeny of Land Plants	1982
+W2056900964	10.1017/s0016756807004207	same_work	The title and authors match; the years differ by one.	1.00	1	1	The earliest phyllolepid (Placodermi, Arthrodira) from the Late Lochkovian (Early Devonian) of Yunnan (South China)	2007
+W2057155915	10.1002/j.1537-2197.1984.tb12546.x	same_work	The title, author and year match.	1.00	0	1	COLEOCHAETE AND THE ORIGIN OF LAND PLANTS	1984
+W2058305913	10.1016/j.gca.2010.10.014	same_work	The title and first author match; the years differ by one.	1.00	0	2	40Ar/39Ar dating of hydrothermal activity, biota and gold mineralization in the Rhynie hot-spring system, Aberdeenshire, Scotland	2010
+W2059055533	10.1016/j.palaeo.2006.02.022	same_work	The title and first author match; the years differ by one.	1.00	1	1	δ13C records across the late Silurian Lau event: New data from middle palaeo-latitudes of northern peri-Gondwana (Prague Basin, Czech Republ	2006
+W2060561802	10.1016/0034-6667(80)90057-3	same_work	The title, author and year match.	1.00	0	1	Evidence for the sporophytic status of the lower devonian plant rhynia gwynne-vaughanii kidston and Lang	1980
+W2061290802	10.1016/0034-6667(76)90009-9	same_work	The title, author and year match.	1.00	0	1	Renalia hueberi, a new plant from the lower Devonian of Gaspé	1976
+W2062513300	10.1071/sb9880171	same_work	The title, author and year match.	1.00	0	1	Early tertiary Tmesipteris (Psilotaceae) macrofossil from Tasmania	1988
+W2062921085	10.1016/s0034-6667(01)00059-8	same_work	The title, first author and year match.	1.00	0	1	Land plants in the Devonian Villavicencio Formation, Mendoza Province, Argentina	2001
+W2065609712	10.1002/j.1537-2197.1978.tb10841.x	same_work	The title, authors and year match.	1.00	0	1	THE CUTICLE OF DREPANOPHYCUS SPINAEFORMIS, A LONG‐RANGING DEVONIAN LYCOPOD FROM NEW YORK AND EASTERN CANADA	1978
+W2066270131	10.1002/j.1537-2197.1979.tb06248.x	same_work	The title, authors and year match.	1.00	0	1	LECLERCQIA COMPLEXA: EARLIEST LIGULATE LYCOPOD (MIDDLE DEVONIAN)	1979
+W2066280433	10.1046/j.1365-3040.2003.00878.x	same_work	The title, author and year match.	1.00	0	1	Xylem in early tracheophytes	2003
+W2066724563	10.1086/303241	same_work	The title, authors and year match.	1.00	0	2	Ecology and the Evolution of Biphasic Life Cycles	1999
+W2067108202	10.1111/j.1095-8339.1988.tb02461.x	same_work	The title, authors and year match.	1.00	0	1	A new Palaeozoic plant closely allied to Prototaxites Dawson	1988
+W2067528677	10.1111/j.1469-8137.2007.02276.x	same_work	The title, authors and year match.	1.00	0	1	Arbuscular mycorrhizal associations in Lycopodiaceae	2007
+W2068754956	10.1016/j.revpalbo.2014.09.003	same_work	The title and first author match; the years differ by one.	1.00	0	1	Spore assemblages from Upper Ordovician and lowermost Silurian sediments recovered from the Qusaiba-1 shallow core hole, Qasim region, centr	2014
+W2069051798	10.1111/j.1095-8339.1986.tb01020.x	same_work	The title, author and year match.	1.00	0	2	Aglaophyton major, a non-vascular land-plant from the Devonian Rhynie Chert	1986
+W2069724781	10.1111/1475-4983.00308	same_work	The title, authors and year match.	1.00	0	1	An Early Devonian arthropod fauna from the Windyfield cherts, Aberdeenshire, Scotland	2003
+W2069937490	10.1111/j.1095-8339.1982.tb01025.x	same_work	The title, author and year match.	1.00	0	1	Dispersed cuticles of putative non-vascular plants from the Lower Devonian of Britain	1986
+W2070964543	10.1126/science.245.4916.399	same_work	The title, first author and year match.	1.00	0	1	Lignin-Like Compounds and Sporopollen in Coleochaete , an Algal Model for Land Plant Ancestry	1989
+W2071401437	10.1007/s11047-008-9089-5	same_work	The title and authors match; the years differ by one.	1.00	1	1	Competition and evolution in virtual plant communities: a new modeling approach	2008
+W2071426562	10.1073/pnas.91.15.6772	same_work	The title, author and year match.	1.00	0	1	Morphological evolution through complex domains of fitness.	1994
+W2072417832	10.1007/bf02932414	same_work	The title, authors and year match.	1.00	0	1	Some new plant finds from the Posongchong Formation of Yunnan, and consideration of a phytogeographic similarity between South China and Aus	1998
+W2072701557	10.1038/ngeo923	same_work	The title, authors and year match.	1.00	0	1	Phanerozoic concentrations of atmospheric oxygen reconstructed from sedimentary charcoal	2010
+W2075768471	10.1073/pnas.91.25.11841	same_work	The title, first author and year match.	1.00	0	3	Four hundred-million-year-old vesicular arbuscular mycorrhizae.	1994
+W2076747603	10.1111/j.1095-8339.2004.00332.x	same_work	The title, first author and year match.	1.00	0	1	New Silurian cooksonias from dolostones of north-eastern North America	2004
+W2077885966	10.1666/04036.1	same_work	The title, authors and year match.	1.00	0	1	Evolution of land plant architecture: beyond the telome theory	2006
+W2077932072	10.1139/b75-201	same_work	The title, first author and year match.	1.00	0	1	A new fossil plant of probable intermediate affinities (Trimerophyte–Progymnosperm)	1975
+W2078252101	10.1111/j.1095-8339.1999.tb00515.x	same_work	The title, first author and year match, although OpenAlex reports a different DOI.	1.00	0	1	Tetrads in sporangia and spore masses from the Upper Silurian and Lower Devonian of the Welsh Borderland	1999
+W2079921604	10.1098/rstb.2000.0612	same_work	The title, authors and year match.	1.00	0	1	The microfossil record of early land plants	2000
+W2081606406	10.1002/j.1537-2197.1972.tb10165.x	same_work	The title, authors and year match.	1.00	0	1	PERTICA, A NEW GENUS OF DEVONIAN PLANTS FROM NORTHERN MAINE	1972
+W2082079550	10.1111/nph.12643	same_work	The title and first author match, and the cited years are 2013 and 2014.	0.83	0	2	Middle D evonian liverwort herbivory and antiherbivore defence	2013
+W2082178368	10.1144/jgs.157.6.1137	same_work	The title, authors and year match.	1.00	0	1	Ludlow (late Silurian) oceanic episodes and events	2000
+W2083274560	10.1086/669913	same_work	The title, authors and year match.	1.00	0	1	Reconstruction and Growth of the Early Tree Calamophyton (Pseudosporochnales, Cladoxylopsida) Based on Exceptionally Complete Specimens from	2013
+W2085103390	10.1144/gsjgs.152.3.0487	same_work	The title, first author and year match.	1.00	0	1	Wenlock (Silurian) oceanic episodes and events	1995
+W2085192736	10.1046/j.1095-8339.2002.00073.x	same_work	The title, first author and year match.	1.00	0	1	New perspectives on Cooksonia from the Lower Devonian of the Welsh Borderland	2002
+W2085549823	10.1007/s10265-009-0234-8	same_work	The title, authors and year match.	1.00	0	1	Phylogenetic affinity of arbuscular mycorrhizal symbionts in Psilotum nudum	2009
+W2086463207	10.1111/j.1475-4983.2005.00501.x	same_work	The title, authors and year match.	1.00	0	1	A HEXAPOD FROM THE EARLY DEVONIAN WINDYFIELD CHERT, RHYNIE, SCOTLAND	2005
+W2087542883	10.1086/342037	same_work	The title, authors and year match.	1.00	0	1	The Architecture of Pseudosporochnus nodosus Leclercq et Banks: A Middle Devonian Cladoxylopsid from Belgium	2002
+W2088421798	10.3389/fpls.2015.00072	same_work	The title, first author and year match.	1.00	0	1	The green seaweed Ulva: a model system to study morphogenesis	2015
+W2088703719	10.1002/j.1537-2197.1982.tb13305.x	same_work	The title, author and year match.	1.00	0	1	A NEW SPECIES OF ZOSTEROPHYLLUM FROM THE EARLY DEVONIAN OF NEW BRUNSWICK	1982
+W2089728012	10.1126/science.1197985	same_work	The title and authors match; the years differ by one.	1.00	1	2	Passive Origins of Stomatal Control in Vascular Plants	2010
+W2090114393	10.1126/science.289.5486.1920	same_work	The title, first author and year match.	1.00	0	1	Glomalean Fungi from the Ordovician	2000
+W2091539779	10.1016/0034-6667(87)90001-7	same_work	The title, first author and year match.	1.00	0	1	Spore stratigraphy and correlation with faunas and floras in the type marine devonian of the Ardenne-Rhenish regions	1987
+W2092122823	10.1002/j.1537-2197.1983.tb12439.x	same_work	The title, authors and year match.	1.00	0	1	THE OCCURRENCE AND PHYLOGENETIC SIGNIFICANCE OF PUTATIVE PLACENTAL TRANSFER CELLS IN THE GREEN ALGA COLEOCHAETE	1983
+W2092158082	10.1144/sjg36020115	same_work	The title, Braddy and year match.	1.00	0	1	Eurypterids from the Early Devonian of the Midland Valley of Scotland	2000
+W2092415718	10.1016/j.cub.2011.04.044	same_work	The title, first author Ruszala and year match.	1.00	0	1	Land Plants Acquired Active Stomatal Control Early in Their Evolutionary History	2011
+W2092527957	10.1038/323438a0	same_work	The title, first author Edwards and year match.	1.00	0	1	Stomata and sterome in early land plants	1986
+W2092642296	10.1016/j.revpalbo.2010.09.005	same_work	The title, Gonez and Gerrienne, and year match.	1.00	0	2	Aberlemnia caledonica gen. et comb. nov., a new name for Cooksonia caledonica Edwards 1970	2010
+W2093022181	10.1139/b05-102	same_work	The title, Duckett and Ligrone, and year match.	1.00	0	1	A comparative cytological analysis of fungal endophytes in the sporophyte rhizomes and vascularized gametophytes of Tmesipteris and Psilotum	2005
+W2093107922	10.1002/j.1537-2197.1983.tb12475.x	same_work	The title, Stubblefield and Banks, and year match.	1.00	0	1	FUNGAL REMAINS IN THE DEVONIAN TRIMEROPHYTE PSILOPHYTON DAWSONII	1983
+W2093644321	10.1073/pnas.0402787101	same_work	The title, first author Osborne and year match.	1.00	0	1	Biophysical constraints on the origin of leaves inferred from the fossil record	2004
+W2093659493	10.1016/s0022-5193(88)80203-0	same_work	The title, Haig and Westoby, and year match.	1.00	0	1	A model for the origin of heterospory	1988
+W2094367398	10.1139/b00-062	same_work	The title, first author Li and year match.	1.00	0	1	A neotype for Drepanophycus spinaeformis Göppert 1852	2000
+W2094995282	10.1669/0883-1351(2004)019<0113:aeitdo>2.0.co;2	same_work	The title, Edwards and Axe, and year match.	1.00	0	1	Anatomical Evidence in the Detection of the Earliest Wildfires	2004
+W2095182717	10.1111/j.1095-8339.1992.tb00264.x	same_work	The title, first author Fanning and year match.	1.00	0	1	A diverse assemblage of early land plants from the Lower Devonian of the Welsh Borderland	1992
+W2095790082	10.1016/j.revpalbo.2006.05.005	same_work	The title, first author Gerrienne and year match.	1.00	0	1	An exceptional specimen of the early land plant Cooksonia paranensis, and a hypothesis on the life cycle of the earliest eutracheophytes	2006
+W2095818839	10.2307/2446290	same_work	The title, first author Taylor and year match.	1.00	0	1	A cyanolichen from the Lower Devonian Rhynie chert	1997
+W2096186766	10.3389/fpls.2013.00327	same_work	The title, Holzinger and Karsten, and year match.	1.00	0	1	Desiccation stress and tolerance in green algae: consequences for ultrastructure, physiological and molecular mechanisms	2013
+W2097459672	10.1098/rstb.2005.1794	same_work	The title, Haig and Wilczek, and year match.	1.00	0	2	Sexual conflict and the alternation of haploid and diploid generations	2006
+W2098097608	10.1111/j.1472-4669.2010.00269.x	same_work	The title, Wilson and Fischer, and year match.	1.00	0	1	Hydraulics of Asteroxylon mackei, an early Devonian vascular plant, and the early evolution of water transport tissue in terrestrial plants	2011
+W2100617670	10.1098/rspb.2010.0201	same_work	The title, Hobbie and Boyce, and year match.	1.00	0	1	Carbon sources for the Palaeozoic giant fungus Prototaxites inferred from modern analogues	2010
+W2100880278	10.1017/s0016756800021506	same_work	The title matches apart from spacing, as do first author Morel and year.	0.75	0	1	The first record ofCooksoniafrom South Americain Silurian rocks of Bolivia	1995
+W2101155295	10.1111/boj.12119	same_work	The title matches apart from spacing, as do first author Edwards and year.	0.83	0	1	Contributions to the diversity in cryptogamic covers in the mid-Palaeozoic:Nematothallusrevisited	2013
+W2101891826	10.1038/35054555	same_work	The title, first author Pryer and year match.	1.00	0	1	Horsetails and ferns are a monophyletic group and the closest living relatives to seed plants	2001
+W2102123005	10.1073/pnas.0408724102	same_work	The title, Beerling and Berner, and year match.	1.00	0	1	Feedbacks and the coevolution of plants and atmospheric CO 2	2005
+W2102941134	10.1111/j.1472-4669.2009.00193.x	same_work	The title, Franks and Beerling, and year match.	1.00		1	CO2‐forced evolution of plant gas exchange capacity and water‐use efficiency over the Phanerozoic	2009
+W2103488625	10.1098/rstb.2011.0271	same_work	The title, first author Kenrick and year match.	1.00	0	2	A timeline for terrestrialization: consequences for the carbon cycle in the Palaeozoic	2012
+W2104311392	10.1017/s0016756800003964	same_work	The title, first author Berry and year match.	1.00	0	1	Devonian plants from Colombia, with discussion of their geological and palaeogeographical context	2000
+W2107800729	10.1111/j.1365-3040.2005.01434.x	same_work	The title and Franks match; the years differ by one.	1.00	0	1	Higher rates of leaf gas exchange are associated with higher leaf hydrodynamic pressure gradients	2005
+W2108985444	10.1111/j.1469-8137.1969.tb06491.x	same_work	The title, Edwards and year match.	1.00	0	1	ZOSTEROPHYLLUM FROM THE LOWER OLD RED SANDSTONE OF SOUTH WALES	1969
+W2110547811	10.1017/s0094837300016766	same_work	The title, Marshall and year match.	1.00	0	1	Confidence intervals on stratigraphic ranges with nonrandom distributions of fossil horizons	1997
+W2110726686	10.1093/aob/mcv021	same_work	The title matches apart from spacing, as do first author Field and year.	1.00	0	1	Stomatal density and aperture in non-vascular land plants are non-responsive to above-ambient atmospheric CO2concentrations	2015
+W2111535271	10.3732/ajb.0900322	same_work	The title, first author Graham and year match.	1.00	0	1	Structural, physiological, and stable carbon isotopic evidence that the enigmatic Paleozoic fossil Prototaxites formed from rolled liverwort	2010
+W2112174729	10.3732/ajb.89.6.1004	same_work	The title, first author Kotyk and year match.	1.00	0	2	Morphologically complex plant macrofossils from the Late Silurian of Arctic Canada	2002
+W2112210436	10.1093/aob/mcs017	same_work	The title, first author Ligrone and year match.	1.00	0	1	Major transitions in the evolution of early land plants: a bryological perspective	2012
+W2112933710	10.1111/j.1095-8339.1995.tb00468.x	same_work	The title, Li and Edwards, and year match.	1.00	0	1	A re-investigation of Halle's Drepanophycus spinaeformis Göpp. from the Lower Devonian of Yunnan Province, southern China	1995
+W2113756833	10.1016/j.epsl.2009.05.028	same_work	The title, first author Joachimski and year match.	1.00	0	1	Devonian climate and reef evolution: Insights from oxygen isotopes in apatite	2009
+W2113953912	10.1017/s0080456800016422	same_work	The cited part VI appears in the longer OpenAlex title, with Lang and year matching.	0.84	0	1	XIX.—Contributions to the Study of the Old Red Sandstone Flora of Scotland. VI. On Zosterophyllum myretonianum, Penh., and Some Other Plant-	1927
+W2114717770	10.1098/rstb.1985.0077	same_work	The title, Gray and Lawson, and year match.	1.00	0	1	The microfossil record of early land plants: advances in understanding of early terrestrialization, 1970-1984	1985
+W2115362078	10.1017/s0263593300000791	same_work	The title, first author Wellman and year match.	1.00	0	1	Spores of the Rhynie chert plant Horneophyton lignieri (Kidston & Lang) Barghoorn & Darrah, 1938	2003
+W2115421312	10.1016/s0031-0182(03)00634-5	same_work	The title, Roth-Nebelsick and Konrad, and year match.	1.00	0	2	Assimilation and transpiration capabilities of rhyniophytic plants from the Lower Devonian and their implications for paleoatmospheric CO2 c	2003
+W2115540617	10.1111/let.12051	same_work	The title and authors match; the years differ by one.	1.00	1	2	Diversity dynamics of Zosterophyllopsida	2013
+W2118077543	10.1111/nph.12645	same_work	The title, first author Edwards and year match.	1.00	0	2	Cryptospores and cryptophytes reveal hidden diversity in early land floras	2014
+W2118657120	10.1139/b78-369	same_work	The title, first author Doran and year match.	1.00	0	1	New occurrences of trimerophytes from the Devonian of eastern Canada	1978
+W2118680291	10.1146/annurev.earth.32.092203.122440	same_work	The title, Niklas and year match.	1.00	0	1	COMPUTER MODELS OF EARLY LAND PLANT EVOLUTION	2004
+W2122060598	10.1017/s0016756802007276	same_work	The title, first author Meyer-Berthaud and year match.	1.00	0	1	The plant Leclercqia (Lycopsida) in Gondwana: implications for reconstructing Middle Devonian palaeogeography	2003
+W2123966856	10.1017/s026359330000078x	same_work	The title, first author Kerp and year match.	1.00	0	1	New gametophytes from the Early Devonian Rhynie chert	2003
+W2124355187	10.1080/00275514.1995.12026569	same_work	The title, first author Taylor and year match.	1.00	0	2	Fossil Arbuscular Mycorrhizae from the Early Devonian	1995
+W2126617107	10.1093/jxb/50.330.39	same_work	The title, Niklas and year match.	1.00	0	1	Evolutionary walks through a land plant morphospace	1999
+W2127694035	10.2307/2657074	same_work	The title, Fairon-Demaret and Leponce, and year match.	1.00	0	1	Leaf dimorphism in Archaeopteris roemeriana (Progymnosperm): further early fossil evidence of shoot dorsiventrality	2001
+W2128763697	10.1046/j.0028-646x.2001.00334.x	same_work	The title, Raven and year match.	1.00	0	1	Selection pressures on stomatal evolution	2002
+W2129210808	10.1073/pnas.0501985102	same_work	The title, first author Taylor and year match.	1.00	0	2	Life history biology of early land plants: Deciphering the gametophyte phase	2005
+W2129700976	10.1104/pp.114.244517	same_work	The title, Kenrick and Strullu-Derrien, and year match.	1.00	0	1	The Origin and Early Evolution of Roots	2014
+W2131080661	10.1017/s0263593300002662	same_work	The title, first author Powell and year match.	1.00	0	1	A new vascular plant from the Lower Devonian Windyfield chert, Rhynie, NE Scotland	1999
+W2131582601	10.1104/pp.15.00134	same_work	The title, first author Doi and year match.	1.00	0	1	Stomatal Blue Light Response Is Present in Early Vascular Plants	2015
+W2131810820	10.3732/ajb.1300024	same_work	The title, Hoffman and Tomescu, and year match.	1.00	0	1	An early origin of secondary growth: Franhueberia gerriennei gen. et sp. nov. from the Lower Devonian of Gaspé (Quebec, Canada)	2013
+W2133692128	10.5194/bg-10-6989-2013	same_work	The title, first author Porada and year match.	1.00	0	1	Estimating global carbon uptake by lichens and bryophytes with a process-based model	2013
+W2134299534	10.1093/pcp/pcr038	same_work	The title, first author Gao and year match.	1.00	0	1	PSI-Driven Cyclic Electron Flow Allows Intertidal Macro-Algae Ulva sp. (Chlorophyta) to Survive in Desiccated Conditions	2011
+W2134817105	10.1073/pnas.1213498109	same_work	The title, Villarreal and Renner, and year match.	1.00	0	1	Hornwort pyrenoids, carbon-concentrating structures, evolved and were lost at least five times during the last 100 million years	2012
+W2137478748	10.1111/nph.12805	same_work	The title matches apart from spacing, as do first author Strullu-Derrien and year.	0.87	0	3	Fungal associations in H orneophyton ligneri from the R hynie C hert (c. 407 million year old) closely resemble those in extant lower land p	2014
+W2137937699	10.1111/nph.13024	same_work	The title and first author match despite spacing artefacts; the years differ by one.	0.81	1	1	First evidence of mutualism between ancient plant lineages ( H aplomitriopsida liverworts) and M ucoromycotina fungi and its response to sim	2014
+W2138585600	10.1666/0094-8373(2002)028<0070:eodpat>2.0.co;2	same_work	The title, Boyce and Knoll, and year match.	1.00	0	2	Evolution of developmental potential and the multiple independent origins of leaves in Paleozoic vascular plants	2002
+W2140021911	10.1144/0016-76492010-074	same_work	The title, first author Decombeix and year match.	1.00	0	1	Transitional changes in arborescent lignophytes at the Devonian–Carboniferous boundary	2011
+W2140256181	10.1017/s0016756800003800	same_work	The title, Rickards and year match.	1.00	0	2	The age of the earliest club mosses: the Silurian Baragwanathia flora in Victoria, Australia	2000
+W2140275405	10.1017/s0263593300013997	same_work	The title, Rayner and year match.	1.00	0	1	New finds of Drepanophycus spinaeformis Göppert from the Lower Devonian of Scotland	1984
+W2140479142	10.2475/ajs.304.5.397	same_work	The title, Bergman and year match.	1.00	0	1	COPSE: A new model of biogeochemical cycling over Phanerozoic time	2004
+W2140598164	10.1073/pnas.1011287107	same_work	The title, first author Dahl and year match.	1.00	0	2	Devonian rise in atmospheric oxygen correlated to the radiations of terrestrial plants and large predatory fish	2010
+W2140993687	10.2110/palo.2009.p09-086r	same_work	The title, first author Mintz and year match.	1.00	0	1	ENVIRONMENTAL AND ECOLOGICAL VARIABILITY OF MIDDLE DEVONIAN (GIVETIAN) FORESTS IN APPALACHIAN BASIN PALEOSOLS, NEW YORK, UNITED STATES	2010
+W2141043581	10.1073/pnas.0904209106	same_work	The title, Franks and Beerling, and year match.	1.00		1	Maximum leaf conductance driven by CO 2 effects on stomatal size and density over geologic time	2009
+W2141278465	10.2110/palo.2008.p08-046r	same_work	The title, Taylor and Wellman, and year match.	1.00	0	1	ULTRASTRUCTURE OF ENIGMATIC PHYTOCLASTS (BANDED TUBES) FROM THE SILURIAN–LOWER DEVONIAN: EVIDENCE FOR AFFINITIES AND ROLE IN EARLY TERRESTRI	2009
+W2141391485	10.1098/rstb.2011.0251	same_work	The title, first author Taylor and year match.	1.00	0	1	Evaluating the effects of terrestrial ecosystems, climate and carbon dioxide on weathering over geological time: a global-scale process-base	2012
+W2141987812	10.1080/07352689.2011.615705	same_work	The title, first author Leliaert and year match.	1.00	0	1	Phylogeny and Molecular Evolution of the Green Algae	2012
+W2143416871	10.1111/j.1755-6724.2009.00057.x	same_work	The title, Xue and year match.	1.00	0	1	Two Zosterophyll Plants from the Lower Devonian (Lochkovian) Xitun Formation of Northeastern Yunnan, China	2009
+W2144704050	10.1016/j.ympev.2015.09.024	same_work	The title and first author Field match; the years differ by one.	1.00	0	1	Molecular phylogenetics and the morphology of the Lycopodiaceae subfamily Huperzioideae supports three genera: Huperzia, Phlegmariurus and P	2015
+W2145118020	10.1111/nph.13247	same_work	The title, first author Silvestro and year match.	1.00	0	1	Revisiting the origin and diversification of vascular plants through a comprehensive Bayesian analysis of the fossil record	2015
+W2146161478	10.1144/jgs2012-089	same_work	Both identify Parry and colleagues' reply with the same title and year.	0.92	0	1	Reply to Discussion on ‘A high-precision U–Pb age constraint on the Rhynie Chert Konservat-Lagerstätte: time scale and other implications’	2013
+W2147895468	10.1017/s0016756898008723	same_work	The title, first author Wellman and year match.	1.00	0	1	The Cosheston Group (Lower Old Red Sandstone) in southwest Wales: age, correlation and palaeobotanical significance	1998
+W2148814098	10.1093/jexbot/49.suppl_1.255;10.1093/jxb/49.special_issue.255	same_work	The title, first author Edwards and year match, although OpenAlex indicates additional authors.	1.00	0	4	Stomata in early land plants: an anatomical and ecophysiological approach	1998
+W2149965641	10.1111/j.1095-8339.1984.tb02566.x	same_work	The title, first author Garratt and year match.	1.00	0	1	The appearance of Baragwanathia (Lycophytina) in the Silurian	1984
+W2150004271	10.1098/rstb.1935.0004	same_work	The title, Lang and Cookson, and year match.	1.00	0	1	IX-On a flora, including vascular land plants, associated with Monograptus , in rocks of Silurian age, from Victoria, Australia	1935
+W2153033832	10.1111/j.1529-8817.1976.tb02822.x	same_work	The title, Hopkins and McBride, and year match despite different DOI strings.	1.00	0	1	THE LIFE HISTORY OF COLEOCHAETE SCUTATA (CHLOROPHYCEAE) STUDIED BY A FEULGEN MICROSPECTROPHOTOMETRIC ANALYSIS OF THE DNA CYCLE1,2	1976
+W2153244595	10.1144/pygs.44.4.377	same_work	The title, Garratt and Rickards, and year match.	1.00	0	1	GRAPTOLITE BIOSTRATIGRAPHY OF EARLY LAND PLANTS FROM VICTORIA, AUSTRALIA	1984
+W2153628939	10.1016/j.gca.2005.11.032	same_work	The title, Berner and year match.	1.00	0	1	GEOCARBSULF: A combined model for Phanerozoic atmospheric O2 and CO2	2006
+W2153753726	10.3732/ajb.0800422	same_work	The title, first author Wellman and year match.	1.00	0	1	Spore wall ultrastructure in the early lycopsid Leclercqia (Protolepidodendrales) from the Lower Devonian of North America: Evidence for a f	2009
+W2156426644	10.1126/science.1200803	same_work	The title, first author Finnegan and year match.	1.00	0	1	The Magnitude and Duration of Late Ordovician–Early Silurian Glaciation	2011
+W2158367170	10.1017/s0016756800010785	same_work	The title, Berry and year match.	1.00	0	1	First record of the Devonian lycophyte Leclercqia from South America	1994
+W2158487893	10.1111/j.1469-8137.2011.04009.x	same_work	The title, Prusinkiewicz and Runions, and year match.	1.00	0	1	Computational models of plant development and form	2012
+W2158497255	10.1073/pnas.1515426112	same_work	The title, first author Delaux and year match.	1.00	0	1	Algal ancestor of land plants was preadapted for symbiosis	2015
+W2158862881	10.1093/jxb/ern005	same_work	The title, Adams and Duggan, and year match.	1.00	0	1	Cyanobacteria-bryophyte symbioses	2008
+W2159986935	10.1098/rstb.2014.0343	same_work	Both identify the same commentary by Edwards and Kenrick in 2015.	1.00	0	2	The early evolution of land plants, from fossils to genomics: a commentary on Lang (1937) ‘On the plant-remains from the Downtonian of Engla	2015
+W2160839254	10.3732/ajb.1400526	same_work	The title, Haig and year match.	1.00	0	2	Coleochaete and the origin of sporophytes	2015
+W2161374034	10.1640/0002-8444(2001)091[0074:ele]2.0.co;2	same_work	The title, Gensel and Berry, and year match.	1.00	0	1	Early Lycophyte Evolution	2001
+W2161761696	10.1093/jxb/52.suppl_1.381	same_work	The title, Raven and Edwards, and year match despite different DOI strings.	1.00	0	1	Roots: evolutionary origins and biogeochemical significance	2001
+W2161789352	10.1016/s0169-5347(03)00061-2	same_work	The title, Falster and Westoby, and year match.	1.00	0	1	Plant height and evolutionary games	2003
+W2162272794	10.1111/pala.12172	same_work	The title, Wellman and Strother, and year match.	1.00	0	1	The terrestrial biota prior to the origin of land plants (embryophytes): a review of the evidence	2015
+W2164431497	10.1111/j.1475-4983.2012.01203.x	same_work	The title, Smith and Butterfield, and year match.	1.00	0	1	A new view on Nematothallus: coralline red algae from the Silurian of Gotland	2013
+W2168671695	10.1017/s026359330001018x	same_work	The title, Rayner and year match.	1.00	0	1	New observations on Sawdonia ornata from Scotland	1983
+W2169556026	10.1002/(sici)1521-1878(199806)20:6<453::aid-bies3>3.0.co;2-n	same_work	The title, Mable and Otto, and year match.	1.00	0	2	The evolution of life cycles with haploid and diploid phases	1998
+W2169728124	10.1371/journal.pone.0035168	same_work	The title, first author Liu and year match.	1.00	0	1	The Mitochondrial Genome of the Lycophyte Huperzia squarrosa: The Most Archaic Form in Vascular Plants	2012
+W2169930247	10.1111/j.1469-185x.1994.tb01270.x	same_work	The title, Hemsley and year match.	1.00	0	2	THE ORIGIN OF THE LAND PLANT SPOROPHYTE: AN INTERPOLATIONAL SCENARIO	1994
+W2169956022	10.1144/jgs2011-110	same_work	Both identify the same discussion by Mark and colleagues in 2013.	1.00	0	2	Discussion on ‘A high-precision U–Pb age constraint on the Rhynie Chert Konservat-Lagerstätte: time scale and other implications’	2013
+W2170403280	10.1098/rstb.1937.0004	same_work	The title, Lang and year match.	1.00	0	1	IV - On the plant-remains from the Downtonian of England and Wales	1937
+W2170645514	10.1098/rsbl.2010.1203	same_work	The title, first author Bidartondo and year match.	1.00	0	1	The dawn of symbiosis between plants and fungi	2011
+W2173319123	10.1016/j.palaeo.2015.11.011	same_work	The title and first author Trotter match; the years differ by one.	1.00	1	1	New conodont δ18O records of Silurian climate change: Implications for environmental and biological events	2015
+W2176407474	10.1038/ismej.2015.204	same_work	The title and first author Field match; the years differ by one.	1.00	0	1	Functional analysis of liverworts in dual symbiosis with Glomeromycota and Mucoromycotina fungi under a simulated Palaeozoic CO2 decline	2015
+W2180111115	10.1086/503298	same_work	The title, Rothwell and Nixon, and year match.	1.00	0	1	How Does the Inclusion of Fossil Data Change Our Conclusions about the Phylogenetic History of Euphyllophytes?	2006
+W2189730485	10.1016/j.revpalbo.2015.10.005	same_work	The title and Cascales-Miñana match; the years differ by one.	1.00	1	2	Apparent changes in the Ordovician–Mississippian plant diversity	2015
+W2192458197	10.1016/j.revpalbo.2015.11.010	same_work	The title and Wilson match; the years differ by one.	1.00	1	1	Hydraulics of Psilophyton and evolutionary trends in plant water transport after terrestrialization	2015
+W2204015004	10.1017/s0022336000025476	same_work	The title and Strother authorship match.	1.00	0	1	Clarification of the genus Nematothallus Lang	1993
+W2204890871	10.1017/s0094837300009672	same_work	The title and Marshall authorship match.	1.00	0	1	Confidence intervals on stratigraphic ranges	1990
+W2212190615	10.1017/s0094837300008034	same_work	The title and Niklas and Kerchner authorship match.	1.00	0	2	Mechanical and photosynthetic constraints on the evolution of plant shape	1984
+W2225626096	10.1098/rspb.2015.1115	same_work	The title and first author Quirk match.	1.00	0	2	Constraining the role of early land plants in Palaeozoic weathering and global cooling	2015
+W2258997633	10.1669/0883-1351(2001)016<0171:eoekw>2.0.co;2	same_work	The title and Cressler authorship match.	1.00	0	1	Evidence of Earliest Known Wildfires	2001
+W2278601854	10.1093/aob/mcw006	same_work	The title and Matsunaga and Tomescu authorship match.	1.00	0	1	Root evolution at the base of the lycophyte clade: insights from an Early Devonian lycophyte	2016
+W2286735540	10.1111/2041-210x.12525	same_work	The title and first author Falster match.	1.00	0	1	plant: A package for modelling forest trait ecology and evolution	2016
+W2288574588	10.1086/684167	same_work	The title and first author Rescan match; the years differ by one.	1.00	1	1	Interactions between Genetic and Ecological Effects on the Evolution of Life Cycles	2015
+W2289323837	10.37570/bgsd-1986-35-14	same_work	The title and Garratt and Rickards authorship match.	1.00	0	1	Pridoli (Silurian) Graptolites in association with Baragwanathia (Lycophytina)	1987
+W2292842751	10.1111/boj.12389	same_work	The title and Smith authorship match.	1.00	0	1	Cord-forming Palaeozoic fungi in terrestrial assemblages	2016
+W2298508506	10.17161/dt.v0i0.5084	same_work	The chapter designation, pages and first author Feist match.	1.00	0	1	Part B, Protista 1, Ch. 3, p. 47-76	2005
+W2300790066	10.17161/dt.v0i0.5083	same_work	The chapter designation, pages and Feist and Guerlesquin authorship match.	1.00	0	1	Part B, Protista 1, Ch. 2, p. 29-46	2005
+W2304393580	10.17161/dt.v0i0.5086	same_work	The chapter designation, pages and Feist and Grambast-Fessard authorship match.	1.00	0	1	Part B, Protista 1, Ch. 5, p. 92-151	2005
+W2308284788	10.1017/s0094837300013087	same_work	The title and Raymond and Metz authorship match.	1.00	0	1	Laurussian land-plant diversity during the Silurian and Devonian: mass extinction, sampling bias, or both?	1995
+W2312319594	10.2307/1484424	same_work	The title and Hoffmeister authorship match.	1.00	0	1	Lower Silurian Plant Spores from Libya	1959
+W2312953052	10.17161/dt.v0i0.5082	same_work	The chapter designation, pages and Guerlesquin and Feist authorship match.	1.00	0	1	Part B, Protista 1, Ch. 1, p. 1-28	2005
+W2314170785	10.2307/1219491	same_work	The title and Banks authorship match.	1.00	0	1	RECLASSIFICATION OF PSILOPHYTA	1975
+W2314927738	10.1144/m38.29	same_work	The title and first author Wellman match.	1.00	0	1	Chapter 29 Palaeophytogeography of Ordovician–Silurian land plants	2013
+W2316283043	10.1017/s0080455x00014703	same_work	The title and Hopping authorship match despite formatting differences.	0.71	0	1	II.—On a Specimen ofPsilophyton robustiusDawson, from the Lower Devonian of Canada	1956
+W2317283026	10.3852/13-390	same_work	The title and Retallack and Landing authorship match.	1.00	0	1	Affinities and architecture of Devonian trunks of Prototaxites loganii	2014
+W2319200161	10.2307/2394879	same_work	The title and Hueber authorship match.	1.00	0	1	Hepaticites devonicus A New Fossil Liverwort from the Devonian of New York	1961
+W2319811024	10.2307/1484881	same_work	The title and Richardson and Ioannides authorship match.	1.00	0	1	Silurian Palynomorphs from the Tanezzuft and Acacus Formations, Tripolitania, North Africa	1973
+W2321184485	10.2307/1216887	same_work	The title and Hueber and Banks authorship match.	1.00	0	1	PSILOPHYTON PRINCEPS: THE SEARCH FOR ORGANIC CONNECTION	1967
+W2322399866	10.1111/j.1558-5646.1985.tb00451.x	same_work	The title and Niklas authorship match.	1.00	0	1	THE EVOLUTION OF TRACHEID DIAMETER IN EARLY VASCULAR PLANTS AND ITS IMPLICATIONS ON THE HYDRAULIC CONDUCTANCE OF THE PRIMARY XYLEM STRAND	1985
+W2322475222	10.2307/1218284	same_work	The title and Hueber authorship match.	1.00	0	1	SAWDONIA ORNATA: A NEW NAME FOR PSILOPHYTON PRINCEPS VAR. ORNATUM	1971
+W2329717328	10.2307/2399759	same_work	The title and Wagner and Beitel authorship match.	1.00	0	1	Generic Classification of Modern North American Lycopodiaceae	1992
+W2331763853	10.1130/b30364.1	same_work	The title and first author Nardin match.	1.00	0	1	Modeling the early Paleozoic long-term climatic trend	2011
+W2334371564	10.1017/s0080456800015507	same_work	The title and Niklas authorship match.	1.00	0	1	21.—Morphological and Ontogenetic Reconstructions of Parka decipiens Fleming and Pachytheca Hooker from the Lower Old Red Sandstone, Scotlan	1976
+W2347207632	10.3389/fpls.2016.00678	same_work	The title and Holzinger and Pichrtová authorship match.	1.00	0	1	Abiotic Stress Tolerance of Charophyte Green Algae: New Challenges for Omics Techniques	2016
+W2357648821	10.1146/annurev-genet-120215-035227	same_work	The title and first author Bowman match; the cited publication is a review.	1.00	0	2	Evolution in the Cycles of Life	2016
+W2371147861	10.1017/s0022336000030237	same_work	The title and Strother authorship match.	1.00	0	1	New species of Nematothallus from the Silurian Bloomsburg Formation of Pennsylvania	1988
+W2388994557	10.1086/687301	same_work	The title and Gensel and Berry authorship match.	1.00	0	1	Sporangial Morphology of the Early Devonian Zosterophyll Sawdonia ornata from the Type Locality (Gaspé)	2016
+W2396526259	10.1086/686243	same_work	The title and first author Kearney match despite spacing differences.	0.86	0	1	Whole-Plant Regeneration via Epidermal Cells in the Axis of the Early Devonian Rhynie Chert PlantRhynia gwynne-vaughaniiKidston et Lang	2016
+W2401832945	10.1017/s009483730001664x	same_work	The title and Niklas authorship match.	1.00		1	Effects of hypothetical developmental barriers and abrupt environmental changes on adaptive walks in a computer-generated domain for early v	1997
+W2401938818	10.1017/s0094837300008009	same_work	The title and first author Knoll match.	1.00	0	1	Character diversification and patterns of evolution in early vascular plants	1984
+W2404385593	10.1002/2016pa002928	same_work	The title and first author Pohl match.	1.00	0	1	Glacial onset predated Late Ordovician climate cooling	2016
+W2404426425	10.1093/oxfordjournals.aob.a090569	same_work	The title and Bower authorship match.	1.00	0	1	On antithetic as distinct from homologous Alternation of Generations in Plants	1890
+W2467792527	10.1038/ncomms12113	same_work	The title and first author Porada match.	1.00	0	3	High potential for weathering and climate effects of non-vascular vegetation in the Late Ordovician	2016
+W2483832894	10.1093/oxfordjournals.aob.a087852	same_work	The title and Hemsley authorship match.	1.00	0	1	The Ultrastructure of the Spores of the Devonian Plant Parka decipiens	1989
+W2488290646	10.2110/palo.2016.035	same_work	The title and Gastaldo authorship match.	0.94	0	1	NEW PALEONTOLOGICAL INSIGHTS INTO THE EMSIAN–EIFELIAN TROUT VALLEY FORMATION, BAXTER STATE PARK'S SCIENTIFIC FOREST MANAGEMENT AREA, AROOSTO	2016
+W2492285633	10.1130/2006.2399(03)	same_work	The chapter title and Allen and Gastaldo authorship match.	1.00	0	1	Sedimentology and taphonomy of the Early to Middle Devonian plant-bearing beds of the Trout Valley Formation, Maine	2006
+W2493012030	10.1073/pnas.1605051113	same_work	The title and first author Xue match.	1.00	0	1	Belowground rhizomes in paleosols: The hidden half of an Early Devonian vascular plant	2016
+W2497528789	10.1017/s0094837300016365	same_work	The title and Roth and Mosbrugger authorship match.	1.00	0	1	Numerical studies of water conduction in land plants: evolution of early stele types	1996
+W2506987131	10.1017/s0094837300008058	same_work	The title and Waller authorship match.	1.00	0	1	Niklas's simulations of branching in early land plants: canalization of parameters?	1984
+W2508469640	10.1073/pnas.1604787113	same_work	The title and first author Lenton match.	1.00	0	2	Earliest land plants created modern levels of atmospheric oxygen	2016
+W2522380797	10.7312/gens11160-005	same_work	The chapter title and first author Kerp match.	1.00	0	1	4. New Data on Nothia aphylla Lyon 1964 ex El-Saadawy et Lacey 1979, a Poorly Known Plant from the Lower Devonian Rhynie Chert	2001
+W2523356236	10.5962/p.418333	same_work	The title and first author Redecker match.	1.00	0	1	Palaeoglomus grayi from the Ordovician	2002
+W2528702132	10.1130/g38449.1	same_work	The title and first author Mitchell match.	1.00	0	2	Mineral weathering and soil development in the earliest land plant ecosystems	2016
+W2530002972	10.1093/oxfordjournals.aob.a084454	same_work	The title and Pant and Khare authorship match.	1.00	0	1	Epidermal Structure of Psilotales and Stomatal Ontogeny of Tmesipteris tannensis Bernh.	1971
+W2530897965	10.1111/brv.12304	same_work	The title and Petersen and Burd authorship match; the years differ by one.	1.00	1	1	Why did heterospory evolve?	2016
+W2551960245	10.1111/evo.13125	same_work	The title and Scott and Rescan authorship match; the years differ by one.	1.00	1	2	Evolution of haploid-diploid life cycles when haploid and diploid fitnesses are not equal	2016
+W2552168024	10.1111/jse.12229	same_work	The title and year match, and OpenAlex renders the group author's final element as I.	1.00	0	1	A community‐derived classification for extant lycophytes and ferns	2016
+W2558860747	10.1111/nph.14324	same_work	The title and Hetherington and Dolan authorship match; the years differ by one.	1.00	1	1	The evolution of lycopsid rooting structures: conservatism and disparity	2016
+W2578994892	10.1016/j.revmic.2016.12.002	same_work	The title and first author Taylor match.	1.00	0	1	Wall ultrastructure of the oldest embryophytic spores: Implications for early land plant evolution	2017
+W2586623015	10.1016/j.gr.2017.02.001	same_work	The title and Kraft and Kvaček authorship match.	1.00	0	1	Where the lycophytes come from? – A piece of the story from the Silurian of peri-Gondwana	2017
+W2586754090	10.1086/690280	same_work	The title and first author Graham match.	1.00	0	1	Acetolysis Resistance of Modern Fungi: Testing Attributions of Enigmatic Proterozoic and Early Paleozoic Fossils	2017
+W2591396772	10.1093/aob/mcw277	same_work	The title and Matsunaga and Tomescu authorship match; the years differ by one.	1.00	1	1	An organismal concept for Sengelia radicans gen. et sp. nov. – morphology and natural history of an Early Devonian lycophyte	2016
+W2594148471	10.1073/pnas.1610206114	same_work	The title and first author Falster match.	1.00	0	1	Multitrait successional forest dynamics enable diverse competitive coexistence	2017
+W2605120720	10.1038/ncomms14845	same_work	The title and first author Foster match.	1.00	0	2	Future climate forcing potentially without precedent in the last 420 million years	2017
+W2606043943	10.1093/botlinnean/box003	same_work	The title and first author Hidalgo match.	1.00	0	1	Genomic gigantism in the whisk-fern family (Psilotaceae): Tmesipteris obliqua challenges record holder Paris japonica	2017
+W2606945039	10.1104/pp.17.00156	same_work	The title and first author Renzaglia match.	1.00	0	1	Hornwort Stomata: Architecture and Fate Shared with 400-Million-Year-Old Fossil Plants without Leaves	2017
+W2615106377	10.1098/rstb.2016.0493	same_work	The title and Dunlop and Garwood authorship match.	1.00	0	1	Terrestrial invertebrates in the Rhynie chert ecosystem	2017
+W2621609016	10.1130/g38985.1	same_work	The title and Swanson-Hysell and Macdonald authorship match.	1.00	0	1	Tropical weathering of the Taconic orogeny as a driver for Ordovician cooling	2017
+W2743213793	10.1098/rstb.2016.0503	same_work	The title and first author Mills match; the years differ by one.	1.00	1	1	Nutrient acquisition by symbiotic fungi governs Palaeozoic climate transition	2017
+W2746660348	10.1098/rstb.2017.0146	same_work	The title and first author Honegger match; the years differ by one.	1.00	0	1	Fertile Prototaxites taiti : a basal ascomycete with inoperculate, polysporous asci lacking croziers	2017
+W2755793808	10.1111/gcb.13910	same_work	The title and first author Fisher match; the years differ by one.	1.00	1	1	Vegetation demographics in Earth System Models: A review of progress and priorities	2017
+W2757773178	10.1093/pcp/pcx136	same_work	The title and first author Rippin match.	1.00	0	1	Enhanced Desiccation Tolerance in Mature Cultures of the Streptophytic Green Alga Zygnema circumcarinatum Revealed by Transcriptomics	2017
+W2763628303	10.1016/j.cell.2017.09.030	same_work	The title and first author Bowman match.	1.00	0	1	Insights into Land Plant Evolution Garnered from the Marchantia polymorpha Genome	2017
+W2763674740	10.1098/rstb.2016.0496	same_work	The title and Harrison and Morris authorship match; the years differ by one.	1.00	1	1	The origin and early evolution of vascular plant shoots and leaves	2017
+W2766937851	10.1073/pnas.1708241114	same_work	The title and first author Xu match.	1.00	0	1	Unique growth strategy in the Earth’s first trees revealed in silicified fossil trunks from China	2017
+W2768721118	10.1093/aob/mcx113	same_work	The title and first author Chomicki match.	1.00	0	1	Evolution and ecology of plant architecture: integrating insights from the fossil record, extant morphology, developmental genetics and phyl	2017
+W2772093563	10.1016/j.earscirev.2017.12.004	same_work	The title and first author Lenton match; the years differ by one.	1.00	1	1	COPSE reloaded: An improved model of biogeochemical cycling over Phanerozoic time	2017
+W2775071230	10.1080/01916122.2017.1361213	same_work	The title and first author Strother match.	1.00	0	1	Ordovician spore ‘thalli’ and the evolution of the plant sporophyte	2017
+W2776142699	10.1098/rstb.2016.0491	same_work	The title and Wellman authorship match.	1.00	0	1	Palaeoecology and palaeophytogeography of the Rhynie chert plants: further evidence from integrated analysis of in situ and dispersed spores	2017
+W2776419701	10.1098/rstb.2016.0490	same_work	The title and Channing authorship match.	1.00	0	1	A review of active hot-spring analogues of Rhynie: environments, habitats and ecosystems	2017
+W2777129430	10.1098/rstb.2016.0497	same_work	The title and Raven authorship match; the years differ by one.	1.00	1	1	Evolution and palaeophysiology of the vascular system and other means of long-distance transport	2017
+W2777207223	10.1098/rstb.2016.0500	same_work	The title and first author Krings match.	1.00	0	1	Fungi and fungal interactions in the Rhynie chert: a review of the evidence, with the description of Perexiflasca tayloriana gen. et sp. nov	2017
+W2777372762	10.1098/rstb.2017.0149	same_work	The title and Kenrick authorship match; the years differ by one.	1.00	0	2	Changing expressions: a hypothesis for the origin of the vascular plant life cycle	2017
+W2778560250	10.1098/rstb.2016.0489	same_work	The title and first author Edwards match.	1.00	0	4	History and contemporary significance of the Rhynie cherts—our earliest preserved terrestrial ecosystem	2017
+W2779232935	10.1098/rstb.2016.0495	same_work	The title and Kerp authorship match.	1.00	0	3	Organs and tissues of Rhynie chert plants	2017
+W2779758836	10.1098/rstb.2017.0042	same_work	The title and Hetherington and Dolan authorship match.	1.00	0	1	Bilaterally symmetric axes with rhizoids composed the rooting structure of the common ancestor of vascular plants	2017
+W2783134562	10.1017/s1089332600000681	same_work	The title and Strother authorship match.	1.00	0	1	Cryptospores: The Origin and Early Evolution of the Terrestrial Flora	2000
+W2787651215	10.1016/j.cub.2018.01.063	same_work	The title and first author Puttick match.	1.00	0	4	The Interrelationships of Land Plants and the Nature of the Ancestral Embryophyte	2018
+W2789151108	10.1073/pnas.1719588115	same_work	The title and first author Morris match.	1.00	0	4	The timescale of early land plant evolution	2018
+W2790984967	10.1080/01916122.2017.1411844	same_work	The title and Steemans and Wellman authorship match.	1.00	0	1	A key for the identification of cryptospores	2018
+W2792645927	10.1111/nph.15076	same_work	The title and first author Strullu-Derrien match.	1.00	0	1	The origin and evolution of mycorrhizal symbioses: from palaeomycology to phylogenomics	2018
+W2792772322	10.1016/j.earscirev.2018.03.004	same_work	The title and first author Xue match.	1.00	0	2	Silurian-Devonian terrestrial revolution in South China: Taxonomy, diversity, and character evolution of vascular plants in a paleogeographi	2018
+W2793000306	10.1016/j.revpalbo.2018.03.004	same_work	The title and Edwards and Li authorship match.	1.00	0	1	Further insights into the Lower Devonian terrestrial vegetation of Sichuan Province, China	2018
+W2793824134	10.1126/science.aan4660	same_work	The title and McMahon and Davies authorship match.	1.00	0	1	Evolution of alluvial mudrock forced by early land plants	2018
+W2793941627	10.1111/nph.15091	same_work	The title and first author Salamon match.	1.00	0	1	Putative Late Ordovician land plants	2018
+W2796407289	10.2307/2483801	same_work	The title and first author Andrews match.	1.00	0	1	Psilophyton forbesii, a New Devonian Plant from Northern Maine	1968
+W2799851732	10.1093/aob/mcy045	same_work	The title and first author Pressel match.	1.00	0	1	Hornwort stomata do not respond actively to exogenous and environmental cues	2018
+W2800135208	10.1111/evo.13484	same_work	The title and Petersen and Burd authorship match.	1.00	0	1	The adaptive value of heterospory: Evidence from Selaginella	2018
+W2801530110	10.1038/s41477-018-0140-y	same_work	The title and first author Libertín match.	1.00	0	2	Sporophytes of polysporangiate land plants from the early Silurian period may have been photosynthetically autonomous	2018
+W2804623747	10.1093/botlinnean/boy022	same_work	The title and first author Edwards match.	1.00	0	2	Anatomically preserved Silurian ‘nematophytes’ from the Welsh Borderland (UK)	2018
+W2806543346	10.1111/jbi.13373	same_work	The title and first author Testo match.	1.00	0	1	Overcoming among‐lineage rate heterogeneity to infer the divergence times and biogeography of the clubmoss family Lycopodiaceae	2018
+W2806766646	10.1126/science.aar5372	same_work	The title and first author Lu match.	1.00	0	1	Late inception of a resiliently oxygenated upper ocean	2018
+W2840792696	10.12957/jse.2018.35405	same_work	The bilingual title and first author Milagres match.	0.95	0	1	EARLY DEVONIAN TAPHOFLORA RECORD IN PONTA GROSSA ARCH, PARANÁ BASIN (SOUTHERN BRAZIL) AND ITS PALAEOGEOGRAPHIC IMPLICATIONS / REGISTRO DA TA	2018
+W2883684920	10.1016/b978-0-12-813012-4.00002-4	same_work	The chapter title and Gensel authorship match.	1.00	0	1	Early Devonian Woody Plants and Implications for the Early Evolution of Vascular Cambia	2018
+W2883966645	10.1016/j.cell.2018.06.033	same_work	The title and first author Nishiyama match.	1.00	0	1	The Chara Genome: Secondary Complexity and Implications for Plant Terrestrialization	2018
+W2884203322	10.1016/b978-0-12-813012-4.00016-4	same_work	The chapter title and first author Tomescu match.	1.00	0	1	Why Are Bryophytes So Rare in the Fossil Record? A Spotlight on Taphonomy and Fossil Preservation	2018
+W2888644105	10.1038/s41586-018-0445-z	same_work	The title and Hetherington and Dolan authorship match.	1.00	0	3	Stepwise and independent origins of roots among land plants	2018
+W2889370758	10.1017/s1755691017000457	same_work	The title and first author Tanrattana match despite a spacing difference.	0.91	0	1	Callixylon wendtiisp. nov., a new species of archaeopteridalean progymnosperm from the Late Devonian of Anti-Atlas, Morocco	2017
+W2890860757	10.1038/s41467-018-06383-y	same_work	The title and first author Krause match.	1.00	0	2	Stepwise oxygenation of the Paleozoic atmosphere	2018
+W2892105462	10.1016/j.cub.2018.08.015	same_work	The title, first author and year match.	1.00	0	1	Insights into the Evolution of Multicellularity from the Sea Lettuce Genome	2018
+W2892639834	10.1073/pnas.1812558115	same_work	The title, first author and year match.	1.00	0	1	Accurate timetrees require accurate calibrations	2018
+W2896132938	10.1098/rspb.2018.1600	same_work	The title, first author and year match.	1.00	0	1	Ancient plants with ancient fungi: liverworts associate with early-diverging arbuscular mycorrhizal fungi	2018
+W2897184852	10.1017/s1755691018000233	same_work	The title, first author and year match.	1.00	0	2	Revisiting the spore assemblages from the Lower Devonian Posongchong Formation of Wenshan, Yunnan Province, southwestern China	2017
+W2902250656	10.1016/j.gca.2018.11.030	same_work	The title and first author match; the years differ by one.	1.00	1	1	Records of carbon and sulfur cycling during the Silurian Ireviken Event in Gotland, Sweden	2018
+W2902898978	10.1126/sciadv.aat4556	same_work	The title, first author and year match.	1.00	0	1	Molecular fossils from phytoplankton reveal secular P co 2 trend over the Phanerozoic	2018
+W2904069947	10.1016/j.gr.2018.12.001	same_work	The title and first author match; the years differ by one.	1.00	1	1	Modelling the long-term carbon cycle, atmospheric CO2, and Earth surface temperature from late Neoproterozoic to present day	2018
+W2910189912	10.4095/120614	same_work	The title, authors and year match.	1.00	0	1	Silurian and devonian spore zones of the Old Red Sandstone Continent and adjacent regions	1986
+W2910596101	10.1016/j.cub.2018.12.009	same_work	The title, first author and year match.	1.00	0	1	Testate Amoebae in the 407-Million-Year-Old Rhynie Chert	2019
+W2910637053	10.12705/code.2018	same_work	The title, year and series match; OpenAlex lists the first editor's initials as the author.	1.00	0	1	International Code of Nomenclature for algae, fungi, and plants	2018
+W2911590957	10.1111/jpy.12841	same_work	The title, first author and year match.	1.00	0	1	Nuclear behavior and roles indicate that Codiolum phase is a sporophyte in Monostroma angicava (Ulotrichales, Ulvophyceae)	2019
+W2912137951	10.2475/01.2019.01	same_work	The title, first author and year match.	1.00	0	1	Modeling the consequences of land plant evolution on silicate weathering	2019
+W2912953663	10.1111/let.12323	same_work	The title, first author and year match.	1.00	0	1	An alternative model for the earliest evolution of vascular plants	2019
+W2914299968	10.2478/if-2018-0020	same_work	The title, first author and year match.	1.00	0	1	Plant Diversity of The Mid Silurian (Lower Wenlock, Sheinwoodian) Terrestrial Vegetation Preserved in Marine Sediments from The Barrandian A	2018
+W2934220854	10.1111/nph.15819	same_work	The title, first author and year match.	1.00	0	1	Functional complementarity of ancient plant–fungal mutualisms: contrasting nitrogen, phosphorus and carbon exchanges between Mucoromycotina 	2019
+W2942736161	10.1086/702940	same_work	The title, authors and year match.	1.00	0	1	Late Mid Devonian Sawdonia (Zosterophyllopsida) from Venezuela	2019
+W2948721568	10.1017/s0080456800100432	same_work	The title, authors and year match; OpenAlex adds a section number.	0.90	0	1	XVII.—Contributions to the Knowledge of Zosterophyllum myretonianum Penhallow from the Lower Old Red Sandstone of Angus	1961
+W2951329705	10.1093/botlinnean/boy011	same_work	The title, authors and year match.	1.00	0	1	An Early Devonian permineralized rhyniopsid from the Battery Point Formation of Gaspé (Canada)	2018
+W2952945984	10.3389/fpls.2019.00868	same_work	The title, first author and year match, allowing for the diacritic.	1.00	0	1	Assessing Chemical Diversity in Psilotum nudum (L.) Beauv., a Pantropical Whisk Fern That Has Lost Many of Its Fern-Like Characters	2019
+W2962996179	10.1029/2019pa003562	same_work	The title, first author and year match.	1.00	0	1	On the Sensitivity of the Devonian Climate to Continental Configuration, Vegetation Cover, Orbital Configuration, CO 2 Concentration, and In	2019
+W2963287438	10.1080/11035897.2019.1636860	same_work	The title, authors and year match.	1.00	0	2	Baltica cradle of early land plants? Oldest record of trilete spores and diverse cryptospore assemblages; evidence from Ordovician successio	2019
+W2964824487	10.1016/j.palaeo.2019.109280	same_work	The title, first author and year match.	1.00	0	2	Revisiting the Great Ordovician Diversification of land plants: Recent data and perspectives	2019
+W2965981370	10.1104/pp.19.00729	same_work	The title, first author and year match.	1.00	0	1	Mucoromycotina Fine Root Endophyte Fungi Form Nutritional Mutualisms with Vascular Plants	2019
+W2967250136	10.1111/jse.12528	same_work	The title, authors and year match.	1.00	0	1	Do motile spermatozoids limit the effectiveness of sexual reproduction in bryophytes? Not in the liverwort Marchantia polymorpha	2019
+W2978511446	10.1029/2019jf005156	same_work	The title, first author and year match.	1.00	0	1	Model for the Formation of Single‐Thread Rivers in Barren Landscapes and Implications for Pre‐Silurian and Martian Fluvial Deposits	2019
+W2981543307	10.1038/s41586-019-1693-2	same_work	The title and year match, and OpenAlex abbreviates the group author.	1.00	0	2	One thousand plant transcriptomes and the phylogenomics of green plants	2019
+W2982263864	10.4095/225704	same_work	The dataset title, first author and year match.	1.00	0	1	Palynodata Datafile: 2006 version	2008
+W2982596650	10.1130/g46776.1	same_work	The title and first author match; the years differ by one.	1.00	1	1	Land plant evolution decreased, rather than increased, weathering rates	2019
+W2983671856	10.1016/j.cell.2019.10.019	same_work	The title, first author and year match.	1.00	0	1	Genomes of Subaerial Zygnematophyceae Provide Insights into Land Plant Evolution	2019
+W2988972177	10.1111/gbi.12369	same_work	The title and first author match; the years differ by one.	1.00	1	1	No support for the emergence of lichens prior to the evolution of vascular plants	2019
+W2989803310	10.1016/j.cub.2019.10.030	same_work	The title, first author and year match.	1.00	0	1	The Rhynie chert	2019
+W2991055610	10.1038/s41561-019-0491-7	same_work	The title and authors match; the years differ by one.	1.00	1	1	A tenfold slowdown in river meander migration driven by plant life	2019
+W2994812694	10.1016/j.cub.2019.11.067	same_work	The title and first author match; the years differ by one.	1.00	0	1	Mid-Devonian Archaeopteris Roots Signal Revolutionary Change in Earliest Fossil Forests	2019
+W2996912091	10.19110/2221-1381-2019-11-20-24	same_work	The title, author and year match.	1.00	0	1	The evolution of the first forests in the Devonian	2019
+W2999981825	10.1073/pnas.1910060117	same_work	The title, first author and year match.	1.00	0	1	Neoproterozoic origin and multiple transitions to macroscopic growth in green seaweeds	2020
+W3000907142	10.1007/s12542-019-00503-9	same_work	The title, first author and year match.	1.00	0	1	Further evidence for fungivory in the Lower Devonian (Lochkovian) of the Welsh Borderland, UK	2020
+W3004458334	10.1038/s41477-019-0588-4	same_work	The title, first author and year match.	1.00	0	1	The hornwort genome and early land plant evolution	2020
+W3011850984	10.1038/s41477-020-0618-2	same_work	The title, first author and year match.	1.00	0	1	Anthoceros genomes illuminate the origin of land plants and the unique biology of hornworts	2020
+W3012366768	10.1016/j.cub.2020.03.048	same_work	The title, first author and year match.	1.00	0	3	Phylogenomic Evidence for the Monophyly of Bryophytes and the Reductive Evolution of Stomata	2020
+W3013679898	10.1130/g47377.1	same_work	The title, authors and year match.	1.00	0	1	Late Ordovician mass extinction caused by volcanism, warming, and anoxia, not cooling and glaciation	2020
+W3020296772	10.1080/03115518.2020.1744725	same_work	The title, first author and year match.	1.00	0	1	Two new genera of early Tracheophyta (Zosterophyllaceae) from the upper Silurian–Lower Devonian of Victoria, Australia	2020
+W3023955310	10.1016/j.cub.2020.03.040	same_work	The title, first author and year match.	1.00	0	1	A novel reproductive strategy in an Early Devonian plant	2020
+W3024193641	10.1016/j.chemgeo.2020.119665	same_work	The title, authors and year match.	1.00	0	2	The impacts of land plant evolution on Earth's climate and oxygenation state – An interdisciplinary review	2020
+W3027857492	10.1016/j.cell.2020.04.019	same_work	The title, first author and year match.	1.00	0	1	The Penium margaritaceum Genome: Hallmarks of the Origins of Land Plants	2020
+W3037667885	10.1093/aob/mcaa113	same_work	The title, first author and year match.	1.00	0	1	Archaeosporites rhyniensis gen. et sp. nov. (Glomeromycota, Archaeosporaceae) from the Lower Devonian Rhynie chert: a fungal lineage morphol	2020
+W3045672423	10.1093/aob/mcaa143	same_work	The title, authors and year match.	1.00	0	1	Two decades of functional–structural plant modelling: now addressing fundamental questions in systems biology and predictive ecology	2020
+W3047295069	10.1002/spp2.1335	same_work	The title and authors match; the years differ by one.	1.00	1	1	An Early Devonian actinostelic euphyllophyte with secondary growth from the Emsian of Gaspé (Canada) and the importance of tracheid wall thi	2020
+W3048902898	10.1111/nph.16874	same_work	The title and first author match; the years differ by one.	1.00	1	1	The hornworts: morphology, evolution and development	2020
+W3084435521	10.1038/s41579-020-0426-8	same_work	The title, first author and year match.	1.00	0	1	Genomic and fossil windows into the secret lives of the most ancient fungi	2020
+W3087019330	10.1016/j.palaeo.2020.110029	same_work	The title, first author and year match.	1.00	0	1	Spatio-temporal distribution of Leclercqia (Lycopsida), with its new discovery from the Middle to Upper devonian of Yunnan, South China	2020
+W3093882677	10.1016/j.gr.2020.09.008	same_work	The title and authors match; the years differ by one.	1.00	1	1	Ordovician palaeogeography and climate change	2020
+W3110752412	10.1016/j.palaeo.2020.110170	same_work	The title and first author match; the years differ by one.	1.00	1	1	A factor analysis approach to modelling the early diversification of terrestrial vegetation	2020
+W3120450552	10.1016/j.earscirev.2021.103503	same_work	The title, first author and year match.	1.00	0	1	Phanerozoic paleotemperatures: The earth’s changing climate during the last 540 million years	2021
+W3127191166	10.1086/713441	same_work	The title, authors and year match.	1.00	0	2	Diversity of Microfossils, including Fungal Material, Associated with Early Tracheophytes in the Lower Devonian (Emsian) Battery Point Forma	2021
+W3130451824	10.1016/j.chemgeo.2021.120128	same_work	The title, authors and year match.	1.00	0	1	Land plant evolution and global erosion rates	2021
+W3133503807	10.1146/annurev-arplant-082520-094256	same_work	The title, first author and year match despite a spacing difference.	0.80	0	1	Development and Molecular Genetics ofMarchantia polymorpha	2021
+W3136361262	10.1016/j.chemgeo.2021.120167	same_work	The reply title, authors and year match.	1.00	0	1	Land plant evolution and global erosion rates: Reply to Neil S. Davies and William J. McMahon	2021
+W3153360100	10.1002/gj.4147	same_work	The title, first author and year match.	1.00	0	1	Discovery of the protolepidodendralean lycopsid Leclercqia from the Middle to Upper Devonian of Inner Mongolia, northeastern China	2021
+W3156931419	10.1093/molbev/msab106	same_work	The title, first author and year match.	1.00	0	2	Large-Scale Phylogenomic Analyses Reveal the Monophyly of Bryophytes and Neoproterozoic Origin of Land Plants	2021
+W3160587515	10.7717/peerj.11093	same_work	The title, first author and year match.	1.00	0	1	Nostolepis scale remains (stem Chondrichthyes) from the Lower Devonian of Qujing, Yunnan, China	2021
+W3163852063	10.1126/science.abg0929	same_work	The title, first author and year match.	1.00	0	1	Lipid exchanges drove the evolution of mutualism during plant terrestrialization	2021
+W3164810548	10.1111/nph.17511	same_work	The title, first author and year match.	1.00	0	1	Taxon sampling and alternative hypotheses of relationships in the euphyllophyte plexus that gave rise to seed plants: insights from an Early	2021
+W3165127858	10.1038/s41598-021-90180-z	same_work	The title, authors and year match.	1.00	0	1	An early Devonian flora from the Baviaanskloof Formation (Table Mountain Group) of South Africa	2021
+W3173740096	10.54991/jop.2019.43	same_work	The title, author and year match.	1.00	0	1	Ordovician Land Plants And Fungi From Douglas Dam, Tennessee	2019
+W3174955369	10.1007/s00497-021-00417-0	same_work	The title, authors and year match.	1.00	0	1	Switching it up: algal insights into sexual transitions	2021
+W3189872831	10.1126/science.abj2927	same_work	The title, authors and year match.	1.00	0	3	A fossil record of land plant origins from charophyte algae	2021
+W3193403410	10.7554/elife.69447	same_work	The title, first author and year match.	1.00	0	2	An evidence-based 3D reconstruction of Asteroxylon mackiei, the most complex plant preserved from the Rhynie chert	2021
+W3195171318	10.1016/j.cub.2021.07.038	same_work	The title, first author and year match.	1.00	0	1	The evolutionary emergence of land plants	2021
+W3195302935	10.1002/spp2.1395	same_work	The title, first author and year match.	1.00	0	1	Palynology of a short sequence of the Lower Devonian Beartooth Butte Formation at Cottonwood Canyon (Wyoming): age, depositional environment	2021
+W3197683563	10.3390/life11090906	same_work	The title, first author and year match.	1.00	0	4	Dynamics of Silurian Plants as Response to Climate Changes	2021
+W3198484687	10.1016/j.pld.2021.08.004	same_work	The title and first author match; the years differ by one.	1.00	0	1	Lycophyte transcriptomes reveal two whole-genome duplications in Lycopodiaceae: Insights into the polyploidization of Phlegmariurus	2021
+W3198521623	10.1080/03115518.2021.1958257	same_work	The title, first author and year match despite spacing differences.	0.89	0	1	Yarravia oblongaLang& Cookson, 1935 emended, from the Lower Devonian of Victoria, Australia	2021
+W3211114200	10.24199/j.mmv.2021.80.11	same_work	The title, first author and year match.	1.00	0	1	Early land plants from the Lower Devonian of central Victoria, Australia, including a new species of Salopella	2021
+W3211791534	10.1130/b36128.1	same_work	The title and first author match; the years differ by one.	1.00	1	1	Recalibrating the Devonian time scale: A new method for integrating radioisotopic and astrochronologic ages in a Bayesian framework	2021
+W3212649026	10.1002/tax.12597	same_work	The title and first author match; the years differ by one.	1.00	1	1	A global phylogeny of Lycopodiaceae (Lycopodiales; lycophytes) with the description of a new genus, Brownseya , from Oceania	2021
+W3214759860	10.1016/j.revpalbo.2021.104567	same_work	The title and first author match; the years differ by one.	0.92	0	2	Picking up the pieces: New charcoalified plant mesofossils (eophytes) from a Lower Devonian Lagerstӓtte in the Welsh Borderland, UK	2021
+W3214901098	10.1111/nph.17703	same_work	The title and first author match; the cited years are 2021 and 2022.	1.00	0	4	Piecing together the eophytes – a new group of ancient plants containing cryptospores	2021
+W3217259987	10.1111/nph.17704	same_work	The title, first author and year match.	1.00	0	2	Earliest record of transfer cells in Lower Devonian plants	2021
+W4205470492	10.37520/fi.2021.006	same_work	The title, authors and year match.	1.00	0	1	Baragwanathia brevifolioides, a nomen novum for B. brevifolia P.Kraft et Kvaček, 2017	2021
+W4205648075	10.24199/j.mmv.2022.81.02	same_work	The title, first author and year match.	1.00	0	1	Lower Devonian Zosterophyllum-like plants from central Victoria, Australia, and their significance	2022
+W4206260560	10.1016/j.revpalbo.2021.104590	same_work	The title and authors match; the years differ by one.	1.00	0	1	The early fossil record of glomeromycete fungi: New data on spores associated with early tracheophytes in the Lower Devonian (Emsian; c. 400	2021
+W4206291303	10.37520/fi.2021.013	same_work	The title, authors and year match.	1.00	0	1	Naming of parts: the use of fossil-taxa in palaeobotany	2021
+W4207040666	10.1016/j.gr.2022.01.010	same_work	The title, author and year match.	1.00	0	1	Ordovician-Devonian lichen canopies before evolution of woody trees	2022
+W4210734901	10.1098/rstb.2021.0312	same_work	The title, first author and year match.	1.00	0	1	New insights into the South China Lower Devonian flora based on fossils from Hezhang, Guizhou Province	2022
+W4210805894	10.3389/fpls.2021.735020	same_work	The title, first author and year match.	1.00	0	1	Cryogenian Glacial Habitats as a Plant Terrestrialisation Cradle – The Origin of the Anydrophytes and Zygnematophyceae Split	2022
+W4212930396	10.1002/aps3.11458	same_work	The title, authors and year match, allowing for spelling and diacritics.	1.00	0	1	Techniques for locating and analyzing subterranean Lycopodium and Diphasiastrum gametophytes in the field	2022
+W4220660296	10.1038/s41467-022-29282-9	same_work	The title, first author and year match.	1.00	0	1	Phylotranscriptomic insights into a Mesoproterozoic–Neoproterozoic origin and early radiation of green seaweeds (Ulvophyceae)	2022
+W4221081799	10.5194/gmd-15-2325-2022	same_work	The title, first author and year match.	1.00	0	1	A dynamic local-scale vegetation model for lycopsids (LYCOm v1.0)	2022
+W4224229028	10.1086/720384	same_work	The title, authors and year match.	1.00	0	1	Exploring Zosterophyll Relationships within a More Broadly Sampled Character Space: A Focus on Anatomy	2022
+W4224246847	10.1002/aps3.11472	same_work	The title, first author and year match.	1.00	0	1	Selection on the gametophyte: Modeling alternation of generations in plants	2022
+W4224272988	10.1086/720389	same_work	The title, authors and year match.	1.00	0	1	The Phylogenetic Placements of Psilophyton and the Psilotaceae	2022
+W4225288603	10.1038/s41467-022-30091-3	same_work	The title, first author and year match.	1.00	0	1	The rapid evolution of lungfish durophagy	2022
+W4241527795	10.1016/c2020-1-02369-3	same_work	The distinctive title, year and publisher match, although OpenAlex omits the editors.	1.00	0	1	Geologic Time Scale 2020	2020
+W4250355662	10.1080/03115518.2021.1971297	same_work	The first author and year match, and the titles differ only in location detail.	1.00	0	1	Lower Devonian (Pragian–Emsian) land plants from Alexandra: an early window into the diversity of Victorian flora from southeastern Australi	2021
+W4255446504	10.1002/j.1537-2197.1986.tb12080.x	same_work	The title, authors and year match.	1.00	0	1	OCCURRENCE AND PHYLOGENETIC SIGNIFICANCE OF “SPECIAL WALLS” AT MEIOSPOROGENESIS IN COLEOCHAETE	1986
+W4281296281	10.1101/2022.05.19.492716	same_work	The title, author, year and preprint venue match.	1.00	0	1	Interpreting the fossil record and the origination of birds	2022
+W4281610189	10.1016/j.cub.2022.04.040	same_work	The title, first author and year match.	1.00	0	1	The origin and evolution of stomata	2022
+W4281711186	10.1086/720688	same_work	The title, authors and year match.	1.00	0	1	What to Do with Prototaxites?	2022
+W4281742796	10.1016/j.earscirev.2022.104085	same_work	The title, first author and year match.	1.00	0	4	The Silurian–Devonian terrestrial revolution: Diversity patterns and sampling bias of the vascular plant macrofossil record	2022
+W4281835649	10.1038/s41598-022-11493-1	same_work	The title, authors and year match.	1.00	0	1	Ocean temperatures through the Phanerozoic reassessed	2022
+W4282601800	10.1130/g50193.1	same_work	The title, authors and year match.	1.00	0	1	Silurian wildfire proxies and atmospheric oxygen	2022
+W4289774707	10.1038/s41467-022-32077-7	same_work	The title, first author and year match.	1.00	0	1	Climate windows of opportunity for plant expansion during the Phanerozoic	2022
+W4292113620	10.1093/plcell/koac219	same_work	The title, first author and year match.	1.00	0	1	The renaissance and enlightenment of Marchantia as a model system	2022
+W4293113244	10.3389/fpls.2022.909768	same_work	The title, first author and year match.	1.00	0	1	An open and continuously updated fern tree of life	2022
+W4293382743	10.1080/23818107.2022.2113560	same_work	The title, first author, year and venue match.	1.00	0	1	Virgatasporites and Attritasporites: the oldest land plant derived spores, cryptospores or acritarchs?	2022
+W4294012268	10.1016/j.cub.2022.08.022	same_work	The title, first author, year and venue match.	1.00	0	1	A phylogenomically informed five-order system for the closest relatives of land plants	2022
+W4294837496	10.1086/721263	same_work	The title, author, year and venue match.	1.00	0	2	Partially Permineralized Adpressions of Wilhowia phocarum Gensel gen. et sp. nov., a New Basal Euphyllophyte from the Lower Devonian Battery	2022
+W4295746720	10.54991/jop.1981.1395	same_work	The title, author, year and venue match.	1.00	0	1	Peridermal Activity (Wound Repair) in an Early Devonian (Emsian) Trimerophyte from the Gaspé Peninsula, Canada	1981
+W4296387834	10.1017/pab.2022.33	same_work	The title, first author, year and venue match.	1.00	0	1	The preservation of cause and effect in the rock record	2022
+W4297996490	10.1038/s41559-022-01885-x	same_work	The title, first author, year and venue match.	1.00	0	3	Divergent evolutionary trajectories of bryophytes and tracheophytes from a complex common ancestor of land plants	2022
+W4304203289	10.1002/ajb2.16082	same_work	The title, first author and venue match; the years differ by one.	1.00	1	1	An early snapshot of plant–herbivore interactions: Psilophyton diakanthon sp. nov. from the Early Devonian of Gaspé (Quebec, Canada)	2022
+W4306698490	10.1144/sp532-2022-92	same_work	The title, first author and venue match; one citation differs by one year.	1.00	0	2	Terrestrialization in the Ordovician	2022
+W4307751570	10.1093/icb/icac150	same_work	The title, authors and venue match; the years differ by one.	1.00	1	1	Viridiplantae Body Plans Viewed Through the Lens of the Fossil Record and Molecular Biology	2022
+W4308867599	10.3389/fpls.2022.987741	same_work	The title, first author, year and venue match.	1.00	0	1	Establishment and optimization of a new model organism to study early land plant evolution: Germination, cultivation and oospore variation o	2022
+W4311286372	10.1139/cjm-2021-0358	same_work	The title, first author and venue match; the years differ by one.	1.00	1	1	Prototaxites reinterpreted as mega-rhizomorphs, facilitating nutrient transport in early terrestrial ecosystems	2022
+W4311402486	10.1080/08912963.2022.2144286	same_work	The title, first author and venue match; the citation years differ by at most one.	1.00	0	2	The early land plant Cooksonia bohemica from the Pridoli, late Silurian, Barrandian area, the Czech Republic, Central Europe	2022
+W4311916267	10.1093/biolinnean/blac137	same_work	The title, first author, year and venue match.	1.00	0	1	Illusion of flight? Absence, evidence and the age of winged insects	2022
+W4312001741	10.1038/s41467-022-35085-9	same_work	The title, first author, year and venue match.	1.00	0	2	Low atmospheric CO2 levels before the rise of forested ecosystems	2022
+W4313399708	10.1016/j.earscirev.2022.104290	same_work	The title, first author and venue match; the years differ by one.	1.00	1	1	The colonization of drylands by early vascular plants: Evidence from Early Devonian fossil soils and in situ plant traces from South China	2022
+W4313449249	10.1130/g50353.1	same_work	The title, first author and venue match; the years differ by one.	1.00	1	1	Paleozoic vegetation increased fine sediment in fluvial and tidal channels: Evidence from secular changes to the mudrock content of ancient 	2022
+W4313529060	10.1016/j.revpalbo.2022.104825	same_work	The title, first author and venue match; the years differ by one.	1.00	1	1	Dispersed spore assemblages from the Lower Devonian Rañeces - La Vid groups of Northern Spain: Palaeogeographical implications	2022
+W4313652636	10.1016/j.palaeo.2023.111393	same_work	The title, first author, year and venue match.	1.00	0	2	New insights into Silurian–Devonian palaeophytogeography	2023
+W4318822527	10.3390/ijms24032708	same_work	The title, first author, year and venue match.	1.00	0	1	Giant Fern Genomes Show Complex Evolution Patterns: A Comparative Analysis in Two Species of Tmesipteris (Psilotaceae)	2023
+W4320490971	10.1111/gbi.12546	same_work	The title, first author, year and venue match.	1.00	0	1	Terrestrial surface stabilisation by modern analogues of the earliest land plants: A multi‐dimensional imaging study	2023
+W4324130258	10.1038/s41467-023-37047-1	same_work	The title, first author, year and venue match.	1.00	0	1	Molecular fingerprints resolve affinities of Rhynie chert organic fossils	2023
+W4327970396	10.1111/pala.12644	same_work	The title, first author, year and venue match.	1.00	0	2	The effect of geological biases on our perception of early land plant radiation	2023
+W4367297329	10.1126/sciadv.ade9510	same_work	The title, first author, year and venue match.	1.00	0	1	Mercury isotopes show vascular plants had colonized land extensively by the early Silurian	2023
+W4378803520	10.1146/annurev-earth-080222-082017	same_work	The review's title, first author, year and venue match the citation.	1.00	0	1	A Systems Approach to Understanding How Plants Transformed Earth's Environment in Deep Time	2023
+W4380202505	10.3176/earth.2023.31	same_work	The title, author, year and venue match.	1.00	0	1	An evo-devo perspective on no Ordovician land plants	2023
+W4383105889	10.1111/sed.13121	same_work	The title, first author, year and venue match.	1.00	0	1	A depositional model for meandering rivers without land plants	2023
+W4383704336	10.1016/j.isci.2023.107338	same_work	The title, first author, year and venue match.	1.00	0	1	Hapalosiphonacean cyanobacteria (Nostocales) thrived amid emerging embryophytes in an early Devonian (407-million-year-old) landscape	2023
+W4386225268	10.1038/s41477-023-01491-0	same_work	The title, first author, year and venue match.	1.00	0	1	Environmental gradients reveal stress hubs pre-dating plant terrestrialization	2023
+W4386271585	10.1111/nph.19228	same_work	The title, first author and venue match; the years differ by one.	1.00	1	1	Hidden functional complexity in the flora of an early land ecosystem	2023
+W4386415978	10.1038/s41477-023-01513-x	same_work	The title, first author, year and venue match.	1.00	0	3	Evolution of phenotypic disparity in the plant kingdom	2023
+W4386624195	10.1111/nph.19254	same_work	The title, first author, year and venue match.	1.00	0	1	Dating the evolution of the complex thalloid liverworts (Marchantiopsida): total‐evidence dating analysis supports a Late Silurian‐Early Dev	2023
+W4387326464	10.1002/ajb2.16249	same_work	The title, first author, year and venue match.	1.00	0	2	Comprehensive phylogenomic time tree of bryophytes reveals deep relationships and uncovers gene incongruences in the last 500 million years 	2023
+W4388200208	10.1016/j.revpalbo.2023.105017	same_work	The title, first author and venue match; the years differ by one.	1.00	0	1	The genus Aberlemnia and its Silurian–Devonian fossil record	2023
+W4388451849	10.1016/j.palaeo.2023.111903	same_work	The title, first author and venue match; the years differ by one.	1.00	0	1	Evolution of Silurian phytogeography, with the first report of Aberlemnia (Rhyniopsida) from the Pridoli of West Junggar, Xinjiang, China	2023
+W4389127831	10.1038/s43247-023-01087-8	same_work	The title, first author, year and venue match.	1.00	0	1	The expansion of land plants during the Late Devonian contributed to the marine mass extinction	2023
+W4389224593	10.1038/s41467-023-43276-1	same_work	The title, first author, year and venue match.	1.00	0	1	A fungal plant pathogen discovered in the Devonian Rhynie Chert	2023
+W4389940884	10.1093/nsr/nwad319	same_work	The title, author, year and venue match.	1.00	0	1	Late Ordovician Mass Extinction: Earth, fire and ice	2023
+W4391253110	10.1016/j.cub.2024.01.008	same_work	The title, first author, year and venue match.	1.00	0	1	A subclass II bHLH transcription factor in Marchantia polymorpha gives insight into the ancestral land plant trait of spore formation	2024
+W4391816577	10.1098/rspb.2023.2351	same_work	The title, authors, year and venue match.	1.00	0	1	Evolution of parental care in haploid–diploid plants	2024
+W4391883669	10.3390/life14020258	same_work	The title, first author, year and venue match.	1.00	0	3	Silurian Climatic Zonation of Cryptospore, Trilete Spore and Plant Megafossils, with Emphasis on the Přídolí Epoch	2024
+W4392235273	10.1038/s41467-024-46105-1	same_work	The title, first author, year and venue match.	1.00	0	1	Geographic range of plants drives long-term climate change	2024
+W4392379819	10.1038/s41467-024-46292-x	same_work	The title, first author, year and venue match.	1.00	0	1	Vegetation enhances curvature-driven dynamics in meandering rivers	2024
+W4392564059	10.1371/journal.pone.0295409	same_work	The title, author, year and venue match.	1.00	0	1	Stable demographic ratios of haploid gametophyte to diploid sporophyte abundance in macroalgal populations	2024
+W4393172620	10.15575/biodjati.v8i2.29453	same_work	The title, first author, year and venue match.	1.00	0	1	"Spores Morphological Characteristics of Several Ophioglossaceae and Psilotaceae Fern in ""Eka Karya"" Botanical Garden - Bali"	2023
+W4394969610	10.1590/0031-1049.2016.56.11	same_work	The title, authors, year and venue match.	1.00	0	1	Fósseis do Devoniano de Goiás, Brasil (Sub‑bacia Alto Garças, Bacia do Paraná)	2016
+W4396553809	10.1038/s41588-024-01737-3	same_work	The title, first author, year and venue match.	1.00	0	1	Genomes of multicellular algal sisters to land plants illuminate signaling network evolution	2024
+W4399070448	10.1016/j.ppees.2024.125797	same_work	The title, authors, year and venue match.	1.00	0	1	Development on the rocks: Integrating molecular biology and the fossil record to reconstruct the evolution of leaf development	2024
+W4399179784	10.3389/fpls.2024.1339832	same_work	The title, first author, year and venue match.	1.00	0	1	The biology of Marchantia polymorpha subsp. ruderalis Bischl. & Boissel. Dub in nature	2024
+W4399211669	10.1016/j.isci.2024.109889	same_work	The title, first author, year and venue match.	1.00	0	1	A 160 Gbp fork fern genome shatters size record for eukaryotes	2024
+W4399327204	10.1093/aob/mcae091	same_work	The title, first author, year and venue match.	1.00	0	1	Phylogeny and evolution of streptophyte algae	2024
+W4399565014	10.1071/rs23021	same_work	The title, author, year and venue match.	1.00	0	2	Notanopliid brachiopods and associated fossils from the Yea area, central Victoria: a key to resolving age and correlation problems in a com	2024
+W4400875135	10.3390/d16070428	same_work	The title, authors, year and venue match.	1.00	0	1	A Fossil Record of Spores before Sporophytes	2024
+W4400899891	10.1093/aobpla/plae041	same_work	The title, first author, year and venue match.	1.00	0	1	Stomatal behaviour and water relations in ferns and lycophytes across habits and habitats	2024
+W4401415954	10.1126/science.adn3450	same_work	The title, first author, year and venue match.	1.00	0	1	Biogeographic climate sensitivity controls Earth system response to large igneous province carbon degassing	2024
+W4401715016	10.1111/gbi.12616	same_work	The title, first author, year and venue match.	1.00	0	1	Significance of lignin and fungal markers in the Devonian (407 Ma) Rhynie Chert	2024
+W4402373782	10.1101/2024.09.06.611587	same_work	The title, first author and year match, and both identify a preprint.	1.00	0	1	Selection efficacy differs between lifestages in the haploid-diploid Marchantia polymorpha subsp. ruderalis	2024
+W4402922267	10.1038/s41598-024-63196-4	same_work	The title, first author, year and venue match.	1.00	0	1	The southwesternmost record of late Silurian (Pridolian) early land plants of Gondwana	2024
+W4402957806	10.1098/rstb.2023.0356	same_work	The title, authors, year and venue match.	1.00	0	1	Zygospore formation in Zygnematophyceae predates several land plant traits	2024
+W4403278171	10.1016/j.revpalbo.2024.105212	same_work	The title, authors, year and venue match.	1.00	0	1	Archaeopteris trees at high southern latitudes in the late Devonian	2024
+W4403682678	10.1016/j.cub.2024.09.061	same_work	The title, first author, year and venue match.	1.00	0	1	Control of sporophyte secondary cell wall development in Marchantia by a Class II KNOX gene	2024
+W4404482135	10.37520/fi.2024.009	same_work	The title, authors, year and venue match.	1.00	0	1	Ultrastructure of Cambrian cryptospores and the early evolution of the plant spore wall	2024
+W4404594269	10.1101/2024.11.19.624281	same_work	The title, first author and year match, and both identify a preprint.	1.00	0	1	Population genomics of Marchantia polymorpha subspecies ruderalis reveals evidence of climate adaptation	2024
+W4404865866	10.1017/s0016756824000384	same_work	The title, first author, year and venue match.	1.00	0	2	Detrital U-Pb ages for the first well-preserved vascular plant Cooksonia from the UK and Irish macrofossil record.	2024
+W4405049984	10.1086/734304	same_work	The title, first author and venue match; the years differ by one.	1.00	1	1	A New Zosterophyll with Novel Emergence and Cuticle Features from the Early Devonian of New Brunswick, Canada	2024
+W4405386716	10.1007/978-3-030-22526-1_3	same_work	The title, first author and year match, and both identify a book chapter.	1.00	0	1	Plant Diversification Through the Devonian in Brazil	2024
+W4405796352	10.11609/jott.8243.16.12.26264-26271	same_work	The title, author, year and venue match.	1.00	0	1	Morpho-anatomical characterization and conservation status of the Whisk Fern Psilotum nudum (L.) P.Beauv. (Polypodiopsida: Psilotaceae) from	2024
+W4406352888	10.1098/rspb.2024.2337	same_work	The title, first author, year and venue match.	1.00	0	1	The smallest Zosterophyllum plant from the Lower Devonian of South China and the divergent life-history strategies in zosterophyllopsids	2025
+W4406765794	10.1144/jgs2023-148	same_work	The title, first author, year and venue match.	1.00	0	1	Silicate weathering, land plants and cooling in the late Silurian and early Devonian	2025
+W4407301255	10.1016/j.cub.2025.01.008	same_work	The title, first author, year and venue match.	1.00	0	1	Population genomics of Marchantia polymorpha subsp. ruderalis reveals evidence of climate adaptation	2025
+W4407669761	10.18814/epiiugs/2025/025001	same_work	The title, first author, year and venue match.	1.00	0	1	The ICS international chronostratigraphic chart this decade	2025
+W4408080371	10.1016/j.gca.2025.02.036	same_work	The title, first author, year and venue match.	1.00	0	1	Lithium isotope evidence shows Devonian afforestation may have significantly altered the global silicate weathering regime	2025
+W4408303123	10.1017/pab.2024.15	same_work	The title, authors, year and venue match.	1.00	0	2	Terrestrialization: toward a shared framework for ecosystem evolution	2025
+W4408593234	10.1101/2025.03.14.643340	same_work	The title, first author and year match, and both identify a preprint.	1.00	0	1	Prototaxites was an extinct lineage of multicellular terrestrial eukaryotes	2025
+W4410307431	10.1590/0001-3765202520241248	same_work	The title, first author, year and venue match.	1.00	0	1	Ectomycorrhizas in Lycopodiopsida: their first registry and arbuscular mycorrhiza in Phlegmariurus saururus (Huperziaceae)	2025
+W4410602228	10.1093/aob/mcaf070	same_work	The title, first author, year and venue match.	1.00	0	1	How do the principal megabiases in the fossil record affect the discovery of past bryophyte diversity?	2025
+W4411255147	10.1093/aob/mcaf122	same_work	The title, authors, year and venue match.	1.00	0	1	Characterizing and distinguishing the earliest woody euphyllophytes based on secondary xylem anatomy: method development and application	2025
+W4411256096	10.1093/aob/mcaf121	same_work	The title, authors, year and venue match.	1.00	0	1	On the origin of euphyllophyte roots: hypotheses from an Early Devonian Psilophyton	2025
+W4412165410	10.1093/aob/mcaf146	same_work	The title, first author, year and venue match.	1.00	0	1	Re-evaluating the phylogenetic relationships of zosterophylls with a comprehensively sampled dataset and a combination of traditional and ne	2025
+W4412396795	10.1144/jgs2024-187	same_work	The title, first author, year and venue match.	1.00	0	1	Terrestrial palaeoclimate, mercury, atmospheric CO 2 and land plants through the Late Devonian mass extinction	2025
+W4412899191	10.5194/essd-17-3567-2025	same_work	The title, first author, year and article venue match.	1.00	0	1	Global Acritarch Database ( > 110 000 occurrences)	2025
+W4414281078	10.1016/j.cub.2025.08.046	same_work	The title, first author, year and venue match.	1.00	0	1	Phylogenomics unveil a recent origin of morphological complexity in Coleochaetophyceae	2025
+W4415564660	10.3390/life15111663	same_work	The title, first author, year and venue match.	1.00	0	1	New Record of the Hueberia from the Posongchong Formation, Pragian Stage, Lower Devonian Series in the Bainiuchang Area, Southeastern Yunnan	2025
+W4416142763	10.1111/nph.70655	same_work	The title, first author and venue match; one citation differs by one year.	1.00	0	2	An arbuscular mycorrhiza from the 407‐million‐year‐old Windyfield Chert identified through advanced fluorescence and Raman imaging	2025
+W4417415516	10.5194/gmd-19-4931-2026	same_work	The title, first author, year and venue match.	1.00	0	1	TREED (v1.0): a trait- and optimality-based eco-evolutionary vegetation model for the deep past and the present	2026
+W6945433881	10.25439/rmt.27597750	same_work	The title, author, institution and dissertation type match, although the years differ by two.	1.00	1	4	Early land plants of Victoria: new taxa, taxonomic revisions and insights into plant evolution	2022
+W7125363949	10.1126/sciadv.aec6277	same_work	The title, first author, year and venue match.	1.00	0	1	Prototaxites fossils are structurally and chemically distinct from extinct and extant Fungi	2026
+W7131222319	10.1038/s41559-026-02995-6	same_work	The title, first author, year and venue match.	1.00	0	1	Carbon/phosphorus burial ratio reveals a rapid spread of land plants during the Late Ordovician	2026
+W7131408282	10.1093/aob/mcag040	same_work	The title, first author, year and venue match.	1.00	0	1	A morphometrics-informed reconstruction of the Early Devonian zosterophyll Nowenia matsunagae gen. et sp. nov. as a template for building de	2026
+W7133294633	10.2478/fbgp-2025-0001	same_work	The title, author, year and venue match.	1.00	0	1	Paleozoic in Situ Spores and Pollen. Early Land Plants	2025
+W7140176225	10.1016/j.earscirev.2026.105476	same_work	The title, first author, year and venue match.	1.00	0	1	Dynamic evolution of cryptospores: The origin and rise of the land flora	2026
+W7155403844	10.64898/2026.04.20.719584	same_work	The title, first author and year match, and both identify a preprint.	1.00	0	1	A deep genetic structure phylogenomically frames the closest algal relatives of land plants	2026
+W7162764070	10.1016/j.palwor.2026.201138	same_work	The title, first author, year and venue match.	1.00	0	1	Did the first plants prefer the same temperatures as modern plants? Evidence from Ordovician and Silurian cryptospores and trilete spores	2026
+W7164022096	10.1111/nph.71332	same_work	The title, authors, year and venue match.	1.00	0	1	Homology of the dark cells of Paleozoic liverworts with the specialized oil body cells of modern liverworts (Marchantiophyta)	2026
+W7165660605	10.1016/j.cub.2026.05.072	same_work	The title, authors, year and venue match.	1.00	0	1	Phloem evolved gradually and asynchronously to xylem in early vascular plants	2026
+W7169843460	10.1242/dev.205696	same_work	The title, first author, year and venue match.	1.00	0	1	Lateral inhibition governs ancestral cellular patterning in fossil and extant liverworts	2026
+W7170133988	10.2737/feis-species-review-marpol	same_work	The title, author and year match, and the record is a report.	1.00	0	1	Marchantia polymorpha , common liverwort	1993
+W7202346161	10.1029/2025jf009085	same_work	The title, first author, year and venue match.	1.00	0	1	Early Devonian Vascular Plants Enhanced Chemical Weathering: Insights From Paleosols in South China	2026
+W7204532744	10.1127/njgpa/1331	same_work	The title, first author, year and venue match.	1.00	0	1	Palaeoenvironmental distribution of problematic organism Prototaxites in the Devonian of the Baltic	2026
+W7214268989	10.1038/s41477-026-02432-3	same_work	The title, first author, year and venue match.	1.00	0	4	Reconstructing spore evolution recalibrates the timescale of land plant diversification	2026
+W7215958877	10.1126/sciadv.aeg6289	same_work	The title, year and venue match, and Durbin corresponds to the cited Lole Durbin.	1.00	0	1	Re-evaluating molecular clock maximum age calibrations revives pre-Ediacaran divergence estimates for animals	2026
+W7221197258	10.1007/s12549-026-00734-0	same_work	The title, first author, year and venue match.	1.00	0	1	A Frasnian dispersed-spore assemblage and evidence of Archaeopteris vegetation from the Iberian Chains (NE Spain)	2026
+W7223208403	10.1127/palb/0091	same_work	The title, first author, year and venue match.	1.00	0	1	The enigmatic giant fossil Prototaxites reveals a new facet of its life in the Early Devonian	2026
+W965959851	10.2307/25065371	same_work	The title, authors, year and venue match.	1.00	0	1	Interpolation hypothesis for origin of the vegetative sporophyte of land plants	2005

@@ -13,3 +13,14 @@ when	command	openalex_calls	credits_used	credits_remaining_after
 2026-10-27T04:00:38Z	library_window.py probes	4	40	9206
 2026-10-27T04:01:17Z	library_window.py finalize	0	0	
 2026-10-27T04:01:24Z	library_window.py finalize	0	0	
+2026-10-27T05:10:21Z	fetch --store --tier priority_spores cards --workers 8	0	0	
+2026-10-27T05:22:52Z	fetch --store --tier priority_spores cards --workers 8	0	0	
+2026-10-27T05:23:13Z	resolve --store	1	1	9205
+2026-10-27T05:27:21Z	fetch --store --tier open_unread --workers 4	0	0	
+2026-10-27T05:32:29Z	withdraw W1990866222 W2008436885 W3211791534 --store --reason Codex gpt-6.1-terra identity check 2026-10-27: PDF is supplementary material of the expected paper, not the paper	0	0	
+2026-10-27T05:32:30Z	withdraw W2230006337 --store --reason Codex gpt-6.1-terra identity check 2026-10-27: PDF is a conference abstract volume; the expected abstract is one of several	0	0	
+2026-10-27T05:32:30Z	withdraw W2254873166 --store --reason Codex gpt-6.1-terra identity check 2026-10-27: PDF is a different conference abstract (Silurian acritarchs)	0	0	
+2026-10-27T05:32:30Z	withdraw W4405796352 --store --reason Codex gpt-6.1-terra identity check 2026-10-27: PDF is the cover and front matter of a whole journal issue	0	0	
+2026-10-27T05:32:30Z	withdraw W7155675004 --store --reason Codex gpt-6.1-terra identity check 2026-10-27: PDF is a newsletter issue (Ordovician News), not the expected paper	0	0	
+2026-10-27T05:32:39Z	index --store --out	0	0	
+2026-10-27T05:32:47Z	textindex --store	0	0	

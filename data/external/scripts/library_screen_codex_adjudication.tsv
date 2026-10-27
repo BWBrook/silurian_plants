@@ -1,0 +1,25 @@
+openalex_id	final	reason	change
+W1479948401	include_borderline	Abstract is a diversity analysis of recent and unpublished data from three Argentine basins, with the first Ludlovian trilete spores; grade lowered because it partly synthesises published sections	include -> include_borderline (stays in priority_spores)
+W1485211926	include_borderline	Methods paper applied to Emsian miospores from Saudi Arabia; the abstract is database boilerplate; kept as borderline	none
+W1762144596	include_borderline	Conference abstract on cryptospore and miospore assemblages across Argentine Ordovician-Silurian basins, part synthesis; grade lowered	include -> include_borderline (stays in priority_spores)
+W2075902280	exclude	Window-age assemblage (Lochkovian AL1) is chitinozoans and phytoplankton; sporomorphs come from the Middle Devonian AL2; Codex is right	removed from priority_spores
+W3171257164	include_borderline	No abstract and no stated age; title names miospores from a Paleozoic succession; grade lowered	include -> include_borderline (stays in priority_spores)
+W4298208550	exclude	Updates and synthesises existing Zenta Range palynomorph knowledge from Tremadocian to Pennsylvanian; a synthesis, set aside like the other syntheses	removed from priority_spores
+W7135205057	exclude	Abstract dates the Rincon Formation assemblage to Eifelian-Givetian, outside the window; my earlier reading assumed Early Devonian	removed from priority_spores
+W1545001655	exclude	Cuticle study; spores only date the beds (Pragian-Emsian)	none
+W2033254699	include_borderline	Abstract proposes a late Emsian-early Eifelian age for the microplankton-rich assemblage 1 and an early Givetian age for the spore assemblage; overlaps the window at its Emsian edge	added to priority_spores (South America)
+W2565598957	exclude	Stratigraphy and sedimentology of the Qusaiba Member; spores not mentioned	none
+W2776142699	include_borderline	Reports dispersed-spore assemblages of the Rhynie chert (Lower Devonian) with in situ spores; no stage word in the abstract, so the title-only rule R3 missed it	added to priority_spores (Laurentia)
+W2954750943	exclude	Palynofacies and organic-matter analysis, not a spore assemblage record	none
+W2960545957	exclude	Palynofacies and thermal maturity of Qusaiba shales; no abstract	none
+W2991229387	exclude	Black-shale pore-system study; no abstract; spores not indicated	none
+W3022953079	exclude	Petroleum basin model; miospores are one of several analyses	none
+W4252842837	exclude	Ordovician sequence stratigraphy; palynomorphs unspecified, no spore term	none
+W4281939812	exclude	Devonian-Carboniferous (Famennian-Tournaisian) boundary palynostratigraphy; no abstract	none
+W4377078604	exclude	Late Devonian and Mississippian Catskill palynology; outside the window	none
+W4380682678	exclude	Anticosti Ordovician-Silurian boundary stratigraphy; palynology cited as existing work	none
+W4391131237	exclude	Frasnian Maywood Formation microspores; outside the window	none
+W4402851528	exclude	Petrography and geochemistry across mid-Ordovician to Pennsylvanian; no abstract; not a spore record	none
+W4410878865	exclude	Scyphocrinoid record; palynomorphs only for boundary dating	none
+W4414430925	exclude	Lochkovian macrofossil assemblage; palynomorph age cited from earlier work	none
+W618011528	exclude	Palynofacies patterns, not a spore assemblage record	none
