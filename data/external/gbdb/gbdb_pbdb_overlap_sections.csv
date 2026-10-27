@@ -1,0 +1,147 @@
+gbdb_sectionID,gbdb_section_name,gbdb_country,gbdb_province,gbdb_derived_lat,gbdb_derived_lon,gbdb_formations_with_plant_records,n_window_plant_records,n_core_window_plant_records,gbdb_reference_ids,pbdb_reference_nos_strong_match,pbdb_reference_nos_moderate_match,distance_km_to_pbdb_collection_with_same_reference,nearest_pbdb_plant_collection_km,nearest_pbdb_plant_collection_no,n_pbdb_plant_collections_within_10km,n_pbdb_plant_collections_within_50km,pbdb_collections_with_formation_name_overlap_within_50km,shared_core_genera_within_50km,overlap_class
+458,Zhusilenghaierhan,China,Inner Mongolia,38.833333,105.683333,Zhusileng,1,1,33862,,,,,,0,0,,,no_pbdb_plant_collection_within_50km
+469,Mangkelu,China,Xinjiang,45.433333,87.166667,Wutubulake,5,5,33862,,,,,,0,0,,,no_pbdb_plant_collection_within_50km
+479,Rongxi,China,Sichuan,28.398633,108.880425,Rongxi,1,1,286,,,,17.1,27827,0,1,27827,hunanodendrum,same_formation_name_within_50km_and_shared_genus
+484,Daliantang,China,Yunnan,25.066667,105.066667,Posongchong,5,5,286,,,,,,0,0,,,no_pbdb_plant_collection_within_50km
+490,Gumu,China,Yunnan,23.266667,104.266667,Posongchong,7,7,286,,,,0.0,10896,2,2,10896;10891,zosterophyllum,same_formation_name_within_50km_and_shared_genus
+585,Xishan Village-Xujiachong,China,Yunnan,25.5,103.8,Xishancun; Xitun,15,15,33862,,,,11.2,21219,0,4,,,within_50km_only
+586,Xichong,China,Yunnan,25.616667,103.816667,Haikou,31,30,33862,,,,1.9,21219,4,5,21219;209616;209617;209619,lepidodendropsis,same_formation_name_within_50km_and_shared_genus
+613,Longjing,China,Guangxi,24.5,110.383333,Sipai,3,0,33871,,,,53.3,238271,0,0,,,no_pbdb_plant_collection_within_50km
+706,Dashunhe,China,Jilin,43.866667,126.55,Erdaogou,7,0,33885,,,,,,0,0,,,no_pbdb_plant_collection_within_50km
+1970,Zhuzhai,China,Jiangxi,28.683333,118.683333,Xiazhen,1,0,3771,,,,36.0,203704,0,3,80138,,same_formation_name_within_50km_no_shared_genus
+1972,Wangjiaba,China,Jiangxi,28.719658,118.360089,Sanqushan,5,1,3771,,,,14.5,203704,0,3,173372,,same_formation_name_within_50km_no_shared_genus
+1990,Xiushuigou,China,Hubei,30.066667,111.466667,Yuntaiguan,9,9,34015,,,,44.6,23079,0,1,,,within_50km_only
+2000,Huanghuachang,China,Hubei,30.85,111.366667,Dawan; Fenxiang; Honghuayuan; Linhsiang; Miaopo; Nanjinguan; Wufeng,139,0,290,,7183,,1.1,232903,1,2,,,within_10km_other_formation_or_reference
+2032,Mamagou,China,Hubei,30.466667,111.2,Honghuayuan,2,0,290,,7183,,28.8,23079,0,2,,,within_50km_only
+2033,Dongkoucun,China,Zhejiang,28.991367,118.536956,Sanqushan,7,0,3771,,,,1.4,173372,1,2,173372,,same_formation_name_within_50km_no_shared_genus
+2060,Zuankong,China,Jiangsu,31.383333,120.95,Changwu,5,0,3543,,,,,,0,0,,,no_pbdb_plant_collection_within_50km
+2225,Hengshan,China,Anhui,31.450142,117.895212,Honghuayuan,1,0,34046,,,,,,0,0,,,no_pbdb_plant_collection_within_50km
+2404,Danmianshan,China,Neimenggu,41.620972,102.69505,Zhusileng,1,1,34092,,,,,,0,0,,,no_pbdb_plant_collection_within_50km
+2576,Zhuzhai,China,Jiangxi,28.683333,118.683333,Sanqushan,3,0,597,,,,36.0,203704,0,3,173372,,same_formation_name_within_50km_no_shared_genus
+2819,Bulongguo,China,Xinjiang,46.8,85.7,Hongguleleng,2,2,2980,,,,2.2,27917,2,3,,,within_10km_other_formation_or_reference
+2832,Xichongshangshuanghe,China,Yunnan,25.616667,103.816667,Haikou,1,1,2891,,,,1.9,21219,4,5,21219;209616;209617;209619,,same_formation_name_within_50km_no_shared_genus
+2952,Zuankong,China,Jiangsu,31.383333,120.95,Changwu,6,0,4764,,,,,,0,0,,,no_pbdb_plant_collection_within_50km
+3056,Ganxi'ao-Shichang'ao,China,Guizhou,28.366667,108.383333,Zitai,3,0,34378,,,,50.0,27827,0,1,,,within_50km_only
+3058,Zhangjiajie-Luoguta,China,Hunan,29.816667,110.433333,Xiaoxiyu; Xiushan,12,0,34368,,,,,,0,0,,,no_pbdb_plant_collection_within_50km
+3059,Jiashihe,China,Hunan,29.483333,109.983333,Xiaoxiyu,8,0,34368,,,,,,0,0,,,no_pbdb_plant_collection_within_50km
+3082,Longchihe,China,Hunan,30.009211,110.720136,Majiaochong; Rongxi,3,3,34379,,,,90.6,23079,0,0,,,no_pbdb_plant_collection_within_50km
+3086,Longjingpo,China,Guizhou,28.583333,107.966667,Kuanyinchiao,1,0,34379,,,,86.3,27827,0,0,,,no_pbdb_plant_collection_within_50km
+3091,Balixi,China,Guizhou,28.237889,107.764506,Majiaochong,1,1,34379,,,,94.1,27900,0,0,,,no_pbdb_plant_collection_within_50km
+3113,Rongxi,China,Sichuan,28.483333,108.966667,Rongxi,1,1,34376,,,,13.6,27827,0,1,27827,hunanodendrum,same_formation_name_within_50km_and_shared_genus
+3154,Shangouchong,China,Anhui,32.254625,118.301572,Honghuayuan,1,0,34407,,,,,,0,0,,,no_pbdb_plant_collection_within_50km
+3198,Chenjiachong,China,Anhui,30.691075,117.872939,Honghuayuan,2,0,34407,,,,,,0,0,,,no_pbdb_plant_collection_within_50km
+3410,Talimu,China,Xinjiang,41.016667,83.183333,Kanling; Qilang,74,0,34676,,,,,,0,0,,,no_pbdb_plant_collection_within_50km
+3457,Bachu,China,Xinjiang,39.783333,78.533333,Yijianfang,1,0,34676,,,,43.1,211137,0,2,211138,,same_formation_name_within_50km_no_shared_genus
+3510,Houershan,China,Guizhou,25.816667,107.533333,Danlin,14,14,2729,,,,1.9,131965,3,3,,retusotriletes,within_10km_other_formation_or_reference
+3560,Shang'ouchong,China,Anhui,32.254625,118.301572,Honghuayuan,1,0,34026,,,,,,0,0,,,no_pbdb_plant_collection_within_50km
+3595,Zoulugang,China,Anhui,30.669714,118.200408,Wufeng,1,0,34834,,,,,,0,0,,,no_pbdb_plant_collection_within_50km
+3608,Jilongkeng,China,Anhui,30.669714,118.200408,Wufeng,1,0,34834,,,,,,0,0,,,no_pbdb_plant_collection_within_50km
+3733,Shanmenshuiku,China,Hunan,29.833333,111.5,Yuntaiguan,5,5,34839,,,,70.4,23079,0,0,,,no_pbdb_plant_collection_within_50km
+3901,Jingshanling,China,Zhejiang,30.242478,120.036753,Liuxia,1,0,34848,,,,,,0,0,,,no_pbdb_plant_collection_within_50km
+3982,Xichong,China,Yunnan,25.580161,103.74605,Haikou,3,3,34855,,,,7.4,21219,1,4,21219;209616;209617;209619,lepidodendropsis,same_formation_name_within_50km_and_shared_genus
+3994,Daliantang,China,Yunnan,25.066667,105.066667,Posongchong,1,1,34855,,,,,,0,0,,,no_pbdb_plant_collection_within_50km
+4033,Rongxi,China,Chongqing,28.521653,108.885114,Hanchiatien,1,1,34857,,,,4.7,27827,1,1,,hunanodendrum,within_10km_other_formation_or_reference
+4393,Xiejingsizu,China,Hubei,31.7,112.35,Yuntaiguan,1,1,34854,,,,,,0,0,,,no_pbdb_plant_collection_within_50km
+4956,Houershan,China,Guizhou,25.816667,107.533333,Danlin,14,14,34846,,,,1.9,131965,3,3,,retusotriletes,within_10km_other_formation_or_reference
+5305,Dale,China,Guangxi,24.086273,109.991094,Yingtang,1,0,33874,,,,11.4,238271,0,1,,,within_50km_only
+5314,Liujing,China,Guangxi,22.875733,108.881007,Nagaoling,21,16,33874,,,,1.7,131968,1,1,,,within_10km_other_formation_or_reference
+5318,Zhichang,China,Yunnan,23.29137,104.272224,Posongchong,1,1,81363,,,,2.4,10891,2,2,10891;10896,zosterophyllum,same_formation_name_within_50km_and_shared_genus
+5334,Dayong City,China,Hunan,29.133333,110.483333,Rongxi,1,1,81379,,,,,,0,0,,,no_pbdb_plant_collection_within_50km
+5335,Dawuwan,China,Hunan,28.301224,113.074282,Qiziqiao,1,1,81367,,,,,,0,0,,,no_pbdb_plant_collection_within_50km
+5718,Awati,China,Xinjiang,40.730813,79.063739,Tataaiertage,6,3,81397,,,,59.5,279998,0,0,,,no_pbdb_plant_collection_within_50km
+5726,Dawangou,China,Xinjiang,40.50834,79.047291,Kanling; Qilang; Saergan,43,0,81397,,,,37.1,279998,0,3,,,within_50km_only
+5963,Unknown Drillcore,China,Jiangsu,31.384913,120.98115,Xiajiaqiao,45,0,81412,,,,,,0,0,,,no_pbdb_plant_collection_within_50km
+6079,Lengshuigou,China,Shaanxi,34.367287,109.214236,Lengshuigou,1,0,34849,,,,64.5,211602,0,0,,,no_pbdb_plant_collection_within_50km
+6412,Bulong,China,Xizang,31.883333,93.0,Bulong,27,27,34863,,,,,,0,0,,,no_pbdb_plant_collection_within_50km
+6822,Hekou,China,Gansu,36.17097,103.438099,Xiayan,5,4,34853,,,,,,0,0,,,no_pbdb_plant_collection_within_50km
+7215,Mangkelu,China,Xinjiang,46.8,85.7,Wutubulake,5,5,81428,,,,2.2,27917,2,3,27917,zosterophyllum,same_formation_name_within_50km_and_shared_genus
+7336,Bayanaobao,China,Inner Mongolia,42.4648,111.189949,Xiayan,5,0,34859,,,,,,0,0,,,no_pbdb_plant_collection_within_50km
+9617,Hongliugou,China,Inner Mongolia,39.183333,101.666667,Xiayan,6,5,12270,,,,,,0,0,,,no_pbdb_plant_collection_within_50km
+9939,Choushuigou-Xiaolongkou,China,Qinghai,38.177111,100.253211,Xiayan,4,0,22247,,,,,,0,0,,,no_pbdb_plant_collection_within_50km
+9959,Daliugou,China,Gansu,39.166928,98.172228,Zhongyan,2,0,12270,,,,,,0,0,,,no_pbdb_plant_collection_within_50km
+9965,Baiyanggou,China,Gansu,38.833333,99.6,Xiayan,5,0,12270,,,,,,0,0,,,no_pbdb_plant_collection_within_50km
+10035,Halunwusu,China,Qinghai,37.30085,99.022983,Xiayan; Zhongyan,3,3,22247,,,,,,0,0,,,no_pbdb_plant_collection_within_50km
+10103,Halunwusu,China,Qinghai,37.3,99.016667,Xiayan; Zhongyan,3,3,12270,,,,,,0,0,,,no_pbdb_plant_collection_within_50km
+10156,Waerga-Damulong,China,Qinghai,38.177111,100.253211,Zhongyan,5,5,22247,,,,,,0,0,,,no_pbdb_plant_collection_within_50km
+10159,Darige,China,Qinghai,37.325469,100.145833,Xiayan,8,8,22247,,,,,,0,0,,,no_pbdb_plant_collection_within_50km
+10173,Hekou,China,Gansu,36.170969,103.4381,Xiayan,15,13,12270,,,,,,0,0,,,no_pbdb_plant_collection_within_50km
+10259,Dachashilang,China,Qinghai,36.501514,101.166436,Xiayan; Zhongyan,16,16,22247,,,,,,0,0,,,no_pbdb_plant_collection_within_50km
+10262,Zhaermage,China,Qinghai,37.3,99.016667,Zhongyan,1,1,12270,,,,,,0,0,,,no_pbdb_plant_collection_within_50km
+10275,Mangkelu,China,Xinjiang,46.793236,85.728328,Wutubulake,5,4,17640,,,,1.4,27917,1,3,27917,zosterophyllum,same_formation_name_within_50km_and_shared_genus
+10326,Atasi,China,Qinghai,36.92975,98.480194,Zhongyan,22,22,22247,,,,,,0,0,,,no_pbdb_plant_collection_within_50km
+10435,Tajia-Yaerzan,China,Qinghai,35.969044,102.643022,Xiayan,3,2,22247,,,,,,0,0,,,no_pbdb_plant_collection_within_50km
+10537,Alabasitao,China,Qinghai,38.35,90.183333,Xiayan,1,1,22247,,,,,,0,0,,,no_pbdb_plant_collection_within_50km
+10975,Tajia,China,Qinghai,35.969044,102.643022,Xiayan,3,2,22247,,,,,,0,0,,,no_pbdb_plant_collection_within_50km
+11058,Jiuyangqu,China,Qinghai,35.681144,100.221533,Xiayan,1,1,22247,,,,,,0,0,,,no_pbdb_plant_collection_within_50km
+12211,Shaokeng,China,Jiangxi,25.681784,114.308267,Qiziqiao,1,1,15043,,,,,,0,0,,,no_pbdb_plant_collection_within_50km
+12452,Xinqiao-lanxixianzhuganshan,China,Zhejiang,29.593642,119.059497,Changwu,1,1,17644,,,,82.8,173372,0,0,,,no_pbdb_plant_collection_within_50km
+12562,Longwangmiao,China,Sichuan,31.47212,104.211925,Guanwushan,1,0,28703,,,,,,0,0,,,no_pbdb_plant_collection_within_50km
+12567,Wenjingjiang,China,Sichuan,30.66036,103.676399,Guanwushan,1,1,28703,,,,,,0,0,,,no_pbdb_plant_collection_within_50km
+12975,Xinmincun-Fuyan-Nanyang,China,Jilin,42.747075,129.304254,Longjing,3,1,81466,,,,,,0,0,,,no_pbdb_plant_collection_within_50km
+13166,Dacaozi,China,Yunnan,27.077092,100.990789,Dacaozi,1,1,81462,,,,,,0,0,,,no_pbdb_plant_collection_within_50km
+13528,Shibanpo,China,Hubei,30.400986,111.130594,Yuntaiguan,1,1,81514,,,,36.2,23079,0,1,,,within_50km_only
+13562,Leijiatun,China,Guizhou,27.578389,108.227675,Xiushan,1,0,81519,,,,8.7,27900,1,1,,,within_10km_other_formation_or_reference
+13751,Lenggan,China,Qinghai,36.933333,101.666667,Xiayan,18,0,81547,,,,,,0,0,,,no_pbdb_plant_collection_within_50km
+13754,Longkoumen,China,Qinghai,36.918081,101.858339,Xiayan,4,0,81547,,,,,,0,0,,,no_pbdb_plant_collection_within_50km
+13811,Dongdacun,China,Xizang,29.660348,97.90294,Zhongyan,15,10,81582,,,,,,0,0,,,no_pbdb_plant_collection_within_50km
+14139,Dawangou,China,Xinjiang,40.533333,79.033333,Kanling; Qilang; Saergan,79,0,81670,,,,38.8,279998,0,1,,,within_50km_only
+14191,Lianglitage,China,Xinjiang,40.205624,78.896499,Yijianfang,1,0,81670,,,,9.7,279998,1,3,211138,,same_formation_name_within_50km_no_shared_genus
+14193,Rongxi,China,Sichuan,28.758028,108.949699,Rongxi,1,1,71196,,,,25.1,27827,0,1,27827,hunanodendrum,same_formation_name_within_50km_and_shared_genus
+14236,Yuejiadashan-Liaojiaoshan,China,Yunnan,25.516418,103.795867,Guandi,1,0,71196,,,,9.5,21219,1,4,,,within_10km_other_formation_or_reference
+14303,Daliantang,China,Yunnan,24.123804,105.086925,Posongchong,5,5,81663,,,,88.4,238525,0,0,,,no_pbdb_plant_collection_within_50km
+14315,Gumu,China,Yunnan,23.263348,104.264238,posongchong,7,7,81663,,,,0.4,10896,2,2,10896;10891,zosterophyllum,same_formation_name_within_50km_and_shared_genus
+14355,Panxi,China,Yunnan,24.222976,103.102655,Haikou,1,0,81690,,,,0.1,238704,1,1,,,within_10km_other_formation_or_reference
+14367,Fenxiang,China,Hubei,30.9,111.433333,Wufeng,1,0,81683,,,,7.4,232903,1,2,,,within_10km_other_formation_or_reference
+14405,Huanghuachang,China,Hubei,30.856097,111.385034,Fenxiang; Nanjinguan,31,0,3705,,,,1.2,232903,1,2,,,within_10km_other_formation_or_reference
+14641,Yingancunxibei,China,Xinjiang,40.550492,79.511723,Saergan,22,0,81749,,,,70.3,279998,0,0,,,no_pbdb_plant_collection_within_50km
+14647,Yingancunxibei,China,Xinjiang,40.550492,79.511723,Qilang,22,0,81749,,,,70.3,279998,0,0,,,no_pbdb_plant_collection_within_50km
+14649,Yingancunxibei,China,Xinjiang,40.550492,79.511723,Yingan,15,0,81749,,,,70.3,279998,0,0,,,no_pbdb_plant_collection_within_50km
+14655,Leyayilitage,China,Xinjiang,39.783333,78.533333,Tumuxiuke,1,0,81749,,,,43.1,211137,0,2,,,within_50km_only
+14669,Tielikewatie,China,Xinjiang,40.527496,79.024365,Tataaiertage,14,4,81760,,,,37.8,279998,0,1,,,within_50km_only
+14670,Tielikewatie,China,Xinjiang,40.527496,79.024365,Yimugantawu,1,0,81760,,,,37.8,279998,0,1,,,within_50km_only
+14723,Lunnan 16 well,China,Xinjiang,41.201453,84.419297,Tumuxiuke; Yijianfang,3,0,81773,,,,,,0,0,,,no_pbdb_plant_collection_within_50km
+14726,Huaibaoshi (Near),China,Hubei,30.855367,110.773123,Yuntaiguan,8,8,81774,,,,57.2,232903,0,0,,,no_pbdb_plant_collection_within_50km
+14731,Lunnan 13 well,China,Xinjiang,41.201453,84.419297,Yijianfang,3,0,81773,,,,,,0,0,,,no_pbdb_plant_collection_within_50km
+14794,New Associated Consolidated Paper,Canada,Quebec,49.63562,62.957153,Ellis bay; English head; Vauréal,19,0,48975,,,,,,0,0,,,no_pbdb_plant_collection_within_50km
+14971,Faraghan Mountains,Iran,Chaharmahal and Bakhtiari,27.863611,56.315556,Seyahou,190,0,81813,,,,,,0,0,,,no_pbdb_plant_collection_within_50km
+15054,Lunnan 48 Well,China,Xinjiang,41.201453,84.419297,Yijianfang,3,0,81773,,,,,,0,0,,,no_pbdb_plant_collection_within_50km
+15087,Lunnan 50 Well,China,Xinjiang,41.201453,84.419297,Yijianfang,1,0,81773,,,,,,0,0,,,no_pbdb_plant_collection_within_50km
+15152,Liaojiaoshan,China,Yunnan,25.493031,103.794214,Yulongsi,13,13,71499,,,,12.1,21219,0,4,,,within_50km_only
+15256,Yingmai 3 Drillcore,China,Xinjiang,41.346386,82.627656,Tumuxiuke,3,0,81773,,,,,,0,0,,,no_pbdb_plant_collection_within_50km
+15257,Yingmai 2jing,China,Xinjiang,41.346386,82.627656,Tumuxiuke,2,0,81773,,,,,,0,0,,,no_pbdb_plant_collection_within_50km
+15298,Ganxi,China,Guizhou,28.486381,108.391686,Zitai,1,0,81925,,,,45.3,27827,0,1,,,within_50km_only
+15307,Xiawu,China,Zhejiang,28.812272,118.600358,Ningguo,9,0,81930,,,,22.2,173372,0,3,,,within_50km_only
+15308,Wujialong,China,Zhejiang,28.75,118.616667,Changwu,12,0,81930,,,,26.8,203704,0,3,,,within_50km_only
+15309,Tangjia,China,Zhejiang,30.129811,119.351311,Wenchang,17,5,81930,,,,,,0,0,,,no_pbdb_plant_collection_within_50km
+15338,Yingmai 10jing,China,Xinjiang,41.346386,82.627656,Tumuxiuke,2,0,81773,,,,,,0,0,,,no_pbdb_plant_collection_within_50km
+15346,Shangouchong,China,Anhui,32.256661,118.294203,Honghuayuan,1,0,81947,,,,,,0,0,,,no_pbdb_plant_collection_within_50km
+15414,Yingmai 201jing,China,Xinjiang,41.346386,82.627656,Tumuxiuke,2,0,81773,,,,,,0,0,,,no_pbdb_plant_collection_within_50km
+15829,Xiawunagou,China,Gansu,34.062106,103.228214,Yanglugou,19,6,71136,,,,,,0,0,,,no_pbdb_plant_collection_within_50km
+15831,Nanba,China,Hunan,28.410583,112.231442,Ningguo,247,0,82110,,,,90.3,34986,0,0,,,no_pbdb_plant_collection_within_50km
+15841,Yanglugou,China,Sichuan,34.244339,102.901317,Yanglugou,12,1,71136,,,,,,0,0,,,no_pbdb_plant_collection_within_50km
+15889,Borehole NC-2,China,Jiangsu,33.044328,120.732233,Fentou,88,68,5218,,,,,,0,0,,,no_pbdb_plant_collection_within_50km
+15941,Yindongguanzhuang,China,Gansu,35.490897,106.599833,Pingliang,2,0,82155,,,,52.4,226107,0,0,,,no_pbdb_plant_collection_within_50km
+15972,Dashimen,China,Inner Mongolia,39.652903,106.790703,Wulalike,1,0,82164,,,,,,0,0,,,no_pbdb_plant_collection_within_50km
+16030,Well Zhong 2,China,Xinjiang,38.869308,82.471831,Lianglitag,27,3,82187,,,,,,0,0,,,no_pbdb_plant_collection_within_50km
+16096,Lava River,Russian Federation,Severo-Zapadnyj,59.93428,30.335098,Leetse,32,0,82209,,,,61.7,191302,0,0,,,no_pbdb_plant_collection_within_50km
+16100,Popovka River,Russian Federation,Severo-Zapadnyj,59.93428,30.335098,Leetse,39,0,82209,,,,61.7,191302,0,0,,,no_pbdb_plant_collection_within_50km
+16198,Baiguowan,China,Guizhou,27.781147,106.918864,Pagoda,1,0,34628,,,,,,0,0,,,no_pbdb_plant_collection_within_50km
+16204,Viki core,Estonia,,58.350833,22.079722,Velise,1,0,82246,,,,23.1,195604,0,2,,,within_50km_only
+16217,Lava River,Russian Federation,Leningrad,59.95,30.3,Leetse,32,0,82252,,,,63.9,191302,0,0,,,no_pbdb_plant_collection_within_50km
+16220,Popovka River,Russian Federation,Leningrad,59.616667,30.3,Leetse,39,0,82252,,,,69.3,191302,0,0,,,no_pbdb_plant_collection_within_50km
+16418,Huanghuachang,China,Hubei,30.858081,111.378847,Dawan,741,0,82323,,,,0.6,232903,1,2,,,within_10km_other_formation_or_reference
+16515,Daping,China,Hubei,31.231531,111.727742,Dawan,270,0,82323,,,,53.5,232903,0,0,,,no_pbdb_plant_collection_within_50km
+16693,Yinjiashan,China,Yunnan,24.194617,102.493819,Wangjiawan,8,0,82416,,,,61.8,238704,0,0,,,no_pbdb_plant_collection_within_50km
+16941,Lava River,Russian Federation,Severo-Zapadnyj,59.93428,30.335098,Leetse,49,0,82529,,,,61.7,191302,0,0,,,no_pbdb_plant_collection_within_50km
+16942,Putilovo Quarry,Russian Federation,,59.867969,31.444358,Leetse,62,0,82529,,,,0.6,191302,9,10,191302;191303;191309;191310;191311,,same_formation_name_within_50km_no_shared_genus
+17043,Lava River,Russian Federation,Severo-Zapadnyj,59.93428,30.335098,Leetse,49,0,82571,,,,61.7,191302,0,0,,,no_pbdb_plant_collection_within_50km
+17049,Putilovo Quarry,Russian Federation,,59.867969,31.444358,Leetse,62,0,82571,,,,0.6,191302,9,10,191302;191303;191309;191310;191311,,same_formation_name_within_50km_no_shared_genus
+17315,Wutubulak,China,Xinjiang,47.727425,88.227669,Wutubulake,7,6,3110,4053,,217,,,0,0,,,same_reference_any_distance
+17376,Riwnant,United Kingdom of Great Britain and Northern Ireland,,52.241075,-3.614901,Ashgill,4,0,107060,,,,16.0,230215,0,4,,,within_50km_only
+17505,Ironbridge,United Kingdom of Great Britain and Northern Ireland,,52.638902,-2.520123,Coalbrookdale,6,0,107068,,,,17.1,238454,0,5,,,within_50km_only
+18051,Lava River,Russian Federation,Severo-Zapadnyj,59.934281,30.335097,Leetse,32,0,82209,,,,61.7,191302,0,0,,,no_pbdb_plant_collection_within_50km
+18052,Popovka River,Russian Federation,Severo-Zapadnyj,59.934281,30.335097,Leetse,39,0,82209,,,,61.7,191302,0,0,,,no_pbdb_plant_collection_within_50km
+19383,Choushuigou-Xiaolongkou,China,Gansu,38.836664,99.614361,Xiayan,4,0,113695,,,,,,0,0,,,no_pbdb_plant_collection_within_50km
+23574,Mudawwara,Jordan,,29.333505,36.02527,Conularia Sandstone,14,0,106849,,,,,,0,0,,,no_pbdb_plant_collection_within_50km
+23580,Trench near Jabal Batra,Jordan,,29.333505,36.02527,Conularia Sandstone,1,0,106849,,,,,,0,0,,,no_pbdb_plant_collection_within_50km
+25545,Hagley Quarry,United Kingdom of Great Britain and Northern Ireland,,52.066,-2.66,Rushall,1,1,106412,,,,6.4,68060,1,8,10706,pachytheca,same_formation_name_within_50km_and_shared_genus

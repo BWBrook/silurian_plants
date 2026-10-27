@@ -1,0 +1,41 @@
+target,kind,genera_matched,n_records_all_ages_excl_exact_duplicates,n_exact_duplicate_rows,n_sections,n_records_window,n_records_anchor_ff,n_records_outside_window,n_records_no_age,n_sections_with_window_or_ff_records,n_sections_with_no_age_records,n_records_species_level_match,oldest_early_age_aged_records,youngest_late_age_aged_records,n_records_in_China,n_records_South_China_province_based,countries,no_age_records_reference_period_hints
+aberlemnia-caledonica,card,Aberlemnia,0,0,0,0,0,0,0,0,0,0,,,0,0,,
+aglaophyton-majus,card,Aglaophyton,0,0,0,0,0,0,0,0,0,0,,,0,0,,
+ambitisporites,card,Ambitisporites,41,0,19,7,0,0,34,3,16,,423,410.8,17,8,United Kingdom of Great Britain and Northern Ireland 24; China 17,Silurian 6; Devonian 3; Ordovician 1
+asteroxylon-mackiei,card,Asteroxylon,1,0,1,0,0,0,1,0,1,0,,,1,1,China 1,
+baragwanathia-longifolia,card,Baragwanathia,0,0,0,0,0,0,0,0,0,0,,,0,0,,
+baragwanathia-brevifolioides,card,Baragwanathia,0,0,0,0,0,0,0,0,0,0,,,0,0,,
+cooksonia,card,Cooksonia,3,0,3,1,0,0,2,1,2,,387.7,382.7,3,3,China 3,Devonian 1
+dawsonites,card,Dawsonites,8,0,6,3,0,0,5,3,3,,410.8,382.7,8,8,China 8,Devonian 1
+drepanophycus-spinaeformis,card,Drepanophycus,55,8,25,2,0,0,53,2,23,40,409.1,391.9,55,48,China 55,Devonian 20; Carboniferous 4
+early-glomeromycotan-fungi,card,Palaeoglomus; Paleoglomus; Glomites; Archaeosporites; Palaeoendogone; Rugososporomyces,0,0,0,0,0,0,0,0,0,,,,0,0,,
+eophyllophyton-bellum,card,Eophyllophyton,0,0,0,0,0,0,0,0,0,0,,,0,0,,
+eophytes,card,Partitatheca; Culullitheca; Fusiformitheca; Grisellatheca; Ficoiditheca; Lenticulatheca,0,0,0,0,0,0,0,0,0,,,,0,0,,
+franhueberia-gerriennei,card,Franhueberia,0,0,0,0,0,0,0,0,0,0,,,0,0,,
+hedeia,card,Hedeia,0,0,0,0,0,0,0,0,0,,,,0,0,,
+horneophyton-lignieri,card,Horneophyton,0,0,0,0,0,0,0,0,0,0,,,0,0,,
+metzgeriothallus-sharonae,card,Metzgeriothallus,0,0,0,0,0,0,0,0,0,,,,0,0,,
+nematothallus,card,Nematothallus,0,0,0,0,0,0,0,0,0,,,,0,0,,
+nothia-aphylla,card,Nothia,0,0,0,0,0,0,0,0,0,,,,0,0,,
+ordovician-cryptospores,card,Tetrahedraletes; Cryptospora; Dyadospora; Pseudodyadospora; Hispanaediscus; Laevolancis; Rimosotetras; Segestrespora; Artemopyra; Cheilotetras; Velatitetras; Cymbohilates; Abditodyadus; Tetraplanarisporites,21,0,5,4,0,0,17,2,5,,445.2,433.4,20,14,China 20; United Kingdom of Great Britain and Northern Ireland 1,Silurian 1
+partitatheca,card,Partitatheca,0,0,0,0,0,0,0,0,0,,,,0,0,,
+pertica,card,Pertica,0,0,0,0,0,0,0,0,0,,,,0,0,,
+pluricaulis-biformis,card,Pluricaulis,0,0,0,0,0,0,0,0,0,,,,0,0,,
+prototaxites,card,Prototaxites,4,0,2,3,0,0,1,1,1,,460.9,449.5,3,0,China 3; United Kingdom of Great Britain and Northern Ireland 1,
+psilophyton,card,Psilophyton,25,0,13,0,0,0,25,0,13,,,,25,23,China 25,Devonian 8
+renalia-hueberi,card,Renalia,0,0,0,0,0,0,0,0,0,0,,,0,0,,
+rhynia-gwynne-vaughanii,card,Rhynia,2,0,1,0,0,0,2,0,1,1,,,2,2,China 2,
+rhynie-chert-gametophytes,card,Lyonophyton; Langiophyton; Kidstonophyton; Remyophyton,0,0,0,0,0,0,0,0,0,,,,0,0,,
+riccardiothallus-devonicus,card,Riccardiothallus,0,0,0,0,0,0,0,0,0,,,,0,0,,
+salopella,card,Salopella,4,0,4,4,0,0,0,4,0,,423,419.2,4,0,China 4,
+sawdonia-ornata,card,Sawdonia,0,0,0,0,0,0,0,0,0,0,,,0,0,,
+tortotubus-protuberans,card,Tortotubus,0,0,0,0,0,0,0,0,0,0,,,0,0,,
+winfrenatia-reticulata,card,Winfrenatia,0,0,0,0,0,0,0,0,0,0,,,0,0,,
+yarravia,card,Yarravia,0,0,0,0,0,0,0,0,0,,,,0,0,,
+zosterophyllum,card,Zosterophyllum,87,1,36,29,0,2,56,11,23,,423,113,87,82,China 87,Devonian 26
+anchor:archaeopteris,anchor,Archaeopteris,20,0,12,0,0,0,20,0,12,,,,20,18,China 20,Devonian 4; Triassic 2; Carboniferous 1
+anchor:callixylon,anchor,Callixylon,2,0,1,0,2,0,0,1,0,,372.2,358.9,2,0,China 2,
+anchor:eospermatopteris,anchor,Eospermatopteris,0,0,0,0,0,0,0,0,0,,,,0,0,,
+anchor:wattieza,anchor,Wattieza,0,0,0,0,0,0,0,0,0,,,,0,0,,
+anchor:elkinsia,anchor,Elkinsia,0,0,0,0,0,0,0,0,0,,,,0,0,,
+anchor:leclercqia,anchor,Leclercqia,0,0,0,0,0,0,0,0,0,,,,0,0,,

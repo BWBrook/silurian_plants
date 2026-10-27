@@ -76,7 +76,7 @@ Inferred. Eophyte axes were ridged, rarely over 1-2 mm wide, with food-conductin
 
 ## Age and distribution
 
-One locality: Brown Clee Hill, early Lochkovian, from the Ditton Group, with fossils charred in low-temperature wildfire (Edwards et al. 2014, 2021a). Cryptospores declined sharply around 410 Ma, in the latest Lochkovian (Edwards et al. 2021a), and dyads vanished from the dispersed record before the Middle Devonian (Edwards et al. 2012a).
+One locality: Brown Clee Hill, early Lochkovian, from the Ditton Group, with fossils charred in low-temperature wildfire (Edwards et al. 2014, 2021a). Cryptospores declined sharply around 410 Ma in the latest Lochkovian (Edwards et al. 2021a; on GTS2012, whose Lochkovian top is 410.8 Ma; the same horizon sits near 413 Ma on ICS v2024/12), and dyads vanished from the dispersed record before the Middle Devonian (Edwards et al. 2012a).
 
 ## Affinity and controversies
 
@@ -92,7 +92,7 @@ If *Partitatheca* is an eophyte, its size and anatomy imply poikilohydric plants
 - Stomata without a transpiration stream: gas-exchange rules for these plants should not copy tracheophytes.
 - Reproduction: permanent dyads or tetrads set mating constraints (selfing needs bisexual gametophytes); sporogenesis always gave dyads or tetrads, indicating strict genetic control (Edwards et al. 2014).
 - Rarity: seven sporangia among several hundred means the group was a small fraction of fertile mesofossils at this site.
-- Replacement: cryptospores dominated assemblages for c. 60 Myr and then fell sharply near 410 Ma (Edwards et al. 2021a). Displacement by zosterophylls across the late Lochkovian in the Anglo-Welsh Basin is a calibratable event.
+- Replacement: cryptospores dominated assemblages for c. 60 Myr and then fell sharply near 410 Ma on GTS2012, about 413 Ma on ICS v2024/12 (Edwards et al. 2021a). Displacement by zosterophylls across the late Lochkovian in the Anglo-Welsh Basin is a calibratable event.
 
 ## Open questions
 

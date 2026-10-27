@@ -7,26 +7,61 @@ Ordered by first appearance, extant comparison taxa last. Ages are ICS v2024/12 
 | Taxon | Group | First | Last | Kind | Placement confidence | Status |
 |---|---|---|---|---|---|---|
 | [Early arbuscular mycorrhizal (glomeromycotan) fungi](early-glomeromycotan-fungi.md) | fungus | Darriwilian (469.4 Ma) | Emsian | assemblage | medium | draft |
+| [Eophytes and cryptophytes (Eophytidae)](eophytes.md) | cryptospore-plant | Darriwilian (469.4 Ma) | Lochkovian | group | low | draft |
 | [Ordovician cryptospore assemblages](ordovician-cryptospores.md) | cryptospore-plant | Darriwilian (469.4 Ma) | Hirnantian | dispersed_spores | medium | draft |
 | [Ambitisporites](ambitisporites.md) | incertae-sedis | Katian (452.8 Ma) | Lochkovian | dispersed_spores | low | draft |
 | [Tortotubus protuberans](tortotubus-protuberans.md) | fungus | Rhuddanian (443.1 Ma) | Emsian | mesofossil | low | draft |
 | [Cooksonia](cooksonia.md) | rhyniophytoid | Sheinwoodian (432.9 Ma) | Lochkovian | megafossil | low | draft |
+| [Rhyniophytoids (rhyniophytes sensu lato, cooksonioid plants)](rhyniophytoids.md) | rhyniophytoid | Sheinwoodian (432.9 Ma) | Lochkovian | group | low | draft |
+| [Chara](chara.md) | streptophyte-alga | Gorstian (426.7 Ma) | Recent | extant | medium | draft |
+| [Bathurst Island late Ludlow flora](bathurst-island-flora.md) | zosterophyll | Ludfordian (425 Ma) | Pridoli | assemblage | medium | draft |
 | [Nematothallus](nematothallus.md) | nematophyte | Ludfordian (425 Ma) | Lochkovian | mesofossil | low | draft |
+| [Welsh Borderland charcoalified mesofossil assemblages](welsh-borderland-mesofossils.md) | incertae-sedis | Ludfordian (425 Ma) | Lochkovian | assemblage | medium | draft |
+| [Zosterophylls (Zosterophyllopsida)](zosterophylls.md) | zosterophyll | Ludfordian (425 Ma) | Givetian | group | medium | draft |
 | [Zosterophyllum](zosterophyllum.md) | zosterophyll | Ludfordian (425 Ma) | Emsian | megafossil | medium | draft |
 | [Aberlemnia caledonica](aberlemnia-caledonica.md) | rhyniophytoid | Pridoli (422.7 Ma) | Lochkovian | megafossil | low | draft |
+| [Baragwanathia brevifolioides](baragwanathia-brevifolioides.md) | lycopsid | Pridoli (422.7 Ma) | Pridoli | megafossil | low | draft |
+| [Early lycopsids ("lycopods" in older usage)](early-lycopsids.md) | lycopsid | Pridoli (422.7 Ma) | Givetian | group | medium | draft |
 | [Prototaxites](prototaxites.md) | nematophyte | Pridoli (422.7 Ma) | Givetian | megafossil | low | draft |
+| [Salopella](salopella.md) | rhyniophytoid | Pridoli (422.7 Ma) | Pragian | megafossil | low | draft |
 | [Baragwanathia longifolia](baragwanathia-longifolia.md) | lycopsid | Lochkovian (419.62 Ma) | Pragian | megafossil | medium | draft |
+| [Hedeia](hedeia.md) | rhyniophytoid | Lochkovian (419.62 Ma) | Emsian | megafossil | low | draft |
+| [Leclercqia](leclercqia.md) | lycopsid | Lochkovian (419.62 Ma) | Frasnian | megafossil | medium | draft |
+| [Parka decipiens](parka-decipiens.md) | incertae-sedis | Lochkovian (419.62 Ma) | Lochkovian | megafossil | low | draft |
 | [Partitatheca](partitatheca.md) | cryptospore-plant | Lochkovian (419.62 Ma) | Lochkovian | mesofossil | low | draft |
+| [Pluricaulis biformis (manuscript name)](pluricaulis-biformis.md) | zosterophyll | Lochkovian (419.62 Ma) | Emsian | megafossil | low | draft |
+| [The Baragwanathia floras of Victoria](baragwanathia-flora.md) | tracheophyte-other | Lochkovian (419.62 Ma) | Emsian | assemblage | medium | draft |
+| [Xitun Formation flora](xitun-flora.md) | zosterophyll | Lochkovian (419.62 Ma) | Lochkovian | assemblage | medium | draft |
+| [Yarravia](yarravia.md) | rhyniophytoid | Lochkovian (419.62 Ma) | Emsian | megafossil | low | draft |
 | [Aglaophyton majus](aglaophyton-majus.md) | protracheophyte | Pragian (413.02 Ma) | Emsian | megafossil | low | draft |
 | [Asteroxylon mackiei](asteroxylon-mackiei.md) | lycopsid | Pragian (413.02 Ma) | Emsian | megafossil | medium | draft |
+| [Dawsonites](dawsonites.md) | basal-euphyllophyte | Pragian (413.02 Ma) | Emsian | megafossil | low | draft |
 | [Drepanophycus spinaeformis](drepanophycus-spinaeformis.md) | lycopsid | Pragian (413.02 Ma) | Givetian | megafossil | medium | draft |
 | [Eophyllophyton bellum](eophyllophyton-bellum.md) | basal-euphyllophyte | Pragian (413.02 Ma) | Pragian | megafossil | low | draft |
 | [Horneophyton lignieri](horneophyton-lignieri.md) | protracheophyte | Pragian (413.02 Ma) | Emsian | megafossil | low | draft |
+| [Nothia aphylla](nothia-aphylla.md) | protracheophyte | Pragian (413.02 Ma) | Emsian | megafossil | low | draft |
+| [Posongchong Formation flora](posongchong-flora.md) | zosterophyll | Pragian (413.02 Ma) | Pragian | assemblage | medium | draft |
 | [Psilophyton](psilophyton.md) | basal-euphyllophyte | Pragian (413.02 Ma) | Eifelian | megafossil | medium | draft |
 | [Rhynia gwynne-vaughanii](rhynia-gwynne-vaughanii.md) | rhyniopsid | Pragian (413.02 Ma) | Emsian | megafossil | medium | draft |
 | [Rhynie Chert gametophytes](rhynie-chert-gametophytes.md) | incertae-sedis | Pragian (413.02 Ma) | Emsian | megafossil | medium | draft |
+| [Rhynie and Windyfield chert biota](rhynie-chert-biota.md) | incertae-sedis | Pragian (413.02 Ma) | Emsian | assemblage | high | draft |
 | [Riccardiothallus devonicus](riccardiothallus-devonicus.md) | bryophyte | Pragian (413.02 Ma) | Pragian | megafossil | low | draft |
+| [Trimerophytes (Trimerophytina) and the basal euphyllophyte plexus](trimerophytes.md) | basal-euphyllophyte | Pragian (413.02 Ma) | Eifelian | group | medium | draft |
 | [Winfrenatia reticulata](winfrenatia-reticulata.md) | lichen | Pragian (413.02 Ma) | Pragian | mesofossil | low | draft |
+| [Franhueberia gerriennei](franhueberia-gerriennei.md) | basal-euphyllophyte | Emsian (410.62 Ma) | Emsian | megafossil | low | draft |
 | [Pertica](pertica.md) | basal-euphyllophyte | Emsian (410.62 Ma) | Eifelian | megafossil | low | draft |
 | [Renalia hueberi](renalia-hueberi.md) | zosterophyll | Emsian (410.62 Ma) | Emsian | megafossil | low | draft |
 | [Sawdonia ornata](sawdonia-ornata.md) | zosterophyll | Emsian (410.62 Ma) | Emsian | megafossil | medium | draft |
+| [Palaeostigma](palaeostigma.md) | lycopsid | Eifelian (393.47 Ma) | Givetian | megafossil | low | draft |
+| [Archaeopteris](archaeopteris.md) | progymnosperm | Givetian (387.95 Ma) | Famennian | megafossil | high | draft |
+| [Metzgeriothallus sharonae](metzgeriothallus-sharonae.md) | bryophyte | Givetian (387.95 Ma) | Givetian | megafossil | medium | draft |
+| [Wattieza](wattieza.md) | cladoxylopsid | Givetian (387.95 Ma) | Frasnian | megafossil | medium | draft |
+| [Anthoceros](anthoceros.md) | bryophyte | extant only | Recent | extant | medium | draft |
+| [Coleochaete](coleochaete.md) | streptophyte-alga | extant only | Recent | extant | medium | draft |
+| [Marchantia polymorpha](marchantia-polymorpha.md) | bryophyte | extant only | Recent | extant | high | draft |
+| [Phlegmariurus squarrosus](phlegmariurus-squarrosus.md) | lycopsid | extant only | Recent | extant | high | draft |
+| [Psilotum nudum](psilotum-nudum.md) | fern | extant only | Recent | extant | high | draft |
+| [Tmesipteris](tmesipteris.md) | fern | extant only | Recent | extant | high | draft |
+| [Ulothrix](ulothrix.md) | chlorophyte-alga | extant only | Recent | extant | medium | draft |
+| [Ulva](ulva.md) | chlorophyte-alga | extant only | Recent | extant | high | draft |
+| [Zygnematophyceae](zygnematophyceae.md) | streptophyte-alga | extant only | Recent | extant | high | draft |

@@ -10,7 +10,9 @@ recorded in `docs/decisions.md`.
 
 - `taxa/`: one information card per taxon. `taxa/_template.md` is the schema; `taxa/README.md`
   is generated.
-- `docs/`: charter, decisions, primer, precedents review, candidate framings.
+- `docs/`: charter, decisions, primer, precedents review, candidate framings, the source register
+  (`docs/sources.md`, the index of all data held and needed: update it when a source changes) and
+  the spore-compilation plan.
 - `data/timescale.csv`: ICS v2024/12 stage base ages, the single source of numerical ages.
 - `data/traits.csv`: generated trait matrix, one row per card.
 - `data/eprp/`: material extracted from Barry's EPRP programme: literature, PBDB and Macrostrat

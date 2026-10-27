@@ -16,7 +16,8 @@ range:
     biozone, middle Pragian to early Emsian (Edwards et al. 2018); Parry et al. (2011) bracket it as early
     (not earliest) Pragian to possibly earliest Emsian. Radiometric ages disagree: U-Pb zircon 411.5 +/- 1.3 Ma
     from the underlying Milton of Noth Andesite (Parry et al. 2011), which dates volcanism and not necessarily
-    hot-spring activity, and 40Ar/39Ar 407.6 +/- 2.2 Ma on hydrothermal minerals (Mark et al. 2011), the value
+    hot-spring activity, and 40Ar/39Ar 407.6 +/- 2.2 Ma on hydrothermal minerals (Mark et al. 2013, reprocessing the 407.1 +/- 2.2 Ma
+    of Mark et al. 2011), the value
     favoured by Edwards et al. (2018). In the project timescale these fall in different stages (Pragian 413.0-410.6 Ma,
     Emsian 410.6-393.5 Ma).
 regions: [Laurussia]
@@ -42,6 +43,8 @@ habitat: >-
 status: draft
 updated: 2026-10-26
 references:
+  - cite: "Mark DF, Rice CM, Trewin NH (2013). Discussion on 'A high-precision U-Pb age constraint on the Rhynie Chert Konservat-Lagerstatte: time scale and other implications'. Journal of the Geological Society 170: 701-703."
+    doi: 10.1144/jgs2011-110
   - cite: "Hueber FM (1992). Thoughts on the early lycopsids and zosterophylls. Annals of the Missouri Botanical Garden 79: 474-499."
     doi: 10.2307/2399751
   - cite: "Li Cheng-Sen, Edwards D (1995). A re-investigation of Halle's Drepanophycus spinaeformis Göpp. from the Lower Devonian of Yunnan Province, southern China. Botanical Journal of the Linnean Society 118: 163-192."

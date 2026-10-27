@@ -16,6 +16,9 @@ the purpose, the criteria a framing must meet and the planned route.
   of the fossil record.
 - [docs/precedents.md](docs/precedents.md): what has already been modelled, and the gaps.
 - [docs/framings.md](docs/framings.md): candidate research questions and a recommendation.
+- [docs/sources.md](docs/sources.md): register of every data source held or still needed.
+- [docs/spore-compilation-plan.md](docs/spore-compilation-plan.md): plan for the dispersed-spore
+  occurrence dataset.
 - [docs/decisions.md](docs/decisions.md): dated decision record.
 - [data/timescale.csv](data/timescale.csv): ICS v2024/12 stage ages.
 - [data/eprp/](data/eprp/README.md): literature, PBDB and Macrostrat records, Earth-system context

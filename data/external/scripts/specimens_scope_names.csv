@@ -1,0 +1,148 @@
+name,name_rank,genus,epithet,role,card_slug,synonym_of,kind,reason
+Aberlemnia caledonica,species,Aberlemnia,caledonica,card,aberlemnia-caledonica,,megafossil,card name (species)
+Aberlemnia,genus,Aberlemnia,,card_genus,aberlemnia-caledonica,,megafossil,"genus of species card, for genus-level counts"
+Aglaophyton majus,species,Aglaophyton,majus,card,aglaophyton-majus,,megafossil,card name (species)
+Aglaophyton,genus,Aglaophyton,,card_genus,aglaophyton-majus,,megafossil,"genus of species card, for genus-level counts"
+Aglaophyton major,species,Aglaophyton,major,card_variant,aglaophyton-majus,Aglaophyton majus,megafossil,orthographic variant; card: originally spelt 'major'
+Rhynia major,species,Rhynia,major,card_variant,aglaophyton-majus,Aglaophyton majus,megafossil,basionym named in the card authority
+Ambitisporites,genus,Ambitisporites,,card,ambitisporites,,dispersed_spores,card name (genus)
+Anthoceros,genus,Anthoceros,,card,anthoceros,,extant,card name (genus)
+Archaeopteris,genus,Archaeopteris,,card,archaeopteris,,megafossil,card name (genus)
+Asteroxylon mackiei,species,Asteroxylon,mackiei,card,asteroxylon-mackiei,,megafossil,card name (species)
+Asteroxylon,genus,Asteroxylon,,card_genus,asteroxylon-mackiei,,megafossil,"genus of species card, for genus-level counts"
+Baragwanathia brevifolioides,species,Baragwanathia,brevifolioides,card,baragwanathia-brevifolioides,,megafossil,card name (species)
+Baragwanathia,genus,Baragwanathia,,card_genus,baragwanathia-brevifolioides,,megafossil,"genus of species card, for genus-level counts"
+Baragwanathia brevifolia,species,Baragwanathia,brevifolia,card_variant,baragwanathia-brevifolioides,Baragwanathia brevifolioides,megafossil,"card authority: replaced name, a later homonym"
+The Baragwanathia floras of Victoria,higher,,,card_group,baragwanathia-flora,,assemblage,"card rank 'assemblage' (group, clade, grade, site or assemblage); not searched by name"
+Baragwanathia longifolia,species,Baragwanathia,longifolia,card,baragwanathia-longifolia,,megafossil,card name (species)
+Baragwanathia,genus,Baragwanathia,,card_genus,baragwanathia-longifolia,,megafossil,"genus of species card, for genus-level counts"
+Bathurst Island late Ludlow flora,higher,,,card_group,bathurst-island-flora,,assemblage,"card rank 'assemblage' (group, clade, grade, site or assemblage); not searched by name"
+Chara,genus,Chara,,card,chara,,extant,card name (genus)
+Coleochaete,genus,Coleochaete,,card,coleochaete,,extant,card name (genus)
+Cooksonia,genus,Cooksonia,,card,cooksonia,,megafossil,card name (genus)
+Dawsonites,genus,Dawsonites,,card,dawsonites,,megafossil,card name (genus)
+Drepanophycus spinaeformis,species,Drepanophycus,spinaeformis,card,drepanophycus-spinaeformis,,megafossil,card name (species)
+Drepanophycus,genus,Drepanophycus,,card_genus,drepanophycus-spinaeformis,,megafossil,"genus of species card, for genus-level counts"
+Early arbuscular mycorrhizal (glomeromycotan) fungi,species,Early,arbuscular,card_assemblage,early-glomeromycotan-fungi,,assemblage,card is an assemblage or morphogroup; members listed as card_member rows
+Palaeoglomus,genus,Palaeoglomus,,card_member,early-glomeromycotan-fungi,,assemblage,member genus used by the EPRP PBDB card match rule
+Paleoglomus,genus,Paleoglomus,,card_member,early-glomeromycotan-fungi,,assemblage,member genus used by the EPRP PBDB card match rule
+Glomites,genus,Glomites,,card_member,early-glomeromycotan-fungi,,assemblage,member genus used by the EPRP PBDB card match rule
+Archaeosporites,genus,Archaeosporites,,card_member,early-glomeromycotan-fungi,,assemblage,member genus used by the EPRP PBDB card match rule
+Palaeoendogone,genus,Palaeoendogone,,card_member,early-glomeromycotan-fungi,,assemblage,member genus used by the EPRP PBDB card match rule
+Rugososporomyces,genus,Rugososporomyces,,card_member,early-glomeromycotan-fungi,,assemblage,member genus used by the EPRP PBDB card match rule
+"Early lycopsids (""lycopods"" in older usage)",higher,,,card_group,early-lycopsids,,group,"card rank 'grade' (group, clade, grade, site or assemblage); not searched by name"
+Eophyllophyton bellum,species,Eophyllophyton,bellum,card,eophyllophyton-bellum,,megafossil,card name (species)
+Eophyllophyton,genus,Eophyllophyton,,card_genus,eophyllophyton-bellum,,megafossil,"genus of species card, for genus-level counts"
+Eophytes and cryptophytes (Eophytidae),higher,,,card_group,eophytes,,group,"card rank 'grade' (group, clade, grade, site or assemblage); not searched by name"
+Franhueberia gerriennei,species,Franhueberia,gerriennei,card,franhueberia-gerriennei,,megafossil,card name (species)
+Franhueberia,genus,Franhueberia,,card_genus,franhueberia-gerriennei,,megafossil,"genus of species card, for genus-level counts"
+Hedeia,genus,Hedeia,,card,hedeia,,megafossil,card name (genus)
+Horneophyton lignieri,species,Horneophyton,lignieri,card,horneophyton-lignieri,,megafossil,card name (species)
+Horneophyton,genus,Horneophyton,,card_genus,horneophyton-lignieri,,megafossil,"genus of species card, for genus-level counts"
+Hornea lignieri,species,Hornea,lignieri,card_variant,horneophyton-lignieri,Horneophyton lignieri,megafossil,EPRP card match rule; earlier genus name
+Leclercqia,genus,Leclercqia,,card,leclercqia,,megafossil,card name (genus)
+Marchantia polymorpha,species,Marchantia,polymorpha,card,marchantia-polymorpha,,extant,card name (species)
+Marchantia,genus,Marchantia,,card_genus,marchantia-polymorpha,,extant,"genus of species card, for genus-level counts"
+Metzgeriothallus sharonae,species,Metzgeriothallus,sharonae,card,metzgeriothallus-sharonae,,megafossil,card name (species)
+Metzgeriothallus,genus,Metzgeriothallus,,card_genus,metzgeriothallus-sharonae,,megafossil,"genus of species card, for genus-level counts"
+Nematothallus,genus,Nematothallus,,card,nematothallus,,mesofossil,card name (genus)
+Nothia aphylla,species,Nothia,aphylla,card,nothia-aphylla,,megafossil,card name (species)
+Nothia,genus,Nothia,,card_genus,nothia-aphylla,,megafossil,"genus of species card, for genus-level counts"
+Ordovician cryptospore assemblages,species,Ordovician,cryptospore,card_assemblage,ordovician-cryptospores,,dispersed_spores,card is an assemblage or morphogroup; members listed as card_member rows
+Tetrahedraletes,genus,Tetrahedraletes,,card_member,ordovician-cryptospores,,dispersed_spores,member genus used by the EPRP PBDB card match rule
+Cryptospora,genus,Cryptospora,,card_member,ordovician-cryptospores,,dispersed_spores,member genus used by the EPRP PBDB card match rule
+Dyadospora,genus,Dyadospora,,card_member,ordovician-cryptospores,,dispersed_spores,member genus used by the EPRP PBDB card match rule
+Pseudodyadospora,genus,Pseudodyadospora,,card_member,ordovician-cryptospores,,dispersed_spores,member genus used by the EPRP PBDB card match rule
+Hispanaediscus,genus,Hispanaediscus,,card_member,ordovician-cryptospores,,dispersed_spores,member genus used by the EPRP PBDB card match rule
+Laevolancis,genus,Laevolancis,,card_member,ordovician-cryptospores,,dispersed_spores,member genus used by the EPRP PBDB card match rule
+Rimosotetras,genus,Rimosotetras,,card_member,ordovician-cryptospores,,dispersed_spores,member genus used by the EPRP PBDB card match rule
+Segestrespora,genus,Segestrespora,,card_member,ordovician-cryptospores,,dispersed_spores,member genus used by the EPRP PBDB card match rule
+Artemopyra,genus,Artemopyra,,card_member,ordovician-cryptospores,,dispersed_spores,member genus used by the EPRP PBDB card match rule
+Cheilotetras,genus,Cheilotetras,,card_member,ordovician-cryptospores,,dispersed_spores,member genus used by the EPRP PBDB card match rule
+Velatitetras,genus,Velatitetras,,card_member,ordovician-cryptospores,,dispersed_spores,member genus used by the EPRP PBDB card match rule
+Cymbohilates,genus,Cymbohilates,,card_member,ordovician-cryptospores,,dispersed_spores,member genus used by the EPRP PBDB card match rule
+Abditodyadus,genus,Abditodyadus,,card_member,ordovician-cryptospores,,dispersed_spores,member genus used by the EPRP PBDB card match rule
+Tetraplanarisporites,genus,Tetraplanarisporites,,card_member,ordovician-cryptospores,,dispersed_spores,member genus used by the EPRP PBDB card match rule
+Palaeostigma,genus,Palaeostigma,,card,palaeostigma,,megafossil,card name (genus)
+Parka decipiens,species,Parka,decipiens,card,parka-decipiens,,megafossil,card name (species)
+Parka,genus,Parka,,card_genus,parka-decipiens,,megafossil,"genus of species card, for genus-level counts"
+Partitatheca,genus,Partitatheca,,card,partitatheca,,mesofossil,card name (genus)
+Pertica,genus,Pertica,,card,pertica,,megafossil,card name (genus)
+Phlegmariurus squarrosus,species,Phlegmariurus,squarrosus,card,phlegmariurus-squarrosus,,extant,card name (species)
+Phlegmariurus,genus,Phlegmariurus,,card_genus,phlegmariurus-squarrosus,,extant,"genus of species card, for genus-level counts"
+Pluricaulis biformis (manuscript name),species,Pluricaulis,biformis,card,pluricaulis-biformis,,megafossil,card name (species)
+Pluricaulis,genus,Pluricaulis,,card_genus,pluricaulis-biformis,,megafossil,"genus of species card, for genus-level counts"
+Posongchong Formation flora,higher,,,card_group,posongchong-flora,,assemblage,"card rank 'assemblage' (group, clade, grade, site or assemblage); not searched by name"
+Prototaxites,genus,Prototaxites,,card,prototaxites,,megafossil,card name (genus)
+Psilophyton,genus,Psilophyton,,card,psilophyton,,megafossil,card name (genus)
+Psilotum nudum,species,Psilotum,nudum,card,psilotum-nudum,,extant,card name (species)
+Psilotum,genus,Psilotum,,card_genus,psilotum-nudum,,extant,"genus of species card, for genus-level counts"
+Renalia hueberi,species,Renalia,hueberi,card,renalia-hueberi,,megafossil,card name (species)
+Renalia,genus,Renalia,,card_genus,renalia-hueberi,,megafossil,"genus of species card, for genus-level counts"
+Rhynia gwynne-vaughanii,species,Rhynia,gwynne-vaughanii,card,rhynia-gwynne-vaughanii,,megafossil,card name (species)
+Rhynia,genus,Rhynia,,card_genus,rhynia-gwynne-vaughanii,,megafossil,"genus of species card, for genus-level counts"
+Rhynia gwynnevaughani,species,Rhynia,gwynnevaughani,card_variant,rhynia-gwynne-vaughanii,Rhynia gwynne-vaughanii,megafossil,EPRP card match rule; spelling
+Rhynia gwynnevaughanii,species,Rhynia,gwynnevaughanii,card_variant,rhynia-gwynne-vaughanii,Rhynia gwynne-vaughanii,megafossil,EPRP card match rule; spelling
+Rhynie and Windyfield chert biota,higher,,,card_group,rhynie-chert-biota,,assemblage,"card rank 'assemblage' (group, clade, grade, site or assemblage); not searched by name"
+Rhynie Chert gametophytes,species,Rhynie,Chert,card_assemblage,rhynie-chert-gametophytes,,megafossil,card is an assemblage or morphogroup; members listed as card_member rows
+Lyonophyton,genus,Lyonophyton,,card_member,rhynie-chert-gametophytes,,megafossil,member genus used by the EPRP PBDB card match rule
+Langiophyton,genus,Langiophyton,,card_member,rhynie-chert-gametophytes,,megafossil,member genus used by the EPRP PBDB card match rule
+Kidstonophyton,genus,Kidstonophyton,,card_member,rhynie-chert-gametophytes,,megafossil,member genus used by the EPRP PBDB card match rule
+Remyophyton,genus,Remyophyton,,card_member,rhynie-chert-gametophytes,,megafossil,member genus used by the EPRP PBDB card match rule
+"Rhyniophytoids (rhyniophytes sensu lato, cooksonioid plants)",higher,,,card_group,rhyniophytoids,,group,"card rank 'grade' (group, clade, grade, site or assemblage); not searched by name"
+Riccardiothallus devonicus,species,Riccardiothallus,devonicus,card,riccardiothallus-devonicus,,megafossil,card name (species)
+Riccardiothallus,genus,Riccardiothallus,,card_genus,riccardiothallus-devonicus,,megafossil,"genus of species card, for genus-level counts"
+Salopella,genus,Salopella,,card,salopella,,megafossil,card name (genus)
+Sawdonia ornata,species,Sawdonia,ornata,card,sawdonia-ornata,,megafossil,card name (species)
+Sawdonia,genus,Sawdonia,,card_genus,sawdonia-ornata,,megafossil,"genus of species card, for genus-level counts"
+Tmesipteris,genus,Tmesipteris,,card,tmesipteris,,extant,card name (genus)
+Tortotubus protuberans,species,Tortotubus,protuberans,card,tortotubus-protuberans,,mesofossil,card name (species)
+Tortotubus,genus,Tortotubus,,card_genus,tortotubus-protuberans,,mesofossil,"genus of species card, for genus-level counts"
+Trimerophytes (Trimerophytina) and the basal euphyllophyte plexus,higher,,,card_group,trimerophytes,,group,"card rank 'grade' (group, clade, grade, site or assemblage); not searched by name"
+Ulothrix,genus,Ulothrix,,card,ulothrix,,extant,card name (genus)
+Ulva,genus,Ulva,,card,ulva,,extant,card name (genus)
+Wattieza,genus,Wattieza,,card,wattieza,,megafossil,card name (genus)
+Welsh Borderland charcoalified mesofossil assemblages,higher,,,card_group,welsh-borderland-mesofossils,,assemblage,"card rank 'assemblage' (group, clade, grade, site or assemblage); not searched by name"
+Winfrenatia reticulata,species,Winfrenatia,reticulata,card,winfrenatia-reticulata,,mesofossil,card name (species)
+Winfrenatia,genus,Winfrenatia,,card_genus,winfrenatia-reticulata,,mesofossil,"genus of species card, for genus-level counts"
+Xitun Formation flora,higher,,,card_group,xitun-flora,,assemblage,"card rank 'assemblage' (group, clade, grade, site or assemblage); not searched by name"
+Yarravia,genus,Yarravia,,card,yarravia,,megafossil,card name (genus)
+Zosterophylls (Zosterophyllopsida),higher,,,card_group,zosterophylls,,group,"card rank 'grade' (group, clade, grade, site or assemblage); not searched by name"
+Zosterophyllum,genus,Zosterophyllum,,card,zosterophyllum,,megafossil,card name (genus)
+Zygnematophyceae,higher,,,card_group,zygnematophyceae,,extant,"card rank 'clade' (group, clade, grade, site or assemblage); not searched by name"
+Archaeopteris,genus,Archaeopteris,,anchor,,,,anchor genus
+Callixylon,genus,Callixylon,,anchor,,,,anchor genus (Archaeopteris wood)
+Eospermatopteris,genus,Eospermatopteris,,anchor,,,,anchor genus (Gilboa)
+Wattieza,genus,Wattieza,,anchor,,,,anchor genus (Gilboa)
+Elkinsia,genus,Elkinsia,,anchor,,,,anchor genus (earliest seed plant)
+Leclercqia,genus,Leclercqia,,anchor,,,,"anchor genus, added by the project 2026-10-27"
+Prototaxites,genus,Prototaxites,,nematophyte,,,,nematophyte; card
+Nematothallus,genus,Nematothallus,,nematophyte,,,,nematophyte; card
+Nematophyton,genus,Nematophyton,,nematophyte,,,,nematophyte named in the brief
+Pachytheca,genus,Pachytheca,,nematophyte,,,,nematophyte named in the brief
+Nematasketum,genus,Nematasketum,,nematophyte,,,,nematophyte named on the Prototaxites and Nematothallus cards
+Nematoplexus,genus,Nematoplexus,,nematophyte,,,,nematophyte named on the Nematothallus card
+Nematophycus,genus,Nematophycus,,nematophyte,,,,"older name of Nematophyton and Prototaxites in the literature; search aid, analyst knowledge"
+Parka,genus,Parka,,nematophyte,,,,thalloid problematicum grouped with nematophytes by EPRP PBDB filter; Parka card planned
+Cosmochlaina,genus,Cosmochlaina,,nematophyte,,,,cuticle type of Nematothallus named on the Nematothallus card
+Spongiophyton,genus,Spongiophyton,,problematicum,,,,thalloid problematicum that the EPRP PBDB filter flags under streptophytes; not a nematophyte named on a card
+Prototaxites taiti,species,Prototaxites,taiti,nematophyte,,,,species named on the Prototaxites card
+Prototaxites loganii,species,Prototaxites,loganii,nematophyte,,,,species named on the Prototaxites card
+Prototaxites southworthii,species,Prototaxites,southworthii,nematophyte,,,,"species of Prototaxites; search aid, analyst knowledge"
+Nematothallus williamii,species,Nematothallus,williamii,nematophyte,,,,species named on the Nematothallus card
+Palaeonitella,genus,Palaeonitella,,charophyte,,,,charophyte named on a card
+Moellerina,genus,Moellerina,,charophyte,,,,"fossil charophyte; search aid, analyst knowledge"
+Sycidium,genus,Sycidium,,charophyte,,,,"fossil charophyte; search aid, analyst knowledge"
+Trochiliscus,genus,Trochiliscus,,charophyte,,,,"fossil charophyte; search aid, analyst knowledge"
+Eochara,genus,Eochara,,charophyte,,,,"fossil charophyte; search aid, analyst knowledge"
+Octochara,genus,Octochara,,charophyte,,,,"fossil charophyte; search aid, analyst knowledge"
+Praechara,genus,Praechara,,charophyte,,,,"fossil charophyte; search aid, analyst knowledge"
+Chovanella,genus,Chovanella,,charophyte,,,,"fossil charophyte; search aid, analyst knowledge"
+Mesochara,genus,Mesochara,,charophyte,,,,"fossil charophyte; search aid, analyst knowledge"
+Pluricaulis biformis,species,Pluricaulis,biformis,planned_card,,,planned,planned in docs/decisions.md 2026-10-27 (Victorian taxon); no card in taxa/ when this list was built
+Psilotum,genus,Psilotum,,planned_card,,,planned,planned in docs/decisions.md 2026-10-27 (living comparison taxon); no card in taxa/ when this list was built
+Lycopodium squarrosum,species,Lycopodium,squarrosum,planned_card,,,planned,planned in docs/decisions.md 2026-10-27 (living comparison taxon); no card in taxa/ when this list was built
+Marchantia,genus,Marchantia,,planned_card,,,planned,planned in docs/decisions.md 2026-10-27 (planned card); no card in taxa/ when this list was built
+Metzgeriothallus,genus,Metzgeriothallus,,planned_card,,,planned,planned in docs/decisions.md 2026-10-27 (flagged by tranche-1 agents); no card in taxa/ when this list was built
+Franhueberia,genus,Franhueberia,,planned_card,,,planned,planned in docs/decisions.md 2026-10-27 (flagged by tranche-1 agents); no card in taxa/ when this list was built
+Taeniocrada,genus,Taeniocrada,,planned_card,,,planned,planned in docs/decisions.md 2026-10-27 (genus named on cards); no card in taxa/ when this list was built
