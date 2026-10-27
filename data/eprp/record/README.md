@@ -443,3 +443,165 @@ rsync -a deep-server:/data/codex/silurian_plants-eprp/record/out/ out/
 `record_pbdb.py` must run before `record_intervals.py` (it reads the plant occurrence file for interval
 usage). A second run on 2026-10-26 gave byte-identical outputs. Copy `fr2_plant_families.csv` and
 `ics2024_chart_values_window.csv` to `data/eprp/local/record/` and the rest to `data/eprp/record/`.
+
+## Tranche 2 (2026-10-27)
+
+PBDB specimens, measurements, plant taxa, opinions and references; Frasnian–Famennian occurrences of six anchor genera; and Australian
+Silurian–Devonian units from the Australian Stratigraphic Units Database (ASUD). Extracted 2026-10-27 by a Claude Sonnet 5.5 subagent
+(`claude-sonnet-5-5`) from the same PBDB snapshot as tranche 1 (`2026-10-23T0329Z_url`, CC0) and EPRP's ASUD mirror
+(`2026-10-22T0604Z_wfs`), read-only, on `deep-server`. Scripts: `../scripts/record_extras_pbdb.py`, `record_extras_asud.py` and
+`record_extras_manifest.py`; nothing in tranche 1 was edited or regenerated, and nothing was written to EPRP or `/data/paleodata`. Scratch and
+provenance are in `/data/codex/silurian_plants/raw/pbdb-extras/` (the ASUD catalogue pulls are under `asud/`). The British rock record (BGS) is
+separate: `../../external/rock-record/README.md`.
+
+**Timescale.** `../../timescale.csv` gained Frasnian, Famennian and Tournaisian-base rows on 2026-10-27 (sha256 now
+`396bde65de806aba4f48c2e53c5e7e8889e71e7f43adaa9071abe371ff4fa93e`; existing rows unchanged). The Frasnian–Famennian bounds used for the anchor
+extract are its Frasnian base, 382.31 Ma, and Tournaisian base, 358.86 Ma, embedded in the script. Source ages are never converted; every
+column added here is prefixed `d_` (PBDB tables, as in tranche 1) or `derived_` (ASUD).
+
+### T2.1 Files
+
+| File | Rows | Contents |
+| --- | ---: | --- |
+| `pbdb_anchor_occurrences_frasnian_famennian.csv` | 163 | Anchor-genus occurrences outside the window that pass the tranche-1 plant filter and overlap the Frasnian–Famennian (§T2.2); 95 original columns + 11 `d_*` |
+| `pbdb_plant_specimens.csv` | 257 | PBDB specimens of plant taxa (any age); 46 original columns + 5 `d_*` (§T2.3) |
+| `pbdb_plant_measurements.csv` | 400 | PBDB measurements of plant taxa (any age); 127 original columns (second `cc` is `cc.1`) + 5 `d_*` (§T2.3) |
+| `pbdb_plant_taxa_window.csv` | 413 | Window subset of the taxa table: rows with `d_range_overlaps_window` = yes, unchanged (§T2.4) |
+| `pbdb_plant_opinions_window.csv` | 653 | Window subset of the opinions table: opinions whose `orig_no` is a window taxon, unchanged (§T2.4) |
+| `../local/record/pbdb_plant_taxa.csv` | 31,696 | **Gitignored.** `taxa.csv` rows in the plant subsets and the anchors, any age; 72 original columns (duplicates suffixed `.1`) + 6 `d_*` (§T2.4). 16.6 MB |
+| `../local/record/pbdb_plant_opinions.csv` | 48,943 | **Gitignored.** All `opinions.csv` rows on those taxa; 29 original columns + `d_taxon_subset` (§T2.4). 19.4 MB |
+| `pbdb_extras_references.csv` | 1,434 | References cited by the rows above; 34 original columns + 7 `d_*` (§T2.5) |
+| `asud_silurian_devonian_units.csv` | 3,753 | Australian Silurian–Devonian stratigraphic units; 34 original columns + 19 `derived_*` (§T2.6) |
+| `asud_provenance.tsv` | 3 | URL, timestamp, licence and sha256 of the ASUD catalogue pulls and the mirror file |
+| `pbdb_extras_inputs_sha256.tsv` | 185 | sha256 of the 183 snapshot files read and the two tranche-1 tables, checked against the snapshot `MANIFEST.json` and tranche 1's manifest |
+
+`d_subset`, `d_in_core`, `d_major_group` and `d_genus` in the specimen and measurement files are copied unchanged from the tranche-1 occurrence row (blank when there is
+none). At the project's review (2026-10-27) the whole-tree taxa and opinions tables moved to `../local/record/`, and
+their window subsets are tracked instead; `scripts/record_extras_window_subsets.py` does both, after `record_extras_pbdb.py`.
+The specimen and measurement files stay tracked: that none of their rows links to a window occurrence is itself a result.
+
+### T2.2 Anchor occurrences, Frasnian–Famennian
+
+Anchor genera: *Archaeopteris*, *Callixylon*, *Eospermatopteris*, *Wattieza*, *Elkinsia* and *Leclercqia* (the last added to the brief on 2026-10-27). A row is kept if any of
+`identified_name`, `accepted_name`, `primary_name` or `genus` contains the genus as a word (`cf.`, `?` ignored); it lies **outside** tranche 1's window (not `max_ma > 383` and
+`min_ma < 485`); it passes the tranche-1 plant filter (the taxonomy, name rules and `classify` code are copied unchanged from `record_pbdb.py`, lines 39–236, and checked
+identical by `diff`); and its age range overlaps the Frasnian–Famennian (`min(max_ma, 382.31) − max(min_ma, 358.86) > 0`).
+
+Result: **163 occurrences in 109 collections** — *Archaeopteris* 122, *Callixylon* 34, *Eospermatopteris* 6, *Elkinsia* 1, *Wattieza* 0, *Leclercqia* 0. All 163 lie wholly inside
+358.86–382.31 Ma (`d_fully_inside_frasnian_famennian` = yes; PBDB assigns ages by interval: Frasnian, Famennian, "Late Devonian" and their early, middle and late parts).
+Countries: US 122, CA 22, BE 16, MA, RU and IE 1 each. Subsets: 162 `embryophyta_pbdb_tree`, 1 `plant_unlinked_organ` (*Elkinsia polymorpha*, occurrence 200780).
+New columns: `d_anchor_genus`, `d_overlap_with_frasnian_famennian_myr`, `d_fully_inside_frasnian_famennian`; the window columns of tranche 1 are not repeated.
+
+Other anchor-name rows in the snapshot (observed): 27 lie in the window and are all in the tranche-1 file (*Leclercqia* 11, *Eospermatopteris* 10, *Archaeopteris* 2, *Callixylon* 2,
+*Wattieza* 2), so *Wattieza* and *Leclercqia* have window records only. Six were left out: five *Archaeopteris* rows with `max_ma` 358.86 (Mississippian or Carboniferous; occurrences 251982, 253471,
+304380, 304388, 304751) touch but do not overlap the Frasnian–Famennian; and occurrence 1689038, *Archaeopteris roemeriana* (Late Famennian, 365.2–358.86 Ma), fails the filter because it has no PBDB
+taxon link, no `plant_organ` and its genus is not on the curated plant list. That is a gap in the tranche-1 filter's curated list (*Archaeopteris* is not on it; an unlinked in-window
+anchor row would be missed the same way, though none exists); I matched the filter exactly as instructed and did not extend it.
+
+### T2.3 Specimens and measurements: nothing for window plants
+
+PBDB's specimen and measurement tables hold **no rows for any of the 3,704 tranche-1 plant-filter occurrences (core or flagged) or the 163 anchor occurrences** (observed: 0 of 162,604 specimens and
+0 of 356,698 measurement rows link to them). The files therefore hold the plant-taxon rows of the whole snapshot (rule: the row's occurrence is in the tranche-1 or anchor set, or its accepted or identified
+taxon is in the plant subsets of §T2.4; `d_set` is `plant_taxon_any_age` for all):
+
+- **257 specimens** (237 taxa; 110 Angiospermae, 52 Magnoliophyta, 46 Spermatophyta, 23 Pteridophyta, 10 no phylum, others fewer): 231 have no occurrence link and no age, and 26 link to other occurrences and are the only dated ones; the oldest
+  is 298.9–293.52 Ma (*Plantae*), and no dated row is Silurian–Devonian.
+- **400 measurements** (236 taxa; `length` 193, `width` 151, `diameter` 55, `height` 1; 15 rows with `plant_organ` microspore): 33 have an age, 298.9 to 48.07 Ma (including 250.8–247 Ma Coniferophyta and
+  106.3–100.5 Ma *Elaterocolpites*); the other 367 are undated. Phyla: Angiospermae 165, Magnoliophyta 89, Spermatophyta 74, Pteridophyta 28, others fewer. The largest sources are González-Guzmán (1967, 176 rows),
+  Van der Hammen and Garcia de Mutis (1966, 26) and Jaramillo and Dilcher (2001, 24).
+- For scale: brachiopod, arthropod, mollusc and chordate rows are 96.6% of specimens and 97.0% of measurements. *Inference: PBDB's specimen and measurement modules were filled for animal groups; size data
+  for window plants have to come from the literature or the character matrices.*
+
+### T2.4 Plant taxa and opinions
+
+**Taxa.** `taxa.csv` has one row per `orig_no` (409,321 rows); `taxon_no` is the current spelling's number and differs from `orig_no` in 1,235 of the kept rows; `accepted_no` is an `orig_no`; `taxon_rank` is empty in
+every row read and `accepted_rank` is filled (species 21,591, genus 8,375, family 855, order 270, kingdom 182, unranked clade 99, ...). The lineage of a row is followed from its accepted name's `orig_no` (else its own),
+as in tranche 1. Kept: lineage contains Embryophyta (`embryophyta_pbdb_tree`, 23,376), Streptophyta or Charophyta without Embryophyta (`streptophyta_not_embryophyta`, 238), or Plantae without Chlorophyta, Rhodophyta,
+Biliphyta or Algae (`plantae_unplaced_pbdb_tree`, 8,081); plus 13 rows whose name or lineage is an anchor genus (`d_is_anchor`), one of which (*Elkinsia*) is outside the plant tree (`anchor_outside_plant_tree`).
+Green and red algae, algae unspecified, fungi and acritarchs are not included. The file includes extant and young taxa: filter on `d_range_overlaps_window` (yes 413 [278 / 122 / 13 by subset], no 13,546, blank 17,737 where PBDB has no
+range). Other derived columns: `d_n_tranche1_occurrences_accepted` (tranche-1 occurrences whose `accepted_no` equals the row's `orig_no`: 251 taxa, 1,994 occurrences, equal to all tranche-1 rows in the three subsets) and
+`d_n_tranche1_occurrences_identified` (whose `identified_no` equals the row's `taxon_no`: 14 taxa), and `d_pbdb_lineage`. The duplicated range and interval columns (`firstapp_*`, `lastapp_*`, `early_interval`, `late_interval`)
+are identical in both copies in all rows (checked).
+
+**Opinions.** Every `opinions.csv` row whose `orig_no` is one of the 31,694 distinct `orig_no` values with opinions among those taxa (an opinion about a plant taxon; opinions that place other taxa under a plant parent are not included):
+48,943 rows (`class` 31,687, `unsel` 17,256; status "belongs to" 47,369, subjective synonym 841, nomen nudum 305, replaced by 298, objective synonym 40, nomen dubium 39, misspelling 30, nomen vanum 17; basis "stated with
+evidence" 26,643, "stated without evidence" 22,001, "implied" 298). 653 are on the 413 taxa whose range overlaps the window. The largest sources are Linnaeus 1753 (6,283), Knowlton 1919 (5,108), Andrews 1970 (4,035) and Lakhanpal et al. 1976 (2,996).
+`d_taxon_subset` is the child's subset.
+
+### T2.5 References
+
+`pbdb_extras_references.csv`: the references cited by the taxa (`reference_no`, 1,206), opinions (1,312), specimens (51), measurements (50) and anchor occurrences (33); 1,434 in all, all found in `references.csv`, 14 of them also among
+tranche 1's 523 (`d_in_tranche1_references`). `d_cited_by` and `d_n_*` give the source and counts. `formatted` and `doi` are PBDB's; DOIs are not verified against Crossref.
+
+### T2.6 ASUD: Australian Silurian–Devonian units
+
+Source: the WFS layer `stratunit:StratigraphicUnit` (18,357 units), EPRP snapshot `2026-10-22T0604Z_wfs`, file sha256 `e1027750abcdb35d23644d813466c1416e2c3efa8a431eae29b74c3d26bc13dc` (equals the mirror manifest). **Licence: CC BY 4.0.** The
+WFS `AccessConstraints` reads "(c) Commonwealth of Australia (Geoscience Australia) 2020 … Creative Commons Attribution 4.0 International Licence", and Geoscience Australia's eCat record `a05f7892-8ca9-7506-e044-00144fdd4fa6`, read on 2026-10-27,
+gives "CC-BY 4.0" with "(c) Commonwealth of Australia (Geoscience Australia) and Geological Society of Australia (Australian Stratigraphy Commission) 2026" (copies and hashes in `asud_provenance.tsv`). Cite Geoscience Australia, ASUD,
+`https://services.ga.gov.au/gis/stratunits/ows`, retrieved 2026-10-22.
+
+**Selection (3,753 units):** the numeric ages overlap 443.1–358.86 Ma (Rhuddanian base to Tournaisian base, `data/timescale.csv`; placeholder eon-base and 0–0 ages cannot match; inverted ranges are ordered before the test), or `GEOLOGICHISTORY` names a Silurian or
+Devonian period, epoch or stage. `derived_sd_basis`: numeric and text 3,554, numeric only 192, text only with disjoint numeric ages 7 (granitoids and volcanics at the Devonian–Carboniferous boundary). By `STATE`: NSW 1,620, VIC 866, QLD 593,
+TAS 204, NSW+VIC 117, WA 116, ACT+NSW 57, NT 45, ATA 27, others fewer. **Victoria: 866 units in Victoria alone (757 overlap 485–383 Ma) and 1,001 counting multi-state units** (`derived_in_victoria`); of the 866, 669 are formations or beds,
+88 members, 81 groups or suites, 23 subgroups, 5 supergroups, and 835 have a description. Victoria's Silurian–Devonian units are mostly igneous (`REPRESENTATIVELITHOLOGY_URI`: acidic igneous rock 504, granite 39, against clastic
+sedimentary rock 97).
+
+Derived columns: `derived_state_list`, `derived_age_older_ma` and `derived_age_younger_ma` (the two numeric ages ordered), `derived_age_flag` (19 selected units are inverted, source values unchanged), `derived_overlaps_silurian_devonian`,
+`derived_overlaps_project_window`, `derived_sd_text_terms`, `derived_sd_basis`, `derived_composite_name` (133 entries name several units), `derived_parent_unit`, `derived_parent_rank` and `derived_parent_chain` (supergroup to the unit itself, from the
+source hierarchy columns, which are kept), `derived_environment_keywords` (ASUD has no environment field; keywords such as marine, volcanic, intrusive are matched in `DESCRIPTION` and `LITHOLOGY`; none for 120 of the 866 Victorian units),
+`derived_description_plant_terms` (plant, flora, spore and similar words in `DESCRIPTION`: 10 units), and four `derived_pbdb_*` link columns (below). The numeric ages are ICS v2024/12 boundary values (for example 426.7, 422.7, 419.62, 413.02, 410.62, 393.47, as
+in `data/timescale.csv`; observed in the key units), consistent with ages assigned from the text interval (inference).
+
+**The Yea and *Baragwanathia* units, from the data.** ASUD itself does not name *Baragwanathia* or other early land plants: none of the 18,357 descriptions contains *Baragwanathia*, *Cooksonia*, *Zosterophyllum*, lycopod or psilophyte. Only two Silurian–Devonian
+units with a Victorian state mention plants at all (`derived_description_plant_terms`): the Moonip Sandstone Member (VIC, Ludlow–Early Devonian, "a few fossils including plant remains", under the Mount Tambo Group and Berrawan Conglomerate) and the Bellbird Creek Formation
+(NSW and VIC, Frasnian, "Rare marine microfossils and macroflora"). The plant link comes from the PBDB side. Of the 60 Australian collections in tranche 1, four contain *Baragwanathia*: three with formation "Yea" (collections 20754, 53660, 53664; Ludlow,
+426.7–422.7 Ma) and one, 20896 "Frenchman Spur" (Pragian to Middle Devonian, 413.02–382.31 Ma, also *Zosterophyllum*, *Salopella*, *Yarravia*), whose stratigraphic comment places it near the top of the Wilson Creek Shale. The `derived_pbdb_*` columns match unit-name stems
+against the collections' `formation`, `formation.1`, `geological_group` and `member` fields in the same state (by name field), and the full unit name against `stratcomments`, `collection_name`, `geology_comments` and `lithdescript` (by text mention); `derived_pbdb_core_genera_in_matched_collections` and
+`derived_pbdb_baragwanathia_collection_nos` follow. Thirty units link to a tranche-1 plant collection, eight of them Victorian (the others include the Gneudna Formation, WA, with Givetian–Frasnian spores, and NSW units with *Protolepidodendron*). The units:
+
+| STRATNO | Unit (ASUD spelling) | Text age | Numeric age (Ma) | Parent chain (ASUD) | PBDB link |
+| ---: | --- | --- | --- | --- | --- |
+| 24139 | Yea Formation | Ludlow – Pridoli | 426.7–419.62 | none; no description or lithology in ASUD | formation "Yea": *Baragwanathia*, *Salopella*, *Yarravia*, Zosterophyllales indet. |
+| 28613 | Humevale Siltstone | Ludlow – Pragian | 426.7–410.62 | Murrindindi Supergroup | formation "Humevale": *Plantae* indet. only; ASUD: "Marine mudstone … distal shelf and hemipelagic mudstone" |
+| 26219 | Wilson Creek Shale (not "Wilsons Creek") | Pragian – Emsian | 413.02–393.47 | Murrindindi Supergroup > Jordan River Group | by text, Frenchman Spur: *Baragwanathia*, *Zosterophyllum*, *Salopella*, *Yarravia*; ASUD: "Contains numerous fossils" |
+| 37691, 79662, 79968 | composite entries naming Wilson Creek Shale (37691, 79662) or Humevale Siltstone (79968) | Ludlow – Emsian; Pragian – Emsian; Ludlow – Pridoli | 426.7–393.47; 413.02–393.47; 426.7–419.62 | | same collections |
+
+The ASUD ranges are wider than the PBDB collection ages (Yea: ASUD Ludlow–Pridoli against PBDB Ludlow). No unit named Rice Hill Sandstone (the PBDB comment for the Yea collections names a Rice Hill member; ASUD has only a Western Australian "Rice Hill lamproite"), Frenchman Spur or Thomastown exists in the layer (searched by name over all 18,357 units).
+
+### T2.7 Inputs, versions and checksums
+
+Snapshot `2026-10-23T0329Z_url` (path as in §8): `specimens.csv` sha256 `767bccb70f8a89572b411bd8d013b97bdab0161758d20d56973044984cfc6b7c`, `opinions.csv` `bc3c26213784b08ae6ce9f3109b1b8001fbd563ea37298cadf8a52b05b4da04c`, `taxa.csv` and `references.csv` as in §8,
+`measurements__c000`–`c162` (163 chunks, 356,698 rows) and `occurrences__p01`–`p12` (15 files), all in `pbdb_extras_inputs_sha256.tsv`; every one matches the snapshot manifest. Tranche-1 inputs: `pbdb_plant_occurrences.csv` (sha256 `bc617e86…`) and
+`pbdb_plant_references.csv` (`60a183a8…`), checked against `MANIFEST.tsv` before use. Licences: PBDB CC0 (API `datainfo`), ASUD CC BY 4.0.
+
+### T2.8 Caveats
+
+- PBDB records are public occurrences only, as in tranche 1 (§9). Specimens and measurements carry no withheld-record issue because none link to the plant filter set.
+- The taxa and opinion tables follow PBDB's current classification and include every age; they are for name harmonisation and range checks, not a window record.
+- ASUD ages are interval-derived; ASUD's own README documents inverted ranges, placeholders and some numeric–text disagreement. The PBDB–ASUD link is by name and state (homonyms and localities such as "Frenchman Spur" make it incomplete and fallible); it is evidence for a
+  candidate unit, not a stratigraphic correlation.
+- Environment keywords (ASUD) are weak: 3,497 of the 3,753 units have a description, and many are igneous.
+
+### T2.9 Not done
+
+- No specimen or measurement extraction beyond the finding above, because none exists for window plants.
+- ASUD per-state text downloads (definitions and references) were not pulled; no references for the Victorian units.
+- PBDB collections of the anchor occurrences were not extracted (the occurrence rows carry their own palaeocoordinates and country); the references they cite are in `pbdb_extras_references.csv`.
+- No taxonomic review, no mapping of the taxa file to the project's cards, no Crossref check of PBDB DOIs.
+- *Wattieza* and *Leclercqia* have no Frasnian–Famennian records to extract under this matching.
+
+### T2.10 Reproduce
+
+From `data/eprp/scripts/` (stdlib Python):
+
+```sh
+ssh deep-server 'mkdir -p /data/codex/silurian_plants/raw/pbdb-extras/input'
+scp ../record/pbdb_plant_occurrences.csv ../record/pbdb_plant_references.csv ../record/pbdb_plant_collections.csv \
+    deep-server:/data/codex/silurian_plants/raw/pbdb-extras/input/
+ssh deep-server python3 - < record_extras_pbdb.py     # writes <stamp>/ under raw/pbdb-extras/
+ssh deep-server python3 - < record_extras_asud.py     # writes asud/<stamp>/
+rsync -a deep-server:/data/codex/silurian_plants/raw/pbdb-extras/<stamp>/ out/   # copy the CSVs and TSV to ../record/
+python3 record_extras_manifest.py                     # appends the tranche-2 rows to MANIFEST.tsv
+```
+
+A second run of `record_extras_pbdb.py` gave byte-identical tables (apart from the one column fixed between runs).

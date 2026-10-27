@@ -1,0 +1,5 @@
+qid	group	query	count	fetched	new_unique	note	seconds
+name_Phlegmariurus_q	name	{"basisOfRecord": "FOSSIL_SPECIMEN", "q": "Phlegmariurus"}	18	18	18		2.2
+name_Anthoceros_q	name	{"basisOfRecord": "FOSSIL_SPECIMEN", "q": "Anthoceros"}	31	31	31		2.3
+name_Phlegmariurus_taxonKey7641693	name	{"basisOfRecord": "FOSSIL_SPECIMEN", "taxonKey": 7641693}	18	18	0		3.6
+name_Anthoceros_taxonKey8365024	name	{"basisOfRecord": "FOSSIL_SPECIMEN", "taxonKey": 8365024}	28	28	0		3.6

@@ -1,0 +1,133 @@
+qid	group	query	count	fetched	new_unique	note	seconds
+plantae_ft_Devonian	text	{"basisofrecord": "fossilspecimen", "data": {"type": "fulltext", "value": "Devonian"}, "kingdom": "plantae"}	13094	13094	13094		48.9
+plantae_ft_Silurian	text	{"basisofrecord": "fossilspecimen", "data": {"type": "fulltext", "value": "Silurian"}, "kingdom": "plantae"}	1574	1574	1256		6.8
+plantae_ft_Ordovician	text	{"basisofrecord": "fossilspecimen", "data": {"type": "fulltext", "value": "Ordovician"}, "kingdom": "plantae"}	5163	5163	5159		19.6
+plantae_ft_Lochkovian	text	{"basisofrecord": "fossilspecimen", "data": {"type": "fulltext", "value": "Lochkovian"}, "kingdom": "plantae"}	736	736	0		3.0
+plantae_ft_Pragian	text	{"basisofrecord": "fossilspecimen", "data": {"type": "fulltext", "value": "Pragian"}, "kingdom": "plantae"}	1144	1144	0		5.9
+plantae_ft_Emsian	text	{"basisofrecord": "fossilspecimen", "data": {"type": "fulltext", "value": "Emsian"}, "kingdom": "plantae"}	1857	1857	0		7.1
+plantae_ft_Eifelian	text	{"basisofrecord": "fossilspecimen", "data": {"type": "fulltext", "value": "Eifelian"}, "kingdom": "plantae"}	1211	1211	0		5.9
+plantae_ft_Givetian	text	{"basisofrecord": "fossilspecimen", "data": {"type": "fulltext", "value": "Givetian"}, "kingdom": "plantae"}	2979	2979	0		10.3
+plantae_ft_Pridoli	text	{"basisofrecord": "fossilspecimen", "data": {"type": "fulltext", "value": "Pridoli"}, "kingdom": "plantae"}	443	443	0		2.8
+plantae_ft_Ludlow	text	{"basisofrecord": "fossilspecimen", "data": {"type": "fulltext", "value": "Ludlow"}, "kingdom": "plantae"}	2462	2462	2263		10.2
+plantae_ft_Wenlock	text	{"basisofrecord": "fossilspecimen", "data": {"type": "fulltext", "value": "Wenlock"}, "kingdom": "plantae"}	337	337	0		2.6
+plantae_ft_Llandovery	text	{"basisofrecord": "fossilspecimen", "data": {"type": "fulltext", "value": "Llandovery"}, "kingdom": "plantae"}	118	118	0		2.1
+plantae_ft_Gorstian	text	{"basisofrecord": "fossilspecimen", "data": {"type": "fulltext", "value": "Gorstian"}, "kingdom": "plantae"}	47	47	0		1.8
+plantae_ft_Ludfordian	text	{"basisofrecord": "fossilspecimen", "data": {"type": "fulltext", "value": "Ludfordian"}, "kingdom": "plantae"}	1	1	0		0.7
+plantae_ft_Homerian	text	{"basisofrecord": "fossilspecimen", "data": {"type": "fulltext", "value": "Homerian"}, "kingdom": "plantae"}	47	47	0		1.9
+plantae_ft_Sheinwoodian	text	{"basisofrecord": "fossilspecimen", "data": {"type": "fulltext", "value": "Sheinwoodian"}, "kingdom": "plantae"}	1	1	0		0.7
+plantae_ft_Telychian	text	{"basisofrecord": "fossilspecimen", "data": {"type": "fulltext", "value": "Telychian"}, "kingdom": "plantae"}	5	5	0		1.1
+plantae_ft_Aeronian	text	{"basisofrecord": "fossilspecimen", "data": {"type": "fulltext", "value": "Aeronian"}, "kingdom": "plantae"}	2	2	0		0.9
+plantae_ft_Rhuddanian	text	{"basisofrecord": "fossilspecimen", "data": {"type": "fulltext", "value": "Rhuddanian"}, "kingdom": "plantae"}	22	22	0		1.4
+plantae_ft_Hirnantian	text	{"basisofrecord": "fossilspecimen", "data": {"type": "fulltext", "value": "Hirnantian"}, "kingdom": "plantae"}	2	2	0		0.9
+plantae_ft_Katian	text	{"basisofrecord": "fossilspecimen", "data": {"type": "fulltext", "value": "Katian"}, "kingdom": "plantae"}	45	45	0		1.6
+plantae_ft_Sandbian	text	{"basisofrecord": "fossilspecimen", "data": {"type": "fulltext", "value": "Sandbian"}, "kingdom": "plantae"}	15	15	0		1.4
+plantae_ft_Darriwilian	text	{"basisofrecord": "fossilspecimen", "data": {"type": "fulltext", "value": "Darriwilian"}, "kingdom": "plantae"}	215	215	0		2.0
+plantae_ft_Dapingian	text	{"basisofrecord": "fossilspecimen", "data": {"type": "fulltext", "value": "Dapingian"}, "kingdom": "plantae"}	1	1	0		0.7
+plantae_ft_Floian	text	{"basisofrecord": "fossilspecimen", "data": {"type": "fulltext", "value": "Floian"}, "kingdom": "plantae"}	3	3	0		0.9
+plantae_ft_Tremadocian	text	{"basisofrecord": "fossilspecimen", "data": {"type": "fulltext", "value": "Tremadocian"}, "kingdom": "plantae"}	13	13	0		1.3
+plantae_ft_Gedinnian	text	{"basisofrecord": "fossilspecimen", "data": {"type": "fulltext", "value": "Gedinnian"}, "kingdom": "plantae"}	39	39	0		1.6
+plantae_ft_Siegenian	text	{"basisofrecord": "fossilspecimen", "data": {"type": "fulltext", "value": "Siegenian"}, "kingdom": "plantae"}	37	37	0		1.6
+plantae_ft_Downtonian	text	{"basisofrecord": "fossilspecimen", "data": {"type": "fulltext", "value": "Downtonian"}, "kingdom": "plantae"}	10	10	0		1.2
+plantae_ft_Dittonian	text	{"basisofrecord": "fossilspecimen", "data": {"type": "fulltext", "value": "Dittonian"}, "kingdom": "plantae"}	0	0	0		0.7
+plantae_ft_Ludlovian	text	{"basisofrecord": "fossilspecimen", "data": {"type": "fulltext", "value": "Ludlovian"}, "kingdom": "plantae"}	13	13	0		1.2
+plantae_ft_niagaran	text	{"basisofrecord": "fossilspecimen", "data": {"type": "fulltext", "value": "niagaran"}, "kingdom": "plantae"}	70	70	1		1.8
+plantae_ft_cincinnatian	text	{"basisofrecord": "fossilspecimen", "data": {"type": "fulltext", "value": "cincinnatian"}, "kingdom": "plantae"}	25	25	1		1.4
+plantae_ft_alexandrian	text	{"basisofrecord": "fossilspecimen", "data": {"type": "fulltext", "value": "alexandrian"}, "kingdom": "plantae"}	0	0	0		0.7
+plantae_ft_cayugan	text	{"basisofrecord": "fossilspecimen", "data": {"type": "fulltext", "value": "cayugan"}, "kingdom": "plantae"}	0	0	0		0.7
+plantae_ft_helderbergian	text	{"basisofrecord": "fossilspecimen", "data": {"type": "fulltext", "value": "helderbergian"}, "kingdom": "plantae"}	1	1	0		0.7
+plantae_ft_oriskanian	text	{"basisofrecord": "fossilspecimen", "data": {"type": "fulltext", "value": "oriskanian"}, "kingdom": "plantae"}	0	0	0		0.7
+plantae_ft_ulsterian	text	{"basisofrecord": "fossilspecimen", "data": {"type": "fulltext", "value": "ulsterian"}, "kingdom": "plantae"}	0	0	0		0.7
+plantae_ft_erian	text	{"basisofrecord": "fossilspecimen", "data": {"type": "fulltext", "value": "erian"}, "kingdom": "plantae"}	0	0	0		0.7
+otherkingdoms_ft_Devonian	text	{"basisofrecord": "fossilspecimen", "data": {"type": "fulltext", "value": "Devonian"}, "kingdom": ["fungi", "protozoa", "chromista", "incertae sedis", "taxon-indet.", "unknown", "bacteria", "microfossils/palynology", "eukaryota", "ichnofossil", "archaea", "protista", "algae", "to be looked up"]}	1418	1418	1418		6.0
+nokingdom_named_ft_Devonian	text	{"basisofrecord": "fossilspecimen", "data": {"type": "fulltext", "value": "Devonian"}, "kingdom": {"type": "missing"}, "scientificname": {"type": "exists"}}	4167	4167	4167		15.7
+otherkingdoms_ft_Silurian	text	{"basisofrecord": "fossilspecimen", "data": {"type": "fulltext", "value": "Silurian"}, "kingdom": ["fungi", "protozoa", "chromista", "incertae sedis", "taxon-indet.", "unknown", "bacteria", "microfossils/palynology", "eukaryota", "ichnofossil", "archaea", "protista", "algae", "to be looked up"]}	772	772	703		2.9
+nokingdom_named_ft_Silurian	text	{"basisofrecord": "fossilspecimen", "data": {"type": "fulltext", "value": "Silurian"}, "kingdom": {"type": "missing"}, "scientificname": {"type": "exists"}}	3190	3190	3184		12.3
+otherkingdoms_ft_Ordovician	text	{"basisofrecord": "fossilspecimen", "data": {"type": "fulltext", "value": "Ordovician"}, "kingdom": ["fungi", "protozoa", "chromista", "incertae sedis", "taxon-indet.", "unknown", "bacteria", "microfossils/palynology", "eukaryota", "ichnofossil", "archaea", "protista", "algae", "to be looked up"]}	937	937	936		3.2
+nokingdom_named_ft_Ordovician	text	{"basisofrecord": "fossilspecimen", "data": {"type": "fulltext", "value": "Ordovician"}, "kingdom": {"type": "missing"}, "scientificname": {"type": "exists"}}	2129	2129	2084		8.7
+name_Aberlemnia	name	{"basisofrecord": "fossilspecimen", "scientificname": {"type": "fulltext", "value": "Aberlemnia"}}	0	0	0		0.7
+name_Aglaophyton	name	{"basisofrecord": "fossilspecimen", "scientificname": {"type": "fulltext", "value": "Aglaophyton"}}	72	72	5		2.0
+name_Rhynia	name	{"basisofrecord": "fossilspecimen", "scientificname": {"type": "fulltext", "value": "Rhynia"}}	172	172	1		2.1
+name_Ambitisporites	name	{"basisofrecord": "fossilspecimen", "scientificname": {"type": "fulltext", "value": "Ambitisporites"}}	25	25	0		1.6
+name_Asteroxylon	name	{"basisofrecord": "fossilspecimen", "scientificname": {"type": "fulltext", "value": "Asteroxylon"}}	116	116	11		1.9
+name_Baragwanathia	name	{"basisofrecord": "fossilspecimen", "scientificname": {"type": "fulltext", "value": "Baragwanathia"}}	32	32	5		1.6
+name_Cooksonia	name	{"basisofrecord": "fossilspecimen", "scientificname": {"type": "fulltext", "value": "Cooksonia"}}	172	172	19		2.3
+name_Drepanophycus	name	{"basisofrecord": "fossilspecimen", "scientificname": {"type": "fulltext", "value": "Drepanophycus"}}	1463	1463	405		5.7
+name_Palaeoglomus	name	{"basisofrecord": "fossilspecimen", "scientificname": {"type": "fulltext", "value": "Palaeoglomus"}}	2	2	0		0.7
+name_Paleoglomus	name	{"basisofrecord": "fossilspecimen", "scientificname": {"type": "fulltext", "value": "Paleoglomus"}}	0	0	0		0.7
+name_Glomites	name	{"basisofrecord": "fossilspecimen", "scientificname": {"type": "fulltext", "value": "Glomites"}}	56	56	55		1.6
+name_Archaeosporites	name	{"basisofrecord": "fossilspecimen", "scientificname": {"type": "fulltext", "value": "Archaeosporites"}}	0	0	0		0.7
+name_Palaeoendogone	name	{"basisofrecord": "fossilspecimen", "scientificname": {"type": "fulltext", "value": "Palaeoendogone"}}	0	0	0		0.7
+name_Rugososporomyces	name	{"basisofrecord": "fossilspecimen", "scientificname": {"type": "fulltext", "value": "Rugososporomyces"}}	0	0	0		0.7
+name_Eophyllophyton	name	{"basisofrecord": "fossilspecimen", "scientificname": {"type": "fulltext", "value": "Eophyllophyton"}}	0	0	0		0.7
+name_Horneophyton	name	{"basisofrecord": "fossilspecimen", "scientificname": {"type": "fulltext", "value": "Horneophyton"}}	34	34	8		1.6
+name_Hornea	name	{"basisofrecord": "fossilspecimen", "scientificname": {"type": "fulltext", "value": "Hornea"}}	27	27	6		1.6
+name_Nematothallus	name	{"basisofrecord": "fossilspecimen", "scientificname": {"type": "fulltext", "value": "Nematothallus"}}	134	134	2		2.0
+name_Nothia	name	{"basisofrecord": "fossilspecimen", "scientificname": {"type": "fulltext", "value": "Nothia"}}	2	2	1		0.9
+name_Tetrahedraletes	name	{"basisofrecord": "fossilspecimen", "scientificname": {"type": "fulltext", "value": "Tetrahedraletes"}}	25	25	0		1.6
+name_Cryptospora	name	{"basisofrecord": "fossilspecimen", "scientificname": {"type": "fulltext", "value": "Cryptospora"}}	0	0	0		0.7
+name_Dyadospora	name	{"basisofrecord": "fossilspecimen", "scientificname": {"type": "fulltext", "value": "Dyadospora"}}	26	26	0		1.6
+name_Pseudodyadospora	name	{"basisofrecord": "fossilspecimen", "scientificname": {"type": "fulltext", "value": "Pseudodyadospora"}}	14	14	0		1.4
+name_Hispanaediscus	name	{"basisofrecord": "fossilspecimen", "scientificname": {"type": "fulltext", "value": "Hispanaediscus"}}	17	17	1		1.4
+name_Laevolancis	name	{"basisofrecord": "fossilspecimen", "scientificname": {"type": "fulltext", "value": "Laevolancis"}}	26	26	0		1.6
+name_Rimosotetras	name	{"basisofrecord": "fossilspecimen", "scientificname": {"type": "fulltext", "value": "Rimosotetras"}}	8	8	0		1.2
+name_Segestrespora	name	{"basisofrecord": "fossilspecimen", "scientificname": {"type": "fulltext", "value": "Segestrespora"}}	21	21	0		1.4
+name_Artemopyra	name	{"basisofrecord": "fossilspecimen", "scientificname": {"type": "fulltext", "value": "Artemopyra"}}	17	17	0		1.4
+name_Cheilotetras	name	{"basisofrecord": "fossilspecimen", "scientificname": {"type": "fulltext", "value": "Cheilotetras"}}	7	7	0		1.1
+name_Velatitetras	name	{"basisofrecord": "fossilspecimen", "scientificname": {"type": "fulltext", "value": "Velatitetras"}}	14	14	0		1.4
+name_Cymbohilates	name	{"basisofrecord": "fossilspecimen", "scientificname": {"type": "fulltext", "value": "Cymbohilates"}}	17	17	0		1.4
+name_Abditodyadus	name	{"basisofrecord": "fossilspecimen", "scientificname": {"type": "fulltext", "value": "Abditodyadus"}}	0	0	0		0.7
+name_Tetraplanarisporites	name	{"basisofrecord": "fossilspecimen", "scientificname": {"type": "fulltext", "value": "Tetraplanarisporites"}}	0	0	0		0.7
+name_Partitatheca	name	{"basisofrecord": "fossilspecimen", "scientificname": {"type": "fulltext", "value": "Partitatheca"}}	1	1	0		0.8
+name_Pertica	name	{"basisofrecord": "fossilspecimen", "scientificname": {"type": "fulltext", "value": "Pertica"}}	70	70	9		1.9
+name_Prototaxites	name	{"basisofrecord": "fossilspecimen", "scientificname": {"type": "fulltext", "value": "Prototaxites"}}	537	537	315		2.6
+name_Psilophyton	name	{"basisofrecord": "fossilspecimen", "scientificname": {"type": "fulltext", "value": "Psilophyton"}}	1572	1572	897		6.5
+name_Renalia	name	{"basisofrecord": "fossilspecimen", "scientificname": {"type": "fulltext", "value": "Renalia"}}	51	51	2		1.6
+name_Lyonophyton	name	{"basisofrecord": "fossilspecimen", "scientificname": {"type": "fulltext", "value": "Lyonophyton"}}	0	0	0		0.7
+name_Langiophyton	name	{"basisofrecord": "fossilspecimen", "scientificname": {"type": "fulltext", "value": "Langiophyton"}}	0	0	0		0.8
+name_Kidstonophyton	name	{"basisofrecord": "fossilspecimen", "scientificname": {"type": "fulltext", "value": "Kidstonophyton"}}	0	0	0		0.8
+name_Remyophyton	name	{"basisofrecord": "fossilspecimen", "scientificname": {"type": "fulltext", "value": "Remyophyton"}}	0	0	0		0.7
+name_Riccardiothallus	name	{"basisofrecord": "fossilspecimen", "scientificname": {"type": "fulltext", "value": "Riccardiothallus"}}	0	0	0		0.7
+name_Sawdonia	name	{"basisofrecord": "fossilspecimen", "scientificname": {"type": "fulltext", "value": "Sawdonia"}}	168	168	24		2.0
+name_Tortotubus	name	{"basisofrecord": "fossilspecimen", "scientificname": {"type": "fulltext", "value": "Tortotubus"}}	0	0	0		0.7
+name_Winfrenatia	name	{"basisofrecord": "fossilspecimen", "scientificname": {"type": "fulltext", "value": "Winfrenatia"}}	45	45	0		1.6
+name_Zosterophyllum	name	{"basisofrecord": "fossilspecimen", "scientificname": {"type": "fulltext", "value": "Zosterophyllum"}}	210	210	19		2.3
+name_Archaeopteris	name	{"basisofrecord": "fossilspecimen", "scientificname": {"type": "fulltext", "value": "Archaeopteris"}}	473	473	168		2.6
+name_Callixylon	name	{"basisofrecord": "fossilspecimen", "scientificname": {"type": "fulltext", "value": "Callixylon"}}	368	368	43		2.6
+name_Eospermatopteris	name	{"basisofrecord": "fossilspecimen", "scientificname": {"type": "fulltext", "value": "Eospermatopteris"}}	25	25	6		1.6
+name_Wattieza	name	{"basisofrecord": "fossilspecimen", "scientificname": {"type": "fulltext", "value": "Wattieza"}}	25	25	0		1.3
+name_Elkinsia	name	{"basisofrecord": "fossilspecimen", "scientificname": {"type": "fulltext", "value": "Elkinsia"}}	846	846	0		2.8
+name_Leclercqia	name	{"basisofrecord": "fossilspecimen", "scientificname": {"type": "fulltext", "value": "Leclercqia"}}	76	76	3		1.7
+name_Nematophyton	name	{"basisofrecord": "fossilspecimen", "scientificname": {"type": "fulltext", "value": "Nematophyton"}}	113	113	0		2.0
+name_Pachytheca	name	{"basisofrecord": "fossilspecimen", "scientificname": {"type": "fulltext", "value": "Pachytheca"}}	1025	1025	525		4.9
+name_Nematasketum	name	{"basisofrecord": "fossilspecimen", "scientificname": {"type": "fulltext", "value": "Nematasketum"}}	10	10	0		1.3
+name_Nematoplexus	name	{"basisofrecord": "fossilspecimen", "scientificname": {"type": "fulltext", "value": "Nematoplexus"}}	0	0	0		0.7
+name_Nematophycus	name	{"basisofrecord": "fossilspecimen", "scientificname": {"type": "fulltext", "value": "Nematophycus"}}	8	8	0		1.2
+name_Parka	name	{"basisofrecord": "fossilspecimen", "scientificname": {"type": "fulltext", "value": "Parka"}}	228	228	1		2.3
+name_Cosmochlaina	name	{"basisofrecord": "fossilspecimen", "scientificname": {"type": "fulltext", "value": "Cosmochlaina"}}	0	0	0		0.7
+name_Spongiophyton	name	{"basisofrecord": "fossilspecimen", "scientificname": {"type": "fulltext", "value": "Spongiophyton"}}	20	20	0		1.4
+name_Palaeonitella	name	{"basisofrecord": "fossilspecimen", "scientificname": {"type": "fulltext", "value": "Palaeonitella"}}	9	9	0		1.2
+name_Moellerina	name	{"basisofrecord": "fossilspecimen", "scientificname": {"type": "fulltext", "value": "Moellerina"}}	47	47	1		1.7
+name_Sycidium	name	{"basisofrecord": "fossilspecimen", "scientificname": {"type": "fulltext", "value": "Sycidium"}}	22	22	1		1.4
+name_Trochiliscus	name	{"basisofrecord": "fossilspecimen", "scientificname": {"type": "fulltext", "value": "Trochiliscus"}}	22	22	7		1.4
+name_Eochara	name	{"basisofrecord": "fossilspecimen", "scientificname": {"type": "fulltext", "value": "Eochara"}}	1	1	1		0.7
+name_Octochara	name	{"basisofrecord": "fossilspecimen", "scientificname": {"type": "fulltext", "value": "Octochara"}}	0	0	0		0.7
+name_Praechara	name	{"basisofrecord": "fossilspecimen", "scientificname": {"type": "fulltext", "value": "Praechara"}}	10	10	10		0.9
+name_Chovanella	name	{"basisofrecord": "fossilspecimen", "scientificname": {"type": "fulltext", "value": "Chovanella"}}	12	12	12		0.9
+name_Mesochara	name	{"basisofrecord": "fossilspecimen", "scientificname": {"type": "fulltext", "value": "Mesochara"}}	4	4	0		0.9
+name_Yarravia	name	{"basisofrecord": "fossilspecimen", "scientificname": {"type": "fulltext", "value": "Yarravia"}}	4	4	0		0.9
+name_Hedeia	name	{"basisofrecord": "fossilspecimen", "scientificname": {"type": "fulltext", "value": "Hedeia"}}	11	11	1		1.2
+name_Pluricaulis	name	{"basisofrecord": "fossilspecimen", "scientificname": {"type": "fulltext", "value": "Pluricaulis"}}	0	0	0		0.7
+name_Dawsonites	name	{"basisofrecord": "fossilspecimen", "scientificname": {"type": "fulltext", "value": "Dawsonites"}}	160	160	84		2.2
+name_Palaeostigma	name	{"basisofrecord": "fossilspecimen", "scientificname": {"type": "fulltext", "value": "Palaeostigma"}}	3	3	0		0.9
+name_Psilotum	name	{"basisofrecord": "fossilspecimen", "scientificname": {"type": "fulltext", "value": "Psilotum"}}	65	65	65		1.6
+name_Tmesipteris	name	{"basisofrecord": "fossilspecimen", "scientificname": {"type": "fulltext", "value": "Tmesipteris"}}	28	28	28		1.6
+name_Lycopodium	name	{"basisofrecord": "fossilspecimen", "scientificname": {"type": "fulltext", "value": "Lycopodium"}}	137	137	136		2.0
+name_Ulothrix	name	{"basisofrecord": "fossilspecimen", "scientificname": {"type": "fulltext", "value": "Ulothrix"}}	15	15	15		1.4
+name_Ulva	name	{"basisofrecord": "fossilspecimen", "scientificname": {"type": "fulltext", "value": "Ulva"}}	3	3	3		0.9
+name_Coleochaete	name	{"basisofrecord": "fossilspecimen", "scientificname": {"type": "fulltext", "value": "Coleochaete"}}	0	0	0		0.7
+name_Chara	name	{"basisofrecord": "fossilspecimen", "scientificname": {"type": "fulltext", "value": "Chara"}}	547	547	532		2.9
+name_Marchantia	name	{"basisofrecord": "fossilspecimen", "scientificname": {"type": "fulltext", "value": "Marchantia"}}	45	45	45		1.7
+name_Metzgeriothallus	name	{"basisofrecord": "fossilspecimen", "scientificname": {"type": "fulltext", "value": "Metzgeriothallus"}}	662	662	0		2.8
+name_Franhueberia	name	{"basisofrecord": "fossilspecimen", "scientificname": {"type": "fulltext", "value": "Franhueberia"}}	0	0	0		0.7
+name_Salopella	name	{"basisofrecord": "fossilspecimen", "scientificname": {"type": "fulltext", "value": "Salopella"}}	0	0	0		0.7
+name_Taeniocrada	name	{"basisofrecord": "fossilspecimen", "scientificname": {"type": "fulltext", "value": "Taeniocrada"}}	161	161	122		2.2

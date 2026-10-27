@@ -1,0 +1,258 @@
+{
+ "ala_mirror_unique_records_read": 42782,
+ "class_ala": {
+  "core": 194,
+  "flagged": 80
+ },
+ "class_gbif": {
+  "core": 13431,
+  "flagged": 11325
+ },
+ "class_idigbio": {
+  "core": 10453,
+  "flagged": 9390
+ },
+ "dedupe_cross_source_groups_by_rule_set": {
+  "gbifID+inst_catalog": 2,
+  "gbifID+inst_catalog+occurrenceID": 271,
+  "inst_catalog+occurrenceID": 17628,
+  "occurrenceID": 200
+ },
+ "dedupe_cross_source_groups_by_strongest_rule": {
+  "gbifID": 273,
+  "occurrenceID": 17828
+ },
+ "dedupe_group_composition_by_source_set": {
+  "(rows sharing a catalogue key inside one source: idigbio)": 32,
+  "ala_mirror": 1,
+  "gbif": 6570,
+  "gbif+ala_mirror": 127,
+  "gbif+ala_mirror+idigbio": 146,
+  "gbif+idigbio": 17828,
+  "idigbio": 1430
+ },
+ "dedupe_key_collisions_not_cross_source": {
+  "idigbio|inst_catalog": 32
+ },
+ "dedupe_physical_specimens": 26102,
+ "dropped_ala": {
+  "coarse_age_only": 88,
+  "outside_window": 27598,
+  "taxon_excluded:animal": 1436,
+  "taxon_excluded:animal_name_filed_under_plant_or_fungus_lineage": 452,
+  "taxon_excluded:bacteria_cyanobacteria": 8,
+  "taxon_excluded:no_lineage_no_plant_evidence": 149,
+  "taxon_excluded:protozoa_chromista": 15,
+  "undated": 12762
+ },
+ "dropped_gbif": {
+  "coarse_age_only": 8,
+  "outside_window": 5169,
+  "taxon_excluded:animal": 471,
+  "taxon_excluded:animal_name_filed_under_plant_or_fungus_lineage": 1167,
+  "taxon_excluded:bacteria_cyanobacteria": 206,
+  "taxon_excluded:no_lineage_no_plant_evidence": 134,
+  "taxon_excluded:protozoa_chromista": 534,
+  "undated": 1688
+ },
+ "dropped_idigbio": {
+  "outside_window": 5154,
+  "taxon_excluded:animal": 1581,
+  "taxon_excluded:animal_name_filed_under_plant_or_fungus_lineage": 168,
+  "taxon_excluded:animal_or_trace_fossil_name": 166,
+  "taxon_excluded:bacteria_cyanobacteria": 161,
+  "taxon_excluded:ichnofossil": 553,
+  "taxon_excluded:no_lineage_no_plant_evidence": 8986,
+  "taxon_excluded:other_lineage": 487,
+  "taxon_excluded:protozoa_chromista": 113,
+  "undated": 658
+ },
+ "gbif_rows_from_idigbio_sourced_datasets": {
+  "matched_to_an_idigbio_row": 0,
+  "rows": 0
+ },
+ "gbif_unique_records_retrieved": 34133,
+ "idigbio_unique_records_retrieved": 37870,
+ "institutions_ala": {
+  "CMC": 1,
+  "FMNH": 55,
+  "KU": 6,
+  "MNHN": 1,
+  "MfN": 2,
+  "NHMUK": 122,
+  "NRM": 42,
+  "NSM": 4,
+  "UCMP": 1,
+  "UF": 3,
+  "UMMP": 3,
+  "UOMNH": 33,
+  "UiO": 1
+ },
+ "institutions_gbif": {
+  "": 182,
+  "AMNH": 53,
+  "CM": 18,
+  "CMC": 381,
+  "Department of Geology, TalTech": 29,
+  "FMNH": 4141,
+  "KU": 4059,
+  "MNHN": 122,
+  "MPM": 40,
+  "MfN": 128,
+  "Milwaukee Public Museum (MPM)": 50,
+  "NHMUK": 5356,
+  "NRM": 2685,
+  "NSM": 162,
+  "OMNH": 49,
+  "RBINS-Scientific Heritage": 1433,
+  "SMF": 75,
+  "UCMP": 2299,
+  "UF": 75,
+  "UMMP": 94,
+  "UOMNH": 338,
+  "USNM": 243,
+  "UiO": 1047,
+  "Universit\u00e9 Rennes 1": 80,
+  "YPM": 1477
+ },
+ "institutions_idigbio": {
+  "": 21,
+  "AMNH": 53,
+  "CM": 20,
+  "CMC": 248,
+  "FMNH": 4134,
+  "KU": 3795,
+  "MCZ": 1,
+  "MNHN": 41,
+  "MUGM": 11,
+  "NCSM": 4,
+  "NHMUK": 5100,
+  "NMMNHS": 17,
+  "NRM": 356,
+  "OMNH": 46,
+  "PRI": 2,
+  "RBINS-Scientific Heritage": 1882,
+  "UCM": 1,
+  "UCMP": 2184,
+  "UF": 95,
+  "UOMNH": 288,
+  "USNM": 245,
+  "YPM": 1299
+ },
+ "licence_class_ala": {
+  "CC-BY": 57,
+  "CC-BY-NC": 7,
+  "CC0": 210
+ },
+ "licence_class_gbif": {
+  "CC-BY": 10720,
+  "CC-BY-NC": 2161,
+  "CC0": 11875
+ },
+ "licence_class_idigbio": {
+  "CC-BY": 3812,
+  "CC-BY-NC": 1882,
+  "CC0": 5501,
+  "none": 8648
+ },
+ "licence_effective_ala": {
+  "CC-BY (record)": 57,
+  "CC-BY-NC (record)": 7,
+  "CC0 (record)": 210
+ },
+ "licence_effective_gbif": {
+  "CC-BY (record)": 10720,
+  "CC-BY-NC (record)": 2161,
+  "CC0 (record)": 11875
+ },
+ "licence_effective_idigbio": {
+  "CC-BY (record)": 3812,
+  "CC-BY (recordset)": 2225,
+  "CC-BY-NC (record)": 1882,
+  "CC-BY-NC (recordset)": 365,
+  "CC0 (record)": 5501,
+  "CC0 (recordset)": 602,
+  "none (unclear)": 5456
+ },
+ "rows_ala": 274,
+ "rows_ala_not_open_licence": 0,
+ "rows_gbif": 24756,
+ "rows_gbif_not_open_licence": 0,
+ "rows_idigbio": 19843,
+ "rows_merged_all": 44873,
+ "rows_merged_open_licence": 39417,
+ "subset_ala": {
+  "embryophyta": 187,
+  "embryophyta_lineage_implausible_for_age": 1,
+  "green_algae": 59,
+  "incertae_sedis_kingdom": 1,
+  "nematophytes_and_thalloid_problematica": 7,
+  "plantae_unplaced_indeterminate": 15,
+  "problematica_ichnofossils_or_algae": 4
+ },
+ "subset_gbif": {
+  "acritarchs_prasinophytes": 382,
+  "algae_unspecified": 44,
+  "charophytes": 167,
+  "embryophyta": 11539,
+  "embryophyta_lineage_implausible_for_age": 282,
+  "fungi_other": 178,
+  "green_algae": 5378,
+  "incertae_sedis_kingdom": 93,
+  "nematophytes_and_thalloid_problematica": 1173,
+  "plant_spore_form_genus": 271,
+  "plantae_unplaced_indeterminate": 3713,
+  "plantae_unplaced_named": 459,
+  "problematica_ichnofossils_or_algae": 738,
+  "red_algae": 31,
+  "scope_name_filed_under_animalia": 9,
+  "scope_name_filed_under_protists": 18,
+  "scope_named_fungi_or_lichens": 55,
+  "scope_named_taxon": 226
+ },
+ "subset_idigbio": {
+  "acritarchs_prasinophytes": 211,
+  "algae_unspecified": 75,
+  "charophytes": 173,
+  "embryophyta": 8200,
+  "embryophyta_lineage_implausible_for_age": 94,
+  "fungi_other": 221,
+  "green_algae": 4543,
+  "incertae_sedis_kingdom": 43,
+  "nematophytes_and_thalloid_problematica": 1515,
+  "plant_spore_form_genus": 304,
+  "plantae_unplaced_indeterminate": 3428,
+  "plantae_unplaced_named": 266,
+  "problematica_ichnofossils_or_algae": 450,
+  "red_algae": 9,
+  "scope_name_filed_under_animalia": 34,
+  "scope_name_filed_under_protists": 16,
+  "scope_named_fungi_or_lichens": 48,
+  "scope_named_taxon": 213
+ },
+ "window_status_ala": {
+  "in_window": 262,
+  "undated_scope_name": 12
+ },
+ "window_status_gbif": {
+  "anchor_late_devonian": 1642,
+  "coarse_age_scope_name": 56,
+  "in_window": 20533,
+  "undated_scope_name": 2525
+ },
+ "window_status_idigbio": {
+  "anchor_late_devonian": 1108,
+  "in_window": 16283,
+  "undated_scope_name": 2452
+ },
+ "within_source_catalogue_key_collisions": {
+  "gbif": {
+   "keys_shared_by_several_rows_in_one_source": 82,
+   "rows_in_those_keys": 167
+  },
+  "idigbio": {
+   "keys_shared_by_several_rows_in_one_source": 413,
+   "rows_in_those_keys": 852
+  }
+ }
+}

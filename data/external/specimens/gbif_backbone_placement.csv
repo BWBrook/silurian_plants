@@ -1,0 +1,118 @@
+query_name,backbone_usageKey,scientificName,rank,taxonomicStatus,kingdom,phylum,class,order,family,acceptedKey,n_fossil_specimen_records_taxonKey
+Aberlemnia,9741628,"Aberlemnia P.Gonez & P.Gerrienne, 2010",GENUS,DOUBTFUL,Plantae,Tracheophyta,,,Cooksoniaceae,,0
+Aglaophyton,4922287,Aglaophyton D.S.Edwards,GENUS,ACCEPTED,Plantae,Langiophytophyta,Langiophytopsida,Lyonophytales,Lyonophytaceae,,93
+Rhynia,4899241,"Rhynia R.Kidston & W.H.Lang, 1917",GENUS,ACCEPTED,Plantae,Tracheophyta,,,Rhyniaceae,,169
+Ambitisporites,4906100,"Ambitisporites W.S.Hoffmeister, 1959",GENUS,DOUBTFUL,Plantae,,,,,,30
+Asteroxylon,4885985,"Asteroxylon Kidston & Lang, 1920",GENUS,ACCEPTED,Plantae,Tracheophyta,Lycopodiopsida,,Asteroxylaceae,,162
+Baragwanathia,4906929,"Baragwanathia W.H.Lang & I.C.Cookson, 1935",GENUS,ACCEPTED,Plantae,Tracheophyta,Lycopodiopsida,,Drepanophycaceae,,70
+Cooksonia,1922202,"Cooksonia Druce, 1905",GENUS,ACCEPTED,Animalia,Arthropoda,Insecta,Lepidoptera,Lycaenidae,,
+Cooksonia,3229205,"Cooksonia W.H.Lang, 1937",GENUS,ACCEPTED,Plantae,Tracheophyta,,,Cooksoniaceae,,182
+Drepanophycus,4890380,"Drepanophycus Göppert, 1852",GENUS,ACCEPTED,Plantae,Tracheophyta,Lycopodiopsida,,Drepanophycaceae,,1570
+Palaeoglomus,3312180,"Palaeoglomus D.Redecker, Kodner & L.E.Graham, 2002",GENUS,ACCEPTED,Fungi,Glomeromycota,Glomeromycetes,Glomerales,,,9
+Paleoglomus,,,,,,,,,,,
+Glomites,3311896,"Glomites T.N.Taylor, W.Remy, Hass & Kerp, 1995",GENUS,ACCEPTED,Fungi,Glomeromycota,Glomeromycetes,Glomerales,Glomeraceae,,4
+Archaeosporites,12184967,Archaeosporites,GENUS,ACCEPTED,Fungi,Glomeromycota,Glomeromycetes,Archaeosporales,Archaeosporaceae,,0
+Palaeoendogone,7868589,Palaeoendogone,GENUS,ACCEPTED,Fungi,Mucoromycota,,,,,0
+Rugososporomyces,,,,,,,,,,,
+Eophyllophyton,4908963,"Eophyllophyton S.-G.Hao, 1988",GENUS,ACCEPTED,Plantae,Tracheophyta,,,Trimerophytaceae,,4
+Horneophyton,4891667,Horneophyton Bargh. & Darrah,GENUS,ACCEPTED,Plantae,Langiophytophyta,Langiophytopsida,Langiophytales,Langiophytaceae,,54
+Hornea,2449897,"Hornea Lucas & Frost, 1896",GENUS,DOUBTFUL,Animalia,Chordata,Squamata,,Elapidae,,
+Hornea,3229209,Hornea Kidst. & W.H.Lang,GENUS,SYNONYM,Plantae,Langiophytophyta,Langiophytopsida,Langiophytales,Langiophytaceae,4891667,5
+Hornea,3233083,Hornea Baker,GENUS,ACCEPTED,Plantae,Tracheophyta,Magnoliopsida,Sapindales,Sapindaceae,,0
+Nematothallus,12233739,"Nematothallus W.H.Lang, 1937",GENUS,ACCEPTED,Fungi,,,,Nematothallaceae,,119
+Nothia,3229206,"Nothia A.G.Lyon, 1964",GENUS,ACCEPTED,Plantae,Tracheophyta,,,Zosterophyllaceae,,3
+Nothia,7711317,"Nothia Pflaumann, 1964",GENUS,ACCEPTED,Chromista,Foraminifera,,Astrorhizida,Rhabdamminidae,,1
+Nothia,11332100,Nothia,GENUS,DOUBTFUL,Chromista,Foraminifera,Globothalamea,Textulariida,Bathysiphonidae,,0
+Tetrahedraletes,4886636,"Tetrahedraletes P.K.Strother & A.Traverse, 1979",GENUS,DOUBTFUL,Plantae,,,,,,25
+Cryptospora,7451421,Cryptospora Kar. & Kir.,GENUS,ACCEPTED,Plantae,Tracheophyta,Magnoliopsida,Brassicales,Brassicaceae,,0
+Cryptospora,7536678,Cryptospora Tul. & C.Tul.,GENUS,ACCEPTED,Fungi,Ascomycota,Sordariomycetes,Diaporthales,Gnomoniaceae,,0
+Dyadospora,4889024,"Dyadospora P.K.Strother & A.Traverse, 1979",GENUS,DOUBTFUL,Plantae,,,,,,33
+Pseudodyadospora,4889473,"Pseudodyadospora N.G.Johnson, 1985",GENUS,DOUBTFUL,Plantae,,,,,,16
+Hispanaediscus,4894265,Hispanaediscus F.H.Cramer,GENUS,DOUBTFUL,Protozoa,,,,,,18
+Laevolancis,4899013,"Laevolancis N.D.Burgess & J.B.Richardson, 1991",GENUS,DOUBTFUL,Plantae,,,,,,27
+Rimosotetras,4898547,"Rimosotetras N.D.Burgess, 1991",GENUS,DOUBTFUL,Plantae,,,,,,8
+Segestrespora,4888639,"Segestrespora N.D.Burgess, 1991",GENUS,DOUBTFUL,Plantae,,,,,,21
+Artemopyra,4888373,"Artemopyra N.D.Burgess & J.B.Richardson, 1991",GENUS,DOUBTFUL,Plantae,,,,,,15
+Cheilotetras,4905479,"Cheilotetras C.H.Wellman & J.B.Richardson, 1993",GENUS,DOUBTFUL,Plantae,,,,,,8
+Velatitetras,4892925,"Velatitetras N.D.Burgess, 1991",GENUS,DOUBTFUL,Plantae,,,,,,13
+Cymbohilates,12043801,"Cymbohilates J.B.Richardson, 1996",GENUS,DOUBTFUL,Plantae,,,,,,23
+Abditodyadus,,,,,,,,,,,
+Tetraplanarisporites,12162963,"Tetraplanarisporites C.H.Wellman, P.Steemans & M.A.Miller, 2015",GENUS,DOUBTFUL,Plantae,,,,,,0
+Partitatheca,11935950,"Partitatheca D.Edwards, J.B.Richardson, K.L.Davies & L.Axe, 2012",GENUS,DOUBTFUL,Plantae,,,,,,2
+Pertica,2369368,"Pertica Fowler, 1904",GENUS,SYNONYM,Animalia,Chordata,,Perciformes,Gerreidae,2369369,
+Pertica,3229074,"Pertica A.E.Kasper & H.N.Andrews, 1972",GENUS,ACCEPTED,Plantae,Tracheophyta,,,Trimerophytaceae,,79
+Pertica,3253034,"Pertica Simon, 1903",GENUS,SYNONYM,Animalia,Arthropoda,Arachnida,Araneae,Diguetidae,2149511,
+Prototaxites,3385535,"Prototaxites J.W.Dawson, 1859",GENUS,DOUBTFUL,Fungi,,,,Nematothallaceae,,157
+Psilophyton,4885120,"Psilophyton J.W.Dawson, 1859",GENUS,ACCEPTED,Plantae,Tracheophyta,,,Trimerophytaceae,,1949
+Renalia,4905734,"Renalia P.G.Gensel, 1976",GENUS,ACCEPTED,Plantae,Tracheophyta,,,Renaliaceae,,76
+Lyonophyton,4922286,Lyonophyton W.Remy & R.Remy,GENUS,ACCEPTED,Plantae,Langiophytophyta,Langiophytopsida,Lyonophytales,Lyonophytaceae,,0
+Langiophyton,4897860,Langiophyton W.Remy & Hass,GENUS,ACCEPTED,Plantae,Langiophytophyta,Langiophytopsida,Langiophytales,Langiophytaceae,,0
+Kidstonophyton,4905308,"Kidstonophyton W.Remy & H.Hass, 1991",GENUS,DOUBTFUL,Plantae,Tracheophyta,,,,,0
+Remyophyton,4905748,"Remyophyton H.Kerp, N.H.Trewin & H.Hass, 2004",GENUS,DOUBTFUL,Plantae,Tracheophyta,,,Rhyniaceae,,0
+Riccardiothallus,9588224,"Riccardiothallus C.Q.Guo, D.Edwards, P.C.Wu, Duckett, Hueber & C.S.Li",GENUS,ACCEPTED,Plantae,Marchantiophyta,Jungermanniopsida,Metzgeriales,Aneuraceae,,0
+Sawdonia,4892993,"Sawdonia F.M.Hueber, 1971",GENUS,DOUBTFUL,Plantae,Tracheophyta,,,Sawdoniaceae,,107
+Tortotubus,4907720,"Tortotubus N.G.Johnson, 1985",GENUS,ACCEPTED,Plantae,,,,,,0
+Winfrenatia,7238574,"Winfrenatia T.N.Taylor, Hass & Kerp",GENUS,ACCEPTED,Fungi,,,,,,45
+Zosterophyllum,7876923,"Zosterophyllum D.P.Penhallow, 1892",GENUS,ACCEPTED,Plantae,Tracheophyta,,,Zosterophyllaceae,,292
+Archaeopteris,4891133,"Archaeopteris J.W.Dawson, 1871",GENUS,ACCEPTED,Plantae,Tracheophyta,,,Archaeopteridaceae,,892
+Callixylon,4889569,"Callixylon M.D.Zalessky, 1911",GENUS,ACCEPTED,Plantae,Tracheophyta,,,Archaeopteridaceae,,287
+Eospermatopteris,4908763,"Eospermatopteris Goldring, 1924",GENUS,ACCEPTED,Plantae,Tracheophyta,Polypodiopsida,,,,20
+Wattieza,4889689,"Wattieza F.Stockmans, 1968",GENUS,ACCEPTED,Plantae,Tracheophyta,Polypodiopsida,,,,29
+Elkinsia,4885251,"Elkinsia G.W.Rothwell, S.E.Scheckler & W.H.Gillespie, 1989",GENUS,DOUBTFUL,Plantae,Tracheophyta,,,Moresnetiaceae,,1210
+Leclercqia,4298227,"Leclercqia Tsuneki, 1968",GENUS,ACCEPTED,Animalia,Arthropoda,Insecta,Hymenoptera,Crabronidae,,
+Leclercqia,7865896,"Leclercqia H.P.Banks, P.M.Bonamo & J.D.Grierson, 1972",GENUS,ACCEPTED,Plantae,Tracheophyta,Lycopodiopsida,,Protolepidodendraceae,,42
+Nematophyton,4911639,Nematophyton J.Wm.Dawson,GENUS,ACCEPTED,Fungi,,,,,,102
+Pachytheca,3235005,"Pachytheca Hooker, 1861",GENUS,DOUBTFUL,Plantae,,,,,,513
+Pachytheca,3248312,"Pachytheca Qian, Yin & Xiao, 2000",GENUS,SYNONYM,Animalia,,,,Triplicatellidae,12316912,
+Pachytheca,3251445,"Pachytheca Schlüter, 1885",GENUS,ACCEPTED,Animalia,Porifera,,,Chaetetidae,,
+Pachytheca,3268031,"Pachytheca Canu, 1913",GENUS,SYNONYM,Animalia,Bryozoa,Gymnolaemata,Cheilostomatida,Tessaradomidae,3268030,
+Pachytheca,9427787,"Pachytheca Schmidt, 2012",GENUS,SYNONYM,Animalia,Arthropoda,Arachnida,Araneae,Theraphosidae,2154164,
+Nematasketum,10113878,"Nematasketum N.D.Burgess & D.Edwards, 1988",GENUS,DOUBTFUL,Fungi,,,,Nematothallaceae,,0
+Nematoplexus,4908190,Nematoplexus A.G.Lyon,GENUS,ACCEPTED,Plantae,,,,,,0
+Nematophycus,4911640,Nematophycus Carruthers,GENUS,DOUBTFUL,Fungi,,,,,,3
+Parka,3229783,"Parka Fleming ex H.Miller, 1857",GENUS,ACCEPTED,Plantae,,,,,,243
+Parka,3255183,"Parka Fleming, 1864",GENUS,DOUBTFUL,Animalia,Arthropoda,Merostomata,,,,
+Cosmochlaina,12279971,"Cosmochlaina D.Edwards, 1986",GENUS,DOUBTFUL,Fungi,,,,Nematothallaceae,,0
+Spongiophyton,4905151,"Spongiophyton R.Kräusel, 1954",GENUS,ACCEPTED,Plantae,,,,Spongiophytaceae,,20
+Palaeonitella,4922530,"Palaeonitella Pia, 1927",GENUS,ACCEPTED,Plantae,Charophyta,Charophyceae,Charales,Characeae,,6
+Moellerina,3229521,"Moellerina E.O.Ulrich, 1886",GENUS,ACCEPTED,Plantae,Charophyta,Charophyceae,Moellerinales,Moellerinaceae,,41
+Moellerina,7237743,"Moellerina Eimer & Fickert, 1899",GENUS,SYNONYM,Chromista,Foraminifera,,Endothyrida,Palaeotextulariidae,8299234,0
+Moellerina,11040987,"Moellerina Schellwien, 1898",GENUS,DOUBTFUL,Protozoa,,,,,,0
+Sycidium,2377805,Sycidium,GENUS,SYNONYM,Animalia,Chordata,,Perciformes,Gobiidae,2375403,
+Sycidium,2637598,"Sycidium G.Sandberger, 1849",GENUS,ACCEPTED,Plantae,Charophyta,Charophyceae,Sycidiales,Sycidiaceae,,22
+Sycidium,6008042,"Sycidium Haeckel, 1869",GENUS,DOUBTFUL,Animalia,Porifera,,,,,
+Trochiliscus,2637670,"Trochiliscus A.P.Karpinsky, 1906",GENUS,ACCEPTED,Plantae,Charophyta,Charophyceae,Sycidiales,Trochiliscaceae,,24
+Trochiliscus,7238024,"Trochiliscus Ehrenberg, 1858",GENUS,DOUBTFUL,Protozoa,,,,,,1
+Eochara,9718571,"Eochara G.B.Choquette, 1956",GENUS,ACCEPTED,Plantae,Charophyta,Charophyceae,Charales,Eocharaceae,,0
+Octochara,11297059,"Octochara R.W.Gess & N.Hiller, 1995",GENUS,DOUBTFUL,Plantae,Charophyta,Charophyceae,Charales,Eocharaceae,,0
+Praechara,3229536,"Praechara L.M.Birina, 1948",GENUS,DOUBTFUL,Plantae,,,,,,0
+Praechara,9879654,"Praechara Rantzien, 1954",GENUS,SYNONYM,Plantae,Charophyta,Charophyceae,Charales,Porocharaceae,3229538,6
+Chovanella,4899760,"Chovanella E.A.Reitlinger & M.V.Jarzewa, 1958",GENUS,ACCEPTED,Plantae,Charophyta,Charophyceae,Sycidiales,Chovanellaceae,,0
+Mesochara,2637696,"Mesochara L.Grambast, 1963",GENUS,ACCEPTED,Plantae,Charophyta,Charophyceae,Charales,Characeae,,12
+Mesochara,3261606,"Mesochara Cameron, 1939",GENUS,SYNONYM,Animalia,Arthropoda,Insecta,Coleoptera,Staphylinidae,1040722,
+Mesochara,8202660,"Mesochara Blackwelder, 1952",GENUS,SYNONYM,Animalia,Arthropoda,Insecta,Coleoptera,Staphylinidae,1040722,
+Yarravia,4885512,"Yarravia W.H.Lang & I.C.Cookson, 1935",GENUS,ACCEPTED,Plantae,Tracheophyta,,,Yarraviaceae,,4
+Hedeia,4900938,"Hedeia I.C.Cookson, 1935",GENUS,ACCEPTED,Plantae,Tracheophyta,,,Yarraviaceae,,20
+Pluricaulis,,,,,,,,,,,
+Dawsonites,3229075,"Dawsonites Halle, 1916",GENUS,ACCEPTED,Plantae,Tracheophyta,,,,,158
+Dawsonites,3245990,"Dawsonites Böhm, 1904",GENUS,SYNONYM,Animalia,Mollusca,Cephalopoda,Ceratitida,Trachyceratidae,3245989,
+Dawsonites,3266270,"Dawsonites Scudder, 1895",GENUS,ACCEPTED,Animalia,Arthropoda,Insecta,Hemiptera,Cercopida,,
+Palaeostigma,4912225,"Palaeostigma R.Kräusel & E.Dolianiti, 1957",GENUS,ACCEPTED,Plantae,Tracheophyta,,,Rhyniaceae,,3
+Psilotum,2688173,Psilotum Sw.,GENUS,ACCEPTED,Plantae,Tracheophyta,Polypodiopsida,Psilotales,Psilotaceae,,85
+Tmesipteris,7286718,Tmesipteris Bernh.,GENUS,ACCEPTED,Plantae,Tracheophyta,Polypodiopsida,Psilotales,Psilotaceae,,33
+Lycopodium,2688247,Lycopodium L.,GENUS,ACCEPTED,Plantae,Tracheophyta,Lycopodiopsida,Lycopodiales,Lycopodiaceae,,82
+Ulothrix,8188194,"Ulothrix Kützing, 1833",GENUS,ACCEPTED,Plantae,Chlorophyta,Ulvophyceae,Ulotrichales,Ulotrichaceae,,3
+Ulothrix,8867339,"Ulothrix Rebel, 1940",GENUS,SYNONYM,Animalia,Arthropoda,Insecta,Lepidoptera,Psychidae,1854255,
+Ulva,1010515,"Ulva Lindsey, 1925",GENUS,SYNONYM,Animalia,Arthropoda,Insecta,Lepidoptera,Hesperiidae,1942755,
+Ulva,3232913,Ulva Adans.,GENUS,SYNONYM,Plantae,Tracheophyta,Liliopsida,Poales,Cyperaceae,2721893,0
+Ulva,8148828,Ulva Haller,GENUS,DOUBTFUL,Plantae,Tracheophyta,Liliopsida,Poales,Cyperaceae,,0
+Ulva,9408069,"Ulva Linnaeus, 1753",GENUS,ACCEPTED,Plantae,Chlorophyta,Ulvophyceae,Ulvales,Ulvaceae,,10
+Coleochaete,2638383,"Coleochaete Brébisson, 1844",GENUS,ACCEPTED,Plantae,Charophyta,Charophyceae,Coleochaetales,Coleochaetaceae,,0
+Chara,1787988,"Chara Staudinger, 1892",GENUS,ACCEPTED,Animalia,Arthropoda,Insecta,Lepidoptera,Noctuidae,,
+Chara,2637982,"Chara Linnaeus, 1753",GENUS,ACCEPTED,Plantae,Charophyta,Charophyceae,Charales,Characeae,,423
+Chara,12313375,"Chara Casanova, 1997",GENUS,DOUBTFUL,Animalia,Arthropoda,Insecta,Lepidoptera,Noctuidae,,
+Marchantia,2688569,Marchantia L.,GENUS,ACCEPTED,Plantae,Marchantiophyta,Marchantiopsida,Marchantiales,Marchantiaceae,,154
+Metzgeriothallus,4894913,Metzgeriothallus R.M.Schust.,GENUS,ACCEPTED,Plantae,Marchantiophyta,Jungermanniopsida,Metzgeriales,,,662
+Franhueberia,12339236,"Franhueberia L.A.Hoffman & A.M.F.Tomescu, 2013",GENUS,DOUBTFUL,Plantae,Tracheophyta,,,,,0
+Salopella,4894920,"Salopella D.Edwards & J.B.Richardson, 1974",GENUS,DOUBTFUL,Plantae,Langiophytophyta,Langiophytopsida,Langiophytales,Langiophytaceae,,0
+Taeniocrada,4891795,Taeniocrada C.D.White,GENUS,DOUBTFUL,Plantae,Tracheophyta,,,Taeniocradaceae,,287

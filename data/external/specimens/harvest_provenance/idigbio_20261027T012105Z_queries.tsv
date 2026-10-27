@@ -1,0 +1,3 @@
+qid	group	query	count	fetched	new_unique	note	seconds
+name_Anthoceros	name	{"basisofrecord": "fossilspecimen", "scientificname": {"type": "fulltext", "value": "Anthoceros"}}	10	10	10		1.2
+name_Phlegmariurus	name	{"basisofrecord": "fossilspecimen", "scientificname": {"type": "fulltext", "value": "Phlegmariurus"}}	2	2	2		1.0

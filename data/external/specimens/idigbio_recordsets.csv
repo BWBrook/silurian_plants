@@ -1,0 +1,29 @@
+recordset_uuid,collection_name,institution_web_address,recordset_data_rights,n_rows,n_rows_open_licence_record_or_recordset,n_rows_licence_unclear
+3c9420c9-c4a8-47dc-88b7-b5638ca5e716,Natural History Museum (London) Collection Specimens,https://data.nhm.ac.uk/doi/10.5519/qd.x8gq8f5t,"Unknown License, assume Public Domain",5100,0,5100
+9e66257f-21a9-491a-ac23-06b7b62ceeb7,Field Museum of Natural History (Geology) Paleobotany Collection,https://www.fieldmuseum.org/science/research/area/focus-fossil-plants https://fmipt.fieldmuseum.org/ipt/archive.do?r=fmnh-paleobotany,CC0,4061,4061,0
+b1f0612a-bc21-424f-b9c1-3bba69ad4f54,KUBI Paleobotany Collection,,CC4 BY,3795,3795,0
+5ab348ab-439a-4697-925c-d6abe0c09b92,University of California Museum of Paleontology,,CC4 BY,2184,2184,0
+6aad3ea3-3c10-4eb5-8c42-3e12c3429c67,RBINS DaRWIN,,CC4 BY-NC,1882,1882,0
+7ae4d15d-62e2-459b-842a-446f921b9d3f,"Paleobotany Division, Yale Peabody Museum",,CC0,1114,1114,0
+652ea450-af13-4334-96ff-3136d0188778,"Palaeozoological Collections (PZ), Swedish Museum of Natural History (NRM)",http://www.nrm.se/en/forskningochsamlingar/paleobiologi/samlingar.851.html https://www.gbif.se/ipt/archive.do?r=pz-nrm,"Unknown License, assume Public Domain",356,0,356
+667c2736-bcd3-4a6a-abf4-db5d2dc815c4,Condon Fossil Collection,http://natural-history.uoregon.edu/,CC0,288,288,0
+41b119de-f745-482d-be42-a0155bc76e5d,CMC Cincinnati Museum Center Invertebrate Paleontology,,CC4 BY-NC,248,248,0
+6c6f34ed-58a4-4ba2-b9c7-34524f79a349,NMNH Paleobiology Specimen Records (USNM),http://collections.nmnh.si.edu/search/paleo/,CC0,245,245,0
+137ed4cd-5172-45a5-acdb-8e1de9a64e32,"Invertebrate Paleontology Division, Yale Peabody Museum",,CC0,185,185,0
+0e162e0a-bf3e-4710-9357-44258ca12abb,UF Florida Museum Paleobotany,,CC4 BY-NC,77,77,0
+b26fa674-6300-4ea0-a8e3-fc0ce32b5226,Field Museum of Natural History (Geology) Fossil Invertebrates Collection,https://www.fieldmuseum.org/science/research/area/focus-fossil-invertebrates,CC0,73,73,0
+2c2cc29c-3572-4568-a129-c8cbec34ccbe,AMNH Invertebrate Paleontology Collection,http://www.amnh.org/our-research/paleontology/collections/fossil-invertebrates/microfossil-conservation-and-digitization,CC0,53,53,0
+62c310ac-e1ff-47bc-860d-0471a84ed0d3,Invert Paleo Specimens,http://samnoblemuseum.ou.edu/collections-and-research/invertebrate-paleontology/,CC0,46,46,0
+f062cb7d-c03e-4762-b1c4-49118fee1a56,The fossil collection (F) of the Muséum national d'Histoire naturelle (MNHN - Paris),,CC4 BY,41,41,0
+2e96b570-4567-4538-add2-bca9552f6d32,Carnegie Museum of Natural History - Paleobotany,,CC4 BY-NC,20,20,0
+1ba0bbad-28a7-4c50-8992-a028f79d1dc5,University of Florida Invertebrate Paleontology,,CC4 BY-NC,18,18,0
+a2bc3d61-3c37-4aca-b47d-c3413f7e3b87,New Mexico Museum of Natural History and Science (NMMNHS) Paleontology specimens (Arctos),http://www.nmnaturalhistory.org/science/sections/paleontologyntology https://ipt.vertnet.org/archive.do?r=nmmnh_paleo,CC0,17,17,0
+7b0809fb-fd62-4733-8f40-74ceb04cbcac,"Non-vertebrate Paleontology, Jackson School Museum of Earth History, University of Texas at Austin",http://www.jsg.utexas.edu/npl/,CC0,12,12,0
+a2beb85e-f2b8-4366-8b3b-e5c5cc117aaf,MUGM Miami University Invertebrate Paleontology Collection,,CC0,11,11,0
+3a5b5c9b-b241-4883-904a-b167a7edb41a,Naturalis Biodiversity Center (NL) - Paleontology Invertebrates,,CC0,8,8,0
+1c8d18f4-5af2-4d86-98d2-8a5ed06456e2,NCSM Invertebrate Paleontology Collection,https://collections.naturalsciences.org/search/paleontology,CC0,3,3,0
+e27f0218-47e0-41bc-9086-9d9169096e90,Paleontological Research Institution Collections,http://www.priweb.org/collections/index.php,CC0,2,2,0
+271a9ce9-c6d3-4b63-a722-cb0adc48863f,"Museum of Comparative Zoology, Harvard University",http://mczbase.mcz.harvard.edu/ https://digir.mcz.harvard.edu/ipt/archive.do?r=mczbase,CC4 BY-NC,1,1,0
+7c2c5cdc-80e6-49d5-8e95-08fc7da0a370,NCSM Paleobotany Collection,https://collections.naturalsciences.org/search/paleontology,CC0,1,1,0
+8e58cd34-3cbb-46f7-9c25-527251881a6f,Naturalis Biodiversity Center (NL) - Micropaleontology,,CC0,1,1,0
+d621e959-2633-4ec1-a2a2-5d97cd818b47,UCM Invertebrate Paleontology,http://invertpaleosearch.colorado.edu,CC4 BY-NC,1,1,0

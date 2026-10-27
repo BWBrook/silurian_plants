@@ -1,0 +1,908 @@
+scope_name,role,card_slug,source,institutionCode,n_rows
+Aglaophyton,card_genus,aglaophyton-majus,gbif,UCMP,32
+Aglaophyton,card_genus,aglaophyton-majus,gbif,NRM,26
+Aglaophyton,card_genus,aglaophyton-majus,gbif,NHMUK,18
+Aglaophyton,card_genus,aglaophyton-majus,gbif,YPM,6
+Aglaophyton,card_genus,aglaophyton-majus,gbif,CMN,4
+Aglaophyton,card_genus,aglaophyton-majus,gbif,FMNH,3
+Aglaophyton,card_genus,aglaophyton-majus,gbif,(none),3
+Aglaophyton,card_genus,aglaophyton-majus,gbif,UOMNH,3
+Aglaophyton,card_genus,aglaophyton-majus,gbif,KU,2
+Aglaophyton,card_genus,aglaophyton-majus,gbif,MfN,1
+Aglaophyton,card_genus,aglaophyton-majus,gbif,NSM,1
+Aglaophyton,card_genus,aglaophyton-majus,gbif,USNM,1
+Aglaophyton,card_genus,aglaophyton-majus,idigbio,UCMP,32
+Aglaophyton,card_genus,aglaophyton-majus,idigbio,NHMUK,18
+Aglaophyton,card_genus,aglaophyton-majus,idigbio,YPM,6
+Aglaophyton,card_genus,aglaophyton-majus,idigbio,FMNH,3
+Aglaophyton,card_genus,aglaophyton-majus,idigbio,UOMNH,3
+Aglaophyton,card_genus,aglaophyton-majus,idigbio,(none),1
+Aglaophyton,card_genus,aglaophyton-majus,idigbio,USNM,1
+Aglaophyton major,card_variant,aglaophyton-majus,gbif,UCMP,32
+Aglaophyton major,card_variant,aglaophyton-majus,gbif,NHMUK,18
+Aglaophyton major,card_variant,aglaophyton-majus,gbif,NRM,18
+Aglaophyton major,card_variant,aglaophyton-majus,gbif,YPM,6
+Aglaophyton major,card_variant,aglaophyton-majus,gbif,CMN,4
+Aglaophyton major,card_variant,aglaophyton-majus,gbif,FMNH,3
+Aglaophyton major,card_variant,aglaophyton-majus,gbif,(none),3
+Aglaophyton major,card_variant,aglaophyton-majus,gbif,UOMNH,3
+Aglaophyton major,card_variant,aglaophyton-majus,gbif,KU,1
+Aglaophyton major,card_variant,aglaophyton-majus,gbif,MfN,1
+Aglaophyton major,card_variant,aglaophyton-majus,gbif,NSM,1
+Aglaophyton major,card_variant,aglaophyton-majus,gbif,USNM,1
+Aglaophyton major,card_variant,aglaophyton-majus,idigbio,UCMP,32
+Aglaophyton major,card_variant,aglaophyton-majus,idigbio,NHMUK,18
+Aglaophyton major,card_variant,aglaophyton-majus,idigbio,YPM,6
+Aglaophyton major,card_variant,aglaophyton-majus,idigbio,FMNH,3
+Aglaophyton major,card_variant,aglaophyton-majus,idigbio,UOMNH,3
+Aglaophyton major,card_variant,aglaophyton-majus,idigbio,(none),1
+Aglaophyton major,card_variant,aglaophyton-majus,idigbio,USNM,1
+Rhynia major,card_variant,aglaophyton-majus,gbif,NHMUK,18
+Rhynia major,card_variant,aglaophyton-majus,gbif,CMN,4
+Rhynia major,card_variant,aglaophyton-majus,gbif,FMNH,3
+Rhynia major,card_variant,aglaophyton-majus,gbif,(none),3
+Rhynia major,card_variant,aglaophyton-majus,gbif,MfN,1
+Rhynia major,card_variant,aglaophyton-majus,gbif,NSM,1
+Rhynia major,card_variant,aglaophyton-majus,idigbio,NHMUK,18
+Rhynia major,card_variant,aglaophyton-majus,idigbio,FMNH,3
+Rhynia major,card_variant,aglaophyton-majus,idigbio,(none),1
+Ambitisporites,card,ambitisporites,gbif,NHMUK,22
+Ambitisporites,card,ambitisporites,gbif,NRM,5
+Ambitisporites,card,ambitisporites,gbif,UiO,3
+Ambitisporites,card,ambitisporites,idigbio,NHMUK,22
+Archaeopteris,card,archaeopteris,gbif,NRM,284
+Archaeopteris,card,archaeopteris,gbif,NHMUK,127
+Archaeopteris,card,archaeopteris,gbif,YPM,122
+Archaeopteris,card,archaeopteris,gbif,KU,95
+Archaeopteris,card,archaeopteris,gbif,UiO,92
+Archaeopteris,card,archaeopteris,gbif,USNM,37
+Archaeopteris,card,archaeopteris,gbif,UF,28
+Archaeopteris,card,archaeopteris,gbif,(none),26
+Archaeopteris,card,archaeopteris,gbif,UOMNH,16
+Archaeopteris,card,archaeopteris,gbif,UCMP,14
+Archaeopteris,card,archaeopteris,gbif,MfN,10
+Archaeopteris,card,archaeopteris,gbif,MGH,6
+Archaeopteris,card,archaeopteris,gbif,MNHN,5
+Archaeopteris,card,archaeopteris,gbif,CMC,4
+Archaeopteris,card,archaeopteris,gbif,NSM,4
+Archaeopteris,card,archaeopteris,gbif,SMNS,4
+Archaeopteris,card,archaeopteris,gbif,CM,3
+Archaeopteris,card,archaeopteris,gbif,OMNH,2
+Archaeopteris,card,archaeopteris,gbif,Estonian Museum of Natural History,1
+Archaeopteris,card,archaeopteris,gbif,FU Berlin,1
+Archaeopteris,card,archaeopteris,gbif,NSMK,1
+Archaeopteris,card,archaeopteris,gbif,Université Rennes 1,1
+Archaeopteris,card,archaeopteris,ala_mirror,UF,1
+Archaeopteris,card,archaeopteris,ala_mirror,UOMNH,1
+Archaeopteris,card,archaeopteris,idigbio,NHMUK,121
+Archaeopteris,card,archaeopteris,idigbio,YPM,115
+Archaeopteris,card,archaeopteris,idigbio,KU,95
+Archaeopteris,card,archaeopteris,idigbio,USNM,37
+Archaeopteris,card,archaeopteris,idigbio,UF,26
+Archaeopteris,card,archaeopteris,idigbio,UCMP,14
+Archaeopteris,card,archaeopteris,idigbio,UOMNH,13
+Archaeopteris,card,archaeopteris,idigbio,CM,5
+Archaeopteris,card,archaeopteris,idigbio,CMC,4
+Archaeopteris,card,archaeopteris,idigbio,MNHN,4
+Archaeopteris,card,archaeopteris,idigbio,(none),2
+Asteroxylon mackiei,card,asteroxylon-mackiei,gbif,NHMUK,26
+Asteroxylon mackiei,card,asteroxylon-mackiei,gbif,KU,25
+Asteroxylon mackiei,card,asteroxylon-mackiei,gbif,NRM,13
+Asteroxylon mackiei,card,asteroxylon-mackiei,gbif,UCMP,12
+Asteroxylon mackiei,card,asteroxylon-mackiei,gbif,(none),5
+Asteroxylon mackiei,card,asteroxylon-mackiei,gbif,CMN,4
+Asteroxylon mackiei,card,asteroxylon-mackiei,gbif,FMNH,2
+Asteroxylon mackiei,card,asteroxylon-mackiei,gbif,UOMNH,2
+Asteroxylon mackiei,card,asteroxylon-mackiei,gbif,OMNH,1
+Asteroxylon mackiei,card,asteroxylon-mackiei,idigbio,NHMUK,26
+Asteroxylon mackiei,card,asteroxylon-mackiei,idigbio,KU,25
+Asteroxylon mackiei,card,asteroxylon-mackiei,idigbio,UCMP,12
+Asteroxylon mackiei,card,asteroxylon-mackiei,idigbio,FMNH,2
+Asteroxylon,card_genus,asteroxylon-mackiei,gbif,NHMUK,52
+Asteroxylon,card_genus,asteroxylon-mackiei,gbif,KU,34
+Asteroxylon,card_genus,asteroxylon-mackiei,gbif,NRM,15
+Asteroxylon,card_genus,asteroxylon-mackiei,gbif,UCMP,13
+Asteroxylon,card_genus,asteroxylon-mackiei,gbif,(none),10
+Asteroxylon,card_genus,asteroxylon-mackiei,gbif,SMF,6
+Asteroxylon,card_genus,asteroxylon-mackiei,gbif,MfN,5
+Asteroxylon,card_genus,asteroxylon-mackiei,gbif,CMN,4
+Asteroxylon,card_genus,asteroxylon-mackiei,gbif,Estonian Museum of Natural History,4
+Asteroxylon,card_genus,asteroxylon-mackiei,gbif,USNM,3
+Asteroxylon,card_genus,asteroxylon-mackiei,gbif,FMNH,2
+Asteroxylon,card_genus,asteroxylon-mackiei,gbif,FU Berlin,2
+Asteroxylon,card_genus,asteroxylon-mackiei,gbif,UOMNH,2
+Asteroxylon,card_genus,asteroxylon-mackiei,gbif,YPM,2
+Asteroxylon,card_genus,asteroxylon-mackiei,gbif,"Museum of Geology, UT",1
+Asteroxylon,card_genus,asteroxylon-mackiei,gbif,OMNH,1
+Asteroxylon,card_genus,asteroxylon-mackiei,gbif,SMNS,1
+Asteroxylon,card_genus,asteroxylon-mackiei,idigbio,NHMUK,52
+Asteroxylon,card_genus,asteroxylon-mackiei,idigbio,KU,33
+Asteroxylon,card_genus,asteroxylon-mackiei,idigbio,UCMP,13
+Asteroxylon,card_genus,asteroxylon-mackiei,idigbio,USNM,3
+Asteroxylon,card_genus,asteroxylon-mackiei,idigbio,FMNH,2
+Asteroxylon,card_genus,asteroxylon-mackiei,idigbio,UOMNH,2
+Asteroxylon,card_genus,asteroxylon-mackiei,idigbio,YPM,2
+Baragwanathia,card_genus,baragwanathia-brevifolioides,gbif,NRM,30
+Baragwanathia,card_genus,baragwanathia-brevifolioides,gbif,NHMUK,16
+Baragwanathia,card_genus,baragwanathia-brevifolioides,gbif,KU,6
+Baragwanathia,card_genus,baragwanathia-brevifolioides,gbif,NSM,4
+Baragwanathia,card_genus,baragwanathia-brevifolioides,gbif,UOMNH,3
+Baragwanathia,card_genus,baragwanathia-brevifolioides,gbif,MfN,2
+Baragwanathia,card_genus,baragwanathia-brevifolioides,gbif,UCMP,2
+Baragwanathia,card_genus,baragwanathia-brevifolioides,gbif,UF,2
+Baragwanathia,card_genus,baragwanathia-brevifolioides,gbif,CMC,1
+Baragwanathia,card_genus,baragwanathia-brevifolioides,gbif,CMN,1
+Baragwanathia,card_genus,baragwanathia-brevifolioides,gbif,SMNS,1
+Baragwanathia,card_genus,baragwanathia-brevifolioides,gbif,USNM,1
+Baragwanathia,card_genus,baragwanathia-brevifolioides,gbif,YPM,1
+Baragwanathia,card_genus,baragwanathia-brevifolioides,ala_mirror,NRM,30
+Baragwanathia,card_genus,baragwanathia-brevifolioides,ala_mirror,NHMUK,16
+Baragwanathia,card_genus,baragwanathia-brevifolioides,ala_mirror,KU,6
+Baragwanathia,card_genus,baragwanathia-brevifolioides,ala_mirror,NSM,4
+Baragwanathia,card_genus,baragwanathia-brevifolioides,ala_mirror,MfN,2
+Baragwanathia,card_genus,baragwanathia-brevifolioides,ala_mirror,UF,2
+Baragwanathia,card_genus,baragwanathia-brevifolioides,ala_mirror,UOMNH,2
+Baragwanathia,card_genus,baragwanathia-brevifolioides,ala_mirror,CMC,1
+Baragwanathia,card_genus,baragwanathia-brevifolioides,ala_mirror,UCMP,1
+Baragwanathia,card_genus,baragwanathia-brevifolioides,idigbio,NHMUK,16
+Baragwanathia,card_genus,baragwanathia-brevifolioides,idigbio,KU,6
+Baragwanathia,card_genus,baragwanathia-brevifolioides,idigbio,UOMNH,3
+Baragwanathia,card_genus,baragwanathia-brevifolioides,idigbio,UCMP,2
+Baragwanathia,card_genus,baragwanathia-brevifolioides,idigbio,UF,2
+Baragwanathia,card_genus,baragwanathia-brevifolioides,idigbio,USNM,1
+Baragwanathia,card_genus,baragwanathia-brevifolioides,idigbio,YPM,1
+Baragwanathia longifolia,card,baragwanathia-longifolia,gbif,NRM,30
+Baragwanathia longifolia,card,baragwanathia-longifolia,gbif,NHMUK,16
+Baragwanathia longifolia,card,baragwanathia-longifolia,gbif,NSM,3
+Baragwanathia longifolia,card,baragwanathia-longifolia,gbif,UOMNH,3
+Baragwanathia longifolia,card,baragwanathia-longifolia,gbif,MfN,2
+Baragwanathia longifolia,card,baragwanathia-longifolia,gbif,UF,2
+Baragwanathia longifolia,card,baragwanathia-longifolia,gbif,CMC,1
+Baragwanathia longifolia,card,baragwanathia-longifolia,gbif,CMN,1
+Baragwanathia longifolia,card,baragwanathia-longifolia,gbif,SMNS,1
+Baragwanathia longifolia,card,baragwanathia-longifolia,gbif,UCMP,1
+Baragwanathia longifolia,card,baragwanathia-longifolia,gbif,USNM,1
+Baragwanathia longifolia,card,baragwanathia-longifolia,ala_mirror,NRM,30
+Baragwanathia longifolia,card,baragwanathia-longifolia,ala_mirror,NHMUK,16
+Baragwanathia longifolia,card,baragwanathia-longifolia,ala_mirror,NSM,3
+Baragwanathia longifolia,card,baragwanathia-longifolia,ala_mirror,MfN,2
+Baragwanathia longifolia,card,baragwanathia-longifolia,ala_mirror,UF,2
+Baragwanathia longifolia,card,baragwanathia-longifolia,ala_mirror,UOMNH,2
+Baragwanathia longifolia,card,baragwanathia-longifolia,ala_mirror,CMC,1
+Baragwanathia longifolia,card,baragwanathia-longifolia,ala_mirror,UCMP,1
+Baragwanathia longifolia,card,baragwanathia-longifolia,idigbio,NHMUK,16
+Baragwanathia longifolia,card,baragwanathia-longifolia,idigbio,UOMNH,3
+Baragwanathia longifolia,card,baragwanathia-longifolia,idigbio,UF,2
+Baragwanathia longifolia,card,baragwanathia-longifolia,idigbio,UCMP,1
+Baragwanathia longifolia,card,baragwanathia-longifolia,idigbio,USNM,1
+Baragwanathia,card_genus,baragwanathia-longifolia,gbif,NRM,30
+Baragwanathia,card_genus,baragwanathia-longifolia,gbif,NHMUK,16
+Baragwanathia,card_genus,baragwanathia-longifolia,gbif,KU,6
+Baragwanathia,card_genus,baragwanathia-longifolia,gbif,NSM,4
+Baragwanathia,card_genus,baragwanathia-longifolia,gbif,UOMNH,3
+Baragwanathia,card_genus,baragwanathia-longifolia,gbif,MfN,2
+Baragwanathia,card_genus,baragwanathia-longifolia,gbif,UCMP,2
+Baragwanathia,card_genus,baragwanathia-longifolia,gbif,UF,2
+Baragwanathia,card_genus,baragwanathia-longifolia,gbif,CMC,1
+Baragwanathia,card_genus,baragwanathia-longifolia,gbif,CMN,1
+Baragwanathia,card_genus,baragwanathia-longifolia,gbif,SMNS,1
+Baragwanathia,card_genus,baragwanathia-longifolia,gbif,USNM,1
+Baragwanathia,card_genus,baragwanathia-longifolia,gbif,YPM,1
+Baragwanathia,card_genus,baragwanathia-longifolia,ala_mirror,NRM,30
+Baragwanathia,card_genus,baragwanathia-longifolia,ala_mirror,NHMUK,16
+Baragwanathia,card_genus,baragwanathia-longifolia,ala_mirror,KU,6
+Baragwanathia,card_genus,baragwanathia-longifolia,ala_mirror,NSM,4
+Baragwanathia,card_genus,baragwanathia-longifolia,ala_mirror,MfN,2
+Baragwanathia,card_genus,baragwanathia-longifolia,ala_mirror,UF,2
+Baragwanathia,card_genus,baragwanathia-longifolia,ala_mirror,UOMNH,2
+Baragwanathia,card_genus,baragwanathia-longifolia,ala_mirror,CMC,1
+Baragwanathia,card_genus,baragwanathia-longifolia,ala_mirror,UCMP,1
+Baragwanathia,card_genus,baragwanathia-longifolia,idigbio,NHMUK,16
+Baragwanathia,card_genus,baragwanathia-longifolia,idigbio,KU,6
+Baragwanathia,card_genus,baragwanathia-longifolia,idigbio,UOMNH,3
+Baragwanathia,card_genus,baragwanathia-longifolia,idigbio,UCMP,2
+Baragwanathia,card_genus,baragwanathia-longifolia,idigbio,UF,2
+Baragwanathia,card_genus,baragwanathia-longifolia,idigbio,USNM,1
+Baragwanathia,card_genus,baragwanathia-longifolia,idigbio,YPM,1
+Chara,card,chara,gbif,NHMUK,4
+Chara,card,chara,gbif,CMC,2
+Chara,card,chara,gbif,(none),1
+Chara,card,chara,gbif,YPM,1
+Chara,card,chara,idigbio,NHMUK,4
+Chara,card,chara,idigbio,CMC,2
+Chara,card,chara,idigbio,(none),1
+Chara,card,chara,idigbio,YPM,1
+Cooksonia,card,cooksonia,gbif,YPM,84
+Cooksonia,card,cooksonia,gbif,NHMUK,79
+Cooksonia,card,cooksonia,gbif,MfN,8
+Cooksonia,card,cooksonia,gbif,(none),3
+Cooksonia,card,cooksonia,gbif,NRM,3
+Cooksonia,card,cooksonia,gbif,NSM,2
+Cooksonia,card,cooksonia,gbif,FMNH,1
+Cooksonia,card,cooksonia,gbif,KU,1
+Cooksonia,card,cooksonia,gbif,UOMNH,1
+Cooksonia,card,cooksonia,gbif,USNM,1
+Cooksonia,card,cooksonia,idigbio,YPM,82
+Cooksonia,card,cooksonia,idigbio,NHMUK,79
+Cooksonia,card,cooksonia,idigbio,FMNH,1
+Cooksonia,card,cooksonia,idigbio,KU,1
+Cooksonia,card,cooksonia,idigbio,MNHN,1
+Cooksonia,card,cooksonia,idigbio,UOMNH,1
+Cooksonia,card,cooksonia,idigbio,USNM,1
+Dawsonites,card,dawsonites,gbif,RBINS-Scientific Heritage,51
+Dawsonites,card,dawsonites,gbif,(none),35
+Dawsonites,card,dawsonites,gbif,NHMUK,34
+Dawsonites,card,dawsonites,gbif,NRM,20
+Dawsonites,card,dawsonites,gbif,UiO,10
+Dawsonites,card,dawsonites,gbif,KU,7
+Dawsonites,card,dawsonites,gbif,USNM,7
+Dawsonites,card,dawsonites,gbif,MfN,2
+Dawsonites,card,dawsonites,idigbio,RBINS-Scientific Heritage,51
+Dawsonites,card,dawsonites,idigbio,NHMUK,34
+Dawsonites,card,dawsonites,idigbio,NRM,8
+Dawsonites,card,dawsonites,idigbio,KU,7
+Dawsonites,card,dawsonites,idigbio,USNM,7
+Drepanophycus spinaeformis,card,drepanophycus-spinaeformis,gbif,RBINS-Scientific Heritage,278
+Drepanophycus spinaeformis,card,drepanophycus-spinaeformis,gbif,NHMUK,44
+Drepanophycus spinaeformis,card,drepanophycus-spinaeformis,gbif,NRM,32
+Drepanophycus spinaeformis,card,drepanophycus-spinaeformis,gbif,(none),19
+Drepanophycus spinaeformis,card,drepanophycus-spinaeformis,gbif,SMF,14
+Drepanophycus spinaeformis,card,drepanophycus-spinaeformis,gbif,MfN,13
+Drepanophycus spinaeformis,card,drepanophycus-spinaeformis,gbif,UOMNH,6
+Drepanophycus spinaeformis,card,drepanophycus-spinaeformis,gbif,KU,5
+Drepanophycus spinaeformis,card,drepanophycus-spinaeformis,gbif,YPM,5
+Drepanophycus spinaeformis,card,drepanophycus-spinaeformis,gbif,FMNH,2
+Drepanophycus spinaeformis,card,drepanophycus-spinaeformis,gbif,NSM,1
+Drepanophycus spinaeformis,card,drepanophycus-spinaeformis,gbif,UF,1
+Drepanophycus spinaeformis,card,drepanophycus-spinaeformis,gbif,USNM,1
+Drepanophycus spinaeformis,card,drepanophycus-spinaeformis,ala_mirror,UOMNH,2
+Drepanophycus spinaeformis,card,drepanophycus-spinaeformis,idigbio,RBINS-Scientific Heritage,278
+Drepanophycus spinaeformis,card,drepanophycus-spinaeformis,idigbio,NHMUK,43
+Drepanophycus spinaeformis,card,drepanophycus-spinaeformis,idigbio,UOMNH,6
+Drepanophycus spinaeformis,card,drepanophycus-spinaeformis,idigbio,KU,5
+Drepanophycus spinaeformis,card,drepanophycus-spinaeformis,idigbio,YPM,5
+Drepanophycus spinaeformis,card,drepanophycus-spinaeformis,idigbio,FMNH,1
+Drepanophycus spinaeformis,card,drepanophycus-spinaeformis,idigbio,UF,1
+Drepanophycus spinaeformis,card,drepanophycus-spinaeformis,idigbio,USNM,1
+Drepanophycus,card_genus,drepanophycus-spinaeformis,gbif,KU,926
+Drepanophycus,card_genus,drepanophycus-spinaeformis,gbif,RBINS-Scientific Heritage,381
+Drepanophycus,card_genus,drepanophycus-spinaeformis,gbif,YPM,67
+Drepanophycus,card_genus,drepanophycus-spinaeformis,gbif,NRM,52
+Drepanophycus,card_genus,drepanophycus-spinaeformis,gbif,NHMUK,45
+Drepanophycus,card_genus,drepanophycus-spinaeformis,gbif,MfN,26
+Drepanophycus,card_genus,drepanophycus-spinaeformis,gbif,(none),24
+Drepanophycus,card_genus,drepanophycus-spinaeformis,gbif,SMF,15
+Drepanophycus,card_genus,drepanophycus-spinaeformis,gbif,UOMNH,6
+Drepanophycus,card_genus,drepanophycus-spinaeformis,gbif,USNM,6
+Drepanophycus,card_genus,drepanophycus-spinaeformis,gbif,UCMP,5
+Drepanophycus,card_genus,drepanophycus-spinaeformis,gbif,FMNH,4
+Drepanophycus,card_genus,drepanophycus-spinaeformis,gbif,FU Berlin,1
+Drepanophycus,card_genus,drepanophycus-spinaeformis,gbif,NSM,1
+Drepanophycus,card_genus,drepanophycus-spinaeformis,gbif,OMNH,1
+Drepanophycus,card_genus,drepanophycus-spinaeformis,gbif,SMNS,1
+Drepanophycus,card_genus,drepanophycus-spinaeformis,gbif,UF,1
+Drepanophycus,card_genus,drepanophycus-spinaeformis,gbif,UiO,1
+Drepanophycus,card_genus,drepanophycus-spinaeformis,ala_mirror,UOMNH,2
+Drepanophycus,card_genus,drepanophycus-spinaeformis,idigbio,KU,926
+Drepanophycus,card_genus,drepanophycus-spinaeformis,idigbio,RBINS-Scientific Heritage,381
+Drepanophycus,card_genus,drepanophycus-spinaeformis,idigbio,YPM,60
+Drepanophycus,card_genus,drepanophycus-spinaeformis,idigbio,NHMUK,44
+Drepanophycus,card_genus,drepanophycus-spinaeformis,idigbio,UOMNH,6
+Drepanophycus,card_genus,drepanophycus-spinaeformis,idigbio,USNM,6
+Drepanophycus,card_genus,drepanophycus-spinaeformis,idigbio,UCMP,5
+Drepanophycus,card_genus,drepanophycus-spinaeformis,idigbio,FMNH,3
+Drepanophycus,card_genus,drepanophycus-spinaeformis,idigbio,UF,1
+Palaeoglomus,card_member,early-glomeromycotan-fungi,gbif,UOMNH,7
+Palaeoglomus,card_member,early-glomeromycotan-fungi,gbif,UCMP,2
+Palaeoglomus,card_member,early-glomeromycotan-fungi,idigbio,UCMP,2
+Glomites,card_member,early-glomeromycotan-fungi,gbif,KU,1
+Glomites,card_member,early-glomeromycotan-fungi,idigbio,KU,1
+Eophyllophyton bellum,card,eophyllophyton-bellum,gbif,NRM,1
+Eophyllophyton,card_genus,eophyllophyton-bellum,gbif,NRM,1
+Hedeia,card,hedeia,gbif,NRM,10
+Hedeia,card,hedeia,gbif,NHMUK,6
+Hedeia,card,hedeia,gbif,UOMNH,3
+Hedeia,card,hedeia,gbif,KU,1
+Hedeia,card,hedeia,ala_mirror,NRM,10
+Hedeia,card,hedeia,ala_mirror,NHMUK,5
+Hedeia,card,hedeia,ala_mirror,UOMNH,2
+Hedeia,card,hedeia,idigbio,NHMUK,6
+Hedeia,card,hedeia,idigbio,UOMNH,3
+Hedeia,card,hedeia,idigbio,KU,1
+Horneophyton lignieri,card,horneophyton-lignieri,gbif,NRM,19
+Horneophyton lignieri,card,horneophyton-lignieri,gbif,NHMUK,13
+Horneophyton lignieri,card,horneophyton-lignieri,gbif,CMN,4
+Horneophyton lignieri,card,horneophyton-lignieri,gbif,(none),4
+Horneophyton lignieri,card,horneophyton-lignieri,gbif,UCMP,4
+Horneophyton lignieri,card,horneophyton-lignieri,gbif,FMNH,1
+Horneophyton lignieri,card,horneophyton-lignieri,idigbio,NHMUK,13
+Horneophyton lignieri,card,horneophyton-lignieri,idigbio,UCMP,4
+Horneophyton lignieri,card,horneophyton-lignieri,idigbio,FMNH,1
+Horneophyton,card_genus,horneophyton-lignieri,gbif,NHMUK,19
+Horneophyton,card_genus,horneophyton-lignieri,gbif,NRM,19
+Horneophyton,card_genus,horneophyton-lignieri,gbif,CMN,4
+Horneophyton,card_genus,horneophyton-lignieri,gbif,(none),4
+Horneophyton,card_genus,horneophyton-lignieri,gbif,UCMP,4
+Horneophyton,card_genus,horneophyton-lignieri,gbif,KU,2
+Horneophyton,card_genus,horneophyton-lignieri,gbif,FMNH,1
+Horneophyton,card_genus,horneophyton-lignieri,idigbio,NHMUK,19
+Horneophyton,card_genus,horneophyton-lignieri,idigbio,UCMP,4
+Horneophyton,card_genus,horneophyton-lignieri,idigbio,KU,2
+Horneophyton,card_genus,horneophyton-lignieri,idigbio,FMNH,1
+Hornea lignieri,card_variant,horneophyton-lignieri,gbif,NHMUK,13
+Hornea lignieri,card_variant,horneophyton-lignieri,gbif,(none),4
+Hornea lignieri,card_variant,horneophyton-lignieri,idigbio,NHMUK,13
+Leclercqia,card,leclercqia,gbif,UCMP,15
+Leclercqia,card,leclercqia,gbif,USNM,15
+Leclercqia,card,leclercqia,gbif,YPM,9
+Leclercqia,card,leclercqia,gbif,KU,1
+Leclercqia,card,leclercqia,gbif,SSSM,1
+Leclercqia,card,leclercqia,gbif,TPM,1
+Leclercqia,card,leclercqia,idigbio,UCMP,15
+Leclercqia,card,leclercqia,idigbio,USNM,15
+Leclercqia,card,leclercqia,idigbio,YPM,9
+Leclercqia,card,leclercqia,idigbio,KU,1
+Metzgeriothallus sharonae,card,metzgeriothallus-sharonae,gbif,UCMP,662
+Metzgeriothallus sharonae,card,metzgeriothallus-sharonae,idigbio,UCMP,662
+Metzgeriothallus,card_genus,metzgeriothallus-sharonae,gbif,UCMP,662
+Metzgeriothallus,card_genus,metzgeriothallus-sharonae,idigbio,UCMP,662
+Nematothallus,card,nematothallus,gbif,NHMUK,103
+Nematothallus,card,nematothallus,gbif,UOMNH,14
+Nematothallus,card,nematothallus,gbif,NRM,1
+Nematothallus,card,nematothallus,gbif,YPM,1
+Nematothallus,card,nematothallus,idigbio,NHMUK,103
+Nematothallus,card,nematothallus,idigbio,UOMNH,14
+Nematothallus,card,nematothallus,idigbio,YPM,1
+Nothia aphylla,card,nothia-aphylla,gbif,NRM,3
+Nothia,card_genus,nothia-aphylla,gbif,NRM,3
+Nothia,card_genus,nothia-aphylla,gbif,(none),1
+Nothia,card_genus,nothia-aphylla,idigbio,(none),1
+Tetrahedraletes,card_member,ordovician-cryptospores,gbif,NHMUK,23
+Tetrahedraletes,card_member,ordovician-cryptospores,gbif,NRM,2
+Tetrahedraletes,card_member,ordovician-cryptospores,idigbio,NHMUK,25
+Dyadospora,card_member,ordovician-cryptospores,gbif,NHMUK,26
+Dyadospora,card_member,ordovician-cryptospores,gbif,NRM,7
+Dyadospora,card_member,ordovician-cryptospores,idigbio,NHMUK,26
+Pseudodyadospora,card_member,ordovician-cryptospores,gbif,NHMUK,14
+Pseudodyadospora,card_member,ordovician-cryptospores,gbif,NRM,2
+Pseudodyadospora,card_member,ordovician-cryptospores,idigbio,NHMUK,14
+Hispanaediscus,card_member,ordovician-cryptospores,gbif,NHMUK,16
+Hispanaediscus,card_member,ordovician-cryptospores,gbif,NRM,2
+Hispanaediscus,card_member,ordovician-cryptospores,gbif,UOMNH,2
+Hispanaediscus,card_member,ordovician-cryptospores,idigbio,NHMUK,16
+Laevolancis,card_member,ordovician-cryptospores,gbif,NHMUK,25
+Laevolancis,card_member,ordovician-cryptospores,gbif,NRM,2
+Laevolancis,card_member,ordovician-cryptospores,idigbio,NHMUK,26
+Rimosotetras,card_member,ordovician-cryptospores,gbif,NHMUK,8
+Rimosotetras,card_member,ordovician-cryptospores,idigbio,NHMUK,8
+Segestrespora,card_member,ordovician-cryptospores,gbif,NHMUK,21
+Segestrespora,card_member,ordovician-cryptospores,idigbio,NHMUK,21
+Artemopyra,card_member,ordovician-cryptospores,gbif,NHMUK,13
+Artemopyra,card_member,ordovician-cryptospores,gbif,NRM,2
+Artemopyra,card_member,ordovician-cryptospores,idigbio,NHMUK,13
+Cheilotetras,card_member,ordovician-cryptospores,gbif,NHMUK,7
+Cheilotetras,card_member,ordovician-cryptospores,gbif,NRM,1
+Cheilotetras,card_member,ordovician-cryptospores,idigbio,NHMUK,7
+Velatitetras,card_member,ordovician-cryptospores,gbif,NHMUK,13
+Velatitetras,card_member,ordovician-cryptospores,idigbio,NHMUK,13
+Cymbohilates,card_member,ordovician-cryptospores,gbif,NHMUK,17
+Cymbohilates,card_member,ordovician-cryptospores,gbif,NRM,6
+Cymbohilates,card_member,ordovician-cryptospores,idigbio,NHMUK,17
+Palaeostigma,card,palaeostigma,gbif,CMC,2
+Palaeostigma,card,palaeostigma,gbif,UOMNH,1
+Palaeostigma,card,palaeostigma,idigbio,CMC,2
+Parka decipiens,card,parka-decipiens,gbif,NHMUK,162
+Parka decipiens,card,parka-decipiens,gbif,NRM,25
+Parka decipiens,card,parka-decipiens,gbif,YPM,6
+Parka decipiens,card,parka-decipiens,gbif,FMNH,4
+Parka decipiens,card,parka-decipiens,gbif,UOMNH,3
+Parka decipiens,card,parka-decipiens,gbif,UiO,2
+Parka decipiens,card,parka-decipiens,gbif,(none),1
+Parka decipiens,card,parka-decipiens,gbif,UCMP,1
+Parka decipiens,card,parka-decipiens,ala_mirror,UOMNH,1
+Parka decipiens,card,parka-decipiens,idigbio,NHMUK,162
+Parka decipiens,card,parka-decipiens,idigbio,YPM,6
+Parka decipiens,card,parka-decipiens,idigbio,FMNH,4
+Parka decipiens,card,parka-decipiens,idigbio,UOMNH,2
+Parka decipiens,card,parka-decipiens,idigbio,(none),1
+Parka decipiens,card,parka-decipiens,idigbio,UCMP,1
+Parka,card_genus,parka-decipiens,gbif,NHMUK,195
+Parka,card_genus,parka-decipiens,gbif,NRM,25
+Parka,card_genus,parka-decipiens,gbif,UOMNH,9
+Parka,card_genus,parka-decipiens,gbif,YPM,6
+Parka,card_genus,parka-decipiens,gbif,FMNH,4
+Parka,card_genus,parka-decipiens,gbif,UiO,2
+Parka,card_genus,parka-decipiens,gbif,(none),1
+Parka,card_genus,parka-decipiens,gbif,UCMP,1
+Parka,card_genus,parka-decipiens,ala_mirror,UOMNH,3
+Parka,card_genus,parka-decipiens,idigbio,NHMUK,195
+Parka,card_genus,parka-decipiens,idigbio,UOMNH,9
+Parka,card_genus,parka-decipiens,idigbio,YPM,6
+Parka,card_genus,parka-decipiens,idigbio,FMNH,4
+Parka,card_genus,parka-decipiens,idigbio,(none),1
+Parka,card_genus,parka-decipiens,idigbio,UCMP,1
+Partitatheca,card,partitatheca,gbif,NHMUK,2
+Partitatheca,card,partitatheca,idigbio,NHMUK,1
+Pertica,card,pertica,gbif,YPM,43
+Pertica,card,pertica,gbif,UF,11
+Pertica,card,pertica,gbif,NRM,9
+Pertica,card,pertica,gbif,KU,4
+Pertica,card,pertica,gbif,USNM,4
+Pertica,card,pertica,gbif,MNHN,3
+Pertica,card,pertica,gbif,(none),1
+Pertica,card,pertica,gbif,MfN,1
+Pertica,card,pertica,gbif,NHMUK,1
+Pertica,card,pertica,gbif,UCMP,1
+Pertica,card,pertica,idigbio,YPM,19
+Pertica,card,pertica,idigbio,UF,11
+Pertica,card,pertica,idigbio,KU,4
+Pertica,card,pertica,idigbio,USNM,4
+Pertica,card,pertica,idigbio,MNHN,3
+Pertica,card,pertica,idigbio,NHMUK,1
+Pertica,card,pertica,idigbio,UCMP,1
+Pertica,card,pertica,idigbio,UOMNH,1
+Prototaxites,card,prototaxites,gbif,NHMUK,96
+Prototaxites,card,prototaxites,gbif,"Department of Geology, TalTech",28
+Prototaxites,card,prototaxites,gbif,NRM,25
+Prototaxites,card,prototaxites,gbif,KU,14
+Prototaxites,card,prototaxites,gbif,UOMNH,14
+Prototaxites,card,prototaxites,gbif,(none),7
+Prototaxites,card,prototaxites,gbif,Laboratoire de Paléobotanique et Paléoécologie,4
+Prototaxites,card,prototaxites,gbif,UCMP,4
+Prototaxites,card,prototaxites,gbif,YPM,4
+Prototaxites,card,prototaxites,gbif,USNM,3
+Prototaxites,card,prototaxites,gbif,OMNH,2
+Prototaxites,card,prototaxites,gbif,UiO,2
+Prototaxites,card,prototaxites,gbif,CMC,1
+Prototaxites,card,prototaxites,gbif,CMN,1
+Prototaxites,card,prototaxites,gbif,FMNH,1
+Prototaxites,card,prototaxites,gbif,MfN,1
+Prototaxites,card,prototaxites,gbif,NSM,1
+Prototaxites,card,prototaxites,gbif,SMF,1
+Prototaxites,card,prototaxites,gbif,UF,1
+Prototaxites,card,prototaxites,ala_mirror,UOMNH,4
+Prototaxites,card,prototaxites,idigbio,RBINS-Scientific Heritage,301
+Prototaxites,card,prototaxites,idigbio,NHMUK,95
+Prototaxites,card,prototaxites,idigbio,KU,14
+Prototaxites,card,prototaxites,idigbio,UOMNH,6
+Prototaxites,card,prototaxites,idigbio,UCMP,4
+Prototaxites,card,prototaxites,idigbio,USNM,4
+Prototaxites,card,prototaxites,idigbio,YPM,4
+Prototaxites,card,prototaxites,idigbio,CMC,1
+Prototaxites,card,prototaxites,idigbio,FMNH,1
+Prototaxites,card,prototaxites,idigbio,UF,1
+Psilophyton,card,psilophyton,gbif,RBINS-Scientific Heritage,671
+Psilophyton,card,psilophyton,gbif,NHMUK,373
+Psilophyton,card,psilophyton,gbif,NRM,304
+Psilophyton,card,psilophyton,gbif,KU,175
+Psilophyton,card,psilophyton,gbif,YPM,132
+Psilophyton,card,psilophyton,gbif,UCMP,83
+Psilophyton,card,psilophyton,gbif,USNM,64
+Psilophyton,card,psilophyton,gbif,MfN,40
+Psilophyton,card,psilophyton,gbif,UiO,38
+Psilophyton,card,psilophyton,gbif,SMF,28
+Psilophyton,card,psilophyton,gbif,(none),26
+Psilophyton,card,psilophyton,gbif,CMC,15
+Psilophyton,card,psilophyton,gbif,FMNH,15
+Psilophyton,card,psilophyton,gbif,MNHN,10
+Psilophyton,card,psilophyton,gbif,UOMNH,10
+Psilophyton,card,psilophyton,gbif,NSM,4
+Psilophyton,card,psilophyton,gbif,SMNS,3
+Psilophyton,card,psilophyton,gbif,Université Rennes 1,3
+Psilophyton,card,psilophyton,gbif,FML,2
+Psilophyton,card,psilophyton,gbif,MGH,2
+Psilophyton,card,psilophyton,gbif,OMNH,2
+Psilophyton,card,psilophyton,gbif,FU Berlin,1
+Psilophyton,card,psilophyton,gbif,MCZ,1
+Psilophyton,card,psilophyton,gbif,TPM,1
+Psilophyton,card,psilophyton,gbif,UF,1
+Psilophyton,card,psilophyton,idigbio,RBINS-Scientific Heritage,671
+Psilophyton,card,psilophyton,idigbio,NHMUK,364
+Psilophyton,card,psilophyton,idigbio,KU,163
+Psilophyton,card,psilophyton,idigbio,YPM,102
+Psilophyton,card,psilophyton,idigbio,UCMP,78
+Psilophyton,card,psilophyton,idigbio,USNM,62
+Psilophyton,card,psilophyton,idigbio,CMC,15
+Psilophyton,card,psilophyton,idigbio,FMNH,15
+Psilophyton,card,psilophyton,idigbio,MNHN,10
+Psilophyton,card,psilophyton,idigbio,UOMNH,10
+Psilophyton,card,psilophyton,idigbio,(none),1
+Psilophyton,card,psilophyton,idigbio,MCZ,1
+Renalia hueberi,card,renalia-hueberi,gbif,YPM,17
+Renalia hueberi,card,renalia-hueberi,gbif,UCMP,11
+Renalia hueberi,card,renalia-hueberi,gbif,NHMUK,7
+Renalia hueberi,card,renalia-hueberi,gbif,KU,5
+Renalia hueberi,card,renalia-hueberi,gbif,UF,3
+Renalia hueberi,card,renalia-hueberi,gbif,FMNH,2
+Renalia hueberi,card,renalia-hueberi,gbif,RBINS-Scientific Heritage,1
+Renalia hueberi,card,renalia-hueberi,idigbio,YPM,17
+Renalia hueberi,card,renalia-hueberi,idigbio,NHMUK,7
+Renalia hueberi,card,renalia-hueberi,idigbio,KU,5
+Renalia hueberi,card,renalia-hueberi,idigbio,UF,3
+Renalia hueberi,card,renalia-hueberi,idigbio,FMNH,2
+Renalia hueberi,card,renalia-hueberi,idigbio,RBINS-Scientific Heritage,1
+Renalia,card_genus,renalia-hueberi,gbif,NRM,26
+Renalia,card_genus,renalia-hueberi,gbif,YPM,17
+Renalia,card_genus,renalia-hueberi,gbif,UCMP,11
+Renalia,card_genus,renalia-hueberi,gbif,NHMUK,9
+Renalia,card_genus,renalia-hueberi,gbif,KU,6
+Renalia,card_genus,renalia-hueberi,gbif,UF,3
+Renalia,card_genus,renalia-hueberi,gbif,FMNH,2
+Renalia,card_genus,renalia-hueberi,gbif,RBINS-Scientific Heritage,2
+Renalia,card_genus,renalia-hueberi,idigbio,YPM,17
+Renalia,card_genus,renalia-hueberi,idigbio,UCMP,11
+Renalia,card_genus,renalia-hueberi,idigbio,NHMUK,9
+Renalia,card_genus,renalia-hueberi,idigbio,KU,6
+Renalia,card_genus,renalia-hueberi,idigbio,UF,3
+Renalia,card_genus,renalia-hueberi,idigbio,FMNH,2
+Renalia,card_genus,renalia-hueberi,idigbio,RBINS-Scientific Heritage,2
+Rhynia gwynne-vaughanii,card,rhynia-gwynne-vaughanii,gbif,UCMP,36
+Rhynia gwynne-vaughanii,card,rhynia-gwynne-vaughanii,gbif,NRM,13
+Rhynia gwynne-vaughanii,card,rhynia-gwynne-vaughanii,gbif,KU,12
+Rhynia gwynne-vaughanii,card,rhynia-gwynne-vaughanii,gbif,NHMUK,8
+Rhynia gwynne-vaughanii,card,rhynia-gwynne-vaughanii,gbif,FMNH,1
+Rhynia gwynne-vaughanii,card,rhynia-gwynne-vaughanii,gbif,(none),1
+Rhynia gwynne-vaughanii,card,rhynia-gwynne-vaughanii,idigbio,UCMP,36
+Rhynia gwynne-vaughanii,card,rhynia-gwynne-vaughanii,idigbio,KU,12
+Rhynia gwynne-vaughanii,card,rhynia-gwynne-vaughanii,idigbio,NHMUK,8
+Rhynia gwynne-vaughanii,card,rhynia-gwynne-vaughanii,idigbio,FMNH,1
+Rhynia,card_genus,rhynia-gwynne-vaughanii,gbif,NHMUK,65
+Rhynia,card_genus,rhynia-gwynne-vaughanii,gbif,UCMP,60
+Rhynia,card_genus,rhynia-gwynne-vaughanii,gbif,KU,18
+Rhynia,card_genus,rhynia-gwynne-vaughanii,gbif,YPM,16
+Rhynia,card_genus,rhynia-gwynne-vaughanii,gbif,NRM,13
+Rhynia,card_genus,rhynia-gwynne-vaughanii,gbif,(none),6
+Rhynia,card_genus,rhynia-gwynne-vaughanii,gbif,NSM,5
+Rhynia,card_genus,rhynia-gwynne-vaughanii,gbif,CMN,4
+Rhynia,card_genus,rhynia-gwynne-vaughanii,gbif,FMNH,4
+Rhynia,card_genus,rhynia-gwynne-vaughanii,gbif,UOMNH,4
+Rhynia,card_genus,rhynia-gwynne-vaughanii,gbif,MfN,2
+Rhynia,card_genus,rhynia-gwynne-vaughanii,gbif,OMNH,2
+Rhynia,card_genus,rhynia-gwynne-vaughanii,idigbio,NHMUK,65
+Rhynia,card_genus,rhynia-gwynne-vaughanii,idigbio,UCMP,60
+Rhynia,card_genus,rhynia-gwynne-vaughanii,idigbio,KU,18
+Rhynia,card_genus,rhynia-gwynne-vaughanii,idigbio,YPM,16
+Rhynia,card_genus,rhynia-gwynne-vaughanii,idigbio,FMNH,4
+Rhynia,card_genus,rhynia-gwynne-vaughanii,idigbio,UOMNH,4
+Rhynia,card_genus,rhynia-gwynne-vaughanii,idigbio,(none),1
+Rhynia gwynnevaughani,card_variant,rhynia-gwynne-vaughanii,gbif,UCMP,40
+Rhynia gwynnevaughani,card_variant,rhynia-gwynne-vaughanii,gbif,NHMUK,34
+Rhynia gwynnevaughani,card_variant,rhynia-gwynne-vaughanii,gbif,NRM,13
+Rhynia gwynnevaughani,card_variant,rhynia-gwynne-vaughanii,gbif,KU,12
+Rhynia gwynnevaughani,card_variant,rhynia-gwynne-vaughanii,gbif,UOMNH,4
+Rhynia gwynnevaughani,card_variant,rhynia-gwynne-vaughanii,gbif,FMNH,1
+Rhynia gwynnevaughani,card_variant,rhynia-gwynne-vaughanii,gbif,(none),1
+Rhynia gwynnevaughani,card_variant,rhynia-gwynne-vaughanii,gbif,NSM,1
+Rhynia gwynnevaughani,card_variant,rhynia-gwynne-vaughanii,idigbio,NHMUK,26
+Rhynia gwynnevaughani,card_variant,rhynia-gwynne-vaughanii,idigbio,UCMP,4
+Rhynia gwynnevaughani,card_variant,rhynia-gwynne-vaughanii,idigbio,UOMNH,4
+Sawdonia ornata,card,sawdonia-ornata,gbif,NRM,41
+Sawdonia ornata,card,sawdonia-ornata,gbif,YPM,25
+Sawdonia ornata,card,sawdonia-ornata,gbif,KU,16
+Sawdonia ornata,card,sawdonia-ornata,gbif,NHMUK,6
+Sawdonia ornata,card,sawdonia-ornata,gbif,UCMP,5
+Sawdonia ornata,card,sawdonia-ornata,gbif,MfN,4
+Sawdonia ornata,card,sawdonia-ornata,gbif,FMNH,3
+Sawdonia ornata,card,sawdonia-ornata,gbif,USNM,2
+Sawdonia ornata,card,sawdonia-ornata,gbif,(none),1
+Sawdonia ornata,card,sawdonia-ornata,gbif,NSM,1
+Sawdonia ornata,card,sawdonia-ornata,gbif,UOMNH,1
+Sawdonia ornata,card,sawdonia-ornata,idigbio,YPM,25
+Sawdonia ornata,card,sawdonia-ornata,idigbio,KU,16
+Sawdonia ornata,card,sawdonia-ornata,idigbio,UF,7
+Sawdonia ornata,card,sawdonia-ornata,idigbio,NHMUK,6
+Sawdonia ornata,card,sawdonia-ornata,idigbio,UCMP,5
+Sawdonia ornata,card,sawdonia-ornata,idigbio,MNHN,4
+Sawdonia ornata,card,sawdonia-ornata,idigbio,FMNH,3
+Sawdonia ornata,card,sawdonia-ornata,idigbio,USNM,2
+Sawdonia ornata,card,sawdonia-ornata,idigbio,UOMNH,1
+Sawdonia,card_genus,sawdonia-ornata,gbif,KU,78
+Sawdonia,card_genus,sawdonia-ornata,gbif,NRM,41
+Sawdonia,card_genus,sawdonia-ornata,gbif,YPM,27
+Sawdonia,card_genus,sawdonia-ornata,gbif,MfN,13
+Sawdonia,card_genus,sawdonia-ornata,gbif,(none),11
+Sawdonia,card_genus,sawdonia-ornata,gbif,UCMP,9
+Sawdonia,card_genus,sawdonia-ornata,gbif,NHMUK,6
+Sawdonia,card_genus,sawdonia-ornata,gbif,FMNH,3
+Sawdonia,card_genus,sawdonia-ornata,gbif,UOMNH,2
+Sawdonia,card_genus,sawdonia-ornata,gbif,USNM,2
+Sawdonia,card_genus,sawdonia-ornata,gbif,NSM,1
+Sawdonia,card_genus,sawdonia-ornata,idigbio,KU,78
+Sawdonia,card_genus,sawdonia-ornata,idigbio,YPM,27
+Sawdonia,card_genus,sawdonia-ornata,idigbio,UCMP,9
+Sawdonia,card_genus,sawdonia-ornata,idigbio,UF,7
+Sawdonia,card_genus,sawdonia-ornata,idigbio,NHMUK,6
+Sawdonia,card_genus,sawdonia-ornata,idigbio,MNHN,4
+Sawdonia,card_genus,sawdonia-ornata,idigbio,FMNH,3
+Sawdonia,card_genus,sawdonia-ornata,idigbio,(none),2
+Sawdonia,card_genus,sawdonia-ornata,idigbio,UOMNH,2
+Sawdonia,card_genus,sawdonia-ornata,idigbio,USNM,2
+Wattieza,card,wattieza,gbif,UOMNH,20
+Wattieza,card,wattieza,gbif,NRM,6
+Wattieza,card,wattieza,gbif,UCMP,5
+Wattieza,card,wattieza,idigbio,UOMNH,20
+Wattieza,card,wattieza,idigbio,UCMP,5
+Winfrenatia reticulata,card,winfrenatia-reticulata,gbif,KU,45
+Winfrenatia reticulata,card,winfrenatia-reticulata,idigbio,KU,45
+Winfrenatia,card_genus,winfrenatia-reticulata,gbif,KU,45
+Winfrenatia,card_genus,winfrenatia-reticulata,idigbio,KU,45
+Yarravia,card,yarravia,gbif,NHMUK,3
+Yarravia,card,yarravia,gbif,KU,1
+Yarravia,card,yarravia,ala_mirror,NHMUK,3
+Yarravia,card,yarravia,idigbio,NHMUK,3
+Zosterophyllum,card,zosterophyllum,gbif,NHMUK,158
+Zosterophyllum,card,zosterophyllum,gbif,NRM,28
+Zosterophyllum,card,zosterophyllum,gbif,MfN,20
+Zosterophyllum,card,zosterophyllum,gbif,RBINS-Scientific Heritage,16
+Zosterophyllum,card,zosterophyllum,gbif,(none),14
+Zosterophyllum,card,zosterophyllum,gbif,UOMNH,12
+Zosterophyllum,card,zosterophyllum,gbif,KU,11
+Zosterophyllum,card,zosterophyllum,gbif,SMF,10
+Zosterophyllum,card,zosterophyllum,gbif,UiO,5
+Zosterophyllum,card,zosterophyllum,gbif,YPM,5
+Zosterophyllum,card,zosterophyllum,gbif,FMNH,4
+Zosterophyllum,card,zosterophyllum,gbif,SMNS,3
+Zosterophyllum,card,zosterophyllum,gbif,UF,2
+Zosterophyllum,card,zosterophyllum,gbif,NSMK,1
+Zosterophyllum,card,zosterophyllum,gbif,NSM,1
+Zosterophyllum,card,zosterophyllum,gbif,UCMP,1
+Zosterophyllum,card,zosterophyllum,gbif,UMU,1
+Zosterophyllum,card,zosterophyllum,ala_mirror,NHMUK,7
+Zosterophyllum,card,zosterophyllum,ala_mirror,UOMNH,1
+Zosterophyllum,card,zosterophyllum,idigbio,NHMUK,156
+Zosterophyllum,card,zosterophyllum,idigbio,RBINS-Scientific Heritage,16
+Zosterophyllum,card,zosterophyllum,idigbio,KU,11
+Zosterophyllum,card,zosterophyllum,idigbio,UOMNH,11
+Zosterophyllum,card,zosterophyllum,idigbio,YPM,5
+Zosterophyllum,card,zosterophyllum,idigbio,FMNH,4
+Zosterophyllum,card,zosterophyllum,idigbio,UF,2
+Zosterophyllum,card,zosterophyllum,idigbio,(none),1
+Zosterophyllum,card,zosterophyllum,idigbio,UCMP,1
+Archaeopteris,anchor,,gbif,NRM,284
+Archaeopteris,anchor,,gbif,NHMUK,127
+Archaeopteris,anchor,,gbif,YPM,122
+Archaeopteris,anchor,,gbif,KU,95
+Archaeopteris,anchor,,gbif,UiO,92
+Archaeopteris,anchor,,gbif,USNM,37
+Archaeopteris,anchor,,gbif,UF,28
+Archaeopteris,anchor,,gbif,(none),26
+Archaeopteris,anchor,,gbif,UOMNH,16
+Archaeopteris,anchor,,gbif,UCMP,14
+Archaeopteris,anchor,,gbif,MfN,10
+Archaeopteris,anchor,,gbif,MGH,6
+Archaeopteris,anchor,,gbif,MNHN,5
+Archaeopteris,anchor,,gbif,CMC,4
+Archaeopteris,anchor,,gbif,NSM,4
+Archaeopteris,anchor,,gbif,SMNS,4
+Archaeopteris,anchor,,gbif,CM,3
+Archaeopteris,anchor,,gbif,OMNH,2
+Archaeopteris,anchor,,gbif,Estonian Museum of Natural History,1
+Archaeopteris,anchor,,gbif,FU Berlin,1
+Archaeopteris,anchor,,gbif,NSMK,1
+Archaeopteris,anchor,,gbif,Université Rennes 1,1
+Archaeopteris,anchor,,ala_mirror,UF,1
+Archaeopteris,anchor,,ala_mirror,UOMNH,1
+Archaeopteris,anchor,,idigbio,NHMUK,121
+Archaeopteris,anchor,,idigbio,YPM,115
+Archaeopteris,anchor,,idigbio,KU,95
+Archaeopteris,anchor,,idigbio,USNM,37
+Archaeopteris,anchor,,idigbio,UF,26
+Archaeopteris,anchor,,idigbio,UCMP,14
+Archaeopteris,anchor,,idigbio,UOMNH,13
+Archaeopteris,anchor,,idigbio,CM,5
+Archaeopteris,anchor,,idigbio,CMC,4
+Archaeopteris,anchor,,idigbio,MNHN,4
+Archaeopteris,anchor,,idigbio,(none),2
+Callixylon,anchor,,gbif,KU,91
+Callixylon,anchor,,gbif,NHMUK,60
+Callixylon,anchor,,gbif,NRM,38
+Callixylon,anchor,,gbif,YPM,22
+Callixylon,anchor,,gbif,SMF,12
+Callixylon,anchor,,gbif,USNM,8
+Callixylon,anchor,,gbif,UCMP,7
+Callixylon,anchor,,gbif,UOMNH,5
+Callixylon,anchor,,gbif,CMC,4
+Callixylon,anchor,,gbif,UF,4
+Callixylon,anchor,,gbif,OMNH,3
+Callixylon,anchor,,gbif,UiO,3
+Callixylon,anchor,,gbif,FMNH,2
+Callixylon,anchor,,gbif,"Department of Geology, TalTech",1
+Callixylon,anchor,,gbif,FU Berlin,1
+Callixylon,anchor,,gbif,(none),1
+Callixylon,anchor,,gbif,MfN,1
+Callixylon,anchor,,gbif,NSM,1
+Callixylon,anchor,,gbif,TPM,1
+Callixylon,anchor,,ala_mirror,UOMNH,1
+Callixylon,anchor,,idigbio,KU,91
+Callixylon,anchor,,idigbio,NHMUK,60
+Callixylon,anchor,,idigbio,YPM,22
+Callixylon,anchor,,idigbio,USNM,8
+Callixylon,anchor,,idigbio,UCMP,7
+Callixylon,anchor,,idigbio,UF,7
+Callixylon,anchor,,idigbio,CMC,4
+Callixylon,anchor,,idigbio,UOMNH,4
+Callixylon,anchor,,idigbio,FMNH,2
+Eospermatopteris,anchor,,gbif,YPM,15
+Eospermatopteris,anchor,,gbif,NHMUK,3
+Eospermatopteris,anchor,,gbif,CMC,1
+Eospermatopteris,anchor,,gbif,USNM,1
+Eospermatopteris,anchor,,idigbio,YPM,15
+Eospermatopteris,anchor,,idigbio,NHMUK,3
+Eospermatopteris,anchor,,idigbio,CMC,1
+Eospermatopteris,anchor,,idigbio,USNM,1
+Wattieza,anchor,,gbif,UOMNH,20
+Wattieza,anchor,,gbif,NRM,6
+Wattieza,anchor,,gbif,UCMP,5
+Wattieza,anchor,,idigbio,UOMNH,20
+Wattieza,anchor,,idigbio,UCMP,5
+Elkinsia,anchor,,gbif,KU,1208
+Elkinsia,anchor,,gbif,UOMNH,2
+Elkinsia,anchor,,gbif,FMNH,1
+Elkinsia,anchor,,gbif,USNM,1
+Elkinsia,anchor,,idigbio,KU,842
+Elkinsia,anchor,,idigbio,UOMNH,2
+Elkinsia,anchor,,idigbio,FMNH,1
+Elkinsia,anchor,,idigbio,USNM,1
+Leclercqia,anchor,,gbif,UCMP,15
+Leclercqia,anchor,,gbif,USNM,15
+Leclercqia,anchor,,gbif,YPM,9
+Leclercqia,anchor,,gbif,KU,1
+Leclercqia,anchor,,gbif,SSSM,1
+Leclercqia,anchor,,gbif,TPM,1
+Leclercqia,anchor,,idigbio,UCMP,15
+Leclercqia,anchor,,idigbio,USNM,15
+Leclercqia,anchor,,idigbio,YPM,9
+Leclercqia,anchor,,idigbio,KU,1
+Prototaxites,nematophyte,,gbif,NHMUK,96
+Prototaxites,nematophyte,,gbif,"Department of Geology, TalTech",28
+Prototaxites,nematophyte,,gbif,NRM,25
+Prototaxites,nematophyte,,gbif,KU,14
+Prototaxites,nematophyte,,gbif,UOMNH,14
+Prototaxites,nematophyte,,gbif,(none),7
+Prototaxites,nematophyte,,gbif,Laboratoire de Paléobotanique et Paléoécologie,4
+Prototaxites,nematophyte,,gbif,UCMP,4
+Prototaxites,nematophyte,,gbif,YPM,4
+Prototaxites,nematophyte,,gbif,USNM,3
+Prototaxites,nematophyte,,gbif,OMNH,2
+Prototaxites,nematophyte,,gbif,UiO,2
+Prototaxites,nematophyte,,gbif,CMC,1
+Prototaxites,nematophyte,,gbif,CMN,1
+Prototaxites,nematophyte,,gbif,FMNH,1
+Prototaxites,nematophyte,,gbif,MfN,1
+Prototaxites,nematophyte,,gbif,NSM,1
+Prototaxites,nematophyte,,gbif,SMF,1
+Prototaxites,nematophyte,,gbif,UF,1
+Prototaxites,nematophyte,,ala_mirror,UOMNH,4
+Prototaxites,nematophyte,,idigbio,RBINS-Scientific Heritage,301
+Prototaxites,nematophyte,,idigbio,NHMUK,95
+Prototaxites,nematophyte,,idigbio,KU,14
+Prototaxites,nematophyte,,idigbio,UOMNH,6
+Prototaxites,nematophyte,,idigbio,UCMP,4
+Prototaxites,nematophyte,,idigbio,USNM,4
+Prototaxites,nematophyte,,idigbio,YPM,4
+Prototaxites,nematophyte,,idigbio,CMC,1
+Prototaxites,nematophyte,,idigbio,FMNH,1
+Prototaxites,nematophyte,,idigbio,UF,1
+Nematothallus,nematophyte,,gbif,NHMUK,103
+Nematothallus,nematophyte,,gbif,UOMNH,14
+Nematothallus,nematophyte,,gbif,NRM,1
+Nematothallus,nematophyte,,gbif,YPM,1
+Nematothallus,nematophyte,,idigbio,NHMUK,103
+Nematothallus,nematophyte,,idigbio,UOMNH,14
+Nematothallus,nematophyte,,idigbio,YPM,1
+Nematophyton,nematophyte,,gbif,NHMUK,70
+Nematophyton,nematophyte,,gbif,NRM,20
+Nematophyton,nematophyte,,gbif,KU,3
+Nematophyton,nematophyte,,gbif,OMNH,2
+Nematophyton,nematophyte,,gbif,CMC,1
+Nematophyton,nematophyte,,gbif,CMN,1
+Nematophyton,nematophyte,,gbif,SMF,1
+Nematophyton,nematophyte,,gbif,UF,1
+Nematophyton,nematophyte,,gbif,UOMNH,1
+Nematophyton,nematophyte,,gbif,USNM,1
+Nematophyton,nematophyte,,idigbio,NHMUK,67
+Nematophyton,nematophyte,,idigbio,CMC,1
+Nematophyton,nematophyte,,idigbio,KU,1
+Pachytheca,nematophyte,,gbif,RBINS-Scientific Heritage,312
+Pachytheca,nematophyte,,gbif,NHMUK,185
+Pachytheca,nematophyte,,gbif,KU,13
+Pachytheca,nematophyte,,gbif,SMF,3
+Pachytheca,nematophyte,,gbif,YPM,3
+Pachytheca,nematophyte,,gbif,FMNH,2
+Pachytheca,nematophyte,,gbif,(none),2
+Pachytheca,nematophyte,,gbif,NRM,1
+Pachytheca,nematophyte,,gbif,UF,1
+Pachytheca,nematophyte,,gbif,UOMNH,1
+Pachytheca,nematophyte,,gbif,USNM,1
+Pachytheca,nematophyte,,idigbio,RBINS-Scientific Heritage,761
+Pachytheca,nematophyte,,idigbio,NHMUK,185
+Pachytheca,nematophyte,,idigbio,KU,13
+Pachytheca,nematophyte,,idigbio,USNM,3
+Pachytheca,nematophyte,,idigbio,YPM,3
+Pachytheca,nematophyte,,idigbio,FMNH,2
+Pachytheca,nematophyte,,idigbio,(none),1
+Pachytheca,nematophyte,,idigbio,UF,1
+Pachytheca,nematophyte,,idigbio,UOMNH,1
+Nematasketum,nematophyte,,gbif,NHMUK,5
+Nematasketum,nematophyte,,idigbio,NHMUK,10
+Nematophycus,nematophyte,,gbif,NHMUK,3
+Nematophycus,nematophyte,,idigbio,NHMUK,4
+Parka,nematophyte,,gbif,NHMUK,195
+Parka,nematophyte,,gbif,NRM,25
+Parka,nematophyte,,gbif,UOMNH,9
+Parka,nematophyte,,gbif,YPM,6
+Parka,nematophyte,,gbif,FMNH,4
+Parka,nematophyte,,gbif,UiO,2
+Parka,nematophyte,,gbif,(none),1
+Parka,nematophyte,,gbif,UCMP,1
+Parka,nematophyte,,ala_mirror,UOMNH,3
+Parka,nematophyte,,idigbio,NHMUK,195
+Parka,nematophyte,,idigbio,UOMNH,9
+Parka,nematophyte,,idigbio,YPM,6
+Parka,nematophyte,,idigbio,FMNH,4
+Parka,nematophyte,,idigbio,(none),1
+Parka,nematophyte,,idigbio,UCMP,1
+Spongiophyton,problematicum,,gbif,NHMUK,20
+Spongiophyton,problematicum,,idigbio,NHMUK,20
+Prototaxites loganii,nematophyte,,gbif,NRM,9
+Prototaxites loganii,nematophyte,,gbif,OMNH,2
+Prototaxites loganii,nematophyte,,gbif,CMN,1
+Prototaxites loganii,nematophyte,,gbif,SMF,1
+Prototaxites loganii,nematophyte,,gbif,UOMNH,1
+Prototaxites loganii,nematophyte,,idigbio,UOMNH,1
+Prototaxites southworthii,nematophyte,,gbif,KU,3
+Prototaxites southworthii,nematophyte,,gbif,NHMUK,1
+Prototaxites southworthii,nematophyte,,idigbio,KU,3
+Prototaxites southworthii,nematophyte,,idigbio,USNM,1
+Palaeonitella,charophyte,,gbif,KU,3
+Palaeonitella,charophyte,,gbif,NHMUK,2
+Palaeonitella,charophyte,,gbif,UOMNH,1
+Palaeonitella,charophyte,,idigbio,KU,3
+Palaeonitella,charophyte,,idigbio,UOMNH,1
+Moellerina,charophyte,,gbif,AMNH,38
+Moellerina,charophyte,,gbif,FMNH,1
+Moellerina,charophyte,,gbif,UOMNH,1
+Moellerina,charophyte,,gbif,USNM,1
+Moellerina,charophyte,,idigbio,AMNH,38
+Moellerina,charophyte,,idigbio,FMNH,1
+Moellerina,charophyte,,idigbio,UOMNH,1
+Moellerina,charophyte,,idigbio,USNM,1
+Sycidium,charophyte,,gbif,AMNH,15
+Sycidium,charophyte,,gbif,NRM,5
+Sycidium,charophyte,,gbif,MfN,1
+Sycidium,charophyte,,gbif,NHMUK,1
+Sycidium,charophyte,,idigbio,AMNH,15
+Sycidium,charophyte,,idigbio,NHMUK,1
+Trochiliscus,charophyte,,gbif,NHMUK,10
+Trochiliscus,charophyte,,gbif,NRM,5
+Trochiliscus,charophyte,,gbif,USNM,4
+Trochiliscus,charophyte,,gbif,UCMP,3
+Trochiliscus,charophyte,,gbif,UF,1
+Trochiliscus,charophyte,,idigbio,NHMUK,10
+Trochiliscus,charophyte,,idigbio,USNM,4
+Trochiliscus,charophyte,,idigbio,UCMP,3
+Trochiliscus,charophyte,,idigbio,UF,1
+Eochara,charophyte,,idigbio,OMNH,1
+Praechara,charophyte,,gbif,USNM,10
+Praechara,charophyte,,idigbio,USNM,10
+Chovanella,charophyte,,idigbio,OMNH,12
+Mesochara,charophyte,,gbif,USNM,4
+Metzgeriothallus,planned_card,,gbif,UCMP,662
+Metzgeriothallus,planned_card,,idigbio,UCMP,662
+Taeniocrada,planned_card,,gbif,NRM,16
+Taeniocrada,planned_card,,gbif,UiO,10
+Taeniocrada,planned_card,,gbif,YPM,9
+Taeniocrada,planned_card,,gbif,KU,7
+Taeniocrada,planned_card,,gbif,NHMUK,7
+Taeniocrada,planned_card,,gbif,UOMNH,5
+Taeniocrada,planned_card,,gbif,UCMP,3
+Taeniocrada,planned_card,,gbif,FMNH,1
+Taeniocrada,planned_card,,gbif,NMBT,1
+Taeniocrada,planned_card,,gbif,NSM,1
+Taeniocrada,planned_card,,gbif,Université Rennes 1,1
+Taeniocrada,planned_card,,idigbio,YPM,10
+Taeniocrada,planned_card,,idigbio,KU,7
+Taeniocrada,planned_card,,idigbio,NHMUK,7
+Taeniocrada,planned_card,,idigbio,UOMNH,5
+Taeniocrada,planned_card,,idigbio,UCMP,3
+Taeniocrada,planned_card,,idigbio,FMNH,1
