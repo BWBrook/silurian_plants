@@ -1,0 +1,37 @@
+{
+  "doc": {
+    "doi": "10.1007/s12549-017-0274-3",
+    "citation": "Tonarová, P., Vodrážková, S., Ferrová, L., de la Puente, G. S., Hints, O., Frýda, J. & Kubajko, M. (2017). Palynology, microfacies and biostratigraphy across the Daleje Event (Lower Devonian, lower to upper Emsian): new insights from the offshore facies of the Prague Basin, Czech Republic. Palaeobiodiversity and Palaeoenvironments 97:419–438.",
+    "language": "English",
+    "reports_window_spores": true,
+    "comment": "Reports spore presence in the studied section, but explicitly excludes spores from discussion. No spore taxa, illustrations, counts or sample-specific occurrences are provided; the section-level presence record therefore has an empty occurrences list. Earlier spore research at this outcrop is attributed to McGregor (1979), Devonian spores from the Barrandian region of Czechoslovakia and their significance for interfacies correlation; its records are not reproduced."
+  },
+  "items": [
+    {
+      "assemblage_id": "Tonarova2017_PekarekMill_spores",
+      "scope": "section-interval",
+      "locality": "Švarcava valley near the village of Solopisky, SW of Prague",
+      "country": "Czech Republic",
+      "formation": "Zlíchov Formation (Zlíchov Limestone) and Daleje-Třebotov Formation (Daleje Shale)",
+      "section_or_core": "Pekárek Mill section",
+      "depth_or_level": "Middle and upper parts of the Zlíchov Limestone and lower Daleje Shale; 37 m in total",
+      "latitude": "49° 57′ 53.26″ N",
+      "longitude": "14° 16′ 35.35″ E",
+      "palaeogeo_unit_reported": "Teplá-Barrandian unit; alternatively a separate microcontinent within the Armorican terrane assemblage (Perunica) or closely attached to Gondwana",
+      "palaeo_unit_proposed": "peri-Gondwana-Europe",
+      "age_as_reported": "Lower Devonian, lower to upper Emsian",
+      "age_basis": "mixed",
+      "age_basis_detail": "Conodont and dacryoconarid tentaculite biostratigraphy: gronbergi conodont Zone and N. barrandei–N. elegans tentaculite zones. No conodonts were recovered from the N. elegans Zone in this study.",
+      "age_circular": false,
+      "stage_min_proposed": "Emsian",
+      "stage_max_proposed": "Emsian",
+      "setting_as_reported": "deeper water facies of the Prague Basin",
+      "setting_class": "marine-offshore",
+      "n_samples": "",
+      "reworking_status": "none",
+      "notes": "Materials and methods reports that permanent slides prepared from the 20–50-μm fraction were productive for spores, which are not discussed in this study. Forty-two samples were processed for microfossils overall; the number and levels yielding spores are unspecified. The principal palynological subjects are chitinozoans, prasinophytes and scolecodonts. No spore taxa are named. The statement that there is no evidence for reworked material in the Daleje Shale occurs in the chitinozoan discussion, without a separate assessment of spores.",
+      "locator": "Pekárek Mill section, p. 421; Materials and methods, pp. 421–422, especially p. 422",
+      "occurrences": []
+    }
+  ]
+}

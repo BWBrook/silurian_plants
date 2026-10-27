@@ -1,0 +1,262 @@
+{
+  "doc": {
+    "doi": "10.22059/jsciences.2016.57002",
+    "citation": "Ghavidel-syooki, M. (2016). Miospore assemblages from Late Ordovician (Katian-Hirnantian), Ghelli Formation, Alborz Mountain Range North-eastern Iran: Palaeophytogeographic and palaeoclimatic implications. Journal of Sciences, Islamic Republic of Iran 27(2): 135–159.",
+    "language": "English",
+    "reports_window_spores": true,
+    "comment": "Reports 28 spore taxa from one section. Three local first-appearance events are described, but complete sample-level species inventories are not supplied; the pooled section inventory is extracted here. Marine-palynomorph results were previously published in Ghavidel-syooki and Winchester-seeto (2002), Biostratigraphy and Palaeogeography of Late Ordovician chitinozoans from the north-eastern Alborz Range, Iran. Taxon ranges, spellings and several illustration assignments are internally inconsistent. The supplied DOI could not be independently verified against Crossref."
+  },
+  "items": [
+    {
+      "assemblage_id": "Ghavidel-syooki2016_Pelmis-gorge_Ghelli_MG90-MG130",
+      "scope": "section-interval",
+      "locality": "Pelmis-gorge, eastern part of Kuh-e-Saluk, 32km southern Bojnourd city, northeastern Alborz Mountain Range",
+      "country": "Iran",
+      "formation": "Ghelli Formation",
+      "section_or_core": "Pelmis-gorge outcrop section along the Bojnourd–Esfarayen road",
+      "depth_or_level": "MG-90 to MG-130",
+      "latitude": "",
+      "longitude": "",
+      "palaeogeo_unit_reported": "Peri-Gondwanan Domain",
+      "palaeo_unit_proposed": "Gondwana-other",
+      "age_as_reported": "Late Ordovician (Katian-Hirnantian)",
+      "age_basis": "mixed",
+      "age_basis_detail": "Independent marine-palynomorph dating: Armoricochitina nigerica, Ancyrochitina merga, Tanuchitina elongata and Spinachitina oulebsiri chitinozoan biozones, supported by diagnostic acritarchs. Brachiopods and conodonts are also cited as independent age evidence.",
+      "age_circular": false,
+      "stage_min_proposed": "Katian",
+      "stage_max_proposed": "Hirnantian",
+      "setting_as_reported": "shallow marine environment (littoral)",
+      "setting_class": "marginal-marine",
+      "n_samples": "27",
+      "reworking_status": "discussed",
+      "notes": "Spore-focused study reporting abundant cryptospores and rare trilete spores; associated marine palynomorphs are discussed separately. Table 1 lists 27 samples: MG-90, MG-94, MG-96, MG-98, MG-99, MG-100, MG-101, MG-104, MG-106, MG-107, MG-109, MG-110, MG-111, MG-112, MG-113, MG-116, MG-119, MG-120, MG-121, MG-122, MG-123, MG-124, MG-125, MG-126, MG-127, MG-128 and MG-129, although the text gives the productive interval as MG-90 to MG-130. Miospores constitute 15–80% of counted palynomorphs in Table 1. Section 2.1 A-9 describes three first-appearance events: MG-90, 'early to middle Katian', with Ambitisporites avitus, Retusotriletes sp., Cryptotetras erugata, Cryptotetras mordacis, Tetrahedraletes medinensis and Tetrahedraletes grayae; MG-98, 'late Katian', adding Tetraplanarisporites laevigatus, Abditusdyadus laevigatus, Rimosotetras subspherica, Rimosotetras punctata n. sp., Rimosotetras granulata n. sp., Rimosotetras problematica, Cheilotetras caledonica, Velatitetras retimembrana, Velatitetras (Nodospora) rugosa, Velatitetras laevigata and Pseudodyadospora laevigata; and MG-100, 'Hirnantian', adding the three Imperfectotriletes species, three Dyadospora species, Laevolancis divellomedium and four Segestrespora species. These event assignments conflict with systematic ranges for Velatitetras rugosa (starts MG-96), Pseudodyadospora laevigata (starts MG-100) and Laevolancis divellomedium (starts MG-98). The MG-100 event is correlated with 'Ancyrochina merga' and continuation through Tanuchitina elongata and Spinachitina oulebsiri biozones. Reworking is claimed for associated Early–Middle Ordovician acritarchs; spore reworking is not claimed. Taxon labels below follow the cited table or systematic entry without correcting spellings. Table 2 prints 'Rimosotetras subspharica' and 'Retusotriletes sp. A.', whereas the systematic entries use 'Rimosotetras subspherica' and 'Retusotriletes sp.'. Plate I identifies one Abditusdyadus specimen as 'Abditusdyadus laevigatus?'; Table 2 and the systematic entry are unqualified. The systematic entry assigns Velatitetras laevigata to Plate III, figure 14, whose caption instead identifies Velatitetras (Nodospora) rugosa. Ambitisporites avitus is assigned Plate II, figure 8 in its systematic entry, but that caption identifies Imperfectotriletes vavrdovae; its illustrated status therefore reflects the author's claimed assignment. Imperfectotriletes persianense is also assigned Plate VI, figure 9 in the text, while that caption identifies Cryptotetras erugata; Plate I, figure 13 independently illustrates the new species.",
+      "locator": "Abstract, p.135; Geological setting, pp.136–137; Materials and Methods and Table 1, p.138; Table 2, p.140; systematic palaeontology and Plates I–VII, pp.141–154; cryptospore biostratigraphy, pp.154–155; Results and Discussion, p.157.",
+      "occurrences": [
+        {
+          "taxon_as_reported": "Tetrahedraletes medinensis",
+          "genus": "Tetrahedraletes",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Table 2, p.140; systematic entry, pp.143–145, MG-90 to MG-130; Plate II, fig.20; Plate III, figs.3,4,7,10,13; Plates V–VII."
+        },
+        {
+          "taxon_as_reported": "Tetrahedraletes grayae",
+          "genus": "Tetrahedraletes",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Table 2, p.140; systematic entry, p.145, MG-90 to MG-125; Plate II, figs.9,10; Plate V, fig.9."
+        },
+        {
+          "taxon_as_reported": "Tetraplanarisporites laevigatus",
+          "genus": "Tetraplanarisporites",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Systematic entry, p.146, MG-98 to MG-130; Plate I, fig.12; Plate II, fig.3; Plate III, fig.11; Plate IV, fig.11; Plate V, fig.6; Plate VII, figs.11,17."
+        },
+        {
+          "taxon_as_reported": "Rimosotetras problematica",
+          "genus": "Rimosotetras",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Systematic entry, p.146, MG-98 to MG-130; Plate I, figs.5,9; Plate II, fig.13; Plate III, figs.1,5,6; Plate VII, figs.9,15."
+        },
+        {
+          "taxon_as_reported": "Rimosotetras subspherica",
+          "genus": "Rimosotetras",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Systematic entry, p.146, MG-98 to MG-129; Plate I, figs.11,18,20; Plate V, fig.14; Plate VI, figs.16,19; Plate VII, fig.13."
+        },
+        {
+          "taxon_as_reported": "Rimosotetras punctata n. sp.",
+          "genus": "Rimosotetras",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Systematic entry, p.146, MG-98 to MG-130; type stratum MG-100; Plate I, fig.14; Plate V, figs.3,5."
+        },
+        {
+          "taxon_as_reported": "Rimosotetras granulata n. sp.",
+          "genus": "Rimosotetras",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Systematic entry, p.146, MG-98 to MG-130; type stratum MG-100; Plate V, figs.8,11."
+        },
+        {
+          "taxon_as_reported": "Cheilotetras caledonica",
+          "genus": "Cheilotetras",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Systematic entry, pp.146–147, MG-98 to MG-130; Plate I, figs.2,3; Plate VII, figs.1,2."
+        },
+        {
+          "taxon_as_reported": "Velatitetras laevigata",
+          "genus": "Velatitetras",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Systematic entry, pp.147–148, MG-98 to MG-130; claimed illustration Plate III, fig.14, conflicts with plate caption; Table 2, p.140."
+        },
+        {
+          "taxon_as_reported": "Velatitetras retimembrana",
+          "genus": "Velatitetras",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Systematic entry, pp.149–151, MG-98 to MG-130; Plate I, fig.19; Plate II, fig.2; Plate IV, figs.3–7,9,10,15,16,18,20; Plate VI, figs.2,17."
+        },
+        {
+          "taxon_as_reported": "Velatitetras rugosa",
+          "genus": "Velatitetras",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Systematic entry, p.151, MG-96 to MG-130; Table 2, p.140; Plate VII, fig.20; Plates II–IV and VI caption this taxon as Velatitetras (Nodospora) rugosa."
+        },
+        {
+          "taxon_as_reported": "Abditusdyadus laevigatus",
+          "genus": "Abditusdyadus",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Systematic entry, p.151, printed range MG-98 to MG-30; Table 2, p.140; Plate II, fig.6; Plate III, fig.19; Plate IV, fig.13; Plate I, fig.8 is captioned with a question mark."
+        },
+        {
+          "taxon_as_reported": "Segestrespora membranifera",
+          "genus": "Segestrespora",
+          "qualifier": "",
+          "abundance": "rare to common",
+          "illustrated": true,
+          "locator": "Systematic entry, p.151, MG-100 to MG-130; Plate IV, fig.14."
+        },
+        {
+          "taxon_as_reported": "Segestrespora laevigata",
+          "genus": "Segestrespora",
+          "qualifier": "",
+          "abundance": "rare",
+          "illustrated": true,
+          "locator": "Systematic entry, p.151, MG-100 to MG-130; Plate II, fig.5; Plate III, figs.2,15."
+        },
+        {
+          "taxon_as_reported": "Segestrespora burgessii",
+          "genus": "Segestrespora",
+          "qualifier": "",
+          "abundance": "rare",
+          "illustrated": true,
+          "locator": "Systematic entry, pp.151–152, MG-100 to MG-129; Plate II, figs.4,19; Plate VII, fig.12; Plate I, fig.6 uses Segestrespora (Dyadospora) burgessii."
+        },
+        {
+          "taxon_as_reported": "Segestrespora iranense n. sp.",
+          "genus": "Segestrespora",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Systematic entry, p.152, MG-100 to MG-130; type stratum samples MG-100 to MG-124; Plate I, fig.16."
+        },
+        {
+          "taxon_as_reported": "Dyadospora murusattenuata",
+          "genus": "Dyadospora",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Table 2, p.140; systematic entry, p.152, MG-100 to MG-130; Plate I, fig.1; Plate II, fig.14; Plate VII, fig.3."
+        },
+        {
+          "taxon_as_reported": "Dyadospora verrucata n. sp.",
+          "genus": "Dyadospora",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Systematic entry, pp.152–153, occurrence range MG-100 to MG-129; type stratum MG-100 to MG-130; Plate I, fig.15; Plate III, fig.20."
+        },
+        {
+          "taxon_as_reported": "Dyadospora asymmetrica n. sp.",
+          "genus": "Dyadospora",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Systematic entry, p.152, MG-100 to MG-130; type stratum MG-100; Plate II, figs.15,16,18."
+        },
+        {
+          "taxon_as_reported": "Pseudodyadospora laevigata",
+          "genus": "Pseudodyadospora",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Systematic entry, p.153, MG-100 to MG-130; Plate VII, figs.6,7,8,16; event account, p.154, instead places onset at MG-98."
+        },
+        {
+          "taxon_as_reported": "Imperfectotriletes vavrdovae",
+          "genus": "Imperfectotriletes",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Systematic entry, p.153, MG-100 to MG-130; Plate I, fig.17; Plate II, fig.8; Plate VII, figs.4,18."
+        },
+        {
+          "taxon_as_reported": "Imperfectotriletes persianense n. sp.",
+          "genus": "Imperfectotriletes",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Systematic entry, p.153, MG-100 to MG-130; type stratum MG-100; Plate I, fig.13; claimed Plate VI, fig.9 conflicts with its caption."
+        },
+        {
+          "taxon_as_reported": "Imperfectotriletes patinatus",
+          "genus": "Imperfectotriletes",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Systematic entry, p.153, MG-100 to MG-130; Plate V, fig.19; Plate VI, figs.1,3,7,13,14."
+        },
+        {
+          "taxon_as_reported": "Cryptotetras erugata",
+          "genus": "Cryptotetras",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Systematic entry, pp.141–142, MG-90 to MG-125; Plate I, fig.4; Plate II, figs.1,11,12; Plate III, figs.8,16,17,18; Plate V, figs.1,2,16; Plate VI, fig.9."
+        },
+        {
+          "taxon_as_reported": "Cryptotetras mordacis",
+          "genus": "Cryptotetras",
+          "qualifier": "",
+          "abundance": "common",
+          "illustrated": true,
+          "locator": "Systematic entry, p.143, MG-90 to MG-125; Plate III, figs.9,12."
+        },
+        {
+          "taxon_as_reported": "Laevolancis divellomedium",
+          "genus": "Laevolancis",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Systematic entry, p.153, MG-98 to MG-125; Plate VII, figs.5,19; event account, p.154, instead places onset at MG-100."
+        },
+        {
+          "taxon_as_reported": "Ambitisporites avitus",
+          "genus": "Ambitisporites",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Table 2, p.140; systematic entry, pp.153–154, MG-90 to MG-125; claimed illustration Plate II, fig.8 conflicts with its caption."
+        },
+        {
+          "taxon_as_reported": "Retusotriletes sp.",
+          "genus": "Retusotriletes",
+          "qualifier": "sp.",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Systematic entry, p.154, MG-90 to MG-125; Plate I, figs.7,10; Plate II, fig.17; Table 2, p.140, labels it Retusotriletes sp. A."
+        }
+      ]
+    }
+  ]
+}

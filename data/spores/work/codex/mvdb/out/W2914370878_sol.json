@@ -1,0 +1,81 @@
+{
+  "doc": {
+    "doi": "10.1016/j.revpalbo.2019.01.007",
+    "citation": "Oktay, B. and Wellman, C.H. (2019). Palynological analysis of Upper Ordovician to Lower Silurian sediments from the Diyarbakir Basin, southeastern Turkey. Review of Palaeobotany and Palynology 263: 28–46.",
+    "language": "English",
+    "reports_window_spores": true,
+    "comment": "The complete supplied text reports extremely rare, taxonomically unidentified spores/cryptospores in both formations. These are pooled palynofacies categories, not identified spore taxa. The accompanying accepted-manuscript PDF also lacks the cited tables, figures and plate explanations; their contents could not be checked, so extraction remains provisional. The publisher's highlight says no cryptospores were recovered, conflicting with the body's pooled wording ([publisher page](https://www.sciencedirect.com/science/article/abs/pii/S0034666718301362)). Steemans, Le Hérissé and Bozdogan (1996), Ordovician and Silurian cryptospores and miospores from southeastern Turkey, is cited for other sections with more common spores; reuse of its material is not stated. Crossref verification was attempted but unavailable."
+  },
+  "items": [
+    {
+      "assemblage_id": "Oktay_Wellman_2019_Bedinan",
+      "scope": "formation",
+      "locality": "Diyarbakır Basin, province of Diyarbakır, southeastern Turkey",
+      "country": "Turkey",
+      "formation": "Bedinan Formation",
+      "section_or_core": "Unnamed studied well in the eastern part of the Diyarbakır Basin",
+      "depth_or_level": "",
+      "latitude": "",
+      "longitude": "",
+      "palaeogeo_unit_reported": "North Gondwana platform; Arabian Platform",
+      "palaeo_unit_proposed": "Gondwana-North-Africa-Arabia",
+      "age_as_reported": "Katian-Hirnantian",
+      "age_basis": "mixed",
+      "age_basis_detail": "Chitinozoan assemblages CA1 (late Katian, merga Biozone) and CA2 (cautiously Hirnantian, moussegoudaensis/oulebsiri Biozone), supported by acritarch assemblage AA1. Chitinozoan dating is considered more precise.",
+      "age_circular": false,
+      "stage_min_proposed": "Katian",
+      "stage_max_proposed": "Hirnantian",
+      "setting_as_reported": "offshore, open marine, shallow shelf that was oxygenated; offshore, open marine, deeper water shelf that was anoxic",
+      "setting_class": "marine-shelf",
+      "n_samples": "37 (16 core and 21 cutting samples)",
+      "reworking_status": "discussed",
+      "notes": "Marine acritarchs and chitinozoans are the main focus. The lower formation contains extremely rare spores/cryptospores; the upper formation contains very rare spores/cryptospores. These qualitative reports are combined at formation scope because no spore-specific sample distribution is supplied. Sample count represents all selected Upper Ordovician samples, not confirmed spore-positive samples. Cuttings span 1908-2362 m; study-wide core samples span 1826.05-1873.4 m across both formations. Probable reworking concerns acritarchs, and caving introduces Silurian marine palynomorphs into Ordovician cuttings; neither is specifically demonstrated for spores. No spore illustrations occur in the supplied material; missing plates could not be assessed.",
+      "locator": "Sections 3, 4.1.1-4.1.2, 4.2.1, 5 and 6; manuscript lines 145-149, 316-332 and 348-353. Section 5 cites Table 1, absent from supplied files.",
+      "occurrences": [
+        {
+          "taxon_as_reported": "spores/cryptospores",
+          "genus": "",
+          "qualifier": "indet.",
+          "abundance": "extremely rare (lower part); very rare (upper part)",
+          "illustrated": false,
+          "locator": "Section 5, manuscript lines 316-332"
+        }
+      ]
+    },
+    {
+      "assemblage_id": "Oktay_Wellman_2019_Dadas",
+      "scope": "formation",
+      "locality": "Diyarbakır Basin, province of Diyarbakır, southeastern Turkey",
+      "country": "Turkey",
+      "formation": "Dadas Formation",
+      "section_or_core": "Unnamed studied well in the eastern part of the Diyarbakır Basin",
+      "depth_or_level": "",
+      "latitude": "",
+      "longitude": "",
+      "palaeogeo_unit_reported": "North Gondwana platform; Arabian Platform",
+      "palaeo_unit_proposed": "Gondwana-North-Africa-Arabia",
+      "age_as_reported": "Llandovery (Aeronian-Telychian)",
+      "age_basis": "mixed",
+      "age_basis_detail": "Chitinozoan assemblage CA3, cautiously assigned to the alargada Biozone, supported by acritarch assemblage AA2. Conochitina cf. alargada and accompanying marine palynomorphs support an Aeronian-Telychian age.",
+      "age_circular": false,
+      "stage_min_proposed": "Aeronian",
+      "stage_max_proposed": "Telychian",
+      "setting_as_reported": "offshore, open marine, deep basinal environment that was anoxic",
+      "setting_class": "marine-offshore",
+      "n_samples": "25 core samples",
+      "reworking_status": "none",
+      "notes": "Marine acritarchs and chitinozoans are the main focus. Spores/cryptospores are reported only as an extremely rare pooled palynofacies category, without taxonomic identifications or sample-specific occurrences. Sample count represents all selected Lower Silurian samples, not confirmed spore-positive samples. CA3 occupies 1826.05-1857.5 m, but spores are not explicitly tied to individual depths. Deposits contain abundant amorphous organic matter and pyrite. No spore-specific reworking is reported. No spore illustrations occur in the supplied material; missing plates could not be assessed.",
+      "locator": "Sections 3, 4.1.3, 4.2.2, 5 and 6; manuscript lines 145-149, 333-342 and 348-353. Section 5 cites Table 2, absent from supplied files.",
+      "occurrences": [
+        {
+          "taxon_as_reported": "spores/cryptospores",
+          "genus": "",
+          "qualifier": "indet.",
+          "abundance": "extremely rare",
+          "illustrated": false,
+          "locator": "Section 5, manuscript lines 333-337"
+        }
+      ]
+    }
+  ]
+}

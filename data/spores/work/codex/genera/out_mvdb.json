@@ -1,0 +1,144 @@
+{
+  "items": [
+    {
+      "genus": "Tetraplanarisporites",
+      "spore_class": "cryptospore-tetrad",
+      "confidence": "high",
+      "basis": "Permanent planar tetrads, naked or enveloped.",
+      "source": "[Wellman, Steemans & Miller (2015)](https://orbi.uliege.be/bitstream/2268/117842/1/Wellman%20et%20al%202015b.pdf)"
+    },
+    {
+      "genus": "Cryptotetras",
+      "spore_class": "cryptospore-tetrad",
+      "confidence": "high",
+      "basis": "Permanent tetrahedral tetrads of thick-walled spores.",
+      "source": "[Wellman, Steemans & Miller (2015)](https://orbi.uliege.be/bitstream/2268/117842/1/Wellman%20et%20al%202015b.pdf)"
+    },
+    {
+      "genus": "Didymospora",
+      "spore_class": "cryptospore-dyad",
+      "confidence": "high",
+      "basis": "True dyads comprising two attached thick-walled spores.",
+      "source": "[Wellman, Steemans & Miller (2015)](https://orbi.uliege.be/bitstream/2268/117842/1/Wellman%20et%20al%202015b.pdf)"
+    },
+    {
+      "genus": "Devonomonoletes",
+      "spore_class": "other-spore",
+      "confidence": "high",
+      "basis": "Monolete spores with a single elongate laesura.",
+      "source": "[Breuer et al. (2015)](https://orbi.uliege.be/bitstream/2268/117852/1/Breuer%20et%20al%202015.pdf)"
+    },
+    {
+      "genus": "Anreticulispora",
+      "spore_class": "trilete-ornamented",
+      "confidence": "medium",
+      "basis": "Reticulate trilete spores; classified within Murornati.",
+      "source": "Ivanina (2019), Table 1; local full text W7218082907."
+    },
+    {
+      "genus": "Distaverrucosisporites",
+      "spore_class": "trilete-ornamented",
+      "confidence": "medium",
+      "basis": "Distaverrusporites variant; distal gemmae and verrucae.",
+      "source": "[Rubinstein, Lovecchio & Gebhard (2018)](https://ri.conicet.gov.ar/bitstream/handle/11336/88481/CONICET_Digital_Nro.0ad6c1d5-04a6-41ba-835e-c4ef77d0b6c0_A.pdf?isAllowed=y&sequence=2)"
+    },
+    {
+      "genus": "Leiozonospora",
+      "spore_class": "trilete-laevigate",
+      "confidence": "medium",
+      "basis": "Leiozosterospora variant; zonate trilete, predominantly smooth.",
+      "source": "[Wellman et al. (2012)](https://onlinelibrary.wiley.com/doi/10.1111/j.1475-4983.2012.01143.x)"
+    },
+    {
+      "genus": "Anapiculatasporites",
+      "spore_class": "trilete-ornamented",
+      "confidence": "high",
+      "basis": "Trilete spores with distal apiculae; contact faces smooth.",
+      "source": "[Playford (1962), as Anapiculatisporites](https://palass.org/sites/default/files/media/publications/palaeontology/volume_5/vol5_part3_pp550-618.pdf)"
+    },
+    {
+      "genus": "Verrucosporites",
+      "spore_class": "trilete-ornamented",
+      "confidence": "medium",
+      "basis": "Verrucosisporites variant; trilete with verrucate sculpture.",
+      "source": "[Cascales-Miñana et al. (2018)](https://orbi.uliege.be/bitstream/2268/228540/1/Cascales-Minana%20et%20al.%202018_Posongchong%20paper.pdf)"
+    },
+    {
+      "genus": "Stalicospora",
+      "spore_class": "trilete-unspecified",
+      "confidence": "medium",
+      "basis": "Bilayered/zonate trilete spores; sculpture unresolved.",
+      "source": "[Wellman, Steemans & Lopes (2023), Table 2](https://www.vliz.be/imisdocs/publications/393058.pdf)"
+    },
+    {
+      "genus": "Conperiplecospora",
+      "spore_class": "trilete-ornamented",
+      "confidence": "medium",
+      "basis": "Murornate trilete spores with ridged or reticulate exine.",
+      "source": "Ivanina (2019), Table 1 and discussion of Murornati; local full text W7218082907."
+    },
+    {
+      "genus": "Leiozosterospora",
+      "spore_class": "trilete-laevigate",
+      "confidence": "high",
+      "basis": "Zonate trilete spores, normally smooth; occasional granular patches.",
+      "source": "[Wellman et al. (2012)](https://onlinelibrary.wiley.com/doi/10.1111/j.1475-4983.2012.01143.x)"
+    },
+    {
+      "genus": "Coronospora",
+      "spore_class": "trilete-unspecified",
+      "confidence": "medium",
+      "basis": "Coronaspora variant; trilete, generic sculpture unresolved.",
+      "source": "[Wellman, Steemans & Lopes (2023), Table 2](https://www.vliz.be/imisdocs/publications/393058.pdf)"
+    },
+    {
+      "genus": "Dyctiotriletes",
+      "spore_class": "trilete-ornamented",
+      "confidence": "medium",
+      "basis": "Dictyotriletes variant; trilete with reticulate sculpture.",
+      "source": "[Hashemi & Playford (2005), as Dictyotriletes](https://web.igme.es/publicaciones/revistaMicro/pdfs/Micropaleo37_3_2005.pdf)"
+    },
+    {
+      "genus": "Concentricosiporites",
+      "spore_class": "trilete-laevigate",
+      "confidence": "medium",
+      "basis": "Concentricosisporites variant; smooth exine with polar thickening.",
+      "source": "[Beck & Strother (2008)](https://www.researchgate.net/publication/250070986_Miospores_and_cryptospores_from_the_Silurian_section_at_Allenport_Pennsylvania_USA)"
+    },
+    {
+      "genus": "Brochotriletres",
+      "spore_class": "trilete-ornamented",
+      "confidence": "medium",
+      "basis": "Brochotriletes variant; trilete with foveolate exine.",
+      "source": "[Hashemi & Playford (2005), as Brochotriletes](https://web.igme.es/publicaciones/revistaMicro/pdfs/Micropaleo37_3_2005.pdf)"
+    },
+    {
+      "genus": "Tribojasporites",
+      "spore_class": "trilete-unspecified",
+      "confidence": "high",
+      "basis": "Three proximal annuli; remaining exine smooth or sculptured.",
+      "source": "[Hashemi & Playford (2005), original generic diagnosis](https://web.igme.es/publicaciones/revistaMicro/pdfs/Micropaleo37_3_2005.pdf)"
+    },
+    {
+      "genus": "Cirratriradiates",
+      "spore_class": "trilete-ornamented",
+      "confidence": "medium",
+      "basis": "Cirratriradites variant; zonate trilete with proximal papillae.",
+      "source": "[Breuer et al. (2015), discussion of diaphanus](https://orbi.uliege.be/bitstream/2268/117852/1/Breuer%20et%20al%202015.pdf)"
+    },
+    {
+      "genus": "Psedodyadospora",
+      "spore_class": "cryptospore-dyad",
+      "confidence": "high",
+      "basis": "Pseudodyadospora misspelling; permanently fused cryptospore dyads.",
+      "source": "[Wellman, Steemans & Miller (2015), Table 1](https://orbi.uliege.be/bitstream/2268/117842/1/Wellman%20et%20al%202015b.pdf)"
+    },
+    {
+      "genus": "Zontriletes",
+      "spore_class": "trilete-unspecified",
+      "confidence": "medium",
+      "basis": "Zonotriletes variant; zonate trilete, generic sculpture unresolved.",
+      "source": "[Wellman, Steemans & Lopes (2023), Table 2](https://www.vliz.be/imisdocs/publications/393058.pdf)"
+    }
+  ]
+}

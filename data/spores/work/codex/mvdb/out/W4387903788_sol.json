@@ -1,0 +1,329 @@
+{
+  "doc": {
+    "doi": "10.1144/jgs2023-138",
+    "citation": "Wellman, C.H., Lopes, G., McKellar, Z. and Hartley, A. (2024). Age of the basal ‘Lower Old Red Sandstone’ Stonehaven Group of Scotland: the oldest reported air-breathing land animal is Silurian (late Wenlock) in age. Journal of the Geological Society, 181(1), jgs2023-138.",
+    "language": "English",
+    "reports_window_spores": true,
+    "comment": "Table 1 compares an inland assemblage reused from Wellman (1993), A land plant microfossil assemblage of Mid Silurian age from the Stonehaven Group, Scotland, with a pooled assemblage from two new coastal samples. The authors support a late Wenlock (Homerian) age and dispute the Lochkovian interpretation of Suarez et al. (2017). Fig. 4f additionally illustrates an unidentified reticulate hilate cryptospore. The supplied DOI matches the article; live Crossref verification was unavailable."
+  },
+  "items": [
+    {
+      "assemblage_id": "A1",
+      "scope": "section-interval",
+      "locality": "Bridge of Graham inland exposure, Stonehaven, Midland Valley of Scotland",
+      "country": "United Kingdom (Scotland)",
+      "formation": "Stonehaven Group",
+      "section_or_core": "Tewel Burn (= Burn of Graham), Bridge of Graham inland exposure",
+      "depth_or_level": "",
+      "latitude": "",
+      "longitude": "",
+      "palaeogeo_unit_reported": "",
+      "palaeo_unit_proposed": "Laurentia",
+      "age_as_reported": "late Wenlock (Homerian)",
+      "age_basis": "spore-zone",
+      "age_basis_detail": "brevicosta–verrucatus Zone, probably Hispanaediscus lamontii Sub-Zone, of Burgess and Richardson (1995).",
+      "age_circular": true,
+      "stage_min_proposed": "Homerian",
+      "stage_max_proposed": "Homerian",
+      "setting_as_reported": "continental deposits",
+      "setting_class": "non-marine",
+      "n_samples": "",
+      "reworking_status": "none",
+      "notes": "Locality-level list reproduced from Wellman (1993); no sample-level allocation or sample count is provided here. The paper describes the spore assemblages as entirely non-marine, containing dispersed spores and phytodebris. The inland assemblage is better preserved and more diverse than the new coastal assemblages. No spore reworking is reported. Fig. 4 illustrates the new coastal material, so those illustrations are not assigned to A1.",
+      "locator": "Table 1, p. 5, column A1 and footnote; Introduction, p. 1; Results—Palynological analysis, p. 3; Discussion, p. 4; Fig. 1",
+      "occurrences": [
+        {
+          "taxon_as_reported": "Ambitisporites avitus Hoffmeister, 1959",
+          "genus": "Ambitisporites",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": false,
+          "locator": "Table 1, p. 5, A1"
+        },
+        {
+          "taxon_as_reported": "Ambitisporites dilutus (Hoffmeister) Richardson and Lister, 1969",
+          "genus": "Ambitisporites",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": false,
+          "locator": "Table 1, p. 5, A1"
+        },
+        {
+          "taxon_as_reported": "Synorisporites spp.",
+          "genus": "Synorisporites",
+          "qualifier": "spp.",
+          "abundance": "present",
+          "illustrated": false,
+          "locator": "Table 1, p. 5, A1"
+        },
+        {
+          "taxon_as_reported": "Archaeozonotriletes chulus (Cramer) Richardson and Lister, 1969",
+          "genus": "Archaeozonotriletes",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": false,
+          "locator": "Table 1, p. 5, A1"
+        },
+        {
+          "taxon_as_reported": "Chelinospora? sp. A",
+          "genus": "Chelinospora",
+          "qualifier": "?",
+          "abundance": "present",
+          "illustrated": false,
+          "locator": "Table 1, p. 5, A1"
+        },
+        {
+          "taxon_as_reported": "Cymbosporites sp. A",
+          "genus": "Cymbosporites",
+          "qualifier": "sp.",
+          "abundance": "present",
+          "illustrated": false,
+          "locator": "Table 1, p. 5, A1"
+        },
+        {
+          "taxon_as_reported": "Laevolancis divellomedium (Chibrikova) Burgess and Richardson, 1991",
+          "genus": "Laevolancis",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": false,
+          "locator": "Table 1, p. 5, A1"
+        },
+        {
+          "taxon_as_reported": "Laevolancis plicata Burgess and Richardson, 1991",
+          "genus": "Laevolancis",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": false,
+          "locator": "Table 1, p. 5, A1"
+        },
+        {
+          "taxon_as_reported": "Artemopyra brevicosta Burgess and Richardson, 1991",
+          "genus": "Artemopyra",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": false,
+          "locator": "Table 1, p. 5, A1"
+        },
+        {
+          "taxon_as_reported": "Artemopyra sp. A Burgess and Richardson, 1991",
+          "genus": "Artemopyra",
+          "qualifier": "sp.",
+          "abundance": "present",
+          "illustrated": false,
+          "locator": "Table 1, p. 5, A1"
+        },
+        {
+          "taxon_as_reported": "Hispanaediscus lamontii Wellman, 1993",
+          "genus": "Hispanaediscus",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": false,
+          "locator": "Table 1, p. 5, A1"
+        },
+        {
+          "taxon_as_reported": "Hispanaediscus verrucatus? (Cramer) Burgess and Richardson, 1991",
+          "genus": "Hispanaediscus",
+          "qualifier": "?",
+          "abundance": "present",
+          "illustrated": false,
+          "locator": "Table 1, p. 5, A1"
+        },
+        {
+          "taxon_as_reported": "Hispanaediscus wenlockensis Burgess and Richardson, 1991",
+          "genus": "Hispanaediscus",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": false,
+          "locator": "Table 1, p. 5, A1"
+        },
+        {
+          "taxon_as_reported": "Dyadospora murusattenuata (Strother and Traverse) Burgess and Richardson, 1991",
+          "genus": "Dyadospora",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": false,
+          "locator": "Table 1, p. 5, A1"
+        },
+        {
+          "taxon_as_reported": "Dyadospora murusdensa (Strother and Traverse) Burgess and Richardson, 1991",
+          "genus": "Dyadospora",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": false,
+          "locator": "Table 1, p. 5, A1"
+        },
+        {
+          "taxon_as_reported": "Pseudodyadospora petasus Wellman and Richardson, 1993",
+          "genus": "Pseudodyadospora",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": false,
+          "locator": "Table 1, p. 5, A1"
+        },
+        {
+          "taxon_as_reported": "Cheilotetras caledonica Wellman and Richardson, 1993",
+          "genus": "Cheilotetras",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": false,
+          "locator": "Table 1, p. 5, A1"
+        },
+        {
+          "taxon_as_reported": "Tetrahedraletes medinensis (Strother and Traverse) Wellman and Richardson, 1993",
+          "genus": "Tetrahedraletes",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": false,
+          "locator": "Table 1, p. 5, A1"
+        },
+        {
+          "taxon_as_reported": "Murornate permanent tetrads",
+          "genus": "",
+          "qualifier": "indet.",
+          "abundance": "present",
+          "illustrated": false,
+          "locator": "Table 1, p. 5, A1"
+        }
+      ]
+    },
+    {
+      "assemblage_id": "A2",
+      "scope": "composite",
+      "locality": "Coast near Cowie, Stonehaven, Midland Valley of Scotland",
+      "country": "United Kingdom (Scotland)",
+      "formation": "Cowie Formation, Castle of Cowie Member, Stonehaven Group",
+      "section_or_core": "Coastal type section of the Stonehaven Group",
+      "depth_or_level": "(1) a grey sandy-siltstone exposed in the wave-cut platform; (2) a large (20 cm) clast of dark grey siltstone within a sandstone",
+      "latitude": "",
+      "longitude": "",
+      "palaeogeo_unit_reported": "",
+      "palaeo_unit_proposed": "Laurentia",
+      "age_as_reported": "late Wenlock (Homerian)",
+      "age_basis": "spore-zone",
+      "age_basis_detail": "brevicosta–verrucatus Zone of Burgess and Richardson (1995), correlated with the previously described inland assemblage. Detrital zircon data are considered supporting evidence in the discussion.",
+      "age_circular": true,
+      "stage_min_proposed": "Homerian",
+      "stage_max_proposed": "Homerian",
+      "setting_as_reported": "clearly continental in origin",
+      "setting_class": "non-marine",
+      "n_samples": "2",
+      "reworking_status": "none",
+      "notes": "Table 1 pools the two new coastal localities without separate sample lists. Grid references are printed as HO88290/87036 and HO88420/07136, respectively; retained here without correction or conversion. Assemblages contain only land plant spores and phytodebris, with moderate to good preservation and TAI = 3. One sample is a siltstone clast within sandstone; the authors do not explicitly claim reworked spores. Fig. 4 specimens have slide identifiers 21SCOT13.1, 21SCOT13.2 and 21SCOT13.R, without an explicit assignment to either coastal locality. The unidentified hilate form in Fig. 4f is retained separately because the caption does not equate it with a named Table 1 taxon; this need not represent an additional biological taxon.",
+      "locator": "Methods—Palynology, p. 2; Results—Palynological analysis, p. 3; Table 1, p. 5, column A2 and footnote; Fig. 4a–l, p. 5; Figs 1–3",
+      "occurrences": [
+        {
+          "taxon_as_reported": "Ambitisporites avitus Hoffmeister, 1959",
+          "genus": "Ambitisporites",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Table 1, p. 5, A2; Fig. 4l"
+        },
+        {
+          "taxon_as_reported": "Ambitisporites dilutus (Hoffmeister) Richardson and Lister, 1969",
+          "genus": "Ambitisporites",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Table 1, p. 5, A2; Fig. 4k"
+        },
+        {
+          "taxon_as_reported": "Archaeozonotriletes chulus (Cramer) Richardson and Lister, 1969",
+          "genus": "Archaeozonotriletes",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": false,
+          "locator": "Table 1, p. 5, A2"
+        },
+        {
+          "taxon_as_reported": "Laevolancis divellomedium (Chibrikova) Burgess and Richardson, 1991",
+          "genus": "Laevolancis",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Table 1, p. 5, A2; Fig. 4c"
+        },
+        {
+          "taxon_as_reported": "Laevolancis plicata Burgess and Richardson, 1991",
+          "genus": "Laevolancis",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": false,
+          "locator": "Table 1, p. 5, A2"
+        },
+        {
+          "taxon_as_reported": "Hispanaediscus lamontii Wellman, 1993",
+          "genus": "Hispanaediscus",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Table 1, p. 5, A2; Fig. 4i, j"
+        },
+        {
+          "taxon_as_reported": "Hispanaediscus verrucatus? (Cramer) Burgess and Richardson, 1991",
+          "genus": "Hispanaediscus",
+          "qualifier": "?",
+          "abundance": "present",
+          "illustrated": false,
+          "locator": "Table 1, p. 5, A2"
+        },
+        {
+          "taxon_as_reported": "Hispanaediscus wenlockensis Burgess and Richardson, 1991",
+          "genus": "Hispanaediscus",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Table 1, p. 5, A2; Fig. 4g, h"
+        },
+        {
+          "taxon_as_reported": "Dyadospora murusattenuata (Strother and Traverse) Burgess and Richardson, 1991",
+          "genus": "Dyadospora",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": false,
+          "locator": "Table 1, p. 5, A2"
+        },
+        {
+          "taxon_as_reported": "Dyadospora murusdensa (Strother and Traverse) Burgess and Richardson, 1991",
+          "genus": "Dyadospora",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Table 1, p. 5, A2; Fig. 4b"
+        },
+        {
+          "taxon_as_reported": "Pseudodyadospora petasus Wellman and Richardson, 1993",
+          "genus": "Pseudodyadospora",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Table 1, p. 5, A2; Fig. 4e"
+        },
+        {
+          "taxon_as_reported": "Cheilotetras caledonica Wellman and Richardson, 1993",
+          "genus": "Cheilotetras",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Table 1, p. 5, A2; Fig. 4d"
+        },
+        {
+          "taxon_as_reported": "Tetrahedraletes medinensis (Strother and Traverse) Wellman and Richardson, 1993",
+          "genus": "Tetrahedraletes",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Table 1, p. 5, A2; Fig. 4a"
+        },
+        {
+          "taxon_as_reported": "Hilate cryptospore with reticulate ornament",
+          "genus": "",
+          "qualifier": "indet.",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Fig. 4f and caption, p. 5; slide 21SCOT13.2, H42"
+        }
+      ]
+    }
+  ]
+}

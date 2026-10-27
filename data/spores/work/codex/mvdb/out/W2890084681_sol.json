@@ -1,0 +1,126 @@
+{
+  "doc": {
+    "doi": "10.7306/2018.8",
+    "citation": "Fijałkowska-Mader, A. & Malec, J. 2018. Wiek dolnodewońskiego poziomu tufitowego z Barczy (Góry Świętokrzyskie) na podstawie miospor. Przegląd Geologiczny 66(9): 578–584.",
+    "language": "Polish; English abstract and figure captions",
+    "reports_window_spores": true,
+    "comment": "One productive sample among six tested; all 11 illustrated taxa belong to this sample. Regional palynozone summaries concern earlier studies and are not additional taxon-level assemblages. Fijałkowska-Mader and Malec (2011) supplies the regional correlation framework and the section adapted in Figure 6; reuse of its spore specimens is not stated. The tuffite is dated indirectly by spores below it. DOI matches the paper; live Crossref verification was unavailable."
+  },
+  "items": [
+    {
+      "assemblage_id": "Barcza-eastern-quarry-productive-sample",
+      "scope": "sample",
+      "locality": "Barcza, Pasmo Klonowskie, Góry Świętokrzyskie",
+      "country": "Poland",
+      "formation": "warstwy barczańskie (Barcza Beds)",
+      "section_or_core": "Eastern quarry, northern wall, middle part; Figure 3B",
+      "depth_or_level": "Grey-green mudstone below the pyroclastic deposits, approximately 1.7 m above the medium-bedded ferruginous sandstone bed in the upper part of the thick-bedded sandstone complex",
+      "latitude": "",
+      "longitude": "",
+      "palaeogeo_unit_reported": "",
+      "palaeo_unit_proposed": "Baltica",
+      "age_as_reported": "wczesny ems",
+      "age_basis": "spore-zone",
+      "age_basis_detail": "Emphanisporites annulatus indicates the AB (annulatus-bellatulus) palynological zone; Coronaspora mariae places the assemblage in its upper part.",
+      "age_circular": true,
+      "stage_min_proposed": "Emsian",
+      "stage_max_proposed": "Emsian",
+      "setting_as_reported": "Grey-green mudstones below pyroclastic deposits, within a mudstone–sandstone complex between medium- and thick-bedded quartzitic sandstones; dispersed plant remains and bioturbation occur in the complex.",
+      "setting_class": "unknown",
+      "n_samples": "1",
+      "reworking_status": "none",
+      "notes": "Relatively rich assemblage described as consisting exclusively of Lower Devonian miospores. Six samples were tested from mudstones below the pyroclastic deposits in the northern and eastern quarries; only this eastern-quarry sample was productive. Figure 3 shows four barren samples in the northern quarry and one in the eastern quarry. No cryptospores are explicitly reported. The authors retain the informal name Barcza Beds because proposed formation/member names require formalisation. The body text prints the genus as 'Calamosora', whereas Figure 5 identifies the illustrated specimen as Calamospora atava. Abundance statements for nondominant taxa apply collectively at genus level.",
+      "locator": "p. 583, 'Wyniki badań mikroflory osadów z Barczy i pozycja stratygraficzna poziomów tufitowych'; Figure 3B, p. 580; Figure 5 and caption, p. 582",
+      "occurrences": [
+        {
+          "taxon_as_reported": "Calamospora atava (Naumova) McGregor",
+          "genus": "Calamospora",
+          "qualifier": "",
+          "abundance": "Relatively frequent; genus-level statement",
+          "illustrated": true,
+          "locator": "Figure 5A and caption, p. 582; abundance p. 583"
+        },
+        {
+          "taxon_as_reported": "Retusotriletes communis Naumova",
+          "genus": "Retusotriletes",
+          "qualifier": "",
+          "abundance": "Relatively frequent; genus-level statement",
+          "illustrated": true,
+          "locator": "Figure 5B and caption, p. 582; abundance p. 583"
+        },
+        {
+          "taxon_as_reported": "Anapiculatisporites sp.",
+          "genus": "Anapiculatisporites",
+          "qualifier": "sp.",
+          "abundance": "Few; genus-level statement",
+          "illustrated": true,
+          "locator": "Figure 5C and caption, p. 582; abundance p. 583"
+        },
+        {
+          "taxon_as_reported": "Apiculiretusispora plicata (Allen) Streel",
+          "genus": "Apiculiretusispora",
+          "qualifier": "",
+          "abundance": "Dominant",
+          "illustrated": true,
+          "locator": "Figure 5D and caption, p. 582; p. 583"
+        },
+        {
+          "taxon_as_reported": "Dibolisporites cf. eifeliensis (Lanninger) McGregor",
+          "genus": "Dibolisporites",
+          "qualifier": "cf.",
+          "abundance": "Dominant",
+          "illustrated": true,
+          "locator": "Figure 5E and caption, p. 582; p. 583"
+        },
+        {
+          "taxon_as_reported": "Dibolisporites sp.",
+          "genus": "Dibolisporites",
+          "qualifier": "sp.",
+          "abundance": "Less frequent than other Emphanisporites representatives",
+          "illustrated": true,
+          "locator": "Figure 5F and caption, p. 582; p. 583"
+        },
+        {
+          "taxon_as_reported": "Emphanisporites annulatus McGregor",
+          "genus": "Emphanisporites",
+          "qualifier": "",
+          "abundance": "Dominant",
+          "illustrated": true,
+          "locator": "Figure 5G and caption, p. 582; p. 583"
+        },
+        {
+          "taxon_as_reported": "Emphanisporites schultzii McGregor",
+          "genus": "Emphanisporites",
+          "qualifier": "",
+          "abundance": "Numerous; collective statement for other Emphanisporites representatives",
+          "illustrated": true,
+          "locator": "Figure 5H and caption, p. 582; abundance p. 583"
+        },
+        {
+          "taxon_as_reported": "Emphanisporites cf. erraticus (Eisenack) McGregor",
+          "genus": "Emphanisporites",
+          "qualifier": "cf.",
+          "abundance": "Numerous; collective statement for other Emphanisporites representatives",
+          "illustrated": true,
+          "locator": "Figure 5I and caption, p. 582; abundance p. 583"
+        },
+        {
+          "taxon_as_reported": "Emphanisporites rotatus (McGregor) McGregor",
+          "genus": "Emphanisporites",
+          "qualifier": "",
+          "abundance": "Numerous; collective statement for other Emphanisporites representatives",
+          "illustrated": true,
+          "locator": "Figure 5J–K and caption, p. 582; abundance p. 583"
+        },
+        {
+          "taxon_as_reported": "Coronaspora mariae Rodriguez",
+          "genus": "Coronaspora",
+          "qualifier": "",
+          "abundance": "Dominant",
+          "illustrated": true,
+          "locator": "Figure 5L and caption, p. 582; p. 583"
+        }
+      ]
+    }
+  ]
+}

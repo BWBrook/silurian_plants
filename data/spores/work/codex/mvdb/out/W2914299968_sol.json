@@ -1,0 +1,46 @@
+{
+  "doc": {
+    "doi": "10.2478/if-2018-0020",
+    "citation": "Libertín, M., Kvaček, J., Bek, J., Štorch, P. (2018). Plant diversity of the mid Silurian (lower Wenlock, Sheinwoodian) terrestrial vegetation preserved in marine sediments from the Barrandian area, the Czech Republic. Fossil Imprint, 74(3–4): 327–333.",
+    "language": "English",
+    "reports_window_spores": true,
+    "comment": "One dispersed-spore assemblage is reported, comprising at least five unnamed trilete spore types; their description is deferred to a separate paper. No spore taxa are named or illustrated. The study includes Cooksonia barrandei type material previously described by Libertín et al. (2018), Sporophytes of polysporangiate land plants from the early Silurian period may have been photosynthetically autonomous; reuse of dispersed-spore preparations is not stated. DOI printed in the paper; Crossref verification was blocked by network access."
+  },
+  "items": [
+    {
+      "assemblage_id": "Libertin2018_Lodenice",
+      "scope": "section-interval",
+      "locality": "Loděnice, Špičatý vrch – Barrandovy Jámy",
+      "country": "Czech Republic",
+      "formation": "Motol Formation",
+      "section_or_core": "Road-cut section Špičatý vrch – Barrandovy Jámy near Loděnice",
+      "depth_or_level": "Monograptus belophorus Biozone; sediment samples bearing Cooksonia fossils",
+      "latitude": "",
+      "longitude": "",
+      "palaeogeo_unit_reported": "peri-Gondwana terranes and microcontinents, including those of the present Bohemian Massif",
+      "palaeo_unit_proposed": "peri-Gondwana-Europe",
+      "age_as_reported": "middle Sheinwoodian Stage of the Wenlock Series",
+      "age_basis": "graptolite",
+      "age_basis_detail": "Associated graptolite fauna, including the zonal index Monograptus belophorus, supports assignment to the belophorus Biozone.",
+      "age_circular": false,
+      "stage_min_proposed": "Sheinwoodian",
+      "stage_max_proposed": "Sheinwoodian",
+      "setting_as_reported": "moderately shallow, quiet-water environment surrounding a volcanic island",
+      "setting_class": "marine-shelf",
+      "n_samples": "",
+      "reworking_status": "none",
+      "notes": "Dispersed spores were prepared from the same sediment samples bearing Cooksonia fossils. At least five other trilete spore types are reported collectively; individual samples and morphotypes are not distinguished. Layer 4 is identified as the cooksonioid-bearing layer, but no individual spore sample is explicitly assigned to it. Associated benthic fauna inhabited a photic zone below storm-wave base. No reworking is reported.",
+      "locator": "Material and methods, pp. 328–329; Text-fig. 1 caption, p. 329; discussion and Conclusions, p. 332.",
+      "occurrences": [
+        {
+          "taxon_as_reported": "trilete spore types",
+          "genus": "",
+          "qualifier": "indet.",
+          "abundance": "present",
+          "illustrated": false,
+          "locator": "Discussion, p. 332: at least five other trilete spore types; Conclusions, p. 332: five taxa of dispersed spores."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,292 @@
+{
+  "doc": {
+    "doi": "10.1017/S1755691015000043",
+    "citation": "Mehlqvist, K., Wigforss-Lange, J. & Vajda, V. 2015. A palynological study from Sweden reveals stable terrestrial environments during Late Silurian extreme marine conditions. Earth and Environmental Science Transactions of the Royal Society of Edinburgh 105, 149–158.",
+    "language": "English",
+    "reports_window_spores": true,
+    "comment": "The study reports 20 samples from a composite Klinta outcrop section. Table I gives percentages for combined morphotaxa as well as individual taxa. Figure 7 illustrates selected taxa but does not identify the samples containing the illustrated specimens; illustrated flags below identify illustrated taxa, not confirmed specimens from each sample. Independent conodont and chitinozoan ages support the spore-based Ludlow age. The paper compares its results with earlier drillcore studies by Mehlqvist et al. (2012, 2014); those comparisons are not new sample records."
+  },
+  "items": [
+    {
+      "assemblage_id": "Klinta-93-3",
+      "scope": "sample",
+      "locality": "Klinta, Skåne, eastern Lake Ringsjön",
+      "country": "Sweden",
+      "formation": "Klinta Formation",
+      "section_or_core": "Klinta outcrop, composite section",
+      "depth_or_level": "14.08 m; sample 93-3",
+      "latitude": "55.8640° N",
+      "longitude": "13.5110° E",
+      "palaeogeo_unit_reported": "Baltica",
+      "palaeo_unit_proposed": "Baltica",
+      "age_as_reported": "Ludlow (Ludfordian)",
+      "age_basis": "mixed",
+      "age_basis_detail": "Conodont zones Polygnathoides siluricus and Icriodontid; Angochitina echinata chitinozoan zone; spore assemblage zone supports a Ludlow age.",
+      "age_circular": false,
+      "stage_min_proposed": "Ludfordian",
+      "stage_max_proposed": "Ludfordian",
+      "setting_as_reported": "near-shore marine environment",
+      "setting_class": "marginal-marine",
+      "n_samples": "1",
+      "reworking_status": "none",
+      "notes": "Uppermost sample of a 20-sample composite section. The formation and setting apply to the studied succession; the paper proposes a paralic setting for its basal and topmost parts.",
+      "locator": "Table I; sections 2.1, 3.1 and 4",
+      "occurrences": [
+        {"taxon_as_reported":"Cymbohilates sp. A","genus":"Cymbohilates","qualifier":"sp.","abundance":"0.7%","illustrated":false,"locator":"Table I"},
+        {"taxon_as_reported":"Dyadospora murusdensa-murusattenuata","genus":"Dyadospora","qualifier":"","abundance":"5.3%","illustrated":false,"locator":"Table I"},
+        {"taxon_as_reported":"Imperfectotriletes sp.","genus":"Imperfectotriletes","qualifier":"sp.","abundance":"4.6%","illustrated":false,"locator":"Table I"},
+        {"taxon_as_reported":"Laevolancis divellomedia-plicata","genus":"Laevolancis","qualifier":"","abundance":"81.6%","illustrated":false,"locator":"Table I"},
+        {"taxon_as_reported":"Ambitisporites avitus-dilutus","genus":"Ambitisporites","qualifier":"","abundance":"2.0%","illustrated":false,"locator":"Table I"},
+        {"taxon_as_reported":"Ambitisporites parvus","genus":"Ambitisporites","qualifier":"","abundance":"1.3%","illustrated":false,"locator":"Table I"},
+        {"taxon_as_reported":"Retusotriletes cf. warringtonii","genus":"Retusotriletes","qualifier":"cf.","abundance":"2.6%","illustrated":false,"locator":"Table I"},
+        {"taxon_as_reported":"Scylaspora klintaensis","genus":"Scylaspora","qualifier":"","abundance":"2.0%","illustrated":false,"locator":"Table I; section 3.1"}
+      ]
+    },
+    {
+      "assemblage_id":"Klinta-93-16","scope":"sample","locality":"Klinta, Skåne, eastern Lake Ringsjön","country":"Sweden","formation":"Klinta Formation","section_or_core":"Klinta outcrop, composite section","depth_or_level":"13.83 m; sample 93-16","latitude":"55.8640° N","longitude":"13.5110° E","palaeogeo_unit_reported":"Baltica","palaeo_unit_proposed":"Baltica","age_as_reported":"Ludlow (Ludfordian)","age_basis":"mixed","age_basis_detail":"Conodont and chitinozoan zones; spore assemblage supports a Ludlow age.","age_circular":false,"stage_min_proposed":"Ludfordian","stage_max_proposed":"Ludfordian","setting_as_reported":"near-shore marine environment","setting_class":"marginal-marine","n_samples":"1","reworking_status":"none","notes":"Sample from a composite section.","locator":"Table I; sections 2.1 and 4",
+      "occurrences":[
+        {"taxon_as_reported":"Dyadospora murusdensa-murusattenuata","genus":"Dyadospora","qualifier":"","abundance":"6.3%","illustrated":false,"locator":"Table I"},
+        {"taxon_as_reported":"Laevolancis divellomedia-plicata","genus":"Laevolancis","qualifier":"","abundance":"89.9%","illustrated":false,"locator":"Table I"},
+        {"taxon_as_reported":"Ambitisporites avitus-dilutus","genus":"Ambitisporites","qualifier":"","abundance":"3.8%","illustrated":false,"locator":"Table I"}
+      ]
+    },
+    {
+      "assemblage_id":"Klinta-93-2","scope":"sample","locality":"Klinta, Skåne, eastern Lake Ringsjön","country":"Sweden","formation":"Klinta Formation","section_or_core":"Klinta outcrop, composite section","depth_or_level":"13.36 m; sample 93-2","latitude":"55.8640° N","longitude":"13.5110° E","palaeogeo_unit_reported":"Baltica","palaeo_unit_proposed":"Baltica","age_as_reported":"Ludlow (Ludfordian)","age_basis":"mixed","age_basis_detail":"Conodont and chitinozoan zones; spore assemblage supports a Ludlow age.","age_circular":false,"stage_min_proposed":"Ludfordian","stage_max_proposed":"Ludfordian","setting_as_reported":"near-shore marine environment","setting_class":"marginal-marine","n_samples":"1","reworking_status":"none","notes":"Sample from a composite section.","locator":"Table I; sections 2.1 and 4",
+      "occurrences":[
+        {"taxon_as_reported":"Cymbohilates sp. A","genus":"Cymbohilates","qualifier":"sp.","abundance":"0.7%","illustrated":false,"locator":"Table I"},
+        {"taxon_as_reported":"Cymbohilates sp. B","genus":"Cymbohilates","qualifier":"sp.","abundance":"0,7%","illustrated":false,"locator":"Table I"},
+        {"taxon_as_reported":"Dyadospora murusdensa-murusattenuata","genus":"Dyadospora","qualifier":"","abundance":"2.6%","illustrated":false,"locator":"Table I"},
+        {"taxon_as_reported":"Imperfectotriletes sp.","genus":"Imperfectotriletes","qualifier":"sp.","abundance":"4.6%","illustrated":false,"locator":"Table I"},
+        {"taxon_as_reported":"Laevolancis divellomedia-plicata","genus":"Laevolancis","qualifier":"","abundance":"82.2%","illustrated":false,"locator":"Table I"},
+        {"taxon_as_reported":"Tetrahedraletes medinensis","genus":"Tetrahedraletes","qualifier":"","abundance":"0,7%","illustrated":false,"locator":"Table I"},
+        {"taxon_as_reported":"Ambitisporites avitus-dilutus","genus":"Ambitisporites","qualifier":"","abundance":"7.2%","illustrated":false,"locator":"Table I"},
+        {"taxon_as_reported":"Ambitisporites parvus","genus":"Ambitisporites","qualifier":"","abundance":"0.7%","illustrated":false,"locator":"Table I"},
+        {"taxon_as_reported":"Chelinospora sp.","genus":"Chelinospora","qualifier":"sp.","abundance":"0.7%","illustrated":false,"locator":"Table I"}
+      ]
+    },
+    {
+      "assemblage_id":"Klinta-93-96","scope":"sample","locality":"Klinta, Skåne, eastern Lake Ringsjön","country":"Sweden","formation":"Klinta Formation","section_or_core":"Klinta outcrop, composite section","depth_or_level":"12.56 m; sample 93-96","latitude":"55.8640° N","longitude":"13.5110° E","palaeogeo_unit_reported":"Baltica","palaeo_unit_proposed":"Baltica","age_as_reported":"Ludlow (Ludfordian)","age_basis":"mixed","age_basis_detail":"Conodont and chitinozoan zones; spore assemblage supports a Ludlow age.","age_circular":false,"stage_min_proposed":"Ludfordian","stage_max_proposed":"Ludfordian","setting_as_reported":"near-shore marine environment","setting_class":"marginal-marine","n_samples":"1","reworking_status":"none","notes":"Sample from a composite section.","locator":"Table I; sections 2.1 and 4",
+      "occurrences":[
+        {"taxon_as_reported":"Cymbohilates sp. B","genus":"Cymbohilates","qualifier":"sp.","abundance":"1,3%","illustrated":false,"locator":"Table I"},
+        {"taxon_as_reported":"Dyadospora murusdensa-murusattenuata","genus":"Dyadospora","qualifier":"","abundance":"8.6%","illustrated":false,"locator":"Table I"},
+        {"taxon_as_reported":"Hispanaediscus lamontii","genus":"Hispanaediscus","qualifier":"","abundance":"0.7%","illustrated":true,"locator":"Table I; Figure 7"},
+        {"taxon_as_reported":"Laevolancis divellomedia-plicata","genus":"Laevolancis","qualifier":"","abundance":"76.3%","illustrated":false,"locator":"Table I"},
+        {"taxon_as_reported":"Tetrahedraletes grayii","genus":"Tetrahedraletes","qualifier":"","abundance":"0.7%","illustrated":false,"locator":"Table I"},
+        {"taxon_as_reported":"Ambitisporites avitus-dilutus","genus":"Ambitisporites","qualifier":"","abundance":"9.9%","illustrated":false,"locator":"Table I"},
+        {"taxon_as_reported":"Apiculiretusispora sp. B","genus":"Apiculiretusispora","qualifier":"sp.","abundance":"0.7%","illustrated":false,"locator":"Table I"},
+        {"taxon_as_reported":"Retusotriletes cf. warringtonii","genus":"Retusotriletes","qualifier":"cf.","abundance":"0.7%","illustrated":false,"locator":"Table I"},
+        {"taxon_as_reported":"Scylaspora scripta","genus":"Scylaspora","qualifier":"","abundance":"1.3%","illustrated":false,"locator":"Table I"}
+      ]
+    },
+    {
+      "assemblage_id":"Klinta-93-8","scope":"sample","locality":"Klinta, Skåne, eastern Lake Ringsjön","country":"Sweden","formation":"Klinta Formation","section_or_core":"Klinta outcrop, composite section","depth_or_level":"11.18 m; sample 93-8","latitude":"55.8640° N","longitude":"13.5110° E","palaeogeo_unit_reported":"Baltica","palaeo_unit_proposed":"Baltica","age_as_reported":"Ludlow (Ludfordian)","age_basis":"mixed","age_basis_detail":"Conodont and chitinozoan zones; spore assemblage supports a Ludlow age.","age_circular":false,"stage_min_proposed":"Ludfordian","stage_max_proposed":"Ludfordian","setting_as_reported":"near-shore marine environment","setting_class":"marginal-marine","n_samples":"1","reworking_status":"none","notes":"Sample from a composite section.","locator":"Table I; sections 2.1 and 4",
+      "occurrences":[
+        {"taxon_as_reported":"Cymbohilates sp. A","genus":"Cymbohilates","qualifier":"sp.","abundance":"1.3%","illustrated":false,"locator":"Table I"},
+        {"taxon_as_reported":"Dyadospora murusdensa-murusattenuata","genus":"Dyadospora","qualifier":"","abundance":"9.3%","illustrated":false,"locator":"Table I"},
+        {"taxon_as_reported":"Hispanaediscus major","genus":"Hispanaediscus","qualifier":"","abundance":"0.7%","illustrated":true,"locator":"Table I; Figure 7"},
+        {"taxon_as_reported":"Hispanaediscus verrucatus","genus":"Hispanaediscus","qualifier":"","abundance":"2.0%","illustrated":true,"locator":"Table I; Figure 7"},
+        {"taxon_as_reported":"Laevolancis divellomedia-plicata","genus":"Laevolancis","qualifier":"","abundance":"62.3%","illustrated":false,"locator":"Table I"},
+        {"taxon_as_reported":"Pachytetras rugosa","genus":"Pachytetras","qualifier":"","abundance":"8.6%","illustrated":false,"locator":"Table I"},
+        {"taxon_as_reported":"Tetrahedraletes grayii","genus":"Tetrahedraletes","qualifier":"","abundance":"0.7%","illustrated":false,"locator":"Table I"},
+        {"taxon_as_reported":"Tetrahedraletes medinensis","genus":"Tetrahedraletes","qualifier":"","abundance":"3.3%","illustrated":false,"locator":"Table I"},
+        {"taxon_as_reported":"Ambitisporites avitus-dilutus","genus":"Ambitisporites","qualifier":"","abundance":"9.3%","illustrated":false,"locator":"Table I"},
+        {"taxon_as_reported":"Apiculiretusispora sp. B","genus":"Apiculiretusispora","qualifier":"sp.","abundance":"0.7%","illustrated":false,"locator":"Table I"},
+        {"taxon_as_reported":"Retusotriletes cf. warringtonii","genus":"Retusotriletes","qualifier":"cf.","abundance":"2.0%","illustrated":false,"locator":"Table I"}
+      ]
+    },
+    {
+      "assemblage_id":"Klinta-93-91","scope":"sample","locality":"Klinta, Skåne, eastern Lake Ringsjön","country":"Sweden","formation":"Klinta Formation","section_or_core":"Klinta outcrop, composite section","depth_or_level":"11.06 m; sample 93-91","latitude":"55.8640° N","longitude":"13.5110° E","palaeogeo_unit_reported":"Baltica","palaeo_unit_proposed":"Baltica","age_as_reported":"Ludlow (Ludfordian)","age_basis":"mixed","age_basis_detail":"Conodont and chitinozoan zones; spore assemblage supports a Ludlow age.","age_circular":false,"stage_min_proposed":"Ludfordian","stage_max_proposed":"Ludfordian","setting_as_reported":"near-shore marine environment","setting_class":"marginal-marine","n_samples":"1","reworking_status":"none","notes":"Sample from a composite section; acritarchs reach a high relative abundance near 11 m.","locator":"Table I; sections 2.1, 3.2 and 4",
+      "occurrences":[
+        {"taxon_as_reported":"Artemopyra radiata","genus":"Artemopyra","qualifier":"","abundance":"0,7%","illustrated":true,"locator":"Table I; Figure 7"},
+        {"taxon_as_reported":"Dyadospora murusdensa-murusattenuata","genus":"Dyadospora","qualifier":"","abundance":"11.2%","illustrated":false,"locator":"Table I"},
+        {"taxon_as_reported":"Hispanaediscus verrucatus","genus":"Hispanaediscus","qualifier":"","abundance":"0.7%","illustrated":true,"locator":"Table I; Figure 7"},
+        {"taxon_as_reported":"Imperfectotriletes sp.","genus":"Imperfectotriletes","qualifier":"sp.","abundance":"1.3%","illustrated":false,"locator":"Table I"},
+        {"taxon_as_reported":"Laevolancis divellomedia-plicata","genus":"Laevolancis","qualifier":"","abundance":"75.7%","illustrated":false,"locator":"Table I"},
+        {"taxon_as_reported":"Pachytetras rugosa","genus":"Pachytetras","qualifier":"","abundance":"0.7%","illustrated":false,"locator":"Table I"},
+        {"taxon_as_reported":"Tetrahedraletes grayii","genus":"Tetrahedraletes","qualifier":"","abundance":"0.7%","illustrated":false,"locator":"Table I"},
+        {"taxon_as_reported":"Ambitisporites avitus-dilutus","genus":"Ambitisporites","qualifier":"","abundance":"9.2%","illustrated":false,"locator":"Table I"}
+      ]
+    },
+    {
+      "assemblage_id":"Klinta-93-80","scope":"sample","locality":"Klinta, Skåne, eastern Lake Ringsjön","country":"Sweden","formation":"Klinta Formation","section_or_core":"Klinta outcrop, composite section","depth_or_level":"9.73 m; sample 93-80","latitude":"55.8640° N","longitude":"13.5110° E","palaeogeo_unit_reported":"Baltica","palaeo_unit_proposed":"Baltica","age_as_reported":"Ludlow (Ludfordian)","age_basis":"mixed","age_basis_detail":"Conodont and chitinozoan zones; spore assemblage supports a Ludlow age.","age_circular":false,"stage_min_proposed":"Ludfordian","stage_max_proposed":"Ludfordian","setting_as_reported":"near-shore marine environment","setting_class":"marginal-marine","n_samples":"1","reworking_status":"none","notes":"Sample from a composite section.","locator":"Table I; sections 2.1 and 4",
+      "occurrences":[
+        {"taxon_as_reported":"Cymbohilates sp. A","genus":"Cymbohilates","qualifier":"sp.","abundance":"4.0%","illustrated":false,"locator":"Table I"},
+        {"taxon_as_reported":"Dyadospora murusdensa-murusattenuata","genus":"Dyadospora","qualifier":"","abundance":"3.2%","illustrated":false,"locator":"Table I"},
+        {"taxon_as_reported":"Hispanaediscus major","genus":"Hispanaediscus","qualifier":"","abundance":"2.4%","illustrated":true,"locator":"Table I; Figure 7"},
+        {"taxon_as_reported":"Hispanaediscus verrucatus","genus":"Hispanaediscus","qualifier":"","abundance":"30.6%","illustrated":true,"locator":"Table I; Figure 7"},
+        {"taxon_as_reported":"Imperfectotriletes sp.","genus":"Imperfectotriletes","qualifier":"sp.","abundance":"4.0%","illustrated":false,"locator":"Table I"},
+        {"taxon_as_reported":"Laevolancis divellomedia-plicata","genus":"Laevolancis","qualifier":"","abundance":"28.2%","illustrated":false,"locator":"Table I"},
+        {"taxon_as_reported":"Pachytetras rugosa","genus":"Pachytetras","qualifier":"","abundance":"3.2%","illustrated":false,"locator":"Table I"},
+        {"taxon_as_reported":"Tetrahedraletes grayii","genus":"Tetrahedraletes","qualifier":"","abundance":"7.3%","illustrated":false,"locator":"Table I"},
+        {"taxon_as_reported":"Tetrahedraletes medinensis","genus":"Tetrahedraletes","qualifier":"","abundance":"0.8%","illustrated":false,"locator":"Table I"},
+        {"taxon_as_reported":"Ambitisporites avitus-dilutus","genus":"Ambitisporites","qualifier":"","abundance":"8.9%","illustrated":false,"locator":"Table I"},
+        {"taxon_as_reported":"Ambitisporites parvus","genus":"Ambitisporites","qualifier":"","abundance":"0.8%","illustrated":false,"locator":"Table I"},
+        {"taxon_as_reported":"Retusotriletes goensis","genus":"Retusotriletes","qualifier":"","abundance":"0.8%","illustrated":false,"locator":"Table I"},
+        {"taxon_as_reported":"Retusotriletes cf. warringtonii","genus":"Retusotriletes","qualifier":"cf.","abundance":"0.8%","illustrated":false,"locator":"Table I"},
+        {"taxon_as_reported":"Synorisporites cf. libycus","genus":"Synorisporites","qualifier":"cf.","abundance":"4.8%","illustrated":true,"locator":"Table I; Figure 7"}
+      ]
+    },
+    {
+      "assemblage_id":"Klinta-93-76","scope":"sample","locality":"Klinta, Skåne, eastern Lake Ringsjön","country":"Sweden","formation":"Klinta Formation","section_or_core":"Klinta outcrop, composite section","depth_or_level":"9.07 m; sample 93-76","latitude":"55.8640° N","longitude":"13.5110° E","palaeogeo_unit_reported":"Baltica","palaeo_unit_proposed":"Baltica","age_as_reported":"Ludlow (Ludfordian)","age_basis":"mixed","age_basis_detail":"Conodont and chitinozoan zones; spore assemblage supports a Ludlow age.","age_circular":false,"stage_min_proposed":"Ludfordian","stage_max_proposed":"Ludfordian","setting_as_reported":"near-shore marine environment","setting_class":"marginal-marine","n_samples":"1","reworking_status":"none","notes":"Sample from a composite section.","locator":"Table I; sections 2.1 and 4",
+      "occurrences":[
+        {"taxon_as_reported":"Dyadospora murusdensa-murusattenuata","genus":"Dyadospora","qualifier":"","abundance":"1.3%","illustrated":false,"locator":"Table I"},
+        {"taxon_as_reported":"Laevolancis divellomedia-plicata","genus":"Laevolancis","qualifier":"","abundance":"58.9%","illustrated":false,"locator":"Table I"},
+        {"taxon_as_reported":"Tetrahedraletes grayii","genus":"Tetrahedraletes","qualifier":"","abundance":"1.3%","illustrated":false,"locator":"Table I"},
+        {"taxon_as_reported":"Tetrahedraletes medinensis","genus":"Tetrahedraletes","qualifier":"","abundance":"19.9%","illustrated":false,"locator":"Table I"},
+        {"taxon_as_reported":"Ambitisporites avitus-dilutus","genus":"Ambitisporites","qualifier":"","abundance":"8.6%","illustrated":false,"locator":"Table I"},
+        {"taxon_as_reported":"Apiculiretusispora burgsvikensis","genus":"Apiculiretusispora","qualifier":"","abundance":"4.6%","illustrated":false,"locator":"Table I"},
+        {"taxon_as_reported":"Synorisporites cf. libycus","genus":"Synorisporites","qualifier":"cf.","abundance":"5.3%","illustrated":true,"locator":"Table I; Figure 7"}
+      ]
+    },
+    {
+      "assemblage_id":"Klinta-93-23","scope":"sample","locality":"Klinta, Skåne, eastern Lake Ringsjön","country":"Sweden","formation":"Klinta Formation","section_or_core":"Klinta outcrop, composite section","depth_or_level":"8.87 m; sample 93-23","latitude":"55.8640° N","longitude":"13.5110° E","palaeogeo_unit_reported":"Baltica","palaeo_unit_proposed":"Baltica","age_as_reported":"Ludlow (Ludfordian)","age_basis":"mixed","age_basis_detail":"Conodont and chitinozoan zones; spore assemblage supports a Ludlow age.","age_circular":false,"stage_min_proposed":"Ludfordian","stage_max_proposed":"Ludfordian","setting_as_reported":"near-shore marine environment","setting_class":"marginal-marine","n_samples":"1","reworking_status":"none","notes":"Sample from a composite section.","locator":"Table I; sections 2.1 and 4",
+      "occurrences":[
+        {"taxon_as_reported":"Dyadospora murusdensa-murusattenuata","genus":"Dyadospora","qualifier":"","abundance":"9.2%","illustrated":false,"locator":"Table I"},
+        {"taxon_as_reported":"Hispanaediscus lamontii","genus":"Hispanaediscus","qualifier":"","abundance":"0.7%","illustrated":true,"locator":"Table I; Figure 7"},
+        {"taxon_as_reported":"Imperfectotriletes sp.","genus":"Imperfectotriletes","qualifier":"sp.","abundance":"1.3%","illustrated":false,"locator":"Table I"},
+        {"taxon_as_reported":"Laevolancis divellomedia-plicata","genus":"Laevolancis","qualifier":"","abundance":"82.4%","illustrated":false,"locator":"Table I"},
+        {"taxon_as_reported":"Tetrahedraletes grayii","genus":"Tetrahedraletes","qualifier":"","abundance":"2.6%","illustrated":false,"locator":"Table I"},
+        {"taxon_as_reported":"Ambitisporites avitus-dilutus","genus":"Ambitisporites","qualifier":"","abundance":"2.0%","illustrated":false,"locator":"Table I"},
+        {"taxon_as_reported":"Synorisporites cf. libycus","genus":"Synorisporites","qualifier":"cf.","abundance":"2.0%","illustrated":true,"locator":"Table I; Figure 7"}
+      ]
+    },
+    {
+      "assemblage_id":"Klinta-93-22","scope":"sample","locality":"Klinta, Skåne, eastern Lake Ringsjön","country":"Sweden","formation":"Klinta Formation","section_or_core":"Klinta outcrop, composite section","depth_or_level":"8.30 m; sample 93-22","latitude":"55.8640° N","longitude":"13.5110° E","palaeogeo_unit_reported":"Baltica","palaeo_unit_proposed":"Baltica","age_as_reported":"Ludlow (Ludfordian)","age_basis":"mixed","age_basis_detail":"Conodont and chitinozoan zones; spore assemblage supports a Ludlow age.","age_circular":false,"stage_min_proposed":"Ludfordian","stage_max_proposed":"Ludfordian","setting_as_reported":"near-shore marine environment","setting_class":"marginal-marine","n_samples":"1","reworking_status":"none","notes":"Sample from a composite section.","locator":"Table I; sections 2.1 and 4",
+      "occurrences":[
+        {"taxon_as_reported":"Dyadospora murusdensa-murusattenuata","genus":"Dyadospora","qualifier":"","abundance":"5.2%","illustrated":false,"locator":"Table I"},
+        {"taxon_as_reported":"Hispanaediscus verrucatus","genus":"Hispanaediscus","qualifier":"","abundance":"3.9%","illustrated":true,"locator":"Table I; Figure 7"},
+        {"taxon_as_reported":"Laevolancis divellomedia-plicata","genus":"Laevolancis","qualifier":"","abundance":"87.6%","illustrated":false,"locator":"Table I"},
+        {"taxon_as_reported":"Tetrahedraletes grayii","genus":"Tetrahedraletes","qualifier":"","abundance":"0.7%","illustrated":false,"locator":"Table I"},
+        {"taxon_as_reported":"Ambitisporites avitus-dilutus","genus":"Ambitisporites","qualifier":"","abundance":"2.6%","illustrated":false,"locator":"Table I"}
+      ]
+    },
+    {
+      "assemblage_id":"Klinta-93-35","scope":"sample","locality":"Klinta, Skåne, eastern Lake Ringsjön","country":"Sweden","formation":"Klinta Formation","section_or_core":"Klinta outcrop, composite section","depth_or_level":"6.54 m; sample 93-35","latitude":"55.8640° N","longitude":"13.5110° E","palaeogeo_unit_reported":"Baltica","palaeo_unit_proposed":"Baltica","age_as_reported":"Ludlow (Ludfordian)","age_basis":"mixed","age_basis_detail":"Conodont and chitinozoan zones; spore assemblage supports a Ludlow age.","age_circular":false,"stage_min_proposed":"Ludfordian","stage_max_proposed":"Ludfordian","setting_as_reported":"near-shore marine environment","setting_class":"marginal-marine","n_samples":"1","reworking_status":"none","notes":"Sample from a composite section.","locator":"Table I; sections 2.1 and 4",
+      "occurrences":[
+        {"taxon_as_reported":"Cymbohilates sp. A","genus":"Cymbohilates","qualifier":"sp.","abundance":"0.7%","illustrated":false,"locator":"Table I"},
+        {"taxon_as_reported":"Dyadospora murusdensa-murusattenuata","genus":"Dyadospora","qualifier":"","abundance":"14.5%","illustrated":false,"locator":"Table I"},
+        {"taxon_as_reported":"Hispanaediscus lamontii","genus":"Hispanaediscus","qualifier":"","abundance":"1.3%","illustrated":true,"locator":"Table I; Figure 7"},
+        {"taxon_as_reported":"Laevolancis divellomedia-plicata","genus":"Laevolancis","qualifier":"","abundance":"76.3%","illustrated":false,"locator":"Table I"},
+        {"taxon_as_reported":"Tetrahedraletes medinensis","genus":"Tetrahedraletes","qualifier":"","abundance":"0.7%","illustrated":false,"locator":"Table I"},
+        {"taxon_as_reported":"Ambitisporites avitus-dilutus","genus":"Ambitisporites","qualifier":"","abundance":"5.3%","illustrated":false,"locator":"Table I"},
+        {"taxon_as_reported":"Ambitisporites parvus","genus":"Ambitisporites","qualifier":"","abundance":"0.7%","illustrated":false,"locator":"Table I"},
+        {"taxon_as_reported":"Apiculiretusispora burgsvikensis","genus":"Apiculiretusispora","qualifier":"","abundance":"0.7%","illustrated":false,"locator":"Table I"}
+      ]
+    },
+    {
+      "assemblage_id":"Klinta-93-33","scope":"sample","locality":"Klinta, Skåne, eastern Lake Ringsjön","country":"Sweden","formation":"Klinta Formation","section_or_core":"Klinta outcrop, composite section","depth_or_level":"6.25 m; sample 93-33","latitude":"55.8640° N","longitude":"13.5110° E","palaeogeo_unit_reported":"Baltica","palaeo_unit_proposed":"Baltica","age_as_reported":"Ludlow (Ludfordian)","age_basis":"mixed","age_basis_detail":"Conodont and chitinozoan zones; spore assemblage supports a Ludlow age.","age_circular":false,"stage_min_proposed":"Ludfordian","stage_max_proposed":"Ludfordian","setting_as_reported":"near-shore marine environment","setting_class":"marginal-marine","n_samples":"1","reworking_status":"none","notes":"Sample from a composite section.","locator":"Table I; sections 2.1 and 4",
+      "occurrences":[
+        {"taxon_as_reported":"Artemopyra radiata","genus":"Artemopyra","qualifier":"","abundance":"0,7%","illustrated":true,"locator":"Table I; Figure 7"},
+        {"taxon_as_reported":"Cymbohilates sp. B","genus":"Cymbohilates","qualifier":"sp.","abundance":"0,7%","illustrated":false,"locator":"Table I"},
+        {"taxon_as_reported":"Dyadospora murusdensa-murusattenuata","genus":"Dyadospora","qualifier":"","abundance":"11.9%","illustrated":false,"locator":"Table I"},
+        {"taxon_as_reported":"Hispanaediscus lamontii","genus":"Hispanaediscus","qualifier":"","abundance":"7.9%","illustrated":true,"locator":"Table I; Figure 7"},
+        {"taxon_as_reported":"Laevolancis divellomedia-plicata","genus":"Laevolancis","qualifier":"","abundance":"64.2%","illustrated":false,"locator":"Table I"},
+        {"taxon_as_reported":"Tetrahedraletes grayii","genus":"Tetrahedraletes","qualifier":"","abundance":"2.6%","illustrated":false,"locator":"Table I"},
+        {"taxon_as_reported":"Ambitisporites avitus-dilutus","genus":"Ambitisporites","qualifier":"","abundance":"7.9%","illustrated":false,"locator":"Table I"},
+        {"taxon_as_reported":"Ambitisporites parvus","genus":"Ambitisporites","qualifier":"","abundance":"0.7%","illustrated":false,"locator":"Table I"},
+        {"taxon_as_reported":"Synorisporites cf. libycus","genus":"Synorisporites","qualifier":"cf.","abundance":"2.6%","illustrated":true,"locator":"Table I; Figure 7"},
+        {"taxon_as_reported":"Scylaspora scripta","genus":"Scylaspora","qualifier":"","abundance":"0.7%","illustrated":false,"locator":"Table I"}
+      ]
+    },
+    {
+      "assemblage_id":"Klinta-93-49","scope":"sample","locality":"Klinta, Skåne, eastern Lake Ringsjön","country":"Sweden","formation":"Klinta Formation","section_or_core":"Klinta outcrop, composite section","depth_or_level":"4.75 m; sample 93-49","latitude":"55.8640° N","longitude":"13.5110° E","palaeogeo_unit_reported":"Baltica","palaeo_unit_proposed":"Baltica","age_as_reported":"Ludlow (Ludfordian)","age_basis":"mixed","age_basis_detail":"Conodont and chitinozoan zones; spore assemblage supports a Ludlow age.","age_circular":false,"stage_min_proposed":"Ludfordian","stage_max_proposed":"Ludfordian","setting_as_reported":"near-shore marine environment","setting_class":"marginal-marine","n_samples":"1","reworking_status":"none","notes":"Sample from a composite section.","locator":"Table I; sections 2.1 and 4",
+      "occurrences":[
+        {"taxon_as_reported":"Artemopyra brevicosta","genus":"Artemopyra","qualifier":"","abundance":"1.3%","illustrated":true,"locator":"Table I; Figure 7"},
+        {"taxon_as_reported":"Artemopyra sp.","genus":"Artemopyra","qualifier":"sp.","abundance":"1.9%","illustrated":false,"locator":"Table I"},
+        {"taxon_as_reported":"Dyadospora murusdensa-murusattenuata","genus":"Dyadospora","qualifier":"","abundance":"7.0%","illustrated":false,"locator":"Table I"},
+        {"taxon_as_reported":"Hispanaediscus verrucatus","genus":"Hispanaediscus","qualifier":"","abundance":"1.3%","illustrated":true,"locator":"Table I; Figure 7"},
+        {"taxon_as_reported":"Laevolancis divellomedia-plicata","genus":"Laevolancis","qualifier":"","abundance":"85.4%","illustrated":false,"locator":"Table I"},
+        {"taxon_as_reported":"Tetrahedraletes medinensis","genus":"Tetrahedraletes","qualifier":"","abundance":"0.6%","illustrated":false,"locator":"Table I"},
+        {"taxon_as_reported":"Ambitisporites avitus-dilutus","genus":"Ambitisporites","qualifier":"","abundance":"1.3%","illustrated":false,"locator":"Table I"},
+        {"taxon_as_reported":"Ambitisporites parvus","genus":"Ambitisporites","qualifier":"","abundance":"0.6%","illustrated":false,"locator":"Table I"},
+        {"taxon_as_reported":"Scylaspora cf. vetusta","genus":"Scylaspora","qualifier":"cf.","abundance":"0,6%","illustrated":true,"locator":"Table I; Figure 7"}
+      ]
+    },
+    {
+      "assemblage_id":"Klinta-93-48","scope":"sample","locality":"Klinta, Skåne, eastern Lake Ringsjön","country":"Sweden","formation":"Klinta Formation","section_or_core":"Klinta outcrop, composite section","depth_or_level":"4.26 m; sample 93-48","latitude":"55.8640° N","longitude":"13.5110° E","palaeogeo_unit_reported":"Baltica","palaeo_unit_proposed":"Baltica","age_as_reported":"Ludlow (Ludfordian)","age_basis":"mixed","age_basis_detail":"Conodont and chitinozoan zones; spore assemblage supports a Ludlow age.","age_circular":false,"stage_min_proposed":"Ludfordian","stage_max_proposed":"Ludfordian","setting_as_reported":"near-shore marine environment","setting_class":"marginal-marine","n_samples":"1","reworking_status":"none","notes":"Sample from a composite section.","locator":"Table I; sections 2.1 and 4",
+      "occurrences":[
+        {"taxon_as_reported":"Dyadospora murusdensa-murusattenuata","genus":"Dyadospora","qualifier":"","abundance":"15.5%","illustrated":false,"locator":"Table I"},
+        {"taxon_as_reported":"Laevolancis divellomedia-plicata","genus":"Laevolancis","qualifier":"","abundance":"78.0%","illustrated":false,"locator":"Table I"},
+        {"taxon_as_reported":"Tetrahedraletes medinensis","genus":"Tetrahedraletes","qualifier":"","abundance":"2.4%","illustrated":false,"locator":"Table I"},
+        {"taxon_as_reported":"Ambitisporites avitus-dilutus","genus":"Ambitisporites","qualifier":"","abundance":"2.4%","illustrated":false,"locator":"Table I"},
+        {"taxon_as_reported":"Ambitisporites parvus","genus":"Ambitisporites","qualifier":"","abundance":"1.8%","illustrated":false,"locator":"Table I"}
+      ]
+    },
+    {
+      "assemblage_id":"Klinta-93-71","scope":"sample","locality":"Klinta, Skåne, eastern Lake Ringsjön","country":"Sweden","formation":"Klinta Formation","section_or_core":"Klinta outcrop, composite section","depth_or_level":"3.95 m; sample 93-71","latitude":"55.8640° N","longitude":"13.5110° E","palaeogeo_unit_reported":"Baltica","palaeo_unit_proposed":"Baltica","age_as_reported":"Ludlow (Ludfordian)","age_basis":"mixed","age_basis_detail":"Conodont and chitinozoan zones; spore assemblage supports a Ludlow age.","age_circular":false,"stage_min_proposed":"Ludfordian","stage_max_proposed":"Ludfordian","setting_as_reported":"near-shore marine environment","setting_class":"marginal-marine","n_samples":"1","reworking_status":"none","notes":"Sample from a composite section.","locator":"Table I; sections 2.1 and 4",
+      "occurrences":[
+        {"taxon_as_reported":"Cymbohilates sp. A","genus":"Cymbohilates","qualifier":"sp.","abundance":"0.6%","illustrated":false,"locator":"Table I"},
+        {"taxon_as_reported":"Dyadospora murusdensa-murusattenuata","genus":"Dyadospora","qualifier":"","abundance":"14.8%","illustrated":false,"locator":"Table I"},
+        {"taxon_as_reported":"Hispanaediscus lamontii","genus":"Hispanaediscus","qualifier":"","abundance":"1.3%","illustrated":true,"locator":"Table I; Figure 7"},
+        {"taxon_as_reported":"Hispanaediscus major","genus":"Hispanaediscus","qualifier":"","abundance":"0.6%","illustrated":true,"locator":"Table I; Figure 7"},
+        {"taxon_as_reported":"Imperfectotriletes sp.","genus":"Imperfectotriletes","qualifier":"sp.","abundance":"3.2%","illustrated":false,"locator":"Table I"},
+        {"taxon_as_reported":"Laevolancis divellomedia-plicata","genus":"Laevolancis","qualifier":"","abundance":"64.5%","illustrated":false,"locator":"Table I"},
+        {"taxon_as_reported":"Tetrahedraletes grayii","genus":"Tetrahedraletes","qualifier":"","abundance":"4.5%","illustrated":false,"locator":"Table I"},
+        {"taxon_as_reported":"Ambitisporites avitus-dilutus","genus":"Ambitisporites","qualifier":"","abundance":"2.6%","illustrated":false,"locator":"Table I"},
+        {"taxon_as_reported":"Apiculiretusispora sp. B","genus":"Apiculiretusispora","qualifier":"sp.","abundance":"4.5%","illustrated":false,"locator":"Table I"},
+        {"taxon_as_reported":"Synorisporites cf. libycus","genus":"Synorisporites","qualifier":"cf.","abundance":"3.2%","illustrated":true,"locator":"Table I; Figure 7"}
+      ]
+    },
+    {
+      "assemblage_id":"Klinta-93-47","scope":"sample","locality":"Klinta, Skåne, eastern Lake Ringsjön","country":"Sweden","formation":"Klinta Formation","section_or_core":"Klinta outcrop, composite section","depth_or_level":"3.85 m; sample 93-47","latitude":"55.8640° N","longitude":"13.5110° E","palaeogeo_unit_reported":"Baltica","palaeo_unit_proposed":"Baltica","age_as_reported":"Ludlow (Ludfordian)","age_basis":"mixed","age_basis_detail":"Conodont and chitinozoan zones; spore assemblage supports a Ludlow age.","age_circular":false,"stage_min_proposed":"Ludfordian","stage_max_proposed":"Ludfordian","setting_as_reported":"near-shore marine environment","setting_class":"marginal-marine","n_samples":"1","reworking_status":"none","notes":"Sample from a composite section.","locator":"Table I; sections 2.1 and 4",
+      "occurrences":[
+        {"taxon_as_reported":"Artemopyra sp.","genus":"Artemopyra","qualifier":"sp.","abundance":"1%","illustrated":false,"locator":"Table I"},
+        {"taxon_as_reported":"Cymbohilates sp. A","genus":"Cymbohilates","qualifier":"sp.","abundance":"0.6%","illustrated":false,"locator":"Table I"},
+        {"taxon_as_reported":"Dyadospora murusdensa-murusattenuata","genus":"Dyadospora","qualifier":"","abundance":"10.3%","illustrated":false,"locator":"Table I"},
+        {"taxon_as_reported":"Laevolancis divellomedia-plicata","genus":"Laevolancis","qualifier":"","abundance":"79.5%","illustrated":false,"locator":"Table I"},
+        {"taxon_as_reported":"Tetrahedraletes medinensis","genus":"Tetrahedraletes","qualifier":"","abundance":"1.9%","illustrated":false,"locator":"Table I"},
+        {"taxon_as_reported":"Ambitisporites avitus-dilutus","genus":"Ambitisporites","qualifier":"","abundance":"6.4%","illustrated":false,"locator":"Table I"},
+        {"taxon_as_reported":"Synorisporites cf. libycus","genus":"Synorisporites","qualifier":"cf.","abundance":"0.6%","illustrated":true,"locator":"Table I; Figure 7"}
+      ]
+    },
+    {
+      "assemblage_id":"Klinta-93-46","scope":"sample","locality":"Klinta, Skåne, eastern Lake Ringsjön","country":"Sweden","formation":"Klinta Formation","section_or_core":"Klinta outcrop, composite section","depth_or_level":"2.58 m; sample 93-46","latitude":"55.8640° N","longitude":"13.5110° E","palaeogeo_unit_reported":"Baltica","palaeo_unit_proposed":"Baltica","age_as_reported":"Ludlow (Ludfordian)","age_basis":"mixed","age_basis_detail":"Conodont and chitinozoan zones; spore assemblage supports a Ludlow age.","age_circular":false,"stage_min_proposed":"Ludfordian","stage_max_proposed":"Ludfordian","setting_as_reported":"near-shore marine environment","setting_class":"marginal-marine","n_samples":"1","reworking_status":"none","notes":"Sample from a composite section.","locator":"Table I; sections 2.1 and 4",
+      "occurrences":[
+        {"taxon_as_reported":"Dyadospora murusdensa-murusattenuata","genus":"Dyadospora","qualifier":"","abundance":"2.0%","illustrated":false,"locator":"Table I"},
+        {"taxon_as_reported":"Hispanaediscus verrucatus","genus":"Hispanaediscus","qualifier":"","abundance":"1.3%","illustrated":true,"locator":"Table I; Figure 7"},
+        {"taxon_as_reported":"Laevolancis divellomedia-plicata","genus":"Laevolancis","qualifier":"","abundance":"89.9%","illustrated":false,"locator":"Table I"},
+        {"taxon_as_reported":"Ambitisporites avitus-dilutus","genus":"Ambitisporites","qualifier":"","abundance":"4.7%","illustrated":false,"locator":"Table I"},
+        {"taxon_as_reported":"Retusotriletes cf. warringtonii","genus":"Retusotriletes","qualifier":"cf.","abundance":"1.3%","illustrated":false,"locator":"Table I"},
+        {"taxon_as_reported":"Synorisporites cf. libycus","genus":"Synorisporites","qualifier":"cf.","abundance":"0.7%","illustrated":true,"locator":"Table I; Figure 7"}
+      ]
+    },
+    {
+      "assemblage_id":"Klinta-93-45","scope":"sample","locality":"Klinta, Skåne, eastern Lake Ringsjön","country":"Sweden","formation":"Klinta Formation","section_or_core":"Klinta outcrop, composite section","depth_or_level":"1.75 m; sample 93-45","latitude":"55.8640° N","longitude":"13.5110° E","palaeogeo_unit_reported":"Baltica","palaeo_unit_proposed":"Baltica","age_as_reported":"Ludlow (Ludfordian)","age_basis":"mixed","age_basis_detail":"Conodont and chitinozoan zones; spore assemblage supports a Ludlow age.","age_circular":false,"stage_min_proposed":"Ludfordian","stage_max_proposed":"Ludfordian","setting_as_reported":"near-shore marine environment","setting_class":"marginal-marine","n_samples":"1","reworking_status":"none","notes":"Sample from a composite section.","locator":"Table I; sections 2.1 and 4",
+      "occurrences":[
+        {"taxon_as_reported":"Cymbohilates sp. A","genus":"Cymbohilates","qualifier":"sp.","abundance":"1.2%","illustrated":false,"locator":"Table I"},
+        {"taxon_as_reported":"Dyadospora murusdensa-murusattenuata","genus":"Dyadospora","qualifier":"","abundance":"1.2%","illustrated":false,"locator":"Table I"},
+        {"taxon_as_reported":"Laevolancis divellomedia-plicata","genus":"Laevolancis","qualifier":"","abundance":"87.7%","illustrated":false,"locator":"Table I"},
+        {"taxon_as_reported":"Tetrahedraletes grayii","genus":"Tetrahedraletes","qualifier":"","abundance":"3.7%","illustrated":false,"locator":"Table I"},
+        {"taxon_as_reported":"Tetrahedraletes medinensis","genus":"Tetrahedraletes","qualifier":"","abundance":"1.2%","illustrated":false,"locator":"Table I"},
+        {"taxon_as_reported":"Ambitisporites avitus-dilutus","genus":"Ambitisporites","qualifier":"","abundance":"2.5%","illustrated":false,"locator":"Table I"},
+        {"taxon_as_reported":"Ambitisporites parvus","genus":"Ambitisporites","qualifier":"","abundance":"0.6%","illustrated":false,"locator":"Table I"},
+        {"taxon_as_reported":"Retusotriletes cf. warringtonii","genus":"Retusotriletes","qualifier":"cf.","abundance":"1.2%","illustrated":false,"locator":"Table I"},
+        {"taxon_as_reported":"Chelinospora sp.","genus":"Chelinospora","qualifier":"sp.","abundance":"0.6%","illustrated":false,"locator":"Table I"}
+      ]
+    },
+    {
+      "assemblage_id":"Klinta-93-42","scope":"sample","locality":"Klinta, Skåne, eastern Lake Ringsjön","country":"Sweden","formation":"Klinta Formation","section_or_core":"Klinta outcrop, composite section","depth_or_level":"1.08 m; sample 93-42","latitude":"55.8640° N","longitude":"13.5110° E","palaeogeo_unit_reported":"Baltica","palaeo_unit_proposed":"Baltica","age_as_reported":"Ludlow (Ludfordian)","age_basis":"mixed","age_basis_detail":"Conodont and chitinozoan zones; spore assemblage supports a Ludlow age.","age_circular":false,"stage_min_proposed":"Ludfordian","stage_max_proposed":"Ludfordian","setting_as_reported":"near-shore marine environment","setting_class":"marginal-marine","n_samples":"1","reworking_status":"none","notes":"Sample from a composite section.","locator":"Table I; sections 2.1 and 4",
+      "occurrences":[
+        {"taxon_as_reported":"Cymbohilates sp. A","genus":"Cymbohilates","qualifier":"sp.","abundance":"1.3%","illustrated":false,"locator":"Table I"},
+        {"taxon_as_reported":"Dyadospora murusdensa-murusattenuata","genus":"Dyadospora","qualifier":"","abundance":"1.3%","illustrated":false,"locator":"Table I"},
+        {"taxon_as_reported":"Laevolancis divellomedia-plicata","genus":"Laevolancis","qualifier":"","abundance":"87.3%","illustrated":false,"locator":"Table I"},
+        {"taxon_as_reported":"Tetrahedraletes medinensis","genus":"Tetrahedraletes","qualifier":"","abundance":"4.4%","illustrated":false,"locator":"Table I"},
+        {"taxon_as_reported":"Ambitisporites avitus-dilutus","genus":"Ambitisporites","qualifier":"","abundance":"5.1%","illustrated":false,"locator":"Table I"},
+        {"taxon_as_reported":"Retusotriletes cf. warringtonii","genus":"Retusotriletes","qualifier":"cf.","abundance":"0.6%","illustrated":false,"locator":"Table I"}
+      ]
+    },
+    {
+      "assemblage_id":"Klinta-93-37","scope":"sample","locality":"Klinta, Skåne, eastern Lake Ringsjön","country":"Sweden","formation":"Klinta Formation","section_or_core":"Klinta outcrop, composite section","depth_or_level":"0.00 m; sample 93-37","latitude":"55.8640° N","longitude":"13.5110° E","palaeogeo_unit_reported":"Baltica","palaeo_unit_proposed":"Baltica","age_as_reported":"Ludlow (Ludfordian)","age_basis":"mixed","age_basis_detail":"Conodont and chitinozoan zones; spore assemblage supports a Ludlow age.","age_circular":false,"stage_min_proposed":"Ludfordian","stage_max_proposed":"Ludfordian","setting_as_reported":"near-shore marine environment","setting_class":"marginal-marine","n_samples":"1","reworking_status":"none","notes":"Basal sample of a composite section; a paralic environment is proposed for the basal part.","locator":"Table I; sections 2.1 and 4",
+      "occurrences":[
+        {"taxon_as_reported":"Cymbohilates sp. A","genus":"Cymbohilates","qualifier":"sp.","abundance":"0.7%","illustrated":false,"locator":"Table I"},
+        {"taxon_as_reported":"Dyadospora murusdensa-murusattenuata","genus":"Dyadospora","qualifier":"","abundance":"0.7%","illustrated":false,"locator":"Table I"},
+        {"taxon_as_reported":"Laevolancis divellomedia-plicata","genus":"Laevolancis","qualifier":"","abundance":"69.1%","illustrated":false,"locator":"Table I"},
+        {"taxon_as_reported":"Tetrahedraletes grayii","genus":"Tetrahedraletes","qualifier":"","abundance":"2.7%","illustrated":false,"locator":"Table I"},
+        {"taxon_as_reported":"Tetrahedraletes medinensis","genus":"Tetrahedraletes","qualifier":"","abundance":"4.7%","illustrated":false,"locator":"Table I"},
+        {"taxon_as_reported":"Ambitisporites avitus-dilutus","genus":"Ambitisporites","qualifier":"","abundance":"8.7%","illustrated":false,"locator":"Table I"},
+        {"taxon_as_reported":"Apiculiretusispora burgsvikensis","genus":"Apiculiretusispora","qualifier":"","abundance":"12.1%","illustrated":false,"locator":"Table I"},
+        {"taxon_as_reported":"Retusotriletes cf. warringtonii","genus":"Retusotriletes","qualifier":"cf.","abundance":"1.3%","illustrated":false,"locator":"Table I"}
+      ]
+    }
+  ]
+}

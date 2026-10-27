@@ -10,6 +10,8 @@
 """
 
 import csv
+import json
+import re
 import sys
 from pathlib import Path
 
@@ -80,6 +82,43 @@ def cmd_inputs():
         gens += [(g, n, d, (sp or "")[:300], None, None) for g, n, d, sp in extra if g not in known]
     write(WORK / "spore_genera.csv",
           ["genus", "n_rows", "n_docs", "species_sample", "palynodata_min_ma", "palynodata_max_ma"], gens)
+    return 0
+
+
+def cmd_mvdb():
+    """Flatten the Codex MVD-B extractions into source tables."""
+    out_dir = WORK / "codex" / "mvdb" / "out"
+    papers = {r["openalex_id"]: r for r in csv.DictReader(open(WORK / "codex" / "mvdb" / "papers.csv"))}
+    asm_rows, taxa_rows, dropped = [], [], []
+    squash = lambda x: re.sub(r"[\s\-\u2010-\u2014]+", "", re.sub(r"-\s*\n\s*", "", x)).lower()
+    for path in sorted(out_dir.glob("*_sol.json")):
+        pid = path.name.split("_")[0]
+        doc = json.loads(path.read_text())
+        text = Path(ROOT / papers[pid]["text"]).read_text(encoding="utf-8", errors="replace") if pid in papers else ""
+        if len(text.split()) < 1500:
+            dropped.append((pid, len(text.split())))
+            continue
+        t = squash(text)
+        for k, a in enumerate(doc["items"], 1):
+            aid = f"{pid}-A{k:03d}"
+            asm_rows.append([aid, pid, papers.get(pid, {}).get("doi", ""), doc["doc"]["citation"], a["scope"], a["locality"],
+                             a["country"], a["formation"], a["section_or_core"], a["palaeogeo_unit_reported"], a["palaeo_unit_proposed"],
+                             a["age_as_reported"], a["age_basis"], a["age_circular"], a["stage_min_proposed"], a["stage_max_proposed"],
+                             a["setting_class"], a["reworking_status"], len(a["occurrences"]), a["locator"], a["notes"]])
+            for o in a["occurrences"]:
+                g = o["genus"].strip()
+                words = [w for w in re.findall(r"[a-z][a-z-]{2,}", o["taxon_as_reported"].lower()) if w != g.lower()]
+                ep = words[-1] if words and words[-1] not in ("sp", "spp", "indet", "morphon") else ""
+                verified = squash(o["taxon_as_reported"])[:40] in t or (bool(g) and squash(g) in t and (not ep or squash(ep) in t))
+                taxa_rows.append([aid, o["taxon_as_reported"], g, o["qualifier"], o["abundance"], o["locator"], verified])
+    write(OUT / "sources" / "mvdb_assemblages.csv",
+          ["assemblage_id", "paper", "doi", "citation", "scope", "locality", "country", "formation", "section_or_core",
+           "palaeogeo_unit_reported", "palaeo_unit_proposed", "age_as_reported", "age_basis", "age_circular",
+           "stage_min_proposed", "stage_max_proposed", "setting_class", "reworking_status", "n_taxa", "locator", "notes"], asm_rows)
+    write(OUT / "sources" / "mvdb_taxa.csv", ["assemblage_id", "taxon_as_reported", "genus", "qualifier", "abundance", "locator", "verified_in_text"], taxa_rows)
+    write(OUT / "sources" / "mvdb_dropped_papers.csv", ["paper", "text_words"], dropped)
+    n_ok = sum(1 for r in taxa_rows if r[-1])
+    print(f"taxa verified in text: {n_ok}/{len(taxa_rows)}; papers dropped as not full text: {len(dropped)}")
     return 0
 
 
@@ -176,8 +215,21 @@ def cmd_build():
         left join wellman_series w on w.series_as_given = a.series_as_given
         left join spore_genera g on g.genus = t.genus""")
     con.execute(f"""
+        create table mvdb as
+        select 'mvdb' as source, a.assemblage_id as record_id, t.genus, t.taxon_as_reported as taxon,
+               a.country || coalesce(', ' || nullif(a.locality, ''), '') as location, a.palaeo_unit_proposed as palaeo_unit,
+               g.spore_class, g.confidence as class_confidence, nullif(a.stage_min_proposed, '') as ics_oldest,
+               nullif(a.stage_max_proposed, '') as ics_youngest,
+               case when a.age_basis in ('unstated', 'lithostratigraphic') or a.age_circular = 'true' then 1 else 2 end as ra,
+               case when a.age_basis in ('unstated', 'lithostratigraphic') or a.age_circular = 'true' then 1 else 2 end as ry,
+               a.reworking_status = 'demonstrated', false, false, coalesce(t.qualifier = '?', false) or t.verified_in_text <> 'True', 'not-vetted' as vetting
+        from read_csv_auto('{OUT / 'sources' / 'mvdb_taxa.csv'}', all_varchar=true) t
+        join read_csv_auto('{OUT / 'sources' / 'mvdb_assemblages.csv'}', all_varchar=true) a using (assemblage_id)
+        left join spore_genera g on g.genus = t.genus""") if (OUT / "sources" / "mvdb_taxa.csv").exists() else None
+    has_mvdb = (OUT / "sources" / "mvdb_taxa.csv").exists()
+    con.execute(f"""
         create table occ as
-        with u as (select * from paly union all select * from well)
+        with u as (select * from paly union all select * from well {'union all select * from mvdb' if has_mvdb else ''})
         select u.* exclude (ra, ry),
                case least(ra, ry) when 3 then 'high' when 2 then 'medium' when 1 then 'low' else null end as age_confidence,
                bo.base_ma as oldest_base_ma, by_.top_ma as youngest_top_ma,
@@ -241,7 +293,7 @@ def cmd_build():
 
 
 if __name__ == "__main__":
-    commands = {"inputs": cmd_inputs, "check": cmd_check, "build": cmd_build}
+    commands = {"inputs": cmd_inputs, "check": cmd_check, "build": cmd_build, "mvdb": cmd_mvdb}
     if len(sys.argv) != 2 or sys.argv[1] not in commands:
         sys.exit(__doc__)
     sys.exit(commands[sys.argv[1]]())

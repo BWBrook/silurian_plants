@@ -1,0 +1,240 @@
+{
+  "doc": {
+    "doi": "10.4267/2042/35627",
+    "citation": "Gourvennec R., Piçarra J.M., Plusquellec Y., Pereira Z., Oliveira J.T. & Robardet M. (2010). Lower Devonian faunas and palynomorphs from the Dornes Syncline (Central Iberian Zone, Portugal): stratigraphical and paleogeographical implications. Carnets de Géologie / Notebooks on Geology, Article 2010/09 (CG2010_A09), 1–10.",
+    "language": "English; French abstract",
+    "reports_window_spores": true,
+    "comment": "The Lochkovian assemblages were previously reported by Oliveira et al. (2000), Silurian to Carboniferous successions of the SW Iberian Massif (Portugal): The Dornes section, and reviewed by Gourvennec et al. (2008), A reassessment of the Lochkovian (Lower Devonian) benthic faunas and palynomorphs from the Dornes region (southern Central Iberian Zone, Portugal). An unnamed Ludfordian assemblage is cited from Cooper's unpublished 1980 thesis. Printed taxon spellings are retained; the text's Emphanisporites micrornatus is labelled Emphanisporites microornatus in Figure 6. The supplied DOI could not be independently checked against Crossref because access failed."
+  },
+  "items": [
+    {
+      "assemblage_id": "Dornes-Vale-Serrao-25m",
+      "scope": "section-interval",
+      "locality": "Dornes",
+      "country": "Portugal",
+      "formation": "Serra do Luação Formation",
+      "section_or_core": "Road cut Dornes-Vale Serrão section",
+      "depth_or_level": "25 m above its base",
+      "latitude": "",
+      "longitude": "",
+      "palaeogeo_unit_reported": "Central Iberian Zone; Ibero-Armorican domain; North Gondwana",
+      "palaeo_unit_proposed": "peri-Gondwana-Europe",
+      "age_as_reported": "late Ludlow (Ludfordian)",
+      "age_basis": "unstated",
+      "age_basis_detail": "Age and occurrence cited from Cooper (1980); chitinozoans, acritarchs and a miospore assemblage are reported together, without specifying the dating contribution of each group.",
+      "age_circular": false,
+      "stage_min_proposed": "Ludfordian",
+      "stage_max_proposed": "Ludfordian",
+      "setting_as_reported": "",
+      "setting_class": "marine-shelf",
+      "n_samples": "",
+      "reworking_status": "none",
+      "notes": "Historical miospore assemblage mentioned without any spore taxa or abundance data. Associated chitinozoans and acritarchs are not extracted as occurrences. The section comprises heterolithic sandstones, siltstones and shales. Shelf classification is inferred from the paper's regional marine-platform comparison. Whether spores contributed to the original age assignment is unspecified.",
+      "locator": "p. 4, Road cut Dornes-Vale Serrão section",
+      "occurrences": []
+    },
+    {
+      "assemblage_id": "Dornes-Vale-Serrao-B2-B3",
+      "scope": "section-interval",
+      "locality": "Dornes",
+      "country": "Portugal",
+      "formation": "Serra do Luação Formation",
+      "section_or_core": "Road cut Dornes-Vale Serrão section",
+      "depth_or_level": "B2-B3",
+      "latitude": "",
+      "longitude": "",
+      "palaeogeo_unit_reported": "Central Iberian Zone; Ibero-Armorican domain; North Gondwana",
+      "palaeo_unit_proposed": "peri-Gondwana-Europe",
+      "age_as_reported": "early Lochkovian",
+      "age_basis": "mixed",
+      "age_basis_detail": "Spore assemblages assigned to the Emphanisporites micrornatus - Streelispora newportensis (MN) Biozone, with subzone R recognised by Chelinospora retorrida; associated brachiopods independently support an early Lochkovian age.",
+      "age_circular": true,
+      "stage_min_proposed": "Lochkovian",
+      "stage_max_proposed": "Lochkovian",
+      "setting_as_reported": "",
+      "setting_class": "marine-shelf",
+      "n_samples": "",
+      "reworking_status": "none",
+      "notes": "The species list pools two levels, B2 and B3; individual sample counts and separate level lists are not supplied. Figure 6 illustrates B3 and adds Laevolancis sp. Associated acritarchs are listed separately in the paper. Streelispora newportensis occurs only in the biozone name: Streelispora specimens were not identifiable to species. The text's Emphanisporites micrornatus is treated as illustrated by Figure 6B, whose printed label is Emphanisporites microornatus; these spelling variants are not counted as separate taxa. Other apparent spelling errors are retained. Shelf classification is inferred from the paper's regional marine-platform comparison.",
+      "locator": "p. 4, Road cut Dornes-Vale Serrão section, B2-B3 list; p. 5, Figure 6; p. 7, Palynomorphs and Results",
+      "occurrences": [
+        {
+          "taxon_as_reported": "Aneurospora sp.",
+          "genus": "Aneurospora",
+          "qualifier": "sp.",
+          "abundance": "present",
+          "illustrated": false,
+          "locator": "p. 4, B2-B3 list"
+        },
+        {
+          "taxon_as_reported": "Ambitisporites sp.",
+          "genus": "Ambitisporites",
+          "qualifier": "sp.",
+          "abundance": "present",
+          "illustrated": false,
+          "locator": "p. 4, B2-B3 list"
+        },
+        {
+          "taxon_as_reported": "Amicosporites streelii",
+          "genus": "Amicosporites",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": false,
+          "locator": "p. 4, B2-B3 list"
+        },
+        {
+          "taxon_as_reported": "Archaeozonotriletes chulus",
+          "genus": "Archaeozonotriletes",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": false,
+          "locator": "p. 4, B2-B3 list"
+        },
+        {
+          "taxon_as_reported": "Chelinospora retorrida",
+          "genus": "Chelinospora",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "p. 4, B2-B3 list; p. 5, Figure 6C, level B3"
+        },
+        {
+          "taxon_as_reported": "Chelinospora sp.",
+          "genus": "Chelinospora",
+          "qualifier": "sp.",
+          "abundance": "present",
+          "illustrated": false,
+          "locator": "p. 4, B2-B3 list"
+        },
+        {
+          "taxon_as_reported": "Cymbosporites echinatus",
+          "genus": "Cymbosporites",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": false,
+          "locator": "p. 4, B2-B3 list"
+        },
+        {
+          "taxon_as_reported": "C. proteus",
+          "genus": "Cymbosporites",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": false,
+          "locator": "p. 4, B2-B3 list"
+        },
+        {
+          "taxon_as_reported": "Dyctiotriletes sp.",
+          "genus": "Dyctiotriletes",
+          "qualifier": "sp.",
+          "abundance": "present",
+          "illustrated": false,
+          "locator": "p. 4, B2-B3 list"
+        },
+        {
+          "taxon_as_reported": "Emphanisporites micrornatus",
+          "genus": "Emphanisporites",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "p. 4, B2-B3 list; p. 5, Figure 6B, level B3, labelled Emphanisporites microornatus"
+        },
+        {
+          "taxon_as_reported": "E. negletus",
+          "genus": "Emphanisporites",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": false,
+          "locator": "p. 4, B2-B3 list"
+        },
+        {
+          "taxon_as_reported": "E. multicostatus",
+          "genus": "Emphanisporites",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "p. 4, B2-B3 list; p. 5, Figure 6D, level B3"
+        },
+        {
+          "taxon_as_reported": "Streelispora sp.",
+          "genus": "Streelispora",
+          "qualifier": "sp.",
+          "abundance": "present",
+          "illustrated": false,
+          "locator": "p. 4, B2-B3 list; p. 7, Palynomorphs"
+        },
+        {
+          "taxon_as_reported": "Synorisporites verrucatus",
+          "genus": "Synorisporites",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": false,
+          "locator": "p. 4, B2-B3 list"
+        },
+        {
+          "taxon_as_reported": "Synorisporites sp.",
+          "genus": "Synorisporites",
+          "qualifier": "sp.",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "p. 4, B2-B3 list; p. 5, Figure 6E, level B3"
+        },
+        {
+          "taxon_as_reported": "Retusotriletes sp.",
+          "genus": "Retusotriletes",
+          "qualifier": "sp.",
+          "abundance": "present",
+          "illustrated": false,
+          "locator": "p. 4, B2-B3 list"
+        },
+        {
+          "taxon_as_reported": "R. abundo",
+          "genus": "Retusotriletes",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": false,
+          "locator": "p. 4, B2-B3 list"
+        },
+        {
+          "taxon_as_reported": "R. warrigtonii",
+          "genus": "Retusotriletes",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": false,
+          "locator": "p. 4, B2-B3 list"
+        },
+        {
+          "taxon_as_reported": "Dyadospora sp.",
+          "genus": "Dyadospora",
+          "qualifier": "sp.",
+          "abundance": "present",
+          "illustrated": false,
+          "locator": "p. 4, B2-B3 cryptospore list"
+        },
+        {
+          "taxon_as_reported": "Laevolancis divellomedia",
+          "genus": "Laevolancis",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": false,
+          "locator": "p. 4, B2-B3 cryptospore list"
+        },
+        {
+          "taxon_as_reported": "L. plicata",
+          "genus": "Laevolancis",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": false,
+          "locator": "p. 4, B2-B3 cryptospore list"
+        },
+        {
+          "taxon_as_reported": "Laevolancis sp.",
+          "genus": "Laevolancis",
+          "qualifier": "sp.",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "p. 5, Figure 6F, level B3"
+        }
+      ]
+    }
+  ]
+}

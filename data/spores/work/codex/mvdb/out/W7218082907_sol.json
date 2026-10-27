@@ -1,0 +1,204 @@
+{
+  "doc": {
+    "doi": "",
+    "citation": "Іваніна А. 2019. Палінологічна характеристика середньопалеозойських відкладів Волино-Поділля. Вісник Львівського університету. Серія геологічна, 33: 47–59.",
+    "language": "Ukrainian; English abstract",
+    "reports_window_spores": true,
+    "comment": "Regional synthesis without sample identifiers, depths, coordinates or specimen illustrations. Early Devonian occurrences are reported at genus level. The Dniester Series list combines Emsian and Eifelian records and cannot be restricted to the Emsian; the paper calls both stages Lower Devonian. Ambitisporites is reported separately for the Lower Devonian without allocation to either series. Earlier studies by Shepeleva (1963), Partyka (1971), Lomaeva (1976) and Burova (1978) are cited, but reuse of particular assemblages is not specified. Tables 1–2 list taxa across the entire Devonian–Carboniferous succession without stage-specific assignments."
+  },
+  "items": [
+    {
+      "assemblage_id": "W7218082907-tiver-series",
+      "scope": "composite",
+      "locality": "Волино-Поділля",
+      "country": "Ukraine",
+      "formation": "тіверської серії",
+      "section_or_core": "",
+      "depth_or_level": "",
+      "latitude": "",
+      "longitude": "",
+      "palaeogeo_unit_reported": "Волино-Подільської окраїни Східноєвропейської платформи",
+      "palaeo_unit_proposed": "Baltica",
+      "age_as_reported": "лохковського, празького ярусів нижнього девону",
+      "age_basis": "unstated",
+      "age_basis_detail": "The series and stages are named, but evidence establishing their age is not supplied.",
+      "age_circular": false,
+      "stage_min_proposed": "Lochkovian",
+      "stage_max_proposed": "Pragian",
+      "setting_as_reported": "",
+      "setting_class": "unknown",
+      "n_samples": "",
+      "reworking_status": "none",
+      "notes": "Regional list for the Tiver Series, a series-level unit rather than a named formation or individual section. Assemblages are described as impoverished, with minimal taxonomic diversity. No species-level identifications are provided for this list. Reworking is not discussed; independent age control is not documented.",
+      "locator": "pp. 53–54, paragraph beginning «Мінімальне таксономічне різноманіття»",
+      "occurrences": [
+        {
+          "taxon_as_reported": "Calamospora",
+          "genus": "Calamospora",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": false,
+          "locator": "p. 54, Tiver Series paragraph"
+        },
+        {
+          "taxon_as_reported": "Leiotriletes",
+          "genus": "Leiotriletes",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": false,
+          "locator": "p. 54, Tiver Series paragraph"
+        },
+        {
+          "taxon_as_reported": "Punctatisporites",
+          "genus": "Punctatisporites",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": false,
+          "locator": "p. 54, Tiver Series paragraph"
+        },
+        {
+          "taxon_as_reported": "Cyclogranisporites",
+          "genus": "Cyclogranisporites",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": false,
+          "locator": "p. 54, Tiver Series paragraph"
+        },
+        {
+          "taxon_as_reported": "Acanthotriletes",
+          "genus": "Acanthotriletes",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": false,
+          "locator": "p. 54, Tiver Series paragraph"
+        },
+        {
+          "taxon_as_reported": "Retusotriletes",
+          "genus": "Retusotriletes",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": false,
+          "locator": "p. 54, Tiver Series paragraph"
+        },
+        {
+          "taxon_as_reported": "Trachytriletes",
+          "genus": "Trachytriletes",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": false,
+          "locator": "p. 54, Tiver Series paragraph"
+        }
+      ]
+    },
+    {
+      "assemblage_id": "W7218082907-dniester-series",
+      "scope": "composite",
+      "locality": "Волино-Поділля",
+      "country": "Ukraine",
+      "formation": "дністровської серії",
+      "section_or_core": "",
+      "depth_or_level": "",
+      "latitude": "",
+      "longitude": "",
+      "palaeogeo_unit_reported": "Волино-Подільської окраїни Східноєвропейської платформи",
+      "palaeo_unit_proposed": "Baltica",
+      "age_as_reported": "емського, ейфельського ярусів нижнього девону",
+      "age_basis": "unstated",
+      "age_basis_detail": "The series and stages are named, but evidence establishing their age is not supplied.",
+      "age_circular": false,
+      "stage_min_proposed": "Emsian",
+      "stage_max_proposed": "Eifelian",
+      "setting_as_reported": "",
+      "setting_class": "unknown",
+      "n_samples": "",
+      "reworking_status": "none",
+      "notes": "Regional series-level list spanning Emsian–Eifelian, including an inseparable component younger than the requested window. The paper places both stages in the Lower Devonian; Eifelian is mapped to its ICS stage without changing the reported age. Increasing diversity and the appearance of Geminospora and Rhabdosporites are described. Reworking is not discussed; independent age control is not documented.",
+      "locator": "p. 54, paragraph beginning «Зростання таксономічного різноманіття»; p. 53, Pseudosacciti paragraph",
+      "occurrences": [
+        {
+          "taxon_as_reported": "Leiotriletes",
+          "genus": "Leiotriletes",
+          "qualifier": "",
+          "abundance": "Численні і різноманітні",
+          "illustrated": false,
+          "locator": "p. 54, Dniester Series paragraph"
+        },
+        {
+          "taxon_as_reported": "Retusotriletes",
+          "genus": "Retusotriletes",
+          "qualifier": "",
+          "abundance": "Численні і різноманітні",
+          "illustrated": false,
+          "locator": "p. 54, Dniester Series paragraph"
+        },
+        {
+          "taxon_as_reported": "Trachytriletes",
+          "genus": "Trachytriletes",
+          "qualifier": "",
+          "abundance": "Численні і різноманітні",
+          "illustrated": false,
+          "locator": "p. 54, Dniester Series paragraph"
+        },
+        {
+          "taxon_as_reported": "Acanthotriletes",
+          "genus": "Acanthotriletes",
+          "qualifier": "",
+          "abundance": "Численні і різноманітні",
+          "illustrated": false,
+          "locator": "p. 54, Dniester Series paragraph"
+        },
+        {
+          "taxon_as_reported": "Geminospora",
+          "genus": "Geminospora",
+          "qualifier": "",
+          "abundance": "поодиноко",
+          "illustrated": false,
+          "locator": "p. 54, Dniester Series paragraph; p. 53, Emsian–Eifelian Pseudosacciti"
+        },
+        {
+          "taxon_as_reported": "Rhabdosporites",
+          "genus": "Rhabdosporites",
+          "qualifier": "",
+          "abundance": "поодиноко",
+          "illustrated": false,
+          "locator": "p. 54, Dniester Series paragraph; p. 53, Emsian–Eifelian Pseudosacciti"
+        }
+      ]
+    },
+    {
+      "assemblage_id": "W7218082907-lower-devonian-unallocated",
+      "scope": "composite",
+      "locality": "Волино-Поділля",
+      "country": "Ukraine",
+      "formation": "",
+      "section_or_core": "",
+      "depth_or_level": "",
+      "latitude": "",
+      "longitude": "",
+      "palaeogeo_unit_reported": "Волино-Подільської окраїни Східноєвропейської платформи",
+      "palaeo_unit_proposed": "Baltica",
+      "age_as_reported": "нижнього девону",
+      "age_basis": "unstated",
+      "age_basis_detail": "Only a broad Lower Devonian assignment is given for this occurrence.",
+      "age_circular": false,
+      "stage_min_proposed": "Lochkovian",
+      "stage_max_proposed": "Emsian",
+      "setting_as_reported": "",
+      "setting_class": "unknown",
+      "n_samples": "",
+      "reworking_status": "none",
+      "notes": "Broad regional occurrence retained separately because Ambitisporites is not assigned to either named series. This overlaps the series-level composites and must not be counted as an additional independent sample. Reworking is not discussed; independent age control is not documented.",
+      "locator": "p. 52, Crassiti paragraph",
+      "occurrences": [
+        {
+          "taxon_as_reported": "Ambitisporites",
+          "genus": "Ambitisporites",
+          "qualifier": "",
+          "abundance": "домінує у спектрах нижнього девону",
+          "illustrated": false,
+          "locator": "p. 52, Crassiti paragraph"
+        }
+      ]
+    }
+  ]
+}

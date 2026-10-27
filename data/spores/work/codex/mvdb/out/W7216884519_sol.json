@@ -1,0 +1,713 @@
+{
+  "doc": {
+    "doi": "",
+    "citation": "Іваніна А. 2018. Стандартизована характеристика палінозон девону Волино-Подільської окраїни Східноєвропейської платформи. Вісник Львівського університету. Серія геологічна 32: 30–53.",
+    "language": "Ukrainian; English abstract",
+    "reports_window_spores": true,
+    "comment": "Two regional zonal assemblages fall within the requested window; the succeeding torta–langii assemblage is explicitly Eifelian and is excluded. Lists are regional composites, without sample-specific taxon distributions. Earlier identifications are revised using Oshurkova (2003), with new material added. Tables and prose contain inconsistent generic assignments, qualifiers and abundance categories, flagged below. No specimen illustrations occur in the supplied text."
+  },
+  "items": [
+    {
+      "assemblage_id": "W7216884519-SS",
+      "scope": "composite",
+      "locality": "Волино-Поділля: Оглядів, Н. Витків, Горохів, Локачі, Ренів, Тихотин; unspecified outcrops. Reference locality: с. Ренів Тернопільської обл.",
+      "country": "Ukraine",
+      "formation": "тіверська серія",
+      "section_or_core": "1 – Оглядів; 3 – Н. Витків; 2 – Горохів; 6 – Горохів; 9 – Локачі; 24 с – Ренів; 3 – Тихотин; 2 – Тихотин; відслонення",
+      "depth_or_level": "1 – Оглядів: 1 210–1 432 м; 3 – Н. Витків: 1 970–2 340 м; 2 – Горохів: 1 100–1 205 м; 6 – Горохів: 1 380-1 498 м; 9 – Локачі: 1 118-1 170 м; 24 с – Ренів: 432–563 м; 3 – Тихотин: 880–926 м; 2 – Тихотин: 355–390 м",
+      "latitude": "",
+      "longitude": "",
+      "palaeogeo_unit_reported": "Волино-Подільська окраїна Східноєвропейської платформи",
+      "palaeo_unit_proposed": "Baltica",
+      "age_as_reported": "більша нижня частина лохковського ярусу Загальної стратиграфічної шкали (ЗСШ)",
+      "age_basis": "mixed",
+      "age_basis_detail": "Spore biozone SS within the Lower Devonian Tiver series, conformably above Upper Silurian deposits. Tentatively correlated with conodont zones Caudicriodus hesperius, Caud. transiens, Caud. postwoschmidti and Caud. serus, citing Drygant (2010); no sample-specific conodont evidence is presented.",
+      "age_circular": true,
+      "stage_min_proposed": "Lochkovian",
+      "stage_max_proposed": "Lochkovian",
+      "setting_as_reported": "",
+      "setting_class": "unknown",
+      "n_samples": "",
+      "reworking_status": "none",
+      "notes": "Regional zonal list, not a demonstrated co-occurrence of every taxon in every listed core. Reference interval is borehole 24 с – Ренів, 432–563 м, thickness 131 м. Deposits are described generally as carbonate–terrigenous, without an explicit depositional environment for this assemblage. Reworking is not discussed. The prose reports Emphanisporites minutus, whereas the qualitative list and Table 1 place E. minutus after Emphanizonosporites salantaicus; both source forms are retained and may duplicate one intended taxon. Anreticulispora plicata and Apiculiretusispora plicata are likewise both reported. Speciososporites novus, Leiotriletes laevis and L. simplex occur in the prose but are omitted from Table 1.",
+      "locator": "pp. 32–33, Emphanizonosporites salantaicus–Speciososporites subrotundus (SS), points 4–11; Table 1",
+      "occurrences": [
+        {
+          "taxon_as_reported": "Costaspora decorata",
+          "genus": "Costaspora",
+          "qualifier": "",
+          "abundance": "Рідкісні (до 5 %)",
+          "illustrated": false,
+          "locator": "Table 1; pp. 32–33, §7.2.3"
+        },
+        {
+          "taxon_as_reported": "Speciososporites subrotundus",
+          "genus": "Speciososporites",
+          "qualifier": "",
+          "abundance": "Рідкісні (до 5 %)",
+          "illustrated": false,
+          "locator": "Table 1; p. 32, §7.2.3"
+        },
+        {
+          "taxon_as_reported": "Emphanizonosporites salantaicus",
+          "genus": "Emphanizonosporites",
+          "qualifier": "",
+          "abundance": "Рідкісні (до 5 %)",
+          "illustrated": false,
+          "locator": "Table 1; p. 32, §7.2.3"
+        },
+        {
+          "taxon_as_reported": "E. minutus",
+          "genus": "Emphanizonosporites",
+          "qualifier": "",
+          "abundance": "Рідкісні",
+          "illustrated": false,
+          "locator": "Table 1; p. 32, §7.1.1"
+        },
+        {
+          "taxon_as_reported": "Emphanisporites minutus",
+          "genus": "Emphanisporites",
+          "qualifier": "",
+          "abundance": "Рідкісні (до 5 %)",
+          "illustrated": false,
+          "locator": "p. 32, §7.2.3"
+        },
+        {
+          "taxon_as_reported": "Verruciretusispora verruculata",
+          "genus": "Verruciretusispora",
+          "qualifier": "",
+          "abundance": "Рідкісні (до 5 %)",
+          "illustrated": false,
+          "locator": "Table 1; p. 33, §7.2.3"
+        },
+        {
+          "taxon_as_reported": "Apiculiretusispora brandtii",
+          "genus": "Apiculiretusispora",
+          "qualifier": "",
+          "abundance": "Рідкісні (до 5 %)",
+          "illustrated": false,
+          "locator": "Table 1; pp. 32–33, §§7.1.1, 7.2.3"
+        },
+        {
+          "taxon_as_reported": "Streelispora granulata",
+          "genus": "Streelispora",
+          "qualifier": "",
+          "abundance": "Рідкісні (до 5 %)",
+          "illustrated": false,
+          "locator": "Table 1; p. 33, §7.2.3"
+        },
+        {
+          "taxon_as_reported": "Endosporites? purus",
+          "genus": "Endosporites",
+          "qualifier": "?",
+          "abundance": "Рідкісні (до 5 %)",
+          "illustrated": false,
+          "locator": "pp. 32–33, §§7.1.2, 7.2.3; Table 1"
+        },
+        {
+          "taxon_as_reported": "Leiotriletes furcatus",
+          "genus": "Leiotriletes",
+          "qualifier": "",
+          "abundance": "Рідкісні (до 5 %)",
+          "illustrated": false,
+          "locator": "Table 1; pp. 32–33, §§7.1.2, 7.2.3"
+        },
+        {
+          "taxon_as_reported": "Retusotriletes simplex",
+          "genus": "Retusotriletes",
+          "qualifier": "",
+          "abundance": "Рідкісні (до 5 %)",
+          "illustrated": false,
+          "locator": "Table 1; p. 33, §7.2.3"
+        },
+        {
+          "taxon_as_reported": "R. minor",
+          "genus": "Retusotriletes",
+          "qualifier": "",
+          "abundance": "Рідкісні (до 5 %)",
+          "illustrated": false,
+          "locator": "Table 1; p. 33, §7.2.3"
+        },
+        {
+          "taxon_as_reported": "Conperiplecospora antiqua",
+          "genus": "Conperiplecospora",
+          "qualifier": "",
+          "abundance": "Рідкісні (до 5 %)",
+          "illustrated": false,
+          "locator": "Table 1; p. 33, §7.2.3"
+        },
+        {
+          "taxon_as_reported": "A. plicata",
+          "genus": "Anreticulispora",
+          "qualifier": "",
+          "abundance": "Рідкісні",
+          "illustrated": false,
+          "locator": "p. 32, §7.1.2; Table 1"
+        },
+        {
+          "taxon_as_reported": "Apiculiretusispora plicata",
+          "genus": "Apiculiretusispora",
+          "qualifier": "",
+          "abundance": "Рідкісні (до 5 %)",
+          "illustrated": false,
+          "locator": "p. 33, §7.2.3"
+        },
+        {
+          "taxon_as_reported": "Ambitisporites pumilis",
+          "genus": "Ambitisporites",
+          "qualifier": "",
+          "abundance": "Рідкісні (до 5 %)",
+          "illustrated": false,
+          "locator": "Table 1; p. 33, §7.2.3"
+        },
+        {
+          "taxon_as_reported": "A. simplex",
+          "genus": "Ambitisporites",
+          "qualifier": "",
+          "abundance": "Рідкісні (до 5 %)",
+          "illustrated": false,
+          "locator": "Table 1; p. 33, §7.2.3"
+        },
+        {
+          "taxon_as_reported": "Trachytriletes? trivialis",
+          "genus": "Trachytriletes",
+          "qualifier": "?",
+          "abundance": "Рідкісні (до 5 %)",
+          "illustrated": false,
+          "locator": "Table 1; pp. 32–33, §7.2.3"
+        },
+        {
+          "taxon_as_reported": "Brochotriletes",
+          "genus": "Brochotriletes",
+          "qualifier": "",
+          "abundance": "Рідкісні (до 5 %)",
+          "illustrated": false,
+          "locator": "Table 1; p. 33, §7.2.3"
+        },
+        {
+          "taxon_as_reported": "Verrucosisporites",
+          "genus": "Verrucosisporites",
+          "qualifier": "",
+          "abundance": "Рідкісні (до 5 %)",
+          "illustrated": false,
+          "locator": "Table 1; p. 33, §7.2.3"
+        },
+        {
+          "taxon_as_reported": "Foveolatisporites",
+          "genus": "Foveolatisporites",
+          "qualifier": "",
+          "abundance": "Рідкісні (до 5 %)",
+          "illustrated": false,
+          "locator": "Table 1; p. 33, §7.2.3"
+        },
+        {
+          "taxon_as_reported": "Geminospora rugosa",
+          "genus": "Geminospora",
+          "qualifier": "",
+          "abundance": "Рідкісні (до 5 %)",
+          "illustrated": false,
+          "locator": "Table 1; p. 33, §7.2.3"
+        },
+        {
+          "taxon_as_reported": "Retusotriletes",
+          "genus": "Retusotriletes",
+          "qualifier": "",
+          "abundance": "Рідкісні (до 5 %)",
+          "illustrated": false,
+          "locator": "Table 1; p. 33, §7.2.3"
+        },
+        {
+          "taxon_as_reported": "Acanthotriletes",
+          "genus": "Acanthotriletes",
+          "qualifier": "",
+          "abundance": "Рідкісні (до 5 %)",
+          "illustrated": false,
+          "locator": "Table 1; p. 33, §7.2.3"
+        },
+        {
+          "taxon_as_reported": "Reticulatisporites",
+          "genus": "Reticulatisporites",
+          "qualifier": "",
+          "abundance": "Рідкісні (до 5 %)",
+          "illustrated": false,
+          "locator": "Table 1; p. 33, §7.2.3"
+        },
+        {
+          "taxon_as_reported": "Camptotriletes",
+          "genus": "Camptotriletes",
+          "qualifier": "",
+          "abundance": "Рідкісні (до 5 %)",
+          "illustrated": false,
+          "locator": "Table 1; p. 33, §7.2.3"
+        },
+        {
+          "taxon_as_reported": "Periplecotriletes",
+          "genus": "Periplecotriletes",
+          "qualifier": "",
+          "abundance": "Рідкісні (до 5 %)",
+          "illustrated": false,
+          "locator": "p. 33, §7.2.3"
+        },
+        {
+          "taxon_as_reported": "Spinozonotriletes",
+          "genus": "Spinozonotriletes",
+          "qualifier": "",
+          "abundance": "Рідкісні (до 5 %)",
+          "illustrated": false,
+          "locator": "Table 1; p. 33, §7.2.3"
+        },
+        {
+          "taxon_as_reported": "Granulatisporites",
+          "genus": "Granulatisporites",
+          "qualifier": "",
+          "abundance": "Домінанти (понад 20 %)",
+          "illustrated": false,
+          "locator": "Table 1; p. 32, §7.2.1"
+        },
+        {
+          "taxon_as_reported": "Punctatisporites",
+          "genus": "Punctatisporites",
+          "qualifier": "",
+          "abundance": "Домінанти (понад 20 %)",
+          "illustrated": false,
+          "locator": "Table 1; p. 32, §7.2.1"
+        },
+        {
+          "taxon_as_reported": "Calamospora",
+          "genus": "Calamospora",
+          "qualifier": "",
+          "abundance": "Домінанти (понад 20 %)",
+          "illustrated": false,
+          "locator": "Table 1; p. 32, §7.2.1"
+        },
+        {
+          "taxon_as_reported": "Anreticulispora minor",
+          "genus": "Anreticulispora",
+          "qualifier": "",
+          "abundance": "Субдомінанти (5–20 %)",
+          "illustrated": false,
+          "locator": "Table 1; p. 32, §7.2.2"
+        },
+        {
+          "taxon_as_reported": "Trachytriletes? devonicus",
+          "genus": "Trachytriletes",
+          "qualifier": "?",
+          "abundance": "Субдомінанти (5–20 %)",
+          "illustrated": false,
+          "locator": "Table 1; p. 32, §7.2.2"
+        },
+        {
+          "taxon_as_reported": "Leiotriletes",
+          "genus": "Leiotriletes",
+          "qualifier": "",
+          "abundance": "Субдомінанти (5–20 %)",
+          "illustrated": false,
+          "locator": "Table 1; p. 32, §7.2.2"
+        },
+        {
+          "taxon_as_reported": "Leiotriletes laevis",
+          "genus": "Leiotriletes",
+          "qualifier": "",
+          "abundance": "Рідкісні (до 5 %)",
+          "illustrated": false,
+          "locator": "p. 32, §§7.1.3, 7.2.3"
+        },
+        {
+          "taxon_as_reported": "L. simplex",
+          "genus": "Leiotriletes",
+          "qualifier": "",
+          "abundance": "Рідкісні (до 5 %)",
+          "illustrated": false,
+          "locator": "p. 32, §§7.1.3, 7.2.3"
+        },
+        {
+          "taxon_as_reported": "Speciososporites novus",
+          "genus": "Speciososporites",
+          "qualifier": "",
+          "abundance": "Рідкісні (до 5 %)",
+          "illustrated": false,
+          "locator": "p. 33, §7.2.3"
+        }
+      ]
+    },
+    {
+      "assemblage_id": "W7216884519-R",
+      "scope": "composite",
+      "locality": "Волино-Поділля: Оглядів, Н. Витків, Горохів, Ренів, Тихотин; відслонення біля сіл Нирків, Устечко, м. Заліщики Тернопільської обл. Reference locality: с. Ренів Тернопільської обл.",
+      "country": "Ukraine",
+      "formation": "дністровська серія",
+      "section_or_core": "1 – Оглядів; 3 – Оглядів; 3 – Н. Витків; 8 – Горохів; 24 с – Ренів; 3 – Тихотин; 2 – Тихотин; outcrops near Нирків, Устечко and Заліщики",
+      "depth_or_level": "1 – Оглядів: 1 332–1 819 м; 3 – Оглядів: 1 043–1 210 м; 3 – Н. Витків: 1 735–1 970 м; 8 – Горохів: 1 050–1 205 м; 24 с – Ренів: 251–432 м; 3 – Тихотин: 860–880 м; 2 – Тихотин: 332–365 м",
+      "latitude": "",
+      "longitude": "",
+      "palaeogeo_unit_reported": "Волино-Подільська окраїна Східноєвропейської платформи",
+      "palaeo_unit_proposed": "Baltica",
+      "age_as_reported": "верхня частина лохковського, празький та емський яруси ЗСШ",
+      "age_basis": "mixed",
+      "age_basis_detail": "Spore biozone R within the Lower Devonian Dniester series, correlated with regional spore zones. Tentatively correlated with conodont zones E. sulcatus sulcatus, Polygnatus pireneae, P. kitabicus, P. costatus patulus, Caud. transiens, Caud. postwoschmidti and Caud. serus, citing Drygant (2010); no sample-specific conodont evidence is presented.",
+      "age_circular": true,
+      "stage_min_proposed": "Lochkovian",
+      "stage_max_proposed": "Emsian",
+      "setting_as_reported": "",
+      "setting_class": "unknown",
+      "n_samples": "",
+      "reworking_status": "none",
+      "notes": "Regional zonal list spanning upper Lochkovian, Pragian and Emsian deposits; individual taxa cannot be assigned more narrowly from this paper. Reference interval is borehole 24 с – Ренів, 251–432 м, thickness 181 м. No explicit assemblage-specific depositional environment or reworking discussion. Granulatisporites is listed as both dominant and rare; Trachytriletes? devonicus as both subdominant and rare. Table 2 prints Trachytriletes trivialis without the question mark used in the prose; both forms are retained as source variants, not independent biological taxa. Anreticulispora plicata in the qualitative prose and Apiculiretusispora plicata in Table 2 and quantitative prose are retained separately. The reported 1 – Оглядів interval is reproduced despite overlapping the SS interval reported for that borehole.",
+      "locator": "pp. 33–35, Emphanisporites rotatus (R), points 4–11; Table 2",
+      "occurrences": [
+        {
+          "taxon_as_reported": "Emphanisporites rotatus",
+          "genus": "Emphanisporites",
+          "qualifier": "",
+          "abundance": "Домінанти (понад 20 %)",
+          "illustrated": false,
+          "locator": "Table 2; p. 34, §7.2.1"
+        },
+        {
+          "taxon_as_reported": "Costaspora annulata",
+          "genus": "Costaspora",
+          "qualifier": "",
+          "abundance": "Рідкісні (до 5 %)",
+          "illustrated": false,
+          "locator": "Table 2; p. 34, §7.2.3"
+        },
+        {
+          "taxon_as_reported": "Apiculiretusispora gibberosa",
+          "genus": "Apiculiretusispora",
+          "qualifier": "",
+          "abundance": "Рідкісні (до 5 %)",
+          "illustrated": false,
+          "locator": "Table 2; p. 34, §7.2.3"
+        },
+        {
+          "taxon_as_reported": "A. brandtii",
+          "genus": "Apiculiretusispora",
+          "qualifier": "",
+          "abundance": "Рідкісні (до 5 %)",
+          "illustrated": false,
+          "locator": "Table 2; p. 35, §7.2.3"
+        },
+        {
+          "taxon_as_reported": "Grandispora douglastownense",
+          "genus": "Grandispora",
+          "qualifier": "",
+          "abundance": "Рідкісні (до 5 %)",
+          "illustrated": false,
+          "locator": "Table 2; p. 34, §7.2.3"
+        },
+        {
+          "taxon_as_reported": "Dibolisporites antiquus",
+          "genus": "Dibolisporites",
+          "qualifier": "",
+          "abundance": "Рідкісні (до 5 %)",
+          "illustrated": false,
+          "locator": "Table 2; p. 34, §7.2.3"
+        },
+        {
+          "taxon_as_reported": "Verruciretusispora verruculata",
+          "genus": "Verruciretusispora",
+          "qualifier": "",
+          "abundance": "Рідкісні (до 5 %)",
+          "illustrated": false,
+          "locator": "Table 2; p. 34, §7.2.3"
+        },
+        {
+          "taxon_as_reported": "Emphanisporites minutus",
+          "genus": "Emphanisporites",
+          "qualifier": "",
+          "abundance": "Рідкісні (до 5 %)",
+          "illustrated": false,
+          "locator": "Table 2; p. 34, §7.2.3"
+        },
+        {
+          "taxon_as_reported": "Speciososporites novus",
+          "genus": "Speciososporites",
+          "qualifier": "",
+          "abundance": "Рідкісні (до 5 %)",
+          "illustrated": false,
+          "locator": "Table 2; p. 35, §7.2.3"
+        },
+        {
+          "taxon_as_reported": "Devonomonoletes microtuberculatus",
+          "genus": "Devonomonoletes",
+          "qualifier": "",
+          "abundance": "Рідкісні (до 5 %)",
+          "illustrated": false,
+          "locator": "Table 2; p. 34, §7.2.3"
+        },
+        {
+          "taxon_as_reported": "Sinuosisporis sinuosus",
+          "genus": "Sinuosisporis",
+          "qualifier": "",
+          "abundance": "Рідкісні (до 5 %)",
+          "illustrated": false,
+          "locator": "Table 2; p. 34, §7.2.3"
+        },
+        {
+          "taxon_as_reported": "Streelispora granulata",
+          "genus": "Streelispora",
+          "qualifier": "",
+          "abundance": "Рідкісні (до 5 %)",
+          "illustrated": false,
+          "locator": "p. 34, §§7.1.1, 7.2.3"
+        },
+        {
+          "taxon_as_reported": "Conperiplecospora antiqua",
+          "genus": "Conperiplecospora",
+          "qualifier": "",
+          "abundance": "Рідкісні (до 5 %)",
+          "illustrated": false,
+          "locator": "Table 2; p. 34, §7.2.3"
+        },
+        {
+          "taxon_as_reported": "Leiotriletes furcatus",
+          "genus": "Leiotriletes",
+          "qualifier": "",
+          "abundance": "Рідкісні (до 5 %)",
+          "illustrated": false,
+          "locator": "Table 2; p. 34, §§7.1.2, 7.2.3"
+        },
+        {
+          "taxon_as_reported": "Anreticulispora minor",
+          "genus": "Anreticulispora",
+          "qualifier": "",
+          "abundance": "Рідкісні (до 5 %)",
+          "illustrated": false,
+          "locator": "Table 2; p. 34, §7.2.3"
+        },
+        {
+          "taxon_as_reported": "A. plicata",
+          "genus": "Anreticulispora",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": false,
+          "locator": "p. 34, §7.1.2"
+        },
+        {
+          "taxon_as_reported": "Apiculiretusispora plicata",
+          "genus": "Apiculiretusispora",
+          "qualifier": "",
+          "abundance": "Рідкісні (до 5 %)",
+          "illustrated": false,
+          "locator": "Table 2; pp. 34–35, §7.2.3"
+        },
+        {
+          "taxon_as_reported": "Retusotriletes minor",
+          "genus": "Retusotriletes",
+          "qualifier": "",
+          "abundance": "Рідкісні (до 5 %)",
+          "illustrated": false,
+          "locator": "Table 2; p. 34, §7.2.3"
+        },
+        {
+          "taxon_as_reported": "R. triangulatus",
+          "genus": "Retusotriletes",
+          "qualifier": "",
+          "abundance": "Рідкісні (до 5 %)",
+          "illustrated": false,
+          "locator": "Table 2; p. 34, §§7.1.2, 7.2.3"
+        },
+        {
+          "taxon_as_reported": "Acanthotriletes parvispinus",
+          "genus": "Acanthotriletes",
+          "qualifier": "",
+          "abundance": "Рідкісні (до 5 %)",
+          "illustrated": false,
+          "locator": "p. 34, §§7.1.2, 7.2.3; Table 2"
+        },
+        {
+          "taxon_as_reported": "Calamospora",
+          "genus": "Calamospora",
+          "qualifier": "",
+          "abundance": "Рідкісні (до 5 %)",
+          "illustrated": false,
+          "locator": "Table 2; p. 34, §7.2.3"
+        },
+        {
+          "taxon_as_reported": "Brochotriletes",
+          "genus": "Brochotriletes",
+          "qualifier": "",
+          "abundance": "Рідкісні (до 5 %)",
+          "illustrated": false,
+          "locator": "Table 2; p. 34, §7.2.3"
+        },
+        {
+          "taxon_as_reported": "Retusotriletes simplex",
+          "genus": "Retusotriletes",
+          "qualifier": "",
+          "abundance": "Рідкісні (до 5 %)",
+          "illustrated": false,
+          "locator": "Table 2; p. 34, §7.2.3"
+        },
+        {
+          "taxon_as_reported": "Stenozonotriletes conformis",
+          "genus": "Stenozonotriletes",
+          "qualifier": "",
+          "abundance": "Рідкісні (до 5 %)",
+          "illustrated": false,
+          "locator": "Table 2; p. 34, §7.2.3"
+        },
+        {
+          "taxon_as_reported": "S. laevigatus",
+          "genus": "Stenozonotriletes",
+          "qualifier": "",
+          "abundance": "Рідкісні (до 5 %)",
+          "illustrated": false,
+          "locator": "Table 2; p. 34, §7.2.3"
+        },
+        {
+          "taxon_as_reported": "Verrucosisporites",
+          "genus": "Verrucosisporites",
+          "qualifier": "",
+          "abundance": "Рідкісні (до 5 %)",
+          "illustrated": false,
+          "locator": "Table 2; p. 34, §7.2.3"
+        },
+        {
+          "taxon_as_reported": "Foveolatisporites",
+          "genus": "Foveolatisporites",
+          "qualifier": "",
+          "abundance": "Рідкісні (до 5 %)",
+          "illustrated": false,
+          "locator": "Table 2; p. 34, §7.2.3"
+        },
+        {
+          "taxon_as_reported": "Geminospora rugosa",
+          "genus": "Geminospora",
+          "qualifier": "",
+          "abundance": "Рідкісні (до 5 %)",
+          "illustrated": false,
+          "locator": "Table 2; p. 34, §7.2.3"
+        },
+        {
+          "taxon_as_reported": "Ambitisporites pumilis",
+          "genus": "Ambitisporites",
+          "qualifier": "",
+          "abundance": "Рідкісні (до 5 %)",
+          "illustrated": false,
+          "locator": "Table 2; p. 35, §7.2.3"
+        },
+        {
+          "taxon_as_reported": "A. simplex",
+          "genus": "Ambitisporites",
+          "qualifier": "",
+          "abundance": "Рідкісні (до 5 %)",
+          "illustrated": false,
+          "locator": "Table 2; p. 35, §7.2.3"
+        },
+        {
+          "taxon_as_reported": "Trachytriletes trivialis",
+          "genus": "Trachytriletes",
+          "qualifier": "",
+          "abundance": "Рідкісні",
+          "illustrated": false,
+          "locator": "Table 2"
+        },
+        {
+          "taxon_as_reported": "Trachytriletes? trivialis",
+          "genus": "Trachytriletes",
+          "qualifier": "?",
+          "abundance": "Рідкісні (до 5 %)",
+          "illustrated": false,
+          "locator": "p. 34, §§7.1.3, 7.2.3"
+        },
+        {
+          "taxon_as_reported": "Acanthotriletes",
+          "genus": "Acanthotriletes",
+          "qualifier": "",
+          "abundance": "Рідкісні (до 5 %)",
+          "illustrated": false,
+          "locator": "Table 2; p. 35, §7.2.3"
+        },
+        {
+          "taxon_as_reported": "Reticulatisporites",
+          "genus": "Reticulatisporites",
+          "qualifier": "",
+          "abundance": "Рідкісні (до 5 %)",
+          "illustrated": false,
+          "locator": "Table 2; p. 35, §7.2.3"
+        },
+        {
+          "taxon_as_reported": "Camptotriletes",
+          "genus": "Camptotriletes",
+          "qualifier": "",
+          "abundance": "Рідкісні (до 5 %)",
+          "illustrated": false,
+          "locator": "Table 2; p. 35, §7.2.3"
+        },
+        {
+          "taxon_as_reported": "Periplecotriletes",
+          "genus": "Periplecotriletes",
+          "qualifier": "",
+          "abundance": "Рідкісні (до 5 %)",
+          "illustrated": false,
+          "locator": "Table 2; p. 35, §7.2.3"
+        },
+        {
+          "taxon_as_reported": "Spinozonotriletes",
+          "genus": "Spinozonotriletes",
+          "qualifier": "",
+          "abundance": "Рідкісні (до 5 %)",
+          "illustrated": false,
+          "locator": "Table 2; p. 35, §7.2.3"
+        },
+        {
+          "taxon_as_reported": "Punctatisporites",
+          "genus": "Punctatisporites",
+          "qualifier": "",
+          "abundance": "Домінанти (понад 20 %)",
+          "illustrated": false,
+          "locator": "Table 2; p. 34, §7.2.1"
+        },
+        {
+          "taxon_as_reported": "Granulatisporites",
+          "genus": "Granulatisporites",
+          "qualifier": "",
+          "abundance": "Домінанти (понад 20 %); also Рідкісні (до 5 %) in §7.2.3",
+          "illustrated": false,
+          "locator": "Table 2; p. 34, §§7.2.1, 7.2.3"
+        },
+        {
+          "taxon_as_reported": "Leiotriletes",
+          "genus": "Leiotriletes",
+          "qualifier": "",
+          "abundance": "Субдомінанти (5–20 %)",
+          "illustrated": false,
+          "locator": "Table 2; p. 34, §7.2.2"
+        },
+        {
+          "taxon_as_reported": "Microreticulatisporites",
+          "genus": "Microreticulatisporites",
+          "qualifier": "",
+          "abundance": "Субдомінанти (5–20 %)",
+          "illustrated": false,
+          "locator": "Table 2; p. 34, §7.2.2"
+        },
+        {
+          "taxon_as_reported": "Trachytriletes? devonicus",
+          "genus": "Trachytriletes",
+          "qualifier": "?",
+          "abundance": "Субдомінанти (5–20 %); also Рідкісні (до 5 %) in §7.2.3",
+          "illustrated": false,
+          "locator": "Table 2; p. 34, §§7.2.2, 7.2.3"
+        },
+        {
+          "taxon_as_reported": "Leiotriletes laevis",
+          "genus": "Leiotriletes",
+          "qualifier": "",
+          "abundance": "Рідкісні (до 5 %)",
+          "illustrated": false,
+          "locator": "p. 34, §§7.1.3, 7.2.3"
+        },
+        {
+          "taxon_as_reported": "L. simplex",
+          "genus": "Leiotriletes",
+          "qualifier": "",
+          "abundance": "Рідкісні (до 5 %)",
+          "illustrated": false,
+          "locator": "p. 34, §7.2.3"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,535 @@
+{
+  "doc": {
+    "doi": "10.3140/bull.geosci.1383",
+    "citation": "Le Hérissé, A., Paris, F. & Steemans, P. 2013. Late Ordovician–earliest Silurian palynomorphs from northern Chad and correlation with contemporaneous deposits of southeastern Libya. Bulletin of Geosciences 88(3), 483–504.",
+    "language": "English",
+    "reports_window_spores": true,
+    "comment": "The shared Moussegouda cryptospore list and explicitly localised specimens are recorded separately; these overlapping records must not be counted as independent assemblages. Figure 10 mentions southeastern Libya in its heading, but every listed specimen is from Moussegouda. KW-2 has no named spore list. Moussegouda material includes slides previously studied by Calandra (SNEAP internal report, 1964). Reworking concerns marine palynomorphs; spores are not identified as reworked. Velatitetras rugosa has inconsistent authorities in the text and caption. The supplied DOI matches the paper; live Crossref verification was unavailable."
+  },
+  "items": [
+    {
+      "assemblage_id": "Moussegouda_shared_cryptospore_list",
+      "scope": "section-interval",
+      "locality": "Erdi Basin, northern Chad",
+      "country": "Chad",
+      "formation": "Memouniat Formation; Tanezzuft Formation",
+      "section_or_core": "Moussegouda core hole, cores 10–3",
+      "depth_or_level": "233 to 123 m",
+      "latitude": "21°40´N",
+      "longitude": "18°36´E",
+      "palaeogeo_unit_reported": "northern Gondwana",
+      "palaeo_unit_proposed": "Gondwana-North-Africa-Arabia",
+      "age_as_reported": "Late Ordovician and possibly earliest Silurian",
+      "age_basis": "mixed",
+      "age_basis_detail": "Independent marine evidence assigns cores 10–9 to the Hirnantian and cores 2–8 to the latest Hirnantian, with earliest Rhuddanian not excluded. Spores indicate Sub-zone β of the Imperfectotriletes Interval Biozone, whose maximum range is reported as Hirnantian to early Aeronian, probably not younger than Rhuddanian.",
+      "age_circular": false,
+      "stage_min_proposed": "Hirnantian",
+      "stage_max_proposed": "Rhuddanian",
+      "setting_as_reported": "periglacial conditions for cores 9 and 10 and with littoral to marginal marine environmental conditions, with freshwater influences, for the cores 2 to 8 interval",
+      "setting_class": "marginal-marine",
+      "n_samples": "",
+      "reworking_status": "discussed",
+      "notes": "Cryptospores are abundant and well preserved; the paper states that the studied miospore assemblages are very similar and supplies this shared list. Twenty-three Moussegouda samples were studied overall, but the number represented by this spore-bearing interval is not specified. Cores 9–10 were preliminarily referred to the Memouniat Formation; the overlying succession is referred to the Tanezzuft Formation. Enclosed cryptospores are highly abundant and Imperfectotriletes numerous at assemblage level. L. divellomedia is absent. Sample-specific illustrated occurrences and the two trilete-bearing samples are separate overlapping records below. Marine palynomorphs receive extensive treatment; reworking is discussed for acritarchs and chitinozoans, not spores.",
+      "locator": "pp. 484–485, Regional geological setting, Material and methods, and Palynology: Cryptospores and plant fragments; p. 487, Biostratigraphy: Cryptospores; pp. 489–490, 500",
+      "occurrences": [
+        {
+          "taxon_as_reported": "Dyadospora murusattenuata Strother & Traverse, 1979",
+          "genus": "Dyadospora",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "p. 485; Fig. 10B, C, caption p. 498"
+        },
+        {
+          "taxon_as_reported": "D. murusdensa Strother & Traverse, 1979",
+          "genus": "Dyadospora",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": false,
+          "locator": "p. 485, Cryptospores and plant fragments"
+        },
+        {
+          "taxon_as_reported": "Pseudodyadospora petasus Wellman & Richardson, 1993",
+          "genus": "Pseudodyadospora",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": false,
+          "locator": "p. 485, Cryptospores and plant fragments"
+        },
+        {
+          "taxon_as_reported": "Tetrahedraletes medinensis Strother & Traverse, 1979",
+          "genus": "Tetrahedraletes",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "p. 485; Fig. 10L, caption p. 498"
+        },
+        {
+          "taxon_as_reported": "T. grayii Strother, 1991",
+          "genus": "Tetrahedraletes",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "p. 485; Fig. 10K, caption p. 498"
+        },
+        {
+          "taxon_as_reported": "Segestrespora laevigata Burgess, 1991",
+          "genus": "Segestrespora",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "p. 485; Fig. 10H, caption p. 498"
+        },
+        {
+          "taxon_as_reported": "S. rugosa (Johnson) Burgess, 1991",
+          "genus": "Segestrespora",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "p. 485; Fig. 10J, caption p. 498"
+        },
+        {
+          "taxon_as_reported": "S. membranifera (Johnson) Burgess, 1991",
+          "genus": "Segestrespora",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "p. 485; Fig. 10I, caption p. 498"
+        },
+        {
+          "taxon_as_reported": "Rugosphaera cerebra Miller & Eames, 1982",
+          "genus": "Rugosphaera",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "p. 485; Fig. 10A, caption p. 498"
+        },
+        {
+          "taxon_as_reported": "Velatitetras laevigata Burgess, 1991",
+          "genus": "Velatitetras",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "p. 485; Fig. 10M, caption p. 498"
+        },
+        {
+          "taxon_as_reported": "V. rugosa Steemans et al., 1996",
+          "genus": "Velatitetras",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "p. 485; Fig. 10O, caption p. 498, gives a different authority"
+        },
+        {
+          "taxon_as_reported": "V. retimembrana (Miller & Eames) Wellman & Richardson, 1996",
+          "genus": "Velatitetras",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "p. 485; Fig. 10N, caption p. 498"
+        },
+        {
+          "taxon_as_reported": "Rimosotetras problematica Burgess, 1991",
+          "genus": "Rimosotetras",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "p. 485; Fig. 10G, caption p. 498"
+        },
+        {
+          "taxon_as_reported": "Imperfectotriletes patinatus Steemans et al., 2000",
+          "genus": "Imperfectotriletes",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": false,
+          "locator": "p. 485, Cryptospores and plant fragments"
+        },
+        {
+          "taxon_as_reported": "Imperfectotriletes vavrdovae (Richardson) Steemans et al., 2000",
+          "genus": "Imperfectotriletes",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "pp. 485–486; Fig. 10D, E, caption p. 498"
+        }
+      ]
+    },
+    {
+      "assemblage_id": "Moussegouda_C9_220_221",
+      "scope": "sample",
+      "locality": "Erdi Basin, northern Chad",
+      "country": "Chad",
+      "formation": "Memouniat Formation",
+      "section_or_core": "Moussegouda core hole, core 9",
+      "depth_or_level": "220–221A m; 220–221 m",
+      "latitude": "21°40´N",
+      "longitude": "18°36´E",
+      "palaeogeo_unit_reported": "northern Gondwana",
+      "palaeo_unit_proposed": "Gondwana-North-Africa-Arabia",
+      "age_as_reported": "Hirnantian",
+      "age_basis": "mixed",
+      "age_basis_detail": "Chitinozoan Assemblage 1 and the basal acritarch assemblage support a Hirnantian age; acritarch correlation specifies late Hirnantian strata.",
+      "age_circular": false,
+      "stage_min_proposed": "Hirnantian",
+      "stage_max_proposed": "Hirnantian",
+      "setting_as_reported": "Late Ordovician glacio-marine diamictites",
+      "setting_class": "marine-shelf",
+      "n_samples": "1",
+      "reworking_status": "discussed",
+      "notes": "Memouniat assignment was preliminary. All listed illustrated spores are on slide 60950; the caption uses 220–221A for most and 220–221 m for Rimosotetras. This record overlaps the shared interval list and contains only sample-localised taxa. Reworked acritarchs and possibly chitinozoans occur; spore reworking is not reported.",
+      "locator": "Fig. 10A, B, G, J–L, O, caption p. 498; pp. 485, 488, 490, 492, 500",
+      "occurrences": [
+        {
+          "taxon_as_reported": "Rugosphaera cerebra Miller & Eames, 1982",
+          "genus": "Rugosphaera",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Fig. 10A; core 9, 220–221A, slide 60950 (H30/4)"
+        },
+        {
+          "taxon_as_reported": "Dyadospora murusattenuata Strother & Traverse, 1979",
+          "genus": "Dyadospora",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Fig. 10B; slide 60950 (Q34.3)"
+        },
+        {
+          "taxon_as_reported": "Rimosotetras problematica Burgess, 1991",
+          "genus": "Rimosotetras",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Fig. 10G; 220–221 m, slide 60950 (C34/1)"
+        },
+        {
+          "taxon_as_reported": "Segestrespora rugosa (Johnson, 1985) Burgess, 1991",
+          "genus": "Segestrespora",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Fig. 10J; slide 60950 (C33/1)"
+        },
+        {
+          "taxon_as_reported": "Tetrahedraletes grayii Strother, 1991",
+          "genus": "Tetrahedraletes",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Fig. 10K; slide 60950 (Q34/3)"
+        },
+        {
+          "taxon_as_reported": "Tetrahedraletes medinensis Strother & Traverse, 1979",
+          "genus": "Tetrahedraletes",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Fig. 10L; slide 60950 (J30/4)"
+        },
+        {
+          "taxon_as_reported": "Velatitetras rugosa (Strother & Traverse, 1979) Steemans et al., 2000",
+          "genus": "Velatitetras",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Fig. 10O; slide 60950 (Q30)"
+        }
+      ]
+    },
+    {
+      "assemblage_id": "Moussegouda_C8_205_206",
+      "scope": "sample",
+      "locality": "Erdi Basin, northern Chad",
+      "country": "Chad",
+      "formation": "Tanezzuft Formation",
+      "section_or_core": "Moussegouda core hole, core 8",
+      "depth_or_level": "205–206 m",
+      "latitude": "21°40´N",
+      "longitude": "18°36´E",
+      "palaeogeo_unit_reported": "northern Gondwana",
+      "palaeo_unit_proposed": "Gondwana-North-Africa-Arabia",
+      "age_as_reported": "latest Hirnantian",
+      "age_basis": "chitinozoan",
+      "age_basis_detail": "Assemblage 2, interpreted as post-elongata and pre-fragilis; the authors propose latest Hirnantian for cores 2–8 but explicitly cannot exclude earliest Rhuddanian.",
+      "age_circular": false,
+      "stage_min_proposed": "Hirnantian",
+      "stage_max_proposed": "Rhuddanian",
+      "setting_as_reported": "littoral to marginal marine environmental conditions, with freshwater influences",
+      "setting_class": "marginal-marine",
+      "n_samples": "1",
+      "reworking_status": "discussed",
+      "notes": "Overlaps the shared interval list; only the explicitly illustrated spore is listed here. Marine taxa persisting into the base of the upper assemblage are discussed as possibly reworked; spore reworking is not reported.",
+      "locator": "Fig. 10I, caption p. 498; pp. 485, 488–489, 492–494",
+      "occurrences": [
+        {
+          "taxon_as_reported": "Segestrespora membranifera (Johnson, 1985) Burgess, 1991",
+          "genus": "Segestrespora",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Fig. 10I; slide 60979 (L37)"
+        }
+      ]
+    },
+    {
+      "assemblage_id": "Moussegouda_C8_201_202",
+      "scope": "sample",
+      "locality": "Erdi Basin, northern Chad",
+      "country": "Chad",
+      "formation": "Tanezzuft Formation",
+      "section_or_core": "Moussegouda core hole, core 8",
+      "depth_or_level": "201–202 m",
+      "latitude": "21°40´N",
+      "longitude": "18°36´E",
+      "palaeogeo_unit_reported": "northern Gondwana",
+      "palaeo_unit_proposed": "Gondwana-North-Africa-Arabia",
+      "age_as_reported": "latest Hirnantian",
+      "age_basis": "chitinozoan",
+      "age_basis_detail": "Assemblage 2; latest Hirnantian proposed for cores 2–8, with earliest Rhuddanian explicitly not excluded.",
+      "age_circular": false,
+      "stage_min_proposed": "Hirnantian",
+      "stage_max_proposed": "Rhuddanian",
+      "setting_as_reported": "littoral to marginal marine environmental conditions, with freshwater influences",
+      "setting_class": "marginal-marine",
+      "n_samples": "1",
+      "reworking_status": "none",
+      "notes": "Overlaps the shared interval list; only sample-localised spores are listed here. The illustrated Pseudodyadospora sp. is not explicitly identified as P. petasus.",
+      "locator": "Fig. 10C, E, F, H, M, caption p. 498; pp. 485, 488–489",
+      "occurrences": [
+        {
+          "taxon_as_reported": "Dyadospora murusattenuata Strother & Traverse, 1979",
+          "genus": "Dyadospora",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Fig. 10C; slide 60948 (L31/2)"
+        },
+        {
+          "taxon_as_reported": "Imperfectotriletes vavrdovae Steemans et al., 2000",
+          "genus": "Imperfectotriletes",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Fig. 10E; slide 60948 (Q28/2)"
+        },
+        {
+          "taxon_as_reported": "Pseudodyadospora sp.",
+          "genus": "Pseudodyadospora",
+          "qualifier": "sp.",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Fig. 10F; slide 60948 (G25)"
+        },
+        {
+          "taxon_as_reported": "Segestrespora laevigata Burgess, 1991",
+          "genus": "Segestrespora",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Fig. 10H; slide 60948 (M38)"
+        },
+        {
+          "taxon_as_reported": "Velatitetras laevigata Burgess, 1991",
+          "genus": "Velatitetras",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Fig. 10M; slide 60948 (H37)"
+        }
+      ]
+    },
+    {
+      "assemblage_id": "Moussegouda_C8_200",
+      "scope": "sample",
+      "locality": "Erdi Basin, northern Chad",
+      "country": "Chad",
+      "formation": "Tanezzuft Formation",
+      "section_or_core": "Moussegouda core hole, core 8",
+      "depth_or_level": "200 m",
+      "latitude": "21°40´N",
+      "longitude": "18°36´E",
+      "palaeogeo_unit_reported": "northern Gondwana",
+      "palaeo_unit_proposed": "Gondwana-North-Africa-Arabia",
+      "age_as_reported": "latest Hirnantian",
+      "age_basis": "chitinozoan",
+      "age_basis_detail": "Assemblage 2; latest Hirnantian proposed for cores 2–8, with earliest Rhuddanian explicitly not excluded.",
+      "age_circular": false,
+      "stage_min_proposed": "Hirnantian",
+      "stage_max_proposed": "Rhuddanian",
+      "setting_as_reported": "littoral to marginal marine environmental conditions, with freshwater influences",
+      "setting_class": "marginal-marine",
+      "n_samples": "1",
+      "reworking_status": "none",
+      "notes": "Overlaps the shared interval list; only the explicitly illustrated spore is listed here.",
+      "locator": "Fig. 10D, caption p. 498; pp. 485, 488–489",
+      "occurrences": [
+        {
+          "taxon_as_reported": "Imperfectotriletes vavrdovae Steemans et al., 2000",
+          "genus": "Imperfectotriletes",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Fig. 10D; slide 60947 (H33)"
+        }
+      ]
+    },
+    {
+      "assemblage_id": "Moussegouda_C5_150_156",
+      "scope": "sample",
+      "locality": "Erdi Basin, northern Chad",
+      "country": "Chad",
+      "formation": "Tanezzuft Formation",
+      "section_or_core": "Moussegouda core hole, core 5",
+      "depth_or_level": "150–156 m",
+      "latitude": "21°40´N",
+      "longitude": "18°36´E",
+      "palaeogeo_unit_reported": "northern Gondwana",
+      "palaeo_unit_proposed": "Gondwana-North-Africa-Arabia",
+      "age_as_reported": "latest Hirnantian",
+      "age_basis": "chitinozoan",
+      "age_basis_detail": "Assemblage 2; latest Hirnantian proposed for cores 2–8, with earliest Rhuddanian explicitly not excluded.",
+      "age_circular": false,
+      "stage_min_proposed": "Hirnantian",
+      "stage_max_proposed": "Rhuddanian",
+      "setting_as_reported": "littoral to marginal marine environmental conditions, with freshwater influences",
+      "setting_class": "marginal-marine",
+      "n_samples": "1",
+      "reworking_status": "none",
+      "notes": "One of only two samples explicitly reported to contain true trilete spores. The shared cryptospore list is recorded separately and is not repeated as a sample-specific inventory.",
+      "locator": "p. 486, Cryptospores and plant fragments; core assignment corroborated by Figs 8–9 captions",
+      "occurrences": [
+        {
+          "taxon_as_reported": "Ambitisporites avitus-dilutus sensu Steemans et al., 1996",
+          "genus": "Ambitisporites",
+          "qualifier": "",
+          "abundance": "one specimen",
+          "illustrated": false,
+          "locator": "p. 486, Cryptospores and plant fragments"
+        }
+      ]
+    },
+    {
+      "assemblage_id": "Moussegouda_C3_123_124",
+      "scope": "sample",
+      "locality": "Erdi Basin, northern Chad",
+      "country": "Chad",
+      "formation": "Tanezzuft Formation",
+      "section_or_core": "Moussegouda core hole, core 3",
+      "depth_or_level": "123–124 m",
+      "latitude": "21°40´N",
+      "longitude": "18°36´E",
+      "palaeogeo_unit_reported": "northern Gondwana",
+      "palaeo_unit_proposed": "Gondwana-North-Africa-Arabia",
+      "age_as_reported": "latest Hirnantian–basal Rhuddanian?",
+      "age_basis": "chitinozoan",
+      "age_basis_detail": "Euconochitina moussegoudaensis type horizon and Assemblage 2; latest Hirnantian preferred, earliest Rhuddanian not excluded.",
+      "age_circular": false,
+      "stage_min_proposed": "Hirnantian",
+      "stage_max_proposed": "Rhuddanian",
+      "setting_as_reported": "littoral to marginal marine environmental conditions, with freshwater influences",
+      "setting_class": "marginal-marine",
+      "n_samples": "1",
+      "reworking_status": "none",
+      "notes": "Overlaps the shared interval list; only the explicitly illustrated spore is listed here. This depth interval is retained separately from the reported 120–126 m sample.",
+      "locator": "Fig. 10N, caption p. 498; p. 496, Euconochitina moussegoudaensis type horizon",
+      "occurrences": [
+        {
+          "taxon_as_reported": "Velatitetras retimembrana (Miller & Eames, 1982) Wellman & Richardson, 1996",
+          "genus": "Velatitetras",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Fig. 10N; slide 60901 (H36)"
+        }
+      ]
+    },
+    {
+      "assemblage_id": "Moussegouda_C3_120_126",
+      "scope": "sample",
+      "locality": "Erdi Basin, northern Chad",
+      "country": "Chad",
+      "formation": "Tanezzuft Formation",
+      "section_or_core": "Moussegouda core hole, core 3",
+      "depth_or_level": "120–126 m",
+      "latitude": "21°40´N",
+      "longitude": "18°36´E",
+      "palaeogeo_unit_reported": "northern Gondwana",
+      "palaeo_unit_proposed": "Gondwana-North-Africa-Arabia",
+      "age_as_reported": "latest Hirnantian",
+      "age_basis": "chitinozoan",
+      "age_basis_detail": "Assemblage 2; latest Hirnantian proposed for cores 2–8, with earliest Rhuddanian explicitly not excluded.",
+      "age_circular": false,
+      "stage_min_proposed": "Hirnantian",
+      "stage_max_proposed": "Rhuddanian",
+      "setting_as_reported": "littoral to marginal marine environmental conditions, with freshwater influences",
+      "setting_class": "marginal-marine",
+      "n_samples": "1",
+      "reworking_status": "none",
+      "notes": "Two of the three true trilete specimens reported in the study occur here. This reported sample overlaps the 123–124 m illustrated cryptospore sample; their physical relationship is not explained.",
+      "locator": "p. 486, Cryptospores and plant fragments; core assignment corroborated by Fig. 9 caption",
+      "occurrences": [
+        {
+          "taxon_as_reported": "Ambitisporites avitus-dilutus sensu Steemans et al., 1996",
+          "genus": "Ambitisporites",
+          "qualifier": "",
+          "abundance": "two specimens",
+          "illustrated": false,
+          "locator": "p. 486, Cryptospores and plant fragments"
+        }
+      ]
+    },
+    {
+      "assemblage_id": "Moussegouda_C1_barren",
+      "scope": "section-interval",
+      "locality": "Erdi Basin, northern Chad",
+      "country": "Chad",
+      "formation": "Tanezzuft Formation",
+      "section_or_core": "Moussegouda core hole, core 1",
+      "depth_or_level": "67 to 79 m",
+      "latitude": "21°40´N",
+      "longitude": "18°36´E",
+      "palaeogeo_unit_reported": "northern Gondwana",
+      "palaeo_unit_proposed": "Gondwana-North-Africa-Arabia",
+      "age_as_reported": "latest Hirnantian or earliest Rhuddanian",
+      "age_basis": "lithostratigraphic",
+      "age_basis_detail": "Assigned with the succession tentatively referred to the lower Tanezzuft Formation, rather than dated by fossils from this barren core.",
+      "age_circular": false,
+      "stage_min_proposed": "Hirnantian",
+      "stage_max_proposed": "Rhuddanian",
+      "setting_as_reported": "post-glacial deposits",
+      "setting_class": "marginal-marine",
+      "n_samples": "",
+      "reworking_status": "none",
+      "notes": "Micaceous siltstones explicitly reported to produce no palynomorphs, hence no spores. Core 1 was initially grouped with cores 2–8 as Silurian Tanezzuft and Akakkus formations; the later interpretation tentatively places cores 1–8 in the lower Tanezzuft Formation. The overlying unsampled 0–65 m sandy interval is not included.",
+      "locator": "pp. 484–485, Regional geological setting and Material and methods; p. 498, Stratigraphical and geographical distribution; p. 500, Conclusions",
+      "occurrences": []
+    },
+    {
+      "assemblage_id": "KW2_unresolved_spore_records",
+      "scope": "section-interval",
+      "locality": "Jebel Asba area, Kufra Basin, southeastern Libya",
+      "country": "Libya",
+      "formation": "Tanezzuft Formation",
+      "section_or_core": "KW-2",
+      "depth_or_level": "",
+      "latitude": "22°56´N",
+      "longitude": "24°19´E",
+      "palaeogeo_unit_reported": "northern Gondwana",
+      "palaeo_unit_proposed": "Gondwana-North-Africa-Arabia",
+      "age_as_reported": "latest Hirnantian–earliest Rhuddanian",
+      "age_basis": "mixed",
+      "age_basis_detail": "Chitinozoans correlate the basal KW-2 assemblage with Moussegouda Assemblage 2. Normalograptus medius from other KW-2 cores ranges across the Ordovician–Silurian boundary and does not provide a definitive boundary assignment.",
+      "age_circular": false,
+      "stage_min_proposed": "Hirnantian",
+      "stage_max_proposed": "Rhuddanian",
+      "setting_as_reported": "nearshore conditions, with obvious fresh water influences",
+      "setting_class": "marginal-marine",
+      "n_samples": "2",
+      "reworking_status": "none",
+      "notes": "The abstract includes two KW-2 samples in the investigated cryptospore-bearing palynomorph material, and the palaeoenvironmental discussion mentions good representation of miospores. No spore taxon or spore-specific sample depth is explicitly assigned to KW-2, so occurrences are empty rather than inferred from Moussegouda. Marine specimens are illustrated from 34–36 m and 36 m, but these depths are not explicitly linked to spores. Figure 10 lists no Libyan specimen despite its heading. The paper re-evaluates marine assemblages previously reported by Grignani, Lanzoni & Elatrash (1991), Palaeozoic and Mesozoic Subsurface Palynostratigraphy in Al Kufrah Basin, Libya.",
+      "locator": "p. 483, abstract; pp. 484–485, Regional geological setting and Material and methods; p. 489, Chitinozoans; p. 494, Microphytoplankton; Fig. 10 caption p. 498",
+      "occurrences": []
+    }
+  ]
+}

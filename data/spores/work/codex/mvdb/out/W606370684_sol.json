@@ -1,0 +1,1327 @@
+{
+  "doc": {
+    "doi": "10.1016/j.revpalbo.2015.06.007",
+    "citation": "Mehlqvist, K., Steemans, P. and Vajda, V. (2015). First evidence of Devonian strata in Sweden — A palynological investigation of Övedskloster drillcores 1 and 2, Skåne, Sweden. Review of Palaeobotany and Palynology 221, 144–159. https://doi.org/10.1016/j.revpalbo.2015.06.007",
+    "language": "English",
+    "reports_window_spores": true,
+    "comment": "Records follow the named Ö2 assemblages and the Ö1 section interval, retaining sample depths and counts where available. A supplementary composite retains collective-only and unprovenanced plate identifications; it is not an independent assemblage. Figure 5A contains fewer taxa than the stated richness totals. The abstract reports 50 samples, whereas methods report 45 from Ö2 plus six from Ö1. Assemblage A is principally assigned to Přídolí but also described as latest Ludlow to Přídolí. Assemblage B includes an uncertain transitional interval. Older-ranging spores in B are interpreted as reworked, although incomplete knowledge of Lochkovian ranges is acknowledged. Prose describing the upper 70 m as spore-barren conflicts with sparse Figure 5A counts. Plate captions contain spelling and identification differences from the species list. Comparisons with earlier papers are not treated as newly sampled assemblages."
+  },
+  "items": [
+    {
+      "assemblage_id": "Ovedskloster-2-A",
+      "scope": "section-interval",
+      "locality": "Övedskloster, directly south of the Helvetesgraven sandstone quarry, c. 10 km NW of Sjöbo, Skåne",
+      "country": "Sweden",
+      "formation": "Öved Sandstone Formation",
+      "section_or_core": "Övedskloster 2 (Ö2)",
+      "depth_or_level": "208.45–145.30 m",
+      "latitude": "",
+      "longitude": "",
+      "palaeogeo_unit_reported": "Baltica",
+      "palaeo_unit_proposed": "Baltica",
+      "age_as_reported": "latest Ludlow to Přídolí",
+      "age_basis": "mixed",
+      "age_basis_detail": "Spore correlation with the Synorisporites tripapillatus–Apiculiretusispora spicula Assemblage Zone; basal tentaculitids independently indicate Přídolí according to K. Larsson, personal communication.",
+      "age_circular": true,
+      "stage_min_proposed": "Ludfordian",
+      "stage_max_proposed": "Pridoli",
+      "setting_as_reported": "nearshore marine marls",
+      "setting_class": "marine-shelf",
+      "n_samples": "11 levels in Fig. 5A",
+      "reworking_status": "none",
+      "notes": "The dedicated Assemblage A description and conclusions assign Přídolí; the later interpretation says latest Ludlow to Přídolí. Section 4 initially describes the Přídolían interval as extending to 135.0 m, whereas the named assemblage ends at 145.30 m. Figure 5A supplies 36 taxon columns with occurrences in A. Numerical abundances below are Figure 5A counts by sample depth, not percentages. Plate captions provide no specimen depths; illustrated indicates illustration of the taxon somewhere in the paper, without assigning the illustrated specimen to A. The discussion questions whether the predominantly quadrahedric tetrads at 199.00 m represent Nodospora rather than Tetrahedraletes.",
+      "locator": "Sections 4, 4.1.1.1 and 4.1.1.3, pp. 146, 151; Fig. 5A, p. 154",
+      "occurrences": [
+        {
+          "taxon_as_reported": "Ambitisporites avitus-dilutus",
+          "genus": "Ambitisporites",
+          "qualifier": "",
+          "abundance": "208.45 m: 26; 200.69 m: 1; 199.79 m: 2; 199.00 m: 18; 183.00 m: 1",
+          "illustrated": false,
+          "locator": "Fig. 5A"
+        },
+        {
+          "taxon_as_reported": "Ambitisporites parvus",
+          "genus": "Ambitisporites",
+          "qualifier": "",
+          "abundance": "208.45 m: 1; 199.00 m: 1; 164.92 m: 1",
+          "illustrated": false,
+          "locator": "Fig. 5A"
+        },
+        {
+          "taxon_as_reported": "Apiculiretusispora burgsvikensis",
+          "genus": "Apiculiretusispora",
+          "qualifier": "",
+          "abundance": "208.45 m: 2",
+          "illustrated": false,
+          "locator": "Fig. 5A"
+        },
+        {
+          "taxon_as_reported": "Apiculiretusispora spicula",
+          "genus": "Apiculiretusispora",
+          "qualifier": "",
+          "abundance": "199.00 m: 2",
+          "illustrated": true,
+          "locator": "Fig. 5A; Plate IV, E"
+        },
+        {
+          "taxon_as_reported": "Apiculiretusispora spp.",
+          "genus": "Apiculiretusispora",
+          "qualifier": "spp.",
+          "abundance": "199.00 m: 5; 165.75 m: 1; 164.92 m: 2",
+          "illustrated": false,
+          "locator": "Fig. 5A"
+        },
+        {
+          "taxon_as_reported": "Archaeozonotriletes chulus",
+          "genus": "Archaeozonotriletes",
+          "qualifier": "",
+          "abundance": "208.45 m: 43; 200.69 m: 1; 199.00 m: 2; 174.20 m: 3; 164.92 m: 3; 145.30 m: 3",
+          "illustrated": true,
+          "locator": "Fig. 5A; Plate I, D"
+        },
+        {
+          "taxon_as_reported": "Artemopyra radiata",
+          "genus": "Artemopyra",
+          "qualifier": "",
+          "abundance": "199.00 m: 2",
+          "illustrated": false,
+          "locator": "Fig. 5A"
+        },
+        {
+          "taxon_as_reported": "Artemopyra scalariformis",
+          "genus": "Artemopyra",
+          "qualifier": "",
+          "abundance": "208.45 m: 1",
+          "illustrated": true,
+          "locator": "Fig. 5A; Plate I, R"
+        },
+        {
+          "taxon_as_reported": "Chelinohilates lornensis",
+          "genus": "Chelinohilates",
+          "qualifier": "",
+          "abundance": "208.45 m: 1",
+          "illustrated": true,
+          "locator": "Fig. 5A; Plate I, O"
+        },
+        {
+          "taxon_as_reported": "Chelinohilates spp.",
+          "genus": "Chelinohilates",
+          "qualifier": "spp.",
+          "abundance": "208.45 m: 1",
+          "illustrated": false,
+          "locator": "Fig. 5A"
+        },
+        {
+          "taxon_as_reported": "Chelinospora spp.",
+          "genus": "Chelinospora",
+          "qualifier": "spp.",
+          "abundance": "199.00 m: 1",
+          "illustrated": false,
+          "locator": "Fig. 5A"
+        },
+        {
+          "taxon_as_reported": "Emphanisporites concentricus",
+          "genus": "Emphanisporites",
+          "qualifier": "",
+          "abundance": "199.00 m: 1",
+          "illustrated": true,
+          "locator": "Fig. 5A; Plate IV, N"
+        },
+        {
+          "taxon_as_reported": "Emphanisporites rotatus",
+          "genus": "Emphanisporites",
+          "qualifier": "",
+          "abundance": "208.45 m: 1",
+          "illustrated": true,
+          "locator": "Fig. 5A; Plate II, F, captioned Emphanisporites rotates"
+        },
+        {
+          "taxon_as_reported": "Gneudnaspora divellomedia",
+          "genus": "Gneudnaspora",
+          "qualifier": "",
+          "abundance": "208.45 m: 32; 200.69 m: 5; 199.79 m: 2; 199.00 m: 12; 194.05 m: 1; 174.20 m: 2; 165.75 m: 13; 164.92 m: 12; 155.42 m: 3",
+          "illustrated": false,
+          "locator": "Fig. 5A"
+        },
+        {
+          "taxon_as_reported": "Hispanaediscus lamontii",
+          "genus": "Hispanaediscus",
+          "qualifier": "",
+          "abundance": "199.00 m: 2",
+          "illustrated": false,
+          "locator": "Fig. 5A"
+        },
+        {
+          "taxon_as_reported": "Hispanaediscus major",
+          "genus": "Hispanaediscus",
+          "qualifier": "",
+          "abundance": "200.69 m: 1",
+          "illustrated": false,
+          "locator": "Fig. 5A"
+        },
+        {
+          "taxon_as_reported": "Hispanaediscus sp. A",
+          "genus": "Hispanaediscus",
+          "qualifier": "sp.",
+          "abundance": "208.45 m: 1",
+          "illustrated": true,
+          "locator": "Fig. 5A; Plate II, J–K"
+        },
+        {
+          "taxon_as_reported": "Hispanaediscus spp.",
+          "genus": "Hispanaediscus",
+          "qualifier": "spp.",
+          "abundance": "208.45 m: 1",
+          "illustrated": false,
+          "locator": "Fig. 5A"
+        },
+        {
+          "taxon_as_reported": "Hispanaediscus verrucatus",
+          "genus": "Hispanaediscus",
+          "qualifier": "",
+          "abundance": "208.45 m: 1",
+          "illustrated": false,
+          "locator": "Fig. 5A"
+        },
+        {
+          "taxon_as_reported": "Imperfectotriletes patinatus-vavrdovae morphon",
+          "genus": "Imperfectotriletes",
+          "qualifier": "",
+          "abundance": "208.45 m: 4",
+          "illustrated": false,
+          "locator": "Fig. 5A"
+        },
+        {
+          "taxon_as_reported": "Pseudodyadospora petasus",
+          "genus": "Pseudodyadospora",
+          "qualifier": "",
+          "abundance": "199.00 m: 2",
+          "illustrated": true,
+          "locator": "Fig. 5A; Plate I, T"
+        },
+        {
+          "taxon_as_reported": "Retusotriletes goensis",
+          "genus": "Retusotriletes",
+          "qualifier": "",
+          "abundance": "208.45 m: 1; 199.00 m: 13; 183.00 m: 1",
+          "illustrated": false,
+          "locator": "Fig. 5A"
+        },
+        {
+          "taxon_as_reported": "Retusotriletes maccullockii",
+          "genus": "Retusotriletes",
+          "qualifier": "",
+          "abundance": "194.05 m: 1; 183.00 m: 1",
+          "illustrated": true,
+          "locator": "Fig. 5A; Plate II, H"
+        },
+        {
+          "taxon_as_reported": "Retusotriletes spp.",
+          "genus": "Retusotriletes",
+          "qualifier": "spp.",
+          "abundance": "208.45 m: 1; 200.69 m: 5; 199.79 m: 3; 199.00 m: 11; 183.00 m: 1; 165.75 m: 2; 155.42 m: 1",
+          "illustrated": false,
+          "locator": "Fig. 5A"
+        },
+        {
+          "taxon_as_reported": "Retusotriletes triangulatus",
+          "genus": "Retusotriletes",
+          "qualifier": "",
+          "abundance": "208.45 m: 1; 199.00 m: 1",
+          "illustrated": true,
+          "locator": "Fig. 5A; Plate I, P, captioned Retusotriletes triangulates"
+        },
+        {
+          "taxon_as_reported": "Retusotriletes warringtonii",
+          "genus": "Retusotriletes",
+          "qualifier": "",
+          "abundance": "208.45 m: 1; 199.00 m: 11",
+          "illustrated": false,
+          "locator": "Fig. 5A"
+        },
+        {
+          "taxon_as_reported": "Rimosotetras problematica",
+          "genus": "Rimosotetras",
+          "qualifier": "",
+          "abundance": "208.45 m: 1; 199.00 m: 2",
+          "illustrated": false,
+          "locator": "Fig. 5A"
+        },
+        {
+          "taxon_as_reported": "Scylaspora downiei",
+          "genus": "Scylaspora",
+          "qualifier": "",
+          "abundance": "208.45 m: 1",
+          "illustrated": true,
+          "locator": "Fig. 5A; Plate II, A, N"
+        },
+        {
+          "taxon_as_reported": "Scylaspora scripta",
+          "genus": "Scylaspora",
+          "qualifier": "",
+          "abundance": "199.00 m: 1",
+          "illustrated": false,
+          "locator": "Fig. 5A"
+        },
+        {
+          "taxon_as_reported": "Synorisporites libycus",
+          "genus": "Synorisporites",
+          "qualifier": "",
+          "abundance": "199.00 m: 1",
+          "illustrated": false,
+          "locator": "Fig. 5A"
+        },
+        {
+          "taxon_as_reported": "Synorisporites sp. S",
+          "genus": "Synorisporites",
+          "qualifier": "sp.",
+          "abundance": "199.00 m: 1",
+          "illustrated": false,
+          "locator": "Fig. 5A"
+        },
+        {
+          "taxon_as_reported": "Synorisporites tripapillatus",
+          "genus": "Synorisporites",
+          "qualifier": "",
+          "abundance": "208.45 m: 1",
+          "illustrated": true,
+          "locator": "Fig. 5A; Plate IV, R"
+        },
+        {
+          "taxon_as_reported": "Synorisporites verrucatus",
+          "genus": "Synorisporites",
+          "qualifier": "",
+          "abundance": "199.00 m: 2",
+          "illustrated": false,
+          "locator": "Fig. 5A"
+        },
+        {
+          "taxon_as_reported": "Tetrahedraletes grayae",
+          "genus": "Tetrahedraletes",
+          "qualifier": "",
+          "abundance": "208.45 m: 7; 200.69 m: 2; 199.79 m: 3; 199.00 m: 38",
+          "illustrated": false,
+          "locator": "Fig. 5A"
+        },
+        {
+          "taxon_as_reported": "Tetrahedraletes medinensis",
+          "genus": "Tetrahedraletes",
+          "qualifier": "",
+          "abundance": "208.45 m: 5; 200.69 m: 1; 199.79 m: 2; 199.00 m: 66; 165.75 m: 1; 40% at 199.00 m according to section 4.1.1.2",
+          "illustrated": false,
+          "locator": "Fig. 5A; section 4.1.1.2, p. 151"
+        },
+        {
+          "taxon_as_reported": "Velatitetras laevigata",
+          "genus": "Velatitetras",
+          "qualifier": "",
+          "abundance": "199.00 m: 1",
+          "illustrated": false,
+          "locator": "Fig. 5A"
+        }
+      ]
+    },
+    {
+      "assemblage_id": "Ovedskloster-2-B",
+      "scope": "section-interval",
+      "locality": "Övedskloster, directly south of the Helvetesgraven sandstone quarry, c. 10 km NW of Sjöbo, Skåne",
+      "country": "Sweden",
+      "formation": "Öved Sandstone Formation",
+      "section_or_core": "Övedskloster 2 (Ö2)",
+      "depth_or_level": "135.00–top core",
+      "latitude": "",
+      "longitude": "",
+      "palaeogeo_unit_reported": "Baltica",
+      "palaeo_unit_proposed": "Baltica",
+      "age_as_reported": "Lochkovian",
+      "age_basis": "spore-zone",
+      "age_basis_detail": "Incoming Devonian-type spore taxa and comparison with published spore zonations, including Chelinohilates erraticus, Cymbohilates allenii, Chelinospora pseudoreticulata and Cymbohilates microgranulatus.",
+      "age_circular": true,
+      "stage_min_proposed": "Lochkovian",
+      "stage_max_proposed": "Lochkovian",
+      "setting_as_reported": "shallowing-upward succession; predominantly paralic to fluvial deposits in the uppermost 70 m",
+      "setting_class": "marginal-marine",
+      "n_samples": "33 levels in Fig. 5A, including seven without numerical spore entries",
+      "reworking_status": "claimed",
+      "notes": "Includes the 135–130.95 m transitional interval, which lacks taxa clearly indicating Lochkovian age; the firm Lochkovian assignment starts at 130 m. The text reports 73 taxa including the transition and 61 from 130 m upwards, exceeding the identifiable Figure 5A columns. Figure 5A counts are retained by sample depth. Figure 5A has no numerical entries at 35.00, 47.22, 51.61, 55.00, 58.77, 62.18 and 65.00 m. Its sparse counts above 70 m conflict with the abstract's assertion that this upper interval lacks recognisable palynomorphs. Reworking is proposed for older-ranging taxa, particularly Coronaspora cromatica, Chelinospora sanpetrensis, Concentricosiporites sagittarius, Coronaspora reticulata, Confossuspora reniforma, Scylaspora scripta, Hispanaediscus lamontii and Apiculiretusispora cf. A. asperata; incomplete knowledge of Lochkovian ranges is an alternative. The text additionally reports Chelinospora sanpetrensis at 111 m, which is not a Figure 5A sample level. Plate captions lack specimen depths; illustrated refers to illustrations elsewhere in the paper. Concentricosiporites sagittarius is captioned Concentricosisporites sagittarius on Plate II.",
+      "locator": "Sections 4.1.1.2–4.1.1.4, pp. 146–151; Figs. 5A, 7–8",
+      "occurrences": [
+        {
+          "taxon_as_reported": "Acinosporites spp.",
+          "genus": "Acinosporites",
+          "qualifier": "spp.",
+          "abundance": "134.20 m: 1",
+          "illustrated": false,
+          "locator": "Fig. 5A"
+        },
+        {
+          "taxon_as_reported": "Ambitisporites avitus-dilutus",
+          "genus": "Ambitisporites",
+          "qualifier": "",
+          "abundance": "135.00 m: 32; 134.20 m: 9; 130.95 m: 10; 130.00 m: 50; 129.78 m: 39; 129.12 m: 21; 125.00 m: 51; 108.78 m: 2; 100.00 m: 39; 97.68 m: 16; 95.00 m: 19; 92.10 m: 6; 85.00 m: 7; 81.68 m: 4; 80.00 m: 7; 75.00 m: 1",
+          "illustrated": false,
+          "locator": "Fig. 5A"
+        },
+        {
+          "taxon_as_reported": "Ambitisporites eslae",
+          "genus": "Ambitisporites",
+          "qualifier": "",
+          "abundance": "135.00 m: 1; 95.00 m: 1",
+          "illustrated": true,
+          "locator": "Fig. 5A; Plate I, A–B"
+        },
+        {
+          "taxon_as_reported": "Ambitisporites parvus",
+          "genus": "Ambitisporites",
+          "qualifier": "",
+          "abundance": "130.95 m: 1; 125.00 m: 1",
+          "illustrated": false,
+          "locator": "Fig. 5A"
+        },
+        {
+          "taxon_as_reported": "Aneurospora geikiei",
+          "genus": "Aneurospora",
+          "qualifier": "",
+          "abundance": "135.00 m: 1",
+          "illustrated": false,
+          "locator": "Fig. 5A; section 4.1.1.2"
+        },
+        {
+          "taxon_as_reported": "Apiculiretusispora burgsvikensis",
+          "genus": "Apiculiretusispora",
+          "qualifier": "",
+          "abundance": "100.00 m: 4; 95.00 m: 13",
+          "illustrated": false,
+          "locator": "Fig. 5A"
+        },
+        {
+          "taxon_as_reported": "Apiculiretusispora spicula",
+          "genus": "Apiculiretusispora",
+          "qualifier": "",
+          "abundance": "130.00 m: 4; 129.78 m: 1; 81.68 m: 1; 75.00 m: 1",
+          "illustrated": true,
+          "locator": "Fig. 5A; Plate IV, E"
+        },
+        {
+          "taxon_as_reported": "Apiculiretusispora spp.",
+          "genus": "Apiculiretusispora",
+          "qualifier": "spp.",
+          "abundance": "135.00 m: 9; 134.20 m: 9; 130.00 m: 34; 129.78 m: 33; 129.12 m: 9; 103.50 m: 5; 81.68 m: 2; 75.00 m: 1; 60.00 m: 1",
+          "illustrated": false,
+          "locator": "Fig. 5A"
+        },
+        {
+          "taxon_as_reported": "Apiculiretusispora synorea",
+          "genus": "Apiculiretusispora",
+          "qualifier": "",
+          "abundance": "134.20 m: 1; 129.78 m: 1",
+          "illustrated": true,
+          "locator": "Fig. 5A; Plate IV, A"
+        },
+        {
+          "taxon_as_reported": "Apiculiretusispora cf. A. asperata",
+          "genus": "Apiculiretusispora",
+          "qualifier": "cf.",
+          "abundance": "present at 97, 95 and 68 m",
+          "illustrated": true,
+          "locator": "Section 4.1.1.3, p. 151; Plate I, U, captioned cf. Apiculiretusispora asperata"
+        },
+        {
+          "taxon_as_reported": "Archaeozonotriletes chulus",
+          "genus": "Archaeozonotriletes",
+          "qualifier": "",
+          "abundance": "135.00 m: 68; 134.20 m: 125; 130.00 m: 51; 129.78 m: 67; 129.12 m: 121; 125.00 m: 24; 108.78 m: 2; 103.50 m: 8; 100.00 m: 4; 92.10 m: 53; 85.00 m: 68; 81.68 m: 131; 80.00 m: 144; 75.00 m: 104; 70.00 m: 2; 66.03 m: 1; 60.00 m: 3; 56.08 m: 1; 50.00 m: 1",
+          "illustrated": true,
+          "locator": "Fig. 5A; Plate I, D"
+        },
+        {
+          "taxon_as_reported": "Artemopyra radiata",
+          "genus": "Artemopyra",
+          "qualifier": "",
+          "abundance": "80.00 m: 1",
+          "illustrated": false,
+          "locator": "Fig. 5A"
+        },
+        {
+          "taxon_as_reported": "Artemopyra scalariformis",
+          "genus": "Artemopyra",
+          "qualifier": "",
+          "abundance": "81.68 m: 1; 80.00 m: 1",
+          "illustrated": true,
+          "locator": "Fig. 5A; Plate I, R"
+        },
+        {
+          "taxon_as_reported": "Artemopyra spp.",
+          "genus": "Artemopyra",
+          "qualifier": "spp.",
+          "abundance": "135.00 m: 1; 129.12 m: 1; 81.68 m: 1",
+          "illustrated": true,
+          "locator": "Fig. 5A; Plate I, E"
+        },
+        {
+          "taxon_as_reported": "Chelinohilates erraticus",
+          "genus": "Chelinohilates",
+          "qualifier": "",
+          "abundance": "present at 95.0 m",
+          "illustrated": true,
+          "locator": "Section 4.1.1.2, p. 151; Plate I, N"
+        },
+        {
+          "taxon_as_reported": "Chelinohilates lornensis",
+          "genus": "Chelinohilates",
+          "qualifier": "",
+          "abundance": "129.12 m: 2; 80.00 m: 1",
+          "illustrated": true,
+          "locator": "Fig. 5A; Plate I, O"
+        },
+        {
+          "taxon_as_reported": "Chelinohilates sinuosus",
+          "genus": "Chelinohilates",
+          "qualifier": "",
+          "abundance": "134.20 m: 1; 129.12 m: 1; 97.68 m: 1; 92.10 m: 2; 81.68 m: 2",
+          "illustrated": false,
+          "locator": "Fig. 5A; section 4.1.1.2 also reports C. sinuosus at 135.00 m"
+        },
+        {
+          "taxon_as_reported": "Chelinohilates sinuosus var. sinuosus",
+          "genus": "Chelinohilates",
+          "qualifier": "",
+          "abundance": "135.00 m: 1; 129.12 m: 1; 80.00 m: 1; 75.00 m: 1",
+          "illustrated": true,
+          "locator": "Fig. 5A; Plate I, I, captioned Chelinohilates sinuosus var. sinuous"
+        },
+        {
+          "taxon_as_reported": "Chelinohilates spp.",
+          "genus": "Chelinohilates",
+          "qualifier": "spp.",
+          "abundance": "75.00 m: 1",
+          "illustrated": false,
+          "locator": "Fig. 5A"
+        },
+        {
+          "taxon_as_reported": "Chelinospora cantabrica",
+          "genus": "Chelinospora",
+          "qualifier": "",
+          "abundance": "134.20 m: 1",
+          "illustrated": false,
+          "locator": "Fig. 5A; section 4.1.1.2"
+        },
+        {
+          "taxon_as_reported": "Chelinospora hemiesferica",
+          "genus": "Chelinospora",
+          "qualifier": "",
+          "abundance": "130.00 m: 1; 129.78 m: 2",
+          "illustrated": true,
+          "locator": "Fig. 5A; Plate IV, H"
+        },
+        {
+          "taxon_as_reported": "Chelinospora poecilomorpha",
+          "genus": "Chelinospora",
+          "qualifier": "",
+          "abundance": "130.00 m: 2; 81.68 m: 1",
+          "illustrated": false,
+          "locator": "Fig. 5A"
+        },
+        {
+          "taxon_as_reported": "Chelinospora pseudoreticulata",
+          "genus": "Chelinospora",
+          "qualifier": "",
+          "abundance": "130.00 m: 3; 129.78 m: 2",
+          "illustrated": true,
+          "locator": "Fig. 5A; Plate IV, I, captioned Chelinospora psedoreticulata"
+        },
+        {
+          "taxon_as_reported": "Chelinospora sanpetrensis",
+          "genus": "Chelinospora",
+          "qualifier": "",
+          "abundance": "130.00 m: 1; 129.78 m: 2; additionally reported present at 111 m in section 4.1.1.3",
+          "illustrated": true,
+          "locator": "Fig. 5A; section 4.1.1.3; Plate IV, G, captioned Chelinospora (Brochotriletes) sanpetrensis"
+        },
+        {
+          "taxon_as_reported": "Chelinospora spp.",
+          "genus": "Chelinospora",
+          "qualifier": "spp.",
+          "abundance": "81.68 m: 2",
+          "illustrated": false,
+          "locator": "Fig. 5A"
+        },
+        {
+          "taxon_as_reported": "Concentricosiporites sagittarius",
+          "genus": "Concentricosiporites",
+          "qualifier": "",
+          "abundance": "135.00 m: 1; 92.10 m: 1",
+          "illustrated": true,
+          "locator": "Fig. 5A; Plate II, R, captioned Concentricosisporites sagittarius"
+        },
+        {
+          "taxon_as_reported": "Confossuspora reniforma",
+          "genus": "Confossuspora",
+          "qualifier": "",
+          "abundance": "135.00 m: 1; 92.10 m: 1",
+          "illustrated": false,
+          "locator": "Fig. 5A"
+        },
+        {
+          "taxon_as_reported": "Coronaspora cromatica",
+          "genus": "Coronaspora",
+          "qualifier": "",
+          "abundance": "130.00 m: 1; 75.00 m: 1",
+          "illustrated": true,
+          "locator": "Fig. 5A; section 4.1.1.3; Plate IV, K"
+        },
+        {
+          "taxon_as_reported": "Coronaspora reticulata",
+          "genus": "Coronaspora",
+          "qualifier": "",
+          "abundance": "present at 81.68 m",
+          "illustrated": true,
+          "locator": "Section 4.1.1.3, p. 151; Plate IV, L"
+        },
+        {
+          "taxon_as_reported": "Cymbohilates allenii",
+          "genus": "Cymbohilates",
+          "qualifier": "",
+          "abundance": "134.20 m: 2; 95.00 m: 1; 92.10 m: 9; 75.00 m: 1; 66.03 m: 1",
+          "illustrated": true,
+          "locator": "Fig. 5A; Plate I, L–M"
+        },
+        {
+          "taxon_as_reported": "Cymbohilates allenii var. allenii",
+          "genus": "Cymbohilates",
+          "qualifier": "",
+          "abundance": "134.20 m: 2",
+          "illustrated": false,
+          "locator": "Fig. 5A; section 4.1.1.2"
+        },
+        {
+          "taxon_as_reported": "Cymbohilates microgranulatus",
+          "genus": "Cymbohilates",
+          "qualifier": "",
+          "abundance": "present at 100.00 m and 92.10 m",
+          "illustrated": true,
+          "locator": "Section 4.1.1.2, p. 151; Plate II, D–E"
+        },
+        {
+          "taxon_as_reported": "Cymbohilates spp.",
+          "genus": "Cymbohilates",
+          "qualifier": "spp.",
+          "abundance": "135.00 m: 1; 129.78 m: 1; 81.68 m: 1",
+          "illustrated": false,
+          "locator": "Fig. 5A"
+        },
+        {
+          "taxon_as_reported": "Emphanisporites rotatus",
+          "genus": "Emphanisporites",
+          "qualifier": "",
+          "abundance": "134.20 m: 1",
+          "illustrated": true,
+          "locator": "Fig. 5A; Plate II, F, captioned Emphanisporites rotates"
+        },
+        {
+          "taxon_as_reported": "Emphanisporites spp.",
+          "genus": "Emphanisporites",
+          "qualifier": "spp.",
+          "abundance": "135.00 m: 2",
+          "illustrated": false,
+          "locator": "Fig. 5A"
+        },
+        {
+          "taxon_as_reported": "Gneudnaspora divellomedia",
+          "genus": "Gneudnaspora",
+          "qualifier": "",
+          "abundance": "135.00 m: 21; 134.20 m: 13; 130.95 m: 10; 130.00 m: 4; 129.78 m: 5; 129.12 m: 2; 125.00 m: 20; 103.50 m: 1; 100.00 m: 25; 97.68 m: 31; 95.00 m: 33; 92.10 m: 53; 85.00 m: 8; 81.68 m: 8; 80.00 m: 2; 75.00 m: 9; 60.00 m: 1; 45.00 m: 1",
+          "illustrated": false,
+          "locator": "Fig. 5A"
+        },
+        {
+          "taxon_as_reported": "Hispanaediscus lamontii",
+          "genus": "Hispanaediscus",
+          "qualifier": "",
+          "abundance": "130.00 m: 1; 129.78 m: 3; 129.12 m: 1; 95.00 m: 1; 81.68 m: 1; 80.00 m: 1",
+          "illustrated": false,
+          "locator": "Fig. 5A; section 4.1.1.3"
+        },
+        {
+          "taxon_as_reported": "Hispanaediscus verrucatus",
+          "genus": "Hispanaediscus",
+          "qualifier": "",
+          "abundance": "100.00 m: 1; 92.10 m: 1; 81.68 m: 1; 75.00 m: 1",
+          "illustrated": false,
+          "locator": "Fig. 5A"
+        },
+        {
+          "taxon_as_reported": "Imperfectotriletes patinatus-vavrdovae morphon",
+          "genus": "Imperfectotriletes",
+          "qualifier": "",
+          "abundance": "135.00 m: 7; 100.00 m: 21; 85.00 m: 25",
+          "illustrated": false,
+          "locator": "Fig. 5A"
+        },
+        {
+          "taxon_as_reported": "Pachytetras rugosa",
+          "genus": "Pachytetras",
+          "qualifier": "",
+          "abundance": "134.20 m: 1; 129.78 m: 1; 129.12 m: 1",
+          "illustrated": true,
+          "locator": "Fig. 5A; Plate IV, S"
+        },
+        {
+          "taxon_as_reported": "Pseudodyadospora petasus",
+          "genus": "Pseudodyadospora",
+          "qualifier": "",
+          "abundance": "135.00 m: 1; 125.00 m: 1; 80.00 m: 2; 75.00 m: 1",
+          "illustrated": true,
+          "locator": "Fig. 5A; Plate I, T"
+        },
+        {
+          "taxon_as_reported": "Retusotriletes goensis",
+          "genus": "Retusotriletes",
+          "qualifier": "",
+          "abundance": "135.00 m: 2; 130.00 m: 5; 129.78 m: 3; 125.00 m: 1",
+          "illustrated": false,
+          "locator": "Fig. 5A"
+        },
+        {
+          "taxon_as_reported": "Retusotriletes maccullockii",
+          "genus": "Retusotriletes",
+          "qualifier": "",
+          "abundance": "130.00 m: 1; 129.78 m: 1; 97.68 m: 1; 75.00 m: 1",
+          "illustrated": true,
+          "locator": "Fig. 5A; Plate II, H"
+        },
+        {
+          "taxon_as_reported": "Retusotriletes spp.",
+          "genus": "Retusotriletes",
+          "qualifier": "spp.",
+          "abundance": "135.00 m: 1; 134.20 m: 4; 130.95 m: 11; 130.00 m: 1; 129.78 m: 3; 129.12 m: 1; 125.00 m: 30; 100.00 m: 44; 95.00 m: 22; 92.10 m: 1; 85.00 m: 30; 81.68 m: 5; 75.00 m: 33; 41.00 m: 1; 38.03 m: 1",
+          "illustrated": false,
+          "locator": "Fig. 5A"
+        },
+        {
+          "taxon_as_reported": "Retusotriletes triangulatus",
+          "genus": "Retusotriletes",
+          "qualifier": "",
+          "abundance": "134.20 m: 6; 130.00 m: 2; 129.78 m: 3; 129.12 m: 2; 95.00 m: 1; 92.10 m: 1; 85.00 m: 1; 80.00 m: 1; 75.00 m: 1",
+          "illustrated": true,
+          "locator": "Fig. 5A; Plate I, P, captioned Retusotriletes triangulates"
+        },
+        {
+          "taxon_as_reported": "Retusotriletes warringtonii",
+          "genus": "Retusotriletes",
+          "qualifier": "",
+          "abundance": "135.00 m: 2; 125.00 m: 3; 95.00 m: 1; 92.10 m: 1",
+          "illustrated": false,
+          "locator": "Fig. 5A"
+        },
+        {
+          "taxon_as_reported": "Rimosotetras problematica",
+          "genus": "Rimosotetras",
+          "qualifier": "",
+          "abundance": "129.78 m: 2; 85.00 m: 1; 75.00 m: 1",
+          "illustrated": false,
+          "locator": "Fig. 5A"
+        },
+        {
+          "taxon_as_reported": "Scylaspora downiei",
+          "genus": "Scylaspora",
+          "qualifier": "",
+          "abundance": "100.00 m: 1; 80.00 m: 1",
+          "illustrated": true,
+          "locator": "Fig. 5A; Plate II, A, N"
+        },
+        {
+          "taxon_as_reported": "Scylaspora elegans",
+          "genus": "Scylaspora",
+          "qualifier": "",
+          "abundance": "present at 81.68 m",
+          "illustrated": true,
+          "locator": "Section 4.1.1.2, p. 151; Plate IV, O"
+        },
+        {
+          "taxon_as_reported": "Scylaspora scripta",
+          "genus": "Scylaspora",
+          "qualifier": "",
+          "abundance": "130.00 m: 1; 129.78 m: 4; 129.12 m: 1; 97.68 m: 1; 92.10 m: 1; 81.68 m: 1",
+          "illustrated": false,
+          "locator": "Fig. 5A; section 4.1.1.3"
+        },
+        {
+          "taxon_as_reported": "Streelispora granulata",
+          "genus": "Streelispora",
+          "qualifier": "",
+          "abundance": "135.00 m: 1; 125.00 m: 2",
+          "illustrated": false,
+          "locator": "Fig. 5A"
+        },
+        {
+          "taxon_as_reported": "Synorisporites libycus",
+          "genus": "Synorisporites",
+          "qualifier": "",
+          "abundance": "129.78 m: 3; 97.68 m: 1; 95.00 m: 1; 60.00 m: 1",
+          "illustrated": false,
+          "locator": "Fig. 5A"
+        },
+        {
+          "taxon_as_reported": "Synorisporites tripapillatus",
+          "genus": "Synorisporites",
+          "qualifier": "",
+          "abundance": "135.00 m: 1; 134.20 m: 1; 130.00 m: 1; 129.12 m: 1",
+          "illustrated": true,
+          "locator": "Fig. 5A; Plate IV, R"
+        },
+        {
+          "taxon_as_reported": "Synorisporites verrucatus",
+          "genus": "Synorisporites",
+          "qualifier": "",
+          "abundance": "135.00 m: 1; 130.00 m: 1; 129.78 m: 1; 129.12 m: 3; 81.68 m: 1; 80.00 m: 1; 75.00 m: 2",
+          "illustrated": false,
+          "locator": "Fig. 5A"
+        },
+        {
+          "taxon_as_reported": "Tetrahedraletes grayae",
+          "genus": "Tetrahedraletes",
+          "qualifier": "",
+          "abundance": "134.20 m: 6; 130.00 m: 8; 129.78 m: 11; 129.12 m: 6; 100.00 m: 1; 92.10 m: 2; 81.68 m: 1; 75.00 m: 1; 60.00 m: 1",
+          "illustrated": false,
+          "locator": "Fig. 5A"
+        },
+        {
+          "taxon_as_reported": "Tetrahedraletes medinensis",
+          "genus": "Tetrahedraletes",
+          "qualifier": "",
+          "abundance": "134.20 m: 3; 130.95 m: 1; 130.00 m: 7; 129.78 m: 7; 129.12 m: 1; 125.00 m: 3; 100.00 m: 1; 95.00 m: 3; 92.10 m: 3; 85.00 m: 5; 81.68 m: 1; 80.00 m: 1; 75.00 m: 1; 33.05 m: 1",
+          "illustrated": false,
+          "locator": "Fig. 5A"
+        }
+      ]
+    },
+    {
+      "assemblage_id": "Ovedskloster-1",
+      "scope": "section-interval",
+      "locality": "Övedskloster, directly south of the Helvetesgraven sandstone quarry, c. 10 km NW of Sjöbo, Skåne",
+      "country": "Sweden",
+      "formation": "Öved Sandstone Formation",
+      "section_or_core": "Övedskloster 1 (Ö1)",
+      "depth_or_level": "74.9–111 m productive levels in Fig. 5B",
+      "latitude": "",
+      "longitude": "",
+      "palaeogeo_unit_reported": "Baltica",
+      "palaeo_unit_proposed": "Baltica",
+      "age_as_reported": "Lochkovian",
+      "age_basis": "lithostratigraphic",
+      "age_basis_detail": "Combined lithostratigraphic and palynofacies correlation with nearby Ö2. The authors explicitly state that dating is not possible from the Ö1 spore content.",
+      "age_circular": true,
+      "stage_min_proposed": "Lochkovian",
+      "stage_max_proposed": "Lochkovian",
+      "setting_as_reported": "change from marine to terrestrial environment occurs at 88 m",
+      "setting_class": "marginal-marine",
+      "n_samples": "6 processed; 5 productive",
+      "reworking_status": "none",
+      "notes": "Age is indirectly dependent on the spore-dated Ö2 succession. Figure 5B contains 25 taxon columns, exceeding the shorter text list. The sixth, unproductive sample is not assigned a depth in the spore chart. Spores reach 80% of palynofacies counts in the 111–95 m interval; phytodebris dominates 88–75 m. Taxon strings below follow Figure 5B, including Hispanaedisucs lamontii and morph.; the genus field resolves Hispanaedisucs to Hispanaediscus using the text. The prose additionally uses Archaeozonotriletes chulus/nanus, Tetrahedraletes grayii, Imperfectotriletes sp. and Retusotriletes sp.; these are retained here as naming differences rather than additional independent taxa. It qualifies the chart's Cymbohilates hystricosus as Cymbohilates sp. cf. C. hystricosus. Plate captions lack specimen depths; illustrated refers to illustration elsewhere in the paper.",
+      "locator": "Sections 4.1.2–4.1.2.1, pp. 151, 153; Fig. 5B, p. 155; Figs. 3, 9",
+      "occurrences": [
+        {
+          "taxon_as_reported": "Tetrahedraletes medinensis",
+          "genus": "Tetrahedraletes",
+          "qualifier": "",
+          "abundance": "present at 74.9, 101 and 111 m",
+          "illustrated": false,
+          "locator": "Fig. 5B"
+        },
+        {
+          "taxon_as_reported": "Ambitisporites avitus/dilutus morphon",
+          "genus": "Ambitisporites",
+          "qualifier": "",
+          "abundance": "present at 82.9, 94.9 and 111 m",
+          "illustrated": false,
+          "locator": "Fig. 5B"
+        },
+        {
+          "taxon_as_reported": "Gneudnaspora divellomedia",
+          "genus": "Gneudnaspora",
+          "qualifier": "",
+          "abundance": "present at 82.9, 94.9, 101 and 111 m",
+          "illustrated": false,
+          "locator": "Fig. 5B"
+        },
+        {
+          "taxon_as_reported": "Archaeozonotriletes chulus",
+          "genus": "Archaeozonotriletes",
+          "qualifier": "",
+          "abundance": "present at 94.9 and 111 m",
+          "illustrated": true,
+          "locator": "Fig. 5B; Plate I, D"
+        },
+        {
+          "taxon_as_reported": "Imperfectotriletes patinatus-vavrdovae morph.",
+          "genus": "Imperfectotriletes",
+          "qualifier": "",
+          "abundance": "present at 94.9, 101 and 111 m",
+          "illustrated": false,
+          "locator": "Fig. 5B"
+        },
+        {
+          "taxon_as_reported": "Retusotriletes spp.",
+          "genus": "Retusotriletes",
+          "qualifier": "spp.",
+          "abundance": "present at 94.9, 101 and 111 m",
+          "illustrated": false,
+          "locator": "Fig. 5B"
+        },
+        {
+          "taxon_as_reported": "Hispanaediscus verrucatus",
+          "genus": "Hispanaediscus",
+          "qualifier": "",
+          "abundance": "present at 94.9 and 111 m",
+          "illustrated": false,
+          "locator": "Fig. 5B"
+        },
+        {
+          "taxon_as_reported": "Hispanaedisucs lamontii",
+          "genus": "Hispanaediscus",
+          "qualifier": "",
+          "abundance": "present at 111 m",
+          "illustrated": false,
+          "locator": "Fig. 5B"
+        },
+        {
+          "taxon_as_reported": "Synorisporites verrucatus",
+          "genus": "Synorisporites",
+          "qualifier": "",
+          "abundance": "present at 94.9, 101 and 111 m",
+          "illustrated": false,
+          "locator": "Fig. 5B"
+        },
+        {
+          "taxon_as_reported": "Cheilotetras caledonica",
+          "genus": "Cheilotetras",
+          "qualifier": "",
+          "abundance": "present at 101 m",
+          "illustrated": false,
+          "locator": "Fig. 5B"
+        },
+        {
+          "taxon_as_reported": "Cymbohilates hystricosus",
+          "genus": "Cymbohilates",
+          "qualifier": "",
+          "abundance": "present at 101 m",
+          "illustrated": false,
+          "locator": "Fig. 5B"
+        },
+        {
+          "taxon_as_reported": "Cymbohilates sp. cf. C. hystricosus",
+          "genus": "Cymbohilates",
+          "qualifier": "cf.",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Section 4.1.2, p. 151; Plate II, Q, captioned Cymbohilates cf. hystricosus"
+        },
+        {
+          "taxon_as_reported": "Tetrahedraletes grayae",
+          "genus": "Tetrahedraletes",
+          "qualifier": "",
+          "abundance": "present at 101 m",
+          "illustrated": false,
+          "locator": "Fig. 5B"
+        },
+        {
+          "taxon_as_reported": "Apiculiretusispora spp.",
+          "genus": "Apiculiretusispora",
+          "qualifier": "spp.",
+          "abundance": "present at 94.9 m",
+          "illustrated": false,
+          "locator": "Fig. 5B"
+        },
+        {
+          "taxon_as_reported": "Apiculiretusispora sp. B",
+          "genus": "Apiculiretusispora",
+          "qualifier": "sp.",
+          "abundance": "present at 94.9 m",
+          "illustrated": false,
+          "locator": "Fig. 5B; section 4.1.2"
+        },
+        {
+          "taxon_as_reported": "Hispanaediscus sp. A",
+          "genus": "Hispanaediscus",
+          "qualifier": "sp.",
+          "abundance": "present at 94.9 m",
+          "illustrated": true,
+          "locator": "Fig. 5B; Plate II, J–K"
+        },
+        {
+          "taxon_as_reported": "Retusotriletes triangulatus",
+          "genus": "Retusotriletes",
+          "qualifier": "",
+          "abundance": "present at 101 and 111 m",
+          "illustrated": true,
+          "locator": "Fig. 5B; Plate I, P, captioned Retusotriletes triangulates"
+        },
+        {
+          "taxon_as_reported": "Rimosotetras problematica",
+          "genus": "Rimosotetras",
+          "qualifier": "",
+          "abundance": "present at 111 m",
+          "illustrated": false,
+          "locator": "Fig. 5B"
+        },
+        {
+          "taxon_as_reported": "Chelinohilates lornensis",
+          "genus": "Chelinohilates",
+          "qualifier": "",
+          "abundance": "present at 101 m",
+          "illustrated": true,
+          "locator": "Fig. 5B; Plate I, O"
+        },
+        {
+          "taxon_as_reported": "Synorisporites tripapillatus",
+          "genus": "Synorisporites",
+          "qualifier": "",
+          "abundance": "present at 111 m",
+          "illustrated": true,
+          "locator": "Fig. 5B; Plate IV, R"
+        },
+        {
+          "taxon_as_reported": "Pseudodyadospora petasus",
+          "genus": "Pseudodyadospora",
+          "qualifier": "",
+          "abundance": "present at 101 m",
+          "illustrated": true,
+          "locator": "Fig. 5B; Plate I, T"
+        },
+        {
+          "taxon_as_reported": "Cymbohilates allenii",
+          "genus": "Cymbohilates",
+          "qualifier": "",
+          "abundance": "present at 111 m",
+          "illustrated": true,
+          "locator": "Fig. 5B; Plate I, L–M"
+        },
+        {
+          "taxon_as_reported": "Pachytetras rugosa",
+          "genus": "Pachytetras",
+          "qualifier": "",
+          "abundance": "present at 111 m",
+          "illustrated": true,
+          "locator": "Fig. 5B; Plate IV, S"
+        },
+        {
+          "taxon_as_reported": "Chelinospora sanpetrensis",
+          "genus": "Chelinospora",
+          "qualifier": "",
+          "abundance": "present at 111 m",
+          "illustrated": true,
+          "locator": "Fig. 5B; Plate IV, G"
+        },
+        {
+          "taxon_as_reported": "Ambitisporites tripapillatus",
+          "genus": "Ambitisporites",
+          "qualifier": "",
+          "abundance": "present at 101 and 111 m",
+          "illustrated": true,
+          "locator": "Fig. 5B; Plate III, A"
+        },
+        {
+          "taxon_as_reported": "Aneurospora hispidica",
+          "genus": "Aneurospora",
+          "qualifier": "",
+          "abundance": "present at 111 m",
+          "illustrated": false,
+          "locator": "Fig. 5B; section 7"
+        }
+      ]
+    },
+    {
+      "assemblage_id": "Ovedskloster-collective-unallocated",
+      "scope": "composite",
+      "locality": "Övedskloster, Skåne",
+      "country": "Sweden",
+      "formation": "Öved Sandstone Formation",
+      "section_or_core": "Övedskloster drillcores 1 and 2",
+      "depth_or_level": "",
+      "latitude": "",
+      "longitude": "",
+      "palaeogeo_unit_reported": "Baltica",
+      "palaeo_unit_proposed": "Baltica",
+      "age_as_reported": "Přídolí–Lochkovian",
+      "age_basis": "spore-zone",
+      "age_basis_detail": "Collective study age from spore biostratigraphy; individual specimens in the species list and plates are not assigned core depths.",
+      "age_circular": true,
+      "stage_min_proposed": "Pridoli",
+      "stage_max_proposed": "Lochkovian",
+      "setting_as_reported": "nearshore marine marls; predominantly paralic to fluvial deposits",
+      "setting_class": "marginal-marine",
+      "n_samples": "",
+      "reworking_status": "discussed",
+      "notes": "Supplementary, overlapping composite containing taxa or qualified identifications that cannot safely be allocated to the preceding intervals. Do not count it as additional sampling. Section 7 has 77 entries, including open nomenclature. Plate-only open forms may overlap chart entries, but specimen equivalence is not supplied. Unqualified Apiculiretusispora asperata in the species list is retained separately from the cf. identification in Ö2. The Gneudnaspora variety is specified only in the collective list, with authorship interrupting the taxon string; the full printed entry is retained. Plate IV labels Apiculiretusispora hispidica, whereas Figure 5B and the species list use Aneurospora hispidica; their equivalence is not assumed. Unidentified spore labels and the unassigned tetrad are retained as printed. Reworking is discussed for Ö2, but these unallocated specimens cannot individually be classified as reworked.",
+      "locator": "Section 7, pp. 156–159; Plates I–IV and captions, pp. 148–153",
+      "occurrences": [
+        {
+          "taxon_as_reported": "Acinosporites salopiensis",
+          "genus": "Acinosporites",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Section 7, p. 156; Plate IV, C"
+        },
+        {
+          "taxon_as_reported": "Apiculiretusispora asperata",
+          "genus": "Apiculiretusispora",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": false,
+          "locator": "Section 7, p. 157"
+        },
+        {
+          "taxon_as_reported": "Brochotriletes cf. foveolatus",
+          "genus": "Brochotriletes",
+          "qualifier": "cf.",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Section 7, p. 157; Plate IV, F"
+        },
+        {
+          "taxon_as_reported": "Chelinohilates sinuosus var. angustus",
+          "genus": "Chelinohilates",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Section 7, p. 157; Plate I, K"
+        },
+        {
+          "taxon_as_reported": "Cymbohilates allenii var. magnus",
+          "genus": "Cymbohilates",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": false,
+          "locator": "Abstract; section 7, p. 157"
+        },
+        {
+          "taxon_as_reported": "Cymbohilates sp. A",
+          "genus": "Cymbohilates",
+          "qualifier": "sp.",
+          "abundance": "present",
+          "illustrated": false,
+          "locator": "Section 7, p. 157, attributed to Wellman and Richardson (1996)"
+        },
+        {
+          "taxon_as_reported": "Dyadospora murusdensa-murusattenuata morphon",
+          "genus": "Dyadospora",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": false,
+          "locator": "Section 7, p. 157"
+        },
+        {
+          "taxon_as_reported": "Emphanisporites micrornatus",
+          "genus": "Emphanisporites",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Section 7, p. 157; Plate IV, M, captioned Emphanisporites micronatus"
+        },
+        {
+          "taxon_as_reported": "Emphanisporites neglectus",
+          "genus": "Emphanisporites",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": false,
+          "locator": "Section 7, p. 157"
+        },
+        {
+          "taxon_as_reported": "Emphanisporites protophanus",
+          "genus": "Emphanisporites",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": false,
+          "locator": "Section 7, p. 157"
+        },
+        {
+          "taxon_as_reported": "Gneudnaspora divellomedia (Chibrikova) Balme, 1988 var. minor Breuer et al., 2007",
+          "genus": "Gneudnaspora",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": false,
+          "locator": "Section 7, p. 157"
+        },
+        {
+          "taxon_as_reported": "Scylaspora vetusta",
+          "genus": "Scylaspora",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Section 7, p. 157; Plate IV, P"
+        },
+        {
+          "taxon_as_reported": "Apiculiretusispora sp.",
+          "genus": "Apiculiretusispora",
+          "qualifier": "sp.",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Plate I, C; Plate IV, X"
+        },
+        {
+          "taxon_as_reported": "cf. Streelispora granulata",
+          "genus": "Streelispora",
+          "qualifier": "cf.",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Plate I, F"
+        },
+        {
+          "taxon_as_reported": "cf. Scylaspora downiei",
+          "genus": "Scylaspora",
+          "qualifier": "cf.",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Plate I, G"
+        },
+        {
+          "taxon_as_reported": "Chelinohilates cf. sinuous",
+          "genus": "Chelinohilates",
+          "qualifier": "cf.",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Plate I, H; Plate II, C; Plate III, C uses cf. Chelinohilates sinuous"
+        },
+        {
+          "taxon_as_reported": "cf. Scylaspora scripta",
+          "genus": "Scylaspora",
+          "qualifier": "cf.",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Plate I, J"
+        },
+        {
+          "taxon_as_reported": "Chelinohilates sp.",
+          "genus": "Chelinohilates",
+          "qualifier": "sp.",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Plate I, Q"
+        },
+        {
+          "taxon_as_reported": "cf. Aneurospora geikiei",
+          "genus": "Aneurospora",
+          "qualifier": "cf.",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Plate I, S; Plate III, D, F"
+        },
+        {
+          "taxon_as_reported": "Cymbohilates sp.",
+          "genus": "Cymbohilates",
+          "qualifier": "sp.",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Plate II, B"
+        },
+        {
+          "taxon_as_reported": "Emphanisporites sp.",
+          "genus": "Emphanisporites",
+          "qualifier": "sp.",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Plate II, G, M"
+        },
+        {
+          "taxon_as_reported": "Sp. indet.",
+          "genus": "",
+          "qualifier": "indet.",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Plate II, I, O, P"
+        },
+        {
+          "taxon_as_reported": "Retusotriletes cf. goensis",
+          "genus": "Retusotriletes",
+          "qualifier": "cf.",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Plate II, L"
+        },
+        {
+          "taxon_as_reported": "cf. Chelinospora (Lophozonotrilites)poecilomorpha",
+          "genus": "Chelinospora",
+          "qualifier": "cf.",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Plate III, B"
+        },
+        {
+          "taxon_as_reported": "cf. Scylaspora sp.",
+          "genus": "Scylaspora",
+          "qualifier": "cf.",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Plate III, E"
+        },
+        {
+          "taxon_as_reported": "Acinosporites sp.",
+          "genus": "Acinosporites",
+          "qualifier": "sp.",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Plate IV, B"
+        },
+        {
+          "taxon_as_reported": "Apiculiretusispora hispidica",
+          "genus": "Apiculiretusispora",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Plate IV, D"
+        },
+        {
+          "taxon_as_reported": "Chelinospora sp.",
+          "genus": "Chelinospora",
+          "qualifier": "sp.",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Plate IV, J"
+        },
+        {
+          "taxon_as_reported": "Stellatispora inframurinata",
+          "genus": "Stellatispora",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Plate IV, Q"
+        },
+        {
+          "taxon_as_reported": "Sp. indet",
+          "genus": "",
+          "qualifier": "indet.",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Plate IV, T"
+        },
+        {
+          "taxon_as_reported": "Sp. Indet",
+          "genus": "",
+          "qualifier": "indet.",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Plate IV, U"
+        },
+        {
+          "taxon_as_reported": "Tetrad",
+          "genus": "",
+          "qualifier": "indet.",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Plate IV, V"
+        },
+        {
+          "taxon_as_reported": "Zonotriletes sp.",
+          "genus": "Zonotriletes",
+          "qualifier": "sp.",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Plate IV, Y"
+        }
+      ]
+    }
+  ]
+}

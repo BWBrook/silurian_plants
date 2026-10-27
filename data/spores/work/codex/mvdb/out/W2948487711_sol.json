@@ -1,0 +1,54 @@
+{
+  "doc": {
+    "doi": "10.22108/jssr.2019.108889.1034",
+    "citation": "Hashemi, H., Sajjadi, F. and Bahrami Hesari, N. 2019. Palynostratigraphy and palaeoecology of the Niur Formation, Tikdar section, northwest of Kerman, Central Iran. Journal of Stratigraphy and Sedimentology Researches 35(1), 1–22.",
+    "language": "Persian with English abstract and summary",
+    "reports_window_spores": true,
+    "comment": "Two trilete-spore taxa are named in Plate 3; neither is assigned to an individual sample. The Llandovery age rests on marine palynomorphs. The printed concatenation in Apiculatasporitessp. is preserved."
+  },
+  "items": [
+    {
+      "assemblage_id": "W2948487711-Tikdar-Niur",
+      "scope": "section-interval",
+      "locality": "Tikdar village, 8 km northeast of Chatrud, northwest of Kerman, Central Iran",
+      "country": "Iran",
+      "formation": "Niur Formation",
+      "section_or_core": "Tikdar stratigraphic section",
+      "depth_or_level": "90 m palyniferous interval between the basal 65 m and upper 45 m barren intervals of the 200 m formation",
+      "latitude": "30°42′57″ N",
+      "longitude": "56°53′26″ E",
+      "palaeogeo_unit_reported": "Central Iran",
+      "palaeo_unit_proposed": "Gondwana-other",
+      "age_as_reported": "Early Silurian (Llandovery)",
+      "age_basis": "mixed",
+      "age_basis_detail": "Acritarchs Eupoikilofusa striatifera and Geron amabilis, chitinozoans Spinachitina fragilis and Ancyrochitina convexa, and absence of Middle and Late Silurian index taxa.",
+      "age_circular": false,
+      "stage_min_proposed": "Rhuddanian",
+      "stage_max_proposed": "Telychian",
+      "setting_as_reported": "marginal marine setting with mainly low sedimentation rate and relatively low oxygen level",
+      "setting_class": "marginal-marine",
+      "n_samples": "",
+      "reworking_status": "none",
+      "notes": "Marine palynomorphs dominate the diversity and abundance and are the principal biostratigraphic focus. Two spore taxa are reported; the text describes radially symmetrical forms with trilete marks and explicitly reports no monolete specimens. No cryptospore taxa are reported. Basal 65 m and upper 45 m intervals are described as barren of palynomorphs. Figure 3 charts acritarchs and chitinozoans, while Figure 5 treats spores collectively; neither supplies sample distributions for the two named spore taxa. Slides were supplied by the National Iranian Oil Company. Central Iran is the reported geographic designation; the Gondwana mapping is proposed.",
+      "locator": "English abstract and summary, pp. 1–2; locality and coordinates, p. 4; palynofloral composition and palynostratigraphy, pp. 7–8; Figure 3, p. 9; age discussion, p. 10; Figure 5, p. 11; Plate 3, p. 21.",
+      "occurrences": [
+        {
+          "taxon_as_reported": "Leiotriletes sp.",
+          "genus": "Leiotriletes",
+          "qualifier": "sp.",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Plate 3, figure 11, p. 21"
+        },
+        {
+          "taxon_as_reported": "Apiculatasporitessp.",
+          "genus": "Apiculatasporites",
+          "qualifier": "sp.",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Plate 3, figure 12, p. 21"
+        }
+      ]
+    }
+  ]
+}

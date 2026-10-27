@@ -1,0 +1,97 @@
+{
+  "doc": {
+    "doi": "10.1016/j.revmic.2016.10.003",
+    "citation": "Marshall, J.E.A., Zhu, H., Wellman, C.H., Berry, C.M., Wang, Y., Xu, H. and Breuer, P. (2017). Provincial Devonian spores from South China, Saudi Arabia and Australia. Revue de Micropaléontologie 60(3), 403–409.",
+    "language": "English",
+    "reports_window_spores": true,
+    "comment": "The newly sampled Maoshanxiang assemblage is Givetian and excluded, including its supposed Emsian relicts, which the authors explicitly reject as reworked. In-window records are comparative literature summaries from Hashemi and Playford (2005), Breuer et al. (2007) and Breuer and Steemans (2013). They are retained as composites without inventing sample-level co-occurrence. The supplied accepted manuscript is titled 'Endemic Devonian spores from South China, Saudi Arabia and Australia'."
+  },
+  "items": [
+    {
+      "assemblage_id": "Adavale_Basin_Assemblage_I",
+      "scope": "composite",
+      "locality": "Adavale Basin",
+      "country": "Australia",
+      "formation": "",
+      "section_or_core": "",
+      "depth_or_level": "",
+      "latitude": "",
+      "longitude": "",
+      "palaeogeo_unit_reported": "East Gondwana",
+      "palaeo_unit_proposed": "Gondwana-Australia-Antarctica",
+      "age_as_reported": "Emsian",
+      "age_basis": "spore-zone",
+      "age_basis_detail": "Assemblage I of Hashemi and Playford (2005) was explicitly 'dated by spores as being Emsian in age'.",
+      "age_circular": true,
+      "stage_min_proposed": "Emsian",
+      "stage_max_proposed": "Emsian",
+      "setting_as_reported": "",
+      "setting_class": "unknown",
+      "n_samples": "",
+      "reworking_status": "none",
+      "notes": "Comparative summary of Assemblage I from Hashemi and Playford (2005), not newly sampled material. The conclusion states that the Australian and Saudi Arabian assemblages are all from subsurface material. Rotaspora also occurs in the younger Assemblage II, which is outside the requested window. Illustrations in this paper depict Chinese specimens, not this Australian assemblage.",
+      "locator": "Section 3, accepted-manuscript p. 4, paragraphs on Rotaspora and Tribojasporites; Section 4, p. 5.",
+      "occurrences": [
+        {
+          "taxon_as_reported": "Rotaspora spp.",
+          "genus": "Rotaspora",
+          "qualifier": "spp.",
+          "abundance": "distinctive element",
+          "illustrated": false,
+          "locator": "Section 3, pp. 3–4, paragraph on tricrassate spores; Appendix Cited spores and alga, p. 10."
+        },
+        {
+          "taxon_as_reported": "T. sajjadiae",
+          "genus": "Tribojasporites",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": false,
+          "locator": "Section 3, p. 4, paragraph on Tribojasporites."
+        }
+      ]
+    },
+    {
+      "assemblage_id": "Saudi_Arabia_Pragian_Emsian_comparative_records",
+      "scope": "composite",
+      "locality": "",
+      "country": "Saudi Arabia",
+      "formation": "",
+      "section_or_core": "",
+      "depth_or_level": "",
+      "latitude": "",
+      "longitude": "",
+      "palaeogeo_unit_reported": "East Gondwana",
+      "palaeo_unit_proposed": "Gondwana-North-Africa-Arabia",
+      "age_as_reported": "Pragian and Emsian",
+      "age_basis": "unstated",
+      "age_basis_detail": "Comparative ranges attributed to Breuer et al. (2007) and Breuer and Steemans (2013); the dating evidence for the Saudi Arabian material is not specified here.",
+      "age_circular": false,
+      "stage_min_proposed": "Pragian",
+      "stage_max_proposed": "Emsian",
+      "setting_as_reported": "",
+      "setting_class": "unknown",
+      "n_samples": "",
+      "reworking_status": "none",
+      "notes": "Regional literature composite, not a demonstrated single co-occurring assemblage. Dictyotriletes biornatus is assigned the narrower range 'late Pragian to mid Emsian'; the Camarozonotriletes complex is reported from the 'Pragian and Emsian'. No Saudi formation, core, sample or depth is assigned to these occurrences. The conclusion describes the Saudi Arabian assemblages as subsurface material. False age_circular denotes no explicit statement of spore-based dating here; independent dating is not established. Chinese illustrations do not illustrate these Saudi occurrences.",
+      "locator": "Section 3, accepted-manuscript p. 4, paragraphs on Dictyotriletes biornatus and Rotaspora; Section 4, p. 5.",
+      "occurrences": [
+        {
+          "taxon_as_reported": "Dictyotriletes biornatus",
+          "genus": "Dictyotriletes",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": false,
+          "locator": "Section 3, p. 4, opening paragraph; references to Breuer et al. (2007) and Breuer and Steemans (2013)."
+        },
+        {
+          "taxon_as_reported": "C. filatoffii",
+          "genus": "Camarozonotriletes",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": false,
+          "locator": "Section 3, p. 4, paragraph on Rotaspora; Appendix Cited spores and alga, p. 10."
+        }
+      ]
+    }
+  ]
+}

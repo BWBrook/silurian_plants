@@ -1,0 +1,517 @@
+{
+  "doc": {
+    "doi": "10.1016/j.revpalbo.2022.104742",
+    "citation": "Rodrigues, L.C., do Carmo, D., Assine, M. and Steemans, P. (2022). Cryptospores of Iapó formation: The first evidence of early land plants from Late Ordovician in Paraná Basin, Brazil. Review of Palaeobotany and Palynology 305, 104742.",
+    "language": "English",
+    "reports_window_spores": true,
+    "comment": "New Iapó Formation records; comparisons and historical geographical distributions are not treated as newly sampled assemblages. Twelve species are shared with the Vila Maria Formation assemblage previously reported by Mizusaki et al. (2002), rather than identified as reused specimens. The claimed five productive samples conflict with six sample codes carrying spore records. Captions, systematic accounts and Fig. 5 contain conflicting sample assignments, noted below. Aldeia is retained at section scope because Rugosphaera cerebra is reported there without a sample assignment. Reworking is not discussed."
+  },
+  "items": [
+    {
+      "assemblage_id": "Aldeia-creek-Iapo",
+      "scope": "section-interval",
+      "locality": "Bom Jardim de Goiás Municipality, State of Goiás, Paraná Basin",
+      "country": "Brazil",
+      "formation": "Iapó Formation",
+      "section_or_core": "Aldeia creek section; supplementary type-section of the Vila Maria Formation",
+      "depth_or_level": "MP 2849, 2.5 m; MP 3490, 9.0 m; MP 2851, 9.2 m; MP 2852, 9.4 m",
+      "latitude": "",
+      "longitude": "",
+      "palaeogeo_unit_reported": "southern part of the western Gondwana",
+      "palaeo_unit_proposed": "Gondwana-South-America",
+      "age_as_reported": "Hirnantian",
+      "age_basis": "mixed",
+      "age_basis_detail": "Lithostratigraphic correlation with Hirnantian glacial deposits of the Zapla and Cancañiri formations; formation-level age additionally supported by the brachiopod Kosoidea australis and ostracode Harpabolia harparum.",
+      "age_circular": false,
+      "stage_min_proposed": "Hirnantian",
+      "stage_max_proposed": "Hirnantian",
+      "setting_as_reported": "glaciomarine environment; shallow marine basin",
+      "setting_class": "marine-shelf",
+      "n_samples": "4",
+      "reworking_status": "none",
+      "notes": "Only one Aldeia sample was productive, with very low palynomorph recovery. The systematic accounts explicitly assign Tetrahedraletes medinensis, Laevolancis chibrikovae and Gneudnaspora divellomedia var. minor to MP 2849. MP 3490, MP 2851 and MP 2852 were analysed but have no reported recovery. Rugosphaera cerebra includes Aldeia only in its geographical distribution statement, without a specimen or sample assignment. MP 2849 is described as basal diamictite in §3 but as upper diamictite in the T. medinensis account; its slide is reported damaged there. Marine palynomorphs were also sought.",
+      "locator": "§§2–4, pp. 2–4; Fig. 4, p. 5; §5, Rugosphaera cerebra, p. 6; Tetrahedraletes medinensis, pp. 12–13; Laevolancis chibrikovae, pp. 15–16; Gneudnaspora divellomedia, p. 16",
+      "occurrences": [
+        {
+          "taxon_as_reported": "Rugosphaera cerebra",
+          "genus": "Rugosphaera",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": false,
+          "locator": "§5, geographical and stratigraphic distribution, p. 6; section-level assignment only"
+        },
+        {
+          "taxon_as_reported": "Tetrahedraletes medinensis",
+          "genus": "Tetrahedraletes",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": false,
+          "locator": "§5, material and stratigraphic horizon, pp. 12–13; MP 2849"
+        },
+        {
+          "taxon_as_reported": "Laevolancis chibrikovae",
+          "genus": "Laevolancis",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": false,
+          "locator": "§5, material and stratigraphic horizon, pp. 15–16; MP 2849"
+        },
+        {
+          "taxon_as_reported": "Gneudnaspora divellomedia (Chibrikova) Balme, 1988 var. minor Breuer et al., 2007",
+          "genus": "Gneudnaspora",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": false,
+          "locator": "§5, material and stratigraphic horizon, p. 16; MP 2849"
+        }
+      ]
+    },
+    {
+      "assemblage_id": "Tres-Barras-MP3384",
+      "scope": "sample",
+      "locality": "Três Barras Farm, Jacaré creek, Bom Jardim de Goiás Municipality, State of Goiás, Paraná Basin",
+      "country": "Brazil",
+      "formation": "Iapó Formation",
+      "section_or_core": "Três Barras Farm section",
+      "depth_or_level": "MP 3384, 2.6 m",
+      "latitude": "",
+      "longitude": "",
+      "palaeogeo_unit_reported": "southern part of the western Gondwana",
+      "palaeo_unit_proposed": "Gondwana-South-America",
+      "age_as_reported": "Hirnantian",
+      "age_basis": "mixed",
+      "age_basis_detail": "Lithostratigraphic correlation with Hirnantian glacial deposits; formation-level brachiopod Kosoidea australis and ostracode Harpabolia harparum evidence.",
+      "age_circular": false,
+      "stage_min_proposed": "Hirnantian",
+      "stage_max_proposed": "Hirnantian",
+      "setting_as_reported": "siltstone lens contained in stratified diamictite; glaciomarine environment; internal neritic system",
+      "setting_class": "marine-shelf",
+      "n_samples": "1",
+      "reworking_status": "none",
+      "notes": "Basal assemblage, with marine acritarchs, Tortotubus protuberans and abundant opaque fragments. Replicate preparations were made in Brasília and Liège. Several plate captions give this sample's height as 2.3 m or 2,3 m, whereas §3 and the systematic horizons give 2.6 m. Segestrespora laevigata and Velatitetras rugosa are assigned to MP 3384 by their systematic accounts, but their illustrated specimens are assigned to MP 3386 in the captions. Rare unusually large Segestrespora rugosa specimens occur only in MP 3384; their taxonomic distinction is unresolved. The illustrated Polyad is additional to the 17 named cryptospore species.",
+      "locator": "§§3–4, pp. 3–4; Figs. 4–5, pp. 5–6; Plates I–II, pp. 7–8; §5",
+      "occurrences": [
+        {
+          "taxon_as_reported": "Rugosphaera sp. A",
+          "genus": "Rugosphaera",
+          "qualifier": "sp.",
+          "abundance": "only one specimen",
+          "illustrated": true,
+          "locator": "§5, p. 6; Plate I, fig. 2; Fig. 5"
+        },
+        {
+          "taxon_as_reported": "Segestrespora laevigata",
+          "genus": "Segestrespora",
+          "qualifier": "",
+          "abundance": "Three measured specimens",
+          "illustrated": false,
+          "locator": "§5, material and stratigraphic horizon, p. 11; Fig. 5; Plate I, fig. 7 caption instead specifies MP 3386"
+        },
+        {
+          "taxon_as_reported": "Segestrespora rugosa",
+          "genus": "Segestrespora",
+          "qualifier": "",
+          "abundance": "present; rare larger specimens",
+          "illustrated": true,
+          "locator": "§5, p. 12; Plate I, fig. 8; Fig. 5"
+        },
+        {
+          "taxon_as_reported": "Tetraplanarisporites laevigatus",
+          "genus": "Tetraplanarisporites",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "§5, p. 13; Plate I, fig. 12; Fig. 5"
+        },
+        {
+          "taxon_as_reported": "Rimosotetras problematica",
+          "genus": "Rimosotetras",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "§5, p. 14; Plate II, fig. 1; Fig. 5"
+        },
+        {
+          "taxon_as_reported": "Velatitetras laevigata",
+          "genus": "Velatitetras",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "§5, p. 14; Plate II, fig. 2; Fig. 5"
+        },
+        {
+          "taxon_as_reported": "Velatitetras rugosa",
+          "genus": "Velatitetras",
+          "qualifier": "",
+          "abundance": "four specimens measured",
+          "illustrated": false,
+          "locator": "§5, material and stratigraphic horizon, p. 15; Fig. 5; Plate II, fig. 3 caption instead specifies MP 3386"
+        },
+        {
+          "taxon_as_reported": "Imperfectotriletes vavrdovae",
+          "genus": "Imperfectotriletes",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": false,
+          "locator": "§5, material and stratigraphic horizon, p. 15; Fig. 5"
+        },
+        {
+          "taxon_as_reported": "Laevolancis chibrikovae",
+          "genus": "Laevolancis",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "§5, pp. 15–16; Plate II, fig. 5; Fig. 5"
+        },
+        {
+          "taxon_as_reported": "Gneudnaspora divellomedia (Chibrikova) Balme, 1988 var. minor Breuer et al., 2007",
+          "genus": "Gneudnaspora",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "§5, p. 16; Plate II, fig. 6; Fig. 5"
+        },
+        {
+          "taxon_as_reported": "Polyad",
+          "genus": "",
+          "qualifier": "indet.",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Plate II, fig. 7, p. 8"
+        }
+      ]
+    },
+    {
+      "assemblage_id": "Tres-Barras-MP3386",
+      "scope": "sample",
+      "locality": "Três Barras Farm, Jacaré creek, Bom Jardim de Goiás Municipality, State of Goiás, Paraná Basin",
+      "country": "Brazil",
+      "formation": "Iapó Formation",
+      "section_or_core": "Três Barras Farm section",
+      "depth_or_level": "MP 3386, 6.3 m",
+      "latitude": "",
+      "longitude": "",
+      "palaeogeo_unit_reported": "southern part of the western Gondwana",
+      "palaeo_unit_proposed": "Gondwana-South-America",
+      "age_as_reported": "Hirnantian",
+      "age_basis": "mixed",
+      "age_basis_detail": "Lithostratigraphic correlation with Hirnantian glacial deposits; formation-level brachiopod Kosoidea australis and ostracode Harpabolia harparum evidence.",
+      "age_circular": false,
+      "stage_min_proposed": "Hirnantian",
+      "stage_max_proposed": "Hirnantian",
+      "setting_as_reported": "upper portion of the diamictite; glaciomarine environment; internal neritic system",
+      "setting_class": "marine-shelf",
+      "n_samples": "1",
+      "reworking_status": "none",
+      "notes": "Replicate preparations were made in Brasília and Liège. Associated marine acritarchs and sphaeromorphs occur. Segestrespora laevigata is assigned here by Plate I, fig. 7 and Fig. 5, although its systematic material and horizon specify only MP 3384. Velatitetras rugosa is assigned here by Plate II, fig. 3 alone; its systematic account and Fig. 5 place it in MP 3384. Imperfectotriletes vavrdovae is assigned here by its material list, Plate II, fig. 4 and Fig. 5, although its horizon paragraph specifies only MP 3384.",
+      "locator": "§3, p. 3; Figs. 4–5, pp. 5–6; Plates I–II, pp. 7–8; §5",
+      "occurrences": [
+        {
+          "taxon_as_reported": "Rugosphaera cerebra",
+          "genus": "Rugosphaera",
+          "qualifier": "",
+          "abundance": "Two specimens",
+          "illustrated": true,
+          "locator": "§5, p. 5; Plate I, fig. 1; Fig. 5"
+        },
+        {
+          "taxon_as_reported": "Pseudodyadospora laevigata",
+          "genus": "Pseudodyadospora",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "§5, pp. 8–9; Plate I, fig. 3; Fig. 5"
+        },
+        {
+          "taxon_as_reported": "Pseudodyadospora petasus",
+          "genus": "Pseudodyadospora",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "§5, p. 10; Plate I, fig. 4; Fig. 5"
+        },
+        {
+          "taxon_as_reported": "Dyadospora murusattenuata",
+          "genus": "Dyadospora",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "§5, material and stratigraphic horizon, p. 10; Plate I, fig. 5"
+        },
+        {
+          "taxon_as_reported": "Dyadospora murusdensa",
+          "genus": "Dyadospora",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "§5, p. 11; Plate I, fig. 6; Fig. 5"
+        },
+        {
+          "taxon_as_reported": "Segestrespora laevigata",
+          "genus": "Segestrespora",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Plate I, fig. 7; Fig. 5; conflicts with §5 material and horizon, p. 11"
+        },
+        {
+          "taxon_as_reported": "Segestrespora rugosa",
+          "genus": "Segestrespora",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": false,
+          "locator": "§5, material and stratigraphic horizon, p. 12; Fig. 5"
+        },
+        {
+          "taxon_as_reported": "Tetrahedraletes medinensis",
+          "genus": "Tetrahedraletes",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "§5, pp. 12–13; Plate I, figs. 9–10; Fig. 5"
+        },
+        {
+          "taxon_as_reported": "Tetrahedraletes grayae",
+          "genus": "Tetrahedraletes",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "§5, p. 13; Plate I, fig. 11; Fig. 5"
+        },
+        {
+          "taxon_as_reported": "Rimosotetras problematica",
+          "genus": "Rimosotetras",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": false,
+          "locator": "§5, material and stratigraphic horizon, p. 14; Fig. 5"
+        },
+        {
+          "taxon_as_reported": "Velatitetras laevigata",
+          "genus": "Velatitetras",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": false,
+          "locator": "§5, material and stratigraphic horizon, p. 14; Fig. 5"
+        },
+        {
+          "taxon_as_reported": "Velatitetras rugosa",
+          "genus": "Velatitetras",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Plate II, fig. 3; conflicts with §5 material and horizon, p. 15, and Fig. 5"
+        },
+        {
+          "taxon_as_reported": "Imperfectotriletes vavrdovae",
+          "genus": "Imperfectotriletes",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "§5, material, p. 15; Plate II, fig. 4; Fig. 5"
+        },
+        {
+          "taxon_as_reported": "Laevolancis chibrikovae",
+          "genus": "Laevolancis",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": false,
+          "locator": "§5, material and stratigraphic horizon, pp. 15–16; Fig. 5"
+        },
+        {
+          "taxon_as_reported": "Gneudnaspora divellomedia (Chibrikova) Balme, 1988 var. minor Breuer et al., 2007",
+          "genus": "Gneudnaspora",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": false,
+          "locator": "§5, material and stratigraphic horizon, p. 16; Fig. 5"
+        }
+      ]
+    },
+    {
+      "assemblage_id": "Tres-Barras-MP3387",
+      "scope": "sample",
+      "locality": "Três Barras Farm, Jacaré creek, Bom Jardim de Goiás Municipality, State of Goiás, Paraná Basin",
+      "country": "Brazil",
+      "formation": "Iapó Formation",
+      "section_or_core": "Três Barras Farm section",
+      "depth_or_level": "MP 3387, 6.4 m",
+      "latitude": "",
+      "longitude": "",
+      "palaeogeo_unit_reported": "southern part of the western Gondwana",
+      "palaeo_unit_proposed": "Gondwana-South-America",
+      "age_as_reported": "Hirnantian",
+      "age_basis": "mixed",
+      "age_basis_detail": "Lithostratigraphic correlation with Hirnantian glacial deposits; formation-level brachiopod Kosoidea australis and ostracode Harpabolia harparum evidence.",
+      "age_circular": false,
+      "stage_min_proposed": "Hirnantian",
+      "stage_max_proposed": "Hirnantian",
+      "setting_as_reported": "upper diamictite; glaciomarine environment; internal neritic system",
+      "setting_class": "marine-shelf",
+      "n_samples": "1",
+      "reworking_status": "none",
+      "notes": "Both listed taxa explicitly have MP 3387 specimens and horizons in §5. These records contribute to the discrepancy with §4's claim of only four productive Três Barras samples. Fig. 5 also plots a lower Dyadospora murusattenuata marker near this level, but its alignment is uncertain and §5 explicitly assigns that species to MP 3386 and MP 3518; no additional sample assignment is inferred from that marker.",
+      "locator": "§3, p. 3; Figs. 4–5, pp. 5–6; §5, Tetrahedraletes grayae, p. 13, and Velatitetras laevigata, p. 14",
+      "occurrences": [
+        {
+          "taxon_as_reported": "Tetrahedraletes grayae",
+          "genus": "Tetrahedraletes",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": false,
+          "locator": "§5, material and stratigraphic horizon, p. 13; Fig. 5"
+        },
+        {
+          "taxon_as_reported": "Velatitetras laevigata",
+          "genus": "Velatitetras",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": false,
+          "locator": "§5, material and stratigraphic horizon, p. 14; Fig. 5"
+        }
+      ]
+    },
+    {
+      "assemblage_id": "Tres-Barras-MP3518",
+      "scope": "sample",
+      "locality": "Três Barras Farm, Jacaré creek, Bom Jardim de Goiás Municipality, State of Goiás, Paraná Basin",
+      "country": "Brazil",
+      "formation": "Iapó Formation",
+      "section_or_core": "Três Barras Farm section",
+      "depth_or_level": "MP 3518, 6.8 m",
+      "latitude": "",
+      "longitude": "",
+      "palaeogeo_unit_reported": "southern part of the western Gondwana",
+      "palaeo_unit_proposed": "Gondwana-South-America",
+      "age_as_reported": "Hirnantian",
+      "age_basis": "mixed",
+      "age_basis_detail": "Lithostratigraphic correlation with Hirnantian glacial deposits; formation-level brachiopod Kosoidea australis and ostracode Harpabolia harparum evidence.",
+      "age_circular": false,
+      "stage_min_proposed": "Hirnantian",
+      "stage_max_proposed": "Hirnantian",
+      "setting_as_reported": "shales with dropstones; glaciomarine environment; internal neritic system; glacier retreat during ice melting",
+      "setting_class": "marine-shelf",
+      "n_samples": "1",
+      "reworking_status": "none",
+      "notes": "Replicate preparations were made in Brasília and Liège. Associated marine acritarchs and abundant sphaeromorphs occur. Laevolancis chibrikovae is plotted at this level in Fig. 5 but MP 3518 is omitted from its systematic material and horizon paragraphs. Material counts spanning multiple samples are not assigned to individual samples.",
+      "locator": "§3, p. 3; Fig. 5, p. 6; §5; §6, p. 16",
+      "occurrences": [
+        {
+          "taxon_as_reported": "Pseudodyadospora laevigata",
+          "genus": "Pseudodyadospora",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": false,
+          "locator": "§5, material and stratigraphic horizon, pp. 8–9; Fig. 5"
+        },
+        {
+          "taxon_as_reported": "Pseudodyadospora petasus",
+          "genus": "Pseudodyadospora",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": false,
+          "locator": "§5, material and stratigraphic horizon, p. 10; Fig. 5"
+        },
+        {
+          "taxon_as_reported": "Dyadospora murusattenuata",
+          "genus": "Dyadospora",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": false,
+          "locator": "§5, material and stratigraphic horizon, p. 10"
+        },
+        {
+          "taxon_as_reported": "Dyadospora murusdensa",
+          "genus": "Dyadospora",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": false,
+          "locator": "§5, material and stratigraphic horizon, p. 11; Fig. 5"
+        },
+        {
+          "taxon_as_reported": "Segestrespora rugosa",
+          "genus": "Segestrespora",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": false,
+          "locator": "§5, material and stratigraphic horizon, p. 12; Fig. 5"
+        },
+        {
+          "taxon_as_reported": "Tetrahedraletes grayae",
+          "genus": "Tetrahedraletes",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": false,
+          "locator": "§5, material and stratigraphic horizon, p. 13; Fig. 5"
+        },
+        {
+          "taxon_as_reported": "Rimosotetras problematica",
+          "genus": "Rimosotetras",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": false,
+          "locator": "§5, material and stratigraphic horizon, p. 14; Fig. 5"
+        },
+        {
+          "taxon_as_reported": "Laevolancis chibrikovae",
+          "genus": "Laevolancis",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": false,
+          "locator": "Fig. 5, p. 6"
+        },
+        {
+          "taxon_as_reported": "Gneudnaspora divellomedia (Chibrikova) Balme, 1988 var. minor Breuer et al., 2007",
+          "genus": "Gneudnaspora",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": false,
+          "locator": "§5, material and stratigraphic horizon, p. 16; Fig. 5"
+        }
+      ]
+    },
+    {
+      "assemblage_id": "Tres-Barras-MP3519",
+      "scope": "sample",
+      "locality": "Três Barras Farm, Jacaré creek, Bom Jardim de Goiás Municipality, State of Goiás, Paraná Basin",
+      "country": "Brazil",
+      "formation": "Iapó Formation",
+      "section_or_core": "Três Barras Farm section",
+      "depth_or_level": "MP 3519, 6.95 m",
+      "latitude": "",
+      "longitude": "",
+      "palaeogeo_unit_reported": "southern part of the western Gondwana",
+      "palaeo_unit_proposed": "Gondwana-South-America",
+      "age_as_reported": "Hirnantian",
+      "age_basis": "mixed",
+      "age_basis_detail": "Lithostratigraphic correlation with Hirnantian glacial deposits; formation-level brachiopod Kosoidea australis and ostracode Harpabolia harparum evidence.",
+      "age_circular": false,
+      "stage_min_proposed": "Hirnantian",
+      "stage_max_proposed": "Hirnantian",
+      "setting_as_reported": "uppermost portion of the shale with dropstone; glaciomarine environment; internal neritic system; glacier retreat during ice melting",
+      "setting_class": "marine-shelf",
+      "n_samples": "1",
+      "reworking_status": "none",
+      "notes": "Cryptospores constitute 19.2% of the counted palynomorphs at this level; §6 describes an increase from 3.2% to 19.2%. Marine palynomorphs remain dominant. Fig. 5 has an upper Dyadospora murusattenuata marker between the closely spaced upper sample levels; §5 explicitly assigns that species to MP 3518, so it is not additionally assigned here.",
+      "locator": "§3, p. 3; Fig. 5, p. 6; §5, pp. 12–13; §6, p. 16; Fig. 6, p. 17",
+      "occurrences": [
+        {
+          "taxon_as_reported": "Tetrahedraletes medinensis",
+          "genus": "Tetrahedraletes",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": false,
+          "locator": "§5, material and stratigraphic horizon, pp. 12–13; Fig. 5"
+        },
+        {
+          "taxon_as_reported": "Tetraplanarisporites laevigatus",
+          "genus": "Tetraplanarisporites",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": false,
+          "locator": "§5, material and stratigraphic horizon, p. 13; Fig. 5"
+        }
+      ]
+    }
+  ]
+}

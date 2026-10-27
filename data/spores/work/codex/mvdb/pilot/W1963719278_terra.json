@@ -1,0 +1,545 @@
+{
+  "doc": {
+    "doi": "10.1144/sjg44020151",
+    "citation": "Molyneux, S. G., Barron, H. F. & Smith, R. A. 2008. Upper Llandovery–Wenlock (Silurian) palynology of the Pentland Hills inliers, Midland Valley of Scotland. Scottish Journal of Geology 44, 151–168.",
+    "language": "English",
+    "reports_window_spores": true,
+    "comment": "The study focuses on acritarchs. Figure 8 combines Henshaw Formation data from this study and Wellman & Richardson (1993), and Straiton Grits data from this study and Dorning (1982). Formation-level compilations below overlap the separately reported samples; they should not be counted as independent assemblages. The supplied PDF clips parts of figures 5–7, preventing reliable recovery of all sample-level spore distributions. Figure 8 and the narrative remain readable."
+  },
+  "items": [
+    {
+      "assemblage_id": "pentland-reservoir-formation",
+      "scope": "formation",
+      "locality": "Pentland Hills",
+      "country": "Scotland",
+      "formation": "Reservoir Formation",
+      "section_or_core": "North Esk, Bavelaw Castle and Loganlee inliers",
+      "depth_or_level": "",
+      "latitude": "",
+      "longitude": "",
+      "palaeogeo_unit_reported": "southern continental margin of Laurentia",
+      "palaeo_unit_proposed": "Laurentia",
+      "age_as_reported": "late Telychian (late Llandovery) spiralis Biozone",
+      "age_basis": "graptolite",
+      "age_basis_detail": "Graptolite evidence; palynological assemblages are consistent with late Llandovery.",
+      "age_circular": false,
+      "stage_min_proposed": "Telychian",
+      "stage_max_proposed": "Telychian",
+      "setting_as_reported": "offshore, deep-water, submarine fan complex; alternatively a relatively shallow marine shelf",
+      "setting_class": "unknown",
+      "n_samples": "",
+      "reworking_status": "none",
+      "notes": "Figure 8 is a formation-level compilation. Acritarchs were the main focus and dominated the productive microfloras. The authors discuss alternative shelf and deep-water fan interpretations and possible redistribution of palynomorphs in turbidite systems; they do not demonstrate reworking of the spores.",
+      "locator": "Palynology of the North Esk Group; Discussion; Fig. 8",
+      "occurrences": [
+        {
+          "taxon_as_reported": "dyads",
+          "genus": "",
+          "qualifier": "?",
+          "abundance": "present",
+          "illustrated": false,
+          "locator": "Fig. 8"
+        },
+        {
+          "taxon_as_reported": "Laevolancis divellomedia (Chibrikova) Burgess & Richardson 1991",
+          "genus": "Laevolancis",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": false,
+          "locator": "Fig. 8"
+        },
+        {
+          "taxon_as_reported": "tetrads",
+          "genus": "",
+          "qualifier": "indet.",
+          "abundance": "present",
+          "illustrated": false,
+          "locator": "Fig. 8"
+        }
+      ]
+    },
+    {
+      "assemblage_id": "loganlee-reservoir-lowest-sample",
+      "scope": "sample",
+      "locality": "Loganlee Inlier, Pentland Hills",
+      "country": "Scotland",
+      "formation": "Reservoir Formation",
+      "section_or_core": "Loganlee Inlier",
+      "depth_or_level": "lowest sample",
+      "latitude": "",
+      "longitude": "",
+      "palaeogeo_unit_reported": "southern continental margin of Laurentia",
+      "palaeo_unit_proposed": "Laurentia",
+      "age_as_reported": "late Telychian (late Llandovery) spiralis Biozone",
+      "age_basis": "graptolite",
+      "age_basis_detail": "Formation age based on graptolites.",
+      "age_circular": false,
+      "stage_min_proposed": "Telychian",
+      "stage_max_proposed": "Telychian",
+      "setting_as_reported": "offshore, deep-water, submarine fan complex; alternatively a relatively shallow marine shelf",
+      "setting_class": "unknown",
+      "n_samples": "1",
+      "reworking_status": "none",
+      "notes": "The only productive one of six Loganlee samples; the other five were barren. The authors note that intrusion of the Black Hill Felsite might have affected preservation. This sample overlaps the Reservoir Formation compilation.",
+      "locator": "Palynology of the North Esk Group, Bavelaw Castle and Loganlee inliers",
+      "occurrences": [
+        {
+          "taxon_as_reported": "cryptospore tetrads",
+          "genus": "",
+          "qualifier": "indet.",
+          "abundance": "present",
+          "illustrated": false,
+          "locator": "Palynology of the North Esk Group, Bavelaw Castle and Loganlee inliers"
+        }
+      ]
+    },
+    {
+      "assemblage_id": "pentland-deerhope-formation",
+      "scope": "formation",
+      "locality": "Pentland Hills",
+      "country": "Scotland",
+      "formation": "Deerhope Formation",
+      "section_or_core": "North Esk Inlier",
+      "depth_or_level": "",
+      "latitude": "",
+      "longitude": "",
+      "palaeogeo_unit_reported": "southern continental margin of Laurentia",
+      "palaeo_unit_proposed": "Laurentia",
+      "age_as_reported": "mid spiralis Biozone to mid lapworthi Biozone",
+      "age_basis": "graptolite",
+      "age_basis_detail": "Graptolite evidence; palynological assemblages are consistent with late Llandovery.",
+      "age_circular": false,
+      "stage_min_proposed": "Telychian",
+      "stage_max_proposed": "Telychian",
+      "setting_as_reported": "either interchannel overbank deposits of an inner submarine fan ... or distal storm beds",
+      "setting_class": "unknown",
+      "n_samples": "",
+      "reworking_status": "none",
+      "notes": "Figure 8 is a formation-level compilation. The paper's main focus was acritarchs; cryptospores were rare.",
+      "locator": "Palynology of the North Esk Group, Deerhope Formation; Fig. 8",
+      "occurrences": [
+        {
+          "taxon_as_reported": "Cheilotetras caledonica Wellman & Richardson 1993",
+          "genus": "Cheilotetras",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": false,
+          "locator": "Fig. 8"
+        },
+        {
+          "taxon_as_reported": "Laevolancis divellomedia (Chibrikova) Burgess & Richardson 1991",
+          "genus": "Laevolancis",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": false,
+          "locator": "Fig. 8"
+        },
+        {
+          "taxon_as_reported": "tetrads",
+          "genus": "",
+          "qualifier": "indet.",
+          "abundance": "present",
+          "illustrated": false,
+          "locator": "Fig. 8"
+        },
+        {
+          "taxon_as_reported": "Tetrahedraletes medinensis Strother & Traverse 1979",
+          "genus": "Tetrahedraletes",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": false,
+          "locator": "Fig. 8"
+        }
+      ]
+    },
+    {
+      "assemblage_id": "pentland-wether-law-linn-formation",
+      "scope": "formation",
+      "locality": "Pentland Hills",
+      "country": "Scotland",
+      "formation": "Wether Law Linn Formation",
+      "section_or_core": "North Esk and Bavelaw Castle inliers",
+      "depth_or_level": "",
+      "latitude": "",
+      "longitude": "",
+      "palaeogeo_unit_reported": "southern continental margin of Laurentia",
+      "palaeo_unit_proposed": "Laurentia",
+      "age_as_reported": "probable latest Telychian lapworthi and/or insectus Biozone",
+      "age_basis": "graptolite",
+      "age_basis_detail": "Graptolite evidence; palynological assemblages are consistent with late Llandovery.",
+      "age_circular": false,
+      "stage_min_proposed": "Telychian",
+      "stage_max_proposed": "Telychian",
+      "setting_as_reported": "a broad marine lagoon ... in which fluctuating salinities with the occasional restoration of fully marine conditions culminated in brackish or freshwater conditions",
+      "setting_class": "marginal-marine",
+      "n_samples": "",
+      "reworking_status": "none",
+      "notes": "Figure 8 is a formation-level compilation. The highest North Esk sample yielded rare ?Laevolancis divellomedia. Acritarchs were the main focus.",
+      "locator": "Palynology of the North Esk Group, Wether Law Linn Formation; Fig. 8",
+      "occurrences": [
+        {
+          "taxon_as_reported": "dyads",
+          "genus": "",
+          "qualifier": "?",
+          "abundance": "present",
+          "illustrated": false,
+          "locator": "Fig. 8"
+        },
+        {
+          "taxon_as_reported": "Laevolancis divellomedia (Chibrikova) Burgess & Richardson 1991",
+          "genus": "Laevolancis",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": false,
+          "locator": "Fig. 8"
+        },
+        {
+          "taxon_as_reported": "tetrads",
+          "genus": "",
+          "qualifier": "?",
+          "abundance": "present",
+          "illustrated": false,
+          "locator": "Fig. 8"
+        }
+      ]
+    },
+    {
+      "assemblage_id": "north-esk-henshaw-formation",
+      "scope": "composite",
+      "locality": "Lynslie Burn, North Esk Inlier, Pentland Hills",
+      "country": "Scotland",
+      "formation": "Henshaw Formation",
+      "section_or_core": "Lynslie Burn",
+      "depth_or_level": "",
+      "latitude": "",
+      "longitude": "",
+      "palaeogeo_unit_reported": "southern continental margin of Laurentia",
+      "palaeo_unit_proposed": "Laurentia",
+      "age_as_reported": "early Wenlock",
+      "age_basis": "spore-zone",
+      "age_basis_detail": "The formation is dated on spore evidence by Wellman & Richardson (1993).",
+      "age_circular": true,
+      "stage_min_proposed": "Sheinwoodian",
+      "stage_max_proposed": "Sheinwoodian",
+      "setting_as_reported": "terrestrial alluvial fan complex with minor marine incursions",
+      "setting_class": "non-marine",
+      "n_samples": "",
+      "reworking_status": "none",
+      "notes": "Figure 8 combines records from this paper and Wellman & Richardson (1993); individual taxa cannot be attributed confidently to either study from the combined figure. The present samples came from exposures close to those studied by Wellman & Richardson. Marine microfossils were rare.",
+      "locator": "Palynology of the North Esk Group, Henshaw Formation; Fig. 8 and caption",
+      "occurrences": [
+        {
+          "taxon_as_reported": "Cheilotetras caledonica Wellman & Richardson 1993",
+          "genus": "Cheilotetras",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": false,
+          "locator": "Fig. 8"
+        },
+        {
+          "taxon_as_reported": "Dyadospora murusattenuata Strother & Traverse 1979",
+          "genus": "Dyadospora",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": false,
+          "locator": "Fig. 8"
+        },
+        {
+          "taxon_as_reported": "dyads",
+          "genus": "",
+          "qualifier": "indet.",
+          "abundance": "present",
+          "illustrated": false,
+          "locator": "Fig. 8"
+        },
+        {
+          "taxon_as_reported": "Laevolancis divellomedia (Chibrikova) Burgess & Richardson 1991",
+          "genus": "Laevolancis",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": false,
+          "locator": "Fig. 8"
+        },
+        {
+          "taxon_as_reported": "Laevolancis plicata Burgess & Richardson 1991",
+          "genus": "Laevolancis",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": false,
+          "locator": "Fig. 8"
+        },
+        {
+          "taxon_as_reported": "Pseudodyadospora petasus Wellman & Richardson 1993",
+          "genus": "Pseudodyadospora",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": false,
+          "locator": "Fig. 8"
+        },
+        {
+          "taxon_as_reported": "Rimosotetras problematica Burgess 1991",
+          "genus": "Rimosotetras",
+          "qualifier": "?",
+          "abundance": "present",
+          "illustrated": false,
+          "locator": "Fig. 8"
+        },
+        {
+          "taxon_as_reported": "Tetrahedraletes medinensis Strother & Traverse 1979",
+          "genus": "Tetrahedraletes",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": false,
+          "locator": "Fig. 8"
+        },
+        {
+          "taxon_as_reported": "Ambitisporites avitus Hoffmeister 1959",
+          "genus": "Ambitisporites",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": false,
+          "locator": "Fig. 8"
+        },
+        {
+          "taxon_as_reported": "Ambitisporites dilutus (Hoffmeister) Richardson & Ioannides 1973",
+          "genus": "Ambitisporites",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": false,
+          "locator": "Fig. 8"
+        }
+      ]
+    },
+    {
+      "assemblage_id": "girvan-drumyork-mpa-49700",
+      "scope": "sample",
+      "locality": "tributary of the Buskin Burn [NS 3999 0512], 1180 m E of Largs, Girvan Inlier",
+      "country": "Scotland",
+      "formation": "Drumyork Flags Formation",
+      "section_or_core": "tributary of the Buskin Burn",
+      "depth_or_level": "MPA 49700",
+      "latitude": "",
+      "longitude": "",
+      "palaeogeo_unit_reported": "southern continental margin of Laurentia",
+      "palaeo_unit_proposed": "Laurentia",
+      "age_as_reported": "spiralis Biozone",
+      "age_basis": "graptolite",
+      "age_basis_detail": "Formation assigned to the spiralis Biozone by Floyd & Williams (2003).",
+      "age_circular": false,
+      "stage_min_proposed": "Telychian",
+      "stage_max_proposed": "Telychian",
+      "setting_as_reported": "mid to outer shelf",
+      "setting_class": "marine-shelf",
+      "n_samples": "1",
+      "reworking_status": "none",
+      "notes": "Spot sample; abundant acritarchs accompanied by rarer cryptospores, chitinozoans and scolecodonts. The sample also contributes to the Drumyork Flags formation-level compilation.",
+      "locator": "Silurian palynology of the Girvan Inlier",
+      "occurrences": [
+        {
+          "taxon_as_reported": "Laevolancis divellomedia",
+          "genus": "Laevolancis",
+          "qualifier": "",
+          "abundance": "rarer",
+          "illustrated": false,
+          "locator": "Silurian palynology of the Girvan Inlier"
+        },
+        {
+          "taxon_as_reported": "Tetrahedraletes medinensis",
+          "genus": "Tetrahedraletes",
+          "qualifier": "",
+          "abundance": "rarer",
+          "illustrated": false,
+          "locator": "Silurian palynology of the Girvan Inlier"
+        }
+      ]
+    },
+    {
+      "assemblage_id": "girvan-drumyork-mpa-49702",
+      "scope": "sample",
+      "locality": "tributary south of Cawin Burn [NS 3714 0382], Girvan Inlier",
+      "country": "Scotland",
+      "formation": "Drumyork Flags Formation",
+      "section_or_core": "tributary south of Cawin Burn",
+      "depth_or_level": "MPA 49702",
+      "latitude": "",
+      "longitude": "",
+      "palaeogeo_unit_reported": "southern continental margin of Laurentia",
+      "palaeo_unit_proposed": "Laurentia",
+      "age_as_reported": "spiralis Biozone",
+      "age_basis": "graptolite",
+      "age_basis_detail": "Formation assigned to the spiralis Biozone by Floyd & Williams (2003).",
+      "age_circular": false,
+      "stage_min_proposed": "Telychian",
+      "stage_max_proposed": "Telychian",
+      "setting_as_reported": "mid to outer shelf",
+      "setting_class": "marine-shelf",
+      "n_samples": "1",
+      "reworking_status": "none",
+      "notes": "Spot sample dominated by acritarchs; spores were rare. The sample also contributes to the Drumyork Flags formation-level compilation.",
+      "locator": "Silurian palynology of the Girvan Inlier",
+      "occurrences": [
+        {
+          "taxon_as_reported": "Laevolancis divellomedia",
+          "genus": "Laevolancis",
+          "qualifier": "",
+          "abundance": "rare",
+          "illustrated": false,
+          "locator": "Silurian palynology of the Girvan Inlier"
+        },
+        {
+          "taxon_as_reported": "Tetrahedraletes medinensis",
+          "genus": "Tetrahedraletes",
+          "qualifier": "",
+          "abundance": "rare",
+          "illustrated": false,
+          "locator": "Silurian palynology of the Girvan Inlier"
+        },
+        {
+          "taxon_as_reported": "Ambitisporites?",
+          "genus": "Ambitisporites",
+          "qualifier": "?",
+          "abundance": "rare",
+          "illustrated": false,
+          "locator": "Silurian palynology of the Girvan Inlier"
+        }
+      ]
+    },
+    {
+      "assemblage_id": "girvan-drumyork-formation-composite",
+      "scope": "formation",
+      "locality": "Girvan Inlier",
+      "country": "Scotland",
+      "formation": "Drumyork Flags Formation",
+      "section_or_core": "",
+      "depth_or_level": "",
+      "latitude": "",
+      "longitude": "",
+      "palaeogeo_unit_reported": "southern continental margin of Laurentia",
+      "palaeo_unit_proposed": "Laurentia",
+      "age_as_reported": "spiralis Biozone",
+      "age_basis": "graptolite",
+      "age_basis_detail": "Formation assigned to the spiralis Biozone by Floyd & Williams (2003).",
+      "age_circular": false,
+      "stage_min_proposed": "Telychian",
+      "stage_max_proposed": "Telychian",
+      "setting_as_reported": "mid to outer shelf",
+      "setting_class": "marine-shelf",
+      "n_samples": "",
+      "reworking_status": "none",
+      "notes": "Figure 8 compiles spot-sample records. It overlaps MPA 49700 and MPA 49702 and includes a tentative Rimosotetras identification that the narrative does not allocate to an individual sample.",
+      "locator": "Fig. 8",
+      "occurrences": [
+        {
+          "taxon_as_reported": "Laevolancis divellomedia (Chibrikova) Burgess & Richardson 1991",
+          "genus": "Laevolancis",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": false,
+          "locator": "Fig. 8"
+        },
+        {
+          "taxon_as_reported": "Rimosotetras problematica Burgess 1991",
+          "genus": "Rimosotetras",
+          "qualifier": "?",
+          "abundance": "present",
+          "illustrated": false,
+          "locator": "Fig. 8"
+        },
+        {
+          "taxon_as_reported": "Tetrahedraletes medinensis Strother & Traverse 1979",
+          "genus": "Tetrahedraletes",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": false,
+          "locator": "Fig. 8"
+        },
+        {
+          "taxon_as_reported": "Ambitisporites spp.",
+          "genus": "Ambitisporites",
+          "qualifier": "?",
+          "abundance": "present",
+          "illustrated": false,
+          "locator": "Fig. 8"
+        }
+      ]
+    },
+    {
+      "assemblage_id": "girvan-toddy-burn-mpa-50941",
+      "scope": "sample",
+      "locality": "Toddy Burn [NS 3196 0160], 425 m WSW of Cairn Hill, Girvan district",
+      "country": "Scotland",
+      "formation": "",
+      "section_or_core": "Toddy Burn",
+      "depth_or_level": "MPA 50941",
+      "latitude": "",
+      "longitude": "",
+      "palaeogeo_unit_reported": "southern continental margin of Laurentia",
+      "palaeo_unit_proposed": "Laurentia",
+      "age_as_reported": "",
+      "age_basis": "unstated",
+      "age_basis_detail": "",
+      "age_circular": false,
+      "stage_min_proposed": "",
+      "stage_max_proposed": "",
+      "setting_as_reported": "",
+      "setting_class": "unknown",
+      "n_samples": "1",
+      "reworking_status": "none",
+      "notes": "The assemblage resembles those of the Drumyork Flags Formation and upper Reservoir Formation, but its formation assignment is uncertain. Figure 8 marks taxa probably from the Drumyork Flags with parenthesised symbols. The sample yielded abundant acritarchs with rarer cryptospores.",
+      "locator": "Silurian palynology of the Girvan Inlier",
+      "occurrences": [
+        {
+          "taxon_as_reported": "Laevolancis divellomedia",
+          "genus": "Laevolancis",
+          "qualifier": "",
+          "abundance": "rarer",
+          "illustrated": false,
+          "locator": "Silurian palynology of the Girvan Inlier"
+        },
+        {
+          "taxon_as_reported": "Tetrahedraletes medinensis",
+          "genus": "Tetrahedraletes",
+          "qualifier": "",
+          "abundance": "rarer",
+          "illustrated": false,
+          "locator": "Silurian palynology of the Girvan Inlier"
+        }
+      ]
+    },
+    {
+      "assemblage_id": "girvan-straiton-grits-burn",
+      "scope": "sample",
+      "locality": "burn [NS 3697 0459] 920 m WNW of Bennan Straiton, Girvan Inlier",
+      "country": "Scotland",
+      "formation": "Straiton Grits Formation",
+      "section_or_core": "burn 920 m WNW of Bennan Straiton",
+      "depth_or_level": "",
+      "latitude": "",
+      "longitude": "",
+      "palaeogeo_unit_reported": "southern continental margin of Laurentia",
+      "palaeo_unit_proposed": "Laurentia",
+      "age_as_reported": "Wenlock",
+      "age_basis": "lithostratigraphic",
+      "age_basis_detail": "Formation is placed in the Wenlock in the text and Fig. 8.",
+      "age_circular": false,
+      "stage_min_proposed": "Homerian",
+      "stage_max_proposed": "Sheinwoodian",
+      "setting_as_reported": "marginal marine ... very shallow marine or brackish water, possibly lagoonal conditions",
+      "setting_class": "marginal-marine",
+      "n_samples": "1",
+      "reworking_status": "none",
+      "notes": "A restricted assemblage dominated by sphaeromorph acritarchs. Figure 8 combines Straiton Grits records from this paper and Dorning (1982); this sample-level occurrence is explicitly reported in the present paper.",
+      "locator": "Silurian palynology of the Girvan Inlier",
+      "occurrences": [
+        {
+          "taxon_as_reported": "Tetrahedraletes medinensis",
+          "genus": "Tetrahedraletes",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": false,
+          "locator": "Silurian palynology of the Girvan Inlier"
+        }
+      ]
+    }
+  ]
+}

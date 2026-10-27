@@ -1,0 +1,342 @@
+{
+  "doc": {
+    "doi": "10.1344/105.000001693",
+    "citation": "Noetinger, S. and di Pasquo, M.M. (2011). Devonian palynological assemblages from the San Antonio x-1 Borehole, Tarija Basin, northwestern Argentina. Geologica Acta, 9(2), 199–216.",
+    "language": "English",
+    "reports_window_spores": true,
+    "comment": "SA1 overlaps the requested window but extends into the Eifelian; its taxa cannot individually be assigned an Emsian age. SA2 and SA3 are younger and excluded. Fig. 3's assemblage brackets conflict with assignments in the discussion: its SA1 bracket includes BAFC-Pl 2037, explicitly assigned to SA2 in the text, and plots Grandispora gabesensis below SA3 despite the text calling it exclusive to SA3. Disputed occurrences are identified in their locators. The study expands the 23-sample investigation of Noetinger and di Pasquo (2007), Preliminary studies of Devonian microfloras of a borehole from the Tarija Basin, Northwestern Argentina, to 55 samples."
+  },
+  "items": [
+    {
+      "assemblage_id": "SA1",
+      "scope": "section-interval",
+      "locality": "San Antonio range, Tarija Basin, northwestern Argentina",
+      "country": "Argentina",
+      "formation": "Los Monos Formation; Huamampampa Formation",
+      "section_or_core": "San Antonio x-1 Borehole",
+      "depth_or_level": "3124-3628m",
+      "latitude": "",
+      "longitude": "",
+      "palaeogeo_unit_reported": "western Gondwana",
+      "palaeo_unit_proposed": "Gondwana-South-America",
+      "age_as_reported": "late Emsian to the mid Eifelian",
+      "age_basis": "mixed",
+      "age_basis_detail": "Grandispora protea and Grandispora douglastownense support correlation with late Emsian–early Eifelian spore zones. Ancyrochitina parisi and Ramochitina ramosi suggest latest Emsian–early Eifelian for 3616–3584m. Other spores have Eifelian or younger published ranges; the authors adopt a broader late Emsian–mid Eifelian age because the material consists of cutting samples.",
+      "age_circular": true,
+      "stage_min_proposed": "Emsian",
+      "stage_max_proposed": "Eifelian",
+      "setting_as_reported": "nearshore, shallow marine depositional conditions characterized by a high terrestrial input and variable marine influence",
+      "setting_class": "marine-shelf",
+      "n_samples": "",
+      "reworking_status": "none",
+      "notes": "Continental elements constitute 93%; biodiversity is relatively low, spores relatively small, preservation variable and cuticles concentrated. Chitinozoan fragments first occur at BAFC-Pl 2040 (3150-3152m). The basal formation attribution is tentative: the authors assign the middle succession to Los Monos and suggest upper Huamampampa for its base. Reworking is not claimed; possible contamination by caving is discussed and cannot be excluded for cutting samples. Fig. 3 brackets 22 sample rows, BAFC-Pl 1983 through 2007, as SA1, but this conflicts with some textual assemblage assignments. The occurrence list retains explicit SA1 prose records and records supported by that plotted bracket or its sample-linked captions; disputed assignments are flagged individually. Illustrated indicates that the taxon is figured somewhere in this paper, not necessarily from an undisputed SA1 sample. Table I is a whole-borehole inventory and has not been assigned wholesale to SA1. Its sole cryptospore, Dyadospora murusattenuata Morphon, is described as occurring from Eifelian to Frasnian and illustrated from BAFC-Pl 1981, outside the plotted SA1 bracket; it is not securely assigned here to SA1.",
+      "locator": "Palynological assemblages, p. 208; Discussion, Assemblage SA1 (3124-3628m Interval), pp. 209–210; Fig. 3, p. 202; concluding remarks, p. 211; electronic appendix Table I and Figs. II–IV.",
+      "occurrences": [
+        {
+          "taxon_as_reported": "Acinosporites acanthomammillatus",
+          "genus": "Acinosporites",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Fig. 3, taxon 31, points within plotted SA1; Figs. 5A and II A, BAFC-Pl 1986. Disputed: discussion p. 210 assigns its concurrence with Acinosporites macrospinosus at BAFC-Pl 2037 to SA2."
+        },
+        {
+          "taxon_as_reported": "Acinosporites macrospinosus",
+          "genus": "Acinosporites",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Fig. 3, taxon 12, points within plotted SA1; Figs. 5C and II C, BAFC-Pl 2041. Disputed: discussion p. 210 assigns its concurrence with Acinosporites acanthomammillatus at BAFC-Pl 2037 to SA2."
+        },
+        {
+          "taxon_as_reported": "Acinosporites parviornatus",
+          "genus": "Acinosporites",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Fig. 3, taxon 17; Fig. II D, BAFC-Pl 2007, within plotted SA1. Discussion p. 210 instead lists its appearance within SA2."
+        },
+        {
+          "taxon_as_reported": "Ambitisporites sp.",
+          "genus": "Ambitisporites",
+          "qualifier": "sp.",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Systematics, p. 206; Table I; Fig. II E, BAFC-Pl 2003, within the SA1 bracket in Fig. 3."
+        },
+        {
+          "taxon_as_reported": "Apiculatasporites microconus",
+          "genus": "Apiculatasporites",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Fig. 3, taxon 23; Fig. II F, BAFC-Pl 2006, within plotted SA1. Discussion p. 210 instead lists its appearance within SA2."
+        },
+        {
+          "taxon_as_reported": "Apiculatisporis sp. A in Amenábar, di Pasquo, Carrizo and Azcuy",
+          "genus": "Apiculatisporis",
+          "qualifier": "sp.",
+          "abundance": "Only a single specimen was found",
+          "illustrated": true,
+          "locator": "Table I; Fig. II G, BAFC-Pl 2038, within the SA1 bracket in Fig. 3."
+        },
+        {
+          "taxon_as_reported": "Apiculiretusispora gaspiensis",
+          "genus": "Apiculiretusispora",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Discussion, SA1, pp. 209–210; Fig. 3, taxon 25; Table I; Fig. II I."
+        },
+        {
+          "taxon_as_reported": "Biharisporites parviornatus",
+          "genus": "Biharisporites",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Fig. 3, taxon 13; Figs. 5D and II K, BAFC-Pl 1984, within plotted SA1. Disputed: discussion p. 210 characterises SA2 by this species."
+        },
+        {
+          "taxon_as_reported": "Corystisporites multispinosus var. multispinosus",
+          "genus": "Corystisporites",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Fig. 3, taxon 1; Fig. II N, BAFC-Pl 2007; discussion, SA1, p. 209, as Corystisporites multispinosus."
+        },
+        {
+          "taxon_as_reported": "Cymbosporites catillus",
+          "genus": "Cymbosporites",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Fig. 3, taxon 64, points within plotted SA1; Figs. 5E and II M, BAFC-Pl 2038."
+        },
+        {
+          "taxon_as_reported": "Densosporites inaequus",
+          "genus": "Densosporites",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Discussion, SA1, p. 209; Table I; Fig. II O, BAFC-Pl 2002."
+        },
+        {
+          "taxon_as_reported": "Dibolisporites echinaceus",
+          "genus": "Dibolisporites",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Discussion, SA1, p. 209, as D. echinaceus; Fig. 3, taxon 24; Table I; Fig. II P."
+        },
+        {
+          "taxon_as_reported": "Dibolisporites eifeliensis",
+          "genus": "Dibolisporites",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Discussion, SA1, p. 209, as D. eifeliensis; Fig. 3, taxon 5; Figs. 5F and II Q, BAFC-Pl 1999."
+        },
+        {
+          "taxon_as_reported": "Dibolisporites hystricosus",
+          "genus": "Dibolisporites",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Discussion, SA1, p. 209; Fig. 3, taxon 4; Figs. 5G and II R, BAFC-Pl 2007."
+        },
+        {
+          "taxon_as_reported": "Dibolisporites quebecensis",
+          "genus": "Dibolisporites",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Discussion, SA1, p. 209; Fig. 3, taxon 7; Fig. II S, BAFC-Pl 2041."
+        },
+        {
+          "taxon_as_reported": "Dibolisporites sp. cf. D. farraginis",
+          "genus": "Dibolisporites",
+          "qualifier": "cf.",
+          "abundance": "1 specimen",
+          "illustrated": true,
+          "locator": "Systematics, p. 206; Fig. 3, taxon 14 and caption qualification; Fig. II T, BAFC-Pl 1983, within plotted SA1. Disputed: discussion p. 210 lists Dibolisporites farraginis as characteristic of SA2."
+        },
+        {
+          "taxon_as_reported": "Dibolisporites uncatus",
+          "genus": "Dibolisporites",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Fig. 3, taxon 18, points within plotted SA1; Table I; Fig. II U. Discussion p. 210 instead lists its appearance within SA2."
+        },
+        {
+          "taxon_as_reported": "Dibolisporites vegrandis",
+          "genus": "Dibolisporites",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Table I; Fig. II V, BAFC-Pl 2036, a sample within the SA1 bracket in Fig. 3. The corresponding points for taxon 35 in Fig. 3 do not agree clearly with this caption assignment."
+        },
+        {
+          "taxon_as_reported": "Emphanisporites epicautus",
+          "genus": "Emphanisporites",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Discussion, SA1, p. 209; Fig. 3, taxon 6; Fig. III A, BAFC-Pl 2000."
+        },
+        {
+          "taxon_as_reported": "Emphanisporites rotatus",
+          "genus": "Emphanisporites",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Table I; Fig. III B, BAFC-Pl 1998, within the SA1 bracket in Fig. 3."
+        },
+        {
+          "taxon_as_reported": "Grandispora brevizonata",
+          "genus": "Grandispora",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Discussion, SA1, p. 209; Fig. 3, taxon 10; Fig. III D, BAFC-Pl 2041."
+        },
+        {
+          "taxon_as_reported": "Grandispora daemonii",
+          "genus": "Grandispora",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Fig. 3, taxon 49, a point within plotted SA1; Table I; Figs. 5I and III E. Disputed: discussion p. 210 lists its occurrence within SA2."
+        },
+        {
+          "taxon_as_reported": "Grandispora douglastownense",
+          "genus": "Grandispora",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Discussion, SA1, p. 209; Fig. 3, taxon 9; Figs. 5J and III F, BAFC-Pl 2006."
+        },
+        {
+          "taxon_as_reported": "Grandispora gabesensis",
+          "genus": "Grandispora",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Fig. 3, taxon 46, points within plotted SA1; Table I; Fig. III G. Disputed: discussion p. 210 explicitly calls this species exclusive to SA3."
+        },
+        {
+          "taxon_as_reported": "Grandispora inculta",
+          "genus": "Grandispora",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Fig. 3, taxon 45, a point within plotted SA1; Table I; Fig. III H."
+        },
+        {
+          "taxon_as_reported": "Grandispora mammillata",
+          "genus": "Grandispora",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Discussion, SA1, p. 209, as G. mammillata; Table I; Fig. III I, BAFC-Pl 2038, caption spelling Grandispora mamillata."
+        },
+        {
+          "taxon_as_reported": "Grandispora permulta",
+          "genus": "Grandispora",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Fig. 3, taxon 43, points within plotted SA1; Table I; Fig. III J, BAFC-Pl 2007."
+        },
+        {
+          "taxon_as_reported": "Grandispora protea",
+          "genus": "Grandispora",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Discussion, SA1, p. 209; Fig. 3, taxon 27; Table I; Figs. 5K and III K."
+        },
+        {
+          "taxon_as_reported": "Grandispora pseudoreticulata",
+          "genus": "Grandispora",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Fig. 3, taxon 68, points throughout plotted SA1; Table I; Figs. 5L and III L. The dominance statement on p. 208 concerns SA2."
+        },
+        {
+          "taxon_as_reported": "Granulatisporites muninensis",
+          "genus": "Granulatisporites",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Discussion, SA1, p. 209; Fig. 3, taxon 3; Fig. III M, BAFC-Pl 2002."
+        },
+        {
+          "taxon_as_reported": "Leiotriletes balapucencis",
+          "genus": "Leiotriletes",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Fig. 3, taxon 47, points within plotted SA1; Table I; Figs. 5M and III N, BAFC-Pl 2001."
+        },
+        {
+          "taxon_as_reported": "Leiotriletes pagius",
+          "genus": "Leiotriletes",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Fig. 3, taxon 60, points within plotted SA1; Table I; Fig. III O, BAFC-Pl 1998."
+        },
+        {
+          "taxon_as_reported": "Leiotriletes pyramidalis",
+          "genus": "Leiotriletes",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Fig. 3, taxon 22; Fig. III P, BAFC-Pl 2005, within plotted SA1. Discussion p. 210 instead lists its appearance within SA2."
+        },
+        {
+          "taxon_as_reported": "Retusotriletes simplex",
+          "genus": "Retusotriletes",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Table I; Fig. IV A, BAFC-Pl 1984, within the SA1 bracket in Fig. 3."
+        },
+        {
+          "taxon_as_reported": "Verruciretusispora ornata",
+          "genus": "Verruciretusispora",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Fig. 3, taxon 19; Fig. IV D, BAFC-Pl 2041, within plotted SA1; Table I supplies the spelling used here. Discussion p. 210 instead lists its appearance within SA2."
+        },
+        {
+          "taxon_as_reported": "Verrucosisporites loboziakii",
+          "genus": "Verrucosisporites",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Discussion, SA1, p. 209; Fig. 3, taxon 8; Figs. 5Q and IV F, BAFC-Pl 2038."
+        },
+        {
+          "taxon_as_reported": "Verrucosisporites scurrus",
+          "genus": "Verrucosisporites",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Fig. 3, taxon 66, points within plotted SA1; Table I; Fig. IV G, BAFC-Pl 2041."
+        },
+        {
+          "taxon_as_reported": "Verrucosisporites tumulentus",
+          "genus": "Verrucosisporites",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Fig. 3, taxon 65, a point within plotted SA1; Table I; Fig. IV H. Disputed: discussion p. 210 lists its occurrence within SA2."
+        }
+      ]
+    }
+  ]
+}

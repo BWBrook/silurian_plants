@@ -1,0 +1,54 @@
+{
+  "doc": {
+    "doi": "10.3176/earth.2023.42",
+    "citation": "Rubinstein, C. V. and Vajda, V. 2023. Middle–Late Ordovician organic-walled phytoplankton from Sweden: diversity and early radiation. Estonian Journal of Earth Sciences, 72(1), 158.",
+    "language": "English",
+    "reports_window_spores": true,
+    "comment": "The supplied text is a one-page abstract without tables or figure captions. It reports cryptospores and trilete spores collectively from 23 samples, without taxonomic identifications or sample-level distributions. Crossref verification was unavailable."
+  },
+  "items": [
+    {
+      "assemblage_id": "Borenshult-1",
+      "scope": "section-interval",
+      "locality": "vicinity of Motala, east of Lake Vättern in south central Sweden",
+      "country": "Sweden",
+      "formation": "Furudal Limestone; Dalby Limestone; Kinnekulle K-bentonite; Skagen Limestone",
+      "section_or_core": "Borenshult-1 core",
+      "depth_or_level": "",
+      "latitude": "",
+      "longitude": "",
+      "palaeogeo_unit_reported": "Baltica",
+      "palaeo_unit_proposed": "Baltica",
+      "age_as_reported": "late Darriwilian (Stage slice Dw3)–early Katian (Stage slice Ka1)",
+      "age_basis": "mixed",
+      "age_basis_detail": "Conodonts and 206Pb/238U dating of volcanic ash deposits.",
+      "age_circular": false,
+      "stage_min_proposed": "Darriwilian",
+      "stage_max_proposed": "Katian",
+      "setting_as_reported": "marine marly carbonates deposited relatively close to land",
+      "setting_class": "marine-shelf",
+      "n_samples": "23 spore-bearing samples among 34 samples analysed",
+      "reworking_status": "none",
+      "notes": "The main focus is marine organic-walled phytoplankton, principally acritarchs. Sparse terrestrial palynomorphs comprise cryptospores and trilete spores. The reported age range describes the sampled succession; individual spore-bearing levels and the distribution of each spore group are unspecified. Acritarch assemblages A, B and C cannot be treated as separate spore assemblages from this account. Reworking is not addressed.",
+      "locator": "p. 158, abstract, first two paragraphs",
+      "occurrences": [
+        {
+          "taxon_as_reported": "cryptospores",
+          "genus": "",
+          "qualifier": "indet.",
+          "abundance": "Sparse terrestrial palynomorphs",
+          "illustrated": false,
+          "locator": "p. 158, abstract, second paragraph"
+        },
+        {
+          "taxon_as_reported": "trilete spores",
+          "genus": "",
+          "qualifier": "indet.",
+          "abundance": "Sparse terrestrial palynomorphs",
+          "illustrated": false,
+          "locator": "p. 158, abstract, second paragraph"
+        }
+      ]
+    }
+  ]
+}

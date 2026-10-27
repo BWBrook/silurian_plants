@@ -1,0 +1,1 @@
+2026-10-27T06:15:08.482842Z ERROR codex_core::tools::router: error=collab spawn failed: Fatal error: failed to load model context for thread 01a17bfd-8343-7b73-a93e-08e6ff742785: invalid thread-store request: no rollout found for thread id 01a17bfd-8343-7b73-a93e-08e6ff742785

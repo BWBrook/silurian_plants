@@ -1,0 +1,81 @@
+{
+  "doc": {
+    "doi": "10.3176/earth.2023.03",
+    "citation": "Wellman, C. H., Penn-Clarke, C. R. and Browning, C. 2023. Early land plant remains from the uppermost Ordovician–?lowermost Silurian Cedarberg Formation of South Africa. Estonian Journal of Earth Sciences, 72(1), 164. https://doi.org/10.3176/earth.2023.03",
+    "language": "English",
+    "reports_window_spores": true,
+    "comment": "The complete publication is a one-page abstract without tables, figures or named spore taxa. It reports a new pooled assemblage from Matjiesgoedkloof and summarises earlier Soom Shale records attributed to Jane Gray and colleagues; no earlier paper is identified bibliographically and reuse of their material is not stated. The possible earliest Silurian age concerns the upper Cedarberg Formation. DOI matches the supplied text; independent Crossref verification was blocked by network access."
+  },
+  "items": [
+    {
+      "assemblage_id": "10.3176/earth.2023.03_matjiesgoedkloof",
+      "scope": "section-interval",
+      "locality": "Matjiesgoedkloof, Western Cape Province",
+      "country": "South Africa",
+      "formation": "Cedarberg Formation",
+      "section_or_core": "Exposure at Matjiesgoedkloof",
+      "depth_or_level": "",
+      "latitude": "",
+      "longitude": "",
+      "palaeogeo_unit_reported": "Gondwana",
+      "palaeo_unit_proposed": "Gondwana-other",
+      "age_as_reported": "uppermost Ordovician–?lowermost Silurian",
+      "age_basis": "mixed",
+      "age_basis_detail": "Formation-level lithostratigraphic assignment. The Soom Shale is associated with the end of the Hirnantian glaciation; relict Soom taxa and Clarkeia-type brachiopod faunas suggest a probable earliest Silurian age for the upper Cedarberg Formation. No sample-specific dating evidence is supplied for Matjiesgoedkloof.",
+      "age_circular": false,
+      "stage_min_proposed": "Hirnantian",
+      "stage_max_proposed": "Rhuddanian",
+      "setting_as_reported": "",
+      "setting_class": "unknown",
+      "n_samples": "",
+      "reworking_status": "none",
+      "notes": "Multiple assemblages are discussed collectively without sample identifiers, counts or stratigraphic levels. Palynomorphs are abundant and well preserved, with moderate–high thermal maturity. Land plant spores dominate; marine palynomorphs are extremely rare, if present. Tetrads dominate to the exclusion of monads and dyads. High freshwater influx from retreating glaciers is proposed as an explanation for the scarcity of marine palynomorphs. The sampled exposure is not explicitly assigned to the Soom Shale or Disa Member, so their respective environmental descriptions are not assigned here. No trilete spores or named spore genera are reported. Reworking is not discussed.",
+      "locator": "p. 164, abstract, final two paragraphs",
+      "occurrences": [
+        {
+          "taxon_as_reported": "tetrads",
+          "genus": "",
+          "qualifier": "indet.",
+          "abundance": "dominated by tetrads to the exclusion of monads and dyads",
+          "illustrated": false,
+          "locator": "p. 164, abstract, final paragraph"
+        }
+      ]
+    },
+    {
+      "assemblage_id": "10.3176/earth.2023.03_soom_previous_records",
+      "scope": "formation",
+      "locality": "southwestern South Africa",
+      "country": "South Africa",
+      "formation": "Cedarberg Formation",
+      "section_or_core": "",
+      "depth_or_level": "Soom Shale",
+      "latitude": "",
+      "longitude": "",
+      "palaeogeo_unit_reported": "Ordovician eastern Gondwana at 30˚ S",
+      "palaeo_unit_proposed": "Gondwana-other",
+      "age_as_reported": "uppermost Ordovician",
+      "age_basis": "unstated",
+      "age_basis_detail": "The abstract places the Soom Shale towards the end of the Hirnantian glaciation but does not state the dating evidence for the previously reported spore-bearing material.",
+      "age_circular": false,
+      "stage_min_proposed": "Hirnantian",
+      "stage_max_proposed": "Hirnantian",
+      "setting_as_reported": "glacial marine environment, characterised by anoxic bottom waters",
+      "setting_class": "unknown",
+      "n_samples": "",
+      "reworking_status": "none",
+      "notes": "Historical member-level summary, represented at formation scope because the schema has no member scope. Earlier investigations yielded marine palynomorphs together with common terrestrial spore tetrads. The early cryptospore reports are attributed to Jane Gray and colleagues without a bibliographic reference, sample details or named taxa. The reported 30˚ S is a palaeolatitude, not a locality coordinate. Shelf versus offshore position is not specified. Reworking is not discussed.",
+      "locator": "p. 164, abstract, first and second paragraphs",
+      "occurrences": [
+        {
+          "taxon_as_reported": "dispersed spore tetrads",
+          "genus": "",
+          "qualifier": "indet.",
+          "abundance": "common",
+          "illustrated": false,
+          "locator": "p. 164, abstract, second paragraph"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,287 @@
+{
+ "type": "object",
+ "additionalProperties": false,
+ "required": [
+  "doc",
+  "items"
+ ],
+ "properties": {
+  "doc": {
+   "type": "object",
+   "additionalProperties": false,
+   "required": [
+    "doi",
+    "citation",
+    "language",
+    "reports_window_spores",
+    "comment"
+   ],
+   "properties": {
+    "doi": {
+     "type": "string"
+    },
+    "citation": {
+     "type": "string"
+    },
+    "language": {
+     "type": "string"
+    },
+    "reports_window_spores": {
+     "type": "boolean"
+    },
+    "comment": {
+     "type": "string"
+    }
+   }
+  },
+  "items": {
+   "type": "array",
+   "items": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+     "assemblage_id",
+     "scope",
+     "locality",
+     "country",
+     "formation",
+     "section_or_core",
+     "depth_or_level",
+     "latitude",
+     "longitude",
+     "palaeogeo_unit_reported",
+     "palaeo_unit_proposed",
+     "age_as_reported",
+     "age_basis",
+     "age_basis_detail",
+     "age_circular",
+     "stage_min_proposed",
+     "stage_max_proposed",
+     "setting_as_reported",
+     "setting_class",
+     "n_samples",
+     "reworking_status",
+     "notes",
+     "locator",
+     "occurrences"
+    ],
+    "properties": {
+     "assemblage_id": {
+      "type": "string"
+     },
+     "scope": {
+      "type": "string",
+      "enum": [
+       "sample",
+       "section-interval",
+       "formation",
+       "composite"
+      ]
+     },
+     "locality": {
+      "type": "string"
+     },
+     "country": {
+      "type": "string"
+     },
+     "formation": {
+      "type": "string"
+     },
+     "section_or_core": {
+      "type": "string"
+     },
+     "depth_or_level": {
+      "type": "string"
+     },
+     "latitude": {
+      "type": "string"
+     },
+     "longitude": {
+      "type": "string"
+     },
+     "palaeogeo_unit_reported": {
+      "type": "string"
+     },
+     "palaeo_unit_proposed": {
+      "type": "string",
+      "enum": [
+       "Laurentia",
+       "Baltica",
+       "Avalonia",
+       "peri-Gondwana-Europe",
+       "Gondwana-North-Africa-Arabia",
+       "Gondwana-South-America",
+       "Gondwana-Australia-Antarctica",
+       "Gondwana-other",
+       "South-China",
+       "North-China",
+       "Tarim",
+       "Kazakhstania",
+       "Siberia",
+       "multiple",
+       "unknown"
+      ]
+     },
+     "age_as_reported": {
+      "type": "string"
+     },
+     "age_basis": {
+      "type": "string",
+      "enum": [
+       "conodont",
+       "chitinozoan",
+       "graptolite",
+       "acritarch",
+       "spore-zone",
+       "invertebrate",
+       "vertebrate",
+       "radiometric",
+       "lithostratigraphic",
+       "mixed",
+       "unstated"
+      ]
+     },
+     "age_basis_detail": {
+      "type": "string"
+     },
+     "age_circular": {
+      "type": "boolean"
+     },
+     "stage_min_proposed": {
+      "type": "string",
+      "enum": [
+       "Tournaisian",
+       "Famennian",
+       "Frasnian",
+       "Givetian",
+       "Eifelian",
+       "Emsian",
+       "Pragian",
+       "Lochkovian",
+       "Pridoli",
+       "Ludfordian",
+       "Gorstian",
+       "Homerian",
+       "Sheinwoodian",
+       "Telychian",
+       "Aeronian",
+       "Rhuddanian",
+       "Hirnantian",
+       "Katian",
+       "Sandbian",
+       "Darriwilian",
+       "Dapingian",
+       "Floian",
+       "Tremadocian",
+       ""
+      ]
+     },
+     "stage_max_proposed": {
+      "type": "string",
+      "enum": [
+       "Tournaisian",
+       "Famennian",
+       "Frasnian",
+       "Givetian",
+       "Eifelian",
+       "Emsian",
+       "Pragian",
+       "Lochkovian",
+       "Pridoli",
+       "Ludfordian",
+       "Gorstian",
+       "Homerian",
+       "Sheinwoodian",
+       "Telychian",
+       "Aeronian",
+       "Rhuddanian",
+       "Hirnantian",
+       "Katian",
+       "Sandbian",
+       "Darriwilian",
+       "Dapingian",
+       "Floian",
+       "Tremadocian",
+       ""
+      ]
+     },
+     "setting_as_reported": {
+      "type": "string"
+     },
+     "setting_class": {
+      "type": "string",
+      "enum": [
+       "marine-shelf",
+       "marine-offshore",
+       "marginal-marine",
+       "non-marine",
+       "unknown"
+      ]
+     },
+     "n_samples": {
+      "type": "string"
+     },
+     "reworking_status": {
+      "type": "string",
+      "enum": [
+       "none",
+       "discussed",
+       "claimed",
+       "demonstrated"
+      ]
+     },
+     "notes": {
+      "type": "string"
+     },
+     "locator": {
+      "type": "string"
+     },
+     "occurrences": {
+      "type": "array",
+      "items": {
+       "type": "object",
+       "additionalProperties": false,
+       "required": [
+        "taxon_as_reported",
+        "genus",
+        "qualifier",
+        "abundance",
+        "illustrated",
+        "locator"
+       ],
+       "properties": {
+        "taxon_as_reported": {
+         "type": "string"
+        },
+        "genus": {
+         "type": "string"
+        },
+        "qualifier": {
+         "type": "string",
+         "enum": [
+          "",
+          "cf.",
+          "aff.",
+          "?",
+          "sp.",
+          "spp.",
+          "indet."
+         ]
+        },
+        "abundance": {
+         "type": "string"
+        },
+        "illustrated": {
+         "type": "boolean"
+        },
+        "locator": {
+         "type": "string"
+        }
+       }
+      }
+     }
+    }
+   }
+  }
+ }
+}

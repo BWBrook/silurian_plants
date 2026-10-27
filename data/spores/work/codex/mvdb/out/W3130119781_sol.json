@@ -1,0 +1,306 @@
+{
+  "doc": {
+    "doi": "10.1017/njg.2020.20",
+    "citation": "Houben, A.J.P. & Vis, G.-J. (2021). Palynological indications for Silurian – earliest Devonian age strata in the Netherlands. Netherlands Journal of Geosciences 100, e2. https://doi.org/10.1017/njg.2020.20",
+    "language": "English",
+    "reports_window_spores": true,
+    "comment": "The two lower KTG-01 cores are dated using spores. Upper KTG-01 and S05-01 assemblages are included provisionally: their possible Early Devonian ages remain unresolved, and S05-01 may instead be Frasnian–Famennian, with reworked Early Devonian spores. Preservation is poor. Depth ranges and taxon spellings vary between the text, Figure 3 and captions; discrepancies are noted below. The supplementary Excel file was not retrieved. The UK comparison reuses Church, Fryer & Greenwood (1968). BHG-01 data reused from M. Streel in Bless (1978) comprise a barren lower core at 2902–2906.8 m and a Famennian upper assemblage, excluded from the target window. Discernisporites micromanifestus and Rotaspora knoxii reported by Abbink & Van de Laar (2000) from KTG-01 at 1351.8 m are rejected as contamination and are not included as occurrences."
+  },
+  "items": [
+    {
+      "assemblage_id": "KTG-01-core-4",
+      "scope": "section-interval",
+      "locality": "near the town of Kortgene, southwestern Netherlands",
+      "country": "Netherlands",
+      "formation": "",
+      "section_or_core": "Kortgene-01 (KTG-01), core 4",
+      "depth_or_level": "1890–1910 m",
+      "latitude": "",
+      "longitude": "",
+      "palaeogeo_unit_reported": "northern fringe of the Brabant Massif",
+      "palaeo_unit_proposed": "Avalonia",
+      "age_as_reported": "late Silurian (Ludlow–Pridoli) to Earliest Devonian (Lochkovian)",
+      "age_basis": "spore-zone",
+      "age_basis_detail": "Ranges of the recorded miospores, particularly Apiculiretusispora synorea and alete monads, together with the absence of taxa specifically appearing during Early Devonian times. Phytodebris independently suggests only a broader middle Silurian to Early Devonian interval.",
+      "age_circular": true,
+      "stage_min_proposed": "Gorstian",
+      "stage_max_proposed": "Lochkovian",
+      "setting_as_reported": "The depositional setting is interpreted as turbiditic.",
+      "setting_class": "marine-offshore",
+      "n_samples": "4 processed; 2 with sufficient palynological recovery",
+      "reworking_status": "none",
+      "notes": "Material description gives core 4 as 1891–1900 m, whereas the results give 1890–1910 m; Figure 4 identifies an illustrated specimen at 1910.4 m. Terrestrial palynomorphs dominate the study material. Figure 3 identifies Tetrahedraletes medinensis, while the prose reports Tetrahedraletes spp. The prose initially says Tetrahedraletes is confined to this interval but subsequently explicitly reports it in core 3. Dyadospora is included from the lower endpoint of its plotted range in Figure 3.",
+      "locator": "Material: Well Kortgene-01, p. 5; Stratigraphic interpretation of palynological associations, pp. 6–8; Fig. 3B–C; Fig. 4 caption, p. 7",
+      "occurrences": [
+        {
+          "taxon_as_reported": "Ambitisporites avitus–dilutus group",
+          "genus": "Ambitisporites",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "p. 6; Fig. 4:4, labelled 'Ambitisporites ambitus–dilutus group', KTG-01, 1910.4 m"
+        },
+        {
+          "taxon_as_reported": "Apiculiretusispora synorea",
+          "genus": "Apiculiretusispora",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": false,
+          "locator": "p. 6; Fig. 3B"
+        },
+        {
+          "taxon_as_reported": "Artemopyra spp.",
+          "genus": "Artemopyra",
+          "qualifier": "spp.",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "p. 6; Fig. 4:5, KTG-01, 1898.5 m"
+        },
+        {
+          "taxon_as_reported": "Cymbohilates microgranulatus",
+          "genus": "Cymbohilates",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": false,
+          "locator": "p. 6; Fig. 3B"
+        },
+        {
+          "taxon_as_reported": "Tetrahedraletes medinensis",
+          "genus": "Tetrahedraletes",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": false,
+          "locator": "Fig. 3B; reported as 'Tetrahedraletes spp.' on p. 6; Taxonomic appendix, p. 10"
+        },
+        {
+          "taxon_as_reported": "Dyadospora spp.",
+          "genus": "Dyadospora",
+          "qualifier": "spp.",
+          "abundance": "present",
+          "illustrated": false,
+          "locator": "Fig. 3B, lower endpoint of plotted range"
+        }
+      ]
+    },
+    {
+      "assemblage_id": "KTG-01-core-3",
+      "scope": "section-interval",
+      "locality": "near the town of Kortgene, southwestern Netherlands",
+      "country": "Netherlands",
+      "formation": "",
+      "section_or_core": "Kortgene-01 (KTG-01), core 3",
+      "depth_or_level": "1736–1722 m",
+      "latitude": "",
+      "longitude": "",
+      "palaeogeo_unit_reported": "northern fringe of the Brabant Massif",
+      "palaeo_unit_proposed": "Avalonia",
+      "age_as_reported": "late Silurian (Ludlow–Pridoli) to Earliest Devonian (Lochkovian)",
+      "age_basis": "spore-zone",
+      "age_basis_detail": "Spore ranges, including Apiculiretusispora synorea, alete monads and the appearance of Chelinohilates sinuosus; absence of taxa specifically appearing during Early Devonian times.",
+      "age_circular": true,
+      "stage_min_proposed": "Gorstian",
+      "stage_max_proposed": "Lochkovian",
+      "setting_as_reported": "The depositional setting is interpreted as turbiditic.",
+      "setting_class": "marine-offshore",
+      "n_samples": "5 processed; 2 with sufficient recovery",
+      "reworking_status": "claimed",
+      "notes": "Material description gives core 3 as 1720–1735 m. Ordovician marine acritarchs are considered reworked; the spores themselves are not claimed to be reworked. Figure 3 identifies Tetrahedraletes medinensis, whereas the prose reports Tetrahedraletes spp. Figure 3 labels Chelinohilates as 'Chelinohilates sinuousus'; the positive occurrence in the prose is printed 'Chelinohilates sinuosus'. An unidentified degraded miospore from 1730.3 m is illustrated in Figure 4:6. The plotted Dyadospora range spans this core, but no separate positive occurrence is explicitly assigned to it in the prose.",
+      "locator": "Material: Well Kortgene-01, p. 5; Stratigraphic interpretation of palynological associations, pp. 6–8; Fig. 3B–C; Fig. 4:6",
+      "occurrences": [
+        {
+          "taxon_as_reported": "Ambitisporites avitus–dilutus group",
+          "genus": "Ambitisporites",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": false,
+          "locator": "p. 6, paragraph beginning 'The Ambitisporites avitus–dilutus group'"
+        },
+        {
+          "taxon_as_reported": "Apiculiretusispora synorea",
+          "genus": "Apiculiretusispora",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": false,
+          "locator": "p. 6; Fig. 3B"
+        },
+        {
+          "taxon_as_reported": "Artemopyra spp.",
+          "genus": "Artemopyra",
+          "qualifier": "spp.",
+          "abundance": "present",
+          "illustrated": false,
+          "locator": "p. 6; Fig. 3B"
+        },
+        {
+          "taxon_as_reported": "Cymbohilates microgranulatus",
+          "genus": "Cymbohilates",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": false,
+          "locator": "p. 6; Fig. 3B"
+        },
+        {
+          "taxon_as_reported": "Tetrahedraletes medinensis",
+          "genus": "Tetrahedraletes",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": false,
+          "locator": "Fig. 3B; reported as 'Tetrahedraletes spp.' on p. 6"
+        },
+        {
+          "taxon_as_reported": "Chelinohilates sinuosus",
+          "genus": "Chelinohilates",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": false,
+          "locator": "p. 6; Taxonomic appendix, p. 10"
+        }
+      ]
+    },
+    {
+      "assemblage_id": "KTG-01-core-2",
+      "scope": "section-interval",
+      "locality": "near the town of Kortgene, southwestern Netherlands",
+      "country": "Netherlands",
+      "formation": "Banjaard group (undifferentiated)",
+      "section_or_core": "Kortgene-01 (KTG-01), core 2",
+      "depth_or_level": "1350–1367 m",
+      "latitude": "",
+      "longitude": "",
+      "palaeogeo_unit_reported": "northern fringe of the Brabant Massif",
+      "palaeo_unit_proposed": "Avalonia",
+      "age_as_reported": "Silurian to earliest Devonian",
+      "age_basis": "spore-zone",
+      "age_basis_detail": "Tentative identifications of ?Scylaspora spp. and Cymbohilates microgranulatus, and absence of Middle–Late Devonian marker spores. The authors explicitly consider the age unresolved.",
+      "age_circular": true,
+      "stage_min_proposed": "",
+      "stage_max_proposed": "",
+      "setting_as_reported": "dark shaly mudstones and intercalated fine-grained sandstones",
+      "setting_class": "marine-offshore",
+      "n_samples": "5 processed; 2 productive",
+      "reworking_status": "none",
+      "notes": "Included as a possible window assemblage, not a secure age determination. Figure 3C proposes '?Early Devonian'. Material description gives 1351–1363 m, the assemblage discussion 1350–1367 m, and the age discussion 1367–1351 m. Figure 3 places this core in the undifferentiated Banjaard group. Two chitinozoans were also recovered. The earlier spore report from 1351.8 m by Abbink & Van de Laar (2000) is rejected as contamination. The appendix prints '?Scylaspora sp.', while the occurrence text and Figure 4 caption print '?Scylaspora spp.'.",
+      "locator": "Material: Well Kortgene-01, p. 5; Results and interpretation, pp. 6, 8; Fig. 3; Fig. 4:7–9",
+      "occurrences": [
+        {
+          "taxon_as_reported": "?Scylaspora spp.",
+          "genus": "Scylaspora",
+          "qualifier": "?",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "p. 8; Fig. 4:7, KTG-01, 1351.9 m"
+        },
+        {
+          "taxon_as_reported": "Cymbohilates microgranulatus",
+          "genus": "Cymbohilates",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": false,
+          "locator": "p. 8; Fig. 3B"
+        },
+        {
+          "taxon_as_reported": "Dyadospora spp.",
+          "genus": "Dyadospora",
+          "qualifier": "spp.",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Fig. 3B; Fig. 4:8, KTG-01, 1351.9 m"
+        }
+      ]
+    },
+    {
+      "assemblage_id": "S05-01-cored-intervals",
+      "scope": "composite",
+      "locality": "southwestern Netherlands, c.20 km offshore",
+      "country": "Netherlands",
+      "formation": "Bollen Claystone formation, Banjaard group",
+      "section_or_core": "S05-01, two cored sections",
+      "depth_or_level": "2145.9-2018.4 m; cored sections reported as 2130–2148 m and 2015–2019 m",
+      "latitude": "",
+      "longitude": "",
+      "palaeogeo_unit_reported": "northern fringe of the Brabant Massif",
+      "palaeo_unit_proposed": "Avalonia",
+      "age_as_reported": "Early Devonian (Lockhovian)",
+      "age_basis": "mixed",
+      "age_basis_detail": "Cymbosporites stellospinosus and Retusotriletes dittonensis suggest an Early Devonian possibility, but the former may be reworked and the latter ranges into the Late Devonian. Lithofacies correlation instead permits an upper Frasnian – lower Famennian age.",
+      "age_circular": true,
+      "stage_min_proposed": "",
+      "stage_max_proposed": "",
+      "setting_as_reported": "a shallower water depth, likely above storm wave-base",
+      "setting_class": "marine-shelf",
+      "n_samples": "",
+      "reworking_status": "claimed",
+      "notes": "The prose discusses the two cores together; the occurrences are not assigned here to individual samples. Included provisionally because an Early Devonian age is suggested, but the authors state that the age remains elusive. The age spelling 'Lockhovian' is retained verbatim. Cymbosporites stellospinosus may be reworked, and Ordovician marine acritarchs are explicitly considered reworked. Preservation is generally very poor. Figure 3B also plots ?Scylaspora spp. into the S05-01 succession. Its caption illustrates a marine acritarch from 2022 m, outside the upper cored interval given in the material description.",
+      "locator": "Material: Well S05-01, pp. 5–6; Stratigraphic interpretation of palynological associations, p. 8; Fig. 3B–C",
+      "occurrences": [
+        {
+          "taxon_as_reported": "Cymbosporites stellospinosus",
+          "genus": "Cymbosporites",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": false,
+          "locator": "p. 8; Fig. 3B"
+        },
+        {
+          "taxon_as_reported": "Retusotriletes dittonensis",
+          "genus": "Retusotriletes",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": false,
+          "locator": "p. 8; Fig. 3B"
+        },
+        {
+          "taxon_as_reported": "?Scylaspora spp.",
+          "genus": "Scylaspora",
+          "qualifier": "?",
+          "abundance": "present",
+          "illustrated": false,
+          "locator": "Fig. 3B"
+        }
+      ]
+    },
+    {
+      "assemblage_id": "UK-53-16-1-919-1151m",
+      "scope": "section-interval",
+      "locality": "adjacent UK sector, North Sea",
+      "country": "United Kingdom",
+      "formation": "",
+      "section_or_core": "well 53/16-1",
+      "depth_or_level": "919-1151 m",
+      "latitude": "",
+      "longitude": "",
+      "palaeogeo_unit_reported": "",
+      "palaeo_unit_proposed": "Avalonia",
+      "age_as_reported": "",
+      "age_basis": "spore-zone",
+      "age_basis_detail": "Comparison with the dated lower KTG-01 cores. Houben and Vis suggest that the simple trilete forms reported by Church et al. (1968) resemble Silurian – Early Devonian Ambitisporites and Retusotriletes; no explicit revised age is assigned to the UK interval.",
+      "age_circular": true,
+      "stage_min_proposed": "",
+      "stage_max_proposed": "",
+      "setting_as_reported": "",
+      "setting_class": "unknown",
+      "n_samples": "",
+      "reworking_status": "none",
+      "notes": "Secondary report from Church, Fryer & Greenwood (1968), retained as a possible window assemblage with unresolved age. The assemblages occur immediately below Lower Carboniferous limestones. The original genus names are retained; the proposed resemblance to Ambitisporites is an interpretation, not an additional observed taxon.",
+      "locator": "Stratigraphic interpretation of palynological associations, p. 8, comparison with Church et al. (1968)",
+      "occurrences": [
+        {
+          "taxon_as_reported": "Leiotriletes",
+          "genus": "Leiotriletes",
+          "qualifier": "",
+          "abundance": "assemblages consist almost exclusively of Leiotriletes and Retusotriletes, with marked dominance throughout",
+          "illustrated": false,
+          "locator": "p. 8, quotation from Church et al. (1968)"
+        },
+        {
+          "taxon_as_reported": "Retusotriletes",
+          "genus": "Retusotriletes",
+          "qualifier": "",
+          "abundance": "assemblages consist almost exclusively of Leiotriletes and Retusotriletes, with marked dominance throughout",
+          "illustrated": false,
+          "locator": "p. 8, quotation from Church et al. (1968)"
+        }
+      ]
+    }
+  ]
+}

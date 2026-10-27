@@ -1,0 +1,736 @@
+{
+  "doc": {
+    "doi": "10.4072/rbp.2010.2.02",
+    "citation": "Grahn, Y., Mauller, P.M., Breuer, P., Bosetti, E.P., Bergamaschi, S. & Pereira, E. 2010. The Furnas/Ponta Grossa contact and the age of the lowermost Ponta Grossa Formation in the Apucarana Sub-Basin (Paraná Basin, Brazil): integrated palynological age determination. Revista Brasileira de Paleontologia 13(2):89–102.",
+    "language": "English",
+    "reports_window_spores": true,
+    "comment": "Figures 3–5 contain occurrence records absent from the extracted prose. Appendix 1 is a paper-wide taxon list, not a single assemblage. Furnas records include earlier material reported by Dino & Rodrigues (1995), Loboziak et al. (1995) and Gerrienne et al. (2001), with revised Lochkovian ages. In well 9-PPG-6-PR, reworking is reported at 72.00 and 72.30 m and the early/late Emsian boundary is explicitly questionable. DOI matches the supplied paper; independent Crossref verification was inaccessible."
+  },
+  "items": [
+    {
+      "assemblage_id": "PISA-upper-Furnas",
+      "scope": "section-interval",
+      "locality": "PISA, ca. 2 km east of Jaguariaiva city",
+      "country": "Brazil",
+      "formation": "Furnas Formation",
+      "section_or_core": "PISA",
+      "depth_or_level": "approximately 20 m below the top of the Furnas Formation",
+      "latitude": "",
+      "longitude": "",
+      "palaeogeo_unit_reported": "western Gondwana",
+      "palaeo_unit_proposed": "Gondwana-South-America",
+      "age_as_reported": "late but not latest Lochkovian",
+      "age_basis": "spore-zone",
+      "age_basis_detail": "Si Phylozone of the MN Oppel Zone; interpreted using the Dictyotriletes emsiensis morphon, Aneurospora geikiei, Synorisporites verrucatus and the absence of characteristic younger Dibolisporites species.",
+      "age_circular": true,
+      "stage_min_proposed": "Lochkovian",
+      "stage_max_proposed": "Lochkovian",
+      "setting_as_reported": "deltaic-lagoonal",
+      "setting_class": "marginal-marine",
+      "n_samples": "",
+      "reworking_status": "none",
+      "notes": "Secondary account of assemblages studied by Dino & Rodrigues (1995), Dino et al. (1995) and Gerrienne et al. (2001). Original Pragian and subsequent early Lochkovian assignments are revised. Specimens originally identified as Dictyotriletes emsiensis are interpreted as intermediate forms between D. emsiensis and D. granulatus; the latter is not treated here as a separate occurrence. The original Dictyotriletes subgranifer report is retained with its historical attribution. Dibolisporites eifeliensis and Dibolisporites echinaceus are explicitly absent at PISA.",
+      "locator": "Introduction, pp. 89–91; The nature of the Furnas/Ponta Grossa contact, p. 95; Remarks on the miospore and chitinozoan assemblages, p. 97",
+      "occurrences": [
+        {
+          "taxon_as_reported": "Dictyotriletes emsiensis",
+          "genus": "Dictyotriletes",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": false,
+          "locator": "p. 97, historical identification and reinterpretation"
+        },
+        {
+          "taxon_as_reported": "Dictyotriletes subgranifer",
+          "genus": "Dictyotriletes",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": false,
+          "locator": "p. 97, report attributed to Dino & Rodrigues (1995) and Dino et al. (1995)"
+        },
+        {
+          "taxon_as_reported": "Aneurospora geikiei",
+          "genus": "Aneurospora",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": false,
+          "locator": "p. 97"
+        },
+        {
+          "taxon_as_reported": "Synorisporites verrucatus",
+          "genus": "Synorisporites",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": false,
+          "locator": "p. 97"
+        }
+      ]
+    },
+    {
+      "assemblage_id": "2-CN-1-SC-core-23",
+      "scope": "section-interval",
+      "locality": "",
+      "country": "Brazil",
+      "formation": "Furnas Formation",
+      "section_or_core": "2-CN-1-SC, core 23",
+      "depth_or_level": "1455-1457 m; ca. 8 m below the Furnas/Ponta Grossa contact",
+      "latitude": "",
+      "longitude": "",
+      "palaeogeo_unit_reported": "western Gondwana",
+      "palaeo_unit_proposed": "Gondwana-South-America",
+      "age_as_reported": "latest Lochkovian",
+      "age_basis": "mixed",
+      "age_basis_detail": "Spore assemblage correlated with the Z Phylozone of the BZ Oppel Zone and with Solimões Basin assemblages; comparison also made with chitinozoan-dated late Lochkovian intervals in the Amazonas Basin. No chitinozoans are known from the Furnas Formation itself.",
+      "age_circular": true,
+      "stage_min_proposed": "Lochkovian",
+      "stage_max_proposed": "Lochkovian",
+      "setting_as_reported": "",
+      "setting_class": "unknown",
+      "n_samples": "",
+      "reworking_status": "none",
+      "notes": "Includes material reported by Loboziak et al. (1995), originally assigned an early Pragian age. The introduction describes a late Lochkovian correlation, whereas p. 97 compares core 23 specifically with latest Lochkovian assemblages. Three taxa are illustrated from this core in the present paper.",
+      "locator": "Introduction, pp. 90–91; Remarks on the miospore and chitinozoan assemblages, p. 97; Figure 7L–N, p. 98",
+      "occurrences": [
+        {
+          "taxon_as_reported": "Dictyotriletes emsiensis",
+          "genus": "Dictyotriletes",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "p. 97; Figure 7N, p. 98"
+        },
+        {
+          "taxon_as_reported": "Dibolisporites cf. eifeliensis",
+          "genus": "Dibolisporites",
+          "qualifier": "cf.",
+          "abundance": "present",
+          "illustrated": false,
+          "locator": "p. 97"
+        },
+        {
+          "taxon_as_reported": "Synorisporites papillensis",
+          "genus": "Synorisporites",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Figure 7L, p. 98"
+        },
+        {
+          "taxon_as_reported": "Dibolisporites echinaceus",
+          "genus": "Dibolisporites",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Figure 7M, p. 98"
+        }
+      ]
+    },
+    {
+      "assemblage_id": "Vila-Francelina-basal-Ponta-Grossa",
+      "scope": "sample",
+      "locality": "Vila Francelina",
+      "country": "Brazil",
+      "formation": "Ponta Grossa Formation",
+      "section_or_core": "Francelina 2",
+      "depth_or_level": "basal sampled level shown in Figure 4",
+      "latitude": "25°04′55″S",
+      "longitude": "50°06′54″W",
+      "palaeogeo_unit_reported": "",
+      "palaeo_unit_proposed": "Gondwana-South-America",
+      "age_as_reported": "",
+      "age_basis": "unstated",
+      "age_basis_detail": "The palynomorphs present are explicitly described as not age-diagnostic.",
+      "age_circular": false,
+      "stage_min_proposed": "",
+      "stage_max_proposed": "",
+      "setting_as_reported": "",
+      "setting_class": "unknown",
+      "n_samples": "1 productive level shown",
+      "reworking_status": "none",
+      "notes": "Contact is not exposed. Figure 4 places the productive level at the inferred basal Ponta Grossa position. Archaeozonotriletes chulus/Ambitisporites avitus is printed as one combined chart label; it is retained as one unresolved occurrence rather than asserting two independently identified taxa. Acritarchs also occur.",
+      "locator": "Localities and palynological results, p. 92; Figure 4, p. 94",
+      "occurrences": [
+        {
+          "taxon_as_reported": "Archaeozonotriletes chulus/Ambitisporites avitus",
+          "genus": "",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": false,
+          "locator": "Figure 4, p. 94"
+        },
+        {
+          "taxon_as_reported": "Dibolisporites spp.",
+          "genus": "Dibolisporites",
+          "qualifier": "spp.",
+          "abundance": "present",
+          "illustrated": false,
+          "locator": "Figure 4, p. 94"
+        }
+      ]
+    },
+    {
+      "assemblage_id": "Campus-UEPG-basal-Ponta-Grossa",
+      "scope": "sample",
+      "locality": "Campus UEPG",
+      "country": "Brazil",
+      "formation": "Ponta Grossa Formation",
+      "section_or_core": "Campus UEPG",
+      "depth_or_level": "basal sampled level shown in Figure 4",
+      "latitude": "25°05′33″S",
+      "longitude": "50°06′15″W",
+      "palaeogeo_unit_reported": "",
+      "palaeo_unit_proposed": "Gondwana-South-America",
+      "age_as_reported": "",
+      "age_basis": "unstated",
+      "age_basis_detail": "None of the palynomorphs present are described as age-diagnostic.",
+      "age_circular": false,
+      "stage_min_proposed": "",
+      "stage_max_proposed": "",
+      "setting_as_reported": "",
+      "setting_class": "unknown",
+      "n_samples": "1 productive level shown",
+      "reworking_status": "none",
+      "notes": "Furnas/Ponta Grossa contact is not exposed. Figure 4 places the productive level at the inferred basal Ponta Grossa position. Acritarchs also occur. Retusotriletes is labelled spp. in Figure 4, although Appendix 1 lists Retusotriletes sp.",
+      "locator": "Localities and palynological results, p. 92; Figure 4, p. 94",
+      "occurrences": [
+        {
+          "taxon_as_reported": "Apiculiretusispora spp.",
+          "genus": "Apiculiretusispora",
+          "qualifier": "spp.",
+          "abundance": "present",
+          "illustrated": false,
+          "locator": "Figure 4, p. 94"
+        },
+        {
+          "taxon_as_reported": "Emphanisporites rotatus",
+          "genus": "Emphanisporites",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": false,
+          "locator": "Figure 4, p. 94"
+        },
+        {
+          "taxon_as_reported": "Retusotriletes spp.",
+          "genus": "Retusotriletes",
+          "qualifier": "spp.",
+          "abundance": "present",
+          "illustrated": false,
+          "locator": "Figure 4, p. 94"
+        }
+      ]
+    },
+    {
+      "assemblage_id": "2-CS-1-PR-3765-3780",
+      "scope": "sample",
+      "locality": "Chapéu do Sol no. 1",
+      "country": "Brazil",
+      "formation": "Ponta Grossa Formation",
+      "section_or_core": "2-CS-1-PR",
+      "depth_or_level": "3765-3780 m",
+      "latitude": "24°57′49.789″S",
+      "longitude": "51°58′2.940″W",
+      "palaeogeo_unit_reported": "",
+      "palaeo_unit_proposed": "Gondwana-South-America",
+      "age_as_reported": "late Pragian-early Emsian",
+      "age_basis": "chitinozoan",
+      "age_basis_detail": "Lower Ponta Grossa shale dated using chitinozoans; Ancyrochitina pachycerata is illustrated from the same sample and discussed as appearing at the Pragian-Emsian transition.",
+      "age_circular": false,
+      "stage_min_proposed": "Pragian",
+      "stage_max_proposed": "Emsian",
+      "setting_as_reported": "lower Ponta Grossa shale",
+      "setting_class": "marine-shelf",
+      "n_samples": "1",
+      "reworking_status": "none",
+      "notes": "Figure 7 identifies slide BPA 9407124 for the illustrated spores and chitinozoan from this interval. Dictyotriletes sp. cf. D. richardsonii was called Dictyotriletes favosus in Grahn et al. (2005); that historical synonym is not counted as another occurrence. Figure 3 uses Retusotriletes spp., whereas Appendix 1 lists Retusotriletes sp.",
+      "locator": "Localities and palynological results, pp. 92–93; Figure 3, p. 93; Figure 7H–K, p. 98",
+      "occurrences": [
+        {
+          "taxon_as_reported": "Ambitisporites avitus?",
+          "genus": "Ambitisporites",
+          "qualifier": "?",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Figure 3; Figure 7H"
+        },
+        {
+          "taxon_as_reported": "Apiculiretusispora spp.",
+          "genus": "Apiculiretusispora",
+          "qualifier": "spp.",
+          "abundance": "present",
+          "illustrated": false,
+          "locator": "Figure 3, p. 93"
+        },
+        {
+          "taxon_as_reported": "Archaeozonotriletes chulus",
+          "genus": "Archaeozonotriletes",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": false,
+          "locator": "Figure 3, p. 93"
+        },
+        {
+          "taxon_as_reported": "Cymbosporites spp.",
+          "genus": "Cymbosporites",
+          "qualifier": "spp.",
+          "abundance": "present",
+          "illustrated": false,
+          "locator": "Figure 3, p. 93"
+        },
+        {
+          "taxon_as_reported": "Dibolisporites spp.",
+          "genus": "Dibolisporites",
+          "qualifier": "spp.",
+          "abundance": "present",
+          "illustrated": false,
+          "locator": "Figure 3, p. 93"
+        },
+        {
+          "taxon_as_reported": "Dictyotriletes sp. cf. D. richardsonii",
+          "genus": "Dictyotriletes",
+          "qualifier": "cf.",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "p. 93; Figure 3; Figure 7J"
+        },
+        {
+          "taxon_as_reported": "Dictyotriletes spp. (D. emsiensis?)",
+          "genus": "Dictyotriletes",
+          "qualifier": "spp.",
+          "abundance": "present",
+          "illustrated": false,
+          "locator": "Figure 3, p. 93"
+        },
+        {
+          "taxon_as_reported": "Emphanisporites rotatus",
+          "genus": "Emphanisporites",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": false,
+          "locator": "Figure 3, p. 93"
+        },
+        {
+          "taxon_as_reported": "?Knoxisporites riondae",
+          "genus": "Knoxisporites",
+          "qualifier": "?",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Figure 3; Figure 7K"
+        },
+        {
+          "taxon_as_reported": "Retusotriletes spp.",
+          "genus": "Retusotriletes",
+          "qualifier": "spp.",
+          "abundance": "present",
+          "illustrated": false,
+          "locator": "Figure 3, p. 93"
+        },
+        {
+          "taxon_as_reported": "cf. Brochotriletes foveolatus",
+          "genus": "Brochotriletes",
+          "qualifier": "cf.",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Figure 7I, p. 98"
+        }
+      ]
+    },
+    {
+      "assemblage_id": "9-PPG-6-PR-lower-interval",
+      "scope": "section-interval",
+      "locality": "Ponta Grossa project no. 6",
+      "country": "Brazil",
+      "formation": "Ponta Grossa Formation",
+      "section_or_core": "9-PPG-6-PR",
+      "depth_or_level": "72.30 m to T.D. 80.7 m",
+      "latitude": "24°35′12.2833″S",
+      "longitude": "50°26′10.6697″W",
+      "palaeogeo_unit_reported": "",
+      "palaeo_unit_proposed": "Gondwana-South-America",
+      "age_as_reported": "late Pragian-early Emsian",
+      "age_basis": "mixed",
+      "age_basis_detail": "PoW Su spore Zone, particularly Dictyotriletes subgranifer; integrated with acritarch and chitinozoan evidence and stratigraphic relationships.",
+      "age_circular": true,
+      "stage_min_proposed": "Pragian",
+      "stage_max_proposed": "Emsian",
+      "setting_as_reported": "storm bars",
+      "setting_class": "marine-shelf",
+      "n_samples": "",
+      "reworking_status": "claimed",
+      "notes": "Occurrences aggregated over the lower dated interval in Figure 5; they need not co-occur in one sample. The boundary at 72.30 m is questionable. Cirratriradiates diaphanus is plotted at that boundary and is retained with this interval without claiming a secure early Emsian age for it. Reworked material is reported at 72.30 m. Text places the transition to typical shales at 76.5 m, whereas Figures 3 and 5 label 75.6 m. Figure 7 illustrations are sample-specific: Apiculiretusispora plicata at 79.28 m, cf. Cymbosporites asymmetricus and Ambitisporites avitus at 78.42 m, Dibolisporites spp. at 79.80 m, and Dictyotriletes aff. emsiensis at 76.00 m.",
+      "locator": "pp. 93, 95, 99; Figure 5, p. 96; Figure 7A–C, E, G, p. 98",
+      "occurrences": [
+        {
+          "taxon_as_reported": "Dibolisporites spp.",
+          "genus": "Dibolisporites",
+          "qualifier": "spp.",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Figure 5; Figure 7E, 79.80 m"
+        },
+        {
+          "taxon_as_reported": "Dibolisporites echinaceus",
+          "genus": "Dibolisporites",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": false,
+          "locator": "Figure 5, p. 96"
+        },
+        {
+          "taxon_as_reported": "Retusotriletes sp.",
+          "genus": "Retusotriletes",
+          "qualifier": "sp.",
+          "abundance": "present",
+          "illustrated": false,
+          "locator": "Figure 5, p. 96"
+        },
+        {
+          "taxon_as_reported": "Apiculiretusispora plicata",
+          "genus": "Apiculiretusispora",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Figure 5; Figure 7A, 79.28 m"
+        },
+        {
+          "taxon_as_reported": "Dictyotriletes subgranifer",
+          "genus": "Dictyotriletes",
+          "qualifier": "",
+          "abundance": "common",
+          "illustrated": false,
+          "locator": "Figure 5, p. 96; p. 99"
+        },
+        {
+          "taxon_as_reported": "Archaeozonotriletes chulus",
+          "genus": "Archaeozonotriletes",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": false,
+          "locator": "Figure 5, p. 96"
+        },
+        {
+          "taxon_as_reported": "Dictyotriletes emsiensis",
+          "genus": "Dictyotriletes",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": false,
+          "locator": "Figure 5, p. 96"
+        },
+        {
+          "taxon_as_reported": "cf. Cymbosporites asymmetricus",
+          "genus": "Cymbosporites",
+          "qualifier": "cf.",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Figure 5; Figure 7B, 78.42 m"
+        },
+        {
+          "taxon_as_reported": "Ambitisporites avitus",
+          "genus": "Ambitisporites",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Figure 5; Figure 7G, 78.42 m"
+        },
+        {
+          "taxon_as_reported": "Brochotriletes foveolatus",
+          "genus": "Brochotriletes",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": false,
+          "locator": "Figure 5, p. 96"
+        },
+        {
+          "taxon_as_reported": "?Knoxisporites riondae",
+          "genus": "Knoxisporites",
+          "qualifier": "?",
+          "abundance": "present",
+          "illustrated": false,
+          "locator": "Figure 5, p. 96"
+        },
+        {
+          "taxon_as_reported": "Dictyotriletes aff. emsiensis sensu Le Hérisse 1983",
+          "genus": "Dictyotriletes",
+          "qualifier": "aff.",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Figure 5; Figure 7C, 76.00 m"
+        },
+        {
+          "taxon_as_reported": "Emphanisporites rotatus",
+          "genus": "Emphanisporites",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": false,
+          "locator": "Figure 5, p. 96"
+        },
+        {
+          "taxon_as_reported": "Zonotriletes sp.",
+          "genus": "Zonotriletes",
+          "qualifier": "sp.",
+          "abundance": "present",
+          "illustrated": false,
+          "locator": "Figure 5, p. 96"
+        },
+        {
+          "taxon_as_reported": "Apiculiretusispora brandtii",
+          "genus": "Apiculiretusispora",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": false,
+          "locator": "Figure 5, p. 96"
+        },
+        {
+          "taxon_as_reported": "Cirratriradiates diaphanus",
+          "genus": "Cirratriradiates",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": false,
+          "locator": "Figure 5, p. 96, questionable boundary level"
+        }
+      ]
+    },
+    {
+      "assemblage_id": "9-PPG-6-PR-upper-interval",
+      "scope": "section-interval",
+      "locality": "Ponta Grossa project no. 6",
+      "country": "Brazil",
+      "formation": "Ponta Grossa Formation",
+      "section_or_core": "9-PPG-6-PR",
+      "depth_or_level": "above 72.30 m within the interval plotted from 65 m in Figure 5",
+      "latitude": "24°35′12.2833″S",
+      "longitude": "50°26′10.6697″W",
+      "palaeogeo_unit_reported": "",
+      "palaeo_unit_proposed": "Gondwana-South-America",
+      "age_as_reported": "late Emsian",
+      "age_basis": "mixed",
+      "age_basis_detail": "AP spore Zone and characteristic late/latest Emsian chitinozoans. Latest Emsian chitinozoans occur at 68.80 m; the early/late Emsian boundary at 72.30 m is questionable.",
+      "age_circular": true,
+      "stage_min_proposed": "Emsian",
+      "stage_max_proposed": "Emsian",
+      "setting_as_reported": "storm bars",
+      "setting_class": "marine-shelf",
+      "n_samples": "",
+      "reworking_status": "claimed",
+      "notes": "Occurrences aggregated over the upper age interval in Figure 5; they need not co-occur in one sample. Reworked material is reported at 72.00 m and at the 72.30 m boundary. The late Emsian is described as poorly characterised by miospores. No positive evidence was found for the intervening AB and FD spore zones. Figure 5 prints cf. Artemopyra recticosta, whereas Appendix 1 uses Artemopyra cf. recticosta. Chitinozoans and acritarchs also occur.",
+      "locator": "pp. 93, 95, 99; Figure 5, p. 96; Figure 7D, p. 98",
+      "occurrences": [
+        {
+          "taxon_as_reported": "Retusotriletes sp.",
+          "genus": "Retusotriletes",
+          "qualifier": "sp.",
+          "abundance": "present",
+          "illustrated": false,
+          "locator": "Figure 5, p. 96"
+        },
+        {
+          "taxon_as_reported": "Apiculiretusispora plicata",
+          "genus": "Apiculiretusispora",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": false,
+          "locator": "Figure 5, p. 96"
+        },
+        {
+          "taxon_as_reported": "Dictyotriletes subgranifer",
+          "genus": "Dictyotriletes",
+          "qualifier": "",
+          "abundance": "common",
+          "illustrated": true,
+          "locator": "Figure 5; Figure 7D, 68.10 m; p. 99"
+        },
+        {
+          "taxon_as_reported": "cf. Cymbosporites asymmetricus",
+          "genus": "Cymbosporites",
+          "qualifier": "cf.",
+          "abundance": "present",
+          "illustrated": false,
+          "locator": "Figure 5, p. 96"
+        },
+        {
+          "taxon_as_reported": "Ambitisporites avitus",
+          "genus": "Ambitisporites",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": false,
+          "locator": "Figure 5, p. 96"
+        },
+        {
+          "taxon_as_reported": "Brochotriletes foveolatus",
+          "genus": "Brochotriletes",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": false,
+          "locator": "Figure 5, p. 96"
+        },
+        {
+          "taxon_as_reported": "?Knoxisporites riondae",
+          "genus": "Knoxisporites",
+          "qualifier": "?",
+          "abundance": "present",
+          "illustrated": false,
+          "locator": "Figure 5, p. 96"
+        },
+        {
+          "taxon_as_reported": "Emphanisporites rotatus",
+          "genus": "Emphanisporites",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": false,
+          "locator": "Figure 5, p. 96"
+        },
+        {
+          "taxon_as_reported": "Zonotriletes sp.",
+          "genus": "Zonotriletes",
+          "qualifier": "sp.",
+          "abundance": "present",
+          "illustrated": false,
+          "locator": "Figure 5, p. 96"
+        },
+        {
+          "taxon_as_reported": "Apiculiretusispora brandtii",
+          "genus": "Apiculiretusispora",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": false,
+          "locator": "Figure 5, p. 96"
+        },
+        {
+          "taxon_as_reported": "Tetrahedraletes medinensis",
+          "genus": "Tetrahedraletes",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": false,
+          "locator": "Figure 5, p. 96"
+        },
+        {
+          "taxon_as_reported": "cf. Acinosporites sp.",
+          "genus": "Acinosporites",
+          "qualifier": "cf.",
+          "abundance": "present",
+          "illustrated": false,
+          "locator": "Figure 5, p. 96"
+        },
+        {
+          "taxon_as_reported": "cf. Artemopyra recticosta",
+          "genus": "Artemopyra",
+          "qualifier": "cf.",
+          "abundance": "present",
+          "illustrated": false,
+          "locator": "Figure 5, p. 96"
+        },
+        {
+          "taxon_as_reported": "Retusotriletes maculatus",
+          "genus": "Retusotriletes",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": false,
+          "locator": "Figure 5, p. 96"
+        }
+      ]
+    },
+    {
+      "assemblage_id": "CEFET-barren-contact-sample",
+      "scope": "sample",
+      "locality": "Av. Monteiro Lobato, km 04, CEFET, Ponta Grossa",
+      "country": "Brazil",
+      "formation": "Ponta Grossa Formation",
+      "section_or_core": "road-cut near the corner of rua Antônio Saad and Avenida Monteiro Lobato",
+      "depth_or_level": "immediately above the Furnas/Ponta Grossa contact",
+      "latitude": "25°03′18,67″S",
+      "longitude": "50°08′01,52″W",
+      "palaeogeo_unit_reported": "",
+      "palaeo_unit_proposed": "Gondwana-South-America",
+      "age_as_reported": "",
+      "age_basis": "unstated",
+      "age_basis_detail": "",
+      "age_circular": false,
+      "stage_min_proposed": "",
+      "stage_max_proposed": "",
+      "setting_as_reported": "",
+      "setting_class": "unknown",
+      "n_samples": "1",
+      "reworking_status": "none",
+      "notes": "Palynomorphs were sought; the sample yielded no palynomorphs, including no spores.",
+      "locator": "Localities and palynological results, p. 92; Figure 4, p. 94",
+      "occurrences": []
+    },
+    {
+      "assemblage_id": "PR340-km60-barren-boundary-beds",
+      "scope": "section-interval",
+      "locality": "PR-340, km 60, Tibagi",
+      "country": "Brazil",
+      "formation": "Furnas Formation / Ponta Grossa Formation",
+      "section_or_core": "Furnas/Ponta Grossa contact, ca. 100 m from the Tibagi River",
+      "depth_or_level": "boundary beds; early land plant remains occur ca. 6 m below the contact",
+      "latitude": "24°46′04″S",
+      "longitude": "50°09′24″W",
+      "palaeogeo_unit_reported": "",
+      "palaeo_unit_proposed": "Gondwana-South-America",
+      "age_as_reported": "",
+      "age_basis": "unstated",
+      "age_basis_detail": "",
+      "age_circular": false,
+      "stage_min_proposed": "",
+      "stage_max_proposed": "",
+      "setting_as_reported": "a lagoon and deltaic plain covered by barrier sandstone deposited on a foreshore",
+      "setting_class": "marginal-marine",
+      "n_samples": "",
+      "reworking_status": "none",
+      "notes": "The outcrop is deeply weathered. Attempts to extract palynomorphs from the boundary beds were unsuccessful; no dispersed-spore occurrences are reported.",
+      "locator": "Localities and palynological results, p. 92; Figure 4, p. 94",
+      "occurrences": []
+    },
+    {
+      "assemblage_id": "2-RI-1-PR-marine-palynomorph-sample",
+      "scope": "sample",
+      "locality": "Rio Ivai no. 1",
+      "country": "Brazil",
+      "formation": "Ponta Grossa Formation",
+      "section_or_core": "2-RI-1-PR",
+      "depth_or_level": "4800-4820 m",
+      "latitude": "23°19′52.067″S",
+      "longitude": "52°27′18.436″W",
+      "palaeogeo_unit_reported": "",
+      "palaeo_unit_proposed": "Gondwana-South-America",
+      "age_as_reported": "late Pragian-early Emsian",
+      "age_basis": "chitinozoan",
+      "age_basis_detail": "Ramochitina magnifica from the lower Ponta Grossa shales.",
+      "age_circular": false,
+      "stage_min_proposed": "Pragian",
+      "stage_max_proposed": "Emsian",
+      "setting_as_reported": "lower Ponta Grossa shales",
+      "setting_class": "marine-shelf",
+      "n_samples": "1",
+      "reworking_status": "none",
+      "notes": "Only a chitinozoan occurrence is reported for this well in Figure 3 and illustrated in Figure 7S. No spores are reported; this is not an explicit claim that spores were sought and absent.",
+      "locator": "Localities and palynological results, p. 93; Figure 3, p. 93; Figure 7S, p. 98",
+      "occurrences": []
+    },
+    {
+      "assemblage_id": "Jackson-de-Figueiredo-no-spores",
+      "scope": "section-interval",
+      "locality": "Jackson de Figueiredo, ca. 11 km west of the PISA locality",
+      "country": "Brazil",
+      "formation": "Furnas Formation",
+      "section_or_core": "Jackson de Figueiredo",
+      "depth_or_level": "plant remains occur ca. 5 m below the top of the Furnas Formation",
+      "latitude": "",
+      "longitude": "",
+      "palaeogeo_unit_reported": "",
+      "palaeo_unit_proposed": "Gondwana-South-America",
+      "age_as_reported": "",
+      "age_basis": "lithostratigraphic",
+      "age_basis_detail": "Described as a lithostratigraphic lateral equivalent probably coeval with PISA.",
+      "age_circular": false,
+      "stage_min_proposed": "Lochkovian",
+      "stage_max_proposed": "Lochkovian",
+      "setting_as_reported": "",
+      "setting_class": "unknown",
+      "n_samples": "",
+      "reworking_status": "none",
+      "notes": "Secondary negative record attributed to Gerrienne et al. (2001): no spores have been found at this locality. Proposed Lochkovian placement follows the paper's tentative correlation with PISA, not a direct palynological date.",
+      "locator": "Introduction, p. 90; The nature of the Furnas/Ponta Grossa contact, p. 95",
+      "occurrences": []
+    }
+  ]
+}

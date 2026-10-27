@@ -1,0 +1,1655 @@
+{
+  "doc": {
+    "doi": "10.1017/s0016756813000393",
+    "citation": "García Muro, V. J., Rubinstein, C. V. & Steemans, P. 2014. Upper Silurian miospores from the Precordillera Basin, Argentina: biostratigraphic, palaeoenvironmental and palaeogeographic implications. Geological Magazine 151(3), 472–490.",
+    "language": "English",
+    "reports_window_spores": true,
+    "comment": "Fourteen productive samples and four barren samples were studied. Authors favour Ludlow, allowing Pridoli for the youngest samples despite some apparently Devonian taxa. Hispanaediscus wenlockensis could be reworked. Figure 4 was inspected in the local PDF: dotted supposed ranges are excluded; dashed occurrences receive cf. qualifiers. Plate-caption occurrences are retained where they supplement or conflict with Figure 4, including Retusotriletes sp. and Emphanisporites protophanus in sample 13. Illustration flags are sample-specific. Qualifier differences between plates and the range chart are preserved. The paper reports new Quebrada Ancha material; comparisons with earlier publications are not treated as new assemblages. A [published corrigendum](https://www.cambridge.org/core/journals/geological-magazine/article/upper-silurian-miospores-from-the-precordillera-basin-argentina-biostratigraphic-palaeoenvironmental-and-palaeogeographic-implications-corrigendum/E363F15CF1565CC4DD1C7DF296CDB70A) replaces Figure 2; its corrected figure was not available for inspection. Numerical sample levels below follow Figure 4."
+  },
+  "items": [
+    {
+      "assemblage_id": "Quebrada-Ancha-1-60667",
+      "scope": "sample",
+      "locality": "Quebrada Ancha area, near Talacasto, Central Precordillera, San Juan Province",
+      "country": "Argentina",
+      "formation": "Los Espejos Formation",
+      "section_or_core": "Lower section",
+      "depth_or_level": "Sample 1 (60667); 0,2 m from the base of the formation",
+      "latitude": "",
+      "longitude": "",
+      "palaeogeo_unit_reported": "active continental margin of Gondwana",
+      "palaeo_unit_proposed": "Gondwana-South-America",
+      "age_as_reported": "Ludlow (to Pridoli?)",
+      "age_basis": "mixed",
+      "age_basis_detail": "Miospore biozone correlations and marine phytoplankton. Chelinospora verrucata indicates an age no older than the base of the LP Biozone, interpreted as latest Homerian or earliest Gorstian; acritarchs support Ludlow.",
+      "age_circular": true,
+      "stage_min_proposed": "Gorstian",
+      "stage_max_proposed": "Pridoli",
+      "setting_as_reported": "low-energy open shelf environment",
+      "setting_class": "marine-shelf",
+      "n_samples": "1",
+      "reworking_status": "none",
+      "notes": "Lowest productive sample. Overall palynological assemblages contain abundant marine acritarchs and chlorophytes.",
+      "locator": "Figures 2a and 4; sections 4–6, pp. 477–486",
+      "occurrences": [
+        {
+          "taxon_as_reported": "Chelinohilates lornensis Wellman & Richardson, 1996",
+          "genus": "Chelinohilates",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": false,
+          "locator": "Figure 4; section 6, p. 484"
+        },
+        {
+          "taxon_as_reported": "Chelinospora verrucata var. verrucata morphon",
+          "genus": "Chelinospora",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": false,
+          "locator": "Figure 4; section 6, p. 484"
+        },
+        {
+          "taxon_as_reported": "Emphanisporites rotatus (McGregor) McGregor, 1973",
+          "genus": "Emphanisporites",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": false,
+          "locator": "Figure 4"
+        },
+        {
+          "taxon_as_reported": "Pseudodyadospora petasus Wellman & Richardson, 1993",
+          "genus": "Pseudodyadospora",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Figures 4 and 5i; slide 60667"
+        },
+        {
+          "taxon_as_reported": "Gneudnaspora divellomedia var. minor (Chibrikova) Breuer et al. 2007",
+          "genus": "Gneudnaspora",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": false,
+          "locator": "Figure 4"
+        }
+      ]
+    },
+    {
+      "assemblage_id": "Quebrada-Ancha-2-60704",
+      "scope": "sample",
+      "locality": "Quebrada Ancha area, near Talacasto, Central Precordillera, San Juan Province",
+      "country": "Argentina",
+      "formation": "Los Espejos Formation",
+      "section_or_core": "Lower section",
+      "depth_or_level": "Sample 2 (60704); 0,4 m from the base of the formation",
+      "latitude": "",
+      "longitude": "",
+      "palaeogeo_unit_reported": "active continental margin of Gondwana",
+      "palaeo_unit_proposed": "Gondwana-South-America",
+      "age_as_reported": "Ludlow (to Pridoli?)",
+      "age_basis": "mixed",
+      "age_basis_detail": "Miospore correlations and acritarchs. Stellatispora inframurinata var. inframurinata identifies the youngest LP subzone; Coronaspora cromatica and Concentricosisporites agradabilis are interpreted as pointing to latest Ludfordian.",
+      "age_circular": true,
+      "stage_min_proposed": "Gorstian",
+      "stage_max_proposed": "Pridoli",
+      "setting_as_reported": "low-energy open shelf environment",
+      "setting_class": "marine-shelf",
+      "n_samples": "1",
+      "reworking_status": "none",
+      "notes": "Section 6 explicitly reports Concentricosisporites agradabilis here, although Figure 4 starts its observed range in sample 3. Archaeozonotriletes chulus is dashed in Figure 4 and therefore qualified cf.",
+      "locator": "Figures 2a and 4; section 6, pp. 484–486",
+      "occurrences": [
+        {
+          "taxon_as_reported": "Chelinospora verrucata var. verrucata morphon",
+          "genus": "Chelinospora",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Figures 4 and 7g; slide 60704"
+        },
+        {
+          "taxon_as_reported": "Gneudnaspora divellomedia var. minor (Chibrikova) Breuer et al. 2007",
+          "genus": "Gneudnaspora",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": false,
+          "locator": "Figure 4"
+        },
+        {
+          "taxon_as_reported": "Artemopyra urubuense Steemans, Rubinstein & Melo, 2008",
+          "genus": "Artemopyra",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Figures 4 and 5a; slide 60704"
+        },
+        {
+          "taxon_as_reported": "Stellatispora inframurinata var. inframurinata (Richardson & Lister) Burgess & Richardson, 1995",
+          "genus": "Stellatispora",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": false,
+          "locator": "Figure 4; section 6, p. 484"
+        },
+        {
+          "taxon_as_reported": "Emphanisporites protophanus Richardson & Ioannides, 1973",
+          "genus": "Emphanisporites",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": false,
+          "locator": "Figure 4"
+        },
+        {
+          "taxon_as_reported": "Ambitisporites avitus/dilutus sensu Steemans, Le Hérissé & Bozdogan, 1996",
+          "genus": "Ambitisporites",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": false,
+          "locator": "Figure 4"
+        },
+        {
+          "taxon_as_reported": "A. chulus",
+          "genus": "Archaeozonotriletes",
+          "qualifier": "cf.",
+          "abundance": "present",
+          "illustrated": false,
+          "locator": "Figure 4, dashed occurrence in sample 2"
+        },
+        {
+          "taxon_as_reported": "Emphanisporites sp. D in Richardson, Rasul & Al-Ameri, 1981",
+          "genus": "Emphanisporites",
+          "qualifier": "sp.",
+          "abundance": "present",
+          "illustrated": false,
+          "locator": "Figure 4; section 6, p. 484"
+        },
+        {
+          "taxon_as_reported": "Coronaspora cromatica (Rodríguez) Jansonius & Hills, 1979",
+          "genus": "Coronaspora",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": false,
+          "locator": "Figure 4; section 6, pp. 484–486"
+        },
+        {
+          "taxon_as_reported": "Tetrahedraletes medinensis (Strother & Traverse) Wellman & Richardson, 1993",
+          "genus": "Tetrahedraletes",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Figures 4 and 5m; slide 60704"
+        },
+        {
+          "taxon_as_reported": "Concentricosisporites agradabilis",
+          "genus": "Concentricosisporites",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": false,
+          "locator": "Section 6, pp. 484–486"
+        }
+      ]
+    },
+    {
+      "assemblage_id": "Quebrada-Ancha-3-60659",
+      "scope": "sample",
+      "locality": "Quebrada Ancha area, near Talacasto, Central Precordillera, San Juan Province",
+      "country": "Argentina",
+      "formation": "Los Espejos Formation",
+      "section_or_core": "Lower section",
+      "depth_or_level": "Sample 3 (60659); 1,6 m from the base of the formation",
+      "latitude": "",
+      "longitude": "",
+      "palaeogeo_unit_reported": "active continental margin of Gondwana",
+      "palaeo_unit_proposed": "Gondwana-South-America",
+      "age_as_reported": "Ludlow (to Pridoli?)",
+      "age_basis": "mixed",
+      "age_basis_detail": "Miospore biozone correlations and marine phytoplankton. Breconisporites sp. B occurs below its previously known Lochkovian range; authors retain a Late Silurian interpretation.",
+      "age_circular": true,
+      "stage_min_proposed": "Gorstian",
+      "stage_max_proposed": "Pridoli",
+      "setting_as_reported": "low-energy open shelf environment",
+      "setting_class": "marine-shelf",
+      "n_samples": "1",
+      "reworking_status": "discussed",
+      "notes": "Hispanaediscus wenlockensis could be reworked from Wenlock deposits. Amicosporites? sp. comprises poorly preserved specimens tentatively assigned to the genus.",
+      "locator": "Figures 2a and 4; sections 5–6, pp. 477–486",
+      "occurrences": [
+        {
+          "taxon_as_reported": "Chelinohilates lornensis Wellman & Richardson, 1996",
+          "genus": "Chelinohilates",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": false,
+          "locator": "Figure 4"
+        },
+        {
+          "taxon_as_reported": "Chelinospora verrucata var. verrucata morphon",
+          "genus": "Chelinospora",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Figures 4 and 7h; slide 60659"
+        },
+        {
+          "taxon_as_reported": "Emphanisporites rotatus (McGregor) McGregor, 1973",
+          "genus": "Emphanisporites",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Figures 4 and 8c; slide 60659"
+        },
+        {
+          "taxon_as_reported": "Pseudodyadospora petasus Wellman & Richardson, 1993",
+          "genus": "Pseudodyadospora",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": false,
+          "locator": "Figure 4"
+        },
+        {
+          "taxon_as_reported": "Gneudnaspora divellomedia var. minor (Chibrikova) Breuer et al. 2007",
+          "genus": "Gneudnaspora",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": false,
+          "locator": "Figure 4"
+        },
+        {
+          "taxon_as_reported": "Stellatispora inframurinata var. inframurinata (Richardson & Lister) Burgess & Richardson, 1995",
+          "genus": "Stellatispora",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Figures 4 and 5o; slide 60659"
+        },
+        {
+          "taxon_as_reported": "Emphanisporites protophanus Richardson & Ioannides, 1973",
+          "genus": "Emphanisporites",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": false,
+          "locator": "Figure 4"
+        },
+        {
+          "taxon_as_reported": "Ambitisporites avitus/dilutus sensu Steemans, Le Hérissé & Bozdogan, 1996",
+          "genus": "Ambitisporites",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Figures 4 and 6a; slide 60659"
+        },
+        {
+          "taxon_as_reported": "Coronaspora cromatica (Rodríguez) Jansonius & Hills, 1979",
+          "genus": "Coronaspora",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": false,
+          "locator": "Figure 4"
+        },
+        {
+          "taxon_as_reported": "Tetrahedraletes medinensis (Strother & Traverse) Wellman & Richardson, 1993",
+          "genus": "Tetrahedraletes",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": false,
+          "locator": "Figure 4"
+        },
+        {
+          "taxon_as_reported": "Tetrad sp. (ornamented with verrucae)",
+          "genus": "",
+          "qualifier": "sp.",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Figures 4 and 5n; slide 60659"
+        },
+        {
+          "taxon_as_reported": "Apiculiretusispora sp.",
+          "genus": "Apiculiretusispora",
+          "qualifier": "sp.",
+          "abundance": "present",
+          "illustrated": false,
+          "locator": "Figure 4"
+        },
+        {
+          "taxon_as_reported": "Breconisporites sp. B in Richardson, Rodríguez & Sutherland, 2001",
+          "genus": "Breconisporites",
+          "qualifier": "sp.",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Figures 4 and 6f; slide 60659"
+        },
+        {
+          "taxon_as_reported": "Concentricosisporites agradabilis (Rodriguez) Rodriguez, 1983",
+          "genus": "Concentricosisporites",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": false,
+          "locator": "Figure 4"
+        },
+        {
+          "taxon_as_reported": "Hispanaediscus lamontii Wellman, 1993",
+          "genus": "Hispanaediscus",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": false,
+          "locator": "Figure 4"
+        },
+        {
+          "taxon_as_reported": "Emphanisporites neglectus Vigran, 1964",
+          "genus": "Emphanisporites",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": false,
+          "locator": "Figure 4"
+        },
+        {
+          "taxon_as_reported": "Hispanaediscus wenlockensis Burgess & Richardson, 1991",
+          "genus": "Hispanaediscus",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Figures 4 and 5f; slide 60659; reworking discussed in sections 5a and 6"
+        },
+        {
+          "taxon_as_reported": "Hispanaediscus verrucatus (Cramer) Burgess & Richardson, 1991",
+          "genus": "Hispanaediscus",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": false,
+          "locator": "Figure 4"
+        },
+        {
+          "taxon_as_reported": "Amicosporites? sp.",
+          "genus": "Amicosporites",
+          "qualifier": "?",
+          "abundance": "present",
+          "illustrated": false,
+          "locator": "Figure 4; section 5b, p. 480"
+        },
+        {
+          "taxon_as_reported": "Chelinospora obscura Burgess & Richardson, 1995",
+          "genus": "Chelinospora",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Figures 4 and 7d; slide 60659"
+        }
+      ]
+    },
+    {
+      "assemblage_id": "Quebrada-Ancha-4-62521",
+      "scope": "sample",
+      "locality": "Quebrada Ancha area, near Talacasto, Central Precordillera, San Juan Province",
+      "country": "Argentina",
+      "formation": "Los Espejos Formation",
+      "section_or_core": "Lower section",
+      "depth_or_level": "Sample 4 (62521); 2,4 m from the base of the formation",
+      "latitude": "",
+      "longitude": "",
+      "palaeogeo_unit_reported": "active continental margin of Gondwana",
+      "palaeo_unit_proposed": "Gondwana-South-America",
+      "age_as_reported": "Ludlow (to Pridoli?)",
+      "age_basis": "mixed",
+      "age_basis_detail": "Miospore correlations and acritarchs. Chelinospora cf. C. hemiesferica suggests the H Zone, interpreted as late Ludfordian and/or early Pridoli; Chelinospora cf. C. cantabrica and Synorisporites verrucatus support this interpretation.",
+      "age_circular": true,
+      "stage_min_proposed": "Gorstian",
+      "stage_max_proposed": "Pridoli",
+      "setting_as_reported": "low-energy open shelf environment",
+      "setting_class": "marine-shelf",
+      "n_samples": "1",
+      "reworking_status": "discussed",
+      "notes": "Hispanaediscus wenlockensis could be reworked. Ambitisporites is dashed in Figure 4. The body and plate caption give different authorities for Coronaspora cromatica; the illustrated occurrence below follows the caption.",
+      "locator": "Figures 2a and 4; section 6, p. 486",
+      "occurrences": [
+        {
+          "taxon_as_reported": "Chelinospora verrucata var. verrucata morphon",
+          "genus": "Chelinospora",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": false,
+          "locator": "Figure 4"
+        },
+        {
+          "taxon_as_reported": "Emphanisporites rotatus (McGregor) McGregor, 1973",
+          "genus": "Emphanisporites",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": false,
+          "locator": "Figure 4"
+        },
+        {
+          "taxon_as_reported": "Gneudnaspora divellomedia var. minor (Chibrikova) Breuer et al. 2007",
+          "genus": "Gneudnaspora",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": false,
+          "locator": "Figure 4"
+        },
+        {
+          "taxon_as_reported": "Emphanisporites protophanus Richardson & Ioannides, 1973",
+          "genus": "Emphanisporites",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": false,
+          "locator": "Figure 4"
+        },
+        {
+          "taxon_as_reported": "A. avitus-dilutus",
+          "genus": "Ambitisporites",
+          "qualifier": "cf.",
+          "abundance": "present",
+          "illustrated": false,
+          "locator": "Figure 4, dashed occurrence in sample 4"
+        },
+        {
+          "taxon_as_reported": "Coronaspora cromatica (Rodríguez) Richardson, Rodríguez & Sutherland, 2001",
+          "genus": "Coronaspora",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Figures 4 and 6m; slide 62521"
+        },
+        {
+          "taxon_as_reported": "Emphanisporites neglectus Vigran, 1964",
+          "genus": "Emphanisporites",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": false,
+          "locator": "Figure 4"
+        },
+        {
+          "taxon_as_reported": "Hispanaediscus wenlockensis Burgess & Richardson, 1991",
+          "genus": "Hispanaediscus",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": false,
+          "locator": "Figure 4; reworking discussed in section 5a"
+        },
+        {
+          "taxon_as_reported": "Chelinospora cf. C. cantabrica Richardson, Rodríguez & Sutherland, 2001",
+          "genus": "Chelinospora",
+          "qualifier": "cf.",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Figures 4 and 7c; slide 62521"
+        },
+        {
+          "taxon_as_reported": "Chelinospora cf. C. hemisferica in Richardson, Rodríguez & Sutherland, 2001",
+          "genus": "Chelinospora",
+          "qualifier": "cf.",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Figures 4 and 7b; slide 62521; section 6 spells the epithet hemiesferica"
+        },
+        {
+          "taxon_as_reported": "Synorisporites verrucatus Richardson & Lister, 1969",
+          "genus": "Synorisporites",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": false,
+          "locator": "Figure 4; section 6, p. 486"
+        },
+        {
+          "taxon_as_reported": "Rimosotetras problematica Burgess, 1991",
+          "genus": "Rimosotetras",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Figures 4 and 5j; slide 62521"
+        }
+      ]
+    },
+    {
+      "assemblage_id": "Quebrada-Ancha-5-62523",
+      "scope": "sample",
+      "locality": "Quebrada Ancha area, near Talacasto, Central Precordillera, San Juan Province",
+      "country": "Argentina",
+      "formation": "Los Espejos Formation",
+      "section_or_core": "Lower section",
+      "depth_or_level": "Sample 5 (62523); 3,8 m from the base of the formation",
+      "latitude": "",
+      "longitude": "",
+      "palaeogeo_unit_reported": "active continental margin of Gondwana",
+      "palaeo_unit_proposed": "Gondwana-South-America",
+      "age_as_reported": "Ludlow (to Pridoli?)",
+      "age_basis": "mixed",
+      "age_basis_detail": "Miospore correlations and acritarchs for the studied succession. This sample has no first appearances of biostratigraphically relevant taxa.",
+      "age_circular": true,
+      "stage_min_proposed": "Gorstian",
+      "stage_max_proposed": "Pridoli",
+      "setting_as_reported": "low-energy open shelf environment",
+      "setting_class": "marine-shelf",
+      "n_samples": "1",
+      "reworking_status": "none",
+      "notes": "Only continuous observed ranges in Figure 4 are included.",
+      "locator": "Figures 2a and 4; section 6, p. 486",
+      "occurrences": [
+        {
+          "taxon_as_reported": "Chelinospora verrucata var. verrucata morphon",
+          "genus": "Chelinospora",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": false,
+          "locator": "Figure 4"
+        },
+        {
+          "taxon_as_reported": "Gneudnaspora divellomedia var. minor (Chibrikova) Breuer et al. 2007",
+          "genus": "Gneudnaspora",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": false,
+          "locator": "Figure 4"
+        },
+        {
+          "taxon_as_reported": "Concentricosisporites agradabilis (Rodriguez) Rodriguez, 1983",
+          "genus": "Concentricosisporites",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": false,
+          "locator": "Figure 4"
+        },
+        {
+          "taxon_as_reported": "Emphanisporites neglectus Vigran, 1964",
+          "genus": "Emphanisporites",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": false,
+          "locator": "Figure 4"
+        }
+      ]
+    },
+    {
+      "assemblage_id": "Quebrada-Ancha-6-60662",
+      "scope": "sample",
+      "locality": "Quebrada Ancha area, near Talacasto, Central Precordillera, San Juan Province",
+      "country": "Argentina",
+      "formation": "Los Espejos Formation",
+      "section_or_core": "Lower section",
+      "depth_or_level": "Sample 6 (60662); 4,2 m from the base of the formation",
+      "latitude": "",
+      "longitude": "",
+      "palaeogeo_unit_reported": "active continental margin of Gondwana",
+      "palaeo_unit_proposed": "Gondwana-South-America",
+      "age_as_reported": "Ludlow (to Pridoli?)",
+      "age_basis": "mixed",
+      "age_basis_detail": "Miospore correlations and acritarchs for the studied succession. This sample has no first appearances of biostratigraphically relevant taxa.",
+      "age_circular": true,
+      "stage_min_proposed": "Gorstian",
+      "stage_max_proposed": "Pridoli",
+      "setting_as_reported": "low-energy open shelf environment",
+      "setting_class": "marine-shelf",
+      "n_samples": "1",
+      "reworking_status": "none",
+      "notes": "Coronaspora cromatica is dashed in Figure 4. Dyadospora is misspelt Dyadaspora in the Figure 5 caption; the section 5a spelling is retained.",
+      "locator": "Figures 2a and 4; section 6, p. 486",
+      "occurrences": [
+        {
+          "taxon_as_reported": "Chelinospora verrucata var. verrucata morphon",
+          "genus": "Chelinospora",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": false,
+          "locator": "Figure 4"
+        },
+        {
+          "taxon_as_reported": "Pseudodyadospora petasus Wellman & Richardson, 1993",
+          "genus": "Pseudodyadospora",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": false,
+          "locator": "Figure 4"
+        },
+        {
+          "taxon_as_reported": "Gneudnaspora divellomedia var. minor (Chibrikova) Breuer et al. 2007",
+          "genus": "Gneudnaspora",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": false,
+          "locator": "Figure 4"
+        },
+        {
+          "taxon_as_reported": "Emphanisporites protophanus Richardson & Ioannides, 1973",
+          "genus": "Emphanisporites",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": false,
+          "locator": "Figure 4"
+        },
+        {
+          "taxon_as_reported": "Ambitisporites avitus/dilutus sensu Steemans, Le Hérissé & Bozdogan, 1996",
+          "genus": "Ambitisporites",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": false,
+          "locator": "Figure 4"
+        },
+        {
+          "taxon_as_reported": "Archaeozonotriletes chulus (Cramer) Richardson & Lister, 1969",
+          "genus": "Archaeozonotriletes",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": false,
+          "locator": "Figure 4"
+        },
+        {
+          "taxon_as_reported": "C. cromatica",
+          "genus": "Coronaspora",
+          "qualifier": "cf.",
+          "abundance": "present",
+          "illustrated": false,
+          "locator": "Figure 4, dashed occurrence in sample 6"
+        },
+        {
+          "taxon_as_reported": "Tetrad sp. (ornamented with verrucae)",
+          "genus": "",
+          "qualifier": "sp.",
+          "abundance": "present",
+          "illustrated": false,
+          "locator": "Figure 4"
+        },
+        {
+          "taxon_as_reported": "Concentricosisporites agradabilis (Rodriguez) Rodriguez, 1983",
+          "genus": "Concentricosisporites",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": false,
+          "locator": "Figure 4"
+        },
+        {
+          "taxon_as_reported": "Hispanaediscus verrucatus (Cramer) Burgess & Richardson, 1991",
+          "genus": "Hispanaediscus",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": false,
+          "locator": "Figure 4"
+        },
+        {
+          "taxon_as_reported": "Chelinospora cf. C. hemiesferica (Cramer & Diez) in Richardson, Rodríguez & Sutherland, 2001",
+          "genus": "Chelinospora",
+          "qualifier": "cf.",
+          "abundance": "present",
+          "illustrated": false,
+          "locator": "Figure 4; section 5b, p. 480"
+        },
+        {
+          "taxon_as_reported": "Retusotriletes cf. R. maccullockii Wellman & Richardson, 1996",
+          "genus": "Retusotriletes",
+          "qualifier": "cf.",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Figures 4 and 7m; slide 60662"
+        },
+        {
+          "taxon_as_reported": "Dyadospora murusattenuata/murusdensa morphon Steemans, Le Hérissé & Bozdogan, 1996",
+          "genus": "Dyadospora",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Figures 4 and 5c; slide 60662; section 5a, p. 477"
+        }
+      ]
+    },
+    {
+      "assemblage_id": "Quebrada-Ancha-7-60736",
+      "scope": "sample",
+      "locality": "Quebrada Ancha area, near Talacasto, Central Precordillera, San Juan Province",
+      "country": "Argentina",
+      "formation": "Los Espejos Formation",
+      "section_or_core": "Lower section",
+      "depth_or_level": "Sample 7 (60736); 8 m from the base of the formation",
+      "latitude": "",
+      "longitude": "",
+      "palaeogeo_unit_reported": "active continental margin of Gondwana",
+      "palaeo_unit_proposed": "Gondwana-South-America",
+      "age_as_reported": "very close to the boundary between the Ludlow and Pridoli",
+      "age_basis": "mixed",
+      "age_basis_detail": "Synorisporites tripapillatus, characteristic of the TS Zone; marine phytoplankton supports a Ludlow age for the succession.",
+      "age_circular": true,
+      "stage_min_proposed": "Ludfordian",
+      "stage_max_proposed": "Pridoli",
+      "setting_as_reported": "low-energy open shelf environment",
+      "setting_class": "marine-shelf",
+      "n_samples": "1",
+      "reworking_status": "none",
+      "notes": "Figure 4 gives an unqualified Emphanisporites rotatus occurrence, whereas Figure 8e captions a specimen from this sample as cf. E. rotatus; both reported identifications are retained.",
+      "locator": "Figures 2a and 4; section 6, p. 486",
+      "occurrences": [
+        {
+          "taxon_as_reported": "Chelinospora verrucata var. verrucata morphon",
+          "genus": "Chelinospora",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": false,
+          "locator": "Figure 4"
+        },
+        {
+          "taxon_as_reported": "Emphanisporites rotatus (McGregor) McGregor, 1973",
+          "genus": "Emphanisporites",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": false,
+          "locator": "Figure 4"
+        },
+        {
+          "taxon_as_reported": "Emphanisporites cf. E. rotatus (McGregor) McGregor, 1973",
+          "genus": "Emphanisporites",
+          "qualifier": "cf.",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Figure 8e; slide 60736"
+        },
+        {
+          "taxon_as_reported": "Gneudnaspora divellomedia var. minor (Chibrikova) Breuer et al. 2007",
+          "genus": "Gneudnaspora",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": false,
+          "locator": "Figure 4"
+        },
+        {
+          "taxon_as_reported": "Ambitisporites avitus/dilutus sensu Steemans, Le Hérissé & Bozdogan, 1996",
+          "genus": "Ambitisporites",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": false,
+          "locator": "Figure 4"
+        },
+        {
+          "taxon_as_reported": "Archaeozonotriletes chulus (Cramer) Richardson & Lister, 1969",
+          "genus": "Archaeozonotriletes",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": false,
+          "locator": "Figure 4"
+        },
+        {
+          "taxon_as_reported": "Emphanisporites sp. D in Richardson, Rasul & Al-Ameri, 1981",
+          "genus": "Emphanisporites",
+          "qualifier": "sp.",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Figures 4 and 8f; slide 60736"
+        },
+        {
+          "taxon_as_reported": "Coronaspora cromatica (Rodríguez) Jansonius & Hills, 1979",
+          "genus": "Coronaspora",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": false,
+          "locator": "Figure 4"
+        },
+        {
+          "taxon_as_reported": "Tetrahedraletes medinensis (Strother & Traverse) Wellman & Richardson, 1993",
+          "genus": "Tetrahedraletes",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": false,
+          "locator": "Figure 4"
+        },
+        {
+          "taxon_as_reported": "Concentricosisporites agradabilis (Rodriguez) Rodriguez, 1983",
+          "genus": "Concentricosisporites",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": false,
+          "locator": "Figure 4"
+        },
+        {
+          "taxon_as_reported": "Emphanisporites neglectus Vigran, 1964",
+          "genus": "Emphanisporites",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": false,
+          "locator": "Figure 4"
+        },
+        {
+          "taxon_as_reported": "Chelinospora cf. C. hemiesferica (Cramer & Diez) in Richardson, Rodríguez & Sutherland, 2001",
+          "genus": "Chelinospora",
+          "qualifier": "cf.",
+          "abundance": "present",
+          "illustrated": false,
+          "locator": "Figure 4; section 5b, p. 480"
+        },
+        {
+          "taxon_as_reported": "Imperfectotriletes patinatus Steemans, Higgs & Wellman, 2000",
+          "genus": "Imperfectotriletes",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": false,
+          "locator": "Figure 4"
+        },
+        {
+          "taxon_as_reported": "Synorisporites tripapillatus Richardson & Lister, 1969",
+          "genus": "Synorisporites",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Figures 4 and 8l; slide 60736; section 6, p. 486"
+        }
+      ]
+    },
+    {
+      "assemblage_id": "Quebrada-Ancha-8-60677",
+      "scope": "sample",
+      "locality": "Quebrada Ancha area, near Talacasto, Central Precordillera, San Juan Province",
+      "country": "Argentina",
+      "formation": "Los Espejos Formation",
+      "section_or_core": "Lower section",
+      "depth_or_level": "Sample 8 (60677); 20 m from the base of the formation",
+      "latitude": "",
+      "longitude": "",
+      "palaeogeo_unit_reported": "active continental margin of Gondwana",
+      "palaeo_unit_proposed": "Gondwana-South-America",
+      "age_as_reported": "Ludlow (to Pridoli?)",
+      "age_basis": "mixed",
+      "age_basis_detail": "Miospore biozone correlations and marine phytoplankton for the studied succession.",
+      "age_circular": true,
+      "stage_min_proposed": "Gorstian",
+      "stage_max_proposed": "Pridoli",
+      "setting_as_reported": "low-energy open shelf environment",
+      "setting_class": "marine-shelf",
+      "n_samples": "1",
+      "reworking_status": "none",
+      "notes": "Figure 4 shows an unqualified Concentricosisporites agradabilis occurrence, while Figure 6k captions a specimen as cf. C. agradabilis; both identifications are retained.",
+      "locator": "Figures 2a and 4; sections 5–6",
+      "occurrences": [
+        {
+          "taxon_as_reported": "Chelinohilates lornensis Wellman & Richardson, 1996",
+          "genus": "Chelinohilates",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Figures 4 and 5b; slide 60677"
+        },
+        {
+          "taxon_as_reported": "Chelinospora verrucata var. verrucata morphon",
+          "genus": "Chelinospora",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Figures 4 and 7i; slide 60677"
+        },
+        {
+          "taxon_as_reported": "Gneudnaspora divellomedia var. minor (Chibrikova) Breuer et al. 2007",
+          "genus": "Gneudnaspora",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": false,
+          "locator": "Figure 4"
+        },
+        {
+          "taxon_as_reported": "Ambitisporites avitus/dilutus sensu Steemans, Le Hérissé & Bozdogan, 1996",
+          "genus": "Ambitisporites",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": false,
+          "locator": "Figure 4"
+        },
+        {
+          "taxon_as_reported": "Archaeozonotriletes chulus (Cramer) Richardson & Lister, 1969",
+          "genus": "Archaeozonotriletes",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": false,
+          "locator": "Figure 4"
+        },
+        {
+          "taxon_as_reported": "Coronaspora cromatica (Rodríguez) Jansonius & Hills, 1979",
+          "genus": "Coronaspora",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": false,
+          "locator": "Figure 4"
+        },
+        {
+          "taxon_as_reported": "Tetrad sp. (ornamented with verrucae)",
+          "genus": "",
+          "qualifier": "sp.",
+          "abundance": "present",
+          "illustrated": false,
+          "locator": "Figure 4"
+        },
+        {
+          "taxon_as_reported": "Breconisporites sp. B in Richardson, Rodríguez & Sutherland, 2001",
+          "genus": "Breconisporites",
+          "qualifier": "sp.",
+          "abundance": "present",
+          "illustrated": false,
+          "locator": "Figure 4"
+        },
+        {
+          "taxon_as_reported": "Concentricosisporites agradabilis (Rodriguez) Rodriguez, 1983",
+          "genus": "Concentricosisporites",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": false,
+          "locator": "Figure 4"
+        },
+        {
+          "taxon_as_reported": "cf. Concentricosisporites agradabilis (Rodriguez) Rodriguez, 1983",
+          "genus": "Concentricosisporites",
+          "qualifier": "cf.",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Figure 6k; slide 60677"
+        },
+        {
+          "taxon_as_reported": "Emphanisporites neglectus Vigran, 1964",
+          "genus": "Emphanisporites",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": false,
+          "locator": "Figure 4"
+        },
+        {
+          "taxon_as_reported": "Amicosporites? sp.",
+          "genus": "Amicosporites",
+          "qualifier": "?",
+          "abundance": "present",
+          "illustrated": false,
+          "locator": "Figure 4"
+        },
+        {
+          "taxon_as_reported": "Chelinospora cf. C. hemisferica in Richardson, Rodríguez & Sutherland, 2001",
+          "genus": "Chelinospora",
+          "qualifier": "cf.",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Figures 4 and 7a; slide 60677"
+        },
+        {
+          "taxon_as_reported": "Synorisporites verrucatus Richardson & Lister, 1969",
+          "genus": "Synorisporites",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": false,
+          "locator": "Figure 4"
+        },
+        {
+          "taxon_as_reported": "Imperfectotriletes patinatus Steemans, Higgs & Wellman, 2000",
+          "genus": "Imperfectotriletes",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": false,
+          "locator": "Figure 4"
+        }
+      ]
+    },
+    {
+      "assemblage_id": "Quebrada-Ancha-9-60664",
+      "scope": "sample",
+      "locality": "Quebrada Ancha area, near Talacasto, Central Precordillera, San Juan Province",
+      "country": "Argentina",
+      "formation": "Los Espejos Formation",
+      "section_or_core": "Lower section",
+      "depth_or_level": "Sample 9 (60664); 23 m from the base of the formation",
+      "latitude": "",
+      "longitude": "",
+      "palaeogeo_unit_reported": "active continental margin of Gondwana",
+      "palaeo_unit_proposed": "Gondwana-South-America",
+      "age_as_reported": "Ludlow (to Pridoli?)",
+      "age_basis": "mixed",
+      "age_basis_detail": "Miospores and marine phytoplankton. Brochotriletes foveolatus has a lower Pridoli precedent in Brazil. Leonispora argovejae suggests Lochkovian, but the authors question spore calibration of the Silurian–Devonian boundary and favour Late Silurian.",
+      "age_circular": true,
+      "stage_min_proposed": "Gorstian",
+      "stage_max_proposed": "Pridoli",
+      "setting_as_reported": "low-energy open shelf environment",
+      "setting_class": "marine-shelf",
+      "n_samples": "1",
+      "reworking_status": "none",
+      "notes": "Several taxa have their only observed occurrence in this sample. Figure 6 and section 5b give different authorities for Coronaspora cromatica; the illustrated occurrence follows the caption.",
+      "locator": "Figures 2a and 4; section 6, p. 486",
+      "occurrences": [
+        {
+          "taxon_as_reported": "Gneudnaspora divellomedia var. minor (Chibrikova) Breuer et al. 2007",
+          "genus": "Gneudnaspora",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": false,
+          "locator": "Figure 4"
+        },
+        {
+          "taxon_as_reported": "Emphanisporites sp. D in Richardson, Rasul & Al-Ameri, 1981",
+          "genus": "Emphanisporites",
+          "qualifier": "sp.",
+          "abundance": "present",
+          "illustrated": false,
+          "locator": "Figure 4"
+        },
+        {
+          "taxon_as_reported": "Coronaspora cromatica (Rodríguez) Richardson, Rodríguez & Sutherland, 2001",
+          "genus": "Coronaspora",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Figures 4 and 6n; slide 60664"
+        },
+        {
+          "taxon_as_reported": "Apiculiretusispora sp.",
+          "genus": "Apiculiretusispora",
+          "qualifier": "sp.",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Figures 4 and 6d; slide 60664"
+        },
+        {
+          "taxon_as_reported": "Breconisporites sp. B in Richardson, Rodríguez & Sutherland, 2001",
+          "genus": "Breconisporites",
+          "qualifier": "sp.",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Figures 4 and 6g; slide 60664"
+        },
+        {
+          "taxon_as_reported": "Concentricosisporites agradabilis (Rodriguez) Rodriguez, 1983",
+          "genus": "Concentricosisporites",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Figures 4 and 6i–j; slide 60664"
+        },
+        {
+          "taxon_as_reported": "Hispanaediscus lamontii Wellman, 1993",
+          "genus": "Hispanaediscus",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Figures 4 and 5e; slide 60664"
+        },
+        {
+          "taxon_as_reported": "Hispanaediscus verrucatus (Cramer) Burgess & Richardson, 1991",
+          "genus": "Hispanaediscus",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": false,
+          "locator": "Figure 4"
+        },
+        {
+          "taxon_as_reported": "Synorisporites verrucatus Richardson & Lister, 1969",
+          "genus": "Synorisporites",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": false,
+          "locator": "Figure 4"
+        },
+        {
+          "taxon_as_reported": "Brochotriletes foveolatus Naumova, 1953",
+          "genus": "Brochotriletes",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Figures 4 and 6h; slide 60664; section 6, p. 486"
+        },
+        {
+          "taxon_as_reported": "Chelinospora sanpetrensis (Rodriguez) Richardson, Rodríguez & Sutherland, 2001",
+          "genus": "Chelinospora",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Figures 4 and 7e; slide 60664"
+        },
+        {
+          "taxon_as_reported": "Cymbosporites cf. C. catillus in Richardson & Lister, 1969",
+          "genus": "Cymbosporites",
+          "qualifier": "cf.",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Figures 4 and 7k–l; slide 60664"
+        },
+        {
+          "taxon_as_reported": "Leonispora argovejae Cramer & Diez, 1975",
+          "genus": "Leonispora",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Figures 4 and 8j; slide 60664; section 6, p. 486"
+        },
+        {
+          "taxon_as_reported": "Scylaspora cf. S. scripta in Richardson, Rodriguez & Sutherland, 2001",
+          "genus": "Scylaspora",
+          "qualifier": "cf.",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Figures 4 and 8m; slide 60664"
+        },
+        {
+          "taxon_as_reported": "Scylaspora vetusta (Rodriguez) Richardson, Rodriguez & Sutherland, 2001",
+          "genus": "Scylaspora",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Figures 4 and 8n–o; slide 60664"
+        }
+      ]
+    },
+    {
+      "assemblage_id": "Quebrada-Ancha-10-60673",
+      "scope": "sample",
+      "locality": "Quebrada Ancha area, near Talacasto, Central Precordillera, San Juan Province",
+      "country": "Argentina",
+      "formation": "Los Espejos Formation",
+      "section_or_core": "Lower section",
+      "depth_or_level": "Sample 10 (60673); 26 m from the base of the formation",
+      "latitude": "",
+      "longitude": "",
+      "palaeogeo_unit_reported": "active continental margin of Gondwana",
+      "palaeo_unit_proposed": "Gondwana-South-America",
+      "age_as_reported": "Ludlow (to Pridoli?)",
+      "age_basis": "mixed",
+      "age_basis_detail": "Miospore biozone correlations and marine phytoplankton for the studied succession.",
+      "age_circular": true,
+      "stage_min_proposed": "Gorstian",
+      "stage_max_proposed": "Pridoli",
+      "setting_as_reported": "low-energy open shelf environment",
+      "setting_class": "marine-shelf",
+      "n_samples": "1",
+      "reworking_status": "discussed",
+      "notes": "Hispanaediscus wenlockensis could be reworked. Figure 4 gives an unqualified Emphanisporites rotatus occurrence, whereas Figure 8d captions a specimen as cf. E. rotatus; both reported identifications are retained.",
+      "locator": "Figures 2a and 4; sections 5–6",
+      "occurrences": [
+        {
+          "taxon_as_reported": "Emphanisporites rotatus (McGregor) McGregor, 1973",
+          "genus": "Emphanisporites",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": false,
+          "locator": "Figure 4"
+        },
+        {
+          "taxon_as_reported": "Emphanisporites cf. E. rotatus (McGregor) McGregor, 1973",
+          "genus": "Emphanisporites",
+          "qualifier": "cf.",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Figure 8d; slide 60673"
+        },
+        {
+          "taxon_as_reported": "Gneudnaspora divellomedia var. minor (Chibrikova) Breuer et al. 2007",
+          "genus": "Gneudnaspora",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": false,
+          "locator": "Figure 4"
+        },
+        {
+          "taxon_as_reported": "Emphanisporites sp. D in Richardson, Rasul & Al-Ameri, 1981",
+          "genus": "Emphanisporites",
+          "qualifier": "sp.",
+          "abundance": "present",
+          "illustrated": false,
+          "locator": "Figure 4"
+        },
+        {
+          "taxon_as_reported": "Hispanaediscus wenlockensis Burgess & Richardson, 1991",
+          "genus": "Hispanaediscus",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": false,
+          "locator": "Figure 4; reworking discussed in section 5a"
+        },
+        {
+          "taxon_as_reported": "Synorisporites verrucatus Richardson & Lister, 1969",
+          "genus": "Synorisporites",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": false,
+          "locator": "Figure 4"
+        }
+      ]
+    },
+    {
+      "assemblage_id": "Quebrada-Ancha-11-61020",
+      "scope": "sample",
+      "locality": "Quebrada Ancha area, near Talacasto, Central Precordillera, San Juan Province",
+      "country": "Argentina",
+      "formation": "Los Espejos Formation",
+      "section_or_core": "Uppermost section",
+      "depth_or_level": "Sample 11 (61020); 227 m from the base of the formation",
+      "latitude": "",
+      "longitude": "",
+      "palaeogeo_unit_reported": "active continental margin of Gondwana",
+      "palaeo_unit_proposed": "Gondwana-South-America",
+      "age_as_reported": "Ludlow (to Pridoli?)",
+      "age_basis": "mixed",
+      "age_basis_detail": "Miospore correlations and marine phytoplankton. Authors favour Ludlow but cannot exclude Pridoli for the youngest samples; uppermost brachiopod evidence has also suggested Pridoli.",
+      "age_circular": true,
+      "stage_min_proposed": "Gorstian",
+      "stage_max_proposed": "Pridoli",
+      "setting_as_reported": "storm-dominated shelf and shoreface environments; subaerial exposures at the top of the regression cycles",
+      "setting_class": "marine-shelf",
+      "n_samples": "1",
+      "reworking_status": "none",
+      "notes": "Uppermost-section diversity is lower than in the lower section. Dotted supposed ranges in Figure 4 are excluded.",
+      "locator": "Figures 2b and 4; sections 5–7",
+      "occurrences": [
+        {
+          "taxon_as_reported": "Chelinospora verrucata var. verrucata morphon",
+          "genus": "Chelinospora",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": false,
+          "locator": "Figure 4"
+        },
+        {
+          "taxon_as_reported": "Gneudnaspora divellomedia var. minor (Chibrikova) Breuer et al. 2007",
+          "genus": "Gneudnaspora",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": false,
+          "locator": "Figure 4"
+        },
+        {
+          "taxon_as_reported": "Emphanisporites neglectus Vigran, 1964",
+          "genus": "Emphanisporites",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": false,
+          "locator": "Figure 4"
+        }
+      ]
+    },
+    {
+      "assemblage_id": "Quebrada-Ancha-12-60986",
+      "scope": "sample",
+      "locality": "Quebrada Ancha area, near Talacasto, Central Precordillera, San Juan Province",
+      "country": "Argentina",
+      "formation": "Los Espejos Formation",
+      "section_or_core": "Uppermost section",
+      "depth_or_level": "Sample 12 (60986); 228 m from the base of the formation",
+      "latitude": "",
+      "longitude": "",
+      "palaeogeo_unit_reported": "active continental margin of Gondwana",
+      "palaeo_unit_proposed": "Gondwana-South-America",
+      "age_as_reported": "Ludlow (to Pridoli?)",
+      "age_basis": "mixed",
+      "age_basis_detail": "Miospore correlations and marine phytoplankton. Authors favour Ludlow but cannot exclude Pridoli for the youngest samples; uppermost brachiopod evidence has also suggested Pridoli.",
+      "age_circular": true,
+      "stage_min_proposed": "Gorstian",
+      "stage_max_proposed": "Pridoli",
+      "setting_as_reported": "storm-dominated shelf and shoreface environments; subaerial exposures at the top of the regression cycles",
+      "setting_class": "marine-shelf",
+      "n_samples": "1",
+      "reworking_status": "discussed",
+      "notes": "Hispanaediscus wenlockensis could be reworked. Amicosporites? sp. is a tentative generic assignment.",
+      "locator": "Figures 2b and 4; sections 5–7",
+      "occurrences": [
+        {
+          "taxon_as_reported": "Chelinospora verrucata var. verrucata morphon",
+          "genus": "Chelinospora",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": false,
+          "locator": "Figure 4"
+        },
+        {
+          "taxon_as_reported": "Emphanisporites rotatus (McGregor) McGregor, 1973",
+          "genus": "Emphanisporites",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": false,
+          "locator": "Figure 4"
+        },
+        {
+          "taxon_as_reported": "Gneudnaspora divellomedia var. minor (Chibrikova) Breuer et al. 2007",
+          "genus": "Gneudnaspora",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": false,
+          "locator": "Figure 4"
+        },
+        {
+          "taxon_as_reported": "Archaeozonotriletes chulus (Cramer) Richardson & Lister, 1969",
+          "genus": "Archaeozonotriletes",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Figures 4 and 6e; slide 60986"
+        },
+        {
+          "taxon_as_reported": "Emphanisporites sp. D in Richardson, Rasul & Al-Ameri, 1981",
+          "genus": "Emphanisporites",
+          "qualifier": "sp.",
+          "abundance": "present",
+          "illustrated": false,
+          "locator": "Figure 4"
+        },
+        {
+          "taxon_as_reported": "Coronaspora cromatica (Rodríguez) Jansonius & Hills, 1979",
+          "genus": "Coronaspora",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": false,
+          "locator": "Figure 4"
+        },
+        {
+          "taxon_as_reported": "Emphanisporites neglectus Vigran, 1964",
+          "genus": "Emphanisporites",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Figures 4 and 8a; slide 60986"
+        },
+        {
+          "taxon_as_reported": "Hispanaediscus wenlockensis Burgess & Richardson, 1991",
+          "genus": "Hispanaediscus",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": false,
+          "locator": "Figure 4; reworking discussed in section 5a"
+        },
+        {
+          "taxon_as_reported": "Hispanaediscus verrucatus (Cramer) Burgess & Richardson, 1991",
+          "genus": "Hispanaediscus",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": false,
+          "locator": "Figure 4"
+        },
+        {
+          "taxon_as_reported": "Amicosporites? sp.",
+          "genus": "Amicosporites",
+          "qualifier": "?",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Figures 4 and 6b; slide 60986"
+        },
+        {
+          "taxon_as_reported": "Synorisporites verrucatus Richardson & Lister, 1969",
+          "genus": "Synorisporites",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Figures 4 and 8k; slide 60986"
+        },
+        {
+          "taxon_as_reported": "Imperfectotriletes patinatus Steemans, Higgs & Wellman, 2000",
+          "genus": "Imperfectotriletes",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Figures 4 and 5h; slide 60986"
+        }
+      ]
+    },
+    {
+      "assemblage_id": "Quebrada-Ancha-13-60984",
+      "scope": "sample",
+      "locality": "Quebrada Ancha area, near Talacasto, Central Precordillera, San Juan Province",
+      "country": "Argentina",
+      "formation": "Los Espejos Formation",
+      "section_or_core": "Uppermost section",
+      "depth_or_level": "Sample 13 (60984); 229 m from the base of the formation",
+      "latitude": "",
+      "longitude": "",
+      "palaeogeo_unit_reported": "active continental margin of Gondwana",
+      "palaeo_unit_proposed": "Gondwana-South-America",
+      "age_as_reported": "Ludlow (to Pridoli?)",
+      "age_basis": "mixed",
+      "age_basis_detail": "Miospores and marine phytoplankton. Amicosporites streelii suggests Lochkovian, but similar specimens are reported from the Upper Silurian of Saudi Arabia. Authors retain Ludlow with possible Pridoli for youngest samples.",
+      "age_circular": true,
+      "stage_min_proposed": "Gorstian",
+      "stage_max_proposed": "Pridoli",
+      "setting_as_reported": "storm-dominated shelf and shoreface environments; subaerial exposures at the top of the regression cycles",
+      "setting_class": "marine-shelf",
+      "n_samples": "1",
+      "reworking_status": "none",
+      "notes": "Figure 8b records Emphanisporites protophanus here, beyond its Figure 4 observed range. Figure 7o adds Retusotriletes sp., absent from the systematic list and Figure 4. Figure 6l gives slide 600984 for cf. Concentricosisporites sagittarius; Figure 4 places this taxon in sample 13 (60984), indicating an apparent caption typo. Chelinospora obscura is dashed in Figure 4. Amicosporites streelii is treated partim because specimens grouped under that name may represent different species.",
+      "locator": "Figures 2b, 4–8; section 6, p. 486",
+      "occurrences": [
+        {
+          "taxon_as_reported": "Chelinospora verrucata var. verrucata morphon",
+          "genus": "Chelinospora",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Figures 4 and 7f, j; slide 60984"
+        },
+        {
+          "taxon_as_reported": "Emphanisporites rotatus (McGregor) McGregor, 1973",
+          "genus": "Emphanisporites",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": false,
+          "locator": "Figure 4"
+        },
+        {
+          "taxon_as_reported": "Pseudodyadospora petasus Wellman & Richardson, 1993",
+          "genus": "Pseudodyadospora",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": false,
+          "locator": "Figure 4"
+        },
+        {
+          "taxon_as_reported": "Gneudnaspora divellomedia (Chibrikova) Balme, 1988 var. minor Breuer et al. 2007",
+          "genus": "Gneudnaspora",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Figures 4 and 5d; slide 60984"
+        },
+        {
+          "taxon_as_reported": "Emphanisporites protophanus Richardson & Ioannides, 1973",
+          "genus": "Emphanisporites",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Figure 8b; slide 60984"
+        },
+        {
+          "taxon_as_reported": "Emphanisporites sp. D in Richardson, Rasul & Al-Ameri, 1981",
+          "genus": "Emphanisporites",
+          "qualifier": "sp.",
+          "abundance": "present",
+          "illustrated": false,
+          "locator": "Figure 4; section 6, p. 484"
+        },
+        {
+          "taxon_as_reported": "Coronaspora cromatica (Rodríguez) Richardson, Rodríguez & Sutherland, 2001",
+          "genus": "Coronaspora",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Figures 4 and 6o; slide 60984"
+        },
+        {
+          "taxon_as_reported": "Tetrahedraletes medinensis (Strother & Traverse) Wellman & Richardson, 1993",
+          "genus": "Tetrahedraletes",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": false,
+          "locator": "Figure 4"
+        },
+        {
+          "taxon_as_reported": "Hispanaediscus verrucatus (Cramer) Burgess & Richardson, 1991",
+          "genus": "Hispanaediscus",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Figures 4 and 5g; slide 60984"
+        },
+        {
+          "taxon_as_reported": "Amicosporites? sp.",
+          "genus": "Amicosporites",
+          "qualifier": "?",
+          "abundance": "present",
+          "illustrated": false,
+          "locator": "Figure 4"
+        },
+        {
+          "taxon_as_reported": "C. obscura",
+          "genus": "Chelinospora",
+          "qualifier": "cf.",
+          "abundance": "present",
+          "illustrated": false,
+          "locator": "Figure 4, dashed occurrence in sample 13"
+        },
+        {
+          "taxon_as_reported": "Synorisporites verrucatus Richardson & Lister, 1969",
+          "genus": "Synorisporites",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": false,
+          "locator": "Figure 4"
+        },
+        {
+          "taxon_as_reported": "Rimosotetras problematica Burgess, 1991",
+          "genus": "Rimosotetras",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": false,
+          "locator": "Figure 4"
+        },
+        {
+          "taxon_as_reported": "Amicosporites streelii Steemans, 1989 partim",
+          "genus": "Amicosporites",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Figures 4 and 6c; slide 60984; sections 5b and 6"
+        },
+        {
+          "taxon_as_reported": "cf. Concentricosisporites sagittarius (Rodriguez) Rodríguez, 1983",
+          "genus": "Concentricosisporites",
+          "qualifier": "cf.",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Figures 4 and 6l; caption slide 600984"
+        },
+        {
+          "taxon_as_reported": "Emphanisporites cf. E. splendens Richardson & Ioannides, 1979",
+          "genus": "Emphanisporites",
+          "qualifier": "cf.",
+          "abundance": "one specimen",
+          "illustrated": true,
+          "locator": "Figures 4 and 8g–i; slide 60984; section 5b, p. 484"
+        },
+        {
+          "taxon_as_reported": "Retusotriletes cf. R. warringtoni Richardson & Lister, 1969",
+          "genus": "Retusotriletes",
+          "qualifier": "cf.",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Figures 4 and 7n; slide 60984; section 5b gives 1969, caption gives 1989"
+        },
+        {
+          "taxon_as_reported": "Retusotriletes sp.",
+          "genus": "Retusotriletes",
+          "qualifier": "sp.",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Figure 7o; slide 60984"
+        },
+        {
+          "taxon_as_reported": "Rugosphaera sp.",
+          "genus": "Rugosphaera",
+          "qualifier": "sp.",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Figures 4 and 5k; slide 60984"
+        }
+      ]
+    },
+    {
+      "assemblage_id": "Quebrada-Ancha-14-60982",
+      "scope": "sample",
+      "locality": "Quebrada Ancha area, near Talacasto, Central Precordillera, San Juan Province",
+      "country": "Argentina",
+      "formation": "Los Espejos Formation",
+      "section_or_core": "Uppermost section",
+      "depth_or_level": "Sample 14 (60982); 230 m from the base of the formation",
+      "latitude": "",
+      "longitude": "",
+      "palaeogeo_unit_reported": "active continental margin of Gondwana",
+      "palaeo_unit_proposed": "Gondwana-South-America",
+      "age_as_reported": "Ludlow (to Pridoli?)",
+      "age_basis": "mixed",
+      "age_basis_detail": "Miospore correlations and marine phytoplankton. Authors favour Ludlow but cannot exclude Pridoli for the youngest samples; uppermost brachiopod evidence has also suggested Pridoli.",
+      "age_circular": true,
+      "stage_min_proposed": "Gorstian",
+      "stage_max_proposed": "Pridoli",
+      "setting_as_reported": "storm-dominated shelf and shoreface environments; subaerial exposures at the top of the regression cycles",
+      "setting_class": "marine-shelf",
+      "n_samples": "1",
+      "reworking_status": "none",
+      "notes": "Highest productive sample; the four samples above it were barren. Sphaerasaccus glabellus has older occurrences elsewhere, but the paper does not claim that the specimen here is reworked.",
+      "locator": "Figures 2b and 4; sections 4–7",
+      "occurrences": [
+        {
+          "taxon_as_reported": "Chelinospora verrucata var. verrucata morphon",
+          "genus": "Chelinospora",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": false,
+          "locator": "Figure 4"
+        },
+        {
+          "taxon_as_reported": "Gneudnaspora divellomedia var. minor (Chibrikova) Breuer et al. 2007",
+          "genus": "Gneudnaspora",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": false,
+          "locator": "Figure 4"
+        },
+        {
+          "taxon_as_reported": "Coronaspora cromatica (Rodríguez) Jansonius & Hills, 1979",
+          "genus": "Coronaspora",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": false,
+          "locator": "Figure 4"
+        },
+        {
+          "taxon_as_reported": "Tetrahedraletes medinensis (Strother & Traverse) Wellman & Richardson, 1993",
+          "genus": "Tetrahedraletes",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": false,
+          "locator": "Figure 4"
+        },
+        {
+          "taxon_as_reported": "Synorisporites tripapillatus Richardson & Lister, 1969",
+          "genus": "Synorisporites",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": false,
+          "locator": "Figure 4"
+        },
+        {
+          "taxon_as_reported": "Sphaerasaccus glabellus Steemans, Higgs & Wellman, 2000",
+          "genus": "Sphaerasaccus",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Figures 4 and 5l; slide 60982"
+        }
+      ]
+    },
+    {
+      "assemblage_id": "Quebrada-Ancha-uppermost-barren-15-18",
+      "scope": "section-interval",
+      "locality": "Quebrada Ancha area, near Talacasto, Central Precordillera, San Juan Province",
+      "country": "Argentina",
+      "formation": "Los Espejos Formation",
+      "section_or_core": "Uppermost section",
+      "depth_or_level": "Samples 15 (60980), 16 (60978), 17 (60977) and 18 (60976); the four samples closest to the upper boundary",
+      "latitude": "",
+      "longitude": "",
+      "palaeogeo_unit_reported": "active continental margin of Gondwana",
+      "palaeo_unit_proposed": "Gondwana-South-America",
+      "age_as_reported": "Ludlow (to Pridoli?)",
+      "age_basis": "mixed",
+      "age_basis_detail": "Age assigned to the studied succession from productive samples and previously reported fauna; these four samples provide no palynological age evidence.",
+      "age_circular": true,
+      "stage_min_proposed": "Gorstian",
+      "stage_max_proposed": "Pridoli",
+      "setting_as_reported": "storm-dominated shelf and shoreface environments; subaerial exposures at the top of the regression cycles",
+      "setting_class": "marine-shelf",
+      "n_samples": "4",
+      "reworking_status": "none",
+      "notes": "Spores were sought but not found: all four samples were barren. The paper describes complete disappearance of palynomorphs near the top, potentially associated with storm-dominated platform to shoreface facies and subaerial exposure. Their age is inherited partly from spore correlations elsewhere in the studied succession, rather than independently established in these barren samples.",
+      "locator": "Figure 2b; section 4, p. 477; section 7, pp. 486–487",
+      "occurrences": []
+    }
+  ]
+}

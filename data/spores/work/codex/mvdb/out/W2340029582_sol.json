@@ -1,0 +1,46 @@
+{
+  "doc": {
+    "doi": "",
+    "citation": "Brocke, R., Bussert, R., Lebenie, D. and Steemans, P. (2016). First record of cryptospores in post-Hirnantian (latest Ordovician-early Silurian) sediments from Ethiopia. Conference abstract.",
+    "language": "English",
+    "reports_window_spores": true,
+    "comment": "The supplied text is a short conference abstract with no tables, figures, captions or named spore taxa. It reports one broadly characterised cryptospore assemblage. The age is tentative; the title combines post-Hirnantian with latest Ordovician–early Silurian."
+  },
+  "items": [
+    {
+      "assemblage_id": "W2340029582_1",
+      "scope": "section-interval",
+      "locality": "northern Ethiopia",
+      "country": "Ethiopia",
+      "formation": "",
+      "section_or_core": "",
+      "depth_or_level": "Post-glacial mudstones overlying Hirnantian glaciogenic sediments; channel fills up to 20 m thick.",
+      "latitude": "",
+      "longitude": "",
+      "palaeogeo_unit_reported": "Gondwana",
+      "palaeo_unit_proposed": "Gondwana-North-Africa-Arabia",
+      "age_as_reported": "post-Hirnantian (latest Ordovician-early Silurian)",
+      "age_basis": "mixed",
+      "age_basis_detail": "Superposition above Hirnantian glaciogenic sediments and broad Early Palaeozoic biostratigraphic evidence from cryptospores. The upper sand-bearing mudstones are described as of probably Silurian age; no named biozone is supplied.",
+      "age_circular": true,
+      "stage_min_proposed": "Hirnantian",
+      "stage_max_proposed": "Telychian",
+      "setting_as_reported": "terrestrial or marginal marine environment",
+      "setting_class": "unknown",
+      "n_samples": "",
+      "reworking_status": "none",
+      "notes": "One assemblage is reported collectively from unnamed mudstone outcrops; sample-level distributions are unavailable. Cryptospores and colonial algae dominate. Marine palynomorphs are extremely rare and chitinozoans were not found. No reworking is discussed. Proposed stages conservatively bracket the title's latest Ordovician–early Silurian wording; the text supplies no finer stage determination. The alternative terrestrial and marginal-marine interpretations prevent a unique setting classification.",
+      "locator": "Abstract, paragraphs 1–4; title.",
+      "occurrences": [
+        {
+          "taxon_as_reported": "cryptospores",
+          "genus": "",
+          "qualifier": "indet.",
+          "abundance": "Assemblage dominated by cryptospores and colonial algae; no numerical abundance reported.",
+          "illustrated": false,
+          "locator": "Abstract, paragraphs 1 and 3."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,454 @@
+{
+  "doc": {
+    "doi": "10.1016/j.revmic.2017.02.002",
+    "citation": "Breuer, P., Al-Hajri, S., Le Hérissé, A., Paris, F., Steemans, P., Verniers, J. and Wellman, C.H. (2017). A distinctive marginal marine palynological assemblage from the Přídolí of northwestern Saudi Arabia. Revue de Micropaléontologie 60(3), 371–402.",
+    "language": "English; French abstract",
+    "reports_window_spores": true,
+    "comment": "One combined assemblage from three samples is described. The material was previously reported by Stump et al. (1995), Geology and biostratigraphy of the Late Precambrian through Palaeozoic sediments of Saudi Arabia, and briefly described and illustrated by Al-Hajri et al. (2008), A distinctive marginal marine palynological assemblage from the Pridoli of Northwestern Saudi Arabia. Four species previously unknown below the Lochkovian are interpreted as extending down into the Přídolí. The supplied text is an accepted manuscript. Live Crossref verification was unavailable."
+  },
+  "items": [
+    {
+      "assemblage_id": "JLMD-EW-8_core6_637.19-639.42m",
+      "scope": "section-interval",
+      "locality": "Jalamid area, northwestern Saudi Arabia",
+      "country": "Saudi Arabia",
+      "formation": "Tawil Formation",
+      "section_or_core": "Well JLMD-EW-8, core 6",
+      "depth_or_level": "637.19 m, 638.43 m and 639.42 m",
+      "latitude": "",
+      "longitude": "",
+      "palaeogeo_unit_reported": "north Gondwana, including Arabia",
+      "palaeo_unit_proposed": "Gondwana-North-Africa-Arabia",
+      "age_as_reported": "middle Přídolí",
+      "age_basis": "mixed",
+      "age_basis_detail": "The joint occurrence of Margachitina elegans and Pseudoclathrochitina carmenchui identifies the elegans global chitinozoan biozone. Acritarch correlation with Libyan Biozone 3 supports a middle Přídolí assignment. Spores indicate the Spanish EC biozone, whose broader range is middle-late Přídolí to earliest Lochkovian. No direct independent graptolite or conodont control is available for precise placement of the chitinozoan concurrent-range zone within the Přídolí.",
+      "age_circular": false,
+      "stage_min_proposed": "Pridoli",
+      "stage_max_proposed": "Pridoli",
+      "setting_as_reported": "marginal marine",
+      "setting_class": "marginal-marine",
+      "n_samples": "3",
+      "reworking_status": "none",
+      "notes": "Section 5.3 reports more-or-less identical assemblages comprising 52 species across the three samples; the combined list contains 10 cryptospore and 42 trilete/monolete entries, including open nomenclature. The paper does not provide a complete sample-by-sample occurrence matrix, so the combined list is retained without assigning every taxon to every sample. Plates 1–5 identify illustrated specimens by sample depth. Land-derived miospores are common overall; taxon-specific abundances are not supplied. Chitinozoans and organic-walled microphytoplankton are substantial components of this integrated palynological study. Samples yielded abundant, well-preserved palynomorphs of low thermal maturity, T.A.I. ca. 2+. The authors extend Aneurospora isidori, Cymbosporites multiconus, Iberoespora glabella and Iberoespora guzmani into the Přídolí. Devonomonoletes sp. is retained as an explicitly reported monolete spore. The spelling Brochotriletres is retained from the manuscript.",
+      "locator": "Sections 2–3, manuscript p. 3; section 4.1, pp. 6–7; sections 5.3 and 6.1, pp. 10–12; Plates 1–5 and their captions, pp. 25–27",
+      "occurrences": [
+        {
+          "taxon_as_reported": "Artemopyra laevigata Wellman and Richardson, 1996",
+          "genus": "Artemopyra",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Section 4.1, p. 6; Plate 1, Fig. 1"
+        },
+        {
+          "taxon_as_reported": "Chelinohilates erraticus Richardson, 1996",
+          "genus": "Chelinohilates",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Section 4.1, p. 6; Plate 1, Figs. 2–9"
+        },
+        {
+          "taxon_as_reported": "Cymbohilates cymosus Richardson, 1996",
+          "genus": "Cymbohilates",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Section 4.1, p. 6; Plate 1, Fig. 10"
+        },
+        {
+          "taxon_as_reported": "Cymbohilates jalamidensis nov. sp.",
+          "genus": "Cymbohilates",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Sections 4.1–4.2, pp. 6–8; Plate 1, Figs. 11–20"
+        },
+        {
+          "taxon_as_reported": "Cymbohilates sp. B in Lavender and Wellman (2002)",
+          "genus": "Cymbohilates",
+          "qualifier": "sp.",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Section 4.1, p. 6; Plate 1, Figs. 21–23"
+        },
+        {
+          "taxon_as_reported": "Dyadospora murusattenuata Strother and Traverse, 1979",
+          "genus": "Dyadospora",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Section 4.1, p. 6; Plate 2, Figs. 1 and 2"
+        },
+        {
+          "taxon_as_reported": "Gneudnaspora divellomedia (Chibrikova) Balme, 1988 var. minor Breuer et al., 2007",
+          "genus": "Gneudnaspora",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Section 4.1, p. 6; Plate 2, Figs. 3–7"
+        },
+        {
+          "taxon_as_reported": "Gneudnaspora sordida nov. sp.",
+          "genus": "Gneudnaspora",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Sections 4.1–4.2, pp. 6–8; Plate 2, Figs. 8–20"
+        },
+        {
+          "taxon_as_reported": "Pseudodyadospora petasus Wellman and Richardson, 1993",
+          "genus": "Pseudodyadospora",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Section 4.1, p. 6; Plate 2, Fig. 21"
+        },
+        {
+          "taxon_as_reported": "Tetrahedraletes medinensis Strother and Traverse emend. Wellman and Richardson, 1993",
+          "genus": "Tetrahedraletes",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Section 4.1, p. 6; Plate 2, Figs. 22 and 23"
+        },
+        {
+          "taxon_as_reported": "Ambitisporites avitus Hoffmeister, 1959",
+          "genus": "Ambitisporites",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Section 4.1, p. 6; Plate 3, Fig. 1"
+        },
+        {
+          "taxon_as_reported": "Aneurospora bollandensis Steemans, 1989",
+          "genus": "Aneurospora",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Section 4.1, p. 6; Plate 3, Fig. 2"
+        },
+        {
+          "taxon_as_reported": "Aneurospora cf. A. bollandensis Steemans, 1989",
+          "genus": "Aneurospora",
+          "qualifier": "cf.",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Section 4.1, p. 6; Plate 3, Figs. 3 and 4"
+        },
+        {
+          "taxon_as_reported": "Aneurospora isidori (Cramer and Díez) Richardson et al., 1982",
+          "genus": "Aneurospora",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Section 4.1, p. 6; Plate 3, Fig. 5"
+        },
+        {
+          "taxon_as_reported": "Aneurospora richardsonii (Rodriguez) Richardson et al., 2001",
+          "genus": "Aneurospora",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Section 4.1, p. 6; Plate 3, Figs. 6–9"
+        },
+        {
+          "taxon_as_reported": "Aneurospora spp.",
+          "genus": "Aneurospora",
+          "qualifier": "spp.",
+          "abundance": "present",
+          "illustrated": false,
+          "locator": "Section 4.1, p. 6"
+        },
+        {
+          "taxon_as_reported": "Archaeozonotriletes chulus Richardson and Lister, 1969",
+          "genus": "Archaeozonotriletes",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Section 4.1, p. 6; Plate 3, Fig. 10"
+        },
+        {
+          "taxon_as_reported": "Archaeozonotriletes chulus var. inframurinatus Richardson and Lister, 1969",
+          "genus": "Archaeozonotriletes",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Section 4.1, p. 6; Plate 3, Fig. 11"
+        },
+        {
+          "taxon_as_reported": "Breconisporites simplex Wellman, 1993",
+          "genus": "Breconisporites",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Section 4.1, p. 6; Plate 3, Figs. 12 and 13"
+        },
+        {
+          "taxon_as_reported": "cf. Brochotriletres sp. A in Richardson and Ioannides (1973)",
+          "genus": "Brochotriletres",
+          "qualifier": "cf.",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Section 4.1, p. 6; Plate 3, Fig. 14"
+        },
+        {
+          "taxon_as_reported": "Chelinospora hemiesferica (Cramer and Díez) Richardson et al., 2001",
+          "genus": "Chelinospora",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Section 4.1, p. 6; Plate 3, Fig. 15"
+        },
+        {
+          "taxon_as_reported": "Chelinospora cf. C. hemiesferica (Cramer and Díez) Richardson et al., 2001",
+          "genus": "Chelinospora",
+          "qualifier": "cf.",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Section 4.1, p. 6; Plate 3, Figs. 16–25"
+        },
+        {
+          "taxon_as_reported": "Chelinospora lavidensis Richardson et al., 2001",
+          "genus": "Chelinospora",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Section 4.1, p. 6; Plate 3, Fig. 26"
+        },
+        {
+          "taxon_as_reported": "Chelinospora sanpetrensis (Rodriguez) Richardson et al., 2001",
+          "genus": "Chelinospora",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Section 4.1, p. 6; Plate 4, Fig. 1"
+        },
+        {
+          "taxon_as_reported": "Chelinospora sp. 1 in Rubinstein and Steemans (2002)",
+          "genus": "Chelinospora",
+          "qualifier": "sp.",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Section 4.1, p. 6; Plate 4, Fig. 2"
+        },
+        {
+          "taxon_as_reported": "Chelinospora sp. A",
+          "genus": "Chelinospora",
+          "qualifier": "sp.",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Section 4.1, p. 6; Plate 4, Figs. 3–9"
+        },
+        {
+          "taxon_as_reported": "Chelinospora spp.",
+          "genus": "Chelinospora",
+          "qualifier": "spp.",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Section 4.1, p. 6; Plate 4, Figs. 10 and 11"
+        },
+        {
+          "taxon_as_reported": "Concentricosisporites sagittarius (Rodriguez) Rodriguez, 1983",
+          "genus": "Concentricosisporites",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Section 4.1, p. 7; Plate 4, Fig. 12"
+        },
+        {
+          "taxon_as_reported": "Coronaspora reticulata Richardson et al., 2001",
+          "genus": "Coronaspora",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Section 4.1, p. 7; Plate 4, Figs. 13–16"
+        },
+        {
+          "taxon_as_reported": "Coronaspora subornata (Cramer and Díez) Richardson et al., 2001",
+          "genus": "Coronaspora",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Section 4.1, p. 7; Plate 4, Fig. 17"
+        },
+        {
+          "taxon_as_reported": "Cymbosporites multiconus Steemans, 1989",
+          "genus": "Cymbosporites",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Section 4.1, p. 7; Plate 4, Fig. 18"
+        },
+        {
+          "taxon_as_reported": "Cymbosporites sp. A in Richardson and Ioannides (1973)",
+          "genus": "Cymbosporites",
+          "qualifier": "sp.",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Section 4.1, p. 7; Plate 4, Fig. 19"
+        },
+        {
+          "taxon_as_reported": "Cymbosporites sp.",
+          "genus": "Cymbosporites",
+          "qualifier": "sp.",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Section 4.1, p. 7; Plate 4, Figs. 20 and 21"
+        },
+        {
+          "taxon_as_reported": "Devonomonoletes sp.",
+          "genus": "Devonomonoletes",
+          "qualifier": "sp.",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Section 4.1, p. 7; Plate 4, Fig. 22"
+        },
+        {
+          "taxon_as_reported": "Emphanisporites multicostatus Rodriguez, 1978a",
+          "genus": "Emphanisporites",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Section 4.1, p. 7; Plate 4, Figs. 23–25"
+        },
+        {
+          "taxon_as_reported": "Emphanisporites novellus McGregor and Camfield, 1976",
+          "genus": "Emphanisporites",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Section 4.1, p. 7; Plate 4, Fig. 26"
+        },
+        {
+          "taxon_as_reported": "Emphanisporites spp.",
+          "genus": "Emphanisporites",
+          "qualifier": "spp.",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Section 4.1, p. 7; Plate 4, Figs. 27–29"
+        },
+        {
+          "taxon_as_reported": "Iberoespora cantabrica Cramer and Díez, 1975",
+          "genus": "Iberoespora",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Section 4.1, p. 7; Plate 4, Figs. 30–32"
+        },
+        {
+          "taxon_as_reported": "Iberoespora glabella Cramer and Díez, 1975",
+          "genus": "Iberoespora",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Section 4.1, p. 7; Plate 4, Fig. 33"
+        },
+        {
+          "taxon_as_reported": "Iberoespora guzmani Cramer and Díez, 1975",
+          "genus": "Iberoespora",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Section 4.1, p. 7; Plate 5, Figs. 1–4"
+        },
+        {
+          "taxon_as_reported": "Iberoespora sp. 2 in Rubinstein and Steemans (2002)",
+          "genus": "Iberoespora",
+          "qualifier": "sp.",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Section 4.1, p. 7; Plate 5, Fig. 5"
+        },
+        {
+          "taxon_as_reported": "Insolisporites anchistinus Burgess and Richardson, 1995",
+          "genus": "Insolisporites",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Section 4.1, p. 7; Plate 5, Figs. 6 and 7"
+        },
+        {
+          "taxon_as_reported": "Retusotriletes bipellis Rodriguez, 1978a",
+          "genus": "Retusotriletes",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Section 4.1, p. 7; Plate 5, Figs. 8 and 9"
+        },
+        {
+          "taxon_as_reported": "Retusotriletes dubius (Eisenack) Richardson, 1965",
+          "genus": "Retusotriletes",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Section 4.1, p. 7; Plate 5, Fig. 10"
+        },
+        {
+          "taxon_as_reported": "Retusotriletes maculatus McGregor and Camfield, 1976",
+          "genus": "Retusotriletes",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Section 4.1, p. 7; Plate 5, Figs. 11 and 12"
+        },
+        {
+          "taxon_as_reported": "Retusotriletes spp.",
+          "genus": "Retusotriletes",
+          "qualifier": "spp.",
+          "abundance": "present",
+          "illustrated": false,
+          "locator": "Section 4.1, p. 7"
+        },
+        {
+          "taxon_as_reported": "Retusotriletes? saturnus Richardson et al., 2001",
+          "genus": "Retusotriletes",
+          "qualifier": "?",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Section 4.1, p. 7; Plate 5, Figs. 13–15"
+        },
+        {
+          "taxon_as_reported": "Scylaspora downiei Burgess and Richardson, 1995",
+          "genus": "Scylaspora",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Section 4.1, p. 7; Plate 5, Fig. 16"
+        },
+        {
+          "taxon_as_reported": "Scylaspora elegans Richardson et al., 2001",
+          "genus": "Scylaspora",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Section 4.1, p. 7; Plate 5, Fig. 17"
+        },
+        {
+          "taxon_as_reported": "Synorisporites cf. S. libycus Richardson and Ioannides, 1973",
+          "genus": "Synorisporites",
+          "qualifier": "cf.",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Section 4.1, p. 7; Plate 5, Figs. 18–21"
+        },
+        {
+          "taxon_as_reported": "Synorisporites verrucatus Richardson and Lister, 1969",
+          "genus": "Synorisporites",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Section 4.1, p. 7; Plate 5, Figs. 22–25"
+        },
+        {
+          "taxon_as_reported": "Synorisporites sp.",
+          "genus": "Synorisporites",
+          "qualifier": "sp.",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Section 4.1, p. 7; Plate 5, Figs. 26 and 27"
+        }
+      ]
+    }
+  ]
+}

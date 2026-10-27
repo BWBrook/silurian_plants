@@ -1,0 +1,289 @@
+{
+  "doc": {
+    "doi": "10.1344/105.000000251",
+    "citation": "Di Pasquo, M.M. and Noetinger, S. (2008). First record of Early Devonian (Lochkovian) flora from the Santa Rosa Formation - Alarache, Southern Bolivia. Geologica Acta, 6(2), 191–210.",
+    "language": "English",
+    "reports_window_spores": true,
+    "comment": "Two newly studied assemblages are reported, three metres apart. Their Lochkovian age is based on spores and constrained by absences of index taxa. The formal description uses Acinosporites macgregorii, whereas assemblage lists and captions use mcgregorii; printed list spellings are retained below. Caption variants referring to the same taxon are consolidated. Exclusively in situ spores and literature comparisons are excluded. Earlier records discussed include McGregor (1984), Late Silurian and Devonian spores from Bolivia, and Melo (2005b), cited for spores from the same locality; reuse of their material is not stated."
+  },
+  "items": [
+    {
+      "assemblage_id": "W1491295082-assemblage-1",
+      "scope": "section-interval",
+      "locality": "Angosto de Alarache, near Tarija city, Tarija Department",
+      "country": "Bolivia",
+      "formation": "Santa Rosa Fm",
+      "section_or_core": "Alarache Devonian section",
+      "depth_or_level": "Lower plant-bearing interval; laminated and massive siltstones in heterolithic facies; three metres below assemblage 2. BAFC-Pb 16988, 16989 and BAFC-Pl 1632.",
+      "latitude": "22º 14’ 48’’",
+      "longitude": "64º 34’ 01’’",
+      "palaeogeo_unit_reported": "Gondwana",
+      "palaeo_unit_proposed": "Gondwana-South-America",
+      "age_as_reported": "Lochkovian",
+      "age_basis": "spore-zone",
+      "age_basis_detail": "Assigned the same age as assemblage 2, three metres above. Assemblage 2 is dated by Dictyotriletes emsiensis, Apiculiretusispora plicata, Retusotriletes albarinii and Retusotriletes maculatus, with absence of other index taxa restricting the age up to the Late not latest Lochkovian. Correlated with the lower Ems Zone of the Amazon Basin and MN Zone of Western Europe.",
+      "age_circular": true,
+      "stage_min_proposed": "Lochkovian",
+      "stage_max_proposed": "Lochkovian",
+      "setting_as_reported": "marginal to low energy marine palaeoenvironments",
+      "setting_class": "marginal-marine",
+      "n_samples": "Two plant-bearing blocks, BAFC-Pb 16988 and 16989, and pelitic sample BAFC-Pl 1632",
+      "reworking_status": "none",
+      "notes": "Reported collectively across successive plant-bearing bedding planes. Phytodebris constitutes around 80% of the residue; trilete spores constitute 85% of palynomorphs and cryptospores 14%. Poorly preserved chitinozoans and aquatic algae also occur. Short-distance transport and paraautochthonous to allochthonous deposition are interpreted; stratigraphic reworking is not reported. Punctatisporites spp. is illustrated as Punctatisporites sp. in Fig. 7G. The tentative Dibolisporites identification and unidentified tetrad are added from Fig. 7. Retusotriletes albarinii includes a corroded specimen. The caption-only tentative Punctatisporites and Apiculiretusispora identifications associated with isolated sporangia are excluded as in situ records. Coordinates are printed without hemisphere designations.",
+      "locator": "Stratigraphy of the area, p. 195; Composition of the assemblages and taphonomic features—Palynology—Assemblage 1, p. 202; Figs. 2B, 4C and 7; age discussion, p. 206; palaeoenvironmental discussion, pp. 206–207.",
+      "occurrences": [
+        {
+          "taxon_as_reported": "Punctatisporites spp.",
+          "genus": "Punctatisporites",
+          "qualifier": "spp.",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Assemblage 1, p. 202; Fig. 7G, p. 201, captioned Punctatisporites sp., BAFC-Pl 16988(4) D37/1."
+        },
+        {
+          "taxon_as_reported": "Retusotriletes albarinii",
+          "genus": "Retusotriletes",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Assemblage 1, p. 202; Fig. 7E, F, N, p. 201."
+        },
+        {
+          "taxon_as_reported": "Retusotriletes spp.",
+          "genus": "Retusotriletes",
+          "qualifier": "spp.",
+          "abundance": "present",
+          "illustrated": false,
+          "locator": "Assemblage 1, p. 202."
+        },
+        {
+          "taxon_as_reported": "Apiculiretusispora sp.",
+          "genus": "Apiculiretusispora",
+          "qualifier": "sp.",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Assemblage 1, p. 202; Fig. 7J, p. 201, BAFC-Pl 16989(4) M55."
+        },
+        {
+          "taxon_as_reported": "Acinosporites sp.",
+          "genus": "Acinosporites",
+          "qualifier": "sp.",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Assemblage 1, p. 202; Fig. 7I, p. 201, BAFC-Pl 16988(3) J54."
+        },
+        {
+          "taxon_as_reported": "A. mcgregorii",
+          "genus": "Acinosporites",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Assemblage 1, p. 202; Fig. 7H, p. 201, captioned Acinosporites mcgregorii n. sp., BAFC-Pl 16988(3) F44."
+        },
+        {
+          "taxon_as_reported": "Dibolisporites sp.",
+          "genus": "Dibolisporites",
+          "qualifier": "sp.",
+          "abundance": "present",
+          "illustrated": false,
+          "locator": "Assemblage 1, p. 202."
+        },
+        {
+          "taxon_as_reported": "Dibolisporites sp. cf. D) wetteldorfensis",
+          "genus": "Dibolisporites",
+          "qualifier": "cf.",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Fig. 7D caption, p. 201, BAFC-Pl 16989(4) F46; the caption prints D) within the identification."
+        },
+        {
+          "taxon_as_reported": "?Chelinohilates sp.",
+          "genus": "Chelinohilates",
+          "qualifier": "?",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Assemblage 1, p. 202; Fig. 7K, p. 201, BAFC-Pl 16989(3) E35/1."
+        },
+        {
+          "taxon_as_reported": "Dyadospora sp.",
+          "genus": "Dyadospora",
+          "qualifier": "sp.",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Assemblage 1, p. 202; Fig. 7L, p. 201, BAFC-Pl 16988(3) E45/2."
+        },
+        {
+          "taxon_as_reported": "Tetrad",
+          "genus": "",
+          "qualifier": "indet.",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Fig. 7S caption, p. 201, BAFC-Pl 16988(3) K46/1."
+        },
+        {
+          "taxon_as_reported": "simple spores with indistinct mark",
+          "genus": "",
+          "qualifier": "indet.",
+          "abundance": "present",
+          "illustrated": false,
+          "locator": "Assemblage 1, p. 202, included among cryptospores."
+        }
+      ]
+    },
+    {
+      "assemblage_id": "W1491295082-assemblage-2",
+      "scope": "sample",
+      "locality": "Angosto de Alarache, near Tarija city, Tarija Department",
+      "country": "Bolivia",
+      "formation": "Santa Rosa Fm",
+      "section_or_core": "Alarache Devonian section",
+      "depth_or_level": "Upper dark grey claystone bed above a sandstone bed with current structures; three metres above assemblage 1. BAFC-Pl 1631.",
+      "latitude": "22º 14’ 48’’",
+      "longitude": "64º 34’ 01’’",
+      "palaeogeo_unit_reported": "Gondwana",
+      "palaeo_unit_proposed": "Gondwana-South-America",
+      "age_as_reported": "Lochkovian",
+      "age_basis": "spore-zone",
+      "age_basis_detail": "Based on Dictyotriletes emsiensis, Apiculiretusispora plicata, Retusotriletes cf. avonensis (= R. albarinii n. sp.) and Retusotriletes maculatus. Absence of Urochitina loboi and other index taxa restricts the age up to the Late not latest Lochkovian. Correlated with the lower Ems Zone of the Amazon Basin and MN Zone of Western Europe.",
+      "age_circular": true,
+      "stage_min_proposed": "Lochkovian",
+      "stage_max_proposed": "Lochkovian",
+      "setting_as_reported": "marginal to low energy marine palaeoenvironments",
+      "setting_class": "marginal-marine",
+      "n_samples": "1",
+      "reworking_status": "none",
+      "notes": "Phytodebris constitutes 70%; trilete spores dominate the palynomorph assemblage. Cryptospores include tetrads, dyads and uncertain single forms. Ambitisporites specimens are described as corroded, without a claim of reworking. Fig. 9D prints Apiculiretusipora sp.; this is consolidated with Apiculiretusispora sp. illustrated in Fig. 9G. Fig. 9F identifies Dictyotriletes emsiensis as a morphon. Fig. 8V is captioned Cryptospore and the same specimen is captioned ?Cryptospore in Fig. 9T. The possible sphaeromorph ?Leiosphaeridia in Fig. 9I is excluded from spore occurrences. Coordinates are printed without hemisphere designations.",
+      "locator": "Stratigraphy of the area, p. 195; Composition of the assemblages and taphonomic features—Palynology—Assemblage 2, p. 202; Figs. 2B, 4D, 8P, S–V and 9; age discussion, pp. 205–206; palaeoenvironmental discussion, pp. 206–207.",
+      "occurrences": [
+        {
+          "taxon_as_reported": "Punctatisporites sp.",
+          "genus": "Punctatisporites",
+          "qualifier": "sp.",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Assemblage 2, p. 202, genus-level statement; Fig. 8P, p. 203; Fig. 9X, p. 204, BAFC-Pl 1631(meb) M40/1."
+        },
+        {
+          "taxon_as_reported": "Retusotriletes sp.",
+          "genus": "Retusotriletes",
+          "qualifier": "sp.",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Assemblage 2, p. 202, genus-level statement; Fig. 9K, p. 204, BAFC-Pl 1631(2) K39/1."
+        },
+        {
+          "taxon_as_reported": "Ambitisporites avitus/dilutus morphon",
+          "genus": "Ambitisporites",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Assemblage 2, p. 202; Fig. 9A, B, p. 204, BAFC-Pl 1631(1) P42 and 1631(2) P47/2."
+        },
+        {
+          "taxon_as_reported": "Apiculiretusispora plicata",
+          "genus": "Apiculiretusispora",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Assemblage 2, p. 202; Fig. 9C, p. 204, BAFC-Pl 1631(1) M37."
+        },
+        {
+          "taxon_as_reported": "Dictyotriletes emsiensis",
+          "genus": "Dictyotriletes",
+          "qualifier": "",
+          "abundance": "less frequent",
+          "illustrated": true,
+          "locator": "Assemblage 2, p. 202; Fig. 9F, p. 204, captioned Dictyotriletes emsiensis morphon, BAFC-Pl 1631(1) H34."
+        },
+        {
+          "taxon_as_reported": "Retusotriletes maculatus",
+          "genus": "Retusotriletes",
+          "qualifier": "",
+          "abundance": "less frequent",
+          "illustrated": true,
+          "locator": "Assemblage 2, p. 202; Fig. 9P caption, p. 204, BAFC-Pl 1631(2) P43/1."
+        },
+        {
+          "taxon_as_reported": "Emphanisporites rotatus",
+          "genus": "Emphanisporites",
+          "qualifier": "",
+          "abundance": "less frequent",
+          "illustrated": true,
+          "locator": "Assemblage 2, p. 202; Fig. 9O caption, p. 204, BAFC-Pl 1631(1) Y44/4."
+        },
+        {
+          "taxon_as_reported": "?Retusotriletes paraguayensis",
+          "genus": "Retusotriletes",
+          "qualifier": "?",
+          "abundance": "less frequent",
+          "illustrated": true,
+          "locator": "Assemblage 2, p. 202; Fig. 9S caption, p. 204, BAFC-Pl 1631(3) B21."
+        },
+        {
+          "taxon_as_reported": "Retusotriletes albarinii",
+          "genus": "Retusotriletes",
+          "qualifier": "",
+          "abundance": "less frequent",
+          "illustrated": true,
+          "locator": "Assemblage 2, p. 202; Fig. 8S, T, p. 203; Fig. 9L, Q, p. 204; holotype BAFC-Pl 1631(SEM) P35, p. 200."
+        },
+        {
+          "taxon_as_reported": "Acinosporites mcgregorii",
+          "genus": "Acinosporites",
+          "qualifier": "",
+          "abundance": "less frequent",
+          "illustrated": true,
+          "locator": "Assemblage 2, p. 202; Fig. 9H, M, N, p. 204; formal description as Acinosporites macgregorii n. sp., p. 200."
+        },
+        {
+          "taxon_as_reported": "Dibolisporites sp. cf. D. wetteldorfensis",
+          "genus": "Dibolisporites",
+          "qualifier": "cf.",
+          "abundance": "less frequent",
+          "illustrated": true,
+          "locator": "Assemblage 2, p. 202; Fig. 9Z, p. 204, BAFC-Pl 1631(meb) P38."
+        },
+        {
+          "taxon_as_reported": "Dibolisporites sp.",
+          "genus": "Dibolisporites",
+          "qualifier": "sp.",
+          "abundance": "less frequent",
+          "illustrated": true,
+          "locator": "Assemblage 2, p. 202; Fig. 8U, p. 203; Fig. 9Y, p. 204, BAFC-Pl 1631(meb) L40/3."
+        },
+        {
+          "taxon_as_reported": "Apiculiretusispora sp.",
+          "genus": "Apiculiretusispora",
+          "qualifier": "sp.",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Fig. 9G caption, p. 204, BAFC-Pl 1631(meb) N37/1; Fig. 9D captions another specimen as Apiculiretusipora sp., BAFC-Pl 1631(1) O50/2."
+        },
+        {
+          "taxon_as_reported": "Dyad",
+          "genus": "",
+          "qualifier": "indet.",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Assemblage 2, p. 202; Fig. 9J caption, p. 204, BAFC-Pl 1631(2) S44; caption notes a false trilete mark."
+        },
+        {
+          "taxon_as_reported": "Tetrad",
+          "genus": "",
+          "qualifier": "indet.",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Assemblage 2, p. 202; Fig. 9R caption, p. 204, BAFC-Pl 1631(1) A32/4."
+        },
+        {
+          "taxon_as_reported": "?Cryptospore",
+          "genus": "",
+          "qualifier": "?",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Fig. 9E, T captions, p. 204, BAFC-Pl 1631(1) P46/4 and 1631(meb) L37/3; Fig. 8V, p. 203, illustrates the same specimen as Fig. 9T."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,404 @@
+{
+  "doc": {
+    "doi": "10.1098/rstb.2016.0491",
+    "citation": "Wellman CH. 2017. Palaeoecology and palaeophytogeography of the Rhynie chert plants: further evidence from integrated analysis of in situ and dispersed spores. Philosophical Transactions of the Royal Society B 373: 20160491.",
+    "language": "English",
+    "reports_window_spores": true,
+    "comment": "The whole supplied text, including tables and figure captions, was read. Extraction is incomplete because supplementary table S1 (rstb20160491supp1.xls), containing the four regional species lists, could not be retrieved. Empty comparison occurrence lists indicate unavailable taxon-level data, not spore absence. Rhynie records reuse Wellman (2006), Spore assemblages from the Lower Devonian ‘Lower Old Red Sandstone’ deposits of the Rhynie outlier, Scotland, and extend Wellman (2004), Palaeoecology and palaeophytogeography of the Rhynie chert plants: evidence from integrated analysis of in situ and dispersed spores. Comparison data derive from Thomas (1978), Wellman et al. (1998), McGregor (1973, 1977) and Steemans (1989). Table 1 concerns in situ spores and was not treated as a separate dispersed assemblage. The association of Rhynia with Apiculiretusispora brandtii in section 4(b) conflicts with Apiculiretusispora plicata in table 1; both taxa are independently illustrated as dispersed spores in figure 2."
+  },
+  "items": [
+    {
+      "assemblage_id": "Wellman2017_Rhynie",
+      "scope": "composite",
+      "locality": "Rhynie outlier, Aberdeenshire",
+      "country": "Scotland",
+      "formation": "Lower Old Red Sandstone",
+      "section_or_core": "",
+      "depth_or_level": "throughout a large part of the stratigraphical sequence",
+      "latitude": "",
+      "longitude": "",
+      "palaeogeo_unit_reported": "Euramerica (Old Red Sandstone continent)",
+      "palaeo_unit_proposed": "Laurentia",
+      "age_as_reported": "early (but not earliest) Pragian to ?earliest Emsian",
+      "age_basis": "spore-zone",
+      "age_basis_detail": "polygonalis–emsiensis Spore Assemblage Biozone (PE SAB); PoW Oppel Zone, potentially Su Interval Zone. Recognition of the Su Interval Zone potentially restricts the age to late Pragian to ?earliest Emsian.",
+      "age_circular": true,
+      "stage_min_proposed": "Pragian",
+      "stage_max_proposed": "Emsian",
+      "setting_as_reported": "inland intermontane basin; fluvial and lacustrine sands, silts and muds",
+      "setting_class": "non-marine",
+      "n_samples": "106 productive samples; relative abundance counts on 70 best-preserved samples",
+      "reworking_status": "none",
+      "notes": "Pooled borehole assemblages, described as very similar throughout the sequence; individual sample lists and borehole identifiers are not supplied here. Samples occur below, within, between and above the chert-bearing horizons. Table 2 reports 31 common distinctive taxa; section 4(b) mentions another 42 rare taxa, predominantly singletons, illustrated in the earlier study. Those unnamed taxa cannot be individually extracted from this text. Figure 2 illustrates 33 entries, including Dyadospora murusdensa interpreted as a dyad of Laevolancis divellomedium; these should not automatically be counted as independent biological species. Dibolisporites, Chelinospora and Cymbosporites are reported as under-represented rather than absent. Reworking is not discussed. The reported approximately 25°S is palaeolatitude, not a modern locality coordinate.",
+      "locator": "Sections 2, 4(a–c), pp. 2, 5–7; figure 2; tables 2–3",
+      "occurrences": [
+        {
+          "taxon_as_reported": "Retusotriletes spp.",
+          "genus": "Retusotriletes",
+          "qualifier": "spp.",
+          "abundance": "common",
+          "illustrated": true,
+          "locator": "Figure 2(a), p. 5"
+        },
+        {
+          "taxon_as_reported": "cf. Retusotriletes fayersii",
+          "genus": "Retusotriletes",
+          "qualifier": "cf.",
+          "abundance": "common",
+          "illustrated": true,
+          "locator": "Figure 2(b), p. 5"
+        },
+        {
+          "taxon_as_reported": "Retusotriletes maculatus?",
+          "genus": "Retusotriletes",
+          "qualifier": "?",
+          "abundance": "common",
+          "illustrated": true,
+          "locator": "Figure 2(c), p. 5"
+        },
+        {
+          "taxon_as_reported": "Retusotriletes cf. triangulatus",
+          "genus": "Retusotriletes",
+          "qualifier": "cf.",
+          "abundance": "common",
+          "illustrated": true,
+          "locator": "Figure 2(d), p. 5"
+        },
+        {
+          "taxon_as_reported": "Retusotriletes sp. CW-A",
+          "genus": "Retusotriletes",
+          "qualifier": "sp.",
+          "abundance": "common",
+          "illustrated": true,
+          "locator": "Section 4(b), p. 6; figure 2(e), p. 5"
+        },
+        {
+          "taxon_as_reported": "Retusotriletes sp. CW-B",
+          "genus": "Retusotriletes",
+          "qualifier": "sp.",
+          "abundance": "common",
+          "illustrated": true,
+          "locator": "Figure 2(f), p. 5"
+        },
+        {
+          "taxon_as_reported": "Apiculiretusispora brandtii",
+          "genus": "Apiculiretusispora",
+          "qualifier": "",
+          "abundance": "common",
+          "illustrated": true,
+          "locator": "Figure 2(g), p. 5; section 4(b), p. 6"
+        },
+        {
+          "taxon_as_reported": "Apiculiretusispora plicata",
+          "genus": "Apiculiretusispora",
+          "qualifier": "",
+          "abundance": "common",
+          "illustrated": true,
+          "locator": "Figure 2(h), p. 5"
+        },
+        {
+          "taxon_as_reported": "Apiculiretusispora sp. CW-A",
+          "genus": "Apiculiretusispora",
+          "qualifier": "sp.",
+          "abundance": "common",
+          "illustrated": true,
+          "locator": "Figure 2(i), p. 5"
+        },
+        {
+          "taxon_as_reported": "Apiculiretusispora sp. CW-B",
+          "genus": "Apiculiretusispora",
+          "qualifier": "sp.",
+          "abundance": "common",
+          "illustrated": true,
+          "locator": "Figure 2(j), p. 5"
+        },
+        {
+          "taxon_as_reported": "Apiculiretusispora sp. CW-C",
+          "genus": "Apiculiretusispora",
+          "qualifier": "sp.",
+          "abundance": "common",
+          "illustrated": true,
+          "locator": "Figure 2(k), p. 5"
+        },
+        {
+          "taxon_as_reported": "Dictyotriletes? hagenii",
+          "genus": "Dictyotriletes",
+          "qualifier": "?",
+          "abundance": "common",
+          "illustrated": true,
+          "locator": "Figure 2(l), p. 5"
+        },
+        {
+          "taxon_as_reported": "Dictyotriletes kerpii",
+          "genus": "Dictyotriletes",
+          "qualifier": "",
+          "abundance": "common",
+          "illustrated": true,
+          "locator": "Figure 2(m), p. 5"
+        },
+        {
+          "taxon_as_reported": "Dictyotriletes subgranifer",
+          "genus": "Dictyotriletes",
+          "qualifier": "",
+          "abundance": "common",
+          "illustrated": true,
+          "locator": "Figure 2(n), p. 5"
+        },
+        {
+          "taxon_as_reported": "Ambitisporites sp. CW-A",
+          "genus": "Ambitisporites",
+          "qualifier": "sp.",
+          "abundance": "common",
+          "illustrated": true,
+          "locator": "Figure 2(o), p. 5"
+        },
+        {
+          "taxon_as_reported": "Aneurospora sp. CW-A",
+          "genus": "Aneurospora",
+          "qualifier": "sp.",
+          "abundance": "common",
+          "illustrated": true,
+          "locator": "Figure 2(p), p. 5"
+        },
+        {
+          "taxon_as_reported": "Brochotriletes sp. CW-A",
+          "genus": "Brochotriletes",
+          "qualifier": "sp.",
+          "abundance": "common",
+          "illustrated": true,
+          "locator": "Figure 2(q), p. 5"
+        },
+        {
+          "taxon_as_reported": "Brochotriletes rarus",
+          "genus": "Brochotriletes",
+          "qualifier": "",
+          "abundance": "common",
+          "illustrated": true,
+          "locator": "Figure 2(r), p. 5"
+        },
+        {
+          "taxon_as_reported": "Clivosispora verrucata",
+          "genus": "Clivosispora",
+          "qualifier": "",
+          "abundance": "common",
+          "illustrated": true,
+          "locator": "Figure 2(s), p. 5"
+        },
+        {
+          "taxon_as_reported": "Emphanisporites edwardsiae",
+          "genus": "Emphanisporites",
+          "qualifier": "",
+          "abundance": "common",
+          "illustrated": true,
+          "locator": "Figure 2(t), p. 5"
+        },
+        {
+          "taxon_as_reported": "Emphanisporites cf. decoratus",
+          "genus": "Emphanisporites",
+          "qualifier": "cf.",
+          "abundance": "common",
+          "illustrated": true,
+          "locator": "Figure 2(u), p. 5; section 4(b), p. 6"
+        },
+        {
+          "taxon_as_reported": "Emphanisporites zavallatus",
+          "genus": "Emphanisporites",
+          "qualifier": "",
+          "abundance": "common",
+          "illustrated": true,
+          "locator": "Figure 2(v), p. 5"
+        },
+        {
+          "taxon_as_reported": "Emphanisporites rotatus",
+          "genus": "Emphanisporites",
+          "qualifier": "",
+          "abundance": "common",
+          "illustrated": true,
+          "locator": "Figure 2(w), p. 5"
+        },
+        {
+          "taxon_as_reported": "Emphanisporites robustus",
+          "genus": "Emphanisporites",
+          "qualifier": "",
+          "abundance": "common",
+          "illustrated": true,
+          "locator": "Figure 2(x), p. 5"
+        },
+        {
+          "taxon_as_reported": "Verrucosisporites polygonalis",
+          "genus": "Verrucosisporites",
+          "qualifier": "",
+          "abundance": "common",
+          "illustrated": true,
+          "locator": "Figure 2(y), p. 5"
+        },
+        {
+          "taxon_as_reported": "Archaeozonotriletes chulus",
+          "genus": "Archaeozonotriletes",
+          "qualifier": "",
+          "abundance": "common",
+          "illustrated": true,
+          "locator": "Figure 2(z), p. 5"
+        },
+        {
+          "taxon_as_reported": "Stalicospora trewinii",
+          "genus": "Stalicospora",
+          "qualifier": "",
+          "abundance": "common",
+          "illustrated": true,
+          "locator": "Figure 2(aa), p. 5"
+        },
+        {
+          "taxon_as_reported": "Leiozosterospora andersonii",
+          "genus": "Leiozosterospora",
+          "qualifier": "",
+          "abundance": "common",
+          "illustrated": true,
+          "locator": "Figure 2(ab), p. 5"
+        },
+        {
+          "taxon_as_reported": "Camptozonotriletes? caperatus",
+          "genus": "Camptozonotriletes",
+          "qualifier": "?",
+          "abundance": "common",
+          "illustrated": true,
+          "locator": "Figure 2(ac), p. 5"
+        },
+        {
+          "taxon_as_reported": "Camptozonotriletes? sp. CW-A",
+          "genus": "Camptozonotriletes",
+          "qualifier": "?",
+          "abundance": "common",
+          "illustrated": true,
+          "locator": "Figure 2(ad), p. 5"
+        },
+        {
+          "taxon_as_reported": "Laevolancis divellomedium",
+          "genus": "Laevolancis",
+          "qualifier": "",
+          "abundance": "common",
+          "illustrated": true,
+          "locator": "Figure 2(ae), p. 5"
+        },
+        {
+          "taxon_as_reported": "Dyadospora murusdensa",
+          "genus": "Dyadospora",
+          "qualifier": "",
+          "abundance": "common",
+          "illustrated": true,
+          "locator": "Figure 2(af), p. 5"
+        },
+        {
+          "taxon_as_reported": "Laevolancis sp. CW-A",
+          "genus": "Laevolancis",
+          "qualifier": "sp.",
+          "abundance": "common",
+          "illustrated": true,
+          "locator": "Figure 2(ag), p. 5"
+        },
+        {
+          "taxon_as_reported": "Dibolisporites spp.",
+          "genus": "Dibolisporites",
+          "qualifier": "spp.",
+          "abundance": "under-represented",
+          "illustrated": false,
+          "locator": "Section 4(b), p. 6; section 4(c), p. 7"
+        },
+        {
+          "taxon_as_reported": "Chelinospora spp.",
+          "genus": "Chelinospora",
+          "qualifier": "spp.",
+          "abundance": "under-represented",
+          "illustrated": false,
+          "locator": "Section 4(b), p. 6"
+        },
+        {
+          "taxon_as_reported": "Cymbosporites spp.",
+          "genus": "Cymbosporites",
+          "qualifier": "spp.",
+          "abundance": "under-represented",
+          "illustrated": false,
+          "locator": "Section 4(b), p. 6"
+        }
+      ]
+    },
+    {
+      "assemblage_id": "Wellman2017_Cosheston",
+      "scope": "formation",
+      "locality": "southwest Wales; Anglo-Welsh Basin",
+      "country": "Wales",
+      "formation": "Cosheston Group",
+      "section_or_core": "",
+      "depth_or_level": "",
+      "latitude": "",
+      "longitude": "",
+      "palaeogeo_unit_reported": "Old Red Sandstone continent (Euramerica)",
+      "palaeo_unit_proposed": "Avalonia",
+      "age_as_reported": "coeval deposits",
+      "age_basis": "unstated",
+      "age_basis_detail": "Described as coeval with Rhynie; no separate age determination is supplied for the comparison samples.",
+      "age_circular": false,
+      "stage_min_proposed": "Pragian",
+      "stage_max_proposed": "Emsian",
+      "setting_as_reported": "lowland floodplain deposits of the Anglo-Welsh Basin",
+      "setting_class": "non-marine",
+      "n_samples": "18",
+      "reworking_status": "none",
+      "notes": "Group-level pooled comparison list, drawing on Thomas (1978), The stratigraphy, palynology and sedimentology of the Lower Old Red Sandstone Cosheston Group SW. Dyfed, Wales, and Wellman et al. (1998), The Cosheston Group (Lower Old Red Sandstone) in southwest Wales: age, correlation and palaeobotanical significance. Table 2 reports 46 common distinctive taxa. The species list is in inaccessible supplementary table S1; occurrences are therefore incomplete. Stage mapping follows the stated coeval relationship to Rhynie, not a separately reported numerical or biostratigraphical age. Whether its original dating was circular is unstated. Reworking is not discussed.",
+      "locator": "Section 4(a–c), pp. 6–7; tables 2–3; supplementary table S1",
+      "occurrences": []
+    },
+    {
+      "assemblage_id": "Wellman2017_Gaspe",
+      "scope": "composite",
+      "locality": "Gaspé, eastern Canada",
+      "country": "Canada",
+      "formation": "",
+      "section_or_core": "",
+      "depth_or_level": "",
+      "latitude": "",
+      "longitude": "",
+      "palaeogeo_unit_reported": "Old Red Sandstone continent (Euramerica)",
+      "palaeo_unit_proposed": "Laurentia",
+      "age_as_reported": "coeval deposits",
+      "age_basis": "unstated",
+      "age_basis_detail": "Described as coeval with Rhynie; no separate age determination is supplied for the comparison samples.",
+      "age_circular": false,
+      "stage_min_proposed": "Pragian",
+      "stage_max_proposed": "Emsian",
+      "setting_as_reported": "mixed marine/non-marine floodplain deposits",
+      "setting_class": "marginal-marine",
+      "n_samples": "28",
+      "reworking_status": "none",
+      "notes": "Regional pooled comparison list from McGregor (1973), Lower and Middle Devonian spores of eastern Gaspé, Canada. I. Systematics, and McGregor (1977), Lower and middle devonian spores of eastern Gaspé, Canada. II. biostratigraphy. Table 2 reports 38 common distinctive taxa. The species list is in inaccessible supplementary table S1; occurrences are therefore incomplete. Stage mapping follows the stated coeval relationship to Rhynie; the wider age ranges in the cited paper titles were not assigned to these selected samples. Whether original dating was circular is unstated. Reworking is not discussed.",
+      "locator": "Section 4(a–c), pp. 6–7; tables 2–3; supplementary table S1",
+      "occurrences": []
+    },
+    {
+      "assemblage_id": "Wellman2017_ArdenneRhenish",
+      "scope": "composite",
+      "locality": "Ardenne-Rhenish region",
+      "country": "",
+      "formation": "",
+      "section_or_core": "",
+      "depth_or_level": "",
+      "latitude": "",
+      "longitude": "",
+      "palaeogeo_unit_reported": "Old Red Sandstone continent (Euramerica)",
+      "palaeo_unit_proposed": "Avalonia",
+      "age_as_reported": "coeval deposits",
+      "age_basis": "unstated",
+      "age_basis_detail": "Described as coeval with Rhynie; no separate age determination is supplied for the comparison samples.",
+      "age_circular": false,
+      "stage_min_proposed": "Pragian",
+      "stage_max_proposed": "Emsian",
+      "setting_as_reported": "nearshore marine deposits",
+      "setting_class": "marine-shelf",
+      "n_samples": "75",
+      "reworking_status": "none",
+      "notes": "Regional pooled comparison list from Steemans (1989), Etude palynostratigraphique du Dévonien Inferieur dans l’ouest de l’Europe. Table 2 reports 88 common distinctive taxa. The author interprets the high diversity as reflecting contributions from numerous rivers draining inland intermontane and floodplain environments. This is transport into marine deposits, not a claim of stratigraphical reworking. The species list is in inaccessible supplementary table S1; occurrences are therefore incomplete. Stage mapping follows the stated coeval relationship to Rhynie. Whether original dating was circular is unstated.",
+      "locator": "Section 4(a–c), pp. 6–7; tables 2–3; supplementary table S1",
+      "occurrences": []
+    }
+  ]
+}

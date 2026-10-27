@@ -1,0 +1,489 @@
+{
+  "doc": {
+    "doi": "10.1080/11035897.2012.683451",
+    "citation": "Mehlqvist, K., Vajda, V. & Steemans, P. (2012). Early land plant spore assemblages from the Late Silurian of Skåne, Sweden. GFF 134(2), 133–144.",
+    "language": "English",
+    "reports_window_spores": true,
+    "comment": "The supplied local text and PDF contain only the first page of a proof. Extraction was supplemented using the [complete published-article transcription uploaded by an author](https://www.researchgate.net/publication/233859796_Early_land_plant_spore_assemblages_from_the_Late_Silurian_of_Skane_Sweden). Records represent the two reported core intervals; sample-level extraction remains incomplete because table-cell alignment is lost in that transcription. Taxon strings follow Tables 1–2, including apparent typographical errors; genus fields follow the systematic descriptions. The proof abstract gives Wenlock (probably Homerian) to possibly Přídolí, whereas the published text favours Ludlow to possibly Přídolí. Ages depend on spores. Amicosporites discus is interpreted as probable downcore contamination. Several table/prose discrepancies require checking against a complete PDF."
+  },
+  "items": [
+    {
+      "assemblage_id": "Mehlqvist2012_Klinta1",
+      "scope": "section-interval",
+      "locality": "Klinta, Skåne",
+      "country": "Sweden",
+      "formation": "Öved-Ramsåsa Group; Klinta Formation and Öved Sandstone Formation",
+      "section_or_core": "Klinta 1",
+      "depth_or_level": "205.31–35.90 m",
+      "latitude": "",
+      "longitude": "",
+      "palaeogeo_unit_reported": "Baltica",
+      "palaeo_unit_proposed": "Baltica",
+      "age_as_reported": "Ludlow to Přídolí age",
+      "age_basis": "spore-zone",
+      "age_basis_detail": "The sampled interval possibly represents Ludlow to Přídolí. Artemopyra radiata and Hispanaediscus lamontii in the deepest sample indicate Homerian or younger. Synorisporites tripapillatus at 80.12 m may indicate Přídolí but also occurs in latest Ludlow strata. The regional group was previously assigned Ludfordian into Přídolí using marine fossils.",
+      "age_circular": true,
+      "stage_min_proposed": "Gorstian",
+      "stage_max_proposed": "Pridoli",
+      "setting_as_reported": "nearshore marine environment; contemporaneous deposits at the Klinta locality interpreted as paralic deposits",
+      "setting_class": "marginal-marine",
+      "n_samples": "40 selected; 26 listed in Table 1",
+      "reworking_status": "none",
+      "notes": "Core-interval list from Table 1 and systematic occurrence statements; taxa are not implied to occur at every depth. Omitted samples are not explicitly identified as spore-barren. Assemblages contain marine microfossils but are dominated by terrestrial spores and plant fragments. Gneudnaspora plicata followed by Gneudnaspora divellomedia are numerically dominant across the study. Amicosporites discus at 193.09 m is considered probable downcore contamination rather than evidence of Lochkovian deposition. The systematic account assigns Synorisporites tripapillatus only to Bjärsjölagård 2, but Table 1 and the Klinta biostratigraphic discussion also report it here. Synorisporites cf. libycus has a prose range of 96.02–80.12 m but only one presence mark in the table transcription. The systematic heading qualifies Retusotriletes goensis as cf.; the table does not. Gneudnaspora divellomedia is treated more fully as Gneudnaspora (Laevolancis) divellomedia var. divellomedia in the systematic section. The oldest sample has only a Homerian-or-younger minimum constraint, despite the favoured Ludlow–Přídolí interval assignment.",
+      "locator": "Table 1, p. 135; Systematic paleontology, pp. 134–142; Biostratigraphic significance: Klinta 1, p. 142; Figs 1–6",
+      "occurrences": [
+        {
+          "taxon_as_reported": "Ambitisporites avitus",
+          "genus": "Ambitisporites",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Table 1; Fig. 4C,D"
+        },
+        {
+          "taxon_as_reported": "Ambititsporites dilutus",
+          "genus": "Ambitisporites",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Table 1; Fig. 4E"
+        },
+        {
+          "taxon_as_reported": "Ambitisporites parvus",
+          "genus": "Ambitisporites",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Table 1; Fig. 4F"
+        },
+        {
+          "taxon_as_reported": "Amicosporites discus",
+          "genus": "Amicosporites",
+          "qualifier": "",
+          "abundance": "one specimen",
+          "illustrated": true,
+          "locator": "Table 1; Systematic paleontology, pp. 139–140, 193.09 m; Fig. 4G; contamination discussion, p. 142"
+        },
+        {
+          "taxon_as_reported": "Apiculuretusispora ? burgsvikensis",
+          "genus": "Apiculiretusispora",
+          "qualifier": "?",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Table 1; Fig. 4H"
+        },
+        {
+          "taxon_as_reported": "Archeozonotriletes chulus morphon",
+          "genus": "Archaeozonotriletes",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Table 1; Fig. 4K"
+        },
+        {
+          "taxon_as_reported": "Artemopyra radiata",
+          "genus": "Artemopyra",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Table 1; Fig. 3A"
+        },
+        {
+          "taxon_as_reported": "Cheilotetras caledonica",
+          "genus": "Cheilotetras",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Table 1; Fig. 3C"
+        },
+        {
+          "taxon_as_reported": "Chelinosporites hemiesferica",
+          "genus": "Chelinospora",
+          "qualifier": "",
+          "abundance": "one specimen",
+          "illustrated": true,
+          "locator": "Table 1; Systematic paleontology, p. 140, 193.09 m; Fig. 4L"
+        },
+        {
+          "taxon_as_reported": "Cymbohilates sp. A",
+          "genus": "Cymbohilates",
+          "qualifier": "sp.",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Table 1; Systematic paleontology, p. 136, 143.33–103.58 m; Fig. 3D"
+        },
+        {
+          "taxon_as_reported": "Cymbohilates sp. B",
+          "genus": "Cymbohilates",
+          "qualifier": "sp.",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Table 1; Systematic paleontology, p. 136, 101.95–100.45 m; Fig. 3E"
+        },
+        {
+          "taxon_as_reported": "Dictyotriletes sp.",
+          "genus": "Dictyotriletes",
+          "qualifier": "sp.",
+          "abundance": "one specimen",
+          "illustrated": true,
+          "locator": "Table 1; Systematic paleontology, p. 140, 178.24 m; Fig. 4M"
+        },
+        {
+          "taxon_as_reported": "Dyadospora murusdensa",
+          "genus": "Dyadospora",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Table 1; Fig. 3G"
+        },
+        {
+          "taxon_as_reported": "Dyadospora murusattenuata",
+          "genus": "Dyadospora",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Table 1; Fig. 3F"
+        },
+        {
+          "taxon_as_reported": "Emphanisporites neglectus",
+          "genus": "Emphanisporites",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Table 1; Systematic paleontology, p. 140, 151.76 m; Fig. 4N"
+        },
+        {
+          "taxon_as_reported": "Gneudnaspora divellomedia",
+          "genus": "Gneudnaspora",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Table 1; Fig. 3H"
+        },
+        {
+          "taxon_as_reported": "Gneudnaspora plicata",
+          "genus": "Gneudnaspora",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Table 1; Fig. 3I"
+        },
+        {
+          "taxon_as_reported": "Hispanediscus verrucatus",
+          "genus": "Hispanaediscus",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Table 1; Systematic paleontology, p. 139, 103.58–61.62 m; Fig. 3J,K"
+        },
+        {
+          "taxon_as_reported": "Hispanaediscus lamontii",
+          "genus": "Hispanaediscus",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Table 1; Systematic paleontology, p. 139, 205.31 m; Fig. 3L"
+        },
+        {
+          "taxon_as_reported": "Imperfectotriletes vavrdovae",
+          "genus": "Imperfectotriletes",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Table 1; Fig. 3N"
+        },
+        {
+          "taxon_as_reported": "Rimosotetras problematica",
+          "genus": "Rimosotetras",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Table 1; Systematic paleontology, p. 139, 40.03–35.90 m; Fig. 3O"
+        },
+        {
+          "taxon_as_reported": "Retusotriletes goensis",
+          "genus": "Retusotriletes",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Table 1; Systematic paleontology, p. 140, 103.58–61.62 m; Fig. 5A"
+        },
+        {
+          "taxon_as_reported": "Retusotriletes cf. warringtonii",
+          "genus": "Retusotriletes",
+          "qualifier": "cf.",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Table 1; Fig. 5B"
+        },
+        {
+          "taxon_as_reported": "Scylaspora scripta",
+          "genus": "Scylaspora",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Table 1; Systematic paleontology, p. 141, 178.24 m; Fig. 5F,G"
+        },
+        {
+          "taxon_as_reported": "Synorisporites cf. libycus",
+          "genus": "Synorisporites",
+          "qualifier": "cf.",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Table 1; Systematic paleontology, p. 141, 96.02–80.12 m; Fig. 5C"
+        },
+        {
+          "taxon_as_reported": "Synorisporites tripapillatus",
+          "genus": "Synorisporites",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Table 1; Biostratigraphic significance: Klinta 1, p. 142, 80.12 m; Fig. 5D"
+        },
+        {
+          "taxon_as_reported": "Synorisporites verrucatus",
+          "genus": "Synorisporites",
+          "qualifier": "",
+          "abundance": "two specimens",
+          "illustrated": true,
+          "locator": "Table 1; Systematic paleontology, p. 141, 178.24 m; Fig. 5E"
+        },
+        {
+          "taxon_as_reported": "Scylaspora klintensis sp nov.",
+          "genus": "Scylaspora",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Table 1; Systematic paleontology, pp. 141–142, samples 21 (112.28 m) and 40 (35.9 m); Fig. 6A–F"
+        },
+        {
+          "taxon_as_reported": "Tetrahedraletes grayii",
+          "genus": "Tetrahedraletes",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Table 1; Systematic paleontology, p. 139, 205.31–61.62 m; Fig. 4B"
+        },
+        {
+          "taxon_as_reported": "Tetrahedraletes medinensis",
+          "genus": "Tetrahedraletes",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Systematic paleontology, p. 139, 205.31–35.90 m; Fig. 4A"
+        }
+      ]
+    },
+    {
+      "assemblage_id": "Mehlqvist2012_Bjarsjolagard2",
+      "scope": "section-interval",
+      "locality": "Bjärsjölagård, Skåne",
+      "country": "Sweden",
+      "formation": "Öved-Ramsåsa Group; Klinta Formation and Öved Sandstone Formation",
+      "section_or_core": "Bjärsjölagård 2",
+      "depth_or_level": "69.65–2.00 m",
+      "latitude": "",
+      "longitude": "",
+      "palaeogeo_unit_reported": "Baltica",
+      "palaeo_unit_proposed": "Baltica",
+      "age_as_reported": "late Silurian (Ludlow to possibly Přídolí) age",
+      "age_basis": "spore-zone",
+      "age_basis_detail": "Emphanisporites neglectus is used to infer late Ludlow for the basal part, described as 72–25 m. Synorisporites tripapillatus in samples 25.30 and 2.00 m indicates latest Ludlow or possibly Přídolí. The regional group was previously assigned Ludfordian into Přídolí using marine fossils.",
+      "age_circular": true,
+      "stage_min_proposed": "Gorstian",
+      "stage_max_proposed": "Pridoli",
+      "setting_as_reported": "nearshore marine environment; mudstone, in places tidally influenced, with subordinate shallow-marine limestone and argillaceous limestone",
+      "setting_class": "marine-shelf",
+      "n_samples": "20 selected; 15 listed in Table 2",
+      "reworking_status": "none",
+      "notes": "Core-interval list from Table 2 and systematic occurrence statements; taxa are not implied to occur at every depth. Omitted samples are not explicitly identified as spore-barren. Marine microfossils occur, but terrestrial spores and plant fragments dominate. Gneudnaspora plicata followed by Gneudnaspora divellomedia are numerically dominant across the study. Table 2 shows two occurrences of Apiculiretusispora sp. A, whereas the systematic account gives only 4.73 m and one measured specimen. Table 2 shows three occurrences of Rimosotetras problematica, whereas the systematic account gives only 20.34 m. The systematic heading qualifies Retusotriletes goensis as cf.; the table does not. Gneudnaspora divellomedia is treated more fully as Gneudnaspora (Laevolancis) divellomedia var. divellomedia in the systematic section. The broad stage mapping follows the stated Ludlow–possibly Přídolí interval; the basal assemblages are more specifically interpreted as late Ludlow.",
+      "locator": "Table 2, p. 136; Systematic paleontology, pp. 136–141; Biostratigraphic significance: Bjärsjölagård 2, p. 143; Figs 1–5",
+      "occurrences": [
+        {
+          "taxon_as_reported": "Ambitisporites avitus",
+          "genus": "Ambitisporites",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Table 2; Fig. 4C,D"
+        },
+        {
+          "taxon_as_reported": "Ambititsporites dilutus",
+          "genus": "Ambitisporites",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Table 2; Fig. 4E"
+        },
+        {
+          "taxon_as_reported": "Ambitisporites parvus",
+          "genus": "Ambitisporites",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Table 2; Fig. 4F"
+        },
+        {
+          "taxon_as_reported": "Apiculuretusispora ? burgsvikensis",
+          "genus": "Apiculiretusispora",
+          "qualifier": "?",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Table 2; Fig. 4H"
+        },
+        {
+          "taxon_as_reported": "Apiculiretusispora sp. A",
+          "genus": "Apiculiretusispora",
+          "qualifier": "sp.",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Table 2; Systematic paleontology, p. 140, 4.73 m; Fig. 4I"
+        },
+        {
+          "taxon_as_reported": "Apiculiretusispora sp. B",
+          "genus": "Apiculiretusispora",
+          "qualifier": "sp.",
+          "abundance": "one specimen",
+          "illustrated": true,
+          "locator": "Table 2; Systematic paleontology, p. 140, 57.94 m; Fig. 4J"
+        },
+        {
+          "taxon_as_reported": "Artemopyra rugaticosta",
+          "genus": "Artemopyra",
+          "qualifier": "",
+          "abundance": "one specimen",
+          "illustrated": true,
+          "locator": "Table 2; Systematic paleontology, p. 136, 60.72 m; Fig. 3B"
+        },
+        {
+          "taxon_as_reported": "Cymbohilates sp. A",
+          "genus": "Cymbohilates",
+          "qualifier": "sp.",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Table 2; Systematic paleontology, p. 136, 57.94–52.93 m; Fig. 3D"
+        },
+        {
+          "taxon_as_reported": "Cymbohilates sp. B",
+          "genus": "Cymbohilates",
+          "qualifier": "sp.",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Table 2; Systematic paleontology, p. 136, 57.94–10.03 m; Fig. 3E"
+        },
+        {
+          "taxon_as_reported": "Dyadospora murusdensa",
+          "genus": "Dyadospora",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Table 2; Fig. 3G"
+        },
+        {
+          "taxon_as_reported": "Dyadospora murusattenuata",
+          "genus": "Dyadospora",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Table 2; Fig. 3F"
+        },
+        {
+          "taxon_as_reported": "Emphanisporites neglectus",
+          "genus": "Emphanisporites",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Table 2; Systematic paleontology, p. 140, 69.65–10.03 m; Fig. 4N"
+        },
+        {
+          "taxon_as_reported": "Gneudnaspora divellomedia",
+          "genus": "Gneudnaspora",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Table 2; Fig. 3H"
+        },
+        {
+          "taxon_as_reported": "Gneudnaspora plicata",
+          "genus": "Gneudnaspora",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Table 2; Fig. 3I"
+        },
+        {
+          "taxon_as_reported": "Hispanaediscus major",
+          "genus": "Hispanaediscus",
+          "qualifier": "",
+          "abundance": "one specimen",
+          "illustrated": true,
+          "locator": "Table 2; Systematic paleontology, p. 139, 4.73 m; Fig. 3M"
+        },
+        {
+          "taxon_as_reported": "Hispanediscus verrucatus",
+          "genus": "Hispanaediscus",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Table 2; Systematic paleontology, p. 139, 31.9–4.73 m; Fig. 3J,K"
+        },
+        {
+          "taxon_as_reported": "Hispanaediscus lamontii",
+          "genus": "Hispanaediscus",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Table 2; Systematic paleontology, p. 139, 10.03 m; Fig. 3L"
+        },
+        {
+          "taxon_as_reported": "Rimosotetras problematica",
+          "genus": "Rimosotetras",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Table 2; Systematic paleontology, p. 139, 20.34 m; Fig. 3O"
+        },
+        {
+          "taxon_as_reported": "Retusotriletes goensis",
+          "genus": "Retusotriletes",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Table 2; Systematic paleontology, p. 140, 69.65–4.73 m; Fig. 5A"
+        },
+        {
+          "taxon_as_reported": "Scylaspora scripta",
+          "genus": "Scylaspora",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Table 2; Systematic paleontology, p. 141, 69.65 m; Fig. 5F,G"
+        },
+        {
+          "taxon_as_reported": "Synorisporites tripapillatus",
+          "genus": "Synorisporites",
+          "qualifier": "",
+          "abundance": "two specimens",
+          "illustrated": true,
+          "locator": "Table 2; Systematic paleontology, p. 141; Biostratigraphic significance, p. 143, samples 25.30 and 2.00 m; Fig. 5D"
+        },
+        {
+          "taxon_as_reported": "Tetrahedraletes grayii",
+          "genus": "Tetrahedraletes",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Table 2; Systematic paleontology, p. 139, 23.11–20.34 m; Fig. 4B"
+        },
+        {
+          "taxon_as_reported": "Tetrahedraletes medinensis",
+          "genus": "Tetrahedraletes",
+          "qualifier": "",
+          "abundance": "present",
+          "illustrated": true,
+          "locator": "Table 2; Fig. 4A"
+        }
+      ]
+    }
+  ]
+}

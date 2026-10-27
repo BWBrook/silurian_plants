@@ -15,6 +15,18 @@ crosswalks, and `uv run tools/spores.py inputs` regenerates the work lists they 
   in 2006.
 - **Wellman, Steemans & Vecoli 2013**, supplement (CC BY 4.0): 144 curated Ordovician–Silurian
   assemblages, 1,430 taxon records, digitised into `sources/`.
+- **Post-2006 literature (MVD-B, first pass):** 31 open full texts from the EPRP harvest, extracted
+  by Codex `gpt-6.1-sol` (one job per paper; `work/codex/mvdb/`) into `sources/mvdb_*.csv`: 335
+  assemblages and 2,253 taxon records.
+  - Each record is checked against its paper's text (`verified_in_text`); 97% verify, and
+    unverified records are not usable.
+  - Six held "texts" proved to be abstracts or landing pages (under 1,500 words), and Codex had
+    invented taxa for them. They are dropped (`sources/mvdb_dropped_papers.csv`) and listed in
+    `docs/closed-literature.csv`.
+  - Most priority post-2006 papers, including Rubinstein et al. (2010), are closed and wait on
+    Barry's institutional downloads.
+  - Ages and units for this layer are Codex's proposals from the papers' stated ages;
+    circularly dated or unstated ages are set to low confidence.
 
 ## Outputs
 
