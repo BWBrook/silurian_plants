@@ -11,7 +11,7 @@ lineage: >-
 placement_confidence: medium
 range:
   first: Ludfordian
-  last: Givetian
+  last: Frasnian
   notes: >-
     First = late Ludlow (Ludfordian) Bathurst Island, Nunavut, dated by conodonts, graptolites and brachiopods
     (Kotyk et al. 2002); Macivera, a Ludfordian taxon, anchors the base of the large clade in Claisse et al. (2025).
@@ -112,7 +112,7 @@ Zosterophylls were rooted herbs of wet floodplains, probably clonal (H- and K-br
 
 ## Why it matters for modelling
 
-- **Size spread.** Whole plants 4.5-12 cm; preserved axes to 44 cm; axes 0.3-12 mm. Preserved axis length averages 74, 120 and 87 mm in the Lochkovian, Pragian and Emsian (Huang et al. 2025).
+- **Size spread.** Whole plants 4.5-12 cm; preserved axes to 44 cm; axes 0.3-12 mm. Preserved axis length of Zosterophyllum species (not all zosterophylls) averages 74, 120 and 87 mm in the Lochkovian, Pragian and Emsian (Huang et al. 2025).
 - **Reproductive allocation.** Sporangial volume per spike runs 1-864 mm3 across zosterophyllopsids and scales with axis width (Huang et al. 2025, assuming 0.6 mm sporangial thickness).
 - **Belowground.** Root:shoot 0.028 from the single whole-plant specimen; rooting-axis function unproven.
 - **Time series.** Cladogenesis is front-loaded (Gorstian to Lochkovian), species richness peaks in the Pragian and collapses by the Eifelian, so a model should reproduce a radiation, a plateau and a decline, with lycopsids and basal euphyllophytes as the proposed replacements (Cascales-Miñana and Meyer-Berthaud 2015).

@@ -17,7 +17,7 @@ Ordered by first appearance, extant comparison taxa last. Ages are ICS v2024/12 
 | [Bathurst Island late Ludlow flora](bathurst-island-flora.md) | zosterophyll | Ludfordian (425 Ma) | Pridoli | assemblage | medium | draft |
 | [Nematothallus](nematothallus.md) | nematophyte | Ludfordian (425 Ma) | Lochkovian | mesofossil | low | draft |
 | [Welsh Borderland charcoalified mesofossil assemblages](welsh-borderland-mesofossils.md) | incertae-sedis | Ludfordian (425 Ma) | Lochkovian | assemblage | medium | draft |
-| [Zosterophylls (Zosterophyllopsida)](zosterophylls.md) | zosterophyll | Ludfordian (425 Ma) | Givetian | group | medium | draft |
+| [Zosterophylls (Zosterophyllopsida)](zosterophylls.md) | zosterophyll | Ludfordian (425 Ma) | Frasnian | group | medium | draft |
 | [Zosterophyllum](zosterophyllum.md) | zosterophyll | Ludfordian (425 Ma) | Emsian | megafossil | medium | draft |
 | [Aberlemnia caledonica](aberlemnia-caledonica.md) | rhyniophytoid | Pridoli (422.7 Ma) | Lochkovian | megafossil | low | draft |
 | [Baragwanathia brevifolioides](baragwanathia-brevifolioides.md) | lycopsid | Pridoli (422.7 Ma) | Pridoli | megafossil | low | draft |

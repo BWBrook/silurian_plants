@@ -37,7 +37,7 @@ traits:
   height_cm:
     min: 1100
     max: 3150
-    note: "Not measured. Regression estimates for 18 Archaeopteris-type trees at Cairo, from root or trunk-base diameter through a conifer power law H = 3.21 DBH^0.6 calibrated on Araucaria: 11.2-31.5 m across three estimators (Table S1 of Stein et al. 2020, which calls them approximations that illustrate the approach). Independently, trunk base and large axes at Waterloo Farm are 'inferred to be in excess of 20 m' (Gess & Berry 2024, abstract only)."
+    note: "Not measured. Regression estimates for 18 Archaeopteris-type trees at Cairo, from root or trunk-base diameter through a generic conifer height power law H = 3.21 DBH^0.6 (Araucaria is used only to convert root diameter to DBH): 11.2-31.5 m across three estimators (Table S1 of Stein et al. 2020, which calls them approximations that illustrate the approach). Independently, trunk base and large axes at Waterloo Farm are 'inferred to be in excess of 20 m' (Gess & Berry 2024, abstract only)."
   axis_diameter_mm:
     min: 80
     max: 450
@@ -58,6 +58,8 @@ habitat: >-
 status: draft
 updated: 2026-10-27
 references:
+  - cite: "Glasspool IJ, Edwards D, Axe L (2004). Charcoal in the Silurian as evidence for the earliest wildfire. Geology 32: 381-383."
+    doi: 10.1130/g20363.1
   - cite: "Stein WE, Berry CM, Morris JL, Hernick LV, Mannolini F, Ver Straeten C, Landing E, Marshall JEA, Wellman CH, Beerling DJ, Leake JR (2020). Mid-Devonian Archaeopteris roots signal revolutionary change in earliest fossil forests. Current Biology 30: 421-431."
     doi: 10.1016/j.cub.2019.11.067
   - cite: "Meyer-Berthaud B, Scheckler SE, Wendt J (1999). Archaeopteris is the earliest known modern tree. Nature 398: 700-701."
@@ -122,7 +124,7 @@ Lignophyte placement is secure and a relationship to seed plants is likely (Stei
 
 ## Ecology and physiology
 
-The Cairo vertisol records seasonal wetting and drying; Stein et al. infer that a stable soil was needed for tree size and dominance, and read the roots as probably perennial structural roots plus ephemeral feeder rootlets, as in modern woody trees. Famennian Catskill charcoal sits beside abundant Archaeopteris, but mostly Rhacophyton burned (Cressler 2001; then called the oldest charcoal, now preceded by Lochkovian charcoalified plants). A. roemeriana sporangia average 1.94 mm by 0.62 mm, 39 on the one fertile leaf counted in full; microspores are under 70 um, megaspores 110-403 um (Fairon-Demaret et al. 2001). Gametophytes are unknown.
+The Cairo vertisol records seasonal wetting and drying; Stein et al. infer that a stable soil was needed for tree size and dominance, and read the roots as probably perennial structural roots plus ephemeral feeder rootlets, as in modern woody trees. Famennian Catskill charcoal sits beside abundant Archaeopteris, but mostly Rhacophyton burned (Cressler 2001; then called the oldest charcoal, but charcoal is now known from the Silurian, Glasspool et al. 2004). A. roemeriana sporangia average 1.94 mm by 0.62 mm, 39 on the one fertile leaf counted in full; microspores are under 70 um, megaspores 110-403 um (Fairon-Demaret et al. 2001). Gametophytes are unknown.
 
 ## Why it matters for modelling
 
