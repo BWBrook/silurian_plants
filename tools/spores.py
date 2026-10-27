@@ -95,24 +95,34 @@ def cmd_mvdb():
     papers = {r["openalex_id"]: r for r in csv.DictReader(open(WORK / "codex" / "mvdb" / "papers.csv"))}
     fulltext = {r["openalex_id"]: r.get("fulltext_check", "") for r in
                 csv.DictReader(open(ROOT / "data" / "external" / "library" / "fetch_results.tsv"), delimiter="\t")}
+    # Full texts obtained here when the harvest held only an abstract (library/open.tsv)
+    opened = {r["openalex_id"]: ROOT / "library" / "open" / r["text_file"] for r in
+              csv.DictReader(open(ROOT / "library" / "open.tsv"), delimiter="\t")}
+    fixes = read_xw("mvdb_corrections.csv") or []
     asm_rows, taxa_rows, dropped = [], [], []
-    squash = lambda x: re.sub(r"[\s\-\u2010-\u2014]+", "", re.sub(r"-\s*\n\s*", "", x)).lower()
+    squash = lambda x: re.sub(r"[\s\-\u2010-\u2014\u2212]+", "", x).lower()
     for path in sorted(out_dir.glob("*_sol.json")):
         pid = path.name.split("_")[0]
         doc = json.loads(path.read_text())
-        text = Path(ROOT / papers[pid]["text"]).read_text(encoding="utf-8", errors="replace") if pid in papers else ""
-        check = fulltext.get(pid, "")
+        src = opened.get(pid) or (ROOT / papers[pid]["text"] if pid in papers else None)
+        text = src.read_text(encoding="utf-8", errors="replace") if src else ""
+        check = "ok" if pid in opened else fulltext.get(pid, "")
         if check in ("short_under_1500", "no_text") and pid not in KEEP_SHORT or not text:
             dropped.append((pid, len(text.split())))
             continue
         t = squash(text)
         for k, a in enumerate(doc["items"], 1):
             aid = f"{pid}-A{k:03d}"
+            fix = [f for f in fixes if f["assemblage_id"] == aid]
+            removed = {f["taxon_as_reported"] for f in fix if f["action"] == "remove"}
+            occs = [o for o in a["occurrences"] if o["taxon_as_reported"] not in removed]
+            occs += [{"taxon_as_reported": f["taxon_as_reported"], "genus": f["genus"], "qualifier": "", "abundance": "present",
+                      "locator": f["locator"]} for f in fix if f["action"] == "add"]
             asm_rows.append([aid, pid, papers.get(pid, {}).get("doi", ""), doc["doc"]["citation"], a["scope"], a["locality"],
                              a["country"], a["formation"], a["section_or_core"], a["palaeogeo_unit_reported"], a["palaeo_unit_proposed"],
                              a["age_as_reported"], a["age_basis"], a["age_circular"], a["stage_min_proposed"], a["stage_max_proposed"],
-                             a["setting_class"], a["reworking_status"], len(a["occurrences"]), a["locator"], a["notes"]])
-            for o in a["occurrences"]:
+                             a["setting_class"], a["reworking_status"], len(occs), a["locator"], a["notes"]])
+            for o in occs:
                 g = o["genus"].strip()
                 words = [w for w in re.findall(r"[a-z][a-z-]{2,}", o["taxon_as_reported"].lower()) if w != g.lower()]
                 ep = words[-1] if words and words[-1] not in ("sp", "spp", "indet", "morphon") else ""

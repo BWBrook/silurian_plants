@@ -27,7 +27,7 @@ filters, licences and caveats; read it before use. Raw pulls are on `deep-server
 | Palynodata 2006 | 76,351 window rows (14,114 spore, 41,483 acritarch, 17,018 chitinozoan) from 2,511 documents; literature to 2006, 2006-era ages, no coordinates | held | `data/external/spores/` | OGL-Canada |
 | Wellman, Steemans & Vecoli 2013 supplement | Ordovician–Silurian spore assemblages (abridged PDF) | held | `data/external/spores/` | CC BY 4.0; full database on request (Barry's decision) |
 | Project spore dataset (MVD-A) | occurrences, vetted first appearances and stage presence from Palynodata plus Wellman 2013 | held | `data/spores/` | derived; see its README |
-| Post-2006 spore literature | 182 priority papers; 31 open full texts extracted (335 assemblages, 97% of records verified in text); the rest closed | partly held | `data/spores/sources/mvdb_*.csv` | the remainder waits on Barry's downloads (`docs/closed-literature.csv`, priority 1) |
+| Post-2006 spore literature | 182 priority papers; 33 open full texts extracted (370 assemblages, 97% of records verified in text; two texts fetched into `library/open/`); the rest closed | partly held | `data/spores/sources/mvdb_*.csv` | the remainder waits on Barry's downloads (`docs/closed-literature.csv`, priority 1) |
 | GBDB (Zenodo 2020) | 410 core window plant records (131 genera, mostly China), 3,217 window sections; GTS2012 ages | held | `data/external/gbdb/` | CC BY 4.0 |
 | Diversity compilations | Xiong 2013, Silvestro 2015, Capel 2025 mirrored; Capel 2021, 2022, Cascales-Miñana 2016, Ball 2022 local; Capel 2023 limited | mixed | `data/external/deposits/` | per deposit |
 | Fossil Record 2 plant families | Harland 1990 ages | local | `data/eprp/local/record/` | none stated |

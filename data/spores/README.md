@@ -15,15 +15,21 @@ crosswalks, and `uv run tools/spores.py inputs` regenerates the work lists they 
   in 2006.
 - **Wellman, Steemans & Vecoli 2013**, supplement (CC BY 4.0): 144 curated Ordovician–Silurian
   assemblages, 1,430 taxon records, digitised into `sources/`.
-- **Post-2006 literature (MVD-B, first pass):** 31 open full texts from the EPRP harvest, extracted
-  by Codex `gpt-6.1-sol` (one job per paper; `work/codex/mvdb/`) into `sources/mvdb_*.csv`: 335
-  assemblages and 2,253 taxon records.
+- **Post-2006 literature (MVD-B, first pass):** 33 open full texts, extracted by Codex
+  `gpt-6.1-sol` (one job per paper; `work/codex/mvdb/`) into `sources/mvdb_*.csv`: 370 assemblages
+  and 2,536 taxon records.
+  - 31 texts come from the EPRP harvest. Two more (Filipiak et al. 2012; García Muro et al. 2018,
+    with its supplement) were fetched from the publisher into git-ignored `library/open/`, and
+    `library/open.tsv` lists their URLs and hashes.
   - Each record is checked against its paper's text (`verified_in_text`); 97% verify, and
     unverified records are not usable.
-  - Six held "texts" proved to be abstracts or a proof's first page (under 1,500 words). For
-    three of them Sol took its records from the full articles, which it found online, so they
-    cannot be checked against held text. All six are dropped
-    (`sources/mvdb_dropped_papers.csv`); the three full papers are in `docs/closed-literature.csv`.
+  - Six held "texts" proved to be abstracts or a proof's first page (under 1,500 words). For three,
+    Sol took its records from the full articles, which it found online. Two of those articles are
+    now held and their records restored. Four papers stay dropped
+    (`sources/mvdb_dropped_papers.csv`); Mehlqvist et al. (2012) is in `docs/closed-literature.csv`.
+  - Sample-level assignments were checked by eye in two tables (Podolia Table 1 and Precordillera
+    SOM 3). Of Sol's 114 records there, one was false and one was missing; both are corrected in
+    `crosswalks/mvdb_corrections.csv`.
   - Most priority post-2006 papers, including Rubinstein et al. (2010), are closed and wait on
     Barry's institutional downloads.
   - Ages and units for this layer are Codex's proposals from the papers' stated ages;
@@ -54,6 +60,7 @@ crosswalks, and `uv run tools/spores.py inputs` regenerates the work lists they 
 | `spore_genera.csv` | 717 genera and labels to spore classes | 80 genera by pilot consensus (Codex `gpt-6.1-sol` and Claude Sonnet 5.5, 47/47 agreement on confident calls); 637 by Codex `gpt-6.1-sol`; informal type labels reclassified by Claude Opus 5.5 |
 | `wellman_series.csv`, `wellman_regions.csv` | Wellman et al.'s series headings and regional labels | Claude Opus 5.5, consistent with `age_names.csv` |
 | `exclusions.csv` | Documents excluded as entry errors | as listed |
+| `mvdb_corrections.csv` | Records removed from or added to Codex extractions after a check against the source table | Claude Opus 5.5, each with its basis |
 
 The pilot is recorded in `docs/audits/2026-10-27-codex-pilot.md`.
 

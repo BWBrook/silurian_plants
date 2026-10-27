@@ -48,6 +48,28 @@ abbreviated in tables, column layouts, dash variants. A record is now `verified_
 name, or its genus plus epithet, appears in the paper's text, and unverified records are not
 usable. After dropping the six papers, 2,191 of 2,253 records (97%) verify.
 
+## Recheck against the full articles (2026-10-27, at Barry's request)
+
+Claude Opus 5.5 fetched the two open-access articles Sol had used, and the supplement of one,
+from the publisher (`library/open.tsv`), then checked Sol's records against them.
+- **Name level** (by script, as in the build): 79 of 79 records verify for Filipiak et al. (2012)
+  and 201 of 204 for García Muro et al. (2018). The three misses are *Retusotriletes* cf.
+  *maccullochii*, which the paper prints as "maccullockii": Sol corrected the spelling in a field
+  meant to be verbatim.
+- **Sample level** (by eye, at 200–300 dpi): these assignments exist only in tables and charts,
+  so the name check cannot test them.
+  - The Precordillera SOM 3 chart (four samples) matches all 43 of Sol's records.
+  - In the Podolia Table 1 (nine samples), 70 of Sol's 71 records are right. Sol placed
+    *Archaeozonotriletes chulus* in sample IZ-8, where the table has no entry, and omitted
+    *Emphanisporites* sp. from IZ-4.
+  - Both errors are corrected in `data/spores/crosswalks/mvdb_corrections.csv`, and the corrected
+    records match a script transcription of the table.
+  - SOM 1 and SOM 2 (158 records) were not checked by eye.
+
+The rebuild restores 283 records, 280 of them verified and 257 usable. No first-appearance age
+changes. Source counts rise for Gondwana-South-America (Precordillera, on the accreted Cuyania
+terrane) and Baltica (Podolia).
+
 ## Lessons
 
 - **Check that the input is the real thing.** The harvest held abstracts as full texts.
@@ -55,6 +77,7 @@ usable. After dropping the six papers, 2,191 of 2,253 records (97%) verify.
   article it found online. State the permitted sources in the prompt, ask for the source of each
   record, and read the job's comments before diagnosing a failure.
 - **Verify every record against its source text by script.** It costs nothing, and it flags
-  every record whose source is not held.
+  every record whose source is not held. It tests names, not sample assignments. In the two
+  tables checked by eye, 1 of 114 assignments was false and one record was missing.
 - **Choose models per task by pilot.** Sol was better for extraction that needs judgement about
   samples and ages; Terra was adequate for flat digitisation.

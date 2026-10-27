@@ -1,0 +1,3 @@
+assemblage_id,action,taxon_as_reported,genus,locator,basis
+W2161939239-A008,remove,Archaeozonotriletes chulus,Archaeozonotriletes,"Table 1, p. 866","Table 1 has no entry for A. chulus in sample IZ-8 (it has IZ-7); checked at 300 dpi by Claude Opus 5.5, 2026-10-27"
+W2161939239-A004,add,Emphanisporites sp.,Emphanisporites,"Table 1, p. 866","Table 1 has an entry for Emphanisporites sp. in sample IZ-4, omitted by the extraction; checked at 300 dpi by Claude Opus 5.5, 2026-10-27"
