@@ -1,6 +1,0 @@
-workbook	sheet	part	non_empty_rows	width_columns	csv
-GBDB_all sections.xlsx	Sheet1	xl/worksheets/sheet1.xml	764545	72	GBDB_all_sections__Sheet1.csv
-GBDB_fossils.xlsx	T_Fossil	xl/worksheets/sheet1.xml	422949	19	GBDB_fossils__T_Fossil.csv
-GBDB_fossils.xlsx	Sheet1	xl/worksheets/sheet2.xml	0	0	
-GBDB_fossils.xlsx	Sheet2	xl/worksheets/sheet3.xml	0	0	
-GBDB_fossils.xlsx	Sheet3	xl/worksheets/sheet4.xml	0	0	
