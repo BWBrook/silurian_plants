@@ -31,7 +31,7 @@ localities:
   - Central Kazakhstan (H. parvula Yurina 1969, as listed in the PBDB; not read)
 preservation: [compression, cast]
 traits:
-  height_cm: {min: null, max: null, note: "No whole-plant height. Y. (=Hedeia) corymbosa is known from fructifications on short lengths of axis; the largest specimen (Eglinton Cutting, see the Yarravia card) is at least 28 cm tall."}
+  height_cm: {min: null, max: null, note: "No whole-plant height. Y. (=Hedeia) corymbosa is known from fructifications on short lengths of axis; the largest Yarravia specimen, NMV P236587 from Eglinton Cutting, is at least 28 cm tall and is referred to Y. oblonga, not to the former H. corymbosa (see the Yarravia card)."}
   axis_diameter_mm: {min: 0.8, max: 3.25, note: "Y. corymbosa 1.5-3.25 mm; Y. sinica 0.8-1.5 mm (Table 2 of McSweeney et al. 2021, as reproduced in McSweeney 2024)."}
   branching: {state: isotomous, note: "Few or no dichotomies below the fructification; the fructification is a secondary branch system with up to three dichotomies and long intervals between them. Hao & Gensel (1998) say Hedeia lacked synchronous dichotomies."}
   leaves: {state: absent, note: "Naked axes."}

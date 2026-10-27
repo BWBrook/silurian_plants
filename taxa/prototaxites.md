@@ -11,18 +11,20 @@ lineage: >-
 placement_confidence: low
 range:
   first: Pridoli
-  last: Givetian
+  last: Famennian
   notes: >-
-    Late Silurian to Late Devonian, c. 420 to 370 Ma (Loron et al. 2026; Berbee et al. 2020: 419-370 Ma). Earliest
-    firm material in this review is charcoalified Pridoli fragments from the Welsh Borderland (Honegger et al.
-    2018). data/timescale.csv ends at the Givetian, so range.last is clamped there; the genus continues into the
-    Late Devonian. A Darriwilian (Middle Ordovician) P. honeggeri from Douglas Dam, Tennessee, is reported by
+    Late Silurian to Late Devonian, c. 420 to 370 Ma (Loron et al. 2026; Berbee et al. 2020: 419-370 Ma). Honegger et al.
+    (2018) give the Ludlow as the genus's start in their introduction; their own charcoalified Prototaxites
+    from the Welsh Borderland is Lochkovian (North Brown Clee Hill), and their Pridoli specimen (Ludford Lane)
+    is a presumed pezizomycete apothecium, not Prototaxites. An early Wenlock P. hicksii from Pen-y-Glog is
+    reported in secondary sources (Cleal & Thomas 1995) but was not confirmed here. range.first follows the
+    c. 420 Ma of the two reviews; range.last is the Famennian. A Darriwilian (Middle Ordovician) P. honeggeri from Douglas Dam, Tennessee, is reported by
     Retallack (2019, 2022); I found no independent confirmation and do not use it. Rhynie P. taiti is Pragian
     (U-Pb 411.5 +/- 1.3 Ma; Parry et al. 2011).
 regions: [Laurentia, Baltica, Avalonia]
 localities:
   - "Rhynie chert, Aberdeenshire, Scotland (Dryden Flags Fm; P. taiti, silicified, Pragian; largest specimen reported 5.6 cm wide)"
-  - "Welsh Borderland, UK (Pridoli and Lochkovian charcoalified fragments; Honegger et al. 2018)"
+  - "Welsh Borderland, UK (Lochkovian charcoalified fragments, North Brown Clee Hill; Honegger et al. 2018)"
   - "Schunnemunk Mountain, New York, USA (Bellvale Sandstone, Givetian, c. 386 Ma; 8.83 m trunk of P. loganii)"
   - "Gaspé, Quebec, Canada (type locality of P. loganii, Early Devonian) and the Bordeaux quarry, Canada (Vajda et al. 2023)"
   - "Heider quarry and other German sites (silicified stems with borings, probably Early Devonian; Laaß et al. 2026)"
@@ -47,6 +49,8 @@ habitat: >-
 status: draft
 updated: 2026-10-26
 references:
+  - cite: "Cleal CJ, Thomas BA (1995). Palaeozoic Palaeobotany of Great Britain. Geological Conservation Review Series 9. Chapman & Hall, London."
+    doi: null
   - cite: "Loron CC, Cooper LM, McMahon S, et al. (2026). Prototaxites fossils are structurally and chemically distinct from extinct and extant Fungi. Science Advances 12: eaec6277."
     doi: 10.1126/sciadv.aec6277
   - cite: "Loron CC, Cooper LM, McMahon S, et al. (2025). Prototaxites was an extinct lineage of multicellular terrestrial eukaryotes. bioRxiv (preprint, v1)."

@@ -36,6 +36,23 @@ Barry exactly (with source) or label a paraphrase.
   unchanged.
 - **Dispersed spores** (Claude): a scoping study (`docs/spore-compilation-plan.md`) runs in
   parallel with EPRP's check of Palynodata, before any compilation starts.
+- **Spore and climate sources found** (EPRP session; reviewed by Claude):
+  - Palynodata (GSC Open File 5793, OGL-Canada), with 14,114 window spore rows from 985
+    documents, extracted as-is into `data/external/spores/`;
+  - HadCM3L land climate (`scotese_02` suite, CC BY 4.0) in `data/external/climate/`.
+
+  Asking Wellman, Steemans and Vecoli for their full 2013 assemblage database is an external
+  contact and therefore Barry's decision.
+- **Tranche-2 card audit** (two independent Sonnet agents, 8 cards, 99 claims): 80 supported,
+  0 wrong, 2 misattributed, 9 imprecise, 9 unverifiable; all fixed
+  (`docs/audits/2026-10-27-tranche2-audit-*.md`). The audit confirmed that *Hedeia* is a junior
+  synonym of *Yarravia* (McSweeney et al. 2021) and that *Pluricaulis biformis* is an unpublished
+  manuscript name. It corrected the *Prototaxites* first-occurrence basis. Both cards stay, with
+  their status stated, because they are the names in older literature and in PBDB.
+- **Process lapses** (Claude, reported to Barry): a card agent sent Barry's email address to
+  Unpaywall's API once; the agent brief now forbids it. A `git add -A` briefly committed the EPRP
+  session's unreviewed files; it was reverted within minutes, and only explicit paths are staged
+  while another session writes in the tree.
 
 ## 2026-10-27: EPRP deposit reviewed and committed
 

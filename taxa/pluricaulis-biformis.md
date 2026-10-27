@@ -16,7 +16,8 @@ range:
     argued Ludlow from graptolites (Gorstian in Rickards 2000). Earp (2024) rejects those graptolite
     identifications and cites the bivalve Neklania, known only from the Early Devonian, at Limestone
     Road, but no notanopliid brachiopod locality is near enough to date the site directly; McSweeney
-    et al. (2022) treat the Yea beds as Early Devonian, Pragian-Emsian. The range is the Early
+    et al. (2021) treat Limestone Road as Early Devonian, and McSweeney et al. (2022) date Ghin Ghin Road
+    as Pragian-Emsian. The range is the Early
     Devonian window these revisions allow, not a measured one. Earp leaves the eastern Yea localities
     undated, so a Pridoli age is not formally excluded; Lochkovian is the conservative first stage.
 regions: [Gondwana]
@@ -75,7 +76,7 @@ Nothing is available to me. I could not obtain Tims's thesis, and no accessible 
 
 ## Age and distribution
 
-One locality: Brackley's Cutting on Limestone Road, 2 km south-east of Yea. It is the Lower Plant Assemblage locality that Garratt (1978) and Garratt & Rickards (1984) argued to be Ludlow, and that Earp (2024) and McSweeney et al. (2022) treat as Early Devonian; see [the Baragwanathia floras](baragwanathia-flora.md). The site is heritage-listed and further collecting is forbidden (McSweeney et al. 2021), so the 1970s collections by Tims and Douglas in Museums Victoria are the only source of material.
+One locality: Brackley's Cutting on Limestone Road, 2 km south-east of Yea. It is the Lower Plant Assemblage locality that Garratt (1978) and Garratt & Rickards (1984) argued to be Ludlow, and that Earp (2024) and McSweeney et al. (2021) treat as Early Devonian; see [the Baragwanathia floras](baragwanathia-flora.md). The site is heritage-listed and further collecting is forbidden (McSweeney et al. 2021), so the 1970s collections by Tims and Douglas in Museums Victoria are the only source of material.
 
 ## Affinity and controversies
 

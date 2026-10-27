@@ -21,8 +21,8 @@ range:
     et al. (2021); Y. sinica is Pragian. Lochkovian is a conservative first stage, not a demonstrated
     one. Y. oblonga from Limestone Road and Y. cf. oblonga from Ghin Ghin Road, Yea, come from the
     Lower Plant Assemblage, which graptolites placed in the Gorstian-Pridoli (Garratt & Rickards 1984;
-    Rickards & Garratt 1990) but which Earp (2024) and McSweeney et al. (2021, 2022) treat as Early
-    Devonian; Earp calls the question only partly answered. A single South African specimen is from the
+    Rickards & Garratt 1990) but which Earp (2024) treats as Early
+    Devonian, while McSweeney et al. (2021) date the species only as ?Ludlow-Emsian; Earp calls the question only partly answered. A single South African specimen is from the
     Baviaanskloof Formation, argued to be probably Lochkovian (Gess & Prestianni 2021). No locality has a
     demonstrated Silurian age. Reports from France, Russia and Arizona are unconfirmed (see text).
 regions: [Gondwana, South China]

@@ -22,7 +22,7 @@ Ordered by first appearance, extant comparison taxa last. Ages are ICS v2024/12 
 | [Aberlemnia caledonica](aberlemnia-caledonica.md) | rhyniophytoid | Pridoli (422.7 Ma) | Lochkovian | megafossil | low | draft |
 | [Baragwanathia brevifolioides](baragwanathia-brevifolioides.md) | lycopsid | Pridoli (422.7 Ma) | Pridoli | megafossil | low | draft |
 | [Early lycopsids ("lycopods" in older usage)](early-lycopsids.md) | lycopsid | Pridoli (422.7 Ma) | Givetian | group | medium | draft |
-| [Prototaxites](prototaxites.md) | nematophyte | Pridoli (422.7 Ma) | Givetian | megafossil | low | draft |
+| [Prototaxites](prototaxites.md) | nematophyte | Pridoli (422.7 Ma) | Famennian | megafossil | low | draft |
 | [Salopella](salopella.md) | rhyniophytoid | Pridoli (422.7 Ma) | Pragian | megafossil | low | draft |
 | [Baragwanathia longifolia](baragwanathia-longifolia.md) | lycopsid | Lochkovian (419.62 Ma) | Pragian | megafossil | medium | draft |
 | [Hedeia](hedeia.md) | rhyniophytoid | Lochkovian (419.62 Ma) | Emsian | megafossil | low | draft |

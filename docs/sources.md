@@ -1,7 +1,7 @@
 # Evidence base: source register
 
 The index of the data the project holds and the data it still needs, for the window 485–383 Ma
-(with later anchors where noted). Status as of 2026-10-27. Update this file whenever a source is
+(with later anchors where noted). Status as of 2026-10-27 (updated as EPRP tranche-2 areas are reviewed). Update this file whenever a source is
 added, extracted or ruled out.
 
 Status values:
@@ -23,7 +23,9 @@ Who does the work:
 | PBDB plant occurrences, collections, references | 3,704 occurrences (2,628 core), 1,302 collections, 523 references; snapshot 2026-10-23 | held | `data/eprp/record/` | CC0 | F3, F4, cards | extract specimens, measurements, opinions and the plant taxa subset (EPRP) |
 | PBDB card-taxa summary | records per card taxon, whole snapshot | held | `data/eprp/record/card_taxa_pbdb_summary.csv` | CC0 | cards | rerun when cards are added (EPRP) |
 | Fossil Record 2 plant families | family ranges, Harland 1990 ages | local | `data/eprp/local/record/` | none stated | context only | none |
-| Dispersed spores, Ordovician–Devonian | occurrences of cryptospores and trilete spores by assemblage, age and region | **missing** | | | F3 spore channel, F4 | check Palynodata (EPRP); scope literature compilations (project) |
+| Palynodata 2006 (GSC Open File 5793) | 76,351 window rows: 14,114 spore, 41,483 acritarch and 17,018 chitinozoan; 2,511 documents; literature to 2006, 2006-era ages, no coordinates | held | `data/external/spores/` | OGL-Canada | F3 spore channel and effort, F4 | compilation per `docs/spore-compilation-plan.md` (project) |
+| Wellman, Steemans & Vecoli 2013 supplement | Ordovician–Silurian spore assemblages by age and region (abridged PDF) | held | `data/external/spores/wellman2013_supplement/` | CC BY 4.0 | F3 | tabulate (project); full database only on request (Barry's decision) |
+| Post-2006 spore literature | about 200 papers (estimate) | **missing** | | | F3 | extraction per the plan (project) |
 | Compilations behind diversity studies | Capel et al. 2021, 2022, 2023; Cascales-Miñana 2016; Xiong et al. 2013; Silvestro et al. 2015; Ball 2022 | **missing** | | | F3 (independent check on PBDB) | locate deposits or supplements (EPRP) |
 | Geobiodiversity Database (GBDB) | South Chinese stratigraphy and occurrences | **missing** | | unknown | F3 and F4 (South China is weak in PBDB) | check access and licence (EPRP) |
 
@@ -78,7 +80,7 @@ Who does the work:
 | Plate-model index (27 models) | held | `data/eprp/context/plate_models.csv` | no reliable full-plate model before 410 Ma |
 | HadCM3 SST (Balembois et al. 2025); cGENIE fields 400–480 Ma | local | `data/eprp/local/context/deposits/` | SST and coarse land climate |
 | FOAM Late Ordovician (440 Ma) | mirror | EPRP register deposits | the only Palaeozoic land-surface field held |
-| Land-surface climate across the window (temperature, precipitation) | **missing** | | needed for F1 moisture and F4; candidate: the HadCM3L Phanerozoic simulations used by Valdes et al. (2021), if land fields are released (EPRP to check) |
+| HadCM3L land climate, suite `scotese_02` (PhanDA priors; Valdes et al. 2021 runs): `tas` and `pr`, 21 slices | held (tables); local (fields) | `data/external/climate/`; fields in `data/external/local/climate/` | CC BY 4.0; model priors, not reconstructions; seven further suites available (5.8 GB) if an ensemble is needed |
 
 ## 8. Rock record and sampling proxies
 
