@@ -7,9 +7,14 @@ harmonised, no duplicates merged. Building a compilation from it is project work
 ## Sources
 
 - **Palynodata Datafile: 2006 version** (Palynodata Inc. & J.M. White 2008, Geological Survey of
-  Canada Open File 5793, doi 10.4095/225704). Open Government Licence – Canada: free to copy,
-  modify and redistribute with attribution; the release's own `licence.txt` is in
-  `palynodata_release/`. Release zip sha256 `5460e39d…70db1a`; raw copy at
+  Canada Open File 5793, doi 10.4095/225704). **Licence: Open Government Licence – Canada**, free
+  to copy, modify and redistribute with attribution. That is what the current official record
+  states (NRCan Open S&T Repository, handle 1845/177682, `rights.license`, checked 2026-10-27), and
+  Crossref's licence metadata for the DOI points to the same licence. It supersedes the
+  `licence.txt` bundled in the 2008 release (kept in `palynodata_release/` as part of the release),
+  which is the restrictive NRCan end-user agreement of the time: internal use on a single
+  computer, no redistribution. Do not treat that bundled agreement as binding on this extract.
+  Release zip sha256 `5460e39d…70db1a`; raw copy at
   `deep-server:/data/codex/silurian_plants/raw/palynodata/2026-10-27T0038Z/`, local copy in
   `local/spores/of_5793.zip`. The data sit in an Access (JET3) database, `paly.mdb` (sha256
   `eb1fa8c3…cde85c1`), inside the release's `apps/Paly.CAB`; `mdb-export` reads it.
