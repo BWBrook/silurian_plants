@@ -9,6 +9,10 @@ the purpose, the criteria a framing must meet and the planned route.
 
 ## Contents
 
+- [Private reading portal](https://silurian-plants-library.barry-brook.chatgpt.site): illustrated
+  reading room, searchable taxon atlas and full-text search, generated from the Markdown.
+  Build and refresh instructions are in [portal/README.md](portal/README.md).
+
 - [taxa/](taxa/README.md): information cards on key taxa, one per file. Each card's front matter
   is a structured trait record; the prose covers morphology, age, affinity, ecology and relevance
   to modelling.
@@ -31,3 +35,5 @@ the purpose, the criteria a framing must meet and the planned route.
 
 Barry W. Brook (University of Tasmania) with Claude Opus 5.5 and Claude Sonnet 5.5 (Anthropic)
 working in Claude Code. Roles are recorded in [docs/charter.md](docs/charter.md).
+
+OpenAI Codex implemented the private reading portal; its role is recorded in the charter.

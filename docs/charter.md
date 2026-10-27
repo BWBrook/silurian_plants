@@ -68,5 +68,8 @@ data archived, and the human–AI correspondence record published alongside.
   design, synthesis, framings, tooling.
 - Claude Sonnet 5.5 (Anthropic) subagents: literature research and first drafts of taxon cards,
   the primer and the precedents review.
+- OpenAI Codex (OpenAI, Codex desktop; exact model version not exposed in this session):
+  private reading portal and taxon atlas, source-preserving rendering, image sourcing,
+  independent implementation review and browser checks (2026-10-27).
 
 `docs/decisions.md` records who decided what and when, for the eventual statement of AI roles.
