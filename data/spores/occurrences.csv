@@ -1267,9 +1267,9 @@ palynodata,11402,Tetrahedraletes,Tetrahedraletes sp,Egypt,Gondwana-North-Africa-
 palynodata,11414,Palynomorph,Palynomorph,Pennsylvania,Laurentia,not-a-spore,high,Rhuddanian,Telychian,false,false,false,false,not-vetted,low,443.10,432.90,10.20,false
 palynodata,11414,Spore,Spore,Pennsylvania,Laurentia,uncertain,low,Rhuddanian,Telychian,false,false,false,false,not-vetted,low,443.10,432.90,10.20,false
 palynodata,11420,Spore,Spore,Pennsylvania,Laurentia,uncertain,low,Rhuddanian,Telychian,false,false,false,false,not-vetted,high,443.10,432.90,10.20,false
-palynodata,11441,Tetrahedraletes,Tetrahedraletes,Brazil(Mato Grosso),Gondwana-South-America,cryptospore-tetrad,high,Rhuddanian,Telychian,false,false,false,false,reject,high,443.10,432.90,10.20,true
+palynodata,11441,Tetrahedraletes,Tetrahedraletes,Brazil(Mato Grosso),Gondwana-South-America,cryptospore-tetrad,high,Rhuddanian,Telychian,false,false,false,false,doubtful,high,443.10,432.90,10.20,true
 palynodata,11441,Spore,Spore sp,Brazil(Mato Grosso),Gondwana-South-America,uncertain,low,Rhuddanian,Telychian,false,false,false,false,accept,high,443.10,432.90,10.20,false
-palynodata,11441,Tetrahedraletes,Tetrahedraletes medinensis,Brazil(Mato Grosso),Gondwana-South-America,cryptospore-tetrad,high,Rhuddanian,Telychian,false,false,false,false,reject,high,443.10,432.90,10.20,true
+palynodata,11441,Tetrahedraletes,Tetrahedraletes medinensis,Brazil(Mato Grosso),Gondwana-South-America,cryptospore-tetrad,high,Rhuddanian,Telychian,false,false,false,false,doubtful,high,443.10,432.90,10.20,true
 palynodata,11441,Tetrahedraletes,Tetrahedraletes,Brazil(Paraná),Gondwana-South-America,cryptospore-tetrad,high,Rhuddanian,Telychian,false,false,false,false,doubtful,high,443.10,432.90,10.20,true
 palynodata,11441,Spore,Spore sp,Brazil(Paraná),Gondwana-South-America,uncertain,low,Rhuddanian,Telychian,false,false,false,false,accept,high,443.10,432.90,10.20,false
 palynodata,11441,Tetrahedraletes,Tetrahedraletes medinensis,Brazil(Paraná),Gondwana-South-America,cryptospore-tetrad,high,Rhuddanian,Telychian,false,false,false,false,doubtful,high,443.10,432.90,10.20,true
@@ -1353,7 +1353,7 @@ palynodata,13393,Gleichenia,Gleichenia angulata,Romania,unknown,not-a-spore,high
 palynodata,13602,Hymenozonotriletes,Hymenozonotriletes polyacanthus,USSR(Tomskaya Oblast),unknown,uncertain,low,Rhuddanian,Pridoli,false,false,false,false,not-vetted,high,443.10,419.62,23.48,false
 palynodata,13611,Apiculatisporites,Apiculatisporites,India(Jammu & Kashmir),Gondwana-other,trilete-ornamented,high,Rhuddanian,Pridoli,false,false,false,false,reject,high,443.10,419.62,23.48,true
 palynodata,13611,Calamospora,Calamospora,India(Jammu & Kashmir),Gondwana-other,trilete-laevigate,high,Rhuddanian,Pridoli,false,false,false,false,reject,high,443.10,419.62,23.48,true
-palynodata,13611,Laevigatisporites,Laevigatisporites,India(Jammu & Kashmir),Gondwana-other,other-spore,high,Rhuddanian,Pridoli,false,false,false,false,doubtful,high,443.10,419.62,23.48,true
+palynodata,13611,Laevigatisporites,Laevigatisporites,India(Jammu & Kashmir),Gondwana-other,other-spore,high,Rhuddanian,Pridoli,false,false,false,false,reject,high,443.10,419.62,23.48,true
 palynodata,13611,Leiotriletes,Leiotriletes,India(Jammu & Kashmir),Gondwana-other,trilete-laevigate,high,Rhuddanian,Pridoli,false,false,false,false,reject,high,443.10,419.62,23.48,true
 palynodata,13611,Lycospora,Lycospora,India(Jammu & Kashmir),Gondwana-other,trilete-ornamented,medium,Rhuddanian,Pridoli,false,false,false,false,reject,high,443.10,419.62,23.48,true
 palynodata,13611,Punctatisporites,Punctatisporites,India(Jammu & Kashmir),Gondwana-other,trilete-laevigate,high,Rhuddanian,Pridoli,false,false,false,false,reject,high,443.10,419.62,23.48,true

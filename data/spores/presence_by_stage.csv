@@ -109,7 +109,6 @@ cryptospore-tetrad,South-China,Rhuddanian,443.10,2
 cryptospore-tetrad,multiple,Rhuddanian,443.10,2
 cryptospore-tetrad,peri-Gondwana-Europe,Rhuddanian,443.10,1
 other-spore,Gondwana-South-America,Rhuddanian,443.10,1
-other-spore,Gondwana-other,Rhuddanian,443.10,1
 other-spore,multiple,Rhuddanian,443.10,2
 trilete-laevigate,Avalonia,Rhuddanian,443.10,8
 trilete-laevigate,Baltica,Rhuddanian,443.10,5
@@ -148,7 +147,6 @@ cryptospore-tetrad,South-China,Aeronian,440.50,3
 cryptospore-tetrad,multiple,Aeronian,440.50,2
 cryptospore-tetrad,peri-Gondwana-Europe,Aeronian,440.50,1
 other-spore,Gondwana-South-America,Aeronian,440.50,1
-other-spore,Gondwana-other,Aeronian,440.50,1
 other-spore,multiple,Aeronian,440.50,2
 trilete-laevigate,Avalonia,Aeronian,440.50,11
 trilete-laevigate,Baltica,Aeronian,440.50,5
@@ -190,7 +188,6 @@ cryptospore-tetrad,South-China,Telychian,438.60,3
 cryptospore-tetrad,multiple,Telychian,438.60,2
 cryptospore-tetrad,peri-Gondwana-Europe,Telychian,438.60,1
 other-spore,Gondwana-South-America,Telychian,438.60,1
-other-spore,Gondwana-other,Telychian,438.60,1
 other-spore,multiple,Telychian,438.60,1
 trilete-laevigate,Avalonia,Telychian,438.60,11
 trilete-laevigate,Baltica,Telychian,438.60,5
@@ -227,7 +224,6 @@ cryptospore-tetrad,Gondwana-South-America,Sheinwoodian,432.90,1
 cryptospore-tetrad,Laurentia,Sheinwoodian,432.90,11
 cryptospore-tetrad,multiple,Sheinwoodian,432.90,3
 other-spore,Gondwana-South-America,Sheinwoodian,432.90,1
-other-spore,Gondwana-other,Sheinwoodian,432.90,1
 other-spore,multiple,Sheinwoodian,432.90,1
 trilete-laevigate,Avalonia,Sheinwoodian,432.90,22
 trilete-laevigate,Baltica,Sheinwoodian,432.90,6
@@ -270,7 +266,6 @@ cryptospore-tetrad,Laurentia,Homerian,430.60,10
 cryptospore-tetrad,multiple,Homerian,430.60,2
 cryptospore-tetrad,peri-Gondwana-Europe,Homerian,430.60,1
 other-spore,Gondwana-South-America,Homerian,430.60,1
-other-spore,Gondwana-other,Homerian,430.60,1
 other-spore,multiple,Homerian,430.60,1
 trilete-laevigate,Avalonia,Homerian,430.60,25
 trilete-laevigate,Baltica,Homerian,430.60,6
@@ -315,7 +310,6 @@ cryptospore-tetrad,South-China,Gorstian,426.70,1
 cryptospore-tetrad,multiple,Gorstian,426.70,1
 cryptospore-tetrad,peri-Gondwana-Europe,Gorstian,426.70,1
 other-spore,Gondwana-South-America,Gorstian,426.70,3
-other-spore,Gondwana-other,Gorstian,426.70,1
 other-spore,multiple,Gorstian,426.70,1
 trilete-laevigate,Avalonia,Gorstian,426.70,20
 trilete-laevigate,Baltica,Gorstian,426.70,9
@@ -362,7 +356,6 @@ cryptospore-tetrad,South-China,Ludfordian,425.00,1
 cryptospore-tetrad,multiple,Ludfordian,425.00,1
 cryptospore-tetrad,peri-Gondwana-Europe,Ludfordian,425.00,1
 other-spore,Gondwana-South-America,Ludfordian,425.00,3
-other-spore,Gondwana-other,Ludfordian,425.00,1
 other-spore,multiple,Ludfordian,425.00,1
 trilete-laevigate,Avalonia,Ludfordian,425.00,23
 trilete-laevigate,Baltica,Ludfordian,425.00,10
@@ -409,7 +402,6 @@ cryptospore-tetrad,Laurentia,Pridoli,422.70,3
 cryptospore-tetrad,South-China,Pridoli,422.70,1
 cryptospore-tetrad,peri-Gondwana-Europe,Pridoli,422.70,1
 other-spore,Gondwana-South-America,Pridoli,422.70,2
-other-spore,Gondwana-other,Pridoli,422.70,1
 other-spore,multiple,Pridoli,422.70,1
 trilete-laevigate,Avalonia,Pridoli,422.70,28
 trilete-laevigate,Baltica,Pridoli,422.70,6

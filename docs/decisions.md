@@ -3,6 +3,28 @@
 Dated record of decisions that shape the programme. Newest first. Say who decided, and quote
 Barry exactly (with source) or label a paraphrase.
 
+## 2026-10-27: spore dataset (MVD-A), Codex delegation, closed-literature register
+
+- **Codex as the legwork engine** (Barry, chat, 2026-10-27): "you can be rather spendthrift on what
+  legwork you outsource to Terra or Sol". Codex does schema-constrained, machine-checkable work;
+  Claude keeps synthesis, judgement and adjudication. The pilot is in
+  `docs/audits/2026-10-27-codex-pilot.md`; the practice is in `CLAUDE.md` and the global
+  `codex-delegate` skill.
+- **Closed literature** (Barry, chat, 2026-10-27): "we should keep a register of it, such that I
+  can secure it via institutional login if/as required". The register is
+  `docs/closed-literature.csv` (419 rows, priority-sorted, with DOI links). Copies Barry obtains go
+  in git-ignored `library/closed/`.
+- **Spore dataset MVD-A** (Claude, built with Codex and Sonnet): `data/spores/`, combining
+  Palynodata and the digitised Wellman et al. (2013) assemblages through age, location and genus
+  crosswalks.
+  - Early records were vetted in two passes, then a blind cross-family audit checked a sample:
+    83% agreement on accept vs not-accept, and two verdicts were adjudicated.
+  - Strict first appearances: cryptospores certain by 458.2 Ma, trilete spores by 445.2 Ma.
+  - Not yet included: the post-2006 literature (MVD-B) and spore-absent sampling effort.
+- **Literature harvest** (EPRP, item 8): phase 1 committed (6,312 works; 183 priority spore
+  papers). Phase 2, open texts for the spore and card subsets only, was approved by Claude under
+  Barry's go-ahead.
+
 ## 2026-10-27: evidence base, tranche 2
 
 - **Scope** (Barry, chat, 2026-10-27): before commenting further on the hypothesis, fill out the

@@ -1,0 +1,71 @@
+task,key,verdict_or_class,confidence,reason
+A,05703|Hirnantian|Aeronian|Wales(Dyfed)|trilete,reject,medium,"Burgess 1991 records only cryptospores before the late Aeronian, with trilete Ambitisporites from the late Aeronian; the taxon A. vavrdovae (= Imperfectotriletes vavrdovae) is a hilate cryptospore, so a Hirnantian-early Aeronian trilete record is unsupported."
+A,06209|Katian|Hirnantian|Iran|trilete,doubtful,medium,"Late Ordovician trilete spores are plausible, but Emphanisporites protophanus is a Silurian-Devonian form and the source is an acritarch paper; later Ghelli Fm work finds only 2 trilete species among mostly cryptospores."
+A,07646|Dapingian|Darriwilian|USSR(Vologda)|other,reject,high,"Extant moss species (Polytrichum alpestre, Funaria hygrometrica) in the Ordovician are contamination or misidentification (Timofeev 1976)."
+A,08526|Rhuddanian|Telychian|Alabama|other,reject,high,"Laevigatosporites desmoinesensis is a Pennsylvanian monolete spore, so its presence in the Red Mountain Fm is contamination or a mis-dated record."
+A,10458|Rhuddanian|Pridoli|Brazil(Amazonas)|trilete,reject,medium,Dulhuntyispora is a Permian genus and Acanthotriletes is implausible in the Silurian; the whole-Silurian age is a pooled label from a palynoplankton paper (da Costa 1982) and the spores are probably younger or misidentified.
+A,11441|Rhuddanian|Telychian|Brazil(Mato Grosso)|cryptospore,accept,medium,"Gray 1985 Vila Maria Fm (Parana Basin) Tetrahedraletes medinensis is a standard Llandovery cryptospore, and the Llandovery Brazil record appears in the Wellman et al. 2013 compilation."
+A,11558|Katian|Telychian|Belgium|other,reject,medium,"Schizaeoisporites is a Mesozoic-Cenozoic genus; an informal sp.I in the Katian-Telychian is a misidentification or contaminant, and the Katian-Telychian span is a pooled Deerlijk label."
+A,13611|Rhuddanian|Pridoli|India(Jammu & Kashmir)|trilete,reject,high,"Lycospora, Calamospora and Apiculatisporis are Devonian-Carboniferous genera; a whole-Silurian age in a regional review (Shah 1979) is an erroneous or pooled age and the identifications are anachronistic."
+A,16121|Katian|Telychian|Libya|trilete,doubtful,medium,Ambitisporites imperfectus is a Richardson Libyan taxon with an Early Aeronian type record; its extension back to the Katian rests on a pooled Katian-Telychian label for the whole paper and is not independently corroborated.
+A,16121|Rhuddanian|Telychian|Libya|trilete,doubtful,medium,"A. vavrdovae (new, Richardson) is now Imperfectotriletes vavrdovae, a hilate cryptospore, so the taxon is credibly present in Llandovery Libya but not as a true trilete spore."
+A,21736|Floian|Floian|Argentina(Salta)|cryptospore,doubtful,medium,Cryptospores are accepted from the Dapingian (Rubinstein et al. 2010); a Floian Tetrahedraletes sp. from an integrative review (Vergel 2002) is uncorroborated and probably a dating imprecision or non-cryptospore.
+A,21884|Floian|Floian|Argentina(La Rioja)|cryptospore,doubtful,medium,"Middle Arenigian hilate monads (Laevolancis, Imperfectotriletes sp.) predate the accepted Dapingian onset; they may be Dapingian-equivalent but are uncorroborated and of open nomenclature."
+A,12230|Rhuddanian|Homerian|Argentina(Jujuy)|trilete,accept,low,Ambitisporites avitus is credible in Llandovery-Wenlock marine Silurian of NW Argentina (Rubinstein & Brussa 1999 report Telychian and Homerian trilete spores); the stage span is broad and the source is pre-1980.
+A,06840|Rhuddanian|Pridoli|England(Shropshire)|trilete,doubtful,medium,"Punctatisporites dilutus (= Ambitisporites dilutus) is credible somewhere in the Silurian, but the source is a 1973 review with a whole-Silurian label and Lophotriletes sp. is a questionable Silurian record."
+A,14653|Rhuddanian|Pridoli|USSR(Lithuanian SSR)|trilete,doubtful,medium,"Archaeozonotriletes siluriensis from a 1974 borehole report is labelled only as Silurian, so the age is pooled and the Soviet-era identification is unverified."
+A,22002|Rhuddanian|Sheinwoodian|Iran|cryptospore,accept,medium,"Tetrahedraletes medinensis is a long-ranging, common early Silurian cryptospore, and the Kuh-e-Boghou record (Ghavidel-Syooki 2003) is a modern palynostratigraphic study."
+A,04799|Aeronian|Homerian|England(Shropshire)|trilete,accept,medium,Archaeozonotriletes chulus nanus is a well-known late Llandovery-Wenlock (Telychian-Homerian) form in the Wenlock type area (Bassett 1989 volume); the Aeronian lower bound looks like a mapping artefact but the taxon sits inside the window.
+A,05166|Rhuddanian|Aeronian|Belgium|trilete,doubtful,medium,A 1971 Leiotriletes sp. from the Early Llandovery of Deerlijk is an open-nomenclature smooth trilete that may be a misidentified cryptospore; Wellman et al. 2013 list only Moyeria for the Llandovery of Belgium.
+A,19212|Rhuddanian|Pridoli|Libya|trilete,accept,low,Ambitisporites avitus was described from the Lower Silurian of Libya (Hoffmeister 1959) and is listed for Llandovery Libya by Wellman et al. 2013; the Rhuddanian-Pridoli label comes from an in situ catalogue (Balme 1995) and is pooled.
+A,05523|Rhuddanian|Telychian|Sweden|trilete,doubtful,medium,"Gotland has no Rhuddanian-Aeronian strata and the source is an acritarch monograph; Brochotriletes sp. (a reticulate trilete) is unlikely in the Llandovery, and Ambitisporites sp. is plausible only from the Telychian."
+A,13611|Rhuddanian|Pridoli|India(Jammu & Kashmir)|other,reject,high,"Laevigatosporites is a Carboniferous-Permian monolete genus, and the whole-Silurian age from a regional review is erroneous or pooled."
+A,20448|Rhuddanian|Gorstian|Saudi Arabia|cryptospore,accept,high,"Wellman 2000 describes the Silurian Hawiyah-151 core with abundant cryptospores, consistent with the Saudi Arabian Silurian assemblages of Steemans et al. 2000."
+A,05721|Rhuddanian|Telychian|Pennsylvania|trilete,accept,medium,Ambitisporites sp. is expected in the Llandovery Tuscarora Fm (Gensel et al. 1990; Johnson 1985 give a Llandovery age) and trilete Ambitisporites is accepted by the Telychian.
+A,19284|Aeronian|Aeronian|Libya|trilete,accept,medium,"Wellman et al. 2013 list Ambitisporites dilutus and A. avitus for Aeronian Libya, matching the Burgess 1991 first late Aeronian occurrence; A. vavrdovae is a hilate cryptospore, but A. dilutus carries the trilete claim."
+A,11107|Rhuddanian|Rhuddanian|Libya|cryptospore,accept,high,"Tetrahedraletes, Nodospora and Dyadospora are typical Rhuddanian cryptospores from Libya (Hill et al. 1985), matching the Wellman et al. 2013 Rhuddanian Libya assemblage."
+A,05703|Rhuddanian|Rhuddanian|Wales(Dyfed)|cryptospore,accept,high,"Burgess 1991 records a diverse older cryptospore assemblage from the latest Ordovician to late Aeronian, including Rhuddanian Velatitetras, Rimosotetras and Dyadospora."
+A,08347|Rhuddanian|Aeronian|Wales(Carmarthenshire)|trilete,accept,medium,Ambitisporites dilutus is documented from the late Aeronian of the Llandovery area (Burgess 1991; Richardson 1989 global-standard volume); the Rhuddanian part of the window is unsupported but the taxon sits within it.
+A,18701|Darriwilian|Darriwilian|Saudi Arabia|cryptospore,accept,high,"Strother et al. 1996 describe Qasim Fm cryptospore dyads, tetrads and monads of Llanvirn (Darriwilian) age, the classic oldest secure cryptospore record."
+A,18412|Katian|Hirnantian|Ohio|cryptospore,accept,high,"Taylor 1995 documents Tetrahedraletes medinensis from the Upper Ordovician of southern Ohio, which is Katian-aged Cincinnatian strata."
+A,05721|Rhuddanian|Telychian|Pennsylvania|cryptospore,accept,high,"Tuscarora Fm assemblages (Gensel et al. 1990; Johnson 1985) are Llandovery cryptospore-dominated, with Tetrahedraletes, Stegambiquadrella, Dyadospora and Pseudodyadospora."
+B,Rimosotetras,cryptospore-tetrad,high,"Burgess 1991 tetrad genus, e.g. R. problematica."
+B,Breconisporites,trilete-unspecified,low,"Lower Devonian (Lochkovian) trilete genus with species of varied wall type (simplex, glaber, breconensis); no diagnosis located."
+B,Neoraistrickia,trilete-ornamented,high,Trilete with baculate/clavate sculpture.
+B,Boutakoffites,uncertain,low,Permian Congo genus (Bose/Kar) with no diagnosis found; probably pollen but unverified.
+B,Raistrickia,trilete-ornamented,high,Trilete with clavate/baculate elements.
+B,Zonalessporites,uncertain,low,Ibrahim 1933 zonate trilete in Westphalian coals but used for megaspores by Spinner and for Devonian miospores elsewhere.
+B,Apiculatisporis,trilete-ornamented,high,Trilete with apiculate sculpture.
+B,Cymbohilates,cryptospore-monad,high,"Richardson hilate monad genus, Silurian-Devonian."
+B,Discernisporites,trilete-ornamented,medium,Devonian-Carboniferous trilete with distal ornament (D. micromanifestus).
+B,Bullatisporites,trilete-ornamented,medium,Allen 1965 Devonian trilete with bullate sculpture.
+B,Lycospora,trilete-unspecified,medium,Carboniferous cingulizonate trilete with species from smooth to finely granulate or papillate.
+B,Pustulatisporites,trilete-ornamented,high,Trilete with pustulate sculpture.
+B,Auroraspora,trilete-laevigate,medium,"Hoffmeister, Staplin & Malloy 1955 thin-walled, smooth to infragranulate trilete."
+B,Amocosporites,trilete-ornamented,low,"Cramer & Diez 1975 Pridoli-Lochkovian trilete with sculptured species (infraornatus, subornator); diagnosis not verified."
+B,Stellatispora,trilete-ornamented,low,Silurian trilete (S. inframurinata) with muri-like sculpture; diagnosis not verified.
+B,Lophomesotriletes,uncertain,low,Obscure Ordovician Soviet records with no confirmed diagnosis; likely acritarch or contaminant.
+B,Rugosphaera,cryptospore-monad,high,"Strother & Traverse 1979 naked wrinkled sphere, an alete cryptospore monad."
+B,Endosporites,trilete-unspecified,medium,"Wilson & Coe 1940 lycopsid microspores with trilete mark and inflated outer wall, with smooth to sculptured species."
+B,Stegambiquadrella,cryptospore-tetrad,high,Envelope-enclosed tetrad (S. contenta).
+B,Archaeopteris,not-a-spore,high,Progymnosperm macrofossil genus.
+B,Knoxisporites,trilete-ornamented,medium,Zonate/cingulate trilete with distal sculpture (e.g. K. literatus).
+B,Calyptosporites,trilete-ornamented,medium,"Richardson 1962 replacement name for Cosmosporites, trilete with outer membrane and ornament."
+B,Rugosisporites,trilete-ornamented,low,"Dufka 1995 Wenlock genus described with Synorisporites from the Prague Basin; assumed rugulate trilete, not verified."
+B,Hystricosporites,trilete-ornamented,high,McGregor 1960 Devonian trilete with grapnel-tipped processes.
+B,Cooksonia,not-a-spore,high,Rhyniophytoid macrofossil genus.
+B,Periplecotriletes,trilete-unspecified,low,Naumova-type Devonian genus with species from smooth to granulate; diagnosis not verified.
+B,Planisporites,trilete-ornamented,medium,Knox 1950 trilete with granulate sculpture.
+B,Spelaeotriletes,trilete-ornamented,medium,Neves & Owens 1966 cavate trilete with sculptured exoexine (S. lepidophytus = Retispora lepidophyta).
+B,Zonalosporites,uncertain,low,Algerian Arenigian open-nomenclature numbered species (Combaz-style); probably acritarch or plant debris.
+B,Retispora,trilete-ornamented,high,Staplin 1960 trilete with reticulate distal sculpture (R. lepidophyta).
+B,Diaphanospora,trilete-unspecified,low,"Balme & Hassell 1962 genus whose species range from smooth to apiculate (apiculata, riciniata, perplexa)."
+B,Hostimilla,not-a-spore,high,"Misspelling of Hostimella, a Devonian plant macrofossil form genus."
+B,Protosalvinia,not-a-spore,high,"Late Devonian thalloid fossil, an alga or problematic macrofossil."
+B,Trileites,other-spore,medium,(Erdtman) Potonie 1956 megaspore genus (Fuglewicz Triassic species).
+B,Pollen,not-a-spore,high,Non-genus label.
+B,Qualisaspora,cryptospore-monad,medium,Higgs 2004 describes new species Qualisaspora sinuata as a cryptospore; Lochkovian.
+B,Microreticulatisporites,trilete-ornamented,high,Knox 1950 trilete with microreticulate sculpture.
+B,Strotersporites,not-a-spore,high,Wilson 1962 striate bisaccate Permian pollen genus.
+B,Apiculatasporites,trilete-ornamented,high,Ibrahim 1933 trilete with apiculate sculpture.
+B,Todites,not-a-spore,high,Mesozoic osmundaceous fern macrofossil genus.
