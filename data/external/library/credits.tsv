@@ -1,0 +1,15 @@
+when	command	openalex_calls	credits_used	credits_remaining_after
+2026-10-27T03:40:00Z	header probe (1 DOI lookup, 1 one-row search page), time approximate	2	11	9989
+2026-10-27T03:42:53Z	resolve --store	21	13	9976
+2026-10-27T03:43:30Z	scratch probes p1: plants union count, spore+period variants (tally printed by hand)	2	20	
+2026-10-27T03:44:00Z	scratch probes p2: five spore-query variants (group_by year)	5	50	
+2026-10-27T03:44:30Z	scratch probes p3: three spore-query variants	3	30	
+2026-10-27T03:45:00Z	scratch probes p4: five marine-query variants	5	50	
+2026-10-27T03:45:30Z	scratch probes p5: three marine-query variants	3	30	9796
+2026-10-27T03:46:22Z	library_window.py probes	11	110	9686
+2026-10-27T03:48:34Z	library_window.py seed	44	440	9246
+2026-10-27T03:48:44Z	resolve --store	0	0	
+2026-10-27T03:48:48Z	index --store --out	0	0	
+2026-10-27T04:00:38Z	library_window.py probes	4	40	9206
+2026-10-27T04:01:17Z	library_window.py finalize	0	0	
+2026-10-27T04:01:24Z	library_window.py finalize	0	0	

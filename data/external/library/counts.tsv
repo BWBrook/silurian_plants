@@ -1,0 +1,10 @@
+subset	works	skipped_type	oa_pdf_url	oa_status_only	closed	with_fetch_candidate	est_pdfs_pdf_url	est_mb_pdf_url	est_mb_all_candidates	est_mb_pdf_url_at_eprp_mean	est_mb_all_candidates_at_eprp_mean
+priority_spores	183	0	53	41	89	88	53	106	176	231	384
+cards	623	2	219	94	310	290	218	436	580	950	1264
+window_other	4762	123	903	702	3157	1287	875	1750	2574	3815	5611
+window-marine	1469	15	285	168	1016	403	279	558	806	1216	1757
+union (each work once)	6312	133	1291	904	4117	1826	1260	2520	3652	5494	7961
+exclusive: priority_spores	183	0	53	41	89	88	53	106	176	231	384
+exclusive: cards	613	2	214	93	306	284	213	426	568	929	1238
+exclusive: window_other	4473	123	830	658	2985	1184	802	1604	2368	3497	5162
+exclusive: window-marine	1043	8	194	112	737	270	192	384	540	837	1177
