@@ -1,4 +1,7 @@
 period,series,stage,base_ma,base_unc_ma
+Carboniferous,Mississippian,Tournaisian,358.86,0.19
+Devonian,Upper,Famennian,372.15,0.46
+Devonian,Upper,Frasnian,382.31,1.36
 Devonian,Middle,Givetian,387.95,1.04
 Devonian,Middle,Eifelian,393.47,0.99
 Devonian,Lower,Emsian,410.62,1.95

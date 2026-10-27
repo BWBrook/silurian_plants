@@ -3,6 +3,40 @@
 Dated record of decisions that shape the programme. Newest first. Say who decided, and quote
 Barry exactly (with source) or label a paraphrase.
 
+## 2026-10-27: evidence base, tranche 2
+
+- **Scope** (Barry, chat, 2026-10-27): before commenting further on the hypothesis, fill out the
+  core evidence base, "to make sure all the relevant data on the time period in question and all
+  the specimens (from databases) are properly sourced, indexed and extracted", continuing to work
+  with the EPRP session as required.
+- **Source register** (Claude): `docs/sources.md` lists every held and missing source with status,
+  licence and who does the work. Database and deposit work goes to the EPRP session (request sent
+  2026-10-27); literature extraction stays here.
+- **Cards, tranche 2.** Barry proposed:
+  - the Victorian taxa *Yarravia*, *Hedeia* and *Pluricaulis biformis*; *Dawsonites*; *Palaeostigma*;
+  - living comparison taxa *Psilotum*, *Tmesipteris* and *Lycopodium squarrosum*;
+  - *Parka*, *Ulothrix* and *Ulva*;
+  - group cards on lycopods and trimerophytes; *Archaeopteris*.
+
+  Claude added:
+  - *Coleochaete*, *Chara* and the Zygnematophyceae, because the streptophyte relatives are the
+    phylogenetically apt life-cycle exemplars; *Ulva* and *Ulothrix* stay as theory exemplars;
+  - hornworts and *Marchantia*;
+  - group cards for eophytes, rhyniophytoids and zosterophylls;
+  - five site cards (Rhynie, Posongchong, Xitun, Bathurst Island, Welsh Borderland mesofossils)
+    and a Baragwanathia-flora card, as sampling units for an observation model;
+  - the taxa that tranche-1 agents flagged as missing (*Nothia*, *Baragwanathia brevifolioides*,
+    *Metzgeriothallus*, *Franhueberia*, *Salopella*);
+  - *Wattieza* and *Leclercqia* as anchors beyond the window.
+
+  35 cards in all, drafted by Claude Sonnet 5.5 subagents.
+- **Schema** (Claude): card kinds `extant` and `group`, ranks `grade` and `clade`, and groups for
+  chlorophyte algae, ferns, progymnosperms and cladoxylopsids. `data/timescale.csv` gains the
+  Frasnian, Famennian and Tournaisian bases (ICS v2024/12) for the anchors; the existing rows are
+  unchanged.
+- **Dispersed spores** (Claude): a scoping study (`docs/spore-compilation-plan.md`) runs in
+  parallel with EPRP's check of Palynodata, before any compilation starts.
+
 ## 2026-10-27: EPRP deposit reviewed and committed
 
 - **Deposit accepted** (Claude, reviewing at Barry's request): `data/eprp/` is committed except

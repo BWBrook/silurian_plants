@@ -3,10 +3,16 @@
 # The front matter is data: tools/cards.py validates it and builds taxa/README.md from it.
 # Use null for "not yet looked up". For traits, distinguish observed `absent` from `unknown`
 # (not preserved or not reported) and `na` (not applicable, e.g. stomata in a fungus).
+# Extant comparison taxa: kind extant; range.first/last are the lineage's oldest/youngest fossil
+# stages if a record exists, else null; localities and preservation may be empty. Keep the same
+# section headings: "Age and distribution" covers the fossil record and the living range, and
+# "Why it matters for modelling" covers what can be measured on living plants and how far the
+# analogy holds. Group cards (grades or clades): kind group, rank grade or clade; range spans the
+# members; traits give the group's typical state with the spread in the note; link member cards.
 name: Genus species            # as currently accepted; genus alone for a genus card
 authority: Author year
-rank: species                  # species | genus | morphogroup | assemblage
-kind: megafossil               # megafossil | mesofossil | dispersed_spores | assemblage
+rank: species                  # species | genus | morphogroup | assemblage | grade | clade
+kind: megafossil               # megafossil | mesofossil | dispersed_spores | assemblage | group | extant
 group: rhyniophytoid           # see vocabulary in tools/cards.py (GROUPS)
 lineage: >-
   One line on phylogenetic placement, e.g. "stem-group lycophyte (zosterophyll grade)".
