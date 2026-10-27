@@ -1,0 +1,103 @@
+genus,n_rows,n_docs,species_sample,palynodata_min_ma,palynodata_max_ma
+Calbertaprion,1,1,,345.0,395.0
+Lingulaces,1,1,,435.0,570.0
+Echinosporites,1,1,,360.0,395.0
+Spore tetrad,1,1,sp,407.666,414.0
+Brochosaccus,1,1,ordovicus,435.0,514.0
+Bothrodendron,1,1,mundum,230.0,570.0
+Hymenozonisporites,1,1,sp,345.0,408.333
+Zinjisporites,1,1,eccensis,230.0,500.0
+Spore dyade,1,1,sp,407.666,414.0
+Clavatipollenites,1,1,ascarinoides,5.0,482.6
+Ptilophyton,1,1,thomsonii,345.0,395.0
+Palaeopteris,1,1,halliana,345.0,395.0
+Cymbotriletes,1,1,sp,383.667,389.333
+Passauisaccites,1,1,plicatus,230.0,570.0
+Stellispora,1,1,granulata,374.0,389.666
+Hymenostriletes,1,1,,345.0,395.0
+Boweria,1,1,minor,230.0,570.0
+Bentzisporites,1,1,,230.0,570.0
+Palaeocoprosmadites,1,1,zelandiae,5.0,482.6
+Fuchsia,1,1,,5.0,482.6
+Azonoletes,1,1,sp,370.0,395.0
+Contignisporites,1,1,sp,345.0,435.0
+Cyrtospora,1,1,cristifera,345.0,395.0
+Schizaeasporites,1,1,sp.I,423.0,435.0
+Telangiopsis,1,1,,230.0,570.0
+Nodosphaera,1,1,,423.0,427.0
+Teichertospora,1,1,torquata,345.0,395.0
+Hornea,1,1,lignieri,345.0,395.0
+Callisporites,1,1,,230.0,570.0
+Monilospora,1,1,,318.0,395.0
+Retusisporites,1,1,sp,360.0,395.0
+Aculeispores,1,1,,345.0,395.0
+Convexosporites,1,1,muenstereifeliensis,370.0,395.0
+Zonales,1,1,,345.0,395.0
+Distichoplax,1,1,,230.0,570.0
+Tiwariasporis,1,1,flavatus,230.0,570.0
+Funaria,1,1,hygrometrica,456.667,478.333
+Piceaepollenites,1,1,sp,435.0,500.0
+Zimmermannitheca,1,1,,230.0,570.0
+Discalis,1,1,longistipa,345.0,395.0
+Zonotrachytriletes,1,1,incrassatus,345.0,395.0
+Paracalathiops,1,1,,230.0,570.0
+Podocarpidites,1,1,,5.0,482.6
+Pellaea,1,1,,0.0,395.0
+Dictyophyllidites,1,1,,5.0,482.6
+Zonolagenicula,1,1,,325.0,395.0
+Pteridium,1,1,aquilinum,345.0,395.0
+Disaccates,1,1,,195.0,435.0
+Bryophyta,1,1,,435.0,1600.0
+Sinuosisporis,1,1,aculeatus,370.0,395.0
+Apterales,1,1,,345.0,395.0
+Deltatriletes,1,1,robustus,370.0,395.0
+Dauniasporites,1,1,minor,370.0,395.0
+Neseuretus,1,1,tristani,456.667,478.333
+Noeggerathia,1,1,foliosa,230.0,570.0
+Rhetinotheca,1,1,patens,230.0,570.0
+Gymnospermae,1,1,,345.0,395.0
+Cingulati,1,1,,280.0,435.0
+Astelia,1,1,,5.0,482.6
+Schulzospora,1,1,,230.0,570.0
+Haloragacidites,1,1,harrisii,5.0,482.6
+Sphaerina,1,1,media,435.0,514.0
+Archaeletes,1,1,,421.667,435.0
+Lycopodium,1,1,ramulosum,5.0,482.6
+Dipteris,1,1,,0.0,395.0
+Psilophytes,1,1,goldschmidtii,370.0,395.0
+Calyptopteris,1,1,proteus,360.0,395.0
+Virkkipollenites,1,1,obscurus,230.0,500.0
+Synosporites,1,1,sp,392.332,435.0
+Laevigate dyads,1,1,sp,395.0,404.0
+Lanatisporis,1,1,hispidus,370.0,395.0
+Epacridaceae,1,1,,5.0,482.6
+Dilobozonotriletes,1,1,sp,345.0,387.0
+Archaeridium,1,1,semiclausus,392.332,395.0
+Bessella,1,1,nunaatica,435.0,456.667
+Coniferae,1,1,,280.0,395.0
+Senftenbergia,1,1,plumosa,230.0,570.0
+Thalisporites,1,1,ancylus,395.0,435.0
+Mezotriletes,1,1,,370.0,500.0
+Bothrostrobus,1,1,mundus,230.0,570.0
+Entylissa,1,1,,230.0,570.0
+Houverathia,1,1,rotunda,370.0,395.0
+Mabuitasaccites,1,1,ovatus,230.0,570.0
+Spinosporites,1,1,,280.0,395.0
+Horriditriletes,1,1,ramosus,267.0,500.0
+Osmundasporites,1,1,sp,280.0,395.0
+Caia,1,1,langii,395.0,404.0
+Polarisaccites,1,1,sp,230.0,570.0
+Rugosphaera,25,18,Rugosphaera tuscarorensis; Rugosphaera falloambita; Rugosphaera cerebra; Rugosphaera rugosa,,
+Moyeria,7,7,Moyeria cabottii,,
+Strophomorpha,7,7,Strophomorpha ovata; Strophomorpha ovate,,
+Abacum,4,1,Abacum messaoudi; Abacum velata; Abacum scabra; Abacum rudi,,
+Virgatasporites,4,3,Virgatasporites rudii; Virgatasporites rudi; Virgatasporites baccatus,,
+Dyadaspora,3,2,Dyadaspora murusattenuata; Dyadaspora murusdensa; Dyadaspora murusattenuatta,,
+Paradominoespora,2,2,Paradominoespora maravedi,,
+Retialetes,2,2,Retialetes legionis,,
+Empanisporites,2,2,Empanisporites protophanus,,
+Pseuddyadospora,1,1,Pseuddyadospora laevigata,,
+Vellatitetras,1,1,Vellatitetras rugosa,,
+Vermiculatisphaera,1,1,Vermiculatisphaera obscura,,
+Aremopyra,1,1,Aremopyra brevicosta,,
+Eupoikilofusa,1,1,Eupoikilofusa cabottii,,

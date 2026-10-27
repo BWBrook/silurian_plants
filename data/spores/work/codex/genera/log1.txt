@@ -1,0 +1,1019 @@
+Reading additional input from stdin...
+OpenAI Codex v0.164.0
+--------
+workdir: /Users/bwbrook/papers/silurian_plants
+model: gpt-6.1-sol
+provider: openai
+approval: never
+sandbox: read-only
+reasoning effort: high
+reasoning summaries: none
+session id: 01a17b86-d451-7700-8d2a-defb3073609e
+--------
+user
+You are classifying dispersed-spore genera for a palaeobotany research dataset in this repository (read AGENTS.md for its conventions; do not edit any file).
+
+Input: data/spores/work/codex/genera/chunk1.csv holds 107 genera from Palynodata's Ordovician–Devonian spore records, with sample species names and Palynodata age spans.
+
+For EACH genus (copy the name exactly) classify spore_class by the genus's diagnostic morphology:
+- cryptospore-monad: single spores not in a trilete arrangement and of cryptospore affinity, including hilate monads (e.g. Laevolancis), alete monads and enveloped monads.
+- cryptospore-dyad: permanent or dissociated dyads (e.g. Dyadospora, Pseudodyadospora, Segestrespora).
+- cryptospore-tetrad: permanent tetrads, naked or enveloped (e.g. Tetrahedraletes, Velatitetras).
+- trilete-laevigate: trilete spores with smooth exine, including retusoid forms (e.g. Ambitisporites, Retusotriletes).
+- trilete-ornamented: trilete spores with sculpture, such as grana, verrucae, apiculae, muri or ribs (e.g. Emphanisporites, Apiculiretusispora).
+- trilete-unspecified: trilete spores in heterogeneous form genera whose species include both smooth and sculptured forms, or whose sculpture is undetermined.
+- other-spore: monolete spores, megaspores and other true spores outside these classes; say which in basis.
+- not-a-spore: taxa that are not embryophyte spores (acritarchs, algal cysts, misfiled pollen), and names that are not genera ("Spore", "Tetrad", indet.).
+- uncertain: a genus of disputed or unknown morphology.
+
+confidence: high if the diagnosis is unambiguous and you know it; medium if inferred; low if unsure.
+basis: the diagnostic feature, in a few words.
+source: the original description or a standard reference (author and year). Do not invent sources: write "none checked" if you did not verify one.
+
+Use web search for genera you are not sure of. Return JSON only, matching the schema, for all 107 genera; read the WHOLE file.
+codex
+I’ll read the full file and repository conventions, then check uncertain diagnoses against published sources. I won’t edit any files.
+exec
+/bin/zsh -lc "pwd && rg --files -g 'AGENTS.md' -g 'chunk1.csv' -g 'charter.md' -g 'decisions.md' && cat AGENTS.md && cat data/spores/work/codex/genera/chunk1.csv" in /Users/bwbrook/papers/silurian_plants
+ succeeded in 0ms:
+/Users/bwbrook/papers/silurian_plants
+AGENTS.md
+docs/decisions.md
+docs/charter.md
+data/spores/work/codex/genera/chunk1.csv
+# silurian_plants: agent guidance
+
+Exploratory, long-term programme on simulation modelling of early land-plant evolution, Late
+Ordovician to Early Devonian (c. 458–393 Ma). Read `docs/charter.md` for purpose, stage and
+route, and `docs/decisions.md` for what has been settled. Current stage: orientation; no
+research question has been chosen, so do not start model code without a framing decision
+recorded in `docs/decisions.md`.
+
+## Layout
+
+- `taxa/`: one information card per taxon. `taxa/_template.md` is the schema; `taxa/README.md`
+  is generated.
+- `docs/`: charter, decisions, primer, precedents review, candidate framings, the source register
+  (`docs/sources.md`, the index of all data held and needed: update it when a source changes) and
+  the spore-compilation plan.
+- `data/timescale.csv`: ICS v2024/12 stage base ages, the single source of numerical ages.
+- `data/traits.csv`: generated trait matrix, one row per card.
+- `data/eprp/`: material extracted from Barry's EPRP programme: literature, PBDB and Macrostrat
+  records, climate and palaeogeography context, and software pointers. Treat it as inputs, not
+  verified facts. Read each area's README before use, and regenerate tables with its scripts
+  rather than editing them. `data/eprp/local/` is git-ignored (unlicensed, no-derivatives or bulky
+  material) and exists only on mac-mini; rebuild it from `deep-server` with the scripts.
+- `docs/audits/`: independent checks of cards and deposits.
+- `tools/cards.py`: card validation, DOI checking and index generation.
+
+## Commands
+
+```bash
+uv run tools/cards.py check   # schema and vocabulary
+uv run tools/cards.py dois    # DOIs in taxa/ and docs/ against Crossref
+uv run tools/cards.py index   # regenerate taxa/README.md
+uv run tools/cards.py matrix  # regenerate data/traits.csv
+```
+
+Run `check`, `index` and `matrix` after editing cards, and `dois` after adding references.
+
+## Conventions
+
+- Facts, numbers and citations come from sources read in the task, never from memory. Every
+  DOI is verified against Crossref; never guess one. In references lists, one reference per line
+  with first author, year, title and DOI, so `dois` can compare them.
+- When a source cannot be read in full (paywall, blocked supplement, print only), add it to
+  `docs/closed-literature.csv` with what it would settle; Barry obtains these through his
+  institutional login. Never bypass access controls. PDFs he obtains go in `library/closed/`,
+  which is git-ignored: copyrighted texts are never committed.
+- Never send Barry's email address or other personal data to any service or API, including ones
+  that ask for a contact email.
+- Separate observation, interpretation and speculation; present disputes with both sides.
+- Cards record ages as ICS stage names; give finer ages in `range.notes` with their source.
+  Literature before 2024 mostly uses the GTS2012 Early Devonian boundaries (Lochkovian 419.2,
+  Pragian 410.8, Emsian 407.6 Ma), which differ from ours by up to 3 Myr; see `docs/primer.md` §1.
+- Card traits: `absent` means observed absent, `unknown` means not preserved or not reported,
+  `na` means not applicable. Add vocabulary to `tools/cards.py` when a real case needs it.
+- A card is `draft` until a second agent or Barry has checked its facts; then `reviewed`.
+- British spelling. Dense, precise prose; no filler.
+- Record decisions that shape the programme in `docs/decisions.md`, naming who decided. Keep
+  the AI-roles section of `docs/charter.md` current: the work will be published with a full
+  statement of which systems did what.
+- Commit to `main` when work reaches a coherent state, and push.
+genus,n_rows,n_docs,species_sample,palynodata_min_ma,palynodata_max_ma
+Geminospora,65,35,"papillata; extensa; tuberculata; trumata; sp; compacta; sp.A; sp.A More.,1980; sp.B; treverica; lemurata; spinosa; punctata; svalbardiae",105.0,435.0
+Iberoespora,65,20,"noninspissatosa; sp.A; sp; sp.1 Rubi.& Stee.,2002; cantabrica; glabella; mariae; guzmani; sp.2 Rubi.& Stee.,2002; sp.1; hemiesferica; sp.B",370.0,417.0
+Tetraletes,63,42,"granulatus; sp; horridus; sp.2; variabilis; sp. Mill.& Eame.,1982; sp.1; laevigatus; sp. Vavr.,1982",230.0,570.0
+Cirratriradites,62,30,"megazonalis; sp.B; hystricosus; argutus; cicatricosus; rarus; carnosus; sp.C; formosus; sp; dissutus; aligerens; saturni; sp.A Stee.,1981; sp.F Stre.,1967; sp.A Stre.et al,1981; splendens; faunus; maculatus; peacocki; penningtonensis; tenuis; diaphanus; sp.A; sp.F; avius",230.0,570.0
+Convolutispora,62,42,"quititae; calvaria; sp.G; sp.B; cristatus; mimerensis; oppressa; vermiformis; sanpetrense; disparalis; sp.A; usitata; sinuosus; sp; tuberculata; sp Rubi.& Stee.,2002; bella; reticulata; fromensis; harlandii; tenuis; sp.1; flexuosa",105.0,570.0
+Rhabdosporites,56,40,cymatilus; minutus; sp.A; parvulus; mirus; sp; scamnus; langii,230.0,570.0
+Archaeotriletes,56,27,hebetatus; atavus; honestus; circumseptus; sincerus; hamulus; fillosus; fidus; sp; sp.NI; crassus; setigerus; coalitus; devonicus; sokolovi; furcellatus; callitrychus; incompositus; heteromerus; conspicuus; vitreus; connatus; aduncus; elongatus; villosus; larvatus; longispinus; ramosus,230.0,570.0
+Segestrespora,54,18,"sp.B; sp; laevigata; sp.A Stee.,2001; burgessii; rugosa; sp.C Stee.,2001; sp.A Well.,1991; sp.A Burg.,1991; membranifera",378.0,464.666
+Ancyrospora,52,35,ancyrea; capillata; sp; langii; larvatus; macra; trocha; nettersheimensis; breviadius; incisa; aduncus; sp.B; eurypterota; simplex; magnifica; reuta; grandispinosa,280.0,435.0
+Samarisporites,52,32,megaformis; leclercqi; inusitatus; biornatus; cristatus; sp.A; concinnus; sp; praetervisus; triangulatus; triangularis; hesperus,230.0,435.0
+Laevigatosporites,51,19,marlisae; hians; microellipsoideus; sp; rotundus; communis; verrucosus; bilateralis; laevis; minutus; individuus; sp.2; antiquus; usitatus; lapidosus; mollis; vulgaris; microgranus; microsphaericus; desmoinesensis; sp.B; imperfectus; muralis; pennovalis; labiatus; saxeus; asper; commutatus; bacatus;,0.0,570.0
+Auroraspora,44,31,granulipunctata; macromanifesta; rugosiuscula; sp.N1; macra; solisorta; hyalina; sp; micromanifestus; minuta; torquata; aurora; poljessica,280.0,408.333
+Lycospora,43,31,svalbardiae; sp; micropapillata; pallida; scabrata; minuta; culpa; pellucida; pusilla; adumbrata; granulata; subita,230.0,570.0
+Quadrisporites,42,25,granulatus; sp; variabilis; horridus; neodevonicus,230.0,570.0
+Triletes,42,24,sp; langii; erraticus; velatus; reinschi; sp.A; balticus; paravelatus; ancyreus; oxfordiensis; dubius; echinaceus; catenulatus; bolivianus; ramosus,230.0,570.0
+Raistrickia,42,25,"obtusosetosa; fibrata; densa; macrura; serrulata; sp; aratra; monsrelaxica; spinososaetosa; ampullacea; sp. McGr.,1973; superba; spathulata; variabilis; clavata; sp.A; corynoges; minor; sp.2928 Lanz.& Magl.,1969; baculata; grovensis",230.0,570.0
+Cooksonia,41,18,pertonii; crassiparietilis; cambrensis; caledonica; hemisphaerica; sp,345.0,435.0
+Artemopyra,41,18,"sp.A Burg.& Rich.,1991; sp.1 Well.& Higg.,2000; radiata; brevicosta; temericosta; robusta; scalariformis; sp. Burd.et al,2002; sp.A; sp; rugaticosta; sp. Stee.et al,1996",383.667,435.0
+Amicosporites,40,22,sp.B; splendidus; streelii; lobatus; sp; jonkeri; miserabilis,345.0,440.0
+Euryzonotriletes,40,8,trivialis; fortis; subcrenatus; literatus; tersus; turgidus; orbiculatus; suborbiculatus; incisus; planus; fimbriatus; sectilis; macrodiscus; flexibilis; grosselimbatus; sp; crassipterus,230.0,395.0
+Densosporites,39,29,formosus; atavus; covensis; minutus; sp; granulatus; annulatus; mirificus; devonicus; concinnus; undulatus; orcadensis; parvus; indignabundus; crassus; spitsbergensis; spitzbergensis,230.0,570.0
+Tholisporites,38,26,"ancylus; chulus; densus; divellomedium; sp; sp. McGr.,1973; salantaicus",345.0,423.0
+Clivosispora,38,27,"sp.C; sp. McGr.et al,1970; sp; sp.B; sp.A; verrucata; reticulata",360.0,423.0
+Breconisporites,37,23,"glaber; breconensis; culpa; sp. Turn.,1986; simplex",372.666,404.0
+Hystricosporites,36,23,sp; furcatus; porcatus; reflexus; monosaccus; porrectus; microancyreus; delectabilis; mitratus; corystus,280.0,395.0
+Apiculatisporites,34,25,"erraticus; morbosus; sp.4; eximius; microaenus; sp; perpusillus; microconus; macrurus; rigidispinus; terciensis; sp.1 Jard.& Yapa.,1968; brandtii; sp.3 Jard.& Yapa.,1968",280.0,570.0
+Knoxisporites,32,21,literatus; sp; cancellothyris; sp.N1; riondae; pristinus; hederatus,230.0,570.0
+Zonotriletes,31,15,"rotundus; macropterus; explanatus; sp.3; scrobiculatus; marginatus; sp.1 Jard.& Yapa.,1968; literatus; sp.2 Jard.& Yapa.,1968; alloplectus; subteres; luteolus; acucularis; sp.4 Jard.& Yapa.,1968; acromelus; millegranus; sp.5; rarituberculatus; adversipteralis; deliquescens",230.0,570.0
+Diatomozonotriletes,29,17,sp.2; oligodontus; speciosus; acuminatus; sp.1; sp; subspeciosus; ubertus; devonicus; trilinearis; papillatus; minutus; pectinatus,280.0,395.0
+Vallatisporites,29,16,sp; sp.2; sp.1; annosus; dictyopterus; genuinus; vallatus; pusillites; verrucosus; sp.3; sp.4,230.0,570.0
+Endosporites,28,16,angulatus; biornatus; sp; globiformis; crassaspinosus; granulatus; zonalis; rugatus; rotundus; volans; micromanifestus; hyalinus; ornatus; pellucidus; chagrinensis,230.0,570.0
+Apiculatisporis,28,18,cornutus; obtusus; levis; microconus; globulus; longispinosus; sp; polygamus,230.0,500.0
+Psilophyton,28,17,sp; charientos; dawsonii; forbesii; princeps; crenulatum,345.0,395.0
+Biornatispora,27,8,salopiensis; sp.A; sp.1; dubia; sp.E; sp.C; sp.D; sp.B; sp.2; horlikensis; lanceolata; sp.H,280.0,395.0
+Amocosporites,26,15,infraornatus; sp; splendidus; subornator; miserabilis,370.0,435.0
+Azonotriletes,25,13,inflatus; nigratus; platyrugosus; spinosus; cancellothyris; cristifer; cancellatus; microrugosus; pyramidalis; ancistrophorus,230.0,570.0
+Leonispora,24,19,argovejae; argovegae,370.0,424.0
+Apiculatasporites,23,15,sp; dilucidus; petilus; sp.15112; perpusillus,345.0,500.0
+Zosterophyllum,22,8,yunnanicum; fertile; myretonianum; australianum; sp; divaricatum; llanoveranum,345.0,395.0
+Protosalvinia,21,14,ravenna; chicagoensis; bilobata; furcata; braziliensis; sp; arnoldii,230.0,570.0
+Psophosphaera,20,6,minuta; simplicissima; safes; atava; punctata; atrata; sp; mirabilis; reticulata; obsoleta; minor; obscura; tenuis; obtusa; crassa,345.0,514.0
+Laevigatisporites,20,10,sp; microrugosus; eiserfeyensis; laevigatus; giganteus; minimalis; marlisae,230.0,570.0
+Coronaspora,20,9,"primordiale; sp. Le H.,1983; cromatica; sp; mariae",345.0,435.0
+Perisaccus,19,12,verruculatus; domanicus; cordaites; devonicus; anticus; atavus; depaniptychius; sp; nudus; reticulatus; simplicissimus,230.0,500.0
+Perforosporites,19,12,"robustus; sp.1 Jard.& Yapa.,1968; sp; sp.1 Beju,1967; sp.2 Jard.& Yapa.,1968",345.0,395.0
+Archaeopteris,19,12,macilenta; fissilis; latifolia; jacksonii; halliana; sp,230.0,570.0
+Imperfectotriletes,18,10,patinatus; vavrdovae; sp,411.0,484.0
+Calyptosporites,18,16,proteus; optivus; sp; indolatus; triangulatus; velatus,280.0,408.333
+Camptotriletes,16,15,prionotus; sp.A; dubius; corrugatus; sp; devonicus,230.0,570.0
+Cheilotetras,16,13,"caledonica; sp. Wang et al,1997; sp; sp. Well.,1996",378.0,440.0
+Archaeoperisaccus,16,10,ovalis; oblongus; timanicus; sp; verrucosus,230.0,570.0
+Planisporites,16,9,pseudogranulatus; minimus; punctatus; aureus; verrucosus; microtuberosus; deltoides; crassus; granulatus; furfuris; sp.15116,230.0,570.0
+Parasaccites,15,5,longus; sp; korbaensis; bilateralis; distinctus,230.0,570.0
+Diaphanospora,15,9,perplexa; inassueta; impolita; bollandensis; riciniata; submirabilis; apiculata; depressa; sp,345.0,395.0
+Trilete spore,15,11,sp; verruquee; rugulee,280.0,570.0
+Pustulatisporites,14,11,gibberosus; papillosus; sp.B; sp; sp.A,230.0,570.0
+Cymbohilates,14,6,"allenii; sp; sp.1; lornensis; sp. Hags.,1997; sp.B; variabilis; disponerus; sp.A Well.et al,2000; magnus",378.0,415.333
+Microreticulatisporites,14,4,spicatus; subtriangulatus; spinulosus; microreticulatus; lunatus; faveolatus; punctatus; trigonus; velatus; maculatus; sp; lacunosus; minutus,230.0,570.0
+Trileites,14,9,oxfordiensis,345.0,395.0
+Concentricosisporites,14,5,barbullatus; agradabilis; sp; sagittarius,370.0,418.5
+Rimosotetras,14,10,problematica,401.0,450.0
+Verruciretusispora,13,9,verrucosa; dubia; robusta; magnifica; macrotuberculata,289.0,395.0
+Spelaeotriletes,13,10,sp; resolutus; lepidophytus; balteatus; obtusus,280.0,395.0
+Verrucososporites,12,3,tuberosus; minus; sp; verrucosus; bucculentus; tuberculatus; sp.128; maculosus; firmus; microtuberculatus; morulatus; triquetris,230.0,570.0
+Chelinohilates,12,6,variabilis; maculatus; sinuosus; horridus; lornensis; erraticus; sp,378.0,435.0
+Rugospora,12,7,versabilis; minuta; cerebra; flexuosa; cymatilia; tuscarorensis,280.0,456.667
+Parkia,12,10,decipiens; sp,345.0,408.333
+Retispora,11,8,cassis; lepidophyta,280.0,408.333
+Spinozonotriletes,11,11,unguisus; balteatus; uncatus; sp; maximus,280.0,500.0
+Leiomesotriletes,11,3,sp,395.0,514.0
+Torispora,11,2,speciosa; granulata; sp; securis; recta; tiara; perverrucosa; laevigata; undulata; verrucosa,230.0,570.0
+Dicryptosporites,11,6,radiatus; minus,401.0,440.0
+Laevigate,11,4,"forms; sp.1; sp. Well,1996; sp.3; sp; spore; sp.2; sp Vavr.,1989",383.667,440.0
+Stellatispora,11,4,fahraeusi; inframurinata,378.0,423.0
+Cannanoropollis,11,3,latisaccus; corius; obscurus; triangularis; congoensis,230.0,570.0
+Vermiverruspora,10,2,retorrida; vermiculata; rumneyi; pattersonii; vermoluta; sp,378.0,418.5
+Radiaspora,10,4,sp.I; sp.III; sp; rotata; annulata; sp.II; ampla,345.0,395.0
+Stegambiquadrella,10,8,sp; contenta,423.0,472.0
+Cristatisporites,10,8,speciosus; sp.1; conannulatus; echinatus,280.0,408.333
+Tumulispora,10,6,rarituberculata; variverrucata; malevkensis; ordinaria; marginata,280.0,408.333
+Scylaspora,10,4,downiei; asperverruca; scripta; chartulata; sp,378.0,418.5
+Zonaletes,10,9,crenatus; porosus; pliciformis; arquatus; divellomedium,345.0,395.0
+Dawsonites,10,4,sp; arcuatus,345.0,395.0
+Florinites,9,6,sp; antiquus; visendus; pellucidus; pumicosus; concinnus,230.0,570.0
+Protobarinophyton,9,7,pennsylvanicum; obrutschevii; timanicum,345.0,395.0
+Murospora,9,7,subera; friendii; sp,280.0,395.0
+Zonalosporites,9,1,sp.8; sp.7; sp.12; sp.5; sp.6; sp.4; sp.9; sp.11; sp.10,440.0,500.0
+Sigillariostrobus,9,2,gothani; souichi; horburgensis; goldenbergi; rhombibracteatus; nobilis; ciliatus; feistmanteli,230.0,570.0
+Triquitrites,9,4,tribullatus; arculatus; trigonappendix; papillosus; spinosus; sp; triturgidus,230.0,570.0
+Corbulispora,9,5,sp; subalveolaris; cancellata,280.0,395.0
+Sporogonites,9,6,chapmanii; exuberans,345.0,408.333
+Abditusdyadus,9,5,histosus; chalazus; laevigatus; sp,389.333,440.0
+Thymospora,9,4,minus; perverrucosa; microtuberculata; intorta,267.0,500.0
+Lepidostrobus,9,2,spinosus; sp; variabilis; squarrosus; comosus; braidwoodensis; ornatus; bohdanowiczi; major,230.0,570.0
+Rugosisporites,8,3,chartulatus; kozlicus,395.0,415.333
+Cuneatisporites,8,3,flavatus; obscurus; fundiensis,230.0,570.0
+Protopteridium,7,4,thomsonii; hostinense; sp; minutum,230.0,570.0
+Apiculate,7,2,monads; sp.1; dyad; sp.2; pseudodyad,387.0,405.0
+Hostimilla,7,4,globosa; pinnata,345.0,395.0
+Cornispora,7,4,varicornata; sp; monocornata,314.0,395.0
+Bullatisporites,7,6,emsiensis; bullatus,360.0,395.0
+Salopella,7,4,marcensis; allenii,345.0,395.0
+Insolisporites,7,2,bassettii; anchistinus,395.0,418.5
+Sawdonia,7,4,ornata; acanthotheca,345.0,395.0
+Plicatipollenites,7,4,trigonalis; indicus; gondwanensis,230.0,570.0
+Kraeuselisporites,7,6,sp; gaspiensis; splendens; gaspesiensis; ornatus,267.0,500.0
+Lophomesotriletes,7,2,sp,395.0,500.0
+
+2026-10-27T04:03:37.805422Z ERROR codex_core::tools::router: error=collab spawn failed: Fatal error: failed to load model context for thread 01a17b86-d451-7700-8d2a-defb3073609e: invalid thread-store request: no rollout found for thread id 01a17b86-d451-7700-8d2a-defb3073609e
+exec
+/bin/zsh -lc "cat docs/charter.md && cat docs/decisions.md && python3 -c 'import csv; r=list(csv.DictReader(open(\"data/spores/work/codex/genera/chunk1.csv\"))); print(\"TOTAL\",len(r)); print(\"\\n\".join(str(i+1)+\" \"+x[\"genus\"] for i,x in enumerate(r)))'" in /Users/bwbrook/papers/silurian_plants
+ succeeded in 0ms:
+# Charter
+
+Status: **Stage 0, orientation** (opened 2026-10-26). No research question is chosen yet.
+
+## The idea
+
+Barry's starting point, in his words (chat, 2026-10-26): "a simulation modelling project on the
+evolution of early land plants (late Ordovician to early Devonian), but it's a very nascent
+thought". He frames it as "a long-term development project that might prove infeasible or
+uninteresting, but is worth … at least exploring", with no hurry, and with the structure left
+free to evolve.
+
+## Why this interval
+
+Between roughly 470 and 393 Ma, land plants went from a dispersed-spore record with no
+recognisable bodies, through centimetre-scale leafless axes, to lycopsids and euphyllophytes with
+leaves, roots, secondary-growth precursors and metre-scale height. Nearly every innovation that
+defines vascular plants appears in that window: desiccation-tolerant spores, cuticle and
+stomata, lignified conducting cells, branching sporophytes independent of the gametophyte,
+apical dominance, leaves and roots. The same plants are implicated in changes to weathering,
+atmospheric CO2 and O2, river form and soil. The record is unusually uneven, with abundant spores
+and a few exceptional deposits (the Rhynie Chert above all) set against long gaps in
+megafossils, so most explanations of the pattern remain verbal. That combination of a major
+evolutionary transition, rich constraints and few quantitative tests is the case for modelling.
+
+## What would make it worth doing
+
+A framing earns a modelling programme if it meets all four tests:
+
+1. **Discriminating evidence.** Competing hypotheses predict outcomes that the fossil, proxy or
+   experimental record can tell apart: trait sequences, timing, size distributions, diversity
+   or disparity patterns, geochemical signals.
+2. **Novelty.** The model adds something the precedents (`docs/precedents.md`) do not: a
+   mechanism, a coupling, a confrontation with data, or a reanalysis that changes a conclusion.
+3. **Tractability.** The data can be assembled and the model run with resources on the mesh,
+   without years of bespoke data collection.
+4. **Interest.** Barry finds the question worth his attention.
+
+If no framing passes tests 1 and 2 after orientation, the project is parked with a short written
+account of why. That account is itself a useful output.
+
+## Route
+
+0. **Orientation** (current): taxon cards (`taxa/`), a period primer (`docs/primer.md`), a review
+   of modelling precedents (`docs/precedents.md`) and candidate framings (`docs/framings.md`).
+   Ends with a choice of framing, which is Barry's call on a recommendation from the agents.
+1. **Sketch:** the smallest end-to-end model of the chosen framing, deterministic where possible.
+2. **Ground:** null models, baselines and the data the model will confront (trait matrices built
+   from the cards, occurrence data, proxy series).
+3. **Enrich:** one mechanism at a time, each motivated by a discrepancy with data.
+4. **Compare:** contrasts that discriminate between competing explanations.
+5. **Synthesise:** what is robust, what depends on representation, and what is next.
+
+Stages are a guide, not approval gates. Barry's operating principle applies: reversible work
+proceeds and is shown afterwards; first public release, submission and outward-facing messages
+are his decisions.
+
+## Outputs
+
+The repository is private for now. Candidate outputs, in any combination: the card collection
+and trait matrix as an open dataset, a review or perspective, a modelling paper with code and
+data archived, and the human–AI correspondence record published alongside.
+
+## Contributors and AI roles
+
+- Barry W. Brook: originator, scientific adviser and final reviewer.
+- Claude Opus 5.5 (Anthropic, `claude-opus-5-5`) in Claude Code: orchestration, programme
+  design, synthesis, framings, tooling.
+- Claude Sonnet 5.5 (Anthropic) subagents: literature research and first drafts of taxon cards,
+  the primer and the precedents review.
+
+`docs/decisions.md` records who decided what and when, for the eventual statement of AI roles.
+# Decisions
+
+Dated record of decisions that shape the programme. Newest first. Say who decided, and quote
+Barry exactly (with source) or label a paraphrase.
+
+## 2026-10-27: evidence base, tranche 2
+
+- **Scope** (Barry, chat, 2026-10-27): before commenting further on the hypothesis, fill out the
+  core evidence base, "to make sure all the relevant data on the time period in question and all
+  the specimens (from databases) are properly sourced, indexed and extracted", continuing to work
+  with the EPRP session as required.
+- **Source register** (Claude): `docs/sources.md` lists every held and missing source with status,
+  licence and who does the work. Database and deposit work goes to the EPRP session (request sent
+  2026-10-27); literature extraction stays here.
+- **Cards, tranche 2.** Barry proposed:
+  - the Victorian taxa *Yarravia*, *Hedeia* and *Pluricaulis biformis*; *Dawsonites*; *Palaeostigma*;
+  - living comparison taxa *Psilotum*, *Tmesipteris* and *Lycopodium squarrosum*;
+  - *Parka*, *Ulothrix* and *Ulva*;
+  - group cards on lycopods and trimerophytes; *Archaeopteris*.
+
+  Claude added:
+  - *Coleochaete*, *Chara* and the Zygnematophyceae, because the streptophyte relatives are the
+    phylogenetically apt life-cycle exemplars; *Ulva* and *Ulothrix* stay as theory exemplars;
+  - hornworts and *Marchantia*;
+  - group cards for eophytes, rhyniophytoids and zosterophylls;
+  - five site cards (Rhynie, Posongchong, Xitun, Bathurst Island, Welsh Borderland mesofossils)
+    and a Baragwanathia-flora card, as sampling units for an observation model;
+  - the taxa that tranche-1 agents flagged as missing (*Nothia*, *Baragwanathia brevifolioides*,
+    *Metzgeriothallus*, *Franhueberia*, *Salopella*);
+  - *Wattieza* and *Leclercqia* as anchors beyond the window.
+
+  35 cards in all, drafted by Claude Sonnet 5.5 subagents.
+- **Schema** (Claude): card kinds `extant` and `group`, ranks `grade` and `clade`, and groups for
+  chlorophyte algae, ferns, progymnosperms and cladoxylopsids. `data/timescale.csv` gains the
+  Frasnian, Famennian and Tournaisian bases (ICS v2024/12) for the anchors; the existing rows are
+  unchanged.
+- **Dispersed spores** (Claude): a scoping study (`docs/spore-compilation-plan.md`) runs in
+  parallel with EPRP's check of Palynodata, before any compilation starts.
+- **Spore and climate sources found** (EPRP session; reviewed by Claude):
+  - Palynodata (GSC Open File 5793, OGL-Canada), with 14,114 window spore rows from 985
+    documents, extracted as-is into `data/external/spores/`;
+  - HadCM3L land climate (`scotese_02` suite, CC BY 4.0) in `data/external/climate/`.
+
+  Asking Wellman, Steemans and Vecoli for their full 2013 assemblage database is an external
+  contact and therefore Barry's decision.
+- **Tranche-2 card audit** (two independent Sonnet agents, 8 cards, 99 claims): 80 supported,
+  0 wrong, 2 misattributed, 9 imprecise, 9 unverifiable; all fixed
+  (`docs/audits/2026-10-27-tranche2-audit-*.md`). The audit confirmed that *Hedeia* is a junior
+  synonym of *Yarravia* (McSweeney et al. 2021) and that *Pluricaulis biformis* is an unpublished
+  manuscript name. It corrected the *Prototaxites* first-occurrence basis. Both cards stay, with
+  their status stated, because they are the names in older literature and in PBDB.
+- **Process lapses** (Claude, reported to Barry): a card agent sent Barry's email address to
+  Unpaywall's API once; the agent brief now forbids it. A `git add -A` briefly committed the EPRP
+  session's unreviewed files; it was reverted within minutes, and only explicit paths are staged
+  while another session writes in the tree.
+
+## 2026-10-27: EPRP deposit reviewed and committed
+
+- **Deposit accepted** (Claude, reviewing at Barry's request): `data/eprp/` is committed except
+  `local/`, which stays git-ignored. Review: `docs/audits/2026-10-27-eprp-deposit-review.md`.
+  All 88 files match their manifest, and the PBDB counts reproduce independently.
+- **Facts that changed** (Claude): PBDB holds almost no pre-Emsian spores and only 259 pre-Emsian
+  core megafossil occurrences, so F3 needs a dispersed-spore compilation from the literature, and
+  its tractability is now moderate. F4's inputs are now on the mesh, so its tractability is
+  moderate. Eco-evolutionary vegetation has already been coupled to the carbon cycle for later
+  intervals (Rogger et al. 2024, 2026; Gurung et al. 2022), so F5's novelty is moderate.
+  `docs/precedents.md` gains an addendum and loses an overstatement; `docs/framings.md` is updated
+  to match. The framing choice remains Barry's.
+
+## 2026-10-26: orientation tranche 1 delivered
+
+- **Delivered** (Claude): 24 draft cards, `docs/primer.md`, `docs/precedents.md`,
+  `docs/framings.md`, the card index and `data/traits.csv`.
+- **Framing recommendation** (Claude, pending Barry's choice): F3 (whether the record supports
+  the new timescale, with an observation model) as the first deliverable, and F1 with F2 (the
+  rise of the sporophyte) as the core simulation. The precedents review, drafted independently,
+  ranked a closed-loop plant–carbon-cycle model (F5) among its top three; `docs/framings.md`
+  records the disagreement.
+- **Literature that changed the plan.** Hooper et al. (2026, Nature Plants, 22 October) moved
+  crown embryophytes to 457–450 Ma and crown tracheophytes to 432–428 Ma, which sharpened F3.
+  Loron et al. (2026) argue that Prototaxites was not a fungus. Earp (2024) places the Yea
+  Baragwanathia beds mostly in the Early Devonian, which weakens the Silurian-Baragwanathia
+  claim. Each is recorded in the relevant card.
+- **Card quality** (Claude): a separate Sonnet agent audited a sample of four cards
+  (`docs/audits/2026-10-26-card-sample-audit.md`). Of 58 claims, 44 were supported, 0 wrong,
+  2 misattributed, 7 overstated and 5 unverifiable. The errors were lost hedges and citation
+  drift, not wrong numbers. The nine flagged claims are fixed. All cards stay `draft`: no number
+  in them should become a model prior until it has been checked against its primary source.
+- **Card conventions settled in use** (Claude): names follow current nomenclature (`Aglaophyton
+  majus`, file `aglaophyton-majus.md`); citations use the conventional volume year, and the DOI
+  checker accepts the print or online year; DOIs may contain brackets (SICI form).
+
+## 2026-10-26: programme opened
+
+- **Scope** (Barry, chat): Late Ordovician to Early Devonian; exploratory, long-term, may be
+  abandoned. Cards and context first, workflows and science later.
+- **Repository** (Claude, under Barry's stated intent "we'll want to set up a private GitHub
+  repo"): private `BWBrook/silurian_plants`, branch `main`, minimal structure that grows with the
+  work.
+- **Taxon cards** (Barry proposed; Claude designed the format): one Markdown file per taxon with
+  YAML front matter that doubles as a trait record, so the cards can later be compiled into a
+  character matrix without re-reading the prose. Traits distinguish `absent`, `unknown` and `na`.
+  `tools/cards.py` validates the schema, checks DOIs against Crossref and builds the index.
+- **Timescale** (Claude): ICS International Chronostratigraphic Chart v2024/12, held once in
+  `data/timescale.csv`. Its Ordovician and Silurian ages are GTS2020's, but its Devonian ages come
+  from Harrigan et al. (2022), not GTS2020 (Cohen et al. 2025). The primer agent caught that the
+  original wording of this entry, "GTS2020 ages", was wrong; `docs/primer.md` §1.2 compares the
+  three scales. Cards record stage names, and ages are derived from the table,
+  so a later timescale revision is a one-file change.
+- **First tranche** (Claude): 24 cards across five themes (earliest embryophyte evidence,
+  rhyniophytoids and the Rhynie Chert, lycophyte lineage, early euphyllophytes, non-embryophyte
+  terrestrial organisms), a period primer and a review of modelling precedents, drafted by
+  Claude Sonnet 5.5 subagents with web literature search, then checked by Claude Opus 5.5.
+TOTAL 107
+1 Geminospora
+2 Iberoespora
+3 Tetraletes
+4 Cirratriradites
+5 Convolutispora
+6 Rhabdosporites
+7 Archaeotriletes
+8 Segestrespora
+9 Ancyrospora
+10 Samarisporites
+11 Laevigatosporites
+12 Auroraspora
+13 Lycospora
+14 Quadrisporites
+15 Triletes
+16 Raistrickia
+17 Cooksonia
+18 Artemopyra
+19 Amicosporites
+20 Euryzonotriletes
+21 Densosporites
+22 Tholisporites
+23 Clivosispora
+24 Breconisporites
+25 Hystricosporites
+26 Apiculatisporites
+27 Knoxisporites
+28 Zonotriletes
+29 Diatomozonotriletes
+30 Vallatisporites
+31 Endosporites
+32 Apiculatisporis
+33 Psilophyton
+34 Biornatispora
+35 Amocosporites
+36 Azonotriletes
+37 Leonispora
+38 Apiculatasporites
+39 Zosterophyllum
+40 Protosalvinia
+41 Psophosphaera
+42 Laevigatisporites
+43 Coronaspora
+44 Perisaccus
+45 Perforosporites
+46 Archaeopteris
+47 Imperfectotriletes
+48 Calyptosporites
+49 Camptotriletes
+50 Cheilotetras
+51 Archaeoperisaccus
+52 Planisporites
+53 Parasaccites
+54 Diaphanospora
+55 Trilete spore
+56 Pustulatisporites
+57 Cymbohilates
+58 Microreticulatisporites
+59 Trileites
+60 Concentricosisporites
+61 Rimosotetras
+62 Verruciretusispora
+63 Spelaeotriletes
+64 Verrucososporites
+65 Chelinohilates
+66 Rugospora
+67 Parkia
+68 Retispora
+69 Spinozonotriletes
+70 Leiomesotriletes
+71 Torispora
+72 Dicryptosporites
+73 Laevigate
+74 Stellatispora
+75 Cannanoropollis
+76 Vermiverruspora
+77 Radiaspora
+78 Stegambiquadrella
+79 Cristatisporites
+80 Tumulispora
+81 Scylaspora
+82 Zonaletes
+83 Dawsonites
+84 Florinites
+85 Protobarinophyton
+86 Murospora
+87 Zonalosporites
+88 Sigillariostrobus
+89 Triquitrites
+90 Corbulispora
+91 Sporogonites
+92 Abditusdyadus
+93 Thymospora
+94 Lepidostrobus
+95 Rugosisporites
+96 Cuneatisporites
+97 Protopteridium
+98 Apiculate
+99 Hostimilla
+100 Cornispora
+101 Bullatisporites
+102 Salopella
+103 Insolisporites
+104 Sawdonia
+105 Plicatipollenites
+106 Kraeuselisporites
+107 Lophomesotriletes
+
+web search: 
+web search: Geminospora Iberoespora Tetraletes spore genus morphology ...
+web search: 
+exec
+/bin/zsh -lc "rg --files library data/spores taxa | head -90 && rg -n 'Protosalvinia|Zosterophyllum|Archaeopteris|Microreticulatisporites|Spelaeotriletes|Rugospora|Verrucososporites' taxa library docs data/spores -g '*.md' -g '*.txt' -g '*.json' -g '"'!chunk*.csv'"'" in /Users/bwbrook/papers/silurian_plants
+ succeeded in 0ms:
+data/spores/sources/wellman2013_assemblages.csv
+data/spores/sources/wellman2013_taxa.csv
+data/spores/crosswalks/exclusions.csv
+data/spores/crosswalks/age_names.csv
+data/spores/crosswalks/locations.csv
+data/spores/work/age_names.csv
+taxa/bathurst-island-flora.md
+taxa/early-lycopsids.md
+taxa/xitun-flora.md
+taxa/tortotubus-protuberans.md
+taxa/aglaophyton-majus.md
+taxa/nothia-aphylla.md
+taxa/leclercqia.md
+taxa/anthoceros.md
+taxa/renalia-hueberi.md
+taxa/rhynie-chert-biota.md
+taxa/coleochaete.md
+taxa/franhueberia-gerriennei.md
+taxa/metzgeriothallus-sharonae.md
+taxa/ulva.md
+taxa/sawdonia-ornata.md
+taxa/zosterophylls.md
+taxa/marchantia-polymorpha.md
+taxa/psilophyton.md
+taxa/cooksonia.md
+taxa/wattieza.md
+taxa/baragwanathia-brevifolioides.md
+taxa/README.md
+taxa/riccardiothallus-devonicus.md
+taxa/ambitisporites.md
+taxa/zygnematophyceae.md
+taxa/early-glomeromycotan-fungi.md
+taxa/drepanophycus-spinaeformis.md
+taxa/chara.md
+taxa/dawsonites.md
+taxa/asteroxylon-mackiei.md
+taxa/rhynia-gwynne-vaughanii.md
+taxa/prototaxites.md
+taxa/ulothrix.md
+taxa/rhynie-chert-gametophytes.md
+taxa/pluricaulis-biformis.md
+taxa/partitatheca.md
+taxa/trimerophytes.md
+taxa/horneophyton-lignieri.md
+taxa/salopella.md
+taxa/palaeostigma.md
+taxa/hedeia.md
+taxa/archaeopteris.md
+taxa/welsh-borderland-mesofossils.md
+taxa/phlegmariurus-squarrosus.md
+taxa/eophyllophyton-bellum.md
+taxa/parka-decipiens.md
+taxa/baragwanathia-longifolia.md
+taxa/_template.md
+taxa/posongchong-flora.md
+taxa/ordovician-cryptospores.md
+taxa/eophytes.md
+taxa/nematothallus.md
+taxa/psilotum-nudum.md
+taxa/winfrenatia-reticulata.md
+taxa/rhyniophytoids.md
+taxa/baragwanathia-flora.md
+taxa/zosterophyllum.md
+taxa/aberlemnia-caledonica.md
+taxa/pertica.md
+taxa/tmesipteris.md
+taxa/yarravia.md
+data/spores/work/spore_genera.csv
+data/spores/work/wellman2013/appendix.txt
+data/spores/work/locations.csv
+data/spores/work/codex/genera_pilot/out.json
+data/spores/work/codex/genera_pilot/genera_sample.csv
+data/spores/work/codex/genera_pilot/schema.json
+data/spores/work/codex/genera_pilot/sonnet.csv
+data/spores/work/codex/genera_pilot/log.txt
+data/spores/work/codex/genera_pilot/prompt.md
+data/spores/work/codex/genera_pilot/consensus.csv
+data/spores/work/codex/wellman2013/out.json
+data/spores/work/codex/wellman2013/log_Pridoli.txt
+data/spores/work/codex/wellman2013/prompt_Wenlock.md
+data/spores/work/codex/wellman2013/prompt_Ordovician.md
+data/spores/work/codex/wellman2013/prompt_Pridoli.md
+data/spores/work/codex/wellman2013/chunk_Pridoli.txt
+data/spores/work/codex/wellman2013/log_Ordovician.txt
+data/spores/work/codex/wellman2013/schema.json
+data/spores/work/codex/wellman2013/out_Pridoli.json
+data/spores/work/codex/wellman2013/out_Llandovery.json
+data/spores/work/codex/wellman2013/chunk_Ordovician.txt
+data/spores/work/codex/wellman2013/log.txt
+data/spores/work/codex/wellman2013/appendix_numbered.txt
+docs/decisions.md:19:  - group cards on lycopods and trimerophytes; *Archaeopteris*.
+docs/sources.md:24:| PBDB anchors, Frasnian–Famennian | 163 occurrences (*Archaeopteris*, *Callixylon*, *Eospermatopteris*, *Elkinsia*) | held | `data/eprp/record/` | CC0 |
+docs/primer.md:141:| Zosterophylls | lateral stalked sporangia; K-branching in some (Xue 2012) | *Zosterophyllum*, *Ramoferis* (Hao & Xue 2011) | Ludfordian, Arctic Canada (Kotyk et al. 2002); Lochkovian, Yunnan | stem-lycophytes (Clark et al. 2023). *Z. shengfengense* has the oldest known rooting system: a rhizome with root-like axes about 20 mm long, root : shoot 0.028 (Hao et al. 2010) |
+docs/primer.md:184:3. (I; new, untested) The calibrations are wrong. Hooper et al. (2026) reconstruct 27 spore characters across 27 living and 11 fossil genera (four methods, three timetrees, eophytes as stem-embryophytes or stem-tracheophytes). The ancestral embryophyte made unenveloped trilete monads from tetrahedral tetrads, with a three-layered sporoderm and monoplastidic meiosis. Trilete spores therefore mark total-group embryophytes, not vascular plants, and cryptospores cannot calibrate the crown. Their constraints: crown-Embryophyta at most 459.1 Ma (oldest possible trilete spores, Dalby Limestone, central Sweden) and at least 426.9 Ma (*Cooksonia* cf. *pertoni*); crown-Tracheophyta 431.2–420.7 Ma (to a Ludlow *Zosterophyllum*, Bathurst Island). The crown-embryophyte mean is 55 Myr younger than in Harris et al. (2022), and the gap to the oldest unequivocal land-plant fossils shrinks to as little as 19 Myr.
+docs/primer.md:266:- Hao S, Xue J, Guo D, et al. (2010). Earliest rooting system and root : shoot ratio from a new Zosterophyllum plant. New Phytologist 185(1): 217-225. https://doi.org/10.1111/j.1469-8137.2009.03056.x
+taxa/bathurst-island-flora.md:9:  Canada, Laurussia. Zosterophylls are a stem-lycophyte grade (see the Zosterophyllum card); the authors call
+taxa/bathurst-island-flora.md:43:  branching: {state: isotomous, note: "Isotomous in Macivera (32-40 degrees), aff. Zosterophyllum sp. A (four isotomies) and the Hostinella axes (Kotyk et al. 2002)."}
+taxa/bathurst-island-flora.md:46:  conducting_tissue: {state: unknown, note: "Some pyrite permineralisation in aff. Zosterophyllum sp. B shows elongate axis cells only."}
+taxa/bathurst-island-flora.md:50:      Lateral, in dense one- or two-rowed spikes or helical clusters (cf. Bathurstia, Distichophytum, Zosterophyllum
+taxa/bathurst-island-flora.md:51:      and aff. forms); terminal in the rhyniophytoid (two sporangia 3.0-3.2 mm across) and in aff. Zosterophyllum
+taxa/bathurst-island-flora.md:74:Late Ludlow beds on Bathurst Island, Arctic Canada, contain ten fertile plants of seven taxa, six of them zosterophylls, with spikes and sporangial clusters much larger and more elaborate than the mm-scale axes of contemporary rhyniophytoids (Kotyk et al. 2002). The authors argue this is the best evidence for substantial morphological complexity in the Silurian. Preserved lengths are modest (at most 8.1 cm), so the claim concerns fertile structure and complexity, not measured stature. The flora anchors the oldest firmly dated *Zosterophyllum* and is used in clock calibration.
+taxa/bathurst-island-flora.md:83:| [*Zosterophyllum*](zosterophyllum.md) sp. | 1 | 1.0 mm axis, at least 27 reniform sporangia on stalks 1-3 mm |
+taxa/bathurst-island-flora.md:84:| aff. *Zosterophyllum* sp. A | 1 | 2.1 mm axis, four isotomies, discoid sporangia on minute stalks |
+taxa/bathurst-island-flora.md:85:| aff. *Zosterophyllum* sp. B | 1 | 1.9-2.4 mm axis, four terminal stalked sporangia |
+taxa/bathurst-island-flora.md:104:Kotyk et al. (2002) call the Victorian *Baragwanathia* flora less anomalous given Bathurst Island, since both show complexity beyond rhyniophytoid-dominated Laurussian floras; see [*Baragwanathia*](baragwanathia-longifolia.md) for the dispute over that age. Most Silurian taxa here are left under cf. or aff. names. The *Zosterophyllum* specimen is, in the authors' words, perhaps a diminutive form of a Pragian Bathurst Island species, related to *Z. deciduum*, or new, so it stays *Zosterophyllum* sp. Sporangial clustering and reduced stalks are common here, and Raymond (1987) saw clustering as a possible adaptation to dry or dry and cool conditions (cited by Kotyk et al.).
+taxa/bathurst-island-flora.md:112:- **Calibration weight.** Recent clock work uses a Ludlow *Zosterophyllum* from here as the minimum for crown tracheophytes (see Zosterophyllum card). The fossil is a single incomplete specimen (US384-8137), so the bound rests on one fragment and on invertebrate dates.
+docs/audits/2026-10-27-tranche2-audit-b.md:1:# Audit 2b: zosterophylls, Psilotum nudum, Ulothrix, Archaeopteris
+docs/audits/2026-10-27-tranche2-audit-b.md:19:| 4 | Late Ludlow zosterophyll is the oldest secure crown-tracheophyte; sets crown-Tracheophyta minimum at 420.7 Ma while Hooper place the node at 432-428 Ma | Hooper et al. 2026 | SUPPORTED | Hooper: crown-Tracheophyta "constrained to 431.2-420.7 Ma on the basis of ... Cooksonia cf. pertoni and the earliest secure record of crown-Tracheophyta, which is Zosterophyllum sp. from ... Ludlow (Silurian)" Bathurst Island; clock result 432-428 Ma. Hooper say "Ludlow", the card says "late Ludlow" (consistent with Kotyk). |
+docs/audits/2026-10-27-tranche2-audit-b.md:25:| 10 | "Preserved axis length averages 74, 120 and 87 mm in the Lochkovian, Pragian and Emsian" placed in the group-level size bullet | Huang et al. 2025 | I-I | Numbers are right (74.1, 120.1, 87.2 mm) but they are for the genus Zosterophyllum only (n = 10, 15, 6), not zosterophyllopsids. Add "Zosterophyllum". |
+docs/audits/2026-10-27-tranche2-audit-b.md:30:Not in the card but relevant to its open question "Is the Pridoli gap real": Wang et al., Annals of Botany (online 26 Dec 2025, doi 10.1093/aob/mcaf337) describe a new Zosterophyllum from the Pridoli of Xinjiang, and Huang 2025 already counts Z. qujingense as Silurian.
+docs/audits/2026-10-27-tranche2-audit-b.md:71:| 1 | Cairo roots in a mid-Givetian palaeosol, ca. 385 Ma; 2-3 Myr older than Gilboa; dating by marine correlation; roots assigned by comparison | Stein et al. 2020 | SUPPORTED | Text: Plattekill Fm "correlative with the marine Ludlowville Formation ... early mid Givetian (ca. 385 Ma)"; "ca. 2-3 Ma older" than Gilboa, "dependent on time scale used" (their Givetian duration 7.5 Myr vs 5.0 Myr). Abstract: roots "assigned to the lignophyte group containing the genus Archaeopteris"; "single enigmatic root system" is lycopsid-like. Card caveats are adequate. |
+docs/audits/2026-10-27-tranche2-audit-b.md:78:| 8 | In East Greenland Archaeopteris became dominant during and after the Kellwasser carbon-isotope excursions, not before; volcanism proposed cause | Marshall et al. 2025 | SUPPORTED | Abstract. |
+docs/audits/2026-10-27-tranche2-audit-b.md:81:| 11 | 19 Callixylon species from late Givetian to Mississippian; eustele, mesarch xylem, grouped radial pits; arborescent lignophytes distinct from Archaeopteris in latest Devonian | Tanrattana 2017; Decombeix 2011 | SUPPORTED | Abstracts. |
+docs/audits/2026-10-27-tranche2-audit-b.md:85:| 15 | Archaeopteris grew both within the palaeoantarctic circle and on the palaeoequator | Capel et al. 2022 | SUPPORTED | Sentence found in Capel's thesis chapter III (cites Gess & Whitfield 2020). |
+docs/audits/2026-10-27-tranche2-audit-b.md:91:(a) Claisse et al. 2025. Yes. Abstract: "Within the Lycophytina clade, zosterophylls form a grade paraphyletic to the lycopsids. A Sawdoniaceae clade of zosterophylls is sister to the lycopsids; the Sawdoniaceae-lycopsids clade is sister to a clade that includes the barinophytes." The full text adds that the Bayesian analysis recovered the same Sawdoniaceae clade and sister relationship ("strongest support to date") although overall topological congruence between parsimony and Bayesian is only 43.6% (17/39 nodes). Lycophytina comprises two clades; zosterophylls define the stem. The card states all of this. The only extra caveat worth adding: just one Zosterophyllum species (myretonianum) was sampled, so the polyphyly of the genus is not tested directly.
+docs/audits/2026-10-27-tranche2-audit-b.md:97:(d) Archaeopteris. Heights: the 11-32 m range is reported accurately (Table S1: 11.18-31.51 m, 18 trees, three estimators) and with the right main caveats ("approximations primarily designed to illustrate the approach"; root-based; conifer allometry; not attached to a trunk). One attribution error: the power law H = 3.21 DBH^0.6 is a generic conifer function from Hulshof et al. 2015, not calibrated on Araucaria; Araucaria was used only for the root-diameter to DBH step, from a small cultivated-tree pilot dataset. The DBH-route estimates span only 18.5-26.9 m; the extremes come from the direct trunk-base route. I read the author-accepted manuscript, not the published supplement; the card's numbers match it exactly. Age: ca. 385 Ma is Stein's own figure ("early mid Givetian (ca. 385 Ma)", by correlation of the Plattekill Fm with the marine Ludlowville Fm), 2-3 Myr older than Gilboa, timescale-dependent (Givetian 7.5 vs 5.0 Myr in the cited scales); the card notes correlation dating and assignment by comparison.
+docs/audits/2026-10-27-tranche2-audit-b.md:111:Every WRONG or MISATTRIBUTED item: Archaeopteris row 3 (Araucaria calibration of the height power law; correct to "Araucaria calibrates only root diameter to DBH; H = 3.21 DBH^0.6 is a generic conifer function from Hulshof et al. 2015"). No WRONG claims.
+docs/audits/2026-10-27-tranche2-audit-b.md:112:I-I items: zosterophylls `range.last` Givetian (sources reach early Late Devonian); zosterophylls axis-length means apply to Zosterophyllum only; Ulothrix "day length" wording; Archaeopteris "now preceded by Lochkovian charcoal" (earliest charcoal is Silurian).
+docs/audits/2026-10-27-tranche2-audit-b.md:119:5. Cards lean on the newest literature (Claisse 2025, Hooper Oct 2026, Cascales-Miñana 2026) and read it correctly; the main omission found is Wang et al. 2025 (Pridoli Zosterophyllum), which bears on the zosterophyll "Pridoli gap" open question.
+taxa/xitun-flora.md:9:  (Xitunia, Zosterophyllum, an unnamed K-branching genus, an aff. Huia) and so unlike the isotomous, terminal-sporangium
+taxa/xitun-flora.md:27:  height_cm: {min: null, max: 9.8, note: "Aerial axes 98 mm tall in the one uprooted whole specimen of Zosterophyllum shengfengense (Hao et al. 2010). Other taxa: no heights reported in the abstracts read."}
+taxa/xitun-flora.md:48:  for at least that plant (inference). Zosterophyllum shengfengense was probably semi-aquatic (Hao et al. 2010).
+taxa/xitun-flora.md:56:  - cite: "Hao S, Xue J, Guo D, Wang D (2010). Earliest rooting system and root : shoot ratio from a new Zosterophyllum plant. New Phytologist 185: 217-225."
+taxa/xitun-flora.md:81:- *Zosterophyllum minorstachyum*: K-shaped branching at the base, small terminal spikes of helically arranged sporangia.
+taxa/xitun-flora.md:82:- *Zosterophyllum shengfengense*: tufted, aerial axes 98 mm tall, rhizome with root-like axes about 20 mm long; root:shoot 0.028, root-like axes about 3% of biomass (see [*Zosterophyllum*](zosterophyllum.md)).
+taxa/xitun-flora.md:98:Xue (2012) argues that a zosterophyll-dominated Lochkovian South China, set against rhyniophytoid-dominated Laurussia and western Gondwana, documents phytogeographic isolation. The sampling behind that contrast is a handful of taxa against the much larger Welsh Borderland and Rhynie datasets, so province differences are partly sampling differences (my inference). The abstracts do not discuss relationships among the zosterophyll genera; see the Zosterophyllum card for the grade.
+docs/precedents.md:33:**Mechanics, height and roots.** Mechanics is the thinnest strand. Niklas & Kerchner (1984) treated bending moment; Raven (2018) reports lignin in the outer cortex of Rhynie plants and proposes hydraulics, not support, as the likely limit to height. Searches found no recent quantitative height or buckling model for these axes. Wilson & Knoll (2010) built a physiologically explicit tracheid morphospace (cell length, diameter, pit resistance) for seed plants, a template for Devonian xylem. Raven & Edwards (2001) put roots' origin in at least two Early Devonian lineages; Hetherington & Dolan (2018) found Asteroxylon rooting axes with meristems but no root cap; Hao et al. (2010) estimated a root:shoot ratio of 0.028 for a 98 mm Zosterophyllum.
+docs/precedents.md:55:**Origin of the sporophyte.** Haig (2008) argued that modern evidence favours an updated antithetic theory. Hemsley (1994) and Kato & Akiyama (2005) developed interpolation scenarios; Niklas & Kutschera (2010) argued for a haplobiontic ancestor and a dimorphic cycle even in Cooksonia, Rhynia and Zosterophyllum. Fossils contradict the last point: Rhynie gametophytes are axial and more or less isomorphic with sporophytes (Remy et al. 1993; Kenrick 1994; Taylor et al. 2005; Gerrienne & Gonez 2011). Kenrick (2018) proposed that independence of the sporophyte arose by expanding gametophytic gene expression into it, via an extinct isomorphic variant. Bowman et al. (2016) review the genetics of the transition.
+docs/precedents.md:202:- Hao S., Xue J., Guo D., Wang D. (2010) Earliest rooting system and root : shoot ratio from a new Zosterophyllum plant. New Phytologist 185, 217-225. https://doi.org/10.1111/j.1469-8137.2009.03056.x
+docs/audits/2026-10-27-tranche2-audit-a.md:17:| P3 | The 2020 Alcheringa paper erects Parazosterophyllum timsiae (Ghin Ghin Road) and Gippslandites minutus (Boola Fm, Tyers), neither being P. biformis; G. minutus rests on Tims's name Z. minutum | S | Thesis ch.3 (= 2020 paper): "Zosterophyllum minutum is formally proposed herein as Gippslandites minutus gen. et sp. nov."; etymology "following the unpublished manuscript name used by Tims (1980, p. 98)". |
+taxa/leclercqia.md:114:- **Ligule before heterospory.** Homosporous ligulate plants at about 385 Ma, with heterospory arising later in ligulate lycopsids (Wellman et al. 2009), fix an order of innovations; the lignophyte [Archaeopteris](archaeopteris.md) was heterosporous by the Givetian, in a separate lineage.
+taxa/pluricaulis-biformis.md:47:  - cite: "McSweeney FR, Shimeta J, Buckeridge JStJ (2022). Lower Devonian Zosterophyllum-like plants from central Victoria, Australia, and their significance. Memoirs of Museum Victoria 81: 25-41."
+taxa/pluricaulis-biformis.md:85:- The 2020 paper (Alcheringa 44: 379-396) erects two taxa, *Parazosterophyllum timsiae* (from Ghin Ghin Road, Yea) and *Gippslandites minutus* (from the Boola Formation at Tyers), per its abstract. Neither is *P. biformis*. *G. minutus* is based on Tims's manuscript name *Zosterophyllum minutum*; the authors credit the epithet to her manuscript name in the etymology but publish the genus and species as their own, which is a new taxon, not a validation of Tims's name.
+taxa/pluricaulis-biformis.md:86:- The 2022 paper (Memoirs of Museum Victoria 81: 25-41) states that Tims (1980) 'described and gave informal manuscript names' to three Victorian zosterophylls, *Zosterophyllum minutum*, *Pluricaulis biformis* and *Chamaecaulon tylosus*, and says only that the first was later redescribed as *Gippslandites minutus*. It does not treat the other two.
+taxa/pluricaulis-biformis.md:99:- **Weight on the dating dispute.** If the Lower Plant Assemblage is Early Devonian, a zosterophyll at Limestone Road is unremarkable. If it is Gorstian, it would be among the oldest Gondwanan zosterophylls, though late Ludlow (Ludfordian) zosterophylls are already known from Bathurst Island (Kotyk et al. 2002; see [Zosterophyllum](zosterophyllum.md)).
+taxa/README.md:21:| [Zosterophyllum](zosterophyllum.md) | zosterophyll | Ludfordian (425 Ma) | Emsian | megafossil | medium | draft |
+taxa/README.md:56:| [Archaeopteris](archaeopteris.md) | progymnosperm | Givetian (387.95 Ma) | Famennian | megafossil | high | draft |
+taxa/renalia-hueberi.md:71:  - cite: "Gensel PG, Wellman CH, Taylor WA (2013). Spore wall ultrastructure of the Lower Devonian zosterophylls Renalia hueberi and Zosterophyllum divaricatum. International Journal of Plant Sciences 174: 1302-1313."
+taxa/archaeopteris.md:2:name: Archaeopteris
+taxa/archaeopteris.md:9:  plants; Callixylon is the form genus for the wood. Placement of the group is secure; whether Archaeopteris
+taxa/archaeopteris.md:16:    First: Archaeopteris-type root systems in a mid-Givetian palaeosol at Cairo, New York (ca. 385 Ma; Stein et
+taxa/archaeopteris.md:23:    lignophytes distinct from Archaeopteris in the latest Devonian and diversifying after the boundary.
+taxa/archaeopteris.md:28:  - Cairo quarry, Catskill region, New York, USA (Plattekill Formation; mid-Givetian, ca. 385 Ma; Archaeopteris-type root systems in a vertisol palaeosol)
+taxa/archaeopteris.md:40:    note: "Not measured. Regression estimates for 18 Archaeopteris-type trees at Cairo, from root or trunk-base diameter through a generic conifer height power law H = 3.21 DBH^0.6 (Araucaria is used only to convert root diameter to DBH): 11.2-31.5 m across three estimators (Table S1 of Stein et al. 2020, which calls them approximations that illustrate the approach). Independently, trunk base and large axes at Waterloo Farm are 'inferred to be in excess of 20 m' (Gess & Berry 2024, abstract only)."
+taxa/archaeopteris.md:63:  - cite: "Stein WE, Berry CM, Morris JL, Hernick LV, Mannolini F, Ver Straeten C, Landing E, Marshall JEA, Wellman CH, Beerling DJ, Leake JR (2020). Mid-Devonian Archaeopteris roots signal revolutionary change in earliest fossil forests. Current Biology 30: 421-431."
+taxa/archaeopteris.md:65:  - cite: "Meyer-Berthaud B, Scheckler SE, Wendt J (1999). Archaeopteris is the earliest known modern tree. Nature 398: 700-701."
+taxa/archaeopteris.md:67:  - cite: "Meyer-Berthaud B, Scheckler SE, Bousquet J-L (2000). The development of Archaeopteris: new evolutionary characters from the structural analysis of an Early Famennian trunk from southeast Morocco. American Journal of Botany 87: 456-468."
+taxa/archaeopteris.md:73:  - cite: "Fairon-Demaret M, Leponce I, Streel M (2001). Archaeopteris from the Upper Famennian of Belgium: heterospory, nomenclature, and palaeobiogeography. Review of Palaeobotany and Palynology 115: 79-97."
+taxa/archaeopteris.md:75:  - cite: "Fairon-Demaret M, Leponce I (2001). Leaf dimorphism in Archaeopteris roemeriana (progymnosperm): further early fossil evidence of shoot dorsiventrality. American Journal of Botany 88: 729-735."
+taxa/archaeopteris.md:77:  - cite: "Beck CB (1962). Reconstructions of Archaeopteris, and further consideration of its phylogenetic position. American Journal of Botany 49: 373-382."
+taxa/archaeopteris.md:89:  - cite: "Gess RW, Berry CM (2024). Archaeopteris trees at high southern latitudes in the late Devonian. Review of Palaeobotany and Palynology 331: 105212."
+taxa/archaeopteris.md:101:  - cite: "Cascales-Miñana B, Diez JB, Valenzuela-Ríos JI, Gozalo R, Servais T, Steemans P (2026). A Frasnian dispersed-spore assemblage and evidence of Archaeopteris vegetation from the Iberian Chains (NE Spain). Palaeobiodiversity and Palaeoenvironments 106: 667-678."
+taxa/archaeopteris.md:109:Archaeopteris is the Late Devonian forest tree: the first plant to combine a woody trunk (bifacial cambium, secondary xylem and phloem), perennial branches carrying deciduous leafy shoots, endogenous roots and heterospory. It was presented as "the earliest known modern tree" (Meyer-Berthaud et al. 1999). Archaeopteris-type roots in the mid-Givetian Cairo palaeosol (about 385 Ma) reach radial extents of up to 11 m, with primary roots 6-16 cm wide (Stein et al. 2020). In the height race it is where the trajectory that starts with 1-6 cm [Cooksonia](cooksonia.md) arrives: inferred trees of 11-32 m, though every height here is model-dependent.
+taxa/archaeopteris.md:119:Cairo gives the oldest evidence of the large root systems, 2-3 Myr older than Gilboa; archaeopteridaleans are among the plant groups collected there (Stein et al. 2020). Fronds appear in the mid to late Givetian, the microspore near the base of the stage (Berry 2019). Early Frasnian records are small in situ tree bases in Svalbard and drifted fronds at South Mountain, New York (Berry 2019). Famennian records span Belgium, the Donets Basin, Ireland, Morocco and Pennsylvania, with a trunk base at about 70 degrees S in South Africa (Gess & Berry 2024); the genus grew inside the palaeoantarctic circle and on the palaeoequator (Capel et al. 2022). The project's PBDB extract (485-383 Ma) holds only two Givetian Archaeopteris occurrences (United States, Belgium): a window artefact.
+taxa/archaeopteris.md:123:Lignophyte placement is secure and a relationship to seed plants is likely (Stein et al. 2020). Genus integrity is not: the group "shows significant variation" and is probably taxonomically diverse. For the Middle Devonian, Berry (2019) asks whether trunks carried large long-lived boughs or only attached short-lived fronds, and the Cairo roots are assigned because they match features presumed for Archaeopteris and no other known Middle Devonian plant. Dominance timing is contested. The textbook chain from forests to CO2 drawdown, anoxia and extinction (Algeo & Scheckler 1998) meets East Greenland data in which Archaeopteris became dominant during and after the Kellwasser carbon-isotope excursions, not before, with volcanism the proposed cause (Marshall et al. 2025; one section).
+taxa/archaeopteris.md:127:The Cairo vertisol records seasonal wetting and drying; Stein et al. infer that a stable soil was needed for tree size and dominance, and read the roots as probably perennial structural roots plus ephemeral feeder rootlets, as in modern woody trees. Famennian Catskill charcoal sits beside abundant Archaeopteris, but mostly Rhacophyton burned (Cressler 2001; then called the oldest charcoal, but charcoal is now known from the Silurian, Glasspool et al. 2004). A. roemeriana sporangia average 1.94 mm by 0.62 mm, 39 on the one fertile leaf counted in full; microspores are under 70 um, megaspores 110-403 um (Fairon-Demaret et al. 2001). Gametophytes are unknown.
+taxa/archaeopteris.md:131:- **Size anchor (F2).** Cooksonia 1-6 cm at about 432 Ma; [Pertica](pertica.md) perhaps 1-3 m; [Wattieza](wattieza.md) at least 8 m by the early Frasnian; Archaeopteris 11-32 m at about 385 Ma. Cooksonia to 8 m is a 130-800-fold height gain in about 50 Myr, a doubling every 5-7 Myr (my arithmetic on single-taxon maxima).
+taxa/archaeopteris.md:140:Is Archaeopteris monophyletic? Were Givetian trunks woody enough to support the Cairo root systems? What were growth rates and lifespans? Heights rest on a conifer allometry; would a lignophyte-specific one change them?
+taxa/zosterophylls.md:28:  - Mangshan Group, Duyun, Guizhou, China (Pragian; Zosterophyllum baoyangense and Z. australianum)
+taxa/zosterophylls.md:29:  - Wales, the Welsh Borderland and Angus, UK (Lower Old Red Sandstone, Lochkovian to Emsian; Zosterophyllum myretonianum, Gosslingia, Deheubarthia)
+taxa/zosterophylls.md:32:  - Victoria, Australia (Pragian-Emsian; Zosterophyllum australianum; the Baragwanathia flora, whose Ludlow age is disputed, also contains zosterophylls)
+taxa/zosterophylls.md:35:  height_cm: {min: 4.5, max: 44, note: "Complete or near-complete plants only for Zosterophyllum baoyangense (4.5 cm), Z. shengfengense (9.8 cm) and Z. xishanense (11.6 cm); preserved axes reach 44 cm in Z. confertum, so true heights of large species were probably greater (Hao et al. 2010; Huang et al. 2025). No whole plant is known for most of the 37+ genera."}
+taxa/zosterophylls.md:36:  axis_diameter_mm: {min: 0.3, max: 12, note: "Zosterophyllum 0.3-5.1 mm (Huang et al. 2025); the zosterophyllopsid Bathurstia has axes 4-12 mm wide and the smallest, Gippslandites and Z. baoyangense, 0.3-1.3 mm (Huang et al. 2025)."}
+taxa/zosterophylls.md:38:  leaves: {state: absent, note: "Leafless. The Sawdoniaceae carry unvascularised spinescent emergences (reversed in some members); Zosterophyllum has none (Claisse et al. 2025; Huang et al. 2025)."}
+taxa/zosterophylls.md:44:  rooting: {state: rooting-axes, note: "Rhizomes bearing downward, root-like axes without leaves or emergences: Zosterophyllum shengfengense (about 20 mm long, root:shoot 0.028; Hao et al. 2010); K-branches of Bathurstia (Gensel and Berry 2001)."}
+taxa/zosterophylls.md:55:  - cite: "Huang P, Wang JS, Wang YL, Liu L, Zhao JY, Xue JZ (2025). The smallest Zosterophyllum plant from the Lower Devonian of South China and the divergent life-history strategies in zosterophyllopsids. Proceedings of the Royal Society B 292: 20242337."
+taxa/zosterophylls.md:69:  - cite: "Hao S, Xue J, Guo D, Wang D (2010). Earliest rooting system and root:shoot ratio from a new Zosterophyllum plant. New Phytologist 185: 217-225."
+taxa/zosterophylls.md:95:Zosterophylls are leafless plants whose bivalved sporangia sit laterally on the axis, in spikes or rows, often on H- or K-branched rhizomes. Banks (1968) erected them as a separate subdivision, and for decades they were the presumed ancestors of the club-moss lycopsids. The latest analysis finds them a grade, with the spiny Sawdoniaceae as sister group of the lycopsids (Claisse et al. 2025). Their late Ludlow fossils are the oldest secure crown-tracheophytes (Hooper et al. 2026). Claisse et al. call them the dominant tracheophytes at the start of the Devonian, though rhyniophytoids dominated cooler Lochkovian floras (Capel et al. 2023). The group offers measured size and life-history spread. Members: [Zosterophyllum](zosterophyllum.md), [Sawdonia ornata](sawdonia-ornata.md), [Renalia hueberi](renalia-hueberi.md) (excluded from the 2025 analysis as incertae sedis).
+taxa/zosterophylls.md:99:The defining state (Lycophytina) is a laterally attached, bilaterally symmetrical, bivalved sporangium opening along its distal margin (Claisse et al. 2025). The 2025 matrix of 44 taxa (38 zosterophylls) shows the spread: sporangia irregular or in two rows, reniform to globose, in spikes (*Zosterophyllum*, *Bathurstia*) or scattered; naked axes or emergences; circinate tips in the Sawdoniaceae; H- and K-branching in rhizomes in a scattered set of taxa; xylem elliptical in the Sawdoniaceae. Huang et al. (2025) count at least 37 genera. *Zosterophyllum* axes are 0.3-5.1 mm wide and photosynthetic, with each extra millimetre of diameter adding 31 mm2 of surface per 10 mm of axis. In *Z. shengfengense* downward root-like axes of about 20 mm carried only about 3% of biomass (Hao et al. 2010).
+taxa/zosterophylls.md:107:Banks (1968, 1975) defined the group by leafless axes with lateral sporangia and exarch xylem, with six genera, and derived lycopsids from it. The sampled sets differ: 7 genera in Gensel (1992), 23 species in Kenrick and Crane (1997), 8 species in Hao and Xue (2013), 19 species in Nibbelink and Tomescu (2022) and 33 genera in Claisse et al. (2025), and the definition stretched as new genera arrived. Gensel (1992) and Kenrick and Crane (1997) put zosterophylls in a grade paraphyletic to the lycopsids, with Zosterophyllopsida a smaller clade of circinate, two-rowed forms; Hao and Xue (2013) recovered a monophyletic class excluding lycopsids (both as summarised by Claisse et al. 2025). Nibbelink and Tomescu (2022) and Claisse et al. (2025) support the grade. In Claisse et al., Lycophytina splits into a small basal clade and a large one, in which the Sawdoniaceae and lycopsids are sister groups and sister to a clade with the barinophytes; *Zosterophyllum myretonianum* sits elsewhere in a basal group, so the genus is polyphyletic. Parsimony and Bayesian trees share only 43.6% of nodes. Exarch xylem maturation, short stalks and thickened dehiscence lines, listed by Kenrick and Crane as lycophyte synapomorphies, are not supported.
+taxa/zosterophylls.md:111:Zosterophylls were rooted herbs of wet floodplains, probably clonal (H- and K-branched rhizomes; inference). Their stable, wetter habitats contrast with the intermittent habitats of rhyniophytoids (Morris et al. 2012). Huang et al. (2025) read the 12-31-fold difference in spike size between two coeval Pragian *Zosterophyllum* as r-like against K-like strategies, an inference from sporangial volume, not measured lifespan.
+taxa/zosterophylls.md:115:- **Size spread.** Whole plants 4.5-12 cm; preserved axes to 44 cm; axes 0.3-12 mm. Preserved axis length of Zosterophyllum species (not all zosterophylls) averages 74, 120 and 87 mm in the Lochkovian, Pragian and Emsian (Huang et al. 2025).
+taxa/parka-decipiens.md:26:  - Turin Hill (Clocksbriggs/Wemyss and Aberlemno quarries), near Forfar, Angus, Scotland (Dundee Formation, Arbuthnott Group; interbedded red fluvial sandstones and grey-green lacustrine siltstones; the best-known locality, with Zosterophyllum myretonianum, Cooksonia caledonica, Prototaxites and fish)
+taxa/parka-decipiens.md:96:PBDB (`data/eprp/record/pbdb_plant_occurrences.csv`) holds two *Parka* occurrences, both UK and Lochkovian. Turin Hill, near Forfar, is the best-known locality and the basis of much of the early debate; Carmyllie and Targrove Quarry also yield it (Cleal and Thomas 1995). At Turin Hill it occurs with *Zosterophyllum myretonianum* ([Zosterophyllum](zosterophyllum.md)), *Cooksonia caledonica* ([Aberlemnia caledonica](aberlemnia-caledonica.md)) and *Prototaxites* ([Prototaxites](prototaxites.md)); the Zosterophyllum Zone flora there is early Gedinnian by palynology and fish (as summarised by Cleal and Thomas 1995).
+taxa/parka-decipiens.md:110:It does not constrain F1 parameters; it constrains how far to trust the algal-to-plant analogy. (1) If its spores were diploid (Hemsley 1990), *Parka* would be a multicellular diploid spore producer without vascular tissue, a natural experiment in "interpolation"; if haploid, it is a thallus bearing sporangium-like structures with no counterpart in living streptophyte algae. The two readings predict different alternation structure, so a model can carry "Parka-like thallus, ploidy unknown" as a scenario, not a fitted trait. (2) It shows a centimetre-scale, cutinised, non-axial spore producer coexisting with *Zosterophyllum* and *Cooksonia* in Lochkovian freshwater settings, so the plant community was not only axial polysporangiophytes. (3) For the F3 observation model, alete spores from such thalli would enter Lochkovian dispersed assemblages as non-trilete monads and cannot yet be separated from other alete forms (my inference). (4) Martín-Closas (2003) takes *Parka* as possible evidence of high diversity among fossil taxa in land-plant ancestry; whether it left descendants is unknown, so a model should not assume every early thalloid spore producer lies on the line to embryophytes.
+taxa/wattieza.md:60:  - cite: "Stein WE, Berry CM, Morris JL, Hernick LV, Mannolini F, Ver Straeten C, Landing E, Marshall JEA, Wellman CH, Beerling DJ, Leake JR (2020). Mid-Devonian Archaeopteris roots signal revolutionary change in earliest fossil forests. Current Biology 30: 421-431."
+taxa/wattieza.md:86:Wattieza is the crown of the Gilboa tree: a leafless, tree-fern-like cladoxylopsid at least 8 m tall, with a trunk bearing large branches shed as frond-like modules, standing on the swollen, root-fringed base long known as Eospermatopteris (Stein et al. 2007). Eospermatopteris dominated the Gilboa forest (Berry 2019) and also occurs in the older Cairo forest (about 385 Ma). It is the oldest plant I found documented above the 5 m forest-tree threshold, built on a large primary body and shallow roots, a different solution from the wood and deep roots of [Archaeopteris](archaeopteris.md).
+taxa/wattieza.md:108:- **Roots.** 0.7-1 cm roots, radius 1-2 m, depth under 30 cm, probably replaced as the tree grew; against 6-16 cm roots to 11 m for Archaeopteris (Stein et al. 2020).
+taxa/wattieza.md:114:How tall did the largest Gilboa trees grow? Primary or secondary growth in Wattieza? Spores, sporangia and gametophytes? Stand density, which sits in the paywalled 2012 map? Why do the Pseudosporochnales disappear in the Late Devonian (Meyer-Berthaud & Decombeix 2009) while Archaeopteris spreads?
+taxa/baragwanathia-longifolia.md:77:  - cite: "McSweeney FR, Shimeta J, Buckeridge JStJ (2022). Lower Devonian Zosterophyllum-like plants from central Victoria, Australia, and their significance. Memoirs of Museum Victoria 81: 25-41."
+taxa/posongchong-flora.md:30:  - Changputang section (Tiechan slope), Wenshan (Zosterophyllum australianum horizon; Catenalis, Celatheca)
+taxa/posongchong-flora.md:35:  height_cm: {min: null, max: null, note: "No flora-level size data in the sources read. Preserved axes of Pragian Zosterophyllum are summarised on its card (Huang et al. 2025, not read here)."}
+taxa/posongchong-flora.md:94:| Zosterophylls | 15: *Zosterophyllum* (four species including *Z. australianum*; see [*Zosterophyllum*](zosterophyllum.md)), *Ramoferis* (two), *Yunia* (two), *Guangnania*, *Gumuia*, *Discalis*, *Wenshania*, *Oricilla*, *Distichophytum*, cf. *Hicklingia* |
+taxa/posongchong-flora.md:115:Endemism: no Posongchong species is shared with the Old Red Sandstone continent or other Laurussian floras; three are shared with the Xujiachong flora (*Guangnania cuneata*, *Hedeia sinica*, *Zosterophyllum australianum*) and only *Z. australianum* with the Victorian Baragwanathia flora (Cascales-Minana et al. 2018). Over 70% of genera (20 of 28) are endemic (Wang et al. 2022, citing Hao & Xue 2013 and Xue et al. 2018). Cascales-Minana et al. (2018) find the megafossil differences (no paratracheophytes, many euphyllophytes) hard to reconcile with broadly similar spore morphotypes in Posongchong, Xujiachong, Anglo-Welsh and Rhynie assemblages, while species-level spore differences also point to an isolated block. Species counts differ between sources (about 33 against 37).
+data/spores/work/codex/genera_pilot/log.txt:282:  - group cards on lycopods and trimerophytes; *Archaeopteris*.
+data/spores/work/codex/genera/log4.txt:316:  - group cards on lycopods and trimerophytes; *Archaeopteris*.
+taxa/aberlemnia-caledonica.md:40:  Type material lies in grey sandstone with Zosterophyllum myretonianum, Prototaxites, Parka, and fish and
+taxa/aberlemnia-caledonica.md:80:Type: Aberlemno Quarry, Dittonian, with *Zosterophyllum myretonianum*, *Prototaxites* and *Parka* (Edwards 1970). Later: late Lochkovian floras of the Paraná Basin, Brazil, which lay near the South Pole (Milagres et al. 2018; the species is identified in their figure captions, and I did not read their text); and the Rinconada Formation, Argentina, in a matrix whose graptolites are early Pridoli, in a unit dated Wenlock to Early Devonian by different authors (Drovandi et al. 2024). Morel et al. (1995) described Ludlow plants "resembling" *C. caledonica* from Bolivia at 50-60°S. The genus is Pridoli by other species: *A. krizii* in Bohemia (Libertín et al. 2024) and *A. junggaria* in West Junggar (Liu et al. 2024).
+data/spores/work/codex/genera/log6.txt:306:  - group cards on lycopods and trimerophytes; *Archaeopteris*.
+taxa/zosterophyllum.md:2:name: Zosterophyllum
+taxa/zosterophyllum.md:15:    Earliest record is an unnamed Zosterophyllum from late Ludlow (Ludfordian) beds on Bathurst Island,
+taxa/zosterophyllum.md:53:  - cite: "Lang WH (1927). Contributions to the study of the Old Red Sandstone flora of Scotland. VI. On Zosterophyllum myretonianum, Penh., and some other plant-remains from the Carmyllie Beds of the Lower Old Red Sandstone. Transactions of the Royal Society of Edinburgh 55: 443-455."
+taxa/zosterophyllum.md:55:  - cite: "Lele KM, Walton J (1961). Contributions to the knowledge of Zosterophyllum myretonianum Penhallow from the Lower Old Red Sandstone of Angus. Transactions of the Royal Society of Edinburgh 64: 469-475."
+taxa/zosterophyllum.md:57:  - cite: "Edwards D (1969). Zosterophyllum from the Lower Old Red Sandstone of South Wales. New Phytologist 68: 923-931."
+taxa/zosterophyllum.md:59:  - cite: "Gensel PG (1982). A new species of Zosterophyllum from the Early Devonian of New Brunswick. American Journal of Botany 69: 651-669."
+taxa/zosterophyllum.md:65:  - cite: "Hao S, Xue J, Guo D, Wang D (2010). Earliest rooting system and root:shoot ratio from a new Zosterophyllum plant. New Phytologist 185: 217-225."
+taxa/zosterophyllum.md:69:  - cite: "McSweeney FR, Shimeta J, Buckeridge JStJ (2022). Lower Devonian Zosterophyllum-like plants from central Victoria, Australia, and their significance. Memoirs of Museum Victoria 81: 25-41."
+taxa/zosterophyllum.md:77:  - cite: "Huang P, Wang JS, Wang YL, Liu L, Zhao JY, Xue JZ (2025). The smallest Zosterophyllum plant from the Lower Devonian of South China and the divergent life-history strategies in zosterophyllopsids. Proceedings of the Royal Society B 292: 20242337."
+taxa/zosterophyllum.md:89:Zosterophyllum is the type genus of the zosterophylls: leafless plants with naked axes, H- or K-branched basal rhizomes, and stalked, bivalved sporangia borne laterally in terminal spikes. Its earliest record is late Ludlow (Ludfordian, 425.0-422.7 Ma), it diversifies in the Lochkovian and peaks in the Pragian. The genus is probably not monophyletic, and lycopsids arose from within the zosterophyll grade, so its species show the ancestral body plan from which microphyllous lycopsids evolved. Plant and spike size differ about tenfold among coeval species, which makes it a useful system for life-history trade-offs.
+taxa/zosterophyllum.md:93:Species are known mainly as compressions, with axes 0.3-5.1 mm wide ending in spikes. Spikes in subgenus Zosterophyllum have helically arranged sporangia, whereas Platyzosterophyllum has sporangia oriented to one side of the axis (Gensel 1982; Huang et al. 2025). Sporangia are oval to reniform, and in Z. baoyangense measure 1.6-2.0 mm by 0.9-1.4 mm, with 5-10 per spike; Z. yunnanicum and Z. australianum have a thickened sporangial border (Huang et al. 2025; the 2015 redescription of Z. yunnanicum was not accessed). Z. myretonianum has a single median strand of tracheids (Lang 1927) and was, in 1961, the earliest plant in which cuticle, stomata and complete tracheids had been clearly demonstrated (Lele & Walton 1961). Its basal region was branched mainly by H-type and related patterns, with simple dichotomy rare and the upright fertile axes seldom branched (Lele & Walton 1961). Since the axes carry stomata and there are no leaves or spines, the axes were the main photosynthetic organs (Huang et al. 2025).
+taxa/zosterophyllum.md:99:Kotyk et al. (2002) report ten fertile plants of seven taxa, mostly zosterophylls including one Zosterophyllum, from late Ludlow beds of Bathurst Island, dated by conodonts, graptolites and brachiopods; they judged the size and complexity much greater than most contemporaneous fossils. Huang et al. (2025) treat the Yunnan species Z. qujingense as Silurian as well, but Claisse et al. (2025) describe a Pridoli gap in zosterophyll fossils; I could not reconcile the two. Diversity then rose in the Lochkovian (Z. myretonianum in Scotland; Z. shengfengense, about 413 Ma, and Z. xishanense in Yunnan), peaked in the Pragian (Z. australianum from Yunnan, Guizhou and Victoria, Z. rhenanum, Z. confertum, Z. baoyangense) and fell in the Emsian (Cascales-Miñana & Meyer-Berthaud 2014; Huang et al. 2025), a trajectory a model can be tested against. Other records are Z. cf. fertile in the Senni Beds of South Wales (Siegenian-Emsian; Edwards 1969), fertile Z. myretonianum in Scotland (Edwards 1975), Z. australianum in Victoria (Norton Gully Sandstone; McSweeney et al. 2022) and Emsian Z. divaricatum in New Brunswick (Gensel 1982). At least 20 species have been described, at least 14 from South China. The upper Xujiachong Formation, which yields many Chinese species, is dated by spores as early (but not earliest) Pragian to possibly earliest Emsian (Wellman et al. 2012).
+taxa/zosterophyllum.md:103:Gensel (1992) argued that lycopsid microphylls and leaf-associated sporangia could be derived from zosterophyll emergences and sporangial position. Recent analyses agree that zosterophylls are a grade paraphyletic to the lycopsids (Nibbelink & Tomescu 2022; Claisse et al. 2025), whereas a 2013 analysis of the Posongchong flora recovered a zosterophyll clade (as summarised by Claisse et al. 2025). Zosterophyllum itself is not a clade: in Claisse et al. (2025) Z. myretonianum falls in a basal group with Discalis and Gumuia, far from the Sawdoniaceae that are sister to the lycopsids. Most species lack anatomy and spores, so species-level relationships are weakly tested (Huang et al. 2025).
+taxa/baragwanathia-flora.md:46:  spores: {state: unknown, note: "In situ spores are reported only for Zosterophyllum australianum (Lang & Cookson 1930, as summarised by McSweeney et al. 2022); maceration of Wilson Creek Shale and Limestone Road material gave none (Tims & Chambers 1984)."}
+taxa/baragwanathia-flora.md:98:  - cite: "McSweeney FR, Shimeta J, Buckeridge JStJ (2022). Lower Devonian Zosterophyllum-like plants from central Victoria, Australia, and their significance. Memoirs of Museum Victoria 81: 25-41."
+taxa/baragwanathia-flora.md:122:By my tally from Table 1.1 of McSweeney (2024), about 16 formally named species in 11 genera are known: *Baragwanathia longifolia*; the zosterophylls *Zosterophyllum australianum*, *Z. ramosum*, *Parazosterophyllum timsiae*, *Gippslandites minutus* and *Taungurungia garrattii* (see [zosterophylls](zosterophylls.md)); the rhyniophytoids [Salopella](salopella.md) (three species), [Yarravia](yarravia.md) (three, including the former [Hedeia](hedeia.md)), *Uskiella spargens* and *Cooksonia* cf. *paranensis*; the trimerophyte-grade *Dawsonites subarcuatus* (see [Dawsonites](dawsonites.md)); and the non-vascular *Sporogonites chapmanii*. Unnamed forms include zosterophylls with bilateral symmetry (cf. *Z. fertile* and cf. *Zosterophyllum* sp. A; McSweeney et al. 2022) and Tims's unpublished names, among them [Pluricaulis biformis](pluricaulis-biformis.md).
+taxa/baragwanathia-flora.md:134:Garratt et al. (1984) and Rickards (2000) read larger UPA Baragwanathia as evolution over the Silurian-Devonian interval; McSweeney (2024) found no difference in axis width or microphyll length between the assemblages and suggests that smaller Limestone Road axes reflect size sorting. Kotyk et al. (2002) reviewed the LPA as another advanced late Silurian flora while concluding that Bathurst Island gave the best evidence of Silurian complexity; the comparison lapses if the LPA is Early Devonian. Hao & Gensel (1998) proposed a north-east Gondwana unit linking Victoria and South China, sharing Zosterophyllum australianum, Z. ramosum, Yarravia and a poorly preserved Baragwanathia sp.; McSweeney (2024) finds more genera in common with regions outside South China and wants more evidence, while Capel et al. (2023) recover a Pragian-Emsian north-east Gondwana phytochorion.
+data/spores/work/codex/genera/log2.txt:306:  - group cards on lycopods and trimerophytes; *Archaeopteris*.
+data/spores/work/codex/genera/log1.txt:142:Zosterophyllum,22,8,yunnanicum; fertile; myretonianum; australianum; sp; divaricatum; llanoveranum,345.0,395.0
+data/spores/work/codex/genera/log1.txt:143:Protosalvinia,21,14,ravenna; chicagoensis; bilobata; furcata; braziliensis; sp; arnoldii,230.0,570.0
+data/spores/work/codex/genera/log1.txt:149:Archaeopteris,19,12,macilenta; fissilis; latifolia; jacksonii; halliana; sp,230.0,570.0
+data/spores/work/codex/genera/log1.txt:161:Microreticulatisporites,14,4,spicatus; subtriangulatus; spinulosus; microreticulatus; lunatus; faveolatus; punctatus; trigonus; velatus; maculatus; sp; lacunosus; minutus,230.0,570.0
+data/spores/work/codex/genera/log1.txt:166:Spelaeotriletes,13,10,sp; resolutus; lepidophytus; balteatus; obtusus,280.0,395.0
+data/spores/work/codex/genera/log1.txt:167:Verrucososporites,12,3,tuberosus; minus; sp; verrucosus; bucculentus; tuberculatus; sp.128; maculosus; firmus; microtuberculatus; morulatus; triquetris,230.0,570.0
+data/spores/work/codex/genera/log1.txt:169:Rugospora,12,7,versabilis; minuta; cerebra; flexuosa; cymatilia; tuscarorensis,280.0,456.667
+data/spores/work/codex/genera/log1.txt:306:  - group cards on lycopods and trimerophytes; *Archaeopteris*.
+data/spores/work/codex/genera/log1.txt:440:39 Zosterophyllum
+data/spores/work/codex/genera/log1.txt:441:40 Protosalvinia
+data/spores/work/codex/genera/log1.txt:447:46 Archaeopteris
+data/spores/work/codex/genera/log1.txt:459:58 Microreticulatisporites
+data/spores/work/codex/genera/log1.txt:464:63 Spelaeotriletes
+data/spores/work/codex/genera/log1.txt:465:64 Verrucososporites
+data/spores/work/codex/genera/log1.txt:467:66 Rugospora
+data/spores/work/codex/genera/log5.txt:307:  - group cards on lycopods and trimerophytes; *Archaeopteris*.
+
+web search: Microreticulatisporites genus diagnosis Knox 1950 ...
+web search: 
+web search: "Rugospora" "Diagnosis" ...
+codex
+Some entries are plant genera, pollen or informal labels. I also found that Verrucososporites is an old monolete-spore name, distinct from the similarly named trilete genus Verrucosisporites.
+web search: 
+web search: "Rugospora" "rugulae" ...
+web search: 
+web search: https://www.researchgate.net/publication/223570483_The_upper_Paleozoic_miospore_genus_Spelaeotriletes_Neves_and_Owens_1966_and_constituent_Gondwanan_species
+exec
+/bin/zsh -lc "sed -n '1,105p' taxa/zosterophyllum.md && sed -n '1,85p' taxa/archaeopteris.md && rg -n 'Protosalvinia' docs library -g '*.md' -g '*.txt'" in /Users/bwbrook/papers/silurian_plants
+ exited 1 in 0ms:
+---
+name: Zosterophyllum
+authority: Penhallow 1892
+rank: genus
+kind: megafossil
+group: zosterophyll
+lineage: >-
+  Lycophytina stem group, zosterophyll grade (paraphyletic to the lycopsids); the genus is probably
+  para- or polyphyletic, so its species do not form a single lineage.
+placement_confidence: medium
+range:
+  first: Ludfordian
+  last: Emsian
+  notes: >-
+    Earliest record is an unnamed Zosterophyllum from late Ludlow (Ludfordian) beds on Bathurst Island,
+    dated by stratigraphic relationships, conodonts, graptolites and brachiopods (Kotyk et al. 2002).
+    Huang et al. (2025) also treat Z. qujingense (Yunnan) as Silurian and Pšenička et al. (2021) list it
+    among Pridoli floras, but Claisse et al. (2025) describe a Pridoli gap in the zosterophyll record,
+    so this needs checking. Species number rises through the Lochkovian, peaks in the Pragian and declines in
+    the Emsian (Cascales-Miñana & Meyer-Berthaud 2014; Huang et al. 2025). Ages of many Chinese
+    species rest on spore assemblages and plant correlation rather than index fossils (Wellman et al. 2012).
+regions: [Laurentia, Laurussia, South China, Gondwana]
+localities:
+  - Bathurst Island, Nunavut, Canada (late Ludlow, Ludfordian; earliest record)
+  - Yunnan, China (Xitun Formation, Lochkovian, Z. shengfengense; Xiaxishancun Formation, Lochkovian, Z. xishanense; Xujiachong and Posongchong formations, Pragian)
+  - Duyun, Guizhou, China (Mangshan Group, Pragian; Z. baoyangense, Z. australianum)
+  - Angus, Scotland (Lower Old Red Sandstone, Carmyllie Beds; Z. myretonianum, the type species)
+  - South Wales (Senni Beds; Z. cf. fertile)
+  - Rhenish Lower Devonian, Germany (Z. rhenanum, Z. confertum)
+  - Victoria, Australia (Z. australianum, Pragian-Emsian)
+  - northern New Brunswick, Canada (Emsian; Z. divaricatum)
+preservation: [compression]
+traits:
+  height_cm: {min: 4.5, max: 11.6, note: "Near-complete plants only: Z. baoyangense 45.4 mm, Z. shengfengense 98 mm, Z. xishanense 116 mm (Hao et al. 2010; Huang et al. 2025). Preserved axes of Z. confertum reach 440 mm, so true heights of larger species were probably greater."}
+  axis_diameter_mm: {min: 0.3, max: 5.1, note: "Axial width across species, from 0.3 mm (Emsian minimum) to 5.1 mm in Z. confertum (Pragian) (Huang et al. 2025)."}
+  branching: {state: mixed, note: "Basal region with H- and K-type branching and rare simple dichotomy; upright fertile axes rarely branched (Lele & Walton 1961 for Z. myretonianum; Huang et al. 2025). Aerial axes isotomous or pseudomonopodial."}
+  leaves: {state: absent, note: "Axes naked, with no leaves, spines or other appendages (Huang et al. 2025)."}
+  stomata: {state: present, note: "Cuticle and stomata described in Z. myretonianum, though parts of the basal region lacked stomata (Lele & Walton 1961)."}
+  conducting_tissue: {state: tracheids, note: "A single median strand of tracheids (Lang 1927; Lele & Walton 1961). Anatomy is unknown for most species (Huang et al. 2025); tracheid wall type was not checked."}
+  sporangium_position: {state: lateral, note: "Stalked, bivalved sporangia borne laterally in compact spikes, helical or rowed; terminal sporangia absent."}
+  spores: {state: unknown, note: "In situ spores are reported from some species (Edwards 1969; Gensel 1982), but spore morphology was not verified, and most species lack spore data (Huang et al. 2025)."}
+  heterospory: {state: absent, note: "Treated as homosporous (Huang et al. 2025); in situ spore data are sparse."}
+  rooting: {state: rooting-axes, note: "Z. shengfengense has a rhizome bearing downward-directed root-like axes about 20 mm long (Hao et al. 2010). Other species are known only from rhizome or aerial fragments."}
+  gametophyte: {state: unknown, note: null}
+habitat: >-
+  Fluvial, floodplain and lacustrine settings; the Xujiachong Formation is a terrestrial fluvial-lacustrine
+  succession (Wellman et al. 2012). Z. shengfengense was probably semi-aquatic (Hao et al. 2010) and
+  Z. myretonianum occurs with Parka and Nematophyton in Scottish beds (Lang 1927). Assemblages are
+  mostly transported, so habitat is inferred and only moderately firm.
+status: draft
+updated: 2026-10-26
+references:
+  - cite: "Lang WH (1927). Contributions to the study of the Old Red Sandstone flora of Scotland. VI. On Zosterophyllum myretonianum, Penh., and some other plant-remains from the Carmyllie Beds of the Lower Old Red Sandstone. Transactions of the Royal Society of Edinburgh 55: 443-455."
+    doi: 10.1017/S0080456800016422
+  - cite: "Lele KM, Walton J (1961). Contributions to the knowledge of Zosterophyllum myretonianum Penhallow from the Lower Old Red Sandstone of Angus. Transactions of the Royal Society of Edinburgh 64: 469-475."
+    doi: 10.1017/s0080456800100432
+  - cite: "Edwards D (1969). Zosterophyllum from the Lower Old Red Sandstone of South Wales. New Phytologist 68: 923-931."
+    doi: 10.1111/j.1469-8137.1969.tb06491.x
+  - cite: "Gensel PG (1982). A new species of Zosterophyllum from the Early Devonian of New Brunswick. American Journal of Botany 69: 651-669."
+    doi: 10.1002/j.1537-2197.1982.tb13305.x
+  - cite: "Gensel PG (1992). Phylogenetic relationships of the zosterophylls and lycopsids: evidence from morphology, paleoecology, and cladistic methods of inference. Annals of the Missouri Botanical Garden 79: 450-473."
+    doi: 10.2307/2399750
+  - cite: "Kotyk ME, Basinger JF, Gensel PG, de Freitas TA (2002). Morphologically complex plant macrofossils from the Late Silurian of Arctic Canada. American Journal of Botany 89: 1004-1013."
+    doi: 10.3732/ajb.89.6.1004
+  - cite: "Hao S, Xue J, Guo D, Wang D (2010). Earliest rooting system and root:shoot ratio from a new Zosterophyllum plant. New Phytologist 185: 217-225."
+    doi: 10.1111/j.1469-8137.2009.03056.x
+  - cite: "Wellman CH, Zhu H, Marshall JEA, Wang Y, Berry CM, Xu H (2012). Spore assemblages from the Lower Devonian Xujiachong Formation from Qujing, Yunnan, China. Palaeontology 55: 583-611."
+    doi: 10.1111/j.1475-4983.2012.01143.x
+  - cite: "McSweeney FR, Shimeta J, Buckeridge JStJ (2022). Lower Devonian Zosterophyllum-like plants from central Victoria, Australia, and their significance. Memoirs of Museum Victoria 81: 25-41."
+    doi: 10.24199/j.mmv.2022.81.02
+  - cite: "Cascales-Miñana B, Meyer-Berthaud B (2014). Diversity dynamics of Zosterophyllopsida. Lethaia 47: 205-215."
+    doi: 10.1111/let.12051
+  - cite: "Morris JL, Puttick MN, Clark JW, Edwards D, Kenrick P, Pressel S, Wellman CH, Yang Z, Schneider H, Donoghue PCJ (2018). The timescale of early land plant evolution. Proceedings of the National Academy of Sciences 115: E2274-E2283."
+    doi: 10.1073/pnas.1719588115
+  - cite: "Nibbelink M, Tomescu AMF (2022). Exploring zosterophyll relationships within a more broadly sampled character space: a focus on anatomy. International Journal of Plant Sciences 183: 535-547."
+    doi: 10.1086/720384
+  - cite: "Huang P, Wang JS, Wang YL, Liu L, Zhao JY, Xue JZ (2025). The smallest Zosterophyllum plant from the Lower Devonian of South China and the divergent life-history strategies in zosterophyllopsids. Proceedings of the Royal Society B 292: 20242337."
+    doi: 10.1098/rspb.2024.2337
+  - cite: "Claisse P, Cascales-Miñana B, Capel E, Tomescu AMF (2025). Re-evaluating the phylogenetic relationships of zosterophylls with a comprehensively sampled dataset and a combination of traditional and new alternative methods. Annals of Botany 137: 1624-1645."
+    doi: 10.1093/aob/mcaf146
+  - cite: "Pšenička J, Bek J, Frýda J, Žárský V, Uhlířová M, Štorch P (2021). Dynamics of Silurian plants as response to climate changes. Life 11: 906."
+    doi: 10.3390/life11090906
+  - cite: "Hooper J, Worth AM, Wellman CH, Clark JW, Donoghue PCJ (2026). Reconstructing spore evolution recalibrates the timescale of land plant diversification. Nature Plants."
+    doi: 10.1038/s41477-026-02432-3
+---
+
+## In brief
+
+Zosterophyllum is the type genus of the zosterophylls: leafless plants with naked axes, H- or K-branched basal rhizomes, and stalked, bivalved sporangia borne laterally in terminal spikes. Its earliest record is late Ludlow (Ludfordian, 425.0-422.7 Ma), it diversifies in the Lochkovian and peaks in the Pragian. The genus is probably not monophyletic, and lycopsids arose from within the zosterophyll grade, so its species show the ancestral body plan from which microphyllous lycopsids evolved. Plant and spike size differ about tenfold among coeval species, which makes it a useful system for life-history trade-offs.
+
+## Morphology and anatomy
+
+Species are known mainly as compressions, with axes 0.3-5.1 mm wide ending in spikes. Spikes in subgenus Zosterophyllum have helically arranged sporangia, whereas Platyzosterophyllum has sporangia oriented to one side of the axis (Gensel 1982; Huang et al. 2025). Sporangia are oval to reniform, and in Z. baoyangense measure 1.6-2.0 mm by 0.9-1.4 mm, with 5-10 per spike; Z. yunnanicum and Z. australianum have a thickened sporangial border (Huang et al. 2025; the 2015 redescription of Z. yunnanicum was not accessed). Z. myretonianum has a single median strand of tracheids (Lang 1927) and was, in 1961, the earliest plant in which cuticle, stomata and complete tracheids had been clearly demonstrated (Lele & Walton 1961). Its basal region was branched mainly by H-type and related patterns, with simple dichotomy rare and the upright fertile axes seldom branched (Lele & Walton 1961). Since the axes carry stomata and there are no leaves or spines, the axes were the main photosynthetic organs (Huang et al. 2025).
+
+The best whole-plant evidence is Z. shengfengense (Hao et al. 2010): an uprooted tuft of aerial axes 98 mm tall on a rhizome that bore upward axes and downward root-like axes about 20 mm long. This is observed for one species; extending it to the genus is an inference.
+
+## Age and distribution
+
+Kotyk et al. (2002) report ten fertile plants of seven taxa, mostly zosterophylls including one Zosterophyllum, from late Ludlow beds of Bathurst Island, dated by conodonts, graptolites and brachiopods; they judged the size and complexity much greater than most contemporaneous fossils. Huang et al. (2025) treat the Yunnan species Z. qujingense as Silurian as well, but Claisse et al. (2025) describe a Pridoli gap in zosterophyll fossils; I could not reconcile the two. Diversity then rose in the Lochkovian (Z. myretonianum in Scotland; Z. shengfengense, about 413 Ma, and Z. xishanense in Yunnan), peaked in the Pragian (Z. australianum from Yunnan, Guizhou and Victoria, Z. rhenanum, Z. confertum, Z. baoyangense) and fell in the Emsian (Cascales-Miñana & Meyer-Berthaud 2014; Huang et al. 2025), a trajectory a model can be tested against. Other records are Z. cf. fertile in the Senni Beds of South Wales (Siegenian-Emsian; Edwards 1969), fertile Z. myretonianum in Scotland (Edwards 1975), Z. australianum in Victoria (Norton Gully Sandstone; McSweeney et al. 2022) and Emsian Z. divaricatum in New Brunswick (Gensel 1982). At least 20 species have been described, at least 14 from South China. The upper Xujiachong Formation, which yields many Chinese species, is dated by spores as early (but not earliest) Pragian to possibly earliest Emsian (Wellman et al. 2012).
+
+## Affinity and controversies
+
+Gensel (1992) argued that lycopsid microphylls and leaf-associated sporangia could be derived from zosterophyll emergences and sporangial position. Recent analyses agree that zosterophylls are a grade paraphyletic to the lycopsids (Nibbelink & Tomescu 2022; Claisse et al. 2025), whereas a 2013 analysis of the Posongchong flora recovered a zosterophyll clade (as summarised by Claisse et al. 2025). Zosterophyllum itself is not a clade: in Claisse et al. (2025) Z. myretonianum falls in a basal group with Discalis and Gumuia, far from the Sawdoniaceae that are sister to the lycopsids. Most species lack anatomy and spores, so species-level relationships are weakly tested (Huang et al. 2025).
+
+## Ecology and physiology
+---
+name: Archaeopteris
+authority: (Dawson) Lesquereux 1880
+rank: genus
+kind: megafossil
+group: progymnosperm
+lineage: >-
+  Archaeopteridalean progymnosperm in the lignophyte clade (bifacial vascular cambium), which includes seed
+  plants; Callixylon is the form genus for the wood. Placement of the group is secure; whether Archaeopteris
+  as used is one genus is not.
+placement_confidence: high
+range:
+  first: Givetian
+  last: Famennian
+  notes: >-
+    First: Archaeopteris-type root systems in a mid-Givetian palaeosol at Cairo, New York (ca. 385 Ma; Stein et
+    al. 2020), assigned by comparison, not found attached to a trunk. Stein et al. place worldwide appearance by
+    the early Givetian on macrofossil and microfossil evidence (citing Marshall 1996 and Berry & Fairon-Demaret
+    2001); Berry (2019) puts the microspore near the start of the Givetian and leafy fronds in the mid to late
+    Givetian. Last: Berry (2019) gives extinction about the Devonian-Carboniferous boundary and a range of about
+    25 Myr. Callixylon species are listed from the late Givetian to the Mississippian (Tanrattana et al. 2017),
+    but wood-only Mississippian records may belong to other lignophytes: Decombeix et al. (2011) find arborescent
+    lignophytes distinct from Archaeopteris in the latest Devonian and diversifying after the boundary.
+    Dating is by marine correlation (Cairo, Gilboa), spores and conodonts; the ICS 2024 base ages in
+    data/timescale.csv are not those used in older papers.
+regions: [Laurentia, Laurussia, Baltica, Gondwana]
+localities:
+  - Cairo quarry, Catskill region, New York, USA (Plattekill Formation; mid-Givetian, ca. 385 Ma; Archaeopteris-type root systems in a vertisol palaeosol)
+  - South Mountain, New York, USA (early Frasnian; drifted fronds on larger axes beside transported cladoxylopsid trunks)
+  - Svalbard (early Frasnian; small tree bases in situ)
+  - Anti-Atlas, Morocco (Famennian; trunks of Callixylon erianum and permineralised roots; northern Gondwana)
+  - Waterloo Farm, South Africa (Famennian, about 70 degrees S; trunk base and large axes)
+  - Upper Famennian Belgium (Durnal, Langlier quarry; fertile A. roemeriana), Donets Basin (trunk bases), Ireland (uppermost Famennian Callixylon)
+  - Zhulumute Formation, Xinjiang, China (late Frasnian Callixylon wood); Bolloncillos Formation, Spain (middle Frasnian, spores only); East Greenland (Frasnian-Famennian)
+preservation: [compression, permineralised, cast]
+traits:
+  height_cm:
+    min: 1100
+    max: 3150
+    note: "Not measured. Regression estimates for 18 Archaeopteris-type trees at Cairo, from root or trunk-base diameter through a generic conifer height power law H = 3.21 DBH^0.6 (Araucaria is used only to convert root diameter to DBH): 11.2-31.5 m across three estimators (Table S1 of Stein et al. 2020, which calls them approximations that illustrate the approach). Independently, trunk base and large axes at Waterloo Farm are 'inferred to be in excess of 20 m' (Gess & Berry 2024, abstract only)."
+  axis_diameter_mm:
+    min: 80
+    max: 450
+    note: "Trunk base diameters of the same 18 Cairo trees, 8-45 cm, read from imprecise root-system impressions (Stein et al. 2020). Trunks of more than 20 cm are reported from the Givetian (Meyer-Berthaud & Decombeix 2009, citing a personal communication). Permineralised roots are 25-90 mm wide (Meyer-Berthaud et al. 2013)."
+  branching: {state: mixed, note: "Pseudomonopodial apical branching as in aneurophytes, plus adventitious branching that can re-enter any part of the tree; proximal branches long-lived, ultimate and penultimate branches deciduous (Meyer-Berthaud et al. 2000; Meyer-Berthaud & Decombeix 2009)."}
+  leaves: {state: megaphylls, note: "Small fan-shaped laminate leaves with open dichotomous venation from the Givetian (Tomescu & Whitewoods 2024); anisophyllous on dorsiventral ultimate branches in A. roemeriana (Fairon-Demaret & Leponce 2001). The 'megaphyll' label is mine (euphyllophyte laminate leaf); fertile leaves are non-laminate (Fairon-Demaret et al. 2001)."}
+  stomata: {state: unknown, note: "Not reported in the sources read."}
+  conducting_tissue: {state: tracheids, note: "Secondary xylem tracheids with radial pits in groups, eustele with mesarch primary xylem (Callixylon; Tanrattana et al. 2017). One tissue serves conduction and support (Meyer-Berthaud & Decombeix 2009). Cell walls fill 31% of one Callixylon thin section versus 85% in the cladoxylopsid Xinicaulis (Xu et al. 2017)."}
+  sporangium_position: {state: lateral, note: "Fusiform sporangia in two rows on non-laminate, three times bifurcate fertile leaves arranged helically round fertile ultimate axes (A. roemeriana; Fairon-Demaret et al. 2001)."}
+  spores: {state: trilete, note: "Microspores under 70 um, subtriangular with a trilete mark, in the Aneurospora-Geminospora complex; trilete megaspores 110-403 um (mean 214 um, n = 43), most probably Contagisporites (Fairon-Demaret et al. 2001)."}
+  heterospory: {state: present, note: "Demonstrated in A. roemeriana (Fairon-Demaret et al. 2001); listed as a genus feature by Stein et al. (2020). Megaspores are few and come from matrix directly around the sporangia, so their link to the sporangia is inferred."}
+  rooting: {state: roots, note: "Endogenous lateral roots from a lobed protostele, with secondary xylem; last-order roots determinate (Meyer-Berthaud et al. 2013). Cairo: 10-15 primary roots per tree, 6-16 cm wide, radial extent to 11 m, depth 1.2-1.6 m (Stein et al. 2020)."}
+  gametophyte: {state: unknown, note: "Not reported in the sources read."}
+habitat: >-
+  Fluvially dominated Late Devonian floodplains, where it came to dominate forests (Meyer-Berthaud et al. 2000).
+  At Cairo it grew with Eospermatopteris on a seasonally wet and dry vertisol; the roots are trace evidence,
+  the setting is firm.
+status: draft
+updated: 2026-10-27
+references:
+  - cite: "Glasspool IJ, Edwards D, Axe L (2004). Charcoal in the Silurian as evidence for the earliest wildfire. Geology 32: 381-383."
+    doi: 10.1130/g20363.1
+  - cite: "Stein WE, Berry CM, Morris JL, Hernick LV, Mannolini F, Ver Straeten C, Landing E, Marshall JEA, Wellman CH, Beerling DJ, Leake JR (2020). Mid-Devonian Archaeopteris roots signal revolutionary change in earliest fossil forests. Current Biology 30: 421-431."
+    doi: 10.1016/j.cub.2019.11.067
+  - cite: "Meyer-Berthaud B, Scheckler SE, Wendt J (1999). Archaeopteris is the earliest known modern tree. Nature 398: 700-701."
+    doi: 10.1038/19516
+  - cite: "Meyer-Berthaud B, Scheckler SE, Bousquet J-L (2000). The development of Archaeopteris: new evolutionary characters from the structural analysis of an Early Famennian trunk from southeast Morocco. American Journal of Botany 87: 456-468."
+    doi: 10.2307/2656589
+  - cite: "Meyer-Berthaud B, Decombeix A-L, Ermacora X (2013). Archaeopterid root anatomy and architecture: new information from permineralized specimens of Famennian age from Anti-Atlas (Morocco). International Journal of Plant Sciences 174: 364-381."
+    doi: 10.1086/668685
+  - cite: "Meyer-Berthaud B, Decombeix A-L (2009). L'évolution des premiers arbres : les stratégies dévoniennes. Comptes Rendus Palevol 8: 155-165."
+    doi: 10.1016/j.crpv.2008.08.002
+  - cite: "Fairon-Demaret M, Leponce I, Streel M (2001). Archaeopteris from the Upper Famennian of Belgium: heterospory, nomenclature, and palaeobiogeography. Review of Palaeobotany and Palynology 115: 79-97."
+    doi: 10.1016/s0034-6667(01)00051-3
+  - cite: "Fairon-Demaret M, Leponce I (2001). Leaf dimorphism in Archaeopteris roemeriana (progymnosperm): further early fossil evidence of shoot dorsiventrality. American Journal of Botany 88: 729-735."
+    doi: 10.2307/2657074
+  - cite: "Beck CB (1962). Reconstructions of Archaeopteris, and further consideration of its phylogenetic position. American Journal of Botany 49: 373-382."
+    doi: 10.1002/j.1537-2197.1962.tb14953.x
+  - cite: "Berry CM (2019). The evolution of the first forests in the Devonian. Vestnik of Institute of Geology of Komi Science Center of Ural Branch RAS 11: 20-24."
+    doi: 10.19110/2221-1381-2019-11-20-24
+  - cite: "Tanrattana M, Meyer-Berthaud B, Decombeix A-L (2017). Callixylon wendtii sp. nov., a new species of archaeopteridalean progymnosperm from the Late Devonian of Anti-Atlas, Morocco. Earth and Environmental Science Transactions of the Royal Society of Edinburgh 108: 373-385."
+    doi: 10.1017/s1755691017000457
+  - cite: "Decombeix A-L, Meyer-Berthaud B, Galtier J (2011). Transitional changes in arborescent lignophytes at the Devonian-Carboniferous boundary. Journal of the Geological Society 168: 547-557."
+    doi: 10.1144/0016-76492010-074
+  - cite: "Xu H-H, Berry CM, Stein WE, Wang Y, Tang P, Fu Q (2017). Unique growth strategy in the Earth's first trees revealed in silicified fossil trunks from China. Proceedings of the National Academy of Sciences 114: 12009-12014."
+
+web search: 
+web search: Protosalvinia Dawson 1884 thalloid fossil plant genus ...
+web search: 
+web search: https://www.sciencedirect.com/science/article/abs/pii/S0034666715001955
+codex
+Several historical names need particular care. Archaeoperisaccus has an emended diagnosis as a monolete spore, despite its original description as pollen. Laevigatisporites is also distinct from Laevigatosporites. I’m checking these before assigning the final classes.
+web search: 
+web search: "Microreticulatisporites" "Waksmundzka" 2014 ...
+web search: 
+web search: https://www.researchgate.net/publication/239735068_2152-2174_Proposals_to_conserve_the_names_Abiespollenites_Alatisporites_Apiculatasporites_Cicatricosisporites_Densosporites_Elongatosporites_Faguspollenites_Granulatisporites_Jugla
+web search: 
+web search: "Verrucososporites" "Doweld" 2012 ...
+web search: 
+web search: "Palynological age constraint of Les Vilelles unit" authors ...
+web search: 
+web search: https://palass.org/sites/default/files/media/publications/palaeontology/volume_5/vol5_part4_pp619-678.pdf
+web search: 
+web search: "Breconisporites" "diagnosis" ...
+web search: 
+web search: "Concentricosisporites" "Diagnosis" ...
+web search: 
+web search: "Leiomesotriletes" "Lophomesotriletes" ...
+exec
+/bin/zsh -lc "sed -n '50,82p' taxa/parka-decipiens.md && rg -n 'Leiomesotriletes|Lophomesotriletes' data/spores/work/wellman2013/appendix.txt data/spores/sources/wellman2013_taxa.csv" in /Users/bwbrook/papers/silurian_plants
+ exited 1 in 0ms:
+  Laminated lacustrine siltstones and distal alluvial sandstones of the Old Red Sandstone, with fish and eurypterids
+  (Cleal and Thomas 1995; Braddy 2000). Whether it grew submerged or emergent is unresolved: Niklas inferred that it probably spent at least part of its
+  life out of water (as summarised by Cleal and Thomas 1995).
+status: draft
+updated: 2026-10-27
+references:
+  - cite: "Niklas KJ (1976). Morphological and ontogenetic reconstructions of Parka decipiens Fleming and Pachytheca Hooker from the Lower Old Red Sandstone, Scotland. Transactions of the Royal Society of Edinburgh: Earth Sciences 69: 483-499."
+    doi: 10.1017/s0080456800015507
+  - cite: "Hemsley AR (1989). The ultrastructure of the spores of the Devonian plant Parka decipiens. Annals of Botany 64: 359-367."
+    doi: 10.1093/oxfordjournals.aob.a087852
+  - cite: "Hemsley AR (1990). Parka decipiens and land plant spore evolution. Historical Biology 4: 39-50."
+    doi: 10.1080/08912969009386532
+  - cite: "Hemsley AR (1994). The origin of the land plant sporophyte: an interpolational scenario. Biological Reviews 69: 263-273."
+    doi: 10.1111/j.1469-185x.1994.tb01270.x
+  - cite: "Abbott GD, Ewbank G, Edwards D, Wang GY (1998). Molecular characterization of some enigmatic Lower Devonian fossils. Geochimica et Cosmochimica Acta 62: 1407-1418."
+    doi: 10.1016/s0016-7037(98)00078-7
+  - cite: "Cleal CJ, Thomas BA (1995). Palaeozoic Palaeobotany of Great Britain. Geological Conservation Review Series 9, Chapman and Hall, London (chapter 4, Devonian; read as the JNCC PDF https://data.jncc.gov.uk/data/a2ed7572-87e2-40b9-93cf-2f3af82d8797/gcr-v9-palaeozoic-palaeobotany-of-great-britain-c4.pdf)."
+    doi: null
+  - cite: "Martín-Closas C (2003). The fossil record and evolution of freshwater plants: a review. Geologica Acta 1: 315-338."
+    doi: 10.1344/105.000001619
+  - cite: "Braddy SJ (2000). Eurypterids from the Early Devonian of the Midland Valley of Scotland. Scottish Journal of Geology 36: 115-121."
+    doi: 10.1144/sjg36020115
+  - cite: "Kenrick P (2018). Changing expressions: a hypothesis for the origin of the vascular plant life cycle. Philosophical Transactions of the Royal Society B 373: 20170149."
+    doi: 10.1098/rstb.2017.0149
+  - cite: "Delwiche CF, Graham LE, Thomson N (1989). Lignin-like compounds and sporopollen in Coleochaete, an algal model for land plant ancestry. Science 245: 399-401."
+    doi: 10.1126/science.245.4916.399
+  - cite: "University of California Museum of Paleontology (n.d.). Coleochaetales: fossil record. Web page, https://ucmp.berkeley.edu/greenalgae/charophyta/coleochaetalesfr.html (read 2026-10-27). Secondary; cites Taylor and Taylor (1993)."
+    doi: null
+  - cite: "Anonymous (n.d.). Parka decipiens. Web page, https://www-archiv.fdm.uni-hamburg.de/b-online/library/steur/eng/parka.html (read 2026-10-27). Unattributed secondary summary; used only for the size and spore figures flagged in the traits."
+    doi: null
+  - cite: "Bierenbroodspot MJ, Darienko T, de Vries S, Delwiche CF, et al. (2025). Phylogenomics unveil a recent origin of morphological complexity in Coleochaetophyceae. Current Biology 35: 5071-5080."
+    doi: 10.1016/j.cub.2025.08.046
+---
+
+web search: 
+web search: "Leiomesotriletes" Naumova 1939 ...
+web search: 
+web search: "Dicryptosporites" "radiatus" dyad ...
+codex
+The final pass is checking that all 107 input names appear exactly once. Where trilete morphology is established but sculpture remains unresolved, I’ll use trilete-unspecified; uncertain will cover names whose diagnosis or identity I could not establish.
+web search: 
+web search: "Cornispora" "varicornata" "megaspore" ...
+exec
+/bin/zsh -lc "python3 -c 'import csv,json; print(json.dumps([x[\"genus\"] for x in csv.DictReader(open(\"data/spores/work/codex/genera/chunk1.csv\"))]))'" in /Users/bwbrook/papers/silurian_plants
+ succeeded in 0ms:
+["Geminospora", "Iberoespora", "Tetraletes", "Cirratriradites", "Convolutispora", "Rhabdosporites", "Archaeotriletes", "Segestrespora", "Ancyrospora", "Samarisporites", "Laevigatosporites", "Auroraspora", "Lycospora", "Quadrisporites", "Triletes", "Raistrickia", "Cooksonia", "Artemopyra", "Amicosporites", "Euryzonotriletes", "Densosporites", "Tholisporites", "Clivosispora", "Breconisporites", "Hystricosporites", "Apiculatisporites", "Knoxisporites", "Zonotriletes", "Diatomozonotriletes", "Vallatisporites", "Endosporites", "Apiculatisporis", "Psilophyton", "Biornatispora", "Amocosporites", "Azonotriletes", "Leonispora", "Apiculatasporites", "Zosterophyllum", "Protosalvinia", "Psophosphaera", "Laevigatisporites", "Coronaspora", "Perisaccus", "Perforosporites", "Archaeopteris", "Imperfectotriletes", "Calyptosporites", "Camptotriletes", "Cheilotetras", "Archaeoperisaccus", "Planisporites", "Parasaccites", "Diaphanospora", "Trilete spore", "Pustulatisporites", "Cymbohilates", "Microreticulatisporites", "Trileites", "Concentricosisporites", "Rimosotetras", "Verruciretusispora", "Spelaeotriletes", "Verrucososporites", "Chelinohilates", "Rugospora", "Parkia", "Retispora", "Spinozonotriletes", "Leiomesotriletes", "Torispora", "Dicryptosporites", "Laevigate", "Stellatispora", "Cannanoropollis", "Vermiverruspora", "Radiaspora", "Stegambiquadrella", "Cristatisporites", "Tumulispora", "Scylaspora", "Zonaletes", "Dawsonites", "Florinites", "Protobarinophyton", "Murospora", "Zonalosporites", "Sigillariostrobus", "Triquitrites", "Corbulispora", "Sporogonites", "Abditusdyadus", "Thymospora", "Lepidostrobus", "Rugosisporites", "Cuneatisporites", "Protopteridium", "Apiculate", "Hostimilla", "Cornispora", "Bullatisporites", "Salopella", "Insolisporites", "Sawdonia", "Plicatipollenites", "Kraeuselisporites", "Lophomesotriletes"]
+
+codex
+{"items":[{"genus":"Geminospora","spore_class":"trilete-ornamented","confidence":"high","basis":"Minute distal cones and spines","source":"[Playford et al. (2001)](https://www.researchgate.net/publication/223570483)"},{"genus":"Iberoespora","spore_class":"trilete-unspecified","confidence":"medium","basis":"Smooth and sculptured cingulate species","source":"[Rubinstein et al. (2005)](https://www.researchgate.net/publication/233500605)"},{"genus":"Tetraletes","spore_class":"not-a-spore","confidence":"high","basis":"Quadrisporites synonym; algal cysts with escape structures","source":"[Steemans & Wellman (2018)](https://eprints.whiterose.ac.uk/127683/3/Text_S_W_new_version.pdf)"},{"genus":"Cirratriradites","spore_class":"trilete-unspecified","confidence":"high","basis":"Exine ranges from smooth to rugose","source":"[Winslow (1962)](https://pubs.usgs.gov/pp/0364/report.pdf)"},{"genus":"Convolutispora","spore_class":"trilete-ornamented","confidence":"high","basis":"Convoluted, interconnected exinal ridges","source":"[McGregor & Camfield (1982)](https://emrlibrary.gov.yk.ca/gsc/bulletins/348/bu_348.pdf)"},{"genus":"Rhabdosporites","spore_class":"trilete-ornamented","confidence":"high","basis":"Closely packed baculate exoexinal sculpture","source":"[Richardson (1960)](https://palass.org/sites/default/files/media/publications/palaeontology/volume_3/vol3_part1_pp45-63.pdf)"},{"genus":"Archaeotriletes","spore_class":"trilete-ornamented","confidence":"medium","basis":"Processes with expanded or branched tips","source":"[Playford (1962)](https://palass.org/sites/default/files/media/publications/palaeontology/volume_5/vol5_part3_pp550-618.pdf)"},{"genus":"Segestrespora","spore_class":"cryptospore-dyad","confidence":"high","basis":"Permanent dyads enclosed by an envelope","source":"[Wellman et al. (2015)](https://orbi.uliege.be/bitstream/2268/117842/1/Wellman%20et%20al%202015b.pdf)"},{"genus":"Ancyrospora","spore_class":"trilete-ornamented","confidence":"high","basis":"Grapnel-tipped sculptural processes","source":"[Askew & Wellman (2019)](https://onlinelibrary.wiley.com/doi/full/10.1002/spp2.1245)"},{"genus":"Samarisporites","spore_class":"trilete-ornamented","confidence":"medium","basis":"Sculptured spore body with equatorial flange","source":"[Streel et al. (2021)](https://popups.uliege.be/1374-8505/index.php?id=6879)"},{"genus":"Laevigatosporites","spore_class":"other-spore","confidence":"high","basis":"Bilateral monolete spores","source":"[Winslow (1962)](https://pubs.usgs.gov/pp/0364/report.pdf)"},{"genus":"Auroraspora","spore_class":"trilete-unspecified","confidence":"high","basis":"Smooth and sculptured cavate species","source":"[Pereira et al. (2008)](https://www.researchgate.net/publication/289127874)"},{"genus":"Lycospora","spore_class":"trilete-ornamented","confidence":"medium","basis":"Distal fine granules or spinules","source":"[Bek (2012)](https://www.researchgate.net/publication/256850827)"},{"genus":"Quadrisporites","spore_class":"not-a-spore","confidence":"high","basis":"Algal coenobia or resting cysts","source":"[Steemans & Wellman (2018)](https://eprints.whiterose.ac.uk/127683/3/Text_S_W_new_version.pdf)"},{"genus":"Triletes","spore_class":"trilete-unspecified","confidence":"medium","basis":"Historical collective genus; mixed sculpture and micro-/megaspores","source":"[Winslow (1962)](https://pubs.usgs.gov/pp/0364/report.pdf); [Richardson (1960)](https://palass.org/sites/default/files/media/publications/palaeontology/volume_3/vol3_part1_pp45-63.pdf)"},{"genus":"Raistrickia","spore_class":"trilete-ornamented","confidence":"high","basis":"Prominent baculate or clavate sculpture","source":"[Breuer et al. (2015)](https://orbi.uliege.be/bitstream/2268/117852/1/Breuer%20et%20al%202015.pdf)"},{"genus":"Cooksonia","spore_class":"not-a-spore","confidence":"high","basis":"Plant axes bearing terminal sporangia","source":"[Yurina (1965)](https://www.tandfonline.com/doi/abs/10.1080/00206816509474805)"},{"genus":"Artemopyra","spore_class":"cryptospore-monad","confidence":"high","basis":"Hilate monads with proximal radial muri","source":"[Richardson (1996)](https://palass.org/sites/default/files/media/publications/special_papers_in_palaeontology/number_55/spp55_pp7-40.pdf)"},{"genus":"Amicosporites","spore_class":"trilete-unspecified","confidence":"high","basis":"Smooth and distally verrucate species","source":"[Hashemi & Playford (2005)](https://web.igme.es/publicaciones/revistaMicro/pdfs/Micropaleo37_3_2005.pdf)"},{"genus":"Euryzonotriletes","spore_class":"trilete-unspecified","confidence":"high","basis":"Historical broad zonate grouping; heterogeneous sculpture","source":"[Playford (1963)](https://palass.org/sites/default/files/media/publications/palaeontology/volume_5/vol5_part4_pp619-678.pdf)"},{"genus":"Densosporites","spore_class":"trilete-unspecified","confidence":"high","basis":"Smooth and ornamented cingulate species","source":"[Owens et al. (2006)](https://nora.nerc.ac.uk/id/eprint/3442/1/RR06005.pdf)"},{"genus":"Tholisporites","spore_class":"trilete-unspecified","confidence":"high","basis":"Includes smooth and radially costate species","source":"[McGregor (1960)](https://palass.org/sites/default/files/media/publications/palaeontology/volume_3/vol3_part1_pp26-44.pdf); [Breuer et al. (2007)](https://www.researchgate.net/publication/233499781)"},{"genus":"Clivosispora","spore_class":"trilete-ornamented","confidence":"high","basis":"Thick exoexine with verrucae or rugulae","source":"[Grey (1992)](https://library.dbca.wa.gov.au/static/Journals/080326/080326-140.pdf)"},{"genus":"Breconisporites","spore_class":"trilete-unspecified","confidence":"medium","basis":"Laevigate and rugulate or finely sculptured forms","source":"[Hashemi & Playford (2005)](https://web.igme.es/publicaciones/revistaMicro/pdfs/Micropaleo37_3_2005.pdf); [Rubinstein et al. (2013)](https://www.researchgate.net/publication/262179517)"},{"genus":"Hystricosporites","spore_class":"trilete-ornamented","confidence":"high","basis":"Long appendages with anchor-like terminations","source":"[Playford (1962)](https://palass.org/sites/default/files/media/publications/palaeontology/volume_5/vol5_part3_pp550-618.pdf)"},{"genus":"Apiculatisporites","spore_class":"trilete-ornamented","confidence":"high","basis":"Discrete conical or spinose sculpture","source":"[Waksmundzka (2014)](https://www.pgi.gov.pl/dokumenty-pig-pib-all/publikacje-2/biuletyn-pig/biuletyn-460/3029-biuletyn-pig-460-m-waksmundzka.html)"},{"genus":"Knoxisporites","spore_class":"trilete-ornamented","confidence":"high","basis":"Distal radial or concentric muri","source":"[Playford (1963)](https://palass.org/sites/default/files/media/publications/palaeontology/volume_5/vol5_part4_pp619-678.pdf)"},{"genus":"Zonotriletes","spore_class":"trilete-unspecified","confidence":"high","basis":"Historical zonate form genus; variable sculpture","source":"[Playford (1963)](https://palass.org/sites/default/files/media/publications/palaeontology/volume_5/vol5_part4_pp619-678.pdf); [Breuer et al. (2007)](https://www.researchgate.net/publication/233499781)"},{"genus":"Diatomozonotriletes","spore_class":"trilete-ornamented","confidence":"high","basis":"Equatorial corona of discrete radial projections","source":"[Playford (1963)](https://palass.org/sites/default/files/media/publications/palaeontology/volume_5/vol5_part4_pp619-678.pdf)"},{"genus":"Vallatisporites","spore_class":"trilete-ornamented","confidence":"high","basis":"Distal sculpture and vacuolate cingulizona","source":"[Owens et al. (2006)](https://nora.nerc.ac.uk/id/eprint/3442/1/RR06005.pdf)"},{"genus":"Endosporites","spore_class":"trilete-unspecified","confidence":"high","basis":"Cavate species with smooth or sculptured exoexine","source":"[Winslow (1962)](https://pubs.usgs.gov/pp/0364/report.pdf); [Pereira et al. (2008)](https://www.researchgate.net/publication/289127874)"},{"genus":"Apiculatisporis","spore_class":"trilete-ornamented","confidence":"high","basis":"Conical or spinose exinal ornament","source":"[Waksmundzka (2014)](https://www.pgi.gov.pl/dokumenty-pig-pib-all/publikacje-2/biuletyn-pig/biuletyn-460/3029-biuletyn-pig-460-m-waksmundzka.html)"},{"genus":"Psilophyton","spore_class":"not-a-spore","confidence":"high","basis":"Branched vascular plant macrofossils","source":"[Edwards (1993)](https://nph.onlinelibrary.wiley.com/doi/10.1111/j.1469-8137.1993.tb03879.x)"},{"genus":"Biornatispora","spore_class":"trilete-ornamented","confidence":"high","basis":"Reticuloid muri bearing additional sculptural elements","source":"[Noetinger et al. (2015)](https://ri.conicet.gov.ar/bitstream/handle/11336/62129/CONICET_Digital_Nro.6ba07763-132c-4f04-8293-bb7416bf39c1_B.pdf?isAllowed=y&sequence=5)"},{"genus":"Amocosporites","spore_class":"trilete-unspecified","confidence":"high","basis":"Historical Amicosporites usage; variable sculpture","source":"[Hashemi & Playford (2005)](https://web.igme.es/publicaciones/revistaMicro/pdfs/Micropaleo37_3_2005.pdf)"},{"genus":"Azonotriletes","spore_class":"trilete-unspecified","confidence":"high","basis":"Historical unzoned trilete grouping; mixed sculpture","source":"[Playford (1962)](https://palass.org/sites/default/files/media/publications/palaeontology/volume_5/vol5_part3_pp550-618.pdf)"},{"genus":"Leonispora","spore_class":"trilete-laevigate","confidence":"medium","basis":"Smooth exine with proximal disc-like thickenings","source":"[Ball (2022)](https://etheses.whiterose.ac.uk/id/eprint/32375/1/BALLACTHESIS_180231470.pdf)"},{"genus":"Apiculatasporites","spore_class":"trilete-ornamented","confidence":"high","basis":"Coni and spines on trilete exine","source":"[Hashemi & Playford (2005)](https://web.igme.es/publicaciones/revistaMicro/pdfs/Micropaleo37_3_2005.pdf)"},{"genus":"Zosterophyllum","spore_class":"not-a-spore","confidence":"high","basis":"Plant axes bearing lateral sporangia","source":"[Kotyk et al. (2002)](https://bsapubs.onlinelibrary.wiley.com/doi/10.3732/ajb.89.6.1004)"},{"genus":"Protosalvinia","spore_class":"not-a-spore","confidence":"high","basis":"Thalloid macrofossil; disputed biological affinity","source":"[Quijada et al. (2016)](https://www.sciencedirect.com/science/article/abs/pii/S0034666715001955)"},{"genus":"Psophosphaera","spore_class":"not-a-spore","confidence":"medium","basis":"Palaeozoic spherical algal or acritarch vesicles","source":"[Williams (1971–2010), Acritax index](https://www.mikrotax.org/Acritax/JWIP/Psophosphaera_minuta)"},{"genus":"Laevigatisporites","spore_class":"other-spore","confidence":"high","basis":"Smooth trilete megaspores","source":"[Pendleton & Wellman (2013)](https://jm.copernicus.org/articles/32/87/2013/jm-32-87-2013.pdf)"},{"genus":"Coronaspora","spore_class":"trilete-unspecified","confidence":"medium","basis":"Trilete with annular thickening; sculpture unresolved","source":"[Hashemi & Playford (2005)](https://web.igme.es/publicaciones/revistaMicro/pdfs/Micropaleo37_3_2005.pdf)"},{"genus":"Perisaccus","spore_class":"not-a-spore","confidence":"high","basis":"Monosaccate pollen","source":"[Akyol (1974)](https://dergi.mta.gov.tr/files/articles/673/tr/20151005102359_673_227980a7.pdf)"},{"genus":"Perforosporites","spore_class":"trilete-ornamented","confidence":"high","basis":"Foveolate distal and equatorial exine","source":"[Steemans (1989)](https://biblio.naturalsciences.be/rbins-publications/memoirs-of-the-geological-survey-of-belgium/pdfs/msgb-1989-27k.pdf)"},{"genus":"Archaeopteris","spore_class":"not-a-spore","confidence":"high","basis":"Progymnosperm foliage and fertile plant organs","source":"[Beck (1962)](https://bsapubs.onlinelibrary.wiley.com/doi/abs/10.1002/j.1537-2197.1962.tb14953.x)"},{"genus":"Imperfectotriletes","spore_class":"cryptospore-monad","confidence":"high","basis":"Detached cryptospore units; tearing mimics trilete marks","source":"[Wang et al. (2010)](https://pmc.ncbi.nlm.nih.gov/articles/PMC2842664/)"},{"genus":"Calyptosporites","spore_class":"trilete-ornamented","confidence":"high","basis":"Cavate triletes with cones and spines","source":"[Grey (1992)](https://library.dbca.wa.gov.au/static/Journals/080326/080326-140.pdf)"},{"genus":"Camptotriletes","spore_class":"trilete-ornamented","confidence":"high","basis":"Vermiculate or reticulate interconnected muri","source":"[Ağralı & Konyalı (1969)](https://dergi.mta.gov.tr/files/articles/779/eng/20151009150915_779_227aa789.pdf)"},{"genus":"Cheilotetras","spore_class":"cryptospore-tetrad","confidence":"high","basis":"Permanent fused tetrads","source":"[Wellman & Richardson (1996)](https://palass.org/sites/default/files/media/publications/special_papers_in_palaeontology/number_55/spp55_pp41-102.pdf)"},{"genus":"Archaeoperisaccus","spore_class":"other-spore","confidence":"high","basis":"Monolete camerate miospores in emended diagnosis","source":"[McGregor (1969)](https://emrlibrary.gov.yk.ca/gsc/bulletins/182.pdf)"},{"genus":"Planisporites","spore_class":"trilete-ornamented","confidence":"high","basis":"Trilete spores with minute coni or grana","source":"[Gad (2005)](https://e-docs.geo-leo.de/bitstream/11858/10506/1/mgm33_2005_gad.pdf)"},{"genus":"Parasaccites","spore_class":"not-a-spore","confidence":"high","basis":"Radial monosaccate pollen","source":"[di Pasquo & Saha (2025)](https://permian.stratigraphy.org/files/permophiles/Permophiles%2079.pdf)"},{"genus":"Diaphanospora","spore_class":"trilete-unspecified","confidence":"medium","basis":"Trilete perisporate spores; sculpture unresolved generically","source":"[Ravn (1979)](https://publications.iowa.gov/25812/1/2014-10-23_09-10-54_tp-6.pdf); [Breuer et al. (2015)](https://orbi.uliege.be/bitstream/2268/117852/1/Breuer%20et%20al%202015.pdf)"},{"genus":"Trilete spore","spore_class":"not-a-spore","confidence":"high","basis":"Informal morphological label; not a genus","source":"none checked"},{"genus":"Pustulatisporites","spore_class":"trilete-ornamented","confidence":"high","basis":"Discrete pustular exinal sculpture","source":"[Ağralı & Konyalı (1969)](https://dergi.mta.gov.tr/files/articles/779/eng/20151009150915_779_227aa789.pdf)"},{"genus":"Cymbohilates","spore_class":"cryptospore-monad","confidence":"medium","basis":"Hilate monads; attached dyads also occur","source":"[Wellman & Richardson (1996)](https://palass.org/sites/default/files/media/publications/special_papers_in_palaeontology/number_55/spp55_pp41-102.pdf)"},{"genus":"Microreticulatisporites","spore_class":"trilete-ornamented","confidence":"high","basis":"Fine reticulum of polygonal lumina","source":"[Waksmundzka (2014)](https://www.pgi.gov.pl/dokumenty-pig-pib-all/publikacje-2/biuletyn-pig/biuletyn-460/3029-biuletyn-pig-460-m-waksmundzka.html)"},{"genus":"Trileites","spore_class":"other-spore","confidence":"high","basis":"Trilete megaspore genus","source":"[Richardson & Lister (1969)](https://palass.org/sites/default/files/media/publications/palaeontology/volume_12/vol12_part2_pp201-252.pdf)"},{"genus":"Concentricosisporites","spore_class":"trilete-laevigate","confidence":"high","basis":"Smooth exine with polar wall thickening","source":"[Beck & Strother (2008)](https://www.researchgate.net/publication/250070986)"},{"genus":"Rimosotetras","spore_class":"cryptospore-tetrad","confidence":"high","basis":"Permanent tetrads with loosely attached units","source":"[Edwards et al. (2014)](https://nph.onlinelibrary.wiley.com/doi/full/10.1111/nph.12645)"},{"genus":"Verruciretusispora","spore_class":"trilete-ornamented","confidence":"high","basis":"Retusoid spores with distal verrucae","source":"[Breuer et al. (2015)](https://orbi.uliege.be/bitstream/2268/117852/1/Breuer%20et%20al%202015.pdf)"},{"genus":"Spelaeotriletes","spore_class":"trilete-ornamented","confidence":"high","basis":"Cavate spores with distal apiculate sculpture","source":"[Playford et al. (2001)](https://www.researchgate.net/publication/223570483)"},{"genus":"Verrucososporites","spore_class":"other-spore","confidence":"high","basis":"Verrucate monolete spores; distinct from Verrucosisporites","source":"[Bharadwaj (1960)](https://journals.sagepub.com/doi/pdf/10.54991/jop.1960.600)"},{"genus":"Chelinohilates","spore_class":"cryptospore-monad","confidence":"medium","basis":"Sculptured hilate monads; attached units also occur","source":"[Wellman & Richardson (1996)](https://palass.org/sites/default/files/media/publications/special_papers_in_palaeontology/number_55/spp55_pp41-102.pdf)"},{"genus":"Rugospora","spore_class":"trilete-ornamented","confidence":"high","basis":"Rugulate exoexine, sometimes with additional processes","source":"[González et al. (2015)](https://www.redalyc.org/pdf/505/50543401007.pdf)"},{"genus":"Parkia","spore_class":"not-a-spore","confidence":"medium","basis":"Probable Parka misspelling; thalloid macrofossil","source":"[Edwards (1921), concerning Parka](https://field.biodiversitylibrary.org/part/51554)"},{"genus":"Retispora","spore_class":"trilete-ornamented","confidence":"high","basis":"Reticulate or lacunate exoexine","source":"[Playford et al. (2001)](https://www.researchgate.net/publication/223570483)"},{"genus":"Spinozonotriletes","spore_class":"trilete-ornamented","confidence":"high","basis":"Spinose exoexine and equatorial limbus","source":"[Playford (1963)](https://palass.org/sites/default/files/media/publications/palaeontology/volume_5/vol5_part4_pp619-678.pdf)"},{"genus":"Leiomesotriletes","spore_class":"uncertain","confidence":"low","basis":"Occurrences located; diagnostic morphology unverified","source":"none checked"},{"genus":"Torispora","spore_class":"other-spore","confidence":"high","basis":"Monolete spores with polar exinal thickening","source":"[Kosanke (1984)](https://pubs.usgs.gov/pp/1318/report.pdf)"},{"genus":"Dicryptosporites","spore_class":"cryptospore-dyad","confidence":"medium","basis":"Permanent or dissociated dyads with proximal radial thickenings","source":"[Strother (1991)](https://pubs.geoscienceworld.org/aasp/palynology/article/15/1/219/86896/A-classification-schema-for-the-cryptospores); [Beck & Strother (2008)](https://www.researchgate.net/publication/250070986)"},{"genus":"Laevigate","spore_class":"not-a-spore","confidence":"high","basis":"Informal surface-description label; not a genus","source":"none checked"},{"genus":"Stellatispora","spore_class":"trilete-ornamented","confidence":"high","basis":"Distal radial muri","source":"[Ball (2022)](https://etheses.whiterose.ac.uk/id/eprint/32375/1/BALLACTHESIS_180231470.pdf)"},{"genus":"Cannanoropollis","spore_class":"not-a-spore","confidence":"high","basis":"Monosaccate pollen","source":"[Khurshid (2000)](https://scialert.net/fulltext/?doi=pjbs.2000.191.192)"},{"genus":"Vermiverruspora","spore_class":"trilete-ornamented","confidence":"high","basis":"Sculptured distal patina","source":"[Beck & Strother (2008)](https://www.researchgate.net/publication/250070986)"},{"genus":"Radiaspora","spore_class":"trilete-ornamented","confidence":"high","basis":"Spoke-like radial ribs","source":"[Balme (1960)](https://journals.sagepub.com/doi/pdf/10.54991/jop.1960.590)"},{"genus":"Stegambiquadrella","spore_class":"cryptospore-tetrad","confidence":"high","basis":"Unfused tetrad units enclosed by envelope","source":"[Wang et al. (2026)](https://www.sciencedirect.com/science/article/abs/pii/S0012825226000875)"},{"genus":"Cristatisporites","spore_class":"trilete-ornamented","confidence":"high","basis":"Distal cones and spines; sculptured flange","source":"[Atta-Peters & Anan-Yorke (2003)](https://web.igme.es/publicaciones/revistaMicro/pdfs/Micropaleo35_1_2003.pdf)"},{"genus":"Tumulispora","spore_class":"trilete-ornamented","confidence":"high","basis":"Cingulate spores bearing coarse verrucae","source":"[Atta-Peters & Anan-Yorke (2003)](https://web.igme.es/publicaciones/revistaMicro/pdfs/Micropaleo35_1_2003.pdf)"},{"genus":"Scylaspora","spore_class":"trilete-ornamented","confidence":"high","basis":"Irregular proximal muri and rugulae","source":"[Ball (2022)](https://etheses.whiterose.ac.uk/id/eprint/32375/1/BALLACTHESIS_180231470.pdf)"},{"genus":"Zonaletes","spore_class":"uncertain","confidence":"low","basis":"Historical alete grouping; supplied species heterogeneous","source":"[Bharadwaj (1975)](https://www.palaeobotanicalsociety.org/geophytology/vol5_1975/81vol5_75.pdf)"},{"genus":"Dawsonites","spore_class":"not-a-spore","confidence":"high","basis":"Sporangia-bearing plant organs","source":"[Chaloner et al. (1978)](https://palass.org/sites/default/files/media/publications/palaeontology/volume_21/vol21_part3_pp693-707.pdf)"},{"genus":"Florinites","spore_class":"not-a-spore","confidence":"high","basis":"Pollen genus","source":"[Bek et al. (2022)](https://www.sciencedirect.com/science/article/abs/pii/S016651622200194X)"},{"genus":"Protobarinophyton","spore_class":"not-a-spore","confidence":"high","basis":"Vascular plant macrofossils","source":"[Cichan et al. (1984)](https://www.sciencedirect.com/science/article/pii/0034666784900447)"},{"genus":"Murospora","spore_class":"trilete-laevigate","confidence":"medium","basis":"Smooth to infrapunctate cingulate spores","source":"[Playford (1962)](https://palass.org/sites/default/files/media/publications/palaeontology/volume_5/vol5_part3_pp550-618.pdf)"},{"genus":"Zonalosporites","spore_class":"not-a-spore","confidence":"medium","basis":"Medullosan monolete pollen","source":"[Pendleton & Wellman (2013)](https://jm.copernicus.org/articles/32/87/2013/jm-32-87-2013.pdf)"},{"genus":"Sigillariostrobus","spore_class":"not-a-spore","confidence":"high","basis":"Lycopsid reproductive cones","source":"[Leclercq (1938)](https://popups.ulg.ac.be/0037-9395/index.php?id=6685)"},{"genus":"Triquitrites","spore_class":"trilete-unspecified","confidence":"high","basis":"Smooth and sculptured species with corner thickenings","source":"[Playford & Dino (2008)](https://www.researchgate.net/publication/41202161)"},{"genus":"Corbulispora","spore_class":"trilete-ornamented","confidence":"high","basis":"Reticulate or murornate exine","source":"[Denayer et al. (2015)](https://popups.ulg.ac.be/1374-8505/index.php?format=print&id=5476)"},{"genus":"Sporogonites","spore_class":"not-a-spore","confidence":"high","basis":"Stalked sporangial macrofossils","source":"[Gess & Prestianni (2021)](https://pmc.ncbi.nlm.nih.gov/articles/PMC8178408/)"},{"genus":"Abditusdyadus","spore_class":"cryptospore-dyad","confidence":"high","basis":"Envelope-enclosed permanent true dyads","source":"[Wellman & Richardson (1996)](https://palass.org/sites/default/files/media/publications/special_papers_in_palaeontology/number_55/spp55_pp41-102.pdf)"},{"genus":"Thymospora","spore_class":"other-spore","confidence":"high","basis":"Predominantly monolete, verrucate spores","source":"[Kosanke (1988)](https://pubs.usgs.gov/pp/1486/report.pdf)"},{"genus":"Lepidostrobus","spore_class":"not-a-spore","confidence":"high","basis":"Lycopsid reproductive cones","source":"[Chaloner (1953)](https://academic.oup.com/aob/article-abstract/17/2/263/186022)"},{"genus":"Rugosisporites","spore_class":"trilete-ornamented","confidence":"high","basis":"Proximal muri, rugulae or granules","source":"[Dufka (1995)](https://jm.copernicus.org/articles/14/67/1995/jm-14-67-1995.pdf)"},{"genus":"Cuneatisporites","spore_class":"not-a-spore","confidence":"high","basis":"Bisaccate pollen","source":"[Clarke (1965)](https://palass.org/sites/default/files/media/publications/palaeontology/volume_8/vol8_part2_pp322-354.pdf)"},{"genus":"Protopteridium","spore_class":"not-a-spore","confidence":"high","basis":"Branched fertile plant axes","source":"[Wellman (2009)](https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1475-4983.2008.00823.x)"},{"genus":"Apiculate","spore_class":"not-a-spore","confidence":"high","basis":"Informal sculpture label; not a genus","source":"none checked"},{"genus":"Hostimilla","spore_class":"not-a-spore","confidence":"medium","basis":"Probable Hostimella misspelling; plant axes","source":"[Lang (1926), concerning Hostimella](https://www.cambridge.org/core/journals/earth-and-environmental-science-transactions-of-royal-society-of-edinburgh/issue/AA778F482B7BF38D03E0361D7E907856)"},{"genus":"Cornispora","spore_class":"trilete-ornamented","confidence":"medium","basis":"Prominent irregular horn-like exinal projections","source":"[Marshall et al. (2022)](https://journals.lib.unb.ca/index.php/ag/article/view/32882)"},{"genus":"Bullatisporites","spore_class":"trilete-ornamented","confidence":"high","basis":"Bullate sculptural elements on retusoid spores","source":"[Wellman et al. (2023)](https://eprints.whiterose.ac.uk/196115/1/2023Wellman%20et%20al.%20RPP.pdf)"},{"genus":"Salopella","spore_class":"not-a-spore","confidence":"high","basis":"Branched axes with terminal sporangia","source":"[Drovandi et al. (2024)](https://www.nature.com/articles/s41598-024-63196-4.pdf)"},{"genus":"Insolisporites","spore_class":"trilete-ornamented","confidence":"high","basis":"Distal irregular granules and apiculi","source":"[Ball (2022)](https://etheses.whiterose.ac.uk/id/eprint/32375/1/BALLACTHESIS_180231470.pdf)"},{"genus":"Sawdonia","spore_class":"not-a-spore","confidence":"high","basis":"Spiny vascular plant axes","source":"[Chaloner et al. (1978)](https://palass.org/sites/default/files/media/publications/palaeontology/volume_21/vol21_part3_pp693-707.pdf)"},{"genus":"Plicatipollenites","spore_class":"not-a-spore","confidence":"high","basis":"Monosaccate pollen","source":"[Khurshid (2000)](https://scialert.net/fulltext/?doi=pjbs.2000.191.192)"},{"genus":"Kraeuselisporites","spore_class":"trilete-ornamented","confidence":"high","basis":"Echinate distal exine and equatorial zona","source":"[Visscher (1966)](https://repository.naturalis.nl/pub/535004/MBMHU1966262002001.pdf)"},{"genus":"Lophomesotriletes","spore_class":"uncertain","confidence":"low","basis":"Exact name and diagnostic morphology unverified","source":"none checked"}]}
+tokens used
+221,873
+{"items":[{"genus":"Geminospora","spore_class":"trilete-ornamented","confidence":"high","basis":"Minute distal cones and spines","source":"[Playford et al. (2001)](https://www.researchgate.net/publication/223570483)"},{"genus":"Iberoespora","spore_class":"trilete-unspecified","confidence":"medium","basis":"Smooth and sculptured cingulate species","source":"[Rubinstein et al. (2005)](https://www.researchgate.net/publication/233500605)"},{"genus":"Tetraletes","spore_class":"not-a-spore","confidence":"high","basis":"Quadrisporites synonym; algal cysts with escape structures","source":"[Steemans & Wellman (2018)](https://eprints.whiterose.ac.uk/127683/3/Text_S_W_new_version.pdf)"},{"genus":"Cirratriradites","spore_class":"trilete-unspecified","confidence":"high","basis":"Exine ranges from smooth to rugose","source":"[Winslow (1962)](https://pubs.usgs.gov/pp/0364/report.pdf)"},{"genus":"Convolutispora","spore_class":"trilete-ornamented","confidence":"high","basis":"Convoluted, interconnected exinal ridges","source":"[McGregor & Camfield (1982)](https://emrlibrary.gov.yk.ca/gsc/bulletins/348/bu_348.pdf)"},{"genus":"Rhabdosporites","spore_class":"trilete-ornamented","confidence":"high","basis":"Closely packed baculate exoexinal sculpture","source":"[Richardson (1960)](https://palass.org/sites/default/files/media/publications/palaeontology/volume_3/vol3_part1_pp45-63.pdf)"},{"genus":"Archaeotriletes","spore_class":"trilete-ornamented","confidence":"medium","basis":"Processes with expanded or branched tips","source":"[Playford (1962)](https://palass.org/sites/default/files/media/publications/palaeontology/volume_5/vol5_part3_pp550-618.pdf)"},{"genus":"Segestrespora","spore_class":"cryptospore-dyad","confidence":"high","basis":"Permanent dyads enclosed by an envelope","source":"[Wellman et al. (2015)](https://orbi.uliege.be/bitstream/2268/117842/1/Wellman%20et%20al%202015b.pdf)"},{"genus":"Ancyrospora","spore_class":"trilete-ornamented","confidence":"high","basis":"Grapnel-tipped sculptural processes","source":"[Askew & Wellman (2019)](https://onlinelibrary.wiley.com/doi/full/10.1002/spp2.1245)"},{"genus":"Samarisporites","spore_class":"trilete-ornamented","confidence":"medium","basis":"Sculptured spore body with equatorial flange","source":"[Streel et al. (2021)](https://popups.uliege.be/1374-8505/index.php?id=6879)"},{"genus":"Laevigatosporites","spore_class":"other-spore","confidence":"high","basis":"Bilateral monolete spores","source":"[Winslow (1962)](https://pubs.usgs.gov/pp/0364/report.pdf)"},{"genus":"Auroraspora","spore_class":"trilete-unspecified","confidence":"high","basis":"Smooth and sculptured cavate species","source":"[Pereira et al. (2008)](https://www.researchgate.net/publication/289127874)"},{"genus":"Lycospora","spore_class":"trilete-ornamented","confidence":"medium","basis":"Distal fine granules or spinules","source":"[Bek (2012)](https://www.researchgate.net/publication/256850827)"},{"genus":"Quadrisporites","spore_class":"not-a-spore","confidence":"high","basis":"Algal coenobia or resting cysts","source":"[Steemans & Wellman (2018)](https://eprints.whiterose.ac.uk/127683/3/Text_S_W_new_version.pdf)"},{"genus":"Triletes","spore_class":"trilete-unspecified","confidence":"medium","basis":"Historical collective genus; mixed sculpture and micro-/megaspores","source":"[Winslow (1962)](https://pubs.usgs.gov/pp/0364/report.pdf); [Richardson (1960)](https://palass.org/sites/default/files/media/publications/palaeontology/volume_3/vol3_part1_pp45-63.pdf)"},{"genus":"Raistrickia","spore_class":"trilete-ornamented","confidence":"high","basis":"Prominent baculate or clavate sculpture","source":"[Breuer et al. (2015)](https://orbi.uliege.be/bitstream/2268/117852/1/Breuer%20et%20al%202015.pdf)"},{"genus":"Cooksonia","spore_class":"not-a-spore","confidence":"high","basis":"Plant axes bearing terminal sporangia","source":"[Yurina (1965)](https://www.tandfonline.com/doi/abs/10.1080/00206816509474805)"},{"genus":"Artemopyra","spore_class":"cryptospore-monad","confidence":"high","basis":"Hilate monads with proximal radial muri","source":"[Richardson (1996)](https://palass.org/sites/default/files/media/publications/special_papers_in_palaeontology/number_55/spp55_pp7-40.pdf)"},{"genus":"Amicosporites","spore_class":"trilete-unspecified","confidence":"high","basis":"Smooth and distally verrucate species","source":"[Hashemi & Playford (2005)](https://web.igme.es/publicaciones/revistaMicro/pdfs/Micropaleo37_3_2005.pdf)"},{"genus":"Euryzonotriletes","spore_class":"trilete-unspecified","confidence":"high","basis":"Historical broad zonate grouping; heterogeneous sculpture","source":"[Playford (1963)](https://palass.org/sites/default/files/media/publications/palaeontology/volume_5/vol5_part4_pp619-678.pdf)"},{"genus":"Densosporites","spore_class":"trilete-unspecified","confidence":"high","basis":"Smooth and ornamented cingulate species","source":"[Owens et al. (2006)](https://nora.nerc.ac.uk/id/eprint/3442/1/RR06005.pdf)"},{"genus":"Tholisporites","spore_class":"trilete-unspecified","confidence":"high","basis":"Includes smooth and radially costate species","source":"[McGregor (1960)](https://palass.org/sites/default/files/media/publications/palaeontology/volume_3/vol3_part1_pp26-44.pdf); [Breuer et al. (2007)](https://www.researchgate.net/publication/233499781)"},{"genus":"Clivosispora","spore_class":"trilete-ornamented","confidence":"high","basis":"Thick exoexine with verrucae or rugulae","source":"[Grey (1992)](https://library.dbca.wa.gov.au/static/Journals/080326/080326-140.pdf)"},{"genus":"Breconisporites","spore_class":"trilete-unspecified","confidence":"medium","basis":"Laevigate and rugulate or finely sculptured forms","source":"[Hashemi & Playford (2005)](https://web.igme.es/publicaciones/revistaMicro/pdfs/Micropaleo37_3_2005.pdf); [Rubinstein et al. (2013)](https://www.researchgate.net/publication/262179517)"},{"genus":"Hystricosporites","spore_class":"trilete-ornamented","confidence":"high","basis":"Long appendages with anchor-like terminations","source":"[Playford (1962)](https://palass.org/sites/default/files/media/publications/palaeontology/volume_5/vol5_part3_pp550-618.pdf)"},{"genus":"Apiculatisporites","spore_class":"trilete-ornamented","confidence":"high","basis":"Discrete conical or spinose sculpture","source":"[Waksmundzka (2014)](https://www.pgi.gov.pl/dokumenty-pig-pib-all/publikacje-2/biuletyn-pig/biuletyn-460/3029-biuletyn-pig-460-m-waksmundzka.html)"},{"genus":"Knoxisporites","spore_class":"trilete-ornamented","confidence":"high","basis":"Distal radial or concentric muri","source":"[Playford (1963)](https://palass.org/sites/default/files/media/publications/palaeontology/volume_5/vol5_part4_pp619-678.pdf)"},{"genus":"Zonotriletes","spore_class":"trilete-unspecified","confidence":"high","basis":"Historical zonate form genus; variable sculpture","source":"[Playford (1963)](https://palass.org/sites/default/files/media/publications/palaeontology/volume_5/vol5_part4_pp619-678.pdf); [Breuer et al. (2007)](https://www.researchgate.net/publication/233499781)"},{"genus":"Diatomozonotriletes","spore_class":"trilete-ornamented","confidence":"high","basis":"Equatorial corona of discrete radial projections","source":"[Playford (1963)](https://palass.org/sites/default/files/media/publications/palaeontology/volume_5/vol5_part4_pp619-678.pdf)"},{"genus":"Vallatisporites","spore_class":"trilete-ornamented","confidence":"high","basis":"Distal sculpture and vacuolate cingulizona","source":"[Owens et al. (2006)](https://nora.nerc.ac.uk/id/eprint/3442/1/RR06005.pdf)"},{"genus":"Endosporites","spore_class":"trilete-unspecified","confidence":"high","basis":"Cavate species with smooth or sculptured exoexine","source":"[Winslow (1962)](https://pubs.usgs.gov/pp/0364/report.pdf); [Pereira et al. (2008)](https://www.researchgate.net/publication/289127874)"},{"genus":"Apiculatisporis","spore_class":"trilete-ornamented","confidence":"high","basis":"Conical or spinose exinal ornament","source":"[Waksmundzka (2014)](https://www.pgi.gov.pl/dokumenty-pig-pib-all/publikacje-2/biuletyn-pig/biuletyn-460/3029-biuletyn-pig-460-m-waksmundzka.html)"},{"genus":"Psilophyton","spore_class":"not-a-spore","confidence":"high","basis":"Branched vascular plant macrofossils","source":"[Edwards (1993)](https://nph.onlinelibrary.wiley.com/doi/10.1111/j.1469-8137.1993.tb03879.x)"},{"genus":"Biornatispora","spore_class":"trilete-ornamented","confidence":"high","basis":"Reticuloid muri bearing additional sculptural elements","source":"[Noetinger et al. (2015)](https://ri.conicet.gov.ar/bitstream/handle/11336/62129/CONICET_Digital_Nro.6ba07763-132c-4f04-8293-bb7416bf39c1_B.pdf?isAllowed=y&sequence=5)"},{"genus":"Amocosporites","spore_class":"trilete-unspecified","confidence":"high","basis":"Historical Amicosporites usage; variable sculpture","source":"[Hashemi & Playford (2005)](https://web.igme.es/publicaciones/revistaMicro/pdfs/Micropaleo37_3_2005.pdf)"},{"genus":"Azonotriletes","spore_class":"trilete-unspecified","confidence":"high","basis":"Historical unzoned trilete grouping; mixed sculpture","source":"[Playford (1962)](https://palass.org/sites/default/files/media/publications/palaeontology/volume_5/vol5_part3_pp550-618.pdf)"},{"genus":"Leonispora","spore_class":"trilete-laevigate","confidence":"medium","basis":"Smooth exine with proximal disc-like thickenings","source":"[Ball (2022)](https://etheses.whiterose.ac.uk/id/eprint/32375/1/BALLACTHESIS_180231470.pdf)"},{"genus":"Apiculatasporites","spore_class":"trilete-ornamented","confidence":"high","basis":"Coni and spines on trilete exine","source":"[Hashemi & Playford (2005)](https://web.igme.es/publicaciones/revistaMicro/pdfs/Micropaleo37_3_2005.pdf)"},{"genus":"Zosterophyllum","spore_class":"not-a-spore","confidence":"high","basis":"Plant axes bearing lateral sporangia","source":"[Kotyk et al. (2002)](https://bsapubs.onlinelibrary.wiley.com/doi/10.3732/ajb.89.6.1004)"},{"genus":"Protosalvinia","spore_class":"not-a-spore","confidence":"high","basis":"Thalloid macrofossil; disputed biological affinity","source":"[Quijada et al. (2016)](https://www.sciencedirect.com/science/article/abs/pii/S0034666715001955)"},{"genus":"Psophosphaera","spore_class":"not-a-spore","confidence":"medium","basis":"Palaeozoic spherical algal or acritarch vesicles","source":"[Williams (1971–2010), Acritax index](https://www.mikrotax.org/Acritax/JWIP/Psophosphaera_minuta)"},{"genus":"Laevigatisporites","spore_class":"other-spore","confidence":"high","basis":"Smooth trilete megaspores","source":"[Pendleton & Wellman (2013)](https://jm.copernicus.org/articles/32/87/2013/jm-32-87-2013.pdf)"},{"genus":"Coronaspora","spore_class":"trilete-unspecified","confidence":"medium","basis":"Trilete with annular thickening; sculpture unresolved","source":"[Hashemi & Playford (2005)](https://web.igme.es/publicaciones/revistaMicro/pdfs/Micropaleo37_3_2005.pdf)"},{"genus":"Perisaccus","spore_class":"not-a-spore","confidence":"high","basis":"Monosaccate pollen","source":"[Akyol (1974)](https://dergi.mta.gov.tr/files/articles/673/tr/20151005102359_673_227980a7.pdf)"},{"genus":"Perforosporites","spore_class":"trilete-ornamented","confidence":"high","basis":"Foveolate distal and equatorial exine","source":"[Steemans (1989)](https://biblio.naturalsciences.be/rbins-publications/memoirs-of-the-geological-survey-of-belgium/pdfs/msgb-1989-27k.pdf)"},{"genus":"Archaeopteris","spore_class":"not-a-spore","confidence":"high","basis":"Progymnosperm foliage and fertile plant organs","source":"[Beck (1962)](https://bsapubs.onlinelibrary.wiley.com/doi/abs/10.1002/j.1537-2197.1962.tb14953.x)"},{"genus":"Imperfectotriletes","spore_class":"cryptospore-monad","confidence":"high","basis":"Detached cryptospore units; tearing mimics trilete marks","source":"[Wang et al. (2010)](https://pmc.ncbi.nlm.nih.gov/articles/PMC2842664/)"},{"genus":"Calyptosporites","spore_class":"trilete-ornamented","confidence":"high","basis":"Cavate triletes with cones and spines","source":"[Grey (1992)](https://library.dbca.wa.gov.au/static/Journals/080326/080326-140.pdf)"},{"genus":"Camptotriletes","spore_class":"trilete-ornamented","confidence":"high","basis":"Vermiculate or reticulate interconnected muri","source":"[Ağralı & Konyalı (1969)](https://dergi.mta.gov.tr/files/articles/779/eng/20151009150915_779_227aa789.pdf)"},{"genus":"Cheilotetras","spore_class":"cryptospore-tetrad","confidence":"high","basis":"Permanent fused tetrads","source":"[Wellman & Richardson (1996)](https://palass.org/sites/default/files/media/publications/special_papers_in_palaeontology/number_55/spp55_pp41-102.pdf)"},{"genus":"Archaeoperisaccus","spore_class":"other-spore","confidence":"high","basis":"Monolete camerate miospores in emended diagnosis","source":"[McGregor (1969)](https://emrlibrary.gov.yk.ca/gsc/bulletins/182.pdf)"},{"genus":"Planisporites","spore_class":"trilete-ornamented","confidence":"high","basis":"Trilete spores with minute coni or grana","source":"[Gad (2005)](https://e-docs.geo-leo.de/bitstream/11858/10506/1/mgm33_2005_gad.pdf)"},{"genus":"Parasaccites","spore_class":"not-a-spore","confidence":"high","basis":"Radial monosaccate pollen","source":"[di Pasquo & Saha (2025)](https://permian.stratigraphy.org/files/permophiles/Permophiles%2079.pdf)"},{"genus":"Diaphanospora","spore_class":"trilete-unspecified","confidence":"medium","basis":"Trilete perisporate spores; sculpture unresolved generically","source":"[Ravn (1979)](https://publications.iowa.gov/25812/1/2014-10-23_09-10-54_tp-6.pdf); [Breuer et al. (2015)](https://orbi.uliege.be/bitstream/2268/117852/1/Breuer%20et%20al%202015.pdf)"},{"genus":"Trilete spore","spore_class":"not-a-spore","confidence":"high","basis":"Informal morphological label; not a genus","source":"none checked"},{"genus":"Pustulatisporites","spore_class":"trilete-ornamented","confidence":"high","basis":"Discrete pustular exinal sculpture","source":"[Ağralı & Konyalı (1969)](https://dergi.mta.gov.tr/files/articles/779/eng/20151009150915_779_227aa789.pdf)"},{"genus":"Cymbohilates","spore_class":"cryptospore-monad","confidence":"medium","basis":"Hilate monads; attached dyads also occur","source":"[Wellman & Richardson (1996)](https://palass.org/sites/default/files/media/publications/special_papers_in_palaeontology/number_55/spp55_pp41-102.pdf)"},{"genus":"Microreticulatisporites","spore_class":"trilete-ornamented","confidence":"high","basis":"Fine reticulum of polygonal lumina","source":"[Waksmundzka (2014)](https://www.pgi.gov.pl/dokumenty-pig-pib-all/publikacje-2/biuletyn-pig/biuletyn-460/3029-biuletyn-pig-460-m-waksmundzka.html)"},{"genus":"Trileites","spore_class":"other-spore","confidence":"high","basis":"Trilete megaspore genus","source":"[Richardson & Lister (1969)](https://palass.org/sites/default/files/media/publications/palaeontology/volume_12/vol12_part2_pp201-252.pdf)"},{"genus":"Concentricosisporites","spore_class":"trilete-laevigate","confidence":"high","basis":"Smooth exine with polar wall thickening","source":"[Beck & Strother (2008)](https://www.researchgate.net/publication/250070986)"},{"genus":"Rimosotetras","spore_class":"cryptospore-tetrad","confidence":"high","basis":"Permanent tetrads with loosely attached units","source":"[Edwards et al. (2014)](https://nph.onlinelibrary.wiley.com/doi/full/10.1111/nph.12645)"},{"genus":"Verruciretusispora","spore_class":"trilete-ornamented","confidence":"high","basis":"Retusoid spores with distal verrucae","source":"[Breuer et al. (2015)](https://orbi.uliege.be/bitstream/2268/117852/1/Breuer%20et%20al%202015.pdf)"},{"genus":"Spelaeotriletes","spore_class":"trilete-ornamented","confidence":"high","basis":"Cavate spores with distal apiculate sculpture","source":"[Playford et al. (2001)](https://www.researchgate.net/publication/223570483)"},{"genus":"Verrucososporites","spore_class":"other-spore","confidence":"high","basis":"Verrucate monolete spores; distinct from Verrucosisporites","source":"[Bharadwaj (1960)](https://journals.sagepub.com/doi/pdf/10.54991/jop.1960.600)"},{"genus":"Chelinohilates","spore_class":"cryptospore-monad","confidence":"medium","basis":"Sculptured hilate monads; attached units also occur","source":"[Wellman & Richardson (1996)](https://palass.org/sites/default/files/media/publications/special_papers_in_palaeontology/number_55/spp55_pp41-102.pdf)"},{"genus":"Rugospora","spore_class":"trilete-ornamented","confidence":"high","basis":"Rugulate exoexine, sometimes with additional processes","source":"[González et al. (2015)](https://www.redalyc.org/pdf/505/50543401007.pdf)"},{"genus":"Parkia","spore_class":"not-a-spore","confidence":"medium","basis":"Probable Parka misspelling; thalloid macrofossil","source":"[Edwards (1921), concerning Parka](https://field.biodiversitylibrary.org/part/51554)"},{"genus":"Retispora","spore_class":"trilete-ornamented","confidence":"high","basis":"Reticulate or lacunate exoexine","source":"[Playford et al. (2001)](https://www.researchgate.net/publication/223570483)"},{"genus":"Spinozonotriletes","spore_class":"trilete-ornamented","confidence":"high","basis":"Spinose exoexine and equatorial limbus","source":"[Playford (1963)](https://palass.org/sites/default/files/media/publications/palaeontology/volume_5/vol5_part4_pp619-678.pdf)"},{"genus":"Leiomesotriletes","spore_class":"uncertain","confidence":"low","basis":"Occurrences located; diagnostic morphology unverified","source":"none checked"},{"genus":"Torispora","spore_class":"other-spore","confidence":"high","basis":"Monolete spores with polar exinal thickening","source":"[Kosanke (1984)](https://pubs.usgs.gov/pp/1318/report.pdf)"},{"genus":"Dicryptosporites","spore_class":"cryptospore-dyad","confidence":"medium","basis":"Permanent or dissociated dyads with proximal radial thickenings","source":"[Strother (1991)](https://pubs.geoscienceworld.org/aasp/palynology/article/15/1/219/86896/A-classification-schema-for-the-cryptospores); [Beck & Strother (2008)](https://www.researchgate.net/publication/250070986)"},{"genus":"Laevigate","spore_class":"not-a-spore","confidence":"high","basis":"Informal surface-description label; not a genus","source":"none checked"},{"genus":"Stellatispora","spore_class":"trilete-ornamented","confidence":"high","basis":"Distal radial muri","source":"[Ball (2022)](https://etheses.whiterose.ac.uk/id/eprint/32375/1/BALLACTHESIS_180231470.pdf)"},{"genus":"Cannanoropollis","spore_class":"not-a-spore","confidence":"high","basis":"Monosaccate pollen","source":"[Khurshid (2000)](https://scialert.net/fulltext/?doi=pjbs.2000.191.192)"},{"genus":"Vermiverruspora","spore_class":"trilete-ornamented","confidence":"high","basis":"Sculptured distal patina","source":"[Beck & Strother (2008)](https://www.researchgate.net/publication/250070986)"},{"genus":"Radiaspora","spore_class":"trilete-ornamented","confidence":"high","basis":"Spoke-like radial ribs","source":"[Balme (1960)](https://journals.sagepub.com/doi/pdf/10.54991/jop.1960.590)"},{"genus":"Stegambiquadrella","spore_class":"cryptospore-tetrad","confidence":"high","basis":"Unfused tetrad units enclosed by envelope","source":"[Wang et al. (2026)](https://www.sciencedirect.com/science/article/abs/pii/S0012825226000875)"},{"genus":"Cristatisporites","spore_class":"trilete-ornamented","confidence":"high","basis":"Distal cones and spines; sculptured flange","source":"[Atta-Peters & Anan-Yorke (2003)](https://web.igme.es/publicaciones/revistaMicro/pdfs/Micropaleo35_1_2003.pdf)"},{"genus":"Tumulispora","spore_class":"trilete-ornamented","confidence":"high","basis":"Cingulate spores bearing coarse verrucae","source":"[Atta-Peters & Anan-Yorke (2003)](https://web.igme.es/publicaciones/revistaMicro/pdfs/Micropaleo35_1_2003.pdf)"},{"genus":"Scylaspora","spore_class":"trilete-ornamented","confidence":"high","basis":"Irregular proximal muri and rugulae","source":"[Ball (2022)](https://etheses.whiterose.ac.uk/id/eprint/32375/1/BALLACTHESIS_180231470.pdf)"},{"genus":"Zonaletes","spore_class":"uncertain","confidence":"low","basis":"Historical alete grouping; supplied species heterogeneous","source":"[Bharadwaj (1975)](https://www.palaeobotanicalsociety.org/geophytology/vol5_1975/81vol5_75.pdf)"},{"genus":"Dawsonites","spore_class":"not-a-spore","confidence":"high","basis":"Sporangia-bearing plant organs","source":"[Chaloner et al. (1978)](https://palass.org/sites/default/files/media/publications/palaeontology/volume_21/vol21_part3_pp693-707.pdf)"},{"genus":"Florinites","spore_class":"not-a-spore","confidence":"high","basis":"Pollen genus","source":"[Bek et al. (2022)](https://www.sciencedirect.com/science/article/abs/pii/S016651622200194X)"},{"genus":"Protobarinophyton","spore_class":"not-a-spore","confidence":"high","basis":"Vascular plant macrofossils","source":"[Cichan et al. (1984)](https://www.sciencedirect.com/science/article/pii/0034666784900447)"},{"genus":"Murospora","spore_class":"trilete-laevigate","confidence":"medium","basis":"Smooth to infrapunctate cingulate spores","source":"[Playford (1962)](https://palass.org/sites/default/files/media/publications/palaeontology/volume_5/vol5_part3_pp550-618.pdf)"},{"genus":"Zonalosporites","spore_class":"not-a-spore","confidence":"medium","basis":"Medullosan monolete pollen","source":"[Pendleton & Wellman (2013)](https://jm.copernicus.org/articles/32/87/2013/jm-32-87-2013.pdf)"},{"genus":"Sigillariostrobus","spore_class":"not-a-spore","confidence":"high","basis":"Lycopsid reproductive cones","source":"[Leclercq (1938)](https://popups.ulg.ac.be/0037-9395/index.php?id=6685)"},{"genus":"Triquitrites","spore_class":"trilete-unspecified","confidence":"high","basis":"Smooth and sculptured species with corner thickenings","source":"[Playford & Dino (2008)](https://www.researchgate.net/publication/41202161)"},{"genus":"Corbulispora","spore_class":"trilete-ornamented","confidence":"high","basis":"Reticulate or murornate exine","source":"[Denayer et al. (2015)](https://popups.ulg.ac.be/1374-8505/index.php?format=print&id=5476)"},{"genus":"Sporogonites","spore_class":"not-a-spore","confidence":"high","basis":"Stalked sporangial macrofossils","source":"[Gess & Prestianni (2021)](https://pmc.ncbi.nlm.nih.gov/articles/PMC8178408/)"},{"genus":"Abditusdyadus","spore_class":"cryptospore-dyad","confidence":"high","basis":"Envelope-enclosed permanent true dyads","source":"[Wellman & Richardson (1996)](https://palass.org/sites/default/files/media/publications/special_papers_in_palaeontology/number_55/spp55_pp41-102.pdf)"},{"genus":"Thymospora","spore_class":"other-spore","confidence":"high","basis":"Predominantly monolete, verrucate spores","source":"[Kosanke (1988)](https://pubs.usgs.gov/pp/1486/report.pdf)"},{"genus":"Lepidostrobus","spore_class":"not-a-spore","confidence":"high","basis":"Lycopsid reproductive cones","source":"[Chaloner (1953)](https://academic.oup.com/aob/article-abstract/17/2/263/186022)"},{"genus":"Rugosisporites","spore_class":"trilete-ornamented","confidence":"high","basis":"Proximal muri, rugulae or granules","source":"[Dufka (1995)](https://jm.copernicus.org/articles/14/67/1995/jm-14-67-1995.pdf)"},{"genus":"Cuneatisporites","spore_class":"not-a-spore","confidence":"high","basis":"Bisaccate pollen","source":"[Clarke (1965)](https://palass.org/sites/default/files/media/publications/palaeontology/volume_8/vol8_part2_pp322-354.pdf)"},{"genus":"Protopteridium","spore_class":"not-a-spore","confidence":"high","basis":"Branched fertile plant axes","source":"[Wellman (2009)](https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1475-4983.2008.00823.x)"},{"genus":"Apiculate","spore_class":"not-a-spore","confidence":"high","basis":"Informal sculpture label; not a genus","source":"none checked"},{"genus":"Hostimilla","spore_class":"not-a-spore","confidence":"medium","basis":"Probable Hostimella misspelling; plant axes","source":"[Lang (1926), concerning Hostimella](https://www.cambridge.org/core/journals/earth-and-environmental-science-transactions-of-royal-society-of-edinburgh/issue/AA778F482B7BF38D03E0361D7E907856)"},{"genus":"Cornispora","spore_class":"trilete-ornamented","confidence":"medium","basis":"Prominent irregular horn-like exinal projections","source":"[Marshall et al. (2022)](https://journals.lib.unb.ca/index.php/ag/article/view/32882)"},{"genus":"Bullatisporites","spore_class":"trilete-ornamented","confidence":"high","basis":"Bullate sculptural elements on retusoid spores","source":"[Wellman et al. (2023)](https://eprints.whiterose.ac.uk/196115/1/2023Wellman%20et%20al.%20RPP.pdf)"},{"genus":"Salopella","spore_class":"not-a-spore","confidence":"high","basis":"Branched axes with terminal sporangia","source":"[Drovandi et al. (2024)](https://www.nature.com/articles/s41598-024-63196-4.pdf)"},{"genus":"Insolisporites","spore_class":"trilete-ornamented","confidence":"high","basis":"Distal irregular granules and apiculi","source":"[Ball (2022)](https://etheses.whiterose.ac.uk/id/eprint/32375/1/BALLACTHESIS_180231470.pdf)"},{"genus":"Sawdonia","spore_class":"not-a-spore","confidence":"high","basis":"Spiny vascular plant axes","source":"[Chaloner et al. (1978)](https://palass.org/sites/default/files/media/publications/palaeontology/volume_21/vol21_part3_pp693-707.pdf)"},{"genus":"Plicatipollenites","spore_class":"not-a-spore","confidence":"high","basis":"Monosaccate pollen","source":"[Khurshid (2000)](https://scialert.net/fulltext/?doi=pjbs.2000.191.192)"},{"genus":"Kraeuselisporites","spore_class":"trilete-ornamented","confidence":"high","basis":"Echinate distal exine and equatorial zona","source":"[Visscher (1966)](https://repository.naturalis.nl/pub/535004/MBMHU1966262002001.pdf)"},{"genus":"Lophomesotriletes","spore_class":"uncertain","confidence":"low","basis":"Exact name and diagnostic morphology unverified","source":"none checked"}]}

@@ -1,0 +1,2705 @@
+Reading additional input from stdin...
+OpenAI Codex v0.164.0
+--------
+workdir: /Users/bwbrook/papers/silurian_plants
+model: gpt-6.1-sol
+provider: openai
+approval: never
+sandbox: read-only
+reasoning effort: high
+reasoning summaries: none
+session id: 01a17b86-d44f-7692-a2d4-b437be385645
+--------
+user
+You are classifying dispersed-spore genera for a palaeobotany research dataset in this repository (read AGENTS.md for its conventions; do not edit any file).
+
+Input: data/spores/work/codex/genera/chunk3.csv holds 107 genera from Palynodata's Ordovician–Devonian spore records, with sample species names and Palynodata age spans.
+
+For EACH genus (copy the name exactly) classify spore_class by the genus's diagnostic morphology:
+- cryptospore-monad: single spores not in a trilete arrangement and of cryptospore affinity, including hilate monads (e.g. Laevolancis), alete monads and enveloped monads.
+- cryptospore-dyad: permanent or dissociated dyads (e.g. Dyadospora, Pseudodyadospora, Segestrespora).
+- cryptospore-tetrad: permanent tetrads, naked or enveloped (e.g. Tetrahedraletes, Velatitetras).
+- trilete-laevigate: trilete spores with smooth exine, including retusoid forms (e.g. Ambitisporites, Retusotriletes).
+- trilete-ornamented: trilete spores with sculpture, such as grana, verrucae, apiculae, muri or ribs (e.g. Emphanisporites, Apiculiretusispora).
+- trilete-unspecified: trilete spores in heterogeneous form genera whose species include both smooth and sculptured forms, or whose sculpture is undetermined.
+- other-spore: monolete spores, megaspores and other true spores outside these classes; say which in basis.
+- not-a-spore: taxa that are not embryophyte spores (acritarchs, algal cysts, misfiled pollen), and names that are not genera ("Spore", "Tetrad", indet.).
+- uncertain: a genus of disputed or unknown morphology.
+
+confidence: high if the diagnosis is unambiguous and you know it; medium if inferred; low if unsure.
+basis: the diagnostic feature, in a few words.
+source: the original description or a standard reference (author and year). Do not invent sources: write "none checked" if you did not verify one.
+
+Use web search for genera you are not sure of. Return JSON only, matching the schema, for all 107 genera; read the WHOLE file.
+codex
+I’ll read the full input and repository conventions, then check uncertain diagnoses and sources before returning all 107 classifications as JSON.
+exec
+/bin/zsh -lc "pwd && rg --files -g 'AGENTS.md' -g 'chunk3.csv' -g 'MEMORY.md' /Users/bwbrook/papers/silurian_plants /Users/bwbrook/.codex/memories 2>/dev/null" in /Users/bwbrook/papers/silurian_plants
+ succeeded in 0ms:
+/Users/bwbrook/papers/silurian_plants
+/Users/bwbrook/.codex/memories/MEMORY.md
+/Users/bwbrook/papers/silurian_plants/AGENTS.md
+/Users/bwbrook/papers/silurian_plants/data/spores/work/codex/genera/chunk3.csv
+
+exec
+/bin/zsh -lc "rg -n -i 'silurian|spore|palynodata' /Users/bwbrook/.codex/memories/MEMORY.md" in /Users/bwbrook/papers/silurian_plants
+ exited 1 in 0ms:
+exec
+/bin/zsh -lc 'cat AGENTS.md && cat data/spores/work/codex/genera/chunk3.csv' in /Users/bwbrook/papers/silurian_plants
+ succeeded in 0ms:
+# silurian_plants: agent guidance
+
+Exploratory, long-term programme on simulation modelling of early land-plant evolution, Late
+Ordovician to Early Devonian (c. 458–393 Ma). Read `docs/charter.md` for purpose, stage and
+route, and `docs/decisions.md` for what has been settled. Current stage: orientation; no
+research question has been chosen, so do not start model code without a framing decision
+recorded in `docs/decisions.md`.
+
+## Layout
+
+- `taxa/`: one information card per taxon. `taxa/_template.md` is the schema; `taxa/README.md`
+  is generated.
+- `docs/`: charter, decisions, primer, precedents review, candidate framings, the source register
+  (`docs/sources.md`, the index of all data held and needed: update it when a source changes) and
+  the spore-compilation plan.
+- `data/timescale.csv`: ICS v2024/12 stage base ages, the single source of numerical ages.
+- `data/traits.csv`: generated trait matrix, one row per card.
+- `data/eprp/`: material extracted from Barry's EPRP programme: literature, PBDB and Macrostrat
+  records, climate and palaeogeography context, and software pointers. Treat it as inputs, not
+  verified facts. Read each area's README before use, and regenerate tables with its scripts
+  rather than editing them. `data/eprp/local/` is git-ignored (unlicensed, no-derivatives or bulky
+  material) and exists only on mac-mini; rebuild it from `deep-server` with the scripts.
+- `docs/audits/`: independent checks of cards and deposits.
+- `tools/cards.py`: card validation, DOI checking and index generation.
+
+## Commands
+
+```bash
+uv run tools/cards.py check   # schema and vocabulary
+uv run tools/cards.py dois    # DOIs in taxa/ and docs/ against Crossref
+uv run tools/cards.py index   # regenerate taxa/README.md
+uv run tools/cards.py matrix  # regenerate data/traits.csv
+```
+
+Run `check`, `index` and `matrix` after editing cards, and `dois` after adding references.
+
+## Conventions
+
+- Facts, numbers and citations come from sources read in the task, never from memory. Every
+  DOI is verified against Crossref; never guess one. In references lists, one reference per line
+  with first author, year, title and DOI, so `dois` can compare them.
+- When a source cannot be read in full (paywall, blocked supplement, print only), add it to
+  `docs/closed-literature.csv` with what it would settle; Barry obtains these through his
+  institutional login. Never bypass access controls. PDFs he obtains go in `library/closed/`,
+  which is git-ignored: copyrighted texts are never committed.
+- Never send Barry's email address or other personal data to any service or API, including ones
+  that ask for a contact email.
+- Separate observation, interpretation and speculation; present disputes with both sides.
+- Cards record ages as ICS stage names; give finer ages in `range.notes` with their source.
+  Literature before 2024 mostly uses the GTS2012 Early Devonian boundaries (Lochkovian 419.2,
+  Pragian 410.8, Emsian 407.6 Ma), which differ from ours by up to 3 Myr; see `docs/primer.md` §1.
+- Card traits: `absent` means observed absent, `unknown` means not preserved or not reported,
+  `na` means not applicable. Add vocabulary to `tools/cards.py` when a real case needs it.
+- A card is `draft` until a second agent or Barry has checked its facts; then `reviewed`.
+- British spelling. Dense, precise prose; no filler.
+- Record decisions that shape the programme in `docs/decisions.md`, naming who decided. Keep
+  the AI-roles section of `docs/charter.md` current: the work will be published with a full
+  statement of which systems did what.
+- Commit to `main` when work reaches a coherent state, and push.
+genus,n_rows,n_docs,species_sample,palynodata_min_ma,palynodata_max_ma
+Archeozonotriletes,3,3,sp; volgogradensis,345.0,570.0
+Cincturasporites,3,2,literatus; dedaleus; densus,345.0,395.0
+Cycadopites,3,2,nevesi; cymbatus,65.0,570.0
+Mooreisporites,3,2,sp.A,230.0,570.0
+Anisozonotriletes,3,3,sp,345.0,435.0
+Cryptosporites,3,3,,387.0,435.0
+Enigmophytospora,3,2,simplex,345.0,395.0
+Apiculati,3,3,"sp. Hoeg,1942",115.667,395.0
+Leiozonotriletes,3,3,primarius; sp,105.0,395.0
+Clivosisporites,3,2,verrucata,370.0,395.0
+Zonomonoletes,3,2,sp; glaber; novis,280.0,395.0
+Dichosporites,3,1,crassus; devonicus; hamulus,345.0,395.0
+Parasporites,3,2,leismanii,230.0,570.0
+Ambiguaspora,3,2,parvula,389.666,472.0
+Wybostisporites,3,2,variabilis,345.0,395.0
+Pachytheca,3,3,sp,392.332,435.0
+Tripartites,3,3,vetustus; trifoliolatus,230.0,570.0
+Cosmochlaina,3,1,maculata; verrucosa,378.0,417.0
+Growia,3,1,oviformis,440.0,450.0
+Tuberculatisporites,3,3,submamillarius; regularis,230.0,570.0
+Ceratosporites,3,2,sp; sp.A,345.0,435.0
+Kelbergiasporites,3,2,levis,370.0,395.0
+Enigmophyton,3,3,sp; superbum,345.0,395.0
+Nothofagidites,3,1,lachlanae; cranwellae; asperus,5.0,482.6
+Triangulatisporites,3,2,,230.0,570.0
+Felixipollenites,3,2,macroreticulatus; sp,230.0,570.0
+Gosslingia,3,3,breconensis,345.0,395.0
+Schizaeoisporites,3,3,sp; sp.I,395.0,447.63
+Lagenicula,3,3,sp; catenulatus,230.0,570.0
+Scheuringipollenites,3,3,ovatus,230.0,570.0
+Trachymesotriletes,3,2,sp,345.0,414.0
+Schopfipollenites,3,3,,65.0,570.0
+Angiospora,3,2,naumovae,395.0,414.0
+Genus-A,3,1,sp.4; sp.3; sp.2,345.0,395.0
+Cyclobaculisporites,3,3,minutus; sp,230.0,570.0
+Alisporites,3,3,sp; opii,65.0,570.0
+Angulisporites,3,2,induratus; punctulosus; notatus,345.0,395.0
+Incertae sedis,2,2,sp.I; form b,392.332,500.0
+Asterotheca,2,1,oreopteridia; sp,230.0,570.0
+Archeactinomyces,2,1,proliferans,435.0,500.0
+Endoculeospora,2,2,gradzinskii,280.0,395.0
+Serrulacaulis,2,2,furcatus,345.0,395.0
+Dulhuntyispora,2,2,sp; minuta,395.0,435.0
+Microbaculispora,2,2,tentula,230.0,570.0
+Cyclosporites,2,2,sp,280.0,570.0
+Orestovia,2,2,devonica,345.0,395.0
+Kibambaites,2,2,corius,230.0,570.0
+Verrucate,2,1,sp.1,394.0,395.0
+Psilophyta,2,1,,435.0,570.0
+Monosulcites,2,1,gemmatus; otagoensis,5.0,482.6
+Archemicramoeba,2,1,chitinovorax,395.0,435.0
+Lycopodites,2,2,oosensis,345.0,395.0
+Stenomesotriletes,2,2,sp,435.0,514.0
+Tricolporopollenites,2,1,cingulum,280.0,395.0
+Feraxotheca,2,2,culcitaus,230.0,570.0
+Stenomarginata,2,2,pusilla,370.0,408.333
+Cingulatisporites,2,2,,280.0,435.0
+Amblisporites,2,1,,370.0,395.0
+Eviostachya,2,2,hoegii,345.0,395.0
+Cyathidites,2,2,sp,5.0,482.6
+Irrimales,2,1,,435.0,570.0
+Kozlowskiprion,2,1,sp.A; longicavernosus,395.0,435.0
+Telangium,2,2,sp,230.0,570.0
+Archemegabacter,2,1,speciosus,345.0,435.0
+Psilogena,2,1,,435.0,570.0
+Complectitetras,2,1,alhajrii,432.0,435.0
+Gulisporites,2,2,torpidus; cochlearius,267.0,500.0
+Microtabula,2,2,hexagonalis,395.0,500.0
+Speciososporites,2,2,plicatus; sp,370.0,435.0
+Densipollenites,2,1,sp,435.0,570.0
+Aulicosporites,2,1,aulicus; vitabilis,360.0,395.0
+Mazocarpon,2,1,oedipternum; shorense,230.0,570.0
+Crassispora,2,2,maculosa; sp,280.0,500.0
+Decussatisporites,2,1,kinduensis; magmus,230.0,570.0
+Nanoxanthiopollenites,2,2,mcmurrayi,230.0,570.0
+Chaleuria,2,2,cirrosa,345.0,395.0
+Diducites,2,2,poljessicus; mucronatus,345.0,395.0
+Raniganjiasaccites,2,2,ovatus,230.0,570.0
+Sporangites,2,2,sp; bilobatus,345.0,395.0
+Granulatasporites,2,1,sp.B; sp,387.0,389.666
+Scabratisporites,2,2,minor,378.0,395.0
+Whittleseya,2,2,elegans; sp,195.0,570.0
+Gleicheniidites,2,2,sp,5.0,482.6
+Peltatispora,2,1,peltata,336.0,395.0
+Emphanizonosporites,2,1,radiatus,370.0,395.0
+Walikalesaccites,2,2,ellipticus,230.0,570.0
+Calamotriletes,2,2,minutissima; platyrugosus,230.0,395.0
+Genus A,2,1,"sp.A Stee.et al,2000; sp.B",432.0,435.0
+Archethrix,2,1,saharensis,395.0,435.0
+Setosisporites,2,2,sp,230.0,570.0
+Liliacidites,2,1,aviemorensis; variegatus,5.0,482.6
+Lasiostrobus,2,2,polysacci,230.0,570.0
+Leclercqia,2,2,complexa,345.0,395.0
+Calamostachys,2,1,germanica; sp,230.0,570.0
+Ullmannia,2,1,,435.0,570.0
+Svalbardia,2,2,sp,345.0,395.0
+Proteacidites,2,1,minimus; obscurus,5.0,482.6
+Archecoccoides,2,1,goujetii,345.0,435.0
+Sulcatisporites,2,2,splendens,65.0,570.0
+Heliosporites,2,1,variabilis,345.0,395.0
+Pityosporites,2,2,sp,65.0,570.0
+Striomonosaccites,2,2,brevis; ovatus,230.0,570.0
+Dolerotheca,2,2,formosa,230.0,570.0
+Barsostrobus,2,2,famennensis,345.0,395.0
+Cordaianthus,2,2,concinnus,230.0,570.0
+Simplotheca,2,2,sp,195.0,570.0
+Parasporotheca,2,2,sp; leismanii,230.0,570.0
+
+2026-10-27T04:03:42.818946Z ERROR codex_core::tools::router: error=collab spawn failed: Fatal error: failed to load model context for thread 01a17b86-d44f-7692-a2d4-b437be385645: invalid thread-store request: no rollout found for thread id 01a17b86-d44f-7692-a2d4-b437be385645
+web search: 
+web search: "Archeozonotriletes" diagnosis smooth spores ...
+web search: 
+web search: "Anisozonotriletes" spores smooth ...
+web search: 
+web search: "Leiozonotriletes" diagnosis ...
+web search: 
+web search: "Dichosporites" ...
+web search: 
+web search: Dichosporites crassus devonicus hamulus ...
+codex
+The file includes pollen, plant and organ names, and informal labels alongside spores. I’m classifying those by what the name denotes; the Palynodata age spans do not establish morphology. Several obscure spellings need further checking.
+web search: 
+web search: "Kelbergiasporites" spore ...
+exec
+/bin/zsh -lc "sed -n '1,110p' docs/charter.md && sed -n '1,110p' docs/decisions.md && rg --files data/spores library docs | head -100" in /Users/bwbrook/papers/silurian_plants
+ succeeded in 0ms:
+# Charter
+
+Status: **Stage 0, orientation** (opened 2026-10-26). No research question is chosen yet.
+
+## The idea
+
+Barry's starting point, in his words (chat, 2026-10-26): "a simulation modelling project on the
+evolution of early land plants (late Ordovician to early Devonian), but it's a very nascent
+thought". He frames it as "a long-term development project that might prove infeasible or
+uninteresting, but is worth … at least exploring", with no hurry, and with the structure left
+free to evolve.
+
+## Why this interval
+
+Between roughly 470 and 393 Ma, land plants went from a dispersed-spore record with no
+recognisable bodies, through centimetre-scale leafless axes, to lycopsids and euphyllophytes with
+leaves, roots, secondary-growth precursors and metre-scale height. Nearly every innovation that
+defines vascular plants appears in that window: desiccation-tolerant spores, cuticle and
+stomata, lignified conducting cells, branching sporophytes independent of the gametophyte,
+apical dominance, leaves and roots. The same plants are implicated in changes to weathering,
+atmospheric CO2 and O2, river form and soil. The record is unusually uneven, with abundant spores
+and a few exceptional deposits (the Rhynie Chert above all) set against long gaps in
+megafossils, so most explanations of the pattern remain verbal. That combination of a major
+evolutionary transition, rich constraints and few quantitative tests is the case for modelling.
+
+## What would make it worth doing
+
+A framing earns a modelling programme if it meets all four tests:
+
+1. **Discriminating evidence.** Competing hypotheses predict outcomes that the fossil, proxy or
+   experimental record can tell apart: trait sequences, timing, size distributions, diversity
+   or disparity patterns, geochemical signals.
+2. **Novelty.** The model adds something the precedents (`docs/precedents.md`) do not: a
+   mechanism, a coupling, a confrontation with data, or a reanalysis that changes a conclusion.
+3. **Tractability.** The data can be assembled and the model run with resources on the mesh,
+   without years of bespoke data collection.
+4. **Interest.** Barry finds the question worth his attention.
+
+If no framing passes tests 1 and 2 after orientation, the project is parked with a short written
+account of why. That account is itself a useful output.
+
+## Route
+
+0. **Orientation** (current): taxon cards (`taxa/`), a period primer (`docs/primer.md`), a review
+   of modelling precedents (`docs/precedents.md`) and candidate framings (`docs/framings.md`).
+   Ends with a choice of framing, which is Barry's call on a recommendation from the agents.
+1. **Sketch:** the smallest end-to-end model of the chosen framing, deterministic where possible.
+2. **Ground:** null models, baselines and the data the model will confront (trait matrices built
+   from the cards, occurrence data, proxy series).
+3. **Enrich:** one mechanism at a time, each motivated by a discrepancy with data.
+4. **Compare:** contrasts that discriminate between competing explanations.
+5. **Synthesise:** what is robust, what depends on representation, and what is next.
+
+Stages are a guide, not approval gates. Barry's operating principle applies: reversible work
+proceeds and is shown afterwards; first public release, submission and outward-facing messages
+are his decisions.
+
+## Outputs
+
+The repository is private for now. Candidate outputs, in any combination: the card collection
+and trait matrix as an open dataset, a review or perspective, a modelling paper with code and
+data archived, and the human–AI correspondence record published alongside.
+
+## Contributors and AI roles
+
+- Barry W. Brook: originator, scientific adviser and final reviewer.
+- Claude Opus 5.5 (Anthropic, `claude-opus-5-5`) in Claude Code: orchestration, programme
+  design, synthesis, framings, tooling.
+- Claude Sonnet 5.5 (Anthropic) subagents: literature research and first drafts of taxon cards,
+  the primer and the precedents review.
+
+`docs/decisions.md` records who decided what and when, for the eventual statement of AI roles.
+# Decisions
+
+Dated record of decisions that shape the programme. Newest first. Say who decided, and quote
+Barry exactly (with source) or label a paraphrase.
+
+## 2026-10-27: evidence base, tranche 2
+
+- **Scope** (Barry, chat, 2026-10-27): before commenting further on the hypothesis, fill out the
+  core evidence base, "to make sure all the relevant data on the time period in question and all
+  the specimens (from databases) are properly sourced, indexed and extracted", continuing to work
+  with the EPRP session as required.
+- **Source register** (Claude): `docs/sources.md` lists every held and missing source with status,
+  licence and who does the work. Database and deposit work goes to the EPRP session (request sent
+  2026-10-27); literature extraction stays here.
+- **Cards, tranche 2.** Barry proposed:
+  - the Victorian taxa *Yarravia*, *Hedeia* and *Pluricaulis biformis*; *Dawsonites*; *Palaeostigma*;
+  - living comparison taxa *Psilotum*, *Tmesipteris* and *Lycopodium squarrosum*;
+  - *Parka*, *Ulothrix* and *Ulva*;
+  - group cards on lycopods and trimerophytes; *Archaeopteris*.
+
+  Claude added:
+  - *Coleochaete*, *Chara* and the Zygnematophyceae, because the streptophyte relatives are the
+    phylogenetically apt life-cycle exemplars; *Ulva* and *Ulothrix* stay as theory exemplars;
+  - hornworts and *Marchantia*;
+  - group cards for eophytes, rhyniophytoids and zosterophylls;
+  - five site cards (Rhynie, Posongchong, Xitun, Bathurst Island, Welsh Borderland mesofossils)
+    and a Baragwanathia-flora card, as sampling units for an observation model;
+  - the taxa that tranche-1 agents flagged as missing (*Nothia*, *Baragwanathia brevifolioides*,
+    *Metzgeriothallus*, *Franhueberia*, *Salopella*);
+  - *Wattieza* and *Leclercqia* as anchors beyond the window.
+
+  35 cards in all, drafted by Claude Sonnet 5.5 subagents.
+- **Schema** (Claude): card kinds `extant` and `group`, ranks `grade` and `clade`, and groups for
+  chlorophyte algae, ferns, progymnosperms and cladoxylopsids. `data/timescale.csv` gains the
+  Frasnian, Famennian and Tournaisian bases (ICS v2024/12) for the anchors; the existing rows are
+  unchanged.
+- **Dispersed spores** (Claude): a scoping study (`docs/spore-compilation-plan.md`) runs in
+  parallel with EPRP's check of Palynodata, before any compilation starts.
+- **Spore and climate sources found** (EPRP session; reviewed by Claude):
+  - Palynodata (GSC Open File 5793, OGL-Canada), with 14,114 window spore rows from 985
+    documents, extracted as-is into `data/external/spores/`;
+  - HadCM3L land climate (`scotese_02` suite, CC BY 4.0) in `data/external/climate/`.
+
+  Asking Wellman, Steemans and Vecoli for their full 2013 assemblage database is an external
+  contact and therefore Barry's decision.
+- **Tranche-2 card audit** (two independent Sonnet agents, 8 cards, 99 claims): 80 supported,
+  0 wrong, 2 misattributed, 9 imprecise, 9 unverifiable; all fixed
+  (`docs/audits/2026-10-27-tranche2-audit-*.md`). The audit confirmed that *Hedeia* is a junior
+  synonym of *Yarravia* (McSweeney et al. 2021) and that *Pluricaulis biformis* is an unpublished
+  manuscript name. It corrected the *Prototaxites* first-occurrence basis. Both cards stay, with
+  their status stated, because they are the names in older literature and in PBDB.
+- **Process lapses** (Claude, reported to Barry): a card agent sent Barry's email address to
+  Unpaywall's API once; the agent brief now forbids it. A `git add -A` briefly committed the EPRP
+  session's unreviewed files; it was reverted within minutes, and only explicit paths are staged
+  while another session writes in the tree.
+
+## 2026-10-27: EPRP deposit reviewed and committed
+
+- **Deposit accepted** (Claude, reviewing at Barry's request): `data/eprp/` is committed except
+  `local/`, which stays git-ignored. Review: `docs/audits/2026-10-27-eprp-deposit-review.md`.
+  All 88 files match their manifest, and the PBDB counts reproduce independently.
+- **Facts that changed** (Claude): PBDB holds almost no pre-Emsian spores and only 259 pre-Emsian
+  core megafossil occurrences, so F3 needs a dispersed-spore compilation from the literature, and
+  its tractability is now moderate. F4's inputs are now on the mesh, so its tractability is
+  moderate. Eco-evolutionary vegetation has already been coupled to the carbon cycle for later
+  intervals (Rogger et al. 2024, 2026; Gurung et al. 2022), so F5's novelty is moderate.
+  `docs/precedents.md` gains an addendum and loses an overstatement; `docs/framings.md` is updated
+  to match. The framing choice remains Barry's.
+
+## 2026-10-26: orientation tranche 1 delivered
+
+- **Delivered** (Claude): 24 draft cards, `docs/primer.md`, `docs/precedents.md`,
+  `docs/framings.md`, the card index and `data/traits.csv`.
+- **Framing recommendation** (Claude, pending Barry's choice): F3 (whether the record supports
+  the new timescale, with an observation model) as the first deliverable, and F1 with F2 (the
+  rise of the sporophyte) as the core simulation. The precedents review, drafted independently,
+  ranked a closed-loop plant–carbon-cycle model (F5) among its top three; `docs/framings.md`
+  records the disagreement.
+- **Literature that changed the plan.** Hooper et al. (2026, Nature Plants, 22 October) moved
+  crown embryophytes to 457–450 Ma and crown tracheophytes to 432–428 Ma, which sharpened F3.
+  Loron et al. (2026) argue that Prototaxites was not a fungus. Earp (2024) places the Yea
+  Baragwanathia beds mostly in the Early Devonian, which weakens the Silurian-Baragwanathia
+  claim. Each is recorded in the relevant card.
+- **Card quality** (Claude): a separate Sonnet agent audited a sample of four cards
+  (`docs/audits/2026-10-26-card-sample-audit.md`). Of 58 claims, 44 were supported, 0 wrong,
+  2 misattributed, 7 overstated and 5 unverifiable. The errors were lost hedges and citation
+  drift, not wrong numbers. The nine flagged claims are fixed. All cards stay `draft`: no number
+  in them should become a model prior until it has been checked against its primary source.
+- **Card conventions settled in use** (Claude): names follow current nomenclature (`Aglaophyton
+  majus`, file `aglaophyton-majus.md`); citations use the conventional volume year, and the DOI
+  checker accepts the print or online year; DOIs may contain brackets (SICI form).
+
+## 2026-10-26: programme opened
+
+- **Scope** (Barry, chat): Late Ordovician to Early Devonian; exploratory, long-term, may be
+  abandoned. Cards and context first, workflows and science later.
+- **Repository** (Claude, under Barry's stated intent "we'll want to set up a private GitHub
+  repo"): private `BWBrook/silurian_plants`, branch `main`, minimal structure that grows with the
+  work.
+- **Taxon cards** (Barry proposed; Claude designed the format): one Markdown file per taxon with
+  YAML front matter that doubles as a trait record, so the cards can later be compiled into a
+  character matrix without re-reading the prose. Traits distinguish `absent`, `unknown` and `na`.
+  `tools/cards.py` validates the schema, checks DOIs against Crossref and builds the index.
+- **Timescale** (Claude): ICS International Chronostratigraphic Chart v2024/12, held once in
+  `data/timescale.csv`. Its Ordovician and Silurian ages are GTS2020's, but its Devonian ages come
+  from Harrigan et al. (2022), not GTS2020 (Cohen et al. 2025). The primer agent caught that the
+  original wording of this entry, "GTS2020 ages", was wrong; `docs/primer.md` §1.2 compares the
+  three scales. Cards record stage names, and ages are derived from the table,
+  so a later timescale revision is a one-file change.
+- **First tranche** (Claude): 24 cards across five themes (earliest embryophyte evidence,
+docs/decisions.md
+docs/spore-compilation-plan.md
+docs/charter.md
+docs/closed-literature.csv
+docs/primer.md
+docs/sources.md
+docs/precedents.md
+docs/framings.md
+docs/audits/2026-10-26-card-sample-audit.md
+docs/audits/2026-10-27-codex-pilot.md
+docs/audits/2026-10-27-eprp-deposit-review.md
+docs/audits/2026-10-27-tranche2-audit-a.md
+docs/audits/2026-10-27-tranche2-audit-b.md
+data/spores/crosswalks/exclusions.csv
+data/spores/crosswalks/age_names.csv
+data/spores/crosswalks/locations.csv
+data/spores/sources/wellman2013_assemblages.csv
+data/spores/sources/wellman2013_taxa.csv
+data/spores/work/age_names.csv
+data/spores/work/wellman2013/appendix.txt
+data/spores/work/locations.csv
+data/spores/work/spore_genera.csv
+data/spores/work/codex/genera_pilot/out.json
+data/spores/work/codex/genera_pilot/genera_sample.csv
+data/spores/work/codex/genera_pilot/schema.json
+data/spores/work/codex/genera_pilot/sonnet.csv
+data/spores/work/codex/genera_pilot/log.txt
+data/spores/work/codex/genera_pilot/prompt.md
+data/spores/work/codex/genera_pilot/consensus.csv
+data/spores/work/codex/wellman2013/out.json
+data/spores/work/codex/wellman2013/log_Pridoli.txt
+data/spores/work/codex/wellman2013/prompt_Wenlock.md
+data/spores/work/codex/wellman2013/prompt_Ordovician.md
+data/spores/work/codex/wellman2013/prompt_Pridoli.md
+data/spores/work/codex/wellman2013/chunk_Pridoli.txt
+data/spores/work/codex/wellman2013/log_Ordovician.txt
+data/spores/work/codex/wellman2013/schema.json
+data/spores/work/codex/wellman2013/out_Pridoli.json
+data/spores/work/codex/wellman2013/out_Llandovery.json
+data/spores/work/codex/wellman2013/chunk_Ordovician.txt
+data/spores/work/codex/wellman2013/log.txt
+data/spores/work/codex/wellman2013/appendix_numbered.txt
+data/spores/work/codex/wellman2013/out_Wenlock.json
+data/spores/work/codex/wellman2013/prompt.md
+data/spores/work/codex/wellman2013/log_Llandovery.txt
+data/spores/work/codex/wellman2013/prompt_Ludlow.md
+data/spores/work/codex/wellman2013/chunk_Llandovery.txt
+data/spores/work/codex/wellman2013/out_Ordovician.json
+data/spores/work/codex/wellman2013/chunk_Ludlow.txt
+data/spores/work/codex/wellman2013/log_Ludlow.txt
+data/spores/work/codex/wellman2013/chunk_Wenlock.txt
+data/spores/work/codex/wellman2013/prompt_Llandovery.md
+data/spores/work/codex/wellman2013/out_Ludlow.json
+data/spores/work/codex/wellman2013/log_Wenlock.txt
+data/spores/work/codex/locations/out.json
+data/spores/work/codex/locations/schema.json
+data/spores/work/codex/locations/log.txt
+data/spores/work/codex/locations/prompt.md
+data/spores/work/codex/genera/chunk6.csv
+data/spores/work/codex/genera/schema.json
+data/spores/work/codex/genera/prompt3.md
+data/spores/work/codex/genera/chunk5.csv
+data/spores/work/codex/genera/chunk4.csv
+data/spores/work/codex/genera/prompt6.md
+data/spores/work/codex/genera/chunk1.csv
+data/spores/work/codex/genera/chunk3.csv
+data/spores/work/codex/genera/chunk2.csv
+data/spores/work/codex/genera/prompt2.md
+data/spores/work/codex/genera/prompt5.md
+data/spores/work/codex/genera/prompt1.md
+data/spores/work/codex/genera/prompt4.md
+data/spores/work/codex/genera/log6.txt
+data/spores/work/codex/genera/log4.txt
+data/spores/work/codex/genera/log5.txt
+data/spores/work/codex/genera/log1.txt
+data/spores/work/codex/genera/log2.txt
+data/spores/work/codex/genera/log3.txt
+
+web search: 
+web search: "Tuberculatisporites" megaspores ...
+web search: 
+web search: "Angiospora" naumovae ...
+web search: 
+web search: "Angiospora" Devonian ...
+exec
+/bin/zsh -lc "rg --files data/external/spores | head -45 && rg -n 'Growia|Kelbergiasporites|Dichosporites|Archeactinomyces|Trachymesotriletes' data/external/spores | head -35" in /Users/bwbrook/papers/silurian_plants
+ succeeded in 0ms:
+data/external/spores/wellman2013_supplement/18680.pdf
+data/external/spores/palynodata_agetable.csv
+data/external/spores/palynodata_taxloc.csv
+data/external/spores/palynodata_documents_window.csv
+data/external/spores/README.md
+data/external/spores/palynodata_lithostr_window.csv
+data/external/spores/palynodata_taxon_window.csv
+data/external/spores/MANIFEST.tsv
+data/external/spores/palynodata_codes.csv
+data/external/spores/palynodata_release/readme.txt
+data/external/spores/palynodata_release/doc/HTML/DESCRIPT.HTM
+data/external/spores/palynodata_release/doc/HTML/LICENCE.HTM
+data/external/spores/palynodata_release/doc/HTML/PALINTRO.HTM
+data/external/spores/palynodata_release/doc/HTML/CPYRIGHT.HTM
+data/external/spores/palynodata_release/licence.txt
+data/external/spores/palynodata_release/abstract.txt
+data/external/spores/palynodata_release/metadata.txt
+data/external/spores/palynodata_release/citation.txt
+data/external/spores/palynodata_age_change.csv
+data/external/spores/palynodata_theagetable.csv
+data/external/spores/palynodata_taxon_window.csv:5006:Dichosporites,devonicus,,,,Worldwide,S,,,X,,S,,,,,Devonian,,09706,395,345,numeric_overlap,395,345,50,False,9706
+data/external/spores/palynodata_taxon_window.csv:5007:Dichosporites,hamulus,,,,Worldwide,S,,,X,,S,,,,,Devonian,,09706,395,345,numeric_overlap,395,345,50,False,9706
+data/external/spores/palynodata_taxon_window.csv:5008:Dichosporites,crassus,,,,Worldwide,S,,,,,X,,,,,Devonian,,09706,395,345,numeric_overlap,395,345,50,False,9706
+data/external/spores/palynodata_taxon_window.csv:5841:Trachymesotriletes,sp,,,,Romania,S,,,,,,,,,,Devonian,,10122,395,345,numeric_overlap,395,345,50,False,10122
+data/external/spores/palynodata_taxon_window.csv:39399:Kelbergiasporites,levis,,,,W.Germany,S,,,,,,,,,,Early Devonian,,04483,395,370,numeric_overlap,395,370,25,False,4483
+data/external/spores/palynodata_taxon_window.csv:39722:Growia,oviformis,,,,Sweden,S,,,,,X,,,,,Caradocian,,04506,450,440,numeric_overlap,450,440,10,True,4506
+data/external/spores/palynodata_taxon_window.csv:39730:Growia,oviformis,,,,United Kingdom,S,,,,,,,,,,Caradocian,,04506,450,440,numeric_overlap,450,440,10,True,4506
+data/external/spores/palynodata_taxon_window.csv:39738:Growia,oviformis,,,,USA,S,,,,,,,,,,Caradocian,,04506,450,440,numeric_overlap,450,440,10,True,4506
+data/external/spores/palynodata_taxon_window.csv:50045:Trachymesotriletes,sp,,,,USSR(Krasnoyarsk Kray),S,,,,,,,,,,Early Devonian,,06513,395,370,numeric_overlap,395,370,25,False,6513
+data/external/spores/palynodata_taxon_window.csv:50078:Trachymesotriletes,sp,,,,USSR(Kalinin),S,,,,,,,,,,Ludlovian,,06513,414,395,numeric_overlap,414,395,19,True,6513
+data/external/spores/palynodata_taxon_window.csv:51515:Kelbergiasporites,levis,,,,Germany(Rhineland),S,,,,,,,-,,Emsian,Siegenian,,06724,387,370,numeric_overlap,387,370,17,False,6724
+data/external/spores/palynodata_taxon_window.csv:51533:Kelbergiasporites,levis,,,,Belgium,S,,,,,,,-,,Emsian,Siegenian,,06724,387,370,numeric_overlap,387,370,17,False,6724
+data/external/spores/palynodata_taxon_window.csv:69496:Archeactinomyces,,,,,Africa(Sahara),S,,X,,,,,,,,Ordovician,,20596,500,435,numeric_overlap,500,435,65,False,20596
+data/external/spores/palynodata_taxon_window.csv:69503:Archeactinomyces,proliferans,,,,Africa(Sahara),S,,X,,,,,,,,Ordovician,,20596,500,435,numeric_overlap,500,435,65,False,20596
+
+exec
+/bin/zsh -lc "head -3 data/external/spores/palynodata_documents_window.csv && rg -n '"'^(09706|9706|04483|4483|04506|4506|06724|6724|06513|6513|20596|10122),'"' data/external/spores/palynodata_documents_window.csv && cat data/external/spores/README.md" in /Users/bwbrook/papers/silurian_plants
+ succeeded in 0ms:
+AUTHDOCNUM,ENGTITLE,FORTITLE,PALYDATE,PALYAUTH,Author,Journal,JRNL,Volume,Issue,Pages,GlobalAge,Lithology,GlobalLocation,Plates,Figures,Tables,derived_window_rows_A,derived_window_rows_B,derived_window_rows_D,derived_window_rows_E,derived_window_rows_F,derived_window_rows_K,derived_window_rows_L,derived_window_rows_M,derived_window_rows_O,derived_window_rows_R,derived_window_rows_S,derived_window_rows_T,derived_window_rows_Z,derived_window_has_spores
+00117,"The palynological record of Australian Pre-Tertiary floras. (In: Ancient Pacific Floras. The Pollen Story. L.M. Cranwell, editor)",,1964,"Balme,B.E.","Balme,B.E.","Ancient Pacific Floras,The Pollen Story.(L. M. Cranwell,editor).10th Pacific Science Congress Series, University of Hawaii Press,(Honolulu)",ANCIENT PACIFIC FLOR,,,   49-   80,,,AUSTRALIA,7,3,,0,0,0,0,0,0,0,0,0,0,2,0,0,True
+01884,Torispora.,,1965,"Doubinger,J.","Doubinger,J.","Reunion de la Commission Internationale de Microflora du Paleozoique,6th,Sheffield.Report of Group No .4",REUNION DE LA COMMIS,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,12,0,0,True
+420:04483,Synopsis of the genera of the sporae dispersae. Part 5. Supplement to all Groups (Turmae).,Synopsis der gattungen der sporae Dispersae.5. Teil.Nachtrage Zu Allen gruppen.(Turmae),1970,"Potonie,R.","Potonie,R.",Beihefte zum Geologischen Jahrbuch,BEIHEFTE ZUM GEOLOGI,87,5,    1-  172,,LI;CO;SS,,24,,,0,0,0,0,0,0,0,0,0,0,24,0,0,True
+426:04506,Chitinozoa,,1970,"Jenkins,W.A.M.","Jenkins,W.A.M.",Geoscience and Man,GEOSCIENCE AND MAN,1,,    1-   21,,MS,,9,12,,0,0,0,0,0,0,0,0,0,0,3,0,24,True
+724:06513,Micropaleophytological research into ancient strata.,Mikropaleofitologicheskoe issledovanie drevnikh svit.,1966,"Timofeev,B.V.","Timofeev,B.V.","Akademiya Nauk SSSR, Isdatelskvo Nauka, Moskva",IZDATELSTVO NAUK (MO,,,    1-  147,,,,89,20,1,104,0,5,11,0,0,0,0,0,0,35,0,0,True
+756:06724,"The Emsian in the Old Red facies on the northern Side of the Stavelot-Venn Massif, Germany-Belgium.",Emsium in Old-Red-Fazies Am Nordrand des Stavelot-Venn-Massivs (Deutschland/Belgien).,1974,"Eschghi,I.","Eschghi,I.;Kasig,W.",Neues Jahrbuch für Geologie und Paläontologie. Abhandlungen,NEUES JAHRBUCH FUR G,146,2,  139-  152,,STT;SS;M,,,3,,6,0,0,2,0,0,0,0,0,0,20,0,8,True
+1103:09706,Coding tables for diagnostic miospores of Devonian vegetation.,Postroenie Politomicheskikh Tablits dlya Diagnostiki miospor Devonskikh Rasteniy.,1978,"Pashkevich,N.G.","Pashkevich,N.G.",Yakutsk State University.Application of an Information Search System in Paleopalynology for solutution of some Taxonomic and Stratigraphic problems.,YAKUTSK STATE UNIVER,,,    5-   49,,,,,2,16,1,0,0,0,0,0,0,0,0,0,87,0,0,True
+1144:10122,"The palynological contributions of the study of the crystallophylliens and sedimentary formation of zone between Bistricioara-Valea Seaca-Baraseu Valley (Harghita Country, East Carpathians).",Contributii la Studiul palinologic al Formatiunilor Cristalofiliene si sedimentare din Zona Valea Bistricioarei-Valea Seanca-Valea Baraseului(Jud.Harghita).,1977,"Oniceanu,M.","Oniceanu,M.;Erhan,V.","Analele Stiintifice ale Universitatii ""Al. I. Cuza"" din Iasi (serie noua), Sectiunea IIb, Geologie-Geografie",ANALELE STIINTIFICE,23,2,   23-   28,,,,,,1,11,0,0,0,0,0,0,0,1,0,6,0,0,True
+2350:20596,"Amibes, bacterite, yeasts and fossil viruses.","Amibes, bacterites, bacteriophages et virus fossiles.",1981,"Locquin,M.V.","Locquin,M.V.","Travaux du Laboratoire de Micropaleontologie, Sixieme Contribution",,,9,  213-  226,,,,7,,,0,0,0,0,0,0,0,0,0,0,18,0,0,True
+# Dispersed spores and other palynomorphs: Palynodata window extract
+
+Extracted 2026-10-27 by Claude Opus 5.5 (Anthropic) on mac-mini for the project's dispersed-spore
+gap (framing F3's spore channel, F4). This is an as-is extract: no ages converted, no names
+harmonised, no duplicates merged. Building a compilation from it is project work.
+
+## Sources
+
+- **Palynodata Datafile: 2006 version** (Palynodata Inc. & J.M. White 2008, Geological Survey of
+  Canada Open File 5793, doi 10.4095/225704). **Licence: Open Government Licence – Canada**, free
+  to copy, modify and redistribute with attribution. That is what the current official record
+  states (NRCan Open S&T Repository, handle 1845/177682, `rights.license`, checked 2026-10-27), and
+  Crossref's licence metadata for the DOI points to the same licence. It supersedes the
+  `licence.txt` bundled in the 2008 release (kept in `palynodata_release/` as part of the release),
+  which is the restrictive NRCan end-user agreement of the time: internal use on a single
+  computer, no redistribution. Do not treat that bundled agreement as binding on this extract.
+  Release zip sha256 `5460e39d…70db1a`; raw copy at
+  `deep-server:/data/codex/silurian_plants/raw/palynodata/2026-10-27T0038Z/`, local copy in
+  `local/spores/of_5793.zip`. The data sit in an Access (JET3) database, `paly.mdb` (sha256
+  `eb1fa8c3…cde85c1`), inside the release's `apps/Paly.CAB`; `mdb-export` reads it.
+- **Wellman, Steemans & Vecoli 2013**, *Palaeophytogeography of Ordovician–Silurian land plants*,
+  Geological Society Memoir 38, ch. 29 (doi 10.1144/M38.29). Supplement (Figshare
+  doi 10.6084/m9.figshare.3453524, CC BY 4.0): `wellman2013_supplement/18680.pdf`, 40 pages. It
+  lists Ordovician–Silurian dispersed-spore assemblages by age and region with species and
+  references, compiled by P. Steemans, omitting assemblages judged poorly dated, poorly preserved
+  or doubtfully identified. Tremadoc–Arenig entries are spore-like palynomorphs of questionable
+  affinity. Left as the PDF; tabulating it belongs to the compilation.
+
+## What Palynodata is
+
+An index of palynomorph taxa reported in 22,152 documents of the palynological literature, built
+from 1974 by an industry and academic consortium and released by Canada in 2008. The last
+literature entered dates from 2006. Each `TAXON` row is one taxon in one document, with a region
+as text, the oldest and youngest age names assigned, and numeric start and end ages from
+Palynodata's own age table. It has no coordinates.
+
+## Files
+
+| File | Rows | Contents |
+| --- | ---: | --- |
+| `palynodata_taxon_window.csv` | 76,351 | Every `TAXON` row in the window, all microfossil types, all original columns, plus `derived_` columns |
+| `palynodata_documents_window.csv` | 2,511 | `NewEng` citations for every document with a window row (title, authors, year, journal, pages, global age, lithology, location), plus window row counts by type and `derived_window_has_spores` |
+| `palynodata_lithostr_window.csv` | 2,817 | Formations named by those documents (`LITHOSTR`) |
+| `palynodata_theagetable.csv`, `palynodata_agetable.csv`, `palynodata_age_change.csv` | 2,132; 2,117; 2,113 | Palynodata's age-name tables, needed to read its ages |
+| `palynodata_taxloc.csv` | 1,056 | Location names |
+| `palynodata_codes.csv` | 36 | Code meanings for `TMIC`, `TIDR`, `TNEW`, `TNEWC`, `TEME` and `TSYN`, from the release's `DESCRIPT.HTM` |
+| `palynodata_release/` | 9 files | Release readme, licence, citation, metadata and field descriptions |
+
+**Window rule.** A row is in the window if its numeric range (`agestart`, `ageend`) overlaps
+383–485 Ma (76,336 rows), or if it has no numeric age and its age names match a window term
+(15 rows; `derived_window_basis` says which). Rows with broad ages such as "Paleozoic" are included;
+`derived_span_myr` and `derived_fully_inside_window` let them be filtered.
+
+**Counts in the window.** By `TMIC`: acritarchs 41,483; chitinozoans 17,018; spores or pollen
+14,114; scolecodonts 2,581; algae 361; dinoflagellates 325; other 194; fungal spores 113; unknown
+affinity 88; plants 69; others 5. Of the 2,511 documents, 985 report spores and 1,526 report only
+other palynomorphs. Ordovician-labelled spore rows: 738 from 135 documents, mostly Ashgill and
+Caradoc.
+
+## Read before use
+
+- **Rows are mentions, not samples.** One assemblage can recur across papers; a taxon can appear
+  in a synonymy list (`TSYN` set: 1,241 window spore rows) or be described as new (`TNEW` = X: 663)
+  rather than reported from a fresh sample. Reworked or caved identifications are flagged in
+  `TIDR` (15 window spore rows reworked).
+- **Spores absent is not proven absent.** A document that lists only acritarchs or chitinozoans is
+  evidence of sampling effort, but marine studies may not have counted or reported land-derived
+  spores, and Palynodata indexes what a document names.
+- **Ages are Palynodata's.** Age names predate current ICS usage (Gedinnian, Siegenian, Ludlovian,
+  Gothlandian, Downtonian), and numeric ages come from its own 2006-era table, not from
+  `../../timescale.csv`. Nothing has been converted.
+- **Locations are text**, at region or country level ("Canada(NWT,Franklin)"); `TLOC` and the
+  document's `GlobalLocation` are the only geography.
+- **Coverage stops in 2006.** Later key records (for example Rubinstein et al. 2010, Middle
+  Ordovician) are absent. The Global Acritarch Database (Shu et al. 2025, ESSD 17:3567) extended
+  Palynodata's acritarchs with 2008–2023 literature and ICS v2024/12 ages; its data and code are in
+  `../deposits/` as a method template.
+- `TAGE` and `GenAge` are empty in the source; `TOLD`, `THYP`, `TYOU` and `TSUB` have no documented
+  purpose.
+
+## Reproduce
+
+From `data/external/`: `python3 scripts/spores_palynodata.py`. It checks both checksums, unpacks
+`paly.mdb` with `bsdtar`, exports tables with `mdb-export` (Homebrew `mdbtools`) and fetches the
+Wellman et al. supplement from Figshare. Working files go to `local/spores/work/`.
+
+## Verification
+
+200 randomly sampled window rows were found verbatim in an independent `mdb-export` of `TAXON`.
+Every window document has a `NewEng` citation.
+
+web search: 
+web search: Jenkins 1970 chitinozoa "oviformis" ...
+web search: 
+web search: "Jenkins" "Chitinozoa" "1970" pdf ...
+web search: 
+web search: "Cyclosporites" spores pollen diagnosis ...
+web search: 
+web search: "Kibambaites" "spores" ...
+exec
+/bin/zsh -lc "python3 -c 'import csv; rows=list(csv.DictReader(open(\"data/external/spores/palynodata_taxon_window.csv\"))); print(rows[0].keys()); docs={x[\"AUTHDOCNUM\"]:x for x in csv.DictReader(open(\"data/external/spores/palynodata_documents_window.csv\"))}; names={\"Kibambaites\",\"Amblisporites\",\"Stenomesotriletes\",\"Stenomarginata\",\"Psilogena\",\"Irrimales\",\"Angiospora\",\"Archeozonotriletes\",\"Anisozonotriletes\",\"Apiculati\",\"Cingulatisporites\",\"Cryptosporites\",\"Growia\",\"Kelbergiasporites\",\"Dichosporites\"}; [(print(n),[(print(did,docs[did][\"Author\"],docs[did][\"PALYDATE\"],docs[did][\"ENGTITLE\"])) for did in sorted({next((v for k,v in x.items() if v in docs and len(v)==5),\"\") for x in rows if list(x.values())[0]==n}) if did in docs]) for n in sorted(names)]'" in /Users/bwbrook/papers/silurian_plants
+ succeeded in 260ms:
+dict_keys(['TGEN', 'TSPE', 'TSSPEC', 'tage', 'GenAge', 'TLOC', 'TMIC', 'TIDR', 'TNEW', 'TNEWC', 'TEME', 'TSYN', 'told', 'THYP', 'tyou', 'youngage', 'oldage', 'TSUB', 'TDOC', 'agestart', 'ageend', 'derived_window_basis', 'derived_old_ma', 'derived_young_ma', 'derived_span_myr', 'derived_fully_inside_window', 'derived_docnum'])
+Amblisporites
+06979 Givulescu,R. 1974 Fossil flora of Roumania. Second Supplement, Second Part.
+Angiospora
+06159 Sheshegova,L.I. 1973 Silurian microfossils of Podolia. (In: Mikrofossilii Drevneishikh Otlozhenii. T.F.Vozzhennikova and T.B.Timofeev, editors)
+07905 Sheshegova,L.I. 1974 Acritarchs of the Silurian and the Lower Devonian of Podolia. (In: Microfossils USSR. T.F.Vozzhennikova et al, editors)
+Anisozonotriletes
+11446 Pantic,N.K.;Secerov,P. 1975 Results of paleopalynological studies of the Paleozoic basement of the Moesian Platform in Negotin Region (Eastern Serbia).
+11922 Abesadze,M.;Cimakuridze,G.;Planderova,E. 1980 New data on age of metamorphosed Schists of Dzirulj Massif
+12903 Klinec,A.;Planderova,E. 1979 Paleozoic metamorphism in the Kniste Oblast
+Apiculati
+03169 de Jekhowsky,B. 1965 Organic microfossils (spores, hystrichospheres, chitinozoans, etc.), of the Saharan Pre-Quaternary
+04794 Elovskaya,M.V. 1936 Spores of the Barzas Coals, Kuznetsk Basin
+20339 Hoeg,O.A. 1942 The Downtonian and Devonian flora of Spitsbergen
+Archeozonotriletes
+11922 Abesadze,M.;Cimakuridze,G.;Planderova,E. 1980 New data on age of metamorphosed Schists of Dzirulj Massif
+12650 Kinec,A.;Planderova,E. 1981 On the problem of the stratigraphic Unit Hladomorna Dolina Group
+12654 Bezak,V.;Planderova,E. 1981 New information on the age of the Metamophics in the Kohatskom range, Veporides.
+Cingulatisporites
+13611 Shah,S.C.;Ghosh,S.C. 1979 Pre-Tertiary nonmarine biota of the Himalaya. (In: Himalayan Geology Seminar, Section 1, Geology, Stratigraphy and Palaeontology)
+18897 Shearer,J.C.;Moore,T.A.;Demchuk,T.D. 1995 Delineation of distinctive nature of Tertiary coal beds.
+Cryptosporites
+11098 Richardson,J.B.;Ford,J.H.;Parker,F. 1984 Miospores, correlation and age of some Scottish Lower Old Red Sandstone sediments from the Strathmore Region (Fife and Angus).
+16552 Strother,P.K. 1989 An artifical classification of spore-like microfossils (Cryptospores) of Lower Paleozoic Age
+21120 Steemans,P. 2000 Miospore evolution from the Ordovician to the Silurian.
+Dichosporites
+09706 Pashkevich,N.G. 1978 Coding tables for diagnostic miospores of Devonian vegetation.
+Growia
+04506 Jenkins,W.A.M. 1970 Chitinozoa
+Irrimales
+00619 Naumova,S.N. 1962 Lower Paleozoic and Precambrian flora.
+Kelbergiasporites
+04483 Potonie,R. 1970 Synopsis of the genera of the sporae dispersae. Part 5. Supplement to all Groups (Turmae).
+06724 Eschghi,I.;Kasig,W. 1974 The Emsian in the Old Red facies on the northern Side of the Stavelot-Venn Massif, Germany-Belgium.
+Kibambaites
+07253 Bose,M.N.;Kar,R.K. 1976 Palaeozoic sporae dispersae from Congo (Congo). 11. Assises Glaciaires et Periglaciaires from the Lukuga Valley.
+08483 Kar,R.K.;Bose,M.N. 1978 Palaeozoic sporae dispersae from Zaire, (Congo). 14.Specimen No 3 from the Lufubu Salt Marshes near Nyangwe (Maniema).
+Psilogena
+00619 Naumova,S.N. 1962 Lower Paleozoic and Precambrian flora.
+Stenomarginata
+02393 Chibrikova,E.V. 1960 Results of a study of spores from ancient sediments of Bashkiria
+13786 Yankauskas,T.V.;Vaitekunene,G.K. 1972 Silurian acritarcha from the Baltic Arca
+Stenomesotriletes
+06299 Dimitrescu,R. 1985 Early Caledonian event in the Pre-Alpine metamorphic sequences the Romanian Carpathians
+10122 Oniceanu,M.;Erhan,V. 1977 The palynological contributions of the study of the crystallophylliens and sedimentary formation of zone between Bistricioara-Valea Seaca-Baraseu Valley (Harghita Country, East Carpathians).
+
+web search: 
+web search: "Psilogena" "Naumova" ...
+web search: 
+web search: Balme 1995 "Fossil in situ spores" pdf ...
+web search: 
+web search: "Complectitetras" alhajrii ...
+web search: 
+web search: https://palass.org/sites/default/files/media/publications/palaeontology/volume_8/vol8_part4_pp687-748.pdf
+web search: 
+web search: "Aulicosporites" "Diagnosis" ...
+web search: 
+web search: "Dulhuntyispora" "smooth" ...
+web search: 
+web search: "Aulicosporites" "smooth" ...
+codex
+The checks confirm megaspore genera such as Triangulatisporites and Wybostisporites, and monolete spores in Speciososporites. I’ll use “uncertain” where a spelling or diagnosis remains unresolved.
+exec
+/bin/zsh -lc "curl -L --max-time 35 -s 'https://palass.org/sites/default/files/media/publications/palaeontology/volume_8/vol8_part4_pp687-748.pdf' | pdftotext - - | rg -n -A 42 -B 5 'AULICOSPORITES|Aulicosporites|ENIGMOPHYTOSPORA|Enigmophytospora'" in /Users/bwbrook/papers/silurian_plants
+ exited 1 in 0ms:
+Syntax Error: Document stream is empty
+
+web search: 
+web search: "Aulicosporites" megaspores ...
+exec
+/bin/zsh -lc "python3 -c 'import csv; r=list(csv.DictReader(open(\"data/spores/work/codex/genera/chunk3.csv\"))); print(len(r)); print(\"\\n\".join(str(i+1)+\" \"+x[\"genus\"] for i,x in enumerate(r)))'" in /Users/bwbrook/papers/silurian_plants
+ succeeded in 0ms:
+107
+1 Archeozonotriletes
+2 Cincturasporites
+3 Cycadopites
+4 Mooreisporites
+5 Anisozonotriletes
+6 Cryptosporites
+7 Enigmophytospora
+8 Apiculati
+9 Leiozonotriletes
+10 Clivosisporites
+11 Zonomonoletes
+12 Dichosporites
+13 Parasporites
+14 Ambiguaspora
+15 Wybostisporites
+16 Pachytheca
+17 Tripartites
+18 Cosmochlaina
+19 Growia
+20 Tuberculatisporites
+21 Ceratosporites
+22 Kelbergiasporites
+23 Enigmophyton
+24 Nothofagidites
+25 Triangulatisporites
+26 Felixipollenites
+27 Gosslingia
+28 Schizaeoisporites
+29 Lagenicula
+30 Scheuringipollenites
+31 Trachymesotriletes
+32 Schopfipollenites
+33 Angiospora
+34 Genus-A
+35 Cyclobaculisporites
+36 Alisporites
+37 Angulisporites
+38 Incertae sedis
+39 Asterotheca
+40 Archeactinomyces
+41 Endoculeospora
+42 Serrulacaulis
+43 Dulhuntyispora
+44 Microbaculispora
+45 Cyclosporites
+46 Orestovia
+47 Kibambaites
+48 Verrucate
+49 Psilophyta
+50 Monosulcites
+51 Archemicramoeba
+52 Lycopodites
+53 Stenomesotriletes
+54 Tricolporopollenites
+55 Feraxotheca
+56 Stenomarginata
+57 Cingulatisporites
+58 Amblisporites
+59 Eviostachya
+60 Cyathidites
+61 Irrimales
+62 Kozlowskiprion
+63 Telangium
+64 Archemegabacter
+65 Psilogena
+66 Complectitetras
+67 Gulisporites
+68 Microtabula
+69 Speciososporites
+70 Densipollenites
+71 Aulicosporites
+72 Mazocarpon
+73 Crassispora
+74 Decussatisporites
+75 Nanoxanthiopollenites
+76 Chaleuria
+77 Diducites
+78 Raniganjiasaccites
+79 Sporangites
+80 Granulatasporites
+81 Scabratisporites
+82 Whittleseya
+83 Gleicheniidites
+84 Peltatispora
+85 Emphanizonosporites
+86 Walikalesaccites
+87 Calamotriletes
+88 Genus A
+89 Archethrix
+90 Setosisporites
+91 Liliacidites
+92 Lasiostrobus
+93 Leclercqia
+94 Calamostachys
+95 Ullmannia
+96 Svalbardia
+97 Proteacidites
+98 Archecoccoides
+99 Sulcatisporites
+100 Heliosporites
+101 Pityosporites
+102 Striomonosaccites
+103 Dolerotheca
+104 Barsostrobus
+105 Cordaianthus
+106 Simplotheca
+107 Parasporotheca
+
+web search: 
+web search: "Decussatisporites" kinduensis ...
+web search: 
+web search: "Diducites" "hilate" ...
+web search: 
+web search: "Diducites" spores morphology ...
+exec
+/bin/zsh -lc "python3 -c 'import csv; rows=list(csv.DictReader(open(\"data/external/spores/palynodata_taxon_window.csv\"))); docs={x[\"AUTHDOCNUM\"]:x for x in csv.DictReader(open(\"data/external/spores/palynodata_documents_window.csv\"))}; names={\"Peltatispora\",\"Calamotriletes\",\"Heliosporites\",\"Granulatasporites\",\"Sporangites\",\"Nanoxanthiopollenites\",\"Walikalesaccites\",\"Raniganjiasaccites\",\"Felixipollenites\",\"Clivosisporites\",\"Archethrix\",\"Archecoccoides\",\"Archemegabacter\",\"Archemicramoeba\",\"Microtabula\",\"Gulisporites\",\"Aulicosporites\"}; [(print(n),[(print(did,docs[did][\"Author\"],docs[did][\"PALYDATE\"],docs[did][\"ENGTITLE\"])) for did in sorted({x[\"TDOC\"] for x in rows if x[\"TGEN\"]==n}) if did in docs]) for n in sorted(names)]'" in /Users/bwbrook/papers/silurian_plants
+ succeeded in 212ms:
+Archecoccoides
+20596 Locquin,M.V. 1981 Amibes, bacterite, yeasts and fossil viruses.
+Archemegabacter
+20596 Locquin,M.V. 1981 Amibes, bacterite, yeasts and fossil viruses.
+Archemicramoeba
+20596 Locquin,M.V. 1981 Amibes, bacterite, yeasts and fossil viruses.
+Archethrix
+20596 Locquin,M.V. 1981 Amibes, bacterite, yeasts and fossil viruses.
+Aulicosporites
+06786 Allen,K.C. 1973 Further information on the Lower and Middle Devonian spores from Dickson Land, Spitsbergen.
+Calamotriletes
+00345 Lyuber,A.A. 1955 Atlas of spores and pollen of the Paleozoic deposits of Kazakhstan.
+09707 Pashkevich,N.G.;Dryagina,L.L.;Peterson,L.N. 1978 Miospores of Upper Paleozoic plants of Central Siberia.
+Clivosisporites
+10147 Richardson,J.B.;Streel,M.;Hassan,A.;Steemans,P. 1982 A new spore assemblage to correlate between the Breconian (British Isles) and the Gedinnian (Belgium).
+19709 Kenrick,P.;Li,C.-S. 1998 An early, non-calcified, dasycladalean alga from the Lower Devonian of Yunnan Province, China.
+Felixipollenites
+01837 Taylor,T.N. 1981 Pollen and pollen organ evolution in early seed plants.
+10127 Taylor,T.N. 1981 Pollen and pollen organ evolution in early seed plants.
+Granulatasporites
+11098 Richardson,J.B.;Ford,J.H.;Parker,F. 1984 Miospores, correlation and age of some Scottish Lower Old Red Sandstone sediments from the Strathmore Region (Fife and Angus).
+Gulisporites
+05299 Utting,J.;Neves,R. 1970 Palynology of the Lower Limestone Shale Group (Basal Carboniferous Limestone Series), and Portishead Beds, (Upper Old Red Sandstone), of the a Von Gorge, Bristol, England. (In: Colloqium on the Stratigraphy of the Carboniferous, Compte Rendus, 8th Reunion CIMP. M.Streel and R.H.Wagner, editors)
+18947 Ghavidel-Syooki,M. 1993 Palynological study of Paleozoic sediments of the Chal-I-Sheh area, Southwestern Iran
+Heliosporites
+02261 Mortimer,M.G.;Chaloner,W.G. 1967 Correction of name for a Devonian megaspore
+Microtabula
+01222 Doubinger,J. 1963 Ordovician and Silurian chitinozoans of the Schistes of Steige in the Vosges.
+18986 Eisenack,A. 1971 The microfossils of Osteekalke (Ordovician) 3. Graptolite, Melanoskelton, Sponge, Radiolarian, problematic and Supplements on Foraminifera and phytoplankton
+Nanoxanthiopollenites
+01837 Taylor,T.N. 1981 Pollen and pollen organ evolution in early seed plants.
+10127 Taylor,T.N. 1981 Pollen and pollen organ evolution in early seed plants.
+Peltatispora
+07444 Eames,L.E. 1974 Palynology of the Berea Sandstone and Cuyahoga Group of northeastern Ohio.
+Raniganjiasaccites
+08482 Kar,R.K.;Bose,M.N. 1978 Palaeozoic sporae dispersae from Zaire, (Congo). 13. Samples from the W1, W2 and W3 Formations in the Walikale Region (North Kivu).
+08483 Kar,R.K.;Bose,M.N. 1978 Palaeozoic sporae dispersae from Zaire, (Congo). 14.Specimen No 3 from the Lufubu Salt Marshes near Nyangwe (Maniema).
+Sporangites
+00660 Schopf,J.M. 1957 "Spores" and problematic plants Commonly regarded as Marine.
+01909 Radforth,N.W.;Rouse,G.E. 1956 Floral transgression of major geological time zones.
+03214 Wilson,L.R. 1944 Spores and pollen as microfossils.
+03458 Clarke,J.M. 1885 On Devonian spores
+03974 Orton,E. 1882 A source of bituminous matter in the Devonian and sub-Carboniferous Black Shales of Ohio.
+06876 Kräusel,R. 1941 Dawson's "sporocarps", a new class of Devonian Thallophytes.
+Walikalesaccites
+08482 Kar,R.K.;Bose,M.N. 1978 Palaeozoic sporae dispersae from Zaire, (Congo). 13. Samples from the W1, W2 and W3 Formations in the Walikale Region (North Kivu).
+08483 Kar,R.K.;Bose,M.N. 1978 Palaeozoic sporae dispersae from Zaire, (Congo). 14.Specimen No 3 from the Lufubu Salt Marshes near Nyangwe (Maniema).
+
+web search: 
+web search: "Mortimer" "Chaloner" "1967" "name" ...
+web search: 
+web search: "Feraxotheca" culcitaus ...
+web search: 
+web search: https://pal.gns.cri.nz/catalog/index.htm
+web search: 
+web search: 'Nothofagidites'
+web search: 
+web search: 
+web search: 
+web search: "Schizaeoisporites" "monolete" ...
+web search: 
+web search: "Gulisporites" "trilete" ...
+web search: 
+web search: "Cincturasporites" "smooth" "Diagnosis" ...
+web search: 
+web search: https://nora.nerc.ac.uk/id/eprint/530751/1/OR21038.pdf
+web search: 
+web search: "Enigmophyton" superbum plant ...
+web search: 
+web search: "Eviostachya" hoegii ...
+web search: 
+web search: "Ambiguaspora" "fold" ...
+exec
+/bin/zsh -lc "python3 -c 'import csv; r=list(csv.DictReader(open(\"data/external/spores/palynodata_taxon_window.csv\"))); d={x[\"AUTHDOCNUM\"]:x for x in csv.DictReader(open(\"data/external/spores/palynodata_documents_window.csv\"))}; ns={\"Cyclosporites\",\"Asterotheca\",\"Schopfipollenites\",\"Enigmophytospora\",\"Cincturasporites\",\"Tripartites\",\"Leiozonotriletes\",\"Dulhuntyispora\",\"Calamotriletes\",\"Microtabula\",\"Amblisporites\",\"Anisozonotriletes\"}; [(print(n),[(print(k,d[k][\"Author\"],d[k][\"PALYDATE\"],d[k][\"ENGTITLE\"])) for k in sorted({x[\"TDOC\"] for x in r if x[\"TGEN\"]==n}) if k in d]) for n in sorted(ns)]'" in /Users/bwbrook/papers/silurian_plants
+ succeeded in 210ms:
+Amblisporites
+06979 Givulescu,R. 1974 Fossil flora of Roumania. Second Supplement, Second Part.
+Anisozonotriletes
+11446 Pantic,N.K.;Secerov,P. 1975 Results of paleopalynological studies of the Paleozoic basement of the Moesian Platform in Negotin Region (Eastern Serbia).
+11922 Abesadze,M.;Cimakuridze,G.;Planderova,E. 1980 New data on age of metamorphosed Schists of Dzirulj Massif
+12903 Klinec,A.;Planderova,E. 1979 Paleozoic metamorphism in the Kniste Oblast
+Asterotheca
+01806 Brush,G.S.;Barghoorn,E.S. 1965 The natural relationships of some Carboniferous microspores
+Calamotriletes
+00345 Lyuber,A.A. 1955 Atlas of spores and pollen of the Paleozoic deposits of Kazakhstan.
+09707 Pashkevich,N.G.;Dryagina,L.L.;Peterson,L.N. 1978 Miospores of Upper Paleozoic plants of Central Siberia.
+Cincturasporites
+13732 Cambel,B.;Planderova,E. 1985 Biostratigraphic evaluation of Metasediments in the male Karpathy Mts.Region
+15929 Avkhimovich,V.I.;Aseeva,E.A. 1987 Palynological basis for the age of the Ozeryanskoi Coal Suite of the Belokorovich Skoi Graben-Syncline
+Cyclosporites
+06534 Corna,O. 1974 A short summary of the preliminary results of palynological research of some series in the Western Carpathians.
+12549 Chorna,O. 1974 Short Generalization on preliminary results of palynological research on "Mute" Strata in Western Carpathia.
+Dulhuntyispora
+01859 Grignani,D. 1967 Paleozoic spores and Triassic pollen grains from some Tunisian Well samples.
+10458 da Costa,N.M. 1982 Palynoplankton of Paleozoic sediments of the State of Amazonas.
+Enigmophytospora
+04483 Potonie,R. 1970 Synopsis of the genera of the sporae dispersae. Part 5. Supplement to all Groups (Turmae).
+09290 Gensel,P.G. 1980 Devonian in situ, spores: A survey and discussion.
+Leiozonotriletes
+00389 Wray,J.L. 1964 Paleozoic palynomorphs from Libya. (In: Palynology in Oil Exploration, Aureal T. Cross, editor)
+02585 Urban,J.B. 1960 Microfossils of the Woodford Shale (Devonian) of Oklahoma.
+05771 Harris,W.K.;McGowran,B. 1973 South Australian Department of Mines Cootanoorina No.1 Well.Part 2.Upper Paleozoic and Lower Cretaceous micropaleontoloy
+Microtabula
+01222 Doubinger,J. 1963 Ordovician and Silurian chitinozoans of the Schistes of Steige in the Vosges.
+18986 Eisenack,A. 1971 The microfossils of Osteekalke (Ordovician) 3. Graptolite, Melanoskelton, Sponge, Radiolarian, problematic and Supplements on Foraminifera and phytoplankton
+Schopfipollenites
+04957 Taylor,T.N. 1973 A consideration of the occurrence of multicellular microgametophutes in Paleozoic and Mesozoic seed plants.
+07081 Millay,M.A.;Taylor,T.N. 1976 Evolutionary trends in fossil Gymnosperm pollen
+10156 Coquel,R.;Brousmiche,C.;Loboziak,S.;Laveine,J.P. 1979 A systematic study of Schopfipollenites found in situ, in the Coal Basin of Lorraine.
+Tripartites
+03022 Felix,C.J. 1961 An introduction to palynology.
+11803 Gao,L. 1983 Devonian and Carboniferous spores. (In: Palaeontological Atlas of Southwest China, Volume of Microfossils. Edited by Chengdu Institute of Geology and Mineral Resources.)
+13708 Sergeeva,L.A.;Nachev,K.I.;Malyakov,I.G. 1983 Devonian palynomorphs in the Strandzha metamorphites
+
+web search: 
+web search: "Cyclosporites" "Permian" ...
+web search: 
+web search: "Kibambaites" "Diagnosis" ...
+web search: 
+web search: "Kibambaites" Bose Kar 1967 ...
+web search: 
+web search: "Microtabula" Eisenack algae ...
+codex
+One useful nomenclatural check: Heliosporites variabilis refers here to a Devonian megaspore renamed Wybostisporites. The primary-reference context distinguishes it from the later homonymous genus. I’m checking the remaining names for similar ambiguities.
+web search: 
+web search: "Kozlowskiprion" longicavernosus ...
+web search: 
+web search: "Gulisporites" "exine" ...
+web search: 
+web search: "Further information" "Allen" "1973" "spores" ...
+web search: 
+web search: "Lower and Middle Devonian spores" "biodiversitylibrary" ...
+web search: 
+web search: https://www.andeangeology.cl/index.php/revista1/article/view/V34n1-a06/html
+web search: 
+web search: 'Aulicosporites'
+web search: 
+web search: 
+web search: 
+web search: 
+web search: 
+web search: Aulicosporites megaspore Allen vitabilis ...
+web search: 
+web search: "Sporangites" Tasmanites Schopf 1957 ...
+web search: 
+web search: Kjellbergia levis spores ...
+web search: 
+web search: "Densipollenites" diagnosis monosaccate ...
+context compacted
+exec
+/bin/zsh -lc 'cat data/spores/work/codex/genera/schema.json' in /Users/bwbrook/papers/silurian_plants
+ succeeded in 0ms:
+{
+ "type": "object",
+ "additionalProperties": false,
+ "required": [
+  "items"
+ ],
+ "properties": {
+  "items": {
+   "type": "array",
+   "items": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+     "genus",
+     "spore_class",
+     "confidence",
+     "basis",
+     "source"
+    ],
+    "properties": {
+     "genus": {
+      "type": "string"
+     },
+     "spore_class": {
+      "type": "string",
+      "enum": [
+       "cryptospore-monad",
+       "cryptospore-dyad",
+       "cryptospore-tetrad",
+       "trilete-laevigate",
+       "trilete-ornamented",
+       "trilete-unspecified",
+       "other-spore",
+       "not-a-spore",
+       "uncertain"
+      ]
+     },
+     "confidence": {
+      "type": "string",
+      "enum": [
+       "high",
+       "medium",
+       "low"
+      ]
+     },
+     "basis": {
+      "type": "string"
+     },
+     "source": {
+      "type": "string"
+     }
+    }
+   }
+  }
+ }
+}
+exec
+/bin/zsh -lc 'cat data/spores/work/codex/genera/chunk3.csv' in /Users/bwbrook/papers/silurian_plants
+ succeeded in 0ms:
+genus,n_rows,n_docs,species_sample,palynodata_min_ma,palynodata_max_ma
+Archeozonotriletes,3,3,sp; volgogradensis,345.0,570.0
+Cincturasporites,3,2,literatus; dedaleus; densus,345.0,395.0
+Cycadopites,3,2,nevesi; cymbatus,65.0,570.0
+Mooreisporites,3,2,sp.A,230.0,570.0
+Anisozonotriletes,3,3,sp,345.0,435.0
+Cryptosporites,3,3,,387.0,435.0
+Enigmophytospora,3,2,simplex,345.0,395.0
+Apiculati,3,3,"sp. Hoeg,1942",115.667,395.0
+Leiozonotriletes,3,3,primarius; sp,105.0,395.0
+Clivosisporites,3,2,verrucata,370.0,395.0
+Zonomonoletes,3,2,sp; glaber; novis,280.0,395.0
+Dichosporites,3,1,crassus; devonicus; hamulus,345.0,395.0
+Parasporites,3,2,leismanii,230.0,570.0
+Ambiguaspora,3,2,parvula,389.666,472.0
+Wybostisporites,3,2,variabilis,345.0,395.0
+Pachytheca,3,3,sp,392.332,435.0
+Tripartites,3,3,vetustus; trifoliolatus,230.0,570.0
+Cosmochlaina,3,1,maculata; verrucosa,378.0,417.0
+Growia,3,1,oviformis,440.0,450.0
+Tuberculatisporites,3,3,submamillarius; regularis,230.0,570.0
+Ceratosporites,3,2,sp; sp.A,345.0,435.0
+Kelbergiasporites,3,2,levis,370.0,395.0
+Enigmophyton,3,3,sp; superbum,345.0,395.0
+Nothofagidites,3,1,lachlanae; cranwellae; asperus,5.0,482.6
+Triangulatisporites,3,2,,230.0,570.0
+Felixipollenites,3,2,macroreticulatus; sp,230.0,570.0
+Gosslingia,3,3,breconensis,345.0,395.0
+Schizaeoisporites,3,3,sp; sp.I,395.0,447.63
+Lagenicula,3,3,sp; catenulatus,230.0,570.0
+Scheuringipollenites,3,3,ovatus,230.0,570.0
+Trachymesotriletes,3,2,sp,345.0,414.0
+Schopfipollenites,3,3,,65.0,570.0
+Angiospora,3,2,naumovae,395.0,414.0
+Genus-A,3,1,sp.4; sp.3; sp.2,345.0,395.0
+Cyclobaculisporites,3,3,minutus; sp,230.0,570.0
+Alisporites,3,3,sp; opii,65.0,570.0
+Angulisporites,3,2,induratus; punctulosus; notatus,345.0,395.0
+Incertae sedis,2,2,sp.I; form b,392.332,500.0
+Asterotheca,2,1,oreopteridia; sp,230.0,570.0
+Archeactinomyces,2,1,proliferans,435.0,500.0
+Endoculeospora,2,2,gradzinskii,280.0,395.0
+Serrulacaulis,2,2,furcatus,345.0,395.0
+Dulhuntyispora,2,2,sp; minuta,395.0,435.0
+Microbaculispora,2,2,tentula,230.0,570.0
+Cyclosporites,2,2,sp,280.0,570.0
+Orestovia,2,2,devonica,345.0,395.0
+Kibambaites,2,2,corius,230.0,570.0
+Verrucate,2,1,sp.1,394.0,395.0
+Psilophyta,2,1,,435.0,570.0
+Monosulcites,2,1,gemmatus; otagoensis,5.0,482.6
+Archemicramoeba,2,1,chitinovorax,395.0,435.0
+Lycopodites,2,2,oosensis,345.0,395.0
+Stenomesotriletes,2,2,sp,435.0,514.0
+Tricolporopollenites,2,1,cingulum,280.0,395.0
+Feraxotheca,2,2,culcitaus,230.0,570.0
+Stenomarginata,2,2,pusilla,370.0,408.333
+Cingulatisporites,2,2,,280.0,435.0
+Amblisporites,2,1,,370.0,395.0
+Eviostachya,2,2,hoegii,345.0,395.0
+Cyathidites,2,2,sp,5.0,482.6
+Irrimales,2,1,,435.0,570.0
+Kozlowskiprion,2,1,sp.A; longicavernosus,395.0,435.0
+Telangium,2,2,sp,230.0,570.0
+Archemegabacter,2,1,speciosus,345.0,435.0
+Psilogena,2,1,,435.0,570.0
+Complectitetras,2,1,alhajrii,432.0,435.0
+Gulisporites,2,2,torpidus; cochlearius,267.0,500.0
+Microtabula,2,2,hexagonalis,395.0,500.0
+Speciososporites,2,2,plicatus; sp,370.0,435.0
+Densipollenites,2,1,sp,435.0,570.0
+Aulicosporites,2,1,aulicus; vitabilis,360.0,395.0
+Mazocarpon,2,1,oedipternum; shorense,230.0,570.0
+Crassispora,2,2,maculosa; sp,280.0,500.0
+Decussatisporites,2,1,kinduensis; magmus,230.0,570.0
+Nanoxanthiopollenites,2,2,mcmurrayi,230.0,570.0
+Chaleuria,2,2,cirrosa,345.0,395.0
+Diducites,2,2,poljessicus; mucronatus,345.0,395.0
+Raniganjiasaccites,2,2,ovatus,230.0,570.0
+Sporangites,2,2,sp; bilobatus,345.0,395.0
+Granulatasporites,2,1,sp.B; sp,387.0,389.666
+Scabratisporites,2,2,minor,378.0,395.0
+Whittleseya,2,2,elegans; sp,195.0,570.0
+Gleicheniidites,2,2,sp,5.0,482.6
+Peltatispora,2,1,peltata,336.0,395.0
+Emphanizonosporites,2,1,radiatus,370.0,395.0
+Walikalesaccites,2,2,ellipticus,230.0,570.0
+Calamotriletes,2,2,minutissima; platyrugosus,230.0,395.0
+Genus A,2,1,"sp.A Stee.et al,2000; sp.B",432.0,435.0
+Archethrix,2,1,saharensis,395.0,435.0
+Setosisporites,2,2,sp,230.0,570.0
+Liliacidites,2,1,aviemorensis; variegatus,5.0,482.6
+Lasiostrobus,2,2,polysacci,230.0,570.0
+Leclercqia,2,2,complexa,345.0,395.0
+Calamostachys,2,1,germanica; sp,230.0,570.0
+Ullmannia,2,1,,435.0,570.0
+Svalbardia,2,2,sp,345.0,395.0
+Proteacidites,2,1,minimus; obscurus,5.0,482.6
+Archecoccoides,2,1,goujetii,345.0,435.0
+Sulcatisporites,2,2,splendens,65.0,570.0
+Heliosporites,2,1,variabilis,345.0,395.0
+Pityosporites,2,2,sp,65.0,570.0
+Striomonosaccites,2,2,brevis; ovatus,230.0,570.0
+Dolerotheca,2,2,formosa,230.0,570.0
+Barsostrobus,2,2,famennensis,345.0,395.0
+Cordaianthus,2,2,concinnus,230.0,570.0
+Simplotheca,2,2,sp,195.0,570.0
+Parasporotheca,2,2,sp; leismanii,230.0,570.0
+
+web search: 
+web search: "Aulicosporites" megaspores ...
+web search: 
+web search: "Aulicosporites" "Diagnosis" ...
+web search: 
+web search: "Aulicosporites vitabilis" morphology ...
+codex
+The remaining gaps concern obscure names and spellings. I’ll mark those as low-confidence where I cannot establish a diagnosis, and use “none checked” where no reference was verified.
+web search: 
+web search: https://palino.com.ar/PDFs/diPasquo_RGC2007.pdf
+web search: 
+web search: "Archaeozonotriletes" "Diagnosis" smooth ...
+web search: 
+web search: https://www.scielo.cl/scielo.php?lng=en&pid=S0716-02082007000100006&script=sci_arttext
+web search: 
+web search: 'megaspora'
+web search: 
+web search: 
+web search: 
+web search: 
+web search: 
+web search: "Complectitetras" "Steemans" "2000" tetrads ...
+web search: 
+web search: "Complectitetras" tetrad envelope ...
+web search: 
+web search: https://www.sciencedirect.com/science/article/abs/pii/S0012825226000875
+codex
+I’ve read all 107 rows. The final check is that every input name appears exactly once, unchanged, with a classification, confidence, diagnostic basis and source status.
+web search: 
+web search: "Zonomonoletes" "Potonié" "1963" diagnosis ...
+web search: 
+web search: "Zonomonoletes glaber" ...
+codex
+{
+  "items": [
+    {
+      "genus": "Archeozonotriletes",
+      "spore_class": "trilete-unspecified",
+      "confidence": "medium",
+      "basis": "Patinate triletes; sculpture varies in historical usage.",
+      "source": "[McGregor & Camfield (1982)](https://emrlibrary.gov.yk.ca/gsc/bulletins/348/bu_348.pdf)"
+    },
+    {
+      "genus": "Cincturasporites",
+      "spore_class": "trilete-unspecified",
+      "confidence": "medium",
+      "basis": "Cingulate triletes; historically includes differing sculpture.",
+      "source": "[Playford (1963)](https://palass.org/sites/default/files/media/publications/palaeontology/volume_5/vol5_part4_pp619-678.pdf)"
+    },
+    {
+      "genus": "Cycadopites",
+      "spore_class": "not-a-spore",
+      "confidence": "high",
+      "basis": "Monosulcate gymnosperm pollen.",
+      "source": "[Raine, Mildenhall & Kennedy (2011)](https://pal.gns.cri.nz/catalog/index.htm)"
+    },
+    {
+      "genus": "Mooreisporites",
+      "spore_class": "trilete-ornamented",
+      "confidence": "high",
+      "basis": "Trilete; prominent bacula or cones at radial apices.",
+      "source": "[Neves (1958), diagnosis reproduced by Carniti & Hennissen](https://nora.nerc.ac.uk/id/eprint/530751/1/OR21038.pdf)"
+    },
+    {
+      "genus": "Anisozonotriletes",
+      "spore_class": "trilete-unspecified",
+      "confidence": "medium",
+      "basis": "Zonate trilete form genus; sculpture undetermined.",
+      "source": "none checked"
+    },
+    {
+      "genus": "Cryptosporites",
+      "spore_class": "not-a-spore",
+      "confidence": "high",
+      "basis": "Suprageneric cryptospore category, not a genus.",
+      "source": "[Edwards et al. (2014)](https://nph.onlinelibrary.wiley.com/doi/full/10.1111/nph.12645)"
+    },
+    {
+      "genus": "Enigmophytospora",
+      "spore_class": "other-spore",
+      "confidence": "high",
+      "basis": "Megaspores.",
+      "source": "[McGregor & Camfield (1982)](https://emrlibrary.gov.yk.ca/gsc/bulletins/348/bu_348.pdf)"
+    },
+    {
+      "genus": "Apiculati",
+      "spore_class": "not-a-spore",
+      "confidence": "high",
+      "basis": "Suprageneric category for apiculate spores.",
+      "source": "[Bhardwaj (1955)](https://journals.sagepub.com/doi/pdf/10.54991/jop.1955.480)"
+    },
+    {
+      "genus": "Leiozonotriletes",
+      "spore_class": "trilete-unspecified",
+      "confidence": "medium",
+      "basis": "Cavate triletes; smooth to finely granulose exine.",
+      "source": "[Candilier (1979)](https://pepite-depot.univ-lille.fr/LIBRE/Th_Num/1979/50376-1979-114.pdf)"
+    },
+    {
+      "genus": "Clivosisporites",
+      "spore_class": "trilete-ornamented",
+      "confidence": "medium",
+      "basis": "Apparently Clivosispora; verrucate patinate triletes.",
+      "source": "[García Muro, Rubinstein & Steemans (2014)](https://ri.conicet.gov.ar/bitstream/handle/11336/32078/CONICET_Digital_Nro.b60964cf-b9c6-49c8-aecb-02414951d02d_A.pdf?isAllowed=y&sequence=2)"
+    },
+    {
+      "genus": "Zonomonoletes",
+      "spore_class": "other-spore",
+      "confidence": "medium",
+      "basis": "Historical form-genus usage for zonate monolete spores.",
+      "source": "none checked"
+    },
+    {
+      "genus": "Dichosporites",
+      "spore_class": "uncertain",
+      "confidence": "low",
+      "basis": "Diagnosis and identity of this spelling unresolved.",
+      "source": "none checked"
+    },
+    {
+      "genus": "Parasporites",
+      "spore_class": "not-a-spore",
+      "confidence": "high",
+      "basis": "Saccate medullosan prepollen.",
+      "source": "[Osborn & Taylor (1994)](https://osborn.pages.tcnj.edu/files/2013/12/10-Osborn-and-Taylor-1994.pdf)"
+    },
+    {
+      "genus": "Ambiguaspora",
+      "spore_class": "not-a-spore",
+      "confidence": "medium",
+      "basis": "Acritarch assignment; purported spore affinity unconfirmed.",
+      "source": "none checked"
+    },
+    {
+      "genus": "Wybostisporites",
+      "spore_class": "other-spore",
+      "confidence": "high",
+      "basis": "Devonian megaspores.",
+      "source": "[Karczewska (1975)](https://www.app.pan.pl/archive/published/app20/app20-447.pdf)"
+    },
+    {
+      "genus": "Pachytheca",
+      "spore_class": "not-a-spore",
+      "confidence": "high",
+      "basis": "Multicellular filamentous body with cortex and medulla.",
+      "source": "[Edwards et al. (2026)](https://orca.cardiff.ac.uk/id/eprint/187649/)"
+    },
+    {
+      "genus": "Tripartites",
+      "spore_class": "trilete-unspecified",
+      "confidence": "high",
+      "basis": "Auriculate triletes; exine smooth to verrucate.",
+      "source": "[Candilier (1979)](https://pepite-depot.univ-lille.fr/LIBRE/Th_Num/1979/50376-1979-114.pdf)"
+    },
+    {
+      "genus": "Cosmochlaina",
+      "spore_class": "not-a-spore",
+      "confidence": "high",
+      "basis": "Nematophyte cuticle or thallus fragments.",
+      "source": "[Edwards et al. (2013)](https://orca.cardiff.ac.uk/id/eprint/53168/1/AXE%20Nematothallus%2Bafter%2Breferees-final%5B1%5D.pdf)"
+    },
+    {
+      "genus": "Growia",
+      "spore_class": "uncertain",
+      "confidence": "low",
+      "basis": "Taxonomic identity and diagnostic morphology unresolved.",
+      "source": "none checked"
+    },
+    {
+      "genus": "Tuberculatisporites",
+      "spore_class": "other-spore",
+      "confidence": "high",
+      "basis": "Tuberculate lycopsid megaspores.",
+      "source": "[Pendleton & Wellman (2013)](https://jm.copernicus.org/articles/32/87/2013/jm-32-87-2013.pdf)"
+    },
+    {
+      "genus": "Ceratosporites",
+      "spore_class": "trilete-ornamented",
+      "confidence": "high",
+      "basis": "Trilete spores with distal spines or bacula.",
+      "source": "[Raine, Mildenhall & Kennedy (2011)](https://pal.gns.cri.nz/catalog/taxa/103.htm)"
+    },
+    {
+      "genus": "Kelbergiasporites",
+      "spore_class": "uncertain",
+      "confidence": "low",
+      "basis": "Diagnosis not established for this spelling.",
+      "source": "none checked"
+    },
+    {
+      "genus": "Enigmophyton",
+      "spore_class": "not-a-spore",
+      "confidence": "high",
+      "basis": "Plant macrofossil genus.",
+      "source": "[Andrews (1955)](https://pubs.usgs.gov/bul/1013/report.pdf)"
+    },
+    {
+      "genus": "Nothofagidites",
+      "spore_class": "not-a-spore",
+      "confidence": "high",
+      "basis": "Stephanocolpate angiosperm pollen.",
+      "source": "[Raine, Mildenhall & Kennedy (2011)](https://pal.gns.cri.nz/catalog/index.htm)"
+    },
+    {
+      "genus": "Triangulatisporites",
+      "spore_class": "other-spore",
+      "confidence": "high",
+      "basis": "Reticulate, flanged lycopsid megaspores.",
+      "source": "[Karczewska (1976)](https://www.app.pan.pl/article/item/app21-331.html)"
+    },
+    {
+      "genus": "Felixipollenites",
+      "spore_class": "not-a-spore",
+      "confidence": "high",
+      "basis": "Cordaitalean pollen.",
+      "source": "[Osborn & Taylor (1994)](https://osborn.pages.tcnj.edu/files/2013/12/10-Osborn-and-Taylor-1994.pdf)"
+    },
+    {
+      "genus": "Gosslingia",
+      "spore_class": "not-a-spore",
+      "confidence": "high",
+      "basis": "Zosterophyll macroplant with lateral sporangia.",
+      "source": "[Cleal & Thomas (1995)](https://geoguide.scottishgeologytrust.org/p/gcr09/gcr09_craigyfro)"
+    },
+    {
+      "genus": "Schizaeoisporites",
+      "spore_class": "other-spore",
+      "confidence": "high",
+      "basis": "Striate monolete fern spores.",
+      "source": "[Schrank (2010)](https://www.tandfonline.com/doi/full/10.1080/01916121003620106)"
+    },
+    {
+      "genus": "Lagenicula",
+      "spore_class": "other-spore",
+      "confidence": "high",
+      "basis": "Megaspores with a prominent proximal gula.",
+      "source": "[Pendleton & Wellman (2013)](https://jm.copernicus.org/articles/32/87/2013/jm-32-87-2013.pdf)"
+    },
+    {
+      "genus": "Scheuringipollenites",
+      "spore_class": "not-a-spore",
+      "confidence": "high",
+      "basis": "Nonstriate bisaccate gymnosperm pollen.",
+      "source": "none checked"
+    },
+    {
+      "genus": "Trachymesotriletes",
+      "spore_class": "uncertain",
+      "confidence": "low",
+      "basis": "Diagnostic morphology not verified.",
+      "source": "none checked"
+    },
+    {
+      "genus": "Schopfipollenites",
+      "spore_class": "not-a-spore",
+      "confidence": "high",
+      "basis": "Monolete medullosan prepollen.",
+      "source": "[Taylor (1976)](https://www.jstor.org/stable/2442046)"
+    },
+    {
+      "genus": "Angiospora",
+      "spore_class": "not-a-spore",
+      "confidence": "medium",
+      "basis": "Probable acritarch; embryophyte affinity unverified.",
+      "source": "none checked"
+    },
+    {
+      "genus": "Genus-A",
+      "spore_class": "not-a-spore",
+      "confidence": "high",
+      "basis": "Informal placeholder, not a genus name.",
+      "source": "none checked"
+    },
+    {
+      "genus": "Cyclobaculisporites",
+      "spore_class": "trilete-ornamented",
+      "confidence": "high",
+      "basis": "Trilete spores densely covered with bacula.",
+      "source": "[Bhardwaj (1955)](https://journals.sagepub.com/doi/pdf/10.54991/jop.1955.480)"
+    },
+    {
+      "genus": "Alisporites",
+      "spore_class": "not-a-spore",
+      "confidence": "high",
+      "basis": "Bisaccate gymnosperm pollen.",
+      "source": "[Raine, Mildenhall & Kennedy (2011)](https://pal.gns.cri.nz/catalog/index.htm)"
+    },
+    {
+      "genus": "Angulisporites",
+      "spore_class": "trilete-ornamented",
+      "confidence": "high",
+      "basis": "Cingulate triletes with granulate exine.",
+      "source": "[Bhardwaj (1955)](https://journals.sagepub.com/doi/pdf/10.54991/jop.1955.480)"
+    },
+    {
+      "genus": "Incertae sedis",
+      "spore_class": "not-a-spore",
+      "confidence": "high",
+      "basis": "Taxonomic uncertainty label, not a genus.",
+      "source": "none checked"
+    },
+    {
+      "genus": "Asterotheca",
+      "spore_class": "not-a-spore",
+      "confidence": "high",
+      "basis": "Fertile fern foliage bearing synangia.",
+      "source": "none checked"
+    },
+    {
+      "genus": "Archeactinomyces",
+      "spore_class": "not-a-spore",
+      "confidence": "medium",
+      "basis": "Putative actinomycete microfossil.",
+      "source": "none checked"
+    },
+    {
+      "genus": "Endoculeospora",
+      "spore_class": "trilete-ornamented",
+      "confidence": "high",
+      "basis": "Trilete; exoexine bears granules, pila or bacula.",
+      "source": "[di Pasquo (2007)](https://www.scielo.cl/scielo.php?lng=en&pid=S0716-02082007000100006&script=sci_arttext)"
+    },
+    {
+      "genus": "Serrulacaulis",
+      "spore_class": "not-a-spore",
+      "confidence": "high",
+      "basis": "Zosterophyll macroplant with serrate axes.",
+      "source": "[Xu, Berry & Wang (2011)](https://www.sciencedirect.com/science/article/abs/pii/S1871174X11000242)"
+    },
+    {
+      "genus": "Dulhuntyispora",
+      "spore_class": "trilete-unspecified",
+      "confidence": "medium",
+      "basis": "Trilete; interradial wall blisters, variable additional sculpture.",
+      "source": "[Tschudy (1973)](https://pubs.usgs.gov/pp/0770/report.pdf)"
+    },
+    {
+      "genus": "Microbaculispora",
+      "spore_class": "trilete-ornamented",
+      "confidence": "high",
+      "basis": "Trilete spores bearing small bacula.",
+      "source": "[Raine, Mildenhall & Kennedy (2011)](https://pal.gns.cri.nz/catalog/taxa/139.htm)"
+    },
+    {
+      "genus": "Cyclosporites",
+      "spore_class": "trilete-ornamented",
+      "confidence": "medium",
+      "basis": "Trilete spores with striate or concentric muri.",
+      "source": "[Raine, Mildenhall & Kennedy (2011)](https://pal.gns.cri.nz/catalog/taxa/216.htm)"
+    },
+    {
+      "genus": "Orestovia",
+      "spore_class": "not-a-spore",
+      "confidence": "high",
+      "basis": "Axial or thalloid macrofossil.",
+      "source": "[Andrews (1970)](https://digital.library.unt.edu/ark%3A/67531/metadc1114957/m1/152/)"
+    },
+    {
+      "genus": "Kibambaites",
+      "spore_class": "uncertain",
+      "confidence": "low",
+      "basis": "Spore versus pollen diagnosis unresolved.",
+      "source": "none checked"
+    },
+    {
+      "genus": "Verrucate",
+      "spore_class": "not-a-spore",
+      "confidence": "high",
+      "basis": "Descriptive sculpture label, not a genus.",
+      "source": "none checked"
+    },
+    {
+      "genus": "Psilophyta",
+      "spore_class": "not-a-spore",
+      "confidence": "high",
+      "basis": "Suprageneric plant group.",
+      "source": "none checked"
+    },
+    {
+      "genus": "Monosulcites",
+      "spore_class": "not-a-spore",
+      "confidence": "high",
+      "basis": "Monosulcate pollen.",
+      "source": "[Raine, Mildenhall & Kennedy (2011)](https://pal.gns.cri.nz/catalog/index.htm)"
+    },
+    {
+      "genus": "Archemicramoeba",
+      "spore_class": "not-a-spore",
+      "confidence": "medium",
+      "basis": "Putative amoeboid microfossil.",
+      "source": "none checked"
+    },
+    {
+      "genus": "Lycopodites",
+      "spore_class": "not-a-spore",
+      "confidence": "high",
+      "basis": "Leafy lycopsid macrofossils.",
+      "source": "[Karczewska (1976)](https://www.app.pan.pl/article/item/app21-331.html)"
+    },
+    {
+      "genus": "Stenomesotriletes",
+      "spore_class": "uncertain",
+      "confidence": "low",
+      "basis": "Diagnostic morphology not verified.",
+      "source": "none checked"
+    },
+    {
+      "genus": "Tricolporopollenites",
+      "spore_class": "not-a-spore",
+      "confidence": "high",
+      "basis": "Tricolporate angiosperm pollen.",
+      "source": "[Ziembińska-Tworzydło (1974)](https://www.app.pan.pl/archive/published/app19/app19-309.pdf)"
+    },
+    {
+      "genus": "Feraxotheca",
+      "spore_class": "not-a-spore",
+      "confidence": "high",
+      "basis": "Lyginopterid seed-fern pollen organ.",
+      "source": "[Millay & Taylor (1978)](https://www.researchgate.net/publication/256322238_Fertile_and_sterile_frond_segments_of_the_lyginopterid_seed_fern_Feraxotheca)"
+    },
+    {
+      "genus": "Stenomarginata",
+      "spore_class": "not-a-spore",
+      "confidence": "medium",
+      "basis": "Acritarch form genus.",
+      "source": "none checked"
+    },
+    {
+      "genus": "Cingulatisporites",
+      "spore_class": "trilete-unspecified",
+      "confidence": "medium",
+      "basis": "Cingulate triletes; smooth and sculptured historical species.",
+      "source": "none checked"
+    },
+    {
+      "genus": "Amblisporites",
+      "spore_class": "uncertain",
+      "confidence": "low",
+      "basis": "Identity unresolved; possible erroneous spelling.",
+      "source": "none checked"
+    },
+    {
+      "genus": "Eviostachya",
+      "spore_class": "not-a-spore",
+      "confidence": "high",
+      "basis": "Sphenopsid reproductive cone.",
+      "source": "[Stockmans (1948)](https://biblio.naturalsciences.be/rbins-publications/memoires/110-1948/memoire-110-all.pdf)"
+    },
+    {
+      "genus": "Cyathidites",
+      "spore_class": "trilete-laevigate",
+      "confidence": "high",
+      "basis": "Smooth triangular trilete fern spores.",
+      "source": "[Raine, Mildenhall & Kennedy (2011)](https://pal.gns.cri.nz/catalog/taxa/57.htm)"
+    },
+    {
+      "genus": "Irrimales",
+      "spore_class": "not-a-spore",
+      "confidence": "high",
+      "basis": "Historical suprageneric category for apertureless sporomorphs.",
+      "source": "none checked"
+    },
+    {
+      "genus": "Kozlowskiprion",
+      "spore_class": "not-a-spore",
+      "confidence": "high",
+      "basis": "Polychaete jaws: scolecodonts.",
+      "source": "[Kielan-Jaworowska (1966)](https://www.palaeontologia.pan.pl/Archive/1966-16.pdf)"
+    },
+    {
+      "genus": "Telangium",
+      "spore_class": "not-a-spore",
+      "confidence": "high",
+      "basis": "Seed-fern pollen-bearing organ.",
+      "source": "[Cleal & Thomas (1995)](https://data.jncc.gov.uk/data/a2ed7572-87e2-40b9-93cf-2f3af82d8797/gcr-v9-palaeozoic-palaeobotany-of-great-britain-c5.pdf)"
+    },
+    {
+      "genus": "Archemegabacter",
+      "spore_class": "not-a-spore",
+      "confidence": "medium",
+      "basis": "Putative bacterial microfossil.",
+      "source": "none checked"
+    },
+    {
+      "genus": "Psilogena",
+      "spore_class": "not-a-spore",
+      "confidence": "medium",
+      "basis": "Historical suprageneric plant category.",
+      "source": "none checked"
+    },
+    {
+      "genus": "Complectitetras",
+      "spore_class": "cryptospore-tetrad",
+      "confidence": "high",
+      "basis": "Permanent cryptospore tetrads within two envelopes.",
+      "source": "[Steemans, Higgs & Wellman (2000), reviewed in AASP Newsletter 33(4)](https://palynology.org/wp-content/uploads/2015/05/2000nl33-4.pdf)"
+    },
+    {
+      "genus": "Gulisporites",
+      "spore_class": "trilete-unspecified",
+      "confidence": "medium",
+      "basis": "Prominently labrate triletes; smooth or weakly sculptured.",
+      "source": "none checked"
+    },
+    {
+      "genus": "Microtabula",
+      "spore_class": "uncertain",
+      "confidence": "low",
+      "basis": "Diagnostic structure and biological affinity unresolved.",
+      "source": "none checked"
+    },
+    {
+      "genus": "Speciososporites",
+      "spore_class": "other-spore",
+      "confidence": "high",
+      "basis": "Monolete spores.",
+      "source": "[Herendeen et al. (2020)](https://onlinelibrary.wiley.com/doi/full/10.1002/tax.12194)"
+    },
+    {
+      "genus": "Densipollenites",
+      "spore_class": "not-a-spore",
+      "confidence": "high",
+      "basis": "Monosaccate gymnosperm pollen.",
+      "source": "[Saxena et al. (2025)](https://journals.sagepub.com/doi/abs/10.1177/05529360251400053)"
+    },
+    {
+      "genus": "Aulicosporites",
+      "spore_class": "uncertain",
+      "confidence": "low",
+      "basis": "Spore genus confirmed; diagnostic morphology not resolved.",
+      "source": "[Allen (1965); abstract checked, diagnosis unavailable](https://palass.org/publications/palaeontology-journal/archive/8/4/article_pp687-748)"
+    },
+    {
+      "genus": "Mazocarpon",
+      "spore_class": "not-a-spore",
+      "confidence": "high",
+      "basis": "Sigillarian reproductive cone.",
+      "source": "[Willard et al. (2007)](https://repository.si.edu/server/api/core/bitstreams/f48e7cf8-92fc-4d4f-ba04-50e03ddb7321/content)"
+    },
+    {
+      "genus": "Crassispora",
+      "spore_class": "trilete-ornamented",
+      "confidence": "high",
+      "basis": "Crassitate triletes with distal apiculate sculpture.",
+      "source": "none checked"
+    },
+    {
+      "genus": "Decussatisporites",
+      "spore_class": "not-a-spore",
+      "confidence": "high",
+      "basis": "Striate or taeniate monosulcate pollen.",
+      "source": "[Klaus (1960)](https://www.zobodat.at/pdf/JahrbGBA-SB_05_0001-0182.pdf)"
+    },
+    {
+      "genus": "Nanoxanthiopollenites",
+      "spore_class": "not-a-spore",
+      "confidence": "high",
+      "basis": "Spinose monolete medullosan prepollen.",
+      "source": "none checked"
+    },
+    {
+      "genus": "Chaleuria",
+      "spore_class": "not-a-spore",
+      "confidence": "high",
+      "basis": "Branching vascular macroplant with paired sporangia.",
+      "source": "[Andrews, Gensel & Forbes (1974)](https://palass.org/sites/default/files/media/publications/palaeontology/volume_17/vol17_part2_pp387-408.pdf)"
+    },
+    {
+      "genus": "Diducites",
+      "spore_class": "trilete-laevigate",
+      "confidence": "high",
+      "basis": "Trilete; unsculptured wall layers, folded outer envelope.",
+      "source": "[Marshall et al. (2020)](https://link.springer.com/article/10.1007/s12549-020-00448-x)"
+    },
+    {
+      "genus": "Raniganjiasaccites",
+      "spore_class": "not-a-spore",
+      "confidence": "high",
+      "basis": "Bisaccate gymnosperm pollen.",
+      "source": "none checked"
+    },
+    {
+      "genus": "Sporangites",
+      "spore_class": "not-a-spore",
+      "confidence": "medium",
+      "basis": "Historical heterogeneous name including Tasmanites algal cysts.",
+      "source": "[Winslow (1962)](https://pubs.usgs.gov/pp/0364/report.pdf)"
+    },
+    {
+      "genus": "Granulatasporites",
+      "spore_class": "uncertain",
+      "confidence": "low",
+      "basis": "Possible Granulatisporites misspelling; identity unresolved.",
+      "source": "none checked"
+    },
+    {
+      "genus": "Scabratisporites",
+      "spore_class": "trilete-ornamented",
+      "confidence": "high",
+      "basis": "Trilete spores with fine scabrate sculpture.",
+      "source": "[Gad (2005)](https://e-docs.geo-leo.de/bitstream/11858/10506/1/mgm33_2005_gad.pdf)"
+    },
+    {
+      "genus": "Whittleseya",
+      "spore_class": "not-a-spore",
+      "confidence": "high",
+      "basis": "Medullosan prepollen-bearing synangium.",
+      "source": "[Pacyna & Zdebska (2010)](https://www.researchgate.net/publication/265411971_Upper_Carboniferous_seed_fern_Pteridospermophyta_pollen_organs_from_Silesia_Poland_and_related_evolution_considerations)"
+    },
+    {
+      "genus": "Gleicheniidites",
+      "spore_class": "trilete-laevigate",
+      "confidence": "high",
+      "basis": "Smooth trilete spores with interradial thickenings.",
+      "source": "[Raine, Mildenhall & Kennedy (2011)](https://pal.gns.cri.nz/catalog/taxa/234.htm)"
+    },
+    {
+      "genus": "Peltatispora",
+      "spore_class": "uncertain",
+      "confidence": "low",
+      "basis": "Diagnostic morphology not verified.",
+      "source": "none checked"
+    },
+    {
+      "genus": "Emphanizonosporites",
+      "spore_class": "trilete-ornamented",
+      "confidence": "high",
+      "basis": "Trilete spores with proximal radial ribs.",
+      "source": "[McGregor & Camfield (1982)](https://emrlibrary.gov.yk.ca/gsc/bulletins/348/bu_348.pdf)"
+    },
+    {
+      "genus": "Walikalesaccites",
+      "spore_class": "not-a-spore",
+      "confidence": "high",
+      "basis": "Saccate pollen.",
+      "source": "[Jardiné (1974)](https://www.sciencedirect.com/science/article/pii/0034666774900931)"
+    },
+    {
+      "genus": "Calamotriletes",
+      "spore_class": "trilete-laevigate",
+      "confidence": "medium",
+      "basis": "Calamospora-like triletes; smooth, commonly folded exine.",
+      "source": "[Playford (1962)](https://palass.org/sites/default/files/media/publications/palaeontology/volume_5/vol5_part3_pp550-618.pdf)"
+    },
+    {
+      "genus": "Genus A",
+      "spore_class": "not-a-spore",
+      "confidence": "high",
+      "basis": "Informal placeholder, not a genus name.",
+      "source": "none checked"
+    },
+    {
+      "genus": "Archethrix",
+      "spore_class": "not-a-spore",
+      "confidence": "medium",
+      "basis": "Putative filamentous microbial fossil.",
+      "source": "none checked"
+    },
+    {
+      "genus": "Setosisporites",
+      "spore_class": "other-spore",
+      "confidence": "high",
+      "basis": "Setose lycopsid megaspores.",
+      "source": "[Hemsley & Scott (1991)](https://www.sciencedirect.com/science/article/pii/0034666791900363)"
+    },
+    {
+      "genus": "Liliacidites",
+      "spore_class": "not-a-spore",
+      "confidence": "high",
+      "basis": "Reticulate monosulcate angiosperm pollen.",
+      "source": "[Raine, Mildenhall & Kennedy (2011)](https://pal.gns.cri.nz/catalog/index.htm)"
+    },
+    {
+      "genus": "Lasiostrobus",
+      "spore_class": "not-a-spore",
+      "confidence": "high",
+      "basis": "Gymnosperm pollen cone.",
+      "source": "[Glauser et al. (2014)](https://www.tara.tcd.ie/tara8/server/api/core/bitstreams/7cf46445-13c5-4d71-93e3-cf0353493ccf/content)"
+    },
+    {
+      "genus": "Leclercqia",
+      "spore_class": "not-a-spore",
+      "confidence": "high",
+      "basis": "Leafy ligulate lycopsid macroplant.",
+      "source": "[Grierson & Bonamo (1979)](https://bsapubs.onlinelibrary.wiley.com/doi/pdf/10.1002/j.1537-2197.1979.tb06248.x)"
+    },
+    {
+      "genus": "Calamostachys",
+      "spore_class": "not-a-spore",
+      "confidence": "high",
+      "basis": "Calamitean reproductive cone.",
+      "source": "none checked"
+    },
+    {
+      "genus": "Ullmannia",
+      "spore_class": "not-a-spore",
+      "confidence": "high",
+      "basis": "Conifer macroplant, including leafy shoots.",
+      "source": "[Florin (1954)](https://biblio.naturalsciences.be/rbins-publications/association-pour-letude-de-la-paleontologie-et-de-la-stratigraphie-houilleres/18-1954/irscnb_d2191_010faax_18-text.pdf)"
+    },
+    {
+      "genus": "Svalbardia",
+      "spore_class": "not-a-spore",
+      "confidence": "high",
+      "basis": "Progymnosperm macroplant.",
+      "source": "[Cascales-Miñana et al. (2022)](https://orbi.uliege.be/bitstream/2268/259106/1/1-s2.0-S0034666721001676-main%282%29.pdf)"
+    },
+    {
+      "genus": "Proteacidites",
+      "spore_class": "not-a-spore",
+      "confidence": "high",
+      "basis": "Triporate proteaceous angiosperm pollen.",
+      "source": "[Raine, Mildenhall & Kennedy (2011)](https://pal.gns.cri.nz/catalog/index.htm)"
+    },
+    {
+      "genus": "Archecoccoides",
+      "spore_class": "not-a-spore",
+      "confidence": "medium",
+      "basis": "Putative coccoid microbial fossil.",
+      "source": "none checked"
+    },
+    {
+      "genus": "Sulcatisporites",
+      "spore_class": "not-a-spore",
+      "confidence": "high",
+      "basis": "Bisaccate gymnosperm pollen.",
+      "source": "none checked"
+    },
+    {
+      "genus": "Heliosporites",
+      "spore_class": "other-spore",
+      "confidence": "high",
+      "basis": "Here Devonian megaspores; variabilis renamed Wybostisporites.",
+      "source": "[Mortimer & Chaloner (1967)](https://field.biodiversitylibrary.org/part/172948)"
+    },
+    {
+      "genus": "Pityosporites",
+      "spore_class": "not-a-spore",
+      "confidence": "high",
+      "basis": "Bisaccate conifer pollen.",
+      "source": "none checked"
+    },
+    {
+      "genus": "Striomonosaccites",
+      "spore_class": "not-a-spore",
+      "confidence": "high",
+      "basis": "Taeniate monosaccate gymnosperm pollen.",
+      "source": "[Schrank (2010)](https://www.tandfonline.com/doi/full/10.1080/01916121003620106)"
+    },
+    {
+      "genus": "Dolerotheca",
+      "spore_class": "not-a-spore",
+      "confidence": "high",
+      "basis": "Medullosan prepollen-bearing organ.",
+      "source": "[Willard et al. (2007)](https://repository.si.edu/server/api/core/bitstreams/f48e7cf8-92fc-4d4f-ba04-50e03ddb7321/content)"
+    },
+    {
+      "genus": "Barsostrobus",
+      "spore_class": "not-a-spore",
+      "confidence": "high",
+      "basis": "Lycopsid reproductive cone.",
+      "source": "none checked"
+    },
+    {
+      "genus": "Cordaianthus",
+      "spore_class": "not-a-spore",
+      "confidence": "high",
+      "basis": "Cordaitalean reproductive organ.",
+      "source": "[Osborn & Taylor (1994)](https://osborn.pages.tcnj.edu/files/2013/12/10-Osborn-and-Taylor-1994.pdf)"
+    },
+    {
+      "genus": "Simplotheca",
+      "spore_class": "not-a-spore",
+      "confidence": "high",
+      "basis": "Lyginopterid seed-fern pollen organ.",
+      "source": "[Pacyna & Zdebska (2010)](https://www.researchgate.net/publication/265411971_Upper_Carboniferous_seed_fern_Pteridospermophyta_pollen_organs_from_Silesia_Poland_and_related_evolution_considerations)"
+    },
+    {
+      "genus": "Parasporotheca",
+      "spore_class": "not-a-spore",
+      "confidence": "high",
+      "basis": "Medullosan prepollen-bearing organ.",
+      "source": "[Osborn & Taylor (1994)](https://osborn.pages.tcnj.edu/files/2013/12/10-Osborn-and-Taylor-1994.pdf)"
+    }
+  ]
+}
+tokens used
+608,662
+{
+  "items": [
+    {
+      "genus": "Archeozonotriletes",
+      "spore_class": "trilete-unspecified",
+      "confidence": "medium",
+      "basis": "Patinate triletes; sculpture varies in historical usage.",
+      "source": "[McGregor & Camfield (1982)](https://emrlibrary.gov.yk.ca/gsc/bulletins/348/bu_348.pdf)"
+    },
+    {
+      "genus": "Cincturasporites",
+      "spore_class": "trilete-unspecified",
+      "confidence": "medium",
+      "basis": "Cingulate triletes; historically includes differing sculpture.",
+      "source": "[Playford (1963)](https://palass.org/sites/default/files/media/publications/palaeontology/volume_5/vol5_part4_pp619-678.pdf)"
+    },
+    {
+      "genus": "Cycadopites",
+      "spore_class": "not-a-spore",
+      "confidence": "high",
+      "basis": "Monosulcate gymnosperm pollen.",
+      "source": "[Raine, Mildenhall & Kennedy (2011)](https://pal.gns.cri.nz/catalog/index.htm)"
+    },
+    {
+      "genus": "Mooreisporites",
+      "spore_class": "trilete-ornamented",
+      "confidence": "high",
+      "basis": "Trilete; prominent bacula or cones at radial apices.",
+      "source": "[Neves (1958), diagnosis reproduced by Carniti & Hennissen](https://nora.nerc.ac.uk/id/eprint/530751/1/OR21038.pdf)"
+    },
+    {
+      "genus": "Anisozonotriletes",
+      "spore_class": "trilete-unspecified",
+      "confidence": "medium",
+      "basis": "Zonate trilete form genus; sculpture undetermined.",
+      "source": "none checked"
+    },
+    {
+      "genus": "Cryptosporites",
+      "spore_class": "not-a-spore",
+      "confidence": "high",
+      "basis": "Suprageneric cryptospore category, not a genus.",
+      "source": "[Edwards et al. (2014)](https://nph.onlinelibrary.wiley.com/doi/full/10.1111/nph.12645)"
+    },
+    {
+      "genus": "Enigmophytospora",
+      "spore_class": "other-spore",
+      "confidence": "high",
+      "basis": "Megaspores.",
+      "source": "[McGregor & Camfield (1982)](https://emrlibrary.gov.yk.ca/gsc/bulletins/348/bu_348.pdf)"
+    },
+    {
+      "genus": "Apiculati",
+      "spore_class": "not-a-spore",
+      "confidence": "high",
+      "basis": "Suprageneric category for apiculate spores.",
+      "source": "[Bhardwaj (1955)](https://journals.sagepub.com/doi/pdf/10.54991/jop.1955.480)"
+    },
+    {
+      "genus": "Leiozonotriletes",
+      "spore_class": "trilete-unspecified",
+      "confidence": "medium",
+      "basis": "Cavate triletes; smooth to finely granulose exine.",
+      "source": "[Candilier (1979)](https://pepite-depot.univ-lille.fr/LIBRE/Th_Num/1979/50376-1979-114.pdf)"
+    },
+    {
+      "genus": "Clivosisporites",
+      "spore_class": "trilete-ornamented",
+      "confidence": "medium",
+      "basis": "Apparently Clivosispora; verrucate patinate triletes.",
+      "source": "[García Muro, Rubinstein & Steemans (2014)](https://ri.conicet.gov.ar/bitstream/handle/11336/32078/CONICET_Digital_Nro.b60964cf-b9c6-49c8-aecb-02414951d02d_A.pdf?isAllowed=y&sequence=2)"
+    },
+    {
+      "genus": "Zonomonoletes",
+      "spore_class": "other-spore",
+      "confidence": "medium",
+      "basis": "Historical form-genus usage for zonate monolete spores.",
+      "source": "none checked"
+    },
+    {
+      "genus": "Dichosporites",
+      "spore_class": "uncertain",
+      "confidence": "low",
+      "basis": "Diagnosis and identity of this spelling unresolved.",
+      "source": "none checked"
+    },
+    {
+      "genus": "Parasporites",
+      "spore_class": "not-a-spore",
+      "confidence": "high",
+      "basis": "Saccate medullosan prepollen.",
+      "source": "[Osborn & Taylor (1994)](https://osborn.pages.tcnj.edu/files/2013/12/10-Osborn-and-Taylor-1994.pdf)"
+    },
+    {
+      "genus": "Ambiguaspora",
+      "spore_class": "not-a-spore",
+      "confidence": "medium",
+      "basis": "Acritarch assignment; purported spore affinity unconfirmed.",
+      "source": "none checked"
+    },
+    {
+      "genus": "Wybostisporites",
+      "spore_class": "other-spore",
+      "confidence": "high",
+      "basis": "Devonian megaspores.",
+      "source": "[Karczewska (1975)](https://www.app.pan.pl/archive/published/app20/app20-447.pdf)"
+    },
+    {
+      "genus": "Pachytheca",
+      "spore_class": "not-a-spore",
+      "confidence": "high",
+      "basis": "Multicellular filamentous body with cortex and medulla.",
+      "source": "[Edwards et al. (2026)](https://orca.cardiff.ac.uk/id/eprint/187649/)"
+    },
+    {
+      "genus": "Tripartites",
+      "spore_class": "trilete-unspecified",
+      "confidence": "high",
+      "basis": "Auriculate triletes; exine smooth to verrucate.",
+      "source": "[Candilier (1979)](https://pepite-depot.univ-lille.fr/LIBRE/Th_Num/1979/50376-1979-114.pdf)"
+    },
+    {
+      "genus": "Cosmochlaina",
+      "spore_class": "not-a-spore",
+      "confidence": "high",
+      "basis": "Nematophyte cuticle or thallus fragments.",
+      "source": "[Edwards et al. (2013)](https://orca.cardiff.ac.uk/id/eprint/53168/1/AXE%20Nematothallus%2Bafter%2Breferees-final%5B1%5D.pdf)"
+    },
+    {
+      "genus": "Growia",
+      "spore_class": "uncertain",
+      "confidence": "low",
+      "basis": "Taxonomic identity and diagnostic morphology unresolved.",
+      "source": "none checked"
+    },
+    {
+      "genus": "Tuberculatisporites",
+      "spore_class": "other-spore",
+      "confidence": "high",
+      "basis": "Tuberculate lycopsid megaspores.",
+      "source": "[Pendleton & Wellman (2013)](https://jm.copernicus.org/articles/32/87/2013/jm-32-87-2013.pdf)"
+    },
+    {
+      "genus": "Ceratosporites",
+      "spore_class": "trilete-ornamented",
+      "confidence": "high",
+      "basis": "Trilete spores with distal spines or bacula.",
+      "source": "[Raine, Mildenhall & Kennedy (2011)](https://pal.gns.cri.nz/catalog/taxa/103.htm)"
+    },
+    {
+      "genus": "Kelbergiasporites",
+      "spore_class": "uncertain",
+      "confidence": "low",
+      "basis": "Diagnosis not established for this spelling.",
+      "source": "none checked"
+    },
+    {
+      "genus": "Enigmophyton",
+      "spore_class": "not-a-spore",
+      "confidence": "high",
+      "basis": "Plant macrofossil genus.",
+      "source": "[Andrews (1955)](https://pubs.usgs.gov/bul/1013/report.pdf)"
+    },
+    {
+      "genus": "Nothofagidites",
+      "spore_class": "not-a-spore",
+      "confidence": "high",
+      "basis": "Stephanocolpate angiosperm pollen.",
+      "source": "[Raine, Mildenhall & Kennedy (2011)](https://pal.gns.cri.nz/catalog/index.htm)"
+    },
+    {
+      "genus": "Triangulatisporites",
+      "spore_class": "other-spore",
+      "confidence": "high",
+      "basis": "Reticulate, flanged lycopsid megaspores.",
+      "source": "[Karczewska (1976)](https://www.app.pan.pl/article/item/app21-331.html)"
+    },
+    {
+      "genus": "Felixipollenites",
+      "spore_class": "not-a-spore",
+      "confidence": "high",
+      "basis": "Cordaitalean pollen.",
+      "source": "[Osborn & Taylor (1994)](https://osborn.pages.tcnj.edu/files/2013/12/10-Osborn-and-Taylor-1994.pdf)"
+    },
+    {
+      "genus": "Gosslingia",
+      "spore_class": "not-a-spore",
+      "confidence": "high",
+      "basis": "Zosterophyll macroplant with lateral sporangia.",
+      "source": "[Cleal & Thomas (1995)](https://geoguide.scottishgeologytrust.org/p/gcr09/gcr09_craigyfro)"
+    },
+    {
+      "genus": "Schizaeoisporites",
+      "spore_class": "other-spore",
+      "confidence": "high",
+      "basis": "Striate monolete fern spores.",
+      "source": "[Schrank (2010)](https://www.tandfonline.com/doi/full/10.1080/01916121003620106)"
+    },
+    {
+      "genus": "Lagenicula",
+      "spore_class": "other-spore",
+      "confidence": "high",
+      "basis": "Megaspores with a prominent proximal gula.",
+      "source": "[Pendleton & Wellman (2013)](https://jm.copernicus.org/articles/32/87/2013/jm-32-87-2013.pdf)"
+    },
+    {
+      "genus": "Scheuringipollenites",
+      "spore_class": "not-a-spore",
+      "confidence": "high",
+      "basis": "Nonstriate bisaccate gymnosperm pollen.",
+      "source": "none checked"
+    },
+    {
+      "genus": "Trachymesotriletes",
+      "spore_class": "uncertain",
+      "confidence": "low",
+      "basis": "Diagnostic morphology not verified.",
+      "source": "none checked"
+    },
+    {
+      "genus": "Schopfipollenites",
+      "spore_class": "not-a-spore",
+      "confidence": "high",
+      "basis": "Monolete medullosan prepollen.",
+      "source": "[Taylor (1976)](https://www.jstor.org/stable/2442046)"
+    },
+    {
+      "genus": "Angiospora",
+      "spore_class": "not-a-spore",
+      "confidence": "medium",
+      "basis": "Probable acritarch; embryophyte affinity unverified.",
+      "source": "none checked"
+    },
+    {
+      "genus": "Genus-A",
+      "spore_class": "not-a-spore",
+      "confidence": "high",
+      "basis": "Informal placeholder, not a genus name.",
+      "source": "none checked"
+    },
+    {
+      "genus": "Cyclobaculisporites",
+      "spore_class": "trilete-ornamented",
+      "confidence": "high",
+      "basis": "Trilete spores densely covered with bacula.",
+      "source": "[Bhardwaj (1955)](https://journals.sagepub.com/doi/pdf/10.54991/jop.1955.480)"
+    },
+    {
+      "genus": "Alisporites",
+      "spore_class": "not-a-spore",
+      "confidence": "high",
+      "basis": "Bisaccate gymnosperm pollen.",
+      "source": "[Raine, Mildenhall & Kennedy (2011)](https://pal.gns.cri.nz/catalog/index.htm)"
+    },
+    {
+      "genus": "Angulisporites",
+      "spore_class": "trilete-ornamented",
+      "confidence": "high",
+      "basis": "Cingulate triletes with granulate exine.",
+      "source": "[Bhardwaj (1955)](https://journals.sagepub.com/doi/pdf/10.54991/jop.1955.480)"
+    },
+    {
+      "genus": "Incertae sedis",
+      "spore_class": "not-a-spore",
+      "confidence": "high",
+      "basis": "Taxonomic uncertainty label, not a genus.",
+      "source": "none checked"
+    },
+    {
+      "genus": "Asterotheca",
+      "spore_class": "not-a-spore",
+      "confidence": "high",
+      "basis": "Fertile fern foliage bearing synangia.",
+      "source": "none checked"
+    },
+    {
+      "genus": "Archeactinomyces",
+      "spore_class": "not-a-spore",
+      "confidence": "medium",
+      "basis": "Putative actinomycete microfossil.",
+      "source": "none checked"
+    },
+    {
+      "genus": "Endoculeospora",
+      "spore_class": "trilete-ornamented",
+      "confidence": "high",
+      "basis": "Trilete; exoexine bears granules, pila or bacula.",
+      "source": "[di Pasquo (2007)](https://www.scielo.cl/scielo.php?lng=en&pid=S0716-02082007000100006&script=sci_arttext)"
+    },
+    {
+      "genus": "Serrulacaulis",
+      "spore_class": "not-a-spore",
+      "confidence": "high",
+      "basis": "Zosterophyll macroplant with serrate axes.",
+      "source": "[Xu, Berry & Wang (2011)](https://www.sciencedirect.com/science/article/abs/pii/S1871174X11000242)"
+    },
+    {
+      "genus": "Dulhuntyispora",
+      "spore_class": "trilete-unspecified",
+      "confidence": "medium",
+      "basis": "Trilete; interradial wall blisters, variable additional sculpture.",
+      "source": "[Tschudy (1973)](https://pubs.usgs.gov/pp/0770/report.pdf)"
+    },
+    {
+      "genus": "Microbaculispora",
+      "spore_class": "trilete-ornamented",
+      "confidence": "high",
+      "basis": "Trilete spores bearing small bacula.",
+      "source": "[Raine, Mildenhall & Kennedy (2011)](https://pal.gns.cri.nz/catalog/taxa/139.htm)"
+    },
+    {
+      "genus": "Cyclosporites",
+      "spore_class": "trilete-ornamented",
+      "confidence": "medium",
+      "basis": "Trilete spores with striate or concentric muri.",
+      "source": "[Raine, Mildenhall & Kennedy (2011)](https://pal.gns.cri.nz/catalog/taxa/216.htm)"
+    },
+    {
+      "genus": "Orestovia",
+      "spore_class": "not-a-spore",
+      "confidence": "high",
+      "basis": "Axial or thalloid macrofossil.",
+      "source": "[Andrews (1970)](https://digital.library.unt.edu/ark%3A/67531/metadc1114957/m1/152/)"
+    },
+    {
+      "genus": "Kibambaites",
+      "spore_class": "uncertain",
+      "confidence": "low",
+      "basis": "Spore versus pollen diagnosis unresolved.",
+      "source": "none checked"
+    },
+    {
+      "genus": "Verrucate",
+      "spore_class": "not-a-spore",
+      "confidence": "high",
+      "basis": "Descriptive sculpture label, not a genus.",
+      "source": "none checked"
+    },
+    {
+      "genus": "Psilophyta",
+      "spore_class": "not-a-spore",
+      "confidence": "high",
+      "basis": "Suprageneric plant group.",
+      "source": "none checked"
+    },
+    {
+      "genus": "Monosulcites",
+      "spore_class": "not-a-spore",
+      "confidence": "high",
+      "basis": "Monosulcate pollen.",
+      "source": "[Raine, Mildenhall & Kennedy (2011)](https://pal.gns.cri.nz/catalog/index.htm)"
+    },
+    {
+      "genus": "Archemicramoeba",
+      "spore_class": "not-a-spore",
+      "confidence": "medium",
+      "basis": "Putative amoeboid microfossil.",
+      "source": "none checked"
+    },
+    {
+      "genus": "Lycopodites",
+      "spore_class": "not-a-spore",
+      "confidence": "high",
+      "basis": "Leafy lycopsid macrofossils.",
+      "source": "[Karczewska (1976)](https://www.app.pan.pl/article/item/app21-331.html)"
+    },
+    {
+      "genus": "Stenomesotriletes",
+      "spore_class": "uncertain",
+      "confidence": "low",
+      "basis": "Diagnostic morphology not verified.",
+      "source": "none checked"
+    },
+    {
+      "genus": "Tricolporopollenites",
+      "spore_class": "not-a-spore",
+      "confidence": "high",
+      "basis": "Tricolporate angiosperm pollen.",
+      "source": "[Ziembińska-Tworzydło (1974)](https://www.app.pan.pl/archive/published/app19/app19-309.pdf)"
+    },
+    {
+      "genus": "Feraxotheca",
+      "spore_class": "not-a-spore",
+      "confidence": "high",
+      "basis": "Lyginopterid seed-fern pollen organ.",
+      "source": "[Millay & Taylor (1978)](https://www.researchgate.net/publication/256322238_Fertile_and_sterile_frond_segments_of_the_lyginopterid_seed_fern_Feraxotheca)"
+    },
+    {
+      "genus": "Stenomarginata",
+      "spore_class": "not-a-spore",
+      "confidence": "medium",
+      "basis": "Acritarch form genus.",
+      "source": "none checked"
+    },
+    {
+      "genus": "Cingulatisporites",
+      "spore_class": "trilete-unspecified",
+      "confidence": "medium",
+      "basis": "Cingulate triletes; smooth and sculptured historical species.",
+      "source": "none checked"
+    },
+    {
+      "genus": "Amblisporites",
+      "spore_class": "uncertain",
+      "confidence": "low",
+      "basis": "Identity unresolved; possible erroneous spelling.",
+      "source": "none checked"
+    },
+    {
+      "genus": "Eviostachya",
+      "spore_class": "not-a-spore",
+      "confidence": "high",
+      "basis": "Sphenopsid reproductive cone.",
+      "source": "[Stockmans (1948)](https://biblio.naturalsciences.be/rbins-publications/memoires/110-1948/memoire-110-all.pdf)"
+    },
+    {
+      "genus": "Cyathidites",
+      "spore_class": "trilete-laevigate",
+      "confidence": "high",
+      "basis": "Smooth triangular trilete fern spores.",
+      "source": "[Raine, Mildenhall & Kennedy (2011)](https://pal.gns.cri.nz/catalog/taxa/57.htm)"
+    },
+    {
+      "genus": "Irrimales",
+      "spore_class": "not-a-spore",
+      "confidence": "high",
+      "basis": "Historical suprageneric category for apertureless sporomorphs.",
+      "source": "none checked"
+    },
+    {
+      "genus": "Kozlowskiprion",
+      "spore_class": "not-a-spore",
+      "confidence": "high",
+      "basis": "Polychaete jaws: scolecodonts.",
+      "source": "[Kielan-Jaworowska (1966)](https://www.palaeontologia.pan.pl/Archive/1966-16.pdf)"
+    },
+    {
+      "genus": "Telangium",
+      "spore_class": "not-a-spore",
+      "confidence": "high",
+      "basis": "Seed-fern pollen-bearing organ.",
+      "source": "[Cleal & Thomas (1995)](https://data.jncc.gov.uk/data/a2ed7572-87e2-40b9-93cf-2f3af82d8797/gcr-v9-palaeozoic-palaeobotany-of-great-britain-c5.pdf)"
+    },
+    {
+      "genus": "Archemegabacter",
+      "spore_class": "not-a-spore",
+      "confidence": "medium",
+      "basis": "Putative bacterial microfossil.",
+      "source": "none checked"
+    },
+    {
+      "genus": "Psilogena",
+      "spore_class": "not-a-spore",
+      "confidence": "medium",
+      "basis": "Historical suprageneric plant category.",
+      "source": "none checked"
+    },
+    {
+      "genus": "Complectitetras",
+      "spore_class": "cryptospore-tetrad",
+      "confidence": "high",
+      "basis": "Permanent cryptospore tetrads within two envelopes.",
+      "source": "[Steemans, Higgs & Wellman (2000), reviewed in AASP Newsletter 33(4)](https://palynology.org/wp-content/uploads/2015/05/2000nl33-4.pdf)"
+    },
+    {
+      "genus": "Gulisporites",
+      "spore_class": "trilete-unspecified",
+      "confidence": "medium",
+      "basis": "Prominently labrate triletes; smooth or weakly sculptured.",
+      "source": "none checked"
+    },
+    {
+      "genus": "Microtabula",
+      "spore_class": "uncertain",
+      "confidence": "low",
+      "basis": "Diagnostic structure and biological affinity unresolved.",
+      "source": "none checked"
+    },
+    {
+      "genus": "Speciososporites",
+      "spore_class": "other-spore",
+      "confidence": "high",
+      "basis": "Monolete spores.",
+      "source": "[Herendeen et al. (2020)](https://onlinelibrary.wiley.com/doi/full/10.1002/tax.12194)"
+    },
+    {
+      "genus": "Densipollenites",
+      "spore_class": "not-a-spore",
+      "confidence": "high",
+      "basis": "Monosaccate gymnosperm pollen.",
+      "source": "[Saxena et al. (2025)](https://journals.sagepub.com/doi/abs/10.1177/05529360251400053)"
+    },
+    {
+      "genus": "Aulicosporites",
+      "spore_class": "uncertain",
+      "confidence": "low",
+      "basis": "Spore genus confirmed; diagnostic morphology not resolved.",
+      "source": "[Allen (1965); abstract checked, diagnosis unavailable](https://palass.org/publications/palaeontology-journal/archive/8/4/article_pp687-748)"
+    },
+    {
+      "genus": "Mazocarpon",
+      "spore_class": "not-a-spore",
+      "confidence": "high",
+      "basis": "Sigillarian reproductive cone.",
+      "source": "[Willard et al. (2007)](https://repository.si.edu/server/api/core/bitstreams/f48e7cf8-92fc-4d4f-ba04-50e03ddb7321/content)"
+    },
+    {
+      "genus": "Crassispora",
+      "spore_class": "trilete-ornamented",
+      "confidence": "high",
+      "basis": "Crassitate triletes with distal apiculate sculpture.",
+      "source": "none checked"
+    },
+    {
+      "genus": "Decussatisporites",
+      "spore_class": "not-a-spore",
+      "confidence": "high",
+      "basis": "Striate or taeniate monosulcate pollen.",
+      "source": "[Klaus (1960)](https://www.zobodat.at/pdf/JahrbGBA-SB_05_0001-0182.pdf)"
+    },
+    {
+      "genus": "Nanoxanthiopollenites",
+      "spore_class": "not-a-spore",
+      "confidence": "high",
+      "basis": "Spinose monolete medullosan prepollen.",
+      "source": "none checked"
+    },
+    {
+      "genus": "Chaleuria",
+      "spore_class": "not-a-spore",
+      "confidence": "high",
+      "basis": "Branching vascular macroplant with paired sporangia.",
+      "source": "[Andrews, Gensel & Forbes (1974)](https://palass.org/sites/default/files/media/publications/palaeontology/volume_17/vol17_part2_pp387-408.pdf)"
+    },
+    {
+      "genus": "Diducites",
+      "spore_class": "trilete-laevigate",
+      "confidence": "high",
+      "basis": "Trilete; unsculptured wall layers, folded outer envelope.",
+      "source": "[Marshall et al. (2020)](https://link.springer.com/article/10.1007/s12549-020-00448-x)"
+    },
+    {
+      "genus": "Raniganjiasaccites",
+      "spore_class": "not-a-spore",
+      "confidence": "high",
+      "basis": "Bisaccate gymnosperm pollen.",
+      "source": "none checked"
+    },
+    {
+      "genus": "Sporangites",
+      "spore_class": "not-a-spore",
+      "confidence": "medium",
+      "basis": "Historical heterogeneous name including Tasmanites algal cysts.",
+      "source": "[Winslow (1962)](https://pubs.usgs.gov/pp/0364/report.pdf)"
+    },
+    {
+      "genus": "Granulatasporites",
+      "spore_class": "uncertain",
+      "confidence": "low",
+      "basis": "Possible Granulatisporites misspelling; identity unresolved.",
+      "source": "none checked"
+    },
+    {
+      "genus": "Scabratisporites",
+      "spore_class": "trilete-ornamented",
+      "confidence": "high",
+      "basis": "Trilete spores with fine scabrate sculpture.",
+      "source": "[Gad (2005)](https://e-docs.geo-leo.de/bitstream/11858/10506/1/mgm33_2005_gad.pdf)"
+    },
+    {
+      "genus": "Whittleseya",
+      "spore_class": "not-a-spore",
+      "confidence": "high",
+      "basis": "Medullosan prepollen-bearing synangium.",
+      "source": "[Pacyna & Zdebska (2010)](https://www.researchgate.net/publication/265411971_Upper_Carboniferous_seed_fern_Pteridospermophyta_pollen_organs_from_Silesia_Poland_and_related_evolution_considerations)"
+    },
+    {
+      "genus": "Gleicheniidites",
+      "spore_class": "trilete-laevigate",
+      "confidence": "high",
+      "basis": "Smooth trilete spores with interradial thickenings.",
+      "source": "[Raine, Mildenhall & Kennedy (2011)](https://pal.gns.cri.nz/catalog/taxa/234.htm)"
+    },
+    {
+      "genus": "Peltatispora",
+      "spore_class": "uncertain",
+      "confidence": "low",
+      "basis": "Diagnostic morphology not verified.",
+      "source": "none checked"
+    },
+    {
+      "genus": "Emphanizonosporites",
+      "spore_class": "trilete-ornamented",
+      "confidence": "high",
+      "basis": "Trilete spores with proximal radial ribs.",
+      "source": "[McGregor & Camfield (1982)](https://emrlibrary.gov.yk.ca/gsc/bulletins/348/bu_348.pdf)"
+    },
+    {
+      "genus": "Walikalesaccites",
+      "spore_class": "not-a-spore",
+      "confidence": "high",
+      "basis": "Saccate pollen.",
+      "source": "[Jardiné (1974)](https://www.sciencedirect.com/science/article/pii/0034666774900931)"
+    },
+    {
+      "genus": "Calamotriletes",
+      "spore_class": "trilete-laevigate",
+      "confidence": "medium",
+      "basis": "Calamospora-like triletes; smooth, commonly folded exine.",
+      "source": "[Playford (1962)](https://palass.org/sites/default/files/media/publications/palaeontology/volume_5/vol5_part3_pp550-618.pdf)"
+    },
+    {
+      "genus": "Genus A",
+      "spore_class": "not-a-spore",
+      "confidence": "high",
+      "basis": "Informal placeholder, not a genus name.",
+      "source": "none checked"
+    },
+    {
+      "genus": "Archethrix",
+      "spore_class": "not-a-spore",
+      "confidence": "medium",
+      "basis": "Putative filamentous microbial fossil.",
+      "source": "none checked"
+    },
+    {
+      "genus": "Setosisporites",
+      "spore_class": "other-spore",
+      "confidence": "high",
+      "basis": "Setose lycopsid megaspores.",
+      "source": "[Hemsley & Scott (1991)](https://www.sciencedirect.com/science/article/pii/0034666791900363)"
+    },
+    {
+      "genus": "Liliacidites",
+      "spore_class": "not-a-spore",
+      "confidence": "high",
+      "basis": "Reticulate monosulcate angiosperm pollen.",
+      "source": "[Raine, Mildenhall & Kennedy (2011)](https://pal.gns.cri.nz/catalog/index.htm)"
+    },
+    {
+      "genus": "Lasiostrobus",
+      "spore_class": "not-a-spore",
+      "confidence": "high",
+      "basis": "Gymnosperm pollen cone.",
+      "source": "[Glauser et al. (2014)](https://www.tara.tcd.ie/tara8/server/api/core/bitstreams/7cf46445-13c5-4d71-93e3-cf0353493ccf/content)"
+    },
+    {
+      "genus": "Leclercqia",
+      "spore_class": "not-a-spore",
+      "confidence": "high",
+      "basis": "Leafy ligulate lycopsid macroplant.",
+      "source": "[Grierson & Bonamo (1979)](https://bsapubs.onlinelibrary.wiley.com/doi/pdf/10.1002/j.1537-2197.1979.tb06248.x)"
+    },
+    {
+      "genus": "Calamostachys",
+      "spore_class": "not-a-spore",
+      "confidence": "high",
+      "basis": "Calamitean reproductive cone.",
+      "source": "none checked"
+    },
+    {
+      "genus": "Ullmannia",
+      "spore_class": "not-a-spore",
+      "confidence": "high",
+      "basis": "Conifer macroplant, including leafy shoots.",
+      "source": "[Florin (1954)](https://biblio.naturalsciences.be/rbins-publications/association-pour-letude-de-la-paleontologie-et-de-la-stratigraphie-houilleres/18-1954/irscnb_d2191_010faax_18-text.pdf)"
+    },
+    {
+      "genus": "Svalbardia",
+      "spore_class": "not-a-spore",
+      "confidence": "high",
+      "basis": "Progymnosperm macroplant.",
+      "source": "[Cascales-Miñana et al. (2022)](https://orbi.uliege.be/bitstream/2268/259106/1/1-s2.0-S0034666721001676-main%282%29.pdf)"
+    },
+    {
+      "genus": "Proteacidites",
+      "spore_class": "not-a-spore",
+      "confidence": "high",
+      "basis": "Triporate proteaceous angiosperm pollen.",
+      "source": "[Raine, Mildenhall & Kennedy (2011)](https://pal.gns.cri.nz/catalog/index.htm)"
+    },
+    {
+      "genus": "Archecoccoides",
+      "spore_class": "not-a-spore",
+      "confidence": "medium",
+      "basis": "Putative coccoid microbial fossil.",
+      "source": "none checked"
+    },
+    {
+      "genus": "Sulcatisporites",
+      "spore_class": "not-a-spore",
+      "confidence": "high",
+      "basis": "Bisaccate gymnosperm pollen.",
+      "source": "none checked"
+    },
+    {
+      "genus": "Heliosporites",
+      "spore_class": "other-spore",
+      "confidence": "high",
+      "basis": "Here Devonian megaspores; variabilis renamed Wybostisporites.",
+      "source": "[Mortimer & Chaloner (1967)](https://field.biodiversitylibrary.org/part/172948)"
+    },
+    {
+      "genus": "Pityosporites",
+      "spore_class": "not-a-spore",
+      "confidence": "high",
+      "basis": "Bisaccate conifer pollen.",
+      "source": "none checked"
+    },
+    {
+      "genus": "Striomonosaccites",
+      "spore_class": "not-a-spore",
+      "confidence": "high",
+      "basis": "Taeniate monosaccate gymnosperm pollen.",
+      "source": "[Schrank (2010)](https://www.tandfonline.com/doi/full/10.1080/01916121003620106)"
+    },
+    {
+      "genus": "Dolerotheca",
+      "spore_class": "not-a-spore",
+      "confidence": "high",
+      "basis": "Medullosan prepollen-bearing organ.",
+      "source": "[Willard et al. (2007)](https://repository.si.edu/server/api/core/bitstreams/f48e7cf8-92fc-4d4f-ba04-50e03ddb7321/content)"
+    },
+    {
+      "genus": "Barsostrobus",
+      "spore_class": "not-a-spore",
+      "confidence": "high",
+      "basis": "Lycopsid reproductive cone.",
+      "source": "none checked"
+    },
+    {
+      "genus": "Cordaianthus",
+      "spore_class": "not-a-spore",
+      "confidence": "high",
+      "basis": "Cordaitalean reproductive organ.",
+      "source": "[Osborn & Taylor (1994)](https://osborn.pages.tcnj.edu/files/2013/12/10-Osborn-and-Taylor-1994.pdf)"
+    },
+    {
+      "genus": "Simplotheca",
+      "spore_class": "not-a-spore",
+      "confidence": "high",
+      "basis": "Lyginopterid seed-fern pollen organ.",
+      "source": "[Pacyna & Zdebska (2010)](https://www.researchgate.net/publication/265411971_Upper_Carboniferous_seed_fern_Pteridospermophyta_pollen_organs_from_Silesia_Poland_and_related_evolution_considerations)"
+    },
+    {
+      "genus": "Parasporotheca",
+      "spore_class": "not-a-spore",
+      "confidence": "high",
+      "basis": "Medullosan prepollen-bearing organ.",
+      "source": "[Osborn & Taylor (1994)](https://osborn.pages.tcnj.edu/files/2013/12/10-Osborn-and-Taylor-1994.pdf)"
+    }
+  ]
+}

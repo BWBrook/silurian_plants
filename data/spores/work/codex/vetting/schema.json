@@ -1,0 +1,50 @@
+{
+ "type": "object",
+ "additionalProperties": false,
+ "required": [
+  "items"
+ ],
+ "properties": {
+  "items": {
+   "type": "array",
+   "items": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+     "doc",
+     "verdict",
+     "in_wellman2013",
+     "reason",
+     "checked"
+    ],
+    "properties": {
+     "doc": {
+      "type": "string"
+     },
+     "verdict": {
+      "type": "string",
+      "enum": [
+       "accept",
+       "doubtful",
+       "reject"
+      ]
+     },
+     "in_wellman2013": {
+      "type": "string",
+      "enum": [
+       "yes",
+       "no",
+       "unclear"
+      ]
+     },
+     "reason": {
+      "type": "string"
+     },
+     "checked": {
+      "type": "string"
+     }
+    }
+   }
+  }
+ }
+}

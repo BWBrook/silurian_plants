@@ -1,0 +1,287 @@
+tloc,n_rows,n_docs
+Nd,679,81
+Libya,531,41
+USSR(Ukrainian SSR),528,24
+Romania,444,28
+Czechoslovakia,425,36
+Belgium,371,28
+Spain,371,29
+Wales,294,30
+Poland,267,25
+France(Ardennes),265,4
+USSR(Urals),245,12
+China,235,7
+USSR(Lithuanian SSR),226,7
+France,201,14
+England(Shropshire),193,27
+France(Finistere),188,11
+Canada(Ontario),183,15
+USSR(Bashkir ASSR),179,14
+China(Kweichow),178,3
+W.Germany(N.Rhine),167,3
+Saudi Arabia,165,20
+England(Herefordshire),163,11
+Algeria,161,8
+USSR(Russian Platform),161,20
+USSR(Yakut ASSR),158,1
+Scotland,152,19
+Spitsbergen,149,17
+France(Bretagne),141,4
+USSR(Siberia),140,21
+England,137,17
+Pennsylvania,129,17
+USSR,124,26
+Scotland(Fife),116,4
+Congo,114,2
+Brazil(Paraná),110,6
+USSR(Estonian SSR),108,8
+Wales(Glamorgan),105,3
+France(Manche),103,10
+USSR(Baltic),101,7
+Wales(Carmarthenshire),101,6
+France(Mayenne),101,4
+China(Yunnan),101,6
+Bolivia,95,11
+England(Worcestershire),93,5
+USSR(European),92,8
+USSR(Kemerovskaya),91,6
+Wales(Dyfed),90,3
+Worldwide,87,2
+USSR(WSL),86,7
+Canada(Gaspe Area),86,17
+USSR(Belorussian SSR),83,9
+USSR(Latvian SSR),82,3
+Wales(Gwent),78,2
+USSR(Saratov),78,3
+USSR(Nenets Nat.Okrug),71,10
+USSR(Voronezh),69,1
+Bulgaria,66,7
+Northern Hemisphere,64,3
+China(Kwangsi),64,5
+USSR(Lipetsk),63,1
+USSR(Tambov),63,1
+France(Ille-et-Vilaine),62,2
+Dem.Repub.of the Congo,60,2
+Czechoslovakia(Slovensko),60,3
+China(Kansu),59,1
+Argentina(San Juan),58,13
+New York,56,15
+New Zealand(S.I.),55,1
+USSR(Azerbaijan SSR),55,2
+Ireland,54,6
+USSR(Tuvinskaya A.O.),53,4
+Argentina(Mendoza),51,5
+Canada(Nova Scotia),49,5
+Turkey,47,2
+United Kingdom,45,7
+Wales(Montgomeryshire),45,1
+Scotland(Strathclyde),44,3
+USA,44,8
+Tunisia,43,4
+W.Germany(Bavaria),43,6
+W.Germany,42,5
+England(Gloucestershire),42,1
+Africa(Sahara),42,7
+Georgia,42,3
+Canada,41,13
+USSR(Krasnoyarsk Kray),39,5
+Norway,38,7
+S.Ireland,37,2
+Russia(Buryatia),36,1
+Europe,36,6
+Ohio,33,11
+USSR(Tyumenskaya Oblast),33,1
+Scotland(Tayside),33,3
+Yugoslavia,33,5
+USSR(Turkmen SSR),32,1
+Canada(Arctic),31,7
+Canada(Newfoundland),31,2
+Iran,31,4
+Canada(New Brunswick),31,5
+USSR(E.Kazakh Oblast),31,6
+Iowa,30,4
+Texas,30,4
+USSR(Kamchatka Oblast),30,1
+France(Pas-de-Calais),30,3
+Canada(Quebec),29,16
+USSR(Buryat ASSR),29,2
+Colombia,29,3
+USSR(Yaroslav),29,4
+Oklahoma,28,7
+China(Sinkiang Uighur),28,4
+North America,28,5
+Scotland(Aberdeen),27,4
+France(Loire Atlantique),27,2
+"Canada(NWT,Franklin)",25,8
+USSR(Altai Kray),25,3
+Sweden(Gotland),25,2
+USSR(Orenburg),25,2
+USSR(Kazakh SSR),25,9
+China(Jiangxi),24,1
+Czechoslovakia(Morovia),24,1
+Africa,24,9
+Argentina(Salta),23,5
+France(Maine-et-Loire),23,2
+China(Szechwan),23,1
+Paraguay,23,4
+Zambia,23,1
+Germany,21,7
+USSR(Moldavian SSR),21,3
+S.Ireland(Wexford),21,1
+S.Ireland(Clare),21,3
+USSR(Tomskaya Oblast),20,3
+USSR(Kaliningrad),20,1
+Montana,20,2
+Brazil(Paraiba),20,1
+France(Cotes du Nord),20,4
+Australia,20,7
+Europe(W.Europe),19,2
+USSR(Stavropol Kray),18,1
+England(Cornwall),18,2
+Baltic,18,3
+England(Oxfordshire),18,4
+Egypt,18,6
+China(Anhwei),17,2
+USSR(Mountain Altai),17,2
+Argentina(Jujuy),17,4
+Hungary,17,2
+France(Vendee),17,1
+USSR(Carpathians),17,2
+USSR(Pre-Urals),17,3
+USSR(Krasnodar Kray),16,1
+USSR(Permsk Nat.Okrug),16,2
+Atlantic Ocean,15,2
+USSR(Georgian SSR),15,2
+Indiana,15,5
+USSR(Kuybyshev),15,2
+Maine,14,2
+USSR(Komi ASSR),14,2
+USSR(Leningrad),14,2
+USSR(Yablonov Khrebet),14,1
+USSR(Vologda),14,3
+USSR(W.Kazakh Kray),14,1
+Sweden,14,6
+India(Jammu & Kashmir),13,2
+Scotland(Ayr),13,2
+Illinois,13,8
+Gondwanaland,12,2
+Scotland(Lothians),12,1
+USSR(Kirov),12,1
+W.Germany(Rhineland),12,4
+Russia(Cis-Urals),11,1
+USSR(Khakass A.O.),11,1
+Morocco,11,4
+USSR(Mordovian ASSR),11,1
+Germany(Rhineland),10,1
+Argentina,10,1
+Portugal,10,3
+Kentucky,9,5
+Alabama,9,3
+Tennessee,9,6
+S.Ireland(Mayo),9,2
+S.Ireland(Tipperary),9,3
+England(Northumberland),8,2
+India,8,2
+Canada(Anticosti Island),8,4
+England(Suffolk),8,1
+Finland,8,2
+USSR(Tatar ASSR),8,1
+Brazil(Amazonas),8,5
+USSR(Pre-Baltic),8,3
+USSR(E.Kazakh Kray),8,1
+USSR(Novosibirskaya),7,2
+West Virginia,7,2
+Scotland(Orkney),7,2
+Australia(S.Australia),7,1
+Missouri,7,4
+France(Morbihan),7,1
+China(Zhejiang),7,1
+USSR(Tadzhik SSR),6,1
+China(Inner Mongolia),6,1
+Austria,6,1
+England(Salop),6,1
+N.Ireland(Fermanagh),6,1
+Canada(Maritime Prov.),6,2
+Greenland,6,3
+Scotland(Dumfries),6,1
+France(Normandie),6,2
+England(Bedfordshire),5,2
+South Africa,5,2
+Wales(Pembrokeshire),5,1
+S.Ireland(Offaly),5,1
+USSR(Pre-Caucasus),5,1
+USSR(Moscow),5,1
+USSR(Smolensk),5,1
+Jordan,5,2
+S.Ireland(Westmeath),5,1
+Germany(Saxony),5,1
+Antarctica,5,4
+USSR(Stalingrad),5,1
+France(Vosges),4,2
+Italy,4,1
+Brazil,4,3
+Scotland(Angus),4,3
+Canada(NWT),4,2
+Estonia,4,1
+Czech Republic,4,3
+Denmark,4,2
+Wyoming,4,3
+Norway(Spitsbergen),4,1
+Brazil(Mato Grosso),4,2
+India(Hindustan),4,1
+USSR(Kalinin),4,1
+Czechoslovakia(Bohemia),4,3
+USSR(Taymyr Nat.Okrug),4,1
+Florida,3,2
+Scotland(Shetland),3,1
+Canada(Yukon),3,2
+Wales(Monmouthshire),3,1
+India(Uttar Pradesh),3,3
+Scotland(Caithness),3,1
+"Canada(NWT,MacKenzie)",3,3
+Arabian Pen.States,3,2
+Virginia,3,3
+Argentina(La Rioja),3,2
+England(Essex),3,2
+Kansas,3,2
+China(Hupei),3,1
+France(Sarthe),3,1
+India(Madhya Pradesh),3,1
+USA(Appalachian Bn.),2,2
+Australia(Victoria),2,2
+Australia(W.Australia),2,1
+S.Ireland(Dublin),2,1
+S.Ireland(Roscommon),2,1
+S.Ireland(Cork),2,1
+S.Ireland(Galway),2,1
+South America,2,1
+S.Ireland(Kildare),2,1
+New Zealand,2,1
+New Mexico,2,1
+England(Somerset),2,1
+Czech republic,2,1
+Atlantic(Falkland Trough),2,1
+Russia(European),1,1
+"France(Alpes,Maritimes)",1,1
+France(Lorraine),1,1
+USSR(Permsk Oblast),1,1
+China(Ningsia Hui),1,1
+USA(Midwest),1,1
+France(Loire),1,1
+USA(Eastern),1,1
+W.Germany(Hesse),1,1
+Canada(British Columbia),1,1
+Australia(Queensland),1,1
+Brazil(Goias),1,1
+India(Karnataka),1,1
+Wales(Denbighshire),1,1
+Switzerland,1,1
+Canada(Alberta),1,1
+Scotland(Grampian),1,1
+India(West Bengal),1,1
+Brazil(Maranhao),1,1
+France(Aquitaine),1,1
+Brazil(Para),1,1
+India(Delhi),1,1
+Brazil(Pernambuco),1,1
+Argentina(Santa Cruz),1,1

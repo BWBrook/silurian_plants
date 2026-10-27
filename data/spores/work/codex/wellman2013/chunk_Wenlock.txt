@@ -1,0 +1,197 @@
+   435	Wenlock
+   436	Laurentia – USA: Aremopyra brevicosta, Artemopyra radiata, Confossuspora reniforma,
+   437	
+   438	Laevolancis divellomedium, Stegambiquadrella contenta (Burgess & Richardson 1991, 1995;
+   439	
+   440	Strother 1991; Strother 1993; Strother & Traverse 1979; Wellman & Richardson 1993).
+   441	
+   442	Laurentia – UK – Scotland: Ambitisporites avitus, A. dilutus, Cheilotetras caledonica,
+   443	
+   444	Dyadospora murusattenuata, D. murusdensa, Laevolancis divellomedium, L. plicata, Moyeria
+   445	
+   446	cabottii, Pseudodyadospora petasus, Rimosotetras problematica, Tetrahedraletes medinensis
+   447	
+   448	(Wellman & Richardson 1993).
+   449	
+   450	Avalonia – Ireland: Ambitisporites avitus, A. dilutus, Archaeozonotriletes chulus nanus,
+   451	
+   452	Artemopyra brevicosta, Dyadospora murusattenuata, Hispanaediscus verrucata, Laevolancis
+   453	
+   454	divellomedia, L. plicata, Tetrahedraletes medinensis (Aldridge et al. 1979a, b; Emo & Smith
+   455	
+   456	1978; Wellman & Richardson 1993; Williams et al. 1996).
+   457	
+   458	Avalonia – UK: Ambitisporites dilutus, Artemopyra brevicosta, Dyadospora murusattenuata, D.
+   459	
+   460	murusdensa, Laevolancis divellomedia, Retusotriletes warringtonii, Rimosotetras problematica,
+   461	
+   462	Tetrahedraletes medinensis, T. medinensis medinensis (Burgess & Richardson 1991; Dorning
+   463	
+   464	1983; Richardson & Lister 1969; Wellman & Richardson 1993).
+   465	
+   466	Avalonia – UK: Archaeozonotriletes chulus nanus (Aldridge et al. 1979a, b).
+   467	
+   468	Peri-Gondwana (Armorica) – France: Ambitisporites avitus (Deunff & Chateauneuf 1976).
+   469	
+   470	Peri-Gondwana (Iberia) – Spain: Ambitisporites avitus, A. dilutus, Archaeozonotriletes chulus,
+   471	
+   472	Archaicusporites asturicus, Convolutispora sanpetrensis, Laevolancis divellomedium,
+   473	
+   474	Quadrisporites granulatus, Q. variabilis, Retusotriletes abundo, R. minor, R. warringtonii,
+   475	
+   476	Scylaspora vetusta, Synorisporites verrucatus (Richardson et al. 2001; Rodríguez 1978a–c,
+   477	
+   478	1983).
+   479	SW Gondwana – Saudi Arabia: Ambitisporites avitus, Dyadospora murusdensa,
+   480	
+   481	Emphanisporites neglectus, Laevolancis divellomedium, Quadrisporites variabilis, Scylaspora
+   482	
+   483	chartulata, Synorisporites verrucatus, Tetrahedraletes medinensis (Rubinstein & Steemans
+   484	
+   485	2002; Steemans 1995).
+   486	
+   487	Southern Gondwana – Libya: Ambitisporites avitus, A. dilutus, A. tripapillatus,
+   488	
+   489	Apiculiretusispora spicula, A. synorea, Archaeozonotriletes chulus chulus, A. chulus nanus,
+   490	
+   491	Artemopyra brevicosta, A. urubuense, Coronaspora subornata, Dyadospora murusattenuata,
+   492	
+   493	Emphanisporites neglectus, E. protoannulatus, E. protophanus, E. rotatus, E. splendens,
+   494	
+   495	Hispanaediscus verrucatus, Laevolancis divellomedium, Quadrisporites variabilis, Retusotriletes
+   496	
+   497	abundo, R. delicatus, R. dubius, R. frivolus, R. goensis, R. minor, R. warringtonii, Scylaspora
+   498	
+   499	chartulata, S. distincta, S. vetusta, Synorisporites verrucatus, Tetrahedraletes medinensis,
+   500	
+   501	Tetraletes granulatus (Beck & Strother 2008; Burgess & Richardson 1991, 1995; Kermandji
+   502	
+   503	2007; Richardson & Ioannides 1973; Richardson et al. 2001; Rodríguez 1983; Rubinstein &
+   504	
+   505	Steemans 2002; Steemans et al. 1996; Steemans et al. 2008; Tekbali & Wood 1991; Wellman
+   506	
+   507	1993; Wellman & Richardson 1993).
+   508	
+   509	Wenlock (Sheinwoodian)
+   510	Laurentia – USA: Abditusdyadus laevigatus, Ambitisporites avitus, Dyadospora
+   511	
+   512	murusattenuata, Laevolancis divellomedia, Tetrahedraletes medinensis, Velatitetras rugosa
+   513	
+   514	(Beck & Strother 2008).
+   515	
+   516	Laurentia – UK-Scotland: Ambitisporites avitus, A. dilutus, Cheilotetras caledonica,
+   517	
+   518	Laevolancis divellomedia, Pseudodyadospora petasus, Rimosotetras problematica,
+   519	
+   520	Tetrahedraletes medinensis (Wellman 1993).
+   521	Baltica – Norway: Ambitisporites avitus, A. dilutus, Quadrisporites variabilis, Tetrahedraletes
+   522	
+   523	medinensis, Synorisporites libycus (Smelror 1987, 1990; Steemans et al. 1996; Wellman &
+   524	
+   525	Richardson 1993).
+   526	
+   527	Baltica – Sweden: Ambitisporites dilutus, Synorisporites libycus. (Hagström 1997).
+   528	
+   529	Avalonia – Nova Scotia, Canada: Ambitisporites avitus, A. dilutus, Laevolancis divellomedia,
+   530	
+   531	L. plicata, Tetrahedraletes medinensis (Beck & Strother 2001).
+   532	
+   533	Avalonia – Ireland: Tetrahedraletes medinensis (Maziane-Serraj et al. 2000; Smith 1975;
+   534	
+   535	Strother 1991).
+   536	
+   537	Avalonia – UK: Ambitisporites avitus, A. dilutus, Archaeozonotriletes chulus chulus, A. chulus
+   538	
+   539	nanus, Dyadospora murusattenuata, D. murusdensa, Laevolancis divellomedium, L. plicata,
+   540	
+   541	Tetrahedraletes medinensis (Burgess & Richardson 1991, 1995).
+   542	
+   543	Western Gondwana- Iraq: Ambitisporites avitus, A. dilutus, Archaeozonotriletes chulus,
+   544	
+   545	Retusotriletes warringtonii (Al-Ameri et al. 1991).
+   546	
+   547	Wenlock (Homerian)
+   548	Laurentia – UK – Scotland: Ambitisporites avitus, A. dilutus, Archaeozonotriletes chulus,
+   549	
+   550	Artemopyra brevicosta, Cheilotetras caledonica, Dyadospora murusattenuata, D. murusdensa,
+   551	
+   552	Hispanaediscus lamontii, H. wenlockensis, Laevolancis divellomedium, L. plicata, Pachytetras
+   553	
+   554	rugosa, Pseudodyadospora petasus, Retusotriletes maculatus, Tetrahedraletes medinensis
+   555	
+   556	(Burgess & Richardson 1995; Marshall 1991; Richardson 1996; Steemans et al. 2000; Wellman
+   557	
+   558	1993).
+   559	
+   560	Baltica – Sweden: Ambitisporites dilutus, Cymbohilates variabilis, Laevolancis divellomedia,
+   561	
+   562	Tetrahedraletes medinensis (Hagström 1997).
+   563	Avalonia – Nova Scotia, Canada: Ambitisporites avitus, A. dilutus, Chelinospora textilis,
+   564	
+   565	Hispanaediscus verrucatus, Insolisporites bassettii, Laevolancis divellomedia, L. plicata,
+   566	
+   567	Quadrisporites variabilis, Tetrahedraletes medinensis, Vermiverruspora rumneyi (Beck &
+   568	
+   569	Strother 2001).
+   570	
+   571	Avalonia – Ireland: Archaeozonotriletes chulus nanus (Smith 1979).
+   572	
+   573	Avalonia – UK: Ambitisporites avitus, A. dilutus, Archaeozonotriletes chulus chulus, A. chulus
+   574	
+   575	nanus, Artemopyra brevicosta, A. radiata, A. rugaticosta, A. temericosta, Cheilotetras
+   576	
+   577	caledonica, Chelinospora vermoluta, Concentricosisporites saggitarius, Confossuspora
+   578	
+   579	reniforma, Dyadospora murusattenuata, D. murusdensa, Emphanisporites protophanus,
+   580	
+   581	Hispanaediscus lamontii, H. rugulatus, H. verrucatus, H. wenlockensis, Insolisporites
+   582	
+   583	anchistinus, I. bassettii, Laevolancis divellomedia, L. plicata, Pachytetras rugosa, Scylaspora
+   584	
+   585	chartulata, S. downiei, S. scipta, Tetrahedraletes medinensis, T. medinensis medinensis,
+   586	
+   587	Velatitetras cristata, Vermiverruspora rumneyi (Beck & Strother 2001, 2008; Burgess &
+   588	
+   589	Richardson 1991, 1995; Dufka 1995; Richardson & Lister 1969; Rubinstein & Steemans 2002;
+   590	
+   591	Steemans et al. 2000; Wellman & Richardson 1993).
+   592	
+   593	Peri-Gondwana (Perunica) – Czech Republic: Ambitisporites avitus, A. dilutus,
+   594	
+   595	Archaeozonotriletes chulus nanus, Artemopyra brevicosta, A. radiata, A. rugaticosta,
+   596	
+   597	Confossuspora reniforma, Dyadospora murusattenuata, Emphanisporites protophanus,
+   598	
+   599	Hispanaediscus verrucatus, Laevolancis divellomedium, L. plicata, Rugosisporites kozlicus,
+   600	
+   601	Scylaspora chartulata, S. vetusta, Synorisporites maculosus, Tetrahedraletes medinensis (Dufka
+   602	
+   603	1995; Richardson et al. 2001; Rubinstein & Steemans 2002).
+   604	
+   605	Western Gondwana – Iraq: Ambitisporites avitus, A. dilutus, Archaeozonotriletes chulus,
+   606	
+   607	Retusotriletes warringtonii (Al-Ameri et al. 1991).
+   608	SW Gondwana – Saudi Arabia: Ambitisporites avitus, A. dilutus, Archaeozonotriletes chulus,
+   609	
+   610	Artemopyra rugaticosta, Dyadospora murusattenuata D. murusdensa, Hispanaediscus
+   611	
+   612	wenlockensis, Imperfectotriletes patinatus, I. vavrdovae, Laevolancis divellomedia, L. plicata,
+   613	
+   614	Pseudodyadospora petasus, Rimosotetras problemtica, Tetrahedraletes medinensis, Velatitetras
+   615	
+   616	rugosa (Wellman et al. 2000a, b).
+   617	
+   618	Southern Gondwana – Libya: Ambitisporites avitus, Archaeozonotriletes chulus chulus,
+   619	
+   620	Artemopyra brevicosta, Synorisporites libycus (Richardson 1996).
+   621	
+   622	Southern Gondwana – Algeria: Ambitisporites avitus, A. dilutus, Archaeozonotriletes chulus
+   623	
+   624	chulus, A. chulus nanus, Emphanisporites neglectus, E. protophanus, Laevolancis divellomedia,
+   625	
+   626	Retusotriletes abundo, Scylaspora distincta, S. kozlica, S. vetusta (Kermandji 2007).
+   627	
+   628	Eastern Gondwana – Argentina: Ambitisporites avitus, A. dilustus, Emphanisporites rotates
+   629	
+   630	(Rubinstein & Brussa 1999).
+   631	

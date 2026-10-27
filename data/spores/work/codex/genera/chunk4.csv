@@ -1,0 +1,108 @@
+genus,n_rows,n_docs,species_sample,palynodata_min_ma,palynodata_max_ma
+Foraminisporis,2,2,sp,280.0,570.0
+Cosmosporites,2,2,velatus; sp,345.0,395.0
+Zonate spore,2,2,sp,383.667,395.0
+Aptera,2,1,glabra,421.667,435.0
+Sphenophyllostachys,2,1,sp; majus,230.0,570.0
+Lebachia,2,2,venusta,230.0,570.0
+Cystosporites,2,2,giganteus,230.0,570.0
+Corrugitriletes,2,1,radiatus,321.894,478.0
+Converrucosisporites,2,2,sp; parvinodosus,345.0,395.0
+Megatriletes,2,2,,370.0,500.0
+Oocampsa,2,2,catheta,345.0,395.0
+Chelinozonate,2,1,,387.0,395.0
+Reticulate,2,2,Cryptospore; monads,387.0,414.0
+Acanthomesotriletes,2,1,sp,435.0,500.0
+Eogaspesiea,2,2,gracilis,370.0,395.0
+Stenozonomezotriletes,2,1,laxus,478.333,500.0
+Cordaitina,2,2,sp; convallata,230.0,500.0
+Bryophytes,2,1,,435.0,570.0
+Ottawina,2,1,sp,370.0,395.0
+Stellapollenites,2,1,talchirensis; ombelaensis,230.0,570.0
+Pullovicenites,2,2,devonicus,314.0,408.333
+Hilate cryptospore,2,2,"type A Dufk.,1995; genus a sp.1 Burg.& Rich.,199",395.0,435.0
+Jugisporis,2,2,singularis,372.666,387.0
+Archemicroccocus,2,1,esthoniensis,395.0,435.0
+Micaspora,2,1,spinifera,387.0,389.666
+Gneudnaspora,2,2,divellomedium,364.0,395.0
+Acontotetras,2,2,inconspicuis; gotlandica,389.333,405.0
+Acanthozonotriletes,2,1,vulgatus; aculeatus,345.0,395.0
+Hepaticeae,2,1,,435.0,570.0
+Gen.nov.,2,1,inframurinatus,394.0,395.0
+Lahirites,1,1,sp,230.0,570.0
+Monopapillate,1,1,monads,387.0,395.0
+Eurypterus,1,1,sp,407.666,417.0
+Acanthotrohotriletes,1,1,paryispinosus,345.0,395.0
+Rugupolarpollenites,1,1,,65.0,395.0
+Paleoperisaccus,1,1,verriculatus,435.0,514.0
+Laevigati,1,1,,115.667,435.0
+Granatriletes,1,1,primus,370.0,395.0
+Cycadeoidea,1,1,,65.0,570.0
+Naiaditaspora,1,1,sp,370.0,408.333
+Sullisaccites,1,1,sp,230.0,570.0
+Stachyophyton,1,1,yunnanense,345.0,395.0
+Spinosa,1,1,monads,387.0,395.0
+Clavatetracolpites,1,1,,65.0,395.0
+Phyllocladus,1,1,,5.0,482.6
+Monad,1,1,,432.0,435.0
+Klausipollenites,1,1,sp,435.0,500.0
+Emphanoid,1,1,monads,387.0,404.0
+Zonate miospore,1,1,,378.0,395.0
+Pyramidosporites,1,1,sp,423.0,450.0
+Heterotriletes,1,1,priscus,345.0,395.0
+Ernestiodendron,1,1,,230.0,570.0
+Cycadopsida,1,1,,230.0,570.0
+Pteridophytic forms,1,1,,360.0,395.0
+Tracheid,1,1,,280.0,435.0
+Hydrozooaires,1,1,sp,435.0,500.0
+Bacutriletes,1,1,,65.0,570.0
+Lepidozonotriletes,1,1,,318.0,395.0
+Costaspora,1,1,,318.0,395.0
+Protopitys,1,1,,345.0,395.0
+Discinites,1,1,,345.0,395.0
+Alcicornopteris,1,1,,230.0,570.0
+Scolecopteris,1,1,,345.0,395.0
+Myricoidites,1,1,,280.0,395.0
+Botrychium,1,1,,0.0,395.0
+Gleichenia,1,1,angulata,345.0,435.0
+Hepaticaephyton,1,1,polonicum,435.0,500.0
+Falcisporites,1,1,australis,387.0,414.0
+Nupharipollis,1,1,,5.0,482.6
+Zonati,1,1,,280.0,395.0
+Dodonaea,1,1,,5.0,482.6
+Consoliduspollenites,1,1,,65.0,395.0
+Secarisporites,1,1,sp,280.0,395.0
+Euzoancorotriletes,1,1,,345.0,395.0
+Stenotriletes,1,1,,314.0,395.0
+Hoegiasaccites,1,1,transitus,230.0,570.0
+Varlamoffites,1,1,ovatus,230.0,570.0
+Capillatisporites,1,1,mirabilis,370.0,395.0
+Spinitricolpites,1,1,latispinosus,423.0,429.0
+Sphenopteridium,1,1,keilhanii,345.0,395.0
+Tanaitus,1,1,furchihasta,345.0,395.0
+Podocarpus,1,1,spicatus,5.0,482.6
+Lygodium,1,1,,5.0,482.6
+Murornate,1,1,tetrad,414.0,415.333
+Taeniaesporites,1,1,,65.0,570.0
+Latizolabitriletes,1,1,,345.0,395.0
+Striatopodocarpites,1,1,sp,267.0,500.0
+Diversisaccates,1,1,macropterus,345.0,395.0
+Colpogenys,1,1,sp,370.0,395.0
+Uskiella,1,1,spargans,345.0,395.0
+Spinosisporites,1,1,devonicus,360.0,395.0
+Rugulatisporites,1,1,micraulaxus,5.0,482.6
+Quercoidites,1,1,,141.0,800.0
+Taxodiaceae,1,1,,280.0,395.0
+Inaperturopollenites,1,1,hiatus,280.0,395.0
+Pinaceae,1,1,,280.0,395.0
+Microfossil,1,1,sp.A,436.666,440.0
+Granulati,1,1,"sp. Hoeg,1942",392.0,395.0
+Corisaccites,1,1,vanus,230.0,570.0
+Cymbotrilates,1,1,"sp.B Well.et al,2000",383.667,389.333
+Glossopteris,1,1,sp,345.0,395.0
+Chelinohrilates,1,1,erraticus,383.667,389.333
+Sinorisporites,1,1,tripapillatus,388.2,395.0
+Barrandeina,1,1,dusliana,345.0,395.0
+Wilsonites,1,1,,230.0,570.0
+Osmundacidites,1,1,sp,395.0,404.0
+Jugasporites,1,1,ovatus,230.0,570.0

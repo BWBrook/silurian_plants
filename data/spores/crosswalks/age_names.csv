@@ -1,0 +1,190 @@
+age_name,n_rows,ics_oldest,ics_youngest,confidence,basis,source
+Devonian,3017,Lochkovian,Famennian,high,Whole Devonian System,ICS v2024/12 stage and series list (data/timescale.csv)
+Early Devonian,2715,Lochkovian,Emsian,high,Lower Devonian Series,ICS v2024/12 stage and series list (data/timescale.csv)
+Siegenian,1404,Pragian,Emsian,medium,Siegenian overlaps the Pragian and the lower Emsian: traditional Siegen-Ems boundary lies well above the Emsian GSSP (P. kitabicus),"Denayer & Mottequin 2024, Geologica Belgica 27 (first c. 100,000 of 240,000 characters read)"
+Gedinnian,1379,Lochkovian,Lochkovian,medium,"Gedinnian used as the Lochkovian-equivalent stage name, the standard correlation; the Ardenne type Gedinnian base is diachronous and partly Silurian (Denayer & Mottequin 2024), so Ardenne records may reach the Pridoli. Narrowed from Pridoli-Lochkovian by Claude Opus 5.5 at review.","Denayer & Mottequin 2024, Geologica Belgica 27 (first c. 100,000 of 240,000 characters read)"
+Late Gedinnian,858,Lochkovian,Lochkovian,medium,Middle to late Gedinnian is about Lochkovian; the Gedinnian-Siegenian lithological boundary is diachronous and top may touch basal Pragian,"Denayer & Mottequin 2024, Geologica Belgica 27 (first c. 100,000 of 240,000 characters read)"
+Paleozoic,651,,,low,"Too broad: whole Paleozoic, Cambrian to Permian",none needed (not mapped)
+Emsian,501,Emsian,Emsian,high,"Emsian; the traditional Rhenish Emsian base lies above the ICS Emsian GSSP, so traditional Emsian sits inside the ICS stage","ICS v2024/12 stage and series list (data/timescale.csv); Denayer & Mottequin 2024, Geologica Belgica 27 (first c. 100,000 of 240,000 characters read)"
+Middle Devonian,499,Eifelian,Givetian,high,Middle Devonian Series,ICS v2024/12 stage and series list (data/timescale.csv)
+Ludlovian,493,Gorstian,Ludfordian,high,Ludlow Series,ICS v2024/12 stage and series list (data/timescale.csv)
+Pridolian,398,Pridoli,Pridoli,high,Pridoli Series (a single stage in the table),ICS v2024/12 stage and series list (data/timescale.csv)
+Early Siegenian,380,Pragian,Pragian,medium,Lower Siegenian is about the Pragian; Gedinnian-Siegenian lithological boundary is diachronous,"Denayer & Mottequin 2024, Geologica Belgica 27 (first c. 100,000 of 240,000 characters read)"
+Silurian,368,Rhuddanian,Pridoli,high,Whole Silurian System,ICS v2024/12 stage and series list (data/timescale.csv)
+Carboniferous,329,Tournaisian,Tournaisian,low,Unit extends beyond the table end; Tournaisian is the only stage in the table; clamped to the end stage,ICS v2024/12 stage and series list (data/timescale.csv); unit not otherwise checked
+Early Gedinnian,313,Lochkovian,Lochkovian,medium,"Gedinnian used as the Lochkovian-equivalent stage name, the standard correlation; the Ardenne type Gedinnian base is diachronous and partly Silurian (Denayer & Mottequin 2024), so Ardenne records may reach the Pridoli. Narrowed from Pridoli-Lochkovian by Claude Opus 5.5 at review.","Denayer & Mottequin 2024, Geologica Belgica 27 (first c. 100,000 of 240,000 characters read)"
+Lochkovian,309,Lochkovian,Lochkovian,high,ICS stage name or sub-division within the Lochkovian,ICS v2024/12 stage and series list (data/timescale.csv)
+Late Lochkovian,248,Lochkovian,Lochkovian,high,ICS stage name or sub-division within the Lochkovian,ICS v2024/12 stage and series list (data/timescale.csv)
+Downtonian,229,Ludfordian,Lochkovian,medium,"Downton Group of the Anglo-Welsh Basin: late Ludlow to Pridoli to earliest Lochkovian (diachronous, lithostratigraphic in part)","Barclay et al. 2015, BGS Research Report RR/14/02 (full text read)"
+Late Gothlandian,212,Gorstian,Pridoli,low,Late Gothlandian taken as Ludlow to Pridoli; French three-fold usage not verified,none checked
+Ashgillian,201,Katian,Hirnantian,high,Ashgill Series is the Pusgillian to Rawtheyan (upper Katian) plus the Hirnantian,"Molyneux et al. 2023, Geol. Soc. Spec. Publ. 532: 191-266 (full text read)"
+Ordovician,189,Tremadocian,Hirnantian,high,Whole Ordovician System,ICS v2024/12 stage and series list (data/timescale.csv)
+Llandoverian,181,Rhuddanian,Telychian,high,Llandovery Series,ICS v2024/12 stage and series list (data/timescale.csv)
+Wenlockian,178,Sheinwoodian,Homerian,high,Wenlock Series,ICS v2024/12 stage and series list (data/timescale.csv)
+Early Lochkovian,177,Lochkovian,Lochkovian,high,ICS stage name or sub-division within the Lochkovian,ICS v2024/12 stage and series list (data/timescale.csv)
+Early Emsian,161,Emsian,Emsian,high,"Emsian; the traditional Rhenish Emsian base lies above the ICS Emsian GSSP, so traditional Emsian sits inside the ICS stage","ICS v2024/12 stage and series list (data/timescale.csv); Denayer & Mottequin 2024, Geologica Belgica 27 (first c. 100,000 of 240,000 characters read)"
+Late Ludlovian,156,Ludfordian,Ludfordian,medium,Ludlow has two stages; late Ludlow is the Ludfordian,ICS v2024/12 stage and series list (data/timescale.csv)
+Early Downtonian,134,Ludfordian,Pridoli,medium,Lower Downtonian (Temeside Mudstone and equivalents): late Ludlow to Pridoli,"Barclay et al. 2015, BGS Research Report RR/14/02 (full text read)"
+Early Pridolian,123,Pridoli,Pridoli,high,Pridoli Series (a single stage in the table),ICS v2024/12 stage and series list (data/timescale.csv)
+Dittonian,122,Lochkovian,Lochkovian,medium,"Ditton Group is the St Maughans or Freshwater West Formation, Lochkovian; the youngest Milford Haven beds reach latest Lochkovian to possibly earliest Pragian","Barclay et al. 2015, BGS Research Report RR/14/02 (full text read)"
+Rhuddanian,120,Rhuddanian,Rhuddanian,high,ICS stage or sub-division of the Rhuddanian,ICS v2024/12 stage and series list (data/timescale.csv)
+Givetian,119,Givetian,Givetian,high,ICS stage name or sub-division within the Givetian,ICS v2024/12 stage and series list (data/timescale.csv)
+ ,118,,,low,Age name is blank (a single space); no unit to map,none needed (not mapped)
+Early Gothlandian,108,Rhuddanian,Telychian,low,Early Gothlandian taken as Llandovery; French three-fold usage not verified,none checked
+Eifelian,107,Eifelian,Eifelian,high,ICS stage name or sub-division within the Eifelian,ICS v2024/12 stage and series list (data/timescale.csv)
+Late Wenlockian,100,Homerian,Homerian,medium,Wenlock has two stages; late Wenlock is the Homerian,ICS v2024/12 stage and series list (data/timescale.csv)
+Tournaisian,89,Tournaisian,Tournaisian,high,ICS stage name or sub-division within the Tournaisian,ICS v2024/12 stage and series list (data/timescale.csv)
+Permian,73,Tournaisian,Tournaisian,low,Wholly younger than the table (Permian); clamped to the end stage Tournaisian,ICS v2024/12 stage and series list (data/timescale.csv); unit not otherwise checked
+Late Llandoverian,73,Aeronian,Telychian,medium,Upper Llandovery is the Fronian plus Telychian; Fronian base at the sedgwickii Biozone (upper Aeronian),"Davies et al. 2013, Geol. Mag. 150: 300-332 (full text read); ICS v2024/12 stage and series list (data/timescale.csv)"
+Late Silurian,72,Gorstian,Pridoli,medium,Ludlow plus Pridoli; informal epoch,ICS v2024/12 stage and series list (data/timescale.csv)
+Early Ludlovian,70,Gorstian,Gorstian,medium,Ludlow has two stages; early Ludlow is the Gorstian,ICS v2024/12 stage and series list (data/timescale.csv)
+Late Homerian,69,Homerian,Homerian,high,ICS stage or sub-division of the Homerian,ICS v2024/12 stage and series list (data/timescale.csv)
+Early Paleozoic,68,Tremadocian,Pridoli,low,Cambrian to Silurian (Lower Paleozoic); very broad; Cambrian part clamped at Tremadocian,ICS v2024/12 stage and series list (data/timescale.csv); unit not otherwise checked
+Homerian,68,Homerian,Homerian,high,ICS stage or sub-division of the Homerian,ICS v2024/12 stage and series list (data/timescale.csv)
+Famennian,66,Famennian,Famennian,high,ICS stage name or sub-division within the Famennian,ICS v2024/12 stage and series list (data/timescale.csv)
+Early Carboniferous,65,Tournaisian,Tournaisian,low,Unit extends beyond the table end; Tournaisian is the only stage in the table; clamped to the end stage,ICS v2024/12 stage and series list (data/timescale.csv); unit not otherwise checked
+Frasnian,64,Frasnian,Frasnian,high,ICS stage name or sub-division within the Frasnian,ICS v2024/12 stage and series list (data/timescale.csv)
+Middle Pridolian,63,Pridoli,Pridoli,high,Pridoli Series (a single stage in the table),ICS v2024/12 stage and series list (data/timescale.csv)
+Early Givetian,63,Givetian,Givetian,high,ICS stage name or sub-division within the Givetian,ICS v2024/12 stage and series list (data/timescale.csv)
+Late Downtonian,63,Pridoli,Lochkovian,medium,Upper Downtonian (Raglan Mudstone and equivalents): Pridoli to earliest Lochkovian; Silurian-Devonian boundary imprecise within the ORS,"Barclay et al. 2015, BGS Research Report RR/14/02 (full text read)"
+Middle Siegenian,59,Pragian,Emsian,low,"Middle Siegenian: late Pragian, possibly reaching the lower Emsian; three-fold Siegenian division not checked","Denayer & Mottequin 2024, Geologica Belgica 27 (first c. 100,000 of 240,000 characters read)"
+Middle Lochkovian,59,Lochkovian,Lochkovian,high,ICS stage name or sub-division within the Lochkovian,ICS v2024/12 stage and series list (data/timescale.csv)
+Mississippian,58,Tournaisian,Tournaisian,low,Unit extends beyond the table end; Tournaisian is the only stage in the table; clamped to the end stage,ICS v2024/12 stage and series list (data/timescale.csv); unit not otherwise checked
+Late Ordovician,56,Sandbian,Hirnantian,high,Upper Ordovician Series,ICS v2024/12 stage and series list (data/timescale.csv)
+Whiterock,55,Dapingian,Darriwilian,low,"Whiterockian (N. America) starts at the base of the Dapingian per an incidental statement; upper limit assumed lower Darriwilian; all 55 rows are one New Zealand Early Miocene document (Palynodata doc 10330), an entry error: exclude these rows","Molyneux et al. 2023, Geol. Soc. Spec. Publ. 532: 191-266 (full text read) (incidental statement only); Palynodata documents file (title and age of doc 10330)"
+Late Miocene,55,Tournaisian,Tournaisian,low,"Wholly younger than the table (Miocene), clamped to Tournaisian; all 55 rows pair it with Whiterock in one New Zealand Early Miocene document (Palynodata doc 10330), an entry error: exclude these rows",ICS v2024/12 stage and series list (data/timescale.csv); Palynodata documents file (title and age of doc 10330)
+Gorstian,53,Gorstian,Gorstian,high,ICS stage or sub-division of the Gorstian,ICS v2024/12 stage and series list (data/timescale.csv)
+Caradocian,53,Sandbian,Katian,high,"Caradoc Series is Sandbian to lower Katian (Aurelucian, Burrellian, Cheneyan, Streffordian)","Molyneux et al. 2023, Geol. Soc. Spec. Publ. 532: 191-266 (full text read)"
+Early Llandoverian,53,Rhuddanian,Aeronian,medium,"Lower Llandovery is the Rhuddanian in the 1970 three-fold scheme, Rhuddanian-Aeronian in a two-fold one","Davies et al. 2013, Geol. Mag. 150: 300-332 (full text read); ICS v2024/12 stage and series list (data/timescale.csv)"
+Pragian,52,Pragian,Pragian,high,ICS stage name or sub-division within the Pragian,ICS v2024/12 stage and series list (data/timescale.csv)
+Ludfordian,51,Ludfordian,Ludfordian,high,ICS stage or sub-division of the Ludfordian,ICS v2024/12 stage and series list (data/timescale.csv)
+Early Dittonian,51,Lochkovian,Lochkovian,medium,"Ditton Group is the St Maughans or Freshwater West Formation, Lochkovian; the youngest Milford Haven beds reach latest Lochkovian to possibly earliest Pragian","Barclay et al. 2015, BGS Research Report RR/14/02 (full text read)"
+Coblenzian,49,Pragian,Emsian,low,"Coblenz stage taken as Siegenian plus Emsian (Lower Devonian above the Gedinnian), unverified; source read notes only Koblenz Quartzite = Ems Quartzite",none checked (Denayer & Mottequin 2024 read only for Koblenz Quartzite = Emsquartzit)
+Middle Pennsylvanian,40,Tournaisian,Tournaisian,low,Wholly younger than the table (Carboniferous above the Tournaisian); clamped to the end stage Tournaisian,ICS v2024/12 stage and series list (data/timescale.csv); unit not otherwise checked
+Early Eifelian,37,Eifelian,Eifelian,high,ICS stage name or sub-division within the Eifelian,ICS v2024/12 stage and series list (data/timescale.csv)
+Early Wenlockian,36,Sheinwoodian,Sheinwoodian,medium,Wenlock has two stages; early Wenlock is the Sheinwoodian,ICS v2024/12 stage and series list (data/timescale.csv)
+Arenigian,34,Floian,Darriwilian,medium,Arenig Series is Floian to lower Darriwilian (Fennian reaches Dapingian and lower Darriwilian),"Molyneux et al. 2023, Geol. Soc. Spec. Publ. 532: 191-266 (full text read)"
+Middle Gedinnian,32,Lochkovian,Lochkovian,medium,Middle to late Gedinnian is about Lochkovian; the Gedinnian-Siegenian lithological boundary is diachronous and top may touch basal Pragian,"Denayer & Mottequin 2024, Geologica Belgica 27 (first c. 100,000 of 240,000 characters read)"
+Sheinwoodian,32,Sheinwoodian,Sheinwoodian,high,ICS stage or sub-division of the Sheinwoodian,ICS v2024/12 stage and series list (data/timescale.csv)
+Early Telychian,29,Telychian,Telychian,high,ICS stage or sub-division of the Telychian,ICS v2024/12 stage and series list (data/timescale.csv)
+Recent,27,Tournaisian,Tournaisian,low,Wholly younger than the table (Cenozoic); clamped to the end stage Tournaisian,ICS v2024/12 stage and series list (data/timescale.csv); unit not otherwise checked
+Middle Gothlandian,27,Sheinwoodian,Ludfordian,low,Middle Gothlandian taken as Wenlock to Ludlow; French three-fold usage not verified,none checked
+Early Gorstian,27,Gorstian,Gorstian,high,ICS stage or sub-division of the Gorstian,ICS v2024/12 stage and series list (data/timescale.csv)
+Early Silurian,25,Rhuddanian,Telychian,medium,Llandovery Series; a two-fold usage (Early = Llandovery plus Wenlock) would reach the Homerian,ICS v2024/12 stage and series list (data/timescale.csv)
+Late Eifelian,24,Eifelian,Eifelian,high,ICS stage name or sub-division within the Eifelian,ICS v2024/12 stage and series list (data/timescale.csv)
+Pennsylvanian,24,Tournaisian,Tournaisian,low,Wholly younger than the table (Carboniferous above the Tournaisian); clamped to the end stage Tournaisian,ICS v2024/12 stage and series list (data/timescale.csv); unit not otherwise checked
+Visean,24,Tournaisian,Tournaisian,low,Wholly younger than the table (Carboniferous above the Tournaisian); clamped to the end stage Tournaisian,ICS v2024/12 stage and series list (data/timescale.csv); unit not otherwise checked
+Late Ashgillian,23,Katian,Hirnantian,medium,Rawtheyan (Ka4) plus Hirnantian,"Molyneux et al. 2023, Geol. Soc. Spec. Publ. 532: 191-266 (full text read)"
+Tremadocian,23,Tremadocian,Tremadocian,high,Tremadoc Series equals the Tremadocian,"Molyneux et al. 2023, Geol. Soc. Spec. Publ. 532: 191-266 (full text read); ICS v2024/12 stage and series list (data/timescale.csv)"
+Middle Ludlovian,22,Gorstian,Ludfordian,low,Middle Ludlow straddles the Gorstian-Ludfordian boundary,ICS v2024/12 stage and series list (data/timescale.csv)
+Middle Ordovician,22,Dapingian,Darriwilian,medium,ICS Middle Ordovician is Dapingian-Darriwilian; older regional usage varies,ICS v2024/12 stage and series list (data/timescale.csv)
+Late Aeronian,21,Aeronian,Aeronian,high,ICS stage or sub-division of the Aeronian,ICS v2024/12 stage and series list (data/timescale.csv)
+Couvinian,20,Emsian,Eifelian,medium,"Belgian Couvinian is the lower Middle Devonian stage, its base slightly older than the Eifelian base (latest Emsian) per a web-search summary of Bultynck 2006",Web-search summaries of Bultynck 2006 and Denayer 2019 (papers not opened)
+Cambrian,19,Tremadocian,Tremadocian,low,Wholly older than the table (Cambrian); clamped to the end stage Tremadocian,ICS v2024/12 stage and series list (data/timescale.csv); unit not otherwise checked
+Hirnantian,18,Hirnantian,Hirnantian,high,ICS stage,ICS v2024/12 stage and series list (data/timescale.csv)
+Llanvirnian,17,Darriwilian,Darriwilian,medium,Llanvirn Series (Abereiddian plus Llandeilian) lies within the Darriwilian; older usage may reach the upper Dapingian,"Molyneux et al. 2023, Geol. Soc. Spec. Publ. 532: 191-266 (full text read)"
+Early Rhuddanian,17,Rhuddanian,Rhuddanian,high,ICS stage or sub-division of the Rhuddanian,ICS v2024/12 stage and series list (data/timescale.csv)
+Early Homerian,16,Homerian,Homerian,high,ICS stage or sub-division of the Homerian,ICS v2024/12 stage and series list (data/timescale.csv)
+Cenozoic,16,Tournaisian,Tournaisian,low,Wholly younger than the table (Cenozoic); clamped to the end stage Tournaisian,ICS v2024/12 stage and series list (data/timescale.csv); unit not otherwise checked
+Early Cambrian,16,Tremadocian,Tremadocian,low,Wholly older than the table (Cambrian); clamped to the end stage Tremadocian,ICS v2024/12 stage and series list (data/timescale.csv); unit not otherwise checked
+Late Emsian,15,Emsian,Emsian,high,"Emsian; the traditional Rhenish Emsian base lies above the ICS Emsian GSSP, so traditional Emsian sits inside the ICS stage","ICS v2024/12 stage and series list (data/timescale.csv); Denayer & Mottequin 2024, Geologica Belgica 27 (first c. 100,000 of 240,000 characters read)"
+Middle Emsian,15,Emsian,Emsian,high,"Emsian; the traditional Rhenish Emsian base lies above the ICS Emsian GSSP, so traditional Emsian sits inside the ICS stage","ICS v2024/12 stage and series list (data/timescale.csv); Denayer & Mottequin 2024, Geologica Belgica 27 (first c. 100,000 of 240,000 characters read)"
+Early Ordovician,14,Tremadocian,Dapingian,medium,ICS Lower Ordovician is Tremadocian-Floian; older Tremadoc plus Arenig usage reaches the Dapingian,"ICS v2024/12 stage and series list (data/timescale.csv); Molyneux et al. 2023, Geol. Soc. Spec. Publ. 532: 191-266 (full text read)"
+Middle Llandoverian,14,Rhuddanian,Aeronian,low,"Middle Llandovery is the Idwian, whose base (revolutus Biozone FAD) lies below the Aeronian base, so upper Rhuddanian to Aeronian","Davies et al. 2013, Geol. Mag. 150: 300-332 (full text read); ICS v2024/12 stage and series list (data/timescale.csv)"
+Sakmarian,14,Tournaisian,Tournaisian,low,Wholly younger than the table (Permian); clamped to the end stage Tournaisian,ICS v2024/12 stage and series list (data/timescale.csv); unit not otherwise checked
+Early Aeronian,12,Aeronian,Aeronian,high,ICS stage or sub-division of the Aeronian,ICS v2024/12 stage and series list (data/timescale.csv)
+Mesozoic,12,Tournaisian,Tournaisian,low,Wholly younger than the table (Mesozoic); clamped to the end stage Tournaisian,ICS v2024/12 stage and series list (data/timescale.csv); unit not otherwise checked
+Middle Carboniferous,12,Tournaisian,Tournaisian,low,Wholly younger than the table (Carboniferous above the Tournaisian); clamped to the end stage Tournaisian,ICS v2024/12 stage and series list (data/timescale.csv); unit not otherwise checked
+Late Devonian,11,Frasnian,Famennian,high,Upper Devonian Series,ICS v2024/12 stage and series list (data/timescale.csv)
+Early Ludfordian,11,Ludfordian,Ludfordian,high,ICS stage or sub-division of the Ludfordian,ICS v2024/12 stage and series list (data/timescale.csv)
+Breconian,11,Lochkovian,Emsian,medium,"Breconian equals the Cosheston Subgroup (Senni and Brownstones formations): latest Lochkovian to Emsian, mainly Pragian-Emsian; diachronous","Barclay et al. 2015, BGS Research Report RR/14/02 (full text read)"
+Ufimian,11,Tournaisian,Tournaisian,low,Wholly younger than the table (Permian); clamped to the end stage Tournaisian,ICS v2024/12 stage and series list (data/timescale.csv); unit not otherwise checked
+Aeronian,9,Aeronian,Aeronian,high,ICS stage or sub-division of the Aeronian,ICS v2024/12 stage and series list (data/timescale.csv)
+Telychian,9,Telychian,Telychian,high,ICS stage or sub-division of the Telychian,ICS v2024/12 stage and series list (data/timescale.csv)
+Late Ludfordian,9,Ludfordian,Ludfordian,high,ICS stage or sub-division of the Ludfordian,ICS v2024/12 stage and series list (data/timescale.csv)
+Late Budnanian,8,Ludfordian,Pridoli,low,"Saharan (Algeria, Libya) palynological unit; Palynodata table puts it in the Ludlow to Pridoli interval of its scale; correlation not checked","none checked; Palynodata age table (own scale, position only)"
+Late Pridolian,7,Pridoli,Pridoli,high,Pridoli Series (a single stage in the table),ICS v2024/12 stage and series list (data/timescale.csv)
+Middle Wenlockian,7,Sheinwoodian,Homerian,low,Middle Wenlock straddles the Sheinwoodian-Homerian boundary,ICS v2024/12 stage and series list (data/timescale.csv)
+Late Llanvirnian,7,Darriwilian,Darriwilian,medium,Llanvirn Series (Abereiddian plus Llandeilian) lies within the Darriwilian; older usage may reach the upper Dapingian,"Molyneux et al. 2023, Geol. Soc. Spec. Publ. 532: 191-266 (full text read)"
+Early Old Red Sandstone,7,Gorstian,Emsian,low,"Lower Old Red Sandstone: Daugleddau Group in the Anglo-Welsh Basin is late Gorstian to Emsian; Scottish Lower ORS not checked; facies name, diachronous","Barclay et al. 2015, BGS Research Report RR/14/02 (full text read)"
+Aptian,7,Tournaisian,Tournaisian,low,Wholly younger than the table (Mesozoic); clamped to the end stage Tournaisian,ICS v2024/12 stage and series list (data/timescale.csv); unit not otherwise checked
+Clintonian,6,Telychian,Sheinwoodian,low,"North American Clinton Group of Pennsylvania and New York, taken as late Llandovery to Wenlock; Cramer et al. 2011 consulted by abstract only","Cramer et al. 2011, Lethaia 44: 185-202 (abstract only); GeoWhen (Niagaran Series 438-421.3 Ma on its older scale)"
+Middle Sheinwoodian,6,Sheinwoodian,Sheinwoodian,high,ICS stage or sub-division of the Sheinwoodian,ICS v2024/12 stage and series list (data/timescale.csv)
+Late Telychian,6,Telychian,Telychian,high,ICS stage or sub-division of the Telychian,ICS v2024/12 stage and series list (data/timescale.csv)
+Westphalian,6,Tournaisian,Tournaisian,low,Wholly younger than the table (Carboniferous above the Tournaisian); clamped to the end stage Tournaisian,ICS v2024/12 stage and series list (data/timescale.csv); unit not otherwise checked
+Late Gorstian,6,Gorstian,Gorstian,high,ICS stage or sub-division of the Gorstian,ICS v2024/12 stage and series list (data/timescale.csv)
+Late Cambrian,6,Tremadocian,Tremadocian,low,Wholly older than the table (Cambrian); clamped to the end stage Tremadocian,ICS v2024/12 stage and series list (data/timescale.csv); unit not otherwise checked
+Late Arenigian,6,Dapingian,Darriwilian,medium,Fennian Stage of the Arenig is Dapingian to lower Darriwilian,"Molyneux et al. 2023, Geol. Soc. Spec. Publ. 532: 191-266 (full text read)"
+Kosovian,5,Hirnantian,Hirnantian,medium,Kosov Formation and its Kosovian regional stage in the Prague Basin are Hirnantian,Web-search summaries of Prague Basin Kosov Formation studies (papers not opened)
+Tarannon,5,Telychian,Telychian,low,Tarannon placed at the upper Llandovery end (Telychian); Palynodata table puts it at the Telychian end of its Llandovery; not verified,"none checked; Palynodata age table (own scale, position only)"
+Early Mississippian,5,Tournaisian,Tournaisian,low,Unit extends beyond the table end; Tournaisian is the only stage in the table; clamped to the end stage,ICS v2024/12 stage and series list (data/timescale.csv); unit not otherwise checked
+Late Carboniferous,5,Tournaisian,Tournaisian,low,Wholly younger than the table (Carboniferous above the Tournaisian); clamped to the end stage Tournaisian,ICS v2024/12 stage and series list (data/timescale.csv); unit not otherwise checked
+Triassic,5,Tournaisian,Tournaisian,low,Wholly younger than the table (Mesozoic); clamped to the end stage Tournaisian,ICS v2024/12 stage and series list (data/timescale.csv); unit not otherwise checked
+Sinian,5,Tremadocian,Tremadocian,low,Wholly older than the table (Precambrian); clamped to the end stage Tremadocian,ICS v2024/12 stage and series list (data/timescale.csv); unit not otherwise checked
+Middle Silurian,5,Sheinwoodian,Ludfordian,low,"Wenlock, or Wenlock plus Ludlow in some usage; three-fold division of the Silurian is informal",ICS v2024/12 stage and series list (data/timescale.csv)
+Early Ashgillian,5,Katian,Katian,medium,"Pusgillian to Cautleyan, upper Katian","Molyneux et al. 2023, Geol. Soc. Spec. Publ. 532: 191-266 (full text read)"
+Jurassic,5,Tournaisian,Tournaisian,low,Wholly younger than the table (Mesozoic); clamped to the end stage Tournaisian,ICS v2024/12 stage and series list (data/timescale.csv); unit not otherwise checked
+Early Pragian,4,Pragian,Pragian,high,ICS stage name or sub-division within the Pragian,ICS v2024/12 stage and series list (data/timescale.csv)
+Stephanian,4,Tournaisian,Tournaisian,low,Wholly younger than the table (Carboniferous above the Tournaisian); clamped to the end stage Tournaisian,ICS v2024/12 stage and series list (data/timescale.csv); unit not otherwise checked
+Late Siegenian,4,Pragian,Emsian,medium,Upper Siegenian is late Pragian to early Emsian because the traditional Siegen-Ems boundary lies well above the ICS Emsian base,"Denayer & Mottequin 2024, Geologica Belgica 27 (first c. 100,000 of 240,000 characters read)"
+Late Rhuddanian,4,Rhuddanian,Rhuddanian,high,ICS stage or sub-division of the Rhuddanian,ICS v2024/12 stage and series list (data/timescale.csv)
+Late Eltonian,4,Gorstian,Gorstian,medium,Welsh Borderland Ludlow stages Eltonian and Bringewoodian make up the Gorstian; not verified in a source read,"none checked; Palynodata age table (own scale, position only)"
+Valentian,4,Rhuddanian,Telychian,medium,Valentian Series of Jones 1921 taken as the Llandovery; Palynodata table gives the same span as its Llandoverian,"none checked; Palynodata age table (own scale, position only)"
+Early Bringewoodian,4,Gorstian,Gorstian,medium,Welsh Borderland Ludlow stages Eltonian and Bringewoodian make up the Gorstian; not verified in a source read,"none checked; Palynodata age table (own scale, position only)"
+Middle Arenigian,4,Floian,Floian,medium,Moridunian and Whitlandian stages of the Arenig are Floian,"Molyneux et al. 2023, Geol. Soc. Spec. Publ. 532: 191-266 (full text read)"
+Fronian,4,Aeronian,Telychian,low,Fronian was defined at the sedgwickii Biozone (upper Aeronian) and succeeded by the Telychian; its top relative to the current Telychian base is not settled,"Davies et al. 2013, Geol. Mag. 150: 300-332 (full text read); Palynodata age table (own scale, position only)"
+Late Tremadocian,3,Tremadocian,Tremadocian,high,Tremadoc Series equals the Tremadocian,"Molyneux et al. 2023, Geol. Soc. Spec. Publ. 532: 191-266 (full text read); ICS v2024/12 stage and series list (data/timescale.csv)"
+Senonian,3,Tournaisian,Tournaisian,low,Wholly younger than the table (Mesozoic); clamped to the end stage Tournaisian,ICS v2024/12 stage and series list (data/timescale.csv); unit not otherwise checked
+Early Famennian,3,Famennian,Famennian,high,ICS stage name or sub-division within the Famennian,ICS v2024/12 stage and series list (data/timescale.csv)
+Late Proterozoic,3,Tremadocian,Tremadocian,low,Wholly older than the table (Precambrian); clamped to the end stage Tremadocian,ICS v2024/12 stage and series list (data/timescale.csv); unit not otherwise checked
+Early Tournaisian,3,Tournaisian,Tournaisian,high,ICS stage name or sub-division within the Tournaisian,ICS v2024/12 stage and series list (data/timescale.csv)
+Late Caradocian,3,Katian,Katian,medium,Upper Caradoc (Cheneyan and Streffordian) is lower Katian,"Molyneux et al. 2023, Geol. Soc. Spec. Publ. 532: 191-266 (full text read)"
+Late Tarannon,3,Telychian,Telychian,low,Tarannon placed at the upper Llandovery end (Telychian); Palynodata table puts it at the Telychian end of its Llandovery; not verified,"none checked; Palynodata age table (own scale, position only)"
+Borshovian,3,Lochkovian,Lochkovian,low,Podolian (Ukraine) Lower Devonian horizon; Palynodata age table places it in its Gedinnian equivalent; correlation not checked,"none checked; Palynodata age table (own scale, relative position only)"
+Late Famennian,3,Famennian,Famennian,high,ICS stage name or sub-division within the Famennian,ICS v2024/12 stage and series list (data/timescale.csv)
+Early Mesozoic,3,Tournaisian,Tournaisian,low,Wholly younger than the table (Mesozoic); clamped to the end stage Tournaisian,ICS v2024/12 stage and series list (data/timescale.csv); unit not otherwise checked
+Early Sheinwoodian,3,Sheinwoodian,Sheinwoodian,high,ICS stage or sub-division of the Sheinwoodian,ICS v2024/12 stage and series list (data/timescale.csv)
+Middle Ashgillian,3,Katian,Katian,medium,"Pusgillian to Cautleyan, upper Katian","Molyneux et al. 2023, Geol. Soc. Spec. Publ. 532: 191-266 (full text read)"
+Early Permian,3,Tournaisian,Tournaisian,low,Wholly younger than the table (Permian); clamped to the end stage Tournaisian,ICS v2024/12 stage and series list (data/timescale.csv); unit not otherwise checked
+Chortkovian,3,Lochkovian,Lochkovian,low,Podolian (Ukraine) Lower Devonian horizon; Palynodata age table places it in its Gedinnian equivalent; correlation not checked,"none checked; Palynodata age table (own scale, relative position only)"
+Early Namurian,2,Tournaisian,Tournaisian,low,Wholly younger than the table (Carboniferous above the Tournaisian); clamped to the end stage Tournaisian,ICS v2024/12 stage and series list (data/timescale.csv); unit not otherwise checked
+Precambrian,2,Tremadocian,Tremadocian,low,Wholly older than the table (Precambrian); clamped to the end stage Tremadocian,ICS v2024/12 stage and series list (data/timescale.csv); unit not otherwise checked
+Late Leintwardinian,2,Ludfordian,Ludfordian,low,Leintwardinian straddles the Gorstian-Ludfordian boundary; the late part is taken as Ludfordian; not verified in a source read,"none checked; Palynodata age table (own scale, position only)"
+Early Eltonian,2,Gorstian,Gorstian,medium,Welsh Borderland Ludlow stages Eltonian and Bringewoodian make up the Gorstian; not verified in a source read,"none checked; Palynodata age table (own scale, position only)"
+Early Frasnian,2,Frasnian,Frasnian,high,ICS stage name or sub-division within the Frasnian,ICS v2024/12 stage and series list (data/timescale.csv)
+Gothlandian,2,Rhuddanian,Pridoli,medium,Gothlandian is the French term for the Silurian; Pridoli sometimes excluded,"none checked; Palynodata age table (own scale, position only)"
+Late Neogene,2,Tournaisian,Tournaisian,low,Wholly younger than the table (Cenozoic); clamped to the end stage Tournaisian,ICS v2024/12 stage and series list (data/timescale.csv); unit not otherwise checked
+Late Fronian,2,Aeronian,Telychian,low,Fronian was defined at the sedgwickii Biozone (upper Aeronian) and succeeded by the Telychian; its top relative to the current Telychian base is not settled,"Davies et al. 2013, Geol. Mag. 150: 300-332 (full text read); Palynodata age table (own scale, position only)"
+Bashkirian,2,Tournaisian,Tournaisian,low,Wholly younger than the table (Carboniferous above the Tournaisian); clamped to the end stage Tournaisian,ICS v2024/12 stage and series list (data/timescale.csv); unit not otherwise checked
+Zapaltybian,2,Tournaisian,Tournaisian,low,Wholly younger than the table (regional Carboniferous unit placed at c. 320 Ma in the Palynodata age table); clamped to the end stage Tournaisian,ICS v2024/12 stage and series list (data/timescale.csv); unit not otherwise checked
+Early Chokierian,2,Tournaisian,Tournaisian,low,Wholly younger than the table (Carboniferous above the Tournaisian); clamped to the end stage Tournaisian,ICS v2024/12 stage and series list (data/timescale.csv); unit not otherwise checked
+Early Cretaceous,2,Tournaisian,Tournaisian,low,Wholly younger than the table (Mesozoic); clamped to the end stage Tournaisian,ICS v2024/12 stage and series list (data/timescale.csv); unit not otherwise checked
+Tertiary,2,Tournaisian,Tournaisian,low,Wholly younger than the table (Cenozoic); clamped to the end stage Tournaisian,ICS v2024/12 stage and series list (data/timescale.csv); unit not otherwise checked
+Early Kasimovian,1,Tournaisian,Tournaisian,low,Wholly younger than the table (Carboniferous above the Tournaisian); clamped to the end stage Tournaisian,ICS v2024/12 stage and series list (data/timescale.csv); unit not otherwise checked
+Strunian,1,Famennian,Tournaisian,medium,Belgian-French Strunian is the terminal Famennian interval across the Devonian-Carboniferous boundary; in some schemes basal Tournaisian,"none checked (general knowledge, unverified)"
+Cretaceous,1,Tournaisian,Tournaisian,low,Wholly younger than the table (Mesozoic); clamped to the end stage Tournaisian,ICS v2024/12 stage and series list (data/timescale.csv); unit not otherwise checked
+Middle Eifelian,1,Eifelian,Eifelian,high,ICS stage name or sub-division within the Eifelian,ICS v2024/12 stage and series list (data/timescale.csv)
+Early Beroun,1,Sandbian,Katian,low,"Bohemian Berounian regional unit, taken as Sandbian to Katian; correlation not checked",none checked
+Westphalian B,1,Tournaisian,Tournaisian,low,Wholly younger than the table (Carboniferous above the Tournaisian); clamped to the end stage Tournaisian,ICS v2024/12 stage and series list (data/timescale.csv); unit not otherwise checked
+Whitcliffian,1,Ludfordian,Ludfordian,medium,"Whitcliffian is the uppermost Ludlow stage (Ludfordian), below the Ludlow Bone Bed and Downtonian","Barclay et al. 2015, BGS Research Report RR/14/02 (full text read); Palynodata age table (own scale, position only)"
+Liassic,1,Tournaisian,Tournaisian,low,Wholly younger than the table (Mesozoic); clamped to the end stage Tournaisian,ICS v2024/12 stage and series list (data/timescale.csv); unit not otherwise checked
+Ulsterian,1,Lochkovian,Emsian,low,North American Lower Devonian Ulsterian series; GeoWhen gives c. 416-391.8 Ma on its older scale,"GeoWhen database stage pages, timescalefoundation.org (read)"
+Namurian,1,Tournaisian,Tournaisian,low,Wholly younger than the table (Carboniferous above the Tournaisian); clamped to the end stage Tournaisian,ICS v2024/12 stage and series list (data/timescale.csv); unit not otherwise checked
+Silesian,1,Tournaisian,Tournaisian,low,Wholly younger than the table (Carboniferous above the Tournaisian); clamped to the end stage Tournaisian,ICS v2024/12 stage and series list (data/timescale.csv); unit not otherwise checked
+Gzelian,1,Tournaisian,Tournaisian,low,Wholly younger than the table (Carboniferous above the Tournaisian); clamped to the end stage Tournaisian,ICS v2024/12 stage and series list (data/timescale.csv); unit not otherwise checked
+Bringewoodian,1,Gorstian,Gorstian,medium,Welsh Borderland Ludlow stages Eltonian and Bringewoodian make up the Gorstian; not verified in a source read,"none checked; Palynodata age table (own scale, position only)"
+Early Llanvirnian,1,Darriwilian,Darriwilian,medium,Llanvirn Series (Abereiddian plus Llandeilian) lies within the Darriwilian; older usage may reach the upper Dapingian,"Molyneux et al. 2023, Geol. Soc. Spec. Publ. 532: 191-266 (full text read)"
+Middle Caradocian,1,Sandbian,Katian,medium,Middle Caradoc (Burrellian to Cheneyan) straddles the Sandbian-Katian boundary,"Molyneux et al. 2023, Geol. Soc. Spec. Publ. 532: 191-266 (full text read)"
+Riphean,1,Tremadocian,Tremadocian,low,Wholly older than the table (Precambrian); clamped to the end stage Tremadocian,ICS v2024/12 stage and series list (data/timescale.csv); unit not otherwise checked
+Early Budnanian,1,Gorstian,Ludfordian,low,"Saharan (Algeria, Libya) palynological unit; Palynodata table puts it in the Ludlow to Pridoli interval of its scale; correlation not checked","none checked; Palynodata age table (own scale, position only)"
+Soudleyan,1,Sandbian,Sandbian,high,"Soudleyan is within the Burrellian, upper Sandbian (Sa2)","Molyneux et al. 2023, Geol. Soc. Spec. Publ. 532: 191-266 (full text read)"
+Early Arenigian,1,Floian,Floian,medium,Moridunian and Whitlandian stages of the Arenig are Floian,"Molyneux et al. 2023, Geol. Soc. Spec. Publ. 532: 191-266 (full text read)"
+Early Couvinian,1,Emsian,Eifelian,low,Early Couvinian: latest Emsian to early Eifelian; Couvinian base slightly older than Eifelian base,Web-search summaries of Bultynck 2006 and Denayer 2019 (papers not opened)
+Early Caradocian,1,Sandbian,Sandbian,medium,"Lower Caradoc (Aurelucian, early Burrellian) is Sandbian","Molyneux et al. 2023, Geol. Soc. Spec. Publ. 532: 191-266 (full text read)"
+Onnian,1,Katian,Katian,high,"Onnian is the upper Streffordian, Katian (Ka2)","Molyneux et al. 2023, Geol. Soc. Spec. Publ. 532: 191-266 (full text read)"
+Llandeilian,1,Darriwilian,Darriwilian,medium,Llandeilian Stage is upper Darriwilian (Dw3); older Llandeilo usage may touch the lowest Sandbian,"Molyneux et al. 2023, Geol. Soc. Spec. Publ. 532: 191-266 (full text read)"
+Dinantian,1,Tournaisian,Tournaisian,low,Unit extends beyond the table end; Tournaisian is the only stage in the table; clamped to the end stage,ICS v2024/12 stage and series list (data/timescale.csv); unit not otherwise checked
+Moscovian,1,Tournaisian,Tournaisian,low,Wholly younger than the table (Carboniferous above the Tournaisian); clamped to the end stage Tournaisian,ICS v2024/12 stage and series list (data/timescale.csv); unit not otherwise checked
+Middle Telychian,1,Telychian,Telychian,high,ICS stage or sub-division of the Telychian,ICS v2024/12 stage and series list (data/timescale.csv)
+Early Ludlow,1,Gorstian,Gorstian,medium,Ludlow has two stages; early Ludlow is the Gorstian,ICS v2024/12 stage and series list (data/timescale.csv)
+Zlichovian,1,Emsian,Emsian,medium,"Bohemian Zlichovian base lies above the Emsian GSSP, so the stage sits within the ICS Emsian","Denayer & Mottequin 2024, Geologica Belgica 27 (first c. 100,000 of 240,000 characters read)"

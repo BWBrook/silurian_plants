@@ -1,0 +1,1803 @@
+Reading additional input from stdin...
+OpenAI Codex v0.164.0
+--------
+workdir: /Users/bwbrook/papers/silurian_plants
+model: gpt-6.1-terra
+provider: openai
+approval: never
+sandbox: read-only
+reasoning effort: high
+reasoning summaries: none
+session id: 01a17b73-b4b6-7411-9942-b7802440ff8b
+--------
+user
+You are digitising a published table for a palaeobotany research dataset in this repository (do not edit any file).
+
+Input: data/spores/work/codex/wellman2013/appendix_numbered.txt is the line-numbered text of the supplement to Wellman, Steemans & Vecoli 2013 (Geological Society Memoir 38, ch. 29; CC BY 4.0). It lists Ordovician–Silurian dispersed-spore assemblages under series headings (Tremadoc, Arenig, Llanvirn, Caradoc, Ashgill, then the Silurian series). Each entry reads "Region (subregion) – Country, locality: taxon list (references)." Entries wrap across lines, and page furniture may intrude.
+
+Return one item per entry, in document order:
+- series_as_given: the heading in force.
+- region_as_given: the text before the dash, e.g. "Peri-Gondwana (Armorica)".
+- country.
+- locality: the text after the country and before the colon; empty if none.
+- questionable_affinity: true if the entry's taxa are asterisked as spore-like palynomorphs of questionable affinity.
+- taxa: one object per taxon.
+  - as_written: exactly as printed, without the asterisk.
+  - expanded: abbreviated genera expanded from the most recent genus with that initial in the same entry, keeping "?", "cf.", "aff." and "sp." qualifiers.
+  - genus_ambiguous: true when that expansion is doubtful, for example when the same epithet appears elsewhere in the document under a different genus with the same initial.
+- references: each citation as written, e.g. "Burgess 1991".
+- source_line: the line number where the entry starts.
+
+Do not drop, merge or invent entries. Return JSON only, matching the schema.
+codex
+I’ll transcribe the entries directly from the numbered supplement, checking wrapped lines and ambiguous genus abbreviations against the document.
+exec
+/bin/zsh -lc 'cat data/spores/work/codex/wellman2013/appendix_numbered.txt' in /Users/bwbrook/papers/silurian_plants
+ succeeded in 0ms:
+     1	Supplementary Material
+     2	
+     3	Ordovician–Silurian dispersed spore assemblages
+     4	
+     5	Locality codes refer to those plotted on the palaeogeographical base maps. Data compiled by
+     6	
+     7	Philippe Steemans. Certain reported assemblages are omitted either because they are poorly age
+     8	
+     9	constrained or too poorly preserved/too high thermal maturity to enable accurate identification.
+    10	
+    11	Other assemblages are omitted where spore identification is questionable. Cited references refer
+    12	
+    13	to the original paper that reported on the spore assemblage plus subsequent papers that have been
+    14	
+    15	used in taxonomic updates of the species list. Note that Tremadoc–Arenig records report only
+    16	
+    17	terrestrial spore-like palynomorphs of questionable affinities and are marked with an asterisk.
+    18	
+    19	Tremadoc
+    20	Peri-Gondwana (Armorica) – Spain: *Attritasporites messaoudi (Fombella 1982).
+    21	
+    22	Southern Gondwana – Algeria: *Abacum rudi, *A. messaoudi, *A. scabra, *A. velata (Combaz
+    23	
+    24	1967; Pittau 1985).
+    25	
+    26	SW Gondwana – Saudi Arabia: *Virgatasporites rudii (Molyneux & Al-Hajri 2000).
+    27	
+    28	Arenig
+    29	Peri-Gondwana (Perunica) – Czech Republic: *Attritasporites messaoudi, *A. velata,*
+    30	
+    31	Virgatasporites rudi, *V. baccatus (Vavrdová 1990a, b).
+    32	
+    33	Llanvirn
+    34	Peri-Gondwana (Perunica) – Czech Republic: *Virgatasporites rudi (Vavrdová 1990a, b).
+    35	
+    36	SW Gondwana – Saudi Arabia: Stegambiquadrella contenta (McClure 1988; Gray 1988;
+    37	
+    38	Strother et al. 1996; Molyneux & Al-Hajri 2000).
+    39	
+    40	Caradoc
+    41	Avalonia – UK, Shropshire: Abditusdyadus histosus, Dyadospora murusdensa, Laevolancis
+    42	
+    43	chibrikovae, Moyeria cabottii, Pseudodyadospora laevigata, Rimosotetras problematica,
+    44	Rugosphaera cerebra, Segestrespora laevigata, S. rugosa, Sphaerasaccus glabellus,
+    45	
+    46	Strophomorpha ovata, Tetrahedraletes grayae, T. medinensis, Velatitetras laevigata, V. rugosa,
+    47	
+    48	V. rugulata, Vestitusdyadus qalibahinus (Burgess 1991; Richardson 1988; Rubinstein & Vaccari
+    49	
+    50	2004; Steemans et al. 1996; Steemans et al. 2000; Strother 1991; Turner 1984; Wellman 1996;
+    51	
+    52	Wellman & Richardson 1993).
+    53	
+    54	Southern Gondwana – Libya: Ambitisporites vavrdovii, Imperfectotriletes patinatus,
+    55	
+    56	Tetrahedraletes medinensis (Gray et al. 1982; Steemans et al. 1996; Steemans et al. 2000;
+    57	
+    58	Wellman & Richardson 1993).
+    59	
+    60	SW Gondwana – Saudi Arabia: Ambitisporites sp., Chelinospora sp., Leiotriletes sp., ?
+    61	
+    62	Synorisporites sp. (Steemans et al. 2009).
+    63	
+    64	Ashgill
+    65	Laurentia – USA: Nodospora retimembrana, Tetrahedraletes grayii, T. medinensis, T.
+    66	
+    67	medinensis parvus, Velatitetras laevigate, Velatitetras reticulata, V. retimembrana, V. rugosa
+    68	
+    69	(Beck & Strother 2008; Burgess 1991; Gray 1985, 1988; Steemans et al. 1996; Strother 1991;
+    70	
+    71	Taylor 1995a, b; Wellman & Richardson 1993)
+    72	
+    73	Baltica – Germany: Dyadospora murusdensa, Rugosphaera tuscarorensis (Reitz & Heuse
+    74	
+    75	1994).
+    76	
+    77	Avalonia – Nova Scotia, Canada: Tetrahedraletes medinensis (Beck & Strother 2008).
+    78	
+    79	Avalonia – Belgium: Ambitisporites avitus, Dyadospora murusattenuata, Imperfectotriletes
+    80	
+    81	patinatus, I. vavrdovae, Moyeria cabottii, Pseudodyadospora laevigata, Rugosphaera cerebra,
+    82	
+    83	R. tuscarorensis, Segestrespora membranifera, S. rugosa, Stegambiquadrella contenta,
+    84	
+    85	Tetrahedraletes grayae, T. medinensis, Velatitetras anatoliensis, V. laevigata, V. retimembrana,
+    86	
+    87	V. rugosa (Martin 1973; Steemans 2001; Steemans et al. 1996; Wellman & Richardson 1993).
+    88	Avalonia – southern Britain: Ambitisporites avitus, Imperfectotriletes vavrdovae, Rimosotetras
+    89	
+    90	problematica, Segestrespora laevigata, S. membranifera, S. rugosa, Tetrahedraletes medinensis
+    91	
+    92	parvus, Velatitetras laevigata, V. retimembrana (Burgess 1991; Steemans et al. 1996).
+    93	
+    94	Peri-Gondwana (Moesian Platform) – Bulgaria: Tetrahedraletes medinensis (Lakova et al.
+    95	
+    96	1992).
+    97	
+    98	Peri-Gondwana (Perunica) – Czech Republic: Chaetosporites pollensimillis, Dyadospora
+    99	
+   100	murusattenuata, D. murusdensa, Imperfectotriletes patinatus, Laevolancis divellomedium,
+   101	
+   102	Pseudodyadospora laevigata, Quadrisporites horridus, Q. variabilis, Rugosphaera cerebra, R.
+   103	
+   104	tuscarorensis, Segestrespora membranifera, Stegambiquadrella contenta, Tetrahedraletes grayii,
+   105	
+   106	T. medinensis, Tritonialetes vacuolus, Vallatialetes aureolatus, Velatitetras retimembrana, V.
+   107	
+   108	retimembrana, V. rugosa (Gray 1991; Steemans et al. 1996; Steemans et al. 2000; Strother 1991;
+   109	
+   110	Vavrdová 1982, 1984, 1988, 1989; Wellman 1996).
+   111	
+   112	Peri-Gondwana (Taurides) – Turkey: Ambitisporites avitus, A. dilutus, Dyadospora
+   113	
+   114	murusattenuata, D. murusdensa, Imperfectotriletes patinatus, I. vavrdovae, Pseudodyadospora
+   115	
+   116	laevigata, Quadrisporites granulatus, Rimosotetras problematica, Rugosphaera cerebra,
+   117	
+   118	Segestrespora burgessii, S laevigata, S. membranifera, S. rugosa, Tetrahedraletes medinensis,
+   119	
+   120	Velatitetras anatoliensis, V. laevigata, V. retimembrana, V. rugosa (Steemans et al. 1996;
+   121	
+   122	Steemans et al. 2000).
+   123	
+   124	SW Gondwana – Saudi Arabia : Ambitisporites sp., Chelinospora sp., Leiotriletes sp., ?
+   125	
+   126	Synorisporites sp (Steemans et al. 2009).
+   127	
+   128	Southern Gondwana – Libya: Dyadospora murusdensa, Imperfectotriletes patinatus, I.
+   129	
+   130	vavrdovae, Pachytetras rugosa, Rimosotetras problematica, Rugosphaera cerebra,
+   131	
+   132	Segestrespora laevigata, S. rugosa, Tetrahedraletes grayae, T. medinensis, Velatitetras rugulata
+   133	(Burgess 1991; Gray 1991; Gray et al. 1982; Hill et al. 1985; Richardson 1988; Steemans et al.
+   134	
+   135	1996; Steemans et al. 2000; Wellman 1996; Wellman & Richardson 1993).
+   136	
+   137	Northern Gondwana – South Africa: Tetrahedraletes medinensis, T. medinensis parvus
+   138	
+   139	(Burgess 1991; Gray 1991; Gray et al. 1986; Strother 1991; Wellman & Richardson 1993).
+   140	
+   141	Tarim Terrane – Xinjiang, China: Dyadospora murusattenuata, D. murusdensa, Laevolancis
+   142	
+   143	chibrikovae, Pseudodyadospora laevigata, Segestrespora rugosa, Tetrahedraletes medinensis,
+   144	
+   145	Velatitetras laevigata (Rubinstein & Vaccari 2004; Steemans et al. 2000; Wang et al. 1997).
+   146	
+   147	South China Terrane – Zhejiang, China: Dyadospora murusattenuata, Strophomorpha ovata,
+   148	
+   149	Tetrahedraletes medinensis, Velatitetras retimembrana (Yin & He 2000).
+   150	
+   151	Hirnantian
+   152	Avalonia – UK: Ambitisporites avitus, Imperfectotriletes vavrdovae, Pseudodyadospora
+   153	
+   154	laevigata, Rimosotetras problematica, Segestrespora laevigata, S. membranifera, S. rugosa,
+   155	
+   156	Velatitetras laevigata, V. retimembrana (Burgess 1991; Steemans et al. 1996; Steemans et al.
+   157	
+   158	2000).
+   159	
+   160	SW Gondwana – Saudi Arabia: Ambitisporites sp., Chelinospora sp., Imperfectotriletes
+   161	
+   162	vavrdovae, Laevolancis divellomedia, Leiotriletes sp., ?Synorisporites sp (Miller & Al-Ruwaili
+   163	
+   164	2007; Steemans et al. 2009).
+   165	
+   166	Llandovery
+   167	Laurentia – Anticosti, Canada: Tetrahedraletes medinensis, Velatitetras retimembrana
+   168	
+   169	(Duffield 1985; Steemans et al. 1996; Strother 1991; Wellman & Richardson 1993).
+   170	
+   171	Laurentia – USA: Abditusdyadus laevigatus, Ambitisporites avitus, A. dilutus, Dyadospora
+   172	
+   173	murusattenuata, D. murusdensa, Imperfectotriletes patinatus, I. patinatus, I. vavrdovae,
+   174	
+   175	Nodospora oyleri, Pseudodyadospora laevigata, P. rugosa, Rimosotetras problematica,
+   176	
+   177	Rugosphaera tuscarorensis, Segestrespora laevigata, S. membranifera, S. rugosa,
+   178	Stegambiquadrella contenta, Velatitetras retimembrana, V. rugosa (Burgess 1991; Burgess &
+   179	
+   180	Richardson 1991; Gensel et al. 1990; Gray 1985, 1991; Gray & Boucot 1971; Gray et al. 1982;
+   181	
+   182	Gray et al. 1992; Johnson 1985; Miller & Eames 1982; Steemans et al. 1996; Steemans et al.
+   183	
+   184	2000; Strother 1991; Strother & Traverse 1979; Wellman & Richardson 1993).
+   185	
+   186	Avalonia – Belgium: Moyeria cabottii (Martin 1973; Wellman & Richardson 1993).
+   187	
+   188	Avalonia – Ireland: Ambitisporites avitus, A. dilutus (Emo & Smith 1978).
+   189	
+   190	Peri-Gondwana (Moesian Platform) – Bulgaria: Tetrahedraletes medinensis (Lakova et al.
+   191	
+   192	1992).
+   193	
+   194	Peri-Gondwana (Iberia) – Spain: Ambitisporites avitus, A. dilutes (Rodríguez 1983).
+   195	
+   196	SW Gondwana – Saudi Arabia: Tetrahedraletes medinensis (Wellman et al. 2000a,b).
+   197	
+   198	Southern Gondwana – Libya: Ambitisporites avitus, A. dilutus, Dyadospora murusdensa,
+   199	
+   200	Rimosotetras problematica (Hill et al. 1985; Hoffmeister 1959; Richardson 1985; Steemans et
+   201	
+   202	al. 1996; Wellman & Richardson 1993).
+   203	
+   204	Eastern Gondwana – Brazil: Rugosphaera rugosa, Tetrahedraletes medinensis (Gray et al.
+   205	
+   206	1985; Le Hérissé et al. 2001; Strother 1991; Wellman & Richardson 1993).
+   207	
+   208	Eastern Gondwana – Paraguay: Laevolancis chibrikovae, L. divellomedium,
+   209	
+   210	Pseudodyadospora laevigata, Segestrespora rugosa, Sphaerasaccus glabellus, Vellatitetras
+   211	
+   212	rugosa (Mendlowicz Mauller et al. 2004).
+   213	
+   214	Northern Gondwana – South Africa: Tetrahedraletes medinensis, T. medinensis parvus
+   215	
+   216	(Burgess 1991; Gray 1991; Gray et al. 1986; Strother 1991; Wellman & Richardson 1993).
+   217	
+   218	Llandovery: Rhuddanian
+   219	Laurentia – Canada: Tetrahedraletes medinensis (Eley & Legault 1988; Gray 1991).
+   220	Laurentia – USA: Dyadospora murusattenuata, D. murusdensa, Rugosphaera cerebra, R.
+   221	
+   222	tuscarorensis, Segestrespora laevigata, Strophomorpha ovata, Tetrahedraletes medinensis,
+   223	
+   224	Velatitetras retimembrana, V. rugosa, Vermiculatisphaera obscura (Beck & Strother 2008; Gray
+   225	
+   226	1991; Miller & Eames 1982; Strother 1991; Wellman 1996; Wellman & Richardson 1993).
+   227	
+   228	Avalonia – Nova Scotia, Canada: Tetrahedraletes medinensis (Beck & Strother 2001)
+   229	
+   230	Avalonia – UK: Ambitisporites avitus, Dyadospora murusattenuata, D. murusattenuata,
+   231	
+   232	Hispanaediscus lamontii, Imperfectotriletes vavrdovae, Rimosotetras problematica,
+   233	
+   234	Rugosphaera cerebra, Segestrespora burgessii, S. laevigata, S. membranifera, S. rugosa,
+   235	
+   236	Strophomorpha ovata, Tetrahedraletes medinensis, Velatitetras anatoliensis, V. laevigata, V.
+   237	
+   238	retimembrana, V. rugosa, V. rugulata (Beck & Strother 2008; Burgess 1991; Richardson 1996;
+   239	
+   240	Steemans et al. 1996; Steemans et al. 2000; Wellman 1993, 1996; Wellman & Richardson 1993).
+   241	
+   242	SW Gondwana – Saudi Arabia: Abditusdyadus laevigatus, Ambitisporites avitus, A. dilutus,
+   243	
+   244	Chelinohilates maculatus, Complectitetras alhajrii, Dyadaspora murusattenuatta, D.
+   245	
+   246	murusdensa, Imperfectotriletes patinatus, I. vavrdovae, Laevolancis chibrikovae, L.
+   247	
+   248	divellomedia, L. divellomedia, L. plicata, Pachytetras rugosa, Pseudodyadospora laevigata, P.
+   249	
+   250	petasus, Rimosotetras problematica, Rugosphaera tuscarorensis, Segestrespora laevigata, S.
+   251	
+   252	membranifera, S. rugosa, Sphaerasaccus glabellus, Tetrahedraletes medinensis, Velatitetras
+   253	
+   254	anatoliensis, V. laevigata, V. retimembrana, V. rugosa, Vestitusdyadus qalibahinus (Steemans et
+   255	
+   256	al. 2000; Wellman et al. 2000a,b).
+   257	
+   258	Southern Gondwana – Libya: Dyadospora murusattenuata, D. murusdensa, Imperfectotriletes
+   259	
+   260	patinatus, I. vavrdovae, Pseudodyadospora rugosa, Rimosotetras problematica, Segestrespora
+   261	
+   262	laevigata, S. membranifera, S. rugosa, Tetrahedraletes grayae, T. medinensis, Velatitetras
+   263	
+   264	anatoliensis, V. laevigata, V. retimembrana, V. rugosa, V. rugulata (Burgess 1991; Gray 1991;
+   265	Hill et al. 1985; Richardson 1988; Steemans et al. 1996; Steemans et al. 2000; Strother 1991;
+   266	
+   267	Wellman 1996; Wellman & Richardson 1993).
+   268	
+   269	Eastern Gondwana – Argentina: Dyadospora murusattenuata, D. murusdensa,
+   270	
+   271	Imperfectotriletes patinatus, I. vavrdovae, Laevolancis chibrikovae, Pseudodyadospora petasus,
+   272	
+   273	Rimosotetras problematica, Segestrespora laevigata, S. membranifera, Sphaerasaccus glabellus,
+   274	
+   275	Tetrahedraletes medinensis, Velatitetras laevigata, V. retimembrana, V. rugosa, Vestitusdyadus
+   276	
+   277	qalibahinus (Rubinstein & Vaccari 2004).
+   278	
+   279	Eastern Gondwana – Brazil: Abditusdyadus laevigatus, Dyadospora murusattenuata, D.
+   280	
+   281	murusdensa, Imperfectotriletes patinatus, I. vavrdovae, Laevolancis divellomedia,
+   282	
+   283	Pseudodyadospora laevigata, Rimosotetras problematica, Segestrespora laevigata, S.
+   284	
+   285	membranifera, S. rugosa, Sphaerasaccus glabellus, Tetrahedraletes medinensis, Velatitetras
+   286	
+   287	anatoliensis, V. laevigata, V. retimembrana, V. rugosa (Mizusaki et al. 2002).
+   288	
+   289	Eastern Gondwana – Paraguay: Ambitisporites avitus, A. dilutus, Dyadospora murusattenuata,
+   290	
+   291	D. murusdensa, Imperfectotriletes patinatus, I. vavrdovae, Laevolancis divellomedia,
+   292	
+   293	Rimosotetras problematica, Segestrespora laevigata, Tetrahedraletes medinensis, Velatitetras
+   294	
+   295	anatoliensis, V. laevigata, V. retimembrana (Mendlowicz Mauller et al. 2004; Steemans &
+   296	
+   297	Pereira 2002).
+   298	
+   299	South China Terrane – Zhejiang, China: Dyadospora murusattenuata, Strophomorpha ovata,
+   300	
+   301	Velatitetras retimembrana (Yin & He 2000).
+   302	
+   303	Llandovery (Aeronian)
+   304	Laurentia – USA: Nodospora rugosa, Velatitetras rugosa (Gray 1985).
+   305	
+   306	Avalonia – Nova Scotia, Canada: Ambitisporites avitus, Tetrahedraletes medinensis (Beck &
+   307	
+   308	Strother 2001).
+   309	Avalonia – UK: Ambitisporites dilutus, Imperfectotriletes vavrdovae, Tetrahedraletes
+   310	
+   311	medinensis parvus, Velatitetras retimembrana (Burgess 1991).
+   312	
+   313	Western Gondwana – Iraq: Ambitisporites avitus (Al-Ameri et al. 1991).
+   314	
+   315	SW Gondwana – Saudi Arabia: Ambitisporites avitus, A. dilutus, Chelinohilates maculatus,
+   316	
+   317	Dyadospora murusattenuata, D. murusdensa, Imperfectotriletes patinatus, I. vavrdovae,
+   318	
+   319	Laevolancis chibrikovae, L. divellomedia, L. plicata, Pseudodyadospora laevigata, P. petasus,
+   320	
+   321	Rimosotetras problematica, Tetrahedraletes medinensis, Velatitetras laevigata, V. rugosa
+   322	
+   323	(Steemans et al. 2000).
+   324	
+   325	Southern Gondwana – Libya: Ambitisporites avitus, A. dilutus, Dyadospora murusattenuata,
+   326	
+   327	D. murusdensa, Imperfectotriletes patinatus, I. vavrdovae, Pseudodyadospora rugosa,
+   328	
+   329	Rimosotetras problematica, Segestrespora membranifera, S. rugosa, Tetrahedraletes medinensis,
+   330	
+   331	Velatitetras anatoliensis, V. laevigata, V. retimembrana, V. rugosa, V. rugulata (Burgess 1991;
+   332	
+   333	Gray 1991; Hill et al. 1985; Richardson 1985, 1988; Steemans et al. 1996; Steemans et al. 2000;
+   334	
+   335	Strother 1991; Wellman 1996; Wellman & Richardson 1993).
+   336	
+   337	Eastern Gondwana – Brazil: Abditusdyadus laevigatus, Ambitisporites avitus, A. dilutus,
+   338	
+   339	Dyadospora murusattenuata, D. murusdensa, Imperfectotriletes patinatus, I. vavrdovae,
+   340	
+   341	Laevolancis divellomedia, Pseudodyadospora laevigata, Rimosotetras problematica,
+   342	
+   343	Rugosphaera cerebra, Rugosphaera rugosa, Segestrespora burgessii, S. laevigata, S.
+   344	
+   345	membranifera, S. rugosa, Sphaerasaccus glabellus, Tetrahedraletes medinensis, Velatitetras
+   346	
+   347	anatoliensis, V. laevigata, V. retimembrana, V. rugosa (Le Hérissé et al. 2001; Mizusaki et al.
+   348	
+   349	2002).
+   350	
+   351	Eastern Gondwana – Paraguay: Ambitisporites avitus, A. dilutus, Dyadospora murusattenuata,
+   352	
+   353	D. murusttanuata, D. murusdensa, Imperfectotriletes patinatus, I. vavrdovae, Laevolancis
+   354	divellomedia, Pseudodyadospora petasus, Rimosotetras problematica, Rugosphaera cerebra, R.
+   355	
+   356	rugosa, R. tuscarorensis, Segestrespora laevigata, Tetrahedraletes medinensis, Velatitetras
+   357	
+   358	anatoliensis, V. laevigata, V. retimembrana, V. rugosa (Mendlowicz Mauller et al. 2004).
+   359	
+   360	South China Terrane – Zhejiang, China: Dyadospora murusattenuata, Strophomorpha ovata,
+   361	
+   362	Velatitetras retimembrana (Yin & He 2000).
+   363	
+   364	Llandovery (Telychian)
+   365	Laurentia USA: Ambitisporites avitus.
+   366	
+   367	Avalonia – Nova Scotia, Canada: Ambitisporites avitus, A. dilutus, Laevolancis divellomedia,
+   368	
+   369	Tetrahedraletes medinensis (Beck & Strother 2001).
+   370	
+   371	Avalonia – Ireland: Tetrahedraletes medinensis (Maziane-Serraj et al. 2000).
+   372	
+   373	Avalonia – UK: Ambitisporites dilutus, Tetrahedraletes medinensis parvus (Burgess 1991).
+   374	
+   375	Western Gondwana – Iraq: Ambitisporites avitus, A. dilutus, Archaeozonotriletes chulus,
+   376	
+   377	Retusotriletes warringtonii (Al-Ameri et al. 1991).
+   378	
+   379	SW Gondwana – Saudi Arabia: Ambitisporites avitus-dilutus Morphon, Archaeozonotriletes
+   380	
+   381	chulus, Dyadospora murusattenuata – murusdensa, Imperfectotriletes patinatus, I. vavrdovae,
+   382	
+   383	Laevolancis divellomedia-plicata Morphon, Pseudodyadospora petasus, Rimosotetras
+   384	
+   385	problematica, R. problematica, Tetrahedraletes medinensis, Velatitetras anatoliensis, V.
+   386	
+   387	laevigata, V. rugosa (Steemans et al. 2000).
+   388	
+   389	Southern Gondwana – Libya: Ambitisporites avitus, A. dilutus, A. dilutus, Dyadospora
+   390	
+   391	murusattenuata, D. murusattenuata, D. murusdensa, Imperfectotriletes patinatus, I. vavrdovae,
+   392	
+   393	Pseudodyadospora rugosa, Rimosotetras problematica, R. problematica, Segestrespora rugosa,
+   394	
+   395	Tetrahedraletes medinensis, T. medinensis, Velatitetras rugulata (Burgess 1991; Gray 1991; Hill
+   396	et al. 1985; Richardson 1988; Steemans et al. 1996; Steemans et al. 2000; Strother 1991;
+   397	
+   398	Wellman 1996; Wellman & Richardson 1993).
+   399	
+   400	Eastern Gondwana – Argentina: Hispanaediscus verrucatus, Laevolancis divellomedia
+   401	
+   402	(Rubinstein & Brussa 1999).
+   403	
+   404	Eastern Gondwana – Brazil: Ambitisporites avitus, A. avitus-dilutus morphon,
+   405	
+   406	Imperfectotriletes vavrdovae, I. vavrdovae, Laevolancis divellomedia, L. divellomedia,
+   407	
+   408	Rimosotetras problematica, R. problematica, Rugosphaera cerebra, R. rugosa, Segestrespora
+   409	
+   410	burgessii, S. laevigata, S. rugosa, Tetrahedraletes medinensis, Velatitetras anatoliensis, V.
+   411	
+   412	laevigata, V. retimembrana, V. rugosa (Le Hérissé et al. 2001).
+   413	
+   414	Eastern Gondwana – Paraguay: Ambitisporites avitus, A. avitus-dilutus Morphon, A. dilutus,
+   415	
+   416	Archaeozonotriletes chulus, Archaeozonotriletes chulus-nanus Morphon, Dyadospora
+   417	
+   418	murusattenuata, D. murusttanuata-murusdensa Morphon, Laevolancis divellomedia,
+   419	
+   420	Pseudodyadospora petasus, Rimosotetras problematica, R. problematica, Tetrahedraletes
+   421	
+   422	medinensis, T. medinensis, Velatitetras anatoliensis (Mendlowicz Mauller et al. 2004; Steemans
+   423	
+   424	& Pereira 2002).
+   425	
+   426	Indo-China Terrane – Yunnan, China: Ambitisporites avitus-dilutus morphon,
+   427	
+   428	Imperfectotriletes patinatus, I. vavrdovae, Laevolancis chibrikovae, Laevolancis divellomedium,
+   429	
+   430	Velatitetras rugospora (Wang & Zhang 2009).
+   431	
+   432	South China Terrane – Zheijiang, China: Dyadaspora murusattenuata, Velatitetras
+   433	
+   434	retimembrana, Strophomorpha ovate (Yin & He 2000).
+   435	Wenlock
+   436	Laurentia – USA: Aremopyra brevicosta, Artemopyra radiata, Confossuspora reniforma,
+   437	
+   438	Laevolancis divellomedium, Stegambiquadrella contenta (Burgess & Richardson 1991, 1995;
+   439	
+   440	Strother 1991; Strother 1993; Strother & Traverse 1979; Wellman & Richardson 1993).
+   441	
+   442	Laurentia – UK – Scotland: Ambitisporites avitus, A. dilutus, Cheilotetras caledonica,
+   443	
+   444	Dyadospora murusattenuata, D. murusdensa, Laevolancis divellomedium, L. plicata, Moyeria
+   445	
+   446	cabottii, Pseudodyadospora petasus, Rimosotetras problematica, Tetrahedraletes medinensis
+   447	
+   448	(Wellman & Richardson 1993).
+   449	
+   450	Avalonia – Ireland: Ambitisporites avitus, A. dilutus, Archaeozonotriletes chulus nanus,
+   451	
+   452	Artemopyra brevicosta, Dyadospora murusattenuata, Hispanaediscus verrucata, Laevolancis
+   453	
+   454	divellomedia, L. plicata, Tetrahedraletes medinensis (Aldridge et al. 1979a, b; Emo & Smith
+   455	
+   456	1978; Wellman & Richardson 1993; Williams et al. 1996).
+   457	
+   458	Avalonia – UK: Ambitisporites dilutus, Artemopyra brevicosta, Dyadospora murusattenuata, D.
+   459	
+   460	murusdensa, Laevolancis divellomedia, Retusotriletes warringtonii, Rimosotetras problematica,
+   461	
+   462	Tetrahedraletes medinensis, T. medinensis medinensis (Burgess & Richardson 1991; Dorning
+   463	
+   464	1983; Richardson & Lister 1969; Wellman & Richardson 1993).
+   465	
+   466	Avalonia – UK: Archaeozonotriletes chulus nanus (Aldridge et al. 1979a, b).
+   467	
+   468	Peri-Gondwana (Armorica) – France: Ambitisporites avitus (Deunff & Chateauneuf 1976).
+   469	
+   470	Peri-Gondwana (Iberia) – Spain: Ambitisporites avitus, A. dilutus, Archaeozonotriletes chulus,
+   471	
+   472	Archaicusporites asturicus, Convolutispora sanpetrensis, Laevolancis divellomedium,
+   473	
+   474	Quadrisporites granulatus, Q. variabilis, Retusotriletes abundo, R. minor, R. warringtonii,
+   475	
+   476	Scylaspora vetusta, Synorisporites verrucatus (Richardson et al. 2001; Rodríguez 1978a–c,
+   477	
+   478	1983).
+   479	SW Gondwana – Saudi Arabia: Ambitisporites avitus, Dyadospora murusdensa,
+   480	
+   481	Emphanisporites neglectus, Laevolancis divellomedium, Quadrisporites variabilis, Scylaspora
+   482	
+   483	chartulata, Synorisporites verrucatus, Tetrahedraletes medinensis (Rubinstein & Steemans
+   484	
+   485	2002; Steemans 1995).
+   486	
+   487	Southern Gondwana – Libya: Ambitisporites avitus, A. dilutus, A. tripapillatus,
+   488	
+   489	Apiculiretusispora spicula, A. synorea, Archaeozonotriletes chulus chulus, A. chulus nanus,
+   490	
+   491	Artemopyra brevicosta, A. urubuense, Coronaspora subornata, Dyadospora murusattenuata,
+   492	
+   493	Emphanisporites neglectus, E. protoannulatus, E. protophanus, E. rotatus, E. splendens,
+   494	
+   495	Hispanaediscus verrucatus, Laevolancis divellomedium, Quadrisporites variabilis, Retusotriletes
+   496	
+   497	abundo, R. delicatus, R. dubius, R. frivolus, R. goensis, R. minor, R. warringtonii, Scylaspora
+   498	
+   499	chartulata, S. distincta, S. vetusta, Synorisporites verrucatus, Tetrahedraletes medinensis,
+   500	
+   501	Tetraletes granulatus (Beck & Strother 2008; Burgess & Richardson 1991, 1995; Kermandji
+   502	
+   503	2007; Richardson & Ioannides 1973; Richardson et al. 2001; Rodríguez 1983; Rubinstein &
+   504	
+   505	Steemans 2002; Steemans et al. 1996; Steemans et al. 2008; Tekbali & Wood 1991; Wellman
+   506	
+   507	1993; Wellman & Richardson 1993).
+   508	
+   509	Wenlock (Sheinwoodian)
+   510	Laurentia – USA: Abditusdyadus laevigatus, Ambitisporites avitus, Dyadospora
+   511	
+   512	murusattenuata, Laevolancis divellomedia, Tetrahedraletes medinensis, Velatitetras rugosa
+   513	
+   514	(Beck & Strother 2008).
+   515	
+   516	Laurentia – UK-Scotland: Ambitisporites avitus, A. dilutus, Cheilotetras caledonica,
+   517	
+   518	Laevolancis divellomedia, Pseudodyadospora petasus, Rimosotetras problematica,
+   519	
+   520	Tetrahedraletes medinensis (Wellman 1993).
+   521	Baltica – Norway: Ambitisporites avitus, A. dilutus, Quadrisporites variabilis, Tetrahedraletes
+   522	
+   523	medinensis, Synorisporites libycus (Smelror 1987, 1990; Steemans et al. 1996; Wellman &
+   524	
+   525	Richardson 1993).
+   526	
+   527	Baltica – Sweden: Ambitisporites dilutus, Synorisporites libycus. (Hagström 1997).
+   528	
+   529	Avalonia – Nova Scotia, Canada: Ambitisporites avitus, A. dilutus, Laevolancis divellomedia,
+   530	
+   531	L. plicata, Tetrahedraletes medinensis (Beck & Strother 2001).
+   532	
+   533	Avalonia – Ireland: Tetrahedraletes medinensis (Maziane-Serraj et al. 2000; Smith 1975;
+   534	
+   535	Strother 1991).
+   536	
+   537	Avalonia – UK: Ambitisporites avitus, A. dilutus, Archaeozonotriletes chulus chulus, A. chulus
+   538	
+   539	nanus, Dyadospora murusattenuata, D. murusdensa, Laevolancis divellomedium, L. plicata,
+   540	
+   541	Tetrahedraletes medinensis (Burgess & Richardson 1991, 1995).
+   542	
+   543	Western Gondwana- Iraq: Ambitisporites avitus, A. dilutus, Archaeozonotriletes chulus,
+   544	
+   545	Retusotriletes warringtonii (Al-Ameri et al. 1991).
+   546	
+   547	Wenlock (Homerian)
+   548	Laurentia – UK – Scotland: Ambitisporites avitus, A. dilutus, Archaeozonotriletes chulus,
+   549	
+   550	Artemopyra brevicosta, Cheilotetras caledonica, Dyadospora murusattenuata, D. murusdensa,
+   551	
+   552	Hispanaediscus lamontii, H. wenlockensis, Laevolancis divellomedium, L. plicata, Pachytetras
+   553	
+   554	rugosa, Pseudodyadospora petasus, Retusotriletes maculatus, Tetrahedraletes medinensis
+   555	
+   556	(Burgess & Richardson 1995; Marshall 1991; Richardson 1996; Steemans et al. 2000; Wellman
+   557	
+   558	1993).
+   559	
+   560	Baltica – Sweden: Ambitisporites dilutus, Cymbohilates variabilis, Laevolancis divellomedia,
+   561	
+   562	Tetrahedraletes medinensis (Hagström 1997).
+   563	Avalonia – Nova Scotia, Canada: Ambitisporites avitus, A. dilutus, Chelinospora textilis,
+   564	
+   565	Hispanaediscus verrucatus, Insolisporites bassettii, Laevolancis divellomedia, L. plicata,
+   566	
+   567	Quadrisporites variabilis, Tetrahedraletes medinensis, Vermiverruspora rumneyi (Beck &
+   568	
+   569	Strother 2001).
+   570	
+   571	Avalonia – Ireland: Archaeozonotriletes chulus nanus (Smith 1979).
+   572	
+   573	Avalonia – UK: Ambitisporites avitus, A. dilutus, Archaeozonotriletes chulus chulus, A. chulus
+   574	
+   575	nanus, Artemopyra brevicosta, A. radiata, A. rugaticosta, A. temericosta, Cheilotetras
+   576	
+   577	caledonica, Chelinospora vermoluta, Concentricosisporites saggitarius, Confossuspora
+   578	
+   579	reniforma, Dyadospora murusattenuata, D. murusdensa, Emphanisporites protophanus,
+   580	
+   581	Hispanaediscus lamontii, H. rugulatus, H. verrucatus, H. wenlockensis, Insolisporites
+   582	
+   583	anchistinus, I. bassettii, Laevolancis divellomedia, L. plicata, Pachytetras rugosa, Scylaspora
+   584	
+   585	chartulata, S. downiei, S. scipta, Tetrahedraletes medinensis, T. medinensis medinensis,
+   586	
+   587	Velatitetras cristata, Vermiverruspora rumneyi (Beck & Strother 2001, 2008; Burgess &
+   588	
+   589	Richardson 1991, 1995; Dufka 1995; Richardson & Lister 1969; Rubinstein & Steemans 2002;
+   590	
+   591	Steemans et al. 2000; Wellman & Richardson 1993).
+   592	
+   593	Peri-Gondwana (Perunica) – Czech Republic: Ambitisporites avitus, A. dilutus,
+   594	
+   595	Archaeozonotriletes chulus nanus, Artemopyra brevicosta, A. radiata, A. rugaticosta,
+   596	
+   597	Confossuspora reniforma, Dyadospora murusattenuata, Emphanisporites protophanus,
+   598	
+   599	Hispanaediscus verrucatus, Laevolancis divellomedium, L. plicata, Rugosisporites kozlicus,
+   600	
+   601	Scylaspora chartulata, S. vetusta, Synorisporites maculosus, Tetrahedraletes medinensis (Dufka
+   602	
+   603	1995; Richardson et al. 2001; Rubinstein & Steemans 2002).
+   604	
+   605	Western Gondwana – Iraq: Ambitisporites avitus, A. dilutus, Archaeozonotriletes chulus,
+   606	
+   607	Retusotriletes warringtonii (Al-Ameri et al. 1991).
+   608	SW Gondwana – Saudi Arabia: Ambitisporites avitus, A. dilutus, Archaeozonotriletes chulus,
+   609	
+   610	Artemopyra rugaticosta, Dyadospora murusattenuata D. murusdensa, Hispanaediscus
+   611	
+   612	wenlockensis, Imperfectotriletes patinatus, I. vavrdovae, Laevolancis divellomedia, L. plicata,
+   613	
+   614	Pseudodyadospora petasus, Rimosotetras problemtica, Tetrahedraletes medinensis, Velatitetras
+   615	
+   616	rugosa (Wellman et al. 2000a, b).
+   617	
+   618	Southern Gondwana – Libya: Ambitisporites avitus, Archaeozonotriletes chulus chulus,
+   619	
+   620	Artemopyra brevicosta, Synorisporites libycus (Richardson 1996).
+   621	
+   622	Southern Gondwana – Algeria: Ambitisporites avitus, A. dilutus, Archaeozonotriletes chulus
+   623	
+   624	chulus, A. chulus nanus, Emphanisporites neglectus, E. protophanus, Laevolancis divellomedia,
+   625	
+   626	Retusotriletes abundo, Scylaspora distincta, S. kozlica, S. vetusta (Kermandji 2007).
+   627	
+   628	Eastern Gondwana – Argentina: Ambitisporites avitus, A. dilustus, Emphanisporites rotates
+   629	
+   630	(Rubinstein & Brussa 1999).
+   631	
+   632	Ludlow
+   633	Laurentia – Cornwallis Island, Canada: Laevolancis divellomedium, Moyeria cabottii,
+   634	
+   635	Tetrahedraletes medinensis (Burgess & Richardson 1991; Gray 1991; McGregor & Narbonne
+   636	
+   637	1978; Strother 1991; Wellman & Richardson 1993).
+   638	
+   639	Laurentia – USA: Tetrahedraletes medinensis (Aldridge et al. 1979a, b; Wellman &
+   640	
+   641	Richardson 1993).
+   642	
+   643	Baltica – Estonia: Ambitisporites avitus (Aristova & Arkhangelskaya 1976).
+   644	
+   645	Baltica – Germany: Ambitisporites avitus , A. dilutus, Apiculiretusispora synorea,
+   646	
+   647	Archaeozonotriletes chulus chulus, Retusotriletes warringtonii (Reitz 1987).
+   648	
+   649	Baltica – Sweden: Tetrahedraletes medinensis (Gray et al. 1982; Wellman & Richardson 1993).
+   650	Avalonia – Ireland: Apiculiretusispora synorea, Archaeozonotriletes chulus chulus, A. chulus
+   651	
+   652	nanus (Aldridge et al. 1979a, b).
+   653	
+   654	Avalonia – UK: Apiculiretusispora synorea, Archaeozonotriletes chulus nanus, Laevolancis
+   655	
+   656	divellomedium, Stellatispora inframurinata cambrensis (Burgess & Richardson 1995;
+   657	
+   658	Richardson & Lister 1969; Wellman & Richardson 1993).
+   659	
+   660	Avalonia – UK: Apiculiretusispora synorea, Archaeozonotriletes chulus chulus, A. chulus nanus
+   661	
+   662	(Aldridge et al. 1979a, b).
+   663	
+   664	Peri-Gondwana (Armorica) – France: Ambitisporites avitus, Synorisporites verrucatus
+   665	
+   666	(Deunff & Chateauneuf 1976).
+   667	
+   668	Peri-Gondwana (Iberia) – Spain: Ambitisporites avitus, A. dilutus, Amocosporites miserabilis,
+   669	
+   670	Anapiculatisporites isidori, Archaeozonotriletes chulus, Archaicusporites asturicus, A.
+   671	
+   672	torrestionensis, Brochotriletes sanpetrensis, Concentricosisporites agradabilis, C. sagittarius,
+   673	
+   674	Convolutispora quititae, C. sanpetrensis, Coronaspora infraornata, C. mariae, C. primordiale,
+   675	
+   676	C. reticulata, C. subornata, Cyclogranisporites zumbonus, Emphanisporites perfilum, E.
+   677	
+   678	protoannulatus, E. protophanus, E. rotatus, E. splendens, Laevolancis divellomedium,
+   679	
+   680	Paradominoespora maravedi, Quadrisporites granulatus, Q. variabilis, Retusotriletes abundo,
+   681	
+   682	R. aureoladus, R. minor, R. sanpetrensis, R. splendidus, R. warringtonii, Scylaspora vetusta,
+   683	
+   684	Stenozonotriletes pumillus, Streelispora granulata, Synorisporites downtonensis, S. lobatus, S.
+   685	
+   686	tripapillatus, S. verrucatus (Cramer 1967; Cramer & Díez 1975; Cramer & Rodríguez 1977;
+   687	
+   688	Díez & Cramer 1976; Richardson et al. 2001; Rodríguez 1978a–c, 1983).
+   689	
+   690	Peri-Gondwana (Taurides) – Turkey: Amicosporites splendidus, Archaeozonotriletes chulus,
+   691	
+   692	Artemopyra brevicosta, Convolutispora quititae, Cymbosporites catillus, Dyadospora
+   693	
+   694	murusattenuata, D. murusdensa, Hispanaediscus verrucatus, H. wenlockensis, Laevolancis
+   695	divellomedium, Pseudodyadospora laevigata, P. petasus, Quadrisporites variabilis,
+   696	
+   697	Retusotriletes warringtonii, Rimosotetras problematica, Tetrahedraletes medinensis (Steemans
+   698	
+   699	et al. 1996).
+   700	
+   701	Southern Gondawana – Libya: Ambitisporites avitus, A. dilutus, A. tripapillatus,
+   702	
+   703	Amicosporites miserabilis, Aneurospora richardsonii, Apiculiretusispora perfecta, A. spicula, A.
+   704	
+   705	synorea, Archaeozonotriletes chulus, A. chulus chulus, A. chulus nanus, Artemopyra brevicosta,
+   706	
+   707	A. rugaticosta, Chelinospora obscura, C. retorrida, Clivosispora verrucata convoluta,
+   708	
+   709	Concentricosisporites agradabilis, Coronaspora subornata, Cymbosporites multiconus, C.
+   710	
+   711	verrucosus, Dyadospora murusattenuata, Emphanisporites neglectus, E. protoannulatus, E.
+   712	
+   713	protophanus, E. rotatus, E. splendens, Hispanaediscus lamontii, H. verrucatus, Iberoespora
+   714	
+   715	noninspisatosa, Laevolancis divellomedium, Pseudodyadospora petasus, Punctatisporites
+   716	
+   717	dilutus, Quadrisporites variabilis, Retusotriletes abundo, R. delicatus, R. dubius, R. minor, R.
+   718	
+   719	triangulatus, R. warringtonii, Scylaspora chartulata, S. distincta, S. downiei, S. vetusta,
+   720	
+   721	Stellatispora inframurinata inframurinata, Synorisporites verrucatus, Tetrahedraletes
+   722	
+   723	medinensis, Tetraletes granulates (Beck & Strother 2001, 2008; Buret & Moreau-Benoit 1986;
+   724	
+   725	Burgess & Richardson 1991, 1995; Gray et al. 1982; Kermandji 2007; Richardson & Ioannides
+   726	
+   727	1973; Richardson et al. 2001; Rodríguez 1983; Rubinstein & Steemans 2002; Steemans et al.
+   728	
+   729	1996; Steemans et al. 2008; Tekbali & Wood 1991; Wellman 1993).
+   730	
+   731	Southern Gondwana – Algeria: Emphanisporites neglectus (Jardiné & Yapaudjian 1968).
+   732	
+   733	Eastern Gondwana – Argentina: Ambitisporites avitus, Amicosporites splendidus,
+   734	
+   735	Emphanisporites neglectus, E. rotatus, Retusotriletes minor, Synorisporites verrucatus (Grösser
+   736	
+   737	& Prössl 1991; Rubinstein 1994).
+   738	South China Terrane – Jiangsu and Sichuan, China: Ambitisporites dilutus, Artemopyra
+   739	
+   740	brevicosta, Cymbosporites sparseus, Dyadospora murusattenuata, D. murusdensa,
+   741	
+   742	Hispanaediscus verrucatus, Laevolancis divellomedia, Pseudodyadospora laevigata, P. petasus,
+   743	
+   744	Scylaspora downiei, S. scripta, Velatitetras laevigata (Wang & Li 2000; Wang et al. 2005).
+   745	
+   746	Ludlow (Gorstian)
+   747	Laurentia – Scotland: Ambitisporites avitus, A. dilutus, Archaeozonotriletes chulus,
+   748	
+   749	Artemopyra brevicosta, Cheilotetras caledonica, Dyadospora murusattenuata, Hispanaediscus
+   750	
+   751	lamontii, H. wenlockensis, Laevolancis divellomedium, L. plicata, Pachytetras rugosa,
+   752	
+   753	Pseudodyadospora petasus, Retusotriletes maculatus, Tetrahedraletes medinensis (Burgess &
+   754	
+   755	Richardson 1995; Marshall 1991; Steemans et al. 2000; Wellman 1993).
+   756	
+   757	Baltica – Sweden: Abditusdyadus chalazus, Acontotetras gotlandica, Ambitisporites dilutus,
+   758	
+   759	Tetrahedraletes medinensis (Hagström 1997).
+   760	
+   761	Avalonia – Nova Scotia, Canada: Ambitisporites avitus, A. dilutus, A. marginatus, Cheilotetras
+   762	
+   763	caledonica, Hispanaediscus major, H. scabiosus, Laevolancis divellomedia, L. plicata,
+   764	
+   765	Stellatispora inframurinata inframurinata, Tetrahedraletes medinensis, Vermiverruspora
+   766	
+   767	rumneyi (Beck & Strother 2001).
+   768	
+   769	Avalonia – UK: Ambitisporites avitus, A. dilutus, Archaeozonotriletes chulus chulus, A. chulus
+   770	
+   771	nanus, Artemopyra radiata, A. temericosta, Cheilotetras caledonica, Chelinospora obscura, C.
+   772	
+   773	vermoluta, Concentricosisporites saggitarius, Hispanaediscus lamontii, H. rugulatus, H.
+   774	
+   775	verrucatus, Insolisporites anchistinus, I. bassettii, Laevolancis divellomedia, L. plicata,
+   776	
+   777	Scylaspora downiei, Stellatispora inframurinata cambrensis, S. inframurinata inframurinata,
+   778	
+   779	Tetrahedraletes medinensis medinensis, Velatitetras cristata, Vermiverruspora rumneyi (Beck &
+   780	
+   781	Strother 2001; Burgess & Richardson 1995).
+   782	Peri-Gondwana (Iberia) – Spain: Moyeria cabottii (Rodríguez 1983).
+   783	
+   784	SW Gondwana – Saudi Arabia: Ambitisporites avitus, A. dilutus, Archaeozonotriletes chulus,
+   785	
+   786	Artemopyra rugaticosta, Dyadospora murusattenuata, D. murusdensa, Hispanaediscus
+   787	
+   788	wenlockensis, Imperfectotriletes patinatus, I. vavrdovae, Laevolancis divellomedia-plicata,
+   789	
+   790	Pseudodyadospora petasus, Rimosotetras problemtica, Tetrahedraletes medinensis, Velatitetras
+   791	
+   792	rugosa (Wellman et al. 2000a, b).
+   793	
+   794	Southern Gondwana – Libya: Ambitisporites avitus, Archaeozonotriletes chulus chulus,
+   795	
+   796	Confossuspora reniforma, Emphanisporites protophanus, Hispanaediscus verrucatus
+   797	
+   798	(Richardson 1996; Rubinstein & Steemans 2002).
+   799	
+   800	Southern Gondwana – Tunisia: Ambitisporites avitus, Archaeozonotriletes chulus, Artemopyra
+   801	
+   802	brevicosta, Concentricosisporites sagittarius, Dyadospora murusattenuata, Emphanisporites
+   803	
+   804	protophanus, Hispanaediscus verrucatus, Laevolancis divellomedia, Pseudodyadospora
+   805	
+   806	laevigata, P. petasus, Retusotriletes abundo, R. dubius, R. minor, R. warringtonii, Scylaspora
+   807	
+   808	downiei, Synorisporites verrucatus, Tetrahedraletes medinensis (Spina & Vecoli 2009).
+   809	
+   810	Ludlow (Ludfordian)
+   811	Laurentia – USA: Abditusdyadus laevigatus, Ambitisporites avitus, A. warringtonii,
+   812	
+   813	Archaeozonotriletes chulus, Artemopyra brevicosta, Concentricosisporites sagittarius,
+   814	
+   815	Confossuspora reniforma, Dyadospora murusattenuata, Empanisporites protophanus,
+   816	
+   817	Laevolancis divellomedia, Retusotriletes abundo, Rugosphaera falloambita, Scylaspora scipta,
+   818	
+   819	Tetrahedraletes medinensis, Vermiverruspora cotter (Beck & Strother 2008).
+   820	
+   821	Baltica – Sweden: Abditusdyadus chalazus, Acontotetras gotlandica, Ambitisporites avitus, A.
+   822	
+   823	dilutus, A. parvus, Artemopyra brevicosta, Cheilotetras caledonica, Cymbohilates
+   824	
+   825	microgranulatus, C. variabilis, Dyadospora murusattenuata, D. murusdensa, Hispanaediscus
+   826	verrucatus, Laevolancis divellomedia, L. plicata, Pachytetras rugosa, P. rugosa,
+   827	
+   828	Pseudodyadospora laevigata, P. petasus, Rugosisporites chartulatus, Tetrahedraletes
+   829	
+   830	medinensis (Hagström 1997; Steemans et al. 2000).
+   831	
+   832	Avalonia – Nova Scotia, Canada: Ambitisporites avitus, A. marginatus, Cheilotetras
+   833	
+   834	caledonica, Hispanaediscus imbricatus, H. major, H. scabiosus, Laevolancis divellomedia, L.
+   835	
+   836	plicata, Stellatispora inframurinata inframurinata, Tetrahedraletes medinensis (Beck & Strother
+   837	
+   838	2001).
+   839	
+   840	Avalonia – UK: Ambitisporites avitus, A. dilutus, Archaeozonotriletes chulus chulus, A. chulus
+   841	
+   842	nanus, Cheilotetras caledonica, C. obscura, C. vermoluta, Concentricosisporites saggitarius,
+   843	
+   844	Hispanaediscus major, Insolisporites bassettii, Laevolancis divellomedia, L. plicata,
+   845	
+   846	Stellatispora inframurinata cambrensis, S. inframurinata inframurinata, Tetrahedraletes
+   847	
+   848	medinensis medinensis, Vermiverruspora rumneyi (Beck & Strother 2001; Burgess &
+   849	
+   850	Richardson 1995).
+   851	
+   852	Peri-Gondwana (Iberia) – Spain: Chelinospora canistrata, C. cantabrica, C. poecilomorpha,
+   853	
+   854	C. sanpetrensis, Concentricosisporites agradabilis, C. sagittarius, Coronaspora cromatica, C.
+   855	
+   856	reticulata, Emphanisporites splendens, Hispanaediscus verrucatus, Laevolancis divellomedium,
+   857	
+   858	L. divellomedium, Moyeria cabottii, Quadrisporites granulatus, Q. variabilis, Q. variabilis,
+   859	
+   860	Scylaspora vetusta (Burgess & Richardson 1991; Cramer 1966; Richardson et al. 2001;
+   861	
+   862	Rodríguez 1983; Steemans et al. 1996; Wellman & Richardson 1993).
+   863	
+   864	Southern Gondwana – Algeria: Ambitisporites avitus, A. dilutus, Archaeozonotriletes chulus
+   865	
+   866	chulus, A. chulus nanus, Chelinospora sanpetrensis, Cymbosporites triangulatus,
+   867	
+   868	Emphanisporites neglectus, E. protophanus, Laevolancis divellomedia, Retusotriletes abundo,
+   869	
+   870	Scylaspora distincta, S. kozlica, S. vetusta (Kermandji 2007).
+   871	Southern Gondwana – Libya: Apiculiretusispora synorea, Artemopyra robusta, Confossuspora
+   872	
+   873	reniforma, Emphanisporites neglectus, E. splendens, Hispanaediscus verrucatus, Laevolancis
+   874	
+   875	divellomedia, Tetraletes variabilis (Richardson 1996; Rubinstein & Steemans 2002).
+   876	
+   877	Southern Gondwana – Tunisia: Ambitisporites avitus, Archaeozonotriletes chulus, Artemopyra
+   878	
+   879	brevicosta, Chelinospora poecilomorpha, Concentricosisporites sagittarius, Coronaspora
+   880	
+   881	cromatica, Cymbohilates comptulus, Dyadospora murusattenuata, Emphanisporites neglectus,
+   882	
+   883	E. protophanus, E. rotatus, Gneudnaspora divellomedia, Hispanaediscus verrucatus, H.
+   884	
+   885	wenlockensis, Pseudodyadospora laevigata, P. petasus, Retusotriletes abundo, R. dittonensis, R.
+   886	
+   887	dubius, R. maccullockii, R. minor, R. triangulatus, R. warringtonii, Rimosotetras problematica,
+   888	
+   889	Rugosphaera cerebra, Scylaspora downiei, Segestrespora membranifera, Synorisporites libycus,
+   890	
+   891	S. verrucatus, Tetrahedraletes medinensis, Velatitetras rugosa (Spina & Vecoli 2009).
+   892	
+   893	Eastern Gondwana – Brazil: Ambitisporites avitus Morphon, Archaeozonotriletes chulus,
+   894	
+   895	Artemopyra brevicosta, Chelinospora poecilomorpha, Emphanisporites neglectus, E.
+   896	
+   897	protophanus, E. rotatus, Laevolancis divellomedium, Retusotriletes abundo, R. minor,
+   898	
+   899	Scylaspora downiei, Sphaerasaccus glabellus, Synorisporites verrucatus, Tetrahedraletes
+   900	
+   901	medinensis, Velatitetras rugosa (Steemans et al. 2008).
+   902	
+   903	Pridoli
+   904	Laurentia – Canada: Archaeozonotriletes chulus chulus (McGregor & Camfield 1976).
+   905	
+   906	Laurentia – USA: Abditusdyadus laevigatus, Ambitisporites avitus, A. warringtonii,
+   907	
+   908	Archaeozonotriletes chulus, Artemopyra brevicosta, Concentricosisporites sagittarius,
+   909	
+   910	Confossuspora reniforma, Dyadospora murusattenuata, Empanisporites protophanus,
+   911	
+   912	Laevolancis divellomedia, Retusotriletes abundo, Rugosphaera falloambita, Scylaspora scipta,
+   913	
+   914	Tetrahedraletes medinensis, Vermiverruspora cotter (Beck & Strother 2008).
+   915	Laurentia – Scotland: Tetrahedraletes medinensis (Barron 1989).
+   916	
+   917	Baltica – Estonia: Emphanisporites protophanus, Retusotriletes simplex (Aristova &
+   918	
+   919	Arkhangelskaya 1976).
+   920	
+   921	Avalonia – Nova Scotia, Canada: Ambitisporites avitus, A. capitaneus, A. parvus, Artemopyra
+   922	
+   923	scalariformis, Cheilotetras caledonica, Dyadospora murusattenuata, D. murusdensa,
+   924	
+   925	Hispanaediscus verrucatus, Laevolancis divellomedia, L. plicata, Quadrisporites variabilis,
+   926	
+   927	Scylaspora asperverruca, Synorisporites verrucatus, Tetrahedraletes medinensis (Beck &
+   928	
+   929	Strother 2001).
+   930	
+   931	Avalonia – Ireland: Apiculiretusispora spicula, A. synorea, Archaeozonotriletes chulus chulus,
+   932	
+   933	A. chulus nanus, Cymbosporites echinatus, Cymbosporites verrucosus, Synorisporites
+   934	
+   935	downtonensis, S. tripapillatus, S. verrucatus (Aldridge et al. 1979a,b).
+   936	
+   937	Avalonia – UK: Ambitisporites avitus, A. dilutus, A. parvus, A. tripapillatus, Amicosporites
+   938	
+   939	splendidus, Apiculiretusispora spicula, A. synorea, Archaeozonotriletes chulus, A. chulus chulus,
+   940	
+   941	A. chulus nanus, Cheilotetras caledonica, Concentricosisporites saggitarius, Cymbosporites
+   942	
+   943	echinatus, C. verrucosus, Laevolancis divellomedium, L. plicata, Retusotriletes charulatus, R.
+   944	
+   945	dubius, Stellatispora inframurinata cambrensis, Synorisporites downtonensis, S. labeonis, S.
+   946	
+   947	tripapillatus, S. verrucatus, Tetrahedraletes medinensis medinensis (Aldridge et al. 1979a, b;
+   948	
+   949	Burgess & Richardson 1995; Fanning et al. 1991a, b; Johnson & Taylor 2005; Richardson 1996;
+   950	
+   951	Richardson & Lister 1969; Richardson et al. 1981; Wetherall et al. 1999).
+   952	
+   953	Avalonia – UK: Apiculiretusispora spicula, A. synorea, Archaeozonotriletes chulus chulus, A.
+   954	
+   955	chulus nanus, Cymbosporites echinatus, C. verrucosus, Synorisporites downtonensis, S.
+   956	
+   957	tripapillatus, S. verrucatus (Aldridge et al. 1979a, b).
+   958	
+   959	Avalonia – France: Emphanisporites neglectus (Vanguestaine et al. 1986).
+   960	Peri-Gondwana (Armorica) – France: Ambitisporites avitus, A. dilutus, Amocosporites
+   961	
+   962	miserabilis, Anapiculatisporites isidori, Apiculiretusispora microconus, A. Plicata, A. spicula,
+   963	
+   964	Archaeozonotriletes chulus, A. chulus chulus, Archaeozonotriletes chulus nanus, Calamospora
+   965	
+   966	microrugosa, Convolutispora quititae, Emphanisporites neglectus, Leiotriletes parvus, L.
+   967	
+   968	pyramidalis, Punctatisporites punctatus, Quadrisporites granulatus, Q. variabilis, Retialetes
+   969	
+   970	legionis, Retusotriletes eslae, R. rotundus, R. warringtonii, Synorisporites tripapillatus, S.
+   971	
+   972	verrucatus (Deunff & Chateauneuf 1976; Moreau-Benoit & Dubreuil 1987; Rauscher &
+   973	
+   974	Robardet 1975; Steemans et al. 1996).
+   975	
+   976	Peri-Gondwana (Iberia) – Spain: Ambitisporites avitus, A. dilutus, Amocosporites miserabilis,
+   977	
+   978	Anapiculatisporites isidori, A. terciensis, A. ventae, Apiculiretusispora arcidecus, A. toriensis,
+   979	
+   980	Archaeozonotriletes chulus, Archaicusporites asturicus, A. torrestionensis, Brochotriletes
+   981	
+   982	sanpetrensis, Chelinospora canistrata, C. cantabrica, C. hemiesferica, C. lavidensis, C. media,
+   983	
+   984	C. poecilomorpha, C. sanpetrensis, Concentricosisporites agradabilis, C. borbullatus, C.
+   985	
+   986	sagittarius, Convolutispora quititae, C. sanpetrensis, Coronaspora cromatica, C. infraornata, C.
+   987	
+   988	mariae, C. primordiale, C. reticulata, C. subornata, Cymbosporites dittonensis, Emphanisporites
+   989	
+   990	disformis, E. perfilum, E. protoannulatus, E. protophanus, E. rotatus, E. splendens,
+   991	
+   992	Eupoikilofusa cabottii, Hispanaediscus bernesgae, H. leonensis, H. verrucatus, Iberoespora
+   993	
+   994	cantabrica, Leiotriletes socorridus, L. titanicus, , Laevolancis divellomedium,
+   995	
+   996	Paradominoespora maravedi, Quadrisporites granulatus, Q. variabilis, Retialetes legionis,
+   997	
+   998	Retusotriletes abundo, R. aureoladus, R. bipellis, R. chulus, R. coronadus, R. minor, R.
+   999	
+  1000	warringtonii, Scylaspora elegans, S. vetusta, Stenozonotriletes pumillus, Streelispora granulata,
+  1001	
+  1002	Synorisporites downtonensis, S. lobatus, S. tripapillatus, S. verrucatus, Tetraletes granulatus, T.
+  1003	variabilis (Cramer 1967; Cramer & Rodríguez 1977; Cramer & Díez 1977; Richardson et al.
+  1004	
+  1005	2001; Rodríguez 1978a–c, 1983).
+  1006	
+  1007	Peri-Gondwana (Taurides) – Turkey: Amicosporites splendidus, Archaeozonotriletes chulus,
+  1008	
+  1009	Artemopyra brevicosta, Clivosispora reticulata, Convolutispora quititae, Cymbosporites catillus,
+  1010	
+  1011	Dyadospora murusattenuata, D. murusdensa, Hispanaediscus verrucatus, H. wenlockensis,
+  1012	
+  1013	Laevolancis divellomedium, Pachytetras rugosa, Pseudodyadospora laevigata, P. petasus,
+  1014	
+  1015	Quadrisporites variabilis, Retusotriletes warringtonii, Rimosotetras problematica,
+  1016	
+  1017	Tetrahedraletes medinensis (Steemans et al. 1996; Steemans et al. 2000).
+  1018	
+  1019	Southern Gondwana – Algeria: Ambitisporites avitus, A. dilutus, Amocosporites miserabilis,
+  1020	
+  1021	Apiculiretusispora synorea, Archaeozonotriletes chulus chulus, A. chulus nanus, Chelinospora
+  1022	
+  1023	hemiesferica, C. poecilomorpha, C. sanpetrensis, Cymbosporites triangulatus, Dictyotriletes
+  1024	
+  1025	gorgoneus, Emphanisporites neglectus, E. protophanus, E. rotatus, E. splendens, Laevolancis
+  1026	
+  1027	divellomedia, Retusotriletes abundo, R. delicatus, R. minor, Scylaspora distincta, S. kozlica, S.
+  1028	
+  1029	radiata, S. vetusta, Synorisporites tripapillatus, S. verrucatus (Kermandji 2007).
+  1030	
+  1031	Southern Gondwana – Libya: Ambitisporites avitus, A. dilutus, A. tripapillatus, Amicosporites
+  1032	
+  1033	miserabilis, A. splendidus, Aneurospora geikiei, A. richardsonii, Apiculiretusispora perfecta, A.
+  1034	
+  1035	spicula, A. synorea, Archaeozonotriletes chulus nanus, Artemopyra brevicosta, A. robusta, A.
+  1036	
+  1037	rugaticosta, Breconisporites simplex, Brochotriletes foveolatus, Chelinospora cantabrica, C.
+  1038	
+  1039	poecilomorpha, C. retorrida, Clivosispora reticulata, C. verrucata convoluta, C. verrucata
+  1040	
+  1041	verrucata, Concentricosisporites agradabilis, C. sagittarius, Coronaspora cromatica,
+  1042	
+  1043	Cymbohilates comptulus, C. dittonensis, C. multiconus, C. paulus, C. verrucosus, Dyadospora
+  1044	
+  1045	murusattenuata, D. murusattenuata, Emphanisporites neglectus, E. protophanus, E. rotatus, E.
+  1046	
+  1047	splendens, Hispanaediscus lamontii, H. verrucatus, H. wenlockensis, Iberoespora cantabrica, I.
+  1048	noninspisatosa, Laevolancis divellomedium, Perotrilites laevigatus, Pseudodyadospora
+  1049	
+  1050	laevigata, Punctatisporites dilutus, Quadrisporites variabilis, Retusotriletes abundo, R. bipellis,
+  1051	
+  1052	R. dittonensis, R. dubius, R. maccullockii, R. maculatus, R. minor, R. pychovii, R. rotundus, R.
+  1053	
+  1054	triangulatus, R. warringtonii, Rimosotetras problematica, Rugosphaera cerebra, Scylaspora
+  1055	
+  1056	chartulatus, Segestrespora membranifera, Stellatispora inframurinata cambrensis, S.
+  1057	
+  1058	inframurinata inframurinata, Synorisporites libycus, S. papillensis, S. verrucatus,
+  1059	
+  1060	Tetrahedraletes medinensis, Velatitetras rugosa, Verrucosisporites devonicus (Buret & Moreau-
+  1061	
+  1062	Benoit 1986; Richardson 1996; Rubinstein & Steemans 2002; Spina & Vecoli 2009; Steemans et
+  1063	
+  1064	al. 2008; Tekbali & Wood 1991).
+  1065	
+  1066	Eastern Gondwana – Argentina: Ambitisporites avitus, Amicosporites splendidus,
+  1067	
+  1068	Emphanisporites rotatus, Synorisporites papillensis (Rubinstein 1992, 1994, 1995).
+  1069	
+  1070	Eastern Gondwana – Bolivia: Ambitisporites dilutes (McGregor 1984).
+  1071	
+  1072	Eastern Gondwana – Brazil: Ambitisporites avitus, A. dilutus, Aneurospora richardonii,
+  1073	
+  1074	Archaeozonotriletes chulus, Artemopyra urubuense, Brochotriletes foveolatus, Chelinohilates
+  1075	
+  1076	sinuosus sinuosus, C. cantabrica, C. poecilomorpha, C. sanpetrensis, C. verrucata convoluta, C.
+  1077	
+  1078	verrucata verrucata, Coronaspora cromatica, Cymbosporites verrucosus, Dyadospora
+  1079	
+  1080	murusattenuata, Emphanisporites multicostatus, E. neglectus, E. rotatus, Hispanaediscus
+  1081	
+  1082	verrucatus, Laevolancis divellomedium, Quadrisporites horridus, Q. variabilis, Retusotriletes
+  1083	
+  1084	amazonensis, R. minor, Synorisporites verrucatus, Tetrahedraletes medinensis (Steemans et al.
+  1085	
+  1086	2008).
+  1087	
+  1088	South China Terrane – Jiangsu and Sichuan, China: Ambitisporites dilutus, Artemopyra
+  1089	
+  1090	brevicosta, Cymbosporites sparseus, Dyadospora murusattenuata, D. murusdensa,
+  1091	Hispanaediscus verrucatus, Laevolancis divellomedia, Pseudodyadospora laevigata, P. petasus,
+  1092	
+  1093	Scylaspora downiei, S. scripta, Velatitetras laevigata (Wang & Li 2000; Wang et al. 2005).
+  1094	
+  1095	
+  1096	References
+  1097	AL-AMERI, T. K., OMER, S. F. & KHALAF, F. H. 1991. Lower Silurian palynomorphs from
+  1098	
+  1099	       Western Iraqi Desert and the paleoclimate. Journal of Science and Nature, 1, 57–65.
+  1100	
+  1101	ALDRIDGE, R. J., DORNING, K. J., HILL, P. J., RICHARDSON, J. B. & SIVETER, D. J. 1979a.
+  1102	
+  1103	       Microfossil Distribution in the Silurian of Britain and Ireland. Geological Society,
+  1104	
+  1105	       London, Special Publications, 8, 433–438.
+  1106	
+  1107	ALDRIDGE, R. J., JEPPSSON, L. & DORNING, K. J. 1979b. Early Silurian oceanic episodes and
+  1108	
+  1109	       events. Journal of the Geological Society, London, 150, 501–513.
+  1110	
+  1111	ALLEN, K. C. 1981. A comparison of the structure and sculpture of in situ and dispersed Silurian
+  1112	
+  1113	       and Early Devonian spores. Review of Palaeobotany and Palynology, 34, 1–9.
+  1114	
+  1115	ARISTOVA, K. E. & ARKHANGELSKAYA, A. D. 1976. Microfossils from stratotype sections of
+  1116	
+  1117	       Upper Silurian horizons of Estonia. In: BYVSHEVA, T. V. (ed.) Results of palynological
+  1118	
+  1119	       research on Precambrian, Paleozoic and Mesozoic of the USSR. Trudy Vsesoiuznogo
+  1120	
+  1121	       Nauchno-Issledovatel'skogo Geologorazvedochnogo Neftianogo Instituta, Kama Branch,
+  1122	
+  1123	       192, 28–38.
+  1124	
+  1125	BALME, B. E. 1995. Fossil in situ spores and pollen grains: an annotated catalogue. Review of
+  1126	
+  1127	       Palaeobotany and Palynology, 87, 81–323.
+  1128	
+  1129	BANKS, H. P. 1980. Floral assemblages in the Siluro–Devonian. In: DILCHER, D. L. & TAYLOR,
+  1130	
+  1131	       T. N. (eds) Biostratigraphy of Fossil Plants. Dowden, Hutchinson, & Ross, Stroudsburg,
+  1132	
+  1133	       PA, 1–24.
+  1134	BANKS, H. P. 1981. Time and appearance of some plant biocharacters during Siluro–Devonian
+  1135	
+  1136	       time. Canadian Journal of Botany, 59, 1292–1296.
+  1137	
+  1138	BARRON, H. F. 1989. Mid-Wenlock acritarchs from the inlier in the Cheviot Hills, NE England.
+  1139	
+  1140	       Scottish Journal of Geology, 25, 81–89.
+  1141	
+  1142	BECK, J. H. & STROTHER, P. K. 2001. Silurian spores and cryptospores from the Arisaig Group,
+  1143	
+  1144	       Nova Scotia, Canada. Palynology, 25, 127–177.
+  1145	
+  1146	BECK, J. H. & STROTHER, P. K. 2008. Miospores and cryptospores from the Silurian section at
+  1147	
+  1148	       Allenport, Pennsylvania, USA. Journal of Paleontology, 82, 857–883.
+  1149	
+  1150	BERNER, R. A. 2006. Geological nitrogen cycle and atmospheric N2 over Phanerozoic time.
+  1151	
+  1152	       Geology, 34, 413–415.
+  1153	
+  1154	BOUCOT, A. J. & GRAY, J. 2001. A critique of Phanerozoic climatic models involving changes in
+  1155	
+  1156	       the CO2 content of the atmosphere. Earth Science Reviews, 56, 1–159.
+  1157	
+  1158	BRAYARD, A., ESCARGUEL, G. & BUCHER, H. 2007. The biogeography of Early Triassic
+  1159	
+  1160	       ammonoid faunas: clusters, gradients, and networks. Geobios, 6, 749–765.
+  1161	
+  1162	BROWN, R. C. & LEMMON, B. E. 1990. Sporogenesis in bryophytes. In: BLACKMORE, S. & KNOX
+  1163	
+  1164	       (eds) Microspores: Evolution and Ontogeny. Academic Press, London, 55–94.
+  1165	
+  1166	BURET, M. B. & MOREAU-BENOIT, A. 1986. Données nouvelles apportées par la
+  1167	
+  1168	       palynoplanctologie sur la formation des alternances argilo-gréseuses (Silurien supérieur
+  1169	
+  1170	       de Libye, bassin de Rhadamès). Comptes Rendus de l'Académie des Sciences de Paris,
+  1171	
+  1172	       302, 1009–1014.
+  1173	
+  1174	BURGESS, N. D. 1991. Silurian cryptospores and miospores from the type Llandovery area, SW
+  1175	
+  1176	       Wales. Palaeontology, 34, 575–599.
+  1177	BURGESS, N. D. & RICHARDSON, J. B. 1991. Silurian cryptospores and miospores from the type
+  1178	
+  1179	       Wenlock area, Shropshire, England. Palaeontology, 34, 601–628.
+  1180	
+  1181	BURGESS, N. D. & RICHARDSON, J. B. 1995. Late Wenlock to early Pridoli cryptospores and
+  1182	
+  1183	       miospores from south and SW Wales, Great Britain. Palaeontographica, 236, 1–44.
+  1184	
+  1185	CAI, C-Y, YA-WEI, D. & EDWARDS, D. 1993. New observations on a Pridoli plant assemblage
+  1186	
+  1187	       from north Xinjiang, NW China, with comments on its evolutionary and
+  1188	
+  1189	       palaeogeographical significance. Geological Magazine, 130, 155–170.
+  1190	
+  1191	COMBAZ, A. 1967. Un microbios du Trémadocien dans un sondage d'Hassi-Messaoud. Actes de
+  1192	
+  1193	       la Société Linnéenne de Bordeaux, 104, 1–26.
+  1194	
+  1195	CRAMER, F. H. 1966. Palynomorphs from the Siluro–Devonian boundary in N. W. Spain. Notas
+  1196	
+  1197	       y Comunicaciones del Instituto Geologico y Minero de Espana, 85, 71–82.
+  1198	
+  1199	CRAMER, F. H. 1967. Palynology of Silurian and Devonian rocks in NW Spain. Boletin del
+  1200	
+  1201	       Instituto Geologico y Minero de Espana, 77, 225–286.
+  1202	
+  1203	CRAMER, F. H. & DÍEZ, M. D. C. R. 1975. Earliest Devonian miospores from the Province of
+  1204	
+  1205	       León, Spain. Pollen et Spores, XVII, 331–344.
+  1206	
+  1207	CRAMER, F. H. & DÍEZ, M. D. C. R. 1977. Ovnia, genero nuevo de Acritarcos del Gedinniense
+  1208	
+  1209	       de Arabia Saudita. Rev. Espanola Micropal., IX, 85–88.
+  1210	
+  1211	CRAMER, F. H. & RODRÍGUEZ, R. M. 1977. Robledo and Arroyacas Formation (Arroyo de las
+  1212	
+  1213	       Arroyacas, Province of Palencia, Spain) palynologically dated as late Silurian. Breviora
+  1214	
+  1215	       Geologica Asturica, 21, 2–4.
+  1216	
+  1217	DEUNFF, J. & CHATEAUNEUF, J. J. 1976. Sur la présence d'un riche microplancton siluro-
+  1218	
+  1219	       dévonien à acritarches, chitinozoaires, au sommet des Schistes et Quartzites de Plougastel
+  1220	
+  1221	       (Rade de Brest); son intérêt stratigraphique. Geobios, 9, 337–343.
+  1222	DÍEZ, M. D. C. R. & CRAMER, F. H. 1976. Acritarches et miospores du Ludlovien de Corniero,
+  1223	
+  1224	       Province de León, Espagne. Revue de Micropaléontologie, 19, 121–133.
+  1225	
+  1226	DORNING, K. J. 1983. Palynology and stratigraphy of the Much Wenlock Limestone Formation
+  1227	
+  1228	       of Dudley, Central England. Mercian Geologist, 9, 31–40.
+  1229	
+  1230	DUFFIELD, S. L. 1985. Land-derived microfossils from the Jupiter Formation (upper
+  1231	
+  1232	       Llandoverian), Anticosti Island, Quebec. Journal of Paleontology, 59, 1005–1010.
+  1233	
+  1234	DUFKA, P. 1995. Upper Wenlock miospores and cryptospores derived from a Silurian volcanic
+  1235	
+  1236	       island in the Prague Basin (Barrandian area, Bohemia). Journal of Micropalaeontology,
+  1237	
+  1238	       14, 67–79.
+  1239	
+  1240	ELEY, B. E. & LEGAULT, J. A. 1988. Palynomorphs from the Manitoulin Formation (Early
+  1241	
+  1242	       Llandovery) of Southern Ontario. Palynology, 12, 49–63.
+  1243	
+  1244	EMO, G. T. & SMITH, D. G. 1978. Palynological evidence for the age of the Lower Palaeozoic
+  1245	
+  1246	rocks of Slieve Aughty, Counties Clare and Galway. Proceedings of the Royal Irish Academy,
+  1247	
+  1248	78, 287–292.
+  1249	
+  1250	FANNING, U., EDWARDS, D. & RICHARDSON, J. B. 1991a. A new rhyniophytoid from the late
+  1251	
+  1252	       Silurian of the Welsh Borderland. Neues Jahrbuch für Geologie und Paläontologie. Abh.,
+  1253	
+  1254	       183, 37–47.
+  1255	
+  1256	FANNING, U., RICHARDSON, J. B. & EDWARDS, D. 1991b. A review of in situ spores in Silurian
+  1257	
+  1258	       land plant. In: BLACKMORE, S. & BARNES, S. H. (eds) Systematics Association Special
+  1259	
+  1260	       Volume. Pollen and Spores, 44, 25–47.
+  1261	
+  1262	FOMBELLA, M. A. 1982. Determinacion palinologica del Tremadoc en la localidad de Verdiago,
+  1263	
+  1264	       Provincai de León, NO de España. Revista Española de Micropaleontologia, XIV, 13–
+  1265	
+  1266	       22.
+  1267	GENSEL, P. G., JOHNSON, N. G. & STROTHER, P. K. 1990. Early land plant debris (Hooker’s
+  1268	
+  1269	       ‘waifs and strays’?). Palaios, 5, 520–547.
+  1270	
+  1271	GRAY, J. 1985. The microfossil record of early land plants; advances in understanding of early
+  1272	
+  1273	       terrestrialization, 1970–1984. Philosophical Transactions of the Royal Society, London,
+  1274	
+  1275	       B309, 167–195.
+  1276	
+  1277	GRAY, J. 1988. Land plant spores and the Ordovician–Silurian boundary. Bulletin of the British
+  1278	
+  1279	       Museum (Natural History), Geology, 43, 351–358.
+  1280	
+  1281	GRAY, J. 1991. Tetrahedraletes, Nodospora and the 'cross’ tetrad: an accretion of myth. In:
+  1282	
+  1283	       BLACKMORE, S. & BARNES, S. H. (eds) Systematics Association Special Volume. Pollen
+  1284	
+  1285	       and Spores, 44, 49–87.
+  1286	
+  1287	GRAY, J. & BOUCOT, A. J. 1971. Early Silurian spore tetrads from New York: earliest New
+  1288	
+  1289	       World evidence for vascular plants. Science, 173, 918–921.
+  1290	
+  1291	GRAY, J., MASSA, D. & BOUCOT, A. J. 1982. Caradocian land plant microfossils from Libya.
+  1292	
+  1293	       Geology, 10, 197–201.
+  1294	
+  1295	GRAY, J., COLBATH, G. K., DE FARIA, A., BOUCOT, A. J. & ROHR, D. M. 1985. Silurian-age
+  1296	
+  1297	       fossils from the Paleozoic Paraná Basin, southern Brazil. Geology, 13, 521–525.
+  1298	
+  1299	GRAY, J., THERON, J. N. & BOUCOT, A. J. 1986. Age of the Cedarberg Formation, South Africa
+  1300	
+  1301	       and early land plant evolution. Geological Magazine, 123, 445–454.
+  1302	
+  1303	GRAY, J., BOUCOT, A. J., GRAHN, Y. & HIMES, G. 1992. A new record of early Silurian land
+  1304	
+  1305	       plant spores from the Paraná Basin, Paraguay (Malvinokaffric Realm). Geological
+  1306	
+  1307	       Magazine, 129, 741–752.
+  1308	GRÖSSER, J. R. & PRÖSSL, K. F. 1991. First evidence of the Silurian in Colombia:
+  1309	
+  1310	       Palynostratigraphic data from the Quetame Massif, Cordillera Oriental. Journal of South
+  1311	
+  1312	       American Earth Sciences, 4, 231–238.
+  1313	
+  1314	HABGOOD, K. S. 2000. Two cryptospore-bearing land plants from the Lower Devonian
+  1315	
+  1316	       (Lochkovian) of the Welsh Borderland. Botanical Journal of the Linnean Society, 133,
+  1317	
+  1318	       203–227.
+  1319	
+  1320	HAGSTRÖM, J. 1997. Land-derived palynomorphs from the Silurian of Gotland, Sweden.
+  1321	
+  1322	       Geologiska Föreningens i Stockholm Förhandlingar, 119, 301–316.
+  1323	
+  1324	HILL, J. P., PARIS, F. & RICHARDSON, J. B. 1985. Silurian palynomorphs. Journal of
+  1325	
+  1326	       Micropaleontology, 4, 27–48.
+  1327	
+  1328	HOFFMEISTER, W. S. 1959. Lower Silurian plant spores from Libya. Micropaleontology, 5, 331–
+  1329	
+  1330	       334.
+  1331	
+  1332	JARDINÉ, S. & YAPAUDJIAN, L. 1968. Lithostratigraphie et palynologie du Dévonien–
+  1333	
+  1334	       Gothlandien gréseux du Bassin de Polignac (Sahara). Revue de l’Institut Français du
+  1335	
+  1336	       Pétrole, 23, 439–469.
+  1337	
+  1338	JOHNSON, N. G. 1985. Early Silurian palynomorphs from the Tuscarora Formation in central
+  1339	
+  1340	       Pennsylvania and their paleobotanical and geological significance. Review of
+  1341	
+  1342	       Palaeobotany and Palynology, 45, 307–360.
+  1343	
+  1344	JOHNSON, T. R. & TAYLOR, W. A. 2005. Single grain analysis of the Late Silurian spore
+  1345	
+  1346	       Cymbosporites echinatus from the Welsh Borderland. Review of Palaeobotany and
+  1347	
+  1348	       Palynology, 137, 163–172.
+  1349	
+  1350	KERMANDJI, A. M. H. 2007. Silurian–Devonian miospores from the western and central Algeria.
+  1351	
+  1352	       Revue de Micropaléontologie, 50, 109–128.
+  1353	LAKOVA, I., GOCEV, P. M. & YANEV, S. 1992. Palynostratigraphy and geological setting of the
+  1354	
+  1355	       Lower Paleozoic allochthon of the Dervent Heights, SE Bulgaria. Geological Balcanica,
+  1356	
+  1357	       22, 71–88.
+  1358	
+  1359	LE HÉRISSÉ, A., MELO, J. H. G., QUADROS, L. P., GRAHN, Y. & STEEMANS, P. 2001.
+  1360	
+  1361	       Palynological characterization and dating of the Tiangua Formation, Serra Grande Group,
+  1362	
+  1363	       northern Brazil. In: MELO, J. H. G. & TERRA, G. J. S. (eds) Correlaçâo de Seqüências
+  1364	
+  1365	       Paleozóicas Sul-Americanas. Ciência-Técnica-Petróleo. Seção: Exploração de Petróleo,
+  1366	
+  1367	       Rio de Janeiro, 20, 25–42.
+  1368	
+  1369	MARSHALL, J. E. A. 1991. Palynology of the Stonehaven Group, Scotland: evidence for a Mid
+  1370	
+  1371	       Silurian age and its geological implications. Geological Magazine, 128, 283–286.
+  1372	
+  1373	MARTIN, F. 1973. Ordovicien supérieur et Silurien inférieur à Deerlijk (Belgique). Mémoires de
+  1374	
+  1375	       l'Institut royal des Sciences naturelles de Belgique, 174, 1–71.
+  1376	
+  1377	MAZIANE-SERRAJ, N., BRUCK, P. M., HIGGS, K. T. & VANGUESTAINE, M. 2000. Ordovician and
+  1378	
+  1379	       Silurian acritarch assemblages from the west Leinster and Slievenamon areas of southeast
+  1380	
+  1381	       Ireland. Review of Palaeobotany and Palynology, 113, 57–71.
+  1382	
+  1383	MCCLURE, H. A. 1988. The Ordovician–Silurian boundary in Saudi Arabia. Bulletin of the
+  1384	
+  1385	       British Museum (Natural History), Geology Series, 43, 155–163.
+  1386	
+  1387	MCGREGOR, D. C. 1984. Late Silurian and Devonian spores from Bolivia. Academia Nacional
+  1388	
+  1389	       de Ciencias Cordoba, 69, 1–57.
+  1390	
+  1391	MCGREGOR, D. C. & CAMFIELD, M. 1976. Upper Silurian? to Middle Devonian Spores of the
+  1392	
+  1393	       Moose River Basin, Ontario. Geological Survey of Canada, Ottawa, Bulletins, 263, 1–63.
+  1394	MCGREGOR, D. C. & NARBONNE, G. M. 1978. Upper Silurian trilete spores and other
+  1395	
+  1396	       microfossils from the Read Bay Formation, Cornwallis Island, Canadian Arctic.
+  1397	
+  1398	       Canadian Journal of Earth Sciences, 15, 1292–1303.
+  1399	
+  1400	MENDLOWICZ MAULLER, P., PEREIRA, E., GRAHN, Y. & STEEMANS, P. 2004. Análise
+  1401	
+  1402	       bioestratigráfica do intervalo Llandoveriano da Bacia do Paraná no Paraguai Oriental.
+  1403	
+  1404	       Revista Brasiliera de Paleontologia, 7, 199–212.
+  1405	
+  1406	MILLER, M. A. & AL-RUWAILI, M. H. 2007. Preliminary palynological investigation of Saudi
+  1407	
+  1408	       Arabian Upper Ordovician glacial sediments. Revue de Micropaléontologie, 50, 17–26.
+  1409	
+  1410	MILLER, M. A. & EAMES, L. E. 1982. Palynomorphs from the Silurian Medina Group (Lower
+  1411	
+  1412	       Llandovery) of the Niagara Gorge, Lewiston, New York, U.S.A. Palynology, 6, 221–254.
+  1413	
+  1414	MIZUSAKI, A. M., MELO, J. H. G., LELARGE, M. L. & STEEMANS, P. 2002. Vila Maria
+  1415	
+  1416	       Formation, Paraná Basin, Brazil – an example of integrated geochronological and
+  1417	
+  1418	       palynological datings. Geological Magazine, 139, 453–463.
+  1419	
+  1420	MOLYNEUX, S. G. & AL-HAJRI, S. 2000. Palynology of a problematic Lower Palaeozoic
+  1421	
+  1422	       lithofacies in Central Saudi Arabia. In: AL-HAJRI, S. & OWENS, B. (eds) Stratigraphic
+  1423	
+  1424	       Palynology of the Palaeozoic of Saudi Arabia. GeoArabia (special volume), 1, 18–41.
+  1425	
+  1426	MOREAU-BENOIT, A. & DUBREUIL, M. 1987. Confirmation et découverte du Dévonien inférieur
+  1427	
+  1428	       par la palynoplanctonologie dans les schistes et grès de la terminaison orientale du bassin
+  1429	
+  1430	       d'Ancenis (sud-est du Massif armoricain). Géologie de la France, 1, 37–54.
+  1431	
+  1432	PITTAU, P. 1985. Tremadocian (Early Ordovician) acritarchs of the Arburese Unit, Southwest
+  1433	
+  1434	       Sardinia (Italy). Bolletino della Societa Paleontologica Italiana, 23, 61–204.
+  1435	RAUSCHER, R. & ROBARDET, M. 1975. Les microfossiles (acritarches, chitinozoaires et spores)
+  1436	
+  1437	       des couches de passage du Silurien au Dévonien dans le Cotentin (Normandie). Annales
+  1438	
+  1439	       de la Société Géologique du Nord, XCV, 81–92.
+  1440	
+  1441	REITZ, E. 1987. Silurische Sporen aus einem granatführenden Glimmerschiefer des Vor-
+  1442	
+  1443	       Speesart, NW-Bayern. Neues Jahrbuch für Geologie und Paläontologie. Monatshefte, 11,
+  1444	
+  1445	       699–704.
+  1446	
+  1447	REITZ, E. & HEUSE, T. 1994. Palynofazies im Oberordovizium des Saxsothringikums. Neues
+  1448	
+  1449	       Jahrbuch für Geologie und Paläontologie Monatshefte, 6, 348–360.
+  1450	
+  1451	RICHARDSON, J. B. 1985. Lower Paleozoic sporomorphs: their stratigraphical distribution and
+  1452	
+  1453	       possible affinities. Philosophical Transactions of the Royal Society, London, 309, 201–
+  1454	
+  1455	       205.
+  1456	
+  1457	RICHARDSON, J. B. 1988. Late Ordovician and Early Silurian cryptospores and miospores from
+  1458	
+  1459	       NE Libya. In: EL-ARNAUTI, A., OWENS, B. & THUSU, B. (eds) Subsurface
+  1460	
+  1461	       Palynostratigraphy of NE Libya. Garyounis University Publications, Benghazi, Libya,
+  1462	
+  1463	       89–109.
+  1464	
+  1465	RICHARDSON, J. B. 1996. Chapter 18A. Lower and Middle Palaeozoic records of terrestrial
+  1466	
+  1467	       palynomorphs. In: JANSONIUS, J. & MCGREGOR, D. C. (eds) Palynology: Principles and
+  1468	
+  1469	       Applications. American Association of Stratigraphic Palynologists Foundation, Salt Lake
+  1470	
+  1471	       City, UT, 2, 555–574.
+  1472	
+  1473	RICHARDSON, J. B. & IOANNIDES, N. S. 1973. Silurian palynomorphs from the Tanezzuft and
+  1474	
+  1475	       Acacus Formations, Tripolitania, North Africa. Micropaleontology, 19, 257–307.
+  1476	
+  1477	RICHARDSON, J. B. & LISTER, T. R. 1969. Upper Silurian and Lower Devonian spore
+  1478	
+  1479	       assemblages from the Welsh Borderland and South Wales. Palaeontology, 12, 201–252.
+  1480	RICHARDSON, J. B., RASUL, S. M. & AL-AMERI, T. 1981. Acritarchs, miospores and correlation
+  1481	
+  1482	       of the Ludlovian–Downtonian and Silurian–Devonian boundaries. Review of
+  1483	
+  1484	       Palaeobotany and Palynology, 34, 209–224.
+  1485	
+  1486	RICHARDSON, J. B., RODRÍGUEZ, R. M. & SUTHERLAND, S. J. E. 2001. Palynological zonation of
+  1487	
+  1488	       Mid- Palaeozoic sequences from the Cantabrian Mountains, NW Spain: implications for
+  1489	
+  1490	       inter-regional and interfacies correlation of the Ludford/Prídolí and Silurian/Devonian
+  1491	
+  1492	       boundaries, and plant dispersal patterns. Bulletin Natural History Museum London
+  1493	
+  1494	       (Geology), 57, 115–162.
+  1495	
+  1496	RODRÍGUEZ, R. M. 1978a. Nuevas mioesporas de la Formación San Pedro en Geras de Gordon,
+  1497	
+  1498	       Cordillera Cantabrica (Provincia de León, Noroeste de España). Breviora Geologica
+  1499	
+  1500	       Asturica, 22, 9–16.
+  1501	
+  1502	RODRÍGUEZ, R. M. 1978b. Miospores de la Formation San Pedro (Silurien–Devonien) à Corniero
+  1503	
+  1504	       (Province de León, Espagne). Revue de Micropaléontologie, 20, 216–221.
+  1505	
+  1506	RODRÍGUEZ, R. M. 1978c. Mioesporas de la Formación San Pedro/Furada (Silúrico Superior–
+  1507	
+  1508	       Devónico Inferior), Cordillera Cantabrica, NO de España. Palinologia, Número
+  1509	
+  1510	       Extraordinario, 1, 407–433.
+  1511	
+  1512	RODRÍGUEZ, R. M. 1983. Palinologia de las Formaciones del Silúrico superior – Devonico
+  1513	
+  1514	       inferior de la Cordillera Cantabrica. Servicio de Publicaciones, Universidad de Leon,
+  1515	
+  1516	       Leon, 1–231.
+  1517	
+  1518	RUBINSTEIN, C. 1992. Palinologia des Silurico superior (Formacion Los Espejos) de La
+  1519	
+  1520	       Quebrada de las Aguaditas, Precordillera de San Juan, Argentina. Ameghiniana, 29, 231–
+  1521	
+  1522	       248.
+  1523	RUBINSTEIN, C. 1994. Palynological investigation in the Lower Paleozoic of Argentina.
+  1524	
+  1525	       Zeitschrift fur Geologische und Paläontologie, 1/2, 271–230.
+  1526	
+  1527	RUBINSTEIN, C. 1995. Acritarchs from the upper Silurian of Argentina: their relationship with
+  1528	
+  1529	       Gondwana. Journal of South American Earth Sciences, 8, 103–115.
+  1530	
+  1531	RUBINSTEIN, C. V. & BRUSSA, E. D. 1999. A palynomorph and graptolite biostratigraphy of the
+  1532	
+  1533	       Central Precordillera Silurian Basin, Argentina. In: TONGIORGI, M. & PLAYFORD, G. (eds)
+  1534	
+  1535	       Studies in Palaeozoic Palynology, Selected Papers from the CIMP Symposium at Pisa.
+  1536	
+  1537	       Bolletino della Società Paleontologica Italiana, Modena, 38, 257–266.
+  1538	
+  1539	RUBINSTEIN, C. V. & STEEMANS, P. 2002. Miospore assemblages from the Silurian–Devonian
+  1540	
+  1541	       boundary, in borehole A1–61, Ghadamis Basin, Libya. In: STEEMANS, P., SERVAIS, T. &
+  1542	
+  1543	       STREEL, M. (eds) Paleozoïc Palynology: A Special Issue in Honour of Dr. Stanislas
+  1544	
+  1545	       Loboziak. Review of Palaeobotany and Palynology, 118, 397–421.
+  1546	
+  1547	RUBINSTEIN, C. & VACCARI, N. E. 2004. Cryptospore assemblages from the Ordovician/Silurian
+  1548	
+  1549	       boundary in the Puna region, NW Argentina. Palaeontology, 47, 1037–1061.
+  1550	
+  1551	SMELROR, M. 1987. Llandovery and Wenlock miospores and spore-like microfossils from the
+  1552	
+  1553	       Ringerike district, Norway. Norsk Geologisk Tidsskrift, 67, 143–150.
+  1554	
+  1555	SMELROR, M. 1990. Palynomorphs from the Cyrtograptys centrifugus graptolite zone (Early
+  1556	
+  1557	       Wenlock, Silurian), Bornholm. Bulletin of the Geological Society of Denmark, 39, 83–89.
+  1558	
+  1559	SMITH, D. G. 1975. Wenlock plant spores and tetrads from County Mayo Ireland. Geological
+  1560	
+  1561	       Magazine, 112, 411–414.
+  1562	
+  1563	SMITH, D. G. 1979. The distribution of trilete spores in Irish Silurian rocks. In: HARRIS, A. L.,
+  1564	
+  1565	       HOLLAND, C. H. & LEAKE, B. E. (eds) The Caledonides of the British Isles – Reviewed.
+  1566	
+  1567	       Geological Society of London, London, 423–431.
+  1568	SPINA, A. & VECOLI, M. 2009. Palynostratigraphy and vegetational changes in the Siluro–
+  1569	
+  1570	       Devonian of the Ghadamis Basin, North Africa. Palaeogeography, Palaeoclimatology,
+  1571	
+  1572	       Palaeoecology, 282, 1–18.
+  1573	
+  1574	STEEMANS, P. 1995. Silurian and Lower Emsian spores in Saudi Arabia. Review of Palaeobotany
+  1575	
+  1576	       and Palynology, 89, 91–104.
+  1577	
+  1578	STEEMANS, P. 2001. Ordovician cryptospores from the Oostduinkerke borehole, Brabant Massif,
+  1579	
+  1580	       Belgium. Geobios, 34, 3–12.
+  1581	
+  1582	STEEMANS, P. & PEREIRA, E. 2002. Llandovery miospore biostratigraphy and stratigraphic
+  1583	
+  1584	       evolution of the Paraná Basin, Paraguay – palaeogeographic implications. Bulletin de la
+  1585	
+  1586	       Société géologique de France, 173, 407–414.
+  1587	
+  1588	STEEMANS, P., LE HÉRISSÉ, A. & BOZDOGAN, N. 1996. Ordovician and Silurian cryptospores
+  1589	
+  1590	       and miospores from southeastern Turkey. Review of Palaeobotany and Palynology, 93,
+  1591	
+  1592	       35–76.
+  1593	
+  1594	STEEMANS, P., HIGGS, K. T. & WELLMAN, C. H. 2000. Cryptospores and trilete spores from the
+  1595	
+  1596	       Llandovery, Nuayyim-2 Borehole, Saudi Arabia. In: AL-HAJRI, S. & OWENS, B. (eds)
+  1597	
+  1598	       Stratigraphic Palynology of the Palaeozoic of Saudi Arabia. GeoArabia (special
+  1599	
+  1600	       volume), 1, 92–115.
+  1601	
+  1602	STEEMANS, P., RUBINSTEIN, C. & MELO, J. H. G. 2008. Siluro–Devonian miospore
+  1603	
+  1604	       biostratigraphy of the Urubu River area, western Amazon Basin, northern Brazil.
+  1605	
+  1606	       Geobios, 41, 263–282.
+  1607	
+  1608	STEEMANS, P., LE HERISSE, A., MELVIN, J., MILLER, M. A., PARIS, F., VERNIERS, J. &
+  1609	
+  1610	       WELLMAN, C. H. 2009. Origin and radiation of the earliest vascular land plants. Science,
+  1611	
+  1612	       324, 353.
+  1613	STROTHER, P. K. 1991. A classification schema for the Cryptospores. Palynology, 15, 219–236.
+  1614	
+  1615	STROTHER, P. K. 1993. Clarification of the Genus Nematothallus Lang. Journal of Paleontology,
+  1616	
+  1617	       67, 1090–1094.
+  1618	
+  1619	STROTHER, P. K. & TRAVERSE, A. 1979. Plant microfossils from the Llandoverian and
+  1620	
+  1621	       Wenlockian rocks of Pennsylvania. Palynology, 3, 1–21.
+  1622	
+  1623	STROTHER, P. K., AL-HAJRI, S. & TRAVERSE, A. 1996. New evidence for land plants from the
+  1624	
+  1625	       lower Middle Ordovician of Saudi Arabia. Geology, 24, 55–58.
+  1626	
+  1627	TAYLOR, W. A. 1995a. Spores in earliest land plants. Nature, 373, 391–392.
+  1628	
+  1629	TAYLOR, W. A. 1995b. Ultrastructure of Tetrahedraletes medinensis (Strother and Traverse)
+  1630	
+  1631	       Wellman and Richardson, from the Upper Ordovician of Southern Ohio. Review of
+  1632	
+  1633	       Palaeobotany and Palynology, 85, 183–187.
+  1634	
+  1635	TEKBALI, A. O. & WOOD, G. D. 1991. Silurian spores, acritarchs and chitinozoans from the Baní
+  1636	
+  1637	       Walíd Borehole of the Ghadámis Basin, NW Libya. Geology of Libya, IV, 1243–1273.
+  1638	
+  1639	TURNER, R. E. 1984. Acritarchs from the type area of the Ordovician Caradoc Series, Shropshire,
+  1640	
+  1641	       England. Paleontographica, 190, 85–157.
+  1642	
+  1643	VANGUESTAINE, M., STEEMANS, P. & STREEL, M. 1986. Microfossiles végétaux. In:
+  1644	
+  1645	       RACHEBOEUF, P. R. (ed.) le Groupe de Liévin. Pridoli-Lochkovien de l'Artois (N.
+  1646	
+  1647	       France). Biostratigraphie du Paléozoïque. Mém. Soc. Géol. Min., Bretagne, 3, 47–55.
+  1648	
+  1649	VAVRDOVÁ, M. 1982. Recycled acritarchs in the uppermost Ordovician of Bohemia. Casopis pro
+  1650	
+  1651	       Mineralogii a Geologii, 27, 337–345.
+  1652	
+  1653	VAVRDOVÁ, M. 1984. Some plant microfossils of the possible terrestrial origin from the
+  1654	
+  1655	       Ordovician of central Bohemia. Vestnik Ceskeho Geologickeho Ustavu, 59, 165–170.
+  1656	VAVRDOVÁ, M. 1988. Further acritarchs and terrestrial plant remains from the Late Ordovician
+  1657	
+  1658	       at Hlasna Treban (Czechoslovakia). Casopis pro Mineralogii a Geologii, 33, 1–10.
+  1659	
+  1660	VAVRDOVÁ, M. 1989. New acritarchs and miospores from the Late Ordovician of Hlasna
+  1661	
+  1662	       Treban, Czechoslovakia. Casopis pro Mineralogii a Geologii, 34, 403–420.
+  1663	
+  1664	VAVRDOVÁ, M. 1990a. Early Ordovician acritarchs from the locality Myto near Rokycany (late
+  1665	
+  1666	       Arenig, Czechoslovakia). Casopis pro Mineralogii a Geologii, 35, 239–250.
+  1667	
+  1668	VAVRDOVÁ, M. 1990b. Coenobial acritarchs and other palynomorphs from the Arenig/Llanvirn
+  1669	
+  1670	       boundary, Prague basin. Vestnik Ceskeho Geologickeho Ustavu, 65, 237–242.
+  1671	
+  1672	WANG, Y. & LI, J. 2000. Late Silurian trilete spores from northern Jiangsu, China. Review of
+  1673	
+  1674	       Palaeobotany and Palynology, 111, 111–125.
+  1675	
+  1676	WANG, Y. & ZHANG, Y. D. 2009. Llandovery sporomorphs and graptolites from the Manbo
+  1677	
+  1678	Formation, the Mojiang County, Yunnan, China. Proceedings of the Royal Society London B –
+  1679	
+  1680	Biological Sciences, 277, 267–275.
+  1681	
+  1682	WANG, Y., ZHU, H. C. & LI, J. 2005. Late Silurian plant microfossil assemblage from
+  1683	
+  1684	       Guangyuan, Sichuan, China. Review of Palaeobotany and Palynology, 133, 153–168.
+  1685	
+  1686	WELLMAN, C. H. 1993. A land plant microfossil assemblage of Mid Silurian age from the
+  1687	
+  1688	       Stonehaven Group, Scotland. Journal of Micropalaeontolgy, 12, 47–66.
+  1689	
+  1690	WELLMAN, C. H. 1996. Cryptospores from the type area for the Caradoc Series (Ordovician) in
+  1691	
+  1692	       southern Britain. Palaeontology, 55, 103–136.
+  1693	
+  1694	WELLMAN, C. H. & RICHARDSON, J. B. 1993. Terrestrial plant microfossils from Silurian inliers
+  1695	
+  1696	       of the Midland Valley of Scotland. Palaeontology, 36, 155–193.
+  1697	WELLMAN, C. H., HIGGS, K. T. & STEEMANS, P. 2000a. Spore assemblages from a Silurian
+  1698	
+  1699	       sequence in Borehole Hawiyah-151 from Saudi Arabia. In: AL-HAJRI, S. & OWENS, B.
+  1700	
+  1701	       (eds) Stratigraphic Palynology of the Palaeozoic of Saudi Arabia. GeoArabia (special
+  1702	
+  1703	       volume), 1, 116–133.
+  1704	
+  1705	WELLMAN, C. H., HABGOOD, K., JENKINS, G. & RICHARDSON, J. B. 2000b. A new plant
+  1706	
+  1707	       assemblage (microfossil and megafossil) from the Lower Old Red Sandstone of the
+  1708	
+  1709	       Anglo-Welsh Basin: its implications for the palaeoecology of early terrestrial ecosystems.
+  1710	
+  1711	       Review of Palaeobotany and Palynology, 109, 161–196.
+  1712	
+  1713	WETHERALL, P. M., DORNING, K. J. & WELLMAN, C. H. 1999. Palynology biostratigraphy, and
+  1714	
+  1715	       depositional environments around the Ludlow–Pridoli boundary at Woodbury Quarry,
+  1716	
+  1717	       Hereforshire, England. Bolletino della Societa Paleontologica Italiana, 38, 397–404.
+  1718	
+  1719	WILLIAMS, D. M., HARKIN, J. & HIGGS, K. T. 1996. Implications of new microfloral evidence
+  1720	
+  1721	       from the Clew Bay Complex for Silurian relationships in the western Irish Caledonides.
+  1722	
+  1723	       Journal of the Geological Society, London, 153, 771–777.
+  1724	
+  1725	YIN, L. & HE, S. 2000. Palynomorphs from the transitional sequences between Ordovician and
+  1726	
+  1727	Silurian of northwestern Zhejiang, South China. Palynofloras and Palynomophs of China, 186–
+  1728	
+  1729	202.
+  1730	
+exec
+/bin/zsh -lc "rg -n '"'^( *[0-9]+'"\\s+)?(Wenlock|Ludlow|Prid|References|Llandovery|Hirnantian)' data/spores/work/codex/wellman2013/appendix_numbered.txt" in /Users/bwbrook/papers/silurian_plants
+ succeeded in 0ms:
+151:   151	Hirnantian
+166:   166	Llandovery
+218:   218	Llandovery: Rhuddanian
+303:   303	Llandovery (Aeronian)
+364:   364	Llandovery (Telychian)
+435:   435	Wenlock
+509:   509	Wenlock (Sheinwoodian)
+547:   547	Wenlock (Homerian)
+632:   632	Ludlow
+746:   746	Ludlow (Gorstian)
+810:   810	Ludlow (Ludfordian)
+903:   903	Pridoli
+1096:  1096	References
+1179:  1179	       Wenlock area, Shropshire, England. Palaeontology, 34, 601–628.
+1242:  1242	       Llandovery) of Southern Ontario. Palynology, 12, 49–63.
+1412:  1412	       Llandovery) of the Niagara Gorge, Lewiston, New York, U.S.A. Palynology, 6, 221–254.
+1557:  1557	       Wenlock, Silurian), Bornholm. Bulletin of the Geological Society of Denmark, 39, 83–89.
+1596:  1596	       Llandovery, Nuayyim-2 Borehole, Saudi Arabia. In: AL-HAJRI, S. & OWENS, B. (eds)
+1621:  1621	       Wenlockian rocks of Pennsylvania. Palynology, 3, 1–21.
+
+exec
+/bin/zsh -lc "python3 -c 'import re; p=open(\"data/spores/work/codex/wellman2013/appendix_numbered.txt\").read().splitlines(); print(sum(bool(re.search(r\"– ["'^:]{1,80}:",s)) for s in p[:1095])); print(sum(len(s) for s in p[:1095]))'"'" in /Users/bwbrook/papers/silurian_plants
+ succeeded in 0ms:
+140
+50050
+
+codex
+{"items":[{"series_as_given":"Tremadoc","region_as_given":"Peri-Gondwana (Armorica)","country":"Spain","locality":"","questionable_affinity":true,"taxa":[{"as_written":"Attritasporites messaoudi","expanded":"Attritasporites messaoudi","genus_ambiguous":false}],"references":["Fombella 1982"],"source_line":20},{"series_as_given":"Tremadoc","region_as_given":"Southern Gondwana","country":"Algeria","locality":"","questionable_affinity":true,"taxa":[{"as_written":"Abacum rudi","expanded":"Abacum rudi","genus_ambiguous":false},{"as_written":"A. messaoudi","expanded":"Abacum messaoudi","genus_ambiguous":true},{"as_written":"A. scabra","expanded":"Abacum scabra","genus_ambiguous":false},{"as_written":"A. velata","expanded":"Abacum velata","genus_ambiguous":true}],"references":["Combaz 1967","Pittau 1985"],"source_line":22},{"series_as_given":"Tremadoc","region_as_given":"SW Gondwana","country":"Saudi Arabia","locality":"","questionable_affinity":true,"taxa":[{"as_written":"Virgatasporites rudii","expanded":"Virgatasporites rudii","genus_ambiguous":false}],"references":["Molyneux & Al-Hajri 2000"],"source_line":26},{"series_as_given":"Arenig","region_as_given":"Peri-Gondwana (Perunica)","country":"Czech Republic","locality":"","questionable_affinity":true,"taxa":[{"as_written":"Attritasporites messaoudi","expanded":"Attritasporites messaoudi","genus_ambiguous":false},{"as_written":"A. velata","expanded":"Attritasporites velata","genus_ambiguous":true},{"as_written":"Virgatasporites rudi","expanded":"Virgatasporites rudi","genus_ambiguous":false},{"as_written":"V. baccatus","expanded":"Virgatasporites baccatus","genus_ambiguous":false}],"references":["Vavrdová 1990a, b"],"source_line":29},{"series_as_given":"Llanvirn","region_as_given":"Peri-Gondwana (Perunica)","country":"Czech Republic","locality":"","questionable_affinity":true,"taxa":[{"as_written":"Virgatasporites rudi","expanded":"Virgatasporites rudi","genus_ambiguous":false}],"references":["Vavrdová 1990a, b"],"source_line":34},{"series_as_given":"Llanvirn","region_as_given":"SW Gondwana","country":"Saudi Arabia","locality":"","questionable_affinity":false,"taxa":[{"as_written":"Stegambiquadrella contenta","expanded":"Stegambiquadrella contenta","genus_ambiguous":false}],"references":["McClure 1988","Gray 1988","Strother et al. 1996","Molyneux & Al-Hajri 2000"],"source_line":36}]}
+tokens used
+54,815
+{"items":[{"series_as_given":"Tremadoc","region_as_given":"Peri-Gondwana (Armorica)","country":"Spain","locality":"","questionable_affinity":true,"taxa":[{"as_written":"Attritasporites messaoudi","expanded":"Attritasporites messaoudi","genus_ambiguous":false}],"references":["Fombella 1982"],"source_line":20},{"series_as_given":"Tremadoc","region_as_given":"Southern Gondwana","country":"Algeria","locality":"","questionable_affinity":true,"taxa":[{"as_written":"Abacum rudi","expanded":"Abacum rudi","genus_ambiguous":false},{"as_written":"A. messaoudi","expanded":"Abacum messaoudi","genus_ambiguous":true},{"as_written":"A. scabra","expanded":"Abacum scabra","genus_ambiguous":false},{"as_written":"A. velata","expanded":"Abacum velata","genus_ambiguous":true}],"references":["Combaz 1967","Pittau 1985"],"source_line":22},{"series_as_given":"Tremadoc","region_as_given":"SW Gondwana","country":"Saudi Arabia","locality":"","questionable_affinity":true,"taxa":[{"as_written":"Virgatasporites rudii","expanded":"Virgatasporites rudii","genus_ambiguous":false}],"references":["Molyneux & Al-Hajri 2000"],"source_line":26},{"series_as_given":"Arenig","region_as_given":"Peri-Gondwana (Perunica)","country":"Czech Republic","locality":"","questionable_affinity":true,"taxa":[{"as_written":"Attritasporites messaoudi","expanded":"Attritasporites messaoudi","genus_ambiguous":false},{"as_written":"A. velata","expanded":"Attritasporites velata","genus_ambiguous":true},{"as_written":"Virgatasporites rudi","expanded":"Virgatasporites rudi","genus_ambiguous":false},{"as_written":"V. baccatus","expanded":"Virgatasporites baccatus","genus_ambiguous":false}],"references":["Vavrdová 1990a, b"],"source_line":29},{"series_as_given":"Llanvirn","region_as_given":"Peri-Gondwana (Perunica)","country":"Czech Republic","locality":"","questionable_affinity":true,"taxa":[{"as_written":"Virgatasporites rudi","expanded":"Virgatasporites rudi","genus_ambiguous":false}],"references":["Vavrdová 1990a, b"],"source_line":34},{"series_as_given":"Llanvirn","region_as_given":"SW Gondwana","country":"Saudi Arabia","locality":"","questionable_affinity":false,"taxa":[{"as_written":"Stegambiquadrella contenta","expanded":"Stegambiquadrella contenta","genus_ambiguous":false}],"references":["McClure 1988","Gray 1988","Strother et al. 1996","Molyneux & Al-Hajri 2000"],"source_line":36}]}
+real 27.94
+user 3.63
+sys 1.64

@@ -1,0 +1,108 @@
+genus,n_rows,n_docs,species_sample,palynodata_min_ma,palynodata_max_ma
+Boutakoffites,7,3,quibus; elongatus; arectus,230.0,570.0
+Asteroxylon,7,6,sp; mackiei,345.0,395.0
+Simozonotriletes,7,5,sp; subintorustatus; conduplicatus,280.0,421.667
+Monoletes,7,5,laevis; formosa; sp,230.0,570.0
+Striatopiceites,7,3,congoensis; sp; suchonensis,230.0,570.0
+Potonieisporites,7,5,granulatus; sp,230.0,570.0
+Caheniasaccites,6,3,ovatus; elongatus,230.0,570.0
+Confossuspora,6,4,"sp Rubi.& Stee.,2002; reniforma",395.0,429.0
+Qualisaspora,6,4,fragilis,387.0,395.0
+Potoniea,6,4,illinoiensis; sp,195.0,570.0
+Cingulizonates,6,5,"sp.1 Beju,1967; glaber; cuvillieri; sp.1",370.0,395.0
+Stenozonomesotriletes,6,1,sp,395.0,500.0
+Genus a,6,1,sp.A,387.0,395.0
+Pertica,6,4,sp; dalhousii; varia,345.0,395.0
+Corystisporites,6,5,sp,280.0,395.0
+Saccammia,6,3,sp,230.0,408.333
+Craspedispora,6,5,craspeda; paranaensis,345.0,395.0
+Palynomorph,6,5,sp.D; sp; sp.E,195.0,570.0
+Reinschospora,6,4,speciosa; triangularis; bellitas,230.0,570.0
+Archeamoeba,6,2,devorans; proteiformis,395.0,435.0
+Platysaccus,6,4,leschiki; papilionis; sp,65.0,570.0
+Ginkgocycadophytus,6,5,glabra; cymbatus,230.0,570.0
+Anaplanisporites,6,5,sp.15113; sp.15107; sp; extremus,360.0,395.0
+Vesicaspora,6,3,ovata; potoniei; glandulosum; sp,230.0,570.0
+Strotersporites,6,3,asulcus; decorus; sp,230.0,570.0
+Tripapillasporis,6,3,simplex; maculatus,387.0,395.0
+Limitisporites,6,3,elilaensis; plicatus,230.0,570.0
+Rubinella,5,2,sp.15123,335.0,387.0
+Rotaspora,5,5,"sp. More.,1976; sp",230.0,570.0
+Pollen,5,5,,0.0,4100.0
+Nikitinsporites,5,5,canadensis; spitsbergensis,345.0,395.0
+Neoraistrickia,5,5,sp; ramosa; congoensis,230.0,570.0
+Crossotheca,5,4,sp; sagittata; mcluckiei,230.0,570.0
+Schizosporis,5,2,reticulatus; sp,435.0,500.0
+Zonalessporites,5,3,sibiricus; sp,280.0,395.0
+Periplecotriletes,5,5,antiquus; tortus,280.0,395.0
+Baculatisporites,5,3,semilucensis; fusticulus,280.0,395.0
+Todites,5,1,pseudoraciborskii; thomasii; lobulatus; princeps; nebbensis,395.0,404.0
+Fusacolpites,5,3,ovatus; fusus,230.0,570.0
+Discernisporites,5,3,"sp. Utti.& Neve.,1970; micromanifestus; irregularis; concentricus",280.0,395.0
+Vallatialetes,5,3,aureolatus,431.0,456.667
+Krithodeophyton,5,4,croftii,345.0,395.0
+Rellimia,5,3,thomsonii,345.0,395.0
+Oculatisporis,5,5,mirandus,370.0,395.0
+Radiatispinospora,4,2,yunnanensis; langispinosa; longispinosa; radiata,289.0,395.0
+Catenipora,4,2,sp; wrighti; tapaensis,436.666,500.0
+Selaginellites,4,1,primaevus; elongatus; suissei; borealis,230.0,570.0
+Achaeozonotriletes,4,1,chulus,392.332,423.0
+Scylospora,4,1,glebosa,387.0,395.0
+Sporonites,4,3,microtuberosus; vinculatus; spinulistratus; globuliformis,230.0,570.0
+Trilete,4,4,"type 1 Burg.& Rich.,1991; sp",378.0,440.0
+Attritasporites,4,3,sp,468.332,500.0
+Tritonialetes,4,3,vacuolus,431.0,456.667
+Latosporites,4,3,"colliensis; sp.A Pros.& Gros.,1995; sp.B Pros.& Gros.,1995; sp. Gros.& Pros.,1991",230.0,570.0
+Rhoipites,4,1,alveolatus; pilatus; sphaerica,5.0,482.6
+Biharisporites,4,4,sp,345.0,395.0
+Trilete miospore,4,1,"type A Dufk.,1995; type B Dufk.,1995; type D Dufk.,1995; type C Dufk.,1995",414.0,415.333
+Triangulizonotriletes,4,2,gruziensis,360.0,408.333
+Tetraxylopteris,4,4,schmidtii,345.0,395.0
+Genus b,4,1,,387.0,395.0
+Schopfites,4,2,claviger,280.0,395.0
+Renalia,4,3,hueberi; sp,345.0,395.0
+Punctatosporites,4,4,labiatus,230.0,570.0
+Vestigisporites,4,3,methoris; sp; balmei,230.0,570.0
+Crescentipollenites,4,2,brevis; fuscus,230.0,570.0
+Nothia,4,3,aphylla,370.0,395.0
+Vestitusdyadus,4,2,qalibahinus,432.0,440.0
+Dicrospora,4,2,multifurcata; bedfordi,314.0,395.0
+Archaicusporites,4,1,asturicus; torrestionensis; sp,382.666,435.0
+Anulatisporites,4,2,annulatus; jonkeri,370.0,395.0
+Deltoidospora,4,4,sp,65.0,570.0
+Tortilicaulis,4,3,transwalliensis; sp,345.0,404.0
+Limbosporites,4,4,sp; crassus,370.0,395.0
+Pilasporites,4,1,,353.0,387.0
+Divarisaccus,4,3,strengeri; lelei,230.0,570.0
+Valiasaccites,4,3,elilaensis; validus,230.0,570.0
+Striatites,4,3,sp; sewardii,230.0,570.0
+Indotriradites,4,3,korbaensis; sp,230.0,570.0
+Vittatina,4,3,sp; subsaccata,230.0,570.0
+Kryshtofovichia,4,4,africana,345.0,395.0
+Procoronaspora,4,3,"sp. McGr.et al,1970; luteola",370.0,387.0
+Rebuchia,4,4,ovata,345.0,395.0
+Pulvinispora,4,2,depressa; scolecophora,314.0,395.0
+Rhacophyton,4,4,ceratangium; sp,280.0,395.0
+Stenozonaletes,4,3,hymenodum; pliciformis; quadratum,370.0,500.0
+Sporomorph,4,2,sp.I; sp; sp.II,392.332,427.0
+Gravisporites,4,2,sp; compactus; zadonicus; basilaris,345.0,395.0
+Pardaminespora,4,3,maravedi,378.0,414.0
+Valvisisporites,3,2,,230.0,570.0
+Mesotriletes,3,2,,435.0,500.0
+Aneurophyton,3,2,germanicum,345.0,395.0
+Archaeozonotrilites,3,1,meandricus; variabilis; columnus,360.0,395.0
+Punctasaccites,3,2,ovatus; ellipticus,230.0,570.0
+Trimerophyton,3,3,robustius,345.0,395.0
+Unidentified,3,1,sp,370.0,389.666
+Sporites,3,3,problematicus,0.0,570.0
+Chaetosporites,3,3,pollenisimilis,431.0,456.667
+Leschikisporites,3,2,"sp.A; sp. Gros.& Pros.,1991; sp.B Pros.& Gros.,1995",395.0,414.0
+Archedesmoides,3,1,granulatus; esthoniensis,345.0,435.0
+Retusozonotriletes,3,3,sp; pychovii,345.0,395.0
+Milleria,3,1,thomsonii,345.0,395.0
+Curvatisporites,3,1,scurrus; curvatus; exisus,345.0,395.0
+Perimetrisporites,3,1,sp; parvus,360.0,395.0
+Punctatasporites,3,3,flavus,230.0,570.0
+Besselia,3,1,polaris; nunaatica,438.332,440.0
+Cyclostigma,3,3,kiltorkense,345.0,395.0
+Trilete spores,3,3,sp,389.333,429.0

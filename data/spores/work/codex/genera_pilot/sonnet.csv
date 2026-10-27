@@ -1,0 +1,81 @@
+genus,spore_class,confidence,basis,source
+Retusotriletes,trilete-laevigate,high,smooth trilete with curvaturae perfectae delimiting contact areas (retusoid),"Richardson & Lister 1969, Palaeontology 12: 201-252 (genus discussion read); type species disputed (R. pychovii vs R. simplex, Naumova 1953)"
+Emphanisporites,trilete-ornamented,high,radial muri on proximal contact areas; distal coni/grana in some species,"Richardson & Lister 1969, Palaeontology 12: 201-252 (E. micrornatus diagnosis); Allen 1965, Palaeontology 8: 687-748 (type E. rotatus McGregor 1961)"
+Leiotriletes,trilete-laevigate,high,"smooth-walled trilete, no sculpture or cingulum","Allen 1965, Palaeontology 8: 687-748 lists genus (type L. sphaerotriangulus); no diagnosis read"
+Archaeozonotriletes,trilete-laevigate,medium,"trilete, laevigate or punctate exine with distal patina (Allen's emendation); many Naumova species are apiculate or cavate","Allen 1965, Palaeontology 8: 687-748 (emended diagnosis read)"
+Stenozonotriletes,trilete-laevigate,low,"narrow cingulum, smooth wall; status doubtful (type S. conformis lacks clear crassitude; S. laevigatus moved to Punctatisporites)","Richardson & Lister 1969, Palaeontology 12: 201-252; Allen 1965, Palaeontology 8: 687-748"
+Apiculiretusispora,trilete-ornamented,high,retusoid trilete with apiculate/spinose sculpture,"Richardson & Lister 1969, Palaeontology 12: 201-252 (A. cherata diagnosis); type A. brandtii Streel 1964"
+Ambitisporites,trilete-laevigate,high,smooth-walled trilete with narrow equatorial crassitude,"Richardson & Lister 1969, Palaeontology 12: 201-252 (remarks on genus); Burgess 1991, Palaeontology 34: 575-599 (type A. avitus Hoffmeister 1959)"
+Hymenozonotriletes,uncertain,low,"heterogeneous Naumova genus of zonate/cavate trilete spores, smooth to sculptured; Allen notes misread cavate forms","Allen 1965, Palaeontology 8: 687-748 (comparison notes only)"
+Dictyotriletes,trilete-ornamented,high,distal reticulum of muri and lumina,"Richardson & Lister 1969, Palaeontology 12: 201-252 (Dictyotriletes sp. A description)"
+Acanthotriletes,trilete-ornamented,high,spinose sculpture on trilete spore,"Allen 1965, Palaeontology 8: 687-748 (A. raptus; type A. ciliatus)"
+Lophotriletes,trilete-ornamented,high,trilete with small coni/pointed bumps,none checked
+Spore,not-a-spore,high,non-genus placeholder for indeterminate spore,none checked
+Synorisporites,trilete-ornamented,high,curvaturae perfectae/equatorial crassitude; distal verrucae and/or muri,"Richardson & Lister 1969, Palaeontology 12: 201-252 (genus diagnosis read)"
+Punctatisporites,trilete-laevigate,high,"smooth to infrapunctate trilete, circular amb, no sculpture","Allen 1965, Palaeontology 8: 687-748 lists genus (type P. punctatus Ibrahim 1933); no diagnosis read"
+Brochotriletes,trilete-ornamented,medium,foveate/reticulate sculpture with muri and ornaments,"Steemans 1989, Mem. Explic. Cartes Geol. Min. Belgique 27 (type B. foveolatus Naumova; B. bellatulus description)"
+Cymbosporites,trilete-ornamented,high,"patinate trilete; patina sculptured with cones, spines, granules","Allen 1965, Palaeontology 8: 687-748 (diagnosis read)"
+Dibolisporites,trilete-ornamented,high,distal baculate/pilate/biform processes; smooth proximal face,"Steemans 1989, Mem. Explic. Cartes Geol. Min. Belgique 27 (type D. echinaceus description); Richardson 1965 not read"
+Chelinospora,trilete-ornamented,high,patina reticulate or foveo-reticulate (muri),"Allen 1965, Palaeontology 8: 687-748 (diagnosis read)"
+Trachytriletes,trilete-ornamented,low,rough (trachy-) exine implied by name; no description found,none checked
+Calamospora,trilete-laevigate,high,"thin-walled smooth trilete, often folded; no sculpture","Allen 1965, Palaeontology 8: 687-748 lists genus (type C. hartungiana); no diagnosis read"
+Streelispora,trilete-ornamented,high,equatorial crassitude; distal grana/coni/spinae/biform elements,"Richardson & Lister 1969, Palaeontology 12: 201-252 (genus diagnosis read)"
+Perotrilites,trilete-ornamented,medium,"perinate/exoexinal outer layer sculptured with rods, grana or cones; blurs with Grandispora","Richardson & Lister 1969, Palaeontology 12: 201-252 (P. microbaculatus diagnosis); Steemans 1989, Mem. Explic. Cartes Geol. Min. Belgique 27 (remark)"
+Tetrahedraletes,cryptospore-tetrad,high,"permanent fused tetrahedral tetrad of laevigate crassitate spores, naked","Burgess 1991, Palaeontology 34: 575-599 (emended diagnosis read); Strother & Traverse 1979"
+Verrucosisporites,trilete-ornamented,high,verrucate sculpture,"Steemans 1989, Mem. Explic. Cartes Geol. Min. Belgique 27 (type V. verrucosus Ibrahim 1933; species descriptions with verrucae)"
+Aneurospora,trilete-ornamented,medium,equatorial crassitude with small grana/coni/spines; type A. goensis later moved to Geminospora,"Richardson & Lister 1969, Palaeontology 12: 201-252; Steemans 1989, Mem. Explic. Cartes Geol. Min. Belgique 27 (A. bollandensis)"
+Lophozonotriletes,trilete-ornamented,low,zonate trilete with coarse processes/tubercles inferred from species comparisons,"Allen 1965, Palaeontology 8: 687-748 (comparison note on L. macrogrumosus only)"
+Dyadospora,cryptospore-dyad,high,naked laevigate unfused dyads that separate into two alete spores,"Burgess 1991, Palaeontology 34: 575-599 (genus note read); Strother & Traverse 1979"
+Granulatisporites,trilete-ornamented,high,granulate sculpture (grana),"Allen 1965, Palaeontology 8: 687-748 (G. muninensis diagnosis; type G. granulatus Ibrahim)"
+Nodospora,cryptospore-tetrad,high,permanent tetrad (cross-tetrad form); type N. burnhamensis synonymised with Tetrahedraletes by Burgess 1991,"Burgess 1991, Palaeontology 34: 575-599 (discussion read); Strother & Traverse 1979"
+Cyclogranisporites,trilete-ornamented,high,granulate trilete with circular amb,"Allen 1965, Palaeontology 8: 687-748 lists genus (type C. leopoldi); no diagnosis read"
+Camptozonotriletes,trilete-ornamented,high,"equatorial flange/crassitude; distal verrucae, cones or bacula","Allen 1965, Palaeontology 8: 687-748 (C. asaminthus diagnosis); Steemans 1989, Mem. Explic. Cartes Geol. Min. Belgique 27 (C. baculatus)"
+Azonomonoletes,other-spore,medium,monolete; Subturma name for azonate monolete spores used as a genus,"GNS Science NZ fossil spore catalogue (pal.gns.cri.nz), after Burger 1994: Subturma Azonomonoletes of Turma Monoletes"
+Grandispora,trilete-ornamented,high,"cavate trilete, exoexinal extension; distal cones/spines","Allen 1965, Palaeontology 8: 687-748 (G. diamphida diagnosis; type G. spinosa HSM 1955)"
+Hispanaediscus,cryptospore-monad,high,"hilate cryptospore, laevigate or sculptured","Wellman 1993, J. Micropalaeontology 12: 47-66 (abstract: hilate cryptospore); Burgess & Richardson 1991, Palaeontology 34: 601-628 (genus emended)"
+Anapiculatisporites,trilete-ornamented,high,apiculate/spinose sculpture,"Steemans 1989, Mem. Explic. Cartes Geol. Min. Belgique 27 (A. carminae, A. chistosus: spines); Potonie & Kremp 1954 not read"
+Reticulatisporites,trilete-ornamented,high,distal muri enclosing lumina (reticulum),"Allen 1965, Palaeontology 8: 687-748 (R. emsiensis diagnosis; type R. reticulatus Ibrahim)"
+Velatitetras,cryptospore-tetrad,high,obligate tetrad enclosed in an envelope,"Burgess 1991, Palaeontology 34: 575-599 (genus diagnosis read)"
+Laevolancis,cryptospore-monad,high,laevigate hilate monad (dissociated dyad); morphology from task definition,"Burgess & Richardson 1991, Palaeontology 34: 601-628 (new genus, abstract only)"
+Acinosporites,trilete-ornamented,high,"distal reticulum with cones/spines at muri junctions, or coarse spines/pila","Richardson & Lister 1969, Palaeontology 12: 201-252 (A. salopiensis diagnosis); Steemans 1989, Mem. Explic. Cartes Geol. Min. Belgique 27"
+Pseudodyadospora,cryptospore-dyad,high,naked laevigate permanently fused pseudodyad,"Burgess 1991, Palaeontology 34: 575-599 (type P. laevigata Johnson 1985; Dyadospora discussion)"
+Pachytetras,cryptospore-tetrad,medium,tetrad genus (-tetras) listed among cryptospores; morphology not read,"Wellman, Steemans & Vecoli 2013, Appendix 2 (name lists); Steemans & Wellman 2018 key table not read"
+Phyllothecotriletes,trilete-laevigate,medium,"smooth retusoid trilete, curvaturae perfectae, thickened apical area; Streel species moved to Retusotriletes","Richardson & Lister 1969, Palaeontology 12: 201-252 (R. cf. triangulatus discussion)"
+Azonaletes,uncertain,low,"Subturma name for alete azonate spores, not a genus; Devonian alete miospores of unspecified affinity","GNS Science NZ fossil spore catalogue (pal.gns.cri.nz), after Burger 1994: Subturma Azonaletes, Turma Aletes-Inaperturates"
+Dacrydium,not-a-spore,high,"extant podocarp conifer; pollen, modern contaminant (Palynodata 5 Ma span)","Wikipedia 'Dacrydium' (Lamb.), read"
+Bachiasporites,uncertain,low,no description found for this name,none checked
+Megaspore,not-a-spore,high,non-genus placeholder (indeterminate megaspore),none checked
+Pilosisporites,trilete-ornamented,medium,"Cretaceous fern spore genus, trilete, sculptured (Apiculati); anachronistic for Palaeozoic","GNS Science NZ fossil spore catalogue (pal.gns.cri.nz), after Burger 1994, taxon 147; Delcourt & Sprumont 1955 not read"
+Crissisporites,uncertain,low,Chinese Early Devonian genus; no description found,none checked
+Contagisporites,other-spore,medium,megaspore (Devonian; Archaeopteris-type macrospore),"Fairon-Demaret, Leponce & Streel 2001, Rev. Palaeobot. Palynol. 115: 79-97 (abstract: macrospores most probably Contagisporites)"
+Trematozonotriletes,trilete-laevigate,low,zonate/patinate trilete with punctate wall; sculpture not confirmed,"Allen 1965, Palaeontology 8: 687-748 (comparison notes on T. irregularis only)"
+Tetrad,not-a-spore,high,"non-genus placeholder (indeterminate tetrads, probably cryptospore)",none checked
+Caryapollenites,not-a-spore,high,Cenozoic Juglandaceae (angiosperm) pollen,"USGS paper on Momipites-Caryapollenites lineage, Wind River Basin (abstract read via search)"
+Cathaiopteridium,not-a-spore,medium,"fern-like Devonian plant macrofossil from Yunnan (Protopteridium minutum), not a dispersed spore",none checked (search snippets only)
+Morphysaites,uncertain,low,no description found for this name,none checked
+Pyritospheres,not-a-spore,high,framboidal pyrite spherules (mineral),none checked
+Trilobozonotriletes,trilete-laevigate,low,trilete with auriculate cingulum; spore body laevigate or punctate,"Karczewska & Turnau 1974, Acta Palaeontol. Polonica 19: 291ff (emended diagnosis of Tripartites (Trilobozonotriletes) incisotrilobus)"
+Spinososporites,trilete-ornamented,low,spinose trilete implied by name; Carboniferous records; no description found,none checked
+Panderia,not-a-spore,high,"trilobite genus (Corynexochida, Ordovician)","Wikipedia 'Panderia' (Volborth 1863), read"
+Dyad,not-a-spore,high,"non-genus placeholder (indeterminate dyads, probably cryptospore)",none checked
+Idanothekion,not-a-spore,low,"-thekion name suggests a sporangium or fertile organ, not a dispersed spore; not verified",none checked
+Miospore,not-a-spore,high,non-genus placeholder (indeterminate miospore),none checked
+Tricolpites,not-a-spore,high,"tricolpate angiosperm pollen, Cretaceous onward",USGS Prof. Paper 770 catalogue: Tricolpites Cookson ex Couper 1953 (via search snippet)
+Chasmatosporites,not-a-spore,medium,Mesozoic gymnosperm (cycadophyte-type) pollen form genus,none checked (Palynodata snippets attribute species to Nilsson 1958)
+Tetrads,not-a-spore,high,"non-genus placeholder (indeterminate tetrads, probably cryptospore)",none checked
+Elilasaccites,not-a-spore,medium,"saccate pollen, Permian Gondwana (Congo)",none checked (Bose & Kar 1966 named as authority in search snippets)
+Vesicatispora,uncertain,low,Gao 1983 Chinese Devonian-Carboniferous genus; morphology not found,none checked
+Fustisispora,cryptospore-monad,low,"monospecific cryptospore genus; unit inferred as monad, not verified","Wellman 1993, Trans. R. Soc. Edinb. Earth Sci. 84: 117-136 (abstract only)"
+Abietineaepollenites,not-a-spore,high,bisaccate conifer pollen form genus (Pinaceae-type),GBIF record: R. Potonie 1955 (via search)
+Aglaophyton,not-a-spore,high,"Rhynie chert land plant macrofossil (A. major, Edwards 1986)","Wikipedia 'Aglaophyton', read"
+Lukugasporites,uncertain,low,Permian Congo genus (Kar et al. 1967); morphology not found,none checked
+Bryales,not-a-spore,high,"moss order (Bryopsida), not a spore genus","Wikipedia 'Bryales' (Limpr.), read"
+Discina,not-a-spore,medium,brachiopod (Discinidae) or ascomycete fungus; not a spore genus,Wikipedia 'Discina' disambiguation (search result)
+Camarozonotriletes,trilete-ornamented,medium,camerate trilete with interradial thickenings; distal capillae/pila/bacula/spines/cones,"Steemans 1989, Mem. Explic. Cartes Geol. Min. Belgique 27 (C. parvus description; type C. devonicus Naumova 1953)"
+Cryptospore,not-a-spore,high,"non-genus category (species field: dyads, tetrads)",none checked
+Favosites,not-a-spore,high,tabulate coral (Lamarck 1816),"Wikipedia 'Favosites', read"
+Sphaerasaccus,cryptospore-monad,medium,"cryptospore genus; enveloped monad inferred from name, not verified","fossiilid.info genus page (cryptospores); Steemans, Higgs & Wellman 2000"
+Polypodiisporites,other-spore,high,"monolete fern spore (Polypodiaceae-type), Palaeogene-Neogene; anachronistic span","GNS Science NZ fossil spore catalogue (pal.gns.cri.nz), after Burger 1994, taxon 10 (P. inangahuensis, Monoletes)"
+Ilexpollenites,not-a-spore,high,Cenozoic Ilex (Aquifoliaceae) tricolpate pollen,none checked
+Anemia,not-a-spore,medium,"extant fern genus name (Schizaeales), not a dispersed-spore genus; misfiled","Wikipedia 'Anemia (plant)' (Sw. 1806), read"
+Trilites,trilete-ornamented,low,"trilete spore, type T. tuberculiformis suggests tuberculate; Cretaceous-Cenozoic",none checked

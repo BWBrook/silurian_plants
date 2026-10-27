@@ -1,0 +1,1648 @@
+Reading additional input from stdin...
+OpenAI Codex v0.164.0
+--------
+workdir: /Users/bwbrook/papers/silurian_plants
+model: gpt-6.1-sol
+provider: openai
+approval: never
+sandbox: read-only
+reasoning effort: high
+reasoning summaries: none
+session id: 01a17b9c-598e-7c22-b74a-d768cf4d518b
+--------
+user
+You are vetting early dispersed-spore records for a palaeobotany research dataset in this repository (read AGENTS.md; do not edit any file).
+
+Input: data/spores/work/codex/vetting/docs1.csv lists 61 documents from Palynodata, a palynology literature database to 2006. Each document reports spore taxa in Ordovician to early Silurian rocks, older than the Wenlock. For each document you have its year, authors, title, journal, locations, the ICS stage range assigned to its records, and its taxa with our spore class: cryptospore monads, dyads and tetrads; trilete spores; and other spores. data/spores/work/codex/vetting/wellman2013_references.txt lists the references that Wellman, Steemans & Vecoli (2013) used for their curated list of Ordovician–Silurian spore assemblages, which omits poorly dated, poorly preserved or doubtfully identified assemblages.
+
+For EVERY document (all 61; copy doc exactly) return:
+- verdict:
+  - accept: a credible record of these spore types at this age;
+  - doubtful: plausible but questioned, poorly dated, possibly contaminated or reworked, or not corroborated;
+  - reject: widely regarded as erroneous, e.g. trilete spores claimed from the Lower–Middle Ordovician in early studies and not confirmed, or a dating later revised out of this age.
+- in_wellman2013: yes if the document's author-and-year citation appears among the Wellman et al. references; no; or unclear.
+- reason: one or two sentences. Be specific about which taxa or age claim the verdict concerns. A document may be credible for its cryptospores but doubtful for its trilete spores; say so.
+- checked: what you consulted (e.g. "Wellman 2013 list", a later review, or "title and taxa only").
+
+Points to weigh:
+- trilete spores are now generally accepted from the Katian onward (e.g. Steemans et al. 2009) and contested earlier;
+- cryptospores are accepted from the Dapingian–Darriwilian (e.g. Rubinstein et al. 2010; Strother et al. 1996);
+- Hooper et al. (2026) regard a Sandbian Swedish trilete record as doubtful;
+- many pre-1980 Soviet and French reports of Ordovician trilete spores are considered contamination or misidentification.
+
+Use web search where it helps. Do not invent sources. Return JSON only, matching the schema, for all 61 documents.
+codex
+I’ll read the repository guidance, all 61 records and the Wellman reference list, then check the disputed age and spore claims against later sources.
+exec
+/bin/zsh -lc "rg -n 'silurian|spore|Wellman' /Users/bwbrook/.codex/memories/MEMORY.md" in /Users/bwbrook/papers/silurian_plants
+ exited 1 in 0ms:
+exec
+/bin/zsh -lc 'cat AGENTS.md; head -n 5 data/spores/work/codex/vetting/docs1.csv; wc -l data/spores/work/codex/vetting/docs1.csv data/spores/work/codex/vetting/wellman2013_references.txt' in /Users/bwbrook/papers/silurian_plants
+ succeeded in 0ms:
+# silurian_plants: agent guidance
+
+Exploratory, long-term programme on simulation modelling of early land-plant evolution, Late
+Ordovician to Early Devonian (c. 458–393 Ma). Read `docs/charter.md` for purpose, stage and
+route, and `docs/decisions.md` for what has been settled. Current stage: orientation; no
+research question has been chosen, so do not start model code without a framing decision
+recorded in `docs/decisions.md`.
+
+## Layout
+
+- `taxa/`: one information card per taxon. `taxa/_template.md` is the schema; `taxa/README.md`
+  is generated.
+- `docs/`: charter, decisions, primer, precedents review, candidate framings, the source register
+  (`docs/sources.md`, the index of all data held and needed: update it when a source changes) and
+  the spore-compilation plan.
+- `data/timescale.csv`: ICS v2024/12 stage base ages, the single source of numerical ages.
+- `data/traits.csv`: generated trait matrix, one row per card.
+- `data/eprp/`: material extracted from Barry's EPRP programme: literature, PBDB and Macrostrat
+  records, climate and palaeogeography context, and software pointers. Treat it as inputs, not
+  verified facts. Read each area's README before use, and regenerate tables with its scripts
+  rather than editing them. `data/eprp/local/` is git-ignored (unlicensed, no-derivatives or bulky
+  material) and exists only on mac-mini; rebuild it from `deep-server` with the scripts.
+- `docs/audits/`: independent checks of cards and deposits.
+- `tools/cards.py`: card validation, DOI checking and index generation.
+
+## Commands
+
+```bash
+uv run tools/cards.py check   # schema and vocabulary
+uv run tools/cards.py dois    # DOIs in taxa/ and docs/ against Crossref
+uv run tools/cards.py index   # regenerate taxa/README.md
+uv run tools/cards.py matrix  # regenerate data/traits.csv
+```
+
+Run `check`, `index` and `matrix` after editing cards, and `dois` after adding references.
+
+## Conventions
+
+- Facts, numbers and citations come from sources read in the task, never from memory. Every
+  DOI is verified against Crossref; never guess one. In references lists, one reference per line
+  with first author, year, title and DOI, so `dois` can compare them.
+- When a source cannot be read in full (paywall, blocked supplement, print only), add it to
+  `docs/closed-literature.csv` with what it would settle; Barry obtains these through his
+  institutional login. Never bypass access controls. PDFs he obtains go in `library/closed/`,
+  which is git-ignored: copyrighted texts are never committed.
+- Never send Barry's email address or other personal data to any service or API, including ones
+  that ask for a contact email.
+- Separate observation, interpretation and speculation; present disputes with both sides.
+- Cards record ages as ICS stage names; give finer ages in `range.notes` with their source.
+  Literature before 2024 mostly uses the GTS2012 Early Devonian boundaries (Lochkovian 419.2,
+  Pragian 410.8, Emsian 407.6 Ma), which differ from ours by up to 3 Myr; see `docs/primer.md` §1.
+- Card traits: `absent` means observed absent, `unknown` means not preserved or not reported,
+  `na` means not applicable. Add vocabulary to `tools/cards.py` when a real case needs it.
+- A card is `draft` until a second agent or Barry has checked its facts; then `reviewed`.
+- British spelling. Dense, precise prose; no filler.
+- Record decisions that shape the programme in `docs/decisions.md`, naming who decided. Keep
+  the AI-roles section of `docs/charter.md` current: the work will be published with a full
+  statement of which systems did what.
+- Commit to `main` when work reaches a coherent state, and push.
+doc,year,authors,title,journal,locations,ics_ranges,taxa
+01023,1990,"Keegan,J.B.;Rasul,S.M.;Shaheen,Y.","Palynostratigraphy of the Lower Palaeozoic, Cambrian to Silurian, sediments of the Hashemite Kingdom of Jordan. (In: Special Issue: Circum-Mediterranean Palynology. B.Owens and H.Visscher, editors)",Review of Palaeobotany and Palynology,Jordan,Rhuddanian-Aeronian; Gorstian-Ludfordian; Aeronian-Ludfordian,trilete-laevigate: Ambitisporites sp | trilete-laevigate: Archaeozonotriletes sp | trilete-ornamented: Emphanisporites sp | cryptospore-dyad: Dyadospora murusdensa
+01272,1990,"Rahmani-Antari,K.","Palynological study and evaluation of the Thermal Alteration Index, (TAI), of the Paleozoic Section of Well Dot 1 (Doukkala Basin, Central-West Morocco).",Review of Palaeobotany and Palynology,Morocco,Rhuddanian-Pridoli,trilete-laevigate: Ambitisporites avitus | trilete-laevigate: Retusotriletes sp | trilete-laevigate: Punctatisporites dilutus
+01859,1967,"Grignani,D.",Paleozoic spores and Triassic pollen grains from some Tunisian Well samples.,Review of Palaeobotany and Palynology,Tunisia,Rhuddanian-Pridoli,trilete-ornamented: Reticulatisporites facetus | trilete-laevigate: Calamospora sp | trilete-ornamented: Cyclogranisporites sp | trilete-ornamented: Cyclogranisporites minutus | trilete-unspecified: Dulhuntyispora minuta | trilete-laevigate: Calamospora microrugosa | trilete-ornamented: Verrucosisporites sp | trilete-ornamented: Cyclogranisporites parvipunctatus
+01891,1965,"Taugourdeau,J.",Reports on Pre-Devonian spores.,"Reunion de la Commission Internationale de Microflora du Paleozoique,6th,Sheffield.Report of Group No .4",USSR,Rhuddanian-Pridoli,trilete-ornamented: Emphanisporites
+      62 data/spores/work/codex/vetting/docs1.csv
+     115 data/spores/work/codex/vetting/wellman2013_references.txt
+     177 total
+
+exec
+/bin/zsh -lc "sed -n '1,100p' docs/charter.md; sed -n '1,100p' docs/decisions.md; rg --files | rg 'hooper|wellman|spores|2013' | head -n 60" in /Users/bwbrook/papers/silurian_plants
+ succeeded in 0ms:
+# Charter
+
+Status: **Stage 0, orientation** (opened 2026-10-26). No research question is chosen yet.
+
+## The idea
+
+Barry's starting point, in his words (chat, 2026-10-26): "a simulation modelling project on the
+evolution of early land plants (late Ordovician to early Devonian), but it's a very nascent
+thought". He frames it as "a long-term development project that might prove infeasible or
+uninteresting, but is worth … at least exploring", with no hurry, and with the structure left
+free to evolve.
+
+## Why this interval
+
+Between roughly 470 and 393 Ma, land plants went from a dispersed-spore record with no
+recognisable bodies, through centimetre-scale leafless axes, to lycopsids and euphyllophytes with
+leaves, roots, secondary-growth precursors and metre-scale height. Nearly every innovation that
+defines vascular plants appears in that window: desiccation-tolerant spores, cuticle and
+stomata, lignified conducting cells, branching sporophytes independent of the gametophyte,
+apical dominance, leaves and roots. The same plants are implicated in changes to weathering,
+atmospheric CO2 and O2, river form and soil. The record is unusually uneven, with abundant spores
+and a few exceptional deposits (the Rhynie Chert above all) set against long gaps in
+megafossils, so most explanations of the pattern remain verbal. That combination of a major
+evolutionary transition, rich constraints and few quantitative tests is the case for modelling.
+
+## What would make it worth doing
+
+A framing earns a modelling programme if it meets all four tests:
+
+1. **Discriminating evidence.** Competing hypotheses predict outcomes that the fossil, proxy or
+   experimental record can tell apart: trait sequences, timing, size distributions, diversity
+   or disparity patterns, geochemical signals.
+2. **Novelty.** The model adds something the precedents (`docs/precedents.md`) do not: a
+   mechanism, a coupling, a confrontation with data, or a reanalysis that changes a conclusion.
+3. **Tractability.** The data can be assembled and the model run with resources on the mesh,
+   without years of bespoke data collection.
+4. **Interest.** Barry finds the question worth his attention.
+
+If no framing passes tests 1 and 2 after orientation, the project is parked with a short written
+account of why. That account is itself a useful output.
+
+## Route
+
+0. **Orientation** (current): taxon cards (`taxa/`), a period primer (`docs/primer.md`), a review
+   of modelling precedents (`docs/precedents.md`) and candidate framings (`docs/framings.md`).
+   Ends with a choice of framing, which is Barry's call on a recommendation from the agents.
+1. **Sketch:** the smallest end-to-end model of the chosen framing, deterministic where possible.
+2. **Ground:** null models, baselines and the data the model will confront (trait matrices built
+   from the cards, occurrence data, proxy series).
+3. **Enrich:** one mechanism at a time, each motivated by a discrepancy with data.
+4. **Compare:** contrasts that discriminate between competing explanations.
+5. **Synthesise:** what is robust, what depends on representation, and what is next.
+
+Stages are a guide, not approval gates. Barry's operating principle applies: reversible work
+proceeds and is shown afterwards; first public release, submission and outward-facing messages
+are his decisions.
+
+## Outputs
+
+The repository is private for now. Candidate outputs, in any combination: the card collection
+and trait matrix as an open dataset, a review or perspective, a modelling paper with code and
+data archived, and the human–AI correspondence record published alongside.
+
+## Contributors and AI roles
+
+- Barry W. Brook: originator, scientific adviser and final reviewer.
+- Claude Opus 5.5 (Anthropic, `claude-opus-5-5`) in Claude Code: orchestration, programme
+  design, synthesis, framings, tooling.
+- Claude Sonnet 5.5 (Anthropic) subagents: literature research and first drafts of taxon cards,
+  the primer and the precedents review.
+
+`docs/decisions.md` records who decided what and when, for the eventual statement of AI roles.
+# Decisions
+
+Dated record of decisions that shape the programme. Newest first. Say who decided, and quote
+Barry exactly (with source) or label a paraphrase.
+
+## 2026-10-27: evidence base, tranche 2
+
+- **Scope** (Barry, chat, 2026-10-27): before commenting further on the hypothesis, fill out the
+  core evidence base, "to make sure all the relevant data on the time period in question and all
+  the specimens (from databases) are properly sourced, indexed and extracted", continuing to work
+  with the EPRP session as required.
+- **Source register** (Claude): `docs/sources.md` lists every held and missing source with status,
+  licence and who does the work. Database and deposit work goes to the EPRP session (request sent
+  2026-10-27); literature extraction stays here.
+- **Cards, tranche 2.** Barry proposed:
+  - the Victorian taxa *Yarravia*, *Hedeia* and *Pluricaulis biformis*; *Dawsonites*; *Palaeostigma*;
+  - living comparison taxa *Psilotum*, *Tmesipteris* and *Lycopodium squarrosum*;
+  - *Parka*, *Ulothrix* and *Ulva*;
+  - group cards on lycopods and trimerophytes; *Archaeopteris*.
+
+  Claude added:
+  - *Coleochaete*, *Chara* and the Zygnematophyceae, because the streptophyte relatives are the
+    phylogenetically apt life-cycle exemplars; *Ulva* and *Ulothrix* stay as theory exemplars;
+  - hornworts and *Marchantia*;
+  - group cards for eophytes, rhyniophytoids and zosterophylls;
+  - five site cards (Rhynie, Posongchong, Xitun, Bathurst Island, Welsh Borderland mesofossils)
+    and a Baragwanathia-flora card, as sampling units for an observation model;
+  - the taxa that tranche-1 agents flagged as missing (*Nothia*, *Baragwanathia brevifolioides*,
+    *Metzgeriothallus*, *Franhueberia*, *Salopella*);
+  - *Wattieza* and *Leclercqia* as anchors beyond the window.
+
+  35 cards in all, drafted by Claude Sonnet 5.5 subagents.
+- **Schema** (Claude): card kinds `extant` and `group`, ranks `grade` and `clade`, and groups for
+  chlorophyte algae, ferns, progymnosperms and cladoxylopsids. `data/timescale.csv` gains the
+  Frasnian, Famennian and Tournaisian bases (ICS v2024/12) for the anchors; the existing rows are
+  unchanged.
+- **Dispersed spores** (Claude): a scoping study (`docs/spore-compilation-plan.md`) runs in
+  parallel with EPRP's check of Palynodata, before any compilation starts.
+- **Spore and climate sources found** (EPRP session; reviewed by Claude):
+  - Palynodata (GSC Open File 5793, OGL-Canada), with 14,114 window spore rows from 985
+    documents, extracted as-is into `data/external/spores/`;
+  - HadCM3L land climate (`scotese_02` suite, CC BY 4.0) in `data/external/climate/`.
+
+  Asking Wellman, Steemans and Vecoli for their full 2013 assemblage database is an external
+  contact and therefore Barry's decision.
+- **Tranche-2 card audit** (two independent Sonnet agents, 8 cards, 99 claims): 80 supported,
+  0 wrong, 2 misattributed, 9 imprecise, 9 unverifiable; all fixed
+  (`docs/audits/2026-10-27-tranche2-audit-*.md`). The audit confirmed that *Hedeia* is a junior
+  synonym of *Yarravia* (McSweeney et al. 2021) and that *Pluricaulis biformis* is an unpublished
+  manuscript name. It corrected the *Prototaxites* first-occurrence basis. Both cards stay, with
+  their status stated, because they are the names in older literature and in PBDB.
+- **Process lapses** (Claude, reported to Barry): a card agent sent Barry's email address to
+  Unpaywall's API once; the agent brief now forbids it. A `git add -A` briefly committed the EPRP
+  session's unreviewed files; it was reverted within minutes, and only explicit paths are staged
+  while another session writes in the tree.
+
+## 2026-10-27: EPRP deposit reviewed and committed
+
+- **Deposit accepted** (Claude, reviewing at Barry's request): `data/eprp/` is committed except
+  `local/`, which stays git-ignored. Review: `docs/audits/2026-10-27-eprp-deposit-review.md`.
+  All 88 files match their manifest, and the PBDB counts reproduce independently.
+- **Facts that changed** (Claude): PBDB holds almost no pre-Emsian spores and only 259 pre-Emsian
+  core megafossil occurrences, so F3 needs a dispersed-spore compilation from the literature, and
+  its tractability is now moderate. F4's inputs are now on the mesh, so its tractability is
+  moderate. Eco-evolutionary vegetation has already been coupled to the carbon cycle for later
+  intervals (Rogger et al. 2024, 2026; Gurung et al. 2022), so F5's novelty is moderate.
+  `docs/precedents.md` gains an addendum and loses an overstatement; `docs/framings.md` is updated
+  to match. The framing choice remains Barry's.
+
+## 2026-10-26: orientation tranche 1 delivered
+
+- **Delivered** (Claude): 24 draft cards, `docs/primer.md`, `docs/precedents.md`,
+  `docs/framings.md`, the card index and `data/traits.csv`.
+- **Framing recommendation** (Claude, pending Barry's choice): F3 (whether the record supports
+  the new timescale, with an observation model) as the first deliverable, and F1 with F2 (the
+  rise of the sporophyte) as the core simulation. The precedents review, drafted independently,
+  ranked a closed-loop plant–carbon-cycle model (F5) among its top three; `docs/framings.md`
+  records the disagreement.
+- **Literature that changed the plan.** Hooper et al. (2026, Nature Plants, 22 October) moved
+  crown embryophytes to 457–450 Ma and crown tracheophytes to 432–428 Ma, which sharpened F3.
+  Loron et al. (2026) argue that Prototaxites was not a fungus. Earp (2024) places the Yea
+  Baragwanathia beds mostly in the Early Devonian, which weakens the Silurian-Baragwanathia
+  claim. Each is recorded in the relevant card.
+- **Card quality** (Claude): a separate Sonnet agent audited a sample of four cards
+  (`docs/audits/2026-10-26-card-sample-audit.md`). Of 58 claims, 44 were supported, 0 wrong,
+  2 misattributed, 7 overstated and 5 unverifiable. The errors were lost hedges and citation
+  drift, not wrong numbers. The nine flagged claims are fixed. All cards stay `draft`: no number
+  in them should become a model prior until it has been checked against its primary source.
+- **Card conventions settled in use** (Claude): names follow current nomenclature (`Aglaophyton
+  majus`, file `aglaophyton-majus.md`); citations use the conventional volume year, and the DOI
+  checker accepts the print or online year; DOIs may contain brackets (SICI form).
+
+## 2026-10-26: programme opened
+
+- **Scope** (Barry, chat): Late Ordovician to Early Devonian; exploratory, long-term, may be
+  abandoned. Cards and context first, workflows and science later.
+- **Repository** (Claude, under Barry's stated intent "we'll want to set up a private GitHub
+  repo"): private `BWBrook/silurian_plants`, branch `main`, minimal structure that grows with the
+  work.
+- **Taxon cards** (Barry proposed; Claude designed the format): one Markdown file per taxon with
+data/external/scripts/spores_palynodata.py
+data/external/deposits/xiong2013-south-china-diversity/pone.0075706.s004.pdf
+data/external/deposits/xiong2013-south-china-diversity/pone.0075706.s001.pdf
+data/external/deposits/xiong2013-south-china-diversity/pone.0075706.s002.pdf
+data/external/deposits/xiong2013-south-china-diversity/pone.0075706.s003.pdf
+data/external/deposits/xiong2013-south-china-diversity/PROVENANCE.json
+data/external/deposits/hooper2026-spore-evolution-esm/41477_2026_2432_MOESM1_ESM.pdf
+data/external/deposits/hooper2026-spore-evolution-esm/PROVENANCE.json
+data/external/deposits/hooper2026-spore-evolution/02. Ancestral State Estimation.zip
+data/external/deposits/hooper2026-spore-evolution/01. Data/matrix.csv
+data/external/deposits/hooper2026-spore-evolution/README.txt
+data/external/deposits/hooper2026-spore-evolution/01. Data.zip
+data/external/deposits/hooper2026-spore-evolution/PROVENANCE.json
+data/external/spores/wellman2013_supplement/18680.pdf
+data/external/spores/palynodata_agetable.csv
+data/external/spores/palynodata_taxloc.csv
+data/external/spores/palynodata_documents_window.csv
+data/external/spores/README.md
+data/external/spores/palynodata_lithostr_window.csv
+data/external/spores/palynodata_taxon_window.csv
+data/external/spores/MANIFEST.tsv
+data/external/spores/palynodata_codes.csv
+data/external/spores/palynodata_release/readme.txt
+taxa/ordovician-cryptospores.md
+data/external/spores/palynodata_release/citation.txt
+data/external/spores/palynodata_age_change.csv
+data/external/spores/palynodata_theagetable.csv
+data/external/spores/palynodata_release/abstract.txt
+data/external/spores/palynodata_release/metadata.txt
+data/external/spores/palynodata_release/licence.txt
+data/external/spores/palynodata_release/doc/HTML/DESCRIPT.HTM
+data/external/spores/palynodata_release/doc/HTML/LICENCE.HTM
+data/external/spores/palynodata_release/doc/HTML/PALINTRO.HTM
+data/external/spores/palynodata_release/doc/HTML/CPYRIGHT.HTM
+tools/spores.py
+data/spores/occurrences.csv
+data/spores/presence_by_stage.csv
+data/spores/first_appearances.csv
+data/spores/sources/wellman2013_assemblages.csv
+data/spores/sources/wellman2013_taxa.csv
+data/spores/crosswalks/exclusions.csv
+data/spores/crosswalks/age_names.csv
+data/spores/crosswalks/locations.csv
+data/spores/crosswalks/spore_genera.csv
+data/spores/crosswalks/wellman_series.csv
+data/spores/crosswalks/wellman_regions.csv
+data/spores/work/age_names.csv
+data/spores/work/wellman2013/appendix.txt
+data/spores/work/locations.csv
+data/spores/work/spore_genera.csv
+data/spores/work/codex/genera_pilot/out.json
+data/spores/work/codex/genera_pilot/genera_sample.csv
+data/spores/work/codex/genera_pilot/schema.json
+data/spores/work/codex/genera_pilot/sonnet.csv
+data/spores/work/codex/genera_pilot/log.txt
+data/spores/work/codex/genera_pilot/prompt.md
+data/spores/work/codex/genera_pilot/consensus.csv
+data/spores/work/codex/locations/out.json
+data/spores/work/codex/locations/schema.json
+data/spores/work/codex/locations/log.txt
+
+exec
+/bin/zsh -lc "python3 -c 'import csv; rows=list(csv.DictReader(open(\"data/spores/work/codex/vetting/docs1.csv\"))); [print(\"\\n\",i,repr(r[\"doc\"]),r[\"year\"],r[\"authors\"],\"\\n\",r[\"title\"],\"\\n\",r[\"journal\"],\"|\",r[\"locations\"],\"|\",r[\"ics_ranges\"],\"\\n\",r[\"taxa\"]) for i,r in enumerate(rows,1)]'" in /Users/bwbrook/papers/silurian_plants
+ succeeded in 0ms:
+
+ 1 '01023' 1990 Keegan,J.B.;Rasul,S.M.;Shaheen,Y. 
+ Palynostratigraphy of the Lower Palaeozoic, Cambrian to Silurian, sediments of the Hashemite Kingdom of Jordan. (In: Special Issue: Circum-Mediterranean Palynology. B.Owens and H.Visscher, editors) 
+ Review of Palaeobotany and Palynology | Jordan | Rhuddanian-Aeronian; Gorstian-Ludfordian; Aeronian-Ludfordian 
+ trilete-laevigate: Ambitisporites sp | trilete-laevigate: Archaeozonotriletes sp | trilete-ornamented: Emphanisporites sp | cryptospore-dyad: Dyadospora murusdensa
+
+ 2 '01272' 1990 Rahmani-Antari,K. 
+ Palynological study and evaluation of the Thermal Alteration Index, (TAI), of the Paleozoic Section of Well Dot 1 (Doukkala Basin, Central-West Morocco). 
+ Review of Palaeobotany and Palynology | Morocco | Rhuddanian-Pridoli 
+ trilete-laevigate: Ambitisporites avitus | trilete-laevigate: Retusotriletes sp | trilete-laevigate: Punctatisporites dilutus
+
+ 3 '01859' 1967 Grignani,D. 
+ Paleozoic spores and Triassic pollen grains from some Tunisian Well samples. 
+ Review of Palaeobotany and Palynology | Tunisia | Rhuddanian-Pridoli 
+ trilete-ornamented: Reticulatisporites facetus | trilete-laevigate: Calamospora sp | trilete-ornamented: Cyclogranisporites sp | trilete-ornamented: Cyclogranisporites minutus | trilete-unspecified: Dulhuntyispora minuta | trilete-laevigate: Calamospora microrugosa | trilete-ornamented: Verrucosisporites sp | trilete-ornamented: Cyclogranisporites parvipunctatus
+
+ 4 '01891' 1965 Taugourdeau,J. 
+ Reports on Pre-Devonian spores. 
+ Reunion de la Commission Internationale de Microflora du Paleozoique,6th,Sheffield.Report of Group No .4 | USSR | Rhuddanian-Pridoli 
+ trilete-ornamented: Emphanisporites
+
+ 5 '01892' 1965 Downie,C. 
+ Pre-Devonian miospores. 
+ Reunion de la Commission Internationale de Microflora du Paleozoique,6th,Sheffield.Report of Group No .4 | England; Spain | Gorstian-Ludfordian; Sheinwoodian-Homerian; Rhuddanian-Telychian 
+ trilete-laevigate: Ambitisporites | trilete-laevigate: Punctatisporites
+
+ 6 '02486' 1963 Timofeev,B.V. 
+ Ordovician and Silurian phytoplankton of the Siberian Platform. 
+ Doklady Akademii Nauk SSSR | USSR(Siberia) | Dapingian-Darriwilian; Sandbian-Hirnantian 
+ trilete-ornamented: Lophotriletes | trilete-laevigate: Stenozonotriletes | trilete-laevigate: Leiotriletes ustetschkaensis
+
+ 7 '02603' 1963 Downie,C. 
+ 'Hystrichosheres', (acritarchs), and spores of the Wenlock Shales, (Silurian), of Wenlock, England. 
+ Palaeontology | England(Shropshire) | Sheinwoodian-Homerian; Rhuddanian-Pridoli 
+ trilete-laevigate: Punctatisporites dilutus | trilete-ornamented: Lophotriletes sp | trilete-ornamented: Lophotriletes minusculus
+
+ 8 '02625' 1967 Zharkova,M.F.;Ilina,N.S.;Frukht,D.L. 
+ Age of the Yaroslavl' Series in the Lyubim District 
+ Doklady Akademii Nauk SSSR | USSR(Yaroslav) | Dapingian-Darriwilian 
+ trilete-laevigate: Leiotriletes microrugosus | trilete-ornamented: Archaeotriletes atavus
+
+ 9 '03971' 1968 Cramer,F.H. 
+ Paleographic considerations with regard to a microplanctonic association of the Gothlandian series of Birmingham, (Alabma, USA) 
+ Bulletin de la Société Géologique de France, 7e série | Alabama | Rhuddanian-Telychian 
+ trilete-laevigate: Stenozonotriletes avitus | trilete-laevigate: Retusotriletes dilutus
+
+ 10 '04198' 1961 Deunff,J.;Peniguel,G.;Poumot,C. 
+ Palynoplanktonic correlation in the Cambro-Ordovician of the Sahara 
+ Société nationale des pétroles d'Aquitaine, Centre de recherches de Pau, Memoires | Algeria | Rhuddanian-Telychian; Floian-Darriwilian; Sandbian-Katian 
+ trilete-ornamented: Acanthotriletes sp.5 | trilete-ornamented: Acanthotriletes tenuispinosus | trilete-ornamented: Acanthotriletes sp.6 | trilete-ornamented: Acanthotriletes rugatus | trilete-laevigate: Leiotriletes sp.6 | trilete-ornamented: Acanthotriletes sp.4 | trilete-ornamented: Acanthotriletes erinaceus | trilete-ornamented: Dictyotriletes sp.5 | other-spore: Azonomonoletes sp.4 | trilete-ornamented: Dictyotriletes sp.4 | trilete-laevigate: Leiotriletes sp.8 | trilete-ornamented: Acanthotriletes sp.3 | trilete-ornamented: Brochotriletes foveolatus | trilete-laevigate: Leiotriletes sp.4 | trilete-laevigate: Leiotriletes planum | trilete-laevigate: Leiotriletes sp.5 | trilete-ornamented: Dictyotriletes sp.3 | trilete-ornamented: Dictyotriletes sp.1 | trilete-ornamented: Dictyotriletes sp.2 | trilete-laevigate: Leiotriletes sp.7 | other-spore: Azonomonoletes sp.5 | trilete-laevigate: Stenozonotriletes conformis | trilete-laevigate: Archaeozonotriletes sp.3 | trilete-laevigate: Leiotriletes asperatus | trilete-ornamented: Acanthotriletes sp.7 | trilete-laevigate: Leiotriletes hyalinum | other-spore: Azonomonoletes sp.3 | trilete-laevigate: Archaeozonotriletes sp.2 | trilete-laevigate: Stenozonotriletes reticulatus | trilete-laevigate: Archaeozonotriletes sp.5 | trilete-laevigate: Leiotriletes incrassatus | other-spore: Archaeoperisaccus ovalis | trilete-laevigate: Archaeozonotriletes sp.4
+
+ 11 '04470' 1971 Cramer,F.H. 
+ Implications from Middle Paleozoic palynofacies transgressions for the Rate of Crustal Movement, especially during the Wenlockian 
+ Anais da Academia Brasileira de Ciências,Simposio Brasileiro de Paleontologia,Supplement | Spain; Kentucky; Africa | Lochkovian-Lochkovian; Aeronian-Telychian; Sheinwoodian-Homerian 
+ trilete-ornamented: Apiculatisporites terciensis | trilete-unspecified: Achaeozonotriletes chulus | trilete-laevigate: Retusotriletes sp
+
+ 12 '04799' 1989 Bassett,M.G. 
+ The Wenlock Series in the Wenlock area. (In: A Global Standard for the Silurian System. C.H. Holland and M.G.Bassett, editors) 
+ National Museum of Wales, Geological Series | England(Shropshire) | Sheinwoodian-Homerian; Sheinwoodian-Ludfordian; Aeronian-Homerian 
+ trilete-laevigate: Ambitisporites dilutus | trilete-laevigate: Ambitisporites avitus | trilete-ornamented: Synorisporites verrucatus | trilete-laevigate: Archaeozonotriletes chulus | trilete-ornamented: Emphanisporites protophanus
+
+ 13 '05164' 1972 Owens,B.;Richardson,J.B. 
+ Some recent advances in Devonian palynology. A review. Report of CIMP Working Group No.13B. 
+ Congrès International de Stratigraphie et de Géologie du Carbonifère.Comptes Rendus.7e.Krefeld | Canada(Quebec); Algeria; Spitsbergen; USSR; Scotland; Canada(Ontario); Wales | Dapingian-Darriwilian; Ludfordian-Lochkovian; Pridoli-Lochkovian; Lochkovian-Lochkovian; Sheinwoodian-Lochkovian; Lochkovian-Pragian; Rhuddanian-Pridoli; Gorstian-Ludfordian; Pragian-Emsian 
+ trilete-ornamented: Lycospora culpa | trilete-ornamented: Synorisporites verrucatus | trilete-ornamented: Dictyotriletes sp | trilete-ornamented: Emphanisporites patagiatus | trilete-laevigate: Archaeozonotriletes chulus | trilete-ornamented: Streelispora newportensis | trilete-ornamented: Emphanisporites decoratus | trilete-ornamented: Synorisporites downtonensis | trilete-ornamented: Emphanisporites robustus | trilete-laevigate: Archaeozonotriletes divellomedium | trilete-ornamented: Synorisporites tripapillatus | trilete-laevigate: Stenozonotriletes subgranulatus | trilete-laevigate: Ambitisporites dilutus | trilete-ornamented: Streelispora granulata | trilete-ornamented: Granulatisporites muninensis | trilete-ornamented: Emphanisporites | trilete-ornamented: Apiculiretusispora synorea | trilete-laevigate: Punctatisporites laevigatus | trilete-ornamented: Emphanisporites minutus | trilete-unspecified: Cirratriradites dissutus | trilete-unspecified: Perotrilites | trilete-ornamented: Cyclogranisporites plicatus | trilete-laevigate: Stenozonotriletes sp | trilete-ornamented: Perforosporites sp | trilete-ornamented: Emphanisporites micrornatus | trilete-laevigate: Retusotriletes dittonensis | trilete-ornamented: Cymbosporites echinatus | trilete-laevigate: Calamospora nigrata | trilete-laevigate: Leiotriletes parvus | trilete-ornamented: Brochotriletes | trilete-laevigate: Retusotriletes triangulatus | trilete-ornamented: Samarisporites biornatus | trilete-ornamented: Emphani
+
+ 14 '05166' 1971 Martin,F. 
+ Palynofacies and microfacies of the Lower Silurian at Deerlijk. 
+ Bulletin de l'Institut Royal des Sciences Naturelles de Belgique | Belgium | Rhuddanian-Aeronian 
+ trilete-laevigate: Leiotriletes sp
+
+ 15 '05168' 1972 Moreau-Benoit,A. 
+ Stratigraphic palynology of the Silurian and Devonian in the southeast part of the Breton Massif, (Saint-Julien-de-Vouantes and Ancenis Synclinoria). 
+ Congrès International de Stratigraphie et de Géologie du Carbonifère.Comptes Rendus.7e.Krefeld | France(Loire Atlantique) | Rhuddanian-Pridoli; Pragian-Emsian 
+ trilete-laevigate: Retusotriletes communis | trilete-ornamented: Apiculatisporis polygamus | trilete-ornamented: Rhabdosporites sp | trilete-laevigate: Calamospora microrugosa | trilete-laevigate: Stenozonotriletes | trilete-laevigate: Ambitisporites avitus | trilete-laevigate: Stenozonotriletes spetcandus | trilete-laevigate: Leiotriletes simplex | trilete-ornamented: Apiculiretusispora brandtii | other-spore: Laevigatosporites antiquus | trilete-laevigate: Punctatisporites solidus | trilete-ornamented: Lophotriletes sp | trilete-laevigate: Punctatisporites major | trilete-ornamented: Granulatisporites frustulentus | trilete-ornamented: Apiculatisporis longispinosus | trilete-laevigate: Stenozonotriletes definitus | trilete-laevigate: Punctatisporites dilutus | trilete-ornamented: Granulatisporites muninensis | trilete-unspecified: Trilete spore | trilete-ornamented: Lycospora pallida
+
+ 16 '05300' 1972 Shrivastava,R.N. 
+ Micro-organic remains from the Vindhyan Formation of India 
+ Seminar on Paleopalynology and Indian Stratigraphy.Proceedings, University of Calcutta, Calcutta, India.(A.K.Ghosh et al | India(Madhya Pradesh) | Rhuddanian-Pridoli 
+ trilete-laevigate: Leiotriletes sp | trilete-ornamented: Cyclogranisporites sp | trilete-laevigate: Stenozonotriletes sp
+
+ 17 '05442' 1973 Richardson,J.B.;Ioannides,N.S. 
+ Silurian palynomorphs from the Tanezzuft and Acacus Formations, Tripolitania, North Africa. 
+ Micropaleontology | Libya | Ludfordian-Lochkovian; Homerian-Lochkovian; Gorstian-Lochkovian; Sheinwoodian-Lochkovian; Rhuddanian-Pridoli; Sheinwoodian-Homerian 
+ trilete-ornamented: Apiculiretusispora synorea | trilete-laevigate: Archaeozonotriletes divellomedium | trilete-laevigate: Retusotriletes sp.B Rich.& Ioan.,1973 | trilete-ornamented: Emphanisporites sp.B | trilete-ornamented: Emphanisporites neglectus | trilete-laevigate: Retusotriletes dubius | trilete-ornamented: Emphanisporites protophanus | trilete-laevigate: Archaeozonotriletes chulus | trilete-ornamented: Brochotriletes sp.A Rich.& Ioan.,1973 | trilete-ornamented: Apiculiretusispora sp | trilete-ornamented: Apiculiretusispora sp.B | trilete-ornamented: Clivosispora sp | trilete-laevigate: Retusotriletes sp.C | trilete-laevigate: Ambitisporites sp.B Rich.& Ioan.,1973 | trilete-ornamented: Synorisporites sp.B | trilete-ornamented: Apiculiretusispora spicula | trilete-ornamented: Emphanisporites pseudoerraticus | trilete-laevigate: Retusotriletes minor | trilete-ornamented: Emphanisporites sp.C Rich.& Ioan.,1973 | trilete-laevigate: Retusotriletes goensis | trilete-laevigate: Ambitisporites avitus | trilete-laevigate: Ambitisporites dilutus | trilete-ornamented: Emphanisporites sp | trilete-ornamented: Synorisporites sp | trilete-laevigate: Retusotriletes warringtonii | trilete-laevigate: Retusotriletes | trilete-ornamented: Chelinospora sp | trilete-laevigate: Retusotriletes sp.D Rich.& Ioan.,1973 | trilete-ornamented: Emphanisporites sp.D Rich.& Ioan.,1973 | trilete-ornamented: Synorisporites libycus | trilete-laevigate: Ambitisporites sp | trilete-ornamented: Synorispor
+
+ 18 '05523' 1989 Le Hérissé,A. 
+ Acritarchs and cysts of Prasinophycean algae of the Silurian of Gotland, Sweden. 
+ Palaeontographia Italica | Sweden | Rhuddanian-Telychian 
+ trilete-laevigate: Ambitisporites sp | trilete-ornamented: Brochotriletes sp
+
+ 19 '05703' 1991 Burgess,N.D. 
+ Silurian Cryptospores and miospores from the type Llandovery area, southwest Wales. 
+ Palaeontology | Pennsylvania; England(Shropshire); Wales(Dyfed) | Hirnantian-Telychian; Sheinwoodian-Sheinwoodian; Hirnantian-Rhuddanian; Rhuddanian-Telychian; Rhuddanian-Rhuddanian; Hirnantian-Aeronian; Aeronian-Telychian 
+ cryptospore-dyad: Segestrespora | cryptospore-tetrad: Velatitetras reticulata | cryptospore-dyad: Segestrespora laevigata | cryptospore-tetrad: Rimosotetras problematica | cryptospore-dyad: Segestrespora membranifera | cryptospore-tetrad: Rimosotetras | trilete-laevigate: Ambitisporites vavrdovae | cryptospore-tetrad: Tetrahedraletes medinensis | cryptospore-dyad: Segestrespora sp.A Burg.,1991 | cryptospore-tetrad: Velatitetras rugulata | cryptospore-tetrad: Velatitetras laevigata | cryptospore-dyad: Dyadospora membranifera | cryptospore-dyad: Pseudodyadospora rugosa | cryptospore-dyad: Dyadospora murusattenuata | trilete-laevigate: Ambitisporites dilutus | cryptospore-dyad: Pseudodyadospora laevigata | cryptospore-dyad: Segestrespora rugosa | cryptospore-tetrad: Velatitetras | cryptospore-tetrad: Velatitetras sp.A Burg.,1991
+
+ 20 '05721' 1990 Gensel,P.G.;Johnson,N.G.;Strother,P.K. 
+ Early land plant debris (Hooker's "Waifs and Stray"?) 
+ Palaios | Pennsylvania | Rhuddanian-Telychian 
+ cryptospore-tetrad: Stegambiquadrella contenta | trilete-laevigate: Ambitisporites sp | cryptospore-dyad: Dyadospora murusdensa | cryptospore-dyad: Pseudodyadospora laevigata | cryptospore-dyad: Pseudodyadospora rugosa | cryptospore-tetrad: Tetrahedraletes medinensis
+
+ 21 '06209' 1996 Ghavidel-Syooki,M. 
+ Acritarch biostratigraphy of the Palaeozoic rock units in the Zagros Basin, Southern Iran. (In: Commision Internationale de microflore du Paleozoique (CIMP) Acritarch Subcommision: O.Fatka and T.Servais, editors) 
+ Acta Universitatis Carolinae-Geologica | Iran | Rhuddanian-Telychian; Katian-Hirnantian 
+ cryptospore-tetrad: Tetrahedraletes medinensis | trilete-laevigate: Ambitisporites avitus | trilete-laevigate: Ambitisporites dilutus | trilete-laevigate: Ambitisporites imperfectus | trilete-ornamented: Emphanisporites protophanus | cryptospore-dyad: Dyadospora murusdensa
+
+ 22 '06513' 1966 Timofeev,B.V. 
+ Micropaleophytological research into ancient strata. 
+ Akademiya Nauk SSSR, Isdatelskvo Nauka, Moskva | USSR(Kalinin); USSR(Krasnoyarsk Kray); Poland | Rhuddanian-Pridoli; Sheinwoodian-Homerian 
+ trilete-laevigate: Stenozonotriletes sp | trilete-laevigate: Stenozonotriletes | trilete-laevigate: Leiotriletes sp
+
+ 23 '06530' 1970 Corna,O. 
+ Plant remains in the Ordovician of the Bohemian Massif. 
+ Geologicky Zbornik(Geoligica Carpathica) | Czechoslovakia | Darriwilian-Darriwilian 
+ trilete-laevigate: Punctatisporites sp
+
+ 24 '06840' 1973 Boureau,E.;Moreau-Benoit,A. 
+ Are there vascular plants in the Silurian. 
+ Revue de Micropaléontologie | Wales; England(Shropshire) | Sheinwoodian-Homerian; Gorstian-Ludfordian; Rhuddanian-Pridoli 
+ trilete-ornamented: Lophotriletes sp | trilete-laevigate: Retusotriletes | trilete-laevigate: Archaeozonotriletes | trilete-ornamented: Synorisporites | trilete-ornamented: Apiculiretusispora | trilete-laevigate: Ambitisporites | trilete-ornamented: Streelispora | trilete-laevigate: Punctatisporites dilutus
+
+ 25 '06983' 1974 Richardson,J.B. 
+ The stratigraphic utilization of some Silurian and Devonian miospore species in the Northern Hemisphere. 
+ International Symposium on Namur 1974,Belgian Micropaleontological Limits-Emsian to Visean, Brussels,Sept.1974,Publicati | Wales; Spitsbergen; France; Spain; Scotland; Africa(Sahara); England; USSR(Russian Platform); Canada | Gorstian-Lochkovian; Sheinwoodian-Lochkovian; Lochkovian-Lochkovian; Rhuddanian-Telychian; Sheinwoodian-Homerian; Gorstian-Ludfordian; Ludfordian-Lochkovian; Pragian-Emsian 
+ trilete-laevigate: Ambitisporites sp | trilete-laevigate: Ambitisporites dilutus | trilete-ornamented: Emphanisporites protophanus | trilete-laevigate: Retusotriletes triangulatus | trilete-laevigate: Archaeozonotriletes chulus | trilete-ornamented: Apiculiretusispora synorea | trilete-laevigate: Retusotriletes warringtonii | trilete-ornamented: Samarisporites | trilete-ornamented: Samarisporites sp | trilete-laevigate: Ambitisporites avitus | trilete-ornamented: Emphanisporites micrornatus | trilete-ornamented: Synorisporites tripapillatus | trilete-ornamented: Synorisporites verrucatus
+
+ 26 '07150' 1975 Deunff,J.;Massa,D. 
+ Cambrian to Ordovician palynology and stratigraphy (Northwest Libya). 
+ Comptes Rendus de l'Académie des Sciences, Série II | Libya | Rhuddanian-Aeronian 
+ trilete-laevigate: Ambitisporites sp | trilete-laevigate: Archaeozonotriletes chulus | trilete-ornamented: Emphanisporites sp | trilete-ornamented: Lophozonotriletes poecilomorphus | trilete-laevigate: Ambitisporites avitus
+
+ 27 '07515' 1976 Achab,A. 
+ Acritarchs from the Awantjish Formation (Upper Llandoverian) in the Val Brillant Borehold, Matapedia Valley, Quebec. 
+ Canadian Journal of Earth Sciences | Canada(Quebec) | Aeronian-Telychian 
+ trilete-laevigate: Punctatisporites sp | trilete-laevigate: Ambitisporites sp
+
+ 28 '07646' 1976 Timofeev,B.V.;German,T.N.;Mikhalova,M.S. 
+ Microfossils of the Precambrian, Cambrian and Ordovician. 
+ Trudy Institut Geologii i Geokhronologii Dokembirya,Akademiya Nauk SSR,Leningrad,Nauk | USSR(Vologda) | Dapingian-Darriwilian 
+ other-spore: Polytrichum alpestre | other-spore: Funaria hygrometrica
+
+ 29 '07986' 1978 Pratt,L.M.;Phillips,T.L.;Dennison,J.M. 
+ Evidence of non-vascular land plants from the Early Silurian (Llandoverian) of Virginia, USA. 
+ Review of Palaeobotany and Palynology | Virginia | Rhuddanian-Telychian 
+ trilete-laevigate: Ambitisporites sp
+
+ 30 '07987' 1976 Volkheimer,W.;Pöthe de Baldis,E.D. 
+ Stratigraphic significance of Paleozoic and Mesozoic microflora from Argentina and neighboring countries. 
+ Congreso Ibero-Americano de Geologia Economica,2nd | Bolivia | Rhuddanian-Pridoli 
+ trilete-laevigate: Stenozonotriletes avitus | trilete-ornamented: Emphanisporites sp | trilete-laevigate: Punctatisporites sp
+
+ 31 '08347' 1989 Richardson,J.B.;Edwards,D. 
+ Sporomorphs and plant megafossils. (In: A Global Standard for the Silurian System. C.H. Holland and M.G.Bassett, editors) 
+ National Museum of Wales, Geological Series | Wales(Carmarthenshire) | Rhuddanian-Aeronian 
+ trilete-laevigate: Ambitisporites dilutus | cryptospore-dyad: Dyadospora murusdensa | cryptospore-tetrad: Tetrahedraletes medinensis | cryptospore-dyad: Dyadospora membranifera | cryptospore-tetrad: Nodospora burnhamensis | cryptospore-tetrad: Nodospora retimembrana
+
+ 32 '08526' 1978 Chaiffetz,M.S. 
+ Preservational effects of pyrite crystals on chitinozoans from the Lower Silurian Red Mountain Formation, northeast Alabama, USA. 
+ Palinologiá, Número extraordinario | Alabama | Rhuddanian-Telychian 
+ other-spore: Laevigatosporites desmoinesensis
+
+ 33 '08606' 1991 Strother,P.K. 
+ A classification Schema for the Cryptospores 
+ Palynology | Scotland(Fife); Illinois; Pennsylvania; New York | Rhuddanian-Telychian; Katian-Hirnantian; Sheinwoodian-Homerian; Lochkovian-Lochkovian; Rhuddanian-Homerian 
+ cryptospore-tetrad: Nodospora retimembrana | cryptospore-dyad: Pseudodyadospora rugosa | cryptospore-tetrad: Nodospora oyleri | cryptospore-dyad: Dyadospora murusdensa | cryptospore-dyad: Dyadospora membranifera | cryptospore-monad: Qualisaspora fragilis | cryptospore-tetrad: Tetrahedraletes medinensis | cryptospore-tetrad: Nodospora burnhamensis | cryptospore-dyad: Pseudodyadospora laevigata | cryptospore-tetrad: Tetrahedraletes grayii | cryptospore-dyad: Dyadospora murusattenuata
+
+ 34 '08790' 1979 Strother,P.K.;Traverse,A. 
+ Plant microfossils from Llanderovian and Wenlockian rocks of Pennsylvania. 
+ Palynology | Pennsylvania | Sheinwoodian-Homerian; Rhuddanian-Telychian; Rhuddanian-Homerian 
+ cryptospore-tetrad: Nodospora rugosa | cryptospore-dyad: Dyadospora | cryptospore-tetrad: Tetrahedraletes | trilete-laevigate: Ambitisporites sp | cryptospore-tetrad: Tetrahedraletes medinensis | cryptospore-tetrad: Nodospora oyleri | cryptospore-tetrad: Nodospora | cryptospore-dyad: Dyadospora murusdensa | cryptospore-tetrad: Nodospora burnhamensis | cryptospore-dyad: Dyadospora murusattenuata
+
+ 35 '08862' 1971 Poncet,J.;Rauscher,R. 
+ New stratigraphic data on the Comprehensive Series (D1-S4), of Cotentin. 
+ Comptes Rendus de l'Académie des Sciences, Série II | France(Manche) | Lochkovian-Lochkovian; Gorstian-Ludfordian; Rhuddanian-Homerian 
+ trilete-laevigate: Archaeozonotriletes chulus | trilete-ornamented: Emphanisporites neglectus | trilete-ornamented: Synorisporites | trilete-laevigate: Ambitisporites sp | trilete-ornamented: Streelispora | trilete-laevigate: Retusotriletes sp | trilete-ornamented: Emphanisporites
+
+ 36 '08930' 1974 Moreau-Benoit,A. 
+ Palynological and planktonic research on the Devonian and some Silurian formations of the southeast Massif Armoricain. 
+ Mémoires de la Société Géologique et Minéralogique de Bretagne | France(Bretagne) | Pragian-Emsian; Pragian-Pragian; Rhuddanian-Pridoli 
+ trilete-laevigate: Stenozonotriletes bellus | trilete-ornamented: Lophotriletes sp | trilete-laevigate: Leiotriletes simplex | trilete-ornamented: Lycospora pallida | trilete-laevigate: Punctatisporites dilutus | other-spore: Laevigatosporites antiquus | trilete-ornamented: Rhabdosporites sp.A | trilete-unspecified: Triletes sp.A | trilete-laevigate: Leiotriletes minor | trilete-laevigate: Punctatisporites solidus | trilete-laevigate: Retusotriletes communis | trilete-laevigate: Calamospora microrugosa | trilete-ornamented: Apiculatisporis longispinosus | trilete-ornamented: Granulatisporites frustulentus | trilete-laevigate: Retusotriletes chulus | trilete-unspecified: Auroraspora minuta | trilete-laevigate: Stenozonotriletes simplex | trilete-laevigate: Stenozonotriletes spetcandus | trilete-ornamented: Apiculiretusispora brandtii | trilete-laevigate: Ambitisporites avitus | trilete-ornamented: Acanthotriletes polygamus | trilete-laevigate: Retusotriletes verrucatus | trilete-laevigate: Stenozonotriletes definitus | trilete-ornamented: Apiculatisporis polygamus
+
+ 37 '09021' 1978 Emo,G.T.;Smith,D.G. 
+ Palynological evidence for the age of the Lower Palaeozoic rocks of Slieve Aughty, Counties Clare and Galway. 
+ Proceedings of the Royal Irish Academy | S.Ireland(Galway); S.Ireland(Clare) | Rhuddanian-Telychian; Aeronian-Sheinwoodian; Aeronian-Homerian 
+ trilete-laevigate: Ambitisporites dilutus | trilete-laevigate: Ambitisporites avitus
+
+ 38 '09257' 1980 Miller,M.A.;Eames,L.E. 
+ Palynomorphs from the Silurian Medina Group (Lower Llandovery), of the Naigara Gorge, Lewiston, New York, USA. 
+ American Association of Stratigraphic Palynologists,13th Annual Meeting,Program and Abstracts | New York | Rhuddanian-Aeronian 
+ cryptospore-tetrad: Tetrahedraletes medinensis | cryptospore-tetrad: Nodospora burnhamensis
+
+ 39 '09521' 1979 Smith,D.G. 
+ The distribution of Trilete spores in Irish Silurian Rocks. 
+ Geological Society, London | Ireland | Rhuddanian-Pridoli; Sheinwoodian-Homerian 
+ trilete-laevigate: Punctatisporites sp | trilete-laevigate: Ambitisporites sp | trilete-laevigate: Archaeozonotriletes sp | trilete-laevigate: Archaeozonotriletes chulus | trilete-laevigate: Retusotriletes sp | trilete-laevigate: Ambitisporites avitus | trilete-laevigate: Retusotriletes warringtonii
+
+ 40 '09699' 1981 Duffield,S.L.;Legault,J.A. 
+ Acritarch biostratigraphy of Upper Ordovician-Lower Silurian rocks, Anticosti Island, Quebec. 
+ Subcommision on Silurian Stratigraphy, Ordovician-Silurian Boundary Working Group. Field Meeting, AntiCosti-Gaspe, Quebe | Canada(Anticosti Island) | Rhuddanian-Pridoli 
+ cryptospore-tetrad: Tetrahedraletes sp. Duff.& Lega.,1981
+
+ 41 '10194' 1981 Smith,D.G. 
+ Progress in Irish Lower Palaeozoic palynology. 
+ Review of Palaeobotany and Palynology | Ireland | Rhuddanian-Homerian; Sheinwoodian-Homerian 
+ trilete-laevigate: Ambitisporites | trilete-laevigate: Archaeozonotriletes | trilete-laevigate: Retusotriletes
+
+ 42 '10325' 1982 Miller,M.A.;Eames,L.E. 
+ Palynomorphs from the Silurian Medina Group, (Lower Llandovery), of the Niagara Gorge, Lewiston, New York, USA. 
+ Palynology | New York | Rhuddanian-Telychian 
+ cryptospore-dyad: Dyadospora murusdensa | cryptospore-tetrad: Nodospora rugosa | cryptospore-tetrad: Nodospora burnhamensis | cryptospore-dyad: Dyadospora murusattenuata | cryptospore-tetrad: Nodospora retimembrana | cryptospore-tetrad: Tetrahedraletes medinensis | cryptospore-tetrad: Tetrahedraletes sp. Duff.& Lega.,1981
+
+ 43 '10458' 1982 da Costa,N.M. 
+ Palynoplankton of Paleozoic sediments of the State of Amazonas. 
+ Anais da Academia Brasileira de Ciências | Brazil(Amazonas) | Rhuddanian-Pridoli 
+ other-spore: Speciososporites sp | trilete-ornamented: Acanthotriletes sp | trilete-unspecified: Dulhuntyispora sp
+
+ 44 '10843' 1991 Miller,M.A. 
+ Paniculaferum missouriensis, gen.et sp.nov., a new Upper Ordovician acritarch from Missouri, USA. 
+ Review of Palaeobotany and Palynology | Canada(Quebec); Missouri | Sandbian-Hirnantian 
+ cryptospore-tetrad: Tetrahedraletes medinensis
+
+ 45 '10876' 1982 Gray,J.;Massa,D.;Boucot,A.J. 
+ Caradocian land plant microfossils from Libya. 
+ Geology | Sweden; Kentucky; New York; Libya | Katian-Hirnantian; Rhuddanian-Telychian; Gorstian-Ludfordian; Sandbian-Katian 
+ cryptospore-tetrad: Tetrad sp | cryptospore-tetrad: Tetrahedral tetrads
+
+ 46 '10982' 1985 Mabillard,J.E.;Aldridge,R.J. 
+ Microfossil distribution across the Base of the Wenlockian series in the type area 
+ Palaeontology | England(Shropshire) | Telychian-Sheinwoodian 
+ trilete-laevigate: Ambitisporites sp
+
+ 47 '11107' 1985 Hill,P.J.;Paris,F.;Richardson,J.B. 
+ Silurian palynomorphs. (In: Palynology of Northeast Libya. B.Thusu and B.Owens, editors) 
+ Journal of Micropalaeontology | Libya | Rhuddanian-Rhuddanian 
+ cryptospore-tetrad: Nodospora sp
+
+ 48 '11402' 1984 Schrank,E. 
+ Paleozoic and Mesozoic palynomorphs from the Foram 1 Well (Western Desert, Egypt). 
+ Neues Jahrbuch für Geologie und Paläontologie. Monatshefte | Egypt | Rhuddanian-Pridoli 
+ cryptospore-tetrad: Tetrahedraletes sp
+
+ 49 '11441' 1985 Gray,J.;Colbath,G.K.;de Faria,A.;Boucot,A.J.;Rohr,D.M. 
+ Silurian age fossils from the Paleozoic Parana Basin, Southern Brazil 
+ Geology | Brazil(Paraná); Brazil(Mato Grosso) | Rhuddanian-Telychian 
+ cryptospore-tetrad: Tetrahedraletes | cryptospore-tetrad: Tetrahedraletes medinensis
+
+ 50 '11558' 1973 Martin,F. 
+ The Upper Ordovician and Lower Silurian at Deerlijk (Belgium) 
+ Mémoire de l'Institut Royal des Sciences Naturelles de Belgique | Belgium | Katian-Telychian; Katian-Aeronian 
+ other-spore: Schizaeoisporites sp.I | trilete-laevigate: Leiotriletes sp | trilete-laevigate: Leiotriletes sp.I Mart.,1973
+
+ 51 '11807' 1975 Achab,A. 
+ Palynostratigraphic study of several Layers of Silurian Formations of the Lac Matapedia Cyncline 
+ Ministere des Richesses Naturelles,Quebec,Unpublished Report DP-317 | Canada(Gaspe Area) | Aeronian-Telychian 
+ trilete-laevigate: Ambitisporites | trilete-laevigate: Punctatisporites
+
+ 52 '11850' 1985 Johnson,N.G. 
+ Early Silurian palynomorphs from the Tuscarora Formation in Central Pennsylvania and their paleobotanical and geological significance 
+ Review of Palaeobotany and Palynology | Pennsylvania | Rhuddanian-Telychian 
+ cryptospore-dyad: Pseudodyadospora rugosa | cryptospore-tetrad: Stegambiquadrella | cryptospore-tetrad: Nodospora rugosa | cryptospore-tetrad: Nodospora burnhamensis | cryptospore-dyad: Pseudodyadospora laevigata | cryptospore-tetrad: Nodospora retimembrana | cryptospore-dyad: Dyadospora membranifera | trilete-laevigate: Ambitisporites sp | cryptospore-dyad: Dyadospora murusattenuata | cryptospore-dyad: Dyadospora murusdensa | cryptospore-dyad: Pseudodyadospora | trilete-unspecified: Trilete spore sp | cryptospore-tetrad: Tetrahedraletes medinensis | cryptospore-tetrad: Stegambiquadrella contenta
+
+ 53 '11973' 1965 MacArovici,N.;Beju,D.;Olaru,L. 
+ New data on the Siberian fauna of the Base of the Moldave Plateau 
+ Analele Stiintifice ale Universitatii "Al. I. Cuza" din Iasi (serie noua), Sectiunea IIb, Geologie-Geografie | USSR(Moldavian SSR) | Rhuddanian-Pridoli 
+ trilete-laevigate: Punctatisporites sp | trilete-laevigate: Leiotriletes sp | trilete-laevigate: Ambitisporites sp
+
+ 54 '11986' 1980 Sastri,V.V.;Venkatachala,B.S. 
+ Organic remains, age and environment of the Pre-Siwalik sediments encountered in some deep wells drilled in south part of the Ganga Valley 
+ Bulletin of the Oil and Natural Gas Commission, Dehra Dun, India | India(Delhi) | Rhuddanian-Pridoli 
+ trilete-laevigate: Punctatisporites sp
+
+ 55 '12090' 1973 Lutkevich,E.M.;Pashkevichius,I.Y.;Makhnach,A.S.;Khishyakov,A.V.;Potyanovskaya,G.M.;Edelshtein,A.G.;Bukatchuk,P.D. 
+ Ordovician System. (In: Stratigraphy and Paleogeography of the Sinian, Paleozoic and Triassic of the Western Russian Platform. E.M.Lutkevich and A.K.Krilova, editor) 
+ Trudy Vsesoyuznogo Neftyanogo Nauchno-Issledovatel'skogo Geologorazvedochnogo Instituta, Leningrad(VNIGRI) | USSR(Russian Platform) | Tremadocian-Dapingian 
+ trilete-laevigate: Leiotriletes | trilete-laevigate: Stenozonotriletes
+
+ 56 '12230' 1978 Antelo,B. 
+ Silurian Formations of Northwest Argentina, (Jujuy and Salta Provinces). 
+ Revista de la Asociación Geológica Argentina | Argentina(Salta); Argentina(Jujuy) | Rhuddanian-Homerian 
+ trilete-laevigate: Ambitisporites avitus
+
+ 57 '12259' 1985 Massa,D.;Moreau-Benoit,A. 
+ Contribution to the biostratigraphy and paleogeography of the Libyan Devonian, (South of Rhodames Basin) by new palynological data. 
+ Sciences Géologiques, Bulletin | Libya | Rhuddanian-Pridoli 
+ trilete-laevigate: Punctatisporites dilutus
+
+ 58 '12678' 1984 Vavrdová,M. 
+ Some plant microfossils of possible terrestrial origin from the Ordovician of Central Bohemia. 
+ Vestnik Ustredniho Ústavu Geologickeho,(Bulletin of the Geological Survey of Prague) | Czechoslovakia | Sandbian-Hirnantian 
+ cryptospore-tetrad: Tetrad type C Vavr.,1984
+
+ 59 '12714' 1986 Richardson,J.B.;McGregor,D.C. 
+ Silurian and Devonian spore zones of the Old Red Sandstone continent and adjacent regions. 
+ Geological Survey of Canada, Bulletin | Northern Hemisphere | Pragian-Pragian; Homerian-Pridoli; Gorstian-Gorstian; Ludfordian-Lochkovian; Ludfordian-Pragian; Rhuddanian-Ludfordian; Gorstian-Pridoli; Homerian-Lochkovian; Ludfordian-Pridoli; Lochkovian-Pragian; P 
+ trilete-ornamented: Emphanisporites protophanus | trilete-ornamented: Dibolisporites wetteldorfensis | trilete-ornamented: Apiculiretusispora arenorugosa | trilete-ornamented: Emphanisporites epicautus | trilete-ornamented: Synorisporites tripapillatus | trilete-ornamented: Emphanisporites decoratus | trilete-unspecified: Perotrilites microbaculatus | trilete-laevigate: Archaeozonotriletes divellomedium | trilete-ornamented: Apiculiretusispora synorea | trilete-ornamented: Cymbosporites echinatus | trilete-ornamented: Chelinospora cassicula | trilete-ornamented: Brochotriletes sp | trilete-ornamented: Emphanisporites splendens | trilete-ornamented: Camptozonotriletes caperatus | trilete-ornamented: Acinosporites salopiensis | trilete-ornamented: Synorisporites libycus | trilete-unspecified: Amicosporites splendidus | trilete-ornamented: Verrucosisporites polygonalis | trilete-laevigate: Retusotriletes abundo | trilete-ornamented: Cymbosporites verrucosus | trilete-ornamented: Lophozonotriletes poecilomorphus | trilete-laevigate: Ambitisporites sp.B Rich.& Ioan.,1973 | trilete-ornamented: Brochotriletes hudsonii | trilete-ornamented: Dictyotriletes favosus | trilete-ornamented: Emphanisporites zavallatus | trilete-ornamented: Emphanisporites neglectus | trilete-ornamented: Synorisporites downtonensis | cryptospore-tetrad: Tetrahedraletes medinensis | trilete-ornamented: Dibolisporites sp.K | trilete-ornamented: Streelispora newportensis | trilete-ornamented: Clivosispora verru
+
+ 60 '12998' 1983 Voronova,M.A. 
+ Some information on Phanerozoic pollen and spores with an Equatorial Otorochkoi. (In: Palynology and Paleogeography) 
+ Trudy Uralskii Nauchnyi Tsentralnykh,Akademiya Nauk SSR, Materialy IV Vsesoyuznoi Palinogicheskoi Kongerent SII, Tyumen  | USSR(Ukrainian SSR) | Rhuddanian-Pridoli 
+ trilete-laevigate: Archaeozonotriletes | trilete-laevigate: Ambitisporites
+
+ 61 '13214' 1984 Turner,R.E. 
+ Acritarchs from the type area of the Ordovician Caradoc Series, Shropshire, England. 
+ Paläeontographica Abteilung B | England(Shropshire) | Sandbian-Katian 
+ other-spore: Schizaeoisporites sp.I
+
+2026-10-27T04:27:14.503761Z ERROR codex_core::tools::router: error=collab spawn failed: Fatal error: failed to load model context for thread 01a17b9c-598e-7c22-b74a-d768cf4d518b: invalid thread-store request: no rollout found for thread id 01a17b9c-598e-7c22-b74a-d768cf4d518b
+web search: 
+exec
+/bin/zsh -lc "rg --files library data/spores/work | head -n 90; rg -n 'Sandbian|Swed|Timofeev|contamin|Corna|Deunff|Grignani|Cramer' data/spores/work/wellman2013/appendix.txt | head -n 50" in /Users/bwbrook/papers/silurian_plants
+ succeeded in 0ms:
+data/spores/work/age_names.csv
+data/spores/work/wellman2013/appendix.txt
+data/spores/work/locations.csv
+data/spores/work/spore_genera.csv
+data/spores/work/codex/genera_pilot/out.json
+data/spores/work/codex/genera_pilot/genera_sample.csv
+data/spores/work/codex/genera_pilot/schema.json
+data/spores/work/codex/genera_pilot/sonnet.csv
+data/spores/work/codex/genera_pilot/log.txt
+data/spores/work/codex/genera_pilot/prompt.md
+data/spores/work/codex/genera_pilot/consensus.csv
+data/spores/work/codex/wellman2013/out.json
+data/spores/work/codex/wellman2013/log_Pridoli.txt
+data/spores/work/codex/wellman2013/prompt_Wenlock.md
+data/spores/work/codex/wellman2013/prompt_Ordovician.md
+data/spores/work/codex/wellman2013/prompt_Pridoli.md
+data/spores/work/codex/wellman2013/chunk_Pridoli.txt
+data/spores/work/codex/wellman2013/log_Ordovician.txt
+data/spores/work/codex/wellman2013/schema.json
+data/spores/work/codex/wellman2013/out_Pridoli.json
+data/spores/work/codex/wellman2013/out_Llandovery.json
+data/spores/work/codex/wellman2013/chunk_Ordovician.txt
+data/spores/work/codex/wellman2013/log.txt
+data/spores/work/codex/wellman2013/appendix_numbered.txt
+data/spores/work/codex/wellman2013/out_Wenlock.json
+data/spores/work/codex/wellman2013/prompt.md
+data/spores/work/codex/wellman2013/log_Llandovery.txt
+data/spores/work/codex/wellman2013/prompt_Ludlow.md
+data/spores/work/codex/wellman2013/chunk_Llandovery.txt
+data/spores/work/codex/wellman2013/out_Ordovician.json
+data/spores/work/codex/wellman2013/chunk_Ludlow.txt
+data/spores/work/codex/wellman2013/log_Ludlow.txt
+data/spores/work/codex/wellman2013/chunk_Wenlock.txt
+data/spores/work/codex/wellman2013/prompt_Llandovery.md
+data/spores/work/codex/wellman2013/out_Ludlow.json
+data/spores/work/codex/wellman2013/log_Wenlock.txt
+data/spores/work/codex/vetting/docs1.csv
+data/spores/work/codex/vetting/wellman2013_references.txt
+data/spores/work/codex/vetting/docs2.csv
+data/spores/work/codex/vetting/schema.json
+data/spores/work/codex/vetting/prompt2.md
+data/spores/work/codex/vetting/prompt1.md
+data/spores/work/codex/vetting/log1.txt
+data/spores/work/codex/vetting/log2.txt
+data/spores/work/codex/locations/out.json
+data/spores/work/codex/locations/schema.json
+data/spores/work/codex/locations/log.txt
+data/spores/work/codex/locations/prompt.md
+data/spores/work/codex/genera/out6.json
+data/spores/work/codex/genera/chunk6.csv
+data/spores/work/codex/genera/schema.json
+data/spores/work/codex/genera/prompt3.md
+data/spores/work/codex/genera/chunk5.csv
+data/spores/work/codex/genera/chunk4.csv
+data/spores/work/codex/genera/prompt6.md
+data/spores/work/codex/genera/chunk1.csv
+data/spores/work/codex/genera/chunk3.csv
+data/spores/work/codex/genera/out1.json
+data/spores/work/codex/genera/chunk2.csv
+data/spores/work/codex/genera/prompt2.md
+data/spores/work/codex/genera/out2.json
+data/spores/work/codex/genera/prompt5.md
+data/spores/work/codex/genera/prompt1.md
+data/spores/work/codex/genera/out3.json
+data/spores/work/codex/genera/prompt4.md
+data/spores/work/codex/genera/log6.txt
+data/spores/work/codex/genera/log4.txt
+data/spores/work/codex/genera/out4.json
+data/spores/work/codex/genera/log5.txt
+data/spores/work/codex/genera/out5.json
+data/spores/work/codex/genera/log1.txt
+data/spores/work/codex/genera/log2.txt
+data/spores/work/codex/genera/log3.txt
+468:Peri-Gondwana (Armorica) – France: Ambitisporites avitus (Deunff & Chateauneuf 1976).
+527:Baltica – Sweden: Ambitisporites dilutus, Synorisporites libycus. (Hagström 1997).
+560:Baltica – Sweden: Ambitisporites dilutus, Cymbohilates variabilis, Laevolancis divellomedia,
+649:Baltica – Sweden: Tetrahedraletes medinensis (Gray et al. 1982; Wellman & Richardson 1993).
+666:(Deunff & Chateauneuf 1976).
+686:tripapillatus, S. verrucatus (Cramer 1967; Cramer & Díez 1975; Cramer & Rodríguez 1977;
+688:Díez & Cramer 1976; Richardson et al. 2001; Rodríguez 1978a–c, 1983).
+757:Baltica – Sweden: Abditusdyadus chalazus, Acontotetras gotlandica, Ambitisporites dilutus,
+821:Baltica – Sweden: Abditusdyadus chalazus, Acontotetras gotlandica, Ambitisporites avitus, A.
+860:Scylaspora vetusta (Burgess & Richardson 1991; Cramer 1966; Richardson et al. 2001;
+972:verrucatus (Deunff & Chateauneuf 1976; Moreau-Benoit & Dubreuil 1987; Rauscher &
+1003:variabilis (Cramer 1967; Cramer & Rodríguez 1977; Cramer & Díez 1977; Richardson et al.
+1320:HAGSTRÖM, J. 1997. Land-derived palynomorphs from the Silurian of Gotland, Sweden.
+
+exec
+/bin/zsh -lc "python3 -c 'import csv; rows=list(csv.DictReader(open(\"data/spores/work/codex/vetting/docs1.csv\"))); [print(i+1,r[\"doc\"],r[\"authors\"],r[\"year\"],\"|\",r[\"title\"],\"|\",r[\"locations\"],\"|\",r[\"ics_ranges\"],\"|\",r[\"taxa\"]) for i,r in enumerate(rows) if 33<=i<=55]'" in /Users/bwbrook/papers/silurian_plants
+ succeeded in 0ms:
+34 08790 Strother,P.K.;Traverse,A. 1979 | Plant microfossils from Llanderovian and Wenlockian rocks of Pennsylvania. | Pennsylvania | Sheinwoodian-Homerian; Rhuddanian-Telychian; Rhuddanian-Homerian | cryptospore-tetrad: Nodospora rugosa | cryptospore-dyad: Dyadospora | cryptospore-tetrad: Tetrahedraletes | trilete-laevigate: Ambitisporites sp | cryptospore-tetrad: Tetrahedraletes medinensis | cryptospore-tetrad: Nodospora oyleri | cryptospore-tetrad: Nodospora | cryptospore-dyad: Dyadospora murusdensa | cryptospore-tetrad: Nodospora burnhamensis | cryptospore-dyad: Dyadospora murusattenuata
+35 08862 Poncet,J.;Rauscher,R. 1971 | New stratigraphic data on the Comprehensive Series (D1-S4), of Cotentin. | France(Manche) | Lochkovian-Lochkovian; Gorstian-Ludfordian; Rhuddanian-Homerian | trilete-laevigate: Archaeozonotriletes chulus | trilete-ornamented: Emphanisporites neglectus | trilete-ornamented: Synorisporites | trilete-laevigate: Ambitisporites sp | trilete-ornamented: Streelispora | trilete-laevigate: Retusotriletes sp | trilete-ornamented: Emphanisporites
+36 08930 Moreau-Benoit,A. 1974 | Palynological and planktonic research on the Devonian and some Silurian formations of the southeast Massif Armoricain. | France(Bretagne) | Pragian-Emsian; Pragian-Pragian; Rhuddanian-Pridoli | trilete-laevigate: Stenozonotriletes bellus | trilete-ornamented: Lophotriletes sp | trilete-laevigate: Leiotriletes simplex | trilete-ornamented: Lycospora pallida | trilete-laevigate: Punctatisporites dilutus | other-spore: Laevigatosporites antiquus | trilete-ornamented: Rhabdosporites sp.A | trilete-unspecified: Triletes sp.A | trilete-laevigate: Leiotriletes minor | trilete-laevigate: Punctatisporites solidus | trilete-laevigate: Retusotriletes communis | trilete-laevigate: Calamospora microrugosa | trilete-ornamented: Apiculatisporis longispinosus | trilete-ornamented: Granulatisporites frustulentus | trilete-laevigate: Retusotriletes chulus | trilete-unspecified: Auroraspora minuta | trilete-laevigate: Stenozonotriletes simplex | trilete-laevigate: Stenozonotriletes spetcandus | trilete-ornamented: Apiculiretusispora brandtii | trilete-laevigate: Ambitisporites avitus | trilete-ornamented: Acanthotriletes polygamus | trilete-laevigate: Retusotriletes verrucatus | trilete-laevigate: Stenozonotriletes definitus | trilete-ornamented: Apiculatisporis polygamus
+37 09021 Emo,G.T.;Smith,D.G. 1978 | Palynological evidence for the age of the Lower Palaeozoic rocks of Slieve Aughty, Counties Clare and Galway. | S.Ireland(Galway); S.Ireland(Clare) | Rhuddanian-Telychian; Aeronian-Sheinwoodian; Aeronian-Homerian | trilete-laevigate: Ambitisporites dilutus | trilete-laevigate: Ambitisporites avitus
+38 09257 Miller,M.A.;Eames,L.E. 1980 | Palynomorphs from the Silurian Medina Group (Lower Llandovery), of the Naigara Gorge, Lewiston, New York, USA. | New York | Rhuddanian-Aeronian | cryptospore-tetrad: Tetrahedraletes medinensis | cryptospore-tetrad: Nodospora burnhamensis
+39 09521 Smith,D.G. 1979 | The distribution of Trilete spores in Irish Silurian Rocks. | Ireland | Rhuddanian-Pridoli; Sheinwoodian-Homerian | trilete-laevigate: Punctatisporites sp | trilete-laevigate: Ambitisporites sp | trilete-laevigate: Archaeozonotriletes sp | trilete-laevigate: Archaeozonotriletes chulus | trilete-laevigate: Retusotriletes sp | trilete-laevigate: Ambitisporites avitus | trilete-laevigate: Retusotriletes warringtonii
+40 09699 Duffield,S.L.;Legault,J.A. 1981 | Acritarch biostratigraphy of Upper Ordovician-Lower Silurian rocks, Anticosti Island, Quebec. | Canada(Anticosti Island) | Rhuddanian-Pridoli | cryptospore-tetrad: Tetrahedraletes sp. Duff.& Lega.,1981
+41 10194 Smith,D.G. 1981 | Progress in Irish Lower Palaeozoic palynology. | Ireland | Rhuddanian-Homerian; Sheinwoodian-Homerian | trilete-laevigate: Ambitisporites | trilete-laevigate: Archaeozonotriletes | trilete-laevigate: Retusotriletes
+42 10325 Miller,M.A.;Eames,L.E. 1982 | Palynomorphs from the Silurian Medina Group, (Lower Llandovery), of the Niagara Gorge, Lewiston, New York, USA. | New York | Rhuddanian-Telychian | cryptospore-dyad: Dyadospora murusdensa | cryptospore-tetrad: Nodospora rugosa | cryptospore-tetrad: Nodospora burnhamensis | cryptospore-dyad: Dyadospora murusattenuata | cryptospore-tetrad: Nodospora retimembrana | cryptospore-tetrad: Tetrahedraletes medinensis | cryptospore-tetrad: Tetrahedraletes sp. Duff.& Lega.,1981
+43 10458 da Costa,N.M. 1982 | Palynoplankton of Paleozoic sediments of the State of Amazonas. | Brazil(Amazonas) | Rhuddanian-Pridoli | other-spore: Speciososporites sp | trilete-ornamented: Acanthotriletes sp | trilete-unspecified: Dulhuntyispora sp
+44 10843 Miller,M.A. 1991 | Paniculaferum missouriensis, gen.et sp.nov., a new Upper Ordovician acritarch from Missouri, USA. | Canada(Quebec); Missouri | Sandbian-Hirnantian | cryptospore-tetrad: Tetrahedraletes medinensis
+45 10876 Gray,J.;Massa,D.;Boucot,A.J. 1982 | Caradocian land plant microfossils from Libya. | Sweden; Kentucky; New York; Libya | Katian-Hirnantian; Rhuddanian-Telychian; Gorstian-Ludfordian; Sandbian-Katian | cryptospore-tetrad: Tetrad sp | cryptospore-tetrad: Tetrahedral tetrads
+46 10982 Mabillard,J.E.;Aldridge,R.J. 1985 | Microfossil distribution across the Base of the Wenlockian series in the type area | England(Shropshire) | Telychian-Sheinwoodian | trilete-laevigate: Ambitisporites sp
+47 11107 Hill,P.J.;Paris,F.;Richardson,J.B. 1985 | Silurian palynomorphs. (In: Palynology of Northeast Libya. B.Thusu and B.Owens, editors) | Libya | Rhuddanian-Rhuddanian | cryptospore-tetrad: Nodospora sp
+48 11402 Schrank,E. 1984 | Paleozoic and Mesozoic palynomorphs from the Foram 1 Well (Western Desert, Egypt). | Egypt | Rhuddanian-Pridoli | cryptospore-tetrad: Tetrahedraletes sp
+49 11441 Gray,J.;Colbath,G.K.;de Faria,A.;Boucot,A.J.;Rohr,D.M. 1985 | Silurian age fossils from the Paleozoic Parana Basin, Southern Brazil | Brazil(Paraná); Brazil(Mato Grosso) | Rhuddanian-Telychian | cryptospore-tetrad: Tetrahedraletes | cryptospore-tetrad: Tetrahedraletes medinensis
+50 11558 Martin,F. 1973 | The Upper Ordovician and Lower Silurian at Deerlijk (Belgium) | Belgium | Katian-Telychian; Katian-Aeronian | other-spore: Schizaeoisporites sp.I | trilete-laevigate: Leiotriletes sp | trilete-laevigate: Leiotriletes sp.I Mart.,1973
+51 11807 Achab,A. 1975 | Palynostratigraphic study of several Layers of Silurian Formations of the Lac Matapedia Cyncline | Canada(Gaspe Area) | Aeronian-Telychian | trilete-laevigate: Ambitisporites | trilete-laevigate: Punctatisporites
+52 11850 Johnson,N.G. 1985 | Early Silurian palynomorphs from the Tuscarora Formation in Central Pennsylvania and their paleobotanical and geological significance | Pennsylvania | Rhuddanian-Telychian | cryptospore-dyad: Pseudodyadospora rugosa | cryptospore-tetrad: Stegambiquadrella | cryptospore-tetrad: Nodospora rugosa | cryptospore-tetrad: Nodospora burnhamensis | cryptospore-dyad: Pseudodyadospora laevigata | cryptospore-tetrad: Nodospora retimembrana | cryptospore-dyad: Dyadospora membranifera | trilete-laevigate: Ambitisporites sp | cryptospore-dyad: Dyadospora murusattenuata | cryptospore-dyad: Dyadospora murusdensa | cryptospore-dyad: Pseudodyadospora | trilete-unspecified: Trilete spore sp | cryptospore-tetrad: Tetrahedraletes medinensis | cryptospore-tetrad: Stegambiquadrella contenta
+53 11973 MacArovici,N.;Beju,D.;Olaru,L. 1965 | New data on the Siberian fauna of the Base of the Moldave Plateau | USSR(Moldavian SSR) | Rhuddanian-Pridoli | trilete-laevigate: Punctatisporites sp | trilete-laevigate: Leiotriletes sp | trilete-laevigate: Ambitisporites sp
+54 11986 Sastri,V.V.;Venkatachala,B.S. 1980 | Organic remains, age and environment of the Pre-Siwalik sediments encountered in some deep wells drilled in south part of the Ganga Valley | India(Delhi) | Rhuddanian-Pridoli | trilete-laevigate: Punctatisporites sp
+55 12090 Lutkevich,E.M.;Pashkevichius,I.Y.;Makhnach,A.S.;Khishyakov,A.V.;Potyanovskaya,G.M.;Edelshtein,A.G.;Bukatchuk,P.D. 1973 | Ordovician System. (In: Stratigraphy and Paleogeography of the Sinian, Paleozoic and Triassic of the Western Russian Platform. E.M.Lutkevich and A.K.Krilova, editor) | USSR(Russian Platform) | Tremadocian-Dapingian | trilete-laevigate: Leiotriletes | trilete-laevigate: Stenozonotriletes
+56 12230 Antelo,B. 1978 | Silurian Formations of Northwest Argentina, (Jujuy and Salta Provinces). | Argentina(Salta); Argentina(Jujuy) | Rhuddanian-Homerian | trilete-laevigate: Ambitisporites avitus
+
+web search: Ordovician trilete spores Timofeev Deunff contamination review ...
+exec
+/bin/zsh -lc "sed -n '1,105p' data/spores/work/wellman2013/appendix.txt; sed -n '105,260p' data/spores/work/wellman2013/appendix.txt; sed -n '260,390p' data/spores/work/wellman2013/appendix.txt; rg --files library | head -n 40; pdftotext data/external/deposits/hooper2026-spore-evolution-esm/41477_2026_2432_MOESM1_ESM.pdf - | rg -n -C 5 'Swed|Sandbian|doubt|contamin'" in /Users/bwbrook/papers/silurian_plants
+ succeeded in 698ms:
+Supplementary Material
+
+Ordovician–Silurian dispersed spore assemblages
+
+Locality codes refer to those plotted on the palaeogeographical base maps. Data compiled by
+
+Philippe Steemans. Certain reported assemblages are omitted either because they are poorly age
+
+constrained or too poorly preserved/too high thermal maturity to enable accurate identification.
+
+Other assemblages are omitted where spore identification is questionable. Cited references refer
+
+to the original paper that reported on the spore assemblage plus subsequent papers that have been
+
+used in taxonomic updates of the species list. Note that Tremadoc–Arenig records report only
+
+terrestrial spore-like palynomorphs of questionable affinities and are marked with an asterisk.
+
+Tremadoc
+Peri-Gondwana (Armorica) – Spain: *Attritasporites messaoudi (Fombella 1982).
+
+Southern Gondwana – Algeria: *Abacum rudi, *A. messaoudi, *A. scabra, *A. velata (Combaz
+
+1967; Pittau 1985).
+
+SW Gondwana – Saudi Arabia: *Virgatasporites rudii (Molyneux & Al-Hajri 2000).
+
+Arenig
+Peri-Gondwana (Perunica) – Czech Republic: *Attritasporites messaoudi, *A. velata,*
+
+Virgatasporites rudi, *V. baccatus (Vavrdová 1990a, b).
+
+Llanvirn
+Peri-Gondwana (Perunica) – Czech Republic: *Virgatasporites rudi (Vavrdová 1990a, b).
+
+SW Gondwana – Saudi Arabia: Stegambiquadrella contenta (McClure 1988; Gray 1988;
+
+Strother et al. 1996; Molyneux & Al-Hajri 2000).
+
+Caradoc
+Avalonia – UK, Shropshire: Abditusdyadus histosus, Dyadospora murusdensa, Laevolancis
+
+chibrikovae, Moyeria cabottii, Pseudodyadospora laevigata, Rimosotetras problematica,
+Rugosphaera cerebra, Segestrespora laevigata, S. rugosa, Sphaerasaccus glabellus,
+
+Strophomorpha ovata, Tetrahedraletes grayae, T. medinensis, Velatitetras laevigata, V. rugosa,
+
+V. rugulata, Vestitusdyadus qalibahinus (Burgess 1991; Richardson 1988; Rubinstein & Vaccari
+
+2004; Steemans et al. 1996; Steemans et al. 2000; Strother 1991; Turner 1984; Wellman 1996;
+
+Wellman & Richardson 1993).
+
+Southern Gondwana – Libya: Ambitisporites vavrdovii, Imperfectotriletes patinatus,
+
+Tetrahedraletes medinensis (Gray et al. 1982; Steemans et al. 1996; Steemans et al. 2000;
+
+Wellman & Richardson 1993).
+
+SW Gondwana – Saudi Arabia: Ambitisporites sp., Chelinospora sp., Leiotriletes sp., ?
+
+Synorisporites sp. (Steemans et al. 2009).
+
+Ashgill
+Laurentia – USA: Nodospora retimembrana, Tetrahedraletes grayii, T. medinensis, T.
+
+medinensis parvus, Velatitetras laevigate, Velatitetras reticulata, V. retimembrana, V. rugosa
+
+(Beck & Strother 2008; Burgess 1991; Gray 1985, 1988; Steemans et al. 1996; Strother 1991;
+
+Taylor 1995a, b; Wellman & Richardson 1993)
+
+Baltica – Germany: Dyadospora murusdensa, Rugosphaera tuscarorensis (Reitz & Heuse
+
+1994).
+
+Avalonia – Nova Scotia, Canada: Tetrahedraletes medinensis (Beck & Strother 2008).
+
+Avalonia – Belgium: Ambitisporites avitus, Dyadospora murusattenuata, Imperfectotriletes
+
+patinatus, I. vavrdovae, Moyeria cabottii, Pseudodyadospora laevigata, Rugosphaera cerebra,
+
+R. tuscarorensis, Segestrespora membranifera, S. rugosa, Stegambiquadrella contenta,
+
+Tetrahedraletes grayae, T. medinensis, Velatitetras anatoliensis, V. laevigata, V. retimembrana,
+
+V. rugosa (Martin 1973; Steemans 2001; Steemans et al. 1996; Wellman & Richardson 1993).
+Avalonia – southern Britain: Ambitisporites avitus, Imperfectotriletes vavrdovae, Rimosotetras
+
+problematica, Segestrespora laevigata, S. membranifera, S. rugosa, Tetrahedraletes medinensis
+
+parvus, Velatitetras laevigata, V. retimembrana (Burgess 1991; Steemans et al. 1996).
+
+Peri-Gondwana (Moesian Platform) – Bulgaria: Tetrahedraletes medinensis (Lakova et al.
+
+1992).
+
+Peri-Gondwana (Perunica) – Czech Republic: Chaetosporites pollensimillis, Dyadospora
+
+murusattenuata, D. murusdensa, Imperfectotriletes patinatus, Laevolancis divellomedium,
+
+Pseudodyadospora laevigata, Quadrisporites horridus, Q. variabilis, Rugosphaera cerebra, R.
+
+tuscarorensis, Segestrespora membranifera, Stegambiquadrella contenta, Tetrahedraletes grayii,
+
+
+T. medinensis, Tritonialetes vacuolus, Vallatialetes aureolatus, Velatitetras retimembrana, V.
+
+retimembrana, V. rugosa (Gray 1991; Steemans et al. 1996; Steemans et al. 2000; Strother 1991;
+
+Vavrdová 1982, 1984, 1988, 1989; Wellman 1996).
+
+Peri-Gondwana (Taurides) – Turkey: Ambitisporites avitus, A. dilutus, Dyadospora
+
+murusattenuata, D. murusdensa, Imperfectotriletes patinatus, I. vavrdovae, Pseudodyadospora
+
+laevigata, Quadrisporites granulatus, Rimosotetras problematica, Rugosphaera cerebra,
+
+Segestrespora burgessii, S laevigata, S. membranifera, S. rugosa, Tetrahedraletes medinensis,
+
+Velatitetras anatoliensis, V. laevigata, V. retimembrana, V. rugosa (Steemans et al. 1996;
+
+Steemans et al. 2000).
+
+SW Gondwana – Saudi Arabia : Ambitisporites sp., Chelinospora sp., Leiotriletes sp., ?
+
+Synorisporites sp (Steemans et al. 2009).
+
+Southern Gondwana – Libya: Dyadospora murusdensa, Imperfectotriletes patinatus, I.
+
+vavrdovae, Pachytetras rugosa, Rimosotetras problematica, Rugosphaera cerebra,
+
+Segestrespora laevigata, S. rugosa, Tetrahedraletes grayae, T. medinensis, Velatitetras rugulata
+(Burgess 1991; Gray 1991; Gray et al. 1982; Hill et al. 1985; Richardson 1988; Steemans et al.
+
+1996; Steemans et al. 2000; Wellman 1996; Wellman & Richardson 1993).
+
+Northern Gondwana – South Africa: Tetrahedraletes medinensis, T. medinensis parvus
+
+(Burgess 1991; Gray 1991; Gray et al. 1986; Strother 1991; Wellman & Richardson 1993).
+
+Tarim Terrane – Xinjiang, China: Dyadospora murusattenuata, D. murusdensa, Laevolancis
+
+chibrikovae, Pseudodyadospora laevigata, Segestrespora rugosa, Tetrahedraletes medinensis,
+
+Velatitetras laevigata (Rubinstein & Vaccari 2004; Steemans et al. 2000; Wang et al. 1997).
+
+South China Terrane – Zhejiang, China: Dyadospora murusattenuata, Strophomorpha ovata,
+
+Tetrahedraletes medinensis, Velatitetras retimembrana (Yin & He 2000).
+
+Hirnantian
+Avalonia – UK: Ambitisporites avitus, Imperfectotriletes vavrdovae, Pseudodyadospora
+
+laevigata, Rimosotetras problematica, Segestrespora laevigata, S. membranifera, S. rugosa,
+
+Velatitetras laevigata, V. retimembrana (Burgess 1991; Steemans et al. 1996; Steemans et al.
+
+2000).
+
+SW Gondwana – Saudi Arabia: Ambitisporites sp., Chelinospora sp., Imperfectotriletes
+
+vavrdovae, Laevolancis divellomedia, Leiotriletes sp., ?Synorisporites sp (Miller & Al-Ruwaili
+
+2007; Steemans et al. 2009).
+
+Llandovery
+Laurentia – Anticosti, Canada: Tetrahedraletes medinensis, Velatitetras retimembrana
+
+(Duffield 1985; Steemans et al. 1996; Strother 1991; Wellman & Richardson 1993).
+
+Laurentia – USA: Abditusdyadus laevigatus, Ambitisporites avitus, A. dilutus, Dyadospora
+
+murusattenuata, D. murusdensa, Imperfectotriletes patinatus, I. patinatus, I. vavrdovae,
+
+Nodospora oyleri, Pseudodyadospora laevigata, P. rugosa, Rimosotetras problematica,
+
+Rugosphaera tuscarorensis, Segestrespora laevigata, S. membranifera, S. rugosa,
+Stegambiquadrella contenta, Velatitetras retimembrana, V. rugosa (Burgess 1991; Burgess &
+
+Richardson 1991; Gensel et al. 1990; Gray 1985, 1991; Gray & Boucot 1971; Gray et al. 1982;
+
+Gray et al. 1992; Johnson 1985; Miller & Eames 1982; Steemans et al. 1996; Steemans et al.
+
+2000; Strother 1991; Strother & Traverse 1979; Wellman & Richardson 1993).
+
+Avalonia – Belgium: Moyeria cabottii (Martin 1973; Wellman & Richardson 1993).
+
+Avalonia – Ireland: Ambitisporites avitus, A. dilutus (Emo & Smith 1978).
+
+Peri-Gondwana (Moesian Platform) – Bulgaria: Tetrahedraletes medinensis (Lakova et al.
+
+1992).
+
+Peri-Gondwana (Iberia) – Spain: Ambitisporites avitus, A. dilutes (Rodríguez 1983).
+
+SW Gondwana – Saudi Arabia: Tetrahedraletes medinensis (Wellman et al. 2000a,b).
+
+Southern Gondwana – Libya: Ambitisporites avitus, A. dilutus, Dyadospora murusdensa,
+
+Rimosotetras problematica (Hill et al. 1985; Hoffmeister 1959; Richardson 1985; Steemans et
+
+al. 1996; Wellman & Richardson 1993).
+
+Eastern Gondwana – Brazil: Rugosphaera rugosa, Tetrahedraletes medinensis (Gray et al.
+
+1985; Le Hérissé et al. 2001; Strother 1991; Wellman & Richardson 1993).
+
+Eastern Gondwana – Paraguay: Laevolancis chibrikovae, L. divellomedium,
+
+Pseudodyadospora laevigata, Segestrespora rugosa, Sphaerasaccus glabellus, Vellatitetras
+
+rugosa (Mendlowicz Mauller et al. 2004).
+
+Northern Gondwana – South Africa: Tetrahedraletes medinensis, T. medinensis parvus
+
+(Burgess 1991; Gray 1991; Gray et al. 1986; Strother 1991; Wellman & Richardson 1993).
+
+Llandovery: Rhuddanian
+Laurentia – Canada: Tetrahedraletes medinensis (Eley & Legault 1988; Gray 1991).
+Laurentia – USA: Dyadospora murusattenuata, D. murusdensa, Rugosphaera cerebra, R.
+
+tuscarorensis, Segestrespora laevigata, Strophomorpha ovata, Tetrahedraletes medinensis,
+
+Velatitetras retimembrana, V. rugosa, Vermiculatisphaera obscura (Beck & Strother 2008; Gray
+
+1991; Miller & Eames 1982; Strother 1991; Wellman 1996; Wellman & Richardson 1993).
+
+Avalonia – Nova Scotia, Canada: Tetrahedraletes medinensis (Beck & Strother 2001)
+
+Avalonia – UK: Ambitisporites avitus, Dyadospora murusattenuata, D. murusattenuata,
+
+Hispanaediscus lamontii, Imperfectotriletes vavrdovae, Rimosotetras problematica,
+
+Rugosphaera cerebra, Segestrespora burgessii, S. laevigata, S. membranifera, S. rugosa,
+
+Strophomorpha ovata, Tetrahedraletes medinensis, Velatitetras anatoliensis, V. laevigata, V.
+
+retimembrana, V. rugosa, V. rugulata (Beck & Strother 2008; Burgess 1991; Richardson 1996;
+
+Steemans et al. 1996; Steemans et al. 2000; Wellman 1993, 1996; Wellman & Richardson 1993).
+
+SW Gondwana – Saudi Arabia: Abditusdyadus laevigatus, Ambitisporites avitus, A. dilutus,
+
+Chelinohilates maculatus, Complectitetras alhajrii, Dyadaspora murusattenuatta, D.
+
+murusdensa, Imperfectotriletes patinatus, I. vavrdovae, Laevolancis chibrikovae, L.
+
+divellomedia, L. divellomedia, L. plicata, Pachytetras rugosa, Pseudodyadospora laevigata, P.
+
+petasus, Rimosotetras problematica, Rugosphaera tuscarorensis, Segestrespora laevigata, S.
+
+membranifera, S. rugosa, Sphaerasaccus glabellus, Tetrahedraletes medinensis, Velatitetras
+
+anatoliensis, V. laevigata, V. retimembrana, V. rugosa, Vestitusdyadus qalibahinus (Steemans et
+
+al. 2000; Wellman et al. 2000a,b).
+
+Southern Gondwana – Libya: Dyadospora murusattenuata, D. murusdensa, Imperfectotriletes
+
+patinatus, I. vavrdovae, Pseudodyadospora rugosa, Rimosotetras problematica, Segestrespora
+patinatus, I. vavrdovae, Pseudodyadospora rugosa, Rimosotetras problematica, Segestrespora
+
+laevigata, S. membranifera, S. rugosa, Tetrahedraletes grayae, T. medinensis, Velatitetras
+
+anatoliensis, V. laevigata, V. retimembrana, V. rugosa, V. rugulata (Burgess 1991; Gray 1991;
+Hill et al. 1985; Richardson 1988; Steemans et al. 1996; Steemans et al. 2000; Strother 1991;
+
+Wellman 1996; Wellman & Richardson 1993).
+
+Eastern Gondwana – Argentina: Dyadospora murusattenuata, D. murusdensa,
+
+Imperfectotriletes patinatus, I. vavrdovae, Laevolancis chibrikovae, Pseudodyadospora petasus,
+
+Rimosotetras problematica, Segestrespora laevigata, S. membranifera, Sphaerasaccus glabellus,
+
+Tetrahedraletes medinensis, Velatitetras laevigata, V. retimembrana, V. rugosa, Vestitusdyadus
+
+qalibahinus (Rubinstein & Vaccari 2004).
+
+Eastern Gondwana – Brazil: Abditusdyadus laevigatus, Dyadospora murusattenuata, D.
+
+murusdensa, Imperfectotriletes patinatus, I. vavrdovae, Laevolancis divellomedia,
+
+Pseudodyadospora laevigata, Rimosotetras problematica, Segestrespora laevigata, S.
+
+membranifera, S. rugosa, Sphaerasaccus glabellus, Tetrahedraletes medinensis, Velatitetras
+
+anatoliensis, V. laevigata, V. retimembrana, V. rugosa (Mizusaki et al. 2002).
+
+Eastern Gondwana – Paraguay: Ambitisporites avitus, A. dilutus, Dyadospora murusattenuata,
+
+D. murusdensa, Imperfectotriletes patinatus, I. vavrdovae, Laevolancis divellomedia,
+
+Rimosotetras problematica, Segestrespora laevigata, Tetrahedraletes medinensis, Velatitetras
+
+anatoliensis, V. laevigata, V. retimembrana (Mendlowicz Mauller et al. 2004; Steemans &
+
+Pereira 2002).
+
+South China Terrane – Zhejiang, China: Dyadospora murusattenuata, Strophomorpha ovata,
+
+Velatitetras retimembrana (Yin & He 2000).
+
+Llandovery (Aeronian)
+Laurentia – USA: Nodospora rugosa, Velatitetras rugosa (Gray 1985).
+
+Avalonia – Nova Scotia, Canada: Ambitisporites avitus, Tetrahedraletes medinensis (Beck &
+
+Strother 2001).
+Avalonia – UK: Ambitisporites dilutus, Imperfectotriletes vavrdovae, Tetrahedraletes
+
+medinensis parvus, Velatitetras retimembrana (Burgess 1991).
+
+Western Gondwana – Iraq: Ambitisporites avitus (Al-Ameri et al. 1991).
+
+SW Gondwana – Saudi Arabia: Ambitisporites avitus, A. dilutus, Chelinohilates maculatus,
+
+Dyadospora murusattenuata, D. murusdensa, Imperfectotriletes patinatus, I. vavrdovae,
+
+Laevolancis chibrikovae, L. divellomedia, L. plicata, Pseudodyadospora laevigata, P. petasus,
+
+Rimosotetras problematica, Tetrahedraletes medinensis, Velatitetras laevigata, V. rugosa
+
+(Steemans et al. 2000).
+
+Southern Gondwana – Libya: Ambitisporites avitus, A. dilutus, Dyadospora murusattenuata,
+
+D. murusdensa, Imperfectotriletes patinatus, I. vavrdovae, Pseudodyadospora rugosa,
+
+Rimosotetras problematica, Segestrespora membranifera, S. rugosa, Tetrahedraletes medinensis,
+
+Velatitetras anatoliensis, V. laevigata, V. retimembrana, V. rugosa, V. rugulata (Burgess 1991;
+
+Gray 1991; Hill et al. 1985; Richardson 1985, 1988; Steemans et al. 1996; Steemans et al. 2000;
+
+Strother 1991; Wellman 1996; Wellman & Richardson 1993).
+
+Eastern Gondwana – Brazil: Abditusdyadus laevigatus, Ambitisporites avitus, A. dilutus,
+
+Dyadospora murusattenuata, D. murusdensa, Imperfectotriletes patinatus, I. vavrdovae,
+
+Laevolancis divellomedia, Pseudodyadospora laevigata, Rimosotetras problematica,
+
+Rugosphaera cerebra, Rugosphaera rugosa, Segestrespora burgessii, S. laevigata, S.
+
+membranifera, S. rugosa, Sphaerasaccus glabellus, Tetrahedraletes medinensis, Velatitetras
+
+anatoliensis, V. laevigata, V. retimembrana, V. rugosa (Le Hérissé et al. 2001; Mizusaki et al.
+
+2002).
+
+Eastern Gondwana – Paraguay: Ambitisporites avitus, A. dilutus, Dyadospora murusattenuata,
+
+D. murusttanuata, D. murusdensa, Imperfectotriletes patinatus, I. vavrdovae, Laevolancis
+divellomedia, Pseudodyadospora petasus, Rimosotetras problematica, Rugosphaera cerebra, R.
+
+rugosa, R. tuscarorensis, Segestrespora laevigata, Tetrahedraletes medinensis, Velatitetras
+
+anatoliensis, V. laevigata, V. retimembrana, V. rugosa (Mendlowicz Mauller et al. 2004).
+
+South China Terrane – Zhejiang, China: Dyadospora murusattenuata, Strophomorpha ovata,
+
+Velatitetras retimembrana (Yin & He 2000).
+
+Llandovery (Telychian)
+Laurentia USA: Ambitisporites avitus.
+
+Avalonia – Nova Scotia, Canada: Ambitisporites avitus, A. dilutus, Laevolancis divellomedia,
+
+Tetrahedraletes medinensis (Beck & Strother 2001).
+
+Avalonia – Ireland: Tetrahedraletes medinensis (Maziane-Serraj et al. 2000).
+
+Avalonia – UK: Ambitisporites dilutus, Tetrahedraletes medinensis parvus (Burgess 1991).
+
+Western Gondwana – Iraq: Ambitisporites avitus, A. dilutus, Archaeozonotriletes chulus,
+
+Retusotriletes warringtonii (Al-Ameri et al. 1991).
+
+SW Gondwana – Saudi Arabia: Ambitisporites avitus-dilutus Morphon, Archaeozonotriletes
+
+chulus, Dyadospora murusattenuata – murusdensa, Imperfectotriletes patinatus, I. vavrdovae,
+
+Laevolancis divellomedia-plicata Morphon, Pseudodyadospora petasus, Rimosotetras
+
+problematica, R. problematica, Tetrahedraletes medinensis, Velatitetras anatoliensis, V.
+
+laevigata, V. rugosa (Steemans et al. 2000).
+
+Southern Gondwana – Libya: Ambitisporites avitus, A. dilutus, A. dilutus, Dyadospora
+
+2704-the graptolite Colonograptus (Monograptus) ludensis. The top of the ludensis graptolite biozone is
+2705-
+2706-correlated to the top of the Homerian Stage, dated at 427.4 Ma ± 0.5 Myr 101; thus the minimum age
+2707-constraint for this node is 426.9 Ma.
+2708-The soft maximum age is based on a probable trilete spore (Chelinospora? sp.) from the Ordovician
+2709:successions of central Sweden 102. Spores were sampled from the Borenshult-1 drillcore, comprising
+2710-a well-dated succession of the Middle to Upper Ordovician. The successions are dated based on
+2711-conodont biostratigraphy 103. The spore was sampled from 48.2m, corresponding to the Baltoniodus
+2712:variabilis conodont biozone, correlated with the lower Sandbian 84. These formations also occur
+2713-below the Kinnekulle K-bentonite, itself dated using U/Pb zircons to 454.41 ± 0.17 Ma 104,105,
+2714:confirming a Sandbian age. The soft maximum age therefore corresponds to the base of the
+2715:Sandbian stage dated 458.4 ± 0.7 Ma; thus maximum age constraint for this node is 459.1 Ma.
+2716-Discussion: This node represents the divergence of crown-Embryophyta into Bryophyta (liverworts,
+2717-mosses, and hornworts) and Tracheophyta (vascular plants). A minimum constraint on this node is
+2718-provided by the first evidence of total-group Tracheophyta. The early fossil record of bryophytes is
+2719-generally poor, and the earliest unequivocal fossils which can be placed in the hornworts, liverworts
+2720-and mosses are all younger than the first unequivocal tracheophyte specimens 79.
+--
+2740-of total-group Embryophyta and must have evolved at some point along the stem lineage in order to
+2741-be present in the ancestor of all embryophytes. Their first appearance must pre-date the origin of
+2742-
+2743-crown-Embryophyta and thus acts as a maximum constraint on their divergence and can be used to
+2744-maximally constrain this divergence. The earliest possible trilete spore is a spore assigned to
+2745:Chelinospora from the Ordovician successions of central Sweden dated to the Sandbian 102. This
+2746-represents a conservative soft maximum constraint on the node, as the earliest appearance of a
+2747-probable trilete spore; the earliest unequivocal trilete spore is reported from the Qusaiba-1 corehole
+2748-of northern Saudi Arabia, dated to the Katian and Hirnantian stages of the Upper Ordovician 80.
+2749-C_5: Marchantiophyta: Jungermanniopsida - Marchantiopsida
+2750-Fossil Taxon and Specimen: Metzergiothallus sharonae [NYSM 17656, Paleontology Collection of the
+--
+3027-Minimum age: 65.5 Ma
+3028-Maximum age: 431.2 Ma
+3029-Age justification: Following 1
+3030-C_35: Monilophyta: Gleicheniales – [Cyatheales – Polypodiales]
+3031-Fossil Taxon and Specimen: Oligocarpia gothanii [S138027–S138989, S147989 and KC 1983–1,
+3032:Department of Palaeobotany of the Swedish Natural History Museum, Stockholm] from the Mid
+3033-Permian of the Shihhotse valley near Ch'en-chia-yu near Taiyuan City in Shanxi Province, China 141.
+3034-Phylogenetic justification: Following 1
+3035-Minimum age: 268.3 Ma
+3036-Maximum age: 431.2 Ma
+3037-Age justification: Following 1
+--
+3093-Phylogenetic justification: Following 1
+3094-Minimum age: 272.87 Ma
+3095-Maximum age: 365.63 Ma
+3096-Age justification: Following 1
+3097-C_43: Pinopsida: Taxaceae - Cupressaceae
+3098:Fossil Taxon and Specimen: Palaeotaxus rediviva from the Rhaetian of southern Sweden 148,149.
+3099-Phylogenetic justification: Following 1
+3100-Minimum age: 201.2 Ma
+3101-Maximum age: 321.48 Ma
+3102-Age justification: Following 1
+3103-C_44: Pinopsida: Cunninghamia – Juniperus
+--
+12469-Edwards, D., Fanning, U. & Richardson, J. B. Stomata and sterome in early land plants.
+12470-Nature 323, 438–440 (1986). https://doi.org/10.1038/323438a0
+12471-Melchin, M. J., Sadler, P. M. & Cramer, B. D. in Geologic Time Scale 2020 695–732 (2020).
+12472-Rubinstein, C. V. & Vajda, V. Baltica cradle of early land plants? Oldest record of trilete
+12473-spores and diverse cryptospore assemblages; evidence from Ordovician successions of
+12474:Sweden. Gff 141, 181–190 (2019). https://doi.org/10.1080/11035897.2019.1636860
+12475-
+12476-103
+12477-104
+12478-105
+12479-106
+--
+12494-119
+12495-120
+12496-
+12497-Bergström, S. M., Lehnert, O., Calner, M. & Joachimski, M. M. A new upper Middle
+12498-Ordovician–Lower Silurian drillcore standard succession from Borenshult in Östergötland,
+12499:southern Sweden: 2. Significance of δ13C chemostratigraphy. Gff 134, 39–63 (2012).
+12500:Bauert, H. et al. New U–Pb zircon ages of the Sandbian (upper Ordovician)“Big K-bentonite”
+12501:in Baltoscandia (Estonia and Sweden) by LA-ICPMS. GFF 136, 30–33 (2014).
+12502:Sell, B., Ainsaar, L. & Leslie, S. Precise timing of the Late Ordovician (Sandbian) supereruptions and associated environmental, biological, and climatological events. Journal of the
+12503-Geological Society 170, 711–714 (2013).
+12504-Strother, P. K. Systematics and evolutionary significance of some new cryptospores from the
+12505-Cambrian of eastern Tennessee, USA. Review of Palaeobotany and Palynology 227, 28–41
+12506-(2016). https://doi.org/10.1016/j.revpalbo.2015.10.006
+12507-Taylor, W. A. & Strother, P. K. Ultrastructure, morphology, and topology of Cambrian
+
+web search: 
+web search: "Grignani" "1967" "Silurian" spores ...
+codex
+Several rows combine taxa and ages from across an entire paper, so they do not establish that every listed taxon occurs before the Wenlock. The Wellman appendix helps distinguish corroborated early assemblages from those broad database assignments.
+web search: 
+web search: "Paleozoic spores and Triassic pollen" Grignani ...
+exec
+/bin/zsh -lc "rg --files library | head -n 50; rg -n 'MARTIN|MILLER|TURNER|RICHARDSON|SMITH|VAVRD' data/spores/work/wellman2013/appendix.txt | tail -n 35; sed -n '390,480p' data/spores/work/wellman2013/appendix.txt" in /Users/bwbrook/papers/silurian_plants
+ succeeded in 0ms:
+1101:ALDRIDGE, R. J., DORNING, K. J., HILL, P. J., RICHARDSON, J. B. & SIVETER, D. J. 1979a.
+1177:BURGESS, N. D. & RICHARDSON, J. B. 1991. Silurian cryptospores and miospores from the type
+1181:BURGESS, N. D. & RICHARDSON, J. B. 1995. Late Wenlock to early Pridoli cryptospores and
+1244:EMO, G. T. & SMITH, D. G. 1978. Palynological evidence for the age of the Lower Palaeozoic
+1250:FANNING, U., EDWARDS, D. & RICHARDSON, J. B. 1991a. A new rhyniophytoid from the late
+1256:FANNING, U., RICHARDSON, J. B. & EDWARDS, D. 1991b. A review of in situ spores in Silurian
+1324:HILL, J. P., PARIS, F. & RICHARDSON, J. B. 1985. Silurian palynomorphs. Journal of
+1373:MARTIN, F. 1973. Ordovicien supérieur et Silurien inférieur à Deerlijk (Belgique). Mémoires de
+1406:MILLER, M. A. & AL-RUWAILI, M. H. 2007. Preliminary palynological investigation of Saudi
+1410:MILLER, M. A. & EAMES, L. E. 1982. Palynomorphs from the Silurian Medina Group (Lower
+1451:RICHARDSON, J. B. 1985. Lower Paleozoic sporomorphs: their stratigraphical distribution and
+1457:RICHARDSON, J. B. 1988. Late Ordovician and Early Silurian cryptospores and miospores from
+1465:RICHARDSON, J. B. 1996. Chapter 18A. Lower and Middle Palaeozoic records of terrestrial
+1473:RICHARDSON, J. B. & IOANNIDES, N. S. 1973. Silurian palynomorphs from the Tanezzuft and
+1477:RICHARDSON, J. B. & LISTER, T. R. 1969. Upper Silurian and Lower Devonian spore
+1480:RICHARDSON, J. B., RASUL, S. M. & AL-AMERI, T. 1981. Acritarchs, miospores and correlation
+1486:RICHARDSON, J. B., RODRÍGUEZ, R. M. & SUTHERLAND, S. J. E. 2001. Palynological zonation of
+1559:SMITH, D. G. 1975. Wenlock plant spores and tetrads from County Mayo Ireland. Geological
+1563:SMITH, D. G. 1979. The distribution of trilete spores in Irish Silurian rocks. In: HARRIS, A. L.,
+1608:STEEMANS, P., LE HERISSE, A., MELVIN, J., MILLER, M. A., PARIS, F., VERNIERS, J. &
+1639:TURNER, R. E. 1984. Acritarchs from the type area of the Ordovician Caradoc Series, Shropshire,
+1649:VAVRDOVÁ, M. 1982. Recycled acritarchs in the uppermost Ordovician of Bohemia. Casopis pro
+1653:VAVRDOVÁ, M. 1984. Some plant microfossils of the possible terrestrial origin from the
+1656:VAVRDOVÁ, M. 1988. Further acritarchs and terrestrial plant remains from the Late Ordovician
+1660:VAVRDOVÁ, M. 1989. New acritarchs and miospores from the Late Ordovician of Hlasna
+1664:VAVRDOVÁ, M. 1990a. Early Ordovician acritarchs from the locality Myto near Rokycany (late
+1668:VAVRDOVÁ, M. 1990b. Coenobial acritarchs and other palynomorphs from the Arenig/Llanvirn
+1694:WELLMAN, C. H. & RICHARDSON, J. B. 1993. Terrestrial plant microfossils from Silurian inliers
+1705:WELLMAN, C. H., HABGOOD, K., JENKINS, G. & RICHARDSON, J. B. 2000b. A new plant
+
+murusattenuata, D. murusattenuata, D. murusdensa, Imperfectotriletes patinatus, I. vavrdovae,
+
+Pseudodyadospora rugosa, Rimosotetras problematica, R. problematica, Segestrespora rugosa,
+
+Tetrahedraletes medinensis, T. medinensis, Velatitetras rugulata (Burgess 1991; Gray 1991; Hill
+et al. 1985; Richardson 1988; Steemans et al. 1996; Steemans et al. 2000; Strother 1991;
+
+Wellman 1996; Wellman & Richardson 1993).
+
+Eastern Gondwana – Argentina: Hispanaediscus verrucatus, Laevolancis divellomedia
+
+(Rubinstein & Brussa 1999).
+
+Eastern Gondwana – Brazil: Ambitisporites avitus, A. avitus-dilutus morphon,
+
+Imperfectotriletes vavrdovae, I. vavrdovae, Laevolancis divellomedia, L. divellomedia,
+
+Rimosotetras problematica, R. problematica, Rugosphaera cerebra, R. rugosa, Segestrespora
+
+burgessii, S. laevigata, S. rugosa, Tetrahedraletes medinensis, Velatitetras anatoliensis, V.
+
+laevigata, V. retimembrana, V. rugosa (Le Hérissé et al. 2001).
+
+Eastern Gondwana – Paraguay: Ambitisporites avitus, A. avitus-dilutus Morphon, A. dilutus,
+
+Archaeozonotriletes chulus, Archaeozonotriletes chulus-nanus Morphon, Dyadospora
+
+murusattenuata, D. murusttanuata-murusdensa Morphon, Laevolancis divellomedia,
+
+Pseudodyadospora petasus, Rimosotetras problematica, R. problematica, Tetrahedraletes
+
+medinensis, T. medinensis, Velatitetras anatoliensis (Mendlowicz Mauller et al. 2004; Steemans
+
+& Pereira 2002).
+
+Indo-China Terrane – Yunnan, China: Ambitisporites avitus-dilutus morphon,
+
+Imperfectotriletes patinatus, I. vavrdovae, Laevolancis chibrikovae, Laevolancis divellomedium,
+
+Velatitetras rugospora (Wang & Zhang 2009).
+
+South China Terrane – Zheijiang, China: Dyadaspora murusattenuata, Velatitetras
+
+retimembrana, Strophomorpha ovate (Yin & He 2000).
+Wenlock
+Laurentia – USA: Aremopyra brevicosta, Artemopyra radiata, Confossuspora reniforma,
+
+Laevolancis divellomedium, Stegambiquadrella contenta (Burgess & Richardson 1991, 1995;
+
+Strother 1991; Strother 1993; Strother & Traverse 1979; Wellman & Richardson 1993).
+
+Laurentia – UK – Scotland: Ambitisporites avitus, A. dilutus, Cheilotetras caledonica,
+
+Dyadospora murusattenuata, D. murusdensa, Laevolancis divellomedium, L. plicata, Moyeria
+
+cabottii, Pseudodyadospora petasus, Rimosotetras problematica, Tetrahedraletes medinensis
+
+(Wellman & Richardson 1993).
+
+Avalonia – Ireland: Ambitisporites avitus, A. dilutus, Archaeozonotriletes chulus nanus,
+
+Artemopyra brevicosta, Dyadospora murusattenuata, Hispanaediscus verrucata, Laevolancis
+
+divellomedia, L. plicata, Tetrahedraletes medinensis (Aldridge et al. 1979a, b; Emo & Smith
+
+1978; Wellman & Richardson 1993; Williams et al. 1996).
+
+Avalonia – UK: Ambitisporites dilutus, Artemopyra brevicosta, Dyadospora murusattenuata, D.
+
+murusdensa, Laevolancis divellomedia, Retusotriletes warringtonii, Rimosotetras problematica,
+
+Tetrahedraletes medinensis, T. medinensis medinensis (Burgess & Richardson 1991; Dorning
+
+1983; Richardson & Lister 1969; Wellman & Richardson 1993).
+
+Avalonia – UK: Archaeozonotriletes chulus nanus (Aldridge et al. 1979a, b).
+
+Peri-Gondwana (Armorica) – France: Ambitisporites avitus (Deunff & Chateauneuf 1976).
+
+Peri-Gondwana (Iberia) – Spain: Ambitisporites avitus, A. dilutus, Archaeozonotriletes chulus,
+
+Archaicusporites asturicus, Convolutispora sanpetrensis, Laevolancis divellomedium,
+
+Quadrisporites granulatus, Q. variabilis, Retusotriletes abundo, R. minor, R. warringtonii,
+
+Scylaspora vetusta, Synorisporites verrucatus (Richardson et al. 2001; Rodríguez 1978a–c,
+
+1983).
+SW Gondwana – Saudi Arabia: Ambitisporites avitus, Dyadospora murusdensa,
+
+
+web search: 
+web search: "Keegan" "Rasul" "Shaheen" 1990 spores ...
+exec
+/bin/zsh -lc "rg --files --hidden --no-ignore library | head -n 45; rg --files --hidden --no-ignore data/spores | rg 'pdf"'$|txt$'"' | head -n 45; git status --short" in /Users/bwbrook/papers/silurian_plants
+ succeeded in 0ms:
+data/spores/work/wellman2013/appendix.txt
+data/spores/work/codex/genera_pilot/log.txt
+data/spores/work/codex/wellman2013/log_Pridoli.txt
+data/spores/work/codex/wellman2013/chunk_Pridoli.txt
+data/spores/work/codex/wellman2013/log_Ordovician.txt
+data/spores/work/codex/wellman2013/chunk_Ordovician.txt
+data/spores/work/codex/wellman2013/log.txt
+data/spores/work/codex/wellman2013/appendix_numbered.txt
+data/spores/work/codex/wellman2013/log_Llandovery.txt
+data/spores/work/codex/wellman2013/chunk_Llandovery.txt
+data/spores/work/codex/wellman2013/chunk_Ludlow.txt
+data/spores/work/codex/wellman2013/log_Ludlow.txt
+data/spores/work/codex/wellman2013/chunk_Wenlock.txt
+data/spores/work/codex/wellman2013/log_Wenlock.txt
+data/spores/work/codex/vetting/wellman2013_references.txt
+data/spores/work/codex/vetting/log1.txt
+data/spores/work/codex/vetting/log2.txt
+data/spores/work/codex/locations/log.txt
+data/spores/work/codex/genera/log6.txt
+data/spores/work/codex/genera/log4.txt
+data/spores/work/codex/genera/log5.txt
+data/spores/work/codex/genera/log1.txt
+data/spores/work/codex/genera/log2.txt
+data/spores/work/codex/genera/log3.txt
+ M data/external/scripts/library_classify.py
+ M data/external/scripts/library_run.py
+ M data/external/scripts/library_screen_decisions.tsv
+?? data/external/library/cited_identity_check.tsv
+?? data/external/library/screen_codex_check.tsv
+?? data/external/scripts/library_codex.py
+?? data/external/scripts/library_codex_export.py
+?? data/external/scripts/library_codex_screen_report.py
+?? data/external/scripts/library_fetch_report.py
+?? data/external/scripts/library_screen_codex_adjudication.tsv
+?? data/external/scripts/library_subset_seeds.py
+?? data/external/scripts/library_text_export.py
+?? data/spores/
+?? tools/spores.py
+
+web search: 
+web search: "Bassett" "1989" "Ambitisporites" "Wenlock" ...
+exec
+/bin/zsh -lc "sed -n '1160,1184p' data/spores/work/wellman2013/appendix.txt; sed -n '1550,1574p' data/spores/work/wellman2013/appendix.txt; sed -n '1634,1648p' data/spores/work/wellman2013/appendix.txt; sed -n '1370,1383p' data/spores/work/wellman2013/appendix.txt" in /Users/bwbrook/papers/silurian_plants
+ succeeded in 0ms:
+       ammonoid faunas: clusters, gradients, and networks. Geobios, 6, 749–765.
+
+BROWN, R. C. & LEMMON, B. E. 1990. Sporogenesis in bryophytes. In: BLACKMORE, S. & KNOX
+
+       (eds) Microspores: Evolution and Ontogeny. Academic Press, London, 55–94.
+
+BURET, M. B. & MOREAU-BENOIT, A. 1986. Données nouvelles apportées par la
+
+       palynoplanctologie sur la formation des alternances argilo-gréseuses (Silurien supérieur
+
+       de Libye, bassin de Rhadamès). Comptes Rendus de l'Académie des Sciences de Paris,
+
+       302, 1009–1014.
+
+BURGESS, N. D. 1991. Silurian cryptospores and miospores from the type Llandovery area, SW
+
+       Wales. Palaeontology, 34, 575–599.
+BURGESS, N. D. & RICHARDSON, J. B. 1991. Silurian cryptospores and miospores from the type
+
+       Wenlock area, Shropshire, England. Palaeontology, 34, 601–628.
+
+BURGESS, N. D. & RICHARDSON, J. B. 1995. Late Wenlock to early Pridoli cryptospores and
+
+       miospores from south and SW Wales, Great Britain. Palaeontographica, 236, 1–44.
+
+
+SMELROR, M. 1987. Llandovery and Wenlock miospores and spore-like microfossils from the
+
+       Ringerike district, Norway. Norsk Geologisk Tidsskrift, 67, 143–150.
+
+SMELROR, M. 1990. Palynomorphs from the Cyrtograptys centrifugus graptolite zone (Early
+
+       Wenlock, Silurian), Bornholm. Bulletin of the Geological Society of Denmark, 39, 83–89.
+
+SMITH, D. G. 1975. Wenlock plant spores and tetrads from County Mayo Ireland. Geological
+
+       Magazine, 112, 411–414.
+
+SMITH, D. G. 1979. The distribution of trilete spores in Irish Silurian rocks. In: HARRIS, A. L.,
+
+       HOLLAND, C. H. & LEAKE, B. E. (eds) The Caledonides of the British Isles – Reviewed.
+
+       Geological Society of London, London, 423–431.
+SPINA, A. & VECOLI, M. 2009. Palynostratigraphy and vegetational changes in the Siluro–
+
+       Devonian of the Ghadamis Basin, North Africa. Palaeogeography, Palaeoclimatology,
+
+       Palaeoecology, 282, 1–18.
+
+STEEMANS, P. 1995. Silurian and Lower Emsian spores in Saudi Arabia. Review of Palaeobotany
+
+TEKBALI, A. O. & WOOD, G. D. 1991. Silurian spores, acritarchs and chitinozoans from the Baní
+
+       Walíd Borehole of the Ghadámis Basin, NW Libya. Geology of Libya, IV, 1243–1273.
+
+TURNER, R. E. 1984. Acritarchs from the type area of the Ordovician Caradoc Series, Shropshire,
+
+       England. Paleontographica, 190, 85–157.
+
+VANGUESTAINE, M., STEEMANS, P. & STREEL, M. 1986. Microfossiles végétaux. In:
+
+       RACHEBOEUF, P. R. (ed.) le Groupe de Liévin. Pridoli-Lochkovien de l'Artois (N.
+
+       France). Biostratigraphie du Paléozoïque. Mém. Soc. Géol. Min., Bretagne, 3, 47–55.
+
+
+       Silurian age and its geological implications. Geological Magazine, 128, 283–286.
+
+MARTIN, F. 1973. Ordovicien supérieur et Silurien inférieur à Deerlijk (Belgique). Mémoires de
+
+       l'Institut royal des Sciences naturelles de Belgique, 174, 1–71.
+
+MAZIANE-SERRAJ, N., BRUCK, P. M., HIGGS, K. T. & VANGUESTAINE, M. 2000. Ordovician and
+
+       Silurian acritarch assemblages from the west Leinster and Slievenamon areas of southeast
+
+       Ireland. Review of Palaeobotany and Palynology, 113, 57–71.
+
+MCCLURE, H. A. 1988. The Ordovician–Silurian boundary in Saudi Arabia. Bulletin of the
+
+web search: 
+web search: "Palynological study" "Rahmani-Antari" 1990 Doukkala ...
+web search: 
+web search: "Corna" "1970" "Punctatisporites" ...
+exec
+/bin/zsh -lc "rg --files --hidden --no-ignore data/external/library | head -n 35; rg -n -i 'keegan|rahmani|grignani|timofeev|corna|chaiffetz|pratt|mabillard|moreau-benoit' data/external/library/*.csv data/external/library/*.tsv | head -n 40" in /Users/bwbrook/papers/silurian_plants
+ succeeded in 0ms:
+data/external/library/credits.tsv
+data/external/library/cited_identity_check.tsv
+data/external/library/closed_candidates.csv
+data/external/library/screen.tsv
+data/external/library/counts.tsv
+data/external/library/README.md
+data/external/library/queries.tsv
+data/external/library/works.tsv
+data/external/library/screen_codex_check.tsv
+data/external/library/cited_dois_resolution.tsv
+data/external/library/MANIFEST.tsv
+data/external/library/seeds/cited.tsv
+data/external/library/seeds/window.tsv
+data/external/library/seeds/window-marine.tsv
+data/external/library/works.tsv:290:W2042243864	10.1016/0034-6667(67)90234-5	1967	Grignani	Correlation with chitinozoa in the devonian and silurian in some tunisian well samples	Review of Palaeobotany and Palynology	article	en	closed	no	window-marine	window-marine		no	closed
+data/external/library/works.tsv:590:W2036084755	10.1016/0034-6667(78)90034-9	1978	Pratt et al.	Evidence of non-vascular land plants from the early Silurian (Llandoverian) of Virginia, U.S.A.	Review of Palaeobotany and Palynology	article	en	closed	no	window	window_other		no	closed
+data/external/library/works.tsv:625:W1984781415	10.1016/0034-6667(79)90041-1	1979	Lejal-Nicol & Moreau-Benoit	Sur les plantes vasculaires dans le devonien de Libye	Review of Palaeobotany and Palynology	article	fr	closed	no	window	window_other		no	closed
+data/external/library/works.tsv:631:W202261449		1979	Pratt	The St. George Group (Lower Ordovician), western Newfoundland: sedimentology, diagenesis, and cryptalgal structures	Memorial University Research Repository (Memorial University)	dissertation	en	closed	no	window	window_other		no	closed
+data/external/library/works.tsv:719:W2013693425	10.1016/0034-6667(81)90067-1	1981	Keegan	Palynological correlation of the upper devonian and lower carboniferous in central Ireland	Review of Palaeobotany and Palynology	article	en	closed	no	window	window_other		no	closed
+data/external/library/works.tsv:853:W2054091176	10.1016/0034-6667(84)90033-2	1984	Moreau-Benoit	Acritarches et chitinozoaires du devonien moyen et superieur de Libye occidentale	Review of Palaeobotany and Palynology	article	fr	closed	no	window;window-marine	window_other;window-marine		no	closed
+data/external/library/works.tsv:962:W2808513832	10.3406/sgeol.1985.1686	1985	Massa & Moreau-Benoit	Apport de nouvelles données palynologiques à la biostratigraphie et à la paléogéographie du Dévonien de Libye (Sud du bassin de Rhadamès). Contribution to the biostratigraphy and palaeogeography of the Libyan Devonian (South of Rhadames basin) by means of new palynological data	Sciences Géologiques Bulletin	article	fr	closed	no	window	window_other		no	closed
+data/external/library/works.tsv:1198:W1977986333	10.1016/0034-6667(90)90037-j	1990	Keegan et al.	Palynostratigraphy of the lower Palaeozoic, Cambrian to Silurian, sediments of the Hashemite Kingdom of Jordan	Review of Palaeobotany and Palynology	article	en	closed	no	window;window-marine	window_other;window-marine		no	closed
+data/external/library/works.tsv:1204:W2012229349	10.1016/0034-6667(90)90039-l	1990	Rahmani-Antari	Etude palynologique et évaluation de l'indice d altération thermique du Paléozoique du forage DOT 1 (bassin des Doukkala centre-ouest marocain)	Review of Palaeobotany and Palynology	article	fr	closed	no	window;window-marine	window_other;window-marine		no	closed
+data/external/library/works.tsv:1646:W41350289		1996	Rahmani-Antari	Etude palynologique (spores, chitinozoaires, acritarches) dans le paleozoique (cambrien a dinantien) du maroc occidental et meridional. (biostratigraphie, paleobiogeographie et caracterisation de la matiere organique)		dissertation	fr	closed	no	window	window_other		no	closed
+data/external/library/works.tsv:4237:W2527567882	10.1139/cjes-2016-0117	2016	Pratt & Heerde	An arborescent lycopsid stem fragment from the Palliser Formation (Famennian) carbonate platform, southwestern Alberta, Canada, and its paleogeographic and paleoclimatic significance	Canadian Journal of Earth Sciences	article	en	green	yes	window	window_other		no	oa_pdf
+
+web search: 
+web search: Timofeev 1976 Polytrichum alpestre Funaria hygrometrica Ordovician ...
+web search: 
+web search: "Paleozoic spores" "Grignani" "1967" "Silurian" ...
+web search: 
+web search: "Mabillard" "Aldridge" "1985" "Ambitisporites" ...
+codex
+Two taxonomic traps have emerged: some “trilete” marks can result from torn cryptospore tetrads, and Schizaeoisporites sp. I was reassigned to Moyeria, now interpreted as a euglenid. A citation’s presence in Wellman therefore does not validate every Palynodata taxon assigned to it.
+web search: 
+web search: "Acritarch biostratigraphy" "Ghavidel-Syooki" "1996" Zagros ...
+web search: 
+web search: "Microfossil distribution across the base" Wenlock 1985 ...
+web search: 
+web search: "Palynological and palynofacies analysis" "Dor el Gussa" 2012 ...
+web search: 
+web search: "Pellicle ultrastructure demonstrates" "Schizaeoisporites" ...
+web search: 
+web search: "Deunff" "Poumot" "contamination" ...
+web search: 
+web search: https://palass.org/sites/default/files/media/publications/palaeontology/volume_28/vol28_part1_pp89-100.pdf
+web search: 
+web search: "Apport de nouvelles données palynologiques" 1985 Massa ...
+web search: 
+web search: https://emrlibrary.gov.yk.ca/gsc/bulletins/364/bu_364.pdf
+web search: 
+web search: "Acritarches" "Awantjish" "1976" Achab ...
+web search: 
+web search: 'contamin'
+exec
+/bin/zsh -lc "python3 -c 'import csv; rows=list(csv.DictReader(open(\"data/spores/work/codex/vetting/docs1.csv\"))); print(\"Rows\",len(rows),\"unique\",len({r[\"doc\"] for r in rows})); [print(i,r[\"doc\"],r[\"authors\"],r[\"year\"]) for i,r in enumerate(rows,1)]'" in /Users/bwbrook/papers/silurian_plants
+ succeeded in 0ms:
+Rows 61 unique 61
+1 01023 Keegan,J.B.;Rasul,S.M.;Shaheen,Y. 1990
+2 01272 Rahmani-Antari,K. 1990
+3 01859 Grignani,D. 1967
+4 01891 Taugourdeau,J. 1965
+5 01892 Downie,C. 1965
+6 02486 Timofeev,B.V. 1963
+7 02603 Downie,C. 1963
+8 02625 Zharkova,M.F.;Ilina,N.S.;Frukht,D.L. 1967
+9 03971 Cramer,F.H. 1968
+10 04198 Deunff,J.;Peniguel,G.;Poumot,C. 1961
+11 04470 Cramer,F.H. 1971
+12 04799 Bassett,M.G. 1989
+13 05164 Owens,B.;Richardson,J.B. 1972
+14 05166 Martin,F. 1971
+15 05168 Moreau-Benoit,A. 1972
+16 05300 Shrivastava,R.N. 1972
+17 05442 Richardson,J.B.;Ioannides,N.S. 1973
+18 05523 Le Hérissé,A. 1989
+19 05703 Burgess,N.D. 1991
+20 05721 Gensel,P.G.;Johnson,N.G.;Strother,P.K. 1990
+21 06209 Ghavidel-Syooki,M. 1996
+22 06513 Timofeev,B.V. 1966
+23 06530 Corna,O. 1970
+24 06840 Boureau,E.;Moreau-Benoit,A. 1973
+25 06983 Richardson,J.B. 1974
+26 07150 Deunff,J.;Massa,D. 1975
+27 07515 Achab,A. 1976
+28 07646 Timofeev,B.V.;German,T.N.;Mikhalova,M.S. 1976
+29 07986 Pratt,L.M.;Phillips,T.L.;Dennison,J.M. 1978
+30 07987 Volkheimer,W.;Pöthe de Baldis,E.D. 1976
+31 08347 Richardson,J.B.;Edwards,D. 1989
+32 08526 Chaiffetz,M.S. 1978
+33 08606 Strother,P.K. 1991
+34 08790 Strother,P.K.;Traverse,A. 1979
+35 08862 Poncet,J.;Rauscher,R. 1971
+36 08930 Moreau-Benoit,A. 1974
+37 09021 Emo,G.T.;Smith,D.G. 1978
+38 09257 Miller,M.A.;Eames,L.E. 1980
+39 09521 Smith,D.G. 1979
+40 09699 Duffield,S.L.;Legault,J.A. 1981
+41 10194 Smith,D.G. 1981
+42 10325 Miller,M.A.;Eames,L.E. 1982
+43 10458 da Costa,N.M. 1982
+44 10843 Miller,M.A. 1991
+45 10876 Gray,J.;Massa,D.;Boucot,A.J. 1982
+46 10982 Mabillard,J.E.;Aldridge,R.J. 1985
+47 11107 Hill,P.J.;Paris,F.;Richardson,J.B. 1985
+48 11402 Schrank,E. 1984
+49 11441 Gray,J.;Colbath,G.K.;de Faria,A.;Boucot,A.J.;Rohr,D.M. 1985
+50 11558 Martin,F. 1973
+51 11807 Achab,A. 1975
+52 11850 Johnson,N.G. 1985
+53 11973 MacArovici,N.;Beju,D.;Olaru,L. 1965
+54 11986 Sastri,V.V.;Venkatachala,B.S. 1980
+55 12090 Lutkevich,E.M.;Pashkevichius,I.Y.;Makhnach,A.S.;Khishyakov,A.V.;Potyanovskaya,G.M.;Edelshtein,A.G.;Bukatchuk,P.D. 1973
+56 12230 Antelo,B. 1978
+57 12259 Massa,D.;Moreau-Benoit,A. 1985
+58 12678 Vavrdová,M. 1984
+59 12714 Richardson,J.B.;McGregor,D.C. 1986
+60 12998 Voronova,M.A. 1983
+61 13214 Turner,R.E. 1984
+
+web search: 
+web search: "Acritarch biostratigraphy of Upper Ordovician-Lower Silurian rocks" Duffield 1981 ...
+web search: 
+web search: "Laevigatosporites desmoinesensis" "Silurian" ...
+web search: 
+web search: https://www.bsip.res.in/old/pdf/Marwar%20Field%20Report/Vindhyan_Basin_Book__PSI_.pdf
+web search: 
+web search: "Mabillard" "1985" "Ambitisporites" "Llandovery" ...
+web search: 
+web search: https://data.jncc.gov.uk/data/40858749-02b0-4b7b-8fd8-e1fdfc30b643/gcr-v19-british-silurian-stratigraphy-c3.pdf
+web search: 
+web search: "Vindhyan" "Proterozoic" "Srivastava" "1972" ...

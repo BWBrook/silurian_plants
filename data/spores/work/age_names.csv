@@ -1,0 +1,190 @@
+age_name,n_rows,palynodata_min_ma,palynodata_max_ma
+Devonian,3017,0.0,500.0
+Early Devonian,2715,0.0,570.0
+Siegenian,1404,280.0,423.0
+Gedinnian,1379,230.0,450.0
+Late Gedinnian,858,353.0,417.0
+Paleozoic,651,0.0,570.0
+Emsian,501,370.0,435.0
+Middle Devonian,499,360.0,435.0
+Ludlovian,493,314.0,435.0
+Pridolian,398,325.0,440.0
+Early Siegenian,380,360.0,435.0
+Silurian,368,0.0,570.0
+Carboniferous,329,280.0,4100.0
+Early Gedinnian,313,366.0,450.0
+Lochkovian,309,345.0,440.0
+Late Lochkovian,248,370.0,383.66699
+Downtonian,229,360.0,435.0
+Late Gothlandian,212,230.0,421.66699
+Ashgillian,201,345.0,472.0
+Ordovician,189,230.0,1600.0
+Llandoverian,181,345.0,500.0
+Wenlockian,178,345.0,435.0
+Early Lochkovian,177,389.33301,414.0
+Early Emsian,161,372.66599,414.0
+Late Ludlovian,156,370.0,404.0
+Early Downtonian,134,394.0,435.0
+Early Pridolian,123,395.0,450.0
+Dittonian,122,345.0,423.0
+Rhuddanian,120,392.332,450.0
+Givetian,119,360.0,435.0
+ ,118,230.0,570.0
+Early Gothlandian,108,280.0,478.33301
+Eifelian,107,366.0,435.0
+Late Wenlockian,100,382.66599,427.0
+Tournaisian,89,335.0,414.0
+Permian,73,230.0,570.0
+Late Llandoverian,73,392.332,440.0
+Late Silurian,72,280.0,408.33301
+Early Ludlovian,70,387.0,423.0
+Late Homerian,69,382.66599,427.0
+Early Paleozoic,68,435.0,570.0
+Homerian,68,387.0,423.0
+Famennian,66,345.0,440.0
+Early Carboniferous,65,314.0,435.0
+Frasnian,64,353.0,435.0
+Middle Pridolian,63,389.33301,414.0
+Early Givetian,63,364.0,395.0
+Late Downtonian,63,370.0,418.5
+Middle Siegenian,59,378.33301,395.0
+Middle Lochkovian,59,383.66699,389.33301
+Mississippian,58,318.0,395.0
+Late Ordovician,56,289.0,1600.0
+Whiterock,55,5.0,482.60001
+Late Miocene,55,5.0,482.60001
+Gorstian,53,387.0,418.5
+Caradocian,53,387.0,472.0
+Early Llandoverian,53,353.0,443.33301
+Pragian,52,372.0,440.0
+Ludfordian,51,387.0,435.0
+Early Dittonian,51,387.33301,395.0
+Coblenzian,49,353.0,414.0
+Middle Pennsylvanian,40,289.0,395.0
+Early Eifelian,37,368.0,435.0
+Early Wenlockian,36,420.0,435.0
+Arenigian,34,435.0,500.0
+Middle Gedinnian,32,314.0,392.332
+Sheinwoodian,32,392.332,426.0
+Early Telychian,29,425.0,436.70001
+Recent,27,0.0,570.0
+Middle Gothlandian,27,280.0,421.66699
+Early Gorstian,27,411.0,435.0
+Early Silurian,25,370.0,500.0
+Late Eifelian,24,366.0,435.0
+Pennsylvanian,24,280.0,435.0
+Visean,24,325.0,404.0
+Late Ashgillian,23,425.0,478.0
+Tremadocian,23,267.0,500.0
+Middle Ludlovian,22,374.0,414.0
+Middle Ordovician,22,421.66699,478.33301
+Late Aeronian,21,411.0,428.0
+Couvinian,20,366.0,414.0
+Cambrian,19,230.0,570.0
+Hirnantian,18,425.0,436.70001
+Llanvirnian,17,435.0,500.0
+Early Rhuddanian,17,426.0,436.70001
+Early Homerian,16,392.0,435.0
+Cenozoic,16,0.0,435.0
+Early Cambrian,16,435.0,570.0
+Late Emsian,15,370.0,395.0
+Middle Emsian,15,371.33301,395.0
+Early Ordovician,14,370.0,570.0
+Middle Llandoverian,14,378.0,440.0
+Sakmarian,14,267.0,500.0
+Early Aeronian,12,425.0,436.70001
+Mesozoic,12,65.0,570.0
+Middle Carboniferous,12,289.0,570.0
+Late Devonian,11,345.0,435.0
+Early Ludfordian,11,395.0,426.0
+Breconian,11,345.0,392.0
+Ufimian,11,395.0,404.0
+Aeronian,9,387.0,440.0
+Telychian,9,368.0,435.0
+Late Ludfordian,9,392.332,404.0
+Late Budnanian,8,372.66599,402.0
+Late Pridolian,7,382.66599,398.0
+Middle Wenlockian,7,392.0,420.0
+Late Llanvirnian,7,440.0,464.66599
+Early Old Red Sandstone,7,370.0,395.0
+Aptian,7,105.0,395.0
+Clintonian,6,420.0,429.0
+Middle Sheinwoodian,6,416.66699,421.5
+Late Telychian,6,387.0,424.0
+Westphalian,6,289.0,408.33301
+Late Gorstian,6,394.0,408.0
+Late Cambrian,6,435.0,514.0
+Late Arenigian,6,321.89401,478.0
+Kosovian,5,435.0,436.70001
+Tarannon,5,395.0,429.0
+Early Mississippian,5,336.0,395.0
+Late Carboniferous,5,280.0,435.0
+Triassic,5,195.0,435.0
+Sinian,5,141.0,800.0
+Middle Silurian,5,408.33301,421.66699
+Early Ashgillian,5,436.66599,440.0
+Jurassic,5,141.0,800.0
+Early Pragian,4,376.0,383.66699
+Stephanian,4,280.0,421.66699
+Late Siegenian,4,374.0,395.0
+Late Rhuddanian,4,425.0,433.0
+Late Eltonian,4,392.0,415.33301
+Valentian,4,423.0,435.0
+Early Bringewoodian,4,392.0,414.0
+Middle Arenigian,4,478.0,484.0
+Fronian,4,426.0,429.0
+Late Tremadocian,3,472.0,493.33301
+Senonian,3,65.0,395.0
+Early Famennian,3,350.332,387.0
+Late Proterozoic,3,319.664,1600.0
+Early Tournaisian,3,341.66599,395.0
+Late Caradocian,3,431.0,443.33301
+Late Tarannon,3,420.0,425.0
+Borshovian,3,388.20001,395.0
+Late Famennian,3,345.0,435.0
+Early Mesozoic,3,195.0,395.0
+Early Sheinwoodian,3,421.5,424.0
+Middle Ashgillian,3,436.66599,440.0
+Early Permian,3,263.33301,395.0
+Chortkovian,3,388.20001,395.0
+Early Namurian,2,319.66599,408.33301
+Precambrian,2,280.0,4100.0
+Late Leintwardinian,2,394.0,402.33301
+Early Eltonian,2,407.0,414.0
+Early Frasnian,2,357.66699,414.0
+Gothlandian,2,395.0,435.0
+Late Neogene,2,1.8,395.0
+Late Fronian,2,414.0,427.0
+Bashkirian,2,304.0,395.0
+Zapaltybian,2,319.664,1600.0
+Early Chokierian,2,321.89401,478.0
+Early Cretaceous,2,115.667,435.0
+Tertiary,2,1.8,435.0
+Early Kasimovian,1,287.5,395.0
+Strunian,1,345.0,387.0
+Cretaceous,1,65.0,395.0
+Middle Eifelian,1,367.0,392.332
+Early Beroun,1,451.83301,458.0
+Westphalian B,1,230.0,570.0
+Whitcliffian,1,392.0,401.0
+Liassic,1,176.0,395.0
+Ulsterian,1,368.0,392.0
+Namurian,1,309.0,395.0
+Silesian,1,280.0,387.0
+Gzelian,1,280.0,387.0
+Bringewoodian,1,392.0,408.0
+Early Llanvirnian,1,468.332,478.0
+Middle Caradocian,1,443.33301,446.66599
+Riphean,1,435.0,1600.0
+Early Budnanian,1,409.0,431.0
+Soudleyan,1,440.0,447.63
+Early Arenigian,1,484.0,490.0
+Early Couvinian,1,368.66699,387.0
+Early Caradocian,1,446.66599,450.0
+Onnian,1,440.0,447.63
+Llandeilian,1,450.0,461.0
+Dinantian,1,325.0,421.66699
+Moscovian,1,289.0,395.0
+Middle Telychian,1,424.0,425.0
+Early Ludlow,1,407.66599,417.0
+Zlichovian,1,369.0,395.0

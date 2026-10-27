@@ -1,0 +1,55 @@
+{
+ "type": "object",
+ "additionalProperties": false,
+ "required": [
+  "items"
+ ],
+ "properties": {
+  "items": {
+   "type": "array",
+   "items": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+     "genus",
+     "spore_class",
+     "confidence",
+     "basis",
+     "source"
+    ],
+    "properties": {
+     "genus": {
+      "type": "string"
+     },
+     "spore_class": {
+      "type": "string",
+      "enum": [
+       "cryptospore-monad",
+       "cryptospore-dyad",
+       "cryptospore-tetrad",
+       "trilete-laevigate",
+       "trilete-ornamented",
+       "other-spore",
+       "not-a-spore",
+       "uncertain"
+      ]
+     },
+     "confidence": {
+      "type": "string",
+      "enum": [
+       "high",
+       "medium",
+       "low"
+      ]
+     },
+     "basis": {
+      "type": "string"
+     },
+     "source": {
+      "type": "string"
+     }
+    }
+   }
+  }
+ }
+}

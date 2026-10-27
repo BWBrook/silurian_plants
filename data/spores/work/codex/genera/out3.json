@@ -1,0 +1,753 @@
+{
+  "items": [
+    {
+      "genus": "Archeozonotriletes",
+      "spore_class": "trilete-unspecified",
+      "confidence": "medium",
+      "basis": "Patinate triletes; sculpture varies in historical usage.",
+      "source": "[McGregor & Camfield (1982)](https://emrlibrary.gov.yk.ca/gsc/bulletins/348/bu_348.pdf)"
+    },
+    {
+      "genus": "Cincturasporites",
+      "spore_class": "trilete-unspecified",
+      "confidence": "medium",
+      "basis": "Cingulate triletes; historically includes differing sculpture.",
+      "source": "[Playford (1963)](https://palass.org/sites/default/files/media/publications/palaeontology/volume_5/vol5_part4_pp619-678.pdf)"
+    },
+    {
+      "genus": "Cycadopites",
+      "spore_class": "not-a-spore",
+      "confidence": "high",
+      "basis": "Monosulcate gymnosperm pollen.",
+      "source": "[Raine, Mildenhall & Kennedy (2011)](https://pal.gns.cri.nz/catalog/index.htm)"
+    },
+    {
+      "genus": "Mooreisporites",
+      "spore_class": "trilete-ornamented",
+      "confidence": "high",
+      "basis": "Trilete; prominent bacula or cones at radial apices.",
+      "source": "[Neves (1958), diagnosis reproduced by Carniti & Hennissen](https://nora.nerc.ac.uk/id/eprint/530751/1/OR21038.pdf)"
+    },
+    {
+      "genus": "Anisozonotriletes",
+      "spore_class": "trilete-unspecified",
+      "confidence": "medium",
+      "basis": "Zonate trilete form genus; sculpture undetermined.",
+      "source": "none checked"
+    },
+    {
+      "genus": "Cryptosporites",
+      "spore_class": "not-a-spore",
+      "confidence": "high",
+      "basis": "Suprageneric cryptospore category, not a genus.",
+      "source": "[Edwards et al. (2014)](https://nph.onlinelibrary.wiley.com/doi/full/10.1111/nph.12645)"
+    },
+    {
+      "genus": "Enigmophytospora",
+      "spore_class": "other-spore",
+      "confidence": "high",
+      "basis": "Megaspores.",
+      "source": "[McGregor & Camfield (1982)](https://emrlibrary.gov.yk.ca/gsc/bulletins/348/bu_348.pdf)"
+    },
+    {
+      "genus": "Apiculati",
+      "spore_class": "not-a-spore",
+      "confidence": "high",
+      "basis": "Suprageneric category for apiculate spores.",
+      "source": "[Bhardwaj (1955)](https://journals.sagepub.com/doi/pdf/10.54991/jop.1955.480)"
+    },
+    {
+      "genus": "Leiozonotriletes",
+      "spore_class": "trilete-unspecified",
+      "confidence": "medium",
+      "basis": "Cavate triletes; smooth to finely granulose exine.",
+      "source": "[Candilier (1979)](https://pepite-depot.univ-lille.fr/LIBRE/Th_Num/1979/50376-1979-114.pdf)"
+    },
+    {
+      "genus": "Clivosisporites",
+      "spore_class": "trilete-ornamented",
+      "confidence": "medium",
+      "basis": "Apparently Clivosispora; verrucate patinate triletes.",
+      "source": "[García Muro, Rubinstein & Steemans (2014)](https://ri.conicet.gov.ar/bitstream/handle/11336/32078/CONICET_Digital_Nro.b60964cf-b9c6-49c8-aecb-02414951d02d_A.pdf?isAllowed=y&sequence=2)"
+    },
+    {
+      "genus": "Zonomonoletes",
+      "spore_class": "other-spore",
+      "confidence": "medium",
+      "basis": "Historical form-genus usage for zonate monolete spores.",
+      "source": "none checked"
+    },
+    {
+      "genus": "Dichosporites",
+      "spore_class": "uncertain",
+      "confidence": "low",
+      "basis": "Diagnosis and identity of this spelling unresolved.",
+      "source": "none checked"
+    },
+    {
+      "genus": "Parasporites",
+      "spore_class": "not-a-spore",
+      "confidence": "high",
+      "basis": "Saccate medullosan prepollen.",
+      "source": "[Osborn & Taylor (1994)](https://osborn.pages.tcnj.edu/files/2013/12/10-Osborn-and-Taylor-1994.pdf)"
+    },
+    {
+      "genus": "Ambiguaspora",
+      "spore_class": "not-a-spore",
+      "confidence": "medium",
+      "basis": "Acritarch assignment; purported spore affinity unconfirmed.",
+      "source": "none checked"
+    },
+    {
+      "genus": "Wybostisporites",
+      "spore_class": "other-spore",
+      "confidence": "high",
+      "basis": "Devonian megaspores.",
+      "source": "[Karczewska (1975)](https://www.app.pan.pl/archive/published/app20/app20-447.pdf)"
+    },
+    {
+      "genus": "Pachytheca",
+      "spore_class": "not-a-spore",
+      "confidence": "high",
+      "basis": "Multicellular filamentous body with cortex and medulla.",
+      "source": "[Edwards et al. (2026)](https://orca.cardiff.ac.uk/id/eprint/187649/)"
+    },
+    {
+      "genus": "Tripartites",
+      "spore_class": "trilete-unspecified",
+      "confidence": "high",
+      "basis": "Auriculate triletes; exine smooth to verrucate.",
+      "source": "[Candilier (1979)](https://pepite-depot.univ-lille.fr/LIBRE/Th_Num/1979/50376-1979-114.pdf)"
+    },
+    {
+      "genus": "Cosmochlaina",
+      "spore_class": "not-a-spore",
+      "confidence": "high",
+      "basis": "Nematophyte cuticle or thallus fragments.",
+      "source": "[Edwards et al. (2013)](https://orca.cardiff.ac.uk/id/eprint/53168/1/AXE%20Nematothallus%2Bafter%2Breferees-final%5B1%5D.pdf)"
+    },
+    {
+      "genus": "Growia",
+      "spore_class": "uncertain",
+      "confidence": "low",
+      "basis": "Taxonomic identity and diagnostic morphology unresolved.",
+      "source": "none checked"
+    },
+    {
+      "genus": "Tuberculatisporites",
+      "spore_class": "other-spore",
+      "confidence": "high",
+      "basis": "Tuberculate lycopsid megaspores.",
+      "source": "[Pendleton & Wellman (2013)](https://jm.copernicus.org/articles/32/87/2013/jm-32-87-2013.pdf)"
+    },
+    {
+      "genus": "Ceratosporites",
+      "spore_class": "trilete-ornamented",
+      "confidence": "high",
+      "basis": "Trilete spores with distal spines or bacula.",
+      "source": "[Raine, Mildenhall & Kennedy (2011)](https://pal.gns.cri.nz/catalog/taxa/103.htm)"
+    },
+    {
+      "genus": "Kelbergiasporites",
+      "spore_class": "uncertain",
+      "confidence": "low",
+      "basis": "Diagnosis not established for this spelling.",
+      "source": "none checked"
+    },
+    {
+      "genus": "Enigmophyton",
+      "spore_class": "not-a-spore",
+      "confidence": "high",
+      "basis": "Plant macrofossil genus.",
+      "source": "[Andrews (1955)](https://pubs.usgs.gov/bul/1013/report.pdf)"
+    },
+    {
+      "genus": "Nothofagidites",
+      "spore_class": "not-a-spore",
+      "confidence": "high",
+      "basis": "Stephanocolpate angiosperm pollen.",
+      "source": "[Raine, Mildenhall & Kennedy (2011)](https://pal.gns.cri.nz/catalog/index.htm)"
+    },
+    {
+      "genus": "Triangulatisporites",
+      "spore_class": "other-spore",
+      "confidence": "high",
+      "basis": "Reticulate, flanged lycopsid megaspores.",
+      "source": "[Karczewska (1976)](https://www.app.pan.pl/article/item/app21-331.html)"
+    },
+    {
+      "genus": "Felixipollenites",
+      "spore_class": "not-a-spore",
+      "confidence": "high",
+      "basis": "Cordaitalean pollen.",
+      "source": "[Osborn & Taylor (1994)](https://osborn.pages.tcnj.edu/files/2013/12/10-Osborn-and-Taylor-1994.pdf)"
+    },
+    {
+      "genus": "Gosslingia",
+      "spore_class": "not-a-spore",
+      "confidence": "high",
+      "basis": "Zosterophyll macroplant with lateral sporangia.",
+      "source": "[Cleal & Thomas (1995)](https://geoguide.scottishgeologytrust.org/p/gcr09/gcr09_craigyfro)"
+    },
+    {
+      "genus": "Schizaeoisporites",
+      "spore_class": "other-spore",
+      "confidence": "high",
+      "basis": "Striate monolete fern spores.",
+      "source": "[Schrank (2010)](https://www.tandfonline.com/doi/full/10.1080/01916121003620106)"
+    },
+    {
+      "genus": "Lagenicula",
+      "spore_class": "other-spore",
+      "confidence": "high",
+      "basis": "Megaspores with a prominent proximal gula.",
+      "source": "[Pendleton & Wellman (2013)](https://jm.copernicus.org/articles/32/87/2013/jm-32-87-2013.pdf)"
+    },
+    {
+      "genus": "Scheuringipollenites",
+      "spore_class": "not-a-spore",
+      "confidence": "high",
+      "basis": "Nonstriate bisaccate gymnosperm pollen.",
+      "source": "none checked"
+    },
+    {
+      "genus": "Trachymesotriletes",
+      "spore_class": "uncertain",
+      "confidence": "low",
+      "basis": "Diagnostic morphology not verified.",
+      "source": "none checked"
+    },
+    {
+      "genus": "Schopfipollenites",
+      "spore_class": "not-a-spore",
+      "confidence": "high",
+      "basis": "Monolete medullosan prepollen.",
+      "source": "[Taylor (1976)](https://www.jstor.org/stable/2442046)"
+    },
+    {
+      "genus": "Angiospora",
+      "spore_class": "not-a-spore",
+      "confidence": "medium",
+      "basis": "Probable acritarch; embryophyte affinity unverified.",
+      "source": "none checked"
+    },
+    {
+      "genus": "Genus-A",
+      "spore_class": "not-a-spore",
+      "confidence": "high",
+      "basis": "Informal placeholder, not a genus name.",
+      "source": "none checked"
+    },
+    {
+      "genus": "Cyclobaculisporites",
+      "spore_class": "trilete-ornamented",
+      "confidence": "high",
+      "basis": "Trilete spores densely covered with bacula.",
+      "source": "[Bhardwaj (1955)](https://journals.sagepub.com/doi/pdf/10.54991/jop.1955.480)"
+    },
+    {
+      "genus": "Alisporites",
+      "spore_class": "not-a-spore",
+      "confidence": "high",
+      "basis": "Bisaccate gymnosperm pollen.",
+      "source": "[Raine, Mildenhall & Kennedy (2011)](https://pal.gns.cri.nz/catalog/index.htm)"
+    },
+    {
+      "genus": "Angulisporites",
+      "spore_class": "trilete-ornamented",
+      "confidence": "high",
+      "basis": "Cingulate triletes with granulate exine.",
+      "source": "[Bhardwaj (1955)](https://journals.sagepub.com/doi/pdf/10.54991/jop.1955.480)"
+    },
+    {
+      "genus": "Incertae sedis",
+      "spore_class": "not-a-spore",
+      "confidence": "high",
+      "basis": "Taxonomic uncertainty label, not a genus.",
+      "source": "none checked"
+    },
+    {
+      "genus": "Asterotheca",
+      "spore_class": "not-a-spore",
+      "confidence": "high",
+      "basis": "Fertile fern foliage bearing synangia.",
+      "source": "none checked"
+    },
+    {
+      "genus": "Archeactinomyces",
+      "spore_class": "not-a-spore",
+      "confidence": "medium",
+      "basis": "Putative actinomycete microfossil.",
+      "source": "none checked"
+    },
+    {
+      "genus": "Endoculeospora",
+      "spore_class": "trilete-ornamented",
+      "confidence": "high",
+      "basis": "Trilete; exoexine bears granules, pila or bacula.",
+      "source": "[di Pasquo (2007)](https://www.scielo.cl/scielo.php?lng=en&pid=S0716-02082007000100006&script=sci_arttext)"
+    },
+    {
+      "genus": "Serrulacaulis",
+      "spore_class": "not-a-spore",
+      "confidence": "high",
+      "basis": "Zosterophyll macroplant with serrate axes.",
+      "source": "[Xu, Berry & Wang (2011)](https://www.sciencedirect.com/science/article/abs/pii/S1871174X11000242)"
+    },
+    {
+      "genus": "Dulhuntyispora",
+      "spore_class": "trilete-unspecified",
+      "confidence": "medium",
+      "basis": "Trilete; interradial wall blisters, variable additional sculpture.",
+      "source": "[Tschudy (1973)](https://pubs.usgs.gov/pp/0770/report.pdf)"
+    },
+    {
+      "genus": "Microbaculispora",
+      "spore_class": "trilete-ornamented",
+      "confidence": "high",
+      "basis": "Trilete spores bearing small bacula.",
+      "source": "[Raine, Mildenhall & Kennedy (2011)](https://pal.gns.cri.nz/catalog/taxa/139.htm)"
+    },
+    {
+      "genus": "Cyclosporites",
+      "spore_class": "trilete-ornamented",
+      "confidence": "medium",
+      "basis": "Trilete spores with striate or concentric muri.",
+      "source": "[Raine, Mildenhall & Kennedy (2011)](https://pal.gns.cri.nz/catalog/taxa/216.htm)"
+    },
+    {
+      "genus": "Orestovia",
+      "spore_class": "not-a-spore",
+      "confidence": "high",
+      "basis": "Axial or thalloid macrofossil.",
+      "source": "[Andrews (1970)](https://digital.library.unt.edu/ark%3A/67531/metadc1114957/m1/152/)"
+    },
+    {
+      "genus": "Kibambaites",
+      "spore_class": "uncertain",
+      "confidence": "low",
+      "basis": "Spore versus pollen diagnosis unresolved.",
+      "source": "none checked"
+    },
+    {
+      "genus": "Verrucate",
+      "spore_class": "not-a-spore",
+      "confidence": "high",
+      "basis": "Descriptive sculpture label, not a genus.",
+      "source": "none checked"
+    },
+    {
+      "genus": "Psilophyta",
+      "spore_class": "not-a-spore",
+      "confidence": "high",
+      "basis": "Suprageneric plant group.",
+      "source": "none checked"
+    },
+    {
+      "genus": "Monosulcites",
+      "spore_class": "not-a-spore",
+      "confidence": "high",
+      "basis": "Monosulcate pollen.",
+      "source": "[Raine, Mildenhall & Kennedy (2011)](https://pal.gns.cri.nz/catalog/index.htm)"
+    },
+    {
+      "genus": "Archemicramoeba",
+      "spore_class": "not-a-spore",
+      "confidence": "medium",
+      "basis": "Putative amoeboid microfossil.",
+      "source": "none checked"
+    },
+    {
+      "genus": "Lycopodites",
+      "spore_class": "not-a-spore",
+      "confidence": "high",
+      "basis": "Leafy lycopsid macrofossils.",
+      "source": "[Karczewska (1976)](https://www.app.pan.pl/article/item/app21-331.html)"
+    },
+    {
+      "genus": "Stenomesotriletes",
+      "spore_class": "uncertain",
+      "confidence": "low",
+      "basis": "Diagnostic morphology not verified.",
+      "source": "none checked"
+    },
+    {
+      "genus": "Tricolporopollenites",
+      "spore_class": "not-a-spore",
+      "confidence": "high",
+      "basis": "Tricolporate angiosperm pollen.",
+      "source": "[Ziembińska-Tworzydło (1974)](https://www.app.pan.pl/archive/published/app19/app19-309.pdf)"
+    },
+    {
+      "genus": "Feraxotheca",
+      "spore_class": "not-a-spore",
+      "confidence": "high",
+      "basis": "Lyginopterid seed-fern pollen organ.",
+      "source": "[Millay & Taylor (1978)](https://www.researchgate.net/publication/256322238_Fertile_and_sterile_frond_segments_of_the_lyginopterid_seed_fern_Feraxotheca)"
+    },
+    {
+      "genus": "Stenomarginata",
+      "spore_class": "not-a-spore",
+      "confidence": "medium",
+      "basis": "Acritarch form genus.",
+      "source": "none checked"
+    },
+    {
+      "genus": "Cingulatisporites",
+      "spore_class": "trilete-unspecified",
+      "confidence": "medium",
+      "basis": "Cingulate triletes; smooth and sculptured historical species.",
+      "source": "none checked"
+    },
+    {
+      "genus": "Amblisporites",
+      "spore_class": "uncertain",
+      "confidence": "low",
+      "basis": "Identity unresolved; possible erroneous spelling.",
+      "source": "none checked"
+    },
+    {
+      "genus": "Eviostachya",
+      "spore_class": "not-a-spore",
+      "confidence": "high",
+      "basis": "Sphenopsid reproductive cone.",
+      "source": "[Stockmans (1948)](https://biblio.naturalsciences.be/rbins-publications/memoires/110-1948/memoire-110-all.pdf)"
+    },
+    {
+      "genus": "Cyathidites",
+      "spore_class": "trilete-laevigate",
+      "confidence": "high",
+      "basis": "Smooth triangular trilete fern spores.",
+      "source": "[Raine, Mildenhall & Kennedy (2011)](https://pal.gns.cri.nz/catalog/taxa/57.htm)"
+    },
+    {
+      "genus": "Irrimales",
+      "spore_class": "not-a-spore",
+      "confidence": "high",
+      "basis": "Historical suprageneric category for apertureless sporomorphs.",
+      "source": "none checked"
+    },
+    {
+      "genus": "Kozlowskiprion",
+      "spore_class": "not-a-spore",
+      "confidence": "high",
+      "basis": "Polychaete jaws: scolecodonts.",
+      "source": "[Kielan-Jaworowska (1966)](https://www.palaeontologia.pan.pl/Archive/1966-16.pdf)"
+    },
+    {
+      "genus": "Telangium",
+      "spore_class": "not-a-spore",
+      "confidence": "high",
+      "basis": "Seed-fern pollen-bearing organ.",
+      "source": "[Cleal & Thomas (1995)](https://data.jncc.gov.uk/data/a2ed7572-87e2-40b9-93cf-2f3af82d8797/gcr-v9-palaeozoic-palaeobotany-of-great-britain-c5.pdf)"
+    },
+    {
+      "genus": "Archemegabacter",
+      "spore_class": "not-a-spore",
+      "confidence": "medium",
+      "basis": "Putative bacterial microfossil.",
+      "source": "none checked"
+    },
+    {
+      "genus": "Psilogena",
+      "spore_class": "not-a-spore",
+      "confidence": "medium",
+      "basis": "Historical suprageneric plant category.",
+      "source": "none checked"
+    },
+    {
+      "genus": "Complectitetras",
+      "spore_class": "cryptospore-tetrad",
+      "confidence": "high",
+      "basis": "Permanent cryptospore tetrads within two envelopes.",
+      "source": "[Steemans, Higgs & Wellman (2000), reviewed in AASP Newsletter 33(4)](https://palynology.org/wp-content/uploads/2015/05/2000nl33-4.pdf)"
+    },
+    {
+      "genus": "Gulisporites",
+      "spore_class": "trilete-unspecified",
+      "confidence": "medium",
+      "basis": "Prominently labrate triletes; smooth or weakly sculptured.",
+      "source": "none checked"
+    },
+    {
+      "genus": "Microtabula",
+      "spore_class": "uncertain",
+      "confidence": "low",
+      "basis": "Diagnostic structure and biological affinity unresolved.",
+      "source": "none checked"
+    },
+    {
+      "genus": "Speciososporites",
+      "spore_class": "other-spore",
+      "confidence": "high",
+      "basis": "Monolete spores.",
+      "source": "[Herendeen et al. (2020)](https://onlinelibrary.wiley.com/doi/full/10.1002/tax.12194)"
+    },
+    {
+      "genus": "Densipollenites",
+      "spore_class": "not-a-spore",
+      "confidence": "high",
+      "basis": "Monosaccate gymnosperm pollen.",
+      "source": "[Saxena et al. (2025)](https://journals.sagepub.com/doi/abs/10.1177/05529360251400053)"
+    },
+    {
+      "genus": "Aulicosporites",
+      "spore_class": "uncertain",
+      "confidence": "low",
+      "basis": "Spore genus confirmed; diagnostic morphology not resolved.",
+      "source": "[Allen (1965); abstract checked, diagnosis unavailable](https://palass.org/publications/palaeontology-journal/archive/8/4/article_pp687-748)"
+    },
+    {
+      "genus": "Mazocarpon",
+      "spore_class": "not-a-spore",
+      "confidence": "high",
+      "basis": "Sigillarian reproductive cone.",
+      "source": "[Willard et al. (2007)](https://repository.si.edu/server/api/core/bitstreams/f48e7cf8-92fc-4d4f-ba04-50e03ddb7321/content)"
+    },
+    {
+      "genus": "Crassispora",
+      "spore_class": "trilete-ornamented",
+      "confidence": "high",
+      "basis": "Crassitate triletes with distal apiculate sculpture.",
+      "source": "none checked"
+    },
+    {
+      "genus": "Decussatisporites",
+      "spore_class": "not-a-spore",
+      "confidence": "high",
+      "basis": "Striate or taeniate monosulcate pollen.",
+      "source": "[Klaus (1960)](https://www.zobodat.at/pdf/JahrbGBA-SB_05_0001-0182.pdf)"
+    },
+    {
+      "genus": "Nanoxanthiopollenites",
+      "spore_class": "not-a-spore",
+      "confidence": "high",
+      "basis": "Spinose monolete medullosan prepollen.",
+      "source": "none checked"
+    },
+    {
+      "genus": "Chaleuria",
+      "spore_class": "not-a-spore",
+      "confidence": "high",
+      "basis": "Branching vascular macroplant with paired sporangia.",
+      "source": "[Andrews, Gensel & Forbes (1974)](https://palass.org/sites/default/files/media/publications/palaeontology/volume_17/vol17_part2_pp387-408.pdf)"
+    },
+    {
+      "genus": "Diducites",
+      "spore_class": "trilete-laevigate",
+      "confidence": "high",
+      "basis": "Trilete; unsculptured wall layers, folded outer envelope.",
+      "source": "[Marshall et al. (2020)](https://link.springer.com/article/10.1007/s12549-020-00448-x)"
+    },
+    {
+      "genus": "Raniganjiasaccites",
+      "spore_class": "not-a-spore",
+      "confidence": "high",
+      "basis": "Bisaccate gymnosperm pollen.",
+      "source": "none checked"
+    },
+    {
+      "genus": "Sporangites",
+      "spore_class": "not-a-spore",
+      "confidence": "medium",
+      "basis": "Historical heterogeneous name including Tasmanites algal cysts.",
+      "source": "[Winslow (1962)](https://pubs.usgs.gov/pp/0364/report.pdf)"
+    },
+    {
+      "genus": "Granulatasporites",
+      "spore_class": "uncertain",
+      "confidence": "low",
+      "basis": "Possible Granulatisporites misspelling; identity unresolved.",
+      "source": "none checked"
+    },
+    {
+      "genus": "Scabratisporites",
+      "spore_class": "trilete-ornamented",
+      "confidence": "high",
+      "basis": "Trilete spores with fine scabrate sculpture.",
+      "source": "[Gad (2005)](https://e-docs.geo-leo.de/bitstream/11858/10506/1/mgm33_2005_gad.pdf)"
+    },
+    {
+      "genus": "Whittleseya",
+      "spore_class": "not-a-spore",
+      "confidence": "high",
+      "basis": "Medullosan prepollen-bearing synangium.",
+      "source": "[Pacyna & Zdebska (2010)](https://www.researchgate.net/publication/265411971_Upper_Carboniferous_seed_fern_Pteridospermophyta_pollen_organs_from_Silesia_Poland_and_related_evolution_considerations)"
+    },
+    {
+      "genus": "Gleicheniidites",
+      "spore_class": "trilete-laevigate",
+      "confidence": "high",
+      "basis": "Smooth trilete spores with interradial thickenings.",
+      "source": "[Raine, Mildenhall & Kennedy (2011)](https://pal.gns.cri.nz/catalog/taxa/234.htm)"
+    },
+    {
+      "genus": "Peltatispora",
+      "spore_class": "uncertain",
+      "confidence": "low",
+      "basis": "Diagnostic morphology not verified.",
+      "source": "none checked"
+    },
+    {
+      "genus": "Emphanizonosporites",
+      "spore_class": "trilete-ornamented",
+      "confidence": "high",
+      "basis": "Trilete spores with proximal radial ribs.",
+      "source": "[McGregor & Camfield (1982)](https://emrlibrary.gov.yk.ca/gsc/bulletins/348/bu_348.pdf)"
+    },
+    {
+      "genus": "Walikalesaccites",
+      "spore_class": "not-a-spore",
+      "confidence": "high",
+      "basis": "Saccate pollen.",
+      "source": "[Jardiné (1974)](https://www.sciencedirect.com/science/article/pii/0034666774900931)"
+    },
+    {
+      "genus": "Calamotriletes",
+      "spore_class": "trilete-laevigate",
+      "confidence": "medium",
+      "basis": "Calamospora-like triletes; smooth, commonly folded exine.",
+      "source": "[Playford (1962)](https://palass.org/sites/default/files/media/publications/palaeontology/volume_5/vol5_part3_pp550-618.pdf)"
+    },
+    {
+      "genus": "Genus A",
+      "spore_class": "not-a-spore",
+      "confidence": "high",
+      "basis": "Informal placeholder, not a genus name.",
+      "source": "none checked"
+    },
+    {
+      "genus": "Archethrix",
+      "spore_class": "not-a-spore",
+      "confidence": "medium",
+      "basis": "Putative filamentous microbial fossil.",
+      "source": "none checked"
+    },
+    {
+      "genus": "Setosisporites",
+      "spore_class": "other-spore",
+      "confidence": "high",
+      "basis": "Setose lycopsid megaspores.",
+      "source": "[Hemsley & Scott (1991)](https://www.sciencedirect.com/science/article/pii/0034666791900363)"
+    },
+    {
+      "genus": "Liliacidites",
+      "spore_class": "not-a-spore",
+      "confidence": "high",
+      "basis": "Reticulate monosulcate angiosperm pollen.",
+      "source": "[Raine, Mildenhall & Kennedy (2011)](https://pal.gns.cri.nz/catalog/index.htm)"
+    },
+    {
+      "genus": "Lasiostrobus",
+      "spore_class": "not-a-spore",
+      "confidence": "high",
+      "basis": "Gymnosperm pollen cone.",
+      "source": "[Glauser et al. (2014)](https://www.tara.tcd.ie/tara8/server/api/core/bitstreams/7cf46445-13c5-4d71-93e3-cf0353493ccf/content)"
+    },
+    {
+      "genus": "Leclercqia",
+      "spore_class": "not-a-spore",
+      "confidence": "high",
+      "basis": "Leafy ligulate lycopsid macroplant.",
+      "source": "[Grierson & Bonamo (1979)](https://bsapubs.onlinelibrary.wiley.com/doi/pdf/10.1002/j.1537-2197.1979.tb06248.x)"
+    },
+    {
+      "genus": "Calamostachys",
+      "spore_class": "not-a-spore",
+      "confidence": "high",
+      "basis": "Calamitean reproductive cone.",
+      "source": "none checked"
+    },
+    {
+      "genus": "Ullmannia",
+      "spore_class": "not-a-spore",
+      "confidence": "high",
+      "basis": "Conifer macroplant, including leafy shoots.",
+      "source": "[Florin (1954)](https://biblio.naturalsciences.be/rbins-publications/association-pour-letude-de-la-paleontologie-et-de-la-stratigraphie-houilleres/18-1954/irscnb_d2191_010faax_18-text.pdf)"
+    },
+    {
+      "genus": "Svalbardia",
+      "spore_class": "not-a-spore",
+      "confidence": "high",
+      "basis": "Progymnosperm macroplant.",
+      "source": "[Cascales-Miñana et al. (2022)](https://orbi.uliege.be/bitstream/2268/259106/1/1-s2.0-S0034666721001676-main%282%29.pdf)"
+    },
+    {
+      "genus": "Proteacidites",
+      "spore_class": "not-a-spore",
+      "confidence": "high",
+      "basis": "Triporate proteaceous angiosperm pollen.",
+      "source": "[Raine, Mildenhall & Kennedy (2011)](https://pal.gns.cri.nz/catalog/index.htm)"
+    },
+    {
+      "genus": "Archecoccoides",
+      "spore_class": "not-a-spore",
+      "confidence": "medium",
+      "basis": "Putative coccoid microbial fossil.",
+      "source": "none checked"
+    },
+    {
+      "genus": "Sulcatisporites",
+      "spore_class": "not-a-spore",
+      "confidence": "high",
+      "basis": "Bisaccate gymnosperm pollen.",
+      "source": "none checked"
+    },
+    {
+      "genus": "Heliosporites",
+      "spore_class": "other-spore",
+      "confidence": "high",
+      "basis": "Here Devonian megaspores; variabilis renamed Wybostisporites.",
+      "source": "[Mortimer & Chaloner (1967)](https://field.biodiversitylibrary.org/part/172948)"
+    },
+    {
+      "genus": "Pityosporites",
+      "spore_class": "not-a-spore",
+      "confidence": "high",
+      "basis": "Bisaccate conifer pollen.",
+      "source": "none checked"
+    },
+    {
+      "genus": "Striomonosaccites",
+      "spore_class": "not-a-spore",
+      "confidence": "high",
+      "basis": "Taeniate monosaccate gymnosperm pollen.",
+      "source": "[Schrank (2010)](https://www.tandfonline.com/doi/full/10.1080/01916121003620106)"
+    },
+    {
+      "genus": "Dolerotheca",
+      "spore_class": "not-a-spore",
+      "confidence": "high",
+      "basis": "Medullosan prepollen-bearing organ.",
+      "source": "[Willard et al. (2007)](https://repository.si.edu/server/api/core/bitstreams/f48e7cf8-92fc-4d4f-ba04-50e03ddb7321/content)"
+    },
+    {
+      "genus": "Barsostrobus",
+      "spore_class": "not-a-spore",
+      "confidence": "high",
+      "basis": "Lycopsid reproductive cone.",
+      "source": "none checked"
+    },
+    {
+      "genus": "Cordaianthus",
+      "spore_class": "not-a-spore",
+      "confidence": "high",
+      "basis": "Cordaitalean reproductive organ.",
+      "source": "[Osborn & Taylor (1994)](https://osborn.pages.tcnj.edu/files/2013/12/10-Osborn-and-Taylor-1994.pdf)"
+    },
+    {
+      "genus": "Simplotheca",
+      "spore_class": "not-a-spore",
+      "confidence": "high",
+      "basis": "Lyginopterid seed-fern pollen organ.",
+      "source": "[Pacyna & Zdebska (2010)](https://www.researchgate.net/publication/265411971_Upper_Carboniferous_seed_fern_Pteridospermophyta_pollen_organs_from_Silesia_Poland_and_related_evolution_considerations)"
+    },
+    {
+      "genus": "Parasporotheca",
+      "spore_class": "not-a-spore",
+      "confidence": "high",
+      "basis": "Medullosan prepollen-bearing organ.",
+      "source": "[Osborn & Taylor (1994)](https://osborn.pages.tcnj.edu/files/2013/12/10-Osborn-and-Taylor-1994.pdf)"
+    }
+  ]
+}

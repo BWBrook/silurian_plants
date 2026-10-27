@@ -1,0 +1,147 @@
+    19	Tremadoc
+    20	Peri-Gondwana (Armorica) – Spain: *Attritasporites messaoudi (Fombella 1982).
+    21	
+    22	Southern Gondwana – Algeria: *Abacum rudi, *A. messaoudi, *A. scabra, *A. velata (Combaz
+    23	
+    24	1967; Pittau 1985).
+    25	
+    26	SW Gondwana – Saudi Arabia: *Virgatasporites rudii (Molyneux & Al-Hajri 2000).
+    27	
+    28	Arenig
+    29	Peri-Gondwana (Perunica) – Czech Republic: *Attritasporites messaoudi, *A. velata,*
+    30	
+    31	Virgatasporites rudi, *V. baccatus (Vavrdová 1990a, b).
+    32	
+    33	Llanvirn
+    34	Peri-Gondwana (Perunica) – Czech Republic: *Virgatasporites rudi (Vavrdová 1990a, b).
+    35	
+    36	SW Gondwana – Saudi Arabia: Stegambiquadrella contenta (McClure 1988; Gray 1988;
+    37	
+    38	Strother et al. 1996; Molyneux & Al-Hajri 2000).
+    39	
+    40	Caradoc
+    41	Avalonia – UK, Shropshire: Abditusdyadus histosus, Dyadospora murusdensa, Laevolancis
+    42	
+    43	chibrikovae, Moyeria cabottii, Pseudodyadospora laevigata, Rimosotetras problematica,
+    44	Rugosphaera cerebra, Segestrespora laevigata, S. rugosa, Sphaerasaccus glabellus,
+    45	
+    46	Strophomorpha ovata, Tetrahedraletes grayae, T. medinensis, Velatitetras laevigata, V. rugosa,
+    47	
+    48	V. rugulata, Vestitusdyadus qalibahinus (Burgess 1991; Richardson 1988; Rubinstein & Vaccari
+    49	
+    50	2004; Steemans et al. 1996; Steemans et al. 2000; Strother 1991; Turner 1984; Wellman 1996;
+    51	
+    52	Wellman & Richardson 1993).
+    53	
+    54	Southern Gondwana – Libya: Ambitisporites vavrdovii, Imperfectotriletes patinatus,
+    55	
+    56	Tetrahedraletes medinensis (Gray et al. 1982; Steemans et al. 1996; Steemans et al. 2000;
+    57	
+    58	Wellman & Richardson 1993).
+    59	
+    60	SW Gondwana – Saudi Arabia: Ambitisporites sp., Chelinospora sp., Leiotriletes sp., ?
+    61	
+    62	Synorisporites sp. (Steemans et al. 2009).
+    63	
+    64	Ashgill
+    65	Laurentia – USA: Nodospora retimembrana, Tetrahedraletes grayii, T. medinensis, T.
+    66	
+    67	medinensis parvus, Velatitetras laevigate, Velatitetras reticulata, V. retimembrana, V. rugosa
+    68	
+    69	(Beck & Strother 2008; Burgess 1991; Gray 1985, 1988; Steemans et al. 1996; Strother 1991;
+    70	
+    71	Taylor 1995a, b; Wellman & Richardson 1993)
+    72	
+    73	Baltica – Germany: Dyadospora murusdensa, Rugosphaera tuscarorensis (Reitz & Heuse
+    74	
+    75	1994).
+    76	
+    77	Avalonia – Nova Scotia, Canada: Tetrahedraletes medinensis (Beck & Strother 2008).
+    78	
+    79	Avalonia – Belgium: Ambitisporites avitus, Dyadospora murusattenuata, Imperfectotriletes
+    80	
+    81	patinatus, I. vavrdovae, Moyeria cabottii, Pseudodyadospora laevigata, Rugosphaera cerebra,
+    82	
+    83	R. tuscarorensis, Segestrespora membranifera, S. rugosa, Stegambiquadrella contenta,
+    84	
+    85	Tetrahedraletes grayae, T. medinensis, Velatitetras anatoliensis, V. laevigata, V. retimembrana,
+    86	
+    87	V. rugosa (Martin 1973; Steemans 2001; Steemans et al. 1996; Wellman & Richardson 1993).
+    88	Avalonia – southern Britain: Ambitisporites avitus, Imperfectotriletes vavrdovae, Rimosotetras
+    89	
+    90	problematica, Segestrespora laevigata, S. membranifera, S. rugosa, Tetrahedraletes medinensis
+    91	
+    92	parvus, Velatitetras laevigata, V. retimembrana (Burgess 1991; Steemans et al. 1996).
+    93	
+    94	Peri-Gondwana (Moesian Platform) – Bulgaria: Tetrahedraletes medinensis (Lakova et al.
+    95	
+    96	1992).
+    97	
+    98	Peri-Gondwana (Perunica) – Czech Republic: Chaetosporites pollensimillis, Dyadospora
+    99	
+   100	murusattenuata, D. murusdensa, Imperfectotriletes patinatus, Laevolancis divellomedium,
+   101	
+   102	Pseudodyadospora laevigata, Quadrisporites horridus, Q. variabilis, Rugosphaera cerebra, R.
+   103	
+   104	tuscarorensis, Segestrespora membranifera, Stegambiquadrella contenta, Tetrahedraletes grayii,
+   105	
+   106	T. medinensis, Tritonialetes vacuolus, Vallatialetes aureolatus, Velatitetras retimembrana, V.
+   107	
+   108	retimembrana, V. rugosa (Gray 1991; Steemans et al. 1996; Steemans et al. 2000; Strother 1991;
+   109	
+   110	Vavrdová 1982, 1984, 1988, 1989; Wellman 1996).
+   111	
+   112	Peri-Gondwana (Taurides) – Turkey: Ambitisporites avitus, A. dilutus, Dyadospora
+   113	
+   114	murusattenuata, D. murusdensa, Imperfectotriletes patinatus, I. vavrdovae, Pseudodyadospora
+   115	
+   116	laevigata, Quadrisporites granulatus, Rimosotetras problematica, Rugosphaera cerebra,
+   117	
+   118	Segestrespora burgessii, S laevigata, S. membranifera, S. rugosa, Tetrahedraletes medinensis,
+   119	
+   120	Velatitetras anatoliensis, V. laevigata, V. retimembrana, V. rugosa (Steemans et al. 1996;
+   121	
+   122	Steemans et al. 2000).
+   123	
+   124	SW Gondwana – Saudi Arabia : Ambitisporites sp., Chelinospora sp., Leiotriletes sp., ?
+   125	
+   126	Synorisporites sp (Steemans et al. 2009).
+   127	
+   128	Southern Gondwana – Libya: Dyadospora murusdensa, Imperfectotriletes patinatus, I.
+   129	
+   130	vavrdovae, Pachytetras rugosa, Rimosotetras problematica, Rugosphaera cerebra,
+   131	
+   132	Segestrespora laevigata, S. rugosa, Tetrahedraletes grayae, T. medinensis, Velatitetras rugulata
+   133	(Burgess 1991; Gray 1991; Gray et al. 1982; Hill et al. 1985; Richardson 1988; Steemans et al.
+   134	
+   135	1996; Steemans et al. 2000; Wellman 1996; Wellman & Richardson 1993).
+   136	
+   137	Northern Gondwana – South Africa: Tetrahedraletes medinensis, T. medinensis parvus
+   138	
+   139	(Burgess 1991; Gray 1991; Gray et al. 1986; Strother 1991; Wellman & Richardson 1993).
+   140	
+   141	Tarim Terrane – Xinjiang, China: Dyadospora murusattenuata, D. murusdensa, Laevolancis
+   142	
+   143	chibrikovae, Pseudodyadospora laevigata, Segestrespora rugosa, Tetrahedraletes medinensis,
+   144	
+   145	Velatitetras laevigata (Rubinstein & Vaccari 2004; Steemans et al. 2000; Wang et al. 1997).
+   146	
+   147	South China Terrane – Zhejiang, China: Dyadospora murusattenuata, Strophomorpha ovata,
+   148	
+   149	Tetrahedraletes medinensis, Velatitetras retimembrana (Yin & He 2000).
+   150	
+   151	Hirnantian
+   152	Avalonia – UK: Ambitisporites avitus, Imperfectotriletes vavrdovae, Pseudodyadospora
+   153	
+   154	laevigata, Rimosotetras problematica, Segestrespora laevigata, S. membranifera, S. rugosa,
+   155	
+   156	Velatitetras laevigata, V. retimembrana (Burgess 1991; Steemans et al. 1996; Steemans et al.
+   157	
+   158	2000).
+   159	
+   160	SW Gondwana – Saudi Arabia: Ambitisporites sp., Chelinospora sp., Imperfectotriletes
+   161	
+   162	vavrdovae, Laevolancis divellomedia, Leiotriletes sp., ?Synorisporites sp (Miller & Al-Ruwaili
+   163	
+   164	2007; Steemans et al. 2009).
+   165	

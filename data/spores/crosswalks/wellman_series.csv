@@ -1,0 +1,18 @@
+series_as_given,ics_oldest,ics_youngest,confidence,basis
+Tremadoc,Tremadocian,Tremadocian,high,series or stage as given
+Arenig,Floian,Darriwilian,medium,as the matching name in age_names.csv (British series correlations per Molyneux et al. 2023)
+Llanvirn,Darriwilian,Darriwilian,medium,as the matching name in age_names.csv (British series correlations per Molyneux et al. 2023)
+Caradoc,Sandbian,Katian,high,as the matching name in age_names.csv (British series correlations per Molyneux et al. 2023)
+Ashgill,Katian,Hirnantian,high,as the matching name in age_names.csv (British series correlations per Molyneux et al. 2023)
+Hirnantian,Hirnantian,Hirnantian,high,series or stage as given
+Llandovery,Rhuddanian,Telychian,high,series or stage as given
+Llandovery: Rhuddanian,Rhuddanian,Rhuddanian,high,series or stage as given
+Llandovery (Aeronian),Aeronian,Aeronian,high,series or stage as given
+Llandovery (Telychian),Telychian,Telychian,high,series or stage as given
+Wenlock,Sheinwoodian,Homerian,high,series or stage as given
+Wenlock (Sheinwoodian),Sheinwoodian,Sheinwoodian,high,series or stage as given
+Wenlock (Homerian),Homerian,Homerian,high,series or stage as given
+Ludlow,Gorstian,Ludfordian,high,series or stage as given
+Ludlow (Gorstian),Gorstian,Gorstian,high,series or stage as given
+Ludlow (Ludfordian),Ludfordian,Ludfordian,high,series or stage as given
+Pridoli,Pridoli,Pridoli,high,series or stage as given

@@ -1,0 +1,108 @@
+genus,n_rows,n_docs,species_sample,palynodata_min_ma,palynodata_max_ma
+Archeozonotriletes,3,3,sp; volgogradensis,345.0,570.0
+Cincturasporites,3,2,literatus; dedaleus; densus,345.0,395.0
+Cycadopites,3,2,nevesi; cymbatus,65.0,570.0
+Mooreisporites,3,2,sp.A,230.0,570.0
+Anisozonotriletes,3,3,sp,345.0,435.0
+Cryptosporites,3,3,,387.0,435.0
+Enigmophytospora,3,2,simplex,345.0,395.0
+Apiculati,3,3,"sp. Hoeg,1942",115.667,395.0
+Leiozonotriletes,3,3,primarius; sp,105.0,395.0
+Clivosisporites,3,2,verrucata,370.0,395.0
+Zonomonoletes,3,2,sp; glaber; novis,280.0,395.0
+Dichosporites,3,1,crassus; devonicus; hamulus,345.0,395.0
+Parasporites,3,2,leismanii,230.0,570.0
+Ambiguaspora,3,2,parvula,389.666,472.0
+Wybostisporites,3,2,variabilis,345.0,395.0
+Pachytheca,3,3,sp,392.332,435.0
+Tripartites,3,3,vetustus; trifoliolatus,230.0,570.0
+Cosmochlaina,3,1,maculata; verrucosa,378.0,417.0
+Growia,3,1,oviformis,440.0,450.0
+Tuberculatisporites,3,3,submamillarius; regularis,230.0,570.0
+Ceratosporites,3,2,sp; sp.A,345.0,435.0
+Kelbergiasporites,3,2,levis,370.0,395.0
+Enigmophyton,3,3,sp; superbum,345.0,395.0
+Nothofagidites,3,1,lachlanae; cranwellae; asperus,5.0,482.6
+Triangulatisporites,3,2,,230.0,570.0
+Felixipollenites,3,2,macroreticulatus; sp,230.0,570.0
+Gosslingia,3,3,breconensis,345.0,395.0
+Schizaeoisporites,3,3,sp; sp.I,395.0,447.63
+Lagenicula,3,3,sp; catenulatus,230.0,570.0
+Scheuringipollenites,3,3,ovatus,230.0,570.0
+Trachymesotriletes,3,2,sp,345.0,414.0
+Schopfipollenites,3,3,,65.0,570.0
+Angiospora,3,2,naumovae,395.0,414.0
+Genus-A,3,1,sp.4; sp.3; sp.2,345.0,395.0
+Cyclobaculisporites,3,3,minutus; sp,230.0,570.0
+Alisporites,3,3,sp; opii,65.0,570.0
+Angulisporites,3,2,induratus; punctulosus; notatus,345.0,395.0
+Incertae sedis,2,2,sp.I; form b,392.332,500.0
+Asterotheca,2,1,oreopteridia; sp,230.0,570.0
+Archeactinomyces,2,1,proliferans,435.0,500.0
+Endoculeospora,2,2,gradzinskii,280.0,395.0
+Serrulacaulis,2,2,furcatus,345.0,395.0
+Dulhuntyispora,2,2,sp; minuta,395.0,435.0
+Microbaculispora,2,2,tentula,230.0,570.0
+Cyclosporites,2,2,sp,280.0,570.0
+Orestovia,2,2,devonica,345.0,395.0
+Kibambaites,2,2,corius,230.0,570.0
+Verrucate,2,1,sp.1,394.0,395.0
+Psilophyta,2,1,,435.0,570.0
+Monosulcites,2,1,gemmatus; otagoensis,5.0,482.6
+Archemicramoeba,2,1,chitinovorax,395.0,435.0
+Lycopodites,2,2,oosensis,345.0,395.0
+Stenomesotriletes,2,2,sp,435.0,514.0
+Tricolporopollenites,2,1,cingulum,280.0,395.0
+Feraxotheca,2,2,culcitaus,230.0,570.0
+Stenomarginata,2,2,pusilla,370.0,408.333
+Cingulatisporites,2,2,,280.0,435.0
+Amblisporites,2,1,,370.0,395.0
+Eviostachya,2,2,hoegii,345.0,395.0
+Cyathidites,2,2,sp,5.0,482.6
+Irrimales,2,1,,435.0,570.0
+Kozlowskiprion,2,1,sp.A; longicavernosus,395.0,435.0
+Telangium,2,2,sp,230.0,570.0
+Archemegabacter,2,1,speciosus,345.0,435.0
+Psilogena,2,1,,435.0,570.0
+Complectitetras,2,1,alhajrii,432.0,435.0
+Gulisporites,2,2,torpidus; cochlearius,267.0,500.0
+Microtabula,2,2,hexagonalis,395.0,500.0
+Speciososporites,2,2,plicatus; sp,370.0,435.0
+Densipollenites,2,1,sp,435.0,570.0
+Aulicosporites,2,1,aulicus; vitabilis,360.0,395.0
+Mazocarpon,2,1,oedipternum; shorense,230.0,570.0
+Crassispora,2,2,maculosa; sp,280.0,500.0
+Decussatisporites,2,1,kinduensis; magmus,230.0,570.0
+Nanoxanthiopollenites,2,2,mcmurrayi,230.0,570.0
+Chaleuria,2,2,cirrosa,345.0,395.0
+Diducites,2,2,poljessicus; mucronatus,345.0,395.0
+Raniganjiasaccites,2,2,ovatus,230.0,570.0
+Sporangites,2,2,sp; bilobatus,345.0,395.0
+Granulatasporites,2,1,sp.B; sp,387.0,389.666
+Scabratisporites,2,2,minor,378.0,395.0
+Whittleseya,2,2,elegans; sp,195.0,570.0
+Gleicheniidites,2,2,sp,5.0,482.6
+Peltatispora,2,1,peltata,336.0,395.0
+Emphanizonosporites,2,1,radiatus,370.0,395.0
+Walikalesaccites,2,2,ellipticus,230.0,570.0
+Calamotriletes,2,2,minutissima; platyrugosus,230.0,395.0
+Genus A,2,1,"sp.A Stee.et al,2000; sp.B",432.0,435.0
+Archethrix,2,1,saharensis,395.0,435.0
+Setosisporites,2,2,sp,230.0,570.0
+Liliacidites,2,1,aviemorensis; variegatus,5.0,482.6
+Lasiostrobus,2,2,polysacci,230.0,570.0
+Leclercqia,2,2,complexa,345.0,395.0
+Calamostachys,2,1,germanica; sp,230.0,570.0
+Ullmannia,2,1,,435.0,570.0
+Svalbardia,2,2,sp,345.0,395.0
+Proteacidites,2,1,minimus; obscurus,5.0,482.6
+Archecoccoides,2,1,goujetii,345.0,435.0
+Sulcatisporites,2,2,splendens,65.0,570.0
+Heliosporites,2,1,variabilis,345.0,395.0
+Pityosporites,2,2,sp,65.0,570.0
+Striomonosaccites,2,2,brevis; ovatus,230.0,570.0
+Dolerotheca,2,2,formosa,230.0,570.0
+Barsostrobus,2,2,famennensis,345.0,395.0
+Cordaianthus,2,2,concinnus,230.0,570.0
+Simplotheca,2,2,sp,195.0,570.0
+Parasporotheca,2,2,sp; leismanii,230.0,570.0

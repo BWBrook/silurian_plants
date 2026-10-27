@@ -1,0 +1,42 @@
+work	where_it_is_open	url	basis
+Lang & Cookson 1935 (Phil Trans B 224)	Royal Society historical archive (papers over 70 years old are free)	https://doi.org/10.1098/rstb.1935.0004	Royal Society policy; site bot-walled (403) so not fetched; OpenAlex lists closed
+Cookson 1935 (Phil Trans B 225)	Royal Society historical archive	https://doi.org/10.1098/rstb.1935.0009	as above
+Croft & Lang 1942 (Phil Trans B 231)	Royal Society historical archive	https://doi.org/10.1098/rstb.1942.0001	as above
+Kidston & Lang 1917 Part I (Trans RSE 51: 761)	BHL item 130747	https://www.biodiversitylibrary.org/item/130747	BHL OpenURL resolves page 761 of v.51
+Kidston & Lang 1920 Parts II-III, 1921 Parts IV-V (Trans RSE 52: 603, 643, 831, 855)	BHL item 189113; Part IV also Zenodo 2503478	https://www.biodiversitylibrary.org/item/189113	BHL OpenURL resolves each start page
+Jaeger 1966 (Proc R Soc Vic 79: 393)	BHL item 257910	https://www.biodiversitylibrary.org/item/257910	BHL OpenURL resolves page 393 of v.79
+Halle 1916 (K Svenska Vetensk Akad Handl 57(1))	BHL item 131280 (issue pagination restarts)	https://www.biodiversitylibrary.org/item/131280	BHL OpenURL
+Banks, Leclercq & Hueber 1975 (Palaeontographica Americana 8: 77)	BHL item 40614	https://www.biodiversitylibrary.org/item/40614	BHL OpenURL resolves page 77 of v.8
+Hueber 1961 (Ann Mo Bot Gard 48: 125)	BHL item 54726	https://www.biodiversitylibrary.org/item/54726	BHL OpenURL
+Chaloner, Hill & Rogerson 1978 (Palaeontology 21: 693)	Palaeontological Association archive	https://www.palass.org/sites/default/files/media/publications/palaeontology/volume_21/vol21_part3_pp693-707.pdf	HTTP 200 application/pdf
+Earp 2024	CSIRO, CC BY-NC-ND	https://doi.org/10.1071/RS23021	OpenAlex diamond OA; Crossref licence
+Rubinstein & Vajda 2019	T&F, CC BY	https://doi.org/10.1080/11035897.2019.1636860	OpenAlex hybrid; Crossref licence
+Rubinstein et al. 2010	Wiley free to read	https://doi.org/10.1111/j.1469-8137.2010.03433.x	OpenAlex bronze
+Edwards et al. 2014 (New Phytol 202: 50)	Wiley free to read	https://doi.org/10.1111/nph.12645	OpenAlex bronze
+Edwards et al. 2021a (eophytes)	Wiley, CC BY	https://doi.org/10.1111/nph.17703	Crossref licence
+Edwards et al. 2021b (transfer cells)	Wiley, CC BY	https://doi.org/10.1111/nph.17704	Crossref licence
+Capel et al. 2022 (Earth-Sci Rev 231)	Elsevier OA, CC BY-NC-ND	https://doi.org/10.1016/j.earscirev.2022.104085	OpenAlex hybrid
+Capel et al. 2023 (PALAEO 613: 111393)	Elsevier OA, CC BY-NC-ND	https://doi.org/10.1016/j.palaeo.2023.111393	OpenAlex hybrid; Yarravia/NE Gondwana phytochorion claim
+Capel et al. 2023 (Palaeontology 66), main text	Wiley OA, CC BY-NC-ND (SI is the existing capel2023-si row)	https://doi.org/10.1111/pala.12644	Crossref licence
+Gess & Berry 2024	Elsevier OA, CC BY	https://doi.org/10.1016/j.revpalbo.2024.105212	OpenAlex hybrid
+Stein et al. 2020 and published SI (Table S1)	Cell Press free	https://doi.org/10.1016/j.cub.2019.11.067	OpenAlex bronze
+Bierenbroodspot et al. 2025 (Curr Biol 35: 5071)	Cell Press OA, CC BY	https://doi.org/10.1016/j.cub.2025.08.046	OpenAlex hybrid
+Bek et al. 2026 (Palaeoworld 35: 201138)	Elsevier OA, CC BY-NC	https://doi.org/10.1016/j.palwor.2026.201138	OpenAlex hybrid
+Garratt & Rickards 1987	Free PDF	https://doi.org/10.37570/bgsd-1986-35-14	HTTP 200 application/pdf
+Lenz 2013	CSP free to read	https://doi.org/10.1139/cjes-2013-0057	OpenAlex bronze
+Morel et al. 1995	Cambridge free PDF	https://doi.org/10.1017/s0016756800021506	HTTP 200
+Edwards et al. 2001 (Villavicencio)	ScienceDirect free to read	https://doi.org/10.1016/s0034-6667(01)00059-8	OpenAlex bronze
+Scott & Rescan 2017	Wiley/OUP free to read	https://doi.org/10.1111/evo.13125	OpenAlex bronze
+Prats et al. 2024 and SI	OUP, CC BY	https://doi.org/10.1093/aobpla/plae041	OpenAlex gold
+Hao & Xue 2013 (Chin Sci Bull 58: 2784)	Springer open PDF	https://doi.org/10.1007/s11434-013-5799-x	HTTP 200 application/pdf
+Meyer-Berthaud et al. 2000 (Am J Bot 87: 456)	Wiley free to read	https://doi.org/10.2307/2656589	OpenAlex bronze
+Gerrienne et al. 2011 (Science 333: 837)	ORBi PDF	https://orbi.uliege.be/bitstream/2268/97121/2/Gerrienne%20et%20al%202011b.pdf	HTTP 200 application/pdf
+Streel et al. 1987	ORBi PDF	https://orbi.uliege.be/bitstream/2268/21568/1/Streel%20et%20al%201987.pdf	HTTP 200 application/pdf
+Navidi-Izad et al. 2022	ORBi	https://orbi.uliege.be/handle/2268/294153	handle page lists a bitstream
+Cascales-Minana et al. 2017 (Posongchong spores)	ORBi PDF	https://orbi.uliege.be/bitstream/2268/228540/1/Cascales-Minana%20et%20al.%202018_Posongchong%20paper.pdf	HTTP 200 application/pdf
+Cascales-Minana & Meyer-Berthaud 2015	HAL	https://sde.hal.science/hal-01140840v1/document	OpenAlex green; HAL bot wall blocked the earlier audit
+Smith 2016 (cord-forming fungi)	Durham repository	https://durham-repository.worktribe.com/output/1391375	OpenAlex green
+Abbott et al. 1998 (Parka chemistry)	Newcastle repository	https://doi.org/10.25405/ncl.34641558	OpenAlex green
+Edwards & Li 2018	Cardiff ORCA	https://orca.cardiff.ac.uk/id/eprint/114267/	OpenAlex green
+Wellman, Steemans & Vecoli 2013 chapter 29	figshare, CC BY (abridged PDF already held)	https://figshare.com/articles/journal_contribution/Chapter_29_Palaeophytogeography_of_Ordovician_Silurian_land_plants/3453524	OpenAlex green
+Libertin et al. 2022 (C. bohemica): kept as a register row because unverified	NRM DiVA author copy	https://nrm.diva-portal.org/smash/record.jsf?pid=diva2:1817613	OpenAlex green; bot wall blocked checking for full text

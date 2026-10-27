@@ -1,0 +1,565 @@
+{
+  "items": [
+    {
+      "series_as_given": "Wenlock",
+      "region_as_given": "Laurentia",
+      "country": "USA",
+      "locality": "",
+      "questionable_affinity": false,
+      "taxa": [
+        {"as_written": "Aremopyra brevicosta", "expanded": "Aremopyra brevicosta", "genus_ambiguous": false},
+        {"as_written": "Artemopyra radiata", "expanded": "Artemopyra radiata", "genus_ambiguous": false},
+        {"as_written": "Confossuspora reniforma", "expanded": "Confossuspora reniforma", "genus_ambiguous": false},
+        {"as_written": "Laevolancis divellomedium", "expanded": "Laevolancis divellomedium", "genus_ambiguous": false},
+        {"as_written": "Stegambiquadrella contenta", "expanded": "Stegambiquadrella contenta", "genus_ambiguous": false}
+      ],
+      "references": ["Burgess & Richardson 1991, 1995", "Strother 1991", "Strother 1993", "Strother & Traverse 1979", "Wellman & Richardson 1993"],
+      "source_line": 436
+    },
+    {
+      "series_as_given": "Wenlock",
+      "region_as_given": "Laurentia",
+      "country": "UK",
+      "locality": "Scotland",
+      "questionable_affinity": false,
+      "taxa": [
+        {"as_written": "Ambitisporites avitus", "expanded": "Ambitisporites avitus", "genus_ambiguous": false},
+        {"as_written": "A. dilutus", "expanded": "Ambitisporites dilutus", "genus_ambiguous": false},
+        {"as_written": "Cheilotetras caledonica", "expanded": "Cheilotetras caledonica", "genus_ambiguous": false},
+        {"as_written": "Dyadospora murusattenuata", "expanded": "Dyadospora murusattenuata", "genus_ambiguous": false},
+        {"as_written": "D. murusdensa", "expanded": "Dyadospora murusdensa", "genus_ambiguous": false},
+        {"as_written": "Laevolancis divellomedium", "expanded": "Laevolancis divellomedium", "genus_ambiguous": false},
+        {"as_written": "L. plicata", "expanded": "Laevolancis plicata", "genus_ambiguous": false},
+        {"as_written": "Moyeria cabottii", "expanded": "Moyeria cabottii", "genus_ambiguous": false},
+        {"as_written": "Pseudodyadospora petasus", "expanded": "Pseudodyadospora petasus", "genus_ambiguous": false},
+        {"as_written": "Rimosotetras problematica", "expanded": "Rimosotetras problematica", "genus_ambiguous": false},
+        {"as_written": "Tetrahedraletes medinensis", "expanded": "Tetrahedraletes medinensis", "genus_ambiguous": false}
+      ],
+      "references": ["Wellman & Richardson 1993"],
+      "source_line": 442
+    },
+    {
+      "series_as_given": "Wenlock",
+      "region_as_given": "Avalonia",
+      "country": "Ireland",
+      "locality": "",
+      "questionable_affinity": false,
+      "taxa": [
+        {"as_written": "Ambitisporites avitus", "expanded": "Ambitisporites avitus", "genus_ambiguous": false},
+        {"as_written": "A. dilutus", "expanded": "Ambitisporites dilutus", "genus_ambiguous": false},
+        {"as_written": "Archaeozonotriletes chulus nanus", "expanded": "Archaeozonotriletes chulus nanus", "genus_ambiguous": false},
+        {"as_written": "Artemopyra brevicosta", "expanded": "Artemopyra brevicosta", "genus_ambiguous": false},
+        {"as_written": "Dyadospora murusattenuata", "expanded": "Dyadospora murusattenuata", "genus_ambiguous": false},
+        {"as_written": "Hispanaediscus verrucata", "expanded": "Hispanaediscus verrucata", "genus_ambiguous": false},
+        {"as_written": "Laevolancis divellomedia", "expanded": "Laevolancis divellomedia", "genus_ambiguous": false},
+        {"as_written": "L. plicata", "expanded": "Laevolancis plicata", "genus_ambiguous": false},
+        {"as_written": "Tetrahedraletes medinensis", "expanded": "Tetrahedraletes medinensis", "genus_ambiguous": false}
+      ],
+      "references": ["Aldridge et al. 1979a, b", "Emo & Smith 1978", "Wellman & Richardson 1993", "Williams et al. 1996"],
+      "source_line": 450
+    },
+    {
+      "series_as_given": "Wenlock",
+      "region_as_given": "Avalonia",
+      "country": "UK",
+      "locality": "",
+      "questionable_affinity": false,
+      "taxa": [
+        {"as_written": "Ambitisporites dilutus", "expanded": "Ambitisporites dilutus", "genus_ambiguous": false},
+        {"as_written": "Artemopyra brevicosta", "expanded": "Artemopyra brevicosta", "genus_ambiguous": false},
+        {"as_written": "Dyadospora murusattenuata", "expanded": "Dyadospora murusattenuata", "genus_ambiguous": false},
+        {"as_written": "D. murusdensa", "expanded": "Dyadospora murusdensa", "genus_ambiguous": false},
+        {"as_written": "Laevolancis divellomedia", "expanded": "Laevolancis divellomedia", "genus_ambiguous": false},
+        {"as_written": "Retusotriletes warringtonii", "expanded": "Retusotriletes warringtonii", "genus_ambiguous": false},
+        {"as_written": "Rimosotetras problematica", "expanded": "Rimosotetras problematica", "genus_ambiguous": false},
+        {"as_written": "Tetrahedraletes medinensis", "expanded": "Tetrahedraletes medinensis", "genus_ambiguous": false},
+        {"as_written": "T. medinensis medinensis", "expanded": "Tetrahedraletes medinensis medinensis", "genus_ambiguous": false}
+      ],
+      "references": ["Burgess & Richardson 1991", "Dorning 1983", "Richardson & Lister 1969", "Wellman & Richardson 1993"],
+      "source_line": 458
+    },
+    {
+      "series_as_given": "Wenlock",
+      "region_as_given": "Avalonia",
+      "country": "UK",
+      "locality": "",
+      "questionable_affinity": false,
+      "taxa": [
+        {"as_written": "Archaeozonotriletes chulus nanus", "expanded": "Archaeozonotriletes chulus nanus", "genus_ambiguous": false}
+      ],
+      "references": ["Aldridge et al. 1979a, b"],
+      "source_line": 466
+    },
+    {
+      "series_as_given": "Wenlock",
+      "region_as_given": "Peri-Gondwana (Armorica)",
+      "country": "France",
+      "locality": "",
+      "questionable_affinity": false,
+      "taxa": [
+        {"as_written": "Ambitisporites avitus", "expanded": "Ambitisporites avitus", "genus_ambiguous": false}
+      ],
+      "references": ["Deunff & Chateauneuf 1976"],
+      "source_line": 468
+    },
+    {
+      "series_as_given": "Wenlock",
+      "region_as_given": "Peri-Gondwana (Iberia)",
+      "country": "Spain",
+      "locality": "",
+      "questionable_affinity": false,
+      "taxa": [
+        {"as_written": "Ambitisporites avitus", "expanded": "Ambitisporites avitus", "genus_ambiguous": false},
+        {"as_written": "A. dilutus", "expanded": "Ambitisporites dilutus", "genus_ambiguous": false},
+        {"as_written": "Archaeozonotriletes chulus", "expanded": "Archaeozonotriletes chulus", "genus_ambiguous": false},
+        {"as_written": "Archaicusporites asturicus", "expanded": "Archaicusporites asturicus", "genus_ambiguous": false},
+        {"as_written": "Convolutispora sanpetrensis", "expanded": "Convolutispora sanpetrensis", "genus_ambiguous": false},
+        {"as_written": "Laevolancis divellomedium", "expanded": "Laevolancis divellomedium", "genus_ambiguous": false},
+        {"as_written": "Quadrisporites granulatus", "expanded": "Quadrisporites granulatus", "genus_ambiguous": false},
+        {"as_written": "Q. variabilis", "expanded": "Quadrisporites variabilis", "genus_ambiguous": false},
+        {"as_written": "Retusotriletes abundo", "expanded": "Retusotriletes abundo", "genus_ambiguous": false},
+        {"as_written": "R. minor", "expanded": "Retusotriletes minor", "genus_ambiguous": false},
+        {"as_written": "R. warringtonii", "expanded": "Retusotriletes warringtonii", "genus_ambiguous": false},
+        {"as_written": "Scylaspora vetusta", "expanded": "Scylaspora vetusta", "genus_ambiguous": false},
+        {"as_written": "Synorisporites verrucatus", "expanded": "Synorisporites verrucatus", "genus_ambiguous": false}
+      ],
+      "references": ["Richardson et al. 2001", "Rodríguez 1978a–c, 1983"],
+      "source_line": 470
+    },
+    {
+      "series_as_given": "Wenlock",
+      "region_as_given": "SW Gondwana",
+      "country": "Saudi Arabia",
+      "locality": "",
+      "questionable_affinity": false,
+      "taxa": [
+        {"as_written": "Ambitisporites avitus", "expanded": "Ambitisporites avitus", "genus_ambiguous": false},
+        {"as_written": "Dyadospora murusdensa", "expanded": "Dyadospora murusdensa", "genus_ambiguous": false},
+        {"as_written": "Emphanisporites neglectus", "expanded": "Emphanisporites neglectus", "genus_ambiguous": false},
+        {"as_written": "Laevolancis divellomedium", "expanded": "Laevolancis divellomedium", "genus_ambiguous": false},
+        {"as_written": "Quadrisporites variabilis", "expanded": "Quadrisporites variabilis", "genus_ambiguous": false},
+        {"as_written": "Scylaspora chartulata", "expanded": "Scylaspora chartulata", "genus_ambiguous": false},
+        {"as_written": "Synorisporites verrucatus", "expanded": "Synorisporites verrucatus", "genus_ambiguous": false},
+        {"as_written": "Tetrahedraletes medinensis", "expanded": "Tetrahedraletes medinensis", "genus_ambiguous": false}
+      ],
+      "references": ["Rubinstein & Steemans 2002", "Steemans 1995"],
+      "source_line": 479
+    },
+    {
+      "series_as_given": "Wenlock",
+      "region_as_given": "Southern Gondwana",
+      "country": "Libya",
+      "locality": "",
+      "questionable_affinity": false,
+      "taxa": [
+        {"as_written": "Ambitisporites avitus", "expanded": "Ambitisporites avitus", "genus_ambiguous": false},
+        {"as_written": "A. dilutus", "expanded": "Ambitisporites dilutus", "genus_ambiguous": false},
+        {"as_written": "A. tripapillatus", "expanded": "Ambitisporites tripapillatus", "genus_ambiguous": false},
+        {"as_written": "Apiculiretusispora spicula", "expanded": "Apiculiretusispora spicula", "genus_ambiguous": false},
+        {"as_written": "A. synorea", "expanded": "Apiculiretusispora synorea", "genus_ambiguous": false},
+        {"as_written": "Archaeozonotriletes chulus chulus", "expanded": "Archaeozonotriletes chulus chulus", "genus_ambiguous": false},
+        {"as_written": "A. chulus nanus", "expanded": "Archaeozonotriletes chulus nanus", "genus_ambiguous": false},
+        {"as_written": "Artemopyra brevicosta", "expanded": "Artemopyra brevicosta", "genus_ambiguous": false},
+        {"as_written": "A. urubuense", "expanded": "Artemopyra urubuense", "genus_ambiguous": false},
+        {"as_written": "Coronaspora subornata", "expanded": "Coronaspora subornata", "genus_ambiguous": false},
+        {"as_written": "Dyadospora murusattenuata", "expanded": "Dyadospora murusattenuata", "genus_ambiguous": false},
+        {"as_written": "Emphanisporites neglectus", "expanded": "Emphanisporites neglectus", "genus_ambiguous": false},
+        {"as_written": "E. protoannulatus", "expanded": "Emphanisporites protoannulatus", "genus_ambiguous": false},
+        {"as_written": "E. protophanus", "expanded": "Emphanisporites protophanus", "genus_ambiguous": false},
+        {"as_written": "E. rotatus", "expanded": "Emphanisporites rotatus", "genus_ambiguous": false},
+        {"as_written": "E. splendens", "expanded": "Emphanisporites splendens", "genus_ambiguous": false},
+        {"as_written": "Hispanaediscus verrucatus", "expanded": "Hispanaediscus verrucatus", "genus_ambiguous": false},
+        {"as_written": "Laevolancis divellomedium", "expanded": "Laevolancis divellomedium", "genus_ambiguous": false},
+        {"as_written": "Quadrisporites variabilis", "expanded": "Quadrisporites variabilis", "genus_ambiguous": false},
+        {"as_written": "Retusotriletes abundo", "expanded": "Retusotriletes abundo", "genus_ambiguous": false},
+        {"as_written": "R. delicatus", "expanded": "Retusotriletes delicatus", "genus_ambiguous": false},
+        {"as_written": "R. dubius", "expanded": "Retusotriletes dubius", "genus_ambiguous": false},
+        {"as_written": "R. frivolus", "expanded": "Retusotriletes frivolus", "genus_ambiguous": false},
+        {"as_written": "R. goensis", "expanded": "Retusotriletes goensis", "genus_ambiguous": false},
+        {"as_written": "R. minor", "expanded": "Retusotriletes minor", "genus_ambiguous": false},
+        {"as_written": "R. warringtonii", "expanded": "Retusotriletes warringtonii", "genus_ambiguous": false},
+        {"as_written": "Scylaspora chartulata", "expanded": "Scylaspora chartulata", "genus_ambiguous": false},
+        {"as_written": "S. distincta", "expanded": "Scylaspora distincta", "genus_ambiguous": false},
+        {"as_written": "S. vetusta", "expanded": "Scylaspora vetusta", "genus_ambiguous": false},
+        {"as_written": "Synorisporites verrucatus", "expanded": "Synorisporites verrucatus", "genus_ambiguous": false},
+        {"as_written": "Tetrahedraletes medinensis", "expanded": "Tetrahedraletes medinensis", "genus_ambiguous": false},
+        {"as_written": "Tetraletes granulatus", "expanded": "Tetraletes granulatus", "genus_ambiguous": false}
+      ],
+      "references": ["Beck & Strother 2008", "Burgess & Richardson 1991, 1995", "Kermandji 2007", "Richardson & Ioannides 1973", "Richardson et al. 2001", "Rodríguez 1983", "Rubinstein & Steemans 2002", "Steemans et al. 1996", "Steemans et al. 2008", "Tekbali & Wood 1991", "Wellman 1993", "Wellman & Richardson 1993"],
+      "source_line": 487
+    },
+    {
+      "series_as_given": "Wenlock (Sheinwoodian)",
+      "region_as_given": "Laurentia",
+      "country": "USA",
+      "locality": "",
+      "questionable_affinity": false,
+      "taxa": [
+        {"as_written": "Abditusdyadus laevigatus", "expanded": "Abditusdyadus laevigatus", "genus_ambiguous": false},
+        {"as_written": "Ambitisporites avitus", "expanded": "Ambitisporites avitus", "genus_ambiguous": false},
+        {"as_written": "Dyadospora murusattenuata", "expanded": "Dyadospora murusattenuata", "genus_ambiguous": false},
+        {"as_written": "Laevolancis divellomedia", "expanded": "Laevolancis divellomedia", "genus_ambiguous": false},
+        {"as_written": "Tetrahedraletes medinensis", "expanded": "Tetrahedraletes medinensis", "genus_ambiguous": false},
+        {"as_written": "Velatitetras rugosa", "expanded": "Velatitetras rugosa", "genus_ambiguous": false}
+      ],
+      "references": ["Beck & Strother 2008"],
+      "source_line": 510
+    },
+    {
+      "series_as_given": "Wenlock (Sheinwoodian)",
+      "region_as_given": "Laurentia",
+      "country": "UK",
+      "locality": "Scotland",
+      "questionable_affinity": false,
+      "taxa": [
+        {"as_written": "Ambitisporites avitus", "expanded": "Ambitisporites avitus", "genus_ambiguous": false},
+        {"as_written": "A. dilutus", "expanded": "Ambitisporites dilutus", "genus_ambiguous": false},
+        {"as_written": "Cheilotetras caledonica", "expanded": "Cheilotetras caledonica", "genus_ambiguous": false},
+        {"as_written": "Laevolancis divellomedia", "expanded": "Laevolancis divellomedia", "genus_ambiguous": false},
+        {"as_written": "Pseudodyadospora petasus", "expanded": "Pseudodyadospora petasus", "genus_ambiguous": false},
+        {"as_written": "Rimosotetras problematica", "expanded": "Rimosotetras problematica", "genus_ambiguous": false},
+        {"as_written": "Tetrahedraletes medinensis", "expanded": "Tetrahedraletes medinensis", "genus_ambiguous": false}
+      ],
+      "references": ["Wellman 1993"],
+      "source_line": 516
+    },
+    {
+      "series_as_given": "Wenlock (Sheinwoodian)",
+      "region_as_given": "Baltica",
+      "country": "Norway",
+      "locality": "",
+      "questionable_affinity": false,
+      "taxa": [
+        {"as_written": "Ambitisporites avitus", "expanded": "Ambitisporites avitus", "genus_ambiguous": false},
+        {"as_written": "A. dilutus", "expanded": "Ambitisporites dilutus", "genus_ambiguous": false},
+        {"as_written": "Quadrisporites variabilis", "expanded": "Quadrisporites variabilis", "genus_ambiguous": false},
+        {"as_written": "Tetrahedraletes medinensis", "expanded": "Tetrahedraletes medinensis", "genus_ambiguous": false},
+        {"as_written": "Synorisporites libycus", "expanded": "Synorisporites libycus", "genus_ambiguous": false}
+      ],
+      "references": ["Smelror 1987, 1990", "Steemans et al. 1996", "Wellman & Richardson 1993"],
+      "source_line": 521
+    },
+    {
+      "series_as_given": "Wenlock (Sheinwoodian)",
+      "region_as_given": "Baltica",
+      "country": "Sweden",
+      "locality": "",
+      "questionable_affinity": false,
+      "taxa": [
+        {"as_written": "Ambitisporites dilutus", "expanded": "Ambitisporites dilutus", "genus_ambiguous": false},
+        {"as_written": "Synorisporites libycus", "expanded": "Synorisporites libycus", "genus_ambiguous": false}
+      ],
+      "references": ["Hagström 1997"],
+      "source_line": 527
+    },
+    {
+      "series_as_given": "Wenlock (Sheinwoodian)",
+      "region_as_given": "Avalonia",
+      "country": "Canada",
+      "locality": "Nova Scotia",
+      "questionable_affinity": false,
+      "taxa": [
+        {"as_written": "Ambitisporites avitus", "expanded": "Ambitisporites avitus", "genus_ambiguous": false},
+        {"as_written": "A. dilutus", "expanded": "Ambitisporites dilutus", "genus_ambiguous": false},
+        {"as_written": "Laevolancis divellomedia", "expanded": "Laevolancis divellomedia", "genus_ambiguous": false},
+        {"as_written": "L. plicata", "expanded": "Laevolancis plicata", "genus_ambiguous": false},
+        {"as_written": "Tetrahedraletes medinensis", "expanded": "Tetrahedraletes medinensis", "genus_ambiguous": false}
+      ],
+      "references": ["Beck & Strother 2001"],
+      "source_line": 529
+    },
+    {
+      "series_as_given": "Wenlock (Sheinwoodian)",
+      "region_as_given": "Avalonia",
+      "country": "Ireland",
+      "locality": "",
+      "questionable_affinity": false,
+      "taxa": [
+        {"as_written": "Tetrahedraletes medinensis", "expanded": "Tetrahedraletes medinensis", "genus_ambiguous": false}
+      ],
+      "references": ["Maziane-Serraj et al. 2000", "Smith 1975", "Strother 1991"],
+      "source_line": 533
+    },
+    {
+      "series_as_given": "Wenlock (Sheinwoodian)",
+      "region_as_given": "Avalonia",
+      "country": "UK",
+      "locality": "",
+      "questionable_affinity": false,
+      "taxa": [
+        {"as_written": "Ambitisporites avitus", "expanded": "Ambitisporites avitus", "genus_ambiguous": false},
+        {"as_written": "A. dilutus", "expanded": "Ambitisporites dilutus", "genus_ambiguous": false},
+        {"as_written": "Archaeozonotriletes chulus chulus", "expanded": "Archaeozonotriletes chulus chulus", "genus_ambiguous": false},
+        {"as_written": "A. chulus nanus", "expanded": "Archaeozonotriletes chulus nanus", "genus_ambiguous": false},
+        {"as_written": "Dyadospora murusattenuata", "expanded": "Dyadospora murusattenuata", "genus_ambiguous": false},
+        {"as_written": "D. murusdensa", "expanded": "Dyadospora murusdensa", "genus_ambiguous": false},
+        {"as_written": "Laevolancis divellomedium", "expanded": "Laevolancis divellomedium", "genus_ambiguous": false},
+        {"as_written": "L. plicata", "expanded": "Laevolancis plicata", "genus_ambiguous": false},
+        {"as_written": "Tetrahedraletes medinensis", "expanded": "Tetrahedraletes medinensis", "genus_ambiguous": false}
+      ],
+      "references": ["Burgess & Richardson 1991, 1995"],
+      "source_line": 537
+    },
+    {
+      "series_as_given": "Wenlock (Sheinwoodian)",
+      "region_as_given": "Western Gondwana",
+      "country": "Iraq",
+      "locality": "",
+      "questionable_affinity": false,
+      "taxa": [
+        {"as_written": "Ambitisporites avitus", "expanded": "Ambitisporites avitus", "genus_ambiguous": false},
+        {"as_written": "A. dilutus", "expanded": "Ambitisporites dilutus", "genus_ambiguous": false},
+        {"as_written": "Archaeozonotriletes chulus", "expanded": "Archaeozonotriletes chulus", "genus_ambiguous": false},
+        {"as_written": "Retusotriletes warringtonii", "expanded": "Retusotriletes warringtonii", "genus_ambiguous": false}
+      ],
+      "references": ["Al-Ameri et al. 1991"],
+      "source_line": 543
+    },
+    {
+      "series_as_given": "Wenlock (Homerian)",
+      "region_as_given": "Laurentia",
+      "country": "UK",
+      "locality": "Scotland",
+      "questionable_affinity": false,
+      "taxa": [
+        {"as_written": "Ambitisporites avitus", "expanded": "Ambitisporites avitus", "genus_ambiguous": false},
+        {"as_written": "A. dilutus", "expanded": "Ambitisporites dilutus", "genus_ambiguous": false},
+        {"as_written": "Archaeozonotriletes chulus", "expanded": "Archaeozonotriletes chulus", "genus_ambiguous": false},
+        {"as_written": "Artemopyra brevicosta", "expanded": "Artemopyra brevicosta", "genus_ambiguous": false},
+        {"as_written": "Cheilotetras caledonica", "expanded": "Cheilotetras caledonica", "genus_ambiguous": false},
+        {"as_written": "Dyadospora murusattenuata", "expanded": "Dyadospora murusattenuata", "genus_ambiguous": false},
+        {"as_written": "D. murusdensa", "expanded": "Dyadospora murusdensa", "genus_ambiguous": false},
+        {"as_written": "Hispanaediscus lamontii", "expanded": "Hispanaediscus lamontii", "genus_ambiguous": false},
+        {"as_written": "H. wenlockensis", "expanded": "Hispanaediscus wenlockensis", "genus_ambiguous": false},
+        {"as_written": "Laevolancis divellomedium", "expanded": "Laevolancis divellomedium", "genus_ambiguous": false},
+        {"as_written": "L. plicata", "expanded": "Laevolancis plicata", "genus_ambiguous": false},
+        {"as_written": "Pachytetras rugosa", "expanded": "Pachytetras rugosa", "genus_ambiguous": false},
+        {"as_written": "Pseudodyadospora petasus", "expanded": "Pseudodyadospora petasus", "genus_ambiguous": false},
+        {"as_written": "Retusotriletes maculatus", "expanded": "Retusotriletes maculatus", "genus_ambiguous": false},
+        {"as_written": "Tetrahedraletes medinensis", "expanded": "Tetrahedraletes medinensis", "genus_ambiguous": false}
+      ],
+      "references": ["Burgess & Richardson 1995", "Marshall 1991", "Richardson 1996", "Steemans et al. 2000", "Wellman 1993"],
+      "source_line": 548
+    },
+    {
+      "series_as_given": "Wenlock (Homerian)",
+      "region_as_given": "Baltica",
+      "country": "Sweden",
+      "locality": "",
+      "questionable_affinity": false,
+      "taxa": [
+        {"as_written": "Ambitisporites dilutus", "expanded": "Ambitisporites dilutus", "genus_ambiguous": false},
+        {"as_written": "Cymbohilates variabilis", "expanded": "Cymbohilates variabilis", "genus_ambiguous": false},
+        {"as_written": "Laevolancis divellomedia", "expanded": "Laevolancis divellomedia", "genus_ambiguous": false},
+        {"as_written": "Tetrahedraletes medinensis", "expanded": "Tetrahedraletes medinensis", "genus_ambiguous": false}
+      ],
+      "references": ["Hagström 1997"],
+      "source_line": 560
+    },
+    {
+      "series_as_given": "Wenlock (Homerian)",
+      "region_as_given": "Avalonia",
+      "country": "Canada",
+      "locality": "Nova Scotia",
+      "questionable_affinity": false,
+      "taxa": [
+        {"as_written": "Ambitisporites avitus", "expanded": "Ambitisporites avitus", "genus_ambiguous": false},
+        {"as_written": "A. dilutus", "expanded": "Ambitisporites dilutus", "genus_ambiguous": false},
+        {"as_written": "Chelinospora textilis", "expanded": "Chelinospora textilis", "genus_ambiguous": false},
+        {"as_written": "Hispanaediscus verrucatus", "expanded": "Hispanaediscus verrucatus", "genus_ambiguous": false},
+        {"as_written": "Insolisporites bassettii", "expanded": "Insolisporites bassettii", "genus_ambiguous": false},
+        {"as_written": "Laevolancis divellomedia", "expanded": "Laevolancis divellomedia", "genus_ambiguous": false},
+        {"as_written": "L. plicata", "expanded": "Laevolancis plicata", "genus_ambiguous": false},
+        {"as_written": "Quadrisporites variabilis", "expanded": "Quadrisporites variabilis", "genus_ambiguous": false},
+        {"as_written": "Tetrahedraletes medinensis", "expanded": "Tetrahedraletes medinensis", "genus_ambiguous": false},
+        {"as_written": "Vermiverruspora rumneyi", "expanded": "Vermiverruspora rumneyi", "genus_ambiguous": false}
+      ],
+      "references": ["Beck & Strother 2001"],
+      "source_line": 563
+    },
+    {
+      "series_as_given": "Wenlock (Homerian)",
+      "region_as_given": "Avalonia",
+      "country": "Ireland",
+      "locality": "",
+      "questionable_affinity": false,
+      "taxa": [
+        {"as_written": "Archaeozonotriletes chulus nanus", "expanded": "Archaeozonotriletes chulus nanus", "genus_ambiguous": false}
+      ],
+      "references": ["Smith 1979"],
+      "source_line": 571
+    },
+    {
+      "series_as_given": "Wenlock (Homerian)",
+      "region_as_given": "Avalonia",
+      "country": "UK",
+      "locality": "",
+      "questionable_affinity": false,
+      "taxa": [
+        {"as_written": "Ambitisporites avitus", "expanded": "Ambitisporites avitus", "genus_ambiguous": false},
+        {"as_written": "A. dilutus", "expanded": "Ambitisporites dilutus", "genus_ambiguous": false},
+        {"as_written": "Archaeozonotriletes chulus chulus", "expanded": "Archaeozonotriletes chulus chulus", "genus_ambiguous": false},
+        {"as_written": "A. chulus nanus", "expanded": "Archaeozonotriletes chulus nanus", "genus_ambiguous": false},
+        {"as_written": "Artemopyra brevicosta", "expanded": "Artemopyra brevicosta", "genus_ambiguous": false},
+        {"as_written": "A. radiata", "expanded": "Artemopyra radiata", "genus_ambiguous": false},
+        {"as_written": "A. rugaticosta", "expanded": "Artemopyra rugaticosta", "genus_ambiguous": false},
+        {"as_written": "A. temericosta", "expanded": "Artemopyra temericosta", "genus_ambiguous": false},
+        {"as_written": "Cheilotetras caledonica", "expanded": "Cheilotetras caledonica", "genus_ambiguous": false},
+        {"as_written": "Chelinospora vermoluta", "expanded": "Chelinospora vermoluta", "genus_ambiguous": false},
+        {"as_written": "Concentricosisporites saggitarius", "expanded": "Concentricosisporites saggitarius", "genus_ambiguous": false},
+        {"as_written": "Confossuspora reniforma", "expanded": "Confossuspora reniforma", "genus_ambiguous": false},
+        {"as_written": "Dyadospora murusattenuata", "expanded": "Dyadospora murusattenuata", "genus_ambiguous": false},
+        {"as_written": "D. murusdensa", "expanded": "Dyadospora murusdensa", "genus_ambiguous": false},
+        {"as_written": "Emphanisporites protophanus", "expanded": "Emphanisporites protophanus", "genus_ambiguous": false},
+        {"as_written": "Hispanaediscus lamontii", "expanded": "Hispanaediscus lamontii", "genus_ambiguous": false},
+        {"as_written": "H. rugulatus", "expanded": "Hispanaediscus rugulatus", "genus_ambiguous": false},
+        {"as_written": "H. verrucatus", "expanded": "Hispanaediscus verrucatus", "genus_ambiguous": false},
+        {"as_written": "H. wenlockensis", "expanded": "Hispanaediscus wenlockensis", "genus_ambiguous": false},
+        {"as_written": "Insolisporites anchistinus", "expanded": "Insolisporites anchistinus", "genus_ambiguous": false},
+        {"as_written": "I. bassettii", "expanded": "Insolisporites bassettii", "genus_ambiguous": false},
+        {"as_written": "Laevolancis divellomedia", "expanded": "Laevolancis divellomedia", "genus_ambiguous": false},
+        {"as_written": "L. plicata", "expanded": "Laevolancis plicata", "genus_ambiguous": false},
+        {"as_written": "Pachytetras rugosa", "expanded": "Pachytetras rugosa", "genus_ambiguous": false},
+        {"as_written": "Scylaspora chartulata", "expanded": "Scylaspora chartulata", "genus_ambiguous": false},
+        {"as_written": "S. downiei", "expanded": "Scylaspora downiei", "genus_ambiguous": false},
+        {"as_written": "S. scipta", "expanded": "Scylaspora scipta", "genus_ambiguous": false},
+        {"as_written": "Tetrahedraletes medinensis", "expanded": "Tetrahedraletes medinensis", "genus_ambiguous": false},
+        {"as_written": "T. medinensis medinensis", "expanded": "Tetrahedraletes medinensis medinensis", "genus_ambiguous": false},
+        {"as_written": "Velatitetras cristata", "expanded": "Velatitetras cristata", "genus_ambiguous": false},
+        {"as_written": "Vermiverruspora rumneyi", "expanded": "Vermiverruspora rumneyi", "genus_ambiguous": false}
+      ],
+      "references": ["Beck & Strother 2001, 2008", "Burgess & Richardson 1991, 1995", "Dufka 1995", "Richardson & Lister 1969", "Rubinstein & Steemans 2002", "Steemans et al. 2000", "Wellman & Richardson 1993"],
+      "source_line": 573
+    },
+    {
+      "series_as_given": "Wenlock (Homerian)",
+      "region_as_given": "Peri-Gondwana (Perunica)",
+      "country": "Czech Republic",
+      "locality": "",
+      "questionable_affinity": false,
+      "taxa": [
+        {"as_written": "Ambitisporites avitus", "expanded": "Ambitisporites avitus", "genus_ambiguous": false},
+        {"as_written": "A. dilutus", "expanded": "Ambitisporites dilutus", "genus_ambiguous": false},
+        {"as_written": "Archaeozonotriletes chulus nanus", "expanded": "Archaeozonotriletes chulus nanus", "genus_ambiguous": false},
+        {"as_written": "Artemopyra brevicosta", "expanded": "Artemopyra brevicosta", "genus_ambiguous": false},
+        {"as_written": "A. radiata", "expanded": "Artemopyra radiata", "genus_ambiguous": false},
+        {"as_written": "A. rugaticosta", "expanded": "Artemopyra rugaticosta", "genus_ambiguous": false},
+        {"as_written": "Confossuspora reniforma", "expanded": "Confossuspora reniforma", "genus_ambiguous": false},
+        {"as_written": "Dyadospora murusattenuata", "expanded": "Dyadospora murusattenuata", "genus_ambiguous": false},
+        {"as_written": "Emphanisporites protophanus", "expanded": "Emphanisporites protophanus", "genus_ambiguous": false},
+        {"as_written": "Hispanaediscus verrucatus", "expanded": "Hispanaediscus verrucatus", "genus_ambiguous": false},
+        {"as_written": "Laevolancis divellomedium", "expanded": "Laevolancis divellomedium", "genus_ambiguous": false},
+        {"as_written": "L. plicata", "expanded": "Laevolancis plicata", "genus_ambiguous": false},
+        {"as_written": "Rugosisporites kozlicus", "expanded": "Rugosisporites kozlicus", "genus_ambiguous": false},
+        {"as_written": "Scylaspora chartulata", "expanded": "Scylaspora chartulata", "genus_ambiguous": false},
+        {"as_written": "S. vetusta", "expanded": "Scylaspora vetusta", "genus_ambiguous": false},
+        {"as_written": "Synorisporites maculosus", "expanded": "Synorisporites maculosus", "genus_ambiguous": false},
+        {"as_written": "Tetrahedraletes medinensis", "expanded": "Tetrahedraletes medinensis", "genus_ambiguous": false}
+      ],
+      "references": ["Dufka 1995", "Richardson et al. 2001", "Rubinstein & Steemans 2002"],
+      "source_line": 593
+    },
+    {
+      "series_as_given": "Wenlock (Homerian)",
+      "region_as_given": "Western Gondwana",
+      "country": "Iraq",
+      "locality": "",
+      "questionable_affinity": false,
+      "taxa": [
+        {"as_written": "Ambitisporites avitus", "expanded": "Ambitisporites avitus", "genus_ambiguous": false},
+        {"as_written": "A. dilutus", "expanded": "Ambitisporites dilutus", "genus_ambiguous": false},
+        {"as_written": "Archaeozonotriletes chulus", "expanded": "Archaeozonotriletes chulus", "genus_ambiguous": false},
+        {"as_written": "Retusotriletes warringtonii", "expanded": "Retusotriletes warringtonii", "genus_ambiguous": false}
+      ],
+      "references": ["Al-Ameri et al. 1991"],
+      "source_line": 605
+    },
+    {
+      "series_as_given": "Wenlock (Homerian)",
+      "region_as_given": "SW Gondwana",
+      "country": "Saudi Arabia",
+      "locality": "",
+      "questionable_affinity": false,
+      "taxa": [
+        {"as_written": "Ambitisporites avitus", "expanded": "Ambitisporites avitus", "genus_ambiguous": false},
+        {"as_written": "A. dilutus", "expanded": "Ambitisporites dilutus", "genus_ambiguous": false},
+        {"as_written": "Archaeozonotriletes chulus", "expanded": "Archaeozonotriletes chulus", "genus_ambiguous": false},
+        {"as_written": "Artemopyra rugaticosta", "expanded": "Artemopyra rugaticosta", "genus_ambiguous": false},
+        {"as_written": "Dyadospora murusattenuata", "expanded": "Dyadospora murusattenuata", "genus_ambiguous": false},
+        {"as_written": "D. murusdensa", "expanded": "Dyadospora murusdensa", "genus_ambiguous": false},
+        {"as_written": "Hispanaediscus wenlockensis", "expanded": "Hispanaediscus wenlockensis", "genus_ambiguous": false},
+        {"as_written": "Imperfectotriletes patinatus", "expanded": "Imperfectotriletes patinatus", "genus_ambiguous": false},
+        {"as_written": "I. vavrdovae", "expanded": "Imperfectotriletes vavrdovae", "genus_ambiguous": false},
+        {"as_written": "Laevolancis divellomedia", "expanded": "Laevolancis divellomedia", "genus_ambiguous": false},
+        {"as_written": "L. plicata", "expanded": "Laevolancis plicata", "genus_ambiguous": false},
+        {"as_written": "Pseudodyadospora petasus", "expanded": "Pseudodyadospora petasus", "genus_ambiguous": false},
+        {"as_written": "Rimosotetras problemtica", "expanded": "Rimosotetras problemtica", "genus_ambiguous": false},
+        {"as_written": "Tetrahedraletes medinensis", "expanded": "Tetrahedraletes medinensis", "genus_ambiguous": false},
+        {"as_written": "Velatitetras rugosa", "expanded": "Velatitetras rugosa", "genus_ambiguous": false}
+      ],
+      "references": ["Wellman et al. 2000a, b"],
+      "source_line": 608
+    },
+    {
+      "series_as_given": "Wenlock (Homerian)",
+      "region_as_given": "Southern Gondwana",
+      "country": "Libya",
+      "locality": "",
+      "questionable_affinity": false,
+      "taxa": [
+        {"as_written": "Ambitisporites avitus", "expanded": "Ambitisporites avitus", "genus_ambiguous": false},
+        {"as_written": "Archaeozonotriletes chulus chulus", "expanded": "Archaeozonotriletes chulus chulus", "genus_ambiguous": false},
+        {"as_written": "Artemopyra brevicosta", "expanded": "Artemopyra brevicosta", "genus_ambiguous": false},
+        {"as_written": "Synorisporites libycus", "expanded": "Synorisporites libycus", "genus_ambiguous": false}
+      ],
+      "references": ["Richardson 1996"],
+      "source_line": 618
+    },
+    {
+      "series_as_given": "Wenlock (Homerian)",
+      "region_as_given": "Southern Gondwana",
+      "country": "Algeria",
+      "locality": "",
+      "questionable_affinity": false,
+      "taxa": [
+        {"as_written": "Ambitisporites avitus", "expanded": "Ambitisporites avitus", "genus_ambiguous": false},
+        {"as_written": "A. dilutus", "expanded": "Ambitisporites dilutus", "genus_ambiguous": false},
+        {"as_written": "Archaeozonotriletes chulus chulus", "expanded": "Archaeozonotriletes chulus chulus", "genus_ambiguous": false},
+        {"as_written": "A. chulus nanus", "expanded": "Archaeozonotriletes chulus nanus", "genus_ambiguous": false},
+        {"as_written": "Emphanisporites neglectus", "expanded": "Emphanisporites neglectus", "genus_ambiguous": false},
+        {"as_written": "E. protophanus", "expanded": "Emphanisporites protophanus", "genus_ambiguous": false},
+        {"as_written": "Laevolancis divellomedia", "expanded": "Laevolancis divellomedia", "genus_ambiguous": false},
+        {"as_written": "Retusotriletes abundo", "expanded": "Retusotriletes abundo", "genus_ambiguous": false},
+        {"as_written": "Scylaspora distincta", "expanded": "Scylaspora distincta", "genus_ambiguous": false},
+        {"as_written": "S. kozlica", "expanded": "Scylaspora kozlica", "genus_ambiguous": false},
+        {"as_written": "S. vetusta", "expanded": "Scylaspora vetusta", "genus_ambiguous": false}
+      ],
+      "references": ["Kermandji 2007"],
+      "source_line": 622
+    },
+    {
+      "series_as_given": "Wenlock (Homerian)",
+      "region_as_given": "Eastern Gondwana",
+      "country": "Argentina",
+      "locality": "",
+      "questionable_affinity": false,
+      "taxa": [
+        {"as_written": "Ambitisporites avitus", "expanded": "Ambitisporites avitus", "genus_ambiguous": false},
+        {"as_written": "A. dilustus", "expanded": "Ambitisporites dilustus", "genus_ambiguous": false},
+        {"as_written": "Emphanisporites rotates", "expanded": "Emphanisporites rotates", "genus_ambiguous": false}
+      ],
+      "references": ["Rubinstein & Brussa 1999"],
+      "source_line": 628
+    },
+    {
+      "series_as_given": "NOTE",
+      "region_as_given": "",
+      "country": "",
+      "locality": "There are 28 entries. Twenty-seven start with a spaced en dash; the Western Gondwana–Iraq entry at line 543 uses a hyphen without a preceding space.",
+      "questionable_affinity": false,
+      "taxa": [],
+      "references": [],
+      "source_line": 543
+    }
+  ]
+}
