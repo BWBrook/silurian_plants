@@ -1,0 +1,411 @@
+gbdb_sections_xlsx_row,derived_genus,sectionID,SectionName,Formation_name,Province,early_age,late_age,derived_flag,pbdb_counterpart_level,km_to_nearest_pbdb_china_collection_with_genus
+20076,Protolepidodendron,458,Zhusilenghaierhan,Zhusileng,Inner Mongolia,407.6,393.3,,none,
+20549,Dutoitia,469,Mangkelu,Wutubulake,Xinjiang,423,419.2,,none,
+20550,Sciadophyton,469,Mangkelu,Wutubulake,Xinjiang,423,419.2,,none,
+20551,Salopella,469,Mangkelu,Wutubulake,Xinjiang,423,419.2,,none,
+20552,Zosterophyllum,469,Mangkelu,Wutubulake,Xinjiang,423,419.2,,B_same_formation_name_and_genus,187
+20555,Crotalocephalus,469,Mangkelu,Wutubulake,Xinjiang,423,419.2,,none,
+20860,Hunanodendrum,479,Rongxi,Rongxi,Sichuan,438.5,433.4,genus_mostly_recorded_under_a_non_plant_GBDB_group,B_same_formation_name_and_genus,17
+21055,Zosterophyllum,484,Daliantang,Posongchong,Yunnan,410.8,407.6,,B_same_formation_name_and_genus,216
+21056,Hostimella,484,Daliantang,Posongchong,Yunnan,410.8,407.6,,none,
+21057,Dawsonites,484,Daliantang,Posongchong,Yunnan,410.8,407.6,,none,
+21058,Taeniocrada,484,Daliantang,Posongchong,Yunnan,410.8,407.6,,none,
+21060,Zosterophyllum,484,Daliantang,Posongchong,Yunnan,410.8,407.6,,B_same_formation_name_and_genus,216
+21211,Zosterophyllum,490,Gumu,Posongchong,Yunnan,410.8,407.6,,B_same_formation_name_and_genus,0
+21212,Zosterophyllum,490,Gumu,Posongchong,Yunnan,410.8,407.6,,B_same_formation_name_and_genus,0
+21213,Zosterophyllum,490,Gumu,Posongchong,Yunnan,410.8,407.6,,B_same_formation_name_and_genus,0
+21218,Zosterophyllum,490,Gumu,Posongchong,Yunnan,410.8,407.6,,B_same_formation_name_and_genus,0
+21219,Zosterophyllum,490,Gumu,Posongchong,Yunnan,410.8,407.6,,B_same_formation_name_and_genus,0
+21220,Zosterophyllum,490,Gumu,Posongchong,Yunnan,410.8,407.6,,B_same_formation_name_and_genus,0
+21221,Zosterophyllum,490,Gumu,Posongchong,Yunnan,410.8,407.6,,B_same_formation_name_and_genus,0
+23993,Brochotriletes,585,Xishan Village-Xujiachong,Xishancun,Yunnan,419.2,410.8,,none,
+23994,Apiculiretusispora,585,Xishan Village-Xujiachong,Xishancun,Yunnan,419.2,410.8,,none,
+23995,Emphanisporites,585,Xishan Village-Xujiachong,Xishancun,Yunnan,419.2,410.8,,none,
+24018,Ambitisporites,585,Xishan Village-Xujiachong,Xishancun,Yunnan,419.2,410.8,,none,
+24019,Archaeozonotriletes,585,Xishan Village-Xujiachong,Xishancun,Yunnan,419.2,410.8,,none,132
+24020,Retusotriletes,585,Xishan Village-Xujiachong,Xishancun,Yunnan,419.2,410.8,,none,373
+24021,Synorisporites,585,Xishan Village-Xujiachong,Xishancun,Yunnan,419.2,410.8,,none,
+24022,Streelispora,585,Xishan Village-Xujiachong,Xishancun,Yunnan,419.2,410.8,,none,
+24032,Emphanisporites,585,Xishan Village-Xujiachong,Xitun,Yunnan,419.2,410.8,,none,
+24033,Ambitisporites,585,Xishan Village-Xujiachong,Xitun,Yunnan,419.2,410.8,,none,
+24034,Archaeozonotriletes,585,Xishan Village-Xujiachong,Xitun,Yunnan,419.2,410.8,,none,132
+24035,Retusotriletes,585,Xishan Village-Xujiachong,Xitun,Yunnan,419.2,410.8,,none,373
+24036,Retusotriletes,585,Xishan Village-Xujiachong,Xitun,Yunnan,419.2,410.8,,none,373
+24037,Synorisporites,585,Xishan Village-Xujiachong,Xitun,Yunnan,419.2,410.8,,none,
+24038,Emphanisporites,585,Xishan Village-Xujiachong,Xitun,Yunnan,419.2,410.8,,none,
+24109,Lepidostrobus,586,Xichong,Haikou,Yunnan,387.7,382.7,genus_mostly_dated_younger_than_window_elsewhere_in_GBDB,none,
+24110,Protolepidodendron,586,Xichong,Haikou,Yunnan,387.7,382.7,,none,
+24112,Lepidodendropsis,586,Xichong,Haikou,Yunnan,387.7,382.7,,B_same_formation_name_and_genus,3
+24113,Dawsonites,586,Xichong,Haikou,Yunnan,387.7,382.7,,none,
+24114,Knorria,586,Xichong,Haikou,Yunnan,387.7,382.7,,none,
+24116,Barrandeina,586,Xichong,Haikou,Yunnan,387.7,382.7,,none,
+24117,Taeniocrada,586,Xichong,Haikou,Yunnan,387.7,382.7,,none,
+24118,Lepidodendropsis,586,Xichong,Haikou,Yunnan,387.7,382.7,,B_same_formation_name_and_genus,3
+24119,Knorria,586,Xichong,Haikou,Yunnan,387.7,382.7,,none,
+24120,Barrandeina,586,Xichong,Haikou,Yunnan,387.7,382.7,,none,
+24122,Taeniocrada,586,Xichong,Haikou,Yunnan,387.7,382.7,,none,
+24123,Prolepidodendron,586,Xichong,Haikou,Yunnan,387.7,382.7,,none,
+24125,Lepidodendropsis,586,Xichong,Haikou,Yunnan,387.7,382.7,,B_same_formation_name_and_genus,3
+24130,Lepidodendropsis,586,Xichong,Haikou,Yunnan,387.7,382.7,,B_same_formation_name_and_genus,3
+24131,Knorria,586,Xichong,Haikou,Yunnan,387.7,382.7,,none,
+24134,Protolepidodendron,586,Xichong,Haikou,Yunnan,387.7,382.7,,none,
+24136,Lepidodendropsis,586,Xichong,Haikou,Yunnan,387.7,382.7,,B_same_formation_name_and_genus,3
+24140,Knorria,586,Xichong,Haikou,Yunnan,387.7,382.7,,none,
+24143,Knorria,586,Xichong,Haikou,Yunnan,387.7,382.7,,none,
+24144,Knorria,586,Xichong,Haikou,Yunnan,387.7,382.7,,none,
+24150,Knorria,586,Xichong,Haikou,Yunnan,387.7,382.7,,none,
+24151,Lepidodendropsis,586,Xichong,Haikou,Yunnan,387.7,382.7,,B_same_formation_name_and_genus,3
+24152,Protolepidodendron,586,Xichong,Haikou,Yunnan,387.7,382.7,,none,
+24153,Barrandeina,586,Xichong,Haikou,Yunnan,387.7,382.7,,none,
+24154,Protopteridium,586,Xichong,Haikou,Yunnan,387.7,382.7,,none,
+24155,Knorria,586,Xichong,Haikou,Yunnan,387.7,382.7,,none,
+24156,Taeniocrada,586,Xichong,Haikou,Yunnan,387.7,382.7,,none,
+24158,Lepidodendropsis,586,Xichong,Haikou,Yunnan,387.7,382.7,,B_same_formation_name_and_genus,3
+24159,Knorria,586,Xichong,Haikou,Yunnan,387.7,382.7,,none,
+24160,Protolepidodendron,586,Xichong,Haikou,Yunnan,387.7,382.7,,none,
+49955,Phacelophyton,1972,Wangjiaba,Sanqushan,Jiangxi,453,445.2,,none,1132
+51302,Aneurospora,1990,Xiushuigou,Yuntaiguan,Hubei,387.7,382.7,,none,
+51303,Aneurosporites,1990,Xiushuigou,Yuntaiguan,Hubei,387.7,382.7,,none,
+51304,Geminospora,1990,Xiushuigou,Yuntaiguan,Hubei,387.7,382.7,,none,1008
+51305,Geminospora,1990,Xiushuigou,Yuntaiguan,Hubei,387.7,382.7,,none,1008
+51306,Gymbosporites,1990,Xiushuigou,Yuntaiguan,Hubei,387.7,382.7,,none,
+51307,Leiotriletes,1990,Xiushuigou,Yuntaiguan,Hubei,387.7,382.7,,none,
+51308,Acanthotriletes,1990,Xiushuigou,Yuntaiguan,Hubei,387.7,382.7,,none,
+51309,Retusotriletes,1990,Xiushuigou,Yuntaiguan,Hubei,387.7,382.7,,none,611
+51310,Apiculiretusispora,1990,Xiushuigou,Yuntaiguan,Hubei,387.7,382.7,,none,
+76657,Protolepidodendron,2404,Danmianshan,Zhusileng,Neimenggu,407.6,393.3,,none,
+103826,Callixylon,2819,Bulongguo,Hongguleleng,Xinjiang,372.2,358.9,,none,
+103827,Callixylon,2819,Bulongguo,Hongguleleng,Xinjiang,372.2,358.9,,none,
+104877,Protolepidodendron,2832,Xichongshangshuanghe,Haikou,Yunnan,387.7,382.7,,none,
+121146,Hunanodendrum,3082,Longchihe,Rongxi,Hunan,438.5,433.4,genus_mostly_recorded_under_a_non_plant_GBDB_group,B_same_formation_name_and_genus,243
+121153,Hunanodendrum,3082,Longchihe,Majiaochong,Hunan,438.5,433.4,genus_mostly_recorded_under_a_non_plant_GBDB_group,B_same_formation_name_and_genus,243
+121194,Hunanodendrum,3082,Longchihe,Rongxi,Hunan,438.5,433.4,genus_mostly_recorded_under_a_non_plant_GBDB_group,B_same_formation_name_and_genus,243
+122073,Hunanodendrum,3091,Balixi,Majiaochong,Guizhou,438.5,433.4,genus_mostly_recorded_under_a_non_plant_GBDB_group,B_same_formation_name_and_genus,112
+123333,Hunanodendrum,3113,Rongxi,Rongxi,Sichuan,438.5,433.4,genus_mostly_recorded_under_a_non_plant_GBDB_group,B_same_formation_name_and_genus,14
+142410,Psilophylites,3510,Houershan,Danlin,Guizhou,409.1,391.9,,none,
+142411,Reticulatisporites,3510,Houershan,Danlin,Guizhou,409.1,391.9,,none,
+142412,Dictyotriletes,3510,Houershan,Danlin,Guizhou,409.1,391.9,,none,
+142413,Perforosporites,3510,Houershan,Danlin,Guizhou,409.1,391.9,,none,
+142414,Emphanisporites,3510,Houershan,Danlin,Guizhou,409.1,391.9,,none,
+142420,Archaeozonotriletes,3510,Houershan,Danlin,Guizhou,409.1,391.9,,none,504
+142421,Lycospora,3510,Houershan,Danlin,Guizhou,409.1,391.9,,none,
+142422,Verrucosisporites,3510,Houershan,Danlin,Guizhou,409.1,391.9,,none,
+142423,Retusotriletes,3510,Houershan,Danlin,Guizhou,409.1,391.9,,C_genus_in_pbdb_collection_within_25km,4
+142424,Punctatisporites,3510,Houershan,Danlin,Guizhou,409.1,391.9,,none,
+142425,Taeniorada,3510,Houershan,Danlin,Guizhou,409.1,391.9,,none,
+142426,Drepanophycus,3510,Houershan,Danlin,Guizhou,409.1,391.9,,none,354
+142427,Zosterophyllum,3510,Houershan,Danlin,Guizhou,409.1,391.9,,none,306
+142428,Zosterophyllum,3510,Houershan,Danlin,Guizhou,409.1,391.9,,none,306
+152682,Lepidodendropsis,3733,Shanmenshuiku,Yuntaiguan,Hunan,387.7,382.7,,none,887
+152683,Psilophytites,3733,Shanmenshuiku,Yuntaiguan,Hunan,387.7,382.7,,none,
+152686,Protolepidodendron,3733,Shanmenshuiku,Yuntaiguan,Hunan,387.7,382.7,,none,
+152687,Barrandeina,3733,Shanmenshuiku,Yuntaiguan,Hunan,387.7,382.7,,none,
+152688,Protopteridium,3733,Shanmenshuiku,Yuntaiguan,Hunan,387.7,382.7,,none,
+160305,Lepidodendropsis,3982,Xichong,Haikou,Yunnan,387.7,382.7,,B_same_formation_name_and_genus,11
+160306,Taeniocrada,3982,Xichong,Haikou,Yunnan,387.7,382.7,,none,
+160312,Protolepidodendron,3982,Xichong,Haikou,Yunnan,387.7,382.7,,none,
+160743,Zosterophyllum,3994,Daliantang,Posongchong,Yunnan,410.8,407.6,,B_same_formation_name_and_genus,216
+161406,Hunanodendrum,4033,Rongxi,Hanchiatien,Chongqing,438.5,433.4,genus_mostly_recorded_under_a_non_plant_GBDB_group,C_genus_in_pbdb_collection_within_25km,5
+172570,Protopteridium,4393,Xiejingsizu,Yuntaiguan,Hubei,387.7,382.7,,none,
+196152,Psilophylites,4956,Houershan,Danlin,Guizhou,409.1,391.9,,none,
+196153,Reticulatisporites,4956,Houershan,Danlin,Guizhou,409.1,391.9,,none,
+196154,Dictyotriletes,4956,Houershan,Danlin,Guizhou,409.1,391.9,,none,
+196155,Perforosporites,4956,Houershan,Danlin,Guizhou,409.1,391.9,,none,
+196156,Emphanisporites,4956,Houershan,Danlin,Guizhou,409.1,391.9,,none,
+196162,Archaeozonotriletes,4956,Houershan,Danlin,Guizhou,409.1,391.9,,none,504
+196163,Lycospora,4956,Houershan,Danlin,Guizhou,409.1,391.9,,none,
+196164,Verrucosisporites,4956,Houershan,Danlin,Guizhou,409.1,391.9,,none,
+196165,Retusotriletes,4956,Houershan,Danlin,Guizhou,409.1,391.9,,C_genus_in_pbdb_collection_within_25km,4
+196166,Punctatisporites,4956,Houershan,Danlin,Guizhou,409.1,391.9,,none,
+196167,Taeniorada,4956,Houershan,Danlin,Guizhou,409.1,391.9,,none,
+196168,Drepanophycus,4956,Houershan,Danlin,Guizhou,409.1,391.9,,none,354
+196169,Zosterophyllum,4956,Houershan,Danlin,Guizhou,409.1,391.9,,none,306
+196170,Zosterophyllum,4956,Houershan,Danlin,Guizhou,409.1,391.9,,none,306
+221800,Leiotriletes,5314,Liujing,Nagaoling,Guangxi,419.2,410.8,,none,
+221801,Leiotriletes,5314,Liujing,Nagaoling,Guangxi,419.2,410.8,,none,
+221802,Acanthotriletes,5314,Liujing,Nagaoling,Guangxi,419.2,410.8,,none,
+221803,Acanthotriletes,5314,Liujing,Nagaoling,Guangxi,419.2,410.8,,none,
+221836,Retusotriletes,5314,Liujing,Nagaoling,Guangxi,419.2,410.8,,none,357
+221837,Retusotriletes,5314,Liujing,Nagaoling,Guangxi,419.2,410.8,,none,357
+221838,Retusotriletes,5314,Liujing,Nagaoling,Guangxi,419.2,410.8,,none,357
+221839,Calamospora,5314,Liujing,Nagaoling,Guangxi,419.2,410.8,,none,
+221840,Punctatisporites,5314,Liujing,Nagaoling,Guangxi,419.2,410.8,,none,
+221841,Apiculiretusispora,5314,Liujing,Nagaoling,Guangxi,419.2,410.8,,none,
+221842,Acanthotriletes,5314,Liujing,Nagaoling,Guangxi,419.2,410.8,,none,
+221843,Archaeozonotriletes,5314,Liujing,Nagaoling,Guangxi,419.2,410.8,,none,717
+221844,Hymenozonotriletes,5314,Liujing,Nagaoling,Guangxi,419.2,410.8,,none,176
+221845,Hymenozonotriletes,5314,Liujing,Nagaoling,Guangxi,419.2,410.8,,none,176
+221846,Laevigatosporites,5314,Liujing,Nagaoling,Guangxi,419.2,410.8,,none,357
+221850,Retusotriletes,5314,Liujing,Nagaoling,Guangxi,419.2,410.8,,none,357
+222333,Zosterophyllum,5318,Zhichang,Posongchong,Yunnan,410.8,407.6,,B_same_formation_name_and_genus,3
+222983,Hunanodendrum,5334,Dayong City,Rongxi,Hunan,438.5,433.4,genus_mostly_recorded_under_a_non_plant_GBDB_group,B_same_formation_name_and_genus,172
+222996,Lepidodendropsis,5335,Dawuwan,Qiziqiao,Hunan,387.7,382.7,,none,961
+236215,Retusotriletes,5718,Awati,Tataaiertage,Xinjiang,438.5,433.4,,none,3098
+236251,Ambitiporites,5718,Awati,Tataaiertage,Xinjiang,438.5,433.4,,none,
+236252,Dyadospora,5718,Awati,Tataaiertage,Xinjiang,438.5,433.4,,none,
+257773,Abies,6412,Bulong,Bulong,Xizang,443.4,433.4,seed_plant_or_pollen_group_label_but_GBDB_age_entirely_older_than_Famennian,none,
+257774,Picea,6412,Bulong,Bulong,Xizang,443.4,433.4,seed_plant_or_pollen_group_label_but_GBDB_age_entirely_older_than_Famennian,none,
+257775,Pinus,6412,Bulong,Bulong,Xizang,443.4,433.4,seed_plant_or_pollen_group_label_but_GBDB_age_entirely_older_than_Famennian;genus_mostly_dated_younger_than_window_elsewhere_in_GBDB,none,
+257776,Cedrus,6412,Bulong,Bulong,Xizang,443.4,433.4,seed_plant_or_pollen_group_label_but_GBDB_age_entirely_older_than_Famennian;genus_mostly_dated_younger_than_window_elsewhere_in_GBDB,none,
+257777,Tsuga,6412,Bulong,Bulong,Xizang,443.4,433.4,seed_plant_or_pollen_group_label_but_GBDB_age_entirely_older_than_Famennian,none,
+257778,Pinaceae,6412,Bulong,Bulong,Xizang,443.4,433.4,seed_plant_or_pollen_group_label_but_GBDB_age_entirely_older_than_Famennian;genus_mostly_dated_younger_than_window_elsewhere_in_GBDB,none,
+257779,Podocarpus,6412,Bulong,Bulong,Xizang,443.4,433.4,formation_entry_also_holds_seed_plant_or_pollen_labelled_records_dated_older_than_Famennian,none,
+257780,Cupressaceae,6412,Bulong,Bulong,Xizang,443.4,433.4,seed_plant_or_pollen_group_label_but_GBDB_age_entirely_older_than_Famennian,none,
+257781,Carya,6412,Bulong,Bulong,Xizang,443.4,433.4,seed_plant_or_pollen_group_label_but_GBDB_age_entirely_older_than_Famennian,none,
+257782,Carpinus,6412,Bulong,Bulong,Xizang,443.4,433.4,seed_plant_or_pollen_group_label_but_GBDB_age_entirely_older_than_Famennian,none,
+257783,Betula,6412,Bulong,Bulong,Xizang,443.4,433.4,seed_plant_or_pollen_group_label_but_GBDB_age_entirely_older_than_Famennian;genus_mostly_dated_younger_than_window_elsewhere_in_GBDB,none,
+257784,Ostrya,6412,Bulong,Bulong,Xizang,443.4,433.4,formation_entry_also_holds_seed_plant_or_pollen_labelled_records_dated_older_than_Famennian,none,
+257785,Quercus,6412,Bulong,Bulong,Xizang,443.4,433.4,seed_plant_or_pollen_group_label_but_GBDB_age_entirely_older_than_Famennian;genus_mostly_dated_younger_than_window_elsewhere_in_GBDB,none,
+257786,Ulmus,6412,Bulong,Bulong,Xizang,443.4,433.4,seed_plant_or_pollen_group_label_but_GBDB_age_entirely_older_than_Famennian;genus_mostly_dated_younger_than_window_elsewhere_in_GBDB,none,
+257787,Celtis,6412,Bulong,Bulong,Xizang,443.4,433.4,seed_plant_or_pollen_group_label_but_GBDB_age_entirely_older_than_Famennian,none,
+257788,Acer,6412,Bulong,Bulong,Xizang,443.4,433.4,seed_plant_or_pollen_group_label_but_GBDB_age_entirely_older_than_Famennian,none,
+257789,Tilia,6412,Bulong,Bulong,Xizang,443.4,433.4,seed_plant_or_pollen_group_label_but_GBDB_age_entirely_older_than_Famennian,none,
+257790,Plmae,6412,Bulong,Bulong,Xizang,443.4,433.4,formation_entry_also_holds_seed_plant_or_pollen_labelled_records_dated_older_than_Famennian,none,
+257791,Salina,6412,Bulong,Bulong,Xizang,443.4,433.4,formation_entry_also_holds_seed_plant_or_pollen_labelled_records_dated_older_than_Famennian,none,
+257792,Ephedra,6412,Bulong,Bulong,Xizang,443.4,433.4,formation_entry_also_holds_seed_plant_or_pollen_labelled_records_dated_older_than_Famennian,none,
+257793,Chenopodiaceae,6412,Bulong,Bulong,Xizang,443.4,433.4,seed_plant_or_pollen_group_label_but_GBDB_age_entirely_older_than_Famennian;genus_mostly_dated_younger_than_window_elsewhere_in_GBDB,none,
+257794,Artemisia,6412,Bulong,Bulong,Xizang,443.4,433.4,formation_entry_also_holds_seed_plant_or_pollen_labelled_records_dated_older_than_Famennian,none,
+257795,Liliaceae,6412,Bulong,Bulong,Xizang,443.4,433.4,formation_entry_also_holds_seed_plant_or_pollen_labelled_records_dated_older_than_Famennian,none,
+257796,Cyperaceae,6412,Bulong,Bulong,Xizang,443.4,433.4,formation_entry_also_holds_seed_plant_or_pollen_labelled_records_dated_older_than_Famennian,none,
+257797,Polypodium,6412,Bulong,Bulong,Xizang,443.4,433.4,formation_entry_also_holds_seed_plant_or_pollen_labelled_records_dated_older_than_Famennian,none,
+257798,Adantum,6412,Bulong,Bulong,Xizang,443.4,433.4,formation_entry_also_holds_seed_plant_or_pollen_labelled_records_dated_older_than_Famennian,none,
+257799,Pteris,6412,Bulong,Bulong,Xizang,443.4,433.4,formation_entry_also_holds_seed_plant_or_pollen_labelled_records_dated_older_than_Famennian,none,
+270238,Cycas,6822,Hekou,Xiayan,Gansu,466,460.9,formation_entry_also_holds_seed_plant_or_pollen_labelled_records_dated_older_than_Famennian,none,
+270239,Ginkgo,6822,Hekou,Xiayan,Gansu,466,460.9,seed_plant_or_pollen_group_label_but_GBDB_age_entirely_older_than_Famennian;genus_mostly_dated_younger_than_window_elsewhere_in_GBDB,none,
+270240,Picea,6822,Hekou,Xiayan,Gansu,466,460.9,seed_plant_or_pollen_group_label_but_GBDB_age_entirely_older_than_Famennian,none,
+270241,Brachyphyllumpollenites,6822,Hekou,Xiayan,Gansu,466,460.9,formation_entry_also_holds_seed_plant_or_pollen_labelled_records_dated_older_than_Famennian,none,
+278953,Salopella,7215,Mangkelu,Wutubulake,Xinjiang,423,419.2,,none,
+278954,Zosterophyllum,7215,Mangkelu,Wutubulake,Xinjiang,423,419.2,,B_same_formation_name_and_genus,2
+278961,Junggaria,7215,Mangkelu,Wutubulake,Xinjiang,423,419.2,,none,
+278962,Sciadophyton,7215,Mangkelu,Wutubulake,Xinjiang,423,419.2,,none,
+278966,Zosterophyllum,7215,Mangkelu,Wutubulake,Xinjiang,423,419.2,,B_same_formation_name_and_genus,2
+333516,Carpolithus,9617,Hongliugou,Xiayan,Inner Mongolia,466,460.9,genus_mostly_dated_younger_than_window_elsewhere_in_GBDB;formation_entry_also_holds_seed_plant_or_pollen_labelled_records_dated_older_than_Famennian,none,
+333517,Coniopteris,9617,Hongliugou,Xiayan,Inner Mongolia,466,460.9,seed_plant_or_pollen_group_label_but_GBDB_age_entirely_older_than_Famennian;genus_mostly_dated_younger_than_window_elsewhere_in_GBDB,none,
+333518,Coniopteris,9617,Hongliugou,Xiayan,Inner Mongolia,466,460.9,seed_plant_or_pollen_group_label_but_GBDB_age_entirely_older_than_Famennian;genus_mostly_dated_younger_than_window_elsewhere_in_GBDB,none,
+333519,Todites,9617,Hongliugou,Xiayan,Inner Mongolia,466,460.9,genus_mostly_dated_younger_than_window_elsewhere_in_GBDB;formation_entry_also_holds_seed_plant_or_pollen_labelled_records_dated_older_than_Famennian,none,
+333520,Cladophlebis,9617,Hongliugou,Xiayan,Inner Mongolia,466,460.9,genus_mostly_dated_younger_than_window_elsewhere_in_GBDB;formation_entry_also_holds_seed_plant_or_pollen_labelled_records_dated_older_than_Famennian,none,
+341660,Neocalamites,10035,Halunwusu,Zhongyan,Qinghai,478.6,466,genus_mostly_dated_younger_than_window_elsewhere_in_GBDB,none,
+341661,Danaeopsis,10035,Halunwusu,Zhongyan,Qinghai,478.6,466,genus_mostly_dated_younger_than_window_elsewhere_in_GBDB,none,
+341663,Neocalamites,10035,Halunwusu,Xiayan,Qinghai,466,460.9,genus_mostly_dated_younger_than_window_elsewhere_in_GBDB,none,
+342486,Neocalamites,10103,Halunwusu,Zhongyan,Qinghai,478.6,466,genus_mostly_dated_younger_than_window_elsewhere_in_GBDB,none,
+342487,Danaeopsis,10103,Halunwusu,Zhongyan,Qinghai,478.6,466,genus_mostly_dated_younger_than_window_elsewhere_in_GBDB,none,
+342489,Neocalamites,10103,Halunwusu,Xiayan,Qinghai,466,460.9,genus_mostly_dated_younger_than_window_elsewhere_in_GBDB,none,
+343260,Danaeopsis,10156,Waerga-Damulong,Zhongyan,Qinghai,478.6,466,genus_mostly_dated_younger_than_window_elsewhere_in_GBDB;formation_entry_also_holds_seed_plant_or_pollen_labelled_records_dated_older_than_Famennian,none,
+343261,Glossophyllum,10156,Waerga-Damulong,Zhongyan,Qinghai,478.6,466,seed_plant_or_pollen_group_label_but_GBDB_age_entirely_older_than_Famennian;genus_mostly_dated_younger_than_window_elsewhere_in_GBDB,none,
+343271,Neocalamites,10156,Waerga-Damulong,Zhongyan,Qinghai,478.6,466,genus_mostly_dated_younger_than_window_elsewhere_in_GBDB;formation_entry_also_holds_seed_plant_or_pollen_labelled_records_dated_older_than_Famennian,none,
+343275,Neocalamites,10156,Waerga-Damulong,Zhongyan,Qinghai,478.6,466,genus_mostly_dated_younger_than_window_elsewhere_in_GBDB;formation_entry_also_holds_seed_plant_or_pollen_labelled_records_dated_older_than_Famennian,none,
+343277,Danaeopsis,10156,Waerga-Damulong,Zhongyan,Qinghai,478.6,466,genus_mostly_dated_younger_than_window_elsewhere_in_GBDB;formation_entry_also_holds_seed_plant_or_pollen_labelled_records_dated_older_than_Famennian,none,
+343312,Equisetites,10159,Darige,Xiayan,Qinghai,466,460.9,genus_mostly_dated_younger_than_window_elsewhere_in_GBDB;formation_entry_also_holds_seed_plant_or_pollen_labelled_records_dated_older_than_Famennian,none,
+343313,Neocalamites,10159,Darige,Xiayan,Qinghai,466,460.9,genus_mostly_dated_younger_than_window_elsewhere_in_GBDB;formation_entry_also_holds_seed_plant_or_pollen_labelled_records_dated_older_than_Famennian,none,
+343314,Equisetites,10159,Darige,Xiayan,Qinghai,466,460.9,genus_mostly_dated_younger_than_window_elsewhere_in_GBDB;formation_entry_also_holds_seed_plant_or_pollen_labelled_records_dated_older_than_Famennian,none,
+343315,Thinnfeldia,10159,Darige,Xiayan,Qinghai,466,460.9,seed_plant_or_pollen_group_label_but_GBDB_age_entirely_older_than_Famennian;genus_mostly_dated_younger_than_window_elsewhere_in_GBDB,none,
+343316,Bernoullia,10159,Darige,Xiayan,Qinghai,466,460.9,genus_mostly_dated_younger_than_window_elsewhere_in_GBDB;formation_entry_also_holds_seed_plant_or_pollen_labelled_records_dated_older_than_Famennian,none,
+343317,Neocalamites,10159,Darige,Xiayan,Qinghai,466,460.9,genus_mostly_dated_younger_than_window_elsewhere_in_GBDB;formation_entry_also_holds_seed_plant_or_pollen_labelled_records_dated_older_than_Famennian,none,
+343318,Cladophlebis,10159,Darige,Xiayan,Qinghai,466,460.9,genus_mostly_dated_younger_than_window_elsewhere_in_GBDB;formation_entry_also_holds_seed_plant_or_pollen_labelled_records_dated_older_than_Famennian,none,
+343319,Ginkgoites,10159,Darige,Xiayan,Qinghai,466,460.9,seed_plant_or_pollen_group_label_but_GBDB_age_entirely_older_than_Famennian;genus_mostly_dated_younger_than_window_elsewhere_in_GBDB,none,
+343597,Hymenophyllumsporites,10173,Hekou,Xiayan,Gansu,466,460.9,formation_entry_also_holds_seed_plant_or_pollen_labelled_records_dated_older_than_Famennian,none,
+343598,Schizaea,10173,Hekou,Xiayan,Gansu,466,460.9,formation_entry_also_holds_seed_plant_or_pollen_labelled_records_dated_older_than_Famennian,none,
+343599,Lygodium,10173,Hekou,Xiayan,Gansu,466,460.9,formation_entry_also_holds_seed_plant_or_pollen_labelled_records_dated_older_than_Famennian,none,
+343601,Aneimia,10173,Hekou,Xiayan,Gansu,466,460.9,formation_entry_also_holds_seed_plant_or_pollen_labelled_records_dated_older_than_Famennian,none,
+343602,Cycas,10173,Hekou,Xiayan,Gansu,466,460.9,formation_entry_also_holds_seed_plant_or_pollen_labelled_records_dated_older_than_Famennian,none,
+343603,Picea,10173,Hekou,Xiayan,Gansu,466,460.9,seed_plant_or_pollen_group_label_but_GBDB_age_entirely_older_than_Famennian,none,
+343604,Bennettites,10173,Hekou,Xiayan,Gansu,466,460.9,genus_mostly_dated_younger_than_window_elsewhere_in_GBDB;formation_entry_also_holds_seed_plant_or_pollen_labelled_records_dated_older_than_Famennian,none,
+343605,Ginkgo,10173,Hekou,Xiayan,Gansu,466,460.9,seed_plant_or_pollen_group_label_but_GBDB_age_entirely_older_than_Famennian;genus_mostly_dated_younger_than_window_elsewhere_in_GBDB,none,
+343606,Brachyphyllumpollenites,10173,Hekou,Xiayan,Gansu,466,460.9,formation_entry_also_holds_seed_plant_or_pollen_labelled_records_dated_older_than_Famennian,none,
+343617,Cycas,10173,Hekou,Xiayan,Gansu,466,460.9,formation_entry_also_holds_seed_plant_or_pollen_labelled_records_dated_older_than_Famennian,none,
+343618,Brachyphyllumpollenites,10173,Hekou,Xiayan,Gansu,466,460.9,formation_entry_also_holds_seed_plant_or_pollen_labelled_records_dated_older_than_Famennian,none,
+343619,Ginkgo,10173,Hekou,Xiayan,Gansu,466,460.9,seed_plant_or_pollen_group_label_but_GBDB_age_entirely_older_than_Famennian;genus_mostly_dated_younger_than_window_elsewhere_in_GBDB,none,
+343620,Picea,10173,Hekou,Xiayan,Gansu,466,460.9,seed_plant_or_pollen_group_label_but_GBDB_age_entirely_older_than_Famennian,none,
+345243,Equisetites,10259,Dachashilang,Xiayan,Qinghai,466,460.9,genus_mostly_dated_younger_than_window_elsewhere_in_GBDB,none,
+345244,Cladophlebis,10259,Dachashilang,Xiayan,Qinghai,466,460.9,genus_mostly_dated_younger_than_window_elsewhere_in_GBDB,none,
+345245,Neocalamites,10259,Dachashilang,Xiayan,Qinghai,466,460.9,genus_mostly_dated_younger_than_window_elsewhere_in_GBDB,none,
+345257,Nilssonia,10259,Dachashilang,Zhongyan,Qinghai,478.6,466,seed_plant_or_pollen_group_label_but_GBDB_age_entirely_older_than_Famennian;genus_mostly_dated_younger_than_window_elsewhere_in_GBDB,none,
+345258,Neocalamites,10259,Dachashilang,Zhongyan,Qinghai,478.6,466,genus_mostly_dated_younger_than_window_elsewhere_in_GBDB;formation_entry_also_holds_seed_plant_or_pollen_labelled_records_dated_older_than_Famennian,none,
+345259,Anomozamites,10259,Dachashilang,Zhongyan,Qinghai,478.6,466,seed_plant_or_pollen_group_label_but_GBDB_age_entirely_older_than_Famennian;genus_mostly_dated_younger_than_window_elsewhere_in_GBDB,none,
+345260,Phoenicopsis,10259,Dachashilang,Zhongyan,Qinghai,478.6,466,seed_plant_or_pollen_group_label_but_GBDB_age_entirely_older_than_Famennian;genus_mostly_dated_younger_than_window_elsewhere_in_GBDB,none,
+345261,Podozamites,10259,Dachashilang,Zhongyan,Qinghai,478.6,466,seed_plant_or_pollen_group_label_but_GBDB_age_entirely_older_than_Famennian;genus_mostly_dated_younger_than_window_elsewhere_in_GBDB,none,
+345262,Stenorachis,10259,Dachashilang,Zhongyan,Qinghai,478.6,466,seed_plant_or_pollen_group_label_but_GBDB_age_entirely_older_than_Famennian;genus_mostly_dated_younger_than_window_elsewhere_in_GBDB,none,
+345263,Cladophlebis,10259,Dachashilang,Zhongyan,Qinghai,478.6,466,genus_mostly_dated_younger_than_window_elsewhere_in_GBDB;formation_entry_also_holds_seed_plant_or_pollen_labelled_records_dated_older_than_Famennian,none,
+345264,Cladophlebis,10259,Dachashilang,Zhongyan,Qinghai,478.6,466,genus_mostly_dated_younger_than_window_elsewhere_in_GBDB;formation_entry_also_holds_seed_plant_or_pollen_labelled_records_dated_older_than_Famennian,none,
+345265,Cladophlebis,10259,Dachashilang,Zhongyan,Qinghai,478.6,466,genus_mostly_dated_younger_than_window_elsewhere_in_GBDB;formation_entry_also_holds_seed_plant_or_pollen_labelled_records_dated_older_than_Famennian,none,
+345266,Cladophlebis,10259,Dachashilang,Zhongyan,Qinghai,478.6,466,genus_mostly_dated_younger_than_window_elsewhere_in_GBDB;formation_entry_also_holds_seed_plant_or_pollen_labelled_records_dated_older_than_Famennian,none,
+345267,Czekanowskia,10259,Dachashilang,Zhongyan,Qinghai,478.6,466,seed_plant_or_pollen_group_label_but_GBDB_age_entirely_older_than_Famennian;genus_mostly_dated_younger_than_window_elsewhere_in_GBDB,none,
+345268,Czekanowskia,10259,Dachashilang,Zhongyan,Qinghai,478.6,466,seed_plant_or_pollen_group_label_but_GBDB_age_entirely_older_than_Famennian;genus_mostly_dated_younger_than_window_elsewhere_in_GBDB,none,
+345269,Pityophyllum,10259,Dachashilang,Zhongyan,Qinghai,478.6,466,seed_plant_or_pollen_group_label_but_GBDB_age_entirely_older_than_Famennian;genus_mostly_dated_younger_than_window_elsewhere_in_GBDB,none,
+345310,Neocalamites,10262,Zhaermage,Zhongyan,Qinghai,478.6,466,genus_mostly_dated_younger_than_window_elsewhere_in_GBDB,none,
+345545,Zosterophyllum,10275,Mangkelu,Wutubulake,Xinjiang,423,419.2,,B_same_formation_name_and_genus,1
+345550,Salopella,10275,Mangkelu,Wutubulake,Xinjiang,423,419.2,,none,
+345552,Sciadophyton,10275,Mangkelu,Wutubulake,Xinjiang,423,419.2,,none,
+345553,Zosterophyllum,10275,Mangkelu,Wutubulake,Xinjiang,423,419.2,,B_same_formation_name_and_genus,1
+346504,Neocalamites,10326,Atasi,Zhongyan,Qinghai,478.6,466,genus_mostly_dated_younger_than_window_elsewhere_in_GBDB;formation_entry_also_holds_seed_plant_or_pollen_labelled_records_dated_older_than_Famennian,none,
+346507,Todites,10326,Atasi,Zhongyan,Qinghai,478.6,466,seed_plant_or_pollen_group_label_but_GBDB_age_entirely_older_than_Famennian;genus_mostly_dated_younger_than_window_elsewhere_in_GBDB,none,
+346508,Neocalamites,10326,Atasi,Zhongyan,Qinghai,478.6,466,genus_mostly_dated_younger_than_window_elsewhere_in_GBDB;formation_entry_also_holds_seed_plant_or_pollen_labelled_records_dated_older_than_Famennian,none,
+346510,Todites,10326,Atasi,Zhongyan,Qinghai,478.6,466,seed_plant_or_pollen_group_label_but_GBDB_age_entirely_older_than_Famennian;genus_mostly_dated_younger_than_window_elsewhere_in_GBDB,none,
+346511,Sphenopteris,10326,Atasi,Zhongyan,Qinghai,478.6,466,genus_mostly_dated_younger_than_window_elsewhere_in_GBDB;formation_entry_also_holds_seed_plant_or_pollen_labelled_records_dated_older_than_Famennian,none,
+346512,Glossophyllum,10326,Atasi,Zhongyan,Qinghai,478.6,466,seed_plant_or_pollen_group_label_but_GBDB_age_entirely_older_than_Famennian;genus_mostly_dated_younger_than_window_elsewhere_in_GBDB,none,
+346513,Taeniocradopsis,10326,Atasi,Zhongyan,Qinghai,478.6,466,formation_entry_also_holds_seed_plant_or_pollen_labelled_records_dated_older_than_Famennian,none,
+346515,Equisetites,10326,Atasi,Zhongyan,Qinghai,478.6,466,genus_mostly_dated_younger_than_window_elsewhere_in_GBDB;formation_entry_also_holds_seed_plant_or_pollen_labelled_records_dated_older_than_Famennian,none,
+346517,Neocalamites,10326,Atasi,Zhongyan,Qinghai,478.6,466,genus_mostly_dated_younger_than_window_elsewhere_in_GBDB;formation_entry_also_holds_seed_plant_or_pollen_labelled_records_dated_older_than_Famennian,none,
+346518,Neocalamites,10326,Atasi,Zhongyan,Qinghai,478.6,466,genus_mostly_dated_younger_than_window_elsewhere_in_GBDB;formation_entry_also_holds_seed_plant_or_pollen_labelled_records_dated_older_than_Famennian,none,
+346519,Danaeopsis,10326,Atasi,Zhongyan,Qinghai,478.6,466,genus_mostly_dated_younger_than_window_elsewhere_in_GBDB;formation_entry_also_holds_seed_plant_or_pollen_labelled_records_dated_older_than_Famennian,none,
+346520,Danaeopsis,10326,Atasi,Zhongyan,Qinghai,478.6,466,genus_mostly_dated_younger_than_window_elsewhere_in_GBDB;formation_entry_also_holds_seed_plant_or_pollen_labelled_records_dated_older_than_Famennian,none,
+346521,Todites,10326,Atasi,Zhongyan,Qinghai,478.6,466,seed_plant_or_pollen_group_label_but_GBDB_age_entirely_older_than_Famennian;genus_mostly_dated_younger_than_window_elsewhere_in_GBDB,none,
+346522,Taeniocradopsis,10326,Atasi,Zhongyan,Qinghai,478.6,466,formation_entry_also_holds_seed_plant_or_pollen_labelled_records_dated_older_than_Famennian,none,
+346525,Neocalamites,10326,Atasi,Zhongyan,Qinghai,478.6,466,genus_mostly_dated_younger_than_window_elsewhere_in_GBDB;formation_entry_also_holds_seed_plant_or_pollen_labelled_records_dated_older_than_Famennian,none,
+346526,Desmiophyllum,10326,Atasi,Zhongyan,Qinghai,478.6,466,genus_mostly_dated_younger_than_window_elsewhere_in_GBDB;formation_entry_also_holds_seed_plant_or_pollen_labelled_records_dated_older_than_Famennian,none,
+346528,Neocalamites,10326,Atasi,Zhongyan,Qinghai,478.6,466,genus_mostly_dated_younger_than_window_elsewhere_in_GBDB;formation_entry_also_holds_seed_plant_or_pollen_labelled_records_dated_older_than_Famennian,none,
+346529,Danaeopsis,10326,Atasi,Zhongyan,Qinghai,478.6,466,genus_mostly_dated_younger_than_window_elsewhere_in_GBDB;formation_entry_also_holds_seed_plant_or_pollen_labelled_records_dated_older_than_Famennian,none,
+346530,Bernoullia,10326,Atasi,Zhongyan,Qinghai,478.6,466,genus_mostly_dated_younger_than_window_elsewhere_in_GBDB;formation_entry_also_holds_seed_plant_or_pollen_labelled_records_dated_older_than_Famennian,none,
+346533,Equisetites,10326,Atasi,Zhongyan,Qinghai,478.6,466,genus_mostly_dated_younger_than_window_elsewhere_in_GBDB;formation_entry_also_holds_seed_plant_or_pollen_labelled_records_dated_older_than_Famennian,none,
+346534,Neocalamites,10326,Atasi,Zhongyan,Qinghai,478.6,466,genus_mostly_dated_younger_than_window_elsewhere_in_GBDB;formation_entry_also_holds_seed_plant_or_pollen_labelled_records_dated_older_than_Famennian,none,
+346535,Taeniocradopsis,10326,Atasi,Zhongyan,Qinghai,478.6,466,formation_entry_also_holds_seed_plant_or_pollen_labelled_records_dated_older_than_Famennian,none,
+349355,Onychiopsis,10435,Tajia-Yaerzan,Xiayan,Qinghai,466,460.9,genus_mostly_dated_younger_than_window_elsewhere_in_GBDB;formation_entry_also_holds_seed_plant_or_pollen_labelled_records_dated_older_than_Famennian,none,
+349357,Podozamites,10435,Tajia-Yaerzan,Xiayan,Qinghai,466,460.9,seed_plant_or_pollen_group_label_but_GBDB_age_entirely_older_than_Famennian;genus_mostly_dated_younger_than_window_elsewhere_in_GBDB,none,
+351434,Calamites,10537,Alabasitao,Xiayan,Qinghai,466,460.9,genus_mostly_dated_younger_than_window_elsewhere_in_GBDB,none,
+358704,Podozamites,10975,Tajia,Xiayan,Qinghai,466,460.9,seed_plant_or_pollen_group_label_but_GBDB_age_entirely_older_than_Famennian;genus_mostly_dated_younger_than_window_elsewhere_in_GBDB,none,
+358705,Onychiopsis,10975,Tajia,Xiayan,Qinghai,466,460.9,genus_mostly_dated_younger_than_window_elsewhere_in_GBDB;formation_entry_also_holds_seed_plant_or_pollen_labelled_records_dated_older_than_Famennian,none,
+359929,Coniopteris,11058,Jiuyangqu,Xiayan,Qinghai,466,460.9,seed_plant_or_pollen_group_label_but_GBDB_age_entirely_older_than_Famennian;genus_mostly_dated_younger_than_window_elsewhere_in_GBDB,none,
+383027,Platyphyllum,12211,Shaokeng,Qiziqiao,Jiangxi,387.7,382.7,seed_plant_or_pollen_group_label_but_GBDB_age_entirely_older_than_Famennian,none,
+387982,Cyclopteris,12452,Xinqiao-lanxixianzhuganshan,Changwu,Zhejiang,449.5,443.7,seed_plant_or_pollen_group_label_but_GBDB_age_entirely_older_than_Famennian;genus_mostly_dated_younger_than_window_elsewhere_in_GBDB,none,
+390071,Sinophyllum,12567,Wenjingjiang,Guanwushan,Sichuan,387.7,382.7,seed_plant_or_pollen_group_label_but_GBDB_age_entirely_older_than_Famennian;genus_mostly_dated_younger_than_window_elsewhere_in_GBDB,none,
+397805,Pagiophyllum,12975,Xinmincun-Fuyan-Nanyang,Longjing,Jilin,458.4,443.4,seed_plant_or_pollen_group_label_but_GBDB_age_entirely_older_than_Famennian;genus_mostly_dated_younger_than_window_elsewhere_in_GBDB,none,
+402203,Taeniocrada,13166,Dacaozi,Dacaozi,Yunnan,407.6,393.3,,none,
+408674,Protopteridium,13528,Shibanpo,Yuntaiguan,Hubei,387.7,382.7,,none,
+414457,Anapiculatisporites,13811,Dongdacun,Zhongyan,Xizang,478.6,466,,none,
+414464,Leiotriletes,13811,Dongdacun,Zhongyan,Xizang,478.6,466,,none,
+414465,Laevigatosporites,13811,Dongdacun,Zhongyan,Xizang,478.6,466,,none,1035
+414466,Knoxisporites,13811,Dongdacun,Zhongyan,Xizang,478.6,466,,none,
+414467,Verrucosisporites,13811,Dongdacun,Zhongyan,Xizang,478.6,466,,none,
+414470,Crassispora,13811,Dongdacun,Zhongyan,Xizang,478.6,466,,none,
+414471,Punctatisporites,13811,Dongdacun,Zhongyan,Xizang,478.6,466,,none,
+414472,Lycospora,13811,Dongdacun,Zhongyan,Xizang,478.6,466,,none,
+414475,Laevigatosporites,13811,Dongdacun,Zhongyan,Xizang,478.6,466,,none,1035
+414476,Crassispora,13811,Dongdacun,Zhongyan,Xizang,478.6,466,,none,
+426831,Hunanodendrum,14193,Rongxi,Rongxi,Sichuan,438.5,433.4,genus_mostly_recorded_under_a_non_plant_GBDB_group,B_same_formation_name_and_genus,25
+430534,Zosterophyllum,14303,Daliantang,Posongchong,Yunnan,410.8,407.6,,B_same_formation_name_and_genus,127
+430535,Hostimella,14303,Daliantang,Posongchong,Yunnan,410.8,407.6,,none,
+430536,Dawsonites,14303,Daliantang,Posongchong,Yunnan,410.8,407.6,,none,
+430537,Taeniocrada,14303,Daliantang,Posongchong,Yunnan,410.8,407.6,,none,
+430539,Zosterophyllum,14303,Daliantang,Posongchong,Yunnan,410.8,407.6,,B_same_formation_name_and_genus,127
+430888,Zosterophyllum,14315,Gumu,posongchong,Yunnan,410.8,407.6,,B_same_formation_name_and_genus,0
+430889,Zosterophyllum,14315,Gumu,posongchong,Yunnan,410.8,407.6,,B_same_formation_name_and_genus,0
+430890,Zosterophyllum,14315,Gumu,posongchong,Yunnan,410.8,407.6,,B_same_formation_name_and_genus,0
+430913,Zosterophyllum,14315,Gumu,posongchong,Yunnan,410.8,407.6,,B_same_formation_name_and_genus,0
+430914,Zosterophyllum,14315,Gumu,posongchong,Yunnan,410.8,407.6,,B_same_formation_name_and_genus,0
+430919,Zosterophyllum,14315,Gumu,posongchong,Yunnan,410.8,407.6,,B_same_formation_name_and_genus,0
+430924,Zosterophyllum,14315,Gumu,posongchong,Yunnan,410.8,407.6,,B_same_formation_name_and_genus,0
+442917,Verrucososporites,14669,Tielikewatie,Tataaiertage,Xinjiang,438.5,433.4,,none,
+442928,Laevigatosporites,14669,Tielikewatie,Tataaiertage,Xinjiang,438.5,433.4,,none,3092
+442929,Verrucososporites,14669,Tielikewatie,Tataaiertage,Xinjiang,438.5,433.4,,none,
+442930,Punctatosporites,14669,Tielikewatie,Tataaiertage,Xinjiang,438.5,433.4,,none,
+446012,Protolepidodendron,14726,Huaibaoshi (Near),Yuntaiguan,Hubei,387.7,382.7,,none,
+446013,Barrandeina,14726,Huaibaoshi (Near),Yuntaiguan,Hubei,387.7,382.7,,none,
+446014,Longostachys,14726,Huaibaoshi (Near),Yuntaiguan,Hubei,387.7,382.7,,D_genus_in_pbdb_collection_25_to_100km,82
+446015,Eocladoxylon,14726,Huaibaoshi (Near),Yuntaiguan,Hubei,387.7,382.7,,none,
+446016,Barsassia,14726,Huaibaoshi (Near),Yuntaiguan,Hubei,387.7,382.7,,none,
+446017,Cooksonia,14726,Huaibaoshi (Near),Yuntaiguan,Hubei,387.7,382.7,,none,
+446018,Pseudobornia,14726,Huaibaoshi (Near),Yuntaiguan,Hubei,387.7,382.7,,none,
+446019,Amplectosporangium,14726,Huaibaoshi (Near),Yuntaiguan,Hubei,387.7,382.7,,none,
+482223,Anapiculatisporites,15152,Liaojiaoshan,Yulongsi,Yunnan,423,419.2,,none,
+482227,Brochotriletes,15152,Liaojiaoshan,Yulongsi,Yunnan,423,419.2,,none,
+482228,Apiculiretusispora,15152,Liaojiaoshan,Yulongsi,Yunnan,423,419.2,,none,
+482229,Apiculiretusispora,15152,Liaojiaoshan,Yulongsi,Yunnan,423,419.2,,none,
+482230,Synorisporites,15152,Liaojiaoshan,Yulongsi,Yunnan,423,419.2,,none,
+482231,Streelispora,15152,Liaojiaoshan,Yulongsi,Yunnan,423,419.2,,none,
+482232,Ambitisporites,15152,Liaojiaoshan,Yulongsi,Yunnan,423,419.2,,none,
+482233,Archaeozonotriletes,15152,Liaojiaoshan,Yulongsi,Yunnan,423,419.2,,none,131
+482239,Retusotriletes,15152,Liaojiaoshan,Yulongsi,Yunnan,423,419.2,,none,373
+482240,Retusotriletes,15152,Liaojiaoshan,Yulongsi,Yunnan,423,419.2,,none,373
+482241,Apiculiretusispora,15152,Liaojiaoshan,Yulongsi,Yunnan,423,419.2,,none,
+482242,Ambitisporites,15152,Liaojiaoshan,Yulongsi,Yunnan,423,419.2,,none,
+482243,Ambitisporites,15152,Liaojiaoshan,Yulongsi,Yunnan,423,419.2,,none,
+491115,Nodospora,15309,Tangjia,Wenchang,Zhejiang,445.2,443.4,,none,
+491116,Nodospora,15309,Tangjia,Wenchang,Zhejiang,445.2,443.4,,none,
+491117,Tetrahedraletes,15309,Tangjia,Wenchang,Zhejiang,445.2,443.4,,none,
+491118,Dyadospora,15309,Tangjia,Wenchang,Zhejiang,445.2,443.4,,none,
+491122,Dyadospora,15309,Tangjia,Wenchang,Zhejiang,445.2,443.4,,none,
+522839,Leiotriletes,15829,Xiawunagou,Yanglugou,Gansu,423,419.2,,none,
+522900,Punctatisporites,15829,Xiawunagou,Yanglugou,Gansu,423,419.2,,none,
+522907,Apiculiretusispora,15829,Xiawunagou,Yanglugou,Gansu,423,419.2,,none,
+522908,Leiotriletes,15829,Xiawunagou,Yanglugou,Gansu,423,419.2,,none,
+522909,Leiotriletes,15829,Xiawunagou,Yanglugou,Gansu,423,419.2,,none,
+522910,Retusotriletes,15829,Xiawunagou,Yanglugou,Gansu,423,419.2,,none,1003
+524203,Apiculiretusispora,15841,Yanglugou,Yanglugou,Sichuan,423,419.2,,none,
+526288,Anapiculatisporites,15889,Borehole NC-2,Fentou,Jiangsu,433.4,427.4,,none,
+526289,Brochotriletes,15889,Borehole NC-2,Fentou,Jiangsu,433.4,427.4,,none,
+526290,Emphanisporites,15889,Borehole NC-2,Fentou,Jiangsu,433.4,427.4,,none,
+526291,Perotrilites,15889,Borehole NC-2,Fentou,Jiangsu,433.4,427.4,,none,
+526292,Amicosporites,15889,Borehole NC-2,Fentou,Jiangsu,433.4,427.4,,none,
+526293,Synorisporites,15889,Borehole NC-2,Fentou,Jiangsu,433.4,427.4,,none,
+526294,Archaeozonotriletes,15889,Borehole NC-2,Fentou,Jiangsu,433.4,427.4,,none,1944
+526295,Cymbosporites,15889,Borehole NC-2,Fentou,Jiangsu,433.4,427.4,,none,
+526296,Chelinospora,15889,Borehole NC-2,Fentou,Jiangsu,433.4,427.4,,none,
+526298,Anapiculatisporites,15889,Borehole NC-2,Fentou,Jiangsu,433.4,427.4,,none,
+526299,Brochotriletes,15889,Borehole NC-2,Fentou,Jiangsu,433.4,427.4,,none,
+526300,Emphanisporites,15889,Borehole NC-2,Fentou,Jiangsu,433.4,427.4,,none,
+526301,Perotrilites,15889,Borehole NC-2,Fentou,Jiangsu,433.4,427.4,,none,
+526302,Amicosporites,15889,Borehole NC-2,Fentou,Jiangsu,433.4,427.4,,none,
+526303,Synorisporites,15889,Borehole NC-2,Fentou,Jiangsu,433.4,427.4,,none,
+526304,Archaeozonotriletes,15889,Borehole NC-2,Fentou,Jiangsu,433.4,427.4,,none,1944
+526305,Cymbosporites,15889,Borehole NC-2,Fentou,Jiangsu,433.4,427.4,,none,
+526306,Chelinospora,15889,Borehole NC-2,Fentou,Jiangsu,433.4,427.4,,none,
+526308,Anapiculatisporites,15889,Borehole NC-2,Fentou,Jiangsu,433.4,427.4,,none,
+526309,Brochotriletes,15889,Borehole NC-2,Fentou,Jiangsu,433.4,427.4,,none,
+526310,Emphanisporites,15889,Borehole NC-2,Fentou,Jiangsu,433.4,427.4,,none,
+526311,Perotrilites,15889,Borehole NC-2,Fentou,Jiangsu,433.4,427.4,,none,
+526312,Amicosporites,15889,Borehole NC-2,Fentou,Jiangsu,433.4,427.4,,none,
+526313,Synorisporites,15889,Borehole NC-2,Fentou,Jiangsu,433.4,427.4,,none,
+526314,Archaeozonotriletes,15889,Borehole NC-2,Fentou,Jiangsu,433.4,427.4,,none,1944
+526315,Retusotriletes,15889,Borehole NC-2,Fentou,Jiangsu,433.4,427.4,,none,1510
+526316,Apiculiretusispora,15889,Borehole NC-2,Fentou,Jiangsu,433.4,427.4,,none,
+526317,Retusotriletes,15889,Borehole NC-2,Fentou,Jiangsu,433.4,427.4,,none,1510
+526318,Apiculiretusispora,15889,Borehole NC-2,Fentou,Jiangsu,433.4,427.4,,none,
+526319,Retusotriletes,15889,Borehole NC-2,Fentou,Jiangsu,433.4,427.4,,none,1510
+526320,Apiculiretusispora,15889,Borehole NC-2,Fentou,Jiangsu,433.4,427.4,,none,
+526321,Apiculiretusispora,15889,Borehole NC-2,Fentou,Jiangsu,433.4,427.4,,none,
+526322,Apiculiretusispora,15889,Borehole NC-2,Fentou,Jiangsu,433.4,427.4,,none,
+526323,Apiculiretusispora,15889,Borehole NC-2,Fentou,Jiangsu,433.4,427.4,,none,
+526324,Retusotriletes,15889,Borehole NC-2,Fentou,Jiangsu,433.4,427.4,,none,1510
+526325,Retusotriletes,15889,Borehole NC-2,Fentou,Jiangsu,433.4,427.4,,none,1510
+526326,Retusotriletes,15889,Borehole NC-2,Fentou,Jiangsu,433.4,427.4,,none,1510
+526327,Cymbosporites,15889,Borehole NC-2,Fentou,Jiangsu,433.4,427.4,,none,
+526328,Cymbosporites,15889,Borehole NC-2,Fentou,Jiangsu,433.4,427.4,,none,
+526333,Retusotriletes,15889,Borehole NC-2,Fentou,Jiangsu,433.4,427.4,,none,1510
+526334,Retusotriletes,15889,Borehole NC-2,Fentou,Jiangsu,433.4,427.4,,none,1510
+526335,Retusotriletes,15889,Borehole NC-2,Fentou,Jiangsu,433.4,427.4,,none,1510
+526336,Cymbosporites,15889,Borehole NC-2,Fentou,Jiangsu,433.4,427.4,,none,
+526337,Cymbosporites,15889,Borehole NC-2,Fentou,Jiangsu,433.4,427.4,,none,
+526342,Retusotriletes,15889,Borehole NC-2,Fentou,Jiangsu,433.4,427.4,,none,1510
+526343,Retusotriletes,15889,Borehole NC-2,Fentou,Jiangsu,433.4,427.4,,none,1510
+526344,Retusotriletes,15889,Borehole NC-2,Fentou,Jiangsu,433.4,427.4,,none,1510
+526345,Cymbosporites,15889,Borehole NC-2,Fentou,Jiangsu,433.4,427.4,,none,
+526346,Chelinospora,15889,Borehole NC-2,Fentou,Jiangsu,433.4,427.4,,none,
+526348,Anapiculatisporites,15889,Borehole NC-2,Fentou,Jiangsu,433.4,427.4,,none,
+526349,Brochotriletes,15889,Borehole NC-2,Fentou,Jiangsu,433.4,427.4,,none,
+526350,Emphanisporites,15889,Borehole NC-2,Fentou,Jiangsu,433.4,427.4,,none,
+526351,Perotrilites,15889,Borehole NC-2,Fentou,Jiangsu,433.4,427.4,,none,
+526352,Amicosporites,15889,Borehole NC-2,Fentou,Jiangsu,433.4,427.4,,none,
+526353,Synorisporites,15889,Borehole NC-2,Fentou,Jiangsu,433.4,427.4,,none,
+526354,Archaeozonotriletes,15889,Borehole NC-2,Fentou,Jiangsu,433.4,427.4,,none,1944
+526355,Cymbosporites,15889,Borehole NC-2,Fentou,Jiangsu,433.4,427.4,,none,
+526356,Chelinospora,15889,Borehole NC-2,Fentou,Jiangsu,433.4,427.4,,none,
+526358,Retusotriletes,15889,Borehole NC-2,Fentou,Jiangsu,433.4,427.4,,none,1510
+526359,Apiculiretusispora,15889,Borehole NC-2,Fentou,Jiangsu,433.4,427.4,,none,
+526360,Apiculiretusispora,15889,Borehole NC-2,Fentou,Jiangsu,433.4,427.4,,none,
+526361,Cymbosporites,15889,Borehole NC-2,Fentou,Jiangsu,433.4,427.4,,none,
+526362,Cymbosporites,15889,Borehole NC-2,Fentou,Jiangsu,433.4,427.4,,none,
+526367,Retusotriletes,15889,Borehole NC-2,Fentou,Jiangsu,433.4,427.4,,none,1510
+526368,Retusotriletes,15889,Borehole NC-2,Fentou,Jiangsu,433.4,427.4,,none,1510
+526369,Retusotriletes,15889,Borehole NC-2,Fentou,Jiangsu,433.4,427.4,,none,1510
+526370,Cymbosporites,15889,Borehole NC-2,Fentou,Jiangsu,433.4,427.4,,none,
+526371,Cymbosporites,15889,Borehole NC-2,Fentou,Jiangsu,433.4,427.4,,none,
+532034,Prototaxites,16030,Well Zhong 2,Lianglitag,Xinjiang,460.9,449.5,genus_mostly_recorded_under_a_non_plant_GBDB_group,none,
+532047,Prototaxites,16030,Well Zhong 2,Lianglitag,Xinjiang,460.9,449.5,genus_mostly_recorded_under_a_non_plant_GBDB_group,none,
+532071,Prototaxites,16030,Well Zhong 2,Lianglitag,Xinjiang,460.9,449.5,genus_mostly_recorded_under_a_non_plant_GBDB_group,none,
+593310,Psilophytites,17315,Wutubulak,Wutubulake,Xinjiang,423,419.2,,none,
+593317,Ambitisporites,17315,Wutubulak,Wutubulake,Xinjiang,423,419.2,,none,
+593318,Ambitisporites,17315,Wutubulak,Wutubulake,Xinjiang,423,419.2,,none,
+593319,Retusortriletes,17315,Wutubulak,Wutubulake,Xinjiang,423,419.2,,none,
+593323,Salopella,17315,Wutubulak,Wutubulake,Xinjiang,423,419.2,,none,
+593324,Hostinella,17315,Wutubulak,Wutubulake,Xinjiang,423,419.2,,none,
+754606,Pachytheca,25545,Hagley Quarry,Rushall,,423,419.2,genus_mostly_recorded_under_a_non_plant_GBDB_group,none,

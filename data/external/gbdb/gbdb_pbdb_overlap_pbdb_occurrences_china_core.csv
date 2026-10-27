@@ -1,0 +1,68 @@
+pbdb_occurrence_no,pbdb_collection_no,d_genus,pbdb_formation,pbdb_ref_author,pbdb_ref_pubyr,pbdb_reference_no,max_ma,min_ma,gbdb_counterpart_level
+131790,10891,Eophyllophyton,Posongchong,Hao,1988,4037,413.02,410.62,none
+131791,10891,Gumuia,Posongchong,Hao,1988,4029,413.02,410.62,none
+131806,10896,Zosterophyllum,Posongchong,Hao and Gensel,1998,4043,413.02,410.62,window_B_same_formation_name_and_genus
+131807,10896,Psilophyton,Posongchong,Hao and Gensel,1998,4027,413.02,410.62,none
+131808,10896,Gumuia,Posongchong,Hao and Gensel,1998,4027,413.02,410.62,none
+131981,10941,Drepanophycus,Xujiachong (also called Longhuashan),Li and Edwards,1995,4039,410.62,393.47,no_age_only_B_same_formation_name_and_genus
+132404,11009,Huia,Posongchong,Hao and Gensel,1998,4027,413.02,382.31,none
+201475,21219,Minarodendron,Haikou,Li,1990,6509,387.95,382.31,no_age_only_C_genus_within_25km
+202673,22765,Retusotriletes,Longdonshan,Gao,1981,6549,393.47,387.95,window_C_genus_within_25km
+202674,22765,Retustoriletes,Longdonshan,Gao,1981,6549,393.47,387.95,none
+202675,22765,Actinosporites,Longdonshan,Gao,1981,6549,393.47,387.95,none
+202676,22765,Diatomozonotriletes,Longdonshan,Gao,1981,6549,393.47,387.95,none
+202677,22765,Hymenozonotriletes,Longdonshan,Gao,1981,6549,393.47,387.95,none
+202678,22765,Hymenozonotriletes,Longdonshan,Gao,1981,6549,393.47,387.95,none
+202679,22765,Rhabdosporites,Longdonshan,Gao,1981,6549,393.47,387.95,none
+202680,22765,Ancyrospora,Longdonshan,Gao,1981,6549,393.47,387.95,none
+202681,22765,Grandispora,Longdonshan,Gao,1981,6549,393.47,387.95,none
+202682,22765,Hystricosporites,Longdonshan,Gao,1981,6549,393.47,387.95,none
+202683,22765,Laevigatosporites,Longdonshan,Gao,1981,6549,393.47,387.95,none
+202704,22767,Lophozonotriletes,Haikou,Gao,1981,6549,387.95,382.31,none
+202705,22767,Archaeozonotriletes,Haikou,Gao,1981,6549,387.95,382.31,none
+202706,22767,Geminospora,Haikou,Gao,1981,6549,387.95,382.31,none
+202707,22767,Calyptosporites,Haikou,Gao,1981,6549,387.95,382.31,none
+202708,22767,Hymenozonotriletes,Haikou,Gao,1981,6549,387.95,382.31,none
+202709,22767,Stenozonotriletes,Haikou,Gao,1981,6549,387.95,382.31,none
+202710,22767,Ancyrospora,Haikou,Gao,1981,6549,387.95,382.31,none
+202711,22767,Nikitinspoirites,Haikou,Gao,1981,6549,387.95,382.31,none
+202716,22769,Ancyrospora,,Gao,1981,6549,387.95,382.31,none
+202717,22769,Ancyrospora,,Gao,1981,6549,387.95,382.31,none
+202718,22769,Ancyrospora,,Gao,1981,6549,387.95,382.31,none
+202719,22769,Ancyrospora,,Gao,1981,6549,387.95,382.31,none
+202720,22769,Rhabdosporites,,Gao,1981,6549,387.95,382.31,none
+202721,22769,Samarisporites,,Gao,1981,6549,387.95,382.31,none
+202722,22769,Cristatisporites,,Gao,1981,6549,387.95,382.31,none
+202723,22769,Grandispora,,Gao,1981,6549,387.95,382.31,none
+202724,22769,Hymenozonotriletes,,Gao,1981,6549,387.95,382.31,none
+202725,22769,Cirratriradites,,Gao,1981,6549,387.95,382.31,none
+202726,22769,Hystricosporites,,Gao,1981,6549,387.95,382.31,none
+202727,22769,Corystisporites,,Gao,1981,6549,387.95,382.31,none
+205174,22937,Metacladophyton,Yuntaiguan,Wang and Geng,1997,6598,387.95,358.86,none
+206466,23008,Protopteridophyton,Tiaomachien,Li and Hsu,1987,6626,387.95,372.15,none
+207402,23079,Longostachys,Yuntaikuan,Cai and Chen,1996,6638,387.95,358.86,window_D_genus_25_to_100km
+291317,27793,Hunanodendrum,Majiaochong,Mu et al.,1986,7624,438.6,432.9,window_B_same_formation_name_and_genus
+292296,27827,Hunanodendrum,Rongxi,Mu et al.,1986,7624,438.6,432.9,window_B_same_formation_name_and_genus
+293201,27917,Zosterophyllum,Wutubulake,Mu et al.,1986,4053,422.7,393.47,window_B_same_formation_name_and_genus
+1503613,209589,Haskinsia,Hujiersite,Xu et al.,2008,72300,387.95,382.31,none
+1503809,209616,Yuguangia,Haikou,Hao et al.,2007,72308,383.4,382.31,none
+1503810,209617,Minarodendron,Haikou,Hao et al.,2007,72308,383.4,382.31,no_age_only_C_genus_within_25km
+1503813,209619,Lepidodendropsis,Haikou,Hao et al.,2007,72308,383.4,382.31,window_B_same_formation_name_and_genus
+1504284,209589,Haskinsia,Hujiersite,Xu et al.,2008,72300,387.95,382.31,none
+1599982,226105,Phacelophyton,Pingliang,Liu et al.,2021,81860,458.2,452.8,none
+1599983,226105,Proaulopora,Pingliang,Liu et al.,2021,81860,458.2,452.8,none
+1600018,226110,Proaulopora,Beiguoshan,Liu et al.,2021,81860,452.8,445.2,none
+1600020,226111,Proaulopora,Beiguoshan,Liu et al.,2021,81860,452.8,445.2,none
+1600024,211603,Phacelophyton,Kelimoli,Liu et al.,2021,81860,469.4,458.2,none
+1600027,226115,Phacelophyton,Kelimoli,Liu et al.,2021,81860,469.4,458.2,none
+1600155,226151,Proaulopora,Pingliang,Liu et al.,2021,81860,458.2,452.8,none
+1600156,226152,Proaulopora,Pingliang,Liu et al.,2021,81860,458.2,452.8,none
+1600157,226153,Proaulopora,Pingliang,Liu et al.,2021,81860,458.2,452.8,none
+1600159,226154,Proaulopora,Pingliang,Liu et al.,2021,81860,458.2,452.8,none
+1600160,226112,Proaulopora,Pingliang,Liu et al.,2021,81860,458.2,452.8,none
+1600161,226116,Zonotrichites,Pingliang,Liu et al.,2021,81860,458.2,452.8,none
+1600184,226157,Proaulopora,Pingliang,Liu et al.,2021,81860,458.2,452.8,none
+1667160,196858,Catenalis,Posongchong,Lu and Zhu,2010,89629,413.02,410.62,none
+1681789,238271,Zosterophyllum,Xiaoshan,Gai et al.,2023,90415,413.02,410.62,none
+1685130,238704,Pseudosporochnus,Yidade,Wang,1979,90733,383.4,382.31,none
+2062376,278439,Aberlemnia,Xiemisitai,Zong et al.,2023,94384,422.7,419.62,none
