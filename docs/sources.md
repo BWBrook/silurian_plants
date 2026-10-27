@@ -109,7 +109,7 @@ among GBIF fossil specimens.
 
 Pointers: `data/eprp/pointers/`. TREED code: `data/eprp/context/deposits/`. COPSE variants and the
 GAD code: `data/external/deposits/`. gen3sis, FossilSim, paleobuddy, PyRate and cGENIE are on
-`deep-server`. The Codex CLI (0.164) runs non-interactively here with schema-constrained output,
+`deep-server`. SCI-FI (SCION with FLORA; Gurung et al. 2024) runs headless in MATLAB on mac-mini (smoke test 2026-10-27; outputs in `deep-server:/data/codex/silurian_plants/runs/scifi-smoke-2026-10-27/`). The Codex CLI (0.164) runs non-interactively here with schema-constrained output,
 which makes it a candidate for bulk extraction (2026-10-27 smoke test).
 
 ## Open items for Barry

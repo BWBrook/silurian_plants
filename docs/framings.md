@@ -194,6 +194,16 @@ mechanisms, its targets are low-resolution proxies, and it needs a credible plan
 which is what F1 and F2 would provide. It is the natural third stage of a programme that starts
 with F1–F3, not a first study.
 
+**Tractability note (EPRP smoke test, 2026-10-27).** SCI-FI, the SCION climate–carbon model coupled
+to the FLORA vegetation model (Gurung et al. 2024), runs headless in MATLAB on mac-mini in about
+8 s per 250 Myr run, so a 1,000-member ensemble takes hours. It reproduced the paper's peak
+habitable area (92% near 145 Ma) but not its Triassic value (80% against 65%); that gap should be
+resolved against the archived run before building on the code. Its climate stack reaches 540 Ma,
+so retargeting to 485–383 Ma is mostly configuration. But FLORA's three vegetation types are
+parameterised for an angiosperm and gymnosperm world. Early-plant physiology would have to be
+built, and that is where both the novelty and the work lie. Outputs:
+`deep-server:/data/codex/silurian_plants/runs/scifi-smoke-2026-10-27/`.
+
 ## F6. Vulnerability and recovery of early land floras
 
 **Question.** How vulnerable were early plant populations, with a gametophyte that needs free
