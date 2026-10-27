@@ -20,9 +20,10 @@ crosswalks, and `uv run tools/spores.py inputs` regenerates the work lists they 
   assemblages and 2,253 taxon records.
   - Each record is checked against its paper's text (`verified_in_text`); 97% verify, and
     unverified records are not usable.
-  - Six held "texts" proved to be abstracts or landing pages (under 1,500 words), and Codex had
-    invented taxa for them. They are dropped (`sources/mvdb_dropped_papers.csv`) and listed in
-    `docs/closed-literature.csv`.
+  - Six held "texts" proved to be abstracts or a proof's first page (under 1,500 words). For
+    three of them Sol took its records from the full articles, which it found online, so they
+    cannot be checked against held text. All six are dropped
+    (`sources/mvdb_dropped_papers.csv`); the three full papers are in `docs/closed-literature.csv`.
   - Most priority post-2006 papers, including Rubinstein et al. (2010), are closed and wait on
     Barry's institutional downloads.
   - Ages and units for this layer are Codex's proposals from the papers' stated ages;

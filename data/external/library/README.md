@@ -230,7 +230,7 @@ The 2 unclear copies were kept: W2594148471 (a preprint with a different title) 
 ### Full-text test (added after the project's review, 2026-10-27)
 
 The title match and the identity check both pass an abstract or a landing page whose title is right. The project's
-review found six such "held" priority-spore texts, after Codex extraction invented taxa for three of them. So
+review found six such "held" priority-spore texts; for three, Codex extraction had used full articles found online. So
 `fetch_results.tsv` now carries `text_words` (words in `STORE/text/<W>.txt`) and `fulltext_check`. That column is
 `short_under_1500` below 1,500 words, `no_text` where the PDF has no text layer, and `ok` otherwise; see
 `scripts/library_fetch_report.py`. The test flags; it does not decide. Of the 202 held copies, 188 are `ok`, 5 are
