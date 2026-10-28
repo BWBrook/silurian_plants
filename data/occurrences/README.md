@@ -83,7 +83,7 @@ The tail runs one stage past the oldest record that is not disputed, so that the
     - SHA-256 `e0d1f772c1617c218948d1d2605661e93edcfe75e0fe8ce92afee91d3350a8b8`;
     - kept in git-ignored `raw/` on mac-mini, and copied to `nectar-vm:/data/codex/silurian_plants/raw/pbdb/` (hash verified). `deep-server` has been unreachable since 2026-10-28.
   - **Ages:** PBDB's numerical ages are on its own scale, so the overlap weights are approximate near boundaries.
-- **Spores** (`channel` = `spore`). Palynodata documents with datable palynomorph records of any kind, per stage × unit, from `data/spores/effort_by_stage.csv`. These run to 2006 only; the post-2006 literature is not yet counted.
+- **Spores** (`channel` = `spore`). Palynodata documents with datable palynomorph records of any kind, per stage × unit, from `data/spores/effort_by_stage.csv`, from the Tremadocian to the Emsian. These run to 2006 only; the post-2006 literature is not yet counted. The recovery study shows that empty but well-sampled stages older than a first appearance are what bound an origination, so Cambrian palynological effort, which the full Palynodata release holds, is the next addition (`docs/plan-f3.md`).
 
 First look (2026-10-28):
 - **Terrestrial collections.** Collections of any taxon from terrestrial settings number at most about 8 per stage from the Darriwilian to the Pridoli. They rise to about 104 in the Lochkovian, then 49 and 93 in the Pragian and Emsian.

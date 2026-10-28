@@ -77,6 +77,21 @@ Testing old narratives is a third contribution, and a programme-level one (Q5 in
    - **One classical estimator.** Only one classical bound is carried.
    - **Boundary ages.** These are drawn from the joint age model, not fixed.
    - **The deciding question.** Whether the ramp itself can be estimated from two channels plus effort is the identifiability question, and so the first thing the recovery study answers.
+   **Second amendment, proposed after the recovery study** (2026-10-28, Claude Opus 5.5; awaiting Barry's decision; recorded before any real data were analysed). The recovery study (`models/f3/README.md`, step 3) found the following:
+   - **No estimator meets the original criteria** across the plausible scenarios. The classical bound and GRIWM fail every ramp.
+   - **The capacity-profiled logistic fit covers but sits young.** Its 95% interval covers the true origination in 119 of 120 logistic scenarios, but its maximum lies 0.2–7.5 Myr young of the truth. Its older limit covers 93–98% of the time under logistic growth and 81–88% under birth–death growth.
+   - **Exponential growth leaves an exact trade-off** between preservation and origination. Only empty but well-sampled older stages bound the origination. With the data starting at the Darriwilian, older originations cannot be identified at all.
+   - **Record counts.** About 100 spore records bound origination to within a few Myr under a logistic ramp. About 30 body-fossil records do not.
+
+   Proposed changes:
+   1. **Older limit.** Judge and report the **older limit of the interval**, the quantity a test of a clock maximum needs. An estimator passes a scenario if that limit covers the true origination at least 90% of the time. Point estimates are not reported as findings, and the bias criterion applies only where one is.
+   2. **Informativeness.** An interval counts only if its profile is bounded within the search range in at least 90% of replicates. Otherwise the result for that scenario is "not identifiable", stated with the evidence that would resolve it. This closes the loophole by which an unbounded interval "covers" trivially.
+   3. **Estimators.** The primary estimator is the logistic fit with capacity profiled (`ramp_logistic_kfree`), stated as conditional: "if abundance rose logistically …". The fixed-capacity logistic and birth–death fits are sensitivity checks. The classical bound and GRIWM are reported only as the naive view.
+   4. **Extend the spore effort and tail back through the Cambrian.** The window edge makes old originations unidentifiable, and the test of the 515–493 Ma scenarios depends on documented palynological sampling without spores before the Darriwilian. The Tremadocian–Dapingian effort is added (2026-10-28). The Cambrian needs the full Palynodata release (`data/external/local/spores/of_5793.zip`).
+   5. **Robustness next.** Before any real-data verdict, test the primary fit against effort series that are wrong by plausible amounts.
+   6. **Body-fossil events (E3–E5).** These have too few records for any estimator to pass under a ramp. Report their intervals with that caveat, and rest their verdicts mainly on the pivotal records.
+
+   These changes narrow the claim from "origination windows" to "sampling-based older limits on origination, conditional on the shape of the rise", the quantity the clock-maximum tests require. The original criteria are kept above for the record.
 4. **Apply and find the pivotal records.** Run the accepted estimators on each event under its main reading. Then repeat across the readings of the contested tail. A record is **pivotal** if its reading flips a verdict (for example, compatibility with a clock maximum) or moves the estimated window by more than 1 Myr. The output is a short list of the adjudications that decide each answer, with what each reading implies.
 5. **Value of information.** Rank the evidence that could still be obtained by how much it would narrow an answer, rerunning with each item resolved each way. Candidates:
    - a closed paper;

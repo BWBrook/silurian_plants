@@ -3,6 +3,15 @@
 Dated record of decisions that shape the programme. Newest first. Say who decided, and quote
 Barry exactly (with source) or label a paraphrase.
 
+## 2026-10-28: Loop 1, step 3 (recovery study)
+
+- **Recovery study** (`models/f3/`; written by a Claude Sonnet 5.5 agent, reviewed by a second Sonnet agent, checked by Claude Opus 5.5).
+  - Grid: 2,880 rows, 1,000 replicates each. No estimator meets the original criteria across plausible scenarios.
+  - The capacity-profiled logistic fit's older limit is usable.
+  - Exponential growth leaves an exact trade-off between preservation and origination, so only empty, well-sampled older stages bound an origination.
+  - The body-fossil channel is too thin to pass.
+- **Second plan amendment proposed** (Claude; awaiting Barry). Judge the older limit; require informativeness; make the profiled logistic fit primary; extend spore effort back through the Cambrian; test against mismeasured effort next. Spore effort was extended to the Tremadocian the same day (1,085 documents across the Tremadocian, Floian and Dapingian), which needs no decision.
+
 ## 2026-10-28: Loop 1, step 1 (the oldest records) and the sketch
 
 - **Data model** (Claude Opus 5.5, under `docs/plan-f3.md`).

@@ -226,7 +226,7 @@ def cmd_effort(pbdb_csv):
                     "land": f"{a['land']:.2f}", "marginal": f"{a['marginal']:.2f}", "marine": f"{a['marine']:.2f}",
                     "unknown": f"{a['unknown']:.2f}", "n_docs": "", "n_docs_with_spores": ""})
     for r in csv.DictReader(open(SPORES / "effort_by_stage.csv")):
-        if 393.47 < float(r["base_ma"]) <= 469.4:
+        if 393.47 < float(r["base_ma"]) <= 486.85:
             out.append({"channel": "spore", "palaeo_unit": r["palaeo_unit"], "stage": r["stage"], "base_ma": r["base_ma"],
                         "measure": "Palynodata documents with datable palynomorph records (to 2006)",
                         "land": "", "marginal": "", "marine": "", "unknown": "",
