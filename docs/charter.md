@@ -87,7 +87,8 @@ data archived, and the human–AI correspondence record published alongside.
 - Claude Opus 5.5 (Anthropic, `claude-opus-5-5`) in Claude Code: orchestration, programme
   design, synthesis, framings, tooling.
 - Claude Sonnet 5.5 (Anthropic) subagents: the F3 simulator, estimators, sketch and recovery study
-  (`models/f3/`), with a second Sonnet agent reviewing; literature research and first drafts of taxon cards,
+  (`models/f3/`), with a second Sonnet agent reviewing; the reshape-v3 compatibility estimator, unit
+  simulator and validation harness (2026-10-28 and 29, reviewed and amended by Claude Opus 5.5); literature research and first drafts of taxon cards,
   the primer (including its biological-transitions section, 2026-10-28), the precedents review and
   the rejected-records note; adjudication of audit findings
   against the sources and the resulting corrections; blind audits.

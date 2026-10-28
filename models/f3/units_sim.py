@@ -50,8 +50,8 @@ class Truth:
     """The true history. a = 1 for t <= tau0 and a = 0 for t > t0; between them:
     H0c: f.  H0m: f, but 0 on the last `delay` Myr before t0 (a delayed step).  H0: a comb of 0 and 1
     with duty cycle f (period 0.4 Myr, so the units see Bernoulli(f)).  logistic: L(t) / L(tau0) with
-    steepness g and midpoint h Myr after t0.  H1: the comb of duty f plus one pulse of height `pulse`
-    and duration `pulse_myr` centred between tau0 and t0."""
+    steepness g and midpoint h Myr after t0.  H1: the comb of duty f, replaced by one pulse of height
+    `pulse` and duration `pulse_myr` centred between tau0 and t0."""
 
     history: str = "H0c"
     t0: float = 466.0
@@ -78,7 +78,7 @@ class Truth:
             mid = num / (1.0 + np.exp(-self.g * ((self.t0 - t) - self.h)))
         elif self.history == "H1":
             centre = (self.tau0 + self.t0) / 2
-            mid = comb + self.pulse * (np.abs(t - centre) <= self.pulse_myr / 2)
+            mid = np.where(np.abs(t - centre) <= self.pulse_myr / 2, self.pulse, comb)
         else:
             raise ValueError(self.history)
         return np.where(t > self.t0, 0.0, np.where(t > self.tau0, mid, 1.0))

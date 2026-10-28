@@ -496,8 +496,14 @@ uv run models/f3/validate.py [--reps N] [--cells NAME ...] [--workers W] [--tag 
     h in (0, 0.5, 1, 1.5) times (T - tau). g = 0.001 is the near-constant member (the ceiling).
 - **Target and bound.** abar(T) = E[sum r_i a(t_i) 1{tau < t_i <= T}] / E[sum r_i 1{tau < t_i <= T}] over draws and ages. f*_H(T) is the
   largest abar(T) over paths in H whose profile likelihood-ratio test is not rejected; the reference rates are profiled jointly (L-BFGS-B
-  on log r_c) and the statistic is referred to chi-square(1) at `alpha`. States: `finite`, `ceiling-limited` (the class ceiling, 1 for H0, `h1_ceiling`
-  for H1, is not rejected), `unbounded` (no ceiling: `H1-no-ceiling`, where the bound is trivial), `zero-exposure`.
+  on log r_c). H0c, H0, logistic and H1 share one alternative, the best constant history on [0, ceiling], which belongs to each of
+  them, so the test stays conservative where the H0 bound is not attained; H0m uses its exact supremum over its explicit members.
+  States: `finite`, `ceiling-limited` (the class ceiling, 1 for H0, `h1_ceiling` for H1, is not rejected), `unbounded` (no ceiling:
+  `H1-no-ceiling`, where the bound is trivial), `zero-exposure`.
+- **Critical value** (`Problem.crit(T)`, review change of 2026-10-29). f* and the origin sets are one-sided upper limits on the older
+  exposure, so the statistic is referred to `exact_count_crit(n)`, n the older detections with part of their range in (tau, T]: the value
+  that reproduces the exact one-sided Poisson (Garwood) limit, 5.99 at n = 0 (P0 >= alpha) and falling towards 2.71. Chi-square(1) at 3.84,
+  the as-built default, rejects whenever P0 < 0.147 in the zero-count regime where F3's data lie.
 - **Origin sets.** T is excluded when the LR for "a >= f_min on (tau, T]" (maximum over f in [f_min, 1] against the maximum over f in [0, 1]
   at the same T) exceeds the critical value. H0m takes the best delay d for both: the null is "some d on the grid and f >= f_min explain the
   absences". A set is a list of runs on the 2 Myr grid from tau to the oldest possible unit age plus the longest delay, then the
@@ -527,75 +533,67 @@ uv run models/f3/validate.py [--reps N] [--cells NAME ...] [--workers W] [--tag 
 
 ### Smoke results
 
-Six cells, 200 replicates each (`out/validation_smoke.csv`), all with T0 = 476 Ma, tau0 = 452.8 Ma (a = 1 for younger ages),
-reference detection p = (0.12, 0.04) with class weights 0.6 / 0.4, scale 0.05 (505 units; about 110 reference and 90 to 135 older
-units), 60 boundary draws, 48 nodes, 2 Myr origin grid, readouts 1, 0.1, 0.01. Monte Carlo error on a coverage figure is at most 0.035
-(0.015 near 0.95). No replicate failed; every replicate had a certain detection.
+Six cells, 200 replicates each (`out/validation_smoke.csv`), re-run on 2026-10-29 after the review changes: 989 s on mac-mini with 8 workers at a load average near 19.
+- **Truth and design:** T0 = 476 Ma; tau0 = 452.8 Ma, with a = 1 at younger ages; reference detection p = (0.12, 0.04) with class weights 0.6 / 0.4; scale 0.05, giving 505 units (about 110 reference and 90 to 135 older).
+- **Settings:** 60 boundary draws, 48 nodes, a 2 Myr origin grid, read-outs 1, 0.1 and 0.01.
+- **Error:** the Monte Carlo error of a coverage near 0.95 is 0.015.
+- **Status:** no replicate failed, and every replicate had a certain detection.
 
-A replicate is **trivial** when T0 is at or below the estimated tau: the null is vacuous, the origin set contains T0 by construction
-and f* has no exposure. All-replicate coverages count trivial ones as covered (the unconditional property of the reported set);
-f* coverage is over the non-trivial ones (the only ones that report a bound). The estimator measures intensity relative to its own
-reference window, and that window is wherever the first appearance falls, so the true target is abar_rel = abar_true / a_ref, with a_ref
-the true path averaged over the realised reference units (`a_ref` below).
+The as-built run, with χ²₁ as the default and f* coverage counted over non-trivial replicates only, is in `c7729ad`.
 
-| Cell | Non-trivial | tau (median) | a_ref | r_hat / r_true | H0c f_min = 1: unbounded / older end | f_min = 0.1: unbounded |
-|---|---|---|---|---|---|---|
-| H0c f = 1, k = 2 | 55/200 | 477.1 | 0.99 | 1.02 | 0.01 / 489.1 | 0.99 |
-| H0c f = 0.3, k = 2 | 135/200 | 471.3 | 0.57 | 0.62 | 0.05 / 487.3 | 0.99 |
-| H0c f = 0.3, k = inf | 138/200 | 471.3 | 0.56 | 0.72 | 0.09 / 483.4 | 0.98 |
-| H0m f = 0.3, d = 6, k = 2 | 200/200 | 469.4 | 0.72 | 0.78 | 0.03 / 475.4 | 0.93 |
-| H0 comb duty 0.3, k = 2 | 134/200 | 471.3 | 0.56 | 0.63 | 0.14 / 483.3 | 0.97 |
-| logistic g = 0.5, h = 11.6, k = 2 | 197/200 | 469.4 | 0.90 | 0.99 | 0.01 / 473.4 | 0.95 |
+A replicate is **trivial** when T0 is at or below the estimated tau. Its null is vacuous, its origin set contains T0 by construction, and f* has no exposure, so it makes no claim and counts as covered. Coverage is over all replicates (`docs/f3-shape.md`: no conditioning on where the first appearance fell). Coverage over non-trivial replicates is reported beside it as a diagnostic.
 
-The older-end median is over bounded sets only. At f_min = 0.01 every set is unbounded.
+The estimator measures intensity relative to its own reference window, wherever the first appearance puts it. The true target is therefore abar_rel = abar_true / a_ref, where a_ref is the true path averaged over the realised reference units.
 
-Coverage. Origin test: the exact test at T0 at the largest read-out that is true of the truth (relative to the reference window), all
-replicates, chi-square(1) value 3.84 / candidate `exact_count_crit`. f*: over non-trivial replicates with exposure, for the classes that
-contain the truth, 3.84 / `exact_count_crit`; n in brackets.
+| Cell | Non-trivial | tau (median) | a_ref | H0c f_min = 1: bounded / older end | f_min = 0.1: unbounded |
+|---|---|---|---|---|---|
+| H0c f = 1, k = 2 | 55/200 | 477.1 | 0.99 | 0.965 / 493.1 | 1.00 |
+| H0c f = 0.3, k = 2 | 135/200 | 471.3 | 0.57 | 0.73 / 489.3 | 0.995 |
+| H0c f = 0.3, k = inf | 138/200 | 471.3 | 0.56 | 0.785 / 489.4 | 0.99 |
+| H0m f = 0.3, d = 6, k = 2 | 200/200 | 469.4 | 0.72 | 0.89 / 477.4 | 0.975 |
+| H0 comb duty 0.3, k = 2 | 134/200 | 471.3 | 0.56 | 0.675 / 485.3 | 1.00 |
+| logistic g = 0.5, h = 11.6, k = 2 | 197/200 | 469.4 | 0.90 | 0.955 / 475.4 | 0.985 |
+
+The older-end median is over bounded sets only. At f_min = 0.01, every set is unbounded.
+
+Coverage over all replicates, shown as estimator / χ²₁ (3.84) for comparison. The origin columns use the exact test at T0 at the largest read-out that is true of the truth. The f* columns cover the classes that contain the truth. n is given where it is not 200.
 
 | Cell | Origin H0c | Origin H0m | f* H0c | f* H0m | f* H0 | f* logistic | f* H1 |
 |---|---|---|---|---|---|---|---|
-| H0c f = 1, k = 2 | 0.94 / 0.95 | 0.99 / 0.99 | 0.80 / 0.84 (55) | 0.80 / 0.84 (55) | 0.80 / 0.84 (55) | - | 0.82 / 0.85 (55) |
-| H0c f = 0.3, k = 2 | 1.00 / 1.00 | 1.00 / 1.00 | 0.90 / 0.98 (135) | 0.93 / 0.98 (135) | 0.93 / 0.99 (135) | - | 0.98 / 0.99 (135) |
-| H0c f = 0.3, k = inf | 1.00 / 1.00 | 1.00 / 1.00 | 0.87 / 0.96 (138) | 0.88 / 0.96 (138) | 0.87 / 0.96 (138) | - | 0.91 / 0.97 (138) |
-| H0m f = 0.3, d = 6, k = 2 | none true | 1.00 / 1.00 | - | 0.94 / 0.96 (200) | 0.95 / 0.96 (200) | - | 0.98 / 0.98 (200) |
-| H0 comb 0.3, k = 2 | 1.00 / 1.00 (n 66) | 1.00 / 1.00 (n 163) | - | - | 0.90 / 0.96 (134) | - | 0.93 / 0.97 (134) |
-| logistic, k = 2 | 1.00 / 1.00 (n 3) | 1.00 / 1.00 | - | - | 0.92 / 0.94 (197) | 0.88 / - (197) | 0.94 / 0.95 (197) |
-
-States over the non-trivial replicates (finite / ceiling-limited; `H1-no-ceiling` is unbounded in 0.98 to 1.00 of replicates):
-H0c 0.20 to 0.76 finite across cells (0.20 at f = 1, 0.47 at f = 0.3, 0.76 for the logistic), H0 the same, H1 0.72 to 0.97 finite.
+| H0c f = 1, k = 2 | 0.955 / 0.945 | 0.995 | 0.955 / 0.945 | 0.955 / 0.945 | 0.955 / 0.945 | - | 0.96 / 0.95 |
+| H0c f = 0.3, k = 2 | 1.00 | 1.00 | 0.985 / 0.935 | 0.985 / 0.95 | 0.99 / 0.95 | - | 0.99 / 0.985 |
+| H0c f = 0.3, k = inf | 1.00 | 1.00 | 0.97 / 0.91 | 0.975 / 0.915 | 0.975 / 0.91 | - | 0.98 / 0.935 |
+| H0m f = 0.3, d = 6, k = 2 | none true | 1.00 | - | 0.965 / 0.94 | 0.965 / 0.95 | - | 0.985 / 0.98 |
+| H0 comb 0.3, k = 2 | 1.00 (n 66) | 1.00 (n 163) | - | - | 0.97 / 0.935 | - | 0.98 / 0.95 |
+| logistic, k = 2 | 1.00 (n 3) | 1.00 | - | - | 0.94 / 0.92 | 0.93 / - | 0.95 / 0.94 |
 
 **What the smoke run shows.**
 
-1. **The chi-square(1) test is anti-conservative where the F3 data live, in the zero-count regime.** With no older detection the
-   statistic is -2 log P0 and a size-0.05 test needs P0 <= 0.05, that is a critical value of 5.99, not 3.84: 3.84 rejects whenever P0 < 0.147.
-   With exposure E (the summed reference rates of the older units in (tau, T]) between 1.92 and 3, the true origin is rejected with
-   probability up to 0.147. The stationary cell (a = 1 on (tau0, T0], the null at its boundary) shows it. The unconditional coverage of the
-   origin test at T0 is 0.945 (3.84), 0.885 (2.71, the one-sided boundary value) and 0.970 (5.99): near nominal overall because 72% of
-   replicates are trivial. Among the 55 non-trivial replicates, where a bound is actually reported, it is 0.80 (3.84), 0.84 (count rule) and
-   0.89 (5.99): the overall size is spread over the few replicates that can reject. The f* coverages in the other cells are 0.87 to 0.95 at 3.84 (0.87, 0.90, 0.90 and 0.92 for H0c or H0 in four cells) and 0.94 to 0.99 under the count rule. The count rule (`exact_count_crit`, 5.99 at no older detection,
-   falling to 2.7 as detections accumulate) is a candidate replacement, not the default. Whether the validated quantity is the unconditional
-   set or the bound conditional on a non-trivial result is a choice the full grid must make.
-2. **The reference window is not at a = 1 when the history is below 1 for some stages after tau0.** The first appearance then falls
-   inside that era, and the reference rate is estimated at 0.62 to 0.78 of its true value (a_ref 0.56 to 0.72 for f = 0.3, the comb and the delayed step). f* is
-   read relative to the reference window, which is what the harness scores. A reader of "f* = 0.5" is told 0.5 of whatever the window holds.
-3. **Informativeness is low at this scale.** The older end of the f_min = 1 set has median 473 to 489 Ma, 4 to 16 Myr beyond tau; sets at
-   f_min = 0.1 and 0.01 are unbounded in 93 to 100% of replicates; 20 to 76% of non-trivial replicates give a finite f* under H0c and H0.
-4. **H0m sets are wider than H0c sets** by exactly the longest delay (10 Myr) in every cell, as they must be; with no delay bound nothing is excluded.
-5. **H1 is more often finite** than H0 (72 to 97% against 20 to 76%) because its ceiling is 3 and 3 times the intensity is rejected at much lower exposure. Its
-   finiteness is the ceiling's doing (stated in the state).
+1. **The count-matched critical value restores nominal coverage.**
+   - **Count-matched value:** f* coverage over all replicates is 0.93 to 0.99.
+   - **χ²₁ at 3.84:** 0.91 to 0.95, and below 0.93 in two cells.
+   - **The as-built run** showed the cause. In the zero-count regime the statistic is -2 log P0, and 3.84 rejects whenever P0 < 0.147.
+   - **Lowest values:** the logistic cell gives 0.94 for H0 and 0.93 for the logistic class. The logistic grid contains the truth only approximately, because h is a fraction of T - tau and the normalisation uses the estimated tau. The full grid must watch this cell.
+2. **Coverage concentrates where it can fail.** In the stationary cell (f = 1, the null at its boundary), coverage over the 55 non-trivial replicates is 0.84, against 0.955 overall. The test's size is spent on the few replicates in which the first appearance falls below the origin. This is the relevant-subset behaviour of any test whose rejection needs an observed gap; it is reported, not accepted against.
+3. **The reference window is not at a = 1 when the history is below 1 for some stages after tau0.** The first appearance falls inside that era, and a_ref is 0.56 to 0.72 for f = 0.3, the comb and the delayed step. f* reads relative to the window: "f* = 0.5" means 0.5 of whatever intensity the window holds.
+4. **Informativeness is low at this scale (505 units).**
+   - The f_min = 1 set is bounded in 67 to 97% of replicates, and its older end lies 6 to 18 Myr beyond the median tau.
+   - Sets at f_min = 0.1 and 0.01 are unbounded in 97.5 to 100% of replicates.
+   - Among non-trivial replicates, 16 to 55% give a finite f* under H0, and 59 to 90% under H1. H1 is finite more often because a ceiling of 3 is rejected at lower exposure, and its state says so.
+5. **H0m origin sets end the longest delay (10 Myr) beyond H0c's when no older unit detects** (10 to 12 Myr on the 2 Myr grid). They end sooner in 8 of about 800 bounded pairs, where older detections favour a delayed step as the alternative. H0m informs the origin only through its declared delay bound.
 
 ### Open choices
 
 - **Scale 0.05 of the Palynodata document counts** (505 units). Documents are counted in every stage they overlap, so a table of unique
   blocks will be smaller than `n_docs`; 0.05 gives about 110 reference and 100 older units and 0.5 to 11 s per replicate. The scale of the real table is unknown. It sets the power,
   not the construction.
-- **Grids**: origin step 2 Myr (the full run should use 0.5 or 1 and `age_draws` 400); H0m delays (0, 2, 6, 10) Myr (`Spec.delays_ma`,
-  not yet a spec field); logistic g and h grids above; 60 boundary draws and 48 nodes in the harness; 400 draws and 48 nodes by default in `Spec`.
-  The 48 nodes need 64 for k < 1.
+- **Grids**: origin step 2 Myr (the full run should use 0.5 or 1 and `age_draws` 400); H0m delays (0, 2, 6, 10) Myr; logistic g and h
+  grids above; 60 boundary draws and 48 nodes in the harness; 400 draws and 48 nodes in `Spec` and the draft specification. The 48 nodes
+  need 64 for k < 1.
 - **Design**: classes p = (0.12, 0.04), weights 0.6 / 0.4; 12% broad-range units; clusters of mean size 3; T0 = 476 and tau0 = 452.8 chosen
   so that the first appearance falls below the origin often enough (T0 at 466 gave 81% trivial replicates under f = 1).
-- **Critical value**: chi-square(1) at 0.95, as specified; `exact_count_crit` recorded beside it.
+- **Critical value**: `exact_count_crit`; the harness also records f* under chi-square(1) (`_chi2` columns) and stores the origin
+  statistic `lr0`, so 3.84, 2.71 and 5.99 can be applied afterwards.
 - **Boundary shortcut and tolerances**: L-BFGS-B `ftol` 1e-10, f searched to 5e-3, f* root to 1e-4; `fcover` tolerance 1e-3.
 
 ### Limits
@@ -603,7 +601,7 @@ H0c 0.20 to 0.76 finite across cells (0.20 at f = 1, 0.47 at f = 0.3, 0.76 for t
 - Cells are correctly specified; no misassigned classes, reporting or facies differences, regional confinement or H1 truths. The H1 and
   logistic truths are not run beyond one cell each.
 - H0 and H1 use the proportional duty allocation, which is the worst case only when stages alike in class mix. For two classes of p = 0.30
-  and 0.03 in separate stages of 100 units, the best allocation differs by at most 0.06 in log P0 (LR 0.11 of 3.84), so f* is understated by a few per cent.
-  The pulse duration `h1_pulse_myr` is not used: the bound holds for any duration up to the stated one and is conservative for it.
+  and 0.03 in separate stages of 100 units, the best allocation differs by at most 0.06 in log P0, so f* is understated by a few per cent.
+  H1 is "any path up to `h1_ceiling`": the bound holds for pulses of any duration, so the specification no longer carries one.
 - The logistic members are on a grid and their normalisation is at the estimated tau, so a true logistic with tau0 different from the estimated tau is not exactly a member.
-- `Spec.from_toml` reads the draft specification, but `delays_ma`, `logistic_g`, `logistic_h_frac` and `nodes` are not spec fields yet.
+- `Spec.from_toml` requires every inference field; the draft specification declares the `Spec` defaults (`test_draft_specification_sets_every_inference_field`).

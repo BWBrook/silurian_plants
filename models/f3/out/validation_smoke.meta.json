@@ -118,15 +118,15 @@
     "broad_frac": 0.12,
     "cluster_mean": 3.0
   },
-  "elapsed_seconds": 1005.7212290763855,
+  "elapsed_seconds": 989.3467919826508,
   "workers": 8,
   "python": "3.14.4",
   "numpy": "2.5.4",
   "scipy": "1.18.1",
   "sha256": {
-    "envelope.py": "d0064d209b37cb6d407a2d9d924a682296fe7456b96a6299d96fd87a6e6be2a0",
-    "units_sim.py": "e58194bfe3e2d665f1d78d071cee8de6b82272d58928650cb479d387db7793bc",
-    "validate.py": "1d43bed9a0a9f21c054e64409d0c2aec796e1b2a2e67b9a029b1c6cb7c18e651",
+    "envelope.py": "560901bd68b2bf8f9295177ce99fd55357ce76e5c580f447226b3312df029f38",
+    "units_sim.py": "4a9c8ac428ec27d8072ed571d3a01cafe454067342c2d4269a3072181934c313",
+    "validate.py": "582cde2774b983a6f4b379e411f88e8168709d9a4b335c2905fb1dcbb5433ace",
     "timescale.csv": "29c6cc4a68b1746d1a67c66623e5df30ac5dd316257b55ca5948c9854886f826",
     "effort.csv": "4f19216162fda42511e1fcb830ed7cc995ea3d1667a49fee9a82874c08a3dc76"
   }

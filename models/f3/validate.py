@@ -15,9 +15,12 @@ and reference window, and records for the reported quantities whether they cover
   the test at t0 itself does not reject (`cover_exact`; its statistic `lr0` is stored, so other
   critical values can be applied afterwards). `applicable` is the largest read-out for which the
   hypothesis a >= f_min on (tau, t0] is true (none for a comb);
-- the same f* and test coverages under the candidate critical value envelope.exact_count_crit (5.99 when
-  no older unit detected), against the reported chi-square(1) value of 3.84;
-- f*_H(t0) >= the true abar(t0), for the classes H that contain the true history. The estimator measures
+  Sets use the estimator's critical value, envelope.exact_count_crit (5.99 when no older unit detected);
+  the summary also applies chi-square(1) (3.84), its one-sided value (2.71) and 5.99 to the stored lr0;
+- f*_H(t0) >= the true abar(t0), for the classes H that contain the true history, under the estimator's
+  critical value and (suffix _chi2) under chi-square(1) for comparison. A zero-exposure result makes no
+  claim and counts as covering: coverage is over all replicates, with no conditioning on where the first
+  appearance fell (docs/f3-shape.md); the non-trivial share is reported beside it. The estimator measures
   intensity relative to its reference window, which is wherever the first appearance falls and need not
   have a = 1 when the history is below 1 for some stages after tau0; the truth is therefore
   abar_rel = abar_true / a_ref, with a_ref the exposure-weighted mean of the true path over the realised
@@ -26,7 +29,8 @@ and reference window, and records for the reported quantities whether they cover
 - informativeness: unbounded sets, the older endpoint, the share of the domain excluded, and the four
   states of f*_H(t0).
 Replicates whose t0 lies at or below the estimated tau are `trivial`: the null is vacuous, the set
-contains t0 by construction and f* has zero exposure. Both coverages (all and non-trivial) are reported.
+contains t0 by construction and f* has zero exposure. Both coverages (all and non-trivial) are reported;
+the acceptance rule applies to coverage over all replicates.
 
 Also here: the two-stage acceptance rule for the full grid (stage1, stage2, pass_probability).
 Outputs: out/validation_smoke.csv (one row per cell), out/validation_smoke_reps.csv (one row per
@@ -60,11 +64,11 @@ AGE_DRAWS = 60
 NODES = 48
 READOUTS = (1.0, 0.1, 0.01)
 CLASSES = ("H0c", "H0m", "H0", "logistic", "H1")
-# the chi-square(1) value reported; the one-sided boundary value; the rule of three. `count` (per replicate,
-# envelope.exact_count_crit of the older detections) is the candidate replacement.
+# fixed comparators for the estimator's own critical value (`count`, envelope.exact_count_crit of the older
+# detections at t0): chi-square(1), its one-sided value, the rule of three.
 CRITS = {"chi2_1": float(stats.chi2.ppf(0.95, 1)), "one_sided": float(stats.chi2.ppf(0.90, 1)), "zero_count": -2 * math.log(0.05)}
 FSTAR_TOL = 1e-3
-ALT_CLASSES = ("H0c", "H0m", "H0", "H1")
+CHI2_CLASSES = ("H0c", "H0m", "H0", "H1")
 
 CELLS = [
     dict(name="H0c_f1.0_k2", history="H0c", f=1.0, k=2.0, scale=0.05),
@@ -199,14 +203,15 @@ def _replicate(cell: dict, rep: int) -> dict:
     out["abar_true"] = abar
     out["abar_rel"] = abar / a_ref
     for cls in CLASSES:
-        for suffix, crit in (("", None), ("2", crit_alt)):
-            if suffix and cls not in ALT_CLASSES:
+        for suffix, crit in (("", None), ("_chi2", CRITS["chi2_1"])):
+            if suffix and cls not in CHI2_CLASSES:
                 continue
             b = pr.fstar(cls, T0, crit)
             out[f"fstar{suffix}_{cls}"] = b.value
             out[f"state{suffix}_{cls}"] = b.state
-            member = cls in truth.members and b.state != "zero-exposure" and np.isfinite(abar)
-            out[f"fcover{suffix}_{cls}"] = bool(b.value >= out["abar_rel"] - FSTAR_TOL) if member else None
+            claim = b.state != "zero-exposure" and np.isfinite(abar)
+            covered = bool(b.value >= out["abar_rel"] - FSTAR_TOL) if claim else True
+            out[f"fcover{suffix}_{cls}"] = covered if cls in truth.members else None
     b = pr.fstar("H1-no-ceiling", T0)
     out["state_H1-no-ceiling"] = b.state
     out["seconds"] = time.time() - t_start
@@ -261,14 +266,13 @@ def summarise(cell: dict, rows: list[dict]) -> dict:
         out[f"cover_exact_applicable_nontrivial_count_{cls}"] = mean(r[f"lr0_{cls}_{r[f'fmin_applicable_{cls}']:g}"] <= r["crit_alt"] for r in app if not r["trivial"])
         out[f"n_applicable_{cls}"] = len(app)
     for cls in CLASSES:
-        cov = [r[f"fcover_{cls}"] for r in ok if r[f"fcover_{cls}"] is not None]
-        out[f"fcover_{cls}"] = mean(cov)
-        out[f"n_fcover_{cls}"] = len(cov)
-        if cls in ALT_CLASSES:
-            out[f"fcover2_{cls}"] = mean(r[f"fcover2_{cls}"] for r in ok if r[f"fcover2_{cls}"] is not None)
-            out[f"fstar2_median_{cls}"] = median(r[f"fstar2_{cls}"] for r in nt if r[f"state2_{cls}"] == "finite")
-            for state in ev.STATES:
-                out[f"state2_nontrivial_{cls}_{state}"] = mean(r[f"state2_{cls}"] == state for r in nt)
+        for suffix in ("", "_chi2") if cls in CHI2_CLASSES else ("",):
+            key = f"fcover{suffix}_{cls}"
+            out[key] = mean(r[key] for r in ok if r[key] is not None)
+            out[f"fcover{suffix}_nontrivial_{cls}"] = mean(r[key] for r in nt if r[key] is not None)
+            out[f"n_fcover{suffix}_nontrivial_{cls}"] = sum(r[key] is not None for r in nt)
+        if cls in CHI2_CLASSES:
+            out[f"fstar_chi2_median_{cls}"] = median(r[f"fstar_chi2_{cls}"] for r in nt if r[f"state_chi2_{cls}"] == "finite")
         for state in ev.STATES:
             out[f"state_{cls}_{state}"] = mean(r[f"state_{cls}"] == state for r in ok)
             out[f"state_nontrivial_{cls}_{state}"] = mean(r[f"state_{cls}"] == state for r in nt)

@@ -3,6 +3,19 @@
 Dated record of decisions that shape the programme. Newest first. Say who decided, and quote
 Barry exactly (with source) or label a paraphrase.
 
+## 2026-10-29: F3 estimator built and reviewed; six refinements (Claude, awaiting Codex)
+
+- **Built.** The compatibility estimator, simulator and validation harness are in `models/f3/`. A Claude Sonnet 5.5 subagent built them to Claude Opus 5.5's construction. Claude Opus 5.5 reviewed them. The as-built version and its smoke run are preserved at `c7729ad`.
+- **Refinements** (Claude; recorded in `docs/f3-shape.md`, "Refinements from the estimator build"):
+  - the critical value is matched to the exact one-sided Poisson limit for the older detections (5.99 at none), replacing χ²₁'s 3.84, which was anti-conservative in the zero-count regime: as-built f* coverage was 0.87–0.95;
+  - H0c, H0, logistic and H1 share the best constant history as their alternative;
+  - H1 is any path up to its ceiling, with the pulse duration dropped;
+  - *a* = 1 is the realised reference window's intensity, stated in the biological layer;
+  - τ is the base of the oldest certain-detection stage (the draft specification's "top" was a misnomer);
+  - validation coverage is unconditional, with non-trivial coverage as a diagnostic.
+- **Codex's review of these, and of H0 and the two-stage rule, is still open** (Correspondence 99). If Codex objects, both positions go to Barry.
+- **Structural review.** The structure served: the smoke run found a calibration defect before any real data existed, which is what validating first is for. One assumption was exposed. A reference window anchored on the observed first appearance measures intensity relative to whatever that window holds, so "relative to the reference" needs care in the biological layer. No evidence changed a question; Q1's next step (the full validation grid) stands.
+
 ## 2026-10-28: F3 reshape v3 adopted
 
 - **Adopted** (Barry, chat, 2026-10-28: "Yes, adopt v3"). `docs/f3-shape.md` v3 (`fd36a9c`) governs F3's statistical contribution as the third amendment to `docs/plan-f3.md`. The question becomes which explicit sampling and biological assumptions make older origins incompatible with the fossil absences behind the clock maxima. The deliverable is a layered compatibility analysis over eligible sampling units, validated as a complete procedure before any real-data result.

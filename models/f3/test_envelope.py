@@ -278,11 +278,21 @@ def test_finite_state_matches_the_zero_count_bound():
 
     r_hat = optimize.minimize_scalar(lambda r: -ell(r, 0.0), bounds=(1e-4, 3), method="bounded", options={"xatol": 1e-10}).x
     prof = lambda f: -optimize.minimize_scalar(lambda r: -ell(r, f), bounds=(1e-4, 3), method="bounded", options={"xatol": 1e-10}).fun
-    want = optimize.brentq(lambda f: 2 * (ell(r_hat, 0.0) - prof(f)) - pr.spec.crit, 0.0, 1.0)
+    assert pr.crit(475.0) == pytest.approx(-2 * math.log(0.05))  # no older detection: P0 >= alpha
+    want = optimize.brentq(lambda f: 2 * (ell(r_hat, 0.0) - prof(f)) - pr.crit(475.0), 0.0, 1.0)
     assert b.value == pytest.approx(want, rel=2e-3)
     assert pr.fstar("H0", 475.0).value >= b.value - 1e-6
     assert pr.fstar("H1", 475.0).value >= pr.fstar("H0", 475.0).value - 1e-6
     assert pr.fstar("H0m", 475.0).value >= b.value - 1e-3
+
+
+def test_classes_stay_nested_when_older_units_detect():
+    """H0 and H1 share H0c's alternative (the best constant history), so their f* cannot fall below H0c's."""
+    pr = problem(strong_reference() + older_rows(60) + older_rows(2, d=1, cluster0=5000), k=2.0)
+    T = 475.0
+    assert pr.n_older_detections(T) == 2 and pr.crit(T) == pytest.approx(ev.exact_count_crit(2))
+    c, h0, h1 = (pr.fstar(cls, T) for cls in ("H0c", "H0", "H1"))
+    assert c.state == "finite" and h0.value >= c.value - 1e-4 and h1.value >= h0.value - 1e-4
 
 
 def test_logistic_class_reports_the_largest_unrejected_expected_path():
@@ -402,11 +412,21 @@ def test_true_path_and_target():
     assert pr.abar_truth(comb.path, 476.0, s.r[pr.calibrated]) == pytest.approx(0.3, abs=0.03)  # partial teeth in short ranges
 
 
+def test_h1_truth_stays_within_its_ceiling():
+    a = us.Truth(history="H1", f=0.3, t0=476.0).path(np.linspace(450.0, 480.0, 30001))
+    assert a.max() == 3.0 and set(np.unique(a)) <= {0.0, 1.0, 3.0}
+
+
+def test_draft_specification_sets_every_inference_field():
+    spec = ev.Spec.from_toml(sim.ROOT / "models" / "f3" / "specs" / "m2-draft.toml")
+    assert spec == ev.Spec()  # the draft declares the defaults; a frozen spec need not
+
+
 def test_harness_replicate_records_coverage_informativeness_and_states():
     cell = next(c for c in val.CELLS if c["name"] == "H0c_f0.3_kinf")
     row = val.replicate((cell, 0))
     assert row["error"] == "" and row["no_tau"] is False
-    for key in ("tau", "trivial", "cover_set_H0c_1", "cover_set_H0m_0.1", "lr0_H0c_0.01", "endpoint_H0c_1", "state_H0", "fcover_H0c", "fcover2_H0c", "crit_alt", "a_ref", "abar_rel", "state_H1-no-ceiling"):
+    for key in ("tau", "trivial", "cover_set_H0c_1", "cover_set_H0m_0.1", "lr0_H0c_0.01", "endpoint_H0c_1", "state_H0", "fcover_H0c", "fcover_chi2_H0c", "crit_alt", "a_ref", "abar_rel", "state_H1-no-ceiling"):
         assert key in row
     assert row["state_H0"] in ev.STATES and row["state_H1-no-ceiling"] in ev.STATES
     summary = val.summarise(cell, [row])

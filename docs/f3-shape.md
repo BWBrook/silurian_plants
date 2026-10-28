@@ -1,6 +1,6 @@
 # The shape of F3 (v3)
 
-**Status: adopted, v3, 2026-10-28** (Barry, chat: "Yes, adopt v3"). Drafted by Claude Opus 5.5; Codex agreed the scientific direction (Correspondence `silurian-plants`, discussion 99, message 2484). Two refinements are Claude's and still await Codex's reply: the primary history class H0 and the two-stage acceptance rule. If Codex objects, the disagreement goes back to Barry stated both ways. This document governs F3's statistical contribution (`docs/plan-f3.md`, third amendment). Nothing here has yet been applied to real data.
+**Status: adopted, v3, 2026-10-28** (Barry, chat: "Yes, adopt v3"). Drafted by Claude Opus 5.5; Codex agreed the scientific direction (Correspondence `silurian-plants`, discussion 99, message 2484). Two refinements are Claude's and still await Codex's reply: the primary history class H0 and the two-stage acceptance rule. Building the estimator (2026-10-29) exposed further points. They are recorded under "Refinements from the estimator build" and also await Codex. If Codex objects, the disagreement goes back to Barry stated both ways. This document governs F3's statistical contribution (`docs/plan-f3.md`, third amendment). Nothing here has yet been applied to real data.
 
 **Revision history.**
 - **v1** (`f01d4bd`) followed Barry's adoption of the second amendment (chat, 2026-10-28: "Yes, agreed, adopt it. Then let's re-assess the full shape of F3 given this constraint").
@@ -52,7 +52,7 @@ Three layers, each with its assumptions stated.
 **History classes are declared before analysis, and each gets its own result:**
 - **H0 (primary; new in v3, awaiting Codex): no pre-appearance intensity above the reference**, *a*(*t*) ≤ 1. This is the biological assumption that a lineage was not more readily encountered before its first recorded appearance than after it. It includes every monotone rise, logistic and birth–death expected paths among them. It is what makes a finite bound possible: Codex's counterexamples (V2-R1) show that unrestricted pulses, or a cluster with a real chance of no detection opportunity, leave no finite bound at all. Under H0 the ceiling is the reference itself, not an arbitrary choice.
 - **H0m:** the monotone non-decreasing subset of H0, used for confidence sets on the origin.
-- **H1, sensitivity:** bounded pulses above the reference, with the ceiling and pulse duration stated.
+- **H1, sensitivity:** any path up to a stated ceiling above the reference, so pulses of any duration up to it. The pulse duration was dropped on 2026-10-29: the bound does not use it (see the refinements below).
 
 **Each result is reported in one of four states:**
 - **finite data bound:** below the class ceiling;
@@ -62,7 +62,7 @@ Three layers, each with its assumptions stated.
 
 Results from different history classes are not merged into one headline.
 
-**Inference is by test inversion.** For a fixed, predeclared history class, inverting level-0.05 tests of candidate origins gives a 95% confidence set for the origin. Its older endpoint is reported when the set is connected; otherwise the set is reported as found. The summary read-outs, where *f\**_H(*T*) reaches 1, 0.1 and 0.01 of the reference, each carry marginal coverage only. Any claim about the whole curve at once needs separate calibration. Reference-rate uncertainty and the dependence of the reference window on the observed first appearance are part of the test.
+**Inference is by test inversion.** For a fixed, predeclared history class, inverting level-0.05 tests of candidate origins gives a 95% confidence set for the origin. Its older endpoint is reported when the set is connected; otherwise the set is reported as found. The summary read-outs, where *f\**_H(*T*) reaches 1, 0.1 and 0.01 of the reference, each carry marginal coverage only. Any claim about the whole curve at once needs separate calibration. Reference-rate uncertainty and the dependence of the reference window on the observed first appearance are part of the test. The critical value is matched to the exact one-sided Poisson limit for the number of older detections. It is 5.99 when there are none, not χ²₁'s 3.84 (refinements below).
 
 ### 2. Biological translation
 
@@ -145,6 +145,25 @@ The one-stage rule alone passes a perfectly calibrated cell only 83% of the time
 
 **A failing cell, or a plausible mis-specified scenario that reverses a conclusion, changes the report.** The conclusion is qualified by that assumption, the model is expanded, or the sensitivity is reported as unresolved. It is not confined to a robustness table.
 
+## Refinements from the estimator build (2026-10-29, Claude; awaiting Codex)
+
+The estimator, simulator and smoke-scale harness are in `models/f3/` (`envelope.py`, `units_sim.py`, `validate.py`). They were built by a Claude Sonnet 5.5 subagent to the construction above and reviewed by Claude Opus 5.5. The as-built smoke run is preserved at `c7729ad`. It and the review changed six points.
+
+1. **Critical value.** Both *f\** and the origin sets are one-sided upper limits on the older units' exposure, and F3's older units mostly have no detections. In that regime the statistic is −2 log P0, so χ²₁ at 3.84 rejects whenever P0 < 0.147. A one-sided level-0.05 test needs P0 < 0.05, a critical value of 5.99.
+   - **As-built smoke run (χ²₁):** *f\** coverage over non-trivial replicates was 0.87–0.95 in the cells below the ceiling.
+   - **Count-matched value:** 0.94–0.99.
+   - **Smoke re-run with all the refinements:** coverage over all replicates is 0.93–0.99, against 0.91–0.95 under χ²₁ (`models/f3/README.md`, "Smoke results").
+   - **The rule now:** the critical value reproduces the exact one-sided Poisson (Garwood) limit for the number *n* of older detections in (τ, *T*]. It is 5.99 at *n* = 0 and falls towards the one-sided χ² value of 2.71.
+2. **One alternative for the bounded classes.** H0c, H0, logistic and H1 are tested against the best constant history on [0, ceiling]. That history belongs to each of those classes, so the test stays conservative where the H0 bound is not attained. H0m's members are explicit, and it uses its own exact supremum. With no older detection, nothing changes.
+3. **H1 is a ceiling class.** The convex-order bound holds for every path up to the ceiling, so a pulse-duration limit adds nothing to it. H1 is now "any path up to *C* times the reference".
+4. **The scale is the reference window's own intensity.** *a* = 1 means the window's intensity, wherever the observed first appearance puts the window. If the first appearance falls inside a rise, the window is itself low. In the smoke cells with a(t) = 0.3 before τ0, the realised window averaged 0.56–0.72 of the established intensity. *f\** is then relative to that lower level, which a reader of "*f\** = 0.5" must be told. The biological layer states this. The validation scores the truth on the same scale.
+5. **τ is the base (older boundary) of the oldest stage holding a certain detection.** That stage opens the reference window, so older units are those with any part of their range older than it. The draft specification had called this the stage's "top"; the name is now fixed.
+6. **Limits stated, not fixed:**
+   - **H0 is bounded over equal-duty paths only.** A path that concentrates its duty where unit rates are higher fits slightly better when class mix differs between stages. For a 10-fold class contrast in separate stages the gap is at most 0.06 in log P0, about 3% in *f\**.
+   - **With no older detection, H0m origin sets end the longest declared delay beyond H0c's.** H0m adds to the origin only through that declared bound; its value is in *f\**.
+
+**What is validated.** Coverage is over all replicates, as above. A replicate whose true origin lies at or below the estimated τ makes no claim and counts as covered. Coverage over the non-trivial replicates is reported beside it, because it is lower: in the stationary as-built cell it was 0.84 under the count-matched value. It is a relevant-subset diagnostic, not the acceptance quantity.
+
 ## Where the evidence stands (2026-10-28, before any estimator)
 
 The counts below are Palynodata documents counted in every stage they overlap; the unit table replaces them.
@@ -225,5 +244,6 @@ These are new in v3, posted in discussion 99:
   - Palynodata age names and crosswalk grade as age evidence;
   - E1 and E2 outcomes filled on the same pilot units;
   - a `readings.csv` in `data/occurrences/` defining the named readings.
+- **The refinements from the estimator build** (2026-10-29): the count-matched critical value, the shared alternative, H1 as a ceiling class, the window-relative scale, and the validated quantity.
 
 Codex agrees the rest. Anything unresolved goes to Barry with both positions stated.

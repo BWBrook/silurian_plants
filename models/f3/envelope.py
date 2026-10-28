@@ -49,21 +49,35 @@ History classes for the period older than tau (origin T > tau; a(t) = 0 for t > 
        constant path a = x (Jensen), which maximises its detection probability. Each unit's bound
        depends only on its own mean, so the product is a valid upper bound on the likelihood of every
        path with those means. The bound treats ages as independent given the boundary draw, and is
-       averaged over boundary draws.
+       averaged over boundary draws. Limitation: only equal-duty paths are bounded. A path that puts
+       more of its duty where the units' rates are higher can fit better at the same abar when the
+       class mix differs between stages; for p = 0.30 against 0.03 in separate stages the gap is at
+       most 0.06 in log P0 (about 3% in f*). f*_H0 is therefore the equal-duty bound, not the
+       supremum over every path.
   logistic  a(t) = L(t) / L(tau), L(t) = 1 / (1 + exp(-g ((T - t) - h))), g and h profiled over a grid (h as a
        fraction of T - tau, so that late rises are on it; g = 0.001 is the near-constant member). Its
        members are tested against the same alternative as H0c (the best constant history, f = 0 included),
        not against the best logistic member, so that f* for a subclass never exceeds f* for H0.
-  H1   sensitivity: the same bound with ceiling h1_ceiling in place of 1 (Bernoulli height C). The pulse
-       duration is not separate input: the bound holds for pulses of any duration up to the allowed ones
-       and is conservative for them. With no ceiling the bound is trivial and the result unbounded.
+  H1   sensitivity: any path 0 <= a <= h1_ceiling, so every pulse of that height or less, of any
+       duration; the same bound with Bernoulli height C. With no ceiling the bound is trivial and the
+       result unbounded.
 
 Target. For origin T, abar(T) = E_ages[sum_i r_i a(t_i) 1{tau < t_i <= T}] / E_ages[sum_i r_i 1{tau < t_i
 <= T}], expectations over the boundary draws and the latent ages (the integrated reference exposure in
-the denominator). f*_H(T) is the largest abar(T) over paths in H that a profile likelihood-ratio test
-does not reject, the reference rates p_c profiled jointly with the history parameters; the statistic is
-referred to chi-square with 1 df. Each (H, T) has one of four states: finite, ceiling-limited,
+the denominator). a = 1 is the reference window's own intensity, wherever the first appearance puts
+the window, so abar is relative to it. f*_H(T) is the largest abar(T) over paths in H that a profile
+likelihood-ratio test does not reject, the reference rates p_c profiled jointly with the history
+parameters. H0c, H0, logistic and H1 are tested against the same alternative, the best constant
+history on [0, C]. It belongs to each of those classes, so the statistic never exceeds the one with the
+class's own supremum, and the test stays conservative where the H0 bound is not attained. H0m's members
+are explicit, so it uses its exact supremum. Each (H, T) has one of four states: finite, ceiling-limited,
 unbounded, zero-exposure.
+
+Critical value. Both f* and the origin sets are one-sided upper limits on the older units' exposure.
+The statistic is referred to exact_count_crit(n), n the older units detected with part of their range in
+(tau, T]: the value that reproduces the exact one-sided Poisson (Garwood) limit. With no older detection
+it is -2 log alpha = 5.99 (P0 >= alpha), falling towards the one-sided chi-square value 2.71. Chi-square(1)
+at 3.84 is anti-conservative at zero counts, where the data lie: it rejects whenever P0 < 0.147.
 
 Origins. T is excluded at level alpha when the hypothesis "a >= f_min on (tau, T]" is rejected (H0c) or
 when no delay d on the grid and f >= f_min explains the absences (H0m). Each f_min read-out is a
@@ -148,7 +162,6 @@ class Spec:
     domain_ma: tuple[float, float] = (0.0, 560.0)
     classes: tuple[str, ...] = ("H0c", "H0", "H0m", "logistic", "H1")
     h1_ceiling: float = 3.0
-    h1_pulse_myr: float = 2.0
     delays_ma: tuple[float, ...] = (0.0, 2.0, 6.0, 10.0)
     logistic_g: tuple[float, ...] = (0.001, 0.15, 0.5, 2.0)
     logistic_h_frac: tuple[float, ...] = (0.0, 0.5, 1.0, 1.5)
@@ -169,17 +182,15 @@ class Spec:
             domain_ma=tuple(t["older"]["domain_ma"]),
             classes=tuple(h["classes"]),
             h1_ceiling=h["h1_ceiling"],
-            h1_pulse_myr=h["h1_pulse_myr"],
-            delays_ma=tuple(h.get("delays_ma", cls.delays_ma)),
+            delays_ma=tuple(h["delays_ma"]),
+            logistic_g=tuple(h["logistic_g"]),
+            logistic_h_frac=tuple(h["logistic_h_frac"]),
             alpha=inf["alpha"],
             readouts=tuple(inf["readouts"]),
             cluster_shape_k=inf["cluster_shape_k"],
             age_draws=inf["age_draws"],
+            nodes=inf["nodes"],
         )
-
-    @property
-    def crit(self) -> float:
-        return float(stats.chi2.ppf(1 - self.alpha, 1))
 
 
 def gamma_nodes(k: float, n: int = 48, eps: float = 1e-9) -> tuple[np.ndarray, np.ndarray]:
@@ -216,10 +227,10 @@ def p0_bound(r: np.ndarray, m: np.ndarray, k: float, nodes: int = 48) -> float:
 
 
 def exact_count_crit(n: int, alpha: float = 0.05) -> float:
-    """A candidate replacement for the chi-square(1) critical value: the LR value at which the Poisson
-    upper limit for the older exposure equals the exact one-sided limit given n older detections,
-    2 (mu - n + n log(n / mu)) with mu = chi2_{2(n+1)}(1 - alpha) / 2. For n = 0 it is -2 log(alpha) = 5.99
-    (the rule of three); it falls towards 2.7 as n grows. The reported default stays chi-square(1)."""
+    """The critical value: the LR value at which the Poisson upper limit for the older exposure equals the
+    exact one-sided limit given n older detections, 2 (mu - n + n log(n / mu)) with
+    mu = chi2_{2(n+1)}(1 - alpha) / 2. For n = 0 it is -2 log(alpha) = 5.99 (the rule of three); it falls
+    towards 2.71 as n grows."""
     mu = stats.chi2.ppf(1 - alpha, 2 * (n + 1)) / 2
     return float(2 * (mu - n + (n * math.log(n / mu) if n else 0.0)))
 
@@ -241,7 +252,7 @@ class OriginSet:
 
     cls: str
     f_min: float
-    crit: float
+    crit: np.ndarray
     T: np.ndarray
     lr: np.ndarray
     domain_hi: float
@@ -531,6 +542,10 @@ class Problem:
         """Older units that detected and have part of their age range in (tau, T]."""
         return int(((self.od == 1) & (self.window(T).qmean > 0)).sum())
 
+    def crit(self, T: float) -> float:
+        """The critical value at origin T (module docstring)."""
+        return exact_count_crit(self.n_older_detections(T), self.spec.alpha)
+
     def exposure(self, T: float, r: np.ndarray | None = None) -> float:
         """The integrated reference exposure: sum_i r_i E[1{tau < t_i <= T}]."""
         w = self.window(T)
@@ -542,7 +557,7 @@ class Problem:
     def _scalar_fstar(self, cls: str, kind: str, T: float, C: float, crit: float) -> Bound:
         if self.exposure(T) <= 0:
             return Bound(cls, T, "zero-exposure", math.nan, C)
-        hat, x_hat = self.hat(kind, T, C)
+        hat, x_hat = self.hat("const", T, C)
         lr = lambda x: 2 * (hat - self.ell_p(kind, T, x, C))
         if not np.isfinite(hat):
             return Bound(cls, T, "finite", 0.0, C)
@@ -612,7 +627,7 @@ class Problem:
 
     def fstar(self, cls: str, T: float, crit: float | None = None) -> Bound:
         """f*_H(T) and its state for one history class (names as in Spec.classes)."""
-        crit = self.spec.crit if crit is None else crit
+        crit = self.crit(T) if crit is None else crit
         if cls == "H0c":
             return self._scalar_fstar("H0c", "const", T, 1.0, crit)
         if cls == "H0":
@@ -649,8 +664,8 @@ class Problem:
         """Test inversion on the grid: T is excluded when the LR for 'a >= f_min on (tau, T]' exceeds crit.
         H0m takes the best delay d on the grid for both the null and the alternative: T - d is read at the
         grid point at or younger than it (the likelihood is flat past the oldest unit)."""
-        crit = self.spec.crit if crit is None else crit
         grid, hat, null = tables["grid"], tables["hat"], tables["null"][f_min]
+        crit = np.array([self.crit(T) for T in grid]) if crit is None else np.full(len(grid), float(crit))
         if cls == "H0m":
             idx = lambda d: np.clip(np.searchsorted(grid, grid - d, side="right") - 1, 0, None)
             hat = np.max([hat[idx(d)] for d in self.spec.delays_ma], axis=0)
