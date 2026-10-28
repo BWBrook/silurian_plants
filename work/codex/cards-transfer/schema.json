@@ -1,0 +1,24 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["items"],
+  "properties": {
+    "items": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["slug", "contrasts", "chosen_to_contrast", "can_transfer", "cannot_transfer", "borrowed", "doubts"],
+        "properties": {
+          "slug": {"type": "string"},
+          "contrasts": {"type": "array", "items": {"type": "string", "enum": ["height", "water-transport", "sporophyte-independence", "fungal-nutrition", "reproductive-strategy", "clonal-growth", "record-timing"]}},
+          "chosen_to_contrast": {"type": "string"},
+          "can_transfer": {"type": "array", "items": {"type": "object", "additionalProperties": false, "required": ["text", "support"], "properties": {"text": {"type": "string"}, "support": {"type": "string"}}}},
+          "cannot_transfer": {"type": "array", "items": {"type": "object", "additionalProperties": false, "required": ["text", "support"], "properties": {"text": {"type": "string"}, "support": {"type": "string"}}}},
+          "borrowed": {"type": "array", "items": {"type": "object", "additionalProperties": false, "required": ["trait", "from_taxon", "support"], "properties": {"trait": {"type": "string", "enum": ["height_cm", "axis_diameter_mm", "branching", "leaves", "stomata", "conducting_tissue", "sporangium_position", "spores", "heterospory", "rooting", "gametophyte"]}, "from_taxon": {"type": "string"}, "support": {"type": "string"}}}},
+          "doubts": {"type": "string"}
+        }
+      }
+    }
+  }
+}

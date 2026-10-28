@@ -8,6 +8,7 @@ lineage: >-
   Hornworts (Anthocerotophyta), Anthocerotales: Anthoceros sensu lato (with Folioceros and Sphaerosporoceros). In
   genome-scale analyses hornworts are sister to liverworts plus mosses, within a monophyletic bryophyte clade.
 placement_confidence: medium
+contrasts: [sporophyte-independence, water-transport, reproductive-strategy]
 range:
   first: null
   last: null
@@ -98,6 +99,21 @@ Stomata open once, then stay open as the guard cells collapse and die; their rol
 - **Carbon-concentrating mechanism.** Pyrenoids arose long after the Palaeozoic, and pyrenoidless *Leiosporoceros* is sister to the rest in Villarreal & Renner (2012), though ambiguous in Bechteler et al. (2023); do not give early embryophytes a CCM by analogy.
 - **Nitrogen.** The Nostoc symbiosis is a candidate N source for thalloid plants; no flux per unit area was found. A cyanobacterial association is reported from Rhynie *Aglaophyton* (as relayed by Frangedakis et al. 2021).
 - **Limits.** The crown age is 304 Ma and no Palaeozoic stem fossil is known, so it is an analogue for one stage of the F1 sequence, not for the tracheophyte route. Living sporophytes are unbranched.
+
+## Model transfer
+
+**Chosen to contrast:** Contrast a photosynthetic but gametophyte-nourished sporophyte and drying-oriented stomata with greater sporophyte autonomy and active water control, using living Anthoceros physiology and culture observations.
+
+- **Can transfer:**
+  - Anthoceros sporophytes, living material with species and site unspecified: represent persistent basal growth, progressive spore shedding and continued gametophyte nourishment (Frangedakis et al. 2021).
+  - A. punctatus, experimental material with site unspecified: represent unchanged stomatal density and aperture between 440 and 1500 ppm CO2 under the reported experiment (Field et al. 2015).
+  - A. agrestis in culture: use germination in about 7 days at 23 degrees C and 2-3 months to reproductive thallus competence as conditional laboratory timings (Szovenyi et al. 2015).
+  - A. agrestis cultured thalli under the reported temperature and watering sequence: use 5 to over 100 sporophytes per thallus as experimental reproductive output (Szovenyi et al. 2015).
+- **Cannot transfer:**
+  - Do not assign tracheophyte-like active stomatal regulation to these hornwort sporophytes; stomata open once and then remain open as guard cells collapse.
+  - Do not give early embryophytes a pyrenoid-based carbon-concentrating mechanism by analogy with living hornworts; this card places pyrenoid origins much later.
+  - Do not treat the living Anthoceros body plan as an observed Ordovician–Early Devonian ancestral condition; no Palaeozoic stem fossil is known.
+  - Do not use the reported generation-time lower bound as a field generation time or a universal early-land-plant rate; it applies to optimal laboratory conditions.
 
 ## Open questions
 

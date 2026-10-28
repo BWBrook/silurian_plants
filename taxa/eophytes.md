@@ -10,6 +10,7 @@ lineage: >-
   in Hooper et al. 2026), stem-tracheophyte (the other Hooper tree), or sister to the polysporangiophytes
   (Edwards et al. 2021a).
 placement_confidence: low
+contrasts: [water-transport, reproductive-strategy, record-timing]
 range:
   first: Darriwilian
   last: Lochkovian
@@ -131,6 +132,22 @@ Small size, thick-walled epidermis and leptoid-like cells suggest poikilohydric 
 - **Meiosis.** Sporogenesis gave dyads or tetrads and never single spores, so models of mating, selfing and dispersal need unit-sized propagules (23-62 um dispersed units; about 2,600 tetrads in a 0.3 mm Ordovician sporangium fragment, by the Ordovician card).
 - **Timeline.** Cryptospores dominated for about 60 Myr, then collapsed near 410 Ma while trilete producers rose; a displacement model needs both the cryptospore decline and the zosterophyll rise.
 - **Calibration risk.** The same fossils give a different crown-embryophyte age depending on whether eophytes sit on the embryophyte or tracheophyte stem (Hooper et al. 2026).
+
+## Model transfer
+
+**Chosen to contrast:** Contrast permanent cryptospore dispersal units and leptoid-like food conduction with tracheophyte reproduction and hydraulics, using charcoalified bodies while separating them from the much older dispersed-spore record.
+
+- **Can transfer:**
+  - For Fusitheca fanningiae, now Fusiformitheca, in Lower Devonian Welsh Borderland charcoalified material, represent fusiform sporangia, isotomously branching axes and permanent dyad dispersal units (Wellman et al. 1998).
+  - For Grisellatheca salopensis among Welsh Borderland charcoalified mesofossils, represent tetrads at a forking apex; retain the elater as putative rather than functional machinery (Edwards et al. 1999).
+  - For Ficoiditheca aenigma in Lochkovian Welsh Borderland material, represent fig-shaped sporangia, branching stomatiferous axes and dyads; its dispersed-spore counterpart is unidentified (Morris et al. 2012).
+  - For eophyte split-charcoal specimens from the Welsh Borderland, species unspecified, distinguish thick-walled central cells from absent water-conducting cells; this constrains anatomical states rather than measured hydraulic rates (Edwards et al. 2021a).
+- **Cannot transfer:**
+  - Matrotrophy and gametophyte dependence cannot be fixed as observed life-cycle states: proposed gametophytes are unattached and sporophyte nourishment remains hypothetical.
+  - The 2 cm height maximum cannot be treated as measured stature: no whole plant exists and the estimate is inferred from fragments.
+  - Ordovician cryptospore occurrence cannot establish an Ordovician eophyte body plan or apply its propagule measurements to a named body taxon: the producers are unknown.
+  - Cryptospore-bearing fossils cannot impose one crown-embryophyte calibration: alternative stem placements change the inferred age and lack a cladistic test.
+  - Permanent dyads cannot establish selfing without an independently supported bisexual gametophyte.
 
 ## Open questions
 

@@ -1,0 +1,190 @@
+{
+  "items": [
+    {
+      "claim": "\"late Lochkovian or Pragian from palynology\"; \"endpoints bracket an uncertain occurrence age\"",
+      "section": "Front matter: range; Age and distribution",
+      "verdict": "supported",
+      "evidence": "The abstract assigns late Lochkovian or Pragian using palynomorph ranges; it does not demonstrate persistence throughout both stages.",
+      "source": "[Noetinger et al. 2021](https://onlinelibrary.wiley.com/doi/10.1002/spp2.1395), abstract only; diagnostic range analysis inaccessible."
+    },
+    {
+      "claim": "\"Matsunaga and Tomescu (2017) used late Lochkovian to early Pragian\"; \"younger age ... at its Beartooth Butte type locality\"",
+      "section": "Front matter: range.notes",
+      "verdict": "supported",
+      "evidence": "The species description gives that interval; archived methods distinguish the type locality's mid–late Emsian assignment.",
+      "source": "[Matsunaga and Tomescu 2017](https://pmc.ncbi.nlm.nih.gov/articles/PMC5604611/), full text, Systematics; [Noetinger dataset](https://datadryad.org/stash/dataset/doi:10.5061/dryad.zcrjdfnb2), full archived Methods."
+    },
+    {
+      "claim": "\"ICS v2024/12 Pragian and Emsian bases of 413.02 and 410.62 Ma\"",
+      "section": "Front matter: range.notes",
+      "verdict": "supported",
+      "evidence": "The chart gives 413.02 ± 1.91 Ma and 410.62 ± 1.95 Ma, respectively; the repository table agrees.",
+      "source": "[ICS v2024/12 chart](https://stratigraphy.org/ICSchart/ChronostratChart2024-12.pdf), complete chart; data/timescale.csv also read."
+    },
+    {
+      "claim": "\"GTS2012 values of 410.8 and 407.6 Ma\"",
+      "section": "Front matter: range.notes",
+      "verdict": "supported",
+      "evidence": "GTS2012 places the Pragian and Emsian bases at 410.8 and 407.6 Ma.",
+      "source": "[Geologic Time Scale 2012 wallchart](https://timescalefoundation.org/charts/GTS2012_Wallchart.pdf), complete chart."
+    },
+    {
+      "claim": "\"Drepanophycalean lycopsid; precise phylogenetic position unresolved\"",
+      "section": "Front matter: group, lineage, placement_confidence",
+      "verdict": "supported",
+      "evidence": "Classified in Drepanophycales; precise cladistic placement is not established.",
+      "source": "[Matsunaga and Tomescu 2017](https://pmc.ncbi.nlm.nih.gov/articles/PMC5604611/), full text, Systematics and generic justification. The confidence rating is editorial."
+    },
+    {
+      "claim": "\"Stature unmeasured; prostrate habit inferred\"; \"min: 3, max: 34\"; \"Compressed leafy-stem widths\"",
+      "section": "Front matter: traits.height_cm and axis_diameter_mm",
+      "verdict": "supported",
+      "evidence": "Results give 3–34 mm widths; prostrate habit is inferred.",
+      "source": "[Matsunaga and Tomescu 2017](https://pmc.ncbi.nlm.nih.gov/articles/PMC5604611/), full text, leafy stems and growth habit. Diagnosis and tables round the maximum to 35 mm."
+    },
+    {
+      "claim": "\"K-branching\"; \"Produces a leafy branch and a root-bearing axis\"; \"Modified stems bearing fine lateral roots\"",
+      "section": "Front matter: traits.branching and rooting",
+      "verdict": "supported",
+      "evidence": "K-branches produce leafy stems and modified root-bearing stems; fine lateral roots arise from the latter.",
+      "source": "[Matsunaga and Tomescu 2016](https://mihaibotany.online/pdf/MatsunagaTomescu2016.pdf), full text, Results and stem-homology discussion."
+    },
+    {
+      "claim": "\"microphylls\"; \"Vascularised, triangular\"; \"tracheids\"; \"Wall subtype unresolved\"",
+      "section": "Front matter: traits.leaves and conducting_tissue",
+      "verdict": "supported",
+      "evidence": "Triangular vascularised leaves; tracheid thickening subtype remains uncertain.",
+      "source": "[Matsunaga and Tomescu 2017](https://pmc.ncbi.nlm.nih.gov/articles/PMC5604611/), full text, leaves and vascular tissues."
+    },
+    {
+      "claim": "\"Anomocytic; abundant on leafy stems, sparse on root-bearing axes\"",
+      "section": "Front matter: traits.stomata",
+      "verdict": "supported",
+      "evidence": "Cuticular observations explicitly distinguish abundant stem stomata from sparse root-bearing-axis stomata, interpreted as anomocytic.",
+      "source": "[Matsunaga and Tomescu 2016](https://mihaibotany.online/pdf/MatsunagaTomescu2016.pdf), full text, epidermal anatomy and Figure 6."
+    },
+    {
+      "claim": "\"Sessile and cauline\"; spores: \"None recovered\"; heterospory: \"unknown\"",
+      "section": "Front matter: traits.sporangium_position, spores and heterospory",
+      "verdict": "supported",
+      "evidence": "Sessile cauline sporangia; no spores recovered.",
+      "source": "[Matsunaga and Tomescu 2017](https://pmc.ncbi.nlm.nih.gov/articles/PMC5604611/), full text, Sporangia. Unknown heterospory is the appropriate inference."
+    },
+    {
+      "claim": "\"HPH 356 documents attachment and vascular continuity\"; \"endogenous origin is unresolved, root caps are tentative, and root hairs were not observed\"",
+      "section": "Morphology and anatomy; Affinity and controversies",
+      "verdict": "supported",
+      "evidence": "Figure 3A connects stem and root-bearing-axis vasculature; root-cap evidence is tentative, hairs unobserved, and endogenous initiation unestablished.",
+      "source": "[Matsunaga and Tomescu 2016](https://mihaibotany.online/pdf/MatsunagaTomescu2016.pdf), full text, Figure 3A and root-recognition discussion."
+    },
+    {
+      "claim": "\"inferred living, partly submerged plants\"; \"no calibrated inundation duration\"; \"later reconstruction favours terrestrial plants periodically flooded\"",
+      "section": "Ecology and physiology",
+      "verdict": "supported",
+      "evidence": "The 2012 interpretation is partial submergence; its tentative month-scale suggestion is uncalibrated. The 2017 interpretation favours periodic flooding.",
+      "source": "[Caruso and Tomescu 2012](https://mihaibotany.online/pdf/Caruso%202012%20Lethaia.pdf), full text, Discussion; [Matsunaga and Tomescu 2017](https://pmc.ncbi.nlm.nih.gov/articles/PMC5604611/), full text, Growth environment."
+    },
+    {
+      "claim": "\"Channel-margin vegetation subject to flooding\"; \"stem mats alternate with deposits penetrated by root-bearing axes from overlying populations\"",
+      "section": "Front matter: habitat",
+      "verdict": "supported",
+      "evidence": "Archived methods describe water-edge colonisation, alternating mat shales and flood siltstones, and penetration by axes from overlying populations.",
+      "source": "[Noetinger et al. dataset](https://datadryad.org/stash/dataset/doi:10.5061/dryad.zcrjdfnb2), full archived Methods, Depositional environments and sampling."
+    },
+    {
+      "claim": "\"clonal-growth\", \"height\" and \"reproductive-strategy\"; \"local spreading and persistence against investment in stature and propagule dispersal\"",
+      "section": "Model transfer: Chosen to contrast",
+      "verdict": "supported",
+      "evidence": "Clonality is inferred; height/dispersal trade-offs remain proposed experiments.",
+      "source": "[Matsunaga and Tomescu 2017](https://pmc.ncbi.nlm.nih.gov/articles/PMC5604611/), full text, growth habit and life history. Support concerns the rationale, not measured trade-offs."
+    },
+    {
+      "claim": "\"root-bearing axes 2–8 mm wide, mean 4.4 mm across 452 measurements\"",
+      "section": "Model transfer: first Can transfer item",
+      "verdict": "supported",
+      "evidence": "Results report precisely this range, mean and sample size.",
+      "source": "[Matsunaga and Tomescu 2016](https://mihaibotany.online/pdf/MatsunagaTomescu2016.pdf), full text, Body plan, p. 587."
+    },
+    {
+      "claim": "\"lateral roots 0.4–0.7 mm wide, reaching 20 mm laterally with up to five branching orders\"; \"615 root tufts on 310 axes\"",
+      "section": "Model transfer: first Can transfer item",
+      "verdict": "supported",
+      "evidence": "All dimensions and counts match; 20 mm describes maximum observed tuft extension from its subtending axis.",
+      "source": "[Matsunaga and Tomescu 2016](https://mihaibotany.online/pdf/MatsunagaTomescu2016.pdf), full text, Body plan, pp. 587–588."
+    },
+    {
+      "claim": "\"These constrain geometry, not growth rates\"",
+      "section": "Model transfer: first Can transfer item",
+      "verdict": "supported",
+      "evidence": "Measurements describe preserved structures without a temporal calibration; distinguishing geometry from rates is a justified methodological inference.",
+      "source": "[Matsunaga and Tomescu 2016](https://mihaibotany.online/pdf/MatsunagaTomescu2016.pdf), full text, Methods and Results."
+    },
+    {
+      "claim": "\"33 sporangia on 20 stem fragments\"; \"2.3–3.7 mm across\"; \"USNM 598158 illustrates attachment\"",
+      "section": "Model transfer: second Can transfer item",
+      "verdict": "supported",
+      "evidence": "Counts, dimensions and Figure 6 specimen attribution match.",
+      "source": "[Matsunaga and Tomescu 2017](https://pmc.ncbi.nlm.nih.gov/articles/PMC5604611/), full text, Sporangia and Figure 6A–C."
+    },
+    {
+      "claim": "\"fossil sample statistics, not individual lifetime fecundity\"",
+      "section": "Model transfer: second Can transfer item",
+      "verdict": "supported",
+      "evidence": "Counts concern fragments, without individual lifetime histories.",
+      "source": "[Matsunaga and Tomescu 2017](https://pmc.ncbi.nlm.nih.gov/articles/PMC5604611/), full text, Methods and Sporangia; inference about parameter validity."
+    },
+    {
+      "claim": "\"pairing shoot extension with substrate exploration, illustrated by FMNH PP15959\"; \"separate costs for anchorage, absorption and shoot production\"",
+      "section": "Model transfer: third Can transfer item",
+      "verdict": "supported",
+      "evidence": "Figure 7B shows paired axes, without preserved roots; functional differentiation supports separate compartments, while energetic costs remain proposed.",
+      "source": "[Matsunaga and Tomescu 2016](https://mihaibotany.online/pdf/MatsunagaTomescu2016.pdf), full text, Figure 7B and Functional morphology."
+    },
+    {
+      "claim": "\"Cannot transfer: annual branching, clonal spread, bud activation, survival after burial, generation time or sexual allocation as measured parameters\"; \"sensitivity analyses\"",
+      "section": "Model transfer: first Cannot transfer item",
+      "verdict": "supported",
+      "evidence": "These rates and allocations are unmeasured; sensitivity analysis is proposed.",
+      "source": "[Matsunaga and Tomescu 2017](https://pmc.ncbi.nlm.nih.gov/articles/PMC5604611/), full text, Methods, branching and life-history discussion."
+    },
+    {
+      "claim": "\"compressed widths as mechanical diameters\"; \"fossil fragment lengths as stature\"",
+      "section": "Model transfer: second Cannot transfer item",
+      "verdict": "supported",
+      "evidence": "Compressed fragments do not directly establish cylindrical geometry or stature.",
+      "source": "[Matsunaga and Tomescu 2017](https://pmc.ncbi.nlm.nih.gov/articles/PMC5604611/), full text, preservation and growth habit; methodological inference."
+    },
+    {
+      "claim": "\"sporangium counts as spore output; sediment thickness as elapsed time\"; \"additional geometry, biological information or chronology\"",
+      "section": "Model transfer: second Cannot transfer item",
+      "verdict": "supported",
+      "evidence": "Neither spore yield nor a sediment-to-time calibration is supplied.",
+      "source": "[Matsunaga and Tomescu 2017](https://pmc.ncbi.nlm.nih.gov/articles/PMC5604611/), full text, Sporangia and stratigraphy; methodological inference."
+    },
+    {
+      "claim": "\"genotype boundaries, kin recognition or the identity of successive populations as the same clone\"; \"Test alternative spatial and recovery mechanisms\"",
+      "section": "Model transfer: third Cannot transfer item",
+      "verdict": "supported",
+      "evidence": "Kin recognition is conjectural; clone identities remain undetermined.",
+      "source": "[Matsunaga and Tomescu 2017](https://pmc.ncbi.nlm.nih.gov/articles/PMC5604611/), full text, Kin recognition mechanisms? and life history. Alternative testing is the card's proposal."
+    },
+    {
+      "claim": "\"Traits of S. devonica, S. minor or other lycopsids require explicit proxy attribution\"; \"none supplies a numerical proxy here\"",
+      "section": "Model transfer: third Cannot transfer item",
+      "verdict": "supported",
+      "evidence": "Congeners are distinct; quoted numerical inputs concern Cottonwood material.",
+      "source": "[Matsunaga and Tomescu 2017](https://pmc.ncbi.nlm.nih.gov/articles/PMC5604611/), full text, Other Sengelia species and Table 2; the supplied card and AGENTS.md establish attribution policy."
+    }
+  ],
+  "omissions": [
+    "Root-bearing axes grew downwards or horizontally; lateral roots spread horizontally, suggesting absent positive gravitropism. This distinction should constrain model architecture. [Matsunaga and Tomescu 2016, full text](https://mihaibotany.online/pdf/MatsunagaTomescu2016.pdf).",
+    "Additional geometry includes root-tuft spacing of 2–40 mm (mean 11 mm, n = 161) and an approximately 12-cm rooted horizon. Neither establishes an organism's maximum rooting extent. [Matsunaga and Tomescu 2016, full text](https://mihaibotany.online/pdf/MatsunagaTomescu2016.pdf).",
+    "Spatial branching intervals of 2 to at least 25 cm are available despite unknown annual branching rates. [Matsunaga and Tomescu 2017, full text](https://pmc.ncbi.nlm.nih.gov/articles/PMC5604611/).",
+    "Fourteen sporangia occur on three fragments; sampling spans 1.5–1.8 m vertically and at most 10 m laterally. Representativeness needs qualification. [Matsunaga and Tomescu 2017, full text](https://pmc.ncbi.nlm.nih.gov/articles/PMC5604611/).",
+    "Elevated fertile structures are undocumented, and secondary vascular tissue is absent. Height investment therefore remains a hypothetical comparison. [Matsunaga and Tomescu 2017, full text](https://pmc.ncbi.nlm.nih.gov/articles/PMC5604611/).",
+    "The palynological assemblage lacks a securely identified lycophyte spore counterpart. Dispersed spores cannot currently calibrate Sengelia reproduction or dispersal. [Noetinger et al. 2021, abstract only](https://onlinelibrary.wiley.com/doi/10.1002/spp2.1395).",
+    "The earlier paper tentatively suggests submergence possibly exceeding one month, while explicitly acknowledging unknown microconchid growth rates. This is a hypothesis, not calibration. [Caruso and Tomescu 2012, full text](https://mihaibotany.online/pdf/Caruso%202012%20Lethaia.pdf)."
+  ],
+  "model_transfer_assessment": "The strongest contrast is modular spreading and burial resilience; height and reproductive allocation are exploratory comparisons. Numerical inputs belong to the Cottonwood material subsequently named S. radicans, and the named specimens are correctly attributed illustrations, not the sole measurement sources. The exclusions correctly protect against converting preserved geometry into rates, fecundity or clone identity. Add explicit limits on energetic costs and hydraulic performance, and preserve the developmental coupling between leafy shoots and root-bearing axes.",
+  "overall": "The card is scientifically careful: none of the 25 checked claim groups contains a substantive numerical, taxonomic or attribution error. Its main improvement would be to incorporate additional architectural constraints and sharpen the distinction between supported morphology and proposed allocation experiments. The full 2021 palynological argument and Crossref API verification remained inaccessible; the broad age assignment is supported by the accessible abstract.\n\n"
+}

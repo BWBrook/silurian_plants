@@ -9,6 +9,7 @@ lineage: >-
   paired, fusiform sporangia with trilete spores, Psilophyton-like but with no vegetative parts
   attached; the parent plants are probably trimerophyte-grade basal euphyllophytes, species unresolved.
 placement_confidence: low
+contrasts: [reproductive-strategy, record-timing]
 range:
   first: Pragian
   last: Emsian
@@ -101,6 +102,20 @@ Only inferences. Pendulous terminal paired sporangia, spores of about 45-60 µm 
 - **Fertile unit.** Terminal paired sporangia 3-6 mm long and spores of about 45-60 µm define a fecundity unit. A derived estimate (my arithmetic): five to seven full dichotomies in the fertile units of *Psilophyton crenulatum* (Doran 1980) would give at most 2^5 to 2^7 = 32-128 terminal sporangia per fertile unit if every dichotomy were complete; real counts are probably lower. Parameter values need the species descriptions, not this card.
 - **Spore morphology as a trait.** Trilete, 45-60 µm, laevigate to micropapillate spores that match *Apiculiretusispora*/*Punctatisporites* dispersed types link euphyllophyte-grade plants to the dispersed-spore record (F3, F4), though these types are not specific to one lineage.
 - **Range for dispersal modelling.** The Pragian to Emsian record spans Norway, Britain, Belgium, France, Germany, Canada and possibly Australia, so the fertile-unit type is widespread on Laurussia and perhaps present in Gondwana.
+
+## Model transfer
+
+**Chosen to contrast:** Contrast terminal paired sporangial units with whole-plant reproductive reconstructions, using fertile compressions whose morphology is observable but whose parent species remain unidentified.
+
+- **Can transfer:**
+  - For Dawsonites sp. at Ballanucater Farm, use terminal, pendulous, often mutually twisted paired sporangia 4-6 mm long on dichotomising axes, with longitudinal dehiscence (Rayner 1995).
+  - Use trilete spores averaging about 60 µm for Dawsonites sp. sporangia at Ballanucater Farm; this is a site-specific reproductive-unit measurement (Rayner 1995).
+  - Keep D. arcuatus from Røragen separate: its reported trilete spores are 45-55 µm, laevigate to micropapillate or microconate (Bek 2025, from Croft & Lang 1942, Chaloner et al. 1967 and Balme 1995).
+- **Cannot transfer:**
+  - Whole-plant stature, vegetative physiology and rooting cannot be reconstructed from this organ genus: no complete plant or attached vegetative organs defines it.
+  - The 32-128 sporangia estimate cannot become measured Dawsonites fecundity: it is arithmetic assuming complete dichotomies in Psilophyton crenulatum.
+  - Dawsonites occurrence counts cannot directly count biological species alongside Psilophyton: their fossil parts can represent overlapping parent plants.
+  - Broad PBDB stage assignments cannot establish a Middle Devonian extension: they are inherited contributor assignments rather than independent dating evidence.
 
 ## Open questions
 

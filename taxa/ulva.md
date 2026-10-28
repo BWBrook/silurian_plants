@@ -9,6 +9,7 @@ lineage: >-
   A chlorophyte, on the other branch of the green lineage from streptophytes: the Chlorophyta and Streptophyta split
   more than 900 Ma (Holzinger and Karsten 2013). It is not related to land plants beyond that ancient split.
 placement_confidence: high
+contrasts: [sporophyte-independence, reproductive-strategy, water-transport]
 range:
   first: null
   last: null
@@ -100,6 +101,20 @@ Intertidal *Ulva* survives daily drying: in desiccated *Ulva* sp. linear electro
 What the comparison is good for. (1) A test-bed for biphasic models (reviewed by Mable and Otto 1998): Hughes and Otto (1999) show that ecological differences between phases can maintain biphasic cycles even when adults look alike (parameterised on the red alga *Gracilaria*, not *Ulva*); Scott and Rescan (2017) add intrinsic fitness differences and mutation masking; Bessho (2024) shows the phase ratio is set by four demographic forces and persistence needs R0 > 1. Field ratios with phase dominance swapping every 1 to 2 years (Hiraoka and Yoshida 2010) are a target for such models. (2) Life-cycle plasticity: parthenogenesis and diploidisation let a lineage move toward either phase, so a model should allow facultative asexual propagation. (3) A contrast with Rhynie ([Rhynie Chert gametophytes](rhynie-chert-gametophytes.md)), where gametophytes are about a tenth the sporophyte's size: in *Ulva* the generations are equal in size, so any phase difference must be physiological.
 
 What it is not good for. Embryophyte-specific constraints are absent: fertilisation by swimming gametes released into seawater, no zygote retention or maternal provisioning described, a free-living diploid thallus, no sporopollenin spore wall, no cuticle. Its isomorphy is independent of land plants, so it cannot arbitrate between the antithetic and homologous theories; at most it shows isomorphic cycles can be stable. Do not use *Ulva* rates for early land plants.
+
+## Model transfer
+
+**Chosen to contrast:** Contrast independent, similar-sized haploid and diploid generations with unequal land-plant generations, using an isomorphic cycle with documented demographic turnover and life-cycle plasticity.
+
+- **Can transfer:**
+  - Life-cycle structure in Ulva thalli, with species and specimens unspecified: independent, macroscopic, nearly indistinguishable haploid and diploid generations (Wichard et al. 2015; Bessho 2024).
+  - Generation time in U. mutabilis, with specimens and site unspecified: 3 to 5 weeks; retain only for the algal comparator (Wichard et al. 2015).
+  - Phase turnover in the natural U. pertusa population in the Seto Inland Sea: dominance alternated after 11 to 20 months, with sex ratio near 1:1 (Hiraoka and Yoshida 2010).
+  - Drying response in Ulva sp., with specimens and site unspecified: linear electron flow stops, cyclic PSI flow persists and recovers faster than PSII after rewetting (Gao et al. 2011).
+- **Cannot transfer:**
+  - Phase-demography coefficients from Hughes and Otto (1999) cannot become measured Ulva parameters: their model was parameterised on Gracilaria.
+  - Embryophyte matrotrophy, embryo retention and protective spore-wall constraints cannot be parameterised from this marine cycle; this card describes no maternal provisioning, retained zygote, sporopollenin wall or cuticle.
+  - Early land-plant demographic rates cannot be set to Ulva rates; this card expressly excludes that transfer between independently evolved cycles.
 
 ## Open questions
 

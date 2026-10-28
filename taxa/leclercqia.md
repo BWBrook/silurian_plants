@@ -9,6 +9,7 @@ lineage: >-
   lycopods form a monophyletic group (Wellman et al. 2009); its ligule and homospory make it a test of the
   order of those two innovations.
 placement_confidence: medium
+contrasts: [height, reproductive-strategy, record-timing]
 range:
   first: Lochkovian
   last: Frasnian
@@ -116,6 +117,22 @@ Homosporous; gametophytes are unknown. Xu et al. (2011) found fertile appendages
 - **Persistence.** A herbaceous lineage spans 28-47 Myr (Emsian or Lochkovian base to Frasnian top in data/timescale.csv; my arithmetic) through the rise of 8-30 m trees; lycopsid diversity falls in the Frasnian (Capel et al. 2022). Use it to test survival of small plants under canopy competition.
 - **Spore biogeography (F4).** Acinosporites lindlarensis tracks the genus and was used to reconstruct its range (Xu et al. 2020); a cosmopolitan 53-92 um spore is a dispersal-kernel test, with Laurussia-Gondwana proximity argued from the plant (Meyer-Berthaud et al. 2003).
 - **Record (F3).** The oldest fossils precede the first ligule by about 25 Myr, so the ligule date is a preservation limit, not an origin date (Tomescu & Whitewoods 2024).
+
+## Model transfer
+
+**Chosen to contrast:** Separate ligule evolution from heterospory and examine herbaceous persistence through tree expansion using a long-ranging, homosporous ligulate lycopsid.
+
+- **Can transfer:**
+  - L. complexa, Brown Mountain, New York material: ligulate homospory separates ligule acquisition from heterospory (Grierson & Bonamo 1979; Bonamo et al. 1988; Wellman et al. 2009).
+  - Leclercqia sporangia held over 1,000 spores each; use this output constraint without attaching the dispersed-spore size range. The counted species and specimens/site are unspecified in this card (Bonamo et al. 1988).
+  - L. complexa-associated dispersed spores from New York measure 53-92 um; use this dispersed-unit range separately from sporangial counts and other species (Streel 1972).
+  - L. uncinata, North Xinjiang material: seven-tipped leaves with a distally hooked central segment constrain species-specific leaf architecture (Xu et al. 2011).
+- **Cannot transfer:**
+  - Do not assign numerical height, stem diameter or rooting parameters: this card leaves these measurements unresolved.
+  - Do not turn hooked leaves into demonstrated climbing, or imagined mats into measured ground-cover behaviour: habit remains inferred.
+  - Do not treat the first preserved ligule as its evolutionary origin: older genus records predate the preserved ligule.
+  - Do not treat 53-92 um spores and over 1,000 spores per sporangium as jointly measured fecundity: the size range concerns New York dispersed spores; the counted specimens are unspecified.
+  - Do not use the permitted Lochkovian base as a demonstrated occurrence: the Wyoming identification rests on incompletely verified figures.
 
 ## Open questions
 

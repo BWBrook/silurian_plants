@@ -10,6 +10,7 @@ lineage: >-
   Treated as a tentative early-diverging lycophyte (Hetherington & Dolan 2017, after Kenrick & Crane
   1997) and as a possible zosterophyll relative (Krings et al. 2007).
 placement_confidence: low
+contrasts: [water-transport, clonal-growth, fungal-nutrition]
 range:
   first: Pragian
   last: Emsian
@@ -156,6 +157,23 @@ Clonal growth dominated. Daviero-Gomez et al. (2005) describe colonies made larg
 - **Rooting without roots.** Bilaterally symmetric rhizoid-bearing sporophyte axes (Hetherington & Dolan 2017) are a rooting module that does not require the root meristem; relevant to nutrient-uptake terms and fungal symbiosis.
 - **Fungal associations.** Three endophytes in one host, one of them in over 95% of rhizome segments, with host defence-type responses to infection (Krings et al. 2007; Berbee & Taylor 2007): a calibration point for costs as well as benefits of early fungal partnership.
 - **Size.** About 15 cm and 2.5 mm axes (web-resource figures, unverified) are of the same order as *Aglaophyton* (under 20 cm; see its card), so use them only as a Rhynie-scale value.
+
+## Model transfer
+
+**Chosen to contrast:** Separate stomata from tracheid-grade conduction and clonal persistence from sexual recruitment using rhizomatous Rhynie colonies with documented fungal colonisation.
+
+- **Can transfer:**
+  - N. aphylla, Rhynie rhizomes: a conducting core of 10-20 cells, 300-500 µm across, has uniformly thickened cells; use strand geometry without assigning tracheid hydraulics (Kerp 2017).
+  - N. aphylla, Rhynie aerial axes: stomata are 75-105 × 70-95 µm, unsunken, with six to eight ordinary neighbours; use geometry rather than a measured conductance (Kerp 2017).
+  - N. aphylla, Rhynie sandy soils: clonal rhizomes bear a ventral rhizoidal ridge and erect fertile shoot; up to four stacked horizons constrain persistence architecture (Daviero-Gomez et al. 2005; Kerp 2017).
+  - N. aphylla, 250 Rhynie prostrate axes: three fungal endophytes and host encasement and tissue-isolating wall responses constrain infection occurrence and defence relationships (Krings et al. 2007).
+  - N. aphylla, Rhynie rhizome segments: fungus no. 3 colonised over 95%, producing vesicles without arbuscules; retain this separately reported prevalence (Berbee & Taylor 2007, summarising Krings et al. 2007).
+- **Cannot transfer:**
+  - Do not use 15 cm height and 2.5 mm diameter as verified primary measurements: they come only from an unreviewed web resource.
+  - Do not convert high fungal prevalence into nutritional benefit or obligate mutualism; the documented responses include host defences against infection.
+  - Do not assign Nothia-specific high water-use efficiency or fit gas exchange from stomatal size alone: the cited efficiency claim is general to Rhynie plants and density is unreported.
+  - Do not assume an organically connected or complete Kidstonophyton life cycle: association rests on surface anatomy, and only antheridiate axes are known.
+  - Do not assign demonstrated lignification or tracheid properties to the poorly preserved aerial strand: absence of thickenings is established mainly from rhizomes.
 
 ## Open questions
 

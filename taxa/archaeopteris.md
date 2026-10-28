@@ -9,6 +9,7 @@ lineage: >-
   plants; Callixylon is the form genus for the wood. Placement of the group is secure; whether Archaeopteris
   as used is one genus is not.
 placement_confidence: high
+contrasts: [height, water-transport, reproductive-strategy]
 range:
   first: Givetian
   last: Famennian
@@ -134,6 +135,22 @@ The Cairo vertisol records seasonal wetting and drying; Stein et al. infer that 
 - **Life history.** Perennial trunk, deciduous shoots, indeterminate secondary growth, resprouting from latent primordia after burial.
 - **Dispersal (F4).** Wind-dispersed microspores from 11-32 m crowns; heavier megaspores. Geminospora lemurata has long been tied to archaeopteridaleans, but a spore type shows presence, not abundance or forest cover (Cascales-Miñana et al. 2026).
 - **Earth-system tests.** A 10 per mil lithium-isotope rise across 378-385 Ma is attributed to expanding deep-rooted plants (Liu et al. 2025); D'Antonio et al. (2022) note that root innovations precede the Hangenberg event by 25-30 Myr.
+
+## Model transfer
+
+**Chosen to contrast:** Contrast woody support, extensive rooting and differentiated reproductive structures with smaller early plant architectures, using preserved root and fertile-organ measurements while keeping tree heights model-dependent.
+
+- **Can transfer:**
+  - Archaeopteris-type trees, Cairo root-system impressions: use trunk-base diameters 8-45 cm across 18 trees, retaining the impressions' imprecision and comparative identification (Stein et al. 2020).
+  - Archaeopteris-type Cairo root systems: represent 10-15 primary roots per tree, 6-16 cm wide, radial extent to 11 m and depth 1.2-1.6 m as site-specific architecture (Stein et al. 2020).
+  - Archaeopterid roots, Famennian Anti-Atlas permineralised specimens: represent endogenous, secondary-thickened roots 25-90 mm wide (Meyer-Berthaud et al. 2013).
+  - A. roemeriana, Upper Famennian Belgium: use mean sporangium dimensions 1.94 mm by 0.62 mm and 39 sporangia on the single fully counted fertile leaf (Fairon-Demaret et al. 2001).
+- **Cannot transfer:**
+  - Do not treat Cairo tree heights as measured stature; they are regression estimates using generic-conifer allometry, with Araucaria used for root-diameter conversion.
+  - Do not treat the Belgian megaspores as directly observed inside the assigned sporangia; their association is inferred from surrounding matrix.
+  - Do not assign empirical growth rates, lifespans or wood densities from this card; these measurements were not found.
+  - Do not treat post-burial resprouting as an observed recovery rate or demonstrated response; the Moroccan latent primordia support a plausible developmental interpretation.
+  - Do not convert archaeopteridalean dispersed-spore occurrence into abundance or forest cover.
 
 ## Open questions
 

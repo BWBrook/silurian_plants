@@ -9,6 +9,7 @@ lineage: >-
   (Endogonales-allied) endophytes in the same Rhynie plants. Ordovician Palaeoglomus grayi is a dispersed
   glomalean-type fossil with no host.
 placement_confidence: medium
+contrasts: [fungal-nutrition, record-timing]
 range:
   first: Darriwilian
   last: Emsian
@@ -142,6 +143,21 @@ Experiments (living analogues, a few months, nutrient-poor dune soil):
 - Cost-benefit depends on CO2 and anatomy. Field et al. (2012) place a roughly 90% CO2 fall in 480-360 Ma; their data imply that fall penalised thalloid, rootless hosts by 1-2 orders of magnitude and rewarded vascular, rooted ones, with liverwort hyphal networks about half the vascular size. That is a candidate selective pressure for conducting tissue and roots; the Mucoromycotina trade appears buffered.
 - Calibrate timing with Rhynie (about 411 Ma) as the firm minimum for vascular plant hosts; use the Ordovician spores only as a low-confidence early bound.
 - Soil: lichen- and liverwort-dominated crusts bound by cyanobacteria and fungi are the better analogues for early soils, which were thin and limited by host size (Mitchell et al. 2016).
+
+## Model transfer
+
+**Chosen to contrast:** Contrast host-specific fungal nutrient partnerships and their carbon costs, using structurally preserved Rhynie associations alongside explicitly separate experiments on living liverworts.
+
+- **Can transfer:**
+  - Represent an arbuscule-bearing cortical colonisation zone in Aglaophyton majus at Rhynie, with continued provision of new host cells, as an anatomical relationship rather than measured nutrient exchange (Remy et al. 1994).
+  - Separate Palaeoglomus boullardii in aerial outer cortex from basal Palaeoendogone gwynne-vaughaniae in Horneophyton lignieri at Rhynie; model spatially distinct partners without assuming colonisation of rhizoids (Strullu-Derrien et al. 2014).
+  - Use hyphae 8-14 µm wide and multilayered spores 50-80 µm with a 6 µm wall for Glomites rhyniensis associated with Aglaophyton at Rhynie (as compared by Strullu-Derrien et al. 2026).
+  - For living Preissia quadrata and Marchantia paleacea with Glomeromycota in nutrient-poor dune-soil experiments, phosphorus-per-carbon efficiency fell 10-100-fold at 440 versus 1500 ppm CO2; significance is reported for Preissia (Field et al. 2012).
+- **Cannot transfer:**
+  - Fossil arbuscules cannot supply measured phosphorus, nitrogen or carbon exchange rates: functional exchange is inferred from morphology and living analogues.
+  - Palaeoglomus grayi cannot provide a secure Ordovician symbiosis date: no plant host is associated and modern contamination remains possible.
+  - Living liverwort CO2 response magnitudes cannot be assigned directly to fossil hosts: these are short experiments on specified modern analogues.
+  - Mycorrhizal mutualism cannot be assigned to every Rhynie plant: the Asteroxylon cortical fungus is interpreted as probably parasitic.
 
 ## Open questions
 

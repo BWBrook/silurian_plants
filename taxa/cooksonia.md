@@ -9,6 +9,7 @@ lineage: >-
   sporangia; the genus is paraphyletic or polyphyletic, with C. pertoni among the earliest
   stem-group eutracheophytes and some species in the lycophyte total group.
 placement_confidence: low
+contrasts: [sporophyte-independence, water-transport, reproductive-strategy]
 range:
   first: Sheinwoodian
   last: Lochkovian
@@ -171,6 +172,20 @@ Boyce (2008) argued that once desiccation resistance, support and conduction are
 - Timing: macrofossil first appearance 432 to 427 Ma, against dispersed trilete spores from the Late Ordovician; the macrofossil record probably under-samples earlier plants (inference).
 - Latitudinal spread: about 20° S (Poland, Přídolí; Pšenička et al. 2021) to 50 to 60° S (Bolivia, Ludlow; Morel et al. 1995).
 - Stomata present but sparse; tracheids with wall thickenings demonstrated only from the Lochkovian, with conducting cells interpreted in Pridoli C. bohemica.
+
+## Model transfer
+
+**Chosen to contrast:** Contrast axis-width-dependent hypotheses of sporophyte autonomy with direct anatomical evidence, using differently sized Cooksonia specimens while retaining species and preservation differences.
+
+- **Can transfer:**
+  - Use nearly 6 cm fragment length, 1 to 1.5 mm axis width and 3 to 5 mm sporangia for the C. barrandei holotype from Loděnice, without treating fragment length as plant height (Libertín et al. 2018 supplement).
+  - Use 10 to 15 um spores for C. barrandei at the Czech type locality; keep these separate from larger spores reported for other Cooksonia species (Libertin et al. 2018, supplement).
+  - Code annularly thickened tracheids and stomata for Lochkovian charcoalified C. pertoni from North Brown Clee Hill, rather than all Cooksonia (Edwards et al. 1992; Edwards and Kenrick 2015).
+- **Cannot transfer:**
+  - Photosynthetic autonomy or dependence cannot be fixed from axis width: both Boyce's narrow-axis argument and Libertín et al.'s C. barrandei counterargument are size-based inferences.
+  - Whole-plant height cannot be equated with the front-matter length range: every specimen is fragmentary.
+  - Lochkovian C. pertoni tracheids cannot establish vascular anatomy in older Silurian compressions, which preserve outlines rather than equivalent tissues.
+  - Shared genus membership cannot impose one lineage or physiological strategy across species: Cooksonia is an unnatural morphogenus.
 
 ## Open questions
 

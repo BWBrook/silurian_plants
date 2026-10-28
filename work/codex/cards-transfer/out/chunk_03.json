@@ -1,0 +1,472 @@
+{
+  "items": [
+    {
+      "slug": "partitatheca",
+      "contrasts": ["water-transport", "reproductive-strategy", "record-timing"],
+      "chosen_to_contrast": "Contrast permanent cryptospore dispersal units and sparse stomata with tracheophyte reproduction and water control, using Lochkovian sporangia with rare attached branching axes.",
+      "can_transfer": [
+        {
+          "text": "Reproductive architecture: Partitatheca sporangia from Brown Clee Hill split into four valves; seven quadrivalvate specimens founded the genus (Edwards et al. 2012a). Use observed sporangial architecture, retaining the restricted sample.",
+          "support": "The genus was erected for seven quadrivalvate sporangia, selected from several hundred"
+        },
+        {
+          "text": "Dispersal units: Brown Clee Hill Partitatheca includes permanent dyads and a single tetrad-bearing sporangium; represent these separately (Edwards et al. 2012a, 2012b, 2014).",
+          "support": "The sporangia split into four valves and hold permanent, sculptured cryptospore dyads (in one specimen, tetrads)."
+        },
+        {
+          "text": "Branching: one naked Brown Clee Hill stem bearing Cymbohilates horridus has isotomous branching; use this observed configuration without imposing it on every species (Edwards et al. 2012a).",
+          "support": "One stem bearing a sporangium with Cymbohilates horridus branches isotomously and is naked (Edwards et al. 2012a)"
+        },
+        {
+          "text": "Stomatal occurrence: Brown Clee Hill Partitatheca species differ in stomatal presence; allow species-specific states rather than universal presence (Edwards et al. 2012a; Edwards et al. 2014).",
+          "support": "Species differ in sporangium shape, valve shape and the presence of stomata"
+        }
+      ],
+      "cannot_transfer": [
+        {
+          "text": "Height, axis diameter and absence of water-conducting cells are eophyte inferences, not measured Partitatheca parameters; its own axis anatomy remains almost unknown (Edwards et al. 2021a).",
+          "support": "*Partitatheca* may belong to this group but its own subtending anatomy is almost unknown."
+        },
+        {
+          "text": "A tracheophyte transpiration-control rule cannot follow from stomatal presence: the proposed drying function concerns eophytes and remains an interpretation (Edwards et al. 2021a).",
+          "support": "they probably served sporangium drying and dehiscence, not transpiration"
+        },
+        {
+          "text": "Sporophyte dependence cannot be fixed as a life-cycle state: whether Partitatheca depended on a gametophyte is explicitly speculative.",
+          "support": "Whether the sporophyte depended on a gametophyte, as in bryophytes, is speculative."
+        },
+        {
+          "text": "Ordovician sporophyte architecture cannot be reconstructed from these Lochkovian survivors; the card explicitly allows later evolution of their diagnostic features (Edwards et al. 2014).",
+          "support": "Edwards et al. (2014) warn that key features may have evolved later."
+        }
+      ],
+      "borrowed": [
+        {
+          "trait": "axis_diameter_mm",
+          "from_taxon": "Eophytes generally",
+          "support": "Upper bound is for eophyte axes generally, which 'rarely exceed 1 or 2 mm' (Edwards et al. 2021a); not measured on Partitatheca itself."
+        }
+      ],
+      "doubts": "The modelling section states absence of water-conducting tissue categorically, although front matter records conducting tissue as unknown and eophyte membership as possible. The diameter maximum is a group proxy; height is inferred. Stomatal presence varies between species despite the single front-matter present state."
+    },
+    {
+      "slug": "pertica",
+      "contrasts": ["height", "reproductive-strategy"],
+      "chosen_to_contrast": "Contrast overtopped, three-dimensional branching with planate leaf-bearing architecture, using differentiated main axes and fertile laterals with inferred stature and no known anatomy.",
+      "can_transfer": [
+        {
+          "text": "Branch geometry: P. quadrifaria compressions from the Trout Valley Formation, Maine, show a clockwise spiral of side branches forming four vertical ranks; use this species-specific arrangement (Kasper & Andrews 1972).",
+          "support": "Side branches were arranged in a clockwise spiral from base to apex, forming four vertical ranks (tetrastichous)"
+        },
+        {
+          "text": "Fertile-unit construction: P. dalhousii material from the Dalhousie area, New Brunswick, bears clusters of 32-128 fusiform sporangia on dichotomous laterals (Doran et al. 1978).",
+          "support": "some ending in erect clusters of 32-128 fusiform sporangia"
+        },
+        {
+          "text": "Spore morphology: P. dalhousii from the Dalhousie area has circular trilete spores with a detachable sculptured outer layer; retain this species-specific reproductive state (Doran et al. 1978).",
+          "support": "its spores are circular, trilete, with a detachable sculptured outer layer (Doran et al. 1978)."
+        }
+      ],
+      "cannot_transfer": [
+        {
+          "text": "Measured standing-height priors cannot use the genus-wide range: P. quadrifaria stature is inferred from fragments, while the taller P. varia estimate comes from unchecked secondary compilations (Kasper & Andrews 1972; Granoff et al. 1976, not read).",
+          "support": "Inferred: whole-plant height, since stems are fragmentary"
+        },
+        {
+          "text": "Hydraulic conductance, wood absence and mechanical strength cannot be assigned from compression architecture: Pertica anatomy and axis diameters are unknown (Tomescu & Whitewoods 2024).",
+          "support": "Anatomy is unknown, as are axis diameters, stomata and rooting in the sources I read (Tomescu & Whitewoods 2024)."
+        },
+        {
+          "text": "Planate leaves and determinate leaf growth cannot be transferred to Pertica: its laterals branch in three dimensions and determinacy is doubtful (Tomescu & Whitewoods 2024).",
+          "support": "Its laterals branch in three dimensions, are not planar, and determinacy is doubtful"
+        },
+        {
+          "text": "Stand density and in situ habitat cannot use Trout Valley Pertica occurrences: the upright axes are cf. P. forbesii, whereas Pertica is transported or locally displaced (Gastaldo 2016; Allen & Gastaldo 2006).",
+          "support": "*Pertica* there is parautochthonous or allochthonous."
+        }
+      ],
+      "borrowed": [],
+      "doubts": "Front-matter height bounds combine inferred sizes of different species, not a measured population range. Pseudomonopodial branching lacks preserved-apex confirmation. Heterospory is scored absent from a single reported spore type in P. dalhousii."
+    },
+    {
+      "slug": "phlegmariurus-squarrosus",
+      "contrasts": ["water-transport", "reproductive-strategy"],
+      "chosen_to_contrast": "Contrast crowded microphyll axes and graded fertile zones with Devonian lycopsid organisation, while using derived mesic epiphytism to delimit the hydraulic analogy.",
+      "can_transfer": [
+        {
+          "text": "Shoot length: the north-eastern Queensland account of P. squarrosus gives branches 30-75 cm long, hanging, erect or arched; use length rather than standing height (Australian online key, accessed 2026-10-27).",
+          "support": "Tufted branches 30-75 cm long (Australian online key); hanging, erect or arched."
+        },
+        {
+          "text": "Leaf geometry: P. squarrosus in the Australian key has leaves 10-20 x 1-2 mm, angled 60-90 degrees from the axis and twisted basally; use as an organ-geometry analogue (Australian online key, accessed 2026-10-27).",
+          "support": "leaves 10-20 x 1-2 mm, angled 60-90 degrees from the axis and twisted near the base"
+        },
+        {
+          "text": "Fertile-zone geometry: P. squarrosus in the Australian key has fertile zones 10-30 cm long and 7-10 mm across, grading gradually from sterile shoots (Australian online key, accessed 2026-10-27).",
+          "support": "the fertile zone is 10-30 cm long and 7-10 mm across, and the sterile-to-fertile change is gradual"
+        }
+      ],
+      "cannot_transfer": [
+        {
+          "text": "Stomatal density 17.1 per mm2 belongs to the epiphytic congener P. nummularifolius, not P. squarrosus or a Devonian lycopsid (Prats et al. 2024).",
+          "support": "The congener P. nummularifolius had the lowest stomatal density of 38 ferns and lycophytes, 17.1 per mm2 (Prats et al. 2024)."
+        },
+        {
+          "text": "Vein density 0.37 mm per mm2 belongs to epiphytic Huperzia phlegmaria, not P. squarrosus; it cannot supply a species-specific or Devonian hydraulic parameter (Prats et al. 2024).",
+          "support": "Vein density in the epiphytic congener Huperzia phlegmaria was 0.37 mm per mm2"
+        },
+        {
+          "text": "Spore diameters 31-61 micrometres describe Neotropical huperzioids, not measured P. squarrosus spores; retain the original taxonomic scope (Rincon Baron et al. 2014).",
+          "support": "mean equatorial diameter 31-61 micrometres across Neotropical huperzioids (Rincon Baron et al. 2014). Not measured for this species."
+        },
+        {
+          "text": "Gametophyte maturation times cannot be assigned to P. squarrosus: the cited review concerns Lycopodium and Diphasiastrum, and its own gametophyte is unknown (Rimgaile-Voicik & Naujalis 2022).",
+          "support": "a review of *Lycopodium* and *Diphasiastrum* citing older work); no such figure exists for *Phlegmariurus*."
+        },
+        {
+          "text": "Mesic epiphytism cannot represent ancestral Devonian lycopsid ecology: the card assigns it to the much younger Phlegmariurus lineage (Testo et al. 2018, citing Field et al. 2016).",
+          "support": "Epiphytism is inferred to be the ancestral habit of the genus"
+        }
+      ],
+      "borrowed": [
+        {
+          "trait": "stomata",
+          "from_taxon": "Phlegmariurus nummularifolius",
+          "support": "The congener P. nummularifolius had the lowest stomatal density of 38 ferns and lycophytes, 17.1 per mm2 (Prats et al. 2024)."
+        },
+        {
+          "trait": "conducting_tissue",
+          "from_taxon": "Huperzia phlegmaria",
+          "support": "Vein density in the epiphytic congener Huperzia phlegmaria was 0.37 mm per mm2"
+        },
+        {
+          "trait": "spores",
+          "from_taxon": "Neotropical huperzioids",
+          "support": "mean equatorial diameter 31-61 micrometres across Neotropical huperzioids (Rincon Baron et al. 2014). Not measured for this species."
+        }
+      ],
+      "doubts": "The online key supplies morphology without a publication year or specimen identifiers; citations therefore retain its access date. Front-matter height is branch length. Branching, venation, axillary sporangia, homospory and roots include genus/family extrapolations. The claim that measured traits exist only for congeners conflicts with species-specific key dimensions."
+    },
+    {
+      "slug": "pluricaulis-biformis",
+      "contrasts": ["record-timing"],
+      "chosen_to_contrast": "Contrast an unpublished manuscript occurrence with formally described fossil records, using the Limestone Road material to test taxonomic availability and dating uncertainty rather than biological mechanisms.",
+      "can_transfer": [
+        {
+          "text": "Occurrence coding: retain the Limestone Road record as an indeterminate zosterophyll, without equating an identified specimen to Pluricaulis biformis; its link to the reported material remains unconfirmed (Tims & Chambers 1984; McSweeney et al. 2022).",
+          "support": "Tims & Chambers (1984) list for Limestone Road 'at least one zosterophyll (report in preparation)' and 'two other probable zosterophylls'"
+        },
+        {
+          "text": "Preservation filter: Limestone Road compressions lack cellular structure and spores; code these traits as unobservable rather than absent in material attributed to the manuscript taxon (Tims & Chambers 1984; McSweeney et al. 2021).",
+          "support": "Limestone Road material is preserved as fine compressions and impressions with no cellular structure or spores (Tims & Chambers 1984; McSweeney et al. 2021)."
+        }
+      ],
+      "cannot_transfer": [
+        {
+          "text": "Named-species richness and first appearances cannot count Pluricaulis biformis as a formally established species: the name remains unpublished and unavailable (McSweeney et al. 2022; McSweeney 2024).",
+          "support": "In first-appearance or diversity tallies it counts at most as 'zosterophyll indet., Lower Plant Assemblage'."
+        },
+        {
+          "text": "Cauline sporangia cannot be assigned from the zosterophyll label; they are a group expectation without an observation of Pluricaulis biformis (McSweeney et al. 2022).",
+          "support": "that is a group expectation, not an observation of this taxon."
+        },
+        {
+          "text": "The locality's axes up to 400 mm long cannot parameterise Pluricaulis biformis stature: the measurement is assemblage-level, with no taxon-specific description available (Tims & Chambers 1984).",
+          "support": "Axes up to 400 mm long at the locality suggest short or gentle transport"
+        },
+        {
+          "text": "A fixed Gorstian or precisely bracketed Early Devonian occurrence cannot be assigned: the card's interval is a revision-based window rather than a measured taxon range (Earp 2024; McSweeney et al. 2021).",
+          "support": "The range is the Early\n    Devonian window these revisions allow, not a measured one."
+        }
+      ],
+      "borrowed": [],
+      "doubts": "No species-level biological parameters are available; transferable content is restricted to occurrence coding and preservation. Lochkovian first occurrence does not encompass the expressly unexcluded Pridoli possibility. The unseen thesis limits categorical nomenclatural claims. Published informal-name listings qualify the assertion that literature databases cannot contain the name."
+    },
+    {
+      "slug": "posongchong-flora",
+      "contrasts": ["reproductive-strategy", "record-timing"],
+      "chosen_to_contrast": "Contrast an endemic South China trait assemblage and its dispersed-spore record with contemporary Laurussian floras, using a diverse but only stage-dated sampling unit.",
+      "can_transfer": [
+        {
+          "text": "Assemblage composition: the Posongchong Formation table contains 33 taxa including open nomenclature; use these as documented entries, not a reconciled species total (Cascales-Minana et al. 2018, table 4; card-derived count).",
+          "support": "counts derived by me, 33 taxa including open nomenclature"
+        },
+        {
+          "text": "Provincial occurrence structure: Posongchong has 20 of 28 genera endemic, over 70%; use this formation-level composition constraint rather than treating records as a pooled Laurussian sample (Wang et al. 2022).",
+          "support": "Over 70% of genera (20 of 28) are endemic (Wang et al. 2022"
+        },
+        {
+          "text": "Spore sampling: Posongchong dispersed assemblages contain 18 genera and 32 species across 12 samples, nine productive; use these as observation-model counts rather than parent-plant richness (Cascales-Minana et al. 2018).",
+          "support": "Dispersed spores: 18 genera and 32 species from 12 Posongchong samples, nine productive (Cascales-Minana et al. 2018)."
+        },
+        {
+          "text": "Member geometry: Hueberia bainiuchangensis in the Posongchong record, including Feigu, has stems 2.5-4.2 mm wide; retain this member-specific dimension without assigning a flora-wide axis size (Hu et al. 2025).",
+          "support": "Hueberia bainiuchangensis stems 2.5-4.2 mm wide (Hu et al. 2025)."
+        },
+        {
+          "text": "Occurrence timing: the Wenshan Posongchong assemblage is middle to late Pragian by biostratigraphy; retain stage-level uncertainty for the sampling unit (Cascales-Minana et al. 2018).",
+          "support": "It is dated to the middle to late Pragian by spores, fish and the overlying marine beds, with no radiometric age."
+        }
+      ],
+      "cannot_transfer": [
+        {
+          "text": "Flora-wide microphylls, tracheids and sporangium positions cannot become a single plant phenotype: the card combines leafless zosterophylls, lycopsids and euphyllophytes with different traits (Cascales-Minana et al. 2018; Hu et al. 2025).",
+          "support": "Trait frequencies need the species-level data in Hao & Xue (2013), not read."
+        },
+        {
+          "text": "Rare dispersed tetrads cannot supply a named member's spore output, reproductive allocation or abundance: their parent plants are unidentified (Cascales-Minana et al. 2018).",
+          "support": "the rare tetrads (0.5-2%) cannot be tied to parent plants (Cascales-Minana et al. 2018)."
+        },
+        {
+          "text": "A numerical point age cannot replace the Pragian bracket: spore correlation is preliminary and no radiometric date exists (Cascales-Minana et al. 2018).",
+          "support": "use stage-level, not Ma-level, timing."
+        },
+        {
+          "text": "Semi-aridity and short transport cannot be imposed throughout the formation: the geochemical interpretation concerns Feigu and the taphonomic claim concerns Hueberia material (Hu et al. 2025).",
+          "support": "semi-arid setting by whole-rock geochemistry\n  (Hu et al. 2025, one section)."
+        }
+      ],
+      "borrowed": [],
+      "doubts": "Sources give about 33 to 37 species; the table's 33 taxa include open nomenclature and were counted by the card author. Front-matter categorical traits compress member heterogeneity. Other-card dates are reported as inconsistent. The bibliography labels Cascales-Minana 2017, online 2018, while the text cites 2018."
+    },
+    {
+      "slug": "prototaxites",
+      "contrasts": ["height", "fungal-nutrition", "record-timing"],
+      "chosen_to_contrast": "Contrast giant tubular terrestrial bodies with small vascular plants, testing alternative trophic roles while keeping specimen dimensions, fungal affinity and preservation-controlled appearances separate.",
+      "can_transfer": [
+        {
+          "text": "Body length: the P. loganii trunk from Schunnemunk Mountain, Bellvale Sandstone, is 8.83 m long; use fossil length as the geometric constraint (Retallack & Landing 2014).",
+          "support": "883 cm = length of the 8.83 m Schunnemunk trunk (Retallack & Landing 2014"
+        },
+        {
+          "text": "Branch architecture: the same P. loganii trunk bears six branches about 1 m long and 9 cm across on its upper 1.2 m; model this specimen separately from unbranched forms (Retallack & Landing 2014).",
+          "support": "six branches, each about 1 m long and 9 cm across, on its upper 1.2 m."
+        },
+        {
+          "text": "Tube composition: Rhynie P. taiti specimen NSC.36 contains type 3 tubes about 40 µm wide, annularly thickened, aseptate and unbranched, occupying about 5% of volume; retain specimen-specific anatomy without inferring function (Loron et al. 2026).",
+          "support": "Type 3: about 40 µm, annular thickenings (\"banded\"), aseptate, unbranched, about 5%."
+        },
+        {
+          "text": "Isotopic heterogeneity: Prototaxites material across five localities, unnamed in the card, spans up to 13‰ in δ13C; use the measured spread to compare trophic scenarios, without fixing nutrition (Boyce et al. 2007).",
+          "support": "Boyce et al. (2007) measured δ13C spanning up to 13‰ across five localities"
+        },
+        {
+          "text": "Preservation relationship: Baltic Prototaxites first appears with middle Givetian subaerial delta-plain deposition; allow a depositional observation filter rather than treating earlier absence as exclusion (Vinn et al. 2026).",
+          "support": "Vinn et al. (2026) attribute the earlier absence to preservation, not biogeography."
+        }
+      ],
+      "cannot_transfer": [
+        {
+          "text": "Standing canopy height cannot equal Schunnemunk fossil length: orientation is uncertain, and horizontal mega-rhizomorph growth is an alternative interpretation (Retallack & Landing 2014; Vajda et al. 2023).",
+          "support": "Length of a fossil, not necessarily standing height."
+        },
+        {
+          "text": "Fungal identity, saprotrophy or lichen-like photosynthesis cannot be fixed genus-wide from Rhynie P. taiti; the non-fungal argument concerns one species at one locality and nutrition remains disputed (Loron et al. 2026).",
+          "support": "The authors acknowledge one species from one locality"
+        },
+        {
+          "text": "Tracheid-like hydraulic conductance cannot be assigned to P. taiti banded tubes: annular thickenings are observed, but a conducting function has not been demonstrated (Loron et al. 2026).",
+          "support": "no conducting function is demonstrated."
+        },
+        {
+          "text": "Polysporic asci cannot be accepted as an established P. taiti reproductive trait: their organic connection to diagnostic tissue is disputed (Honegger et al. 2018; Loron et al. 2026).",
+          "support": "the asci are not organically connected to diagnostic P. taiti tissue"
+        },
+        {
+          "text": "Growth rate, lifespan and standing biomass cannot be calibrated from fossil dimensions or isotopes; the card reports no such data.",
+          "support": "No growth-rate, longevity or standing-biomass data exist; treat them as free parameters."
+        }
+      ],
+      "borrowed": [],
+      "doubts": "The diameter minimum 56 mm is the widest dimension of the largest Rhynie fragment, not a population minimum. Branching is scored none despite the branched Schunnemunk specimen. The prose treats great standing height more confidently than the length caveat permits. The 8.83 m and 8.88 m historical lengths differ; earliest occurrences remain disputed."
+    },
+    {
+      "slug": "psilophyton",
+      "contrasts": ["water-transport", "reproductive-strategy", "clonal-growth"],
+      "chosen_to_contrast": "Contrast leafless branching architectures, hydraulic segmentation and rhizomatous anchorage using species-specific anatomy and fertile units rather than a single genus-wide body plan.",
+      "can_transfer": [
+        {
+          "text": "Vegetative architecture: P. crenulatum from Atholville, New Brunswick, has branches 2 mm to 8.3 cm long with 2-7 dichotomies; use these species-specific geometric rules (Doran 1980).",
+          "support": "In *P. crenulatum* vegetative branches are 2 mm to 8.3 cm long and 2-7 times dichotomous"
+        },
+        {
+          "text": "Fertile architecture: Atholville P. crenulatum fertile units divide 5-7 times and bear sporangia 3-5 x 1-2 mm containing spores 48-102 µm; preserve the linked measurements (Doran 1980).",
+          "support": "divide 5-7 times in three dimensions, hang pendulously and bear sporangia 3-5 x 1-2 mm containing spores of 48-102 µm (Doran 1980)."
+        },
+        {
+          "text": "Xylem segmentation: P. dawsonii has constrictions at 4 of 6 anisotomous minor-axis bases and 5 of 7 fertile junctions, absent at isotomous junctions; the card gives no specimen identifiers (Niklas & Banks 1985).",
+          "support": "Xylem constrictions occurred at 4 of 6 anisotomous minor-axis bases and 5 of 7 fertile-to-main-axis junctions, none at isotomous junctions (Niklas & Banks 1985)"
+        },
+        {
+          "text": "Rhizomatous architecture: Atholville P. crenulatum has 2,090 emergences on 28 axes, 62% on lower sides; use positional asymmetry and rhizomatous parts, retaining rooting function as an interpretation (Doran & Tomescu 2025).",
+          "support": "*P. crenulatum* had rhizomatous parts and 2,090 emergences on 28 axes, 62% on lower sides"
+        },
+        {
+          "text": "Conducting-cell structure: Gaspé P. dawsonii has P-type tracheids with scalariform to circular bordered, multiaperturate pits; use this anatomical state without importing conductance values (Hartman & Banks 1980).",
+          "support": "*P. dawsonii* tracheids are P-type, with scalariform to circular bordered, multiaperturate pits (Hartman & Banks 1980)."
+        }
+      ],
+      "cannot_transfer": [
+        {
+          "text": "Standing-height priors cannot use P. dapsile and P. forbesii textbook reconstructions as measurements; the card explicitly excludes them pending primary descriptions (Taylor et al. 2009, relayed by Wikipedia).",
+          "support": "Not yet usable as model priors; check against the species descriptions"
+        },
+        {
+          "text": "Regular spiral laterals, strong apical dominance and one genus-wide architecture cannot be assumed: species descriptions and the genus-level scoring conflict, and hormonal control is unobserved (Tomescu & Whitewoods 2024).",
+          "support": "Only overtopping is observable; hormonal control is not."
+        },
+        {
+          "text": "Measured hydraulic vulnerability or conductance cannot be derived directly from P. dawsonii constrictions; vulnerability segmentation is an untested functional hypothesis (Niklas & Banks 1985).",
+          "support": "a vulnerability-segmentation hypothesis, untested."
+        },
+        {
+          "text": "True roots, quantified uptake and clonal spread rates cannot be assigned to P. crenulatum emergences: rhizomatous parts are observed, but their rooting role is probable (Doran & Tomescu 2025).",
+          "support": "with a probable rooting role (Doran & Tomescu 2025)."
+        },
+        {
+          "text": "Rapid growth and disturbance-recovery rates cannot be calibrated from moist flood-mud occurrences; the ecological interpretation comes from facies and no growth rates exist (Griffing et al. 2000).",
+          "support": "Griffing et al. 2000; an inference from facies"
+        }
+      ],
+      "borrowed": [],
+      "doubts": "The height range combines secondary reconstructions of different species. Generic architecture and monophyly remain unresolved. Species-level measurements must not be pooled, and rooting function is inferred. The card labels P. crenulatum earliest Emsian while warning that its radiometric anchor and project stage boundary do not align."
+    },
+    {
+      "slug": "psilotum-nudum",
+      "contrasts": ["water-transport", "sporophyte-independence", "fungal-nutrition"],
+      "chosen_to_contrast": "Contrast measured axis gas exchange and an autotrophic sporophyte with a fungus-fed vascularised gametophyte, using a reduced living fern to test physiological alternatives.",
+      "can_transfer": [
+        {
+          "text": "Axis physiology: hydrated, glasshouse-grown P. nudum at saturating light has assimilation 2.47 +/- 0.29 micromol m-2 s-1 and whole-stem hydraulic conductance 1.30 +/- 0.21 mmol m-2 s-1 MPa-1, normalised by projected stem area (Franks 2006).",
+          "support": "assimilation 2.47 +/- 0.29 micromol m-2 s-1 (wheat 23.5), whole-stem hydraulic conductance 1.30 +/- 0.21 mmol m-2 s-1 MPa-1 (wheat 15.4)"
+        },
+        {
+          "text": "Stomatal response: P. nudum experimental material requires blue light for stomatal opening and CO2 fixation; use a conditional response module, with population provenance unspecified in the card (Doi et al. 2015).",
+          "support": "Stomatal opening and CO2 fixation both required blue light (Doi et al. 2015)."
+        },
+        {
+          "text": "Generation-specific nutrition: P. nudum has an autotrophic sporophyte and non-autotrophic gametophyte, both hosting intracellular glomeromycotean fungi; specimen provenance is unspecified in the card (Duckett & Ligrone 2005).",
+          "support": "the sporophyte is autotrophic while the gametophyte is not (Duckett & Ligrone 2005)."
+        },
+        {
+          "text": "Fungal-network association: greenhouse-pot P. nudum gametophytes and sporophytes share 11 Glomus A phylotypes in four clades with neighbouring angiosperm roots; model observed partner overlap separately from carbon flux (Winther & Friedman 2009).",
+          "support": "11 *Glomus* A phylotypes in four clades occurred in gametophytes, sporophytes and neighbouring angiosperm roots"
+        },
+        {
+          "text": "Spore geometry: one unacetolysed P. nudum garden sample from Eka Karya Botanical Garden, Bali, has monolete ellipsoidal spores about 30 x 63 micrometres; retain the single-sample scope (Pramesti et al. 2023).",
+          "support": "Spores are monolete and ellipsoidal, about 30 x 63 micrometres in one unacetolysed garden sample (Pramesti et al. 2023"
+        }
+      ],
+      "cannot_transfer": [
+        {
+          "text": "Rootlessness, scale-like appendages and vascular anatomy cannot define ancestral rhyniophytes: P. nudum is a reduced fern, despite its superficial resemblance (Pryer et al. 2001; Nitta et al. 2022; Samec et al. 2019).",
+          "support": "its simplicity is now read as reduction from a more typical fern"
+        },
+        {
+          "text": "Franks's measured gas-exchange and hydraulic values cannot become universal Devonian constants: their boundary conditions include present-day CO2, hydrated glasshouse plants and derived fern anatomy (Franks 2006).",
+          "support": "Limits: present-day CO2, glasshouse plants, a derived fern anatomy."
+        },
+        {
+          "text": "Carbon-transfer rate, donor identity and donor necessity cannot be treated as tracer-proven relationships in P. nudum; shared fungal identities support an inference, not a measured flux (Winther & Friedman 2009).",
+          "support": "an inference from fungal identity, not a tracer measurement"
+        },
+        {
+          "text": "A wholly passive ancestral stomatal rule cannot be fixed from the comparison: the passive-control interpretation and P. nudum blue-light requirement are presented as alternative modules (Brodribb & McAdam 2011; Doi et al. 2015).",
+          "support": "are not easily reconciled; treat them as alternative modules."
+        }
+      ],
+      "borrowed": [],
+      "doubts": "Spores are scored na only because monolete spores fall outside the vocabulary; spores are present. Height combines flora observations and one population. Blue-light and fungal-cytology experiments lack specimen provenance in the card. The single garden spore measurement is not a population range."
+    },
+    {
+      "slug": "renalia-hueberi",
+      "contrasts": ["height", "reproductive-strategy", "record-timing"],
+      "chosen_to_contrast": "Contrast terminal reniform bivalved sporangia and lycophyte-like spore walls with alternative ancestral-state reconstructions, using a small Emsian plant that post-dates older zosterophylls.",
+      "can_transfer": [
+        {
+          "text": "Preserved-axis geometry, provisionally: R. hueberi Gaspé compressions have axes about 1 mm wide and at least 11 cm long; use fragment dimensions rather than whole-plant height (Gensel 1976, abstract-level summary).",
+          "support": "gives axes about 1 mm wide and at least 11 cm long"
+        },
+        {
+          "text": "Reproductive architecture: R. hueberi from the Battery Point Formation, Gaspé, has terminal reniform bivalvate sporangia, seemingly paired; preserve uncertainty about pairing (Nibbelink & Tomescu 2022).",
+          "support": "Reniform, bivalvate sporangia borne terminally on axes, seemingly paired, as in rhyniopsids (Nibbelink & Tomescu 2022)."
+        },
+        {
+          "text": "Spore-wall structure: R. hueberi Gaspé material has trilete spores with a single-layered wall, no perispore or paraexospore, and surface globules; use these character states independently of phylogenetic placement (Gensel et al. 2013).",
+          "support": "Trilete with a raised trilete mark; wall single-layered, no perispore or paraexospore, surface globules (Gensel et al. 2013)."
+        }
+      ],
+      "cannot_transfer": [
+        {
+          "text": "A measured standing-height range cannot use 11-30 cm: the lower value is preserved-axis length and the upper value is a secondary whole-plant estimate, unverified against Gensel (1976).",
+          "support": "Whole-plant form is reconstructed from fragments."
+        },
+        {
+          "text": "Exarch xylem maturation or a detailed hydraulic model cannot be assigned: R. hueberi preserves only cleared cellular patterns and short tracheid strands (Gensel 1976, per Nibbelink & Tomescu 2022).",
+          "support": "wall type and xylem maturation (exarch or centrarch) unknown."
+        },
+        {
+          "text": "Lateral sporangia cannot be transferred from R. major to R. hueberi; the Rhineland report concerns another species and is unchecked (Schweitzer 1980, secondary record).",
+          "support": "R. major of Schweitzer (1980) is reported with lateral sporangia on short stalks (secondary; unchecked)."
+        },
+        {
+          "text": "An ancestral node date cannot be assigned from morphological intermediacy: Emsian Renalia post-dates Ludfordian zosterophylls and has unresolved placement (Kotyk et al. 2002; Nibbelink & Tomescu 2022).",
+          "support": "Treat it as an unresolved lineage, not a node."
+        },
+        {
+          "text": "Backswamp or marsh stand structure cannot be assigned to R. hueberi from other Gaspé zosterophylls: its own facies is unstated (Griffing et al. 2000).",
+          "support": "Renalia's own facies is not stated in the sources read"
+        }
+      ],
+      "borrowed": [],
+      "doubts": "Height bounds conflate fragment length and inferred stature; axis dimensions and branching rely on abstract-level or secondary summaries. Rhineland congeners appear in a species card's locality list but do not establish its range. The proposed ghost-lineage duration depends on unresolved phylogenetic placement."
+    },
+    {
+      "slug": "rhynia-gwynne-vaughanii",
+      "contrasts": ["water-transport", "sporophyte-independence", "clonal-growth"],
+      "chosen_to_contrast": "Contrast S-type tracheid hydraulics and epidermal vegetative regeneration with sexual life-cycle structure, using anatomically preserved Rhynie sporophytes and an associated gametophyte stand.",
+      "can_transfer": [
+        {
+          "text": "Conducting anatomy: R. gwynne-vaughanii in Rhynie thin sections has a small exarch S-type tracheid strand surrounded by four to five cells of unpitted parenchyma (Kenrick & Crane 1991; Kerp 2017).",
+          "support": "Small circular exarch strand of S-type tracheids with broad annular or helical thickenings,\n      ringed by four to five cells of unpitted parenchyma (Kenrick and Crane 1991; Kerp 2017)."
+        },
+        {
+          "text": "Stomatal geometry: Rhynie R. gwynne-vaughanii has non-sunken stomata 90 to 100 µm by 75 to 85 µm; use these dimensions without converting them into a measured control response (Kerp 2017).",
+          "support": "Stomata are 90 to 100 × 75 to 85 µm and lack cutinised hypodermal channels"
+        },
+        {
+          "text": "Reproductive geometry: Rhynie R. gwynne-vaughanii has sporangia up to 5.1 × 2.4 mm and spores about 39 µm; retain the rarity of attached sporangia (Kerp 2017).",
+          "support": "Sporangia are up to 5.1 × 2.4 mm with a three-layered wall, an abscission zone and a sterile basal pad; spores are about 39 µm."
+        },
+        {
+          "text": "Vegetative regeneration: Rhynie R. gwynne-vaughanii produces epidermal propagules 0.34 to 2.3 mm long with stomata, rhizoids and a vascular strand; represent this route separately from sexual reproduction (Kearney et al. 2016, reported by Kerp 2017).",
+          "support": "Propagules 0.34 to 2.3 mm long with stomata, rhizoids and a vascular strand develop from epidermal cells and hemispherical projections"
+        },
+        {
+          "text": "Gametophyte sampling: the Rhynie Remyophyton stand associated with R. gwynne-vaughanii occupies 1.5 × 1.5 cm with over 200 individuals, including 27 archegoniophores and at least 69 antheridiophores; use observed counts without a causal sex-ratio rule (Taylor et al. 2005).",
+          "support": "1.5 × 1.5 cm patch with over 200 individuals; 27 archegoniophores and at least 69 antheridiophores recognised (Taylor et al. 2005)"
+        }
+      ],
+      "cannot_transfer": [
+        {
+          "text": "Hard stature and diameter priors cannot treat about 20 cm and up to 3 mm as primary measurements: they come from the unchecked University of Aberdeen resource (n.d.).",
+          "support": "About 20 cm in the University of Aberdeen Rhynie web resource (not peer reviewed); not"
+        },
+        {
+          "text": "Measured water-use efficiency or stomatal response rates cannot be assigned from Rhynia anatomy: high efficiency is inferred, not quantified (Edwards 1998).",
+          "support": "whose water-use efficiency is inferred to be high (Edwards 1998)"
+        },
+        {
+          "text": "Isomorphic generations and a specified sporophyte-gametophyte dependence cannot be fixed for Rhynia: the broader life-cycle hypothesis leans on one Cooksonia specimen, and the junction remains an open question (Gerrienne et al. 2006).",
+          "support": "the hypothesis leans on a single Cooksonia specimen."
+        },
+        {
+          "text": "Geographical range and first appearances cannot be extended using similar dispersed spores; convergence prevents tracing Rhynia beyond its basin (Wellman 2017).",
+          "support": "Rhynia spores resemble those of other plants and cannot be traced beyond the Rhynie basin (Wellman 2017)."
+        }
+      ],
+      "borrowed": [],
+      "doubts": "Remyophyton is the card's identified gametophyte morphotaxon, treated here as the associated generation rather than a borrowed congener proxy. Stature and diameter are unchecked secondary values. Male-biased counts lack an explained cause; inferred water-use efficiency and recolonisation do not provide rates."
+    }
+  ]
+}

@@ -1,0 +1,192 @@
+{
+  "items": [
+    {
+      "claim": "“Lycopodiaceae, subfamily Lycopodielloideae, genus Lycopodiella (a mainly Laurasian genus)”; “sister to Lycopodioideae”",
+      "section": "Front matter: lineage; Affinity and controversies",
+      "verdict": "supported",
+      "evidence": "The phylogeny recognises these subfamilies and relationships; the biogeographical discussion explicitly describes Lycopodiella as primarily Laurasian.",
+      "source": "[Testo et al. 2018](https://www.uvm.edu/~dbarring/publications/testo2018-2.pdf), DOI 10.1111/jbi.13373; full text."
+    },
+    {
+      "claim": "“its gametophytes are described as at least partly superficial and photosynthetic”",
+      "section": "Front matter: lineage",
+      "verdict": "supported",
+      "evidence": "The discussion describes Lycopodielloideae gametophytes as partly or wholly superficial, photosynthetic and relatively fast-growing; this is a subfamily generalisation.",
+      "source": "[Testo et al. 2018](https://www.uvm.edu/~dbarring/publications/testo2018-2.pdf); full text, discussion §4.1."
+    },
+    {
+      "claim": "“Lycopodiaceae crown at 368.4 Ma (95% HPD 326-389)”",
+      "section": "Front matter: range.notes; Age and distribution",
+      "verdict": "supported",
+      "evidence": "Results explicitly reports these values, but an adjacent paragraph gives 325–383 Ma for the same crown estimate; the source is internally inconsistent.",
+      "source": "[Testo et al. 2018](https://www.uvm.edu/~dbarring/publications/testo2018-2.pdf); full text, §3.1."
+    },
+    {
+      "claim": "“split of Lycopodioideae from Lycopodielloideae at 293.6 Ma (262-320)”",
+      "section": "Front matter: range.notes; Age and distribution",
+      "verdict": "supported",
+      "evidence": "The preferred random-local-clock analysis estimates this divergence at 293.6 Ma, with 95% HPD 262–320 Ma.",
+      "source": "[Testo et al. 2018](https://www.uvm.edu/~dbarring/publications/testo2018-2.pdf); full text, §3.1."
+    },
+    {
+      "claim": "“radiation of Lycopodielloideae out of Oceania in the late Mesozoic”; “species therefore sits in a Mesozoic or younger radiation”",
+      "section": "Front matter: range.notes; Age and distribution",
+      "verdict": "supported",
+      "evidence": "DEC+j reconstruction suggests late-Mesozoic radiation from Oceania. This contextualises the clade; it does not date the species or the symbiotic trait.",
+      "source": "[Testo et al. 2018](https://www.uvm.edu/~dbarring/publications/testo2018-2.pdf); full text, §3.2."
+    },
+    {
+      "claim": "“No fossil record of the species or genus was found in the sources read”",
+      "section": "Front matter: range.notes; Age and distribution",
+      "verdict": "unverifiable",
+      "evidence": "The author's search history cannot be verified. Additional primary literature describes middle-Miocene Lycopodiella-type spores, without establishing L. inundata species identity.",
+      "source": "[Bouchal 2019, published online 2018](https://link.springer.com/article/10.1007/s12549-018-0345-0), DOI 10.1007/s12549-018-0345-0; full text, systematic palaeobotany."
+    },
+    {
+      "claim": "“juvenile sporophytes bear up to seven leaves”",
+      "section": "Front matter: traits.leaves; Morphology and anatomy",
+      "verdict": "supported",
+      "evidence": "The experimental juvenile stage had up to seven leaves, protocorm remnants and rhizoids, and was already detached from its gametophyte.",
+      "source": "[Hoysted et al. 2021](https://nph.onlinelibrary.wiley.com/doi/10.1111/nph.17009); published full text, Fig. 1 and accompanying description."
+    },
+    {
+      "claim": "“root hairs ... typically 100-1000 micrometres long and 20 micrometres wide”",
+      "section": "Front matter: traits.rooting; Morphology and anatomy",
+      "verdict": "supported",
+      "evidence": "The introduction gives 100–1000 μm length and 20 μm diameter; these are descriptive dimensions, not a reported morphometric sampling result.",
+      "source": "[Kowal et al. 2020](https://link.springer.com/article/10.1007/s00572-020-00979-3); full text."
+    },
+    {
+      "claim": "“Bruchmann's type IV is named for this species”",
+      "section": "Front matter: traits.gametophyte; Morphology and anatomy",
+      "verdict": "unverifiable",
+      "evidence": "The cited review explicitly lists L. inundata as Type IV, but Bruchmann's original classification was not independently read and verified.",
+      "source": "[Rimgailė-Voicik and Naujalis 2022](https://pmc.ncbi.nlm.nih.gov/articles/PMC9039787/); full-text review, not the original primary description."
+    },
+    {
+      "claim": "“sporangia develop in the axils of sporophylls, aggregated into a terminal strobilus”; “one terminal cone”",
+      "section": "Front matter: traits.sporangium_position",
+      "verdict": "supported",
+      "evidence": "Becker describes lateral axillary sporangia and terminal aggregates in some family members; Kowal specifically describes the species' singular terminal cone.",
+      "source": "[Becker et al. 2025](https://link.springer.com/article/10.1007/s00497-025-00522-4), full-text review; [Kowal et al. 2020](https://link.springer.com/article/10.1007/s00572-020-00979-3), full-text primary paper."
+    },
+    {
+      "claim": "“The reading that fits the most evidence is a green, lobed, surface-living mature gametophyte”",
+      "section": "Morphology and anatomy: Gametophyte",
+      "verdict": "overstated",
+      "evidence": "Culture observations concern L. prostrata; Hoysted describes L. inundata differently. Counting indirect accounts cannot resolve the species-specific phenotype.",
+      "source": "[Whittier and Carter 2007](https://www.valdosta.edu/biology/documents/faculty-documents/carter-docs/whittier-and-carter-2008.pdf), full text; [Hoysted et al. 2021](https://nph.onlinelibrary.wiley.com/doi/10.1111/nph.17009), published full text."
+    },
+    {
+      "claim": "“lycophyte-euphyllophyte split ... 431.5 Ma (426-440)”",
+      "section": "Age and distribution",
+      "verdict": "supported",
+      "evidence": "The preferred random-local-clock analysis reports 431.5 Ma, with 95% HPD 426–440 Ma.",
+      "source": "[Testo et al. 2018](https://www.uvm.edu/~dbarring/publications/testo2018-2.pdf); full text, §3.1."
+    },
+    {
+      "claim": "“found Mucoromycotina (Endogonales) and no Glomeromycotina sequences in wild and experimental plants”",
+      "section": "Affinity and controversies: Partner identity",
+      "verdict": "supported",
+      "evidence": "Sequencing detected Mucoromycotina OTUs before and after experiments and in wild plants; Glomeromycotina sequences were not detected.",
+      "source": "[Hoysted et al. 2019](https://pmc.ncbi.nlm.nih.gov/articles/PMC6776871/); full text, molecular results."
+    },
+    {
+      "claim": "“the one living vascular plant ... measured across several stages ... with a single, Mucoromycotina-only partner”",
+      "section": "Model transfer: opening",
+      "verdict": "overstated",
+      "evidence": "The studies establish MFRE-only detection and multiple developmental stages, but report diverse fungal OTUs, not one experimentally isolated partner.",
+      "source": "[Hoysted et al. 2019](https://pmc.ncbi.nlm.nih.gov/articles/PMC6776871/), full text; [Hoysted et al. 2021](https://nph.onlinelibrary.wiley.com/doi/10.1111/nph.17009), published full text."
+    },
+    {
+      "claim": "“no detected carbon allocation ... juvenile ... (n = 5), allocation at mature and retreating stages (n = 24 and 16) ... Thursley, 2017”",
+      "section": "Model transfer: Can transfer, stage-dependent payment",
+      "verdict": "supported",
+      "evidence": "Published methods and Fig. 2 confirm locality, year, sample sizes and detection pattern; nondetection does not establish zero carbon transfer.",
+      "source": "[Hoysted et al. 2021](https://nph.onlinelibrary.wiley.com/doi/10.1111/nph.17009); published full text."
+    },
+    {
+      "claim": "“0.28% ... carbon ... 3-9% ... 33P and 0.6-1% ... 15N ... n = 20 and 10”",
+      "section": "Model transfer: Can transfer, tracer fractions",
+      "verdict": "supported",
+      "evidence": "Results and Fig. 2 report these fractions and replicate counts. Each fraction uses its own supplied or fixed tracer denominator.",
+      "source": "[Hoysted et al. 2019](https://pmc.ncbi.nlm.nih.gov/articles/PMC6776871/); full text."
+    },
+    {
+      "claim": "“what a single MFRE partner returns per unit carbon”",
+      "section": "Model transfer: Can transfer, interpretation of tracer fractions",
+      "verdict": "wrong",
+      "evidence": "Nutrients accumulated for 21 days before a roughly 16-hour carbon chase; separate tracer fractions do not measure nutrient return per carbon.",
+      "source": "[Hoysted et al. 2019](https://pmc.ncbi.nlm.nih.gov/articles/PMC6776871/); full text, isotope-labelling methods."
+    },
+    {
+      "claim": "“seasonal colonisation pulse ... 14% to 86% of roots; 1,305 roots, 11 heaths”",
+      "section": "Model transfer: Can transfer, seasonal colonisation",
+      "verdict": "supported",
+      "evidence": "The survey examined 1305 roots from 275 plants at 11 heathlands in 2019, reporting 14% spring and 86% autumn colonisation.",
+      "source": "[Kowal et al. 2020](https://link.springer.com/article/10.1007/s00572-020-00979-3); full text."
+    },
+    {
+      "claim": "“matrotrophy range from months ... Lycopodiella ... to years ... Lycopodium obscurum ... only the second is a species measurement”",
+      "section": "Model transfer: Can transfer, matrotrophy",
+      "verdict": "imprecise",
+      "evidence": "The discussion supports months versus years, but collected specimens were examined microscopically; this study did not longitudinally measure time to independence.",
+      "source": "[Renzaglia and Whittier 2013](https://pmc.ncbi.nlm.nih.gov/articles/PMC3783242/), DOI 10.1093/aob/mct178; indexed full-text methods and discussion excerpts read; direct full-page retrieval was blocked."
+    },
+    {
+      "claim": "“Any gametophyte nutrition number: none was measured”; “do not tag its mode ... until the species description is settled”",
+      "section": "Model transfer: Cannot transfer, gametophyte nutrition",
+      "verdict": "supported",
+      "evidence": "Tracer experiments concern sporophytes; gametophyte evidence is cytological. Withholding quantitative budgets and an experimentally established trophic classification is justified.",
+      "source": "[Hoysted et al. 2019](https://pmc.ncbi.nlm.nih.gov/articles/PMC6776871/), full text; [Hoysted et al. 2021](https://nph.onlinelibrary.wiley.com/doi/10.1111/nph.17009), published full text."
+    },
+    {
+      "claim": "“Partner identity for Rhynie plants ... modern Mucoromycotina FRE ... Rhynie hosts were rootless and carried Glomeromycotina-like and Mucoromycotina-like fungi”",
+      "section": "Model transfer: Cannot transfer, Rhynie comparison",
+      "verdict": "supported",
+      "evidence": "Horneophyton preserves two morphologically distinguished fungal associates in aerial axes and basal tissues; these do not identify the modern experimental symbionts.",
+      "source": "[Strullu-Derrien et al. 2014](https://nph.onlinelibrary.wiley.com/doi/full/10.1111/nph.12805), full text; primary fossil source cited within [Hoysted et al. 2019](https://pmc.ncbi.nlm.nih.gov/articles/PMC6776871/), full text. The card needs this direct citation."
+    },
+    {
+      "claim": "“all exchange was measured through roots with long root hairs”",
+      "section": "Model transfer: Cannot transfer, root-borne trade",
+      "verdict": "wrong",
+      "evidence": "Experimental juveniles had rhizoid-bearing protocorm remnants and no, or rarely one, rootlet. Phosphorus transfer was nevertheless detected in juveniles.",
+      "source": "[Hoysted et al. 2021](https://nph.onlinelibrary.wiley.com/doi/10.1111/nph.17009); published full text."
+    },
+    {
+      "claim": "“Absolute rates under Devonian conditions ... modern CO2 ... short labelling windows”",
+      "section": "Model transfer: Cannot transfer, environmental extrapolation",
+      "verdict": "supported",
+      "evidence": "Experiments used modern field material in controlled microcosms; nutrient and carbon tracer windows differed. No Devonian-environment treatment was performed.",
+      "source": "[Hoysted et al. 2019](https://pmc.ncbi.nlm.nih.gov/articles/PMC6776871/); full text, methods."
+    },
+    {
+      "claim": "“no days-to-independence figure exists for this species”",
+      "section": "Model transfer: Cannot transfer, timing of independence",
+      "verdict": "overstated",
+      "evidence": "The cited experiments provide no elapsed developmental timeline. They cannot establish that no such figure exists anywhere in the species' literature.",
+      "source": "[Hoysted et al. 2021](https://nph.onlinelibrary.wiley.com/doi/10.1111/nph.17009), published full text; [Renzaglia and Whittier 2013](https://pmc.ncbi.nlm.nih.gov/articles/PMC3783242/), indexed full-text excerpts."
+    },
+    {
+      "claim": "“A Devonian origin of stage-dependent trade ... lineage is far younger ... crown ... 368.4 Ma”",
+      "section": "Model transfer: Cannot transfer, evolutionary origin",
+      "verdict": "imprecise",
+      "evidence": "A crown divergence date does not date the origin of stage-dependent trade. The experiments neither establish nor exclude inheritance from older ancestors.",
+      "source": "[Testo et al. 2018](https://www.uvm.edu/~dbarring/publications/testo2018-2.pdf), full text; [Hoysted et al. 2021](https://nph.onlinelibrary.wiley.com/doi/10.1111/nph.17009), published full text."
+    }
+  ],
+  "omissions": [
+    "The carbon and nutrient labelling windows differ substantially. This prevents interpreting their percentages as a common exchange efficiency, even after acknowledging that they are not annual budgets. [Hoysted et al. 2019, full text](https://pmc.ncbi.nlm.nih.gov/articles/PMC6776871/).",
+    "Molecular results identify multiple MFRE OTUs. Exclusive detection of one fungal group does not demonstrate a single fungal species or genotype. [Hoysted et al. 2019, full text](https://pmc.ncbi.nlm.nih.gov/articles/PMC6776871/).",
+    "The experimental juvenile is a useful pre-root comparison: nutrient transfer can occur in rhizoid-bearing protocorm stages. The blanket restriction to root-borne exchange discards this contrast. [Hoysted et al. 2021, published full text](https://nph.onlinelibrary.wiley.com/doi/10.1111/nph.17009).",
+    "Developmental stage covaries with season, photosynthetic tissue and colonisation anatomy. These comparisons do not isolate a stage effect independent of plant size and environment. [Hoysted et al. 2021, published full text](https://nph.onlinelibrary.wiley.com/doi/10.1111/nph.17009).",
+    "The seasonal survey sampled new subplots and plants at two dates in one year. Root colonisation prevalence is not a measured seasonal multiplier for nutrient flux. [Kowal et al. 2020, full text](https://link.springer.com/article/10.1007/s00572-020-00979-3).",
+    "The clock paper contains conflicting crown-age HPDs and substantial clock-model sensitivity. These are model estimates, not a species fossil range. [Testo et al. 2018, full text](https://www.uvm.edu/~dbarring/publications/testo2018-2.pdf).",
+    "Primary palaeobotanical literature reports middle-Miocene Lycopodiella-type spores resembling the L. inundata spore type. This warrants a fossil-evidence qualification, without assigning those fossils to the living species. [Bouchal 2019, full text](https://link.springer.com/article/10.1007/s12549-018-0345-0).",
+    "The cited gametophyte review identifies Goebel's 1887 species-specific account under Lycopodium inundatum. It is a concrete primary-source lead omitted from the proposed next reading; its contents were not verified here. [Rimgailė-Voicik and Naujalis 2022, full text](https://pmc.ncbi.nlm.nih.gov/articles/PMC9039787/).",
+    "The published 2021 article was accessible and retains the principal numerical findings and nondetection caveat. Its Fig. 2 specifies minimum-to-maximum error bars, resolving an inconsistency between duplicated accepted-manuscript legends. [Published full text](https://nph.onlinelibrary.wiley.com/doi/10.1111/nph.17009)."
+  ],
+  "model_transfer_assessment": "Fungal nutrition is the strongest contrast; sporophyte independence is informative anatomically, but its timing and nutritional transition were not measured. The stage-specific tracer observations and seasonal colonisation percentages were measured on L. inundata specimens, whereas the matrotrophy comparison draws on other taxa and descriptive literature. The section incorrectly turns separate tracer fractions into return per carbon and MFRE-only detection into a single partner. Its limits concerning gametophyte budgets and Devonian rates are appropriate, but the roots-only restriction contradicts the juvenile experiment, and it needs explicit limits concerning confounded stages, unequal tracer windows, fungal diversity and colonisation-versus-function.",
+  "overall": "The card reproduces most central numerical results accurately and usefully flags uncertainty about gametophytes. It needs substantive revision before modelling use: the exchange-efficiency interpretation and roots-only claim are wrong, while single-partner language, independence timing and evolutionary dating exceed the evidence."
+}

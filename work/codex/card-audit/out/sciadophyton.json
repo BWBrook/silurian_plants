@@ -1,0 +1,188 @@
+{
+  "items": [
+    {
+      "claim": "\"height_cm: {min: 0.32, max: 10}\"",
+      "section": "Front matter: traits.height_cm",
+      "verdict": "imprecise",
+      "evidence": "These are axis lengths pooled across French and German material, not measured standing heights or dimensions of a demonstrated single species.",
+      "source": "[Capel et al. 2022](https://doi.org/10.1080/23818107.2022.2101516), full-text descriptive passages retrieved through search indexing; [Gerrienne & Gonez 2011](https://orbi.uliege.be/bitstream/2268/101745/1/Gerrienne%26Gonez2011.pdf), full text, secondary account."
+    },
+    {
+      "claim": "\"up to 30 axes, up to 10 cm long, radiating from a central part\"",
+      "section": "Front matter: traits.height_cm; Model transfer: Can transfer",
+      "verdict": "unverifiable",
+      "evidence": "The 2011 review repeats these values, but Remy et al. 1980 was inaccessible; original specimens and measurement provenance remain unchecked.",
+      "source": "[Gerrienne & Gonez 2011](https://orbi.uliege.be/bitstream/2268/101745/1/Gerrienne%26Gonez2011.pdf), full text, secondary account; [journal contents](https://www-archiv.fdm.uni-hamburg.de/b-online/kerp/cont.html), bibliography only for Remy et al. 1980."
+    },
+    {
+      "claim": "\"axes 2.0–2.6 mm wide and over 9 cm long\"",
+      "section": "Front matter: quantitative trait notes; Model transfer: Can transfer",
+      "verdict": "supported",
+      "evidence": "Kenrick explicitly gives approximately 2.0–2.6 mm width and lengths exceeding 9 cm for Sciadophyton.",
+      "source": "[Kenrick 2017](https://doi.org/10.1098/rstb.2017.0149), full-text section and figure caption retrieved through search indexing; underlying 1980 descriptions not reached."
+    },
+    {
+      "claim": "\"four axes 3.2–10 mm long and at most 0.3 mm wide ... centre 2 × 0.5 mm\"",
+      "section": "Front matter: quantitative trait notes; Morphology and anatomy",
+      "verdict": "supported",
+      "evidence": "USTL 3686: four preserved axes, 3.2–10 mm long, maximum width 0.3 mm; centre 2 × 0.5 mm; total axis count unknown.",
+      "source": "[Capel et al. 2022](https://doi.org/10.1080/23818107.2022.2101516), full-text Sciadophyton description retrieved through search indexing; complete PDF retrieval exceeded the tool size limit."
+    },
+    {
+      "claim": "\"axis_diameter_mm: {min: 0.3, max: 2.6}\"",
+      "section": "Front matter: traits.axis_diameter_mm",
+      "verdict": "imprecise",
+      "evidence": "The French 0.3 mm value is a maximum width, not a minimum; compression widths do not establish original cylindrical diameters.",
+      "source": "[Capel et al. 2022](https://doi.org/10.1080/23818107.2022.2101516) and [Kenrick 2017](https://doi.org/10.1098/rstb.2017.0149), full-text descriptive passages retrieved through search indexing."
+    },
+    {
+      "claim": "\"first: Pragian\"; \"Pragian ... fits the German material called 'Siegenian'\"",
+      "section": "Front matter: range",
+      "verdict": "unverifiable",
+      "evidence": "Neither the cited Welsh primary description nor a specimen-specific Siegenian–ICS correlation was reached; the encoded first stage remains unsupported.",
+      "source": "[Remy et al. 1980 journal listing](https://www-archiv.fdm.uni-hamburg.de/b-online/kerp/cont.html), bibliography only; [Capel et al. 2022](https://doi.org/10.1080/23818107.2022.2101516), full-text passages, insufficient to settle the first occurrence."
+    },
+    {
+      "claim": "\"last: Emsian\"; Rebreuve \"early Emsian ... no direct date ... palynology failed\"",
+      "section": "Front matter: range; Age and distribution",
+      "verdict": "supported",
+      "evidence": "Failed local palynomorph recovery leaves an equivocal early Emsian correlation based on nearby dated formations and the plant assemblage.",
+      "source": "[Capel et al. 2022](https://doi.org/10.1080/23818107.2022.2101516), full-text stratigraphic passages retrieved through search indexing. Supports an Emsian occurrence, not a demonstrated extinction."
+    },
+    {
+      "claim": "\"Sciadophyton laxum ... Estinnes-au-Mont ... early Emsian\"",
+      "section": "Front matter: range and localities",
+      "verdict": "supported",
+      "evidence": "Stockmans labels S. laxum from Bois de Bescaille; Capel identifies that locality as early Emsian.",
+      "source": "[Stockmans 1940, plate IV](https://biblio.naturalsciences.be/rbins-publications/memoires/93-1940/vol-93-024e97x-figures.pdf), indexed plate and caption, not complete monograph; [Capel et al. 2022](https://doi.org/10.1080/23818107.2022.2101516), full-text passage."
+    },
+    {
+      "claim": "\"Canada, China and Brazil\"; \"the Brazilian occurrence cited by Gerrienne & Gonez (2011)\"",
+      "section": "Front matter: localities and range; Age and distribution",
+      "verdict": "overstated",
+      "evidence": "The cited Brazilian primary paper describes enigmatic circular structures resembling Sciadophyton cups, without identifying them as Sciadophyton.",
+      "source": "[Gerrienne et al. 2001](https://www.researchgate.net/publication/235722961_An_Early_Devonian_flora_including_Cooksonia_from_the_Parana_Basin_Brazil), author-uploaded full text, especially the description accompanying plate V, figures 6–8. Canadian and Chinese primaries were not reached."
+    },
+    {
+      "claim": "\"interpreted ... as the gametophyte of an unidentified polysporangiophyte\"; \"Gametophyte incertae sedis\"",
+      "section": "Front matter: lineage and gametophyte; In brief; Affinity and controversies",
+      "verdict": "supported",
+      "evidence": "Remy and colleagues interpret compression fossils as gametophytes by comparison with Rhynie material; Capel places Sciadophyton under gametophyte incertae sedis.",
+      "source": "[Remy et al. 1993](https://doi.org/10.1086/297089), abstract only; [Capel et al. 2022](https://doi.org/10.1080/23818107.2022.2101516), full-text taxonomic section retrieved through search indexing."
+    },
+    {
+      "claim": "\"S-type conducting cells ... point to a sporophyte in the tracheophyte stem group\"",
+      "section": "Front matter: lineage",
+      "verdict": "supported",
+      "evidence": "Kenrick explicitly interprets Rhynia-like S-type tracheids as strong evidence of vascular-plant stem-group affinity while retaining uncertainty about the sporophyte.",
+      "source": "[Kenrick 2017](https://doi.org/10.1098/rstb.2017.0149), full-text phylogenetic discussion retrieved through search indexing; an interpretation rather than an organic connection."
+    },
+    {
+      "claim": "\"simple, isotomously branched, or bear secondary branches at right angles\"",
+      "section": "Front matter: traits.branching",
+      "verdict": "unverifiable",
+      "evidence": "The 2011 review repeats this branching description; the cited 1993 paper's accessible abstract does not establish these particular branching states.",
+      "source": "[Remy et al. 1993](https://doi.org/10.1086/297089), abstract only; [Gerrienne & Gonez 2011](https://orbi.uliege.be/bitstream/2268/101745/1/Gerrienne%26Gonez2011.pdf), full text, secondary confirmation."
+    },
+    {
+      "claim": "\"stomata: {state: unknown}\"; \"Not reported in the sources I read\"",
+      "section": "Front matter: traits.stomata",
+      "verdict": "unverifiable",
+      "evidence": "The 1993 abstract broadly attributes stomata to the discussed gametophytes; inaccessible taxon-specific text prevents resolving whether Sciadophyton itself is included.",
+      "source": "[Remy et al. 1993](https://doi.org/10.1086/297089), abstract only; full text inaccessible. This requires resolution before changing the trait."
+    },
+    {
+      "claim": "\"terminal cups 3.5–15.0 mm wide\"",
+      "section": "Morphology and anatomy; Model transfer: Can transfer",
+      "verdict": "supported",
+      "evidence": "Kenrick describes shallow terminal cups approximately 3.5–15.0 mm wide with weakly lobed margins.",
+      "source": "[Kenrick 2017](https://doi.org/10.1098/rstb.2017.0149), full-text descriptive section retrieved through search indexing; original measurement specimens not independently checked."
+    },
+    {
+      "claim": "\"bodies 0.20–0.55 mm wide, smaller and denser at the margin\"; \"use as gametophyte-organ size and layout\"",
+      "section": "Morphology and anatomy; Model transfer: Can transfer",
+      "verdict": "supported",
+      "evidence": "The stated dimensions and marginal concentration match Kenrick; their identification as gametangia remains morphological because diagnostic histology is unpreserved.",
+      "source": "[Kenrick 2017](https://doi.org/10.1098/rstb.2017.0149), full-text descriptive and interpretive section retrieved through search indexing."
+    },
+    {
+      "claim": "\"partly mineralised specimens: a strand of S-type conducting cells ... as a trait of some axes\"",
+      "section": "Front matter: conducting_tissue; Model transfer: Can transfer",
+      "verdict": "supported",
+      "evidence": "The 1991 abstract reports mineralised conducting-cell casts in Sciadophyton, with S-type affinities established using scanning electron microscopy.",
+      "source": "[Kenrick, Remy & Crane 1991 abstract reproduced on ResearchGate](https://www.researchgate.net/publication/312786501_Der_Rhynie_Chert_Unter-Devon_Schottland), abstract only in related-paper listings; [Kenrick 2017](https://doi.org/10.1098/rstb.2017.0149), full-text passage."
+    },
+    {
+      "claim": "\"Same material\" for cup measurements and conducting-cell specimens",
+      "section": "Model transfer: Can transfer",
+      "verdict": "unverifiable",
+      "evidence": "Accessible accounts do not demonstrate that all measurements and anatomical observations belong to the same specimens, population, locality or biological species.",
+      "source": "[Kenrick 2017](https://doi.org/10.1098/rstb.2017.0149), full-text passages and figure caption; [Gerrienne & Gonez 2011](https://orbi.uliege.be/bitstream/2268/101745/1/Gerrienne%26Gonez2011.pdf), full text. Original specimen documentation unavailable."
+    },
+    {
+      "claim": "\"Association with Stockmansella langii, Huvenia kleui and other taxa on the same bedding planes ... as co-occurrence only\"",
+      "section": "Affinity and controversies; Model transfer: Can transfer",
+      "verdict": "imprecise",
+      "evidence": "Association evidence is reported, but accessible primary abstract wording does not establish the stronger same-bedding-plane provenance for every named pairing.",
+      "source": "[Kenrick, Remy & Crane 1991 abstract reproduced on ResearchGate](https://www.researchgate.net/publication/312786501_Der_Rhynie_Chert_Unter-Devon_Schottland), abstract only; [Gerrienne & Gonez 2011](https://orbi.uliege.be/bitstream/2268/101745/1/Gerrienne%26Gonez2011.pdf), full text, secondary account."
+    },
+    {
+      "claim": "\"Chosen to contrast: sporophyte-independence ... Rhynie gametophytes with known sporophyte matches ... Sporogonites ... connection is reported\"",
+      "section": "Model transfer: Chosen to contrast",
+      "verdict": "supported",
+      "evidence": "Rhynie matches are supported anatomically; Sporogonites attachments are reported but interpreted tentatively. This permits comparison, not direct calibration of Sciadophyton sporophyte independence.",
+      "source": "[Taylor et al. 2005](https://doi.org/10.1073/pnas.0501985102), full-text passages retrieved through search indexing; [Gerrienne & Gonez 2011](https://orbi.uliege.be/bitstream/2268/101745/1/Gerrienne%26Gonez2011.pdf), full text, secondary account of Sporogonites."
+    },
+    {
+      "claim": "\"Cannot transfer: A sporophyte partner, sporophyte size or the gametophyte-to-sporophyte ratio\"",
+      "section": "Model transfer: Cannot transfer; Affinity and controversies",
+      "verdict": "supported",
+      "evidence": "Stockmansella and Huvenia pairings are hypotheses; the Zosterophyllum pairing is poorly supported. Without an established partner, paired size ratios cannot be measured.",
+      "source": "[Kenrick, Remy & Crane 1991 abstract reproduced on ResearchGate](https://www.researchgate.net/publication/312786501_Der_Rhynie_Chert_Unter-Devon_Schottland), abstract only; [Gerrienne et al. 2006](https://doi.org/10.1016/j.revpalbo.2006.05.005), indexed full-text discussion. Ratio restriction is an audit inference."
+    },
+    {
+      "claim": "\"Cannot transfer: Sporophyte independence or dependence: no sporophyte is attached to any Sciadophyton rosette\"",
+      "section": "Model transfer: Cannot transfer",
+      "verdict": "supported",
+      "evidence": "The literature examined retains a speculative sporophyte identity and supplies no demonstrated Sciadophyton attachment; physiological dependence therefore remains unconstrained.",
+      "source": "[Kenrick 2017](https://doi.org/10.1098/rstb.2017.0149), full-text discussion retrieved through search indexing. Supported as the documented evidence state, not an exhaustive inventory of every specimen."
+    },
+    {
+      "claim": "\"Cannot transfer: Gametangium number per cup, the sex ... or per-individual gametangiophore output\"",
+      "section": "Model transfer: Cannot transfer",
+      "verdict": "supported",
+      "evidence": "Taylor explicitly leaves organ-size interpretation and single-protocorm versus packed-individual architecture unresolved, preventing confident sex assignment and individual-level reproductive output.",
+      "source": "[Taylor et al. 2005](https://doi.org/10.1073/pnas.0501985102), full-text Sciadophyton discussion retrieved through search indexing."
+    },
+    {
+      "claim": "\"Cannot transfer: Dimensions from the Rebreuve specimen ... a poor specimen identified by geometry alone; use German values\"",
+      "section": "Model transfer: Cannot transfer",
+      "verdict": "supported",
+      "evidence": "Capel describes incomplete material assigned through rosette architecture. Excluding its dimensions from a German exemplar is defensible, but contradicts the pooled front-matter bounds.",
+      "source": "[Capel et al. 2022](https://doi.org/10.1080/23818107.2022.2101516), full-text description and interpretation retrieved through search indexing. Exclusion is a modelling judgement."
+    },
+    {
+      "claim": "\"Cannot transfer: Stage-level timing ... or that the German, Belgian, Welsh and French records are one species\"",
+      "section": "Model transfer: Cannot transfer",
+      "verdict": "supported",
+      "evidence": "Tentative correlations and an explicitly incomplete French identification do not establish precise genus-wide timing or conspecificity across the listed records.",
+      "source": "[Capel et al. 2022](https://doi.org/10.1080/23818107.2022.2101516), full-text passages; [Taylor et al. 2005](https://doi.org/10.1073/pnas.0501985102), full-text discussion of the form genus. Assessment is an inference."
+    },
+    {
+      "claim": "\"Cannot transfer: Rhynie-style ontogeny, spore germination or fungal symbiosis: none is documented for Sciadophyton\"",
+      "section": "Model transfer: Cannot transfer",
+      "verdict": "unverifiable",
+      "evidence": "Accessible passages document these features in Rhynie taxa, not Sciadophyton; inaccessible original descriptions prevent independently establishing the unrestricted negative claim.",
+      "source": "[Taylor et al. 2005](https://doi.org/10.1073/pnas.0501985102), full-text passages; [Remy et al. 1993](https://doi.org/10.1086/297089), abstract only. The proposed transfer restriction remains appropriate."
+    }
+  ],
+  "omissions": [
+    "The Brazilian primary record is an anatomical resemblance, not a secure Sciadophyton identification: unnamed circular structures bear uniformly sized bodies, unlike the comparison material. It should not establish a Lochkovian first occurrence. [Gerrienne et al. 2001, full text](https://www.researchgate.net/publication/235722961_An_Early_Devonian_flora_including_Cooksonia_from_the_Parana_Basin_Brazil).",
+    "The 1993 abstract's broad statement about preserved stomata creates an unresolved conflict with the unknown trait coding. Taxon-specific full text is needed before either presence or non-reporting can be accepted. [Remy et al. 1993, abstract](https://doi.org/10.1086/297089).",
+    "The accessible 1991 abstract describes distinctive spongy helical thickenings and a microporate lining. A qualitative S-type code cannot supply hydraulic conductivity, mechanical properties or physiological independence. [Kenrick, Remy & Crane 1991, reproduced abstract](https://www.researchgate.net/publication/312786501_Der_Rhynie_Chert_Unter-Devon_Schottland).",
+    "Rhynie sporophyte matches and direct generation-to-generation attachments are different evidence classes. The comparison should preserve that distinction, including the tentative nature of the Sporogonites basal interpretation. [Taylor et al. 2005, full-text passages](https://doi.org/10.1073/pnas.0501985102), [Gerrienne & Gonez 2011, full text](https://orbi.uliege.be/bitstream/2268/101745/1/Gerrienne%26Gonez2011.pdf).",
+    "USTL 3686 is one sample containing several poorly preserved specimens; the description uses its best-preserved individual. Sample identity should not be equated with a single fossil individual. [Capel et al. 2022, full-text descriptive passage](https://doi.org/10.1080/23818107.2022.2101516)."
+  ],
+  "model_transfer_assessment": "The contrast is useful as a qualitative comparison of gametophyte architecture and the evidence available for matching generations. Sciadophyton cannot directly estimate sporophyte independence. The transferable dimensions are reported for genus-level German material, but the card supplies no species or specimen identifiers linking the dimensions, axis counts and conducting anatomy into one measured exemplar. Treat them as separate observations until their original provenance is checked. The restrictions correctly identify partner uncertainty, ambiguous individuality and reproductive interpretation; add explicit limits on true height, diameter and physiological parameterisation. Excluding Rebreuve from transfer while including it in the machine-readable trait bounds is inconsistent.",
+  "overall": "The card is careful about biological interpretation, but its quantitative coding and specimen provenance need revision before model use. This audit confirms substantial agreement with accessible cited passages, while original German descriptions remain incompletely verified; the Brazilian occurrence and pooled size bounds are the clearest substantive problems.\n"
+}

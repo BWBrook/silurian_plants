@@ -9,6 +9,7 @@ lineage: >-
   includes the barinophytes and is paraphyletic to the lycopsids; the spiny Sawdoniaceae are sister to the lycopsids
   (Claisse et al. 2025).
 placement_confidence: medium
+contrasts: [height, reproductive-strategy, record-timing]
 range:
   first: Ludfordian
   last: Frasnian
@@ -16,7 +17,7 @@ range:
     First = late Ludlow (Ludfordian) Bathurst Island, Nunavut, dated by conodonts, graptolites and brachiopods
     (Kotyk et al. 2002); Macivera, a Ludfordian taxon, anchors the base of the large clade in Claisse et al. (2025).
     Claisse et al. place the main radiation in the Gorstian or earlier and describe a Pridoli gap in the fossil record,
-    while Huang et al. (2025) count Silurian species from Yunnan; the two are not reconciled. Last = Givetian:
+    while Huang et al. (2025) count Silurian species from Yunnan; the two are not reconciled. Last = Frasnian, the younger end of:
     Sawdonia from the Campo Chico Formation, Venezuela, is late Middle to early Late Devonian (Berry and Gensel
     2019), and Huang et al. (2025) give the class as Silurian to Late Devonian. Diversity falls after the Pragian and
     drops sharply at the base of the Eifelian (Capel et al. 2022). Literature Ma values follow older timescales:
@@ -118,6 +119,21 @@ Zosterophylls were rooted herbs of wet floodplains, probably clonal (H- and K-br
 - **Time series.** Cladogenesis is front-loaded (Gorstian to Lochkovian), species richness peaks in the Pragian and collapses by the Eifelian, so a model should reproduce a radiation, a plateau and a decline, with lycopsids and basal euphyllophytes as the proposed replacements (Cascales-Miñana and Meyer-Berthaud 2015).
 - **Calibration.** A Ludlow zosterophyll sets crown-Tracheophyta at no younger than 420.7 Ma in Hooper et al. (2026), but they place that node at 432-428 Ma.
 - **Caveat.** Zosterophyll "species" are mostly one-site compression taxa; the group has no uniform body plan.
+
+## Model transfer
+
+**Chosen to contrast:** Contrast size-dependent reproductive allocation across a heterogeneous lycophyte stem grade, using member-specific dimensions and a fossil record that constrains its radiation and decline.
+
+- **Can transfer:**
+  - Axis width in Bathurstia, with species and measured specimens unspecified: 4-12 mm; use as this member's size range rather than a grade-wide diameter (Huang et al. 2025).
+  - Belowground allocation in the single whole-plant Zosterophyllum shengfengense specimen, locality unspecified here: root-like axes about 20 mm long and root:shoot 0.028 (Hao et al. 2010).
+  - Sporangial-volume scaling in the zosterophyllopsid sample of Huang et al. (2025): per-spike volume 1-864 mm3 increases with axis width, conditional on assumed 0.6 mm thickness; individual measurement taxa and sites are unspecified here.
+  - Minimum fossil occurrence at late Ludlow Bathurst Island: ten fertile plants of seven taxa, mostly zosterophylls; retain as a record constraint rather than an origination date (Kotyk et al. 2002).
+- **Cannot transfer:**
+  - Measured lifespan, generation time or demographic r/K parameters cannot be assigned from differences in spike volume; the life-history interpretation is inferential (Huang et al. 2025).
+  - Uniform G-type tracheid anatomy and hydraulic parameters cannot be assigned across the grade; anatomy remains unknown for most species.
+  - Universal homospory cannot be imposed on the inclusive grade: nested barinophytes include heterosporous plants, despite the front-matter heterospory state.
+  - A maximum whole-plant height of 44 cm cannot be transferred from Z. confertum; that value describes preserved axes and may underestimate complete stature.
 
 ## Open questions
 

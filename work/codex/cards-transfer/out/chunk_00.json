@@ -1,0 +1,442 @@
+{
+  "items": [
+    {
+      "slug": "aberlemnia-caledonica",
+      "contrasts": ["height", "reproductive-strategy", "record-timing"],
+      "chosen_to_contrast": "Contrast centimetre-scale, repeatedly branching reproductive architecture with anatomically better-known plants, using measured type fragments while retaining uncertainty over vascular status and Silurian occurrence.",
+      "can_transfer": [
+        {
+          "text": "A. caledonica, Aberlemno type material: use at least 6.7 cm as preserved height and 0.4-1.8 mm as axis width, with mean 0.65 mm (Edwards 1970).",
+          "support": "Observed in the type material (Edwards 1970): an incomplete plant at least 6.7 cm high; naked axes 0.4-1.8 mm wide (mean 0.65 mm)"
+        },
+        {
+          "text": "A. caledonica, Aberlemno type material: represent four observed branching orders, branching at 55-60 degrees and distal axis narrowing (Edwards 1970).",
+          "support": "branching at 55-60 degrees with four orders and distally narrowing diameter"
+        },
+        {
+          "text": "A. caledonica, Aberlemno type material: use terminal sporangia 1.3-3.0 mm wide, somewhat shorter than wide, as reproductive geometry (Edwards 1970).",
+          "support": "terminal sporangia 1.3-3.0 mm wide and somewhat shorter than wide"
+        }
+      ],
+      "cannot_transfer": [
+        {
+          "text": "Do not assign observed tracheids, stomata or spore characters to A. caledonica; the card explicitly requires assumptions for these traits.",
+          "support": "Do not give it tracheids, stomata or spores in a model without a stated assumption."
+        },
+        {
+          "text": "Do not treat 16 terminal sporangia as measured fecundity; this is arithmetic conditional on regular repetition of the branching pattern.",
+          "support": "if regular, up to 16 terminal sporangia (my arithmetic)"
+        },
+        {
+          "text": "Do not use the Rinconada occurrence as an unqualified Pridoli first appearance; the enclosing unit has conflicting age assignments.",
+          "support": "in a unit dated Wenlock to Early Devonian by different authors (Drovandi et al. 2024)."
+        },
+        {
+          "text": "Do not parameterise growth habitat or cold tolerance from depositional setting and geographical distribution alone; the growth habitat is unknown.",
+          "support": "Where the plants grew is unknown."
+        }
+      ],
+      "borrowed": [],
+      "doubts": "The modelling section calls the plant cold-tolerant and wide-dispersing without direct physiological evidence, and its whole-plant reconstruction is conjectural. Later valve and dehiscence interpretations depend partly on sources not read directly."
+    },
+    {
+      "slug": "aglaophyton-majus",
+      "contrasts": ["water-transport", "fungal-nutrition", "sporophyte-independence"],
+      "chosen_to_contrast": "Contrast hydroid-like conduction, fungal association and free-living gametophytes within one anatomically preserved Rhynie plant whose conducting strand lacks tracheid wall thickenings.",
+      "can_transfer": [
+        {
+          "text": "A. majus, Rhynie chert conducting-strand sections: represent water-conducting cells with double-layered walls and wall vesicles but no helical or annular bars (Kerp 2017).",
+          "support": "with double-layered walls and wall vesicles but no helical or annular bars"
+        },
+        {
+          "text": "A. majus, Rhynie chert cortex: represent arbuscules occupying a renewing meristematic cortical zone as an observed fungal association (Remy et al. 1994; Taylor et al. 1995).",
+          "support": "Arbuscules lie in a meristematic cortical zone that renewed itself to supply new host cells (Remy et al. 1994; Taylor et al. 1995, genus Glomites)"
+        },
+        {
+          "text": "A. majus, Rhynie chert sporangia: use about 400,000 spores per sporangium as a calculation by Wellman and colleagues reported by Kerp (2017), retaining its calculated status.",
+          "support": "About 400,000 spores per sporangium (a calculation by\n      Wellman and colleagues, reported by Kerp 2017)."
+        },
+        {
+          "text": "A. majus and its Lyonophyton rhyniense gametophyte, Rhynie chert: represent a free-living, unisexual gametophyte alongside vegetative reproduction (Taylor et al. 2005; Kerp 2017).",
+          "support": "Clonal and sexual routes coexist (bulbils plus a free-living, unisexual gametophyte)"
+        },
+        {
+          "text": "A. majus, Rhynie chert basal axes: represent arrested apices producing bulbil-like propagules and adventitious axes, predominantly at the prostrate base (Kerp 2017).",
+          "support": "arrested apices form bulbil-like propagules and adventitious axes,\n      mostly at the prostrate base (Kerp 2017)."
+        }
+      ],
+      "cannot_transfer": [
+        {
+          "text": "Do not assign demonstrated lignification to A. majus conducting cells; their wall chemistry remains untested.",
+          "support": "Whether the cells were lignified is untested"
+        },
+        {
+          "text": "Do not assign a measured fungal nutrient-transfer rate or benefit; fungal structures are preserved, but nutrient transfer is inferred.",
+          "support": "Nutrient transfer is inferred, not observed."
+        },
+        {
+          "text": "Do not turn stomatal anatomy into a measured water-use-efficiency parameter; the proposed efficiency is an anatomical interpretation.",
+          "support": "Stomata with cutinised channels and substomatal chambers suggest high water-use efficiency"
+        },
+        {
+          "text": "Do not treat 20 cm as a measured whole-plant maximum; the stature comes from reconstruction.",
+          "support": "Reconstructed as naked upright axes under 20 cm tall (Taylor et al. 2005)"
+        }
+      ],
+      "borrowed": [],
+      "doubts": "The axis-diameter maximum comes from an unreviewed web resource and was not checked against the primary description. The spore-output figure is calculated. Lyonophyton denotes the associated gametophyte generation, not a congener supplying a borrowed trait."
+    },
+    {
+      "slug": "ambitisporites",
+      "contrasts": ["reproductive-strategy", "record-timing"],
+      "chosen_to_contrast": "Contrast the early record of separating trilete spores with later identifiable parent plants, using a spore form genus that constrains reproductive morphology and occurrence without establishing vascular affinity.",
+      "can_transfer": [
+        {
+          "text": "A. avitus sensu Steemans et al. (1996), Qusaiba-1 specimens: use spore diameter 31-44 µm, with n=3, as reported by Wellman et al. (2015).",
+          "support": "A. avitus sensu Steemans et al. (1996) is 31-44 µm (n=3, Wellman et al. 2015)."
+        },
+        {
+          "text": "Qusaiba-1 Katian-Hirnantian spore assemblages: use under 1% naturally separating hilate and trilete spores as an assemblage-level observation constraint, not an Ambitisporites-only percentage (Steemans et al. 2009; Wellman et al. 2015).",
+          "support": "Naturally separating (hilate and trilete) spores are under 1% of the Qusaiba-1 spore count."
+        },
+        {
+          "text": "A. avitus, Katian Qusaiba-1 record: retain 449.65 Ma as the fossil minimum used for the Zygnematophyceae–embryophyte split in Hooper et al. (2026), preserving that calibration's stated target.",
+          "support": "use the Katian *A. avitus* (449.65 Ma) as a minimum for the older split between Zygnematophyceae and embryophytes"
+        }
+      ],
+      "cannot_transfer": [
+        {
+          "text": "Do not equate Ambitisporites occurrence with vascular-plant presence; the card's newer interpretation assigns it to total-group embryophytes.",
+          "support": "the genus marks total-group embryophytes, not tracheophytes."
+        },
+        {
+          "text": "Do not impose the Swedish Sandbian occurrence as a secure minimum age; its apparent trilete mark may result from compression.",
+          "support": "Hooper et al. (2026) did not use it as a minimum age because the trilete mark might be a compression\n    artefact."
+        },
+        {
+          "text": "Do not transfer Cooksonia stature, branching, conducting tissue or terminal sporangia to Ordovician Ambitisporites producers; those spores have no identified parent plant.",
+          "support": "The Ordovician spores remain unlinked to any plant."
+        },
+        {
+          "text": "Do not use Lochkovian as the genus's extinction boundary; it is the youngest verified in situ record in this card, not a checked dispersed-spore endpoint.",
+          "support": "the dispersed range probably extends\n    higher but was not checked."
+        }
+      ],
+      "borrowed": [],
+      "doubts": "The card alternates between total-group and crown-embryophyte interpretations of trilete spores. Cooksonia traits occur in explanatory notes, while the corresponding front-matter states remain unknown; they are not assigned as traits of the Ordovician producers."
+    },
+    {
+      "slug": "anthoceros",
+      "contrasts": ["sporophyte-independence", "water-transport", "reproductive-strategy"],
+      "chosen_to_contrast": "Contrast a photosynthetic but gametophyte-nourished sporophyte and drying-oriented stomata with greater sporophyte autonomy and active water control, using living Anthoceros physiology and culture observations.",
+      "can_transfer": [
+        {
+          "text": "Anthoceros sporophytes, living material with species and site unspecified: represent persistent basal growth, progressive spore shedding and continued gametophyte nourishment (Frangedakis et al. 2021).",
+          "support": "grows from a persistent basal meristem, shedding spores progressively along its length, though still nourished by the gametophyte."
+        },
+        {
+          "text": "A. punctatus, experimental material with site unspecified: represent unchanged stomatal density and aperture between 440 and 1500 ppm CO2 under the reported experiment (Field et al. 2015).",
+          "support": "density and aperture did not change between 440 and 1500 ppm CO2 in *A. punctatus* and *Phaeoceros laevis* (Field et al. 2015)."
+        },
+        {
+          "text": "A. agrestis in culture: use germination in about 7 days at 23 degrees C and 2-3 months to reproductive thallus competence as conditional laboratory timings (Szovenyi et al. 2015).",
+          "support": "*A. agrestis* germinates in about 7 days at 23 degrees C, needs 2-3 months to form a thallus competent to reproduce"
+        },
+        {
+          "text": "A. agrestis cultured thalli under the reported temperature and watering sequence: use 5 to over 100 sporophytes per thallus as experimental reproductive output (Szovenyi et al. 2015).",
+          "support": "giving 5 to over 100 sporophytes per thallus (Szovenyi et al. 2015)"
+        }
+      ],
+      "cannot_transfer": [
+        {
+          "text": "Do not assign tracheophyte-like active stomatal regulation to these hornwort sporophytes; stomata open once and then remain open as guard cells collapse.",
+          "support": "Stomata open once, then stay open as the guard cells collapse and die; their role is sporophyte drying and spore release (Renzaglia et al. 2017)."
+        },
+        {
+          "text": "Do not give early embryophytes a pyrenoid-based carbon-concentrating mechanism by analogy with living hornworts; the card places pyrenoid origins much later.",
+          "support": "Pyrenoids arose long after the Palaeozoic"
+        },
+        {
+          "text": "Do not treat the living Anthoceros body plan as an observed Ordovician–Early Devonian ancestral condition; no Palaeozoic stem fossil is known.",
+          "support": "no Palaeozoic stem fossil is known"
+        },
+        {
+          "text": "Do not use the reported generation-time lower bound as a field generation time or a universal early-land-plant rate; it applies to optimal laboratory conditions.",
+          "support": "under optimal laboratory conditions"
+        }
+      ],
+      "borrowed": [],
+      "doubts": "The card flags a conflict between a Late Cretaceous earliest-fossil statement and its 118.56 Ma calibration. The sequential culture timings are not reconciled with the separately reported 3-month complete cycle. Mixed-genus experimental results require species-specific attribution."
+    },
+    {
+      "slug": "archaeopteris",
+      "contrasts": ["height", "water-transport", "reproductive-strategy"],
+      "chosen_to_contrast": "Contrast woody support, extensive rooting and differentiated reproductive structures with smaller early plant architectures, using preserved root and fertile-organ measurements while keeping tree heights model-dependent.",
+      "can_transfer": [
+        {
+          "text": "Archaeopteris-type trees, Cairo root-system impressions: use trunk-base diameters 8-45 cm across 18 trees, retaining the impressions' imprecision and comparative identification (Stein et al. 2020).",
+          "support": "Trunk base diameters of the same 18 Cairo trees, 8-45 cm, read from imprecise root-system impressions (Stein et al. 2020)."
+        },
+        {
+          "text": "Archaeopteris-type Cairo root systems: represent 10-15 primary roots per tree, 6-16 cm wide, radial extent to 11 m and depth 1.2-1.6 m as site-specific architecture (Stein et al. 2020).",
+          "support": "Cairo: 10-15 primary roots per tree, 6-16 cm wide, radial extent to 11 m, depth 1.2-1.6 m (Stein et al. 2020)."
+        },
+        {
+          "text": "Archaeopterid roots, Famennian Anti-Atlas permineralised specimens: represent endogenous, secondary-thickened roots 25-90 mm wide (Meyer-Berthaud et al. 2013).",
+          "support": "Roots are endogenous and secondary-thickened, 25-90 mm wide in Moroccan material (Meyer-Berthaud et al. 2013)."
+        },
+        {
+          "text": "A. roemeriana, Upper Famennian Belgium: use mean sporangium dimensions 1.94 mm by 0.62 mm and 39 sporangia on the single fully counted fertile leaf (Fairon-Demaret et al. 2001).",
+          "support": "A. roemeriana sporangia average 1.94 mm by 0.62 mm, 39 on the one fertile leaf counted in full"
+        }
+      ],
+      "cannot_transfer": [
+        {
+          "text": "Do not treat Cairo tree heights as measured stature; they are regression estimates using generic-conifer allometry, with Araucaria used for root-diameter conversion.",
+          "support": "Regression estimates for 18 Archaeopteris-type trees at Cairo"
+        },
+        {
+          "text": "Do not treat the Belgian megaspores as directly observed inside the assigned sporangia; their association is inferred from surrounding matrix.",
+          "support": "Megaspores are few and come from matrix directly around the sporangia, so their link to the sporangia is inferred."
+        },
+        {
+          "text": "Do not assign empirical growth rates, lifespans or wood densities from this card; these measurements were not found.",
+          "support": "I found no ring counts, growth rates or wood densities."
+        },
+        {
+          "text": "Do not treat post-burial resprouting as an observed recovery rate or demonstrated response; the Moroccan latent primordia support a plausible developmental interpretation.",
+          "support": "latent primordia (type H) that could become roots or shoots, plausibly after burial by overbank sediment (Meyer-Berthaud et al. 2000)."
+        },
+        {
+          "text": "Do not convert archaeopteridalean dispersed-spore occurrence into abundance or forest cover.",
+          "support": "a spore type shows presence, not abundance or forest cover"
+        }
+      ],
+      "borrowed": [],
+      "doubts": "The front-matter minimum height is 1100 cm, while its note gives 11.2-31.5 m. Heterospory is called demonstrated despite inferred megaspore association. Post-burial resprouting becomes categorical in the modelling section although the anatomical discussion calls it plausible."
+    },
+    {
+      "slug": "asteroxylon-mackiei",
+      "contrasts": ["water-transport", "clonal-growth", "reproductive-strategy"],
+      "chosen_to_contrast": "Contrast vascular, rhizomatous growth and lateral reproduction with incomplete root and leaf differentiation, using Rhynie specimens that preserve distinct shoot, root-bearing and rooting axes.",
+      "can_transfer": [
+        {
+          "text": "A. mackiei, Rhynie chert in situ reconstruction: separate downward root-bearing axes about 2-3.5 mm wide from rooting axes under 2 mm, often under 1 mm (Hetherington et al. 2021).",
+          "support": "root-bearing axes (about 2-3.5 mm) that grew straight down; these gave rise to rooting axes under 2 mm wide (often under 1 mm)"
+        },
+        {
+          "text": "A. mackiei, Rhynie chert rooting apices: represent root-cap absence observed in five apices among 641 thin sections (Hetherington & Dolan 2018).",
+          "support": "no root cap in five apices found among 641 thin sections (Hetherington & Dolan 2018)."
+        },
+        {
+          "text": "A. mackiei, Rhynie chert appendages: use a maximum length of 5 mm and absence of vascularisation as foliage geometry and anatomy (Kerp 2018).",
+          "support": "The leaf-like appendages reach 5 mm and are not vascularised"
+        },
+        {
+          "text": "A. mackiei, Rhynie chert fertile axes: use trilete spores 44-59 µm across and alternating fertile and sterile zones (Kerp et al. 2013; Kerp 2018).",
+          "support": "release trilete spores 44-59 µm across, with fertile and sterile zones alternating along an axis (Kerp et al. 2013; Kerp 2018)."
+        },
+        {
+          "text": "A. mackiei, Rhynie chert stem sections: represent G-type tracheids, a three-zoned cortex and absence of an endodermis as anatomical states (Kerp 2018).",
+          "support": "with G-type tracheids and a three-zoned cortex but no endodermis (Kerp 2018)."
+        }
+      ],
+      "cannot_transfer": [
+        {
+          "text": "Do not treat about 30 cm as measured whole-plant height; the older reconstruction combines several individuals.",
+          "support": "The reconstructed height of about 30 cm comes from older reconstructions that combined several individuals."
+        },
+        {
+          "text": "Do not assign later lycopsid true-root uptake properties to the capless, hairless rooting axes; their uptake function remains unresolved.",
+          "support": "a model should not give Asteroxylon true-root uptake properties."
+        },
+        {
+          "text": "Do not model the observed rooting-system fungus as a demonstrated nutritional mutualist; the card interprets it as probably parasitic.",
+          "support": "colonised the inner cortex of its rooting system and was probably parasitic"
+        },
+        {
+          "text": "Do not assign true-phloem transport parameters to the food-conducting tissue; the card distinguishes it from true phloem.",
+          "support": "the food-conducting tissue was not true phloem (Cooper & Hetherington 2026)"
+        }
+      ],
+      "borrowed": [],
+      "doubts": "The modelling section states that mycorrhiza was absent and uptake probably poorer, whereas the physiological discussion leaves uptake unresolved. Better-drained habitat is inferred from preservation. The reconstructed body does not yet establish connections to every orthotropic and fertile axis."
+    },
+    {
+      "slug": "baragwanathia-brevifolioides",
+      "contrasts": ["record-timing"],
+      "chosen_to_contrast": "Test a Pridoli minimum for microphyll-like differentiation against later or disputed records, using a graptolite-dated holotype whose lycophyte identification remains morphological.",
+      "can_transfer": [
+        {
+          "text": "B. brevifolioides, holotype KR 1 from Karlštejn: represent slender axes with isotomous branching as observed gross architecture (Kraft & Kvaček 2021).",
+          "support": "Observed in the holotype: slender axes with isotomous branching"
+        },
+        {
+          "text": "B. brevifolioides, holotype KR 1 from Karlštejn: represent median-midrib-bearing appendages and an apex enfolded by upward-facing leaves as compression morphology (Kraft & Kvaček 2021).",
+          "support": "each with a median midrib; and an apex enfolded in a tuft of upward-facing leaves (Kraft & Kvaček 2021)."
+        },
+        {
+          "text": "B. brevifolioides, holotype KR 1, Požáry Formation at Karlštejn: use a single Pridoli candidate occurrence dated by co-occurring graptolites, retaining identification uncertainty (Kraft & Kvaček 2017, abstract summary; 2021).",
+          "support": "co-occurring graptolites to the Neocolonograptus (now Skalograptus) ultimus Biozone, Přídolí"
+        }
+      ],
+      "cannot_transfer": [
+        {
+          "text": "Do not assign demonstrated xylem, hydraulic properties or secure lycophyte affinity from median midribs alone; the single compression lacks xylem and diagnostic spores.",
+          "support": "a single compression with midribs but no xylem; no spores to settle lycophyte status"
+        },
+        {
+          "text": "Do not parameterise reproductive output, spore traits, stomatal behaviour or rooting from this sterile specimen; the relevant organs are unreported.",
+          "support": "No fertile material, spores, stomata or roots are reported."
+        },
+        {
+          "text": "Do not assign whole-plant height or measured axis diameter; the incomplete specimen lacks a height reconstruction and the card supplies no axis measurement.",
+          "support": "One incomplete specimen; no height or whole-plant reconstruction"
+        },
+        {
+          "text": "Do not infer an aquatic growth habit from marine epibionts; they cannot distinguish growth in water from transport after death.",
+          "support": "the epibionts do not decide which."
+        }
+      ],
+      "borrowed": [],
+      "doubts": "The stated Pridoli interval 422.7-419.62 Ma does not overlap the quoted crown-tracheophyte estimate 432-428 Ma, despite the card's overlap claim. The 2017 description and the reported challenge to the fossil's identity were not read directly."
+    },
+    {
+      "slug": "baragwanathia-flora",
+      "contrasts": ["height", "record-timing"],
+      "chosen_to_contrast": "Test the timing of the Victorian increase in axis size, using transported assemblages that preserve gross dimensions while leaving the supposed Silurian occurrence unresolved.",
+      "can_transfer": [
+        {
+          "text": "S. caespitosa, Wilson Creek Shale at Frenchmans Spur: use fertile-axis diameter about 0.7 mm as a member-specific measurement (Tims & Chambers 1984).",
+          "support": "fertile axes of Salopella caespitosa about 0.7 mm (Tims & Chambers 1984)."
+        },
+        {
+          "text": "Baragwanathia, Ghin Ghin Road material: use axes commonly over 20 mm and one 38 mm wide as reported dimensions, retaining the chapter's manuscript-in-review status (McSweeney 2024, chapter 9).",
+          "support": "Baragwanathia axes commonly over 20 mm and one 38 mm wide (Ghin Ghin Road; McSweeney 2024, chapter 9, a manuscript in review at the time)."
+        },
+        {
+          "text": "Victorian flora, Boola Formation at Tyers: use late Lochkovian to early Pragian occurrence control from brachiopods and conodonts (McSweeney et al. 2020, citing Garratt & Wright 1988 and Mawson & Talent 1994).",
+          "support": "Boola\n    Formation (Tyers): Boucotia australis brachiopod zone (late Lochkovian) and an early Pragian\n    conodont"
+        }
+      ],
+      "cannot_transfer": [
+        {
+          "text": "Do not treat the front-matter 40 cm lower bound as measured stature; preserved axis length does not establish whole-plant height.",
+          "support": "No whole-plant height is known for any member."
+        },
+        {
+          "text": "Do not treat the 65 mm axis maximum or Tims's leaf-dimension ranges as independently verified primary measurements; they reach the card second-hand from an unseen thesis.",
+          "support": "taken second-hand from that chapter; the thesis was not seen."
+        },
+        {
+          "text": "Do not transfer detailed G-type tracheid walls from Ontario B. abitibiensis to Victorian B. longifolia; the detailed anatomy belongs to another species and locality.",
+          "support": "detailed G-type walls are documented only in Ontario B. abitibiensis (Hueber 1983)"
+        },
+        {
+          "text": "Do not use a Gorstian Lower Plant Assemblage as a demonstrated calibration or evolutionary starting point; the revisions establish no Silurian age.",
+          "support": "The revisions differ in stratigraphic framework and agree that no Silurian age is demonstrated."
+        },
+        {
+          "text": "Do not derive physiological rates from these transported compressions; they preserve size and gross form rather than physiology.",
+          "support": "Transported marine compressions give size and gross form, not physiology"
+        }
+      ],
+      "borrowed": [],
+      "doubts": "The height field encodes preserved length as stature. The diameter maximum depends on an unseen thesis. Leaf state records the most advanced member rather than the assemblage's modal condition. Lochkovian is a conservative baseline, not a directly demonstrated first occurrence."
+    },
+    {
+      "slug": "baragwanathia-longifolia",
+      "contrasts": ["record-timing", "water-transport"],
+      "chosen_to_contrast": "Test the timing of a microphyllous plant with stellate xylem, using the Victorian record's reported anatomy alongside its disputed age and limited primary-source verification.",
+      "can_transfer": [
+        {
+          "text": "B. longifolia, Victorian type material: provisionally represent long, simple, spirally arranged leaves of uniform width from the type diagnosis, explicitly retaining its second-hand reporting status (Lang & Cookson 1935).",
+          "support": "The type diagnosis describes stems of considerable size clothed with spirally arranged, long, simple leaves of uniform width"
+        },
+        {
+          "text": "B. longifolia, Victorian type material: provisionally represent a large central xylem cylinder with stellate primary xylem as qualitative anatomy, without assigning measured conductivity (Lang & Cookson 1935, type diagnosis quoted second-hand).",
+          "support": "a large central xylem cylinder with stellate primary xylem"
+        },
+        {
+          "text": "B. longifolia, Victorian type material: provisionally represent sporangia among leaf insertions in zones of ordinary shoots; retain the uncertainty over their adaxial position (Lang & Cookson 1935, type diagnosis quoted second-hand).",
+          "support": "sporangia among the leaf insertions in certain zones of ordinary shoots, possibly on the adaxial side near leaf bases."
+        }
+      ],
+      "cannot_transfer": [
+        {
+          "text": "Do not use the reported 10-50 cm stem fragments or inferred length to c. 2 m as verified stature measurements; they come from an unverified museum search-result summary.",
+          "support": "a museum collection note seen as a search-result summary (unverified)"
+        },
+        {
+          "text": "Do not transfer stomatal or epidermal details from Emsian B. abitibiensis to B. longifolia; the latter lacks the corresponding documented anatomy.",
+          "support": "Epidermis and cuticle detail is lacking for B. longifolia (Hueber 1983); stomata are known in the Emsian congener B. abitibiensis."
+        },
+        {
+          "text": "Do not assign isotomous branching to B. longifolia from B. brevifolioides; branching is verified only for the Bohemian congener in this comparison.",
+          "support": "Branching pattern of B. longifolia not verified. The Bohemian B. brevifolioides has isotomous branching (Kraft & Kvaček 2021)."
+        },
+        {
+          "text": "Do not treat homospory as observed; it is assumed without verified reproductive evidence.",
+          "support": "homospory assumed but unverified."
+        },
+        {
+          "text": "Do not fix the Yea occurrence in the Silurian or equate the conservative Lochkovian setting with a demonstrated first appearance.",
+          "support": "Earp did not identify any Yea plant locality with a supported Silurian age"
+        }
+      ],
+      "borrowed": [],
+      "doubts": "The front matter ends the range in the Pragian although its notes include Emsian formation ages. Congener comparisons leave branching and stomata unknown; they do not supply transferred front-matter values. Primary descriptions were not read in full."
+    },
+    {
+      "slug": "bathurst-island-flora",
+      "contrasts": ["reproductive-strategy", "record-timing"],
+      "chosen_to_contrast": "Contrast clustered and rowed fertile structures with simpler terminal-sporangium architectures, using the Bathurst Island compressions as evidence of reproductive complexity within an uncertain late Silurian age bracket.",
+      "can_transfer": [
+        {
+          "text": "cf. Bathurstia, three Bathurst Island specimens: use two-rowed spikes up to 45 x 10-11 mm on a 5 mm axis as taxon-specific fertile geometry (Kotyk et al. 2002).",
+          "support": "| cf. *Bathurstia* | 3 | two-rowed spikes up to 45 x 10-11 mm on a 5 mm axis; no stalks seen |"
+        },
+        {
+          "text": "Zosterophyllum sp., single Bathurst Island specimen: represent at least 27 reniform sporangia on stalks 1-3 mm long, borne on a 1.0 mm axis (Kotyk et al. 2002).",
+          "support": "1.0 mm axis, at least 27 reniform sporangia on stalks 1-3 mm"
+        },
+        {
+          "text": "Distichophytum sp., two Bathurst Island specimens: use spikes 8-10 mm long with 10-14 sporangia as fertile-structure measurements (Kotyk et al. 2002).",
+          "support": "| *Distichophytum* sp. | 2 | spikes 8-10 mm long, 10-14 sporangia |"
+        },
+        {
+          "text": "M. gracilis, Bathurst Island holotype: represent isotomous branching and apical clusters of 2-10 sessile sporangia; retain 8.1 cm as preserved fragment length (Kotyk et al. 2002).",
+          "support": "| *Macivera gracilis* | 1 (holotype) | 8.1 cm, isotomous, apical clusters of 2-10 sessile sporangia, new genus |"
+        },
+        {
+          "text": "Bathurst Island plant beds, Polar Bear Pass sites: use the card's Ludfordian–Pridoli bracket, 425.0-419.62 Ma; late Ludlow is favoured by Kotyk et al. (2002), while Kotyk (1998) considered Pridoli most likely.",
+          "support": "Ludfordian (2.3 Myr) to Pridoli (3.1 Myr), 425.0-419.62 Ma; treat the late Ludlow as most likely, not certain."
+        }
+      ],
+      "cannot_transfer": [
+        {
+          "text": "Do not treat 8.1 cm as a whole-plant maximum or evidence of exceptional stature; no taxon has a complete preserved plant.",
+          "support": "No complete plant of any taxon."
+        },
+        {
+          "text": "Do not use about 50 µm immature spores in one M. gracilis sporangium as mature spore size or as the spore phenotype of other assemblage members.",
+          "support": "Only immature round spores about 50 µm in one Macivera sporangium; no trilete mark reported."
+        },
+        {
+          "text": "Do not assign stomatal or tracheid anatomy to these compressions; no cuticles or tracheids are reported.",
+          "support": "No cuticles, tracheids or in situ spores are reported."
+        },
+        {
+          "text": "Do not parameterise clustered sporangia as an established dry-climate adaptation; that proposed functional relationship remains untested.",
+          "support": "The dry-climate adaptation hypothesis for clustered sporangia (Raymond 1987, cited by Kotyk et al.) is untested."
+        },
+        {
+          "text": "Do not treat the Zosterophyllum clock minimum as supported by multiple complete plants or independent numerical dating; it rests on one fragment and invertebrate ages.",
+          "support": "the bound rests on one fragment and on invertebrate dates."
+        }
+      ],
+      "borrowed": [],
+      "doubts": "The body says no in situ spores are reported, but the front matter records immature spores in a Macivera sporangium. The height maximum encodes an incomplete preserved length. Assemblage homospory is supported only by the Macivera diagnosis."
+    }
+  ]
+}

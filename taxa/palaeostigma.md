@@ -9,6 +9,7 @@ lineage: >-
   usually found with Haplostigma; the lycopsid placement rests on stem form alone and is low
   confidence. Not an established clade.
 placement_confidence: low
+contrasts: [record-timing]
 range:
   first: Eifelian
   last: Givetian
@@ -105,6 +106,20 @@ No direct information. The beds are marine to marginal marine with transported p
 - **Dating risk.** Records published as Lower Devonian (this genus's own title) were later revised to the Middle Devonian; use stage assignments from recent revisions, and keep first appearances for this taxon at Eifelian unless an Emsian record is demonstrated.
 - **High-latitude land plants.** If the lycopsid reading holds, land plants grew at roughly 65 to 80 degrees S (palaeolatitude models disagree by up to 15 degrees) by the Eifelian-Givetian, a constraint for climate-belt and dispersal models.
 - **Taxon definitions.** Morphogenera defined on leaf-scar form give weak units for diversity or first-appearance models.
+
+## Model transfer
+
+**Chosen to contrast:** Test how revised ages alter apparent early provinciality using a low-confidence Gondwanan stem morphogenus whose dated records are Middle Devonian.
+
+- **Can transfer:**
+  - P. sewardi, indexed Steytlerville material: use stem-impression morphology as an observation category, retaining the unresolved type locality (Andrews 1970, citing Kräusel & Dolianiti 1957).
+  - P. sewardi, listed from Piauí's Pimenteira Formation in the eastern Parnaíba Basin: use an Eifelian occurrence constraint rather than a lineage-origin date (Matsumura et al. 2024, citing Grahn et al. 2006).
+- **Cannot transfer:**
+  - Do not transfer Haplostigma's herbaceous habit, about 20 mm stem width, branching or leaf-cushion architecture to Palaeostigma: those descriptions concern another genus.
+  - Do not use an established Emsian first appearance: the supporting PBDB collection spans Late Emsian/Eifelian.
+  - Do not fix the last occurrence at Givetian: the Goiás identification is questioned and the Witteberg ages remain unchecked.
+  - Do not assign lycopsid physiological or reproductive parameters from stem scars: no anatomy, spores or strobili are known, and clade placement is weak.
+  - Do not treat marine depositional facies as the growth habitat: the fragments were transported.
 
 ## Open questions
 

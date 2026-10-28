@@ -8,6 +8,7 @@ lineage: >-
   Fern (Polypodiopsida), Psilotales: Psilotaceae, sister to Tmesipteris; Psilotales are sister to Ophioglossales
   (Ophioglossidae). Formerly read as a living rhyniophyte; the simple body is now read as reduction.
 placement_confidence: high
+contrasts: [water-transport, sporophyte-independence, fungal-nutrition]
 range:
   first: null
   last: null
@@ -27,7 +28,7 @@ traits:
   stomata: {state: present, note: "On the green aerial stems; blue light is required for opening (Doi et al. 2015). Density and size were not obtained: Prats et al. (2024) measured stomatal anatomy in this species, but any per-species values are in supporting information I did not access."}
   conducting_tissue: {state: tracheids, note: "Haplostele in the rhizome, actinostele in the aerial stem (Mandal 2024). Scalariform vessel-like elements and sieve cells in both generations (Duckett & Ligrone 2005). Wall type not classified to the controlled vocabulary."}
   sporangium_position: {state: lateral, note: "Synangia of three fused sporangia on the stem sides (Mandal 2024; New Zealand factsheet), 1-1.5 mm long and 1.5-3 mm wide."}
-  spores: {state: na, note: "Monolete, ellipsoidal, mean about 30 x 63 micrometres (polar x equatorial; Pramesti et al. 2023, unacetolysed, one garden sample). Neither cryptospores nor trilete, so outside the vocabulary."}
+  spores: {state: monolete, note: "Monolete, ellipsoidal, mean about 30 x 63 micrometres (polar x equatorial; Pramesti et al. 2023, unacetolysed, one garden sample)."}
   heterospory: {state: absent, note: "Homosporous (one spore type reported in Pramesti et al. 2023)."}
   rooting: {state: rhizomes, note: "No roots; achlorophyllous branched rhizome with rhizoids (Mandal 2024)."}
   gametophyte: {state: known, note: "Subterranean, non-green, cylindrical, often branched, mycorrhizal and vascularised (New Zealand factsheet; Duckett & Ligrone 2005)."}
@@ -103,6 +104,22 @@ Both generations host intracellular aseptate glomeromycotean fungi with near-ide
 - **Placement by morphology.** Niklas & Crepet (2022) suggest that a reduced fern can look like a lycophyte on morphology alone; simple Devonian axes should not be assumed basal.
 - **Ghost lineage.** A probably Palaeozoic stem lineage with one Palaeogene macrofossil is a test case for an observation model.
 - **Genome.** Taxa with 1C of about 70 Gbp are known in *Psilotum* (Fernandez et al. 2023); consequences for cell size or growth were not examined in the sources read.
+
+## Model transfer
+
+**Chosen to contrast:** Contrast measured axis gas exchange and an autotrophic sporophyte with a fungus-fed vascularised gametophyte, using a reduced living fern to test physiological alternatives.
+
+- **Can transfer:**
+  - Axis physiology: hydrated, glasshouse-grown P. nudum at saturating light has assimilation 2.47 +/- 0.29 micromol m-2 s-1 and whole-stem hydraulic conductance 1.30 +/- 0.21 mmol m-2 s-1 MPa-1, normalised by projected stem area (Franks 2006).
+  - Stomatal response: P. nudum experimental material requires blue light for stomatal opening and CO2 fixation; use a conditional response module, with population provenance unspecified in this card (Doi et al. 2015).
+  - Generation-specific nutrition: P. nudum has an autotrophic sporophyte and non-autotrophic gametophyte, both hosting intracellular glomeromycotean fungi; specimen provenance is unspecified in this card (Duckett & Ligrone 2005).
+  - Fungal-network association: greenhouse-pot P. nudum gametophytes and sporophytes share 11 Glomus A phylotypes in four clades with neighbouring angiosperm roots; model observed partner overlap separately from carbon flux (Winther & Friedman 2009).
+  - Spore geometry: one unacetolysed P. nudum garden sample from Eka Karya Botanical Garden, Bali, has monolete ellipsoidal spores about 30 x 63 micrometres; retain the single-sample scope (Pramesti et al. 2023).
+- **Cannot transfer:**
+  - Rootlessness, scale-like appendages and vascular anatomy cannot define ancestral rhyniophytes: P. nudum is a reduced fern, despite its superficial resemblance (Pryer et al. 2001; Nitta et al. 2022; Samec et al. 2019).
+  - Franks's measured gas-exchange and hydraulic values cannot become universal Devonian constants: their boundary conditions include present-day CO2, hydrated glasshouse plants and derived fern anatomy (Franks 2006).
+  - Carbon-transfer rate, donor identity and donor necessity cannot be treated as tracer-proven relationships in P. nudum; shared fungal identities support an inference, not a measured flux (Winther & Friedman 2009).
+  - A wholly passive ancestral stomatal rule cannot be fixed from the comparison: the passive-control interpretation and P. nudum blue-light requirement are presented as alternative modules (Brodribb & McAdam 2011; Doi et al. 2015).
 
 ## Open questions
 

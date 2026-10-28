@@ -9,6 +9,7 @@ lineage: >-
   grade below embryophytes. They branch after the Coleochaetophyceae and before the clade of Zygnematophyceae plus
   land plants (Bierenbroodspot et al. 2024). This card covers Chara and the class, living and fossil.
 placement_confidence: medium
+contrasts: [sporophyte-independence, reproductive-strategy, record-timing]
 range:
   first: Gorstian
   last: null
@@ -39,7 +40,7 @@ traits:
       Plant height not extracted. Internodes are single giant cells, generally 1 to 4 cm long and reaching 15 cm in the
       largest species (Treatise ch. 1); the Rhynie Palaeonitella dimensions were not extracted.
   axis_diameter_mm: {min: null, max: null, note: null}
-  branching: {state: mixed, note: "Main axes with alternating nodes and internodes and whorled branchlets; branchlets are not dichotomous in the Charoideae, while Nitella branchlets bifurcate one to five times (Guerlesquin and Feist 2005)."}
+  branching: {state: mixed, note: "Main axes with alternating nodes and internodes and whorled branchlets; branchlets are not dichotomous in the Charoideae, while Nitella branchlets bifurcate one to five times (Guerlesquin and Feist 2005).", from: "Nitella"}
   leaves: {state: na, note: "Branchlets, bracts and stipulodes are not leaves."}
   stomata: {state: na, note: null}
   conducting_tissue: {state: na, note: "Giant internodal cells; no conducting tissue sensu embryophytes."}
@@ -109,6 +110,20 @@ After fertilisation in water, meiosis occurs at the first division of the zygote
 ## Why it matters for modelling
 
 (1) Haplont end-member: the diploid phase is one dormant cell, so diploid fitness reduces to dormancy survival and germination. Scott and Rescan (2017) name *Chara* as a haplontic alga; in the modifier models they review, haplonty is favoured when deleterious mutations are partially dominant. (2) Zygote-bank parameters: dormancy of months to years, over 100 gametangia per plant, annual turnover, fertilisation in open water (a water-column problem, not a water-film one). (3) A dated zygote-protection series: sterile-cell envelope from the Ludlow, utricle in the Sycidiales, enveloping cells reduced to five; Martín-Closas (2003) cites work that helically coiled gyrogonites with fewer cells resist internal pressure during zygote maturation better. (4) Observation model: gyrogonites are an unusually complete record of freshwater green algae, and *Palaeonitella* grew beside the Rhynie gametophytes, whose spores germinated on wet *Palaeonitella* mats ([Rhynie Chert gametophytes](rhynie-chert-gametophytes.md)). (5) Characeae retreat under competition from seed plants (Feist and Guerlesquin 2005), a possible competition term for later vegetation (my inference). The comparison does not supply matrotrophy: the zygote falls to the bottom with its reserves and envelope, and nothing read shows post-fertilisation maternal transfer.
+
+## Model transfer
+
+**Chosen to contrast:** Contrast a haplontic life cycle with an interpolated multicellular sporophyte, using a macroscopic haploid thallus whose diploid investment is confined to the resistant zygote.
+
+- **Can transfer:**
+  - Haplontic architecture in Chara: represent the green thallus as haploid and the diploid phase as the oospore; species and study sites are unspecified (Guerlesquin and Feist 2005; Scott and Rescan 2017).
+  - Culture germination in C. braunii strains S276 and NIES-1604 ranged from 3.3% untreated at room temperature to 66.7% with gibberellic acid plus red light; retain treatment dependence rather than a field germination rate (Holzhausen et al. 2022).
+  - Annual turnover and late-spring and early-autumn germination are candidate seasonal relationships for living C. braunii in shallow temporary wetlands; field sites and specimens are unspecified (Holzhausen et al. 2022).
+- **Cannot transfer:**
+  - Post-fertilisation maternal nutrient transfer cannot be assigned: this card reports a provisioned, detached zygote and no demonstrated continuing maternal supply.
+  - The Silurian first appearance cannot date the genus Chara: those fossils belong to other genera and extinct orders, whereas Chara itself is much younger.
+  - Nitella branchlet bifurcations cannot define Chara branching: the front matter combines different genera, and Charoideae branchlets are not dichotomous.
+  - Internode lengths cannot supply plant height: they measure giant cells, and this card explicitly lacks extracted whole-plant height.
 
 ## Open questions
 

@@ -8,6 +8,7 @@ lineage: >-
   Pseudosporochnalean cladoxylopsid, a leafless arborescent euphyllophyte. The Gilboa tree is Wattieza crowns on
   Eospermatopteris trunk bases and roots; the genus stands here for the whole plant.
 placement_confidence: medium
+contrasts: [height, water-transport, record-timing]
 range:
   first: Givetian
   last: Frasnian
@@ -40,7 +41,7 @@ traits:
   branching: {state: monopodial, note: "Unbranched trunk with large lateral branch systems in longitudinal ranks, shed as frond-like modules; branches are digitate and three-dimensional (Stein et al. 2007; Berry & Fairon-Demaret 2002). Some Calamophyton trunks may fork (Giesen & Berry 2013)."}
   leaves: {state: absent, note: "No laminate leaves; Pseudosporochnales carry small non-laminate appendages on digitate branches (Berry 2019; Meyer-Berthaud & Decombeix 2009)."}
   stomata: {state: unknown, note: "Not reported in the sources read."}
-  conducting_tissue: {state: tracheids, note: "Gilboa casts preserve coalified, 'clearly formerly woody' cauline xylem strands with little cellular anatomy (Xu et al. 2017); tracheid wall type is unknown and the cellular detail comes from the related Xinicaulis."}
+  conducting_tissue: {state: tracheids, note: "Gilboa casts preserve coalified, 'clearly formerly woody' cauline xylem strands with little cellular anatomy (Xu et al. 2017); tracheid wall type is unknown and the cellular detail comes from the related Xinicaulis.", from: "Xinicaulis"}
   sporangium_position: {state: unknown, note: "Not verified in the sources read."}
   spores: {state: unknown, note: "Not verified in the sources read; reproduction was by spores, not seeds, per a press summary."}
   heterospory: {state: unknown, note: "Not reported in the sources read."}
@@ -108,6 +109,21 @@ At Gilboa Eospermatopteris formed a mixed-age stand on a gleyed coastal-plain so
 - **Roots.** 0.7-1 cm roots, radius 1-2 m, depth under 30 cm, probably replaced as the tree grew; against 6-16 cm roots to 11 m for Archaeopteris (Stein et al. 2020).
 - **Contrasting strategies.** Cell walls fill 85% of Xinicaulis wood and 31% of Callixylon, so a model needs separate support, conduction and carbon-cost terms by clade.
 - **Decline.** Cladoxylopsid diversity falls in the Frasnian (Capel et al. 2022).
+
+## Model transfer
+
+**Chosen to contrast:** Contrast tall, leafless trees supported by a broad primary body and shallow roots with woody, deeply rooted architectures, using the reconstructed Wattieza–Eospermatopteris whole plant.
+
+- **Can transfer:**
+  - Minimum reconstructed stature for the South Mountain Wattieza–Eospermatopteris whole plant, species unspecified: at least 8 m, reconstructed from a 6 m trunk section and crown (Stein et al. 2007; Berry 2019).
+  - Shallow rooting geometry in New York Eospermatopteris bases attributed to Wattieza: roots 0.7-1 cm wide, radiating 1-2 m and penetrating to 30 cm (Stein et al. 2020).
+  - Conducting-strand presence in Gilboa Eospermatopteris casts: coalified cauline xylem occurs with little cellular anatomy; encode strand presence without hydraulic coefficients (Xu et al. 2017).
+  - Architecture of the reconstructed Gilboa Wattieza–Eospermatopteris tree: an unbranched trunk bears digitate, three-dimensional lateral branch systems in longitudinal ranks; modular shedding is the reported architectural interpretation (Stein et al. 2007).
+- **Cannot transfer:**
+  - The 85% cell-wall fraction in Xinicaulis wood cannot set Wattieza support costs or hydraulic properties: it belongs to another cladoxylopsid.
+  - A numerical growth or gap-colonisation rate cannot be derived from the description of Eospermatopteris as weedy and relatively fast-growing; Stein et al. (2020) offer an inference.
+  - A maximum height of about 10 m cannot be used as a verified measurement; it comes from an unchecked press report.
+  - Spore characters and reproductive output cannot be parameterised: even the statement that reproduction used spores is attributed to a press summary rather than verified reproductive material.
 
 ## Open questions
 

@@ -9,6 +9,7 @@ lineage: >-
   Canada, Laurussia. Zosterophylls are a stem-lycophyte grade (see the Zosterophyllum card); the authors call
   the flora the earliest record of fertile structures in dense clusters and longitudinal rows.
 placement_confidence: medium
+contrasts: [reproductive-strategy, record-timing]
 range:
   first: Ludfordian
   last: Pridoli
@@ -114,6 +115,23 @@ No physiology is reported. The dry-climate adaptation hypothesis for clustered s
 - **Observation channel.** Plants reach the record via marine mass flows from a nearby shore, so the filter differs from fluvial or hot-spring deposits: it favours plants growing near the shore that survive transport.
 - **Size and complexity.** Vegetative axes (0.7-2.4 mm) are as thin as *Cooksonia* axes (about 0.2-1.5 mm; see its card) and preserved lengths reach 8.1 cm, close to the 1-6 cm of Lang's *Cooksonia*. What differs is fertile structure: spikes up to 45 x 11 mm and at least 27 sporangia on a 1.0 mm axis. Use 'fertile complexity', not stature, as the trait.
 - **Spatial heterogeneity.** A complex flora at low latitude on Laurussia while North Greenland holds simple plants implies uneven preservation or occurrence in the Ludlow.
+
+## Model transfer
+
+**Chosen to contrast:** Contrast clustered and rowed fertile structures with simpler terminal-sporangium architectures, using the Bathurst Island compressions as evidence of reproductive complexity within an uncertain late Silurian age bracket.
+
+- **Can transfer:**
+  - cf. Bathurstia, three Bathurst Island specimens: use two-rowed spikes up to 45 x 10-11 mm on a 5 mm axis as taxon-specific fertile geometry (Kotyk et al. 2002).
+  - Zosterophyllum sp., single Bathurst Island specimen: represent at least 27 reniform sporangia on stalks 1-3 mm long, borne on a 1.0 mm axis (Kotyk et al. 2002).
+  - Distichophytum sp., two Bathurst Island specimens: use spikes 8-10 mm long with 10-14 sporangia as fertile-structure measurements (Kotyk et al. 2002).
+  - M. gracilis, Bathurst Island holotype: represent isotomous branching and apical clusters of 2-10 sessile sporangia; retain 8.1 cm as preserved fragment length (Kotyk et al. 2002).
+  - Bathurst Island plant beds, Polar Bear Pass sites: use this card's Ludfordian–Pridoli bracket, 425.0-419.62 Ma; late Ludlow is favoured by Kotyk et al. (2002), while Kotyk (1998) considered Pridoli most likely.
+- **Cannot transfer:**
+  - Do not treat 8.1 cm as a whole-plant maximum or evidence of exceptional stature; no taxon has a complete preserved plant.
+  - Do not use about 50 µm immature spores in one M. gracilis sporangium as mature spore size or as the spore phenotype of other assemblage members.
+  - Do not assign stomatal or tracheid anatomy to these compressions; no cuticles or tracheids are reported.
+  - Do not parameterise clustered sporangia as an established dry-climate adaptation; that proposed functional relationship remains untested.
+  - Do not treat the Zosterophyllum clock minimum as supported by multiple complete plants or independent numerical dating; it rests on one fragment and invertebrate ages.
 
 ## Open questions
 

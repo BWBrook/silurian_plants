@@ -9,6 +9,7 @@ lineage: >-
   (Xitunia, Zosterophyllum, an unnamed K-branching genus, an aff. Huia) and so unlike the isotomous, terminal-sporangium
   floras of Laurussia and western Gondwana of the same age.
 placement_confidence: medium
+contrasts: [water-transport, reproductive-strategy, record-timing]
 range:
   first: Lochkovian
   last: Lochkovian
@@ -107,6 +108,20 @@ Xue (2012) argues that a zosterophyll-dominated Lochkovian South China, set agai
 - **Province-specific sampling.** Xue (2009, 2012) describe the Lochkovian as poorly represented by vascular-plant fossils; this flora and the Welsh Borderland mesofossils sample different provinces and preservation modes (compressions against charcoal). They should not be pooled without province terms.
 - **Timing.** The Lochkovian is 6.6 Myr long on ICS v2024/12 and the fish place the unit late in it; use stage-level timing; the 'late Lochkovian' fish age narrows it only qualitatively.
 - **Spore link missing.** With no in situ spores, the flora cannot be tied to the Posongchong and Xujiachong spore records (F4).
+
+## Model transfer
+
+**Chosen to contrast:** Contrast small belowground allocation and lateral fertile architecture in Lochkovian South China with coeval terminal-sporangium floras, using one rooted whole specimen within a provincial assemblage.
+
+- **Can transfer:**
+  - Preserved aerial stature in the single uprooted Zosterophyllum shengfengense specimen from the Xitun Formation near Qujing: 98 mm (Hao et al. 2010).
+  - Belowground allocation in that Xitun Z. shengfengense specimen: root-like axes about 20 mm long, root:shoot 0.028 and about 3% of biomass; retain as a specimen-specific estimate (Hao et al. 2010).
+  - Fertile architecture in Xitun Formation Xitunia spinitheca: helically arranged stalked sporangia with unequal valves and distal spines on the larger abaxial valve (Xue 2009, 2012).
+- **Cannot transfer:**
+  - Hydraulic efficiency and root uptake coefficients cannot be extracted from Z. shengfengense: efficient water use and strong uptake are alternative ecological interpretations, not measured rates (Hao et al. 2010).
+  - Flora-wide or Lochkovian-wide root:shoot allocation cannot be fixed at 0.028; the estimate rests on one Z. shengfengense specimen rather than the other assemblage members.
+  - Spore identity and matching to dispersed assemblages cannot be transferred: Xitun has no reported in situ spores linking its plants to Posongchong or Xujiachong.
+  - An exact 413 Ma fossil age cannot be used; this card recommends stage-level timing because late Lochkovian fish biostratigraphy narrows the unit only qualitatively.
 
 ## Open questions
 

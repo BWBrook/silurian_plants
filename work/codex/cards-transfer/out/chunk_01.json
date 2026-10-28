@@ -1,0 +1,440 @@
+{
+  "items": [
+    {
+      "slug": "chara",
+      "contrasts": ["sporophyte-independence", "reproductive-strategy", "record-timing"],
+      "chosen_to_contrast": "Contrast a haplontic life cycle with an interpolated multicellular sporophyte, using a macroscopic haploid thallus whose diploid investment is confined to the resistant zygote.",
+      "can_transfer": [
+        {
+          "text": "Haplontic architecture in Chara: represent the green thallus as haploid and the diploid phase as the oospore; species and study sites are unspecified (Guerlesquin and Feist 2005; Scott and Rescan 2017).",
+          "support": "Haplontic: the whole green thallus is haploid and the diploid phase is the oospore."
+        },
+        {
+          "text": "Culture germination in C. braunii strains S276 and NIES-1604 ranged from 3.3% untreated at room temperature to 66.7% with gibberellic acid plus red light; retain treatment dependence rather than a field germination rate (Holzhausen et al. 2022).",
+          "support": "in culture germination ranged from 3.3% (untreated, room temperature) to 66.7% (gibberellic acid plus red light)"
+        },
+        {
+          "text": "Annual turnover and late-spring and early-autumn germination are candidate seasonal relationships for living C. braunii in shallow temporary wetlands; field sites and specimens are unspecified (Holzhausen et al. 2022).",
+          "support": "*C. braunii* occupies shallow temporary wetlands, is annual, and germinates in late spring and early autumn;"
+        }
+      ],
+      "cannot_transfer": [
+        {
+          "text": "Post-fertilisation maternal nutrient transfer cannot be assigned: the card reports a provisioned, detached zygote and no demonstrated continuing maternal supply.",
+          "support": "nothing read shows post-fertilisation maternal transfer."
+        },
+        {
+          "text": "The Silurian first appearance cannot date the genus Chara: those fossils belong to other genera and extinct orders, whereas Chara itself is much younger.",
+          "support": "The genus Chara itself is Upper Cretaceous to Holocene; Silurian-Devonian charophytes belong to other genera"
+        },
+        {
+          "text": "Nitella branchlet bifurcations cannot define Chara branching: the front matter combines different genera, and Charoideae branchlets are not dichotomous.",
+          "support": "branchlets are not dichotomous in the Charoideae, while Nitella branchlets bifurcate one to five times"
+        },
+        {
+          "text": "Internode lengths cannot supply plant height: they measure giant cells, and the card explicitly lacks extracted whole-plant height.",
+          "support": "Plant height not extracted. Internodes are single giant cells, generally 1 to 4 cm long and reaching 15 cm in the"
+        }
+      ],
+      "borrowed": [
+        {
+          "trait": "branching",
+          "from_taxon": "Nitella",
+          "support": "Nitella branchlets bifurcate one to five times (Guerlesquin and Feist 2005)."
+        }
+      ],
+      "doubts": "The genus-labelled card explicitly covers the class, so class summaries lack species-level provenance. Gorstian is an unresolved older bound within the Ludlow record; the Pragian Charales assignment is also questioned. Culture outcomes are not apportioned between the two C. braunii strains."
+    },
+    {
+      "slug": "coleochaete",
+      "contrasts": ["sporophyte-independence", "reproductive-strategy", "water-transport"],
+      "chosen_to_contrast": "Contrast maternal zygote investment and reproductive amplification with sporophyte independence, using retained zygotes on haploid thalli without a multicellular diploid generation.",
+      "can_transfer": [
+        {
+          "text": "Zygote size and offspring yield covary in C. pulvinata: larger zygospores produced up to 32 zoospores versus 8 from small ones; specimens and sites are unspecified (Oltmanns 1898, as summarised by Haig and Wilczek 2006).",
+          "support": "Larger zygospores of *C. pulvinata* gave up to 32 zoospores against 8 for small ones"
+        },
+        {
+          "text": "Represent transfer-cell-like wall ingrowths as an anatomical interface in zygote-covering cells of C. orbicularis, without assigning a nutrient flux; specimens and sites are unspecified (Graham and Wilcox 1983).",
+          "support": "Placental transfer-cell-like wall ingrowths occur in the cells covering the zygote in *C. orbicularis*"
+        },
+        {
+          "text": "Aeroterrestrial cultures of two unnamed Coleochaete species survived air-drying for a week and still produced zoospores; use this as a culture-specific desiccation baseline, with strain and site identities unavailable (Graham et al. 2012).",
+          "support": "Aeroterrestrial cultures of two species survived air-drying for a week and still produced zoospores"
+        }
+      ],
+      "cannot_transfer": [
+        {
+          "text": "The postzygotic cell body cannot be coded as an embryophyte sporophyte: its homology is rejected in the card and its nuclear divisions remain unresolved.",
+          "support": "The resulting 8 to 32-celled body is not considered homologous to the embryophyte sporophyte."
+        },
+        {
+          "text": "A measured maternal nutrient-transfer rate cannot be assigned from wall ingrowths: the card leaves actual transfer unconfirmed.",
+          "support": "Is nutrient transfer across the putative transfer cells demonstrated?"
+        },
+        {
+          "text": "Modern discoid thallus dimensions cannot reconstruct Palaeozoic ancestral bodies: complex discoid thalli arose recently.",
+          "support": "Do not project the 1 to 2 mm discoid body back onto Palaeozoic ancestors."
+        },
+        {
+          "text": "Green, intact cells after months of drying cannot establish months-long reproductive survival: demonstrated zoospore production follows the week-long treatment.",
+          "support": "cells stayed intact and green after drying for up to several months (Graham et al. 2012)."
+        }
+      ],
+      "borrowed": [],
+      "doubts": "The desiccation study's two species are unnamed, preventing species-specific calibration. Zygote nuclear divisions are disputed; the card alternates zoospore and meiospore terminology. Zygote provisioning is asserted, while transport across the putative transfer cells remains an open question."
+    },
+    {
+      "slug": "cooksonia",
+      "contrasts": ["sporophyte-independence", "water-transport", "reproductive-strategy"],
+      "chosen_to_contrast": "Contrast axis-width-dependent hypotheses of sporophyte autonomy with direct anatomical evidence, using differently sized Cooksonia specimens while retaining species and preservation differences.",
+      "can_transfer": [
+        {
+          "text": "Use nearly 6 cm fragment length, 1 to 1.5 mm axis width and 3 to 5 mm sporangia for the C. barrandei holotype from Loděnice, without treating fragment length as plant height (Libertín et al. 2018 supplement).",
+          "support": "The C. barrandei holotype is nearly 6 cm long, 1 to 1.5 mm wide, with 3 to 5 mm sporangia;"
+        },
+        {
+          "text": "Use 10 to 15 um spores for C. barrandei at the Czech type locality; keep these separate from larger spores reported for other Cooksonia species (Libertin et al. 2018, supplement).",
+          "support": "10 to 15 um in C. barrandei, 18 to 30 um in C. pertoni subsp. apiculispora"
+        },
+        {
+          "text": "Code annularly thickened tracheids and stomata for Lochkovian charcoalified C. pertoni from North Brown Clee Hill, rather than all Cooksonia (Edwards et al. 1992; Edwards and Kenrick 2015).",
+          "support": "the charcoalified specimens show a tracheid cast with annular thickenings and stomata (Edwards and Kenrick 2015)."
+        }
+      ],
+      "cannot_transfer": [
+        {
+          "text": "Photosynthetic autonomy or dependence cannot be fixed from axis width: both Boyce's narrow-axis argument and Libertín et al.'s C. barrandei counterargument are size-based inferences.",
+          "support": "Both are inferences from size."
+        },
+        {
+          "text": "Whole-plant height cannot be equated with the front-matter length range: every specimen is fragmentary.",
+          "support": "All specimens are fragments, so whole-plant height is unknown."
+        },
+        {
+          "text": "Lochkovian C. pertoni tracheids cannot establish vascular anatomy in older Silurian compressions, which preserve outlines rather than equivalent tissues.",
+          "support": "Silurian compressions show only outlines, so their vascular status is inferred from form and in situ spores."
+        },
+        {
+          "text": "Shared genus membership cannot impose one lineage or physiological strategy across species: Cooksonia is an unnatural morphogenus.",
+          "support": "Treat \"Cooksonia\" in any dataset as a morphotype, not a clade."
+        }
+      ],
+      "borrowed": [],
+      "doubts": "The supplement's \"560 mm\" holotype length is flagged as a typo. The nominal height field stores fragment lengths. Detrital-zircon ages are maxima, and the stated Lochkovian last record conflicts with an older claim extending the genus through the Lower Devonian."
+    },
+    {
+      "slug": "dawsonites",
+      "contrasts": ["reproductive-strategy", "record-timing"],
+      "chosen_to_contrast": "Contrast terminal paired sporangial units with whole-plant reproductive reconstructions, using fertile compressions whose morphology is observable but whose parent species remain unidentified.",
+      "can_transfer": [
+        {
+          "text": "For Dawsonites sp. at Ballanucater Farm, use terminal, pendulous, often mutually twisted paired sporangia 4-6 mm long on dichotomising axes, with longitudinal dehiscence (Rayner 1995).",
+          "support": "Ballanucater sporangia as 4-6 mm long, pendulous, borne terminally on dichotomising axes, in pairs that are often twisted about each other, dehiscing longitudinally"
+        },
+        {
+          "text": "Use trilete spores averaging about 60 µm for Dawsonites sp. sporangia at Ballanucater Farm; this is a site-specific reproductive-unit measurement (Rayner 1995).",
+          "support": "containing trilete spores averaging about 60 µm, with a finely sculptured outer exine that tends to detach."
+        },
+        {
+          "text": "Keep D. arcuatus from Røragen separate: its reported trilete spores are 45-55 µm, laevigate to micropapillate or microconate (Bek 2025, from Croft & Lang 1942, Chaloner et al. 1967 and Balme 1995).",
+          "support": "D. arcuatus (Røragen): trilete, 45-55 µm, laevigate to micropapillate or microconate"
+        }
+      ],
+      "cannot_transfer": [
+        {
+          "text": "Whole-plant stature, vegetative physiology and rooting cannot be reconstructed from this organ genus: no complete plant or attached vegetative organs defines it.",
+          "support": "Fertile branch systems only; no whole plant."
+        },
+        {
+          "text": "The 32-128 sporangia estimate cannot become measured Dawsonites fecundity: it is arithmetic assuming complete dichotomies in Psilophyton crenulatum.",
+          "support": "five to seven full dichotomies in the fertile units of *Psilophyton crenulatum* (Doran 1980) would give at most 2^5 to 2^7 = 32-128 terminal sporangia"
+        },
+        {
+          "text": "Dawsonites occurrence counts cannot directly count biological species alongside Psilophyton: their fossil parts can represent overlapping parent plants.",
+          "support": "*Dawsonites* and *Psilophyton* are fossil-taxa for parts of overlapping parent plants."
+        },
+        {
+          "text": "Broad PBDB stage assignments cannot establish a Middle Devonian extension: they are inherited contributor assignments rather than independent dating evidence.",
+          "support": "their stage assignments are contributors' and not independent evidence."
+        }
+      ],
+      "borrowed": [],
+      "doubts": "Halle's diagnosis is quoted through a registry; the Oxfordshire description was read only as an abstract. Røragen has no resolved modern stage. Some geographically extensive records are unchecked, and the PBDB locality tally is awkwardly worded."
+    },
+    {
+      "slug": "drepanophycus-spinaeformis",
+      "contrasts": ["clonal-growth", "water-transport", "record-timing"],
+      "chosen_to_contrast": "Contrast rhizomatous persistence through sediment burial with aerial vascular traits, keeping quantified D. qujingensis clones distinct from anatomical evidence assigned to D. spinaeformis.",
+      "can_transfer": [
+        {
+          "text": "Code perforated tracheid walls for Scottish Emsian D. spinaeformis pyrite permineralisations, without assigning a measured conductivity (Rayner 1984; Geng & Zhu 1994).",
+          "support": "Scottish Emsian specimens preserved as pyrite permineralisations give the xylem and tracheid structure, with perforated tracheid walls"
+        },
+        {
+          "text": "For D. qujingensis in the Xujiachong Formation, Yunnan, use rhizome widths 5.9-18 mm, mean 10.5 mm, n = 90, and aerial axes averaging 15.9 mm; retain the congener identity (Xue et al. 2016).",
+          "support": "rhizome traces 5.9-18 mm wide (mean 10.5 mm, n = 90) and aerial axes averaging 15.9 mm (Xue et al. 2016)."
+        },
+        {
+          "text": "For D. qujingensis palaeosols in Yunnan, use rhizome density 800-1,300 transections per m² and the reported equivalent 0.8-1.3 km per m³ as spatial constraints, not D. spinaeformis measurements (Xue et al. 2016).",
+          "support": "Rhizome density was 800-1,300 transections per m² of bedding surface, equal to 0.8-1.3 km of rhizome per m³ of sediment"
+        },
+        {
+          "text": "Represent H-branched clonal persistence through repeated burial for D. qujingensis on well-drained seasonal floodplain soils in Yunnan; the card supplies a qualitative disturbance response, not a recovery rate (Xue et al. 2016).",
+          "support": "For D. qujingensis, rhizomes with H-branching formed large clones that survived repeated sediment burial"
+        }
+      ],
+      "cannot_transfer": [
+        {
+          "text": "Chinese congener dimensions and rhizome densities cannot become measurements of D. spinaeformis; the named species supplying them is D. qujingensis.",
+          "support": "Size and rhizome data are from the Chinese congener;"
+        },
+        {
+          "text": "Clone lifespans of decades to centuries cannot be treated as observed fossil ages: they are analogical estimates from living Lycopodium and Pteridium.",
+          "support": "clone lifespans of decades to centuries are plausible by analogy with Lycopodium and Pteridium (Xue et al. 2016, inference)."
+        },
+        {
+          "text": "A fixed species-level sporangial placement cannot be assigned confidently: fertile material is rare and the card explicitly calls the D. spinaeformis structures conjectural.",
+          "support": "Fertile material is rare, and the sporangia of D. spinaeformis itself remain conjectural (Li & Edwards 1995)."
+        },
+        {
+          "text": "Deep Gaspé traces cannot establish Drepanophycus rooting depth or clone longevity: the producing plant is unidentified.",
+          "support": "with Drepanophycus one candidate; the parent plant there is unknown."
+        }
+      ],
+      "borrowed": [
+        {
+          "trait": "axis_diameter_mm",
+          "from_taxon": "Drepanophycus qujingensis",
+          "support": "From the Chinese D. qujingensis: rhizome traces 5.9-18 mm wide (mean 10.5 mm, n = 90) and aerial axes averaging 15.9 mm (Xue et al. 2016)."
+        },
+        {
+          "trait": "branching",
+          "from_taxon": "Drepanophycus qujingensis",
+          "support": "rhizomes show repeated H- and K-branching (D. qujingensis; Xue et al. 2016)."
+        },
+        {
+          "trait": "rooting",
+          "from_taxon": "Drepanophycus qujingensis",
+          "support": "Branching rhizome networks with thinner adventitious roots (Xue et al. 2016)"
+        }
+      ],
+      "doubts": "The species concept and long range may combine several taxa; Givetian is a project truncation. Stomatal type is disputed, and the G-type tracheid label comes from a secondary summary. The congener's stomatal subtype is compared rather than required to establish presence; rooting provenance is identified elsewhere in the card."
+    },
+    {
+      "slug": "early-glomeromycotan-fungi",
+      "contrasts": ["fungal-nutrition", "record-timing"],
+      "chosen_to_contrast": "Contrast host-specific fungal nutrient partnerships and their carbon costs, using structurally preserved Rhynie associations alongside explicitly separate experiments on living liverworts.",
+      "can_transfer": [
+        {
+          "text": "Represent an arbuscule-bearing cortical colonisation zone in Aglaophyton majus at Rhynie, with continued provision of new host cells, as an anatomical relationship rather than measured nutrient exchange (Remy et al. 1994).",
+          "support": "in a meristematic cortical zone that kept supplying new host cells (Remy et al. 1994)."
+        },
+        {
+          "text": "Separate Palaeoglomus boullardii in aerial outer cortex from basal Palaeoendogone gwynne-vaughaniae in Horneophyton lignieri at Rhynie; model spatially distinct partners without assuming colonisation of rhizoids (Strullu-Derrien et al. 2014).",
+          "support": "in the base, in intercellular spaces and as intracellular coils but absent from rhizoids (Strullu-Derrien et al. 2014)."
+        },
+        {
+          "text": "Use hyphae 8-14 µm wide and multilayered spores 50-80 µm with a 6 µm wall for Glomites rhyniensis associated with Aglaophyton at Rhynie (as compared by Strullu-Derrien et al. 2026).",
+          "support": "Glomites rhyniensis has hyphae 8-14 µm wide and smooth multilayered spores 50-80 µm with a 6 µm wall"
+        },
+        {
+          "text": "For living Preissia quadrata and Marchantia paleacea with Glomeromycota in nutrient-poor dune-soil experiments, phosphorus-per-carbon efficiency fell 10-100-fold at 440 versus 1500 ppm CO2; significance is reported for Preissia (Field et al. 2012).",
+          "support": "Liverwort phosphorus-per-carbon efficiency fell 10-100-fold at 440 ppm (significant in Preissia)"
+        }
+      ],
+      "cannot_transfer": [
+        {
+          "text": "Fossil arbuscules cannot supply measured phosphorus, nitrogen or carbon exchange rates: functional exchange is inferred from morphology and living analogues.",
+          "support": "Nutrient exchange itself is inferred, never observed in the fossils."
+        },
+        {
+          "text": "Palaeoglomus grayi cannot provide a secure Ordovician symbiosis date: no plant host is associated and modern contamination remains possible.",
+          "support": "is unassociated with plant fossils and could be modern contamination of porous dolomite."
+        },
+        {
+          "text": "Living liverwort CO2 response magnitudes cannot be assigned directly to fossil hosts: these are short experiments on specified modern analogues.",
+          "support": "Experiments (living analogues, a few months, nutrient-poor dune soil):"
+        },
+        {
+          "text": "Mycorrhizal mutualism cannot be assigned to every Rhynie plant: the Asteroxylon cortical fungus is interpreted as probably parasitic.",
+          "support": "the root-bearing Asteroxylon has a probably parasitic cortex fungus, not a mycorrhiza (Strullu-Derrien et al. 2015)."
+        }
+      ],
+      "borrowed": [],
+      "doubts": "The front matter spells Horneophyton ligneri, whereas the body uses lignieri. The general claim that Rhynie hosts were rootless sits alongside a root-bearing Asteroxylon counter-example. The Ordovician age/identity and the quoted numerical versus stage ages remain explicitly uncertain."
+    },
+    {
+      "slug": "early-lycopsids",
+      "contrasts": ["clonal-growth", "reproductive-strategy", "record-timing"],
+      "chosen_to_contrast": "Contrast clonal spread and sparse recovered reproductive organs with the acquisition of lycopsid structures, using member-specific measurements rather than a uniform group body plan.",
+      "can_transfer": [
+        {
+          "text": "Use prostrate leafy stems 3-34 mm wide, mean 15 mm, for Sengelia radicans from Cottonwood Canyon, Beartooth Butte Formation; these are stem widths rather than stature (Matsunaga and Tomescu 2016, 2017).",
+          "support": "had prostrate leafy stems 3-34 mm wide (mean 15 mm)"
+        },
+        {
+          "text": "For Sengelia radicans at Cottonwood Canyon, represent fine lateral roots 0.4-0.7 mm wide that fork up to five times, distinct from its wider root-bearing axes (Matsunaga and Tomescu 2016, 2017).",
+          "support": "Sengelia carries fine lateral roots (0.4-0.7 mm) that fork up to five times (Matsunaga and Tomescu 2016, 2017)"
+        },
+        {
+          "text": "For Sengelia radicans at Cottonwood Canyon, use sessile round sporangia 2.3-3.7 mm across and the recovery of only 33 sporangia among over 1,000 specimens as assemblage observations, not a reproductive rate (Matsunaga and Tomescu 2016, 2017).",
+          "support": "sessile round sporangia of 2.3-3.7 mm; only 33 sporangia were found (Matsunaga and Tomescu 2016, 2017)."
+        },
+        {
+          "text": "Use graptolite-dated Pridoli Baragwanathia brevifolioides at Karlštejn as a conservative occurrence constraint; it dates a fossil member rather than the crown lineage (Kraft and Kvaček 2017).",
+          "support": "First = Baragwanathia brevifolioides, graptolite-dated Pridoli (Neocolonograptus ultimus Biozone) of Karlštejn,"
+        }
+      ],
+      "cannot_transfer": [
+        {
+          "text": "The reconstructed 30 cm Asteroxylon stature cannot define a measured group maximum: it combines individuals, and no whole plant is measured.",
+          "support": "Do not take 30 cm as a group maximum."
+        },
+        {
+          "text": "Vascularised microphylls cannot be imposed on all members: Asteroxylon appendages are avascular enations whose traces terminate before the leaf base.",
+          "support": "Asteroxylon has avascular enations to 5 mm, whose traces stop short of the leaf base."
+        },
+        {
+          "text": "Middle Devonian Leclercqia ligules cannot be assumed in Early Devonian members, including poorly preserved early Leclercqia.",
+          "support": "Ligules are documented only from the Middle Devonian; do not assume them in Early Devonian taxa."
+        },
+        {
+          "text": "Pridoli-to-Pragian member occurrences cannot fix crown-lycophyte age: the fossils have stem-group or unresolved crown status.",
+          "support": "the Pridoli to Pragian lycopsids are stem-group or of unknown crown status, so they do not fix the crown node."
+        }
+      ],
+      "borrowed": [],
+      "doubts": "Group front-matter states conceal member variation: microphylls include avascular enations, and G-type tracheids are verified only for Asteroxylon. Recovered sporangial scarcity does not quantify lifetime sexual reproduction. Pridoli Baragwanathia also conflicts with a cited account placing abrupt leaf appearance later."
+    },
+    {
+      "slug": "eophyllophyton-bellum",
+      "contrasts": ["water-transport", "record-timing"],
+      "chosen_to_contrast": "Contrast a vascularised branch-leaf precursor with a dorsiventral laminate leaf, using appendages flattened only at their tips to test alternative timings and anatomical requirements of leaf acquisition.",
+      "can_transfer": [
+        {
+          "text": "For Eophyllophyton bellum compressions from the Posongchong Formation, Wenshan, represent paired dissected appendages with branching veins and mesophyll lacking palisade and spongy layers (Hao et al. 2003; Hao & Xue 2013).",
+          "support": "pairs of dissected appendages with branching veins and elongated mesophyll cells lacking palisade and spongy layers"
+        },
+        {
+          "text": "For Eophyllophyton bellum from Posongchong, use the character interpretation of determinate growth with radial vascular symmetry, three-dimensional architecture and no dorsiventral polarity, rather than a binary mature-leaf character (Tomescu & Whitewoods 2024).",
+          "support": "radially symmetrical vascularisation, three-dimensional architecture, flattening restricted to ultimate segments, no dorsiventral polarity."
+        },
+        {
+          "text": "Use middle to late Pragian as the Posongchong occurrence interval for Eophyllophyton bellum, constrained by palynology, fish and overlying marine fauna; this is not a radiometric date (Cascales-Miñana et al. 2017).",
+          "support": "Palynology, fish and overlying marine fauna place it in the middle to late Pragian; no radiometric age."
+        }
+      ],
+      "cannot_transfer": [
+        {
+          "text": "The front-matter megaphyll state cannot establish a true leaf: the card's later interpretation recognises reduced branch systems and incomplete leaf characters.",
+          "support": "Read as a megaphyll precursor, not a true leaf."
+        },
+        {
+          "text": "Quoted blade dimensions and the derived bounding area cannot become verified primary measurements: the dimensions came from unchecked secondary summaries.",
+          "support": "Secondary summaries of that paper give blade dimensions of about 1.7-4.8 mm wide and 2.2-5.0 mm long (not checked against the paper)."
+        },
+        {
+          "text": "Stomatal density, conductance and measured heat tolerance cannot be assigned: no epidermis was observed, and the high-CO2 heat-stress explanation is an interpretation.",
+          "support": "stomata unobserved (no epidermis in SEM)"
+        },
+        {
+          "text": "Plant-level photosynthetic area cannot be inferred from one appendage's dimensions without appendage counts.",
+          "support": "a plant-level photosynthetic area needs counts not yet found."
+        }
+      ],
+      "borrowed": [],
+      "doubts": "The megaphyll code conflicts with the explicit precursor interpretation. Main-axis branching is unverified; summaries disagree on the sporangial surface. Species authorship needs checking. The modelling section uses older numerical ages despite the stage-based correction, and blade dimensions remain unverified."
+    },
+    {
+      "slug": "eophytes",
+      "contrasts": ["water-transport", "reproductive-strategy", "record-timing"],
+      "chosen_to_contrast": "Contrast permanent cryptospore dispersal units and leptoid-like food conduction with tracheophyte reproduction and hydraulics, using charcoalified bodies while separating them from the much older dispersed-spore record.",
+      "can_transfer": [
+        {
+          "text": "For Fusitheca fanningiae, now Fusiformitheca, in Lower Devonian Welsh Borderland charcoalified material, represent fusiform sporangia, isotomously branching axes and permanent dyad dispersal units (Wellman et al. 1998).",
+          "support": "*Fusitheca fanningiae*: fusiform sporangia on an isotomously branching axis, permanent dyads (Wellman et al. 1998)."
+        },
+        {
+          "text": "For Grisellatheca salopensis among Welsh Borderland charcoalified mesofossils, represent tetrads at a forking apex; retain the elater as putative rather than functional machinery (Edwards et al. 1999).",
+          "support": "*Grisellatheca salopensis*: tetrads and a putative elater at a forking apex (Edwards et al. 1999)."
+        },
+        {
+          "text": "For Ficoiditheca aenigma in Lochkovian Welsh Borderland material, represent fig-shaped sporangia, branching stomatiferous axes and dyads; its dispersed-spore counterpart is unidentified (Morris et al. 2012).",
+          "support": "*Ficoiditheca aenigma*: fig-shaped sporangia on branching, stomatiferous axes, with dyads unmatched in dispersed assemblages (Morris et al. 2012)."
+        },
+        {
+          "text": "For eophyte split-charcoal specimens from the Welsh Borderland, species unspecified, distinguish thick-walled central cells from absent water-conducting cells; this constrains anatomical states rather than measured hydraulic rates (Edwards et al. 2021a).",
+          "support": "Central cells have thick, globule-bearing walls, occasional strands and plasmodesmata-sized pores, and no water-conducting cells (Edwards et al. 2021a)."
+        }
+      ],
+      "cannot_transfer": [
+        {
+          "text": "Matrotrophy and gametophyte dependence cannot be fixed as observed life-cycle states: proposed gametophytes are unattached and sporophyte nourishment remains hypothetical.",
+          "support": "but none is attached to a sporophyte."
+        },
+        {
+          "text": "The 2 cm height maximum cannot be treated as measured stature: no whole plant exists and the estimate is inferred from fragments.",
+          "support": "judged that axes were unlikely to exceed a couple of centimetres (an inference from fragments)."
+        },
+        {
+          "text": "Ordovician cryptospore occurrence cannot establish an Ordovician eophyte body plan or apply its propagule measurements to a named body taxon: the producers are unknown.",
+          "support": "whose producers are unknown as organisms: calling them eophytes is an\n    inference from spore type."
+        },
+        {
+          "text": "Cryptospore-bearing fossils cannot impose one crown-embryophyte calibration: alternative stem placements change the inferred age and lack a cladistic test.",
+          "support": "Hooper et al. (2026) ran *Partitatheca* and *Lenticulatheca* as stem-embryophytes and as stem-tracheophytes, noting that no cladistic test exists."
+        },
+        {
+          "text": "Permanent dyads cannot establish selfing without an independently supported bisexual gametophyte.",
+          "support": "Permanent dyads allow selfing only if gametophytes were bisexual (Edwards et al. 2014)."
+        }
+      ],
+      "borrowed": [],
+      "doubts": "The Lochkovian last-stage field conflicts with reported late Lochkovian or Pragian cryptospore survivors. Conducting_tissue: absent means no water-conducting cells, not no food-conducting cells. Membership, especially Lenticulatheca and possible Culullitheca/Partitatheca, is disputed; height is inferred and older numerical ages require care."
+    },
+    {
+      "slug": "franhueberia-gerriennei",
+      "contrasts": ["height", "water-transport", "record-timing"],
+      "chosen_to_contrast": "Contrast secondary xylem production with assumptions linking wood to height and mechanical support, using small preserved xylem cylinders whose whole-plant stature and hydraulic performance remain unknown.",
+      "can_transfer": [
+        {
+          "text": "For the Franhueberia gerriennei type from the Battery Point Formation, Gaspé, use 0.70 mm secondary xylem thickness and up to 25 tracheids per file as accumulated anatomical amounts (Hoffman & Tomescu 2013; Casselman & Tomescu 2025).",
+          "support": "The type has 0.70 mm of secondary xylem and up to 25 tracheids per file;"
+        },
+        {
+          "text": "For Franhueberia gerriennei in the emended diagnosis incorporating the type and two Battery Point topotypes, use secondary tracheids 8.4-37 µm tangentially and 21.6-42 µm radially, with multiaperturate scalariform bordered pits (Casselman & Tomescu 2025).",
+          "support": "secondary xylem tracheids 8.4-37 µm wide tangentially and 21.6-42 µm radially, with multiaperturate scalariform bordered pits;"
+        },
+        {
+          "text": "For Franhueberia gerriennei in the emended type-plus-two-topotype diagnosis from Battery Point, represent xylem cylinders reaching over 6 mm across; this describes xylem rather than complete stem diameter (Casselman & Tomescu 2025).",
+          "support": "the emended diagnosis, which adds two topotypes, gives xylem reaching over 6 mm in diameter"
+        }
+      ],
+      "cannot_transfer": [
+        {
+          "text": "Specific conductivity 8.7 kg m^-1 s^-1 and wall thickness-to-span ratio 0.0372 cannot be assigned to Franhueberia: Strullu-Derrien et al. (2014) measured Armoricaphyton.",
+          "support": "this concerns *Armoricaphyton*, not *Franhueberia*"
+        },
+        {
+          "text": "Wood thickness and radial cell counts cannot supply annual cambial growth rates: fossil lifetimes are unknown, and the broad ranges pool different woody taxa.",
+          "support": "These bound how much wood was added in the plants' (unknown) lifetime."
+        },
+        {
+          "text": "Unknown leaves and roots cannot be coded as observed absence or demonstrate that wood preceded those organs in this species.",
+          "support": "Phloem, epidermis, branching, leaves, sporangia and roots are not known; the type preserved only xylem."
+        },
+        {
+          "text": "The front-matter maximum of 6 mm cannot be a hard upper limit on stem diameter: it is a lower bound on the maximum xylem-cylinder diameter.",
+          "support": "Xylem cylinder of the emended species diagnosis 'reaching >6 mm' in diameter, so 6 is a floor for the maximum (Casselman & Tomescu 2025)."
+        },
+        {
+          "text": "The Emsian Franhueberia occurrence cannot calibrate the first appearance of wood: the card identifies older late Pragian Armoricaphyton.",
+          "support": "First wood is late Pragian, so the trait predates the Battery Point plants;"
+        }
+      ],
+      "borrowed": [],
+      "doubts": "The height note says only xylem cylinders are known, but topotypes preserve cortex; its 27 mm length is from a search summary. The modelling claim of wood without leaves or roots exceeds their unknown status. A numeric maximum of 6 contradicts 'over 6 mm'; bifacial cambium remains speculative."
+    }
+  ]
+}

@@ -1,0 +1,192 @@
+{
+  "items": [
+    {
+      "claim": "“New evidence on internal structure shows that the putative plant is a dendroid graptolite.”",
+      "section": "1. Boiophyton pragense — reassessment",
+      "verdict": "supported",
+      "evidence": "Kenrick and colleagues explicitly reinterpret Middle Ordovician Boiophyton as a dendroid graptolite using internal structure; associated axes are tentatively interpreted as octocorals.",
+      "source": "[Kenrick et al. (1999)](https://openurl.ebsco.com/fulltext/gcd%3A4336779), DOI 10.1111/1475-4983.00106. Abstract only, read through indexed abstract text."
+    },
+    {
+      "claim": "“The holotype, NM-D418 from Praha-Vokovice, is Darriwilian.”",
+      "section": "1. Boiophyton pragense — current interpretation and age",
+      "verdict": "supported",
+      "evidence": "Maletz identifies NM-D418 as the Darriwilian holotype and gives the genus a Darriwilian–Gorstian range in the Czech Republic and Sweden.",
+      "source": "[Maletz (2020)](https://www.researchgate.net/publication/355271246_Treatise_Online_no_139_Part_V_Second_Revision_Chapter_17_Order_Dendroidea_Introduction_morphology_and_systematic_descriptions), DOI 10.17161/to.vi.14679. Full-text taxonomic section and captions read."
+    },
+    {
+      "claim": "“Lundblad (1972) redescribed it as a dendroid graptolite.”",
+      "section": "2. Psilophyton? hedei — reassessment",
+      "verdict": "unverifiable",
+      "evidence": "Lundblad’s paper was inaccessible; Maletz confirms the later graptolite identification, but the original reassessment’s observations could not be checked.",
+      "source": "Lundblad (1972), DOI 10.1016/0034-6667(72)90014-0: neither full text nor substantive abstract reached. [Maletz (2020)](https://www.researchgate.net/publication/355271246_Treatise_Online_no_139_Part_V_Second_Revision_Chapter_17_Order_Dendroidea_Introduction_morphology_and_systematic_descriptions): relevant full-text section read."
+    },
+    {
+      "claim": "“the holotype … now identified as a specimen of Boiophyton aculeatus”",
+      "section": "2. Psilophyton? hedei — current identification",
+      "verdict": "supported",
+      "evidence": "Maletz explicitly identifies S-010022 as Boiophyton aculeatus, from the Hemse Marl, Ludlow, Gotland, citing Kenrick et al.’s figure.",
+      "source": "[Maletz (2020)](https://www.researchgate.net/publication/355271246_Treatise_Online_no_139_Part_V_Second_Revision_Chapter_17_Order_Dendroidea_Introduction_morphology_and_systematic_descriptions), DOI 10.17161/to.vi.14679. Full-text caption read."
+    },
+    {
+      "claim": "“Ordovician land plants … extracted by acid from limestone erratic boulders”",
+      "section": "3. Musciphyton and Hepaticaephyton — original claim and dating",
+      "verdict": "supported",
+      "evidence": "The original paper describes acid-extracted plants from Polish erratics; Musciphyton’s age rests on Ostseekalk lithology, while Hepaticaephyton’s boulder is only broadly Ordovician.",
+      "source": "[Kozłowski and Greguss (1959)](https://www.app.pan.pl/archive/published/app04/app04-001.pdf). Full-text descriptions and stratigraphic discussion read."
+    },
+    {
+      "claim": "“Current interpretation and age: modern roots, so no Ordovician plant.”",
+      "section": "3. Musciphyton and Hepaticaephyton — rejection",
+      "verdict": "unverifiable",
+      "evidence": "The 2022 review reports a modern-root interpretation without a supporting reassessment citation; no primary investigation establishing that rejection was located.",
+      "source": "[Pacyna and Barbacka (2022)](https://www.journalssystem.com/asbp/Polish-Palaeobotany-750-Million-Years-of-Plant-History-as-Revealed-in-a-Century-of%2C175224%2C0%2C2.html), DOI 10.5586/asbp.9123. Relevant full-text section read; secondary statement only."
+    },
+    {
+      "claim": "“The plants are now treated as … Srbsko beds of the Givetian.”",
+      "section": "4. Protolepidodendron — Bohemian type",
+      "verdict": "unverifiable",
+      "evidence": "Jurina’s accessible title establishes Middle Devonian age; the abstract does not supply the holotype’s precise stratigraphic provenance or demonstrate the historical redating.",
+      "source": "[Jurina (2009)](https://www.researchgate.net/publication/226573324_Middle_Devonian_lycophyte_Protolepidodendron_scharianum_History_of_study_and_description_of_the_holotype), DOI 10.1134/S0031030109100074. Abstract and bibliographic information only; full text unavailable."
+    },
+    {
+      "claim": "“Fairon-Demaret (1981) re-studied five specimens from Oé and one from Ronquières”",
+      "section": "4. Protolepidodendron — Belgian specimens",
+      "verdict": "unverifiable",
+      "evidence": "The cited 1981 paper could not be reached; specimen counts, locality ages and the detailed reassessment therefore remain unchecked against that primary source.",
+      "source": "Fairon-Demaret (1981), Bulletin de l’Institut royal des Sciences naturelles de Belgique 53(1):1–10, no DOI. Neither full text nor abstract reached."
+    },
+    {
+      "claim": "“Early Devonian, Chinese and Belgian records”",
+      "section": "Summary table, row 4",
+      "verdict": "wrong",
+      "evidence": "Xu and Wang reassign Middle Devonian Xinjiang specimens to Leclercqia cf. L. complexa using five-segment, three-dimensional leaves; the note’s Belgian paragraph also says Middle Devonian.",
+      "source": "[Xu and Wang (2008)](https://www.cambridge.org/core/journals/geological-magazine/article/abs/palaeogeographical-significance-of-specimens-attributed-to-protolepidodendron-scharyanum-krejci-lycopsida-from-the-middle-devonian-of-north-xinjiang-china/F78B28133C651009D19F993BA96F3515), DOI 10.1017/S0016756807004256. Abstract only."
+    },
+    {
+      "claim": "“made the Belgian specimens … Estinnophyton … and moved the German plant … to Estinnophyton wahnbachense”",
+      "section": "4. Protolepidodendron wahnbachense — reassignment",
+      "verdict": "supported",
+      "evidence": "The 1978 title and introduction document the Belgian renaming; the 1979 abstract explicitly transfers German Siegenian material following revised leaf and sporangial observations.",
+      "source": "[Fairon-Demaret (1978)](https://www.persee.fr/doc/barb_0001-4141_1978_num_64_1_58430), DOI 10.3406/barb.1978.58430: title and first-page text read. [Fairon-Demaret (1979)](https://www.sciencedirect.com/science/article/pii/003466677990006X), DOI 10.1016/0034-6667(79)90006-X: indexed abstract only."
+    },
+    {
+      "claim": "“a land plant from the Devonian Villavicencio Formation, Mendoza Province, Argentina”",
+      "section": "5. Bowerophylloides — original claim",
+      "verdict": "supported",
+      "evidence": "Edwards and colleagues establish Bowerophylloides for sterile leafy axes in Villavicencio assemblages explicitly described as Lochkovian.",
+      "source": "[Edwards et al. (2001)](https://orca.cardiff.ac.uk/id/eprint/10065/), DOI 10.1016/S0034-6667(01)00059-8. Abstract read; repository full text also accessed."
+    },
+    {
+      "claim": "“possibly a dendroid graptolite; Devonian, possibly Lochkovian”",
+      "section": "5. Bowerophylloides — current interpretation",
+      "verdict": "supported",
+      "evidence": "Maletz lists tubular stipe fragments among possible callograptids, repeats Kraft and Kvaček’s possible-animal suggestion, and retains uncertain Lochkovian age.",
+      "source": "[Maletz (2020)](https://www.researchgate.net/publication/355271246_Treatise_Online_no_139_Part_V_Second_Revision_Chapter_17_Order_Dendroidea_Introduction_morphology_and_systematic_descriptions), DOI 10.17161/to.vi.14679. Full-text entry read; Kraft and Kvaček’s underlying discussion was not reached."
+    },
+    {
+      "claim": "“Cambrian to Tremadocian polyads … algal remains”; “irregular polyads are algal”",
+      "section": "6. Cambrian–Tremadocian cryptospores; recurring failure mode 5",
+      "verdict": "overstated",
+      "evidence": "Strother and Foster describe a Tremadocian assemblage combining Cambrian and younger embryophyte-spore elements, interpreted as evolutionary continuity between algae and embryophytes.",
+      "source": "[Strother and Foster (2021)](https://pubmed.ncbi.nlm.nih.gov/34385396/), DOI 10.1126/science.abj2927. Abstract only. [Wellman et al.](https://eprints.whiterose.ac.uk/id/eprint/194499/1/SP532-2022-92.pdf): relevant full-text discussion read."
+    },
+    {
+      "claim": "“Nematophytes … fungal or lichen … reassigned”",
+      "section": "Summary table, row 7; entry 7",
+      "verdict": "imprecise",
+      "evidence": "Fungal evidence concerns particular nematophytes; Loron and colleagues find Prototaxites taiti structurally and chemically distinct from fungi, suggesting an extinct eukaryotic lineage.",
+      "source": "[Edwards and Axe (2012)](https://www.researchgate.net/publication/263334627_Evidence_for_a_fungal_affinity_for_Nematasketum_a_close_ally_of_Prototaxites_FUNGAL_AFFINITY_FOR_NEMATASKETUM), DOI 10.1111/j.1095-8339.2011.01195.x: abstract only. [Loron et al. (2026)](https://doras.dcu.ie/32570/1/sciadv.aec6277-2.pdf), DOI 10.1126/sciadv.aec6277: relevant full-text results and discussion read."
+    },
+    {
+      "claim": "“Hirnantian … branching axes, terminal sporangium-like bodies, a probable stoma and rare spores with irregular trilete marks”",
+      "section": "8. Zbrza assemblage — original claim",
+      "verdict": "supported",
+      "evidence": "Salamon and colleagues describe these structures from Hirnantian Zalesie mudstones, explicitly questioning the irregular trilete marks and proposing probably nonvascular polysporangiophytes.",
+      "source": "[Salamon et al. (2018)](https://orbi.uliege.be/bitstream/2268/222752/1/Salamon_et_al-2018-New_Phytologist.pdf), DOI 10.1111/nph.15091. Main text and figure legends read; supplementary information not read."
+    },
+    {
+      "claim": "“Hirnantian as a minimum age for the host rock.”",
+      "section": "8. Zbrza assemblage — age and redeposition",
+      "verdict": "imprecise",
+      "evidence": "The host sediments are assigned to the Hirnantian; Trela and colleagues suggest reworked plant fragments could themselves be older than Hirnantian.",
+      "source": "[Salamon et al. (2018)](https://orbi.uliege.be/bitstream/2268/222752/1/Salamon_et_al-2018-New_Phytologist.pdf): main text read. [Trela et al. (2019)](https://journals.pan.pl/Content/114860/PDF/21_Las_Ordowicki.pdf?handler=pdf): full article read."
+    },
+    {
+      "claim": "“Darriwilian … five bryophyte clades and two fungal clades”",
+      "section": "9. Douglas Dam — original claim",
+      "verdict": "supported",
+      "evidence": "Retallack explicitly claims five bryophyte and two fungal clades from a Darriwilian sinkhole, including Dollyphyton, Prototaxites honeggeri and Palaeoglomus strotheri.",
+      "source": "[Retallack (2019)](https://www.researchgate.net/publication/363571104_Ordovician_land_plants_and_fungi_from_Douglas_Dam_Tennessee), DOI 10.54991/jop.2019.43. Full-text abstract, systematic descriptions and discussion passages read."
+    },
+    {
+      "claim": "“fragmentary material lacking diagnostic features … led to implausible attributions”",
+      "section": "9. Douglas Dam — criticism",
+      "verdict": "supported",
+      "evidence": "Edwards and colleagues explicitly cite Retallack as an example of implausible attribution when fragmentary organic material lacks diagnostic features.",
+      "source": "[Edwards et al.](https://orca.cardiff.ac.uk/id/eprint/159888/1/New%20Phytologist%20-%202021%20-%20Edwards%20-%20Piecing%20together%20the%20eophytes%20a%20new%20group%20of%20ancient%20plants%20containing%20cryptospores.pdf), DOI 10.1111/nph.17703. Full-text conclusion, p. 1453, read."
+    },
+    {
+      "claim": "“bifurcated axes up to 687 µm wide … early Sandbian”",
+      "section": "10. Ordos Basin — claimed morphology and age",
+      "verdict": "imprecise",
+      "evidence": "The abstract says 687 µm wide; Results give a branched axis 200 µm wide and another fragment 372 µm wide ×687 µm long.",
+      "source": "[Xu et al. (2022)](https://assets-eu.researchsquare.com/files/rs-1672132/v1_covered.pdf?c=1667907690), DOI 10.21203/rs.3.rs-1672132/v1. Full-text summary, Results and discussion read; preprint."
+    },
+    {
+      "claim": "“Akdalophyton has no tracheids … apparent hydroids and helically arranged leaves”",
+      "section": "11. Akdalophyton caradocki — original identification",
+      "verdict": "unverifiable",
+      "evidence": "Salamon reports these characters and a Sandbian age, but the primary 1992 description was inaccessible; its anatomy and dating could not be checked directly.",
+      "source": "[Salamon et al. (2018)](https://orbi.uliege.be/bitstream/2268/222752/1/Salamon_et_al-2018-New_Phytologist.pdf), DOI 10.1111/nph.15091. Full-text discussion read; secondary account. Snigirevskaya et al. (1992): neither full text nor substantive abstract reached."
+    },
+    {
+      "claim": "“probable trilete spores from the lower Sandbian … Ambitisporites … 41.9 m … Chelinospora? … 48.2 m”",
+      "section": "12. Swedish Sandbian trilete spores — original record",
+      "verdict": "imprecise",
+      "evidence": "The single probable Chelinospora is lowermost Sandbian, approximately 456–457 Ma; Ambitisporites at 41.9 m belongs to the younger 455–454.41 Ma interval.",
+      "source": "[Rubinstein and Vajda (2019)](https://www.researchgate.net/publication/334652023_Baltica_cradle_of_early_land_plants_Oldest_record_of_trilete_spores_and_diverse_cryptospore_assemblages_evidence_from_Ordovician_successions_of_Sweden), DOI 10.1080/11035897.2019.1636860. Full-text stratigraphic discussion and captions read."
+    },
+    {
+      "claim": "“Hooper et al. (2026) use it only as a soft maximum (459.1 Ma) for crown embryophytes”",
+      "section": "12. Swedish Sandbian trilete spores — calibration",
+      "verdict": "supported",
+      "evidence": "Hooper uses Swedish possible trilete spores for the 459.1 Ma maximum and identifies Saudi Ambitisporites avitus as the earliest unequivocal trilete spore.",
+      "source": "[Hooper et al. (2026)](https://www.nature.com/articles/s41477-026-02432-3), DOI 10.1038/s41477-026-02432-3. Full-text calibration methods and discussion read; supplementary PDF could not be retrieved."
+    },
+    {
+      "claim": "“cryptospores of the Dapingian from north-west Argentina … oldest record clearly attributed to land plants”",
+      "section": "13. Argentine Dapingian cryptospores — original claim",
+      "verdict": "supported",
+      "evidence": "Rubinstein and colleagues claim five cryptospore genera from Dapingian samples, dated using chitinozoans and acritarchs, as the earliest unequivocal land-plant evidence.",
+      "source": "[Rubinstein et al. (2010)](https://ri.conicet.gov.ar/bitstream/handle/11336/55341/CONICET_Digital_Nro.ea0ae8d2-e23c-465b-8e37-e69c7a25e1cf_A.pdf?isAllowed=y&sequence=2), DOI 10.1111/j.1469-8137.2010.03433.x. Main text read."
+    },
+    {
+      "claim": "“Error type: misdating or unresolved dispute.”",
+      "section": "13. Argentine Dapingian cryptospores — nature of criticism",
+      "verdict": "wrong",
+      "evidence": "Strother questions tetrad geometry and embryophyte identification, interprets another tetrad as probably chlorophyte, and does not challenge the Dapingian dating.",
+      "source": "[Strother et al. (2015)](https://www.researchgate.net/publication/268157263_Cryptospores_from_the_Hanadir_Shale_Member_of_the_Qasim_Formation_Ordovician_Darriwilian_of_Saudi_Arabia_Taxonomy_and_Systematics), DOI 10.1016/j.revpalbo.2014.08.018. Full-text discussion, p. 108, read."
+    },
+    {
+      "claim": "“Early Devonian … unresolved for the eastern localities”",
+      "section": "14. Yea Baragwanathia assemblage — current age assessment",
+      "verdict": "supported",
+      "evidence": "Earp reassigns western Lower Plant Assemblage localities to Pragian–Emsian, leaves eastern localities unresolved, and finds their available evidence unsupportive of Ludlow age.",
+      "source": "[Earp (2024)](https://connectsci.au/rs/article/136/1/RS23021/33891/Notanopliid-brachiopods-and-associated-fossils), DOI 10.1071/RS23021. Full-text stratigraphic reassessment read."
+    }
+  ],
+  "omissions": [
+    "Two substantial Ordovician examples are missing: Promissum pulchrum, initially interpreted as a land plant and subsequently identified as a conodont, and Eohostimella parva, transferred to Siphonacis following internal-structure observations supporting a metazoan interpretation. Chesselet places both in the late Ashgillian Soom Shale. [Chesselet (1992), abstract and indexed full-text passages](https://wiredspace.wits.ac.za/bitstreams/1f0e4b46-cafb-4401-8cea-d1b81fe6da66/download); complete PDF retrieval timed out.",
+    "The Swedish entry conflates a single probable lowermost Sandbian specimen with younger occurrences the original authors describe as consistently well-preserved trilete spores. A generic tearing mechanism does not establish that all these specimens are artefacts. [Rubinstein and Vajda (2019), full-text passages](https://www.researchgate.net/publication/334652023_Baltica_cradle_of_early_land_plants_Oldest_record_of_trilete_spores_and_diverse_cryptospore_assemblages_evidence_from_Ordovician_successions_of_Sweden).",
+    "The Argentine criticism is anatomically specific: the illustrated supposed tetrahedral tetrad lacks convincing regular attachment and diagnostic margins; the enclosed planar tetrad is interpreted as probably chlorophyte. These reasons change the error category from misdating to disputed biological identification. [Strother et al. (2015), full-text discussion](https://www.researchgate.net/publication/268157263_Cryptospores_from_the_Hanadir_Shale_Member_of_the_Qasim_Formation_Ordovician_Darriwilian_of_Saudi_Arabia_Taxonomy_and_Systematics).",
+    "Trela’s redeposition suggestion concerns fragments potentially older than their Hirnantian sedimentary host. It supplies no evidence for younger intrusion or modern contamination; those mechanisms must remain separate hypotheses. [Trela et al. (2019), full text](https://journals.pan.pl/Content/114860/PDF/21_Las_Ordowicki.pdf?handler=pdf).",
+    "The recent Prototaxites reassessment needs a direct citation and taxonomic scope. Its principal comparison concerns Early Devonian P. taiti; it challenges fungal affinity without establishing one replacement identity for every nematophyte. [Loron et al. (2026), full-text results and discussion](https://doras.dcu.ie/32570/1/sciadv.aec6277-2.pdf).",
+    "The Ordos characters occur in separate fragments, rather than one reconstructed organism possessing all characters. The authors propose a stem-tracheophyte position, so the claimed occurrence does not directly contradict a younger crown-tracheophyte divergence. [Xu et al. (2022), full-text Results and discussion](https://assets-eu.researchsquare.com/files/rs-1672132/v1_covered.pdf?c=1667907690).",
+    "Earp accepts the identification of the Gorstian Bohemograptus bohemicus specimens; their doubtful locality provenance, involving a road-material stockpile, is the problem. Other monograptid identifications are criticised separately. This distinction changes the mechanism from taxonomic error to possible introduced material. [Earp (2024), full text](https://connectsci.au/rs/article/136/1/RS23021/33891/Notanopliid-brachiopods-and-associated-fossils).",
+    "The German Estinnophyton reassessment describes twice-bifurcating leaves with four segments and two pairs of stalked sporangia. Those features deserve inclusion alongside the earlier two-sporangium interpretation. [Fairon-Demaret (1979), indexed abstract](https://www.sciencedirect.com/science/article/pii/003466677990006X).",
+    "Saxonia microphylla receives only a passing mention despite Maletz treating this Ludlow German supposed plant alongside Boiophyton and Bowerophylloides. It warrants a separate uncertain-animal entry, retaining the absence of demonstrated fusellar construction. [Maletz (2020), full-text taxonomic section](https://www.researchgate.net/publication/355271246_Treatise_Online_no_139_Part_V_Second_Revision_Chapter_17_Order_Dendroidea_Introduction_morphology_and_systematic_descriptions)."
+  ],
+  "model_transfer_assessment": "1. Boiophyton: rejected as a land plant is justified; its animal reassignment is well supported, although Maletz retains uncertainty about diagnostic graptolite construction. 2. Psilophyton? hedei: rejected as a plant is justified by the documented Boiophyton identification; Lundblad’s original reasoning remains unverified here. 3. Musciphyton/Hepaticaephyton: provisionally rejected is reasonable, but 'consensus' exceeds the primary reassessment evidence located. 4. Protolepidodendron: reassigned is appropriate only specimen by specimen; separate historical age terminology, actual redating and taxonomic transfers. The Chinese and Belgian Leclercqia records are Middle Devonian in the accounts discussed. 5. Bowerophylloides: disputed affinity is more accurate than completed reassignment; a possible animal identification remains tentative. 6. Cambrian–Tremadocian polyads: disputed evolutionary affinity or algal-grade interpretation is preferable to treating the entire assemblage category as demonstrated misidentification. 7. Nematophytes: split the taxa and hypotheses; rejection of an embryophyte interpretation does not establish a settled fungal reassignment for Prototaxites. 8. Zbrza: disputed is appropriate; distinguish identification uncertainty from possible older reworking. 9. Douglas Dam: disputed is appropriate because published criticism directly challenges diagnostic sufficiency. 10. Ordos: unassessed fits the note’s stated disputed category, but is not evidence of rejection; preprint status alone establishes no error. 11. Akdalophyton: provisionally unassessed/disputed is appropriate; the original anatomy and age need direct verification, and historical Middle Ordovician terminology does not itself demonstrate conflicting dating. 12. Swedish spores: disputed is defensible for the oldest probable specimen, but the assemblage must be separated by specimen and horizon; a general artefact warning cannot classify every occurrence. 13. Argentine cryptospores: disputed is correct, with biological identification rather than demonstrated misdating as the issue. 14. Yea: disputed age is correct for eastern localities, while western occurrences have a published Devonian reassignment. Promissum pulchrum is a well-documented missing rejected plant identification; Eohostimella parva/Siphonacis is another important reassessment. For modelling, this selected catalogue cannot by itself estimate error rates: it lacks a sampling denominator, includes dependent records, and mixes genuine errors with unresolved hypotheses and transfers between plant groups.",
+  "overall": "The note is a useful provisional catalogue, but several classifications are firmer than their evidence and important disputes are conflated across specimens or horizons. Correct the Argentine error mechanism, Swedish horizon distinctions, Ordos dimensions and tentative reassignments, and verify the inaccessible historical reassessments before using entries as labelled observation-model errors."
+}

@@ -9,6 +9,7 @@ lineage: >-
   Cooksonia-type polysporangiophytes, eophytes (permanent-cryptospore plants), nematophytes, lichens and other fungi,
   with in situ spores. Placement here is stratigraphic; the members belong to several lineages.
 placement_confidence: medium
+contrasts: [water-transport, reproductive-strategy, record-timing]
 range:
   first: Ludfordian
   last: Lochkovian
@@ -142,6 +143,20 @@ Eophytes were probably poikilohydric, with thick-walled epidermal cells and lept
 - **Size spectrum.** Eophyte axes under about 2 mm and heights of millimetres to centimetres, Cooksonia to about 6 cm, set the small end of the early size distribution in a record that also contains much larger nematophytes.
 - **Sampling frame.** Allochthonous bodies from a few streams and sections, with typically one or a few specimens per taxon: use as presence data with large unobserved-habitat uncertainty, not as abundance data.
 - **Regional bias.** Edwards & Richardson (2004) state that major evolutionary innovation probably occurred elsewhere, so first appearances here are minimum-age constraints for the region, not for the clade.
+
+## Model transfer
+
+**Chosen to contrast:** Contrast trilete-spore plants with permanent-cryptospore eophytes and their different conducting tissues, using charcoalified fragments that directly associate anatomy with in situ spores.
+
+- **Can transfer:**
+  - Annularly thickened tracheids in charcoalified Cooksonia pertoni from the Welsh Borderland assemblages can define a conducting-tissue morphotype (Edwards & Kenrick 2015).
+  - Permanent dyads or tetrads in eophytes, including Partitatheca from North Brown Clee Hill, provide alternative cryptospore states rather than trilete-spore states (Edwards et al. 2014).
+  - Preserved lengths of Cooksonia, species not separated, in Lang's Downtonian compressions from England and Wales: about 1-6 cm; use as fragment lengths (Edwards & Kenrick 2015).
+- **Cannot transfer:**
+  - Tracheids cannot be assigned to eophytes from the assemblage-wide front-matter state; their reported conducting cells are leptoid-like food conductors (Edwards et al. 2021a).
+  - Gametophyte–sporophyte dependence cannot be established from North Brown Clee Hill transfer-cell thalli: their gametophyte identity is hypothesised and no sporophyte is matched (Edwards et al. 2021b).
+  - Population abundance and relative taxon frequencies cannot be inferred from these transported, selectively preserved fragments; this card recommends presence data.
+  - Global lineage-origination dates cannot be assigned from regional first appearances; major innovations may have occurred elsewhere (Edwards & Richardson 2004).
 
 ## Open questions
 

@@ -10,6 +10,7 @@ lineage: >-
   and seed plants, while Psilophyton itself shows irregular branch arrangement. Trimerophytina is a classification,
   not a clade.
 placement_confidence: medium
+contrasts: [height, water-transport, reproductive-strategy]
 range:
   first: Pragian
   last: Eifelian
@@ -133,6 +134,22 @@ Trimerophytes grew on moist channel bars and freshly deposited flood muds (Griff
 - **Wood and support.** No secondary xylem is reported for *Psilophyton*, whereas smaller coeval euphyllophytes had it (Gerrienne et al. 2011); *Wilhowia* stood on 1 cm axes without wood (Gensel 2022). Height was reached without wood.
 - **Leaf timing.** Lycophyte leaves appear around 415-408 Ma, euphyllophyte leaves only by about 385 Ma (older timescale; Tomescu and Whitewoods 2024): a 10-25 Myr delay between Emsian architectures and Givetian leaves that a model must explain (Pertica card).
 - **Heterospory.** *Chaleuria* (apparently heterosporous; Andrews et al. 1974) warrants a sensitivity case.
+
+## Model transfer
+
+**Chosen to contrast:** Contrast stature supported by leafless branching and primary tissues with clustered reproductive output, using separate anatomical and architectural observations from members of the basal euphyllophyte plexus.
+
+- **Can transfer:**
+  - Psilophyton crenulatum, Atholville material: 3-5 mm axis diameters from two spot measurements provide local dimensional constraints, not a population distribution (Doran and Tomescu 2025).
+  - Pertica dalhousii, Dalhousie-area material: 32-128 sporangia per cluster constrain reproductive branching and organ counts, without specifying spores per sporangium (Doran et al. 1978).
+  - Psilophyton dawsonii, Gaspé material: bordered, multiaperturate P-type pits provide a conducting-tissue state; measured hydraulic conductance is not supplied (Hartman and Banks 1980).
+  - Wilhowia phocarum, Battery Point Formation at Gaspé: standing axes of 1 cm without wood provide a member-specific support case, without establishing whole-plant height (Gensel 2022).
+- **Cannot transfer:**
+  - Do not treat the aggregate height range as measured stature or a fitted prior; it combines textbook reconstructions and secondary estimates.
+  - Do not assign Psilophyton tracheid anatomy or hydraulic properties to Pertica; its anatomy is unknown.
+  - Do not encode the lateral branch systems as observed leaves or assign them leaf physiological parameters; their precursor status is an interpretation.
+  - Do not make Chaleuria's apparent heterospory a grade-wide reproductive state; even its membership in the grade is unresolved.
+  - Do not use the Richardsville radiometric age as a direct Pragian–Emsian boundary calibration; this card places it younger than that boundary.
 
 ## Open questions
 

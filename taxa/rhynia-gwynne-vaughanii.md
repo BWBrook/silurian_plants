@@ -9,6 +9,7 @@ lineage: >-
   (1991) analysis Rhynia, Stockmansella and Huvenia form a clade that is sister to all other
   tracheophytes if S-type and G-type cells are homologous.
 placement_confidence: medium
+contrasts: [water-transport, sporophyte-independence, clonal-growth]
 range:
   first: Pragian
   last: Emsian
@@ -146,6 +147,22 @@ Stomata with substomatal chambers and specialised tissue beneath them point to h
 - Reproduction: terminal sporangia 5.1 × 2.4 mm with 39 µm spores; asexual propagules from epidermal cells give a vegetative route that needs no gametophyte (Kearney et al. 2016).
 - Gametophytes: 1.5 × 1.5 cm patch with over 200 individuals; 27 archegoniophores and at least 69 antheridiophores recognised (Taylor et al. 2005), a male-biased count whose cause is unknown.
 - Disturbance: plants rapidly recolonised sinter and sand after floods; use as a stress-tolerant ruderal strategy rather than a climax species (Wellman 2017).
+
+## Model transfer
+
+**Chosen to contrast:** Contrast S-type tracheid hydraulics and epidermal vegetative regeneration with sexual life-cycle structure, using anatomically preserved Rhynie sporophytes and an associated gametophyte stand.
+
+- **Can transfer:**
+  - Conducting anatomy: R. gwynne-vaughanii in Rhynie thin sections has a small exarch S-type tracheid strand surrounded by four to five cells of unpitted parenchyma (Kenrick & Crane 1991; Kerp 2017).
+  - Stomatal geometry: Rhynie R. gwynne-vaughanii has non-sunken stomata 90 to 100 µm by 75 to 85 µm; use these dimensions without converting them into a measured control response (Kerp 2017).
+  - Reproductive geometry: Rhynie R. gwynne-vaughanii has sporangia up to 5.1 × 2.4 mm and spores about 39 µm; retain the rarity of attached sporangia (Kerp 2017).
+  - Vegetative regeneration: Rhynie R. gwynne-vaughanii produces epidermal propagules 0.34 to 2.3 mm long with stomata, rhizoids and a vascular strand; represent this route separately from sexual reproduction (Kearney et al. 2016, reported by Kerp 2017).
+  - Gametophyte sampling: the Rhynie Remyophyton stand associated with R. gwynne-vaughanii occupies 1.5 × 1.5 cm with over 200 individuals, including 27 archegoniophores and at least 69 antheridiophores; use observed counts without a causal sex-ratio rule (Taylor et al. 2005).
+- **Cannot transfer:**
+  - Hard stature and diameter priors cannot treat about 20 cm and up to 3 mm as primary measurements: they come from the unchecked University of Aberdeen resource (n.d.).
+  - Measured water-use efficiency or stomatal response rates cannot be assigned from Rhynia anatomy: high efficiency is inferred, not quantified (Edwards 1998).
+  - Isomorphic generations and a specified sporophyte-gametophyte dependence cannot be fixed for Rhynia: the broader life-cycle hypothesis leans on one Cooksonia specimen, and the junction remains an open question (Gerrienne et al. 2006).
+  - Geographical range and first appearances cannot be extended using similar dispersed spores; convergence prevents tracing Rhynia beyond its basin (Wellman 2017).
 
 ## Open questions
 

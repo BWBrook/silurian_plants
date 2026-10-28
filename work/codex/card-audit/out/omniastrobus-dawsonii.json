@@ -1,0 +1,188 @@
+{
+  "items": [
+    {
+      "claim": "\"Barinophytaceae (barinophytes), a branch of the lycophyte stem grade\"",
+      "section": "Front matter: group and lineage; Affinity and controversies",
+      "verdict": "supported",
+      "evidence": "Claisse et al. recover Omniastrobus within Barinophytaceae, nested within Lycophytina and outside the sampled lycopsid clade.",
+      "source": "[Claisse et al.](https://doi.org/10.1093/aob/mcaf146), full text read."
+    },
+    {
+      "claim": "\"that clade, with Bathurstia, is sister to the Sawdoniaceae-lycopsid clade in the reduced-sampling analyses\"",
+      "section": "Front matter: lineage",
+      "verdict": "imprecise",
+      "evidence": "This topology is explicitly supported by reduced-sampling parsimony; Bayesian results differ among remaining Lycophytina relationships. Specify the analysis.",
+      "source": "[Claisse et al.](https://doi.org/10.1093/aob/mcaf146), full text read, Results and Fig. 5."
+    },
+    {
+      "claim": "\"among 15 genera new to phylogenetic work\"; \"taxon-stability score below 1\"",
+      "section": "Affinity and controversies: Placement",
+      "verdict": "supported",
+      "evidence": "Omniastrobus is among 15 newly analysed taxa; Table 1 gives barinophytes a stability score of 0.80.",
+      "source": "[Claisse et al.](https://doi.org/10.1093/aob/mcaf146), full text read."
+    },
+    {
+      "claim": "\"first: Emsian\"; \"last: Emsian\"; \"The authors give early Emsian\"",
+      "section": "Front matter: range; Age and distribution",
+      "verdict": "supported",
+      "evidence": "The original description explicitly assigns its Campbellton Formation specimens to the early Emsian; its abstract supplies no dating rationale.",
+      "source": "[Bonacorsi et al.](https://doi.org/10.1086/712356), abstract only; full text inaccessible."
+    },
+    {
+      "claim": "\"a U-Pb zircon age of 407.4 +/- 0.8 Ma on rhyolite near the top of the underlying Val d'Amour Formation\"",
+      "section": "Front matter: range.notes; Age and distribution",
+      "verdict": "unverifiable",
+      "evidence": "Kennedy and Gibling corroborate the number, method and position; the original Wilson dating account was inaccessible.",
+      "source": "[Kennedy and Gibling](https://doi.org/10.1139/e11-055), full text read through an author-posted copy; [Wilson et al.](https://doi.org/10.1139/e04-011), original full text not reached."
+    },
+    {
+      "claim": "\"annulatus-Camarozonotriletes sextantii zone\"; \"mid Emsian\" versus \"early to early late Emsian\"; higher beds \"late Emsian to earliest Eifelian\"",
+      "section": "Front matter: range.notes; Age and distribution",
+      "verdict": "supported",
+      "evidence": "The contrasting older correlations are accurately reported; Wellman's primary palynology independently distinguishes early Emsian and late Emsian–possibly earliest Eifelian sections.",
+      "source": "[Kennedy and Gibling](https://doi.org/10.1139/e11-055), [Miller et al.](https://doi.org/10.4138/atlgeol.2012.002), and [Wellman](https://doi.org/10.1016/j.revpalbo.2017.11.003), full texts read."
+    },
+    {
+      "claim": "\"407.4 Ma falls inside the Emsian (410.62-393.47 Ma)\"; \"latest Pragian on the 2009 ICS scale\"",
+      "section": "Front matter: range.notes; Age and distribution",
+      "verdict": "supported",
+      "evidence": "ICS 2024/12 gives these boundary estimates; Kennedy and Gibling explicitly use ICS 2009 to describe the rhyolite bracket as latest Pragian.",
+      "source": "[ICS 2024/12](https://stratigraphy.org/ICSchart/ChronostratChart2024-12.pdf), complete chart read; [Kennedy and Gibling](https://doi.org/10.1139/e11-055), full text read; repository data/timescale.csv checked."
+    },
+    {
+      "claim": "\"Trilete, circular to subcircular, trilete rays about a third of the radius\"",
+      "section": "Front matter: traits.spores",
+      "verdict": "unverifiable",
+      "evidence": "Bek reports these features, but the accessible original abstract contains no spore-shape or trilete-ray measurements.",
+      "source": "[Bonacorsi et al.](https://doi.org/10.1086/712356), abstract only; [Bek](https://doi.org/10.2478/fbgp-2025-0001), full text read, secondary description."
+    },
+    {
+      "claim": "\"about 70-150 um to >200 um\"; \"some bimodal sporangia\"; \"may show\" an intermediate step",
+      "section": "Front matter: traits.heterospory; In brief",
+      "verdict": "supported",
+      "evidence": "The original abstract reports these sizes, continuous variation in sporangium averages, bimodal mixtures, and a tentative intermediate-state interpretation.",
+      "source": "[Bonacorsi et al.](https://doi.org/10.1086/712356), abstract only."
+    },
+    {
+      "claim": "\"impressions of strobili containing numerous carbonised spore masses\"",
+      "section": "In brief; Morphology and anatomy; front matter: preservation",
+      "verdict": "supported",
+      "evidence": "The abstract describes strobilus impressions containing carbonised spore masses, supporting an adpression record rather than preserved whole-plant anatomy.",
+      "source": "[Bonacorsi et al.](https://doi.org/10.1086/712356), abstract only."
+    },
+    {
+      "claim": "\"65-280 µm, central value 156 µm\"; dataset \"midpoint\" 154 µm; \"probably a mean\"",
+      "section": "Morphology and anatomy: spore-size table",
+      "verdict": "unverifiable",
+      "evidence": "Secondary accounts give 65 (156) 280; dataset files were inaccessible. Neither 154's definition nor its proposed interpretation as a mean was verified.",
+      "source": "[Bek and Goswami](https://doi.org/10.2478/fbgp-2022-0002), full text read, secondary account; [Dryad dataset](https://doi.org/10.5061/dryad.pzgmsbcnh), landing page only, data and README downloads inaccessible."
+    },
+    {
+      "claim": "\"whether the 100-200 µm window was crossed gradually\"",
+      "section": "Model transfer: Chosen to contrast",
+      "verdict": "overstated",
+      "evidence": "The barrier is an evolutionary hypothesis; a fossil size distribution supplies no temporal sequence demonstrating gradual crossing.",
+      "source": "[Leslie and Bonacorsi](https://doi.org/10.1017/pab.2021.44), full text read through an author-posted copy."
+    },
+    {
+      "claim": "\"A continuous spore-size state within one strobilus\"",
+      "section": "Model transfer: Can transfer",
+      "verdict": "unverifiable",
+      "evidence": "The abstract describes variation within strobili collectively; specimen-level measurements establishing the complete gradient within a single identified strobilus were inaccessible.",
+      "source": "[Bonacorsi et al.](https://doi.org/10.1086/712356), abstract only; specimen descriptions and supplementary measurements not reached."
+    },
+    {
+      "claim": "\"Hueber's rock chips (about 30 chips and more than 80 sporangia ...; specimen numbers not available)\"",
+      "section": "Model transfer: Can transfer",
+      "verdict": "unverifiable",
+      "evidence": "Neither accessible primary abstract provides chip counts, sporangium counts or specimen identifiers; press figures cannot establish the analytical sample.",
+      "source": "[Bonacorsi et al. 2020](https://doi.org/10.1016/j.cub.2020.03.040) and [2021](https://doi.org/10.1086/712356), abstracts only; both original full texts inaccessible."
+    },
+    {
+      "claim": "\"Pooled spore diameter of 65-280 µm, small class 70-150 µm and large class 200-280 µm, trilete, equal maturity\"",
+      "section": "Model transfer: Can transfer",
+      "verdict": "unverifiable",
+      "evidence": "Secondary summaries supply this bundle; original measurements and maturity criteria remain inaccessible. The authors' later paper independently confirms only the 280 µm maximum.",
+      "source": "[Bonacorsi et al.](https://doi.org/10.1086/712356), abstract only; [Leslie and Bonacorsi](https://doi.org/10.1017/pab.2021.44), full text; [Bek and Goswami](https://doi.org/10.2478/fbgp-2022-0002), full text, secondary account."
+    },
+    {
+      "claim": "\"two rows of lateral sporangia ... lenticular sporangia ... a Barinophytaceae member in Lycophytina\"",
+      "section": "Front matter: traits.sporangium_position; Model transfer: Can transfer",
+      "verdict": "supported",
+      "evidence": "The description supports two lateral rows; the phylogenetic study supports lenticular, vertically flattened sporangia and the stated placement.",
+      "source": "[Bonacorsi et al.](https://doi.org/10.1086/712356), abstract only; [Claisse et al.](https://doi.org/10.1093/aob/mcaf146), full text read."
+    },
+    {
+      "claim": "\"Timing: Emsian, on the Campbellton basal spore zone and the underlying 407.4 ± 0.8 Ma rhyolite\"",
+      "section": "Model transfer: Can transfer",
+      "verdict": "overstated",
+      "evidence": "These establish regional context, not the specimen horizon. The original abstract provides an early Emsian assignment without identifying its supporting samples.",
+      "source": "[Bonacorsi et al.](https://doi.org/10.1086/712356), abstract only; [Miller et al.](https://doi.org/10.4138/atlgeol.2012.002) and [Wellman](https://doi.org/10.1016/j.revpalbo.2017.11.003), full texts read."
+    },
+    {
+      "claim": "\"Functional heterospory: sex, germination, gametophyte size and endospory are unobserved; micro- and megaspore labels are inference\"",
+      "section": "Model transfer: Cannot transfer",
+      "verdict": "unverifiable",
+      "evidence": "Accessible primary accounts infer an intermediate reproductive state from spore sizes; comprehensive absence of gametophyte observations requires the inaccessible original description.",
+      "source": "[Bonacorsi et al.](https://doi.org/10.1086/712356), abstract only; [Leslie and Bonacorsi](https://doi.org/10.1017/pab.2021.44), full text read."
+    },
+    {
+      "claim": "\"Spore number or mass per sporangium, sporangium size, sporangia per strobilus, spore output per plant: none is in the abstract\"",
+      "section": "Model transfer: Cannot transfer",
+      "verdict": "supported",
+      "evidence": "The abstract provides none of these measurements. This supports withholding parameters, without establishing that the full paper lacks them.",
+      "source": "[Bonacorsi et al.](https://doi.org/10.1086/712356), abstract only."
+    },
+    {
+      "claim": "\"Any whole-plant trait ... unreported, because only strobili are described\"",
+      "section": "Front matter: null dimensions and unknown vegetative traits; Model transfer: Cannot transfer",
+      "verdict": "unverifiable",
+      "evidence": "No whole-plant dimensions or vegetative anatomy appear in the abstract; whether the full description reports any such information could not be checked.",
+      "source": "[Bonacorsi et al.](https://doi.org/10.1086/712356), abstract only; full text inaccessible."
+    },
+    {
+      "claim": "\"Prevalence and rate: one taxon at one formation; no population, per-plant or between-strobilus variance is available\"",
+      "section": "Model transfer: Cannot transfer",
+      "verdict": "unverifiable",
+      "evidence": "The abstract identifies one species and formation, but supplies no sampling hierarchy; unavailable full text prevents checking between-strobilus variance.",
+      "source": "[Bonacorsi et al.](https://doi.org/10.1086/712356), abstract only; original data and supplement inaccessible."
+    },
+    {
+      "claim": "\"The later barinophyte size classes ... are other species ... and Chaleuria cirrosa's classes ... belong to a plant of different affinity\"",
+      "section": "Model transfer: Cannot transfer; Chosen to contrast",
+      "verdict": "supported",
+      "evidence": "The authors distinguish early Omniastrobus from Frasnian demonstrably heterosporous barinophytes and place Chaleuria as a likely stem euphyllophyte.",
+      "source": "[Leslie and Bonacorsi](https://doi.org/10.1017/pab.2021.44), full text read. Individual historical measurements and sites were not independently verified."
+    },
+    {
+      "claim": "\"the two size sets share one dispersed morphotype, so bimodality is invisible in palynological compilations\"",
+      "section": "Model transfer: Cannot transfer",
+      "verdict": "overstated",
+      "evidence": "Shared morphology prevents assigning size classes to one parent plant; it does not erase measured size bimodality. The authors discuss dispersed-size distributions.",
+      "source": "[Leslie and Bonacorsi](https://doi.org/10.1017/pab.2021.44), full text read; [Bek](https://doi.org/10.2478/fbgp-2025-0001), full text, secondary morphotype assignment. Distinction is an audit inference."
+    },
+    {
+      "claim": "\"about 1 km thick\"; western coastal-deltaic beds and eastern \"wetland, alluvial-plain and lacustrine\" environments",
+      "section": "Front matter: habitat; Ecology and physiology",
+      "verdict": "supported",
+      "evidence": "Sedimentological work documents approximately kilometre-scale thickness and contrasting basin facies; none establishes the living habitat of Omniastrobus itself.",
+      "source": "[Kennedy thesis](https://hdl.handle.net/10222/14166), abstract only; [Kennedy and Gibling](https://doi.org/10.1139/e11-055) and [Miller et al.](https://doi.org/10.4138/atlgeol.2012.002), full texts read."
+    },
+    {
+      "claim": "\"Kennedy infers a hiatus of 3-5 Myr\"",
+      "section": "Age and distribution",
+      "verdict": "unverifiable",
+      "evidence": "The thesis full text could not be retrieved. Its published counterpart estimates about five million years, not an explicit 3–5 Myr interval.",
+      "source": "[Kennedy thesis](https://hdl.handle.net/10222/14166), abstract only; [Kennedy and Gibling](https://doi.org/10.1139/e11-055), full text read."
+    }
+  ],
+  "omissions": [
+    "Wellman (2018) provides original palynological sampling and revised correlations absent from the card: some eastern beds are late Pragian–possibly earliest Emsian, others early Emsian, and upper beds late Emsian–possibly earliest Eifelian. The formation cannot supply a uniform species age without specimen-to-bed linkage. Full text: https://doi.org/10.1016/j.revpalbo.2017.11.003.",
+    "Claisse et al.'s taxon-stability statistic measures similarity of divergence-node ranks between trees, not statistical support for the placement. Their parsimony and Bayesian Lycophytina trees share only 43.6% of nodes; low taxon instability should not imply uniformly secure relationships. Full text: https://doi.org/10.1093/aob/mcaf146.",
+    "Leslie and Bonacorsi distinguish morphological heterospory, sexual differentiation and endospory. Their barrier hypothesis concerns the combined evolution of large spores and endosporic development; spanning a diameter interval alone does not demonstrate that functional transition. Full text: https://doi.org/10.1017/pab.2021.44.",
+    "The same paper reports no clear temporal increase in spore diameter within its sampled lycophytes or euphyllophytes, with sparse sampling. This limits the card's proposed within-lineage progression, although it does not directly test a barinophyte-only trajectory. Full text: https://doi.org/10.1017/pab.2021.44.",
+    "Bek explicitly modifies earlier descriptions using current terminology and cites the 2020 letter while giving pages 199–205, which do not belong to that letter. His sculpture and morphotype assignments therefore require tracing to the original specimens rather than treating the summaries as independent measurements. Full text: https://doi.org/10.2478/fbgp-2025-0001."
+  ],
+  "model_transfer_assessment": "Reproductive-strategy is the appropriate contrast, particularly continuous variation versus sharply separated spore-size classes. The transferable architecture and broad spore-size pattern are species-linked, but the card lacks verified specimen identifiers, sampling hierarchy, maturity criteria and measurements demonstrating the full gradient within one identified strobilus. Its exclusions of whole-plant parameters, reproductive output and functional sex are sensible safeguards, but several statements turn unavailable information into assertions of biological absence. Separate the authors' early Emsian assignment from independent specimen-level dating; treat gradual evolutionary crossing as a hypothesis; replace palynological 'invisibility' with inability to establish common parentage or intrasporangial association.",
+  "overall": "The card accurately conveys the accessible description's central findings and is unusually explicit about limited reading, but several transfer statements exceed that evidence. Retain it as a provisional comparative exemplar; quantitative calibration requires the original description, supplement and specimen-linked measurements, while the dating rationale and dispersed-spore limitation need tighter wording."
+}

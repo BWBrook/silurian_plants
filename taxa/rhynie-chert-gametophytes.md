@@ -9,6 +9,7 @@ lineage: >-
   Nothia), i.e. of stem-group polysporangiophytes; attributions rest on tissue similarity and
   co-occurrence, not organic connection.
 placement_confidence: medium
+contrasts: [sporophyte-independence, reproductive-strategy, fungal-nutrition]
 range:
   first: Pragian
   last: Emsian
@@ -145,7 +146,7 @@ Rhynie chert: hot-spring silica sinter in a half-graben on the Old Red Sandstone
 
 ## Affinity and controversies
 
-The assignments are not demonstrated by organic continuity. Earlier readings of Rhynia axes, hemispherical projections and cut stomata as gametangia were refuted when Rhynia sporangia were found (Kerp 2017). Remy (1982) noted that the gametophytes suggest a closer relationship between bryophytes and tracheophytes than the sporophytes alone. Sciadophyton and Calyculiphyton compressions of the Early Devonian are interpreted as similar gametophytes (Remy et al. 1993; Taylor et al. 2005).
+The assignments are not demonstrated by organic continuity. Earlier readings of Rhynia axes, hemispherical projections and cut stomata as gametangia were refuted when Rhynia sporangia were found (Kerp 2017). Remy (1982) noted that the gametophytes suggest a closer relationship between bryophytes and tracheophytes than the sporophytes alone. Sciadophyton and Calyculiphyton compressions of the Early Devonian are interpreted as similar gametophytes (Remy et al. 1993; Taylor et al. 2005); no sporophyte is connected to Sciadophyton and its precise affinity is unresolved (see [Sciadophyton](sciadophyton.md)).
 
 The life-cycle question is open and partly semantic. Kerp (2017) calls the generations isomorphic although the gametophyte is much smaller, with smaller cells and stomata. Kenrick and Crane (1991) argued that isomorphic alternation in protracheophytes and Rhyniaceae implies the gametophytes of extant pteridophytes are reduced. Remy et al. (1993) read the data as support for the homologous theory "to some extent" but also for the antithetic theory; Gerrienne and Gonez (2010) conclude that all fossil evidence supports the antithetic theory, with the gametophyte:sporophyte size and complexity ratio falling gradually along the land-plant tree. Gerrienne et al. (2006) hypothesised from one Cooksonia paranensis specimen that eutracheophytes are heteromorphic and sporophyte-dominant while the Rhyniopsida are isomorphic. Niklas and Kutschera (2009) instead call the oldest land plants, including Rhynia and Cooksonia, dimorphic. Ligrone et al. (2012) reconstruct the last common ancestor of land plants as an axial gametophyte bearing a simple single-sporangium sporophyte.
 
@@ -161,6 +162,20 @@ Gametophytes were free-living, apparently photosynthetic (cuticle, stomata) and 
 - Post-fertilisation development (embryo to sporophyte) is essentially unobserved, so it remains a free parameter.
 - Boyce (2008) argues the smallest Cooksonia axes depended on a gametophyte, so sporophyte independence was established somewhere between such axes and Rhynie-sized plants (an inference).
 - Homeodomain genes regulate the haploid-to-diploid transition in chlorophyte algae and fungi and are implicated in land-plant alternation of generations (Bowman et al. 2016).
+
+## Model transfer
+
+**Chosen to contrast:** Contrast complex, free-living gametophytes with larger independent sporophytes, using anatomically preserved Rhynie plants that retain separate sexes and fungal associations.
+
+- **Can transfer:**
+  - Lyonophyton rhyniense antheridiophores, Rhynie chert: at least 2 cm tall and 2 mm wide, bearing 10 to 40 antheridia up to 600 µm across, constrain male reproductive architecture (Taylor et al. 2005; Kerp 2017).
+  - Remyophyton delicatum, one in situ Rhynie stand: over 200 individuals in 1.5 × 1.5 cm constrain observed clustering, without establishing typical population density (Taylor et al. 2005).
+  - Lyonophyton rhyniense, Rhynie chert: Glomites arbuscules support including a gametophyte–fungus association; nutrient dependence and exchange rates remain unmeasured (Taylor et al. 2005).
+- **Cannot transfer:**
+  - Do not parameterise embryonic provisioning, duration of attachment or the transition to sporophyte independence from these fossils: post-fertilisation development is essentially unobserved.
+  - Do not treat gametophyte–sporophyte assignments as demonstrated attachments; their evidential basis is tissue resemblance and association.
+  - Do not turn counts of identified Remyophyton gametangiophores into a population sex ratio; this card explicitly distinguishes those quantities.
+  - Do not encode conducting-cell wall types as independently observed gametophyte hydraulics; this card derives wall identity from the matched sporophyte.
 
 ## Open questions
 

@@ -9,6 +9,7 @@ lineage: >-
   moss-like columellate, branched sporangia; occupies an isolated position among early land plants
   in the analyses of Kenrick and Crane cited by Kerp (2017).
 placement_confidence: low
+contrasts: [water-transport, fungal-nutrition, reproductive-strategy]
 range:
   first: Pragian
   last: Emsian
@@ -147,6 +148,22 @@ Horneophyton stands were commonly monospecific on sandy and organic-rich ground 
 - A corm acts as a storage and regeneration organ, so axes can be lost to flood or sinter pulses and regrown (an inference from form, not observed).
 - Euramerican distribution through spores allows a range-size and persistence estimate for a plant with known life cycle.
 - A moss-like sporangium on a stomatal, cuticularised plant tests whether sporangial characters evolved independently of axial ones.
+
+## Model transfer
+
+**Chosen to contrast:** Separate stomatal and conducting-axis evolution from moss-like sporangial architecture using a Rhynie plant that also hosts two anatomically distinct fungal associations.
+
+- **Can transfer:**
+  - H. lignieri, Rhynie chert axes: stomata 120 to 180 um long and 70 to 115 um wide constrain stomatal geometry, without supplying conductance (Kerp 2017).
+  - H. lignieri, Rhynie chert sporangia: two to four columellate lobes share one sporogenous cavity; use this branched reproductive architecture (Eggert 1974).
+  - H. lignieri mature spores from Rhynie: 39 to 49 um in Eggert (1974), versus 39 to 45 um in Kerp (2017); retain source-specific ranges.
+  - H. lignieri, Rhynie chert: two endophytes occupy corm/base versus aerial outer cortex; represent tissue-specific colonisation rather than a uniform symbiont compartment (Strullu-Derrien et al. 2014).
+- **Cannot transfer:**
+  - Do not treat either fungal association as a measured nutritional benefit or obligatory mutualism; benefit remains an unconstrained parameter.
+  - Do not assign observed regeneration or disturbance-recovery rates to the corm: regrowth is an inference from form.
+  - Do not extrapolate a uniform tracheid wall type or hydraulic efficiency throughout the plant: distal cells are hydroid-like, wall type is unassigned, and the corm lacks conducting cells.
+  - Do not treat Langiophyton mackiei as an organically demonstrated life-cycle connection or infer parental dependence from the association.
+  - Do not use the 20 cm height and 2 mm diameter as verified primary measurements: both derive from the unreviewed Aberdeen resource.
 
 ## Open questions
 

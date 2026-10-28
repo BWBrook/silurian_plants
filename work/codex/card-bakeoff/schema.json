@@ -1,0 +1,22 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["items"],
+  "properties": {
+    "items": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["slug", "markdown", "key_claims", "partly_read_sources", "doubts"],
+        "properties": {
+          "slug": {"type": "string"},
+          "markdown": {"type": "string"},
+          "key_claims": {"type": "array", "items": {"type": "object", "additionalProperties": false, "required": ["claim", "source"], "properties": {"claim": {"type": "string"}, "source": {"type": "string"}}}},
+          "partly_read_sources": {"type": "array", "items": {"type": "object", "additionalProperties": false, "required": ["citation", "doi", "would_settle"], "properties": {"citation": {"type": "string"}, "doi": {"type": "string"}, "would_settle": {"type": "string"}}}},
+          "doubts": {"type": "string"}
+        }
+      }
+    }
+  }
+}

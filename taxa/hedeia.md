@@ -9,6 +9,7 @@ lineage: >-
   secondary branches carry elongate sporangia at about one level. Placement unresolved (trimerophyte
   grade, advanced rhyniophyte, rhyniophytoid or progymnosperm precursor have all been proposed).
 placement_confidence: low
+contrasts: [reproductive-strategy, record-timing]
 range:
   first: Lochkovian
   last: Emsian
@@ -97,6 +98,21 @@ Nothing direct. The material is transported and gives no information on habit, w
 - **Traits.** Fructification size 10-25 mm and sporangia 5-9 mm long give the larger end of the compound-fertile-unit range; the sporangium count per fructification is not stated for Y. corymbosa in the source read.
 - **Geography (F4).** The only formally described species outside Victoria is Y. sinica; Tasmanian and Kazakh records are unverified. Without spores, shared genus-level presence cannot be turned into a dispersal constraint, and convergence is an open alternative (McSweeney et al. 2021).
 - **Record (F3).** Hedeia cannot be used as evidence for a Silurian origin of compound fertile units unless the Yea beds are shown to be Silurian.
+
+## Model transfer
+
+**Chosen to contrast:** Contrast compound terminal fertile units with simpler reproductive architectures using corymb-like fructifications, while testing how revised dating changes their apparent first appearance.
+
+- **Can transfer:**
+  - Axis diameter of Y. (=Hedeia) corymbosa from Alexandra: 1.5-3.25 mm; retain this species separately from Y. sinica (McSweeney et al. 2021, reproduced in McSweeney 2024).
+  - Axis diameter of Y. sinica from Yunnan: 0.8-1.5 mm; use a separate species parameter (McSweeney et al. 2021, reproduced in McSweeney 2024).
+  - Y. (=Hedeia) corymbosa, Alexandra material: fructifications 10-20 mm wide and 10-25 mm high, with sporangia 1.0-2.0 by 5.0-9.0 mm, constrain fertile-unit geometry (McSweeney et al. 2021, reproduced in McSweeney 2024).
+  - Y. sinica, Yunnan material: sporangia 0.3-0.5 by 2.0-3.0 mm on an inverted-umbrella fructification provide a separate reproductive geometry (Hao & Gensel 1998; McSweeney et al. 2021).
+- **Cannot transfer:**
+  - Do not assign the at least 28 cm height of NMV P236587 to Y. corymbosa: the Eglinton Cutting specimen is Y. oblonga.
+  - Do not parameterise hydraulic performance, stomatal control or vascular anatomy: spores, cuticle and tracheids are unknown, rather than demonstrated absent.
+  - Do not derive spore output from fertile-unit dimensions: even the sporangium count per Y. corymbosa fructification is unstated.
+  - Do not use Hedeia as a demonstrated Silurian origin of compound fertile units: the Yea chronology remains unresolved.
 
 ## Open questions
 

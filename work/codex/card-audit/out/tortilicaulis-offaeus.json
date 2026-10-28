@@ -1,0 +1,187 @@
+{
+  "items": [
+    {
+      "claim": "“Early-diverging tracheophyte, stem or crown group unresolved”",
+      "section": "Front matter: lineage; Model transfer: cannot transfer",
+      "verdict": "supported",
+      "evidence": "The authors explicitly retain uncertainty over phylogenetic position.",
+      "source": "[Morris et al. 2024](https://doi.org/10.37520/fi.2024.012), abstract and p. 141; abstract and indexed full-text passages read, not the complete PDF."
+    },
+    {
+      "claim": "“scored a horneophyte by Kenrick & Crane (1997)”",
+      "section": "Front matter: lineage; Affinity and controversies; Model transfer",
+      "verdict": "misattributed",
+      "evidence": "The cited Nature review refers detailed phylogenetic analysis to their separate 1997 monograph; the card should distinguish these publications.",
+      "source": "[Kenrick & Crane 1997](https://fire.biol.wwu.edu/cmoyer/zztemp_fire/biol432_W00/papers/plant_origins99.pdf), full-text review consulted, particularly Box 1 and reference 26."
+    },
+    {
+      "claim": "“first: Lochkovian”; “last: Lochkovian”; “middle sub-zone … early to middle Lochkovian”",
+      "section": "Front matter: range; Model transfer: occurrence",
+      "verdict": "supported",
+      "evidence": "The methods give this horizon and palynological assignment.",
+      "source": "[Morris et al. 2024](https://doi.org/10.37520/fi.2024.012), p. 138; indexed full-text methods read. Richardson & McGregor 1986 was not independently read."
+    },
+    {
+      "claim": "“The Lochkovian spans 419.62-413.02 Ma”",
+      "section": "Front matter: range.notes",
+      "verdict": "supported",
+      "evidence": "ICS gives 419.62 ± 1.36 and 413.02 ± 1.91 Ma; these are stage boundaries, not specimen dates.",
+      "source": "[ICS chart, December 2024](https://stratigraphy.org/ICSchart/ChronostratChart2024-12.pdf), complete chart text read; repository data/timescale.csv also checked."
+    },
+    {
+      "claim": "“T. transwalliensis comes from the Pridoli … and … lower Lochkovian Targrove Quarry”; “Neither has anatomy”",
+      "section": "Front matter: range.notes",
+      "verdict": "unverifiable",
+      "evidence": "Morris repeats these records, but accessible original-source abstracts do not settle all locality, age, branching and anatomical details.",
+      "source": "[Edwards 1979](https://palass.org/sites/default/files/media/publications/palaeontology/volume_22/vol22_part1_pp23-52.pdf), abstract only readable; [Fanning et al. 1992](https://doi.org/10.1111/j.1095-8339.1992.tb00264.x), abstract only; Morris 2024 historical discussion read."
+    },
+    {
+      "claim": "“HD(L)138/06 … 2.9 mm long”; “Whole-plant height, rooting, gametophyte or life cycle” cannot transfer",
+      "section": "Front matter: height_cm, rooting, gametophyte; Model transfer",
+      "verdict": "supported",
+      "evidence": "A fragment length cannot establish whole-plant dimensions or generations.",
+      "source": "[Morris et al. 2024](https://doi.org/10.37520/fi.2024.012), pp. 137 and 140; indexed full-text passages read. The transfer restriction is an inference."
+    },
+    {
+      "claim": "“0.06-0.14 mm for the species”; “type species … 0.1-0.4 mm”",
+      "section": "Front matter: axis_diameter_mm",
+      "verdict": "supported",
+      "evidence": "Both ranges appear in Morris’s historical summary.",
+      "source": "[Morris et al. 2024](https://doi.org/10.37520/fi.2024.012), p. 137; indexed full-text passage read. Original measurements were not independently checked."
+    },
+    {
+      "claim": "“min: 0.06, max: 0.17”; scanned stems “0.095-0.17 mm”; specimen widths “0.11”, “0.115-0.17”, “0.12-0.16”, “0.095-0.15”; “0.55 um, an evident slip”",
+      "section": "Front matter: axis_diameter_mm",
+      "verdict": "unverifiable",
+      "evidence": "Accessible text confirms HD248/03, HD(L)138/06 and the printed 0.55 µm; the remaining widths and intended correction remain unchecked.",
+      "source": "[Morris et al. 2024](https://fi.nm.cz/wp-content/uploads/2024/11/12_Morris.pdf), pp. 138 and 140 indexed full-text passages read; complete PDF retrieval failed, leaving p. 139 unavailable."
+    },
+    {
+      "claim": "“125 degrees”; “144 degrees”; “at least two dichotomies, 0.42-1 mm apart”",
+      "section": "Front matter: branching; Model transfer: architecture",
+      "verdict": "unverifiable",
+      "evidence": "Branching is documented, but the accessible passages did not expose these angle and internode measurements.",
+      "source": "[Morris et al. 2024](https://fi.nm.cz/wp-content/uploads/2024/11/12_Morris.pdf), indexed full-text descriptions and plate captions read; relevant p. 139 measurements could not be retrieved."
+    },
+    {
+      "claim": "“leaves: … absent”; “Smooth, naked stems”",
+      "section": "Front matter: leaves",
+      "verdict": "supported",
+      "evidence": "The descriptions explicitly characterise the stems as naked.",
+      "source": "[Morris et al. 2024](https://doi.org/10.37520/fi.2024.012), pp. 136–137; indexed full-text passages read."
+    },
+    {
+      "claim": "“Pores with two collapsed guard cells in HD743/01 … and in NMW 99.11G.1”; “stomata on stems”",
+      "section": "Front matter: stomata; Model transfer: can transfer",
+      "verdict": "supported",
+      "evidence": "Both specimens have illustrated stomatal evidence.",
+      "source": "[Morris et al. 2024](https://doi.org/10.37520/fi.2024.012), p. 137 and plate captions on pp. 145–146; indexed full-text passages read."
+    },
+    {
+      "claim": "“regularly spaced internal wall thickenings … in the stems of four of five specimens”",
+      "section": "Front matter: conducting_tissue",
+      "verdict": "unverifiable",
+      "evidence": "The accessible results establish unequal evidence quality, but do not settle the stated four-of-five tally.",
+      "source": "[Morris et al. 2024](https://fi.nm.cz/wp-content/uploads/2024/11/12_Morris.pdf), indexed full-text results and discussion read; complete specimen descriptions unavailable."
+    },
+    {
+      "claim": "“HD743/01 … 40-120 × 7.5-12.5 um”; thickenings “1-1.7 um … 1.4-2.5 um apart”",
+      "section": "Front matter: conducting_tissue; Model transfer: can transfer",
+      "verdict": "supported",
+      "evidence": "The results give these approximate, preservation-qualified measurements.",
+      "source": "[Morris et al. 2024](https://doi.org/10.37520/fi.2024.012), p. 140; indexed full-text results read."
+    },
+    {
+      "claim": "“use as a minimal tracheid-bearing axis and a calibre for a conducting file”",
+      "section": "Model transfer: can transfer",
+      "verdict": "overstated",
+      "evidence": "Cell measurements establish neither a biological minimum nor a complete conducting-file geometry.",
+      "source": "[Morris et al. 2024](https://doi.org/10.37520/fi.2024.012), pp. 140–141; indexed full-text passages read. Verdict concerns the card’s modelling inference."
+    },
+    {
+      "claim": "“terminal … 0.25-0.96 mm long and 0.18-0.44 mm wide”; “bifurcating sporangium … HD(L)138/06”; “two valves”",
+      "section": "Front matter: sporangium_position",
+      "verdict": "unverifiable",
+      "evidence": "Accessible descriptions confirm terminal and bifurcating sporangia, valves and length endpoints; the 0.44 mm width maximum remains unchecked.",
+      "source": "[Morris et al. 2024](https://fi.nm.cz/wp-content/uploads/2024/11/12_Morris.pdf), pp. 137–138 and 140–141 indexed full-text passages read; p. 139 unavailable."
+    },
+    {
+      "claim": "“12-20 um … HD743/01 and HD(L)138/05”; “15-19 um … against 43-49 um in the type species”",
+      "section": "Front matter: spores; Model transfer: can transfer",
+      "verdict": "supported",
+      "evidence": "The reported measurements and historical comparison match.",
+      "source": "[Morris et al. 2024](https://doi.org/10.37520/fi.2024.012), pp. 137 and 140; indexed full-text passages read. Older species ranges checked only through this summary."
+    },
+    {
+      "claim": "“separating tetrads in HD248/03 and HD743/01”",
+      "section": "Front matter: spores; Model transfer: can transfer",
+      "verdict": "unverifiable",
+      "evidence": "Separating tetrads are confirmed for HD743/01; the corresponding HD248/03 description was not accessible.",
+      "source": "[Morris et al. 2024](https://fi.nm.cz/wp-content/uploads/2024/11/12_Morris.pdf), p. 140 indexed full-text results read; relevant continuation for HD248/03 unavailable."
+    },
+    {
+      "claim": "“HD743/01, HD(L)138/05, HD(L)138/06 and HD270/01 … sporangia 0.25-0.96 mm”",
+      "section": "Model transfer: can transfer",
+      "verdict": "imprecise",
+      "evidence": "The upper endpoint belongs to HD248/03, omitted here.",
+      "source": "[Morris et al. 2024](https://doi.org/10.37520/fi.2024.012), p. 138; indexed full-text specimen description read."
+    },
+    {
+      "claim": "“water-transport and record-timing”; “Ludlow and Lochkovian Cooksonia already carry tracheids”",
+      "section": "Model transfer: chosen contrast",
+      "verdict": "supported",
+      "evidence": "Earlier Ludlow vascular evidence and Lower Devonian C. pertoni tracheary elements support the timing contrast; they are separate occurrences.",
+      "source": "[Edwards & Davies 1976](https://doi.org/10.1038/263494a0), abstract only; [Edwards et al. 1992](https://orca.cardiff.ac.uk/id/eprint/10173/), abstract only."
+    },
+    {
+      "claim": "“G, S or P class is undetermined”; “‘annular’ is the authors’ reading”",
+      "section": "Front matter: conducting_tissue; Model transfer: cannot transfer",
+      "verdict": "supported",
+      "evidence": "Annular interpretation does not establish diagnostic wall ultrastructure.",
+      "source": "[Morris et al. 2024](https://doi.org/10.37520/fi.2024.012), abstract and p. 141; abstract and indexed full-text discussion read. The appended four-specimen qualification was not fully verified."
+    },
+    {
+      "claim": "“Any trait” cannot transfer “to the type species … or to the genus as a whole”",
+      "section": "Model transfer: cannot transfer",
+      "verdict": "overstated",
+      "evidence": "Shared morphology is documented; automatic anatomical extrapolation remains unjustified.",
+      "source": "[Morris et al. 2024](https://doi.org/10.37520/fi.2024.012), p. 137; indexed full-text historical comparison read."
+    },
+    {
+      "claim": "“Hydraulic conductance, lumen diameter, lignification or water-use values” cannot transfer",
+      "section": "Model transfer: cannot transfer",
+      "verdict": "supported",
+      "evidence": "The observations do not supply these physiological parameters.",
+      "source": "[Morris et al. 2024](https://doi.org/10.37520/fi.2024.012), pp. 140–141; indexed full-text results and discussion read. This is a justified transfer restriction."
+    },
+    {
+      "claim": "“Autonomy or independence … not addressed”; “axes are narrower than any in the group card”",
+      "section": "Model transfer: cannot transfer",
+      "verdict": "imprecise",
+      "evidence": "The group card includes T. offaeus itself; physiological dependence has published size-based arguments, although autonomy is not directly observed.",
+      "source": "taxa/rhyniophytoids.md, relevant front matter read; [Boyce 2008](https://doi.org/10.1666/0094-8373(2008)034%5B0179:HGWCTI%5D2.0.CO;2), publisher abstract and indexed full-text excerpts read."
+    },
+    {
+      "claim": "“Tortilicaulis-type plants were ancestral to the trimerophytes remains unproven”",
+      "section": "Affinity and controversies",
+      "verdict": "supported",
+      "evidence": "The authors explicitly reject treating architectural resemblance as proof.",
+      "source": "[Morris et al. 2024](https://doi.org/10.37520/fi.2024.012), abstract and p. 141; abstract and indexed full-text discussion read. Gerrienne 1997 was not independently read."
+    },
+    {
+      "claim": "“heterospory … unknown”; “One size range is reported; heterospory was not tested”",
+      "section": "Front matter: heterospory",
+      "verdict": "unverifiable",
+      "evidence": "Unknown is defensible, but accessible passages cannot establish that heterospory was never tested across the cited studies.",
+      "source": "[Morris et al. 2024](https://doi.org/10.37520/fi.2024.012), indexed full-text spore descriptions read; [Edwards et al. 1994](https://doi.org/10.1006/bojl.1994.1055), abstract only."
+    }
+  ],
+  "omissions": [
+    "Preservational distortion should explicitly qualify model inputs, especially dimensions treated as biological limits.",
+    "Selection favoured complete, well-preserved specimens with little visible pyrite; the sample cannot define population distributions.",
+    "Apiculiretusispora assignment needs its unusual proximal ornamentation caveat. [Morris et al. 2024](https://doi.org/10.37520/fi.2024.012), indexed full-text p. 137.",
+    "Boyce’s physiological-dependence hypothesis deserves discussion as a model-based alternative, not an observed life history. [Boyce 2008](https://doi.org/10.1666/0094-8373(2008)034%5B0179:HGWCTI%5D2.0.CO;2), abstract and indexed full-text excerpts."
+  ],
+  "model_transfer_assessment": "The chosen contrasts are appropriate. Transferable observations need a specimen-by-variable mapping: the present architecture bullet mixes its named specimens with an endpoint from another specimen. Most exclusions are sensible, but replace “minimal” with “observed small-axis example”, distinguish shared morphology from anatomical extrapolation, and avoid deriving conducting-file or hydraulic geometry from cell width alone.",
+  "overall": "The card preserves useful distinctions between observation, interpretation and extrapolation, but needs corrections to specimen attribution, the Kenrick–Crane citation and two modelling statements. This is a partial source audit: inaccessible PDF passages leave several numerical claims unverified, so it does not justify marking the card reviewed.\n\n"
+}

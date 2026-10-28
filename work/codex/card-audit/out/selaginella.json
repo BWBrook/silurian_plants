@@ -1,0 +1,190 @@
+{
+  "items": [
+    {
+      "claim": "“Selaginellales … sister to Isoetales … sister to the homosporous Lycopodiales”; “About 750 species”; “seven subfamilies and 19 genera”.",
+      "section": "Front matter: lineage; Affinity and controversies",
+      "verdict": "supported",
+      "evidence": "The cited classification gives this backbone, over 750 species, and seven subfamilies containing 19 genera; conservation with a replacement type is proposed.",
+      "source": "[Zhou and Zhang 2023](https://html.rhhz.net/PDR/html/1703759774747-1401973599.htm), full text, introduction and taxonomic treatment."
+    },
+    {
+      "claim": "“The oldest unquestionable Selaginellales macrofossils are Carboniferous”: “resimus”, “labutae”; resimus used to “fix a split at 330–350 Ma”.",
+      "section": "Front matter: range.notes; Age and distribution",
+      "verdict": "supported",
+      "evidence": "Rowe specifies Upper Visean Drybrook material; Bek specifies Bolsovian Pennsylvanian material. Kang reports Klaus's 330–350 Ma calibration and disputes its placement.",
+      "source": "[Rowe 1988](https://palass.org/publications/palaeontology-journal/archive/31/1/article_pp69-83), abstract; [Bek et al. 2009](https://www.sciencedirect.com/science/article/abs/pii/S0034666707001649), abstract and indexed introduction; [Kang et al. 2024](https://academic.oup.com/mbe/article/41/8/msae153/7727339), indexed full-text methods passages."
+    },
+    {
+      "claim": "“S. suissei, Late Carboniferous about 304 Ma, bears a bisporangiate cone with apical microsporangia and basal megasporangia”.",
+      "section": "Front matter: range.notes; Model transfer: strobilus organisation",
+      "verdict": "unverifiable",
+      "evidence": "Kang repeats the age and organisation, but Zeiller's original description could not be retrieved; direct verification of the specimen and age remains incomplete.",
+      "source": "[Kang et al. 2024](https://academic.oup.com/mbe/article/41/8/msae153/7727339), indexed full-text methods passage; [Zeiller volume catalogue](https://field.biodiversitylibrary.org/bibliography/78205), bibliographic record only; original text inaccessible."
+    },
+    {
+      "claim": "“Albian–Cenomanian Kachin amber, about 100 Ma”; “14 Selaginella morphologies … Schmidt et al. 2020”.",
+      "section": "Front matter: range.notes and localities",
+      "verdict": "supported",
+      "evidence": "Schmidt reports 14 earlier morphologies, late Albian biostratigraphy and an approximately 99 Ma zircon constraint; its own study distinguishes 21 fossil species.",
+      "source": "[Schmidt et al. 2022](https://doi.org/10.3372/wi.52.52203), indexed full-text introduction, provenance and results passages; direct publisher access was blocked."
+    },
+    {
+      "claim": "“The molecular stem lineage … about 383 Ma”.",
+      "section": "Front matter: range.notes; Age and distribution; Model transfer: ordering of divergences",
+      "verdict": "supported",
+      "evidence": "Klaus's Table 1 gives a Selaginella stem age of 383 Ma, interval 374–393 Ma, and crown age of 373 Ma, interval 354–387 Ma.",
+      "source": "[Klaus et al. 2017](https://www.researchgate.net/publication/311712374_Historical_biogeography_of_the_ancient_lycophyte_genus_Selaginella_early_adaptation_to_xeric_habitats_on_Pangea), indexed full-text Table 1; complete article retrieval failed."
+    },
+    {
+      "claim": "“homosporous–heterosporous lycophyte split … 403.3 Ma (95% HPD 394–414)”; lycophyte–euphyllophyte split “431.5 Ma (426–440)”.",
+      "section": "Front matter: range.notes; Age and distribution; Why it matters for modelling",
+      "verdict": "supported",
+      "evidence": "These are the reported divergence estimates and 95% HPD intervals from the preferred random-local-clock analysis.",
+      "source": "[Testo et al. 2018](https://www.uvm.edu/~dbarring/publications/testo2018-2.pdf), full text, results."
+    },
+    {
+      "claim": "“Ordering of divergences: stem about 383 Ma, crown about 304 Ma … first superclade split about 268 Ma”; crown age “set by” calibration.",
+      "section": "Model transfer: can transfer and cannot transfer; Affinity and controversies: dating",
+      "verdict": "imprecise",
+      "evidence": "Kang calibrates the crown using 304 Ma and estimates approximately 268 Ma internally; Klaus's 383 Ma stem accompanies a different, 373 Ma crown.",
+      "source": "[Kang et al. 2024](https://academic.oup.com/mbe/article/41/8/msae153/7727339), indexed full-text methods/results; [Klaus et al. 2017](https://www.researchgate.net/publication/311712374_Historical_biogeography_of_the_ancient_lycophyte_genus_Selaginella_early_adaptation_to_xeric_habitats_on_Pangea), indexed full-text Table 1. Calibration settings in supplements were not inspected."
+    },
+    {
+      "claim": "“megaspores 150–1500 micrometres, microspores 15–50”; “500–1000” in Gymnogynum and “200–400” in Heterostachys and Pulviniella.",
+      "section": "Front matter: traits.spores; Morphology and anatomy; Model transfer: spore-size dimorphism",
+      "verdict": "supported",
+      "evidence": "Zhou and Zhang explicitly give all four ranges as literature summaries and subgeneric tendencies, without paired species-level measurements in that passage.",
+      "source": "[Zhou and Zhang 2023](https://html.rhhz.net/PDR/html/1703759774747-1401973599.htm), full text, introduction. Underlying measurement datasets were not fully accessible."
+    },
+    {
+      "claim": "“megaspore provisioning and endospory reverse the homosporous gametophyte–sporophyte relation”.",
+      "section": "In brief; Why it matters for modelling; Model transfer: chosen contrast",
+      "verdict": "overstated",
+      "evidence": "Endospory and provisioning reduce gametophyte autonomy, but the megagametophyte still nourishes the embryo; provisioning differs from continuing dependence on an attached sporophyte.",
+      "source": "[Hilger et al. 2005](https://www.zobodat.at/pdf/PHY_45_1_0001-0008.pdf), full text; [Meissner 2021](https://link.springer.com/article/10.1007/s00497-021-00420-5), full text; [Banks et al. 2011](https://pmc.ncbi.nlm.nih.gov/articles/PMC3166216/), full text, Figure 1."
+    },
+    {
+      "claim": "“Duration of the embryo phase: 2–6 weeks from megaspore germination to emergence”.",
+      "section": "Ecology and physiology: embryo; Model transfer: can transfer",
+      "verdict": "imprecise",
+      "evidence": "Hilger reports first emergence after three weeks in S. pilifera, four in S. martensii and six in S. kraussiana, following megaspore germination.",
+      "source": "[Hilger et al. 2005](https://www.zobodat.at/pdf/PHY_45_1_0001-0008.pdf), full text, results. [Renzaglia and Whittier 2013](https://pmc.ncbi.nlm.nih.gov/articles/PMC3783242/), indexed full-text discussion, gives the discrepant 2–6-week summary."
+    },
+    {
+      "claim": "“then independent”; “the sporophyte is independent on emergence”.",
+      "section": "In brief; Ecology and physiology: embryo; Model transfer: embryo duration",
+      "verdict": "overstated",
+      "evidence": "Renzaglia asserts independence at emergence; Hilger describes a persistent embedded foot and nutrient-uptake anatomy, without experimentally measuring cessation of nutritional dependence.",
+      "source": "[Renzaglia and Whittier 2013](https://pmc.ncbi.nlm.nih.gov/articles/PMC3783242/), indexed full-text discussion; [Hilger et al. 2005](https://www.zobodat.at/pdf/PHY_45_1_0001-0008.pdf), full text."
+    },
+    {
+      "claim": "“Placenta without transfer cells and a short embryonic dependence, in Selaginella species”.",
+      "section": "Ecology and physiology: embryo; Model transfer: can transfer",
+      "verdict": "supported",
+      "evidence": "Hilger documents placental cells lacking wall ingrowths and collapsed gametophyte cells; its material comprises S. martensii, S. pilifera and S. kraussiana.",
+      "source": "[Hilger et al. 2005](https://www.zobodat.at/pdf/PHY_45_1_0001-0008.pdf), full text, methods, results and Table 1. Short development is documented; nutritional-dependence duration is inferred."
+    },
+    {
+      "claim": "“one sporangium per sporophyll, mega- or micro- (S. moellendorffii)”; “large ventral sporophylls bearing either kind in S. apoda”.",
+      "section": "Front matter: traits.sporangium_position; Model transfer: strobilus organisation",
+      "verdict": "supported",
+      "evidence": "Banks's Figure 1 describes either sporangium type per strobilar microphyll; Schulz explicitly assigns either type to large ventral sporophylls.",
+      "source": "[Banks et al. 2011](https://pmc.ncbi.nlm.nih.gov/articles/PMC3166216/), full text and Figure 1 caption; [Schulz et al. 2010](https://www.journals.uchicago.edu/doi/10.1086/654902), abstract only."
+    },
+    {
+      "claim": "“Any intermediate state … the living genus cannot test intermediate heterospory”.",
+      "section": "Model transfer: cannot transfer",
+      "verdict": "overstated",
+      "evidence": "The sources establish differentiated spore types, not an exhaustive exclusion of variation; endpoint data can constrain transition models without representing an intermediate organism.",
+      "source": "[Zhou and Zhang 2023](https://html.rhhz.net/PDR/html/1703759774747-1401973599.htm), full text; [Kinosian 2026](https://bsapubs.onlinelibrary.wiley.com/doi/10.1002/ajb2.70248), full text. The modelling conclusion is an inference."
+    },
+    {
+      "claim": "“Megaspore reserves or provisioning as a quantity … inferred here from size”; tapetal nourishment “suggested for some species”.",
+      "section": "Model transfer: cannot transfer",
+      "verdict": "supported",
+      "evidence": "The cited passages provide dimensions rather than reserve quantities; Meissner explicitly presents tapetal nutrition as Slagg's suggestion for some species.",
+      "source": "[Zhou and Zhang 2023](https://html.rhhz.net/PDR/html/1703759774747-1401973599.htm), full text; [Meissner 2021](https://link.springer.com/article/10.1007/s00497-021-00420-5), full text. Slagg's original study was not retrieved."
+    },
+    {
+      "claim": "Cannot transfer “a Devonian value for ligules, rhizophores or strobilus organisation”.",
+      "section": "Model transfer: cannot transfer",
+      "verdict": "supported",
+      "evidence": "Sources document living trait variation and uncertain rhizophore ancestry; they provide no direct measurements of these characters in the proposed Devonian comparison.",
+      "source": "[Zhou and Zhang 2023](https://html.rhhz.net/PDR/html/1703759774747-1401973599.htm), full text; [Wyman et al.](https://doi.org/10.1093/aob/mcaf277), indexed full-text discussion. Transfer restriction is a justified inference."
+    },
+    {
+      "claim": "“Desiccation tolerance as a genus trait: it varies between close relatives (S. sellowii, S. silvestris)”.",
+      "section": "Habitat; Ecology and physiology; Model transfer: cannot transfer",
+      "verdict": "supported",
+      "evidence": "The study directly compares clonally propagated, desiccation-tolerant S. sellowii with sensitive S. silvestris and documents their contrasting dehydration responses.",
+      "source": "[Alejo-Jacuinde et al.](https://onlinelibrary.wiley.com/doi/10.1111/tpj.17169), full text, results and experimental procedures; published online in December 2024, journal issue 2025."
+    },
+    {
+      "claim": "“212.6 Mb … two haplotypes of about 106 Mb”; “x = 9 or 10 … 30”; these and absence of duplication cannot transfer, versus “9.6 Gb” in Ceratopteris.",
+      "section": "Morphology and anatomy; Model transfer: cannot transfer",
+      "verdict": "imprecise",
+      "evidence": "Genome figures and 30 chromosomes agree; Kang also reports x=8 in Heterostachys. Absence of detected ancient duplication concerns the sequenced S. moellendorffii genome.",
+      "source": "[Banks et al. 2011](https://pmc.ncbi.nlm.nih.gov/articles/PMC3166216/), full text; [Kang et al. 2024](https://academic.oup.com/mbe/article/41/8/msae153/7727339), indexed full-text cytological discussion; [Marchant et al. 2022](https://escholarship.org/content/qt8b7896w8/qt8b7896w8_noSplash_91b6889cbecd685cbeff36e0c5b09540.pdf), full text."
+    },
+    {
+      "claim": "“Mycorrhizal status: only three of 688 species have molecular data”.",
+      "section": "Ecology and physiology: fungi; Model transfer: cannot transfer",
+      "verdict": "supported",
+      "evidence": "The review states exactly this sampling count and explicitly leaves Mucoromycotina association possible; its table also includes non-symbiotic records.",
+      "source": "[Rimington et al. 2020](https://pmc.ncbi.nlm.nih.gov/articles/PMC7062687/), full text, Table 1 and lycophyte discussion. The count describes that review's evidence base."
+    },
+    {
+      "claim": "“Heterospory evolved independently in the lycophytes (Selaginellales and Isoetales), in one fern order and in the seed plants”.",
+      "section": "Affinity and controversies",
+      "verdict": "supported",
+      "evidence": "Kinosian identifies three independently heterosporous extant lineages: heterosporous lycophytes, one fern order and seed plants; the two lycophyte orders belong together.",
+      "source": "[Kinosian 2026](https://bsapubs.onlinelibrary.wiley.com/doi/10.1002/ajb2.70248), full text, introduction; this is a synthesis rather than a new ancestral-state analysis."
+    },
+    {
+      "claim": "“S. sanguinolenta clade is an allopolyploid between ancestors of two superclades”; origin “about 248 Ma (269–215)”.",
+      "section": "Affinity and controversies; Age and distribution",
+      "verdict": "supported",
+      "evidence": "Kang argues probable ancient allopolyploid origin using convergent evidence and summarises timing as approximately 248 Ma, 269–215 Ma; earliest status remains qualified.",
+      "source": "[Kang et al. 2024](https://academic.oup.com/mbe/article/41/8/msae153/7727339), indexed full-text results and discussion passages."
+    },
+    {
+      "claim": "“unclear whether the rhizophore was ancestral”; ancestor “may have had a small root system like … S. selaginoides … basal swelling”.",
+      "section": "Front matter: traits.rooting; Affinity and controversies",
+      "verdict": "supported",
+      "evidence": "Wyman explicitly presents uncertain rhizophore ancestry and the S. selaginoides-like alternative, including its small rooting system and basal swelling.",
+      "source": "[Wyman et al.](https://doi.org/10.1093/aob/mcaf277), indexed full-text discussion; direct publisher full-page retrieval failed."
+    },
+    {
+      "claim": "“authority: P.Beauv.”",
+      "section": "Front matter; Affinity and controversies: authority",
+      "verdict": "supported",
+      "evidence": "Zhou and Zhang explicitly cite Selaginella P. Beauv., published in 1804; the genus authority need not be inferred from a species combination.",
+      "source": "[Zhou and Zhang 2023](https://html.rhhz.net/PDR/html/1703759774747-1401973599.htm), full text, section 5.8.3."
+    },
+    {
+      "claim": "“a stem lineage of 400 Ma or more with no Devonian Selaginellales fossil”.",
+      "section": "Why it matters for modelling: record against clock; Model transfer: record-timing rationale",
+      "verdict": "wrong",
+      "evidence": "403.3 Ma dates the shared heterosporous-lycophyte lineage; Klaus dates separation of Selaginellaceae from its living sister to 383 Ma, not over 400 Ma.",
+      "source": "[Testo et al. 2018](https://www.uvm.edu/~dbarring/publications/testo2018-2.pdf), full text; [Klaus et al. 2017](https://www.researchgate.net/publication/311712374_Historical_biogeography_of_the_ancient_lycophyte_genus_Selaginella_early_adaptation_to_xeric_habitats_on_Pangea), indexed full-text Table 1."
+    },
+    {
+      "claim": "Heterospory arose between “403.3 Ma” and “370–383 Ma”; HPD “spanning late Pragian to Emsian on data/timescale.csv”.",
+      "section": "Why it matters for modelling: timing of heterospory",
+      "verdict": "imprecise",
+      "evidence": "394–414 Ma extends into the Lochkovian under repository boundaries; 370 Ma is Kang's calibration, and combining studies does not yield a joint uncertainty interval.",
+      "source": "[Testo et al. 2018](https://www.uvm.edu/~dbarring/publications/testo2018-2.pdf), full text; [Kang et al. 2024](https://academic.oup.com/mbe/article/41/8/msae153/7727339), indexed full-text methods; data/timescale.csv, read in full."
+    }
+  ],
+  "omissions": [
+    "Hilger identifies all three experimental species and conditions: wet filter paper at 23–30 °C. Emergence times are first observations following germination, not measured fertilisation-to-independence durations. [Hilger et al. 2005](https://www.zobodat.at/pdf/PHY_45_1_0001-0008.pdf)",
+    "Species-specific megaspore measurements are available: S. pilifera 0.3–0.4 mm diameter, S. martensii 0.2–0.35 mm diameter, S. kraussiana 0.4–1.1 mm length. These distinguish taxa and measurement axes. [Hilger et al. 2005](https://www.zobodat.at/pdf/PHY_45_1_0001-0008.pdf)",
+    "The original embryo study explicitly describes a trilete megaspore opening. The front-matter statement that the trilete character was unchecked can therefore be resolved for its named experimental species. [Hilger et al. 2005](https://www.zobodat.at/pdf/PHY_45_1_0001-0008.pdf)",
+    "Klaus estimates a Devonian crown, 373 Ma, alongside its 383 Ma stem. This major disagreement with Kang's calibrated chronology should accompany any proposed transfer of divergence ages. [Klaus et al. 2017](https://www.researchgate.net/publication/311712374_Historical_biogeography_of_the_ancient_lycophyte_genus_Selaginella_early_adaptation_to_xeric_habitats_on_Pangea)",
+    "Kang rejects the earlier placement of S. resimus because of isophylly and the inferred hybrid origin of the calibrated clade. Fossil placement, alongside fossil age, drives the dating disagreement. [Kang et al. 2024](https://academic.oup.com/mbe/article/41/8/msae153/7727339)",
+    "The amber study describes 20 new species plus an emended species, exceeding the earlier 14 morphologies; it also discusses fossil-versus-living megaspore-number differences and exceptions. Both affect the endpoint comparison. [Schmidt et al. 2022](https://doi.org/10.3372/wi.52.52203)",
+    "The fungal survey includes non-symbiotic records and dark septate endophytes. Sparse molecular sampling limits fungal identity and prevalence estimates; it does not justify treating every association as unknown. [Rimington et al. 2020](https://pmc.ncbi.nlm.nih.gov/articles/PMC7062687/)"
+  ],
+  "model_transfer_assessment": "Reproductive strategy is the right principal contrast: Selaginella supplies a living heterosporous endpoint. Sporophyte independence needs separate variables for spore provisioning, gametophyte autonomy, embryo development and cessation of matrotrophy. The transferable evidence has uneven resolution: strobilus observations name species, but genus-wide spore ranges are unpaired compilations, embryo timing needs correction to the three measured species, and nutritional independence was not experimentally timed. Divergence ages combine incompatible calibrated analyses and belong in alternative chronology scenarios. The cannot-transfer list correctly excludes unmeasured reserves, genus-wide desiccation tolerance and direct Devonian genomic parameters, but should also exclude pooled spore ranges as specimen-level distributions and emergence time as measured dependence duration. Its categorical rejection of any contribution to intermediate-heterospory models is too strong.",
+  "overall": "The card is useful and generally transparent about indirect citations, but needs substantive corrections before quantitative model use. The main problems are the mistranscribed embryo timing, unmeasured independence endpoint, conflation of two different stem nodes, and mixed dating frameworks; several original fossil observations remain only indirectly verified."
+}

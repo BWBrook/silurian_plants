@@ -9,6 +9,7 @@ lineage: >-
   polyphyletic assemblage of tubular organisms that includes Prototaxites. Interpretations range from lichenised
   fungus to red alga to embryophyte-grade plant.
 placement_confidence: low
+contrasts: [fungal-nutrition, record-timing]
 range:
   first: Ludfordian
   last: Lochkovian
@@ -114,6 +115,21 @@ Presumed heterotrophs of cryptogamic ground cover. Edwards et al. (2013) say the
 - Trophic link: documented fungivory by early arthropods is a constraint on detritivore parameters; at the one site studied, nematophyte-feeding left under 50 distinctive coprolites against many spore-rich ones, so it was selective and not the dominant diet in that sample.
 - Polyphyly is an input uncertainty: the same cuticle form could represent fungi, algae or lichens with different carbon sources and habitats. Assign them to a functional group, not a taxonomic one.
 - Weathering and soil: the claim of enhanced chemical weathering is the only quantitative-style statement and is unmeasured for this genus.
+
+## Model transfer
+
+**Chosen to contrast:** Contrast alternative fungal, lichenised and algal carbon-acquisition scenarios for early ground cover using abundant but taxonomically disputed tube-built thalli.
+
+- **Can transfer:**
+  - N. williamii, Lochkovian Welsh Borderland charcoal: superficial cortex, palisade tubes and an interwoven basal zone provide stratified thallus architecture; hyphal identity is interpreted (Edwards et al. 2013).
+  - Nematothallus, three species unnamed in this card, occurs as carbonised thalli in the Ludlow Bloomsburg Formation, Pennsylvania; use a dated preservation occurrence (Strother 1988).
+  - Nematothallus cuticles occur with dominant Nematasketum tubes in fewer than 50 distinctive early Lochkovian Ditton Group coprolites; use an assemblage-level feeding association, with Nematothallus species unspecified (Edwards et al. 2012).
+- **Cannot transfer:**
+  - Do not impose a demonstrated lichen nutritional partnership or photobiont contribution: no photobiont has been found.
+  - Do not assign Rhynie nematophyte or Prototaxites taiti chemistry to Nematothallus: the tests concern other taxa.
+  - Do not assign polysporic asci or a reproductive output to Nematothallus: candidate reproductive structures are unconfirmed as belonging to it.
+  - Do not treat cuticular perforations as stomata or banded tubes as demonstrated tracheids; neither establishes embryophyte water-control physiology.
+  - Do not fit chemical-weathering enhancement from the proposed ecosystem role: no genus-specific rate was measured.
 
 ## Open questions
 

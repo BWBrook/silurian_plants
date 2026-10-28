@@ -8,6 +8,7 @@ lineage: >-
   Total-group Embryophyta, bryophyte-grade; stem-group on the 2026 spore-evolution reading. Ordovician parent
   plants are unknown as organisms (liverwort affinity argued from spore walls, not demonstrated).
 placement_confidence: medium
+contrasts: [record-timing, reproductive-strategy]
 range:
   first: Darriwilian
   last: Hirnantian
@@ -122,6 +123,22 @@ Source plants were probably millimetre-scale (sporangia of about 1 mm or less). 
 - Niche: cosmopolitan, 30-60°S, persisting through the end-Ordovician glaciation: a cold-tolerant generalist.
 - Rate: spore form changed little for 35-50 Myr (Rubinstein et al. 2010; Wellman et al. 2015), possibly masking parent change.
 - Replacement: cryptospore diversity fell in the Early Silurian as trilete spores rose (Steemans et al. 2009), attributed to competition from larger plants (Wellman et al. 2015).
+
+## Model transfer
+
+**Chosen to contrast:** Contrast early spore-production evidence with unknown parent-plant architecture and disputed lineage placement using dated Ordovician dispersed assemblages and Oman sporangial fragments.
+
+- **Can transfer:**
+  - Tetrahedraletes medinensis dispersed units from Qusaiba-1 measure 26-42 µm; broader assemblage units span 23-62 µm. The sampled range includes Katian to earliest Silurian material (Wellman et al. 2015).
+  - Unknown Oman parent plants, Ghaba-1 fragments: one 0.30 x 0.23 mm fragment held c. 2,620 tetrads; use fragment-level spore packing, without equating it to complete-sporangium output (Wellman et al. 2003).
+  - Unknown Oman dyad producers, Ghaba-1: walls 0.72-1.01 µm thick contain up to 11 parallel lamellae, each 41-58 nm; use measured wall geometry, without assuming affinity (Wellman et al. 2003).
+  - Unknown Hanadir Shale parent plants, Saudi Arabia: definitive regular tetrads and dyads constrain a Darriwilian record, independently of crown assignment (Strother et al. 1996, 2015; Hooper et al. 2026).
+- **Cannot transfer:**
+  - Do not infer whole-plant height, branching, stomata or conducting tissues from sub-millimetre sporangial fragments: no whole Ordovician plant is known.
+  - Do not treat c. 95,000 tetrads as observed output: it is calculated for a hypothetical 1 mm spherical sporangium.
+  - Do not equate cryptospore producers with demonstrated crown liverworts, crown embryophytes or upright sporophytes: competing developmental and phylogenetic readings remain unresolved.
+  - Do not fix the origin at the disputed Argentine Dapingian occurrence or treat the earliest sampled occurrence as the lineage origin.
+  - Do not assign measured desiccation tolerance, rapid life cycles or cold-generalist physiology: these are proposals or interpretations, and some glacial-deposit spores are reworked.
 
 ## Open questions
 

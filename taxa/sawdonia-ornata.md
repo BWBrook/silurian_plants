@@ -8,6 +8,7 @@ lineage: >-
   Zosterophyll of the Sawdoniaceae; in the latest analysis the Sawdoniaceae are the sister group of the
   lycopsids. Hueber's 1971 name replaced Psilophyton princeps var. ornatum.
 placement_confidence: medium
+contrasts: [reproductive-strategy, water-transport]
 range:
   first: Emsian
   last: Emsian
@@ -94,6 +95,21 @@ Circinate tips imply apical growth by unrolling, and sporangia positioned well b
 - **Reproduction.** Single sporangia 3-3.5 mm wide with unequal valves, and trilete spores of 54-64 µm, which are values to check.
 - **Phylogenetic anchor.** The Sawdoniaceae-lycopsid sister relation lets a model treat Sawdonia as the best sampled proxy for the zosterophyll-to-lycopsid transition; all character values should be borrowed with that uncertainty.
 - **Temporal pattern.** Zosterophyll cladogenesis continued through the Lochkovian and relented in the Pragian (Claisse et al. 2025), and richness declined from the Emsian, so S. ornata belongs to the declining phase of the group and the genus persisted long after it.
+
+## Model transfer
+
+**Chosen to contrast:** Contrast lateral reproduction below the shoot apex with terminal-sporangium architectures, using Gaspé material with unequal valves while keeping proposed spine gas-exchange functions uncalibrated.
+
+- **Can transfer:**
+  - S. ornata, Gaspé type-locality material: place sporangia on one or two sides of aerial stems, near and well below the apex, curving towards the stem (Gensel & Berry 2016).
+  - S. ornata, Gaspé type-locality material: distinguish the larger spiny outer valve from the smaller, thinner, flat, spineless inner valve in a sporangial architecture model (Gensel & Berry 2016).
+  - S. ornata, Gaspé type-locality material: permit variable lateral-branch density and angle within a pseudomonopodial system; this card supplies no numerical distributions (Gensel & Berry 2016).
+- **Cannot transfer:**
+  - Do not use Hueber's numerical stem, spine, stomatal or spore values as verified parameter estimates; this card obtained them through an unchecked secondary summary.
+  - Do not assign Scottish planar branching, H-branching or cuticular details directly to S. ornata; that material is now cf. Sawdonia sp.
+  - Do not assign Venezuelan G-type tracheids to S. ornata; that tracheid type is unconfirmed in the focal species.
+  - Do not convert the calculated spine surface-area extremes into measured photosynthetic or gas-exchange capacity; they combine secondary dimensions and geometrical assumptions.
+  - Do not encode simultaneous growth and reproduction as directly observed physiology; this card infers their coexistence from sporangial position.
 
 ## Open questions
 

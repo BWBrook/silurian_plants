@@ -8,6 +8,7 @@ lineage: >-
   Stem-group euphyllophyte in the "trimerophyte" grade, a paraphyletic plexus of leafless plants below
   the lignophyte-ward and fern/sphenopsid lineages; Trimerophytina is a classification, not a clade.
 placement_confidence: medium
+contrasts: [water-transport, reproductive-strategy, clonal-growth]
 range:
   first: Pragian
   last: Eifelian
@@ -167,6 +168,23 @@ Trimerophytes were common on moist upper channel bars at Gaspé and apparently g
 - **Disturbance niche and herbivory.** Early-successional colonisation of flood muds, arthropod damage and two spine types by about 400 Ma give a defence-cost and herbivory-pressure calibration point; no growth rates exist.
 - **Rooting.** Uptake and anchorage used rhizomatous axes and emergences; unequivocal euphyllophyte roots date from the Frasnian (Doran & Tomescu 2025).
 - **Shape optimisation.** Niklas & Kerchner (1984) give a photosynthesis versus moment-arm model against which these architectures can be scored.
+
+## Model transfer
+
+**Chosen to contrast:** Contrast leafless branching architectures, hydraulic segmentation and rhizomatous anchorage using species-specific anatomy and fertile units rather than a single genus-wide body plan.
+
+- **Can transfer:**
+  - Vegetative architecture: P. crenulatum from Atholville, New Brunswick, has branches 2 mm to 8.3 cm long with 2-7 dichotomies; use these species-specific geometric rules (Doran 1980).
+  - Fertile architecture: Atholville P. crenulatum fertile units divide 5-7 times and bear sporangia 3-5 x 1-2 mm containing spores 48-102 µm; preserve the linked measurements (Doran 1980).
+  - Xylem segmentation: P. dawsonii has constrictions at 4 of 6 anisotomous minor-axis bases and 5 of 7 fertile junctions, absent at isotomous junctions; this card gives no specimen identifiers (Niklas & Banks 1985).
+  - Rhizomatous architecture: Atholville P. crenulatum has 2,090 emergences on 28 axes, 62% on lower sides; use positional asymmetry and rhizomatous parts, retaining rooting function as an interpretation (Doran & Tomescu 2025).
+  - Conducting-cell structure: Gaspé P. dawsonii has P-type tracheids with scalariform to circular bordered, multiaperturate pits; use this anatomical state without importing conductance values (Hartman & Banks 1980).
+- **Cannot transfer:**
+  - Standing-height priors cannot use P. dapsile and P. forbesii textbook reconstructions as measurements; this card explicitly excludes them pending primary descriptions (Taylor et al. 2009, relayed by Wikipedia).
+  - Regular spiral laterals, strong apical dominance and one genus-wide architecture cannot be assumed: species descriptions and the genus-level scoring conflict, and hormonal control is unobserved (Tomescu & Whitewoods 2024).
+  - Measured hydraulic vulnerability or conductance cannot be derived directly from P. dawsonii constrictions; vulnerability segmentation is an untested functional hypothesis (Niklas & Banks 1985).
+  - True roots, quantified uptake and clonal spread rates cannot be assigned to P. crenulatum emergences: rhizomatous parts are observed, but their rooting role is probable (Doran & Tomescu 2025).
+  - Rapid growth and disturbance-recovery rates cannot be calibrated from moist flood-mud occurrences; the ecological interpretation comes from facies and no growth rates exist (Griffing et al. 2000).
 
 ## Open questions
 

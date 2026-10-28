@@ -9,6 +9,7 @@ lineage: >-
   zosterophylls (Sawdoniaceae) in the most recent analysis. The species concept is broad and probably
   covers several taxa.
 placement_confidence: medium
+contrasts: [clonal-growth, water-transport, record-timing]
 range:
   first: Pragian
   last: Givetian
@@ -29,15 +30,15 @@ localities:
 preservation: [compression, permineralised]
 traits:
   height_cm: {min: null, max: null, note: "No measured height. A secondary genus summary quotes about 80 cm, which I could not verify."}
-  axis_diameter_mm: {min: 5.9, max: 18, note: "From the Chinese D. qujingensis: rhizome traces 5.9-18 mm wide (mean 10.5 mm, n = 90) and aerial axes averaging 15.9 mm (Xue et al. 2016). Not measured on D. spinaeformis itself."}
-  branching: {state: mixed, note: "Aerial axes branch dichotomously and pseudomonopodially; rhizomes show repeated H- and K-branching (D. qujingensis; Xue et al. 2016). Rayner (1984) reports variable branching, including root-like axes on branches."}
+  axis_diameter_mm: {min: 5.9, max: 18, note: "From the Chinese D. qujingensis: rhizome traces 5.9-18 mm wide (mean 10.5 mm, n = 90) and aerial axes averaging 15.9 mm (Xue et al. 2016). Not measured on D. spinaeformis itself.", from: "Drepanophycus qujingensis"}
+  branching: {state: mixed, note: "Aerial axes branch dichotomously and pseudomonopodially; rhizomes show repeated H- and K-branching (D. qujingensis; Xue et al. 2016). Rayner (1984) reports variable branching, including root-like axes on branches.", from: "Drepanophycus qujingensis"}
   leaves: {state: microphylls, note: "Spirally arranged microphylls with leaf traces (Li & Edwards 1995; Rayner 1984). Orientation of leaves differs between D. spinaeformis and D. qujingensis. Leaf dimensions were not verified."}
   stomata: {state: present, note: "Paracytic with paired guard cells (Stubblefield & Banks 1978) versus anomocytic (Li Cheng-Sen & Edwards 1995 for D. qujingensis; Sun et al. 2005 re-reading D. spinaeformis cuticles)."}
   conducting_tissue: {state: tracheids-G, note: "Tracheids with perforated walls in pyrite permineralisations (Rayner 1984; Geng & Zhu 1994), consistent with the G-type; the G label itself comes from a secondary summary."}
   sporangium_position: {state: lateral, note: "Cauline: stalked sporangia on the stem near the leaf axils, not on the leaves (Geng & Zhu 1994; neotype paper keyword 'cauline sporangia'). Position in D. spinaeformis is debated: Rayner (1984) doubted that it fits lycopsids, and Li & Edwards (1995) call it conjectural for the species."}
   spores: {state: unknown, note: "Not verified in the sources read."}
   heterospory: {state: unknown, note: "No megaspores reported in the sources read."}
-  rooting: {state: rhizomes, note: "Branching rhizome networks with thinner adventitious roots (Xue et al. 2016); root-like axes and tufts of fine rootlets also described, but without root caps or endogenous origin (Matsunaga & Tomescu 2016)."}
+  rooting: {state: rhizomes, note: "Branching rhizome networks with thinner adventitious roots (Xue et al. 2016); root-like axes and tufts of fine rootlets also described, but without root caps or endogenous origin (Matsunaga & Tomescu 2016).", from: "Drepanophycus qujingensis"}
   gametophyte: {state: unknown, note: null}
 habitat: >-
   Fluvial floodplain: for D. qujingensis in Yunnan, an immediate colonist of newly deposited alluvium on
@@ -103,6 +104,21 @@ For D. qujingensis, rhizomes with H-branching formed large clones that survived 
 - **Life history.** Clonal, flood-tolerant and an early colonist, like Sengelia (Matsunaga & Tomescu 2017), with sexual reproduction probably infrequent (inference). Isotope evidence indicates low soil productivity while the carbonates formed.
 - **Shared body plan.** Root-bearing and rooting axes are common across Drepanophycales (Hetherington et al. 2021), so Asteroxylon-type data can be borrowed with caution.
 - **Caveat.** Size and rhizome data are from the Chinese congener; broad stratigraphic range makes species-level time series unsafe.
+
+## Model transfer
+
+**Chosen to contrast:** Contrast rhizomatous persistence through sediment burial with aerial vascular traits, keeping quantified D. qujingensis clones distinct from anatomical evidence assigned to D. spinaeformis.
+
+- **Can transfer:**
+  - Code perforated tracheid walls for Scottish Emsian D. spinaeformis pyrite permineralisations, without assigning a measured conductivity (Rayner 1984; Geng & Zhu 1994).
+  - For D. qujingensis in the Xujiachong Formation, Yunnan, use rhizome widths 5.9-18 mm, mean 10.5 mm, n = 90, and aerial axes averaging 15.9 mm; retain the congener identity (Xue et al. 2016).
+  - For D. qujingensis palaeosols in Yunnan, use rhizome density 800-1,300 transections per m² and the reported equivalent 0.8-1.3 km per m³ as spatial constraints, not D. spinaeformis measurements (Xue et al. 2016).
+  - Represent H-branched clonal persistence through repeated burial for D. qujingensis on well-drained seasonal floodplain soils in Yunnan; this card supplies a qualitative disturbance response, not a recovery rate (Xue et al. 2016).
+- **Cannot transfer:**
+  - Chinese congener dimensions and rhizome densities cannot become measurements of D. spinaeformis; the named species supplying them is D. qujingensis.
+  - Clone lifespans of decades to centuries cannot be treated as observed fossil ages: they are analogical estimates from living Lycopodium and Pteridium.
+  - A fixed species-level sporangial placement cannot be assigned confidently: fertile material is rare and this card explicitly calls the D. spinaeformis structures conjectural.
+  - Deep Gaspé traces cannot establish Drepanophycus rooting depth or clone longevity: the producing plant is unidentified.
 
 ## Open questions
 

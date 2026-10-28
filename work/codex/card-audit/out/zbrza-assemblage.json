@@ -1,0 +1,188 @@
+{
+  "items": [
+    {
+      "claim": "“Unplaced. Reported as putative polysporangiophytes, probably non-vascular”",
+      "section": "Front matter: lineage and placement_confidence",
+      "verdict": "supported",
+      "evidence": "The original proposes nonvascular polysporangiophytes; the review rejects confident land-plant assignment.",
+      "source": "[Salamon et al. 2018](https://doi.org/10.1111/nph.15091), full text; [Wellman et al. 2022](https://doi.org/10.1144/SP532-2022-92), full text."
+    },
+    {
+      "claim": "“first: Hirnantian”; “last: Hirnantian”; “445.2 to 443.1 Ma”; “c. 445 Ma on ICS v2016/12”",
+      "section": "Front matter: range",
+      "verdict": "supported",
+      "evidence": "ICS confirms both boundaries; Salamon reports approximately 445 Ma using the older chart. These date deposition, not necessarily organismal occurrence.",
+      "source": "[ICS v2024/12](https://stratigraphy.org/ICSchart/ChronostratChart2024-12.pdf), complete chart; [Salamon et al. 2018](https://doi.org/10.1111/nph.15091), full text."
+    },
+    {
+      "claim": "“dated by trilobites, brachiopods and palynomorphs”; “confirmed by acritarchs and chitinozoans”",
+      "section": "Front matter: range.notes",
+      "verdict": "supported",
+      "evidence": "Both statements occur explicitly in the main article; the underlying sample-level supplementary evidence remains inaccessible.",
+      "source": "[Salamon et al. 2018](https://doi.org/10.1111/nph.15091), full text. Notes S1 download returned HTTP 403; its contents were not verified."
+    },
+    {
+      "claim": "“redeposited Cambrian to Middle Ordovician taxa such as Frankea”; fragments “could be redeposited and older than the Hirnantian”",
+      "section": "Front matter: range.notes; Age and distribution",
+      "verdict": "supported",
+      "evidence": "Frankea is specifically Middle Ordovician; older acritarchs demonstrate reworking. Trela explicitly allows older, redeposited plant fragments without demonstrating that origin.",
+      "source": "[Trela et al. 2019](https://journals.pan.pl/Content/116562/PDF/82-85%20Trela_Czytelnia_ang.pdf), full text; [Trela and Szczepanik 2009](https://www.pgi.gov.pl/images/stories/przeglad/pg_2009_02_21.pdf), English abstract and relevant full-text sections."
+    },
+    {
+      "claim": "“fragments are 1.1 to 3.2 mm long, two of them broken at both ends”",
+      "section": "Front matter: traits.height_cm",
+      "verdict": "supported",
+      "evidence": "Reported fragment lengths span these values; both Hostinella axes are incomplete.",
+      "source": "[Salamon et al. 2018](https://doi.org/10.1111/nph.15091), full text, description and Fig. 2."
+    },
+    {
+      "claim": "“axis widths are 0.1 to 0.3 mm”; “3 x 0.1”; “2 x 0.3”; “3.2 x 0.3”",
+      "section": "Front matter: traits.axis_diameter_mm; Morphology table, Fig. 2a–c",
+      "verdict": "supported",
+      "evidence": "All three dimension pairs match; measurements are widths, not demonstrated cylindrical diameters.",
+      "source": "[Salamon et al. 2018](https://doi.org/10.1111/nph.15091), full text, description."
+    },
+    {
+      "claim": "“two dichotomous axes placed in the form genus Hostinella and one trichotomous division”",
+      "section": "Front matter: traits.branching",
+      "verdict": "supported",
+      "evidence": "Figures 2a–c and their descriptions match these counts and identifications.",
+      "source": "[Salamon et al. 2018](https://doi.org/10.1111/nph.15091), full text."
+    },
+    {
+      "claim": "“The 1.5 mm fertile axis is described as leafless”; “terminal on three fertile fragments”",
+      "section": "Front matter: traits.leaves and traits.sporangium_position",
+      "verdict": "supported",
+      "evidence": "Figure 2d is leafless; three putatively fertile specimens bear terminal bodies.",
+      "source": "[Salamon et al. 2018](https://doi.org/10.1111/nph.15091), full text, Fig. 2d–f."
+    },
+    {
+      "claim": "“One probable stoma, 29 x 21 µm, on an indeterminate dispersed axis”",
+      "section": "Front matter: traits.stomata",
+      "verdict": "supported",
+      "evidence": "Dimensions and indeterminate-axis attribution match; attachment to fertile specimens is not documented.",
+      "source": "[Salamon et al. 2018](https://doi.org/10.1111/nph.15091), full text, Fig. 3."
+    },
+    {
+      "claim": "“Rare trilete-like spores resembling Ambitisporites avitus-dilutus occur in the macerated residue, not in situ”",
+      "section": "Front matter: traits.spores",
+      "verdict": "supported",
+      "evidence": "Residue spores are rare; irregular marks explicitly undermine their trilete identification.",
+      "source": "[Salamon et al. 2018](https://doi.org/10.1111/nph.15091), full text."
+    },
+    {
+      "claim": "“1.5 x 0.2”; “terminal bodies 0.4 x 0.3”",
+      "section": "Morphology and anatomy: table, Fig. 2d",
+      "verdict": "supported",
+      "evidence": "Both dimension pairs match the description.",
+      "source": "[Salamon et al. 2018](https://doi.org/10.1111/nph.15091), full text."
+    },
+    {
+      "claim": "“1.1 x 0.3”; “body 0.8 x 1.1”; “body 1.3 x 1”",
+      "section": "Morphology and anatomy: table, Fig. 2e–f",
+      "verdict": "supported",
+      "evidence": "These axis and terminal-body measurements match the text.",
+      "source": "[Salamon et al. 2018](https://doi.org/10.1111/nph.15091), full text."
+    },
+    {
+      "claim": "“no spores inside the sporangium-like bodies, no conducting cells and no cuticle on the figured axes”",
+      "section": "Morphology and anatomy",
+      "verdict": "supported",
+      "evidence": "None is reported; this establishes reporting absence, not demonstrated biological absence.",
+      "source": "[Salamon et al. 2018](https://doi.org/10.1111/nph.15091), full text; supporting information inaccessible."
+    },
+    {
+      "claim": "“Marine shelf mudstone deposited during the Hirnantian regression”; “about 30 to 40 degrees S”",
+      "section": "Front matter: habitat",
+      "verdict": "supported",
+      "evidence": "Trela describes marine deposition during regression and places the Holy Cross Mountains at 30–40°S near southwestern Baltica.",
+      "source": "[Trela et al. 2019](https://journals.pan.pl/Content/116562/PDF/82-85%20Trela_Czytelnia_ang.pdf), full text; authors’ explanatory account."
+    },
+    {
+      "claim": "“lack sufficient characters to be assigned to land plants”",
+      "section": "Affinity and controversies: Wellman counter-argument",
+      "verdict": "supported",
+      "evidence": "The review explicitly cites Salamon among insufficiently diagnostic claims; it does not establish an alternative identity for Zbrza.",
+      "source": "[Wellman et al. 2022](https://eprints.whiterose.ac.uk/id/eprint/194499/1/SP532-2022-92.pdf), full text, plant-megafossil discussion."
+    },
+    {
+      "claim": "“449.65 Ma”; “soft maximum … 431.2 Ma”; “crown embryophytes at 457–450 Ma and crown tracheophytes at 432–428 Ma”",
+      "section": "Why it matters for modelling",
+      "verdict": "unverifiable",
+      "evidence": "Main text confirms the numerical constraints and estimates; inaccessible Supplementary Table 4 prevents verification of the specified soft-maximum justification.",
+      "source": "[Hooper et al. 2026](https://www.nature.com/articles/s41477-026-02432-3), full main text; Supplementary Information download failed."
+    },
+    {
+      "claim": "“record-timing”; “the one claimed macrofossil first appearance … earlier … by about 10 to 18 Myr”",
+      "section": "Model transfer: Chosen to contrast",
+      "verdict": "imprecise",
+      "evidence": "Entire-stage bounds give approximately 10.2–18.5 Myr. This is an illustrative envelope, not a measured gap; the review lists multiple pre-Silurian claims.",
+      "source": "[ICS v2024/12](https://stratigraphy.org/ICSchart/ChronostratChart2024-12.pdf), complete chart; [Wellman et al. 2022](https://doi.org/10.1144/SP532-2022-92), full text."
+    },
+    {
+      "claim": "“A single disputed record at Hirnantian … Zalesie Formation, Zbrza, Poland”; “probability class: disputed, low”",
+      "section": "Model transfer: Can transfer, first bullet",
+      "verdict": "imprecise",
+      "evidence": "One locality-level claim is documented. Neither source supplies a probability; an ordinal assessment should be called a confidence class.",
+      "source": "[Salamon et al. 2018](https://doi.org/10.1111/nph.15091), full text; [Wellman et al. 2022](https://doi.org/10.1144/SP532-2022-92), full text."
+    },
+    {
+      "claim": "“enter the base data set with no weight”; “enter a sensitivity scenario in which it is true”",
+      "section": "Model transfer: Can transfer, first bullet",
+      "verdict": "unverifiable",
+      "evidence": "These are modelling prescriptions. No cited study evaluates this weighting rule or demonstrates its consequences for a first-appearance posterior.",
+      "source": "[Wellman et al. 2022](https://doi.org/10.1144/SP532-2022-92), full text; supports identification uncertainty, not a particular statistical treatment."
+    },
+    {
+      "claim": "“worked false-positive case: tiny forking axes with terminal bodies, from marine mudstone, without in situ spores or attached conducting tissue”",
+      "section": "Model transfer: Can transfer, second bullet",
+      "verdict": "overstated",
+      "evidence": "The observations support a disputed-identification example; the review does not demonstrate that Zbrza is a false positive.",
+      "source": "[Salamon et al. 2018](https://doi.org/10.1111/nph.15091), full text; [Wellman et al. 2022](https://doi.org/10.1144/SP532-2022-92), full text."
+    },
+    {
+      "claim": "“The model can use it to set a misidentification rate for records of this kind.”",
+      "section": "Model transfer: Can transfer, second bullet",
+      "verdict": "overstated",
+      "evidence": "Neither source supplies validated classification outcomes or a sampling denominator. One unresolved assemblage cannot identify a population misidentification rate.",
+      "source": "[Wellman et al. 2022](https://doi.org/10.1144/SP532-2022-92), full text; statistical identifiability assessment is the auditor’s inference."
+    },
+    {
+      "claim": "“Its dated stratigraphic position as a minimum age, whether or not the fragments are reworked.”",
+      "section": "Model transfer: Can transfer, third bullet",
+      "verdict": "imprecise",
+      "evidence": "Older reworking preserves a minimum constraint only if incorporation is genuine. Younger intrusion invalidates it; stage boundaries are not specimen dates.",
+      "source": "[Trela et al. 2019](https://journals.pan.pl/Content/116562/PDF/82-85%20Trela_Czytelnia_ang.pdf), full text; minimum-age conditions are the auditor’s inference."
+    },
+    {
+      "claim": "“A confident first appearance of polysporangiophytes, tracheophytes, embryophytes, stomata, sporangia or trilete spores” cannot transfer",
+      "section": "Model transfer: Cannot transfer, first bullet",
+      "verdict": "supported",
+      "evidence": "Uncertain biological identification and possible reworking preclude these confident first-appearance assignments; an occurrence would still only constrain an earlier origin.",
+      "source": "[Wellman et al. 2022](https://doi.org/10.1144/SP532-2022-92), full text; [Trela et al. 2019](https://journals.pan.pl/Content/116562/PDF/82-85%20Trela_Czytelnia_ang.pdf), full text. Origin-versus-occurrence distinction is an inference."
+    },
+    {
+      "claim": "“Any trait”; “Every trait … unknown”; “A whole-plant reconstruction, a height, a habit or a habitat”; comparisons “rest on shape”",
+      "section": "Model transfer: Cannot transfer, second and third bullets",
+      "verdict": "imprecise",
+      "evidence": "Whole-organism inference is unsupported, but specimen observations remain usable. Comparisons include size and structure; depositional setting differs from source habitat.",
+      "source": "[Salamon et al. 2018](https://doi.org/10.1111/nph.15091), full text; [Pacyna and Barbacka 2022](https://doi.org/10.5586/asbp.9123), full text, §2.1. Local front matter uses null size bounds and unknown categorical states."
+    },
+    {
+      "claim": "“the record is defended on shape alone”",
+      "section": "Affinity and controversies: My assessment",
+      "verdict": "wrong",
+      "evidence": "The defence also invokes a possible stoma and excludes several animal alternatives.",
+      "source": "[Salamon et al. 2018](https://doi.org/10.1111/nph.15091), full text."
+    }
+  ],
+  "omissions": [
+    "Salamon explicitly recognises three different fertile morphologies. Assemblage-wide association cannot establish that the axes, putative stoma and dispersed spores belong to one species. [Full text](https://doi.org/10.1111/nph.15091).",
+    "The card’s shape-alone assessment omits the authors’ anatomical argument when drawing its conclusion. That argument can be challenged without erasing it. [Salamon et al., full text](https://doi.org/10.1111/nph.15091).",
+    "The ICS boundaries each have ±0.9 Myr uncertainty. A numerical minimum should incorporate host-horizon uncertainty; 445.2 Ma is not a justified hard minimum. [Complete ICS chart](https://stratigraphy.org/ICSchart/ChronostratChart2024-12.pdf).",
+    "Wellman distinguishes demonstrated non-plant identifications from insufficiently diagnostic records and places Zbrza in the latter category. It supplies no confirmed false-positive label or rate. [Full text](https://doi.org/10.1144/SP532-2022-92).",
+    "Reworking affects temporal and geographical attribution even when biological identification is correct. Trela’s alternative transport routes therefore require separate treatment from taxonomic misidentification. [Full text](https://journals.pan.pl/Content/116562/PDF/82-85%20Trela_Czytelnia_ang.pdf)."
+  ],
+  "model_transfer_assessment": "Record-timing is an appropriate contrast, provided Zbrza remains an unresolved occurrence claim. The measurements concern separate Zbrza specimens, not a securely identified species; the putative stoma and dispersed spores cannot supply characters for the fertile fragments. Exclusion from a baseline and inclusion in a sensitivity analysis are defensible proposed choices, but neither the ordinal confidence label nor this single assemblage estimates a misidentification rate. The cannot-transfer limits mostly identify the biological uncertainties correctly, although they unnecessarily exclude specimen-level observations and blur depositional setting with source habitat. Minimum-age use must be conditional on genuine incorporation into the dated sediment and must propagate age uncertainty. Misidentification, older reworking and younger contamination need distinct observation processes.",
+  "overall": "The card accurately reproduces most measurements and fairly records the published identification dispute. Its main weaknesses are calling Zbrza a usable false-positive calibration, overstating a shape-only defence, and insufficiently qualifying minimum-age transfer; the inaccessible supplements leave sample-level dating and processing evidence unverified."
+}

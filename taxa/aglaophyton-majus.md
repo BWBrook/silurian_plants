@@ -9,6 +9,7 @@ lineage: >-
   sporangia; analyses cited by Kerp (2017) place it nearer vascular plants than bryophytes, and
   possibly nearer Rhynia than D.S. Edwards (1986) allowed.
 placement_confidence: low
+contrasts: [water-transport, fungal-nutrition, sporophyte-independence]
 range:
   first: Pragian
   last: Emsian
@@ -144,6 +145,22 @@ Stomata with cutinised channels and substomatal chambers suggest high water-use 
 - Clonal and sexual routes coexist (bulbils plus a free-living, unisexual gametophyte), making local persistence and dispersal separable parameters.
 - Environmental envelope: seasonal flooding, saline and alkaline hot-spring water, CO2 about 3100 ppm and O2 26% in the GEOCARBSULF run quoted by Wellman (2017), plant cover about 40% in active hot-spring areas.
 - Stomata present on a plant with unthickened conducting cells separates "stomata" from "tracheids" as evolutionary steps.
+
+## Model transfer
+
+**Chosen to contrast:** Contrast hydroid-like conduction, fungal association and free-living gametophytes within one anatomically preserved Rhynie plant whose conducting strand lacks tracheid wall thickenings.
+
+- **Can transfer:**
+  - A. majus, Rhynie chert conducting-strand sections: represent water-conducting cells with double-layered walls and wall vesicles but no helical or annular bars (Kerp 2017).
+  - A. majus, Rhynie chert cortex: represent arbuscules occupying a renewing meristematic cortical zone as an observed fungal association (Remy et al. 1994; Taylor et al. 1995).
+  - A. majus, Rhynie chert sporangia: use about 400,000 spores per sporangium as a calculation by Wellman and colleagues reported by Kerp (2017), retaining its calculated status.
+  - A. majus and its Lyonophyton rhyniense gametophyte, Rhynie chert: represent a free-living, unisexual gametophyte alongside vegetative reproduction (Taylor et al. 2005; Kerp 2017).
+  - A. majus, Rhynie chert basal axes: represent arrested apices producing bulbil-like propagules and adventitious axes, predominantly at the prostrate base (Kerp 2017).
+- **Cannot transfer:**
+  - Do not assign demonstrated lignification to A. majus conducting cells; their wall chemistry remains untested.
+  - Do not assign a measured fungal nutrient-transfer rate or benefit; fungal structures are preserved, but nutrient transfer is inferred.
+  - Do not turn stomatal anatomy into a measured water-use-efficiency parameter; the proposed efficiency is an anatomical interpretation.
+  - Do not treat 20 cm as a measured whole-plant maximum; the stature comes from reconstruction.
 
 ## Open questions
 

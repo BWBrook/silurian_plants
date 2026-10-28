@@ -50,6 +50,8 @@ GROUPS = {
     "nematophyte",
     "incertae-sedis",
 }
+CONTRASTS = {"height", "water-transport", "sporophyte-independence", "fungal-nutrition",
+             "reproductive-strategy", "clonal-growth", "record-timing"}
 CONFIDENCE = {"low", "medium", "high"}
 STATUS = {"draft", "reviewed"}
 PRESERVATION = {"compression", "permineralised", "charcoalified", "adpression", "cast", "dispersed"}
@@ -61,8 +63,8 @@ TRAIT_STATES = {
     "conducting_tissue": {"absent", "hydroids", "non-lignified", "tracheids-G", "tracheids-S",
                           "tracheids-P", "tracheids"},
     "sporangium_position": {"terminal", "lateral", "both"},
-    "spores": {"cryptospores", "trilete", "both"},
-    "heterospory": {"absent", "present"},
+    "spores": {"cryptospores", "trilete", "monolete", "both"},
+    "heterospory": {"absent", "intermediate", "present"},
     "rooting": {"rhizoids", "rhizomes", "roots", "rooting-axes"},
     "gametophyte": {"known"},
 }
@@ -72,7 +74,7 @@ REQUIRED = ["name", "authority", "rank", "kind", "group", "lineage", "placement_
             "references"]
 SECTIONS = ["In brief", "Morphology and anatomy", "Age and distribution",
             "Affinity and controversies", "Ecology and physiology",
-            "Why it matters for modelling", "Open questions"]
+            "Why it matters for modelling", "Model transfer", "Open questions"]
 DASHES = str.maketrans({c: "-" for c in "\u2010\u2011\u2012\u2013\u2014\u2212"})
 DOI_RE = re.compile(r"\b10\.\d{4,9}/[^\s\"]+")
 
@@ -111,6 +113,11 @@ def check_card(path, stages):
     for p in meta.get("preservation") or []:
         if p not in PRESERVATION:
             problems.append(f"preservation {p!r} not in vocabulary")
+    if not isinstance(meta.get("contrasts"), list):
+        problems.append("missing contrasts (a list, [] if none)")
+    for c in meta.get("contrasts") or []:
+        if c not in CONTRASTS:
+            problems.append(f"contrast {c!r} not in vocabulary")
     rng = meta.get("range") or {}
     first, last = rng.get("first"), rng.get("last")
     for label, stage in [("first", first), ("last", last)]:
@@ -121,6 +128,8 @@ def check_card(path, stages):
     if first in stages and last in stages and stages[first] < stages[last]:
         problems.append(f"range.first ({first}) is younger than range.last ({last})")
     for trait, value in (meta.get("traits") or {}).items():
+        if isinstance(value, dict) and value.get("from") is not None and not isinstance(value["from"], str):
+            problems.append(f"{trait}.from must name the taxon measured")
         if trait in NUMERIC_TRAITS:
             if not isinstance(value, dict):
                 problems.append(f"{trait} must be a {{min, max, note}} mapping")
@@ -147,6 +156,9 @@ def check_card(path, stages):
     for s in SECTIONS:
         if s not in headings:
             problems.append(f"missing section '## {s}'")
+    transfer = re.search(r"^## Model transfer$(.*?)(?=^## |\Z)", body, re.M | re.S)
+    if transfer and not all(f"**{label}:**" in transfer.group(1) for label in ("Can transfer", "Cannot transfer")):
+        problems.append("Model transfer lacks '**Can transfer:**' or '**Cannot transfer:**'")
     return problems
 
 
@@ -272,21 +284,23 @@ def cmd_index():
 def cmd_matrix():
     stages = timescale()
     traits = sorted(NUMERIC_TRAITS) + list(TRAIT_STATES)
-    header = ["slug", "name", "group", "kind", "first", "last", "first_ma", "last_top_ma"]
+    header = ["slug", "name", "group", "kind", "contrasts", "first", "last", "first_ma", "last_top_ma"]
     for t in traits:
         header += [f"{t}_min", f"{t}_max"] if t in NUMERIC_TRAITS else [t]
+    header.append("borrowed")
     tops = dict(zip(list(stages)[1:], list(stages.values())[:-1]))
     rows = []
     for path in card_paths():
         meta, _ = read_card(path)
         rng, tr = meta["range"], meta.get("traits") or {}
-        row = [path.stem, meta["name"], meta["group"], meta["kind"], rng["first"], rng["last"],
-               stages.get(rng["first"]), tops.get(rng["last"])]
+        row = [path.stem, meta["name"], meta["group"], meta["kind"], ";".join(meta.get("contrasts") or []),
+               rng["first"], rng["last"], stages.get(rng["first"]), tops.get(rng["last"])]
         for t in traits:
             v = tr.get(t) or {}
             row += [v.get("min"), v.get("max")] if t in NUMERIC_TRAITS else [v.get("state")]
+        row.append("; ".join(f"{t}: {v['from']}" for t, v in tr.items() if isinstance(v, dict) and v.get("from")))
         rows.append(row)
-    rows.sort(key=lambda r: -(r[6] or 0))
+    rows.sort(key=lambda r: -(r[7] or 0))
     with open(ROOT / "data" / "traits.csv", "w", newline="") as f:
         w = csv.writer(f, lineterminator="\n")
         w.writerow(header)

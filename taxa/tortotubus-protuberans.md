@@ -8,6 +8,7 @@ lineage: >-
   Probably a fungus with dikaryan features (Smith 2016); affinity could instead be a protist or alga (Berbee et al.
   2020). Early filamentous stages were previously named Ornatifilum lornensis.
 placement_confidence: low
+contrasts: [fungal-nutrition, record-timing]
 range:
   first: Rhuddanian
   last: Emsian
@@ -98,6 +99,21 @@ If a fungus, a saprotroph or osmotroph. Cords, in living fungi, move and store n
 - Substrate: the organic matter available to such a fungus was non-vascular (mats, crusts, algae), which limits plausible decomposition rates and supports a patchy, slow detrital cycle; no rate data exist.
 - Trophic base: later Lochkovian coprolites show animals digesting fungal mats and hyphae (Edwards et al. 2020), so a mycelial resource was available to detritivores by the Early Devonian.
 - Biogeography and sampling: the record is palynological and nearshore, so absence from inland strata is not informative.
+
+## Model transfer
+
+**Chosen to contrast:** Contrast a pre-vascular decomposer and nutrient-translocation scenario with its absence, using cord-forming filaments whose fungal affinity and earliest occurrence remain uncertain.
+
+- **Can transfer:**
+  - T. protuberans, Smith's Gotland, Kerrera and Albany material: secondary branches growing back along main filaments and multiplying into intertwined cords supply a qualitative growth rule (Smith 2016, abstract).
+  - T. protuberans, Smith's examined material: simple septal perforations and a two-layered wall characterise the early filamentous stage formerly called Ornatifilum lornensis (Smith 2016, abstract).
+  - T. protuberans, Tuscarora Formation type material in Pennsylvania: an Early Silurian occurrence can anchor a conservative fossil-presence scenario without accepting the disputed Ordovician extension (Johnson 1985).
+- **Cannot transfer:**
+  - Do not assign decomposition, nutrient uptake, storage or translocation rates from cord morphology; this card contains no rate data.
+  - Do not encode fungal identity, dikaryan physiology or saprotrophy as established properties; protist and algal affinities remain open.
+  - Do not use the earliest occurrence as a precise Ordovician–Silurian calibration: stage-level dating is palynological and uncertain.
+  - Do not use the secondary tube and possible-spore dimensions as verified measurements; the primary methods were unavailable to this card's author.
+  - Do not model flask-shaped lateral cells as reproductive organs or derive fecundity from them; they were reinterpreted as broken filament bases.
 
 ## Open questions
 

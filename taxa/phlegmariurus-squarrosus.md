@@ -8,6 +8,7 @@ lineage: >-
   Lycophyte: Lycopodiaceae, subfamily Huperzioideae, genus Phlegmariurus (Palaeotropical clade); homosporous
   and mostly epiphytic. Also treated as Huperzia squarrosa; see Names in the body.
 placement_confidence: high
+contrasts: [water-transport, reproductive-strategy]
 range:
   first: null
   last: null
@@ -26,10 +27,10 @@ traits:
   axis_diameter_mm: {min: null, max: null, note: "The key gives 1.5-3 cm for the sterile part including leaves and 7-10 mm for the strobilus; axis diameter was not obtained."}
   branching: {state: isotomous, note: "Genus Phlegmariurus has isotomous shoots (Field & Bostock 2013); shoots undivided or forked one to several times (key)."}
   leaves: {state: microphylls, note: "Linear-lanceolate, 10-20 x 1-2 mm, subwhorled to spiral (key). Single vein inferred from the genus, not checked for this species."}
-  stomata: {state: present, note: "Not measured in this species. The congener P. nummularifolius had the lowest stomatal density of 38 ferns and lycophytes, 17.1 per mm2 (Prats et al. 2024)."}
+  stomata: {state: present, note: "Not measured in this species. The congener P. nummularifolius had the lowest stomatal density of 38 ferns and lycophytes, 17.1 per mm2 (Prats et al. 2024).", from: "Phlegmariurus nummularifolius"}
   conducting_tissue: {state: tracheids, note: "Vascular lycophyte; wall type not checked. Vein density in the epiphytic congener Huperzia phlegmaria was 0.37 mm per mm2, the lowest of 38 species (Prats et al. 2024; listed there as Huperzia phlegmaria)."}
   sporangium_position: {state: lateral, note: "Sporangia occupy about one-sixth of each sporophyll length (key). The axillary position is the family condition, taken from an OCR-degraded copy of Wagner & Beitel (1992) and not checked for this species."}
-  spores: {state: trilete, note: "Huperzioid spores are trilete with foveolate-fossulate distal sculpture (Field & Bostock 2013); mean equatorial diameter 31-61 micrometres across Neotropical huperzioids (Rincon Baron et al. 2014). Not measured for this species."}
+  spores: {state: trilete, note: "Huperzioid spores are trilete with foveolate-fossulate distal sculpture (Field & Bostock 2013); mean equatorial diameter 31-61 micrometres across Neotropical huperzioids (Rincon Baron et al. 2014). Not measured for this species.", from: "Neotropical huperzioids"}
   heterospory: {state: absent, note: "Lycopodiaceae are homosporous (Rimgaile-Voicik & Naujalis 2022)."}
   rooting: {state: roots, note: "Lycophytes of this family have roots; not checked for this species (Wagner & Beitel 1992 describe a basal root tuft in related genera)."}
   gametophyte: {state: unknown, note: "Gametophytes of most Lycopodiaceae are undiscovered (Rimgaile-Voicik & Naujalis 2022). Bruchmann's type V is that of P. phlegmaria; nothing for this species."}
@@ -98,6 +99,21 @@ Not measured in this species. Congeners show what to expect: the epiphytic *P. n
 - **Where it fails.** Lineage age (Huperzioideae crown about 200 Ma and *Phlegmariurus* crown about 102 Ma, against Early Devonian lycopsids at about 410 Ma), true roots, mesic epiphytic water relations (low vein and stomatal density in congeners), and, in related club mosses, a subterranean gametophyte phase of years (unknown here). Do not transfer congener stomatal or vein values to a Devonian lycopsid.
 - **Numbers to use as ranges.** Leaf 10-20 x 1-2 mm; sporophyll 5-7 mm; trilete spores of about 31-61 micrometres in huperzioids; fertile zone 10-30 cm.
 - **Genomic traits.** Two whole-genome duplications are inferred in Lycopodiaceae (206-214 Ma, which sits uneasily with a 368 Ma crown age from a different clock) and in the ancestor of extant *Phlegmariurus* (22-23 Ma; Xia et al. 2022), and the mitochondrial genome of *H. squarrosa* is 413,530 bp with 66 genes and an ancestral gene order (Liu et al. 2012).
+
+## Model transfer
+
+**Chosen to contrast:** Contrast crowded microphyll axes and graded fertile zones with Devonian lycopsid organisation, while using derived mesic epiphytism to delimit the hydraulic analogy.
+
+- **Can transfer:**
+  - Shoot length: the north-eastern Queensland account of P. squarrosus gives branches 30-75 cm long, hanging, erect or arched; use length rather than standing height (Australian online key, accessed 2026-10-27).
+  - Leaf geometry: P. squarrosus in the Australian key has leaves 10-20 x 1-2 mm, angled 60-90 degrees from the axis and twisted basally; use as an organ-geometry analogue (Australian online key, accessed 2026-10-27).
+  - Fertile-zone geometry: P. squarrosus in the Australian key has fertile zones 10-30 cm long and 7-10 mm across, grading gradually from sterile shoots (Australian online key, accessed 2026-10-27).
+- **Cannot transfer:**
+  - Stomatal density 17.1 per mm2 belongs to the epiphytic congener P. nummularifolius, not P. squarrosus or a Devonian lycopsid (Prats et al. 2024).
+  - Vein density 0.37 mm per mm2 belongs to epiphytic Huperzia phlegmaria, not P. squarrosus; it cannot supply a species-specific or Devonian hydraulic parameter (Prats et al. 2024).
+  - Spore diameters 31-61 micrometres describe Neotropical huperzioids, not measured P. squarrosus spores; retain the original taxonomic scope (Rincon Baron et al. 2014).
+  - Gametophyte maturation times cannot be assigned to P. squarrosus: the cited review concerns Lycopodium and Diphasiastrum, and its own gametophyte is unknown (Rimgaile-Voicik & Naujalis 2022).
+  - Mesic epiphytism cannot represent ancestral Devonian lycopsid ecology: this card assigns it to the much younger Phlegmariurus lineage (Testo et al. 2018, citing Field et al. 2016).
 
 ## Open questions
 

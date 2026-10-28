@@ -1,0 +1,456 @@
+{
+  "items": [
+    {
+      "slug": "rhynie-chert-biota",
+      "contrasts": ["clonal-growth", "fungal-nutrition", "record-timing"],
+      "chosen_to_contrast": "Contrast clonal recolonisation and fungal associations in a repeatedly disturbed wetland, using Rhynie and Windyfield as narrowly sampled habitats with uncertain absolute timing.",
+      "can_transfer": [
+        {
+          "text": "Rhynie plant assemblage: about 40% ground cover can constrain local vegetation cover, without assigning that fraction to individual species (Powell et al., as reported by Wellman 2017).",
+          "support": "Plants covered about 40% of the active ground (Powell et al., as reported by Wellman 2017)"
+        },
+        {
+          "text": "Rhynie plant stands: allow clonal colonisation of fresh sinter or sand followed by destruction during flooding or silica inundation; colonisation and disturbance rates remain unspecified (Wellman 2017).",
+          "support": "and formed clonal stands that colonised new sinter or sand and were destroyed by the next flood or silica inundation; no climax community developed."
+        },
+        {
+          "text": "Aglaophyton at Windyfield: include an arbuscular mycorrhizal association as an observed interaction, without assigning nutrient-exchange rates (Strullu-Derrien et al. 2025).",
+          "support": "and an arbuscular mycorrhizal fungus in *Aglaophyton* (Strullu-Derrien et al. 2025)."
+        },
+        {
+          "text": "Rhynie chert unit: under 15% chert thickness versus over 85% unsilicified sediment can constrain the observation filter; these are stratigraphic proportions, not vegetation-cover estimates (Wellman 2017).",
+          "support": "Cherts are under 15% of the thickness of the chert unit; over 85% is fluvial-lacustrine sediment without silicified plants (Wellman 2017)."
+        }
+      ],
+      "cannot_transfer": [
+        {
+          "text": "Do not apply Rhynie species composition, ground cover or stress tolerance to regional vegetation: neither interpretation of the flora establishes its representativeness.",
+          "support": "Neither shows the chert flora was typical."
+        },
+        {
+          "text": "Do not treat reconstructed member heights as measured whole-plant stature; complete plants are absent.",
+          "support": "No whole plant is preserved."
+        },
+        {
+          "text": "Do not fix the assemblage to one numerical age or stage: the competing radiometric interpretations require alternative placements.",
+          "support": "A model that places Rhynie at a fixed stage should test both."
+        },
+        {
+          "text": "Do not assign observed stomata to every member: Trichopherophyton and Ventarura lack observations, which does not establish anatomical absence.",
+          "support": "Present on five of the seven plants; not observed in Trichopherophyton or Ventarura (Kerp 2018)."
+        }
+      ],
+      "borrowed": [],
+      "doubts": "The body assigns stomata to all seven plants, whereas the front matter reports observations in five. Trait notes cite Kerp 2018, while the reference is listed as Kerp 2017 with a 2018 issue date. Several aggregate trait states conceal member differences."
+    },
+    {
+      "slug": "rhynie-chert-gametophytes",
+      "contrasts": ["sporophyte-independence", "reproductive-strategy", "fungal-nutrition"],
+      "chosen_to_contrast": "Contrast complex, free-living gametophytes with larger independent sporophytes, using anatomically preserved Rhynie plants that retain separate sexes and fungal associations.",
+      "can_transfer": [
+        {
+          "text": "Lyonophyton rhyniense antheridiophores, Rhynie chert: at least 2 cm tall and 2 mm wide, bearing 10 to 40 antheridia up to 600 µm across, constrain male reproductive architecture (Taylor et al. 2005; Kerp 2017).",
+          "support": "antheridiophores of Lyonophyton are at least 2 cm tall and 2 mm wide with 10 to 40 antheridia up to 600 µm across (Taylor et al. 2005; Kerp 2017)."
+        },
+        {
+          "text": "Remyophyton delicatum, one in situ Rhynie stand: over 200 individuals in 1.5 × 1.5 cm constrain observed clustering, without establishing typical population density (Taylor et al. 2005).",
+          "support": "over 200 individuals in 1.5 × 1.5 cm (about 90 per cm², derived);"
+        },
+        {
+          "text": "Lyonophyton rhyniense, Rhynie chert: Glomites arbuscules support including a gametophyte–fungus association; nutrient dependence and exchange rates remain unmeasured (Taylor et al. 2005).",
+          "support": "mycorrhizal (arbuscules of Glomites in Lyonophyton)"
+        }
+      ],
+      "cannot_transfer": [
+        {
+          "text": "Do not parameterise embryonic provisioning, duration of attachment or the transition to sporophyte independence from these fossils: post-fertilisation development is essentially unobserved.",
+          "support": "Post-fertilisation development (embryo to sporophyte) is essentially unobserved, so it remains a free parameter."
+        },
+        {
+          "text": "Do not treat gametophyte–sporophyte assignments as demonstrated attachments; their evidential basis is tissue resemblance and association.",
+          "support": "The assignments are not demonstrated by organic continuity."
+        },
+        {
+          "text": "Do not turn counts of identified Remyophyton gametangiophores into a population sex ratio; the card explicitly distinguishes those quantities.",
+          "support": "a count that need not equal the sex ratio."
+        },
+        {
+          "text": "Do not encode conducting-cell wall types as independently observed gametophyte hydraulics; the card derives wall identity from the matched sporophyte.",
+          "support": "Wall type is inferred from\n      the matching sporophyte."
+        }
+      ],
+      "borrowed": [],
+      "doubts": "Kerp 2017 and Taylor et al. 2005 reverse the reported sex-specific Remyophyton heights. The height maximum of 2 cm is not a secure upper bound because Lyonophyton is described as at least 2 cm. Photosynthesis and the size ratio are interpretations or derivations."
+    },
+    {
+      "slug": "rhyniophytoids",
+      "contrasts": ["height", "sporophyte-independence", "reproductive-strategy"],
+      "chosen_to_contrast": "Contrast small branching systems with one terminal sporangium per apex and competing hypotheses of sporophyte autonomy, using member-specific dimensions within an anatomically heterogeneous morphotype pool.",
+      "can_transfer": [
+        {
+          "text": "Steganotheca striata, Capel Horeb material: at least 5 cm preserved height, at least ten terminal sporangia and 0.5-0.8 mm axes constrain a minimum fertile architecture (Edwards 1970).",
+          "support": "Edwards (1970) described *Steganotheca striata* as a bushy plant at least 5 cm high with at least ten sporangia at the tips of 0.5-0.8 mm axes."
+        },
+        {
+          "text": "Salopella allenii, Welsh Borderland material: sporangia to 9 x 2 mm and trilete spores of 23-37 um constrain reproductive dimensions; retain the possibility of immature spores (Edwards and Richardson 1974).",
+          "support": "with fusiform sporangia to 9 x 2 mm and laevigate trilete spores of 23-37 um, perhaps immature."
+        },
+        {
+          "text": "Cooksonia barrandei, Barrandian material: 1-1.5 mm axes provide a width case for testing photosynthetic autonomy, without coding autonomy as directly observed (Libertín et al. 2018).",
+          "support": "Libertín et al. (2018) disagreed for the 1-1.5 mm axes of *C. barrandei*."
+        }
+      ],
+      "cannot_transfer": [
+        {
+          "text": "Do not code unpreserved conducting tissue as absent or assign one hydraulic system to the grade; most members lack anatomical evidence.",
+          "support": "Most members have no preserved anatomy; that absence is what 'rhyniophytoid' means."
+        },
+        {
+          "text": "Do not use fragment lengths or the aggregate height range as measured whole-plant stature.",
+          "support": "All are fragments, so whole-plant height is unknown."
+        },
+        {
+          "text": "Do not assign observed Silurian gametophyte dimensions, attachment or matrotrophy from this group: no Silurian gametophyte is known.",
+          "support": "No Silurian gametophyte is known;"
+        },
+        {
+          "text": "Do not model rhyniophytoids as one lineage with shared physiological parameters; the grouping combines form taxa with unresolved conducting-tissue status.",
+          "support": "Genera are form taxa. Treat the group as a morphotype pool with unknown tracheid status for most members."
+        }
+      ],
+      "borrowed": [],
+      "doubts": "range.last is Lochkovian although its notes allow Jiangyounia into the basal Pragian. The height maximum of 10 cm conflicts with the note that Tichavekia may exceed 10 cm. Aggregate states obscure unbranched members and taxon-specific anatomical evidence."
+    },
+    {
+      "slug": "riccardiothallus-devonicus",
+      "contrasts": ["record-timing"],
+      "chosen_to_contrast": "Test bryophyte first-appearance constraints against a disputed Pragian thalloid fossil whose gross morphology is reported but whose liverwort identity lacks diagnostic support.",
+      "can_transfer": [
+        {
+          "text": "Riccardiothallus devonicus, Posongchong Formation compression in Yunnan: regularly bifurcating growth can define a qualitative branching rule, without calibrated branch lengths or rates (Guo et al. 2012, abstract).",
+          "support": "Regularly bifurcating, flat thallus (Guo et al. 2012 abstract)."
+        },
+        {
+          "text": "Riccardiothallus devonicus, partially permineralised Posongchong compression: a flat, ecostate, multilayered thallus with entire margins can define a morphological cover type, independent of liverwort assignment (Guo et al. 2012, abstract).",
+          "support": "a regularly bifurcating, flat, ecostate, multilayered thallus with entire margins."
+        }
+      ],
+      "cannot_transfer": [
+        {
+          "text": "Do not use this fossil as a secure liverwort calibration or evidence of Aneuraceae physiology: the liverwort placement was excluded as empirically unjustified (Blanco-Moreno et al. 2025).",
+          "support": "its placement among liverworts \"has not been justified empirically\"."
+        },
+        {
+          "text": "Do not assign gametophyte dominance, sporophyte dependence or matrotrophy as observed traits; identifying the thallus as a gametophyte depends on gross-form affinity.",
+          "support": "the identification as a liverwort gametophyte and the Riccardia comparison rest on gross form."
+        },
+        {
+          "text": "Do not supply thallus dimensions, rhizoid architecture or reproductive output: none is available in the abstract used by the card.",
+          "support": "Thallus size, rhizoids, cell detail and any reproductive structures are not stated in the abstract."
+        },
+        {
+          "text": "Do not assign oil-body chemistry or antiherbivore defence from Givetian liverworts to Riccardiothallus; those observations concern later fossils.",
+          "support": "which is evidence for bryophyte chemistry later in the Devonian, not for this fossil."
+        }
+      ],
+      "borrowed": [],
+      "doubts": "gametophyte.state is known despite the disputed identification. Only abstract-level morphology is available, so no numerical mechanism can be parameterised. The authors' 407-411 Ma range differs from the project's Pragian boundaries, and the dating basis was not accessed."
+    },
+    {
+      "slug": "salopella",
+      "contrasts": ["height", "reproductive-strategy", "record-timing"],
+      "chosen_to_contrast": "Contrast fertile branching and sporangial dimensions among small naked plants while testing how convergent organ shapes and revised identifications alter apparent distributions and first appearances.",
+      "can_transfer": [
+        {
+          "text": "S. australis, Frenchmans Spur specimens: sporangia 6.5-14.0 mm long and 1.3-2.0 mm wide constrain organ dimensions for the emended species (Tims & Chambers 1984; McSweeney et al. 2021).",
+          "support": "parallel-sided sporangia 6.5-14.0 mm long and 1.3-2.0 mm wide"
+        },
+        {
+          "text": "S. caespitosa, Frenchmans Spur holotype: 26 visible sporangia constrain the preserved fertile architecture, without establishing complete lifetime fecundity (McSweeney et al. 2021).",
+          "support": "the holotype shows 26 sporangia,"
+        },
+        {
+          "text": "S. caespitosa, Ghin Ghin Road specimen: 135 mm preserved length supplies a minimum size constraint, not measured whole-plant height (McSweeney et al. 2021).",
+          "support": "a second specimen from Ghin Ghin Road is 135 mm long and in semi-relief."
+        },
+        {
+          "text": "S. cf. marcensis, coalified Shropshire sporangia: retain separate Aneurospora-like ornament types in separate sporangia as reproductive observations, without merging them into one organism (Edwards et al. 1994).",
+          "support": "in situ Aneurospora-like spores of two ornament types in separate sporangia of S. cf. marcensis,"
+        }
+      ],
+      "cannot_transfer": [
+        {
+          "text": "Do not assign Welsh trilete or hilate spore types to S. australis, S. caespitosa or S. laidae; Victorian species have no recovered in situ spores.",
+          "support": "None from the Victorian species."
+        },
+        {
+          "text": "Do not interpret different Welsh spore types as heterospory within a Salopella individual.",
+          "support": "The two Welsh spore types sit in different sporangia and are not interpreted as heterospory."
+        },
+        {
+          "text": "Do not assign tracheids or hydraulic conductance from the Victorian central axial line; its vascular interpretation remains tentative.",
+          "support": "a central line in the axes is read as a possible vascular trace."
+        },
+        {
+          "text": "Do not retain the Limestone Road occurrence as a Ludlow S. australis calibration; the relevant specimens were removed from that species (McSweeney et al. 2021).",
+          "support": "McSweeney et al. (2021) removed them (one became the type of S. laidae, the rest indeterminate), so S. australis is no longer known from that assemblage."
+        }
+      ],
+      "borrowed": [],
+      "doubts": "range.last is Pragian although its notes allow an Emsian age. The modelling summary rounds sporangial measurements; the proposals retain the more precise morphology-section values. Fragment lengths do not establish upright stature, and the genus is a shape category rather than a natural group."
+    },
+    {
+      "slug": "sawdonia-ornata",
+      "contrasts": ["reproductive-strategy", "water-transport"],
+      "chosen_to_contrast": "Contrast lateral reproduction below the shoot apex with terminal-sporangium architectures, using Gaspé material with unequal valves while keeping proposed spine gas-exchange functions uncalibrated.",
+      "can_transfer": [
+        {
+          "text": "S. ornata, Gaspé type-locality material: place sporangia on one or two sides of aerial stems, near and well below the apex, curving towards the stem (Gensel & Berry 2016).",
+          "support": "Sporangia lie near, and well below, the apex of aerial stems, on one or two sides, curving toward the stem at an acute angle."
+        },
+        {
+          "text": "S. ornata, Gaspé type-locality material: distinguish the larger spiny outer valve from the smaller, thinner, flat, spineless inner valve in a sporangial architecture model (Gensel & Berry 2016).",
+          "support": "a larger, more rounded outer (abaxial) valve into which the stalk merges imperceptibly and which is covered with spines, and a smaller, thinner, flat inner valve without spines."
+        },
+        {
+          "text": "S. ornata, Gaspé type-locality material: permit variable lateral-branch density and angle within a pseudomonopodial system; the card supplies no numerical distributions (Gensel & Berry 2016).",
+          "support": "Lateral branching of the pseudomonopodial system varies in density and angle."
+        }
+      ],
+      "cannot_transfer": [
+        {
+          "text": "Do not use Hueber's numerical stem, spine, stomatal or spore values as verified parameter estimates; the card obtained them through an unchecked secondary summary.",
+          "support": "Some quantitative values from Hueber's diagnosis are available only through a secondary summary and need checking:"
+        },
+        {
+          "text": "Do not assign Scottish planar branching, H-branching or cuticular details directly to S. ornata; that material is now cf. Sawdonia sp.",
+          "support": "Scottish material, now treated as cf. Sawdonia sp., showed planar branching,"
+        },
+        {
+          "text": "Do not assign Venezuelan G-type tracheids to S. ornata; that tracheid type is unconfirmed in the focal species.",
+          "support": "G-type tracheids are recorded in the Venezuelan species (Berry & Gensel 2019); the type is not confirmed for S. ornata."
+        },
+        {
+          "text": "Do not convert the calculated spine surface-area extremes into measured photosynthetic or gas-exchange capacity; they combine secondary dimensions and geometrical assumptions.",
+          "support": "my cone calculation from secondary values; the extremes are unlikely to co-occur"
+        },
+        {
+          "text": "Do not encode simultaneous growth and reproduction as directly observed physiology; the card infers their coexistence from sporangial position.",
+          "support": "sporangia positioned well below the apex suggest that fertile and growing regions coexisted (both inferences)."
+        }
+      ],
+      "borrowed": [
+        {
+          "trait": "branching",
+          "from_taxon": "cf. Sawdonia sp., Scottish material",
+          "support": "Planar branching and H-branching are reported for Scottish cf. material (Rayner 1983);"
+        },
+        {
+          "trait": "branching",
+          "from_taxon": "Sawdonia, Venezuelan species unnamed in the card",
+          "support": "the Venezuelan species has two branching types (Berry & Gensel 2019)."
+        },
+        {
+          "trait": "stomata",
+          "from_taxon": "cf. Sawdonia sp., Scottish material",
+          "support": "Rayner (1983) reinterpreted stomatal structure;"
+        },
+        {
+          "trait": "conducting_tissue",
+          "from_taxon": "Sawdonia, Venezuelan species unnamed in the card",
+          "support": "G-type tracheids are recorded in the Venezuelan species (Berry & Gensel 2019); the type is not confirmed for S. ornata."
+        },
+        {
+          "trait": "spores",
+          "from_taxon": "cf. Sawdonia sp., Scottish material",
+          "support": "in situ spores of Scottish material are described by Rayner (1983). Not verified."
+        }
+      ],
+      "doubts": "Front-matter trait notes mix focal-species descriptions with Scottish cf. material and a Venezuelan species; borrowed entries identify those comparative observations, not the provenance of every categorical state. Indeterminate unrolling growth is presented as a modelling rule despite its inferential basis. Type-material dating is only moderate."
+    },
+    {
+      "slug": "tmesipteris",
+      "contrasts": ["sporophyte-independence", "fungal-nutrition", "water-transport"],
+      "chosen_to_contrast": "Contrast fungus-fed, vascularised gametophytes and apogamy without a foot with matrotrophic life-cycle models, using living Tmesipteris as a mechanistic analogue within ferns.",
+      "can_transfer": [
+        {
+          "text": "T. lanceolata, Whittier's cultured gametophytes: about 15% produced apogamous sporophytes joined directly without a foot; use this as a treatment-specific developmental outcome (Whittier 2004).",
+          "support": "about 15% produced apogamous sporophytes with stems and microphylls, joined directly to the gametophyte without a foot,"
+        },
+        {
+          "text": "T. lanceolata gametophytes in axenic culture with minerals and 0.5% glucose remained non-photosynthetic; retain that response under the stated culture conditions (Whittier 2004).",
+          "support": "in axenic culture with minerals and 0.5% glucose: they did not become photosynthetic,"
+        },
+        {
+          "text": "Tmesipteris, species and collection site unspecified: vascular elements in both generations permit a conducting gametophyte state, without numerical hydraulic calibration (Duckett & Ligrone 2005).",
+          "support": "Both generations contain vessel-like elements with scalariform perforation plates and sieve cells;"
+        },
+        {
+          "text": "T. elongata, New Zealand factsheet material: pendent stems 70-1400 mm long and synangia 2.5-6 by 1-2.5 mm constrain species-specific architecture and organ size (New Zealand Flora, accessed 2026-10-27).",
+          "support": "In *T. elongata* the stems are 70-1400 mm long, leaves 8-35 mm (rarely 45 mm) by 2-9 mm, and synangia 2.5-6 by 1-2.5 mm."
+        }
+      ],
+      "cannot_transfer": [
+        {
+          "text": "Do not use pendent T. elongata stem lengths as erect Devonian height or mechanical-support limits; the epiphytic growth geometry differs.",
+          "support": "Pendent epiphytic axes on tree-fern trunks are not an analogue for erect Devonian axes"
+        },
+        {
+          "text": "Do not assign haploid ploidy to the apogamous sporophytes or interpret the culture frequency as a natural population rate.",
+          "support": "Whether the apogamous sporophytes were haploid was not stated in the abstract."
+        },
+        {
+          "text": "Do not infer homology with lycophyte leaves from the microphyll label applied to Tmesipteris appendages.",
+          "support": "the label \"microphyll\" alone carries no homology."
+        },
+        {
+          "text": "Do not import Psilotum gas-exchange or hydraulic values into Tmesipteris; the card reports no measurements for the latter.",
+          "support": "I found no gas-exchange or hydraulic measurements for *Tmesipteris* itself;"
+        },
+        {
+          "text": "Do not derive cell size, stomatal dimensions or growth rates from the reported genome sizes; the sources establish no such relationship.",
+          "support": "Nothing in the sources links this to cell size, stomatal size or growth;"
+        }
+      ],
+      "borrowed": [],
+      "doubts": "The card does not identify the species or collection site underlying the vascular-element observations. height_cm records pendent length rather than upright height. spores.state is na because monolete spores fall outside the vocabulary, despite their observed presence."
+    },
+    {
+      "slug": "tortotubus-protuberans",
+      "contrasts": ["fungal-nutrition", "record-timing"],
+      "chosen_to_contrast": "Contrast a pre-vascular decomposer and nutrient-translocation scenario with its absence, using cord-forming filaments whose fungal affinity and earliest occurrence remain uncertain.",
+      "can_transfer": [
+        {
+          "text": "T. protuberans, Smith's Gotland, Kerrera and Albany material: secondary branches growing back along main filaments and multiplying into intertwined cords supply a qualitative growth rule (Smith 2016, abstract).",
+          "support": "Bundles of intertwined filaments, enclosed by an elaborately sculptured surface, formed as secondary branches grew back along the main filament and then multiplied."
+        },
+        {
+          "text": "T. protuberans, Smith's examined material: simple septal perforations and a two-layered wall characterise the early filamentous stage formerly called Ornatifilum lornensis (Smith 2016, abstract).",
+          "support": "the early filamentous stage, formerly Ornatifilum lornensis, has simple septal perforations and a two-layered cell wall."
+        },
+        {
+          "text": "T. protuberans, Tuscarora Formation type material in Pennsylvania: an Early Silurian occurrence can anchor a conservative fossil-presence scenario without accepting the disputed Ordovician extension (Johnson 1985).",
+          "support": "Described by Johnson (1985) from the Early Silurian Tuscarora Formation of Pennsylvania,"
+        }
+      ],
+      "cannot_transfer": [
+        {
+          "text": "Do not assign decomposition, nutrient uptake, storage or translocation rates from cord morphology; the card contains no rate data.",
+          "support": "no rate data exist."
+        },
+        {
+          "text": "Do not encode fungal identity, dikaryan physiology or saprotrophy as established properties; protist and algal affinities remain open.",
+          "support": "Berbee et al. (2020) rate it possibly fungal but unlike any living taxon, leaving a protist or algal affinity open."
+        },
+        {
+          "text": "Do not use the earliest occurrence as a precise Ordovician–Silurian calibration: stage-level dating is palynological and uncertain.",
+          "support": "Stage-level dating is by palynology, not radiometric, and the earliest stage is not firm"
+        },
+        {
+          "text": "Do not use the secondary tube and possible-spore dimensions as verified measurements; the primary methods were unavailable to the card's author.",
+          "support": "I could not read the methods of Smith's paper, so sizes are provisional."
+        },
+        {
+          "text": "Do not model flask-shaped lateral cells as reproductive organs or derive fecundity from them; they were reinterpreted as broken filament bases.",
+          "support": "Flask-shaped lateral cells once read as spore-bearing structures are broken filament bases (Berbee et al. 2020)."
+        }
+      ],
+      "borrowed": [],
+      "doubts": "Rhuddanian is used as a conservative range boundary rather than a demonstrated stage assignment for the type material. The review's 419-359 Ma range differs from the card's broader account. Primary methods, specimen-level measurements and quantitative physiology are unavailable."
+    },
+    {
+      "slug": "trimerophytes",
+      "contrasts": ["height", "water-transport", "reproductive-strategy"],
+      "chosen_to_contrast": "Contrast stature supported by leafless branching and primary tissues with clustered reproductive output, using separate anatomical and architectural observations from members of the basal euphyllophyte plexus.",
+      "can_transfer": [
+        {
+          "text": "Psilophyton crenulatum, Atholville material: 3-5 mm axis diameters from two spot measurements provide local dimensional constraints, not a population distribution (Doran and Tomescu 2025).",
+          "support": "Psilophyton crenulatum 3-5 mm in two spot measurements (Doran and Tomescu 2025);"
+        },
+        {
+          "text": "Pertica dalhousii, Dalhousie-area material: 32-128 sporangia per cluster constrain reproductive branching and organ counts, without specifying spores per sporangium (Doran et al. 1978).",
+          "support": "32-128 per cluster in Pertica dalhousii (Doran et al. 1978)."
+        },
+        {
+          "text": "Psilophyton dawsonii, Gaspé material: bordered, multiaperturate P-type pits provide a conducting-tissue state; measured hydraulic conductance is not supplied (Hartman and Banks 1980).",
+          "support": "bordered, multiaperturate pits (P-type) in Psilophyton dawsonii and P. crenulatum (Hartman and Banks 1980; Doran 1980, via the Psilophyton card);"
+        },
+        {
+          "text": "Wilhowia phocarum, Battery Point Formation at Gaspé: standing axes of 1 cm without wood provide a member-specific support case, without establishing whole-plant height (Gensel 2022).",
+          "support": "*Wilhowia* stood on 1 cm axes without wood (Gensel 2022)."
+        }
+      ],
+      "cannot_transfer": [
+        {
+          "text": "Do not treat the aggregate height range as measured stature or a fitted prior; it combines textbook reconstructions and secondary estimates.",
+          "support": "Textbook reconstructions, not measurements:"
+        },
+        {
+          "text": "Do not assign Psilophyton tracheid anatomy or hydraulic properties to Pertica; its anatomy is unknown.",
+          "support": "anatomy unknown for Pertica."
+        },
+        {
+          "text": "Do not encode the lateral branch systems as observed leaves or assign them leaf physiological parameters; their precursor status is an interpretation.",
+          "support": "Lateral branch systems are the proposed leaf precursors, not leaves"
+        },
+        {
+          "text": "Do not make Chaleuria's apparent heterospory a grade-wide reproductive state; even its membership in the grade is unresolved.",
+          "support": "its trimerophyte status is not established here."
+        },
+        {
+          "text": "Do not use the Richardsville radiometric age as a direct Pragian–Emsian boundary calibration; the card places it younger than that boundary.",
+          "support": "the only\n    radiometric anchor (407.4 +/- 0.8 Ma, Richardsville rhyolites) sits about 3 Myr younger than the Pragian-Emsian\n    boundary"
+        }
+      ],
+      "borrowed": [],
+      "doubts": "Aggregate tracheid, rhizome and homospory states are documented for selected members only. Wilhowia's placement is disputed within the card. Whole-plant heights are reconstructed, and the tracheid-diameter correlation spans early vascular plants rather than supplying a trimerophyte-specific hydraulic relationship."
+    },
+    {
+      "slug": "ulothrix",
+      "contrasts": ["sporophyte-independence", "reproductive-strategy"],
+      "chosen_to_contrast": "Contrast a putative haplontic baseline with a growing unicellular diploid phase and environmentally cued asexual reproduction, keeping freshwater U. zonata separate from marine U. flacca.",
+      "can_transfer": [
+        {
+          "text": "U. zonata, studied material with collection site unspecified: zoospore formation favoured near 20 °C and 520 µE under short or long days supplies an environmental switching relationship (Graham et al. 1985b).",
+          "support": "Zoospore formation is favoured near 20 °C, at 520 µE and under short or long days,"
+        },
+        {
+          "text": "U. zonata cells, collection site unspecified: 2 to 4 large or up to 32 smaller hypnospores per cell constrain alternative asexual propagule outputs (Bullock 1978).",
+          "support": "with 2 to 4 large or up to 32 smaller per cell;"
+        },
+        {
+          "text": "U. flacca var. roscoffensis zygotes, site unspecified: karyogamy follows gamete fusion by 8 to 24 h, with flagella shed about 8 h after fertilisation (Berger-Perrot et al. 1993).",
+          "support": "karyogamy follows gamete fusion by 8 to 24 h, flagella are shed about 8 h after fertilisation,"
+        },
+        {
+          "text": "U. zonata, physiological material with site unspecified: peak net photosynthesis at 5 °C and 1100 µE m-2 s-1, reaching 16.8 mg O2 g-1 h-1, constrains an aquatic physiological case (Graham et al. 1985a).",
+          "support": "Net photosynthesis peaks at 5 °C and 1100 µE m-2 s-1 (16.8 mg O2 g-1 h-1),"
+        }
+      ],
+      "cannot_transfer": [
+        {
+          "text": "Do not encode verified zygotic meiosis or a pure haplontic cycle for U. zonata; the card lacks a primary cytological demonstration.",
+          "support": "I could not access a primary cytological demonstration of zygotic meiosis in *U. zonata*,"
+        },
+        {
+          "text": "Do not assign endoreduplication, polyploid nuclear behaviour or demonstrated Codiolum sporophyte function from Monostroma angicava directly to Ulothrix.",
+          "support": "on cytological tests made only in *Monostroma angicava*, by Horinouchi et al. (2019)"
+        },
+        {
+          "text": "Do not reuse the U. zonata zoospore temperature and photoperiod responses as cues for sexual reproduction; equivalent gamete-formation evidence is absent.",
+          "support": "the sources read give no equivalent cues for gamete formation"
+        },
+        {
+          "text": "Do not transfer Ulothrix reproduction directly into embryophyte matrotrophy or terrestrial spore-dispersal mechanisms; zygotes are unprovisioned and sporopollenin walls are absent.",
+          "support": "the zygote is not retained or provisioned, there is no sporopollenin spore wall,"
+        },
+        {
+          "text": "Do not use Devonian Ulotrichales-type filaments to date Ulothrix itself; the reported fossils support, at most, an order-level assignment.",
+          "support": "they would place a stage at most at the Ulotrichales level, not Ulothrix."
+        }
+      ],
+      "borrowed": [],
+      "doubts": "The card supplies no collection sites or specimen identifiers for the quantitative studies. Its classical haplontic baseline remains unverified for U. zonata, and marine Codiolum interpretations differ. Species within Ulothrix are retained separately; Monostroma observations are comparative body-text evidence, not front-matter trait measurements."
+    }
+  ]
+}

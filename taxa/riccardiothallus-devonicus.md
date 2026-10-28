@@ -8,6 +8,7 @@ lineage: >-
   Claimed simple thalloid liverwort (Marchantiophyta, Jungermanniopsida, Metzgeriidae, Aneuraceae, close to
   extant Riccardia); the placement rests on thallus form alone.
 placement_confidence: low
+contrasts: [record-timing]
 range:
   first: Pragian
   last: Pragian
@@ -92,6 +93,19 @@ Aneuraceae are moist-habitat thalloid plants with a dominant gametophyte; the au
 - Clocks: crown bryophytes diverged 445-429 Ma (Hooper et al. 2026), early Silurian; complex thalloid liverworts radiated in the Late Silurian-Early Devonian (Flores et al. 2023); most bryophyte orders originated in the Jurassic or later (Bechteler et al. 2023). If those clocks hold, a Pragian thalloid liverwort would sit on a stem lineage or in an extinct clade.
 - Gametophyte-dominant, multilayered thalloid plants offer a competitor and soil-cover type for moist Early Devonian habitats; treat their abundance as unknown, not zero.
 - Give this fossil low weight; use Givetian *Metzgeriothallus* as the secure liverwort bound.
+
+## Model transfer
+
+**Chosen to contrast:** Test bryophyte first-appearance constraints against a disputed Pragian thalloid fossil whose gross morphology is reported but whose liverwort identity lacks diagnostic support.
+
+- **Can transfer:**
+  - Riccardiothallus devonicus, Posongchong Formation compression in Yunnan: regularly bifurcating growth can define a qualitative branching rule, without calibrated branch lengths or rates (Guo et al. 2012, abstract).
+  - Riccardiothallus devonicus, partially permineralised Posongchong compression: a flat, ecostate, multilayered thallus with entire margins can define a morphological cover type, independent of liverwort assignment (Guo et al. 2012, abstract).
+- **Cannot transfer:**
+  - Do not use this fossil as a secure liverwort calibration or evidence of Aneuraceae physiology: the liverwort placement was excluded as empirically unjustified (Blanco-Moreno et al. 2025).
+  - Do not assign gametophyte dominance, sporophyte dependence or matrotrophy as observed traits; identifying the thallus as a gametophyte depends on gross-form affinity.
+  - Do not supply thallus dimensions, rhizoid architecture or reproductive output: none is available in the abstract used by this card.
+  - Do not assign oil-body chemistry or antiherbivore defence from Givetian liverworts to Riccardiothallus; those observations concern later fossils.
 
 ## Open questions
 

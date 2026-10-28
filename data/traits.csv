@@ -1,60 +1,71 @@
-slug,name,group,kind,first,last,first_ma,last_top_ma,axis_diameter_mm_min,axis_diameter_mm_max,height_cm_min,height_cm_max,branching,leaves,stomata,conducting_tissue,sporangium_position,spores,heterospory,rooting,gametophyte
-early-glomeromycotan-fungi,Early arbuscular mycorrhizal (glomeromycotan) fungi,fungus,assemblage,Darriwilian,Emsian,469.4,393.47,,,,,na,na,na,na,na,na,na,na,na
-eophytes,Eophytes and cryptophytes (Eophytidae),cryptospore-plant,group,Darriwilian,Lochkovian,469.4,413.02,,2,,2,isotomous,absent,present,absent,terminal,cryptospores,unknown,unknown,unknown
-ordovician-cryptospores,Ordovician cryptospore assemblages,cryptospore-plant,dispersed_spores,Darriwilian,Hirnantian,469.4,443.1,,,,,unknown,unknown,unknown,unknown,unknown,cryptospores,unknown,unknown,unknown
-ambitisporites,Ambitisporites,incertae-sedis,dispersed_spores,Katian,Lochkovian,452.8,413.02,,,,,unknown,unknown,unknown,unknown,unknown,trilete,unknown,unknown,unknown
-tortotubus-protuberans,Tortotubus protuberans,fungus,mesofossil,Rhuddanian,Emsian,443.1,393.47,,,,,na,na,na,na,na,na,na,na,na
-cooksonia,Cooksonia,rhyniophytoid,megafossil,Sheinwoodian,Lochkovian,432.9,413.02,0.2,1.5,1,6,isotomous,absent,present,tracheids,terminal,trilete,absent,unknown,unknown
-rhyniophytoids,"Rhyniophytoids (rhyniophytes sensu lato, cooksonioid plants)",rhyniophytoid,group,Sheinwoodian,Lochkovian,432.9,413.02,0.1,2.5,1,10,isotomous,absent,present,unknown,terminal,trilete,absent,unknown,unknown
-chara,Chara,streptophyte-alga,extant,Gorstian,,426.7,,,,,,mixed,na,na,na,na,na,na,rhizoids,na
-bathurst-island-flora,Bathurst Island late Ludlow flora,zosterophyll,assemblage,Ludfordian,Pridoli,425.0,419.62,0.1,5,,8.1,isotomous,absent,unknown,unknown,both,unknown,absent,unknown,unknown
-nematothallus,Nematothallus,nematophyte,mesofossil,Ludfordian,Lochkovian,425.0,413.02,,,,,na,na,na,na,na,na,na,na,na
-welsh-borderland-mesofossils,Welsh Borderland charcoalified mesofossil assemblages,incertae-sedis,assemblage,Ludfordian,Lochkovian,425.0,413.02,,2,,6,isotomous,absent,present,tracheids,terminal,both,unknown,unknown,unknown
-zosterophylls,Zosterophylls (Zosterophyllopsida),zosterophyll,group,Ludfordian,Frasnian,425.0,372.15,0.3,12,4.5,44,mixed,absent,present,tracheids-G,lateral,trilete,absent,rooting-axes,unknown
-zosterophyllum,Zosterophyllum,zosterophyll,megafossil,Ludfordian,Emsian,425.0,393.47,0.3,5.1,4.5,11.6,mixed,absent,present,tracheids,lateral,unknown,absent,rooting-axes,unknown
-aberlemnia-caledonica,Aberlemnia caledonica,rhyniophytoid,megafossil,Pridoli,Lochkovian,422.7,413.02,0.4,1.8,6.7,,isotomous,absent,unknown,unknown,terminal,unknown,unknown,unknown,unknown
-baragwanathia-brevifolioides,Baragwanathia brevifolioides,lycopsid,megafossil,Pridoli,Pridoli,422.7,419.62,,,,,isotomous,microphylls,unknown,unknown,unknown,unknown,unknown,unknown,unknown
-early-lycopsids,"Early lycopsids (""lycopods"" in older usage)",lycopsid,group,Pridoli,Givetian,422.7,382.31,3,34,,,mixed,microphylls,present,tracheids-G,lateral,trilete,absent,rooting-axes,unknown
-prototaxites,Prototaxites,nematophyte,megafossil,Pridoli,Famennian,422.7,358.86,56,,,883,none,na,na,na,na,na,na,unknown,na
-salopella,Salopella,rhyniophytoid,megafossil,Pridoli,Pragian,422.7,410.62,0.05,3.2,,,isotomous,absent,unknown,unknown,terminal,both,unknown,unknown,unknown
-baragwanathia-flora,The Baragwanathia floras of Victoria,tracheophyte-other,assemblage,Lochkovian,Emsian,419.62,393.47,0.7,65,40,,mixed,microphylls,unknown,tracheids,both,unknown,unknown,unknown,unknown
-baragwanathia-longifolia,Baragwanathia longifolia,lycopsid,megafossil,Lochkovian,Pragian,419.62,410.62,,,,,unknown,microphylls,unknown,tracheids,lateral,unknown,unknown,unknown,unknown
-hedeia,Hedeia,rhyniophytoid,megafossil,Lochkovian,Emsian,419.62,393.47,0.8,3.25,,,isotomous,absent,unknown,unknown,terminal,unknown,unknown,unknown,unknown
-leclercqia,Leclercqia,lycopsid,megafossil,Lochkovian,Frasnian,419.62,372.15,,,,,isotomous,microphylls,present,tracheids,lateral,trilete,absent,unknown,unknown
-parka-decipiens,Parka decipiens,incertae-sedis,megafossil,Lochkovian,Lochkovian,419.62,413.02,,,,,na,na,unknown,unknown,na,na,unknown,na,unknown
-partitatheca,Partitatheca,cryptospore-plant,mesofossil,Lochkovian,Lochkovian,419.62,413.02,,2,,,isotomous,absent,present,unknown,terminal,cryptospores,unknown,unknown,unknown
-pluricaulis-biformis,Pluricaulis biformis (manuscript name),zosterophyll,megafossil,Lochkovian,Emsian,419.62,393.47,,,,,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown
-xitun-flora,Xitun Formation flora,zosterophyll,assemblage,Lochkovian,Lochkovian,419.62,413.02,,,,9.8,mixed,absent,unknown,unknown,lateral,unknown,unknown,rooting-axes,unknown
-yarravia,Yarravia,rhyniophytoid,megafossil,Lochkovian,Emsian,419.62,393.47,0.8,4.2,28,,isotomous,absent,unknown,unknown,terminal,unknown,unknown,unknown,unknown
-aglaophyton-majus,Aglaophyton majus,protracheophyte,megafossil,Pragian,Emsian,413.02,393.47,,6,,20,isotomous,absent,present,hydroids,terminal,trilete,absent,rhizoids,known
-asteroxylon-mackiei,Asteroxylon mackiei,lycopsid,megafossil,Pragian,Emsian,413.02,393.47,,10,,30,mixed,enations,present,tracheids-G,lateral,trilete,absent,rooting-axes,unknown
-dawsonites,Dawsonites,basal-euphyllophyte,megafossil,Pragian,Emsian,413.02,393.47,,,,,mixed,unknown,unknown,unknown,terminal,trilete,absent,na,unknown
-drepanophycus-spinaeformis,Drepanophycus spinaeformis,lycopsid,megafossil,Pragian,Givetian,413.02,382.31,5.9,18,,,mixed,microphylls,present,tracheids-G,lateral,unknown,unknown,rhizomes,unknown
-eophyllophyton-bellum,Eophyllophyton bellum,basal-euphyllophyte,megafossil,Pragian,Pragian,413.02,410.62,,,,,unknown,megaphylls,unknown,tracheids,lateral,unknown,unknown,unknown,unknown
-horneophyton-lignieri,Horneophyton lignieri,protracheophyte,megafossil,Pragian,Emsian,413.02,393.47,,2,,20,isotomous,absent,present,tracheids,terminal,trilete,absent,rhizomes,known
-nothia-aphylla,Nothia aphylla,protracheophyte,megafossil,Pragian,Emsian,413.02,393.47,,2.5,,15,isotomous,enations,present,hydroids,lateral,trilete,absent,rhizomes,known
-posongchong-flora,Posongchong Formation flora,zosterophyll,assemblage,Pragian,Pragian,413.02,410.62,,,,,mixed,microphylls,unknown,tracheids,both,both,unknown,unknown,unknown
-psilophyton,Psilophyton,basal-euphyllophyte,megafossil,Pragian,Eifelian,413.02,387.95,,,30,60,mixed,enations,present,tracheids-P,terminal,trilete,absent,rhizomes,unknown
-rhynia-gwynne-vaughanii,Rhynia gwynne-vaughanii,rhyniopsid,megafossil,Pragian,Emsian,413.02,393.47,,3,,20,mixed,absent,present,tracheids-S,terminal,trilete,absent,rhizoids,known
-rhynie-chert-biota,Rhynie and Windyfield chert biota,incertae-sedis,assemblage,Pragian,Emsian,413.02,393.47,,10,,30,mixed,enations,present,tracheids,both,trilete,absent,rooting-axes,known
-rhynie-chert-gametophytes,Rhynie Chert gametophytes,incertae-sedis,megafossil,Pragian,Emsian,413.02,393.47,2,,0.4,2,mixed,absent,present,tracheids,na,na,na,rhizoids,known
-riccardiothallus-devonicus,Riccardiothallus devonicus,bryophyte,megafossil,Pragian,Pragian,413.02,410.62,,,,,isotomous,absent,unknown,unknown,unknown,unknown,unknown,unknown,known
-trimerophytes,Trimerophytes (Trimerophytina) and the basal euphyllophyte plexus,basal-euphyllophyte,group,Pragian,Eifelian,413.02,387.95,3,10,30,300,mixed,absent,present,tracheids-P,terminal,trilete,absent,rhizomes,unknown
-winfrenatia-reticulata,Winfrenatia reticulata,lichen,mesofossil,Pragian,Pragian,413.02,410.62,,,,,na,na,na,na,na,na,na,na,na
-franhueberia-gerriennei,Franhueberia gerriennei,basal-euphyllophyte,megafossil,Emsian,Emsian,410.62,393.47,,6,,,unknown,unknown,unknown,tracheids-P,unknown,unknown,unknown,unknown,unknown
-pertica,Pertica,basal-euphyllophyte,megafossil,Emsian,Eifelian,410.62,387.95,,,100,300,pseudomonopodial,absent,unknown,unknown,terminal,trilete,absent,unknown,unknown
-renalia-hueberi,Renalia hueberi,zosterophyll,megafossil,Emsian,Emsian,410.62,393.47,1,1.5,11,30,pseudomonopodial,absent,unknown,tracheids,terminal,trilete,absent,unknown,unknown
-sawdonia-ornata,Sawdonia ornata,zosterophyll,megafossil,Emsian,Emsian,410.62,393.47,,5,,,pseudomonopodial,enations,present,tracheids,lateral,trilete,absent,unknown,unknown
-palaeostigma,Palaeostigma,lycopsid,megafossil,Eifelian,Givetian,393.47,382.31,,,,,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown
-archaeopteris,Archaeopteris,progymnosperm,megafossil,Givetian,Famennian,387.95,358.86,80,450,1100,3150,mixed,megaphylls,unknown,tracheids,lateral,trilete,present,roots,unknown
-metzgeriothallus-sharonae,Metzgeriothallus sharonae,bryophyte,megafossil,Givetian,Givetian,387.95,382.31,,,,,mixed,absent,unknown,unknown,unknown,unknown,unknown,unknown,known
-wattieza,Wattieza,cladoxylopsid,megafossil,Givetian,Frasnian,387.95,372.15,200,1000,800,,monopodial,absent,unknown,tracheids,unknown,unknown,unknown,roots,unknown
-anthoceros,Anthoceros,bryophyte,extant,,,,,,,,,none,absent,present,absent,na,unknown,absent,rhizoids,known
-coleochaete,Coleochaete,streptophyte-alga,extant,,,,,,,,,mixed,na,na,na,na,na,na,unknown,na
-marchantia-polymorpha,Marchantia polymorpha,bryophyte,extant,,,,,7,20,2,10,isotomous,absent,absent,absent,terminal,unknown,absent,rhizoids,known
-phlegmariurus-squarrosus,Phlegmariurus squarrosus,lycopsid,extant,,,,,,,30,75,isotomous,microphylls,present,tracheids,lateral,trilete,absent,roots,unknown
-psilotum-nudum,Psilotum nudum,fern,extant,,,,,0.5,3,4,72.5,isotomous,enations,present,tracheids,lateral,na,absent,rhizomes,known
-tmesipteris,Tmesipteris,fern,extant,,,,,,,7,140,isotomous,microphylls,present,tracheids,lateral,na,absent,rhizomes,known
-ulothrix,Ulothrix,chlorophyte-alga,extant,,,,,,,,,none,na,na,na,na,na,na,unknown,na
-ulva,Ulva,chlorophyte-alga,extant,,,,,,,,,none,na,na,na,na,na,na,rhizoids,known
-zygnematophyceae,Zygnematophyceae,streptophyte-alga,extant,,,,,,,,,none,na,na,na,na,na,na,unknown,na
+slug,name,group,kind,contrasts,first,last,first_ma,last_top_ma,axis_diameter_mm_min,axis_diameter_mm_max,height_cm_min,height_cm_max,branching,leaves,stomata,conducting_tissue,sporangium_position,spores,heterospory,rooting,gametophyte,borrowed
+early-glomeromycotan-fungi,Early arbuscular mycorrhizal (glomeromycotan) fungi,fungus,assemblage,fungal-nutrition;record-timing,Darriwilian,Emsian,469.4,393.47,,,,,na,na,na,na,na,na,na,na,na,
+eophytes,Eophytes and cryptophytes (Eophytidae),cryptospore-plant,group,water-transport;reproductive-strategy;record-timing,Darriwilian,Lochkovian,469.4,413.02,,2,,2,isotomous,absent,present,absent,terminal,cryptospores,unknown,unknown,unknown,
+ordovician-cryptospores,Ordovician cryptospore assemblages,cryptospore-plant,dispersed_spores,record-timing;reproductive-strategy,Darriwilian,Hirnantian,469.4,443.1,,,,,unknown,unknown,unknown,unknown,unknown,cryptospores,unknown,unknown,unknown,
+ambitisporites,Ambitisporites,incertae-sedis,dispersed_spores,reproductive-strategy;record-timing,Katian,Lochkovian,452.8,413.02,,,,,unknown,unknown,unknown,unknown,unknown,trilete,unknown,unknown,unknown,
+zbrza-assemblage,Zbrza putative plant assemblage,incertae-sedis,assemblage,record-timing,Hirnantian,Hirnantian,445.2,443.1,,,,,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,
+tortotubus-protuberans,Tortotubus protuberans,fungus,mesofossil,fungal-nutrition;record-timing,Rhuddanian,Emsian,443.1,393.47,,,,,na,na,na,na,na,na,na,na,na,
+cooksonia,Cooksonia,rhyniophytoid,megafossil,sporophyte-independence;water-transport;reproductive-strategy,Sheinwoodian,Lochkovian,432.9,413.02,0.2,1.5,1,6,isotomous,absent,present,tracheids,terminal,trilete,absent,unknown,unknown,
+rhyniophytoids,"Rhyniophytoids (rhyniophytes sensu lato, cooksonioid plants)",rhyniophytoid,group,height;sporophyte-independence;reproductive-strategy,Sheinwoodian,Lochkovian,432.9,413.02,0.06,2.5,1,10,isotomous,absent,present,unknown,terminal,trilete,absent,unknown,unknown,
+chara,Chara,streptophyte-alga,extant,sporophyte-independence;reproductive-strategy;record-timing,Gorstian,,426.7,,,,,,mixed,na,na,na,na,na,na,rhizoids,na,branching: Nitella
+bathurst-island-flora,Bathurst Island late Ludlow flora,zosterophyll,assemblage,reproductive-strategy;record-timing,Ludfordian,Pridoli,425.0,419.62,0.1,5,,8.1,isotomous,absent,unknown,unknown,both,unknown,absent,unknown,unknown,
+nematothallus,Nematothallus,nematophyte,mesofossil,fungal-nutrition;record-timing,Ludfordian,Lochkovian,425.0,413.02,,,,,na,na,na,na,na,na,na,na,na,
+welsh-borderland-mesofossils,Welsh Borderland charcoalified mesofossil assemblages,incertae-sedis,assemblage,water-transport;reproductive-strategy;record-timing,Ludfordian,Lochkovian,425.0,413.02,,2,,6,isotomous,absent,present,tracheids,terminal,both,unknown,unknown,unknown,
+zosterophylls,Zosterophylls (Zosterophyllopsida),zosterophyll,group,height;reproductive-strategy;record-timing,Ludfordian,Frasnian,425.0,372.15,0.3,12,4.5,44,mixed,absent,present,tracheids-G,lateral,trilete,absent,rooting-axes,unknown,
+zosterophyllum,Zosterophyllum,zosterophyll,megafossil,height;water-transport;reproductive-strategy;clonal-growth,Ludfordian,Emsian,425.0,393.47,0.3,5.1,4.5,11.6,mixed,absent,present,tracheids,lateral,unknown,absent,rooting-axes,unknown,
+aberlemnia-caledonica,Aberlemnia caledonica,rhyniophytoid,megafossil,height;reproductive-strategy;record-timing,Pridoli,Lochkovian,422.7,413.02,0.4,1.8,6.7,,isotomous,absent,unknown,unknown,terminal,unknown,unknown,unknown,unknown,
+baragwanathia-brevifolioides,Baragwanathia brevifolioides,lycopsid,megafossil,record-timing,Pridoli,Pridoli,422.7,419.62,,,,,isotomous,microphylls,unknown,unknown,unknown,unknown,unknown,unknown,unknown,
+early-lycopsids,"Early lycopsids (""lycopods"" in older usage)",lycopsid,group,clonal-growth;reproductive-strategy;record-timing,Pridoli,Givetian,422.7,382.31,3,34,,,mixed,microphylls,present,tracheids-G,lateral,trilete,absent,rooting-axes,unknown,
+prototaxites,Prototaxites,nematophyte,megafossil,height;fungal-nutrition;record-timing,Pridoli,Famennian,422.7,358.86,56,,,883,none,na,na,na,na,na,na,unknown,na,
+salopella,Salopella,rhyniophytoid,megafossil,height;reproductive-strategy;record-timing,Pridoli,Pragian,422.7,410.62,0.05,3.2,,,isotomous,absent,unknown,unknown,terminal,both,unknown,unknown,unknown,
+baragwanathia-flora,The Baragwanathia floras of Victoria,tracheophyte-other,assemblage,height;record-timing,Lochkovian,Emsian,419.62,393.47,0.7,65,40,,mixed,microphylls,unknown,tracheids,both,unknown,unknown,unknown,unknown,
+baragwanathia-longifolia,Baragwanathia longifolia,lycopsid,megafossil,record-timing;water-transport,Lochkovian,Pragian,419.62,410.62,,,,,unknown,microphylls,unknown,tracheids,lateral,unknown,unknown,unknown,unknown,
+hedeia,Hedeia,rhyniophytoid,megafossil,reproductive-strategy;record-timing,Lochkovian,Emsian,419.62,393.47,0.8,3.25,,,isotomous,absent,unknown,unknown,terminal,unknown,unknown,unknown,unknown,
+leclercqia,Leclercqia,lycopsid,megafossil,height;reproductive-strategy;record-timing,Lochkovian,Frasnian,419.62,372.15,,,,,isotomous,microphylls,present,tracheids,lateral,trilete,absent,unknown,unknown,
+parka-decipiens,Parka decipiens,incertae-sedis,megafossil,sporophyte-independence;reproductive-strategy;record-timing,Lochkovian,Lochkovian,419.62,413.02,,,,,na,na,unknown,unknown,na,na,unknown,na,unknown,
+partitatheca,Partitatheca,cryptospore-plant,mesofossil,water-transport;reproductive-strategy;record-timing,Lochkovian,Lochkovian,419.62,413.02,,2,,,isotomous,absent,present,unknown,terminal,cryptospores,unknown,unknown,unknown,axis_diameter_mm: Eophytes generally
+pluricaulis-biformis,Pluricaulis biformis (manuscript name),zosterophyll,megafossil,record-timing,Lochkovian,Emsian,419.62,393.47,,,,,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,
+sciadophyton,Sciadophyton,incertae-sedis,megafossil,sporophyte-independence,Lochkovian,Emsian,419.62,393.47,2.0,2.6,,10,mixed,absent,unknown,tracheids-S,na,na,na,unknown,known,
+sengelia-radicans,Sengelia radicans,lycopsid,megafossil,clonal-growth;height,Lochkovian,Pragian,419.62,410.62,3,34,,,K-branching,microphylls,present,tracheids,lateral,unknown,unknown,rooting-axes,unknown,
+sporogonites,Sporogonites,incertae-sedis,megafossil,sporophyte-independence;reproductive-strategy,Lochkovian,Emsian,419.62,393.47,0.25,2.1,0.8,11.5,none,absent,unknown,unknown,terminal,unknown,unknown,unknown,unknown,
+tortilicaulis-offaeus,Tortilicaulis offaeus,tracheophyte-other,mesofossil,water-transport;record-timing,Lochkovian,Lochkovian,419.62,413.02,0.06,0.17,,,isotomous,absent,present,tracheids,terminal,trilete,unknown,unknown,unknown,
+xitun-flora,Xitun Formation flora,zosterophyll,assemblage,water-transport;reproductive-strategy;record-timing,Lochkovian,Lochkovian,419.62,413.02,,,,9.8,mixed,absent,unknown,unknown,lateral,unknown,unknown,rooting-axes,unknown,
+yarravia,Yarravia,rhyniophytoid,megafossil,height;reproductive-strategy;record-timing,Lochkovian,Emsian,419.62,393.47,0.8,4.2,28,,isotomous,absent,unknown,unknown,terminal,unknown,unknown,unknown,unknown,
+aglaophyton-majus,Aglaophyton majus,protracheophyte,megafossil,water-transport;fungal-nutrition;sporophyte-independence,Pragian,Emsian,413.02,393.47,,6,,20,isotomous,absent,present,hydroids,terminal,trilete,absent,rhizoids,known,
+asteroxylon-mackiei,Asteroxylon mackiei,lycopsid,megafossil,water-transport;clonal-growth;reproductive-strategy,Pragian,Emsian,413.02,393.47,,10,,30,mixed,enations,present,tracheids-G,lateral,trilete,absent,rooting-axes,unknown,
+dawsonites,Dawsonites,basal-euphyllophyte,megafossil,reproductive-strategy;record-timing,Pragian,Emsian,413.02,393.47,,,,,mixed,unknown,unknown,unknown,terminal,trilete,absent,na,unknown,
+drepanophycus-spinaeformis,Drepanophycus spinaeformis,lycopsid,megafossil,clonal-growth;water-transport;record-timing,Pragian,Givetian,413.02,382.31,5.9,18,,,mixed,microphylls,present,tracheids-G,lateral,unknown,unknown,rhizomes,unknown,axis_diameter_mm: Drepanophycus qujingensis; branching: Drepanophycus qujingensis; rooting: Drepanophycus qujingensis
+eophyllophyton-bellum,Eophyllophyton bellum,basal-euphyllophyte,megafossil,water-transport;record-timing,Pragian,Pragian,413.02,410.62,,,,,unknown,megaphylls,unknown,tracheids,lateral,unknown,unknown,unknown,unknown,
+horneophyton-lignieri,Horneophyton lignieri,protracheophyte,megafossil,water-transport;fungal-nutrition;reproductive-strategy,Pragian,Emsian,413.02,393.47,,2,,20,isotomous,absent,present,tracheids,terminal,trilete,absent,rhizomes,known,
+nothia-aphylla,Nothia aphylla,protracheophyte,megafossil,water-transport;clonal-growth;fungal-nutrition,Pragian,Emsian,413.02,393.47,,2.5,,15,isotomous,enations,present,hydroids,lateral,trilete,absent,rhizomes,known,
+posongchong-flora,Posongchong Formation flora,zosterophyll,assemblage,reproductive-strategy;record-timing,Pragian,Pragian,413.02,410.62,,,,,mixed,microphylls,unknown,tracheids,both,both,unknown,unknown,unknown,
+psilophyton,Psilophyton,basal-euphyllophyte,megafossil,water-transport;reproductive-strategy;clonal-growth,Pragian,Eifelian,413.02,387.95,,,30,60,mixed,enations,present,tracheids-P,terminal,trilete,absent,rhizomes,unknown,
+rhynia-gwynne-vaughanii,Rhynia gwynne-vaughanii,rhyniopsid,megafossil,water-transport;sporophyte-independence;clonal-growth,Pragian,Emsian,413.02,393.47,,3,,20,mixed,absent,present,tracheids-S,terminal,trilete,absent,rhizoids,known,
+rhynie-chert-biota,Rhynie and Windyfield chert biota,incertae-sedis,assemblage,clonal-growth;fungal-nutrition;record-timing,Pragian,Emsian,413.02,393.47,,10,,30,mixed,enations,present,tracheids,both,trilete,absent,rooting-axes,known,
+rhynie-chert-gametophytes,Rhynie Chert gametophytes,incertae-sedis,megafossil,sporophyte-independence;reproductive-strategy;fungal-nutrition,Pragian,Emsian,413.02,393.47,2,,0.4,2,mixed,absent,present,tracheids,na,na,na,rhizoids,known,
+riccardiothallus-devonicus,Riccardiothallus devonicus,bryophyte,megafossil,record-timing,Pragian,Pragian,413.02,410.62,,,,,isotomous,absent,unknown,unknown,unknown,unknown,unknown,unknown,known,
+trimerophytes,Trimerophytes (Trimerophytina) and the basal euphyllophyte plexus,basal-euphyllophyte,group,height;water-transport;reproductive-strategy,Pragian,Eifelian,413.02,387.95,3,10,30,300,mixed,absent,present,tracheids-P,terminal,trilete,absent,rhizomes,unknown,
+winfrenatia-reticulata,Winfrenatia reticulata,lichen,mesofossil,fungal-nutrition;record-timing,Pragian,Pragian,413.02,410.62,,,,,na,na,na,na,na,na,na,na,na,
+franhueberia-gerriennei,Franhueberia gerriennei,basal-euphyllophyte,megafossil,height;water-transport;record-timing,Emsian,Emsian,410.62,393.47,,6,,,unknown,unknown,unknown,tracheids-P,unknown,unknown,unknown,unknown,unknown,
+omniastrobus-dawsonii,Omniastrobus dawsonii,zosterophyll,megafossil,reproductive-strategy,Emsian,Emsian,410.62,393.47,,,,,unknown,unknown,unknown,unknown,lateral,trilete,intermediate,unknown,unknown,
+pertica,Pertica,basal-euphyllophyte,megafossil,height;reproductive-strategy,Emsian,Eifelian,410.62,387.95,,,100,300,pseudomonopodial,absent,unknown,unknown,terminal,trilete,absent,unknown,unknown,
+renalia-hueberi,Renalia hueberi,zosterophyll,megafossil,height;reproductive-strategy;record-timing,Emsian,Emsian,410.62,393.47,1,1.5,11,30,pseudomonopodial,absent,unknown,tracheids,terminal,trilete,absent,unknown,unknown,
+sawdonia-ornata,Sawdonia ornata,zosterophyll,megafossil,reproductive-strategy;water-transport,Emsian,Emsian,410.62,393.47,,5,,,pseudomonopodial,enations,present,tracheids,lateral,trilete,absent,unknown,unknown,
+palaeostigma,Palaeostigma,lycopsid,megafossil,record-timing,Eifelian,Givetian,393.47,382.31,,,,,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,
+archaeopteris,Archaeopteris,progymnosperm,megafossil,height;water-transport;reproductive-strategy,Givetian,Famennian,387.95,358.86,80,450,1100,3150,mixed,megaphylls,unknown,tracheids,lateral,trilete,present,roots,unknown,
+metzgeriothallus-sharonae,Metzgeriothallus sharonae,bryophyte,megafossil,record-timing;sporophyte-independence,Givetian,Givetian,387.95,382.31,,,,,mixed,absent,unknown,unknown,unknown,unknown,unknown,unknown,known,
+wattieza,Wattieza,cladoxylopsid,megafossil,height;water-transport;record-timing,Givetian,Frasnian,387.95,372.15,200,1000,800,,monopodial,absent,unknown,tracheids,unknown,unknown,unknown,roots,unknown,conducting_tissue: Xinicaulis
+anthoceros,Anthoceros,bryophyte,extant,sporophyte-independence;water-transport;reproductive-strategy,,,,,,,,,none,absent,present,absent,na,unknown,absent,rhizoids,known,
+ceratopteris-richardii,Ceratopteris richardii,fern,extant,sporophyte-independence;reproductive-strategy,,,,,,,,,unknown,megaphylls,present,unknown,lateral,unknown,absent,roots,known,
+coleochaete,Coleochaete,streptophyte-alga,extant,sporophyte-independence;reproductive-strategy;water-transport,,,,,,,,,mixed,na,na,na,na,na,na,unknown,na,
+haplomitrium-gibbsiae,Haplomitrium gibbsiae,bryophyte,extant,fungal-nutrition,,,,,,,,3.0,mixed,na,absent,unknown,terminal,unknown,absent,rhizomes,known,stomata: liverworts (clade-level statement)
+lycopodiella-inundata,Lycopodiella inundata,lycopsid,extant,fungal-nutrition;sporophyte-independence,,,,,,,,,unknown,microphylls,unknown,unknown,lateral,unknown,absent,roots,known,leaves: lycophytes in general; sporangium_position: Lycopodiaceae in general
+marchantia-polymorpha,Marchantia polymorpha,bryophyte,extant,sporophyte-independence;reproductive-strategy;clonal-growth,,,,,7,20,2,10,isotomous,absent,absent,absent,terminal,unknown,absent,rhizoids,known,
+phlegmariurus-squarrosus,Phlegmariurus squarrosus,lycopsid,extant,water-transport;reproductive-strategy,,,,,,,30,75,isotomous,microphylls,present,tracheids,lateral,trilete,absent,roots,unknown,stomata: Phlegmariurus nummularifolius; spores: Neotropical huperzioids
+polytrichum-commune,Polytrichum commune,bryophyte,extant,water-transport;sporophyte-independence;height,,,,,,,2,70,none,na,present,hydroids,terminal,unknown,absent,rhizomes,known,stomata: Polytrichum (genus-level report; species not stated)
+psilotum-nudum,Psilotum nudum,fern,extant,water-transport;sporophyte-independence;fungal-nutrition,,,,,0.5,3,4,72.5,isotomous,enations,present,tracheids,lateral,monolete,absent,rhizomes,known,
+selaginella,Selaginella,lycopsid,extant,reproductive-strategy;sporophyte-independence;record-timing,,,,,,,,,anisotomous,microphylls,present,unknown,lateral,trilete,present,roots,known,height_cm: Selaginella kraussiana; branching: Selaginella kraussiana; stomata: Selaginella apoda; sporangium_position: Selaginella moellendorffii and S. apoda; spores: Selaginella pilifera
+tmesipteris,Tmesipteris,fern,extant,sporophyte-independence;fungal-nutrition;water-transport,,,,,,,7,140,isotomous,microphylls,present,tracheids,lateral,monolete,absent,rhizomes,known,
+ulothrix,Ulothrix,chlorophyte-alga,extant,sporophyte-independence;reproductive-strategy,,,,,,,,,none,na,na,na,na,na,na,unknown,na,
+ulva,Ulva,chlorophyte-alga,extant,sporophyte-independence;reproductive-strategy;water-transport,,,,,,,,,none,na,na,na,na,na,na,rhizoids,known,
+zygnematophyceae,Zygnematophyceae,streptophyte-alga,extant,sporophyte-independence;water-transport;reproductive-strategy,,,,,,,,,none,na,na,na,na,na,na,unknown,na,

@@ -9,6 +9,7 @@ lineage: >-
   analysis Asteroxylon and Drepanophycus form a lycopsid clade sister to the zosterophyll Sawdoniaceae. Crown
   lycophytes (Lycopodiales, Selaginellales, Isoetales) are the living remnant of the lineage.
 placement_confidence: medium
+contrasts: [clonal-growth, reproductive-strategy, record-timing]
 range:
   first: Pridoli
   last: Givetian
@@ -16,7 +17,9 @@ range:
     First = Baragwanathia brevifolioides, graptolite-dated Pridoli (Neocolonograptus ultimus Biozone) of Karlštejn,
     Bohemia (Kraft and Kvaček 2017; see the Baragwanathia card). The Ludlow age once given to Baragwanathia
     longifolia is now disputed, and Earp (2024) places the Yea beds mostly in the Early Devonian. Secure Early Devonian
-    records: Sengelia, Beartooth Butte Formation, Wyoming, late Lochkovian or Pragian (Noetinger et al. 2021);
+    records: Sengelia, Beartooth Butte Formation at Cottonwood Canyon, Wyoming, late Lochkovian to early Pragian on
+    palynology and fish biostratigraphy (Matsunaga and Tomescu 2017) and late Lochkovian or Pragian on the palynology
+    of the plant-bearing layers (Noetinger et al. 2021), with no radiometric age (see the Sengelia card);
     Rhynie, Pragian to Emsian. Last = Givetian, the latest stage in the member cards (Drepanophycus), truncating a
     lineage that continues to the present day; Leclercqia complexa is late Middle Devonian (Banks et al. 1972).
     Many source ages follow older timescales (for example 411 Ma for the Lochkovian-Pragian beds), which
@@ -24,7 +27,7 @@ range:
 regions: [Gondwana, Laurussia, Laurentia, South China]
 localities:
   - Karlštejn and the Barrandian area, Czech Republic (Pridoli; Baragwanathia brevifolioides, a marine-sediment compression)
-  - Cottonwood Canyon, Beartooth Butte Formation, Wyoming, USA (late Lochkovian or Pragian; Sengelia radicans in situ stands)
+  - Cottonwood Canyon, Beartooth Butte Formation, Wyoming, USA (late Lochkovian to early Pragian; Sengelia radicans in situ stands; see the Sengelia card)
   - Rhynie chert, Aberdeenshire, Scotland (Pragian to Emsian; Asteroxylon, permineralised)
   - Xujiachong and Posongchong formations, Yunnan, China (Pragian; Drepanophycus qujingensis, Hueberia)
   - Gaspé and New Brunswick, Canada (Emsian; Leclercqia and relatives in the Protolepidodendraceae, per Gensel and Berry 2001)
@@ -98,11 +101,11 @@ references:
 
 ## In brief
 
-Early lycopsids are the microphyll-bearing lycophytes of the Silurian-Devonian: the drepanophycalean grade (*Baragwanathia*, *Drepanophycus*, *Asteroxylon*, *Sengelia*) and the Middle Devonian Protolepidodendrales (*Leclercqia*, *Colpodexylon*, *Haskinsia*). "Lycopod" was the older word for these club-moss-like plants. They are stem-group members of the lineage that includes today's club mosses, spike mosses and quillworts, and they are the best place to watch microphylls, leaf-borne sporangia, root-like organs and ligules appear. The member cards are [Baragwanathia longifolia](baragwanathia-longifolia.md), [Asteroxylon mackiei](asteroxylon-mackiei.md) and [Drepanophycus spinaeformis](drepanophycus-spinaeformis.md). Zosterophylls are their stem grade: see [Zosterophylls](zosterophylls.md).
+Early lycopsids are the microphyll-bearing lycophytes of the Silurian-Devonian: the drepanophycalean grade (*Baragwanathia*, *Drepanophycus*, *Asteroxylon*, *Sengelia*) and the Middle Devonian Protolepidodendrales (*Leclercqia*, *Colpodexylon*, *Haskinsia*). "Lycopod" was the older word for these club-moss-like plants. They are stem-group members of the lineage that includes today's club mosses, spike mosses and quillworts, and they are the best place to watch microphylls, leaf-borne sporangia, root-like organs and ligules appear. The member cards are [Baragwanathia longifolia](baragwanathia-longifolia.md), [Asteroxylon mackiei](asteroxylon-mackiei.md) [Drepanophycus spinaeformis](drepanophycus-spinaeformis.md) and [Sengelia radicans](sengelia-radicans.md). Zosterophylls are their stem grade: see [Zosterophylls](zosterophylls.md).
 
 ## Morphology and anatomy
 
-Kenrick and Crane (1997) defined Lycopsida by microphylls, a stellate xylem strand, vascularised leaves, sporophylls (sporangium tied to a leaf) and loss of sporangial vasculature; Drepanophycales form a stem-based clade ("pre-lycopsids") that lacks some of these (Gensel and Berry 2001). *Asteroxylon* has avascular enations and cauline sporangia ([card](asteroxylon-mackiei.md)). *Drepanophycus* has vascularised microphylls and cauline sporangia. *Sengelia*, known from over 1,000 specimens, had prostrate leafy stems 3-34 mm wide (mean 15 mm), deltoid one-veined leaves of 1-7 mm, root-bearing axes of 2-8 mm with fine forking roots, and sessile round sporangia of 2.3-3.7 mm; only 33 sporangia were found (Matsunaga and Tomescu 2016, 2017). *Baragwanathia* has long strap-like leaves, a stellate xylem cylinder and sporangia near the leaf bases, from poorly preserved compressions. *Kaulangiophyton* (Maine) bears thorn-like emergences with no sign of vascularisation, and whether its sporangia sit on leaves is disputed (Gensel and Berry 2001). The Protolepidodendraceae have forked leaves with the sporangium on the adaxial leaf base; *Leclercqia* is ligulate and homosporous (Gensel and Berry 2001).
+Kenrick and Crane (1997) defined Lycopsida by microphylls, a stellate xylem strand, vascularised leaves, sporophylls (sporangium tied to a leaf) and loss of sporangial vasculature; Drepanophycales form a stem-based clade ("pre-lycopsids") that lacks some of these (Gensel and Berry 2001). *Asteroxylon* has avascular enations and cauline sporangia ([card](asteroxylon-mackiei.md)). *Drepanophycus* has vascularised microphylls and cauline sporangia. *Sengelia* ([card](sengelia-radicans.md)), known from over 1,000 specimens, had prostrate leafy stems 3-34 mm wide (mean 15 mm), deltoid one-veined leaves of 1-7 mm, root-bearing axes of 2-8 mm with fine forking roots, and sessile round sporangia of 2.3-3.7 mm; only 33 sporangia, on 20 stem fragments, were found (Matsunaga and Tomescu 2016, 2017). *Baragwanathia* has long strap-like leaves, a stellate xylem cylinder and sporangia near the leaf bases, from poorly preserved compressions. *Kaulangiophyton* (Maine) bears thorn-like emergences with no sign of vascularisation, and whether its sporangia sit on leaves is disputed (Gensel and Berry 2001). The Protolepidodendraceae have forked leaves with the sporangium on the adaxial leaf base; *Leclercqia* is ligulate and homosporous (Gensel and Berry 2001).
 
 ## Age and distribution
 
@@ -114,16 +117,31 @@ Banks (1968) used Lycophytina for the lycopsids alone, derived from zosterophyll
 
 ## Ecology and physiology
 
-*Sengelia* formed monotypic mats on periodically flooded ground and was dominated by clonal growth with rare sexual reproduction (Matsunaga and Tomescu 2017). *Drepanophycus qujingensis* spread by H-branched rhizomes (Xue et al. 2016). Asteroxylon's rooting axes lacked caps and hairs ([card](asteroxylon-mackiei.md)).
+*Sengelia* formed monotypic mats on periodically flooded ground and is inferred to have been dominated by clonal growth with infrequent sexual reproduction (Matsunaga and Tomescu 2017; see the [card](sengelia-radicans.md)). *Drepanophycus qujingensis* spread by H-branched rhizomes (Xue et al. 2016). Asteroxylon's rooting axes lacked caps and hairs ([card](asteroxylon-mackiei.md)).
 
 ## Why it matters for modelling
 
 - **Leaves.** Microphylls of 1-7 mm (Sengelia) against 5 mm avascular enations (Asteroxylon): a graded series from avascular enation to vascularised leaf, both small (inference: little leaf area per stem).
 - **Belowground.** Root-bearing axes plus fine lateral roots appear by the late Lochkovian or Pragian, on a lineage with a separate origin of roots from the euphyllophytes.
-- **Life history.** Clonal growth with rare reproduction (33 sporangia in over 1,000 Sengelia specimens) is a measurable trade-off.
+- **Life history.** Clonal predominance in *Sengelia* is inferred from stand structure, frequent K-branching, dormant buds and rare sporangia (33 on 20 stem fragments among over 1,000 specimens, one section at Cottonwood Canyon). The count is limited by preservation and does not measure reproductive allocation (Matsunaga and Tomescu 2017; [card](sengelia-radicans.md)).
 - **Ligule and sporophyll.** Ligules are documented only from the Middle Devonian; do not assume them in Early Devonian taxa.
 - **Dates.** Treat the first lycopsid as Pridoli at the earliest in the conservative scenario, with Gorstian only as a sensitivity case. Morris et al. (2018) date crown Lycopodiophyta to 432.5-392.8 Ma on one topology and crown Euphyllophyta to 437.6-402.2 Ma, whereas Hooper et al. (2026) date crown-tracheophytes (the lycophyte-euphyllophyte split) to 432-428 Ma; I did not find their crown-lycophyte value in the text.
 - **Fossil constraint.** First appearances are minimum ages: the Pridoli to Pragian lycopsids are stem-group or of unknown crown status, so they do not fix the crown node.
+
+## Model transfer
+
+**Chosen to contrast:** Contrast clonal spread and sparse recovered reproductive organs with the acquisition of lycopsid structures, using member-specific measurements rather than a uniform group body plan.
+
+- **Can transfer:**
+  - Use prostrate leafy stems 3-34 mm wide, mean 15 mm, for Sengelia radicans from Cottonwood Canyon, Beartooth Butte Formation; these are stem widths rather than stature (Matsunaga and Tomescu 2016, 2017).
+  - For Sengelia radicans at Cottonwood Canyon, represent fine lateral roots 0.4-0.7 mm wide that fork up to five times, distinct from its wider root-bearing axes (Matsunaga and Tomescu 2016, 2017).
+  - For Sengelia radicans at Cottonwood Canyon, use sessile round sporangia 2.3-3.7 mm across and the recovery of only 33 sporangia among over 1,000 specimens as assemblage observations, not a reproductive rate (Matsunaga and Tomescu 2016, 2017).
+  - Use graptolite-dated Pridoli Baragwanathia brevifolioides at Karlštejn as a conservative occurrence constraint; it dates a fossil member rather than the crown lineage (Kraft and Kvaček 2017).
+- **Cannot transfer:**
+  - The reconstructed 30 cm Asteroxylon stature cannot define a measured group maximum: it combines individuals, and no whole plant is measured.
+  - Vascularised microphylls cannot be imposed on all members: Asteroxylon appendages are avascular enations whose traces terminate before the leaf base.
+  - Middle Devonian Leclercqia ligules cannot be assumed in Early Devonian members, including poorly preserved early Leclercqia.
+  - Pridoli-to-Pragian member occurrences cannot fix crown-lycophyte age: the fossils have stem-group or unresolved crown status.
 
 ## Open questions
 

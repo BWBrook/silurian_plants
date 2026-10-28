@@ -10,6 +10,7 @@ lineage: >-
   Charophyceae and the clade of Zygnematophyceae plus embryophytes (Bierenbroodspot et al. 2024); not sister to land
   plants.
 placement_confidence: medium
+contrasts: [sporophyte-independence, reproductive-strategy, water-transport]
 range:
   first: null
   last: null
@@ -107,6 +108,20 @@ Vegetative cells can become zoospores. Not all eggs become mature zygospores; di
 ## Why it matters for modelling
 
 Haig (2015) gives the most model-ready account: optimise the number of zygotes per thallus and zoospores per zygote (3 to 5 rounds of division, 8 to 32 zoospores). Zygotic division pays once zygote size passes a threshold, but selection usually favours more zygotes before that threshold; fewer, larger zygotes are favoured by multiple paternity, low fecundity and accessory costs of matrotrophy (cortical cells, unfertilised oogonia). He proposes that unpredictable fertilisation on land raised those accessory costs and so favoured large zygotes that divided to form diploid sporophytes. That is a ready parameter set for the F1 engine: zygote size, clutch size, maternal investment, fertilisation probability and unfertilised-oogonia cost against moisture. The postzygotic body is a spore-producing unit of at most 32 cells, so it tests the amplification mechanism, not sporophyte size or independence; vegetative desiccation tolerance (weeks to months) gives a haploid baseline. Fossil support for a matrotrophic interface exists later: transfer cells in thalloid Lochkovian fossils, possibly eophyte gametophytes (Edwards et al. 2021; see [Eophytes](eophytes.md)). Do not project the 1 to 2 mm discoid body back onto Palaeozoic ancestors.
+
+## Model transfer
+
+**Chosen to contrast:** Contrast maternal zygote investment and reproductive amplification with sporophyte independence, using retained zygotes on haploid thalli without a multicellular diploid generation.
+
+- **Can transfer:**
+  - Zygote size and offspring yield covary in C. pulvinata: larger zygospores produced up to 32 zoospores versus 8 from small ones; specimens and sites are unspecified (Oltmanns 1898, as summarised by Haig and Wilczek 2006).
+  - Represent transfer-cell-like wall ingrowths as an anatomical interface in zygote-covering cells of C. orbicularis, without assigning a nutrient flux; specimens and sites are unspecified (Graham and Wilcox 1983).
+  - Aeroterrestrial cultures of two unnamed Coleochaete species survived air-drying for a week and still produced zoospores; use this as a culture-specific desiccation baseline, with strain and site identities unavailable (Graham et al. 2012).
+- **Cannot transfer:**
+  - The postzygotic cell body cannot be coded as an embryophyte sporophyte: its homology is rejected in this card and its nuclear divisions remain unresolved.
+  - A measured maternal nutrient-transfer rate cannot be assigned from wall ingrowths: this card leaves actual transfer unconfirmed.
+  - Modern discoid thallus dimensions cannot reconstruct Palaeozoic ancestral bodies: complex discoid thalli arose recently.
+  - Green, intact cells after months of drying cannot establish months-long reproductive survival: demonstrated zoospore production follows the week-long treatment.
 
 ## Open questions
 

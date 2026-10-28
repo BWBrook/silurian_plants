@@ -1,0 +1,189 @@
+{
+  "items": [
+    {
+      "claim": "“No anatomy has been published”",
+      "section": "Front matter: lineage; In brief",
+      "verdict": "wrong",
+      "evidence": "Lang describes Belgian epidermal cells and recounts a sectioned Norwegian capsule with preserved internal structure.",
+      "source": "[Lang 1937](https://biblio.naturalsciences.be/rbins-publications/bulletin-of-the-royal-belgian-natural-history-museum/13-1937/irscnb_p4087_00f27dp_13_bulletin-29-red.pdf), full text."
+    },
+    {
+      "claim": "“bryophyte affinity is a hypothesis”; “Lang (1937) left open a simple tracheophyte allied to the Rhyniaceae”",
+      "section": "Front matter: lineage and placement_confidence; Affinity and controversies",
+      "verdict": "supported",
+      "evidence": "Lang explicitly leaves bryophyte versus simple pteridophyte affinity unresolved pending evidence of attachment and vascular structure.",
+      "source": "[Lang 1937](https://biblio.naturalsciences.be/rbins-publications/bulletin-of-the-royal-belgian-natural-history-museum/13-1937/irscnb_p4087_00f27dp_13_bulletin-29-red.pdf), full text, p. 6."
+    },
+    {
+      "claim": "“Lochkovian, from Impofu Dam”; “age rests on comparison of the plant assemblage”",
+      "section": "Front matter: range.first and range.notes",
+      "verdict": "supported",
+      "evidence": "Floral comparisons support Lochkovian dating; younger invertebrate constraints concern the upper unit.",
+      "source": "[Gess & Prestianni 2021](https://doi.org/10.1038/s41598-021-90180-z), full-text repository PDF read."
+    },
+    {
+      "claim": "“the Ponta Grossa Formation, Paraná Basin, Brazil”; “Lochkovian”",
+      "section": "Front matter: range.notes and localities; Age and distribution",
+      "verdict": "wrong",
+      "evidence": "The original material comes from uppermost Furnas Formation; probable early Lochkovian dating uses correlation with palynologically sampled PISA.",
+      "source": "[Gerrienne et al. 2001](https://www.researchgate.net/publication/235722961_An_Early_Devonian_flora_including_Cooksonia_from_the_Parana_Basin_Brazil), full-text transcription read, §§2–2.1.2; DOI 10.1016/S0034-6667(01)00060-4."
+    },
+    {
+      "claim": "“Last: Emsian”; Welsh material “Pragian to Emsian”; Røragen “stage is unresolved”; Victorian material “Lower Devonian”",
+      "section": "Front matter: range.last and range.notes",
+      "verdict": "imprecise",
+      "evidence": "European Emsian occurrences are supported; broad Norwegian and Victorian ages do not establish an Emsian terminal range for the entire genus.",
+      "source": "[Capel et al. 2022](https://doi.org/10.1080/23818107.2022.2101516), indexed full-text passages read; [Lang 1937](https://biblio.naturalsciences.be/rbins-publications/bulletin-of-the-royal-belgian-natural-history-museum/13-1937/irscnb_p4087_00f27dp_13_bulletin-29-red.pdf), full text; [Cookson 1949](https://museumsvictoria.com.au/media/5688/jmmv19491607.pdf), full text. The acknowledged PBDB Middle Devonian extension was not independently verified."
+    },
+    {
+      "claim": "“A Silurian origin of the genus” cannot transfer because “the Vietnamese record is an unpublished thesis claim”",
+      "section": "Front matter: range.notes; Model transfer: Cannot transfer",
+      "verdict": "supported",
+      "evidence": "Gess and Prestianni attribute Vietnam’s Late Silurian occurrence to Gonez’s thesis; this does not securely establish origination.",
+      "source": "[Gess & Prestianni 2021](https://doi.org/10.1038/s41598-021-90180-z), full text; Gonez’s thesis itself was not reached."
+    },
+    {
+      "claim": "“height_cm: {min: 0.8, max: 11.5}”; “Axis lengths of fragments, not plant heights”",
+      "section": "Front matter: traits.height_cm; Model transfer: whole-plant height",
+      "verdict": "imprecise",
+      "evidence": "The endpoints represent an 8 mm Rebreuve stem fragment and 11.5 cm Impofu axes, not measured whole-plant heights.",
+      "source": "[Capel et al. 2022](https://doi.org/10.1080/23818107.2022.2101516), indexed full-text description read; [Gess & Prestianni 2021](https://doi.org/10.1038/s41598-021-90180-z), full text."
+    },
+    {
+      "claim": "“axis_diameter_mm: {min: 0.25, max: 2.1}”",
+      "section": "Front matter: traits.axis_diameter_mm",
+      "verdict": "supported",
+      "evidence": "Rebreuve reaches 0.25 mm maximum stem width; Impofu sp. B measures 1.9–2.1 mm. These bound the selected material.",
+      "source": "[Capel et al. 2022](https://doi.org/10.1080/23818107.2022.2101516), indexed full-text description read; [Gess & Prestianni 2021](https://doi.org/10.1038/s41598-021-90180-z), full text."
+    },
+    {
+      "claim": "Belgian axes “about 0.5 mm”, “4 cm”, “over 7 cm”; capsules “6–7 × about 2 mm”; “10–15”; “5–6 ridges”",
+      "section": "Front matter: traits; Morphology and anatomy; Model transfer: Belgian material",
+      "verdict": "supported",
+      "evidence": "Lang gives these measurements and counts; 4 × 1–1.5 mm capsules are possibly immature, and greater axial length is inferred.",
+      "source": "[Lang 1937](https://biblio.naturalsciences.be/rbins-publications/bulletin-of-the-royal-belgian-natural-history-museum/13-1937/irscnb_p4087_00f27dp_13_bulletin-29-red.pdf), full text, pp. 2–4. Block count is not a measured stand density."
+    },
+    {
+      "claim": "Rebreuve: “8 mm fragment, 0.25 mm wide”; capsule “4.5 × 1.7 mm”; “at least four ridges”",
+      "section": "Front matter: traits; Morphology and anatomy; Model transfer: architecture",
+      "verdict": "supported",
+      "evidence": "USTL 3709A/B preserves one truncated, undivided stem with one terminal sporangium; the description gives all these dimensions and ridges.",
+      "source": "[Capel et al. 2022](https://doi.org/10.1080/23818107.2022.2101516), indexed full-text material and description passages read; complete PDF retrieval exceeded the tool’s size limit."
+    },
+    {
+      "claim": "Impofu sp. A: “10–11.5 cm”, “0.9–1.3 mm”, capsules “7–7.5 × 3–3.5 mm”, “parallel bunches”; “Treat lengths as minima”",
+      "section": "Front matter: traits; Model transfer: Can transfer",
+      "verdict": "supported",
+      "evidence": "Description and AM 7944/AM 7927 captions support dimensions, parallel axes and solitary terminal capsules; complete plant height remains unestablished.",
+      "source": "[Gess & Prestianni 2021](https://doi.org/10.1038/s41598-021-90180-z), full text, description and Figures 3 and 7. Minimum-length treatment is a modelling interpretation."
+    },
+    {
+      "claim": "AM 7953: “66 mm”, “1.9–2.1 mm”, capsule “14.3 × 6.1 mm”; tip “3.4 × 2.1 mm”; “upper capsule size, not ... mean”",
+      "section": "Morphology and anatomy; Model transfer: Can transfer",
+      "verdict": "supported",
+      "evidence": "All dimensions match; the tip is 3.4 mm wide by 2.1 mm high. Only one specimen exists.",
+      "source": "[Gess & Prestianni 2021](https://doi.org/10.1038/s41598-021-90180-z), full text, sp. B description and Figure 3. Its capsule is an observed maximum, not a biological upper bound."
+    },
+    {
+      "claim": "Lilydale “0.5–0.75 mm”, “stalk to 6 mm”; capsules “2.5–4 × 1.5–2 mm”; “reassigned to Uskiella spargens”",
+      "section": "Front matter: traits.axis_diameter_mm; Morphology; Model transfer: species limits",
+      "verdict": "supported",
+      "evidence": "Cookson supplies the dimensions; Gess and Prestianni report subsequent reassignment based on a longitudinal slit defining two sporangial valves.",
+      "source": "[Cookson 1949](https://museumsvictoria.com.au/media/5688/jmmv19491607.pdf), full text, pp. 118–120; [Gess & Prestianni 2021](https://doi.org/10.1038/s41598-021-90180-z), full text. Shute & Edwards 1989 was not directly read."
+    },
+    {
+      "claim": "“S. excellens ... stalks up to 5 mm wide are quoted second-hand”; “S. yunnanense (3.2–4.5 mm capsules, as quoted ...)”; species “not interchangeable”",
+      "section": "Front matter: traits.axis_diameter_mm; Model transfer: Cannot transfer",
+      "verdict": "supported",
+      "evidence": "Gess and Prestianni report both numerical ranges and distinguish species using sporangial size and shape.",
+      "source": "[Gess & Prestianni 2021](https://doi.org/10.1038/s41598-021-90180-z), full text. These are verified relays; the underlying Frenguelli and Hsü descriptions were not verified."
+    },
+    {
+      "claim": "“Unbranched single-capsule architecture across the Belgian, Rebreuve and Impofu sp. A material”",
+      "section": "Front matter: branching, leaves and sporangium_position; Model transfer: Can transfer",
+      "verdict": "supported",
+      "evidence": "Descriptions agree on undivided, naked preserved axes terminating in individual capsules; missing proximal regions prevent universal whole-sporophyte reconstruction.",
+      "source": "[Lang 1937](https://biblio.naturalsciences.be/rbins-publications/bulletin-of-the-royal-belgian-natural-history-museum/13-1937/irscnb_p4087_00f27dp_13_bulletin-29-red.pdf), full text; [Capel et al. 2022](https://doi.org/10.1080/23818107.2022.2101516), indexed full-text passages; [Gess & Prestianni 2021](https://doi.org/10.1038/s41598-021-90180-z), full text."
+    },
+    {
+      "claim": "“stomata: ... unknown”; “Not reported”",
+      "section": "Front matter: traits.stomata",
+      "verdict": "wrong",
+      "evidence": "Andrews explicitly reports Croft and Lang’s observation of stomata on the upper stalk of Welsh specimens.",
+      "source": "[Andrews 1958](https://journals.sagepub.com/doi/pdf/10.54991/jop.1958.573), indexed full-text p. 85 read, beyond the abstract. Croft & Lang’s original description could not be retrieved."
+    },
+    {
+      "claim": "“In situ spores were seen only ... from Røragen”; “about 30 um”; “no spores in any compression”",
+      "section": "Front matter: traits.spores; Morphology and anatomy",
+      "verdict": "wrong",
+      "evidence": "Lang records spores in Norwegian flattened incrustations; Andrews additionally reports Welsh spores averaging 20 μm and Norwegian spores measuring 20–25 μm.",
+      "source": "[Lang 1937](https://biblio.naturalsciences.be/rbins-publications/bulletin-of-the-royal-belgian-natural-history-museum/13-1937/irscnb_p4087_00f27dp_13_bulletin-29-red.pdf), full text; [Andrews 1958](https://journals.sagepub.com/doi/pdf/10.54991/jop.1958.573), indexed full-text p. 85. Original Welsh and Norwegian spore descriptions were not reached; approximately 30 μm remains unverified."
+    },
+    {
+      "claim": "“No central strand or vascular tissue has been demonstrated”; “absence is untested”",
+      "section": "Front matter: traits.conducting_tissue",
+      "verdict": "supported",
+      "evidence": "Lang found no central strand but explicitly judged this negative evidence inconclusive because only superficial layers were preserved.",
+      "source": "[Lang 1937](https://biblio.naturalsciences.be/rbins-publications/bulletin-of-the-royal-belgian-natural-history-museum/13-1937/irscnb_p4087_00f27dp_13_bulletin-29-red.pdf), full text, p. 3. Bharadwaj’s additional assertion was not independently verified."
+    },
+    {
+      "claim": "“Chosen to contrast: sporophyte-independence and reproductive-strategy” with branched Cooksonia and free-living Rhynie gametophytes",
+      "section": "Model transfer: Chosen to contrast",
+      "verdict": "imprecise",
+      "evidence": "The cited synthesis distinguishes branching architecture from nutritional independence and recognises possible gametophyte dependence in small Cooksonia.",
+      "source": "[Gerrienne & Gonez 2011](https://onlinelibrary.wiley.com/doi/full/10.1111/j.1759-6831.2010.00096.x), full text. This is a synthesis; the underlying Rhynie primary descriptions were not retrieved."
+    },
+    {
+      "claim": "“Attachment claims as separate scenarios: thalloid (Andrews 1958)”",
+      "section": "Model transfer: Can transfer",
+      "verdict": "supported",
+      "evidence": "Andrews describes stalks attached to a carbonaceous film, tentatively termed a thallus, in numbered Belgian specimens.",
+      "source": "[Andrews 1958](https://journals.sagepub.com/doi/pdf/10.54991/jop.1958.573), indexed full-text p. 86 read; complete PDF retrieval failed."
+    },
+    {
+      "claim": "“axial with several sporophytes per gametophyte (Capel et al. 2026 abstract)”",
+      "section": "Front matter: traits.gametophyte; Attachment; Model transfer: Can transfer",
+      "verdict": "unverifiable",
+      "evidence": "The supplied conference contribution page could not be retrieved, and searches found no accessible abstract or primary description.",
+      "source": "https://indico.uni-muenster.de/event/4105/contributions/6635/ — neither abstract nor full text reached."
+    },
+    {
+      "claim": "“Any gametophyte size, form ... cannot transfer”; “no measurements are published”",
+      "section": "Model transfer: Cannot transfer; Attachment",
+      "verdict": "wrong",
+      "evidence": "Andrews measures specimen 23480’s presumed thallus at 14 cm long and 3 cm wide, explicitly noting incomplete preservation.",
+      "source": "[Andrews 1958](https://journals.sagepub.com/doi/pdf/10.54991/jop.1958.573), indexed full-text p. 86. Gametophyte identity remains interpretative; sex, lifespan and a reliable generation ratio remain unresolved."
+    },
+    {
+      "claim": "“Nutritional dependence ... is an inference in one conference abstract”",
+      "section": "Model transfer: Cannot transfer",
+      "verdict": "unverifiable",
+      "evidence": "The conference abstract was inaccessible; attachment alone cannot quantify nutritional dependence, but its stated evidence could not be checked.",
+      "source": "https://indico.uni-muenster.de/event/4105/contributions/6635/ — neither abstract nor full text reached."
+    },
+    {
+      "claim": "“Bryophyte physiology ... vascular tissue, stomata, spore type and spore size ... none ... observed in the compressions”",
+      "section": "Model transfer: Cannot transfer",
+      "verdict": "overstated",
+      "evidence": "Unresolved affinity limits physiological analogy; however, Lang records compression spores and Andrews reports Welsh stomata and spore dimensions.",
+      "source": "[Lang 1937](https://biblio.naturalsciences.be/rbins-publications/bulletin-of-the-royal-belgian-natural-history-museum/13-1937/irscnb_p4087_00f27dp_13_bulletin-29-red.pdf), full text; [Andrews 1958](https://journals.sagepub.com/doi/pdf/10.54991/jop.1958.573), indexed full-text p. 85. Transfer must be restricted by specimen and identification."
+    },
+    {
+      "claim": "“Whole-plant height: every axis is a fragment without a base”",
+      "section": "Front matter: rooting and height notes; Model transfer: Cannot transfer",
+      "verdict": "overstated",
+      "evidence": "Andrews describes basal attachments in Belgian specimens. These do not establish complete plant height, but contradict universal absence of preserved bases.",
+      "source": "[Andrews 1958](https://journals.sagepub.com/doi/pdf/10.54991/jop.1958.573), indexed full-text p. 86."
+    }
+  ],
+  "omissions": [
+    "Andrews describes and measures presumed attachment structures in numbered Belgian specimens. These are conditional morphological observations, not an absence of published measurements. [Primary text, p. 86](https://journals.sagepub.com/doi/pdf/10.54991/jop.1958.573).",
+    "Welsh stomata and spores are reported in Andrews’s text. Their original description and subsequent identification require checking before assigning genus-wide unknown states or excluding these traits categorically. [Andrews, p. 85](https://journals.sagepub.com/doi/pdf/10.54991/jop.1958.573).",
+    "The Brazilian age has a palynological basis at correlated PISA, although the fossil locality itself yielded barren samples. Describing all Lochkovian dating simply as plant-assemblage comparison loses this distinction. [Gerrienne et al. 2001, §2.1](https://www.researchgate.net/publication/235722961_An_Early_Devonian_flora_including_Cooksonia_from_the_Parana_Basin_Brazil).",
+    "Brazilian Sporogonites sp. A has minute sporangial emergences and a tentative bryophyte assignment. It is not automatically equivalent to Impofu sp. A. [Gerrienne et al. 2001, systematic description](https://www.researchgate.net/publication/235722961_An_Early_Devonian_flora_including_Cooksonia_from_the_Parana_Basin_Brazil).",
+    "Lang’s Belgian 6–7 mm capsule measurement includes the widening basal region; the sporangium proper measures 4–5 mm. Capsule dimensions require a consistent anatomical definition. [Lang 1937, p. 3](https://biblio.naturalsciences.be/rbins-publications/bulletin-of-the-royal-belgian-natural-history-museum/13-1937/irscnb_p4087_00f27dp_13_bulletin-29-red.pdf).",
+    "The re-illustrated Belgian attachment specimen has a published scale bar, providing potential morphological measurements even where biological interpretation remains uncertain. [Gerrienne & Gonez 2011, Figure 4](https://onlinelibrary.wiley.com/doi/full/10.1111/j.1759-6831.2010.00096.x)."
+  ],
+  "model_transfer_assessment": "The architectural contrast is useful, but capsule number per preserved axis must remain distinct from capsule number per complete sporophyte and from nutritional independence. The named Impofu and Belgian dimensions are supported, and the cautions about block counts, single specimens and interspecific pooling are appropriate. The ranges are description-level summaries rather than measurements individually tabulated for every named specimen. Treat sp. B as an observed large capsule, not a biological maximum. The transfer exclusions need correction: conditional Belgian attachment dimensions are published, and reported Welsh stomata and spores need specimen-specific review. Whole-plant height and physiological dependence remain unresolved, but universal claims of missing bases, anatomy and measurements are untenable. The axial reconstruction and dependence statements in the inaccessible 2026 abstract remain unverified.",
+  "overall": "The card preserves useful specimen-level measurements and appropriately treats affinity as uncertain, but it is not ready for reviewed status. Correct the Brazilian formation, recover the overlooked Belgian attachment measurements, and replace genus-wide absence claims with specimen-specific statements; retain the 2026 claims as unverifiable until their source is accessible."
+}

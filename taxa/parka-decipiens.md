@@ -10,6 +10,7 @@ lineage: >-
   intermediate (Hemsley 1990), liverwort (Neuber 1979, as summarised by Cleal and Thomas 1995), or unrelated to any
   living group.
 placement_confidence: low
+contrasts: [sporophyte-independence, reproductive-strategy, record-timing]
 range:
   first: Lochkovian
   last: Lochkovian
@@ -108,6 +109,22 @@ The lacustrine setting and the cutinised, holdfast-bearing thallus fit an organi
 ## Why it matters for modelling
 
 It does not constrain F1 parameters; it constrains how far to trust the algal-to-plant analogy. (1) If its spores were diploid (Hemsley 1990), *Parka* would be a multicellular diploid spore producer without vascular tissue, a natural experiment in "interpolation"; if haploid, it is a thallus bearing sporangium-like structures with no counterpart in living streptophyte algae. The two readings predict different alternation structure, so a model can carry "Parka-like thallus, ploidy unknown" as a scenario, not a fitted trait. (2) It shows a centimetre-scale, cutinised, non-axial spore producer coexisting with *Zosterophyllum* and *Cooksonia* in Lochkovian freshwater settings, so the plant community was not only axial polysporangiophytes. (3) For the F3 observation model, alete spores from such thalli would enter Lochkovian dispersed assemblages as non-trilete monads and cannot yet be separated from other alete forms (my inference). (4) Martín-Closas (2003) takes *Parka* as possible evidence of high diversity among fossil taxa in land-plant ancestry; whether it left descendants is unknown, so a model should not assume every early thalloid spore producer lies on the line to embryophytes.
+
+## Model transfer
+
+**Chosen to contrast:** Contrast a non-axial, spore-bearing thallus with axial plants and alternative life-cycle scenarios using a Lochkovian organism whose ploidy and affinity remain unresolved.
+
+- **Can transfer:**
+  - P. decipiens, Old Red Sandstone material: thalli 2 to 3 cm across constrain horizontal size, without supplying height; the review does not identify measured specimens/site in this card (Martín-Closas 2003).
+  - P. decipiens, 56 Scottish Lower Old Red Sandstone specimens: dorsiventral thallus, many-layered ventral tissue, dorsal reproductive structures and disc-like holdfast provide observed architecture (Niklas 1976).
+  - P. decipiens spores examined by SEM and TEM have a two-layered wall with one lamellate layer; use observed wall architecture, with specimen/site unspecified (Hemsley 1989).
+  - P. decipiens at Turin Hill co-occurs with Zosterophyllum myretonianum, Cooksonia caledonica and Prototaxites; represent mixed thalloid and axial community membership (Cleal and Thomas 1995).
+- **Cannot transfer:**
+  - Do not fit haploid/diploid dominance, matrotrophic transfer or an established alternation of generations: spore and thallus ploidy are undetermined and reproductive life-cycle structures are unknown.
+  - Do not use about 35 um spore size or about 35,000 spores per sporangium as verified parameters: both come from an unattributed web summary.
+  - Do not treat dichotomising filaments and lateral cell proliferation as directly observed growth rules: they were reconstructed from simulations and latex replicas.
+  - Do not assign Coleochaete physiology, ancestry or life history from thallus resemblance: the affinity is tentative.
+  - Do not infer measured terrestrial water relations from cutinisation or the lacustrine setting: submerged versus emergent growth is unresolved.
 
 ## Open questions
 

@@ -9,6 +9,7 @@ lineage: >-
   sporangia. Placed in the Rhyniaceae by its authors; in situ spores differ between sporangia of
   Salopella shape, so the genus is almost certainly not a natural group.
 placement_confidence: low
+contrasts: [height, reproductive-strategy, record-timing]
 range:
   first: Pridoli
   last: Pragian
@@ -108,6 +109,21 @@ The Welsh sporangia come from fluvial rocks (Edwards et al. 1994); Victorian pla
 - **Sporangium as organ.** The proposal that the sporangium is barely differentiated from the axis tip gives a minimal-sporangium state for F1.
 - **Height (F2).** Tufts at least 13.5 cm tall (Ghin Ghin Road; the Wilson Creek Shale holotype at least 8.5 cm), far shorter than co-occurring Baragwanathia, consistent with the 'low vegetation alongside' larger zosterophylls of Fanning et al. (1992).
 - **Record (F3, F4).** Treat Salopella as a morphotype. Capel et al. (2023) say the Australia-Xinjiang-Greenland cluster in their Silurian-Lochkovian analysis is caused by shared Salopella alone, so it is no dispersal signal. PBDB-coded Ludlow Victorian records should be re-dated.
+
+## Model transfer
+
+**Chosen to contrast:** Contrast fertile branching and sporangial dimensions among small naked plants while testing how convergent organ shapes and revised identifications alter apparent distributions and first appearances.
+
+- **Can transfer:**
+  - S. australis, Frenchmans Spur specimens: sporangia 6.5-14.0 mm long and 1.3-2.0 mm wide constrain organ dimensions for the emended species (Tims & Chambers 1984; McSweeney et al. 2021).
+  - S. caespitosa, Frenchmans Spur holotype: 26 visible sporangia constrain the preserved fertile architecture, without establishing complete lifetime fecundity (McSweeney et al. 2021).
+  - S. caespitosa, Ghin Ghin Road specimen: 135 mm preserved length supplies a minimum size constraint, not measured whole-plant height (McSweeney et al. 2021).
+  - S. cf. marcensis, coalified Shropshire sporangia: retain separate Aneurospora-like ornament types in separate sporangia as reproductive observations, without merging them into one organism (Edwards et al. 1994).
+- **Cannot transfer:**
+  - Do not assign Welsh trilete or hilate spore types to S. australis, S. caespitosa or S. laidae; Victorian species have no recovered in situ spores.
+  - Do not interpret different Welsh spore types as heterospory within a Salopella individual.
+  - Do not assign tracheids or hydraulic conductance from the Victorian central axial line; its vascular interpretation remains tentative.
+  - Do not retain the Limestone Road occurrence as a Ludlow S. australis calibration; the relevant specimens were removed from that species (McSweeney et al. 2021).
 
 ## Open questions
 

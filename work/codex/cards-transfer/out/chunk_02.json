@@ -1,0 +1,474 @@
+{
+  "items": [
+    {
+      "slug": "hedeia",
+      "contrasts": ["reproductive-strategy", "record-timing"],
+      "chosen_to_contrast": "Contrast compound terminal fertile units with simpler reproductive architectures using corymb-like fructifications, while testing how revised dating changes their apparent first appearance.",
+      "can_transfer": [
+        {
+          "text": "Axis diameter of Y. (=Hedeia) corymbosa from Alexandra: 1.5-3.25 mm; retain this species separately from Y. sinica (McSweeney et al. 2021, reproduced in McSweeney 2024).",
+          "support": "Y. corymbosa 1.5-3.25 mm; Y. sinica 0.8-1.5 mm (Table 2 of McSweeney et al. 2021, as reproduced in McSweeney 2024)."
+        },
+        {
+          "text": "Axis diameter of Y. sinica from Yunnan: 0.8-1.5 mm; use a separate species parameter (McSweeney et al. 2021, reproduced in McSweeney 2024).",
+          "support": "Y. corymbosa 1.5-3.25 mm; Y. sinica 0.8-1.5 mm (Table 2 of McSweeney et al. 2021, as reproduced in McSweeney 2024)."
+        },
+        {
+          "text": "Y. (=Hedeia) corymbosa, Alexandra material: fructifications 10-20 mm wide and 10-25 mm high, with sporangia 1.0-2.0 by 5.0-9.0 mm, constrain fertile-unit geometry (McSweeney et al. 2021, reproduced in McSweeney 2024).",
+          "support": "Y. (=Hedeia) corymbosa fructifications are 10-20 mm wide and 10-25 mm high, equidimensional or slightly taller, with sporangia 1.0-2.0 by 5.0-9.0 mm"
+        },
+        {
+          "text": "Y. sinica, Yunnan material: sporangia 0.3-0.5 by 2.0-3.0 mm on an inverted-umbrella fructification provide a separate reproductive geometry (Hao & Gensel 1998; McSweeney et al. 2021).",
+          "support": "Y. sinica is smaller, with sporangia 0.3-0.5 by 2.0-3.0 mm on an inverted-umbrella fructification."
+        }
+      ],
+      "cannot_transfer": [
+        {
+          "text": "Do not assign the at least 28 cm height of NMV P236587 to Y. corymbosa: the Eglinton Cutting specimen is Y. oblonga.",
+          "support": "is at least 28 cm tall and is referred to Y. oblonga, not to the former H. corymbosa"
+        },
+        {
+          "text": "Do not parameterise hydraulic performance, stomatal control or vascular anatomy: spores, cuticle and tracheids are unknown, rather than demonstrated absent.",
+          "support": "No spores, cuticle or tracheids are known."
+        },
+        {
+          "text": "Do not derive spore output from fertile-unit dimensions: even the sporangium count per Y. corymbosa fructification is unstated.",
+          "support": "the sporangium count per fructification is not stated for Y. corymbosa in the source read."
+        },
+        {
+          "text": "Do not use Hedeia as a demonstrated Silurian origin of compound fertile units: the Yea chronology remains unresolved.",
+          "support": "Hedeia cannot be used as evidence for a Silurian origin of compound fertile units unless the Yea beds are shown to be Silurian."
+        }
+      ],
+      "borrowed": [],
+      "doubts": "The Lochkovian first stage is conservative, not demonstrated. Hedeia and Yarravia are synonymised and must not be counted independently. The generic diameter range combines two species."
+    },
+    {
+      "slug": "horneophyton-lignieri",
+      "contrasts": ["water-transport", "fungal-nutrition", "reproductive-strategy"],
+      "chosen_to_contrast": "Separate stomatal and conducting-axis evolution from moss-like sporangial architecture using a Rhynie plant that also hosts two anatomically distinct fungal associations.",
+      "can_transfer": [
+        {
+          "text": "H. lignieri, Rhynie chert axes: stomata 120 to 180 um long and 70 to 115 um wide constrain stomatal geometry, without supplying conductance (Kerp 2017).",
+          "support": "Scattered on axes, 120 to 180 um long and 70 to 115 um wide, reniform guard cells"
+        },
+        {
+          "text": "H. lignieri, Rhynie chert sporangia: two to four columellate lobes share one sporogenous cavity; use this branched reproductive architecture (Eggert 1974).",
+          "support": "Eggert (1974) established that the sporangia are branched into two to four columellate lobes sharing one sporogenous cavity, with no unbranched sporangia found."
+        },
+        {
+          "text": "H. lignieri mature spores from Rhynie: 39 to 49 um in Eggert (1974), versus 39 to 45 um in Kerp (2017); retain source-specific ranges.",
+          "support": "Mature spores 39 to 49 um (Eggert 1974; 39 to 45 um in Kerp 2017)"
+        },
+        {
+          "text": "H. lignieri, Rhynie chert: two endophytes occupy corm/base versus aerial outer cortex; represent tissue-specific colonisation rather than a uniform symbiont compartment (Strullu-Derrien et al. 2014).",
+          "support": "Two endophytes occupy different tissues of one host (corm and base versus outer cortex of aerial axes)"
+        }
+      ],
+      "cannot_transfer": [
+        {
+          "text": "Do not treat either fungal association as a measured nutritional benefit or obligatory mutualism; benefit remains an unconstrained parameter.",
+          "support": "whether either was a mutualist is unproven, so treat symbiont benefit as a free parameter."
+        },
+        {
+          "text": "Do not assign observed regeneration or disturbance-recovery rates to the corm: regrowth is an inference from form.",
+          "support": "A corm acts as a storage and regeneration organ, so axes can be lost to flood or sinter pulses and regrown (an inference from form, not observed)."
+        },
+        {
+          "text": "Do not extrapolate a uniform tracheid wall type or hydraulic efficiency throughout the plant: distal cells are hydroid-like, wall type is unassigned, and the corm lacks conducting cells.",
+          "support": "The wall type (G, S or P) is not assigned in the sources read; the corm has no conducting\n      cells (Kerp 2017)."
+        },
+        {
+          "text": "Do not treat Langiophyton mackiei as an organically demonstrated life-cycle connection or infer parental dependence from the association.",
+          "support": "Langiophyton mackiei, matched by anatomy and co-occurrence, not organic connection;"
+        },
+        {
+          "text": "Do not use the 20 cm height and 2 mm diameter as verified primary measurements: both derive from the unreviewed Aberdeen resource.",
+          "support": "Aerial axes up to about 20 cm tall in the University of Aberdeen Rhynie web resource (not peer\n      reviewed); not checked against the primary descriptions."
+        }
+      ],
+      "borrowed": [
+        {
+          "trait": "gametophyte",
+          "from_taxon": "Langiophyton mackiei",
+          "support": "Langiophyton mackiei, matched by anatomy and co-occurrence, not organic connection;"
+        }
+      ],
+      "doubts": "The conducting_tissue state 'tracheids' compresses a mixed anatomical description. Irregular tetrads do not supply a numerical meiotic error rate. The gametophyte entry uses a proposed associated form-taxon, rather than an organically connected generation."
+    },
+    {
+      "slug": "leclercqia",
+      "contrasts": ["height", "reproductive-strategy", "record-timing"],
+      "chosen_to_contrast": "Separate ligule evolution from heterospory and examine herbaceous persistence through tree expansion using a long-ranging, homosporous ligulate lycopsid.",
+      "can_transfer": [
+        {
+          "text": "L. complexa, Brown Mountain, New York material: ligulate homospory separates ligule acquisition from heterospory (Grierson & Bonamo 1979; Bonamo et al. 1988; Wellman et al. 2009).",
+          "support": "Grierson & Bonamo (1979) found a ligule on L. complexa, the earliest ligulate lycopsid, on a plant that is homosporous"
+        },
+        {
+          "text": "Leclercqia sporangia held over 1,000 spores each; use this output constraint without attaching the dispersed-spore size range. The counted species and specimens/site are unspecified in the card (Bonamo et al. 1988).",
+          "support": "Eusporangiate sporangia sit sessile on the adaxial surface of fertile leaves, possibly with a tapetum, and held well over 1,000 spores each (Bonamo et al. 1988)."
+        },
+        {
+          "text": "L. complexa-associated dispersed spores from New York measure 53-92 um; use this dispersed-unit range separately from sporangial counts and other species (Streel 1972).",
+          "support": "Streel (1972) described the New York dispersed spore matched to the in situ one as Aneurospora cf. heterodonta (53-92 um)"
+        },
+        {
+          "text": "L. uncinata, North Xinjiang material: seven-tipped leaves with a distally hooked central segment constrain species-specific leaf architecture (Xu et al. 2011).",
+          "support": "L. uncinata has seven tips with a distally hooked central segment (Xu et al. 2011)."
+        }
+      ],
+      "cannot_transfer": [
+        {
+          "text": "Do not assign numerical height, stem diameter or rooting parameters: the card leaves these measurements unresolved.",
+          "support": "What were stem diameters, height and rooting?"
+        },
+        {
+          "text": "Do not turn hooked leaves into demonstrated climbing, or imagined mats into measured ground-cover behaviour: habit remains inferred.",
+          "support": "Habit is inferred, not observed."
+        },
+        {
+          "text": "Do not treat the first preserved ligule as its evolutionary origin: older genus records predate the preserved ligule.",
+          "support": "the ligule date is a preservation limit, not an origin date (Tomescu & Whitewoods 2024)."
+        },
+        {
+          "text": "Do not treat 53-92 um spores and over 1,000 spores per sporangium as jointly measured fecundity: the size range concerns New York dispersed spores; the counted specimens are unspecified.",
+          "support": "dispersed spores matched to the in situ spore are 53-92 um (Streel 1972); over 1,000 spores per sporangium (Bonamo et al. 1988)."
+        },
+        {
+          "text": "Do not use the permitted Lochkovian base as a demonstrated occurrence: the Wyoming identification rests on incompletely verified figures.",
+          "support": "Lochkovian\n    here is the earliest permitted stage, not a demonstrated one."
+        }
+      ],
+      "borrowed": [],
+      "doubts": "Branching is scored isotomous although daughter-axis equality is unstated. New York Aneurospora cf. heterodonta and later Acinosporites lindlarensis assignments are unreconciled. The card's fecundity synthesis combines independently sourced size and count observations."
+    },
+    {
+      "slug": "marchantia-polymorpha",
+      "contrasts": ["sporophyte-independence", "reproductive-strategy", "clonal-growth"],
+      "chosen_to_contrast": "Contrast gametophyte-supported reproduction, effective wet-surface fertilisation and vegetative dispersal with sporophyte autonomy using a measured but derived living liverwort.",
+      "can_transfer": [
+        {
+          "text": "M. polymorpha reviewed sporophytes have a nutrient- and water-supplying placental connection to the gametophyte; use matrotrophic dependence, with specimens/site unspecified (Bowman et al. 2022).",
+          "support": "a placental junction through which the gametophyte supplies nutrients and water"
+        },
+        {
+          "text": "M. polymorpha wet heathland populations reached about 100% fertilisation in females up to 19 m from males; use a wet-surface fertilisation relationship (Pressel & Duckett 2019; Duckett et al. 2024).",
+          "support": "fertilisation reached about 100% in females up to 19 m from the nearest male, with sperm carried on surface lipid films"
+        },
+        {
+          "text": "M. polymorpha capsules hold up to 300,000 spores; use an upper output bound, with counted specimens/site unspecified (O'Hanlon 1926, as cited by Bowman et al. 2022).",
+          "support": "A capsule holds up to 300,000 spores (O'Hanlon 1926, as cited by Bowman et al. 2022)"
+        },
+        {
+          "text": "M. polymorpha in burnt heathland established about 100 days after fire and first produced gametangiophores at 186 days; use habitat-specific recruitment timing (Duckett et al. 2024).",
+          "support": "Duckett et al. (2024) saw establishment about 100 days after a heathland fire, with first gametangiophores at 186 days"
+        },
+        {
+          "text": "M. polymorpha gemmae splash no more than 1.2 m; use a local vegetative dispersal limit. The underlying measurement's specimens/site are unspecified (Duckett et al. 2024, citing another source).",
+          "support": "Gemmae splash no more than 1.2 m (cited there)."
+        }
+      ],
+      "cannot_transfer": [
+        {
+          "text": "Do not treat stomatal absence as the ancestral embryophyte condition: liverworts lost stomata.",
+          "support": "both bryophytes and tracheophytes are derived from a more complex ancestor, and liverworts lost stomata (Harris et al. 2020, 2022)."
+        },
+        {
+          "text": "Do not import Field et al. (2012) mycorrhizal responses: those measurements concern M. paleacea, while M. polymorpha subsp. ruderalis has recently lost mycorrhizas.",
+          "support": "Field et al. (2012) used *M. paleacea*, a mycorrhizal species, not *M. polymorpha*."
+        },
+        {
+          "text": "Do not use thallus length as height or breadth as axis diameter: the 2-10 cm and 7-20 mm measurements describe a flat gametophyte.",
+          "support": "The thallus is a flat, dichotomously branching body 2-10 cm long and 7-20 mm broad (US Forest Service review)"
+        },
+        {
+          "text": "Do not fit gas-exchange, hydraulic or desiccation rates from this card: the required measurements were not found.",
+          "support": "No gas-exchange or hydraulic measurements were found."
+        },
+        {
+          "text": "Do not treat weaker diploid purifying selection as established or attribute it to masking: the result is an unreviewed preprint and the authors reject that reading.",
+          "support": "which the authors read as weaker purifying selection in diploids and not as masking (Shen et al. 2024)."
+        }
+      ],
+      "borrowed": [],
+      "doubts": "height_cm and axis_diameter_mm encode thallus length and breadth. Several quantitative claims lack specimen/site identifiers or primary measurements. Spore size is attributed to a preprint, and spore aperture is unknown."
+    },
+    {
+      "slug": "metzgeriothallus-sharonae",
+      "contrasts": ["record-timing", "sporophyte-independence"],
+      "chosen_to_contrast": "Contrast a secure later liverwort body record with older inferred lineage origins, while representing continued gametophyte-thallus persistence alongside vascular sporophytes.",
+      "can_transfer": [
+        {
+          "text": "M. sharonae, Cairo Quarry compressions: use the authors' Givetian occurrence as a liverwort megafossil lower bound, outside the programme window (Hernick et al. 2008; Tremblay & Mercadal 2026).",
+          "support": "It lies just outside this programme's window (the Givetian is younger than the 393.47 Ma Eifelian base)"
+        },
+        {
+          "text": "M. sharonae macerated and matrix specimens, Cairo Quarry: a dichotomising multistratose midrib with unistratose wings supplies thallus architecture (Tremblay & Mercadal 2026; Mercadal et al. 2026).",
+          "support": "Dichotomously branching multistratose midrib with unistratose wings (Tremblay & Mercadal 2026)"
+        },
+        {
+          "text": "M. sharonae, 55 fossil sections from Cairo Quarry: dark cells separated by 1-3 cells, mean about 2.7, provide a spatial-pattern target rather than a measured developmental mechanism (Mercadal et al. 2026).",
+          "support": "in 55 analysed fossil sections the dark cells were separated by 1-3 cells (mean about 2.7)"
+        },
+        {
+          "text": "M. sharonae, Cairo Quarry thalli: nine damage types in three functional feeding groups constrain observed herbivory diversity, rather than consumption rates (Labandeira et al. 2014).",
+          "support": "Labandeira et al. (2014) documented nine damage types in three functional feeding groups"
+        }
+      ],
+      "cannot_transfer": [
+        {
+          "text": "Do not treat c. 388 Ma as a precise dated horizon or the Givetian occurrence as the origin of liverworts: formation, biozone and radiometric constraints are missing.",
+          "support": "The age rests on the authors' Givetian assignment; the sources I read give no biozone, formation or radiometric date"
+        },
+        {
+          "text": "Do not use 2-3 cm fragments as whole-thallus length or height; the width estimates are unverified.",
+          "support": "fragments preserve at most 2-3 cm of one thallus;"
+        },
+        {
+          "text": "Do not assign a quantified defensive benefit to dark cells: their distribution is consistent with defence, without proving it.",
+          "support": "consistent with, not proof of, a defensive role."
+        },
+        {
+          "text": "Do not parameterise sporophyte attachment, matrotrophic transfer or spore output from the reported capsule: its description and connection were not examined.",
+          "support": "An associated sporophyte capsule is reported in the abstract of Hernick et al. (2008) as relayed to me; I did not see it described."
+        }
+      ],
+      "borrowed": [],
+      "doubts": "Gametophyte dominance is asserted more strongly than the unexamined associated capsule permits for quantitative life-cycle modelling. Oil-body homology and lateral inhibition are interpretations; the numerical targets concern dark-cell patterns."
+    },
+    {
+      "slug": "nematothallus",
+      "contrasts": ["fungal-nutrition", "record-timing"],
+      "chosen_to_contrast": "Contrast alternative fungal, lichenised and algal carbon-acquisition scenarios for early ground cover using abundant but taxonomically disputed tube-built thalli.",
+      "can_transfer": [
+        {
+          "text": "N. williamii, Lochkovian Welsh Borderland charcoal: superficial cortex, palisade tubes and an interwoven basal zone provide stratified thallus architecture; hyphal identity is interpreted (Edwards et al. 2013).",
+          "support": "the thallus has three zones: a superficial cortex that produced the cuticles, a palisade zone of septate parallel tubes presumed to be hyphae, and a basal zone of randomly interwoven hyphae"
+        },
+        {
+          "text": "Nematothallus, three species unnamed in this card, occurs as carbonised thalli in the Ludlow Bloomsburg Formation, Pennsylvania; use a dated preservation occurrence (Strother 1988).",
+          "support": "Strother (1988) described three species from the Bloomsburg Formation (Ludlow) as carbonised thalli of flattened tubular elements"
+        },
+        {
+          "text": "Nematothallus cuticles occur with dominant Nematasketum tubes in fewer than 50 distinctive early Lochkovian Ditton Group coprolites; use an assemblage-level feeding association, with Nematothallus species unspecified (Edwards et al. 2012).",
+          "support": "contain comminuted Nematasketum tubes with rarer Nematothallus and Cosmochlaina cuticles;"
+        }
+      ],
+      "cannot_transfer": [
+        {
+          "text": "Do not impose a demonstrated lichen nutritional partnership or photobiont contribution: no photobiont has been found.",
+          "support": "but no photobiont has been found."
+        },
+        {
+          "text": "Do not assign Rhynie nematophyte or Prototaxites taiti chemistry to Nematothallus: the tests concern other taxa.",
+          "support": "These are tests on Rhynie taxa, not on Nematothallus itself."
+        },
+        {
+          "text": "Do not assign polysporic asci or a reproductive output to Nematothallus: candidate reproductive structures are unconfirmed as belonging to it.",
+          "support": "both unconfirmed as reproductive structures of Nematothallus."
+        },
+        {
+          "text": "Do not treat cuticular perforations as stomata or banded tubes as demonstrated tracheids; neither establishes embryophyte water-control physiology.",
+          "support": "Cuticles of Cosmochlaina type are perforate, but the perforations are not demonstrated to be stomata."
+        },
+        {
+          "text": "Do not fit chemical-weathering enhancement from the proposed ecosystem role: no genus-specific rate was measured.",
+          "support": "the claim of enhanced chemical weathering is the only quantitative-style statement and is unmeasured for this genus."
+        }
+      ],
+      "borrowed": [],
+      "doubts": "The form genus may pool unrelated organisms; Gotland material discussed in the card was assigned to Nematothallopsis. Ludlow records do not all resolve the Ludfordian substage. Coprolite counts describe mixed dietary samples, not Nematothallus consumption rates."
+    },
+    {
+      "slug": "nothia-aphylla",
+      "contrasts": ["water-transport", "clonal-growth", "fungal-nutrition"],
+      "chosen_to_contrast": "Separate stomata from tracheid-grade conduction and clonal persistence from sexual recruitment using rhizomatous Rhynie colonies with documented fungal colonisation.",
+      "can_transfer": [
+        {
+          "text": "N. aphylla, Rhynie rhizomes: a conducting core of 10-20 cells, 300-500 µm across, has uniformly thickened cells; use strand geometry without assigning tracheid hydraulics (Kerp 2017).",
+          "support": "In rhizomes it is a core of 10-20 cells, 300-500 µm across, of long fusiform cells with uniformly thickened walls"
+        },
+        {
+          "text": "N. aphylla, Rhynie aerial axes: stomata are 75-105 × 70-95 µm, unsunken, with six to eight ordinary neighbours; use geometry rather than a measured conductance (Kerp 2017).",
+          "support": "Stomata are 75-105 × 70-95 µm, not sunken, with six to eight unspecialised neighbours."
+        },
+        {
+          "text": "N. aphylla, Rhynie sandy soils: clonal rhizomes bear a ventral rhizoidal ridge and erect fertile shoot; up to four stacked horizons constrain persistence architecture (Daviero-Gomez et al. 2005; Kerp 2017).",
+          "support": "Kerp (2017) records up to four stacked rhizome horizons in sandy soil, apparently long-lived and buried alive"
+        },
+        {
+          "text": "N. aphylla, 250 Rhynie prostrate axes: three fungal endophytes and host encasement and tissue-isolating wall responses constrain infection occurrence and defence relationships (Krings et al. 2007).",
+          "support": "Krings et al. (2007) found three fungal endophytes in 250 prostrate axes, with host responses (encasement layers, secondarily thickened walls separating infected tissue)"
+        },
+        {
+          "text": "N. aphylla, Rhynie rhizome segments: fungus no. 3 colonised over 95%, producing vesicles without arbuscules; retain this separately reported prevalence (Berbee & Taylor 2007, summarising Krings et al. 2007).",
+          "support": "Fungus no. 3 colonised over 95% of rhizome segments and formed vesicles but no arbuscules (Berbee & Taylor 2007's summary)."
+        }
+      ],
+      "cannot_transfer": [
+        {
+          "text": "Do not use 15 cm height and 2.5 mm diameter as verified primary measurements: they come only from an unreviewed web resource.",
+          "support": "Heights and diameters in this card (15 cm, 2.5 mm) come only from that resource."
+        },
+        {
+          "text": "Do not convert high fungal prevalence into nutritional benefit or obligate mutualism; the documented responses include host defences against infection.",
+          "support": "a calibration point for costs as well as benefits of early fungal partnership."
+        },
+        {
+          "text": "Do not assign Nothia-specific high water-use efficiency or fit gas exchange from stomatal size alone: the cited efficiency claim is general to Rhynie plants and density is unreported.",
+          "support": "Edwards et al. (1998) argue high water-use efficiency from Rhynie stomatal complexes in general (abstract), not for Nothia specifically."
+        },
+        {
+          "text": "Do not assume an organically connected or complete Kidstonophyton life cycle: association rests on surface anatomy, and only antheridiate axes are known.",
+          "support": "Kidstonophyton discoides (Remy & Hass 1991), antheridiate axes only;"
+        },
+        {
+          "text": "Do not assign demonstrated lignification or tracheid properties to the poorly preserved aerial strand: absence of thickenings is established mainly from rhizomes.",
+          "support": "The aerial strand is poorly preserved, so the absence of thickenings rests mainly on rhizome strands."
+        }
+      ],
+      "borrowed": [
+        {
+          "trait": "gametophyte",
+          "from_taxon": "Kidstonophyton discoides",
+          "support": "Kidstonophyton discoides (Remy & Hass 1991), antheridiate axes only; the assignment rests on shared surface\n      structure, not organic connection"
+        }
+      ],
+      "doubts": "The gametophyte entry uses a proposed associated form-taxon rather than an organic connection. The trilete state is inferred from Retusotriletes identity, not a described aperture. Enations are a comparative scoring choice, and lignification is unshown."
+    },
+    {
+      "slug": "ordovician-cryptospores",
+      "contrasts": ["record-timing", "reproductive-strategy"],
+      "chosen_to_contrast": "Contrast early spore-production evidence with unknown parent-plant architecture and disputed lineage placement using dated Ordovician dispersed assemblages and Oman sporangial fragments.",
+      "can_transfer": [
+        {
+          "text": "Tetrahedraletes medinensis dispersed units from Qusaiba-1 measure 26-42 µm; broader assemblage units span 23-62 µm. The sampled range includes Katian to earliest Silurian material (Wellman et al. 2015).",
+          "support": "Qusaiba-1 taxa measure 23-62 µm; *Tetrahedraletes medinensis* is 26-42 µm (Wellman et al. 2015)."
+        },
+        {
+          "text": "Unknown Oman parent plants, Ghaba-1 fragments: one 0.30 x 0.23 mm fragment held c. 2,620 tetrads; use fragment-level spore packing, without equating it to complete-sporangium output (Wellman et al. 2003).",
+          "support": "One 0.30 x 0.23 mm fragment held c. 2,620 tetrads;"
+        },
+        {
+          "text": "Unknown Oman dyad producers, Ghaba-1: walls 0.72-1.01 µm thick contain up to 11 parallel lamellae, each 41-58 nm; use measured wall geometry, without assuming affinity (Wellman et al. 2003).",
+          "support": "Oman dyads have walls 0.72-1.01 µm thick with up to 11 parallel lamellae, each 41-58 nm;"
+        },
+        {
+          "text": "Unknown Hanadir Shale parent plants, Saudi Arabia: definitive regular tetrads and dyads constrain a Darriwilian record, independently of crown assignment (Strother et al. 1996, 2015; Hooper et al. 2026).",
+          "support": "First = Darriwilian, where regular tetrads and dyads are definitive"
+        }
+      ],
+      "cannot_transfer": [
+        {
+          "text": "Do not infer whole-plant height, branching, stomata or conducting tissues from sub-millimetre sporangial fragments: no whole Ordovician plant is known.",
+          "support": "No whole Ordovician plant is known"
+        },
+        {
+          "text": "Do not treat c. 95,000 tetrads as observed output: it is calculated for a hypothetical 1 mm spherical sporangium.",
+          "support": "Wellman et al. (2003) calculated c. 95,000 tetrads for a 1 mm spherical sporangium."
+        },
+        {
+          "text": "Do not equate cryptospore producers with demonstrated crown liverworts, crown embryophytes or upright sporophytes: competing developmental and phylogenetic readings remain unresolved.",
+          "support": "what the spores prove is now contested:"
+        },
+        {
+          "text": "Do not fix the origin at the disputed Argentine Dapingian occurrence or treat the earliest sampled occurrence as the lineage origin.",
+          "support": "Few Middle Ordovician assemblages have been described, so first appearance is sampling-limited."
+        },
+        {
+          "text": "Do not assign measured desiccation tolerance, rapid life cycles or cold-generalist physiology: these are proposals or interpretations, and some glacial-deposit spores are reworked.",
+          "support": "Cryptospores continue through Hirnantian glacial deposits, some reworked."
+        }
+      ],
+      "borrowed": [],
+      "doubts": "The modelling section strengthens inferred physiology and parent size beyond direct observations. Qusaiba-1 measurements include earliest Silurian material. Single-type Oman spore masses do not establish homospory across unknown parent plants."
+    },
+    {
+      "slug": "palaeostigma",
+      "contrasts": ["record-timing"],
+      "chosen_to_contrast": "Test how revised ages alter apparent early provinciality using a low-confidence Gondwanan stem morphogenus whose dated records are Middle Devonian.",
+      "can_transfer": [
+        {
+          "text": "P. sewardi, indexed Steytlerville material: use stem-impression morphology as an observation category, retaining the unresolved type locality (Andrews 1970, citing Kräusel & Dolianiti 1957).",
+          "support": "Andrews's (1970) generic index lists *Palaeostigma sewardi* as a stem impression (Kräusel & Dolianiti 1957, p. 10, pls 1-2)."
+        },
+        {
+          "text": "P. sewardi, listed from Piauí's Pimenteira Formation in the eastern Parnaíba Basin: use an Eifelian occurrence constraint rather than a lineage-origin date (Matsumura et al. 2024, citing Grahn et al. 2006).",
+          "support": "Piauí material is Eifelian at the eastern margin of the basin (Matsumura et al. 2024, citing Grahn et al. 2006);"
+        }
+      ],
+      "cannot_transfer": [
+        {
+          "text": "Do not transfer Haplostigma's herbaceous habit, about 20 mm stem width, branching or leaf-cushion architecture to Palaeostigma: those descriptions concern another genus.",
+          "support": "*Haplostigma*, the genus it is paired with, has herbaceous stems up to about 20 mm wide, rarely branched"
+        },
+        {
+          "text": "Do not use an established Emsian first appearance: the supporting PBDB collection spans Late Emsian/Eifelian.",
+          "support": "An Emsian first stage rests only on one PBDB entry of \"Palaeostigma sp.\" (Melo 1988) whose collection\n    is \"Late Emsian/Eifelian\", so it is not used."
+        },
+        {
+          "text": "Do not fix the last occurrence at Givetian: the Goiás identification is questioned and the Witteberg ages remain unchecked.",
+          "support": "a Late Devonian tail is\n    possible and unchecked."
+        },
+        {
+          "text": "Do not assign lycopsid physiological or reproductive parameters from stem scars: no anatomy, spores or strobili are known, and clade placement is weak.",
+          "support": "No anatomy, spores or strobili are known for *Palaeostigma*."
+        },
+        {
+          "text": "Do not treat marine depositional facies as the growth habitat: the fragments were transported.",
+          "support": "The plant\n  fragments are transported, so growth habitat is unknown."
+        }
+      ],
+      "borrowed": [],
+      "doubts": "The type locality conflicts between the Steytlerville index entry and the Piauí description. PBDB Rhyniaceae placement conflicts with the card's tentative Lycopsida placement. Original descriptions were unread, and genus limits against Haplostigma remain unresolved."
+    },
+    {
+      "slug": "parka-decipiens",
+      "contrasts": ["sporophyte-independence", "reproductive-strategy", "record-timing"],
+      "chosen_to_contrast": "Contrast a non-axial, spore-bearing thallus with axial plants and alternative life-cycle scenarios using a Lochkovian organism whose ploidy and affinity remain unresolved.",
+      "can_transfer": [
+        {
+          "text": "P. decipiens, Old Red Sandstone material: thalli 2 to 3 cm across constrain horizontal size, without supplying height; the review does not identify measured specimens/site in this card (Martín-Closas 2003).",
+          "support": "Martín-Closas (2003) gives 2 to 3 cm across"
+        },
+        {
+          "text": "P. decipiens, 56 Scottish Lower Old Red Sandstone specimens: dorsiventral thallus, many-layered ventral tissue, dorsal reproductive structures and disc-like holdfast provide observed architecture (Niklas 1976).",
+          "support": "a dorsiventral thallus with a thick, many-layered ventral cell layer, dorsal sporangia arising from the margin and from the tissue beneath, and a disc-like holdfast."
+        },
+        {
+          "text": "P. decipiens spores examined by SEM and TEM have a two-layered wall with one lamellate layer; use observed wall architecture, with specimen/site unspecified (Hemsley 1989).",
+          "support": "Spores (Hemsley 1989, SEM and TEM): a two-layered wall, one layer lamellate"
+        },
+        {
+          "text": "P. decipiens at Turin Hill co-occurs with Zosterophyllum myretonianum, Cooksonia caledonica and Prototaxites; represent mixed thalloid and axial community membership (Cleal and Thomas 1995).",
+          "support": "with Zosterophyllum myretonianum, Cooksonia caledonica, Prototaxites and fish"
+        }
+      ],
+      "cannot_transfer": [
+        {
+          "text": "Do not fit haploid/diploid dominance, matrotrophic transfer or an established alternation of generations: spore and thallus ploidy are undetermined and reproductive life-cycle structures are unknown.",
+          "support": "No gametangia, zygotes, embryos or fertilisation structures are known, and no evidence of matrotrophy."
+        },
+        {
+          "text": "Do not use about 35 um spore size or about 35,000 spores per sporangium as verified parameters: both come from an unattributed web summary.",
+          "support": "An unattributed web summary gives about 35 um and about 35,000 per sporangium; not verified."
+        },
+        {
+          "text": "Do not treat dichotomising filaments and lateral cell proliferation as directly observed growth rules: they were reconstructed from simulations and latex replicas.",
+          "support": "Growth simulations and latex replicas led Niklas to infer lateral proliferation of cells within a pseudoparenchyma of dichotomising filaments; this is a reconstruction."
+        },
+        {
+          "text": "Do not assign Coleochaete physiology, ancestry or life history from thallus resemblance: the affinity is tentative.",
+          "support": "Martín-Closas (2003) calls it the only fossil tentatively related to Coleochaetales"
+        },
+        {
+          "text": "Do not infer measured terrestrial water relations from cutinisation or the lacustrine setting: submerged versus emergent growth is unresolved.",
+          "support": "Whether it grew submerged or emergent is unresolved:"
+        }
+      ],
+      "borrowed": [],
+      "doubts": "Gedinnian–Lochkovian equivalence was not checked; Pridoli and United States records are unverified. The modelling prose treats a hypothetical diploid Parka as non-vascular although conducting tissue is scored unknown. Reproductive-structure identity remains disputed."
+    }
+  ]
+}

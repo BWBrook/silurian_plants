@@ -9,6 +9,7 @@ lineage: >-
   Edwards et al. 2021a) combining bryophyte and tracheophyte characters; possibly a stem-group tracheophyte
   or setaphyte (liverwort plus moss) lineage.
 placement_confidence: low
+contrasts: [water-transport, reproductive-strategy, record-timing]
 range:
   first: Lochkovian
   last: Lochkovian
@@ -24,7 +25,7 @@ localities:
 preservation: [charcoalified]
 traits:
   height_cm: {min: null, max: null, note: "No complete plant. Edwards et al. (2021a) judge that eophyte axes are unlikely to exceed a couple of centimetres (inference)."}
-  axis_diameter_mm: {min: null, max: 2, note: "Upper bound is for eophyte axes generally, which 'rarely exceed 1 or 2 mm' (Edwards et al. 2021a); not measured on Partitatheca itself."}
+  axis_diameter_mm: {min: null, max: 2, note: "Upper bound is for eophyte axes generally, which 'rarely exceed 1 or 2 mm' (Edwards et al. 2021a); not measured on Partitatheca itself.", from: "Eophytes generally"}
   branching: {state: isotomous, note: "One stem bearing a sporangium with Cymbohilates horridus branches isotomously and is naked (Edwards et al. 2012a); subtending axes are very rare."}
   leaves: {state: absent, note: "Axes are naked and leafless (Edwards et al. 2012a; Edwards et al. 2021a)."}
   stomata: {state: present, note: "Occasional on sporangia and subtending axes; present in some species and absent in others (Edwards et al. 2014)."}
@@ -93,6 +94,21 @@ If *Partitatheca* is an eophyte, its size and anatomy imply poikilohydric plants
 - Reproduction: permanent dyads or tetrads set mating constraints (selfing needs bisexual gametophytes); sporogenesis always gave dyads or tetrads, indicating strict genetic control (Edwards et al. 2014).
 - Rarity: seven sporangia among several hundred means the group was a small fraction of fertile mesofossils at this site.
 - Replacement: cryptospores dominated assemblages for c. 60 Myr and then fell sharply near 410 Ma on GTS2012, about 413 Ma on ICS v2024/12 (Edwards et al. 2021a). Displacement by zosterophylls across the late Lochkovian in the Anglo-Welsh Basin is a calibratable event.
+
+## Model transfer
+
+**Chosen to contrast:** Contrast permanent cryptospore dispersal units and sparse stomata with tracheophyte reproduction and water control, using Lochkovian sporangia with rare attached branching axes.
+
+- **Can transfer:**
+  - Reproductive architecture: Partitatheca sporangia from Brown Clee Hill split into four valves; seven quadrivalvate specimens founded the genus (Edwards et al. 2012a). Use observed sporangial architecture, retaining the restricted sample.
+  - Dispersal units: Brown Clee Hill Partitatheca includes permanent dyads and a single tetrad-bearing sporangium; represent these separately (Edwards et al. 2012a, 2012b, 2014).
+  - Branching: one naked Brown Clee Hill stem bearing Cymbohilates horridus has isotomous branching; use this observed configuration without imposing it on every species (Edwards et al. 2012a).
+  - Stomatal occurrence: Brown Clee Hill Partitatheca species differ in stomatal presence; allow species-specific states rather than universal presence (Edwards et al. 2012a; Edwards et al. 2014).
+- **Cannot transfer:**
+  - Height, axis diameter and absence of water-conducting cells are eophyte inferences, not measured Partitatheca parameters; its own axis anatomy remains almost unknown (Edwards et al. 2021a).
+  - A tracheophyte transpiration-control rule cannot follow from stomatal presence: the proposed drying function concerns eophytes and remains an interpretation (Edwards et al. 2021a).
+  - Sporophyte dependence cannot be fixed as a life-cycle state: whether Partitatheca depended on a gametophyte is explicitly speculative.
+  - Ordovician sporophyte architecture cannot be reconstructed from these Lochkovian survivors; this card explicitly allows later evolution of their diagnostic features (Edwards et al. 2014).
 
 ## Open questions
 

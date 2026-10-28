@@ -9,6 +9,7 @@ lineage: >-
   argued) or an extinct eukaryotic lineage outside crown-group Fungi (Loron et al. 2026). Type genus of the
   nematophytes.
 placement_confidence: low
+contrasts: [height, fungal-nutrition, record-timing]
 range:
   first: Pridoli
   last: Famennian
@@ -129,6 +130,23 @@ Boyce et al. (2007) measured δ13C spanning up to 13‰ across five localities, 
 - Carbon: a heterotrophic pool fed by non-vascular organic matter (mats, algae, crusts), decoupled from vascular net primary production and found in wet delta-plain settings.
 - Trophic links: living tissue was bored by an endophagous animal, and the close ally Nematasketum is the main content of selective-feeder coprolites (Edwards et al. 2012). It is a food resource as well as a carbon sink.
 - No growth-rate, longevity or standing-biomass data exist; treat them as free parameters.
+
+## Model transfer
+
+**Chosen to contrast:** Contrast giant tubular terrestrial bodies with small vascular plants, testing alternative trophic roles while keeping specimen dimensions, fungal affinity and preservation-controlled appearances separate.
+
+- **Can transfer:**
+  - Body length: the P. loganii trunk from Schunnemunk Mountain, Bellvale Sandstone, is 8.83 m long; use fossil length as the geometric constraint (Retallack & Landing 2014).
+  - Branch architecture: the same P. loganii trunk bears six branches about 1 m long and 9 cm across on its upper 1.2 m; model this specimen separately from unbranched forms (Retallack & Landing 2014).
+  - Tube composition: Rhynie P. taiti specimen NSC.36 contains type 3 tubes about 40 µm wide, annularly thickened, aseptate and unbranched, occupying about 5% of volume; retain specimen-specific anatomy without inferring function (Loron et al. 2026).
+  - Isotopic heterogeneity: Prototaxites material across five localities, unnamed in this card, spans up to 13‰ in δ13C; use the measured spread to compare trophic scenarios, without fixing nutrition (Boyce et al. 2007).
+  - Preservation relationship: Baltic Prototaxites first appears with middle Givetian subaerial delta-plain deposition; allow a depositional observation filter rather than treating earlier absence as exclusion (Vinn et al. 2026).
+- **Cannot transfer:**
+  - Standing canopy height cannot equal Schunnemunk fossil length: orientation is uncertain, and horizontal mega-rhizomorph growth is an alternative interpretation (Retallack & Landing 2014; Vajda et al. 2023).
+  - Fungal identity, saprotrophy or lichen-like photosynthesis cannot be fixed genus-wide from Rhynie P. taiti; the non-fungal argument concerns one species at one locality and nutrition remains disputed (Loron et al. 2026).
+  - Tracheid-like hydraulic conductance cannot be assigned to P. taiti banded tubes: annular thickenings are observed, but a conducting function has not been demonstrated (Loron et al. 2026).
+  - Polysporic asci cannot be accepted as an established P. taiti reproductive trait: their organic connection to diagnostic tissue is disputed (Honegger et al. 2018; Loron et al. 2026).
+  - Growth rate, lifespan and standing biomass cannot be calibrated from fossil dimensions or isotopes; this card reports no such data.
 
 ## Open questions
 

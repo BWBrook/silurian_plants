@@ -9,6 +9,7 @@ lineage: >-
   three subspecies (polymorpha, ruderalis, montivagans) that began to diverge about 5 Ma; the model subspecies is
   ruderalis.
 placement_confidence: high
+contrasts: [sporophyte-independence, reproductive-strategy, clonal-growth]
 range:
   first: null
   last: null
@@ -99,6 +100,23 @@ Spores colonise bare ground by air: Duckett et al. (2024) saw establishment abou
 - **Gametophyte-supported sporophyte.** The gametophyte elevates the sporophyte on a stalk, so height for dispersal comes from the haploid generation. Dispersal-height rules for F2 should allow that.
 - **Sporophyte genetics.** A class II bHLH gene regulates sporopollenin and the secondary walls of capsule wall, elaters and exine, and a class II KNOX-BELL pair controls capsule-wall secondary walls and spore pectin, expressed in the maternal calyptra (Levins et al. 2024; Dierschke et al. 2024). These are candidate ancestral spore-wall mechanisms.
 - **Limits.** A weedy, derived, non-mycorrhizal thalloid species is a poor analogue for Silurian cryptospore plants or Rhynie gametophytes ([Rhynie gametophytes](rhynie-chert-gametophytes.md)).
+
+## Model transfer
+
+**Chosen to contrast:** Contrast gametophyte-supported reproduction, effective wet-surface fertilisation and vegetative dispersal with sporophyte autonomy using a measured but derived living liverwort.
+
+- **Can transfer:**
+  - M. polymorpha reviewed sporophytes have a nutrient- and water-supplying placental connection to the gametophyte; use matrotrophic dependence, with specimens/site unspecified (Bowman et al. 2022).
+  - M. polymorpha wet heathland populations reached about 100% fertilisation in females up to 19 m from males; use a wet-surface fertilisation relationship (Pressel & Duckett 2019; Duckett et al. 2024).
+  - M. polymorpha capsules hold up to 300,000 spores; use an upper output bound, with counted specimens/site unspecified (O'Hanlon 1926, as cited by Bowman et al. 2022).
+  - M. polymorpha in burnt heathland established about 100 days after fire and first produced gametangiophores at 186 days; use habitat-specific recruitment timing (Duckett et al. 2024).
+  - M. polymorpha gemmae splash no more than 1.2 m; use a local vegetative dispersal limit. The underlying measurement's specimens/site are unspecified (Duckett et al. 2024, citing another source).
+- **Cannot transfer:**
+  - Do not treat stomatal absence as the ancestral embryophyte condition: liverworts lost stomata.
+  - Do not import Field et al. (2012) mycorrhizal responses: those measurements concern M. paleacea, while M. polymorpha subsp. ruderalis has recently lost mycorrhizas.
+  - Do not use thallus length as height or breadth as axis diameter: the 2-10 cm and 7-20 mm measurements describe a flat gametophyte.
+  - Do not fit gas-exchange, hydraulic or desiccation rates from this card: the required measurements were not found.
+  - Do not treat weaker diploid purifying selection as established or attribute it to masking: the result is an unreviewed preprint and the authors reject that reading.
 
 ## Open questions
 

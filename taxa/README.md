@@ -10,6 +10,7 @@ Ordered by first appearance, extant comparison taxa last. Ages are ICS v2024/12 
 | [Eophytes and cryptophytes (Eophytidae)](eophytes.md) | cryptospore-plant | Darriwilian (469.4 Ma) | Lochkovian | group | low | draft |
 | [Ordovician cryptospore assemblages](ordovician-cryptospores.md) | cryptospore-plant | Darriwilian (469.4 Ma) | Hirnantian | dispersed_spores | medium | draft |
 | [Ambitisporites](ambitisporites.md) | incertae-sedis | Katian (452.8 Ma) | Lochkovian | dispersed_spores | low | draft |
+| [Zbrza putative plant assemblage](zbrza-assemblage.md) | incertae-sedis | Hirnantian (445.2 Ma) | Hirnantian | assemblage | low | draft |
 | [Tortotubus protuberans](tortotubus-protuberans.md) | fungus | Rhuddanian (443.1 Ma) | Emsian | mesofossil | low | draft |
 | [Cooksonia](cooksonia.md) | rhyniophytoid | Sheinwoodian (432.9 Ma) | Lochkovian | megafossil | low | draft |
 | [Rhyniophytoids (rhyniophytes sensu lato, cooksonioid plants)](rhyniophytoids.md) | rhyniophytoid | Sheinwoodian (432.9 Ma) | Lochkovian | group | low | draft |
@@ -30,7 +31,11 @@ Ordered by first appearance, extant comparison taxa last. Ages are ICS v2024/12 
 | [Parka decipiens](parka-decipiens.md) | incertae-sedis | Lochkovian (419.62 Ma) | Lochkovian | megafossil | low | draft |
 | [Partitatheca](partitatheca.md) | cryptospore-plant | Lochkovian (419.62 Ma) | Lochkovian | mesofossil | low | draft |
 | [Pluricaulis biformis (manuscript name)](pluricaulis-biformis.md) | zosterophyll | Lochkovian (419.62 Ma) | Emsian | megafossil | low | draft |
+| [Sciadophyton](sciadophyton.md) | incertae-sedis | Lochkovian (419.62 Ma) | Emsian | megafossil | low | draft |
+| [Sengelia radicans](sengelia-radicans.md) | lycopsid | Lochkovian (419.62 Ma) | Pragian | megafossil | medium | draft |
+| [Sporogonites](sporogonites.md) | incertae-sedis | Lochkovian (419.62 Ma) | Emsian | megafossil | low | draft |
 | [The Baragwanathia floras of Victoria](baragwanathia-flora.md) | tracheophyte-other | Lochkovian (419.62 Ma) | Emsian | assemblage | medium | draft |
+| [Tortilicaulis offaeus](tortilicaulis-offaeus.md) | tracheophyte-other | Lochkovian (419.62 Ma) | Lochkovian | mesofossil | medium | draft |
 | [Xitun Formation flora](xitun-flora.md) | zosterophyll | Lochkovian (419.62 Ma) | Lochkovian | assemblage | medium | draft |
 | [Yarravia](yarravia.md) | rhyniophytoid | Lochkovian (419.62 Ma) | Emsian | megafossil | low | draft |
 | [Aglaophyton majus](aglaophyton-majus.md) | protracheophyte | Pragian (413.02 Ma) | Emsian | megafossil | low | draft |
@@ -49,6 +54,7 @@ Ordered by first appearance, extant comparison taxa last. Ages are ICS v2024/12 
 | [Trimerophytes (Trimerophytina) and the basal euphyllophyte plexus](trimerophytes.md) | basal-euphyllophyte | Pragian (413.02 Ma) | Eifelian | group | medium | draft |
 | [Winfrenatia reticulata](winfrenatia-reticulata.md) | lichen | Pragian (413.02 Ma) | Pragian | mesofossil | low | draft |
 | [Franhueberia gerriennei](franhueberia-gerriennei.md) | basal-euphyllophyte | Emsian (410.62 Ma) | Emsian | megafossil | low | draft |
+| [Omniastrobus dawsonii](omniastrobus-dawsonii.md) | zosterophyll | Emsian (410.62 Ma) | Emsian | megafossil | medium | draft |
 | [Pertica](pertica.md) | basal-euphyllophyte | Emsian (410.62 Ma) | Eifelian | megafossil | low | draft |
 | [Renalia hueberi](renalia-hueberi.md) | zosterophyll | Emsian (410.62 Ma) | Emsian | megafossil | low | draft |
 | [Sawdonia ornata](sawdonia-ornata.md) | zosterophyll | Emsian (410.62 Ma) | Emsian | megafossil | medium | draft |
@@ -57,10 +63,15 @@ Ordered by first appearance, extant comparison taxa last. Ages are ICS v2024/12 
 | [Metzgeriothallus sharonae](metzgeriothallus-sharonae.md) | bryophyte | Givetian (387.95 Ma) | Givetian | megafossil | medium | draft |
 | [Wattieza](wattieza.md) | cladoxylopsid | Givetian (387.95 Ma) | Frasnian | megafossil | medium | draft |
 | [Anthoceros](anthoceros.md) | bryophyte | extant only | Recent | extant | medium | draft |
+| [Ceratopteris richardii](ceratopteris-richardii.md) | fern | extant only | Recent | extant | high | draft |
 | [Coleochaete](coleochaete.md) | streptophyte-alga | extant only | Recent | extant | medium | draft |
+| [Haplomitrium gibbsiae](haplomitrium-gibbsiae.md) | bryophyte | extant only | Recent | extant | high | draft |
+| [Lycopodiella inundata](lycopodiella-inundata.md) | lycopsid | extant only | Recent | extant | high | draft |
 | [Marchantia polymorpha](marchantia-polymorpha.md) | bryophyte | extant only | Recent | extant | high | draft |
 | [Phlegmariurus squarrosus](phlegmariurus-squarrosus.md) | lycopsid | extant only | Recent | extant | high | draft |
+| [Polytrichum commune](polytrichum-commune.md) | bryophyte | extant only | Recent | extant | high | draft |
 | [Psilotum nudum](psilotum-nudum.md) | fern | extant only | Recent | extant | high | draft |
+| [Selaginella](selaginella.md) | lycopsid | extant only | Recent | extant | high | draft |
 | [Tmesipteris](tmesipteris.md) | fern | extant only | Recent | extant | high | draft |
 | [Ulothrix](ulothrix.md) | chlorophyte-alga | extant only | Recent | extant | medium | draft |
 | [Ulva](ulva.md) | chlorophyte-alga | extant only | Recent | extant | high | draft |

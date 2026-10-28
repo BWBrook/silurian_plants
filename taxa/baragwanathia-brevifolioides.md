@@ -9,6 +9,7 @@ lineage: >-
   midrib-bearing microphylls. Known from one sterile compression with no anatomy, so vascular affinity
   rests on the microphylls' median midrib.
 placement_confidence: low
+contrasts: [record-timing]
 range:
   first: Pridoli
   last: Pridoli
@@ -88,6 +89,20 @@ Nothing direct. The plant lies in marine mudstone with epibionts on its dead par
 - **Against the molecular timescale.** Hooper et al. (2026) place crown tracheophytes at 432-428 Ma; docs/primer.md gives their constraint as 431.2-420.7 Ma and Harris et al. (2022) crown lycophytes at 431-411 Ma. The Přídolí (422.7-419.62 Ma) overlaps the young end of the first and lies inside the second. A Gorstian lycopsid (426.7-425.0 Ma) would also fall inside both, so the clocks cannot choose between the dating scenarios.
 - **Sampling unit.** A single specimen from a basin whose Přídolí plants are otherwise cooksonioid is a one-count datum; a first-appearance model should treat the lycopsid record as one sighting whose identification is uncertain.
 - **Climate belt.** Higher-latitude occurrence is a constraint for spatial models: if correctly identified, lycopsid-grade plants occurred in a temperate peri-Gondwanan belt in the Přídolí.
+
+## Model transfer
+
+**Chosen to contrast:** Test a Pridoli minimum for microphyll-like differentiation against later or disputed records, using a graptolite-dated holotype whose lycophyte identification remains morphological.
+
+- **Can transfer:**
+  - B. brevifolioides, holotype KR 1 from Karlštejn: represent slender axes with isotomous branching as observed gross architecture (Kraft & Kvaček 2021).
+  - B. brevifolioides, holotype KR 1 from Karlštejn: represent median-midrib-bearing appendages and an apex enfolded by upward-facing leaves as compression morphology (Kraft & Kvaček 2021).
+  - B. brevifolioides, holotype KR 1, Požáry Formation at Karlštejn: use a single Pridoli candidate occurrence dated by co-occurring graptolites, retaining identification uncertainty (Kraft & Kvaček 2017, abstract summary; 2021).
+- **Cannot transfer:**
+  - Do not assign demonstrated xylem, hydraulic properties or secure lycophyte affinity from median midribs alone; the single compression lacks xylem and diagnostic spores.
+  - Do not parameterise reproductive output, spore traits, stomatal behaviour or rooting from this sterile specimen; the relevant organs are unreported.
+  - Do not assign whole-plant height or measured axis diameter; the incomplete specimen lacks a height reconstruction and this card supplies no axis measurement.
+  - Do not infer an aquatic growth habit from marine epibionts; they cannot distinguish growth in water from transport after death.
 
 ## Open questions
 

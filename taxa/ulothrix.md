@@ -10,6 +10,7 @@ lineage: >-
   2022). A chlorophyte on the other branch of the green lineage from land plants; whether Ulothrix is a natural genus
   was not checked in the sources read.
 placement_confidence: medium
+contrasts: [sporophyte-independence, reproductive-strategy]
 range:
   first: null
   last: null
@@ -94,6 +95,22 @@ Leliaert et al. (2012) note that the Ulotrichales were separated from the Ulvale
 What it is good for. (1) The pure haplont baseline: a multicellular haploid with a one-celled diploid phase, which Coelho and Umen (2021) define as the haplontic cycle (resting zygote undergoing meiosis to give haploid progeny) and which Kenrick (2018) gives as the cycle of the algal ancestors of land plants; interpolation theory is a change away from it. In the modifier models reviewed by Scott and Rescan (2017), haplonty is favoured when deleterious mutations are partially dominant or haploids are fitter. (2) Environment-cued switching between vegetative growth and asexual propagules: zoospore formation in *U. zonata* rises with temperature (5 to 20 °C) and light, and is favoured by both short and long days over a 12:12 cycle, and biomass falls above 10 °C, a template for a condition-dependent switch of mode (the sources read give no equivalent cues for gamete formation). (3) The Codiolum problem shows that "diploid zygote" and "one-celled sporophyte" overlap: if a growing, endoreduplicating, zoospore-producing diploid cell counts as a sporophyte, a minimal form of interpolation exists inside the Ulvophyceae. Homeodomain gene pairs regulate the haploid-to-diploid transition in chlorophyte algae (Bowman et al. 2016).
 
 What it is not good for. Gametes swim in open water, the zygote is not retained or provisioned, there is no sporopollenin spore wall, and the terrestrial constraints on fertilisation and dispersal are absent. The classical haplont label may be wrong for marine species, so check the species before using *Ulothrix* as a pure haplont.
+
+## Model transfer
+
+**Chosen to contrast:** Contrast a putative haplontic baseline with a growing unicellular diploid phase and environmentally cued asexual reproduction, keeping freshwater U. zonata separate from marine U. flacca.
+
+- **Can transfer:**
+  - U. zonata, studied material with collection site unspecified: zoospore formation favoured near 20 °C and 520 µE under short or long days supplies an environmental switching relationship (Graham et al. 1985b).
+  - U. zonata cells, collection site unspecified: 2 to 4 large or up to 32 smaller hypnospores per cell constrain alternative asexual propagule outputs (Bullock 1978).
+  - U. flacca var. roscoffensis zygotes, site unspecified: karyogamy follows gamete fusion by 8 to 24 h, with flagella shed about 8 h after fertilisation (Berger-Perrot et al. 1993).
+  - U. zonata, physiological material with site unspecified: peak net photosynthesis at 5 °C and 1100 µE m-2 s-1, reaching 16.8 mg O2 g-1 h-1, constrains an aquatic physiological case (Graham et al. 1985a).
+- **Cannot transfer:**
+  - Do not encode verified zygotic meiosis or a pure haplontic cycle for U. zonata; this card lacks a primary cytological demonstration.
+  - Do not assign endoreduplication, polyploid nuclear behaviour or demonstrated Codiolum sporophyte function from Monostroma angicava directly to Ulothrix.
+  - Do not reuse the U. zonata zoospore temperature and photoperiod responses as cues for sexual reproduction; equivalent gamete-formation evidence is absent.
+  - Do not transfer Ulothrix reproduction directly into embryophyte matrotrophy or terrestrial spore-dispersal mechanisms; zygotes are unprovisioned and sporopollenin walls are absent.
+  - Do not use Devonian Ulotrichales-type filaments to date Ulothrix itself; the reported fossils support, at most, an order-level assignment.
 
 ## Open questions
 

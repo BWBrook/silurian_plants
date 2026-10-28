@@ -8,6 +8,7 @@ lineage: >-
   Lycophytina stem group, zosterophyll grade (paraphyletic to the lycopsids); the genus is probably
   para- or polyphyletic, so its species do not form a single lineage.
 placement_confidence: medium
+contrasts: [height, water-transport, reproductive-strategy, clonal-growth]
 range:
   first: Ludfordian
   last: Emsian
@@ -113,6 +114,23 @@ Z. shengfengense was probably semi-aquatic, with either efficient water use or s
 - **Belowground allocation.** Root:shoot ratio is 0.028, with root-like axes about 3% of biomass (Hao et al. 2010), a tiny investment compared with later plants.
 - **Photosynthetic area.** Axes were the main photosynthetic organs; each extra millimetre of diameter adds 31.4 mm² per 10 mm of axis (Huang et al. 2025).
 - **Calibration.** Morris et al. (2018) used the Ludlow Bathurst Island record as a crown-tracheophyte minimum of 420.7 Ma; Hooper et al. (2026) date crown tracheophytes at 432-428 Ma, so fossils give only minimum ages.
+
+## Model transfer
+
+**Chosen to contrast:** Contrast size and reproductive allocation among coeval leafless species, using divergent spike volumes while retaining species-specific conducting and rhizomatous architectures.
+
+- **Can transfer:**
+  - Belowground allocation in the single uprooted Z. shengfengense whole plant from the Xitun Formation, Yunnan: root:shoot 0.028 and root-like axes about 3% of biomass (Hao et al. 2010).
+  - Conducting architecture in Z. myretonianum from the Scottish Carmyllie Beds: a single median tracheid strand; encode anatomy without assigning hydraulic rates (Lang 1927).
+  - Near-complete stature in Z. baoyangense from Duyun, Guizhou: 45.4 mm; retain as this species' preserved size rather than a genus-wide height (Huang et al. 2025).
+  - Estimated per-spike sporangial volume in Pragian Z. baoyangense from Duyun, Guizhou: 4.3-16.8 mm³ under assumed 0.6 mm sporangial thickness; use as an allocation proxy (Huang et al. 2025).
+  - Estimated per-spike sporangial volume in coeval Z. australianum from the Pragian Duyun bed: 133.8-211.1 mm³ under assumed 0.6 mm sporangial thickness; keep separate from Z. baoyangense (Huang et al. 2025).
+- **Cannot transfer:**
+  - Genus-wide rooting architecture, biomass allocation or clonal-spread rate cannot be fixed from Z. shengfengense; the complete rooting system represents one species and one specimen.
+  - Measured lifespan and spore output cannot be assigned to Z. baoyangense or Z. australianum from their estimated sporangial volumes; both quantities remain inferred.
+  - A maximum complete height of 440 mm cannot be assigned to Z. confertum; the measurement describes preserved axes, with larger true heights possible.
+  - A secure Pridoli occurrence cannot be assigned from Z. qujingense without resolving the conflict between its reported Silurian age and the proposed Pridoli gap.
+  - Genus-wide spore morphology and securely observed homospory cannot be assigned from the front matter; in situ spore evidence is sparse (Huang et al. 2025).
 
 ## Open questions
 

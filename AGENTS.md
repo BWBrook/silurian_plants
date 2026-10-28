@@ -11,8 +11,9 @@ recorded in `docs/decisions.md`.
 - `taxa/`: one information card per taxon. `taxa/_template.md` is the schema; `taxa/README.md`
   is generated.
 - `docs/`: charter, decisions, primer, precedents review, candidate framings, the source register
-  (`docs/sources.md`, the index of all data held and needed: update it when a source changes) and
-  the spore-compilation plan.
+  (`docs/sources.md`, the index of all data held and needed: update it when a source changes),
+  the spore-compilation plan, and `docs/rejected-records.md` (rejected, reassigned and disputed
+  early land-plant records, for the observation model).
 - `data/timescale.csv`: ICS v2024/12 stage base ages, the single source of numerical ages.
 - `data/traits.csv`: generated trait matrix, one row per card.
 - `data/eprp/`: material extracted from Barry's EPRP programme: literature, PBDB and Macrostrat
@@ -51,6 +52,10 @@ Run `check`, `index` and `matrix` after editing cards, and `dois` after adding r
   Pragian 410.8, Emsian 407.6 Ma), which differ from ours by up to 3 Myr; see `docs/primer.md` §1.
 - Card traits: `absent` means observed absent, `unknown` means not preserved or not reported,
   `na` means not applicable. Add vocabulary to `tools/cards.py` when a real case needs it.
+- Each card is an exemplar chosen for a contrast. It lists the contrasts it tests (`contrasts`)
+  and says in "Model transfer" what a model may and may not take from it, naming the species and
+  specimens behind each number. A trait value measured on another taxon carries `from:`, and
+  `data/traits.csv` reports it in the `borrowed` column.
 - A card is `draft` until a second agent or Barry has checked its facts; then `reviewed`.
 - British spelling. Dense, precise prose; no filler.
 - Record decisions that shape the programme in `docs/decisions.md`, naming who decided. Keep

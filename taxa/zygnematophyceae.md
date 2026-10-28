@@ -9,6 +9,7 @@ lineage: >-
   species; five orders, Hess et al. 2022): the sister group of embryophytes in genome-scale phylogenies, together
   forming the clade named Anydrophyta (Žárský et al. 2022; used by Hooper et al. 2026).
 placement_confidence: high
+contrasts: [sporophyte-independence, water-transport, reproductive-strategy]
 range:
   first: null
   last: null
@@ -106,6 +107,21 @@ Terrestrial lineages tolerate drying in the vegetative state; freshwater classes
 ## Why it matters for modelling
 
 (1) Haplontic baseline in the sister group: the diploid phase is a durable single cell, and the land-plant ancestor probably had a haploid-only multicellular generation (Kenrick 2018), so interpolation starts from zygote-plus-meiosis. (2) Fertilisation by conjugation needs contact, not swimming sperm; as the class lacks flagella, land-plant flagellate sperm and water-film dependence came from earlier ancestors or were lost here, which the sources do not decide. (3) Desiccation tolerance, UV and cold tolerance and cell-wall chemistry of haploid vegetative cells were probably largely in place, with stress hubs more than 600 Myr old (Dadras et al. 2023), so a model need not make gametophyte drought tolerance a new innovation (inference); the innovations lie in protecting the diploid and its spores. (4) In *Zygnema* from harsh habitats zygospores are rare and clonal pre-akinetes carry populations, so the realised sexual fraction is a free parameter. (5) Transfer of resistant wall chemistry from zygospore to meiospore after meiosis is read as a key step (Permann and Holzinger 2024), linking to spore-based dating in F3 (Hooper et al. 2026, ancestral monoplastidic meiosis and trilete tetrads).
+
+## Model transfer
+
+**Chosen to contrast:** Contrast a durable single-celled diploid stage with a multicellular sporophyte, using haplontic relatives that also demonstrate vegetative drought tolerance and specialised zygospore biology.
+
+- **Can transfer:**
+  - Haplontic baseline for Zygnematophyceae, presented as a class-level synthesis without specified specimens: the diploid phase is a durable single cell followed by meiosis (Kenrick 2018).
+  - Culture-age dependence in Z. circumcarinatum, site unspecified: desiccation tolerance increases with age, while drying induces ROS scavenging, chaperones and aquaporins (Rippin et al. 2017).
+  - Desiccation response in Zygnema cultures, species and culture provenance unspecified: old cultures survived at 84% relative humidity; only slowly acclimated cells survived rapid drying at 10% (Holzinger and Pichrtová 2016, as summarised).
+  - Meiosis in Closterium ehrenbergii zygospores, species named in the reference but specimens and site unspecified: meiosis begins during greening and two non-sister nuclei abort; retain as species-specific biology (Kasai and Ichimura 1983).
+- **Cannot transfer:**
+  - Ancestral land-plant body simplicity cannot be reconstructed directly from living Zygnematophyceae; their simple morphology may be secondary rather than ancestral.
+  - True embryophyte sporopollenin chemistry cannot be assigned to zygospore walls; the proposed sporopollenin-like material differs in chemistry and pathway.
+  - Class-wide meiotic nuclear abortion cannot be inferred from Closterium; the observation is restricted to that genus.
+  - Matrotrophy or parental provisioning coefficients cannot be assigned from these sources; this card reports no provisioning of the zygote by a parent thallus.
 
 ## Open questions
 

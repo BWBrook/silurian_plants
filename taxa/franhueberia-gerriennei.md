@@ -9,6 +9,7 @@ lineage: >-
   xylem; older than stem-leaf-root organography; exact position among Early Devonian euphyllophytes
   unresolved.
 placement_confidence: low
+contrasts: [height, water-transport, record-timing]
 range:
   first: Emsian
   last: Emsian
@@ -94,6 +95,21 @@ Gerrienne et al. (2011) argue from small plant size and thick-walled cortical ce
 - **Hydraulics.** Strullu-Derrien et al.'s conductivity and wall-thickness ratio for *Armoricaphyton* give a measured hydraulic baseline for the earliest wood.
 - **Timing.** First wood is late Pragian, so the trait predates the Battery Point plants; first-appearance models for wood should use *Armoricaphyton*, not this species.
 - **Trait independence.** Wood without leaves or roots (organography after wood), and absence of wood in the largest known leafless axes (*Wilhowia*), separate the cambium from size in the trait matrix.
+
+## Model transfer
+
+**Chosen to contrast:** Contrast secondary xylem production with assumptions linking wood to height and mechanical support, using small preserved xylem cylinders whose whole-plant stature and hydraulic performance remain unknown.
+
+- **Can transfer:**
+  - For the Franhueberia gerriennei type from the Battery Point Formation, Gaspé, use 0.70 mm secondary xylem thickness and up to 25 tracheids per file as accumulated anatomical amounts (Hoffman & Tomescu 2013; Casselman & Tomescu 2025).
+  - For Franhueberia gerriennei in the emended diagnosis incorporating the type and two Battery Point topotypes, use secondary tracheids 8.4-37 µm tangentially and 21.6-42 µm radially, with multiaperturate scalariform bordered pits (Casselman & Tomescu 2025).
+  - For Franhueberia gerriennei in the emended type-plus-two-topotype diagnosis from Battery Point, represent xylem cylinders reaching over 6 mm across; this describes xylem rather than complete stem diameter (Casselman & Tomescu 2025).
+- **Cannot transfer:**
+  - Specific conductivity 8.7 kg m^-1 s^-1 and wall thickness-to-span ratio 0.0372 cannot be assigned to Franhueberia: Strullu-Derrien et al. (2014) measured Armoricaphyton.
+  - Wood thickness and radial cell counts cannot supply annual cambial growth rates: fossil lifetimes are unknown, and the broad ranges pool different woody taxa.
+  - Unknown leaves and roots cannot be coded as observed absence or demonstrate that wood preceded those organs in this species.
+  - The front-matter maximum of 6 mm cannot be a hard upper limit on stem diameter: it is a lower bound on the maximum xylem-cylinder diameter.
+  - The Emsian Franhueberia occurrence cannot calibrate the first appearance of wood: this card identifies older late Pragian Armoricaphyton.
 
 ## Open questions
 

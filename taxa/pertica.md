@@ -8,6 +8,7 @@ lineage: >-
   Stem-group euphyllophyte in the "trimerophyte" grade, with a pseudomonopodial main axis and helical lateral
   branch systems; no anatomy is known, so relationship to the lignophyte-ward plexus is untested.
 placement_confidence: low
+contrasts: [height, reproductive-strategy]
 range:
   first: Emsian
   last: Eifelian
@@ -123,6 +124,20 @@ Trout Valley plants occupied coastal-estuarine settings; *Pertica* occurs in flu
 - **Architecture parameters.** Four ranks, helical phyllotaxis, distal shortening of dichotomy intervals, 32-128 sporangia per cluster: usable L-system inputs.
 - **Height without wood.** A 1-3 m plant with no known secondary tissue is a stringent test of hydraulic and mechanical limits; *Wilhowia* shows 1 cm axes standing without wood (Gensel 2022), but *Pertica* axis diameters are needed.
 - **Stand structure.** No in-situ stands exist, so canopy height and density cannot be taken from this genus.
+
+## Model transfer
+
+**Chosen to contrast:** Contrast overtopped, three-dimensional branching with planate leaf-bearing architecture, using differentiated main axes and fertile laterals with inferred stature and no known anatomy.
+
+- **Can transfer:**
+  - Branch geometry: P. quadrifaria compressions from the Trout Valley Formation, Maine, show a clockwise spiral of side branches forming four vertical ranks; use this species-specific arrangement (Kasper & Andrews 1972).
+  - Fertile-unit construction: P. dalhousii material from the Dalhousie area, New Brunswick, bears clusters of 32-128 fusiform sporangia on dichotomous laterals (Doran et al. 1978).
+  - Spore morphology: P. dalhousii from the Dalhousie area has circular trilete spores with a detachable sculptured outer layer; retain this species-specific reproductive state (Doran et al. 1978).
+- **Cannot transfer:**
+  - Measured standing-height priors cannot use the genus-wide range: P. quadrifaria stature is inferred from fragments, while the taller P. varia estimate comes from unchecked secondary compilations (Kasper & Andrews 1972; Granoff et al. 1976, not read).
+  - Hydraulic conductance, wood absence and mechanical strength cannot be assigned from compression architecture: Pertica anatomy and axis diameters are unknown (Tomescu & Whitewoods 2024).
+  - Planate leaves and determinate leaf growth cannot be transferred to Pertica: its laterals branch in three dimensions and determinacy is doubtful (Tomescu & Whitewoods 2024).
+  - Stand density and in situ habitat cannot use Trout Valley Pertica occurrences: the upright axes are cf. P. forbesii, whereas Pertica is transported or locally displaced (Gastaldo 2016; Allen & Gastaldo 2006).
 
 ## Open questions
 

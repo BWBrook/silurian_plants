@@ -8,6 +8,7 @@ lineage: >-
   Stem-group lycopsid (drepanophycalean grade): a microphyllous lycophyte with a stellate xylem
   cylinder and sporangia among the leaf insertions.
 placement_confidence: medium
+contrasts: [record-timing, water-transport]
 range:
   first: Lochkovian
   last: Pragian
@@ -111,6 +112,21 @@ Nothing direct is known about growth habitat, because the fossils are transporte
 ## Why it matters for modelling
 
 The date is a free parameter with consequences. A Gorstian B. longifolia (426.7-425.0 Ma in the project timescale) would place microphylls, stellate xylem and large stems about 5-14 Myr before a Lochkovian record (419.6-413.0 Ma); an Early Devonian date makes the genus unremarkable. The conservative model setting is a first lycopsid occurrence in the Pridoli (422.7-419.6 Ma, B. brevifolioides) and B. longifolia from the Lochkovian, with a Gorstian scenario as a sensitivity run. Molecular clocks place crown tracheophytes at 432-428 Ma (Hooper et al. 2026), so the lycophyte lineage predates every lycopsid body fossil and the fossil record sets only minimum ages.
+
+## Model transfer
+
+**Chosen to contrast:** Test the timing of a microphyllous plant with stellate xylem, using the Victorian record's reported anatomy alongside its disputed age and limited primary-source verification.
+
+- **Can transfer:**
+  - B. longifolia, Victorian type material: provisionally represent long, simple, spirally arranged leaves of uniform width from the type diagnosis, explicitly retaining its second-hand reporting status (Lang & Cookson 1935).
+  - B. longifolia, Victorian type material: provisionally represent a large central xylem cylinder with stellate primary xylem as qualitative anatomy, without assigning measured conductivity (Lang & Cookson 1935, type diagnosis quoted second-hand).
+  - B. longifolia, Victorian type material: provisionally represent sporangia among leaf insertions in zones of ordinary shoots; retain the uncertainty over their adaxial position (Lang & Cookson 1935, type diagnosis quoted second-hand).
+- **Cannot transfer:**
+  - Do not use the reported 10-50 cm stem fragments or inferred length to c. 2 m as verified stature measurements; they come from an unverified museum search-result summary.
+  - Do not transfer stomatal or epidermal details from Emsian B. abitibiensis to B. longifolia; the latter lacks the corresponding documented anatomy.
+  - Do not assign isotomous branching to B. longifolia from B. brevifolioides; branching is verified only for the Bohemian congener in this comparison.
+  - Do not treat homospory as observed; it is assumed without verified reproductive evidence.
+  - Do not fix the Yea occurrence in the Silurian or equate the conservative Lochkovian setting with a demonstrated first appearance.
 
 ## Open questions
 

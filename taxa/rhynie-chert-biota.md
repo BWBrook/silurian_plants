@@ -10,6 +10,7 @@ lineage: >-
   cyanobacteria, amoebae, nematophytes and arthropods. Placement here is stratigraphic and environmental, not
   phylogenetic.
 placement_confidence: high
+contrasts: [clonal-growth, fungal-nutrition, record-timing]
 range:
   first: Pragian
   last: Emsian
@@ -182,6 +183,21 @@ Plants covered about 40% of the active ground (Powell et al., as reported by Wel
 - **Taxonomic filter.** Seven plants in the chert against 31 common and 42 rare dispersed spore taxa in 70 counted samples. Only five spore morphotypes can be tied to chert plants (Wellman 2017, table 1; derived), and most are non-diagnostic *Retusotriletes*. The basin spore flora is less diverse than coeval floodplain floras (31 against 46, 38 and 88 common taxa in SW Wales, Gaspe and the Ardennes-Rhenish region).
 - **Exclusions.** No bryophytes, which Edwards et al. (2017) call the greatest enigma of the deposit; low preservation of parenchymatous plants; no macrofossil record of the Rhynie plants outside the chert (Wellman 2017). Kerp (2017) notes plants of the wettest habitats are best preserved and drier-substrate plants lose soft tissue.
 - **Trait anchors.** Plant height 20-30 cm; gametophytes about a tenth the size of sporophytes (derived, gametophyte card); all homosporous.
+
+## Model transfer
+
+**Chosen to contrast:** Contrast clonal recolonisation and fungal associations in a repeatedly disturbed wetland, using Rhynie and Windyfield as narrowly sampled habitats with uncertain absolute timing.
+
+- **Can transfer:**
+  - Rhynie plant assemblage: about 40% ground cover can constrain local vegetation cover, without assigning that fraction to individual species (Powell et al., as reported by Wellman 2017).
+  - Rhynie plant stands: allow clonal colonisation of fresh sinter or sand followed by destruction during flooding or silica inundation; colonisation and disturbance rates remain unspecified (Wellman 2017).
+  - Aglaophyton at Windyfield: include an arbuscular mycorrhizal association as an observed interaction, without assigning nutrient-exchange rates (Strullu-Derrien et al. 2025).
+  - Rhynie chert unit: under 15% chert thickness versus over 85% unsilicified sediment can constrain the observation filter; these are stratigraphic proportions, not vegetation-cover estimates (Wellman 2017).
+- **Cannot transfer:**
+  - Do not apply Rhynie species composition, ground cover or stress tolerance to regional vegetation: neither interpretation of the flora establishes its representativeness.
+  - Do not treat reconstructed member heights as measured whole-plant stature; complete plants are absent.
+  - Do not fix the assemblage to one numerical age or stage: the competing radiometric interpretations require alternative placements.
+  - Do not assign observed stomata to every member: Trichopherophyton and Ventarura lack observations, which does not establish anatomical absence.
 
 ## Open questions
 

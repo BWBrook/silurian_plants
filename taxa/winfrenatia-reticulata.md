@@ -9,6 +9,7 @@ lineage: >-
   Gloeocapsa- or Chroococcidiopsis-like coccoid cyanobacteria; a later reading adds a filamentous Nostocales
   cyanobacterium as the main thallus component. Lichen status in the narrow sense is unresolved.
 placement_confidence: low
+contrasts: [fungal-nutrition, record-timing]
 range:
   first: Pragian
   last: Pragian
@@ -109,6 +110,19 @@ Photosynthetic carbon fixation by the cyanobacteria with fungal support is the i
 - Soil formation: lichen- and liverwort-dominated cryptogamic covers form thin soils whose depth is limited by organism size and growth form, aggregated by cyanobacteria and fungi, and are better early-Devonian analogues than moss covers (Mitchell et al. 2016).
 - Nitrogen and carbon inputs from cyanobacterial consortia: Winfrenatia gives a Rhynie-scale existence proof, but no rates.
 - Timing: use 415 Ma (Lochkovian) for the first compelling lichens; treat earlier lichen cover as a hypothesis with the Nelsen et al. phylogenetic result against it.
+
+## Model transfer
+
+**Chosen to contrast:** Contrast preserved fungal–cyanobacterial association with assumed mutualistic nutrition and early lichen cover, because Rhynie material records spatial association without establishing nutrient-exchange rates.
+
+- **Can transfer:**
+  - Spatial association in Rhynie W. reticulata thin sections: Taylor et al. (1997) report three-dimensional nets enclosing sheathed coccoid cyanobacteria; use as their anatomical interpretation.
+  - Reproductive structures in Rhynie W. reticulata material were reported as endospores and soredia (Taylor et al. 1997); encode that interpretation without specifying production or dispersal rates.
+- **Cannot transfer:**
+  - Stable mutualistic carbon-for-nutrients exchange cannot be assigned to W. reticulata from morphology; Berbee et al. (2020) explicitly reject that inference.
+  - Nitrogen-fixation capacity or rate cannot be treated as observed in W. reticulata; the proposed contribution of its filamentous partner is an inference.
+  - Weathering rates cannot be taken from Porada et al. (2016) as measurements of W. reticulata: their Late Ordovician non-vascular vegetation flux is a simulation output.
+  - The first compelling lichen occurrence cannot be assigned to Winfrenatia; Berbee et al. (2020) instead identify Lochkovian charcoalified thalli.
 
 ## Open questions
 

@@ -1,0 +1,190 @@
+{
+  "items": [
+    {
+      "claim": "\"Fern (Polypodiopsida), leptosporangiate (Polypodiidae), Pteridaceae, Ceratopteridoid clade with sister genus Acrostichum\"",
+      "section": "Front matter: lineage; Affinity and controversies",
+      "verdict": "supported",
+      "evidence": "The cited review places Ceratopteris in Pteridaceae, identifies Polypodiidae as leptosporangiate ferns, and describes Acrostichum as its sister genus.",
+      "source": "[Kinosian and Wolf (2022)](https://elifesciences.org/articles/75019), full text; review. [Marchant et al. (2022)](https://www.nature.com/articles/s41477-022-01226-7), full text; primary phylogenomic research."
+    },
+    {
+      "claim": "\"most recent whole-genome duplication ... about 62 Ma, post-dates the split from Acrostichum\"",
+      "section": "Front matter: range.notes; Age and distribution",
+      "verdict": "supported",
+      "evidence": "Gene-family analyses place CERAα after divergence from Acrostichum and date that duplication to approximately 62 Ma.",
+      "source": "[Marchant et al. (2022)](https://www.nature.com/articles/s41477-022-01226-7), full text, Results and discussion."
+    },
+    {
+      "claim": "\"so the genus is far younger than the Early Devonian\"",
+      "section": "Front matter: range.notes; In brief",
+      "verdict": "overstated",
+      "evidence": "A duplication after genus divergence does not date that divergence or establish the genus's maximum age.",
+      "source": "[Marchant et al. (2022)](https://www.nature.com/articles/s41477-022-01226-7), full text; assessment of the card's inference."
+    },
+    {
+      "claim": "\"leptosporangiate crown is 392.8 Ma and the fern crown 423.2 Ma\"",
+      "section": "Front matter: range.notes; Age and distribution",
+      "verdict": "supported",
+      "evidence": "Both numbers match. They are fossil-calibrated, penalised-likelihood crown estimates, rather than fossil occurrences or dates for Ceratopteris.",
+      "source": "[Nitta et al. (2022)](https://www.frontiersin.org/journals/plant-science/articles/10.3389/fpls.2022.909768/full), full text, Molecular dating and Results."
+    },
+    {
+      "claim": "\"species originates in the Caribbean and western Africa\"; \"Cuba: collection that yielded the Hn-n inbred strain\"; \"wild identity is uncertain\"",
+      "section": "Front matter: regions and localities; Age and distribution; Affinity and controversies",
+      "verdict": "supported",
+      "evidence": "The review reports these origins and Cuban provenance, and explicitly discusses misidentification, uncertain range and possible wild extinction.",
+      "source": "[Kinosian and Wolf (2022)](https://elifesciences.org/articles/75019), full text; review, not independent verification of original collections."
+    },
+    {
+      "claim": "\"Leaf, root or vascular traits\" cannot transfer because \"fronds and fern roots are independent origins from lycopsid microphylls and root-bearing axes\"",
+      "section": "Front matter: traits.leaves; Model transfer: Cannot transfer",
+      "verdict": "overstated",
+      "evidence": "Independent organ origins warrant anatomical caution, but Woudenberg demonstrates conserved auxin responses and venation regulation; they do not invalidate all vascular-trait comparisons.",
+      "source": "[Plackett et al. (2015)](https://www.frontiersin.org/journals/plant-science/articles/10.3389/fpls.2015.00972/full), full text; review. [Woudenberg et al. (2024)](https://pmc.ncbi.nlm.nih.gov/articles/PMC11449451/), indexed full-text Results and Discussion read; direct page blocked."
+    },
+    {
+      "claim": "\"Stomatal conductance and net CO2 assimilation were measured on fully expanded sterile fronds\"",
+      "section": "Front matter: traits.stomata",
+      "verdict": "supported",
+      "evidence": "Gas-exchange methods specify fully expanded infertile leaves and measurements of assimilation, stomatal conductance, transpiration and vapour-pressure deficit.",
+      "source": "[Jiang et al. (2024)](https://doi.org/10.1093/plphys/kiae473), indexed full-text Methods read; publisher/repository downloads were inaccessible."
+    },
+    {
+      "claim": "\"Frond complexity rises from simple spade-shaped to tripinnate\"; \"Sporangia on the abaxial side of bi- and tripinnate sporophylls\"",
+      "section": "Front matter: traits.leaves and traits.sporangium_position",
+      "verdict": "supported",
+      "evidence": "Wild-type fronds become increasingly dissected; Figure 1D shows abaxial sporangia on bi- and tripinnate sporophylls.",
+      "source": "[McConnell et al. (2026)](https://pdfs.semanticscholar.org/cdb0/a9e3fc48354e55f9fa606a6e503323a9b861.pdf), full text, Figure 1 and Results; [Plackett et al. (2018)](https://elifesciences.org/articles/39625), full text."
+    },
+    {
+      "claim": "\"16 spores per sporangium, against 32 in other Ceratopteris and 64 in most leptosporangiate ferns\"",
+      "section": "Front matter: traits.spores; Model transfer: Can transfer",
+      "verdict": "imprecise",
+      "evidence": "The review gives 16 for C. richardii, 32 for some congeners, and 64 for most leptosporangiates; the congener comparison is overgeneralised.",
+      "source": "[Kinosian and Wolf (2022)](https://elifesciences.org/articles/75019), full text; review. Its underlying Lloyd taxonomic source was not independently read."
+    },
+    {
+      "claim": "\"Homosporous ... the only vascular spore-bearing homosporous model species\"",
+      "section": "Front matter: traits.heterospory",
+      "verdict": "supported",
+      "evidence": "The 2022 review explicitly makes this model-species claim; Marchant independently describes production of one spore type with potentially bisexual gametophytes.",
+      "source": "[Kinosian and Wolf (2022)](https://elifesciences.org/articles/75019), full-text review; [Marchant et al. (2022)](https://www.nature.com/articles/s41477-022-01226-7), full-text primary research. Exclusivity is source-dated."
+    },
+    {
+      "claim": "\"roots with an apical cell and root cap\"; \"root apex is specified at the eight-celled embryo stage\"",
+      "section": "Front matter: traits.rooting",
+      "verdict": "supported",
+      "evidence": "Woudenberg illustrates sporophytic root apical cells and caps; Plackett assigns embryonic organ fates at eight cells, approximately two days after fertilisation.",
+      "source": "[Woudenberg et al. (2024)](https://doi.org/10.1242/dev.203026), indexed full-text Figure 3 caption read; [Plackett et al. (2018)](https://elifesciences.org/articles/39625), full text, Figure 4."
+    },
+    {
+      "claim": "\"No fossil record of the species or genus was searched for or found\"",
+      "section": "Front matter: range.notes; Age and distribution",
+      "verdict": "unverifiable",
+      "evidence": "No documented search supports the author's search-history statement. Neither phylogenetic paper establishes absence of a species or genus fossil record.",
+      "source": "[Marchant et al. (2022)](https://www.nature.com/articles/s41477-022-01226-7) and [Nitta et al. (2022)](https://www.frontiersin.org/journals/plant-science/articles/10.3389/fpls.2022.909768/full), full texts; neither settles this claim."
+    },
+    {
+      "claim": "\"best-studied homosporous vascular plant\"; \"homosporous end against heterosporous Selaginella and the long-matrotrophy end of Lycopodiella inundata\"",
+      "section": "Model transfer: Chosen to contrast",
+      "verdict": "overstated",
+      "evidence": "The reproductive contrast is appropriate; species-specific dependence durations are missing. The directly studied prolonged underground placenta belongs to Lycopodium obscurum.",
+      "source": "[Kinosian and Wolf (2022)](https://elifesciences.org/articles/75019), full-text review; [Renzaglia and Whittier (2013)](https://pmc.ncbi.nlm.nih.gov/articles/PMC3783242/), indexed full-text Methods and Discussion read. The latter was traced through the linked comparison card."
+    },
+    {
+      "claim": "\"first germinators become hermaphrodites, later ones males under antheridiogen, hermaphrodites insensitive, males reversible, solitary gametophytes self-fertile\"",
+      "section": "Model transfer: Can transfer, sex-expression rules",
+      "verdict": "supported",
+      "evidence": "The sources describe these responses. Exposure during the responsive developmental window, rather than germination order alone, determines male induction.",
+      "source": "[Lai and Zhou](https://link.springer.com/article/10.1007/s00427-025-00728-6), full-text review; [Burow et al. (2025)](https://academic.oup.com/plcell/article/37/5/koaf058/8127778), full-text primary research cited by that review."
+    },
+    {
+      "claim": "\"C. richardii Hn-n and wild-collected relatives\"",
+      "section": "Model transfer: Can transfer, provenance of sex-expression rules",
+      "verdict": "overstated",
+      "evidence": "The review does not document the complete rule set across named wild relatives. Primary genetic work uses Hn-n and a Nicaraguan accession.",
+      "source": "[Lai and Zhou](https://link.springer.com/article/10.1007/s00427-025-00728-6), full text; [Burow et al. (2025)](https://academic.oup.com/plcell/article/37/5/koaf058/8127778), full text, Methods."
+    },
+    {
+      "claim": "\"warm, wet, high-light culture: gametophyte maturity at about 1-2 weeks ... embryogenesis in about 6 days, simple fronds at 20 DAF\"",
+      "section": "Model transfer: Can transfer, developmental sequence",
+      "verdict": "imprecise",
+      "evidence": "The developmental observations are supported, but protocols differ; chamber irradiances of 80–100 µmol m−2 s−1 do not justify a general high-light description.",
+      "source": "[Plackett et al. (2018)](https://elifesciences.org/articles/39625), full text; [McConnell et al. (2026)](https://pdfs.semanticscholar.org/cdb0/a9e3fc48354e55f9fa606a6e503323a9b861.pdf), full text; [Woudenberg et al. (2024)](https://pmc.ncbi.nlm.nih.gov/articles/PMC11449451/), indexed full-text Methods read."
+    },
+    {
+      "claim": "\"sporophylls at about 72-124 DAF\"",
+      "section": "Model transfer: Can transfer, developmental sequence",
+      "verdict": "imprecise",
+      "evidence": "These include observation ages: 72-day sporophyll images and 110–124-day reporter samples. They are not a measured distribution of first sporophyll appearance.",
+      "source": "[McConnell et al. (2026)](https://pdfs.semanticscholar.org/cdb0/a9e3fc48354e55f9fa606a6e503323a9b861.pdf), full text, Figure 1; [Plackett et al. (2018)](https://elifesciences.org/articles/39625/figures), full-text supplementary figure captions."
+    },
+    {
+      "claim": "\"spores maturing over at least 3 months after cutting\"",
+      "section": "Model transfer: Can transfer, developmental sequence",
+      "verdict": "overstated",
+      "evidence": "Methods prescribe keeping cut mature sporophylls in bags for at least three months; no experiment establishes a minimum biological maturation duration.",
+      "source": "[McConnell et al. (2026)](https://pdfs.semanticscholar.org/cdb0/a9e3fc48354e55f9fa606a6e503323a9b861.pdf), full text, Plant materials and growth conditions."
+    },
+    {
+      "claim": "\"a 2-month dormancy after harvest\"",
+      "section": "Model transfer: Can transfer, developmental sequence",
+      "verdict": "unverifiable",
+      "evidence": "The accessible main-text sections did not establish this duration; the supplementary material needed to check the attribution could not be accessed.",
+      "source": "[Jiang et al. (2024)](https://doi.org/10.1093/plphys/kiae473), full-text sections read through indexed repositories; supplement not read. The abstract does not settle dormancy."
+    },
+    {
+      "claim": "\"a placental foot with transfer cells carries the embryo while the leaf-root axis is built, then the sporophyte stands alone\"",
+      "section": "Model transfer: Can transfer, embryo support",
+      "verdict": "supported",
+      "evidence": "The abstract describes foot differentiation for nutrient transport and early placental wall ingrowths. Subsequent independence is supported generally, without a measured transition time.",
+      "source": "[Johnson and Renzaglia (2008)](https://link.springer.com/article/10.1007/s10265-008-0187-3), abstract only; full text subscription-restricted. [Marchant et al. (2022)](https://www.nature.com/articles/s41477-022-01226-7), full text."
+    },
+    {
+      "claim": "\"the 120-day cycle, 16 spores and 9.6 Gb genome are derived or unusual for ferns\"",
+      "section": "Model transfer: Cannot transfer, absolute values",
+      "verdict": "wrong",
+      "evidence": "The cycle and spore count are unusual; Marchant describes large genomes as typical of ferns, with a mean exceeding Ceratopteris's 9.6 Gb.",
+      "source": "[Marchant et al. (2022)](https://www.nature.com/articles/s41477-022-01226-7), full text; [Kinosian and Wolf (2022)](https://elifesciences.org/articles/75019), full-text review."
+    },
+    {
+      "claim": "\"Time to nutritional independence: not reported ... and measured on sucrose media if at all\"",
+      "section": "Model transfer: Cannot transfer",
+      "verdict": "imprecise",
+      "evidence": "No cited measurement establishes independence. Woudenberg used sucrose; McConnell describes C-fern medium followed by soil, without specifying added sucrose.",
+      "source": "[Woudenberg et al. (2024)](https://pmc.ncbi.nlm.nih.gov/articles/PMC11449451/), indexed full-text Methods read; [McConnell et al. (2026)](https://pdfs.semanticscholar.org/cdb0/a9e3fc48354e55f9fa606a6e503323a9b861.pdf), full text; [Johnson and Renzaglia (2008)](https://link.springer.com/article/10.1007/s10265-008-0187-3), abstract only."
+    },
+    {
+      "claim": "\"Antheridiogen or any pheromone system to a Silurian or Devonian plant: it is unidentified chemically and unsupported by fossils\"",
+      "section": "Model transfer: Cannot transfer; Affinity and controversies",
+      "verdict": "supported",
+      "evidence": "Ceratopteris antheridiogen remains chemically unidentified; distinct fern signalling systems have uncertain evolutionary origins. The sources provide no Silurian or Devonian demonstration.",
+      "source": "[Lai and Zhou](https://link.springer.com/article/10.1007/s00427-025-00728-6), full-text review; [Burow et al. (2025)](https://academic.oup.com/plcell/article/37/5/koaf058/8127778), full-text primary research. The historical restriction is an inference."
+    },
+    {
+      "claim": "\"Free-living, photosynthetic thallus ... cordate hermaphrodite ... smaller ameristic male\"; \"compare the Rhynie gametophytes only on traits, not on shape\"",
+      "section": "Front matter: traits.gametophyte; Model transfer: Cannot transfer",
+      "verdict": "supported",
+      "evidence": "The described Ceratopteris forms are documented. Their use as direct reconstructions of Rhynie gametophyte shape is not established by these sources.",
+      "source": "[Plackett et al. (2018)](https://elifesciences.org/articles/39625), full text; [Lai and Zhou](https://link.springer.com/article/10.1007/s00427-025-00728-6), full-text review. The comparison restriction is methodological advice."
+    },
+    {
+      "claim": "\"Habitat: semi-aquatic and flood-dependent, with an uncertain wild range, from one inbred line\"",
+      "section": "Model transfer: Cannot transfer",
+      "verdict": "imprecise",
+      "evidence": "Semi-aquatic ecology and range uncertainty are reported; additional accessions exist. Flooding is a fertilisation protocol, not a measurement of field recruitment.",
+      "source": "[Kinosian and Wolf (2022)](https://elifesciences.org/articles/75019), full-text review; [McConnell et al. (2026)](https://pdfs.semanticscholar.org/cdb0/a9e3fc48354e55f9fa606a6e503323a9b861.pdf), full text; [Burow et al. (2025)](https://academic.oup.com/plcell/article/37/5/koaf058/8127778), full text."
+    }
+  ],
+  "omissions": [
+    "Germination order is a proxy for antheridiogen exposure during a responsive developmental window. An exposure-dependent rule would represent the mechanism better than an unconditional first-versus-later rule. [Burow et al. (2025), full text](https://academic.oup.com/plcell/article/37/5/koaf058/8127778).",
+    "Jiang reports guard-cell length and width and stomatal pore dimensions. Thus recoverable size measurements exist in a cited source, despite the card's extraction gap. [Jiang et al. (2024), indexed full-text Methods](https://doi.org/10.1093/plphys/kiae473).",
+    "Reproductive frond photographs and reporter sampling ages must be distinguished from measured reproductive-transition times; greenhouse growth also follows chamber culture. These observations cannot form one calibrated life-cycle distribution. [McConnell et al. (2026), full text](https://pdfs.semanticscholar.org/cdb0/a9e3fc48354e55f9fa606a6e503323a9b861.pdf), [Plackett et al. (2018), supplementary captions](https://elifesciences.org/articles/39625/figures).",
+    "Renzaglia and Whittier report photosynthetic embryos within one day and emergence within two weeks in Ceratopteris, citing earlier work. This distinguishes early photosynthetic capacity from carbon autonomy; it does not measure cessation of maternal transfer. [Renzaglia and Whittier (2013), indexed full-text Discussion](https://pmc.ncbi.nlm.nih.gov/articles/PMC3783242/).",
+    "The stronger documented prolonged-matrotrophy comparator is Lycopodium obscurum. Neither this card nor the linked Lycopodiella card supplies a species-specific dependence duration for L. inundata. [Renzaglia and Whittier (2013), indexed full-text Methods and Discussion](https://pmc.ncbi.nlm.nih.gov/articles/PMC3783242/).",
+    "Woudenberg finds developmental generation strongly predicts auxin-response properties, with shared responses across distant lineages. This supports qualified mechanistic comparisons beyond the card's blanket anatomical exclusion. [Woudenberg et al. (2024), indexed full-text Results and Discussion](https://pmc.ncbi.nlm.nih.gov/articles/PMC11449451/).",
+    "Nitta's ages depend on fossil constraints and a fixed land-plant root age. Their decimal precision should not imply a precisely established temporal boundary for transferable biology. [Nitta et al. (2022), full text](https://www.frontiersin.org/journals/plant-science/articles/10.3389/fpls.2022.909768/full)."
+  ],
+  "model_transfer_assessment": "The reproductive-strategy contrast is appropriate, and placental support provides a useful qualitative comparison. The sporophyte-independence contrast lacks measured durations for both Ceratopteris and the named Lycopodiella comparator. Most developmental observations concern Hn-n controls or derivatives, but the complete sex-rule set is not demonstrated across the stated wild relatives, and the proposed chronology combines observation ages, protocols and an unverified dormancy interval. The exclusions correctly reject direct ancestral attribution and typical-value calibration, but should allow qualified comparisons of conserved functions. Separate organ specification, photosynthetic capacity, net carbon autonomy and cessation of placental transfer.",
+  "overall": "The card is broadly reliable on placement, morphology and several laboratory observations, but its age argument and quantitative Model transfer claims need revision. Keep it draft until genus dating, specimen provenance, observation-versus-transition timing and the dormancy attribution are corrected or explicitly left unresolved; several remaining statements are verified only against cited reviews, not their underlying primary measurements."
+}

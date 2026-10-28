@@ -8,6 +8,7 @@ lineage: >-
   Fern (Polypodiopsida), Psilotales: Psilotaceae, sister to Psilotum; Psilotales are sister to Ophioglossales.
   About 15 species, mostly epiphytic, in Australasia and the south-west Pacific.
 placement_confidence: high
+contrasts: [sporophyte-independence, fungal-nutrition, water-transport]
 range:
   first: null
   last: null
@@ -29,7 +30,7 @@ traits:
   stomata: {state: present, note: "Stomatal ontogeny described in T. tannensis (Pant & Khare 1971); stomata on cultured apogamous stems (Whittier 2004). Density and size not obtained."}
   conducting_tissue: {state: tracheids, note: "Vessel-like elements with scalariform perforation plates and sieve cells in sporophyte and gametophyte (Duckett & Ligrone 2005). Wall type not classified to the controlled vocabulary."}
   sporangium_position: {state: lateral, note: "Bilobed synangia on the upper margin of forked sporophylls (New Zealand factsheet); 2.5-6 mm long in T. elongata."}
-  spores: {state: na, note: "Monolete, ellipsoidal, rugulate to smooth (New Zealand factsheet); size not obtained. Outside the vocabulary."}
+  spores: {state: monolete, note: "Monolete, ellipsoidal, rugulate to smooth (New Zealand factsheet); size not obtained."}
   heterospory: {state: absent, note: "Homosporous; no second spore type reported in the sources read."}
   rooting: {state: rhizomes, note: "Subterranean branched rhizomes with brown rhizoidal hairs; no roots (factsheet)."}
   gametophyte: {state: known, note: "Subterranean, mycorrhizal and vascularised; usually buried in tree-fern trunks (factsheet; Duckett & Ligrone 2005; Whittier 2004)."}
@@ -95,6 +96,22 @@ Placement as in *Psilotum*: ferns, with Psilotales sister to Ophioglossales (Nit
 - **Leaf-like appendages.** Single-veined, 8-35 mm appendages on a fern, nested far from lycophytes on current phylogenies, are a living case of microphyll-like organs outside the lycophytes, so the label "microphyll" alone carries no homology.
 - **Limits of the analogy.** Pendent epiphytic axes on tree-fern trunks are not an analogue for erect Devonian axes (no support limit, and a substrate that was probably absent in the window; my inference), and I found no gas-exchange or hydraulic measurements for *Tmesipteris* itself; the *Psilotum* values in [Psilotum nudum](psilotum-nudum.md) cannot be assumed to transfer.
 - **Measurements that could be made in Tasmania.** Gas exchange and light response, leaf area per axis and vein density, stomatal density and size, spore number per synangium, and excavation of gametophytes on *Dicksonia* trunks to time the spore-to-sporophyte interval.
+
+## Model transfer
+
+**Chosen to contrast:** Contrast fungus-fed, vascularised gametophytes and apogamy without a foot with matrotrophic life-cycle models, using living Tmesipteris as a mechanistic analogue within ferns.
+
+- **Can transfer:**
+  - T. lanceolata, Whittier's cultured gametophytes: about 15% produced apogamous sporophytes joined directly without a foot; use this as a treatment-specific developmental outcome (Whittier 2004).
+  - T. lanceolata gametophytes in axenic culture with minerals and 0.5% glucose remained non-photosynthetic; retain that response under the stated culture conditions (Whittier 2004).
+  - Tmesipteris, species and collection site unspecified: vascular elements in both generations permit a conducting gametophyte state, without numerical hydraulic calibration (Duckett & Ligrone 2005).
+  - T. elongata, New Zealand factsheet material: pendent stems 70-1400 mm long and synangia 2.5-6 by 1-2.5 mm constrain species-specific architecture and organ size (New Zealand Flora, accessed 2026-10-27).
+- **Cannot transfer:**
+  - Do not use pendent T. elongata stem lengths as erect Devonian height or mechanical-support limits; the epiphytic growth geometry differs.
+  - Do not assign haploid ploidy to the apogamous sporophytes or interpret the culture frequency as a natural population rate.
+  - Do not infer homology with lycophyte leaves from the microphyll label applied to Tmesipteris appendages.
+  - Do not import Psilotum gas-exchange or hydraulic values into Tmesipteris; this card reports no measurements for the latter.
+  - Do not derive cell size, stomatal dimensions or growth rates from the reported genome sizes; the sources establish no such relationship.
 
 ## Open questions
 

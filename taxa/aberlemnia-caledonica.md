@@ -8,6 +8,7 @@ lineage: >-
   Polysporangiophyte of cooksonioid grade (Rhyniopsida in the usage of Liu et al. 2024); vascular tissue has not
   been shown for this species.
 placement_confidence: low
+contrasts: [height, reproductive-strategy, record-timing]
 range:
   first: Pridoli
   last: Lochkovian
@@ -94,6 +95,20 @@ Nothing is known directly. Axes of a few millimetres and no foliage imply a dete
 - Range: Laurussia and southern Gondwana (50-60°S and near the pole), so a cold-tolerant, wide-dispersing grade; the Pridoli Rinconada record fits the South Laurussian-Northwest Gondwana realm of Drovandi et al. (2024).
 - Cooksonioids radiated away from the Rheic Ocean region over the Silurian-Devonian transition (Libertín et al. 2022). Hooper et al. (2026) treat *Cooksonia* as a stem-tracheophyte and date crown tracheophytes to 432-428 Ma, coinciding with its first appearance; *Aberlemnia* is younger, and whether it is stem- or crown-tracheophyte is untested.
 - Do not give it tracheids, stomata or spores in a model without a stated assumption.
+
+## Model transfer
+
+**Chosen to contrast:** Contrast centimetre-scale, repeatedly branching reproductive architecture with anatomically better-known plants, using measured type fragments while retaining uncertainty over vascular status and Silurian occurrence.
+
+- **Can transfer:**
+  - A. caledonica, Aberlemno type material: use at least 6.7 cm as preserved height and 0.4-1.8 mm as axis width, with mean 0.65 mm (Edwards 1970).
+  - A. caledonica, Aberlemno type material: represent four observed branching orders, branching at 55-60 degrees and distal axis narrowing (Edwards 1970).
+  - A. caledonica, Aberlemno type material: use terminal sporangia 1.3-3.0 mm wide, somewhat shorter than wide, as reproductive geometry (Edwards 1970).
+- **Cannot transfer:**
+  - Do not assign observed tracheids, stomata or spore characters to A. caledonica; this card explicitly requires assumptions for these traits.
+  - Do not treat 16 terminal sporangia as measured fecundity; this is arithmetic conditional on regular repetition of the branching pattern.
+  - Do not use the Rinconada occurrence as an unqualified Pridoli first appearance; the enclosing unit has conflicting age assignments.
+  - Do not parameterise growth habitat or cold tolerance from depositional setting and geographical distribution alone; the growth habitat is unknown.
 
 ## Open questions
 

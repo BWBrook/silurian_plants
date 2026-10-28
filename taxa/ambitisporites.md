@@ -9,6 +9,7 @@ lineage: >-
   Hooper et al. 2026); found in situ in Cooksonia-type polysporangiophytes (Pridoli-Lochkovian); Ordovician
   parent plants unknown.
 placement_confidence: low
+contrasts: [reproductive-strategy, record-timing]
 range:
   first: Katian
   last: Lochkovian
@@ -29,7 +30,7 @@ localities:
   - Borenshult-1 core, Östergötland, Sweden (Dalby Limestone; Sandbian, Baltica; disputed)
   - Brown Clee Hill and other Welsh Borderland sites, UK (in situ in Cooksonia; Pridoli-Lochkovian)
   - Barrandian area, Czech Republic (in situ in Cooksonia bohemica; Pridoli)
-  - Zbrza, Holy Cross Mountains, Poland (putative; Hirnantian)
+  - Zbrza, Holy Cross Mountains, Poland (putative; Hirnantian; irregular trilete marks, disputed assemblage; see zbrza-assemblage.md)
 preservation: [dispersed]
 traits:
   height_cm: {min: null, max: null, note: "Dispersed spore genus. Parent size is unknown for Ordovician records; in situ parents are the Cooksonia-type plants of the Pridoli-Lochkovian."}
@@ -112,6 +113,20 @@ Nothing is known directly. Ordovician spores arrive in marine shelf sediments by
 - Clock constraint: trilete spores give a soft maximum on the embryophyte crown (459.1 Ma); Morris et al. (2018) allowed crown tracheophytes 450.8-419.3 Ma, Hooper et al. (2026) 432-428 Ma.
 - Abundance: separating spores were under 1% of Katian-Hirnantian spores in Saudi Arabia, so their producers were a minor component of the spore rain; the share rises only in the Silurian.
 - Lag: c. 23 Myr from the Katian spores to the first Cooksonia megafossils; Hooper et al. (2026) cut the clock-versus-fossil mismatch to as little as 19 Myr.
+
+## Model transfer
+
+**Chosen to contrast:** Contrast the early record of separating trilete spores with later identifiable parent plants, using a spore form genus that constrains reproductive morphology and occurrence without establishing vascular affinity.
+
+- **Can transfer:**
+  - A. avitus sensu Steemans et al. (1996), Qusaiba-1 specimens: use spore diameter 31-44 µm, with n=3, as reported by Wellman et al. (2015).
+  - Qusaiba-1 Katian-Hirnantian spore assemblages: use under 1% naturally separating hilate and trilete spores as an assemblage-level observation constraint, not an Ambitisporites-only percentage (Steemans et al. 2009; Wellman et al. 2015).
+  - A. avitus, Katian Qusaiba-1 record: retain 449.65 Ma as the fossil minimum used for the Zygnematophyceae–embryophyte split in Hooper et al. (2026), preserving that calibration's stated target.
+- **Cannot transfer:**
+  - Do not equate Ambitisporites occurrence with vascular-plant presence; this card's newer interpretation assigns it to total-group embryophytes.
+  - Do not impose the Swedish Sandbian occurrence as a secure minimum age; its apparent trilete mark may result from compression.
+  - Do not transfer Cooksonia stature, branching, conducting tissue or terminal sporangia to Ordovician Ambitisporites producers; those spores have no identified parent plant.
+  - Do not use Lochkovian as the genus's extinction boundary; it is the youngest verified in situ record in this card, not a checked dispersed-spore endpoint.
 
 ## Open questions
 

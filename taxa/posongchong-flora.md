@@ -9,6 +9,7 @@ lineage: >-
   group, with lycopsids, euphyllophytes, barinophyte-like and incertae sedis forms, a sphenopsid-lineage plant
   and a thalloid liverwort claim; most genera are endemic.
 placement_confidence: medium
+contrasts: [reproductive-strategy, record-timing]
 range:
   first: Pragian
   last: Pragian
@@ -125,6 +126,22 @@ Little is known of the biology of individual plants. *Hueberia* is described as 
 - **Spore channel.** South China spores differ in abundance, with few *Camarozonotriletes*, *Emphanisporites* and *Verrucosisporites* and no *Clivosispora* or *Breconisporites* (Cascales-Minana et al. 2018); spore-based dating of a megafossil unit is not transferable between provinces (F4).
 - **Time resolution.** Age bracket of about one stage (2.4 Myr Pragian), capped by marine beds of late Pragian to earliest Emsian age; use stage-level, not Ma-level, timing.
 - **Trait snapshot.** At roughly one time slice the flora contains microphyll lycopsids, lateral-sporangium zosterophylls, terminal-sporangium euphyllophytes and a disputed leaf precursor. Trait frequencies need the species-level data in Hao & Xue (2013), not read.
+
+## Model transfer
+
+**Chosen to contrast:** Contrast an endemic South China trait assemblage and its dispersed-spore record with contemporary Laurussian floras, using a diverse but only stage-dated sampling unit.
+
+- **Can transfer:**
+  - Assemblage composition: the Posongchong Formation table contains 33 taxa including open nomenclature; use these as documented entries, not a reconciled species total (Cascales-Minana et al. 2018, table 4; card-derived count).
+  - Provincial occurrence structure: Posongchong has 20 of 28 genera endemic, over 70%; use this formation-level composition constraint rather than treating records as a pooled Laurussian sample (Wang et al. 2022).
+  - Spore sampling: Posongchong dispersed assemblages contain 18 genera and 32 species across 12 samples, nine productive; use these as observation-model counts rather than parent-plant richness (Cascales-Minana et al. 2018).
+  - Member geometry: Hueberia bainiuchangensis in the Posongchong record, including Feigu, has stems 2.5-4.2 mm wide; retain this member-specific dimension without assigning a flora-wide axis size (Hu et al. 2025).
+  - Occurrence timing: the Wenshan Posongchong assemblage is middle to late Pragian by biostratigraphy; retain stage-level uncertainty for the sampling unit (Cascales-Minana et al. 2018).
+- **Cannot transfer:**
+  - Flora-wide microphylls, tracheids and sporangium positions cannot become a single plant phenotype: this card combines leafless zosterophylls, lycopsids and euphyllophytes with different traits (Cascales-Minana et al. 2018; Hu et al. 2025).
+  - Rare dispersed tetrads cannot supply a named member's spore output, reproductive allocation or abundance: their parent plants are unidentified (Cascales-Minana et al. 2018).
+  - A numerical point age cannot replace the Pragian bracket: spore correlation is preliminary and no radiometric date exists (Cascales-Minana et al. 2018).
+  - Semi-aridity and short transport cannot be imposed throughout the formation: the geochemical interpretation concerns Feigu and the taphonomic claim concerns Hueberia material (Hu et al. 2025).
 
 ## Open questions
 

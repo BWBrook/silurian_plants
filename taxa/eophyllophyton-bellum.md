@@ -9,6 +9,7 @@ lineage: >-
   ("branch-leaf complexes"); an isolated class, Eophyllophytopsida, is reported for it in Hao & Xue's 2013
   monograph (via a secondary account; not read).
 placement_confidence: low
+contrasts: [water-transport, record-timing]
 range:
   first: Pragian
   last: Pragian
@@ -124,6 +125,20 @@ Little is known: stomata unobserved (no epidermis in SEM), no roots, spores or g
 - **Size scale.** Blades of a few millimetres (bounding area at most about 24 mm2 from the quoted dimensions, less after dissection) are the unit; a plant-level photosynthetic area needs counts not yet found.
 - **CO2 premise.** The heat-stress explanation relies on high CO2 limiting stomatal conductance; Osborne et al. (2004) report a 25-fold blade enlargement and an 8-fold stomatal density rise as CO2 fell. Dahl et al. (2022) estimate 525-715 ppm for 410-380 Ma (±100 ppm), against the canonical view of about an order of magnitude above pre-industrial, and do not discuss leaf origin. The delay in megaphylls then needs developmental or hydraulic explanations (Boyce & Knoll 2002; Galtier 2010); this is my inference, not a published conclusion.
 - **Parallel origins.** Several leaf-precursor lineages appear simultaneously in the Pragian of one region, so the trait may have been easily gained and lost.
+
+## Model transfer
+
+**Chosen to contrast:** Contrast a vascularised branch-leaf precursor with a dorsiventral laminate leaf, using appendages flattened only at their tips to test alternative timings and anatomical requirements of leaf acquisition.
+
+- **Can transfer:**
+  - For Eophyllophyton bellum compressions from the Posongchong Formation, Wenshan, represent paired dissected appendages with branching veins and mesophyll lacking palisade and spongy layers (Hao et al. 2003; Hao & Xue 2013).
+  - For Eophyllophyton bellum from Posongchong, use the character interpretation of determinate growth with radial vascular symmetry, three-dimensional architecture and no dorsiventral polarity, rather than a binary mature-leaf character (Tomescu & Whitewoods 2024).
+  - Use middle to late Pragian as the Posongchong occurrence interval for Eophyllophyton bellum, constrained by palynology, fish and overlying marine fauna; this is not a radiometric date (Cascales-Miñana et al. 2017).
+- **Cannot transfer:**
+  - The front-matter megaphyll state cannot establish a true leaf: this card's later interpretation recognises reduced branch systems and incomplete leaf characters.
+  - Quoted blade dimensions and the derived bounding area cannot become verified primary measurements: the dimensions came from unchecked secondary summaries.
+  - Stomatal density, conductance and measured heat tolerance cannot be assigned: no epidermis was observed, and the high-CO2 heat-stress explanation is an interpretation.
+  - Plant-level photosynthetic area cannot be inferred from one appendage's dimensions without appendage counts.
 
 ## Open questions
 

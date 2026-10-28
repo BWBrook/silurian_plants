@@ -9,6 +9,7 @@ lineage: >-
   (Baragwanathia), zosterophylls, rhyniophytoids and a trimerophyte-grade plant, plus bryophyte-like
   and algal fossils, all preserved as transported compressions.
 placement_confidence: medium
+contrasts: [height, record-timing]
 range:
   first: Lochkovian
   last: Emsian
@@ -119,7 +120,7 @@ The Baragwanathia floras are the compression assemblages of the Melbourne Trough
 
 ## Morphology and anatomy
 
-By my tally from Table 1.1 of McSweeney (2024), about 16 formally named species in 11 genera are known: *Baragwanathia longifolia*; the zosterophylls *Zosterophyllum australianum*, *Z. ramosum*, *Parazosterophyllum timsiae*, *Gippslandites minutus* and *Taungurungia garrattii* (see [zosterophylls](zosterophylls.md)); the rhyniophytoids [Salopella](salopella.md) (three species), [Yarravia](yarravia.md) (three, including the former [Hedeia](hedeia.md)), *Uskiella spargens* and *Cooksonia* cf. *paranensis*; the trimerophyte-grade *Dawsonites subarcuatus* (see [Dawsonites](dawsonites.md)); and the non-vascular *Sporogonites chapmanii*. Unnamed forms include zosterophylls with bilateral symmetry (cf. *Z. fertile* and cf. *Zosterophyllum* sp. A; McSweeney et al. 2022) and Tims's unpublished names, among them [Pluricaulis biformis](pluricaulis-biformis.md).
+By my tally from Table 1.1 of McSweeney (2024), about 16 formally named species in 11 genera are known: *Baragwanathia longifolia*; the zosterophylls *Zosterophyllum australianum*, *Z. ramosum*, *Parazosterophyllum timsiae*, *Gippslandites minutus* and *Taungurungia garrattii* (see [zosterophylls](zosterophylls.md)); the rhyniophytoids [Salopella](salopella.md) (three species), [Yarravia](yarravia.md) (three, including the former [Hedeia](hedeia.md)), *Uskiella spargens* and *Cooksonia* cf. *paranensis*; the trimerophyte-grade *Dawsonites subarcuatus* (see [Dawsonites](dawsonites.md)); and *Sporogonites chapmanii*, a capsule-bearing plant of unresolved, possibly bryophyte, affinity (see [Sporogonites](sporogonites.md)). Unnamed forms include zosterophylls with bilateral symmetry (cf. *Z. fertile* and cf. *Zosterophyllum* sp. A; McSweeney et al. 2022) and Tims's unpublished names, among them [Pluricaulis biformis](pluricaulis-biformis.md).
 
 Tims & Chambers (1984) list for Limestone Road (LPA) *Salopella*, *Hedeia*, one definite and two probable zosterophylls, *B. longifolia* and another lycophyte; Ghin Ghin Road adds *Parazosterophyllum* (McSweeney et al. 2020). The Wilson Creek Shale at Frenchmans Spur has *Salopella australis*, *S. caespitosa*, *Yarravia oblonga*, zosterophylls, *B. longifolia* and *Dawsonites*. The assemblages share genera; what separates them is the age argued for them. Preservation is poor: compressions and impressions, with no cell detail or spores from maceration (Tims & Chambers 1984).
 
@@ -145,6 +146,21 @@ All material is transported. The Wilson Creek Shale is black, deep-water and ano
 - **Observation filter (F3, F4).** Transported marine compressions give size and gross form, not physiology, and cannot be tied to dispersed spores; the age of plant beds is indirect.
 - **Palaeolatitude (F4).** Reconstructions give about 10 or 30 degrees south, and the PBDB gplates model moves the Victorian localities from 16 to 32 degrees south between its Ludlow and Pragian-Middle Devonian assignments (model output, not data).
 - **Diversity.** About 11 genera against 28 in the Posongchong flora ([Eophyllophyton](eophyllophyton-bellum.md) card); the records are probably not sampled comparably (my inference).
+
+## Model transfer
+
+**Chosen to contrast:** Test the timing of the Victorian increase in axis size, using transported assemblages that preserve gross dimensions while leaving the supposed Silurian occurrence unresolved.
+
+- **Can transfer:**
+  - S. caespitosa, Wilson Creek Shale at Frenchmans Spur: use fertile-axis diameter about 0.7 mm as a member-specific measurement (Tims & Chambers 1984).
+  - Baragwanathia, Ghin Ghin Road material: use axes commonly over 20 mm and one 38 mm wide as reported dimensions, retaining the chapter's manuscript-in-review status (McSweeney 2024, chapter 9).
+  - Victorian flora, Boola Formation at Tyers: use late Lochkovian to early Pragian occurrence control from brachiopods and conodonts (McSweeney et al. 2020, citing Garratt & Wright 1988 and Mawson & Talent 1994).
+- **Cannot transfer:**
+  - Do not treat the front-matter 40 cm lower bound as measured stature; preserved axis length does not establish whole-plant height.
+  - Do not treat the 65 mm axis maximum or Tims's leaf-dimension ranges as independently verified primary measurements; they reach this card second-hand from an unseen thesis.
+  - Do not transfer detailed G-type tracheid walls from Ontario B. abitibiensis to Victorian B. longifolia; the detailed anatomy belongs to another species and locality.
+  - Do not use a Gorstian Lower Plant Assemblage as a demonstrated calibration or evolutionary starting point; the revisions establish no Silurian age.
+  - Do not derive physiological rates from these transported compressions; they preserve size and gross form rather than physiology.
 
 ## Open questions
 

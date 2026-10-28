@@ -8,6 +8,7 @@ lineage: >-
   Stem-group lycopsid (drepanophycalean grade); with Drepanophycus it forms a lycopsid clade sister to the
   spiny zosterophylls (Sawdoniaceae) in the most recent analysis.
 placement_confidence: medium
+contrasts: [water-transport, clonal-growth, reproductive-strategy]
 range:
   first: Pragian
   last: Emsian
@@ -109,6 +110,22 @@ Asteroxylon is the only Rhynie plant without rhizoids (Kerp 2018), its rooting a
 - **Reproduction.** Homosporous, with 44-59 µm trilete spores, kidney-shaped sporangia 0.6-5.6 mm wide, and growth periodicity.
 - **Timing.** The 4 Myr dating gap changes whether the three-axis body plan appears in the Pragian or the Emsian.
 - **Transport.** Xylem is a small fraction of stem area (Kerp 2018) and the food-conducting tissue was not true phloem (Cooper & Hetherington 2026), which constrain long-distance transport rates.
+
+## Model transfer
+
+**Chosen to contrast:** Contrast vascular, rhizomatous growth and lateral reproduction with incomplete root and leaf differentiation, using Rhynie specimens that preserve distinct shoot, root-bearing and rooting axes.
+
+- **Can transfer:**
+  - A. mackiei, Rhynie chert in situ reconstruction: separate downward root-bearing axes about 2-3.5 mm wide from rooting axes under 2 mm, often under 1 mm (Hetherington et al. 2021).
+  - A. mackiei, Rhynie chert rooting apices: represent root-cap absence observed in five apices among 641 thin sections (Hetherington & Dolan 2018).
+  - A. mackiei, Rhynie chert appendages: use a maximum length of 5 mm and absence of vascularisation as foliage geometry and anatomy (Kerp 2018).
+  - A. mackiei, Rhynie chert fertile axes: use trilete spores 44-59 µm across and alternating fertile and sterile zones (Kerp et al. 2013; Kerp 2018).
+  - A. mackiei, Rhynie chert stem sections: represent G-type tracheids, a three-zoned cortex and absence of an endodermis as anatomical states (Kerp 2018).
+- **Cannot transfer:**
+  - Do not treat about 30 cm as measured whole-plant height; the older reconstruction combines several individuals.
+  - Do not assign later lycopsid true-root uptake properties to the capless, hairless rooting axes; their uptake function remains unresolved.
+  - Do not model the observed rooting-system fungus as a demonstrated nutritional mutualist; this card interprets it as probably parasitic.
+  - Do not assign true-phloem transport parameters to the food-conducting tissue; this card distinguishes it from true phloem.
 
 ## Open questions
 

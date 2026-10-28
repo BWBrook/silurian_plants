@@ -3,6 +3,47 @@
 Dated record of decisions that shape the programme. Newest first. Say who decided, and quote
 Barry exactly (with source) or label a paraphrase.
 
+## 2026-10-28: exemplars chosen by contrast; tranche-3 cards
+
+- **Comparative design** (Barry, chat, 2026-10-28): "we need to select each exemplar for the
+  particular contrast it tests, and state which traits can—and cannot—be transferred into a
+  model." He found the living comparators unbalanced ("mosses are entirely missing") and asked for
+  exemplars that separate height, water transport, sporophyte independence, fungal nutrition and
+  reproductive strategy.
+- **Schema** (Claude): every card now records three things.
+  - `contrasts`: Barry's five, plus clonal-growth (Sengelia's spread and persistence) and
+    record-timing (cards about when lineages appear).
+  - A required "Model transfer" section.
+  - A trait-level `from:` marker for values measured on another taxon, reported in the `borrowed`
+    column of `data/traits.csv`. This came from Barry's point that the D. spinaeformis card
+    borrows rhizome traits from D. qujingensis.
+
+  The vocabulary gained monolete spores and an "intermediate" heterospory state.
+- **Retrofit** (Codex `gpt-6.1-sol`; reviewed by Claude): contrasts and Model transfer for the 59
+  existing cards, drawn only from each card's text. Every supporting quotation was checked
+  verbatim by script. Over-applied `from:` markers were pruned. Sol's doubts about internal
+  inconsistencies are kept as unadjudicated leads in
+  `docs/audits/2026-10-28-card-consistency-leads.csv`.
+- **New cards** (Barry proposed; Claude Sonnet 5.5 subagents drafted):
+  - living: Polytrichum commune, Haplomitrium gibbsiae, Lycopodiella inundata, Ceratopteris
+    richardii;
+  - fossil: Sporogonites, Tortilicaulis offaeus, Omniastrobus dawsonii, Sengelia radicans,
+    Sciadophyton;
+  - a disputed Zbrza assemblage card;
+  - `docs/rejected-records.md`, for Boiophyton, Protolepidodendron and others.
+- **Selaginella now** (Claude, against Barry's conditional "if the Omniastrobus question
+  develops"): the Omniastrobus card needs a living heterosporous reference, and the living set
+  had none. Deleting one file reverses it.
+- **Audit** (Codex `gpt-6.1-sol`, adjudicated by the drafting agents): 300 claims were checked, and
+  13 were wrong before correction; see `docs/audits/2026-10-28-tranche3-audit.md`. The bake-off
+  (`docs/audits/2026-10-28-card-bakeoff.md`) kept card drafting on Claude. Sol is now the default
+  cross-family auditor of Claude-drafted cards (`CLAUDE.md`).
+- **Offered, not done** (Claude):
+  - a card for Chaleuria cirrosa, a second Emsian spore-size contrast from the Campbellton
+    Formation;
+  - a check of the Ludlow Cooksonia tracheids of Edwards & Davies (1976), which contradict two
+    cards (leads register).
+
 ## 2026-10-27: spore dataset (MVD-A), Codex delegation, closed-literature register
 
 - **Codex as the legwork engine** (Barry, chat, 2026-10-27): "you can be rather spendthrift on what

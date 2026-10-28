@@ -8,6 +8,7 @@ lineage: >-
   Early tracheophyte combining zosterophyll-like reniform bivalved sporangia with rhyniophytoid-like terminal
   sporangia; variously placed with cooksonioid rhyniophytoids, among the zosterophylls, or as a basal lycophyte (Lycophytina) stem relative.
 placement_confidence: low
+contrasts: [height, reproductive-strategy, record-timing]
 range:
   first: Emsian
   last: Emsian
@@ -124,6 +125,21 @@ A small herb in a coastal-fluvial basin where zosterophylls formed extensive, lo
 - **Rates.** Ludfordian zosterophylls and Emsian Renalia imply a ghost lineage of at least 12 Myr, up to about 31 Myr; rate estimates must treat Renalia as a late sample.
 - **Stature.** About 1 mm axes and 11-30 cm height define a small-plant end member in an Emsian community that also held much larger euphyllophytes (e.g. *Wilhowia*, axes 1 cm x 30 cm; Gensel 2022), constraining size-structure assumptions.
 - **Spore-wall evolution.** Gensel et al. (2013) describe a shift from homogeneous or layered walls in rhyniophytoid-grade plants to single-layered walls, partly lamellate, in lycophyte-related plants; globules are more regular in Emsian lycophyte-related plants.
+
+## Model transfer
+
+**Chosen to contrast:** Contrast terminal reniform bivalved sporangia and lycophyte-like spore walls with alternative ancestral-state reconstructions, using a small Emsian plant that post-dates older zosterophylls.
+
+- **Can transfer:**
+  - Preserved-axis geometry, provisionally: R. hueberi Gaspé compressions have axes about 1 mm wide and at least 11 cm long; use fragment dimensions rather than whole-plant height (Gensel 1976, abstract-level summary).
+  - Reproductive architecture: R. hueberi from the Battery Point Formation, Gaspé, has terminal reniform bivalvate sporangia, seemingly paired; preserve uncertainty about pairing (Nibbelink & Tomescu 2022).
+  - Spore-wall structure: R. hueberi Gaspé material has trilete spores with a single-layered wall, no perispore or paraexospore, and surface globules; use these character states independently of phylogenetic placement (Gensel et al. 2013).
+- **Cannot transfer:**
+  - A measured standing-height range cannot use 11-30 cm: the lower value is preserved-axis length and the upper value is a secondary whole-plant estimate, unverified against Gensel (1976).
+  - Exarch xylem maturation or a detailed hydraulic model cannot be assigned: R. hueberi preserves only cleared cellular patterns and short tracheid strands (Gensel 1976, per Nibbelink & Tomescu 2022).
+  - Lateral sporangia cannot be transferred from R. major to R. hueberi; the Rhineland report concerns another species and is unchecked (Schweitzer 1980, secondary record).
+  - An ancestral node date cannot be assigned from morphological intermediacy: Emsian Renalia post-dates Ludfordian zosterophylls and has unresolved placement (Kotyk et al. 2002; Nibbelink & Tomescu 2022).
+  - Backswamp or marsh stand structure cannot be assigned to R. hueberi from other Gaspé zosterophylls: its own facies is unstated (Griffing et al. 2000).
 
 ## Open questions
 

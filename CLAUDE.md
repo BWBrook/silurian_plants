@@ -12,4 +12,8 @@ cross-family audit and the limits on Codex jobs. This project's routing:
   (`gpt-6.1-sol`) at high for knowledge-heavy classification.
 - **On Claude:** source-critical synthesis (cards, reviews, the primer) until a bake-off shows
   that Codex's sourcing holds up, plus the judgement calls and the integration.
+- **Cross-family audit:** `sol` with web search audits each Claude-drafted card. The drafting
+  agent then adjudicates every finding against the source. The 2026-10-28 bake-off
+  (`docs/audits/2026-10-28-card-bakeoff.md`) kept drafting on Claude: Sol's draft was accurate
+  but thin.
 - Record pilots and audits in `docs/audits/` (see `2026-10-27-codex-pilot.md`).

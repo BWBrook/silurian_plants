@@ -7,8 +7,9 @@ group: rhyniophytoid
 lineage: >-
   Polyphyletic or paraphyletic assemblage of small, leafless, dichotomising polysporangiophytes with terminal
   sporangia and little or no preserved anatomy; some are stem-group tracheophytes (Cooksonia pertoni nearest the
-  eutracheophytes), some lie in the lycophyte stem, and a few (Tortilicaulis) may not be vascular.
+  eutracheophytes), some lie in the lycophyte stem, and Tortilicaulis, long read as possibly bryophyte-like, has tracheids in the one species examined for anatomy (T. offaeus; see the Tortilicaulis offaeus card).
 placement_confidence: low
+contrasts: [height, sporophyte-independence, reproductive-strategy]
 range:
   first: Sheinwoodian
   last: Lochkovian
@@ -22,8 +23,8 @@ range:
 regions: [Laurussia, Laurentia, Gondwana, Kazakhstania, South China]
 localities:
   - Barrandian area (Prague Basin), Czech Republic (Sheinwoodian and Pridoli; Cooksonia, Aberlemnia, Fusiformitheca, Tichavekia)
-  - Anglo-Welsh Basin and Welsh Borderland, UK (Gorstian to Lochkovian; Cooksonia, Salopella, Steganotheca, Tortilicaulis, Caia, Pertonella)
-  - Freshwater East, Dyfed, Wales (Pridoli; type locality of Tortilicaulis and Cooksonia cambrensis; compressions)
+  - Anglo-Welsh Basin and Welsh Borderland, UK (Gorstian to Lochkovian; Cooksonia, Salopella, Steganotheca, Tortilicaulis (T. offaeus at Brown Clee Hill), Caia, Pertonella)
+  - Freshwater East, Dyfed, Wales (Pridoli; type locality of Tortilicaulis transwalliensis, the type species, and of Cooksonia cambrensis; compressions)
   - Capel Horeb Quarry, Powys, Wales (Ludfordian to Pridoli; Steganotheca striata, type)
   - Bertie Group, Ontario and New York, North America (Pridoli; dolostone adpressions)
   - Podolia, Ukraine, and the Holy Cross Mountains, Poland (Pridoli)
@@ -31,12 +32,12 @@ localities:
 preservation: [compression, charcoalified, cast]
 traits:
   height_cm: {min: 1, max: 10, note: "Cooksonia 1-6 cm (Edwards and Kenrick 2015); Salopella allenii at least 2.4 cm, Steganotheca striata at least 5 cm, Aberlemnia at least 6.7 cm, Jiangyounia at least 4.5 cm (Edwards and Richardson 1974; Edwards 1970; Edwards and Li 2018 via a search summary). Tichavekia may exceed 10 cm (Pšenička et al. 2021). All are fragments, so whole-plant height is unknown."}
-  axis_diameter_mm: {min: 0.1, max: 2.5, note: "Tortilicaulis axes 0.1-0.4 mm (Edwards 1979); Steganotheca 0.5-0.8 mm; Cooksonia 0.2-1.5 mm; Salopella up to 2.0 mm, with 0.2-2.5 mm across the Newton Dingle collection (Edwards and Richardson 1974). Widths within one Cooksonia-like taxon can span an order of magnitude (Boyce 2008, via the Cooksonia card)."}
-  branching: {state: isotomous, note: "Naked isotomous dichotomies, a few orders deep (Steganotheca strictly dichotomous, 45-75 degrees). Spread: unbranched axes in Tortilicaulis, anisotomous overtopping in Jiangyounia (Edwards and Li 2018, via search summary)."}
+  axis_diameter_mm: {min: 0.06, max: 2.5, note: "Tortilicaulis transwalliensis axes 0.1-0.4 mm (Edwards 1979), T. offaeus 0.06-0.14 mm (Morris et al. 2024, via the Tortilicaulis offaeus card); Steganotheca 0.5-0.8 mm; Cooksonia 0.2-1.5 mm; Salopella up to 2.0 mm, with 0.2-2.5 mm across the Newton Dingle collection (Edwards and Richardson 1974). Widths within one Cooksonia-like taxon can span an order of magnitude (Boyce 2008, via the Cooksonia card)."}
+  branching: {state: isotomous, note: "Naked isotomous dichotomies, a few orders deep (Steganotheca strictly dichotomous, 45-75 degrees). Spread: unbranched axes in the type material of Tortilicaulis transwalliensis (isotomous branching occurs in T. offaeus and in Targrove T. transwalliensis; Morris et al. 2024, via the Tortilicaulis offaeus card), anisotomous overtopping in Jiangyounia (Edwards and Li 2018, via search summary)."}
   leaves: {state: absent, note: "Naked axes; sterile Hostinella axes are a form genus."}
   stomata: {state: present, note: "Documented only in Cooksonia pertoni and C. hemisphaerica (Edwards et al. 1986, via the Cooksonia card); unknown or unreported in other genera."}
-  conducting_tissue: {state: unknown, note: "Most members have no preserved anatomy; that absence is what 'rhyniophytoid' means. Tracheids are demonstrated only in Lochkovian charcoalified C. pertoni (Edwards et al. 1992, via the Cooksonia card); no tracheids in Steganotheca or Salopella (Edwards 1970; Edwards and Richardson 1974)."}
-  sporangium_position: {state: terminal, note: "One sporangium ends each distal axis: discoidal, hemispherical, fusiform or elongate-ovate, 1-9 mm long (Salopella up to 9 x 2 mm; Steganotheca 2.0-2.7 x 1.0-1.5 mm; Tortilicaulis mean 2.1 x 0.8 mm)."}
+  conducting_tissue: {state: unknown, note: "Most members have no preserved anatomy; that absence is what 'rhyniophytoid' means. Tracheids are demonstrated in Lochkovian charcoalified C. pertoni (Edwards et al. 1992, via the Cooksonia card) and in T. offaeus (Morris et al. 2024, via the Tortilicaulis offaeus card); no tracheids in Steganotheca or Salopella (Edwards 1970; Edwards and Richardson 1974)."}
+  sporangium_position: {state: terminal, note: "One sporangium ends each distal axis: discoidal, hemispherical, fusiform or elongate-ovate, 1-9 mm long, smaller in T. offaeus (Salopella up to 9 x 2 mm; Steganotheca 2.0-2.7 x 1.0-1.5 mm; Tortilicaulis transwalliensis mean 2.1 x 0.8 mm; T. offaeus 0.25-0.96 mm, Morris et al. 2024, via the Tortilicaulis offaeus card)."}
   spores: {state: trilete, note: "In situ spores are known from a minority: smooth or apiculate trilete spores 10-38 um (Cooksonia, via the Cooksonia card; Salopella 23-37 um, trilete mark faint). Dyads and monads from Lenticulatheca and Fusiformitheca are treated under eophytes."}
   heterospory: {state: absent, note: "One spore type per sporangium where tested; not tested systematically."}
   rooting: {state: unknown, note: "Basal parts are unknown for nearly all; a single lateral basal structure resembling a root occurs in the Bertie Group (Edwards et al. 2004, via the Cooksonia card)."}
@@ -102,7 +103,7 @@ references:
 
 ## Morphology and anatomy
 
-The shared plan is determinate, isotomous branching with terminal sporangia and no leaves. Edwards (1970) described *Steganotheca striata* as a bushy plant at least 5 cm high with at least ten sporangia at the tips of 0.5-0.8 mm axes. Edwards and Richardson (1974) gave *Salopella allenii* at least 24 mm high, with fusiform sporangia to 9 x 2 mm and laevigate trilete spores of 23-37 um, perhaps immature. Edwards (1979) left *Tortilicaulis* as incertae sedis: unbranched, twisted axes 0.1-0.4 mm wide under sporangia of 1.1-3.9 mm, with no spores recovered, and both bryophyte and vascular readings possible. Sporangium shape and spore type, not vegetative form, separate the genera; in situ spores, where known, are smooth or apiculate trilete types of the *Ambitisporites* kind (see [Ambitisporites](ambitisporites.md)). The generic list in Pšenička et al. (2021) is *Cooksonia*, *Salopella*, *Aberlemnia*, *Hedeia*, *Tortilicaulis*, *Fusiformitheca*, *Steganotheca* and *Caia*, plus sterile *Hostinella*; they call these "usually placed among rhyniophytoids". Capel et al. (2022) separate "basal eutracheophytes" (*Cooksonia*, *Eocooksonia*) from other rhyniophytoids such as *Pertonella*.
+The shared plan is determinate, isotomous branching with terminal sporangia and no leaves. Edwards (1970) described *Steganotheca striata* as a bushy plant at least 5 cm high with at least ten sporangia at the tips of 0.5-0.8 mm axes. Edwards and Richardson (1974) gave *Salopella allenii* at least 24 mm high, with fusiform sporangia to 9 x 2 mm and laevigate trilete spores of 23-37 um, perhaps immature. Edwards (1979) left the type species *Tortilicaulis transwalliensis* as incertae sedis: unbranched, twisted axes 0.1-0.4 mm wide under sporangia of 1.1-3.9 mm, with no spores recovered, and both bryophyte and vascular readings possible. Later material showed isotomous branching and trilete spores in that species, and Morris et al. (2024) report stomata and tracheids with annular thickenings in five scanned specimens of the smaller charcoalified *T. offaeus* (axes 0.06-0.14 mm), so *T. offaeus* is vascular on their reading while the type species still has no anatomy (see [Tortilicaulis offaeus](tortilicaulis-offaeus.md)). Sporangium shape and spore type, not vegetative form, separate the genera; in situ spores, where known, are smooth or apiculate trilete types of the *Ambitisporites* kind (see [Ambitisporites](ambitisporites.md)). The generic list in Pšenička et al. (2021) is *Cooksonia*, *Salopella*, *Aberlemnia*, *Hedeia*, *Tortilicaulis*, *Fusiformitheca*, *Steganotheca* and *Caia*, plus sterile *Hostinella*; they call these "usually placed among rhyniophytoids". Capel et al. (2022) separate "basal eutracheophytes" (*Cooksonia*, *Eocooksonia*) from other rhyniophytoids such as *Pertonella*.
 
 ## Age and distribution
 
@@ -124,6 +125,20 @@ Edwards and Richardson (2004) proposed a ruderal strategy: life cycles completed
 - **Timeline.** About 20 Myr of macrofossil record (Sheinwoodian to Lochkovian, 432.9 to 413.0 Ma on data/timescale.csv), with displacement in Laurussia by the end of the Lochkovian.
 - **Bias.** Genera are form taxa. Treat the group as a morphotype pool with unknown tracheid status for most members.
 
+## Model transfer
+
+**Chosen to contrast:** Contrast small branching systems with one terminal sporangium per apex and competing hypotheses of sporophyte autonomy, using member-specific dimensions within an anatomically heterogeneous morphotype pool.
+
+- **Can transfer:**
+  - Steganotheca striata, Capel Horeb material: at least 5 cm preserved height, at least ten terminal sporangia and 0.5-0.8 mm axes constrain a minimum fertile architecture (Edwards 1970).
+  - Salopella allenii, Welsh Borderland material: sporangia to 9 x 2 mm and trilete spores of 23-37 um constrain reproductive dimensions; retain the possibility of immature spores (Edwards and Richardson 1974).
+  - Cooksonia barrandei, Barrandian material: 1-1.5 mm axes provide a width case for testing photosynthetic autonomy, without coding autonomy as directly observed (Libertín et al. 2018).
+- **Cannot transfer:**
+  - Do not code unpreserved conducting tissue as absent or assign one hydraulic system to the grade; most members lack anatomical evidence.
+  - Do not use fragment lengths or the aggregate height range as measured whole-plant stature.
+  - Do not assign observed Silurian gametophyte dimensions, attachment or matrotrophy from this group: no Silurian gametophyte is known.
+  - Do not model rhyniophytoids as one lineage with shared physiological parameters; the grouping combines form taxa with unresolved conducting-tissue status.
+
 ## Open questions
 
-Which members are tracheophytes; whether *Tortilicaulis*-type plants are vascular at all; how many Silurian lineages the pool hides; how long rhyniophytoids survived in the highest-latitude Gondwanan refugia.
+Which members are tracheophytes; whether the type species of *Tortilicaulis*, unlike *T. offaeus*, is vascular; how many Silurian lineages the pool hides; how long rhyniophytoids survived in the highest-latitude Gondwanan refugia.

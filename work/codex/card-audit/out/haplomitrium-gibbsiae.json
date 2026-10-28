@@ -1,0 +1,189 @@
+{
+  "items": [
+    {
+      "claim": "“earliest-diverging liverwort lineage, sister to all other liverworts”; “monophyletic bryophyte clade”; “Liverworts lost stomata completely”",
+      "section": "Front matter: lineage, stomata; Affinity and controversies",
+      "verdict": "supported",
+      "evidence": "Sources support basal placement within liverworts, bryophyte monophyly and secondary stomatal loss; these are clade-level conclusions.",
+      "source": "[Field 2015](https://doi.org/10.1111/nph.13024), full text; [Harris 2020](https://www.sciencedirect.com/science/article/pii/S0960982220304188), abstract; [Harris 2022](https://research-information.bris.ac.uk/en/publications/divergent-evolutionary-trajectories-of-bryophytes-and-tracheophyt/), abstract."
+    },
+    {
+      "claim": "“glomeromycotean-like”; “Endogone-like Mucoromycotina in at least six Haplomitriopsida species”; “could be a derived trait”",
+      "section": "Affinity and controversies: Which fungus; Ancestral or derived",
+      "verdict": "supported",
+      "evidence": "Carafa describes morphological resemblance; Bidartondo identifies Mucoromycotina in six species; Field confirms the experimental partners while allowing a derived origin.",
+      "source": "[Carafa 2003](https://doi.org/10.1046/j.1469-8137.2003.00849.x), abstract and indexed full-text passages; [Bidartondo 2011](https://pmc.ncbi.nlm.nih.gov/articles/PMC3130224/), indexed full text; [Field 2015](https://doi.org/10.1111/nph.13024), full text."
+    },
+    {
+      "claim": "“No Haplomitriopsida fossil is known from the Late Ordovician to Early Devonian window in the sources read”",
+      "section": "Front matter: range.notes",
+      "verdict": "unverifiable",
+      "evidence": "Hübers and Kerp's abstract supports the sparse pre-Permian record, but cannot establish this class-wide absence; full text was inaccessible.",
+      "source": "[Hübers and Kerp 2012](https://pubs.geoscienceworld.org/gsa/geology/article-abstract/40/8/755/131004/Oldest-known-mosses-discovered-in-Mississippian?redirectedFrom=fulltext), abstract only."
+    },
+    {
+      "claim": "“Gessella … from the Early Permian of Western Sealand”",
+      "section": "Front matter: range.notes",
+      "verdict": "wrong",
+      "evidence": "Poulsen's abstract places the Gessella-bearing macroflora in the Upper Permian, contradicting the Wikipedia-derived Early Permian age.",
+      "source": "[Poulsen 1974](https://doi.org/10.34194/raekke2.v101.6892), abstract reproduced in the indexed [ResearchGate record](https://www.researchgate.net/publication/352976396_The_Lower_Palaeozoic_sequence_in_the_Slagelse-1_well_Stratigraphical_lithological_and_geochemical_evaluation); original full text inaccessible."
+    },
+    {
+      "claim": "“Field et al. (2015) quote Heinrichs et al. (2007) for the early Devonian, over 400 Ma”",
+      "section": "Front matter: range.notes",
+      "verdict": "supported",
+      "evidence": "Field repeats precisely this estimate; Heinrichs's original dating analysis could not be independently checked.",
+      "source": "[Field 2015](https://doi.org/10.1111/nph.13024), full text, Discussion; [Heinrichs 2007](https://www.jstor.org/stable/25065733), inaccessible article landing page."
+    },
+    {
+      "claim": "“max: 3.0”; “16-25(-30) mm”; “female shoots … 6-7.5 mm wide”; “no minimum is given”",
+      "section": "Front matter: height_cm, axis_diameter_mm; Model transfer: dimensions",
+      "verdict": "supported",
+      "evidence": "Flora gives these shoot-height maxima and female leafy-shoot widths, without a minimum height or explicit bare-stem diameter.",
+      "source": "[Flora of New Zealand, H. gibbsiae](https://floraseries.landcareresearch.co.nz/taxa/af2f0e33-1e92-480e-83a8-5a5bca62f57b), full species account."
+    },
+    {
+      "claim": "“Leafy stems unbranched above”; “rhizome … irregularly branched”; “three ranks”; “2-4-stratose basal field”",
+      "section": "Front matter: branching, leaves",
+      "verdict": "supported",
+      "evidence": "Flora describes unbranched aerial stems, a branching rhizome, three leaf ranks and a basal field two to four cells thick.",
+      "source": "[Flora of New Zealand, H. gibbsiae](https://floraseries.landcareresearch.co.nz/taxa/af2f0e33-1e92-480e-83a8-5a5bca62f57b), full species account."
+    },
+    {
+      "claim": "“terminal”; “0.5 x 3-4 mm”; “rarely 2-4 sporophytes”; “seta … 20-25 mm”",
+      "section": "Front matter: sporangium_position, height_cm; Model transfer: dimensions",
+      "verdict": "supported",
+      "evidence": "Flora places sporophytes at the gametophore apex, usually singly, exceptionally two to four, and gives the stated capsule and seta dimensions.",
+      "source": "[Flora of New Zealand, H. gibbsiae](https://floraseries.landcareresearch.co.nz/taxa/af2f0e33-1e92-480e-83a8-5a5bca62f57b), full species account."
+    },
+    {
+      "claim": "“23-29 micrometres”; “tetrads or diads”; “elaters 280-520 micrometres”; “One spore size range is reported”",
+      "section": "Front matter: spores, heterospory; Model transfer: dimensions",
+      "verdict": "supported",
+      "evidence": "Flora reports these dimensions and temporary spore cohesion. A single reported size range supports, but does not itself demonstrate, the homospory coding.",
+      "source": "[Flora of New Zealand, H. gibbsiae](https://floraseries.landcareresearch.co.nz/taxa/af2f0e33-1e92-480e-83a8-5a5bca62f57b), full species account."
+    },
+    {
+      "claim": "“dioecious”; “antheridia 25-45 or more”; “about 20 archegonia”",
+      "section": "Front matter: gametophyte",
+      "verdict": "supported",
+      "evidence": "Flora gives separate sexes, at least approximately 25–45 antheridia per androecium and approximately 20 archegonia per gynoecium.",
+      "source": "[Flora of New Zealand, H. gibbsiae](https://floraseries.landcareresearch.co.nz/taxa/af2f0e33-1e92-480e-83a8-5a5bca62f57b), full species account."
+    },
+    {
+      "claim": "“conducting_tissue: … non-lignified”; “Perforate water-conducting cells”; “cylinder of food-conducting cells”",
+      "section": "Front matter: conducting_tissue",
+      "verdict": "overstated",
+      "evidence": "Conducting anatomy is supported, but the review treats bryophyte lignin as contested and supplies no species-specific assay establishing the categorical non-lignified state.",
+      "source": "[Ligrone 2012](https://pmc.ncbi.nlm.nih.gov/articles/PMC3310499/), indexed full-text vascular-tissue sections; [Field 2015](https://doi.org/10.1111/nph.13024), full text."
+    },
+    {
+      "claim": "“Over half the total biomass … is subterranean”; “no rhizoids at all”",
+      "section": "Front matter: height_cm, rooting",
+      "verdict": "supported",
+      "evidence": "Field explicitly reports both features for H. gibbsiae.",
+      "source": "[Field 2015](https://doi.org/10.1111/nph.13024), full text, Discussion."
+    },
+    {
+      "claim": "“soil nutrients reach it only through Mucoromycotina fungi”",
+      "section": "Model transfer: Chosen to contrast",
+      "verdict": "overstated",
+      "evidence": "Field infers high dependence; it does not establish exclusive fungal acquisition of every soil nutrient.",
+      "source": "[Field 2015](https://doi.org/10.1111/nph.13024), full text, Discussion."
+    },
+    {
+      "claim": "“South Island NZ, April 2012”; “12 weeks, 50 micromol per m2 per s, 15/12 °C”",
+      "section": "Model transfer: Can transfer, first bullet",
+      "verdict": "imprecise",
+      "evidence": "Stock and chamber settings match; twelve weeks was acclimation, followed by twenty-one days of nutrient tracing before carbon labelling.",
+      "source": "[Field 2015](https://doi.org/10.1111/nph.13024), full text, Methods."
+    },
+    {
+      "claim": "“reciprocal carbon-for-nutrient exchange”; “33P and 15N (ammonium) under both 440 and 1500 ppm”; “not significantly CO2-dependent”",
+      "section": "Model transfer: Can transfer, first bullet",
+      "verdict": "supported",
+      "evidence": "Results support reciprocal exchange, unchanged proportional carbon allocation and nonsignificant CO2 effects on nutrient-for-carbon efficiencies.",
+      "source": "[Field 2015](https://doi.org/10.1111/nph.13024), full text, Results and Figures 3–5."
+    },
+    {
+      "claim": "“South Island, December 2013”; “gemma-propagated M. paleacea from Mexico”; “5 pots per treatment”",
+      "section": "Model transfer: Can transfer, second bullet",
+      "verdict": "supported",
+      "evidence": "Methods confirm these origins and propagation; figure legends specify five replicates per treatment combination.",
+      "source": "[Field 2019](https://doi.org/10.1111/nph.15819), full text, Methods and figure legends."
+    },
+    {
+      "claim": "“over 2.4-fold at 440 ppm to over 90-fold at 1500 ppm, pooled with N. mirabilis”; “about twice as much 33P”",
+      "section": "Model transfer: Can transfer, second bullet; Cannot transfer, pooled-statements bullet",
+      "verdict": "imprecise",
+      "evidence": "Ratios and phosphorus comparison match Results; 'pooled' is misleading: two partnerships are discussed jointly without defining a combined mean.",
+      "source": "[Field 2019](https://doi.org/10.1111/nph.15819), full text, Results and Figures 3–4."
+    },
+    {
+      "claim": "“fungal carbon under 2% of fixed carbon in all plants”",
+      "section": "Model transfer: Can transfer, second bullet",
+      "verdict": "overstated",
+      "evidence": "The percentage concerns carbon reaching external mycelium inside mesh cores, not total allocation to all fungal tissues.",
+      "source": "[Field 2019](https://doi.org/10.1111/nph.15819), full text, carbon-allocation Results and Figure 5."
+    },
+    {
+      "claim": "“H. gibbsiae axenic and re-inoculated: the underground axes form only with the fungus”",
+      "section": "Front matter: rooting; Model transfer: Can transfer, third bullet",
+      "verdict": "supported",
+      "evidence": "Axenic plants lacked these axes; inoculation restored them within three months. Support is specific to the reported culture conditions.",
+      "source": "[Field 2015](https://doi.org/10.1111/nph.13024), full text, in-vitro Results and Figure 8."
+    },
+    {
+      "claim": "“Do not use … fluxes as field or Palaeozoic rates”; “CO2 at two levels only”; “1500 ppm taken from geochemical … models”",
+      "section": "Model transfer: Cannot transfer, first bullet",
+      "verdict": "supported",
+      "evidence": "Both use controlled microcosms and two CO2 treatments; the simulated palaeo-atmosphere derives from models. Transfer restrictions are justified audit inferences.",
+      "source": "[Field 2015](https://doi.org/10.1111/nph.13024), full text; [Field 2019](https://doi.org/10.1111/nph.15819), full text, Introduction and Methods."
+    },
+    {
+      "claim": "“Do not attribute … differences to the fungus alone”; “confounded in a three-species design”; “against data from an earlier experiment”",
+      "section": "Model transfer: Cannot transfer, second bullet",
+      "verdict": "supported",
+      "evidence": "Methods assign one host species per partnership; Field 2015 overlays earlier data. The confounding diagnosis follows from these designs.",
+      "source": "[Field 2019](https://doi.org/10.1111/nph.15819), full text, Methods; [Field 2015](https://doi.org/10.1111/nph.13024), full text, experimental comparison."
+    },
+    {
+      "claim": "“Do not treat ammonium (2015) and algal necromass (2019) as interchangeable nitrogen sources”",
+      "section": "Model transfer: Cannot transfer, fourth bullet",
+      "verdict": "supported",
+      "evidence": "Methods distinguish labelled ammonium chloride from labelled Chlorella necromass.",
+      "source": "[Field 2015](https://doi.org/10.1111/nph.13024), full text, Methods; [Field 2019](https://doi.org/10.1111/nph.15819), full text, Methods."
+    },
+    {
+      "claim": "“Do not transfer the efficiency values to M. polymorpha”; “non-mycorrhizal”; “M. paleacea is a different species”",
+      "section": "Model transfer: Chosen to contrast; Cannot transfer, fifth bullet",
+      "verdict": "supported",
+      "evidence": "Bowman distinguishes non-mycorrhizal M. polymorpha from mycorrhizal M. paleacea; Field's experimental Marchantia is paleacea.",
+      "source": "[Bowman 2022](https://academic.oup.com/plcell/article/34/10/3512/6670628), full-text review, Mycorrhizal interactions; [Field 2019](https://doi.org/10.1111/nph.15819), full text."
+    },
+    {
+      "claim": "“Mucoromycotina-like endophytes occur in Pragian Rhynie plants”; “exchange in the fossils is inferred, never observed”",
+      "section": "Front matter: range.notes; Model transfer: Cannot transfer, sixth bullet",
+      "verdict": "imprecise",
+      "evidence": "Fossil anatomy supports fungal affinity, not measured exchange. Rhynie biostratigraphy permits Pragian to possibly earliest Emsian, rather than an exclusively Pragian assignment.",
+      "source": "[Strullu-Derrien 2014](https://doi.org/10.1111/nph.12805), full text; [Parry 2013 geological reply](https://nora.nerc.ac.uk/id/eprint/504426/1/Parry%20et%20al.%20%282013%20JGSL%29_NORA%20VERSION.pdf), full text."
+    },
+    {
+      "claim": "“Do not treat the Haplomitriopsida condition as ancestral for embryophytes, or its conducting cells as hydroids or xylem”",
+      "section": "Model transfer: Cannot transfer, seventh bullet; Affinity and controversies",
+      "verdict": "supported",
+      "evidence": "Ligrone distinguishes perforate conductors from hydroids and xylem; Harris reconstructs substantial reductive evolution, making direct ancestral extrapolation unjustified.",
+      "source": "[Ligrone 2012](https://pmc.ncbi.nlm.nih.gov/articles/PMC3310499/), indexed full-text vascular-tissue sections; [Harris 2022](https://research-information.bris.ac.uk/en/publications/divergent-evolutionary-trajectories-of-bryophytes-and-tracheophyt/), abstract."
+    }
+  ],
+  "omissions": [
+    "Axenic gametophytes were maintained for over two years. Fungal induction of underground axes therefore does not demonstrate obligatory fungal dependence for survival under all conditions. [Field 2015, full text](https://doi.org/10.1111/nph.13024).",
+    "Fungal biomass was not quantified. Differences in nutrient delivery cannot be converted into intrinsic efficiencies per unit fungal biomass. [Field 2019, full text](https://doi.org/10.1111/nph.15819).",
+    "Necromass nitrogen transfer does not establish direct fungal decomposition: microbial mineralisation, competition and community effects remain alternative mechanisms. [Field 2019, full text](https://doi.org/10.1111/nph.15819).",
+    "The carbon measurement covers core mycelium; a model needs a separate allowance for fungal carbon outside that measured compartment. [Field 2019, full text](https://doi.org/10.1111/nph.15819).",
+    "Non-mycorrhizal M. polymorpha hosts other fungal endophytes, including growth-promoting isolates. Calling the contrast 'symbiont-free' elsewhere in the card is inaccurate. [Bowman 2022, full text](https://academic.oup.com/plcell/article/34/10/3512/6670628).",
+    "A primary report documents H. gibbsiae in Guangxi, China, so the stated geographic distribution is incomplete; disputed broader species circumscriptions warrant explicit treatment. [Han 2025, indexed full-text sections](https://www.sciencedirect.com/org/science/article/pii/S1314283625001228)."
+  ],
+  "model_transfer_assessment": "Fungal nutrition is an appropriate contrast, but M. polymorpha provides a conceptual comparison rather than an experimentally matched control. The 2015 exchange and culture observations concern H. gibbsiae; the 2019 numerical summary jointly describes two host partnerships and should not become a species-specific coefficient without extracting the separate results. Flora dimensions describe the species generally, not the isotope specimens. The existing limits correctly identify host–fungus confounding, nitrogen-source differences and uncertain fossil extrapolation. Add limits concerning unmeasured fungal biomass, microbial nitrogen processing, core-only carbon accounting, and the distinction between nonsignificance and demonstrated CO2 invariance.",
+  "overall": "The card reproduces most morphological measurements and experimental findings accurately, but overstates exclusive fungal nutrition and total fungal carbon cost. Correct the Gessella age, qualify the conducting-tissue coding and experimental duration, and retain this exemplar for constrained mechanistic comparisons rather than quantitative Palaeozoic calibration."
+}

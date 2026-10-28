@@ -8,6 +8,7 @@ lineage: >-
   Called a zosterophyll by McSweeney et al. (2022); no description or illustration was accessible,
   so placement within the zosterophylls rests on that one phrase.
 placement_confidence: low
+contrasts: [record-timing]
 range:
   first: Lochkovian
   last: Emsian
@@ -98,6 +99,19 @@ Nothing is known beyond the depositional setting.
 - **Do not use it as a datum.** It has no traits, no measurements and no valid name. In first-appearance or diversity tallies it counts at most as 'zosterophyll indet., Lower Plant Assemblage'.
 - **Weight on the dating dispute.** If the Lower Plant Assemblage is Early Devonian, a zosterophyll at Limestone Road is unremarkable. If it is Gorstian, it would be among the oldest Gondwanan zosterophylls, though late Ludlow (Ludfordian) zosterophylls are already known from Bathurst Island (Kotyk et al. 2002; see [Zosterophyllum](zosterophyllum.md)).
 - **Observation model.** It exists only in an unpublished thesis, so literature-based databases cannot contain it: the PBDB extract in this repository has no record of it, as expected.
+
+## Model transfer
+
+**Chosen to contrast:** Contrast an unpublished manuscript occurrence with formally described fossil records, using the Limestone Road material to test taxonomic availability and dating uncertainty rather than biological mechanisms.
+
+- **Can transfer:**
+  - Occurrence coding: retain the Limestone Road record as an indeterminate zosterophyll, without equating an identified specimen to Pluricaulis biformis; its link to the reported material remains unconfirmed (Tims & Chambers 1984; McSweeney et al. 2022).
+  - Preservation filter: Limestone Road compressions lack cellular structure and spores; code these traits as unobservable rather than absent in material attributed to the manuscript taxon (Tims & Chambers 1984; McSweeney et al. 2021).
+- **Cannot transfer:**
+  - Named-species richness and first appearances cannot count Pluricaulis biformis as a formally established species: the name remains unpublished and unavailable (McSweeney et al. 2022; McSweeney 2024).
+  - Cauline sporangia cannot be assigned from the zosterophyll label; they are a group expectation without an observation of Pluricaulis biformis (McSweeney et al. 2022).
+  - The locality's axes up to 400 mm long cannot parameterise Pluricaulis biformis stature: the measurement is assemblage-level, with no taxon-specific description available (Tims & Chambers 1984).
+  - A fixed Gorstian or precisely bracketed Early Devonian occurrence cannot be assigned: this card's interval is a revision-based window rather than a measured taxon range (Earp 2024; McSweeney et al. 2021).
 
 ## Open questions
 

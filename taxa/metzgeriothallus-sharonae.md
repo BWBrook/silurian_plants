@@ -9,6 +9,7 @@ lineage: >-
   from Pallaviciniites; the liverwort identity is well supported, the placement within
   Jungermanniopsida rests on thallus form.
 placement_confidence: medium
+contrasts: [record-timing, sporophyte-independence]
 range:
   first: Givetian
   last: Givetian
@@ -93,6 +94,21 @@ A free-living, photosynthetic gametophyte thallus on a wet delta surface (infere
 - **Dominant gametophyte.** A gametophyte-dominant liverwort (with, apparently, a small sporophyte) persisted alongside sporophyte-dominant vascular plants by 388 Ma, so F1 has to explain divergent outcomes among lineages, not one replacement.
 - **Defence and herbivory.** About 388 Ma, thalli carried nine damage types (Labandeira et al. 2014) and putative defensive cells, with dark-cell fractions of 0.19 or more in the most regular sections and clumping at margins; these are candidate parameters for a herbivory term.
 - **Developmental rule.** A lateral-inhibition pattern with about 2.7 cells between idioblasts is a quantitative target for a cell-level model.
+
+## Model transfer
+
+**Chosen to contrast:** Contrast a secure later liverwort body record with older inferred lineage origins, while representing continued gametophyte-thallus persistence alongside vascular sporophytes.
+
+- **Can transfer:**
+  - M. sharonae, Cairo Quarry compressions: use the authors' Givetian occurrence as a liverwort megafossil lower bound, outside the programme window (Hernick et al. 2008; Tremblay & Mercadal 2026).
+  - M. sharonae macerated and matrix specimens, Cairo Quarry: a dichotomising multistratose midrib with unistratose wings supplies thallus architecture (Tremblay & Mercadal 2026; Mercadal et al. 2026).
+  - M. sharonae, 55 fossil sections from Cairo Quarry: dark cells separated by 1-3 cells, mean about 2.7, provide a spatial-pattern target rather than a measured developmental mechanism (Mercadal et al. 2026).
+  - M. sharonae, Cairo Quarry thalli: nine damage types in three functional feeding groups constrain observed herbivory diversity, rather than consumption rates (Labandeira et al. 2014).
+- **Cannot transfer:**
+  - Do not treat c. 388 Ma as a precise dated horizon or the Givetian occurrence as the origin of liverworts: formation, biozone and radiometric constraints are missing.
+  - Do not use 2-3 cm fragments as whole-thallus length or height; the width estimates are unverified.
+  - Do not assign a quantified defensive benefit to dark cells: their distribution is consistent with defence, without proving it.
+  - Do not parameterise sporophyte attachment, matrotrophic transfer or spore output from the reported capsule: its description and connection were not examined.
 
 ## Open questions
 

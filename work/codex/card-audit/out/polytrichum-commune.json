@@ -1,0 +1,190 @@
+{
+  "items": [
+    {
+      "claim": "\"Moss (Bryophyta), Polytrichopsida, Polytrichaceae\"; \"basalmost moss clade with hydroids\"; bryophytes \"sister to tracheophytes\".",
+      "section": "Front matter: lineage and placement_confidence",
+      "verdict": "supported",
+      "evidence": "Ligrone identifies Polytrichopsida as the earliest-diverging hydroid-bearing clade; Harris supports monophyletic bryophytes sister to tracheophytes.",
+      "source": "[Ligrone et al. 2012](https://www.researchgate.net/publication/221853422_Major_transitions_in_the_evolution_of_early_land_plants_a_bryological_perspective), full text; [Harris et al. 2022](https://bpb-eu-w2.wpmucdn.com/blogs.bristol.ac.uk/dist/3/589/files/2022/09/Harris_et_al_2022.pdf), full text."
+    },
+    {
+      "claim": "\"No Polytrichopsida fossil, and no unequivocal moss fossil\" in the window; oldest claimed unequivocal mosses are \"Mississippian (late Visean)\".",
+      "section": "Front matter: range.notes",
+      "verdict": "supported",
+      "evidence": "Hübers and Kerp describe fragmentary late Visean mosses; Ignatov and Maslova question their identification and the earlier proposed records.",
+      "source": "[Hübers and Kerp 2012](https://pubs.geoscienceworld.org/gsa/geology/article-abstract/40/8/755/131004/Oldest-known-mosses-discovered-in-Mississippian?redirectedFrom=fulltext), abstract only; [Ignatov and Maslova 2021](https://mapress.com/bde/article/download/bde.43.1.7/44441), indexed full-text passages; PDF retrieval exceeded the tool's size limit."
+    },
+    {
+      "claim": "\"Meantoinea alophosioides, Early Cretaceous of Vancouver Island, a hard minimum age of 136 Ma for the family\".",
+      "section": "Front matter: range.notes",
+      "verdict": "supported",
+      "evidence": "Five permineralised gametophytes come from Valanginian deposits dated using oxygen-isotope analyses; the authors explicitly propose a 136 Ma family minimum.",
+      "source": "[Bippus et al. 2017](https://mihaibotany.online/pdf/BippusEtAl2017.pdf), full text."
+    },
+    {
+      "claim": "\"Eopolytrichum antiquum, early Campanian of Georgia, USA, about 80 Ma\"; \"nested within Polytrichum\".",
+      "section": "Front matter: range.notes; Age and distribution",
+      "verdict": "supported",
+      "evidence": "Konopka reports early Campanian fossils approximately 80 Ma old; Bippus places Eopolytrichum with P. commune and P. piliferum.",
+      "source": "[Konopka et al. 1997](https://www.journals.uchicago.edu/doi/abs/10.1086/297459), publisher abstract; [Bippus et al. 2018](https://ri.conicet.gov.ar/bitstream/handle/11336/98858/CONICET_Digital_Nro.71ec348b-d4e4-4c9c-810f-af678b0a2825_A.pdf?isAllowed=n&sequence=2), full text."
+    },
+    {
+      "claim": "\"Platteville Formation, Wisconsin, 455-454 Ma\", \"Sandbian\"; \"over 100 Myr\" separates these remains from the next moss record.",
+      "section": "Front matter: range.notes",
+      "verdict": "supported",
+      "evidence": "Cardona-Correa reports 455–454 Ma deposits; repository boundaries place these in Sandbian. Ignatov relays the >100-million-year gap and age concerns.",
+      "source": "[Cardona-Correa et al. 2016](https://www.journals.uchicago.edu/doi/full/10.1086/686242), full text; data/timescale.csv, read directly; [Ignatov and Maslova 2021](https://mapress.com/bde/article/download/bde.43.1.7/44441), indexed full-text passages."
+    },
+    {
+      "claim": "\"Silurian and Early Devonian tubular microfossils\" resemble Polytrichum calyptra hairs; \"it is a resemblance, not a record\".",
+      "section": "Front matter: range.notes",
+      "verdict": "supported",
+      "evidence": "Experimental calyptra residues resemble ancient tubes in morphology and wall dimensions; the authors propose possible moss origins, without establishing them.",
+      "source": "[Kodner and Graham 2001](https://pubmed.ncbi.nlm.nih.gov/11250824/), abstract only."
+    },
+    {
+      "claim": "\"moss crown at 380 (362-399) Ma ... or 488-602 Ma\".",
+      "section": "Front matter: range.notes",
+      "verdict": "unverifiable",
+      "evidence": "The review reports these numbers, including three Laenen estimates; Newton's original analysis and Laenen's relevant supplementary age table were inaccessible.",
+      "source": "[Ignatov and Maslova 2021](https://www.mapress.com/bde/article/download/bde.43.1.7/44441/48190), indexed full-text introduction; [Laenen et al. 2014](https://www.researchgate.net/publication/267393141_Extant_diversity_of_bryophytes_emerged_from_successive_post-Mesozoic_diversification_bursts), main full text only, without the required supplement."
+    },
+    {
+      "claim": "\"height_cm: {min: 2, max: 70}\"; \"gametophyte stature (2-)5-10(-70) cm ... as a range for height\".",
+      "section": "Front matter: traits.height_cm; Model transfer: Can transfer, stature",
+      "verdict": "imprecise",
+      "evidence": "Flora gives these stem lengths but describes stems as erect to decumbent; the maximum is not necessarily vertical height.",
+      "source": "[Flora of North America: Polytrichum commune](https://efloras.org/florataxon.aspx?flora_id=1&taxon_id=200002665), complete treatment read through indexed text; direct page retrieval timed out."
+    },
+    {
+      "claim": "\"exceed 300 mm\"; Dawsonia \"0.7 m\"; \"seta ... 5-9 cm\", capsule \"3-6 mm\", spores \"5-8(-12) micrometres\".",
+      "section": "Front matter: traits.height_cm, sporangium_position and spores",
+      "verdict": "supported",
+      "evidence": "Brodribb reports >300 mm; McAdam relays Dawsonia 0.7 m; Flora gives seta 5–9 cm, capsule 3–6 mm, spores 5–8(–12) µm.",
+      "source": "[Brodribb et al. 2020](https://sylvain-delzon.com/wp-content/uploads/2020/09/Brodribb-et-al.-2020-Nat-Plants.pdf), full text; [McAdam et al. 2021](https://pmc.ncbi.nlm.nih.gov/articles/PMC8175006/), full review, underlying Dawsonia measurement not independently read; [Flora treatment](https://efloras.org/florataxon.aspx?flora_id=1&taxon_id=200002665), complete indexed treatment."
+    },
+    {
+      "claim": "\"up to 250 per capsule in Polytrichum\"; \"Do not use the stomata trait for leaves\".",
+      "section": "Front matter: traits.stomata; Model transfer: Cannot transfer, stomata",
+      "verdict": "supported",
+      "evidence": "Renzaglia reports genus-level counts up to 250; moss stomata occur on sporophytes, not gametophyte leaves.",
+      "source": "[Renzaglia et al. 2020](https://www.frontiersin.org/journals/plant-science/articles/10.3389/fpls.2020.00567/full), full text; [McAdam et al. 2021](https://pmc.ncbi.nlm.nih.gov/articles/PMC8175006/), full text."
+    },
+    {
+      "claim": "\"diverged 515-494 Ma\"; bryophytes lost vasculature-associated genes; \"hydroids are therefore a derived solution\".",
+      "section": "Affinity and controversies: Position",
+      "verdict": "overstated",
+      "evidence": "Harris supports the abstract's dates and inferred gene-family losses; these results alone do not establish the cellular evolutionary origin of hydroids.",
+      "source": "[Harris et al. 2022](https://bpb-eu-w2.wpmucdn.com/blogs.bristol.ac.uk/dist/3/589/files/2022/09/Harris_et_al_2022.pdf), full text. Its main text gives 515–493 Ma."
+    },
+    {
+      "claim": "\"Chosen to contrast: Water-transport, sporophyte-independence and height\" against non-conducting Marchantia and tracheophytes.",
+      "section": "Model transfer: Chosen to contrast",
+      "verdict": "supported",
+      "evidence": "Sources distinguish hydroid-bearing moss gametophytes, complex thalloid liverworts lacking internal water-conducting cells, and xylem-bearing tracheophytes; moss sporophytes retain maternal dependence.",
+      "source": "[Ligrone et al. 2012](https://www.researchgate.net/publication/221853422_Major_transitions_in_the_evolution_of_early_land_plants_a_bryological_perspective), full review; [Kubásek et al. 2021](https://nph.onlinelibrary.wiley.com/doi/10.1111/nph.17208), full primary study."
+    },
+    {
+      "claim": "\"one Mt Wellington ... population ... measured at 22 °C and 1500 micromol photons per m2 per s\".",
+      "section": "Front matter: localities; Model transfer: Can transfer, hydraulics",
+      "verdict": "imprecise",
+      "evidence": "Single population and coordinates confirmed; 22 °C/1500 describes gas-exchange assays, whereas optical imaging used laboratory illumination.",
+      "source": "[Brodribb et al. 2020](https://sylvain-delzon.com/wp-content/uploads/2020/09/Brodribb-et-al.-2020-Nat-Plants.pdf), full text and Methods; collection coordinates 42.92° S, 147.26° E, slabs >500 shoots, glasshouse 10–25 °C confirmed."
+    },
+    {
+      "claim": "\"hydroid conduit circularity uncorrelated with water potential down to -1.45 MPa (14 plants)\".",
+      "section": "Model transfer: Can transfer, hydraulics; Affinity and controversies",
+      "verdict": "imprecise",
+      "evidence": "Fourteen plants; correlations were nonsignificant, not zero. This does not demonstrate absence of deformation.",
+      "source": "[Brodribb et al. 2020](https://sylvain-delzon.com/wp-content/uploads/2020/09/Brodribb-et-al.-2020-Nat-Plants.pdf), full text, Fig. 1: r=0.42 and 0.46, both P>0.1."
+    },
+    {
+      "claim": "\"cavitation onset below -0.5 MPa; optical P50 -1.8 MPa (9 or 10 shoots; water potential inferred from leaf angle)\".",
+      "section": "Model transfer: Can transfer, hydraulics",
+      "verdict": "supported",
+      "evidence": "Text, Fig. 2 and Methods confirm thresholds, leaf-angle estimation and conflicting replicate counts.",
+      "source": "[Brodribb et al. 2020](https://sylvain-delzon.com/wp-content/uploads/2020/09/Brodribb-et-al.-2020-Nat-Plants.pdf), full text and Methods."
+    },
+    {
+      "claim": "\"rapid conductance loss between -1 and -2 MPa; refilling from about 90 min ... Use these as a vulnerability curve\".",
+      "section": "Model transfer: Can transfer, hydraulics",
+      "verdict": "overstated",
+      "evidence": "Conductance decline and refilling timing are reported; these are different responses, not interchangeable vulnerability-curve observations.",
+      "source": "[Brodribb et al. 2020](https://sylvain-delzon.com/wp-content/uploads/2020/09/Brodribb-et-al.-2020-Nat-Plants.pdf), full text and Extended Data captions."
+    },
+    {
+      "claim": "\"shoot and rhizome each carry roughly half ... resistance\"; assimilation versus conductance \"close to the vascular-plant relationship (7 plants)\".",
+      "section": "Model transfer: Can transfer, resistance and efficiency",
+      "verdict": "unverifiable",
+      "evidence": "Extended Data 1 supports coordinated means, n=7; image retrieval failed, preventing independent checking of the roughly equal resistance split.",
+      "source": "[Brodribb et al. 2020](https://holbrookgroup.oeb.harvard.edu/sites/g/files/omnuum6381/files/holbrook/files/s41477-020-0602-x.pdf), full text and captions; Extended Data figure images could not be inspected."
+    },
+    {
+      "claim": "\"under 15% ... by -1.5 MPa\", assimilation zero \"about 2.5 kPa\", poorer efficiency than \"84\" species; \"penalty for stomata-free photosynthetic tissue\".",
+      "section": "Model transfer: Can transfer, gas exchange",
+      "verdict": "overstated",
+      "evidence": "Numerical comparisons are reported, with assimilation approaching zero; a universal stomata-free penalty was not tested.",
+      "source": "[Brodribb et al. 2020](https://sylvain-delzon.com/wp-content/uploads/2020/09/Brodribb-et-al.-2020-Nat-Plants.pdf), full text and Fig. 4."
+    },
+    {
+      "claim": "\"P. formosum ... transfer-cell interface with invertase conversion, sucrose reaching about 230 mM in the haustorium\"; qualitative dependence only.",
+      "section": "Model transfer: Can transfer, sugar transport",
+      "verdict": "supported",
+      "evidence": "The abstract reports approximately 230 mM haustorial sucrose, extracellular cleavage, carrier-mediated hexose uptake and sucrose resynthesis in P. formosum.",
+      "source": "[Renault et al. 1992](https://pubmed.ncbi.nlm.nih.gov/16653202/), abstract only; full-text PDF retrieval failed."
+    },
+    {
+      "claim": "\"Do not carry P. formosum sugar-transfer values to P. commune\"; collapse images are \"Polytrichastrum formosum\".",
+      "section": "Model transfer: Cannot transfer, species identity",
+      "verdict": "supported",
+      "evidence": "Renault names Polytrichum formosum; Ligrone's Fig. 11 explicitly identifies Polytrichastrum formosum. Neither supplies corresponding P. commune sugar-transfer measurements.",
+      "source": "[Renault et al. 1992](https://pubmed.ncbi.nlm.nih.gov/16653202/), abstract; [Ligrone et al. 2012](https://www.researchgate.net/publication/221853422_Major_transitions_in_the_evolution_of_early_land_plants_a_bryological_perspective), full text and Fig. 11 caption."
+    },
+    {
+      "claim": "\"Do not treat hydroids as xylem\"; \"imperforate ... independent origin ... lack lignified secondary walls\"; Dawsonia widening does not establish vulnerability.",
+      "section": "Front matter: conducting_tissue; Model transfer: Cannot transfer, conducting cells",
+      "verdict": "supported",
+      "evidence": "Ligrone distinguishes hydroids anatomically and evolutionarily from xylem; Bok's abstract measures Dawsonia hydroid diameter and number, not embolism vulnerability.",
+      "source": "[Ligrone et al. 2012](https://www.researchgate.net/publication/221853422_Major_transitions_in_the_evolution_of_early_land_plants_a_bryological_perspective), full review; [Bok et al. 2022](https://bsapubs.onlinelibrary.wiley.com/doi/10.1002/ajb2.1795), abstract only."
+    },
+    {
+      "claim": "\"none exists for Polytrichum\"; Proctor's \"10-50% values\" belong to Mnium, Pleuridium and Funaria.",
+      "section": "Model transfer: Cannot transfer, sporophyte carbon fractions",
+      "verdict": "unverifiable",
+      "evidence": "Proctor's primary text was inaccessible. Kubásek measures Polytrichum capsule assimilation, not lifetime carbon-source fractions; universal nonexistence remains unproven.",
+      "source": "Proctor DOI 10.1179/jbr.1977.9.3.375: publisher access blocked, primary text not read; [Kubásek et al. 2021](https://nph.onlinelibrary.wiley.com/doi/10.1111/nph.17208), full text."
+    },
+    {
+      "claim": "\"Do not read the living moss as the ancestor ... or as an Early Devonian analogue: no polytrichalean fossil is older than 136 Ma\".",
+      "section": "Model transfer: Cannot transfer, historical interpretation",
+      "verdict": "overstated",
+      "evidence": "Bippus establishes the oldest unequivocal family record, not its origin; fossil minima and gene losses do not preclude explicitly bounded functional analogies.",
+      "source": "[Bippus et al. 2017](https://mihaibotany.online/pdf/BippusEtAl2017.pdf), full text; [Harris et al. 2022](https://bpb-eu-w2.wpmucdn.com/blogs.bristol.ac.uk/dist/3/589/files/2022/09/Harris_et_al_2022.pdf), full text."
+    },
+    {
+      "claim": "\"Do not use a single shoot or colony as a population mean\"; one population and preferential sampling of emergent plants.",
+      "section": "Model transfer: Cannot transfer, sampling",
+      "verdict": "supported",
+      "evidence": "One population; dehydration assays preferentially sampled larger colony shoots.",
+      "source": "[Brodribb et al. 2020](https://sylvain-delzon.com/wp-content/uploads/2020/09/Brodribb-et-al.-2020-Nat-Plants.pdf), full text and Methods."
+    },
+    {
+      "claim": "\"Do not use 'mosses lack conducting tissue'\"; \"Sphagnopsida and Andreaeopsida lack internal water-conducting cells\".",
+      "section": "Model transfer: Cannot transfer, moss diversity",
+      "verdict": "supported",
+      "evidence": "Ligrone explicitly records internal water-conducting cells as absent in these two classes, contrasting them with hydroid-bearing peristomate mosses and perforate Takakia cells.",
+      "source": "[Ligrone et al. 2012](https://www.researchgate.net/publication/221853422_Major_transitions_in_the_evolution_of_early_land_plants_a_bryological_perspective), full review."
+    }
+  ],
+  "omissions": [
+    "Kubásek studied P. commune, P. juniperinum and Polytrichastrum formosum directly. P. commune capsules have approximately 50 stomata, and stomatal sealing suppresses capsule gas exchange; the card unnecessarily leaves species-level sporophyte physiology unresolved. [Full primary text](https://nph.onlinelibrary.wiley.com/doi/10.1111/nph.17208).",
+    "Kubásek's corrected Table 3 reports P. commune capsule net assimilation of 0.09 µmol m−2 s−1 at 400 µmol mol−1 CO2, versus −0.35 after stomatal sealing, under saturating light. These are capsule-area rates, not lifetime carbon-autonomy fractions. The original online Table 3 duplicates Table 2 and must be replaced using the [full erratum](https://nph.onlinelibrary.wiley.com/doi/10.1111/nph.17473).",
+    "Kubásek distinguishes effectively homoiohydric developing sporophytes from poikilohydric gametophytes, while finding no stomatal conductance responses to light or CO2. Dependence, photosynthetic contribution and water regulation therefore need separate model variables. [Full primary text](https://nph.onlinelibrary.wiley.com/doi/10.1111/nph.17208).",
+    "The optical embolism metric measures cumulative changed image area. Refilling involved wetting both leaves and rhizome; the supplementary-video caption reports similar results in three samples despite the single illustrated time series. [Brodribb full text and supplementary description](https://www.nature.com/articles/s41477-020-0602-x).",
+    "Bippus discusses Polytrichopsida clock estimates of 297–471 Ma and questions their fossil calibration. Subtracting the family's first fossil from the whole-moss crown age does not measure the undocumented history of the hydroid lineage. [Full text](https://mihaibotany.online/pdf/BippusEtAl2017.pdf).",
+    "Cardona-Correa supplies multiple explicit arguments against modern contamination, including replicated extraction, matrix properties and chemical and morphological comparisons. These deserve representation alongside the later chronological-gap objection. [Full primary text](https://www.journals.uchicago.edu/doi/full/10.1086/686242).",
+    "Flora describes occasional stem forking and erect-to-decumbent stems, and flags taxonomic uncertainty around the elongated wetland form var. uliginosum. These qualify both branching='none' and transfer of maximum stem length as vertical stature. [Complete indexed Flora treatment](https://efloras.org/florataxon.aspx?flora_id=1&taxon_id=200002665)."
+  ],
+  "model_transfer_assessment": "The chosen contrast is useful: internal conduction, generation dominance and sporophyte dependence can be separated. Most hydraulic observations concern the named P. commune population, and the formosum distinction is handled carefully. However, microscopy, embolism area, conductance loss and refilling require separate model relationships; stem length is not automatically vertical height, and one species cannot establish a universal penalty for stomata-free tissue. The exclusions correctly address species, organs and sampling, but should incorporate the available P. commune capsule physiology and permit bounded functional analogy without implying ancestry.",
+  "overall": "The card is substantially source-grounded, but needs revision before serving as a quantitative modelling reference. The principal problems are overly broad transfer recommendations, conflation of stem length with height, an unsupported universal claim about missing carbon fractions, and omission of directly relevant P. commune sporophyte measurements."
+}

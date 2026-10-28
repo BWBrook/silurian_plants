@@ -10,6 +10,7 @@ lineage: >-
   branching, with more elaborate fertile units than the rhyniophytes; not in the trimerophyte grade
   (McSweeney et al. 2021).
 placement_confidence: low
+contrasts: [height, reproductive-strategy, record-timing]
 range:
   first: Lochkovian
   last: Emsian
@@ -113,6 +114,21 @@ Nothing is observed. The plants are drifted fragments in marine rocks; the Eglin
 - **Timing (F3).** If the Yea records are Early Devonian, no Victorian Yarravia need be older than the Lochkovian-Pragian, and the Silurian outlier among compound fertile units disappears.
 - **Record artefacts.** Two genera for one plant inflate genus-level diversity by one, and 'synangium' should not be coded from the type material.
 - **Biogeography (F4).** The Yunnan-Victoria link implies exchange or convergence (McSweeney et al. 2021); with no in situ spores it cannot be tied to dispersed spore taxa.
+
+## Model transfer
+
+**Chosen to contrast:** Contrast multiplication of terminal sporangia on sparsely branched axes with simpler fertile units, using a sizeable preserved shoot whose supposed synangia proved preservation artefacts.
+
+- **Can transfer:**
+  - Minimum preserved extent and fertile-unit count in Y. oblonga NMV P236587, Eglinton Cutting: at least 280 mm and almost 20 terminal fructifications (McSweeney et al. 2021).
+  - Axis width in Victorian Y. oblonga material: 1.0-4.2 mm; retain this species-specific range (McSweeney et al. 2021, Table 2, as reproduced in McSweeney 2024).
+  - Fertile-unit architecture in Victorian Y. oblonga fragments: 1-6 sporangia per fructification, each 2.7-7.0 mm long; use as an architectural multiplier without spore counts (McSweeney et al. 2021).
+- **Cannot transfer:**
+  - Synangial fusion cannot be coded from the type material; the apparent synangium is a preservation artefact rather than demonstrated fertile anatomy.
+  - Tracheid anatomy or hydraulic conductance cannot be inferred from the central line in Frenchmans Spur specimen NMV P256741; no tracheids have been observed.
+  - A decumbent rooting architecture or clonal-spread mechanism cannot be assigned from NMV P236587: apparent horizontal-to-upright axes are equivocal in transported material.
+  - A secure Silurian appearance cannot be assigned to Yarravia; none of the localities has a demonstrated Silurian age.
+  - Spore output cannot be calculated as an observed quantity from fructification counts; the proposed tens of sporangia are arithmetic, and no spore numbers exist.
 
 ## Open questions
 

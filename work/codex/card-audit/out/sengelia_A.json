@@ -1,0 +1,189 @@
+{
+  "items": [
+    {
+      "claim": "“Drepanophycalean stem-group lycopsid (‘pre-lycopsid’ grade)” with vascularised leaves, K-branching and cauline sporangia.",
+      "section": "Front matter: lineage; Affinity and controversies",
+      "verdict": "supported",
+      "evidence": "Formal classification and comparative morphology support this interpretation; placement is not a cladistic result.",
+      "source": "[Matsunaga and Tomescu 2017, Systematics and Justification for a new genus](https://pmc.ncbi.nlm.nih.gov/articles/PMC5604611/) — full text."
+    },
+    {
+      "claim": "“Not sampled in the 2025 zosterophyll analysis, where Asteroxylon and Drepanophycus represent the lycopsids.”",
+      "section": "Front matter: lineage; Affinity and controversies",
+      "verdict": "supported",
+      "evidence": "Methods identify those two lycopsid genera; Sengelia is absent from the analysed taxon set.",
+      "source": "[Claisse et al., DOI 10.1093/aob/mcaf146](https://pmc.ncbi.nlm.nih.gov/articles/PMC13274996/) — full text."
+    },
+    {
+      "claim": "“Late Lochkovian to early Pragian”; McGregor palynology, corroborating fish biostratigraphy; “no radiometric age”.",
+      "section": "Front matter: range; Age and distribution; Model transfer: Age",
+      "verdict": "supported",
+      "evidence": "Methods report that age and both biostratigraphic bases. Neither study reports a radiometric determination for the sampled layers.",
+      "source": "[Matsunaga and Tomescu 2016](https://mihaibotany.online/pdf/MatsunagaTomescu2016.pdf) — full text; [2021 dataset methods](https://datadryad.org/dataset/doi:10.5061/dryad.zcrjdfnb2) — full repository description."
+    },
+    {
+      "claim": "“28 samples from about 1 m”; “32 spore, five cryptospore and three other palynomorph species”; “late Lochkovian or Pragian”; type locality “mid to late Emsian”.",
+      "section": "Front matter: range; Age and distribution; Model transfer: Age and Generality",
+      "verdict": "supported",
+      "evidence": "Abstract confirms assemblage counts and age; dataset methods confirm sampling, three mat samples, and the differently aged type locality.",
+      "source": "[Noetinger et al. 2021](https://onlinelibrary.wiley.com/doi/10.1002/spp2.1395) — abstract only; [associated dataset](https://datadryad.org/dataset/doi:10.5061/dryad.zcrjdfnb2) — full repository methods."
+    },
+    {
+      "claim": "“About 411 Ma” matches “410.8 Ma”; revised boundary “413.02 Ma”, with Pragian ending “410.62 Ma”.",
+      "section": "Front matter: range; Age and distribution",
+      "verdict": "supported",
+      "evidence": "ICS charts confirm the numerical boundaries. Identifying approximately 411 Ma with the older boundary calibration is reasonable inference, not an explicit author explanation.",
+      "source": "[ICS 2013 chart using GTS2012](https://stratigraphy.org/ICSchart/ChronostratChart2013-01.pdf) and [ICS 2024/12 chart](https://stratigraphy.org/ICSchart/ChronostratChart2024-12.pdf) — complete charts; data/timescale.csv also read."
+    },
+    {
+      "claim": "“Cottonwood Canyon only, on one level”; 44°51′51″ N, 108°02′46″ W; “1.5–1.8 m” section; specimens within “10 m”.",
+      "section": "Front matter: localities; Age and distribution; Model transfer: Generality",
+      "verdict": "imprecise",
+      "evidence": "Coordinates and dimensions agree. The sampled interval contains successive mat horizons; ‘one level’ means a restricted stratigraphic interval, not one bedding surface.",
+      "source": "[Matsunaga and Tomescu 2016, Methods and in situ preservation](https://mihaibotany.online/pdf/MatsunagaTomescu2016.pdf) — full text."
+    },
+    {
+      "claim": "“Height_cm: {min: null, max: null}”; prostrate, non-self-supporting stems; possibly erect apices; “25 cm” is fragment length.",
+      "section": "Front matter: height_cm; Model transfer: Prostrate growth form",
+      "verdict": "supported",
+      "evidence": "Fragment length is measured; growth habit is reconstructed.",
+      "source": "[Matsunaga and Tomescu 2017, Stems and Growth habit](https://pmc.ncbi.nlm.nih.gov/articles/PMC5604611/) — full text."
+    },
+    {
+      "claim": "Leafy stems “3–34 mm”, mean “15 mm”, “n = 567”; diagnosis “35 mm”; root-bearing axes “2–8 mm”, mean “4.4 mm”, “n = 452”; “over 400 rock specimens”.",
+      "section": "Front matter: axis_diameter_mm; Model transfer: Growth form and Rooting architecture",
+      "verdict": "supported",
+      "evidence": "All reported values agree; widths are compression measurements.",
+      "source": "[Matsunaga and Tomescu 2017, Methods, diagnosis and descriptions](https://pmc.ncbi.nlm.nih.gov/articles/PMC5604611/) — full text."
+    },
+    {
+      "claim": "“Exclusively K-branching”; intervals “2 to at least 25 cm”; one leafy stem and one root-bearing axis; smaller lateral stems; generic diagnosis permits simple dichotomy.",
+      "section": "Front matter: branching; Model transfer: Branching rule",
+      "verdict": "supported",
+      "evidence": "Reported, but 25 cm is a censored branch-free fragment.",
+      "source": "[Matsunaga and Tomescu 2017, Generic diagnosis and Branching](https://pmc.ncbi.nlm.nih.gov/articles/PMC5604611/) — full text."
+    },
+    {
+      "claim": "Leaves “1–7 mm”; “eight to ten per gyre”; single vein “0.2–0.35 mm” possibly formed from two; no observed leaf stomata.",
+      "section": "Front matter: leaves",
+      "verdict": "supported",
+      "evidence": "Leaf description and cuticle observations agree.",
+      "source": "[Matsunaga and Tomescu 2017, Leaves and Epidermis](https://pmc.ncbi.nlm.nih.gov/articles/PMC5604611/) — full text."
+    },
+    {
+      "claim": "Anomocytic stomata “about 7–8 per mm2” on stems; rare on root-bearing axes; none on the one recovered leaf cuticle.",
+      "section": "Front matter: stomata",
+      "verdict": "supported",
+      "evidence": "Epidermis results report these observations.",
+      "source": "[Matsunaga and Tomescu 2017, Epidermis and stomata](https://pmc.ncbi.nlm.nih.gov/articles/PMC5604611/) — full text."
+    },
+    {
+      "claim": "“A single central strand in every organ”; stem stele “1–2 mm”; bars “about 10 um apart”; unresolved thickening type, no secondary xylem, no transferable conductivity.",
+      "section": "Front matter: conducting_tissue; Model transfer: Water-transport properties",
+      "verdict": "imprecise",
+      "evidence": "Anatomical values agree; ‘every organ’ excludes unresolved sporangial vascularisation.",
+      "source": "[Matsunaga and Tomescu 2017, Vascular tissues and Sporangia](https://pmc.ncbi.nlm.nih.gov/articles/PMC5604611/) — full text."
+    },
+    {
+      "claim": "Cauline, sessile sporangia; Tanner’s “5 x 8 mm” structures were buds; “33 sporangia, 2.3–3.7 mm, on 20 stem fragments, 14 on three”.",
+      "section": "Front matter: sporangium_position; Model transfer: Sporangia as an observation",
+      "verdict": "supported",
+      "evidence": "Sporangia results report every listed value and reinterpretation.",
+      "source": "[Matsunaga and Tomescu 2017, Sporangia](https://pmc.ncbi.nlm.nih.gov/articles/PMC5604611/) — full text."
+    },
+    {
+      "claim": "Spores and heterospory “unknown”; no transferable reproductive allocation, spore number or size; only one corresponding dispersed spore type, assignable to zosterophylls.",
+      "section": "Front matter: spores and heterospory; Model transfer: Reproductive allocation",
+      "verdict": "supported",
+      "evidence": "No in situ spores recovered; abstract identifies only a zosterophyll-associated type. These sources cannot quantify Sengelia reproduction.",
+      "source": "[Matsunaga and Tomescu 2017](https://pmc.ncbi.nlm.nih.gov/articles/PMC5604611/) — full text; [Noetinger et al. 2021](https://onlinelibrary.wiley.com/doi/10.1002/spp2.1395) — abstract only."
+    },
+    {
+      "claim": "Modified stems bear root-like lateral appendages “0.4–0.7 mm”; authors “conclude that lycophyte roots arose as a novel organ, not from branches”.",
+      "section": "Front matter: rooting; Affinity and controversies",
+      "verdict": "overstated",
+      "evidence": "Morphology and root interpretation agree. Generalised novel-organ origin is explicitly a hypothesis: roots may have arisen this way.",
+      "source": "[Matsunaga and Tomescu 2016, Root homology and K-branching and lycophyte root evolution](https://mihaibotany.online/pdf/MatsunagaTomescu2016.pdf) — full text."
+    },
+    {
+      "claim": "Roots “0.4–0.7 mm”; tufts “2–40 mm” apart, mean “11 mm”, “n = 161”; “up to 20 mm long”, five dichotomies; “615 tufts on 310 axes among 177 specimens”.",
+      "section": "Model transfer: Rooting architecture",
+      "verdict": "imprecise",
+      "evidence": "Counts, thickness, spacing and branching agree. Twenty millimetres measures maximum lateral tuft extent, not individual root path length.",
+      "source": "[Matsunaga and Tomescu 2016, Methods and Body plan](https://mihaibotany.online/pdf/MatsunagaTomescu2016.pdf) — full text."
+    },
+    {
+      "claim": "Vertical axes reach “at least 12 cm below the mat (DMNH 29594, HPH 210)”; depth is a preservation-limited minimum.",
+      "section": "Model transfer: Rooting architecture",
+      "verdict": "misattributed",
+      "evidence": "The depth comes from outcrop Figure 9B–C. Named specimens illustrate vertical axes in Figure 8, not that depth measurement.",
+      "source": "[Matsunaga and Tomescu 2016, In situ preservation and Figures 8–9](https://mihaibotany.online/pdf/MatsunagaTomescu2016.pdf) — full text."
+    },
+    {
+      "claim": "Colonisation, burial and recolonisation in “1.5–1.8 m”; microconchids on “325 stem fragments (60%)”; mottled zone “about 40 cm”; no cycle durations.",
+      "section": "Model transfer: Disturbance cycle",
+      "verdict": "supported",
+      "evidence": "Numbers agree; the cycle is a stratigraphic interpretation.",
+      "source": "[Matsunaga and Tomescu 2017, Methods, Stratigraphy and Growth environment](https://pmc.ncbi.nlm.nih.gov/articles/PMC5604611/) — full text."
+    },
+    {
+      "claim": "Cannot transfer “Height, vertical growth or any stature trade-off”; no measured height, growth rate or competitive outcome.",
+      "section": "Model transfer: Cannot transfer",
+      "verdict": "imprecise",
+      "evidence": "Stature limits hold; downward axial growth is documented.",
+      "source": "[Matsunaga and Tomescu 2016](https://mihaibotany.online/pdf/MatsunagaTomescu2016.pdf) and [2017](https://pmc.ncbi.nlm.nih.gov/articles/PMC5604611/) — full texts."
+    },
+    {
+      "claim": "Cannot transfer “Clone size, clone age, vegetative spread rate or ramet turnover”; no identified clone or genet.",
+      "section": "Model transfer: Cannot transfer",
+      "verdict": "supported",
+      "evidence": "Clonality is inferred; these quantities are not measured.",
+      "source": "[Matsunaga and Tomescu 2017, Life history](https://pmc.ncbi.nlm.nih.gov/articles/PMC5604611/) — full text."
+    },
+    {
+      "claim": "“Fungal nutrition, gametophyte and sporophyte independence: not reported in the sources read.”",
+      "section": "Front matter: gametophyte; Model transfer: Cannot transfer",
+      "verdict": "supported",
+      "evidence": "Neither morphological study establishes these species-specific properties.",
+      "source": "[Matsunaga and Tomescu 2016](https://mihaibotany.online/pdf/MatsunagaTomescu2016.pdf) and [2017](https://pmc.ncbi.nlm.nih.gov/articles/PMC5604611/) — full texts."
+    },
+    {
+      "claim": "Noetinger et al.’s “table of parent plants lists no Sengelia”.",
+      "section": "Front matter: spores",
+      "verdict": "unverifiable",
+      "evidence": "Dataset landing page lists Table S2, but download returned 403; Zenodo mirror was inaccessible. Abstract cannot verify table contents.",
+      "source": "[Noetinger et al. dataset](https://datadryad.org/dataset/doi:10.5061/dryad.zcrjdfnb2) — repository description read; Table S2 unavailable."
+    },
+    {
+      "claim": "“S. devonica (Eifelian) and S. minor (Givetian) have stalked sporangia and other dimensions”; do not pool congeners or D. qujingensis data.",
+      "section": "Front matter: lineage and range; Model transfer: Congeners",
+      "verdict": "supported",
+      "evidence": "Table 2 confirms congener differences; Chinese material is separate.",
+      "source": "[Matsunaga and Tomescu 2017, Table 2](https://pmc.ncbi.nlm.nih.gov/articles/PMC5604611/) — full text; [Xue et al. 2016](https://pubmed.ncbi.nlm.nih.gov/27503883/) — abstract and figure captions only."
+    },
+    {
+      "claim": "“Kin recognition or avoidance” is possible, “not demonstrated”.",
+      "section": "Model transfer: Cannot transfer",
+      "verdict": "supported",
+      "evidence": "Discussion explicitly presents the parallel-axis explanation tentatively.",
+      "source": "[Matsunaga and Tomescu 2017, Kin recognition mechanisms?](https://pmc.ncbi.nlm.nih.gov/articles/PMC5604611/) — full text."
+    },
+    {
+      "claim": "“Chosen to contrast: clonal-growth and height”; whole-plant concept integrates habit, life history and environment; width is not stature.",
+      "section": "Model transfer: Chosen to contrast",
+      "verdict": "supported",
+      "evidence": "Appropriate qualitative contrast; habit and clonality remain inferred.",
+      "source": "[Matsunaga and Tomescu 2017, Abstract and Discussion](https://pmc.ncbi.nlm.nih.gov/articles/PMC5604611/) — full text."
+    }
+  ],
+  "omissions": [
+    "The branching interval is censored by fragment preservation; transfer must also retain dormant and incomplete branches. [2017 full text](https://pmc.ncbi.nlm.nih.gov/articles/PMC5604611/).",
+    "Some root tips disappear into the rock matrix. Observed tuft reach cannot define a biological maximum root length. [2016 full text, Figure 2](https://mihaibotany.online/pdf/MatsunagaTomescu2016.pdf).",
+    "The ≥12 cm depth is an outcrop constraint, distinct from measurements on individual museum specimens. [2016 full text, Figures 8–9](https://mihaibotany.online/pdf/MatsunagaTomescu2016.pdf).",
+    "An uncertain Lochkovian–Pragian deposit age does not demonstrate species persistence throughout both stages. Numerical boundary ages also carry substantial uncertainties. [2021 abstract](https://onlinelibrary.wiley.com/doi/10.1002/spp2.1395); [ICS 2024/12 chart](https://stratigraphy.org/ICSchart/ChronostratChart2024-12.pdf).",
+    "Rock specimens and organ fragments are different sampling units; neither counts independent plants. [2017 full text, Methods](https://pmc.ncbi.nlm.nih.gov/articles/PMC5604611/).",
+    "Unknown parentage affects most dispersed palynomorph types; failure to identify Sengelia spores does not independently establish low fertility. [2021 abstract](https://onlinelibrary.wiley.com/doi/10.1002/spp2.1395)."
+  ],
+  "model_transfer_assessment": "The contrast is appropriate for qualitative architecture and disturbance hypotheses. Measurements belong to the Cottonwood Canyon plant, subsequently named S. radicans, but rooting depth is mislinked to specimens and tuft reach becomes root length. Most exclusions are sound; add explicit limits on sampling independence and censored dimensions, and distinguish reconstructed habit and recovery from measured demographic performance.",
+  "overall": "The card is largely source-faithful and carefully separates many observations from interpretations. Correct the rooting measurement and specimen attribution, narrow several categorical statements, and retain clonal recovery as a hypothesis rather than a calibrated process; the inaccessible parent-plant table remains unverified."
+}
