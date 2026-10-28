@@ -233,9 +233,9 @@ def main():
             else:
                 unit = " cm" if key == "height_cm" else " mm" if key == "axis_diameter_mm" else ""
                 low, high = value.get("min"), value.get("max")
-                state = str(low) if low == high else f'{low if low is not None else "?"}–{high if high is not None else "?"}'
-                state += unit
-            traits.append(f'<tr><th scope="row">{esc(pretty(key.removesuffix("_cm").removesuffix("_mm")))}</th><td>{esc(state)}</td><td>{esc(value.get("note", ""))}</td></tr>')
+                state = "Not recorded" if low is None and high is None else (str(low) if low == high else f'{low if low is not None else "?"}–{high if high is not None else "?"}') + unit
+            origin = f'<small class="trait-origin">Borrowed from {esc(value["from"])}</small>' if value.get("from") else ""
+            traits.append(f'<tr data-trait="{esc(key)}"><th scope="row">{esc(pretty(key.removesuffix("_cm").removesuffix("_mm")))}</th><td>{esc(state)}{origin}</td><td>{esc(value.get("note") or "")}</td></tr>')
         traits_html = f'<section class="card-data"><h2 id="trait-record">Structured trait record</h2><p class="data-note">Absent = observed absent; unknown = not preserved or not reported; na = not applicable.</p><div class="table-scroll" tabindex="0" role="region" aria-label="Structured traits"><table><thead><tr><th>Trait</th><th>Record</th><th>Source notes</th></tr></thead><tbody>{"".join(traits)}</tbody></table></div></section>' if traits else ""
         localities = meta.get("localities") or []
         locals_html = '<h3>Localities</h3><ul>' + "".join(f'<li>{esc(x)}</li>' for x in localities) + '</ul>' if localities else ""
@@ -255,7 +255,9 @@ def main():
                 a.string = label
                 li.append(a)
                 ul.append(li)
-        content = f'<div class="article-header taxon-heading"><p class="eyebrow">Taxon atlas / {esc(GROUP_NAMES.get(meta["group"], pretty(meta["group"])))}</p><h1>{esc(meta["name"])}</h1><p class="authority">{esc(meta.get("authority", ""))}</p><div class="badges"><span>{esc(KIND_NAMES[meta["kind"]])}</span><span class="status">{esc(meta["status"])}</span></div><p class="age-range">{esc(range_label(meta))}</p></div>{picture(slug, current, "taxon-figure", eager=True)}<article class="prose">{rendered}</article>{traits_html}{source_data}<section class="prose card-data"><h2 id="references">References</h2><ol class="references">{"".join(refs)}</ol></section>'
+        contrasts = "".join(f'<span data-contrast="{esc(value)}">{esc(pretty(value))}</span>' for value in meta.get("contrasts") or [])
+        contrasts_html = f'<div class="contrast-summary"><p class="eyebrow">Contrasts tested</p><div>{contrasts}</div></div>' if contrasts else ""
+        content = f'<div class="article-header taxon-heading"><p class="eyebrow">Taxon atlas / {esc(GROUP_NAMES.get(meta["group"], pretty(meta["group"])))}</p><h1>{esc(meta["name"])}</h1><p class="authority">{esc(meta.get("authority", ""))}</p><div class="badges"><span>{esc(KIND_NAMES[meta["kind"]])}</span><span class="status">{esc(meta["status"])}</span></div><p class="age-range">{esc(range_label(meta))}</p></div>{picture(slug, current, "taxon-figure", eager=True)}{contrasts_html}<article class="prose">{rendered}</article>{traits_html}{source_data}<section class="prose card-data"><h2 id="references">References</h2><ol class="references">{"".join(refs)}</ol></section>'
         page(meta["name"], content, current, "atlas", str(toc_soup), source)
         search.append({"title": meta["name"], "type": "Taxon card", "url": current,
                        "text": BeautifulSoup(content, "html.parser").get_text(" ", strip=True)})
@@ -263,10 +265,11 @@ def main():
     reading_cards = "".join(f'<a class="reading-card" href="docs/{slug}.html"><span class="chapter">{number}</span><h2>{label}</h2><p>{description}</p><span class="text-link">Start reading ↗</span></a>' for slug, label, description, number in CORE)
     support_cards = "".join(f'<a href="docs/{slug}.html">{label}<span>↗</span></a>' for slug, label in SUPPORT)
     doc_rows = []
+    main_documents = {f"docs/{slug}.html" for slug, *_ in CORE + SUPPORT}
     for entry in search:
-        if entry["type"] in ("Audit & evidence", "Source documentation"):
+        if entry["type"] != "Taxon card" and entry["url"] not in main_documents:
             doc_rows.append(f'<a class="document-row" href="{entry["url"]}"><span>{esc(entry["title"])}</span><small>{entry["type"]}</small><span aria-hidden="true">↗</span></a>')
-    page("Reading room", f'<div class="section-heading"><p class="eyebrow">The reading room</p><h1>A foundation for the science.</h1><p class="lede">The period, the competing questions and the evidence behind them. Read the project as a connected collection.</p></div><div class="reading-grid">{reading_cards}</div><section class="section-block"><div class="section-title"><h2>How the programme is taking shape</h2><p>Purpose, decisions and working plans</p></div><div class="support-links">{support_cards}</div></section><section class="section-block"><div class="section-title"><h2>Audits & source documentation</h2><p>Trace the work back to its evidence.</p></div><div class="document-list">{"".join(doc_rows)}</div></section>', "reading.html", "reading")
+    page("Reading room", f'<div class="section-heading"><p class="eyebrow">The reading room</p><h1>A foundation for the science.</h1><p class="lede">The period, the competing questions and the evidence behind them. Read the project as a connected collection.</p></div><div class="reading-grid">{reading_cards}</div><section class="section-block"><div class="section-title"><h2>How the programme is taking shape</h2><p>Purpose, decisions and working plans</p></div><div class="support-links">{support_cards}</div></section><section class="section-block"><div class="section-title"><h2>Further reading & evidence</h2><p>Working notes, audits and source documentation.</p></div><div class="document-list">{"".join(doc_rows)}</div></section>', "reading.html", "reading")
     groups = sorted({m["group"] for m, _ in metadata.values()}, key=lambda g: GROUP_NAMES.get(g, g))
     kinds = sorted({m["kind"] for m, _ in metadata.values()})
     group_options = "".join(f'<option value="{g}">{GROUP_NAMES.get(g, pretty(g))}</option>' for g in groups)

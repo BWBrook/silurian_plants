@@ -1,6 +1,6 @@
 # /// script
 # requires-python = ">=3.12"
-# dependencies = ["beautifulsoup4==4.14.3", "Markdown==3.10.2"]
+# dependencies = ["beautifulsoup4==4.14.3", "Markdown==3.10.2", "PyYAML==6.0.3"]
 # ///
 """Check generated links, source coverage, freshness and preservation of the scientific text."""
 
@@ -11,6 +11,7 @@ from pathlib import Path
 from urllib.parse import unquote, urlsplit
 
 import markdown
+import yaml
 from bs4 import BeautifulSoup
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -61,7 +62,15 @@ def main():
         soup = pages[output]
         body = path.read_text()
         if body.startswith("---\n"):
-            body = re.split(r"\n---\n", body, maxsplit=1)[1]
+            front, body = re.split(r"\n---\n", body, maxsplit=1)
+            meta = yaml.safe_load(front.removeprefix("---\n"))
+            if set(meta.get("contrasts") or []) != {tag["data-contrast"] for tag in soup.select("[data-contrast]")}:
+                errors.append(f"Contrasts differ from source: {relative}")
+            for trait, record in (meta.get("traits") or {}).items():
+                if record and record.get("from"):
+                    origin = soup.select_one(f'tr[data-trait="{trait}"] .trait-origin')
+                    if origin is None or record["from"] not in origin.get_text():
+                        errors.append(f"Missing borrowed trait origin: {relative} / {trait}")
         expected = BeautifulSoup(markdown.markdown(body, extensions=["extra", "toc", "sane_lists"]), "html.parser")
         if expected.h1:
             expected.h1.decompose()
@@ -79,6 +88,10 @@ def main():
         errors.append("Rendered atlas does not contain exactly the source cards")
     index = json.loads((OUT / "search-index.json").read_text())
     indexed = {entry["url"] for entry in index}
+    reading_links = {a["href"] for a in pages[OUT / "reading.html"].select("main a[href]")}
+    for relative in manifest["sources"]:
+        if relative.startswith("docs/") and relative.endswith(".md") and str(Path(relative).with_suffix(".html")) not in reading_links:
+            errors.append(f"Document missing from reading room: {relative}")
     for path in pages:
         relative = path.relative_to(OUT).as_posix()
         if relative.startswith(("docs/", "taxa/", "data/")) and relative not in indexed:

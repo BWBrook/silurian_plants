@@ -2,7 +2,9 @@
 
 The reading room and taxon atlas are generated from this repository. Markdown is authoritative;
 do not edit generated HTML. The renderer preserves the scientific body text, card metadata,
-trait notes and references. Images supplement the cards and do not supply trait observations.
+trait notes and references. Card contrasts and borrowed trait origins are displayed explicitly;
+Model transfer sections render directly from the Markdown. Images supplement the cards and do
+not supply trait observations.
 
 The live, owner-private Site is [Early Land Plants](https://silurian-plants-library.barry-brook.chatgpt.site).
 Sites provides the access control. `noindex` is supplementary, not an access restriction.
@@ -69,6 +71,7 @@ the About page credits all assets. Atlas thumbnails may be visually cropped; ful
 show the complete web asset. Reconstructions and living comparisons are labelled.
 
 `check.py` checks every local link and anchor, exact card coverage, search coverage, source
-checksums, body-text preservation, source links, image metadata and excluded payload classes.
+checksums, body-text preservation, contrast and borrowed-trait metadata, source links, reading-room
+coverage, image metadata and excluded payload classes.
 It is a presentation/integrity check, not scientific validation. Recheck interactive search and
 atlas filters, keyboard access and desktop/mobile layouts after renderer or UI changes.
