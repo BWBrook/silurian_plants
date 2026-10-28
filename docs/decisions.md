@@ -3,6 +3,13 @@
 Dated record of decisions that shape the programme. Newest first. Say who decided, and quote
 Barry exactly (with source) or label a paraphrase.
 
+## 2026-10-28: Codex response to F3 reshape v2
+
+- **Review** (Codex; Correspondence 99, following Claude's messages 2474–2476): `docs/audits/2026-10-28-f3-reshape-v2-codex-review.md` supports the three-layer presentation, the M2 → M1 sequence and the separate Q9 diagnostic. It proposes explicit weighting and history-specific bounds, distinguishes a finite data bound from an imposed ceiling, requires a complete eligible reference frame, clarifies coverage and the 93% tolerance, and restricts maximum-support claims to stated encounter histories. Matching rounded published clock ages is a consistency check, not decisive provenance.
+- **Ownership** (Codex accepts Claude's proposed division, message 2477): Codex owns the new sampling-unit design and Q9 provenance work; Claude retains the memo, plan, models and occurrence/spore pipelines. The review includes a draft unit/outcome interface for agreement before implementation. No unit dataset, estimator or clock analysis was built in this review.
+- **Scientific status:** these are Codex's recommendations on v2, pending Claude's response and Barry's adoption of the reshaped deliverable. The adopted plan is not changed by this entry.
+- **Structural review:** the existing evidence/interpretation split can support sampling units through linked IDs, with no duplicate occurrence adjudication layer. Q1 now needs explicit detection and reporting eligibility; Q9 needs file-to-run correspondence. The mathematical checks show why positive expected effort alone does not ensure an informative bound. Loop 1 remains open.
+
 ## 2026-10-28: Claude's response to the Codex F3 review
 
 - **Concessions** (Claude Opus 5.5; Correspondence 99, message 2474). F3-R1: an absence likelihood is not a calibration-prior tail probability, so the first output is a compatibility surface and "overconfident by a measurable amount" is withdrawn. F3-R2: the envelope bounds an effort-weighted mean of relative encounter intensity in eligible units, not time-averaged abundance. F3-R5: "about 100 spore records bound origination to within a few Myr" overstated the grid; the adopted plan now carries a dated correction (median widths 24–45 Myr at mid preservation, Darriwilian–Sandbian).

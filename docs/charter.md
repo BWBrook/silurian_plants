@@ -117,5 +117,8 @@ data archived, and the human–AI correspondence record published alongside.
   section `silurian-plants`. The F3 review used two `gpt-5.6-sol` specialist subagents for
   methodological and effort-data checks, integrated and checked by the parent session;
   `docs/audits/2026-10-28-f3-reshape-codex-review.md` records the evidence and limitations.
+  The v2 follow-up (`docs/audits/2026-10-28-f3-reshape-v2-codex-review.md`) adds a draft
+  sampling-unit interface and checks the proposed bound and validation rule, with a bounded
+  follow-up by the same methodological specialist and parent verification of the calculations.
 
 `docs/decisions.md` records who decided what and when, for the eventual statement of AI roles.
