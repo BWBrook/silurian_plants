@@ -3,6 +3,12 @@
 Dated record of decisions that shape the programme. Newest first. Say who decided, and quote
 Barry exactly (with source) or label a paraphrase.
 
+## 2026-10-28: framing chosen; orientation ends
+
+- **First deliverable** (Barry, chat, 2026-10-28: "Yes, adopt it"). He accepted Claude's recommendation: the curated, provenance-tracked occurrence dataset plus the F3 observation model, which asks whether the record, read through a preservation model, supports the competing clock timescales. The plan is `docs/plan-f3.md`: seven target events, five stages, criteria for accepting an estimator fixed before the recovery study, and consult triggers.
+- **Purpose** (Barry, voice in chat, 2026-10-28). Recorded in `docs/charter.md`. In summary: bring a century of specimen-level work together into a coherent dataset; use it to build and check simulation models that ask questions beyond single fossils; and show how a quantitative scientist working with AI agents can do this.
+- **Stage** (Claude, following the charter's route). Orientation is closed, and Stage 1 begins under the plan. F1 and F2 remain the core simulation to follow; F4–F7 wait.
+
 ## 2026-10-28: primer revised after Barry's review
 
 - **Review** (Barry, chat, 2026-10-28). His main concern: "the primer preserves uncertainty in its literature summaries, then sometimes loses it in the diagrams, modelling rules and proposed analyses". He made seven points; the most structural was "Give the organismal biology more space". Claude Opus 5.5 checked the sources he cited, and they bear the points out.

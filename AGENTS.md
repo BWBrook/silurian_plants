@@ -2,9 +2,10 @@
 
 Exploratory, long-term programme on simulation modelling of early land-plant evolution, Late
 Ordovician to Early Devonian (c. 458–393 Ma). Read `docs/charter.md` for purpose, stage and
-route, and `docs/decisions.md` for what has been settled. Current stage: orientation; no
-research question has been chosen, so do not start model code without a framing decision
-recorded in `docs/decisions.md`.
+route, and `docs/decisions.md` for what has been settled. Current stage: the first deliverable,
+a curated occurrence dataset plus framing F3, chosen 2026-10-28. `docs/plan-f3.md` sets its
+endpoint, stages, acceptance criteria and consult triggers; model code within that plan is
+authorised. Other framings need their own decision before model code starts.
 
 ## Layout
 
@@ -12,7 +13,8 @@ recorded in `docs/decisions.md`.
   is generated.
 - `docs/`: charter, decisions, primer, precedents review, candidate framings, the source register
   (`docs/sources.md`, the index of all data held and needed: update it when a source changes),
-  the spore-compilation plan, and `docs/rejected-records.md` (rejected, reassigned and disputed
+  the spore-compilation plan, the plan for the first deliverable (`docs/plan-f3.md`), and
+  `docs/rejected-records.md` (rejected, reassigned and disputed
   early land-plant records, for the observation model).
 - `data/timescale.csv`: ICS v2024/12 stage base ages, the single source of numerical ages.
 - `data/traits.csv`: generated trait matrix, one row per card.

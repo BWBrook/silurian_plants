@@ -1,5 +1,7 @@
 # Candidate framings
 
+**Decision, 2026-10-28.** Barry adopted F3 with the curated dataset as the first deliverable (`docs/decisions.md`; plan in `docs/plan-f3.md`). F1 and F2 remain the planned core simulation. The text below is the orientation-stage analysis, kept as written.
+
 Draft, 2026-10-26, Claude Opus 5.5; facts updated 2026-10-27 after the review of the EPRP deposit
 (`docs/audits/2026-10-27-eprp-deposit-review.md`). I drafted it before reading `docs/precedents.md`
 and revised it afterwards, so where the two agree they are independent assessments, and where they disagree the

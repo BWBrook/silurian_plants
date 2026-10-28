@@ -1,6 +1,6 @@
 # Charter
 
-Status: **Stage 0, orientation** (opened 2026-10-26). No research question is chosen yet.
+Status: **Stage 1, first deliverable** (from 2026-10-28). Orientation ran 2026-10-26 to 28. Barry chose the curated dataset plus F3, whether the record supports the competing timescales; the plan is `docs/plan-f3.md`.
 
 ## The idea
 
@@ -53,7 +53,7 @@ account of why. That account is itself a useful output.
 
 ## Route
 
-0. **Orientation** (current): taxon cards (`taxa/`), a period primer (`docs/primer.md`), a review
+0. **Orientation** (closed 2026-10-28; the current plan is `docs/plan-f3.md`): taxon cards (`taxa/`), a period primer (`docs/primer.md`), a review
    of modelling precedents (`docs/precedents.md`) and candidate framings (`docs/framings.md`).
    Ends with a choice of framing, which is Barry's call on a recommendation from the agents.
 1. **Sketch:** the smallest end-to-end model of the chosen framing, deterministic where possible.
