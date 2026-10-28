@@ -86,7 +86,8 @@ data archived, and the human–AI correspondence record published alongside.
 - Barry W. Brook: originator, scientific adviser and final reviewer.
 - Claude Opus 5.5 (Anthropic, `claude-opus-5-5`) in Claude Code: orchestration, programme
   design, synthesis, framings, tooling.
-- Claude Sonnet 5.5 (Anthropic) subagents: literature research and first drafts of taxon cards,
+- Claude Sonnet 5.5 (Anthropic) subagents: the F3 simulator, estimators, sketch and recovery study
+  (`models/f3/`), with a second Sonnet agent reviewing; literature research and first drafts of taxon cards,
   the primer (including its biological-transitions section, 2026-10-28), the precedents review and
   the rejected-records note; adjudication of audit findings
   against the sources and the resulting corrections; blind audits.
@@ -100,7 +101,11 @@ data archived, and the human–AI correspondence record published alongside.
   - extraction of post-2006 spore assemblages;
   - the Model transfer retrofit of 59 cards, with a consistency review of them;
   - cross-family audits of the new cards and of the primer revision;
-  - one card draft for a bake-off.
+  - one card draft for a bake-off;
+  - the Loop 1 occurrence tail (Wellman et al. 2022 table, literature readings for both channels);
+  - extraction of 232 quotation-verified findings from the closed papers on the pivotal records,
+    adjudicated by Claude Opus 5.5 (`work/codex/loop1b/`), and the Cambrian age, location and
+    vetting jobs for the widened Palynodata window (2026-10-28).
 - OpenAI Codex (OpenAI, Codex desktop; exact model version not exposed in this session):
   private reading portal and taxon atlas, source-preserving rendering, image sourcing,
   independent implementation review and browser checks (2026-10-27); browser acquisition and

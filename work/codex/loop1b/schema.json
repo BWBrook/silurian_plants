@@ -1,0 +1,43 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["items", "recommendations"],
+  "properties": {
+    "items": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["finding_id", "file", "pdf_page", "printed_page", "obs_ids", "topic", "claim", "quote", "bears_on", "effect", "comment"],
+        "properties": {
+          "finding_id": {"type": "string"},
+          "file": {"type": "string"},
+          "pdf_page": {"type": "integer"},
+          "printed_page": {"type": "string"},
+          "obs_ids": {"type": "array", "items": {"type": "string"}},
+          "topic": {"type": "string", "enum": ["identity", "affinity", "age", "age_basis", "locality", "stratigraphic_relation", "tracheids", "reworking_or_contamination", "sampling_effort", "barren_samples", "provenance_of_claim", "other"]},
+          "claim": {"type": "string"},
+          "quote": {"type": "string"},
+          "bears_on": {"type": "string"},
+          "effect": {"type": "string", "enum": ["supports", "contradicts", "qualifies", "new_reading", "corrects_record", "none"]},
+          "comment": {"type": "string"}
+        }
+      }
+    },
+    "recommendations": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["obs_id", "action", "detail", "finding_ids", "confidence"],
+        "properties": {
+          "obs_id": {"type": "string"},
+          "action": {"type": "string", "enum": ["no_change", "correct_observation_field", "correct_interpretation_field", "add_interpretation", "change_main_reading", "upgrade_checked", "new_observation", "uncertain"]},
+          "detail": {"type": "string"},
+          "finding_ids": {"type": "array", "items": {"type": "string"}},
+          "confidence": {"type": "string", "enum": ["high", "medium", "low"]}
+        }
+      }
+    }
+  }
+}

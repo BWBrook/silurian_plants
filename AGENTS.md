@@ -13,8 +13,8 @@ authorised. Other framings need their own decision before model code starts.
   is generated.
 - `docs/`: charter, decisions, primer, precedents review, candidate framings, the source register
   (`docs/sources.md`, the index of all data held and needed: update it when a source changes),
-  the spore-compilation plan, the plan for the first deliverable (`docs/plan-f3.md`), the
-  questions register (`docs/questions.md`), and
+  the spore-compilation plan, the plan for the first deliverable (`docs/plan-f3.md`) and its proposed reshaping
+  (`docs/f3-shape.md`), the questions register (`docs/questions.md`), and
   `docs/rejected-records.md` (rejected, reassigned and disputed
   early land-plant records, for the observation model).
 - `data/timescale.csv`: ICS v2024/12 stage base ages, the single source of numerical ages.

@@ -1,7 +1,8 @@
 # Evidence base: source register
 
 The index of the data the project holds and the data it still needs, for the window 485–383 Ma,
-with Frasnian–Famennian anchors where noted. Status as of 2026-10-27, after EPRP tranche 2. Update
+with Frasnian–Famennian anchors where noted, and Cambrian palynological effort as the control on
+spore first appearances (from 2026-10-28). Status as of 2026-10-27, after EPRP tranche 2. Update
 this file whenever a source is added, extracted or ruled out. A gap that bears on a question names its ID
 in `docs/questions.md`.
 
@@ -28,7 +29,7 @@ says otherwise (`AGENTS.md`); check individual snapshots before use. New raw pul
 | PBDB anchors, Frasnian–Famennian | 163 occurrences (*Archaeopteris*, *Callixylon*, *Eospermatopteris*, *Elkinsia*) | held | `data/eprp/record/` | CC0 |
 | PBDB taxa and opinions | window subsets (413 taxa, 653 opinions) tracked; whole plant tree local | held / local | `data/eprp/record/`, `data/eprp/local/record/` | CC0 |
 | PBDB specimens and measurements | none links to a window plant occurrence: plant sizes must come from the literature | held (as a negative result) | `data/eprp/record/` | CC0 |
-| Palynodata 2006 | 76,351 window rows (14,114 spore, 41,483 acritarch, 17,018 chitinozoan) from 2,511 documents; literature to 2006, 2006-era ages, no coordinates | held | `data/external/spores/` | OGL-Canada |
+| Palynodata 2006 | 109,687 window rows to 600 Ma on Palynodata's timescale, widened 2026-10-28 to take in the Cambrian and Tremadoc-only documents (14,629 spore, 69,483 acritarch, 17,254 chitinozoan) from 3,540 documents; literature to 2006, 2006-era ages, no coordinates | held | `data/external/spores/` | OGL-Canada |
 | Wellman, Steemans & Vecoli 2013 supplement | Ordovician–Silurian spore assemblages (abridged PDF) | held | `data/external/spores/` | CC BY 4.0; full database on request (Barry's decision) |
 | Loop 1 occurrence tail (`data/occurrences/`) | observations, competing interpretations and sources for the oldest records of E1–E5 (229 observations, 324 readings), and an effort layer | held | `data/occurrences/` | derived; see its README |
 | PBDB collections, all taxa, Darriwilian–Emsian | 27,830 collections, the effort layer for body fossils; snapshot 2026-10-28 | local (raw) | `data/occurrences/raw/` (git-ignored) | CC0 |

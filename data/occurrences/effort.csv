@@ -200,7 +200,14 @@ body,unknown,Pridoli,422.70,"PBDB collections, all taxa, apportioned by age over
 body,unknown,Lochkovian,419.62,"PBDB collections, all taxa, apportioned by age overlap",0.00,0.00,1.91,0.00,,
 body,unknown,Pragian,413.02,"PBDB collections, all taxa, apportioned by age overlap",0.00,0.00,0.08,0.00,,
 body,unknown,Emsian,410.62,"PBDB collections, all taxa, apportioned by age overlap",0.00,0.00,2.59,0.00,,
-spore,Avalonia,Tremadocian,486.85,Palynodata documents with datable palynomorph records (to 2006),,,,,20,0
+spore,Avalonia,Stage 4,514.50,Palynodata documents with datable palynomorph records (to 2006),,,,,12,0
+spore,Avalonia,Wuliuan,506.50,Palynodata documents with datable palynomorph records (to 2006),,,,,12,0
+spore,Avalonia,Drumian,504.50,Palynodata documents with datable palynomorph records (to 2006),,,,,12,0
+spore,Avalonia,Guzhangian,500.50,Palynodata documents with datable palynomorph records (to 2006),,,,,13,0
+spore,Avalonia,Paibian,497.00,Palynodata documents with datable palynomorph records (to 2006),,,,,24,0
+spore,Avalonia,Jiangshanian,494.20,Palynodata documents with datable palynomorph records (to 2006),,,,,24,0
+spore,Avalonia,Stage 10,491.00,Palynodata documents with datable palynomorph records (to 2006),,,,,24,0
+spore,Avalonia,Tremadocian,486.85,Palynodata documents with datable palynomorph records (to 2006),,,,,63,1
 spore,Avalonia,Floian,477.10,Palynodata documents with datable palynomorph records (to 2006),,,,,44,0
 spore,Avalonia,Dapingian,471.30,Palynodata documents with datable palynomorph records (to 2006),,,,,45,0
 spore,Avalonia,Darriwilian,469.40,Palynodata documents with datable palynomorph records (to 2006),,,,,64,0
@@ -218,7 +225,14 @@ spore,Avalonia,Pridoli,422.70,Palynodata documents with datable palynomorph reco
 spore,Avalonia,Lochkovian,419.62,Palynodata documents with datable palynomorph records (to 2006),,,,,58,48
 spore,Avalonia,Pragian,413.02,Palynodata documents with datable palynomorph records (to 2006),,,,,27,22
 spore,Avalonia,Emsian,410.62,Palynodata documents with datable palynomorph records (to 2006),,,,,23,19
-spore,Baltica,Tremadocian,486.85,Palynodata documents with datable palynomorph records (to 2006),,,,,63,1
+spore,Baltica,Stage 4,514.50,Palynodata documents with datable palynomorph records (to 2006),,,,,71,1
+spore,Baltica,Wuliuan,506.50,Palynodata documents with datable palynomorph records (to 2006),,,,,71,1
+spore,Baltica,Drumian,504.50,Palynodata documents with datable palynomorph records (to 2006),,,,,71,1
+spore,Baltica,Guzhangian,500.50,Palynodata documents with datable palynomorph records (to 2006),,,,,73,1
+spore,Baltica,Paibian,497.00,Palynodata documents with datable palynomorph records (to 2006),,,,,64,1
+spore,Baltica,Jiangshanian,494.20,Palynodata documents with datable palynomorph records (to 2006),,,,,64,1
+spore,Baltica,Stage 10,491.00,Palynodata documents with datable palynomorph records (to 2006),,,,,65,1
+spore,Baltica,Tremadocian,486.85,Palynodata documents with datable palynomorph records (to 2006),,,,,108,1
 spore,Baltica,Floian,477.10,Palynodata documents with datable palynomorph records (to 2006),,,,,91,1
 spore,Baltica,Dapingian,471.30,Palynodata documents with datable palynomorph records (to 2006),,,,,135,2
 spore,Baltica,Darriwilian,469.40,Palynodata documents with datable palynomorph records (to 2006),,,,,138,2
@@ -236,6 +250,12 @@ spore,Baltica,Pridoli,422.70,Palynodata documents with datable palynomorph recor
 spore,Baltica,Lochkovian,419.62,Palynodata documents with datable palynomorph records (to 2006),,,,,22,15
 spore,Baltica,Pragian,413.02,Palynodata documents with datable palynomorph records (to 2006),,,,,11,9
 spore,Baltica,Emsian,410.62,Palynodata documents with datable palynomorph records (to 2006),,,,,11,9
+spore,Gondwana-Australia-Antarctica,Stage 2,529.00,Palynodata documents with datable palynomorph records (to 2006),,,,,2,0
+spore,Gondwana-Australia-Antarctica,Stage 3,521.00,Palynodata documents with datable palynomorph records (to 2006),,,,,1,0
+spore,Gondwana-Australia-Antarctica,Stage 4,514.50,Palynodata documents with datable palynomorph records (to 2006),,,,,3,0
+spore,Gondwana-Australia-Antarctica,Wuliuan,506.50,Palynodata documents with datable palynomorph records (to 2006),,,,,2,0
+spore,Gondwana-Australia-Antarctica,Drumian,504.50,Palynodata documents with datable palynomorph records (to 2006),,,,,2,0
+spore,Gondwana-Australia-Antarctica,Guzhangian,500.50,Palynodata documents with datable palynomorph records (to 2006),,,,,2,0
 spore,Gondwana-Australia-Antarctica,Tremadocian,486.85,Palynodata documents with datable palynomorph records (to 2006),,,,,7,0
 spore,Gondwana-Australia-Antarctica,Floian,477.10,Palynodata documents with datable palynomorph records (to 2006),,,,,15,0
 spore,Gondwana-Australia-Antarctica,Dapingian,471.30,Palynodata documents with datable palynomorph records (to 2006),,,,,19,0
@@ -245,7 +265,14 @@ spore,Gondwana-Australia-Antarctica,Sheinwoodian,432.90,Palynodata documents wit
 spore,Gondwana-Australia-Antarctica,Homerian,430.60,Palynodata documents with datable palynomorph records (to 2006),,,,,1,0
 spore,Gondwana-Australia-Antarctica,Lochkovian,419.62,Palynodata documents with datable palynomorph records (to 2006),,,,,1,0
 spore,Gondwana-Australia-Antarctica,Pragian,413.02,Palynodata documents with datable palynomorph records (to 2006),,,,,1,0
-spore,Gondwana-North-Africa-Arabia,Tremadocian,486.85,Palynodata documents with datable palynomorph records (to 2006),,,,,13,0
+spore,Gondwana-North-Africa-Arabia,Stage 4,514.50,Palynodata documents with datable palynomorph records (to 2006),,,,,12,0
+spore,Gondwana-North-Africa-Arabia,Wuliuan,506.50,Palynodata documents with datable palynomorph records (to 2006),,,,,12,0
+spore,Gondwana-North-Africa-Arabia,Drumian,504.50,Palynodata documents with datable palynomorph records (to 2006),,,,,12,0
+spore,Gondwana-North-Africa-Arabia,Guzhangian,500.50,Palynodata documents with datable palynomorph records (to 2006),,,,,12,0
+spore,Gondwana-North-Africa-Arabia,Paibian,497.00,Palynodata documents with datable palynomorph records (to 2006),,,,,14,0
+spore,Gondwana-North-Africa-Arabia,Jiangshanian,494.20,Palynodata documents with datable palynomorph records (to 2006),,,,,14,0
+spore,Gondwana-North-Africa-Arabia,Stage 10,491.00,Palynodata documents with datable palynomorph records (to 2006),,,,,14,0
+spore,Gondwana-North-Africa-Arabia,Tremadocian,486.85,Palynodata documents with datable palynomorph records (to 2006),,,,,65,1
 spore,Gondwana-North-Africa-Arabia,Floian,477.10,Palynodata documents with datable palynomorph records (to 2006),,,,,52,1
 spore,Gondwana-North-Africa-Arabia,Dapingian,471.30,Palynodata documents with datable palynomorph records (to 2006),,,,,62,1
 spore,Gondwana-North-Africa-Arabia,Darriwilian,469.40,Palynodata documents with datable palynomorph records (to 2006),,,,,78,5
@@ -263,7 +290,10 @@ spore,Gondwana-North-Africa-Arabia,Pridoli,422.70,Palynodata documents with data
 spore,Gondwana-North-Africa-Arabia,Lochkovian,419.62,Palynodata documents with datable palynomorph records (to 2006),,,,,37,16
 spore,Gondwana-North-Africa-Arabia,Pragian,413.02,Palynodata documents with datable palynomorph records (to 2006),,,,,16,10
 spore,Gondwana-North-Africa-Arabia,Emsian,410.62,Palynodata documents with datable palynomorph records (to 2006),,,,,12,8
-spore,Gondwana-South-America,Tremadocian,486.85,Palynodata documents with datable palynomorph records (to 2006),,,,,3,0
+spore,Gondwana-South-America,Paibian,497.00,Palynodata documents with datable palynomorph records (to 2006),,,,,2,0
+spore,Gondwana-South-America,Jiangshanian,494.20,Palynodata documents with datable palynomorph records (to 2006),,,,,2,0
+spore,Gondwana-South-America,Stage 10,491.00,Palynodata documents with datable palynomorph records (to 2006),,,,,2,0
+spore,Gondwana-South-America,Tremadocian,486.85,Palynodata documents with datable palynomorph records (to 2006),,,,,11,0
 spore,Gondwana-South-America,Floian,477.10,Palynodata documents with datable palynomorph records (to 2006),,,,,14,3
 spore,Gondwana-South-America,Dapingian,471.30,Palynodata documents with datable palynomorph records (to 2006),,,,,10,1
 spore,Gondwana-South-America,Darriwilian,469.40,Palynodata documents with datable palynomorph records (to 2006),,,,,17,2
@@ -281,6 +311,10 @@ spore,Gondwana-South-America,Pridoli,422.70,Palynodata documents with datable pa
 spore,Gondwana-South-America,Lochkovian,419.62,Palynodata documents with datable palynomorph records (to 2006),,,,,17,4
 spore,Gondwana-South-America,Pragian,413.02,Palynodata documents with datable palynomorph records (to 2006),,,,,9,1
 spore,Gondwana-South-America,Emsian,410.62,Palynodata documents with datable palynomorph records (to 2006),,,,,7,1
+spore,Gondwana-other,Paibian,497.00,Palynodata documents with datable palynomorph records (to 2006),,,,,10,3
+spore,Gondwana-other,Jiangshanian,494.20,Palynodata documents with datable palynomorph records (to 2006),,,,,10,3
+spore,Gondwana-other,Stage 10,491.00,Palynodata documents with datable palynomorph records (to 2006),,,,,10,3
+spore,Gondwana-other,Tremadocian,486.85,Palynodata documents with datable palynomorph records (to 2006),,,,,3,0
 spore,Gondwana-other,Floian,477.10,Palynodata documents with datable palynomorph records (to 2006),,,,,4,0
 spore,Gondwana-other,Dapingian,471.30,Palynodata documents with datable palynomorph records (to 2006),,,,,4,0
 spore,Gondwana-other,Darriwilian,469.40,Palynodata documents with datable palynomorph records (to 2006),,,,,5,0
@@ -295,7 +329,14 @@ spore,Gondwana-other,Homerian,430.60,Palynodata documents with datable palynomor
 spore,Gondwana-other,Gorstian,426.70,Palynodata documents with datable palynomorph records (to 2006),,,,,8,2
 spore,Gondwana-other,Ludfordian,425.00,Palynodata documents with datable palynomorph records (to 2006),,,,,9,2
 spore,Gondwana-other,Pridoli,422.70,Palynodata documents with datable palynomorph records (to 2006),,,,,6,2
-spore,Kazakhstania,Tremadocian,486.85,Palynodata documents with datable palynomorph records (to 2006),,,,,2,0
+spore,Kazakhstania,Stage 4,514.50,Palynodata documents with datable palynomorph records (to 2006),,,,,4,0
+spore,Kazakhstania,Wuliuan,506.50,Palynodata documents with datable palynomorph records (to 2006),,,,,4,0
+spore,Kazakhstania,Drumian,504.50,Palynodata documents with datable palynomorph records (to 2006),,,,,4,0
+spore,Kazakhstania,Guzhangian,500.50,Palynodata documents with datable palynomorph records (to 2006),,,,,4,0
+spore,Kazakhstania,Paibian,497.00,Palynodata documents with datable palynomorph records (to 2006),,,,,1,0
+spore,Kazakhstania,Jiangshanian,494.20,Palynodata documents with datable palynomorph records (to 2006),,,,,1,0
+spore,Kazakhstania,Stage 10,491.00,Palynodata documents with datable palynomorph records (to 2006),,,,,1,0
+spore,Kazakhstania,Tremadocian,486.85,Palynodata documents with datable palynomorph records (to 2006),,,,,4,0
 spore,Kazakhstania,Floian,477.10,Palynodata documents with datable palynomorph records (to 2006),,,,,3,0
 spore,Kazakhstania,Dapingian,471.30,Palynodata documents with datable palynomorph records (to 2006),,,,,5,0
 spore,Kazakhstania,Darriwilian,469.40,Palynodata documents with datable palynomorph records (to 2006),,,,,4,0
@@ -309,7 +350,16 @@ spore,Kazakhstania,Ludfordian,425.00,Palynodata documents with datable palynomor
 spore,Kazakhstania,Lochkovian,419.62,Palynodata documents with datable palynomorph records (to 2006),,,,,2,2
 spore,Kazakhstania,Pragian,413.02,Palynodata documents with datable palynomorph records (to 2006),,,,,2,2
 spore,Kazakhstania,Emsian,410.62,Palynodata documents with datable palynomorph records (to 2006),,,,,2,2
-spore,Laurentia,Tremadocian,486.85,Palynodata documents with datable palynomorph records (to 2006),,,,,10,1
+spore,Laurentia,Stage 2,529.00,Palynodata documents with datable palynomorph records (to 2006),,,,,1,0
+spore,Laurentia,Stage 3,521.00,Palynodata documents with datable palynomorph records (to 2006),,,,,1,0
+spore,Laurentia,Stage 4,514.50,Palynodata documents with datable palynomorph records (to 2006),,,,,10,0
+spore,Laurentia,Wuliuan,506.50,Palynodata documents with datable palynomorph records (to 2006),,,,,10,0
+spore,Laurentia,Drumian,504.50,Palynodata documents with datable palynomorph records (to 2006),,,,,10,0
+spore,Laurentia,Guzhangian,500.50,Palynodata documents with datable palynomorph records (to 2006),,,,,10,0
+spore,Laurentia,Paibian,497.00,Palynodata documents with datable palynomorph records (to 2006),,,,,14,0
+spore,Laurentia,Jiangshanian,494.20,Palynodata documents with datable palynomorph records (to 2006),,,,,14,0
+spore,Laurentia,Stage 10,491.00,Palynodata documents with datable palynomorph records (to 2006),,,,,14,0
+spore,Laurentia,Tremadocian,486.85,Palynodata documents with datable palynomorph records (to 2006),,,,,21,1
 spore,Laurentia,Floian,477.10,Palynodata documents with datable palynomorph records (to 2006),,,,,22,1
 spore,Laurentia,Dapingian,471.30,Palynodata documents with datable palynomorph records (to 2006),,,,,50,3
 spore,Laurentia,Darriwilian,469.40,Palynodata documents with datable palynomorph records (to 2006),,,,,59,2
@@ -327,7 +377,7 @@ spore,Laurentia,Pridoli,422.70,Palynodata documents with datable palynomorph rec
 spore,Laurentia,Lochkovian,419.62,Palynodata documents with datable palynomorph records (to 2006),,,,,54,30
 spore,Laurentia,Pragian,413.02,Palynodata documents with datable palynomorph records (to 2006),,,,,29,22
 spore,Laurentia,Emsian,410.62,Palynodata documents with datable palynomorph records (to 2006),,,,,22,18
-spore,North-China,Tremadocian,486.85,Palynodata documents with datable palynomorph records (to 2006),,,,,2,0
+spore,North-China,Tremadocian,486.85,Palynodata documents with datable palynomorph records (to 2006),,,,,4,0
 spore,North-China,Floian,477.10,Palynodata documents with datable palynomorph records (to 2006),,,,,4,0
 spore,North-China,Dapingian,471.30,Palynodata documents with datable palynomorph records (to 2006),,,,,5,0
 spore,North-China,Darriwilian,469.40,Palynodata documents with datable palynomorph records (to 2006),,,,,4,0
@@ -336,6 +386,14 @@ spore,North-China,Hirnantian,445.20,Palynodata documents with datable palynomorp
 spore,North-China,Rhuddanian,443.10,Palynodata documents with datable palynomorph records (to 2006),,,,,1,0
 spore,North-China,Aeronian,440.50,Palynodata documents with datable palynomorph records (to 2006),,,,,1,0
 spore,North-China,Telychian,438.60,Palynodata documents with datable palynomorph records (to 2006),,,,,1,0
+spore,Siberia,Stage 2,529.00,Palynodata documents with datable palynomorph records (to 2006),,,,,2,0
+spore,Siberia,Stage 4,514.50,Palynodata documents with datable palynomorph records (to 2006),,,,,3,0
+spore,Siberia,Wuliuan,506.50,Palynodata documents with datable palynomorph records (to 2006),,,,,3,0
+spore,Siberia,Drumian,504.50,Palynodata documents with datable palynomorph records (to 2006),,,,,3,0
+spore,Siberia,Guzhangian,500.50,Palynodata documents with datable palynomorph records (to 2006),,,,,3,0
+spore,Siberia,Paibian,497.00,Palynodata documents with datable palynomorph records (to 2006),,,,,3,0
+spore,Siberia,Jiangshanian,494.20,Palynodata documents with datable palynomorph records (to 2006),,,,,3,0
+spore,Siberia,Stage 10,491.00,Palynodata documents with datable palynomorph records (to 2006),,,,,3,0
 spore,Siberia,Tremadocian,486.85,Palynodata documents with datable palynomorph records (to 2006),,,,,2,0
 spore,Siberia,Floian,477.10,Palynodata documents with datable palynomorph records (to 2006),,,,,2,0
 spore,Siberia,Dapingian,471.30,Palynodata documents with datable palynomorph records (to 2006),,,,,3,1
@@ -352,7 +410,14 @@ spore,Siberia,Gorstian,426.70,Palynodata documents with datable palynomorph reco
 spore,Siberia,Ludfordian,425.00,Palynodata documents with datable palynomorph records (to 2006),,,,,3,2
 spore,Siberia,Pridoli,422.70,Palynodata documents with datable palynomorph records (to 2006),,,,,1,1
 spore,Siberia,Lochkovian,419.62,Palynodata documents with datable palynomorph records (to 2006),,,,,1,0
-spore,South-China,Tremadocian,486.85,Palynodata documents with datable palynomorph records (to 2006),,,,,7,0
+spore,South-China,Stage 4,514.50,Palynodata documents with datable palynomorph records (to 2006),,,,,1,0
+spore,South-China,Wuliuan,506.50,Palynodata documents with datable palynomorph records (to 2006),,,,,1,0
+spore,South-China,Drumian,504.50,Palynodata documents with datable palynomorph records (to 2006),,,,,1,0
+spore,South-China,Guzhangian,500.50,Palynodata documents with datable palynomorph records (to 2006),,,,,1,0
+spore,South-China,Paibian,497.00,Palynodata documents with datable palynomorph records (to 2006),,,,,1,0
+spore,South-China,Jiangshanian,494.20,Palynodata documents with datable palynomorph records (to 2006),,,,,1,0
+spore,South-China,Stage 10,491.00,Palynodata documents with datable palynomorph records (to 2006),,,,,1,0
+spore,South-China,Tremadocian,486.85,Palynodata documents with datable palynomorph records (to 2006),,,,,13,0
 spore,South-China,Floian,477.10,Palynodata documents with datable palynomorph records (to 2006),,,,,29,0
 spore,South-China,Dapingian,471.30,Palynodata documents with datable palynomorph records (to 2006),,,,,27,0
 spore,South-China,Darriwilian,469.40,Palynodata documents with datable palynomorph records (to 2006),,,,,25,0
@@ -369,7 +434,16 @@ spore,South-China,Pridoli,422.70,Palynodata documents with datable palynomorph r
 spore,South-China,Lochkovian,419.62,Palynodata documents with datable palynomorph records (to 2006),,,,,5,5
 spore,South-China,Pragian,413.02,Palynodata documents with datable palynomorph records (to 2006),,,,,3,3
 spore,South-China,Emsian,410.62,Palynodata documents with datable palynomorph records (to 2006),,,,,1,0
-spore,multiple,Tremadocian,486.85,Palynodata documents with datable palynomorph records (to 2006),,,,,38,0
+spore,multiple,Stage 2,529.00,Palynodata documents with datable palynomorph records (to 2006),,,,,1,0
+spore,multiple,Stage 3,521.00,Palynodata documents with datable palynomorph records (to 2006),,,,,1,0
+spore,multiple,Stage 4,514.50,Palynodata documents with datable palynomorph records (to 2006),,,,,36,0
+spore,multiple,Wuliuan,506.50,Palynodata documents with datable palynomorph records (to 2006),,,,,36,0
+spore,multiple,Drumian,504.50,Palynodata documents with datable palynomorph records (to 2006),,,,,36,0
+spore,multiple,Guzhangian,500.50,Palynodata documents with datable palynomorph records (to 2006),,,,,36,0
+spore,multiple,Paibian,497.00,Palynodata documents with datable palynomorph records (to 2006),,,,,33,1
+spore,multiple,Jiangshanian,494.20,Palynodata documents with datable palynomorph records (to 2006),,,,,33,1
+spore,multiple,Stage 10,491.00,Palynodata documents with datable palynomorph records (to 2006),,,,,33,1
+spore,multiple,Tremadocian,486.85,Palynodata documents with datable palynomorph records (to 2006),,,,,74,1
 spore,multiple,Floian,477.10,Palynodata documents with datable palynomorph records (to 2006),,,,,80,0
 spore,multiple,Dapingian,471.30,Palynodata documents with datable palynomorph records (to 2006),,,,,89,2
 spore,multiple,Darriwilian,469.40,Palynodata documents with datable palynomorph records (to 2006),,,,,90,3
@@ -387,7 +461,15 @@ spore,multiple,Pridoli,422.70,Palynodata documents with datable palynomorph reco
 spore,multiple,Lochkovian,419.62,Palynodata documents with datable palynomorph records (to 2006),,,,,30,17
 spore,multiple,Pragian,413.02,Palynodata documents with datable palynomorph records (to 2006),,,,,19,10
 spore,multiple,Emsian,410.62,Palynodata documents with datable palynomorph records (to 2006),,,,,18,10
-spore,peri-Gondwana-Europe,Tremadocian,486.85,Palynodata documents with datable palynomorph records (to 2006),,,,,13,0
+spore,peri-Gondwana-Europe,Stage 3,521.00,Palynodata documents with datable palynomorph records (to 2006),,,,,1,0
+spore,peri-Gondwana-Europe,Stage 4,514.50,Palynodata documents with datable palynomorph records (to 2006),,,,,23,1
+spore,peri-Gondwana-Europe,Wuliuan,506.50,Palynodata documents with datable palynomorph records (to 2006),,,,,22,1
+spore,peri-Gondwana-Europe,Drumian,504.50,Palynodata documents with datable palynomorph records (to 2006),,,,,22,1
+spore,peri-Gondwana-Europe,Guzhangian,500.50,Palynodata documents with datable palynomorph records (to 2006),,,,,22,1
+spore,peri-Gondwana-Europe,Paibian,497.00,Palynodata documents with datable palynomorph records (to 2006),,,,,17,1
+spore,peri-Gondwana-Europe,Jiangshanian,494.20,Palynodata documents with datable palynomorph records (to 2006),,,,,17,1
+spore,peri-Gondwana-Europe,Stage 10,491.00,Palynodata documents with datable palynomorph records (to 2006),,,,,17,1
+spore,peri-Gondwana-Europe,Tremadocian,486.85,Palynodata documents with datable palynomorph records (to 2006),,,,,43,3
 spore,peri-Gondwana-Europe,Floian,477.10,Palynodata documents with datable palynomorph records (to 2006),,,,,45,2
 spore,peri-Gondwana-Europe,Dapingian,471.30,Palynodata documents with datable palynomorph records (to 2006),,,,,46,3
 spore,peri-Gondwana-Europe,Darriwilian,469.40,Palynodata documents with datable palynomorph records (to 2006),,,,,71,3

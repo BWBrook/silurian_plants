@@ -1,0 +1,1 @@
+codex-delegate: cambrian-locations ok in 55s, 193423 in (150272 cached), 4092 out tokens -> /Users/bwbrook/papers/silurian_plants/data/spores/work/codex/cambrian/location_out.json

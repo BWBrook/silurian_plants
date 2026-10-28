@@ -38,24 +38,33 @@ Palynodata's own age table. It has no coordinates.
 
 | File | Rows | Contents |
 | --- | ---: | --- |
-| `palynodata_taxon_window.csv` | 76,351 | Every `TAXON` row in the window, all microfossil types, all original columns, plus `derived_` columns |
-| `palynodata_documents_window.csv` | 2,511 | `NewEng` citations for every document with a window row (title, authors, year, journal, pages, global age, lithology, location), plus window row counts by type and `derived_window_has_spores` |
-| `palynodata_lithostr_window.csv` | 2,817 | Formations named by those documents (`LITHOSTR`) |
+| `palynodata_taxon_window.csv` | 109,687 | Every `TAXON` row in the window, all microfossil types, all original columns, plus `derived_` columns |
+| `palynodata_documents_window.csv` | 3,540 | `NewEng` citations for every document with a window row (title, authors, year, journal, pages, global age, lithology, location), plus window row counts by type and `derived_window_has_spores` |
+| `palynodata_lithostr_window.csv` | 4,015 | Formations named by those documents (`LITHOSTR`) |
 | `palynodata_theagetable.csv`, `palynodata_agetable.csv`, `palynodata_age_change.csv` | 2,132; 2,117; 2,113 | Palynodata's age-name tables, needed to read its ages |
 | `palynodata_taxloc.csv` | 1,056 | Location names |
 | `palynodata_codes.csv` | 36 | Code meanings for `TMIC`, `TIDR`, `TNEW`, `TNEWC`, `TEME` and `TSYN`, from the release's `DESCRIPT.HTM` |
 | `palynodata_release/` | 9 files | Release readme, licence, citation, metadata and field descriptions |
 
 **Window rule.** A row is in the window if its numeric range (`agestart`, `ageend`) overlaps
-383–485 Ma (76,336 rows), or if it has no numeric age and its age names match a window term
-(15 rows; `derived_window_basis` says which). Rows with broad ages such as "Paleozoic" are included;
-`derived_span_myr` and `derived_fully_inside_window` let them be filtered.
+383–600 Ma on Palynodata's own timescale (109,659 rows), or if it has no numeric age and its age
+names match a window term (28 rows; `derived_window_basis` says which). Rows with broad ages such as
+"Paleozoic" are included; `derived_span_myr` and `derived_fully_inside_window` let them be filtered.
 
-**Counts in the window.** By `TMIC`: acritarchs 41,483; chitinozoans 17,018; spores or pollen
-14,114; scolecodonts 2,581; algae 361; dinoflagellates 325; other 194; fungal spores 113; unknown
-affinity 88; plants 69; others 5. Of the 2,511 documents, 985 report spores and 1,526 report only
-other palynomorphs. Ordovician-labelled spore rows: 738 from 135 documents, mostly Ashgill and
-Caradoc.
+**Window widened 2026-10-28** (Claude Opus 5.5) from 383–485 Ma to 383–600 Ma, for the
+pre-Ordovician control on spore first appearances (`docs/plan-f3.md`, second amendment).
+Palynodata's table places the Tremadoc at about 505–490 Ma and the Cambrian at about 570–505 Ma, so
+the old 485 Ma edge dropped every Tremadoc-only document as well as the Cambrian. The widening kept
+every earlier row and added 33,336 rows from 1,338 documents (157 of them with spore rows).
+
+**Counts in the window (2026-10-27 extract, 383–485 Ma).** By `TMIC`: acritarchs 41,483;
+chitinozoans 17,018; spores or pollen 14,114; scolecodonts 2,581; algae 361; dinoflagellates 325;
+other 194; fungal spores 113; unknown affinity 88; plants 69; others 5. Of the 2,511 documents, 985
+report spores and 1,526 report only other palynomorphs. Ordovician-labelled spore rows: 738 from 135
+documents, mostly Ashgill and Caradoc. **After the widening:** acritarchs 69,483; chitinozoans
+17,254; spores or pollen 14,629; algae 3,565; scolecodonts 2,621; other 781; fungal spores 484;
+dinoflagellates 409; unknown affinity 376; plants 69; others 16. Of 3,540 documents, 1,117 have
+spore rows.
 
 ## Read before use
 

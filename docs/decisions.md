@@ -3,6 +3,20 @@
 Dated record of decisions that shape the programme. Newest first. Say who decided, and quote
 Barry exactly (with source) or label a paraphrase.
 
+## 2026-10-28: pivotal records rechecked; Cambrian effort added
+
+- **Pivotal records against full texts** (Barry obtained eight of nine closed papers and three partial sources on Yea; Codex `gpt-6.1-sol` extracted 232 findings, every quotation verified by script; Claude Opus 5.5 adjudicated; `work/codex/loop1b/README.md`).
+  - **Yea, eastern localities: main reading changed** (Claude). The Early Devonian baseline was a repository convention. No published work demonstrates it for Ghin Ghin Loc. 1 or Limestone Road Loc. 4, and none establishes the Gorstian beyond dispute: the Loc. 1 graptolite identification is contested (Earp's unreviewed 2023 draft), and the correctly identified Gorstian graptolites at Loc. 4 came from a spoil heap. The main reading is now "unresolved, Gorstian to Emsian". The Pridoli horizon B2, 67 m higher, is a separate observation. Under the main reading, E5 is certain from the Pridoli and possible from the Gorstian; accepting the Yea graptolites moves the certain age 5.4 Myr older (`models/f3/out/naive_pivotal.csv`). Rejected-records entry 17 gives both sides and what would settle it.
+  - **Bolivian *Cooksonia*** (Claude): a branched axis with three terminal sporangia (Morel et al. 1995), so it counts for E3 whatever its lycophyte affinity. It is younger than the Homerian first appearance, so E3 does not move.
+  - **Argentine Dapingian cryptospores:** Strother et al.'s (2015) specimen-level argument is now recorded beside Rubinstein et al.'s (2010) claim (entry 16). The main reading, not established, stands. A palynologist's check of the figured tetrad would settle it (consult flag; Barry's decision).
+  - **Unchanged, now on full texts:** Capel Horeb (tracheids from an unbranched sterile axis, lower Whitcliffian), *Pinnatiramosus* (Edwards et al. 2007 add an intermediate younger-roots reading), Zbrza (Hirnantian on chitinozoans from the plant layer; no tracheids), Hanadir (Darriwilian), and the Canning Basin Tremadocian assemblage (two samples, one borehole, conodont-dated; read by its authors as charophyte).
+- **Cambrian effort** (Claude, under the adopted amendment). The Palynodata extract was widened from 485 to 600 Ma on Palynodata's own timescale. The old edge dropped Tremadoc-only papers, which Palynodata dates at about 505–490 Ma. Tremadocian effort rises from 180 to 418 documents. The Middle and Late Cambrian gain about 175–185 documents per stage. Early Cambrian papers fall outside the 25 Myr dating rule. Cambrian age names were re-crosswalked (Codex `gpt-6.1-sol` with sources; 71 names) and 78 new locations mapped (Codex `gpt-6.1-terra`), all reviewed by Claude. No usable Ordovician–Devonian spore record changed.
+
+## 2026-10-28: second amendment adopted; F3 reassessed
+
+- **Second amendment adopted** (Barry, chat, 2026-10-28: "Yes, agreed, adopt it"). `docs/plan-f3.md`, step 3: the older limit is judged and reported, an interval counts only if it is informative, the capacity-profiled logistic fit is primary, spore effort and the tail extend through the Cambrian, and a test against mismeasured effort comes before any real-data verdict.
+- **Shape of F3 reassessed** (Barry asked: "Then let's re-assess the full shape of F3 given this constraint"; Claude Opus 5.5 proposed; awaiting Barry). `docs/f3-shape.md` proposes that F3 test the fossil-absence maxima behind the clock results (515.5, 459.1 and 431.2 Ma) rather than estimate origination windows, using a non-parametric abundance envelope over the empty, sampled stages; E4 and E5 become synthesis only, E6 is parked under Q4 and E7 moves to Q3.
+
 ## 2026-10-28: Loop 1, step 3 (recovery study)
 
 - **Recovery study** (`models/f3/`; written by a Claude Sonnet 5.5 agent, reviewed by a second Sonnet agent, checked by Claude Opus 5.5).
@@ -10,7 +24,7 @@ Barry exactly (with source) or label a paraphrase.
   - The capacity-profiled logistic fit's older limit is usable.
   - Exponential growth leaves an exact trade-off between preservation and origination, so only empty, well-sampled older stages bound an origination.
   - The body-fossil channel is too thin to pass.
-- **Second plan amendment proposed** (Claude; awaiting Barry). Judge the older limit; require informativeness; make the profiled logistic fit primary; extend spore effort back through the Cambrian; test against mismeasured effort next. Spore effort was extended to the Tremadocian the same day (1,085 documents across the Tremadocian, Floian and Dapingian), which needs no decision.
+- **Second plan amendment proposed** (Claude; adopted the same day, entry above). Judge the older limit; require informativeness; make the profiled logistic fit primary; extend spore effort back through the Cambrian; test against mismeasured effort next. Spore effort was extended to the Tremadocian the same day (1,085 documents across the Tremadocian, Floian and Dapingian), which needs no decision.
 
 ## 2026-10-28: Loop 1, step 1 (the oldest records) and the sketch
 

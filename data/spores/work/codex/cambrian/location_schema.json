@@ -1,0 +1,66 @@
+{
+ "type": "object",
+ "additionalProperties": false,
+ "required": [
+  "items"
+ ],
+ "properties": {
+  "items": {
+   "type": "array",
+   "items": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+     "tloc",
+     "country",
+     "subregion",
+     "palaeo_unit",
+     "confidence",
+     "basis"
+    ],
+    "properties": {
+     "tloc": {
+      "type": "string"
+     },
+     "country": {
+      "type": "string"
+     },
+     "subregion": {
+      "type": "string"
+     },
+     "palaeo_unit": {
+      "type": "string",
+      "enum": [
+       "Laurentia",
+       "Baltica",
+       "Avalonia",
+       "peri-Gondwana-Europe",
+       "Gondwana-North-Africa-Arabia",
+       "Gondwana-South-America",
+       "Gondwana-Australia-Antarctica",
+       "Gondwana-other",
+       "South-China",
+       "North-China",
+       "Tarim",
+       "Kazakhstania",
+       "Siberia",
+       "multiple",
+       "unknown"
+      ]
+     },
+     "confidence": {
+      "type": "string",
+      "enum": [
+       "high",
+       "medium",
+       "low"
+      ]
+     },
+     "basis": {
+      "type": "string"
+     }
+    }
+   }
+  }
+ }
+}

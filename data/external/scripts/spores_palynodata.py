@@ -1,4 +1,4 @@
-"""Extract the 485–383 Ma window from Palynodata (2006 version) as-is, with documents and formations.
+"""Extract the 600–383 Ma window from Palynodata (2006 version) as-is, with documents and formations.
 
 Usage (from data/external/): python3 scripts/spores_palynodata.py
 Needs `unzip`, `bsdtar` (macOS built-in) and `mdb-export` (Homebrew mdbtools). Input is the release
@@ -6,8 +6,11 @@ zip at local/spores/of_5793.zip, a copy of deep-server:/data/codex/silurian_plan
 2026-10-27T0038Z/of_5793.zip (GSC Open File 5793, doi 10.4095/225704, Open Government Licence –
 Canada). Source values are copied unchanged; added columns are prefixed derived_.
 
-Window rows: TAXON rows whose numeric age range (agestart, ageend) overlaps 383–485 Ma, plus rows
-with no numeric age whose age names match a window term. All microfossil types are kept.
+Window rows: TAXON rows whose numeric age range (agestart, ageend) overlaps 383–600 Ma on Palynodata's
+own timescale, plus rows with no numeric age whose age names match a window term. All microfossil
+types are kept. The old edge is 600 Ma because Palynodata's table places the Cambrian at about
+570–505 Ma and the Tremadoc at about 505–490 Ma; the Cambrian is the pre-Ordovician control on spore
+first appearances (docs/plan-f3.md, second amendment).
 """
 
 import csv
@@ -24,11 +27,12 @@ ZIP_SHA = "5460e39df359db91ae16e8bff7d156f9f190901af9505d838b26dee8cc70db1a"
 MDB_SHA = "eb1fa8c3b2f8a1e06a31e2194846ae541ac5240338b4194f63b00823ccde85c1"
 WORK = Path("local/spores/work")
 OUT = Path("spores")
-OLD, YOUNG = 485.0, 383.0
+OLD, YOUNG = 600.0, 383.0
 WELLMAN_URL = "https://ndownloader.figshare.com/files/5423108"
 
 WINDOW_TERMS = re.compile(
-    r"ordovic|tremado|arenig|llanvirn|llandeilo|caradoc|ashgill|hirnant|katian|sandbian|darriwil|"
+    r"cambr|tommot|atdaban|botom|toyon|merionet|menevi|solvan|caerfai|comley|acadian|potsdam|"
+    r"dresbach|francon|trempeal|furong|miaoling|terreneuv|ordovic|tremado|arenig|llanvirn|llandeilo|caradoc|ashgill|hirnant|katian|sandbian|darriwil|"
     r"dapingian|floian|whiterock|silurian|gothland|llandover|wenlock|ludlo|pridol|downton|devonian|"
     r"gedinn|lochkov|siegen|prag|emsian|eifel|givet|dittonian|breconian",
     re.IGNORECASE,

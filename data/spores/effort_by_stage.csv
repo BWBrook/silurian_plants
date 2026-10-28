@@ -1,16 +1,98 @@
 palaeo_unit,stage,base_ma,n_docs,n_docs_with_spores,n_docs_without_spores
-Avalonia,Tremadocian,486.85,20,0,20
-Baltica,Tremadocian,486.85,63,1,62
+Gondwana-Australia-Antarctica,Stage 2,529.00,2,0,2
+Laurentia,Stage 2,529.00,1,0,1
+Siberia,Stage 2,529.00,2,0,2
+multiple,Stage 2,529.00,1,0,1
+Gondwana-Australia-Antarctica,Stage 3,521.00,1,0,1
+Laurentia,Stage 3,521.00,1,0,1
+multiple,Stage 3,521.00,1,0,1
+peri-Gondwana-Europe,Stage 3,521.00,1,0,1
+Avalonia,Stage 4,514.50,12,0,12
+Baltica,Stage 4,514.50,71,1,70
+Gondwana-Australia-Antarctica,Stage 4,514.50,3,0,3
+Gondwana-North-Africa-Arabia,Stage 4,514.50,12,0,12
+Kazakhstania,Stage 4,514.50,4,0,4
+Laurentia,Stage 4,514.50,10,0,10
+Siberia,Stage 4,514.50,3,0,3
+South-China,Stage 4,514.50,1,0,1
+multiple,Stage 4,514.50,36,0,36
+peri-Gondwana-Europe,Stage 4,514.50,23,1,22
+Avalonia,Wuliuan,506.50,12,0,12
+Baltica,Wuliuan,506.50,71,1,70
+Gondwana-Australia-Antarctica,Wuliuan,506.50,2,0,2
+Gondwana-North-Africa-Arabia,Wuliuan,506.50,12,0,12
+Kazakhstania,Wuliuan,506.50,4,0,4
+Laurentia,Wuliuan,506.50,10,0,10
+Siberia,Wuliuan,506.50,3,0,3
+South-China,Wuliuan,506.50,1,0,1
+multiple,Wuliuan,506.50,36,0,36
+peri-Gondwana-Europe,Wuliuan,506.50,22,1,21
+Avalonia,Drumian,504.50,12,0,12
+Baltica,Drumian,504.50,71,1,70
+Gondwana-Australia-Antarctica,Drumian,504.50,2,0,2
+Gondwana-North-Africa-Arabia,Drumian,504.50,12,0,12
+Kazakhstania,Drumian,504.50,4,0,4
+Laurentia,Drumian,504.50,10,0,10
+Siberia,Drumian,504.50,3,0,3
+South-China,Drumian,504.50,1,0,1
+multiple,Drumian,504.50,36,0,36
+peri-Gondwana-Europe,Drumian,504.50,22,1,21
+Avalonia,Guzhangian,500.50,13,0,13
+Baltica,Guzhangian,500.50,73,1,72
+Gondwana-Australia-Antarctica,Guzhangian,500.50,2,0,2
+Gondwana-North-Africa-Arabia,Guzhangian,500.50,12,0,12
+Kazakhstania,Guzhangian,500.50,4,0,4
+Laurentia,Guzhangian,500.50,10,0,10
+Siberia,Guzhangian,500.50,3,0,3
+South-China,Guzhangian,500.50,1,0,1
+multiple,Guzhangian,500.50,36,0,36
+peri-Gondwana-Europe,Guzhangian,500.50,22,1,21
+Avalonia,Paibian,497.00,24,0,24
+Baltica,Paibian,497.00,64,1,63
+Gondwana-North-Africa-Arabia,Paibian,497.00,14,0,14
+Gondwana-South-America,Paibian,497.00,2,0,2
+Gondwana-other,Paibian,497.00,10,3,7
+Kazakhstania,Paibian,497.00,1,0,1
+Laurentia,Paibian,497.00,14,0,14
+Siberia,Paibian,497.00,3,0,3
+South-China,Paibian,497.00,1,0,1
+multiple,Paibian,497.00,33,1,32
+peri-Gondwana-Europe,Paibian,497.00,17,1,16
+Avalonia,Jiangshanian,494.20,24,0,24
+Baltica,Jiangshanian,494.20,64,1,63
+Gondwana-North-Africa-Arabia,Jiangshanian,494.20,14,0,14
+Gondwana-South-America,Jiangshanian,494.20,2,0,2
+Gondwana-other,Jiangshanian,494.20,10,3,7
+Kazakhstania,Jiangshanian,494.20,1,0,1
+Laurentia,Jiangshanian,494.20,14,0,14
+Siberia,Jiangshanian,494.20,3,0,3
+South-China,Jiangshanian,494.20,1,0,1
+multiple,Jiangshanian,494.20,33,1,32
+peri-Gondwana-Europe,Jiangshanian,494.20,17,1,16
+Avalonia,Stage 10,491.00,24,0,24
+Baltica,Stage 10,491.00,65,1,64
+Gondwana-North-Africa-Arabia,Stage 10,491.00,14,0,14
+Gondwana-South-America,Stage 10,491.00,2,0,2
+Gondwana-other,Stage 10,491.00,10,3,7
+Kazakhstania,Stage 10,491.00,1,0,1
+Laurentia,Stage 10,491.00,14,0,14
+Siberia,Stage 10,491.00,3,0,3
+South-China,Stage 10,491.00,1,0,1
+multiple,Stage 10,491.00,33,1,32
+peri-Gondwana-Europe,Stage 10,491.00,17,1,16
+Avalonia,Tremadocian,486.85,63,1,62
+Baltica,Tremadocian,486.85,108,1,107
 Gondwana-Australia-Antarctica,Tremadocian,486.85,7,0,7
-Gondwana-North-Africa-Arabia,Tremadocian,486.85,13,0,13
-Gondwana-South-America,Tremadocian,486.85,3,0,3
-Kazakhstania,Tremadocian,486.85,2,0,2
-Laurentia,Tremadocian,486.85,10,1,9
-North-China,Tremadocian,486.85,2,0,2
+Gondwana-North-Africa-Arabia,Tremadocian,486.85,65,1,64
+Gondwana-South-America,Tremadocian,486.85,11,0,11
+Gondwana-other,Tremadocian,486.85,3,0,3
+Kazakhstania,Tremadocian,486.85,4,0,4
+Laurentia,Tremadocian,486.85,21,1,20
+North-China,Tremadocian,486.85,4,0,4
 Siberia,Tremadocian,486.85,2,0,2
-South-China,Tremadocian,486.85,7,0,7
-multiple,Tremadocian,486.85,38,0,38
-peri-Gondwana-Europe,Tremadocian,486.85,13,0,13
+South-China,Tremadocian,486.85,13,0,13
+multiple,Tremadocian,486.85,74,1,73
+peri-Gondwana-Europe,Tremadocian,486.85,43,3,40
 Avalonia,Floian,477.10,44,0,44
 Baltica,Floian,477.10,91,1,90
 Gondwana-Australia-Antarctica,Floian,477.10,15,0,15

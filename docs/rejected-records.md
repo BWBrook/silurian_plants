@@ -26,7 +26,7 @@ Compiled 2026-10-28 by a Claude Sonnet 5.5 subagent; revised the same day after 
 | 14 | *Akdalophyton caradocki* | Ordovician moss-like plant, Kazakhstan | unassessed | unresolved dispute | disputed |
 | 15 | Swedish Sandbian trilete spores | earliest trilete spores | marks not excluded as artefacts | unresolved dispute | disputed |
 | 16 | Argentine Dapingian cryptospores | earliest cryptospores | validity questioned | unresolved dispute | disputed |
-| 17 | Yea *Baragwanathia* assemblage | Gorstian lycopsid, Victoria | Early Devonian or undated | misdating | disputed |
+| 17 | Yea *Baragwanathia* assemblage | Gorstian lycopsid, Victoria | unresolved, Gorstian to Emsian (eastern localities) | misdating or introduced material | disputed |
 | 18 | *Pinnatiramosus qianensis* | Wenlock or Telychian vascular plant, Guizhou | Permian roots in Silurian rock | younger material in older rock | reassigned |
 | 19 | *Volkhoviella primitiva* | Darriwilian rhyniophyte, Russia | too few characters for plant assignment | unresolved identification | disputed |
 | 20 | *Piterophyton caudatum* | Sandbian rhyniophyte with tracheids, Russia | unassessed | unresolved dispute | disputed |
@@ -181,18 +181,25 @@ The taxa and the hypotheses about them need separating, because rejecting a plan
 ### 16. Argentine Dapingian cryptospores
 
 - **Claimed:** Rubinstein et al. (2010): cryptospores from the Dapingian of north-west Argentina, dated on chitinozoans (`taxa/ordovician-cryptospores.md`), the oldest record clearly attributed to land plants by some authors (Wellman et al. 2022 give the oldest as Dapingian or Darriwilian).
-- **Dispute:** the table of Wellman et al. (2022) notes that Strother et al. (2015) questioned the validity of the cryptospores described in the Argentine paper. That is a challenge to the identification of the spores; no source read challenges the Dapingian age. I did not read Strother et al.'s reasons.
+- **Dispute:** the table of Wellman et al. (2022) notes that Strother et al. (2015) questioned the validity of the cryptospores described in the Argentine paper. That is a challenge to the identification of the spores; no source read challenges the Dapingian age.
+  - **For:** Rubinstein et al. (2010, abstract) report "a diverse cryptospore assemblage, including naked and envelope-enclosed monads and tetrads, representing five genera", from Dapingian samples of the Zanjón Formation, Río Capillas.
+  - **Against:** Strother et al. (2015, pp. 108–109; full text read 2026-10-28) argue that the figured *Tetrahedraletes* cf. *medinensis* shows neither four bodies in tetrahedral arrangement nor regular attachment, that it is "the only element in the published palynological assemblage from the Zanjón Formation that ties these fossils unequivocally to the embryophytes", that the monads "cannot be proven to be derived from land plants", and that the enclosed planar tetrad is likely chlorophyte. The critics are the authors of the competing oldest assemblage (Hanadir, Darriwilian), which is worth bearing in mind; their argument is specimen-level and checkable against Rubinstein et al.'s figures 2g and S3g.
 - **Current interpretation and age:** unresolved; Dapingian if the spores are valid.
 - **Error type:** unresolved dispute over identification (validity as cryptospores), not misdating.
-- **Read status:** Wellman et al.'s table and its footnote read for this entry; Rubinstein et al.'s paper and supplement obtained and checked for identity on 2026-10-28, but not yet incorporated into the adjudication; Strother et al. not read for this entry.
+- **Read status:** Wellman et al.'s table and footnote; Strother et al. (2015) in full; Rubinstein et al. (2010) abstract and claims (`library/open/`). Not yet done: a direct check of Rubinstein et al.'s figures against Strother et al.'s criteria, which a palynologist could settle (consult flag; Barry's decision).
 - **Sources:** Rubinstein et al. 2010; Strother et al. 2015; Wellman et al. 2022.
 
 ### 17. Yea *Baragwanathia* assemblage (Victoria, Australia)
 
 - **Claimed:** a Gorstian to Pridoli lycopsid flora (*Baragwanathia*) dated by graptolites, which would make it among the oldest lycopsids.
 - **Dispute:** later work dates the beds to the Early Devonian on brachiopods, bivalves and mapping, and treats the monograptid identifications as unreliable. For the Gorstian *Bohemograptus* record the stated problem is provenance, a road-making stockpile, not the identification; the cards say Earp (2024) accepts no locality with a supported Silurian age but calls the question only partly answered. The Boola Formation gives late Lochkovian to early Pragian. The detail is in `taxa/baragwanathia-flora.md` and `taxa/baragwanathia-longifolia.md`; I did not re-read the primary sources, and Earp (2024) could not be reached because of bot protection.
+- **Primary sources re-read (2026-10-28):** Rickards (2000), Garratt & Rickards (1987), Garratt (1983), the 1978 map as reproduced by Jelinek (2008), and Earp's unreviewed 2023 draft review; Garratt (1978) itself remains unavailable. Two horizons with graptolites, both at the eastern localities:
+  - **Ghin Ghin, Loc. 1 (= B3, H1).** *Monograptus* aff. *uncinatus* (Gorstian) lies 2–3 cm below *Baragwanathia* beds with no break between them (Garratt 1981, reported by Earp). The association is close; the identification is the issue. Rickards (2000) calls the "aff." excessive caution. Earp's draft finds the specimens differ from *uncinatus* and that the identification "cannot be sustained", without naming a Devonian replacement. The section is faulted and folded, with *Baragwanathia* above and below Loc. 1.
+  - **Limestone Road, Loc. 4 (= H4).** *Bohemograptus bohemicus bohemicus* is Gorstian, and Earp's draft accepts the identification. But the graptolites came from the spoil heap, their dark matrix differs from the weathered site, and material was stockpiled there from elsewhere. The problem is provenance.
+  - **Ghin Ghin, B2,** 67 m above Loc. 1: about 70 rhabdosomes on one slab, read as Pridoli *M.* cf. *prognatus* (Garratt & Rickards 1987, who call the placement within the range speculative). Earp's draft doubts both the identification and the exclusion of the Pragian *M. thomasi*.
+- **Adjudication (Claude Opus 5.5, 2026-10-28).** No published work demonstrates an Early Devonian age for the eastern localities, and none establishes the Gorstian beyond dispute. The main reading for Loc. 1 and Loc. 4 changes from the Early Devonian baseline to "unresolved, Gorstian to Emsian"; B2 becomes its own observation, unresolved between Pridoli and Emsian (`data/occurrences/`). What would settle it: re-identification of the Loc. 1 graptolites (NMV P73824–P73826) by a graptolite specialist, and new in-place collecting at Loc. 1. Contact is Barry's decision.
 - **Error type:** misdating or introduced material (unresolved for the eastern localities).
-- **Read status:** from the project cards only.
+- **Read status:** primary sources above; Earp (2024) from its abstract and the cards.
 
 ### 18. *Pinnatiramosus qianensis* Geng 1986 (Guizhou, China)
 

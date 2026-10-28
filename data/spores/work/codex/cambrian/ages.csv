@@ -1,0 +1,72 @@
+age_name,n_rows,n_docs,palynodata_min_ma,palynodata_max_ma,current_mapping
+Early Cambrian,8613,418,353.0,4100.0,Tremadocian–Tremadocian (low): Wholly older than the table (Cambrian); clamped to the end stage Tremadocian
+Cambrian,2596,244,0.0,4100.0,Tremadocian–Tremadocian (low): Wholly older than the table (Cambrian); clamped to the end stage Tremadocian
+Late Cambrian,3765,217,0.0,2923.33,Tremadocian–Tremadocian (low): Wholly older than the table (Cambrian); clamped to the end stage Tremadocian
+Middle Cambrian,3827,213,211.0,2600.0,"Tremadocian–Tremadocian (low): Wholly older than table; clamped to Tremadocian [Codex gpt-6.1-sol, effort layer, 2026-10-27]"
+Vendian,3326,212,0.0,2000.0,"Tremadocian–Tremadocian (low): Terminal Precambrian unit; wholly older, clamped to Tremadocian [Codex gpt-6.1-sol, effort layer, 2026-10-27]"
+Late Precambrian,3009,171,0.0,2923.33,"Tremadocian–Tremadocian (low): Wholly older than table; clamped to Tremadocian [Codex gpt-6.1-sol, effort layer, 2026-10-27]"
+Late Proterozoic,2007,133,0.0,4100.0,Tremadocian–Tremadocian (low): Wholly older than the table (Precambrian); clamped to the end stage Tremadocian
+Precambrian,1945,120,0.0,4100.0,Tremadocian–Tremadocian (low): Wholly older than the table (Precambrian); clamped to the end stage Tremadocian
+Late Vendian,717,70,370.0,650.0,"Tremadocian–Tremadocian (low): Wholly older than table; clamped to Tremadocian [Codex gpt-6.1-sol, effort layer, 2026-10-27]"
+Proterozoic,714,60,395.0,4100.0,"Tremadocian–Tremadocian (low): Wholly older than table; clamped to Tremadocian [Codex gpt-6.1-sol, effort layer, 2026-10-27]"
+Late Riphean,686,53,435.0,950.0,"Tremadocian–Tremadocian (low): Wholly older than table; clamped to Tremadocian [Codex gpt-6.1-sol, effort layer, 2026-10-27]"
+Sinian,1763,52,141.0,2000.0,Tremadocian–Tremadocian (low): Wholly older than the table (Precambrian); clamped to the end stage Tremadocian
+Riphean,310,42,335.0,1600.0,Tremadocian–Tremadocian (low): Wholly older than the table (Precambrian); clamped to the end stage Tremadocian
+Early Paleozoic,1021,42,435.0,2600.0,Tremadocian–Pridoli (low): Cambrian to Silurian (Lower Paleozoic); very broad; Cambrian part clamped at Tremadocian
+Late Sinian,827,27,478.333,800.0,"Tremadocian–Tremadocian (low): Wholly older than table; clamped to Tremadocian [Codex gpt-6.1-sol, effort layer, 2026-10-27]"
+Algonkian,237,16,514.0,4100.0,
+Middle Proterozoic,251,16,345.0,2000.0,"Tremadocian–Tremadocian (low): Wholly older than table; clamped to Tremadocian [Codex gpt-6.1-sol, effort layer, 2026-10-27]"
+Middle Riphean,92,15,478.333,1450.0,"Tremadocian–Tremadocian (low): Wholly older than table; clamped to Tremadocian [Codex gpt-6.1-sol, effort layer, 2026-10-27]"
+Late Algonkian,322,12,500.0,1923.33,
+Early Proterozoic,24,7,314.0,2600.0,"Tremadocian–Tremadocian (low): Wholly older than table; clamped to Tremadocian [Codex gpt-6.1-sol, effort layer, 2026-10-27]"
+Ediacaran,95,6,570.0,624.0,
+Tommotian,27,6,558.7,1746.67,
+Acadian,49,6,370.0,540.0,"Tremadocian–Tremadocian (low): Middle Cambrian regional series; wholly older, clamped to Tremadocian [Codex gpt-6.1-sol, effort layer, 2026-10-27]"
+Middle Precambrian,44,6,435.0,2923.33,"Tremadocian–Tremadocian (low): Wholly older than table; clamped to Tremadocian [Codex gpt-6.1-sol, effort layer, 2026-10-27]"
+Brioverian,30,6,570.0,1000.0,
+Middle Vendian,51,5,500.0,1600.0,
+Torridonian,25,5,586.0,1060.0,
+Middle Algonkian,48,4,570.0,1923.33,
+Merioneth,55,4,472.0,514.0,"Tremadocian–Tremadocian (low): British Upper Cambrian; wholly older than table, clamped to Tremadocian [Codex gpt-6.1-sol, effort layer, 2026-10-27]"
+PrecambrianPrecambrian,3,3,570.0,4100.0,
+Precambrain,34,3,570.0,4100.0,
+Potsdamian,16,3,395.0,570.0,"Tremadocian–Tremadocian (low): Historical Cambrian unit; wholly older than table, clamped to Tremadocian [Codex gpt-6.1-sol, effort layer, 2026-10-27]"
+Varangian,23,3,570.0,624.0,
+Early Vendian,6,3,500.0,650.0,
+Yudoma,29,2,582.0,950.0,
+Late Acadian,11,2,490.0,520.67,
+Late Merioneth,7,2,484.0,504.667,"Tremadocian–Tremadocian (low): British Upper Cambrian; wholly older than table, clamped to Tremadocian [Codex gpt-6.1-sol, effort layer, 2026-10-27]"
+Lenan,13,2,535.0,650.0,
+Eocambrian,21,2,500.0,650.0,
+Early Riphean,26,2,570.0,1600.0,
+Late Brioverian,10,2,570.0,713.333,
+Solvan,13,2,527.0,540.0,
+Atdabanian,41,2,535.0,1600.0,
+Cryogenian,21,1,540.0,677.0,
+Early Sinian,12,1,590.0,800.0,
+Early Merioneth,1,1,484.0,514.0,"Tremadocian–Tremadocian (low): British Upper Cambrian; wholly older than table, clamped to Tremadocian [Codex gpt-6.1-sol, effort layer, 2026-10-27]"
+Marinoan,1,1,597.0,800.0,
+Nantuo,5,1,570.0,630.0,
+Middle Tommotian,21,1,562.467,566.233,
+Early Acadian,3,1,529.33,540.0,
+Pakerot,5,1,493.333,500.0,
+Cordubian,2,1,562.5,570.0,
+Middle Cambria,2,1,514.0,570.0,
+Early Ediacaran,2,1,588.0,606.0,
+Precambriam,20,1,570.0,4100.0,
+Dengying,28,1,570.0,630.0,
+Precambrianv,1,1,570.0,4100.0,
+Georgian,14,1,360.0,570.0,"Tremadocian–Tremadocian (low): Historical Lower Cambrian; wholly older than table, clamped to Tremadocian [Codex gpt-6.1-sol, effort layer, 2026-10-27]"
+Late Keweenawan,4,1,570.0,833.33,
+Doushantuo,39,1,500.0,630.0,
+Botomian,47,1,541.83,547.725,
+Early Atdabanian,2,1,552.467,1600.0,
+Late Atdabanian,1,1,540.0,546.233,
+Archeozoic,4,1,435.0,4100.0,"Tremadocian–Tremadocian (low): Wholly older than table; clamped to Tremadocian [Codex gpt-6.1-sol, effort layer, 2026-10-27]"
+Sturtian,1,1,597.0,800.0,
+Longmyndian,5,1,535.0,750.0,
+Middle Sinian,2,1,590.0,730.0,
+Archean,3,1,570.0,4100.0,
+Ovetian,2,1,547.5,562.5,
+Late Varangian,2,1,588.0,606.0,
+Marianian,2,1,547.5,562.5,
