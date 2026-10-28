@@ -21,7 +21,8 @@ mac-mini and desktop app must be running for an unattended task to start.
 The script checks the source inventory and hashes, requests a local macOS copy-on-write
 capture, checks it against the source, and transfers that stable capture over SSH with
 compression. If the filesystem cannot clone, macOS falls back to a normal copy; the script reserves
-enough local space for that case.
+enough local space for that case. If another job changes the source during hashing or
+capture, the script stops; retry once the source is quiet.
 The destination verifies every file's SHA-256 and size, checks the captured Git
 objects, and performs a sample restore before promotion. The capture is not an atomic
 transaction across independently updated files. It preserves file bytes, paths and
