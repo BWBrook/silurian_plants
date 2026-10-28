@@ -2,6 +2,10 @@
 
 ## Claude-specific practice: delegating to Codex
 
+The routing below concerns Claude's delegated jobs. The independent Codex desktop session
+is also a direct scientific collaborator, including synthesis, criticism and judgement,
+under Barry's 2026-10-28 instruction (see `AGENTS.md`, “Direct collaboration”).
+
 The global `codex-delegate` skill and `~/.claude/bin/codex-delegate` carry the general method:
 when to route work to Codex, the run command, prompts, schemas, chunking, verification, the
 cross-family audit and the limits on Codex jobs. This project's routing:

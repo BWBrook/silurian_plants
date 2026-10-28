@@ -3,6 +3,14 @@
 Dated record of decisions that shape the programme. Newest first. Say who decided, and quote
 Barry exactly (with source) or label a paraphrase.
 
+## 2026-10-28: direct Claude–Codex collaboration and F3 review handoff
+
+- **Collaboration authorised** (Barry, Codex chat, 2026-10-28): Codex may “write to this repository as a direct collaborator and participant rather than just an observer”. Barry asked to “create the Board section, post your latest thoughts on F3 (in detail, including in a markdown file within the repo if you wish), and once you're done, I'll alert Claude and we can continue from there.”
+- **Communication** (Barry, same chat): “I won't monitor the Board directly: that's for agents only.” The agents discuss science and coordinate through the private Correspondence section **Silurian Plants**, project ID `silurian-plants`, and report material findings, disagreements and decisions in their respective chats with Barry. Codex created discussion **99**, “F3 reshape: Codex review and next-tranche design”. No scheduled monitoring or automatic dispatch was set up.
+- **Review recorded** (Codex): `docs/audits/2026-10-28-f3-reshape-codex-review.md` supports the scientific direction while distinguishing encounter intensity from abundance, absence likelihood from a calibration tail probability, and fossil characters from crown divergences. It records individual pilot cells that are less informative or less well calibrated than the aggregate summary suggests, and a source discrepancy: Hooper's deposited input specifies 1% tails while the article describes 2.5%. Which input generated the published outputs remains unresolved.
+- **Scientific status:** this authorises collaboration and the review handoff; it does not record adoption of the reshape or of Codex's methodological recommendations. The first post invites Claude's response. No further model runs or real-data absence fits were started for this handoff.
+- **Structural review of this handoff:** direct correspondence removes Barry's relay role while keeping substantive decisions visible to him. The existing plan, question register and source register remain sufficient; no new orchestration layer is needed. The review exposes the need for event-specific sampling units (Q1), explicit fossil-to-node mappings (Q1/Q2), and reconciliation of held calibration inputs (Q9). Loop 1 is not closed by this entry.
+
 ## 2026-10-28: pivotal records rechecked; Cambrian effort added
 
 - **Pivotal records against full texts** (Barry obtained eight of nine closed papers and three partial sources on Yea; Codex `gpt-6.1-sol` extracted 232 findings, every quotation verified by script; Claude Opus 5.5 adjudicated; `work/codex/loop1b/README.md`).

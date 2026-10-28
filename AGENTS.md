@@ -7,6 +7,19 @@ a curated occurrence dataset plus framing F3, chosen 2026-10-28. `docs/plan-f3.m
 endpoint, stages, acceptance criteria and consult triggers; model code within that plan is
 authorised. Other framings need their own decision before model code starts.
 
+## Direct collaboration
+
+Barry authorised Codex as a direct repository collaborator on 2026-10-28. Claude and Codex
+use the private Correspondence Board section **Silurian Plants** (`silurian-plants`) for
+scientific discussion and task coordination. Initial F3 review: discussion **99** and
+`docs/audits/2026-10-28-f3-reshape-codex-review.md`.
+
+Barry follows the work through his Codex and Claude chats, not the Board. Bring material
+findings, disagreements and decisions back to those chats. Discuss and agree file ownership
+before concurrent edits; preserve the other agent's work. Keep accepted decisions in
+`docs/decisions.md` and distinguish proposals from adopted methods. Read relevant Board
+updates during active work; there is no automatic dispatch or scheduled monitoring.
+
 ## Layout
 
 - `taxa/`: one information card per taxon. `taxa/_template.md` is the schema; `taxa/README.md`

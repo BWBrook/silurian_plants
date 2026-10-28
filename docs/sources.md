@@ -76,7 +76,9 @@ among GBIF fossil specimens.
 
 | Source | Status | Where |
 |---|---|---|
-| Hooper et al. 2026 (MCMCTree files, calibrations); Morris et al. 2018 (alignments, calibrations); Harris et al. 2022 | held | `data/external/deposits/` |
+| Hooper et al. 2026 (MCMCTree files, calibrations); Morris et al. 2018 (alignments, calibrations); Harris et al. 2022 | held; Hooper input/publication discrepancy unresolved (Q9) | `data/external/deposits/`; large and licence-restricted files in git-ignored `data/external/local/deposits/` |
+
+Hooper archive inspected by Codex, 2026-10-28: checksum matches its retrieval manifest; focal input calibrations specify 1% tails whereas the article states 2.5%, and some supplied output names contain `old_version`. This does not establish which settings generated the published results. Evidence and the proposed reconciliation are in `docs/audits/2026-10-28-f3-reshape-codex-review.md`, F3-R1 and F3-R6 (Q9).
 
 ## 6. Earth-system proxies and series
 
