@@ -5,3 +5,6 @@ library/closed/
 portal/dist/
 .site-publish/
 library/open/
+
+# raw API pulls for data/occurrences (provenance in its README)
+data/occurrences/raw/

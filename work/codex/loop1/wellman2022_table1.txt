@@ -1,0 +1,106 @@
+
+
+
+
+           Table 1. Dispersed spore assemblages reported from the Ordovician
+
+           Location/stage           Location          Palaeocontinent    Palaeoenvironment        Age dating          References
+
+           H1 Hirnantian?           Ontario,          Laurentia          Palaeokarst surface      Lithostratigraphy   Gray (1988)
+                                       Canada
+           H2 Hirnantian            Quebec,           Laurentia          Shallow marine           Inv + Palynology    Richardson and Ausich (2007); Vecoli et al.
+                                       Canada                                                                           (2011)
+           H3 Hirnantian            Southern          Avalonia           Shallow marine           G                   Burgess (1991)
+                                       Britain
+           H4 Hirnantian            Sweden            Baltica            Shallow marine           G                   Badawy et al. (2014)
+           H5 Hirnantian            Estonia           Baltica            Shallow marine           Palynology          Vecoli et al. (2011)
+           H6 Hirnantian            Zhejiang,         South China        Shallow marine           Inv                 Yin and He (2000)
+                                       China
+           H7 Hirnantian            Czech             PeriGondwana       Shallow marine           G                   Vavrdova (1982, 1984, 1988, 1989); Gray
+                                       Republic                                                                         (1988)
+           H8 Hirnantian?           Bulgaria          PeriGondwana       Shallow marine           Palynology          Lakova et al. (1992)
+           H9 Hirnantian            Iran              PeriGondwana       Shallow marine           Palynology          Mahmoudi et al. (2014); Ghavidel-Syooki
+
+
+
+
+                                                                                                                                                                       C. H. Wellman et al.
+                                                                                                                        (2017); Ghavidel-Syooki and Piri-Kangarshahi
+                                                                                                                        (2021a)
+           H10 Hirnantian?          Australia         Gondwana           Marine evaporites        Palynology          Foster and Williams (1991)
+           H11 Hirnantian           Saudi Arabia      Gondwana           Glacial shallow marine   Lithostratigraphy   Miller and Al-Ruwaili (2007); Steemans et al.
+                                                                                                                        (2009); Wellman et al. (2015)
+           H12 Hirnantian           Algeria           Gondwana           Shallow marine           Ch-Palynology       Spina (2015)
+           H13 Hirnantian           Libya             Gondwana           Shallow marine           G                   Gray et al. (1982); Richardson (1988); Le
+                                                                                                                        Hérissé et al. (2013); Thusu et al. (2013)
+           H14 Hirnantian           Chad              Gondwana           Shallow marine           Ch-Palynology       Le Hérissé et al. (2013)
+           H15 Hirnantian           South Africa      Gondwana           Glacial shallow marine   Ch-Palynology       Gray et al. (1986)
+           H16 Hirnantian           Argentina         Gondwana           Shallow marine           Inv-Palynology      Rubinstein and Vaccari (2004); Rubinstein
+                                                                                                                        (2005)
+           KH1                      Kentucky,         Laurentia          Shallow marine           Palynology          Gray (1988)
+             Katian-Hirnantian?       USA
+           KH2                      Tennessee,        Laurentia          Shallow marine           Palynology          Gray (1988)
+             Katian-Hirnantian?       USA
+           KH3                      Georgia, USA      Laurentia          Shallow marine           Palynology          Gray (1988)
+             Katian-Hirnantian?
+           KH4                      Belgium           Avalonia           Shallow marine           Palynology          Steemans (2001)
+             Katian-Hirnantian?
+           KH5                      Turkey            Gondwana           Shallow marine           Palynology          Steemans et al. (1996)
+             Katian-Hirnantian?
+           K1 Katian                Illinois, USA     Laurentia          Shallow marine           Inv                 Strother (1991)
+           K2 Katian                Ohio, USA         Laurentia          Shallow marine           Ch-Palynology       Gray and Boucot (1972); Gray (1988)
+Downloaded from https://www.lyellcollection.org by University of Sheffield on Dec 20, 2022
+
+
+
+
+           K3 Katian                     Southern             Avalonia              Shallow marine                    Inv                                   Richardson (1988); Wellman (1996)
+                                            Britain
+           K4 Katian                     Sweden               Baltica               Shallow marine                    G                                     Badawy et al. (2014)
+           K5 Katian                     Poland               Baltica               Shallow marine                    G-Palynology                          Stempién-Salek (2011)
+           K6 Katian                     Estonia              Baltica               Shallow marine                    Palynology                            Vecoli et al. (2011)
+           K7 Katian?                    Germany              ?Baltica              Shallow marine                    C                                     Reitz and Heuse (1994)
+           K8 Katian                     Siberia, Russia      Siberia               Shallow marine                    Inv + Palynology                      Raevskaya et al. (2016)
+           K9 Katian                     Xinjiang,            Tarim                 Shallow marine                    G + C + Inv +                         Wang et al. (1997); Tang et al. (2017)
+                                            China                                                                       Ch-palynology
+           K10 Katian                    Iran                 PeriGondwana          Shallow marine                    Palynology                            Mahmoudi et al. (2014); Ghavidel-Syooki
+                                                                                                                                                             (2017); Ghavidel-Syooki and Piri-Kangarshahi
+                                                                                                                                                             (2021b)
+           K11 Katian                    Saudi Arabia         Gondwana              Shallow marine                    Ch-Palynology                         Molyneux and Al-Hajri (2000); Steemans et al.
+                                                                                                                                                             (2009); Wellman et al. (2015)
+
+
+
+
+                                                                                                                                                                                                             Terrestrialization in the Ordovician
+           K12 Katian                    Oman                 Gondwana              Terrestrial-nearshore             Ch-Palynology                         Wellman et al. (2003)
+                                                                                      marine
+           K13 Katian                    Libya                Gondwana              Shallow marine                    G                                     Gray et al. (1982);
+           K14 Katian                    Argentina            Gondwana              Shallow marine                    Ch-Palynology                         de la Puente and Rubinstein (2013); Rubinstein
+                                                                                                                                                              et al. (2016)
+           S1 Sandbian                   Southern             Avalonia              Shallow marine                    Inv                                   Richardson (1988); Wellman (1996)
+                                           Britain
+           S2 Sandbian*                  Sweden               Baltica               Shallow marine                    C                                     Rubinstein and Vajda (2019)
+           S3 Sandbian                   Poland               Baltica               Shallow marine                    G-Palynology                          Stempién-Salek (2011)
+           S4 Sandbian                   Saudi Arabia         Gondwana              Shallow marine                    Ch-Palynology                         Molyneux and Al-Hajri (2000)
+           S5 Sandbian                   Libya                Gondwana              Shallow marine                    G                                     Gray et al. (1982)
+           S6 Sandbian                   Argentina            Gondwana              Shallow marine                    G+C                                   Ottone et al. (1999)
+           Dr1 Darriwilian               Czech                PeriGondwana          Shallow marine                    G                                     Corna (1970); Vavrdova (1990, 1993)
+                                           Republic
+           Dr2 Darriwilian               Australia            Gondwana              Shallow marine                    Palynology                            Spaak et al. (2017)
+           Dr3 Darriwilian               Saudi Arabia         Gondwana              Shallow marine                    Ch-Palynology                         McClure (1988); Strother et al. (1996, 2015);
+                                                                                                                                                              Molyneux and Al-Hajri (2000); Le Hérissé
+                                                                                                                                                              et al. (2007); Vecoli et al. (2017)
+           Dr4 Darriwilian               Libya                Gondwana              Shallow marine                    Palynology                            Abuhmida and Wellman (2017)
+           Dr5 Darriwilian               Argentina            Gondwana              Marginal marine                   Palynology                            Rubinstein et al. (2011)
+           Dp1 Dapingian?                Saudi Arabia         Gondwana              Marginal marine                   Palynology                            Vecoli et al. (2017)
+           Dp2 Dapingian**               Argentina            Gondwana              Marginal marine                   Ch-Palynology                         Rubinstein et al. (2010)
+
+           C, conodonts; Ch, chitinozoans; G, graptolites; Inv, invertebrates.
+           *We do not consider that any of the pre-Sandbian cryptospores illustrated in this paper represent cryptospores, but rather folded sphaeromorphs and acritarchs.
+           **Strother et al. (2015) have questioned the validity of the cryptospores described in this paper.
+Downloaded from https://www.lyellcollection.org by University of Sheffield on Dec 20, 2022
+
+
+
+                                                    C. H. Wellman et al.

@@ -1,0 +1,12 @@
+{"type":"object","additionalProperties":false,"required":["observations","interpretations","sources","excluded_pbdb","notes"],
+ "properties":{
+  "observations":{"type":"array","items":{"type":"object","additionalProperties":false,
+    "required":["obs_id","channel","reported_as","locality","country","unit","horizon","palaeo_unit","source_ids","locator","events","same_material_as","notes"],
+    "properties":{"obs_id":{"type":"string"},"channel":{"type":"string","enum":["spore","megafossil","mesofossil"]},"reported_as":{"type":"string"},"locality":{"type":"string"},"country":{"type":"string"},"unit":{"type":"string"},"horizon":{"type":"string"},"palaeo_unit":{"type":"string"},"source_ids":{"type":"string"},"locator":{"type":"string"},"events":{"type":"string"},"same_material_as":{"type":"string"},"notes":{"type":"string"}}}},
+  "interpretations":{"type":"array","items":{"type":"object","additionalProperties":false,
+    "required":["interp_id","obs_id","label","counts_for","stage_oldest","stage_youngest","age_note","held_by","held_by_source_ids","adjudicator","main","main_basis","support","support_from","checked"],
+    "properties":{"interp_id":{"type":"string"},"obs_id":{"type":"string"},"label":{"type":"string"},"counts_for":{"type":"string"},"stage_oldest":{"type":"string"},"stage_youngest":{"type":"string"},"age_note":{"type":"string"},"held_by":{"type":"string"},"held_by_source_ids":{"type":"string"},"adjudicator":{"type":"string"},"main":{"type":"string","enum":["true","false"]},"main_basis":{"type":"string"},"support":{"type":"string"},"support_from":{"type":"string"},"checked":{"type":"string","enum":["full-text","abstract","card","repo-doc","secondary"]}}}},
+  "sources":{"type":"array","items":{"type":"object","additionalProperties":false,"required":["source_id","citation","doi","access"],
+    "properties":{"source_id":{"type":"string"},"citation":{"type":"string"},"doi":{"type":"string"},"access":{"type":"string","enum":["open","closed","print","unknown"]}}}},
+  "excluded_pbdb":{"type":"array","items":{"type":"object","additionalProperties":false,"required":["occurrence_no","reason"],"properties":{"occurrence_no":{"type":"string"},"reason":{"type":"string"}}}},
+  "notes":{"type":"string"}}}

@@ -1,0 +1,21 @@
+{
+  "root_seed": 20261028,
+  "n_reps": 2000,
+  "n_stage_draws": 300,
+  "t0": "uniform within the Telychian",
+  "window_end": "base of Eifelian (end of Emsian)",
+  "psi_spores": [
+    0.005,
+    0.02,
+    0.08
+  ],
+  "body_fraction": 0.2,
+  "growth": {
+    "constant": "Constant(k=50)",
+    "logistic": "Logistic(r=0.35, k=100)",
+    "birthdeath": "BirthDeath(lam=0.25, mu=0.15)"
+  },
+  "timescale_sha256": "29c6cc4a68b1746d1a67c66623e5df30ac5dd316257b55ca5948c9854886f826",
+  "numpy": "2.5.4",
+  "seconds": 39.5
+}

@@ -1,0 +1,7 @@
+{"type":"object","additionalProperties":false,"required":["items","footnotes"],
+ "properties":{
+  "items":{"type":"array","items":{"type":"object","additionalProperties":false,
+   "required":["code","stage_printed","location","palaeocontinent","palaeoenvironment","age_dating","references","footnote","note"],
+   "properties":{"code":{"type":"string"},"stage_printed":{"type":"string"},"location":{"type":"string"},"palaeocontinent":{"type":"string"},
+    "palaeoenvironment":{"type":"string"},"age_dating":{"type":"string"},"references":{"type":"string"},"footnote":{"type":"string","enum":["","*","**"]},"note":{"type":"string"}}}},
+  "footnotes":{"type":"array","items":{"type":"string"}}}}

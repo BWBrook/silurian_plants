@@ -66,6 +66,17 @@ Testing old narratives is a third contribution, and a programme-level one (Q5 in
    - **Measures.** Bias, coverage and identifiability. In particular: can an old origin with poor preservation be told apart from a young origin with good preservation?
    - **Acceptance, fixed before running.** An estimator is used on real data only if its nominal 95% intervals cover the true origination time at least 90% of the time across the plausible scenarios, with median bias under 2 Myr.
    - **Not a prediction.** These criteria are about the estimators, not about which timescale is right.
+   **Amendment after the sketch** (2026-10-28, Claude Opus 5.5; recorded before any real data were analysed). The sketch (`models/f3/README.md`) found:
+   - **Classical intervals.** Marshall (1990) and Strauss & Sadler (1989) give the same one-endpoint bound. It covers the true origination 94–95% of the time under its own assumptions. When abundance ramps up after origination (logistic or birth–death growth), coverage falls to 4–81% and the median bias runs from 2 to 27 Myr too young. The bias is of the same order as the disagreement between the clock scenarios.
+   - **GRIWM.** Its point estimate lies older than the truth in only 64–81% of replicates, even under uniform sampling. Its interval reflects dating error only.
+   - **A fault in the authors' code.** The arrival option of the published GRIWM code (`signor_lipps = "arr"`, `Rextinct/R/griwm.R`) returns an estimate slightly younger than the oldest record. The sketch therefore uses the extinction algorithm on a mirrored age axis. Reporting the fault to the authors is Barry's decision.
+
+   The step changes as follows. The original criteria stand for interval estimators.
+   - **New estimators.** The recovery study adds estimators that model the abundance ramp and preservation: likelihood or Bayesian fits of an occurrence process with growing intensity, and birth–death with preservation, cross-checked against PyRate. A clade that starts rare is the expected case for early land plants.
+   - **Point estimators.** GRIWM and the Strauss & Sadler point are judged on median bias under 2 Myr and on an interval calibrated by simulation.
+   - **One classical estimator.** Only one classical bound is carried.
+   - **Boundary ages.** These are drawn from the joint age model, not fixed.
+   - **The deciding question.** Whether the ramp itself can be estimated from two channels plus effort is the identifiability question, and so the first thing the recovery study answers.
 4. **Apply and find the pivotal records.** Run the accepted estimators on each event under its main reading. Then repeat across the readings of the contested tail. A record is **pivotal** if its reading flips a verdict (for example, compatibility with a clock maximum) or moves the estimated window by more than 1 Myr. The output is a short list of the adjudications that decide each answer, with what each reading implies.
 5. **Value of information.** Rank the evidence that could still be obtained by how much it would narrow an answer, rerunning with each item resolved each way. Candidates:
    - a closed paper;
