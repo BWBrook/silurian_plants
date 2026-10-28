@@ -171,18 +171,30 @@ def effort_by_stage(timescale: Timescale, effort: Mapping[str, float] | None) ->
     return values
 
 
+def abundance_cells(abundance: Abundance, timescale: Timescale) -> tuple[np.ndarray, np.ndarray, np.ndarray, np.ndarray]:
+    """The abundance path cut at stage bases: (young end, old end, N, stage index) of each cell."""
+    stage_bases = timescale.base[(timescale.base > abundance.edges[0]) & (timescale.base < abundance.edges[-1])]
+    edges = np.unique(np.concatenate([abundance.edges, stage_bases]))
+    lo, hi = edges[:-1], edges[1:]
+    mid = (lo + hi) / 2
+    n_lineages = abundance.values[np.searchsorted(abundance.edges, mid, side="right") - 1]
+    return lo, hi, n_lineages, timescale.stage_of(mid)
+
+
+def stage_exposure(abundance: Abundance, timescale: Timescale) -> np.ndarray:
+    """The integral of N over each stage (lineage-Myr), indexed like timescale.names."""
+    lo, hi, n_lineages, stage = abundance_cells(abundance, timescale)
+    return np.bincount(stage, weights=n_lineages * (hi - lo), minlength=len(timescale.names))
+
+
 def sample_records(
     abundance: Abundance,
     channel: Channel,
     timescale: Timescale,
     rng: np.random.Generator,
 ) -> Records:
-    stage_bases = timescale.base[(timescale.base > abundance.edges[0]) & (timescale.base < abundance.edges[-1])]
-    edges = np.unique(np.concatenate([abundance.edges, stage_bases]))
-    lo, hi = edges[:-1], edges[1:]
-    mid = (lo + hi) / 2
-    n_lineages = abundance.values[np.searchsorted(abundance.edges, mid, side="right") - 1]
-    effort = effort_by_stage(timescale, channel.effort)[timescale.stage_of(mid)]
+    lo, hi, n_lineages, stage_of_cell = abundance_cells(abundance, timescale)
+    effort = effort_by_stage(timescale, channel.effort)[stage_of_cell]
     counts = rng.poisson(channel.psi * n_lineages * effort * (hi - lo))
     age = np.repeat(lo, counts) + rng.random(counts.sum()) * np.repeat(hi - lo, counts)
     age = np.sort(age)[::-1]

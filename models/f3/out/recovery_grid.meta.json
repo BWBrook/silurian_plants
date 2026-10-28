@@ -1,0 +1,74 @@
+{
+  "root_seed": 20261029,
+  "n_reps": 1000,
+  "n_stage_draws": 300,
+  "windows": {
+    "darriwilian-sandbian": [
+      "Darriwilian",
+      "Sandbian"
+    ],
+    "katian-hirnantian": [
+      "Katian",
+      "Hirnantian"
+    ],
+    "telychian-sheinwoodian": [
+      "Telychian",
+      "Sheinwoodian"
+    ]
+  },
+  "growth": {
+    "constant": "Constant(k=50)",
+    "logistic_r0.15": "Logistic(r=0.15, k=100)",
+    "logistic_r0.3": "Logistic(r=0.3, k=100)",
+    "logistic_r0.6": "Logistic(r=0.6, k=100)",
+    "logistic_r0.3_k30": "Logistic(r=0.3, k=30)",
+    "logistic_r0.3_k300": "Logistic(r=0.3, k=300)",
+    "bd_g0.05": "BirthDeath(lam=0.2, mu=0.15)",
+    "bd_g0.10": "BirthDeath(lam=0.25, mu=0.15)"
+  },
+  "efforts": [
+    "real",
+    "constant"
+  ],
+  "levels_spores_bodies": {
+    "low": [
+      30,
+      10
+    ],
+    "mid": [
+      100,
+      30
+    ],
+    "high": [
+      300,
+      100
+    ],
+    "very_high": [
+      1000,
+      300
+    ]
+  },
+  "ramp_logistic_capacity": 100.0,
+  "capacities_profiled": [
+    10.0,
+    30.0,
+    100.0,
+    300.0,
+    1000.0
+  ],
+  "t0_max": 515.5,
+  "t0_step": 0.5,
+  "profile_level": 1.9207294103470602,
+  "criteria": {
+    "coverage_min": 0.9,
+    "bias_max_myr": 2.0,
+    "unbounded_max": 0.1
+  },
+  "max_coverage_se": 0.0158,
+  "timescale_sha256": "29c6cc4a68b1746d1a67c66623e5df30ac5dd316257b55ca5948c9854886f826",
+  "effort_csv_sha256": "f685ef7ad65c9f6eb48381b6ee033797ac0b810aa880c6dccbbe41f96ffcd830",
+  "numpy": "2.5.4",
+  "scipy": "1.18.1",
+  "workers": 10,
+  "seconds": 1703.7
+}
