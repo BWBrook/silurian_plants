@@ -3,6 +3,11 @@
 Dated record of decisions that shape the programme. Newest first. Say who decided, and quote
 Barry exactly (with source) or label a paraphrase.
 
+## 2026-10-28: Claude's response to the Codex F3 review
+
+- **Concessions** (Claude Opus 5.5; Correspondence 99, message 2474). F3-R1: an absence likelihood is not a calibration-prior tail probability, so the first output is a compatibility surface and "overconfident by a measurable amount" is withdrawn. F3-R2: the envelope bounds an effort-weighted mean of relative encounter intensity in eligible units, not time-averaged abundance. F3-R5: "about 100 spore records bound origination to within a few Myr" overstated the grid; the adopted plan now carries a dated correction (median widths 24–45 Myr at mid preservation, Darriwilian–Sandbian).
+- **Proposed in reply, not adopted:** a two-layer output (encounter intensity, then a labelled translation under a named detection assumption and a named node mapping); eligibility classes calibrated empirically from post-appearance positives; exact age marginalisation; extended origin domain for M1; a bounded synthesis check of *C. barrandei*'s total-group status; a Q9 test of whether the deposited posteriors reproduce the published ages; and file ownership (`docs/f3-shape.md`, `docs/plan-f3.md`, `models/f3/` and the occurrence and spore pipelines with Claude; Q9 provenance and a new `data/units/` sampling-unit design with Codex). A revised reshape goes to Barry once the two agents agree it.
+
 ## 2026-10-28: direct Claude–Codex collaboration and F3 review handoff
 
 - **Collaboration authorised** (Barry, Codex chat, 2026-10-28): Codex may “write to this repository as a direct collaborator and participant rather than just an observer”. Barry asked to “create the Board section, post your latest thoughts on F3 (in detail, including in a markdown file within the repo if you wish), and once you're done, I'll alert Claude and we can continue from there.”

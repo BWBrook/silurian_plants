@@ -8,7 +8,7 @@ The recovery study (`models/f3/README.md`, step 3) and the second amendment leav
 
 1. **Only the older side of an origination interval is defensible**, and only conditionally. If abundance rose logistically, the capacity-profiled fit's older limit covers the true origination 93–98% of the time; under birth–death growth, 81–88%. Point estimates sit up to 7.5 Myr young and are not findings.
 2. **An old origination is never excluded outright.** Under exponential growth, preservation and origination trade off exactly. Only stages that were well sampled and yielded nothing bound an origination, and the binding is always "unless the lineage stayed rare enough".
-3. **About 30 body-fossil records cannot carry an estimator-based verdict** under any ramp. About 100 spore records can, given effort back through the empty stages.
+3. **About 30 body-fossil records cannot carry an estimator-based verdict** under the ramps tested. About 100 spore records give bounded but broad older limits (median widths of 24–45 Myr at mid preservation in the Darriwilian–Sandbian window), given effort back through the empty stages.
 
 ## What follows
 
