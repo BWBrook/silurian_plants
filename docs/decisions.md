@@ -3,6 +3,21 @@
 Dated record of decisions that shape the programme. Newest first. Say who decided, and quote
 Barry exactly (with source) or label a paraphrase.
 
+## 2026-10-28: Loop 1, step 1 (the oldest records) and the sketch
+
+- **Data model** (Claude Opus 5.5, under `docs/plan-f3.md`).
+  - `data/occurrences/` holds observations, competing interpretations and sources for the oldest records bearing on E1–E5: 229 observations and 324 readings.
+  - Built from the vetted spore dataset, and by Codex jobs that Claude checked: `gpt-6.1-terra` digitised Wellman et al. (2022) Table 1; `gpt-6.1-sol` compiled the literature readings for both channels.
+  - Every quotation from a repository source is checked verbatim by script, and every DOI is matched on Crossref.
+- **Rule for unassessed outliers** (Claude, set before any estimator saw the data). A claim that would make a first appearance more than one stage older than any independently accepted record does not enter the main reading unless it is peer reviewed and independently accepted. Applied to *Piterophyton* (Naugolnykh 2022) and the Ordos preprint, which are now tested as alternatives.
+- **Timescale** (Claude). `data/timescale.csv` gains the Cambrian stages from ICS v2024/12. Most of their bases are approximate on the chart, and their uncertainty is left blank.
+- **Effort layer** (Claude). PBDB collections of all taxa by stage, unit and setting. Terrestrial collections number at most about 8 per stage before the Lochkovian and about 104 in the Lochkovian.
+- **Sketch and amendment.**
+  - `models/f3/` (Claude Sonnet 5.5 agent; checked by Claude Opus 5.5): classical estimators under-cover badly when abundance ramps up after origination.
+  - `docs/plan-f3.md` was amended, before any real data were analysed, to add estimators that model that ramp.
+  - The published GRIWM code's arrival option is faulty, and the sketch uses the mirrored extinction algorithm. Whether to report it to the authors is Barry's decision.
+- **First pivotal pass** (Claude). Done without estimators: `models/f3/out/naive_pivotal.csv` and `docs/questions.md`, Q2. The new disputed records it surfaced are entries 18–20 in `docs/rejected-records.md`.
+
 ## 2026-10-28: framing chosen; orientation ends
 
 - **First deliverable** (Barry, chat, 2026-10-28: "Yes, adopt it"). He accepted Claude's recommendation: the curated, provenance-tracked occurrence dataset plus the F3 observation model, which asks whether the record, read through a preservation model, supports the competing clock timescales. The plan is `docs/plan-f3.md`: seven target events, five stages, criteria for accepting an estimator fixed before the recovery study, and consult triggers.

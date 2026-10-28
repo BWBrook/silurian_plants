@@ -27,6 +27,9 @@ Compiled 2026-10-28 by a Claude Sonnet 5.5 subagent; revised the same day after 
 | 15 | Swedish Sandbian trilete spores | earliest trilete spores | marks not excluded as artefacts | unresolved dispute | disputed |
 | 16 | Argentine Dapingian cryptospores | earliest cryptospores | validity questioned | unresolved dispute | disputed |
 | 17 | Yea *Baragwanathia* assemblage | Gorstian lycopsid, Victoria | Early Devonian or undated | misdating | disputed |
+| 18 | *Pinnatiramosus qianensis* | Wenlock or Telychian vascular plant, Guizhou | Permian roots in Silurian rock | younger material in older rock | reassigned |
+| 19 | *Volkhoviella primitiva* | Darriwilian rhyniophyte, Russia | too few characters for plant assignment | unresolved identification | disputed |
+| 20 | *Piterophyton caudatum* | Sandbian rhyniophyte with tracheids, Russia | unassessed | unresolved dispute | disputed |
 
 ## Rejected
 
@@ -191,10 +194,34 @@ The taxa and the hypotheses about them need separating, because rejecting a plan
 - **Error type:** misdating or introduced material (unresolved for the eastern localities).
 - **Read status:** from the project cards only.
 
+### 18. *Pinnatiramosus qianensis* Geng 1986 (Guizhou, China)
+
+- **Claimed:** Geng (1986): a Wenlock plant from Fenggang, Guizhou, with a conducting bundle of tubes with secondary thickening, read as among the earliest vascular plants. Its host was later dated as Telychian on brachiopods (as reported by Wang et al. 2013).
+- **Dispute:** Edwards et al. (2007) asked whether it is "the earliest vascular plant or a later rooting system". Wang et al. (2013) report it as Permian plant roots that penetrated Lower Silurian rocks beneath a Permian unconformity, about 285 Ma. The host age is not in doubt; the assumption that the fossil is as old as its host is.
+- **Error type:** younger material in older rock (reassigned).
+- **Read status:** Wang et al. (2013) in full, through the Loop 1 occurrence extraction (`data/occurrences/`); Geng (1986) as an abstract; Edwards et al. (2007) not read (closed-literature register).
+- **Sources:** Geng 1986; Edwards et al. 2007; Wang et al. 2013.
+
+### 19. *Volkhoviella primitiva* Naugolnykh 2019 (Leningrad region, Russia)
+
+- **Claimed:** Naugolnykh (2019): a putative rhyniophyte from the Darriwilian (Ukhaku horizon, "Llanvirn") of the Volkhov River, with a protostelic conducting system.
+- **Dispute:** Wellman et al. (2022) consider that the specimens lack sufficient characters to be assigned unequivocally to plants.
+- **Error type:** unresolved identification; not accepted.
+- **Read status:** both papers, through the Loop 1 occurrence extraction.
+- **Sources:** Naugolnykh 2019; Wellman et al. 2022.
+
+### 20. *Piterophyton caudatum* Naugolnykh 2022 (Leningrad region, Russia)
+
+- **Claimed:** Naugolnykh (2022): a new genus of archaic land plants from the Sandbian of the Volgovo quarry, layer 2, with fertile axes and tracheids reported in an extracted stem. Some systematic passages say Middle rather than Upper Ordovician.
+- **Dispute:** no independent assessment was found. If accepted, it would move both polysporangiophyte bodies and tracheids back by about 25-30 Myr, from the Wenlock or Ludlow to the Sandbian (`models/f3/out/naive_pivotal.csv`). Under the project's main-reading rule for unassessed outliers (`data/occurrences/README.md`), it is tested as an alternative, not counted in the main reading.
+- **Error type:** unresolved dispute; unassessed.
+- **Read status:** the paper in full, through the Loop 1 occurrence extraction.
+- **Sources:** Naugolnykh 2022.
+
 ## Recurring failure modes for the observation model
 
 1. **Animal axes read as plant axes.** Graptolites (entries 1, 2, 8, 9), a conodont (entry 4), an unidentified soft-bodied animal (entry 5), possibly octocorals (entry 1) and hemichordates mimic dichotomising or spiny axes in flattened coalified material (Maletz 2020; Chesselet 1992; Salamon et al. 2018).
-2. **Modern or younger material in old rock.** Roots in erratic boulders (entry 3, provisional); a road-making stockpile at Yea (entry 17); the same concern has not been excluded for fragment finds in marine mudstone (entry 11, my inference).
+2. **Modern or younger material in old rock.** Roots in erratic boulders (entry 3, provisional); a road-making stockpile at Yea (entry 17); Permian roots penetrating Silurian rock (entry 18); the same concern has not been excluded for fragment finds in marine mudstone (entry 11, my inference).
 3. **Reworking, a separate process.** Older material redeposited into a younger bed changes the time and place of life but keeps a minimum age if incorporation is genuine (entry 11); it is different from misidentification and from younger intrusion.
 4. **Look-alike genera sorted by one leaf character.** Once-forked versus five-segment leaves separate *Protolepidodendron* from *Leclercqia* (entry 6); a genus name can therefore carry several ages.
 5. **Stratigraphic revision of a type locality.** Bohemian "Silurian" beds became Givetian (entry 6); graptolite and brachiopod dates disagree at Yea (entry 17).
@@ -208,12 +235,14 @@ The taxa and the hypotheses about them need separating, because rejecting a plan
 - Edwards D, Axe L (2012). Evidence for a fungal affinity for Nematasketum, a close ally of Prototaxites. Botanical Journal of the Linnean Society 168: 1-18. https://doi.org/10.1111/j.1095-8339.2011.01195.x
 - Edwards D, Morel E, Poiré DG, Cingolani CA (2001). Land plants in the Devonian Villavicencio Formation, Mendoza Province, Argentina. Review of Palaeobotany and Palynology 116: 1-18. https://doi.org/10.1016/s0034-6667(01)00059-8
 - Edwards D, Morris JL, Axe L, Duckett JG, Pressel S, Kenrick P (2021). Piecing together the eophytes - a new group of ancient plants containing cryptospores. New Phytologist 233: 1440-1455. https://doi.org/10.1111/nph.17703
+- Edwards D, Wang Y, Bassett MG, Li C-S (2007). The earliest vascular plant or a later rooting system? Pinnatiramosus qianensis from the marine Lower Silurian Xiushan Formation, Guizhou Province, China. PALAIOS 22: 155-165. https://doi.org/10.2110/palo.2005.p05-125r
 - Fairon-Demaret M (1972). Les feuilles fertiles de Protolepidodendron wahnbachense Kräusel et Weyland, 1932 du Dévonien inférieur de Belgique. Bulletin de l'Institut royal des Sciences naturelles de Belgique, Sciences de la Terre 48(6). No DOI.
 - Fairon-Demaret M (1978). Estinnophyton gracile gen. et sp. nov., a new name for specimens previously determined Protolepidodendron wahnbachense Kräusel & Weyland, from the Siegenian of Belgium. Bulletin de la Classe des sciences, Académie royale de Belgique 64: 597-610. https://doi.org/10.3406/barb.1978.58430
 - Fairon-Demaret M (1979). Estinnophyton wahnbachense (Kräusel et Weyland) comb. nov., une plante remarquable du Siegenien d'Allemagne. Review of Palaeobotany and Palynology 28: 145-160. https://doi.org/10.1016/0034-6667(79)90006-x
 - Fairon-Demaret M (1980). A propos des spécimens déterminés Protolepidodendron scharianum par Kräusel et Weyland, 1932. Review of Palaeobotany and Palynology 29: 201-220. https://doi.org/10.1016/0034-6667(80)90059-7
 - Fairon-Demaret M (1981). Le genre Leclercqia Banks, Bonamo et Grierson, 1972 dans le Dévonien moyen de Belgique. Bulletin de l'Institut royal des Sciences naturelles de Belgique, Sciences de la Terre 53(1). No DOI.
 - Gabbott SE, Aldridge RJ, Theron JN (1995). A giant conodont with preserved muscle tissue from the Upper Ordovician of South Africa. Nature 374: 800-803 (title and metadata only). https://doi.org/10.1038/374800a0
+- Geng BY (1986). Anatomy and morphology of Pinnatiramosus, a new plant from the Middle Silurian (Wenlockian) of China. Acta Botanica Sinica 28: 664-670. No DOI.
 - Halle TG (1920). Psilophyton(?) hedei n. sp., probably a land-plant, from the Silurian of Gotland. Svensk Botanisk Tidskrift 14: 258-260. No DOI (title as given in Maletz 2020).
 - Honegger R, Edwards D, Axe L, Strullu-Derrien C (2017). Fertile Prototaxites taiti: a basal ascomycete with inoperculate, polysporous asci lacking croziers. Philosophical Transactions of the Royal Society B 373: 20170146 (title and metadata only). https://doi.org/10.1098/rstb.2017.0146
 - Hooper J, Worth AM, Wellman CH, Clark JW, Donoghue PCJ (2026). Reconstructing spore evolution recalibrates the timescale of land plant diversification. Nature Plants (online 22 October 2026). https://doi.org/10.1038/s41477-026-02432-3
@@ -227,6 +256,8 @@ The taxa and the hypotheses about them need separating, because rejecting a plan
 - Loron CC, Cooper LM, McMahon S, et al. (2026). Prototaxites fossils are structurally and chemically distinct from extinct and extant Fungi. Science Advances 12: eaec6277. https://doi.org/10.1126/sciadv.aec6277
 - Lundblad B (1972). A reconsideration of Psilophyton (?) hedei Halle, Silurian of Gotland (Sweden). Review of Palaeobotany and Palynology 14: 135-139. https://doi.org/10.1016/0034-6667(72)90014-0
 - Maletz J (2020). Order Dendroidea: Introduction, morphology, and systematic descriptions. Treatise Online no. 139, Part V, Second Revision, Chapter 17. https://doi.org/10.17161/to.vi.14679
+- Naugolnykh SV (2019). Plants of the first terrestrial ecosystems. Herald of the Russian Academy of Sciences 89: 502-511. https://doi.org/10.1134/s101933161905006x
+- Naugolnykh SV (2022). Piterophyton gen. nov., a new genus of archaic land plants from the Upper Ordovician deposits of the European part of Russia. Wulfenia 29: 115-130. No DOI.
 - Obrhel J (1959). Ein Landpflanzenfund im mittelböhmischen Ordovizium. Geologie 8: 535-541. No DOI (title as given in Maletz 2020).
 - Pacyna G, Barbacka M (2022). Polish Palaeobotany: 750 Million Years of Plant History as Revealed in a Century of Studies. Palaeozoic Macrofossils. Acta Societatis Botanicorum Poloniae 91: 9123. https://doi.org/10.5586/asbp.9123
 - Retallack GJ (2019). Ordovician land plants and fungi from Douglas Dam, Tennessee. The Palaeobotanist 68: 173-205. https://doi.org/10.54991/jop.2019.43
@@ -240,6 +271,7 @@ The taxa and the hypotheses about them need separating, because rejecting a plan
 - Stur D (1882). Die Silur-Flora der etage H-h1 in Böhmen. Sitzungsberichte der Kaiserlichen Akademie der Wissenschaften, Mathematisch-Naturwissenschaftliche Classe 84: 330-391. No DOI (title as given in Jurina 2009).
 - Theron JN, Kovács-Endrődy E (1986). Preliminary note and description of the earliest known vascular plant, or an ancestor of vascular plants, in the flora of the Lower Silurian Cedarberg Formation, Table Mountain Group, South Africa. South African Journal of Science 82: 102-105. No DOI (title as given in Chesselet 1992).
 - Theron JN, Rickards RB, Aldridge RJ (1990). Bedding plane assemblages of Promissum pulchrum, a new giant Ashgill conodont from the Table Mountain Group, South Africa. Palaeontology 33: 577-594. No DOI (title as given in Chesselet 1992 and Salamon et al. 2018).
+- Wang Y, Edwards D, Bassett M, Xu HH, Xiao J, Jiang Q, Zhang X, Lomax B (2013). Enigmatic occurrence of Permian plant roots in Lower Silurian rocks, Guizhou Province, China. Palaeontology 56: 679-683. https://doi.org/10.1111/pala.12019
 - Wellman CH, Cascales-Miñana B, Servais T (2022). Terrestrialization in the Ordovician. Geological Society, London, Special Publications 532: 171-190. https://doi.org/10.1144/SP532-2022-92
 - Xu H-H, Wang K, Huang Z-L, Tang P, Wang Y, Liu B-C, Yan W (2022). The earliest vascular land plants from the Upper Ordovician of China. Research Square preprint, 23 May 2022. https://doi.org/10.21203/rs.3.rs-1672132/v1
 - Xu H-H, Wang Y (2008). The palaeogeographical significance of specimens attributed to Protolepidodendron scharyanum Krejči (Lycopsida) from the Middle Devonian of North Xinjiang, China. Geological Magazine 145: 295-299. https://doi.org/10.1017/s0016756807004256

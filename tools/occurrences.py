@@ -123,8 +123,18 @@ def crossref_doi(citation):
     year = re.search(r"\((\d{4})", citation)
     title = re.split(r"\)\.?\s*", citation, maxsplit=1)[-1].split(". ")[0]
     url = "https://api.crossref.org/works?rows=3&query.bibliographic=" + urllib.parse.quote(citation[:300])
+    import time
+    import urllib.error
     req = urllib.request.Request(url, headers={"User-Agent": "silurian_plants occurrences.py"})
-    items = json.load(urllib.request.urlopen(req, timeout=30))["message"]["items"]
+    for attempt in range(6):
+        try:
+            items = json.load(urllib.request.urlopen(req, timeout=30))["message"]["items"]
+            break
+        except urllib.error.HTTPError as e:
+            if e.code != 429 or attempt == 5:
+                raise
+            time.sleep(5 * (attempt + 1))
+    time.sleep(1)
     want = set(re.findall(r"[a-z]{4,}", title.lower()))
     for it in items:
         got = set(re.findall(r"[a-z]{4,}", " ".join(it.get("title", [""])).lower()))

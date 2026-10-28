@@ -61,6 +61,7 @@ The tail runs one stage past the oldest record that is not disputed, so that the
 ## Readings
 
 - **Main reading.** The interpretation marked `main` for each observation. It is chosen before any analysis runs.
+- **Unassessed outliers** (rule set by Claude Opus 5.5 on 2026-10-28, before any estimator was run on these data). Some claims would make an event's first appearance more than one stage older than the oldest record accepted by an independent assessment. Such a claim enters the main reading only if it has been peer reviewed and accepted by at least one later independent assessment. Otherwise its main reading is "unassessed outlier, not counted", and the claim as published becomes an alternative for the pivotal analysis to test. This keeps the baseline from resting on a single unchecked report, while the claim is still tested.
 - **Pivotal-records analysis.** Each observation with more than one interpretation is switched to each of its alternatives in turn, one at a time and in combinations of the most influential.
 - **Named readings.** Defined in code. For example:
   - `strict`: every disputed record is rejected;

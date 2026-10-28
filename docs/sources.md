@@ -27,6 +27,8 @@ filters, licences and caveats; read it before use. Raw pulls are on `deep-server
 | PBDB specimens and measurements | none links to a window plant occurrence: plant sizes must come from the literature | held (as a negative result) | `data/eprp/record/` | CC0 |
 | Palynodata 2006 | 76,351 window rows (14,114 spore, 41,483 acritarch, 17,018 chitinozoan) from 2,511 documents; literature to 2006, 2006-era ages, no coordinates | held | `data/external/spores/` | OGL-Canada |
 | Wellman, Steemans & Vecoli 2013 supplement | Ordovician–Silurian spore assemblages (abridged PDF) | held | `data/external/spores/` | CC BY 4.0; full database on request (Barry's decision) |
+| Loop 1 occurrence tail (`data/occurrences/`) | observations, competing interpretations and sources for the oldest records of E1–E5 (229 observations, 324 readings), and an effort layer | held | `data/occurrences/` | derived; see its README |
+| PBDB collections, all taxa, Darriwilian–Emsian | 27,830 collections, the effort layer for body fossils; snapshot 2026-10-28 | local (raw) | `data/occurrences/raw/` (git-ignored) | CC0 |
 | Project spore dataset (MVD-A) | occurrences, vetted first appearances and stage presence from Palynodata plus Wellman 2013 | held | `data/spores/` | derived; see its README |
 | Post-2006 spore literature | 182 priority papers; 33 open full texts extracted (370 assemblages, 97% of records verified in text; two texts fetched into `library/open/`); the rest closed | partly held | `data/spores/sources/mvdb_*.csv` | the remainder waits on Barry's downloads (`docs/closed-literature.csv`, priority 1) |
 | GBDB (Zenodo 2020) | 410 core window plant records (131 genera, mostly China), 3,217 window sections; GTS2012 ages | held | `data/external/gbdb/` | CC BY 4.0 |

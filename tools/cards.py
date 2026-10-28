@@ -203,7 +203,7 @@ def crossref(doi):
     years = {(msg.get(k, {}).get("date-parts") or [[None]])[0][0]
              for k in ("issued", "published-print", "published-online")} - {None}
     authors = msg.get("author") or []
-    return {"title": " ".join(msg.get("title") or [""]), "years": sorted(years),
+    return {"title": re.sub(r"<[^>]+>", "", " ".join(msg.get("title") or [""])), "years": sorted(years),
             "first_author": authors[0].get("family", "") if authors else "",
             "first_given": authors[0].get("given", "") if authors else ""}
 

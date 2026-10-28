@@ -1,0 +1,46 @@
+event,switch,obs_id,label,certain_ma,possible_ma,d_certain,d_possible,set_by_certain,set_by_possible
+E1,(main reading),,,445.2,458.2,0,0,S-mvdb-W2068754956-A028-trilete,S-w22-K11
+E1,S-borenshult-41-9-rubinstein,S-borenshult-41-9-trilete,Sandbian Ambitisporites accepted as trilete,452.8,458.2,7.6,0.0,S-borenshult-41-9-trilete,S-borenshult-41-9-trilete
+E1,S-borenshult-48-2-rubinstein,S-borenshult-48-2-trilete,Probable Sandbian trilete spore,452.8,458.2,7.6,0.0,S-borenshult-48-2-trilete,S-borenshult-48-2-trilete
+E1,S-palynodata-01859-trilete-a,S-palynodata-01859-trilete,triletes as reported,445.2,486.85,0.0,28.65,S-mvdb-W2068754956-A028-trilete,S-palynodata-01859-trilete
+E1,S-palynodata-02486-trilete-a,S-palynodata-02486-trilete,triletes as reported,458.2,471.3,13.0,13.1,S-palynodata-02486-trilete,S-palynodata-02486-trilete
+E1,S-palynodata-02625-trilete-a,S-palynodata-02625-trilete,triletes as reported,458.2,471.3,13.0,13.1,S-palynodata-02625-trilete,S-palynodata-02625-trilete
+E1,S-palynodata-04198-trilete-a,S-palynodata-04198-trilete,triletes as reported,458.2,486.85,13.0,28.65,S-palynodata-04198-trilete,S-palynodata-04198-trilete
+E1,S-palynodata-05164-trilete-a,S-palynodata-05164-trilete,triletes as reported,458.2,471.3,13.0,13.1,S-palynodata-05164-trilete,S-palynodata-05164-trilete
+E1,S-palynodata-06513-trilete-a,S-palynodata-06513-trilete,triletes as reported,445.2,486.85,0.0,28.65,S-mvdb-W2068754956-A028-trilete,S-palynodata-06513-trilete
+E1,S-palynodata-06530-trilete-a,S-palynodata-06530-trilete,triletes as reported,458.2,469.4,13.0,11.2,S-palynodata-06530-trilete,S-palynodata-06530-trilete
+E1,S-palynodata-12090-trilete-a,S-palynodata-12090-trilete,triletes as reported,469.4,486.85,24.2,28.65,S-palynodata-12090-trilete,S-palynodata-12090-trilete
+E1,S-palynodata-15965-trilete-a,S-palynodata-15965-trilete,triletes as reported,445.2,486.85,0.0,28.65,S-mvdb-W2068754956-A028-trilete,S-palynodata-15965-trilete
+E1,S-palynodata-18162-trilete-a,S-palynodata-18162-trilete,triletes as reported,445.2,469.4,0.0,11.2,S-mvdb-W2068754956-A028-trilete,S-palynodata-18162-trilete
+E1,S-palynodata-20028-trilete-a,S-palynodata-20028-trilete,triletes as reported,445.2,486.85,0.0,28.65,S-mvdb-W2068754956-A028-trilete,S-palynodata-20028-trilete
+E1,S-palynodata-21120-trilete-a,S-palynodata-21120-trilete,triletes as reported,458.2,471.3,13.0,13.1,S-palynodata-21120-trilete,S-palynodata-21120-trilete
+E1,S-w22-S2-rubinstein,S-w22-S2,Sandbian triletes and cryptospores accepted,452.8,458.2,7.6,0.0,S-w22-S2,S-w22-K11
+E1,S-w22-S2-w22,S-w22-S2,Sandbian assemblage retained; pre-Sandbian identifications rejected,452.8,458.2,7.6,0.0,S-w22-S2,S-w22-K11
+E2,(main reading),,,458.2,471.3,0,0,S-palynodata-18701-cryptospore,S-w22-Dp1
+E2,S-cambrian-irregular-polyads-morris,S-cambrian-irregular-polyads,Cambrian cryptospores used as embryophyte-origin evidence,486.85,538.8,28.65,67.5,S-cambrian-irregular-polyads,S-cambrian-irregular-polyads
+E2,S-palynodata-19344-cryptospore-a,S-palynodata-19344-cryptospore,cryptospores as reported,458.2,486.85,0.0,15.55,S-palynodata-18701-cryptospore,S-palynodata-19344-cryptospore
+E2,S-palynodata-21598-cryptospore-a,S-palynodata-21598-cryptospore,cryptospores as reported,469.4,486.85,11.2,15.55,S-palynodata-21598-cryptospore,S-palynodata-21598-cryptospore
+E2,S-palynodata-21736-cryptospore-a,S-palynodata-21736-cryptospore,cryptospores as reported,471.3,477.1,13.1,5.8,S-palynodata-21736-cryptospore,S-palynodata-21736-cryptospore
+E2,S-palynodata-21884-cryptospore-a,S-palynodata-21884-cryptospore,cryptospores as reported,471.3,477.1,13.1,5.8,S-palynodata-21884-cryptospore,S-palynodata-21884-cryptospore
+E2,S-tremadocian-australia-polyads-inclusive,S-tremadocian-australia-polyads,Inclusive historical cryptospore reading,477.1,486.85,18.9,15.55,S-tremadocian-australia-polyads,S-tremadocian-australia-polyads
+E2,S-w22-Dp2-w22,S-w22-Dp2,"Dapingian cryptospores as reported, validity disputed",469.4,471.3,11.2,0.0,S-w22-Dp2,S-w22-Dp1
+E3,(main reading),,,430.6,432.9,0,0,M-barrandei,M-barrandei
+E3,I-piterophyton-tracheophyte,M-piterophyton,Published Sandbian rhyniophyte with purported tracheids,452.8,458.2,22.2,25.3,M-piterophyton,M-piterophyton
+E3,I-volkhoviella-rhyniophyte,M-volkhoviella,Original putative rhyniophyte,458.2,469.4,27.6,36.5,M-volkhoviella,M-volkhoviella
+E3,I-zbrza-polysporangiate,M-zbrza,Putative non-vascular polysporangiophytes,443.1,445.2,12.5,12.3,M-zbrza,M-zbrza
+E3,I-zbrza-reworked,M-zbrza,Putative older plants redeposited in Hirnantian sediment,443.1,445.2,12.5,12.3,M-zbrza,M-zbrza
+E4,(main reading),,,422.7,425.0,0,0,M-capel-horeb-ludlow,M-capel-horeb-ludlow
+E4,I-ordos-e27-717-tracheids,M-ordos-e27-717,Preprint identification of tracheids in an axis,452.8,458.2,30.1,33.2,M-ordos-e27-717,M-ordos-e27-717
+E4,I-pinnatiramosus-fenggang-telychian,M-pinnatiramosus-fenggang,Later Silurian vascular-plant age assignment,432.9,438.6,10.2,13.6,M-pinnatiramosus-fenggang,M-pinnatiramosus-fenggang
+E4,I-pinnatiramosus-fenggang-wenlock,M-pinnatiramosus-fenggang,Original Wenlock plant with pitted conducting cells,426.7,432.9,4.0,7.9,M-pinnatiramosus-fenggang,M-pinnatiramosus-fenggang
+E4,I-piterophyton-tracheophyte,M-piterophyton,Published Sandbian rhyniophyte with purported tracheids,452.8,458.2,30.1,33.2,M-piterophyton,M-piterophyton
+E4,I-wilson-creek-ludlow,M-wilson-creek,Original Silurian vascular lycopsid,425.0,426.7,2.3,1.7,M-wilson-creek,M-wilson-creek
+E5,(main reading),,,419.62,425.0,0,0,M-aberlemnia-junggaria,M-bathurst-us383
+E5,I-baragwanathia-hundt-lycopsid,M-baragwanathia-hundt,Historical lower Ludlow Baragwanathia claim,425.0,426.7,5.38,1.7,M-baragwanathia-hundt,M-baragwanathia-hundt
+E5,I-bathurst-us384-hooper,M-bathurst-us384,Hooper's Ludlow Zosterophyllum calibration,422.7,426.7,3.08,1.7,M-bathurst-us384,M-bathurst-us384
+E5,I-bolivia-caledonica-lycophyte,M-bolivia-caledonica,Cooksonia caledonica on lycophyte-total-group reading,422.7,426.7,3.08,1.7,M-bolivia-caledonica,M-bolivia-caledonica
+E5,I-ghin-ghin-gorstian,M-ghin-ghin,Gorstian Lower Plant Assemblage,425.0,426.7,5.38,1.7,M-ghin-ghin,M-ghin-ghin
+E5,I-limestone-road-gorstian,M-limestone-road,Gorstian lycopsid and zosterophyll assemblage,425.0,426.7,5.38,1.7,M-limestone-road,M-limestone-road
+E5,I-svalbard-query,M-svalbard,Queried Zosterophyllum with broad Silurian database age,419.62,443.1,0.0,18.1,M-aberlemnia-junggaria,M-pbdb-svalbard
+E5,I-wilson-creek-ludlow,M-wilson-creek,Original Silurian vascular lycopsid,425.0,426.7,5.38,1.7,M-wilson-creek,M-wilson-creek
+E5,I-yea-unspecified-ludlow,M-yea-unspecified,Historical Ludlow Baragwanathia age,422.7,426.7,3.08,1.7,M-pbdb-yea,M-pbdb-yea
