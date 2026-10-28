@@ -15,8 +15,8 @@ python3 tools/backup_nectar.py snapshot --source "$PWD"
 Run the offline integrity regression checks with `python3 tools/test_backup_nectar.py`.
 
 The script checks the source inventory and hashes, requests a local macOS copy-on-write
-capture, checks it against the source, and transfers that stable capture over SSH. If
-the filesystem cannot clone, macOS falls back to a normal copy; the script reserves
+capture, checks it against the source, and transfers that stable capture over SSH with
+compression. If the filesystem cannot clone, macOS falls back to a normal copy; the script reserves
 enough local space for that case.
 The destination verifies every file's SHA-256 and size, checks the captured Git
 objects, and performs a sample restore before promotion. The capture is not an atomic

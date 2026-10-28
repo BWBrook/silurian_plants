@@ -325,7 +325,7 @@ def snapshot(args):
         write_json(stage / "manifest.json", manifest)
         ordinary = stage / "ordinary-files.txt"
         ordinary.write_bytes(b"".join(os.fsencode(p) + b"\0" for p in sorted(set(before["files"]) | set(before["dirs"]))))
-        rsync = ["rsync", "-dtp", "--checksum", "--chmod=Fugo-w", "--from0", "--relative", "--files-from=" + str(ordinary),
+        rsync = ["rsync", "-zdtp", "--checksum", "--chmod=Fugo-w", "--from0", "--relative", "--files-from=" + str(ordinary),
                  "--protect-args", "--partial", "--timeout=600", "-e", "ssh -oBatchMode=yes -oConnectTimeout=15"]
         if receipt["previous"]:
             rsync.append("--link-dest=" + receipt["previous"])
