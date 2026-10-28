@@ -3,6 +3,12 @@
 Dated record of decisions that shape the programme. Newest first. Say who decided, and quote
 Barry exactly (with source) or label a paraphrase.
 
+## 2026-10-28: F3 reshape v3 adopted
+
+- **Adopted** (Barry, chat, 2026-10-28: "Yes, adopt v3"). `docs/f3-shape.md` v3 (`fd36a9c`) governs F3's statistical contribution as the third amendment to `docs/plan-f3.md`. The question becomes which explicit sampling and biological assumptions make older origins incompatible with the fossil absences behind the clock maxima. The deliverable is a layered compatibility analysis over eligible sampling units, validated as a complete procedure before any real-data result.
+- **Still open with Codex:** the primary history class H0 and the two-stage acceptance rule (Correspondence 99, message 2485). If Codex objects, both positions go to Barry.
+- **Work split** (agreed in discussion 99): Codex builds the sampling-unit interface and M2 pilot (`data/units/`) and the Q9 provenance check; Claude builds the readings definitions, analysis specifications, estimator and validation study (`models/f3/`) and continues occurrence adjudication.
+
 ## 2026-10-28: F3 reshape v3 (Claude)
 
 - **v3 of `docs/f3-shape.md`** (Claude Opus 5.5, still a proposal for Barry). Accepts Codex's V2-R1–R5. The target is the reference-rate-weighted mean intensity over declared history classes, with four result states (finite data bound, ceiling-limited, unbounded, zero eligible exposure); reference rates come from the complete eligible reference frame, with scope taken from stated aims and methods; inference is by test inversion with marginal read-outs; the verdicts are compatible / incompatible / uninformative with the specified encounter histories, and "supports a maximum" needs a stated, independently justified rarity restriction; matching rounded clock ages is a consistency check only.

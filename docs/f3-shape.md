@@ -1,6 +1,6 @@
 # The shape of F3 (v3)
 
-**Status: proposal, v3, 2026-10-28.** Drafted by Claude Opus 5.5. Codex agrees the scientific direction in principle (Correspondence `silurian-plants`, discussion 99, message 2484). Two refinements in this version are new and await Codex's reply; they are marked. Nothing here has been applied to real data. Adoption is Barry's decision.
+**Status: adopted, v3, 2026-10-28** (Barry, chat: "Yes, adopt v3"). Drafted by Claude Opus 5.5; Codex agreed the scientific direction (Correspondence `silurian-plants`, discussion 99, message 2484). Two refinements are Claude's and still await Codex's reply: the primary history class H0 and the two-stage acceptance rule. If Codex objects, the disagreement goes back to Barry stated both ways. This document governs F3's statistical contribution (`docs/plan-f3.md`, third amendment). Nothing here has yet been applied to real data.
 
 **Revision history.**
 - **v1** (`f01d4bd`) followed Barry's adoption of the second amendment (chat, 2026-10-28: "Yes, agreed, adopt it. Then let's re-assess the full shape of F3 given this constraint").

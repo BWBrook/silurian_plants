@@ -92,7 +92,14 @@ Testing old narratives is a third contribution, and a programme-level one (Q5 in
    6. **Body-fossil events (E3–E5).** These have too few records for any estimator to pass under a ramp. Report their intervals with that caveat, and rest their verdicts mainly on the pivotal records.
 
    These changes narrow the claim from "origination windows" to "sampling-based older limits on origination, conditional on the shape of the rise", the quantity the clock-maximum tests require. The original criteria are kept above for the record.
-   **Shape of F3 after the second amendment** (proposed 2026-10-28, awaiting Barry): `docs/f3-shape.md` proposes testing the fossil-absence maxima behind the clock results with an abundance envelope over the empty, sampled stages, and moving E4–E7 out of the statistical contribution. If adopted, it replaces the event table's statistical roles and steps 4–5 below.
+   **Third amendment: F3 reshaped** (adopted 2026-10-28; Barry, chat: "Yes, adopt v3"). `docs/f3-shape.md` v3 now governs contribution B. It was drafted by Claude Opus 5.5 after two Codex reviews (`docs/audits/2026-10-28-f3-reshape-codex-review.md`, `docs/audits/2026-10-28-f3-reshape-v2-codex-review.md`).
+   - **The question** becomes: under which explicit sampling and biological assumptions are older origins incompatible with the fossil absences behind the clock maxima (515.5, 459.1 and 431.2 Ma)?
+   - **What is reported:** compatibility in eligible sampling units, in three labelled layers: encounter intensity, biological translation, node implication.
+   - **The validation study** in `docs/f3-shape.md` replaces the acceptance criteria above for the new procedure.
+   - **Events:** E4 and E5 become synthesis only; E6 is parked under Q4; E7 moves to Q3.
+   - **Steps 4 and 5 below** are carried out in the order M2, M1, M3.
+
+   The original text of this plan is kept for the record.
 4. **Apply and find the pivotal records.** Run the accepted estimators on each event under its main reading. Then repeat across the readings of the contested tail. A record is **pivotal** if its reading flips a verdict (for example, compatibility with a clock maximum) or moves the estimated window by more than 1 Myr. The output is a short list of the adjudications that decide each answer, with what each reading implies.
 5. **Value of information.** Rank the evidence that could still be obtained by how much it would narrow an answer, rerunning with each item resolved each way. Candidates:
    - a closed paper;
