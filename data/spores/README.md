@@ -2,8 +2,8 @@
 
 The project's spore channel for framing F3 (`docs/framings.md`): occurrences, first appearances
 and stage-by-stage presence of cryptospores and trilete spores, Darriwilian to Emsian and
-beyond. This is MVD-A of `docs/spore-compilation-plan.md`, built from open sources only. The
-post-2006 literature (MVD-B) is still to add.
+beyond. MVD-A of `docs/spore-compilation-plan.md` was built from open sources. A subset of the
+post-2006 literature (MVD-B) has also been extracted; coverage remains incomplete.
 
 Rebuild with `uv run tools/spores.py build`. `uv run tools/spores.py check` validates the
 crosswalks, and `uv run tools/spores.py inputs` regenerates the work lists they are built from.
@@ -30,8 +30,9 @@ crosswalks, and `uv run tools/spores.py inputs` regenerates the work lists they 
   - Sample-level assignments were checked by eye in two tables (Podolia Table 1 and Precordillera
     SOM 3). Of Sol's 114 records there, one was false and one was missing; both are corrected in
     `crosswalks/mvdb_corrections.csv`.
-  - Most priority post-2006 papers, including Rubinstein et al. (2010), are closed and wait on
-    Barry's institutional downloads.
+  - Most priority post-2006 papers remain to be obtained or extracted. Rubinstein et al. (2010)
+    and its supplement were obtained from the publisher on 2026-10-28 (`library/open.tsv`); they
+    have not yet been incorporated into this MVD-B extraction (Q1, Q2).
   - Ages and units for this layer are Codex's proposals from the papers' stated ages;
     circularly dated or unstated ages are set to low confidence.
 
@@ -83,7 +84,7 @@ The pilot is recorded in `docs/audits/2026-10-27-codex-pilot.md`.
   - trilete spores certain by 445.2 Ma and possible from 458.2 Ma (Katian).
   
   The Dapingian cryptospores of Rubinstein et al. (2010) are absent because Palynodata stops in
-  2006. The post-2006 literature (MVD-B) is the next layer.
+  2006 and this paper has not yet been added to the extracted MVD-B layer.
 - **Ages are crosswalked, not re-dated.** Each record carries the ICS stage range implied by its
   age names. Palynodata's own numeric ages are 2006-era and are not used.
 - **Spore classes are morphological.** Following Hooper et al. (2026), a trilete spore marks an

@@ -7,7 +7,7 @@ in `docs/questions.md`.
 
 Status values:
 - **held**: in the repository, committed;
-- **local**: on mac-mini only, under a `local/` folder, because of licence or size;
+- **local**: on mac-mini only, in a git-ignored `local/` or `library/` folder, because of licence or size;
 - **limited**: access blocked or on request;
 - **missing**: not yet sourced;
 - **ruled out**: checked and unusable, with the reason given.
@@ -16,7 +16,8 @@ Provenance: `data/eprp/` holds material from Barry's EPRP mirror; `data/external
 acquired from outside EPRP. Both came from the EPRP Mac-Mini session. Each area README gives
 filters, licences and caveats; read it before use. Raw pulls before 2026-10-28 are on `deep-server` under
 `/data/codex/silurian_plants/raw/` (4.9 GB). That host has been unreachable over Tailscale since
-2026-10-28. The EPRP mirror is backed up on `nectar-vm` (`AGENTS.md`), and new raw pulls go to
+2026-10-28. The EPRP mirror on `nectar-vm` is the canonical location for EPRP data files until Barry
+says otherwise (`AGENTS.md`); check individual snapshots before use. New raw pulls go to
 `nectar-vm:/data/codex/silurian_plants/raw/`. The `local/` folders hold 2.5 GB on mac-mini.
 
 ## 1. Fossil occurrences
@@ -32,7 +33,8 @@ filters, licences and caveats; read it before use. Raw pulls before 2026-10-28 a
 | Loop 1 occurrence tail (`data/occurrences/`) | observations, competing interpretations and sources for the oldest records of E1–E5 (229 observations, 324 readings), and an effort layer | held | `data/occurrences/` | derived; see its README |
 | PBDB collections, all taxa, Darriwilian–Emsian | 27,830 collections, the effort layer for body fossils; snapshot 2026-10-28 | local (raw) | `data/occurrences/raw/` (git-ignored) | CC0 |
 | Project spore dataset (MVD-A) | occurrences, vetted first appearances and stage presence from Palynodata plus Wellman 2013 | held | `data/spores/` | derived; see its README |
-| Post-2006 spore literature | 182 priority papers; 33 open full texts extracted (370 assemblages, 97% of records verified in text; two texts fetched into `library/open/`); the rest closed | partly held | `data/spores/sources/mvdb_*.csv` | the remainder waits on Barry's downloads (`docs/closed-literature.csv`, priority 1) |
+| Post-2006 spore literature | 182 priority papers; 33 open full texts extracted (370 assemblages, 97% of records verified in text; two texts fetched into `library/open/`); other papers remain to be obtained or extracted | partly held | `data/spores/sources/mvdb_*.csv` | access varies; see `docs/closed-literature.csv` |
+| Rubinstein et al. 2010 (Q1, Q2) | Paper and original supporting document, including stratigraphy and colour plate; acquired 2026-10-28, not yet incorporated in MVD-B or the occurrence adjudication. The supplement's plain-text extract `library/open/W1820528062_SI.txt` omits its four figures; use the original document for them | local | `library/open/W1820528062.pdf`, `library/open/W1820528062_SI.doc`; URLs and hashes in `library/open.tsv` | Publisher labels article Free Access; Crossref records Wiley terms, not a CC licence; keep local |
 | GBDB (Zenodo 2020) | 410 core window plant records (131 genera, mostly China), 3,217 window sections; GTS2012 ages | held | `data/external/gbdb/` | CC BY 4.0 |
 | Diversity compilations | Xiong 2013, Silvestro 2015, Capel 2025 mirrored; Capel 2021, 2022, Cascales-Miñana 2016, Ball 2022 local; Capel 2023 limited | mixed | `data/external/deposits/` | per deposit |
 | Fossil Record 2 plant families | Harland 1990 ages | local | `data/eprp/local/record/` | none stated |

@@ -184,7 +184,7 @@ The taxa and the hypotheses about them need separating, because rejecting a plan
 - **Dispute:** the table of Wellman et al. (2022) notes that Strother et al. (2015) questioned the validity of the cryptospores described in the Argentine paper. That is a challenge to the identification of the spores; no source read challenges the Dapingian age. I did not read Strother et al.'s reasons.
 - **Current interpretation and age:** unresolved; Dapingian if the spores are valid.
 - **Error type:** unresolved dispute over identification (validity as cryptospores), not misdating.
-- **Read status:** Wellman et al.'s table and its footnote read; Rubinstein et al. and Strother et al. not read.
+- **Read status:** Wellman et al.'s table and its footnote read for this entry; Rubinstein et al.'s paper and supplement obtained and checked for identity on 2026-10-28, but not yet incorporated into the adjudication; Strother et al. not read for this entry.
 - **Sources:** Rubinstein et al. 2010; Strother et al. 2015; Wellman et al. 2022.
 
 ### 17. Yea *Baragwanathia* assemblage (Victoria, Australia)

@@ -24,9 +24,10 @@ authorised. Other framings need their own decision before model code starts.
   verified facts. Read each area's README before use, and regenerate tables with its scripts
   rather than editing them. `data/eprp/local/` is git-ignored (unlicensed, no-derivatives or bulky
   material) and exists only on mac-mini; rebuild it with the scripts.
-- **Compute and mirrors (from 2026-10-28).** `deep-server` is unreachable over Tailscale (campus
-  block; `~/work/nectar/docs/exchange/current_status.md`). The EPRP mirror, `deep-server:/data/paleodata/<id>/`,
-  is backed up at `nectar-codex-ts:/data/codex/artifacts/eprp-paleodata-backup/latest/<id>/`.
+- **Compute and mirrors (from 2026-10-28).** `deep-server` and `wsl-laptop` are unavailable over
+  Tailscale (campus block; Barry, 2026-10-28). For EPRP data files, use
+  `nectar-codex-ts:/data/codex/artifacts/eprp-paleodata-backup/latest/<id>/` as the canonical mirror
+  until Barry says otherwise. Check the currency and integrity of the particular data used.
   `nectar-vm` runs at `c3.large` (8 vCPU, 16 GiB) for this work; project payloads go under
   `/data/codex/silurian_plants/` there.
 - `docs/audits/`: independent checks of cards and deposits.
