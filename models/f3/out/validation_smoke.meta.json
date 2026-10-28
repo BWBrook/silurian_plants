@@ -1,0 +1,133 @@
+{
+  "root_seed": 20261030,
+  "replicate_seed": "SeedSequence(root_seed, spawn_key=(cell id, replicate)); child 0 simulates, child 1 draws boundaries",
+  "reps": 200,
+  "step_ma": 2.0,
+  "age_draws": 60,
+  "nodes": 48,
+  "readouts": [
+    1.0,
+    0.1,
+    0.01
+  ],
+  "crits": {
+    "chi2_1": 3.8414588206941205,
+    "one_sided": 2.705543454095418,
+    "zero_count": 5.991464547107982
+  },
+  "fstar_tol": 0.001,
+  "cells": [
+    {
+      "name": "H0c_f1.0_k2",
+      "history": "H0c",
+      "f": 1.0,
+      "k": 2.0,
+      "scale": 0.05,
+      "id": 0,
+      "t0": 476.0,
+      "tau0": 452.8,
+      "p": [
+        0.12,
+        0.04
+      ]
+    },
+    {
+      "name": "H0c_f0.3_k2",
+      "history": "H0c",
+      "f": 0.3,
+      "k": 2.0,
+      "scale": 0.05,
+      "id": 1,
+      "t0": 476.0,
+      "tau0": 452.8,
+      "p": [
+        0.12,
+        0.04
+      ]
+    },
+    {
+      "name": "H0c_f0.3_kinf",
+      "history": "H0c",
+      "f": 0.3,
+      "k": "inf",
+      "scale": 0.05,
+      "id": 2,
+      "t0": 476.0,
+      "tau0": 452.8,
+      "p": [
+        0.12,
+        0.04
+      ]
+    },
+    {
+      "name": "H0m_f0.3_d6_k2",
+      "history": "H0m",
+      "f": 0.3,
+      "delay": 6.0,
+      "k": 2.0,
+      "scale": 0.05,
+      "id": 3,
+      "t0": 476.0,
+      "tau0": 452.8,
+      "p": [
+        0.12,
+        0.04
+      ]
+    },
+    {
+      "name": "H0_duty0.3_k2",
+      "history": "H0",
+      "f": 0.3,
+      "k": 2.0,
+      "scale": 0.05,
+      "id": 4,
+      "t0": 476.0,
+      "tau0": 452.8,
+      "p": [
+        0.12,
+        0.04
+      ]
+    },
+    {
+      "name": "logistic_g0.5_h11.6_k2",
+      "history": "logistic",
+      "g": 0.5,
+      "h": 11.6,
+      "k": 2.0,
+      "scale": 0.05,
+      "id": 5,
+      "t0": 476.0,
+      "tau0": 452.8,
+      "p": [
+        0.12,
+        0.04
+      ]
+    }
+  ],
+  "design": {
+    "p": [
+      0.12,
+      0.04
+    ],
+    "class_weights": [
+      0.6,
+      0.4
+    ],
+    "k": 2.0,
+    "scale": 0.05,
+    "broad_frac": 0.12,
+    "cluster_mean": 3.0
+  },
+  "elapsed_seconds": 1005.7212290763855,
+  "workers": 8,
+  "python": "3.14.4",
+  "numpy": "2.5.4",
+  "scipy": "1.18.1",
+  "sha256": {
+    "envelope.py": "d0064d209b37cb6d407a2d9d924a682296fe7456b96a6299d96fd87a6e6be2a0",
+    "units_sim.py": "e58194bfe3e2d665f1d78d071cee8de6b82272d58928650cb479d387db7793bc",
+    "validate.py": "1d43bed9a0a9f21c054e64409d0c2aec796e1b2a2e67b9a029b1c6cb7c18e651",
+    "timescale.csv": "29c6cc4a68b1746d1a67c66623e5df30ac5dd316257b55ca5948c9854886f826",
+    "effort.csv": "4f19216162fda42511e1fcb830ed7cc995ea3d1667a49fee9a82874c08a3dc76"
+  }
+}

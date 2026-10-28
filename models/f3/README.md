@@ -431,3 +431,179 @@ Rows: the log-likelihood over (T0, rate) with psi profiled out; the profile for 
 - Lineage-level birth-death with a trait, extinction before the window end, dating by biozone or radiometric ages: not done.
 - Estimators that model N(t) and preservation: done (`ramp.py`). Cross-checks against PyRate, `tbea` and StratPal: not done.
 - Identifiability and the acceptance criteria: done above. Ensembles on `deep-server`: not done.
+
+## Step 4: the compatibility estimator (F3 reshape v3)
+
+Implements the estimator and validation harness of `docs/f3-shape.md` (v3, "What F3 reports" and "Validation before any real-data
+result"). Written by Claude Sonnet 5.5 (`claude-sonnet-5-5`), 2026-10-28, to the construction designed by Claude Opus 5.5. Nothing
+here has been run on real data: there is no real unit table yet. The smoke run below is a check that the machinery works, not the
+validation study; the full grid and its acceptance run are for the parent and Codex to fix.
+
+### Files
+
+- `envelope.py`: the estimator. `Units` (eligible binary units: stage range, class, cluster, outcome), `AgeModel` (stage bases and
+  their uncertainty from `data/timescale.csv`, via `sim.Timescale`), `Spec` (the inference fields of a specification; `Spec.from_toml`),
+  and `Problem`, which takes one unit table and finds its own first appearance, reference window and calibrated classes. Methods:
+  `fstar(cls, T)` (the bound and its state), `origin_tables`, `origin_set` and `lr_origin` (test inversion), `abar_truth` (the target
+  for a known path), `grid`. Also `no_detection_probability`, `p0_bound` and `exact_count_crit`.
+- `units_sim.py`: unit tables on the real design. Units per stage are `round(scale * n_docs)` with `n_docs` the spore effort of
+  `data/occurrences/effort.csv` summed over palaeogeographic units; a fraction have ranges widened by up to three stages; true ages are
+  uniform within the (true-boundary) range; clusters are runs of consecutive true age with Gamma(k, k) effects; two classes. The true
+  history (`Truth`: H0c, H0m, H0, logistic, H1) fixes a(t) = 1 up to `tau0`, a class path to the origin `t0`, 0 beyond.
+  The estimator sees only ranges, classes, clusters and outcomes and must find tau itself.
+- `validate.py`: the harness and the two-stage acceptance rule (`stage1`, `stage2`, `pass_probability`). `uv run models/f3/validate.py`
+  runs the smoke grid (6 cells, 200 replicates each, about 17 min on mac-mini with 8 workers under a load average of 10 to 17) and
+  writes `out/validation_smoke.csv` (one row per cell), `out/validation_smoke_reps.csv` (one row per replicate) and
+  `out/validation_smoke.meta.json` (root seed 20261030, spawn keys, settings, file hashes).
+- `test_envelope.py`: 40 tests; the whole of `models/f3` is 114 tests, all passing (about 12 s).
+
+```bash
+uv run --with pytest --with numpy --with scipy python -m pytest -q models/f3
+uv run models/f3/validate.py [--reps N] [--cells NAME ...] [--workers W] [--tag TAG]
+```
+
+### The construction, as implemented
+
+- **Detection.** Unit i detects with probability 1 - exp(-r_c u_k a(t_i)); r_c = -log(1 - p_c); u_k ~ Gamma(k, rate k) is shared by
+  the units of cluster k (k = inf: none). A cluster has no detection with probability (1 + Lambda_k / k)^-k, Lambda_k = sum r_i a(t_i).
+- **Boundaries and ages.** Each of `age_draws` draws takes independent normal stage bases (sd `base_unc_ma`, 0 where blank), sorted;
+  all units share the draw. Within a draw a unit's age is uniform in its range, and that is integrated analytically (the fractions
+  Qref of the range younger than tau and Qmid inside (tau, T]), not sampled. `age_draws` therefore counts boundary draws.
+- **Likelihood.** L = mean over draws of the product over clusters of the integral over u of Gamma(u) times the product over the
+  cluster's units of D_i(u) (detected) or 1 - D_i(u) (not), where D_i(u) is the unit's detection probability given u, averaged over its
+  age. Units are independent given u and the draw. This replaces the enumeration for small clusters and Monte Carlo for large ones
+  with one route for every cluster size: a trapezoid sum in log u (48 nodes; for k = 1, 2, 5 and any total rate the absolute error is below 6e-8 and
+  the relative error below 5e-4 wherever P0 exceeds 1e-6; `test_gamma_nodes_reproduce_the_closed_form_and_monte_carlo`). Enumeration is the test oracle. Reference units (a = 1) and older units
+  share the integral, so a cluster spanning the first appearance is treated jointly; with finite k the reference likelihood is
+  therefore not a plain binomial.
+- **First appearance and windows.** tau is the older boundary (base) of the oldest stage holding a certain detection (a detected unit
+  whose whole range lies in that stage; broad-range detections do not count). That stage and the `reference_stages - 1` stages
+  younger than it are the reference window; units wholly inside it are reference units; units with any part older than tau are older
+  units; units wholly younger than tau but outside the window are dropped. A class with fewer than `min_units_per_class` reference
+  units is uncalibrated and loses its units (reported in `n_dropped_uncalibrated`). No certain detection raises `NoFirstAppearance`.
+- **Histories** (origin T > tau, a(t) = 0 beyond T): H0c, a = f; H0m, constant or delayed step (a = f up to T - d, d on `delays_ma`);
+  H0, any 0 <= a <= 1; logistic; H1, ceiling `h1_ceiling`.
+  - **H0 bound.** For fixed age-averaged intensities m_i, P(no detection) is largest when each a(t_i) is an independent Bernoulli(m_i),
+    because exp(-r x) and (1 + x/k)^-k are convex and Bernoulli(m) dominates every [0, 1] variable with mean m in the convex order. So
+    P0_max(m) = prod_k E_B[(1 + sum_{i in k} r_i B_i / k)^-k], which is the u-integral with phi_i = 1 - m_i (1 - e^(-r_i u)). It is
+    attained by bang-bang paths (a fine comb of 0 and 1 with duty cycle m_i). Implemented as the proportional allocation m_i = Qref_i + x Qmid_i
+    (the reference part stays exact); H1 is the same with Bernoulli height `h1_ceiling`. A detected older unit takes the opposite extreme,
+    the constant path (Jensen), which maximises its detection probability; each unit's bound depends only on its own mean, so the
+    product bounds every path with those means. `test_convex_order_bound_dominates...` checks P0_max >= P0 over 60 random cluster draws
+    for k = inf, 2 and 0.8, and equality for bang-bang atoms; `test_engine_likelihood_matches_enumeration_*` checks the whole engine
+    (clusters spanning tau, a detected straddler, the bound with C = 1 and 3) against explicit enumeration to 2e-5.
+  - **Logistic.** a(t) = L(t) / L(tau_s), L(t) = 1 / (1 + exp(-g ((T - t) - h))), nodes at six ages per unit; g in (0.001, 0.15, 0.5, 2) and
+    h in (0, 0.5, 1, 1.5) times (T - tau). g = 0.001 is the near-constant member (the ceiling).
+- **Target and bound.** abar(T) = E[sum r_i a(t_i) 1{tau < t_i <= T}] / E[sum r_i 1{tau < t_i <= T}] over draws and ages. f*_H(T) is the
+  largest abar(T) over paths in H whose profile likelihood-ratio test is not rejected; the reference rates are profiled jointly (L-BFGS-B
+  on log r_c) and the statistic is referred to chi-square(1) at `alpha`. States: `finite`, `ceiling-limited` (the class ceiling, 1 for H0, `h1_ceiling`
+  for H1, is not rejected), `unbounded` (no ceiling: `H1-no-ceiling`, where the bound is trivial), `zero-exposure`.
+- **Origin sets.** T is excluded when the LR for "a >= f_min on (tau, T]" (maximum over f in [f_min, 1] against the maximum over f in [0, 1]
+  at the same T) exceeds the critical value. H0m takes the best delay d for both: the null is "some d on the grid and f >= f_min explain the
+  absences". A set is a list of runs on the 2 Myr grid from tau to the oldest possible unit age plus the longest delay, then the
+  domain edge; each run end is widened to the next grid point, so a set contains the whole bracket in which its boundary lies. It is
+  `unbounded` when the last point is not rejected, and `connected` is reported. A detected older unit lying wholly older than T makes
+  T inadmissible (LR = inf). Each f_min read-out is a marginal statement; the whole curve is not claimed.
+- **Acceptance rule.** `stage1(944) = pass`, `stage1(915) = fail`, 916 to 943 `borderline`; `stage2(1880) = pass`.
+  P(pass) is 0.983, 0.57, 0.069 and 0.002 at true coverage 0.95, 0.94, 0.93 and 0.92 (`test_acceptance_operating_characteristics`).
+
+### What was checked
+
+- Engine against enumeration (above); the quadrature against the closed gamma-cluster result and 2e6 Monte Carlo draws; the bound
+  against random paths.
+- **Chi-square calibration in a regular case** (`test_profile_lr_is_calibrated_in_a_regular_case`): 100 reference units, 120 older
+  units with true f = 0.5, one class, reference rate profiled jointly. Over 500 replicates the LR at the true f is within chi-square(1)
+  at 0.95 +/- 0.03 (0.947, 0.937, 0.952 over three seeds of 1000 in a scratch run; mean LR 1.01 to 1.07).
+- **Four states on constructed cases**, including Codex's counterexample (`test_codex_counterexample...`): one eligible unit whose age
+  falls in the window with probability 0.1. Under H0 the ceiling is not rejected; under H1 it is not rejected for ceilings 3, 10 and 1000
+  (f* = C grows without bound); with no ceiling the state is `unbounded`; with 40 units certain to be in the window f* is finite.
+  A finite f* equals an independent scipy solution of the zero-count problem to 0.2%.
+- **tau selection**: the oldest certain-detection stage, broad detections ignored, the window, outside units and uncalibrated classes, and
+  `NoFirstAppearance`. **Boundary draws**: sorted, stated sd, blank stages fixed, shared by all units.
+- The boundary shortcut in the f maximisation (`ell` is taken to fall from f = 0 when it falls at f = 0.02 and f = 1) against a dense scan with a detected
+  older unit; and, on four replicates, equal results to the full search (the shortcut made the harness six times faster).
+- Not done: an independent review of `envelope.py`; a cross-check of the profile against a different implementation of the same
+  likelihood.
+
+### Smoke results
+
+Six cells, 200 replicates each (`out/validation_smoke.csv`), all with T0 = 476 Ma, tau0 = 452.8 Ma (a = 1 for younger ages),
+reference detection p = (0.12, 0.04) with class weights 0.6 / 0.4, scale 0.05 (505 units; about 110 reference and 90 to 135 older
+units), 60 boundary draws, 48 nodes, 2 Myr origin grid, readouts 1, 0.1, 0.01. Monte Carlo error on a coverage figure is at most 0.035
+(0.015 near 0.95). No replicate failed; every replicate had a certain detection.
+
+A replicate is **trivial** when T0 is at or below the estimated tau: the null is vacuous, the origin set contains T0 by construction
+and f* has no exposure. All-replicate coverages count trivial ones as covered (the unconditional property of the reported set);
+f* coverage is over the non-trivial ones (the only ones that report a bound). The estimator measures intensity relative to its own
+reference window, and that window is wherever the first appearance falls, so the true target is abar_rel = abar_true / a_ref, with a_ref
+the true path averaged over the realised reference units (`a_ref` below).
+
+| Cell | Non-trivial | tau (median) | a_ref | r_hat / r_true | H0c f_min = 1: unbounded / older end | f_min = 0.1: unbounded |
+|---|---|---|---|---|---|---|
+| H0c f = 1, k = 2 | 55/200 | 477.1 | 0.99 | 1.02 | 0.01 / 489.1 | 0.99 |
+| H0c f = 0.3, k = 2 | 135/200 | 471.3 | 0.57 | 0.62 | 0.05 / 487.3 | 0.99 |
+| H0c f = 0.3, k = inf | 138/200 | 471.3 | 0.56 | 0.72 | 0.09 / 483.4 | 0.98 |
+| H0m f = 0.3, d = 6, k = 2 | 200/200 | 469.4 | 0.72 | 0.78 | 0.03 / 475.4 | 0.93 |
+| H0 comb duty 0.3, k = 2 | 134/200 | 471.3 | 0.56 | 0.63 | 0.14 / 483.3 | 0.97 |
+| logistic g = 0.5, h = 11.6, k = 2 | 197/200 | 469.4 | 0.90 | 0.99 | 0.01 / 473.4 | 0.95 |
+
+The older-end median is over bounded sets only. At f_min = 0.01 every set is unbounded.
+
+Coverage. Origin test: the exact test at T0 at the largest read-out that is true of the truth (relative to the reference window), all
+replicates, chi-square(1) value 3.84 / candidate `exact_count_crit`. f*: over non-trivial replicates with exposure, for the classes that
+contain the truth, 3.84 / `exact_count_crit`; n in brackets.
+
+| Cell | Origin H0c | Origin H0m | f* H0c | f* H0m | f* H0 | f* logistic | f* H1 |
+|---|---|---|---|---|---|---|---|
+| H0c f = 1, k = 2 | 0.94 / 0.95 | 0.99 / 0.99 | 0.80 / 0.84 (55) | 0.80 / 0.84 (55) | 0.80 / 0.84 (55) | - | 0.82 / 0.85 (55) |
+| H0c f = 0.3, k = 2 | 1.00 / 1.00 | 1.00 / 1.00 | 0.90 / 0.98 (135) | 0.93 / 0.98 (135) | 0.93 / 0.99 (135) | - | 0.98 / 0.99 (135) |
+| H0c f = 0.3, k = inf | 1.00 / 1.00 | 1.00 / 1.00 | 0.87 / 0.96 (138) | 0.88 / 0.96 (138) | 0.87 / 0.96 (138) | - | 0.91 / 0.97 (138) |
+| H0m f = 0.3, d = 6, k = 2 | none true | 1.00 / 1.00 | - | 0.94 / 0.96 (200) | 0.95 / 0.96 (200) | - | 0.98 / 0.98 (200) |
+| H0 comb 0.3, k = 2 | 1.00 / 1.00 (n 66) | 1.00 / 1.00 (n 163) | - | - | 0.90 / 0.96 (134) | - | 0.93 / 0.97 (134) |
+| logistic, k = 2 | 1.00 / 1.00 (n 3) | 1.00 / 1.00 | - | - | 0.92 / 0.94 (197) | 0.88 / - (197) | 0.94 / 0.95 (197) |
+
+States over the non-trivial replicates (finite / ceiling-limited; `H1-no-ceiling` is unbounded in 0.98 to 1.00 of replicates):
+H0c 0.20 to 0.76 finite across cells (0.20 at f = 1, 0.47 at f = 0.3, 0.76 for the logistic), H0 the same, H1 0.72 to 0.97 finite.
+
+**What the smoke run shows.**
+
+1. **The chi-square(1) test is anti-conservative where the F3 data live, in the zero-count regime.** With no older detection the
+   statistic is -2 log P0 and a size-0.05 test needs P0 <= 0.05, that is a critical value of 5.99, not 3.84: 3.84 rejects whenever P0 < 0.147.
+   With exposure E (the summed reference rates of the older units in (tau, T]) between 1.92 and 3, the true origin is rejected with
+   probability up to 0.147. The stationary cell (a = 1 on (tau0, T0], the null at its boundary) shows it. The unconditional coverage of the
+   origin test at T0 is 0.945 (3.84), 0.885 (2.71, the one-sided boundary value) and 0.970 (5.99): near nominal overall because 72% of
+   replicates are trivial. Among the 55 non-trivial replicates, where a bound is actually reported, it is 0.80 (3.84), 0.84 (count rule) and
+   0.89 (5.99): the overall size is spread over the few replicates that can reject. The f* coverages in the other cells are 0.87 to 0.95 at 3.84 (0.87, 0.90, 0.90 and 0.92 for H0c or H0 in four cells) and 0.94 to 0.99 under the count rule. The count rule (`exact_count_crit`, 5.99 at no older detection,
+   falling to 2.7 as detections accumulate) is a candidate replacement, not the default. Whether the validated quantity is the unconditional
+   set or the bound conditional on a non-trivial result is a choice the full grid must make.
+2. **The reference window is not at a = 1 when the history is below 1 for some stages after tau0.** The first appearance then falls
+   inside that era, and the reference rate is estimated at 0.62 to 0.78 of its true value (a_ref 0.56 to 0.72 for f = 0.3, the comb and the delayed step). f* is
+   read relative to the reference window, which is what the harness scores. A reader of "f* = 0.5" is told 0.5 of whatever the window holds.
+3. **Informativeness is low at this scale.** The older end of the f_min = 1 set has median 473 to 489 Ma, 4 to 16 Myr beyond tau; sets at
+   f_min = 0.1 and 0.01 are unbounded in 93 to 100% of replicates; 20 to 76% of non-trivial replicates give a finite f* under H0c and H0.
+4. **H0m sets are wider than H0c sets** by exactly the longest delay (10 Myr) in every cell, as they must be; with no delay bound nothing is excluded.
+5. **H1 is more often finite** than H0 (72 to 97% against 20 to 76%) because its ceiling is 3 and 3 times the intensity is rejected at much lower exposure. Its
+   finiteness is the ceiling's doing (stated in the state).
+
+### Open choices
+
+- **Scale 0.05 of the Palynodata document counts** (505 units). Documents are counted in every stage they overlap, so a table of unique
+  blocks will be smaller than `n_docs`; 0.05 gives about 110 reference and 100 older units and 0.5 to 11 s per replicate. The scale of the real table is unknown. It sets the power,
+  not the construction.
+- **Grids**: origin step 2 Myr (the full run should use 0.5 or 1 and `age_draws` 400); H0m delays (0, 2, 6, 10) Myr (`Spec.delays_ma`,
+  not yet a spec field); logistic g and h grids above; 60 boundary draws and 48 nodes in the harness; 400 draws and 48 nodes by default in `Spec`.
+  The 48 nodes need 64 for k < 1.
+- **Design**: classes p = (0.12, 0.04), weights 0.6 / 0.4; 12% broad-range units; clusters of mean size 3; T0 = 476 and tau0 = 452.8 chosen
+  so that the first appearance falls below the origin often enough (T0 at 466 gave 81% trivial replicates under f = 1).
+- **Critical value**: chi-square(1) at 0.95, as specified; `exact_count_crit` recorded beside it.
+- **Boundary shortcut and tolerances**: L-BFGS-B `ftol` 1e-10, f searched to 5e-3, f* root to 1e-4; `fcover` tolerance 1e-3.
+
+### Limits
+
+- Cells are correctly specified; no misassigned classes, reporting or facies differences, regional confinement or H1 truths. The H1 and
+  logistic truths are not run beyond one cell each.
+- H0 and H1 use the proportional duty allocation, which is the worst case only when stages alike in class mix. For two classes of p = 0.30
+  and 0.03 in separate stages of 100 units, the best allocation differs by at most 0.06 in log P0 (LR 0.11 of 3.84), so f* is understated by a few per cent.
+  The pulse duration `h1_pulse_myr` is not used: the bound holds for any duration up to the stated one and is conservative for it.
+- The logistic members are on a grid and their normalisation is at the estimated tau, so a true logistic with tau0 different from the estimated tau is not exactly a member.
+- `Spec.from_toml` reads the draft specification, but `delays_ma`, `logistic_g`, `logistic_h_frac` and `nodes` are not spec fields yet.
