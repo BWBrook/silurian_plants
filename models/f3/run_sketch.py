@@ -116,7 +116,7 @@ def write_csv(rows: list[dict], path: Path) -> None:
     order = {name: i for i, name in enumerate(ESTIMATORS)}
     rows = sorted(rows, key=lambda r: (list(GROWTH).index(r["growth"]), r["channel"], r["psi"], r["dating"], order[r["estimator"]]))
     with open(path, "w", newline="") as f:
-        writer = csv.DictWriter(f, fieldnames=COLUMNS, restval="")
+        writer = csv.DictWriter(f, fieldnames=COLUMNS, restval="", lineterminator="\n")
         writer.writeheader()
         for row in rows:
             writer.writerow({k: (round(v, 4) if isinstance(v, float) else v) for k, v in row.items()})
