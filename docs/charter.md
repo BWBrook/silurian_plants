@@ -104,6 +104,7 @@ data archived, and the human–AI correspondence record published alongside.
 - OpenAI Codex (OpenAI, Codex desktop; exact model version not exposed in this session):
   private reading portal and taxon atlas, source-preserving rendering, image sourcing,
   independent implementation review and browser checks (2026-10-27); browser acquisition and
-  provenance verification of Rubinstein et al. (2010) and its supplement (2026-10-28).
+  provenance verification of Rubinstein et al. (2010) and its supplement, and acquisition of
+  pivotal literature and supporting information through UTAS and public repositories (2026-10-28).
 
 `docs/decisions.md` records who decided what and when, for the eventual statement of AI roles.

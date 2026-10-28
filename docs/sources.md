@@ -35,6 +35,7 @@ says otherwise (`AGENTS.md`); check individual snapshots before use. New raw pul
 | Project spore dataset (MVD-A) | occurrences, vetted first appearances and stage presence from Palynodata plus Wellman 2013 | held | `data/spores/` | derived; see its README |
 | Post-2006 spore literature | 182 priority papers; 33 open full texts extracted (370 assemblages, 97% of records verified in text; two texts fetched into `library/open/`); other papers remain to be obtained or extracted | partly held | `data/spores/sources/mvdb_*.csv` | access varies; see `docs/closed-literature.csv` |
 | Rubinstein et al. 2010 (Q1, Q2) | Paper and original supporting document, including stratigraphy and colour plate; acquired 2026-10-28, not yet incorporated in MVD-B or the occurrence adjudication. The supplement's plain-text extract `library/open/W1820528062_SI.txt` omits its four figures; use the original document for them | local | `library/open/W1820528062.pdf`, `library/open/W1820528062_SI.doc`; URLs and hashes in `library/open.tsv` | Publisher labels article Free Access; Crossref records Wiley terms, not a CC licence; keep local |
+| Pivotal literature for Q1 and Q2 | Seven requested full papers, including Edwards & Davies 1976, Rickards 2000, Salamon 2018 and Strother et al. 2015; original supplements for Salamon 2018 and Strother & Foster 2021. Acquired 2026-10-28 for the next source recheck; acquisition does not itself revise the occurrence adjudication | local | `library/closed/`; individual access routes and SHA-256 hashes in `library/closed.tsv` | Publisher and institutional copies; public availability does not by itself establish an open licence. Edwards et al. 2007 and Garratt 1978 still needed; see `docs/closed-literature.csv` |
 | GBDB (Zenodo 2020) | 410 core window plant records (131 genera, mostly China), 3,217 window sections; GTS2012 ages | held | `data/external/gbdb/` | CC BY 4.0 |
 | Diversity compilations | Xiong 2013, Silvestro 2015, Capel 2025 mirrored; Capel 2021, 2022, Cascales-Miñana 2016, Ball 2022 local; Capel 2023 limited | mixed | `data/external/deposits/` | per deposit |
 | Fossil Record 2 plant families | Harland 1990 ages | local | `data/eprp/local/record/` | none stated |
@@ -107,6 +108,9 @@ among GBIF fossil specimens.
 | Palynological sampling effort | held | `data/external/spores/`, GAD in `data/external/deposits/` | documents reporting marine palynomorphs without spores |
 
 ## 9. Literature
+
+In `docs/closed-literature.csv`, `local-copy-held` records an institutionally accessed copy;
+`open-copy-held` records a publicly available copy and does not imply a particular licence.
 
 | Source | Status | Notes |
 |---|---|---|
