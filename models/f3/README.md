@@ -592,6 +592,12 @@ Coverage over all replicates, shown as estimator / χ²₁ (3.84) for comparison
   need 64 for k < 1.
 - **Design**: classes p = (0.12, 0.04), weights 0.6 / 0.4; 12% broad-range units; clusters of mean size 3; T0 = 476 and tau0 = 452.8 chosen
   so that the first appearance falls below the origin often enough (T0 at 466 gave 81% trivial replicates under f = 1).
+- **Boundary draws** (checked 2026-10-29, `out/validation_draws60*` and `out/validation_draws400*`). Cell H0c f = 0.3, k = 2 was run for 100 paired replicates on the same simulated data, at 60 and at 400 boundary draws.
+  - f* changed by at most 0.006 for H0c and H0. One H1 value moved by 0.15; the median change was 0.
+  - Coverage verdicts agreed in 100 of 100 replicates, and states in 99 of 100.
+  - Origin endpoints moved by at most one grid step.
+  - 400 draws cost seven times as much: 36 s against 5.3 s per replicate.
+  - So the validation grid can run at 60 draws. Real-data runs keep 400.
 - **Critical value**: `exact_count_crit`; the harness also records f* under chi-square(1) (`_chi2` columns) and stores the origin
   statistic `lr0`, so 3.84, 2.71 and 5.99 can be applied afterwards.
 - **Boundary shortcut and tolerances**: L-BFGS-B `ftol` 1e-10, f searched to 5e-3, f* root to 1e-4; `fcover` tolerance 1e-3.

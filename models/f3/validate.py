@@ -7,6 +7,7 @@
 
     uv run models/f3/validate.py                 # the smoke grid: 6 cells, 200 replicates each
     uv run models/f3/validate.py --reps 10 --cells H0c_f0.3_k2
+    uv run models/f3/validate.py --reps 100 --cells H0c_f0.3_k2 --age-draws 400 --tag draws400
 
 Each replicate simulates a unit table (units_sim.py), lets the estimator find its own first appearance
 and reference window, and records for the reported quantities whether they cover the truth:
@@ -138,7 +139,7 @@ def _age() -> ev.AgeModel:
 def cell_objects(cell: dict):
     truth = us.Truth(**{k: cell[k] for k in ("history", "t0", "tau0", "f", "delay", "g", "h") if k in cell})
     design = us.Design(p=tuple(cell["p"]), k=cell["k"], scale=cell["scale"])
-    spec = ev.Spec(age_draws=AGE_DRAWS, nodes=NODES, cluster_shape_k=cell["k"], readouts=READOUTS)
+    spec = ev.Spec(age_draws=cell.get("age_draws", AGE_DRAWS), nodes=NODES, cluster_shape_k=cell["k"], readouts=READOUTS)
     return truth, design, spec
 
 
@@ -301,8 +302,9 @@ def main() -> None:
     ap.add_argument("--workers", type=int, default=8)
     ap.add_argument("--cells", nargs="*", default=None)
     ap.add_argument("--tag", default="smoke")
+    ap.add_argument("--age-draws", type=int, default=AGE_DRAWS)
     args = ap.parse_args()
-    cells = [c for c in CELLS if args.cells is None or c["name"] in args.cells]
+    cells = [c | dict(age_draws=args.age_draws) for c in CELLS if args.cells is None or c["name"] in args.cells]
     jobs = [(c, j) for c in cells for j in range(args.reps)]
     t0 = time.time()
     with Pool(args.workers) as pool:
@@ -315,7 +317,7 @@ def main() -> None:
     here = Path(__file__).resolve().parent
     meta = dict(
         root_seed=ROOT_SEED, replicate_seed="SeedSequence(root_seed, spawn_key=(cell id, replicate)); child 0 simulates, child 1 draws boundaries",
-        reps=args.reps, step_ma=STEP, age_draws=AGE_DRAWS, nodes=NODES, readouts=READOUTS, crits=CRITS, fstar_tol=FSTAR_TOL,
+        reps=args.reps, step_ma=STEP, age_draws=args.age_draws, nodes=NODES, readouts=READOUTS, crits=CRITS, fstar_tol=FSTAR_TOL,
         cells=[{k: (str(v) if isinstance(v, float) and math.isinf(v) else v) for k, v in c.items()} for c in cells],
         design=asdict(us.Design()), elapsed_seconds=elapsed, workers=args.workers,
         python=platform.python_version(), numpy=np.__version__, scipy=scipy.__version__,
