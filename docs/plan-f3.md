@@ -87,7 +87,9 @@ Each later loop broadens the evidence where the value-of-information ranking poi
 - reworking and caving;
 - uncertainty in which plants produced which spores.
 
-The pivotal records are where specialist palaeobotanical judgement matters most, and where outside input would count for most. That outside input is Barry's decision (consult triggers).
+The pivotal records are where specialist palaeobotanical judgement matters most, and where outside input would count for most.
+
+**Experts are never a blocker** (Barry, 2026-10-28). Specialists may be unreachable, inactive or unresponsive. Where contact is worth trying, flag it with the question to ask; whether to send it is Barry's decision. The work always proceeds on the published record and the databases, carrying the contested readings as alternatives. A reply, if one comes, updates a reading; waiting for one never holds up a stage.
 
 ## Outputs
 
@@ -118,11 +120,11 @@ The pivotal records are where specialist palaeobotanical judgement matters most,
 ## Consult triggers
 
 1. **A result contradicts a published calibration by more than the stated uncertainty.** Report before writing it up.
-2. **A pivotal record turns on specialist judgement this team cannot make with confidence.** Propose whom to ask and what to ask.
-3. **Evidence with high value of information can only be had by contact or purchase.**
+2. **A pivotal record turns on specialist judgement this team cannot make with confidence.** Flag whom to ask and what to ask, then continue with both readings carried forward.
+3. **Evidence with high value of information can only be had by contact or purchase.** Flag it, and continue without it.
 4. **The producer links prove too weak for E6, so the question has to be narrowed.**
 
-If the record cannot tell the clock scenarios apart, that is not a trigger. It is a result, reported at the loop's close together with the observation that would resolve it.
+None of these triggers pauses the work; each is a flag for Barry. If the record cannot tell the clock scenarios apart, that is not a trigger either. It is a result, reported at the loop's close together with the observation that would resolve it.
 
 ## Structural review at each loop's close
 

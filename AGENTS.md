@@ -62,6 +62,9 @@ Run `check`, `index` and `matrix` after editing cards, and `dois` after adding r
 - A card is `draft` until a second agent or Barry has checked its facts; then `reviewed`.
 - Keep disagreement usable. Record what a source observed separately from each interpretation of
   it, and let every analysis declare which reading it uses (`docs/plan-f3.md`).
+- Outside experts are never a blocker. Flag where contacting one is worth trying (sending is
+  Barry's decision), and proceed on the published record and the databases, with the contested
+  readings carried as alternatives.
 - When a lead, a closed source or a data gap bears on a question in `docs/questions.md`, name
   the question's ID. When a claim repeated in the literature fails against its source, log it
   under Q5.

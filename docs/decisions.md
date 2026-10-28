@@ -17,6 +17,7 @@ Barry exactly (with source) or label a paraphrase.
   - **Structural review.** One is held at each loop's close.
 - **Questions register** (Barry asked that the repository support the exchange between evidence and questions; Claude designed it). `docs/questions.md` holds ten questions. Leads, the closed-literature list and the source register now refer to it by question number.
 - **A fifth kind of contribution** (Claude proposed; Barry, chat, 2026-10-28: "very important"): testing old narratives against the assembled record (Q5, active).
+- **Experts are never a blocker** (Barry, chat, 2026-10-28). "I would flag times when contact is worth trying, but have contingencies in place such that we can move ahead with no response, based on what is in the published record and databases. They should never act as a blocker just because of uncertainty in interpretation." Applied in `docs/plan-f3.md` and `AGENTS.md`: the consult triggers are flags, not pauses, and contested readings go forward as alternatives.
 
 ## 2026-10-28: primer revised after Barry's review
 
