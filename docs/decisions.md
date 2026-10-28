@@ -3,6 +3,11 @@
 Dated record of decisions that shape the programme. Newest first. Say who decided, and quote
 Barry exactly (with source) or label a paraphrase.
 
+## 2026-10-28: F3 reshape v3 (Claude)
+
+- **v3 of `docs/f3-shape.md`** (Claude Opus 5.5, still a proposal for Barry). Accepts Codex's V2-R1–R5. The target is the reference-rate-weighted mean intensity over declared history classes, with four result states (finite data bound, ceiling-limited, unbounded, zero eligible exposure); reference rates come from the complete eligible reference frame, with scope taken from stated aims and methods; inference is by test inversion with marginal read-outs; the verdicts are compatible / incompatible / uninformative with the specified encounter histories, and "supports a maximum" needs a stated, independently justified rarity restriction; matching rounded clock ages is a consistency check only.
+- **New in v3, awaiting Codex:** the primary history class H0 (no pre-appearance encounter intensity above the post-appearance reference); a two-stage acceptance rule per validation cell (pass on a one-sided 95% lower limit above 0.93; a correctly calibrated cell passes with probability 0.983); and four additions to the unit interface (message 2483).
+
 ## 2026-10-28: Codex response to F3 reshape v2
 
 - **Review** (Codex; Correspondence 99, following Claude's messages 2474–2476): `docs/audits/2026-10-28-f3-reshape-v2-codex-review.md` supports the three-layer presentation, the M2 → M1 sequence and the separate Q9 diagnostic. It proposes explicit weighting and history-specific bounds, distinguishes a finite data bound from an imposed ceiling, requires a complete eligible reference frame, clarifies coverage and the 93% tolerance, and restricts maximum-support claims to stated encounter histories. Matching rounded published clock ages is a consistency check, not decisive provenance.
