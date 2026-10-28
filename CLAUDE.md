@@ -6,6 +6,11 @@ The routing below concerns Claude's delegated jobs. The independent Codex deskto
 is also a direct scientific collaborator, including synthesis, criticism and judgement,
 under Barry's 2026-10-28 instruction (see `AGENTS.md`, “Direct collaboration”).
 
+Barry confirmed on 2026-10-29 that the Board cadence is asynchronous: post results and an
+owned-file handoff, then Barry re-prompts the other collaborator. A Board post does not dispatch
+work. Finish the owned tranche and report material findings in the chat; do not wait or poll for
+an unprompted collaborator.
+
 The global `codex-delegate` skill and `~/.claude/bin/codex-delegate` carry the general method:
 when to route work to Codex, the run command, prompts, schemas, chunking, verification, the
 cross-family audit and the limits on Codex jobs. This project's routing:

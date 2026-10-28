@@ -20,6 +20,11 @@ before concurrent edits; preserve the other agent's work. Keep accepted decision
 `docs/decisions.md` and distinguish proposals from adopted methods. Read relevant Board
 updates during active work; there is no automatic dispatch or scheduled monitoring.
 
+Barry confirmed the asynchronous cadence on 2026-10-29: each collaborator posts its results
+and handoff to the Board, and Barry re-prompts the other collaborator. A Board post does not
+activate the other session. Finish the owned tranche and bring its material findings to Barry;
+do not wait or poll for a reply from an unprompted collaborator.
+
 ## Layout
 
 - `taxa/`: one information card per taxon. `taxa/_template.md` is the schema; `taxa/README.md`

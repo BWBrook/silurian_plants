@@ -1,0 +1,1255 @@
+{
+  "schema_version": 1,
+  "purpose": "bounded archive-level provenance and consistency check; no MCMCtree run",
+  "archive": {
+    "archive": "/Users/bwbrook/papers/silurian_plants/data/external/local/deposits/hooper2026-spore-evolution/03. Divergence Time Estimation.zip",
+    "archive_sha256": "79fd06812eff714e32a566cadc1c15844640e0a150b4504a07999d2cef957a25",
+    "archive_sha256_matches_manifest": true,
+    "member_count": 44,
+    "members": [
+      {
+        "member": "03. Divergence Time Estimation/",
+        "bytes": 0,
+        "zip_reported_bytes": 0,
+        "compressed_bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "member": "03. Divergence Time Estimation/visualisations/",
+        "bytes": 0,
+        "zip_reported_bytes": 0,
+        "compressed_bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "member": "03. Divergence Time Estimation/.Rhistory",
+        "bytes": 24971,
+        "zip_reported_bytes": 24971,
+        "compressed_bytes": 2452,
+        "sha256": "984a1a6cfd0ad97668bfd5904fc971efa107412d377de2a5c55853b84d4d66c6"
+      },
+      {
+        "member": "__MACOSX/03. Divergence Time Estimation/._.Rhistory",
+        "bytes": 120,
+        "zip_reported_bytes": 120,
+        "compressed_bytes": 52,
+        "sha256": "3b58a247406813635c7f8da9c0b12da012f57c431a37570ace70ae930361099b"
+      },
+      {
+        "member": "03. Divergence Time Estimation/mcmctree_inputs/",
+        "bytes": 0,
+        "zip_reported_bytes": 0,
+        "compressed_bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "member": "03. Divergence Time Estimation/mcmctree_outputs/",
+        "bytes": 0,
+        "zip_reported_bytes": 0,
+        "compressed_bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "member": "03. Divergence Time Estimation/mcmctreer.R",
+        "bytes": 3824,
+        "zip_reported_bytes": 3824,
+        "compressed_bytes": 770,
+        "sha256": "a8bcca6c31b4ca5abe7f698ad6f305c65b720aae67d32b274ce50686f994b419"
+      },
+      {
+        "member": "__MACOSX/03. Divergence Time Estimation/._mcmctreer.R",
+        "bytes": 120,
+        "zip_reported_bytes": 120,
+        "compressed_bytes": 52,
+        "sha256": "3b58a247406813635c7f8da9c0b12da012f57c431a37570ace70ae930361099b"
+      },
+      {
+        "member": "03. Divergence Time Estimation/visualisations/hornwort_posterior_184.svg",
+        "bytes": 85010,
+        "zip_reported_bytes": 85010,
+        "compressed_bytes": 11583,
+        "sha256": "b4c2e07f2fa0d976666a3af3a8ee61c733310909e7ed13b058ff49d3db4c7211"
+      },
+      {
+        "member": "__MACOSX/03. Divergence Time Estimation/visualisations/._hornwort_posterior_184.svg",
+        "bytes": 120,
+        "zip_reported_bytes": 120,
+        "compressed_bytes": 52,
+        "sha256": "3b58a247406813635c7f8da9c0b12da012f57c431a37570ace70ae930361099b"
+      },
+      {
+        "member": "03. Divergence Time Estimation/visualisations/hornwort_posterior_post.svg",
+        "bytes": 1369941,
+        "zip_reported_bytes": 1369941,
+        "compressed_bytes": 323766,
+        "sha256": "8b460d4344f3c55cdefb453d2d0c9fa903eb11292da7adce80c121e48a27cadb"
+      },
+      {
+        "member": "__MACOSX/03. Divergence Time Estimation/visualisations/._hornwort_posterior_post.svg",
+        "bytes": 120,
+        "zip_reported_bytes": 120,
+        "compressed_bytes": 52,
+        "sha256": "3b58a247406813635c7f8da9c0b12da012f57c431a37570ace70ae930361099b"
+      },
+      {
+        "member": "03. Divergence Time Estimation/visualisations/hornwort_prior_mean.svg",
+        "bytes": 93237,
+        "zip_reported_bytes": 93237,
+        "compressed_bytes": 11800,
+        "sha256": "0d33c618875a62af4dc91ed27f743396636e4d927f46de582af83aebcbd3c1a9"
+      },
+      {
+        "member": "__MACOSX/03. Divergence Time Estimation/visualisations/._hornwort_prior_mean.svg",
+        "bytes": 120,
+        "zip_reported_bytes": 120,
+        "compressed_bytes": 52,
+        "sha256": "3b58a247406813635c7f8da9c0b12da012f57c431a37570ace70ae930361099b"
+      },
+      {
+        "member": "03. Divergence Time Estimation/visualisations/hornwort_prior_184.svg",
+        "bytes": 84404,
+        "zip_reported_bytes": 84404,
+        "compressed_bytes": 11505,
+        "sha256": "e03173d93dfeacdd20fb8fc2b21b57cd968178fc1f944d0bd3a20dc79cc3ef00"
+      },
+      {
+        "member": "__MACOSX/03. Divergence Time Estimation/visualisations/._hornwort_prior_184.svg",
+        "bytes": 120,
+        "zip_reported_bytes": 120,
+        "compressed_bytes": 52,
+        "sha256": "3b58a247406813635c7f8da9c0b12da012f57c431a37570ace70ae930361099b"
+      },
+      {
+        "member": "03. Divergence Time Estimation/visualisations/hornwort_posterior_mean.svg",
+        "bytes": 93835,
+        "zip_reported_bytes": 93835,
+        "compressed_bytes": 11892,
+        "sha256": "2cf41993684bc977ea0141e3698779cd99ad80adddbb2093fa6b2d3640357694"
+      },
+      {
+        "member": "__MACOSX/03. Divergence Time Estimation/visualisations/._hornwort_posterior_mean.svg",
+        "bytes": 120,
+        "zip_reported_bytes": 120,
+        "compressed_bytes": 52,
+        "sha256": "3b58a247406813635c7f8da9c0b12da012f57c431a37570ace70ae930361099b"
+      },
+      {
+        "member": "03. Divergence Time Estimation/visualisations/hornwort_posterior_CI.svg",
+        "bytes": 101722,
+        "zip_reported_bytes": 101722,
+        "compressed_bytes": 14275,
+        "sha256": "36ee5879d09f5e7c7ead1b08c2417c859bc4e1f83984b7e531c920acf6befeb6"
+      },
+      {
+        "member": "__MACOSX/03. Divergence Time Estimation/visualisations/._hornwort_posterior_CI.svg",
+        "bytes": 120,
+        "zip_reported_bytes": 120,
+        "compressed_bytes": 52,
+        "sha256": "3b58a247406813635c7f8da9c0b12da012f57c431a37570ace70ae930361099b"
+      },
+      {
+        "member": "03. Divergence Time Estimation/visualisations/hornwort_prior_post.svg",
+        "bytes": 1369749,
+        "zip_reported_bytes": 1369749,
+        "compressed_bytes": 345509,
+        "sha256": "997d484125041d9676764965fdfdc1065a6c7a9be35c59e5091fd7c63e861f39"
+      },
+      {
+        "member": "__MACOSX/03. Divergence Time Estimation/visualisations/._hornwort_prior_post.svg",
+        "bytes": 120,
+        "zip_reported_bytes": 120,
+        "compressed_bytes": 52,
+        "sha256": "3b58a247406813635c7f8da9c0b12da012f57c431a37570ace70ae930361099b"
+      },
+      {
+        "member": "03. Divergence Time Estimation/visualisations/hornwort_prior_CI.svg",
+        "bytes": 101117,
+        "zip_reported_bytes": 101117,
+        "compressed_bytes": 14034,
+        "sha256": "e04569b9d4f3ccff50419e4530ed03b4c210648b4890d460dcb52808e116e518"
+      },
+      {
+        "member": "__MACOSX/03. Divergence Time Estimation/visualisations/._hornwort_prior_CI.svg",
+        "bytes": 120,
+        "zip_reported_bytes": 120,
+        "compressed_bytes": 52,
+        "sha256": "3b58a247406813635c7f8da9c0b12da012f57c431a37570ace70ae930361099b"
+      },
+      {
+        "member": "03. Divergence Time Estimation/mcmctree_inputs/partitioned_alignment.phy",
+        "bytes": 5488412,
+        "zip_reported_bytes": 5488412,
+        "compressed_bytes": 1906329,
+        "sha256": "0d06dab771f38dc17b4cee1730476ec8f6f4132b189c2458b019e45b07304485"
+      },
+      {
+        "member": "__MACOSX/03. Divergence Time Estimation/mcmctree_inputs/._partitioned_alignment.phy",
+        "bytes": 120,
+        "zip_reported_bytes": 120,
+        "compressed_bytes": 52,
+        "sha256": "3b58a247406813635c7f8da9c0b12da012f57c431a37570ace70ae930361099b"
+      },
+      {
+        "member": "03. Divergence Time Estimation/mcmctree_inputs/prior.ctl",
+        "bytes": 1368,
+        "zip_reported_bytes": 1368,
+        "compressed_bytes": 666,
+        "sha256": "fe2bc149329408553473ecf9ee7ca3733a127b5f86dbd3016a87e303f7d67b79"
+      },
+      {
+        "member": "__MACOSX/03. Divergence Time Estimation/mcmctree_inputs/._prior.ctl",
+        "bytes": 120,
+        "zip_reported_bytes": 120,
+        "compressed_bytes": 52,
+        "sha256": "3b58a247406813635c7f8da9c0b12da012f57c431a37570ace70ae930361099b"
+      },
+      {
+        "member": "03. Divergence Time Estimation/mcmctree_inputs/posterior.ctl",
+        "bytes": 1376,
+        "zip_reported_bytes": 1376,
+        "compressed_bytes": 672,
+        "sha256": "a636a64f73f6a7f2149193b3cb1d73a94755d143446c20a62e87316ebde83c5f"
+      },
+      {
+        "member": "__MACOSX/03. Divergence Time Estimation/mcmctree_inputs/._posterior.ctl",
+        "bytes": 120,
+        "zip_reported_bytes": 120,
+        "compressed_bytes": 52,
+        "sha256": "3b58a247406813635c7f8da9c0b12da012f57c431a37570ace70ae930361099b"
+      },
+      {
+        "member": "03. Divergence Time Estimation/mcmctree_inputs/uncalibrated.tree",
+        "bytes": 3749,
+        "zip_reported_bytes": 3749,
+        "compressed_bytes": 1907,
+        "sha256": "0741fa91e665f8785b5baf95bb44243701f7e8229e0bea565a3bcce67f1a66c3"
+      },
+      {
+        "member": "__MACOSX/03. Divergence Time Estimation/mcmctree_inputs/._uncalibrated.tree",
+        "bytes": 120,
+        "zip_reported_bytes": 120,
+        "compressed_bytes": 52,
+        "sha256": "3b58a247406813635c7f8da9c0b12da012f57c431a37570ace70ae930361099b"
+      },
+      {
+        "member": "03. Divergence Time Estimation/mcmctree_inputs/Fossil_Calibrations_HooperNP.txt",
+        "bytes": 5471,
+        "zip_reported_bytes": 5471,
+        "compressed_bytes": 2332,
+        "sha256": "761790cbbeaeb29e9c27851fb6824f2be6c4f5e789cfb5a582c7f22e9e0eb3d0"
+      },
+      {
+        "member": "__MACOSX/03. Divergence Time Estimation/mcmctree_inputs/._Fossil_Calibrations_HooperNP.txt",
+        "bytes": 120,
+        "zip_reported_bytes": 120,
+        "compressed_bytes": 52,
+        "sha256": "3b58a247406813635c7f8da9c0b12da012f57c431a37570ace70ae930361099b"
+      },
+      {
+        "member": "03. Divergence Time Estimation/mcmctree_outputs/.Rhistory",
+        "bytes": 25764,
+        "zip_reported_bytes": 25764,
+        "compressed_bytes": 2579,
+        "sha256": "f71ef60d6058a250f8d156665c61b1ea58ae94ebf885277d2d23dd2428022b38"
+      },
+      {
+        "member": "__MACOSX/03. Divergence Time Estimation/mcmctree_outputs/._.Rhistory",
+        "bytes": 120,
+        "zip_reported_bytes": 120,
+        "compressed_bytes": 52,
+        "sha256": "3b58a247406813635c7f8da9c0b12da012f57c431a37570ace70ae930361099b"
+      },
+      {
+        "member": "03. Divergence Time Estimation/mcmctree_outputs/hornwort_prior_old_version.tre",
+        "bytes": 12688,
+        "zip_reported_bytes": 12688,
+        "compressed_bytes": 5462,
+        "sha256": "321e4b4fb4b6e42a55ed7e292416a11cf9f8aae82f0179db57abd735d908c2e9"
+      },
+      {
+        "member": "__MACOSX/03. Divergence Time Estimation/mcmctree_outputs/._hornwort_prior_old_version.tre",
+        "bytes": 120,
+        "zip_reported_bytes": 120,
+        "compressed_bytes": 52,
+        "sha256": "3b58a247406813635c7f8da9c0b12da012f57c431a37570ace70ae930361099b"
+      },
+      {
+        "member": "03. Divergence Time Estimation/mcmctree_outputs/hornwort_set_prior_mcmc_old_version.txt",
+        "bytes": 79680413,
+        "zip_reported_bytes": 79680413,
+        "compressed_bytes": 30498443,
+        "sha256": "7f0f2462afb8ece57eb9015f87b3f503be5d5d3e7a64163e2ab00ad2f302c9ff"
+      },
+      {
+        "member": "__MACOSX/03. Divergence Time Estimation/mcmctree_outputs/._hornwort_set_prior_mcmc_old_version.txt",
+        "bytes": 120,
+        "zip_reported_bytes": 120,
+        "compressed_bytes": 52,
+        "sha256": "3b58a247406813635c7f8da9c0b12da012f57c431a37570ace70ae930361099b"
+      },
+      {
+        "member": "03. Divergence Time Estimation/mcmctree_outputs/hornwort_posterior_old_version.tre",
+        "bytes": 12716,
+        "zip_reported_bytes": 12716,
+        "compressed_bytes": 5526,
+        "sha256": "af7daf90875e986145645a4d6ef8f9e2a8fd5e9a9acbe141a5bd54dd6b9c7b23"
+      },
+      {
+        "member": "__MACOSX/03. Divergence Time Estimation/mcmctree_outputs/._hornwort_posterior_old_version.tre",
+        "bytes": 120,
+        "zip_reported_bytes": 120,
+        "compressed_bytes": 52,
+        "sha256": "3b58a247406813635c7f8da9c0b12da012f57c431a37570ace70ae930361099b"
+      },
+      {
+        "member": "03. Divergence Time Estimation/mcmctree_outputs/hornwort_set_posterior_mcmc_old_version.txt",
+        "bytes": 79716263,
+        "zip_reported_bytes": 79716263,
+        "compressed_bytes": 31640494,
+        "sha256": "9d9711b6bc52d44dcd0bdb711b406e3157dbe05d6b26f1141797c776beb6833e"
+      },
+      {
+        "member": "__MACOSX/03. Divergence Time Estimation/mcmctree_outputs/._hornwort_set_posterior_mcmc_old_version.txt",
+        "bytes": 120,
+        "zip_reported_bytes": 120,
+        "compressed_bytes": 52,
+        "sha256": "3b58a247406813635c7f8da9c0b12da012f57c431a37570ace70ae930361099b"
+      }
+    ]
+  },
+  "members_checked": {
+    "calibration": {
+      "member": "03. Divergence Time Estimation/mcmctree_inputs/Fossil_Calibrations_HooperNP.txt",
+      "line": 2,
+      "line_sha256": "5567c1a41c7b65530ff513dcbb03d0ed7c202846bf02ccf6b6d2256f01429ec5",
+      "fossil_calibration_count": 69,
+      "expected_fossil_calibration_count": 69,
+      "all_fossil_calibration_tail_pairs": [
+        [
+          "0.01",
+          "0.01"
+        ]
+      ],
+      "all_69_have_01_tails": true
+    },
+    "prior_control": {
+      "member": "03. Divergence Time Estimation/mcmctree_inputs/prior.ctl",
+      "sha256": "fe2bc149329408553473ecf9ee7ca3733a127b5f86dbd3016a87e303f7d67b79",
+      "settings": {
+        "seed": {
+          "value": "-1",
+          "line": 1,
+          "text": "          seed = -1"
+        },
+        "seqfile": {
+          "value": "partitioned_alignment.phy",
+          "line": 2,
+          "text": "       seqfile = partitioned_alignment.phy"
+        },
+        "treefile": {
+          "value": "Fossil_Calibrations_HooperNP.txt",
+          "line": 3,
+          "text": "      treefile = Fossil_Calibrations_HooperNP.txt"
+        },
+        "mcmcfile": {
+          "value": "mcmc_prior.txt",
+          "line": 4,
+          "text": "      mcmcfile = mcmc_prior.txt"
+        },
+        "outfile": {
+          "value": "mcmc_prior.out",
+          "line": 5,
+          "text": "       outfile = mcmc_prior.out"
+        },
+        "ndata": {
+          "value": "4",
+          "line": 7,
+          "text": "         ndata = 4"
+        },
+        "seqtype": {
+          "value": "2",
+          "line": 8,
+          "text": "       seqtype = 2    * 0: nucleotides; 1:codons; 2:AAs"
+        },
+        "usedata": {
+          "value": "0",
+          "line": 9,
+          "text": "       usedata = 0    * 0: no data; 1:seq like; 2:normal approximation; 3:out.BV (in.BV)"
+        },
+        "clock": {
+          "value": "2",
+          "line": 10,
+          "text": "         clock = 2    * 1: global clock; 2: independent rates; 3: correlated rates"
+        },
+        "RootAge": {
+          "value": "'B(9.85,18.56,0.025,0.001)'",
+          "line": 11,
+          "text": "       RootAge = 'B(9.85,18.56,0.025,0.001)'  * safe constraint on root age, used if no fossil for root."
+        },
+        "model": {
+          "value": "0",
+          "line": 13,
+          "text": "         model = 0    * 0:JC69, 1:K80, 2:F81, 3:F84, 4:HKY85"
+        },
+        "alpha": {
+          "value": "0",
+          "line": 14,
+          "text": "         alpha = 0    * alpha for gamma rates at sites"
+        },
+        "ncatG": {
+          "value": "5",
+          "line": 15,
+          "text": "         ncatG = 5    * No. categories in discrete gamma"
+        },
+        "cleandata": {
+          "value": "0",
+          "line": 17,
+          "text": "     cleandata = 0    * remove sites with ambiguity data (1:yes, 0:no)?"
+        },
+        "BDparas": {
+          "value": "1 1 0.1",
+          "line": 19,
+          "text": "       BDparas = 1 1 0.1   * birth, death, sampling"
+        },
+        "kappa_gamma": {
+          "value": "6 2",
+          "line": 20,
+          "text": "   kappa_gamma = 6 2       * gamma prior for kappa"
+        },
+        "alpha_gamma": {
+          "value": "1 1",
+          "line": 21,
+          "text": "   alpha_gamma = 1 1       * gamma prior for alpha"
+        },
+        "rgene_gamma": {
+          "value": "2 20 1",
+          "line": 23,
+          "text": "   rgene_gamma = 2 20 1    * gammaDir prior for rate for genes"
+        },
+        "sigma2_gamma": {
+          "value": "1 10 1",
+          "line": 24,
+          "text": "  sigma2_gamma = 1 10 1    * gammaDir prior for sigma^2     (for clock=2 or 3)"
+        },
+        "finetune": {
+          "value": "1: .1 .1 .1 .1 .1 .1",
+          "line": 26,
+          "text": "      finetune = 1: .1 .1 .1 .1 .1 .1 * auto (0 or 1): times, musigma2, rates, mixing, paras, FossilErr"
+        },
+        "print": {
+          "value": "2",
+          "line": 28,
+          "text": "         print = 2   * 0: no mcmc sample; 1: everything except branch rates 2: everything"
+        },
+        "burnin": {
+          "value": "50000",
+          "line": 29,
+          "text": "        burnin = 50000"
+        },
+        "sampfreq": {
+          "value": "250",
+          "line": 30,
+          "text": "      sampfreq = 250"
+        },
+        "nsample": {
+          "value": "5000",
+          "line": 31,
+          "text": "       nsample = 5000"
+        }
+      },
+      "evidence": {
+        "burnin": [
+          {
+            "member": "03. Divergence Time Estimation/mcmctree_inputs/prior.ctl",
+            "line": 29,
+            "text": "        burnin = 50000"
+          }
+        ],
+        "sampling": [
+          {
+            "member": "03. Divergence Time Estimation/mcmctree_inputs/prior.ctl",
+            "line": 30,
+            "text": "      sampfreq = 250"
+          },
+          {
+            "member": "03. Divergence Time Estimation/mcmctree_inputs/prior.ctl",
+            "line": 31,
+            "text": "       nsample = 5000"
+          }
+        ],
+        "seed": [
+          {
+            "member": "03. Divergence Time Estimation/mcmctree_inputs/prior.ctl",
+            "line": 1,
+            "text": "          seed = -1"
+          }
+        ],
+        "data_mode": [
+          {
+            "member": "03. Divergence Time Estimation/mcmctree_inputs/prior.ctl",
+            "line": 9,
+            "text": "       usedata = 0    * 0: no data; 1:seq like; 2:normal approximation; 3:out.BV (in.BV)"
+          }
+        ]
+      }
+    },
+    "posterior_control": {
+      "member": "03. Divergence Time Estimation/mcmctree_inputs/posterior.ctl",
+      "sha256": "a636a64f73f6a7f2149193b3cb1d73a94755d143446c20a62e87316ebde83c5f",
+      "settings": {
+        "seed": {
+          "value": "-1",
+          "line": 1,
+          "text": "          seed = -1"
+        },
+        "seqfile": {
+          "value": "partitioned_alignment.phy",
+          "line": 2,
+          "text": "       seqfile = partitioned_alignment.phy"
+        },
+        "treefile": {
+          "value": "Fossil_Calibrations_HooperNP.txt",
+          "line": 3,
+          "text": "      treefile = Fossil_Calibrations_HooperNP.txt"
+        },
+        "mcmcfile": {
+          "value": "mcmc_posterior.txt",
+          "line": 4,
+          "text": "      mcmcfile = mcmc_posterior.txt"
+        },
+        "outfile": {
+          "value": "mcmc_posterior.out",
+          "line": 5,
+          "text": "       outfile = mcmc_posterior.out"
+        },
+        "ndata": {
+          "value": "4",
+          "line": 7,
+          "text": "         ndata = 4"
+        },
+        "seqtype": {
+          "value": "2",
+          "line": 8,
+          "text": "       seqtype = 2    * 0: nucleotides; 1:codons; 2:AAs"
+        },
+        "usedata": {
+          "value": "2",
+          "line": 9,
+          "text": "       usedata = 2    * 0: no data; 1:seq like; 2:normal approximation; 3:out.BV (in.BV)"
+        },
+        "clock": {
+          "value": "2",
+          "line": 10,
+          "text": "         clock = 2    * 1: global clock; 2: independent rates; 3: correlated rates"
+        },
+        "RootAge": {
+          "value": "'B(9.85,18.56,0.025,0.001)'",
+          "line": 11,
+          "text": "       RootAge = 'B(9.85,18.56,0.025,0.001)'  * safe constraint on root age, used if no fossil for root."
+        },
+        "model": {
+          "value": "0",
+          "line": 13,
+          "text": "         model = 0    * 0:JC69, 1:K80, 2:F81, 3:F84, 4:HKY85"
+        },
+        "alpha": {
+          "value": "0",
+          "line": 14,
+          "text": "         alpha = 0    * alpha for gamma rates at sites"
+        },
+        "ncatG": {
+          "value": "5",
+          "line": 15,
+          "text": "         ncatG = 5    * No. categories in discrete gamma"
+        },
+        "cleandata": {
+          "value": "0",
+          "line": 17,
+          "text": "     cleandata = 0    * remove sites with ambiguity data (1:yes, 0:no)?"
+        },
+        "BDparas": {
+          "value": "1 1 0.1",
+          "line": 19,
+          "text": "       BDparas = 1 1 0.1   * birth, death, sampling"
+        },
+        "kappa_gamma": {
+          "value": "6 2",
+          "line": 20,
+          "text": "   kappa_gamma = 6 2       * gamma prior for kappa"
+        },
+        "alpha_gamma": {
+          "value": "1 1",
+          "line": 21,
+          "text": "   alpha_gamma = 1 1       * gamma prior for alpha"
+        },
+        "rgene_gamma": {
+          "value": "2 20 1",
+          "line": 23,
+          "text": "   rgene_gamma = 2 20 1    * gammaDir prior for rate for genes"
+        },
+        "sigma2_gamma": {
+          "value": "1 10 1",
+          "line": 24,
+          "text": "  sigma2_gamma = 1 10 1    * gammaDir prior for sigma^2     (for clock=2 or 3)"
+        },
+        "finetune": {
+          "value": "1: .1 .1 .1 .1 .1 .1",
+          "line": 26,
+          "text": "      finetune = 1: .1 .1 .1 .1 .1 .1 * auto (0 or 1): times, musigma2, rates, mixing, paras, FossilErr"
+        },
+        "print": {
+          "value": "2",
+          "line": 28,
+          "text": "         print = 2   * 0: no mcmc sample; 1: everything except branch rates 2: everything"
+        },
+        "burnin": {
+          "value": "50000",
+          "line": 29,
+          "text": "        burnin = 50000"
+        },
+        "sampfreq": {
+          "value": "250",
+          "line": 30,
+          "text": "      sampfreq = 250"
+        },
+        "nsample": {
+          "value": "5000",
+          "line": 31,
+          "text": "       nsample = 5000"
+        }
+      },
+      "evidence": {
+        "burnin": [
+          {
+            "member": "03. Divergence Time Estimation/mcmctree_inputs/posterior.ctl",
+            "line": 29,
+            "text": "        burnin = 50000"
+          }
+        ],
+        "sampling": [
+          {
+            "member": "03. Divergence Time Estimation/mcmctree_inputs/posterior.ctl",
+            "line": 30,
+            "text": "      sampfreq = 250"
+          },
+          {
+            "member": "03. Divergence Time Estimation/mcmctree_inputs/posterior.ctl",
+            "line": 31,
+            "text": "       nsample = 5000"
+          }
+        ],
+        "seed": [
+          {
+            "member": "03. Divergence Time Estimation/mcmctree_inputs/posterior.ctl",
+            "line": 1,
+            "text": "          seed = -1"
+          }
+        ],
+        "data_mode": [
+          {
+            "member": "03. Divergence Time Estimation/mcmctree_inputs/posterior.ctl",
+            "line": 9,
+            "text": "       usedata = 2    * 0: no data; 1:seq like; 2:normal approximation; 3:out.BV (in.BV)"
+          }
+        ]
+      }
+    },
+    "prior_chain": {
+      "member": "03. Divergence Time Estimation/mcmctree_outputs/hornwort_set_prior_mcmc_old_version.txt",
+      "sha256": "7f0f2462afb8ece57eb9015f87b3f503be5d5d3e7a64163e2ab00ad2f302c9ff",
+      "bytes": 79680413,
+      "line_count": 5002,
+      "header": {
+        "member": "03. Divergence Time Estimation/mcmctree_outputs/hornwort_set_prior_mcmc_old_version.txt",
+        "line": 1,
+        "sha256": "3ff464ab1850ed77ab8286090da2505232e89cedc6353b8f06f722d360e427a6",
+        "column_count": 1593,
+        "selected_columns": {
+          "Gen": 1,
+          "t_n184": 8,
+          "t_n185": 9
+        }
+      },
+      "generation": {
+        "saved_row_count": 5001,
+        "first_saved_generation": 1,
+        "last_saved_generation": 1250000,
+        "declared_burnin": 50000,
+        "primary_selection": "all saved rows; MCMCtree writes samples only after burn-in",
+        "primary_row_count": 5001,
+        "burnin_sensitivity_selection": "Gen > 50000",
+        "burnin_sensitivity_row_count": 4800
+      },
+      "metadata_hits_in_header_and_first_rows": [],
+      "summaries": {
+        "t_n184": {
+          "mean_time_units": 4.416721018996201,
+          "median_time_units": 4.419171,
+          "q025_time_units": 4.2809926,
+          "q975_time_units": 4.5381528,
+          "mean_ma": 441.6721018996201,
+          "median_ma": 441.91710000000006,
+          "q025_ma": 428.09926,
+          "q975_ma": 453.81528
+        },
+        "t_n185": {
+          "mean_time_units": 4.272411259788043,
+          "median_time_units": 4.2776394,
+          "q025_time_units": 4.2108121,
+          "q975_time_units": 4.3135029,
+          "mean_ma": 427.24112597880423,
+          "median_ma": 427.76394,
+          "q025_ma": 421.08121,
+          "q975_ma": 431.35029
+        }
+      },
+      "burnin_sensitivity_summaries": {
+        "t_n184": {
+          "mean_time_units": 4.41701597425,
+          "median_time_units": 4.4193382,
+          "q025_time_units": 4.2813389025,
+          "q975_time_units": 4.538385135,
+          "mean_ma": 441.701597425,
+          "median_ma": 441.93382,
+          "q025_ma": 428.13389025,
+          "q975_ma": 453.83851350000003
+        },
+        "t_n185": {
+          "mean_time_units": 4.272429956625,
+          "median_time_units": 4.27765135,
+          "q025_time_units": 4.2108095375,
+          "q975_time_units": 4.313551674999999,
+          "mean_ma": 427.24299566250005,
+          "median_ma": 427.76513500000004,
+          "q025_ma": 421.08095375000005,
+          "q975_ma": 431.35516749999994
+        }
+      }
+    },
+    "posterior_chain": {
+      "member": "03. Divergence Time Estimation/mcmctree_outputs/hornwort_set_posterior_mcmc_old_version.txt",
+      "sha256": "9d9711b6bc52d44dcd0bdb711b406e3157dbe05d6b26f1141797c776beb6833e",
+      "bytes": 79716263,
+      "line_count": 5002,
+      "header": {
+        "member": "03. Divergence Time Estimation/mcmctree_outputs/hornwort_set_posterior_mcmc_old_version.txt",
+        "line": 1,
+        "sha256": "49b88a8b0a6b2bd5cc3421c7213a9b0212be17967f262ea8a62e4e109b992f54",
+        "column_count": 1594,
+        "selected_columns": {
+          "Gen": 1,
+          "t_n184": 8,
+          "t_n185": 9
+        }
+      },
+      "generation": {
+        "saved_row_count": 5001,
+        "first_saved_generation": 1,
+        "last_saved_generation": 1250000,
+        "declared_burnin": 50000,
+        "primary_selection": "all saved rows; MCMCtree writes samples only after burn-in",
+        "primary_row_count": 5001,
+        "burnin_sensitivity_selection": "Gen > 50000",
+        "burnin_sensitivity_row_count": 4800
+      },
+      "metadata_hits_in_header_and_first_rows": [],
+      "summaries": {
+        "t_n184": {
+          "mean_time_units": 4.536973474565087,
+          "median_time_units": 4.5368285,
+          "q025_time_units": 4.5005124,
+          "q975_time_units": 4.5735826,
+          "mean_ma": 453.69734745650874,
+          "median_ma": 453.68285000000003,
+          "q025_ma": 450.05124,
+          "q975_ma": 457.35826
+        },
+        "t_n185": {
+          "mean_time_units": 4.3053344372725455,
+          "median_time_units": 4.3078833,
+          "q025_time_units": 4.2781724,
+          "q975_time_units": 4.320186,
+          "mean_ma": 430.53344372725456,
+          "median_ma": 430.78833000000003,
+          "q025_ma": 427.81723999999997,
+          "q975_ma": 432.0186
+        }
+      },
+      "burnin_sensitivity_summaries": {
+        "t_n184": {
+          "mean_time_units": 4.536925052104166,
+          "median_time_units": 4.536819700000001,
+          "q025_time_units": 4.500354025,
+          "q975_time_units": 4.57340801,
+          "mean_ma": 453.69250521041664,
+          "median_ma": 453.68197000000004,
+          "q025_ma": 450.03540250000003,
+          "q975_ma": 457.34080099999994
+        },
+        "t_n185": {
+          "mean_time_units": 4.305333478166666,
+          "median_time_units": 4.3078786000000004,
+          "q025_time_units": 4.27816188,
+          "q975_time_units": 4.320346242499999,
+          "mean_ma": 430.5333478166666,
+          "median_ma": 430.78786,
+          "q025_ma": 427.816188,
+          "q975_ma": 432.0346242499999
+        }
+      }
+    },
+    "plotting_reference": {
+      "member": "03. Divergence Time Estimation/mcmctreer.R",
+      "sha256": "a8bcca6c31b4ca5abe7f698ad6f305c65b720aae67d32b274ce50686f994b419",
+      "references": {
+        "node_184_label": {
+          "member": "03. Divergence Time Estimation/mcmctreer.R",
+          "line": 32,
+          "text": "#plot with width of embryophyte node highlighted"
+        },
+        "node_184_reference": {
+          "member": "03. Divergence Time Estimation/mcmctreer.R",
+          "line": 37,
+          "text": "               all.nodes = 184, col.age = \"#ff000040\", no.margin = TRUE,"
+        },
+        "time_correction": {
+          "member": "03. Divergence Time Estimation/mcmctreer.R",
+          "line": 21,
+          "text": "MCMC.tree.plot(phy1, cex.tips = 0.2, time.correction = 100, scale.res = c(\"Eon\",\"Period\"), plot.type = \"phylogram\", cex.labels = 0.6,relative.height = 0.08, col.tree = \"grey40\", label.offset = 4,node.method = \"none\", no.margin = TRUE)"
+        },
+        "posterior_tree_read": {
+          "member": "03. Divergence Time Estimation/mcmctreer.R",
+          "line": 16,
+          "text": "phy1 <- readMCMCtree(\"hornwort_posterior_old_version.tre\")"
+        },
+        "posterior_chain_read": {
+          "member": "03. Divergence Time Estimation/mcmctreer.R",
+          "line": 17,
+          "text": "phy1.posterior <- read.delim(\"hornwort_set_posterior_mcmc_old_version.txt\")"
+        }
+      }
+    },
+    "posterior_tree": {
+      "member": "03. Divergence Time Estimation/mcmctree_outputs/hornwort_posterior_old_version.tre",
+      "sha256": "af7daf90875e986145645a4d6ef8f9e2a8fd5e9a9acbe141a5bd54dd6b9c7b23",
+      "declared_tip_count": 177,
+      "internal_node_count": 176,
+      "focal_nodes": {
+        "crown_Embryophyta": {
+          "calibration_node_id": 184,
+          "calibration_leaf_count": 154,
+          "comparison_basis": "complete leaf-set equality",
+          "output_tree_node_id": 184,
+          "output_tree_leaf_count": 154,
+          "exact_clade_match": true,
+          "output_tree_annotation": "&95%HPD={4.49911, 4.57209}",
+          "output_tree_hpd_time_units": {
+            "lower": 4.49911,
+            "upper": 4.57209
+          },
+          "output_tree_hpd_ma": {
+            "lower": 449.911,
+            "upper": 457.209
+          }
+        },
+        "crown_Tracheophyta": {
+          "calibration_node_id": 185,
+          "calibration_leaf_count": 101,
+          "comparison_basis": "complete leaf-set equality",
+          "output_tree_node_id": 185,
+          "output_tree_leaf_count": 101,
+          "exact_clade_match": true,
+          "output_tree_annotation": "&95%HPD={4.28265, 4.32289}",
+          "output_tree_hpd_time_units": {
+            "lower": 4.28265,
+            "upper": 4.32289
+          },
+          "output_tree_hpd_ma": {
+            "lower": 428.26500000000004,
+            "upper": 432.289
+          }
+        }
+      },
+      "evidence": "95%HPD annotations parsed independently from the deposited NEXUS tree; clades matched by complete leaf sets"
+    }
+  },
+  "topology": {
+    "declared_tip_count": 177,
+    "parsed_tip_count": 177,
+    "internal_node_count": 176,
+    "root_node_id": 178,
+    "focal_nodes": {
+      "crown_Embryophyta": {
+        "node_id": 184,
+        "numbering": "preorder internal-node numbering, starting at Ntip + 1",
+        "leaf_count": 154,
+        "leaves": [
+          "Boehmeria_nivea",
+          "Rosa_chinensis",
+          "Lupinus_angustifolius",
+          "Lupinus_polyphyllus",
+          "Oenothera_rosea",
+          "Oenothera_speciosa",
+          "Larrea_tridentata",
+          "Arabidopsis_thaliana",
+          "Carica_papaya",
+          "Hibiscus_cannabinus",
+          "Populus_euphratica",
+          "Populus_trichocarpa",
+          "Kochia_scoparia",
+          "Ipomoea_purpurea",
+          "Solanum_tuberosum",
+          "Rosmarinus_officinalis",
+          "Allamanda_cathartica",
+          "Catharanthus_roseus",
+          "Inula_helenium",
+          "Tanacetum_parthenium",
+          "Diospyros_malabarica",
+          "Vitis_vinifera",
+          "Nelumbo_nucifera",
+          "Eschscholzia_californica",
+          "Podophyllum_peltatum",
+          "Brachypodium_distachyon",
+          "Oryza_sativa",
+          "Sorghum_bicolor",
+          "Zea_mays",
+          "Sabal_bermudana",
+          "Colchicum_autumnale",
+          "Smilax_bona_nox",
+          "Yucca_filamentosa",
+          "Dioscorea_villosa",
+          "Zostera_marina",
+          "Acorus_americanus",
+          "Houttuynia_cordata",
+          "Saruma_henryi",
+          "Persea_borbonia",
+          "Sarcandra_glabra",
+          "Illicium_floridanum",
+          "Illicium_parviflorum",
+          "Kadsura_heteroclite",
+          "Nuphar_advena",
+          "Amborella_trichopoda",
+          "Pinus_jeffreyi",
+          "Pinus_ponderosa",
+          "Pinus_radiata",
+          "Pinus_parviflora",
+          "Cedrus_libani",
+          "Ephedra_sinica",
+          "Gnetum_montanum",
+          "Cunninghamia_lanceolata",
+          "Juniperus_scopulorum",
+          "Taxus_baccata",
+          "Sciadopitys_verticillata",
+          "Prumnopitys_andina",
+          "Cycas_micholitzii",
+          "Ginkgo_biloba",
+          "Cystopteris_fragilis",
+          "Cystopteris_utahensis",
+          "Gymnocarpium_dryopteris",
+          "Homalosorus_pycnocarpos",
+          "Thelypteris_acuminata",
+          "Didymochlaena_truncatula",
+          "Polystichum_acrostichoides",
+          "Dennstaedtia_hirsuta",
+          "Adiantum_aleuticum",
+          "Adiantum_tenerum",
+          "Pteris_ensigormis",
+          "Pteris_vittata",
+          "Lindsaea_linearis",
+          "Lindsaea_microphylla",
+          "Lindsaea_heterophylla",
+          "Lonchitis_hirsuta",
+          "Cystodium_sorbifolium",
+          "Saccoloma_campylurum",
+          "Cyathea_spinulosa",
+          "Thyrsopteris_elegans",
+          "Dipteris_conjugata",
+          "Ophioglossum_vulgatum",
+          "Sceptridium_dissectum",
+          "Psilotum_nudum",
+          "Danaea_nodosa",
+          "Marattia_attenuata",
+          "Equisetum_diffusum",
+          "Equisetum_hymale",
+          "Dendrolycopodium_obscurum",
+          "Lycopodium_deuterodensum",
+          "Lycopodium_annotinum",
+          "Pseudolycopodiella_caroliniana",
+          "Huperzia_lucidula",
+          "Huperzia_selago",
+          "Huperzia_myrisinites",
+          "Huperzia_squarrosa",
+          "Selaginella_apoda",
+          "Selaginella_willdenowii",
+          "Selaginella_kraussiana",
+          "Selaginella_wallacei",
+          "Selaginella_selaginoides",
+          "Isoetes_sp",
+          "Barbilophozia_barbata",
+          "Scapania_nemorosa",
+          "Odontoschisma_prostratum",
+          "Bazzania_trilobata",
+          "Calypogeia_fissa",
+          "Schistochila_sp",
+          "Frullania",
+          "Lejeuneaceae_sp",
+          "Radula_lindenbergia",
+          "Porella_navicularis",
+          "Porella_pinnata",
+          "Ptilidium_pulcherrimum",
+          "Metzgeria_crassipilis",
+          "Pellia_Epiphylla",
+          "Pellia_neesiana",
+          "Pallavicinia_lyellii",
+          "Marchantia_paleacea",
+          "Marchantia_polymorpha",
+          "Marchantia_emarginata",
+          "Conocephalum_conicum",
+          "Riccia_berychiana",
+          "Lunularia_cruciata",
+          "Sphaerocarpos_texanus",
+          "Treubia",
+          "Anomodon_attenuatus",
+          "Neckera_douglasii",
+          "Rhynchostegium_serrulatum",
+          "Thuidium_delicatulum",
+          "Leucodon_sciuroides",
+          "Bryum_argenteum",
+          "Funaria",
+          "Hedwigia_ciliata",
+          "Ceratodon_purpureus",
+          "Timmia_austriaca",
+          "Physcomicromitrium_sp",
+          "Physcomitrella_patens",
+          "Diphyscium_foliosum",
+          "Buxbaumia_aphylla",
+          "Atrichum_angustatum",
+          "Polytrichum_commune",
+          "Tetraphis_pellucida",
+          "Sphagnum_lescurii",
+          "Sphagnum_recurvatum",
+          "Takakia_lepidozioides",
+          "Megaceros_vincentianus",
+          "Nothoceros_aenigmaticus",
+          "Megaceros_tosanus",
+          "Phaeomegaceros_coriaceus",
+          "Paraphymatoceros_hallii",
+          "Phaeoceros_carolinianus",
+          "Anthoceros_agrestis",
+          "Anthoceros_punctatus",
+          "Folioceros"
+        ],
+        "first_leaves": [
+          "Boehmeria_nivea",
+          "Rosa_chinensis",
+          "Lupinus_angustifolius",
+          "Lupinus_polyphyllus",
+          "Oenothera_rosea"
+        ],
+        "last_leaves": [
+          "Paraphymatoceros_hallii",
+          "Phaeoceros_carolinianus",
+          "Anthoceros_agrestis",
+          "Anthoceros_punctatus",
+          "Folioceros"
+        ],
+        "annotation": "B(4.269,4.591,0.01,0.01)",
+        "lower_time_units": 4.269,
+        "upper_time_units": 4.591,
+        "lower_ma": 426.90000000000003,
+        "upper_ma": 459.1,
+        "tail_lower": 0.01,
+        "tail_upper": 0.01,
+        "evidence": {
+          "member": "03. Divergence Time Estimation/mcmctree_inputs/Fossil_Calibrations_HooperNP.txt",
+          "line": 2,
+          "line_sha256": "5567c1a41c7b65530ff513dcbb03d0ed7c202846bf02ccf6b6d2256f01429ec5",
+          "annotation_substring": "B(4.269,4.591,0.01,0.01)"
+        }
+      },
+      "crown_Tracheophyta": {
+        "node_id": 185,
+        "numbering": "preorder internal-node numbering, starting at Ntip + 1",
+        "leaf_count": 101,
+        "leaves": [
+          "Boehmeria_nivea",
+          "Rosa_chinensis",
+          "Lupinus_angustifolius",
+          "Lupinus_polyphyllus",
+          "Oenothera_rosea",
+          "Oenothera_speciosa",
+          "Larrea_tridentata",
+          "Arabidopsis_thaliana",
+          "Carica_papaya",
+          "Hibiscus_cannabinus",
+          "Populus_euphratica",
+          "Populus_trichocarpa",
+          "Kochia_scoparia",
+          "Ipomoea_purpurea",
+          "Solanum_tuberosum",
+          "Rosmarinus_officinalis",
+          "Allamanda_cathartica",
+          "Catharanthus_roseus",
+          "Inula_helenium",
+          "Tanacetum_parthenium",
+          "Diospyros_malabarica",
+          "Vitis_vinifera",
+          "Nelumbo_nucifera",
+          "Eschscholzia_californica",
+          "Podophyllum_peltatum",
+          "Brachypodium_distachyon",
+          "Oryza_sativa",
+          "Sorghum_bicolor",
+          "Zea_mays",
+          "Sabal_bermudana",
+          "Colchicum_autumnale",
+          "Smilax_bona_nox",
+          "Yucca_filamentosa",
+          "Dioscorea_villosa",
+          "Zostera_marina",
+          "Acorus_americanus",
+          "Houttuynia_cordata",
+          "Saruma_henryi",
+          "Persea_borbonia",
+          "Sarcandra_glabra",
+          "Illicium_floridanum",
+          "Illicium_parviflorum",
+          "Kadsura_heteroclite",
+          "Nuphar_advena",
+          "Amborella_trichopoda",
+          "Pinus_jeffreyi",
+          "Pinus_ponderosa",
+          "Pinus_radiata",
+          "Pinus_parviflora",
+          "Cedrus_libani",
+          "Ephedra_sinica",
+          "Gnetum_montanum",
+          "Cunninghamia_lanceolata",
+          "Juniperus_scopulorum",
+          "Taxus_baccata",
+          "Sciadopitys_verticillata",
+          "Prumnopitys_andina",
+          "Cycas_micholitzii",
+          "Ginkgo_biloba",
+          "Cystopteris_fragilis",
+          "Cystopteris_utahensis",
+          "Gymnocarpium_dryopteris",
+          "Homalosorus_pycnocarpos",
+          "Thelypteris_acuminata",
+          "Didymochlaena_truncatula",
+          "Polystichum_acrostichoides",
+          "Dennstaedtia_hirsuta",
+          "Adiantum_aleuticum",
+          "Adiantum_tenerum",
+          "Pteris_ensigormis",
+          "Pteris_vittata",
+          "Lindsaea_linearis",
+          "Lindsaea_microphylla",
+          "Lindsaea_heterophylla",
+          "Lonchitis_hirsuta",
+          "Cystodium_sorbifolium",
+          "Saccoloma_campylurum",
+          "Cyathea_spinulosa",
+          "Thyrsopteris_elegans",
+          "Dipteris_conjugata",
+          "Ophioglossum_vulgatum",
+          "Sceptridium_dissectum",
+          "Psilotum_nudum",
+          "Danaea_nodosa",
+          "Marattia_attenuata",
+          "Equisetum_diffusum",
+          "Equisetum_hymale",
+          "Dendrolycopodium_obscurum",
+          "Lycopodium_deuterodensum",
+          "Lycopodium_annotinum",
+          "Pseudolycopodiella_caroliniana",
+          "Huperzia_lucidula",
+          "Huperzia_selago",
+          "Huperzia_myrisinites",
+          "Huperzia_squarrosa",
+          "Selaginella_apoda",
+          "Selaginella_willdenowii",
+          "Selaginella_kraussiana",
+          "Selaginella_wallacei",
+          "Selaginella_selaginoides",
+          "Isoetes_sp"
+        ],
+        "first_leaves": [
+          "Boehmeria_nivea",
+          "Rosa_chinensis",
+          "Lupinus_angustifolius",
+          "Lupinus_polyphyllus",
+          "Oenothera_rosea"
+        ],
+        "last_leaves": [
+          "Selaginella_willdenowii",
+          "Selaginella_kraussiana",
+          "Selaginella_wallacei",
+          "Selaginella_selaginoides",
+          "Isoetes_sp"
+        ],
+        "annotation": "B(4.21,4.312,0.01,0.01)",
+        "lower_time_units": 4.21,
+        "upper_time_units": 4.312,
+        "lower_ma": 421.0,
+        "upper_ma": 431.20000000000005,
+        "tail_lower": 0.01,
+        "tail_upper": 0.01,
+        "evidence": {
+          "member": "03. Divergence Time Estimation/mcmctree_inputs/Fossil_Calibrations_HooperNP.txt",
+          "line": 2,
+          "line_sha256": "5567c1a41c7b65530ff513dcbb03d0ed7c202846bf02ccf6b6d2256f01429ec5",
+          "annotation_substring": "B(4.21,4.312,0.01,0.01)"
+        }
+      }
+    }
+  },
+  "sampling_semantics": {
+    "primary_summary_selection": "all rows in each deposited chain",
+    "reason": "MCMCtree writes MCMC samples only after burn-in; the deposited chains therefore already exclude the declared burn-in",
+    "official_paml_source": "https://github.com/abacus-gene/paml/blob/master/doc/pamlHistory.txt",
+    "deposited_reader_evidence": {
+      "member": "03. Divergence Time Estimation/mcmctreer.R",
+      "line": 17,
+      "text": "phy1.posterior <- read.delim(\"hornwort_set_posterior_mcmc_old_version.txt\")"
+    },
+    "declared_burnin_retained_as": "sensitivity threshold only (Gen > burnin)"
+  },
+  "traceability_checks": {
+    "archive_member_log_like_names": [],
+    "mcmctree_outfiles_referenced_by_controls": [
+      "mcmc_prior.out",
+      "mcmc_posterior.out"
+    ],
+    "referenced_mcmctree_outfile_matches": [
+      {
+        "control_reference": "mcmc_prior.out",
+        "archive_members_with_matching_basename": []
+      },
+      {
+        "control_reference": "mcmc_posterior.out",
+        "archive_members_with_matching_basename": []
+      }
+    ],
+    "referenced_mcmctree_outfiles_present_in_archive": [],
+    "referenced_mcmctree_outfiles_absent_from_archive": [
+      "mcmc_prior.out",
+      "mcmc_posterior.out"
+    ],
+    "chain_header_metadata_hits": {
+      "prior": [],
+      "posterior": []
+    },
+    "output_run_log_or_control_hash_present": false
+  },
+  "conclusion": {
+    "internal_consistency": "supported: archive hash, 69 calibration count/tails, topology focus nodes, controls, chain headers and node summaries are reproducible from the snapshot",
+    "published_summary_consistency": "posterior t_n184 rounds to the published crown-Embryophyta interval; t_n185 is reported as the topology-identified crown-Tracheophyta summary",
+    "historical_run_provenance": "unresolved: no run log, control-file hash, or referenced mcmctree outfile links the supplied controls to the old_version chains",
+    "unavailable": [
+      "controlled rerun under deposited 1% settings",
+      "controlled rerun under described 2.5% settings",
+      "historical command invocation and explicit control-to-output linkage"
+    ]
+  }
+}

@@ -1,0 +1,3 @@
+age_model_id,status,definition,numeric_basis
+stage-evidence-only,evidence-only,Stage bounds recorded; no within-stage probability density or shared-boundary distribution adopted.,data/timescale.csv ICS v2024/12; numerical uncertainties not interpreted as SDs
+stage-evidence-conflict,evidence-only,Stage assignment retained together with incompatible historical numeric range; analysis must declare treatment.,No probability model or revised stage assignment adopted

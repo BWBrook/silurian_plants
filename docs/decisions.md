@@ -3,6 +3,55 @@
 Dated record of decisions that shape the programme. Newest first. Say who decided, and quote
 Barry exactly (with source) or label a paraphrase.
 
+## 2026-10-29: implementation review, sampling-unit pilot and Q9 provenance (Codex; response pending)
+
+- **Authority and cadence.** Barry asked Codex to check Claude's plan, implementation and test
+  evidence, then proceed with the Q9 provenance check and bounded M2 pilot where relevant.
+  He confirmed: "Claude will not see or know of your new work until I re-prompt him" and
+  "This is the cadence we'll continue to use, throughout the project work" (Codex chat).
+  Each session completes its owned tranche and posts a handoff; Board posts do not dispatch work.
+- **Implementation checked.** The 117 F3 tests pass. Codex's independent review at `b2c6443`
+  finds that the broad H0/H0m descriptions exceed their implemented subclasses, the logistic
+  denominator lacks the claimed nesting, and a Poisson-matched cutoff is not exact for the
+  profiled Bernoulli procedure. Exact enumeration supplies counterexamples. The two-stage
+  acceptance rule passes with probability 0.06903 at true coverage 0.93; raising its pooled
+  threshold from 1,880 to 1,886 would reduce that to 0.04837. Independent Normal perturbation
+  and sorting of chart boundaries remain a toy assumption. Details and reproducible checks:
+  `docs/audits/2026-10-29-f3-implementation-review.md`.
+- **Coverage target retained.** Parent review challenged a proposed requirement to validate
+  conditional on the unknown truth being older than the selected first appearance. Unconditional
+  coverage of the complete origin set remains legitimate. The approximately 0.84 coverage in that
+  truth-defined subset is a diagnostic, not automatically a failed conditional claim. Any additional
+  observable reporting rule must be declared and calibrated; output must show the implicit younger
+  part of the origin set.
+- **Recommendations, not an amendment.** Codex proposes narrower class labels or repaired
+  optimisation, calibrated tests, the corrected sequential rule, explicit age scenarios and an
+  expanded validation grid. These await Claude's response. The adopted scientific question stays;
+  neither plan nor model code was rewritten, and no full validation grid or real-data fit was run.
+- **M2 pilot completed at the evidence-supported size.** `data/units/` has 15 identifiable blocks
+  and 90 event-by-reading outcomes, with two ambiguous endpoints held as candidates. It tests the
+  interface and source audit, not an analysis denominator. Eight named Paraguay depths come from
+  a 53-sample study whose complete event table is unavailable; repeating its spore and chitinozoan
+  reports would duplicate material. The sole explicit older E1 negative is a secondary quotation
+  with unknown eligibility. A primary-verified negative/reference frame is still needed.
+- **Q9 bounded check complete; historical linkage unresolved.** The archive hash matches;
+  all 5,001 saved chain rows reproduce the rounded publication summary. Focal output-tree clades
+  match by full leaf sets. Input fossil tails are 1%, not the described 2.5%; output filenames,
+  controls and the R script do not identify the historical invocation. The preliminary Board
+  messages 2490–2494 incorrectly removed burn-in twice; the final audit corrects that and retains
+  the trimmed result only as sensitivity. No molecular-clock rerun was performed.
+- **Structural review (Q1, Q2, Q9).** Separate unit and outcome tables preserve the distinction
+  between material, event, reading and eligibility; the source-file ledger preserves main texts
+  and supplements separately. The structure serves the next targeted denominator audit. This
+  tranche exposed both a statistical class mismatch and the empirical scarcity of documented
+  negatives, without changing the programme's questions. Next: Claude's methodological response,
+  then a source-selected complete sample-frame tranche and a predeclared validation study.
+- **Verification limits.** Unit integrity and five malformed-input checks passed; Q9 summaries
+  and both statistical enumerations were reproduced independently. The global DOI scan flagged
+  15 entries in unchanged `docs/barry-to-action.md` (14 trailing-backtick parse failures and one
+  missing citation context). Both new source DOIs were verified directly with Crossref. No card,
+  trait matrix, F3 model or existing occurrence interpretation was changed.
+
 ## 2026-10-29: F3 estimator built and reviewed; six refinements (Claude, awaiting Codex)
 
 - **Built.** The compatibility estimator, simulator and validation harness are in `models/f3/`. A Claude Sonnet 5.5 subagent built them to Claude Opus 5.5's construction. Claude Opus 5.5 reviewed them. The as-built version and its smoke run are preserved at `c7729ad`.

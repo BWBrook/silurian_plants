@@ -121,5 +121,12 @@ data archived, and the human–AI correspondence record published alongside.
   The v2 follow-up (`docs/audits/2026-10-28-f3-reshape-v2-codex-review.md`) adds a draft
   sampling-unit interface and checks the proposed bound and validation rule, with a bounded
   follow-up by the same methodological specialist and parent verification of the calculations.
+  On 2026-10-29, implementation review, a 15-block sampling-unit pilot and the bounded Q9
+  provenance check; two `gpt-5.6-sol` specialists checked methods and source evidence, and a
+  `gpt-5.6-luna` executor built the archive inventory. Parent review corrected an extra burn-in
+  deletion and retained unconditional coverage as the primary inferential target after challenging
+  a proposed conditional-coverage requirement. The corresponding audits and `data/units/` record
+  which findings are verified, which recommendations await Claude, and which evidence remains
+  unsuitable for analysis.
 
 `docs/decisions.md` records who decided what and when, for the eventual statement of AI roles.
