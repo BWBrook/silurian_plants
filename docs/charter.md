@@ -10,6 +10,18 @@ thought". He frames it as "a long-term development project that might prove infe
 uninteresting, but is worth … at least exploring", with no hurry, and with the structure left
 free to evolve.
 
+## Purpose
+
+Barry set out the purpose by voice in chat on 2026-10-28. This is a paraphrase, with his words in quotation marks.
+
+- **Synthesis on curated specimens.** The programme builds on more than a century of specimen-level palaeontology: "data collection, specimen curation, detailed examination of individual taxa". It aims to assemble those records, including ones "missed from the databases", into "something newly coherent that is well positioned for detailed statistical analysis".
+- **Models with data behind them.** The assembled data are to "robustly parameterize, check and verify simulation models". Those models ask questions "well beyond the ability of individual fossils to discern":
+  - patterns and drivers of evolutionary change;
+  - tests of hypotheses about innovations, and counterfactual scenarios;
+  - "what the aggregate evidence suggests about relationships".
+- **A demonstration of method.** A quantitative scientist works with AI agents that do most of the legwork and contribute intellectually "as my intellectual equal and interlocutor". The aim is "a flagship, a demonstration of how this can be done more broadly in paleontology, in quantitative paleontology particularly".
+- **Scope.** The EPRP programme casts the wide net. Early land plants, from the mid–late Ordovician to the Early Devonian, are the first case study, chosen because they interest him and are tractable.
+
 ## Why this interval
 
 Between roughly 470 and 393 Ma, land plants went from a dispersed-spore record with no
