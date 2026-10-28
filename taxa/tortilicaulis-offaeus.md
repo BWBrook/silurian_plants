@@ -59,7 +59,7 @@ references:
     doi: 10.1006/bojl.1994.1055
   - cite: "Morris JL, Edwards D, Richardson JB, Axe L, Davies KL (2012). Further insights into trilete spore producers from the Early Devonian (Lochkovian) of the Welsh Borderland, UK. Review of Palaeobotany and Palynology 185: 35-63 (not read; as cited by Morris et al. 2024)."
     doi: 10.1016/j.revpalbo.2012.08.001
-  - cite: "Edwards D, Davies EC (1976). Oldest recorded in situ tracheids. Nature 263: 494-495 (not read; as cited by Morris et al. 2024)."
+  - cite: "Edwards D, Davies ECW (1976). Oldest recorded in situ tracheids. Nature 263: 494-495 (abstract read, via ORCA, Cardiff; full text not read)."
     doi: 10.1038/263494a0
   - cite: "Edwards D, Davies KL, Axe L (1992). A vascular conducting strand in the early land plant Cooksonia. Nature 357: 683-685 (not read; as cited by Morris et al. 2024)."
     doi: 10.1038/357683a0
@@ -111,12 +111,12 @@ Stomata on stems and trilete spores point to a homoiohydric sporophyte (Morris e
 
 - **Conducting cells in thin axes.** In HD743/01 a stem 0.12-0.16 mm wide holds cells 7.5-12.5 um wide with annular-type thickenings. Cooksonia in [the group card](rhyniophytoids.md) has axes of 0.2-1.5 mm, so these stems are narrower; the cell widths are those of twisted, compressed cells, not lumen or conduit geometry.
 - **Appearance does not predict anatomy.** Twisted cells and a bryophyte-like look kept the genus among non-vascular candidates from 1979 until the 2024 anatomy, which reversed that for one species. A model that scores bryophyte-grade from gross form alone should carry that uncertainty; see [Sporogonites](sporogonites.md).
-- **Record timing.** The finding is Lochkovian. It does not move the first tracheids earlier, because Ludlow Cooksonia with annular thickenings (Edwards & Davies 1976, as cited by Morris et al. 2024) and Lochkovian charcoalified C. pertoni (Edwards et al. 1992) are already known. It removes T. offaeus from the Silurian-Lochkovian list of non-vascular, bryophyte-like sporophytes, but the Pridoli type species is untested.
+- **Record timing.** The finding is Lochkovian. It does not move the first tracheids earlier, because Whitcliffian (late Ludlow) Cooksonia-type stems with annular thickenings (Edwards & Davies 1976; Morris et al. 2024; their attachment to Cooksonia sporangia is uncertain, see the Cooksonia card) and Lochkovian charcoalified C. pertoni (Edwards et al. 1992) are already known. It removes T. offaeus from the Silurian-Lochkovian list of non-vascular, bryophyte-like sporophytes, but the Pridoli type species is untested.
 - **Size.** Sporangia of 0.25-0.96 mm and spores of 12-20 um are small against the 1-9 mm sporangia of the group card.
 
 ## Model transfer
 
-**Chosen to contrast:** water-transport and record-timing: a stem 0.1 mm wide that looks bryophyte-like but contains cells with tracheid-like thickenings, in a Lochkovian charcoal assemblage where Ludlow and Lochkovian Cooksonia already carry tracheids.
+**Chosen to contrast:** water-transport and record-timing: a stem 0.1 mm wide that looks bryophyte-like but contains cells with tracheid-like thickenings, in a Lochkovian charcoal assemblage where Ludlow Cooksonia-type stems and Lochkovian C. pertoni already carry tracheids.
 
 - **Can transfer:**
   - HD743/01 (Brown Clee Hill): conducting cells 40-120 um long and 7.5-12.5 um wide with thickenings 1-1.7 um thick and 1.4-2.5 um apart, in a stem 0.12-0.16 mm wide; use as an observed small-axis example of a tracheid-bearing stem, not as a minimum, and with cell dimensions treated as approximate because the cells are twisted and compressed (Morris et al. 2024).

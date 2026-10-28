@@ -42,7 +42,11 @@ Barry exactly (with source) or label a paraphrase.
   - a card for Chaleuria cirrosa, a second Emsian spore-size contrast from the Campbellton
     Formation;
   - a check of the Ludlow Cooksonia tracheids of Edwards & Davies (1976), which contradict two
-    cards (leads register).
+    cards (leads register). Barry: "Yes, check it" (chat, 2026-10-28). The record holds: the
+    oldest in situ tracheids are Whitcliffian (late Ludlow), not Lochkovian. Whether the axes bore
+    Cooksonia sporangia stays open, because Edwards (1979) and Edwards et al. (1992) do not support
+    the attachment that Morris et al. (2024) describe. The Cooksonia, rhyniophytoid and
+    Tortilicaulis cards are corrected; the full text is on the closed register.
 
 ## 2026-10-27: spore dataset (MVD-A), Codex delegation, closed-literature register
 

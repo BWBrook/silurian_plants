@@ -9,7 +9,7 @@ lineage: >-
   sporangia; the genus is paraphyletic or polyphyletic, with C. pertoni among the earliest
   stem-group eutracheophytes and some species in the lycophyte total group.
 placement_confidence: low
-contrasts: [sporophyte-independence, water-transport, reproductive-strategy]
+contrasts: [sporophyte-independence, water-transport, reproductive-strategy, record-timing]
 range:
   first: Sheinwoodian
   last: Lochkovian
@@ -65,10 +65,17 @@ traits:
   conducting_tissue:
     state: tracheids
     note: >-
-      Tracheids with wall thickenings are demonstrated only in Lochkovian charcoalified C. pertoni
-      (Edwards et al. 1992), including a tracheid cast with annular thickenings (Edwards and Kenrick
-      2015). Conducting cells and vascular strands have been interpreted in Pridoli C. bohemica
-      (Libertin et al. 2022); older Silurian specimens preserve no anatomy.
+      The oldest in situ tracheids are in late Ludlow (Whitcliffian) axes from South Wales (Edwards
+      and Davies 1976, abstract read): simple annular thickenings in naked branching stems ending in
+      Cooksonia-type sporangia (Morris et al. 2024). The link to Cooksonia is not secure: Edwards
+      (1979) lists the Whitcliffian finds as "Y-axes + tracheids" beside Cooksonia sp., and Edwards
+      et al. (1992) wrote that tracheids had never been shown in attached axes. In unequivocal
+      Cooksonia they are demonstrated in Lochkovian charcoalified C. pertoni (Edwards et al. 1992),
+      including a tracheid cast with annular thickenings (Edwards and Kenrick 2015); Lang's annular
+      strand was in an axis he assigned to C. hemisphaerica, from a site now placed in the Early
+      Devonian (Edwards and Kenrick 2015). Conducting cells and vascular strands have been
+      interpreted in Pridoli C. bohemica (Libertin et al. 2022); other Silurian specimens preserve
+      no anatomy.
   sporangium_position:
     state: terminal
     note: Single terminal sporangia, discoidal, lentil-shaped or hemispherical.
@@ -99,7 +106,7 @@ habitat: >-
   coastal or island ground. Lochkovian Welsh Borderland and Brazilian material comes from fluvial
   and marginal settings.
 status: draft
-updated: 2026-10-26
+updated: 2026-10-28
 references:
   - cite: "Edwards D, Fanning U, Richardson JB (1986). Stomata and sterome in early land plants. Nature 323: 438-440."
     doi: 10.1038/323438a0
@@ -107,6 +114,12 @@ references:
     doi: 10.1038/287041a0
   - cite: "Edwards D, Davies KL, Axe L (1992). A vascular conducting strand in the early land plant Cooksonia. Nature 357: 683-685."
     doi: 10.1038/357683a0
+  - cite: "Edwards D, Davies ECW (1976). Oldest recorded in situ tracheids. Nature 263: 494-495 (abstract read, via ORCA, Cardiff)."
+    doi: 10.1038/263494a0
+  - cite: "Edwards D (1979). A late Silurian flora from the Lower Old Red Sandstone of south-west Dyfed. Palaeontology 22: 23-52."
+    doi: null
+  - cite: "Morris JL, Edwards D, Axe L, Crooks T, Murdock D, Donoghue PCJ (2024). Lower Devonian Tortilicaulis is an early tracheophyte and not a bryophyte. Fossil Imprint 80: 135-153."
+    doi: 10.37520/fi.2024.012
   - cite: "Boyce CK (2008). How green was Cooksonia? The importance of size in understanding the early evolution of physiology in the vascular plant lineage. Paleobiology 34: 179-194."
     doi: "10.1666/0094-8373(2008)034[0179:hgwcti]2.0.co;2"
   - cite: "Libertín M, Kvaček J, Bek J, Žárský V, Štorch P (2018). Sporophytes of polysporangiate land plants from the early Silurian period may have been photosynthetically autonomous. Nature Plants 4: 269-271."
@@ -143,13 +156,13 @@ references:
 
 ## In brief
 
-Cooksonia is the archetypal rhyniophytoid: a few centimetres of leafless, isotomously branching axis, each tip ending in one sporangium of trilete spores. It holds the oldest generally accepted land-plant megafossils (Wenlock, about 432 to 427 Ma) and, in Lochkovian material, direct evidence for tracheids and stomata. The genus is probably unnatural, and its narrowest members were arguably too slender to feed themselves, so it is the main test case for when the sporophyte became a self-sufficient plant.
+Cooksonia is the archetypal rhyniophytoid: a few centimetres of leafless, isotomously branching axis, each tip ending in one sporangium of trilete spores. It holds the oldest generally accepted land-plant megafossils (Wenlock, about 432 to 427 Ma), the oldest in situ tracheids (late Ludlow axes of Cooksonia type, not tied to a species) and, in Lochkovian C. pertoni, tracheids and stomata in unequivocal Cooksonia. The genus is probably unnatural, and its narrowest members were arguably too slender to feed themselves, so it is the main test case for when the sporophyte became a self-sufficient plant.
 
 ## Morphology and anatomy
 
 Observed: dichotomous axes, usually two or three bifurcations, with smooth surfaces and terminal sporangia that are discoidal, lentil-shaped or hemispherical, sometimes on a funnel-shaped subtending axis with a rim. Lang's specimens are about 1 to 6 cm long with 25 to 38 µm spores (Edwards and Kenrick 2015). The C. barrandei holotype is nearly 6 cm long, 1 to 1.5 mm wide, with 3 to 5 mm sporangia; the Irish Wenlock axes are only about 0.2 mm wide (Libertín et al. 2018 supplement).
 
-Anatomy exists only where preservation allows. Edwards et al. (1992) found tubes with differential wall thickening in the axes of Lochkovian C. pertoni, confirming Lang's earlier tracheid-like fragments; the charcoalified specimens show a tracheid cast with annular thickenings and stomata (Edwards and Kenrick 2015). Habgood et al. (2002) described the sporangial wall, rim and spores of the same charcoalified material. Silurian compressions show only outlines, so their vascular status is inferred from form and in situ spores. In situ spore types differ among species (Ambitisporites, Aneurospora, Synorisporites, Apiculiretusispora), which suggests that shape-based species are heterogeneous.
+Anatomy exists only where preservation allows. Lang found a central strand of what he read as annular tracheids in an axis he assigned "with practical certainty" to C. hemisphaerica, from a site now placed in the Early Devonian (Edwards and Kenrick 2015). Edwards and Davies (1976) then reported "a vascular plant" from older, Whitcliffian (late Ludlow) strata of South Wales, with tracheids in situ in the axes. Morris et al. (2024) describe these as simple annular thickenings in branching naked stems ending in Cooksonia-type sporangia. Edwards (1979) tabulates the same Whitcliffian finds as "Y-axes + tracheids" beside Cooksonia sp. and Steganotheca sp. Edwards et al. (1992) wrote that tracheids "have never been demonstrated in attached axes", so whether the tracheid-bearing Ludlow axes carried Cooksonia sporangia is unresolved; the 1976 text, not read here, would settle it. Edwards et al. (1992) found tubes with differential wall thickening in the axes of Lochkovian C. pertoni, the first in unequivocal Cooksonia; the charcoalified specimens show a tracheid cast with annular thickenings and stomata (Edwards and Kenrick 2015). Habgood et al. (2002) described the sporangial wall, rim and spores of the same charcoalified material. Other Silurian compressions show only outlines, so their vascular status is inferred from form and in situ spores. In situ spore types differ among species (Ambitisporites, Aneurospora, Synorisporites, Apiculiretusispora), which suggests that shape-based species are heterogeneous.
 
 ## Age and distribution
 
@@ -171,22 +184,23 @@ Boyce (2008) argued that once desiccation resistance, support and conduction are
 - Sporangium to spore scaling: 3 to 5 mm sporangium with 10 to 15 µm spores in C. barrandei; 18 to 38 µm spores elsewhere; no spore counts exist.
 - Timing: macrofossil first appearance 432 to 427 Ma, against dispersed trilete spores from the Late Ordovician; the macrofossil record probably under-samples earlier plants (inference).
 - Latitudinal spread: about 20° S (Poland, Přídolí; Pšenička et al. 2021) to 50 to 60° S (Bolivia, Ludlow; Morel et al. 1995).
-- Stomata present but sparse; tracheids with wall thickenings demonstrated only from the Lochkovian, with conducting cells interpreted in Pridoli C. bohemica.
+- Stomata present but sparse. Tracheids are in situ by the late Ludlow (Whitcliffian; the Ludfordian ends at 422.7 Ma on ICS v2024/12) in axes of Cooksonia type, conducting cells are interpreted in Pridoli C. bohemica, and tracheids in unequivocal Cooksonia are Lochkovian (from 419.62 Ma). The direct anatomical record of tracheids therefore starts at least 3 Myr before the Lochkovian, and about 2 to 9 Myr after the first Cooksonia megafossils (432 to 427 Ma).
 
 ## Model transfer
 
-**Chosen to contrast:** Contrast axis-width-dependent hypotheses of sporophyte autonomy with direct anatomical evidence, using differently sized Cooksonia specimens while retaining species and preservation differences.
+**Chosen to contrast:** Contrast axis-width-dependent hypotheses of sporophyte autonomy with direct anatomical evidence, using differently sized Cooksonia specimens while retaining species and preservation differences; and date the first direct evidence of tracheids (record-timing).
 
 - **Can transfer:**
   - Use nearly 6 cm fragment length, 1 to 1.5 mm axis width and 3 to 5 mm sporangia for the C. barrandei holotype from Loděnice, without treating fragment length as plant height (Libertín et al. 2018 supplement).
   - Use 10 to 15 um spores for C. barrandei at the Czech type locality; keep these separate from larger spores reported for other Cooksonia species (Libertin et al. 2018, supplement).
   - Code annularly thickened tracheids and stomata for Lochkovian charcoalified C. pertoni from North Brown Clee Hill, rather than all Cooksonia (Edwards et al. 1992; Edwards and Kenrick 2015).
+  - Use the Whitcliffian (late Ludlow) axes of South Wales as a minimum age for tracheids in naked, Cooksonia-type plants (Edwards and Davies 1976; Morris et al. 2024), not as a minimum age for Cooksonia or any named species.
 - **Cannot transfer:**
   - Photosynthetic autonomy or dependence cannot be fixed from axis width: both Boyce's narrow-axis argument and Libertín et al.'s C. barrandei counterargument are size-based inferences.
   - Whole-plant height cannot be equated with the front-matter length range: every specimen is fragmentary.
-  - Lochkovian C. pertoni tracheids cannot establish vascular anatomy in older Silurian compressions, which preserve outlines rather than equivalent tissues.
+  - Neither the Lochkovian C. pertoni tracheids nor the Ludlow axes establish vascular anatomy for a named Silurian Cooksonia species: the Ludlow axes are not securely attached to Cooksonia sporangia, and other Silurian compressions preserve outlines rather than tissues.
   - Shared genus membership cannot impose one lineage or physiological strategy across species: Cooksonia is an unnatural morphogenus.
 
 ## Open questions
 
-Is C. barrandei vascular, and does the Czech record displace the Irish one? Can charcoalified Silurian material be found to test Boyce's argument directly? Which Cooksonia-like species survive redefinition? Are the C. paranensis gametophyte-like structures real?
+Is C. barrandei vascular, and does the Czech record displace the Irish one? Did the tracheid-bearing Whitcliffian axes carry Cooksonia sporangia, and from which South Wales site and bed do they come (Edwards and Davies 1976, closed)? Can charcoalified Silurian material be found to test Boyce's argument directly? Which Cooksonia-like species survive redefinition? Are the C. paranensis gametophyte-like structures real?
