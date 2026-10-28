@@ -14,6 +14,10 @@ python3 tools/backup_nectar.py snapshot --source "$PWD"
 
 Run the offline integrity regression checks with `python3 tools/test_backup_nectar.py`.
 
+The intended Codex scheduled task runs the same command daily at 02:00 on the mac-mini's
+local clock. Check Scheduled in the app for whether it is active and for failures. The
+mac-mini and desktop app must be running for an unattended task to start.
+
 The script checks the source inventory and hashes, requests a local macOS copy-on-write
 capture, checks it against the source, and transfers that stable capture over SSH with
 compression. If the filesystem cannot clone, macOS falls back to a normal copy; the script reserves

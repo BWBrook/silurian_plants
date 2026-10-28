@@ -8,7 +8,7 @@ in `docs/questions.md`.
 
 Status values:
 - **held**: in the repository, committed;
-- **local**: on mac-mini only, in a git-ignored `local/` or `library/` folder, because of licence or size;
+- **local**: on mac-mini in a git-ignored `local/` or `library/` folder because of licence or size;
 - **limited**: access blocked or on request;
 - **missing**: not yet sourced;
 - **ruled out**: checked and unusable, with the reason given.
@@ -20,6 +20,10 @@ filters, licences and caveats; read it before use. Raw pulls before 2026-10-28 a
 2026-10-28. The EPRP mirror on `nectar-vm` is the canonical location for EPRP data files until Barry
 says otherwise (`AGENTS.md`); check individual snapshots before use. New raw pulls go to
 `nectar-vm:/data/codex/silurian_plants/raw/`. The `local/` folders hold 2.5 GB on mac-mini.
+
+The private backup workflow targets `nectar-codex-ts:/data/codex/silurian_plants/backups/mac-mini/`
+and includes git-ignored material. See `docs/backup-nectar.md` and the verification receipts before
+relying on a particular generation.
 
 ## 1. Fossil occurrences
 
