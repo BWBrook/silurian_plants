@@ -3,6 +3,18 @@
 Dated record of decisions that shape the programme. Newest first. Say who decided, and quote
 Barry exactly (with source) or label a paraphrase.
 
+## 2026-10-28: primer revised after Barry's review
+
+- **Review** (Barry, chat, 2026-10-28). His main concern: "the primer preserves uncertainty in its literature summaries, then sometimes loses it in the diagrams, modelling rules and proposed analyses". He made seven points; the most structural was "Give the organismal biology more space". Claude Opus 5.5 checked the sources he cited, and they bear the points out.
+- **Rules adopted** (Claude, implementing Barry's points):
+  - **Ages.** A fossil's stage assignment is the primary datum. Dates are recorded beside it, never used to relabel it, and a conflict between them is investigated. Age uncertainty is propagated only through a joint, ordered age model, never by perturbing the chart's printed "±" values independently.
+  - **Climate entries.** Each states its target variable, coverage, method and status (proxy, model output or assumed input). 1,000–3,000 ppm CO2 is a sensitivity scenario, not a prior.
+  - **Tractability.** "Tractable" means buildable. Every modelling question starts with a recovery (identifiability) test, and a fossil that calibrates a clock cannot also test it.
+  - **Clock results.** Results from different calibration choices are carried as separate scenarios, not pooled.
+- **Vocabulary** (Claude): `conducting_tissue` gains the state `disputed`, for conflicting published readings. Its first use is *Horneophyton*: tracheids (Cascales-Miñana et al. 2019) against transfer-cell-like cells and no tracheids (Kenrick & Long 2026).
+- **New primer §6, biological transitions** (Barry proposed; a Claude Sonnet 5.5 agent drafted it from the cards; Claude Opus 5.5 integrated it). It covers eight transitions with the fossil observations that constrain each. It argues that vascularisation, independence and size are separate variables, and gives six predictions that would tell a package from independent transitions.
+- **Audit** (Codex `gpt-6.1-sol`, adjudicated by Claude Opus 5.5): `docs/audits/2026-10-28-primer-revision-audit.md`.
+
 ## 2026-10-28: exemplars chosen by contrast; tranche-3 cards
 
 - **Comparative design** (Barry, chat, 2026-10-28): "we need to select each exemplar for the

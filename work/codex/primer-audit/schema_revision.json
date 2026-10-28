@@ -1,0 +1,88 @@
+{
+ "type": "object",
+ "additionalProperties": false,
+ "required": [
+  "items",
+  "omissions",
+  "review_points",
+  "overall"
+ ],
+ "properties": {
+  "items": {
+   "type": "array",
+   "items": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+     "claim",
+     "section",
+     "verdict",
+     "evidence",
+     "source"
+    ],
+    "properties": {
+     "claim": {
+      "type": "string"
+     },
+     "section": {
+      "type": "string"
+     },
+     "verdict": {
+      "type": "string",
+      "enum": [
+       "supported",
+       "wrong",
+       "misattributed",
+       "imprecise",
+       "overstated",
+       "unverifiable"
+      ]
+     },
+     "evidence": {
+      "type": "string"
+     },
+     "source": {
+      "type": "string"
+     }
+    }
+   }
+  },
+  "omissions": {
+   "type": "array",
+   "items": {
+    "type": "string"
+   }
+  },
+  "overall": {
+   "type": "string"
+  },
+  "review_points": {
+   "type": "array",
+   "items": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+     "point",
+     "addressed",
+     "where_uncertainty_is_still_lost"
+    ],
+    "properties": {
+     "point": {
+      "type": "string"
+     },
+     "addressed": {
+      "type": "string",
+      "enum": [
+       "fully",
+       "partly",
+       "not"
+      ]
+     },
+     "where_uncertainty_is_still_lost": {
+      "type": "string"
+     }
+    }
+   }
+  }
+ }
+}

@@ -1,0 +1,59 @@
+{
+ "type": "object",
+ "additionalProperties": false,
+ "required": [
+  "items",
+  "omissions",
+  "overall"
+ ],
+ "properties": {
+  "items": {
+   "type": "array",
+   "items": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+     "claim",
+     "section",
+     "verdict",
+     "evidence",
+     "source"
+    ],
+    "properties": {
+     "claim": {
+      "type": "string"
+     },
+     "section": {
+      "type": "string"
+     },
+     "verdict": {
+      "type": "string",
+      "enum": [
+       "supported",
+       "wrong",
+       "misattributed",
+       "imprecise",
+       "overstated",
+       "unverifiable"
+      ]
+     },
+     "evidence": {
+      "type": "string"
+     },
+     "source": {
+      "type": "string"
+     }
+    }
+   }
+  },
+  "omissions": {
+   "type": "array",
+   "items": {
+    "type": "string"
+   }
+  },
+  "overall": {
+   "type": "string"
+  }
+ }
+}

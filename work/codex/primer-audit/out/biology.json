@@ -1,0 +1,192 @@
+{
+  "items": [
+    {
+      "claim": "Rhynie gametophytes were free-living, about one tenth sporophyte size, with pairings based on similarity, 'not attachment'.",
+      "section": "Gametophyte–sporophyte relationship row; Rhynie paragraph",
+      "verdict": "imprecise",
+      "evidence": "Free-living stomatal gametophytes are supported; the size ratio is approximate, and Remyophyton includes two outgrowths interpreted as possible sporophyte junctions.",
+      "source": "[Taylor et al. 2005](https://doi.org/10.1073/pnas.0501985102), full-text sections read; [Kerp 2017](https://doi.org/10.1098/rstb.2016.0495), indexed full-text sections read."
+    },
+    {
+      "claim": "'Sciadophyton: conducting gametophyte to about 10 cm, sporophyte unknown.'",
+      "section": "Gametophyte–sporophyte relationship row; prediction 3",
+      "verdict": "imprecise",
+      "evidence": "Approximately 10 cm describes flattened axis length; conducting cells are documented, but gametophyte identity remains an interpretation rather than demonstrated generation identity.",
+      "source": "[Kenrick 2017](https://doi.org/10.1098/rstb.2017.0149), full-text sections read; [Gerrienne and Gonez](https://orbi.uliege.be/bitstream/2268/101745/1/Gerrienne%26Gonez2011.pdf), relevant full-text section read."
+    },
+    {
+      "claim": "'Coleochaete: zygote retained and provisioned.'",
+      "section": "Gametophyte–sporophyte relationship row",
+      "verdict": "imprecise",
+      "evidence": "Retention and wall ingrowths are observed; maternal resource transfer is inferred from morphology, zygote enlargement and reserve accumulation, rather than directly measured.",
+      "source": "[Graham and Wilcox 1983](https://doi.org/10.1002/j.1537-2197.1983.tb12439.x), abstract only; [Haig 2015](https://doi.org/10.3732/ajb.1400526), full text read."
+    },
+    {
+      "claim": "Cooksonia axes span 0.2–1.5 mm; Boyce and Libertín offered opposing independence arguments, 'both from size without anatomy'.",
+      "section": "Sporophyte nutritional independence row; Size paragraph",
+      "verdict": "imprecise",
+      "evidence": "Boyce uses anatomical evidence and also permits autonomy in wider axes; Libertín extends that argument. Exact diameter endpoints were not independently verified.",
+      "source": "[Boyce 2008](https://doi.org/10.1666/0094-8373%282008%29034%5B0179%3AHGWCTI%5D2.0.CO%3B2), abstract and full-text passages read; [Libertín et al. 2018](https://doi.org/10.1038/s41477-018-0140-y), abstract only."
+    },
+    {
+      "claim": "Tortilicaulis offaeus stems were 0.06–0.17 mm wide; thickenings were clear in one of five scans, weaker in two, unclear in two.",
+      "section": "Conducting cells without size or independence",
+      "verdict": "unverifiable",
+      "evidence": "Five scanned specimens and interpreted annular tracheids are confirmed; exact diameter endpoints and the complete specimen-confidence tally could not be independently checked.",
+      "source": "[Morris et al. 2024](https://doi.org/10.37520/fi.2024.012), abstract and indexed full-text passages/captions read; full PDF retrieval failed."
+    },
+    {
+      "claim": "Polytrichum has P50 about −1.8 MPa and up to 250 capsule stomata, while P. formosum sporophytes remain carbon-dependent.",
+      "section": "Water transport row; Conducting cells paragraph",
+      "verdict": "supported",
+      "evidence": "The hydraulic value concerns hydroid embolism; 250 is a genus-level capsule count; the carbon-transfer experiment specifically concerns P. formosum.",
+      "source": "[Brodribb et al. 2020](https://doi.org/10.1038/s41477-020-0602-x), full text read; [Renzaglia et al. 2020](https://doi.org/10.3389/fpls.2020.00567), full-text sections read; [Renault et al. 1992](https://doi.org/10.1104/pp.100.4.1815), abstract and indexed opening read."
+    },
+    {
+      "claim": "Anthoceros sporophytes are photosynthetic, stomatal and gametophyte-nourished; their stomata are not actively regulated.",
+      "section": "Nutritional independence and Water transport rows; Conducting cells paragraph",
+      "verdict": "supported",
+      "evidence": "Matrotrophy coexists with photosynthesis and stomata; experiments found no closure with ABA or darkness, supporting separation of these traits.",
+      "source": "[Pressel et al. 2018](https://doi.org/10.1093/aob/mcy045), full-text sections read; [Frangedakis et al. 2021](https://doi.org/10.1111/nph.16874), full-text section read."
+    },
+    {
+      "claim": "'Psilotum: stem gas exchange 8–10% of wheat'; its gametophyte is fungus-fed and vascularised.",
+      "section": "Water transport row; Rhynie paragraph",
+      "verdict": "imprecise",
+      "evidence": "Assimilation is approximately 10.5% of wheat; hydraulic conductance is approximately 8.4%. These are different measurements. Heterotrophic vascularised gametophytes are documented.",
+      "source": "[Franks 2006](https://doi.org/10.1111/j.1365-3040.2005.01434.x), full text read; [Duckett and Ligrone 2005](https://doi.org/10.1139/b05-102), full-text passages read. Franks's subsequent corrigendum was not accessible."
+    },
+    {
+      "claim": "'Selaginella: 3–6 weeks to emergence'; dependence itself remains untimed.",
+      "section": "Gametophyte–sporophyte relationship and Nutritional independence rows",
+      "verdict": "supported",
+      "evidence": "First embryos emerged three, four and six weeks after megaspore germination in three cultured species; the experiment did not determine nutritional independence.",
+      "source": "[Hilger et al. 2005](https://www.zobodat.at/pdf/PHY_45_1_0001-0008.pdf), full text read."
+    },
+    {
+      "claim": "'Steganotheca: at least ten terminal sporangia'; 'Pertica: 32–128 sporangia per cluster'.",
+      "section": "Branching and sporangium number row",
+      "verdict": "unverifiable",
+      "evidence": "The accessible Steganotheca abstract omits the count; 32–128 is explicitly assigned to P. dalhousii, requiring species qualification.",
+      "source": "[Edwards 1970](https://palass.org/product/1664), abstract only; [Doran et al. 1978](https://doi.org/10.1139/b78-369), abstract only."
+    },
+    {
+      "claim": "Bathurst plants had spikes to 45 × 11 mm, at least 27 sporangia on a 1 mm axis, and axes of 0.7–2.4 mm.",
+      "section": "Branching row; Size paragraph",
+      "verdict": "imprecise",
+      "evidence": "Large spikes belong to cf. Bathurstia with 5 mm strobilar axes; the 27-sporangium, 1 mm axis belongs to Zosterophyllum.",
+      "source": "[Kotyk et al. 2002](https://doi.org/10.3732/ajb.89.6.1004), full text read, including descriptions of US600-6791/6788 and US384-8137."
+    },
+    {
+      "claim": "Late Ludlow naked axes preserve tracheids, but attachment to Cooksonia remains unresolved.",
+      "section": "Water transport row; prediction 5",
+      "verdict": "supported",
+      "evidence": "The 1976 abstract reports Whitcliffian vascular axes; the 1992 paper distinguishes these associated older axes from anatomically demonstrated, unequivocal Cooksonia.",
+      "source": "[Edwards and Davies 1976](https://www.nature.com/articles/263494a0), abstract only; [Edwards et al. 1992](https://www.nature.com/articles/357683a0), abstract only. Exact annular morphology was not independently checked."
+    },
+    {
+      "claim": "Rhynia has S-type cells, Asteroxylon G-type, while Aglaophyton and Nothia lack tracheid thickenings; all five named Rhynie plants have stomata.",
+      "section": "Water transport row; Rhynie paragraph",
+      "verdict": "supported",
+      "evidence": "The anatomical contrasts and stomata support dissociation, although Aglaophyton wall interpretation has competing readings and Horneophyton requires separate treatment.",
+      "source": "[Kerp 2017](https://doi.org/10.1098/rstb.2016.0495), full text read, especially conducting-tissue and stomatal sections."
+    },
+    {
+      "claim": "Height reconstructions remain uncertain because there are 'no plants in situ'.",
+      "section": "Height and spore-release height row",
+      "verdict": "wrong",
+      "evidence": "Rhynie plants are explicitly reported preserved in situ. Uncertainty about complete stature does not justify denying their growth-position preservation.",
+      "source": "[Kerp 2017](https://doi.org/10.1098/rstb.2016.0495), full text read, introduction and gametophyte section."
+    },
+    {
+      "claim": "Wood in smaller euphyllophytes, versus woodless Wilhowia on 1 cm axes, demonstrates that wood was unnecessary for height.",
+      "section": "Height row; Size paragraph; prediction 1",
+      "verdict": "overstated",
+      "evidence": "Wood occurs in narrow fragments; Wilhowia has 1 cm-wide, 30 cm-long fragments without secondary tissues. This establishes width dissociation, not whole-plant height.",
+      "source": "[Gensel 2022](https://doi.org/10.1086/721263), abstract only; [Gerrienne et al. 2011](https://doi.org/10.1126/science.1208882), full article and supplement read."
+    },
+    {
+      "claim": "Rhynie rooting systems lacked true roots; Asteroxylon rooting axes lacked caps and rhizoids.",
+      "section": "Rooting row",
+      "verdict": "supported",
+      "evidence": "Rhizoidal rooting axes are documented in Rhynie plants; Asteroxylon meristems lacked caps, supporting stepwise assembly of root characters.",
+      "source": "[Hetherington and Dolan 2017](https://doi.org/10.1098/rstb.2017.0042), indexed full text read; [Hetherington and Dolan 2018](https://doi.org/10.1038/s41586-018-0445-z), abstract and publisher captions read."
+    },
+    {
+      "claim": "'Zosterophyllum shengfengense: root : shoot 0.028, one specimen.'",
+      "section": "Rooting row",
+      "verdict": "imprecise",
+      "evidence": "The ratio is a geometric volume estimate from one specimen; uncertainty in axis counts produces 0.008–0.093, rather than measured biomass allocation.",
+      "source": "[Hao et al. 2010](https://doi.org/10.1111/j.1469-8137.2009.03056.x), full text read, Table 1 and discussion."
+    },
+    {
+      "claim": "Sengelia had stems to 34 mm wide, interpreted as creeping, and root-bearing axes extending at least 12 cm deep.",
+      "section": "Height and Rooting rows; Size paragraph",
+      "verdict": "supported",
+      "evidence": "Stem widths of 3–34 mm are measured; creeping habit is inferred. In situ downward root-bearing axes extend at least 12 cm.",
+      "source": "[Matsunaga and Tomescu 2017](https://pmc.ncbi.nlm.nih.gov/articles/PMC5604611/), full text read; [Matsunaga and Tomescu 2016](https://doi.org/10.1093/aob/mcw006), full author PDF read."
+    },
+    {
+      "claim": "'Basal euphyllophytes have no known Early Devonian rooting structures'; unequivocal roots appear only in the Frasnian.",
+      "section": "Rooting row; Roots and fungi paragraph",
+      "verdict": "wrong",
+      "evidence": "The Frasnian statement concerns unequivocal roots; the cited paper describes Early Devonian Psilophyton emergences and explicitly proposes a rooting function.",
+      "source": "[Doran and Tomescu 2025](https://doi.org/10.1093/aob/mcaf121), full text read."
+    },
+    {
+      "claim": "Rootless Rhynie plants hosted fungi, but association does not demonstrate mutualism or nutrient transfer.",
+      "section": "Fungal nutrition row; Roots and fungi paragraph",
+      "verdict": "supported",
+      "evidence": "Arbuscules, distinct endophytes and host responses are documented; Asteroxylon parasitism is interpreted. Fossil nutrient exchange and net benefit remain unmeasured.",
+      "source": "[Remy et al. 1994](https://pubmed.ncbi.nlm.nih.gov/11607500/), abstract only; [Strullu-Derrien et al. 2014](https://doi.org/10.1111/nph.12805), full text; [Krings et al. 2007](https://doi.org/10.1111/j.1469-8137.2007.02008.x), full text; [Strullu-Derrien et al. 2015](https://doi.org/10.1111/boj.12307), abstract only."
+    },
+    {
+      "claim": "Haplomitrium fungi deliver 33P and 15N at 440 and 1500 ppm CO2, receiving under 2% of fixed carbon in core mycelium.",
+      "section": "Fungal nutrition row",
+      "verdict": "supported",
+      "evidence": "Nutrient transfer occurred under both treatments; the carbon percentage specifically concerns external mycelium inside experimental cores, as the section correctly specifies.",
+      "source": "[Field et al. 2015](https://doi.org/10.1111/nph.13024), full text read; [Field et al. 2019](https://eprints.whiterose.ac.uk/id/eprint/144418/26/Field_et_al-2019-New_Phytologist.pdf), full accepted manuscript read."
+    },
+    {
+      "claim": "'Cryptospores 23–62 µm'; 'Cooksonia ... 10–38 µm'; Horneophyton 39–49 µm and Aglaophyton about 65 µm.",
+      "section": "Reproductive strategy row",
+      "verdict": "imprecise",
+      "evidence": "Cryptospore bounds are assemblage-specific; Cooksonia excludes larger published spores. Rhynie values are supported, but the table suppresses their differing sampling scopes.",
+      "source": "[Wellman et al.](https://doi.org/10.1016/j.revpalbo.2014.09.003), full text unreachable, exact cryptospore endpoints unverifiable; [Libertín et al., Cooksonia bohemica](https://www.diva-portal.org/smash/get/diva2%3A1817613/FULLTEXT01.pdf), indexed Table 1 excerpt read, including 50–65 µm spores; [Eggert 1974](https://doi.org/10.2307/2441808), abstract only; [Kerp 2017](https://doi.org/10.1098/rstb.2016.0495), indexed full-text spore section read."
+    },
+    {
+      "claim": "Emsian Omniastrobus mean spore sizes grade from about 70–150 µm to over 200 µm, with some bimodal sporangia.",
+      "section": "Reproductive strategy row; Size paragraph",
+      "verdict": "supported",
+      "evidence": "The publisher abstract directly reports early Emsian material, graded mean spore sizes and some bimodal distributions; functional sex differentiation remains unresolved.",
+      "source": "[Bonacorsi et al. 2021](https://doi.org/10.1086/712356), abstract only, matching the section's access qualification."
+    },
+    {
+      "claim": "Euphyllophyte leaves followed lycophyte leaves by 10–25 Myr; observed transition minima span about 35–40 Myr against approximately 2 Myr uncertainties.",
+      "section": "Predictions 2 and 5",
+      "verdict": "imprecise",
+      "evidence": "The cited synthesis implies roughly 23–30 Myr between leaf appearances; stage-boundary errors alone do not quantify fossil-horizon, identification or first-occurrence uncertainty.",
+      "source": "[Tomescu and Whitewoods 2024](https://api.repository.cam.ac.uk/server/api/core/bitstreams/83e76cfe-a6dd-424c-8179-c49d3a0b9920/content), full-text review read; underlying earliest-leaf descriptions not reached. Repository data/timescale.csv inspected."
+    },
+    {
+      "claim": "'Transfer cells are so far known only from unattached Lochkovian thalloid and axial fossils'; attached-foot cells would demonstrate nourishment.",
+      "section": "Prediction 4",
+      "verdict": "wrong",
+      "evidence": "Horneophyton has transfer-cell-like conducting tissue; such morphology supports several transport functions and does not uniquely demonstrate maternal provisioning.",
+      "source": "[Kenrick and Long 2026](https://doi.org/10.1111/nph.70850), full text read; [Edwards et al. 2022](https://doi.org/10.1111/nph.17704), full text read."
+    }
+  ],
+  "omissions": [
+    "The strongest omitted implication of Kenrick and Long is that Horneophyton may combine water conduction and solute transport in one tissue, without distinct xylem and phloem. This strengthens the argument for separating conducting-tissue function from tracheid identity. [Full text](https://doi.org/10.1111/nph.70850).",
+    "Attachment evidence should include Elandia itshoba: several axes unite with a basal structure interpreted as gametophyte remains. Generation identity remains interpretive, but this published candidate belongs beside Cooksonia and Sporogonites. [Gess and Prestianni 2021, full text read](https://doi.org/10.1038/s41598-021-90180-z).",
+    "The gametophyte comparison omits Calyculiphyton axes exceeding 20 cm. More importantly, incomplete axes and reconstructed sporophytes cannot establish a universal generation-size ratio. [Kenrick, full-text sections read](https://doi.org/10.1098/rstb.2017.0149).",
+    "The wood comparison securely decouples secondary growth from axis width. Whole-plant height remains insufficiently constrained: the audit did not verify the complete Cooksonia 1–6 cm, Psilophyton 30–60 cm or Pertica 1–3 m ranges against original descriptions; the Gerrienne supplement gives Pertica 1–2 m. [Full supplement](https://orbi.uliege.be/bitstream/2268/97121/2/Gerrienne%20et%20al%202011b.pdf).",
+    "Reproductive strategy needs more than spore dimensions: Rhynie homosporous plants had separate-sex gametophytes, and the Ceratopteris card describes environmentally mediated sex expression. Neither homospory nor size uniformity fixes mating strategy. [Taylor et al., full-text sections read](https://doi.org/10.1073/pnas.0501985102); taxa/ceratopteris-richardii.md.",
+    "The living spore-size comparison is correctly scoped: Selaginella megaspores of 150–1500 µm and microspores of 15–50 µm match Zhou and Zhang's compilation. These unpaired genus-wide ranges should not become one species' reproductive allocation parameters. [Full text read](https://html.rhhz.net/PDR/html/1703759774747-1401973599.htm).",
+    "Dispersed spores directly score reproductive characters, but 'bear only on the last row' is too restrictive: phylogenetic placement and calibration can indirectly constrain histories of other traits. The section correctly attributes the total-group interpretation of trilete spores to Hooper rather than treating it as direct observation. [Hooper et al. 2026, full text read](https://doi.org/10.1038/s41477-026-02432-3).",
+    "Trait dissociation rejects obligatory co-occurrence, not every correlated or ordered model. Different G-, S- and P-type walls do not themselves demonstrate different acquisition orders; a fixed-order model need not predict simultaneous first appearances. These are limitations of the proposed tests, inferred from the evidence audited here.",
+    "Rootless fungal hosts demonstrate that true roots are unnecessary for association. They do not establish whether symbiosis evolved before rooting axes, particularly when comparing different lineages; the final paragraph's caution should also govern prediction 6.",
+    "The latest Sporogonites conference abstract was inaccessible, so its attachment interpretation remains unverifiable in this audit. The historical statement that no Silurian gametophyte had been identified is supported by Pšenička's review, but is not an exhaustive current absence test. [Pšenička et al., full-text section read](https://doi.org/10.3390/life11090906)."
+  ],
+  "overall": "The section successfully separates vascularisation, nutritional independence and size, and its strongest examples support that argument. Observation, interpretation and speculation are usually distinguished, but several absolute statements, pooled measurements and proposed package-model tests exceed the evidence; the rooting, attachment, in situ preservation and transfer-cell statements need correction."
+}

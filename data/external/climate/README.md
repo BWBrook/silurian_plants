@@ -38,9 +38,9 @@ References (DOIs checked against Crossref or DataCite on 2026-10-27 by `scripts/
 **Choice: `scotese_02`.** Reasons:
 
 1. It is a standard, published HadCM3L run: the sequence documented in Valdes et al. (2021), with the original model configuration, proxy-based CO2 and PALEOMAP geography, and the BRIDGE pages describe it as the Foster-CO2 sequence.
-2. The three fixed-CO2 suites hold CO2 at 276, 560 and 1,120 ppm, so only the last lies inside the 1,000–3,000 ppm prior for the Silurian–Early Devonian (`docs/primer.md` §3.2) and none varies through the window; they isolate geography and solar forcing. `scotese_08` takes CO2 from a temperature target (369 ppm at 445 Ma against 1,708 ppm), not a CO2 proxy. `scotese_spinupa` is a smoothed-CO2 variant of the same configuration.
+2. The three fixed-CO2 suites hold CO2 at 276, 560 and 1,120 ppm, so only the last lies inside the 1,000–3,000 ppm sensitivity range for the Silurian–Early Devonian (`docs/primer.md` §3.2) and none varies through the window; they isolate geography and solar forcing. `scotese_08` takes CO2 from a temperature target (369 ppm at 445 Ma against 1,708 ppm), not a CO2 proxy. `scotese_spinupa` is a smoothed-CO2 variant of the same configuration.
 3. `scotese_06` and `scotese_07` have the same window CO2 but newer model configurations whose changes I could not document. They are the natural sensitivity test of model version, 814 MB each for `tas` and `pr`; not pulled.
-4. Its window CO2 (1,093–2,513 ppm) lies inside the primer's 1,000–3,000 ppm prior.
+4. Its CO2 in the slices inside the window (455.7–395 Ma) is about 1,300–2,100 ppm (1,093–2,513 ppm across all slices extracted), inside the primer's 1,000–3,000 ppm sensitivity range, which is a judgement, not a proxy result.
 
 This is a judgement, not a measurement. Foster et al. (2017) reach back only to 420 Ma; per the text of Valdes et al. (2021) as I read it, the paper proposes two extensions of the curve to 540 Ma, so the Ordovician and most of the Silurian part of the window rests on an extension. I did not check which extension `scotese_02` uses.
 

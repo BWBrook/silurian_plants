@@ -61,7 +61,7 @@ TRAIT_STATES = {
     "leaves": {"absent", "enations", "microphylls", "megaphylls"},
     "stomata": {"present", "absent"},
     "conducting_tissue": {"absent", "hydroids", "non-lignified", "tracheids-G", "tracheids-S",
-                          "tracheids-P", "tracheids"},
+                          "tracheids-P", "tracheids", "disputed"},
     "sporangium_position": {"terminal", "lateral", "both"},
     "spores": {"cryptospores", "trilete", "monolete", "both"},
     "heterospory": {"absent", "intermediate", "present"},

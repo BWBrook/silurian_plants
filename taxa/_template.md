@@ -37,7 +37,7 @@ traits:
   branching: {state: unknown, note: null}            # none | isotomous | anisotomous | pseudomonopodial | monopodial | K-branching | H-branching | mixed | unknown | na
   leaves: {state: unknown, note: null}               # absent | enations | microphylls | megaphylls | unknown | na
   stomata: {state: unknown, note: null}              # present | absent | unknown | na
-  conducting_tissue: {state: unknown, note: null}    # absent | hydroids | non-lignified | tracheids-G | tracheids-S | tracheids-P | tracheids | unknown | na
+  conducting_tissue: {state: unknown, note: null}    # absent | hydroids | non-lignified | tracheids-G | tracheids-S | tracheids-P | tracheids | disputed (published readings conflict; give each in the note) | unknown | na
   sporangium_position: {state: unknown, note: null}  # terminal | lateral | both | unknown | na
   spores: {state: unknown, note: null}               # cryptospores | trilete | monolete | both | unknown | na
   heterospory: {state: unknown, note: null}          # absent | intermediate (graded or mixed spore sizes without discrete classes) | present | unknown | na

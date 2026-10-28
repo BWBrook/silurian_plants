@@ -5,8 +5,8 @@ rank: species
 kind: megafossil
 group: protracheophyte
 lineage: >-
-  Polysporangiophyte-grade plant with a cuticle, stomata and thick-walled conducting cells but
-  moss-like columellate, branched sporangia; occupies an isolated position among early land plants
+  Polysporangiophyte-grade plant with a cuticle, stomata and thick-walled conducting cells (tracheids
+  or transfer-cell-like cells, disputed) but moss-like columellate, branched sporangia; occupies an isolated position among early land plants
   in the analyses of Kenrick and Crane cited by Kerp (2017).
 placement_confidence: low
 contrasts: [water-transport, fungal-nutrition, reproductive-strategy]
@@ -48,12 +48,20 @@ traits:
       Scattered on axes, 120 to 180 um long and 70 to 115 um wide, reniform guard cells with
       ledges; smaller and circular on the sporangium wall; glandular structures also occur (Kerp 2017).
   conducting_tissue:
-    state: tracheids
+    state: disputed
     note: >-
-      Cylindrical strand of thick-walled cells, with narrow annular to slightly helical thickenings
-      in the base of the aerial axes; elsewhere the cells look uniformly thickened and hydroid-like.
-      The wall type (G, S or P) is not assigned in the sources read; the corm has no conducting
-      cells (Kerp 2017).
+      Cylindrical strand of thick-walled cells. Kerp (2017) and earlier work describe no conducting
+      cells in the corm; Kenrick and Long (2026) find clusters of brown-walled conducting cells in its
+      centre and edge, continuous with the aerial core. Under
+      white-light microscopy the strand shows narrow annular to slightly helical thickenings in the
+      base of the aerial axes, read as tracheids since Kidston and Lang (1920) and again by
+      Cascales-Miñana et al. (2019); elsewhere the cells look uniformly thickened and hydroid-like
+      (Kerp 2017). Kenrick and Long (2026), by confocal microscopy and 3D reconstruction, find no
+      distinct xylem or phloem: the core cells ("H-type") carry transfer-cell-like wall ingrowths
+      that form threads spanning the lumen, vary in form with position, and differ from tracheid
+      thickenings. They read the cells as mainly solute-conducting, the plant as lacking tracheids,
+      and find no clear water-conducting cells. Eggert (1974) and Kenrick and Crane (1997) had already doubted the thickenings (as
+      summarised by Kenrick and Long 2026).
   sporangium_position:
     state: terminal
     note: >-
@@ -73,7 +81,8 @@ traits:
     state: rhizomes
     note: >-
       Subterranean bulbous corm bearing radiating unicellular rhizoids, from which the aerial axes
-      arise; the corm lacks conducting tissue (Kerp 2017). Not a rhizome in the strict sense.
+      arise; Kerp (2017) reports no conducting tissue in the corm, but Kenrick and Long (2026) find
+      brown-walled conducting cells in it. Not a rhizome in the strict sense.
   gametophyte:
     state: known
     note: >-
@@ -85,8 +94,12 @@ habitat: >-
   records show it lived across the wider Rhynie basin and Euramerica, so the hot-spring habitat was
   not specialised (Wellman et al. 2003; Wellman 2017).
 status: draft
-updated: 2026-10-26
+updated: 2026-10-28
 references:
+  - cite: "Kenrick P, Long EJ (2026). Transfer cells in Horneophyton lignieri illuminate the origin of vascular tissues in land plants. New Phytologist 249: 3149-3164 (read in full, Europe PMC)."
+    doi: 10.1111/nph.70850
+  - cite: "Cascales-Miñana B, Steemans P, Servais T, Lepot K, Gerrienne P (2019). An alternative model for the earliest evolution of vascular plants. Lethaia 52: 445-453 (not read; as summarised by Kenrick and Long 2026)."
+    doi: 10.1111/let.12323
   - cite: "Kerp H (2017). Organs and tissues of Rhynie chert plants. Philosophical Transactions of the Royal Society B 373: 20160495 (issue dated 2018)."
     doi: 10.1098/rstb.2016.0495
   - cite: "Eggert DA (1974). The sporangium of Horneophyton lignieri (Rhyniophytina). American Journal of Botany 61: 405-413."
@@ -125,7 +138,7 @@ Horneophyton lignieri (originally Hornea lignieri) is the Rhynie plant that look
 
 ## Morphology and anatomy
 
-The corm lacks conducting cells; the strand begins at the base of the aerial axis and grades downward into files of dark cells without thickenings (Kerp 2017). The aerial strand is wide, wholly thick-walled, and has narrow annular to helical thickenings at the base. Outer cortex is three to five cells thick with large intercellular spaces, larger near stomata; the inner cortex has elongate cells (150 to 170 × 30 to 50 µm); a single hypodermis and scattered glands also occur (Kerp 2017).
+In Kerp's (2017) account the corm lacks conducting cells, and the strand begins at the base of the aerial axis and grades downward into files of dark cells without thickenings. Kenrick and Long (2026) instead find brown-walled conducting cells in the centre and edge of the corm (rhizome), continuous with the aerial core. The aerial strand is wide and wholly thick-walled. Under white light it shows narrow annular to helical thickenings at the base (Kerp 2017), long read as tracheids. Kenrick and Long (2026) re-imaged it by confocal microscopy with 3D modelling. They find wall ingrowths like those of transfer cells, which grow from discrete papillate loci and form threads across the cell lumen, unlike the secondary thickenings of tracheids, and cell form that varies along the plant. On their reading the cells worked mainly in active solute transport, from corm to aerial axes, with no clear water-conducting cells, and the strand is not xylem. From this they propose that the ancestral land-plant conducting system had one cell type serving both solutes and water. Cascales-Miñana et al. (2019) had reaffirmed the tracheid reading. The dispute is open. Outer cortex is three to five cells thick with large intercellular spaces, larger near stomata; the inner cortex has elongate cells (150 to 170 × 30 to 50 µm); a single hypodermis and scattered glands also occur (Kerp 2017).
 
 Eggert (1974) established that the sporangia are branched into two to four columellate lobes sharing one sporogenous cavity, with no unbranched sporangia found. In Kerp's account each lobe's strand forks below the base but does not enter; the columella fills half to two-thirds of the length; the cavity is inverted-cup shaped; the sporangium probably opened through an apical pore. Spores develop mostly in tetrahedral tetrads but dyads, ring tetrads and aborted tetrads are frequent, indicating irregular meiosis (Eggert 1974; Kerp 2017).
 
@@ -135,7 +148,7 @@ Rhynie chert: hot-spring sinter in a small half-graben on the Old Red Sandstone 
 
 ## Affinity and controversies
 
-Bryophyte-like features: the columella, which among living plants occurs in mosses, a sporangium that probably opened by an apical pore, and thick-walled cells that look like hydroids in the distal axis. Vascular-plant features: cuticle and stomata, annular and helical thickenings in the lower strand, forking axes and a free-living vascularised gametophyte. Kenrick and Crane's analyses (cited by Kerp 2017) place Horneophyton and Aglaophyton in isolated positions within the polysporangiophytes. If the ancestral embryophyte was already complex, as in bryophyte-monophyly phylogenomics (Puttick et al. 2018; Harris et al. 2022), the columella need not imply a bryophyte relationship; no one has tested this for Horneophyton. Eggert (1974) saw the branched sporangium as evidence that some synangia arose from a single sporangium.
+Bryophyte-like features: the columella, which among living plants occurs in mosses, a sporangium that probably opened by an apical pore, and thick-walled cells that look like hydroids in the distal axis. Vascular-plant features: cuticle and stomata, annular and helical thickenings in the lower strand (if they are tracheid thickenings; Kenrick and Long 2026 argue they are not), forking axes and a free-living vascularised gametophyte. Cascales-Miñana et al. (2019) place horneophytes as sister to eutracheophytes on the tracheid reading (as summarised in `docs/primer.md`); Kenrick and Long (2026) conclude that Horneophyton is not a tracheophyte and that the ancestral land-plant conducting system likely had one type of cell for both solutes and water. Kenrick and Crane's analyses (cited by Kerp 2017) place Horneophyton and Aglaophyton in isolated positions within the polysporangiophytes. If the ancestral embryophyte was already complex, as in bryophyte-monophyly phylogenomics (Puttick et al. 2018; Harris et al. 2022), the columella need not imply a bryophyte relationship; no one has tested this for Horneophyton. Eggert (1974) saw the branched sporangium as evidence that some synangia arose from a single sporangium.
 
 ## Ecology and physiology
 
@@ -143,11 +156,12 @@ Horneophyton stands were commonly monospecific on sandy and organic-rich ground 
 
 ## Why it matters for modelling
 
-- A test case for sporangium architecture: branched, columellate sporangia, 39 to 49 µm spores, and irregular tetrad development (a measurable meiotic error rate).
+- A test case for sporangium architecture: branched, columellate sporangia, 39 to 49 µm spores, and irregular tetrad development (frequent dyads, ring and aborted tetrads; no rate has been measured, so a meiotic error rate would be a free parameter).
 - Two endophytes occupy different tissues of one host (corm and base versus outer cortex of aerial axes); whether either was a mutualist is unproven, so treat symbiont benefit as a free parameter.
 - A corm acts as a storage and regeneration organ, so axes can be lost to flood or sinter pulses and regrown (an inference from form, not observed).
 - Euramerican distribution through spores allows a range-size and persistence estimate for a plant with known life cycle.
 - A moss-like sporangium on a stomatal, cuticularised plant tests whether sporangial characters evolved independently of axial ones.
+- Water transport: a sporophyte up to about 20 cm (unverified height) whose conducting cells may not be tracheids. If Kenrick and Long (2026) are right, stature of this order did not require tracheids, which separates water transport from size in a model.
 
 ## Model transfer
 
@@ -161,10 +175,10 @@ Horneophyton stands were commonly monospecific on sandy and organic-rich ground 
 - **Cannot transfer:**
   - Do not treat either fungal association as a measured nutritional benefit or obligatory mutualism; benefit remains an unconstrained parameter.
   - Do not assign observed regeneration or disturbance-recovery rates to the corm: regrowth is an inference from form.
-  - Do not extrapolate a uniform tracheid wall type or hydraulic efficiency throughout the plant: distal cells are hydroid-like, wall type is unassigned, and the corm lacks conducting cells.
+  - Do not code tracheids or a tracheid-based hydraulic conductance for H. lignieri: whether its conducting cells are tracheids is disputed (Cascales-Miñana et al. 2019 against Kenrick and Long 2026). Where a model needs the strand, carry both readings as alternatives. The cells vary along the plant (Kenrick and Long 2026), and whether the corm held conducting cells differs between Kerp (2017) and Kenrick and Long (2026).
   - Do not treat Langiophyton mackiei as an organically demonstrated life-cycle connection or infer parental dependence from the association.
   - Do not use the 20 cm height and 2 mm diameter as verified primary measurements: both derive from the unreviewed Aberdeen resource.
 
 ## Open questions
 
-Wall type of the strand; whether the columella is homologous with that of mosses or hornworts; how common aborted tetrads were in the field; and whether the Lochkovian Emphanisporites producers of the Welsh Borderland are Horneophyton relatives (Wellman 2017 notes the possibility).
+Whether the strand's cells are tracheids or transfer-cell-like (Cascales-Miñana et al. 2019; Kenrick and Long 2026), and whether they conducted water; whether the columella is homologous with that of mosses or hornworts; how common aborted tetrads were in the field; and whether the Lochkovian Emphanisporites producers of the Welsh Borderland are Horneophyton relatives (Wellman 2017 notes the possibility).

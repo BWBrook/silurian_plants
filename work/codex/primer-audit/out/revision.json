@@ -1,0 +1,230 @@
+{
+  "items": [
+    {
+      "claim": "Devonian boundaries: 419.62 +1.36/−1.14, 413.02 +1.75/−1.91, 410.62 +1.66/−1.95 and 393.47 +0.72/−0.99 Ma; 95% highest-density intervals.",
+      "section": "1.1",
+      "verdict": "supported",
+      "evidence": "Table 6 gives these medians and asymmetric intervals. The chart uses the larger uncertainty; independent draws can reverse neighbouring boundaries.",
+      "source": "[Harrigan et al.](https://robintrayler.github.io/publications_files/Harrigan_2021.pdf), full text, especially Table 6; [ICS chart](https://stratigraphy.org/ICSchart/ChronostratChart2024-12.pdf), complete chart."
+    },
+    {
+      "claim": "“Do not relabel a stage from a date”; propagate approximately 2 Myr Early Devonian uncertainty through a “joint, ordered age model”.",
+      "section": "1.2; 8, question 8",
+      "verdict": "supported",
+      "evidence": "ICS explicitly distinguishes numerical calibration from stratigraphic definition. Harrigan's ordered age–depth framework supports joint propagation rather than independent boundary perturbations.",
+      "source": "[ICS chart](https://stratigraphy.org/ICSchart/ChronostratChart2024-12.pdf), complete chart; [Harrigan et al.](https://robintrayler.github.io/publications_files/Harrigan_2021.pdf), full text."
+    },
+    {
+      "claim": "Reconstructed ocean widths: Iapetus >4,000 km at 487 Ma, 1,200/500 km at 444 Ma; Avalonian rifting about 490 Ma; Rheic >3,500 then about 7,000 km; collision 430–420 Ma.",
+      "section": "2.1",
+      "verdict": "supported",
+      "evidence": "The numerical reconstruction summaries match the cited accounts. Relabelling them interpretation correctly distinguishes reconstructed geography from direct observations.",
+      "source": "[Cocks and Torsvik 2021](https://doi.org/10.1016/j.gr.2020.09.008), indexed full-text passages read; direct opening blocked. [Cocks and Torsvik 2011](https://www.earthdynamics.org/papers-ED/2011/2011-Cocks_Torsvik-ESR.pdf), abstract read."
+    },
+    {
+      "claim": "Tropical sea-surface temperatures “32–37 °C”, approximately “5 °C” Hirnantian cooling, and ice volume at or above the Pleistocene maximum.",
+      "section": "3.1",
+      "verdict": "supported",
+      "evidence": "These match the clumped-isotope reconstruction, although the source qualifies maximum ice volume as likely equal to or greater than the Pleistocene maximum.",
+      "source": "[Finnegan et al.](https://biogeochem.wustl.edu/pdfs/Finnegan_Anticosti_Clumped_Science_2011.pdf), full text."
+    },
+    {
+      "claim": "“22,332 carbonate and 4,615 phosphate” analyses; means “42.0 ± 3.1” and “35.6 ± 2.4 °C”; approximately “4–10 °C” above Scotese.",
+      "section": "3.1",
+      "verdict": "supported",
+      "evidence": "Counts and temperatures match. The difference is an approximate comparison between differently defined reconstructions, appropriately identified as the primer author's calculation.",
+      "source": "[Grossman and Joachimski](https://www.nature.com/articles/s41598-022-11493-1.pdf), full text; [Scotese et al.](https://eprints.whiterose.ac.uk/id/eprint/169823/1/Scotese_etal_phan_temp_AAM.pdf), full text."
+    },
+    {
+      "claim": "Target variable: “Change in seawater δ18O”; two shifts of approximately “+2‰ over about 1.5 Myr”.",
+      "section": "3.1",
+      "verdict": "wrong",
+      "evidence": "The measured excursions are in conodont phosphate δ18O, not seawater δ18O. Their interpretation involves temperature and potentially seawater composition.",
+      "source": "[Trotter et al.](https://openresearch-repository.anu.edu.au/items/9194eff1-051b-4058-8d66-02970708fce4), repository abstract read; full text inaccessible."
+    },
+    {
+      "claim": "Lochkovian low-latitude seawater “about 30 °C”; Middle Devonian “23–25 °C”.",
+      "section": "3.1",
+      "verdict": "supported",
+      "evidence": "Both values appear in the abstract. They describe reconstructed tropical seawater temperatures, conditional on isotope calibration and assumed seawater composition.",
+      "source": "[Joachimski et al.](https://cris.fau.de/publications/111999844/), abstract read."
+    },
+    {
+      "claim": "Scotese: tropics mostly “25–32 °C”; Pragian sea-level fall approximately “100 m”; Early–Middle Devonian global mean “18.7 °C”.",
+      "section": "3.1",
+      "verdict": "supported",
+      "evidence": "The reconstruction reports these quantities and the Ludlow–Lochkovian warm interval. Tropical temperatures have exceptions, including a colder Hirnantian.",
+      "source": "[Scotese et al.](https://eprints.whiterose.ac.uk/id/eprint/169823/1/Scotese_etal_phan_temp_AAM.pdf), full text."
+    },
+    {
+      "claim": "Possible Darriwilian ice onset; “three glacial cycles” under Hirnantian coverage; glacial maximum approximately “0.2 Myr”.",
+      "section": "3.1",
+      "verdict": "imprecise",
+      "evidence": "Darriwilian onset is model-dependent; the three cycles span upper Katian–lowermost Silurian. The 0.2 Myr estimate also depends on stratigraphic interpolation.",
+      "source": "[Pohl et al.](https://backoffice.biblio.ugent.be/download/8057556/8057571), [Ghienne et al.](https://backoffice.biblio.ugent.be/download/6848045/6853496), and [Ling et al.](https://finneganlab.org/wp-content/uploads/2024/08/ling-et-al-2019.pdf), full texts."
+    },
+    {
+      "claim": "Foster: “1,241 estimates from five proxies”, coverage from “420 Ma”, Devonian “maximum about 2,000 ppm”.",
+      "section": "3.2",
+      "verdict": "imprecise",
+      "evidence": "Count, methods and coverage match. Approximately 2,000 ppm describes the reconstructed long-term level, not an upper bound on individual estimates and uncertainties.",
+      "source": "[Foster et al.](https://research-information.bris.ac.uk/ws/portalfiles/portal/111546755/ncomms14845.pdf), full text."
+    },
+    {
+      "claim": "Witkowski: “460–440 Ma”, approximately “450 rising to 700 µatm”; “about 1,400 µatm in the Devonian”.",
+      "section": "3.2",
+      "verdict": "imprecise",
+      "evidence": "Numbers match, but the Devonian observations discussed are around 380–355 Ma, outside this programme's Early Devonian window; temperature assumptions strongly influence estimates.",
+      "source": "[Witkowski et al.](https://pmc.ncbi.nlm.nih.gov/articles/PMC6261654/), full text."
+    },
+    {
+      "claim": "Franks: below “1,000 ppm for most of the record”; against prolonged “2,000–3,000 ppm” post-Devonian swings.",
+      "section": "3.2",
+      "verdict": "supported",
+      "evidence": "This accurately summarises the paper's long-term conclusion. It explicitly allows shorter excursions and describes higher CO2 before approximately 390 Ma.",
+      "source": "[Franks et al.](https://eprints.whiterose.ac.uk/110368/1/Franks%20et%20al%20%282014%29%20%20New%20palaeo-CO2%20model%20GRL.pdf), full text."
+    },
+    {
+      "claim": "GEOCLIM atmospheric CO2: approximately “5,600 falling to 2,800 ppmv by the Llandovery”, then rising in the Early Devonian.",
+      "section": "3.2",
+      "verdict": "supported",
+      "evidence": "The primary abstract reports more than 20 PAL in the Furongian, approximately 10 PAL in the Llandovery, and subsequent Early Devonian increase.",
+      "source": "[Nardin et al.](https://pubs.geoscienceworld.org/gsa/gsabulletin/article-abstract/123/5-6/1181/125670/Modeling-the-early-Paleozoic-long-term-climatic?redirectedFrom=fulltext), indexed publisher abstract read; full text inaccessible."
+    },
+    {
+      "claim": "At 445 Ma: 8 PAL CO2, approximately 2,200 ppm using 278 ppm/PAL; 0.6 PAL O2, approximately 14%; NPP 18.7 versus 10.5 GtC yr−1, approximately 30% versus 17%; C:P approximately 2,000 versus 100, range 800–4,300; P weathering 24-fold, range 15–43.",
+      "section": "3.2; 4.2; 8, question 1",
+      "verdict": "misattributed",
+      "evidence": "Gas assumptions, productivity and C:P values match. The 24-fold phosphorus effect specifically concerns moss on granite; liverwort experiments yielded different amplification.",
+      "source": "[Lenton et al.](https://pmc.ncbi.nlm.nih.gov/articles/PMC5024600/), full text, including embedded supplementary figures and tables."
+    },
+    {
+      "claim": "HadCM3L scotese_02 uses prescribed CO2, extended before 420 Ma, with “1,093–2,513 ppm” across the window.",
+      "section": "3.2",
+      "verdict": "imprecise",
+      "evidence": "Input status is correct. Those extrema belong to 485–385 Ma slices; listed 455–395 Ma slices span approximately 1,297–2,102 ppm.",
+      "source": "[Valdes et al.](https://cp.copernicus.org/articles/17/1483/2021/), full text; [Zenodo dataset](https://zenodo.org/records/8237751), metadata read; local hadcm3l_experiment_info.csv checked."
+    },
+    {
+      "claim": "Homerian charcoal at Pen-y-lan predates basal Pridoli charcoal; both newly discussed assemblages are dominated by nematophytes.",
+      "section": "3.3",
+      "verdict": "supported",
+      "evidence": "The charcoal paper identifies Homerian and Ludlow assemblages dominated by nematophytes. BGS independently assigns the Pen-y-lan succession to the Homerian.",
+      "source": "[Glasspool and Gastaldo 2022](https://web.colby.edu/ragastal/files/2023/07/2022_Glasspool_Gastaldo_GEOLOGY_WIldfire.pdf), full text; [BGS account](https://earthwise.bgs.ac.uk/index.php/Wenlock_Series,_Silurian,_Wales), relevant section read."
+    },
+    {
+      "claim": "Fire thresholds: 13–35%; 15–17% at 420–400 Ma; approximately 15% for smouldering, 19% for probable combustion; 16%, approximately 0.75 PAL; substantially uninterrupted Devonian fire.",
+      "section": "3.3; 8, question 6",
+      "verdict": "supported",
+      "evidence": "These accurately report differing published interpretations. Thresholds depend on experimental conditions; uninterrupted oxygen above 16% remains Glasspool and Gastaldo's inference.",
+      "source": "[Scott and Glasspool](https://pubmed.ncbi.nlm.nih.gov/16832054/), abstract; [Lenton et al.](https://pmc.ncbi.nlm.nih.gov/articles/PMC5024600/), full text; [Krause et al.](https://pmc.ncbi.nlm.nih.gov/articles/6172248/), indexed full text; [Glasspool and Gastaldo 2022](https://web.colby.edu/ragastal/files/2023/07/2022_Glasspool_Gastaldo_GEOLOGY_WIldfire.pdf), full text; [2024 paper](https://www.researchgate.net/publication/383474031_Don't_mind_the_charcoal_gap_A_reassessment_of_Devonian_wildfire), publicly available article text."
+    },
+    {
+      "claim": "Horneophyton: “In either reading ... the corm lacks conducting cells.”",
+      "section": "Horneophyton card: conducting_tissue, Morphology and anatomy, Model transfer",
+      "verdict": "wrong",
+      "evidence": "Kenrick and Long explicitly describe conducting cells in the rhizome centre and edge, continuous with the aerial conducting core.",
+      "source": "[Kenrick and Long](https://nph.onlinelibrary.wiley.com/doi/10.1111/nph.70850), full text, Results and Discussion."
+    },
+    {
+      "claim": "Horneophyton modelling examples retain “39 to 49 µm spores” and stature “up to about 20 cm”.",
+      "section": "Horneophyton card: Why it matters for modelling",
+      "verdict": "supported",
+      "evidence": "Eggert reports the spore range; Kenrick and Long describe stature below 20 cm. Neither supplies measured hydraulic performance or a meiotic-error rate.",
+      "source": "[Eggert](https://www.jstor.org/stable/2441808), indexed primary abstract read; [Kenrick and Long](https://nph.onlinelibrary.wiley.com/doi/10.1111/nph.70850), full text."
+    },
+    {
+      "claim": "“Microphyllous lycophytes outside the crown”: Asteroxylon and Baragwanathia; lycophyte crown clock estimate “431–411 Ma”.",
+      "section": "5.2",
+      "verdict": "imprecise",
+      "evidence": "The stem/crown distinction and clock interval are appropriate. Asteroxylon's appendages lack internal vascularisation, so calling both taxa microphyllous needs qualification.",
+      "source": "[Hetherington et al.](https://elifesciences.org/articles/69447), full text; [Harris et al.](https://bpb-eu-w2.wpmucdn.com/blogs.bristol.ac.uk/dist/3/589/files/2022/09/Harris_et_al_2022.pdf), full text; [Kerp](https://pmc.ncbi.nlm.nih.gov/articles/PMC5745331/), indexed full-text passages read."
+    },
+    {
+      "claim": "“Eophytes have never been placed by a cladistic analysis.”",
+      "section": "5.2",
+      "verdict": "overstated",
+      "evidence": "Hooper makes that statement, but Clark includes eophytes and describes Bayesian morphological inference with unconstrained fossil placement. The apparent conflict needs reconciliation.",
+      "source": "[Hooper et al.](https://www.nature.com/articles/s41477-026-02432-3), full text; [Clark et al.](https://www.nature.com/articles/s41477-023-01513-x), full text, especially Methods."
+    },
+    {
+      "claim": "Hooper: 27 characters, 27 living and 11 fossil genera, four methods, three timetrees; bounds 459.1–426.9 and 431.2–420.7 Ma; 55 Myr younger; gap as little as 19 Myr.",
+      "section": "5.3",
+      "verdict": "imprecise",
+      "evidence": "Counts, bounds and 55 Myr shift match. Minima also have soft tails; unenveloped ancestry is model-dependent. The 19 Myr gap needs its fossil benchmark.",
+      "source": "[Hooper et al.](https://www.nature.com/articles/s41477-026-02432-3), full text; supplementary calibration tables not examined."
+    },
+    {
+      "claim": "Separate crown-embryophyte results: Morris 515.2–473.5 Ma, Harris 515–493 Ma, Hooper 457–450 Ma, Su 980–682 Ma; Harris relaxed-maxima result 597–540 Ma.",
+      "section": "5.3",
+      "verdict": "supported",
+      "evidence": "These reported intervals match their respective analyses. Su's ancient interval specifically uses Strategy 2; the revised separation avoids constructing a pooled uncertainty interval.",
+      "source": "[Morris et al.](https://pmc.ncbi.nlm.nih.gov/articles/PMC5877938/), [Harris et al.](https://bpb-eu-w2.wpmucdn.com/blogs.bristol.ac.uk/dist/3/589/files/2022/09/Harris_et_al_2022.pdf), [Hooper et al.](https://www.nature.com/articles/s41477-026-02432-3), and [Su et al.](https://pdfs.semanticscholar.org/770f/eefa7462e68d090c0af2867d9616919c25fb.pdf), full texts."
+    },
+    {
+      "claim": "An ancestral trilete spore permits secondary cryptospory; a character's fossil first occurrence supplies a crown maximum only under preservation and sampling assumptions.",
+      "section": "5.3; 7.1",
+      "verdict": "supported",
+      "evidence": "These are sound logical qualifications, not demonstrated historical events. An inferred ancestral state does not establish irreversible character evolution or immediate fossil detection.",
+      "source": "[Hooper et al.](https://www.nature.com/articles/s41477-026-02432-3), full text; assessment of the inference made from its reconstruction and calibrations."
+    },
+    {
+      "claim": "“Origination and extinction times before the first fossil ... can be estimated from a preservation and sampling model, or from clock calibrations.”",
+      "section": "7.3",
+      "verdict": "wrong",
+      "evidence": "Origination can precede first occurrence; extinction of the same sampled lineage cannot. Extinction beyond last occurrence requires appropriate fossil-process modelling, not ordinary divergence clocks.",
+      "source": "[Silvestro et al.](https://doi.org/10.1093/sysbio/syu006), primary abstract read; [Morris et al.](https://pmc.ncbi.nlm.nih.gov/articles/PMC5877938/), full text."
+    }
+  ],
+  "omissions": [
+    "Harrigan includes the Parry Rhynie date among its numerical inputs. Testing Rhynie against those calibrated boundaries therefore requires dependence between the fossil-date evidence and boundary model, beyond merely ordering boundary draws. [Harrigan et al., Table 4](https://robintrayler.github.io/publications_files/Harrigan_2021.pdf).",
+    "Kenrick and Long document conducting tissue within the corm/rhizome and interpret the H-type system primarily as solute-conducting, with no clear specialised water-conducting cells. The card's “probably for solute transport as well as water” transfers their broader ancestral-system hypothesis too directly to Horneophyton. [Full text](https://nph.onlinelibrary.wiley.com/doi/10.1111/nph.70850).",
+    "Hooper explicitly doubts whether the Dalby specimens' trilete marks are compression artefacts. Its calibration distributions also allocate 2.5% probability beyond each endpoint; identifying only the maximum as soft incompletely describes implementation. [Full text](https://www.nature.com/articles/s41477-026-02432-3).",
+    "Su also obtains 518–500 Ma with the restrictive calibration strategy and 919–639 Ma without those maximum bounds. Including these alongside its 980–682 Ma result would show within-study calibration sensitivity. [Full text](https://pdfs.semanticscholar.org/770f/eefa7462e68d090c0af2867d9616919c25fb.pdf).",
+    "Witkowski's Devonian observations discussed in the article fall around 380–355 Ma. Its Ordovician CO2 conversion uses approximately 10 °C seawater, and the authors attribute part of the reconstructed CO2 shift to temperature assumptions; the CO2 and temperature evidence are consequently dependent. [Full text](https://pmc.ncbi.nlm.nih.gov/articles/PMC6261654/).",
+    "Lenton's sensitivity table gives ice-free productivity of 7.8, 18.7 and 27.1 GtC yr−1 at 4, 8 and 16 PAL CO2 with O2 fixed at 0.6 PAL. Thus “depends on the ice scenario as much as on the plants” is not an established sensitivity ranking. [Table S2](https://pmc.ncbi.nlm.nih.gov/articles/PMC5024600/).",
+    "The 24-fold phosphorus-weathering amplification concerns Physcomitrella on granite; Marchantia experiments give 9–13-fold phosphorus amplification on basalt. Porada's approximately 3× compares global weathering with today's global flux, rather than measuring the same experimental enhancement factor. [Lenton](https://pmc.ncbi.nlm.nih.gov/articles/PMC5024600/), [Porada](https://www.nature.com/articles/ncomms12113.pdf).",
+    "Grossman and Joachimski's full compilation counts differ from the screened data used in reconstruction: 11,893 carbonate and 4,427 phosphate analyses. Its temperatures assume hydrosphere isotope behaviour and apply ice-volume and latitude corrections. [Full text](https://www.nature.com/articles/s41598-022-11493-1.pdf).",
+    "Ghienne's three cycles extend from upper Katian into lowermost Silurian and are explicitly presented as a stratigraphic interpretation. Combining them under a single Hirnantian coverage label loses this distinction. [Full text](https://backoffice.biblio.ugent.be/download/6848045/6853496).",
+    "Cascales-Miñana and colleagues document considerable spore variation within Horneophyton sporangia and a possible dyad produced by tetrad breakage. Abnormal fossil groupings should therefore not automatically become biological meiotic errors in a model. [Full text](https://orbi.uliege.be/bitstream/2268/259106/1/1-s2.0-S0034666721001676-main%282%29.pdf).",
+    "Clark's methodological account creates an apparent conflict with the categorical statement that eophytes have never undergone cladistic analysis. Resolve the taxon and analysis scope before repeating that historical claim as settled. [Full text](https://www.nature.com/articles/s41477-023-01513-x)."
+  ],
+  "overall": "The revision substantially improves the primer's treatment of calibration, competing clocks, environmental evidence and identifiability, but it is not yet a dependable modelling reference. Consequential remaining problems include the Horneophyton corm contradiction, the mislabelled isotope variable, incomplete temporal coverage statements and inconsistent handling of uncertainty between primer and card; section 6 was excluded.",
+  "review_points": [
+    {
+      "point": "1. Stratigraphic assignments, numerical evidence and joint boundary uncertainty",
+      "addressed": "partly",
+      "where_uncertainty_is_still_lost": "The primer's rules are substantially corrected. The card still labels numerical dates as Pragian/“earliest Emsian”, and the boundary proposal does not discuss dependence on Rhynie dates already used by Harrigan."
+    },
+    {
+      "point": "2. Living backbone, stem lycophytes and alternative fossil placements",
+      "addressed": "partly",
+      "where_uncertainty_is_still_lost": "The diagram removes the false extinct-grade sequence and crown assignment. Some fossil memberships remain categorical, Asteroxylon is called microphyllous, and the “never analysed” eophyte statement needs reconciliation with Clark."
+    },
+    {
+      "point": "3. Divergence clocks, soft maxima, secondary cryptospory and separate estimates",
+      "addressed": "partly",
+      "where_uncertainty_is_still_lost": "The central corrections are present. Hooper's ancestral morphology is initially stated categorically before its model dependence appears; Dalby identification uncertainty and soft minimum implementation remain insufficiently explicit."
+    },
+    {
+      "point": "4. Horneophyton anatomy, earlier charcoal and the Devonian charcoal gap",
+      "addressed": "partly",
+      "where_uncertainty_is_still_lost": "Both anatomical interpretations and newer charcoal studies are included. The card nevertheless denies corm conducting cells despite the new source and overstates evidence for combined water and solute transport."
+    },
+    {
+      "point": "5. Environmental evidence, model outputs, assumed inputs and plant temperatures",
+      "addressed": "partly",
+      "where_uncertainty_is_still_lost": "The tables and sensitivity-scenario wording are major improvements. Remaining losses include conodont versus seawater δ18O, late Devonian evidence presented under window coverage, broad climate-suite extrema and unqualified claims about proxy absence."
+    },
+    {
+      "point": "6. Identifiability, recovery tests, calibration circularity and ghost lineages",
+      "addressed": "partly",
+      "where_uncertainty_is_still_lost": "Recovery tests and circularity are explicit, but “tractable” still denotes execution feasibility. Testing maxima against fossils already used in calibration also needs independence safeguards; the ghost-lineage sentence incorrectly places extinction before first occurrence."
+    },
+    {
+      "point": "Ediacaran belongs to the Neoproterozoic",
+      "addressed": "fully",
+      "where_uncertainty_is_still_lost": "The erroneous “Ediacaran, not Neoproterozoic” contrast is removed. The replacement correctly reports Harris's 597–540 Ma sensitivity result without treating those nested time units as alternatives."
+    }
+  ]
+}

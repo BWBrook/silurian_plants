@@ -67,7 +67,8 @@ data archived, and the human–AI correspondence record published alongside.
 - Claude Opus 5.5 (Anthropic, `claude-opus-5-5`) in Claude Code: orchestration, programme
   design, synthesis, framings, tooling.
 - Claude Sonnet 5.5 (Anthropic) subagents: literature research and first drafts of taxon cards,
-  the primer, the precedents review and the rejected-records note; adjudication of audit findings
+  the primer (including its biological-transitions section, 2026-10-28), the precedents review and
+  the rejected-records note; adjudication of audit findings
   against the sources and the resulting corrections; blind audits.
 - OpenAI Codex CLI, `gpt-6.1-sol` and `gpt-6.1-terra` at high reasoning effort, run by Claude Opus
   5.5 as read-only, schema-constrained jobs through `~/.claude/bin/codex-delegate` (2026-10-27 and
@@ -78,7 +79,7 @@ data archived, and the human–AI correspondence record published alongside.
   - vetting of early spore records;
   - extraction of post-2006 spore assemblages;
   - the Model transfer retrofit of 59 cards, with a consistency review of them;
-  - cross-family audits of the new cards;
+  - cross-family audits of the new cards and of the primer revision;
   - one card draft for a bake-off.
 - OpenAI Codex (OpenAI, Codex desktop; exact model version not exposed in this session):
   private reading portal and taxon atlas, source-preserving rendering, image sourcing,
