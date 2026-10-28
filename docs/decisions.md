@@ -15,7 +15,8 @@ Barry exactly (with source) or label a paraphrase.
 - **Sketch and amendment.**
   - `models/f3/` (Claude Sonnet 5.5 agent; checked by Claude Opus 5.5): classical estimators under-cover badly when abundance ramps up after origination.
   - `docs/plan-f3.md` was amended, before any real data were analysed, to add estimators that model that ramp.
-  - The published GRIWM code's arrival option is faulty, and the sketch uses the mirrored extinction algorithm. Whether to report it to the authors is Barry's decision.
+  - The published GRIWM code's arrival option is faulty, and the sketch uses the mirrored extinction algorithm. Barry: "can you please fix it locally for our use? I will let Corey/Fred know" (chat, 2026-10-28). `models/griwm_r/` holds patched copies of `griwm.R` and `criwm.R` (CRIWM shares the fault), a four-line patch per file and an R test. The test confirms the fault upstream and the fix against hand calculation and the project's Python implementation.
+- **Compute** (Barry, chat, 2026-10-28). `deep-server` and `wsl-laptop` are unreachable after the university blocked Tailscale. The EPRP mirror is used from its backup on `nectar-vm`. At Barry's request ("Resize nectar-vm please to something more workable, such as c3 large"), Claude resized `nectar-vm` to `c3.large` with the nectar repo's script; this is recorded in `~/work/nectar`.
 - **First pivotal pass** (Claude). Done without estimators: `models/f3/out/naive_pivotal.csv` and `docs/questions.md`, Q2. The new disputed records it surfaced are entries 18–20 in `docs/rejected-records.md`.
 
 ## 2026-10-28: framing chosen; orientation ends

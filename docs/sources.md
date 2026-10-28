@@ -14,8 +14,10 @@ Status values:
 
 Provenance: `data/eprp/` holds material from Barry's EPRP mirror; `data/external/` holds material
 acquired from outside EPRP. Both came from the EPRP Mac-Mini session. Each area README gives
-filters, licences and caveats; read it before use. Raw pulls are on `deep-server` under
-`/data/codex/silurian_plants/raw/` (4.9 GB). The `local/` folders hold 2.5 GB on mac-mini.
+filters, licences and caveats; read it before use. Raw pulls before 2026-10-28 are on `deep-server` under
+`/data/codex/silurian_plants/raw/` (4.9 GB). That host has been unreachable over Tailscale since
+2026-10-28. The EPRP mirror is backed up on `nectar-vm` (`AGENTS.md`), and new raw pulls go to
+`nectar-vm:/data/codex/silurian_plants/raw/`. The `local/` folders hold 2.5 GB on mac-mini.
 
 ## 1. Fossil occurrences
 

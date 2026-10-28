@@ -23,7 +23,12 @@ authorised. Other framings need their own decision before model code starts.
   records, climate and palaeogeography context, and software pointers. Treat it as inputs, not
   verified facts. Read each area's README before use, and regenerate tables with its scripts
   rather than editing them. `data/eprp/local/` is git-ignored (unlicensed, no-derivatives or bulky
-  material) and exists only on mac-mini; rebuild it from `deep-server` with the scripts.
+  material) and exists only on mac-mini; rebuild it with the scripts.
+- **Compute and mirrors (from 2026-10-28).** `deep-server` is unreachable over Tailscale (campus
+  block; `~/work/nectar/docs/exchange/current_status.md`). The EPRP mirror, `deep-server:/data/paleodata/<id>/`,
+  is backed up at `nectar-codex-ts:/data/codex/artifacts/eprp-paleodata-backup/latest/<id>/`.
+  `nectar-vm` runs at `c3.large` (8 vCPU, 16 GiB) for this work; project payloads go under
+  `/data/codex/silurian_plants/` there.
 - `docs/audits/`: independent checks of cards and deposits.
 - `tools/cards.py`: card validation, DOI checking and index generation.
 

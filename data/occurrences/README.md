@@ -81,7 +81,7 @@ The tail runs one stage past the oldest record that is not disputed, so that the
     - query: `https://paleobiodb.org/data1.2/colls/list.csv?interval=Darriwilian,Emsian&show=loc,strat,paleoloc,env,stratext&limit=all`;
     - fetched 2026-10-28; 27,830 collections; CC0;
     - SHA-256 `e0d1f772c1617c218948d1d2605661e93edcfe75e0fe8ce92afee91d3350a8b8`;
-    - kept in git-ignored `raw/` on mac-mini. It is to be copied to `deep-server:/data/codex/silurian_plants/raw/pbdb/` when that host is reachable; it was not on 2026-10-28.
+    - kept in git-ignored `raw/` on mac-mini, and copied to `nectar-vm:/data/codex/silurian_plants/raw/pbdb/` (hash verified). `deep-server` has been unreachable since 2026-10-28.
   - **Ages:** PBDB's numerical ages are on its own scale, so the overlap weights are approximate near boundaries.
 - **Spores** (`channel` = `spore`). Palynodata documents with datable palynomorph records of any kind, per stage × unit, from `data/spores/effort_by_stage.csv`. These run to 2006 only; the post-2006 literature is not yet counted.
 

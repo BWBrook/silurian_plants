@@ -116,12 +116,12 @@ The pivotal records are where specialist palaeobotanical judgement matters most,
   - PyRate, `tbea` and StratPal are used only as cross-checks, at pinned versions. EPRP found faults in each that bite on a gap-dominated record (`data/eprp/pointers/eprp_pointers.md`).
 - **Compute.**
   - Pilots run on mac-mini.
-  - Recovery ensembles run on `deep-server` under `/data/codex/`, after a smoke test.
+  - Recovery ensembles run locally (10 cores) or on `nectar-vm` at `c3.large` (8 vCPU) under `/data/codex/silurian_plants/`, after a smoke test. `deep-server` has been unreachable since 2026-10-28.
   - Each run records its seeds and the data hash.
 
 ## Authority and limits
 
-- **Proceeds without asking** (reversible): extraction, adjudication, code, simulations, commits and pushes, and compute on `deep-server`.
+- **Proceeds without asking** (reversible): extraction, adjudication, code, simulations, commits and pushes, and compute on the mesh hosts Barry has made available (`nectar-vm`; `deep-server` when reachable).
 - **Stays with Barry:**
   - any contact outside the collaboration, including the Wellman, Steemans and Vecoli database request and any approach to specialists over the pivotal records;
   - public release;
