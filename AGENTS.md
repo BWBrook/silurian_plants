@@ -13,7 +13,8 @@ authorised. Other framings need their own decision before model code starts.
   is generated.
 - `docs/`: charter, decisions, primer, precedents review, candidate framings, the source register
   (`docs/sources.md`, the index of all data held and needed: update it when a source changes),
-  the spore-compilation plan, the plan for the first deliverable (`docs/plan-f3.md`), and
+  the spore-compilation plan, the plan for the first deliverable (`docs/plan-f3.md`), the
+  questions register (`docs/questions.md`), and
   `docs/rejected-records.md` (rejected, reassigned and disputed
   early land-plant records, for the observation model).
 - `data/timescale.csv`: ICS v2024/12 stage base ages, the single source of numerical ages.
@@ -59,6 +60,14 @@ Run `check`, `index` and `matrix` after editing cards, and `dois` after adding r
   specimens behind each number. A trait value measured on another taxon carries `from:`, and
   `data/traits.csv` reports it in the `borrowed` column.
 - A card is `draft` until a second agent or Barry has checked its facts; then `reviewed`.
+- Keep disagreement usable. Record what a source observed separately from each interpretation of
+  it, and let every analysis declare which reading it uses (`docs/plan-f3.md`).
+- When a lead, a closed source or a data gap bears on a question in `docs/questions.md`, name
+  the question's ID. When a claim repeated in the literature fails against its source, log it
+  under Q5.
+- At the close of each loop, update `docs/questions.md` and add a structural-review entry to
+  `docs/decisions.md`: does the structure serve the next investigation, which assumptions were
+  exposed, and did any evidence change a question?
 - British spelling. Dense, precise prose; no filler.
 - Record decisions that shape the programme in `docs/decisions.md`, naming who decided. Keep
   the AI-roles section of `docs/charter.md` current: the work will be published with a full

@@ -8,6 +8,15 @@ Barry exactly (with source) or label a paraphrase.
 - **First deliverable** (Barry, chat, 2026-10-28: "Yes, adopt it"). He accepted Claude's recommendation: the curated, provenance-tracked occurrence dataset plus the F3 observation model, which asks whether the record, read through a preservation model, supports the competing clock timescales. The plan is `docs/plan-f3.md`: seven target events, five stages, criteria for accepting an estimator fixed before the recovery study, and consult triggers.
 - **Purpose** (Barry, voice in chat, 2026-10-28). Recorded in `docs/charter.md`. In summary: bring a century of specimen-level work together into a coherent dataset; use it to build and check simulation models that ask questions beyond single fossils; and show how a quantitative scientist working with AI agents can do this.
 - **Stage** (Claude, following the charter's route). Orientation is closed, and Stage 1 begins under the plan. F1 and F2 remain the core simulation to follow; F4–F7 wait.
+- **Plan revised after discussion** (Barry, chat, 2026-10-28: "Yes, revise it"). The principles he set out are in the charter. Changes:
+  - **Two contributions.** The deliverable is split into a synthesis and a statistical contribution, each with its own standard of success.
+  - **Three-layer data model.** The data now separate what was observed, each interpretation of it, and which reading an analysis uses. Each analysis names its main reading before it runs.
+  - **Pivotal records.** A pivotal-records analysis finds which disputes decide each answer.
+  - **A narrow first loop instead of a data freeze.** It covers the oldest records and their disputes, the effort layer, a sketch, the recovery study, then a ranking of further evidence by how much it would narrow each answer.
+  - **Limits are results.** If the record cannot tell the scenarios apart, that is reported as a result, with the observation that would resolve it; it is no longer a consult trigger.
+  - **Structural review.** One is held at each loop's close.
+- **Questions register** (Barry asked that the repository support the exchange between evidence and questions; Claude designed it). `docs/questions.md` holds ten questions. Leads, the closed-literature list and the source register now refer to it by question number.
+- **A fifth kind of contribution** (Claude proposed; Barry, chat, 2026-10-28: "very important"): testing old narratives against the assembled record (Q5, active).
 
 ## 2026-10-28: primer revised after Barry's review
 

@@ -2,7 +2,8 @@
 
 The index of the data the project holds and the data it still needs, for the window 485–383 Ma,
 with Frasnian–Famennian anchors where noted. Status as of 2026-10-27, after EPRP tranche 2. Update
-this file whenever a source is added, extracted or ruled out.
+this file whenever a source is added, extracted or ruled out. A gap that bears on a question names its ID
+in `docs/questions.md`.
 
 Status values:
 - **held**: in the repository, committed;

@@ -1,102 +1,133 @@
-# Plan: first deliverable (F3 and the dataset)
+# Plan: first deliverable (synthesis and F3)
 
-Adopted 2026-10-28 (Barry, chat: "Yes, adopt it", accepting Claude's recommendation of the curated, provenance-tracked dataset plus the F3 observation model as the first deliverable). This plan was drafted by Claude Opus 5.5. It is for Barry to object to by exception: the stages below proceed without further approval except at the consult triggers.
+Adopted 2026-10-28 (Barry, chat: "Yes, adopt it"). Revised the same day after discussion (Barry: "Yes, revise it"). Drafted by Claude Opus 5.5. The programme principles behind it are in `docs/charter.md` ("Purpose"); the questions it serves are in `docs/questions.md` (Q1–Q4). Barry objects by exception: work proceeds without further approval except at the consult triggers.
 
-## Endpoint
+## Two contributions, two standards
 
-**Question.** Given how the record was preserved and sampled, when did the main early land-plant lineages arise, as judged separately from the spore and megafossil records? And are those windows consistent with the competing molecular-clock scenarios (§5.3 of the primer)?
+**A. Synthesis.** An occurrence dataset that traces every record to its source and keeps disagreement in usable form. It covers dispersed spores, megafossils and mesofossils, Darriwilian to Emsian.
 
-**Why it matters.**
-- **The clocks.** The three scenarios disagree by up to 65 Myr on the age of crown embryophytes (515–450 Ma), and Hooper et al.'s 2026 recalibration rests on reading a first appearance as a maximum age.
-- **The method.** No study yet puts simulation-validated intervals on early land-plant first appearances (`docs/framings.md`, F3).
-- **Reuse.** The observation model it needs is the one every later framing needs.
+- Every adjudication is inspectable: who made it, on what evidence, and what the alternatives were.
+- The effect of each contested reading on the pattern is measured (the pivotal-records analysis below).
+- Another researcher can follow the route from specimen and publication to any conclusion.
 
-**What it delivers.**
-1. **Dataset v1.** A versioned, provenance-tracked occurrence dataset for the Darriwilian–Emsian, with two channels (dispersed spores; megafossils and mesofossils), a sampling-effort layer and a record of rejected and disputed records. Every record traces to a source document and is either verified against it or flagged.
-2. **Recovery study.** A simulation that shows which origination estimators recover known truth on records with this window's gaps and effort history, and with what bias and coverage.
-3. **Origination windows.** For the target events below, from each channel, with uncertainty, and a verdict on consistency with each clock scenario.
-4. **Papers.** A paper describing the data, a paper on the analysis, and the human–AI correspondence record. Their release is Barry's decision.
+**B. Statistics (F3).** When did the main early land-plant lineages arise, judged from each record channel with sampling corrected for? And are those windows consistent with the competing clock scenarios (primer §5.3)?
 
-**The point at which to stop and report.** All three analytical deliverables exist and have been checked, and a short memo states what the record does and does not support. Earlier stops are listed under the consult triggers.
+- Estimators are used only after they have passed the recovery study.
+- Every verdict is conditional on a named preservation model and a named reading of the data.
+- A demonstrated limit counts as a result: what the record cannot tell apart, together with the observation that would resolve it.
+
+Testing old narratives is a third contribution, and a programme-level one (Q5 in `docs/questions.md`). This deliverable feeds it whenever an adjudication finds that a widely repeated claim was never re-checked against its source. The Lochkovian "first tracheids" corrected on 2026-10-28 is the model case.
+
+## Data model: observations, interpretations, readings
+
+- **Observation.** What one source reports, recorded as stated:
+  - the taxon as reported;
+  - the specimen or assemblage;
+  - the locality and horizon;
+  - any measurement;
+  - where in the source it appears (page, figure or table);
+  - the source itself;
+  - whether it has been checked against the source text.
+- **Interpretation.** One or more for each observation, each with its source and its author (a paper, or the adjudicator: Claude, Codex or Barry):
+  - identity, with revision history;
+  - affinity, meaning spore class or producer group;
+  - age: the stage assignment and its basis, kept apart from any numerical evidence (primer §1.2);
+  - status: accepted, disputed or rejected.
+- **Reading.** A named set of choices, one interpretation per contested observation. Each analysis declares its main reading before it runs; the other readings are sensitivity analyses. This guards against results that change with whichever reading is chosen.
+
+`data/spores/` already does this crudely, with a strict and an inclusive set. Loop 1 generalises it, and builds the megafossil channel the same way. Card front matter stays the modelling summary; the occurrence data carry the alternatives.
 
 ## Target events
-
-These were chosen because each matches a clock calibration or a contested claim, and each has a fossil channel that can speak to it.
 
 | Event | Channel | Bears on |
 |---|---|---|
 | E1 First trilete spores (total-group embryophytes on Hooper et al.'s reading) | dispersed spores | Hooper et al.'s soft maximum of 459.1 Ma on crown embryophytes |
-| E2 First cryptospores accepted as embryophytic | dispersed spores | Morris et al.'s (2018) maximum of 515.5 Ma; the stasis of Ordovician cryptospores |
+| E2 First cryptospores accepted as embryophytic | dispersed spores | Morris et al.'s (2018) maximum of 515.5 Ma; the Ordovician cryptospore stasis |
 | E3 First polysporangiophyte megafossils (*Cooksonia* and relatives) | megafossils | Hooper et al.'s maximum of 431.2 Ma on crown tracheophytes |
 | E4 First tracheids in situ | megafossils and mesofossils | the late Ludlow record (`taxa/cooksonia.md`) |
 | E5 First lycophyte-line (zosterophyll) megafossils | megafossils | the minimum for crown tracheophytes |
-| E6 Agreement between the channels | both | do the spore types of known producers appear in step with those producers' bodies? |
+| E6 Agreement between the channels | both | do the spore types of known producers appear in step with those producers' bodies? Only where the producer link holds |
 | E7 The Silurian–Devonian rise | both | how much of the apparent radiation tracks sampling effort? |
 
-**Circularity rule.** Fossils that a clock study uses as minimum calibrations cannot test that study. E1–E5 therefore test the maxima, and the agreement between the two channels, not the minima. Each analysis lists which records are calibrations in which study.
+**Circularity rule.** Fossils that a clock study uses as minimum calibrations cannot test that study. E1–E5 test its maxima, and the agreement between channels; never its minima.
 
-**What logic allows.** A sampling-corrected window for when a character first arose bounds the corresponding crown from above only under the stated preservation model. That conditionality goes into every verdict.
+**What logic allows.** A sampling-corrected window for a character's first appearance bounds the corresponding crown from above only under the stated preservation model.
 
-## Stages
+## Loop 1: narrow and fast
 
-Each stage ends in something that can be inspected. The stages are a route, not approval gates.
+1. **The tail and its disputes.** For E1–E5, assemble every record older than the oldest undisputed record of the event, plus one stage beyond it. Give each its interpretations and alternative readings. Add the effort layer:
+   - spores: documents per stage and palaeogeographic unit (Palynodata and the post-2006 extraction);
+   - megafossils: collections and sections (PBDB and GBDB).
 
-**Stage 0. Data freeze v0.**
-- **Spores.** Finish MVD-B on the open texts, and fold in Barry's downloads from the closed list as they arrive.
-- **Megafossils.** Build the megafossil channel from PBDB, GBDB, the cards and the literature.
-- **Reconcile.** Bring names, ages (stage first, per primer §1.2) and attributions into line.
-- **Effort.** Build the effort layer: documents per stage and region for spores; collections and sections for megafossils.
+   The contested records already known include the Dalby "trilete" spores, the Swedish Sandbian spores, the Argentine Dapingian cryptospores, Zbrza, the Ordos preprint, the age of the Yea *Baragwanathia* beds and the attribution of the Ludlow tracheid axes (`docs/rejected-records.md`; cards).
+2. **Sketch.** The smallest virtual palaeontology: lineages under birth–death, one trait (spore type), constant preservation in each channel, and sampled first appearances. The estimators are Marshall (1990) intervals and the Gaussian-resampled, inverse-weighted estimator of Bradshaw et al. (2012), run in reverse for first appearances. Both are checked against known truths.
+3. **Recovery study.**
+   - **Conditions.** The real effort history, with preservation that depends on facies and gaps.
+   - **Measures.** Bias, coverage and identifiability. In particular: can an old origin with poor preservation be told apart from a young origin with good preservation?
+   - **Acceptance, fixed before running.** An estimator is used on real data only if its nominal 95% intervals cover the true origination time at least 90% of the time across the plausible scenarios, with median bias under 2 Myr.
+   - **Not a prediction.** These criteria are about the estimators, not about which timescale is right.
+4. **Apply and find the pivotal records.** Run the accepted estimators on each event under its main reading. Then repeat across the readings of the contested tail. A record is **pivotal** if its reading flips a verdict (for example, compatibility with a clock maximum) or moves the estimated window by more than 1 Myr. The output is a short list of the adjudications that decide each answer, with what each reading implies.
+5. **Value of information.** Rank the evidence that could still be obtained by how much it would narrow an answer, rerunning with each item resolved each way. Candidates:
+   - a closed paper;
+   - a re-dated section;
+   - a specialist adjudication;
+   - a dataset obtainable only through contact.
 
-Output: `data/occurrences/` v0, with a README and a validation report. Sol extracts and audits under the existing per-record verification rule.
+   The ranking updates `docs/questions.md`, the closed-literature list and the leads register.
+6. **Close the loop.**
+   - A memo: what holds under every reading, what depends on which records, what the record cannot tell apart, and the observation that would settle it.
+   - A structural-review entry in `docs/decisions.md` (below).
 
-**Stage 1. Sketch.**
-- **Simulator.** The smallest virtual palaeontology: lineages under birth–death; one trait (the spore type); constant preservation per channel; sampled first appearances.
-- **Estimators.** Marshall (1990) intervals, and the Gaussian-resampled, inverse-weighted estimator of Bradshaw et al. (2012) run in reverse for first appearances.
-- **Stopping point.** It runs end to end on known truths.
+## Later loops
 
-**Stage 2. Ground: the recovery study.**
-- **Realistic histories.** Replace constant preservation with the real effort history from Stage 0, and with preservation that depends on facies and gaps.
-- **What is measured.** The bias, interval coverage and identifiability of each estimator. Of particular interest is whether an old origin with poor preservation can be told apart from a young origin with good preservation.
-- **Acceptance criteria, fixed before running.** An estimator is used on real data only if, across the plausible scenarios, nominal 95% intervals cover the true origination time at least 90% of the time and its median bias is under 2 Myr.
-- **Separating the two.** The acceptance criteria concern the estimators. They are not predictions about the timescale.
+Each later loop broadens the evidence where the value-of-information ranking points, not towards completeness for its own sake. The full dataset (v1) builds up across loops. Mechanisms are added one at a time, and only where results disagree with the data:
 
-**Stage 3. Apply.** Run the validated estimators on the real channels for E1–E7. State each verdict as conditional on its preservation model.
-
-**Stage 4. Enrich, one mechanism at a time, only where Stage 3 shows a discrepancy.** Candidates:
 - regional structure by palaeocontinent;
 - spore transport into marine settings;
 - reworking and caving;
-- the uncertainty in linking spores to the plants that produced them.
+- uncertainty in which plants produced which spores.
 
-**Stage 5. Synthesise.** A memo, then drafts of the two papers. Barry reviews before anything is released.
+The pivotal records are where specialist palaeobotanical judgement matters most, and where outside input would count for most. That outside input is Barry's decision (consult triggers).
+
+## Outputs
+
+- **Dataset release** with a descriptor, and an analysis paper. Release is Barry's decision.
+- **The human–AI correspondence record.**
+- **The two kinds of novelty, kept apart.** The enabling novelty (scale and verification, evidenced by the audit records) is reported apart from the scientific findings.
 
 ## Tools and compute
 
 - **Code.**
-  - Python with `uv`, as in the existing tooling.
-  - The simulator and the two classical estimators are implemented here and tested against known truths.
-  - PyRate, `tbea` and StratPal serve as cross-checks only, at pinned versions. EPRP found pitfalls in each that bite on a record dominated by gaps (`data/eprp/pointers/eprp_pointers.md`): Marshall's method in `tbea` returning no upper bound; StratPal mapping wrongly above hiatuses; PyRate undercovering at low preservation.
+  - Python with `uv`.
+  - The simulator and the two classical estimators are written here and tested against known truths.
+  - PyRate, `tbea` and StratPal are used only as cross-checks, at pinned versions. EPRP found faults in each that bite on a gap-dominated record (`data/eprp/pointers/eprp_pointers.md`).
 - **Compute.**
   - Pilots run on mac-mini.
-  - Recovery ensembles run on `deep-server` under `/data/codex/`, after a smoke test there.
-- **Seeds and hashes.** Each run records its seeds and the data-freeze hash.
+  - Recovery ensembles run on `deep-server` under `/data/codex/`, after a smoke test.
+  - Each run records its seeds and the data hash.
 
 ## Authority and limits
 
-- **Proceeds without asking** (reversible): extraction, data cleaning, code, simulations, commits and pushes, and compute on `deep-server`.
+- **Proceeds without asking** (reversible): extraction, adjudication, code, simulations, commits and pushes, and compute on `deep-server`.
 - **Stays with Barry:**
-  - any contact outside the collaboration, including the Wellman, Steemans and Vecoli database request;
-  - any public release of data or preprints;
+  - any contact outside the collaboration, including the Wellman, Steemans and Vecoli database request and any approach to specialists over the pivotal records;
+  - public release;
   - spending beyond the mesh.
-- **Out of scope for this deliverable:**
-  - F1/F2 mechanistic simulation;
-  - phylogenetic reanalysis;
-  - the carbon cycle;
-  - anything later than the Emsian, except anchors.
+- **Out of scope for this deliverable:** F1/F2 simulation, phylogenetic reanalysis, the carbon cycle, and post-Emsian records other than anchors.
 
 ## Consult triggers
 
-1. **The recovery study (Stage 2) shows the record cannot tell the clock scenarios apart.** Report before Stage 3, with what would make them separable, such as more data or a narrower question.
-2. **Results contradict a published calibration by more than the stated uncertainty.** Report before writing it up.
-3. **A record or source would change a verdict but can be reached only through contact or purchase.**
-4. **The spore–producer links prove too weak for E6.** The question then needs narrowing, and that is a scientific choice.
+1. **A result contradicts a published calibration by more than the stated uncertainty.** Report before writing it up.
+2. **A pivotal record turns on specialist judgement this team cannot make with confidence.** Propose whom to ask and what to ask.
+3. **Evidence with high value of information can only be had by contact or purchase.**
+4. **The producer links prove too weak for E6, so the question has to be narrowed.**
+
+If the record cannot tell the clock scenarios apart, that is not a trigger. It is a result, reported at the loop's close together with the observation that would resolve it.
+
+## Structural review at each loop's close
+
+A short entry in `docs/decisions.md`:
+
+- Does the repository's structure serve the next investigation as well as this one?
+- Which assumptions did the work expose?
+- Did any evidence change a question in `docs/questions.md`?
