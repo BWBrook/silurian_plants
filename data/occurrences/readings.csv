@@ -1,0 +1,4 @@
+reading_id,label,standings,spore_frame,notes
+main,Main reading,main,strict,"The main interpretation of every observation. In the Palynodata frame outside the occurrence tail, the strict spore set (accepted, curated and unvetted usable records; data/spores/first_appearances.csv)."
+inclusive,Every live dispute resolved towards counting,main;live,inclusive,"Adds published alternatives that remain in dispute. In the Palynodata frame, the inclusive spore set (adds doubtful records). Superseded claims never count."
+outlier,Inclusive plus unassessed outliers,main;live;unassessed,inclusive,"Adds claims held out of the main reading by the rule for unassessed outliers (Piterophyton, the Ordos preprint). For sensitivity only."

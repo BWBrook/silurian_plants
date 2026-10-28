@@ -8,6 +8,7 @@
     uv run tools/occurrences.py import FILE...  # merge Codex JSON outputs (observations, interpretations, sources)
     uv run tools/occurrences.py effort PBDB.csv # effort by stage x unit: PBDB collections (all taxa) and Palynodata documents
     uv run tools/occurrences.py check           # schema, one main reading per observation, stages, quotes
+    uv run tools/occurrences.py readings        # resolve readings.csv into reading_assignments.csv
 """
 import csv
 import json
@@ -21,7 +22,9 @@ SPORES = ROOT / "data" / "spores"
 OBS_COLS = ["obs_id", "channel", "reported_as", "locality", "country", "unit", "horizon", "palaeo_unit",
             "source_ids", "locator", "events", "same_material_as", "notes"]
 INT_COLS = ["interp_id", "obs_id", "label", "counts_for", "stage_oldest", "stage_youngest", "age_note", "held_by",
-            "held_by_source_ids", "adjudicator", "main", "main_basis", "support", "support_from", "checked"]
+            "held_by_source_ids", "adjudicator", "main", "standing", "main_basis", "support", "support_from", "checked"]
+STANDINGS = {"main", "live", "unassessed", "superseded"}
+ASSIGN_COLS = ["reading_id", "event", "obs_id", "interp_id", "stage_oldest", "stage_youngest", "same_material_as"]
 SRC_COLS = ["source_id", "citation", "doi", "access"]
 EVENTS = {"E1", "E2", "E3", "E4", "E5"}
 CHECKED = {"full-text", "abstract", "card", "repo-doc", "secondary"}
@@ -98,14 +101,14 @@ def cmd_spores():
                        "held_by": "the reporting authors", "adjudicator": "", "support": "", "support_from": "", "checked": "repo-doc"}
         verdict = rep["vetting"]
         if verdict in ("doubtful", "reject") and v:
-            ints.append({**as_reported, "main": "false", "main_basis": ""})
+            ints.append({**as_reported, "main": "false", "standing": "live" if verdict == "doubtful" else "superseded", "main_basis": ""})
             ints.append({**base, "interp_id": oid + "-b", "label": f"{group}s not established ({verdict})", "counts_for": "",
-                         "held_by": "", "adjudicator": v["made_by"], "main": "true",
+                         "held_by": "", "adjudicator": v["made_by"], "main": "true", "standing": "main",
                          "main_basis": "MVD-A vetting verdict; rejected and doubtful records are excluded from the strict set",
                          "support": v["reason"], "support_from": "data/spores/crosswalks/doc_vetting.csv", "checked": "repo-doc"})
         else:
             label = {"accept": "accepted at vetting", "curated": "curated (Wellman et al. 2013)"}.get(verdict, "not vetted")
-            ints.append({**as_reported, "label": f"{group}s as reported ({label})", "main": "true",
+            ints.append({**as_reported, "label": f"{group}s as reported ({label})", "main": "true", "standing": "main",
                          "main_basis": "no published or project challenge recorded",
                          "adjudicator": v["made_by"] if v and verdict == "accept" else "",
                          "support": v["reason"] if v and verdict == "accept" else "",
@@ -266,6 +269,8 @@ def cmd_check():
             problems.append(f"{tag}: unknown obs_id {i['obs_id']!r}")
         if i["main"] == "true":
             mains[i["obs_id"]] = mains.get(i["obs_id"], 0) + 1
+        if i["standing"] not in STANDINGS or (i["standing"] == "main") != (i["main"] == "true"):
+            problems.append(f"{tag}: standing {i['standing']!r} with main {i['main']!r}")
         for k in ("stage_oldest", "stage_youngest"):
             if i[k] not in st:
                 problems.append(f"{tag}: {k} {i[k]!r} not in timescale")
@@ -284,10 +289,35 @@ def cmd_check():
     for oid in ids:
         if mains.get(oid, 0) != 1:
             problems.append(f"{oid}: {mains.get(oid, 0)} main interpretations")
+    for r in read("readings.csv", []):
+        if not set(filter(None, r["standings"].split(";"))) <= STANDINGS or "main" not in r["standings"]:
+            problems.append(f"reading {r['reading_id']}: standings {r['standings']!r}")
     for p in problems:
         print(p)
     print(f"{len(obs)} observations, {len(ints)} interpretations, {len(srcs)} sources; {len(problems)} problems")
     return 1 if problems else 0
+
+
+def cmd_readings():
+    st = stages()
+    obs = {o["obs_id"]: o for o in read("observations.csv", OBS_COLS)}
+    ints = read("interpretations.csv", INT_COLS)
+    out = []
+    for r in read("readings.csv", []):
+        allowed = set(r["standings"].split(";"))
+        for event in sorted(EVENTS):
+            best = {}
+            for i in ints:
+                if i["standing"] in allowed and event in i["counts_for"].split(";"):
+                    key = (float(st[i["stage_oldest"]]["base_ma"]), i["standing"] == "main")
+                    if i["obs_id"] not in best or key > best[i["obs_id"]][0]:
+                        best[i["obs_id"]] = (key, i)
+            for oid, (_, i) in sorted(best.items()):
+                out.append({"reading_id": r["reading_id"], "event": event, "obs_id": oid, "interp_id": i["interp_id"],
+                            "stage_oldest": i["stage_oldest"], "stage_youngest": i["stage_youngest"],
+                            "same_material_as": obs[oid]["same_material_as"]})
+    write("reading_assignments.csv", ASSIGN_COLS, out)
+    print(f"reading_assignments: {len(out)} rows")
 
 
 if __name__ == "__main__":
@@ -300,5 +330,7 @@ if __name__ == "__main__":
         cmd_effort(sys.argv[2])
     elif cmd == "check":
         sys.exit(cmd_check())
+    elif cmd == "readings":
+        cmd_readings()
     else:
         sys.exit(__doc__)

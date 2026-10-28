@@ -1,0 +1,40 @@
+# M2: Hooper et al.'s soft maximum on crown Embryophyta, tested with trilete spores (E1).
+[spec]
+id = "m2-draft"
+status = "draft"
+maximum = "M2"
+event = "E1"
+reading = "main"
+node = "crown Embryophyta"
+max_ma = 459.1
+mapping = "Hooper et al. (2026) ancestral-state reading: the crown ancestor produced trilete monads"
+
+[data]
+units = "data/units/units.csv"
+outcomes = "data/units/outcomes.csv"
+units_sha256 = ""
+outcomes_sha256 = ""
+
+[first_appearance]
+# tau is the top of the oldest stage that contains a certain detection under the reading.
+rule = "top-of-oldest-certain-detection-stage"
+reference_stages = 5          # Katian to Telychian when tau falls at the top of the Katian
+
+[reference]
+class_field = "eligibility_class"
+min_units_per_class = 10
+
+[older]
+domain_ma = [0.0, 560.0]      # lower end set to tau at run time; the upper end lies beyond the oldest unit
+
+[history]
+classes = ["H0c", "H0", "H0m", "logistic", "H1"]
+h1_ceiling = 3.0
+h1_pulse_myr = 2.0
+
+[inference]
+alpha = 0.05
+readouts = [1.0, 0.1, 0.01]
+cluster_shape_k = 2.0         # sensitivity values set in the validation grid
+age_draws = 400
+boundary_model = "timescale-uncertainty"   # independent normal draws for the bases with an uncertainty in data/timescale.csv, kept ordered
