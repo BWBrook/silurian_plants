@@ -3,6 +3,47 @@
 Dated record of decisions that shape the programme. Newest first. Say who decided, and quote
 Barry exactly (with source) or label a paraphrase.
 
+## 2026-10-29: repaired F3 review and Hanadir frame follow-up (Codex; Claude response pending)
+
+- **Access refreshed.** Codex re-read the current global instructions and Nectar guidance on
+  Barry's request. Mac-origin Linux work uses `nectar`; the old campus routing assumptions
+  are superseded. One harmless Correspondence read succeeded; no MCP reconnect or job restart
+  was needed. Claude's handoff in messages 2498 and 2502 was checked.
+- **Mathematical repairs accepted.** The chord/Jensen bounds and zero-older-detection
+  attainment argument hold under the declared independent latent-age model. H0m remains a
+  conservative relaxation. All 142 F3 tests pass. The saved 21,000-replicate development
+  results reproduce; no development grid or completed Q9 analysis was rerun.
+- **Binding validation is not ready.** The review at
+  `docs/audits/2026-10-29-f3-repairs-and-frame-review.md` identifies three remaining matters:
+  fitted-rate target weights versus generating-rate validation and realised versus integrated
+  reference-age normalisation; incomplete convergence propagation and loss of per-result
+  numerical flags; and the executable, frozen calibration/acceptance contract. These are
+  response items for Claude, who retains the model files. No undercoverage is inferred from
+  the target mismatch alone. Every development cell has flagged fits; A5 has 539 such fits
+  across 129 replicates, not just 0.2% of replicates. The saved coverage counts remain reproducible.
+- **Reporting rule: qualified agreement.** Codex agrees the frame-first, event-specific,
+  reading-consistent and deduplicated core in message 2498. `data/units/reporting-rule.md`
+  proposes precise exceptions and unknown handling: an explicit event-wide negative may
+  establish source scope, but a pooled report must retain its scope; taxonomic reading choices
+  do not turn missing material/reporting information into zeros. No binary adapter was built.
+- **Hanadir evidence strengthened.** Strother et al. (1996) provides a study/horizon-scoped
+  trilete non-detection; 2015 Plate V.1 links the 190.7 m specimen directly to 1996 figure 3k.
+  That existing block's E1 outcome is updated in all three readings. The 14 depths in the
+  older chart are separately inventoried, without invented per-depth outcomes. The 272.8 m
+  link is provisional and 152.8 is not silently equated with 155.9. The pilot's erroneous
+  plate VI–VII locators are corrected. There remain 15 material blocks and 90 outcomes.
+- **Frame limits retained.** None of the three candidate inventories is analysis-ready.
+  The Hanadir chart does not certify all processed samples; Paraguay still lacks the complete
+  53-sample/event log; a bounded official GA catalogue/API check found no Balme scan. The
+  original report remains needed. No external requests or collaborator messages were sent
+  outside the authorised private Board.
+- **Structural review (Q1, Q2).** Separating source-scope eligibility, material linkage and
+  frame admission exposed a real older negative without manufacturing a denominator. The
+  frame inventory and existing two-table interface serve the next investigation. Q1 now has
+  stronger negative evidence, but still requires a complete frame and a reconciled validation
+  contract; the scientific question and Q9's parked status do not change. The next owned
+  tranches are Claude's methodological response and targeted recovery of complete sample logs.
+
 ## 2026-10-29: execute the six-paper institutional batch (Barry; Codex execution)
 
 - **Authority** (Barry, chat; paraphrase): refresh global and Nectar access

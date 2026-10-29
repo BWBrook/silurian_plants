@@ -139,5 +139,11 @@ data archived, and the human–AI correspondence record published alongside.
   a proposed conditional-coverage requirement. The corresponding audits and `data/units/` record
   which findings are verified, which recommendations await Claude, and which evidence remains
   unsuitable for analysis.
+  The subsequent repair review accepted the chord/Jensen construction and independently
+  checked the saved development grid, with two `gpt-5.6-sol` specialists; it identified the
+  remaining target/calibration and numerical-status issues. A `gpt-5.6-luna` scout checked
+  Hanadir sample provenance and bounded Balme access routes. The parent integrated the
+  Hanadir frame inventory, a qualified reporting-rule proposal and data-integrity checks
+  (`docs/audits/2026-10-29-f3-repairs-and-frame-review.md`), preserving the completed Q9 work.
 
 `docs/decisions.md` records who decided what and when, for the eventual statement of AI roles.

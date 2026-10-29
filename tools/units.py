@@ -82,6 +82,32 @@ def check(directory=ROOT / "data/units"):
         references(candidate, "source_ids", sources)
         for uid in filter(None, candidate["linked_units"].split(";")):
             require(uid in ids, f"candidate {candidate['candidate_id']}: unknown linked unit {uid}")
+    frames = rows(directory / "frames.csv")
+    frame_ids = [r["study_frame_id"] for r in frames]
+    require(len(frame_ids) == len(set(frame_ids)), "duplicate study frame")
+    samples = rows(directory / "frame_samples.csv")
+    sample_keys = [(r["study_frame_id"], r["sample_label"]) for r in samples]
+    require(len(sample_keys) == len(set(sample_keys)), "duplicate frame sample")
+    for frame in frames:
+        references(frame, "source_ids", sources)
+        references(frame, "linked_units", set(ids))
+        require(frame["analysis_ready"] == "no", "audited candidate frames are not analysis-ready")
+        require(bool(frame["inventory_status"] and frame["remaining_gap"]), "missing frame qualification")
+        count = frame["listed_sample_count"]
+        if count:
+            require(count.isdecimal(), "invalid listed sample count")
+            if count.isdecimal():
+                require(int(count) == sum(r["study_frame_id"] == frame["study_frame_id"] for r in samples),
+                        f"{frame['study_frame_id']}: listed sample count mismatch")
+    for sample in samples:
+        require(sample["study_frame_id"] in frame_ids, "unknown sample frame")
+        require(sample["source_id"] in sources, "unknown frame sample source")
+        require(bool(sample["source_locator"]), "missing frame sample source locator")
+        require(sample["link_status"] in {"not-linked", "exact-specimen-link", "provisional-depth-match"},
+                "invalid material link status")
+        linked = sample["linked_unit_id"]
+        require((not linked and sample["link_status"] == "not-linked") or
+                (linked in ids and sample["link_status"] != "not-linked"), "invalid frame sample link")
     for source_file in rows(directory / "source_files.csv"):
         require(source_file["source_id"] in sources, "unknown file source")
         require(len(source_file["sha256"]) == 64, f"invalid digest for {source_file['path']}")
@@ -91,7 +117,8 @@ def check(directory=ROOT / "data/units"):
                     f"source file changed: {source_file['path']}")
     if errors:
         raise ValueError("\n".join(errors))
-    return {"units": len(units), "outcomes": len(outcomes),
+    return {"units": len(units), "outcomes": len(outcomes), "candidate_frames": len(frames),
+            "frame_samples": len(samples),
             "main_E1": dict(Counter(r["outcome"] for r in outcomes if r["event_id"] == "E1" and r["reading_id"] == "main")),
             "main_E2": dict(Counter(r["outcome"] for r in outcomes if r["event_id"] == "E2" and r["reading_id"] == "main"))}
 

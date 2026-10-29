@@ -1,0 +1,15 @@
+study_frame_id,sample_label,depth_m,source_id,source_locator,linked_unit_id,link_status,notes
+hanadir1996-tayma4,Tayma-4 155.9m,155.9,strother1996,Strother et al. 1996 p.56 fig. 2,,not-linked,Graph-listed depth only; no individual E1/E2 outcome or specimen count digitised. Not equated with 2015 sample 152.8.
+hanadir1996-tayma4,Tayma-4 190.7 m,190.7,strother1996,Strother et al. 1996 p.56 fig. 2,HAN-190.7,exact-specimen-link,Graph-listed depth only; no individual E1/E2 outcome or specimen count digitised. 2015 plate V.1 explicitly refigures 1996 fig. 3k.
+hanadir1996-tayma4,Tayma-4 195.8m,195.8,strother1996,Strother et al. 1996 p.56 fig. 2,,not-linked,Graph-listed depth only; no individual E1/E2 outcome or specimen count digitised.
+hanadir1996-tayma4,Tayma-4 201.3m,201.3,strother1996,Strother et al. 1996 p.56 fig. 2,,not-linked,Graph-listed depth only; no individual E1/E2 outcome or specimen count digitised.
+hanadir1996-tayma4,Tayma-4 265.8m,265.8,strother1996,Strother et al. 1996 p.56 fig. 2,,not-linked,Graph-listed depth only; no individual E1/E2 outcome or specimen count digitised.
+hanadir1996-tayma4,Tayma-4 272.8 m,272.8,strother1996,Strother et al. 1996 p.56 fig. 2,HAN-272.8-2,provisional-depth-match,Graph-listed depth only; no individual E1/E2 outcome or specimen count digitised. 2015 suffix 2 labels a slide; physical sample linkage still provisional.
+hanadir1996-tayma4,Tayma-4 298.2m,298.2,strother1996,Strother et al. 1996 p.56 fig. 2,,not-linked,Graph-listed depth only; no individual E1/E2 outcome or specimen count digitised.
+hanadir1996-tayma4,Tayma-4 314.4m,314.4,strother1996,Strother et al. 1996 p.56 fig. 2,,not-linked,Graph-listed depth only; no individual E1/E2 outcome or specimen count digitised.
+hanadir1996-tayma4,Tayma-4 330.1m,330.1,strother1996,Strother et al. 1996 p.56 fig. 2,,not-linked,Graph-listed depth only; no individual E1/E2 outcome or specimen count digitised.
+hanadir1996-tayma4,Tayma-4 341.9m,341.9,strother1996,Strother et al. 1996 p.56 fig. 2,,not-linked,Graph-listed depth only; no individual E1/E2 outcome or specimen count digitised.
+hanadir1996-tayma4,Tayma-4 363m,363,strother1996,Strother et al. 1996 p.56 fig. 2,,not-linked,Graph-listed depth only; no individual E1/E2 outcome or specimen count digitised.
+hanadir1996-tayma4,Tayma-4 379m,379,strother1996,Strother et al. 1996 p.56 fig. 2,,not-linked,Graph-listed depth only; no individual E1/E2 outcome or specimen count digitised.
+hanadir1996-tayma4,Tayma-4 383m,383,strother1996,Strother et al. 1996 p.56 fig. 2,,not-linked,Graph-listed depth only; no individual E1/E2 outcome or specimen count digitised.
+hanadir1996-tayma4,Tayma-4 401.9m,401.9,strother1996,Strother et al. 1996 p.56 fig. 2,,not-linked,Graph-listed depth only; no individual E1/E2 outcome or specimen count digitised.
