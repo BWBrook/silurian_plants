@@ -198,3 +198,13 @@ is not established. Mahmoudi's DOI remains unverified. Kubásek's Table 3 erratu
 is held with the main article and supporting figures; later readings must use the
 replacement table. The published Ibarra R source is held as a file and has not
 been executed. Scientific extraction remains pending.
+
+The second checkpoint adds 39 main texts and 16 supporting files, including the
+Edwards cryptospore/eophyte papers, older Wiley descriptions, four SCUP/Lethaia
+articles and a Caltech author copy of the 2011 Ghelli paper. Capel's four supporting
+files and Toledo's supplement close two separate SI gaps. The autonomous total is
+85 main texts, 41 supporting files and one erratum. The current CSV has 360 needed,
+99 local-copy-held and 33 open-copy-held rows. See
+`docs/audits/2026-10-29-autonomous-wave2.md` and
+`work/codex/literature/2026-10-29-autonomous-wave2.json` for the file index, scan/OCR
+qualifications and remaining save/access routes. Scientific readings are pending.

@@ -85,3 +85,13 @@ For Q5/source handling, use the Kubásek replacement Table 3 and retain the
 Hawaz manuscript, Grahn proof and Mahmoudi DOI qualifications; acquisition alone
 changes no occurrence, age or trait interpretation. See the autonomous-expansion
 audit and per-file provenance register.
+
+The second autonomous checkpoint supplies 39 further main texts and 16 supporting
+files for Q1/Q2 and the wider source register. The Edwards cryptospore, eophyte and
+transfer-cell papers, Ghelli 2011 and the Capel/Toledo supplements are now held.
+For Q5/source handling, native text extraction from five scanned/partly scanned
+older PDFs is sparse; temporary OCR supports reading but is not a verified numerical
+transcription. The Hopkins/McBride DOI alias remains unresolved. No scientific
+question or interpretation changed through acquisition; re-reading remains the
+next evidence step. The second-checkpoint audit distinguishes entitlement gaps
+from pending native-save controls.

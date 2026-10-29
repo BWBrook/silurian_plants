@@ -132,6 +132,13 @@ data archived, and the human–AI correspondence record published alongside.
   The parent then recovered and verified both Stage B ResearchGate author uploads
   (Mehlqvist 2012 and Wellman chapter 29), reconciling the already held supplement;
   no subagent or human login was needed (`docs/audits/2026-10-29-researchgate-author-copies.md`).
+  Subsequent regional-spore and autonomous collection used in-app and institutional
+  browser routes, public author/repository copies and bounded gpt-5.6-luna metadata/
+  file-QA delegates. The autonomous expansion secured 85 main texts, 41 supporting
+  files and one erratum; the parent reconciled omissions, source versions and the
+  distinction between scanned pages and extractable text. The two autonomous
+  audits dated 2026-10-29 record the checks and limitations. Scientific extraction
+  and adjudication are separate work.
   From 2026-10-28, a direct scientific and repository collaborator at Barry's request:
   methodological review of the F3 reshape, independent checks of recovery outputs and
   calibration provenance, and direct discussion with Claude through the private Correspondence

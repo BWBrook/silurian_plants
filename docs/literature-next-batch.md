@@ -180,3 +180,12 @@ ScienceDirect, Taylor & Francis, Wiley, Oxford, Nature, AJS and public author/
 repository routes supplied the verified holdings. The remaining Wiley candidates
 are being worked through under the same authority; no new shortlist approval is
 required. Parked request candidates remain separate from reader/security actions.
+
+The second checkpoint is complete: 39 further main texts and 16 supporting files,
+documented in `docs/audits/2026-10-29-autonomous-wave2.md`. This brings autonomous
+collection to 85 main texts. Wiley, SCUP and a public Caltech author route supplied
+this checkpoint. The Oxford/native-save group is the next practical tranche once
+the Mac is unlocked. Additional older Elsevier and BSA backfile checks found access
+gaps; those need targeted author/repository alternatives rather than repeated
+unchanged publisher attempts. Their metadata and individual outcomes are embedded
+in the wave2 receipt. All collection tabs are closed.

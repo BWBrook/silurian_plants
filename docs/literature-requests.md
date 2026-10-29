@@ -163,3 +163,24 @@ No request or purchase was submitted; the previous ten candidates were not retri
 | `white1983` | Gensel & White, Psilophyton spores, 1983 | UTAS Taylor & Francis article has Read this article and no full-access PDF |
 | `chinnock1975` | Chinnock, New Zealand Tmesipteris, 1975 | Migrated Wiley route resolves PDF control to access-denial/purchase options |
 | `lovis1987` | Brownsey & Lovis, psilotalean chromosome numbers, 1987 | Migrated Wiley route resolves PDF control to access-denial/purchase options |
+
+## Further backfile gaps from the second autonomous checkpoint
+
+These six are route-level candidates for alternate copies or a later request, not
+claims that the works are unobtainable. No request was submitted. The original ten
+parked cases remain untouched. Kasper 1972 has a distinct JSTOR follow-up in the
+Barry action ledger and is not included in this table.
+
+| CSV ID | DOI | Observed 29 October 2026 |
+|---|---|---|
+| `al2008e` | 10.1016/j.geobios.2007.06.003 | UTAS ScienceDirect preview/access options; ORBi publisher-postprint entry and ResearchGate require a copy request |
+| `alruwaili2007` | 10.1016/j.revmic.2007.01.002 | UTAS ScienceDirect preview/access options; ResearchGate request-only and EM-consulte subscription route |
+| `kermandji2007` | 10.1016/j.revmic.2007.01.003 | UTAS ScienceDirect preview/access options; public alternatives not exhausted |
+| `vecoli2009` | 10.1016/j.palaeo.2009.08.001 | UTAS ScienceDirect preview/access options; public alternatives not exhausted |
+| `al2007e` | 10.1016/j.palaeo.2007.03.009 | UTAS ScienceDirect preview/access options; public alternatives not exhausted |
+| `kasper1974` | 10.1002/j.1537-2197.1974.tb12253.x | UTAS Wiley PDF route returned access/purchase options; focused public search found citations but no full text |
+
+The 2011 Ghelli paper (`al2011j`) also returned a UTAS preview, but the follow-up
+found and verified its public Caltech author copy. It is held and is not a request
+candidate. This rescue is why a publisher preview alone is not treated as a final
+failure.

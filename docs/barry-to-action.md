@@ -7,7 +7,9 @@ provenance have been verified. A failed route does not establish that no copy ex
 
 ## Active access actions
 
-Two fresh route-level actions remain after the autonomous expansion; no tabs are held open for them. Reopen only when Barry is available. Liu 2016 remains resolved.
+The two earlier route-level actions remain, with the native-save group and Pertica
+route added below. No tabs are held open. Reopen when Barry is available. Liu 2016
+remains resolved.
 
 | Work | Observed blocker | Reopen route |
 |---|---|---|
@@ -16,7 +18,29 @@ Two fresh route-level actions remain after the autonomous expansion; no tabs are
 
 The detailed autonomous audit records resolved reader/save failures and version qualifications. The metadata-only Mahmoudi DOI check remains unresolved; it does not require Barry to obtain the already-held paper.
 
-The ten earlier request candidates and five newly observed archive-access gaps remain parked in
+### Native PDF save controls — desktop unlock needed
+
+The Mac locked again during the second checkpoint. Chrome's native controls could
+not be operated; the in-app PDF routes did not produce saved files. No file is
+claimed for the following items. Unlock the desktop, then reopen these routes:
+
+- Shute 1989 (`shute1989`): [Oxford article](https://academic-oup-com.ezproxy.utas.edu.au/botlinnean/article/100/2/111/2665856). The 27-page PDF loaded previously; the fresh in-app link also reached the PDF delivery URL.
+- Fanning 1992 (`fanning1992`): [Oxford article](https://academic-oup-com.ezproxy.utas.edu.au/botlinnean/article/109/2/161/2632381). Article identity verified; PDF transition/save remains incomplete.
+- Edwards 1980 (`edwards1980`): [ScienceDirect article](https://www-sciencedirect-com.ezproxy.utas.edu.au/science/article/pii/0034666780900573). Full text access and View PDF were visible; downloadMedia did not create a file.
+- Mark 2011 (`mark2011`): [ScienceDirect article](https://www-sciencedirect-com.ezproxy.utas.edu.au/science/article/pii/S0016703710005934). Full text access was visible; no native save attempted while locked.
+
+These are save/transition follow-ups, not established entitlement failures. The
+other eight Oxford candidates are metadata-identified and unattempted in this pass.
+
+### Kasper & Andrews 1972 — Pertica
+
+`kasper1972`, DOI 10.1002/j.1537-2197.1972.tb10165.x. Wiley's UTAS PDF route returned
+access/purchase options. The exact alternative [JSTOR record through UTAS](https://www-jstor-org.ezproxy.utas.edu.au/stable/2441116)
+was verified against title, authors and pages 897–911, but its reader/download menu
+did not render usable controls in-app. Revisit in Chrome with the desktop unlocked.
+No terms were accepted, request submitted or purchase made.
+
+The ten earlier request candidates and subsequent archive-access candidates are recorded in
 [`docs/literature-requests.md`](literature-requests.md), separately from this fresh
 access action. No request has been submitted.
 

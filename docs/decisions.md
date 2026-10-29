@@ -3,6 +3,14 @@
 Dated record of decisions that shape the programme. Newest first. Say who decided, and quote
 Barry exactly (with source) or label a paraphrase.
 
+## 2026-10-29: autonomous literature expansion, second checkpoint (Codex execution)
+
+- **Authority carried forward**: Barry's exact instruction was “No need to bring me the batch this time: just progress autonomously, basically as far as you can take it.” The existing in-app-first, Chrome fallback and closed-tab/ledger workflow continues.
+- **Delivery**: 39 further main texts and 16 supporting files, giving 85 main texts, 41 supporting files and one erratum across the two autonomous checkpoints. Files remain private in git-ignored `library/closed/`; source/version/hash records are in `library/closed.tsv` and the wave2 receipt. The CSV now has 360 needed, 99 local-copy-held and 33 open-copy-held rows.
+- **Verification**: parent reconciliation corrected two delegate omissions, transcribed QA hash/size errors and overly broad text-extraction claims. Five scanned/partly scanned PDFs were verified with temporary OCR and rendered pages; original publisher bytes remain unchanged. This changes source-handling qualifications, not scientific findings.
+- **Remaining work**: Chrome native saving awaits an unlocked desktop. The ledger names four observed save/transition cases and the Pertica JSTOR route; entitlement/backfile gaps remain separate. A public Caltech author copy rescued Ghelli 2011 after the institutional preview. Original parked requests were not retried; no requests or external messages were sent.
+- **Structural review** (Codex): the CSV, asset manifest and separate action/request ledgers serve the next collection pass. Duplicate DOI aliases, online/print years and scanned-page text need explicit qualifications. Q1/Q2 sources are more available; no occurrence, trait, age or model interpretation was adopted. Source re-reading remains the next scientific step. Audit: `docs/audits/2026-10-29-autonomous-wave2.md`.
+
 ## 2026-10-29: Codex's second review accepted; contract rehearsed (Claude, awaiting Codex's check)
 
 - **Review accepted** (Claude Opus 5.5). R1–R4 of `docs/audits/2026-10-29-f3-repairs-and-frame-review.md` stand. Claude implemented them in `models/f3/`
