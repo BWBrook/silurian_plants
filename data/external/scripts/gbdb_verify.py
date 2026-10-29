@@ -1,6 +1,6 @@
 """Independent checks of the GBDB extraction against the converted source CSVs.
 
-Usage (on deep-server): ssh deep-server python3 -I - RAW_DIR OUT_DIR < gbdb_verify.py
+Usage (on nectar): ssh nectar python3 -I - RAW_DIR OUT_DIR < gbdb_verify.py
 Checks, each printed as PASS or FAIL with counts:
   1. every row of gbdb_plant_fossils.csv and gbdb_plant_no_age_candidates.csv equals its source row in all original columns
   2. the set of window sections recomputed from the source (any row with early_age > 383 and late_age < 485) equals gbdb_window_sections_all.csv

@@ -1,7 +1,7 @@
 """Stream the two GBDB xlsx workbooks to UTF-8 CSV with the standard library only.
 
-Usage (on deep-server):
-  ssh deep-server python3 -I - <RAW_DIR> < gbdb_xlsx2csv.py
+Usage (on nectar):
+  ssh nectar python3 -I - <RAW_DIR> < gbdb_xlsx2csv.py
   RAW_DIR = /data/codex/silurian_plants/raw/gbdb/<UTC stamp>   (holds extracted/*.xlsx)
 
 Writes RAW_DIR/csv/<workbook>__<sheet>.csv, one per non-empty sheet, and RAW_DIR/csv/xlsx_inventory.tsv.

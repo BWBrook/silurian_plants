@@ -3,7 +3,7 @@
 # including soil moisture, evaporation, runoff) for each HadCM3L run code, from the Bristol BRIDGE site.
 # Used for the land-sea mask (soil-moisture footprint) and as an independent check on the Zenodo files.
 # The site states no licence and no login is required; see climate/README.md.
-# Run ON deep-server:  ssh deep-server 'bash -s -- teXPt teXPs ...' < climate_fetch_bristol_pdclann.sh
+# Run ON nectar:  ssh nectar 'bash -s -- teXPt teXPs ...' < climate_fetch_bristol_pdclann.sh
 set -euo pipefail
 
 RAW=/data/codex/silurian_plants/raw/hadcm3l

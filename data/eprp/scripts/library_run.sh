@@ -1,13 +1,13 @@
 #!/usr/bin/env bash
-# Full silurian_plants library extraction. Run from data/eprp/scripts/ on a machine that can reach deep-server.
-# Stage 1-2 run on deep-server (reads /data/paleodata/library, writes only to scratch); stage 3 runs locally.
+# Full silurian_plants library extraction. Run from data/eprp/scripts/ on a machine that can reach nectar.
+# Stage 1-2 run on nectar (read-only on library/ in the EPRP mirror backup, writes only to scratch); stage 3 runs locally.
 set -euo pipefail
 cd "$(dirname "$0")"
 ROOT=$(cd .. && pwd)
 PROJECT=$(cd ../../.. && pwd)
 EPRP=${EPRP:-$HOME/git/eprp}
-REMOTE=${REMOTE:-deep-server}
-RDIR=${RDIR:-/data/codex/silurian_plants-eprp/library}
+REMOTE=${REMOTE:-nectar}
+RDIR=${RDIR:-/data/codex/silurian_plants/eprp/library}
 WORK=$ROOT/local/library/work
 
 ssh -o BatchMode=yes "$REMOTE" "mkdir -p $RDIR"
@@ -21,6 +21,6 @@ ASSEMBLE=(python3 library_assemble.py --works "$EPRP/resources/library/works.tsv
   --fts "$WORK/fts_hits.tsv" --decisions library_decisions.tsv --project "$PROJECT" --read library_screen_read.txt \
   --out "$ROOT/library" --work "$WORK")
 "${ASSEMBLE[@]}"
-rsync -a --files-from="$WORK/texts_to_copy.txt" "$REMOTE:/data/paleodata/library/text/" "$ROOT/local/library/text/"
+rsync -a --files-from="$WORK/texts_to_copy.txt" "$REMOTE:/data/codex/artifacts/eprp-paleodata-backup/latest/library/text/" "$ROOT/local/library/text/"
 "${ASSEMBLE[@]}" --texts-dir "$ROOT/local/library/text"
 python3 library_manifest.py

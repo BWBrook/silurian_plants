@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
-# Fetch PhanDA HadCM3L priors (Zenodo 8237751, CC BY 4.0) files to deep-server raw scratch,
+# Fetch PhanDA HadCM3L priors (Zenodo 8237751, CC BY 4.0) files to nectar raw scratch,
 # verify md5 against the Zenodo record, and log provenance.
-# Run ON deep-server:  ssh deep-server 'bash -s' < climate_fetch_hadcm3l.sh [file ...]
+# Run ON nectar:  ssh nectar 'bash -s' < climate_fetch_hadcm3l.sh [file ...]
 # Default files: ExperimentInfo.xlsx scotese_02_tas.zip scotese_02_pr.zip
 set -euo pipefail
 

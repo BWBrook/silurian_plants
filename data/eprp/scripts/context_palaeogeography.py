@@ -1,20 +1,20 @@
 #!/usr/bin/env python3
 """Palaeogeography context for 485-383 Ma from EPRP's palaeogeography mirror.
 
-Run on deep-server (stdlib plus the pdftotext binary; read-only on /data/paleodata):
-    ssh -o BatchMode=yes deep-server python3 - < context_palaeogeography.py
+Run on nectar (stdlib plus the pdftotext binary; read-only on the EPRP mirror backup):
+    ssh -o BatchMode=yes nectar python3 - < context_palaeogeography.py
 Inputs copied beforehand from the EPRP checkout at ac42dfb (read-only there) into
-/data/codex/silurian_plants-eprp/context/inputs/ :
+/data/codex/silurian_plants/eprp/context/inputs/ :
     resources/sources/palaeogeography/gplates-models-licences.tsv
     resources/sources/palaeogeography/profile/palaeogeography_profile.tsv
 Writes context/plate_models.csv, context/paleodem_slices.csv, context/sources_used_palaeogeography.tsv and
-copies the PaleoDEM window slices to local/context/paleodem/ (under /data/codex/silurian_plants-eprp/context/).
+copies the PaleoDEM window slices to local/context/paleodem/ (under /data/codex/silurian_plants/eprp/context/).
 """
 import csv, hashlib, json, os, re, subprocess, sys, unicodedata, zipfile
 
-PG = "/data/paleodata/palaeogeography"
-RD = "/data/paleodata/register-deposits"
-SCR = "/data/codex/silurian_plants-eprp/context"
+PG = "/data/codex/artifacts/eprp-paleodata-backup/latest/palaeogeography"
+RD = "/data/codex/artifacts/eprp-paleodata-backup/latest/register-deposits"
+SCR = "/data/codex/silurian_plants/eprp/context"
 INP = f"{SCR}/inputs"
 OUT = f"{SCR}/context"
 LOC = f"{SCR}/local/context/paleodem"

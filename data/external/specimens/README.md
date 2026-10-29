@@ -3,7 +3,7 @@
 GBIF, iDigBio and the EPRP Australian mirror, searched for early-land-plant material. Extracted 2026-10-27
 by a Claude Sonnet 5.5 subagent (`claude-sonnet-5-5`) for the silurian_plants project. EPRP was used read-only
 (commit `ac42dfb`); nothing was written to EPRP or to `/data/paleodata`. Scripts are `../scripts/specimens_*`
-(stdlib Python). The heavy queries ran on `deep-server`; the raw JSON pages stay there.
+(stdlib Python). The heavy queries ran on `deep-server`; the raw JSON pages stay there (not reachable from the Macs; a rebuild re-harvests on `nectar`).
 
 ## 1. What is here
 
@@ -117,7 +117,8 @@ backbone; `taxon_recorded` is the provider's `dwc:scientificName`, `taxon_interp
 
 ### ALA and GBIF Australia (EPRP mirror, read-only)
 
-`deep-server:/data/paleodata/gbif-ala-fossils/gbif/raw/2026-10-22T1013Z_url/` (catalogue entry
+`deep-server:/data/paleodata/gbif-ala-fossils/gbif/raw/2026-10-22T1013Z_url/`, backed up at
+`nectar:/data/codex/artifacts/eprp-paleodata-backup/latest/gbif-ala-fossils/gbif/raw/2026-10-22T1013Z_url/` (catalogue entry
 `eprp/resources/sources/gbif-ala-fossils/README.md`): GBIF `FOSSIL_SPECIMEN` records for country AU and PG, harvested
 2026-10-22, Neptune excluded, 42,782 records. These are GBIF records, so ALA's own copies add none (the catalogue entry
 says ALA re-serves GBIF's NHM, UCMP, MCZ and ANWC records); ALA's live API was not queried. The same window and
@@ -411,7 +412,7 @@ Zero rows means that no kept record carries the name in the genus field, the acc
 ```bash
 # 1. names (local): reads taxa/*.md
 python3 data/external/scripts/specimens_scope.py > data/external/scripts/specimens_scope_names.csv
-# 2. harvest (on deep-server; scp the two files or ssh deep-server python3 - ARGS < script)
+# 2. harvest (on nectar; scp the two files or ssh nectar python3 - ARGS < script)
 python3 specimens_harvest.py gbif   /data/codex/silurian_plants/raw specimens_scope_names.csv --workers 3
 python3 specimens_harvest.py idigbio /data/codex/silurian_plants/raw specimens_scope_names.csv
 python3 specimens_harvest.py gbif-datasets <gbif harvest dir>

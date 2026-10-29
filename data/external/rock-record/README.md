@@ -4,7 +4,7 @@ Bedrock area by age for Great Britain and Northern Ireland, from the open BGS Di
 of Named Rock Units entries for their units. It is a sampling proxy for the Avalonian core of the Silurian–Devonian plant
 record, in the spirit of Dunhill et al. (2014, *Nature Communications* 5:4818, doi:10.1038/ncomms5818; DOI checked against
 Crossref). Extracted 2026-10-27 by a Claude Sonnet 5.5 subagent (`claude-sonnet-5-5`), read-only, from open web services; the
-raw pulls are on `deep-server` in `/data/codex/silurian_plants/raw/bgs/2026-10-27T0128Z/` (200 MB). Scripts:
+raw pulls are on `deep-server` in `/data/codex/silurian_plants/raw/bgs/2026-10-27T0128Z/` (200 MB; not reachable from the Macs, so a rebuild re-pulls on `nectar`). Scripts:
 `../scripts/rockrecord_*.py`. Paths below are relative to `data/external/`.
 
 **What Dunhill et al. used, and what this is not.** Their Methods (as shown on PubMed Central; the Supplementary Methods
@@ -160,15 +160,15 @@ United Kingdom, all regions, area in km² (period or series; BGS years in Ma):
 
 ## 8. Reproduce
 
-From `data/external/scripts/`, with the GDAL command-line tools on `deep-server`:
+From `data/external/scripts/`, with the GDAL command-line tools on `nectar`:
 
 ```sh
 for s in rockrecord_fetch rockrecord_bgs_polygons rockrecord_lexicon rockrecord_build; do
-  ssh deep-server python3 - < $s.py
+  ssh nectar python3 - < $s.py
 done
 R=/data/codex/silurian_plants/raw/bgs/<stamp>
-rsync -a deep-server:$R/derived/out/ out/        # copy the four tracked tables and two local tables
-rsync -a deep-server:$R/derived/bgs_625k_bedrock_silurian_devonian.gpkg ../local/rock-record/
+rsync -a nectar:$R/derived/out/ out/             # copy the four tracked tables and two local tables
+rsync -a nectar:$R/derived/bgs_625k_bedrock_silurian_devonian.gpkg ../local/rock-record/
 python3 rockrecord_manifest.py
 ```
 

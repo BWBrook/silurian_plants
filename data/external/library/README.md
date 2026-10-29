@@ -43,6 +43,8 @@ Every OpenAlex call went through `library.py`'s `openalex_url` and `get_json` on
 (never read, printed or moved). No email or contact identifier was sent, and Unpaywall was not called. Open-access information
 comes from OpenAlex's own `open_access`, `best_oa_location` and `locations` fields.
 
+**Access (2026-10-29).** The store and the credentials these scripts use (OpenAlex and CORE keys, a Wiley text-and-data-mining token) are installed only on `deep-server`, which the Macs cannot reach. `nectar` holds neither the store nor any key, and none was copied or set up. The *Reproduce* steps therefore cannot be run from the Macs; rebuilding there would need the store copied to `/data/codex/silurian_plants/library/` on `nectar` and the keys installed there first, which is Barry's decision. `wsl` can still reach `deep-server`. Two scripts name EPRP's store: `library_eprp_library.py` is a hash-pinned copy of EPRP's `library.py` and keeps its default store, `/data/paleodata/library`; `library_classify.py` reads `/data/paleodata/library/manifest.tsv` for PDF sizes (on `nectar` that file is in the backup, `/data/codex/artifacts/eprp-paleodata-backup/latest/library/manifest.tsv`, and the path in the script would need changing).
+
 ## Method
 
 1. **Tier `cited`.** `library_cited_seed.py` applies the project's own `DOI_RE` and `clean_doi` (copied from `tools/cards.py`
@@ -304,7 +306,7 @@ project's own work. Abstracts are publisher text and stay in `local/library/abst
 
 ## Reproduce
 
-From `data/external/`: `python3 scripts/library_cited_seed.py` writes `library/seeds/cited.tsv`. On deep-server, from `/data/codex/silurian_plants/library/_tools/`
+These steps need the store and keys on `deep-server` (see **Access** under *Store and tool*). From `data/external/`: `python3 scripts/library_cited_seed.py` writes `library/seeds/cited.tsv`. On deep-server, from `/data/codex/silurian_plants/library/_tools/`
 (helper scripts and seeds copied there):
 `python3 library_run.py resolve --store ..`, `python3 library_window.py probes`, `python3 library_window.py seed`, `python3 library_window.py finalize`,
 `python3 library_run.py resolve --store ..`, `python3 library_run.py index --store .. --out ../_index`, `python3 library_classify.py`.

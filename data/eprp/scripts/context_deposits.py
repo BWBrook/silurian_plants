@@ -1,13 +1,13 @@
 #!/usr/bin/env python3
 """Screen EPRP's register-deposits mirror against the silurian_plants framings and copy small relevant files.
 
-Run on deep-server (stdlib only; read-only on /data/paleodata):
-    ssh -o BatchMode=yes deep-server python3 - < context_deposits.py
-Inputs copied beforehand from the EPRP checkout at ac42dfb into /data/codex/silurian_plants-eprp/context/inputs/ :
+Run on nectar (stdlib only; read-only on the EPRP mirror backup):
+    ssh -o BatchMode=yes nectar python3 - < context_deposits.py
+Inputs copied beforehand from the EPRP checkout at ac42dfb into /data/codex/silurian_plants/eprp/context/inputs/ :
     resources/sources/register-deposits/snapshots.tsv, saved there as register-deposits_snapshots.tsv   (deposit, provider, version_dir, doi, licence, published, files, bytes)
 Writes context/register_deposits_relevant.csv, context/register_deposits_screened.csv,
 context/sources_used_deposits.tsv, context/deposits/<id>/ and local/context/deposits/<id>/
-(under /data/codex/silurian_plants-eprp/context/).
+(under /data/codex/silurian_plants/eprp/context/).
 
 The relevance judgements, framing codes and one-line notes are the extractor's inference from EPRP's catalogue entry
 and the deposits' own READMEs; they are labelled as inference in the output. Citations, DOIs and descriptions of what a
@@ -15,8 +15,8 @@ deposit contains come from EPRP's register-deposits README ('Contents', 'Citatio
 """
 import csv, hashlib, json, os, re, shutil, sys, zipfile
 
-RD = "/data/paleodata/register-deposits"
-SCR = "/data/codex/silurian_plants-eprp/context"
+RD = "/data/codex/artifacts/eprp-paleodata-backup/latest/register-deposits"
+SCR = "/data/codex/silurian_plants/eprp/context"
 INP = f"{SCR}/inputs"
 OUT = f"{SCR}/context"
 LOC = f"{SCR}/local/context"

@@ -6,7 +6,7 @@ JSON line per work with the fields the screen needs: title, reconstructed
 abstract, OpenAlex keywords, concepts and topics, and all author names.
 Read-only on the store. stdlib only.
 
-    python3 library_features.py --works works.tsv --store /data/paleodata/library --out features.jsonl
+    python3 library_features.py --works works.tsv --store /data/codex/artifacts/eprp-paleodata-backup/latest/library --out features.jsonl
 """
 import argparse
 import csv
@@ -28,7 +28,7 @@ def abstract(inv):
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--works", required=True)
-    ap.add_argument("--store", default="/data/paleodata/library")
+    ap.add_argument("--store", default="/data/codex/artifacts/eprp-paleodata-backup/latest/library")
     ap.add_argument("--out", required=True)
     a = ap.parse_args()
 

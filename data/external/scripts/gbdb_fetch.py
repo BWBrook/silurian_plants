@@ -1,7 +1,7 @@
 """Download the GBDB snapshot from Zenodo, verify its checksum and unzip it.
 
-Usage (on deep-server):
-  ssh deep-server python3 -I - /data/codex/silurian_plants/raw/gbdb < gbdb_fetch.py
+Usage (on nectar):
+  ssh nectar python3 -I - /data/codex/silurian_plants/raw/gbdb < gbdb_fetch.py
 Creates <ROOT>/<UTC stamp>/ holding the zip, headers.txt, extracted/ (the two workbooks) and provenance.json
 (URL, UTC time, licence, md5 declared by Zenodo and observed, sha256). Uses a plain user agent with no contact
 details, makes no login and creates no account. Prints the versions listing so a newer record is noticed.

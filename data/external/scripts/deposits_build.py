@@ -1,13 +1,13 @@
 #!/usr/bin/env python3
-"""Copy the deep-server mirror of the deposits to the Mac and write deposits/MANIFEST.tsv.
+"""Copy the nectar mirror of the deposits to the Mac and write deposits/MANIFEST.tsv.
 
-Run on the Mac (needs ssh and rsync access to deep-server):
+Run on the Mac (needs ssh and rsync access to nectar):
     uv run --with openpyxl --with xlrd python3 deposits_build.py
 
 Placement rule (task brief): a file goes to data/external/deposits/<id>/ when the licence allows redistribution
 (CC0, CC BY, OGL, public domain, MIT, Apache; CC BY-NC and the data.bris NC Government Licence are tracked but flagged)
 and the file is under 20 MB; every other file goes to data/external/local/deposits/<id>/ (git-ignored).
-Europe PMC supplementaryFiles zips stay whole on deep-server; their non-image members are extracted here, and
+Europe PMC supplementaryFiles zips stay whole on the mirror host; their non-image members are extracted here, and
 the small zips that carry data tables are opened one level (CAT[...]["open_nested"]).
 Every copied file is re-hashed after the copy and must match the sha256 the mirroring tool recorded.
 """
@@ -23,7 +23,7 @@ import tempfile
 import zipfile
 from pathlib import Path
 
-REMOTE = "deep-server"
+REMOTE = "nectar"
 RAW = "/data/codex/silurian_plants/raw/deposits"
 EXT = Path(__file__).resolve().parents[1]
 DEP, LOC = EXT / "deposits", EXT / "local" / "deposits"

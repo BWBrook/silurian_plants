@@ -6,7 +6,7 @@ Crossref on 2026-10-26. Statements about EPRP's register, notes and software ent
 own; framing assignments (F1–F7, from `docs/framings.md`) are this extraction's inference.
 
 EPRP is Barry's quantitative-palaeobiology programme (Claude and Codex, from 7 October 2026). It
-builds a register of research questions, a catalogue of data sources mirrored on `deep-server`, a
+builds a register of research questions, a catalogue of data sources mirrored on `deep-server` (backed up on `nectar`), a
 literature library and a software catalogue with validation benches. None of its 50 applied or
 18 blue-sky questions is about early land plants: this project works in territory EPRP has not
 entered, so EPRP's value here is mostly infrastructure, method lessons and a few adjacent
@@ -15,11 +15,12 @@ questions.
 ## Reaching EPRP directly
 
 - Catalogue entries (caveats, column meanings, tested recipes): `resources/sources/<id>/README.md`.
-  Bulk data: `deep-server:/data/paleodata/<id>/`, same ids.
-- Literature: `ssh deep-server 'cd /data/paleodata/library && python3 _tools/library.py search "<query>"'`
+  Bulk data: `nectar:/data/codex/artifacts/eprp-paleodata-backup/latest/<id>/`, same ids (the backup of EPRP's
+  own mirror, `deep-server:/data/paleodata/<id>/`, which the Macs cannot reach).
+- Literature: `ssh nectar 'cd /data/codex/artifacts/eprp-paleodata-backup/latest/library && python3 _tools/library.py search --store . "<query>"'`
   ranks titles, abstracts and about 3,000 open full texts; matches in publisher text-and-data-mining
   copies are reported without passages.
-- Software builds and run outputs: `deep-server:/data/paleosoft/<id>/`; entries in
+- Software builds and run outputs: `deep-server:/data/paleosoft/<id>/` (not in the nectar backup, which holds `/data/paleodata` only); entries in
   `resources/software/<id>/README.md`; the full survey in `resources/software/LANDSCAPE.md`.
 - Treat the checkout as read-only: update it only by `git fetch` and fast-forward. Development
   happens elsewhere.
@@ -114,7 +115,7 @@ directly:
   not cited by the project and speaks directly to the Silurian–Devonian expansion.
 - **TREED** (Rogger et al. 2026, 10.5194/gmd-19-4931-2026): trait- and optimality-based
   eco-evolutionary vegetation model for deep time. Julia, which is installed nowhere on the mesh.
-  Its deposit is mirrored at `deep-server:/data/paleodata/register-deposits/rogger2026-treed-vegetation-model/`.
+  Its deposit is mirrored at `nectar:/data/codex/artifacts/eprp-paleodata-backup/latest/register-deposits/rogger2026-treed-vegetation-model/`.
 - **COPSE** and **GEOCARBSULF** (MATLAB), **DCESS II** (Fortran, with a land biosphere;
   10.5194/gmd-18-2161-2025), and **cGENIE.muffin**, which EPRP has built and regression-tested
   (bitwise identical across gfortran 9 and 11 at v0.9.78).

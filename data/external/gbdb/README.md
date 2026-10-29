@@ -3,7 +3,7 @@
 Extracted 2026-10-27 by a Claude Sonnet 5.5 subagent (`claude-sonnet-5-5`) from the Zenodo snapshot of the
 GBDB (Xu 2020), read-only on the source. The window is **485–383 Ma** (Tremadocian to Givetian), plus
 Frasnian–Famennian records of six anchor genera (*Archaeopteris*, *Callixylon*, *Eospermatopteris*,
-*Wattieza*, *Elkinsia*, *Leclercqia*). Scripts: `../scripts/gbdb_*`. Extraction ran on `deep-server`; the
+*Wattieza*, *Elkinsia*, *Leclercqia*). Scripts: `../scripts/gbdb_*`. Extraction ran on `deep-server` (not reachable from the Macs; a rebuild re-pulls on `nectar`, §11); the
 raw copy is `deep-server:/data/codex/silurian_plants/raw/gbdb/20261027T004503Z/` (zip, workbooks, CSV
 conversions). All files here are under 20 MB and CC BY 4.0, so none is in `../local/gbdb/` (unused).
 Treat everything as input, not verified fact.
@@ -357,13 +357,13 @@ has counts only); no check against the original GBDB publications.
 
 ```bash
 cd data/external/scripts
-ssh deep-server python3 -I - /data/codex/silurian_plants/raw/gbdb < gbdb_fetch.py   # Zenodo API, md5 check, unzip, provenance.json
+ssh nectar python3 -I - /data/codex/silurian_plants/raw/gbdb < gbdb_fetch.py   # Zenodo API, md5 check, unzip, provenance.json
 R=/data/codex/silurian_plants/raw/gbdb/<UTC stamp>          # the folder it created
-ssh deep-server python3 -I - $R < gbdb_xlsx2csv.py          # streams both workbooks to $R/csv/ (about 3 min)
-scp ../../eprp/record/pbdb_plant_occurrences.csv ../../timescale.csv deep-server:$R/aux/
-ssh deep-server python3 -I - $R $R/out $R/aux/pbdb_plant_occurrences.csv $R/aux/timescale.csv < gbdb_extract.py
-ssh deep-server python3 -I - $R $R/out < gbdb_verify.py     # independent checks, expects ALL PASS
-rsync -a deep-server:$R/out/ ../gbdb/                       # also copy $R/csv/xlsx_inventory.tsv as gbdb_xlsx_inventory.tsv
+ssh nectar python3 -I - $R < gbdb_xlsx2csv.py               # streams both workbooks to $R/csv/ (about 3 min)
+scp ../../eprp/record/pbdb_plant_occurrences.csv ../../timescale.csv nectar:$R/aux/
+ssh nectar python3 -I - $R $R/out $R/aux/pbdb_plant_occurrences.csv $R/aux/timescale.csv < gbdb_extract.py
+ssh nectar python3 -I - $R $R/out < gbdb_verify.py          # independent checks, expects ALL PASS
+rsync -a nectar:$R/out/ ../gbdb/                            # also copy $R/csv/xlsx_inventory.tsv as gbdb_xlsx_inventory.tsv
                                                             # (provenance.tsv was written by hand from the fields of $R/provenance.json)
                                                             # then, from the project root:
 python3 data/external/scripts/gbdb_pbdb_overlap.py

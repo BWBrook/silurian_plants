@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
-# Mirror named deposits on deep-server into /data/codex/silurian_plants/raw/deposits/<id>/<UTC stamp>/raw/...
-# Run on deep-server:  bash deposits_mirror_run.sh ITEM [ITEM ...]
+# Mirror named deposits on nectar into /data/codex/silurian_plants/raw/deposits/<id>/<UTC stamp>/raw/...
+# Run on nectar:  bash deposits_mirror_run.sh ITEM [ITEM ...]
 # Needs deposits_data_mirror.py (a copy of EPRP's resources/tools/data_mirror.py) and deposits_other_repos.py
-# (a copy of EPRP's register-deposits/other_repos.py) beside this script on deep-server.
+# (a copy of EPRP's register-deposits/other_repos.py) beside this script on nectar.
 # Provider-API items (zenodo, figshare, github) are checksum-verified by the tool. Plain-URL items have no
 # provider checksum: the tool checks Content-Length and records sha256. No credentials are used anywhere.
 set -uo pipefail

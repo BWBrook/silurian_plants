@@ -1,8 +1,8 @@
 """rockrecord_bgs_polygons.py: unpack the BGS DiGMapGB-625 (V5.17) bedrock polygons, add area and centroid, and select the
 Silurian-Devonian polygons on BGS's own age fields.
 
-Run on deep-server after rockrecord_fetch.py (stdlib + the GDAL command-line tools):
-    ssh deep-server python3 - < rockrecord_bgs_polygons.py
+Run on nectar after rockrecord_fetch.py (stdlib + the GDAL command-line tools):
+    ssh nectar python3 - < rockrecord_bgs_polygons.py
 Reads the newest /data/codex/silurian_plants/raw/bgs/<stamp>/ (shapefile and GeoPackage zips); writes to <stamp>/derived/ :
   bedrock_shapefile_epsg27700.gpkg    the shapefile bedrock layer re-written to GeoPackage with EPSG:27700 assigned (the .prj has no EPSG code); intermediate
   bedrock_polygons.csv                all 11,244 bedrock polygons: every source attribute (unchanged) + area_m2 (planar, EPSG:27700)

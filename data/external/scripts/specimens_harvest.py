@@ -18,9 +18,9 @@ usage:
   python3 specimens_harvest.py gbif-verbatim HARVEST_DIR KEYFILE [--workers N]
   python3 specimens_harvest.py idigbio-media HARVEST_DIR UUIDFILE [--workers N]
   python3 specimens_harvest.py idigbio-recordsets HARVEST_DIR
-OUTROOT is /data/codex/silurian_plants/raw on deep-server; a harvest lands in OUTROOT/<source>/<UTC stamp>/ with
+OUTROOT is /data/codex/silurian_plants/raw on nectar (the 2026-10-27 harvests are on deep-server, which the Macs cannot reach); a harvest lands in OUTROOT/<source>/<UTC stamp>/ with
 provenance.tsv (URL, query, timestamp, record count, sha256 per page) and queries.tsv (one row per query).
-Remote run: scp the script and scope CSV, then ssh deep-server python3 specimens_harvest.py ...
+Remote run: scp the script and scope CSV, then ssh nectar python3 specimens_harvest.py ...
 """
 import csv
 import datetime

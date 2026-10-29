@@ -46,7 +46,7 @@ This is a judgement, not a measurement. Foster et al. (2017) reach back only to 
 
 ## 3. What was obtained
 
-On `deep-server:/data/codex/silurian_plants/raw/hadcm3l/` (provenance in `PROVENANCE.tsv` there, copied to `hadcm3l_raw_provenance.tsv` here):
+On `deep-server:/data/codex/silurian_plants/raw/hadcm3l/` (not reachable from the Macs since 2026-10-29; §10 re-pulls on `nectar`; provenance in `PROVENANCE.tsv` there, copied to `hadcm3l_raw_provenance.tsv` here):
 
 | File | Bytes | md5 (matches the Zenodo record) | Fetched (UTC) |
 |---|---|---|---|
@@ -193,19 +193,19 @@ Full table: `other_sources.csv` (24 rows: coverage, variables, resolution, licen
 All commands run from `data/external/scripts/`; Python scripts carry inline `uv` metadata.
 
 ```bash
-ssh deep-server 'bash -s' < climate_fetch_hadcm3l.sh          # xlsx and the two zips, md5 checked, provenance logged
-ssh deep-server 'bash -s' < climate_extract_hadcm3l.sh        # slices 12-32, SHA256SUMS
-rsync -a deep-server:/data/codex/silurian_plants/raw/hadcm3l/extracted/scotese_02/ ../local/climate/hadcm3l/scotese_02/
+ssh nectar 'bash -s' < climate_fetch_hadcm3l.sh               # xlsx and the two zips, md5 checked, provenance logged
+ssh nectar 'bash -s' < climate_extract_hadcm3l.sh             # slices 12-32, SHA256SUMS
+rsync -a nectar:/data/codex/silurian_plants/raw/hadcm3l/extracted/scotese_02/ ../local/climate/hadcm3l/scotese_02/
 uv run climate_hadcm3l_info.py EXPERIMENTINFO.xlsx EXPNO.mat ../climate   # experiment info; the PhanDA stage-slice map goes to ../local/climate/ (source states no licence)
 CODES=$(awk -F, '$1=="scotese_02" && $2>=12 && $2<=32 {print $5}' ../climate/hadcm3l_experiment_info.csv | tr '\n' ' ')
-ssh deep-server "bash -s -- $CODES" < climate_fetch_bristol_pdclann.sh
+ssh nectar "bash -s -- $CODES" < climate_fetch_bristol_pdclann.sh
 uv run climate_hadcm3l_tables.py scotese_02                  # slices, land summary, QC
-cp ../local/climate/hadcm3l/PROVENANCE.tsv ../climate/hadcm3l_raw_provenance.tsv   # after rsync of PROVENANCE.tsv from deep-server
+cp ../local/climate/hadcm3l/PROVENANCE.tsv ../climate/hadcm3l_raw_provenance.tsv   # after rsync of PROVENANCE.tsv from nectar
 uv run climate_doi_check.py
 uv run climate_manifest.py
 ```
 
-`EXPNO.mat` is `3_GlobalFiles/PriorInfo/ExpNo.mat` in the PhanDA mirror (`deep-server:/data/paleodata/climate-forcing/phanda/raw/2026-03-09_9f06c0d976/`); `other_sources.csv` was written by hand from the Zenodo, figshare, Crossref and DataCite APIs and the pages linked in it.
+`EXPNO.mat` is `3_GlobalFiles/PriorInfo/ExpNo.mat` in the PhanDA mirror (`nectar:/data/codex/artifacts/eprp-paleodata-backup/latest/climate-forcing/phanda/raw/2026-03-09_9f06c0d976/`, the backup of EPRP's `deep-server` copy); `other_sources.csv` was written by hand from the Zenodo, figshare, Crossref and DataCite APIs and the pages linked in it.
 
 ## 11. Access limits
 

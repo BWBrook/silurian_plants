@@ -1,8 +1,8 @@
 """record_pbdb.py: PBDB plant occurrences in the 485-383 Ma window, their collections and references,
 the card-taxa summary and counts by interval.
 
-Run on deep-server (stdlib only):  ssh deep-server python3 - < record_pbdb.py
-Reads the PBDB global snapshot read-only; writes to OUT (scratch on deep-server). Copy the results
+Run on nectar (stdlib only):  ssh nectar python3 - < record_pbdb.py
+Reads the PBDB global snapshot read-only; writes to OUT (scratch on nectar). Copy the results
 into data/eprp/record/ afterwards. Run record_pbdb.py before record_intervals.py.
 
 Outputs (OUT):
@@ -24,8 +24,8 @@ import sys
 
 csv.field_size_limit(1 << 30)
 
-SNAP = "/data/paleodata/pbdb/global/raw/2026-10-23T0329Z_url/"
-OUT = "/data/codex/silurian_plants-eprp/record/out/"
+SNAP = "/data/codex/artifacts/eprp-paleodata-backup/latest/pbdb/global/raw/2026-10-23T0329Z_url/"
+OUT = "/data/codex/silurian_plants/eprp/record/out/"
 WIN_TOP = 383.0    # Ma, younger edge of the extraction window
 WIN_BASE = 485.0   # Ma, older edge
 

@@ -1,9 +1,9 @@
 """record_extras_asud.py (tranche 2): Australian Silurian-Devonian stratigraphic units from the ASUD WFS snapshot in EPRP's mirror.
 
-Run on deep-server (stdlib only):
-    scp data/eprp/record/pbdb_plant_occurrences.csv data/eprp/record/pbdb_plant_collections.csv deep-server:<IN_DIR>/
-    ssh deep-server python3 - < record_extras_asud.py
-Reads /data/paleodata/asud/raw/2026-10-22T0604Z_wfs/StratigraphicUnit.csv read-only (sha256 checked against the mirror MANIFEST.json),
+Run on nectar (stdlib only):
+    scp data/eprp/record/pbdb_plant_occurrences.csv data/eprp/record/pbdb_plant_collections.csv nectar:<IN_DIR>/
+    ssh nectar python3 - < record_extras_asud.py
+Reads /data/codex/artifacts/eprp-paleodata-backup/latest/asud/raw/2026-10-22T0604Z_wfs/StratigraphicUnit.csv read-only (sha256 checked against the mirror MANIFEST.json),
 tranche 1's plant occurrence and collection tables, and fetches the Geoscience Australia eCat record and the WFS capabilities for the
 licence statement. Writes to /data/codex/silurian_plants/raw/pbdb-extras/asud/<UTC stamp>/ : asud_silurian_devonian_units.csv,
 PROVENANCE.tsv (URL, timestamp, licence, sha256) and the two catalogue files. Copy the table to data/eprp/record/ afterwards.
@@ -22,7 +22,7 @@ import urllib.request
 
 csv.field_size_limit(1 << 30)
 
-ASUD = "/data/paleodata/asud/raw/2026-10-22T0604Z_wfs/"
+ASUD = "/data/codex/artifacts/eprp-paleodata-backup/latest/asud/raw/2026-10-22T0604Z_wfs/"
 STAMP = datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%dT%H%MZ")
 BASE = "/data/codex/silurian_plants/raw/pbdb-extras/"
 IN_DIR = BASE + "input/"
@@ -75,7 +75,7 @@ src_sha = sha256_file(ASUD + "StratigraphicUnit.csv")
 assert src_sha == man["StratigraphicUnit.csv"]["sha256"], "mirror file differs from its manifest"
 prov.append(["StratigraphicUnit.csv", man["StratigraphicUnit.csv"]["url"], "2026-10-22T06:04:38Z (EPRP mirror retrieval)",
              "CC BY 4.0 (WFS AccessConstraints; eCat record)", str(os.path.getsize(ASUD + "StratigraphicUnit.csv")), src_sha,
-             "EPRP mirror deep-server:" + ASUD + "StratigraphicUnit.csv, numberMatched 18357; sha256 equals the mirror manifest"])
+             "EPRP mirror backup nectar:" + ASUD + "StratigraphicUnit.csv, numberMatched 18357; sha256 equals the mirror manifest"])
 with open(OUT + "PROVENANCE.tsv", "w") as f:
     f.write("file\turl\tretrieved_utc\tlicence\tbytes\tsha256\tnote\n")
     for r in prov:

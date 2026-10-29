@@ -1,9 +1,9 @@
 """record_extras_pbdb.py (tranche 2): PBDB specimens, measurements, plant taxa, opinions, references, and Frasnian-Famennian
 anchor occurrences, from the same snapshot as record_pbdb.py (tranche 1).
 
-Run on deep-server (stdlib only):
-    scp data/eprp/record/pbdb_plant_occurrences.csv deep-server:<IN_DIR>/
-    ssh deep-server python3 - < record_extras_pbdb.py
+Run on nectar (stdlib only):
+    scp data/eprp/record/pbdb_plant_occurrences.csv nectar:<IN_DIR>/
+    ssh nectar python3 - < record_extras_pbdb.py
 Reads the PBDB global snapshot read-only and tranche 1's pbdb_plant_occurrences.csv (checked against its manifest sha256);
 writes to OUT under /data/codex/silurian_plants/raw/pbdb-extras/<UTC stamp>/. Copy the tables into data/eprp/record/
 afterwards, then run record_extras_window_subsets.py, which moves the whole-tree taxa and opinions tables to
@@ -36,7 +36,7 @@ import sys
 
 csv.field_size_limit(1 << 30)
 
-SNAP = "/data/paleodata/pbdb/global/raw/2026-10-23T0329Z_url/"
+SNAP = "/data/codex/artifacts/eprp-paleodata-backup/latest/pbdb/global/raw/2026-10-23T0329Z_url/"
 STAMP = datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%dT%H%MZ")
 BASE = "/data/codex/silurian_plants/raw/pbdb-extras/"
 IN_DIR = BASE + "input/"

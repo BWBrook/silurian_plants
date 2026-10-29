@@ -1,7 +1,7 @@
 """record_macrostrat.py: Macrostrat units overlapping 485-383 Ma, with environment class, column
 metadata, and counts and column area by stage.
 
-Run on deep-server:  ssh deep-server python3 - < record_macrostrat.py
+Run on nectar:  ssh nectar python3 - < record_macrostrat.py
 Reads the Macrostrat snapshot read-only; writes macrostrat_units_window.csv and
 macrostrat_summary_by_stage.csv to OUT.
 
@@ -16,8 +16,8 @@ import re
 import sys
 
 csv.field_size_limit(1 << 30)
-SNAP = "/data/paleodata/macrostrat/raw/2026-10-25T0011Z_url/"
-OUT = "/data/codex/silurian_plants-eprp/record/out/"
+SNAP = "/data/codex/artifacts/eprp-paleodata-backup/latest/macrostrat/raw/2026-10-25T0011Z_url/"
+OUT = "/data/codex/silurian_plants/eprp/record/out/"
 WIN_TOP, WIN_BASE = 383.0, 485.0
 EXCLUDE_PROJECTS = {"14", "13"}
 

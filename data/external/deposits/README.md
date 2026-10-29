@@ -2,7 +2,7 @@
 
 Located and mirrored on 2026-10-27 for the evidence base (`docs/sources.md`, rows marked "(EPRP)"). One row per work, with
 status, sizes and paths, is in `deposit_index.csv`; every mirrored file is in `MANIFEST.tsv` with its sha256. Raw copies,
-with the mirroring tool's provenance (URL, retrieval time, provider checksum), are on `deep-server` under
+with the mirroring tool's provenance (URL, retrieval time, provider checksum), are on `deep-server` (not reachable from the Macs; a rebuild re-mirrors on `nectar`) under
 `/data/codex/silurian_plants/raw/deposits/<id>/<UTC stamp>/`.
 
 ## Result
@@ -111,5 +111,5 @@ Inferred, not verified:
 
 - `deposit_index.csv`, `MANIFEST.tsv`, `crossref_check.tsv`, this README.
 - `<id>/` tracked deposit folders (each with `PROVENANCE.json`); `../local/deposits/<id>/` for files not tracked.
-- Scripts in `../scripts/`: `deposits_crossref_check.py`, `deposits_data_mirror.py` (EPRP copy), `deposits_other_repos.py` (EPRP copy), `deposits_mirror_run.sh` (run on deep-server, one item per deposit), `deposits_catalogue.py`, `deposits_build.py`, `deposits_index.py`.
-- Reproduce: `bash deposits_mirror_run.sh <item> ...` on deep-server (needs the two EPRP copies beside it), then `uv run --with openpyxl --with xlrd python3 deposits_build.py`, then `python3 -I deposits_index.py`.
+- Scripts in `../scripts/`: `deposits_crossref_check.py`, `deposits_data_mirror.py` (EPRP copy), `deposits_other_repos.py` (EPRP copy), `deposits_mirror_run.sh` (run on nectar, one item per deposit), `deposits_catalogue.py`, `deposits_build.py`, `deposits_index.py`.
+- Reproduce: `bash deposits_mirror_run.sh <item> ...` on nectar (needs the two EPRP copies beside it), then `uv run --with openpyxl --with xlrd python3 deposits_build.py`, then `python3 -I deposits_index.py`.

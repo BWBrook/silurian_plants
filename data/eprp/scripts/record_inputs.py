@@ -1,7 +1,7 @@
 """record_inputs.py: sha256 of every EPRP mirror file the record_* scripts read, checked against the mirror's own
 manifest where one exists.
 
-Run on deep-server:  ssh deep-server python3 - < record_inputs.py
+Run on nectar:  ssh nectar python3 - < record_inputs.py
 Writes inputs_sha256.tsv to OUT. Files marked 'upstream, not read' are the source workbooks of EPRP's derived FR2
 tables, listed for provenance only.
 """
@@ -11,13 +11,13 @@ import json
 import os
 import sys
 
-OUT = "/data/codex/silurian_plants-eprp/record/out/"
-PBDB = "/data/paleodata/pbdb/global/raw/2026-10-23T0329Z_url/"
-MAC = "/data/paleodata/macrostrat/raw/2026-10-25T0011Z_url/"
-TSM = "/data/paleodata/timescale/macrostrat/raw/2026-10-23T0844Z_url/"
-FR2D = glob.glob("/data/paleodata/classic-compendia/fr2/derived/*/")[0]
-FR2B = glob.glob("/data/paleodata/classic-compendia/fr2/bristol/raw/*/")[0]
-TSD = "/data/paleodata/timescale/derived/2026-10-23T0844Z/"
+OUT = "/data/codex/silurian_plants/eprp/record/out/"
+PBDB = "/data/codex/artifacts/eprp-paleodata-backup/latest/pbdb/global/raw/2026-10-23T0329Z_url/"
+MAC = "/data/codex/artifacts/eprp-paleodata-backup/latest/macrostrat/raw/2026-10-25T0011Z_url/"
+TSM = "/data/codex/artifacts/eprp-paleodata-backup/latest/timescale/macrostrat/raw/2026-10-23T0844Z_url/"
+FR2D = glob.glob("/data/codex/artifacts/eprp-paleodata-backup/latest/classic-compendia/fr2/derived/*/")[0]
+FR2B = glob.glob("/data/codex/artifacts/eprp-paleodata-backup/latest/classic-compendia/fr2/bristol/raw/*/")[0]
+TSD = "/data/codex/artifacts/eprp-paleodata-backup/latest/timescale/derived/2026-10-23T0844Z/"
 
 items = []   # (source, role, path, manifest_dir)
 for f in sorted(glob.glob(PBDB + "occurrences__p*.csv")) + sorted(glob.glob(PBDB + "collections__p*.csv")):

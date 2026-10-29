@@ -6,7 +6,7 @@ rock-record units, and Fossil Record 2 plant families. Window: anything overlapp
 (Ordovician to Middle Devonian, a margin either side of the project interval, 470–393 Ma).
 Extracted 2026-10-26 by a Claude Sonnet 5.5 subagent (`claude-sonnet-5-5`) from EPRP commit `ac42dfb`,
 read-only. Scripts: `../scripts/record_*.py`. Extraction ran on `deep-server`; nothing was written to
-EPRP or `/data/paleodata`.
+EPRP or `/data/paleodata`. A rebuild runs on `nectar` against its backup of the mirror (§11).
 
 Ages are Ma on the sources' own scales. PBDB, Macrostrat and the project's `../../timescale.csv` all
 use ICS v2024/12 (checked: no international interval differs by more than 0.5 Myr, see §4). FR2 uses
@@ -361,7 +361,7 @@ Reading it (observed from the file; the reasons are inferences):
 
 ## 8. Inputs, versions and checksums
 
-All paths on `deep-server`, read-only. `inputs_sha256.tsv` has the sha256 of 57 files: the 51 read and 6
+All paths are in EPRP's mirror on `deep-server`, read-only. `nectar` holds its backup under `/data/codex/artifacts/eprp-paleodata-backup/latest/`, which the scripts now read: a regenerated `inputs_sha256.tsv` carries that prefix in place of `/data/paleodata/`. `inputs_sha256.tsv` has the sha256 of 57 files: the 51 read and 6
 FR2 source workbooks listed for provenance only. All 53 that have a mirror `MANIFEST.json` entry match it (PBDB
 23, Macrostrat 23, timescale 1, FR2 workbooks 6); the 4 EPRP-derived tables (2 timescale, 2 FR2) have none.
 Key files:
@@ -435,13 +435,13 @@ From `data/eprp/scripts/` (each script is stdlib Python and self-contained):
 
 ```sh
 for s in record_pbdb record_intervals record_fr2 record_macrostrat record_inputs; do
-  ssh deep-server python3 - < $s.py
+  ssh nectar python3 - < $s.py
 done
-rsync -a deep-server:/data/codex/silurian_plants-eprp/record/out/ out/
+rsync -a nectar:/data/codex/silurian_plants/eprp/record/out/ out/
 ```
 
 `record_pbdb.py` must run before `record_intervals.py` (it reads the plant occurrence file for interval
-usage). A second run on 2026-10-26 gave byte-identical outputs. Copy `fr2_plant_families.csv` and
+usage). A second run on 2026-10-26 gave byte-identical outputs. On 2026-10-29 all five scripts were re-run on `nectar` against the backup (same snapshot stamps): every table is byte-identical to the committed one (or to its copy in `../local/record/`) except `inputs_sha256.tsv`, which differs only in the path prefix. Copy `fr2_plant_families.csv` and
 `ics2024_chart_values_window.csv` to `data/eprp/local/record/` and the rest to `data/eprp/record/`.
 
 ## Tranche 2 (2026-10-27)
@@ -595,13 +595,13 @@ Snapshot `2026-10-23T0329Z_url` (path as in §8): `specimens.csv` sha256 `767bcc
 From `data/eprp/scripts/` (stdlib Python):
 
 ```sh
-ssh deep-server 'mkdir -p /data/codex/silurian_plants/raw/pbdb-extras/input'
+ssh nectar 'mkdir -p /data/codex/silurian_plants/raw/pbdb-extras/input'
 scp ../record/pbdb_plant_occurrences.csv ../record/pbdb_plant_references.csv ../record/pbdb_plant_collections.csv \
-    deep-server:/data/codex/silurian_plants/raw/pbdb-extras/input/
-ssh deep-server python3 - < record_extras_pbdb.py     # writes <stamp>/ under raw/pbdb-extras/
-ssh deep-server python3 - < record_extras_asud.py     # writes asud/<stamp>/
-rsync -a deep-server:/data/codex/silurian_plants/raw/pbdb-extras/<stamp>/ out/   # copy the CSVs and TSV to ../record/
+    nectar:/data/codex/silurian_plants/raw/pbdb-extras/input/
+ssh nectar python3 - < record_extras_pbdb.py     # writes <stamp>/ under raw/pbdb-extras/
+ssh nectar python3 - < record_extras_asud.py     # writes asud/<stamp>/ (fetches from Geoscience Australia)
+rsync -a nectar:/data/codex/silurian_plants/raw/pbdb-extras/<stamp>/ out/   # copy the CSVs and TSV to ../record/
 python3 record_extras_manifest.py                     # appends the tranche-2 rows to MANIFEST.tsv
 ```
 
-A second run of `record_extras_pbdb.py` gave byte-identical tables (apart from the one column fixed between runs).
+A second run of `record_extras_pbdb.py` gave byte-identical tables (apart from the one column fixed between runs). A run on `nectar` on 2026-10-29 against the backup reproduced every table it writes, byte for byte; `record_extras_asud.py` was not re-run there.

@@ -15,13 +15,15 @@ Status values:
 
 Provenance: `data/eprp/` holds material from Barry's EPRP mirror; `data/external/` holds material
 acquired from outside EPRP. Both came from the EPRP Mac-Mini session. Each area README gives
-filters, licences and caveats; read it before use. Raw pulls before 2026-10-28 are on `deep-server` under
-`/data/codex/silurian_plants/raw/` (4.9 GB). That host has been unreachable over Tailscale since
-2026-10-28. The EPRP mirror on `nectar-vm` is the canonical location for EPRP data files until Barry
-says otherwise (`AGENTS.md`); check individual snapshots before use. New raw pulls go to
-`nectar-vm:/data/codex/silurian_plants/raw/`. The `local/` folders hold 2.5 GB on mac-mini.
+filters, licences and caveats; read it before use. Raw pulls before 2026-10-28 are on `deep` (`deep-server`) under
+`/data/codex/silurian_plants/raw/` (4.9 GB), which the Macs cannot reach. The EPRP mirror backup,
+`nectar:/data/codex/artifacts/eprp-paleodata-backup/latest/<id>/`, is the canonical location for EPRP
+data files until Barry says otherwise (`AGENTS.md`); check individual snapshots before use. The EPRP
+extraction scripts read it directly, and their re-runs on 2026-10-29 reproduced the committed tables.
+New raw pulls and rebuilds go to `nectar:/data/codex/silurian_plants/raw/`. The `local/` folders hold
+2.5 GB on mac-mini.
 
-The private backup workflow targets `nectar-codex-ts:/data/codex/silurian_plants/backups/mac-mini/`
+The private backup workflow targets `nectar:/data/codex/silurian_plants/backups/mac-mini/`
 and includes git-ignored material. See `docs/backup-nectar.md` and the verification receipts before
 relying on a particular generation.
 
@@ -155,7 +157,7 @@ older requests remain parked separately.
 
 Pointers: `data/eprp/pointers/`. TREED code: `data/eprp/context/deposits/`. COPSE variants and the
 GAD code: `data/external/deposits/`. gen3sis, FossilSim, paleobuddy, PyRate and cGENIE are on
-`deep-server`. SCI-FI (SCION with FLORA; Gurung et al. 2024) runs headless in MATLAB on mac-mini (smoke test 2026-10-27; outputs in `deep-server:/data/codex/silurian_plants/runs/scifi-smoke-2026-10-27/`). The Codex CLI (0.164) runs non-interactively here with schema-constrained output,
+`deep-server` (not reachable from the Macs). SCI-FI (SCION with FLORA; Gurung et al. 2024) runs headless in MATLAB on mac-mini (smoke test 2026-10-27; outputs in `deep-server:/data/codex/silurian_plants/runs/scifi-smoke-2026-10-27/`). The Codex CLI (0.164) runs non-interactively here with schema-constrained output,
 which makes it a candidate for bulk extraction (2026-10-27 smoke test).
 
 ## Open items for Barry

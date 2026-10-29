@@ -1,7 +1,7 @@
 """record_fr2.py: plant, algal and fungal families of Benton's Fossil Record 2 (FR2), flagged for the
 485-383 Ma window.
 
-Run on deep-server:  ssh deep-server python3 - < record_fr2.py
+Run on nectar:  ssh nectar python3 - < record_fr2.py
 Reads EPRP's derived FR2 tables (classic-compendia/fr2/derived), which EPRP built from Bristol's chapter
 workbooks. FR2 has no stated licence, so the output belongs in data/eprp/local/record/ (gitignored).
 Writes fr2_plant_families.csv to OUT.
@@ -10,8 +10,8 @@ import csv
 import glob
 import sys
 
-OUT = "/data/codex/silurian_plants-eprp/record/out/"
-D = glob.glob("/data/paleodata/classic-compendia/fr2/derived/*/")[0]
+OUT = "/data/codex/silurian_plants/eprp/record/out/"
+D = glob.glob("/data/codex/artifacts/eprp-paleodata-backup/latest/classic-compendia/fr2/derived/*/")[0]
 KINGDOMS = {"Plantae": "land_plants_fr2_kingdom_Plantae", "Algae": "algae_fr2_kingdom_Algae_flagged",
             "Fungi": "fungi_fr2_kingdom_Fungi_flagged"}
 # FR2 divisions whose names correspond to ICS stages overlapping 485-383 Ma (stage names are the stable

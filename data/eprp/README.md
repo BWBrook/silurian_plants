@@ -11,7 +11,9 @@ until Barry or the project session decides otherwise.
 
 - EPRP repository state: commit `ac42dfb` of `/Users/bwbrook/git/eprp` (read-only checkout,
   updated only by fast-forward).
-- Bulk data: EPRP's mirror on `deep-server:/data/paleodata/<id>/`, filtered there. Each area's
+- Bulk data: EPRP's mirror on `deep-server:/data/paleodata/<id>/`, filtered there. The Macs cannot reach
+  `deep-server`: its backup at `nectar:/data/codex/artifacts/eprp-paleodata-backup/latest/<id>/` is the
+  canonical copy for this project (`AGENTS.md`) and is what the scripts read. Each area's
   README names the snapshot versions and input checksums.
 - `MANIFEST.tsv` lists every delivered file with its source, source version, licence, generating
   script, row count, SHA-256 and extraction date. It is rebuilt and checked against the files on

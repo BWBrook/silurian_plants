@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # Extract the 485-383 Ma slices (ExperimentInfo experiment numbers 012-032, five 20-yr means each)
 # of one PhanDA HadCM3L suite from the verified Zenodo zips, byte-identical, and write sha256 sums.
-# Run ON deep-server:  ssh deep-server 'bash -s' < climate_extract_hadcm3l.sh [experiment]
+# Run ON nectar:  ssh nectar 'bash -s' < climate_extract_hadcm3l.sh [experiment]
 # Default experiment: scotese_02. Output: $RAW/extracted/<experiment>/ and SHA256SUMS in it.
 set -euo pipefail
 

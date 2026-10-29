@@ -180,11 +180,13 @@ without checking the paper.
 
 ## Reproduce
 
-From `data/eprp/scripts/`: `bash library_run.sh` copies `works.tsv` to deep-server, runs `library_features.py` and
+From `data/eprp/scripts/`: `bash library_run.sh` copies `works.tsv` to nectar, runs `library_features.py` and
 `library_candidates.py` there (under ten minutes with 16 workers), pulls `candidates.tsv` and `fts_hits.tsv` into
 `../local/library/work/`, copies the open texts of kept works, and runs `library_assemble.py` and `library_manifest.py`.
 The screen itself is `library_decisions.tsv` plus the rules in `library_assemble.py`; `library_screen_read.txt` lists the
 candidates whose titles were read. A rerun against the same store state gives the same candidate set and the same tables.
+`candidates.tsv` and `fts_hits.tsv` were reproduced byte for byte on 2026-10-29 by running the first two stages on `nectar`
+against its backup of EPRP's mirror.
 
 ## Crossref check (added at integration, 2026-10-27)
 

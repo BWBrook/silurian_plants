@@ -1,6 +1,6 @@
 """rockrecord_fetch.py: fetch the open BGS DiGMapGB-625 bedrock geology download and its catalogue records.
 
-Run on deep-server (stdlib only):  ssh deep-server python3 - < rockrecord_fetch.py
+Run on nectar (stdlib only):  ssh nectar python3 - < rockrecord_fetch.py
 Writes to /data/codex/silurian_plants/raw/bgs/<UTC stamp>/ : the Shapefile and GeoPackage zips, the BGS dataset
 page and the NERC catalogue record (licence and version evidence), and PROVENANCE.tsv (URL, timestamp, licence,
 bytes, sha256). Plain user agent, no credentials: BGS's 'free download' links are tokenised GET links on the

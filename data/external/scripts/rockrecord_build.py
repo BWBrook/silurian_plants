@@ -1,7 +1,7 @@
 """rockrecord_build.py: build the Silurian-Devonian British rock-record tables from the DiGMapGB-625 polygons and the BGS Lexicon.
 
-Run on deep-server after rockrecord_bgs_polygons.py and rockrecord_lexicon.py (stdlib only):
-    ssh deep-server python3 - < rockrecord_build.py
+Run on nectar after rockrecord_bgs_polygons.py and rockrecord_lexicon.py (stdlib only):
+    ssh nectar python3 - < rockrecord_build.py
 Reads <raw stamp>/derived/{bedrock_polygons.csv, lexicon_entries.csv, lexicon_divisions.csv, sd_lex_codes.txt}; writes to
 <raw stamp>/derived/out/ :
   bgs_units_silurian_devonian.csv       one row per LEX code (tracked)

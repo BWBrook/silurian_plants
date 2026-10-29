@@ -1,18 +1,18 @@
 #!/usr/bin/env python3
 """Extract Earth-system context series overlapping 485-383 Ma from EPRP's climate-forcing mirror.
 
-Run on deep-server (stdlib only, read-only on /data/paleodata):
-    ssh -o BatchMode=yes deep-server python3 - < context_climate.py
-Writes to /data/codex/silurian_plants-eprp/context/context/ (redistributable sources) and .../local/context/
+Run on nectar (stdlib only, read-only on the EPRP mirror backup):
+    ssh -o BatchMode=yes nectar python3 - < context_climate.py
+Writes to /data/codex/silurian_plants/eprp/context/context/ (redistributable sources) and .../local/context/
 (sources with no stated licence or no-derivatives terms); copy back with rsync.
-Source: /data/paleodata/climate-forcing (EPRP checkout ac42dfb, catalogue entry climate-forcing).
+Source: /data/codex/artifacts/eprp-paleodata-backup/latest/climate-forcing (EPRP checkout ac42dfb, catalogue entry climate-forcing).
 """
 import csv, hashlib, io, json, math, os, re, sys, unicodedata, zipfile
 import xml.etree.ElementTree as ET
 
-MIRROR = "/data/paleodata/climate-forcing"
-OUT = "/data/codex/silurian_plants-eprp/context/context"
-LOCAL = "/data/codex/silurian_plants-eprp/context/local/context"  # sources with no stated licence or no-derivatives terms
+MIRROR = "/data/codex/artifacts/eprp-paleodata-backup/latest/climate-forcing"
+OUT = "/data/codex/silurian_plants/eprp/context/context"
+LOCAL = "/data/codex/silurian_plants/eprp/context/local/context"  # sources with no stated licence or no-derivatives terms
 LO, HI = 383.0, 485.0  # window, Ma (inclusive)
 os.makedirs(OUT, exist_ok=True)
 os.makedirs(LOCAL, exist_ok=True)

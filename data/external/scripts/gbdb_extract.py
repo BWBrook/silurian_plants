@@ -1,7 +1,7 @@
 """Extract window plant records and sampling-effort tables from the GBDB snapshot (Xu 2020, Zenodo 4245604).
 
-Usage (on deep-server, after gbdb_xlsx2csv.py has written RAW_DIR/csv/):
-  ssh deep-server python3 -I - RAW_DIR OUT_DIR PBDB_OCC_CSV TIMESCALE_CSV < gbdb_extract.py
+Usage (on nectar, after gbdb_xlsx2csv.py has written RAW_DIR/csv/):
+  ssh nectar python3 -I - RAW_DIR OUT_DIR PBDB_OCC_CSV TIMESCALE_CSV < gbdb_extract.py
   RAW_DIR        /data/codex/silurian_plants/raw/gbdb/<UTC stamp>
   OUT_DIR        where the tables are written (copy them to data/external/gbdb/ afterwards)
   PBDB_OCC_CSV   data/eprp/record/pbdb_plant_occurrences.csv (genus lookup for the plant filter)

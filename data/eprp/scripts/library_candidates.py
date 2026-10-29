@@ -14,7 +14,7 @@ Routes (recorded per work in `routes`):
 
 Read-only on the store. stdlib only. Needs features.jsonl from library_features.py.
 
-    python3 library_candidates.py --features features.jsonl --store /data/paleodata/library \
+    python3 library_candidates.py --features features.jsonl --store /data/codex/artifacts/eprp-paleodata-backup/latest/library \
         --out candidates.tsv --fts-out fts_hits.tsv
 """
 import argparse
@@ -209,7 +209,7 @@ def process(w):
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--features", required=True)
-    ap.add_argument("--store", default="/data/paleodata/library")
+    ap.add_argument("--store", default="/data/codex/artifacts/eprp-paleodata-backup/latest/library")
     ap.add_argument("--out", required=True)
     ap.add_argument("--fts-out", required=True)
     ap.add_argument("--limit", type=int, default=400)

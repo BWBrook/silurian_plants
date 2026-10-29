@@ -1,6 +1,6 @@
 """rockrecord_lexicon.py: BGS Lexicon of Named Rock Units entries for the DiGMapGB-625 Silurian-Devonian LEX codes.
 
-Run on deep-server after rockrecord_bgs_polygons.py (stdlib only):  ssh deep-server python3 - < rockrecord_lexicon.py
+Run on nectar after rockrecord_bgs_polygons.py (stdlib only):  ssh nectar python3 - < rockrecord_lexicon.py
 For every LEX code in <raw stamp>/derived/sd_lex_codes.txt, and every ancestor of those codes (and the Old Red Sandstone Supergroup's
 children), fetches
   - the linked-data record  https://data.bgs.ac.uk/id/Lexicon/NamedRockUnit/<code>.json   (JSON-LD: ages, rank, status, lithology

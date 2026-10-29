@@ -1,8 +1,8 @@
 """record_intervals.py: PBDB and Macrostrat interval definitions overlapping 485-383 Ma, mapped to the
 project's stages (data/timescale.csv, ICS v2024/12) and compared with them.
 
-Run on deep-server AFTER record_pbdb.py (it reads that script's plant occurrence file for interval usage):
-    ssh deep-server python3 - < record_intervals.py
+Run on nectar AFTER record_pbdb.py (it reads that script's plant occurrence file for interval usage):
+    ssh nectar python3 - < record_intervals.py
 Reads EPRP's timescale mirror read-only; writes intervals_window.csv and ics2024_chart_values_window.csv to OUT.
 The ICS v2024/12 chart values (printed ages and uncertainties, read from the chart PDFs by EPRP) go to the second
 file, which belongs in data/eprp/local/record/ because EPRP lists the chart PDFs as licence-unclear.
@@ -13,11 +13,11 @@ import json
 import sys
 
 csv.field_size_limit(1 << 30)
-OUT = "/data/codex/silurian_plants-eprp/record/out/"
-TS = "/data/paleodata/timescale/"
-PBDB_INTERVALS = "/data/paleodata/pbdb/global/raw/2026-10-23T0329Z_url/intervals.csv"
+OUT = "/data/codex/silurian_plants/eprp/record/out/"
+TS = "/data/codex/artifacts/eprp-paleodata-backup/latest/timescale/"
+PBDB_INTERVALS = "/data/codex/artifacts/eprp-paleodata-backup/latest/pbdb/global/raw/2026-10-23T0329Z_url/intervals.csv"
 MACROSTRAT_INTERVALS = TS + "macrostrat/raw/2026-10-23T0844Z_url/intervals_all.json"
-MACROSTRAT_INTERVALS_UNITS_SNAPSHOT = "/data/paleodata/macrostrat/raw/2026-10-25T0011Z_url/defs__intervals.json"
+MACROSTRAT_INTERVALS_UNITS_SNAPSHOT = "/data/codex/artifacts/eprp-paleodata-backup/latest/macrostrat/raw/2026-10-25T0011Z_url/defs__intervals.json"
 ICS_PBDB = TS + "derived/2026-10-23T0844Z/ics2024_pbdb_bases.tsv"
 ICS_VERSIONS = TS + "derived/2026-10-23T0844Z/isc_boundaries_by_version.tsv"
 WIN_TOP, WIN_BASE = 383.0, 485.0
