@@ -1,0 +1,25 @@
+{
+  "created": "2026-10-30T10:24:50.069083+11:00",
+  "requested_host": "macbook",
+  "requested_directory": "/Users/bwbrook/input/",
+  "direct_delivery": "not possible: named macbook SSH route timed out from mini while MacBook is on campus; no routes or configuration changed",
+  "local_staging": "/Users/bwbrook/input/silurian-plants-literature-2026-10-30",
+  "nectar_directory": "/data/share/silurian_plants/handoffs/silurian-plants-literature-2026-10-30/",
+  "package_files": 14,
+  "verified_payload_files": 13,
+  "payload_bytes": 1721757,
+  "manifest_sha256": "1d5936d159c70fa594b837e42f854000a8c870267492c33f80f681a31c053eaf",
+  "verification": "All remote payload sizes and SHA256 hashes matched transfer manifest; remote manifest SHA256 matched local",
+  "macbook_pull_commands": [
+    "mkdir -p /Users/bwbrook/input",
+    "rsync -a nectar:/data/share/silurian_plants/handoffs/silurian-plants-literature-2026-10-30 /Users/bwbrook/input/"
+  ],
+  "start_prompt": "/Users/bwbrook/input/silurian-plants-literature-2026-10-30/START-HERE.md",
+  "focal_unresolved": {
+    "tier1": 16,
+    "tier2": 32,
+    "total": 48
+  },
+  "return_path": "nectar:/data/share/silurian_plants/returns/macbook-2026-10-30/",
+  "integration": "MacBook uses additive outcomes and manifest alongside acquired PDFs; mini canonical registers updated only after verified return. Original copied snapshots remain unchanged."
+}
