@@ -95,3 +95,10 @@ transcription. The Hopkins/McBride DOI alias remains unresolved. No scientific
 question or interpretation changed through acquisition; re-reading remains the
 next evidence step. The second-checkpoint audit distinguishes entitlement gaps
 from pending native-save controls.
+
+The desktop-save follow-up subsequently recovered all ten Oxford candidates and
+Edwards 1980/Mark 2011, including five original Mark supplements. These make the
+corresponding Q1/Q2 source readings available. The earlier save blockers are
+resolved; neither the new files nor their technical verification changes a
+scientific interpretation. Use the rendered content of image-only plates rather
+than treating an empty extracted-text page as missing evidence.

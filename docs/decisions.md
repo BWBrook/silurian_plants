@@ -3,6 +3,12 @@
 Dated record of decisions that shape the programme. Newest first. Say who decided, and quote
 Barry exactly (with source) or label a paraphrase.
 
+## 2026-10-29: native-save literature queue completed (Codex execution)
+
+- After Barry returned and unlocked the desktop, Codex recovered all ten Oxford candidates and Edwards 1980/Mark 2011. Mark's five supporting files are also held. The autonomous collection now totals 97 main texts, 46 supporting files and one erratum; 348 CSV rows remain needed.
+- The desktop-save assumption was resolved through loaded-reader and fresh-control checks, not an entitlement change. Parent verification preserved the distinction between image-only plates and native text coverage. The earlier save queue is closed; Pertica requires an explicit JSTOR terms step by Barry, with no waiting tab retained.
+- **Structural review** (Codex): the current CSV/manifest and separate action/request ledgers still serve the next pass. No scientific assumption or question changed; primary-source re-reading remains pending. `docs/audits/2026-10-29-autonomous-native.md` records the final file index, verification and limits.
+
 ## 2026-10-29: autonomous literature expansion, second checkpoint (Codex execution)
 
 - **Authority carried forward**: Barry's exact instruction was “No need to bring me the batch this time: just progress autonomously, basically as far as you can take it.” The existing in-app-first, Chrome fallback and closed-tab/ledger workflow continues.

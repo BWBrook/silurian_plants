@@ -7,9 +7,9 @@ provenance have been verified. A failed route does not establish that no copy ex
 
 ## Active access actions
 
-The two earlier route-level actions remain, with the native-save group and Pertica
-route added below. No tabs are held open. Reopen when Barry is available. Liu 2016
-remains resolved.
+Three route-level actions remain: the two earlier cases and Pertica's explicit
+JSTOR terms step below. The native-save group was recovered after Barry unlocked
+the desktop. No tabs are held open. Liu 2016 remains resolved.
 
 | Work | Observed blocker | Reopen route |
 |---|---|---|
@@ -18,33 +18,33 @@ remains resolved.
 
 The detailed autonomous audit records resolved reader/save failures and version qualifications. The metadata-only Mahmoudi DOI check remains unresolved; it does not require Barry to obtain the already-held paper.
 
-### Native PDF save controls — desktop unlock needed
-
-The Mac locked again during the second checkpoint. Chrome's native controls could
-not be operated; the in-app PDF routes did not produce saved files. No file is
-claimed for the following items. Unlock the desktop, then reopen these routes:
-
-- Shute 1989 (`shute1989`): [Oxford article](https://academic-oup-com.ezproxy.utas.edu.au/botlinnean/article/100/2/111/2665856). The 27-page PDF loaded previously; the fresh in-app link also reached the PDF delivery URL.
-- Fanning 1992 (`fanning1992`): [Oxford article](https://academic-oup-com.ezproxy.utas.edu.au/botlinnean/article/109/2/161/2632381). Article identity verified; PDF transition/save remains incomplete.
-- Edwards 1980 (`edwards1980`): [ScienceDirect article](https://www-sciencedirect-com.ezproxy.utas.edu.au/science/article/pii/0034666780900573). Full text access and View PDF were visible; downloadMedia did not create a file.
-- Mark 2011 (`mark2011`): [ScienceDirect article](https://www-sciencedirect-com.ezproxy.utas.edu.au/science/article/pii/S0016703710005934). Full text access was visible; no native save attempted while locked.
-
-These are save/transition follow-ups, not established entitlement failures. The
-other eight Oxford candidates are metadata-identified and unattempted in this pass.
-
 ### Kasper & Andrews 1972 — Pertica
 
 `kasper1972`, DOI 10.1002/j.1537-2197.1972.tb10165.x. Wiley's UTAS PDF route returned
 access/purchase options. The exact alternative [JSTOR record through UTAS](https://www-jstor-org.ezproxy.utas.edu.au/stable/2441116)
-was verified against title, authors and pages 897–911, but its reader/download menu
-did not render usable controls in-app. Revisit in Chrome with the desktop unlocked.
-No terms were accepted, request submitted or purchase made.
+was verified against title, authors and pages 897–911. The in-app reader/download
+menu was incomplete, but the subsequent Chrome route confirmed **Access provided
+by The University of Tasmania** and a working Download control. Download opens an
+explicit **Terms and Conditions** dialog with **Accept and download**. Barry needs
+to take that final step himself. Codex cancelled the dialog and closed the tab;
+reopen this exact page when convenient. No terms were accepted, request submitted
+or purchase made.
 
 The ten earlier request candidates and subsequent archive-access candidates are recorded in
 [`docs/literature-requests.md`](literature-requests.md), separately from this fresh
 access action. No request has been submitted.
 
 ## Resolved through diagnosis and follow-up
+
+### Native-save follow-up — all twelve recovered 2026-10-29
+
+After Barry returned and unlocked the desktop, Shute 1989, Fanning 1992,
+Edwards 1980 and Mark 2011 were recovered, together with all eight other Oxford
+candidates. Mark's five supporting files are held too. Identity, extent, hashes,
+PDF integrity and representative rendered pages were checked; Edwards 1980's
+three text-free/near-text-free pages were explicitly confirmed as legible plates
+and a reconstruction. These cases are resolved, not remaining access actions.
+See `docs/audits/2026-10-29-autonomous-native.md` and `library/closed.tsv`.
 
 ### Regional-spore batch — recovered autonomously 2026-10-29
 

@@ -1,0 +1,36 @@
+# Autonomous literature expansion: native-save follow-up, 29 October 2026
+
+After Barry returned and unlocked the desktop, Codex recovered **all ten Oxford candidates plus Edwards 1980 and Mark 2011**. Mark's five original supporting files (two JPEG tables and three isotope-data TXT files) are also held. This follow-up adds 12 main texts and five supporting files, bringing the autonomous total to **97 main texts, 46 supporting files and one erratum** (144 assets). The 492-row CSV now has 348 needed, 111 local-copy-held and 33 open-copy-held rows.
+
+Files are in git-ignored `library/closed/`. The manifest is `library/closed.tsv`; the self-contained receipt is `work/codex/literature/2026-10-29-autonomous-native.json`. This follow-up supersedes the native-save pending status in the second-checkpoint audit and ledger. No source interpretation, occurrence record, model or card was changed.
+
+## Verification and workflow diagnosis
+
+All 12 main files have matching primary titles, authors, DOI identities and printed page extents. Parent checks recalculated bytes/SHA-256, qpdf status and per-page text counts; a bounded gpt-5.6-luna delegate inspected rendered article/end pages and identity. Figure-heavy pages are explicitly distinguished from sparse extraction caused by image-only scans. The DOI for Edwards's cuticle paper contains 1982, while the correct issue year is 1986. Publication identity follows the primary text and metadata, not the DOI year string.
+
+Chrome's native Save works once the PDF is fully loaded and the Download control has hydrated. A first click can have no effect; inspecting fresh state before a second click resolved these cases. Save panels were checked for the current PDF identity and archive destination. One stale filename was caught by the OS replacement warning and cancelled before overwriting; the existing Fanning file's checksum remained unchanged. Subsequent explicit record state and save-name checks prevented recurrence. Direct saves created no Downloads duplicates for the twelve main files. Temporary CDN tokens were omitted from provenance; stable article/DOI routes and delivered file hashes are retained.
+
+Mark's Appendix A exposes EA1/EA2 as JPEG tables and EA3–EA5 as raw isotope-data text files. EA1 was delivered through the browser; the remaining public CDN downloads succeeded without proxy cookies or credentials after browser download-event timeouts. JPEGs decoded and were visually inspected; TXT files were checked as non-HTML tabular data, without scientific transcription or execution. All five remain separate assets. The supporting-file receipt records exact publisher/proxy URLs and HTTP results.
+
+## Remaining blockers and structure
+
+Pertica's alternative JSTOR route works in Chrome and confirms UTAS access, but Download presents an explicit Terms and Conditions dialog with **Accept and download**. Codex cancelled it and closed the tab, leaving this precise Barry action in the ledger. The Breuer ResearchGate security check and Bulls Head JSTOR verification cases remain. The original ten parked requests were not retried; later archive-gap candidates remain qualified route results, with public alternatives still possible. No terms acceptance, request, purchase, outside message or access-control bypass occurred.
+
+The existing CSV, asset manifest and separate action/request ledgers remain sufficient. This tranche resolved the desktop-save assumption without altering scientific questions. The highest-value remaining work is the three action-ledger routes, then targeted public-copy searches for old backfiles. No background monitoring or dispatch was created.
+
+## Main-text index
+
+| CSV ID | File under `library/closed/` | PDF pages |
+|---|---|---:|
+| al1983 | al1983_oup.pdf | 18 |
+| edwards1986 | edwards1986_oup.pdf | 17 |
+| liedwards1995 | liedwards1995_oup.pdf | 30 |
+| fanning1992 | fanning1992_oup.pdf | 28 |
+| shute1989 | shute1989_oup.pdf | 27 |
+| edwards2004 | edwards2004_oup.pdf | 15 |
+| edwards1988 | edwards1988_oup.pdf | 15 |
+| al2012b | al2012b_oup.pdf | 29 |
+| niklas1985 | niklas1985_oup.pdf | 13 |
+| al2012e | al2012e_oup.pdf | 27 |
+| edwards1980 | edwards1980_elsevier.pdf | 12 |
+| mark2011 | mark2011_elsevier.pdf | 15 |

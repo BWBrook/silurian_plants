@@ -1,0 +1,2148 @@
+{
+  "date": "2026-10-29",
+  "scope": "Native PDF follow-up after Barry returned and unlocked the desktop; same autonomous literature authority",
+  "assets": [
+    {
+      "id": "al1983",
+      "doi": "10.1111/j.1095-8339.1983.tb00715.x",
+      "source_url": "https://academic-oup-com.ezproxy.utas.edu.au/botlinnean/article-lookup/doi/10.1111/j.1095-8339.1983.tb00715.x",
+      "file": "library/closed/al1983_oup.pdf",
+      "method": "Chrome native Save of visibly loaded Oxford publisher PDF via UTAS; source article and PDF link inspected; direct save into private archive. Temporary CDN query tokens omitted.",
+      "metadata": {
+        "ids": [
+          "al1983"
+        ],
+        "priorities": [
+          3
+        ],
+        "csv_citations": [
+          "EDWARDS et al. (1983). A late Wenlock flora from Co. Tipperary, Ireland. Botanical Journal of the Linnean Society"
+        ],
+        "doi": "10.1111/j.1095-8339.1983.tb00715.x",
+        "title": "A late Wenlock flora from Co. Tipperary, Ireland",
+        "authors": [
+          {
+            "given": "D.",
+            "family": "EDWARDS"
+          },
+          {
+            "given": "J.",
+            "family": "FEEHAN"
+          },
+          {
+            "given": "D. G.",
+            "family": "SMITH"
+          }
+        ],
+        "journal": "Botanical Journal of the Linnean Society",
+        "volume": "86",
+        "issue": "1-2",
+        "pages": "19-36",
+        "issued": "1983-01",
+        "published_print": "1983-01",
+        "published_online": "2008-06-28",
+        "publisher_resource_url": "https://academic.oup.com/botlinnean/article-lookup/doi/10.1111/j.1095-8339.1983.tb00715.x",
+        "publisher_links": [
+          {
+            "url": "http://api.wiley.com/onlinelibrary/tdm/v1/articles/10.1111%2Fj.1095-8339.1983.tb00715.x",
+            "content_version": "vor",
+            "intended_application": "text-mining"
+          },
+          {
+            "url": "http://academic.oup.com/botlinnean/article-pdf/86/1-2/19/14083371/j.1095-8339.1983.tb00715.x.pdf",
+            "content_version": "vor",
+            "intended_application": "similarity-checking"
+          }
+        ],
+        "doi_url": "https://doi.org/10.1111/j.1095-8339.1983.tb00715.x",
+        "local_file_csv": [
+          null
+        ],
+        "bibliographic_register_matches": [
+          "/Users/bwbrook/papers/silurian_plants/data/external/library/fetch_results.tsv",
+          "/Users/bwbrook/papers/silurian_plants/data/external/library/works.tsv",
+          "/Users/bwbrook/papers/silurian_plants/data/external/library/cited_dois_resolution.tsv",
+          "/Users/bwbrook/papers/silurian_plants/data/external/library/cited_identity_check.tsv",
+          "/Users/bwbrook/papers/silurian_plants/data/external/library/closed_candidates.csv"
+        ],
+        "held_fulltext_register_matches": []
+      },
+      "asset_kind": "main",
+      "citation": "EDWARDS D, FEEHAN J, SMITH DG, (1983). A late Wenlock flora from Co. Tipperary, Ireland. Botanical Journal of the Linnean Society 86: 19-36",
+      "version": "Publisher PDF as delivered through UTAS",
+      "bytes": 1629429,
+      "sha256": "dbb16028f73adb3f72411c0b56c02c6b3f47e328b9c3249212819855f2c7a126",
+      "pages": 18,
+      "page_text_characters": [
+        2200,
+        3494,
+        3376,
+        795,
+        3939,
+        638,
+        3825,
+        1064,
+        3503,
+        3289,
+        1385,
+        3730,
+        2309,
+        3662,
+        3713,
+        3681,
+        4485,
+        3763
+      ],
+      "qpdf_status": 0,
+      "qpdf_output": "checking library/closed/al1983_oup.pdf\nPDF Version: 1.3\nFile is not encrypted\nFile is not linearized\nNo syntax or stream encoding errors found; the file may still contain\nerrors that qpdf cannot detect\n",
+      "qa": {
+        "doi": "10.1111/j.1095-8339.1983.tb00715.x",
+        "title": "A late Wenlock flora from Co. Tipperary, Ireland",
+        "pages": 18,
+        "printed": "19–36",
+        "path": "library/closed/al1983_oup.pdf",
+        "bytes": 1629429,
+        "sha256": "dbb16028f73adb3f72411c0b56c02c6b3f47e328b9c3249212819855f2c7a126",
+        "extracted_page_count": 18,
+        "page_text_bytes": [
+          2203,
+          3497,
+          3380,
+          798,
+          3942,
+          641,
+          3830,
+          1067,
+          3506,
+          3292,
+          1388,
+          3735,
+          2312,
+          3665,
+          3726,
+          3684,
+          4488,
+          3776
+        ],
+        "all_pages_nonempty": true,
+        "pages_over_200_bytes": 18,
+        "qpdf": "pass: no syntax or stream encoding errors",
+        "renders": [
+          "/private/tmp/autonomous-qa/oup-wave3/al1983-article-02.jpg",
+          "/private/tmp/autonomous-qa/oup-wave3/al1983-last-18.jpg"
+        ]
+      }
+    },
+    {
+      "id": "edwards1986",
+      "doi": "10.1111/j.1095-8339.1982.tb01025.x",
+      "source_url": "https://academic-oup-com.ezproxy.utas.edu.au/botlinnean/article-lookup/doi/10.1111/j.1095-8339.1982.tb01025.x",
+      "file": "library/closed/edwards1986_oup.pdf",
+      "method": "Chrome native Save of visibly loaded Oxford publisher PDF via UTAS; source article and PDF link inspected; direct save into private archive. Temporary CDN query tokens omitted.",
+      "metadata": {
+        "ids": [
+          "edwards1986"
+        ],
+        "priorities": [
+          3
+        ],
+        "csv_citations": [
+          "Edwards (1986). Dispersed cuticles of putative non-vascular plants from the Lower Devonian of Britain. Botanical Journal of the Linnean Society"
+        ],
+        "doi": "10.1111/j.1095-8339.1982.tb01025.x",
+        "title": "Dispersed cuticles of putative non-vascular plants from the Lower Devonian of Britain",
+        "authors": [
+          {
+            "given": "DIANNE",
+            "family": "EDWARDS"
+          }
+        ],
+        "journal": "Botanical Journal of the Linnean Society",
+        "volume": "93",
+        "issue": "3",
+        "pages": "259-275",
+        "issued": "1986-10",
+        "published_print": "1986-10",
+        "published_online": "2008-05-13",
+        "publisher_resource_url": "https://academic.oup.com/botlinnean/article-lookup/doi/10.1111/j.1095-8339.1982.tb01025.x",
+        "publisher_links": [
+          {
+            "url": "http://api.wiley.com/onlinelibrary/tdm/v1/articles/10.1111%2Fj.1095-8339.1982.tb01025.x",
+            "content_version": "vor",
+            "intended_application": "text-mining"
+          },
+          {
+            "url": "http://academic.oup.com/botlinnean/article-pdf/93/3/259/14083940/j.1095-8339.1982.tb01025.x.pdf",
+            "content_version": "vor",
+            "intended_application": "similarity-checking"
+          }
+        ],
+        "doi_url": "https://doi.org/10.1111/j.1095-8339.1982.tb01025.x",
+        "local_file_csv": [
+          null
+        ],
+        "bibliographic_register_matches": [
+          "/Users/bwbrook/papers/silurian_plants/data/external/library/fetch_results.tsv",
+          "/Users/bwbrook/papers/silurian_plants/data/external/library/works.tsv",
+          "/Users/bwbrook/papers/silurian_plants/data/external/library/cited_dois_resolution.tsv",
+          "/Users/bwbrook/papers/silurian_plants/data/external/library/cited_identity_check.tsv",
+          "/Users/bwbrook/papers/silurian_plants/data/external/library/closed_candidates.csv"
+        ],
+        "held_fulltext_register_matches": []
+      },
+      "asset_kind": "main",
+      "citation": "EDWARDS D, (1986). Dispersed cuticles of putative non-vascular plants from the Lower Devonian of Britain. Botanical Journal of the Linnean Society 93: 259-275",
+      "version": "Publisher PDF as delivered through UTAS",
+      "bytes": 4675483,
+      "sha256": "0439de19e7a15fe157ef0526ebd8d6940a61ab3058e1c4f63975fd9093a09639",
+      "pages": 17,
+      "page_text_characters": [
+        2439,
+        3443,
+        2761,
+        142,
+        3614,
+        142,
+        3575,
+        143,
+        3542,
+        143,
+        4312,
+        3192,
+        1138,
+        3644,
+        3687,
+        4085,
+        986
+      ],
+      "qpdf_status": 0,
+      "qpdf_output": "checking library/closed/edwards1986_oup.pdf\nPDF Version: 1.6\nFile is not encrypted\nFile is not linearized\nNo syntax or stream encoding errors found; the file may still contain\nerrors that qpdf cannot detect\n",
+      "qa": {
+        "doi": "10.1111/j.1095-8339.1982.tb01025.x",
+        "title": "Dispersed cuticles of putative nonvascular plants from the Lower Devonian of Britain",
+        "pages": 17,
+        "printed": "259–275",
+        "path": "library/closed/edwards1986_oup.pdf",
+        "bytes": 4675483,
+        "sha256": "0439de19e7a15fe157ef0526ebd8d6940a61ab3058e1c4f63975fd9093a09639",
+        "extracted_page_count": 17,
+        "page_text_bytes": [
+          2449,
+          3446,
+          2764,
+          145,
+          3617,
+          145,
+          3578,
+          146,
+          3545,
+          146,
+          4315,
+          3195,
+          1141,
+          3647,
+          3696,
+          4092,
+          991
+        ],
+        "all_pages_nonempty": true,
+        "pages_over_200_bytes": 13,
+        "qpdf": "pass: no syntax or stream encoding errors",
+        "renders": [
+          "/private/tmp/autonomous-qa/oup-wave3/edwards1986-article-02.jpg",
+          "/private/tmp/autonomous-qa/oup-wave3/edwards1986-last-17.jpg"
+        ]
+      }
+    },
+    {
+      "id": "liedwards1995",
+      "doi": "10.1111/j.1095-8339.1995.tb00468.x",
+      "source_url": "https://academic-oup-com.ezproxy.utas.edu.au/botlinnean/article-lookup/doi/10.1111/j.1095-8339.1995.tb00468.x",
+      "file": "library/closed/liedwards1995_oup.pdf",
+      "method": "Chrome native Save of visibly loaded Oxford publisher PDF via UTAS; source article and PDF link inspected; direct save into private archive. Temporary CDN query tokens omitted.",
+      "metadata": {
+        "ids": [
+          "liedwards1995"
+        ],
+        "priorities": [
+          2
+        ],
+        "csv_citations": [
+          "Li C-S, Edwards D (1995). A re-investigation of Halle's Drepanophycus spinaeformis Göpp. from the Lower Devonian of Yunnan Province, southern China. Botanical Journal of the Linnean Society 118: 163-192"
+        ],
+        "doi": "10.1111/j.1095-8339.1995.tb00468.x",
+        "title": "A re-investigation of Halle's Drepanophycus spinaeformis Göpp. from the Lower Devonian of Yunnan Province, southern China",
+        "authors": [
+          {
+            "given": "LI",
+            "family": "CHENG-SEN"
+          },
+          {
+            "given": "D.",
+            "family": "EDWARDS"
+          }
+        ],
+        "journal": "Botanical Journal of the Linnean Society",
+        "volume": "118",
+        "issue": "3",
+        "pages": "163-192",
+        "issued": "1995-07",
+        "published_print": "1995-07",
+        "published_online": "2008-06-28",
+        "publisher_resource_url": "https://academic.oup.com/botlinnean/article-lookup/doi/10.1111/j.1095-8339.1995.tb00468.x",
+        "publisher_links": [
+          {
+            "url": "https://api.wiley.com/onlinelibrary/tdm/v1/articles/10.1111%2Fj.1095-8339.1995.tb00468.x",
+            "content_version": "vor",
+            "intended_application": "text-mining"
+          },
+          {
+            "url": "http://academic.oup.com/botlinnean/article-pdf/118/3/163/14079221/j.1095-8339.1995.tb00468.x.pdf",
+            "content_version": "vor",
+            "intended_application": "similarity-checking"
+          }
+        ],
+        "doi_url": "https://doi.org/10.1111/j.1095-8339.1995.tb00468.x",
+        "local_file_csv": [
+          null
+        ],
+        "bibliographic_register_matches": [
+          "/Users/bwbrook/papers/silurian_plants/data/external/library/fetch_results.tsv",
+          "/Users/bwbrook/papers/silurian_plants/data/external/library/works.tsv",
+          "/Users/bwbrook/papers/silurian_plants/data/external/library/cited_dois_resolution.tsv",
+          "/Users/bwbrook/papers/silurian_plants/data/external/library/cited_identity_check.tsv",
+          "/Users/bwbrook/papers/silurian_plants/data/external/library/closed_candidates.csv"
+        ],
+        "held_fulltext_register_matches": []
+      },
+      "asset_kind": "main",
+      "citation": "CHENG-SEN L, EDWARDS D, (1995). A re-investigation of Halle's Drepanophycus spinaeformis Göpp. from the Lower Devonian of Yunnan Province, southern China. Botanical Journal of the Linnean Society 118: 163-192",
+      "version": "Publisher PDF as delivered through UTAS",
+      "bytes": 3193429,
+      "sha256": "d693f912fd341d6193a08901850f75ffecb06a9def098268e51c0cc9601ae5ab",
+      "pages": 30,
+      "page_text_characters": [
+        2718,
+        3207,
+        1353,
+        3584,
+        168,
+        160,
+        3853,
+        160,
+        3765,
+        159,
+        3890,
+        160,
+        2610,
+        1091,
+        822,
+        160,
+        3603,
+        159,
+        3911,
+        836,
+        1166,
+        2299,
+        3761,
+        3565,
+        3657,
+        3804,
+        3521,
+        2934,
+        4561,
+        4306
+      ],
+      "qpdf_status": 0,
+      "qpdf_output": "checking library/closed/liedwards1995_oup.pdf\nPDF Version: 1.4\nFile is not encrypted\nFile is not linearized\nNo syntax or stream encoding errors found; the file may still contain\nerrors that qpdf cannot detect\n",
+      "qa": {
+        "doi": "10.1111/j.1095-8339.1995.tb00468.x",
+        "title": "A re-investigation of Halle’s Drepanophycus spinaeformis Göpp. from the Lower Devonian of Yunnan Province, southern China",
+        "pages": 30,
+        "printed": "163–192",
+        "path": "library/closed/liedwards1995_oup.pdf",
+        "bytes": 3193429,
+        "sha256": "d693f912fd341d6193a08901850f75ffecb06a9def098268e51c0cc9601ae5ab",
+        "extracted_page_count": 30,
+        "page_text_bytes": [
+          2723,
+          3218,
+          1356,
+          3587,
+          171,
+          163,
+          3856,
+          163,
+          3768,
+          162,
+          3901,
+          163,
+          2613,
+          1094,
+          825,
+          163,
+          3608,
+          162,
+          3918,
+          839,
+          1169,
+          2312,
+          3792,
+          3580,
+          3666,
+          3821,
+          3528,
+          2937,
+          4572,
+          4309
+        ],
+        "all_pages_nonempty": true,
+        "pages_over_200_bytes": 23,
+        "qpdf": "pass: no syntax or stream encoding errors",
+        "renders": [
+          "/private/tmp/autonomous-qa/oup-wave3/liedwards1995-article-02.jpg",
+          "/private/tmp/autonomous-qa/oup-wave3/liedwards1995-last-30.jpg"
+        ]
+      }
+    },
+    {
+      "id": "fanning1992",
+      "doi": "10.1111/j.1095-8339.1992.tb00264.x",
+      "source_url": "https://academic-oup-com.ezproxy.utas.edu.au/botlinnean/article-lookup/doi/10.1111/j.1095-8339.1992.tb00264.x",
+      "file": "library/closed/fanning1992_oup.pdf",
+      "method": "Chrome native Save of visibly loaded Oxford publisher PDF via UTAS; source article and PDF link inspected; direct save into private archive. Temporary CDN query tokens omitted.",
+      "metadata": {
+        "ids": [
+          "fanning1992"
+        ],
+        "priorities": [
+          2
+        ],
+        "csv_citations": [
+          "Fanning U, Edwards D, Richardson JB (1992). A diverse assemblage of early land plants from the Lower Devonian of the Welsh Borderland. Botanical Journal of the Linnean Society 109: 161-188"
+        ],
+        "doi": "10.1111/j.1095-8339.1992.tb00264.x",
+        "title": "A diverse assemblage of early land plants from the Lower Devonian of the Welsh Borderland",
+        "authors": [
+          {
+            "given": "U.",
+            "family": "FANNING"
+          },
+          {
+            "given": "D.",
+            "family": "EDWARDS"
+          },
+          {
+            "given": "J. B.",
+            "family": "RICHARDSON"
+          }
+        ],
+        "journal": "Botanical Journal of the Linnean Society",
+        "volume": "109",
+        "issue": "2",
+        "pages": "161-188",
+        "issued": "1992-06",
+        "published_print": "1992-06",
+        "published_online": "2008-06-28",
+        "publisher_resource_url": "https://academic.oup.com/botlinnean/article-lookup/doi/10.1111/j.1095-8339.1992.tb00264.x",
+        "publisher_links": [
+          {
+            "url": "https://api.wiley.com/onlinelibrary/tdm/v1/articles/10.1111%2Fj.1095-8339.1992.tb00264.x",
+            "content_version": "vor",
+            "intended_application": "text-mining"
+          },
+          {
+            "url": "http://academic.oup.com/botlinnean/article-pdf/109/2/161/14078433/j.1095-8339.1992.tb00264.x.pdf",
+            "content_version": "vor",
+            "intended_application": "similarity-checking"
+          }
+        ],
+        "doi_url": "https://doi.org/10.1111/j.1095-8339.1992.tb00264.x",
+        "local_file_csv": [
+          null
+        ],
+        "bibliographic_register_matches": [
+          "/Users/bwbrook/papers/silurian_plants/data/external/library/fetch_results.tsv",
+          "/Users/bwbrook/papers/silurian_plants/data/external/library/works.tsv",
+          "/Users/bwbrook/papers/silurian_plants/data/external/library/cited_dois_resolution.tsv",
+          "/Users/bwbrook/papers/silurian_plants/data/external/library/cited_identity_check.tsv",
+          "/Users/bwbrook/papers/silurian_plants/data/external/library/closed_candidates.csv"
+        ],
+        "held_fulltext_register_matches": []
+      },
+      "asset_kind": "main",
+      "citation": "FANNING U, EDWARDS D, RICHARDSON JB, (1992). A diverse assemblage of early land plants from the Lower Devonian of the Welsh Borderland. Botanical Journal of the Linnean Society 109: 161-188",
+      "version": "Publisher PDF as delivered through UTAS",
+      "bytes": 2150793,
+      "sha256": "91220211a532718447463bb1ee9319801d7bf995af68a3fa7038500be7069fb5",
+      "pages": 28,
+      "page_text_characters": [
+        2947,
+        3415,
+        3213,
+        2171,
+        3433,
+        127,
+        4402,
+        3379,
+        3362,
+        127,
+        3951,
+        2038,
+        3402,
+        3077,
+        1898,
+        730,
+        3363,
+        3588,
+        3777,
+        2882,
+        2306,
+        3016,
+        3515,
+        1341,
+        3609,
+        2148,
+        2138,
+        5249
+      ],
+      "qpdf_status": 0,
+      "qpdf_output": "checking library/closed/fanning1992_oup.pdf\nPDF Version: 1.4\nFile is not encrypted\nFile is not linearized\nNo syntax or stream encoding errors found; the file may still contain\nerrors that qpdf cannot detect\n",
+      "qa": {
+        "doi": "10.1111/j.1095-8339.1992.tb00264.x",
+        "title": "A diverse assemblage of early land plants from the Lower Devonian of the Welsh Borderland",
+        "pages": 28,
+        "printed": "161–188",
+        "path": "library/closed/fanning1992_oup.pdf",
+        "bytes": 2150793,
+        "sha256": "91220211a532718447463bb1ee9319801d7bf995af68a3fa7038500be7069fb5",
+        "extracted_page_count": 28,
+        "page_text_bytes": [
+          2956,
+          3420,
+          3218,
+          2174,
+          3436,
+          130,
+          4411,
+          3382,
+          3365,
+          130,
+          3954,
+          2049,
+          3407,
+          3080,
+          1901,
+          733,
+          3367,
+          3591,
+          3780,
+          2885,
+          2309,
+          3020,
+          3518,
+          1344,
+          3612,
+          2151,
+          2141,
+          5252
+        ],
+        "pages_over_200_bytes": 26,
+        "all_pages_nonempty": true,
+        "qpdf": "pass: no syntax or stream encoding errors",
+        "renders": [
+          "/private/tmp/autonomous-qa/oup-wave3/fanning1992-firstarticle-02.jpg",
+          "/private/tmp/autonomous-qa/oup-wave3/fanning1992-last-28.jpg"
+        ]
+      }
+    },
+    {
+      "id": "shute1989",
+      "doi": "10.1111/j.1095-8339.1989.tb01713.x",
+      "source_url": "https://academic-oup-com.ezproxy.utas.edu.au/botlinnean/article-lookup/doi/10.1111/j.1095-8339.1989.tb01713.x",
+      "file": "library/closed/shute1989_oup.pdf",
+      "method": "Chrome native Save of visibly loaded Oxford publisher PDF via UTAS; source article and PDF link inspected; direct save into private archive. Temporary CDN query tokens omitted.",
+      "metadata": {
+        "ids": [
+          "shute1989"
+        ],
+        "priorities": [
+          2
+        ],
+        "csv_citations": [
+          "SHUTE CH, EDWARDS D (1989). A new rhyniopsid with novel sporangium organization from the Lower Devonian of South Wales. Botanical Journal of the Linnean Society 100: 111-137"
+        ],
+        "doi": "10.1111/j.1095-8339.1989.tb01713.x",
+        "title": "A new rhyniopsid with novel sporangium organization from the Lower Devonian of South Wales",
+        "authors": [
+          {
+            "given": "C. H.",
+            "family": "SHUTE"
+          },
+          {
+            "given": "D.",
+            "family": "EDWARDS"
+          }
+        ],
+        "journal": "Botanical Journal of the Linnean Society",
+        "volume": "100",
+        "issue": "2",
+        "pages": "111-137",
+        "issued": "1989-06",
+        "published_print": "1989-06",
+        "published_online": "2008-06-28",
+        "publisher_resource_url": "https://academic.oup.com/botlinnean/article-lookup/doi/10.1111/j.1095-8339.1989.tb01713.x",
+        "publisher_links": [
+          {
+            "url": "http://api.wiley.com/onlinelibrary/tdm/v1/articles/10.1111%2Fj.1095-8339.1989.tb01713.x",
+            "content_version": "vor",
+            "intended_application": "text-mining"
+          },
+          {
+            "url": "http://academic.oup.com/botlinnean/article-pdf/100/2/111/14078035/j.1095-8339.1989.tb01713.x.pdf",
+            "content_version": "vor",
+            "intended_application": "similarity-checking"
+          }
+        ],
+        "doi_url": "https://doi.org/10.1111/j.1095-8339.1989.tb01713.x",
+        "local_file_csv": [
+          null
+        ],
+        "bibliographic_register_matches": [
+          "/Users/bwbrook/papers/silurian_plants/data/external/library/works.tsv"
+        ],
+        "held_fulltext_register_matches": []
+      },
+      "asset_kind": "main",
+      "citation": "SHUTE CH, EDWARDS D, (1989). A new rhyniopsid with novel sporangium organization from the Lower Devonian of South Wales. Botanical Journal of the Linnean Society 100: 111-137",
+      "version": "Publisher PDF as delivered through UTAS",
+      "bytes": 2387533,
+      "sha256": "ec8dfcc1672e33f16aea938ff572313a9c6dfd05290b9bd2c3c630d184a7be0f",
+      "pages": 27,
+      "page_text_characters": [
+        2552,
+        3531,
+        3485,
+        159,
+        3245,
+        160,
+        3524,
+        3858,
+        2020,
+        159,
+        3927,
+        158,
+        3992,
+        159,
+        2291,
+        160,
+        3863,
+        159,
+        3130,
+        2452,
+        3645,
+        3885,
+        3869,
+        3741,
+        2019,
+        4424,
+        4142
+      ],
+      "qpdf_status": 0,
+      "qpdf_output": "checking library/closed/shute1989_oup.pdf\nPDF Version: 1.6\nFile is not encrypted\nFile is not linearized\nNo syntax or stream encoding errors found; the file may still contain\nerrors that qpdf cannot detect\n",
+      "qa": {
+        "doi": "10.1111/j.1095-8339.1989.tb01713.x",
+        "title": "A new rhyniopsid with novel sporangium organization from the Lower Devonian of South Wales",
+        "pages": 27,
+        "printed": "111–137",
+        "path": "library/closed/shute1989_oup.pdf",
+        "bytes": 2387533,
+        "sha256": "ec8dfcc1672e33f16aea938ff572313a9c6dfd05290b9bd2c3c630d184a7be0f",
+        "extracted_page_count": 27,
+        "page_text_bytes": [
+          2556,
+          3536,
+          3492,
+          162,
+          3248,
+          163,
+          3527,
+          3861,
+          2023,
+          162,
+          3938,
+          161,
+          3995,
+          162,
+          2302,
+          163,
+          3874,
+          162,
+          3134,
+          2459,
+          3648,
+          3902,
+          3872,
+          3764,
+          2022,
+          4439,
+          4149
+        ],
+        "pages_over_200_bytes": 20,
+        "all_pages_nonempty": true,
+        "qpdf": "pass: no syntax or stream encoding errors",
+        "renders": [
+          "/private/tmp/autonomous-qa/oup-wave3/shute1989-firstarticle-02.jpg",
+          "/private/tmp/autonomous-qa/oup-wave3/shute1989-last-27.jpg"
+        ]
+      }
+    },
+    {
+      "id": "edwards2004",
+      "doi": "10.1111/j.1095-8339.2004.00332.x",
+      "source_url": "https://academic-oup-com.ezproxy.utas.edu.au/botlinnean/article-lookup/doi/10.1111/j.1095-8339.2004.00332.x",
+      "file": "library/closed/edwards2004_oup.pdf",
+      "method": "Chrome native Save of visibly loaded Oxford publisher PDF via UTAS; source article and PDF link inspected; direct save into private archive. Temporary CDN query tokens omitted.",
+      "metadata": {
+        "ids": [
+          "edwards2004"
+        ],
+        "priorities": [
+          3
+        ],
+        "csv_citations": [
+          "Edwards D, Banks HP, Ciurca SJ, Laub RS (2004). New Silurian cooksonias from dolostones of north-eastern North America. Botanical Journal of the Linnean Society 146: 399-413"
+        ],
+        "doi": "10.1111/j.1095-8339.2004.00332.x",
+        "title": "New Silurian cooksonias from dolostones of north-eastern North America",
+        "authors": [
+          {
+            "given": "D.",
+            "family": "EDWARDS"
+          },
+          {
+            "given": "H. P.",
+            "family": "BANKS"
+          },
+          {
+            "given": "S. J.",
+            "family": "CIURCA"
+          },
+          {
+            "given": "R. S.",
+            "family": "LAUB"
+          }
+        ],
+        "journal": "Botanical Journal of the Linnean Society",
+        "volume": "146",
+        "issue": "4",
+        "pages": "399-413",
+        "issued": "2004-12",
+        "published_print": "2004-12",
+        "published_online": "2004-12-14",
+        "publisher_resource_url": "https://academic.oup.com/botlinnean/article-lookup/doi/10.1111/j.1095-8339.2004.00332.x",
+        "publisher_links": [
+          {
+            "url": "https://api.wiley.com/onlinelibrary/tdm/v1/articles/10.1111%2Fj.1095-8339.2004.00332.x",
+            "content_version": "vor",
+            "intended_application": "text-mining"
+          },
+          {
+            "url": "http://academic.oup.com/botlinnean/article-pdf/146/4/399/17030634/j.1095-8339.2004.00332.x.pdf",
+            "content_version": "vor",
+            "intended_application": "similarity-checking"
+          }
+        ],
+        "doi_url": "https://doi.org/10.1111/j.1095-8339.2004.00332.x",
+        "local_file_csv": [
+          null
+        ],
+        "bibliographic_register_matches": [
+          "/Users/bwbrook/papers/silurian_plants/data/external/library/fetch_results.tsv",
+          "/Users/bwbrook/papers/silurian_plants/data/external/library/works.tsv",
+          "/Users/bwbrook/papers/silurian_plants/data/external/library/cited_dois_resolution.tsv",
+          "/Users/bwbrook/papers/silurian_plants/data/external/library/cited_identity_check.tsv",
+          "/Users/bwbrook/papers/silurian_plants/data/external/library/closed_candidates.csv"
+        ],
+        "held_fulltext_register_matches": []
+      },
+      "asset_kind": "main",
+      "citation": "EDWARDS D, BANKS HP, CIURCA SJ, LAUB RS, (2004). New Silurian cooksonias from dolostones of north-eastern North America. Botanical Journal of the Linnean Society 146: 399-413",
+      "version": "Publisher PDF as delivered through UTAS",
+      "bytes": 1024542,
+      "sha256": "541452191faf9eb42fc428aba36af6afcdc16b6ee234c74fc165badc70554129",
+      "pages": 15,
+      "page_text_characters": [
+        4386,
+        605,
+        3577,
+        274,
+        4289,
+        307,
+        5827,
+        5844,
+        5725,
+        5647,
+        308,
+        5723,
+        1623,
+        5617,
+        2254
+      ],
+      "qpdf_status": 0,
+      "qpdf_output": "checking library/closed/edwards2004_oup.pdf\nPDF Version: 1.4\nFile is not encrypted\nFile is not linearized\nNo syntax or stream encoding errors found; the file may still contain\nerrors that qpdf cannot detect\n",
+      "qa": {
+        "doi": "10.1111/j.1095-8339.2004.00332.x",
+        "title": "New Silurian cooksonias from dolostones of north-eastern North America",
+        "pages": 15,
+        "printed": "399–413",
+        "path": "library/closed/edwards2004_oup.pdf",
+        "bytes": 1024542,
+        "sha256": "541452191faf9eb42fc428aba36af6afcdc16b6ee234c74fc165badc70554129",
+        "extracted_page_count": 15,
+        "page_text_bytes": [
+          4427,
+          611,
+          3613,
+          280,
+          4318,
+          313,
+          5854,
+          5865,
+          5744,
+          5669,
+          314,
+          5751,
+          1677,
+          5675,
+          2290
+        ],
+        "all_pages_nonempty": true,
+        "pages_over_200_bytes": 15,
+        "qpdf": "pass: no syntax or stream encoding errors",
+        "renders": [
+          "/private/tmp/autonomous-qa/oup-wave3/edwards2004-article-02.jpg",
+          "/private/tmp/autonomous-qa/oup-wave3/edwards2004-last-15.jpg"
+        ]
+      }
+    },
+    {
+      "id": "edwards1988",
+      "doi": "10.1111/j.1095-8339.1988.tb02461.x",
+      "source_url": "https://academic-oup-com.ezproxy.utas.edu.au/botlinnean/article-lookup/doi/10.1111/j.1095-8339.1988.tb02461.x",
+      "file": "library/closed/edwards1988_oup.pdf",
+      "method": "Chrome native Save of visibly loaded Oxford publisher PDF via UTAS; source article and PDF link inspected; direct save into private archive. Temporary CDN query tokens omitted.",
+      "metadata": {
+        "ids": [
+          "edwards1988"
+        ],
+        "priorities": [
+          3
+        ],
+        "csv_citations": [
+          "BURGESS & Edwards (1988). A new Palaeozoic plant closely allied to Prototaxites Dawson. Botanical Journal of the Linnean Society"
+        ],
+        "doi": "10.1111/j.1095-8339.1988.tb02461.x",
+        "title": "A new Palaeozoic plant closely allied to Prototaxites Dawson",
+        "authors": [
+          {
+            "given": "N. D.",
+            "family": "BURGESS"
+          },
+          {
+            "given": "D.",
+            "family": "EDWARDS"
+          }
+        ],
+        "journal": "Botanical Journal of the Linnean Society",
+        "volume": "97",
+        "issue": "2",
+        "pages": "189-203",
+        "issued": "1988-06",
+        "published_print": "1988-06",
+        "published_online": "2008-06-28",
+        "publisher_resource_url": "https://academic.oup.com/botlinnean/article-lookup/doi/10.1111/j.1095-8339.1988.tb02461.x",
+        "publisher_links": [
+          {
+            "url": "http://api.wiley.com/onlinelibrary/tdm/v1/articles/10.1111%2Fj.1095-8339.1988.tb02461.x",
+            "content_version": "vor",
+            "intended_application": "text-mining"
+          },
+          {
+            "url": "http://academic.oup.com/botlinnean/article-pdf/97/2/189/14084463/j.1095-8339.1988.tb02461.x.pdf",
+            "content_version": "vor",
+            "intended_application": "similarity-checking"
+          }
+        ],
+        "doi_url": "https://doi.org/10.1111/j.1095-8339.1988.tb02461.x",
+        "local_file_csv": [
+          null
+        ],
+        "bibliographic_register_matches": [
+          "/Users/bwbrook/papers/silurian_plants/data/external/library/fetch_results.tsv",
+          "/Users/bwbrook/papers/silurian_plants/data/external/library/works.tsv",
+          "/Users/bwbrook/papers/silurian_plants/data/external/library/cited_dois_resolution.tsv",
+          "/Users/bwbrook/papers/silurian_plants/data/external/library/cited_identity_check.tsv",
+          "/Users/bwbrook/papers/silurian_plants/data/external/library/closed_candidates.csv"
+        ],
+        "held_fulltext_register_matches": []
+      },
+      "asset_kind": "main",
+      "citation": "BURGESS ND, EDWARDS D, (1988). A new Palaeozoic plant closely allied to Prototaxites Dawson. Botanical Journal of the Linnean Society 97: 189-203",
+      "version": "Publisher PDF as delivered through UTAS",
+      "bytes": 3575610,
+      "sha256": "1a8053bd0f18854184c51e57d91e08c045c8e200ed4f802b86eb97c79c883bd5",
+      "pages": 15,
+      "page_text_characters": [
+        2322,
+        3187,
+        2995,
+        2758,
+        3715,
+        160,
+        3779,
+        160,
+        3984,
+        160,
+        4089,
+        3641,
+        3646,
+        3932,
+        4103
+      ],
+      "qpdf_status": 0,
+      "qpdf_output": "checking library/closed/edwards1988_oup.pdf\nPDF Version: 1.6\nFile is not encrypted\nFile is not linearized\nNo syntax or stream encoding errors found; the file may still contain\nerrors that qpdf cannot detect\n",
+      "qa": {
+        "doi": "10.1111/j.1095-8339.1988.tb02461.x",
+        "title": "A new Palaeozoic plant closely allied to Prototaxites Dawson",
+        "pages": 15,
+        "printed": "189–203",
+        "path": "library/closed/edwards1988_oup.pdf",
+        "bytes": 3575610,
+        "sha256": "1a8053bd0f18854184c51e57d91e08c045c8e200ed4f802b86eb97c79c883bd5",
+        "extracted_page_count": 15,
+        "page_text_bytes": [
+          2326,
+          3190,
+          3000,
+          2762,
+          3718,
+          163,
+          3784,
+          163,
+          3987,
+          163,
+          4092,
+          3644,
+          3649,
+          3935,
+          4106
+        ],
+        "all_pages_nonempty": true,
+        "pages_over_200_bytes": 12,
+        "qpdf": "pass: no syntax or stream encoding errors",
+        "renders": [
+          "/private/tmp/autonomous-qa/oup-wave3/edwards1988-article-02.jpg",
+          "/private/tmp/autonomous-qa/oup-wave3/edwards1988-last-15.jpg"
+        ]
+      }
+    },
+    {
+      "id": "al2012b",
+      "doi": "10.1111/j.1095-8339.2011.01207.x",
+      "source_url": "https://academic-oup-com.ezproxy.utas.edu.au/botlinnean/article-lookup/doi/10.1111/j.1095-8339.2011.01207.x",
+      "file": "library/closed/al2012b_oup.pdf",
+      "method": "Chrome native Save of visibly loaded Oxford publisher PDF through UTAS; direct save into private archive. Temporary CDN query tokens omitted.",
+      "metadata": {
+        "ids": [
+          "al2012b"
+        ],
+        "priorities": [
+          3
+        ],
+        "csv_citations": [
+          "Edwards et al. (2012). A new group of Early Devonian plants with valvate sporangia containing sculptured permanent dyads. Botanical Journal of the Linnean Society"
+        ],
+        "doi": "10.1111/j.1095-8339.2011.01207.x",
+        "title": "A new group of Early Devonian plants with valvate sporangia containing sculptured permanent dyads",
+        "authors": [
+          {
+            "given": "DIANNE",
+            "family": "EDWARDS"
+          },
+          {
+            "given": "JOHN B.",
+            "family": "RICHARDSON"
+          },
+          {
+            "given": "LINDSEY",
+            "family": "AXE"
+          },
+          {
+            "given": "KEVIN L.",
+            "family": "DAVIES"
+          }
+        ],
+        "journal": "Botanical Journal of the Linnean Society",
+        "volume": "168",
+        "issue": "3",
+        "pages": "229-257",
+        "issued": "2012-02-01",
+        "published_print": "2012-03",
+        "published_online": "2012-02-01",
+        "publisher_resource_url": "https://academic.oup.com/botlinnean/article-lookup/doi/10.1111/j.1095-8339.2011.01207.x",
+        "publisher_links": [
+          {
+            "url": "https://api.wiley.com/onlinelibrary/tdm/v1/articles/10.1111%2Fj.1095-8339.2011.01207.x",
+            "content_version": "vor",
+            "intended_application": "text-mining"
+          },
+          {
+            "url": "http://academic.oup.com/botlinnean/article-pdf/168/3/229/14085774/j.1095-8339.2011.01207.x.pdf",
+            "content_version": "vor",
+            "intended_application": "similarity-checking"
+          }
+        ],
+        "doi_url": "https://doi.org/10.1111/j.1095-8339.2011.01207.x",
+        "local_file_csv": [
+          null
+        ],
+        "bibliographic_register_matches": [
+          "/Users/bwbrook/papers/silurian_plants/data/external/library/fetch_results.tsv",
+          "/Users/bwbrook/papers/silurian_plants/data/external/library/works.tsv",
+          "/Users/bwbrook/papers/silurian_plants/data/external/library/cited_dois_resolution.tsv",
+          "/Users/bwbrook/papers/silurian_plants/data/external/library/cited_identity_check.tsv",
+          "/Users/bwbrook/papers/silurian_plants/data/external/library/screen.tsv",
+          "/Users/bwbrook/papers/silurian_plants/data/external/library/closed_candidates.csv"
+        ],
+        "held_fulltext_register_matches": []
+      },
+      "asset_kind": "main",
+      "citation": "EDWARDS D, RICHARDSON JB, AXE L, DAVIES KL, (2012). A new group of Early Devonian plants with valvate sporangia containing sculptured permanent dyads. Botanical Journal of the Linnean Society 168: 229-257",
+      "version": "Publisher PDF as delivered through UTAS",
+      "bytes": 3500714,
+      "sha256": "6cac8172ce5d50f3518216f504bef17be8080e37ce09e11583b72cf3bc04b012",
+      "pages": 29,
+      "page_text_characters": [
+        4136,
+        4072,
+        4971,
+        1077,
+        3376,
+        305,
+        5653,
+        305,
+        5823,
+        795,
+        5762,
+        306,
+        5686,
+        306,
+        5087,
+        306,
+        5176,
+        306,
+        5435,
+        307,
+        5351,
+        2718,
+        2703,
+        5707,
+        5810,
+        5762,
+        5889,
+        4638,
+        1363
+      ],
+      "qpdf_status": 0,
+      "qpdf_output": "checking library/closed/al2012b_oup.pdf\nPDF Version: 1.3\nFile is not encrypted\nFile is not linearized\nNo syntax or stream encoding errors found; the file may still contain\nerrors that qpdf cannot detect\n",
+      "qa": {
+        "doi": "10.1111/j.1095-8339.2011.01207.x",
+        "title": "A new group of Early Devonian plants with valvate sporangia containing sculptured permanent dyads",
+        "pages": 29,
+        "printed": "229–257",
+        "path": "library/closed/al2012b_oup.pdf",
+        "bytes": 3500714,
+        "sha256": "6cac8172ce5d50f3518216f504bef17be8080e37ce09e11583b72cf3bc04b012",
+        "extracted_page_count": 29,
+        "page_text_bytes": [
+          4165,
+          4091,
+          4991,
+          1085,
+          3401,
+          313,
+          5683,
+          313,
+          5845,
+          805,
+          5783,
+          314,
+          5719,
+          314,
+          5136,
+          314,
+          5213,
+          314,
+          5463,
+          315,
+          5369,
+          2730,
+          2715,
+          5730,
+          5823,
+          5827,
+          5960,
+          4673,
+          1373
+        ],
+        "all_pages_nonempty": true,
+        "pages_over_200_bytes": 29,
+        "qpdf": "pass: no syntax or stream encoding errors",
+        "renders": [
+          "/private/tmp/autonomous-qa/oup-wave3/al2012b-article-02.jpg",
+          "/private/tmp/autonomous-qa/oup-wave3/al2012b-last-29.jpg"
+        ]
+      }
+    },
+    {
+      "id": "niklas1985",
+      "doi": "10.1111/j.1558-5646.1985.tb00451.x",
+      "source_url": "https://academic-oup-com.ezproxy.utas.edu.au/evolut/article/39/5/1110/6871985",
+      "file": "library/closed/niklas1985_oup.pdf",
+      "method": "Chrome native Save of visibly loaded Oxford publisher PDF through UTAS; direct save into private archive. Temporary CDN query tokens omitted.",
+      "metadata": {
+        "ids": [
+          "niklas1985"
+        ],
+        "priorities": [
+          3
+        ],
+        "csv_citations": [
+          "Niklas (1985). THE EVOLUTION OF TRACHEID DIAMETER IN EARLY VASCULAR PLANTS AND ITS IMPLICATIONS ON THE HYDRAULIC CONDUCTANCE OF THE PRIMARY XYLEM STRAND. Evolution"
+        ],
+        "doi": "10.1111/j.1558-5646.1985.tb00451.x",
+        "title": "THE EVOLUTION OF TRACHEID DIAMETER IN EARLY VASCULAR PLANTS AND ITS IMPLICATIONS ON THE HYDRAULIC CONDUCTANCE OF THE PRIMARY XYLEM STRAND",
+        "authors": [
+          {
+            "given": "Karl J.",
+            "family": "Niklas"
+          }
+        ],
+        "journal": "Evolution",
+        "volume": "39",
+        "issue": "5",
+        "pages": "1110-1122",
+        "issued": "1985-09",
+        "published_print": "1985-09",
+        "published_online": "2017-05-31",
+        "publisher_resource_url": "https://academic.oup.com/evolut/article/39/5/1110/6871985",
+        "publisher_links": [
+          {
+            "url": "https://api.wiley.com/onlinelibrary/tdm/v1/articles/10.1111%2Fj.1558-5646.1985.tb00451.x",
+            "content_version": "vor",
+            "intended_application": "text-mining"
+          },
+          {
+            "url": "http://onlinelibrary.wiley.com/wol1/doi/10.1111/j.1558-5646.1985.tb00451.x/fullpdf",
+            "content_version": "vor",
+            "intended_application": "similarity-checking"
+          }
+        ],
+        "doi_url": "https://doi.org/10.1111/j.1558-5646.1985.tb00451.x",
+        "local_file_csv": [
+          null
+        ],
+        "bibliographic_register_matches": [
+          "/Users/bwbrook/papers/silurian_plants/data/external/library/fetch_results.tsv",
+          "/Users/bwbrook/papers/silurian_plants/data/external/library/works.tsv",
+          "/Users/bwbrook/papers/silurian_plants/data/external/library/cited_dois_resolution.tsv",
+          "/Users/bwbrook/papers/silurian_plants/data/external/library/cited_identity_check.tsv",
+          "/Users/bwbrook/papers/silurian_plants/data/external/library/closed_candidates.csv"
+        ],
+        "held_fulltext_register_matches": []
+      },
+      "asset_kind": "main",
+      "citation": "Niklas KJ, (1985). THE EVOLUTION OF TRACHEID DIAMETER IN EARLY VASCULAR PLANTS AND ITS IMPLICATIONS ON THE HYDRAULIC CONDUCTANCE OF THE PRIMARY XYLEM STRAND. Evolution 39: 1110-1122",
+      "version": "Publisher PDF as delivered through UTAS",
+      "bytes": 939937,
+      "sha256": "77780ff5266479fd38c398c31b75046b00091fddfe9e015231a339146dda81da",
+      "pages": 13,
+      "page_text_characters": [
+        4042,
+        4095,
+        4057,
+        4227,
+        2291,
+        1654,
+        2161,
+        2359,
+        2210,
+        4241,
+        4659,
+        5073,
+        882
+      ],
+      "qpdf_status": 0,
+      "qpdf_output": "checking library/closed/niklas1985_oup.pdf\nPDF Version: 1.4\nFile is not encrypted\nFile is not linearized\nNo syntax or stream encoding errors found; the file may still contain\nerrors that qpdf cannot detect\n",
+      "qa": {
+        "doi": "10.1111/j.1558-5646.1985.tb00451.x",
+        "title": "THE EVOLUTION OF TRACHEID DIAMETER IN EARLY VASCULAR PLANTS AND ITS IMPLICATIONS ON THE HYDRAULIC CONDUCTANCE OF THE PRIMARY XYLEM STRAND",
+        "pages": 13,
+        "printed": "1110–1122",
+        "path": "library/closed/niklas1985_oup.pdf",
+        "bytes": 939937,
+        "sha256": "77780ff5266479fd38c398c31b75046b00091fddfe9e015231a339146dda81da",
+        "extracted_page_count": 13,
+        "page_text_bytes": [
+          4045,
+          4098,
+          4060,
+          4230,
+          2296,
+          1665,
+          2168,
+          2364,
+          2217,
+          4246,
+          4663,
+          5076,
+          885
+        ],
+        "all_pages_nonempty": true,
+        "pages_over_200_bytes": 13,
+        "qpdf": "pass: no syntax or stream encoding errors",
+        "renders": [
+          "/private/tmp/autonomous-qa/oup-wave3/niklas1985-article-02.jpg",
+          "/private/tmp/autonomous-qa/oup-wave3/niklas1985-last-13.jpg"
+        ]
+      }
+    },
+    {
+      "id": "al2012e",
+      "doi": "10.1111/j.1095-8339.2012.01231.x",
+      "source_url": "https://academic-oup-com.ezproxy.utas.edu.au/botlinnean/article-lookup/doi/10.1111/j.1095-8339.2012.01231.x",
+      "file": "library/closed/al2012e_oup.pdf",
+      "method": "Chrome native Save of visibly loaded Oxford publisher PDF through UTAS; direct save into private archive. Temporary CDN query tokens omitted.",
+      "metadata": {
+        "ids": [
+          "al2012e"
+        ],
+        "priorities": [
+          3
+        ],
+        "csv_citations": [
+          "Morris et al. (2012). New dyad-producing plants from the Lower Devonian (Lochkovian) of the Welsh Borderland. Botanical Journal of the Linnean Society"
+        ],
+        "doi": "10.1111/j.1095-8339.2012.01231.x",
+        "title": "New dyad-producing plants from the Lower Devonian (Lochkovian) of the Welsh Borderland",
+        "authors": [
+          {
+            "given": "JENNIFER L.",
+            "family": "MORRIS"
+          },
+          {
+            "given": "DIANNE",
+            "family": "EDWARDS"
+          },
+          {
+            "given": "JOHN B.",
+            "family": "RICHARDSON"
+          },
+          {
+            "given": "LINDSEY",
+            "family": "AXE"
+          }
+        ],
+        "journal": "Botanical Journal of the Linnean Society",
+        "volume": "169",
+        "issue": "4",
+        "pages": "569-595",
+        "issued": "2012-05-04",
+        "published_print": "2012-08",
+        "published_online": "2012-05-04",
+        "publisher_resource_url": "https://academic.oup.com/botlinnean/article-lookup/doi/10.1111/j.1095-8339.2012.01231.x",
+        "publisher_links": [
+          {
+            "url": "https://api.wiley.com/onlinelibrary/tdm/v1/articles/10.1111%2Fj.1095-8339.2012.01231.x",
+            "content_version": "vor",
+            "intended_application": "text-mining"
+          },
+          {
+            "url": "http://academic.oup.com/botlinnean/article-pdf/169/4/569/14086121/boj1231.pdf",
+            "content_version": "vor",
+            "intended_application": "similarity-checking"
+          }
+        ],
+        "doi_url": "https://doi.org/10.1111/j.1095-8339.2012.01231.x",
+        "local_file_csv": [
+          null
+        ],
+        "bibliographic_register_matches": [
+          "/Users/bwbrook/papers/silurian_plants/data/external/library/fetch_results.tsv",
+          "/Users/bwbrook/papers/silurian_plants/data/external/library/works.tsv",
+          "/Users/bwbrook/papers/silurian_plants/data/external/library/cited_dois_resolution.tsv",
+          "/Users/bwbrook/papers/silurian_plants/data/external/library/cited_identity_check.tsv",
+          "/Users/bwbrook/papers/silurian_plants/data/external/library/screen.tsv",
+          "/Users/bwbrook/papers/silurian_plants/data/external/library/closed_candidates.csv"
+        ],
+        "held_fulltext_register_matches": []
+      },
+      "asset_kind": "main",
+      "citation": "MORRIS JL, EDWARDS D, RICHARDSON JB, AXE L, (2012). New dyad-producing plants from the Lower Devonian (Lochkovian) of the Welsh Borderland. Botanical Journal of the Linnean Society 169: 569-595",
+      "version": "Publisher PDF as delivered through UTAS",
+      "bytes": 6205750,
+      "sha256": "9cc08f877914339bb79a7d74322b61cb5676a4a72a7fb0a1a9a5c6350d80e61c",
+      "pages": 27,
+      "page_text_characters": [
+        4181,
+        5195,
+        311,
+        290,
+        5224,
+        290,
+        5828,
+        974,
+        5953,
+        5725,
+        5001,
+        3804,
+        5662,
+        290,
+        5486,
+        2539,
+        5728,
+        290,
+        5698,
+        290,
+        6143,
+        290,
+        5831,
+        290,
+        5562,
+        5911,
+        2280
+      ],
+      "qpdf_status": 0,
+      "qpdf_output": "checking library/closed/al2012e_oup.pdf\nPDF Version: 1.3\nFile is not encrypted\nFile is not linearized\nNo syntax or stream encoding errors found; the file may still contain\nerrors that qpdf cannot detect\n",
+      "qa": {
+        "doi": "10.1111/j.1095-8339.2012.01231.x",
+        "title": "New dyad-producing plants from the Lower Devonian (Lochkovian) of the Welsh Borderland",
+        "pages": 27,
+        "printed": "569–595",
+        "path": "library/closed/al2012e_oup.pdf",
+        "bytes": 6205750,
+        "sha256": "9cc08f877914339bb79a7d74322b61cb5676a4a72a7fb0a1a9a5c6350d80e61c",
+        "extracted_page_count": 27,
+        "page_text_bytes": [
+          4204,
+          5217,
+          317,
+          296,
+          5249,
+          296,
+          5840,
+          980,
+          5971,
+          5741,
+          5048,
+          3882,
+          5674,
+          296,
+          5498,
+          2670,
+          5766,
+          296,
+          5722,
+          296,
+          6172,
+          296,
+          5843,
+          296,
+          5595,
+          5981,
+          2313
+        ],
+        "all_pages_nonempty": true,
+        "pages_over_200_bytes": 27,
+        "qpdf": "pass: no syntax or stream encoding errors",
+        "renders": [
+          "/private/tmp/autonomous-qa/oup-wave3/al2012e-article-02.jpg",
+          "/private/tmp/autonomous-qa/oup-wave3/al2012e-last-27.jpg"
+        ]
+      }
+    },
+    {
+      "id": "edwards1980",
+      "doi": "10.1016/0034-6667(80)90057-3",
+      "source_url": "https://www-sciencedirect-com.ezproxy.utas.edu.au/science/article/pii/0034666780900573",
+      "file": "library/closed/edwards1980_elsevier.pdf",
+      "method": "Chrome native Save of loaded publisher PDF following authorised UTAS View PDF link; no PDF reprint or transformation.",
+      "metadata": {
+        "csv_id": "edwards1980",
+        "priority": 1,
+        "lane": "Elsevier",
+        "doi": "10.1016/0034-6667(80)90057-3",
+        "crossref_status": "ok",
+        "title": "Evidence for the sporophytic status of the lower devonian plant rhynia gwynne-vaughanii kidston and Lang",
+        "authors": [
+          "David S. Edwards"
+        ],
+        "journal": "Review of Palaeobotany and Palynology",
+        "volume": "29",
+        "issue": null,
+        "pages": "177-188",
+        "print_year": 1980,
+        "online_year": null,
+        "publisher": "Elsevier BV",
+        "publisher_primary_url": "https://linkinghub.elsevier.com/retrieve/pii/0034666780900573",
+        "publisher_pii": "0034666780900573",
+        "identity_qualification": "CSV author/year/title/venue/pages match Crossref apart from title capitalisation."
+      },
+      "asset_kind": "main",
+      "citation": "David S. Edwards, (1980). Evidence for the sporophytic status of the lower devonian plant rhynia gwynne-vaughanii kidston and Lang. Review of Palaeobotany and Palynology 29: 177-188",
+      "version": "Publisher PDF as delivered through UTAS",
+      "bytes": 3619035,
+      "sha256": "8ec45f30d77590b8d020bec0a186d2d93e31d69ca1329796f7be24a4c78655f4",
+      "pages": 12,
+      "page_text_characters": [
+        2438,
+        3216,
+        2979,
+        0,
+        3223,
+        2,
+        1815,
+        2424,
+        3070,
+        2,
+        3229,
+        1547
+      ],
+      "qpdf_status": 0,
+      "qpdf_output": "checking library/closed/edwards1980_elsevier.pdf\nPDF Version: 1.7\nFile is not encrypted\nFile is not linearized\nNo syntax or stream encoding errors found; the file may still contain\nerrors that qpdf cannot detect\n",
+      "qa": {
+        "doi": "10.1016/0034-6667(80)90057-3",
+        "title": "Evidence for the sporophytic status of the Lower Devonian plant Rhynia gwynne-vaughanii Kidston and Lang",
+        "pages": 12,
+        "printed": "177–188",
+        "path": "library/closed/edwards1980_elsevier.pdf",
+        "bytes": 3619035,
+        "sha256": "8ec45f30d77590b8d020bec0a186d2d93e31d69ca1329796f7be24a4c78655f4",
+        "extracted_page_count": 12,
+        "all_pages_nonempty": true,
+        "pages_over_200_bytes": 9,
+        "qpdf": "pass: no syntax or stream encoding errors",
+        "renders": [
+          "/private/tmp/autonomous-qa/elsevier-native/edwards1980-article-02.jpg",
+          "/private/tmp/autonomous-qa/elsevier-native/edwards1980-last-12.jpg"
+        ],
+        "page_text_char_counts": [
+          2441,
+          3219,
+          2982,
+          1,
+          3226,
+          5,
+          1818,
+          2427,
+          3073,
+          5,
+          3232,
+          1550
+        ],
+        "all_pages_nonempty_text_layer": false,
+        "content_qualification": "Pages 4, 6 and 10 have figure/plate content visibly present but essentially no extractable text; these are not blank pages. Other pages extract substantive text.",
+        "figure_render_contact_sheet": "/private/tmp/autonomous-qa/elsevier-native/edwards1980-figures-contact.jpg"
+      },
+      "page_content_qualification": "PDF pages4,6,10 have no or negligible native text; explicit rendered review confirms PlateI,PlateII and plant reconstruction, all legible."
+    },
+    {
+      "id": "mark2011",
+      "doi": "10.1016/j.gca.2010.10.014",
+      "source_url": "https://www-sciencedirect-com.ezproxy.utas.edu.au/science/article/pii/S0016703710005934",
+      "file": "library/closed/mark2011_elsevier.pdf",
+      "method": "Chrome native Save of loaded publisher PDF following authorised UTAS View PDF link; no PDF reprint or transformation.",
+      "metadata": {
+        "csv_id": "mark2011",
+        "priority": 1,
+        "lane": "Elsevier",
+        "doi": "10.1016/j.gca.2010.10.014",
+        "crossref_status": "ok",
+        "title": "40Ar/39Ar dating of hydrothermal activity, biota and gold mineralization in the Rhynie hot-spring system, Aberdeenshire, Scotland",
+        "authors": [
+          "D.F. Mark",
+          "C.M. Rice",
+          "A.E. Fallick",
+          "N.H. Trewin",
+          "M.R. Lee",
+          "A. Boyce",
+          "J.K.W. Lee"
+        ],
+        "journal": "Geochimica et Cosmochimica Acta",
+        "volume": "75",
+        "issue": "2",
+        "pages": "555-569",
+        "print_year": 2011,
+        "online_year": null,
+        "publisher": "Elsevier BV",
+        "publisher_primary_url": "https://linkinghub.elsevier.com/retrieve/pii/S0016703710005934",
+        "publisher_pii": "S0016703710005934",
+        "identity_qualification": "CSV author/year/title/venue/pages match Crossref; already-used secondary sources do not count as acquisition of this paper."
+      },
+      "asset_kind": "main",
+      "citation": "D.F. Mark, C.M. Rice, A.E. Fallick, N.H. Trewin, M.R. Lee, A. Boyce, J.K.W. Lee, (2011). 40Ar/39Ar dating of hydrothermal activity, biota and gold mineralization in the Rhynie hot-spring system, Aberdeenshire, Scotland. Geochimica et Cosmochimica Acta 75: 555-569",
+      "version": "Publisher PDF as delivered through UTAS",
+      "bytes": 1846166,
+      "sha256": "5d767d85459202d89b5dfcb8edacef34a94571d0f2a4be82a3df0ac6f1b21fdf",
+      "pages": 15,
+      "page_text_characters": [
+        3778,
+        6081,
+        2736,
+        4020,
+        4017,
+        6116,
+        2347,
+        4861,
+        2505,
+        5509,
+        6545,
+        4113,
+        5449,
+        7065,
+        771
+      ],
+      "qpdf_status": 0,
+      "qpdf_output": "checking library/closed/mark2011_elsevier.pdf\nPDF Version: 1.7\nFile is not encrypted\nFile is not linearized\nNo syntax or stream encoding errors found; the file may still contain\nerrors that qpdf cannot detect\n",
+      "qa": {
+        "doi": "10.1016/j.gca.2010.10.014",
+        "title": "40Ar/39Ar dating of hydrothermal activity, biota and gold mineralization in the Rhynie hot-spring system, Aberdeenshire, Scotland",
+        "pages": 15,
+        "printed": "555–569",
+        "path": "library/closed/mark2011_elsevier.pdf",
+        "bytes": 1846166,
+        "sha256": "5d767d85459202d89b5dfcb8edacef34a94571d0f2a4be82a3df0ac6f1b21fdf",
+        "extracted_page_count": 15,
+        "page_text_bytes": [
+          3812,
+          6142,
+          2761,
+          4063,
+          4056,
+          6171,
+          2374,
+          4930,
+          2546,
+          5592,
+          6599,
+          4137,
+          5529,
+          7172,
+          792
+        ],
+        "all_pages_nonempty": true,
+        "pages_over_200_bytes": 15,
+        "qpdf": "pass: no syntax or stream encoding errors",
+        "renders": [
+          "/private/tmp/autonomous-qa/elsevier-native/mark2011-article-02.jpg",
+          "/private/tmp/autonomous-qa/elsevier-native/mark2011-last-15.jpg"
+        ]
+      }
+    },
+    {
+      "id": "mark2011",
+      "doi": "10.1016/j.gca.2010.10.014",
+      "asset_kind": "supplement",
+      "file": "library/closed/mark2011_EA1.jpg",
+      "source_url": "https://ars-els-cdn-com.ezproxy.utas.edu.au/content/image/1-s2.0-S0016703710005934-fx1.jpg",
+      "download_url": "https://ars.els-cdn.com/content/image/1-s2.0-S0016703710005934-fx1.jpg",
+      "version": "Original publisher supporting file; EA1 electron microprobe data",
+      "citation": "D.F. Mark, C.M. Rice, A.E. Fallick, N.H. Trewin, M.R. Lee, A. Boyce, J.K.W. Lee, (2011). 40Ar/39Ar dating of hydrothermal activity, biota and gold mineralization in the Rhynie hot-spring system, Aberdeenshire, Scotland. Geochimica et Cosmochimica Acta 75: 555-569 [EA1 electron microprobe data]",
+      "bytes": 37641,
+      "sha256": "6a6c94b1032bdcfea8f0f9e861f1597e8fcaf8b4661d4c7d059a4b2141b54275",
+      "pages": null,
+      "qa": "JPEG decoded and visually inspected; electron-microprobe tables legible.",
+      "retrieval": "Existing /Users/bwbrook/Downloads/1-s2.0-S0016703710005934-fx1.jpg byte-copied; public URL HEAD verified."
+    },
+    {
+      "id": "mark2011",
+      "doi": "10.1016/j.gca.2010.10.014",
+      "asset_kind": "supplement",
+      "file": "library/closed/mark2011_EA2.jpg",
+      "source_url": "https://ars-els-cdn-com.ezproxy.utas.edu.au/content/image/1-s2.0-S0016703710005934-fx2.jpg",
+      "download_url": "https://ars.els-cdn.com/content/image/1-s2.0-S0016703710005934-fx2.jpg",
+      "version": "Original publisher supporting file; EA2 oxygen isotopes",
+      "citation": "D.F. Mark, C.M. Rice, A.E. Fallick, N.H. Trewin, M.R. Lee, A. Boyce, J.K.W. Lee, (2011). 40Ar/39Ar dating of hydrothermal activity, biota and gold mineralization in the Rhynie hot-spring system, Aberdeenshire, Scotland. Geochimica et Cosmochimica Acta 75: 555-569 [EA2 oxygen isotopes]",
+      "bytes": 33144,
+      "sha256": "38056565f9e3401d09625f6651687dc5e4b82dc560535e5449dca1d0501e4ef1",
+      "pages": null,
+      "qa": "JPEG decoded and visually inspected; oxygen-isotope table legible.",
+      "retrieval": "Unauthenticated public GET."
+    },
+    {
+      "id": "mark2011",
+      "doi": "10.1016/j.gca.2010.10.014",
+      "asset_kind": "supplement",
+      "file": "library/closed/mark2011_EA3.txt",
+      "source_url": "https://ars-els-cdn-com.ezproxy.utas.edu.au/content/image/1-s2.0-S0016703710005934-mmc3.txt",
+      "download_url": "https://ars.els-cdn.com/content/image/1-s2.0-S0016703710005934-mmc3.txt",
+      "version": "Original publisher supporting file; EA3 R108E data",
+      "citation": "D.F. Mark, C.M. Rice, A.E. Fallick, N.H. Trewin, M.R. Lee, A. Boyce, J.K.W. Lee, (2011). 40Ar/39Ar dating of hydrothermal activity, biota and gold mineralization in the Rhynie hot-spring system, Aberdeenshire, Scotland. Geochimica et Cosmochimica Acta 75: 555-569 [EA3 R108E data]",
+      "bytes": 43580,
+      "sha256": "9ffabb38194158853cd86baf4a483ab40fb923f8f5c33640079c15342361edfd",
+      "pages": null,
+      "qa": "Non-HTML ISO-8859 text; 76 CR-delimited lines and 5,903 numeric tokens; raw tabular data retained without transcription.",
+      "retrieval": "Unauthenticated public GET."
+    },
+    {
+      "id": "mark2011",
+      "doi": "10.1016/j.gca.2010.10.014",
+      "asset_kind": "supplement",
+      "file": "library/closed/mark2011_EA4.txt",
+      "source_url": "https://ars-els-cdn-com.ezproxy.utas.edu.au/content/image/1-s2.0-S0016703710005934-mmc4.txt",
+      "download_url": "https://ars.els-cdn.com/content/image/1-s2.0-S0016703710005934-mmc4.txt",
+      "version": "Original publisher supporting file; EA4 R135B data",
+      "citation": "D.F. Mark, C.M. Rice, A.E. Fallick, N.H. Trewin, M.R. Lee, A. Boyce, J.K.W. Lee, (2011). 40Ar/39Ar dating of hydrothermal activity, biota and gold mineralization in the Rhynie hot-spring system, Aberdeenshire, Scotland. Geochimica et Cosmochimica Acta 75: 555-569 [EA4 R135B data]",
+      "bytes": 50583,
+      "sha256": "9fbc1ea27bc5933ab6360dac94380292078441ebe96782cb7df815e2569b14eb",
+      "pages": null,
+      "qa": "Non-HTML ISO-8859 text; 82 CR-delimited lines and 6,782 numeric tokens; raw tabular data retained without transcription.",
+      "retrieval": "Unauthenticated public GET."
+    },
+    {
+      "id": "mark2011",
+      "doi": "10.1016/j.gca.2010.10.014",
+      "asset_kind": "supplement",
+      "file": "library/closed/mark2011_EA5.txt",
+      "source_url": "https://ars-els-cdn-com.ezproxy.utas.edu.au/content/image/1-s2.0-S0016703710005934-mmc5.txt",
+      "download_url": "https://ars.els-cdn.com/content/image/1-s2.0-S0016703710005934-mmc5.txt",
+      "version": "Original publisher supporting file; EA5 And1 data",
+      "citation": "D.F. Mark, C.M. Rice, A.E. Fallick, N.H. Trewin, M.R. Lee, A. Boyce, J.K.W. Lee, (2011). 40Ar/39Ar dating of hydrothermal activity, biota and gold mineralization in the Rhynie hot-spring system, Aberdeenshire, Scotland. Geochimica et Cosmochimica Acta 75: 555-569 [EA5 And1 data]",
+      "bytes": 28945,
+      "sha256": "32001504ceaa36c53b90c395292f88a3cee0cd72d77a7a3ad789e467958912c7",
+      "pages": null,
+      "qa": "Non-HTML ISO-8859 text; 58 CR-delimited lines and 3,826 numeric tokens; raw tabular data retained without transcription.",
+      "retrieval": "Unauthenticated public GET."
+    }
+  ],
+  "csv_updates": [
+    {
+      "id": "al1983",
+      "before": {
+        "id": "al1983",
+        "citation": "EDWARDS et al. (1983). A late Wenlock flora from Co. Tipperary, Ireland. Botanical Journal of the Linnean Society",
+        "doi": "10.1111/j.1095-8339.1983.tb00715.x",
+        "link": "https://doi.org/10.1111/j.1095-8339.1983.tb00715.x",
+        "kind": "paper",
+        "needed_for": "cards (cited)",
+        "what_for": "cited by docs/primer.md",
+        "priority": "3",
+        "access": "Oxford University Press",
+        "status": "needed",
+        "local_file": "",
+        "added": "2026-10-27",
+        "notes": "from the EPRP literature harvest (closed in OpenAlex; subset cards; region )"
+      },
+      "after": {
+        "id": "al1983",
+        "citation": "EDWARDS D, FEEHAN J, SMITH DG, (1983). A late Wenlock flora from Co. Tipperary, Ireland. Botanical Journal of the Linnean Society 86: 19-36",
+        "doi": "10.1111/j.1095-8339.1983.tb00715.x",
+        "link": "https://doi.org/10.1111/j.1095-8339.1983.tb00715.x",
+        "kind": "paper",
+        "needed_for": "cards (cited)",
+        "what_for": "cited by docs/primer.md",
+        "priority": "3",
+        "access": "UTAS institutional publisher access",
+        "status": "local-copy-held",
+        "local_file": "closed/al1983_oup.pdf",
+        "added": "2026-10-27",
+        "notes": "from the EPRP literature harvest (closed in OpenAlex; subset cards; region ); Recovered 2026-10-29 after desktop unlock via Chrome native PDF save; identity, extent, hash, qpdf and representative-render checks in autonomous-native receipt. Earlier save-control blocker resolved."
+      }
+    },
+    {
+      "id": "edwards1986",
+      "before": {
+        "id": "edwards1986",
+        "citation": "Edwards (1986). Dispersed cuticles of putative non-vascular plants from the Lower Devonian of Britain. Botanical Journal of the Linnean Society",
+        "doi": "10.1111/j.1095-8339.1982.tb01025.x",
+        "link": "https://doi.org/10.1111/j.1095-8339.1982.tb01025.x",
+        "kind": "paper",
+        "needed_for": "cards (cited)",
+        "what_for": "cited by card nematothallus",
+        "priority": "3",
+        "access": "Oxford University Press",
+        "status": "needed",
+        "local_file": "",
+        "added": "2026-10-27",
+        "notes": "from the EPRP literature harvest (closed in OpenAlex; subset cards; region )"
+      },
+      "after": {
+        "id": "edwards1986",
+        "citation": "EDWARDS D, (1986). Dispersed cuticles of putative non-vascular plants from the Lower Devonian of Britain. Botanical Journal of the Linnean Society 93: 259-275",
+        "doi": "10.1111/j.1095-8339.1982.tb01025.x",
+        "link": "https://doi.org/10.1111/j.1095-8339.1982.tb01025.x",
+        "kind": "paper",
+        "needed_for": "cards (cited)",
+        "what_for": "cited by card nematothallus",
+        "priority": "3",
+        "access": "UTAS institutional publisher access",
+        "status": "local-copy-held",
+        "local_file": "closed/edwards1986_oup.pdf",
+        "added": "2026-10-27",
+        "notes": "from the EPRP literature harvest (closed in OpenAlex; subset cards; region ); Recovered 2026-10-29 after desktop unlock via Chrome native PDF save; identity, extent, hash, qpdf and representative-render checks in autonomous-native receipt. Earlier save-control blocker resolved."
+      }
+    },
+    {
+      "id": "liedwards1995",
+      "before": {
+        "id": "liedwards1995",
+        "citation": "Li C-S, Edwards D (1995). A re-investigation of Halle's Drepanophycus spinaeformis Göpp. from the Lower Devonian of Yunnan Province, southern China. Botanical Journal of the Linnean Society 118: 163-192",
+        "doi": "10.1111/j.1095-8339.1995.tb00468.x",
+        "link": "https://doi.org/10.1111/j.1095-8339.1995.tb00468.x",
+        "kind": "paper",
+        "needed_for": "taxa/drepanophycus-spinaeformis.md; taxa/asteroxylon-mackiei.md",
+        "what_for": "Leaf dimensions and orientation, leaf traces, plant height (a secondary genus summary quotes about 80 cm) and spores, none verified on the card",
+        "priority": "2",
+        "access": "Wiley",
+        "status": "needed",
+        "local_file": "",
+        "added": "2026-10-27",
+        "notes": "OpenAlex: closed"
+      },
+      "after": {
+        "id": "liedwards1995",
+        "citation": "CHENG-SEN L, EDWARDS D, (1995). A re-investigation of Halle's Drepanophycus spinaeformis Göpp. from the Lower Devonian of Yunnan Province, southern China. Botanical Journal of the Linnean Society 118: 163-192",
+        "doi": "10.1111/j.1095-8339.1995.tb00468.x",
+        "link": "https://doi.org/10.1111/j.1095-8339.1995.tb00468.x",
+        "kind": "paper",
+        "needed_for": "taxa/drepanophycus-spinaeformis.md; taxa/asteroxylon-mackiei.md",
+        "what_for": "Leaf dimensions and orientation, leaf traces, plant height (a secondary genus summary quotes about 80 cm) and spores, none verified on the card",
+        "priority": "2",
+        "access": "UTAS institutional publisher access",
+        "status": "local-copy-held",
+        "local_file": "closed/liedwards1995_oup.pdf",
+        "added": "2026-10-27",
+        "notes": "OpenAlex: closed; Recovered 2026-10-29 after desktop unlock via Chrome native PDF save; identity, extent, hash, qpdf and representative-render checks in autonomous-native receipt. Earlier save-control blocker resolved."
+      }
+    },
+    {
+      "id": "fanning1992",
+      "before": {
+        "id": "fanning1992",
+        "citation": "Fanning U, Edwards D, Richardson JB (1992). A diverse assemblage of early land plants from the Lower Devonian of the Welsh Borderland. Botanical Journal of the Linnean Society 109: 161-188",
+        "doi": "10.1111/j.1095-8339.1992.tb00264.x",
+        "link": "https://doi.org/10.1111/j.1095-8339.1992.tb00264.x",
+        "kind": "paper",
+        "needed_for": "taxa/salopella.md; taxa/yarravia.md; docs/audits/2026-10-27-tranche2-audit-a.md",
+        "what_for": "S. marcensis axis (0.05-0.5 mm) and sporangium sizes, and the reinterpretation of a Welsh 'Yarravia-type' cluster as valved globular sporangia",
+        "priority": "2",
+        "access": "Wiley",
+        "status": "needed",
+        "local_file": "",
+        "added": "2026-10-27",
+        "notes": "Abstract only (audit A Y10). OpenAlex: closed; 2026-10-29: article/PDF route available but no file saved; Chrome native-save follow-up pending (Mac locked again). See docs/barry-to-action.md. This is not an entitlement failure."
+      },
+      "after": {
+        "id": "fanning1992",
+        "citation": "FANNING U, EDWARDS D, RICHARDSON JB, (1992). A diverse assemblage of early land plants from the Lower Devonian of the Welsh Borderland. Botanical Journal of the Linnean Society 109: 161-188",
+        "doi": "10.1111/j.1095-8339.1992.tb00264.x",
+        "link": "https://doi.org/10.1111/j.1095-8339.1992.tb00264.x",
+        "kind": "paper",
+        "needed_for": "taxa/salopella.md; taxa/yarravia.md; docs/audits/2026-10-27-tranche2-audit-a.md",
+        "what_for": "S. marcensis axis (0.05-0.5 mm) and sporangium sizes, and the reinterpretation of a Welsh 'Yarravia-type' cluster as valved globular sporangia",
+        "priority": "2",
+        "access": "UTAS institutional publisher access",
+        "status": "local-copy-held",
+        "local_file": "closed/fanning1992_oup.pdf",
+        "added": "2026-10-27",
+        "notes": "Abstract only (audit A Y10). OpenAlex: closed; 2026-10-29: article/PDF route available but no file saved; Chrome native-save follow-up pending (Mac locked again). See docs/barry-to-action.md. This is not an entitlement failure.; Recovered 2026-10-29 after desktop unlock via Chrome native PDF save; identity, extent, hash, qpdf and representative-render checks in autonomous-native receipt. Earlier save-control blocker resolved."
+      }
+    },
+    {
+      "id": "shute1989",
+      "before": {
+        "id": "shute1989",
+        "citation": "SHUTE CH, EDWARDS D (1989). A new rhyniopsid with novel sporangium organization from the Lower Devonian of South Wales. Botanical Journal of the Linnean Society 100: 111-137",
+        "doi": "10.1111/j.1095-8339.1989.tb01713.x",
+        "link": "https://doi.org/10.1111/j.1095-8339.1989.tb01713.x",
+        "kind": "paper",
+        "needed_for": "card: sporogonites",
+        "what_for": "reassignment of the Lilydale 'cf. Sporogonites' to Uskiella",
+        "priority": "2",
+        "access": "Oxford University Press",
+        "status": "needed",
+        "local_file": "",
+        "added": "2026-10-28",
+        "notes": "not read; 2026-10-29: article/PDF route available but no file saved; Chrome native-save follow-up pending (Mac locked again). See docs/barry-to-action.md. This is not an entitlement failure."
+      },
+      "after": {
+        "id": "shute1989",
+        "citation": "SHUTE CH, EDWARDS D, (1989). A new rhyniopsid with novel sporangium organization from the Lower Devonian of South Wales. Botanical Journal of the Linnean Society 100: 111-137",
+        "doi": "10.1111/j.1095-8339.1989.tb01713.x",
+        "link": "https://doi.org/10.1111/j.1095-8339.1989.tb01713.x",
+        "kind": "paper",
+        "needed_for": "card: sporogonites",
+        "what_for": "reassignment of the Lilydale 'cf. Sporogonites' to Uskiella",
+        "priority": "2",
+        "access": "UTAS institutional publisher access",
+        "status": "local-copy-held",
+        "local_file": "closed/shute1989_oup.pdf",
+        "added": "2026-10-28",
+        "notes": "not read; 2026-10-29: article/PDF route available but no file saved; Chrome native-save follow-up pending (Mac locked again). See docs/barry-to-action.md. This is not an entitlement failure.; Recovered 2026-10-29 after desktop unlock via Chrome native PDF save; identity, extent, hash, qpdf and representative-render checks in autonomous-native receipt. Earlier save-control blocker resolved."
+      }
+    },
+    {
+      "id": "edwards2004",
+      "before": {
+        "id": "edwards2004",
+        "citation": "Edwards D, Banks HP, Ciurca SJ, Laub RS (2004). New Silurian cooksonias from dolostones of north-eastern North America. Botanical Journal of the Linnean Society 146: 399-413",
+        "doi": "10.1111/j.1095-8339.2004.00332.x",
+        "link": "https://doi.org/10.1111/j.1095-8339.2004.00332.x",
+        "kind": "paper",
+        "needed_for": "taxa/cooksonia.md; taxa/rhyniophytoids.md",
+        "what_for": "Pridoli Cooksonia species of the Bertie Group (sizes, sporangium form) and the single lateral basal structure resembling a root, the only rooting evidence cited for rhyniophytoids",
+        "priority": "3",
+        "access": "Wiley",
+        "status": "needed",
+        "local_file": "",
+        "added": "2026-10-27",
+        "notes": "OpenAlex: closed"
+      },
+      "after": {
+        "id": "edwards2004",
+        "citation": "EDWARDS D, BANKS HP, CIURCA SJ, LAUB RS, (2004). New Silurian cooksonias from dolostones of north-eastern North America. Botanical Journal of the Linnean Society 146: 399-413",
+        "doi": "10.1111/j.1095-8339.2004.00332.x",
+        "link": "https://doi.org/10.1111/j.1095-8339.2004.00332.x",
+        "kind": "paper",
+        "needed_for": "taxa/cooksonia.md; taxa/rhyniophytoids.md",
+        "what_for": "Pridoli Cooksonia species of the Bertie Group (sizes, sporangium form) and the single lateral basal structure resembling a root, the only rooting evidence cited for rhyniophytoids",
+        "priority": "3",
+        "access": "UTAS institutional publisher access",
+        "status": "local-copy-held",
+        "local_file": "closed/edwards2004_oup.pdf",
+        "added": "2026-10-27",
+        "notes": "OpenAlex: closed; Recovered 2026-10-29 after desktop unlock via Chrome native PDF save; identity, extent, hash, qpdf and representative-render checks in autonomous-native receipt. Earlier save-control blocker resolved."
+      }
+    },
+    {
+      "id": "edwards1988",
+      "before": {
+        "id": "edwards1988",
+        "citation": "BURGESS & Edwards (1988). A new Palaeozoic plant closely allied to Prototaxites Dawson. Botanical Journal of the Linnean Society",
+        "doi": "10.1111/j.1095-8339.1988.tb02461.x",
+        "link": "https://doi.org/10.1111/j.1095-8339.1988.tb02461.x",
+        "kind": "paper",
+        "needed_for": "cards (cited)",
+        "what_for": "cited by card nematothallus",
+        "priority": "3",
+        "access": "Oxford University Press",
+        "status": "needed",
+        "local_file": "",
+        "added": "2026-10-27",
+        "notes": "from the EPRP literature harvest (closed in OpenAlex; subset cards; region )"
+      },
+      "after": {
+        "id": "edwards1988",
+        "citation": "BURGESS ND, EDWARDS D, (1988). A new Palaeozoic plant closely allied to Prototaxites Dawson. Botanical Journal of the Linnean Society 97: 189-203",
+        "doi": "10.1111/j.1095-8339.1988.tb02461.x",
+        "link": "https://doi.org/10.1111/j.1095-8339.1988.tb02461.x",
+        "kind": "paper",
+        "needed_for": "cards (cited)",
+        "what_for": "cited by card nematothallus",
+        "priority": "3",
+        "access": "UTAS institutional publisher access",
+        "status": "local-copy-held",
+        "local_file": "closed/edwards1988_oup.pdf",
+        "added": "2026-10-27",
+        "notes": "from the EPRP literature harvest (closed in OpenAlex; subset cards; region ); Recovered 2026-10-29 after desktop unlock via Chrome native PDF save; identity, extent, hash, qpdf and representative-render checks in autonomous-native receipt. Earlier save-control blocker resolved."
+      }
+    },
+    {
+      "id": "al2012b",
+      "before": {
+        "id": "al2012b",
+        "citation": "Edwards et al. (2012). A new group of Early Devonian plants with valvate sporangia containing sculptured permanent dyads. Botanical Journal of the Linnean Society",
+        "doi": "10.1111/j.1095-8339.2011.01207.x",
+        "link": "https://doi.org/10.1111/j.1095-8339.2011.01207.x",
+        "kind": "paper",
+        "needed_for": "cards (cited)",
+        "what_for": "cited by card eophytes, partitatheca",
+        "priority": "3",
+        "access": "Oxford University Press",
+        "status": "needed",
+        "local_file": "",
+        "added": "2026-10-27",
+        "notes": "from the EPRP literature harvest (closed in OpenAlex; subset cards; region )"
+      },
+      "after": {
+        "id": "al2012b",
+        "citation": "EDWARDS D, RICHARDSON JB, AXE L, DAVIES KL, (2012). A new group of Early Devonian plants with valvate sporangia containing sculptured permanent dyads. Botanical Journal of the Linnean Society 168: 229-257",
+        "doi": "10.1111/j.1095-8339.2011.01207.x",
+        "link": "https://doi.org/10.1111/j.1095-8339.2011.01207.x",
+        "kind": "paper",
+        "needed_for": "cards (cited)",
+        "what_for": "cited by card eophytes, partitatheca",
+        "priority": "3",
+        "access": "UTAS institutional publisher access",
+        "status": "local-copy-held",
+        "local_file": "closed/al2012b_oup.pdf",
+        "added": "2026-10-27",
+        "notes": "from the EPRP literature harvest (closed in OpenAlex; subset cards; region ); Recovered 2026-10-29 after desktop unlock via Chrome native PDF save; identity, extent, hash, qpdf and representative-render checks in autonomous-native receipt. Earlier save-control blocker resolved."
+      }
+    },
+    {
+      "id": "niklas1985",
+      "before": {
+        "id": "niklas1985",
+        "citation": "Niklas (1985). THE EVOLUTION OF TRACHEID DIAMETER IN EARLY VASCULAR PLANTS AND ITS IMPLICATIONS ON THE HYDRAULIC CONDUCTANCE OF THE PRIMARY XYLEM STRAND. Evolution",
+        "doi": "10.1111/j.1558-5646.1985.tb00451.x",
+        "link": "https://doi.org/10.1111/j.1558-5646.1985.tb00451.x",
+        "kind": "paper",
+        "needed_for": "cards (cited)",
+        "what_for": "cited by card psilophyton, trimerophytes",
+        "priority": "3",
+        "access": "Oxford University Press",
+        "status": "needed",
+        "local_file": "",
+        "added": "2026-10-27",
+        "notes": "from the EPRP literature harvest (closed in OpenAlex; subset cards; region )"
+      },
+      "after": {
+        "id": "niklas1985",
+        "citation": "Niklas KJ, (1985). THE EVOLUTION OF TRACHEID DIAMETER IN EARLY VASCULAR PLANTS AND ITS IMPLICATIONS ON THE HYDRAULIC CONDUCTANCE OF THE PRIMARY XYLEM STRAND. Evolution 39: 1110-1122",
+        "doi": "10.1111/j.1558-5646.1985.tb00451.x",
+        "link": "https://doi.org/10.1111/j.1558-5646.1985.tb00451.x",
+        "kind": "paper",
+        "needed_for": "cards (cited)",
+        "what_for": "cited by card psilophyton, trimerophytes",
+        "priority": "3",
+        "access": "UTAS institutional publisher access",
+        "status": "local-copy-held",
+        "local_file": "closed/niklas1985_oup.pdf",
+        "added": "2026-10-27",
+        "notes": "from the EPRP literature harvest (closed in OpenAlex; subset cards; region ); Recovered 2026-10-29 after desktop unlock via Chrome native PDF save; identity, extent, hash, qpdf and representative-render checks in autonomous-native receipt. Earlier save-control blocker resolved."
+      }
+    },
+    {
+      "id": "al2012e",
+      "before": {
+        "id": "al2012e",
+        "citation": "Morris et al. (2012). New dyad-producing plants from the Lower Devonian (Lochkovian) of the Welsh Borderland. Botanical Journal of the Linnean Society",
+        "doi": "10.1111/j.1095-8339.2012.01231.x",
+        "link": "https://doi.org/10.1111/j.1095-8339.2012.01231.x",
+        "kind": "paper",
+        "needed_for": "cards (cited)",
+        "what_for": "cited by card eophytes, partitatheca",
+        "priority": "3",
+        "access": "Oxford University Press",
+        "status": "needed",
+        "local_file": "",
+        "added": "2026-10-27",
+        "notes": "from the EPRP literature harvest (closed in OpenAlex; subset cards; region )"
+      },
+      "after": {
+        "id": "al2012e",
+        "citation": "MORRIS JL, EDWARDS D, RICHARDSON JB, AXE L, (2012). New dyad-producing plants from the Lower Devonian (Lochkovian) of the Welsh Borderland. Botanical Journal of the Linnean Society 169: 569-595",
+        "doi": "10.1111/j.1095-8339.2012.01231.x",
+        "link": "https://doi.org/10.1111/j.1095-8339.2012.01231.x",
+        "kind": "paper",
+        "needed_for": "cards (cited)",
+        "what_for": "cited by card eophytes, partitatheca",
+        "priority": "3",
+        "access": "UTAS institutional publisher access",
+        "status": "local-copy-held",
+        "local_file": "closed/al2012e_oup.pdf",
+        "added": "2026-10-27",
+        "notes": "from the EPRP literature harvest (closed in OpenAlex; subset cards; region ); Recovered 2026-10-29 after desktop unlock via Chrome native PDF save; identity, extent, hash, qpdf and representative-render checks in autonomous-native receipt. Earlier save-control blocker resolved."
+      }
+    },
+    {
+      "id": "edwards1980",
+      "before": {
+        "id": "edwards1980",
+        "citation": "Edwards DS (1980). Evidence for the sporophytic status of the Lower Devonian plant Rhynia gwynne-vaughanii Kidston and Lang. Review of Palaeobotany and Palynology 29: 177-188",
+        "doi": "10.1016/0034-6667(80)90057-3",
+        "link": "https://doi.org/10.1016/0034-6667(80)90057-3",
+        "kind": "paper",
+        "needed_for": "taxa/rhynia-gwynne-vaughanii.md",
+        "what_for": "Life-cycle evidence for Rhynia as a sporophyte (sporangia, axes, spores); axis diameter, plant height (currently about 20 cm from the Aberdeen Rhynie web resource only), tracheid and stomatal data. Kidston & Lang 1917 and 1920 (open, BHL) give the original description",
+        "priority": "1",
+        "access": "Elsevier",
+        "status": "needed",
+        "local_file": "",
+        "added": "2026-10-27",
+        "notes": "Not checked against the card (card cites the web resource for size). OpenAlex: closed; 2026-10-29: article/PDF route available but no file saved; Chrome native-save follow-up pending (Mac locked again). See docs/barry-to-action.md. This is not an entitlement failure."
+      },
+      "after": {
+        "id": "edwards1980",
+        "citation": "David S. Edwards, (1980). Evidence for the sporophytic status of the lower devonian plant rhynia gwynne-vaughanii kidston and Lang. Review of Palaeobotany and Palynology 29: 177-188",
+        "doi": "10.1016/0034-6667(80)90057-3",
+        "link": "https://doi.org/10.1016/0034-6667(80)90057-3",
+        "kind": "paper",
+        "needed_for": "taxa/rhynia-gwynne-vaughanii.md",
+        "what_for": "Life-cycle evidence for Rhynia as a sporophyte (sporangia, axes, spores); axis diameter, plant height (currently about 20 cm from the Aberdeen Rhynie web resource only), tracheid and stomatal data. Kidston & Lang 1917 and 1920 (open, BHL) give the original description",
+        "priority": "1",
+        "access": "UTAS institutional publisher access",
+        "status": "local-copy-held",
+        "local_file": "closed/edwards1980_elsevier.pdf",
+        "added": "2026-10-27",
+        "notes": "Not checked against the card (card cites the web resource for size). OpenAlex: closed; 2026-10-29: article/PDF route available but no file saved; Chrome native-save follow-up pending (Mac locked again). See docs/barry-to-action.md. This is not an entitlement failure.; Recovered 2026-10-29 after desktop unlock via Chrome native PDF save; identity, extent, hash, qpdf and representative-render checks in autonomous-native receipt. Earlier save-control blocker resolved."
+      }
+    },
+    {
+      "id": "mark2011",
+      "before": {
+        "id": "mark2011",
+        "citation": "Mark DF, Rice CM, Fallick AE, Trewin NH, Lee MR, Boyce A, Lee JKW (2011). 40Ar/39Ar dating of hydrothermal activity, biota and gold mineralization in the Rhynie hot-spring system, Aberdeenshire, Scotland. Geochimica et Cosmochimica Acta 75: 555-569",
+        "doi": "10.1016/j.gca.2010.10.014",
+        "link": "https://doi.org/10.1016/j.gca.2010.10.014",
+        "kind": "paper",
+        "needed_for": "taxa/rhynie-chert-biota.md; taxa/aglaophyton-majus.md; taxa/asteroxylon-mackiei.md; docs/audits/2026-10-27-tranche2-audit-a.md",
+        "what_for": "The 40Ar/39Ar ages (403.9 +/- 2.1 Ma raw; 407.1 +/- 2.2 recalculated; reprocessed 407.6 +/- 2.2 preferred) and the sample-by-sample basis, and the c. 700 kyr deposition estimate against Parry et al.'s 1.4 Myr. Sets the numerical age of the best-dated early land ecosystem",
+        "priority": "1",
+        "access": "Elsevier",
+        "status": "needed",
+        "local_file": "",
+        "added": "2026-10-27",
+        "notes": "Known through the Parry et al. 2013 reply and Edwards et al. 2017 (both read); the paper itself abstract only (audit A). OpenAlex: closed; 2026-10-29: article/PDF route available but no file saved; Chrome native-save follow-up pending (Mac locked again). See docs/barry-to-action.md. This is not an entitlement failure."
+      },
+      "after": {
+        "id": "mark2011",
+        "citation": "D.F. Mark, C.M. Rice, A.E. Fallick, N.H. Trewin, M.R. Lee, A. Boyce, J.K.W. Lee, (2011). 40Ar/39Ar dating of hydrothermal activity, biota and gold mineralization in the Rhynie hot-spring system, Aberdeenshire, Scotland. Geochimica et Cosmochimica Acta 75: 555-569",
+        "doi": "10.1016/j.gca.2010.10.014",
+        "link": "https://doi.org/10.1016/j.gca.2010.10.014",
+        "kind": "paper",
+        "needed_for": "taxa/rhynie-chert-biota.md; taxa/aglaophyton-majus.md; taxa/asteroxylon-mackiei.md; docs/audits/2026-10-27-tranche2-audit-a.md",
+        "what_for": "The 40Ar/39Ar ages (403.9 +/- 2.1 Ma raw; 407.1 +/- 2.2 recalculated; reprocessed 407.6 +/- 2.2 preferred) and the sample-by-sample basis, and the c. 700 kyr deposition estimate against Parry et al.'s 1.4 Myr. Sets the numerical age of the best-dated early land ecosystem",
+        "priority": "1",
+        "access": "UTAS institutional publisher access",
+        "status": "local-copy-held",
+        "local_file": "closed/mark2011_elsevier.pdf",
+        "added": "2026-10-27",
+        "notes": "Known through the Parry et al. 2013 reply and Edwards et al. 2017 (both read); the paper itself abstract only (audit A). OpenAlex: closed; 2026-10-29: article/PDF route available but no file saved; Chrome native-save follow-up pending (Mac locked again). See docs/barry-to-action.md. This is not an entitlement failure.; Recovered 2026-10-29 after desktop unlock via Chrome native PDF save; identity, extent, hash, qpdf and representative-render checks in autonomous-native receipt. Earlier save-control blocker resolved."
+      }
+    }
+  ],
+  "supplement_receipt": {
+    "generated": "2026-10-29",
+    "doi": "10.1016/j.gca.2010.10.014",
+    "scope": "Mark 2011 supplementary files EA1-EA5; public Elsevier CDN retrieval only; no credentials or proxy cookies used for the public requests.",
+    "method": "EA1 was byte-copied from the existing Downloads file. EA2-EA5 were fetched once each from the original unauthenticated ars.els-cdn.com URLs. EA1 also received a one-time unauthenticated HEAD check.",
+    "files": [
+      {
+        "id": "mark2011_EA1",
+        "description": "EA1 electron microprobe data",
+        "path": "library/closed/mark2011_EA1.jpg",
+        "proxy_url": "https://ars-els-cdn-com.ezproxy.utas.edu.au/content/image/1-s2.0-S0016703710005934-fx1.jpg",
+        "public_url": "https://ars.els-cdn.com/content/image/1-s2.0-S0016703710005934-fx1.jpg",
+        "http_status": 200,
+        "content_type": "image/jpeg",
+        "content_length": 37641,
+        "retrieval": "Existing /Users/bwbrook/Downloads/1-s2.0-S0016703710005934-fx1.jpg byte-copied; public URL HEAD verified.",
+        "format_check": "JPEG decoded and visually inspected; electron-microprobe tables legible.",
+        "bytes": 37641,
+        "sha256": "6a6c94b1032bdcfea8f0f9e861f1597e8fcaf8b4661d4c7d059a4b2141b54275"
+      },
+      {
+        "id": "mark2011_EA2",
+        "description": "EA2 oxygen isotopes",
+        "path": "library/closed/mark2011_EA2.jpg",
+        "proxy_url": "https://ars-els-cdn-com.ezproxy.utas.edu.au/content/image/1-s2.0-S0016703710005934-fx2.jpg",
+        "public_url": "https://ars.els-cdn.com/content/image/1-s2.0-S0016703710005934-fx2.jpg",
+        "http_status": 200,
+        "content_type": "image/jpeg",
+        "content_length": 33144,
+        "retrieval": "Unauthenticated public GET.",
+        "format_check": "JPEG decoded and visually inspected; oxygen-isotope table legible.",
+        "bytes": 33144,
+        "sha256": "38056565f9e3401d09625f6651687dc5e4b82dc560535e5449dca1d0501e4ef1"
+      },
+      {
+        "id": "mark2011_EA3",
+        "description": "EA3 R108E data",
+        "path": "library/closed/mark2011_EA3.txt",
+        "proxy_url": "https://ars-els-cdn-com.ezproxy.utas.edu.au/content/image/1-s2.0-S0016703710005934-mmc3.txt",
+        "public_url": "https://ars.els-cdn.com/content/image/1-s2.0-S0016703710005934-mmc3.txt",
+        "http_status": 200,
+        "content_type": "text/plain",
+        "content_length": 43580,
+        "retrieval": "Unauthenticated public GET.",
+        "format_check": "Non-HTML ISO-8859 text; 76 CR-delimited lines and 5,903 numeric tokens; raw tabular data retained without transcription.",
+        "bytes": 43580,
+        "sha256": "9ffabb38194158853cd86baf4a483ab40fb923f8f5c33640079c15342361edfd"
+      },
+      {
+        "id": "mark2011_EA4",
+        "description": "EA4 R135B data",
+        "path": "library/closed/mark2011_EA4.txt",
+        "proxy_url": "https://ars-els-cdn-com.ezproxy.utas.edu.au/content/image/1-s2.0-S0016703710005934-mmc4.txt",
+        "public_url": "https://ars.els-cdn.com/content/image/1-s2.0-S0016703710005934-mmc4.txt",
+        "http_status": 200,
+        "content_type": "text/plain",
+        "content_length": 50583,
+        "retrieval": "Unauthenticated public GET.",
+        "format_check": "Non-HTML ISO-8859 text; 82 CR-delimited lines and 6,782 numeric tokens; raw tabular data retained without transcription.",
+        "bytes": 50583,
+        "sha256": "9fbc1ea27bc5933ab6360dac94380292078441ebe96782cb7df815e2569b14eb"
+      },
+      {
+        "id": "mark2011_EA5",
+        "description": "EA5 And1 data",
+        "path": "library/closed/mark2011_EA5.txt",
+        "proxy_url": "https://ars-els-cdn-com.ezproxy.utas.edu.au/content/image/1-s2.0-S0016703710005934-mmc5.txt",
+        "public_url": "https://ars.els-cdn.com/content/image/1-s2.0-S0016703710005934-mmc5.txt",
+        "http_status": 200,
+        "content_type": "text/plain",
+        "content_length": 28945,
+        "retrieval": "Unauthenticated public GET.",
+        "format_check": "Non-HTML ISO-8859 text; 58 CR-delimited lines and 3,826 numeric tokens; raw tabular data retained without transcription.",
+        "bytes": 28945,
+        "sha256": "32001504ceaa36c53b90c395292f88a3cee0cd72d77a7a3ad789e467958912c7"
+      }
+    ],
+    "summary": {
+      "files_archived": 5,
+      "public_requests": 5,
+      "public_http_200": 5,
+      "access_control_bypassed": false,
+      "scientific_transcription_or_code_execution": false
+    }
+  },
+  "counts": {
+    "main_texts": 12,
+    "supporting_files": 5,
+    "assets": 17,
+    "bytes": 34942314,
+    "pdf_pages": 246,
+    "csv_status_after": {
+      "needed": 348,
+      "open-copy-held": 33,
+      "local-copy-held": 111
+    }
+  },
+  "source_qualifications": [
+    "Stable Crossref DOI lookup/article URLs and source identity are retained. Temporary CDN query tokens were omitted. Several exact numeric PDF endpoint URLs were not retained across browser session resets; this does not change file identity, issue pagination or recorded source route.",
+    "Edwards1986 has a DOI containing1982 but the verified print issue is1986.",
+    "Low native text counts on some old Oxford and Edwards1980 pages correspond to figure/table content; rendered pages were inspected. Native text presence alone is not a completeness certificate."
+  ],
+  "browser_diagnosis": "Initial Download clicks sometimes preceded control hydration; inspecting fresh native state and clicking the hydrated control opened the Save panel. A stale record attempted an existing filename once; the OS replacement prompt was cancelled before overwrite. Fanning SHA remained unchanged, and all delivered files were independently identified.",
+  "remaining_actions": [
+    {
+      "id": "kasper1972",
+      "url": "https://www-jstor-org.ezproxy.utas.edu.au/stable/2441116",
+      "status": "Chrome UTAS JSTOR institutional access confirmed; Download opened Terms and Conditions with Accept and download. Agent cancelled and closed; Barry action required for explicit terms acceptance."
+    }
+  ],
+  "tabs_at_close": {
+    "chrome_agent_tabs": 0,
+    "in_app_agent_tabs": 0
+  },
+  "downloads_cleanup": {
+    "files_moved": 1,
+    "archive": "library/closed/mark2011_EA1.jpg",
+    "recoverable_trash": "/Users/bwbrook/.Trash/silurian-literature-20261029-autonomous-checkpoint3/1-s2.0-S0016703710005934-fx1.jpg",
+    "sha256": "6a6c94b1032bdcfea8f0f9e861f1597e8fcaf8b4661d4c7d059a4b2141b54275",
+    "verification": "Source/archive matched before move; destination hash matched after. No other Downloads files moved."
+  }
+}

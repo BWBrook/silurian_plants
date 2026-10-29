@@ -189,3 +189,11 @@ the Mac is unlocked. Additional older Elsevier and BSA backfile checks found acc
 gaps; those need targeted author/repository alternatives rather than repeated
 unchanged publisher attempts. Their metadata and individual outcomes are embedded
 in the wave2 receipt. All collection tabs are closed.
+
+The native-save follow-up then recovered all ten Oxford candidates, Edwards 1980
+and Mark 2011 plus its five supporting files. The autonomous total is 97 main
+texts. The former Oxford/native-save queue is complete; do not retry it as needed
+literature. The remaining three Barry-action cases are Breuer's ResearchGate
+security check, Bulls Head's JSTOR verification and Pertica's explicit JSTOR terms
+step. Targeted public-copy searches for older backfiles remain the next automated
+lane. The native-follow-up audit and receipt record the final holdings and checks.

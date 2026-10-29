@@ -208,3 +208,11 @@ files and Toledo's supplement close two separate SI gaps. The autonomous total i
 `docs/audits/2026-10-29-autonomous-wave2.md` and
 `work/codex/literature/2026-10-29-autonomous-wave2.json` for the file index, scan/OCR
 qualifications and remaining save/access routes. Scientific readings are pending.
+
+The subsequent native-save follow-up recovered all ten Oxford candidates plus
+Edwards 1980 and Mark 2011, with Mark's five supporting files. The autonomous total
+is now 97 main texts, 46 supporting files and one erratum. The CSV has 348 needed,
+111 local-copy-held and 33 open-copy-held rows. The earlier desktop-save blockers
+are resolved; see `docs/audits/2026-10-29-autonomous-native.md` and its matching
+receipt. Pertica now has a confirmed JSTOR institutional route requiring Barry's
+explicit terms action, recorded separately from entitlement gaps.
