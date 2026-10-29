@@ -437,8 +437,8 @@ Rows: the log-likelihood over (T0, rate) with psi profiled out; the profile for 
 Implements the estimator and validation harness of `docs/f3-shape.md` (v3, "What F3 reports" and "Validation before any real-data
 result"). First built by Claude Sonnet 5.5 (`claude-sonnet-5-5`), 2026-10-28, to the construction designed by Claude Opus 5.5, and
 repaired on 2026-10-29 by the same Sonnet to Opus's design after Codex's implementation review (`docs/audits/2026-10-29-f3-implementation-review.md`,
-I1 to I4). Nothing here has been run on real data: there is no real unit table yet, and no validation cell has been run beyond five
-replicates, which prove the harness runs and time it. The as-built smoke run (equal-duty H0, delay-grid H0m, logistic class, boundary draws, χ²
+I1 to I4). Nothing here has been run on real data: there is no real unit table yet. The development grid (21 cells × 1,000 replicates on the
+synthetic design, 2026-10-29) is below; it binds nothing, because the binding validation runs on the real design. The as-built smoke run (equal-duty H0, delay-grid H0m, logistic class, boundary draws, χ²
 comparison) is in `c7729ad`, its count-matched re-run in `69f2ef4` and the 60-against-400 boundary-draw check in `b2c6443`.
 
 ### Files
@@ -457,7 +457,7 @@ comparison) is in `c7729ad`, its count-matched re-run in `69f2ef4` and the 60-ag
   (docstring). The estimator sees only ranges, recorded classes, clusters and outcomes and must find tau itself.
 - `validate.py`: the harness (21 cells) and the two-stage acceptance rule (`stage1`, `stage2`, `pass_probability`). Writes
   `out/validation_<tag>.csv` (one row per cell), `_reps.csv` (one row per replicate) and `.meta.json` (root seed 20261030, spawn keys, settings, file hashes).
-  `out/validation_dev*` currently hold the five-replicate timing run; the full run overwrites them.
+  `out/validation_dev*` hold the development grid; the replicate table is committed gzipped (`validation_dev_reps.csv.gz`, 10.7 MB uncompressed).
 - `test_envelope.py`: 68 tests; the whole of `models/f3` is 142 tests, all passing (about 25 s).
 
 ```bash
@@ -575,30 +575,60 @@ are not, and are reported, not accepted against.
   (fits flagged), and `seconds_per_rep`. The chi-square comparison columns are gone.
 - **Seeds.** Replicate j of cell c descends from `SeedSequence(20261030, spawn_key=(c, j))`; child 0 simulates. A stage-2 batch uses `--start 1000`.
 
-Seconds per replicate, five replicates per cell on mac-mini (8 workers, load average about 4; each replicate runs on one core), 105 replicates in 21 s:
+### Development grid (2026-10-29; binds nothing)
 
-| Cell | mean | max | Cell | mean | max | Cell | mean | max |
-|---|---|---|---|---|---|---|---|---|
-| A1 | 0.75 | 2.0 | A8 | 1.78 | 2.7 | D1 | 0.80 | 1.8 |
-| A2 | 0.87 | 1.7 | A9 | 1.51 | 2.2 | D2 | 1.63 | 4.4 |
-| A3 | 1.33 | 3.3 | A10 | 2.97 | 8.0 | D3 | 0.84 | 1.9 |
-| A4 | 0.53 | 1.0 | A11 | 1.04 | 1.7 | D4 | 0.61 | 1.0 |
-| A5 | 1.27 | 2.9 | A12 | 0.89 | 1.0 | D5 | 1.06 | 3.0 |
-| A6 | 1.17 | 1.9 | A13 | 5.29 | 9.3 | D6 | 0.82 | 1.3 |
-| A7 | 1.34 | 3.6 | A14 | 0.83 | 1.1 | | | |
-| | | | A15 | 1.39 | 5.4 | | | |
+21 cells × 1,000 replicates in 4,710 s on mac-mini (8 workers; 1.8 s per replicate on average, from 0.4 s in A4 to 5.6 s in A13). No fit was flagged except 0.2% in A5. Results are in `out/validation_dev.csv`, and the code hashes in the meta file match commit `6f9342c`.
 
-On a detection-rich synthetic table (220 older units, 8 detected, two classes; scratch, not stored) the nine origin sets took 3 s, with the full SLSQP multi-start at most grid points, so the heavy path is within budget too.
-No fit was flagged in the 105 replicates. In a separate 100-replicate look at A2, A6, A9 and A10 (scratch, not stored) 0.03% of fits were flagged: all H1 root-finding
-at t0 with spreads of 0.07 to 0.15 between starts, because with finite k the supremum has several local optima at vertices (all of the target on one piece); the best start is kept and
-an added start tries the best vertex by likelihood.
+How to read the table:
+- **Coverage** is over all replicates, at the count-matched critical value (δ = 0).
+- **The f\* columns** are per history class, given only where the class contains the truth.
+- **Origin** is the reported grid set at the applicable read-out (H0c / H0m / H0).
+- **f\* medians** are window-relative.
+- **The last column** is the share of f_min = 1 origin sets that are unbounded, with their median older endpoint and the median τ̂.
 
-### What five replicates show (plumbing, not validation)
+| Cell | Truth | H0c | H0m | H0 | H1 | H0, non-trivial | Origin | f\* median H0c / H0 / H1 | f_min = 1: unbounded; endpoint (τ̂) |
+|---|---|---|---|---|---|---|---|---|---|
+| A1 | H0c, f = 1 | 0.978 | 0.978 | 0.978 | 0.987 | 0.927 | 0.982 / 1.000 / 0.982 | 0.73 / 0.76 / 2.13 | 0.05; 493 (477.1) |
+| A2 | H0c, f = 0.3 | 0.973 | 0.985 | 0.986 | 0.990 | 0.980 | 1.000 / 1.000 / 1.000 | 0.56 / 0.59 / 1.12 | 0.29; 489 (471.3) |
+| A3 | H0c, f = 0.1 | 0.967 | 0.971 | 0.971 | 0.981 | 0.967 | 0.999 / 1.000 / 0.999 | 0.44 / 0.47 / 0.60 | 0.19; 471 (452.8) |
+| A4 | A2, k = ∞ | 0.964 | 0.978 | 0.980 | 0.991 | 0.970 | 1.000 / 1.000 / 1.000 | 0.54 / 0.57 / 1.06 | 0.24; 489 (471.3) |
+| A5 | A2, k = 0.8 | 0.968 | 0.977 | 0.979 | 0.992 | 0.970 | 1.000 / 1.000 / 1.000 | 0.53 / 0.59 / 1.24 | 0.30; 489 (471.3) |
+| A6 | step, 4.3 Myr | – | 0.981 | 0.981 | 0.995 | 0.980 | 1.000 / 1.000 / 1.000 | – / 0.56 / 1.15 | 0.14; 485 (469.4) |
+| A7 | ramp | – | 0.981 | 0.981 | 0.986 | 0.979 | 1.000 / 1.000 / 1.000 | – / 0.69 / 1.30 | 0.11; 483 (469.4) |
+| A8 | logistic | – | 0.973 | 0.973 | 0.980 | 0.966 | 1.000 / 1.000 / 1.000 | – / 0.72 / 1.38 | 0.08; 487 (471.3) |
+| A9 | hide | – | – | 0.976 | 0.985 | 0.976 | – / 1.000 / – | – / 0.57 / 1.23 | 0.05; 477 (469.4) |
+| A10 | hide_h1 | – | – | – | 0.971 | – | – / 1.000 / – | – / 0.59 / 1.18 | 0.04; 477 (469.4) |
+| A11 | A2, class trend | 0.961 | 0.973 | 0.973 | 0.983 | 0.959 | 1.000 / 1.000 / 1.000 | 0.56 / 0.61 / 1.08 | 0.22; 491 (471.3) |
+| A12 | A9, class trend | – | – | 0.982 | 0.987 | 0.982 | – / 1.000 / – | – / 0.64 / 1.17 | 0.04; 477 (469.4) |
+| A13 | A2, scale 0.2 | 0.975 | 0.976 | 0.976 | 0.980 | 0.897 | 1.000 / 1.000 / 1.000 | 0.76 / 0.77 / 1.02 | 0.00; 487 (477.1) |
+| A14 | A1, t0 = 466 | 0.961 | 0.961 | 0.961 | 0.978 | 0.821 | 0.972 / 0.997 / 0.972 | 0.77 / 0.80 / 1.72 | 0.02; 475 (469.4) |
+| A15 | A2, t0 = 500 | 0.946 | 0.956 | 0.957 | 0.971 | 0.950 | 1.000 / 1.000 / 1.000 | 0.51 / 0.56 / 1.29 | 0.77; 495 (491.0) |
+| D1 | misassignment 0.1 | 0.968 | 0.981 | 0.982 | 0.990 | 0.974 | 1.000 / 1.000 / 1.000 | 0.55 / 0.59 / 1.10 | 0.28; 489 (471.3) |
+| D2 | older reporting 0.7 | 0.965 | 0.978 | 0.979 | 0.985 | 0.972 | 1.000 / 1.000 / 1.000 | 0.46 / 0.49 / 0.93 | 0.28; 481 (469.4) |
+| D3 | confinement 0.5 | 0.978 | 0.984 | 0.984 | 0.986 | 0.980 | 1.000 / 1.000 / 1.000 | 0.44 / 0.48 / 0.68 | 0.24; 473 (469.4) |
+| D4 | k 0.8, fitted at 2 | 0.956 | 0.970 | 0.971 | 0.981 | 0.957 | 1.000 / 1.000 / 1.000 | 0.51 / 0.57 / 1.10 | 0.29; 491 (471.3) |
+| D5 | boundaries older | 0.945 | 0.966 | 0.968 | 0.984 | 0.958 | 1.000 / 1.000 / 1.000 | 0.52 / 0.57 / 1.08 | 0.24; 487 (471.3) |
+| D6 | boundaries younger | 0.959 | 0.978 | 0.979 | 0.986 | 0.965 | 1.000 / 1.000 / 1.000 | 0.57 / 0.59 / 1.06 | 0.30; 493 (471.3) |
 
-- A1 and A14 are almost wholly trivial (tau at or past t0 in 5 of 5 and 4 of 5 replicates): when a = 1 up to t0 the first appearance sits at the stage holding t0. Their coverage is dominated by trivial replicates, so the
-  full run needs the non-trivial coverage beside it.
-- In A10 (hide_h1) two of five replicates were not covered, both with the first appearance below tau0 (445.2 and 443.1 against 452.8): the Katian units, where a = 1, are then older units, and by chance none detected. That is the
-  selection effect the grid is meant to expose; the full run will say whether `crit_shift` is needed.
+- **Calibration.**
+  - **Every acceptance cell would pass stage 1** (at least 944 of 1,000) for every class that contains its truth. That includes the hiding truths (A9, A10, A12), class composition confounded with age (A11, A12), and the off-grid H0m members (A6–A8).
+  - **The lowest is A15 under H0c,** at 946. A shift δ = 0.11 would bring it to 0.95. All other `delta95` values are 0.
+  - **Origin sets cover at 0.96–1.00** at the applicable read-out. They are conservative where the truth lies above the read-out (f = 0.3 against f_min = 0.1).
+- **Non-uniformity** (diagnostic). Non-trivial coverage is lowest in the cells with a = 1 up to t0, where a gap below t0 is itself an anomaly: 0.82 in A14, 0.90 in A13 and 0.93 in A1. Elsewhere it is 0.95–0.98.
+- **Diagnostics against the effective target.** The effective target is the path times older reporting, averaged over regions. Coverage stays at or above 0.945. The lowest is D5 under H0c, truth boundaries older than the chart (δ = 0.07).
+- **Diagnostics against the nominal path.** Coverage falls when f\* is read as the encounter intensity where the lineage lived:
+  - D2 (older reporting 0.7): 0.934 under H0c and 0.950 under H0;
+  - D3 (confinement to half the regions): 0.907 under H0c and 0.936 under H0.
+
+  f\* bounds reported, range-averaged intensity. The biological translation must say so (`lr_nominal_*` in the replicate table).
+- **What the all-path class costs.** H0's f\* exceeds H0c's by only 0.01–0.06, and H0m's is within 0.01 of H0's. In the Poisson limit, the zero-count likelihood depends on a path only through its exposure-weighted mean, which is the target. Moving intensity between pieces therefore changes little; the chord bound's curvature and the clusters account for the rest. The primary class is affordable. H1's f\* median is 0.6–2.1, and it is rarely informative.
+- **Informativeness at this design** (about 505 units, about 110 older, a median of zero older detections):
+  - f_min = 1 origin sets are bounded in 70–96% of replicates (23% in A15), and end about 4–22 Myr beyond τ̂.
+  - f_min = 0.1 sets are unbounded in 95–100%, and f_min = 0.01 sets in all.
+  - H0m sets end 10 Myr (the lag) beyond H0c's, and H0's equal H0c's.
+  - f\* at 459.1 is finite under H0 in 3–33% of replicates.
+
+  The real table's size will set the power.
 
 ### Open choices
 

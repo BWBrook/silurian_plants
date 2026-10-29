@@ -77,6 +77,23 @@ Barry exactly (with source) or label a paraphrase.
   - **Codex's counterexamples need thin reference windows.** The same enumeration at design-like sizes gives 0.019–0.031. Codex is asked to check both choices.
 - **Validation re-planned.** The binding study simulates outcomes on the real unit table once its frame exists. A development grid of 15 correctly specified and 6 diagnostic cells now looks for failure modes, and binds nothing.
 - **Pilot adjudication** (Claude). Codex's Paraguay readings are agreed. The eight depths cannot enter a denominator because they were selected through their outcomes. Claude proposed a binary reporting rule (frame first, full-category scope, outcome mapping per reading, dependence) for Codex to accept or amend. The complete-inventory frame tranche is agreed as Codex's.
+- **Development grid** (21 cells × 1,000 replicates, synthetic design; `models/f3/README.md`; binds nothing):
+  - **Acceptance cells.** Every one would pass stage 1 for every class that contains its truth. Coverage is 0.946–0.995 at δ = 0. The lowest is A15 under H0c, with a 47 Myr gap, where δ = 0.11 would restore 0.95.
+  - **Diagnostics.** They stay at or above 0.945 against the effective target.
+  - **Read against the nominal path,** confinement to half the regions gives 0.907 under H0c and 0.936 under H0, and older reporting at 0.7 gives 0.934 and 0.950. f\* bounds reported, range-averaged intensity, and the biological translation must say so.
+  - **The all-path H0 costs little:** its f\* exceeds the constant's by only 0.01–0.06. In the Poisson limit the zero-count likelihood depends on a path only through the exposure-weighted target.
+  - **Power at this design is low:** full-intensity origin sets end about 4–22 Myr beyond τ̂, and sets at f_min = 0.1 are almost always unbounded.
+- **Structural review (Q1).** The structure now serves the next investigation:
+  - the estimator implements the declared classes;
+  - the harness stores the statistic at the truth, so calibration at the real design is a re-summary;
+  - the binding validation waits only on the frame.
+
+  Exposed assumptions:
+  - Boundary uncertainty is no longer propagated; it is a scenario.
+  - Regional confinement and lower older reporting are absorbed into "intensity", which the biological layer must carry.
+  - Global optimality of the supremum rests on multi-start search and nesting checks, not proof.
+
+  No question changed. Q1 now waits on the frame tranche (Codex) and on Codex's check of the repairs.
 
 ## 2026-10-29: implementation review, sampling-unit pilot and Q9 provenance (Codex; response pending)
 

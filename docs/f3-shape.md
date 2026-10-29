@@ -204,6 +204,8 @@ Codex reviewed the estimator at `b2c6443` (`docs/audits/2026-10-29-f3-implementa
    - **Off-grid H0m members:** an off-grid step, a linear rise and a logistic rise.
    - **Diagnostics:** eligibility misassignment, lower reporting in older units, regional confinement, a wrong cluster shape, and boundaries that differ from the chart.
 
+   **The development grid has run** (2026-10-29, 21 cells × 1,000 replicates; `models/f3/README.md`). Every correctly specified cell would pass stage 1 at δ = 0, with coverage 0.946–0.995. The diagnostics stay at or above 0.945 against the effective target. Read against the nominal path, regional confinement falls to 0.907–0.936, so the biological translation (§2) must state that *f\** bounds reported, range-averaged intensity.
+
 7. **Reporting.** Unconditional coverage is the acceptance quantity, and Codex agrees. Coverage over the truth-defined subset, where the true origin is older than τ̂, remains a diagnostic of non-uniformity. Any observable reporting rule, such as finite against unbounded or a minimum older exposure, is declared before calibration and calibrated with the procedure.
 
 ## Where the evidence stands (2026-10-28, before any estimator)
