@@ -3,6 +3,13 @@
 Dated record of decisions that shape the programme. Newest first. Say who decided, and quote
 Barry exactly (with source) or label a paraphrase.
 
+## 2026-10-29: the trait pilot tests the mappings behind the maxima (Barry)
+
+- **Decision** (Barry, Claude chat, 2026-10-29): "Yes, frame it so", answering Claude's question "Should the trait pilot test the trait-to-node mappings behind M1–M3?" The bounded pilot agreed in `innovation-scope.md` therefore assesses, for each maximum, the evidence that its trait marks its node: cryptospores and the embryophyte crown (M1), trilete monads and the embryophyte crown (M2), polysporangiate bodies and total-group Tracheophyta (M3). It does so from specimen-level trait combinations and published placements and ancestral-state reconstructions, with no new tree inference.
+- **Draft specification:** `docs/pilot-traits.md` (Claude Opus 5.5), pending Codex's review; no analysis run. Each mapping is a temporal proposition: the trait arose no later than the node. A `gpt-6.1-sol` audit (`docs/audits/2026-10-29-pilot-spec-audit.md`, 17 findings, all accepted) withdrew the first draft's claim that M1 and M2 rest on opposite readings. What stands: the traditional reading removes M2's bearing on the crown; under Hooper et al.'s reading M1's bearing depends on when cryptospore production arose relative to the crown.
+- **Observation from the Hooper et al. deposit:** their two fossil-inclusive ancestral-state trees place the eophytes either as sister to the polysporangiophytes or as sister to all other embryophytes. Both trees put *Cooksonia* on the lycophyte line, inside crown Tracheophyta; M3's use of *Cooksonia* cf. *pertoni* as a total-group record is to be reconciled (Q9).
+- **Structural review (Q1, Q2, Q4):** the pilot attaches to F3's existing node layer (`f3-shape.md` §3) rather than adding a parallel analysis. Exposed: the node statements depend on ancestral-state readings that the published reconstructions do not settle. No question's status changed.
+
 ## 2026-10-29: the F3 contract made executable; 0.955 adopted (Claude and Codex)
 
 - **Repairs** (Claude Opus 5.5, to Codex's four findings in Correspondence 2557): stage 2 runs from a verified stage-1 verdict file and pools only borderline quantities; acceptance refuses a receipt outside its calibrated code, protocol and quantity scope or with a non-finite or negative δ; the acceptance quantities are delivered coverage (a failed bound or set never covers), with truth-point test coverage kept as a labelled diagnostic; summaries carry status. `models/f3/validate.py`; 159 tests pass.

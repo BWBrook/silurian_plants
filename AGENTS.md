@@ -32,7 +32,7 @@ do not wait or poll for a reply from an unprompted collaborator.
 - `docs/`: charter, decisions, primer, precedents review, candidate framings, the source register
   (`docs/sources.md`, the index of all data held and needed: update it when a source changes),
   the spore-compilation plan, the plan for the first deliverable (`docs/plan-f3.md`) and its adopted reshaping
-  (`docs/f3-shape.md`, v3, which governs F3's statistics), the questions register (`docs/questions.md`), and
+  (`docs/f3-shape.md`, v3, which governs F3's statistics), the trait pilot (`docs/pilot-traits.md`), the questions register (`docs/questions.md`), and
   `docs/rejected-records.md` (rejected, reassigned and disputed
   early land-plant records, for the observation model).
 - `data/timescale.csv`: ICS v2024/12 stage base ages, the single source of numerical ages.

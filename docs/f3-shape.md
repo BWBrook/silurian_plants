@@ -71,7 +71,7 @@ This layer is labelled and rests on a named detection assumption. Under proporti
 
 ### 3. Node implication
 
-This layer is labelled and rests on a named mapping (the table above).
+This layer is labelled and rests on a named mapping (the table above). The evidence for each mapping is assessed by the trait pilot (`pilot-traits.md`; framing decided by Barry, 2026-10-29).
 
 **Verdicts** (V2-R4):
 - **incompatible with the specified encounter histories;**

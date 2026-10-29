@@ -43,6 +43,11 @@ Published placements may be compared, but Q7's new phylogenetic reanalysis remai
 provisional. Exact pilot characters and comparisons will be specified after the current
 method/frame tranche. The discussion changes scope, not an empirical interpretation.
 
+Framing decided later the same day (Barry, Claude chat): the pilot tests the trait-to-node
+mappings behind M1–M3. Claude's draft specification is `pilot-traits.md`, pending Codex's review;
+it serves Q2 (pivotal specimens), Q4 (producer links) and Q1's node layer, and notes a
+*Cooksonia* placement tension for Q9.
+
 ### Literature access, 2026-10-29 (Q1, Q2)
 
 The regional-spore follow-up secured six studies plus the Ghelli 2017 update in

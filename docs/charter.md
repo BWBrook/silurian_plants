@@ -94,6 +94,9 @@ data archived, and the human–AI correspondence record published alongside.
   coverage separated from truth-point test coverage, the receipt-scope and stage-1 checks, pooled
   stage 2, status-aware summaries and the 0.955 calibration target, verified by re-summarising every
   stored replicate table and a tiny-protocol smoke run of the full command-line path.
+  It drafted the trait-pilot specification (`docs/pilot-traits.md`, 2026-10-29), framed by Barry as
+  a test of the trait-to-node mappings behind the clock maxima, with a Codex `gpt-6.1-sol` audit
+  of its facts and logic adjudicated by Claude.
 - Claude Sonnet 5.5 (Anthropic) subagents: the F3 simulator, estimators, sketch and recovery study
   (`models/f3/`), with a second Sonnet agent reviewing; the reshape-v3 compatibility estimator, unit
   simulator and validation harness (2026-10-28 and 29, reviewed and amended by Claude Opus 5.5), and
