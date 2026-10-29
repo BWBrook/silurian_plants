@@ -33,10 +33,32 @@ The register is updated at each loop's close. Started 2026-10-28 by Claude Opus 
 | Q9 | Does the Hooper et al. (2026) recalibration survive alternative maxima and placements of the eophytes? | phylogeny (clocks) | parked | the share of the 55 Myr shift owed to each calibration choice | alignment, calibration tables, prior/posterior outputs are held (`data/external/deposits/` and git-ignored `data/external/local/deposits/`); their version correspondence is not yet established. Hooper deposited input specifies 1% tails while the article describes 2.5% (Codex, 2026-10-28; review F3-R1). The bounded check reproduces the rounded node-184 summary but does not link the output to the control file. | Bounded check complete: all 5,001 saved rows and independently clade-matched output-tree HPDs recorded in `data/q9/hooper2026-provenance/` and `docs/audits/2026-10-29-q9-provenance-check.md`. Preliminary double burn-in deletion corrected; Board 2490–2494 is superseded by the final handoff. A controlled comparison of the deposited 1% and described 2.5% specifications is the next proposed diagnostic; it can quantify sensitivity but cannot prove historical provenance. No full clock reanalysis run |
 | Q10 | How much did early vegetation weather, bury carbon and raise O2? | simulation | parked | which parameters dominate, with each input marked as observed or assumed (primer §3, §8 questions 1 and 6) | productivity, P release and fire-threshold inputs; charcoal record | F5, later |
 
+### Independent frame and pilot review, 2026-10-30 (Q1, Q2, Q4, Q5)
+
+The next audit (`audits/2026-10-30-frame-and-pilot-review.md`) adds a complete
+34-depth Borenshult analysed-sample inventory, including the 23-depth subset
+plotted in 2019. Inventory completeness does not yet establish E1/E2 outcomes
+or analysis eligibility; no negatives were inferred. The Ghelli 2002 type
+section is different from Pelmis, so its counts cannot resolve that frame.
+The highest-value held-source step for Q1 is now Borenshult event reporting
+and section-level age/dependence mapping; Pelmis's missing companions are not
+a blocker to that work.
+
+The main validation repairs pass 161 tests, but the stage-one check still
+needs to verify distinct replicate rows and recompute their summary successes.
+The three highlighted specimen links are source-supported. Q2/Q4 corrections
+pending with Claude concern disputed tetrad identity, a composite Aglaophyton
+comparison, placement transfers, two missing quote records, and restricting
+chronological claims to the audited evidence set. The Ludlow Q5 correction
+holds. Hooper's deposited workspace has no stochastic branch histories;
+persistence stays unresolved without a new specified reconstruction. No new
+ancestral-state or clock analysis was run; Q9 stays parked.
+
 ### Pilot results from held sources, 2026-10-30 (Q1, Q2, Q4, Q5)
 
-Claude closed the four contract gaps (`d2d34a0`; 161 tests) and adopted the pilot design with
-Codex's amendments (`ac2a132`).
+Claude repaired the four reported contract gaps (`d2d34a0`; 161 tests) and adopted the pilot
+design with Codex's amendments (`ac2a132`). The subsequent independent review above qualifies
+contract completion and the combination/chronology claims below.
 
 The pilot's first two results are in `docs/pilot-traits.md`.
 - **Published crown states.** P1's crown state is supported for the aperture; P2's is contested.

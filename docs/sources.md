@@ -40,7 +40,7 @@ relying on a particular generation.
 | Loop 1 occurrence tail (`data/occurrences/`) | observations, competing interpretations and sources for the oldest records of E1–E5 (229 observations, 324 readings), and an effort layer | held | `data/occurrences/` | derived; see its README |
 | PBDB collections, all taxa, Darriwilian–Emsian | 27,830 collections, the effort layer for body fossils; snapshot 2026-10-28 | local (raw) | `data/occurrences/raw/` (git-ignored) | CC0 |
 | Project spore dataset (MVD-A) | occurrences, vetted first appearances and stage presence from Palynodata plus Wellman 2013 | held | `data/spores/` | derived; see its README |
-| M2 sampling-unit interface pilot (Q1, Q2) | 15 material blocks, 90 E1/E2-by-reading outcomes; three audited candidate frames and 14 Hanadir chart depths. Hanadir 190.7 m now carries a primary study-scoped E1 negative with exact specimen linkage. Complete analysis denominator still unavailable | held | `data/units/`; validate with `tools/units.py check` | derived observations and paraphrases; source files remain local |
+| M2 sampling-unit interface pilot (Q1, Q2) | 15 material blocks, 90 E1/E2-by-reading outcomes; five candidate frames and 75 inventory rows (14 Hanadir, 27 Pelmis, 34 Borenshult). Hanadir 190.7 m now carries a primary study-scoped E1 negative with exact specimen linkage. Complete analysis denominator still unavailable | held | `data/units/`; validate with `tools/units.py check` | derived observations and paraphrases; source files remain local |
 | Steemans & Pereira 2002; Grahn et al. 2000 (Q1, Q2) | Miospore and companion chitinozoan studies of shared Paraguay borehole material; Palynodata 21733 and 20806. Eight observation-linked depths extracted; the stated 53-sample denominator cannot yet be reconstructed from their range charts | local | `library/open/steemanspereira2002.pdf`, `library/open/grahn2000.pdf`; URLs and hashes in `library/open.tsv` and `data/units/source_files.csv` | Public copies; no reuse licence assessed; full texts not committed |
 | Post-2006 spore literature | 182 priority papers; 33 open full texts extracted (370 assemblages, 97% of records verified in text; two texts fetched into `library/open/`); other papers remain to be obtained or extracted | partly held | `data/spores/sources/mvdb_*.csv` | access varies; see `docs/closed-literature.csv` |
 | Rubinstein et al. 2010 (Q1, Q2) | Paper and original supporting document, including stratigraphy and colour plate; acquired 2026-10-28, not yet incorporated in MVD-B or the occurrence adjudication. The supplement's plain-text extract `library/open/W1820528062_SI.txt` omits its four figures; use the original document for them | local | `library/open/W1820528062.pdf`, `library/open/W1820528062_SI.doc`; URLs and hashes in `library/open.tsv` | Publisher labels article Free Access; Crossref records Wiley terms, not a CC licence; keep local |
@@ -136,6 +136,17 @@ clock audit).
 | Palynological sampling effort | held | `data/external/spores/`, GAD in `data/external/deposits/` | documents reporting marine palynomorphs without spores |
 
 ## 9. Literature
+
+The 30 October frame/source review (`audits/2026-10-30-frame-and-pilot-review.md`)
+reconciles the held Rubinstein & Vajda 2019/2023 Borenshult accounts into one
+34-sample inventory, including the 23 plotted spore-bearing depths. No event
+outcomes were inferred for omitted depths. The held Ghavidel-Syooki &
+Winchester-Seeto 2002 paper concerns the Ghelli type section, not Pelmis, and
+cannot fill its inventory gap. Three source identities and their file hashes
+are added to `data/units/sources.csv` and `source_files.csv`; all DOIs were
+checked against Crossref. The same review records the absent saved branch
+histories in the Hooper deposit (`data/pilot/hooper2026-asr/scm_workspace_audit.json`)
+and independent specimen-source qualifications pending in Claude's pilot.
 
 The subsequent regional-spore batch (29 October 2026) secured six studies plus
 the linked Ghelli 2017 update: Ghavidel-Syooki 2016/2017 and 2021, El Diasty 2019,

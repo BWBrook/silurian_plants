@@ -1,0 +1,60 @@
+{
+  "audit_date": "2026-10-30",
+  "scope": "Inventory of held deposit; no reconstruction or clock run",
+  "archives": [
+    {
+      "path": "data/external/deposits/hooper2026-spore-evolution/01. Data.zip",
+      "sha256": "ce4ba716cf4ca62657ba8022052ec7ae3468d57f9b837e78301acfd9becdd7be",
+      "non_resource_fork_file_count": 1,
+      "serialized_members": []
+    },
+    {
+      "path": "data/external/deposits/hooper2026-spore-evolution/02. Ancestral State Estimation.zip",
+      "sha256": "9a3baeff1fd52d60c73d0b3d106211e533b0591b1728a403898c44843f6f0155",
+      "non_resource_fork_file_count": 245,
+      "serialized_members": [
+        {
+          "member": "02. Ancestral State Estimation/.RData",
+          "bytes": 3570,
+          "sha256": "e3ddac675d7b48043865c7ba45d1817b1ae6d6f477bf7ada23205451b0f9c74c"
+        }
+      ],
+      "non_csv_members": [
+        "02. Ancestral State Estimation/.Rhistory",
+        "02. Ancestral State Estimation/ext_tree.svg",
+        "02. Ancestral State Estimation/ASE code chunk.R",
+        "02. Ancestral State Estimation/zygnema sister.tre",
+        "02. Ancestral State Estimation/eophyte sister.tre",
+        "02. Ancestral State Estimation/.RData",
+        "02. Ancestral State Estimation/extant.tre"
+      ]
+    },
+    {
+      "path": "data/external/local/deposits/hooper2026-spore-evolution/03. Divergence Time Estimation.zip",
+      "sha256": "79fd06812eff714e32a566cadc1c15844640e0a150b4504a07999d2cef957a25",
+      "non_resource_fork_file_count": 20,
+      "serialized_members": []
+    }
+  ],
+  "r_version": "R 4.6.1 (2026-06-24)",
+  "workspace_objects": [
+    {
+      "name": ".Random.seed",
+      "r_class": "integer",
+      "length": 626
+    },
+    {
+      "name": "ext.tree",
+      "r_class": "phylo",
+      "length": 4,
+      "components": [
+        "edge",
+        "edge.length",
+        "Nnode",
+        "tip.label"
+      ]
+    }
+  ],
+  "conclusion": "No saved stochastic branch histories identified. SCM CSVs are node-state summaries; the R workspace contains no simmap or multiSimmap object. Persistence remains unresolved.",
+  "reproduction": "List non-resource-fork archive members; extract 02. Ancestral State Estimation/.RData; load into a new R environment and inspect every object class and component name, without sourcing deposited code."
+}

@@ -129,8 +129,11 @@ It and the 2016 original are one study, already reconciled in the regional-spore
 the 140-sample collection with the 27-sample subset and repeated MG-130 references
 versus table 1 ending at MG-129. Do not subtract 27 from 140 and fabricate 113
 negative trials. Methods identify Ghavidel-Syooki 2001, Ghavidel-Syooki and
-Winchester-Seeto 2002, and Ghavidel-Syooki and Vecoli 2007 as previous analyses of
-the section; their inventories are the next focused leads. The post-2006 material
+Winchester-Seeto 2002, and Ghavidel-Syooki and Vecoli 2007 as previous regional
+work. **Correction, 30 October:** the now-held 2002 paper is the western Ghelli
+type section, not eastern Pelmis Gorge; the earlier same-section description
+was incorrect. The 2001/2007 sources remain locality/inventory leads requiring
+their own checks (`2026-10-30-frame-and-pilot-review.md`). The post-2006 material
 must not silently join the Palynodata-to-2006 denominator.
 
 ### Khoshyeilagh comparisons (scoped admission assessment)

@@ -195,5 +195,11 @@ data archived, and the human–AI correspondence record published alongside.
   Hanadir sample provenance and bounded Balme access routes. The parent integrated the
   Hanadir frame inventory, a qualified reporting-rule proposal and data-integrity checks
   (`docs/audits/2026-10-29-f3-repairs-and-frame-review.md`), preserving the completed Q9 work.
+  On 2026-10-30 the parent integrated independent checks of Claude's validation repairs,
+  decisive specimen links and the Ghelli 2002 locality. It assembled and independently
+  reconciled the 34-depth Borenshult inventory and inspected the Hooper workspace for saved
+  branch histories. The three delegates used the inherited Codex model (exact variant not
+  exposed); no new ensemble or evolutionary reconstruction ran. Findings and pending
+  corrections are separated in `docs/audits/2026-10-30-frame-and-pilot-review.md`.
 
 `docs/decisions.md` records who decided what and when, for the eventual statement of AI roles.

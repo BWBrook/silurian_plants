@@ -1,6 +1,6 @@
 # Sampling-unit evidence: bounded M2 interface pilot
 
-Status: **pilot only, updated 29 October 2026 after the Hanadir and Pelmis source checks**. These tables implement the two-table interface agreed in
+Status: **pilot only, updated 30 October 2026 after the Borenshult and Ghelli source checks**. These tables implement the two-table interface agreed in
 `docs/f3-shape.md`. They contain 15 identifiable material blocks, each with E1 and E2 outcomes
 under `main`, `inclusive` and `outlier` (90 outcome rows). They are a purposeful evidence audit,
 not a complete denominator or a representative sample of Palynodata. No binary analysis input,
@@ -16,8 +16,8 @@ reference rate, first appearance or fossil-absence result is generated here.
 | `source_files.csv` | Every held article/supplement cited by the pilot, with SHA-256; multiple files are evidence for one source, not extra trials |
 | `age_models.csv` | Evidence-only age declarations; neither a within-stage density nor a geological joint uncertainty model has been adopted |
 | `candidates.csv` | Unresolved sample identities, incomplete denominators, duplicate mapping and unavailable source follow-ups |
-| `frames.csv` | Four source-selected candidate inventories and their remaining admission gaps; none is analysis-ready |
-| `frame_samples.csv` | 14 depths plotted in Hanadir's 1996 figure 2 and 27 Pelmis sample codes in the 2017 table 1; inventory only, without inferred sample outcomes |
+| `frames.csv` | Five source-selected candidate inventories and their remaining admission gaps; none is analysis-ready |
+| `frame_samples.csv` | 75 inventory rows: 14 Hanadir depths, 27 Pelmis codes and 34 Borenshult depths; inventory only, without inferred sample outcomes |
 | `reporting-rule.md` | Agreed core/three qualifications plus integrated productivity condition; no adapter or adopted binary data release yet |
 
 Check with `python3 tools/units.py check` (standard library only). The check rejects duplicate
@@ -90,6 +90,23 @@ any conversion to `models/f3/envelope.py`'s binary `Units` object. That adapter 
 not implemented before those choices are settled.
 
 ## Review and next tranche
+
+The 30 October review adds a complete **analysed-sample inventory** for
+Borenshult-1. Rubinstein & Vajda (2019) examined 34 samples; its spore chart
+plots 23 depths. The 2023 companion lists all 34 in both marine-phytoplankton
+charts and explicitly links the 23 spore-bearing samples to 2019. Independent
+transcription agrees on all depths and the subset relationship. The 11 omitted
+depths receive no inferred E1/E2 outcome. The 37.5 m sample, with only 25
+counted palynomorphs, remains in the inventory for eligibility assessment.
+This is one shared post-2006 study frame, not independent replication or part
+of the Palynodata denominator. Next: event-specific reporting, alternative
+identifications, reference eligibility and section-level age/dependence mapping.
+
+The held Ghavidel-Syooki & Winchester-Seeto (2002) paper concerns the western
+Ghelli type section, not eastern Pelmis Gorge. Its methods/figure sample ranges
+also disagree, and chitinozoan yields are not trilete outcomes. It cannot fill
+the Pelmis inventory gap; the 2001 and 2007 leads still require full texts and
+locality checks. See `docs/audits/2026-10-30-frame-and-pilot-review.md`.
 
 Codex assembled the pilot with a bounded independent source check by a `gpt-5.6-sol` specialist.
 The review found two provenance omissions: the main text and supplement needed separate hashes,

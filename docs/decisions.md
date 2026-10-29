@@ -3,6 +3,15 @@
 Dated record of decisions that shape the programme. Newest first. Say who decided, and quote
 Barry exactly (with source) or label a paraphrase.
 
+## 2026-10-30: Borenshult frame, specimen audit and validation follow-through (Codex)
+
+- **Evidence:** 34 Borenshult analysed-sample depths are reconciled between Rubinstein & Vajda's 2019/2023 accounts and independently checked. The 2019 spore chart plots a 23-depth subset; no outcomes were inferred for its 11 omitted depths. The inventory now has five candidate frames/75 rows, with the 15-unit/90-outcome pilot unchanged. This post-2006 frame requires its own declared selection, reporting and age/dependence model before analysis.
+- **Correction:** the 2002 Ghelli type section is not Pelmis Gorge. It cannot reconcile Pelmis's sample counts; the previous audit's same-section wording is corrected. Missing 2001/2007 sources remain specific Pelmis gaps, while the held Borenshult sources support further work now.
+- **Independent review:** the three highlighted trait-specimen links hold. Recommended corrections for Claude are disputed C2 encoding, the composite Aglaophyton comparison, explicit placement-transfer assumptions, two missing quote records, and chronology limited to the audited evidence set. These recommendations are pending, not adopted edits to Claude's tables/specification.
+- **Deposited histories:** the sole Hooper R workspace contains only a standard tree and RNG state. No saved stochastic branch paths were found; persistence remains unresolved. The inspection receipt supplements the existing extraction without rerunning ancestral-state inference. Q9 remains parked.
+- **Methods:** 161 tests pass; V2–V4 and V1's labels/count bounds hold. V1 still verifies hashes without validating replicate rows against summary successes. Two injected counterexamples pass; Claude retains this bounded repair. This qualifies the earlier contract-closed claim, without disputing the stored rehearsal counts.
+- **Structural review (Q1/Q2/Q4/Q5):** the existing frame/sample separation serves the next extraction. Exposed: a spore-only chart can omit analysed material; shared formation names do not prove shared collections; direct character observations can still form a composite combination. Next is Borenshult event reporting and age mapping, alongside Claude's repairs. No empirical age constraint or global trait order was established. Full evidence: `docs/audits/2026-10-30-frame-and-pilot-review.md`.
+
 ## 2026-10-30: first-study Tier 1 literature acquisition (Codex, authorised by Barry)
 
 - **Scope:** Barry chose Tier 1 first. The scout collected 39 new main texts, ten new supporting files, two complete abstracts and a qualified component copy; three identical existing Morris supporting files were mirrored into the reading library. All 55 file entries have sizes, hashes and provenance. Input tiers and scientific files are unchanged.
