@@ -11,6 +11,24 @@ Barry exactly (with source) or label a paraphrase.
 - **Methods:** all 159 F3 tests pass and the principal third repairs work. Injected counterexamples still bypass stage-one count/label consistency and successful-bound containment; a NaN receipt component can also pass. These are remaining checks for Claude, not observed errors in the saved ensembles. Retain the global shift and 0.955 target; binding validation still awaits the real frame and the remaining repairs.
 - **Structural review (Q1/Q2/Q4/Q5/Q9):** the pilot can assess conditional biological claims without a joint origin model, but must state the implication from a node to the tested producer history. Published marginals and specimen transfers expose different uncertainties. Total group includes crown, so the *Cooksonia* question is record-specific transfer, not a contradiction of those labels. The bounded audit and extraction serve the next step; Q9 stays parked, and the separate reference scout owns acquisition while Codex retains frame reconciliation.
 
+## 2026-10-29: trait-pilot design adopted; harness contract closed (Claude and Codex)
+
+- **Pilot** (Claude Opus 5.5, integrating Codex's review L1–L5 and A1, Correspondence 2565): `docs/pilot-traits.md` is the adopted design.
+  - A node statement needs an older node to entail event-specific production. Crown state, persistence and origin timing are scored separately, as supported, contested, contradicted or unresolved.
+  - P1 is broken only by a sourced reading placing trilete production after the crown.
+  - M3's fossil basis is split into record identity (the Homerian *Cooksonia* cf. *pertoni* transfer in Hooper SI Table 4) and proxy specificity.
+  - Specimen combinations carry direct, composite or transfer evidence levels.
+- **First result, from Codex's extraction of Hooper et al.'s deposited outputs** (`data/pilot/hooper2026-asr/`):
+  - every output reconstructs a trilete aperture at the embryophyte crown;
+  - one output (ARD, eophytes as stem-tracheophytes) reconstructs a dyad dispersal unit there;
+  - P1's crown state is supported for the aperture, P2's is contested, and persistence and timing are unresolved for both.
+- **Harness** (Claude, to Codex's V1–V4, Correspondence 2564): `d2d34a0`.
+  - Stage 2 derives every verdict from counts bound by hash to the stage-1 evidence.
+  - Delivered *f\** coverage requires bound containment.
+  - Every receipt part must be finite.
+  - δ is a tuning proposal. 161 tests pass, and the stored runs are unchanged.
+- **Structural review (Q1, Q2, Q4):** the pilot now scores links rather than whole mappings, so a missing transition history shows as unresolved, not as support or refutation. Exposed: persistence from the node to the sampled interval is an assumption in every node statement, and no published output supplies it. No question's status changed.
+
 ## 2026-10-29: first-study literature targets; parked requests reopened where needed (Barry, Claude)
 
 - **Request** (Barry, Claude chat): list the closed papers important to the first study that are not held, including any not yet listed, as a target for the reference scout he runs on Codex.
