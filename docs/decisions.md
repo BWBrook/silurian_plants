@@ -3,6 +3,29 @@
 Dated record of decisions that shape the programme. Newest first. Say who decided, and quote
 Barry exactly (with source) or label a paraphrase.
 
+## 2026-10-29: park requests and choose a more accessible next literature tranche
+
+- **Authority** (Barry, chat; paraphrase): park all request candidates separately,
+  revisit the CSV for the next low-friction automated targets, and check/clean up
+  the Downloads residue. Request submission remains deferred.
+- **Completed** (Codex): moved the eight pilot request cases into
+  `docs/literature-requests.md`, carried forward Garratt 1978 and added Paris 2012
+  after its exact signed-in catalogue search proved request-only. All ten remain
+  `needed` in the master CSV but are excluded from automatic batches. Moved 19
+  checksum-matched literature duplicates and two identified HTML residue files
+  from Downloads to a recoverable Bin folder; archive files are preserved and
+  post-move hashes match the receipt in `work/codex/literature/`.
+- **Proposal, not adopted collection** (Codex): six priority-one recent Elsevier
+  papers with UTAS online catalogue routes, two with actual publisher full-text
+  access already checked, followed by two public ResearchGate author copies.
+  `docs/literature-next-batch.md` gives the exact targets and evidence limits.
+- **Structural review** (Codex): separate parked requests, fresh human-action
+  blockers and proposed automatic collection. Source-kind checks exposed complete
+  published abstracts left in a full-article-needed queue, a public supplement
+  mistaken for its main article, and a held main article mistaken for requested
+  SI. Preserve those distinctions; do not inflate success by downloading the
+  wrong asset. Q1/Q2 questions and scientific readings are unchanged.
+
 ## 2026-10-29: stop BioOne retries for Kanosh and Rubinstein (Codex, following Barry's reports)
 
 - **Observed** (Codex): the user-supplied UTAS-proxied Kanosh page showed an

@@ -1,0 +1,275 @@
+{
+  "completed": "2026-10-29",
+  "trash_directory": "/Users/bwbrook/.Trash/silurian-literature-20261029-123807",
+  "files": 21,
+  "bytes": 67084004,
+  "items": [
+    {
+      "source": "/Users/bwbrook/Downloads/1-s2.0-S0034666723001860-main.pdf",
+      "bytes": 28019148,
+      "sha256": "b879f1bf84e9aa45727cce1487930a91c7f30c13997230e987ac3eb66bc17c4b",
+      "verified_archives": [
+        {
+          "file": "library/closed/libertin2024.pdf",
+          "manifest": "library/closed.tsv"
+        }
+      ],
+      "disposition": "verified_duplicate",
+      "trash_path": "/Users/bwbrook/.Trash/silurian-literature-20261029-123807/1-s2.0-S0034666723001860-main.pdf"
+    },
+    {
+      "source": "/Users/bwbrook/Downloads/1-s2.0-S0035159816300836-main.pdf",
+      "bytes": 2364620,
+      "sha256": "8a2dd10415204d609cc8ad1eb510076e766b39a7aa5f5f4ad2ad7eb0cb84622e",
+      "verified_archives": [
+        {
+          "file": "library/closed/taylor2017.pdf",
+          "manifest": "library/closed.tsv"
+        }
+      ],
+      "disposition": "verified_duplicate",
+      "trash_path": "/Users/bwbrook/.Trash/silurian-literature-20261029-123807/1-s2.0-S0035159816300836-main.pdf"
+    },
+    {
+      "source": "/Users/bwbrook/Downloads/263494a0.pdf",
+      "bytes": 853656,
+      "sha256": "8d1fab9cb79ea19841d7c771be7313ea7670b9b573b99f6e4bbc40c8d0e5956a",
+      "verified_archives": [
+        {
+          "file": "library/closed/edwardsdavies1976.pdf",
+          "manifest": "library/closed.tsv"
+        }
+      ],
+      "disposition": "verified_duplicate",
+      "trash_path": "/Users/bwbrook/.Trash/silurian-literature-20261029-123807/263494a0.pdf"
+    },
+    {
+      "source": "/Users/bwbrook/Downloads/287041a0.pdf",
+      "bytes": 3226894,
+      "sha256": "f4283789681a0d91d42b15c2364259a9ed0392bac9a513c4d63ce6fb5db01397",
+      "verified_archives": [
+        {
+          "file": "library/closed/edwardsfeehan1980.pdf",
+          "manifest": "library/closed.tsv"
+        }
+      ],
+      "disposition": "verified_duplicate",
+      "trash_path": "/Users/bwbrook/.Trash/silurian-literature-20261029-123807/287041a0.pdf"
+    },
+    {
+      "source": "/Users/bwbrook/Downloads/EBSCO-FullText-10_28_2026.pdf",
+      "bytes": 8969077,
+      "sha256": "1ed9098b5d2a8f26822f44c94544cca28f0688054e05aff4485df253c7aacd0d",
+      "verified_archives": [
+        {
+          "file": "library/closed/strother2021.pdf",
+          "manifest": "library/closed.tsv"
+        }
+      ],
+      "disposition": "verified_duplicate",
+      "trash_path": "/Users/bwbrook/.Trash/silurian-literature-20261029-123807/EBSCO-FullText-10_28_2026.pdf"
+    },
+    {
+      "source": "/Users/bwbrook/Downloads/Edwards-EarliestVascularPlant-2007.pdf",
+      "bytes": 5971437,
+      "sha256": "258f879597ff4c0dfa4b5a8d13565920c8fc2c139462af3b5b32d4e244fb2985",
+      "verified_archives": [
+        {
+          "file": "library/closed/edwards2007.pdf",
+          "manifest": "library/closed.tsv"
+        }
+      ],
+      "disposition": "verified_duplicate",
+      "trash_path": "/Users/bwbrook/.Trash/silurian-literature-20261029-123807/Edwards-EarliestVascularPlant-2007.pdf"
+    },
+    {
+      "source": "/Users/bwbrook/Downloads/Morel 1995.pdf",
+      "bytes": 601413,
+      "sha256": "a919cc30a10fd5cb77bc026a0209dce72df4267f87241f578b16faa9f0a8688e",
+      "verified_archives": [
+        {
+          "file": "library/closed/morel1995.pdf",
+          "manifest": "library/closed.tsv"
+        }
+      ],
+      "disposition": "verified_duplicate",
+      "trash_path": "/Users/bwbrook/.Trash/silurian-literature-20261029-123807/Morel 1995.pdf"
+    },
+    {
+      "source": "/Users/bwbrook/Downloads/New Phytologist - 2010 - Rubinstein - Early Middle Ordovician evidence for land plants in Argentina  eastern Gondwana.pdf",
+      "bytes": 267349,
+      "sha256": "046069e3563b339f9b7db2c53e98fe623c35a7424cc28c521687812cdcc21bd3",
+      "verified_archives": [
+        {
+          "file": "library/open/W1820528062.pdf",
+          "manifest": "library/open.tsv"
+        }
+      ],
+      "disposition": "verified_duplicate",
+      "trash_path": "/Users/bwbrook/.Trash/silurian-literature-20261029-123807/New Phytologist - 2010 - Rubinstein - Early Middle Ordovician evidence for land plants in Argentina  eastern Gondwana.pdf"
+    },
+    {
+      "source": "/Users/bwbrook/Downloads/New Phytologist - 2018 - Salamon - Putative Late Ordovician land plants.pdf",
+      "bytes": 1437833,
+      "sha256": "9ee5dc6ac5d84cf644adb76490c374ed14aed8c2c4341bad106930ecb0134dd9",
+      "verified_archives": [
+        {
+          "file": "library/closed/salamon2018.pdf",
+          "manifest": "library/closed.tsv"
+        }
+      ],
+      "disposition": "verified_duplicate",
+      "trash_path": "/Users/bwbrook/.Trash/silurian-literature-20261029-123807/New Phytologist - 2018 - Salamon - Putative Late Ordovician land plants.pdf"
+    },
+    {
+      "source": "/Users/bwbrook/Downloads/ReviewYeaPapers.pdf",
+      "bytes": 6708661,
+      "sha256": "e5f5cec48defb1d07245e6df8ec676dea845cd3c9435f5e8728ed38d2ebd7be2",
+      "verified_archives": [
+        {
+          "file": "library/closed/earp2023_yea_review_first_draft.pdf",
+          "manifest": "library/closed.tsv"
+        }
+      ],
+      "disposition": "verified_duplicate",
+      "trash_path": "/Users/bwbrook/.Trash/silurian-literature-20261029-123807/ReviewYeaPapers.pdf"
+    },
+    {
+      "source": "/Users/bwbrook/Downloads/Strother2000.pdf",
+      "bytes": 433487,
+      "sha256": "979bbe65d389cf5a6e4d6818c6e0d8738a5ab5f889a7e0e5f9bb35ddb83e5cd1",
+      "verified_archives": [
+        {
+          "file": "library/closed/strother2000_preprint.pdf",
+          "manifest": "library/closed.tsv"
+        }
+      ],
+      "disposition": "verified_duplicate",
+      "trash_path": "/Users/bwbrook/.Trash/silurian-literature-20261029-123807/Strother2000.pdf"
+    },
+    {
+      "source": "/Users/bwbrook/Downloads/garratt-rickards-2022-graptolite-biostratigraphy-of-early-land-plants-from-victoria-australia.pdf",
+      "bytes": 625692,
+      "sha256": "f5baaf984eebaa3e1e4a294c789c466b593a4562dd7b049eb536259564c9a878",
+      "verified_archives": [
+        {
+          "file": "library/closed/garrattrickards1984.pdf",
+          "manifest": "library/closed.tsv"
+        }
+      ],
+      "disposition": "verified_duplicate",
+      "trash_path": "/Users/bwbrook/.Trash/silurian-literature-20261029-123807/garratt-rickards-2022-graptolite-biostratigraphy-of-early-land-plants-from-victoria-australia.pdf"
+    },
+    {
+      "source": "/Users/bwbrook/Downloads/j.1469-8137.2010.03433.x",
+      "bytes": 72258,
+      "sha256": "c3b9ce5b07f5b65ebbd1f14301931a10c921bac8e1aefad0f84ef85346c73631",
+      "verified_archives": [],
+      "content_type": "HTML",
+      "html_title": "Early Middle Ordovician evidence for land plants in Argentina (eastern Gondwana)",
+      "disposition": "literature_html_residue",
+      "trash_path": "/Users/bwbrook/.Trash/silurian-literature-20261029-123807/j.1469-8137.2010.03433.x"
+    },
+    {
+      "source": "/Users/bwbrook/Downloads/jelinek2008_garratt1978_map.pdf",
+      "bytes": 496347,
+      "sha256": "168ce79894295f85f88ec61f4190738b955ee30fdfacb1804bbfdcaec779adc9",
+      "verified_archives": [
+        {
+          "file": "library/closed/jelinek2008_garratt1978_map.pdf",
+          "manifest": "library/closed.tsv"
+        }
+      ],
+      "disposition": "verified_duplicate",
+      "trash_path": "/Users/bwbrook/.Trash/silurian-literature-20261029-123807/jelinek2008_garratt1978_map.pdf"
+    },
+    {
+      "source": "/Users/bwbrook/Downloads/nph15091-sup-0001-supinfo.pdf",
+      "bytes": 768235,
+      "sha256": "500309eec320be3b40c6b82021567d2376207ffbfe441330edc03f58a7241de2",
+      "verified_archives": [
+        {
+          "file": "library/closed/salamon2018_SI.pdf",
+          "manifest": "library/closed.tsv"
+        }
+      ],
+      "disposition": "verified_duplicate",
+      "trash_path": "/Users/bwbrook/.Trash/silurian-literature-20261029-123807/nph15091-sup-0001-supinfo.pdf"
+    },
+    {
+      "source": "/Users/bwbrook/Downloads/nph_3433_sm_notess1ands2-figss1-s4.doc",
+      "bytes": 822784,
+      "sha256": "3aea72c15d8071dc39d510e69b6999e32741aca0f46462451f502eb033825161",
+      "verified_archives": [
+        {
+          "file": "library/open/W1820528062_SI.doc",
+          "manifest": "library/open.tsv"
+        }
+      ],
+      "disposition": "verified_duplicate",
+      "trash_path": "/Users/bwbrook/.Trash/silurian-literature-20261029-123807/nph_3433_sm_notess1ands2-figss1-s4.doc"
+    },
+    {
+      "source": "/Users/bwbrook/Downloads/pdfft.html",
+      "bytes": 51995,
+      "sha256": "61ed07cff143241b45285344c8c32e11f23d39dff8b9bf4c477f871a2f1e46f7",
+      "verified_archives": [],
+      "content_type": "HTML",
+      "html_title": "",
+      "disposition": "literature_html_residue",
+      "trash_path": "/Users/bwbrook/.Trash/silurian-literature-20261029-123807/pdfft.html"
+    },
+    {
+      "source": "/Users/bwbrook/Downloads/rickards2000.pdf",
+      "bytes": 533616,
+      "sha256": "546f166a902d42d03f5fd5e5471692c90dcc94a27cca18b94b0eca1549225e2a",
+      "verified_archives": [
+        {
+          "file": "library/closed/rickards2000.pdf",
+          "manifest": "library/closed.tsv"
+        }
+      ],
+      "disposition": "verified_duplicate",
+      "trash_path": "/Users/bwbrook/.Trash/silurian-literature-20261029-123807/rickards2000.pdf"
+    },
+    {
+      "source": "/Users/bwbrook/Downloads/s41477-018-0140-y.pdf",
+      "bytes": 1668996,
+      "sha256": "5564a5c21d2bed19e8b6a24a48922fa695bc5406041e2531176741645dc29e4f",
+      "verified_archives": [
+        {
+          "file": "library/closed/libertin2018.pdf",
+          "manifest": "library/closed.tsv"
+        }
+      ],
+      "disposition": "verified_duplicate",
+      "trash_path": "/Users/bwbrook/.Trash/silurian-literature-20261029-123807/s41477-018-0140-y.pdf"
+    },
+    {
+      "source": "/Users/bwbrook/Downloads/science_abj2927_sm.pdf",
+      "bytes": 614526,
+      "sha256": "bd5f9d93d48652b1ce3d16e7e08ea687354142f3893b6e458808e6dd1891f062",
+      "verified_archives": [
+        {
+          "file": "library/closed/strother2021_SI.pdf",
+          "manifest": "library/closed.tsv"
+        }
+      ],
+      "disposition": "verified_duplicate",
+      "trash_path": "/Users/bwbrook/.Trash/silurian-literature-20261029-123807/science_abj2927_sm.pdf"
+    },
+    {
+      "source": "/Users/bwbrook/Downloads/strother2015.pdf",
+      "bytes": 2575980,
+      "sha256": "902f183848f947a638de283fc9b566278c83f2b9b653ecdd0eca481d8d53691e",
+      "verified_archives": [
+        {
+          "file": "library/closed/strother2015.pdf",
+          "manifest": "library/closed.tsv"
+        }
+      ],
+      "disposition": "verified_duplicate",
+      "trash_path": "/Users/bwbrook/.Trash/silurian-literature-20261029-123807/strother2015.pdf"
+    }
+  ]
+}

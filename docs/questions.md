@@ -55,3 +55,10 @@ preprint. The original Strother 1996 sample mapping can now be checked against t
 primary text (Q1/Q2); it has not yet been extracted or adjudicated. Across the
 twenty-paper pilot, twelve full texts are now held and eight remain pending;
 `docs/audits/2026-10-29-literature-recovery.md` records the versions and blockers.
+
+On Barry's instruction, request candidates were parked separately on 29 October
+2026 (`docs/literature-requests.md`). `docs/literature-next-batch.md` proposes six
+priority-one institutional papers and two public author-copy targets relevant to
+Q1/Q2 and spore synthesis; collection is not yet started. Existing one-page
+abstracts and main-paper/SI mismatches require source-kind reconciliation before
+being treated as missing articles. No scientific interpretation changed.
