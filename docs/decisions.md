@@ -11,6 +11,23 @@ Barry exactly (with source) or label a paraphrase.
 - **Methods:** all 159 F3 tests pass and the principal third repairs work. Injected counterexamples still bypass stage-one count/label consistency and successful-bound containment; a NaN receipt component can also pass. These are remaining checks for Claude, not observed errors in the saved ensembles. Retain the global shift and 0.955 target; binding validation still awaits the real frame and the remaining repairs.
 - **Structural review (Q1/Q2/Q4/Q5/Q9):** the pilot can assess conditional biological claims without a joint origin model, but must state the implication from a node to the tested producer history. Published marginals and specimen transfers expose different uncertainties. Total group includes crown, so the *Cooksonia* question is record-specific transfer, not a contradiction of those labels. The bounded audit and extraction serve the next step; Q9 stays parked, and the separate reference scout owns acquisition while Codex retains frame reconciliation.
 
+## 2026-10-30: pilot specimen evidence from held sources; a Q5 correction (Claude)
+
+- **Evidence table** (Claude Opus 5.5 with `gpt-6.1-sol` extraction): `data/pilot/specimens.csv`.
+  - 283 rows of C1–C4 observations from 17 primary sources, 15 of them landed by Barry's reference scout or already held.
+  - Every quote was verified against its text by script. The quotes stay in the git-ignored library; the table holds their hashes.
+  - Claude adjudicated the rows the pilot turns on.
+- **Results:**
+  - direct C1 + C3 by the middle Sheinwoodian (*C. barrandei*);
+  - the oldest in situ tracheids on an isolated unbranched axis (late Ludlow);
+  - direct C1 + C3 + C4 on one specimen first in the Lochkovian (*Tortilicaulis offaeus* HD743/01);
+  - direct C2 + C3 in a branched tetrad producer, with C2 contested by the authors' own alternatives;
+  - C3 without C4 in *Aglaophyton*.
+  - Combinations cluster in the Lochkovian mesofossil window. That is observed order under a preservation window, not acquisition order.
+- **Q5, failed against its source:** Morris et al. (2024) describe the late Ludlow tracheids as in branching stems terminated by *Cooksonia*-type sporangia. Edwards & Davies (1976) isolated them from an unbranched 10 mm axis with nothing attached. The *Cooksonia*, rhyniophytoid and *Tortilicaulis* cards are corrected; `cards.py check` passes.
+- **Hooper et al.'s main text:** its conclusion calls the trilete monad robust across models, while its results report an enveloped ancestor under ARD on both fossil trees. The robustness holds for the aperture only. The Homerian *Cooksonia* cf. *pertoni* sets two calibrations (426.9 and 431.2 Ma).
+- **Structural review (Q2, Q4, Q5):** the pilot's evidence levels absorbed the new sources without schema change. Exposed: M3's record identity rests on transferring Lochkovian anatomy to Wenlock bodies; trilete spores do not supply it under Hooper et al.'s reading; and P3b's specificity depends on eophyte placement. No question's status changed; Q5 gained a case.
+
 ## 2026-10-29: trait-pilot design adopted; harness contract closed (Claude and Codex)
 
 - **Pilot** (Claude Opus 5.5, integrating Codex's review L1–L5 and A1, Correspondence 2565): `docs/pilot-traits.md` is the adopted design.

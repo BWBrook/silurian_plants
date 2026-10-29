@@ -65,11 +65,16 @@ traits:
   conducting_tissue:
     state: tracheids
     note: >-
-      The oldest in situ tracheids are in late Ludlow (Whitcliffian) axes from South Wales (Edwards
-      and Davies 1976, abstract read): simple annular thickenings in naked branching stems ending in
-      Cooksonia-type sporangia (Morris et al. 2024). The link to Cooksonia is not secure: Edwards
-      (1979) lists the Whitcliffian finds as "Y-axes + tracheids" beside Cooksonia sp., and Edwards
-      et al. (1992) wrote that tracheids had never been shown in attached axes. In unequivocal
+      The oldest in situ tracheids are late Ludlow (lower Whitcliffian, Capel Horeb Quarry, Powys;
+      Edwards and Davies 1976, full text read 2026-10-30). Two or three incomplete tracheids with
+      transverse bars about 5 um apart were isolated on a film pull from an unbranched carbonaceous
+      axis 10 mm long and 1 mm wide. The same beds hold smooth, often dichotomous axes and a few
+      Cooksonia-type sporangia with trilete spores, and the authors infer vascular plants "most
+      probably of Cooksonia-type organisation". No sporangium or branch is attached to the
+      tracheid-bearing axis. Morris et al. (2024) restate the find as tracheids in branching stems
+      terminated by Cooksonia-type sporangia, which the source does not show (Q5). Edwards (1979)
+      lists the finds as "Y-axes + tracheids" beside Cooksonia sp., and Edwards et al. (1992) wrote
+      that tracheids had never been shown in attached axes. In unequivocal
       Cooksonia they are demonstrated in Lochkovian charcoalified C. pertoni (Edwards et al. 1992),
       including a tracheid cast with annular thickenings (Edwards and Kenrick 2015); Lang's annular
       strand was in an axis he assigned to C. hemisphaerica, from a site now placed in the Early
@@ -184,7 +189,7 @@ Boyce (2008) argued that once desiccation resistance, support and conduction are
 - Sporangium to spore scaling: 3 to 5 mm sporangium with 10 to 15 µm spores in C. barrandei; 18 to 38 µm spores elsewhere; no spore counts exist.
 - Timing: macrofossil first appearance 432 to 427 Ma, against dispersed trilete spores from the Late Ordovician; the macrofossil record probably under-samples earlier plants (inference).
 - Latitudinal spread: about 20° S (Poland, Přídolí; Pšenička et al. 2021) to 50 to 60° S (Bolivia, Ludlow; Morel et al. 1995).
-- Stomata present but sparse. Tracheids are in situ by the late Ludlow (Whitcliffian; the Ludfordian ends at 422.7 Ma on ICS v2024/12) in axes of Cooksonia type, conducting cells are interpreted in Pridoli C. bohemica, and tracheids in unequivocal Cooksonia are Lochkovian (from 419.62 Ma). The direct anatomical record of tracheids therefore starts at least 3 Myr before the Lochkovian, and about 2 to 9 Myr after the first Cooksonia megafossils (432 to 427 Ma).
+- Stomata present but sparse. Tracheids are in situ by the late Ludlow (Whitcliffian; the Ludfordian ends at 422.7 Ma on ICS v2024/12) in an unbranched axis found with, but not attached to, Cooksonia-type sporangia, conducting cells are interpreted in Pridoli C. bohemica, and tracheids in unequivocal Cooksonia are Lochkovian (from 419.62 Ma). The direct anatomical record of tracheids therefore starts at least 3 Myr before the Lochkovian, and about 2 to 9 Myr after the first Cooksonia megafossils (432 to 427 Ma).
 
 ## Model transfer
 
@@ -194,7 +199,7 @@ Boyce (2008) argued that once desiccation resistance, support and conduction are
   - Use nearly 6 cm fragment length, 1 to 1.5 mm axis width and 3 to 5 mm sporangia for the C. barrandei holotype from Loděnice, without treating fragment length as plant height (Libertín et al. 2018 supplement).
   - Use 10 to 15 um spores for C. barrandei at the Czech type locality; keep these separate from larger spores reported for other Cooksonia species (Libertin et al. 2018, supplement).
   - Code annularly thickened tracheids and stomata for Lochkovian charcoalified C. pertoni from North Brown Clee Hill, rather than all Cooksonia (Edwards et al. 1992; Edwards and Kenrick 2015).
-  - Use the Whitcliffian (late Ludlow) axes of South Wales as a minimum age for tracheids in naked, Cooksonia-type plants (Edwards and Davies 1976; Morris et al. 2024), not as a minimum age for Cooksonia or any named species.
+  - Use the Whitcliffian (late Ludlow) axis of Capel Horeb, South Wales, as a minimum age for tracheids in a naked axis of unknown affinity found with Cooksonia-type sporangia (Edwards and Davies 1976), not as a minimum age for tracheids in Cooksonia, in any named species, or in a branched plant with sporangia.
 - **Cannot transfer:**
   - Photosynthetic autonomy or dependence cannot be fixed from axis width: both Boyce's narrow-axis argument and Libertín et al.'s C. barrandei counterargument are size-based inferences.
   - Whole-plant height cannot be equated with the front-matter length range: every specimen is fragmentary.
@@ -203,4 +208,4 @@ Boyce (2008) argued that once desiccation resistance, support and conduction are
 
 ## Open questions
 
-Is C. barrandei vascular, and does the Czech record displace the Irish one? Did the tracheid-bearing Whitcliffian axes carry Cooksonia sporangia, and from which South Wales site and bed do they come (Edwards and Davies 1976, closed)? Can charcoalified Silurian material be found to test Boyce's argument directly? Which Cooksonia-like species survive redefinition? Are the C. paranensis gametophyte-like structures real?
+Is C. barrandei vascular, and does the Czech record displace the Irish one? Can tracheids be shown in a Whitcliffian axis attached to a Cooksonia-type sporangium? Edwards and Davies (1976) isolated them from an unbranched axis at Capel Horeb Quarry, Powys (Roman Camp Beds, lower Whitcliffian), in beds that also hold such sporangia. Can charcoalified Silurian material be found to test Boyce's argument directly? Which Cooksonia-like species survive redefinition? Are the C. paranensis gametophyte-like structures real?

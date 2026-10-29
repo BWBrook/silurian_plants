@@ -2,8 +2,8 @@
 
 Adopted design, 29 October 2026. Claude Opus 5.5 drafted it. Codex reviewed it and supported the
 framing, and its amendments L1–L5 and A1 are integrated
-(`audits/2026-10-29-pilot-and-contract-review.md`). A first, published-output result is below;
-specimen scoring is under way as sources arrive.
+(`audits/2026-10-29-pilot-and-contract-review.md`). Two first results are below:
+published crown states, and specimen combinations from the held sources.
 
 **Decisions behind it.**
 - **Scope** (Barry, Codex chat, 2026-10-29): "Excellent, we're aligned." This accepted F3 plus a
@@ -115,6 +115,62 @@ Model agreement among one study's methods is not independent validation. These r
 conditional on Hooper et al.'s matrix, trees and methods, and are not re-estimated (consult
 trigger below).
 
+Hooper et al.'s main text (read 2026-10-30) adds three points.
+- **Their conclusion is broader than their results.** It calls the naked trilete monad "robust to
+  different evolutionary models and phylogenetic hypotheses". Their results section reports that
+  the all-rates-different model, on both fossil trees, reconstructs an enveloped ancestral spore.
+  The deposited dispersal-unit output on one of those trees is a dyad. The robustness holds for
+  the aperture only.
+- **Persistence.** They infer that liverworts lost the aperture independently. Persistence of
+  trilete production from the embryophyte crown must therefore run through another lineage. The
+  tracheophyte stem is trilete at both of its ends in every output. That is consistent with
+  persistence but does not establish it, because the branch histories of the stochastic maps were
+  not extracted. Persistence stays unresolved, and those maps would be the deciding observation.
+- **One fossil, two calibrations.** The Homerian *Cooksonia* cf. *pertoni* sets both the
+  crown-embryophyte minimum (426.9 Ma) and the crown-tracheophyte maximum (431.2 Ma) ("Fossil
+  calibrations").
+
+## Second result: specimen combinations (O, held sources, 2026-10-30)
+
+From `data/pilot/specimens.csv`: 283 rows from 17 primary sources, every quote checked against
+its text, and the decisive rows adjudicated by Claude.
+
+| Combination | Best evidence | Level | Age as stated |
+|---|---|---|---|
+| C1 + C3 | *C. barrandei* holotype D552a,b (Libertín et al. 2018) | direct | middle Sheinwoodian, by correlation |
+| C1 + C3 | *C. pertoni* subsp. *apiculispora* NMW 94.60G.14 (Habgood et al. 2002) | direct; C4 not examined on it | Lochkovian |
+| C1 + C3 + C4 | *Tortilicaulis offaeus* HD743/01 (Morris et al. 2024) | direct; tracheid ultrastructure unresolved | early to middle Lochkovian |
+| C4 alone | the oldest in situ tracheids, Capel Horeb (Edwards and Davies 1976) | direct, on an isolated unbranched axis; no sporangium attached | lower Whitcliffian (late Ludlow) |
+| C2 + C3 | *Velatitetras*-producing plant NMW96.11G.3 (Edwards et al. 1999) | direct. C2 is contested: the authors favour permanent tetrads but list immature tetrads of trilete producers among the alternatives | early Lochkovian |
+| C2 + C3 | *Ficoiditheca aenigma* (Morris et al. 2012) | composite: C3 on V.68228(1) and V.68258(1), C2 shown on other specimens | early Lochkovian |
+| C3 without C4 | *Aglaophyton major* (D.S. Edwards 1986) | direct: connected sporangial pairs; conducting cells with no differential thickening (SEM, NMW 85.49G.5). Its C1 is a transfer | Siegenian/Emsian (Rhynie) |
+| C4 disputed | *Horneophyton lignieri* | tracheids (Cascales-Miñana et al. 2019, MGLame-18) against transfer-cell-like cells (Kenrick and Long 2025) | Rhynie |
+
+What this does to the mappings (I):
+- **P3b, proxy specificity.**
+  - Branched sporophytes bearing several sporangia occur in plants without tracheids: *Aglaophyton*
+    directly.
+  - Probably also in cryptospore producers: the *Velatitetras* plant, with C2 contested, and
+    *Ficoiditheca* as a composite.
+  - Under the eophyte-as-stem-embryophyte placement, C3 is therefore not specific to total-group
+    Tracheophyta. Under the stem-tracheophyte placement it can be.
+  - All these combinations come from the Lochkovian charcoalified mesofossils and the Pragian
+    Rhynie chert. They show what existed then, not whether Wenlock C3 bodies were tracheophytes.
+- **M3 record identity.** The oldest direct C1 + C3 plant (*C. barrandei*, Sheinwoodian) has no
+  anatomy. Assigning it, or the Homerian cf. *pertoni*, to total-group Tracheophyta therefore
+  rests on transfer from Lochkovian *C. pertoni* (composite C1 + C3 + C4) or on placement.
+  Under Hooper et al.'s reading, trilete spores mark total-group Embryophyta, not tracheophytes.
+- **Observed order** (bodies, direct evidence only):
+  1. C1 + C3 by the middle Sheinwoodian;
+  2. C4, on an unattached axis, by the late Ludlow;
+  3. C1 + C3 + C4 on one plant, and C2 + C3, only from the early Lochkovian.
+
+  The Lochkovian clustering coincides with the Welsh Borderland mesofossil window. It is
+  observed order under a preservation window, not acquisition order (rule 4).
+- **Q5.** Morris et al. (2024) describe the late Ludlow tracheids as in branching stems terminated
+  by *Cooksonia*-type sporangia. Edwards and Davies (1976) isolated them from an unbranched axis
+  with nothing attached. The cards repeated the later wording and are corrected.
+
 ## Characters and coding rules
 
 | ID | Character | Scored present when | Kept apart from |
@@ -146,14 +202,15 @@ before use.
 | *C. barrandei*, holotype D552a,b, Barrandian | middle Sheinwoodian by correlation (associated material, lithology, fauna, relocated locality; the holotype's direct graptolite association is *M. flemingii*) | C1 + C3 **direct**; C4 unknown | the oldest C3 body; P3a; record identity for M3 | Libertín et al. 2018 + SI (held; Codex audit) |
 | *C. pertoni* DE41, Welsh Borderland | Lochkovian | C1 (in situ *Streelispora newportensis*) + C4 evidence, on a single-sporangium fragment. The authors favour tracheids but cannot exclude tubes in incomplete elements. C3 only by taxon bridge (**composite**) | the reference combination, with its bridge stated | Edwards et al. 1992 (held; Codex audit) |
 | Pridoli *C. pertoni* central strands | Pridoli | strand present; tracheidal identity inferred by comparison with younger forms (**transfer**) | keeps direct anatomy apart from inference; no Q5 error (the Ambitisporites card codes the tissue as unknown) | Edwards et al. 1992 p. 685 (held; Codex audit) |
-| Whitcliffian tracheid-bearing axes, South Wales | late Ludlow | C4 on branched axes. Attachment to *Cooksonia*-type sporangia is reported by Morris et al. 2024 but tabulated by Edwards 1979 as "Y-axes + tracheids" | the oldest C4, with an insecure producer link | Edwards and Davies 1976 (held); Edwards 1979 (needed) |
+| Whitcliffian tracheid-bearing axis, Capel Horeb, Powys | lower Whitcliffian (late Ludlow) | C4 **direct** on an isolated unbranched axis 10 mm long; no sporangium or branch attached; found with *Cooksonia*-type sporangia | the oldest C4, with no producer link (Q5: Morris et al. 2024 overstate it) | Edwards and Davies 1976 (held, read); Edwards 1979 (held, OCR) |
 | Homerian *Cooksonia* cf. *pertoni*, TCD22944–22956, Co. Tipperary | Homerian | C3; anatomy transferred from younger *C. pertoni* in Hooper SI Table 4 (**transfer**) | M3 record identity | Edwards and Feehan 1980, Edwards et al. 1983 (held); Hooper SI (held; Codex audit) |
 | *Ficoiditheca aenigma*, V.68228(1), V.68258(1), Brown Clee Hill | early Lochkovian | two sporangia on each branched axis with in situ palynomorphs. The permanent-dyad diagnosis is best shown in V.68222(1) and V.68263(1): C2 + C3 **composite** | P3a/P3b proxy specificity: a branched cryptospore plant | Morris et al. 2012 (held; Codex audit) |
 | *Partitatheca horrida*, Brown Clee Hill | early Lochkovian | C2. The branched axis with one terminal sporangium is Habgood's older fragment, reassigned on a stated spore interpretation, so C3 is unconfirmed. Conducting tissue unknown | proxy specificity; trace the original specimen in Habgood 2000 | Edwards et al. 2012 (held; Codex audit) |
 | Eophytes generally | Pridoli–Lochkovian | C2; leptoid-like cells, no water-conducting cells; mostly single terminal sporangia | P2 links under each placement | Edwards et al. 2021a (held) |
-| *Tortilicaulis offaeus*, Brown Clee Hill | early–middle Lochkovian | C1 + C3 + C4 (synchrotron, three of five specimens) | C4 in a plant long read as bryophyte-like | Morris et al. 2024 (needed, tier 1) |
+| *Tortilicaulis offaeus*, HD743/01, Brown Clee Hill | early–middle Lochkovian | C1 + C3 + C4 **direct** on one specimen (SEM spores, two attached sporangia, SRXTM thickenings); tracheid ultrastructure unresolved | the first direct C1 + C3 + C4; a plant long read as bryophyte-like | Morris et al. 2024 (held) |
+| *Velatitetras*-producing plant, NMW96.11G.3, Brown Clee Hill | early Lochkovian | C2 + C3 **direct**; C2 contested (immature-tetrad alternative, p. 141); C4 not demonstrated | proxy specificity: a branched tetrad producer | Edwards et al. 1999 (held) |
 | *Aglaophyton major*, Rhynie | Pragian–?earliest Emsian | C3 **direct** (connected sporangial pairs Pb4601/B/R/10 and /24; Pb4601/C/L/2); conducting cells without differential thickening. Its trilete statement reviews older work, so C1 is a **transfer** until an aperture is tied to a connected specimen | C1 and C3 without C4 | D.S. Edwards 1986 (held; Codex audit); Rhynie age from its dating sources |
-| *Horneophyton lignieri*, Rhynie | as above | C1 + C3; C4 disputed | whether a second polysporangiophyte without tracheids exists | Kenrick and Long 2025, Cascales-Miñana et al. 2019, Wellman et al. 2003 (needed, tier 1) |
+| *Horneophyton lignieri*, Rhynie | as above | C1 + C3; C4 disputed: tracheids (MGLame-18) against transfer-cell-like cells (NHMUK slides) | whether a second polysporangiophyte without tracheids exists | Kenrick and Long 2025, Cascales-Miñana et al. 2019 (held); Wellman et al. 2003 (needed) |
 | *Nothia aphylla*, Rhynie | as above | C1 inferred from the in situ genus *Retusotriletes*; C3 with lateral sporangia; no thickenings, shown mainly in rhizome strands | C1 and C3 without C4, with both qualifications | Kerp 2017, El-Saadawy and Lacey 1979 (needed, tier 1) |
 | *Rhynia gwynne-vaughanii*, Rhynie | as above | C1 + C3 + C4 (S-type) | the same-deposit C4 comparator | Kerp 2017, Kenrick and Crane 1991 (needed, tier 1) |
 | Dispersed record | Darriwilian (C2); Katian, with Sandbian contested (C1) | first occurrences only | observed order | F3's E1 and E2 evidence; Rubinstein and Vajda 2019, Steemans et al. 2009 (needed, tier 1) |

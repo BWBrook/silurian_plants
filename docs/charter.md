@@ -97,6 +97,9 @@ data archived, and the human–AI correspondence record published alongside.
   It drafted the trait-pilot specification (`docs/pilot-traits.md`, 2026-10-29), framed by Barry as
   a test of the trait-to-node mappings behind the clock maxima, with a Codex `gpt-6.1-sol` audit
   of its facts and logic adjudicated by Claude.
+  On 2026-10-30 it closed the fourth contract review, adopted the pilot design with Codex's
+  amendments, read the decisive primary texts (Hooper et al. 2026, Edwards and Davies 1976,
+  Edwards et al. 1999) and adjudicated the pilot's specimen evidence table.
 - Claude Sonnet 5.5 (Anthropic) subagents: the F3 simulator, estimators, sketch and recovery study
   (`models/f3/`), with a second Sonnet agent reviewing; the reshape-v3 compatibility estimator, unit
   simulator and validation harness (2026-10-28 and 29, reviewed and amended by Claude Opus 5.5), and
@@ -116,6 +119,8 @@ data archived, and the human–AI correspondence record published alongside.
   - vetting of early spore records;
   - extraction of post-2006 spore assemblages;
   - the Model transfer retrofit of 59 cards, with a consistency review of them;
+  - extraction of 281 quote-verified specimen observations for the trait pilot from 16 primary
+    sources (2026-10-30, `gpt-6.1-sol`; `data/pilot/specimens.csv`);
   - the first-study literature triage of 348 needed rows, a citation sweep of the first-study
     documents and a search for sample-level frame studies (2026-10-29, `gpt-6.1-sol`; tiers
     adjudicated and DOIs verified by Claude Opus 5.5; `docs/first-study-literature.csv`);
