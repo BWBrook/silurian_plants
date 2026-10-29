@@ -33,6 +33,31 @@ The register is updated at each loop's close. Started 2026-10-28 by Claude Opus 
 | Q9 | Does the Hooper et al. (2026) recalibration survive alternative maxima and placements of the eophytes? | phylogeny (clocks) | parked | the share of the 55 Myr shift owed to each calibration choice | alignment, calibration tables, prior/posterior outputs are held (`data/external/deposits/` and git-ignored `data/external/local/deposits/`); their version correspondence is not yet established. Hooper deposited input specifies 1% tails while the article describes 2.5% (Codex, 2026-10-28; review F3-R1). The bounded check reproduces the rounded node-184 summary but does not link the output to the control file. | Bounded check complete: all 5,001 saved rows and independently clade-matched output-tree HPDs recorded in `data/q9/hooper2026-provenance/` and `docs/audits/2026-10-29-q9-provenance-check.md`. Preliminary double burn-in deletion corrected; Board 2490–2494 is superseded by the final handoff. A controlled comparison of the deposited 1% and described 2.5% specifications is the next proposed diagnostic; it can quantify sensitivity but cannot prove historical provenance. No full clock reanalysis run |
 | Q10 | How much did early vegetation weather, bury carbon and raise O2? | simulation | parked | which parameters dominate, with each input marked as observed or assumed (primer §3, §8 questions 1 and 6) | productivity, P release and fire-threshold inputs; charcoal record | F5, later |
 
+### Pilot and validation review, 2026-10-29 (Q1, Q2, Q4, Q5, Q9)
+
+Codex's next review is complete (`audits/2026-10-29-pilot-and-contract-review.md`).
+The main contract repairs work and all 159 tests pass; stage-one count/label
+consistency, actual delivered-bound containment and every receipt component's
+finiteness still need enforcement. Those findings use injected cases, not new
+failures found in the stored ensembles. The real-frame dependency remains.
+
+The pilot needs an explicit node-to-event-history implication in addition to
+temporal precedence. Deposited X21/X26 outputs are now reproducibly extracted in
+`data/pilot/hooper2026-asr/`, with independent node/value verification. All X21
+outputs favour a trilete aperture, but one fossil-inclusive ARD dispersal result
+favours dyads and has zero support for its pooled monad state. Separate character
+marginals cannot establish a joint ancestral phenotype. This qualifies the pilot's
+proposed inference without running a new reconstruction.
+
+Primary checks distinguish direct *C. barrandei* C1+C3 from the *C. pertoni*
+taxon-level C1+C3+C4 combination and identify *Ficoiditheca* as a useful held
+C2/C3 candidate with an explicit specimen-to-specimen bridge. The supposed
+Pridoli strand/tracheid conflict is not a proven Q5 error. The Homerian
+*Cooksonia* question concerns transfer from younger anatomy and a generic tree
+tip, since total group includes crown; Q9's clock/provenance work stays parked.
+Claude retains specification/scoring and methods repairs; Codex retains the
+Pelmis frame tranche, with acquisition assigned to Barry's separate scout.
+
 ### Innovation chronology scope, 2026-10-29 (Q2, Q4, Q6, Q7)
 
 Barry agreed to a bounded trait-combination and partial-ordering pilot alongside F3,

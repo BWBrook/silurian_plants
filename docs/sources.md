@@ -89,6 +89,17 @@ among GBIF fossil specimens.
 
 Hooper archive inspected by Codex, 2026-10-29: checksum matches its retrieval manifest; all 69 fossil calibrations specify 1% tails whereas the article states 2.5%. Using all 5,001 saved rows, the deposited crown-embryophyte posterior has mean 453.70 Ma and empirical 2.5–97.5% interval 450.05–457.36 Ma. The independently clade-matched output tree reports a 449.91–457.21 Ma HPD interval. These different interval definitions agree with the rounded publication summary but no run log or control-file hash links the outputs to the supplied settings. A second burn-in deletion in the preliminary extraction was corrected; the old 4,800-row result is a sensitivity only. Evidence, inventory and reproducible summaries are in `docs/audits/2026-10-29-q9-provenance-check.md` and `data/q9/hooper2026-provenance/`. Q9 remains unresolved.
 
+Hooper ancestral-state outputs extracted separately by Codex, 2026-10-29:
+`tools/hooper_asr.py` and `data/pilot/hooper2026-asr/` retain X21/X26 at both crown
+nodes under every deposited method/tree. The two source archives match their
+retrieval hashes; 76 master/ASR matrix comparisons agree. Independent R/ape
+verification checks six MRCAs, 208 reported values and 32 absent columns without
+zero imputation. The zyg-tree ARD X26 result favours dyads, although X21 favours
+trilete aperture: these separate marginals do not unanimously recover trilete
+monads or establish a joint ancestral phenotype. No inference was rerun; see
+`docs/audits/2026-10-29-pilot-and-contract-review.md` (Q1/Q4, distinct from Q9's
+clock audit).
+
 ## 6. Earth-system proxies and series
 
 | Series | Status | Where |

@@ -1,0 +1,17 @@
+{
+  "operation": "extract published outputs; no ancestral-state inference",
+  "node_numbering": "tips in Newick order; internal nodes in preorder from Ntip+1",
+  "missing_state_policy": "empty value and column_absent; never imputed zero",
+  "duplicate_PARS_X21_ext2": "byte-identical to PARS_X21_ext; not a separate analysis",
+  "state_rows": 240,
+  "node_rows": 6,
+  "matrix_comparisons": 76,
+  "script_sha256": "6b6d293d276fb55beef8580aac2c11bbabc3cc9825b2ae0f486fb9b6104b151c",
+  "parser_sha256": "2f34f5d9bfafb25d1369f0221c160944383868a4b8b30fc422b8db3eeb272b80",
+  "outputs": {
+    "crown_states.csv": "a19bebc9eada95be1ab3d247e80734529a13008993b21934c348accbbd46ee77",
+    "matrix_crosswalk.csv": "b6059d29f329d02e6477c9a38f90f87deebcd018d6d1ba01066f67c77796c7c9",
+    "nodes.csv": "fece1da583c681644c730545efd1dcf0ebaed525364374d3e9ee0ae4f85a0aee",
+    "source_inventory.csv": "92bb792bb30a249fbfea66edc8251165a062e5df0f5044d0c7c9ba1babbf6a63"
+  }
+}

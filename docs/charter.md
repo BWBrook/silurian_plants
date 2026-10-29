@@ -126,6 +126,14 @@ data archived, and the human–AI correspondence record published alongside.
     adjudicated by Claude Opus 5.5 (`work/codex/loop1b/`), and the Cambrian age, location and
     vetting jobs for the widened Palynodata window (2026-10-28).
 - OpenAI Codex (OpenAI, Codex desktop; exact model version not exposed in this session):
+  Later on 2026-10-29, reviewed the trait-to-node pilot and third F3 contract repairs,
+  with two same-model delegates checking acceptance/logic and pivotal primary
+  specimens. The parent wrote a source-hashed extractor for Hooper's deposited
+  ancestral-state marginals and an independent R/ape node/value check, retaining
+  every state and distinguishing published outputs from new inference. The review
+  exposed a dispersal/aperture disagreement across separately modelled characters,
+  specimen-to-taxon transfers and remaining acceptance gaps; recommendations were
+  returned to Claude without editing his methods or pilot specification.
   On 2026-10-29, discussed innovation chronology and first-paper scope with Barry,
   recorded the agreed bounded trait pilot and deferred joint model, and independently
   checked Claude's second F3 repairs and rehearsal receipts. Three same-model delegates

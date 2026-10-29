@@ -1,0 +1,35 @@
+archive,member,sha256
+01. Data.zip,,ce4ba716cf4ca62657ba8022052ec7ae3468d57f9b837e78301acfd9becdd7be
+02. Ancestral State Estimation.zip,,9a3baeff1fd52d60c73d0b3d106211e533b0591b1728a403898c44843f6f0155
+02. Ancestral State Estimation.zip,02. Ancestral State Estimation/labelsperchar.csv,3546e793452a2deb41bd4c1a7d880738654c3cd82cd0c217ec04063a4fa7f9e2
+02. Ancestral State Estimation.zip,02. Ancestral State Estimation/asr_matrix.csv,e061918c5c9e7fd4dca1740cd49d3d674c552d5b8ad313e44d01e9114358c6cf
+01. Data.zip,01. Data/matrix.csv,67b4a4f5da97cf44e662e9d5e199a90af7e1fc9ef316cbcdddf91e854aba7700
+02. Ancestral State Estimation.zip,02. Ancestral State Estimation/ASE code chunk.R,ba628af666993ca2a1d54837270f4286fd0dafb305a209590ca6f4d08e2b1101
+02. Ancestral State Estimation.zip,02. Ancestral State Estimation/extant.tre,1ec8d5cc5604dbf295263f48f95e8f40f75db08b15ebd82f9ed95d5de3280403
+02. Ancestral State Estimation.zip,02. Ancestral State Estimation/eophyte sister.tre,19fb0492893f3d22e74044275180bf5c933594917126fd372b72d3f521a6c839
+02. Ancestral State Estimation.zip,02. Ancestral State Estimation/zygnema sister.tre,81286bb60dc9693a8d2bfcd8a107c70e19af6f8cb33f9eb924b79a65e514ce52
+02. Ancestral State Estimation.zip,02. Ancestral State Estimation/ase outputs/pars/PARS_X21_ext.csv,49c7aca7d4feebe172983048026c3ffa9f5a5e6f73cd90c989ee0b7c4f51978e
+02. Ancestral State Estimation.zip,02. Ancestral State Estimation/ase outputs/SCM/SCM_X21_ext.csv,336ef616e43292db3559995d4edf6b2a52fad9d432e117de4c2a260b37fd3bf0
+02. Ancestral State Estimation.zip,02. Ancestral State Estimation/ase outputs/ER/ER_X21_ext.csv,58258223e9e2bff4d3d5e057b326c071c9f3cfe65588362b0f4343661a5fb992
+02. Ancestral State Estimation.zip,02. Ancestral State Estimation/ase outputs/ARD/ARD_X21_ext.csv,6123c7764cf4224e480d4f10f46261c546c043f6aa261a5f484d59329e9ec72e
+02. Ancestral State Estimation.zip,02. Ancestral State Estimation/ase outputs/pars/PARS_X26_ext.csv,5721c202cf49279071d9d3fc4391f40eb45c0aecd786ffa1c205df493f83d6b9
+02. Ancestral State Estimation.zip,02. Ancestral State Estimation/ase outputs/SCM/SCM_X26_ext.csv,883eb025d0555c4aef8d213339ec59550f968bcbff584c4407dc0e0426bc8f97
+02. Ancestral State Estimation.zip,02. Ancestral State Estimation/ase outputs/ER/ER_X26_ext.csv,9d00668b3badd90f2d872eb0879a82ec73a0290d49ba48191ae5614df80bcab3
+02. Ancestral State Estimation.zip,02. Ancestral State Estimation/ase outputs/ARD/ARD_X26_ext.csv,1c7e9e117bd56d53849b439a9011071275b7590b1f5bda17f786146ca2514838
+02. Ancestral State Estimation.zip,02. Ancestral State Estimation/ase outputs/pars/PARS_X21_eo.csv,d70f1a5706c610a9b23e281409603d2585f147b9ec1954b83dee2188ed4d2ac2
+02. Ancestral State Estimation.zip,02. Ancestral State Estimation/ase outputs/SCM/SCM_X21_eo.csv,fff6375670ea5899a5086779aa17b731be74c100557f28660ab99f81cf35b808
+02. Ancestral State Estimation.zip,02. Ancestral State Estimation/ase outputs/ER/ER_X21_eo.csv,bc09ae5dce5664aed76b5eb45b6067ad6c93dbc6f05aad825460ae3dcd478753
+02. Ancestral State Estimation.zip,02. Ancestral State Estimation/ase outputs/ARD/ARD_X21_eo.csv,ad53e218d73abf224e0569f9da73b341d5ad43f66d17fe543d3f582ee5206a9f
+02. Ancestral State Estimation.zip,02. Ancestral State Estimation/ase outputs/pars/PARS_X26_eo.csv,df458459fb6c783300695c485c2461614b1e88ba1de3e08cc7be4d4750e7923c
+02. Ancestral State Estimation.zip,02. Ancestral State Estimation/ase outputs/SCM/SCM_X26_eo.csv,e5c401edf03068e4d5ec430078823bb0987aa9fe1b554f754fbec282a0f33e4b
+02. Ancestral State Estimation.zip,02. Ancestral State Estimation/ase outputs/ER/ER_X26_eo.csv,debdd80aa7899b1f41a117f5cedfcedac1c3d1649c4df4e1aad6081b40a4c30a
+02. Ancestral State Estimation.zip,02. Ancestral State Estimation/ase outputs/ARD/ARD_X26_eo.csv,1a0a0f326bd12d2ec7fcd7c86e8d50cbe416e6c6aac272e62e7a0400b171be16
+02. Ancestral State Estimation.zip,02. Ancestral State Estimation/ase outputs/pars/PARS_X21_zyg.csv,a2adc00147f5508b146d08be5e626a93a6c348e637b6f747d2c9e8b3ec5f7d33
+02. Ancestral State Estimation.zip,02. Ancestral State Estimation/ase outputs/SCM/SCM_X21_zyg.csv,0bda0ad0ccac7ab745f073dc3251382cd30eb9e3d3d5b46aea53308b9a6b2000
+02. Ancestral State Estimation.zip,02. Ancestral State Estimation/ase outputs/ER/ER_X21_zyg.csv,445ec46e5a0039bae4a38c08b182054f76f7a0e6051d7af862666769216b756e
+02. Ancestral State Estimation.zip,02. Ancestral State Estimation/ase outputs/ARD/ARD_X21_zyg.csv,bfa6c7067aee21a3785ad6d674652d96097552bc2aaf0231103f81d82ecf5300
+02. Ancestral State Estimation.zip,02. Ancestral State Estimation/ase outputs/pars/PARS_X26_zyg.csv,d7059faeb727ca21f4360b0e4638d91b24e4f4e63d0783d65a52083b34f54e99
+02. Ancestral State Estimation.zip,02. Ancestral State Estimation/ase outputs/SCM/SCM_X26_zyg.csv,cda507c02b8388495de19075d1d580bacb7aeebfd8482e2b95580c1d0d1c83be
+02. Ancestral State Estimation.zip,02. Ancestral State Estimation/ase outputs/ER/ER_X26_zyg.csv,6f3ba21b0a97297c6f2d58c093be7684ce9c90442f88f5203764bd1e6d09f121
+02. Ancestral State Estimation.zip,02. Ancestral State Estimation/ase outputs/ARD/ARD_X26_zyg.csv,a369bc7c72221864f3e85545573ff7819e8d22e34b5d2c874bc0df3efc96ccfa
+02. Ancestral State Estimation.zip,02. Ancestral State Estimation/ase outputs/pars/PARS_X21_ext2.csv,49c7aca7d4feebe172983048026c3ffa9f5a5e6f73cd90c989ee0b7c4f51978e
