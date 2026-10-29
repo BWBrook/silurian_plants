@@ -463,7 +463,7 @@ comparison) is in `c7729ad`, its count-matched re-run in `69f2ef4` and the 60-ag
   `out/validation_dev*` hold the development grid (`dev2`: its seeds under the repaired code); `cal`, `acc1` and `receipt_cal.json` the second-review rehearsal,
   `shared` the shared-age cells. All of these predate the third-review repairs below and were written by earlier code.
 - `check_paired.py` (two runs on the same seeds, replicate by replicate) and `check_reoptimise.py` (every miss re-solved from many more starts): the rehearsal's checks.
-- `test_envelope.py`: 85 tests; the whole of `models/f3` is 159 tests, all passing (about 35 s).
+- `test_envelope.py`: 87 tests; the whole of `models/f3` is 161 tests, all passing (about 40 s).
 
 ```bash
 uv run --with pytest --with numpy --with scipy python -m pytest -q models/f3
@@ -595,13 +595,14 @@ are not (D9 is, as D8's control), and are reported, not accepted against.
 - **Per cell**: coverage over every replicate at the run's shift (Codex R4). A trivial replicate (t0 at or below tau) and one with no first appearance make no claim
   and cover; an error and a failed output do not, whatever the shift (their margin is +inf in `delta_*`). Two coverages are kept apart (Codex, third review):
   - *delivered coverage*, the acceptance quantities: the reported output succeeded and contains the truth. `fcover_*` needs the bound and the statistic at the
-    truth both converged; `ocover_*` needs the set and the statistic at t0 both converged, the exact statistic within the critical value and the grid set
+    truth both converged, the statistic within the critical value and the delivered bound containing the target within the root tolerance (fourth review);
+    `ocover_*` needs the set and the statistic at t0 both converged, the exact statistic within the critical value and the grid set
     containing t0. `mismatch_f_*` counts replicates where f* >= abar_rel and the statistic's verdict disagree beyond the root tolerance; `mismatch_ocover_*` those
     where the exact test covers and the grid set does not; `ocover_set_*` is the grid set's own coverage;
   - *truth-point test coverage* (`fcover_test_*`, `ocover_test_*`): the statistic at the truth alone, a diagnostic of the test and not of the reported interval.
 
-  Then the non-trivial coverage as a diagnostic, `delta_*` (the smallest shift not below 0 that brings a delivered coverage to the calibration target, 0.955, in that
-  batch: a tuning quantity, not a population guarantee), `failed_*` (failed delivered outputs), `outside_*` (the share of non-trivial replicates whose
+  Then the non-trivial coverage as a diagnostic, `delta_*` (a tuning proposal: the smallest shift not below 0 at which the stored truth-point margins of
+  delivered outputs reach the calibration target, 0.955, in that batch; delivered coverage at that shift is established only by the independent acceptance run), `failed_*` (failed delivered outputs), `outside_*` (the share of non-trivial replicates whose
   window-relative target exceeds the class ceiling, which makes the truth lie outside the class), informativeness (unbounded share, endpoints, the four states),
   `flagged_share`, `failed_share`, `reps_with_failed_fit` and `seconds_per_rep`. States, medians, endpoints and set shapes count converged outputs only; the failures
   are counted beside them (`failed_fstar_*`, `failed459_*`, `failed_set_*`, and the flagged shares `flagged_fstar_*`, `flagged459_*`).
@@ -759,6 +760,26 @@ and the independent acceptance remains the check.
 **Verification.** Five new tests cover the receipt refusals, stage-1 counts, stage-2 pooling and refusal, and delivered against test coverage. A smoke run of
 the command line with the protocol patched to three replicates (cells A2, A6, D2) ran calibrate, stage 1 and stage 2: stage 2 reran only A2 and A6 on the next
 replicate block, pooled their counts and accepted, and a stage-2 verdict file offered as stage 1 was refused.
+
+**Fourth review (2026-10-29).** Codex reproduced the repairs and injected four counterexamples (Correspondence 2564;
+`docs/audits/2026-10-29-pilot-and-contract-review.md` §4). All four are closed:
+1. **V1.** A stage-1 file whose count was edited while its labels were kept, or which missed or repeated a quantity,
+   passed. `check_stage1` now requires:
+   - exactly the grid's quantities, once each;
+   - integer counts in 0–1,000 and empty stage-2 fields;
+   - labels and the grid result that follow from the counts;
+   - summary and replicate files that match the hashes the stage-1 run recorded (`evidence`; a gzipped replicate table
+     is read through), with every count agreeing with that summary.
+2. **V2.** A converged bound that omitted the target still counted as covering when the test at the truth covered.
+   Delivered *f\** coverage now requires the bound itself to contain the target within the root tolerance. A replicate
+   whose bound or grid set omits the truth while its test covers cannot be shifted into coverage.
+3. **V3.** A receipt part with a NaN shift could hide from `max`. Every part must now be finite and non-negative.
+4. **V4.** `delta_*` is described as a tuning proposal from stored margins. Delivered coverage at the shift is what
+   independent acceptance establishes.
+
+The stored runs re-summarise unchanged under the new rules: no bound or grid set ever omitted a truth its test covered.
+Six new tests cover the cases; 161 F3 tests pass. The tiny-protocol smoke run went through calibrate and stage 1, then
+through stage 2 against the recorded evidence.
 
 ### Open choices
 

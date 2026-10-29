@@ -31,21 +31,24 @@ Coverage is over every replicate. A replicate whose t0 lies at or below the esti
 null is vacuous, f* has zero exposure) and covers; so does one with no first appearance, where the analysis
 makes no claim. An error, or a failed output, does not cover, whatever the shift. Two coverages are kept apart:
 - delivered coverage (`fcover_*`, `ocover_*`, the acceptance quantities): the reported output succeeded and
-  contains the truth. For f*, the bound and the statistic at the truth both converged and LR_K(abar_rel) <=
-  crit; for the origin set, the set and the statistic at t0 both converged, LR <= crit at t0 and the grid set
-  contains t0. f* >= abar_rel is the same event as LR_K(abar_rel) <= crit up to the root tolerance, which is
-  what lets the summary shift the critical value on the stored LR; `mismatch_f_*` counts the replicates where
-  the two disagree beyond that tolerance, and `mismatch_ocover_*` those where the exact test covers t0 and the
-  grid set does not. Both should be zero; `ocover_set_*` is the grid set's own coverage;
+  contains the truth. For f*, the bound and the statistic at the truth both converged, LR_K(abar_rel) <= crit,
+  and the delivered bound itself contains the target: f* >= abar_rel - ROOT_TOL (1 + abar_rel). For the origin
+  set, the set and the statistic at t0 both converged, LR <= crit at t0 and the grid set contains t0. The bound
+  and the test should agree up to the root tolerance; `mismatch_f_*` counts the replicates where they do not,
+  and `mismatch_ocover_*` those where the exact test covers t0 and the grid set does not. Either kind of
+  disagreement is a miss. Both counts should be zero; `ocover_set_*` is the grid set's own coverage;
 - truth-point test coverage (`*_test_*`): the statistic at the truth alone, whatever became of the output.
   A diagnostic of the test, not of the reported interval.
 Coverage over non-trivial replicates is a diagnostic, as is every coverage in a cell marked `diagnostic`. An
 origin read-out is an acceptance quantity in the cells whose truth satisfies its hypothesis for every possible
 tau: the truth is in the class and a >= f_min on (tau0, t0 - D]. Elsewhere `cover_*_applicable` picks the
 read-out from the simulated truth and is a diagnostic with its denominator. Medians, shares and states count
-converged outputs only, with the failures counted beside them. `delta_*` is the smallest shift of the critical
-value (not below 0) that brings a delivered coverage to CALIBRATION_TARGET in that batch: a tuning quantity,
-not a population guarantee.
+converged outputs only, with the failures counted beside them. `delta_*` is a tuning proposal: the smallest
+shift of the critical value (not below 0) at which the stored truth-point margins of delivered outputs reach
+CALIBRATION_TARGET in that batch, a replicate whose output failed or omitted the truth while its test covered
+counting as uncoverable. The outputs were computed at the run's own shift, and a wider critical value changes
+grid sets and numerical searches, so delivered coverage at delta is established only by the independent
+acceptance run. It is not a population guarantee.
 
 Phases. `dev` runs at shift 0 on root seed 20261030. `calibrate` runs replicates 0..N1-1 of every cell at shift
 0 on its own root seed and writes a receipt: delta, the largest delta_* over every acceptance quantity of every
@@ -64,6 +67,7 @@ SeedSequence(root seed of the phase, spawn_key=(c, j)); child 0 simulates.
 
 import argparse
 import csv
+import gzip
 import hashlib
 import json
 import math
@@ -367,11 +371,15 @@ def summarise(cell: dict, rows: list[dict]) -> dict:
             test_ok = lambda r: r[f"ok_lr{label}_{cls}"]
             delivered_ok = lambda r: test_ok(r) and bound_ok(r)
             margin = lambda r: -math.inf if r.get(key) is None else r[key] - r["crit_t0"]
+            contained = lambda r: (r.get(key) is None or r[f"state_{cls}"] not in ("finite", "ceiling-limited") or not np.isfinite(r[target])
+                                   or r[f"fstar_{cls}"] >= r[target] - ROOT_TOL * (1 + r[target]))
+            covers = lambda r: margin(r) <= 0 and delivered_ok(r) and contained(r)
+            shiftable = lambda r: delivered_ok(r) and (margin(r) > 0 or contained(r))
             if cls in truth.members:
-                out[f"fcover{label}_{cls}"] = coverage(rows, lambda r: margin(r) <= 0 and delivered_ok(r))
+                out[f"fcover{label}_{cls}"] = coverage(rows, covers)
                 out[f"fcover{label}_test_{cls}"] = coverage(rows, lambda r: margin(r) <= 0 and test_ok(r))
-                out[f"fcover{label}_nontrivial_{cls}"] = mean(margin(r) <= 0 and delivered_ok(r) for r in nt)
-                out[f"delta{label}_f_{cls}"] = shift_to_target(margins(rows, margin, delivered_ok))
+                out[f"fcover{label}_nontrivial_{cls}"] = mean(covers(r) for r in nt)
+                out[f"delta{label}_f_{cls}"] = shift_to_target(margins(rows, margin, shiftable))
                 out[f"failed{label}_f_{cls}"] = sum(not delivered_ok(r) for r in ok)
                 out[f"mismatch{label}_f_{cls}"] = sum(
                     (margin(r) <= 0) != (r[f"fstar_{cls}"] >= r[target]) and abs(r[f"fstar_{cls}"] - r[target]) > ROOT_TOL * (1 + r[target])
@@ -400,10 +408,11 @@ def summarise(cell: dict, rows: list[dict]) -> dict:
             margin = lambda r: r[f"lr0_{key}"] - r["crit_t0"]
             test_ok = lambda r: r[f"ok_lr0_{key}"]
             delivered_ok = lambda r: test_ok(r) and r[f"ok_set_{key}"]
+            shiftable = lambda r: delivered_ok(r) and (margin(r) > 0 or r[f"cover_set_{key}"])
             out[f"ocover_{key}"] = coverage(rows, lambda r: margin(r) <= 0 and delivered_ok(r) and r[f"cover_set_{key}"])
             out[f"ocover_set_{key}"] = coverage(rows, lambda r: r[f"ok_set_{key}"] and r[f"cover_set_{key}"])
             out[f"ocover_test_{key}"] = coverage(rows, lambda r: margin(r) <= 0 and test_ok(r))
-            out[f"delta_ocover_{key}"] = shift_to_target(margins(rows, margin, delivered_ok))
+            out[f"delta_ocover_{key}"] = shift_to_target(margins(rows, margin, shiftable))
             out[f"failed_ocover_{key}"] = sum(not delivered_ok(r) for r in ok)
             out[f"mismatch_ocover_{key}"] = sum(margin(r) <= 0 and delivered_ok(r) and not r[f"cover_set_{key}"] for r in ok)
     for cls in ORIGIN_CLASSES:
@@ -470,10 +479,14 @@ def check_receipt(rec: dict) -> float:
     keys = [(p["cell"], p["quantity"]) for p in parts]
     if len(keys) != len(set(keys)) or set(keys) != grid_quantities():
         problems.append("it does not cover exactly the acceptance quantities of the grid")
+    finite = lambda d: isinstance(d, (int, float)) and not isinstance(d, bool) and math.isfinite(d) and d >= 0
+    bad = [f"{p['cell']} {p['quantity']}" for p in parts if not finite(p.get("delta"))]
+    if bad:
+        problems.append("parts without a finite non-negative delta: " + ", ".join(bad))
     delta = rec.get("delta")
-    if not (isinstance(delta, (int, float)) and math.isfinite(delta) and delta >= 0):
+    if not finite(delta):
         problems.append(f"delta {delta!r} is not finite and non-negative")
-    elif parts and delta != max(p["delta"] for p in parts):
+    elif parts and not bad and delta != max(p["delta"] for p in parts):
         problems.append("delta is not the largest of its parts")
     if problems:
         raise SystemExit("calibration receipt refused: " + "; ".join(problems))
@@ -515,8 +528,22 @@ def grid_result(verdicts: list[dict]) -> str:
     return "rejected" if "fail" in finals else "stage 2 needed" if "pending" in finals else "accepted"
 
 
-def check_stage1(first: dict, receipt_sha: str) -> None:
-    """Stage 2 continues only a complete stage 1 run on the same receipt and code."""
+def content_sha256(path: Path) -> str:
+    """The hash of a file's content, read through gzip when only the compressed copy remains."""
+    if path.exists():
+        return sha256(path)
+    gz = path.with_name(path.name + ".gz")
+    return hashlib.sha256(gzip.decompress(gz.read_bytes())).hexdigest() if gz.exists() else ""
+
+
+def evidence(tag: str) -> dict:
+    files = dict(summary=f"validation_{tag}.csv", reps=f"validation_{tag}_reps.csv")
+    return files | {f"{k}_sha256": sha256(OUT / f) for k, f in files.items()}
+
+
+def check_stage1(first: dict, receipt_sha: str, base: Path) -> None:
+    """Stage 2 continues only a stage 1 that is complete, on the same receipt, code and seed, and whose verdicts
+    follow from its counts and its counts from its own summary and replicate files (named relative to base)."""
     problems = []
     if first.get("stage") != 1:
         problems.append("it is not a stage-1 verdict file")
@@ -526,8 +553,32 @@ def check_stage1(first: dict, receipt_sha: str) -> None:
         problems.append("the code or inputs have changed since")
     if (first.get("root_seed"), first.get("start"), first.get("reps")) != (ROOT_SEEDS["accept"], 0, N1):
         problems.append("it did not run replicates 0..N1-1 on the acceptance seed")
-    if first.get("result") == "incomplete":
-        problems.append("it does not cover every acceptance quantity")
+    q = first.get("quantities") or []
+    keys = [(v.get("cell"), v.get("quantity")) for v in q]
+    if len(keys) != len(set(keys)) or set(keys) != grid_quantities():
+        problems.append("its quantities are not exactly the grid's acceptance quantities, once each")
+    for v in q:
+        k = v.get("k1")
+        if not (isinstance(k, int) and not isinstance(k, bool) and 0 <= k <= N1):
+            problems.append(f"{v.get('cell')} {v.get('quantity')}: count {k!r} is not an integer in 0..{N1}")
+            continue
+        label = stage1(k, N1)
+        if (v.get("stage1"), v.get("final")) != (label, "pending" if label == "borderline" else label):
+            problems.append(f"{v.get('cell')} {v.get('quantity')}: its verdict does not follow from its count")
+        if v.get("k2") is not None or v.get("pooled") is not None:
+            problems.append(f"{v.get('cell')} {v.get('quantity')}: it already carries stage-2 counts")
+    if not problems and first.get("result") != grid_result(q):
+        problems.append("its grid result does not follow from its verdicts")
+    ev_ = first.get("evidence") or {}
+    for k in ("summary", "reps"):
+        if not ev_.get(k) or content_sha256(base / ev_[k]) != ev_.get(f"{k}_sha256"):
+            problems.append(f"its {k} file is missing or does not match its hash")
+    if not problems:
+        by_name = {r["name"]: r for r in csv.DictReader(open(base / ev_["summary"]))}
+        for v in q:
+            s = by_name.get(v["cell"], {})
+            if not s.get(v["quantity"]) or round(float(s[v["quantity"]]) * int(s["n_rep"])) != v["k1"]:
+                problems.append(f"{v['cell']} {v['quantity']}: count {v['k1']} disagrees with its summary")
     if problems:
         raise SystemExit("stage 1 refused: " + "; ".join(problems))
 
@@ -550,7 +601,7 @@ def main() -> None:
         shift, receipt_sha = check_receipt(json.loads(args.receipt.read_text())), sha256(args.receipt)
         if args.stage1:
             first = json.loads(args.stage1.read_text())
-            check_stage1(first, receipt_sha)
+            check_stage1(first, receipt_sha, args.stage1.parent)
             names = stage2_cells(first["quantities"])
             cells, start, reps = [c for c in CELLS if c["name"] in names], N1, N2
     elif args.stage1:
@@ -594,7 +645,7 @@ def main() -> None:
         (OUT / f"verdicts_{args.tag}.json").write_text(json.dumps(dict(
             stage=2 if first else 1, result=result, receipt=str(args.receipt), receipt_sha256=receipt_sha,
             stage1=str(args.stage1) if first else None, root_seed=root, start=start, reps=reps, sha256=code_hashes(),
-            quantities=verdicts), indent=2) + "\n")
+            evidence=evidence(args.tag) if rows else None, quantities=verdicts), indent=2) + "\n")
         print(f"grid {result} -> {OUT / f'verdicts_{args.tag}.json'}")
     print(f"{len(jobs)} replicates in {elapsed:.0f} s")
 

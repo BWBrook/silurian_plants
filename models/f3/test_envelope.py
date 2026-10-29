@@ -7,6 +7,7 @@ ranges and a closed form, an enumeration or an independent quadrature is the ref
 fixed seeds.
 """
 
+import gzip
 import itertools
 import math
 
@@ -878,7 +879,10 @@ def test_delivered_coverage_needs_the_reported_bound_and_set_to_have_succeeded()
     assert s["delta_f_H0c"] == math.inf  # one failed bound in four: no shift reaches the target
     assert s["ocover_test_H0c_0.1"] == 1.0 and s["ocover_H0c_0.1"] == 0.5 and s["ocover_set_H0c_0.1"] == 0.5
     assert s["failed_ocover_H0c_0.1"] == 1 and s["mismatch_ocover_H0c_0.1"] == 1 and s["mismatch_f_H0c"] == 0
-    assert val.summarise(cell, [dict(good, fstar_H0c=0.2)])["mismatch_f_H0c"] == 1
+    assert s["delta_ocover_H0c_0.1"] == math.inf  # a failed set and a grid set that omits t0: neither can be shifted into coverage
+    omitted = val.summarise(cell, [dict(good, fstar_H0c=0.2)])  # the test covers, the delivered bound does not
+    assert omitted["mismatch_f_H0c"] == 1 and omitted["fcover_test_H0c"] == 1.0 and omitted["fcover_H0c"] == 0.0 and omitted["delta_f_H0c"] == math.inf
+    assert val.summarise(cell, [dict(good, fstar_H0c=0.2995)])["fcover_H0c"] == 1.0  # within the root tolerance
 
 
 def _receipt(**changes) -> dict:
@@ -890,7 +894,8 @@ def test_acceptance_refuses_a_receipt_outside_its_calibrated_scope():
     assert val.check_receipt(_receipt()) == 0.1
     parts = _receipt()["parts"]
     for bad in (dict(reps=5), dict(start=1000), dict(root_seed=val.ROOT_SEEDS["dev"]), dict(target=0.95), dict(sha256={}),
-                dict(delta=math.nan), dict(delta=-0.1), dict(delta=math.inf), dict(delta=0.05), dict(parts=parts[:-1]), dict(parts=parts + parts[:1])):
+                dict(delta=math.nan), dict(delta=-0.1), dict(delta=math.inf), dict(delta=0.05), dict(parts=parts[:-1]), dict(parts=parts + parts[:1]),
+                dict(parts=parts[:-1] + [dict(parts[-1], delta=math.nan)]), dict(parts=parts[:-1] + [dict(parts[-1], delta=-0.2)])):
         with pytest.raises(SystemExit):
             val.check_receipt(_receipt(**bad))
 
@@ -918,13 +923,53 @@ def test_stage_two_reruns_only_borderline_cells_and_pools_their_counts():
     assert pooled[1:-1] == verdicts[1:-1] and val.grid_result(pooled) == "rejected" and val.grid_result(pooled[:-1]) == "incomplete"
 
 
-def test_stage_two_refuses_a_stage_one_from_another_receipt_code_seed_or_scope():
-    first = dict(stage=1, receipt_sha256="r", sha256=val.code_hashes(), root_seed=val.ROOT_SEEDS["accept"], start=0, reps=val.N1, result="stage 2 needed")
-    val.check_stage1(first, "r")
+def _stage1(tmp_path, monkeypatch):
+    """A stage-1 verdict file over the whole grid, with its summary and replicate files written beside it."""
+    monkeypatch.setattr(val, "OUT", tmp_path)
+    cells = [c for c in val.CELLS if c["kind"] == "acceptance"]
+    summary = [dict(name=c["name"], n_rep=1000, **{q: 1.0 for q, _, _ in val.acceptance_quantities(c)}) for c in cells]
+    summary[0][val.acceptance_quantities(cells[0])[0][0]] = 0.94
+    val.write_csv(tmp_path / "validation_acc1.csv", summary)
+    (tmp_path / "validation_acc1_reps.csv").write_text("cell,rep\nA1,0\n")
+    verdicts = val.stage1_verdicts(cells, summary)
+    return dict(stage=1, receipt_sha256="r", sha256=val.code_hashes(), root_seed=val.ROOT_SEEDS["accept"], start=0, reps=val.N1,
+                result=val.grid_result(verdicts), evidence=val.evidence("acc1"), quantities=verdicts)
+
+
+def test_stage_two_refuses_a_stage_one_from_another_receipt_code_seed_or_scope(tmp_path, monkeypatch):
+    first = _stage1(tmp_path, monkeypatch)
+    assert first["result"] == "stage 2 needed"
+    val.check_stage1(first, "r", tmp_path)
     for change in (dict(receipt_sha256="x"), dict(sha256={}), dict(start=1000), dict(reps=5), dict(root_seed=val.ROOT_SEEDS["calibrate"]),
-                   dict(result="incomplete"), dict(stage=2)):
+                   dict(result="accepted"), dict(stage=2), dict(evidence={})):
         with pytest.raises(SystemExit):
-            val.check_stage1(first | change, "r")
+            val.check_stage1(first | change, "r", tmp_path)
+
+
+def test_stage_two_derives_verdicts_from_counts_and_counts_from_the_stage_one_evidence(tmp_path, monkeypatch):
+    first = _stage1(tmp_path, monkeypatch)
+    q = first["quantities"]
+    relabel = lambda v, k: dict(v, k1=k, stage1=val.stage1(k), final=val.stage1(k) if val.stage1(k) != "borderline" else "pending")
+    for quantities in (
+        q[:1] + [dict(q[1], k1=0)] + q[2:],  # a count changed, its pass labels kept
+        q[:1] + [relabel(q[1], 0)] + q[2:],  # a consistent relabel that its summary contradicts
+        q[:1] + [dict(q[1], k1=1000.0)] + q[2:], q[:1] + [dict(q[1], k1=1001)] + q[2:],  # not an integer count in range
+        q[:-1], q + q[-1:],  # a quantity missing or repeated
+        q[:1] + [dict(q[1], k2=3, pooled=1003)] + q[2:],  # stage-2 fields already filled
+    ):
+        with pytest.raises(SystemExit):
+            val.check_stage1(first | dict(quantities=quantities, result=val.grid_result(quantities)), "r", tmp_path)
+    (tmp_path / "validation_acc1.csv").write_text((tmp_path / "validation_acc1.csv").read_text().replace("0.94", "0.95"))
+    with pytest.raises(SystemExit):
+        val.check_stage1(first, "r", tmp_path)  # the summary no longer matches its hash
+
+
+def test_stage_one_evidence_may_be_read_through_its_compressed_copy(tmp_path, monkeypatch):
+    first = _stage1(tmp_path, monkeypatch)
+    reps = tmp_path / "validation_acc1_reps.csv"
+    (tmp_path / "validation_acc1_reps.csv.gz").write_bytes(gzip.compress(reps.read_bytes()))
+    reps.unlink()
+    val.check_stage1(first, "r", tmp_path)
 
 
 def test_origin_readouts_are_acceptance_quantities_only_where_the_truth_satisfies_them_for_every_tau():
