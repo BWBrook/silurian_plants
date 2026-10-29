@@ -1,13 +1,17 @@
-# Next automated literature batch — proposal, 29 October 2026
+# Literature batch — proposal and Stage A outcome, 29 October 2026
 
-**Recommendation:** first collect six priority-one recent Elsevier papers through
+**Stage A authorised and completed as an access attempt:** five of six papers plus
+one supplement acquired; Liu 2016 remains a fresh challenge/delivery blocker.
+See `docs/audits/2026-10-29-six-paper-batch.md`. Stage B remains a proposal.
+
+**Original recommendation:** first collect six priority-one recent Elsevier papers through
 the existing UTAS session, then attempt two public ResearchGate author copies.
 This is a proposed eight-text tranche, with a six-text first stage. No new paper
 or supplement was downloaded in this planning pass.
 
 ## Current register and exclusions
 
-The current CSV has **492 rows: 462 needed, 16 local-copy-held and 14
+The preflight CSV had **492 rows: 462 needed, 16 local-copy-held and 14
 open-copy-held**. Ten needed entries are parked in `docs/literature-requests.md`:
 eight remaining from the original pilot, the earlier Garratt 1978 case, and Paris
 et al. 2012, whose exact signed-in catalogue result was request-only today. That
@@ -19,7 +23,7 @@ Select acquisition targets by work identity **and asset kind/version**. A repeat
 DOI may represent a paper and its supporting information, both legitimately
 needed. Rows without DOIs also include alternate routes to the same work.
 
-## Stage A: six institutional candidates
+## Stage A: preflight evidence for six institutional candidates
 
 All six exact DOI searches in signed-in UTAS **Everything** returned the matching
 article with an available-online route. For two, the actual UTAS-proxied
@@ -42,6 +46,10 @@ have now worked repeatedly. The six are already priority one, have exact source
 identities and are relevant to Q1/Q2 or the spore compilation. Today's Paris 2012
 request-only result in the same journal shows why access must still be checked
 per paper; there is no assumed publisher-wide or date-wide entitlement.
+
+After the authorised Stage A attempt, the CSV has **457 needed, 21 local-copy-held
+and 14 open-copy-held**. The files, versions and sole blocker are in the batch audit
+and `library/closed.tsv`. The table above preserves the evidence before collection.
 
 ## Stage B: two public author-copy candidates
 
@@ -123,5 +131,5 @@ checks, local PDF identity inspection, request-queue separation and Downloads
 cleanup. A `gpt-5.6-luna` scout reconciled manifests; a `gpt-5.6-luna` executor
 checked public routes. Their initial metadata shortlist included version traps;
 parent inspection and the targeted follow-up corrected them before recommendation.
-No new scientific reading, occurrence adjudication or new full-text collection
-was undertaken.
+No new scientific reading or occurrence adjudication was undertaken. The subsequent
+authorised Stage A collection and its delegate roles are recorded in the batch audit.

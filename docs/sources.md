@@ -65,6 +65,15 @@ among GBIF fossil specimens.
 
 ## 3. Names and taxonomy
 
+On 29 October 2026 the authorised six-paper institutional batch secured five full
+texts (Strother 2025, Wang 2026, Vecoli 2017, Ghavidel-Syooki & Piri-Kangarshahi
+2021, Wang 2023) and Wang 2023's supplementary DOCX in `library/closed/`.
+Strother is a verified browser print export; the other four are original publisher
+PDFs. `library/closed.tsv` and `docs/audits/2026-10-29-six-paper-batch.md` preserve
+versions and hashes. Liu 2016 remains needed because its PDF challenge/delivery
+failed, with a fresh action in `docs/barry-to-action.md`. Scientific extraction is
+pending; ten older requests remain parked separately.
+
 | Source | Status | Notes |
 |---|---|---|
 | PBDB taxa and opinions | held | see §1 |

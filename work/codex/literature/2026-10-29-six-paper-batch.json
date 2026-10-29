@@ -1,0 +1,284 @@
+{
+  "date": "2026-10-29",
+  "scope": "Authorised six-paper institutional Stage A; Stage B excluded",
+  "access_refresh": {
+    "global_agents": "~/.codex/AGENTS.md read live",
+    "nectar_readme": "~/work/nectar/README.md read live",
+    "routing": "current short aliases and public nectar hub supersede older routes; no remote workload used",
+    "correspondence": "one successful list_threads read; no reconnect, acknowledgement or post"
+  },
+  "assets": [
+    {
+      "id": "al2025b",
+      "file": "closed/strother2025.pdf",
+      "doi": "10.1016/j.revpalbo.2025.105322",
+      "pages": 26,
+      "bytes": 31102301,
+      "sha256": "21dac7a427e343f7846b20211e0b50a64cd2034b1ee37fec00b000708fc9ac37",
+      "version": "browser PDFium print export of loaded publisher PDF",
+      "nonempty_text_pages": 26,
+      "source_url": "https://www.sciencedirect.com/science/article/pii/S0034666725000430",
+      "supplement_check": "Authenticated article links and PDF text checked; no separate supplementary file identified"
+    },
+    {
+      "id": "wang2026",
+      "file": "closed/wang2026.pdf",
+      "doi": "10.1016/j.earscirev.2026.105476",
+      "pages": 30,
+      "bytes": 24929545,
+      "sha256": "02018d4c82aacdd5739bc3d38e86243daef8e1de94513710e2b3e7146e2e89df",
+      "version": "publisher PDF",
+      "nonempty_text_pages": 30,
+      "source_url": "https://www.sciencedirect.com/science/article/pii/S0012825226000875",
+      "supplement_check": "Authenticated article links and PDF text checked; no separate supplementary file identified"
+    },
+    {
+      "id": "al2017c",
+      "file": "closed/vecoli2017.pdf",
+      "doi": "10.1016/j.revmic.2017.06.003",
+      "pages": 13,
+      "bytes": 3948815,
+      "sha256": "5932b8da36d10be365089f06cab55ad472ade98c238186432058e9493459936b",
+      "version": "publisher PDF",
+      "nonempty_text_pages": 13,
+      "source_url": "https://www.sciencedirect.com/science/article/pii/S0035159817300612",
+      "supplement_check": "Authenticated article links and PDF text checked; no separate supplementary file identified"
+    },
+    {
+      "id": "pirikangarshahi2020",
+      "file": "closed/ghavidelsyooki2020.pdf",
+      "doi": "10.1016/j.revpalbo.2020.104337",
+      "pages": 25,
+      "bytes": 14974896,
+      "sha256": "13aab0bc23f5f60172102f7d274e70de1b79f1599bed953d1b47ef25c0e56e79",
+      "version": "publisher PDF",
+      "nonempty_text_pages": 25,
+      "source_url": "https://www.sciencedirect.com/science/article/pii/S0034666720302414",
+      "supplement_check": "Authenticated article links and PDF text checked; no separate supplementary file identified"
+    },
+    {
+      "id": "al2023c",
+      "file": "closed/wang2023.pdf",
+      "doi": "10.1016/j.jseaes.2023.105769",
+      "pages": 13,
+      "bytes": 19709772,
+      "sha256": "d144c8256cac157e897702e91583ca40fe4e5ca76a91b123e21df28677dedc78",
+      "version": "publisher PDF",
+      "nonempty_text_pages": 13,
+      "source_url": "https://www.sciencedirect.com/science/article/pii/S1367912023002304",
+      "supplement_check": "Publisher Appendix A links mmc1.docx, acquired separately"
+    },
+    {
+      "id": "al2023c",
+      "file": "closed/wang2023_SI.docx",
+      "doi": "10.1016/j.jseaes.2023.105769",
+      "pages": "",
+      "bytes": 52645,
+      "sha256": "b53c3b10dee6260760852d9910d47c07298864d6168da34f6a2fea4bfe6dfa19",
+      "version": "publisher supplementary DOCX",
+      "source_url": "https://ars.els-cdn.com/content/image/1-s2.0-S1367912023002304-mmc1.docx"
+    }
+  ],
+  "unresolved": [
+    {
+      "id": "al2016e",
+      "doi": "10.1016/j.revpalbo.2016.02.003",
+      "reason": "Full text access displayed; PDF route stalled, LibKey resolver stalled, publisher downloadMedia timed out. No file acquired; tab closed; needs manual Chrome diagnostic.",
+      "route": "https://www-sciencedirect-com.ezproxy.utas.edu.au/science/article/pii/S0034666715300142"
+    }
+  ],
+  "metadata": {
+    "generated": "2026-10-29",
+    "scope": "Read-only metadata for the six authorised Stage A literature targets; pre-acquisition metadata snapshot, acquisition outcomes are in top-level assets and unresolved",
+    "source": {
+      "crossref_api": "https://api.crossref.org/works/{doi}",
+      "publisher": "Elsevier ScienceDirect landing metadata and indexed publisher pages"
+    },
+    "records": [
+      {
+        "id": "al2025b",
+        "doi": "10.1016/j.revpalbo.2025.105322",
+        "title": "A freshwater palynological assemblage from the Hirnantian of Saudi Arabia",
+        "authors": [
+          "Paul Strother",
+          "Marco Vecoli",
+          "Christian Cesari",
+          "Charles H. Wellman"
+        ],
+        "journal": "Review of Palaeobotany and Palynology",
+        "publisher": "Elsevier BV",
+        "issued": "2025-07",
+        "volume": "338",
+        "issue": null,
+        "pages": null,
+        "article_id": "105322",
+        "pii": "S0034666725000430",
+        "publisher_resource_url": "https://linkinghub.elsevier.com/retrieve/pii/S0034666725000430",
+        "publisher_landing_url": "https://www.sciencedirect.com/science/article/pii/S0034666725000430",
+        "crossref_text_mining_links": [
+          "https://api.elsevier.com/content/article/PII:S0034666725000430?httpAccept=text/xml",
+          "https://api.elsevier.com/content/article/PII:S0034666725000430?httpAccept=text/plain"
+        ],
+        "access_metadata": "Publisher page indexed as access through organisation / purchase PDF; UTAS route is the authorised acquisition path.",
+        "supplement_metadata": "No explicit supplementary filename or public supplement link surfaced in Crossref relation/link metadata or the indexed publisher landing page."
+      },
+      {
+        "id": "wang2026",
+        "doi": "10.1016/j.earscirev.2026.105476",
+        "title": "Dynamic evolution of cryptospores: The origin and rise of the land flora",
+        "authors": [
+          "Kai Wang",
+          "Hong-He Xu",
+          "Bing-Cai Liu",
+          "Yi Wang"
+        ],
+        "journal": "Earth-Science Reviews",
+        "publisher": "Elsevier BV",
+        "issued": "2026-06",
+        "volume": "277",
+        "issue": null,
+        "pages": null,
+        "article_id": "105476",
+        "pii": "S0012825226000875",
+        "publisher_resource_url": "https://linkinghub.elsevier.com/retrieve/pii/S0012825226000875",
+        "publisher_landing_url": "https://www.sciencedirect.com/science/article/pii/S0012825226000875",
+        "crossref_text_mining_links": [
+          "https://api.elsevier.com/content/article/PII:S0012825226000875?httpAccept=text/xml",
+          "https://api.elsevier.com/content/article/PII:S0012825226000875?httpAccept=text/plain"
+        ],
+        "access_metadata": "Publisher page indexed as complimentary access; landing page exposes the article preview and a graphical-abstract image download.",
+        "supplement_metadata": "No explicit supplementary filename or public supplement link surfaced. Crossref has no relation entries; publisher page indexed only the graphical-abstract image among ancillary downloads."
+      },
+      {
+        "id": "al2017c",
+        "doi": "10.1016/j.revmic.2017.06.003",
+        "title": "Middle Ordovician cryptospores from the Saq-Hanadir transitional beds in the QSIM-801 well, Saudi Arabia",
+        "authors": [
+          "Marco Vecoli",
+          "Charles H. Wellman",
+          "Philippe Gerrienne",
+          "Alain Le Hérissé",
+          "Philippe Steemans"
+        ],
+        "journal": "Revue de Micropaléontologie",
+        "publisher": "Elsevier Masson SAS",
+        "issued": "2017-07",
+        "volume": "60",
+        "issue": "3",
+        "pages": "319-331",
+        "article_id": null,
+        "pii": "S0035159817300612",
+        "publisher_resource_url": "https://linkinghub.elsevier.com/retrieve/pii/S0035159817300612",
+        "publisher_landing_url": "https://www.sciencedirect.com/science/article/pii/S0035159817300612",
+        "crossref_text_mining_links": [
+          "https://api.elsevier.com/content/article/PII:S0035159817300612?httpAccept=text/xml",
+          "https://api.elsevier.com/content/article/PII:S0035159817300612?httpAccept=text/plain"
+        ],
+        "access_metadata": "Publisher page indexed as access through organisation / purchase PDF; UTAS route is the authorised acquisition path.",
+        "supplement_metadata": "No explicit supplementary filename or public supplement link surfaced in Crossref relation/link metadata or the indexed publisher landing page."
+      },
+      {
+        "id": "al2016e",
+        "doi": "10.1016/j.revpalbo.2016.02.003",
+        "title": "Palynomorphs from massive metamorphosed rocks in Lvchun, Yunnan, Southwest China: Evidence for the Ludlow age and its geological implications",
+        "authors": [
+          "Feng Liu",
+          "Yi Wang",
+          "Huaicheng Zhu",
+          "Shu Ouyang"
+        ],
+        "journal": "Review of Palaeobotany and Palynology",
+        "publisher": "Elsevier BV",
+        "issued": "2016-10",
+        "volume": "233",
+        "issue": null,
+        "pages": "146-160",
+        "article_id": null,
+        "pii": "S0034666715300142",
+        "publisher_resource_url": "https://linkinghub.elsevier.com/retrieve/pii/S0034666715300142",
+        "publisher_landing_url": "https://www.sciencedirect.com/science/article/pii/S0034666715300142",
+        "crossref_text_mining_links": [
+          "https://api.elsevier.com/content/article/PII:S0034666715300142?httpAccept=text/xml",
+          "https://api.elsevier.com/content/article/PII:S0034666715300142?httpAccept=text/plain"
+        ],
+        "access_metadata": "Primary Chinese Academy of Sciences news record independently confirms journal volume 233, pp. 146-160 and the title; publisher landing is the Elsevier route.",
+        "supplement_metadata": "No explicit supplementary filename or public supplement link surfaced in Crossref relation/link metadata or indexed publisher metadata."
+      },
+      {
+        "id": "pirikangarshahi2020",
+        "doi": "10.1016/j.revpalbo.2020.104337",
+        "title": "Biostratigraphy of acritarchs, chitinozoans, and miospores from Upper Ordovician sequences in Kuh-e Boghou, southwest of Kashmar, eastern central Iran: Stratigraphic and paleogeographic implications",
+        "authors": [
+          "Mohammad Ghavidel-Syooki",
+          "Mohammad Hossein Piri-Kangarshahi"
+        ],
+        "journal": "Review of Palaeobotany and Palynology",
+        "publisher": "Elsevier BV",
+        "issued": "2021-01",
+        "volume": "284",
+        "issue": null,
+        "pages": null,
+        "article_id": "104337",
+        "pii": "S0034666720302414",
+        "publisher_resource_url": "https://linkinghub.elsevier.com/retrieve/pii/S0034666720302414",
+        "publisher_landing_url": "https://www.sciencedirect.com/science/article/pii/S0034666720302414",
+        "crossref_text_mining_links": [
+          "https://api.elsevier.com/content/article/PII:S0034666720302414?httpAccept=text/xml",
+          "https://api.elsevier.com/content/article/PII:S0034666720302414?httpAccept=text/plain"
+        ],
+        "access_metadata": "Publisher page indexed as access through organisation / purchase PDF; UTAS route is the authorised acquisition path.",
+        "supplement_metadata": "No explicit supplementary filename or public supplement link surfaced in Crossref relation/link metadata or the indexed publisher landing page.",
+        "year_note": "Register ID/row uses 2020 because the DOI was created 2020-11-05 and the DOI path contains 2020; Crossref issued/published metadata and the publisher landing identify January 2021 (volume 284, article 104337). Do not normalise this silently."
+      },
+      {
+        "id": "al2023c",
+        "doi": "10.1016/j.jseaes.2023.105769",
+        "title": "A palynoflora of southern Xinjiang, China, and the proximity of the Tarim Plate to western Gondwana during the Llandovery (Silurian)",
+        "authors": [
+          "Kai Wang",
+          "Bing-Cai Liu",
+          "Yi Wang",
+          "Hong-He Xu"
+        ],
+        "journal": "Journal of Asian Earth Sciences",
+        "publisher": "Elsevier Ltd",
+        "issued": "2023-10",
+        "volume": "255",
+        "issue": null,
+        "pages": null,
+        "article_id": "105769",
+        "pii": "S1367912023002304",
+        "publisher_resource_url": "https://linkinghub.elsevier.com/retrieve/pii/S1367912023002304",
+        "publisher_landing_url": "https://www.sciencedirect.com/science/article/pii/S1367912023002304",
+        "crossref_text_mining_links": [
+          "https://api.elsevier.com/content/article/PII:S1367912023002304?httpAccept=text/xml",
+          "https://api.elsevier.com/content/article/PII:S1367912023002304?httpAccept=text/plain"
+        ],
+        "access_metadata": "Publisher page indexed as access through organisation / purchase PDF; UTAS route is the authorised acquisition path.",
+        "supplement_metadata": "No explicit supplementary filename or public supplement link surfaced in Crossref relation/link metadata or the indexed publisher landing page."
+      }
+    ]
+  },
+  "verification": "Parent hashes, DOI and all-page text checks; independent delegate PDF structure, first/last renders and DOCX XML inspection; parent inspected rendered contact sheets",
+  "minor_warnings": [
+    "Wang 2026 linearisation hint-table length mismatch; renders and extracts correctly",
+    "Ghavidel-Syooki 2021 outlines-table offset warning; renders and extracts correctly",
+    "Wang 2023 shared-object hint-table warning; renders and extracts correctly"
+  ],
+  "downloads_cleanup": {
+    "source": "/Users/bwbrook/Downloads/1-s2.0-S1367912023002304-mmc1.docx",
+    "bin": "/Users/bwbrook/.Trash/silurian-literature-20261029-batch/1-s2.0-S1367912023002304-mmc1.docx",
+    "archive": "/Users/bwbrook/papers/silurian_plants/library/closed/wang2023_SI.docx",
+    "sha256": "b53c3b10dee6260760852d9910d47c07298864d6168da34f6a2fea4bfe6dfa19",
+    "status": "moved to recoverable Bin; hash verified"
+  },
+  "failed_download": {
+    "source": "/Users/bwbrook/Downloads/pdfft.html",
+    "title": [],
+    "bytes": 52527,
+    "sha256": "480e454c2f7b03dc798eda682f0c275e22fa569ce804e55decc3782be492c76b",
+    "bin": "/Users/bwbrook/.Trash/silurian-literature-20261029-batch/pdfft.html",
+    "status": "moved to recoverable Bin; hash verified",
+    "identity": "Elsevier PDF challenge HTML for S0034666715300142; not a PDF"
+  }
+}

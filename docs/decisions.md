@@ -3,6 +3,25 @@
 Dated record of decisions that shape the programme. Newest first. Say who decided, and quote
 Barry exactly (with source) or label a paraphrase.
 
+## 2026-10-29: execute the six-paper institutional batch (Barry; Codex execution)
+
+- **Authority** (Barry, chat; paraphrase): refresh global and Nectar access
+  guidance, verify Correspondence with one harmless read, then execute the
+  recommended six-paper batch. Those reads succeeded; no MCP reconnect needed.
+- **Completed**: five full texts plus Wang 2023's supplementary DOCX acquired and
+  verified in `library/closed/`; versions and hashes in `library/closed.tsv` and
+  `docs/audits/2026-10-29-six-paper-batch.md`. Strother 2025 is explicitly a browser
+  print export of the loaded publisher PDF; four others retain publisher bytes.
+  Ghavidel-Syooki & Piri-Kangarshahi is published in 2021; stable 2020 harvest ID
+  retained. Download residue moved to the recoverable Bin after hash checks.
+- **Remaining**: Liu 2016 displays entitlement but its PDF challenge/delivery
+  stalls. Recorded in the fresh human-action ledger, with its tab closed. Ten
+  parked requests and Stage B's two candidates were excluded from this run.
+- **Structural review**: route-level preflight improved recovery to five of six
+  without human intervention. Entitlement, rendered access and saved bytes still
+  need separate checks; browser print derivatives need explicit version labels.
+  Q1/Q2 questions and scientific readings are unchanged on acquisition alone.
+
 ## 2026-10-29: park requests and choose a more accessible next literature tranche
 
 - **Authority** (Barry, chat; paraphrase): park all request candidates separately,

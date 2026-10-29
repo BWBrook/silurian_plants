@@ -7,11 +7,22 @@ provenance have been verified. A failed route does not establish that no copy ex
 
 ## Active access actions
 
-No active human-action items. Barry parked the eight remaining pilot candidates
-on 29 October 2026; their full access histories and routes now live in
-[`docs/literature-requests.md`](literature-requests.md), together with the earlier
-Garratt 1978 request case. The parked list also includes Paris et al. 2012, identified during preflight: ten
-source IDs are excluded from automated collection. Keep this ledger for fresh, concrete blockers from future batches.
+### Liu et al. 2016 — PDF challenge/delivery stall (`al2016e`; Q1/Q2, MVD-B)
+
+- DOI: `10.1016/j.revpalbo.2016.02.003`; RPP 233, 146–160.
+- [Reopen the UTAS article in Chrome](https://www-sciencedirect-com.ezproxy.utas.edu.au/science/article/pii/S0034666715300142).
+  The article displays **Full text access**, but its PDF stalled; LibKey also
+  stalled. The subsequent download produced PDF-challenge HTML rather than a PDF.
+- Barry to action when convenient: open **View PDF**, observe/complete any site
+  verification personally, and try the normal PDF download. Save as
+  `library/closed/liu2016.pdf`, then verify all 15 pages and register provenance.
+- No PDF acquired; remains `needed`. No challenge bypass attempted. Work tabs
+  closed. Exclude repeat automated attempts until this route has been diagnosed.
+- Evidence: `docs/audits/2026-10-29-six-paper-batch.md`.
+
+The ten earlier request candidates remain parked in
+[`docs/literature-requests.md`](literature-requests.md), separately from this fresh
+access action. No request has been submitted.
 
 ## Resolved through diagnosis and follow-up
 
