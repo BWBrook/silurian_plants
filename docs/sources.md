@@ -154,6 +154,19 @@ acquisition. Scientific extraction remains pending.
 In `docs/closed-literature.csv`, `local-copy-held` records an institutionally accessed copy;
 `open-copy-held` records a publicly available copy and does not imply a particular licence.
 
+**First-study targets (2026-10-29, Claude).** `docs/first-study-literature.csv` ranks the
+literature the first study (F3, the curated occurrence dataset and the trait pilot) still lacks:
+- 135 works: tier 1 (58), needed to finish an F3 test, a pivotal adjudication or pilot scoring,
+  and tier 2 (77), to read before submission;
+- `route` separates what the reference scout can collect (`scout`) from parked requests that
+  Barry reopens (`barry-reopen`) and his pending access action (`barry-action`);
+- 73 works no register listed were appended to `docs/closed-literature.csv` as `needed`. Every
+  supplied DOI was checked against Crossref, and `doi_check` says how.
+
+The triage was a `gpt-6.1-sol` pass over the 348 needed rows plus a sweep of the first-study
+documents and a search for sample-level frame studies; Claude adjudicated the tiers. Frame leads
+are candidates whose sample-level reporting is still to be confirmed from the full text (Q1).
+
 On 29 October 2026 the authorised six-paper institutional batch secured six full
 texts (Strother 2025, Wang 2026, Vecoli 2017, Liu 2016, Ghavidel-Syooki & Piri-Kangarshahi
 2021, Wang 2023) and Wang 2023's supplementary DOCX in `library/closed/`.

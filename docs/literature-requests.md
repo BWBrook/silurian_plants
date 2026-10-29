@@ -10,6 +10,16 @@ observed routes and version/access uncertainties preserved. Garratt 1978 is carr
 forward as a ninth, earlier request case. The next-batch preflight added Paris et
 al. 2012 as a tenth request-only case. The master register keeps all nine as
 `needed`; a parked item is still a scientific source gap, not a failed source.
+
+**Reopened for the first study** (Barry, Claude chat, 2026-10-29: "Those ones that are parked
+can get their engines started again if they're important! They just require a bit of extra
+legwork from me, which I'm happy to do if they're important to this current work."):
+- **Tier 1:** `al2007d`, `al2011n`, `al2015f`, `al2023b`, `mehlqvist2013` and `garratt1978`.
+- **Tier 2:** `cesari2019` and `al1996`.
+- **Still parked:** `al2008f` and `al2012g` (post-appearance Silurian context; not needed for this
+  study).
+
+Tiers and reasons are in `first-study-literature.csv`, route `barry-reopen`.
 The source IDs below are the exclusion set for automated batch selection.
 
 ## Eight candidates from the October pilot

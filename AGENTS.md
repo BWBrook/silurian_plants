@@ -85,7 +85,8 @@ Run `check`, `index` and `matrix` after editing cards, and `dois` after adding r
   DOI is verified against Crossref; never guess one. In references lists, one reference per line
   with first author, year, title and DOI, so `dois` can compare them.
 - When a source cannot be read in full (paywall, blocked supplement, print only), add it to
-  `docs/closed-literature.csv` with what it would settle; Barry obtains these through his
+  `docs/closed-literature.csv` with what it would settle (`docs/first-study-literature.csv` ranks
+  the first study's gaps); Barry obtains these through his
   institutional login. Never bypass access controls. PDFs he obtains go in `library/closed/`,
   which is git-ignored: copyrighted texts are never committed.
 - Never send Barry's email address or other personal data to any service or API, including ones

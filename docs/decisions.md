@@ -3,6 +3,16 @@
 Dated record of decisions that shape the programme. Newest first. Say who decided, and quote
 Barry exactly (with source) or label a paraphrase.
 
+## 2026-10-29: first-study literature targets; parked requests reopened where needed (Barry, Claude)
+
+- **Request** (Barry, Claude chat): list the closed papers important to the first study that are not held, including any not yet listed, as a target for the reference scout he runs on Codex.
+- **Result:** `docs/first-study-literature.csv`, 135 works.
+  - Tier 1 (58): an F3 test, a pivotal adjudication or pilot scoring cannot be finished without them. Most are E1 frame candidates, pilot specimen texts and pivotal records.
+  - Tier 2 (77): to read before submission.
+  - 73 works no register listed were appended to `docs/closed-literature.csv`, among them the main texts of Hooper et al. (2026) and Morris et al. (2018), Kerp (2017), Kenrick and Long (2025), Morris et al. (2024), Steemans et al. (2009) and the Pelmis companion inventories.
+- **Decision** (Barry, Claude chat, 2026-10-29): "Those ones that are parked can get their engines started again if they're important! They just require a bit of extra legwork from me, which I'm happy to do if they're important to this current work." Eight of the ten parked requests are reopened (route `barry-reopen`); two stay parked as not needed for this study (`docs/literature-requests.md`).
+- **Structural review (Q1, Q2, Q4):** the master register's priorities reflected the spore compilation and the cards, not F3, so the Sandbian Dalby record behind M2 (Rubinstein and Vajda 2019) sat at priority 2. The new file is the first-study view; the master stays the complete register. No question's status changed.
+
 ## 2026-10-29: the trait pilot tests the mappings behind the maxima (Barry)
 
 - **Decision** (Barry, Claude chat, 2026-10-29): "Yes, frame it so", answering Claude's question "Should the trait pilot test the trait-to-node mappings behind M1–M3?" The bounded pilot agreed in `innovation-scope.md` therefore assesses, for each maximum, the evidence that its trait marks its node: cryptospores and the embryophyte crown (M1), trilete monads and the embryophyte crown (M2), polysporangiate bodies and total-group Tracheophyta (M3). It does so from specimen-level trait combinations and published placements and ancestral-state reconstructions, with no new tree inference.

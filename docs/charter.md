@@ -116,6 +116,9 @@ data archived, and the human–AI correspondence record published alongside.
   - vetting of early spore records;
   - extraction of post-2006 spore assemblages;
   - the Model transfer retrofit of 59 cards, with a consistency review of them;
+  - the first-study literature triage of 348 needed rows, a citation sweep of the first-study
+    documents and a search for sample-level frame studies (2026-10-29, `gpt-6.1-sol`; tiers
+    adjudicated and DOIs verified by Claude Opus 5.5; `docs/first-study-literature.csv`);
   - cross-family audits of the new cards and of the primer revision;
   - one card draft for a bake-off;
   - the Loop 1 occurrence tail (Wellman et al. 2022 table, literature readings for both channels);
