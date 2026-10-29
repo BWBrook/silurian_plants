@@ -175,6 +175,8 @@ acquisition. Scientific extraction remains pending.
 
 In `docs/closed-literature.csv`, `local-copy-held` records an institutionally accessed copy;
 `open-copy-held` records a publicly available copy and does not imply a particular licence.
+`abstract-only` explicitly marks a held abstract without implying a held research article;
+interpret availability alongside `kind` and the focused status register.
 
 **First-study targets (2026-10-29, Claude).** `docs/first-study-literature.csv` ranks the
 literature the first study (F3, the curated occurrence dataset and the trait pilot) still lacks:
@@ -266,8 +268,8 @@ three qualified browser-text captures), two complete conference abstracts and a 
 Masiak 2003 component copy. Three already-held Morris supporting/data files were also copied
 into the reading library, giving 55 file entries. Forty of 58 Tier 1 rows now have main texts
 (one Lang/Cookson duplicate); two are abstract-only, one partly held and 15 blocked.
-Sixteen rows remain unresolved or incomplete. Tier 2 and the two still-parked sources were
-not collected. See `docs/audits/2026-10-30-first-study-tier1.md`,
+Sixteen rows remain unresolved or incomplete. Tier 2 was not collected in that pass
+(and is reported separately below); the two still-parked sources remain parked. See `docs/audits/2026-10-30-first-study-tier1.md`,
 `docs/first-study-literature-status.csv` and `library/closed.tsv`.
 
 Q1 gains Qusaiba, QSIM-801, Borenshult, Kanosh, Hanadir and one Pelmis companion;
@@ -277,3 +279,21 @@ repository-manuscript, preprint, print/online-year and Masiak extent qualificati
 For Q5, al2014f is a distinct 2014 GEO poster abstract, not an alias of the 2015 systematic
 paper. The Sweden one-page source is also an abstract; Steemans 2009's one-page Brevia
 is a complete article, with its original supporting methods now held.
+
+## 13. First-study Tier 2 acquisition, 30 October 2026
+
+All 77 Tier 2 rows were attempted: 30 new main texts, twelve exact works already held,
+two complete abstracts, one already-held data archive, one first-page partial, one
+supplement-only holding and 30 blocked rows. Thus 42 main texts are available and 32
+rows need further action. The 92 filed assets include 33 supporting/data copies already
+held elsewhere; file counts do not measure newly recovered papers. Original/accepted
+versions, the Mawson BHL reconstruction, McSweeney thesis/deposit years and Canning's
+first-page limit are explicit in `audits/2026-10-30-first-study-tier2.md`.
+
+Reading copies are under `library/closed/`; `library/closed.tsv` and
+`work/codex/literature/2026-10-30-first-study-tier2.json` preserve provenance and QA.
+`first-study-literature-status.csv` covers all 135 prioritised rows without changing
+the original priority input. Five reader/save cases and Hoffmeister's JSTOR terms
+step are the first office actions in `barry-to-action.md`; request candidates are
+separate in `literature-requests.md`. Source acquisition does not validate an F3
+sampling frame, absence, trait transfer or chronology. No scientific status changed.

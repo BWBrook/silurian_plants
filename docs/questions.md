@@ -209,3 +209,16 @@ Sixteen focused rows remain unresolved/incomplete; exact actions are in
 For Q5, the 2014 Hanadir item is a one-page poster abstract that cites the distinct 2015
 systematic paper; the Sweden DOI likewise identifies an abstract. These are bibliographic
 source-kind corrections, not scientific refutations. No question's scientific status changed.
+
+### First-study Tier 2 source availability, 30 October 2026 (Q1, Q2, Q4, Q5)
+
+Thirty new full texts and twelve reconciled existing works are now available from the
+77 Tier 2 targets. The expanded reading set includes regional stratigraphy/palynology,
+classical anatomical descriptions, the RMIT thesis and phylogenetic context; these are
+inputs for source reading, not admitted frames or accepted trait/age interpretations.
+Thirty-two targets remain incomplete/unheld, with exact office actions separated from
+library requests. See `audits/2026-10-30-first-study-tier2.md` and the focused status CSV.
+For Q5, the Steemans target is a single-author IPC 2008 abstract, McSweeney's thesis is
+2022 with a 2024 repository deposit, and the Libertin online/print alias is one work.
+These are bibliographic corrections, not scientific refutations. No question's
+scientific status changed in this acquisition tranche.

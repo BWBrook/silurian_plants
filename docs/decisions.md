@@ -3,6 +3,12 @@
 Dated record of decisions that shape the programme. Newest first. Say who decided, and quote
 Barry exactly (with source) or label a paraphrase.
 
+## 2026-10-30: first-study Tier 2 literature acquisition (Codex, authorised by Barry)
+
+- **Authority:** Barry, Codex chat: "Continue now with Tier 2." He asked that locked-mini or fresh-login blockers be held for his office session. All 77 targets were attempted; no unlock interruption was sent.
+- **Result:** 30 new main texts plus twelve reconciled exact prior holdings make 42 available main texts. Two complete abstracts and an already-held dataset close different source kinds; one first-page partial, one supplement-only row and 30 blocked targets remain. The 92 filed assets include 33 byte-identical existing supporting/data holdings. Provenance and extent are preserved in the manifest, durable receipt and `docs/audits/2026-10-30-first-study-tier2.md`.
+- **Structural review (Q1/Q2/Q4/Q5):** the existing focused status register now covers all 135 prioritised rows, with the input priorities and Tier 1 outcomes unchanged. An explicit master `abstract-only` status removes a misleading full-text implication. Exposed assumptions: a repository's year may be a deposit year; a full-text badge may deliver one page; an online/print alias or copied deposit is not a newly recovered work. The reading-library/manifest structure serves the next investigation; office save/terms actions remain separate from library requests. No empirical age constraint, frame admission, character interpretation or question status changed.
+
 ## 2026-10-30: Borenshult frame, specimen audit and validation follow-through (Codex)
 
 - **Evidence:** 34 Borenshult analysed-sample depths are reconciled between Rubinstein & Vajda's 2019/2023 accounts and independently checked. The 2019 spore chart plots a 23-depth subset; no outcomes were inferred for its 11 omitted depths. The inventory now has five candidate frames/75 rows, with the 15-unit/90-outcome pilot unchanged. This post-2006 frame requires its own declared selection, reporting and age/dependence model before analysis.

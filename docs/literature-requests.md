@@ -25,10 +25,48 @@ Tiers and reasons are in `first-study-literature.csv`, route `barry-reopen`.
 `al2015f` (24 pages, UTAS Cambridge) are now **resolved**, superseding their earlier
 access histories below. `al2011n`, `al2023b`, `mehlqvist2013` and `garratt1978`
 remain unheld; current routes and observations are in `barry-to-action.md`.
-The Tier 2 reopenings were not worked in this Tier 1 pass; the two still-parked sources
-remain parked. No request has been submitted.
+The subsequent Tier 2 pass attempted both reopenings: `cesari2019` remains a browser
+security block with entitlement unestablished; `al1996` has an explicit UTAS subscription
+gap and a restricted ORBi copy. Current actions are above and in `barry-to-action.md`.
+The two still-parked sources remain parked. No request has been submitted.
 
 The source IDs below are the exclusion set for automated batch selection.
+
+## Tier 2 request candidates, 30 October 2026
+
+These twenty candidates are separated from routine browser/save actions. No request has
+been submitted. The first ten have an explicit institutional access gap; the remainder
+need a library/archive search or a fuller source. Canning Part One is only a first-page
+copy, not an acquired 88-page paper. Source-kind and citation uncertainty remain visible.
+A further six browser/target-access cases are in `barry-to-action.md`; access there has
+not been disproved and a request is not yet the first action. Five save/reader cases
+and Hoffmeister's terms action are also kept in that operational ledger.
+
+| Work / source ID | Observed blocker and next action | Reopen route |
+|---|---|---|
+| Ghavidel-Syooki (2006). Palynostratigraphy and palaeogeography of the Cambro-Ordovician strata in southwest of Shahrud City (Kuh-e-Kharbash, near Deh-Molla), Central Alborz Range, northern Iran. Review of Palaeobotany and Palynology 139: 81-95 (`ghavidelsyooki2006`) | Explicit UTAS does not subscribe; exact Citeseer PDF indexed but current endpoint404. | [Open source](https://www-sciencedirect-com.ezproxy.utas.edu.au/science/article/pii/S0034666706000121) |
+| Ghavidel-Syooki & Vecoli (2008). Palynostratigraphy of Middle Cambrian to lowermost Ordovician stratal sequences in the High Zagros Mountains, southern Iran: Regional stratigraphic implications, and palaeobiogeographic significance. Review of Palaeobotany and Palynology 150: 97-114 (`ghavidelsyooki2008a`) | Explicit UTAS does not subscribe; ORBi author copy restricted. | [Open source](https://www-sciencedirect-com.ezproxy.utas.edu.au/science/article/pii/S0034666708000213) |
+| Gonez P, Gerrienne P (2010). A new definition and a lectotypification of the genus Cooksonia Lang 1937. International Journal of Plant Sciences 171: 199-215 (`gonez2010a`) | Chicago recognises UTAS but target explicitly has no full-text access; ORBi restricted. | [Open source](https://www-journals-uchicago-edu.ezproxy.utas.edu.au/doi/10.1086/648988) |
+| Gonez P, Gerrienne P (2010). Aberlemnia caledonica gen. et comb. nov., a new name for Cooksonia caledonica Edwards 1970. Review of Palaeobotany and Palynology 163: 64-72 (`gonez2010b`) | Explicit UTAS does not subscribe; ORBi restricted. | [Open source](https://www-sciencedirect-com.ezproxy.utas.edu.au/science/article/pii/S0034666710001910) |
+| Glasspool IJ, Edwards D, Axe L (2006). Charcoal in the Early Devonian: a wildfire-derived Konservat-Lagerstätte. Review of Palaeobotany and Palynology 142: 131-136 (`glasspool2006`) | Explicit UTAS does not subscribe. | [Open source](https://www-sciencedirect-com.ezproxy.utas.edu.au/science/article/pii/S0034666706001369) |
+| Edwards et al. 2001 (Villavicencio) (`edwards2001-open`) | Explicit UTAS does not subscribe; previous OpenAlex bronze label does not establish current access. | [Open source](https://www-sciencedirect-com.ezproxy.utas.edu.au/science/article/pii/S0034666701000598) |
+| Steemans et al. (1996). Ordovician and Silurian cryptospores and miospores from southeastern Turkey. Review of Palaeobotany and Palynology (`al1996`) | Reopened source; explicit UTAS does not subscribe; ORBi restricted. | [Open source](https://www-sciencedirect-com.ezproxy.utas.edu.au/science/article/pii/0034666795001190) |
+| Marshall (1990). Confidence intervals on stratigraphic ranges. Paleobiology (`marshall1990`) | Cambridge authenticates UTAS then explicitly reports institutions do not have access. | [Open source](https://www-cambridge-org.ezproxy.utas.edu.au/core/journals/paleobiology/article/abs/confidence-intervals-on-stratigraphic-ranges/50E56CB91A6150CF082EA84E4374AE3F) |
+| Marshall (1997). Confidence intervals on stratigraphic ranges with nonrandom distributions of fossil horizons. Paleobiology (`marshall1997`) | Cambridge authenticates UTAS then explicitly reports institutions do not have access. | [Open source](https://www-cambridge-org.ezproxy.utas.edu.au/core/journals/paleobiology/article/abs/confidence-intervals-on-stratigraphic-ranges-with-nonrandom-distributions-of-fossil-horizons/06DE3E54142F56275DBAC2D14F8A9F9B) |
+| Higgs et al. (2014). An early Devonian age for the Bulls Head Formation, Lower Old Red Sandstone, Dingle Peninsula. Irish Journal of Earth Sciences (`al2014c`) | JSTOR explicitly reports institution does not have access to this journal article. Free reading would require personal account; not initiated. | [Open source](https://www-jstor-org.ezproxy.utas.edu.au/stable/10.3318/ijes.2014.32.55) |
+
+| Work / source ID | Observed blocker and next action | Reopen route |
+|---|---|---|
+| Quintvalle & Playford (2006). Palynostratigraphy of Ordovician strata, Canning Basin, Western Australia. - Part One: acritarchs and prasinophytes. Palaeontographica Abteilung B 275: 1-88 (`quintvalle2006`) | ResearchGate advertised full-text PDF but delivered only title/abstract first page of88-page article. Full text,12plates and appendices remain unheld. | [Open source](https://www.researchgate.net/publication/43456117_Palynostratigraphy_of_Ordovician_strata_Canning_Basin_Western_Australia_Part_One_acritarchs_and_prasinophytes) |
+| Quintavalle & Playford (2006). Palynostratigraphy of Ordovician strata, Canning Basin, Western Australia. - Part Two: chitinozoans and biostratigraphy. Palaeontographica Abteilung B 275: 89-131 (`quintavalle2006`) | Actual PartTwo ResearchGate target explicitly says No full-text available and offers requests only. The Full-text available recommendation is for PartOne. | [Open source](https://www.researchgate.net/publication/43456118_Palynostratigraphy_of_Ordovician_strata_Canning_Basin_Western_Australia_Part_Two_chitinozoans_and_biostratigraphy) |
+| Garratt (1988). Late Silurian to Early Devonian biostratigraphy of southeastern Australia. Devonian of the World; Canadian Society of Petroleum Geologists Memoir 14 (`garratt1988`) | Memoir 14 chapter pp. 647–662 is indexed by the society archive, but full text is subscription/pay-per-view; only first-page downloads are offered publicly. | [Open source](https://archives.datapages.com/data/cspg_sp/data/014/014001/647_cspgsp014a0647.htm) |
+| Richardson (1988). Late Ordovician and Early Silurian cryptospores and miospores from northeast Libya. Subsurface Palynostratigraphy of Northeast Libya (`richardson1988`) | Chapter identity confirmed (pp. 89–109 in Subsurface Palynostratigraphy of Northeast Libya, Garyounis University Press); no legitimate public full text located in publisher/index/repository searches. | [Open source](https://www.google.com/search?q=%22Late+Ordovician+and+Early+Silurian+cryptospores+and+miospores%22+Richardson+1988) |
+| Edwards D, Edwards DS (1986). A reconsideration of the Rhyniophytina Banks. In: Spicer RA, Thomas BA (eds) Systematic and Taxonomic Approaches in Palaeobotany. Systematics Association Special Volume 31: 199-220 (`edwardsedwards1986`) | Book chapter (Systematic and Taxonomic Approaches in Palaeobotany, pp. 199-220); catalogue/physical-book record only; no public scan located. | [Open source](https://www.bfa.fcnym.unlp.edu.ar/id/2124) |
+| Kenrick P, Crane PR (1997). The Origin and Early Diversification of Land Plants: A Cladistic Study. Smithsonian Institution Press, Washington DC (`kenrick1997book`) | Smithsonian Institution Press book; Google Books metadata/snippets only; no public full text located. | [Open source](https://books.google.com/books?id=WAkmAQAAMAAJ) |
+| Tims JD (1980). The early land flora of Victoria. PhD thesis, University of Melbourne, 233 pp. (unpublished) (`tims1980`) | Minerva is the relevant institutional repository, but no public record/full text for this 1980 thesis was located; likely requires catalogue or institutional request. | [Open source](https://minerva.unimelb.edu.au/) |
+| Snigirevskaya (1992). New discovery of the oldest higher plant remains in the Middle Ordovician of Kazakhstan. Botanicheskii Zhurnal (`snigirevskaya1992`) | Public searches returned citations and later papers but no legitimate full-text scan or repository copy. | [Open source](https://www.binran.ru/en/publications/paleobotanika/2261/15121/) |
+| Vecoli (1999). Cambro-Ordovician palynostratigraphy (acritarchs and prasinophytes) of the Hassi-R'Mel area and northern Rhadames Basin, North Africa. Palaeontographia Italica (`vecoli1999`) | UNICA record has no attached file; society PDF is abstract only. A different 1999 Vecoli paper is openly available but is not this target and was not filed as a surrogate. | [Open source](https://www.stsn.it/images/pdf/Abstracts%201995-2003.pdf) |
+| Wellman (2026). Are the Eophytidae (eophytes) stem group land plants (embryophytes)?. European Palaeobotany and Palynology Conference, Münster (`wellman2026`) | Conference abstract identity searched; no legitimate public abstract/PDF located. Related open eophyte papers are not substitutes and were not filed. | [Open source](https://www.google.com/search?q=%22Are+the+Eophytidae%22+Wellman+2026+M%C3%BCnster) |
 
 ## Eight candidates from the October pilot
 

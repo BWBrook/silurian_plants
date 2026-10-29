@@ -173,6 +173,14 @@ data archived, and the human–AI correspondence record published alongside.
   for reading. Three bounded `gpt-5.6-luna` delegates checked public routes, metadata and QA;
   the parent owned browsers, source-identity corrections and registration. Scientific readings
   remain with the main agents (`docs/audits/2026-10-30-first-study-tier1.md`).
+  The authorised Tier 2 pass (2026-10-30) secured 30 new main texts and reconciled twelve
+  exact existing works. Three bounded `gpt-5.6-luna` executors checked public/repository
+  routes, source metadata, file QA, prior holdings and the parent's integration draft;
+  the parent handled institutional browsers, corrected provenance/status ambiguities,
+  registered the sources and retained office-action blockers. The audit distinguishes
+  original PDFs, a BHL reconstruction, abstracts, partials and copied datasets; no
+  scientific extraction or adjudication was performed in this acquisition tranche
+  (`docs/audits/2026-10-30-first-study-tier2.md`).
   From 2026-10-28, a direct scientific and repository collaborator at Barry's request:
   methodological review of the F3 reshape, independent checks of recovery outputs and
   calibration provenance, and direct discussion with Claude through the private Correspondence
