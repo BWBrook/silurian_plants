@@ -7,9 +7,10 @@ provenance have been verified. A failed route does not establish that no copy ex
 
 ## Pending — rechecked 29 October 2026
 
-Eight of the original fifteen unresolved items remain. Kanosh now goes to a library
-request after the BioOne re-test below; Rubinstein retains an unverified BioOne route.
-Six other items have only library-request routes in the authenticated catalogue searches. No requests, messages or purchases have been submitted. Earlier
+Eight of the original fifteen unresolved items remain, all now library-request
+candidates. Six have catalogue request-only routes; Kanosh and Rubinstein reach
+BioOne access gates whose institutional sign-in route is blocked. Rubinstein also
+has an advertised public CONICET copy on a currently unreachable host. No requests, messages or purchases have been submitted. Earlier
 pilot observations remain in `docs/audits/2026-10-28-literature-sourcing-pilot.md`;
 the follow-up and verification record is `docs/audits/2026-10-29-literature-recovery.md`.
 
@@ -38,20 +39,22 @@ the follow-up and verification record is `docs/audits/2026-10-29-literature-reco
 
 - ID `al2023b`; DOI `10.5710/amgh.27.07.2023.3560`.
 - Reopen: [UTAS LibKey article](https://libkey.io/libraries/729/articles/580033879/content-location?utm_source=api_3637&allow_speedbump=true).
-- Current blocker: the catalogue supplies a UTAS BioOne route, also held at an
-  hCaptcha **Additional security check is required** screen. Entitlement remains
-  unverified. After the Kanosh re-test triggered a lockout, do not retry BioOne
-  automatically. This is a different journal; Kanosh's probable entitlement gap
-  does not establish whether UTAS covers Ameghiniana.
+- Follow-up, 2026-10-29 (Barry's report): download offered a personal login or
+  **Access Institutional Sign In via Shibboleth or OpenAthens**. The institutional
+  link immediately returned the **Pardon Our Interruption** automated-browser
+  block, reproducing the Kanosh sign-in failure. UTAS entitlement to Ameghiniana
+  remains unknown; a blocked sign-in route does not establish a subscription gap.
+- Stop further BioOne attempts for this paper. No personal account was created.
 - [CONICET record](https://ri.conicet.gov.ar/handle/11336/251421) advertises the
   full PDF, but ordinary downloads timed out from both mini and Nectar. Chrome's
   attempted repository navigation also timed out. No repository PDF was acquired.
 - [Journal record](https://www.ameghiniana.org.ar/index.php/ameghiniana/article/view/3560)
   labels its additional PDF **Requires Subscription**; supplement acquisition is
   still pending separately from the main text.
-- Action: revisit entitlement separately once the BioOne block has cleared, or
-  use the advertised public CONICET copy when its host is reachable. Main text
-  and supplement both remain pending. Earlier work tabs were closed.
+- Action: include the paper and its relevant supplement in the library-request
+  batch. Retain the advertised public CONICET main-text copy as a separate route
+  when its host is reachable; no scheduled retry has been created. Main text and
+  supplement remain pending. No library request or purchase submitted.
 
 ### Le Hérissé et al. 2007 — Hanadir environments (Q1, Q2)
 

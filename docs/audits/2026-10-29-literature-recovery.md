@@ -49,7 +49,7 @@ source IDs `al2015e` and `al2016i`.
 | ID | Observed end state | Next useful action |
 |---|---|---|
 | `al2015f` | Later shared in-app test reaches abstract plus sign-in/purchase gate, with inactive download; institutional sign-in triggers automated-browser block; Barry reports lockout in Chrome too and probable lack of UTAS journal access. Cambridge also returns `SHIBBOLETH_NOT_FOUND` | Library request; no further automatic BioOne retries |
-| `al2023b` | UTAS LibKey → BioOne hCaptcha; public CONICET PDF connection timed out from mini and Nectar; Chrome navigation also timed out; journal additional PDF requires subscription | Revisit this separate journal after the BioOne block clears, or recover public CONICET copy when reachable; check main text and supplement separately |
+| `al2023b` | Barry subsequently reports personal/institutional login options; the institutional link immediately triggers the same automated-browser block. Entitlement unknown. Public CONICET copy timed out from mini and Nectar; journal additional PDF requires subscription | Library-request batch, including relevant supplement; retain public CONICET lead; no further BioOne attempts |
 | `al2007d` | Signed-in UTAS catalogue: request from other libraries; HAL has no attached manuscript and links ISTEX, whose URL was rejected by browser security policy as invalid | Library request, or Barry tests official ISTEX link |
 | `al1996` | Signed-in UTAS catalogue: request from other libraries; ORBi publisher postprint is request-only | Library or ORBi request |
 | `al2011n` | Signed-in UTAS catalogue: request from other libraries; no public PDF located | Library request |
@@ -88,9 +88,9 @@ suggestion to handle the two BioOne challenges together.
    was retained as a preprint. Human verification, a subscription requirement and
    a browser-policy rejection remain distinct blockers; do not work around them.
 7. Escalate only the remaining human actions together. The later Kanosh re-test
-   moved it to the library-request group: seven request candidates, plus Rubinstein
-   with a separate unresolved entitlement/public-repository route. Repeated BioOne
-   retries have stopped. Catalogue gaps and the observed access gate mean browser
+   moved it to the library-request group; Barry then reproduced the same sign-in
+   block for Rubinstein. All eight are now request candidates, while Rubinstein
+   retains its public CONICET lead. Repeated BioOne retries have stopped. Catalogue gaps and the observed access gate mean browser
    automation alone is insufficient for the desired 19/20 rate on this selection.
 
 ## Later shared BioOne re-test, 29 October 2026
@@ -101,7 +101,10 @@ download. The institutional-sign-in target returned **Pardon Our Interruption**.
 Barry then reported a lockout in Chrome as well and that UTAS appears not to have
 access to this journal. Subscription absence is probable, not independently
 confirmed. The action is now a library request, with no further automatic BioOne
-retries. Rubinstein is in a different journal and retains uncertain entitlement.
+retries. Barry subsequently reported the same institutional-sign-in block for
+Rubinstein after its download offered personal or institutional access. It joins
+the library-request batch, including its relevant supplement. Entitlement to its
+different journal remains unknown; no personal account or request was submitted.
 
 ## Roles and verification
 
