@@ -7,9 +7,9 @@ provenance have been verified. A failed route does not establish that no copy ex
 
 ## Pending — rechecked 29 October 2026
 
-Eight of the original fifteen unresolved items remain. Two have UTAS BioOne routes
-held at human verification; six have only library-request routes in the authenticated
-catalogue searches. No requests, messages or purchases have been submitted. Earlier
+Eight of the original fifteen unresolved items remain. Kanosh now goes to a library
+request after the BioOne re-test below; Rubinstein retains an unverified BioOne route.
+Six other items have only library-request routes in the authenticated catalogue searches. No requests, messages or purchases have been submitted. Earlier
 pilot observations remain in `docs/audits/2026-10-28-literature-sourcing-pilot.md`;
 the follow-up and verification record is `docs/audits/2026-10-29-literature-recovery.md`.
 
@@ -17,16 +17,22 @@ the follow-up and verification record is `docs/audits/2026-10-29-literature-reco
 
 - ID `al2015f`; DOI `10.1017/jpa.2015.29`.
 - Reopen: [UTAS LibKey article](https://libkey.io/libraries/729/articles/77516390/content-location?utm_source=api_3637&allow_speedbump=true).
-- Current blocker: the catalogue supplies a BioOne institutional route, which
-  reaches **Additional security check is required**, with an hCaptcha checkbox.
-  It has not been completed. Subscription entitlement is not yet confirmed.
+- Follow-up, 2026-10-29: Barry opened the article through the UTAS proxy in the
+  in-app browser. It displayed the abstract and **Access the full article** with
+  sign-in/purchase options; **Download paper** was inactive. Institutional sign-in
+  then reached **Pardon Our Interruption**, an automated-browser block. Barry
+  reported a lockout in both the in-app browser and Chrome, and that UTAS appears
+  not to have access to this journal. This is a probable entitlement gap, not a
+  confirmed catalogue subscription finding.
 - Cambridge alternative: its institution lookup now finds UTAS (the result was
   visible in a screenshot but omitted from accessibility text), and the existing
   UTAS session completes authentication. Cambridge then returns
   `SHIBBOLETH_NOT_FOUND`: the selected organisation has not supplied the account
   information required for Cambridge access. This is distinct from BioOne access.
-- Action: Barry completes BioOne's verification when ready; Codex then continues
-  download and verification. The challenged tab was closed.
+- Action: library request for the Kanosh paper. Stop BioOne retries for this
+  paper; clearing a security challenge alone would not establish entitlement.
+  No request or purchase submitted. The original challenged Chrome tab was closed;
+  the later user-opened in-app tab could not be closed through the available tool.
 
 ### Rubinstein et al. 2023 — Colombian cryptospores
 
@@ -34,16 +40,18 @@ the follow-up and verification record is `docs/audits/2026-10-29-literature-reco
 - Reopen: [UTAS LibKey article](https://libkey.io/libraries/729/articles/580033879/content-location?utm_source=api_3637&allow_speedbump=true).
 - Current blocker: the catalogue supplies a UTAS BioOne route, also held at an
   hCaptcha **Additional security check is required** screen. Entitlement remains
-  unverified. Both BioOne cases may be easier to handle in one shared session,
-  although completing one challenge is not proven to clear the other.
+  unverified. After the Kanosh re-test triggered a lockout, do not retry BioOne
+  automatically. This is a different journal; Kanosh's probable entitlement gap
+  does not establish whether UTAS covers Ameghiniana.
 - [CONICET record](https://ri.conicet.gov.ar/handle/11336/251421) advertises the
   full PDF, but ordinary downloads timed out from both mini and Nectar. Chrome's
   attempted repository navigation also timed out. No repository PDF was acquired.
 - [Journal record](https://www.ameghiniana.org.ar/index.php/ameghiniana/article/view/3560)
   labels its additional PDF **Requires Subscription**; supplement acquisition is
   still pending separately from the main text.
-- Action: Barry completes BioOne's verification; Codex checks the main PDF and
-  accompanying files. All attempted browser tabs were closed.
+- Action: revisit entitlement separately once the BioOne block has cleared, or
+  use the advertised public CONICET copy when its host is reachable. Main text
+  and supplement both remain pending. Earlier work tabs were closed.
 
 ### Le Hérissé et al. 2007 — Hanadir environments (Q1, Q2)
 

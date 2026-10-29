@@ -48,8 +48,8 @@ source IDs `al2015e` and `al2016i`.
 
 | ID | Observed end state | Next useful action |
 |---|---|---|
-| `al2015f` | UTAS LibKey → BioOne hCaptcha; Cambridge authentication ends `SHIBBOLETH_NOT_FOUND` | Barry completes BioOne verification; Codex downloads if entitled |
-| `al2023b` | UTAS LibKey → BioOne hCaptcha; public CONICET PDF connection timed out from mini and Nectar; Chrome navigation also timed out; journal additional PDF requires subscription | Barry completes BioOne verification; check main text and supplement separately |
+| `al2015f` | Later shared in-app test reaches abstract plus sign-in/purchase gate, with inactive download; institutional sign-in triggers automated-browser block; Barry reports lockout in Chrome too and probable lack of UTAS journal access. Cambridge also returns `SHIBBOLETH_NOT_FOUND` | Library request; no further automatic BioOne retries |
+| `al2023b` | UTAS LibKey → BioOne hCaptcha; public CONICET PDF connection timed out from mini and Nectar; Chrome navigation also timed out; journal additional PDF requires subscription | Revisit this separate journal after the BioOne block clears, or recover public CONICET copy when reachable; check main text and supplement separately |
 | `al2007d` | Signed-in UTAS catalogue: request from other libraries; HAL has no attached manuscript and links ISTEX, whose URL was rejected by browser security policy as invalid | Library request, or Barry tests official ISTEX link |
 | `al1996` | Signed-in UTAS catalogue: request from other libraries; ORBi publisher postprint is request-only | Library or ORBi request |
 | `al2011n` | Signed-in UTAS catalogue: request from other libraries; no public PDF located | Library request |
@@ -59,9 +59,10 @@ source IDs `al2015e` and `al2016i`.
 
 These are observed routes, not proofs that no lawful copy exists. No requests,
 purchases, account registrations, credential changes or messages were submitted.
-All work tabs were closed; the next intervention starts from the durable routes
-in `docs/barry-to-action.md`. Two BioOne challenges may share a session, but that
-has not been demonstrated.
+All autonomous-pass work tabs were closed; subsequent intervention routes are in
+`docs/barry-to-action.md`. A later user-opened in-app BioOne tab could not be closed
+through the available browser tool. The re-test below supersedes the earlier
+suggestion to handle the two BioOne challenges together.
 
 ## What changed in the process
 
@@ -86,10 +87,21 @@ has not been demonstrated.
    when a direct request fails. Strother's ResearchGate download succeeded and
    was retained as a preprint. Human verification, a subscription requirement and
    a browser-policy rejection remain distinct blockers; do not work around them.
-7. Escalate only the remaining human actions together. A single BioOne verification
-   session is the highest-value next test; the six library-request items can be
-   handled as a batch. The confirmed catalogue gaps mean that fixing browser
-   automation alone cannot deliver a 19/20 rate for this particular selection.
+7. Escalate only the remaining human actions together. The later Kanosh re-test
+   moved it to the library-request group: seven request candidates, plus Rubinstein
+   with a separate unresolved entitlement/public-repository route. Repeated BioOne
+   retries have stopped. Catalogue gaps and the observed access gate mean browser
+   automation alone is insufficient for the desired 19/20 rate on this selection.
+
+## Later shared BioOne re-test, 29 October 2026
+
+Barry supplied the Kanosh article in the in-app browser through the UTAS proxy.
+Its page showed the abstract and a sign-in/purchase gate, with no active paper
+download. The institutional-sign-in target returned **Pardon Our Interruption**.
+Barry then reported a lockout in Chrome as well and that UTAS appears not to have
+access to this journal. Subscription absence is probable, not independently
+confirmed. The action is now a library request, with no further automatic BioOne
+retries. Rubinstein is in a different journal and retains uncertain entitlement.
 
 ## Roles and verification
 

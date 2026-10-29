@@ -3,6 +3,18 @@
 Dated record of decisions that shape the programme. Newest first. Say who decided, and quote
 Barry exactly (with source) or label a paraphrase.
 
+## 2026-10-29: stop BioOne retries for Kanosh (Codex, following Barry's report)
+
+- **Observed** (Codex): the user-supplied UTAS-proxied Kanosh page showed an
+  abstract/sign-in/purchase gate and inactive paper download. Institutional sign-in
+  reached an automated-browser block. Barry reported a lockout in Chrome too and
+  probable absence of UTAS journal access; subscription absence is not confirmed.
+- **Operational decision** (Codex): stop retries and put Kanosh with the library
+  request candidates. A catalogue/LibKey route is not proof of entitlement, and
+  a cleared security challenge is not proof of full-text access. Rubinstein's
+  separate journal remains unresolved. The access ledger and recovery report
+  preserve the distinction; no scientific question or interpretation changes.
+
 ## 2026-10-29: autonomous literature-access follow-up (Barry; Codex execution)
 
 - **Authority** (Barry, chat): "work now through them remaining "Back to action"
