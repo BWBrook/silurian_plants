@@ -90,6 +90,10 @@ data archived, and the human–AI correspondence record published alongside.
   normalisation, per-result numerical status, the calibrate/accept phases with their receipt, and
   the shared-age diagnostic cells; and ran their rehearsal on the synthetic design, with a paired
   re-run of the development seeds and a re-optimisation of every calibration miss (on `nectar`).
+  After Codex's third review (2026-10-29) it made the contract executable itself: delivered-output
+  coverage separated from truth-point test coverage, the receipt-scope and stage-1 checks, pooled
+  stage 2, status-aware summaries and the 0.955 calibration target, verified by re-summarising every
+  stored replicate table and a tiny-protocol smoke run of the full command-line path.
 - Claude Sonnet 5.5 (Anthropic) subagents: the F3 simulator, estimators, sketch and recovery study
   (`models/f3/`), with a second Sonnet agent reviewing; the reshape-v3 compatibility estimator, unit
   simulator and validation harness (2026-10-28 and 29, reviewed and amended by Claude Opus 5.5), and

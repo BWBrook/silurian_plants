@@ -727,10 +727,12 @@ def test_one_stage_rule_alone_would_fail_good_cells():
     assert stats.binom.sf(943, 1000, 0.95) == pytest.approx(0.83, abs=0.01)
 
 
-def test_delta95_is_the_smallest_nonnegative_shift_reaching_95_percent():
+def test_calibration_shift_is_the_smallest_nonnegative_shift_reaching_the_target():
     margins = [-math.inf] * 50 + list(np.linspace(-1.0, 1.0, 50))
-    assert val.delta95(margins) == pytest.approx(np.sort(margins)[94])
-    assert val.delta95([-1.0] * 100) == 0.0 and val.delta95([math.inf] * 10) == math.inf
+    assert val.CALIBRATION_TARGET == 0.955
+    assert val.shift_to_target(margins) == pytest.approx(np.sort(margins)[95])
+    assert val.shift_to_target(margins, 0.95) == pytest.approx(np.sort(margins)[94])
+    assert val.shift_to_target([-1.0] * 100) == 0.0 and val.shift_to_target([math.inf] * 10) == math.inf
 
 
 # --- the simulator and the real selection ----------------------------------------------------------
@@ -836,12 +838,13 @@ def test_harness_replicate_records_coverage_statistics_informativeness_and_state
     assert row["error"] == "" and row["no_tau"] is False
     for key in ("tau", "trivial", "cover_set_H0c_1", "cover_set_H0m_0.1", "cover_set_H0_0.01", "lr0_H0c_0.01", "endpoint_H0c_1", "state_H0", "fstar_H0c", "lr_H0c", "state459_H0",
                 "fstar459_H0m", "crit_t0", "a_ref", "a_ref_realised", "abar_rel", "state_H1-no-ceiling", "n_fits", "n_flagged", "n_failed", "seconds", "fmin_applicable_H0m",
-                "ok_lr_H0", "ok_fstar_H0m", "ok_lr0_H0_0.1", "ok_set_H0c_1"):
+                "ok_lr_H0", "ok_fstar_H0m", "ok_lr0_H0_0.1", "ok_set_H0c_1", "spread_fstar_H0c", "ok459_H0m", "spread459_H1"):
         assert key in row
     assert row["state_H0"] in ev.STATES and row["state_H1-no-ceiling"] in ev.STATES
     summary = val.summarise(cell, [row])
-    assert summary["n_valid"] == 1 and "cover_set_applicable_H0c" in summary and "fcover_H0c" in summary and "delta95_f_H0" in summary
-    assert "ocover_H0c_0.1" in summary and "ocover_H0c_1" not in summary and "delta95_ocover_H0m_0.01" in summary and "failed_f_H0" in summary
+    assert summary["n_valid"] == 1 and "cover_set_applicable_H0c" in summary and "fcover_H0c" in summary and "delta_f_H0" in summary
+    assert "ocover_H0c_0.1" in summary and "ocover_H0c_1" not in summary and "delta_ocover_H0m_0.01" in summary and "failed_f_H0" in summary
+    assert {"fcover_test_H0c", "mismatch_f_H0c", "ocover_set_H0c_0.1", "ocover_test_H0c_0.1", "mismatch_ocover_H0c_0.1", "failed459_H0"} <= set(summary)
     assert "fcover_chi2_H0c" not in summary and not any("chi2" in k or "logistic" in k for k in row)
 
 
@@ -858,8 +861,70 @@ def test_coverage_counts_no_claim_as_covered_and_errors_and_failed_statistics_as
             dict(error="", no_tau=False, lr=1.0, ok=False), dict(error="", no_tau=True), dict(error="boom", no_tau=False)]
     covers = lambda r: r["lr"] <= 3.0 and r["ok"]
     assert val.coverage(rows, covers) == pytest.approx(2 / 5)
-    m = val.margins(rows, lambda r: r["lr"] - 3.0, "ok")
+    m = val.margins(rows, lambda r: r["lr"] - 3.0, lambda r: r["ok"])
     assert m == [-2.0, 6.0, math.inf, -math.inf, math.inf]
+
+
+def test_delivered_coverage_needs_the_reported_bound_and_set_to_have_succeeded():
+    cell = next(c for c in val.CELLS if c["name"] == "A4")
+    row = val.replicate((cell, 0, val.ROOT_SEEDS["dev"], 0.0))
+    good = dict(row, trivial=False, lr_H0c=0.0, ok_lr_H0c=True, ok_fstar_H0c=True, state_H0c="finite", fstar_H0c=0.5, abar_rel=0.3,
+                **{"lr0_H0c_0.1": 0.0, "ok_lr0_H0c_0.1": True, "ok_set_H0c_0.1": True, "cover_set_H0c_0.1": True})
+    bound_failed = dict(good, ok_fstar_H0c=False)
+    set_failed = dict(good, **{"ok_set_H0c_0.1": False})
+    grid_misses = dict(good, **{"cover_set_H0c_0.1": False})
+    s = val.summarise(cell, [good, bound_failed, set_failed, grid_misses])
+    assert s["fcover_test_H0c"] == 1.0 and s["fcover_H0c"] == 0.75 and s["failed_f_H0c"] == 1 and s["failed_fstar_H0c"] == 1
+    assert s["delta_f_H0c"] == math.inf  # one failed bound in four: no shift reaches the target
+    assert s["ocover_test_H0c_0.1"] == 1.0 and s["ocover_H0c_0.1"] == 0.5 and s["ocover_set_H0c_0.1"] == 0.5
+    assert s["failed_ocover_H0c_0.1"] == 1 and s["mismatch_ocover_H0c_0.1"] == 1 and s["mismatch_f_H0c"] == 0
+    assert val.summarise(cell, [dict(good, fstar_H0c=0.2)])["mismatch_f_H0c"] == 1
+
+
+def _receipt(**changes) -> dict:
+    parts = [dict(cell=c, quantity=q, delta=0.1) for c, q in sorted(val.grid_quantities())]
+    return val.protocol() | dict(delta=0.1, parts=parts, sha256=val.code_hashes()) | changes
+
+
+def test_acceptance_refuses_a_receipt_outside_its_calibrated_scope():
+    assert val.check_receipt(_receipt()) == 0.1
+    parts = _receipt()["parts"]
+    for bad in (dict(reps=5), dict(start=1000), dict(root_seed=val.ROOT_SEEDS["dev"]), dict(target=0.95), dict(sha256={}),
+                dict(delta=math.nan), dict(delta=-0.1), dict(delta=math.inf), dict(delta=0.05), dict(parts=parts[:-1]), dict(parts=parts + parts[:1])):
+        with pytest.raises(SystemExit):
+            val.check_receipt(_receipt(**bad))
+
+
+def test_stage_one_verdicts_count_each_acceptance_quantity():
+    a6 = next(c for c in val.CELLS if c["name"] == "A6")
+    s = {"name": "A6", "n_rep": 1000, "fcover_H0m": 0.944, "fcover_H0": 0.943, "fcover_H1": 0.915, "ocover_H0m_0.1": 0.95, "ocover_H0m_0.01": 0.916}
+    v = val.stage1_verdicts([a6], [s])
+    assert [x["k1"] for x in v] == [944, 943, 915, 950, 916]
+    assert [x["stage1"] for x in v] == ["pass", "borderline", "fail", "pass", "borderline"]
+    assert [x["final"] for x in v] == ["pass", "pending", "fail", "pass", "pending"] and val.stage2_cells(v) == ["A6"]
+
+
+def test_stage_two_reruns_only_borderline_cells_and_pools_their_counts():
+    quantities = sorted(val.grid_quantities())
+    verdicts = [dict(cell=c, quantity=q, k1=1000, stage1="pass", k2=None, pooled=None, final="pass") for c, q in quantities]
+    assert val.grid_result(verdicts) == "accepted" and val.stage2_cells(verdicts) == []
+    (c1, q1), (c2, q2) = quantities[0], quantities[-1]
+    verdicts[0].update(k1=940, stage1="borderline", final="pending")
+    verdicts[-1].update(k1=930, stage1="borderline", final="pending")
+    assert val.grid_result(verdicts) == "stage 2 needed" and val.stage2_cells(verdicts) == [c1, c2]
+    pooled = val.pooled_verdicts(verdicts, [{"name": c1, "n_rep": 1000, q1: 0.946}, {"name": c2, "n_rep": 1000, q2: 0.955}])
+    assert (pooled[0]["k2"], pooled[0]["pooled"], pooled[0]["final"]) == (946, 1886, "pass")
+    assert (pooled[-1]["k2"], pooled[-1]["pooled"], pooled[-1]["final"]) == (955, 1885, "fail")
+    assert pooled[1:-1] == verdicts[1:-1] and val.grid_result(pooled) == "rejected" and val.grid_result(pooled[:-1]) == "incomplete"
+
+
+def test_stage_two_refuses_a_stage_one_from_another_receipt_code_seed_or_scope():
+    first = dict(stage=1, receipt_sha256="r", sha256=val.code_hashes(), root_seed=val.ROOT_SEEDS["accept"], start=0, reps=val.N1, result="stage 2 needed")
+    val.check_stage1(first, "r")
+    for change in (dict(receipt_sha256="x"), dict(sha256={}), dict(start=1000), dict(reps=5), dict(root_seed=val.ROOT_SEEDS["calibrate"]),
+                   dict(result="incomplete"), dict(stage=2)):
+        with pytest.raises(SystemExit):
+            val.check_stage1(first | change, "r")
 
 
 def test_origin_readouts_are_acceptance_quantities_only_where_the_truth_satisfies_them_for_every_tau():
@@ -875,10 +940,10 @@ def test_origin_readouts_are_acceptance_quantities_only_where_the_truth_satisfie
     assert a6 == ["fcover_H0m", "fcover_H0", "fcover_H1", "ocover_H0m_0.1", "ocover_H0m_0.01"]
 
 
-def test_calibrated_shift_is_the_largest_delta95_over_the_acceptance_quantities():
+def test_calibrated_shift_is_the_largest_shift_over_the_acceptance_quantities():
     cells = [c for c in val.CELLS if c["name"] in ("A6", "D2")]
-    summary = [{"name": "A6", "delta95_f_H0m": 0.0, "delta95_f_H0": 0.2, "delta95_f_H1": 0.1, "delta95_ocover_H0m_0.1": 0.4, "delta95_ocover_H0m_0.01": 0.0},
-               {"name": "D2", "delta95_f_H0c": 9.0}]
+    summary = [{"name": "A6", "delta_f_H0m": 0.0, "delta_f_H0": 0.2, "delta_f_H1": 0.1, "delta_ocover_H0m_0.1": 0.4, "delta_ocover_H0m_0.01": 0.0},
+               {"name": "D2", "delta_f_H0c": 9.0}]
     delta, parts = val.calibrated_shift(summary, cells)
     assert delta == 0.4 and len(parts) == 5
 

@@ -456,16 +456,18 @@ comparison) is in `c7729ad`, its count-matched re-run in `69f2ef4` and the 60-ag
   (delay), `ramp`, `logistic`, `hide` and `hide_h1` (the least favourable H0 and H1 members: a 0/1 or 0/3 path lit on the stages with the fewest expected units per Myr
   until the time-average is f). `Design` options, all off by default: `class_trend`, `misassign`, `older_report`, `confine`, `truth_scenario`,
   `shared_age` (docstring); `cluster_mean` sets the section size. The estimator sees only ranges, recorded classes, clusters and outcomes and must find tau itself.
-- `validate.py`: the harness (24 cells: 15 acceptance, 9 diagnostic), its phases (`dev`, `calibrate`, `accept`) and the two-stage acceptance rule (`stage1`, `stage2`, `pass_probability`). Writes
-  `out/validation_<tag>.csv` (one row per cell, with stage-1 verdicts in the accept phase), `_reps.csv` (one row per replicate), `.meta.json` (phase, root seed,
-  spawn keys, settings, file hashes) and, in the calibrate phase, `out/receipt_<tag>.json`. Replicate tables are committed gzipped. `out/validation_dev*` hold the
-  development grid (`dev2`: its seeds under the repaired code); `cal`, `acc1` and `receipt_cal.json` the second-review rehearsal.
+- `validate.py`: the harness (24 cells: 15 acceptance, 9 diagnostic), its phases (`dev`, `calibrate`, `accept`), the receipt and stage-1 checks, and the
+  two-stage acceptance rule (`stage1`, `stage2`, `pass_probability`, `pooled_verdicts`, `grid_result`). Writes `out/validation_<tag>.csv` (one row per cell),
+  `_reps.csv` (one row per replicate), `.meta.json` (phase, root seed, spawn keys, settings, file hashes), in the calibrate phase `out/receipt_<tag>.json`, and in
+  the accept phase `out/verdicts_<tag>.json` (each acceptance quantity's counts and verdicts, and the grid's result). Replicate tables are committed gzipped.
+  `out/validation_dev*` hold the development grid (`dev2`: its seeds under the repaired code); `cal`, `acc1` and `receipt_cal.json` the second-review rehearsal,
+  `shared` the shared-age cells. All of these predate the third-review repairs below and were written by earlier code.
 - `check_paired.py` (two runs on the same seeds, replicate by replicate) and `check_reoptimise.py` (every miss re-solved from many more starts): the rehearsal's checks.
-- `test_envelope.py`: 80 tests; the whole of `models/f3` is 154 tests, all passing (about 40 s).
+- `test_envelope.py`: 85 tests; the whole of `models/f3` is 159 tests, all passing (about 35 s).
 
 ```bash
 uv run --with pytest --with numpy --with scipy python -m pytest -q models/f3
-uv run models/f3/validate.py [--phase dev|calibrate|accept] [--receipt FILE] [--reps N] [--start J] [--cells NAME ...] [--workers W] [--tag TAG]
+uv run models/f3/validate.py [--phase dev|calibrate|accept] [--receipt FILE] [--stage1 FILE] [--reps N] [--start J] [--cells NAME ...] [--workers W] [--tag TAG]
 ```
 
 ### The construction, as implemented
@@ -581,28 +583,47 @@ are not (D9 is, as D8's control), and are reported, not accepted against.
 | D8 | diagnostic | D7 with clusters of mean size 10 |
 | D9 | diagnostic | A2 with clusters of mean size 10 (D8's control) |
 
-- **Per replicate**, for each history class that contains the truth (`Truth.members`) and always H0: f* and its state at t0 and at T = 459.1 (Hooper's M2 maximum) when that lies above the estimated tau; LR_K(abar_rel), the
+- **Per replicate**, for each history class that contains the truth (`Truth.members`) and always H0: f* with its state, status and spread at t0 and at T = 459.1 (Hooper's M2 maximum) when that lies above the estimated tau; LR_K(abar_rel), the
   statistic at the true target (the window-relative expected intensity: the path times `older_report` and (1 - `confine`) beyond tau0; `lr_nominal_*` is the statistic at the nominal path where those differ), the count-matched critical value and
-  n. f* >= abar_rel is the same event as LR_K(abar_rel) <= crit, so the summary applies any shift delta to the stored statistic. At 459.1 the origin is below t0, so f* there is informative, not a coverage claim.
+  n. f* >= abar_rel is the same event as LR_K(abar_rel) <= crit up to the root tolerance, so the summary applies any shift delta to the stored statistic. At 459.1 the origin is below t0, so f* there is informative, not a coverage claim.
   Origin sets for H0c, H0m and H0 at each read-out: `cover_set` (the grid set contains t0), `lr0` (the exact statistic at t0), `applicable` (the largest read-out true of the truth on (tau, t0], or on (tau, t0 - D] for H0m).
   The window-relative truth is `abar_rel = abar_true / a_ref`, both weighted by the true rates and integrated over the unit age ranges of the analysis's age model
   (Codex R2): `abar_true` over the older units' ranges in (tau, t0], `a_ref` over the reference units' ranges. Before the second review `a_ref` was the mean at the
-  hidden true ages; that is kept as `a_ref_realised`, a diagnostic. Every reported statistic stores its status: `ok_lr_*`, `ok_lr_nominal_*`, `ok_fstar_*`,
-  `ok_lr0_*` and `ok_set_*` (all grid points of an origin set), with `n_failed` beside `n_fits` and `n_flagged`.
+  hidden true ages; that is kept as `a_ref_realised`, a diagnostic. Every reported output stores its status: `ok_lr_*`, `ok_lr_nominal_*`, `ok_fstar_*` and
+  `ok459_*` (every statistic of the bound's root search), `ok_lr0_*` and `ok_set_*` (all grid points of an origin set), with `spread_fstar_*`, `spread459_*`, and
+  `n_failed` beside `n_fits` and `n_flagged`.
 - **Per cell**: coverage over every replicate at the run's shift (Codex R4). A trivial replicate (t0 at or below tau) and one with no first appearance make no claim
-  and cover; an error and a failed statistic do not, whatever the shift (their margin is +inf in `delta95`). Then the non-trivial coverage as a diagnostic,
-  `delta95` (the smallest shift not below 0 that brings a coverage to 0.95 in that batch: a tuning quantity, not a population guarantee), `failed_*` (failed decisive
-  statistics), `outside_*` (the share of non-trivial replicates whose window-relative target exceeds the class ceiling, which makes the truth lie outside the class),
-  informativeness (unbounded share, endpoints, the four states), `flagged_share`, `failed_share`, `reps_with_failed_fit` and `seconds_per_rep`.
-- **Origin read-outs.** A read-out is an acceptance quantity (`ocover_<class>_<f_min>`, exact statistic at t0) only in the cells whose truth satisfies its hypothesis for
+  and cover; an error and a failed output do not, whatever the shift (their margin is +inf in `delta_*`). Two coverages are kept apart (Codex, third review):
+  - *delivered coverage*, the acceptance quantities: the reported output succeeded and contains the truth. `fcover_*` needs the bound and the statistic at the
+    truth both converged; `ocover_*` needs the set and the statistic at t0 both converged, the exact statistic within the critical value and the grid set
+    containing t0. `mismatch_f_*` counts replicates where f* >= abar_rel and the statistic's verdict disagree beyond the root tolerance; `mismatch_ocover_*` those
+    where the exact test covers and the grid set does not; `ocover_set_*` is the grid set's own coverage;
+  - *truth-point test coverage* (`fcover_test_*`, `ocover_test_*`): the statistic at the truth alone, a diagnostic of the test and not of the reported interval.
+
+  Then the non-trivial coverage as a diagnostic, `delta_*` (the smallest shift not below 0 that brings a delivered coverage to the calibration target, 0.955, in that
+  batch: a tuning quantity, not a population guarantee), `failed_*` (failed delivered outputs), `outside_*` (the share of non-trivial replicates whose
+  window-relative target exceeds the class ceiling, which makes the truth lie outside the class), informativeness (unbounded share, endpoints, the four states),
+  `flagged_share`, `failed_share`, `reps_with_failed_fit` and `seconds_per_rep`. States, medians, endpoints and set shapes count converged outputs only; the failures
+  are counted beside them (`failed_fstar_*`, `failed459_*`, `failed_set_*`, and the flagged shares `flagged_fstar_*`, `flagged459_*`).
+- **Origin read-outs.** A read-out is an acceptance quantity (`ocover_<class>_<f_min>`, delivered as above) only in the cells whose truth satisfies its hypothesis for
   every possible tau: the truth is in the class and a >= f_min on (tau0, t0 - D] (`origin_readouts`). The constant truths give all three read-outs their full
   denominators; A6 and A7 add H0m at 0.1 and 0.01. Elsewhere `cover_*_applicable` picks the read-out from the simulated truth and is a diagnostic with its
-  denominator `n_applicable_*` (Codex R4).
+  denominator `n_applicable_*` (Codex R4); it too counts a failed set or statistic as a miss.
 - **Acceptance quantities** (`acceptance_quantities`): f* coverage for every class that contains the truth, plus the fixed origin read-outs, in acceptance cells.
 - **Phases and seeds.** Replicate j of cell c descends from `SeedSequence(root, spawn_key=(c, j))`; child 0 simulates. The root seed separates the phases:
-  `dev` 20261030 (shift 0), `calibrate` 20261101 (shift 0; writes `out/receipt_<tag>.json` with delta, the largest `delta95` over every acceptance quantity of every
-  acceptance cell, and the code and input hashes), `accept` 20261102 (refuses to run unless the code and inputs match the receipt, applies its delta as `crit_shift`, and gives
-  each acceptance quantity its stage-1 verdict). Stage 2 of acceptance is `--phase accept --start 1000`; its successes are pooled with stage 1's.
+  - `dev` 20261030, shift 0.
+  - `calibrate` 20261101, shift 0. Writes `out/receipt_<tag>.json`: delta (the largest `delta_*` over every acceptance quantity of every acceptance cell), its
+    parts, the protocol (root seed, start, replicates, target) and the code and input hashes.
+  - `accept` 20261102. `check_receipt` refuses a receipt unless the code and inputs match it, it ran replicates 0–999 on the calibration seed at the current target,
+    its parts are exactly the acceptance quantities of the whole grid, and its delta is finite, non-negative and the largest part. The run applies delta as
+    `crit_shift`. Stage 1 (replicates 0–999) writes `out/verdicts_<tag>.json`: per quantity the count and the stage-1 verdict, and the grid's result
+    (`accepted`, `rejected`, `stage 2 needed`, or `incomplete` when the run did not cover every acceptance quantity).
+  - Stage 2 is `--phase accept --receipt R --stage1 out/verdicts_<tag>.json`. `check_stage1` refuses a verdict file that is not a complete stage 1 on the same
+    receipt, code and seed. The run then reruns only the cells with a borderline quantity, on replicates 1000–1999, pools each borderline quantity's 2,000, applies
+    1,886 and writes the final verdicts. The grid is accepted when every acceptance quantity passes.
+
+  A real-design adapter, when it exists, must add the frozen unit table and the analysis choices to the hashed inputs; at present they cover the synthetic design's
+  code and its `timescale.csv` and `effort.csv`.
 
 ### Development grid (2026-10-29; binds nothing)
 
@@ -664,8 +685,10 @@ How to read the table:
 
 ### Second-review rehearsal (2026-10-29; binds nothing)
 
-The R4 contract run end to end on the synthetic design: calibration, receipt, then independent acceptance at the receipt's δ. Code hashes are in
-`out/receipt_cal.json` (envelope.py `7a23e1d4…`, validate.py `441b893a…`), and every run below matches them.
+The R4 contract as implemented in `55d7a58`, on the synthetic design: calibration, receipt, then independent acceptance at the receipt's δ. Code hashes are in
+`out/receipt_cal.json` (envelope.py `7a23e1d4…`, validate.py `441b893a…`); the calibration, acceptance and paired development runs match them. The shared-age cells
+(`7f56be1`) and the third-review repairs changed `units_sim.py` and `validate.py`, so this receipt is historical evidence and is refused by the current hash
+check, as it should be. At the time stage 2 was not yet executable and coverage counted the truth-point test; neither changes these results (third review, below).
 
 - **Calibration** (root seed 20261101; 21 cells × 1,000; 4,386 s on mini, 9 workers; `out/validation_cal.*`). Each of the 117 acceptance quantities reached 0.95
   at δ = 0, so the receipt's δ is 0. Lowest: A15 H0c 0.952, A15 H0m and A5 H0c 0.959. Origin read-outs are all ≥ 0.975 (A14 at f_min = 1).
@@ -689,9 +712,9 @@ The R4 contract run end to end on the synthetic design: calibration, receipt, th
   946 in three independent batches, 0.948 pooled (2,844 of 3,000; 95% interval 0.939–0.956). That is acceptance at the 0.93 floor, which is what the contract
   claims (Codex R4), not population coverage of 0.95.
 - **Operating characteristic of the acceptance rule.** The rule tests coverage against 0.93: a procedure at 0.93 passes with probability 0.05. A cell at 0.948 fails
-  overall with probability 0.105 (borderline at stage 1 with probability 0.26, then short of 1,886 at stage 2); at 0.95 with 0.050; at 0.955 with 0.004. On this
-  design a shift calibrated to 0.955 instead of 0.95 would be δ = 0.14 (A15 H0c). Whether to raise the calibration target before the binding run is open
-  (`docs/f3-shape.md`).
+  overall with probability 0.105 (borderline at stage 1 with probability 0.26, then short of 1,886 at stage 2); at 0.95 with 0.050; at 0.955 with 0.004. These are
+  per quantity, not for the correlated grid as a whole (Codex). Codex agreed to calibrate to 0.955 (Correspondence 2557); on this design that is δ = 0.139
+  (A15 H0c), a retrospective illustration, not the binding δ.
 - **Shared ages within sections** (Codex R1; diagnostic cells added after the rehearsal, development seeds, 94 s on nectar; `out/validation_shared.*`). The
   likelihood treats unit ages as independent within their ranges. In D7 and D8 every unit of a cluster instead takes the same relative position in its own range,
   one uniform draw per cluster, so a whole section is early or late together; each unit's marginal age is unchanged. f\* coverage (H0c / H0m / H0 / H1):
@@ -710,6 +733,32 @@ The R4 contract run end to end on the synthetic design: calibration, receipt, th
   cells, and 90% of differences lie within about ±2.5% in the constant cells, ±5.5% in the hiding cells A9 and A12, and −10% to +14% in A10. In D5 and D6 (true
   boundaries older or younger than the chart) the realised value is systematically lower or higher (medians −2.2% and +3.3%): realised ages follow the true
   boundaries, the integration follows the chart.
+
+### Third-review repairs (2026-10-29)
+
+Codex accepted R2 and the core R3 repairs and reproduced the rehearsal's 117 quantities, then found four gaps between the contract and the code (Correspondence
+2557; `docs/audits/2026-10-29-f3-response-and-ghelli-frame.md`). All four are repaired in `validate.py`:
+1. **Stage 2 is executable** (`--stage1`, `check_stage1`, `pooled_verdicts`, `grid_result`; above). Before, `stage2` existed but `main` never called it.
+2. **The receipt's scope is enforced** (`check_receipt`). Before, acceptance checked the hashes only, so a receipt calibrated on some cells could be applied to others.
+3. **Delivered coverage is separated from truth-point test coverage.** Before, f\* coverage counted a replicate whose bound failed if the statistic at the truth
+   converged and covered (shared-age D9 replicate 11, H1), and origin coverage ignored the set's own status.
+4. **Status reaches the summaries**: f\* at 459.1 keeps its status and spread; medians, states, endpoints and set shapes count converged outputs only; the
+   truth-selected origin diagnostics count a failed set or statistic as a miss.
+
+**Effect on the stored runs.** Every stored replicate table was re-summarised under the new rules (status fields absent from the old tables taken as converged).
+Calibration, acceptance and paired development coverage are unchanged for every acceptance quantity, and every mismatch count is zero: the delivered bound and
+the truth-point test agree on all non-trivial statistics within the root tolerance, and the grid set contains t0 wherever the exact test covers it (it covers
+more often in about 0.5% of sets, by the boundary widening). The one change is D9 H1, 0.996 to 0.995.
+
+**The calibration shift at 0.955.** Pooled over the three stored batches (3,000 replicates per cell, all at shift 0), only A15 H0c falls short of 0.955: it covers
+0.948, and δ = 0.33 lifts it. Every other quantity reaches 0.955 unshifted (next lowest A15 H0m 0.957, A15 H0 0.958, A5 H0c 0.959). Single batches give δ = 0.139
+(calibration), 0.221 (acceptance) and 0.383 (paired development), all set by A15 H0c or A5 H0c. So the binding δ will be one draw from a spread of about
+0.15–0.4 on this design. It is one shift for every class and cell, so one long-gap cell sets the width of every bound; that costs informativeness, not validity,
+and the independent acceptance remains the check.
+
+**Verification.** Five new tests cover the receipt refusals, stage-1 counts, stage-2 pooling and refusal, and delivered against test coverage. A smoke run of
+the command line with the protocol patched to three replicates (cells A2, A6, D2) ran calibrate, stage 1 and stage 2: stage 2 reran only A2 and A6 on the next
+replicate block, pooled their counts and accepted, and a stage-2 verdict file offered as stage 1 was refused.
 
 ### Open choices
 

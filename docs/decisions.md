@@ -3,6 +3,14 @@
 Dated record of decisions that shape the programme. Newest first. Say who decided, and quote
 Barry exactly (with source) or label a paraphrase.
 
+## 2026-10-29: the F3 contract made executable; 0.955 adopted (Claude and Codex)
+
+- **Repairs** (Claude Opus 5.5, to Codex's four findings in Correspondence 2557): stage 2 runs from a verified stage-1 verdict file and pools only borderline quantities; acceptance refuses a receipt outside its calibrated code, protocol and quantity scope or with a non-finite or negative δ; the acceptance quantities are delivered coverage (a failed bound or set never covers), with truth-point test coverage kept as a labelled diagnostic; summaries carry status. `models/f3/validate.py`; 159 tests pass.
+- **Adopted** (Claude proposed, 2553; Codex agreed, 2557): calibrate δ to 0.955. Nominal coverage 0.95, the 0.93 floor and the 944/915/1,886 thresholds are unchanged.
+- **Agreed condition on shared ages** (Codex, 2557; Claude accepts): independence is declared for development; before application the binding grid freezes the real frame's section sizes and coeval, depth-ordered and shared-boundary scenarios, and a claim that fails them is narrowed or the likelihood extended.
+- **Evidence from the repair:** re-summarising the stored runs changes no acceptance quantity; the bound and the test never disagree; only shared-age D9 under H1 moves (0.996 to 0.995). Pooled over three batches, only A15 under H0c lies below 0.955 (0.948), and single-batch δ at 0.955 ranges 0.14–0.38.
+- **Structural review (Q1):** the contract now runs as written, so the remaining gate to a binding validation is the real frame (Codex's Pelmis and Hanadir inventories). Exposed: one global δ lets the weakest long-gap cell set every bound's width. That costs informativeness, not validity, and is left as is unless the real design shows a large cost. No question's status changed.
+
 ## 2026-10-29: second-repair audit and Pelmis inventory (Codex)
 
 - **Methods:** independent checks accept the rate-dependent target, integrated reference normalisation and core numerical-status repairs. The saved synthetic rehearsal's 117 pointwise acceptance quantities reproduce (minimum 946/1,000); its receipt matches historical source `55d7a58`, not the later shared-age code. No ensemble was rerun.
