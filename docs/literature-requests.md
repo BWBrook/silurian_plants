@@ -148,3 +148,18 @@ and any supplement as separate acquisition targets, and retain the distinction
 between a library request-only finding, a blocked login and an untested entitlement.
 A public route becoming accessible can remove an item from this list, but no
 background monitoring or repeated site retries are scheduled.
+
+## Additional archive-access candidates observed on 29 October 2026
+
+These five sources showed access options rather than a full-text delivery through
+the authenticated institutional route. This is a route result, not proof that
+no public or alternative library copy exists. They remain `needed` in the CSV.
+No request or purchase was submitted; the previous ten candidates were not retried.
+
+| CSV ID | Work | Observed route |
+|---|---|---|
+| `careybolger1995` | Carey & Bolger, Wilson Creek conodonts, 1995 | UTAS Taylor & Francis article has Read this article and no full-access PDF |
+| `hemsley1990` | Hemsley, Parka and spore evolution, 1990 | UTAS Taylor & Francis article has Read this article and no full-access PDF |
+| `white1983` | Gensel & White, Psilophyton spores, 1983 | UTAS Taylor & Francis article has Read this article and no full-access PDF |
+| `chinnock1975` | Chinnock, New Zealand Tmesipteris, 1975 | Migrated Wiley route resolves PDF control to access-denial/purchase options |
+| `lovis1987` | Brownsey & Lovis, psilotalean chromosome numbers, 1987 | Migrated Wiley route resolves PDF control to access-denial/purchase options |

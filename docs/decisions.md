@@ -3,6 +3,12 @@
 Dated record of decisions that shape the programme. Newest first. Say who decided, and quote
 Barry exactly (with source) or label a paraphrase.
 
+## 2026-10-29: autonomous literature expansion, first checkpoint (Barry; Codex execution)
+
+- **Authority** (Barry, chat, exact): “No need to bring me the batch this time: just progress autonomously, basically as far as you can take it.” Existing instructions retain in-app-first sourcing, Chrome fallback, a blocked-action ledger and tab cleanup.
+- **Completed checkpoint**: 46 main texts, 25 supporting files and one linked erratum secured; 72 private assets with checksums and source/version records in `library/closed.tsv` and `work/codex/literature/2026-10-29-autonomous-expansion.json`. The source index, CSV and audit distinguish final publisher deliveries, public author/reprint copies, the Hawaz accepted manuscript and the Grahn proof. Mahmoudi's supplied DOI remains unverified despite exact article identity.
+- **Structural review**: the proven institutional reader routes materially improve collection, while metadata/search snippets alone can misidentify cited works as full text. Download events and viewer opening are intermediate evidence; local identity, extent and bytes establish acquisition. Kubásek's linked erratum replaces duplicated Table 3 data and must accompany future extraction. Q1/Q2/Q5 readings remain pending; no occurrence/model/card values changed. Further low-friction Wiley recovery continues within the same authority.
+
 ## 2026-10-29: regional-spore literature batch acquired (Barry; Codex execution)
 
 - **Authority** (Barry, chat; paraphrase): collect the six shortlisted main texts

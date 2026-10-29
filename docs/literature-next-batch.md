@@ -170,3 +170,13 @@ returned previews/access options. In-app article inspection preceded the Chrome
 native PDF-save fallback. Ghelli's two map URLs yielded identical KML bytes;
 version and asset counts remain separate from independent studies. Full audit,
 checks and limits are in the batch report; scientific extraction is pending.
+
+## Autonomous expansion authorised and under way
+
+Barry authorised autonomous selection beyond a fixed shortlist on 29 October 2026.
+The first checkpoint recovered 46 main texts, 25 supporting files and one
+erratum, documented in `docs/audits/2026-10-29-autonomous-expansion.md`.
+ScienceDirect, Taylor & Francis, Wiley, Oxford, Nature, AJS and public author/
+repository routes supplied the verified holdings. The remaining Wiley candidates
+are being worked through under the same authority; no new shortlist approval is
+required. Parked request candidates remain separate from reader/security actions.

@@ -7,9 +7,16 @@ provenance have been verified. A failed route does not establish that no copy ex
 
 ## Active access actions
 
-No active human-action items. Liu 2016 was resolved on 29 October 2026.
+Two fresh route-level actions remain after the autonomous expansion; no tabs are held open for them. Reopen only when Barry is available. Liu 2016 remains resolved.
 
-The ten earlier request candidates remain parked in
+| Work | Observed blocker | Reopen route |
+|---|---|---|
+| Breuer et al. 2007 (`al2007c`), Saudi Devonian miospores | Public full-text record exposed a download, but the download stalled and a subsequent in-app visit presented a security check. No challenge was solved; access has not been disproved. | [ResearchGate author copy](https://www.researchgate.net/publication/233499781_Early_to_Middle_Devonian_miospores_from_northern_Saudi_Arabia) |
+| Higgs et al. 2014 (`al2014c`), Bulls Head Formation | In-app JSTOR displayed browser verification; Chrome fallback inspection timed out. No PDF acquired and entitlement remains unestablished. | [JSTOR record](https://www.jstor.org/stable/10.3318/ijes.2014.32.55) |
+
+The detailed autonomous audit records resolved reader/save failures and version qualifications. The metadata-only Mahmoudi DOI check remains unresolved; it does not require Barry to obtain the already-held paper.
+
+The ten earlier request candidates and five newly observed archive-access gaps remain parked in
 [`docs/literature-requests.md`](literature-requests.md), separately from this fresh
 access action. No request has been submitted.
 

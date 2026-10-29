@@ -180,3 +180,21 @@ which makes it a candidate for bulk extraction (2026-10-27 smoke test).
 3. Supplements behind Wiley, Science and PNAS walls (Toledo 2021, Capel 2023, Haq & Schutter 2008,
    Lenton 2016): a browser or library download would resolve these.
 4. The go-ahead for EPRP item 8 and for the spore compilation (possibly on Codex).
+
+## 11. Autonomous literature expansion, 29 October 2026
+
+The first autonomous checkpoint adds 46 main texts, 25 supporting files and a
+linked erratum to `library/closed/`. The CSV records 34 institutional copies and
+12 public copies; `library/closed.tsv` records every asset, URL, format, extent
+and SHA-256. The full file index and qualifications are in
+`docs/audits/2026-10-29-autonomous-expansion.md`; the machine-readable receipt is
+`work/codex/literature/2026-10-29-autonomous-expansion.json`.
+
+This includes the Cooksonia conducting-strand anchor, Aglaophyton, Hueber's
+Baragwanathia and Prototaxites papers, Kenrick's Ordovician reinterpretation,
+regional spore papers and plant-physiology sources. The Hawaz text is an accepted
+manuscript and Grahn's Apucarana text is an early proof; final-version equivalence
+is not established. Mahmoudi's DOI remains unverified. Kubásek's Table 3 erratum
+is held with the main article and supporting figures; later readings must use the
+replacement table. The published Ibarra R source is held as a file and has not
+been executed. Scientific extraction remains pending.

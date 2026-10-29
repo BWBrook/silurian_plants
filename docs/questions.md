@@ -75,3 +75,13 @@ in full (Mehlqvist 2012, 12 pages; Wellman 2013 chapter 29, 16 pages); see
 supplement remains a separate asset. Scientific interpretation is unchanged. Existing one-page
 abstracts and main-paper/SI mismatches require source-kind reconciliation before
 being treated as missing articles. No scientific interpretation changed.
+
+The autonomous expansion of 29 October 2026 secured a first checkpoint of 46
+further main texts, 25 supporting files and the Kubásek Table 3 erratum. Q1/Q2
+now have direct access to further regional spore records, the Cooksonia
+conducting-strand paper, Aglaophyton, Baragwanathia and the Ordovician
+plant-like fossils reinterpreted as animals. Scientific readings remain pending.
+For Q5/source handling, use the Kubásek replacement Table 3 and retain the
+Hawaz manuscript, Grahn proof and Mahmoudi DOI qualifications; acquisition alone
+changes no occurrence, age or trait interpretation. See the autonomous-expansion
+audit and per-file provenance register.
