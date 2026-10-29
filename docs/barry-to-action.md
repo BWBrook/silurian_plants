@@ -7,17 +7,6 @@ provenance have been verified. A failed route does not establish that no copy ex
 
 ## Pending
 
-### Kraft & Kvaček 2017 — Silurian lycophyte material (Q1, Q2)
-
-- Register ID: `kraft2017`; DOI: `10.1016/j.gr.2017.02.001`.
-- Reopen: [ScienceDirect article](https://www.sciencedirect.com/science/article/pii/S1342937X16303112).
-- Observed 2026-10-28: ScienceDirect displayed full-text access via UTAS, but the
-  PDF viewer and a separate browser download attempt did not complete. No complete
-  PDF was saved.
-- Action: reopen the article and try its PDF download; if the viewer stalls again,
-  try the UTAS catalogue. Institutional access is indicated, not a confirmed
-  subscription failure.
-
 ### Garratt & Rickards 1984 — Yea graptolite correlations (Q1, Q2)
 
 - Register ID: `garrattrickards1984`; DOI: `10.1144/pygs.44.4.377`.
@@ -156,3 +145,25 @@ provenance have been verified. A failed route does not establish that no copy ex
   found. Its constituent papers have not been treated as the complete thesis.
 - Action: search the UTAS or Swedish library catalogues by title or ISBN and decide
   whether a library request is worthwhile. No request has been made.
+
+## Resolved through joint diagnosis
+
+### Kraft & Kvaček 2017 — recovered 2026-10-29 (Q1, Q2)
+
+- Earlier observation (2026-10-28): UTAS access was displayed but PDF viewing and
+  downloading did not complete. The cause of that earlier stall is unproven.
+- Re-test: Barry clicked **View PDF** on the authenticated ScienceDirect article;
+  the complete 11-page publisher PDF opened immediately in a new Chrome tab.
+- Diagnosed automation limitation: the tab-level accessibility tree exposed only
+  the asset URL, while a screenshot showed the rendered viewer. Chrome's native
+  app accessibility tree exposed **Download**, the Save dialog and completion.
+  A coordinate click first focused the download control; the native named-button
+  click opened Save. Codex saved directly to `library/closed/kraft2017.pdf`.
+- Verification: title, DOI, 11 non-empty text pages and printed endpoints 180–190;
+  SHA-256 and access route recorded in `library/closed.tsv`. No separate supplement
+  link found on the article page. Scientific re-reading remains pending.
+- Repeatable procedure: inspect newly opened PDF tabs visually before classifying
+  a blank accessibility view as a loading failure; use Chrome native accessibility
+  for its PDF toolbar and Save dialog; verify the resulting local file. This
+  removes a demonstrated automation obstacle, but does not establish the cause of
+  yesterday's failure or prove that the initial PDF-opening step is automated.

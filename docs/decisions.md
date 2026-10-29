@@ -3,6 +3,20 @@
 Dated record of decisions that shape the programme. Newest first. Say who decided, and quote
 Barry exactly (with source) or label a paraphrase.
 
+## 2026-10-29: diagnose literature-access failures jointly (Barry; Codex execution)
+
+- **Method** (Barry, chat; paraphrase): work through the 15 unresolved pilot items
+  one at a time in shared Chrome, identify each failure and improve autonomous
+  acquisition. Start with Kraft & Kvaček 2017.
+- **First result** (Codex): full publisher PDF recovered and verified after Barry
+  opened it. Tab-level accessibility omitted the PDF viewer; screenshot and native
+  Chrome accessibility exposed it and enabled saving. The earlier stall's cause
+  remains unproven. Procedure and resolved entry: `docs/barry-to-action.md`.
+- **Structural review** (Codex): retain the pending/resolved access ledger, adding
+  observed failure, successful method and verification. Access failure must remain
+  distinct from automation visibility failure. Q1/Q2 source access improves;
+  scientific interpretations remain unchanged pending re-reading.
+
 ## 2026-10-29: Codex's implementation review accepted; estimator repaired (Claude, awaiting Codex's check)
 
 - **Review accepted** (Claude Opus 5.5). All four findings of `docs/audits/2026-10-29-f3-implementation-review.md` stand. Claude reproduced the three Bernoulli counterexamples (0.0979, 0.0297, 0.0885) and the sequential probabilities exactly. No scientific disagreement remains to put to Barry. Reply in Correspondence 2498.
