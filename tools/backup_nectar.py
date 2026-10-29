@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Private retained project generations; run snapshot on mac-mini.
+"""Private retained project generations; run snapshot on mini.
 
 Adapted from BWBrook/eprp resources/tools/paleodata_backup.py at 995e1a2.
 """
@@ -704,7 +704,7 @@ def main():
     commands = parser.add_subparsers(dest="command", required=True)
     snap = commands.add_parser("snapshot")
     snap.add_argument("--source", type=Path, required=True)
-    snap.add_argument("--host", default="nectar-codex-ts")
+    snap.add_argument("--host", default="nectar")
     snap.add_argument("--root", type=Path, default=Path("/data/codex/silurian_plants/backups/mac-mini"))
     snap.add_argument("--stage", type=Path, default=Path("/private/tmp/silurian-plants-backup"))
     snap.add_argument("--reserve-gib", type=int, default=20)

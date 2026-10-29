@@ -1,12 +1,16 @@
 # Private Nectar backup
 
-The mac-mini checkout can be captured as a private, dated generation at
-`nectar-codex-ts:/data/codex/silurian_plants/backups/mac-mini/`. The payload includes
+The `mini` checkout can be captured as a private, dated generation at
+`nectar:/data/codex/silurian_plants/backups/mac-mini/`. The payload includes
 Git metadata, tracked and untracked work, and git-ignored data and literature. It does
 not change the separate EPRP paleodata mirror. Each successful run retains earlier
 generations and updates `latest` only after verification; no automatic pruning is used.
 
-From the project root on mac-mini, create a new generation with:
+The SSH destination is `nectar`. The existing `mac-mini` storage directory is
+kept unchanged so retained generations and their source-baseline checks stay together;
+it is a storage identifier, not an SSH alias.
+
+From the project root on `mini`, create a new generation with:
 
 ```sh
 python3 tools/backup_nectar.py snapshot --source "$PWD"
@@ -15,9 +19,9 @@ python3 tools/backup_nectar.py snapshot --source "$PWD"
 Run the offline integrity regression checks with `python3 tools/test_backup_nectar.py`.
 
 Barry approved daily incremental backups and weekly integrity scrubs on 29 October 2026.
-The Codex scheduled task runs the same command daily at 02:00 on the mac-mini's
+The Codex scheduled task runs the same command daily at 02:00 on `mini`'s
 local clock, notifying only on failures. Check Scheduled in the app for its current state. The
-mac-mini and desktop app must be running for an unattended task to start.
+mini and desktop app must be running for an unattended task to start.
 
 Daily runs compare the complete source inventory with the last successful capture,
 using file identity, size, modification/change times and permissions. New or changed
@@ -69,7 +73,7 @@ These checks are not a general classifier for every possible secret or database.
 Failed staging is retained for inspection. Local captures are under
 `/private/tmp/silurian-plants-backup/` and
 removed after a verified successful run; small receipts remain. The backup root is for
-the mac-mini producer only: all its invocations use one local lock, but another host
+the `mini` producer only: all its invocations use one local lock, but another host
 writing the same root would not be coordinated. Each run reserves enough free space
 for twice the full payload plus 20 GiB, even when an incremental run needs less.
 
@@ -78,9 +82,9 @@ verify it, then restore to a **new** directory. For example, replace `GENERATION
 the recorded generation name in these commands:
 
 ```sh
-ssh nectar-codex-ts python3 /data/codex/silurian_plants/backups/mac-mini/backup_nectar.py verify /data/codex/silurian_plants/backups/mac-mini/snapshots/GENERATION
-ssh nectar-codex-ts python3 /data/codex/silurian_plants/backups/mac-mini/backup_nectar.py restore /data/codex/silurian_plants/backups/mac-mini/snapshots/GENERATION /data/codex/silurian_plants/restores/GENERATION
-rsync -a nectar-codex-ts:/data/codex/silurian_plants/restores/GENERATION/ /path/to/new-local-directory/
+ssh nectar python3 /data/codex/silurian_plants/backups/mac-mini/backup_nectar.py verify /data/codex/silurian_plants/backups/mac-mini/snapshots/GENERATION
+ssh nectar python3 /data/codex/silurian_plants/backups/mac-mini/backup_nectar.py restore /data/codex/silurian_plants/backups/mac-mini/snapshots/GENERATION /data/codex/silurian_plants/restores/GENERATION
+rsync -a nectar:/data/codex/silurian_plants/restores/GENERATION/ /path/to/new-local-directory/
 ```
 
 The restore command refuses an existing target and reinstates the captured POSIX

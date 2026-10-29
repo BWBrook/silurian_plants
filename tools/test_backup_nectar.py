@@ -11,12 +11,23 @@ from pathlib import Path
 import shutil
 import stat
 import subprocess
+import sys
 import tempfile
 import unittest
 from types import SimpleNamespace
 from unittest.mock import patch
 
 import backup_nectar as backup
+
+
+class BackupCommandTests(unittest.TestCase):
+    def test_snapshot_uses_nectar_and_preserves_the_existing_backup_root(self):
+        argv = ["backup_nectar.py", "snapshot", "--source", "/tmp/source"]
+        with patch.object(sys, "argv", argv), patch.object(backup, "snapshot") as snapshot:
+            backup.main()
+        args = snapshot.call_args.args[0]
+        self.assertEqual(args.host, "nectar")
+        self.assertEqual(args.root, Path("/data/codex/silurian_plants/backups/mac-mini"))
 
 
 class BackupIntegrityTests(unittest.TestCase):

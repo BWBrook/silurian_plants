@@ -58,9 +58,10 @@ do not wait or poll for a reply from an unprompted collaborator.
     `nectar` alias; the Macs can mount `smb://nectar/share`.
   - **Rate limit.** Nectar rejects an address that opens six or more new SSH connections in 30 s.
     The `nectar` alias multiplexes, so never pass `-o ControlMaster=no` in loops.
-  - **Older names in existing records and scripts.** `deep-server`, `nectar-vm`, `nectar-codex-ts`
-    and similar names still resolve where nectar keeps them; `tools/backup_nectar.py` uses
-    `nectar-codex-ts` deliberately. Use the short names in new work.
+  - **Older names in existing records.** `deep-server`, `nectar-vm`, `nectar-codex-ts`
+    and similar names still resolve where nectar keeps them. `tools/backup_nectar.py` uses
+    `nectar`; its existing `backups/mac-mini` storage directory is unchanged. Use the short
+    machine names in operational commands.
 - `docs/audits/`: independent checks of cards and deposits.
 - `tools/cards.py`: card validation, DOI checking and index generation.
 
