@@ -7,17 +7,6 @@ provenance have been verified. A failed route does not establish that no copy ex
 
 ## Pending
 
-### Garratt & Rickards 1984 — Yea graptolite correlations (Q1, Q2)
-
-- Register ID: `garrattrickards1984`; DOI: `10.1144/pygs.44.4.377`.
-- Reopen: [UTAS library PDF route](https://libkey.io/libraries/729/articles/37016473/full-text-file?utm_source=api_3637&allow_speedbump=true)
-  or the [Lyell Collection article](https://www.lyellcollection.org/doi/10.1144/pygs.44.4.377).
-- Observed 2026-10-28: anonymous checks returned HTTP 403; the article page stalled
-  in Chrome before it loaded. The UTAS catalogue identifies the paper and offers a
-  PDF route; actual entitlement and successful download remain unverified.
-- Action: try the library PDF route, sign in if prompted, and save the complete
-  paper; if unavailable, decide whether to pursue a library request.
-
 ### Garratt et al. 1984 — Silurian Baragwanathia (Q1, Q2)
 
 - Register ID: `garratt1984`; DOI: `10.1111/j.1095-8339.1984.tb02566.x`.
@@ -167,3 +156,23 @@ provenance have been verified. A failed route does not establish that no copy ex
   for its PDF toolbar and Save dialog; verify the resulting local file. This
   removes a demonstrated automation obstacle, but does not establish the cause of
   yesterday's failure or prove that the initial PDF-opening step is automated.
+
+### Garratt & Rickards 1984 — recovered 2026-10-29 (Q1, Q2)
+
+- Route: [UTAS LibKey](https://libkey.io/libraries/729/articles/37016473/full-text-file?utm_source=api_3637&allow_speedbump=true)
+  redirected to the UTAS EZproxy Lyell reader for `10.1144/pygs.44.4.377`.
+- Observed: an initial **Reader environment loading** screen subsequently completed,
+  with no further sign-in observed. Barry reported it ready; Codex then found the
+  correct eight-page reader and used its **Download PDF** link successfully.
+  No access failure was reproduced. The cause of the 2026-10-28 stall is unproven.
+- Download saved automatically in Downloads, then was copied under the verified
+  name `library/closed/garrattrickards1984.pdf`. The publisher's filename includes
+  `2022`, but the article header, pagination and metadata identify February 1984.
+- Verified: eight non-empty text pages, correct title/authors, printed pages
+  377–384; file size and SHA-256 in `library/closed.tsv`. Scientific re-reading
+  remains pending.
+- Procedure: give library/proxy readers a bounded loading period, checking the
+  eventual URL and rendered state before classifying access. A single loading
+  screenshot is an intermediate state, not a demonstrated blocker. Check download
+  completion and destination; prefer direct library saves when a Save dialog is
+  offered, and use Downloads as staging when download is automatic.

@@ -39,3 +39,7 @@ Kraft & Kvaček 2017 is now held in full (`library/closed/kraft2017.pdf`, proven
 in `library/closed.tsv`). The earlier access obstacle is resolved through a joint
 Chrome diagnosis; its scientific reading and the affected Baragwanathia claims
 remain pending. No question or age interpretation changes on acquisition alone.
+
+Garratt & Rickards 1984 is also now held in full (`library/closed/garrattrickards1984.pdf`,
+provenance in `library/closed.tsv`). The UTAS-proxied reader completed loading and
+downloaded successfully. The Yea age reading remains pending source re-check.

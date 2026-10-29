@@ -12,6 +12,12 @@ Barry exactly (with source) or label a paraphrase.
   opened it. Tab-level accessibility omitted the PDF viewer; screenshot and native
   Chrome accessibility exposed it and enabled saving. The earlier stall's cause
   remains unproven. Procedure and resolved entry: `docs/barry-to-action.md`.
+- **Second result** (Codex): Garratt & Rickards 1984 recovered through LibKey and
+  the UTAS-proxied Lyell reader. Its initial loading screen completed; download
+  and eight-page verification succeeded. Allow a bounded loading period and
+  recheck before classifying a proxy-reader failure. The automatic download
+  needed Downloads staging; title/year verification caught a misleading `2022`
+  filename. Neither earlier failure has yet been reproduced.
 - **Structural review** (Codex): retain the pending/resolved access ledger, adding
   observed failure, successful method and verification. Access failure must remain
   distinct from automation visibility failure. Q1/Q2 source access improves;
