@@ -42,12 +42,25 @@ do not wait or poll for a reply from an unprompted collaborator.
   verified facts. Read each area's README before use, and regenerate tables with its scripts
   rather than editing them. `data/eprp/local/` is git-ignored (unlicensed, no-derivatives or bulky
   material) and exists only on mac-mini; rebuild it with the scripts.
-- **Compute and mirrors (from 2026-10-28).** `deep-server` and `wsl-laptop` are unavailable over
-  Tailscale (campus block; Barry, 2026-10-28). For EPRP data files, use
-  `nectar-codex-ts:/data/codex/artifacts/eprp-paleodata-backup/latest/<id>/` as the canonical mirror
-  until Barry says otherwise. Check the currency and integrity of the particular data used.
-  `nectar-vm` runs at `c3.large` (8 vCPU, 16 GiB) for this work; project payloads go under
-  `/data/codex/silurian_plants/` there.
+- **Compute and mirrors (from 2026-10-29).** UTAS blocks Tailscale on campus and its VPN, so
+  machine names and routes follow nectar's `docs/workflows/cross-machine-access.md`; pull nectar
+  before remote work. Use the short names (`mini`, `macbook`, `nectar`, `deep`, `wsl`, `alien`).
+  - **Work started on the Macs** runs locally on `mini` when moderate, and otherwise on `nectar`
+    (user `codex`). `nectar` stands at `c3.large` (8 vCPU, 16 GiB); resize it with nectar's
+    `scripts/nectar/resize.sh` for a heavy job and return it afterwards. Project payloads go under
+    `nectar:/data/codex/silurian_plants/`.
+  - **No route from the Macs to `deep` or `wsl`** (Barry's choice). Heavy work started on `wsl`
+    goes to `deep`. Build no reverse tunnels.
+  - **EPRP mirror.** For EPRP data files, use
+    `nectar:/data/codex/artifacts/eprp-paleodata-backup/latest/<id>/` as the canonical mirror until
+    Barry says otherwise. Check the currency and integrity of the particular data used.
+  - **Shared working files** go to `nectar:/data/share/silurian_plants/`, by `rsync` over the
+    `nectar` alias; the Macs can mount `smb://nectar/share`.
+  - **Rate limit.** Nectar rejects an address that opens six or more new SSH connections in 30 s.
+    The `nectar` alias multiplexes, so never pass `-o ControlMaster=no` in loops.
+  - **Older names in existing records and scripts.** `deep-server`, `nectar-vm`, `nectar-codex-ts`
+    and similar names still resolve where nectar keeps them; `tools/backup_nectar.py` uses
+    `nectar-codex-ts` deliberately. Use the short names in new work.
 - `docs/audits/`: independent checks of cards and deposits.
 - `tools/cards.py`: card validation, DOI checking and index generation.
 
