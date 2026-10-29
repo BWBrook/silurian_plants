@@ -1,7 +1,8 @@
 # Literature batch — proposal and Stage A outcome, 29 October 2026
 
-**Stage A authorised and completed as an access attempt:** five of six papers plus
-one supplement acquired; Liu 2016 remains a fresh challenge/delivery blocker.
+**Stage A complete:** all six papers plus one supplement acquired. Five papers
+were collected autonomously; Barry downloaded Liu 2016 immediately through the
+in-app browser after the automated Chrome route stalled.
 See `docs/audits/2026-10-29-six-paper-batch.md`. Stage B remains a proposal.
 
 **Original recommendation:** first collect six priority-one recent Elsevier papers through
@@ -47,8 +48,8 @@ identities and are relevant to Q1/Q2 or the spore compilation. Today's Paris 201
 request-only result in the same journal shows why access must still be checked
 per paper; there is no assumed publisher-wide or date-wide entitlement.
 
-After the authorised Stage A attempt, the CSV has **457 needed, 21 local-copy-held
-and 14 open-copy-held**. The files, versions and sole blocker are in the batch audit
+After Stage A and Barry's Liu follow-up, the CSV has **456 needed, 22 local-copy-held
+and 14 open-copy-held**. The files, versions and resolved access history are in the batch audit
 and `library/closed.tsv`. The table above preserves the evidence before collection.
 
 ## Stage B: two public author-copy candidates

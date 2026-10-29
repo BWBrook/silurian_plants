@@ -44,6 +44,18 @@ Barry exactly (with source) or label a paraphrase.
   contract; the scientific question and Q9's parked status do not change. The next owned
   tranches are Claude's methodological response and targeted recovery of complete sample logs.
 
+## 2026-10-29: Liu follow-up completes Stage A (Barry; Codex verification)
+
+- Barry reported immediate click-through in Codex's in-app browser and downloaded
+  Liu 2016. Codex verified and archived the original 15-page publisher PDF,
+  printed pages 146–160, at `library/closed/liu2016.pdf`; manifest and batch receipt
+  record identity, access route, bytes and SHA-256. The action ledger is clear.
+- **Structural review**: Stage A is now six of six full texts plus one supplement,
+  with five papers collected autonomously and Liu supplied by Barry. A bounded
+  in-app browser attempt is a useful alternative when an entitled Chrome PDF
+  stalls. The earlier failure's cause is unproven. Q1/Q2 scientific readings remain
+  pending; acquisition changes no occurrence or age adjudication.
+
 ## 2026-10-29: execute the six-paper institutional batch (Barry; Codex execution)
 
 - **Authority** (Barry, chat; paraphrase): refresh global and Nectar access

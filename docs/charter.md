@@ -119,10 +119,10 @@ data archived, and the human–AI correspondence record published alongside.
   file verification; bounded `gpt-5.6-luna` executor/scout delegates checked public
   repository routes and connectivity. `docs/audits/2026-10-29-literature-recovery.md`
   records the roles, versions and remaining blockers.
-  A further authorised six-paper batch secured five full texts and one supplementary
-  document; two bounded `gpt-5.6-luna` delegates checked metadata and local file QA.
-  `docs/audits/2026-10-29-six-paper-batch.md` records versions, checks and the sole
-  remaining access blocker; no scientific extraction was performed in this tranche.
+  A further authorised six-paper batch secured six full texts and one supplementary
+  document (Barry supplied Liu 2016 via the in-app browser; Codex verified it); two bounded `gpt-5.6-luna` delegates checked metadata and local file QA.
+  `docs/audits/2026-10-29-six-paper-batch.md` records versions, checks and the resolved
+  access history; no scientific extraction was performed in this tranche.
   From 2026-10-28, a direct scientific and repository collaborator at Barry's request:
   methodological review of the F3 reshape, independent checks of recovery outputs and
   calibration provenance, and direct discussion with Claude through the private Correspondence

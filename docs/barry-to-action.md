@@ -7,24 +7,30 @@ provenance have been verified. A failed route does not establish that no copy ex
 
 ## Active access actions
 
-### Liu et al. 2016 — PDF challenge/delivery stall (`al2016e`; Q1/Q2, MVD-B)
-
-- DOI: `10.1016/j.revpalbo.2016.02.003`; RPP 233, 146–160.
-- [Reopen the UTAS article in Chrome](https://www-sciencedirect-com.ezproxy.utas.edu.au/science/article/pii/S0034666715300142).
-  The article displays **Full text access**, but its PDF stalled; LibKey also
-  stalled. The subsequent download produced PDF-challenge HTML rather than a PDF.
-- Barry to action when convenient: open **View PDF**, observe/complete any site
-  verification personally, and try the normal PDF download. Save as
-  `library/closed/liu2016.pdf`, then verify all 15 pages and register provenance.
-- No PDF acquired; remains `needed`. No challenge bypass attempted. Work tabs
-  closed. Exclude repeat automated attempts until this route has been diagnosed.
-- Evidence: `docs/audits/2026-10-29-six-paper-batch.md`.
+No active human-action items. Liu 2016 was resolved on 29 October 2026.
 
 The ten earlier request candidates remain parked in
 [`docs/literature-requests.md`](literature-requests.md), separately from this fresh
 access action. No request has been submitted.
 
 ## Resolved through diagnosis and follow-up
+
+### Liu et al. 2016 — recovered 2026-10-29 (`al2016e`; Q1/Q2, MVD-B)
+
+- DOI `10.1016/j.revpalbo.2016.02.003`; RPP 233, 146–160.
+- Earlier automated Chrome attempt showed **Full text access** but its PDF/LibKey
+  routes stalled and the download yielded PDF-challenge HTML.
+- Barry then opened the same paper immediately in Codex's in-app browser and
+  saved its original publisher PDF to Downloads. This establishes a working
+  route and successful entitlement; the cause of the earlier stall is unproven.
+- Archived as `library/closed/liu2016.pdf`; title/DOI, all 15 nonempty text pages,
+  printed endpoints 146–160, PDF structure and first/last renders checked. Bytes,
+  SHA-256 and browser provenance are in `library/closed.tsv`. Downloads duplicate
+  moved to the recoverable Bin after archive/hash verification; PDF tab closed.
+- Workflow lesson: try the in-app browser as a bounded alternative when an
+  entitled ScienceDirect PDF stalls in Chrome. An automation delivery failure
+  does not establish that the paper is unavailable. No scientific reading changed.
+
 
 ### Kraft & Kvaček 2017 — recovered 2026-10-29 (Q1, Q2)
 

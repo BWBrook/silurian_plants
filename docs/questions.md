@@ -58,8 +58,8 @@ twenty-paper pilot, twelve full texts are now held and eight remain pending;
 
 On Barry's instruction, request candidates were parked separately on 29 October
 2026 (`docs/literature-requests.md`). The subsequent authorised six-paper Stage A
-in `docs/literature-next-batch.md` secured five full texts and Wang 2023's supplement;
-Liu 2016 remains a fresh PDF challenge/delivery blocker. Versions, verification
+in `docs/literature-next-batch.md` secured all six full texts and Wang 2023's supplement,
+after Barry resolved Liu 2016 through an immediate in-app browser download. Versions, verification
 and the Iranian paper's corrected publication year (2021) are recorded in
 `docs/audits/2026-10-29-six-paper-batch.md`. Q1/Q2 and spore synthesis readings are
 pending; Stage B's two public author-copy candidates remain proposed. Existing one-page

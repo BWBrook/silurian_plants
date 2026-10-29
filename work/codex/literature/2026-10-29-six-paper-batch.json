@@ -77,14 +77,20 @@
       "sha256": "b53c3b10dee6260760852d9910d47c07298864d6168da34f6a2fea4bfe6dfa19",
       "version": "publisher supplementary DOCX",
       "source_url": "https://ars.els-cdn.com/content/image/1-s2.0-S1367912023002304-mmc1.docx"
-    }
-  ],
-  "unresolved": [
+    },
     {
       "id": "al2016e",
+      "file": "closed/liu2016.pdf",
       "doi": "10.1016/j.revpalbo.2016.02.003",
-      "reason": "Full text access displayed; PDF route stalled, LibKey resolver stalled, publisher downloadMedia timed out. No file acquired; tab closed; needs manual Chrome diagnostic.",
-      "route": "https://www-sciencedirect-com.ezproxy.utas.edu.au/science/article/pii/S0034666715300142"
+      "pages": 15,
+      "printed_pages": "146-160",
+      "bytes": 2349291,
+      "sha256": "ed16a96616ee87cbd8ae189b1b14daaee49f80719d7066d1c1949d740e3582bd",
+      "version": "publisher PDF",
+      "nonempty_text_pages": 15,
+      "source_url": "https://www-sciencedirect-com.ezproxy.utas.edu.au/science/article/pii/S0034666715300142",
+      "supplement_check": "Earlier authenticated article-link check identified no separate supplement; complete PDF contains no supplementary-material reference",
+      "acquisition": "Barry downloaded in Codex in-app browser and reported immediate click-through, 2026-10-29; parent verified local file"
     }
   ],
   "metadata": {
@@ -259,7 +265,7 @@
       }
     ]
   },
-  "verification": "Parent hashes, DOI and all-page text checks; independent delegate PDF structure, first/last renders and DOCX XML inspection; parent inspected rendered contact sheets",
+  "verification": "Parent hashes, DOI and all-page text checks; independent delegate PDF structure, first/last renders and DOCX XML inspection; parent inspected rendered contact sheets; Liu follow-up checked by parent: qpdf passes without warnings, DOI/title/printed endpoints, 15 nonempty text pages, first/last renders and SHA-256",
   "minor_warnings": [
     "Wang 2026 linearisation hint-table length mismatch; renders and extracts correctly",
     "Ghavidel-Syooki 2021 outlines-table offset warning; renders and extracts correctly",
@@ -280,5 +286,23 @@
     "bin": "/Users/bwbrook/.Trash/silurian-literature-20261029-batch/pdfft.html",
     "status": "moved to recoverable Bin; hash verified",
     "identity": "Elsevier PDF challenge HTML for S0034666715300142; not a PDF"
+  },
+  "resolved_access_history": [
+    {
+      "id": "al2016e",
+      "doi": "10.1016/j.revpalbo.2016.02.003",
+      "reason": "Full text access displayed; PDF route stalled, LibKey resolver stalled, publisher downloadMedia timed out. No file acquired; tab closed; needs manual Chrome diagnostic.",
+      "route": "https://www-sciencedirect-com.ezproxy.utas.edu.au/science/article/pii/S0034666715300142",
+      "resolution": "2026-10-29: Barry opened and downloaded immediately in Codex in-app browser. Full 15-page original publisher PDF verified and archived. Earlier automation failure does not establish an entitlement problem or the exact cause of the stall."
+    }
+  ],
+  "unresolved": [],
+  "liu_downloads_cleanup": {
+    "source": "/Users/bwbrook/Downloads/1-s2.0-S0034666715300142-main.pdf",
+    "archive": "/Users/bwbrook/papers/silurian_plants/library/closed/liu2016.pdf",
+    "bin": "/Users/bwbrook/.Trash/silurian-literature-20261029-batch/1-s2.0-S0034666715300142-main.pdf",
+    "bytes": 2349291,
+    "sha256": "ed16a96616ee87cbd8ae189b1b14daaee49f80719d7066d1c1949d740e3582bd",
+    "status": "moved to recoverable Bin; source/archive/post-move hashes verified"
   }
 }
