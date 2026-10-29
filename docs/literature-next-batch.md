@@ -197,3 +197,10 @@ literature. The remaining three Barry-action cases are Breuer's ResearchGate
 security check, Bulls Head's JSTOR verification and Pertica's explicit JSTOR terms
 step. Targeted public-copy searches for older backfiles remain the next automated
 lane. The native-follow-up audit and receipt record the final holdings and checks.
+
+Final feasibility inventory: 27 priority-one rows remain eligible after 16 known
+parked/action/archive-gap exclusions. Five focused searches produced no further
+verified full-article PDF; two targets proved to be conference abstracts. The
+corrected inventory and source-kind caveats are in the native-follow-up audit.
+Further collection remains authorised, but these leads require specific catalogue
+or access diagnosis rather than a blind repeat of completed publisher routes.

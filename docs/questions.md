@@ -102,3 +102,10 @@ corresponding Q1/Q2 source readings available. The earlier save blockers are
 resolved; neither the new files nor their technical verification changes a
 scientific interpretation. Use the rendered content of image-only plates rather
 than treating an empty extracted-text page as missing evidence.
+
+For Q5, final catalogue reconciliation found two target DOIs that publish only
+one-page conference abstracts (Sweden phytoplankton and Cedarberg plant remains).
+Their “full-text gap” needs source-kind/target reconciliation; no longer research
+article was identified for those DOIs. The priority-one inventory keeps those
+cases, DOI aliases and unsearched leads explicit without inflating recovered
+full-article counts or declaring sources unobtainable.

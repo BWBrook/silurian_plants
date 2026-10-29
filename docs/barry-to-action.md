@@ -14,13 +14,15 @@ the desktop. No tabs are held open. Liu 2016 remains resolved.
 | Work | Observed blocker | Reopen route |
 |---|---|---|
 | Breuer et al. 2007 (`al2007c`), Saudi Devonian miospores | Public full-text record exposed a download, but the download stalled and a subsequent in-app visit presented a security check. No challenge was solved; access has not been disproved. | [ResearchGate author copy](https://www.researchgate.net/publication/233499781_Early_to_Middle_Devonian_miospores_from_northern_Saudi_Arabia) |
-| Higgs et al. 2014 (`al2014c`), Bulls Head Formation | In-app JSTOR displayed browser verification; Chrome fallback inspection timed out. No PDF acquired and entitlement remains unestablished. | [JSTOR record](https://www.jstor.org/stable/10.3318/ijes.2014.32.55) |
+| K.T. Higgs et al. (2014), An early Devonian age for the Bulls Head Formation, Lower Old Red Sandstone, Dingle Peninsula (`al2014c`) | In-app JSTOR displayed browser verification; Chrome fallback inspection timed out. No PDF acquired and entitlement remains unestablished. | [JSTOR record](https://www.jstor.org/stable/10.3318/ijes.2014.32.55) |
 
 The detailed autonomous audit records resolved reader/save failures and version qualifications. The metadata-only Mahmoudi DOI check remains unresolved; it does not require Barry to obtain the already-held paper.
 
 ### Kasper & Andrews 1972 — Pertica
 
-`kasper1972`, DOI 10.1002/j.1537-2197.1972.tb10165.x. Wiley's UTAS PDF route returned
+Kasper AE, Andrews HN (1972). Pertica, a new genus of Devonian plants from northern Maine. American Journal of Botany 59: 897–911. DOI 10.1002/j.1537-2197.1972.tb10165.x.
+
+`kasper1972`: Wiley's UTAS PDF route returned
 access/purchase options. The exact alternative [JSTOR record through UTAS](https://www-jstor-org.ezproxy.utas.edu.au/stable/2441116)
 was verified against title, authors and pages 897–911. The in-app reader/download
 menu was incomplete, but the subsequent Chrome route confirmed **Access provided

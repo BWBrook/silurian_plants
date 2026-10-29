@@ -1,0 +1,79 @@
+{
+  "generated": "2026-10-29",
+  "scope": "Read-only final-feasibility reconnaissance; no browser downloads and no tracked edits.",
+  "counts": {
+    "csv_total_rows": 492,
+    "csv_needed_rows": 348,
+    "priority1_needed_rows": 43,
+    "excluded_priority1_rows": 16,
+    "eligible_priority1_rows": 27,
+    "eligible_unique_nonblank_dois": 14
+  },
+  "excluded_ids": {
+    "parked_or_known_archive_gap": ["al2015f","al2023b","al2007d","al1996","al2011n","al2008f","cesari2019","mehlqvist2013","garratt1978","al2012g","careybolger1995","hemsley1990","white1983","chinnock1975","lovis1987","al2008e","alruwaili2007","kermandji2007","vecoli2009","al2007e","kasper1974"],
+    "latest_action_ledger": ["al2007c","al2014c","kasper1972"]
+  },
+  "lane_counts": {
+    "Ameghiniana": 1,
+    "BioOne": 1,
+    "Cambridge": 2,
+    "Estonian Academy": 2,
+    "JSTOR": 1,
+    "Palaeontographica": 1,
+    "no-DOI/metadata lead": 10,
+    "publisher DOI": 5,
+    "repository/author copy": 2,
+    "society/publisher": 2
+  },
+  "inventory": [
+    {"id":"abuhmida2011","lane":"no-DOI/metadata lead","source_kind":"metadata-only/no route"},
+    {"id":"al2008b","lane":"no-DOI/metadata lead","source_kind":"HAL/CNRS repository lead; no URL in CSV"},
+    {"id":"al2014e","lane":"no-DOI/metadata lead","source_kind":"metadata-only/no route"},
+    {"id":"al2014f","lane":"no-DOI/metadata lead","source_kind":"metadata-only/no route"},
+    {"id":"al2016g","lane":"no-DOI/metadata lead","source_kind":"metadata-only/no route"},
+    {"id":"al2016h","doi":"10.1139/cjes-2015-0226","lane":"publisher DOI","source_kind":"NRC/GeoScienceWorld landing page"},
+    {"id":"al2018f","doi":"10.1130/abs/2018am-321530","lane":"society/publisher","source_kind":"GSA abstract DOI"},
+    {"id":"andrews1968","doi":"10.2307/2483801","lane":"JSTOR","source_kind":"JSTOR record"},
+    {"id":"ausich2007","doi":"10.1139/e06-100","lane":"publisher DOI","source_kind":"NRC/GeoScienceWorld landing page"},
+    {"id":"boyce2008","doi":"10.1666/0094-8373(2008)034[0179:hgwcti]2.0.co;2","lane":"Cambridge","source_kind":"publisher DOI landing page"},
+    {"id":"granoff1976","lane":"Palaeontographica","source_kind":"Schweizerbart publisher listing; scan not checked"},
+    {"id":"muro2011","doi":"10.5710/amgh.v48i4(491)","lane":"Ameghiniana","source_kind":"publisher DOI landing page"},
+    {"id":"ruiqiang2011","lane":"no-DOI/metadata lead","source_kind":"regional journal; no route"},
+    {"id":"steemans2008","lane":"repository/author copy","source_kind":"University of Liège repository lead; no URL in CSV"},
+    {"id":"steemans2009","lane":"no-DOI/metadata lead","source_kind":"metadata-only/no route"},
+    {"id":"strother2017","doi":"10.1130/abs/2017ne-291004","lane":"society/publisher","source_kind":"GSA abstract DOI"},
+    {"id":"tiezeng2011","lane":"no-DOI/metadata lead","source_kind":"regional journal; no route"},
+    {"id":"w2340029582-fulltext","lane":"repository/author copy","source_kind":"ORBi direct PDF is an incomplete abstract/landing copy"},
+    {"id":"w4380485474-fulltext","doi":"10.3176/earth.2023.42","lane":"Estonian Academy","source_kind":"open publisher abstract copy only"},
+    {"id":"w4380485495-fulltext","doi":"10.3176/earth.2023.03","lane":"Estonian Academy","source_kind":"open publisher abstract copy only"},
+    {"id":"andrews1958","doi":"10.54991/jop.1958.573","lane":"publisher DOI","source_kind":"SAGE/Birbal Sahni route; publisher PDF bot-blocked in prior check"},
+    {"id":"bonacorsi2021","doi":"10.1086/712356","lane":"publisher DOI","source_kind":"Chicago publisher landing page"},
+    {"id":"leslie2022","doi":"10.1017/pab.2021.44","lane":"Cambridge","source_kind":"publisher DOI landing page"},
+    {"id":"johnson2008","doi":"10.1007/s10265-008-0187-3","lane":"publisher DOI","source_kind":"Springer landing page"},
+    {"id":"whittier2005","doi":"10.1640/0002-8444(2005)95[153:TYGOLL]2.0.CO;2","lane":"BioOne","source_kind":"publisher DOI landing page"},
+    {"id":"bruchmann1898","lane":"no-DOI/metadata lead","source_kind":"print/metadata only"},
+    {"id":"balme1961","lane":"no-DOI/metadata lead","source_kind":"official GA catalogue; scan not exposed in prior bounded check"}
+  ],
+  "focused_searches": [
+    {"id":"w4380485495-fulltext","url":"https://kirj.ee/wp-content/plugins/kirj/pub/earth-1-2023-164_20230613111610.pdf","finding":"Public Estonian Academy PDF is a one-page conference abstract (page 164), CC BY; not the required full article."},
+    {"id":"w4380485474-fulltext","url":"https://kirj.ee/wp-content/plugins/kirj/pub/earth-1-2023-158_20230613085837.pdf","finding":"Public Estonian Academy PDF is a one-page conference abstract (page 158), CC BY; not the required full article."},
+    {"id":"muro2011","url":"https://ameghiniana.org.ar/index.php/ameghiniana","finding":"Exact DOI/paper not surfaced as a downloadable public PDF; publisher route remains a concrete next check."},
+    {"id":"andrews1968","url":"https://www.jstor.org/stable/2483801","finding":"JSTOR record confirmed, but no verified public PDF URL exposed."},
+    {"id":"ausich2007","doi":"10.1139/e06-100","url":"https://pubs.geoscienceworld.org/csp/cjes/article-abstract/44/1/1/53996/Late-Ordovician-Early-Silurian-cryptospore","finding":"Verified identity: this result is Richardson & Ausich, 'Late Ordovician - Early Silurian cryptospore occurrences on Anticosti Island', DOI 10.1139/e06-100; publisher page reports Available to Purchase and no public full-text PDF surfaced."}
+  ],
+  "sourcefinding_corrections": [
+    {"id":"al2016h","doi":"10.1139/cjes-2015-0226","correction":"The Anticosti result was not this CSV row. Schröer et al. (2016), 'A Late Ordovician age for the Whirlpool and Power Glen formations, New York', remains unsearched in this pass; no route or entitlement finding is assigned."}
+  ],
+  "identity_checks": [
+    {"id":"w4380485474-fulltext","doi":"10.3176/earth.2023.42","expected_title":"Middle–Late Ordovician organic-walled phytoplankton from Sweden: diversity and early radiation","pdf_url":"https://kirj.ee/wp-content/plugins/kirj/pub/earth-1-2023-158_20230613085837.pdf","observed_header":"Middle–Late Ordovician organic-walled phytoplankton from Sweden: diversity and early radiation; DOI 10.3176/earth.2023.42; Estonian Journal of Earth Sciences 2023, 72(1), 158","match":true,"qualification":"Primary PDF header matches the CSV DOI/title pair; it is a one-page conference abstract, not the required full article."},
+    {"id":"w4380485495-fulltext","doi":"10.3176/earth.2023.03","expected_title":"Early land plant remains from the uppermost Ordovician–?lowermost Silurian Cedarberg Formation of South Africa","pdf_url":"https://kirj.ee/wp-content/plugins/kirj/pub/earth-1-2023-164_20230613111610.pdf","observed_header":"Early land plant remains from the uppermost Ordovician–?lowermost Silurian Cedarberg Formation of South Africa; DOI 10.3176/earth.2023.03; Estonian Journal of Earth Sciences 2023, 72(1), 164","match":true,"qualification":"Primary PDF header matches the CSV DOI/title pair; it is a one-page conference abstract, not the required full article."}
+  ],
+  "next_unsearched_public_route_leads": [
+    {"id":"al2008b","route":"HAL/CNRS repository lead; exact title search needed"},
+    {"id":"steemans2008","route":"University of Liège repository lead; exact title search needed"},
+    {"id":"granoff1976","route":"Schweizerbart/Palaeontographica listing; public scan not checked"},
+    {"id":"al2014e","route":"No DOI/route; exact title-author search needed"},
+    {"id":"al2014f","route":"No DOI/route; exact title-author search needed"}
+  ],
+  "conclusion":"No strong public full-text URL was verified in the five focused searches. The two Estonian DOI/title/PDF pairs are exact but expose only one-page abstracts, not full articles. The Anticosti publisher finding belongs to ausich2007; al2016h (Schröer et al., Whirlpool/Power Glen) was not searched and has no entitlement finding. The next-route leads are not claims of unavailability."
+}

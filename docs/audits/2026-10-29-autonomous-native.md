@@ -34,3 +34,9 @@ The existing CSV, asset manifest and separate action/request ledgers remain suff
 | al2012e | al2012e_oup.pdf | 27 |
 | edwards1980 | edwards1980_elsevier.pdf | 12 |
 | mark2011 | mark2011_elsevier.pdf | 15 |
+
+## Final feasibility and register checks
+
+The remaining CSV was reconciled after acquisition: 43 priority-one rows remain needed. Sixteen are already in the parked/action/archive-gap categories; 27 remain eligible for further work, representing 14 unique nonblank DOIs plus metadata-only entries. Five focused public searches did not verify another full-article download. Two Estonian Academy targets are complete one-page conference abstracts, not truncated full research articles. Their target/source-kind mapping needs reconciliation; they were not counted as newly recovered main texts. Other unsearched leads remain opportunities, not declarations of unavailability. The corrected inventory is `work/codex/literature/2026-10-29-autonomous-remaining-priority1.json`; an initially misassigned Anticosti route was corrected to Richardson & Ausich 2007 before preservation.
+
+The required repository DOI check examined 731 distinct strings and flagged 28: 20 known closing-backtick capture errors and 8 newly added ledger entries lacking full citation context. The 8 new contexts were corrected; the same checker then verified all 8 with zero flags. Existing scanner-formatting issues were left outside this acquisition scope. Diagnostics and the scoped-check method are preserved in `work/codex/literature/2026-10-29-autonomous-final-checks.json`. The final asset reconciliation verified 144 unique archive paths against recorded bytes/SHA-256 and Git ignore status, with 492 unique CSV row IDs. Across the three checkpoints, 100 verified Downloads staging duplicates were moved to recoverable Bin folders, never purged.

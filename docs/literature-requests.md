@@ -171,14 +171,14 @@ claims that the works are unobtainable. No request was submitted. The original t
 parked cases remain untouched. Kasper 1972 has a distinct JSTOR follow-up in the
 Barry action ledger and is not included in this table.
 
-| CSV ID | DOI | Observed 29 October 2026 |
+| CSV ID | Verified citation and DOI | Observed 29 October 2026 |
 |---|---|---|
-| `al2008e` | 10.1016/j.geobios.2007.06.003 | UTAS ScienceDirect preview/access options; ORBi publisher-postprint entry and ResearchGate require a copy request |
-| `alruwaili2007` | 10.1016/j.revmic.2007.01.002 | UTAS ScienceDirect preview/access options; ResearchGate request-only and EM-consulte subscription route |
-| `kermandji2007` | 10.1016/j.revmic.2007.01.003 | UTAS ScienceDirect preview/access options; public alternatives not exhausted |
-| `vecoli2009` | 10.1016/j.palaeo.2009.08.001 | UTAS ScienceDirect preview/access options; public alternatives not exhausted |
-| `al2007e` | 10.1016/j.palaeo.2007.03.009 | UTAS ScienceDirect preview/access options; public alternatives not exhausted |
-| `kasper1974` | 10.1002/j.1537-2197.1974.tb12253.x | UTAS Wiley PDF route returned access/purchase options; focused public search found citations but no full text |
+| `al2008e` | Philippe Steemans, Claudia Rubinstein, José Henrique G. de Melo (2008). Siluro-Devonian miospore biostratigraphy of the Urubu River area, western Amazon Basin, northern Brazil. Geobios 41: 263-282. DOI 10.1016/j.geobios.2007.06.003 | UTAS ScienceDirect preview/access options; ORBi publisher-postprint entry and ResearchGate require a copy request |
+| `alruwaili2007` | Merrell A. Miller, Mansour H. Al-Ruwaili (2007). Preliminary palynological investigation of Saudi Arabian Upper Ordovician glacial sediments. Revue de Micropaléontologie 50: 17-26. DOI 10.1016/j.revmic.2007.01.002 | UTAS ScienceDirect preview/access options; ResearchGate request-only and EM-consulte subscription route |
+| `kermandji2007` | Adnan M. Hassan Kermandji (2007). Silurian–Devonian miospores from the western and central Algeria. Revue de Micropaléontologie 50: 109-128. DOI 10.1016/j.revmic.2007.01.003 | UTAS ScienceDirect preview/access options; public alternatives not exhausted |
+| `vecoli2009` | Amalia Spina, Marco Vecoli (2009). Palynostratigraphy and vegetational changes in the Siluro-Devonian of the Ghadamis Basin, North Africa. Palaeogeography, Palaeoclimatology, Palaeoecology 282: 1-18. DOI 10.1016/j.palaeo.2009.08.001 | UTAS ScienceDirect preview/access options; public alternatives not exhausted |
+| `al2007e` | Philippe Steemans, Charles H. Wellman, John Filatoff (2007). Palaeophytogeographical and palaeoecological implications of a miospore assemblage of earliest Devonian (Lochkovian) age from Saudi Arabia. Palaeogeography, Palaeoclimatology, Palaeoecology 250: 237-254. DOI 10.1016/j.palaeo.2007.03.009 | UTAS ScienceDirect preview/access options; public alternatives not exhausted |
+| `kasper1974` | Andrew E. Kasper, Henry N. Andrews, William H. Forbes (1974). NEW FERTILE SPECIES OF PSILOPHYTON FROM THE DEVONIAN OF MAINE. American Journal of Botany 61: 339-359. DOI 10.1002/j.1537-2197.1974.tb12253.x | UTAS Wiley PDF route returned access/purchase options; focused public search found citations but no full text |
 
 The 2011 Ghelli paper (`al2011j`) also returned a UTAS preview, but the follow-up
 found and verified its public Caltech author copy. It is held and is not a request
