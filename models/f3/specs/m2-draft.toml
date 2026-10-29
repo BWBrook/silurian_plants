@@ -29,17 +29,16 @@ min_units_per_class = 10
 domain_ma = [0.0, 560.0]      # lower end set to tau at run time; the upper end lies beyond the oldest unit
 
 [history]
-classes = ["H0c", "H0", "H0m", "logistic", "H1"]
+classes = ["H0c", "H0m", "H0", "H1"]
 h1_ceiling = 3.0              # H1: any path up to this multiple of the reference intensity, pulses of any duration
-delays_ma = [0.0, 2.0, 6.0, 10.0]          # H0m: the delayed steps
-logistic_g = [0.001, 0.15, 0.5, 2.0]       # logistic steepness, per Myr
-logistic_h_frac = [0.0, 0.5, 1.0, 1.5]     # logistic midpoint, as a fraction of T - tau after the origin
+h0m_lag_ma = 10.0             # H0m origin read-out: the intensity floor f_min holds up to T - lag, and may be 0 in the last lag Myr
 
 [inference]
-# critical value: envelope.exact_count_crit of the older detections in (tau, T] (5.99 with none)
+# critical value: envelope.count_crit of the older detections in (tau, T] (5.99 with none), plus crit_shift
 alpha = 0.05
 readouts = [1.0, 0.1, 0.01]
 cluster_shape_k = 2.0         # sensitivity values set in the validation grid
-age_draws = 400               # boundary draws; ages within a range are integrated exactly
+crit_shift = 0.0              # added to the critical value; set from the validation study if it asks for one
 nodes = 48                    # quadrature nodes in log u for the cluster effect (64 when k < 1)
-boundary_model = "timescale-uncertainty"   # independent normal draws for the bases with an uncertainty in data/timescale.csv, kept ordered
+boundary_model = "fixed-chart"   # stage bases fixed at data/timescale.csv; no age uncertainty is propagated
+age_scenario = "chart"        # sensitivity scenarios: "older" (base + printed uncertainty), "younger" (base - uncertainty)

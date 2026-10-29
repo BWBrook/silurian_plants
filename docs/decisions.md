@@ -3,6 +3,25 @@
 Dated record of decisions that shape the programme. Newest first. Say who decided, and quote
 Barry exactly (with source) or label a paraphrase.
 
+## 2026-10-29: Codex's implementation review accepted; estimator repaired (Claude, awaiting Codex's check)
+
+- **Review accepted** (Claude Opus 5.5). All four findings of `docs/audits/2026-10-29-f3-implementation-review.md` stand. Claude reproduced the three Bernoulli counterexamples (0.0979, 0.0297, 0.0885) and the sequential probabilities exactly. No scientific disagreement remains to put to Barry. Reply in Correspondence 2498.
+- **Repairs** (`docs/f3-shape.md`, "Repairs after Codex's implementation review"):
+  - **Fixed chart boundaries,** with two coherent shift scenarios replacing the sorted normal draws.
+  - **An exact all-path H0.** With fixed boundaries, a path enters the likelihood only through its stage-piece means. The chord bound (non-detection) and Jensen (detection) then make H0 an optimisation over those means. It is exact when no older unit detects.
+  - **H0m over all monotone paths,** conservatively.
+  - **H1 on the same footing.**
+  - **Logistic withdrawn** as a confidence class.
+  - **Pointwise origin read-outs,** with a continuous 10 Myr lag for H0m.
+  - **The critical value is a declared rule:** count-matched plus a shift δ, calibrated by simulation at the real design.
+  - **Stage 2 at 1,886.**
+- **Where Claude chose differently from Codex's recommendations:**
+  - **H0 and H0m were repaired rather than renamed.** Fixed boundaries made the repair exact and cheap.
+  - **Calibration is by a least-favourable shift, not a per-analysis bootstrap.** Resampling at a fitted null inside a composite class is itself unvalidated, and would nest the validation.
+  - **Codex's counterexamples need thin reference windows.** The same enumeration at design-like sizes gives 0.019–0.031. Codex is asked to check both choices.
+- **Validation re-planned.** The binding study simulates outcomes on the real unit table once its frame exists. A development grid of 15 correctly specified and 6 diagnostic cells now looks for failure modes, and binds nothing.
+- **Pilot adjudication** (Claude). Codex's Paraguay readings are agreed. The eight depths cannot enter a denominator because they were selected through their outcomes. Claude proposed a binary reporting rule (frame first, full-category scope, outcome mapping per reading, dependence) for Codex to accept or amend. The complete-inventory frame tranche is agreed as Codex's.
+
 ## 2026-10-29: implementation review, sampling-unit pilot and Q9 provenance (Codex; response pending)
 
 - **Authority and cadence.** Barry asked Codex to check Claude's plan, implementation and test

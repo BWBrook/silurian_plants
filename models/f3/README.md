@@ -435,179 +435,185 @@ Rows: the log-likelihood over (T0, rate) with psi profiled out; the profile for 
 ## Step 4: the compatibility estimator (F3 reshape v3)
 
 Implements the estimator and validation harness of `docs/f3-shape.md` (v3, "What F3 reports" and "Validation before any real-data
-result"). Written by Claude Sonnet 5.5 (`claude-sonnet-5-5`), 2026-10-28, to the construction designed by Claude Opus 5.5. Nothing
-here has been run on real data: there is no real unit table yet. The smoke run below is a check that the machinery works, not the
-validation study; the full grid and its acceptance run are for the parent and Codex to fix.
+result"). First built by Claude Sonnet 5.5 (`claude-sonnet-5-5`), 2026-10-28, to the construction designed by Claude Opus 5.5, and
+repaired on 2026-10-29 by the same Sonnet to Opus's design after Codex's implementation review (`docs/audits/2026-10-29-f3-implementation-review.md`,
+I1 to I4). Nothing here has been run on real data: there is no real unit table yet, and no validation cell has been run beyond five
+replicates, which prove the harness runs and time it. The as-built smoke run (equal-duty H0, delay-grid H0m, logistic class, boundary draws, χ²
+comparison) is in `c7729ad`, its count-matched re-run in `69f2ef4` and the 60-against-400 boundary-draw check in `b2c6443`.
 
 ### Files
 
-- `envelope.py`: the estimator. `Units` (eligible binary units: stage range, class, cluster, outcome), `AgeModel` (stage bases and
-  their uncertainty from `data/timescale.csv`, via `sim.Timescale`), `Spec` (the inference fields of a specification; `Spec.from_toml`),
-  and `Problem`, which takes one unit table and finds its own first appearance, reference window and calibrated classes. Methods:
-  `fstar(cls, T)` (the bound and its state), `origin_tables`, `origin_set` and `lr_origin` (test inversion), `abar_truth` (the target
-  for a known path), `grid`. Also `no_detection_probability`, `p0_bound` and `exact_count_crit`.
-- `units_sim.py`: unit tables on the real design. Units per stage are `round(scale * n_docs)` with `n_docs` the spore effort of
-  `data/occurrences/effort.csv` summed over palaeogeographic units; a fraction have ranges widened by up to three stages; true ages are
-  uniform within the (true-boundary) range; clusters are runs of consecutive true age with Gamma(k, k) effects; two classes. The true
-  history (`Truth`: H0c, H0m, H0, logistic, H1) fixes a(t) = 1 up to `tau0`, a class path to the origin `t0`, 0 beyond.
-  The estimator sees only ranges, classes, clusters and outcomes and must find tau itself.
-- `validate.py`: the harness and the two-stage acceptance rule (`stage1`, `stage2`, `pass_probability`). `uv run models/f3/validate.py`
-  runs the smoke grid (6 cells, 200 replicates each, about 17 min on mac-mini with 8 workers under a load average of 10 to 17) and
-  writes `out/validation_smoke.csv` (one row per cell), `out/validation_smoke_reps.csv` (one row per replicate) and
-  `out/validation_smoke.meta.json` (root seed 20261030, spawn keys, settings, file hashes).
-- `test_envelope.py`: 40 tests; the whole of `models/f3` is 114 tests, all passing (about 12 s).
+- `envelope.py`: the estimator. `Units` (eligible binary units: stage range, class, cluster, outcome), `AgeModel` (stage bases from `data/timescale.csv`
+  under a scenario: `chart`, `older` = base + printed uncertainty, `younger` = base − uncertainty), `Spec` (the inference fields of a specification;
+  `Spec.from_toml`), and `Problem`, which takes one unit table and finds its own first appearance, reference window and calibrated classes. Methods:
+  `fstar(cls, T)` (the bound, its state and its fit record), `lr(cls, T, f)` (LR_K at a target), `origin_set`, `origin_stat` and `lr_origin` (test
+  inversion), `edges`, `window` (the pieces of (τ, T]), `const_max`, `bound_sup` (the optimiser), `abar_truth`, `grid`, `crit`. Also
+  `no_detection_probability` (a cluster's no-detection probability, which the tests use to check the quadrature) and `count_crit`.
+- `units_sim.py`: unit tables on the real design: units per stage `round(scale * n_docs)` with `n_docs` the spore effort of `data/occurrences/effort.csv`
+  summed over palaeogeographic units; a fraction have ranges widened by up to three stages; true ages uniform within the range under the
+  truth scenario's bases; clusters are runs of consecutive true age with Gamma(k, k) effects; two classes. `Truth` histories: `H0c`, `step`
+  (delay), `ramp`, `logistic`, `hide` and `hide_h1` (the least favourable H0 and H1 members: a 0/1 or 0/3 path lit on the stages with the fewest expected units per Myr
+  until the time-average is f). `Design` options, all off by default: `class_trend`, `misassign`, `older_report`, `confine`, `truth_scenario`
+  (docstring). The estimator sees only ranges, recorded classes, clusters and outcomes and must find tau itself.
+- `validate.py`: the harness (21 cells) and the two-stage acceptance rule (`stage1`, `stage2`, `pass_probability`). Writes
+  `out/validation_<tag>.csv` (one row per cell), `_reps.csv` (one row per replicate) and `.meta.json` (root seed 20261030, spawn keys, settings, file hashes).
+  `out/validation_dev*` currently hold the five-replicate timing run; the full run overwrites them.
+- `test_envelope.py`: 68 tests; the whole of `models/f3` is 142 tests, all passing (about 25 s).
 
 ```bash
 uv run --with pytest --with numpy --with scipy python -m pytest -q models/f3
-uv run models/f3/validate.py [--reps N] [--cells NAME ...] [--workers W] [--tag TAG]
+uv run models/f3/validate.py [--reps N] [--start J] [--cells NAME ...] [--workers W] [--tag TAG]
 ```
 
 ### The construction, as implemented
 
-- **Detection.** Unit i detects with probability 1 - exp(-r_c u_k a(t_i)); r_c = -log(1 - p_c); u_k ~ Gamma(k, rate k) is shared by
-  the units of cluster k (k = inf: none). A cluster has no detection with probability (1 + Lambda_k / k)^-k, Lambda_k = sum r_i a(t_i).
-- **Boundaries and ages.** Each of `age_draws` draws takes independent normal stage bases (sd `base_unc_ma`, 0 where blank), sorted;
-  all units share the draw. Within a draw a unit's age is uniform in its range, and that is integrated analytically (the fractions
-  Qref of the range younger than tau and Qmid inside (tau, T]), not sampled. `age_draws` therefore counts boundary draws.
-- **Likelihood.** L = mean over draws of the product over clusters of the integral over u of Gamma(u) times the product over the
-  cluster's units of D_i(u) (detected) or 1 - D_i(u) (not), where D_i(u) is the unit's detection probability given u, averaged over its
-  age. Units are independent given u and the draw. This replaces the enumeration for small clusters and Monte Carlo for large ones
-  with one route for every cluster size: a trapezoid sum in log u (48 nodes; for k = 1, 2, 5 and any total rate the absolute error is below 6e-8 and
-  the relative error below 5e-4 wherever P0 exceeds 1e-6; `test_gamma_nodes_reproduce_the_closed_form_and_monte_carlo`). Enumeration is the test oracle. Reference units (a = 1) and older units
-  share the integral, so a cluster spanning the first appearance is treated jointly; with finite k the reference likelihood is
-  therefore not a plain binomial.
-- **First appearance and windows.** tau is the older boundary (base) of the oldest stage holding a certain detection (a detected unit
-  whose whole range lies in that stage; broad-range detections do not count). That stage and the `reference_stages - 1` stages
-  younger than it are the reference window; units wholly inside it are reference units; units with any part older than tau are older
-  units; units wholly younger than tau but outside the window are dropped. A class with fewer than `min_units_per_class` reference
-  units is uncalibrated and loses its units (reported in `n_dropped_uncalibrated`). No certain detection raises `NoFirstAppearance`.
-- **Histories** (origin T > tau, a(t) = 0 beyond T): H0c, a = f; H0m, constant or delayed step (a = f up to T - d, d on `delays_ma`);
-  H0, any 0 <= a <= 1; logistic; H1, ceiling `h1_ceiling`.
-  - **H0 bound.** For fixed age-averaged intensities m_i, P(no detection) is largest when each a(t_i) is an independent Bernoulli(m_i),
-    because exp(-r x) and (1 + x/k)^-k are convex and Bernoulli(m) dominates every [0, 1] variable with mean m in the convex order. So
-    P0_max(m) = prod_k E_B[(1 + sum_{i in k} r_i B_i / k)^-k], which is the u-integral with phi_i = 1 - m_i (1 - e^(-r_i u)). It is
-    attained by bang-bang paths (a fine comb of 0 and 1 with duty cycle m_i). Implemented as the proportional allocation m_i = Qref_i + x Qmid_i
-    (the reference part stays exact); H1 is the same with Bernoulli height `h1_ceiling`. A detected older unit takes the opposite extreme,
-    the constant path (Jensen), which maximises its detection probability; each unit's bound depends only on its own mean, so the
-    product bounds every path with those means. `test_convex_order_bound_dominates...` checks P0_max >= P0 over 60 random cluster draws
-    for k = inf, 2 and 0.8, and equality for bang-bang atoms; `test_engine_likelihood_matches_enumeration_*` checks the whole engine
-    (clusters spanning tau, a detected straddler, the bound with C = 1 and 3) against explicit enumeration to 2e-5.
-  - **Logistic.** a(t) = L(t) / L(tau_s), L(t) = 1 / (1 + exp(-g ((T - t) - h))), nodes at six ages per unit; g in (0.001, 0.15, 0.5, 2) and
-    h in (0, 0.5, 1, 1.5) times (T - tau). g = 0.001 is the near-constant member (the ceiling).
-- **Target and bound.** abar(T) = E[sum r_i a(t_i) 1{tau < t_i <= T}] / E[sum r_i 1{tau < t_i <= T}] over draws and ages. f*_H(T) is the
-  largest abar(T) over paths in H whose profile likelihood-ratio test is not rejected; the reference rates are profiled jointly (L-BFGS-B
-  on log r_c). H0c, H0, logistic and H1 share one alternative, the best constant history on [0, ceiling], which belongs to each of
-  them, so the test stays conservative where the H0 bound is not attained; H0m uses its exact supremum over its explicit members.
-  States: `finite`, `ceiling-limited` (the class ceiling, 1 for H0, `h1_ceiling` for H1, is not rejected), `unbounded` (no ceiling:
-  `H1-no-ceiling`, where the bound is trivial), `zero-exposure`.
-- **Critical value** (`Problem.crit(T)`, review change of 2026-10-29). f* and the origin sets are one-sided upper limits on the older
-  exposure, so the statistic is referred to `exact_count_crit(n)`, n the older detections with part of their range in (tau, T]: the value
-  that reproduces the exact one-sided Poisson (Garwood) limit, 5.99 at n = 0 (P0 >= alpha) and falling towards 2.71. Chi-square(1) at 3.84,
-  the as-built default, rejects whenever P0 < 0.147 in the zero-count regime where F3's data lie.
-- **Origin sets.** T is excluded when the LR for "a >= f_min on (tau, T]" (maximum over f in [f_min, 1] against the maximum over f in [0, 1]
-  at the same T) exceeds the critical value. H0m takes the best delay d for both: the null is "some d on the grid and f >= f_min explain the
-  absences". A set is a list of runs on the 2 Myr grid from tau to the oldest possible unit age plus the longest delay, then the
-  domain edge; each run end is widened to the next grid point, so a set contains the whole bracket in which its boundary lies. It is
-  `unbounded` when the last point is not rejected, and `connected` is reported. A detected older unit lying wholly older than T makes
-  T inadmissible (LR = inf). Each f_min read-out is a marginal statement; the whole curve is not claimed.
-- **Acceptance rule.** `stage1(944) = pass`, `stage1(915) = fail`, 916 to 943 `borderline`; `stage2(1880) = pass`.
-  P(pass) is 0.983, 0.57, 0.069 and 0.002 at true coverage 0.95, 0.94, 0.93 and 0.92 (`test_acceptance_operating_characteristics`).
+- **Detection.** Unit i detects with probability 1 - exp(-r_c u_k a(t_i)); r_c = -log(1 - p_c); u_k ~ Gamma(k, rate k) is shared by the units of cluster k
+  (k = inf: none). A cluster has no detection with probability (1 + Lambda_k / k)^-k, Lambda_k = sum r_i a(t_i).
+- **Boundaries and ages.** Stage bases are fixed. The chart is the default; `older` and `younger` shift every base by its printed uncertainty
+  (a blank uncertainty is 0), and `AgeModel` asserts that the bases stay strictly increasing. No uncertainty is propagated: the boundary draws, the shared-draw
+  machinery and the `--age-draws` option are removed (Codex I4). A unit's age is uniform within its range and is integrated exactly. `Problem` refuses an age
+  model whose scenario differs from `Spec.age_scenario`.
+- **Pieces.** For an origin T > tau and an optional lag D, (tau, T] is cut at the stage bases strictly between tau and T and at T - D when that lies inside.
+  Stage ranges align with the bases, so an older unit i overlaps piece p in a fraction w_ip of its range (zero or the piece's share), has Qref_i of its range at or
+  younger than tau (a = 1) and the rest older than T (a = 0). Pieces no older unit overlaps are dropped. A path enters the likelihood through its piece means x_p.
+- **Likelihood.** Units are independent given u, and a cluster's likelihood is the integral of Gamma(k, k)(u) times its units' outcome probabilities
+  (trapezoid in log u, 48 nodes; 64 for k < 1; log-sum-exp per cluster). Reference and older units share the integral, so clusters that span the first appearance
+  are treated jointly. Per unit, with rate r:
+  - **exact** (piecewise-constant path x; H0c): D_i(u) = Qref (1 - e^-ru) + sum_p w_ip (1 - e^(-r u x_p)), P0_i = 1 - D_i.
+  - **bound** (H0m, H0, H1; pointwise values in [L_p, U_p], piece means x_p). Non-detected unit: P0_i(u) = Qref e^-ru + sum_p w_ip chi_p(u) + (1 - Qref - sum_p w_ip),
+    with the chord chi_p(u) = [(U_p - x_p) e^(-ru L_p) + (x_p - L_p) e^(-ru U_p)] / (U_p - L_p) (e^(-ru L_p) when U_p = L_p), which by convexity bounds E e^(-ru a)
+    over every a in [L_p, U_p] with mean x_p. Detected unit: the exact D_i at x (Jensen). The product over units is an upper bound on the likelihood of every
+    path in the class with those piece means; with no detected older unit it is attained, by a path at L_p or U_p within each piece.
+  - The log-likelihood has an analytic gradient in log r and x. Everything is one vectorised routine over the nonzero (unit, piece) weights, so a
+    fit costs milliseconds.
+- **First appearance and windows.** tau is the base of the oldest stage holding a certain detection (a detected unit whose whole range lies in that stage;
+  broad-range detections do not count). That stage and the `reference_stages - 1` stages younger than it are the reference window; units wholly inside it are
+  reference units; units with any part older than tau are older units; units wholly younger than tau but outside the window are dropped. A class with fewer than
+  `min_units_per_class` reference units is uncalibrated and loses its units (`n_dropped_uncalibrated`). No certain detection raises `NoFirstAppearance`.
+  The reference rates `r_ref` that weight the target are fitted to the reference units alone and stay fixed there; the profile likelihoods re-fit the rates.
+- **Histories and target.** Target abar = sum_p c_p x_p with c_p = sum_i r_ref(c(i)) w_ip / sum_i r_ref(c(i)) Qmid_i over the older units (Qmid_i = sum_p w_ip;
+  the c_p sum to 1): the reference-rate-weighted mean intensity over (tau, T].
+  - **H0c**: constant x in [0, 1], exact. **H0**: x in [0, 1]^P, bound. **H0m**: as H0 with x non-decreasing towards tau; the bound is conservative for the monotone
+    class (it admits non-monotone paths inside a piece). **H1**: x in [0, C]^P, C = `h1_ceiling`. **H1-no-ceiling**: no finite bound.
+  - Removed: the equal-duty H0, the delay-grid H0m, the logistic class, their grids and `p0_bound` (Codex I1).
+- **f* and LR.** f*_K(T) is the largest f in [0, C_K] with LR_K(f) <= crit, where LR_K(f) = max(0, 2 (alt - sup{l_K(r, x) : abar(x) >= f})), the supremum taken jointly over
+  the reference rates and x, and alt the best constant history (exact) on [0, C_K], with C_K = 1 for H0c, H0m and H0 and C for H1. H0c, H0m and H0 therefore share
+  one alternative and nest: f*(H0c) <= f*(H0m) <= f*(H0); H1 need not nest with them when the best constant exceeds 1. LR_K is non-decreasing in f; f > C_K gives LR = inf.
+  States: `finite`, `ceiling-limited` (LR_K(C_K) <= crit), `unbounded` (H1-no-ceiling), `zero-exposure`. `Bound` carries `converged` and `spread`.
+- **Optimiser.** SLSQP over (log r, x) with the analytic jacobian, the target as a linear constraint, monotone rows for H0m, x in [L, U] and log r in [log 1e-5, log 8].
+  Variables with L = U are eliminated and rows with one free variable become bounds. Starts: the constant history at max(f, best constant) with its own rates (f*) or an
+  even allocation at `r_ref` (origin read-outs); a hiding allocation that fills the target on the pieces with least exposure c_p per Myr first (from the youngest piece for H0m, which keeps
+  it monotone); the previous solution for the same window; and, when a target is active, the best single-piece vertex (a step from the youngest piece for H0m) by likelihood, because with finite k the supremum has local
+  optima at vertices. The best feasible start is kept. A fit is flagged when no start succeeded or the successful starts differ by more than 0.05
+  in log-likelihood (`Fit.flagged`; `Problem.n_fits`, `n_flagged`). With no detected older unit and no active target every non-detection bound falls in each x_p, so the
+  supremum is at x = L and only log r is profiled (L-BFGS-B); the same when every piece is fixed.
+- **Critical value.** `count_crit(n)` is a declared rule matched to the one-sided Poisson (Garwood) limit for the n older detections with part of their range in (tau, T]:
+  5.99 at n = 0 falling towards 2.71. It is exact only for fixed rates and independent Poisson counts (Codex I2: the profile LR is not that deviance, and the first appearance
+  and window are selected from the same outcomes), so it is a rule whose coverage the simulation establishes. `Spec.crit_shift` (default 0) moves it, and
+  `Problem.crit(T) = count_crit(n) + crit_shift`. The harness stores the statistic, so any shift delta can be applied afterwards.
+- **Origin read-outs.** T is excluded at level alpha when "a >= f_min on (tau, T]" is rejected against the best constant history on [0, 1] at T. **H0c**: constant in [f_min, 1], exact.
+  **H0**: pieces with L = f_min, U = 1, bound (equal to H0c when no older unit detects). **H0m**: pieces in (tau, T - D] have L = f_min, pieces in (T - D, T] have L = 0, U = 1, monotone,
+  D = `h0m_lag_ma` = 10 Myr (the delayed step when no older unit detects; it replaces the delay grid). The grid runs from tau every `step` Myr to the oldest unit age plus a step plus D, then
+  the domain edge; the statistic is constant beyond the first grid point with T - D at or past the oldest unit, so it is copied. A detected older unit wholly older than T makes T
+  inadmissible (LR = inf). `OriginSet.runs` are the runs from tau; `complete_runs` start at base[s* - 1], the top of the first-appearance stage, because every origin from there to tau is
+  in the set by construction; `contains` keeps its semantics. Each f_min read-out is a marginal statement.
+- **Acceptance rule.** `stage1(944) = pass`, `stage1(915) = fail`, 916 to 943 `borderline`; `stage2` passes at 1,886 of 2,000 (`STAGE2_PASS`, Codex I3: 1,880 passes a cell at the 0.93 floor with probability 0.069
+  once the interim look is allowed for). P(pass) is 0.95039, 0.42713, 0.04837 and 0.00212 at true coverage 0.95, 0.94, 0.93 and 0.92 (`test_acceptance_operating_characteristics`).
 
-### What was checked
+### What was checked (`test_envelope.py`)
 
-- Engine against enumeration (above); the quadrature against the closed gamma-cluster result and 2e6 Monte Carlo draws; the bound
-  against random paths.
-- **Chi-square calibration in a regular case** (`test_profile_lr_is_calibrated_in_a_regular_case`): 100 reference units, 120 older
-  units with true f = 0.5, one class, reference rate profiled jointly. Over 500 replicates the LR at the true f is within chi-square(1)
-  at 0.95 +/- 0.03 (0.947, 0.937, 0.952 over three seeds of 1000 in a scratch run; mean LR 1.01 to 1.07).
-- **Four states on constructed cases**, including Codex's counterexample (`test_codex_counterexample...`): one eligible unit whose age
-  falls in the window with probability 0.1. Under H0 the ceiling is not rejected; under H1 it is not rejected for ceilings 3, 10 and 1000
-  (f* = C grows without bound); with no ceiling the state is `unbounded`; with 40 units certain to be in the window f* is finite.
-  A finite f* equals an independent scipy solution of the zero-count problem to 0.2%.
-- **tau selection**: the oldest certain-detection stage, broad detections ignored, the window, outside units and uncalibrated classes, and
-  `NoFirstAppearance`. **Boundary draws**: sorted, stated sd, blank stages fixed, shared by all units.
-- The boundary shortcut in the f maximisation (`ell` is taken to fall from f = 0 when it falls at f = 0.02 and f = 1) against a dense scan with a detected
-  older unit; and, on four replicates, equal results to the full search (the shortcut made the harness six times faster).
-- Not done: an independent review of `envelope.py`; a cross-check of the profile against a different implementation of the same
-  likelihood.
+- **Engine** against an independent per-unit formula with scipy quadrature over the cluster effect (k = inf, 2, 0.8; exact and bound; detected and straddling units; clusters spanning tau) and against explicit
+  enumeration (exact, and the bound with no detected older unit); the quadrature against the closed gamma-cluster result and 2e6 Monte Carlo draws; **analytic gradients** against finite differences (exact and bound).
+- **Chord and Jensen validity**: over 25 random designs, k = inf and 2, the exact likelihood of random fine-grained paths inside [L_p, U_p] never exceeds the bound at their piece means. **Attainment**: with no detected older
+  unit, a path at L_p or U_p within each piece has exactly the bound's likelihood (15 designs, k = inf and 2).
+- **Optimiser against brute force** on a tiny design (three pieces, with and without a detected older unit, H0 and H0m, target 0, 0.35 and 0.8): grid search with the target met exactly, refinement and an independent
+  numerical-gradient SLSQP polish; the fit is never below it and within 2e-4. LR_K(f) is non-decreasing in f and zero up to the best constant.
+- **Nesting** f*(H0c) <= f*(H0m) <= f*(H0) <= f*(H1) on a toy table with and without older detections, and on simulated tables (stationary, step, long-lived and hide truths, at t0 and 459.1). A scratch scan behind it (135 evaluations over seven cells, 25 replicates each, many with older
+  detections) found no violation and no flagged fit.
+- **Origins**: with no older detection the H0 origin set equals H0c's, and H0m's statistic equals the delayed step's; complete runs start at base[s* - 1]; a detected unit older than T makes T inadmissible.
+- **Calibration in a regular case** (`test_profile_lr_is_calibrated_in_a_regular_case`): the profile LR at the true f is within chi-square(1) at 0.95 +/- 0.03. Four states on constructed cases, including Codex's counterexample; a finite f* equals
+  an independent scipy solution of the zero-count problem to 0.2%. First appearance (tau, window, outside units, uncalibrated classes, `NoFirstAppearance`) and the pieces (edges, lag, dropped pieces). Age scenarios ordered; crossing
+  bases refused.
+- Not done: an independent review of the repaired `envelope.py`; a cross-check of the profile against a different implementation of the same likelihood.
 
-### Smoke results
+### The validation harness
 
-Six cells, 200 replicates each (`out/validation_smoke.csv`), re-run on 2026-10-29 after the review changes: 989 s on mac-mini with 8 workers at a load average near 19.
-- **Truth and design:** T0 = 476 Ma; tau0 = 452.8 Ma, with a = 1 at younger ages; reference detection p = (0.12, 0.04) with class weights 0.6 / 0.4; scale 0.05, giving 505 units (about 110 reference and 90 to 135 older).
-- **Settings:** 60 boundary draws, 48 nodes, a 2 Myr origin grid, read-outs 1, 0.1 and 0.01.
-- **Error:** the Monte Carlo error of a coverage near 0.95 is 0.015.
-- **Status:** no replicate failed, and every replicate had a certain detection.
+Base: t0 = 476, tau0 = 452.8, p = (0.12, 0.04), class weights (0.6, 0.4), k = 2, scale 0.05 (about 505 units), 48 nodes, a 2 Myr origin grid, read-outs 1, 0.1 and 0.01. Acceptance cells are correctly specified; diagnostic cells
+are not, and are reported, not accepted against.
 
-The as-built run, with χ²₁ as the default and f* coverage counted over non-trivial replicates only, is in `c7729ad`.
+| Cell | Kind | Truth and design |
+|---|---|---|
+| A1 | acceptance | H0c, f = 1 |
+| A2 | acceptance | H0c, f = 0.3 |
+| A3 | acceptance | H0c, f = 0.1 |
+| A4 | acceptance | A2, k = inf |
+| A5 | acceptance | A2, k = 0.8 (64 nodes) |
+| A6 | acceptance | step, f = 0.3, delay 4.3 |
+| A7 | acceptance | ramp (0 at t0 to 1 at tau0) |
+| A8 | acceptance | logistic, g = 0.3, h = 7.7 |
+| A9 | acceptance | hide, f = 0.3 |
+| A10 | acceptance | hide_h1, f = 0.3 (height 3) |
+| A11 | acceptance | A2 with class_trend 0.8 |
+| A12 | acceptance | A9 with class_trend 0.8 |
+| A13 | acceptance | A2 at scale 0.2 |
+| A14 | acceptance | A1 with t0 = 466 |
+| A15 | acceptance | A2 with t0 = 500 |
+| D1 | diagnostic | A2 with misassign 0.1 |
+| D2 | diagnostic | A2 with older_report 0.7 |
+| D3 | diagnostic | A2 with confine 0.5 |
+| D4 | diagnostic | A2 with true k = 0.8 analysed at k = 2 |
+| D5 | diagnostic | A2 with truth_scenario `older` |
+| D6 | diagnostic | A2 with truth_scenario `younger` |
 
-A replicate is **trivial** when T0 is at or below the estimated tau. Its null is vacuous, its origin set contains T0 by construction, and f* has no exposure, so it makes no claim and counts as covered. Coverage is over all replicates (`docs/f3-shape.md`: no conditioning on where the first appearance fell). Coverage over non-trivial replicates is reported beside it as a diagnostic.
+- **Per replicate**, for each history class that contains the truth (`Truth.members`) and always H0: f* and its state at t0 and at T = 459.1 (Hooper's M2 maximum) when that lies above the estimated tau; LR_K(abar_rel), the
+  statistic at the true target (the window-relative expected intensity: the path times `older_report` and (1 - `confine`) beyond tau0; `lr_nominal_*` is the statistic at the nominal path where those differ), the count-matched critical value and
+  n. f* >= abar_rel is the same event as LR_K(abar_rel) <= crit, so the summary applies any shift delta to the stored statistic. At 459.1 the origin is below t0, so f* there is informative, not a coverage claim.
+  Origin sets for H0c, H0m and H0 at each read-out: `cover_set` (the grid set contains t0), `lr0` (the exact statistic at t0), `applicable` (the largest read-out true of the truth on (tau, t0], or on (tau, t0 - D] for H0m).
+  The window-relative truth (`abar_rel`, `a_ref`) is as before.
+- **Per cell**: coverage over all replicates at delta = 0 (trivial replicates, with t0 at or below tau, count as covered), the non-trivial coverage as a diagnostic, `delta95` (the smallest shift not below 0 that brings a primary coverage
+  to 0.95), `outside_*` (the share of non-trivial replicates whose window-relative target exceeds the class ceiling, which makes the truth lie outside the class), informativeness (unbounded share, endpoints, the four states), `flagged_share`
+  (fits flagged), and `seconds_per_rep`. The chi-square comparison columns are gone.
+- **Seeds.** Replicate j of cell c descends from `SeedSequence(20261030, spawn_key=(c, j))`; child 0 simulates. A stage-2 batch uses `--start 1000`.
 
-The estimator measures intensity relative to its own reference window, wherever the first appearance puts it. The true target is therefore abar_rel = abar_true / a_ref, where a_ref is the true path averaged over the realised reference units.
+Seconds per replicate, five replicates per cell on mac-mini (8 workers, load average about 4; each replicate runs on one core), 105 replicates in 21 s:
 
-| Cell | Non-trivial | tau (median) | a_ref | H0c f_min = 1: bounded / older end | f_min = 0.1: unbounded |
-|---|---|---|---|---|---|
-| H0c f = 1, k = 2 | 55/200 | 477.1 | 0.99 | 0.965 / 493.1 | 1.00 |
-| H0c f = 0.3, k = 2 | 135/200 | 471.3 | 0.57 | 0.73 / 489.3 | 0.995 |
-| H0c f = 0.3, k = inf | 138/200 | 471.3 | 0.56 | 0.785 / 489.4 | 0.99 |
-| H0m f = 0.3, d = 6, k = 2 | 200/200 | 469.4 | 0.72 | 0.89 / 477.4 | 0.975 |
-| H0 comb duty 0.3, k = 2 | 134/200 | 471.3 | 0.56 | 0.675 / 485.3 | 1.00 |
-| logistic g = 0.5, h = 11.6, k = 2 | 197/200 | 469.4 | 0.90 | 0.955 / 475.4 | 0.985 |
+| Cell | mean | max | Cell | mean | max | Cell | mean | max |
+|---|---|---|---|---|---|---|---|---|
+| A1 | 0.75 | 2.0 | A8 | 1.78 | 2.7 | D1 | 0.80 | 1.8 |
+| A2 | 0.87 | 1.7 | A9 | 1.51 | 2.2 | D2 | 1.63 | 4.4 |
+| A3 | 1.33 | 3.3 | A10 | 2.97 | 8.0 | D3 | 0.84 | 1.9 |
+| A4 | 0.53 | 1.0 | A11 | 1.04 | 1.7 | D4 | 0.61 | 1.0 |
+| A5 | 1.27 | 2.9 | A12 | 0.89 | 1.0 | D5 | 1.06 | 3.0 |
+| A6 | 1.17 | 1.9 | A13 | 5.29 | 9.3 | D6 | 0.82 | 1.3 |
+| A7 | 1.34 | 3.6 | A14 | 0.83 | 1.1 | | | |
+| | | | A15 | 1.39 | 5.4 | | | |
 
-The older-end median is over bounded sets only. At f_min = 0.01, every set is unbounded.
+On a detection-rich synthetic table (220 older units, 8 detected, two classes; scratch, not stored) the nine origin sets took 3 s, with the full SLSQP multi-start at most grid points, so the heavy path is within budget too.
+No fit was flagged in the 105 replicates. In a separate 100-replicate look at A2, A6, A9 and A10 (scratch, not stored) 0.03% of fits were flagged: all H1 root-finding
+at t0 with spreads of 0.07 to 0.15 between starts, because with finite k the supremum has several local optima at vertices (all of the target on one piece); the best start is kept and
+an added start tries the best vertex by likelihood.
 
-Coverage over all replicates, shown as estimator / χ²₁ (3.84) for comparison. The origin columns use the exact test at T0 at the largest read-out that is true of the truth. The f* columns cover the classes that contain the truth. n is given where it is not 200.
+### What five replicates show (plumbing, not validation)
 
-| Cell | Origin H0c | Origin H0m | f* H0c | f* H0m | f* H0 | f* logistic | f* H1 |
-|---|---|---|---|---|---|---|---|
-| H0c f = 1, k = 2 | 0.955 / 0.945 | 0.995 | 0.955 / 0.945 | 0.955 / 0.945 | 0.955 / 0.945 | - | 0.96 / 0.95 |
-| H0c f = 0.3, k = 2 | 1.00 | 1.00 | 0.985 / 0.935 | 0.985 / 0.95 | 0.99 / 0.95 | - | 0.99 / 0.985 |
-| H0c f = 0.3, k = inf | 1.00 | 1.00 | 0.97 / 0.91 | 0.975 / 0.915 | 0.975 / 0.91 | - | 0.98 / 0.935 |
-| H0m f = 0.3, d = 6, k = 2 | none true | 1.00 | - | 0.965 / 0.94 | 0.965 / 0.95 | - | 0.985 / 0.98 |
-| H0 comb 0.3, k = 2 | 1.00 (n 66) | 1.00 (n 163) | - | - | 0.97 / 0.935 | - | 0.98 / 0.95 |
-| logistic, k = 2 | 1.00 (n 3) | 1.00 | - | - | 0.94 / 0.92 | 0.93 / - | 0.95 / 0.94 |
-
-**What the smoke run shows.**
-
-1. **The count-matched critical value restores nominal coverage.**
-   - **Count-matched value:** f* coverage over all replicates is 0.93 to 0.99.
-   - **χ²₁ at 3.84:** 0.91 to 0.95, and below 0.93 in two cells.
-   - **The as-built run** showed the cause. In the zero-count regime the statistic is -2 log P0, and 3.84 rejects whenever P0 < 0.147.
-   - **Lowest values:** the logistic cell gives 0.94 for H0 and 0.93 for the logistic class. The logistic grid contains the truth only approximately, because h is a fraction of T - tau and the normalisation uses the estimated tau. The full grid must watch this cell.
-2. **Coverage concentrates where it can fail.** In the stationary cell (f = 1, the null at its boundary), coverage over the 55 non-trivial replicates is 0.84, against 0.955 overall. The test's size is spent on the few replicates in which the first appearance falls below the origin. This is the relevant-subset behaviour of any test whose rejection needs an observed gap; it is reported, not accepted against.
-3. **The reference window is not at a = 1 when the history is below 1 for some stages after tau0.** The first appearance falls inside that era, and a_ref is 0.56 to 0.72 for f = 0.3, the comb and the delayed step. f* reads relative to the window: "f* = 0.5" means 0.5 of whatever intensity the window holds.
-4. **Informativeness is low at this scale (505 units).**
-   - The f_min = 1 set is bounded in 67 to 97% of replicates, and its older end lies 6 to 18 Myr beyond the median tau.
-   - Sets at f_min = 0.1 and 0.01 are unbounded in 97.5 to 100% of replicates.
-   - Among non-trivial replicates, 16 to 55% give a finite f* under H0, and 59 to 90% under H1. H1 is finite more often because a ceiling of 3 is rejected at lower exposure, and its state says so.
-5. **H0m origin sets end the longest delay (10 Myr) beyond H0c's when no older unit detects** (10 to 12 Myr on the 2 Myr grid). They end sooner in 8 of about 800 bounded pairs, where older detections favour a delayed step as the alternative. H0m informs the origin only through its declared delay bound.
+- A1 and A14 are almost wholly trivial (tau at or past t0 in 5 of 5 and 4 of 5 replicates): when a = 1 up to t0 the first appearance sits at the stage holding t0. Their coverage is dominated by trivial replicates, so the
+  full run needs the non-trivial coverage beside it.
+- In A10 (hide_h1) two of five replicates were not covered, both with the first appearance below tau0 (445.2 and 443.1 against 452.8): the Katian units, where a = 1, are then older units, and by chance none detected. That is the
+  selection effect the grid is meant to expose; the full run will say whether `crit_shift` is needed.
 
 ### Open choices
 
-- **Scale 0.05 of the Palynodata document counts** (505 units). Documents are counted in every stage they overlap, so a table of unique
-  blocks will be smaller than `n_docs`; 0.05 gives about 110 reference and 100 older units and 0.5 to 11 s per replicate. The scale of the real table is unknown. It sets the power,
-  not the construction.
-- **Grids**: origin step 2 Myr (the full run should use 0.5 or 1 and `age_draws` 400); H0m delays (0, 2, 6, 10) Myr; logistic g and h
-  grids above; 60 boundary draws and 48 nodes in the harness; 400 draws and 48 nodes in `Spec` and the draft specification. The 48 nodes
-  need 64 for k < 1.
-- **Design**: classes p = (0.12, 0.04), weights 0.6 / 0.4; 12% broad-range units; clusters of mean size 3; T0 = 476 and tau0 = 452.8 chosen
-  so that the first appearance falls below the origin often enough (T0 at 466 gave 81% trivial replicates under f = 1).
-- **Boundary draws** (checked 2026-10-29, `out/validation_draws60*` and `out/validation_draws400*`). Cell H0c f = 0.3, k = 2 was run for 100 paired replicates on the same simulated data, at 60 and at 400 boundary draws.
-  - f* changed by at most 0.006 for H0c and H0. One H1 value moved by 0.15; the median change was 0.
-  - Coverage verdicts agreed in 100 of 100 replicates, and states in 99 of 100.
-  - Origin endpoints moved by at most one grid step.
-  - 400 draws cost seven times as much: 36 s against 5.3 s per replicate.
-  - So the validation grid can run at 60 draws. Real-data runs keep 400.
-- **Critical value**: `exact_count_crit`; the harness also records f* under chi-square(1) (`_chi2` columns) and stores the origin
-  statistic `lr0`, so 3.84, 2.71 and 5.99 can be applied afterwards.
-- **Boundary shortcut and tolerances**: L-BFGS-B `ftol` 1e-10, f searched to 5e-3, f* root to 1e-4; `fcover` tolerance 1e-3.
+- **Scale 0.05 of the Palynodata document counts** (505 units); the scale of the real table is unknown. It sets the power, not the construction. A13 repeats A2 at 0.2.
+- **Grids**: origin step 2 Myr (the full run may use 1); read-outs 1, 0.1, 0.01; H0m lag 10 Myr; 48 nodes (64 for k < 1).
+- **Design**: classes p = (0.12, 0.04), weights 0.6 / 0.4; 12% broad-range units; clusters of mean size 3; t0 = 476 and tau0 = 452.8 chosen so that the first appearance falls below the origin often enough (A14 and A1 show how often it
+  does not). `class_trend` 0.8 makes P(class 0) run from about 0.2 at the young end of the design span to 0.95 at the old end.
+- **Tolerances**: L-BFGS-B `ftol` 1e-12, SLSQP `ftol` 1e-10, f searched to 1e-3, spread flag 0.05, constraint violation 1e-6.
 
 ### Limits
 
-- Cells are correctly specified; no misassigned classes, reporting or facies differences, regional confinement or H1 truths. The H1 and
-  logistic truths are not run beyond one cell each.
-- H0 and H1 use the proportional duty allocation, which is the worst case only when stages alike in class mix. For two classes of p = 0.30
-  and 0.03 in separate stages of 100 units, the best allocation differs by at most 0.06 in log P0, so f* is understated by a few per cent.
-  H1 is "any path up to `h1_ceiling`": the bound holds for pulses of any duration, so the specification no longer carries one.
-- The logistic members are on a grid and their normalisation is at the estimated tau, so a true logistic with tau0 different from the estimated tau is not exactly a member.
+- Cells are correctly specified except the six diagnostics. The H0 and H0m bounds are conservative: with a detected older unit the chord and the Jensen bound are not attained together; H0m's chord admits non-monotone paths within a
+  piece. Their f* is therefore an upper limit that may exceed the supremum over the exact class.
+- Window-relative targets: a = 1 is the reference window's own intensity, wherever the first appearance puts it, so f* is relative to a window that may itself be low; a truth whose relative path exceeds a class ceiling is outside the class
+  (`outside_*`).
+- The supremum is found by local search from three starts; a missed optimum makes the statistic too large (f* too small, anti-conservative). The flags and the nesting checks are the guard; no proof of global optimality.
+- Reference rates enter the target weights fixed at the reference-unit fit; the likelihoods re-profile them.
 - `Spec.from_toml` requires every inference field; the draft specification declares the `Spec` defaults (`test_draft_specification_sets_every_inference_field`).

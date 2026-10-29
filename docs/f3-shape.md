@@ -1,6 +1,6 @@
 # The shape of F3 (v3)
 
-**Status: adopted, v3, 2026-10-28** (Barry, chat: "Yes, adopt v3"). Drafted by Claude Opus 5.5; Codex agreed the scientific direction (Correspondence `silurian-plants`, discussion 99, message 2484). Two refinements are Claude's and still await Codex's reply: the primary history class H0 and the two-stage acceptance rule. Building the estimator (2026-10-29) exposed further points. They are recorded under "Refinements from the estimator build" and also await Codex. If Codex objects, the disagreement goes back to Barry stated both ways. This document governs F3's statistical contribution (`docs/plan-f3.md`, third amendment). Nothing here has yet been applied to real data.
+**Status: adopted, v3, 2026-10-28** (Barry, chat: "Yes, adopt v3"). Drafted by Claude Opus 5.5; Codex agreed the scientific direction (Correspondence `silurian-plants`, discussion 99, message 2484). Codex has since agreed H0's reference ceiling and unconditional coverage as the acceptance target (message 2496). Its implementation review (2026-10-29) led to the repairs under "Repairs after Codex's implementation review", which govern the estimator and await Codex's check. If Codex objects, the disagreement goes back to Barry stated both ways. This document governs F3's statistical contribution (`docs/plan-f3.md`, third amendment). Nothing here has yet been applied to real data.
 
 **Revision history.**
 - **v1** (`f01d4bd`) followed Barry's adoption of the second amendment (chat, 2026-10-28: "Yes, agreed, adopt it. Then let's re-assess the full shape of F3 given this constraint").
@@ -50,9 +50,10 @@ Three layers, each with its assumptions stated.
 **The target.** With known ages, the zero-count likelihood constrains the reference-rate-weighted mean intensity, ā_r = Σ *r*_c *a*(*t_i*) / Σ *r*_c, across the eligible units between a candidate origin *T* and the first appearance. With latent ages, the target is the ratio of integrated weighted intensity to integrated reference exposure over that interval. The likelihood integrates over the joint latent structure (unit ages, shared stage boundaries, clusters), not over separately marginalised units.
 
 **History classes are declared before analysis, and each gets its own result:**
-- **H0 (primary; new in v3, awaiting Codex): no pre-appearance intensity above the reference**, *a*(*t*) ≤ 1. This is the biological assumption that a lineage was not more readily encountered before its first recorded appearance than after it. It includes every monotone rise, logistic and birth–death expected paths among them. It is what makes a finite bound possible: Codex's counterexamples (V2-R1) show that unrestricted pulses, or a cluster with a real chance of no detection opportunity, leave no finite bound at all. Under H0 the ceiling is the reference itself, not an arbitrary choice.
+- **H0 (primary; new in v3, agreed by Codex): no pre-appearance intensity above the reference**, *a*(*t*) ≤ 1. This is the biological assumption that a lineage was not more readily encountered before its first recorded appearance than after it. It includes every monotone rise, logistic and birth–death expected paths among them. It is what makes a finite bound possible: Codex's counterexamples (V2-R1) show that unrestricted pulses, or a cluster with a real chance of no detection opportunity, leave no finite bound at all. Under H0 the ceiling is the reference itself, not an arbitrary choice.
 - **H0m:** the monotone non-decreasing subset of H0, used for confidence sets on the origin.
 - **H1, sensitivity:** any path up to a stated ceiling above the reference, so pulses of any duration up to it. The pulse duration was dropped on 2026-10-29: the bound does not use it (see the refinements below).
+- **H0c,** the constant path, is the narrowest class. How each class is computed, exactly or as a conservative bound, is set out under "Repairs".
 
 **Each result is reported in one of four states:**
 - **finite data bound:** below the class ceiling;
@@ -62,7 +63,7 @@ Three layers, each with its assumptions stated.
 
 Results from different history classes are not merged into one headline.
 
-**Inference is by test inversion.** For a fixed, predeclared history class, inverting level-0.05 tests of candidate origins gives a 95% confidence set for the origin. Its older endpoint is reported when the set is connected; otherwise the set is reported as found. The summary read-outs, where *f\**_H(*T*) reaches 1, 0.1 and 0.01 of the reference, each carry marginal coverage only. Any claim about the whole curve at once needs separate calibration. Reference-rate uncertainty and the dependence of the reference window on the observed first appearance are part of the test. The critical value is matched to the exact one-sided Poisson limit for the number of older detections. It is 5.99 when there are none, not χ²₁'s 3.84 (refinements below).
+**Inference is by test inversion.** For a fixed, predeclared history class, inverting level-0.05 tests of candidate origins gives a 95% confidence set for the origin. Its older endpoint is reported when the set is connected; otherwise the set is reported as found. The summary read-outs, where *f\**_H(*T*) reaches 1, 0.1 and 0.01 of the reference, each carry marginal coverage only. Any claim about the whole curve at once needs separate calibration. Reference-rate uncertainty and the dependence of the reference window on the observed first appearance are part of the test. The critical value is a declared rule: the value matched to the one-sided Poisson limit for the number of older detections (5.99 when there are none, not χ²₁'s 3.84), plus a shift calibrated by simulation at the real design (repair 4).
 
 ### 2. Biological translation
 
@@ -118,7 +119,7 @@ A further statement that the record *supports a maximum* is made only beside an 
 The complete procedure is simulated on the real design:
 - the selection of the first appearance, the reference set and the older units (no conditioning on replicates that happen to be empty);
 - finite reference data;
-- latent ages with shared boundaries;
+- latent ages within fixed chart boundaries, with boundaries that differ from the chart as a diagnostic;
 - clustering and overdispersion;
 - eligibility-class mixtures, including misassignment;
 - reporting and facies differences;
@@ -127,27 +128,27 @@ The complete procedure is simulated on the real design:
 
 The origin domain extends past the oldest unit, and a profile that reaches the edge is reported as unbounded. The quantity validated is the reported one: the confidence set or endpoint for the origin, and the marginal read-outs.
 
-**Acceptance per correctly specified cell** (fixed before the run; the rule itself is new in v3 and awaits Codex):
+**Acceptance per correctly specified cell** (fixed before the run; stage 2 corrected after Codex's review, I3):
 - **Nominal and floor.** Nominal coverage is 95%. The floor is 0.93, a chosen scientific tolerance and not a Monte Carlo allowance.
 - **Stage 1.** Run 1,000 replicates. The cell passes if the one-sided 95% exact lower limit of coverage exceeds 0.93 (at least 944 successes), and fails if the one-sided 95% upper limit is below 0.93 (at most 915).
-- **Stage 2.** A borderline cell gets one preplanned further batch of 1,000. The pooled 2,000 must show at least 1,880 successes.
+- **Stage 2.** A borderline cell gets one preplanned further batch of 1,000. The pooled 2,000 must show at least 1,886 successes. That threshold holds the chance of certifying a procedure at the floor to 5% over both stages. The first version reapplied a fixed-sample limit (1,880) after the interim look, which certified it 6.9% of the time.
 
-**Operating characteristics:**
+**Operating characteristics** (exact binomial sums):
 
 | True coverage | P(pass) |
 |---|---|
-| 0.95 | 0.983 |
-| 0.94 | 0.57 |
-| 0.93 | 0.07 |
+| 0.95 | 0.950 |
+| 0.94 | 0.427 |
+| 0.93 | 0.048 |
 | 0.92 | 0.002 |
 
 The one-stage rule alone passes a perfectly calibrated cell only 83% of the time, so a grid of many cells would fail good procedures by chance. No batches beyond the preplanned one. The number of cells, and the expected count of chance failures among them, are stated with the grid.
 
 **A failing cell, or a plausible mis-specified scenario that reverses a conclusion, changes the report.** The conclusion is qualified by that assumption, the model is expanded, or the sensitivity is reported as unresolved. It is not confined to a robustness table.
 
-## Refinements from the estimator build (2026-10-29, Claude; awaiting Codex)
+## Refinements from the estimator build (2026-10-29, Claude)
 
-The estimator, simulator and smoke-scale harness are in `models/f3/` (`envelope.py`, `units_sim.py`, `validate.py`). They were built by a Claude Sonnet 5.5 subagent to the construction above and reviewed by Claude Opus 5.5. The as-built smoke run is preserved at `c7729ad`. It and the review changed six points.
+The estimator, simulator and smoke-scale harness are in `models/f3/` (`envelope.py`, `units_sim.py`, `validate.py`). They were built by a Claude Sonnet 5.5 subagent to the construction above and reviewed by Claude Opus 5.5. The as-built smoke run is preserved at `c7729ad`. It and the review changed six points. Codex's implementation review then overturned three of them: the exactness of the critical value (item 1), the shared alternative's cover for the logistic class (item 2), and the equal-duty H0 (item 6). The next section replaces them. Items 3–5 stand.
 
 1. **Critical value.** Both *f\** and the origin sets are one-sided upper limits on the older units' exposure, and F3's older units mostly have no detections. In that regime the statistic is −2 log P0, so χ²₁ at 3.84 rejects whenever P0 < 0.147. A one-sided level-0.05 test needs P0 < 0.05, a critical value of 5.99.
    - **As-built smoke run (χ²₁):** *f\** coverage over non-trivial replicates was 0.87–0.95 in the cells below the ceiling.
@@ -163,6 +164,47 @@ The estimator, simulator and smoke-scale harness are in `models/f3/` (`envelope.
    - **With no older detection, H0m origin sets end the longest declared delay beyond H0c's.** H0m adds to the origin only through that declared bound; its value is in *f\**.
 
 **What is validated.** Coverage is over all replicates, as above. A replicate whose true origin lies at or below the estimated τ makes no claim and counts as covered. Coverage over the non-trivial replicates is reported beside it, because it is lower: in the stationary as-built cell it was 0.84 under the count-matched value. It is a relevant-subset diagnostic, not the acceptance quantity.
+
+## Repairs after Codex's implementation review (2026-10-29; Claude, awaiting Codex's check)
+
+Codex reviewed the estimator at `b2c6443` (`docs/audits/2026-10-29-f3-implementation-review.md`, I1–I4). Claude Opus 5.5 reproduced its counterexamples and its sequential calculation, and accepts its findings. The repairs restore the classes this document declares, and govern the estimator from this date.
+
+1. **Fixed stage boundaries (I4).** The printed "±" values are not standard deviations (primer §1), so independent normal draws, sorted, are not a geological age model. The primary analysis fixes the ICS v2024/12 bases. Boundary uncertainty enters as two coherent scenarios: every base moved by its printed value towards older, or towards younger, ages, with blank values held at the chart age. Joint posterior draws, where they exist, would replace both. Latent ages within a unit's stage range are still integrated exactly.
+
+2. **The history classes are what they say (I1).** With fixed boundaries, every unit's age density is uniform within each piece of (τ, *T*] cut by the stage bases. A path therefore enters every unit's likelihood only through its piece means *x_p*: exactly for a constant path, and through two per-unit bounds otherwise.
+   - **Non-detection:** for *a* ∈ [*L_p*, *U_p*] with mean *x_p*, E e^(−*ru a*) is at most the chord between *L_p* and *U_p* (convexity).
+   - **Detection:** E[1 − e^(−*ru a*)] ≤ 1 − e^(−*ru x_p*) (Jensen).
+
+   Multiplied within a cluster given *u* and integrated over *u*, the bounds cover the likelihood of every path with those means. Each class is then an optimisation over *x*:
+   - **H0c:** constant *x*, with the exact likelihood.
+   - **H0:** any *x* ∈ [0, 1]^P. It is exact when no older unit detects, because a path at 0 or 1 within each piece attains every unit's bound at once. It replaces the equal-duty surrogate.
+   - **H0m:** *x* monotone non-decreasing towards τ, ≤ 1. It is a conservative bound, because a monotone path can be two-valued within only one piece. It replaces the delayed-step grid.
+   - **H1:** any *x* ∈ [0, *C*]^P.
+   - **Logistic is withdrawn as a confidence class.** Its paths lie in H0m, and without a constant submodel the shared alternative did not nest it. Logistic histories stay in the validation as truths.
+
+   The target is linear in *x*: ā_r = Σ *c_p x_p*, where *c_p* is piece *p*'s share of the older units' reference exposure at the reference-window rates. *f\** is the largest *f* for which the class supremum over ā_r ≥ *f* is not rejected. The alternative is the best constant history on [0, class ceiling]: one alternative for H0c, H0m and H0, whose statistics therefore nest, *f\**(H0c) ≤ *f\**(H0m) ≤ *f\**(H0). Each fit is multi-started, including from an allocation that hides intensity in the sparsest pieces, and reports its convergence. A fit whose starts disagree by more than 0.05 in log-likelihood is flagged.
+
+3. **Origin read-outs.** "*a* ≥ *f*_min on (τ, *T*]" holds pointwise:
+   - **H0c:** constant at or above *f*_min.
+   - **H0:** any path in [*f*_min, 1]. It equals H0c when no older unit detects.
+   - **H0m:** monotone, and at or above *f*_min from at most *D* = 10 Myr after the origin. *D* was the longest delay on the old grid and is now continuous.
+
+   The reported set includes its younger part: every origin between the top of the first-appearance stage and τ belongs to it by construction (I3).
+
+4. **The critical value is a declared rule, calibrated by simulation (I2).** The count-matched value is exact only for fixed rates and independent Poisson counts. Profiled reference rates, a selected window and clusters break that.
+   - **Codex's counterexamples reproduce.** Its exact Bernoulli enumerations reject at 0.098 for 10 reference units and 50 older ones at *p* = 0.84. For 10 and 200 at *p* = 0.04, given a reference detection, they reject at 0.089.
+   - **They need thin reference windows.** At sizes near F3's design (30, 60 or 200 reference units, *p* 0.04–0.12, given a reference detection), the same enumeration gives 0.019–0.031 (Claude, 2026-10-29).
+   - **The rule now.** The critical value is the count-matched value plus a shift δ ≥ 0. δ is set by simulation at the real design as the smallest value giving coverage of at least 0.95 in every correctly specified calibration cell. The calibration replicates are separate from the acceptance run. Until then, δ = 0.
+
+5. **Stage 2 needs 1,886 of 2,000 (I3);** see the operating characteristics above.
+
+6. **The binding validation runs on the real design (I3).** It simulates outcomes on the real unit table, with its ranges, classes, clusters and frame, once that table exists. Each replicate selects its own first appearance. Until then, a development grid on the synthetic Palynodata design looks for failure modes and binds nothing. Both grids add cells the smoke grid lacked:
+   - **Least-favourable members:** paths that put their intensity in the sparsest stages, for H0 and H1.
+   - **Confounding:** class composition that changes with age.
+   - **Off-grid H0m members:** an off-grid step, a linear rise and a logistic rise.
+   - **Diagnostics:** eligibility misassignment, lower reporting in older units, regional confinement, a wrong cluster shape, and boundaries that differ from the chart.
+
+7. **Reporting.** Unconditional coverage is the acceptance quantity, and Codex agrees. Coverage over the truth-defined subset, where the true origin is older than τ̂, remains a diagnostic of non-uniformity. Any observable reporting rule, such as finite against unbounded or a minimum older exposure, is declared before calibration and calibrated with the procedure.
 
 ## Where the evidence stands (2026-10-28, before any estimator)
 
@@ -236,14 +278,9 @@ Agreed in discussion 99 (messages 2474, 2477 and 2484).
 
 ## Open between Claude and Codex
 
-These are new in v3, posted in discussion 99:
-- **H0** as the primary history class, with the reference as its ceiling;
-- **the two-stage acceptance rule;**
-- **Claude's comments on the interface:**
-  - recorded palynomorph types as preservation evidence;
-  - Palynodata age names and crosswalk grade as age evidence;
-  - E1 and E2 outcomes filled on the same pilot units;
-  - a `readings.csv` in `data/occurrences/` defining the named readings.
-- **The refinements from the estimator build** (2026-10-29): the count-matched critical value, the shared alternative, H1 as a ceiling class, the window-relative scale, and the validated quantity.
+Codex agreed H0, the reference ceiling and unconditional coverage (message 2496), and implemented the interface comments in its pilot (`data/units/`). Open, posted in discussion 99:
+- **the repairs above** (2026-10-29), including the critical-value calibration and the development and binding grids;
+- **a binary reporting rule for real units,** proposed by Claude: which outcome states count as 0 or 1 under each reading, and which frames qualify;
+- **the frame tranche:** complete sample inventories, chosen by age, geography and reporting scope before their E1 outcomes are read (Codex's proposal, agreed by Claude).
 
-Codex agrees the rest. Anything unresolved goes to Barry with both positions stated.
+Anything unresolved goes to Barry with both positions stated.

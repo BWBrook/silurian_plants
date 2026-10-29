@@ -5,89 +5,87 @@
 
 """F3 reshape v3 (docs/f3-shape.md): the compatibility estimator for fossil absences.
 
-Given eligible, binary sampling units it answers, under a named history class H: how intense could the
+Given eligible, binary sampling units it answers, under a named history class K: how intense could the
 lineage's encounter intensity have been between the first appearance and a candidate origin T, and
 which origins T are excluded by the empty older units?
 
-Ages are Ma, decreasing towards the present, so older means larger. Units, stage ranges and the first
-appearance follow the analysis specification (models/f3/specs/README.md).
+Ages are Ma, decreasing towards the present, so older means larger. Stage s spans (base[s-1], base[s]].
+Units, stage ranges and the first appearance follow the analysis specification (models/f3/specs/README.md).
 
-Model. Unit i has a latent age t_i, uniform within its stage range given the stage boundaries, an
-eligibility class c(i), a cluster k(i) and a binary outcome d_i. It detects with probability
-1 - exp(-r_c u_k a(t_i)), where r_c = -log(1 - p_c), a(t) is the relative encounter intensity (1 in the
-reference window) and u_k ~ Gamma(shape k, rate k) is a mean-one cluster effect (k = inf: none). Cluster
-k then has no detection with probability (1 + Lambda_k / k)^-k, Lambda_k = sum r_i a(t_i).
+Model. Unit i has a latent age t_i, uniform within its stage range, an eligibility class c(i), a cluster
+k(i) and a binary outcome d_i. It detects with probability 1 - exp(-r_c u_k a(t_i)), r_c = -log(1 - p_c),
+a(t) the relative encounter intensity (1 in the reference window) and u_k ~ Gamma(shape k, rate k) a
+mean-one cluster effect (k = inf: none). Stage boundaries are fixed (AgeModel: the chart, or the older and
+younger scenarios), so a unit's range is known and its latent age is integrated exactly.
 
-Computation. Every likelihood is one integral over the cluster effect, with the units independent given
-u and the boundary draw: L = mean_s prod_k  integral Gamma(u) prod_{i in k} phi_i(u; s) du, where
-phi_i is the unit's detection (d = 1) or non-detection probability given u, averaged over its latent
-age, and s indexes the boundary draws shared by all units. The integral is a trapezoid sum in log u
-(spectrally accurate for these integrands; tests check it against the closed form and against
-enumeration). Reference units (a = 1) and older units enter the same cluster integral, so a cluster
-that spans the first appearance is treated jointly, and with finite k the reference likelihood is the
-cluster-integrated one rather than a plain binomial (the two coincide for k = inf).
+First appearance. tau is the base of the oldest stage that contains a certain detection (a detected unit
+whose whole range lies in that stage); that stage and the next reference_stages - 1 younger stages form
+the reference window, and units whose whole range lies in it are the reference units. Units with any part
+of their range older than tau are the older units. A class with fewer than min_units_per_class reference
+units is uncalibrated and its units are dropped. The reference rates r_ref are fitted to the reference
+units alone and stay fixed where they weight the target.
 
-First appearance. tau is the older boundary of the oldest stage that contains a certain detection (a
-detected unit whose whole range lies in that stage); that stage and the next reference_stages - 1
-younger stages form the reference window, and units whose whole range lies in it are the reference
-units. Units with any part of their range older than tau are the older units. A class with fewer than
-min_units_per_class reference units is uncalibrated and its units are dropped.
+Pieces. For an origin T > tau and an optional lag D, (tau, T] is cut at the stage bases strictly between
+tau and T and at T - D. Stage ranges align with the bases, so an older unit overlaps each piece p in a
+fraction w_ip of its range (0 or the piece's share) and has Qref_i of its range at or younger than tau
+(a = 1) and the rest older than T (a = 0). A path enters the likelihood through its piece means x_p.
 
-History classes for the period older than tau (origin T > tau; a(t) = 0 for t > T):
-  H0c  a = f on (tau, T], f in [0, 1].
-  H0m  monotone non-decreasing towards tau, <= 1. Members: the constant, and the delayed step (a = 0
-       on (T - d, T], then f), d from a declared grid. A delayed step is the constant history with
-       origin T - d, so the likelihood is H0c's at T - d and only the target's exposure uses T.
-  H0   any path 0 <= a <= 1. Convex-order bound: for fixed age-averaged intensities m_i = E[a(t_i)],
-       P(no detection) is largest when each a(t_i) is replaced by an independent Bernoulli(m_i), because
-       e^(-r x) and the cluster function (1 + x/k)^(-k) are convex and Bernoulli(m) dominates every
-       [0, 1] variable with mean m in the convex order. So P0_max(m) = prod_k E_B[(1 + sum_{i in k} r_i
-       B_i / k)^-k], B_i ~ Bernoulli(m_i) independent, which equals the u-integral above with
-       phi_i = 1 - m_i (1 - e^(-r_i u)). It is attained by bang-bang paths, so it is exact for the
-       worst case with a given duty cycle x: here m_i = Qref + x Qmid for the proportional allocation,
-       whose reference part (a = 1) stays exact. A detected older unit uses the opposite extreme, the
-       constant path a = x (Jensen), which maximises its detection probability. Each unit's bound
-       depends only on its own mean, so the product is a valid upper bound on the likelihood of every
-       path with those means. The bound treats ages as independent given the boundary draw, and is
-       averaged over boundary draws. Limitation: only equal-duty paths are bounded. A path that puts
-       more of its duty where the units' rates are higher can fit better at the same abar when the
-       class mix differs between stages; for p = 0.30 against 0.03 in separate stages the gap is at
-       most 0.06 in log P0 (about 3% in f*). f*_H0 is therefore the equal-duty bound, not the
-       supremum over every path.
-  logistic  a(t) = L(t) / L(tau), L(t) = 1 / (1 + exp(-g ((T - t) - h))), g and h profiled over a grid (h as a
-       fraction of T - tau, so that late rises are on it; g = 0.001 is the near-constant member). Its
-       members are tested against the same alternative as H0c (the best constant history, f = 0 included),
-       not against the best logistic member, so that f* for a subclass never exceeds f* for H0.
-  H1   sensitivity: any path 0 <= a <= h1_ceiling, so every pulse of that height or less, of any
-       duration; the same bound with Bernoulli height C. With no ceiling the bound is trivial and the
-       result unbounded.
+Likelihood. Units are independent given the cluster effect u, and a cluster's likelihood is the integral of
+Gamma(k, k)(u) times the product of its units' outcome probabilities (a trapezoid sum in log u, spectrally
+accurate here; tests check it against the closed form and against enumeration). Reference and older units
+share the integral, so a cluster spanning the first appearance is treated jointly. Per unit, with rate r:
+  exact (piecewise-constant path x):  D_i(u) = Qref (1 - e^-ru) + sum_p w_ip (1 - e^(-r u x_p)), P0 = 1 - D.
+  bound (paths with pointwise values in [L_p, U_p] and piece means x_p), used by H0m, H0 and H1:
+    non-detected unit: P0_i(u) = Qref e^-ru + sum_p w_ip chi_p(u) + (1 - Qref - sum_p w_ip), with the chord
+      chi_p(u) = [(U_p - x_p) e^(-ru L_p) + (x_p - L_p) e^(-ru U_p)] / (U_p - L_p), which by convexity of
+      e^(-ru a) bounds E e^(-ru a) over every a in [L_p, U_p] with mean x_p;
+    detected unit: D_i(u) = the exact formula at x (Jensen: it bounds the detection probability).
+  The product over units of these bounds is an upper bound on the likelihood of every path in the class
+  with those piece means. With no detected older unit it is attained, by a path that sits at L_p or U_p
+  within each piece. Gradients with respect to x and log r are analytic.
 
-Target. For origin T, abar(T) = E_ages[sum_i r_i a(t_i) 1{tau < t_i <= T}] / E_ages[sum_i r_i 1{tau < t_i
-<= T}], expectations over the boundary draws and the latent ages (the integrated reference exposure in
-the denominator). a = 1 is the reference window's own intensity, wherever the first appearance puts
-the window, so abar is relative to it. f*_H(T) is the largest abar(T) over paths in H that a profile
-likelihood-ratio test does not reject, the reference rates p_c profiled jointly with the history
-parameters. H0c, H0, logistic and H1 are tested against the same alternative, the best constant
-history on [0, C]. It belongs to each of those classes, so the statistic never exceeds the one with the
-class's own supremum, and the test stays conservative where the H0 bound is not attained. H0m's members
-are explicit, so it uses its exact supremum. Each (H, T) has one of four states: finite, ceiling-limited,
-unbounded, zero-exposure.
+History classes for the period older than tau (origin T > tau; a(t) = 0 for t > T), each summarised by
+the target abar = sum_p c_p x_p, c_p = sum_i r_ref(c(i)) w_ip / sum_i r_ref(c(i)) Qmid_i over the older
+units, Qmid_i = sum_p w_ip (the reference-rate-weighted mean intensity over (tau, T]; sum c_p = 1):
+  H0c  a = x constant on [0, 1]; exact likelihood.
+  H0   any path 0 <= a <= 1: x in [0, 1]^P, bound.
+  H0m  as H0 with x non-decreasing towards tau (a younger piece at least every older piece). The bound is
+       conservative for the monotone class: it bounds the likelihood of every monotone path with those
+       piece means, but monotone paths inside a piece are not excluded from the chord, so it can be
+       attained only by non-monotone ones.
+  H1   sensitivity: x in [0, C]^P, C = h1_ceiling, bound; H1-no-ceiling has no finite bound.
+f*_K(T) is the largest f in [0, C_K] with LR_K(f) <= crit, where LR_K(f) = max(0, 2 (alt - sup{l_K(r, x) :
+abar(x) >= f})), the supremum taken jointly over the reference rates and x. alt is the best constant
+history (exact likelihood) on [0, C_K], with C_K the class ceiling (1 for H0c, H0m and H0; C for H1), so
+H0c, H0m and H0 share one alternative and f*(H0c) <= f*(H0m) <= f*(H0). LR_K is non-decreasing in f.
+States: finite, ceiling-limited (LR_K(C_K) <= crit), unbounded (H1-no-ceiling), zero-exposure.
 
-Critical value. Both f* and the origin sets are one-sided upper limits on the older units' exposure.
-The statistic is referred to exact_count_crit(n), n the older units detected with part of their range in
-(tau, T]: the value that reproduces the exact one-sided Poisson (Garwood) limit. With no older detection
-it is -2 log alpha = 5.99 (P0 >= alpha), falling towards the one-sided chi-square value 2.71. Chi-square(1)
-at 3.84 is anti-conservative at zero counts, where the data lie: it rejects whenever P0 < 0.147.
+Optimisation. SLSQP over (log r, x) with the analytic jacobian, the target as a linear constraint and
+monotone constraints for H0m; multi-start from (a) the constant history at max(f, best constant), (b) a
+hiding allocation that fills the target on the pieces with least exposure per Myr (from the youngest piece
+for H0m), (c) the previous solution on the same window, and the best single-piece vertex (a step from the
+youngest piece for H0m) by likelihood, since with finite k the supremum has local optima at vertices. A fit is flagged when no start succeeded or the
+successful starts differ by more than SPREAD_FLAG in log-likelihood. With no detected older unit and no
+active target every non-detection bound falls in each x_p, so the supremum is at x = L and only log r is
+profiled.
 
-Origins. T is excluded at level alpha when the hypothesis "a >= f_min on (tau, T]" is rejected (H0c) or
-when no delay d on the grid and f >= f_min explains the absences (H0m). Each f_min read-out is a
-marginal statement. If the profile reaches the edge of the domain, the origin is reported unbounded.
+Critical value. count_crit(n) is a declared rule matched to the one-sided Poisson (Garwood) limit for n
+older detections: 5.99 at n = 0 falling towards 2.71. It is exact only for fixed rates and independent
+Poisson counts; the procedure's coverage is established by simulation (validate.py), and crit_shift moves
+the rule by the amount the simulation asks for.
+
+Origins. T is excluded at level alpha when the hypothesis "a >= f_min on (tau, T]" is rejected against the
+best constant history on [0, 1] at T. H0c: constant in [f_min, 1], exact. H0: pieces with L = f_min,
+U = 1, bound (equal to H0c when no older unit detects). H0m: pieces in (tau, T - D] have L = f_min, pieces
+in (T - D, T] have L = 0, monotone, D = h0m_lag_ma (the delayed step when no older unit detects). Each f_min
+read-out is a marginal statement. Every origin from base[s*-1], the top of the first-appearance stage,
+to tau is in the set by construction.
 """
 
 import csv
 import math
 import tomllib
-from dataclasses import dataclass, field
+from dataclasses import dataclass
 from pathlib import Path
 
 import numpy as np
@@ -98,6 +96,10 @@ import sim
 LOG_R_BOUNDS = (math.log(1e-5), math.log(8.0))
 TINY = 1e-300
 STATES = ("finite", "ceiling-limited", "unbounded", "zero-exposure")
+SCENARIOS = ("chart", "older", "younger")
+SPREAD_FLAG = 0.05
+FLOOR = 0.02
+VIOLATION = 1e-6
 
 
 class NoFirstAppearance(ValueError):
@@ -106,25 +108,34 @@ class NoFirstAppearance(ValueError):
 
 @dataclass(frozen=True)
 class AgeModel:
-    """ICS stage bases and their standard deviations (zero where data/timescale.csv is blank)."""
+    """Stage bases: the chart (data/timescale.csv), or shifted by the printed uncertainty (older: base +
+    unc, younger: base - unc; a blank uncertainty is 0). No uncertainty is propagated: each scenario is
+    one fixed set of bases."""
 
     timescale: sim.Timescale
     unc: np.ndarray
+    scenario: str = "chart"
+
+    def __post_init__(self):
+        if self.scenario not in SCENARIOS:
+            raise ValueError(f"scenario must be one of {SCENARIOS}")
+        if np.any(np.diff(self.base) <= 0):
+            raise ValueError("stage bases must stay strictly increasing")
 
     @classmethod
-    def load(cls, path: Path = sim.TIMESCALE_CSV) -> "AgeModel":
+    def load(cls, path: Path = sim.TIMESCALE_CSV, scenario: str = "chart") -> "AgeModel":
         with open(path, newline="") as f:
             unc = np.array([float(r["base_unc_ma"] or 0.0) for r in csv.DictReader(f)])
-        return cls(sim.Timescale.load(path), unc)
+        return cls(sim.Timescale.load(path), unc, scenario)
 
     @property
     def base(self) -> np.ndarray:
-        return self.timescale.base
+        shift = {"chart": 0.0, "older": 1.0, "younger": -1.0}[self.scenario]
+        return self.timescale.base + shift * self.unc
 
-    def draw_boundaries(self, rng: np.random.Generator, n: int) -> np.ndarray:
-        """n draws of all stage bases: independent normals, then sorted so the stages stay ordered."""
-        b = self.base + self.unc * rng.standard_normal((n, len(self.base)))
-        return np.sort(b, axis=1)
+    @property
+    def top(self) -> np.ndarray:
+        return np.concatenate([[np.nan], self.base[:-1]])
 
 
 @dataclass(frozen=True)
@@ -160,15 +171,14 @@ class Spec:
     reference_stages: int = 5
     min_units_per_class: int = 10
     domain_ma: tuple[float, float] = (0.0, 560.0)
-    classes: tuple[str, ...] = ("H0c", "H0", "H0m", "logistic", "H1")
+    classes: tuple[str, ...] = ("H0c", "H0m", "H0", "H1")
     h1_ceiling: float = 3.0
-    delays_ma: tuple[float, ...] = (0.0, 2.0, 6.0, 10.0)
-    logistic_g: tuple[float, ...] = (0.001, 0.15, 0.5, 2.0)
-    logistic_h_frac: tuple[float, ...] = (0.0, 0.5, 1.0, 1.5)
+    h0m_lag_ma: float = 10.0
     alpha: float = 0.05
     readouts: tuple[float, ...] = (1.0, 0.1, 0.01)
     cluster_shape_k: float = 2.0
-    age_draws: int = 400
+    crit_shift: float = 0.0
+    age_scenario: str = "chart"
     nodes: int = 48
 
     @classmethod
@@ -182,13 +192,12 @@ class Spec:
             domain_ma=tuple(t["older"]["domain_ma"]),
             classes=tuple(h["classes"]),
             h1_ceiling=h["h1_ceiling"],
-            delays_ma=tuple(h["delays_ma"]),
-            logistic_g=tuple(h["logistic_g"]),
-            logistic_h_frac=tuple(h["logistic_h_frac"]),
+            h0m_lag_ma=h["h0m_lag_ma"],
             alpha=inf["alpha"],
             readouts=tuple(inf["readouts"]),
             cluster_shape_k=inf["cluster_shape_k"],
-            age_draws=inf["age_draws"],
+            crit_shift=inf["crit_shift"],
+            age_scenario=inf["age_scenario"],
             nodes=inf["nodes"],
         )
 
@@ -219,20 +228,30 @@ def no_detection_probability(r: np.ndarray, vals: np.ndarray, probs: np.ndarray,
     return float(np.exp(_lse(np.log(psi).sum(axis=0) + logw)))
 
 
-def p0_bound(r: np.ndarray, m: np.ndarray, k: float, nodes: int = 48) -> float:
-    """P0_max(m): the no-detection probability when each a(t_i) is Bernoulli(m_i), the maximum over
-    all [0, 1]-valued a(t_i) with those means (convex order)."""
-    vals = np.stack([np.zeros_like(m), np.ones_like(m)], axis=1)
-    return no_detection_probability(r, vals, np.stack([1 - m, m], axis=1), k, nodes)
-
-
-def exact_count_crit(n: int, alpha: float = 0.05) -> float:
-    """The critical value: the LR value at which the Poisson upper limit for the older exposure equals the
-    exact one-sided limit given n older detections, 2 (mu - n + n log(n / mu)) with
-    mu = chi2_{2(n+1)}(1 - alpha) / 2. For n = 0 it is -2 log(alpha) = 5.99 (the rule of three); it falls
-    towards 2.71 as n grows."""
+def count_crit(n: int, alpha: float = 0.05) -> float:
+    """A declared critical value matched to the one-sided Poisson (Garwood) limit for n older detections:
+    the LR value at which the Poisson upper limit for the older exposure equals the exact one-sided limit,
+    2 (mu - n + n log(n / mu)) with mu = chi2_{2(n+1)}(1 - alpha) / 2. For n = 0 it is -2 log(alpha) = 5.99
+    (the rule of three); it falls towards 2.71 as n grows. It is exact only for fixed rates and independent
+    Poisson counts; the coverage of the whole procedure is established by simulation."""
     mu = stats.chi2.ppf(1 - alpha, 2 * (n + 1)) / 2
     return float(2 * (mu - n + (n * math.log(n / mu) if n else 0.0)))
+
+
+@dataclass(frozen=True)
+class Fit:
+    """A supremum over the reference rates and the history: value, argmax, and whether it can be trusted
+    (some start succeeded; spread is the largest gap in log-likelihood between successful starts)."""
+
+    value: float
+    theta: np.ndarray | None
+    x: np.ndarray | None
+    converged: bool
+    spread: float
+
+    @property
+    def flagged(self) -> bool:
+        return (not self.converged) or self.spread > SPREAD_FLAG
 
 
 @dataclass(frozen=True)
@@ -244,11 +263,24 @@ class Bound:
     state: str
     value: float
     ceiling: float
+    converged: bool = True
+    spread: float = 0.0
+
+
+@dataclass(frozen=True)
+class Statistic:
+    """LR_K(f) at one target f, with the fit's convergence record."""
+
+    value: float
+    converged: bool
+    spread: float
 
 
 @dataclass(frozen=True)
 class OriginSet:
-    """The origins not rejected on the grid T (ascending, first point = tau). lr is the statistic."""
+    """The origins not rejected on the grid T (ascending, first point = tau). lr is the statistic.
+    young_edge is base[s*-1], the top of the first-appearance stage: every origin from there to tau is in
+    the set by construction."""
 
     cls: str
     f_min: float
@@ -256,6 +288,7 @@ class OriginSet:
     T: np.ndarray
     lr: np.ndarray
     domain_hi: float
+    young_edge: float
 
     @property
     def keep(self) -> np.ndarray:
@@ -263,8 +296,8 @@ class OriginSet:
 
     @property
     def runs(self) -> list[tuple[float, float]]:
-        """Maximal runs of unrejected grid points, each widened to the next grid point (the bracket
-        in which the boundary lies); the last run reaches the domain edge when it is unbounded."""
+        """Maximal runs of unrejected grid points from tau up, each widened to the next grid point (the
+        bracket in which the boundary lies); the last run reaches the domain edge when it is unbounded."""
         out, i, keep = [], 0, self.keep
         while i < len(keep):
             if keep[i]:
@@ -277,6 +310,12 @@ class OriginSet:
             else:
                 i += 1
         return out
+
+    @property
+    def complete_runs(self) -> list[tuple[float, float]]:
+        """The runs with the younger part included: the first starts at base[s*-1], not at tau."""
+        runs = self.runs
+        return [(float(self.young_edge), runs[0][1])] + runs[1:] if runs else []
 
     @property
     def unbounded(self) -> bool:
@@ -298,35 +337,75 @@ class OriginSet:
 
 
 @dataclass
-class Window:
-    """Everything the likelihood needs about one candidate origin T: per-unit probabilities that the
-    latent age falls in the reference regime (Qref) and in (tau, T] (Qmid), split into units whose
-    values do not depend on the boundary draw (inv, with the reference units) and those that do (var),
-    each sorted by cluster for segment sums."""
+class Block:
+    """Units of one kind in a window, sorted by cluster. cpos: each unit's cluster position; seg_*: the
+    segments of equal cluster (reduceat starts and cluster positions). Entries (m_*) are the nonzero
+    (unit, piece) weights, sorted by unit; m_starts and m_units index the units that have any."""
 
+    n: int
+    cls: np.ndarray
+    cpos: np.ndarray
+    seg_starts: np.ndarray
+    seg_pos: np.ndarray
+    d: np.ndarray | None = None
+    qref: np.ndarray | None = None
+    rest: np.ndarray | None = None
+    m_unit: np.ndarray | None = None
+    m_piece: np.ndarray | None = None
+    m_w: np.ndarray | None = None
+    m_starts: np.ndarray | None = None
+    m_units: np.ndarray | None = None
+
+    @property
+    def m(self) -> int:
+        return 0 if self.m_w is None else len(self.m_w)
+
+
+@dataclass
+class Window:
+    """Everything the likelihood needs about one partition of (tau, T] into pieces. piece_lo and piece_hi
+    are the kept pieces (those some older unit overlaps); W (older units x kept pieces) holds the overlap
+    fractions; c are the target coefficients (None without exposure)."""
+
+    edges: np.ndarray
     T: float
+    piece_lo: np.ndarray
+    piece_hi: np.ndarray
+    W: np.ndarray
+    qmid: np.ndarray
     impossible: bool
     has_det: bool
-    qmean: np.ndarray
-    all_ids: np.ndarray
-    pure: np.ndarray
-    inv: dict
-    var: dict | None
-    var_pos: np.ndarray | None
+    K: int
+    ref: Block
+    old0: Block
+    old1: Block
+    c: np.ndarray | None
+
+    @property
+    def P(self) -> int:
+        return len(self.piece_lo)
+
+
+def _segsum(b: Block, a: np.ndarray) -> np.ndarray:
+    out = np.zeros((b.n, a.shape[1]))
+    out[b.m_units] = np.add.reduceat(a, b.m_starts, axis=0)
+    return out
 
 
 class Problem:
-    """One data set analysed under one specification: first appearance, reference window, boundary
-    draws, and the profile likelihood machinery."""
+    """One data set analysed under one specification: first appearance, reference window, reference
+    rates, and the likelihood and optimisation machinery."""
 
-    def __init__(self, units: Units, spec: Spec, age: AgeModel, seed: int | np.random.SeedSequence = 0):
+    def __init__(self, units: Units, spec: Spec, age: AgeModel):
+        if age.scenario != spec.age_scenario:
+            raise ValueError(f"age model scenario {age.scenario!r} differs from the specification's {spec.age_scenario!r}")
         self.spec, self.age = spec, age
-        ts = age.timescale
         certain = (units.d == 1) & (units.young == units.old)
         if not certain.any():
             raise NoFirstAppearance("no certain detection")
+        base = age.base
         self.s_star = int(units.old[certain].max())
-        self.tau_nom = float(age.base[self.s_star])
+        self.tau = float(base[self.s_star])
         first = self.s_star - spec.reference_stages + 1
         is_ref = (units.old <= self.s_star) & (units.young >= first)
         is_old = units.old > self.s_star
@@ -340,359 +419,528 @@ class Problem:
         self.n_dropped_uncalibrated = int(((is_ref | is_old) & ~keep_cls).sum())
         self.n_dropped_outside = int((~(is_ref | is_old)).sum())
         ref, old = units.take(is_ref & keep_cls), units.take(is_old & keep_cls)
+        ref = ref.take(np.argsort(ref.cluster, kind="stable"))
+        old = old.take(np.argsort(old.cluster, kind="stable"))
         remap = np.full(len(counts), -1)
         remap[self.calibrated] = np.arange(len(self.calibrated))
         self.n_cls = len(self.calibrated)
-        clusters, inv = np.unique(np.concatenate([ref.cluster, old.cluster]), return_inverse=True)
-        self.rc, self.rd, self.rk = remap[ref.cls], ref.d, inv[: len(ref)]
-        self.oc, self.od, self.ok = remap[old.cls], old.d, inv[len(ref):]
+        self.cluster_ids = np.unique(np.concatenate([ref.cluster, old.cluster]))
+        self.rc, self.rd, self.rcl = remap[ref.cls], ref.d, np.searchsorted(self.cluster_ids, ref.cluster)
+        self.oc, self.od, self.ocl = remap[old.cls], old.d, np.searchsorted(self.cluster_ids, old.cluster)
         self.n_ref, self.n_old = len(ref), len(old)
-        S = spec.age_draws
-        self.B = age.draw_boundaries(np.random.default_rng(seed), S)
-        self.tau_s = self.B[:, self.s_star]
-        self.lo = self.B[:, old.young - 1]
-        self.hi = self.B[:, old.old]
+        self.lo, self.hi = base[old.young - 1], base[old.old]
         self.width = self.hi - self.lo
-        self.Qref = np.clip((np.minimum(self.hi, self.tau_s[:, None]) - self.lo) / self.width, 0.0, 1.0)
-        self.T_flat = float(self.hi.max()) if self.n_old else self.tau_nom
+        self.Qref = np.clip((np.minimum(self.hi, self.tau) - self.lo) / self.width, 0.0, 1.0) if self.n_old else np.zeros(0)
+        self.T_flat = float(self.hi.max()) if self.n_old else self.tau
         self.u, self.logw = gamma_nodes(spec.cluster_shape_k, spec.nodes)
+        self.n_fits = self.n_flagged = 0
         self._windows: dict = {}
-        self._cache: dict = {}
-        self._th = np.full(self.n_cls, math.log(0.1))
-        self.r_ref = np.exp(self._profile_theta(lambda r: self._ell_member(self.window(self.tau_nom), r, "const", 0.0, 1.0)))
+        self._const: dict = {}
+        self._profiles: dict = {}
+        self._prev: dict = {}
+        self.r_ref = np.full(self.n_cls, 0.1)
         self._th = np.log(self.r_ref)
+        _, self._th, _ = self._profile(self.window((self.tau,), ref_only=True), np.zeros(0), np.zeros(0), np.zeros(0), False)
+        self.r_ref = np.exp(self._th)
+        self._wr = self.r_ref[self.oc]
 
     # --- windows -----------------------------------------------------------------------------
 
-    def window(self, T: float, all_var: bool = False) -> Window:
-        T = max(float(T), float(self.tau_s.min()))
-        key = (round(T, 9), all_var)
-        if key in self._windows:
-            return self._windows[key]
-        if len(self._windows) > 150:
-            self._windows.clear()
-        w = self._build_window(T, all_var)
-        self._windows[key] = w
-        return w
+    def edges(self, T: float, lag: float = 0.0) -> tuple[float, ...]:
+        """Piece edges for origin T: tau, the stage bases strictly between tau and T, T - lag when it lies
+        inside (tau, T), and T. Just (tau,) when T <= tau."""
+        if T <= self.tau:
+            return (self.tau,)
+        b = self.age.base
+        pts = [self.tau, float(T), *b[(b > self.tau + 1e-9) & (b < T - 1e-9)]]
+        if lag > 0 and self.tau + 1e-9 < T - lag < T - 1e-9:
+            pts.append(T - lag)
+        return tuple(float(v) for v in np.unique(np.round(pts, 9)))
 
-    def _build_window(self, T: float, all_var: bool) -> Window:
+    def edges_const(self, T: float) -> tuple[float, ...]:
+        return (self.tau, float(T)) if T > self.tau else (self.tau,)
+
+    def window(self, edges, ref_only: bool = False) -> Window:
+        key = (tuple(round(float(e), 9) for e in edges), ref_only)
+        if key not in self._windows:
+            if len(self._windows) > 400:
+                self._windows.clear()
+            self._windows[key] = self._build_window(np.array(key[0]), ref_only)
+        return self._windows[key]
+
+    def _build_window(self, edges: np.ndarray, ref_only: bool) -> Window:
         n = self.n_old
-        if n:
-            over = np.minimum(self.hi, T) - np.maximum(self.lo, self.tau_s[:, None])
-            Qmid = np.clip(over / self.width, 0.0, 1.0)
-            active = (self.Qref.max(0) > 0) | (Qmid.max(0) > 0)
-            varies = (np.ptp(self.Qref, 0) > 1e-12) | (np.ptp(Qmid, 0) > 1e-12)
-            var_mask = active & (varies | all_var)
-            inv_mask = active & ~var_mask
-            qmean = Qmid.mean(0)
+        plo, phi = edges[:-1], edges[1:]
+        if n and len(plo):
+            ov = np.clip(np.minimum(self.hi[:, None], phi[None]) - np.maximum(self.lo[:, None], plo[None]), 0.0, None) / self.width[:, None]
         else:
-            Qmid = np.zeros((len(self.tau_s), 0))
-            active = var_mask = inv_mask = np.zeros(0, bool)
-            qmean = np.zeros(0)
-        impossible = bool(np.any((self.od == 1) & ~active))
-        has_det = bool(np.any((self.od == 1) & (qmean > 0)))
-        cluster = np.concatenate([self.rk, self.ok[inv_mask]])
-        order = np.argsort(cluster, kind="stable")
-        cl = cluster[order]
-        starts = np.flatnonzero(np.r_[True, cl[1:] != cl[:-1]])
-        inv = dict(
-            cls=np.concatenate([self.rc, self.oc[inv_mask]])[order],
-            d=np.concatenate([self.rd, self.od[inv_mask]])[order],
-            qref=np.concatenate([np.ones(self.n_ref), self.Qref[0, inv_mask]])[order],
-            qmid=np.concatenate([np.zeros(self.n_ref), Qmid[0, inv_mask]])[order],
-            starts=starts,
-            ids=cl[starts],
-        )
-        var = var_pos = None
-        all_ids = inv["ids"]
-        if var_mask.any():
-            vorder = np.argsort(self.ok[var_mask], kind="stable")
-            vcl = self.ok[var_mask][vorder]
-            vstarts = np.flatnonzero(np.r_[True, vcl[1:] != vcl[:-1]])
-            var = dict(
-                cls=self.oc[var_mask][vorder],
-                d=self.od[var_mask][vorder],
-                qref=self.Qref[:, var_mask][:, vorder],
-                qmid=Qmid[:, var_mask][:, vorder],
-                lo=self.lo[:, var_mask][:, vorder],
-                hi=self.hi[:, var_mask][:, vorder],
-                starts=vstarts,
-                ids=vcl[vstarts],
-            )
-            all_ids = np.union1d(inv["ids"], var["ids"])
-            var_pos = np.searchsorted(all_ids, var["ids"])
-        inv["pos"] = np.searchsorted(all_ids, inv["ids"])
-        pure = np.ones(len(all_ids), bool)
-        if var is not None:
-            pure[var_pos] = False
-        return Window(T, impossible, has_det, qmean, all_ids, pure, inv, var, var_pos)
+            ov = np.zeros((n, len(plo)))
+        keep = ov.sum(axis=0) > 1e-12
+        W = ov[:, keep]
+        qmid = W.sum(axis=1)
+        active = ((self.Qref > 0) | (qmid > 1e-12)) & (not ref_only)
+        impossible = bool(np.any((self.od == 1) & ~active)) and not ref_only
+        has_det = bool(np.any((self.od == 1) & (qmid > 1e-12)))
+        rest = np.clip(1.0 - self.Qref - qmid, 0.0, 1.0)
+        ids = np.unique(np.concatenate([self.rcl, self.ocl[active]]))
+        ref = self._block(self.rcl, self.rc, ids, d=self.rd)
+        old0 = self._old_block(active & (self.od == 0), ids, W, rest)
+        old1 = self._old_block(active & (self.od == 1), ids, W, rest)
+        c = None
+        if not ref_only and n:
+            wr = self.r_ref[self.oc]
+            exposure = float(wr @ qmid)
+            c = (wr @ W) / exposure if exposure > 0 else None
+        return Window(edges, float(edges[-1]), plo[keep], phi[keep], W, qmid, impossible, has_det, len(ids), ref, old0, old1, c)
+
+    @staticmethod
+    def _block(cluster: np.ndarray, cls: np.ndarray, ids: np.ndarray, **kw) -> Block:
+        cpos = np.searchsorted(ids, cluster)
+        starts = np.flatnonzero(np.r_[True, cpos[1:] != cpos[:-1]]) if len(cpos) else np.zeros(0, int)
+        return Block(len(cpos), cls, cpos, starts, cpos[starts], **kw)
+
+    def _old_block(self, mask: np.ndarray, ids: np.ndarray, W: np.ndarray, rest: np.ndarray) -> Block:
+        idx = np.flatnonzero(mask)
+        b = self._block(self.ocl[idx], self.oc[idx], ids, qref=self.Qref[idx], rest=rest[idx])
+        ui, pi = np.nonzero(W[idx] > 1e-12) if W.shape[1] else (np.zeros(0, int), np.zeros(0, int))
+        if len(ui):
+            b.m_unit, b.m_piece, b.m_w = ui, pi, W[idx][ui, pi]
+            b.m_starts = np.flatnonzero(np.r_[True, ui[1:] != ui[:-1]])
+            b.m_units = ui[b.m_starts]
+        return b
 
     # --- likelihood --------------------------------------------------------------------------
 
-    @staticmethod
-    def _phi(d: np.ndarray, D: np.ndarray, axis: int) -> np.ndarray:
-        """log of the outcome probability given u: log D for a detection, log(1 - D) for none. axis is the
-        units axis of D."""
-        out = np.log1p(-np.minimum(D, 1 - 1e-15))
-        hit = d == 1
-        if hit.any():
-            idx = [slice(None)] * D.ndim
-            idx[axis] = hit
-            out[tuple(idx)] = np.log(np.maximum(D[tuple(idx)], TINY))
-        return out
+    def _eval(self, win: Window, theta: np.ndarray, x: np.ndarray, L: np.ndarray, U: np.ndarray, bound: bool, grad: bool = True):
+        """Log-likelihood and its gradient with respect to (log r, x) for the piece means x. bound=False is
+        the exact piecewise-constant likelihood; bound=True the chord and Jensen bound on [L, U]."""
+        if win.impossible:
+            return (-math.inf, np.zeros(len(theta) + len(x))) if grad else -math.inf
+        r, u = np.exp(theta), self.u
+        P = len(x)
+        Lk = np.zeros((win.K, len(u)))
+        rb, o0, o1 = win.ref, win.old0, win.old1
 
-    def _ell(self, w: Window, Di: np.ndarray, Dv: np.ndarray | None) -> float:
-        if w.impossible:
-            return -math.inf
-        J = len(self.u)
-        Lk = np.zeros((len(w.all_ids), J))
-        Lk[w.inv["pos"]] = np.add.reduceat(self._phi(w.inv["d"], Di, 0), w.inv["starts"], axis=0)
-        total = float(_lse(Lk[w.pure] + self.logw).sum()) if w.pure.any() else 0.0
-        if w.var is not None:
-            S = Dv.shape[0]
-            Lv = np.add.reduceat(self._phi(w.var["d"], Dv, 1), w.var["starts"], axis=1) + Lk[w.var_pos][None]
-            per_s = _lse(Lv + self.logw).sum(axis=1)
-            total += float(_lse(per_s) - math.log(S))
-        return total
+        ru_r = r[rb.cls][:, None] * u
+        d1 = rb.d == 1
+        lp = np.where(d1[:, None], np.log(np.maximum(-np.expm1(-ru_r), TINY)), -ru_r)
+        if rb.n:
+            Lk[rb.seg_pos] += np.add.reduceat(lp, rb.seg_starts, axis=0)
 
-    def _ell_member(self, w: Window, r: np.ndarray, kind: str, x: float, C: float, atoms: np.ndarray | None = None) -> float:
-        """Log-likelihood at reference rates r of one history member.
+        if bound:
+            width = U - L
+            pos = width > 0
+            s = np.where(pos, (x - L) / np.where(pos, width, 1.0), 0.0)
 
-        const: a = x on (tau, T].  bound: duty cycle x at height C (Bernoulli bound, see the module
-        docstring).  logistic: a(t) at the latent-age nodes `atoms` (S, n_var, Q)."""
-        u = self.u
-        A1 = -np.expm1(-np.outer(r, u))
-        inv, var = w.inv, w.var
-        if kind == "const":
-            Ax = -np.expm1(-np.outer(r * x, u))
-            mid_i = inv["qmid"][:, None] * Ax[inv["cls"]]
-            mid_v = var["qmid"][:, :, None] * Ax[var["cls"]][None] if var else None
-        elif kind == "bound":
-            AC = -np.expm1(-np.outer(r * C, u))
-            Ax = -np.expm1(-np.outer(r * x, u))
-            mid_i = inv["qmid"][:, None] * np.where(inv["d"][:, None] == 0, (x / C) * AC[inv["cls"]], Ax[inv["cls"]])
-            mid_v = (
-                var["qmid"][:, :, None] * np.where(var["d"][None, :, None] == 0, (x / C) * AC[var["cls"]][None], Ax[var["cls"]][None])
-                if var
-                else None
-            )
-        else:
-            mid_i = inv["qmid"][:, None] * 0.0
-            Aa = -np.expm1(-(r[var["cls"]][None, :, None, None] * u[None, None, None, :]) * atoms[..., None]) if var else None
-            mid_v = var["qmid"][:, :, None] * Aa.mean(axis=2) if var else None
-        Di = inv["qref"][:, None] * A1[inv["cls"]] + mid_i
-        Dv = var["qref"][:, :, None] * A1[var["cls"]][None] + mid_v if var else None
-        return self._ell(w, Di, Dv)
+        cache0 = None
+        if o0.n:
+            ru0 = r[o0.cls][:, None] * u
+            e1 = np.exp(-ru0)
+            P0 = o0.qref[:, None] * e1 + o0.rest[:, None]
+            if o0.m:
+                R = ru0[o0.m_unit]
+                if bound:
+                    Lm, Um, sm = L[o0.m_piece][:, None], U[o0.m_piece][:, None], s[o0.m_piece][:, None]
+                    eL, eU = np.exp(-R * Lm), np.exp(-R * Um)
+                    chi = eL + sm * (eU - eL)
+                else:
+                    chi = np.exp(-R * x[o0.m_piece][:, None])
+                P0 = P0 + _segsum(o0, o0.m_w[:, None] * chi)
+            Lk[o0.seg_pos] += np.add.reduceat(np.log(np.maximum(P0, TINY)), o0.seg_starts, axis=0)
+            cache0 = (ru0, e1, P0, R, chi) if o0.m else (ru0, e1, P0, None, None)
 
-    def _profile_theta(self, fn) -> np.ndarray:
-        """Maximise fn(r) over the reference rates; returns log r at the optimum and keeps the value."""
+        cache1 = None
+        if o1.n:
+            ru1 = r[o1.cls][:, None] * u
+            e1b = np.exp(-ru1)
+            D = o1.qref[:, None] * (1.0 - e1b)
+            if o1.m:
+                R1 = ru1[o1.m_unit]
+                E1 = np.exp(-R1 * x[o1.m_piece][:, None])
+                D = D + _segsum(o1, o1.m_w[:, None] * (1.0 - E1))
+            Lk[o1.seg_pos] += np.add.reduceat(np.log(np.maximum(D, TINY)), o1.seg_starts, axis=0)
+            cache1 = (ru1, e1b, D, R1, E1) if o1.m else (ru1, e1b, D, None, None)
+
+        z = Lk + self.logw
+        lc = _lse(z, axis=1)
+        total = float(lc.sum())
+        if not grad:
+            return total
+        pi = np.exp(z - lc[:, None])
+        g_th, g_x = np.zeros(self.n_cls), np.zeros(P)
+
+        pu = pi[rb.cpos]
+        dl = np.where(d1[:, None], ru_r / np.expm1(ru_r), -ru_r)
+        g_th += np.bincount(rb.cls, weights=(pu * dl).sum(axis=1), minlength=self.n_cls)
+
+        if cache0 is not None:
+            ru0, e1, P0, R, chi = cache0
+            gi = np.where(P0 > TINY, pi[o0.cpos] / np.maximum(P0, TINY), 0.0)
+            dth = -o0.qref[:, None] * ru0 * e1
+            if o0.m:
+                if bound:
+                    dchi_th = -R * ((1.0 - sm) * Lm * eL + sm * Um * eU)
+                    dchi_x = np.where(pos[o0.m_piece][:, None], (eU - eL) / np.where(pos, width, 1.0)[o0.m_piece][:, None], 0.0)
+                else:
+                    dchi_th = -R * x[o0.m_piece][:, None] * chi
+                    dchi_x = -R * chi
+                dth = dth + _segsum(o0, o0.m_w[:, None] * dchi_th)
+                g_x += np.bincount(o0.m_piece, weights=o0.m_w * (gi[o0.m_unit] * dchi_x).sum(axis=1), minlength=P)
+            g_th += np.bincount(o0.cls, weights=(gi * dth).sum(axis=1), minlength=self.n_cls)
+
+        if cache1 is not None:
+            ru1, e1b, D, R1, E1 = cache1
+            gi = np.where(D > TINY, pi[o1.cpos] / np.maximum(D, TINY), 0.0)
+            dth = o1.qref[:, None] * ru1 * e1b
+            if o1.m:
+                dth = dth + _segsum(o1, o1.m_w[:, None] * R1 * x[o1.m_piece][:, None] * E1)
+                g_x += np.bincount(o1.m_piece, weights=o1.m_w * (gi[o1.m_unit] * R1 * E1).sum(axis=1), minlength=P)
+            g_th += np.bincount(o1.cls, weights=(gi * dth).sum(axis=1), minlength=self.n_cls)
+        return total, np.concatenate([g_th, g_x])
+
+    # --- fits --------------------------------------------------------------------------------
+
+    def _profile(self, win: Window, x, L, U, bound: bool, th0: np.ndarray | None = None):
+        """Maximise over log r at fixed x (L-BFGS-B). Returns (value, theta, converged)."""
+        if win.impossible:
+            return -math.inf, self._th, True
+        n = self.n_cls
 
         def obj(th):
-            v = fn(np.exp(th))
-            return -v if np.isfinite(v) else 1e12
+            v, g = self._eval(win, th, x, L, U, bound)
+            return (-v, -g[:n]) if np.isfinite(v) else (1e12, np.zeros(n))
 
         res = optimize.minimize(
-            obj, self._th, method="L-BFGS-B", bounds=[LOG_R_BOUNDS] * self.n_cls, options={"ftol": 1e-10, "gtol": 1e-5}
+            obj, self._th if th0 is None else th0, jac=True, method="L-BFGS-B", bounds=[LOG_R_BOUNDS] * n,
+            options={"ftol": 1e-12, "gtol": 1e-6, "maxiter": 300},
         )
-        self._last = -res.fun if res.fun < 1e11 else -math.inf
+        ok = bool(res.success or np.abs(res.jac).max() < 1e-4)
         if res.fun < 1e11:
             self._th = res.x
-        return res.x
+            return -res.fun, res.x, ok
+        return -math.inf, res.x, False
 
-    def ell_p(self, kind: str, T: float, x: float, C: float = 1.0) -> float:
-        """Profile (over the reference rates) log-likelihood of one history member at origin T."""
-        key = (kind, round(float(T), 9), round(float(x), 12), C)
-        if key in self._cache:
-            return self._cache[key]
-        w = self.window(T)
-        if w.impossible:
-            val = -math.inf
+    def _record(self, fit: Fit) -> Fit:
+        self.n_fits += 1
+        self.n_flagged += int(fit.flagged)
+        return fit
+
+    def ell_const(self, T: float, x: float) -> float:
+        """Profile (over the reference rates) log-likelihood of the constant history a = x on (tau, T]."""
+        key = (round(float(T), 9), round(float(x), 12))
+        if key not in self._profiles:
+            win = self.window(self.edges_const(T))
+            xv = np.full(win.P, float(x))
+            self._profiles[key] = self._profile(win, xv, xv, xv, False)[:2]
+        return self._profiles[key][0]
+
+    def const_max(self, T: float, lo: float = 0.0, hi: float = 1.0) -> tuple[float, float]:
+        """Maximum over constant x in [lo, hi] of the exact profile log-likelihood, and its argmax. With no
+        detected older unit the likelihood falls in x, so the maximum is at lo."""
+        key = (round(float(T), 9), lo, hi)
+        if key in self._const:
+            return self._const[key]
+        win = self.window(self.edges_const(T))
+        n = self.n_cls
+        if win.impossible:
+            out = (-math.inf, lo)
+        elif not win.has_det or hi - lo < 1e-9:
+            v, _, ok = self._profile(win, np.full(win.P, lo), np.zeros(win.P), np.zeros(win.P), False)
+            self._record(Fit(v, None, None, ok, 0.0))
+            out = (v, lo)
         else:
-            self._profile_theta(lambda r: self._ell_member(w, r, kind, x, C))
-            val = self._last
-        if len(self._cache) > 20000:
-            self._cache.clear()
-        self._cache[key] = val
-        return val
+            def obj(z):
+                v, g = self._eval(win, z[:n], np.full(win.P, z[n]), None, None, False)
+                if not np.isfinite(v):
+                    return 1e12, np.zeros(n + 1)
+                return -v, -np.r_[g[:n], g[n:].sum()]
 
-    def _maximise(self, kind: str, T: float, lo: float, hi: float, C: float) -> tuple[float, float]:
-        """Max over x in [lo, hi] of ell_p; the boundary when no older unit is detected (ell decreases in x)."""
-        w = self.window(T)
-        if w.impossible:
-            return -math.inf, lo
-        f = lambda x: self.ell_p(kind, T, x, C)
-        if not w.has_det or hi - lo < 1e-9:
-            return f(lo), lo
-        step = min(0.02, (hi - lo) / 4)
-        if f(lo) >= f(lo + step) and f(lo) >= f(hi):
-            return f(lo), lo
-        res = optimize.minimize_scalar(lambda x: -f(x), bounds=(lo, hi), method="bounded", options={"xatol": 5e-3})
-        best = max([(f(lo), lo), (f(hi), hi), (-res.fun, float(res.x))])
-        return best
+            runs = []
+            for frac in (0.3, 0.7):
+                res = optimize.minimize(
+                    obj, np.r_[self._th, lo + frac * (hi - lo)], jac=True, method="L-BFGS-B",
+                    bounds=[LOG_R_BOUNDS] * n + [(lo, hi)], options={"ftol": 1e-12, "gtol": 1e-6, "maxiter": 300},
+                )
+                runs.append((-res.fun, res.x, bool(res.success or np.abs(res.jac).max() < 1e-4)))
+            ok = [r for r in runs if r[2]]
+            best = max(runs, key=lambda r: r[0])
+            spread = max(r[0] for r in ok) - min(r[0] for r in ok) if ok else 0.0
+            self._record(Fit(best[0], best[1][:n], best[1][n:], bool(ok), spread))
+            self._th = best[1][:n]
+            out = (best[0], float(best[1][n]))
+        self._const[key] = out
+        return out
 
-    def hat(self, kind: str, T: float, C: float = 1.0) -> tuple[float, float]:
-        """The class maximum over x in [0, C] and its argmax."""
-        return self._maximise(kind, T, 0.0, C, C)
+    def _constraints(self, win: Window, mono: bool, target: bool, f: float):
+        n, P = self.n_cls, win.P
+        rows, lb = [], []
+        if target:
+            rows.append(np.r_[np.zeros(n), win.c])
+            lb.append(f)
+        if mono:
+            for p in range(P - 1):
+                row = np.zeros(n + P)
+                row[n + p], row[n + p + 1] = 1.0, -1.0
+                rows.append(row)
+                lb.append(0.0)
+        return (np.array(rows), np.array(lb)) if rows else (None, None)
 
-    def null(self, kind: str, T: float, f_min: float, C: float = 1.0) -> float:
-        """Maximum over x in [f_min, C]: the hypothesis a >= f_min on (tau, T]."""
-        return self._maximise(kind, T, f_min, C, C)[0]
+    def _starts(self, win: Window, L: np.ndarray, U: np.ndarray, mono: bool, f: float, target: bool, key, x_const) -> list[np.ndarray]:
+        """The start (a), the constant history x_const = (x, theta) when given or else an even allocation
+        at the reference rates, the hiding start (b), and the previous solution (c)."""
+        P = win.P
+        if x_const is not None:
+            starts = [np.r_[x_const[1], np.clip(np.full(P, x_const[0]), L, U)]]
+        else:
+            x_even = np.clip(np.full(P, f), L, U) if target else L + 0.25 * (U - L)
+            starts = [np.r_[np.log(self.r_ref), x_even]]
+        x_hide = L + FLOOR * (U - L)
+        if target:
+            need = f - win.c @ x_hide
+            order = np.arange(P) if mono else np.argsort(win.c / (win.piece_hi - win.piece_lo), kind="stable")
+            for p in order:
+                if need <= 1e-14:
+                    break
+                add = min(U[p] - x_hide[p], need / win.c[p])
+                x_hide[p] += add
+                need -= add * win.c[p]
+        starts.append(np.r_[self._th, x_hide])
+        if target:
+            vertex = self._vertex_start(win, L, U, mono, f)
+            if vertex is not None:
+                starts.append(np.r_[self._th, vertex])
+        if key in self._prev:
+            starts.append(self._prev[key])
+        return starts
+
+    def _vertex_start(self, win: Window, L: np.ndarray, U: np.ndarray, mono: bool, f: float) -> np.ndarray | None:
+        """The best of the allocations that put the whole target on one piece (a step from the youngest piece
+        for H0m), judged by the likelihood at the current rates: with finite k the supremum has local optima
+        at such vertices."""
+        base = L + FLOOR * (U - L)
+        best = None
+        for p in range(win.P):
+            idx = np.arange(p + 1) if mono else np.array([p])
+            level = (f - win.c @ base + win.c[idx] @ base[idx]) / win.c[idx].sum()
+            if level > U[idx].min() + 1e-12:
+                continue
+            x = base.copy()
+            x[idx] = np.maximum(level, base[idx])
+            v = self._eval(win, self._th, x, L, U, True, grad=False)
+            if np.isfinite(v) and (best is None or v > best[0]):
+                best = (v, x)
+        return None if best is None else best[1]
+
+    def bound_sup(self, win: Window, L: np.ndarray, U: np.ndarray, mono: bool = False, f: float = 0.0, x_const: tuple[float, np.ndarray] | None = None) -> Fit:
+        """sup of the bound log-likelihood over (log r, x) with x_p in [L_p, U_p], monotone non-decreasing
+        towards tau when mono, and the target sum c_p x_p >= f. x_const = (x, theta) adds the constant
+        history x as a start."""
+        P, n = win.P, self.n_cls
+        if win.impossible:
+            return Fit(-math.inf, None, None, True, 0.0)
+        target = P > 0 and win.c is not None and f > win.c @ L + 1e-12
+        if (not win.has_det and not target) or np.all(U - L < 1e-12):
+            if target:
+                return self._record(Fit(-math.inf, None, None, False, 0.0))
+            v, th, ok = self._profile(win, L.copy(), L, U, True)
+            return self._record(Fit(v, th, L.copy(), ok, 0.0))
+        A0, lb0 = self._constraints(win, mono, target, f)
+        key = (win.edges.tobytes(), L.tobytes(), U.tobytes(), mono, target)
+        starts = self._starts(win, L, U, mono, f, target, key, x_const)
+        zlo, zhi = np.r_[[LOG_R_BOUNDS[0]] * n, L], np.r_[[LOG_R_BOUNDS[1]] * n, U]
+        free = np.r_[np.ones(n, bool), U - L > 1e-12]
+        fidx = np.flatnonzero(free)
+        zfix = np.r_[np.zeros(n), L]
+        A, lb = None, None
+        if A0 is not None:
+            lb = lb0 - A0[:, ~free] @ zfix[~free]
+            A = A0[:, free]
+            nnz = (A != 0).sum(axis=1)
+            if np.any((nnz == 0) & (lb > VIOLATION)):
+                return self._record(Fit(-math.inf, None, None, False, 0.0))
+            for i in np.flatnonzero(nnz == 1):
+                j = int(np.flatnonzero(A[i])[0])
+                if A[i, j] > 0:
+                    zlo[fidx[j]] = max(zlo[fidx[j]], lb[i] / A[i, j])
+                else:
+                    zhi[fidx[j]] = min(zhi[fidx[j]], lb[i] / A[i, j])
+            keep = nnz >= 2
+            A, lb = (A[keep], lb[keep]) if keep.any() else (None, None)
+        flo, fhi = zlo[fidx], zhi[fidx]
+        if np.any(flo > fhi + 1e-12):
+            return self._record(Fit(-math.inf, None, None, False, 0.0))
+
+        def expand(zf):
+            z = zfix.copy()
+            z[fidx] = zf
+            return z
+
+        def obj(zf):
+            z = expand(zf)
+            v, g = self._eval(win, z[:n], z[n:], L, U, True)
+            return (-v, -g[fidx]) if np.isfinite(v) else (1e12, np.zeros(len(fidx)))
+
+        def violation(x):
+            return 0.0 if A0 is None else max(0.0, float((lb0 - A0[:, n:] @ x).max()))
+
+        results = []
+        for z0 in starts:
+            z0 = np.clip(z0[fidx], flo, fhi)
+            if A is None:
+                res = optimize.minimize(obj, z0, jac=True, method="L-BFGS-B", bounds=list(zip(flo, fhi)),
+                                        options={"ftol": 1e-12, "gtol": 1e-6, "maxiter": 400})
+                ok = bool(res.success or np.abs(res.jac).max() < 1e-4)
+            else:
+                res = optimize.minimize(obj, z0, jac=True, method="SLSQP", bounds=optimize.Bounds(flo, fhi),
+                                        constraints=[optimize.LinearConstraint(A, lb, np.inf)],
+                                        options={"ftol": 1e-10, "maxiter": 300})
+                ok = bool(res.success)
+            z = expand(np.clip(res.x, flo, fhi))
+            v = self._eval(win, z[:n], z[n:], L, U, True, grad=False)
+            if np.isfinite(v) and violation(z[n:]) <= VIOLATION:
+                results.append((v, z, ok))
+        if not results:
+            return self._record(Fit(-math.inf, None, None, False, 0.0))
+        ok = [r for r in results if r[2]]
+        best = max(ok or results, key=lambda r: r[0])
+        spread = max(r[0] for r in ok) - min(r[0] for r in ok) if ok else 0.0
+        self._prev[key] = best[1]
+        self._th = best[1][:n]
+        return self._record(Fit(best[0], best[1][:n], best[1][n:], bool(ok), spread))
+
+    # --- target and critical value -----------------------------------------------------------
+
+    def _qmid(self, T: float) -> np.ndarray:
+        over = np.minimum(self.hi, T) - np.maximum(self.lo, self.tau)
+        return np.clip(over / self.width, 0.0, 1.0) if self.n_old else np.zeros(0)
+
+    def exposure(self, T: float) -> float:
+        """The integrated reference exposure: sum_i r_i Qmid_i(T), with the reference rates r_ref."""
+        return float(self._wr @ self._qmid(T)) if self.n_old else 0.0
 
     def n_older_detections(self, T: float) -> int:
         """Older units that detected and have part of their age range in (tau, T]."""
-        return int(((self.od == 1) & (self.window(T).qmean > 0)).sum())
+        return int(((self.od == 1) & (self._qmid(T) > 0)).sum())
 
     def crit(self, T: float) -> float:
-        """The critical value at origin T (module docstring)."""
-        return exact_count_crit(self.n_older_detections(T), self.spec.alpha)
+        """The critical value at origin T: count_crit of the older detections in (tau, T] plus crit_shift."""
+        return count_crit(self.n_older_detections(T), self.spec.alpha) + self.spec.crit_shift
 
-    def exposure(self, T: float, r: np.ndarray | None = None) -> float:
-        """The integrated reference exposure: sum_i r_i E[1{tau < t_i <= T}]."""
-        w = self.window(T)
-        r = self.r_ref if r is None else r
-        return float(w.qmean @ r[self.oc]) if self.n_old else 0.0
+    def ceiling(self, cls: str) -> float:
+        return self.spec.h1_ceiling if cls == "H1" else 1.0
 
-    # --- bounds ------------------------------------------------------------------------------
+    # --- f* and the statistic at a target ----------------------------------------------------
 
-    def _scalar_fstar(self, cls: str, kind: str, T: float, C: float, crit: float) -> Bound:
-        if self.exposure(T) <= 0:
-            return Bound(cls, T, "zero-exposure", math.nan, C)
-        hat, x_hat = self.hat("const", T, C)
-        lr = lambda x: 2 * (hat - self.ell_p(kind, T, x, C))
-        if not np.isfinite(hat):
-            return Bound(cls, T, "finite", 0.0, C)
-        if lr(C) <= crit:
-            return Bound(cls, T, "ceiling-limited", C, C)
-        root = optimize.brentq(lambda x: lr(x) - crit, x_hat, C, xtol=1e-4, rtol=1e-4)
-        return Bound(cls, T, "finite", float(root), C)
-
-    def _h0m_fstar(self, T: float, crit: float) -> Bound:
-        if self.exposure(T) <= 0:
-            return Bound("H0m", T, "zero-exposure", math.nan, 1.0)
-        delays = self.spec.delays_ma
-        hats = {d: self.hat("const", T - d) for d in delays}
-        class_hat = max(h for h, _ in hats.values())
-        e_T = self.exposure(T)
-        best, reached = 0.0, False
-        for d in delays:
-            hat_d, x_hat = hats[d]
-            lr = lambda x: 2 * (class_hat - self.ell_p("const", T - d, x)) - crit
-            if not np.isfinite(hat_d) or lr(x_hat) > 0:
-                continue
-            x_star = 1.0 if lr(1.0) <= 0 else optimize.brentq(lr, x_hat, 1.0, xtol=1e-4, rtol=1e-4)
-            best = max(best, x_star * self.exposure(T - d) / e_T)
-            reached |= d == 0 and x_star == 1.0
-        return Bound("H0m", T, "ceiling-limited" if reached else "finite", 1.0 if reached else best, 1.0)
-
-    def _logistic_atoms(self, w: Window, T: float, g: float, h: float, nq: int = 6) -> np.ndarray:
-        """a(t) at nq midpoint nodes of each variable unit's age range within (tau_s, T]."""
-        v = w.var
-        lo = np.maximum(v["lo"], self.tau_s[:, None])
-        hi = np.minimum(v["hi"], T)
-        frac = (np.arange(nq) + 0.5) / nq
-        t = lo[..., None] + np.maximum(hi - lo, 0.0)[..., None] * frac
-        num = 1.0 + np.exp(-g * ((T - self.tau_s) - h))[:, None, None]
-        return np.clip(num / (1.0 + np.exp(-g * ((T - t) - h))), 0.0, 1.0)
-
-    def _logistic_fstar(self, T: float, crit: float) -> Bound:
-        if self.exposure(T) <= 0:
-            return Bound("logistic", T, "zero-exposure", math.nan, 1.0)
-        w = self.window(T, all_var=True)
-        members = []
-        for g in self.spec.logistic_g:
-            for frac in self.spec.logistic_h_frac:
-                h = frac * (T - self.tau_nom)
-                atoms = self._logistic_atoms(w, T, g, h) if w.var else None
-                ell = -math.inf if w.impossible else self._ell_logistic(w, atoms)
-                bar = self._abar_logistic(w, atoms)
-                members.append((ell, bar))
-        hat = self.hat("const", T)[0]  # the same alternative as H0c and H0, so f* is nested with them
-        ok = [(bar, ell) for ell, bar in members if 2 * (hat - ell) <= crit]
-        ceiling = max(bar for _, bar in members)
-        top = max(ok)[0] if ok else 0.0
-        top_member_ok = any(bar >= ceiling - 1e-9 for bar, _ in ok)
-        return Bound("logistic", T, "ceiling-limited" if top_member_ok else "finite", float(ceiling if top_member_ok else top), float(ceiling))
-
-    def _ell_logistic(self, w: Window, atoms: np.ndarray | None) -> float:
-        self._profile_theta(lambda r: self._ell_member(w, r, "logistic", 0.0, 1.0, atoms))
-        return self._last
-
-    def _abar_logistic(self, w: Window, atoms: np.ndarray | None) -> float:
-        if w.var is None:
-            return 0.0
-        v = w.var
-        num = float((v["qmid"] * atoms.mean(axis=2) * self.r_ref[v["cls"]][None]).sum(axis=1).mean())
-        den = float(w.qmean @ self.r_ref[self.oc])
-        return num / den
+    def lr(self, cls: str, T: float, f: float) -> Statistic:
+        """LR_K(f) at origin T for class cls (H0c, H0m, H0 or H1): 2 (alt - sup over the class of the
+        log-likelihood given abar >= f), floored at 0; infinite when f exceeds the class ceiling or T is
+        impossible. Needs exposure at T."""
+        C = self.ceiling(cls)
+        alt, x_hat = self.const_max(T, 0.0, C)
+        if not np.isfinite(alt) or f > C + 1e-9:
+            return Statistic(math.inf, True, 0.0)
+        if cls == "H0c":
+            return Statistic(0.0 if f <= x_hat else max(0.0, 2 * (alt - self.ell_const(T, f))), True, 0.0)
+        win = self.window(self.edges(T))
+        zeros, top = np.zeros(win.P), np.full(win.P, C)
+        x_c = max(f, x_hat)
+        self.ell_const(T, x_c)
+        fit = self.bound_sup(win, zeros, top, cls == "H0m", f, x_const=(x_c, self._profiles[(round(float(T), 9), round(float(x_c), 12))][1]))
+        value = 0.0 if not np.isfinite(fit.value) else max(0.0, 2 * (alt - fit.value))
+        return Statistic(value if np.isfinite(fit.value) else math.inf, fit.converged, fit.spread)
 
     def fstar(self, cls: str, T: float, crit: float | None = None) -> Bound:
-        """f*_H(T) and its state for one history class (names as in Spec.classes)."""
+        """f*_K(T) and its state for one history class (names as in Spec.classes, or H1-no-ceiling)."""
         crit = self.crit(T) if crit is None else crit
-        if cls == "H0c":
-            return self._scalar_fstar("H0c", "const", T, 1.0, crit)
-        if cls == "H0":
-            return self._scalar_fstar("H0", "bound", T, 1.0, crit)
-        if cls == "H1":
-            return self._scalar_fstar("H1", "bound", T, self.spec.h1_ceiling, crit)
         if cls == "H1-no-ceiling":
             return Bound(cls, T, "zero-exposure" if self.exposure(T) <= 0 else "unbounded", math.inf, math.inf)
-        if cls == "H0m":
-            return self._h0m_fstar(T, crit)
-        if cls == "logistic":
-            return self._logistic_fstar(T, crit)
-        raise ValueError(cls)
+        if cls not in ("H0c", "H0m", "H0", "H1"):
+            raise ValueError(cls)
+        C = self.ceiling(cls)
+        if self.exposure(T) <= 0:
+            return Bound(cls, T, "zero-exposure", math.nan, C)
+        alt, x_hat = self.const_max(T, 0.0, C)
+        if not np.isfinite(alt):
+            return Bound(cls, T, "finite", 0.0, C)
+        seen: dict = {}
+
+        def lr(f: float) -> float:
+            if f not in seen:
+                seen[f] = self.lr(cls, T, f)
+            return seen[f].value
+
+        if lr(C) <= crit:
+            state, value = "ceiling-limited", C
+        else:
+            lo = x_hat if cls == "H0c" else 0.0
+            value = float(optimize.brentq(lambda f: lr(f) - crit, lo, C, xtol=1e-3, rtol=1e-3))
+            state = "finite"
+        ok = all(s.converged for s in seen.values())
+        return Bound(cls, T, state, value, C, ok, max(s.spread for s in seen.values()))
 
     # --- origins -----------------------------------------------------------------------------
 
     def grid(self, step: float) -> np.ndarray:
-        """Candidate origins: tau, then every step Myr to the oldest possible unit age plus the longest H0m
-        delay, then the domain edge (beyond the oldest unit the likelihood does not change)."""
-        top = min(self.T_flat + step + max(self.spec.delays_ma), self.spec.domain_ma[1])
-        g = np.arange(self.tau_nom, top + 1e-9, step)
+        """Candidate origins: tau, then every step Myr to the oldest possible unit age plus step plus the
+        H0m lag, then the domain edge (beyond that the statistic does not change)."""
+        top = min(self.T_flat + step + self.spec.h0m_lag_ma, self.spec.domain_ma[1])
+        g = np.arange(self.tau, top + 1e-9, step)
         if g[-1] < self.spec.domain_ma[1]:
             g = np.append(g, self.spec.domain_ma[1])
         return g
 
-    def origin_tables(self, grid: np.ndarray) -> dict:
-        """Constant-history log-likelihood tables on the grid: the class maximum, and the maximum under
-        a >= f_min for each read-out."""
-        hat = np.array([self.hat("const", T)[0] for T in grid])
-        null = {f: np.array([self.null("const", T, f) for T in grid]) for f in self.spec.readouts}
-        return dict(grid=grid, hat=hat, null=null)
-
-    def origin_set(self, tables: dict, cls: str, f_min: float, crit: float | None = None) -> OriginSet:
-        """Test inversion on the grid: T is excluded when the LR for 'a >= f_min on (tau, T]' exceeds crit.
-        H0m takes the best delay d on the grid for both the null and the alternative: T - d is read at the
-        grid point at or younger than it (the likelihood is flat past the oldest unit)."""
-        grid, hat, null = tables["grid"], tables["hat"], tables["null"][f_min]
-        crit = np.array([self.crit(T) for T in grid]) if crit is None else np.full(len(grid), float(crit))
-        if cls == "H0m":
-            idx = lambda d: np.clip(np.searchsorted(grid, grid - d, side="right") - 1, 0, None)
-            hat = np.max([hat[idx(d)] for d in self.spec.delays_ma], axis=0)
-            null = np.max([null[idx(d)] for d in self.spec.delays_ma], axis=0)
-        elif cls != "H0c":
-            raise ValueError("origin sets are defined for H0c and H0m")
-        with np.errstate(invalid="ignore"):
-            lr = np.where(np.isfinite(hat) & np.isfinite(null), np.maximum(2 * (hat - null), 0.0), math.inf)
-        return OriginSet(cls, f_min, crit, grid, lr, self.spec.domain_ma[1])
+    def origin_stat(self, cls: str, T: float, f_min: float) -> Statistic:
+        """The origin test statistic at one T, exactly: 2 (alt - null), where alt is the best constant history
+        on [0, 1] and null the supremum under the class's reading of "a >= f_min on (tau, T]" (module
+        docstring). Zero for T <= tau; infinite when T is impossible."""
+        if T <= self.tau:
+            return Statistic(0.0, True, 0.0)
+        alt = self.const_max(T, 0.0, 1.0)[0]
+        if not np.isfinite(alt):
+            return Statistic(math.inf, True, 0.0)
+        if cls == "H0c":
+            null, ok, spread = self.const_max(T, f_min, 1.0)[0], True, 0.0
+        elif cls in ("H0", "H0m"):
+            lag = self.spec.h0m_lag_ma if cls == "H0m" else 0.0
+            win = self.window(self.edges(T, lag))
+            L = np.where(win.piece_hi <= T - lag + 1e-9, f_min, 0.0) if cls == "H0m" else np.full(win.P, f_min)
+            fit = self.bound_sup(win, L, np.ones(win.P), cls == "H0m")
+            null, ok, spread = fit.value, fit.converged, fit.spread
+        else:
+            raise ValueError("origin sets are defined for H0c, H0 and H0m")
+        if not np.isfinite(null):
+            return Statistic(math.inf, ok, spread)
+        return Statistic(max(0.0, 2 * (alt - null)), ok, spread)
 
     def lr_origin(self, cls: str, T: float, f_min: float) -> float:
-        """The origin test statistic at one T, exactly (not on a grid). H0m uses the delays as given."""
-        delays = (0.0,) if cls == "H0c" else self.spec.delays_ma
-        hat = max(self.hat("const", T - d)[0] for d in delays)
-        null = max(self.null("const", T - d, f_min) for d in delays)
-        return 2 * (hat - null) if np.isfinite(hat) and np.isfinite(null) else math.inf
+        return self.origin_stat(cls, T, f_min).value
+
+    def origin_set(self, cls: str, f_min: float, grid: np.ndarray) -> OriginSet:
+        """Test inversion on the grid: T is excluded when the statistic exceeds crit. Past the point where
+        every piece that carries weight lies at or younger than T - lag the statistic is constant, so it is
+        copied."""
+        lag = self.spec.h0m_lag_ma if cls == "H0m" else 0.0
+        lr = np.empty(len(grid))
+        crit = np.array([self.crit(T) for T in grid])
+        flat = np.flatnonzero(grid - lag >= self.T_flat - 1e-9)
+        stop = int(flat[0]) if len(flat) else len(grid) - 1
+        for i in range(stop + 1):
+            lr[i] = self.lr_origin(cls, float(grid[i]), f_min)
+        lr[stop + 1:] = lr[stop]
+        top = float(self.age.base[self.s_star - 1]) if self.s_star >= 1 else self.tau
+        return OriginSet(cls, f_min, crit, grid, lr, self.spec.domain_ma[1], top)
 
     def abar_truth(self, path, T: float, r: np.ndarray, step: float = 0.002) -> float:
         """The target abar(T) for a known path a(t) (vectorised) and reference rates r (one per
         calibrated class, in Problem order), by cumulative integration of the path."""
-        t = np.arange(self.B.min() - 1.0, self.T_flat + 1.0, step)
+        if not self.n_old:
+            return math.nan
+        t = np.arange(self.lo.min() - 1.0, self.T_flat + 1.0, step)
         cum = np.concatenate([[0.0], np.cumsum(path(t[:-1] + step / 2) * step)])
-        A = lambda x: np.interp(x, t, cum)
-        over_hi = np.minimum(self.hi, T)
-        over_lo = np.maximum(self.lo, self.tau_s[:, None])
+        A = lambda v: np.interp(v, t, cum)
+        over_hi, over_lo = np.minimum(self.hi, T), np.maximum(self.lo, self.tau)
         ok = over_hi > over_lo
         mass = np.where(ok, (A(over_hi) - A(over_lo)) / self.width, 0.0)
         qmid = np.where(ok, (over_hi - over_lo) / self.width, 0.0)
-        den = (qmid * r[self.oc][None]).sum(axis=1).mean()
-        return float((mass * r[self.oc][None]).sum(axis=1).mean() / den) if den > 0 else math.nan
+        den = float((qmid * r[self.oc]).sum())
+        return float((mass * r[self.oc]).sum() / den) if den > 0 else math.nan
