@@ -1,0 +1,625 @@
+{
+  "delta": 0.0,
+  "calibration": "validation_cal",
+  "root_seed": 20261101,
+  "reps": 1000,
+  "start": 0,
+  "cells": [
+    "A1",
+    "A2",
+    "A3",
+    "A4",
+    "A5",
+    "A6",
+    "A7",
+    "A8",
+    "A9",
+    "A10",
+    "A11",
+    "A12",
+    "A13",
+    "A14",
+    "A15",
+    "D1",
+    "D2",
+    "D3",
+    "D4",
+    "D5",
+    "D6"
+  ],
+  "parts": [
+    {
+      "cell": "A1",
+      "quantity": "fcover_H0c",
+      "delta95": 0.0
+    },
+    {
+      "cell": "A1",
+      "quantity": "fcover_H0m",
+      "delta95": 0.0
+    },
+    {
+      "cell": "A1",
+      "quantity": "fcover_H0",
+      "delta95": 0.0
+    },
+    {
+      "cell": "A1",
+      "quantity": "fcover_H1",
+      "delta95": 0.0
+    },
+    {
+      "cell": "A1",
+      "quantity": "ocover_H0c_1",
+      "delta95": 0.0
+    },
+    {
+      "cell": "A1",
+      "quantity": "ocover_H0c_0.1",
+      "delta95": 0.0
+    },
+    {
+      "cell": "A1",
+      "quantity": "ocover_H0c_0.01",
+      "delta95": 0.0
+    },
+    {
+      "cell": "A1",
+      "quantity": "ocover_H0m_1",
+      "delta95": 0.0
+    },
+    {
+      "cell": "A1",
+      "quantity": "ocover_H0m_0.1",
+      "delta95": 0.0
+    },
+    {
+      "cell": "A1",
+      "quantity": "ocover_H0m_0.01",
+      "delta95": 0.0
+    },
+    {
+      "cell": "A1",
+      "quantity": "ocover_H0_1",
+      "delta95": 0.0
+    },
+    {
+      "cell": "A1",
+      "quantity": "ocover_H0_0.1",
+      "delta95": 0.0
+    },
+    {
+      "cell": "A1",
+      "quantity": "ocover_H0_0.01",
+      "delta95": 0.0
+    },
+    {
+      "cell": "A2",
+      "quantity": "fcover_H0c",
+      "delta95": 0.0
+    },
+    {
+      "cell": "A2",
+      "quantity": "fcover_H0m",
+      "delta95": 0.0
+    },
+    {
+      "cell": "A2",
+      "quantity": "fcover_H0",
+      "delta95": 0.0
+    },
+    {
+      "cell": "A2",
+      "quantity": "fcover_H1",
+      "delta95": 0.0
+    },
+    {
+      "cell": "A2",
+      "quantity": "ocover_H0c_0.1",
+      "delta95": 0.0
+    },
+    {
+      "cell": "A2",
+      "quantity": "ocover_H0c_0.01",
+      "delta95": 0.0
+    },
+    {
+      "cell": "A2",
+      "quantity": "ocover_H0m_0.1",
+      "delta95": 0.0
+    },
+    {
+      "cell": "A2",
+      "quantity": "ocover_H0m_0.01",
+      "delta95": 0.0
+    },
+    {
+      "cell": "A2",
+      "quantity": "ocover_H0_0.1",
+      "delta95": 0.0
+    },
+    {
+      "cell": "A2",
+      "quantity": "ocover_H0_0.01",
+      "delta95": 0.0
+    },
+    {
+      "cell": "A3",
+      "quantity": "fcover_H0c",
+      "delta95": 0.0
+    },
+    {
+      "cell": "A3",
+      "quantity": "fcover_H0m",
+      "delta95": 0.0
+    },
+    {
+      "cell": "A3",
+      "quantity": "fcover_H0",
+      "delta95": 0.0
+    },
+    {
+      "cell": "A3",
+      "quantity": "fcover_H1",
+      "delta95": 0.0
+    },
+    {
+      "cell": "A3",
+      "quantity": "ocover_H0c_0.1",
+      "delta95": 0.0
+    },
+    {
+      "cell": "A3",
+      "quantity": "ocover_H0c_0.01",
+      "delta95": 0.0
+    },
+    {
+      "cell": "A3",
+      "quantity": "ocover_H0m_0.1",
+      "delta95": 0.0
+    },
+    {
+      "cell": "A3",
+      "quantity": "ocover_H0m_0.01",
+      "delta95": 0.0
+    },
+    {
+      "cell": "A3",
+      "quantity": "ocover_H0_0.1",
+      "delta95": 0.0
+    },
+    {
+      "cell": "A3",
+      "quantity": "ocover_H0_0.01",
+      "delta95": 0.0
+    },
+    {
+      "cell": "A4",
+      "quantity": "fcover_H0c",
+      "delta95": 0.0
+    },
+    {
+      "cell": "A4",
+      "quantity": "fcover_H0m",
+      "delta95": 0.0
+    },
+    {
+      "cell": "A4",
+      "quantity": "fcover_H0",
+      "delta95": 0.0
+    },
+    {
+      "cell": "A4",
+      "quantity": "fcover_H1",
+      "delta95": 0.0
+    },
+    {
+      "cell": "A4",
+      "quantity": "ocover_H0c_0.1",
+      "delta95": 0.0
+    },
+    {
+      "cell": "A4",
+      "quantity": "ocover_H0c_0.01",
+      "delta95": 0.0
+    },
+    {
+      "cell": "A4",
+      "quantity": "ocover_H0m_0.1",
+      "delta95": 0.0
+    },
+    {
+      "cell": "A4",
+      "quantity": "ocover_H0m_0.01",
+      "delta95": 0.0
+    },
+    {
+      "cell": "A4",
+      "quantity": "ocover_H0_0.1",
+      "delta95": 0.0
+    },
+    {
+      "cell": "A4",
+      "quantity": "ocover_H0_0.01",
+      "delta95": 0.0
+    },
+    {
+      "cell": "A5",
+      "quantity": "fcover_H0c",
+      "delta95": 0.0
+    },
+    {
+      "cell": "A5",
+      "quantity": "fcover_H0m",
+      "delta95": 0.0
+    },
+    {
+      "cell": "A5",
+      "quantity": "fcover_H0",
+      "delta95": 0.0
+    },
+    {
+      "cell": "A5",
+      "quantity": "fcover_H1",
+      "delta95": 0.0
+    },
+    {
+      "cell": "A5",
+      "quantity": "ocover_H0c_0.1",
+      "delta95": 0.0
+    },
+    {
+      "cell": "A5",
+      "quantity": "ocover_H0c_0.01",
+      "delta95": 0.0
+    },
+    {
+      "cell": "A5",
+      "quantity": "ocover_H0m_0.1",
+      "delta95": 0.0
+    },
+    {
+      "cell": "A5",
+      "quantity": "ocover_H0m_0.01",
+      "delta95": 0.0
+    },
+    {
+      "cell": "A5",
+      "quantity": "ocover_H0_0.1",
+      "delta95": 0.0
+    },
+    {
+      "cell": "A5",
+      "quantity": "ocover_H0_0.01",
+      "delta95": 0.0
+    },
+    {
+      "cell": "A6",
+      "quantity": "fcover_H0m",
+      "delta95": 0.0
+    },
+    {
+      "cell": "A6",
+      "quantity": "fcover_H0",
+      "delta95": 0.0
+    },
+    {
+      "cell": "A6",
+      "quantity": "fcover_H1",
+      "delta95": 0.0
+    },
+    {
+      "cell": "A6",
+      "quantity": "ocover_H0m_0.1",
+      "delta95": 0.0
+    },
+    {
+      "cell": "A6",
+      "quantity": "ocover_H0m_0.01",
+      "delta95": 0.0
+    },
+    {
+      "cell": "A7",
+      "quantity": "fcover_H0m",
+      "delta95": 0.0
+    },
+    {
+      "cell": "A7",
+      "quantity": "fcover_H0",
+      "delta95": 0.0
+    },
+    {
+      "cell": "A7",
+      "quantity": "fcover_H1",
+      "delta95": 0.0
+    },
+    {
+      "cell": "A7",
+      "quantity": "ocover_H0m_0.1",
+      "delta95": 0.0
+    },
+    {
+      "cell": "A7",
+      "quantity": "ocover_H0m_0.01",
+      "delta95": 0.0
+    },
+    {
+      "cell": "A8",
+      "quantity": "fcover_H0m",
+      "delta95": 0.0
+    },
+    {
+      "cell": "A8",
+      "quantity": "fcover_H0",
+      "delta95": 0.0
+    },
+    {
+      "cell": "A8",
+      "quantity": "fcover_H1",
+      "delta95": 0.0
+    },
+    {
+      "cell": "A8",
+      "quantity": "ocover_H0m_0.1",
+      "delta95": 0.0
+    },
+    {
+      "cell": "A8",
+      "quantity": "ocover_H0m_0.01",
+      "delta95": 0.0
+    },
+    {
+      "cell": "A8",
+      "quantity": "ocover_H0_0.01",
+      "delta95": 0.0
+    },
+    {
+      "cell": "A9",
+      "quantity": "fcover_H0",
+      "delta95": 0.0
+    },
+    {
+      "cell": "A9",
+      "quantity": "fcover_H1",
+      "delta95": 0.0
+    },
+    {
+      "cell": "A10",
+      "quantity": "fcover_H1",
+      "delta95": 0.0
+    },
+    {
+      "cell": "A11",
+      "quantity": "fcover_H0c",
+      "delta95": 0.0
+    },
+    {
+      "cell": "A11",
+      "quantity": "fcover_H0m",
+      "delta95": 0.0
+    },
+    {
+      "cell": "A11",
+      "quantity": "fcover_H0",
+      "delta95": 0.0
+    },
+    {
+      "cell": "A11",
+      "quantity": "fcover_H1",
+      "delta95": 0.0
+    },
+    {
+      "cell": "A11",
+      "quantity": "ocover_H0c_0.1",
+      "delta95": 0.0
+    },
+    {
+      "cell": "A11",
+      "quantity": "ocover_H0c_0.01",
+      "delta95": 0.0
+    },
+    {
+      "cell": "A11",
+      "quantity": "ocover_H0m_0.1",
+      "delta95": 0.0
+    },
+    {
+      "cell": "A11",
+      "quantity": "ocover_H0m_0.01",
+      "delta95": 0.0
+    },
+    {
+      "cell": "A11",
+      "quantity": "ocover_H0_0.1",
+      "delta95": 0.0
+    },
+    {
+      "cell": "A11",
+      "quantity": "ocover_H0_0.01",
+      "delta95": 0.0
+    },
+    {
+      "cell": "A12",
+      "quantity": "fcover_H0",
+      "delta95": 0.0
+    },
+    {
+      "cell": "A12",
+      "quantity": "fcover_H1",
+      "delta95": 0.0
+    },
+    {
+      "cell": "A13",
+      "quantity": "fcover_H0c",
+      "delta95": 0.0
+    },
+    {
+      "cell": "A13",
+      "quantity": "fcover_H0m",
+      "delta95": 0.0
+    },
+    {
+      "cell": "A13",
+      "quantity": "fcover_H0",
+      "delta95": 0.0
+    },
+    {
+      "cell": "A13",
+      "quantity": "fcover_H1",
+      "delta95": 0.0
+    },
+    {
+      "cell": "A13",
+      "quantity": "ocover_H0c_0.1",
+      "delta95": 0.0
+    },
+    {
+      "cell": "A13",
+      "quantity": "ocover_H0c_0.01",
+      "delta95": 0.0
+    },
+    {
+      "cell": "A13",
+      "quantity": "ocover_H0m_0.1",
+      "delta95": 0.0
+    },
+    {
+      "cell": "A13",
+      "quantity": "ocover_H0m_0.01",
+      "delta95": 0.0
+    },
+    {
+      "cell": "A13",
+      "quantity": "ocover_H0_0.1",
+      "delta95": 0.0
+    },
+    {
+      "cell": "A13",
+      "quantity": "ocover_H0_0.01",
+      "delta95": 0.0
+    },
+    {
+      "cell": "A14",
+      "quantity": "fcover_H0c",
+      "delta95": 0.0
+    },
+    {
+      "cell": "A14",
+      "quantity": "fcover_H0m",
+      "delta95": 0.0
+    },
+    {
+      "cell": "A14",
+      "quantity": "fcover_H0",
+      "delta95": 0.0
+    },
+    {
+      "cell": "A14",
+      "quantity": "fcover_H1",
+      "delta95": 0.0
+    },
+    {
+      "cell": "A14",
+      "quantity": "ocover_H0c_1",
+      "delta95": 0.0
+    },
+    {
+      "cell": "A14",
+      "quantity": "ocover_H0c_0.1",
+      "delta95": 0.0
+    },
+    {
+      "cell": "A14",
+      "quantity": "ocover_H0c_0.01",
+      "delta95": 0.0
+    },
+    {
+      "cell": "A14",
+      "quantity": "ocover_H0m_1",
+      "delta95": 0.0
+    },
+    {
+      "cell": "A14",
+      "quantity": "ocover_H0m_0.1",
+      "delta95": 0.0
+    },
+    {
+      "cell": "A14",
+      "quantity": "ocover_H0m_0.01",
+      "delta95": 0.0
+    },
+    {
+      "cell": "A14",
+      "quantity": "ocover_H0_1",
+      "delta95": 0.0
+    },
+    {
+      "cell": "A14",
+      "quantity": "ocover_H0_0.1",
+      "delta95": 0.0
+    },
+    {
+      "cell": "A14",
+      "quantity": "ocover_H0_0.01",
+      "delta95": 0.0
+    },
+    {
+      "cell": "A15",
+      "quantity": "fcover_H0c",
+      "delta95": 0.0
+    },
+    {
+      "cell": "A15",
+      "quantity": "fcover_H0m",
+      "delta95": 0.0
+    },
+    {
+      "cell": "A15",
+      "quantity": "fcover_H0",
+      "delta95": 0.0
+    },
+    {
+      "cell": "A15",
+      "quantity": "fcover_H1",
+      "delta95": 0.0
+    },
+    {
+      "cell": "A15",
+      "quantity": "ocover_H0c_0.1",
+      "delta95": 0.0
+    },
+    {
+      "cell": "A15",
+      "quantity": "ocover_H0c_0.01",
+      "delta95": 0.0
+    },
+    {
+      "cell": "A15",
+      "quantity": "ocover_H0m_0.1",
+      "delta95": 0.0
+    },
+    {
+      "cell": "A15",
+      "quantity": "ocover_H0m_0.01",
+      "delta95": 0.0
+    },
+    {
+      "cell": "A15",
+      "quantity": "ocover_H0_0.1",
+      "delta95": 0.0
+    },
+    {
+      "cell": "A15",
+      "quantity": "ocover_H0_0.01",
+      "delta95": 0.0
+    }
+  ],
+  "sha256": {
+    "envelope.py": "7a23e1d4daf70b81b16e89c362724b49be6a638bcc4ea33c264a5901f79a22b2",
+    "units_sim.py": "d96f4c4410c9057b1feb7c9c2ae7c1c0f67a6f96afa39c4791b23d76c0efb863",
+    "validate.py": "441b893afb34a09f65f450c7ce7c616b668773aa3d6bb6d67fb31231153dc813",
+    "sim.py": "a37ea8c62919d43fe0fab85cdbce2f6c554fc9371b035e11d179e75b224e7bf7",
+    "timescale.csv": "29c6cc4a68b1746d1a67c66623e5df30ac5dd316257b55ca5948c9854886f826",
+    "effort.csv": "4f19216162fda42511e1fcb830ed7cc995ea3d1667a49fee9a82874c08a3dc76"
+  }
+}

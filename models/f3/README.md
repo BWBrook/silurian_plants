@@ -455,14 +455,16 @@ comparison) is in `c7729ad`, its count-matched re-run in `69f2ef4` and the 60-ag
   (delay), `ramp`, `logistic`, `hide` and `hide_h1` (the least favourable H0 and H1 members: a 0/1 or 0/3 path lit on the stages with the fewest expected units per Myr
   until the time-average is f). `Design` options, all off by default: `class_trend`, `misassign`, `older_report`, `confine`, `truth_scenario`
   (docstring). The estimator sees only ranges, recorded classes, clusters and outcomes and must find tau itself.
-- `validate.py`: the harness (21 cells) and the two-stage acceptance rule (`stage1`, `stage2`, `pass_probability`). Writes
-  `out/validation_<tag>.csv` (one row per cell), `_reps.csv` (one row per replicate) and `.meta.json` (root seed 20261030, spawn keys, settings, file hashes).
-  `out/validation_dev*` hold the development grid; the replicate table is committed gzipped (`validation_dev_reps.csv.gz`, 10.7 MB uncompressed).
-- `test_envelope.py`: 68 tests; the whole of `models/f3` is 142 tests, all passing (about 25 s).
+- `validate.py`: the harness (21 cells), its phases (`dev`, `calibrate`, `accept`) and the two-stage acceptance rule (`stage1`, `stage2`, `pass_probability`). Writes
+  `out/validation_<tag>.csv` (one row per cell, with stage-1 verdicts in the accept phase), `_reps.csv` (one row per replicate), `.meta.json` (phase, root seed,
+  spawn keys, settings, file hashes) and, in the calibrate phase, `out/receipt_<tag>.json`. Replicate tables are committed gzipped. `out/validation_dev*` hold the
+  development grid (`dev2`: its seeds under the repaired code); `cal`, `acc1` and `receipt_cal.json` the second-review rehearsal.
+- `check_paired.py` (two runs on the same seeds, replicate by replicate) and `check_reoptimise.py` (every miss re-solved from many more starts): the rehearsal's checks.
+- `test_envelope.py`: 79 tests; the whole of `models/f3` is 153 tests, all passing (about 40 s).
 
 ```bash
 uv run --with pytest --with numpy --with scipy python -m pytest -q models/f3
-uv run models/f3/validate.py [--reps N] [--start J] [--cells NAME ...] [--workers W] [--tag TAG]
+uv run models/f3/validate.py [--phase dev|calibrate|accept] [--receipt FILE] [--reps N] [--start J] [--cells NAME ...] [--workers W] [--tag TAG]
 ```
 
 ### The construction, as implemented
@@ -490,9 +492,12 @@ uv run models/f3/validate.py [--reps N] [--start J] [--cells NAME ...] [--worker
   broad-range detections do not count). That stage and the `reference_stages - 1` stages younger than it are the reference window; units wholly inside it are
   reference units; units with any part older than tau are older units; units wholly younger than tau but outside the window are dropped. A class with fewer than
   `min_units_per_class` reference units is uncalibrated and loses its units (`n_dropped_uncalibrated`). No certain detection raises `NoFirstAppearance`.
-  The reference rates `r_ref` that weight the target are fitted to the reference units alone and stay fixed there; the profile likelihoods re-fit the rates.
-- **Histories and target.** Target abar = sum_p c_p x_p with c_p = sum_i r_ref(c(i)) w_ip / sum_i r_ref(c(i)) Qmid_i over the older units (Qmid_i = sum_p w_ip;
-  the c_p sum to 1): the reference-rate-weighted mean intensity over (tau, T].
+  The reference rates `r_ref` are fitted to the reference units alone; they start the fits and test for exposure. The profile likelihoods re-fit the rates, and
+  since Codex's second review (R2) the target is weighted by the rates being fitted, not by `r_ref`.
+- **Histories and target.** Target abar = sum_p c_p(r) x_p with c_p(r) = sum_i r_c(i) w_ip / sum_i r_c(i) Qmid_i over the older units (Qmid_i = sum_p w_ip;
+  the c_p sum to 1): the mean intensity over (tau, T] weighted by the true reference rates and integrated over the latent ages. `Window.E` holds the
+  exposure by class and piece; `Window.coef(theta)` and `Window.target(theta, x)` give c(r) and abar with its gradient. c depends on r only through the class mix of
+  the exposure, so it is fixed when one class carries the exposure or there is one piece (`Window.rate_free`).
   - **H0c**: constant x in [0, 1], exact. **H0**: x in [0, 1]^P, bound. **H0m**: as H0 with x non-decreasing towards tau; the bound is conservative for the monotone
     class (it admits non-monotone paths inside a piece). **H1**: x in [0, C]^P, C = `h1_ceiling`. **H1-no-ceiling**: no finite bound.
   - Removed: the equal-duty H0, the delay-grid H0m, the logistic class, their grids and `p0_bound` (Codex I1).
@@ -500,17 +505,24 @@ uv run models/f3/validate.py [--reps N] [--start J] [--cells NAME ...] [--worker
   the reference rates and x, and alt the best constant history (exact) on [0, C_K], with C_K = 1 for H0c, H0m and H0 and C for H1. H0c, H0m and H0 therefore share
   one alternative and nest: f*(H0c) <= f*(H0m) <= f*(H0); H1 need not nest with them when the best constant exceeds 1. LR_K is non-decreasing in f; f > C_K gives LR = inf.
   States: `finite`, `ceiling-limited` (LR_K(C_K) <= crit), `unbounded` (H1-no-ceiling), `zero-exposure`. `Bound` carries `converged` and `spread`.
-- **Optimiser.** SLSQP over (log r, x) with the analytic jacobian, the target as a linear constraint, monotone rows for H0m, x in [L, U] and log r in [log 1e-5, log 8].
+- **Optimiser.** SLSQP over (log r, x) with the analytic jacobian, the target as a bilinear constraint c(r) . x >= f (linear when `rate_free`), monotone rows for H0m, x in [L, U] and log r in [log 1e-5, log 8].
   Variables with L = U are eliminated and rows with one free variable become bounds. Starts: the constant history at max(f, best constant) with its own rates (f*) or an
   even allocation at `r_ref` (origin read-outs); a hiding allocation that fills the target on the pieces with least exposure c_p per Myr first (from the youngest piece for H0m, which keeps
   it monotone); the previous solution for the same window; and, when a target is active, the best single-piece vertex (a step from the youngest piece for H0m) by likelihood, because with finite k the supremum has local
-  optima at vertices. The best feasible start is kept. A fit is flagged when no start succeeded or the successful starts differ by more than 0.05
-  in log-likelihood (`Fit.flagged`; `Problem.n_fits`, `n_flagged`). With no detected older unit and no active target every non-detection bound falls in each x_p, so the
+  optima at vertices. The highest feasible candidate over all starts is kept, with its own run's status (`select`); candidates within 1e-6 in log-likelihood
+  (`TIE`) are equal and a converged one is preferred, because a run inside the 1e-6 constraint tolerance can gain 1e-8. A selected run that did not converge is
+  restarted once from where it stopped (`REPAIR_ITER` = 1,000 iterations) and keeps the repaired value when that is no lower; if it still has not converged the
+  fit has failed. `spread` is the gap between the highest and lowest feasible candidates; a fit is flagged when it failed or spread exceeds 0.05
+  (`Fit.flagged`; `Problem.n_fits`, `n_flagged`, `n_failed`). The same rules hold for the best constant (`const_max`, two L-BFGS-B starts), which returns
+  (value, argmax, converged, spread). A `Statistic` (LR at a target, or an origin statistic) has converged only when its alternative and its null both did;
+  `OriginSet.ok` holds it per grid point. At the ceiling (f within 1e-9 of C) the null is the constant history C, whose bound likelihood is exact: SLSQP
+  cannot work on that one-point feasible set. With no detected older unit and no active target every non-detection bound falls in each x_p, so the
   supremum is at x = L and only log r is profiled (L-BFGS-B); the same when every piece is fixed.
 - **Critical value.** `count_crit(n)` is a declared rule matched to the one-sided Poisson (Garwood) limit for the n older detections with part of their range in (tau, T]:
   5.99 at n = 0 falling towards 2.71. It is exact only for fixed rates and independent Poisson counts (Codex I2: the profile LR is not that deviance, and the first appearance
   and window are selected from the same outcomes), so it is a rule whose coverage the simulation establishes. `Spec.crit_shift` (default 0) moves it, and
-  `Problem.crit(T) = count_crit(n) + crit_shift`. The harness stores the statistic, so any shift delta can be applied afterwards.
+  `Problem.crit(T) = count_crit(n) + crit_shift`. The harness stores the statistic, so any shift delta can be applied afterwards. The binding shift comes from the
+  `calibrate` phase's receipt and is applied, not re-tuned, in the `accept` phase (below).
 - **Origin read-outs.** T is excluded at level alpha when "a >= f_min on (tau, T]" is rejected against the best constant history on [0, 1] at T. **H0c**: constant in [f_min, 1], exact.
   **H0**: pieces with L = f_min, U = 1, bound (equal to H0c when no older unit detects). **H0m**: pieces in (tau, T - D] have L = f_min, pieces in (T - D, T] have L = 0, U = 1, monotone,
   D = `h0m_lag_ma` = 10 Myr (the delayed step when no older unit detects; it replaces the delay grid). The grid runs from tau every `step` Myr to the oldest unit age plus a step plus D, then
@@ -569,15 +581,31 @@ are not, and are reported, not accepted against.
   statistic at the true target (the window-relative expected intensity: the path times `older_report` and (1 - `confine`) beyond tau0; `lr_nominal_*` is the statistic at the nominal path where those differ), the count-matched critical value and
   n. f* >= abar_rel is the same event as LR_K(abar_rel) <= crit, so the summary applies any shift delta to the stored statistic. At 459.1 the origin is below t0, so f* there is informative, not a coverage claim.
   Origin sets for H0c, H0m and H0 at each read-out: `cover_set` (the grid set contains t0), `lr0` (the exact statistic at t0), `applicable` (the largest read-out true of the truth on (tau, t0], or on (tau, t0 - D] for H0m).
-  The window-relative truth (`abar_rel`, `a_ref`) is as before.
-- **Per cell**: coverage over all replicates at delta = 0 (trivial replicates, with t0 at or below tau, count as covered), the non-trivial coverage as a diagnostic, `delta95` (the smallest shift not below 0 that brings a primary coverage
-  to 0.95), `outside_*` (the share of non-trivial replicates whose window-relative target exceeds the class ceiling, which makes the truth lie outside the class), informativeness (unbounded share, endpoints, the four states), `flagged_share`
-  (fits flagged), and `seconds_per_rep`. The chi-square comparison columns are gone.
-- **Seeds.** Replicate j of cell c descends from `SeedSequence(20261030, spawn_key=(c, j))`; child 0 simulates. A stage-2 batch uses `--start 1000`.
+  The window-relative truth is `abar_rel = abar_true / a_ref`, both weighted by the true rates and integrated over the unit age ranges of the analysis's age model
+  (Codex R2): `abar_true` over the older units' ranges in (tau, t0], `a_ref` over the reference units' ranges. Before the second review `a_ref` was the mean at the
+  hidden true ages; that is kept as `a_ref_realised`, a diagnostic. Every reported statistic stores its status: `ok_lr_*`, `ok_lr_nominal_*`, `ok_fstar_*`,
+  `ok_lr0_*` and `ok_set_*` (all grid points of an origin set), with `n_failed` beside `n_fits` and `n_flagged`.
+- **Per cell**: coverage over every replicate at the run's shift (Codex R4). A trivial replicate (t0 at or below tau) and one with no first appearance make no claim
+  and cover; an error and a failed statistic do not, whatever the shift (their margin is +inf in `delta95`). Then the non-trivial coverage as a diagnostic,
+  `delta95` (the smallest shift not below 0 that brings a coverage to 0.95 in that batch: a tuning quantity, not a population guarantee), `failed_*` (failed decisive
+  statistics), `outside_*` (the share of non-trivial replicates whose window-relative target exceeds the class ceiling, which makes the truth lie outside the class),
+  informativeness (unbounded share, endpoints, the four states), `flagged_share`, `failed_share`, `reps_with_failed_fit` and `seconds_per_rep`.
+- **Origin read-outs.** A read-out is an acceptance quantity (`ocover_<class>_<f_min>`, exact statistic at t0) only in the cells whose truth satisfies its hypothesis for
+  every possible tau: the truth is in the class and a >= f_min on (tau0, t0 - D] (`origin_readouts`). The constant truths give all three read-outs their full
+  denominators; A6 and A7 add H0m at 0.1 and 0.01. Elsewhere `cover_*_applicable` picks the read-out from the simulated truth and is a diagnostic with its
+  denominator `n_applicable_*` (Codex R4).
+- **Acceptance quantities** (`acceptance_quantities`): f* coverage for every class that contains the truth, plus the fixed origin read-outs, in acceptance cells.
+- **Phases and seeds.** Replicate j of cell c descends from `SeedSequence(root, spawn_key=(c, j))`; child 0 simulates. The root seed separates the phases:
+  `dev` 20261030 (shift 0), `calibrate` 20261101 (shift 0; writes `out/receipt_<tag>.json` with delta, the largest `delta95` over every acceptance quantity of every
+  acceptance cell, and the code and input hashes), `accept` 20261102 (refuses to run unless the code and inputs match the receipt, applies its delta as `crit_shift`, and gives
+  each acceptance quantity its stage-1 verdict). Stage 2 of acceptance is `--phase accept --start 1000`; its successes are pooled with stage 1's.
 
 ### Development grid (2026-10-29; binds nothing)
 
-21 cells × 1,000 replicates in 4,710 s on mac-mini (8 workers; 1.8 s per replicate on average, from 0.4 s in A4 to 5.6 s in A13). No fit was flagged except 0.2% in A5. Results are in `out/validation_dev.csv`, and the code hashes in the meta file match commit `6f9342c`.
+21 cells × 1,000 replicates in 4,710 s on mac-mini (8 workers; 1.8 s per replicate on average, from 0.4 s in A4 to 5.6 s in A13). Results are in `out/validation_dev.csv`, and the code hashes in the meta file match commit `6f9342c`. **Corrected after Codex's second review (R3):** this
+paragraph first said no fit was flagged except 0.2% in A5. In fact every cell has flagged fits; 0.2% was A5's share of fits, which was 539 fits in 129 replicates
+(A9: 52 in 16; A1: 2 in 2). The status logic of that version could also mark a failed run as converged, so these aggregates cannot say which statistic a flag
+touched. The second-review run below replaces them.
 
 How to read the table:
 - **Coverage** is over all replicates, at the count-matched critical value (δ = 0).
@@ -630,6 +658,41 @@ How to read the table:
 
   The real table's size will set the power.
 
+### Second-review rehearsal (2026-10-29; binds nothing)
+
+The R4 contract run end to end on the synthetic design: calibration, receipt, then independent acceptance at the receipt's δ. Code hashes are in
+`out/receipt_cal.json` (envelope.py `7a23e1d4…`, validate.py `441b893a…`), and every run below matches them.
+
+- **Calibration** (root seed 20261101; 21 cells × 1,000; 4,386 s on mini, 9 workers; `out/validation_cal.*`). Each of the 117 acceptance quantities reached 0.95
+  at δ = 0, so the receipt's δ is 0. Lowest: A15 H0c 0.952, A15 H0m and A5 H0c 0.959. Origin read-outs are all ≥ 0.975 (A14 at f_min = 1).
+- **Acceptance, stage 1** (root seed 20261102; replicates 0–999; 5,518 s; `out/validation_acc1.*`). All 117 pass (≥ 944): lowest A15 H0c 946, A5 H0c 951, A2 H0c
+  955. No quantity needs stage 2.
+- **Numerical status.** Across 63,000 replicates (calibration, acceptance and the paired development run) one fit failed: calibration A13 replicate 6, H0m f\*, which
+  counts as a miss. There were no errors and no replicate without a first appearance. Spread flags remain (starts disagreeing by more than 0.05 in log-likelihood):
+  254 calibration replicates have one, 129 of them in A5 (k = 0.8).
+- **Flags mark hard data, not missed optima.** Non-trivial calibration replicates with a flagged fit cover less often (H0c 0.85 against 0.95; H0 0.88 against
+  0.97). So every one of the 1,795 statistics that missed in calibration (672 replicates) was rebuilt and re-solved from about 65 further starts: a 5 × 5 rate grid
+  and 40 random starts for the null, and a 61-point grid for the constant alternative (`check_reoptimise.py`, `out/reoptimise_cal.csv`, run on nectar). The stored
+  statistics reproduce to 6 × 10⁻⁵. The null rose by at most 0.0035 in log-likelihood (above 10⁻³ in two cases), and no miss became a cover. The misses are sampling,
+  not optimisation; a wider local search is still not a certificate of global optimality.
+- **What R2 changed.** The development seeds were re-run with the repaired code (`out/validation_dev2.*`, nectar, the same numpy 2.5.4 and scipy 1.18.1). The
+  simulated data agree replicate by replicate, so the differences are the code's (`check_paired.py`):
+  - f\* under H0c is unchanged in every replicate, as it must be: a constant's target does not depend on the weights. Under H0 and H0m it moves by more than 0.01
+    in at most 0.6% of replicates; under H1 in 2–13%, mostly downwards and by less than about 0.02.
+  - Coverage moves by at most 0.002 in any cell and class. A15 H0c stays at 946.
+  - Flagged fits fell in 17 of 21 cells (A5 539 to 519, A9 52 to 25, D2 46 to 26), from the tie rule and the repair restart. No fit failed.
+- **δ = 0 here against 0.11 in the development grid is batch variation**, not the repair: A15 H0c sits near 0.95. Under the repaired code it covers 946, 952 and
+  946 in three independent batches, 0.948 pooled (2,844 of 3,000; 95% interval 0.939–0.956). That is acceptance at the 0.93 floor, which is what the contract
+  claims (Codex R4), not population coverage of 0.95.
+- **Operating characteristic of the acceptance rule.** The rule tests coverage against 0.93: a procedure at 0.93 passes with probability 0.05. A cell at 0.948 fails
+  overall with probability 0.105 (borderline at stage 1 with probability 0.26, then short of 1,886 at stage 2); at 0.95 with 0.050; at 0.955 with 0.004. On this
+  design a shift calibrated to 0.955 instead of 0.95 would be δ = 0.14 (A15 H0c). Whether to raise the calibration target before the binding run is open
+  (`docs/f3-shape.md`).
+- **Reference normalisation.** Per calibration replicate, the realised reference mean differs from the integrated one by a median of 0 in the correctly specified
+  cells, and 90% of differences lie within about ±2.5% in the constant cells, ±5.5% in the hiding cells A9 and A12, and −10% to +14% in A10. In D5 and D6 (true
+  boundaries older or younger than the chart) the realised value is systematically lower or higher (medians −2.2% and +3.3%): realised ages follow the true
+  boundaries, the integration follows the chart.
+
 ### Open choices
 
 - **Scale 0.05 of the Palynodata document counts** (505 units); the scale of the real table is unknown. It sets the power, not the construction. A13 repeats A2 at 0.2.
@@ -644,6 +707,6 @@ How to read the table:
   piece. Their f* is therefore an upper limit that may exceed the supremum over the exact class.
 - Window-relative targets: a = 1 is the reference window's own intensity, wherever the first appearance puts it, so f* is relative to a window that may itself be low; a truth whose relative path exceeds a class ceiling is outside the class
   (`outside_*`).
-- The supremum is found by local search from three starts; a missed optimum makes the statistic too large (f* too small, anti-conservative). The flags and the nesting checks are the guard; no proof of global optimality.
-- Reference rates enter the target weights fixed at the reference-unit fit; the likelihoods re-profile them.
+- The supremum is found by local search from three starts, with one repair restart when the selected run did not converge; a missed optimum makes the statistic too large (f* too small, anti-conservative). Per-result status, the spread flag and the nesting checks are the guard; there is no proof of global optimality, and a failed statistic counts against coverage.
+- The target weights follow the rates being profiled (Codex R2), so the constraint is bilinear when two or more classes carry older exposure across two or more pieces. SLSQP handles it from the same starts; a differential-evolution check agrees on one two-class design, which is not a certificate for every design.
 - `Spec.from_toml` requires every inference field; the draft specification declares the `Spec` defaults (`test_draft_specification_sets_every_inference_field`).

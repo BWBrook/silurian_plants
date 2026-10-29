@@ -312,7 +312,7 @@ def brute_sup(pr, win, L, U, mono, f, levels=9, rounds=3):
     """The supremum over x by grid search with the target met exactly on the last piece, refined around the
     best point and polished by a numerical-gradient SLSQP started there; the reference rate is profiled by
     an independent scalar search at each grid point."""
-    P, c = win.P, win.c
+    P, c = win.P, win.coef(np.zeros(pr.n_cls))
 
     def value(x):
         res = optimize.minimize_scalar(lambda th: -pr._eval(win, np.array([th]), x, L, U, True, False), bounds=ev.LOG_R_BOUNDS, method="bounded", options={"xatol": 1e-10})
@@ -362,7 +362,7 @@ def test_optimiser_matches_a_brute_force_search_on_a_tiny_design(cls, mono, C, d
         assert fit.converged and fit.spread < ev.SPREAD_FLAG
         assert fit.value >= brute - 1e-7
         assert fit.value == pytest.approx(brute, abs=2e-4)
-        assert win.c @ fit.x >= f - 1e-6 and (not mono or np.all(np.diff(fit.x) <= 1e-7))
+        assert win.coef(fit.theta) @ fit.x >= f - 1e-6 and (not mono or np.all(np.diff(fit.x) <= 1e-7))
 
 
 @pytest.mark.parametrize("mono", [False, True])
@@ -371,7 +371,7 @@ def test_vertex_start_is_feasible_and_puts_the_target_on_one_piece_or_a_step(mon
     win = pr.window(pr.edges(476.0))
     L, U = np.zeros(win.P), np.full(win.P, 3.0)
     x = pr._vertex_start(win, L, U, mono, 0.6)
-    assert x is not None and win.c @ x >= 0.6 - 1e-9 and np.all(x >= L) and np.all(x <= U + 1e-12)
+    assert x is not None and win.coef(pr._th) @ x >= 0.6 - 1e-9 and np.all(x >= L) and np.all(x <= U + 1e-12)
     floor = ev.FLOOR * 3.0
     assert (np.all(np.diff(x) <= 1e-12) if mono else np.sum(x > floor + 1e-9) == 1)
     assert pr._vertex_start(win, L, U, mono, 3.0 + 1e-6) is None
@@ -385,6 +385,9 @@ def test_lr_is_non_decreasing_in_f_and_zero_up_to_the_best_constant():
         lr = np.array([pr.lr(cls, T, f).value for f in fs])
         assert np.all(np.diff(lr) >= -1e-6) and lr[0] == 0.0
     assert pr.lr("H0", T, 1.0 + 1e-3).value == math.inf
+    at_ceiling = [pr.lr(cls, T, 1.0 + 4.5e-13) for cls in ("H0c", "H0m", "H0")]
+    assert all(st.converged for st in at_ceiling) and at_ceiling[1].value == at_ceiling[2].value == pytest.approx(at_ceiling[0].value)
+    assert pr.lr("H1", T, 3.0).value == pytest.approx(2 * (pr.const_max(T, 0.0, 3.0)[0] - pr.ell_const(T, 3.0)))
 
 
 def test_best_constant_search_agrees_with_a_scan_when_an_older_unit_is_detected():
@@ -392,9 +395,83 @@ def test_best_constant_search_agrees_with_a_scan_when_an_older_unit_is_detected(
     pr = problem(rows, k=2.0)
     T = 475.0
     best_scan = max(pr.ell_const(T, f) for f in np.linspace(0, 1, 101))
-    hat, x_hat = pr.const_max(T)
+    hat, x_hat, ok, _ = pr.const_max(T)
+    assert ok
     assert hat >= best_scan - 1e-3 and hat <= best_scan + 0.05
     assert 0.0 < x_hat < 1.0
+
+
+def two_class_problem(detected):
+    """Two classes with different reference rates whose older units sit in different stages, so the target
+    coefficients move with the rates."""
+    rows = strong_reference() + [(st, st, 1, 500 + 20 * i + j, int(j < 1)) for i, st in enumerate(REF_STAGES) for j in range(20)]
+    rows += older_rows(10, "Sandbian", "Sandbian") + [("Darriwilian", "Darriwilian", 1, 2000 + j, 0) for j in range(12)]
+    rows += [("Dapingian", "Dapingian", 1, 3000 + j, 0) for j in range(4)] + older_rows(6, "Darriwilian", "Dapingian", 0, 4000)
+    rows += [("Sandbian", "Darriwilian", 1, 5000, int(detected))]
+    return problem(rows)
+
+
+def test_target_coefficients_follow_the_rates_and_their_gradient_is_exact():
+    pr = two_class_problem(False)
+    win = pr.window(pr.edges(470.0))
+    assert pr.n_cls == 2 and win.P == 3 and not win.rate_free
+    x = np.array([0.9, 0.4, 0.1])
+    for theta in (np.log(pr.r_ref), np.array([-3.0, -1.0]), np.array([-1.0, -4.0])):
+        assert win.coef(theta).sum() == pytest.approx(1.0)
+        abar, g = win.target(theta, x)
+        assert abar == pytest.approx(win.coef(theta) @ x)
+        z, h = np.r_[theta, x], 1e-6
+        num = [(win.target((z + h * e)[:2], (z + h * e)[2:])[0] - win.target((z - h * e)[:2], (z - h * e)[2:])[0]) / (2 * h) for e in np.eye(5)]
+        assert np.allclose(g, num, atol=1e-7)
+    assert not np.allclose(win.coef(np.array([-3.0, -1.0])), win.coef(np.array([-1.0, -4.0])))
+    assert win.target_floor(np.array([0.2, 0.0, 0.0])) == pytest.approx(min(win.coef(np.array([-30.0, 0.0])) @ [0.2, 0, 0], win.coef(np.array([0.0, -30.0])) @ [0.2, 0, 0]), abs=1e-9)
+    one = problem(strong_reference() + older_rows(30) + older_rows(20, "Dapingian", "Floian", 0, 2000)).window(pr.edges(476.0))
+    assert one.rate_free
+
+
+@pytest.mark.parametrize("detected", [False, True])
+@pytest.mark.parametrize("mono", [False, True])
+def test_two_class_supremum_constrains_the_target_at_its_own_rates_and_matches_a_global_search(mono, detected):
+    pr = two_class_problem(detected)
+    win = pr.window(pr.edges(470.0))
+    L, U = np.zeros(win.P), np.ones(win.P)
+    th0 = np.log(pr.r_ref)
+    bounds = [(t - 2.5, t + 2.5) for t in th0] + [(0.0, 1.0)] * win.P
+    for f in (0.35, 0.8):
+        fit = pr.bound_sup(win, L, U, mono, f)
+        assert fit.converged
+        assert win.coef(fit.theta) @ fit.x >= f - 1e-6 and (not mono or np.all(np.diff(fit.x) <= 1e-7))
+        cons = [optimize.NonlinearConstraint(lambda z: win.target(z[:2], z[2:])[0], f, np.inf)]
+        if mono:
+            cons.append(optimize.LinearConstraint(np.c_[np.zeros((win.P - 1, 2)), np.eye(win.P)[:-1] - np.eye(win.P)[1:]], 0.0, np.inf))
+        de = optimize.differential_evolution(lambda z: -pr._eval(win, z[:2], z[2:], L, U, True, False), bounds, constraints=cons,
+                                             seed=1, tol=1e-10, maxiter=400, polish=True)
+        assert np.all(np.abs(fit.theta - th0) < 2.5)
+        assert fit.value >= -de.fun - 1e-6
+        assert fit.value == pytest.approx(-de.fun, abs=2e-3)
+
+
+def test_select_keeps_the_highest_candidate_with_its_own_status():
+    z = np.zeros(2)
+    best, spread = ev.select([(-5.0, z, True), (-3.0, z + 1, False), (-4.0, z, True)])
+    assert best[0] == -3.0 and best[2] is False and spread == 2.0
+    best, _ = ev.select([(-3.0, z, True), (-3.0 + 1e-8, z + 1, False)])
+    assert best[2] is True and best[0] == -3.0
+
+
+def test_a_statistic_fails_when_its_alternative_or_its_null_fails(monkeypatch):
+    pr = problem(strong_reference() + older_rows(40) + older_rows(1, d=1, cluster0=2000), k=2.0)
+    T = 475.0
+    assert all(pr.lr(cls, T, 0.5).converged for cls in ("H0c", "H0m", "H0"))
+    good = pr.const_max(T, 0.0, 1.0)
+    monkeypatch.setattr(pr, "bound_sup", lambda *a, **k: ev.Fit(good[0] - 1.0, None, None, False, 0.0))
+    assert not pr.lr("H0", T, 0.5).converged and not pr.origin_stat("H0", T, 0.1).converged
+    monkeypatch.undo()
+    monkeypatch.setattr(pr, "const_max", lambda T, lo=0.0, hi=1.0: (good[0], good[1], False, 0.0))
+    for cls in ("H0c", "H0m", "H0"):
+        assert not pr.lr(cls, T, 0.5).converged and not pr.origin_stat(cls, T, 0.1).converged
+    assert not pr.fstar("H0c", T).converged
+    assert not pr.origin_set("H0c", 0.1, np.array([pr.tau, T])).ok[1]
 
 
 # --- first appearance and the reference window -----------------------------------------------------
@@ -428,7 +505,7 @@ def test_pieces_follow_the_stage_bases_and_the_lag_and_drop_empty_ones():
     assert pr.edges(452.0) == (452.8,)
     win = pr.window(pr.edges(500.0))
     assert win.P == 2 and np.allclose(win.piece_hi, [458.2, 469.4])
-    assert np.allclose(win.W.sum(axis=1), 1.0) and win.c.sum() == pytest.approx(1.0)
+    assert np.allclose(win.W.sum(axis=1), 1.0) and win.coef(np.zeros(pr.n_cls)).sum() == pytest.approx(1.0)
     assert np.allclose(win.W[0], [(458.2 - 452.8) / (469.4 - 452.8), (469.4 - 458.2) / (469.4 - 452.8)])
 
 
@@ -561,7 +638,7 @@ def test_origin_set_reports_bounded_unbounded_and_disconnected_sets():
     assert strict.older_endpoint <= delayed.older_endpoint <= strict.older_endpoint + pr.spec.h0m_lag_ma + 2.0
     with pytest.raises(ValueError):
         pr.origin_set("H1", 1.0, grid)
-    synthetic = ev.OriginSet("H0c", 1.0, 3.84, np.array([450.0, 452.0, 454.0, 456.0, 458.0]), np.array([0, 1, 9, 2, 8.0]), 560.0, 445.0)
+    synthetic = ev.OriginSet("H0c", 1.0, 3.84, np.array([450.0, 452.0, 454.0, 456.0, 458.0]), np.array([0, 1, 9, 2, 8.0]), 560.0, 445.0, np.ones(5, bool))
     assert synthetic.runs == [(450.0, 454.0), (456.0, 458.0)] and not synthetic.connected and not synthetic.unbounded
     assert synthetic.complete_runs == [(445.0, 454.0), (456.0, 458.0)]
 
@@ -740,15 +817,55 @@ def test_true_target_for_a_known_path():
 
 def test_harness_replicate_records_coverage_statistics_informativeness_and_states():
     cell = next(c for c in val.CELLS if c["name"] == "A4")
-    row = val.replicate((cell, 0))
+    row = val.replicate((cell, 0, val.ROOT_SEEDS["dev"], 0.0))
     assert row["error"] == "" and row["no_tau"] is False
     for key in ("tau", "trivial", "cover_set_H0c_1", "cover_set_H0m_0.1", "cover_set_H0_0.01", "lr0_H0c_0.01", "endpoint_H0c_1", "state_H0", "fstar_H0c", "lr_H0c", "state459_H0",
-                "fstar459_H0m", "crit_t0", "a_ref", "abar_rel", "state_H1-no-ceiling", "n_fits", "n_flagged", "seconds", "fmin_applicable_H0m"):
+                "fstar459_H0m", "crit_t0", "a_ref", "a_ref_realised", "abar_rel", "state_H1-no-ceiling", "n_fits", "n_flagged", "n_failed", "seconds", "fmin_applicable_H0m",
+                "ok_lr_H0", "ok_fstar_H0m", "ok_lr0_H0_0.1", "ok_set_H0c_1"):
         assert key in row
     assert row["state_H0"] in ev.STATES and row["state_H1-no-ceiling"] in ev.STATES
     summary = val.summarise(cell, [row])
     assert summary["n_valid"] == 1 and "cover_set_applicable_H0c" in summary and "fcover_H0c" in summary and "delta95_f_H0" in summary
+    assert "ocover_H0c_0.1" in summary and "ocover_H0c_1" not in summary and "delta95_ocover_H0m_0.01" in summary and "failed_f_H0" in summary
     assert "fcover_chi2_H0c" not in summary and not any("chi2" in k or "logistic" in k for k in row)
+
+
+def test_reference_normalisation_integrates_the_path_over_each_unit_range():
+    lo, hi = np.array([440.0, 445.0]), np.array([444.0, 455.0])
+    assert val.range_mean(lambda t: np.full_like(t, 0.7), lo, hi) == pytest.approx([0.7, 0.7])
+    assert val.range_mean(lambda t: t - 440.0, lo, hi) == pytest.approx([2.0, 10.0], abs=1e-6)
+    step = lambda t: np.where(t > 450.0, 0.2, 1.0)
+    assert val.range_mean(step, lo, hi)[1] == pytest.approx(0.6, abs=1e-3)
+
+
+def test_coverage_counts_no_claim_as_covered_and_errors_and_failed_statistics_as_not():
+    rows = [dict(error="", no_tau=False, lr=1.0, ok=True), dict(error="", no_tau=False, lr=9.0, ok=True),
+            dict(error="", no_tau=False, lr=1.0, ok=False), dict(error="", no_tau=True), dict(error="boom", no_tau=False)]
+    covers = lambda r: r["lr"] <= 3.0 and r["ok"]
+    assert val.coverage(rows, covers) == pytest.approx(2 / 5)
+    m = val.margins(rows, lambda r: r["lr"] - 3.0, "ok")
+    assert m == [-2.0, 6.0, math.inf, -math.inf, math.inf]
+
+
+def test_origin_readouts_are_acceptance_quantities_only_where_the_truth_satisfies_them_for_every_tau():
+    got = {c["name"]: val.origin_readouts(*val.cell_objects(c)) for c in val.CELLS if c["name"] in ("A1", "A2", "A6", "A7", "A9", "A10")}
+    assert got["A1"] == {"H0c": [1.0, 0.1, 0.01], "H0m": [1.0, 0.1, 0.01], "H0": [1.0, 0.1, 0.01]}
+    assert got["A2"] == {"H0c": [0.1, 0.01], "H0m": [0.1, 0.01], "H0": [0.1, 0.01]}
+    assert got["A6"] == {"H0c": [], "H0m": [0.1, 0.01], "H0": []}
+    assert got["A7"] == {"H0c": [], "H0m": [0.1, 0.01], "H0": []}
+    assert got["A9"] == {"H0c": [], "H0m": [], "H0": []} and got["A10"] == got["A9"]
+    d2 = next(c for c in val.CELLS if c["name"] == "D2")
+    assert val.acceptance_quantities(d2) == []
+    a6 = [q[0] for q in val.acceptance_quantities(next(c for c in val.CELLS if c["name"] == "A6"))]
+    assert a6 == ["fcover_H0m", "fcover_H0", "fcover_H1", "ocover_H0m_0.1", "ocover_H0m_0.01"]
+
+
+def test_calibrated_shift_is_the_largest_delta95_over_the_acceptance_quantities():
+    cells = [c for c in val.CELLS if c["name"] in ("A6", "D2")]
+    summary = [{"name": "A6", "delta95_f_H0m": 0.0, "delta95_f_H0": 0.2, "delta95_f_H1": 0.1, "delta95_ocover_H0m_0.1": 0.4, "delta95_ocover_H0m_0.01": 0.0},
+               {"name": "D2", "delta95_f_H0c": 9.0}]
+    delta, parts = val.calibrated_shift(summary, cells)
+    assert delta == 0.4 and len(parts) == 5
 
 
 def test_harness_cells_cover_the_declared_scenarios():
