@@ -3,7 +3,9 @@
 **Stage A complete:** all six papers plus one supplement acquired. Five papers
 were collected autonomously; Barry downloaded Liu 2016 immediately through the
 in-app browser after the automated Chrome route stalled.
-See `docs/audits/2026-10-29-six-paper-batch.md`. Stage B remains a proposal.
+See `docs/audits/2026-10-29-six-paper-batch.md`. **Stage B is also complete:**
+both public author-copy candidates were recovered autonomously; see
+`docs/audits/2026-10-29-researchgate-author-copies.md`.
 
 **Original recommendation:** first collect six priority-one recent Elsevier papers through
 the existing UTAS session, then attempt two public ResearchGate author copies.
@@ -52,12 +54,20 @@ After Stage A and Barry's Liu follow-up, the CSV has **456 needed, 22 local-copy
 and 14 open-copy-held**. The files, versions and resolved access history are in the batch audit
 and `library/closed.tsv`. The table above preserves the evidence before collection.
 
-## Stage B: two public author-copy candidates
+## Stage B: two public author-copy candidates — recovered
 
 | ID | Target | Route and acceptance requirement |
 |---|---|---|
 | `w2080475227-fulltext` | Mehlqvist, Vajda & Steemans 2012, Late Silurian Skåne spore assemblages (GFF, pp. 133–144) | [ResearchGate author record](https://www.researchgate.net/publication/233859796_Early_land_plant_spore_assemblages_from_the_Late_Silurian_of_Skane_Sweden) lists author content `Mehlqvist_2012.pdf`, with a 12-page article indexed. Current ORBi copy is only page 1 of a 12-page proof. Recover and verify all pages; retain version. This paper is distinct from the parked Mehlqvist 2013 thesis |
 | `wellman2013-open` | Wellman, Steemans & Vecoli 2013, *Palaeophytogeography of Ordovician–Silurian land plants*, chapter 29, pp. 461–476 | [ResearchGate author record](https://www.researchgate.net/publication/261700238_Palaeophytogeography_of_Ordovician-Silurian_Land_Plants) exposes main-chapter text. The old Figshare URL is supplementary material, not the chapter. Retrieve the actual main chapter, retain author/publisher version label, and reconcile the supplement separately |
+
+Stage B was authorised subsequently and completed on 29 October 2026: the full
+12-page Mehlqvist paper and 16-page Wellman chapter are held as
+`library/closed/mehlqvist2012.pdf` and `library/closed/wellman2013.pdf`. Both are
+public author uploads in published layout, with no open reuse licence established.
+Wellman's separate 40-page supplement was already held. No sign-in was needed.
+The register now has **454 needed, 22 local-copy-held, 16 open-copy-held**.
+The evidence in the table above describes the preflight, not a remaining gap.
 
 Chrome's normal public full-text download worked for Strother's author preprint,
 even though direct shell requests failed. That supports a bounded browser attempt

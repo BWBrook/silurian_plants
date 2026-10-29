@@ -15,6 +15,15 @@ access action. No request has been submitted.
 
 ## Resolved through diagnosis and follow-up
 
+### Stage B ResearchGate author copies — recovered autonomously 2026-10-29
+
+Mehlqvist 2012 (`w2080475227-fulltext`, 12 pages) and Wellman chapter 29
+(`wellman2013-open`, 16 pages) are verified and held in `library/closed/`.
+The in-app Mehlqvist device check restricted access, but Chrome worked without
+sign-in; Wellman's in-app check cleared automatically. No human action needed.
+See `docs/audits/2026-10-29-researchgate-author-copies.md` for versions and checks.
+
+
 ### Liu et al. 2016 — recovered 2026-10-29 (`al2016e`; Q1/Q2, MVD-B)
 
 - DOI `10.1016/j.revpalbo.2016.02.003`; RPP 233, 146–160.

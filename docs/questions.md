@@ -62,6 +62,9 @@ in `docs/literature-next-batch.md` secured all six full texts and Wang 2023's su
 after Barry resolved Liu 2016 through an immediate in-app browser download. Versions, verification
 and the Iranian paper's corrected publication year (2021) are recorded in
 `docs/audits/2026-10-29-six-paper-batch.md`. Q1/Q2 and spore synthesis readings are
-pending; Stage B's two public author-copy candidates remain proposed. Existing one-page
+pending. Stage B's two public author-copy candidates were subsequently recovered
+in full (Mehlqvist 2012, 12 pages; Wellman 2013 chapter 29, 16 pages); see
+`docs/audits/2026-10-29-researchgate-author-copies.md`. The already held Wellman
+supplement remains a separate asset. Scientific interpretation is unchanged. Existing one-page
 abstracts and main-paper/SI mismatches require source-kind reconciliation before
 being treated as missing articles. No scientific interpretation changed.

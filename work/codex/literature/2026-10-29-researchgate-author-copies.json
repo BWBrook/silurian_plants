@@ -1,0 +1,210 @@
+{
+  "date": "2026-10-29",
+  "scope": "Authorised Stage B: two ResearchGate author-copy candidates",
+  "outcome": "Both complete main texts acquired autonomously; no sign-in, account creation or author request needed",
+  "assets": [
+    {
+      "id": "w2080475227-fulltext",
+      "file": "closed/mehlqvist2012.pdf",
+      "doi": "10.1080/11035897.2012.683451",
+      "source_url": "https://www.researchgate.net/publication/233859796_Early_land_plant_spore_assemblages_from_the_Late_Silurian_of_Skane_Sweden",
+      "uploader": "Vivi Vajda",
+      "browser": "Chrome fallback; in-app device check restricted access",
+      "version": "Author-uploaded publisher-layout PDF; no open reuse licence established",
+      "pages": 12,
+      "printed_pages": "133-144",
+      "bytes": 758355,
+      "sha256": "4ee3aafd8d39d7e2d21cd96fa8ef15e33034a6549dbb640baa069bc29597e321",
+      "nonempty_text_pages": 12,
+      "all_pages_rendered": true,
+      "crossref": {
+        "DOI": "10.1080/11035897.2012.683451",
+        "title": [
+          "Early land plant spore assemblages from the Late Silurian of Skåne, Sweden"
+        ],
+        "author": [
+          {
+            "given": "Kristina",
+            "family": "Mehlqvist",
+            "sequence": "first",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Vivi",
+            "family": "Vajda",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Philippe",
+            "family": "Steemans",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          }
+        ],
+        "container-title": [
+          "GFF"
+        ],
+        "volume": "134",
+        "issue": "2",
+        "page": "133-144",
+        "published-print": {
+          "date-parts": [
+            [
+              2012,
+              6
+            ]
+          ]
+        },
+        "published-online": null,
+        "URL": "https://doi.org/10.1080/11035897.2012.683451"
+      },
+      "downloads_cleanup": {
+        "source": "/Users/bwbrook/Downloads/Mehlqvist_2012.pdf",
+        "archive": "/Users/bwbrook/papers/silurian_plants/library/closed/mehlqvist2012.pdf",
+        "bin": "/Users/bwbrook/.Trash/silurian-literature-20261029-researchgate/Mehlqvist_2012.pdf",
+        "status": "moved to recoverable Bin; source/archive/post-move hashes verified"
+      }
+    },
+    {
+      "id": "wellman2013-open",
+      "file": "closed/wellman2013.pdf",
+      "doi": "10.1144/M38.29",
+      "source_url": "https://www.researchgate.net/publication/261700238_Chapter_29_Palaeophytogeography_of_Ordovician-Silurian_land_plants",
+      "uploader": "Marco Vecoli",
+      "browser": "Codex in-app browser; automatic device check cleared",
+      "version": "Author-uploaded publisher-layout PDF; no open reuse licence established",
+      "pages": 16,
+      "printed_pages": "461-476",
+      "bytes": 2304234,
+      "sha256": "8437b385b8debf133ab0b71e7cb9e8e6bd3ff3f7d3c49f6983647e0101588f19",
+      "nonempty_text_pages": 16,
+      "all_pages_rendered": true,
+      "crossref": {
+        "DOI": "10.1144/m38.29",
+        "title": [
+          "Chapter 29 Palaeophytogeography of Ordovician–Silurian land plants"
+        ],
+        "author": [
+          {
+            "given": "Charles H.",
+            "family": "Wellman",
+            "sequence": "first",
+            "affiliation": [
+              {
+                "name": "Department of Animal and Plant Sciences, University of Sheffield, Alfred Denny Building, Western Bank, Sheffield S10 2TN, UK"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Philippe",
+            "family": "Steemans",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Paléobotanique, Paléopalynologie, Micropaléontologie (PPM), University of Liège, Batiment B-18, allée du 6-Août, 4000, Liège-1, Belgium"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Marco",
+            "family": "Vecoli",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Université Lille 1, UMR 8217, FRE 3298 CNRS ‘Géosystèmes’, Villeneuve d’Ascq F-59655, France"
+              },
+              {
+                "name": "Present address: Biostratigraphy Group, GLTSD, Saudi Aramco, Dhahran, 31311 Saudi Arabia"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          }
+        ],
+        "container-title": [
+          "Geological Society, London, Memoirs"
+        ],
+        "volume": "38",
+        "issue": "1",
+        "page": "461-476",
+        "published-print": {
+          "date-parts": [
+            [
+              2013,
+              1
+            ]
+          ]
+        },
+        "published-online": {
+          "date-parts": [
+            [
+              2014,
+              1,
+              22
+            ]
+          ]
+        },
+        "URL": "https://doi.org/10.1144/m38.29"
+      },
+      "downloads_cleanup": {
+        "source": "/Users/bwbrook/Downloads/Wellman_Steemans_Vecoli_2013.pdf",
+        "archive": "/Users/bwbrook/papers/silurian_plants/library/closed/wellman2013.pdf",
+        "bin": "/Users/bwbrook/.Trash/silurian-literature-20261029-researchgate/Wellman_Steemans_Vecoli_2013.pdf",
+        "status": "moved to recoverable Bin; source/archive/post-move hashes verified"
+      }
+    }
+  ],
+  "existing_supplement": {
+    "file": "data/external/spores/wellman2013_supplement/18680.pdf",
+    "pages": 40,
+    "bytes": 167504,
+    "sha256": "52a5d76c8867a36277a7bc945b0f183d4b43c7911bae53d5b65ce0e03d4ba585",
+    "identity": "Supplementary Material: Ordovician–Silurian dispersed spore assemblages; compiled by Philippe Steemans",
+    "source": "Figshare 10.6084/m9.figshare.3453524.v1 / Geological Society SUP18680; existing MANIFEST.tsv",
+    "licence_status": "Existing source register labels supplement CC BY 4.0; that does not license the main chapter",
+    "action": "Verified local identity, extent and hash; not downloaded or counted as a new acquisition"
+  },
+  "verification": "Parent matched Crossref metadata, DOI/title/authors, printed endpoints, PDF magic, all-page text, rendered all 28 pages and inspected contact sheet; source/archive hashes match",
+  "structure_checks": {
+    "mehlqvist2012": "qpdf check passes without warnings",
+    "wellman2013": "qpdf operation succeeds with linearisation/shared-object hint-table warnings; all 16 pages extract and render; original bytes retained"
+  },
+  "access_actions": [],
+  "scientific_reading": "Pending; no occurrence, sampling-unit or age adjudication changed",
+  "tabs": "Both successful work tabs closed; blocked in-app Mehlqvist tab also closed"
+}

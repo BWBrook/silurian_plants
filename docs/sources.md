@@ -124,6 +124,15 @@ Hooper archive inspected by Codex, 2026-10-29: checksum matches its retrieval ma
 
 ## 9. Literature
 
+Stage B's two ResearchGate main texts were recovered on 29 October 2026:
+Mehlqvist et al. 2012 (12 pages) and Wellman et al. 2013 chapter 29 (16 pages), in
+`library/closed/mehlqvist2012.pdf` and `library/closed/wellman2013.pdf`.
+They are public author uploads in published layout; no reuse licence was
+established for the main texts. Provenance is in `library/closed.tsv` and
+`docs/audits/2026-10-29-researchgate-author-copies.md`. The separate Wellman
+40-page supplement was already held in `data/external/spores/`; it is not a new
+acquisition. Scientific extraction remains pending.
+
 In `docs/closed-literature.csv`, `local-copy-held` records an institutionally accessed copy;
 `open-copy-held` records a publicly available copy and does not imply a particular licence.
 

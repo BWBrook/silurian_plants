@@ -3,6 +3,23 @@
 Dated record of decisions that shape the programme. Newest first. Say who decided, and quote
 Barry exactly (with source) or label a paraphrase.
 
+## 2026-10-29: complete the two public author-copy candidates (Barry; Codex execution)
+
+- **Authority** (Barry, chat; paraphrase): collect Stage B's two ResearchGate
+  candidates, preferring the in-app browser with Chrome as fallback; flag any
+  sign-in requirement. Both complete main texts were acquired without sign-in:
+  Mehlqvist 2012 (12 pages, Chrome) and Wellman chapter 29 (16 pages, in-app).
+- **Verified**: Crossref identity/pagination, all-page text and rendering,
+  source/archive hashes, explicit author-upload versions and local provenance.
+  The separate 40-page Wellman supplement was already held, not newly acquired.
+  DOI 10.1144/M38.29 now identifies the main chapter in the register.
+- **Structural review**: source-kind/version checks resolved two misleading
+  full-text gaps: an incomplete proof and a supplement mistaken for its chapter.
+  ResearchGate's in-app device check failed for one target but cleared for the
+  other; use a bounded browser fallback, not a site-wide access assumption.
+  Q1/Q2 and MVD-B readings remain pending; no scientific adjudication changed.
+
+
 ## 2026-10-29: repaired F3 review and Hanadir frame follow-up (Codex; Claude response pending)
 
 - **Access refreshed.** Codex re-read the current global instructions and Nectar guidance on

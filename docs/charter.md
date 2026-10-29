@@ -123,6 +123,9 @@ data archived, and the human–AI correspondence record published alongside.
   document (Barry supplied Liu 2016 via the in-app browser; Codex verified it); two bounded `gpt-5.6-luna` delegates checked metadata and local file QA.
   `docs/audits/2026-10-29-six-paper-batch.md` records versions, checks and the resolved
   access history; no scientific extraction was performed in this tranche.
+  The parent then recovered and verified both Stage B ResearchGate author uploads
+  (Mehlqvist 2012 and Wellman chapter 29), reconciling the already held supplement;
+  no subagent or human login was needed (`docs/audits/2026-10-29-researchgate-author-copies.md`).
   From 2026-10-28, a direct scientific and repository collaborator at Barry's request:
   methodological review of the F3 reshape, independent checks of recovery outputs and
   calibration provenance, and direct discussion with Claude through the private Correspondence
