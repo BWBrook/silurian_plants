@@ -98,6 +98,9 @@ for _name, _kind, _kw in [
     ("D4", "diagnostic", dict(history="H0c", f=0.3, k=0.8, k_analysis=2.0)),
     ("D5", "diagnostic", dict(history="H0c", f=0.3, truth_scenario="older")),
     ("D6", "diagnostic", dict(history="H0c", f=0.3, truth_scenario="younger")),
+    ("D7", "diagnostic", dict(history="H0c", f=0.3, shared_age=True)),
+    ("D8", "diagnostic", dict(history="H0c", f=0.3, shared_age=True, cluster_mean=10.0)),
+    ("D9", "diagnostic", dict(history="H0c", f=0.3, cluster_mean=10.0)),
 ]:
     CELLS.append(dict(id=len(CELLS), name=_name, kind=_kind) | BASE | _kw)
 
@@ -160,7 +163,7 @@ def cell_objects(cell: dict, shift: float = 0.0):
     truth = us.Truth(**{k: cell[k] for k in ("history", "t0", "tau0", "f", "delay", "g", "h") if k in cell})
     design = us.Design(
         p=tuple(cell["p"]), class_weights=tuple(cell["class_weights"]), k=cell["k"], scale=cell["scale"],
-        **{k: cell[k] for k in ("class_trend", "misassign", "older_report", "confine", "truth_scenario") if k in cell},
+        **{k: cell[k] for k in ("cluster_mean", "class_trend", "misassign", "older_report", "confine", "truth_scenario", "shared_age") if k in cell},
     )
     spec = ev.Spec(nodes=cell["nodes"], cluster_shape_k=cell.get("k_analysis", cell["k"]), readouts=READOUTS, crit_shift=shift)
     return truth, design, spec

@@ -46,8 +46,11 @@ do not wait or poll for a reply from an unprompted collaborator.
   machine names and routes follow nectar's `docs/workflows/cross-machine-access.md`; pull nectar
   before remote work. Use the short names (`mini`, `macbook`, `nectar`, `deep`, `wsl`, `alien`).
   - **Work started on the Macs** runs locally on `mini` when moderate, and otherwise on `nectar`
-    (user `codex`). `nectar` stands at `c3.large` (8 vCPU, 16 GiB); resize it with nectar's
-    `scripts/nectar/resize.sh` for a heavy job and return it afterwards. Project payloads go under
+    (user `codex`). `nectar` stands at `c3.large` (8 vCPU, 16 GiB). Size it liberally (Barry,
+    2026-10-29: "it's better to be liberal than conservative in your VM sizing"): resize to
+    `c3.3xlarge` (64 vCPU, 128 GiB) with nectar's `scripts/nectar/resize.sh` for serious work, keep
+    it there for the heavy tranche, then return it to `c3.large`. Pin BLAS to one thread
+    (`OMP_NUM_THREADS=1`) under process pools. Project payloads go under
     `nectar:/data/codex/silurian_plants/`.
   - **No route from the Macs to `deep` or `wsl`** (Barry's choice). Heavy work started on `wsl`
     goes to `deep`. Build no reverse tunnels.

@@ -3,6 +3,36 @@
 Dated record of decisions that shape the programme. Newest first. Say who decided, and quote
 Barry exactly (with source) or label a paraphrase.
 
+## 2026-10-29: Codex's second review accepted; contract rehearsed (Claude, awaiting Codex's check)
+
+- **Review accepted** (Claude Opus 5.5). R1–R4 of `docs/audits/2026-10-29-f3-repairs-and-frame-review.md` stand. Claude implemented them in `models/f3/`
+  (`55d7a58`; `docs/f3-shape.md`, "Second review"):
+  - **R2.** The target constraint is weighted at the rates being profiled, and the reference normalisation is integrated over the reference units' ranges.
+  - **R3.** Each result carries the status of the run it used, and a failed statistic never covers.
+  - **R4.** Calibrate and accept phases run on disjoint seeds, with a hashed receipt holding δ.
+- **Rehearsal on the synthetic design** (binds nothing):
+  - **Calibration** gave δ = 0.
+  - **Independent stage-1 acceptance** passed all 117 acceptance quantities; the lowest was A15 under H0c, at 946 of 1,000.
+  - **Numerics.** One fit failed in 63,000 replicates.
+  - **Misses are sampling, not optimisation.** Each calibration miss was re-solved from about 65 further starts, and none became a cover.
+  - **The repair leaves the statistic almost unchanged.** Re-running the development seeds with the repaired code leaves *f\** and coverage almost unchanged, so the development grid's δ = 0.11 was batch variation at a cell near 0.95.
+- **Shared ages within sections (R1)** were tested rather than argued, in diagnostic cells D7–D9. They cost about 0.01 of coverage at ten units per section
+  and nothing measurable at three. The independence assumption is declared, and the binding grid repeats the test at the real frame's cluster sizes.
+- **Proposed, for Codex:** calibrate δ to 0.955 rather than 0.95. A cell at 0.948 fails the agreed acceptance rule with probability 0.105. Barry's
+  decision is needed only if Claude and Codex disagree.
+- **Reporting rule.** Claude accepts Codex's three qualifications (`data/units/reporting-rule.md`) and adds productivity as an eligibility condition, for
+  Codex to integrate.
+- **Compute.** The paired re-run, the re-optimisation check and D7–D9 ran on `nectar` at `c3.3xlarge`. Barry (chat, 2026-10-29): "feel free to put it on
+  c3.3xlarge for this type of work, and leave it on that for as long as you need: I have plenty of allocated SU, so it's better to be liberal than
+  conservative in your VM sizing." Recorded in nectar `02fb316` and `AGENTS.md`.
+- **Structural review (Q1).**
+  - **The harness now executes the contract it describes,** so the binding validation is one command on the real frame.
+  - **Exposed assumptions:**
+    - a one-batch δ is noisy at cells near 0.95, which is what the 0.955 proposal answers;
+    - spread flags select hard data and do not by themselves indicate numerical error;
+    - the independence of unit ages is an approximation, measured but not removed.
+  - **No question changed.** Q1 waits on the frame tranche (Codex) and on Codex's check of this tranche.
+
 ## 2026-10-29: autonomous literature expansion, first checkpoint (Barry; Codex execution)
 
 - **Authority** (Barry, chat, exact): “No need to bring me the batch this time: just progress autonomously, basically as far as you can take it.” Existing instructions retain in-app-first sourcing, Chrome fallback, a blocked-action ledger and tab cleanup.

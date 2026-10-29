@@ -795,6 +795,21 @@ def test_design_options_confound_class_with_age_and_mislabel_reports_and_confine
     assert all(len(set(in_b[clusters == c])) == 1 for c in np.unique(clusters))
 
 
+
+def test_shared_age_puts_each_cluster_at_one_position_in_its_ranges_and_keeps_the_marginal():
+    base = AGE.base
+    s = us.simulate(us.Truth(f=0.5), us.Design(scale=0.2, shared_age=True), 3)
+    u = s.units
+    pos = (s.t_true - base[u.young - 1]) / (base[u.old] - base[u.young - 1])
+    assert np.all((pos >= 0) & (pos <= 1))
+    assert all(np.ptp(pos[u.cluster == c]) < 1e-9 for c in np.unique(u.cluster))
+    first = np.unique(u.cluster, return_index=True)[1]
+    assert abs(pos[first].mean() - 0.5) < 0.05 and abs((pos[first] < 0.25).mean() - 0.25) < 0.06
+    big = us.simulate(us.Truth(f=0.5), us.Design(scale=0.2, cluster_mean=10.0), 3)
+    assert 8 < len(big.units.cluster) / len(np.unique(big.units.cluster)) < 12
+    shared = next(c for c in val.CELLS if c["name"] == "D8")
+    assert val.cell_objects(shared)[1] == us.Design(k=2.0, scale=0.05, cluster_mean=10.0, shared_age=True)
+
 def test_truth_scenario_moves_the_true_ages():
     for scenario in ("older", "younger"):
         design = us.Design(truth_scenario=scenario)
@@ -870,7 +885,7 @@ def test_calibrated_shift_is_the_largest_delta95_over_the_acceptance_quantities(
 
 def test_harness_cells_cover_the_declared_scenarios():
     names = [c["name"] for c in val.CELLS]
-    assert names == [f"A{i}" for i in range(1, 16)] + [f"D{i}" for i in range(1, 7)]
+    assert names == [f"A{i}" for i in range(1, 16)] + [f"D{i}" for i in range(1, 10)]
     assert all(c["kind"] == ("acceptance" if c["name"][0] == "A" else "diagnostic") for c in val.CELLS)
     for c in val.CELLS:
         truth, design, spec = val.cell_objects(c)

@@ -437,8 +437,9 @@ Rows: the log-likelihood over (T0, rate) with psi profiled out; the profile for 
 Implements the estimator and validation harness of `docs/f3-shape.md` (v3, "What F3 reports" and "Validation before any real-data
 result"). First built by Claude Sonnet 5.5 (`claude-sonnet-5-5`), 2026-10-28, to the construction designed by Claude Opus 5.5, and
 repaired on 2026-10-29 by the same Sonnet to Opus's design after Codex's implementation review (`docs/audits/2026-10-29-f3-implementation-review.md`,
-I1 to I4). Nothing here has been run on real data: there is no real unit table yet. The development grid (21 cells × 1,000 replicates on the
-synthetic design, 2026-10-29) is below; it binds nothing, because the binding validation runs on the real design. The as-built smoke run (equal-duty H0, delay-grid H0m, logistic class, boundary draws, χ²
+I1 to I4). Claude Opus 5.5 made the changes after Codex's second review (`docs/audits/2026-10-29-f3-repairs-and-frame-review.md`, R1 to R4) and ran
+their rehearsal. Nothing here has been run on real data: there is no real unit table yet. The development grid (21 cells × 1,000 replicates on the
+synthetic design, 2026-10-29) and the rehearsal of the calibration contract are below; they bind nothing, because the binding validation runs on the real design. The as-built smoke run (equal-duty H0, delay-grid H0m, logistic class, boundary draws, χ²
 comparison) is in `c7729ad`, its count-matched re-run in `69f2ef4` and the 60-against-400 boundary-draw check in `b2c6443`.
 
 ### Files
@@ -453,14 +454,14 @@ comparison) is in `c7729ad`, its count-matched re-run in `69f2ef4` and the 60-ag
   summed over palaeogeographic units; a fraction have ranges widened by up to three stages; true ages uniform within the range under the
   truth scenario's bases; clusters are runs of consecutive true age with Gamma(k, k) effects; two classes. `Truth` histories: `H0c`, `step`
   (delay), `ramp`, `logistic`, `hide` and `hide_h1` (the least favourable H0 and H1 members: a 0/1 or 0/3 path lit on the stages with the fewest expected units per Myr
-  until the time-average is f). `Design` options, all off by default: `class_trend`, `misassign`, `older_report`, `confine`, `truth_scenario`
-  (docstring). The estimator sees only ranges, recorded classes, clusters and outcomes and must find tau itself.
-- `validate.py`: the harness (21 cells), its phases (`dev`, `calibrate`, `accept`) and the two-stage acceptance rule (`stage1`, `stage2`, `pass_probability`). Writes
+  until the time-average is f). `Design` options, all off by default: `class_trend`, `misassign`, `older_report`, `confine`, `truth_scenario`,
+  `shared_age` (docstring); `cluster_mean` sets the section size. The estimator sees only ranges, recorded classes, clusters and outcomes and must find tau itself.
+- `validate.py`: the harness (24 cells: 15 acceptance, 9 diagnostic), its phases (`dev`, `calibrate`, `accept`) and the two-stage acceptance rule (`stage1`, `stage2`, `pass_probability`). Writes
   `out/validation_<tag>.csv` (one row per cell, with stage-1 verdicts in the accept phase), `_reps.csv` (one row per replicate), `.meta.json` (phase, root seed,
   spawn keys, settings, file hashes) and, in the calibrate phase, `out/receipt_<tag>.json`. Replicate tables are committed gzipped. `out/validation_dev*` hold the
   development grid (`dev2`: its seeds under the repaired code); `cal`, `acc1` and `receipt_cal.json` the second-review rehearsal.
 - `check_paired.py` (two runs on the same seeds, replicate by replicate) and `check_reoptimise.py` (every miss re-solved from many more starts): the rehearsal's checks.
-- `test_envelope.py`: 79 tests; the whole of `models/f3` is 153 tests, all passing (about 40 s).
+- `test_envelope.py`: 80 tests; the whole of `models/f3` is 154 tests, all passing (about 40 s).
 
 ```bash
 uv run --with pytest --with numpy --with scipy python -m pytest -q models/f3
@@ -551,7 +552,7 @@ uv run models/f3/validate.py [--phase dev|calibrate|accept] [--receipt FILE] [--
 ### The validation harness
 
 Base: t0 = 476, tau0 = 452.8, p = (0.12, 0.04), class weights (0.6, 0.4), k = 2, scale 0.05 (about 505 units), 48 nodes, a 2 Myr origin grid, read-outs 1, 0.1 and 0.01. Acceptance cells are correctly specified; diagnostic cells
-are not, and are reported, not accepted against.
+are not (D9 is, as D8's control), and are reported, not accepted against.
 
 | Cell | Kind | Truth and design |
 |---|---|---|
@@ -576,6 +577,9 @@ are not, and are reported, not accepted against.
 | D4 | diagnostic | A2 with true k = 0.8 analysed at k = 2 |
 | D5 | diagnostic | A2 with truth_scenario `older` |
 | D6 | diagnostic | A2 with truth_scenario `younger` |
+| D7 | diagnostic | A2 with shared ages within clusters |
+| D8 | diagnostic | D7 with clusters of mean size 10 |
+| D9 | diagnostic | A2 with clusters of mean size 10 (D8's control) |
 
 - **Per replicate**, for each history class that contains the truth (`Truth.members`) and always H0: f* and its state at t0 and at T = 459.1 (Hooper's M2 maximum) when that lies above the estimated tau; LR_K(abar_rel), the
   statistic at the true target (the window-relative expected intensity: the path times `older_report` and (1 - `confine`) beyond tau0; `lr_nominal_*` is the statistic at the nominal path where those differ), the count-matched critical value and
@@ -688,6 +692,20 @@ The R4 contract run end to end on the synthetic design: calibration, receipt, th
   overall with probability 0.105 (borderline at stage 1 with probability 0.26, then short of 1,886 at stage 2); at 0.95 with 0.050; at 0.955 with 0.004. On this
   design a shift calibrated to 0.955 instead of 0.95 would be δ = 0.14 (A15 H0c). Whether to raise the calibration target before the binding run is open
   (`docs/f3-shape.md`).
+- **Shared ages within sections** (Codex R1; diagnostic cells added after the rehearsal, development seeds, 94 s on nectar; `out/validation_shared.*`). The
+  likelihood treats unit ages as independent within their ranges. In D7 and D8 every unit of a cluster instead takes the same relative position in its own range,
+  one uniform draw per cluster, so a whole section is early or late together; each unit's marginal age is unchanged. f\* coverage (H0c / H0m / H0 / H1):
+
+  | Cell | Ages | Mean cluster size | Coverage |
+  |---|---|---|---|
+  | A2 (calibration batch) | independent | 3 | 0.963 / 0.976 / 0.977 / 0.989 |
+  | D7 | shared | 3 | 0.964 / 0.973 / 0.973 / 0.985 |
+  | D8 | shared | 10 | 0.969 / 0.978 / 0.982 / 0.991 |
+  | D9 (control) | independent | 10 | 0.979 / 0.987 / 0.987 / 0.996 |
+
+  Shared ages cost nothing measurable at mean cluster size 3 and about 0.01 at size 10 (D8 against D9, about 1.3 standard errors), with coverage at or above 0.969
+  throughout. Fully shared position is the strongest dependence for a given clustering. The real frame's sections may be longer than ten samples and span stage
+  boundaries, so the binding grid should repeat D8 at the frame's own cluster sizes; until then the independence assumption is declared, not extended.
 - **Reference normalisation.** Per calibration replicate, the realised reference mean differs from the integrated one by a median of 0 in the correctly specified
   cells, and 90% of differences lie within about ±2.5% in the constant cells, ±5.5% in the hiding cells A9 and A12, and −10% to +14% in A10. In D5 and D6 (true
   boundaries older or younger than the chart) the realised value is systematically lower or higher (medians −2.2% and +3.3%): realised ages follow the true
@@ -703,7 +721,7 @@ The R4 contract run end to end on the synthetic design: calibration, receipt, th
 
 ### Limits
 
-- Cells are correctly specified except the six diagnostics. The H0 and H0m bounds are conservative: with a detected older unit the chord and the Jensen bound are not attained together; H0m's chord admits non-monotone paths within a
+- Cells are correctly specified except the diagnostics D1–D8. The H0 and H0m bounds are conservative: with a detected older unit the chord and the Jensen bound are not attained together; H0m's chord admits non-monotone paths within a
   piece. Their f* is therefore an upper limit that may exceed the supremum over the exact class.
 - Window-relative targets: a = 1 is the reference window's own intensity, wherever the first appearance puts it, so f* is relative to a window that may itself be low; a truth whose relative path exceeds a class ceiling is outside the class
   (`outside_*`).

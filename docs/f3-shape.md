@@ -1,6 +1,6 @@
 # The shape of F3 (v3)
 
-**Status: adopted, v3, 2026-10-28** (Barry, chat: "Yes, adopt v3"). Drafted by Claude Opus 5.5; Codex agreed the scientific direction (Correspondence `silurian-plants`, discussion 99, message 2484). Codex has since agreed H0's reference ceiling and unconditional coverage as the acceptance target (message 2496). Its implementation review (2026-10-29) led to the repairs under "Repairs after Codex's implementation review", which govern the estimator and await Codex's check. If Codex objects, the disagreement goes back to Barry stated both ways. This document governs F3's statistical contribution (`docs/plan-f3.md`, third amendment). Nothing here has yet been applied to real data.
+**Status: adopted, v3, 2026-10-28** (Barry, chat: "Yes, adopt v3"). Drafted by Claude Opus 5.5; Codex agreed the scientific direction (Correspondence `silurian-plants`, discussion 99, message 2484). Codex has since agreed H0's reference ceiling and unconditional coverage as the acceptance target (message 2496). Its implementation review (2026-10-29) led to the repairs under "Repairs after Codex's implementation review", which Codex then checked and accepted (R1). Its second review led to the changes under "Second review", which govern the estimator and await Codex's check. If Codex objects, the disagreement goes back to Barry stated both ways. This document governs F3's statistical contribution (`docs/plan-f3.md`, third amendment). Nothing here has yet been applied to real data.
 
 **Revision history.**
 - **v1** (`f01d4bd`) followed Barry's adoption of the second amendment (chat, 2026-10-28: "Yes, agreed, adopt it. Then let's re-assess the full shape of F3 given this constraint").
@@ -182,7 +182,7 @@ Codex reviewed the estimator at `b2c6443` (`docs/audits/2026-10-29-f3-implementa
    - **H1:** any *x* ∈ [0, *C*]^P.
    - **Logistic is withdrawn as a confidence class.** Its paths lie in H0m, and without a constant submodel the shared alternative did not nest it. Logistic histories stay in the validation as truths.
 
-   The target is linear in *x*: ā_r = Σ *c_p x_p*, where *c_p* is piece *p*'s share of the older units' reference exposure at the reference-window rates. *f\** is the largest *f* for which the class supremum over ā_r ≥ *f* is not rejected. The alternative is the best constant history on [0, class ceiling]: one alternative for H0c, H0m and H0, whose statistics therefore nest, *f\**(H0c) ≤ *f\**(H0m) ≤ *f\**(H0). Each fit is multi-started, including from an allocation that hides intensity in the sparsest pieces, and reports its convergence. A fit whose starts disagree by more than 0.05 in log-likelihood is flagged.
+   The target is linear in *x*: ā_r = Σ *c_p x_p*, where *c_p* is piece *p*'s share of the older units' reference exposure. Since the second review its weights are the rates being fitted, not the reference-window estimates (below, item 1). *f\** is the largest *f* for which the class supremum over ā_r ≥ *f* is not rejected. The alternative is the best constant history on [0, class ceiling]: one alternative for H0c, H0m and H0, whose statistics therefore nest, *f\**(H0c) ≤ *f\**(H0m) ≤ *f\**(H0). Each fit is multi-started, including from an allocation that hides intensity in the sparsest pieces, and reports its convergence. A fit whose starts disagree by more than 0.05 in log-likelihood is flagged.
 
 3. **Origin read-outs.** "*a* ≥ *f*_min on (τ, *T*]" holds pointwise:
    - **H0c:** constant at or above *f*_min.
@@ -207,6 +207,40 @@ Codex reviewed the estimator at `b2c6443` (`docs/audits/2026-10-29-f3-implementa
    **The development grid has run** (2026-10-29, 21 cells × 1,000 replicates; `models/f3/README.md`). Every correctly specified cell would pass stage 1 at δ = 0, with coverage 0.946–0.995. The diagnostics stay at or above 0.945 against the effective target. Read against the nominal path, regional confinement falls to 0.907–0.936, so the biological translation (§2) must state that *f\** bounds reported, range-averaged intensity.
 
 7. **Reporting.** Unconditional coverage is the acceptance quantity, and Codex agrees. Coverage over the truth-defined subset, where the true origin is older than τ̂, remains a diagnostic of non-uniformity. Any observable reporting rule, such as finite against unbounded or a minimum older exposure, is declared before calibration and calibrated with the procedure.
+
+## Second review: target, numerical status and the calibration contract (2026-10-29; Claude, awaiting Codex's check)
+
+Codex checked the repairs (`docs/audits/2026-10-29-f3-repairs-and-frame-review.md`, R1–R4; Correspondence 2541). It accepted the chord and Jensen construction within its model, the fixed boundaries and their scenarios, the withdrawal of logistic as a class and stage 2 at 1,886. It asked for three changes before any binding calibration. Claude Opus 5.5 accepts all three and has made them in `models/f3/`.
+
+1. **The constraint targets the true-rate quantity (R2).** The weights *c_p* were fixed at the rates fitted to the reference window alone, while validation scored against the generating rates. In Codex's A12 example the two weightings give 0.212 and 0.173. The constraint ā ≥ *f* now uses *c*(*r*) at the rates being profiled, so the supremum is over the target as defined in §1, not over a plug-in. *c* depends on *r* only through the class mix of the older exposure: with one class carrying the exposure, or one piece, it is fixed. Otherwise the constraint is bilinear in (*r*, *x*). A differential-evolution search agrees with the optimiser on a two-class design to 2 × 10⁻³ in log-likelihood (`test_envelope.py`).
+
+2. **One normalisation (R2).** "*a* = 1 in the reference window" is now realised in the same way on both sides of the ratio. The reference mean is integrated over the reference units' age ranges, weighted by the true rates, as the older target already was. Validation had divided by the path at the hidden realised ages. Hidden ages are part of the random data, not of the parameter, so the integrated form is the target. The realised form is kept as a diagnostic.
+
+3. **A numerical status belongs to the result it describes (R3).**
+   - A fit returns its highest feasible candidate with that run's own status. Candidates within 10⁻⁶ in log-likelihood count as equal, and a converged one is preferred.
+   - A selected run that did not converge is restarted once from where it stopped. If it still fails, the fit has failed.
+   - A statistic fails when its alternative or its null fails. Origin sets carry the status of every grid point.
+   - In validation, a failed decisive statistic does not cover at any shift. An unresolved optimisation can therefore never produce a finite exclusion that counts as success.
+   - **Two causes of false failure were found and removed.** First, SLSQP reports failure (mode 8) for a run that sits inside the 10⁻⁶ constraint tolerance and gains 10⁻⁸ in log-likelihood; the tie rule handles it. Second, at the class ceiling (*f* = *C*, which happens when the reference window lies wholly inside the reduced-intensity period) the feasible set is the single point *x* ≡ *C*. There the null is the constant history *C*, whose bound likelihood is exact.
+
+4. **The calibration and acceptance contract (R4).** These terms are fixed before the binding run:
+   - **Inputs.** The real unit table, the analysis specification, the code and the timescale are hashed into a receipt. The nuisance grid is the declared cell list, rebuilt on the real design.
+   - **Seeds.** Calibration and acceptance draw from disjoint seed streams: root seeds 20261101 and 20261102, with acceptance stage 1 on replicates 0–999 and stage 2 on 1,000–1,999.
+   - **One shift.** δ is the largest `delta95` over every acceptance quantity of every acceptance cell. The acceptance quantities are *f\** coverage under each class that contains the truth, plus each fixed origin read-out (below). δ is written to the receipt before acceptance starts. The acceptance run refuses to start if the code or inputs differ from the receipt.
+   - **Scoring.** Each replicate is scored against the true-rate, range-integrated target (items 1–2).
+   - **Fixed read-outs.** An origin read-out is accepted against only in cells whose truth satisfies its hypothesis for every possible τ: the truth is in the class and *a* ≥ *f*_min on (τ₀, *t*₀ − *D*]. Those cells give it the full 1,000 replicates. A read-out chosen from the simulated truth remains a diagnostic, reported with its denominator.
+   - **Replicates without a result.** A replicate with no first appearance makes no claim, so it covers, and its frequency is reported. An error, or a failed statistic, does not cover.
+   - **What the shift guarantees.** δ tunes the procedure on 1,000 calibration replicates. As Codex notes, that empirical quantile reaches the population's 95th percentile with probability of only about 0.46, and a maximum over a finite grid is not least-favourable over every nuisance value. The certificate is the independent acceptance run against the 0.93 floor. The claim made is acceptance at that floor, not population coverage of 0.95.
+   - **Implementation.** `validate.py` runs the phases `dev`, `calibrate` and `accept`.
+
+5. **Shared ages within a section (R1).** The likelihood treats unit ages as independent given their ranges, and the envelope argument is proved for that case. Samples from one section or borehole are ordered by depth, so their ages are not independent. Three diagnostic cells test it (`models/f3/README.md`): in D7 and D8 every unit of a cluster takes the same relative position in its own range, so a whole section is early or late together, with mean cluster size 3 and 10; D9 is D8's independent-age control. Coverage holds: shared ages cost nothing measurable at size 3 and about 0.01 at size 10 (0.969 against 0.979 under H0c), and stay at or above 0.969 in every class. The limitation is therefore declared rather than the likelihood extended. The binding grid repeats D8 at the real frame's cluster sizes, since real sections may be longer and span stage boundaries.
+
+6. **Dress rehearsal on the synthetic design.** The contract has been run end to end on the development design (`models/f3/README.md`, "Second-review rehearsal"). It binds nothing; the binding run waits for the real frame.
+   - **Calibration** gave δ = 0: all 117 acceptance quantities reached 0.95 unshifted (lowest A15 under H0c, 952 of 1,000).
+   - **Independent acceptance** at that δ passed all 117 at stage 1 (lowest A15 under H0c, 946; the pass line is 944).
+   - **Numerics.** One fit failed in 63,000 replicates, and it counted as a miss. Every calibration miss was re-solved from about 65 further starts, and none became a cover, so the misses are sampling, not missed optima.
+   - **The repair barely moves the statistic.** Re-running the development seeds with the repaired code leaves *f\** under H0c unchanged and coverage within 0.002 everywhere. The development grid's δ = 0.11 against 0 here is batch variation at a cell near 0.95: A15 under H0c covers 0.948 over three batches.
+   - **The acceptance rule's operating characteristic matters at that level.** A cell at 0.948 fails acceptance with probability 0.105, one at 0.955 with 0.004. Hence the proposal below to calibrate to 0.955.
 
 ## Where the evidence stands (2026-10-28, before any estimator)
 
@@ -280,9 +314,10 @@ Agreed in discussion 99 (messages 2474, 2477 and 2484).
 
 ## Open between Claude and Codex
 
-Codex agreed H0, the reference ceiling and unconditional coverage (message 2496), and implemented the interface comments in its pilot (`data/units/`). Open, posted in discussion 99:
-- **the repairs above** (2026-10-29), including the critical-value calibration and the development and binding grids;
-- **a binary reporting rule for real units,** proposed by Claude: which outcome states count as 0 or 1 under each reading, and which frames qualify;
-- **the frame tranche:** complete sample inventories, chosen by age, geography and reporting scope before their E1 outcomes are read (Codex's proposal, agreed by Claude).
+Codex agreed H0, the reference ceiling and unconditional coverage (message 2496), and implemented the interface comments in its pilot (`data/units/`). Codex accepted the repairs (R1, message 2541). Open, posted in discussion 99:
+- **the second-review changes above** (R2–R4), including the calibration contract, its rehearsal and the shared-age diagnostic;
+- **the binary reporting rule.** Codex agreed Claude's core rule with three qualifications (`data/units/reporting-rule.md`, message 2542), and Claude accepts all three. They are: a complete inventory includes failed and excluded samples; an explicit event-wide negative sets its own scope; an unknown is not an identification. Claude adds one point for Codex to integrate. A barren or unproductive preparation is accounted for in the frame but is not an E1 trial. Productivity is an eligibility condition, declared before outcomes are read and applied alike to reference and older units: the source records a palynological assemblage for the sample, or a minimum count where counts are given;
+- **the calibration target** (proposal, Claude, 2026-10-29). Calibrate δ so that every acceptance quantity reaches 0.955 in the calibration batch, not 0.95. The rehearsal shows why: the acceptance rule tests against 0.93, so a cell whose coverage sits at 0.948 fails it about one time in ten, and a one-batch δ at 0.95 does not lift such a cell clear. On the synthetic design the cost is δ = 0.14 rather than 0, a small loss of informativeness. The change is to the calibration target only, fixed before the binding run; the 0.93 floor and the stage thresholds are unchanged;
+- **the frame tranche:** a complete original sample log, or another source with documented complete sample and event reporting (Codex). Hanadir's 1996 chart gives 14 depths but does not certify a complete processed inventory.
 
 Anything unresolved goes to Barry with both positions stated.

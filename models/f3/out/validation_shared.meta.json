@@ -1,0 +1,144 @@
+{
+  "phase": "dev",
+  "root_seed": 20261030,
+  "replicate_seed": "SeedSequence(root_seed, spawn_key=(cell id, replicate)); child 0 simulates",
+  "crit_shift": 0.0,
+  "receipt": null,
+  "reps": 1000,
+  "start": 0,
+  "step_ma": 2.0,
+  "readouts": [
+    1.0,
+    0.1,
+    0.01
+  ],
+  "m2_max": 459.1,
+  "spec": {
+    "reference_stages": 5,
+    "min_units_per_class": 10,
+    "domain_ma": [
+      0.0,
+      560.0
+    ],
+    "classes": [
+      "H0c",
+      "H0m",
+      "H0",
+      "H1"
+    ],
+    "h1_ceiling": 3.0,
+    "h0m_lag_ma": 10.0,
+    "alpha": 0.05,
+    "readouts": [
+      1.0,
+      0.1,
+      0.01
+    ],
+    "cluster_shape_k": 2.0,
+    "crit_shift": 0.0,
+    "age_scenario": "chart",
+    "nodes": 48
+  },
+  "stage2_pass": 1886,
+  "spread_flag": 0.05,
+  "repair_iter": 1000,
+  "cells": [
+    {
+      "id": 21,
+      "name": "D7",
+      "kind": "diagnostic",
+      "t0": 476.0,
+      "tau0": 452.8,
+      "p": [
+        0.12,
+        0.04
+      ],
+      "class_weights": [
+        0.6,
+        0.4
+      ],
+      "k": 2.0,
+      "scale": 0.05,
+      "nodes": 48,
+      "history": "H0c",
+      "f": 0.3,
+      "shared_age": true
+    },
+    {
+      "id": 22,
+      "name": "D8",
+      "kind": "diagnostic",
+      "t0": 476.0,
+      "tau0": 452.8,
+      "p": [
+        0.12,
+        0.04
+      ],
+      "class_weights": [
+        0.6,
+        0.4
+      ],
+      "k": 2.0,
+      "scale": 0.05,
+      "nodes": 48,
+      "history": "H0c",
+      "f": 0.3,
+      "shared_age": true,
+      "cluster_mean": 10.0
+    },
+    {
+      "id": 23,
+      "name": "D9",
+      "kind": "diagnostic",
+      "t0": 476.0,
+      "tau0": 452.8,
+      "p": [
+        0.12,
+        0.04
+      ],
+      "class_weights": [
+        0.6,
+        0.4
+      ],
+      "k": 2.0,
+      "scale": 0.05,
+      "nodes": 48,
+      "history": "H0c",
+      "f": 0.3,
+      "cluster_mean": 10.0
+    }
+  ],
+  "design": {
+    "p": [
+      0.12,
+      0.04
+    ],
+    "class_weights": [
+      0.6,
+      0.4
+    ],
+    "k": 2.0,
+    "scale": 0.05,
+    "broad_frac": 0.12,
+    "cluster_mean": 3.0,
+    "class_trend": 0.0,
+    "misassign": 0.0,
+    "older_report": 1.0,
+    "confine": 0.0,
+    "truth_scenario": "chart",
+    "shared_age": false
+  },
+  "elapsed_seconds": 93.50176548957825,
+  "workers": 62,
+  "python": "3.12.3",
+  "numpy": "2.5.4",
+  "scipy": "1.18.1",
+  "sha256": {
+    "envelope.py": "7a23e1d4daf70b81b16e89c362724b49be6a638bcc4ea33c264a5901f79a22b2",
+    "units_sim.py": "e914fb1db3aa65d4700f87484d1ec63f50a05b32aa7a8e2c78473414d8b6b98f",
+    "validate.py": "8c463db0790e23ad1657d9f2106b733740a7fd21b522df1d180febca58e10ede",
+    "sim.py": "a37ea8c62919d43fe0fab85cdbce2f6c554fc9371b035e11d179e75b224e7bf7",
+    "timescale.csv": "29c6cc4a68b1746d1a67c66623e5df30ac5dd316257b55ca5948c9854886f826",
+    "effort.csv": "4f19216162fda42511e1fcb830ed7cc995ea3d1667a49fee9a82874c08a3dc76"
+  }
+}

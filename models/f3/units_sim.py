@@ -23,6 +23,9 @@ mean-one Gamma(k, k) detection effect. Eligibility class is drawn independently 
                real class);
   older_report the rate multiplier for units older than tau0 (a reporting difference);
   confine      each cluster is in region B with this probability, where a = 0 for t > tau0.
+  shared_age   every unit of a cluster takes the same relative position in its own age range (one uniform
+               draw per cluster): a section whose age is uncertain as a whole. Each unit's marginal age is
+               unchanged; the analysis treats unit ages as independent.
 
 Truth histories between tau0 and t0, each times f, the nominal level:
   H0c       a = f.
@@ -74,6 +77,7 @@ class Design:
     older_report: float = 1.0
     confine: float = 0.0
     truth_scenario: str = "chart"
+    shared_age: bool = False
 
 
 @dataclass(frozen=True)
@@ -198,6 +202,8 @@ def simulate(truth: Truth, design: Design, seed: int | np.random.SeedSequence) -
         sizes.append(1 + rng.poisson(design.cluster_mean - 1))
     cluster = np.empty(n, int)
     cluster[order] = np.repeat(np.arange(len(sizes)), sizes)[:n]
+    if design.shared_age:
+        t_true = base[young - 1] + rng.random(len(sizes))[cluster] * (base[old] - base[young - 1])
     u = np.ones(len(sizes)) if np.isinf(design.k) else rng.gamma(design.k, 1.0 / design.k, len(sizes))
 
     w = np.array(design.class_weights, float) / sum(design.class_weights)

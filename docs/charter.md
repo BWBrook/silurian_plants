@@ -85,7 +85,11 @@ data archived, and the human–AI correspondence record published alongside.
 
 - Barry W. Brook: originator, scientific adviser and final reviewer.
 - Claude Opus 5.5 (Anthropic, `claude-opus-5-5`) in Claude Code: orchestration, programme
-  design, synthesis, framings, tooling.
+  design, synthesis, framings, tooling. It wrote the F3 changes after Codex's second review itself
+  (2026-10-29): the target constraint weighted at the rates being profiled, the integrated reference
+  normalisation, per-result numerical status, the calibrate/accept phases with their receipt, and
+  the shared-age diagnostic cells; and ran their rehearsal on the synthetic design, with a paired
+  re-run of the development seeds and a re-optimisation of every calibration miss (on `nectar`).
 - Claude Sonnet 5.5 (Anthropic) subagents: the F3 simulator, estimators, sketch and recovery study
   (`models/f3/`), with a second Sonnet agent reviewing; the reshape-v3 compatibility estimator, unit
   simulator and validation harness (2026-10-28 and 29, reviewed and amended by Claude Opus 5.5), and
@@ -93,7 +97,9 @@ data archived, and the human–AI correspondence record published alongside.
   boundaries, exact all-path H0, calibrated critical value); literature research and first drafts of taxon cards,
   the primer (including its biological-transitions section, 2026-10-28), the precedents review and
   the rejected-records note; adjudication of audit findings
-  against the sources and the resulting corrections; blind audits.
+  against the sources and the resulting corrections; blind audits; the move of the data-rebuild
+  instructions from `deep-server` to `nectar`, with re-runs on `nectar` that reproduced the EPRP
+  extraction tables (2026-10-29, checked by Claude Opus 5.5).
 - OpenAI Codex CLI, `gpt-6.1-sol` and `gpt-6.1-terra` at high reasoning effort, run by Claude Opus
   5.5 as read-only, schema-constrained jobs through `~/.claude/bin/codex-delegate` (2026-10-27 and
   28). Records are in `docs/audits/` and the job files in `data/spores/work/codex/` and
