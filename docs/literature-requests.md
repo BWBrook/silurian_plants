@@ -20,11 +20,21 @@ legwork from me, which I'm happy to do if they're important to this current work
   study).
 
 Tiers and reasons are in `first-study-literature.csv`, route `barry-reopen`.
+
+**Tier 1 follow-up, 30 October 2026:** `al2007d` (14 pages, public author copy) and
+`al2015f` (24 pages, UTAS Cambridge) are now **resolved**, superseding their earlier
+access histories below. `al2011n`, `al2023b`, `mehlqvist2013` and `garratt1978`
+remain unheld; current routes and observations are in `barry-to-action.md`.
+The Tier 2 reopenings were not worked in this Tier 1 pass; the two still-parked sources
+remain parked. No request has been submitted.
+
 The source IDs below are the exclusion set for automated batch selection.
 
 ## Eight candidates from the October pilot
 
 ### Vecoli et al. 2015 — Kanosh Shale palynology
+
+**Resolved 30 October 2026:** publisher PDF held at `library/closed/al2015f_firststudy.pdf`. The following is the earlier access history.
 
 - ID `al2015f`; DOI `10.1017/jpa.2015.29`.
 - Reopen: [UTAS LibKey article](https://libkey.io/libraries/729/articles/77516390/content-location?utm_source=api_3637&allow_speedbump=true).
@@ -67,6 +77,8 @@ The source IDs below are the exclusion set for automated batch selection.
   supplement remain pending. No library request or purchase submitted.
 
 ### Le Hérissé et al. 2007 — Hanadir environments (Q1, Q2)
+
+**Resolved 30 October 2026:** public author-upload PDF held at `library/closed/al2007d_firststudy.pdf`. The following is the earlier access history.
 
 - ID `al2007d`; DOI `10.1016/j.revmic.2007.01.010`.
 - Authenticated UTAS **Everything** search returns the article and a HAL record;

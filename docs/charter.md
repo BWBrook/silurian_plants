@@ -168,6 +168,11 @@ data archived, and the human–AI correspondence record published alongside.
   distinction between scanned pages and extractable text. The autonomous
   audits dated 2026-10-29 record the checks and limitations. Scientific extraction
   and adjudication are separate work.
+  The focused Tier 1 pass of 29–30 October secured 39 new main texts, ten new supporting files,
+  two abstracts and one qualified component copy, with three existing Morris files mirrored
+  for reading. Three bounded `gpt-5.6-luna` delegates checked public routes, metadata and QA;
+  the parent owned browsers, source-identity corrections and registration. Scientific readings
+  remain with the main agents (`docs/audits/2026-10-30-first-study-tier1.md`).
   From 2026-10-28, a direct scientific and repository collaborator at Barry's request:
   methodological review of the F3 reshape, independent checks of recovery outputs and
   calibration provenance, and direct discussion with Claude through the private Correspondence

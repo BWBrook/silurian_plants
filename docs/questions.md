@@ -175,3 +175,15 @@ Their “full-text gap” needs source-kind/target reconciliation; no longer res
 article was identified for those DOIs. The priority-one inventory keeps those
 cases, DOI aliases and unsearched leads explicit without inflating recovered
 full-article counts or declaring sources unobtainable.
+
+### First-study Tier 1 source availability, 30 October 2026 (Q1, Q2, Q4, Q5)
+
+The scout secured 39 new main texts and ten new supporting files, with two source-kind
+corrections and one qualified component copy. Q1's candidate sampling frames and Q2/Q4's
+pivotal specimen readings can now use the registered sources; technical acquisition
+does not establish a searched negative, a usable frame, or a character interpretation.
+Sixteen focused rows remain unresolved/incomplete; exact actions are in
+`docs/barry-to-action.md` and outcomes in `docs/first-study-literature-status.csv`.
+For Q5, the 2014 Hanadir item is a one-page poster abstract that cites the distinct 2015
+systematic paper; the Sweden DOI likewise identifies an abstract. These are bibliographic
+source-kind corrections, not scientific refutations. No question's scientific status changed.

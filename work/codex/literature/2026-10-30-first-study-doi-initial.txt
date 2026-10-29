@@ -1,0 +1,5 @@
+references.md: 10.1016/j.revmic.2007.01.010
+  first author Le Hérissé not in citation — Crossref: Le Hérissé 2007, Environmental changes reflected by palynomorphs in the early Middle Ordovician Hanadir Member of the Qasim Formation, Saudi Arabia
+references.md: 10.1080/11035897.2019.1636860
+  title overlap 0% — Crossref: Rubinstein 2019, Baltica cradle of early land plants? Oldest record of trilete spores and diverse cryptospore assemblages; evidence from Ordovician successions of Sweden
+35 distinct DOIs, 2 flagged

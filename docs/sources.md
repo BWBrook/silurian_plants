@@ -247,3 +247,22 @@ is now 97 main texts, 46 supporting files and one erratum. The CSV has 348 neede
 are resolved; see `docs/audits/2026-10-29-autonomous-native.md` and its matching
 receipt. Pertica now has a confirmed JSTOR institutional route requiring Barry's
 explicit terms action, recorded separately from entitlement gaps.
+
+## 12. First-study Tier 1 acquisition, 29–30 October 2026
+
+The focused pass secured 39 new main texts, ten new supporting files (seven originals and
+three qualified browser-text captures), two complete conference abstracts and a qualified
+Masiak 2003 component copy. Three already-held Morris supporting/data files were also copied
+into the reading library, giving 55 file entries. Forty of 58 Tier 1 rows now have main texts
+(one Lang/Cookson duplicate); two are abstract-only, one partly held and 15 blocked.
+Sixteen rows remain unresolved or incomplete. Tier 2 and the two still-parked sources were
+not collected. See `docs/audits/2026-10-30-first-study-tier1.md`,
+`docs/first-study-literature-status.csv` and `library/closed.tsv`.
+
+Q1 gains Qusaiba, QSIM-801, Borenshult, Kanosh, Hanadir and one Pelmis companion;
+Q2/Q4 gain the pivotal pilot and anatomical sources. New holdings are reading inputs,
+not verified sampling frames or adopted trait/age interpretations. Preserve the
+repository-manuscript, preprint, print/online-year and Masiak extent qualifications.
+For Q5, al2014f is a distinct 2014 GEO poster abstract, not an alias of the 2015 systematic
+paper. The Sweden one-page source is also an abstract; Steemans 2009's one-page Brevia
+is a complete article, with its original supporting methods now held.

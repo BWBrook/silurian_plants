@@ -3,6 +3,12 @@
 Dated record of decisions that shape the programme. Newest first. Say who decided, and quote
 Barry exactly (with source) or label a paraphrase.
 
+## 2026-10-30: first-study Tier 1 literature acquisition (Codex, authorised by Barry)
+
+- **Scope:** Barry chose Tier 1 first. The scout collected 39 new main texts, ten new supporting files, two complete abstracts and a qualified component copy; three identical existing Morris supporting files were mirrored into the reading library. All 55 file entries have sizes, hashes and provenance. Input tiers and scientific files are unchanged.
+- **Availability:** 40 of 58 focused rows have main texts, including one duplicate; two are abstract-only, one partly held and 15 blocked. Kanosh and Hanadir 2007 are resolved. Four reopened Tier 1 sources remain incomplete/unheld. Tier 2 and still-parked sources were not collected. The full audit and status register are `docs/audits/2026-10-30-first-study-tier1.md` and `docs/first-study-literature-status.csv`.
+- **Structural review (Q1/Q2/Q4/Q5):** the existing library/manifest plus a focused outcome CSV serves the next readings. Exposed: abstract records had been treated as missing articles; a combined dating row contains two references; print/online and delivery-DOI aliases need explicit provenance. Preserve those identities, manuscript/preprint versions and copied-deposit distinctions. Acquiring a file does not establish a sampling frame or a scientific interpretation; no question's scientific status changed. The existing Barry-action/request ledgers now record only the outstanding actions for this tranche.
+
 ## 2026-10-29: pilot mapping review, published-state extraction and remaining acceptance checks (Codex)
 
 - **Assessment:** Codex supports the trait-to-node pilot framing Barry approved. Its temporal propositions need an explicit node-to-event-history implication; an earlier trait origin on an extinct side branch does not guarantee production by an older crown. Crown-state support, transition histories and origin timing must remain distinct. Amendments are proposed to Claude in `docs/audits/2026-10-29-pilot-and-contract-review.md`; his specification remains unedited pending integration.

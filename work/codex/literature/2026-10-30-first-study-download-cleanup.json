@@ -1,0 +1,219 @@
+{
+  "created": "2026-10-30T00:27:52.927643",
+  "method": "Recoverable move to macOS Bin; nothing permanently deleted",
+  "trash_directory": "/Users/bwbrook/.Trash/silurian-first-study-20261030T002752",
+  "moved": [
+    {
+      "source": "/Users/bwbrook/Downloads/Late Ordovician  Katian  spores in Sweden  oldest land plant remains from Baltica.pdf",
+      "archive": "library/closed/badawy2014_firststudy.pdf",
+      "bytes": 707671,
+      "sha256": "59412e22e125b01375cee442df4a9ce3744b44b90f96cdc773e9ced890b0811a",
+      "reason": "Verified duplicate of archived source",
+      "trash": "/Users/bwbrook/.Trash/silurian-first-study-20261030T002752/Late Ordovician  Katian  spores in Sweden  oldest land plant remains from Baltica.pdf"
+    },
+    {
+      "source": "/Users/bwbrook/Downloads/High diversity and early radiation of organic-walled phytoplankton in southern Baltica during the Middle-Late Ordovician   evidence from the Borenshul.pdf",
+      "archive": "library/closed/rubinstein2023_firststudy.pdf",
+      "bytes": 11730128,
+      "sha256": "751925898f563305e8f3a22394ec7ce7d2dcfb75e43f235b9e94cb53608d5441",
+      "reason": "Verified duplicate of archived source",
+      "trash": "/Users/bwbrook/.Trash/silurian-first-study-20261030T002752/High diversity and early radiation of organic-walled phytoplankton in southern Baltica during the Middle-Late Ordovician   evidence from the Borenshul.pdf"
+    },
+    {
+      "source": "/Users/bwbrook/Downloads/2019-an-alternative-model-for-the-earliest-evolution-of-vascular-plants.pdf",
+      "archive": "library/closed/cascalesminana2019_firststudy.pdf",
+      "bytes": 4081268,
+      "sha256": "35af0d469818575e8d5e1fc440c599d5430998ddadcff40a2ff170a97a24bf6c",
+      "reason": "Verified duplicate of archived source",
+      "trash": "/Users/bwbrook/.Trash/silurian-first-study-20261030T002752/2019-an-alternative-model-for-the-earliest-evolution-of-vascular-plants.pdf"
+    },
+    {
+      "source": "/Users/bwbrook/Downloads/let12323-sup-0001-datas1.xlsx",
+      "archive": "library/closed/cascalesminana2019_firststudy_SI1.xlsx",
+      "bytes": 13440,
+      "sha256": "3d3db8cc025c9cc41268a7ddf96d07fc6b350ce9508cf074a3b27f6c2e91bc10",
+      "reason": "Verified duplicate of archived source",
+      "trash": "/Users/bwbrook/.Trash/silurian-first-study-20261030T002752/let12323-sup-0001-datas1.xlsx"
+    },
+    {
+      "source": "/Users/bwbrook/Downloads/let12323-sup-0002-tables1.docx",
+      "archive": "library/closed/cascalesminana2019_firststudy_SI2.docx",
+      "bytes": 14769,
+      "sha256": "aaca7ca04c998bf563bb27062debd0a40830750e7236f0ac2bcc8731761c2495",
+      "reason": "Verified duplicate of archived source",
+      "trash": "/Users/bwbrook/.Trash/silurian-first-study-20261030T002752/let12323-sup-0002-tables1.docx"
+    },
+    {
+      "source": "/Users/bwbrook/Downloads/nph70850-sup-0001-supinfo.docx",
+      "archive": "library/closed/kenrick2025_firststudy_SI1.docx",
+      "bytes": 21829066,
+      "sha256": "9e7a6b9951244017e953d1dad0ba88e0d7259ab45893d1d55642b463bd7a9ba5",
+      "reason": "Verified duplicate of archived source",
+      "trash": "/Users/bwbrook/.Trash/silurian-first-study-20261030T002752/nph70850-sup-0001-supinfo.docx"
+    },
+    {
+      "source": "/Users/bwbrook/Downloads/New Phytologist - 2025 - Kenrick - Transfer cells in Horneophyton lignieri illuminate the origin of vascular tissues in.pdf",
+      "archive": "library/closed/kenrick2025_firststudy.pdf",
+      "bytes": 6166308,
+      "sha256": "1df4c5cdc28a3e3c07c46c1c8c036011a7135d6a172eb5b78af3a27342eb8f5f",
+      "reason": "Verified duplicate of archived source",
+      "trash": "/Users/bwbrook/.Trash/silurian-first-study-20261030T002752/New Phytologist - 2025 - Kenrick - Transfer cells in Horneophyton lignieri illuminate the origin of vascular tissues in.pdf"
+    },
+    {
+      "source": "/Users/bwbrook/Downloads/Palaeontology - 2013 - Wang - Enigmatic occurrence of Permian plant roots in Lower Silurian rocks  Guizhou Province  China.pdf",
+      "archive": "library/closed/wang2013_firststudy.pdf",
+      "bytes": 998672,
+      "sha256": "a068c908a2e5fcf171cdf4273931a64e4eca504ce017f4071f9572c6dabb7e51",
+      "reason": "Verified duplicate of archived source",
+      "trash": "/Users/bwbrook/.Trash/silurian-first-study-20261030T002752/Palaeontology - 2013 - Wang - Enigmatic occurrence of Permian plant roots in Lower Silurian rocks  Guizhou Province  China.pdf"
+    },
+    {
+      "source": "/Users/bwbrook/Downloads/s41477-026-02432-3.pdf",
+      "archive": "library/closed/hooper2026_firststudy.pdf",
+      "bytes": 2557247,
+      "sha256": "1e919a8bba50015cdc2e98ad5cbac0e724ca383252cb60cd84622a20904315af",
+      "reason": "Verified duplicate of archived source",
+      "trash": "/Users/bwbrook/.Trash/silurian-first-study-20261030T002752/s41477-026-02432-3.pdf"
+    },
+    {
+      "source": "/Users/bwbrook/Downloads/nature01884.pdf",
+      "archive": "library/closed/al2003d_firststudy.pdf",
+      "bytes": 941246,
+      "sha256": "89843e7476e1f78e88ce9d6f906920ee7fe113a90515859463c101baef8c95b0",
+      "reason": "Verified duplicate of archived source",
+      "trash": "/Users/bwbrook/.Trash/silurian-first-study-20261030T002752/nature01884.pdf"
+    },
+    {
+      "source": "/Users/bwbrook/Downloads/spores-of-the-rhynie-chert-plant-horneophyton-lignieri-kidston-and-lang-barghoorn-and-darrah-1938.pdf",
+      "archive": "library/closed/al2003e_firststudy.pdf",
+      "bytes": 5186658,
+      "sha256": "7753786021f8bbcea8b374de474fbbf8ee5875957d9e7fd11fa2fd558014133c",
+      "reason": "Verified duplicate of archived source",
+      "trash": "/Users/bwbrook/.Trash/silurian-first-study-20261030T002752/spores-of-the-rhynie-chert-plant-horneophyton-lignieri-kidston-and-lang-barghoorn-and-darrah-1938.pdf"
+    },
+    {
+      "source": "/Users/bwbrook/Downloads/detrital-u-pb-ages-for-the-first-well-preserved-vascular-plant-cooksonia-from-the-uk-and-irish-macrofossil-record.pdf",
+      "archive": "library/closed/garza2024_firststudy.pdf",
+      "bytes": 2285166,
+      "sha256": "4cc8595c4730646f0e9126495ed45f1d12906f2597fea2c32ba7b35a32e61eb8",
+      "reason": "Verified duplicate of archived source",
+      "trash": "/Users/bwbrook/.Trash/silurian-first-study-20261030T002752/detrital-u-pb-ages-for-the-first-well-preserved-vascular-plant-cooksonia-from-the-uk-and-irish-macrofossil-record.pdf"
+    },
+    {
+      "source": "/Users/bwbrook/Downloads/urn_cambridge.org_id_binary_20241128125701848-0584_S0016756824000384_S0016756824000384sup001.xlsx",
+      "archive": "library/closed/garza2024_firststudy_SI1.xlsx",
+      "bytes": 208197,
+      "sha256": "0b27a8d3735bfe0f9774092da900e67be6281a663b9e0cfef86b386e79cbdc31",
+      "reason": "Verified duplicate of archived source",
+      "trash": "/Users/bwbrook/.Trash/silurian-first-study-20261030T002752/urn_cambridge.org_id_binary_20241128125701848-0584_S0016756824000384_S0016756824000384sup001.xlsx"
+    },
+    {
+      "source": "/Users/bwbrook/Downloads/rstb20160495.pdf",
+      "archive": "library/closed/kerp2017_firststudy.pdf",
+      "bytes": 2737509,
+      "sha256": "8546e9158c8ad33035e201b753996a06dda2bcdae4626a16c8146992aecb3d92",
+      "reason": "Verified duplicate of archived source",
+      "trash": "/Users/bwbrook/.Trash/silurian-first-study-20261030T002752/rstb20160495.pdf"
+    },
+    {
+      "source": "/Users/bwbrook/Downloads/pnas.1719588115.sapp.pdf",
+      "archive": "library/closed/morris2018_firststudy_SI1.pdf",
+      "bytes": 5064178,
+      "sha256": "debf9784c2cafd47e4fe0acac84c29f1aafcd82596d7e6410483f45761f112f5",
+      "reason": "Verified duplicate of archived source",
+      "trash": "/Users/bwbrook/.Trash/silurian-first-study-20261030T002752/pnas.1719588115.sapp.pdf"
+    },
+    {
+      "source": "/Users/bwbrook/Downloads/rickards-garratt-2022-přídolí-graptolites-from-the-humevale-formation-at-ghin-ghin-and-cheviot-victoria-australia.pdf",
+      "archive": "library/closed/rickardsgarratt1990_firststudy.pdf",
+      "bytes": 694293,
+      "sha256": "8a740096be42cedd1fbcf9924d3f7d9117be859de7a0adb7115cb03566bd556b",
+      "reason": "Verified duplicate of archived source",
+      "trash": "/Users/bwbrook/.Trash/silurian-first-study-20261030T002752/rickards-garratt-2022-přídolí-graptolites-from-the-humevale-formation-at-ghin-ghin-and-cheviot-victoria-australia.pdf"
+    },
+    {
+      "source": "/Users/bwbrook/Downloads/S101933161905006X.pdf",
+      "archive": "library/closed/naugolnykh2019_firststudy.pdf",
+      "bytes": 2652496,
+      "sha256": "a383c0f2e813db2a303090e3a51de4b23677577c762bb21e4b5cdf2c4d8d9b78",
+      "reason": "Verified duplicate of archived source",
+      "trash": "/Users/bwbrook/.Trash/silurian-first-study-20261030T002752/S101933161905006X.pdf"
+    },
+    {
+      "source": "/Users/bwbrook/Downloads/Biostratigraphy_and_palaeogeography_of_Late_Ordovi.pdf",
+      "archive": "library/closed/ghavidelsyooki2002_firststudy.pdf",
+      "bytes": 1141861,
+      "sha256": "2c5df609c274eacb0804d2d873bd36c75df5498eed4801ad5f5f61c4d4112da1",
+      "reason": "Verified duplicate of archived source",
+      "trash": "/Users/bwbrook/.Trash/silurian-first-study-20261030T002752/Biostratigraphy_and_palaeogeography_of_Late_Ordovi.pdf"
+    },
+    {
+      "source": "/Users/bwbrook/Downloads/LeHrissetal2007.pdf",
+      "archive": "library/closed/al2007d_firststudy.pdf",
+      "bytes": 2543824,
+      "sha256": "f97123852af6007ea5dd9fa8dd5edbca7c41e1cd9d17278b7669f733c70a06cd",
+      "reason": "Verified duplicate of archived source",
+      "trash": "/Users/bwbrook/.Trash/silurian-first-study-20261030T002752/LeHrissetal2007.pdf"
+    },
+    {
+      "source": "/Users/bwbrook/Downloads/KenrickCrane1991waterconductingcellsearlylandplants.pdf",
+      "archive": "library/closed/crane1991_firststudy.pdf",
+      "bytes": 3244480,
+      "sha256": "90a5e2a6b930450761c827a78cfe5d1b986e7f3c9f01cde760e2b9245d11dafe",
+      "reason": "Verified duplicate of archived source",
+      "trash": "/Users/bwbrook/.Trash/silurian-first-study-20261030T002752/KenrickCrane1991waterconductingcellsearlylandplants.pdf"
+    },
+    {
+      "source": "/Users/bwbrook/Downloads/c1d34130c74524b91d389f1a.pdf",
+      "archive": "library/closed/xu2022_firststudy_SI1.pdf",
+      "bytes": 2792435,
+      "sha256": "253d48e7367910620cca224c67b5f28df647e1a3f34172311cc467f908f2fb56",
+      "reason": "Verified duplicate of archived source",
+      "trash": "/Users/bwbrook/.Trash/silurian-first-study-20261030T002752/c1d34130c74524b91d389f1a.pdf"
+    },
+    {
+      "source": "/Users/bwbrook/Downloads/palynology-of-the-ordovician-kanosh-shale-at-fossil-mountain-utah.pdf",
+      "archive": "library/closed/al2015f_firststudy.pdf",
+      "bytes": 541416,
+      "sha256": "7e18ea3dc67d0a1cfe7e07f18db8303761e77bc75ca3d1f56a32b233bd902f6d",
+      "reason": "Verified duplicate of archived source",
+      "trash": "/Users/bwbrook/.Trash/silurian-first-study-20261030T002752/palynology-of-the-ordovician-kanosh-shale-at-fossil-mountain-utah.pdf"
+    },
+    {
+      "source": "/Users/bwbrook/Downloads/steemans.som.pdf",
+      "archive": "library/closed/steemans2009a_firststudy_SI1.pdf",
+      "bytes": 98563,
+      "sha256": "2576cd7c914dddfc4e8cde2772c15a2730c195fa88729d374c0f354e0e63e658",
+      "reason": "Verified duplicate of archived source",
+      "trash": "/Users/bwbrook/.Trash/silurian-first-study-20261030T002752/steemans.som.pdf"
+    },
+    {
+      "source": "/Users/bwbrook/Downloads/CryptosporesfromtheHanadirShaleMember....pdf",
+      "archive": "library/closed/al2014f_firststudy.pdf",
+      "bytes": 301166,
+      "sha256": "3b12f349c4e15981b64f80e7c9959e143615f65188cfe417b1adaeede9eca404",
+      "reason": "Verified duplicate of archived source",
+      "trash": "/Users/bwbrook/.Trash/silurian-first-study-20261030T002752/CryptosporesfromtheHanadirShaleMember....pdf"
+    },
+    {
+      "source": "/Users/bwbrook/Downloads/GQ_4_2003_Masiak.pdf",
+      "archive": "library/closed/zalesie-dating_masiak2003_firststudy.pdf",
+      "bytes": 2768482,
+      "sha256": "a19ed1998781bc1119eebbce78314df23306ce190b04dcc65ac68a59072d5baf",
+      "reason": "Verified duplicate of archived source",
+      "trash": "/Users/bwbrook/.Trash/silurian-first-study-20261030T002752/GQ_4_2003_Masiak.pdf"
+    },
+    {
+      "source": "/Users/bwbrook/Downloads/save-pdf-icon.080470e.svg",
+      "archive": null,
+      "bytes": 4655,
+      "sha256": "f47490fd0597c85cef95d0546372c227c33d97c82bcde7119f42717bd2130a18",
+      "reason": "Task-generated download icon, no scientific content",
+      "trash": "/Users/bwbrook/.Trash/silurian-first-study-20261030T002752/save-pdf-icon.080470e.svg"
+    }
+  ],
+  "remaining_downloads": [
+    ".DS_Store",
+    ".localized"
+  ]
+}

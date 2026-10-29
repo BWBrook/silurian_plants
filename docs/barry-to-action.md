@@ -5,10 +5,54 @@ No request, purchase or message is sent unless Barry chooses to do so. Reopen th
 listed page in Chrome when ready; keep the record until the resulting file and its
 provenance have been verified. A failed route does not establish that no copy exists.
 
-## Active access actions
+## First-study Tier 1 follow-up, 30 October 2026
 
-Three route-level actions remain: the two earlier cases and Pertica's explicit
-JSTOR terms step below. The native-save group was recovered after Barry unlocked
+The first pass added 39 new main texts and ten new supporting files. Of 58 Tier 1 rows,
+40 have main texts (one duplicate), two are complete abstracts, one partly held and 15 blocked.
+The 16 unresolved/incomplete rows below are the current focused queue. The fastest next
+steps are Ottone's explicit JSTOR terms action and the three Academia author-copy leads.
+Barry can reopen these when convenient; no requests, accounts, terms acceptance or
+purchases have been submitted. A failed route does not mean that no copy exists.
+
+The two reopened successes, **Hanadir 2007** (`al2007d`) and **Kanosh 2015** (`al2015f`),
+are now filed and verified. Four reopened Tier 1 sources remain below. Tier 2 and the
+two still-parked items retain their earlier status. Detailed outcomes are in
+[first-study-literature-status.csv](first-study-literature-status.csv) and the
+[acquisition audit](audits/2026-10-30-first-study-tier1.md).
+
+| Work | Observed blocker / action | Reopen route |
+|---|---|---|
+| Ottone et al. 1999 — Los Azules (`ottone1999`; Q1) | UTAS access is confirmed. JSTOR Download opens an explicit Accept and download terms dialog. Barry must take that final action; no terms were accepted. | [Open source](https://www-jstor-org.ezproxy.utas.edu.au/stable/1486135) |
+| Morris et al. 2011 — New plant taxa (`al2011f`; Q1,Q2,Q4,Q6) | UTAS explicitly does not subscribe. An exact author-posted Academia copy is listed; the tested Notes2012 download requires an account and explicit terms acceptance. This related download lead needs Barry to verify after sign-in. | [Open source](https://www.academia.edu/25094364/New_plant_taxa_from_the_Lower_Devonian_Lochkovian_of_the_Welsh_Borderland_with_a_hypothesis_on_the_relationship_between_hilate_and_trilete_spore_producers) |
+| Edwards et al. 2012 — tetrads/monads in sporangia (`al2012c`; Q1,Q2,Q4) | UTAS explicitly does not subscribe. The exact author-posted Academia copy has 30 pages; Download PDF explicitly prompts account sign-in and terms acceptance. Barry action is needed. | [Open source](https://www.academia.edu/34110306/Notes_on_sporangia_and_spore_masses_containing_tetrads_or_monads_from_the_Lower_Devonian_Lochkovian_of_the_Welsh_Borderland_U_K) |
+| Morris et al. 2012 — Further insights, trilete producers (`morris2012`; ) | UTAS explicitly does not subscribe. The exact Further insights into trilete spore producers author copy is listed on Academia, subject to verifying download after sign-in. This is distinct from the already-held 2012 Ficoiditheca paper. | [Open source](https://www.academia.edu/34110303/Further_insights_into_trilete_spore_producers_from_the_Early_Devonian_Lochkovian_of_the_Welsh_Borderland_U_K) |
+| Earp 2024 — Yea dating (`earp2024-open`; Q2,Q5) | The open-access ConnectSci/CSIRO publisher record presents security verification in Chrome and a blank response in-app. This is a browser block, not a demonstrated subscription gap. | [Open source](https://connectsci.au/rs/article/136/1/RS23021/33891/Notanopliid-brachiopods-and-associated-fossils) |
+| Masiak 2003 / Trela & Szczepanik 2009 — Zalesie dating (`zalesie-dating`; Q1,Q2) | Masiak et al.2003 is partly secured as a 19-page publisher-layout copy with continuous printed pp.311–329; the cited p.330 is unverified. Trela & Szczepanik2009 remains unheld: PGI blocks ordinary HTTP; Chrome reaches the PDF URL but the locked Mac prevented native-reader verification/save; ResearchGate is request-only. | [Open source](https://www.pgi.gov.pl/images/stories/przeglad/pg_2009_02_21.pdf) |
+| de la Puente & Rubinstein 2013 — Precordillera (`delapuente2013`; Q1) | The exact public CONICET PDF is indexed, but HTTP and in-app attempts timed out. ResearchGate offers requests only. Recheck repository connectivity or use a library route. | [Open source](https://ri.conicet.gov.ar/bitstream/handle/11336/11150/CONICET_Digital_Nro.14605.pdf?isAllowed=y&sequence=1) |
+| Rubinstein et al. 2011 — Sierras Subandinas (`rubinstein2011`; Q1) | UTAS explicitly does not subscribe. The indexed CONICET author copy times out; ResearchGate is request-only. | [Open source](https://www-sciencedirect-com.ezproxy.utas.edu.au/science/article/pii/S0895981110000398) |
+| Rubinstein et al. 2023 — Colombian cryptospores (`al2023b`; Q1) | The Ameghiniana society page explicitly labels its PDF Requires Subscription. An exact CONICET copy is indexed but its host times out; ResearchGate offers requests only. Earlier BioOne challenges were not repeated. | [Open source](https://www.ameghiniana.org.ar/index.php/ameghiniana/article/view/3560) |
+| Vecoli et al. 2011 — Anticosti/Estonia (`al2011n`; Q1,Q2) | UTAS explicitly does not subscribe. The UNICA repository was blank/unresponsive in both browsers; ResearchGate offers requests only. | [Open source](https://www-sciencedirect-com.ezproxy.utas.edu.au/science/article/pii/S0034666711000704) |
+| Mehlqvist 2013 — doctoral thesis (`mehlqvist2013`; Q1,Q2) | The official Lund record identifies a 106-page doctoral compilation thesis, ISBN978-91-86746-95-7, but exposes no file. The held 2012 article is a distinct source. | [Open source](https://portal.research.lu.se/en/publications/early-land-plant-spores-from-the-paleozoic-of-sweden-taxonomy-str/) |
+| Garratt MJ (1978). New evidence for a Silurian (Ludlow) age for the earliest Baragwanathia flora (`garratt1978`; Q2,Q5,Q9) | The authenticated UTAS Taylor & Francis route still opens institutional-login/purchase options for the target. A Full Access badge belongs to a related 2020 article. Existing map and later-paper surrogates remain distinct from the 1978 paper. | [Open source](https://www-tandfonline-com.ezproxy.utas.edu.au/doi/full/10.1080/03115517808527779) |
+| Ghavidel-Syooki & Vecoli 2007 — Pelmis companion (`ghavidelsyooki2007`; ) | UTAS explicitly does not subscribe; no public author/repository copy was located. ResearchGate offers requests only. | [Open source](https://www-sciencedirect-com.ezproxy.utas.edu.au/science/article/pii/S0034666706002120) |
+| Ghavidel-Syooki 2001 — Alborz proceedings (`ghavidelsyooki2001`; ) | The proceedings chapter identity was confirmed in the held 2011 paper; no public full text was located. | Fuller citation / library search |
+| Balme 1961 — Samphire Marsh No.1 (`balme1961`; Q1,Q2) | Geoscience Australia confirms the parent report Samphire Marsh No.1 well, Petroleum Search Subsidy Acts Publication 5, but exposes no scan of the volume or Balme chapter (pp.22–26). | [Open source](https://www.ga.gov.au/metadata-gateway/metadata/record/67283/) |
+| Abuhmida 2011 — Murzuq palynology (`abuhmida2011`; Q1) | Exact 2011 source not located. The 2017 Hawaz paper by the same author is a different work. A fuller citation or library search is needed. | Fuller citation / library search |
+
+The Masiak component is `library/closed/zalesie-dating_masiak2003_firststudy.pdf`.
+It does not close the combined dating row: Trela remains missing, and Masiak's cited
+page 330 is unverified. The Mac locked after Barry went to bed; no overnight unlock
+request was sent. Reopening the Trela PDF route after unlocking will distinguish a
+native-save issue from a remaining publisher block.
+
+All owned Chrome tabs were closed. A single failed in-app CONICET tab could not be
+closed because the tool rejects its generated error-page URL; it is unmarked and
+temporary, with normal end-of-turn cleanup expected. No successful paper tabs remain open.
+
+## Earlier access actions
+
+Three earlier route-level actions are retained here: the two pilot cases and
+Pertica's explicit JSTOR terms step below. The native-save group was recovered after Barry unlocked
 the desktop. No tabs are held open. Liu 2016 remains resolved.
 
 | Work | Observed blocker | Reopen route |
