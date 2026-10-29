@@ -35,6 +35,13 @@ The register is updated at each loop's close. Started 2026-10-28 by Claude Opus 
 
 ### Literature access, 2026-10-29 (Q1, Q2)
 
+The regional-spore follow-up secured six studies plus the Ghelli 2017 update in
+seven publisher PDFs, with the shared Ghelli KML map. All seven queued rows are
+now held; `docs/audits/2026-10-29-regional-spores-batch.md` records identities,
+year corrections and checks. The 2016/2017 Ghelli pair is one study with an update,
+not independent evidence. Scientific readings and occurrence adjudication remain
+pending; Q1/Q2 are unchanged on acquisition alone.
+
 Kraft & Kvaček 2017 is now held in full (`library/closed/kraft2017.pdf`, provenance
 in `library/closed.tsv`). The earlier access obstacle is resolved through a joint
 Chrome diagnosis; its scientific reading and the affected Baragwanathia claims

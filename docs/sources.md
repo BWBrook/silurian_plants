@@ -126,6 +126,15 @@ Hooper archive inspected by Codex, 2026-10-29: checksum matches its retrieval ma
 
 ## 9. Literature
 
+The subsequent regional-spore batch (29 October 2026) secured six studies plus
+the linked Ghelli 2017 update: Ghavidel-Syooki 2016/2017 and 2021, El Diasty 2019,
+Xu 2022, Filipiak 2022 and Wellman 2018. Seven publisher PDFs and the shared Ghelli
+map are in `library/closed/`; versions, source URLs and hashes are in
+`library/closed.tsv` and `docs/audits/2026-10-29-regional-spores-batch.md`.
+The Ghelli bundle preserves the original, update cover and reissue; these are
+one study, not independent assemblage evidence. Wellman's sample-details
+Appendix 1 is internal (PDF page 5, printed 28). Scientific extraction is pending.
+
 Stage B's two ResearchGate main texts were recovered on 29 October 2026:
 Mehlqvist et al. 2012 (12 pages) and Wellman et al. 2013 chapter 29 (16 pages), in
 `library/closed/mehlqvist2012.pdf` and `library/closed/wellman2013.pdf`.

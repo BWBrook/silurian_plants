@@ -15,6 +15,15 @@ access action. No request has been submitted.
 
 ## Resolved through diagnosis and follow-up
 
+### Regional-spore batch — recovered autonomously 2026-10-29
+
+Six main texts and the Ghelli update companion are held in seven publisher PDFs;
+no sign-in or manual intervention was needed. In-app access/linked-file checks
+preceded Chrome's working native PDF-save fallback. The shared Ghelli map was
+also secured. No active action added; tabs and Downloads residue were cleared.
+See `docs/audits/2026-10-29-regional-spores-batch.md`.
+
+
 ### Stage B ResearchGate author copies — recovered autonomously 2026-10-29
 
 Mehlqvist 2012 (`w2080475227-fulltext`, 12 pages) and Wellman chapter 29

@@ -1,4 +1,4 @@
-# Literature batch — proposal and Stage A outcome, 29 October 2026
+# Literature collection batches — 29 October 2026
 
 **Stage A complete:** all six papers plus one supplement acquired. Five papers
 were collected autonomously; Barry downloaded Liu 2016 immediately through the
@@ -7,12 +7,18 @@ See `docs/audits/2026-10-29-six-paper-batch.md`. **Stage B is also complete:**
 both public author-copy candidates were recovered autonomously; see
 `docs/audits/2026-10-29-researchgate-author-copies.md`.
 
+**Regional spore batch complete:** six main texts plus the Ghelli correction
+companion acquired autonomously, with one shared KML supplement. The seven PDF
+files and versions are recorded in `docs/audits/2026-10-29-regional-spores-batch.md`.
+The current register has **447 needed, 29 local-copy-held, 16 open-copy-held**.
+No active human intervention is needed; ten requests remain parked.
+
 **Original recommendation:** first collect six priority-one recent Elsevier papers through
 the existing UTAS session, then attempt two public ResearchGate author copies.
 This is a proposed eight-text tranche, with a six-text first stage. No new paper
 or supplement was downloaded in this planning pass.
 
-## Current register and exclusions
+## Stage A preflight register and exclusions
 
 The preflight CSV had **492 rows: 462 needed, 16 local-copy-held and 14
 open-copy-held**. Ten needed entries are parked in `docs/literature-requests.md`:
@@ -144,3 +150,23 @@ checked public routes. Their initial metadata shortlist included version traps;
 parent inspection and the targeted follow-up corrected them before recommendation.
 No new scientific reading or occurrence adjudication was undertaken. The subsequent
 authorised Stage A collection and its delegate roles are recorded in the batch audit.
+
+## Subsequent authorised regional-spore batch
+
+Barry approved the next shortlist and its Ghelli companion. All were recovered:
+
+| ID | Work and printed year | Held PDF |
+|---|---|---|
+| `ghavidelsyooki2016` | Ghelli Formation, 2016 | `library/closed/ghavidelsyooki2016_bundle.pdf` (49-page publisher bundle) |
+| `ghavidelsyooki2017` | Ghelli update/reissue, 2017 | `library/closed/ghavidelsyooki2017.pdf` (24 pages; same study) |
+| `al2018g` | El Diasty et al., Tanezzuft, 2019 | `library/closed/eldiasty2019.pdf` |
+| `ghavidelsyooki2021` | High Zagros, 2021 | `library/closed/ghavidelsyooki2021.pdf` |
+| `al2021i` | Xu et al., Hezhang, 2022 | `library/closed/xu2022_hezhang.pdf` |
+| `al2022c` | Filipiak et al., Holy Cross Mountains, 2022 | `library/closed/filipiak2022.pdf` |
+| `wellman2017b` | New Brunswick, 2018 | `library/closed/wellman2018.pdf` |
+
+Selection used actual UTAS Full text access displays, after older candidates
+returned previews/access options. In-app article inspection preceded the Chrome
+native PDF-save fallback. Ghelli's two map URLs yielded identical KML bytes;
+version and asset counts remain separate from independent studies. Full audit,
+checks and limits are in the batch report; scientific extraction is pending.

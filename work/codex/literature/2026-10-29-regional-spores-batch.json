@@ -1,0 +1,298 @@
+{
+  "date": "2026-10-29",
+  "authority": "Barry authorised six shortlisted main texts plus Ghelli correction companion; in-app first, Chrome fallback",
+  "outcome": "All seven PDF assets acquired autonomously; one unique KML map from two DOI-specific links; no intervention required",
+  "assets": [
+    {
+      "id": "ghavidelsyooki2016",
+      "doi": "10.1016/j.revpalbo.2016.04.006",
+      "file": "closed/ghavidelsyooki2016_bundle.pdf",
+      "pages": 49,
+      "printed_pages": "48-71",
+      "bytes": 11257439,
+      "sha256": "86abda880e63b37481ad37771f4eb2b9c73d3806298787ef57089dde60161fa3",
+      "version": "Original publisher mainext bundle: original24pages + update notice +2017reissue24pages",
+      "source_url": "https://www-sciencedirect-com.ezproxy.utas.edu.au/science/article/pii/S0034666716300677",
+      "access": "UTAS session; article checked in-app first, PDF saved through Chrome native toolbar",
+      "nonempty_text_pages": 49,
+      "supplement_check": "Linked KML map acquired; identical to the map at the companion DOI"
+    },
+    {
+      "id": "ghavidelsyooki2017",
+      "doi": "10.1016/j.revpalbo.2017.05.010",
+      "file": "closed/ghavidelsyooki2017.pdf",
+      "pages": 24,
+      "printed_pages": "217-240",
+      "bytes": 5896218,
+      "sha256": "4c9f9396457879dfadcbfc47cc767458ef5fa442c911ccbc04f8f8052c0fe3f2",
+      "version": "Original publisher PDF",
+      "source_url": "https://www-sciencedirect-com.ezproxy.utas.edu.au/science/article/pii/S0034666717301239",
+      "access": "UTAS session; article checked in-app first, PDF saved through Chrome native toolbar",
+      "nonempty_text_pages": 24,
+      "supplement_check": "Linked KML map acquired; identical to the map at the companion DOI"
+    },
+    {
+      "id": "al2018g",
+      "doi": "10.1016/j.revmic.2018.06.002",
+      "file": "closed/eldiasty2019.pdf",
+      "pages": 14,
+      "printed_pages": "45-58",
+      "bytes": 3775371,
+      "sha256": "8820584ac925cd3068dc4d971d57372052bfdf962dfdca510f3ea0a93f6df6eb",
+      "version": "Original publisher PDF",
+      "source_url": "https://www-sciencedirect-com.ezproxy.utas.edu.au/science/article/pii/S003515981830028X",
+      "access": "UTAS session; article checked in-app first, PDF saved through Chrome native toolbar",
+      "nonempty_text_pages": 14,
+      "supplement_check": "Article links and complete PDF text checked; no separate external supplement identified"
+    },
+    {
+      "id": "ghavidelsyooki2021",
+      "doi": "10.1016/j.revpalbo.2021.104457",
+      "file": "closed/ghavidelsyooki2021.pdf",
+      "pages": 35,
+      "printed_pages": null,
+      "bytes": 13718656,
+      "sha256": "17bca4fb8988d9b85a7ddd2189563b969394f732f49cd18413fa71904ea56d66",
+      "version": "Original publisher PDF",
+      "source_url": "https://www-sciencedirect-com.ezproxy.utas.edu.au/science/article/pii/S0034666721000816",
+      "access": "UTAS session; article checked in-app first, PDF saved through Chrome native toolbar",
+      "nonempty_text_pages": 35,
+      "supplement_check": "Article links and complete PDF text checked; no separate external supplement identified"
+    },
+    {
+      "id": "al2021i",
+      "doi": "10.1016/j.revpalbo.2021.104561",
+      "file": "closed/xu2022_hezhang.pdf",
+      "pages": 9,
+      "printed_pages": null,
+      "bytes": 3608475,
+      "sha256": "6c3e15907784159ae2c13ae729bffc6975c95205084fd217f455e957abf96dbc",
+      "version": "Original publisher PDF",
+      "source_url": "https://www-sciencedirect-com.ezproxy.utas.edu.au/science/article/pii/S0034666721001858",
+      "access": "UTAS session; article checked in-app first, PDF saved through Chrome native toolbar",
+      "nonempty_text_pages": 9,
+      "supplement_check": "Article links and complete PDF text checked; no separate external supplement identified"
+    },
+    {
+      "id": "al2022c",
+      "doi": "10.1016/j.revpalbo.2022.104666",
+      "file": "closed/filipiak2022.pdf",
+      "pages": 22,
+      "printed_pages": null,
+      "bytes": 15713676,
+      "sha256": "cd38fb4fccfb54b0dfb7c60d0c362e3246950da3e5b6a52dbb5add1f57e0f83e",
+      "version": "Original publisher PDF",
+      "source_url": "https://www-sciencedirect-com.ezproxy.utas.edu.au/science/article/pii/S0034666722000641",
+      "access": "UTAS session; article checked in-app first, PDF saved through Chrome native toolbar",
+      "nonempty_text_pages": 22,
+      "supplement_check": "Article links and complete PDF text checked; no separate external supplement identified"
+    },
+    {
+      "id": "wellman2017b",
+      "doi": "10.1016/j.revpalbo.2017.11.003",
+      "file": "closed/wellman2018.pdf",
+      "pages": 26,
+      "printed_pages": "24-49",
+      "bytes": 5171796,
+      "sha256": "a121d31a2508a24c54de7908aa89b716ac760f42b0c37a55cc8655ac026f5a0d",
+      "version": "Original publisher PDF",
+      "source_url": "https://www-sciencedirect-com.ezproxy.utas.edu.au/science/article/pii/S0034666717301720",
+      "access": "UTAS session; article checked in-app first, PDF saved through Chrome native toolbar",
+      "nonempty_text_pages": 26,
+      "supplement_check": "Article links and complete PDF text checked; no separate external supplement identified"
+    },
+    {
+      "id": "ghavidelsyooki2016",
+      "doi": "10.1016/j.revpalbo.2016.04.006",
+      "file": "closed/ghavidelsyooki2016_SI.kml",
+      "pages": "",
+      "bytes": 1258,
+      "sha256": "16b90bddef86528a0b22e76e7272a478d8ba213f880c34ca5cc4389c71a83755",
+      "version": "Publisher KML study-area map supplement",
+      "source_url": "https://ars-els-cdn-com.ezproxy.utas.edu.au/content/image/1-s2.0-S0034666716300677-mmc1.kml",
+      "access": "UTAS-proxied publisher supplement link; Chrome browser download",
+      "downloads_cleanup": {
+        "source": "/Users/bwbrook/Downloads/1-s2.0-S0034666716300677-mmc1.kml",
+        "archive": "/Users/bwbrook/papers/silurian_plants/library/closed/ghavidelsyooki2016_SI.kml",
+        "bin": "/Users/bwbrook/.Trash/silurian-literature-20261029-regional-spores/1-s2.0-S0034666716300677-mmc1.kml",
+        "status": "moved to recoverable Bin; source/archive/post-move SHA-256 verified"
+      }
+    },
+    {
+      "id": "ghavidelsyooki2017",
+      "doi": "10.1016/j.revpalbo.2017.05.010",
+      "file": "closed/ghavidelsyooki2017_SI.kml",
+      "pages": "",
+      "bytes": 1258,
+      "sha256": "16b90bddef86528a0b22e76e7272a478d8ba213f880c34ca5cc4389c71a83755",
+      "version": "Publisher KML study-area map supplement",
+      "source_url": "https://ars-els-cdn-com.ezproxy.utas.edu.au/content/image/1-s2.0-S0034666717301239-mmc1.kml",
+      "access": "UTAS-proxied publisher supplement link; Chrome browser download",
+      "downloads_cleanup": {
+        "source": "/Users/bwbrook/Downloads/1-s2.0-S0034666717301239-mmc1.kml",
+        "archive": "/Users/bwbrook/papers/silurian_plants/library/closed/ghavidelsyooki2017_SI.kml",
+        "bin": "/Users/bwbrook/.Trash/silurian-literature-20261029-regional-spores/1-s2.0-S0034666717301239-mmc1.kml",
+        "status": "moved to recoverable Bin; source/archive/post-move SHA-256 verified"
+      }
+    }
+  ],
+  "unresolved": [],
+  "metadata": [
+    {
+      "id": "al2018g",
+      "doi": "10.1016/j.revmic.2018.06.002",
+      "title": "Palynostratigraphic, palynofacies, organic geochemical and palaeoenvironmental analysis of the Silurian Tanezzuft Formation in the Ghadames Basin of north-west Libya",
+      "authors": [
+        "Waleed Shukry El Diasty",
+        "Salah Youssef El Beialy",
+        "Fadeel Ibrahim Fadeel",
+        "David J. Batten"
+      ],
+      "printed_year": 2019,
+      "journal": "Revue de Micropaléontologie",
+      "volume": "62",
+      "issue": "1",
+      "pages": "45-58",
+      "article_id": null,
+      "pii": "S003515981830028X",
+      "publisher_resource_url": "https://linkinghub.elsevier.com/retrieve/pii/S003515981830028X"
+    },
+    {
+      "id": "ghavidelsyooki2016",
+      "doi": "10.1016/j.revpalbo.2016.04.006",
+      "title": "Cryptospore and trilete spore assemblages from the Late Ordovician (Katian–Hirnantian) Ghelli Formation, Alborz Mountain Range, Northeastern Iran: Palaeophytogeographic and palaeoclimatic implications",
+      "authors": [
+        "Mohammad Ghavidel-Syooki"
+      ],
+      "printed_year": 2016,
+      "journal": "Review of Palaeobotany and Palynology",
+      "volume": "231",
+      "issue": null,
+      "pages": "48-71",
+      "article_id": null,
+      "pii": "S0034666716300677",
+      "publisher_resource_url": "https://linkinghub.elsevier.com/retrieve/pii/S0034666716300677"
+    },
+    {
+      "id": "ghavidelsyooki2017",
+      "doi": "10.1016/j.revpalbo.2017.05.010",
+      "title": "Cryptospore and trilete spore assemblages from the Late Ordovician (Katian–Hirnantian) Ghelli Formation, Alborz Mountain Range, Northeastern Iran: Palaeophytogeographic and palaeoclimatic implications",
+      "authors": [
+        "Mohammad Ghavidel-Syooki"
+      ],
+      "printed_year": 2017,
+      "journal": "Review of Palaeobotany and Palynology",
+      "volume": "244",
+      "issue": null,
+      "pages": "217-240",
+      "article_id": null,
+      "pii": "S0034666717301239",
+      "publisher_resource_url": "https://linkinghub.elsevier.com/retrieve/pii/S0034666717301239"
+    },
+    {
+      "id": "ghavidelsyooki2021",
+      "doi": "10.1016/j.revpalbo.2021.104457",
+      "title": "Peri-Gondwanan acritarchs, chitinozoans, and miospores from Paleozoic succession in the High Zagros Mountains, southern Iran: Regional stratigraphic significance and paleogeographic implications",
+      "authors": [
+        "Mohammad Ghavidel-Syooki"
+      ],
+      "printed_year": 2021,
+      "journal": "Review of Palaeobotany and Palynology",
+      "volume": "292",
+      "issue": null,
+      "pages": null,
+      "article_id": "104457",
+      "pii": "S0034666721000816",
+      "publisher_resource_url": "https://linkinghub.elsevier.com/retrieve/pii/S0034666721000816"
+    },
+    {
+      "id": "al2021i",
+      "doi": "10.1016/j.revpalbo.2021.104561",
+      "title": "Palynological assemblage of the Lower Devonian of Hezhang, Guizhou, southwestern China",
+      "authors": [
+        "Hong-He Xu",
+        "Ning Yang",
+        "Jiao Bai",
+        "Yao Wang",
+        "Feng Liu",
+        "Shu Ouyang"
+      ],
+      "printed_year": 2022,
+      "journal": "Review of Palaeobotany and Palynology",
+      "volume": "297",
+      "issue": null,
+      "pages": null,
+      "article_id": "104561",
+      "pii": "S0034666721001858",
+      "publisher_resource_url": "https://linkinghub.elsevier.com/retrieve/pii/S0034666721001858"
+    },
+    {
+      "id": "al2022c",
+      "doi": "10.1016/j.revpalbo.2022.104666",
+      "title": "Plants and palynomorphs from the Lower Devonian (upper Emsian) of the Holy Cross Mountains, Poland",
+      "authors": [
+        "Paweł Filipiak",
+        "Paul Kenrick",
+        "Zuzanna Wawrzyniak",
+        "Marcelina Kondas",
+        "Christine Strullu-Derrien"
+      ],
+      "printed_year": 2022,
+      "journal": "Review of Palaeobotany and Palynology",
+      "volume": "302",
+      "issue": null,
+      "pages": null,
+      "article_id": "104666",
+      "pii": "S0034666722000641",
+      "publisher_resource_url": "https://linkinghub.elsevier.com/retrieve/pii/S0034666722000641"
+    },
+    {
+      "id": "wellman2017b",
+      "doi": "10.1016/j.revpalbo.2017.11.003",
+      "title": "The classic Lower Devonian plant-bearing deposits of northern New Brunswick, eastern Canada: Dispersed spore taxonomy and biostratigraphy",
+      "authors": [
+        "Charles H. Wellman"
+      ],
+      "printed_year": 2018,
+      "journal": "Review of Palaeobotany and Palynology",
+      "volume": "249",
+      "issue": null,
+      "pages": "24-49",
+      "article_id": null,
+      "pii": "S0034666717301720",
+      "publisher_resource_url": "https://linkinghub.elsevier.com/retrieve/pii/S0034666717301720"
+    }
+  ],
+  "ghelli_version_relationship": {
+    "original": "10.1016/j.revpalbo.2016.04.006",
+    "publisher_label": "Erratum / Update",
+    "reissue": "10.1016/j.revpalbo.2017.05.010",
+    "bundle_ranges": {
+      "original": "PDF1-24, printed48-71",
+      "update_notice": "PDF25",
+      "reissue": "PDF26-49, printed217-240"
+    },
+    "standalone_reissue": "24 pages, layout-extracted text matches bundle26-49 exactly",
+    "table_check": "Independent normalized paired check found all Table1 rows and numerical values matched; do not claim changed numerical data from raw text-layout diffs",
+    "scientific_use": "Same study, not independent datasets; declare version when extracting. Full scientific adjudication not undertaken"
+  },
+  "verification": "Parent verified PDF magic, DOI, all-page nonempty text and hashes; independent local QA checked structure/rendered endpoints and version relationship; parent inspected contact sheet",
+  "pdf_structure_warnings": {
+    "ghavidelsyooki2016_bundle.pdf": "unsorted Name/Number tree; extraction/rendering intact; original bytes retained; pdftotext annotation bounding-box warning, all49 pages still extracted",
+    "ghavidelsyooki2021.pdf": "page34 hint-table warnings; extraction/rendering intact; original bytes retained",
+    "filipiak2022.pdf": "page21 shared-object hint-table warnings; extraction/rendering intact; original bytes retained"
+  },
+  "wellman_appendix": "Appendix1 sample details is internal: PDFpage5, printed28; parent corrected an initial QA page-index error against the actual file",
+  "browser_limit": "In-app PDF rendered but toolbar click was inaccessible through closed shadow root; direct-download helper timed out, save shortcut did not produce a file. Used authorised Chrome native PDF controls, not access-control bypass.",
+  "tabs": "All owned in-app and Chrome tabs closed",
+  "scientific_reading": "Pending; no cards, occurrence units or model inputs edited",
+  "repository_doi_scan": {
+    "command": "uv run tools/cards.py dois",
+    "distinct_strings": 725,
+    "initial_flags": 21,
+    "exit_code": 1,
+    "preexisting_markdown_backtick_flags": 20,
+    "own_prior_citation_context": "Wellman2013 decision citation expanded to full title/author/year; same-checker targeted validation passes",
+    "scope": "Seven acquired DOI identities independently verified against Crossref in preflight; no scanner code changed"
+  }
+}

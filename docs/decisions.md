@@ -3,6 +3,24 @@
 Dated record of decisions that shape the programme. Newest first. Say who decided, and quote
 Barry exactly (with source) or label a paraphrase.
 
+## 2026-10-29: regional-spore literature batch acquired (Barry; Codex execution)
+
+- **Authority** (Barry, chat; paraphrase): collect the six shortlisted main texts
+  plus the Ghelli correction companion, in-app first with Chrome fallback.
+- **Completed**: all seven publisher PDFs acquired without intervention, plus
+  the shared Ghelli map from both DOI-specific links. Identity, extent, all-page
+  text, representative renders and hashes checked; provenance in
+  `library/closed.tsv` and `docs/audits/2026-10-29-regional-spores-batch.md`.
+  El Diasty, Xu and Wellman citation years corrected to 2019, 2022 and 2018;
+  stable harvest IDs retained. Verified Downloads duplicates moved to the Bin.
+- **Structural review**: entitlement preflight produced a complete acquisition
+  batch, while the in-app PDF save-control limitation required Chrome. The
+  Ghelli mainext bundle contains the original, an update cover and the reissue;
+  versioned assets must not inflate independent-study counts. Paired Table 1
+  values match; raw layout diffs are insufficient evidence of numerical changes.
+  Q1/Q2 scientific readings remain pending. No occurrence/model inputs changed.
+
+
 ## 2026-10-29: complete the two public author-copy candidates (Barry; Codex execution)
 
 - **Authority** (Barry, chat; paraphrase): collect Stage B's two ResearchGate
@@ -12,7 +30,7 @@ Barry exactly (with source) or label a paraphrase.
 - **Verified**: Crossref identity/pagination, all-page text and rendering,
   source/archive hashes, explicit author-upload versions and local provenance.
   The separate 40-page Wellman supplement was already held, not newly acquired.
-  DOI 10.1144/M38.29 now identifies the main chapter in the register.
+  Main chapter: Wellman, Steemans & Vecoli 2013, Chapter 29 Palaeophytogeography of Ordovician–Silurian land plants, DOI 10.1144/M38.29.
 - **Structural review**: source-kind/version checks resolved two misleading
   full-text gaps: an incomplete proof and a supplement mistaken for its chapter.
   ResearchGate's in-app device check failed for one target but cleared for the
