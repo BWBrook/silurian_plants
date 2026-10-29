@@ -43,3 +43,8 @@ remain pending. No question or age interpretation changes on acquisition alone.
 Garratt & Rickards 1984 is also now held in full (`library/closed/garrattrickards1984.pdf`,
 provenance in `library/closed.tsv`). The UTAS-proxied reader completed loading and
 downloaded successfully. The Yea age reading remains pending source re-check.
+
+Garratt et al. 1984 is now held in full as well (`library/closed/garratt1984.pdf`,
+provenance in `library/closed.tsv`). The LibKey route delivered the four-page
+Oxford/Silverchair PDF without a new login or challenge; scientific re-reading
+for Q1/Q2 remains pending.

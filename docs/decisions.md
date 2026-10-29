@@ -18,6 +18,10 @@ Barry exactly (with source) or label a paraphrase.
   recheck before classifying a proxy-reader failure. The automatic download
   needed Downloads staging; title/year verification caught a misleading `2022`
   filename. Neither earlier failure has yet been reproduced.
+- **Third result** (Codex): Garratt et al. 1984 recovered autonomously via UTAS
+  LibKey to the Oxford/Silverchair PDF. A tab-inspection timeout during redirect
+  was resolved by native Chrome inspection and allowing rendering to complete.
+  No fresh login or challenge appeared; all four pages verified and filed.
 - **Structural review** (Codex): retain the pending/resolved access ledger, adding
   observed failure, successful method and verification. Access failure must remain
   distinct from automation visibility failure. Q1/Q2 source access improves;

@@ -7,17 +7,6 @@ provenance have been verified. A failed route does not establish that no copy ex
 
 ## Pending
 
-### Garratt et al. 1984 — Silurian Baragwanathia (Q1, Q2)
-
-- Register ID: `garratt1984`; DOI: `10.1111/j.1095-8339.1984.tb02566.x`.
-- Reopen: [UTAS library PDF route](https://libkey.io/libraries/729/articles/24442686/full-text-file?utm_source=api_3637&allow_speedbump=true)
-  or the [Oxford Academic article](https://academic.oup.com/botlinnean/article-abstract/89/4/355/2633526).
-- Observed 2026-10-28: the publisher page remained at its security verification
-  screen; anonymous access to its PDF returned HTTP 403. The UTAS catalogue offers
-  a PDF link, but its institutional sign-in stalled; entitlement is undetermined.
-- Action: retry the library PDF route, completing sign-in or verification yourself
-  if necessary. No author request has been sent.
-
 ### Vecoli et al. 2015 — Kanosh Shale palynology
 
 - Register ID: `al2015f`; DOI: `10.1017/jpa.2015.29`.
@@ -176,3 +165,21 @@ provenance have been verified. A failed route does not establish that no copy ex
   screenshot is an intermediate state, not a demonstrated blocker. Check download
   completion and destination; prefer direct library saves when a Save dialog is
   offered, and use Downloads as staging when download is automatic.
+
+### Garratt et al. 1984 — recovered 2026-10-29 (Q1, Q2)
+
+- Route: [UTAS LibKey](https://libkey.io/libraries/729/articles/24442686/full-text-file?utm_source=api_3637&allow_speedbump=true)
+  redirected to the signed Oxford/Silverchair PDF for
+  `10.1111/j.1095-8339.1984.tb02566.x`. No new login or security challenge appeared.
+- Observed: tab accessibility timed out during redirect. Native Chrome
+  accessibility showed the publisher asset loading, then the correct four-page
+  viewer. A further ten-second interval allowed the viewer to finish rendering.
+- Codex used the native **Download** button and **Save** dialog to save directly
+  as `library/closed/garratt1984.pdf`. Title, five authors, 1984 journal header,
+  four non-empty text pages and printed endpoints 355–358 verified. UTAS/date
+  watermark confirms institutional delivery. Provenance and SHA-256 are in
+  `library/closed.tsv`; scientific re-reading remains pending.
+- Procedure: when tab inspection times out during navigation, inspect native
+  Chrome state and the eventual PDF before treating the timeout as a site access
+  failure. Today's route succeeded without human intervention after opening;
+  yesterday's security/sign-in stall was not reproduced.
