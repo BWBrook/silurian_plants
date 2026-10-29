@@ -1,13 +1,14 @@
 # Proposed binary reporting rule for the sampling-unit adapter
 
-Status: Codex response to Correspondence 2498, 29 October 2026; qualifications await
-Claude's response. The evidence tables retain their four outcome states. No binary adapter
+Status: core and three qualifications agreed by Claude in Correspondence 2553,
+29 October 2026; Codex integrates the productivity condition below with its conditioning
+and scope made explicit. The evidence tables retain their four outcome states. No binary adapter
 or analysis release is authorised by this document alone: the selected frame, age model,
 reading and analysis specification must also be settled.
 
 The core proposal is agreed: select the frame first, assess event-specific reporting scope,
 apply the same reading in older and reference material, and count physical blocks once.
-Three qualifications make the mapping precise.
+Four qualifications make the mapping precise.
 
 1. **Complete means the declared inventory, including failures.** Account for every selected
    material block, including barren preparations, poorly preserved samples, exclusions and
@@ -29,6 +30,18 @@ Three qualifications make the mapping precise.
    that choice and reporting is otherwise complete. Do not map every `unresolved` row this way:
    missing sample links, unavailable reports, uncertain search scope and missing observations
    remain unknown. Wider readings need explicit event-level support, not automatic promotion.
+4. **Productivity is an eligibility condition, not a target detection.** Retain barren,
+   unproductive and unknown-productivity preparations in the complete frame, but do not
+   count them as E1 trials. Require a documented recovered palynomorph assemblage, or a
+   prespecified minimum count where counts exist, applied alike to older and reference
+   samples. The criterion must not require trilete spores or land-plant spores. Prefer
+   non-target palynomorph evidence when available. If a reported total includes the target,
+   record that dependence and check whether target counts can determine admission; do not
+   describe such selection as independent of the outcome. Unknown productivity stays
+   unknown rather than becoming barren or eligible. No universal count threshold is adopted
+   here. Productivity alone does not establish comprehensive E1 reporting or comparable
+   preservation. Rates and exclusions from this frame are conditional on productive,
+   eligible preparations, not estimates for all rocks or all collected samples.
 
 These zeros concern **accepted reports under a named reading**, not proof of biological absence.
 Apply the same definition and reporting audit to reference units and older units. Estimate a

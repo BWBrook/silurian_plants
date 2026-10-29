@@ -2,6 +2,16 @@
 
 Adopted 2026-10-28 (Barry, chat: "Yes, adopt it"). Revised the same day after discussion (Barry: "Yes, revise it"). Drafted by Claude Opus 5.5. The programme principles behind it are in `docs/charter.md` ("Purpose"); the questions it serves are in `docs/questions.md` (Q1–Q4). Barry objects by exception: work proceeds without further approval except at the consult triggers.
 
+## Scope clarification, 29 October 2026
+
+Barry agreed to F3 plus a bounded pilot on observed trait combinations and supported
+partial orderings as the first study; full joint age–phylogeny–character–preservation
+origin inference is deferred. `innovation-scope.md` records the decision and pilot limits.
+The current statistical question and acceptance contract are governed by `f3-shape.md`,
+which supersedes the original origin-window formulation and historical recovery criteria
+retained below. The pilot compares evidence and published placements; it does not extend
+this deliverable to a new phylogenetic reanalysis or joint clock model.
+
 ## Two contributions, two standards
 
 **A. Synthesis.** An occurrence dataset that traces every record to its source and keeps disagreement in usable form. It covers dispersed spores, megafossils and mesofossils, Darriwilian to Emsian.

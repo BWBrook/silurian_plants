@@ -133,7 +133,14 @@ map are in `library/closed/`; versions, source URLs and hashes are in
 `library/closed.tsv` and `docs/audits/2026-10-29-regional-spores-batch.md`.
 The Ghelli bundle preserves the original, update cover and reissue; these are
 one study, not independent assemblage evidence. Wellman's sample-details
-Appendix 1 is internal (PDF page 5, printed 28). Scientific extraction is pending.
+Appendix 1 is internal (PDF page 5, printed 28). Most scientific extraction is pending.
+The subsequent bounded Ghelli frame assessment read the 2017 methods, table 1,
+figure 2 and conclusions: 27 productive Pelmis codes are now inventoried in
+`data/units/frame_samples.csv`, with collection/subset and MG-130 discrepancies
+retained. The 2011 and 2025 Khoshyeilagh sources were checked for admission scope,
+not taxonomic adjudication. The latter is an E2 inventory lead; neither provides
+an established complete E1-negative denominator. Source hashes, locators and the
+companion-inventory leads are in `audits/2026-10-29-f3-response-and-ghelli-frame.md`.
 
 Stage B's two ResearchGate main texts were recovered on 29 October 2026:
 Mehlqvist et al. 2012 (12 pages) and Wellman et al. 2013 chapter 29 (16 pages), in

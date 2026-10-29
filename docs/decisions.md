@@ -3,6 +3,22 @@
 Dated record of decisions that shape the programme. Newest first. Say who decided, and quote
 Barry exactly (with source) or label a paraphrase.
 
+## 2026-10-29: second-repair audit and Pelmis inventory (Codex)
+
+- **Methods:** independent checks accept the rate-dependent target, integrated reference normalisation and core numerical-status repairs. The saved synthetic rehearsal's 117 pointwise acceptance quantities reproduce (minimum 946/1,000); its receipt matches historical source `55d7a58`, not the later shared-age code. No ensemble was rerun.
+- **Remaining repairs for Claude:** enforce calibration-receipt cell/protocol scope; implement verified pooled stage-two decisions; distinguish successful truth-point tests from failed delivered bounds/sets; retain fixed-M2 status and make diagnostics status-aware. The full binding workflow is not yet executable as claimed. Details and counterexample rows: `docs/audits/2026-10-29-f3-response-and-ghelli-frame.md`.
+- **Agreement** (Codex responding to Claude's proposal 2553): adopt 0.955 as the future empirical calibration target, keeping nominal 0.95, floor 0.93 and the existing sequential thresholds. It is a tuning cushion, not a proof of population coverage. Declare independent latent ages for development and test plausible shared-age structures at the actual design before application; those diagnostics do not guarantee robustness to all geological dependence.
+- **Reporting:** integrated productive-assemblage eligibility with explicit outcome-dependence and conditional-inference qualifications. Barren/unknown preparations remain in the inventory; no new zeros or adapter.
+- **Evidence:** the Pelmis 2017 reissue supplies 27 table-listed productive sample codes and explicit E1 source scope. The 140-sample collection/subset distinction and MG-130 discrepancy remain unresolved. The pilot stays at 15 blocks/90 outcomes; candidate inventories increase to four frames/41 rows. Related 2011/2025 Khoshyeilagh sources have different E1/E2 reporting scope and unresolved overlap.
+- **Structural review (Q1/Q2):** separate source inventories from admitted trials and pointwise-test validation from successful interval delivery. Existing evidence tables and a focused audit suffice; no schema growth or empirical fit is needed yet. Pelmis companion inventories are the next evidence target; Claude retains methods implementation. Q9 remains parked and no scientific age/trait result changed.
+
+## 2026-10-29: F3 scope and innovation chronology (Barry; Codex discussion)
+
+- **Decision** (Barry, Codex chat): “Excellent, we're aligned.” This accepts the recommendation to complete F3 with a bounded pilot on observed trait combinations and supported partial orderings, while deferring joint age–phylogeny–character–preservation origin inference to a follow-up. He explicitly asked that the discussion be recorded here and on the Board and that work continue.
+- **Record:** `docs/innovation-scope.md` captures the discussion, distinctions and publication boundary. The pilot is a biological capstone using a few characters relevant to F3; its exact characters and comparisons remain to be specified. A new phylogenetic reanalysis or joint origin model is not part of this decision.
+- **Novelty judgement:** a strong prospective contribution, not established methodological priority. Closest precedents and the biological gain from the pilot must be compared explicitly. Tentative conclusions count when they identify supported orderings, pivotal assumptions or discriminating evidence.
+- **Structural review** (Codex): the evidence/interpretation separation supports both the current paper and a later joint model. Q2/Q4/Q6 gain a bounded synthesis route; Q7 and joint origin inference remain deferred. Exposed assumptions are trait-to-clade mapping, character homology, absence versus non-preservation, dating distributions and the duration of an undetectably rare phase. No empirical age or character reading changed. Barry's attention is reserved for material choices; autonomous work and asynchronous handoffs continue.
+
 ## 2026-10-29: native-save literature queue completed (Codex execution)
 
 - After Barry returned and unlocked the desktop, Codex recovered all ten Oxford candidates and Edwards 1980/Mark 2011. Mark's five supporting files are also held. The autonomous collection now totals 97 main texts, 46 supporting files and one erratum; 348 CSV rows remain needed.

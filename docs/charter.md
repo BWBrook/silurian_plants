@@ -116,6 +116,12 @@ data archived, and the human–AI correspondence record published alongside.
     adjudicated by Claude Opus 5.5 (`work/codex/loop1b/`), and the Cambrian age, location and
     vetting jobs for the widened Palynodata window (2026-10-28).
 - OpenAI Codex (OpenAI, Codex desktop; exact model version not exposed in this session):
+  On 2026-10-29, discussed innovation chronology and first-paper scope with Barry,
+  recorded the agreed bounded trait pilot and deferred joint model, and independently
+  checked Claude's second F3 repairs and rehearsal receipts. Three same-model delegates
+  checked target/status mathematics, the calibration contract, and Ghelli source scope;
+  the parent integrated findings, verified decisive rows and rendered source evidence,
+  and added a qualified 27-sample inventory without inferred binary outcomes.
   private reading portal and taxon atlas, source-preserving rendering, image sourcing,
   independent implementation review and browser checks (2026-10-27); browser acquisition and
   provenance verification of Rubinstein et al. (2010) and its supplement, and acquisition of

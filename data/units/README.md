@@ -1,6 +1,6 @@
 # Sampling-unit evidence: bounded M2 interface pilot
 
-Status: **pilot only, updated 29 October 2026 after the Hanadir source check**. These tables implement the two-table interface agreed in
+Status: **pilot only, updated 29 October 2026 after the Hanadir and Pelmis source checks**. These tables implement the two-table interface agreed in
 `docs/f3-shape.md`. They contain 15 identifiable material blocks, each with E1 and E2 outcomes
 under `main`, `inclusive` and `outlier` (90 outcome rows). They are a purposeful evidence audit,
 not a complete denominator or a representative sample of Palynodata. No binary analysis input,
@@ -16,9 +16,9 @@ reference rate, first appearance or fossil-absence result is generated here.
 | `source_files.csv` | Every held article/supplement cited by the pilot, with SHA-256; multiple files are evidence for one source, not extra trials |
 | `age_models.csv` | Evidence-only age declarations; neither a within-stage density nor a geological joint uncertainty model has been adopted |
 | `candidates.csv` | Unresolved sample identities, incomplete denominators, duplicate mapping and unavailable source follow-ups |
-| `frames.csv` | Three source-selected candidate inventories and their remaining admission gaps; none is analysis-ready |
-| `frame_samples.csv` | The complete list of 14 depths plotted in Hanadir's 1996 figure 2; exact and provisional links to pilot units, without inferred sample outcomes |
-| `reporting-rule.md` | Codex's qualified response to Claude's binary reporting proposal; no adapter or adopted binary data release yet |
+| `frames.csv` | Four source-selected candidate inventories and their remaining admission gaps; none is analysis-ready |
+| `frame_samples.csv` | 14 depths plotted in Hanadir's 1996 figure 2 and 27 Pelmis sample codes in the 2017 table 1; inventory only, without inferred sample outcomes |
+| `reporting-rule.md` | Agreed core/three qualifications plus integrated productivity condition; no adapter or adopted binary data release yet |
 
 Check with `python3 tools/units.py check` (standard library only). The check rejects duplicate
 material, missing event/reading combinations, broken source/interpretation links, reversed stage
@@ -125,3 +125,20 @@ New references, identities verified against Crossref on 29 October 2026:
 - Steemans P, Pereira E (2002). Llandovery miospore biostratigraphy and stratigraphic evolution of the Paraná Basin, Paraguay – Palaeogeographic implications. DOI: 10.2113/173.5.407.
 - Grahn Y, Pereira E, Bergamaschi S (2000). Silurian and Lower Devonian chitinozoan biostratigraphy of the Paraná Basin in Brazil and Paraguay. DOI: 10.2113/0240147.
 - Strother PK, Al-Hajri S, Traverse A (1996). New evidence for land plants from the lower Middle Ordovician of Saudi Arabia. DOI: 10.1130/0091-7613(1996)024<0055:neflpf>2.3.co;2.
+
+## Pelmis inventory follow-up, 29 October 2026
+
+The Ghelli 2017 reissue adds one candidate frame and 27 table-listed productive
+sample codes, giving four frames and 41 inventory rows. It adds no outcome or
+material unit: the evidence pilot remains 15 blocks and 90 outcomes. The 2016
+original and 2017 reissue are one study. Methods state 140 collected, palyniferous
+samples across four formations, whereas the paper analyses 27 Ghelli samples;
+MG-130 is repeatedly named in prose but table 1 ends at MG-129. Non-target
+acritarchs occur in every table row. A study-wide statement restricts spores to
+Ghelli, but does not license 113 individual negative records. The complete
+inventory, sample-to-chart mapping and older ages need reconciliation.
+
+`docs/audits/2026-10-29-f3-response-and-ghelli-frame.md` records source locators,
+related Khoshyeilagh assessments and the methods-review handoff. The productivity
+rule conditions inference on eligible productive preparations; it does not turn
+marine palynomorph recovery into proof of trilete search scope.
