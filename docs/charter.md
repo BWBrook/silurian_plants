@@ -114,6 +114,11 @@ data archived, and the human–AI correspondence record published alongside.
   independent implementation review and browser checks (2026-10-27); browser acquisition and
   provenance verification of Rubinstein et al. (2010) and its supplement, and acquisition of
   pivotal literature and supporting information through UTAS and public repositories (2026-10-28).
+  On 2026-10-29, joint and autonomous Chrome diagnosis recovered seven previously
+  unresolved texts (six publisher PDFs and one author preprint), with source and
+  file verification; bounded `gpt-5.6-luna` executor/scout delegates checked public
+  repository routes and connectivity. `docs/audits/2026-10-29-literature-recovery.md`
+  records the roles, versions and remaining blockers.
   From 2026-10-28, a direct scientific and repository collaborator at Barry's request:
   methodological review of the F3 reshape, independent checks of recovery outputs and
   calibration provenance, and direct discussion with Claude through the private Correspondence

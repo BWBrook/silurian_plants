@@ -1,5 +1,8 @@
 # Literature-sourcing pilot, 28 October 2026
 
+Historical results below. Follow-up recovery and current counts are recorded in
+`docs/audits/2026-10-29-literature-recovery.md` and `docs/barry-to-action.md`.
+
 The pilot checked 20 selected register entries for Q1/Q2 and spore sampling. Five
 complete papers were acquired; 15 remain unresolved. The entries are research leads,
 not a demonstrated set of eligible spore-negative sampling units. Acquisition alone

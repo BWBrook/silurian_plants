@@ -48,3 +48,10 @@ Garratt et al. 1984 is now held in full as well (`library/closed/garratt1984.pdf
 provenance in `library/closed.tsv`). The LibKey route delivered the four-page
 Oxford/Silverchair PDF without a new login or challenge; scientific re-reading
 for Q1/Q2 remains pending.
+
+The autonomous literature follow-up recovered Raevskaya 2016, Tang 2017 and
+Strother et al. 1996 in publisher form, plus Strother 2000 as a 23-page author
+preprint. The original Strother 1996 sample mapping can now be checked against the
+primary text (Q1/Q2); it has not yet been extracted or adjudicated. Across the
+twenty-paper pilot, twelve full texts are now held and eight remain pending;
+`docs/audits/2026-10-29-literature-recovery.md` records the versions and blockers.

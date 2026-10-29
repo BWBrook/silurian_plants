@@ -5,126 +5,111 @@ No request, purchase or message is sent unless Barry chooses to do so. Reopen th
 listed page in Chrome when ready; keep the record until the resulting file and its
 provenance have been verified. A failed route does not establish that no copy exists.
 
-## Pending
+## Pending — rechecked 29 October 2026
+
+Eight of the original fifteen unresolved items remain. Two have UTAS BioOne routes
+held at human verification; six have only library-request routes in the authenticated
+catalogue searches. No requests, messages or purchases have been submitted. Earlier
+pilot observations remain in `docs/audits/2026-10-28-literature-sourcing-pilot.md`;
+the follow-up and verification record is `docs/audits/2026-10-29-literature-recovery.md`.
 
 ### Vecoli et al. 2015 — Kanosh Shale palynology
 
-- Register ID: `al2015f`; DOI: `10.1017/jpa.2015.29`.
-- Reopen: [Cambridge Core article](https://www.cambridge.org/core/journals/journal-of-paleontology/article/abs/palynology-of-the-ordovician-kanosh-shale-at-fossil-mountain-utah/EBCD82BC67307A8A5469938857DC37C3).
-- Observed 2026-10-28: Cambridge offered institutional login, but its institution
-  lookup displayed “Something went wrong” after searching for UTAS. No full text
-  was obtained; entitlement is undetermined.
-- Action: retry institutional login from the article, or locate it through the
-  UTAS catalogue.
-
-### Le Hérissé et al. 2007 — Hanadir environments (Q1, Q2)
-
-- Register ID: `al2007d`; DOI: `10.1016/j.revmic.2007.01.010`.
-- Reopen: [ScienceDirect article](https://www.sciencedirect.com/science/article/pii/S0035159807000074).
-- Observed 2026-10-28: with UTAS institutional access active, ScienceDirect said UTAS
-  does not subscribe to this content. Its “Check for full-text @ UTAS” link returned
-  “Invalid Library”.
-- Action: search the UTAS catalogue by DOI for another holding and, if appropriate,
-  decide whether to request it. No request has been made.
-
-### Steemans et al. 1996 — Turkish Ordovician–Silurian spores (Q1, Q2)
-
-- Register ID: `al1996`; DOI: `10.1016/0034-6667(95)00119-0`.
-- Reopen: [ScienceDirect article](https://www.sciencedirect.com/science/article/pii/0034666795001190)
-  or the [Liège repository record](https://orbi.uliege.be/handle/2268/119948).
-- Observed 2026-10-28: ScienceDirect reported no UTAS subscription for this item;
-  the repository lists a copy but offers it only by request.
-- Action: check the UTAS catalogue or decide whether to request a copy. No request
-  has been made.
-
-### Vecoli et al. 2011 — Anticosti Island and Estonia cryptospores
-
-- Register ID: `al2011n`; DOI: `10.1016/j.revpalbo.2011.05.006`.
-- Reopen: [ScienceDirect article](https://www.sciencedirect.com/science/article/pii/S0034666711000704).
-- Observed 2026-10-28: ScienceDirect reported that UTAS does not subscribe to this
-  content; the accessible article page is not the complete PDF.
-- Action: search the UTAS catalogue by DOI for another holding and decide whether
-  to pursue a library request. No request has been made.
-
-### Raevskaya et al. 2016 — Siberian cryptospores
-
-- Register ID: `al2015e`; DOI: `10.1016/j.revpalbo.2015.10.010`.
-- Reopen: [ScienceDirect article](https://www.sciencedirect.com/science/article/pii/S0034666715001979).
-- Observed 2026-10-28: ScienceDirect displayed full-text access via UTAS, but the
-  PDF viewer did not finish loading. A university repository's public PDF contains
-  only page 1 of the ten-page paper.
-- Action: retry the publisher's PDF download or check the UTAS catalogue. A partial
-  first page is not a complete acquisition.
-
-### Tang et al. 2017 — Tarim Basin cryptospores
-
-- Register ID: `al2016i`; DOI: `10.1016/j.palwor.2016.01.004`.
-- Reopen: [ScienceDirect article](https://www.sciencedirect.com/science/article/pii/S1871174X16000068).
-- Observed 2026-10-28: ScienceDirect displayed full-text access via UTAS, but the
-  PDF viewer did not finish loading; no complete PDF was saved.
-- Action: retry the publisher PDF or use the UTAS catalogue.
-
-### Vecoli et al. 2009 — Ghadamis Basin palynology
-
-- Register ID: `al2008f`; DOI: `10.1016/j.palaeo.2008.05.015`.
-- Reopen: [ScienceDirect article](https://www.sciencedirect.com/science/article/pii/S0031018208003441).
-- Observed 2026-10-28: ScienceDirect reported that UTAS does not subscribe to this
-  content. Its issue is dated 2009; the register labels the paper 2008, and an
-  advance-online date has not been confirmed.
-- Action: check the UTAS catalogue or decide whether to request a copy. No request
-  has been made.
-
-### Strother et al. 1996 — early Ordovician Saudi Arabian spores (Q1, Q2)
-
-- Register ID: `al1996b`; DOI: `10.1130/0091-7613(1996)024<0055:neflpf>2.3.co;2`.
-- Reopen: [GeoScienceWorld article](https://pubs.geoscienceworld.org/gsa/geology/article-abstract/24/1/55/206443/New-evidence-for-land-plants-from-the-lower-Middle).
-- Observed 2026-10-28: the publisher page remained at security verification;
-  anonymous access returned HTTP 403. UTAS entitlement is undetermined.
-- Action: retry the publisher page, completing any verification yourself, or search
-  UTAS by the full title.
-
-### Vecoli & Cesari 2019 — Saq Formation conference paper
-
-- Register ID: `cesari2019`; DOI: `10.2118/195108-ms`.
-- Reopen: [OnePetro record](https://onepetro.org/SPEMEOS/proceedings-abstract/19MEOS/19MEOS/D021S004R001/218629).
-- Observed 2026-10-28: OnePetro remained at security verification; UTAS entitlement
-  is undetermined. The official indexed title includes a stray “Manuscript Title”
-  suffix, so verify the title against the full paper if obtained.
-- Action: retry the record, completing any verification yourself, or search UTAS
-  by DOI. No request has been sent.
-
-### Strother 2000 — cryptospore chapter
-
-- Register ID: `strother2000`; DOI: `10.1017/s1089332600000681`.
-- Reopen: [Cambridge Core chapter](https://www.cambridge.org/core/journals/the-paleontological-society-papers/article/abs/cryptospores-the-origin-and-early-evolution-of-the-terrestrial-flora/5498BE0A523BAED205CAC9859ED28224)
-  or the [author-posted preprint](https://www.researchgate.net/publication/280076300_Cryptospores_The_origin_and_Early_Evolution_of_the_Terrestrial_Flora).
-- Observed 2026-10-28: Cambridge presented an access screen, and its institutional
-  lookup failed during a separate Cambridge check. The author describes the public
-  version as a self-formatted preprint with different pagination; its PDF link was
-  blocked by Chrome. Neither version has been acquired.
-- Action: try the UTAS catalogue or retry the author-posted PDF if Chrome permits.
-  Retain the distinction between the preprint and the published chapter.
+- ID `al2015f`; DOI `10.1017/jpa.2015.29`.
+- Reopen: [UTAS LibKey article](https://libkey.io/libraries/729/articles/77516390/content-location?utm_source=api_3637&allow_speedbump=true).
+- Current blocker: the catalogue supplies a BioOne institutional route, which
+  reaches **Additional security check is required**, with an hCaptcha checkbox.
+  It has not been completed. Subscription entitlement is not yet confirmed.
+- Cambridge alternative: its institution lookup now finds UTAS (the result was
+  visible in a screenshot but omitted from accessibility text), and the existing
+  UTAS session completes authentication. Cambridge then returns
+  `SHIBBOLETH_NOT_FOUND`: the selected organisation has not supplied the account
+  information required for Cambridge access. This is distinct from BioOne access.
+- Action: Barry completes BioOne's verification when ready; Codex then continues
+  download and verification. The challenged tab was closed.
 
 ### Rubinstein et al. 2023 — Colombian cryptospores
 
-- Register ID: `al2023b`; DOI: `10.5710/amgh.27.07.2023.3560`.
-- Reopen: [CONICET repository record](https://ri.conicet.gov.ar/handle/11336/251421).
-- Observed 2026-10-28: the repository advertises an open full PDF, but its host
-  timed out both in the public check and in Chrome. The publisher also lists a
-  separate additional file behind subscription; neither item was verified.
-- Action: retry the repository from a working connection and check the separate
-  publisher supplement if accessible.
+- ID `al2023b`; DOI `10.5710/amgh.27.07.2023.3560`.
+- Reopen: [UTAS LibKey article](https://libkey.io/libraries/729/articles/580033879/content-location?utm_source=api_3637&allow_speedbump=true).
+- Current blocker: the catalogue supplies a UTAS BioOne route, also held at an
+  hCaptcha **Additional security check is required** screen. Entitlement remains
+  unverified. Both BioOne cases may be easier to handle in one shared session,
+  although completing one challenge is not proven to clear the other.
+- [CONICET record](https://ri.conicet.gov.ar/handle/11336/251421) advertises the
+  full PDF, but ordinary downloads timed out from both mini and Nectar. Chrome's
+  attempted repository navigation also timed out. No repository PDF was acquired.
+- [Journal record](https://www.ameghiniana.org.ar/index.php/ameghiniana/article/view/3560)
+  labels its additional PDF **Requires Subscription**; supplement acquisition is
+  still pending separately from the main text.
+- Action: Barry completes BioOne's verification; Codex checks the main PDF and
+  accompanying files. All attempted browser tabs were closed.
+
+### Le Hérissé et al. 2007 — Hanadir environments (Q1, Q2)
+
+- ID `al2007d`; DOI `10.1016/j.revmic.2007.01.010`.
+- Authenticated UTAS **Everything** search returns the article and a HAL record;
+  both say **Get it for me from other libraries**. No available-online route.
+- [HAL record](https://hal.science/hal-00149675v1) loaded after its automatic
+  protection screen. It has no attached downloadable manuscript; its full-text
+  link points to ISTEX. The browser security policy rejected that linked URL as
+  invalid, so no attempt was made to work around the restriction.
+- Action: library request, or Barry inspects the ISTEX link himself. No request
+  submitted; tab closed.
+
+### Steemans et al. 1996 — Turkish Ordovician–Silurian spores (Q1, Q2)
+
+- ID `al1996`; DOI `10.1016/0034-6667(95)00119-0`.
+- Authenticated UTAS **Everything** search says **Get it for me from other libraries**.
+- [ULiège ORBi](https://orbi.uliege.be/handle/2268/119948) lists the publisher
+  postprint, but access is **Request a copy**, not a public PDF download.
+- Action: library request or request through ORBi. Neither submitted.
+
+### Vecoli et al. 2011 — Anticosti Island and Estonia cryptospores
+
+- ID `al2011n`; DOI `10.1016/j.revpalbo.2011.05.006`.
+- Authenticated UTAS **Everything** search says **Get it for me from other libraries**.
+  Public publisher/Estonian reference records expose metadata and abstract, with
+  no downloadable full text located in this pass.
+- Action: library request. None submitted.
+
+### Vecoli et al. 2009 — Ghadamis Basin palynology
+
+- ID `al2008f`; DOI `10.1016/j.palaeo.2008.05.015`.
+- Authenticated UTAS **Everything** search says **Get it for me from other libraries**.
+  No public full-text copy located. The issue is 2009 (volume 273, pp. 378–394);
+  the harvest register still labels it 2008. No full PDF obtained to reconcile all
+  date/version details.
+- Action: library request. None submitted.
+
+### Vecoli & Cesari 2019 — Saq Formation conference paper
+
+- ID `cesari2019`; DOI `10.2118/195108-ms`.
+- Authenticated UTAS **Everything** search says **Get it for me from other libraries**.
+- [OnePetro record](https://onepetro.org/SPEMEOS/proceedings-abstract/19MEOS/19MEOS/D021S004R001/218629)
+  remained at **Performing security verification** on recheck; no interactive
+  challenge was solved and no full text was reached. Title artefact **Manuscript
+  Title** remains unverified against the paper itself.
+- Action: library request; optionally Barry tests the publisher verification.
+  No request submitted; tab closed.
 
 ### Mehlqvist 2013 — Swedish spore thesis
 
-- Register ID: `mehlqvist2013`; ISBN: `978-91-86746-95-7`.
-- Reopen: [Lund University thesis record](https://portal.research.lu.se/en/publications/early-land-plant-spores-from-the-paleozoic-of-sweden-taxonomy-str/).
-- Observed 2026-10-28: Lund's record identifies the thesis, but no complete PDF was
-  found. Its constituent papers have not been treated as the complete thesis.
-- Action: search the UTAS or Swedish library catalogues by title or ISBN and decide
-  whether a library request is worthwhile. No request has been made.
+- ID `mehlqvist2013`; ISBN `978-91-86746-95-7`.
+- Authenticated UTAS ISBN search returns two records, both **Get it for me from
+  other libraries**. The [Lund repository](https://portal.research.lu.se/en/publications/early-land-plant-spores-from-the-paleozoic-of-sweden-taxonomy-str/)
+  identifies the thesis but exposes no whole-thesis download in Chrome. The Lund
+  publication record gives 106 pages; bounded primary-host searches did not find
+  a whole-thesis PDF on ResearchGate, Libris or DiVA.
+- Action: library request for the whole thesis. Constituent articles are not
+  counted as the thesis. No request submitted; tab closed.
 
-## Resolved through joint diagnosis
+Library-request searches can be reopened in [UTAS Library Search](https://utas.primo.exlibrisgroup.com/discovery/search?lang=en&vid=61UOT_INST%3A61UOT_INST):
+select **Everything**, sign in using **UTAS Student and Staff**, then search the
+DOI or ISBN above. In this session the existing UTAS login was reused without new
+credential entry.
+
+## Resolved through diagnosis and follow-up
 
 ### Kraft & Kvaček 2017 — recovered 2026-10-29 (Q1, Q2)
 
@@ -183,3 +168,31 @@ provenance have been verified. A failed route does not establish that no copy ex
   Chrome state and the eventual PDF before treating the timeout as a site access
   failure. Today's route succeeded without human intervention after opening;
   yesterday's security/sign-in stall was not reproduced.
+
+### Raevskaya et al. 2016 — Siberian cryptospores — recovered 2026-10-29
+
+- Register ID: `al2015e`; DOI: `10.1016/j.revpalbo.2015.10.010`.
+- Held: `library/closed/raevskaya2016.pdf`, 10 PDF pages; SHA-256 and route in
+  `library/closed.tsv`.
+- Publisher PDF; title, DOI, ten non-empty text pages and printed endpoints 4–13 verified, with first/last page rendering checked. Printed issue year is 2016; source-register harvest had labelled it 2015. View PDF redirect and rendering completed before native Chrome save; a tab-level empty accessibility view was not used to infer failure.
+
+### Tang et al. 2017 — Tarim Basin cryptospores — recovered 2026-10-29
+
+- Register ID: `al2016i`; DOI: `10.1016/j.palwor.2016.01.004`.
+- Held: `library/closed/tang2017.pdf`, 14 PDF pages; SHA-256 and route in
+  `library/closed.tsv`.
+- Publisher PDF; title, DOI, fourteen non-empty text pages and printed endpoints 50–63 verified, with first/last page rendering checked. Printed issue year is 2017; source-register harvest had labelled it 2016. Saved directly to library/closed after allowing PDF redirect/rendering to finish.
+
+### Strother et al. 1996 — Saudi Arabian spores (Q1, Q2) — recovered 2026-10-29
+
+- Register ID: `al1996b`; DOI: `10.1130/0091-7613(1996)024<0055:neflpf>2.3.co;2`.
+- Held: `library/closed/strother1996.pdf`, 4 PDF pages; SHA-256 and route in
+  `library/closed.tsv`.
+- Publisher PDF; correct title/authors, four non-empty text pages and printed endpoints 55–58 verified, with first/last page rendering checked. UTAS watermark dated 29 October 2026. Native Chrome Save command saved directly to library/closed. No new login or security challenge appeared on this route.
+
+### Strother 2000 — cryptospore chapter (author preprint) — recovered 2026-10-29
+
+- Register ID: `strother2000`; DOI: `10.1017/s1089332600000681`.
+- Held: `library/closed/strother2000_preprint.pdf`, 23 PDF pages; SHA-256 and route in
+  `library/closed.tsv`.
+- Author-formatted preprint dated 13 June 2018, 23 PDF pages including cover, references, figures and tables. Cover states same as final published version except pagination; this equivalence is the author statement, not an independent comparison. Cover citation says 3–19 whereas project publisher citation is 3–20. Version and pagination distinction retained. Public Download full-text PDF worked in Chrome; copied from Downloads/Strother2000.pdf into library/closed. All 23 pages have extractable text, first/last pages rendered. Published chapter remains unheld.

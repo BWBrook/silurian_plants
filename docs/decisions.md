@@ -3,6 +3,23 @@
 Dated record of decisions that shape the programme. Newest first. Say who decided, and quote
 Barry exactly (with source) or label a paraphrase.
 
+## 2026-10-29: autonomous literature-access follow-up (Barry; Codex execution)
+
+- **Authority** (Barry, chat): "work now through them remaining "Back to action"
+  items autonomously, and then report back to me on the remaining blockers".
+- **Result** (Codex): four further texts verified (three publisher PDFs and one
+  author preprint), bringing recovery from the fifteen unresolved items to seven
+  and holdings from the original twenty to twelve. Eight remain: two BioOne human
+  verification cases, and six authenticated catalogue library-request cases.
+- **Structural review** (Codex): the access ledger now separates loading/visibility
+  failures, human verification, subscription/request routes, host timeouts and
+  browser-policy rejection. Catalogue **Everything** plus existing staff SSO and
+  actual LibKey links improved autonomous acquisition. Native Chrome controls
+  and visual inspection repaired accessibility gaps. Full texts, versions and
+  hashes are recorded; science readings remain pending. Q1/Q2 source access
+  improved, including the original Strother 1996 paper, without altering evidence
+  interpretations. See `docs/audits/2026-10-29-literature-recovery.md`.
+
 ## 2026-10-29: diagnose literature-access failures jointly (Barry; Codex execution)
 
 - **Method** (Barry, chat; paraphrase): work through the 15 unresolved pilot items
