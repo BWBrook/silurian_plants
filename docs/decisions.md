@@ -3,6 +3,12 @@
 Dated record of decisions that shape the programme. Newest first. Say who decided, and quote
 Barry exactly (with source) or label a paraphrase.
 
+## 2026-10-30: MacBook literature return and closure of outstanding acquisition (Barry; integrated by Codex)
+
+- **Authority:** Barry asked Codex to pull the entire MacBook folder and update this repository, then said: "The outstanding items are just going to have to be flagged as unobtainable." The twelve remaining focal entries are now `unobtainable`, with no automatic access retries or request actions queued unless reopened by Barry. This is an acquisition disposition, not a claim that no copy exists anywhere.
+- **Evidence:** the complete 982-file/616,180,427-byte folder matches MacBook's independently computed source inventory. All 42 PDFs match their manifest hashes, sizes and page counts and have independent mini QA. Thirty-five full-text gaps and one complete intended abstract are closed; twelve remain (four Tier 1/eight Tier 2, ten unheld/two partial). The focused 135-row register now has 117 main-held rows, five abstracts, one dataset and twelve unobtainable. The earlier Lang/Cookson alias is not a distinct work.
+- **Structural review (Q1/Q2/Q4/Q5):** a dedicated twelve-row unobtainable register separates closed access gaps from scientific evidential closure. The original reduced list, complete intake, related works, partials and provenance remain available. Exposed: scan leaf counts differ from printed pagination; accepted manuscripts, thesis/abstract pairs and neighbouring papers are not interchangeable; unknown serving routes must stay unknown. The current manifest/status/reading index serves subsequent source extraction. No occurrence, frame, trait, model or scientific question status changed. Audit: `docs/audits/2026-10-30-macbook-literature-return.md`.
+
 ## 2026-10-30: first-study Tier 2 literature acquisition (Codex, authorised by Barry)
 
 - **Authority:** Barry, Codex chat: "Continue now with Tier 2." He asked that locked-mini or fresh-login blockers be held for his office session. All 77 targets were attempted; no unlock interruption was sent.

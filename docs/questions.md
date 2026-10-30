@@ -222,3 +222,20 @@ For Q5, the Steemans target is a single-author IPC 2008 abstract, McSweeney's th
 2022 with a 2024 repository deposit, and the Libertin online/print alias is one work.
 These are bibliographic corrections, not scientific refutations. No question's
 scientific status changed in this acquisition tranche.
+
+### MacBook literature return and closed access gaps, 30 October 2026 (Q1, Q2, Q4, Q5)
+
+Thirty-five exact main texts and one intended conference abstract have reached mini and
+passed file/provenance QA. Q1/Q2/Q4 source readings now have Garratt (1978), the Pelmis 2007
+companion, Vecoli (2011), Rubinstein (2023) and the other registered recovered sources. Acquisition
+does not itself admit a sampling frame, establish an absence, settle Yea's age or revise
+traits. The complete 2013 Abuhmida thesis is useful context, distinct from the missing 2011
+abstract; Ghavidel-Syooki (2000) and Mehlqvist (2012) likewise do not close the 2001 chapter/2013 thesis.
+
+Barry closed the twelve remaining exact-source gaps as unobtainable for this study,
+with two partial holdings and their limitations retained in `unobtainable-literature.csv`.
+These remain limits on what the study can claim, rather than grounds for treating a
+source's findings as verified or disproved. Q5 gains bibliographic/extent corrections
+(Quintavalle spelling, Higgs's journal DOI/pages, Tims's scan pagination), not scientific
+refutations. No question's scientific status changed. Full audit:
+`audits/2026-10-30-macbook-literature-return.md`.

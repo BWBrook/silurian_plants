@@ -173,7 +173,7 @@ established for the main texts. Provenance is in `library/closed.tsv` and
 40-page supplement was already held in `data/external/spores/`; it is not a new
 acquisition. Scientific extraction remains pending.
 
-In `docs/closed-literature.csv`, `local-copy-held` records an institutionally accessed copy;
+In `docs/closed-literature.csv`, `local-copy-held` records an institutionally accessed or Barry-supplied local copy;
 `open-copy-held` records a publicly available copy and does not imply a particular licence.
 `abstract-only` explicitly marks a held abstract without implying a held research article;
 interpret availability alongside `kind` and the focused status register.
@@ -315,3 +315,24 @@ the original priority input. Five reader/save cases and Hoffmeister's JSTOR term
 step are the first office actions in `barry-to-action.md`; request candidates are
 separate in `literature-requests.md`. Source acquisition does not validate an F3
 sampling frame, absence, trait transfer or chronology. No scientific status changed.
+
+## 14. MacBook return and acquisition closure, 30 October 2026
+
+Barry's MacBook access/search round closed 35 main-text gaps plus Wellman (2026)'s intended
+conference abstract. The full 982-file folder is retained, source-inventory verified,
+at `library/closed/_incoming/macbook-2026-10-30/`. All 42 supplied PDFs have mini reading
+copies under `library/closed/`, original bytes and provenance in `library/closed.tsv`;
+see `audits/2026-10-30-macbook-literature-return.md` for versions, extent and the file index.
+Garratt (1978), the 2007 Pelmis companion, Vecoli (2011), Rubinstein (2023) and the other exact
+recoveries can now be read. Ghavidel-Syooki (2000), Abuhmida (2013)'s complete thesis and the EPPC
+abstract book are additional contextual/supporting sources; Mehlqvist (2012) is a duplicate.
+
+The focused 135-row register now has 117 main-held rows (one earlier alias), five complete
+abstracts, one dataset and twelve **unobtainable** rows. At Barry's instruction, the
+remaining four Tier 1/eight Tier 2 sources are closed for this acquisition round and listed
+in `unobtainable-literature.csv`. Ten remain unheld, two partly held. The Masiak physical
+p.330 issue and Canning one-page limit remain explicit; no component, thesis or related
+paper closes the wrong source. The master uses `unobtainable` for this disposition,
+separately from `needed`; evidence gaps remain and no automatic retry is queued.
+The two previously parked background sources stay parked. Original input priorities,
+scientific interpretations and source-identity distinctions are unchanged.

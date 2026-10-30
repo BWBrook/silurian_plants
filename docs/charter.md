@@ -181,6 +181,15 @@ data archived, and the human–AI correspondence record published alongside.
   original PDFs, a BHL reconstruction, abstracts, partials and copied datasets; no
   scientific extraction or adjudication was performed in this acquisition tranche
   (`docs/audits/2026-10-30-first-study-tier2.md`).
+  Barry and the counterpart MacBook Codex session then recovered 35 exact main texts
+  and one intended abstract through joint browser actions, supplied files and a supplied
+  deep-research package (underlying system not identified in this integration). The mini
+  Codex parent copied the complete folder, retained reported source provenance, filed
+  42 PDFs, and closed twelve residual acquisition gaps at Barry's instruction. Two bounded
+  `gpt-5.6-luna` delegates independently reconciled source identities/outcomes, checked all
+  PDF bytes/pages and representative renders, and reviewed register integration. This was
+  acquisition/provenance work, without scientific extraction or adjudication
+  (`docs/audits/2026-10-30-macbook-literature-return.md`).
   From 2026-10-28, a direct scientific and repository collaborator at Barry's request:
   methodological review of the F3 reshape, independent checks of recovery outputs and
   calibration provenance, and direct discussion with Claude through the private Correspondence

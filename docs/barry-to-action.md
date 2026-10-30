@@ -1,5 +1,46 @@
 # Barry to action: literature access
 
+## Current disposition — MacBook return integrated, 30 October 2026
+
+The original 48-item focused queue is closed: **35 full texts and one intended
+conference abstract recovered; twelve sources flagged unobtainable**, at Barry's
+instruction on 30 October. Four are Tier 1 and eight Tier 2. Ten have no complete
+exact source; two retain partial holdings. No further automatic access retries,
+requests or Barry-action tasks are queued for these sources unless he reopens them.
+“Unobtainable” is the study's acquisition disposition after the completed search/access
+round, not a claim that no physical or electronic copy exists anywhere. The evidence
+gaps remain explicit; related sources do not replace the requested originals.
+
+`docs/unobtainable-literature.csv` is the current twelve-row list. The source files,
+versions and QA are indexed in `library/closed.tsv` and
+[audit](audits/2026-10-30-macbook-literature-return.md). The unchanged MacBook
+reduced-list HTML is [archived here](audits/2026-10-30-macbook-reduced-list.html).
+Garratt 1978, Hanadir/Pelmis companion 2007, Vecoli 2011, Rubinstein 2023 and the
+other recovered works have been removed from the live action queue. Garratt 1988
+is a different source and remains below.
+
+| ID / tier | Source | Held / missing |
+|---|---|---|
+| `zalesie-dating` / 1 | Masiak, M., Podhalańska, T., and Stempień-Sałek, M. (2003). Ordovician–Silurian boundary in the Bardo Syncline, Holy Cross Mountains, Poland — new data on fossil assemblages and sedimentary succession. Geological Quarterly 47(4): 311–330 as cited in the article header and official issue record; observed publisher PDF contains printed pp. 311–329. | Partial/related files retained. No authoritative physical/full-issue scan of page 330 was obtained. Whether 330 is blank, contains omitted material, or results from pagination/citation practice remains unverified. Keep the composite dossier row partial. The Trela and Szczepanik (2009) companion is already complete in the user’s holdings and was not downloaded again. |
+| `ghavidelsyooki2001` / 1 | Ghavidel-Syooki, M. (2001). Palynostratigraphy and palaeobiogeography of the Lower Palaeozoic sequence in the Northeastern Alborz Range (Kopet–Dagh Region) of Iran. In D. K. Goodman & R. T. Clarke (eds), Proceedings of the IX International Palynological Congress, Houston, Texas, U.S.A., 1996, pp. 17–35. American Association of Stratigraphic Palynologists Foundation. | Partial/related files retained. No complete public electronic copy found. A concrete publisher route now exists for the complete physical proceedings; purchasing was not undertaken. |
+| `mehlqvist2013` / 1 | Mehlqvist, Kristina (2013). Early land plant spores from the Paleozoic of Sweden – taxonomy, stratigraphy and paleoenvironments. Doctoral compilation thesis, Department of Geology, Lund University. Litholund Theses 23. 106 pp. ISBN 978-91-86746-95-7. | Partial/related files retained. Exact thesis metadata is accessible, but the checked Lund records expose no full-thesis file, and no legitimate public mirror was located. |
+| `abuhmida2011` / 1 | Abuhmida, Faisal Hadi (2011). Ordovician-Lower Silurian palynology of the Murzuq Basin, southwest Libya. Abstract, 44th Annual Meeting of AASP–The Palynological Society, Southampton, UK, 4–7 September 2011. Original pagination unverified. | Partial/related files retained. The original contribution page currently returns an access error, and the exact abstract page was not found among available Wayback captures. The indexed abstract is useful but cannot close the exact-source completeness requirement without inspecting the original abstract or proceedings. |
+| `richardson1988` / 2 | Richardson, J. B. (1988). Late Ordovician and Early Silurian cryptospores and miospores from northeast Libya. In A. El-Arnauti, B. Owens & B. Thusu (eds), Subsurface Palynostratigraphy of Northeast Libya, pp. 89–109. Garyounis University Press, Benghazi, Libya. | No public complete chapter or parent-book scan located. Exact paper remains a physical-library/document-delivery requirement. |
+| `quintavalle2006` / 2 | Quintavalle, M. & Playford, G. (2006). Palynostratigraphy of Ordovician strata, Canning Basin, Western Australia. Part Two: chitinozoans and biostratigraphy. Palaeontographica Abteilung B 275(4–6): 89–131. https://doi.org/10.1127/palb/275/2006/89 | Publisher preview only; no complete legitimate public copy located. Live UQ repository access is currently hindered by human verification; archives do not expose a full file. |
+| `quintvalle2006` / 2 | Quintavalle, M. & Playford, G. (2006). Palynostratigraphy of Ordovician strata, Canning Basin, Western Australia. Part One: acritarchs and prasinophytes. Palaeontographica Abteilung B 275(1–3): 1–88. https://doi.org/10.1127/palb/275/2006/1 | Partial/related files retained. Publisher preview only; no complete legitimate public copy located. Live UQ repository access is currently hindered by human verification; archives do not expose a full file. |
+| `vecoli1999` / 2 | Vecoli, M. (1999). Cambro-Ordovician palynostratigraphy (acritarchs and prasinophytes) of the Hassi-R’Mel area and northern Rhadames Basin, North Africa. Palaeontographia Italica 86: 1–112. | No full monograph located. The journal society exposes indexes/abstracts, UNICA has no attached file, and live UQ access was blocked by human verification in this browser. Archived UQ record was only an application shell without attached files. |
+| `edwardsedwards1986` / 2 | Edwards, Dianne & Edwards, D. S. (1986). A reconsideration of the Rhyniophytina Banks. In: Spicer, R. A. & Thomas, B. A. (eds), Systematic and Taxonomic Approaches in Palaeobotany: Proceedings of an International Symposium held at Goldsmiths’ College, London, April 1985. Systematics Association Special Volume 31. Oxford: Clarendon Press. pp. 199–220. ISBN 0-19-857704-4. | The exact author-repository record and parent-volume catalogue are accessible, but neither supplies chapter full text; no legitimate public scan was located. |
+| `kenrick1997book` / 2 | Kenrick, Paul & Crane, Peter R. (1997). The Origin and Early Diversification of Land Plants: A Cladistic Study. Smithsonian Series in Comparative Evolutionary Biology. Washington, DC and London: Smithsonian Institution Press. Catalogued as xi + 441 pp.; preliminary extent varies in secondary records. | An exact digitization exists at Internet Archive, but access is restricted. Google Books offers snippets, and no unrestricted complete institutional/author copy was located. |
+| `garratt1988` / 2 | Garratt, M. J. & Wright, A. J. (1988). Late Silurian to Early Devonian Biostratigraphy of Southeastern Australia. In McMillan, N. J., Embry, A. F. & Glass, D. J. (eds), Devonian of the World: Proceedings of the 2nd International Symposium on the Devonian System, Memoir 14, Volume III: Paleontology, Paleoecology and Biostratigraphy, pp. 647–662. Canadian Society of Petroleum Geologists. | Publisher browser page explicitly states Full Text (subscription required); purchase options shown. No open author or repository copy located. No purchase, login or contact submitted. |
+| `al2014c` / 2 | Higgs, K. T., Boyd, J. D. & Williams, B. P. J. (2014). An early Devonian age for the Bulls Head Formation, Lower Old Red Sandstone, Dingle Peninsula. Irish Journal of Earth Sciences 32: 55–70. https://doi.org/10.3318/IJES.2014.32.55 | JSTOR displays first-page preview; Read and download requires school/library login; Free online reading is advertised separately. MUSE blocked current browser with repeated Friendly Captcha verification page. ResearchGate is request-only. No complete source obtained. |
+
+## Historical access ledger
+
+The following records preserve earlier route diagnostics and manual actions.
+**Their open/blocked wording is historical and superseded by the current disposition
+above and the canonical status CSV.** Do not use them to restart resolved work or
+reopen the twelve closed gaps.
+
 This queue records literature-access blockers without leaving browser tabs open.
 No request, purchase or message is sent unless Barry chooses to do so. Reopen the
 listed page in Chrome when ready; keep the record until the resulting file and its

@@ -1,4 +1,21 @@
-# Parked literature requests
+# Literature requests and unavailable sources
+
+## Current disposition — 30 October 2026
+
+Barry closed the remaining acquisition round: the twelve sources in
+[unobtainable-literature.csv](unobtainable-literature.csv) are now **unobtainable for
+the current study**. No library/author request, purchase or follow-up is queued.
+Their exact-source gaps, partials and related works remain recorded in
+[barry-to-action.md](barry-to-action.md) and the
+[MacBook integration audit](audits/2026-10-30-macbook-literature-return.md).
+The MacBook return resolved 36 of the original 48 focal rows. Garratt 1978 is now
+held in full; Garratt & Wright 1988 remains a distinct gap. The two background
+sources `al2008f` and `al2012g` remain parked outside this study, as before.
+
+## Historical request candidates and route evidence
+
+The records below are retained as access history; their proposed actions are
+superseded by the current disposition. No request was sent in this integration.
 
 Parked by Barry on 29 October 2026 because obtaining these through requests has
 substantial practical friction. These items are excluded from automated collection
