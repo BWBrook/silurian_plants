@@ -47,6 +47,21 @@ next-step snapshots in the table without erasing their history.
 | Q9 | Does the Hooper et al. (2026) recalibration survive alternative maxima and placements of the eophytes? | phylogeny (clocks) | parked | the share of the 55 Myr shift owed to each calibration choice | alignment, calibration tables, prior/posterior outputs are held (`data/external/deposits/` and git-ignored `data/external/local/deposits/`); their version correspondence is not yet established. Hooper deposited input specifies 1% tails while the article describes 2.5% (Codex, 2026-10-28; review F3-R1). The bounded check reproduces the rounded node-184 summary but does not link the output to the control file. | Bounded check complete: all 5,001 saved rows and independently clade-matched output-tree HPDs recorded in `data/q9/hooper2026-provenance/` and `docs/audits/2026-10-29-q9-provenance-check.md`. Preliminary double burn-in deletion corrected; Board 2490–2494 is superseded by the final handoff. A controlled comparison of the deposited 1% and described 2.5% specifications is the next proposed diagnostic; it can quantify sensitivity but cannot prove historical provenance. No full clock reanalysis run |
 | Q10 | How much did early vegetation weather, bury carbon and raise O2? | simulation | parked | which parameters dominate, with each input marked as observed or assumed (primer §3, §8 questions 1 and 6) | productivity, P release and fire-threshold inputs; charcoal record | F5, later |
 
+### Borenshult readings and the frame screen, 2026-10-31 (Q1, Q2)
+
+Claude (`audits/2026-10-31-borenshult-reading-and-screen.md`):
+- **Q2:** Hooper et al.'s compression caution covers all figured Sandbian triletes, the two Skagen
+  specimens above the bentonite included. Their "Dalby Limestone" follows the 2019 paper's label
+  for the whole Sandbian. The main reading keeps all seven E1 depths unresolved. Re-examination of
+  the figured specimens (Fig. 5E, 5G, 5I) is the decisive evidence; an expert flag, Barry's
+  decision.
+- **Q1:** M2's own core cannot test M2's absence premise under either reading. Under main it has no
+  reference detection. Under inclusive, its three Darriwilian samples bound the statistic at 3.2
+  against 5.99, whatever the ages or dependence. A design screen now gates any binding
+  qualification. An M2-capable frame needs in-frame Katian or later E1 detections and tens of
+  eligible older units: 13–28 at a per-unit reference detection of 0.1–0.2 to exclude the
+  reference, and roughly ten times that to bound intensity at a tenth of it.
+
 ### Trilete persistence, 2026-10-31 (Q1, Q4)
 
 Under Barry's widened scope, Claude re-ran Hooper et al.'s stochastic mapping
@@ -55,8 +70,9 @@ is now supported under their models.
 - Given a trilete crown ancestor, the aperture persists to crown Tracheophyta in 98–100% of maps.
 - Single-lineage retention from *T* to 452.8 Ma is 0.93–0.97 at 470 Ma and 0.76–0.90 at 515.5 Ma.
 
-M2 node statements now carry this retention as an explicit factor. The deposited timetrees use
-the older Harris and Clark dates (crown Embryophyta 508 Ma).
+Retention enters an M2 statement as a named conditional or sensitivity scenario, not as a factor
+multiplied into the F3 verdict (corrected 2026-10-31 after Codex, Correspondence 2631). The
+deposited timetrees use the older Harris and Clark dates (crown Embryophyta 508 Ma).
 
 ### Pilot round 2 and M3 record identity, 2026-10-30 (Q1, Q2, Q4, Q9)
 

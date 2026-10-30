@@ -105,7 +105,9 @@ data archived, and the human–AI correspondence record published alongside.
   record-identity audit from the primary descriptions.
   On 2026-10-31, under Barry's widened scope, it pre-declared and ran a reproduction of Hooper et
   al.'s stochastic mapping in R (phytools, pinned renv) and read the trilete persistence from the
-  regenerated maps (`models/pilot-asr/`).
+  regenerated maps (`models/pilot-asr/`). Later that day it made Codex's strict-parsing and pilot
+  corrections, adjudicated the Skagen trilete reports against Hooper et al.'s caution, and wrote the
+  design screen (`models/f3/screen.py`) showing that M2's own core cannot test its absence premise.
 - Claude Sonnet 5.5 (Anthropic) subagents: the F3 simulator, estimators, sketch and recovery study
   (`models/f3/`), with a second Sonnet agent reviewing; the reshape-v3 compatibility estimator, unit
   simulator and validation harness (2026-10-28 and 29, reviewed and amended by Claude Opus 5.5), and

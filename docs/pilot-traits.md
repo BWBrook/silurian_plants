@@ -136,8 +136,9 @@ Hooper et al.'s main text (read 2026-10-30) adds three points.
 ## Second result: specimen combinations (O, held sources, 2026-10-30)
 
 From `data/pilot/specimens.csv`: 524 rows from 30 primary sources, every quote checked against its
-text, and the decisive rows adjudicated by Claude. Codex reviewed the first 283 rows
-(`audits/2026-10-30-frame-and-pilot-review.md`). `data/pilot/combinations.csv` names each
+text, and the decisive rows adjudicated by Claude. Codex reviewed selected decisive rows within the
+first 283-row extraction, not every row (`audits/2026-10-30-frame-and-pilot-review.md`), and later
+checked 13 quotes and the decisive plates of round 2 (`audits/2026-10-30-borenshult-event-map.md`). `data/pilot/combinations.csv` names each
 combination's member rows and evidence level, so direct single-character rows cannot become an
 unstated direct joint claim.
 
@@ -146,7 +147,7 @@ unstated direct joint claim.
 | Combination | Taxon and specimens | Level | Stage |
 |---|---|---|---|
 | C1 + C3 | *C. barrandei* D552a,b | direct | Sheinwoodian, by correlation |
-| C3 | Irish *Cooksonia* cf. *pertoni*, TCD 22946d (expansions assumed to be sporangia; C1 and C4 unknown) | direct | Homerian |
+| C3, conditional | Irish *Cooksonia* cf. *pertoni*, TCD 22946d: C3 only if the terminal expansions are sporangia, which no isolated spores confirm; C1 and C4 unknown, not absent | direct | Homerian |
 | C4 alone | Capel Horeb axis, unbranched, nothing attached | direct | Ludfordian |
 | C1 + C3 | *C. bohemica* JE-Sch0260A,B; Lang's *C. pertoni* 124 Z b and 124 X (Perton) | direct | Přídolí |
 | C1 + C3 | *C. pertoni* subsp. *apiculispora* NMW 94.60G.14 | direct | Lochkovian |
@@ -157,7 +158,7 @@ unstated direct joint claim.
 | C2 without C1 | *Lenticulatheca* spp. (C3 not shown), one of Hooper et al.'s eophyte tips | direct | Lochkovian |
 | C3 without C4 | *Aglaophyton major*: pairs on Pb 4601 peels, C4 absence on NMW 85.49G.5 | composite | Pragian–Emsian |
 | C1 + C3 without C4 | *Nothia aphylla*: eight sporangia on one dichotomy (91/1-366); no differential thickening in aerial axes (pooled) and rhizome (P 3032) | composite | Pragian–Emsian |
-| C1 + C3, C4 disputed | *Horneophyton lignieri*: trilete monad in situ (Eggert 1974); tracheids (Kerp 2017; Cascales-Miñana et al. 2019) against transfer-cell-like cells (Kenrick and Long 2025) | composite | Pragian–Emsian |
+| C1 + C3 (C3 transferred), C4 disputed | *Horneophyton lignieri*: trilete monad in situ (Eggert 1974); C3 only as Kerp 2017's taxon-level transfer, since Eggert's sectioned sporangium is one lobed sporangium with a continuous cavity; tracheids (Kerp 2017; Cascales-Miñana et al. 2019) against transfer-cell-like cells (Kenrick and Long 2025) | composite | Pragian–Emsian |
 
 What this does to the mappings (I):
 - **Observed order**, within the audited set and by direct evidence:
@@ -175,10 +176,12 @@ What this does to the mappings (I):
     al. (1999) judge the *Velatitetras* plant probably a tracheophyte.
   - So the audited set does not show C3 outside total-group Tracheophyta. It shows only that C3 is
     not a crown-tracheophyte (tracheid-bearing) character.
-- **P2, persistence (new).** If the *Velatitetras* tetrads are permanent, cryptospore production
-  occurs in a probable tracheophyte in the Lochkovian. That would be cryptospory within the crown
-  under Hooper et al.'s reading: the secondary cryptospory `primer.md` §5.3 allows. With C2 disputed,
-  this is a lead, not a link.
+- **P2, persistence (new; corrected after Codex, 2629).** If the *Velatitetras* tetrads are
+  permanent, a plant its authors judge probably a tracheophyte made cryptospores in the Lochkovian.
+  Their evidence for that affinity is limited and superficial (Edwards et al. 1999, p. 149), and the
+  producer is not in Hooper et al.'s trees. Tracheophyte affinity would not place it in the crown,
+  and neither crown membership nor a secondary origin of its cryptospory follows. With C2 itself
+  disputed (immature tetrads of a trilete producer), this is a conditional lead, not a link.
 - **M3 record identity: contested** (`audits/2026-10-30-m3-record-identity.md`).
   - The Homerian specimens show branching with terminal expansions, with no spores and no anatomy.
     Their original authors allowed a reading without conducting tissue.
@@ -214,9 +217,18 @@ What this does to the mappings (I):
   recalibrated 457–450 Ma. The map-based persistence is therefore conditional on those older dates,
   not on M2.
 
-**Effect.** P1's persistence link is now **supported under these models**. Every M2 node statement
-carries R(L) as an explicit, model-conditional factor. M1's cryptospore persistence is not
-assessed: under most outputs the crown is not cryptosporous.
+**Effect.** P1's persistence link is now **supported under these models**. M1's cryptospore
+persistence is not assessed: under most outputs the crown is not cryptosporous.
+
+**How retention enters an M2 statement (corrected 2026-10-31, after Codex, 2628 and 2631).** R(L)
+is not multiplied into an F3 verdict or confidence level. The two have different conditioning and
+uncertainty, and no joint coverage follows from a product. Retention defines named conditional or
+sensitivity scenarios beside the F3 result ("if a crown lineage at *T* kept producing trilete
+spores, which these Mk fits make probable at 0.76–0.99, then …"), until an inferential combination
+is justified and validated. The retention values for older *T* hold the fitted rates fixed while
+lengthening the path. Re-fitting on a tree rescaled to an older crown would change the rates, so
+those values are sensitivity scenarios, not estimates. A reconstructed node state says when the
+trait arose; it does not make the oldest observed fossil predate the node.
 
 ## Characters and coding rules
 

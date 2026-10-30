@@ -73,6 +73,7 @@ import io
 import json
 import math
 import platform
+import re
 import time
 from dataclasses import asdict
 from multiprocessing import Pool
@@ -310,16 +311,25 @@ def shift_to_target(margins: list[float], target: float = CALIBRATION_TARGET) ->
     return max(0.0, float(np.sort(margins)[math.ceil(target * len(margins)) - 1]))
 
 
+def flag(r: dict, key: str) -> bool:
+    """A scored flag. Anything but a Boolean (missing, blank, NaN, text) is malformed evidence, never a success
+    or a failure."""
+    v = r.get(key)
+    if not isinstance(v, bool):
+        raise ValueError(f"replicate {r.get('rep')!r} of {r.get('cell')!r}: {key} is {v!r}, not a Boolean")
+    return v
+
+
 def coverage(rows: list[dict], covers) -> float:
     """Unconditional coverage over every replicate: no first appearance makes no claim and covers; an error
     does not."""
-    return mean((not r["error"]) and (r["no_tau"] or bool(covers(r))) for r in rows)
+    return mean((not r["error"]) and (flag(r, "no_tau") or bool(covers(r))) for r in rows)
 
 
 def margins(rows: list[dict], margin, ok) -> list[float]:
     """Statistic minus critical value per replicate, for shift_to_target: -inf where no claim is made, +inf for
     an error or a failed output (no shift covers them)."""
-    return [math.inf if r["error"] else -math.inf if r["no_tau"] else math.inf if not ok(r) else margin(r) for r in rows]
+    return [math.inf if r["error"] else -math.inf if flag(r, "no_tau") else math.inf if not ok(r) else margin(r) for r in rows]
 
 
 def origin_readouts(truth: us.Truth, design: us.Design, spec: ev.Spec) -> dict[str, list[float]]:
@@ -348,8 +358,8 @@ def grid_quantities() -> set[tuple[str, str]]:
 
 def summarise(cell: dict, rows: list[dict]) -> dict:
     truth, design, spec = cell_objects(cell)
-    ok = [r for r in rows if not r["error"] and not r["no_tau"]]
-    nt = [r for r in ok if not r["trivial"]]
+    ok = [r for r in rows if not r["error"] and not flag(r, "no_tau")]
+    nt = [r for r in ok if not flag(r, "trivial")]
     out = {k: cell[k] for k in ("name", "kind", "history", "t0", "f", "k", "scale") if k in cell}
     fits = sum(r["n_fits"] for r in ok)
     out.update(
@@ -365,11 +375,11 @@ def summarise(cell: dict, rows: list[dict]) -> dict:
         seconds_per_rep=mean(r["seconds"] for r in ok),
     )
     for cls in evaluated_classes(truth, spec):
-        bound_ok = lambda r: r[f"ok_fstar_{cls}"]
+        bound_ok = lambda r: flag(r, f"ok_fstar_{cls}")
         for label, key, target in (("", f"lr_{cls}", "abar_rel"), ("_nominal", f"lr_nominal_{cls}", "abar_nominal_rel")):
             if label and not any(r.get(key) is not None for r in ok):
                 continue
-            test_ok = lambda r: r[f"ok_lr{label}_{cls}"]
+            test_ok = lambda r: flag(r, f"ok_lr{label}_{cls}")
             delivered_ok = lambda r: test_ok(r) and bound_ok(r)
             margin = lambda r: -math.inf if r.get(key) is None else r[key] - r["crit_t0"]
             contained = lambda r: (r.get(key) is None or r[f"state_{cls}"] not in ("finite", "ceiling-limited") or not np.isfinite(r[target])
@@ -407,11 +417,11 @@ def summarise(cell: dict, rows: list[dict]) -> dict:
         for f in fs:
             key = f"{cls}_{f:g}"
             margin = lambda r: r[f"lr0_{key}"] - r["crit_t0"]
-            test_ok = lambda r: r[f"ok_lr0_{key}"]
-            delivered_ok = lambda r: test_ok(r) and r[f"ok_set_{key}"]
-            shiftable = lambda r: delivered_ok(r) and (margin(r) > 0 or r[f"cover_set_{key}"])
-            out[f"ocover_{key}"] = coverage(rows, lambda r: margin(r) <= 0 and delivered_ok(r) and r[f"cover_set_{key}"])
-            out[f"ocover_set_{key}"] = coverage(rows, lambda r: r[f"ok_set_{key}"] and r[f"cover_set_{key}"])
+            test_ok = lambda r: flag(r, f"ok_lr0_{key}")
+            delivered_ok = lambda r: test_ok(r) and flag(r, f"ok_set_{key}")
+            shiftable = lambda r: delivered_ok(r) and (margin(r) > 0 or flag(r, f"cover_set_{key}"))
+            out[f"ocover_{key}"] = coverage(rows, lambda r: margin(r) <= 0 and delivered_ok(r) and flag(r, f"cover_set_{key}"))
+            out[f"ocover_set_{key}"] = coverage(rows, lambda r: flag(r, f"ok_set_{key}") and flag(r, f"cover_set_{key}"))
             out[f"ocover_test_{key}"] = coverage(rows, lambda r: margin(r) <= 0 and test_ok(r))
             out[f"delta_ocover_{key}"] = shift_to_target(margins(rows, margin, shiftable))
             out[f"failed_ocover_{key}"] = sum(not delivered_ok(r) for r in ok)
@@ -465,9 +475,11 @@ def read_reps(path: Path) -> list[dict]:
         except ValueError:
             return v
 
-    rows = [{k: value(k, v) for k, v in r.items()} for r in csv.DictReader(io.StringIO(text))]
-    for r in rows:
-        r["rep"] = int(r["rep"])
+    rows = []
+    for raw in csv.DictReader(io.StringIO(text)):
+        if not re.fullmatch(r"\d+", raw.get("rep") or ""):
+            raise ValueError(f"replicate id {raw.get('rep')!r} of {raw.get('cell')!r} is not a non-negative integer")
+        rows.append({k: value(k, v) for k, v in raw.items()} | {"rep": int(raw["rep"])})
     return rows
 
 
@@ -601,14 +613,21 @@ def check_stage1(first: dict, receipt_sha: str, base: Path) -> None:
             problems.append(f"its {k} file is missing or does not match its hash")
     if not problems:
         by_name = {r["name"]: r for r in csv.DictReader(open(base / ev_["summary"]))}
-        rows = read_reps(base / ev_["reps"])
+        try:
+            rows = read_reps(base / ev_["reps"])
+        except ValueError as e:
+            raise SystemExit(f"stage 1 refused: its replicate table is malformed: {e}")
         for c in [c for c in CELLS if acceptance_quantities(c)]:
             s = by_name.get(c["name"], {})
             mine = [r for r in rows if r["cell"] == c["name"]]
             if s.get("n_rep") != str(N1) or sorted(r["rep"] for r in mine) != list(range(N1)):
                 problems.append(f"{c['name']}: its summary or replicate rows are not replicates 0..{N1 - 1}, once each")
                 continue
-            again = summarise(c, mine)
+            try:
+                again = summarise(c, mine)
+            except ValueError as e:
+                problems.append(f"{c['name']}: malformed replicate evidence: {e}")
+                continue
             for v in [v for v in q if v["cell"] == c["name"]]:
                 if round(float(s[v["quantity"]]) * N1) != v["k1"] or round(again[v["quantity"]] * N1) != v["k1"]:
                     problems.append(f"{c['name']} {v['quantity']}: count {v['k1']} disagrees with its summary or its replicates")

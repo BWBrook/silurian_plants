@@ -3,6 +3,34 @@
 Dated record of decisions that shape the programme. Newest first. Say who decided, and quote
 Barry exactly (with source) or label a paraphrase.
 
+## 2026-10-31: Borenshult readings kept; a design screen gates qualification (Claude)
+
+- **Reading** (Claude, who owns reading definitions): Hooper et al.'s compression caution covers
+  "the figured specimens", and the 2019 paper calls the whole Sandbian "Dalby Limestone". The
+  caution therefore reaches the two Skagen specimens (Fig. 5E, 33.05 m; 5G, 34.0 m, itself queried).
+  Main keeps all seven Borenshult E1 depths unresolved. No Skagen-only reading is added: no source
+  holds it, and it would be chosen after seeing its effect.
+- **Screen** (Claude): `models/f3/screen.py` bounds the zero-count statistic by 2 m r f, which
+  nothing in the real test can raise. Borenshult fails under both readings: under main there is no
+  in-frame reference, and under inclusive the bound is 3.2 against 5.99. A frame must now pass the
+  screen under a declared reading before a binding grid is built on it. The shared-age cells move
+  to the first frame that passes, with Borenshult's structure as their template. This replaces
+  building them now on Borenshult.
+- **Review repairs** (Claude, from Codex, Correspondence 2628–2631):
+  - strict replicate ids and Boolean flags in `validate.py`; 166 F3 tests pass, and all 66,000
+    current-format stored rows re-score unchanged;
+  - the four pilot corrections: *Velatitetras* crown and secondary cryptospory unresolved,
+    *Horneophyton* C3 transferred, Irish C3 conditional, review scope;
+  - retention used as a scenario, not multiplied into an F3 verdict.
+- **Structural review (Q1, Q2):** the unit interface carried a complete core end to end. Running
+  the cheapest check first showed that the binding grid would have been wasted on this core.
+  - **Exposed:** the M2 test needs in-frame reference support under main and tens of eligible
+    older units. These are frame properties, not estimator properties.
+  - **Q1's next step changes:** frame construction is now the critical path; no new estimator work
+    is needed.
+  - **Q2 gains a decisive specimen question:** the figured Borenshult triletes. Its re-examination
+    is an expert flag (Barry's decision).
+
 ## 2026-10-31: Borenshult event map and structural review (Codex)
 
 - **Completed evidence:** 34 Borenshult physical samples now join the unit/outcome interface,
@@ -35,7 +63,7 @@ Barry exactly (with source) or label a paraphrase.
   - **Status:** P1's persistence link is supported under these models.
 - **Correction recorded with the result:** the deposited timetrees date crown Embryophyta at 508 Ma (Harris and Clark dates), not at Hooper et al.'s recalibration, so the design's premise that they embed M2 was wrong. The estimands are unaffected.
 - **Tooling** (Claude, endorsed by Barry mid-run: "feel free to set up a pinned renv if you deem appropriate"): R analyses get a project-local renv per analysis directory, with `renv.lock` committed and libraries ignored. `models/pilot-asr/` pins R 4.6.1, ape 5.8-1 and phytools 2.5-2.
-- **Structural review (Q1, Q4):** persistence was the one link no published output could supply; a bounded re-run of the authors' own analysis settled it under their models without new tree inference. Exposed: every node statement now multiplies an F3 verdict by a model-conditional retention factor, and that factor is tree-averaged (dominated by the liverwort loss). M1's cryptospore persistence is not assessed. No question's status changed.
+- **Structural review (Q1, Q4):** persistence was the one link no published output could supply; a bounded re-run of the authors' own analysis settled it under their models without new tree inference. Exposed: every node statement now needs a model-conditional retention scenario, and the rates behind it are tree-averaged (dominated by the liverwort loss). *Corrected 2026-10-31 after Codex (Correspondence 2631): the retention probability is not multiplied into an F3 verdict; it defines conditional or sensitivity scenarios beside it, and fixed-rate stretches to older origins are sensitivity scenarios (2628).* M1's cryptospore persistence is not assessed. No question's status changed.
 
 ## 2026-10-30: wider scope authorised for a new ancestral-state analysis (Barry)
 

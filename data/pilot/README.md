@@ -51,3 +51,7 @@ held primary sources (524 rows). Each row is one source, taxon or specimen, and 
 - Ages are as stated, often in older stage names (Gedinnian, Siegenian, Whitcliffian). They are
   mapped to ICS stages only where the pilot uses them.
 - Rows not adjudicated are Codex's reading of the text; check them before use.
+- A `present` row can be conditional. The Irish TCD 22946d C3 row counts only if the terminal
+  expansions are sporangia, and its combination is labelled `C3 (conditional)`. *Horneophyton*'s
+  C3 is a taxon-level transfer (Kerp 2017), so its combination is composite with transferred C3
+  (Codex, Correspondence 2629).

@@ -1001,6 +1001,22 @@ def test_stage_two_rescores_the_stage_one_replicates(tmp_path, monkeypatch):
             val.check_stage1(first | dict(evidence=evidence), "r", tmp_path)
 
 
+def test_stage_two_refuses_malformed_replicate_ids_and_flags(tmp_path, monkeypatch):
+    first = _stage1(tmp_path, monkeypatch)
+    rows = [dict(r) for r in _a4_replicates()]
+    summary = val.summarise(val.CELLS[0], rows)
+    assert {"fcover_H0c"} <= {v["quantity"] for v in first["quantities"]}
+    for bad_rows in (
+        [dict(r, rep=r["rep"] + 0.25) for r in rows],  # fractional ids that int() would truncate to 0, 1, 2
+        [dict(rows[0], rep=False), dict(rows[1], rep=True)] + rows[2:],  # Boolean ids
+        [dict(rows[0], ok_fstar_H0c="")] + rows[1:],  # a scored flag missing
+        [dict(rows[0], ok_lr_H0c="false")] + rows[1:],  # a scored flag in a non-Boolean encoding
+    ):
+        evidence = _write_stage1(tmp_path, bad_rows, [summary])
+        with pytest.raises(SystemExit, match="malformed"):
+            val.check_stage1(first | dict(evidence=evidence), "r", tmp_path)
+
+
 def test_stage_one_evidence_may_be_read_through_its_compressed_copy(tmp_path, monkeypatch):
     first = _stage1(tmp_path, monkeypatch)
     reps = tmp_path / "validation_acc1_reps.csv"

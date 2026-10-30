@@ -463,7 +463,11 @@ comparison) is in `c7729ad`, its count-matched re-run in `69f2ef4` and the 60-ag
   `out/validation_dev*` hold the development grid (`dev2`: its seeds under the repaired code); `cal`, `acc1` and `receipt_cal.json` the second-review rehearsal,
   `shared` the shared-age cells. All of these predate the third-review repairs below and were written by earlier code.
 - `check_paired.py` (two runs on the same seeds, replicate by replicate) and `check_reoptimise.py` (every miss re-solved from many more starts): the rehearsal's checks.
-- `test_envelope.py`: 89 tests; the whole of `models/f3` is 163 tests, all passing (about 35 s).
+- `screen.py`: the design screen that gates a binding qualification on a real frame. It bounds the zero-count statistic by 2 m r f (m empty older units, r the
+  frame's own reference rate taken as known), which profiling, latent ages, dependence and the calibrated shift can only weaken. Writes
+  `out/screen_borenshult.csv`. Under the inclusive reading Borenshult reaches at most 3.2 against 5.99, so it is ceiling-limited at every origin; under main it
+  has no reference detection (`docs/audits/2026-10-31-borenshult-reading-and-screen.md`). `test_screen.py` checks the bound.
+- `test_envelope.py`: 90 tests; the whole of `models/f3` is 166 tests, all passing (about 35 s).
 
 ```bash
 uv run --with pytest --with numpy --with scipy python -m pytest -q models/f3
@@ -793,6 +797,17 @@ every acceptance cell it requires:
 Replicate tables are now written with exact floats (`repr`), so the re-scoring is exact; `read_reps` reads them back,
 through gzip if needed. The test fixture is now a real one-cell stage 1 (A4, three replicates on the acceptance seed),
 not a one-row stand-in. 163 F3 tests pass, and the smoke run's stage 2 re-scored and accepted its stage 1.
+
+**Sixth review (2026-10-31).** Codex accepted the V1 repair and found a parser gap (Correspondence 2628): `int()`
+turned replicate ids 0.25, 1.25, 2.25 into 0, 1, 2 and accepted Boolean ids, a blank scored flag became NaN, and
+lowercase `false` stayed a non-empty, truthy string. Both are now strict:
+- `read_reps` accepts only a non-negative integer literal as a replicate id;
+- every flag the scorer reads (`no_tau`, `trivial`, `ok_*`, `cover_set_*`) passes through `flag()`, which refuses
+  anything but a Boolean.
+
+`check_stage1` reports either case as malformed evidence and refuses the stage 1. Blank flags in classes a cell does
+not evaluate are never read. All 66,000 stored replicate rows of the current format parse under the strict rules and
+re-score to their stored coverage. 164 F3 tests pass.
 
 ### Open choices
 

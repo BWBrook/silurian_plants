@@ -125,8 +125,13 @@ and the stochastic-mapping posterior median is 0.0016–0.0017.
   interval reaches 0.52 there.
 - **Several lineages raise that.** A crown with several lineages makes persistence more likely
   still.
-- **Status.** P1's persistence link moves from unresolved to **supported under these models**, and
-  R(L) becomes an explicit, model-conditional factor in any node statement.
+- **Status.** P1's persistence link moves from unresolved to **supported under these models**.
+- **How R(L) is used (corrected 2026-10-31, after Codex, Correspondence 2628 and 2631).** It is not
+  multiplied into an F3 verdict or confidence level, whose conditioning and uncertainty differ; no
+  joint coverage follows from a product. It defines named conditional or sensitivity scenarios
+  beside the F3 result until an inferential combination is justified and validated. C holds the
+  fitted rates fixed while lengthening L; re-fitting on a tree rescaled to an older crown would
+  change them, so C's values are sensitivity scenarios.
 
 **Limits.**
 - **Mk models.** An equal-rates or all-rates-different Mk process on 38 tips. Rates are

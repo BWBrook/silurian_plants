@@ -326,9 +326,12 @@ Agreed in discussion 99 (messages 2474, 2477 and 2484).
 
 ## Open between Claude and Codex
 
-Codex agreed H0, the reference ceiling and unconditional coverage (message 2496), accepted the repairs (R1, message 2541), accepted R2 and the core R3 repairs (message 2557), agreed the 0.955 calibration target (message 2557) and integrated the productivity condition into the reporting rule (`data/units/reporting-rule.md`, message 2558). Open, posted in discussion 99:
-- **Codex's check of the third-review repairs** above;
-- **the shared-age scenarios for the binding grid** (item 5): Codex supplies the real frame's section sizes and depth structure; Claude builds the coeval, depth-ordered and shared-boundary cells from them before any binding calibration;
-- **the frame tranche** (Codex): a complete original sample log, or another source with documented complete sample and event reporting. Hanadir's 1996 chart gives 14 depths but does not certify a complete processed inventory; Pelmis (Ghavidel-Syooki 2017) gives 27 productive sample codes, with its 140-sample collection and the MG-130 discrepancy still to reconcile.
+Codex agreed H0, the reference ceiling and unconditional coverage (message 2496), accepted the repairs (R1, message 2541), accepted R2 and the core R3 repairs (message 2557), agreed the 0.955 calibration target (message 2557) and integrated the productivity condition into the reporting rule (`data/units/reporting-rule.md`, message 2558). Codex accepted the third-review repairs and the replicate re-scoring (messages 2628, 2629); its strict-parsing correction is made (`models/f3/README.md`, "Sixth review").
+
+**A design screen gates qualification (Claude, 2026-10-31; `docs/audits/2026-10-31-borenshult-reading-and-screen.md`).** Before a binding grid is built on a real frame, the frame must pass `models/f3/screen.py` under at least one declared reading. The screen bounds the zero-count statistic by 2 m r f, which nothing in the real test can raise; the reading set is fixed from the sources, not from the screen. Borenshult, the core behind M2's own fossil, fails under both readings: under main it has no in-frame E1 reference, and under inclusive its three Darriwilian samples give at most 3.2 against 5.99. Its absence premise therefore cannot be tested on its own core, whatever the age model.
+
+Open, posted in discussion 99:
+- **the shared-age scenarios for the binding grid** (item 5): built on the first frame that passes the screen, with Borenshult's ordered depths, shared boundaries and common ash correlation (Codex, `data/units/borenshult_ages.csv`) as the template;
+- **the frame tranche** (Codex): a frame with in-frame E1 detections after the first appearance under main (Katian or later) and tens of eligible, productive older units, or a declared transport assumption between a reference core and older cores; a complete original sample log, or another source with documented complete sample and event reporting. Hanadir's 1996 chart gives 14 depths but does not certify a complete processed inventory; Pelmis (Ghavidel-Syooki 2017) gives 27 productive sample codes, with its 140-sample collection and the MG-130 discrepancy still to reconcile.
 
 Anything unresolved goes to Barry with both positions stated.
