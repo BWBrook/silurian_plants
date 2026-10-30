@@ -20,19 +20,28 @@ The register is updated at each loop's close. Started 2026-10-28 by Claude Opus 
   - **answered**: with a pointer to the result.
 - **Kind of contribution.** Each has its own standard of success (charter): synthesis, statistics, simulation, phylogeny.
 
-**30–31 October update (Q1/Q2/Q5):** the complete Borenshult event map now adds
-34 physical samples and 204 reading-specific outcomes to `data/units/`. Seven depths
-report triletes, but the current main reading accepts none, so a positive local E1
-reference rate is unsupported under that reading. The eleven non-spore-bearing depths
-are accounted for by the explicit 34/23 source reporting; 16 further E1 chart blanks
-remain `not_reported` with complete-category scope. Age-correlation/contact disagreements
-are recorded, not averaged. Next: specific Skagen E1 adjudication, reference support per
-reading and ordered/shared-age design before real-data validation. The independent
-pilot review supports the new Perton/bohemica links and qualified Nothia comparison;
-crown/secondary cryptospory and Horneophyton's transferred C3 need the corrections sent
-to Claude. Core V1 evidence re-scoring passes, with strict CSV field validation still
-pending. See `audits/2026-10-30-borenshult-event-map.md`; these updates supersede older
-next-step snapshots in the table without erasing their history.
+**31 October update (Q1/Q2/Q4/Q5):** Borenshult's main/inclusive readings remain
+unchanged after Claude's Skagen adjudication. The homogeneous independent screen
+is useful, but Codex's existing-engine counterexamples refute its universal
+claim across dependence models and class ceilings. Frame selection after an
+observed screen also needs an explicit qualification target. All 166 F3 tests
+pass and the named strict-parser repairs work; an injected invalid state tag
+still bypasses delivered-bound containment. No malformed stored row was found.
+ASR numerical reproduction and path calculations check out, with Monte Carlo
+precision/convergence unassessed and the listed wording/count corrections pending.
+The four specimen/provenance corrections have been made.
+
+Qusaiba now contributes a complete 37-sample spore inventory (22 trilete-marked,
+15 unmarked), with a positive deepest sample and no supported pre-459.1 Ma
+depositional material. Libya supplies 164 appendix entries, but its 158 chart
+labels give only 153 exact depth matches. Both retain source conflicts without
+new binary outcomes. Next: Libya event/productivity mapping and an explicit
+within-well/core-cutting versus cross-well/core-only reference comparison;
+Qusaiba remains a separate reference candidate. Seven frames/276 inventory
+entries now support the unchanged 49 material blocks/294 outcomes. See
+`audits/2026-10-31-screen-and-persistence-review.md` and
+`audits/2026-10-31-qusaiba-libya-frames.md`. These updates supersede older
+next-step snapshots below without erasing their history; no question is answered.
 
 | ID | Question | Contribution | Status | Standard of success | Decisive gaps and dependencies | Next step |
 |---|---|---|---|---|---|---|

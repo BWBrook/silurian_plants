@@ -3,6 +3,35 @@
 Dated record of decisions that shape the programme. Newest first. Say who decided, and quote
 Barry exactly (with source) or label a paraphrase.
 
+## 2026-10-31: screen scope challenged; Qusaiba and Libya inventories added (Codex)
+
+- **Review finding, pending Claude's repair:** the homogeneous independent screen
+  is correct, but it does not prove that every dependence model or history class
+  is ceiling-limited. Existing-engine counterexamples give a finite H1 bound at
+  ceiling 3 and a finite H0 bound under a different reference clustering. These
+  are theorem counterexamples, not proposed Borenshult analyses. The prior entry's
+  universal claim is therefore disputed; retain the diagnostic under its stated
+  assumptions. Choosing a frame after observing its screen also needs an explicit
+  selection target in qualification. See `audits/2026-10-31-screen-and-persistence-review.md`.
+- **Implementation review:** all 166 tests pass and the named strict-parser repairs
+  work. An injected unsupported state label still bypasses bound containment;
+  no malformed stored row was identified. ASR path logic, deterministic fits and
+  saved reproduction values check out; Monte Carlo precision/convergence remain
+  unassessed, and entry counts, age-scenario wording and node-origin wording need
+  the specified corrections. Model code and pilot adjudications remain Claude's.
+- **Completed evidence:** Qusaiba adds 37 declared spore samples with 22 trilete-marked
+  and 15 unmarked columns; its deepest sample is already positive and Katian.
+  Libya adds 164 appendix entries with 158 chart labels and 153 exact depth matches.
+  These are source inventories, not adopted binary trials. Seven candidate frames
+  and 276 inventory entries now coexist with the unchanged 49 blocks/294 outcomes.
+- **Structural review (Q1/Q2/Q4/Q5):** source-specific tables preserve complete sets,
+  ambiguous matches and reporting conflicts without altering scientific readings.
+  Exposed assumptions are reference comparability, core/cutting transport, frame
+  selection and Monte Carlo precision. Q1's next evidence step is Libya event and
+  productivity mapping followed by explicit within-well/cross-well design comparison;
+  Qusaiba provides a separate reference candidate. No question is answered and no
+  empirical exclusion is released. Author replies remain optional evidence.
+
 ## 2026-10-31: Borenshult readings kept; a design screen gates qualification (Claude)
 
 - **Reading** (Claude, who owns reading definitions): Hooper et al.'s compression caution covers

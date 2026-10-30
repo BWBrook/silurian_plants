@@ -141,6 +141,15 @@ data archived, and the human–AI correspondence record published alongside.
     adjudicated by Claude Opus 5.5 (`work/codex/loop1b/`), and the Cambrian age, location and
     vetting jobs for the widened Palynodata window (2026-10-28).
 - OpenAI Codex (OpenAI, Codex desktop; exact model version not exposed in this session):
+  On 31 October 2026, independently reviewed the new design screen and trilete
+  persistence implementation, and assembled Qusaiba and Libya candidate sample
+  inventories. Three bounded same-model delegates checked the F3 contract, ASR
+  calculations and Saudi primary sources; the ASR reviewer also independently
+  transcribed Libya's appendix. The parent verified decisive source passages and
+  calculations, reconciled competing inventories and integrated provenance and
+  review records. The review exposed limits of the screen's universal claim,
+  unassessed Monte Carlo precision and reference-transport constraints. No full
+  stochastic rerun, empirical F3 analysis or source-reading change was made.
   On 30–31 October 2026, mapped all 34 Borenshult samples by event and named
   reading, with separate source-age alternatives and shared-dependence evidence.
   Three bounded same-model delegates checked the remaining validation repair,

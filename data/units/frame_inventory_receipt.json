@@ -1,0 +1,123 @@
+{
+  "reviewed_head": "45adb8d",
+  "date": "2026-10-31",
+  "scope": "Candidate inventories and literal reports only; no event-reading or binary analysis release",
+  "qusaiba": {
+    "reported_depth_records": 41,
+    "spore_samples": 37,
+    "acritarch_samples": 40,
+    "exact_numeric_matches": 36,
+    "e1_table_marked": 22,
+    "e1_table_unmarked": 15
+  },
+  "libya": {
+    "appendix_samples": 164,
+    "enclosure_depth_type_labels": 158,
+    "exact_numeric_matches": 153,
+    "appendix_only": [
+      [
+        "A28i-NC186",
+        4499.5
+      ],
+      [
+        "A28i-NC186",
+        4557.5
+      ],
+      [
+        "D1-200",
+        5150.0
+      ],
+      [
+        "D1-200",
+        5250.0
+      ],
+      [
+        "D1-200",
+        5350.0
+      ],
+      [
+        "D1-200",
+        5450.0
+      ],
+      [
+        "E1-NC174",
+        7150.0
+      ],
+      [
+        "E1-NC174",
+        7200.0
+      ],
+      [
+        "H2-NC186",
+        5250.0
+      ],
+      [
+        "H2-NC186",
+        5300.0
+      ],
+      [
+        "I3-NC186",
+        5230.0
+      ]
+    ],
+    "enclosure_only": [
+      [
+        "A28i-NC186",
+        4500.0
+      ],
+      [
+        "A28i-NC186",
+        4558.0
+      ],
+      [
+        "E1-NC174",
+        6750.0
+      ],
+      [
+        "H2-NC186",
+        5150.0
+      ],
+      [
+        "I3-NC186",
+        5220.0
+      ]
+    ]
+  },
+  "outputs": {
+    "qusaiba_inventory.csv": "1ffb4db3cc2e1a1b1f322da2653fda315d0c566bacf3366edc87a5bf0dbcc0c0",
+    "libya_appendix1.csv": "b3b8861263d08fa0a0f042de149a7b1719bb4e0e341e35787f210a3e40c228a1",
+    "libya_enclosures.csv": "5bac7c20cdcd18ca7d48ba7d364a249b7c4528d1931cdaa5c3bb3d31254856ac"
+  },
+  "source_files": [
+    {
+      "source_id": "wellman2015",
+      "path": "library/closed/wellman2015_firststudy.pdf",
+      "sha256": "8d3b68ed52c0281cd843b25b82c74be1285bfa7832dcf88b730033ad73b51cfc",
+      "role": "article"
+    },
+    {
+      "source_id": "steemans2009a",
+      "path": "library/closed/steemans2009a_firststudy.pdf",
+      "sha256": "464015c72b433afe238ab5ae5d83f95491450cb3d204ebc9a257bea090f57f8c",
+      "role": "article"
+    },
+    {
+      "source_id": "steemans2009a",
+      "path": "library/closed/steemans2009a_firststudy_SI1.pdf",
+      "sha256": "2576cd7c914dddfc4e8cde2772c15a2730c195fa88729d374c0f354e0e63e658",
+      "role": "supplement"
+    },
+    {
+      "source_id": "leherisse2015",
+      "path": "library/closed/leherisse2015_firststudy.pdf",
+      "sha256": "28047f302da4d685902bdf6d2fb96f92909a278fa562053c343704e0140f523d",
+      "role": "author-manuscript"
+    },
+    {
+      "source_id": "abuhmida2013",
+      "path": "library/closed/abuhmida2013-thesis-related_macbook20261030.pdf",
+      "sha256": "c0e3bf798fb3c27db0bf9cbb155396be5b4b8e003ee2228defb615a65abf3211",
+      "role": "thesis"
+    }
+  ]
+}

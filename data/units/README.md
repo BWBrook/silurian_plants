@@ -1,10 +1,10 @@
 # Sampling-unit evidence: bounded M2 interface pilot
 
-Status: **pilot only, updated 30–31 October 2026 with the complete Borenshult event map**.
+Status: **pilot only, updated 31 October 2026 with Qusaiba and Libya inventories**.
 These tables implement the two-table interface agreed in `docs/f3-shape.md`. They contain
 49 identifiable material blocks, each with E1 and E2 outcomes under `main`, `inclusive`
 and `outlier` (294 outcome rows). The original 15-block evidence pilot is retained unchanged;
-34 Borenshult samples now have complete material/reporting maps. None of the five frames is
+34 Borenshult samples now have complete material/reporting maps. None of the seven frames is
 analysis-ready: reference support, age/dependence distributions and binary conversion remain
 unadopted. No reference rate, first appearance or fossil-absence result is generated here.
 
@@ -18,8 +18,12 @@ unadopted. No reference rate, first appearance or fossil-absence result is gener
 | `source_files.csv` | Every held article/supplement cited by the pilot, with SHA-256; multiple files are evidence for one source, not extra trials |
 | `age_models.csv` | Evidence-only age declarations; neither a within-stage density nor a geological joint uncertainty model has been adopted |
 | `candidates.csv` | Unresolved sample identities, incomplete denominators, duplicate mapping and unavailable source follow-ups |
-| `frames.csv` | Five source-selected candidate inventories and their remaining admission gaps; none is analysis-ready |
-| `frame_samples.csv` | 75 inventory rows: 14 Hanadir depths, 27 Pelmis codes and 34 Borenshult depths; exact-depth links now join the complete Borenshult material map |
+| `frames.csv` | Seven source-selected candidate inventories and their remaining admission gaps; none is analysis-ready |
+| `frame_samples.csv` | 276 inventory rows: 14 Hanadir depths, 27 Pelmis codes, 34 Borenshult depths, 37 Qusaiba spore-table entries and 164 Libya appendix entries |
+| `qusaiba_inventory.csv` | 41 reported depth records: the 37 spore samples, companion acritarch records and an unresolved depth pair; literal table reports, not adopted event/reading outcomes |
+| `libya_appendix1.csv` | Independently transcribed complete 164-entry appendix, including ambiguous type cells and formations as printed |
+| `libya_enclosures.csv` | 158 explicit chart depth/type labels; 153 exact numeric matches to the appendix, with conflicts retained rather than silently merged |
+| `frame_inventory_receipt.json` | Source and output hashes plus inventory comparison counts for the 31 October tranche |
 | `borenshult_reporting.csv` | All 34 depths with literal source reports, E1 taxon lists, chart/count scope and non-target productivity; no accepted binary outcomes |
 | `borenshult_ages.csv` | All 34 depths with separate 2019/2023 zone/contact readings and historical numerical contexts; no age density or fitted age-depth model |
 | `reporting-rule.md` | Agreed core/three qualifications plus integrated productivity condition; no adapter or adopted binary data release yet |
@@ -29,6 +33,24 @@ material, missing event/reading combinations, broken source/interpretation links
 ranges, and loss of a detection in a wider reading. It also enforces this release's `pilot_only`
 status, frame/sample links and listed counts, and absence of an adopted binary reporting rule. It is an integrity check, not source
 verification or scientific validation.
+
+## Qusaiba and Libya inventory tranche, 31 October
+
+Qusaiba's complete declared set contains 37 productive spore samples, with trilete
+marks in 22 table columns and none in 15. The deepest sample already reports
+triletes, and its supported ages are Katian: it is a candidate positive reference
+frame, with no sampled pre-459.1 Ma exposure. The companion's 40 acritarch samples
+are not additional spore trials. Metre/foot labels, the 302.11/302.40 discrepancy,
+and the distinction between table reports and named readings remain explicit.
+
+Libya's complete appendix contains 164 entries across six wells, but the six
+range-chart pages contain 158 depth/type labels, with only 153 exact matches.
+The two source inventories remain separate. Core/cutting differences, barren
+material and unresolved samples stay visible. The thesis supplies an explicit
+assemblage-level trilete absence and younger occurrences; no pooled statement
+has been distributed across unidentified samples. Mapping events and productivity
+is the next tranche, before any reference-rate transport or actual-design
+qualification. See `docs/audits/2026-10-31-qusaiba-libya-frames.md`.
 
 ## The original 15-block pilot
 
@@ -93,7 +115,7 @@ frame inclusion, a binary reporting rule, first-appearance selection and referen
 any conversion to `models/f3/envelope.py`'s binary `Units` object. That adapter is intentionally
 not implemented before those choices are settled.
 
-## Review and next tranche
+## Borenshult and earlier frame reviews, 29–31 October
 
 The completed Borenshult extraction adds 34 material blocks and 204 named-reading
 outcomes. Source chart reports occur at seven E1 depths and all 23 plotted E2 depths;
@@ -144,9 +166,9 @@ the existing action/request/batch documents. Strother 1996's clean DOI, title, a
 verified directly. The extended frame check passed and rejected four temporary corruptions
 (duplicate or missing sample, unknown material link, premature analysis admission).
 
-The next evidence tranche should recover complete sample inventories from a small set of
+The earlier 29 October handoff prioritised complete sample inventories from a small set of
 Palynodata studies chosen by age, geography and reporting scope, before inspecting their E1
-outcomes. Priorities are Balme's original core-4 account, the original Hanadir sample mapping,
+outcomes: Balme's original core-4 account, the original Hanadir sample mapping,
 and the complete Paraguay sample log. The bounded follow-up recovered the Hanadir chart and one
 exact specimen link, but no complete processed-sample log. Balme's official GA record redirects
 to a catalogue whose tested public record/export routes exposed no scan; the original remains
