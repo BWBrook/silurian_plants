@@ -28,10 +28,15 @@ PORTAL = ROOT / "portal"
 OUT = PORTAL / "dist"
 REPO = "https://github.com/BWBrook/silurian_plants"
 CORE = [
-    ("primer", "The primer", "The period, its plants and the nature of the fossil record.", "01"),
-    ("framings", "Research framings", "Seven candidate questions, their evidence and their trade-offs.", "02"),
+    ("primer", "The primer", "The period, biological transitions and the nature of the fossil record.", "01"),
+    ("framings", "Research framings", "The candidate questions and the adopted first study.", "02"),
     ("precedents", "Modelling precedents", "What has already been modelled, and where the gaps remain.", "03"),
     ("sources", "The evidence base", "A register of the data held, needed and ruled out.", "04"),
+]
+CURRENT = [
+    ("f3-shape", "Fossil absences & clock maxima", "What the sampled record can exclude, under explicit encounter histories and biological assumptions.", "F3"),
+    ("pilot-traits", "The trait pilot", "Specimen combinations, published crown states and the mappings behind the maxima.", "Traits"),
+    ("questions", "The questions register", "The questions guiding the programme, their evidence and the work still needed.", "Q"),
 ]
 SUPPORT = [("charter", "Project charter"), ("decisions", "Decision record"),
            ("spore-compilation-plan", "Spore compilation plan")]
@@ -73,14 +78,27 @@ def main():
     paths = sorted(ROOT / p for p in tracked if p.parts[0] == "docs" and p.suffix == ".md")
     paths += sorted(ROOT / p for p in tracked if p.parts[0] == "data" and p.name == "README.md"
                     and not {"local", "closed", "work"}.intersection(p.parts))
+    paths += [ROOT / p for p in tracked if p == Path("models/f3/README.md")]
     paths += [ROOT / "README.md"]
     cards = sorted(ROOT / p for p in tracked if p.parent == Path("taxa") and p.suffix == ".md"
                    and not p.name.startswith(("_", "README")))
-    source_paths = paths + cards + [ROOT / "data/timescale.csv"]
+    media = set()
+    for path in paths:
+        source = path.relative_to(ROOT)
+        document = BeautifulSoup(markdown.markdown(path.read_text(), extensions=["extra"]), "html.parser")
+        for image in document.find_all("img", src=True):
+            parts = urlsplit(image["src"])
+            if parts.scheme or parts.netloc:
+                continue
+            target = Path(posixpath.normpath(posixpath.join(source.parent.as_posix(), unquote(parts.path))))
+            if target not in tracked or target.suffix.lower() not in {".png", ".jpg", ".jpeg", ".webp", ".svg", ".gif"} or {"local", "closed", "work"}.intersection(target.parts):
+                raise ValueError(f"Untracked or excluded illustration in {source}: {target}")
+            media.add(target)
+    source_paths = paths + cards + [ROOT / "data/timescale.csv"] + [ROOT / p for p in sorted(media)]
     revision = git("rev-parse", "HEAD")
     content_revision = git("log", "-1", "--format=%H", "--", *[str(p.relative_to(ROOT)) for p in source_paths])
     dirty = bool(git("status", "--porcelain", "--", "docs", "taxa", "README.md", "data/timescale.csv",
-                     *[str(p.relative_to(ROOT)) for p in paths if p.is_relative_to(ROOT / "data")]))
+                     *[str(p.relative_to(ROOT)) for p in source_paths]))
     if dirty:
         raise SystemExit("Commit the authoritative Markdown/timescale changes before building a source-linked portal.")
     generated = datetime.now(ZoneInfo("Australia/Hobart")).strftime("%d %b %Y, %H:%M %Z")
@@ -111,6 +129,10 @@ def main():
         shutil.copy2(PORTAL / name, OUT / name)
     if (PORTAL / "assets").exists():
         shutil.copytree(PORTAL / "assets", OUT / "assets")
+    for relative in media:
+        destination = OUT / relative
+        destination.parent.mkdir(parents=True, exist_ok=True)
+        shutil.copy2(ROOT / relative, destination)
 
     def root_link(target, current):
         return posixpath.relpath(target, posixpath.dirname(current) or ".")
@@ -134,6 +156,11 @@ def main():
         soup = BeautifulSoup(rendered, "html.parser")
         for link in soup.find_all("a", href=True):
             link["href"] = mapped_link(link["href"], source, current)
+        for image in soup.find_all("img", src=True):
+            parts = urlsplit(image["src"])
+            target = posixpath.normpath(posixpath.join(posixpath.dirname(source), unquote(parts.path)))
+            if not parts.scheme and not parts.netloc and Path(target) in media:
+                image["src"] = root_link(target, current)
         for table in soup.find_all("table"):
             wrapper = soup.new_tag("div", attrs={"class": "table-scroll", "tabindex": "0", "role": "region", "aria-label": "Scrollable table"})
             table.wrap(wrapper)
@@ -164,8 +191,13 @@ def main():
             ("home", "index.html", "Overview"), ("reading", "reading.html", "Reading room"), ("atlas", "atlas.html", "Taxon atlas")])
         side = ""
         if section == "reading" and current != "reading.html":
-            links = [(f"docs/{slug}.html", label) for slug, label, *_ in CORE] + [(f"docs/{slug}.html", label) for slug, label in SUPPORT]
-            side = '<aside class="book-nav"><p class="eyebrow">Reading room</p>' + "".join(f'<a href="{url(path)}" class="{"active" if path == current else ""}"{" aria-current=\"page\"" if path == current else ""}>{label}</a>' for path, label in links) + f'<a class="back-link" href="{url("reading.html")}">All documents ↗</a></aside>'
+            side = '<aside class="book-nav">'
+            for heading, documents in [("Current work", CURRENT), ("Foundations", CORE + SUPPORT)]:
+                side += f'<p class="eyebrow">{heading}</p>'
+                for slug, label, *_ in documents:
+                    path = f"docs/{slug}.html"
+                    side += f'<a href="{url(path)}" class="{"active" if path == current else ""}"{" aria-current=\"page\"" if path == current else ""}>{label}</a>'
+            side += f'<a class="back-link" href="{url("reading.html")}">All documents ↗</a></aside>'
         elif section == "atlas" and source:
             side = f'<aside class="book-nav"><a class="back-link" href="{url("atlas.html")}">← Browse the atlas</a><p class="eyebrow">Nearby in the collection</p>'
             slug = Path(source).stem
@@ -215,7 +247,7 @@ def main():
         rendered, toc, plain, title = render(body, source, current)
         title = title or p.stem.replace("-", " ").title()
         words = len(plain.split())
-        label = "Audit & evidence" if "/audits/" in source else "Source documentation" if source.startswith("data/") else "Reading room"
+        label = "Audit & evidence" if "/audits/" in source else "Source documentation" if source.startswith(("data/", "models/")) else "Reading room"
         content = f'<div class="article-header"><p class="eyebrow">{label}</p><h1>{esc(title)}</h1><p class="article-meta">{max(1, math.ceil(words / 220))} min read <span>·</span> Research in progress</p></div><article class="prose">{rendered}</article>'
         page(title, content, current, "reading", toc, source)
         search.append({"title": title, "type": label, "url": current, "text": plain})
@@ -263,13 +295,20 @@ def main():
                        "text": BeautifulSoup(content, "html.parser").get_text(" ", strip=True)})
 
     reading_cards = "".join(f'<a class="reading-card" href="docs/{slug}.html"><span class="chapter">{number}</span><h2>{label}</h2><p>{description}</p><span class="text-link">Start reading ↗</span></a>' for slug, label, description, number in CORE)
+    current_cards = "".join(f'<a class="reading-card" href="docs/{slug}.html"><span class="chapter">{number}</span><h2>{label}</h2><p>{description}</p><span class="text-link">Read the work ↗</span></a>' for slug, label, description, number in CURRENT)
+    current_section = f'<section class="current-work"><div class="section-title"><div><p class="eyebrow">Current work</p><h2>From specimens to inference.</h2></div><a href="docs/plan-f3.html">The adopted plan ↗</a></div><div class="reading-grid current-grid">{current_cards}</div></section>'
     support_cards = "".join(f'<a href="docs/{slug}.html">{label}<span>↗</span></a>' for slug, label in SUPPORT)
     doc_rows = []
-    main_documents = {f"docs/{slug}.html" for slug, *_ in CORE + SUPPORT}
+    grouped_rows = {"Audits & evidence": [], "Data & implementation guides": [], "Operations & literature work": []}
+    operations = {"backup-nectar", "barry-to-action", "literature-next-batch", "literature-requests"}
+    main_documents = {f"docs/{slug}.html" for slug, *_ in CURRENT + CORE + SUPPORT}
     for entry in search:
         if entry["type"] != "Taxon card" and entry["url"] not in main_documents:
-            doc_rows.append(f'<a class="document-row" href="{entry["url"]}"><span>{esc(entry["title"])}</span><small>{entry["type"]}</small><span aria-hidden="true">↗</span></a>')
-    page("Reading room", f'<div class="section-heading"><p class="eyebrow">The reading room</p><h1>A foundation for the science.</h1><p class="lede">The period, the competing questions and the evidence behind them. Read the project as a connected collection.</p></div><div class="reading-grid">{reading_cards}</div><section class="section-block"><div class="section-title"><h2>How the programme is taking shape</h2><p>Purpose, decisions and working plans</p></div><div class="support-links">{support_cards}</div></section><section class="section-block"><div class="section-title"><h2>Further reading & evidence</h2><p>Working notes, audits and source documentation.</p></div><div class="document-list">{"".join(doc_rows)}</div></section>', "reading.html", "reading")
+            row = f'<a class="document-row" href="{entry["url"]}"><span>{esc(entry["title"])}</span><small>{entry["type"]}</small><span aria-hidden="true">↗</span></a>'
+            group = "Audits & evidence" if entry["type"] == "Audit & evidence" else "Data & implementation guides" if entry["type"] == "Source documentation" else "Operations & literature work" if Path(entry["url"]).stem in operations else None
+            (grouped_rows[group] if group else doc_rows).append(row)
+    grouped_documents = "".join(f'<details class="document-group"><summary>{title}<span>{len(rows)} documents</span></summary><div class="document-list">{"".join(rows)}</div></details>' for title, rows in grouped_rows.items() if rows)
+    page("Reading room", f'<div class="section-heading"><p class="eyebrow">The reading room</p><h1>Follow the developing science.</h1><p class="lede">Begin with the current investigations, return to their foundations, or trace a claim through the evidence and reviews.</p></div>{current_section}<section class="section-block"><div class="section-title"><h2>The foundations</h2><p>Context, candidate framings and the evidence base</p></div><div class="reading-grid">{reading_cards}</div></section><section class="section-block"><div class="section-title"><h2>How the programme is taking shape</h2><p>Purpose, decisions and working plans</p></div><div class="support-links">{support_cards}</div></section><section class="section-block"><div class="section-title"><h2>Further reading & evidence</h2><p>Scientific notes, audits and source documentation.</p></div><div class="document-list">{"".join(doc_rows)}</div>{grouped_documents}</section>', "reading.html", "reading")
     groups = sorted({m["group"] for m, _ in metadata.values()}, key=lambda g: GROUP_NAMES.get(g, g))
     kinds = sorted({m["kind"] for m, _ in metadata.values()})
     group_options = "".join(f'<option value="{g}">{GROUP_NAMES.get(g, pretty(g))}</option>' for g in groups)
@@ -279,7 +318,7 @@ def main():
     page("Search the library", '<div class="section-heading"><p class="eyebrow">Across the collection</p><h1>Search the library.</h1><p class="lede">Find names, concepts and evidence across the documents and taxon cards.</p></div><form id="library-search" class="library-search" role="search"><label class="sr-only" for="search-query">Search query</label><input type="search" id="search-query" name="q" placeholder="Try sporophyte, Cooksonia or sampling…"><button type="submit">Search ↗</button></form><p id="search-count" role="status" aria-live="polite">Enter a word or phrase to search.</p><div id="search-results" class="search-results"></div><noscript><p>Full-text search needs JavaScript. Browse the reading room and atlas using the navigation above.</p></noscript>', "search.html", "search")
     hero = picture("hero", "index.html", "hero-image", eager=True)
     featured = [s for s in ("cooksonia", "asteroxylon-mackiei", "marchantia-polymorpha") if s in metadata]
-    home = f'''<section class="home-hero"><div class="hero-copy"><p class="eyebrow">Late Ordovician → Early Devonian</p><h1>The first chapters<br>of life on land.</h1><p class="lede">An evolving research library on early land plants: their forms, their world and the questions we can test.</p><div class="hero-actions"><a class="button" href="reading.html">Enter the reading room <span>↗</span></a><a class="quiet-link" href="atlas.html">Explore the atlas →</a></div><p class="hero-note">Exploratory research · A working collection</p></div>{hero or '<div class="hero-botanical" aria-hidden="true">✳</div>'}</section><div class="collection-strip"><span><strong>{len(cards):02d}</strong> taxon & assemblage cards</span><span><strong>{len(CORE):02d}</strong> core reading documents</span><span><strong>01</strong> evolving evidence base</span><span class="strip-note">A private working collection</span></div><section class="section-block"><div class="section-title"><div><p class="eyebrow">Begin with the context</p><h2>Four ways into the project.</h2></div><a href="reading.html">All documents ↗</a></div><div class="reading-grid">{reading_cards}</div></section><section class="section-block"><div class="section-title"><div><p class="eyebrow">From the atlas</p><h2>Forms that changed the story.</h2></div><a href="atlas.html">Browse all {len(cards)} cards ↗</a></div><div class="featured-grid">{"".join(tile(s, "index.html", True) for s in featured)}</div></section><section class="project-note"><p class="eyebrow">An evolving programme</p><h2>Follow the evidence and the decisions.</h2><p>Read the project charter and decision record alongside the evidence. Card status, source dates and uncertainty are carried through from the Markdown.</p><a href="docs/charter.html">Read the project charter ↗</a></section>'''
+    home = f'''<section class="home-hero"><div class="hero-copy"><p class="eyebrow">Late Ordovician → Early Devonian</p><h1>The first chapters<br>of life on land.</h1><p class="lede">An evolving research library on early land plants: their forms, their world and the questions we can test.</p><div class="hero-actions"><a class="button" href="reading.html">Enter the reading room <span>↗</span></a><a class="quiet-link" href="atlas.html">Explore the atlas →</a></div><p class="hero-note">Exploratory research · A working collection</p></div>{hero or '<div class="hero-botanical" aria-hidden="true">✳</div>'}</section><div class="collection-strip"><span><strong>{len(cards):02d}</strong> taxon & assemblage cards</span><span><strong>{len(paths):02d}</strong> research & source documents</span><span><strong>01</strong> evolving evidence base</span><span class="strip-note">A private working collection</span></div>{current_section}<section class="section-block"><div class="section-title"><div><p class="eyebrow">Return to the foundations</p><h2>The world behind the questions.</h2></div><a href="reading.html">All documents ↗</a></div><div class="reading-grid">{reading_cards}</div></section><section class="section-block"><div class="section-title"><div><p class="eyebrow">From the atlas</p><h2>Forms that changed the story.</h2></div><a href="atlas.html">Browse all {len(cards)} cards ↗</a></div><div class="featured-grid">{"".join(tile(s, "index.html", True) for s in featured)}</div></section><section class="project-note"><p class="eyebrow">An evolving programme</p><h2>Follow the evidence and the decisions.</h2><p>Read the project charter and decision record alongside the evidence. Card status, source dates and uncertainty are carried through from the Markdown.</p><a href="docs/charter.html">Read the project charter ↗</a></section>'''
     page("Research library", home, "index.html")
     credits = []
     seen = set()

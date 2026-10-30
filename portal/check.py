@@ -54,6 +54,10 @@ def main():
         if hashlib.sha256(path.read_bytes()).hexdigest() != source["sha256"]:
             errors.append(f"Stale content: {relative}")
         if not relative.endswith(".md"):
+            if path.suffix.lower() in {".png", ".jpg", ".jpeg", ".webp", ".svg", ".gif"}:
+                copied = OUT / relative
+                if not copied.is_file() or hashlib.sha256(copied.read_bytes()).hexdigest() != source["sha256"]:
+                    errors.append(f"Illustration differs from source: {relative}")
             continue
         output = OUT / ("docs/project-readme.html" if relative == "README.md" else str(Path(relative).with_suffix(".html")))
         if output not in pages:
@@ -94,7 +98,7 @@ def main():
             errors.append(f"Document missing from reading room: {relative}")
     for path in pages:
         relative = path.relative_to(OUT).as_posix()
-        if relative.startswith(("docs/", "taxa/", "data/")) and relative not in indexed:
+        if relative.startswith(("docs/", "taxa/", "data/", "models/")) and relative not in indexed:
             errors.append(f"Missing from search index: {relative}")
     assets = json.loads((ROOT / "portal/images.json").read_text())
     for key, image in assets.items():

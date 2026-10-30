@@ -70,6 +70,12 @@
   .reading-grid { display: grid; grid-template-columns: repeat(4, 1fr); border: 1px solid var(--line); }
   .reading-card { display: block; padding: 28px 24px; border-right: 1px solid var(--line); text-decoration: none; transition: background .18s; }
   .reading-card:last-child { border: 0; }
+  .current-work { padding-top: 42px; }
+  .current-grid { grid-template-columns: repeat(3, 1fr); background: #edf0e3; }
+  .document-group { margin-top: 22px; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+  .document-group summary { cursor: pointer; padding: 20px 0; font: 1.3rem/1.4 var(--serif); }
+  .document-group summary span { float: right; font: .7rem/1.8 var(--sans); color: var(--muted); }
+  .book-nav .eyebrow:not(:first-child) { margin-top: 24px; }
   .reading-card:hover { background: #ebeede; }
   .chapter { color: #9a8661; font: 1rem var(--serif); }
   .reading-card h2 { font-size: 1.55rem; margin: 21px 0 12px; }
@@ -228,6 +234,9 @@
     .reading-grid { grid-template-columns: repeat(2, 1fr); }
     .reading-card:nth-child(2) { border-right: 0; }
     .reading-card:nth-child(-n+2) { border-bottom: 1px solid var(--line); }
+    .current-grid { grid-template-columns: 1fr; }
+    .current-grid .reading-card { border-right: 0; border-bottom: 1px solid var(--line); }
+    .current-grid .reading-card:last-child { border: 0; }
     .reading-card p { min-height: 0; }
     .featured-grid { gap: 16px; }
     .tile-body { padding: 18px; }

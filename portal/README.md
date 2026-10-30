@@ -22,7 +22,9 @@ node --check portal/app.js
 
 `uv` installs the locked, script-local dependencies. No project-wide environment is needed.
 The build reads committed, tracked `docs/**/*.md`, `taxa/*.md`, selected `data/**/README.md`,
-the root README and `data/timescale.csv`. It refuses uncommitted source changes. Data `local/`,
+`models/f3/README.md`, the root README and `data/timescale.csv`. Referenced, tracked illustrations
+are copied with source checksums; untracked and excluded image paths fail the build. The build
+refuses uncommitted source changes. Data `local/`,
 `closed/` and `work/` README files are excluded; full texts and bulk datasets are not bundled.
 The generated site, search index and source checksums are in ignored `portal/dist/`.
 
@@ -64,6 +66,11 @@ fresh credential for later refreshes; do not persist credentials in this reposit
 ID is durable and must be reused, not recreated.
 
 ## Images and checks
+
+The homepage and reading room lead with F3, the trait pilot and the questions register, followed
+by the four foundation documents. Audits, data/implementation guides and operational notes are
+grouped in expandable lists. All included documents remain searchable; this is navigation
+curation, not a change to scientific priorities or source wording.
 
 `images.json` records each image's source, creator, licence, caption, kind, retrieval date and
 changes. Local copies are in `assets/`. Captioned images retain attribution and licence links;
