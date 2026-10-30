@@ -1,10 +1,13 @@
 """Open-but-unread works (the project's open_unread.tsv): fetch through the library's open routes, then from the stated URL.
 
-Usage (on deep-server, from _tools/; input is a copy of ~/papers/silurian_plants/library/open_unread.tsv in _tools/open_unread_input.tsv):
+Usage (on nectar, from /data/codex/silurian_plants/library/_tools/;
+input is a copy of the project's library/open_unread.tsv in _tools/open_unread_input.tsv):
   python3 library_open_unread.py seeds     # write seeds/open_unread.tsv (mapped OpenAlex ids, plus the Zenodo DOI)
   python3 library_open_unread.py direct    # for works with no held copy: BHL probes and the stated URL, with library.py's own
                                            # download, title check and manifest code (library.try_candidate); TDM routes stay off
   python3 library_open_unread.py report    # write _build/open_unread_results.tsv (merge with the Codex identity verdicts if present)
+
+The store is nectar:/data/codex/silurian_plants/library.
 
 Policy (from the project): open copies only; no BHL API key and no registration (public itempdf links only, once per item);
 a host that answers with a bot challenge, CAPTCHA, 403 or similar is recorded as `blocked` with host and status and is not

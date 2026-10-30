@@ -206,6 +206,24 @@ older requests remain parked separately.
 | EPRP library extract (426 works; 97 open texts local) | held | strong on methods, thin on palaeobotany |
 | Palaeobotany and palynology harvest, plus the project's cited DOIs (EPRP item 8) | phase 1 held; phase 2 (open texts) running | `data/external/library/`; closed works in `docs/closed-literature.csv` |
 
+Library store targets from 30 October 2026, under Barry's 29 October decision
+recorded in Nectar's `docs/decisions.md`:
+
+- Shared EPRP library: `nectar:/data/codex/paleodata/library` (the default in
+  `data/external/scripts/library_eprp_library.py`).
+- This project's harvest: `nectar:/data/codex/silurian_plants/library` (pass
+  `--store` explicitly to the shared engine; `library_open_unread.py` uses this
+  path directly). Run deployed helpers from the store's `_tools/` directory.
+
+Use the `nectar` SSH alias and preserve the store's manifests, provenance and
+read-only held PDFs. API credentials stay in the account's private `~/.config`
+paths, never in this repository. Deep's original library copies are retained
+until Barry approves their removal; their old locations are provenance, not
+the destination for new library work. Transfer verification is recorded in
+Nectar's machine and exchange notes. This changes library storage only; the
+historical raw-data and model-run locations elsewhere in this register remain
+unchanged.
+
 ## 10. Models and software
 
 Pointers: `data/eprp/pointers/`. TREED code: `data/eprp/context/deposits/`. COPSE variants and the

@@ -3,7 +3,7 @@
 seed to an OpenAlex record, grow outward through reference lists, and mirror
 open-access full texts.
 
-Usage:
+Usage (on nectar; deployed as library.py in the store's _tools directory):
   python3 library.py harvest REPO_ROOT
   python3 library.py resolve [--store DIR] [--recheck]
   python3 library.py expand [--store DIR] [--min-refs K] [--out DIR]
@@ -37,8 +37,9 @@ complete run) from OpenAlex. index merges duplicate records of one work and
 writes works.tsv, duplicates.tsv, unresolved.tsv, INDEX.md and by-question.md
 to --out.
 
-Needs Python 3.9+ and poppler's pdftotext and pdfinfo. The store lives on
-deep-server. No email or personal identifier is sent to any service. An OpenAlex
+Needs Python 3.9+ and poppler's pdftotext and pdfinfo. The shared store lives on
+nectar at /data/codex/paleodata/library; project runs pass
+--store /data/codex/silurian_plants/library. No email or personal identifier is sent to any service. An OpenAlex
 API key is used if OPENALEX_API_KEY or ~/.config/openalex/api_key is set; without
 one, OpenAlex allows each IP address about 1,000 credits a day.
 """
@@ -70,7 +71,7 @@ from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
 SEEDS = HERE / "seeds"
-DEFAULT_STORE = Path("/data/paleodata/library")
+DEFAULT_STORE = Path("/data/codex/paleodata/library")
 UA = "EPRP-library/0.2 (private research mirror; python-urllib)"
 csv.field_size_limit(sys.maxsize)
 
