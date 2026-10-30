@@ -132,6 +132,14 @@ files remain local and git-ignored. The inventory receipt hashes all three new
 evidence tables. `tools/units.py check` passes with seven candidate frames and
 276 inventory entries; the material/outcome counts are unchanged.
 
+The required full `tools/cards.py dois` run completed after the main commit:
+736 distinct DOI strings, 26 flags, all in four unchanged action/request/outreach
+documents. Twenty strings include captured closing backticks, one includes a URL
+query suffix, and five trigger citation-context/author-string checks. None is in
+this tranche's changed material. The audit directory is excluded by that scanner;
+the three journal identities used here were verified directly against Crossref.
+Those existing scanner/input issues were not changed as part of this source review.
+
 The Qusaiba scout read methods, full tables, enlarged charts and pivotal plates,
 and cross-checked table marks against PDF text coordinates. The Libya scout
 transcribed Appendix 1 independently without seeing the enclosure extraction;
