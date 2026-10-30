@@ -69,6 +69,7 @@ import argparse
 import csv
 import gzip
 import hashlib
+import io
 import json
 import math
 import platform
@@ -438,13 +439,36 @@ def sha256(path: Path) -> str:
     return hashlib.sha256(path.read_bytes()).hexdigest()
 
 
-def write_csv(path: Path, rows: list[dict]) -> None:
+def write_csv(path: Path, rows: list[dict], exact: bool = False) -> None:
+    """Floats to 6 significant figures, or exactly (repr) for replicate tables that stage 2 re-scores."""
     columns = list(dict.fromkeys(k for r in rows for k in r))
     with open(path, "w", newline="") as f:
         w = csv.DictWriter(f, columns, lineterminator="\n")
         w.writeheader()
         for r in rows:
-            w.writerow({k: (f"{v:.6g}" if isinstance(v, float) else v) for k, v in r.items()})
+            w.writerow({k: ((repr(v) if exact else f"{v:.6g}") if isinstance(v, float) else v) for k, v in r.items()})
+
+
+def read_reps(path: Path) -> list[dict]:
+    """A replicate table as replicate() returned it: booleans, numbers, None for an absent statistic, text otherwise.
+    Read through gzip when only the compressed copy remains."""
+    gz = path.with_name(path.name + ".gz")
+    text = path.read_text() if path.exists() else gzip.decompress(gz.read_bytes()).decode()
+
+    def value(k: str, v: str):
+        if v in ("True", "False"):
+            return v == "True"
+        if v == "":
+            return None if k.startswith("lr_") else "" if k == "error" or k.startswith("state") else math.nan
+        try:
+            return float(v)
+        except ValueError:
+            return v
+
+    rows = [{k: value(k, v) for k, v in r.items()} for r in csv.DictReader(io.StringIO(text))]
+    for r in rows:
+        r["rep"] = int(r["rep"])
+    return rows
 
 
 def code_hashes() -> dict[str, str]:
@@ -543,7 +567,9 @@ def evidence(tag: str) -> dict:
 
 def check_stage1(first: dict, receipt_sha: str, base: Path) -> None:
     """Stage 2 continues only a stage 1 that is complete, on the same receipt, code and seed, and whose verdicts
-    follow from its counts and its counts from its own summary and replicate files (named relative to base)."""
+    follow from its counts. Each count must agree with its summary, which must hold N1 replicates per acceptance
+    cell, and with its own replicate rows, re-scored here under the delivered-coverage rules (files named
+    relative to base and bound by hash)."""
     problems = []
     if first.get("stage") != 1:
         problems.append("it is not a stage-1 verdict file")
@@ -575,10 +601,17 @@ def check_stage1(first: dict, receipt_sha: str, base: Path) -> None:
             problems.append(f"its {k} file is missing or does not match its hash")
     if not problems:
         by_name = {r["name"]: r for r in csv.DictReader(open(base / ev_["summary"]))}
-        for v in q:
-            s = by_name.get(v["cell"], {})
-            if not s.get(v["quantity"]) or round(float(s[v["quantity"]]) * int(s["n_rep"])) != v["k1"]:
-                problems.append(f"{v['cell']} {v['quantity']}: count {v['k1']} disagrees with its summary")
+        rows = read_reps(base / ev_["reps"])
+        for c in [c for c in CELLS if acceptance_quantities(c)]:
+            s = by_name.get(c["name"], {})
+            mine = [r for r in rows if r["cell"] == c["name"]]
+            if s.get("n_rep") != str(N1) or sorted(r["rep"] for r in mine) != list(range(N1)):
+                problems.append(f"{c['name']}: its summary or replicate rows are not replicates 0..{N1 - 1}, once each")
+                continue
+            again = summarise(c, mine)
+            for v in [v for v in q if v["cell"] == c["name"]]:
+                if round(float(s[v["quantity"]]) * N1) != v["k1"] or round(again[v["quantity"]] * N1) != v["k1"]:
+                    problems.append(f"{c['name']} {v['quantity']}: count {v['k1']} disagrees with its summary or its replicates")
     if problems:
         raise SystemExit("stage 1 refused: " + "; ".join(problems))
 
@@ -617,7 +650,7 @@ def main() -> None:
     summary = [summarise(c, [r for r in rows if r["cell"] == c["name"]]) for c in cells]
     if rows:
         write_csv(OUT / f"validation_{args.tag}.csv", summary)
-        write_csv(OUT / f"validation_{args.tag}_reps.csv", rows)
+        write_csv(OUT / f"validation_{args.tag}_reps.csv", rows, exact=True)
     meta = dict(
         phase=args.phase, root_seed=root, replicate_seed="SeedSequence(root_seed, spawn_key=(cell id, replicate)); child 0 simulates",
         crit_shift=shift, receipt=str(args.receipt) if args.receipt else None, receipt_sha256=receipt_sha,

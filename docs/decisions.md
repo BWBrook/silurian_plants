@@ -3,6 +3,34 @@
 Dated record of decisions that shape the programme. Newest first. Say who decided, and quote
 Barry exactly (with source) or label a paraphrase.
 
+## 2026-10-30: the F3 stage-1 evidence re-scored; pilot round 2; M3 record identity audited (Claude)
+
+- **Harness** (Claude Opus 5.5, to Codex's remaining V1 gap, Correspondence 2569):
+  - stage 2 now reads the stage-1 replicate table and requires replicates 0..N1−1 once each per acceptance cell, and a summary over N1;
+  - it re-scores every count from those rows under the delivered-coverage rules;
+  - replicate tables are written with exact floats;
+  - the test fixture is a real one-cell stage 1.
+  - 163 tests pass; the smoke run's stage 2 re-scored and accepted its stage 1.
+- **Specimen corrections** (Codex review, applied): the *Velatitetras* producer's C2 is `disputed`; *Aglaophyton*'s C3 without C4 is composite; branched tetrad producers are not tips in Hooper et al.'s trees; claims of first and oldest are restricted to the audited set; every row has an archived quote.
+- **Round 2:**
+  - `data/pilot/specimens.csv` reaches 524 rows from 30 primary sources, every quote verified.
+  - `data/pilot/combinations.csv` names each combination's member rows and evidence level.
+  - Within the audited set, trilete spores on branched plants with several sporangia run from the Sheinwoodian through the Přídolí (*C. barrandei*, *C. bohemica*, Lang's Perton *C. pertoni*) without tracheids shown on the same plants.
+  - Tracheids on a fertile plant appear only in the Lochkovian.
+  - *Nothia* gives C1 + C3 without C4 (composite).
+  - *Horneophyton*'s C4 carries three published readings.
+- **M3 record identity** (`docs/audits/2026-10-30-m3-record-identity.md`): contested.
+  - The Homerian specimens show branching with terminal expansions that are assumed to be sporangia, with no spores and no anatomy. Their authors allowed a rhyniophytoid reading.
+  - The calibration's tracheids, stomata and sterome are transferred from Lochkovian *C. pertoni*, whose placement is disputed (stem eutracheophyte or lycophyte sister).
+  - *C. barrandei* predates the 431.2 Ma maximum.
+- **M2's basis:** a single probable trilete spore at 48.2 m in Borenshult-1, one of the 34 depths in Codex's new frame, so F3's E1 test bears directly on M2's absence premise.
+- **SCM:** Codex found that the deposit saves no mapped histories, so persistence stays unresolved. A new stochastic mapping would be a new analysis (consult trigger).
+- **Structural review (Q1, Q2, Q4, Q9):** the evidence levels and combination table carried a second round without schema change. Exposed:
+  - M3's basis is a transfer, and its node (total group or crown) depends on a disputed placement;
+  - M2's basis sits inside the E1 frame;
+  - P2 gains a lead (possible cryptospory in a probable tracheophyte) but no link.
+  - No question's status changed.
+
 ## 2026-10-30: MacBook literature return and closure of outstanding acquisition (Barry; integrated by Codex)
 
 - **Authority:** Barry asked Codex to pull the entire MacBook folder and update this repository, then said: "The outstanding items are just going to have to be flagged as unobtainable." The twelve remaining focal entries are now `unobtainable`, with no automatic access retries or request actions queued unless reopened by Barry. This is an acquisition disposition, not a claim that no copy exists anywhere.

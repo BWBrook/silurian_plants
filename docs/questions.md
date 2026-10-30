@@ -33,6 +33,25 @@ The register is updated at each loop's close. Started 2026-10-28 by Claude Opus 
 | Q9 | Does the Hooper et al. (2026) recalibration survive alternative maxima and placements of the eophytes? | phylogeny (clocks) | parked | the share of the 55 Myr shift owed to each calibration choice | alignment, calibration tables, prior/posterior outputs are held (`data/external/deposits/` and git-ignored `data/external/local/deposits/`); their version correspondence is not yet established. Hooper deposited input specifies 1% tails while the article describes 2.5% (Codex, 2026-10-28; review F3-R1). The bounded check reproduces the rounded node-184 summary but does not link the output to the control file. | Bounded check complete: all 5,001 saved rows and independently clade-matched output-tree HPDs recorded in `data/q9/hooper2026-provenance/` and `docs/audits/2026-10-29-q9-provenance-check.md`. Preliminary double burn-in deletion corrected; Board 2490–2494 is superseded by the final handoff. A controlled comparison of the deposited 1% and described 2.5% specifications is the next proposed diagnostic; it can quantify sensitivity but cannot prove historical provenance. No full clock reanalysis run |
 | Q10 | How much did early vegetation weather, bury carbon and raise O2? | simulation | parked | which parameters dominate, with each input marked as observed or assumed (primer §3, §8 questions 1 and 6) | productivity, P release and fire-threshold inputs; charcoal record | F5, later |
 
+### Pilot round 2 and M3 record identity, 2026-10-30 (Q1, Q2, Q4, Q9)
+
+Claude closed Codex's last V1 gap (stage 2 re-scores the stage-1 replicate rows; 163 tests) and
+applied its specimen corrections.
+
+The pilot's specimen table now holds 524 rows from 30 sources, and `data/pilot/combinations.csv`
+states every combination's members.
+- **Q4:** trilete spores on branched plants run from the Sheinwoodian through the Přídolí without
+  tracheids shown on those plants. A tracheid-bearing fertile plant appears only in the Lochkovian.
+  This is the order of the preservation windows, not acquisition order.
+- **Q2/Q9:** M3's Homerian basis is a transfer from Lochkovian anatomy, and its node is ambiguous
+  because the *C. pertoni* placements disagree (`audits/2026-10-30-m3-record-identity.md`). M2's
+  basis is one probable spore at Borenshult-1 48.2 m, inside the new E1 frame.
+
+**Next:**
+- F3's E1 test on the Borenshult frame, once Codex's event-by-sample mapping exists.
+- Re-examination of the Irish TCD specimens: an expert flag, Barry's decision.
+- *Horneophyton*'s C4 stays three-way disputed.
+
 ### Independent frame and pilot review, 2026-10-30 (Q1, Q2, Q4, Q5)
 
 The next audit (`audits/2026-10-30-frame-and-pilot-review.md`) adds a complete

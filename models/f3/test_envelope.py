@@ -7,6 +7,7 @@ ranges and a closed form, an enumeration or an independent quadrature is the ref
 fixed seeds.
 """
 
+import functools
 import gzip
 import itertools
 import math
@@ -923,25 +924,44 @@ def test_stage_two_reruns_only_borderline_cells_and_pools_their_counts():
     assert pooled[1:-1] == verdicts[1:-1] and val.grid_result(pooled) == "rejected" and val.grid_result(pooled[:-1]) == "incomplete"
 
 
-def _stage1(tmp_path, monkeypatch):
-    """A stage-1 verdict file over the whole grid, with its summary and replicate files written beside it."""
-    monkeypatch.setattr(val, "OUT", tmp_path)
-    cells = [c for c in val.CELLS if c["kind"] == "acceptance"]
-    summary = [dict(name=c["name"], n_rep=1000, **{q: 1.0 for q, _, _ in val.acceptance_quantities(c)}) for c in cells]
-    summary[0][val.acceptance_quantities(cells[0])[0][0]] = 0.94
+@functools.lru_cache(maxsize=1)
+def _a4_replicates(n: int = 3) -> tuple:
+    a4 = next(c for c in val.CELLS if c["name"] == "A4")
+    return tuple(val.replicate((a4, j, val.ROOT_SEEDS["accept"], 0.0)) for j in range(n))
+
+
+def _write_stage1(tmp_path, rows: list[dict], summary: list[dict]) -> dict:
     val.write_csv(tmp_path / "validation_acc1.csv", summary)
-    (tmp_path / "validation_acc1_reps.csv").write_text("cell,rep\nA1,0\n")
-    verdicts = val.stage1_verdicts(cells, summary)
-    return dict(stage=1, receipt_sha256="r", sha256=val.code_hashes(), root_seed=val.ROOT_SEEDS["accept"], start=0, reps=val.N1,
-                result=val.grid_result(verdicts), evidence=val.evidence("acc1"), quantities=verdicts)
+    val.write_csv(tmp_path / "validation_acc1_reps.csv", rows, exact=True)
+    return val.evidence("acc1")
+
+
+def _stage1(tmp_path, monkeypatch):
+    """A real stage 1 on a one-cell grid (A4) with N1 = 3: replicate rows, their summary and the verdict file."""
+    a4 = next(c for c in val.CELLS if c["name"] == "A4")
+    monkeypatch.setattr(val, "OUT", tmp_path)
+    monkeypatch.setattr(val, "CELLS", [a4])
+    monkeypatch.setattr(val, "N1", 3)
+    rows = [dict(r) for r in _a4_replicates()]
+    summary = [val.summarise(a4, rows)]
+    verdicts = val.stage1_verdicts([a4], summary)
+    return dict(stage=1, receipt_sha256="r", sha256=val.code_hashes(), root_seed=val.ROOT_SEEDS["accept"], start=0, reps=3,
+                result=val.grid_result(verdicts), evidence=_write_stage1(tmp_path, rows, summary), quantities=verdicts)
+
+
+def test_replicate_tables_round_trip_exactly_for_rescoring(tmp_path):
+    rows = [dict(r) for r in _a4_replicates()]
+    val.write_csv(tmp_path / "reps.csv", rows, exact=True)
+    back = val.read_reps(tmp_path / "reps.csv")
+    a4 = next(c for c in val.CELLS if c["name"] == "A4")
+    assert val.summarise(a4, back) == pytest.approx(val.summarise(a4, rows), nan_ok=True)
 
 
 def test_stage_two_refuses_a_stage_one_from_another_receipt_code_seed_or_scope(tmp_path, monkeypatch):
     first = _stage1(tmp_path, monkeypatch)
-    assert first["result"] == "stage 2 needed"
     val.check_stage1(first, "r", tmp_path)
     for change in (dict(receipt_sha256="x"), dict(sha256={}), dict(start=1000), dict(reps=5), dict(root_seed=val.ROOT_SEEDS["calibrate"]),
-                   dict(result="accepted"), dict(stage=2), dict(evidence={})):
+                   dict(result="rejected"), dict(stage=2), dict(evidence={})):
         with pytest.raises(SystemExit):
             val.check_stage1(first | change, "r", tmp_path)
 
@@ -949,19 +969,36 @@ def test_stage_two_refuses_a_stage_one_from_another_receipt_code_seed_or_scope(t
 def test_stage_two_derives_verdicts_from_counts_and_counts_from_the_stage_one_evidence(tmp_path, monkeypatch):
     first = _stage1(tmp_path, monkeypatch)
     q = first["quantities"]
-    relabel = lambda v, k: dict(v, k1=k, stage1=val.stage1(k), final=val.stage1(k) if val.stage1(k) != "borderline" else "pending")
+    relabel = lambda v, k: dict(v, k1=k, stage1=val.stage1(k, 3), final=val.stage1(k, 3) if val.stage1(k, 3) != "borderline" else "pending")
+    k = q[1]["k1"]
     for quantities in (
-        q[:1] + [dict(q[1], k1=0)] + q[2:],  # a count changed, its pass labels kept
-        q[:1] + [relabel(q[1], 0)] + q[2:],  # a consistent relabel that its summary contradicts
-        q[:1] + [dict(q[1], k1=1000.0)] + q[2:], q[:1] + [dict(q[1], k1=1001)] + q[2:],  # not an integer count in range
+        q[:1] + [dict(q[1], k1=k - 1)] + q[2:],  # a count changed, its labels kept
+        q[:1] + [relabel(q[1], k - 1)] + q[2:],  # a consistent relabel that its summary and replicates contradict
+        q[:1] + [dict(q[1], k1=float(k))] + q[2:], q[:1] + [dict(q[1], k1=4)] + q[2:],  # not an integer count in range
         q[:-1], q + q[-1:],  # a quantity missing or repeated
-        q[:1] + [dict(q[1], k2=3, pooled=1003)] + q[2:],  # stage-2 fields already filled
+        q[:1] + [dict(q[1], k2=3, pooled=k + 3)] + q[2:],  # stage-2 fields already filled
     ):
         with pytest.raises(SystemExit):
             val.check_stage1(first | dict(quantities=quantities, result=val.grid_result(quantities)), "r", tmp_path)
-    (tmp_path / "validation_acc1.csv").write_text((tmp_path / "validation_acc1.csv").read_text().replace("0.94", "0.95"))
+    (tmp_path / "validation_acc1.csv").write_text((tmp_path / "validation_acc1.csv").read_text() + "\n")
     with pytest.raises(SystemExit):
         val.check_stage1(first, "r", tmp_path)  # the summary no longer matches its hash
+
+
+def test_stage_two_rescores_the_stage_one_replicates(tmp_path, monkeypatch):
+    first = _stage1(tmp_path, monkeypatch)
+    a4 = val.CELLS[0]
+    rows = [dict(r) for r in _a4_replicates()]
+    summary = val.summarise(a4, rows)
+    for bad_rows, bad_summary in (
+        (rows[:-1], summary),  # a replicate missing
+        (rows + rows[-1:], summary),  # a replicate repeated
+        ([dict(rows[0], error="boom")] + rows[1:], summary),  # a failed replicate behind an all-success summary
+        (rows, dict(summary, n_rep=6)),  # a summary over the wrong number of replicates
+    ):
+        evidence = _write_stage1(tmp_path, bad_rows, [bad_summary])
+        with pytest.raises(SystemExit):
+            val.check_stage1(first | dict(evidence=evidence), "r", tmp_path)
 
 
 def test_stage_one_evidence_may_be_read_through_its_compressed_copy(tmp_path, monkeypatch):

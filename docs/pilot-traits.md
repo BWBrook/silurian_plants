@@ -3,7 +3,8 @@
 Adopted design, 29 October 2026. Claude Opus 5.5 drafted it. Codex reviewed it and supported the
 framing, and its amendments L1–L5 and A1 are integrated
 (`audits/2026-10-29-pilot-and-contract-review.md`). Two first results are below:
-published crown states, and specimen combinations from the held sources.
+published crown states, and specimen combinations from the held sources (with an M3
+record-identity audit).
 
 **Decisions behind it.**
 - **Scope** (Barry, Codex chat, 2026-10-29): "Excellent, we're aligned." This accepted F3 plus a
@@ -124,49 +125,72 @@ Hooper et al.'s main text (read 2026-10-30) adds three points.
 - **Persistence.** They infer that liverworts lost the aperture independently. Persistence of
   trilete production from the embryophyte crown must therefore run through another lineage. The
   tracheophyte stem is trilete at both of its ends in every output. That is consistent with
-  persistence but does not establish it, because the branch histories of the stochastic maps were
-  not extracted. Persistence stays unresolved, and those maps would be the deciding observation.
+  persistence but does not establish it. Codex found that the deposit saves no mapped histories,
+  only node summaries (`data/pilot/hooper2026-asr/scm_workspace_audit.json`). Persistence stays
+  unresolved. A new stochastic mapping would be a new analysis, a consult trigger below.
 - **One fossil, two calibrations.** The Homerian *Cooksonia* cf. *pertoni* sets both the
   crown-embryophyte minimum (426.9 Ma) and the crown-tracheophyte maximum (431.2 Ma) ("Fossil
   calibrations").
 
 ## Second result: specimen combinations (O, held sources, 2026-10-30)
 
-From `data/pilot/specimens.csv`: 283 rows from 17 primary sources, every quote checked against
-its text, and the decisive rows adjudicated by Claude.
+From `data/pilot/specimens.csv`: 524 rows from 30 primary sources, every quote checked against its
+text, and the decisive rows adjudicated by Claude. Codex reviewed the first 283 rows
+(`audits/2026-10-30-frame-and-pilot-review.md`). `data/pilot/combinations.csv` names each
+combination's member rows and evidence level, so direct single-character rows cannot become an
+unstated direct joint claim.
 
-| Combination | Best evidence | Level | Age as stated |
+"Oldest", "first" and "only" below mean within this audited set, not across the record.
+
+| Combination | Taxon and specimens | Level | Stage |
 |---|---|---|---|
-| C1 + C3 | *C. barrandei* holotype D552a,b (Libertín et al. 2018) | direct | middle Sheinwoodian, by correlation |
-| C1 + C3 | *C. pertoni* subsp. *apiculispora* NMW 94.60G.14 (Habgood et al. 2002) | direct; C4 not examined on it | Lochkovian |
-| C1 + C3 + C4 | *Tortilicaulis offaeus* HD743/01 (Morris et al. 2024) | direct; tracheid ultrastructure unresolved | early to middle Lochkovian |
-| C4 alone | the oldest in situ tracheids, Capel Horeb (Edwards and Davies 1976) | direct, on an isolated unbranched axis; no sporangium attached | lower Whitcliffian (late Ludlow) |
-| C2 + C3 | *Velatitetras*-producing plant NMW96.11G.3 (Edwards et al. 1999) | direct. C2 is contested: the authors favour permanent tetrads but list immature tetrads of trilete producers among the alternatives | early Lochkovian |
-| C2 + C3 | *Ficoiditheca aenigma* (Morris et al. 2012) | composite: C3 on V.68228(1) and V.68258(1), C2 shown on other specimens | early Lochkovian |
-| C3 without C4 | *Aglaophyton major* (D.S. Edwards 1986) | direct: connected sporangial pairs; conducting cells with no differential thickening (SEM, NMW 85.49G.5). Its C1 is a transfer | Siegenian/Emsian (Rhynie) |
-| C4 disputed | *Horneophyton lignieri* | tracheids (Cascales-Miñana et al. 2019, MGLame-18) against transfer-cell-like cells (Kenrick and Long 2025) | Rhynie |
+| C1 + C3 | *C. barrandei* D552a,b | direct | Sheinwoodian, by correlation |
+| C3 | Irish *Cooksonia* cf. *pertoni*, TCD 22946d (expansions assumed to be sporangia; C1 and C4 unknown) | direct | Homerian |
+| C4 alone | Capel Horeb axis, unbranched, nothing attached | direct | Ludfordian |
+| C1 + C3 | *C. bohemica* JE-Sch0260A,B; Lang's *C. pertoni* 124 Z b and 124 X (Perton) | direct | Přídolí |
+| C1 + C3 | *C. pertoni* subsp. *apiculispora* NMW 94.60G.14 | direct | Lochkovian |
+| C1 + C3 + C4 | *C. pertoni*: C4 on UF597/UF1877, C1 + C3 on NMW 94.60G.14 | composite | Lochkovian |
+| C1 + C3 + C4 | *Tortilicaulis offaeus* HD743/01 (tracheid ultrastructure unresolved) | direct | Lochkovian |
+| C2 + C3 | *Velatitetras* producer NMW96.11G.3. C2 is **disputed**: the authors list immature tetrads of a trilete producer as an alternative, and judge the plant probably a tracheophyte (pp. 141–143, 149) | direct | Lochkovian |
+| C2 + C3 | *Ficoiditheca aenigma* | composite | Lochkovian |
+| C2 without C1 | *Lenticulatheca* spp. (C3 not shown), one of Hooper et al.'s eophyte tips | direct | Lochkovian |
+| C3 without C4 | *Aglaophyton major*: pairs on Pb 4601 peels, C4 absence on NMW 85.49G.5 | composite | Pragian–Emsian |
+| C1 + C3 without C4 | *Nothia aphylla*: eight sporangia on one dichotomy (91/1-366); no differential thickening in aerial axes (pooled) and rhizome (P 3032) | composite | Pragian–Emsian |
+| C1 + C3, C4 disputed | *Horneophyton lignieri*: trilete monad in situ (Eggert 1974); tracheids (Kerp 2017; Cascales-Miñana et al. 2019) against transfer-cell-like cells (Kenrick and Long 2025) | composite | Pragian–Emsian |
 
 What this does to the mappings (I):
-- **P3b, proxy specificity.**
-  - Branched sporophytes bearing several sporangia occur in plants without tracheids: *Aglaophyton*
-    directly.
-  - Probably also in cryptospore producers: the *Velatitetras* plant, with C2 contested, and
-    *Ficoiditheca* as a composite.
-  - Under the eophyte-as-stem-embryophyte placement, C3 is therefore not specific to total-group
-    Tracheophyta. Under the stem-tracheophyte placement it can be.
-  - All these combinations come from the Lochkovian charcoalified mesofossils and the Pragian
-    Rhynie chert. They show what existed then, not whether Wenlock C3 bodies were tracheophytes.
-- **M3 record identity.** The oldest direct C1 + C3 plant (*C. barrandei*, Sheinwoodian) has no
-  anatomy. Assigning it, or the Homerian cf. *pertoni*, to total-group Tracheophyta therefore
-  rests on transfer from Lochkovian *C. pertoni* (composite C1 + C3 + C4) or on placement.
-  Under Hooper et al.'s reading, trilete spores mark total-group Embryophyta, not tracheophytes.
-- **Observed order** (bodies, direct evidence only):
-  1. C1 + C3 by the middle Sheinwoodian;
-  2. C4, on an unattached axis, by the late Ludlow;
-  3. C1 + C3 + C4 on one plant, and C2 + C3, only from the early Lochkovian.
+- **Observed order**, within the audited set and by direct evidence:
+  - trilete spores on branched plants with several sporangia from the Sheinwoodian through the
+    Přídolí, with no tracheids demonstrated on the same plants;
+  - tracheids by the late Ludlow, on an axis with nothing attached;
+  - trilete spores, several sporangia and tracheids on one fertile plant only in the Lochkovian.
 
-  The Lochkovian clustering coincides with the Welsh Borderland mesofossil window. It is
-  observed order under a preservation window, not acquisition order (rule 4).
+  This is the order of preservation windows (Silurian compressions, then charcoalified Lochkovian
+  mesofossils), not acquisition order (rule 4).
+- **P3b, proxy specificity.**
+  - C3 without C4 occurs in *Nothia* and *Aglaophyton*, both composites.
+  - The branched tetrad producers (*Velatitetras*, *Ficoiditheca*) are not tips in Hooper et al.'s
+    trees. Carrying the eophyte placements over to them needs a further assumption, and Edwards et
+    al. (1999) judge the *Velatitetras* plant probably a tracheophyte.
+  - So the audited set does not show C3 outside total-group Tracheophyta. It shows only that C3 is
+    not a crown-tracheophyte (tracheid-bearing) character.
+- **P2, persistence (new).** If the *Velatitetras* tetrads are permanent, cryptospore production
+  occurs in a probable tracheophyte in the Lochkovian. That would be cryptospory within the crown
+  under Hooper et al.'s reading: the secondary cryptospory `primer.md` §5.3 allows. With C2 disputed,
+  this is a lead, not a link.
+- **M3 record identity: contested** (`audits/2026-10-30-m3-record-identity.md`).
+  - The Homerian specimens show branching with terminal expansions, with no spores and no anatomy.
+    Their original authors allowed a reading without conducting tissue.
+  - The calibration's tracheids, stomata and sterome are transferred from Lochkovian *C. pertoni*.
+  - *C. pertoni* itself is placed either on the eutracheophyte stem (outside the crown) or as sister
+    to the lycophytes (inside it, as in Hooper et al.'s own trees).
+  - *C. barrandei* is older than the 431.2 Ma maximum.
+- **M2's fossil basis** (Hooper SI Table 4, C_4). One probable trilete spore (*Chelinospora*? sp.) at
+  48.2 m in the Borenshult-1 core, lower Sandbian, sets the 459.1 Ma maximum. That core is now a
+  complete 34-sample frame, and 48.2 m is one of its inventoried depths (Codex, Correspondence
+  2570; `data/units/frame_samples.csv`). F3's E1 test on it therefore bears directly
+  on the absence premise behind M2. Hooper et al.'s own justification ("first appearance must
+  pre-date the origin of crown-Embryophyta") states that premise without testing it.
 - **Q5.** Morris et al. (2024) describe the late Ludlow tracheids as in branching stems terminated
   by *Cooksonia*-type sporangia. Edwards and Davies (1976) isolated them from an unbranched axis
   with nothing attached. The cards repeated the later wording and are corrected.
