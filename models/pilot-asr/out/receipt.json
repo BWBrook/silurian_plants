@@ -1,0 +1,24 @@
+{
+  "zip_sha256": "9a3baeff1fd52d60c73d0b3d106211e533b0591b1728a403898c44843f6f0155",
+  "seeds": {
+    "ext X21": 20261031,
+    "ext X26": 20261032,
+    "eo X21": 20261033,
+    "eo X26": 20261034,
+    "zyg X21": 20261035,
+    "zyg X26": 20261036
+  },
+  "nsim": 1000,
+  "myr_per_unit": 100,
+  "tau_ma": 452.8,
+  "r": "R version 4.6.1 (2026-06-24)",
+  "ape": "5.8.1",
+  "phytools": "2.5.2",
+  "reproduction_pass": 156,
+  "reproduction_rows": 156,
+  "outputs": {
+    "out/reproduction.csv": "fb8937a38c09b65a2af1e04c3e91092aadcd527d2990c9d2884c51e83675e81e",
+    "out/persistence.csv": "4e16d3a04b580c7e681e2cb441dc0cebaad9863f65b1c4a0985dd7c284b24351",
+    "out/retention.csv": "96a4692d5bfa6f1f84b75d452911a08c837754d37e73d1aa787940bdad68c298"
+  }
+}

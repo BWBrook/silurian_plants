@@ -103,7 +103,8 @@ What this gives the mappings, under these published models only:
   - The dispersal unit is contested by one model, which does not reconstruct trilete *monads*.
   - The joint reading of a dyad with a trilete aperture is unresolved. The two marginals were
     estimated separately and are not multiplied (A1).
-  - Persistence and origin timing are **unresolved**.
+  - Persistence: **supported under these models** (third result, below). Origin timing is
+    **unresolved**.
 - **P2, crown state: contested.** Eleven outputs reconstruct a monad. One reconstructs a dyad.
   - Hilate apertures take at most 0.229.
   - Under most published outputs, M1's node implication would need persistence of cryptospory
@@ -126,8 +127,8 @@ Hooper et al.'s main text (read 2026-10-30) adds three points.
   trilete production from the embryophyte crown must therefore run through another lineage. The
   tracheophyte stem is trilete at both of its ends in every output. That is consistent with
   persistence but does not establish it. Codex found that the deposit saves no mapped histories,
-  only node summaries (`data/pilot/hooper2026-asr/scm_workspace_audit.json`). Persistence stays
-  unresolved. A new stochastic mapping would be a new analysis, a consult trigger below.
+  only node summaries (`data/pilot/hooper2026-asr/scm_workspace_audit.json`). With Barry's
+  authorisation, Claude re-ran their mapping to read the histories (third result, below).
 - **One fossil, two calibrations.** The Homerian *Cooksonia* cf. *pertoni* sets both the
   crown-embryophyte minimum (426.9 Ma) and the crown-tracheophyte maximum (431.2 Ma) ("Fossil
   calibrations").
@@ -194,6 +195,28 @@ What this does to the mappings (I):
 - **Q5.** Morris et al. (2024) describe the late Ludlow tracheids as in branching stems terminated
   by *Cooksonia*-type sporangia. Edwards and Davies (1976) isolated them from an unbranched axis
   with nothing attached. The cards repeated the later wording and are corrected.
+
+## Third result: persistence under Hooper et al.'s own models (2026-10-31)
+
+`models/pilot-asr/` re-runs Hooper et al.'s stochastic mapping and fitMk under a pinned renv.
+- **Reproduction:** 156 of 156 deposited node values are reproduced within the pre-declared
+  tolerances. Stochastic-mapping values differ by at most 0.036; ER and ARD reproduce exactly.
+- **Persistence on the maps.** Given a trilete crown ancestor, the aperture stays trilete along
+  the whole path to crown Tracheophyta in 98.4–100% of maps on the three trees. On the
+  liverwort path it does so in only about a third.
+- **Retention, single lineage.**
+  - Fitted rates out of the trilete state are 0.0016–0.0043 per Myr.
+  - A lineage making trilete spores at *T* keeps doing so without interruption to the base of
+    the Katian with probability 0.93–0.97 for *T* = 470 Ma, and 0.76–0.90 for *T* = 515.5 Ma.
+    These are ER and ARD point estimates; the widest posterior 95% interval reaches 0.52.
+- **Correction to the design's premise.** The deposited ancestral-state timetrees put crown
+  Embryophyta at 508 Ma, from the earlier Harris and Clark dates, not at Hooper et al.'s
+  recalibrated 457–450 Ma. The map-based persistence is therefore conditional on those older dates,
+  not on M2.
+
+**Effect.** P1's persistence link is now **supported under these models**. Every M2 node statement
+carries R(L) as an explicit, model-conditional factor. M1's cryptospore persistence is not
+assessed: under most outputs the crown is not cryptosporous.
 
 ## Characters and coding rules
 
@@ -288,7 +311,8 @@ interval whose units yield cryptospores, the positive control.
 
 The crown is then younger than *T* if three things hold:
 - P1's crown state (supported for the aperture under every published output above);
-- P1's persistence, which is unresolved and so carried as a declared assumption;
+- P1's persistence, supported under Hooper et al.'s models, with retention R(L) carried as an
+  explicit factor (third result);
 - the independently justified rarity restriction.
 
 Cryptospore producers in units older than *T* then predate the crown. They are stem
@@ -321,9 +345,10 @@ that as their rarity needs the detection assumption D1.
 
 ## Consult triggers
 
-- **Barry decides** if the pilot needs re-estimated ancestral states on altered trees or matrices,
-  a joint-state model, or any tree inference. That enlarges the agreed scope
-  (`innovation-scope.md`).
+- **Re-estimating ancestral states is authorised** (Barry, 2026-10-30: "widened scope is fine,
+  proceed with the new ancestral-state analysis as/when appropriate"). Claude and Codex judge
+  further scientific scope themselves and report it. Joint origin inference (level 3) and new tree
+  inference still get their own design before they start.
 - **Flag, do not wait,** where a specimen reading turns on an expert's judgement (Horneophyton's
   conducting cells; the Homerian material). Sending is Barry's decision.
 - **Report unresolved, not escalate,** if no published placement separates the readings.

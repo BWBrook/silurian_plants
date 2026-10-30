@@ -3,6 +3,48 @@
 Dated record of decisions that shape the programme. Newest first. Say who decided, and quote
 Barry exactly (with source) or label a paraphrase.
 
+## 2026-10-31: Borenshult event map and structural review (Codex)
+
+- **Completed evidence:** 34 Borenshult physical samples now join the unit/outcome interface,
+  giving 49 blocks/294 outcomes in total. Literal source reports, named reading choices,
+  non-target productivity and separate age correlations are traceable. Eleven study-complement
+  non-detections use the explicit 34/23 source statement; 16 E1 chart blanks remain
+  `not_reported` with their reporting scope. No binary input or empirical fit is released.
+- **Reading retained:** seven E1 reports remain unresolved in main and detected in inclusive/
+  outlier. This leaves no positive E1 reference observation in Borenshult under main. The
+  younger Skagen reports need specific adjudication because Hooper's stated concern names
+  Dalby; no identification was silently changed. E2 retains two disputed Darriwilian reports.
+- **Structural review:** the two-table interface still serves Q1/Q2. Two source-specific
+  evidence tables preserve chart reports and conflicting age correlations without forcing
+  either into a binary likelihood or a probability density. The exposed assumptions are
+  positive reference support, cross-facies detectability, first-appearance selection,
+  shared chronology and the trait-persistence/node mapping. These sharpen Q1's next design,
+  not its substantive answer. Source gaps do not stop this mapping.
+- **Review handoff:** core V1 repair accepted; strict CSV types remain a bounded correction.
+  Expanded pilot links pass selected primary-source checks, with crown/secondary cryptospory,
+  Horneophyton C3 transfer and review-scope wording returned to Claude (2628–2629). His
+  separate ancestral-state work remains his. Full evidence and next tranche:
+  `audits/2026-10-30-borenshult-event-map.md`.
+
+## 2026-10-31: trilete persistence under Hooper et al.'s models; R under renv (Claude)
+
+- **Analysis** (Claude Opus 5.5, under Barry's 2026-10-30 authorisation; `models/pilot-asr/`, pre-declared before the run):
+  - **Reproduction:** Hooper et al.'s phytools stochastic mapping and fitMk are reproduced for X21 and X26 on all three trees, 156 of 156 node values within tolerance.
+  - **Persistence:** given a trilete crown ancestor, the aperture persists along the whole path to crown Tracheophyta in 98.4–100% of maps.
+  - **Retention:** a single lineage's probability of keeping trilete production from *T* to 452.8 Ma, under the fitted rates of 0.0016–0.0043 per Myr, is 0.93–0.97 at 470 Ma and 0.76–0.90 at 515.5 Ma (point estimates).
+  - **Status:** P1's persistence link is supported under these models.
+- **Correction recorded with the result:** the deposited timetrees date crown Embryophyta at 508 Ma (Harris and Clark dates), not at Hooper et al.'s recalibration, so the design's premise that they embed M2 was wrong. The estimands are unaffected.
+- **Tooling** (Claude, endorsed by Barry mid-run: "feel free to set up a pinned renv if you deem appropriate"): R analyses get a project-local renv per analysis directory, with `renv.lock` committed and libraries ignored. `models/pilot-asr/` pins R 4.6.1, ape 5.8-1 and phytools 2.5-2.
+- **Structural review (Q1, Q4):** persistence was the one link no published output could supply; a bounded re-run of the authors' own analysis settled it under their models without new tree inference. Exposed: every node statement now multiplies an F3 verdict by a model-conditional retention factor, and that factor is tree-averaged (dominated by the liverwort loss). M1's cryptospore persistence is not assessed. No question's status changed.
+
+## 2026-10-30: wider scope authorised for a new ancestral-state analysis (Barry)
+
+- **Decision** (Barry, Claude chat, 2026-10-30), answering Claude's note that settling persistence would need a new ancestral-state analysis and so widen the agreed scope: "widened scope is fine, proceed with the new ancestral-state analysis as/when appropriate. You two have my imprimatur to act as you think best, scientifically. I'm your collaborator, not your overseer, in this venture!"
+- **Effect:**
+  - This removes the pilot's consult trigger for re-estimating ancestral states (`docs/pilot-traits.md`).
+  - It amends `innovation-scope.md`'s exclusion of re-estimation for this purpose. Joint origin inference (level 3) still needs its own design.
+  - Claude claims the first such analysis on the Board: reproduce Hooper et al.'s stochastic mapping and read the branch histories that bear on persistence.
+
 ## 2026-10-30: the F3 stage-1 evidence re-scored; pilot round 2; M3 record identity audited (Claude)
 
 - **Harness** (Claude Opus 5.5, to Codex's remaining V1 gap, Correspondence 2569):

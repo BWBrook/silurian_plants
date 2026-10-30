@@ -1,10 +1,12 @@
 # Sampling-unit evidence: bounded M2 interface pilot
 
-Status: **pilot only, updated 30 October 2026 after the Borenshult and Ghelli source checks**. These tables implement the two-table interface agreed in
-`docs/f3-shape.md`. They contain 15 identifiable material blocks, each with E1 and E2 outcomes
-under `main`, `inclusive` and `outlier` (90 outcome rows). They are a purposeful evidence audit,
-not a complete denominator or a representative sample of Palynodata. No binary analysis input,
-reference rate, first appearance or fossil-absence result is generated here.
+Status: **pilot only, updated 30–31 October 2026 with the complete Borenshult event map**.
+These tables implement the two-table interface agreed in `docs/f3-shape.md`. They contain
+49 identifiable material blocks, each with E1 and E2 outcomes under `main`, `inclusive`
+and `outlier` (294 outcome rows). The original 15-block evidence pilot is retained unchanged;
+34 Borenshult samples now have complete material/reporting maps. None of the five frames is
+analysis-ready: reference support, age/dependence distributions and binary conversion remain
+unadopted. No reference rate, first appearance or fossil-absence result is generated here.
 
 ## Files and grain
 
@@ -17,7 +19,9 @@ reference rate, first appearance or fossil-absence result is generated here.
 | `age_models.csv` | Evidence-only age declarations; neither a within-stage density nor a geological joint uncertainty model has been adopted |
 | `candidates.csv` | Unresolved sample identities, incomplete denominators, duplicate mapping and unavailable source follow-ups |
 | `frames.csv` | Five source-selected candidate inventories and their remaining admission gaps; none is analysis-ready |
-| `frame_samples.csv` | 75 inventory rows: 14 Hanadir depths, 27 Pelmis codes and 34 Borenshult depths; inventory only, without inferred sample outcomes |
+| `frame_samples.csv` | 75 inventory rows: 14 Hanadir depths, 27 Pelmis codes and 34 Borenshult depths; exact-depth links now join the complete Borenshult material map |
+| `borenshult_reporting.csv` | All 34 depths with literal source reports, E1 taxon lists, chart/count scope and non-target productivity; no accepted binary outcomes |
+| `borenshult_ages.csv` | All 34 depths with separate 2019/2023 zone/contact readings and historical numerical contexts; no age density or fitted age-depth model |
 | `reporting-rule.md` | Agreed core/three qualifications plus integrated productivity condition; no adapter or adopted binary data release yet |
 
 Check with `python3 tools/units.py check` (standard library only). The check rejects duplicate
@@ -26,7 +30,7 @@ ranges, and loss of a detection in a wider reading. It also enforces this releas
 status, frame/sample links and listed counts, and absence of an adopted binary reporting rule. It is an integrity check, not source
 verification or scientific validation.
 
-## What the pilot contains
+## The original 15-block pilot
 
 - **Samphire Marsh 1:** three distinct core intervals. Core 4 has an explicit E1 non-detection
   quoted by Strother & Foster (2021) from Balme (1961); the original report remains unread, so
@@ -54,7 +58,7 @@ verification or scientific validation.
   remain in the candidate ledger. Poor miospore preservation is recorded even where marine
   palynomorphs are abundant.
 
-In the main reading, E1 has 3 detections, 2 explicit non-detections, 8 not-reported outcomes and
+Within these original 15 blocks, in the main reading, E1 has 3 detections, 2 explicit non-detections, 8 not-reported outcomes and
 2 unresolved identifications. E2 has 6 detections, 5 not-reported outcomes and 4 unresolved
 identifications. These are counts of the selected evidence, not detection-rate estimates.
 Samphire's negative remains secondary and its eligibility unknown. Hanadir now supplies a
@@ -91,16 +95,28 @@ not implemented before those choices are settled.
 
 ## Review and next tranche
 
-The 30 October review adds a complete **analysed-sample inventory** for
-Borenshult-1. Rubinstein & Vajda (2019) examined 34 samples; its spore chart
-plots 23 depths. The 2023 companion lists all 34 in both marine-phytoplankton
-charts and explicitly links the 23 spore-bearing samples to 2019. Independent
-transcription agrees on all depths and the subset relationship. The 11 omitted
-depths receive no inferred E1/E2 outcome. The 37.5 m sample, with only 25
-counted palynomorphs, remains in the inventory for eligibility assessment.
-This is one shared post-2006 study frame, not independent replication or part
-of the Palynodata denominator. Next: event-specific reporting, alternative
-identifications, reference eligibility and section-level age/dependence mapping.
+The completed Borenshult extraction adds 34 material blocks and 204 named-reading
+outcomes. Source chart reports occur at seven E1 depths and all 23 plotted E2 depths;
+the other eleven receive explicit **study-complement** non-detections from the 2023
+34/23 reporting statement and the matched inventories. The 16 plotted columns without
+an E1 taxon remain literally `not_reported`, with comprehensive category reporting
+documented. No chart blank is silently converted into a biological absence.
+
+All 34 have documented non-target marine phytoplankton. The 37.5 m sample retains
+its count of 25 palynomorphs and is not excluded by an invented threshold. Source-scope
+eligibility does not establish equal detectability, a reference rate or analysis admission.
+Under the existing main reading, Borenshult has **zero accepted E1 detections**;
+the seven are unresolved, versus detected under inclusive/outlier. E2 has 21 main
+detections and two disputed Darriwilian reports. The general main E1 caution also needs
+specific adjudication for the 34/33.05 m Skagen records, beyond the Dalby specimens
+explicitly discussed by Hooper. No reading was changed here.
+
+The age map preserves three Darriwilian, 30 Sandbian and one Katian assignment, plus
+conflicting subzone/contact readings. Shared core labels identify dependence, not
+coevality. The next step is reference support under each reading and an explicit
+ordered/shared age design, followed by actual-design qualification. This post-2006,
+source-selected frame remains outside the Palynodata denominator. Full sources,
+logic and review findings: `docs/audits/2026-10-30-borenshult-event-map.md`.
 
 The held Ghavidel-Syooki & Winchester-Seeto (2002) paper concerns the western
 Ghelli type section, not eastern Pelmis Gorge. Its methods/figure sample ranges

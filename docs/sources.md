@@ -40,7 +40,7 @@ relying on a particular generation.
 | Loop 1 occurrence tail (`data/occurrences/`) | observations, competing interpretations and sources for the oldest records of E1–E5 (229 observations, 324 readings), and an effort layer | held | `data/occurrences/` | derived; see its README |
 | PBDB collections, all taxa, Darriwilian–Emsian | 27,830 collections, the effort layer for body fossils; snapshot 2026-10-28 | local (raw) | `data/occurrences/raw/` (git-ignored) | CC0 |
 | Project spore dataset (MVD-A) | occurrences, vetted first appearances and stage presence from Palynodata plus Wellman 2013 | held | `data/spores/` | derived; see its README |
-| M2 sampling-unit interface pilot (Q1, Q2) | 15 material blocks, 90 E1/E2-by-reading outcomes; five candidate frames and 75 inventory rows (14 Hanadir, 27 Pelmis, 34 Borenshult). Hanadir 190.7 m now carries a primary study-scoped E1 negative with exact specimen linkage. Complete analysis denominator still unavailable | held | `data/units/`; validate with `tools/units.py check` | derived observations and paraphrases; source files remain local |
+| M2 sampling-unit interface pilot (Q1, Q2) | 49 material blocks, 294 E1/E2-by-reading outcomes; five candidate frames and 75 inventory rows. Complete 34-depth Borenshult reporting/age map: seven source-reported E1 depths, none accepted under the current main reading; 23 source-reported E2 depths. Explicit 34/23 scope resolves eleven complement negatives. Reference rates and age/dependence model remain unadopted | held | `data/units/`; validate with `tools/units.py check` | derived observations and paraphrases; source files remain local |
 | Steemans & Pereira 2002; Grahn et al. 2000 (Q1, Q2) | Miospore and companion chitinozoan studies of shared Paraguay borehole material; Palynodata 21733 and 20806. Eight observation-linked depths extracted; the stated 53-sample denominator cannot yet be reconstructed from their range charts | local | `library/open/steemanspereira2002.pdf`, `library/open/grahn2000.pdf`; URLs and hashes in `library/open.tsv` and `data/units/source_files.csv` | Public copies; no reuse licence assessed; full texts not committed |
 | Post-2006 spore literature | 182 priority papers; 33 open full texts extracted (370 assemblages, 97% of records verified in text; two texts fetched into `library/open/`); other papers remain to be obtained or extracted | partly held | `data/spores/sources/mvdb_*.csv` | access varies; see `docs/closed-literature.csv` |
 | Rubinstein et al. 2010 (Q1, Q2) | Paper and original supporting document, including stratigraphy and colour plate; acquired 2026-10-28, not yet incorporated in MVD-B or the occurrence adjudication. The supplement's plain-text extract `library/open/W1820528062_SI.txt` omits its four figures; use the original document for them | local | `library/open/W1820528062.pdf`, `library/open/W1820528062_SI.doc`; URLs and hashes in `library/open.tsv` | Publisher labels article Free Access; Crossref records Wiley terms, not a CC licence; keep local |
@@ -136,6 +136,15 @@ clock audit).
 | Palynological sampling effort | held | `data/external/spores/`, GAD in `data/external/deposits/` | documents reporting marine palynomorphs without spores |
 
 ## 9. Literature
+
+The completed Borenshult event map (30–31 October; Q1/Q2/Q5;
+`audits/2026-10-30-borenshult-event-map.md`) reads the 2019 two-category spore chart,
+2023 complete marine-phytoplankton charts and explicit 34/23 reporting statement,
+and both age-correlation figures/prose. `data/units/borenshult_reporting.csv` and
+`borenshult_ages.csv` preserve those results. Hooper's held main text and supplement
+are now also hashed in the unit source manifest; C_4 identifies the 48.2 m probable
+spore behind the 459.1 Ma maximum. The extraction adds no acquisition or empirical
+inference. The prior inventory-only status below is superseded for Borenshult.
 
 The 30 October frame/source review (`audits/2026-10-30-frame-and-pilot-review.md`)
 reconciles the held Rubinstein & Vajda 2019/2023 Borenshult accounts into one

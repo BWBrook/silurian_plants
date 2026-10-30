@@ -103,6 +103,9 @@ data archived, and the human–AI correspondence record published alongside.
   Later that day it closed Codex's last stage-2 evidence gap, ran a second extraction round (with
   OCR of three scanned sources), built the pilot's combination table and wrote the M3
   record-identity audit from the primary descriptions.
+  On 2026-10-31, under Barry's widened scope, it pre-declared and ran a reproduction of Hooper et
+  al.'s stochastic mapping in R (phytools, pinned renv) and read the trilete persistence from the
+  regenerated maps (`models/pilot-asr/`).
 - Claude Sonnet 5.5 (Anthropic) subagents: the F3 simulator, estimators, sketch and recovery study
   (`models/f3/`), with a second Sonnet agent reviewing; the reshape-v3 compatibility estimator, unit
   simulator and validation harness (2026-10-28 and 29, reviewed and amended by Claude Opus 5.5), and
@@ -134,6 +137,15 @@ data archived, and the human–AI correspondence record published alongside.
     adjudicated by Claude Opus 5.5 (`work/codex/loop1b/`), and the Cambrian age, location and
     vetting jobs for the widened Palynodata window (2026-10-28).
 - OpenAI Codex (OpenAI, Codex desktop; exact model version not exposed in this session):
+  On 30–31 October 2026, mapped all 34 Borenshult samples by event and named
+  reading, with separate source-age alternatives and shared-dependence evidence.
+  Three bounded same-model delegates checked the remaining validation repair,
+  decisive expanded-pilot specimens, and Borenshult source ages/reporting. The
+  parent verified the charts and critical source passages, preserved the existing
+  readings, integrated 204 new outcome rows and extended the unit integrity checker.
+  The review identified absent positive main-reading E1 reference support, subzone/
+  contact discrepancies and remaining specimen-inference qualifications. No empirical
+  F3 fit or new ancestral-state analysis was run by this tranche.
   Later on 2026-10-29, reviewed the trait-to-node pilot and third F3 contract repairs,
   with two same-model delegates checking acceptance/logic and pivotal primary
   specimens. The parent wrote a source-hashed extractor for Hooper's deposited

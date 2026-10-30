@@ -103,11 +103,49 @@ def check(directory=ROOT / "data/units"):
         require(sample["study_frame_id"] in frame_ids, "unknown sample frame")
         require(sample["source_id"] in sources, "unknown frame sample source")
         require(bool(sample["source_locator"]), "missing frame sample source locator")
-        require(sample["link_status"] in {"not-linked", "exact-specimen-link", "provisional-depth-match"},
+        require(sample["link_status"] in {"not-linked", "exact-specimen-link", "exact-depth-link", "provisional-depth-match"},
                 "invalid material link status")
         linked = sample["linked_unit_id"]
         require((not linked and sample["link_status"] == "not-linked") or
                 (linked in ids and sample["link_status"] != "not-linked"), "invalid frame sample link")
+    borenshult = {r["linked_unit_id"]: r for r in samples
+                 if r["study_frame_id"] == "borenshult2019-2023"}
+    reporting = rows(directory / "borenshult_reporting.csv")
+    reported_ids = [r["unit_id"] for r in reporting]
+    require(len(reported_ids) == len(set(reported_ids)) and set(reported_ids) == set(borenshult),
+            "Borenshult reporting must cover each inventoried material once")
+    unit_lookup = {r["unit_id"]: r for r in units}
+    for row in reporting:
+        uid = row["unit_id"]
+        sample = borenshult.get(uid, {})
+        require(row["depth_m"] == sample.get("depth_m"), f"{uid}: reporting depth mismatch")
+        require(row["sample_label"] == sample.get("sample_label"), f"{uid}: reporting sample mismatch")
+        require(row["study_frame_id"] == sample.get("study_frame_id"), f"{uid}: reporting frame mismatch")
+        references(row, "source_ids", sources)
+        require(bool(row["source_locator"] and row["qualification"]), f"{uid}: missing reporting evidence")
+        require(row["in_2019_spore_chart"] in {"yes", "no"}, f"{uid}: invalid chart membership")
+        for event in ["E1", "E2"]:
+            require(row[f"{event}_source_report"] in {
+                "reported-presence", "category-not-listed", "study-complement-non-detection"},
+                f"{uid}: invalid {event} source report")
+        require(bool(row["E1_reported_taxa"]) == (row["E1_source_report"] == "reported-presence"),
+                f"{uid}: E1 taxon/report mismatch")
+        require((row["in_2019_spore_chart"] == "no") ==
+                (row["E2_source_report"] == "study-complement-non-detection"),
+                f"{uid}: E2 chart/report mismatch")
+    age_rows = rows(directory / "borenshult_ages.csv")
+    age_keys = [(r["study_frame_id"], r["sample_label"]) for r in age_rows]
+    require(len(age_keys) == len(set(age_keys)) and set(age_keys) == {
+        (r["study_frame_id"], r["sample_label"]) for r in borenshult.values()},
+        "Borenshult ages must cover each inventoried sample once")
+    by_sample = {r["sample_label"]: uid for uid, r in borenshult.items()}
+    for row in age_rows:
+        uid = by_sample.get(row["sample_label"])
+        unit = unit_lookup.get(uid, {})
+        require(row["reported_stage"] == unit.get("stage_oldest") == unit.get("stage_youngest"),
+                f"{uid}: age stage mismatch")
+        require(row["depth_m"] == borenshult.get(uid, {}).get("depth_m"), f"{uid}: age depth mismatch")
+        require(bool(row["source_locators"] and row["age_evidence_status"]), f"{uid}: missing age evidence")
     for source_file in rows(directory / "source_files.csv"):
         require(source_file["source_id"] in sources, "unknown file source")
         require(len(source_file["sha256"]) == 64, f"invalid digest for {source_file['path']}")

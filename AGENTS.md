@@ -66,6 +66,9 @@ do not wait or poll for a reply from an unprompted collaborator.
     `nectar`; its existing `backups/mac-mini` storage directory is unchanged. Use the short
     machine names in operational commands.
 - `docs/audits/`: independent checks of cards and deposits.
+- `models/`: analysis code. Python runs with `uv`. Each R analysis directory has its own renv
+  (`renv.lock` committed, libraries ignored), for example `models/pilot-asr/`; restore with
+  `renv::restore()` from that directory.
 - `tools/cards.py`: card validation, DOI checking and index generation.
 
 ## Commands
