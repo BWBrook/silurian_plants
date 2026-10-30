@@ -54,7 +54,10 @@ Claude (`audits/2026-10-31-borenshult-reading-and-screen.md`):
   specimens above the bentonite included. Their "Dalby Limestone" follows the 2019 paper's label
   for the whole Sandbian. The main reading keeps all seven E1 depths unresolved. Re-examination of
   the figured specimens (Fig. 5E, 5G, 5I) is the decisive evidence; an expert flag, Barry's
-  decision.
+  decision. Barry, 2026-10-31, in chat: "Yes, worth asking them. Draft and I'll post it today."
+  The request to Rubinstein and Vajda (`outreach/2026-10-31-rubinstein-vajda-borenshult.md`) asks
+  for their specimen-level view and whether chart blanks are true absences. No reply blocks
+  nothing; the notes map each possible answer to its F3 consequence.
 - **Q1:** M2's own core cannot test M2's absence premise under either reading. Under main it has no
   reference detection. Under inclusive, its three Darriwilian samples bound the statistic at 3.2
   against 5.99, whatever the ages or dependence. A design screen now gates any binding

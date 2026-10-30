@@ -43,7 +43,8 @@ specimens separately or finds them free of the compression concern.
 
 **What would settle it.** Re-examination of the figured specimens, above all Fig. 5E and 5G and
 the 48.2 m basis (Fig. 5I, K38-2a; Fig. 8G). That means light and SEM views of the trilete marks
-against folds. Contacting the authors or a specialist is Barry's decision.
+against folds. Contacting the authors or a specialist is Barry's decision. He chose to ask the
+authors (2026-10-31); the request is `outreach/2026-10-31-rubinstein-vajda-borenshult.md`.
 It is worth flagging because §2 shows the reading decides whether this core can test anything.
 
 ## 2. What this core can deliver: a design screen

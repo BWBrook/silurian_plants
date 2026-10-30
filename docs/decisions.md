@@ -30,6 +30,11 @@ Barry exactly (with source) or label a paraphrase.
     is needed.
   - **Q2 gains a decisive specimen question:** the figured Borenshult triletes. Its re-examination
     is an expert flag (Barry's decision).
+- **Author contact** (Barry, 2026-10-31, in chat): "Yes, worth asking them. Draft and I'll post it
+  today." Claude drafted the request (`outreach/2026-10-31-rubinstein-vajda-borenshult.md`); Barry
+  sends it. No reply is the default and blocks nothing. An author answer is a source and may
+  define a reading; we adopt their specimen-level assessment as given, not a subset chosen by the
+  screen.
 
 ## 2026-10-31: Borenshult event map and structural review (Codex)
 
