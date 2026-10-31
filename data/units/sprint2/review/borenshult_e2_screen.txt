@@ -1,0 +1,12 @@
+main excluded 5 tau=458.2 n_ref=31 k_ref=21 n_old=1 older_det=0 LR(f=1)=2.208 crit=5.991 passes=False
+main excluded 10 tau=458.2 n_ref=31 k_ref=21 n_old=1 older_det=0 LR(f=1)=2.208 crit=5.991 passes=False
+main zero 5 tau=458.2 n_ref=31 k_ref=21 n_old=3 older_det=0 LR(f=1)=6.275 crit=5.991 passes=True
+main zero 10 tau=458.2 n_ref=31 k_ref=21 n_old=3 older_det=0 LR(f=1)=6.275 crit=5.991 passes=True
+inclusive excluded 5 tau=469.4 n_ref=34 k_ref=23 n_old=0 older_det=0 LR(f=1)=0.000 crit=5.991 passes=False
+inclusive excluded 10 tau=469.4 n_ref=34 k_ref=23 n_old=0 older_det=0 LR(f=1)=0.000 crit=5.991 passes=False
+inclusive zero 5 tau=469.4 n_ref=34 k_ref=23 n_old=0 older_det=0 LR(f=1)=0.000 crit=5.991 passes=False
+inclusive zero 10 tau=469.4 n_ref=34 k_ref=23 n_old=0 older_det=0 LR(f=1)=0.000 crit=5.991 passes=False
+outlier excluded 5 tau=469.4 n_ref=34 k_ref=23 n_old=0 older_det=0 LR(f=1)=0.000 crit=5.991 passes=False
+outlier excluded 10 tau=469.4 n_ref=34 k_ref=23 n_old=0 older_det=0 LR(f=1)=0.000 crit=5.991 passes=False
+outlier zero 5 tau=469.4 n_ref=34 k_ref=23 n_old=0 older_det=0 LR(f=1)=0.000 crit=5.991 passes=False
+outlier zero 10 tau=469.4 n_ref=34 k_ref=23 n_old=0 older_det=0 LR(f=1)=0.000 crit=5.991 passes=False

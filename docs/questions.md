@@ -27,6 +27,15 @@ reconciliation. Q1's next implementation tranche includes explicit class support
 caving, chronology and conditional qualification; Q2/Q5 preserve pivotal source
 conflicts. This prospective plan changes no question's status or existing result.
 
+**Sprint-2 review (Claude, 31 October; Q1/Q2/Q5):** the non-admissions hold. Borenshult, Libya and Ghelli,
+left out of the M1 roster, were assessed for E2 and none is admitted. Borenshult passes the screen only if two
+disputed Darriwilian forms are coded as zeros. No older unit in any frame is a secure E2 zero under any reading,
+and that outcome-coding rule decides M1 as much as the missing rosters. Under the inclusive reading, Stage 4
+forms place E2 within c.1 Myr of M1, so M1 becomes an occurrence question needing productive pre-514.5 Ma
+material (Q1). Source corrections and new leads (Baldwin 2004; the Balang Stage 4 *Tetrahedraletes*?
+report; the Hanadir Fig. 2 cryptospore fractions) are in `audits/2026-10-31-sprint2-claude-review.md`. The
+E2 monad rule must be made consistent across sources before any cross-source E2 design (Q5).
+
 **Sprint-2 execution update (31 October; Q1/Q2/Q5):** the bounded M1 source
 programme and M3 denominator assessment are complete, with no numerical design
 admitted for either. Seven M1 groups are reported under all three readings.

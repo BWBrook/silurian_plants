@@ -123,6 +123,9 @@ data archived, and the human–AI correspondence record published alongside.
     qualifier (`models/f3/designs.py`, `m2.py`, `qualify.py`);
   - amended the screen when it found that conditioning on it would remove the evidence;
   - qualified 14 design/ρ combinations on `nectar` and wrote the M2 result note.
+  It then reviewed Codex's sprint 2 (2026-10-31): screened Borenshult and assessed Libya and Ghelli as E2
+  frames, stated the outcome-coding rule and the inclusive-reading occurrence consequence for M1, and
+  adjudicated and applied three subagent source audits (`docs/audits/2026-10-31-sprint2-claude-review.md`).
 - Claude Sonnet 5.5 (Anthropic) subagents: the F3 simulator, estimators, sketch and recovery study
   (`models/f3/`), with a second Sonnet agent reviewing; the reshape-v3 compatibility estimator, unit
   simulator and validation harness (2026-10-28 and 29, reviewed and amended by Claude Opus 5.5), and
@@ -133,7 +136,9 @@ data archived, and the human–AI correspondence record published alongside.
   against the sources and the resulting corrections; blind audits; the move of the data-rebuild
   instructions from `deep-server` to `nectar`, with re-runs on `nectar` that reproduced the EPRP
   extraction tables (2026-10-29, checked by Claude Opus 5.5); an independent code-only review of the
-  sprint-1 engine extensions and qualifier (2026-10-31, adjudicated by Claude Opus 5.5).
+  sprint-1 engine extensions and qualifier (2026-10-31, adjudicated by Claude Opus 5.5); three independent
+  primary-source audits of Codex's sprint 2 (Qusaiba/Samphire, the Cambrian–Silurian E2 sources, M3; 2026-10-31,
+  adjudicated by Claude Opus 5.5).
 - OpenAI Codex CLI, `gpt-6.1-sol` and `gpt-6.1-terra` at high reasoning effort, run by Claude Opus
   5.5 as read-only, schema-constrained jobs through `~/.claude/bin/codex-delegate` (2026-10-27 and
   28; on 2026-10-31 `gpt-6.1-terra` independently re-derived the 164 Libyan binary units for sprint 1). Records are in `docs/audits/` and the job files in `data/spores/work/codex/` and

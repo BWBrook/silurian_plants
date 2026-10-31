@@ -66,7 +66,7 @@ for sample,area,form,age,plates,notes in [
 ('J2-1580s','JOY No. 2 core, eastern Tennessee','Rogersville Shale','Series 3 Stage 5 (figure estimate)','Plate I 2','s suffix denotes Sheffield-processed split; do not add as independent material'),
 ('J2-1587s','JOY No. 2 core, eastern Tennessee','Rogersville Shale','Series 3 Stage 5 (figure estimate)','Plate I 1,6-7','s suffix denotes Sheffield-processed split; do not add as independent material'),
 ('J2-1803','JOY No. 2 core, eastern Tennessee','Pumpkin Valley Shale','Series 3 Stage 5 (figure estimate)','Plate V 1-18','50-specimen size population from slide J2-1803/A3 is taxon morphometrics, not sample productivity denominator'),
-('SB01-14','Thorn Hill section, eastern Tennessee','Rome Formation','Series 2; Olenellus biozone; Stage 4 drawn but caption limits certainty','Plate II 4-5','No authenticated allocation before 515.5 Ma from broad Series 2 constraint'),
+('SB01-14','Thorn Hill section, eastern Tennessee','Rome Formation','Series 2, Stage 4 in text p.33; Fig.1 caption: Olenellus biozone, probably Series 2 (521.0-506.5 Ma if Stage 4 not accepted)','Plate II 4-5','No authenticated allocation before 515.5 Ma from broad Series 2 constraint'),
 ('SB01-17','Thorn Hill section, eastern Tennessee','Rogersville Shale','Series 3 Stage 5 (figure estimate)','Plate I 8-9; Plate II 7-8',''),
 ('GC96-10A','Thunder Falls, Tapeats Creek drainage, Grand Canyon, Arizona','Bright Angel Shale','Series 3 Stage 5 probable (Fig.1 caption)','Plate II 12','Methods give GC96-10A; Plate II 12 prints GC96-10. Probable linked material, spelling not silently repaired'),
 ('GC10-3','Red Canyon section, Grand Canyon, Arizona','Bright Angel Shale','Series 3 Stage 5 probable (Fig.1 caption)','Plate II 9','')]:

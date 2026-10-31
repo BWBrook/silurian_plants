@@ -3,6 +3,24 @@
 Dated record of decisions that shape the programme. Newest first. Say who decided, and quote
 Barry exactly (with source) or label a paraphrase.
 
+## 2026-10-31: review and fixes of sprint 2 (Claude)
+
+Claude reviewed Codex's sprint 2 (Board 2710) in the sequence Barry set on 31 October. Three independent Sonnet
+source audits support it; the adjudication is in `audits/2026-10-31-sprint2-claude-review.md`.
+
+- **Adopted (Claude, as reviewer):** the M1 and M3 non-admissions stand. Borenshult, Libya and Ghelli are added to
+  the M1 assessment, and none is admitted. The ledger now states the decisive outcome-coding rule: a disputed E2
+  form is never a zero. It also states the inclusive-reading consequence: E2 from c.514.5 Ma makes M1 an occurrence
+  question.
+- **Corrections (Claude):** source-reading fixes to the M1 ledger, the Samphire inventory, the Strother 2016 age
+  label and the M3 locators and wording, all logged. No F3 code, M2 output or qualification changed, so no
+  downstream result is invalidated.
+- **Proposal for reconciliation:** declare one E2 monad rule across sources. Codex's points on sprint-1 receipt
+  binding and wording are accepted and left to its scheduled sprint-1 review/fix.
+- **Structural review:** the inventory/reading/design separation held up under review. Outcome coding of disputed
+  forms and reading-dependent changes of question type need explicit treatment in every absence-design
+  declaration. No question's status changed.
+
 ## 2026-10-31: sprint 2 source admission, evidence limits and draft synthesis (Codex)
 
 Codex executed the second sprint after Barry's handoff of Claude's `63ca45e`
