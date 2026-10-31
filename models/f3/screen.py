@@ -1,18 +1,30 @@
-"""What a sampling frame could deliver for one event and reading, before any binding qualification.
+"""Resource triage for a sampling frame: could it exclude a target intensity, under one declared simple design?
 
-With no detections among m older units, the zero-count statistic for a constant path at a fraction f of the reference
-is at most 2 m f r, where r is the reference rate estimated from the frame's own reference units as if it were known.
-Everything the real test adds can only lower that statistic or raise its critical value:
-- profiling the reference rate (the bound holds exactly: see `profile_lr`);
-- latent ages that put an older unit outside (T, first appearance];
-- shared ages, clusters and overdispersion, which the calibrated shift absorbs, and the shift is not below 0.
+Scope (corrected after Codex's review, docs/audits/2026-10-31-screen-and-persistence-review.md). The design is
+homogeneous and independent:
+- fixed reference membership;
+- one comparable class;
+- independent units;
+- k detections among n reference units, m older units with no detection;
+- a constant older intensity f times the reference rate r.
 
-So if 2 m r < CRIT the frame cannot exclude the reference itself (f = 1): every history class is ceiling-limited
-at every candidate origin, whatever the age model. The most favourable conversion is taken on each side: every
-documented non-detection is an older zero, and a reference unit counts against r only if its non-detection is
-explicit. This is a design screen, not an inference; it releases no bound.
+There log L(r, f) = k log(1 - exp(-r)) - (n - k + m f) r. Evaluating the null at the reference-only maximum
+r_hat = -log(1 - k/n) gives profile LR(f) <= 2 m f r_hat (`profile_lr`, `rate`). Within this design it equals the
+engine's statistic for a constant history (test_screen.py checks that). Uncertainty that only removes older
+exposure keeps the bound.
 
-    uv run --with numpy --with scipy models/f3/screen.py    # out/screen_borenshult.csv and the requirement table
+Outside this design the bound is not a theorem. Clustering, several sampling classes or a pooled heterogeneous
+reference can move the fitted reference information either way, and Codex's counterexamples exceed the bound.
+Those designs are screened with the engine itself, under their declared structure.
+
+Each result names its frame, reading, reference conversion, design, history-class ceiling C and target f. A
+class is ceiling-limited for this design when LR(C) <= CRIT. Failing to exclude the target does not make every
+class ceiling-limited: H1's ceiling is 3.
+
+Choosing frames by their screen result is an outcome-dependent selection. f3-shape.md, "Frame selection", sets
+what that means for coverage. This is triage; it releases no bound.
+
+    uv run --with numpy --with scipy models/f3/screen.py    # out/screen_borenshult.csv
 """
 
 import csv
@@ -22,14 +34,28 @@ from pathlib import Path
 from scipy.optimize import brentq
 
 CRIT = 5.991464547107979  # the declared critical value for no older detections (README: zero-count statistic)
+CEILINGS = {"H0": 1.0, "H1": 3.0}  # Spec defaults: 1 for every H0 class, h1_ceiling for H1
+TARGET_F = 1.0  # M2's absence premise: older intensity at the reference level
+DESIGN = "homogeneous independent; one comparable class; fixed reference membership"
 UNITS = Path(__file__).resolve().parents[2] / "data" / "units"
 OUT = Path(__file__).resolve().parent / "out"
 
 
+def _domain(k: int, n: int, m: int) -> None:
+    if not (n >= 1 and 0 <= k <= n and m >= 0):
+        raise ValueError(f"screen needs n >= 1 reference units, 0 <= k <= n and m >= 0; got k={k}, n={n}, m={m}")
+
+
+def rate(k: int, n: int) -> float:
+    """Reference rate per unit from k detections in n units (inf when every unit detects)."""
+    _domain(k, n, 0)
+    return math.inf if k == n else -math.log(1 - k / n)
+
+
 def profile_lr(k: int, n: int, m: int, f: float) -> float:
-    """Zero-count statistic for a constant path at f: k of n reference units detect, m older units are empty, and
-    the reference rate is profiled. Never above 2 m f r_hat."""
-    if k == 0:
+    """Zero-count statistic for a constant path at f, with the reference rate profiled. Never above 2 m f r_hat."""
+    _domain(k, n, m)
+    if k == 0 or m == 0:
         return 0.0
     alt = k * math.log(k / n) + ((n - k) * math.log(1 - k / n) if k < n else 0.0)
     rest = n - k + m * f
@@ -37,15 +63,14 @@ def profile_lr(k: int, n: int, m: int, f: float) -> float:
     return 2 * (alt - null)
 
 
-def rate(k: int, n: int) -> float:
-    return math.inf if k == n else -math.log(1 - k / n)
-
-
-def smallest_excludable(k: int, n: int, m: int, crit: float = CRIT) -> tuple[float, float]:
-    """The smallest f the frame could exclude: with the rate known, and with it profiled (inf if not even f = 1)."""
+def smallest_excludable(k: int, n: int, m: int, ceiling: float = 1.0, crit: float = CRIT) -> tuple[float, float]:
+    """The smallest f in (0, ceiling] the design could exclude, with the rate known and with it profiled.
+    Both are inf when even the ceiling cannot be excluded (the class is ceiling-limited)."""
     r = rate(k, n)
-    known = crit / (2 * m * r) if m and r > 0 else math.inf
-    profiled = brentq(lambda f: profile_lr(k, n, m, f) - crit, 1e-9, 1.0) if profile_lr(k, n, m, 1.0) > crit else math.inf
+    known = crit / (2 * m * r) if m and 0 < r else math.inf
+    known = known if known <= ceiling else math.inf
+    profiled = (brentq(lambda f: profile_lr(k, n, m, f) - crit, 1e-12, ceiling)
+                if profile_lr(k, n, m, ceiling) > crit else math.inf)
     return known, profiled
 
 
@@ -57,31 +82,31 @@ def older_units_needed(p: float, f: float = 1.0, crit: float = CRIT) -> float:
 def borenshult() -> list[dict]:
     depth = {f"BOR-{r['depth_m']}": float(r["depth_m"]) for r in csv.DictReader(open(UNITS / "borenshult_ages.csv"))}
     rows = [r for r in csv.DictReader(open(UNITS / "outcomes.csv")) if r["unit_id"].startswith("BOR-") and r["event_id"] == "E1"]
+    base = dict(frame="Borenshult-1", design=DESIGN, target_f=TARGET_F)
     out = []
     for reading in ("main", "inclusive"):
         mine = {r["unit_id"]: r["outcome"] for r in rows if r["reading_id"] == reading}
         hits = [u for u, o in mine.items() if o == "detected"]
         if not hits:
-            out.append(dict(reading=reading, first_appearance_m="", k=0, n_ref=0, n_ref_explicit=0,
-                            m_older=sum(o in ("explicit_non_detection", "not_reported") for o in mine.values()),
-                            m_unresolved=sum(o == "unresolved" for o in mine.values()),
-                            r_hat=0.0, lr_max=0.0, lr_profile=0.0, f_known="inf", f_profile="inf",
-                            verdict="no reference detection in the frame: uninformative without an external reference"))
+            out.append(base | dict(reading=reading, reference_conversion="", history_class="", ceiling="", k=0, n_ref=0,
+                                   m_older="", lr_known_at_ceiling="", lr_profile_at_ceiling="", f_known="", f_profile="",
+                                   excludes_target="", verdict="no in-frame reference detection: the screen does not apply"))
             continue
         fa = max(hits, key=depth.get)
         ref = [u for u in mine if depth[u] <= depth[fa]]
-        older = [u for u in mine if depth[u] > depth[fa] and mine[u] in ("explicit_non_detection", "not_reported")]
-        k, n = len(hits), len(ref)
-        n_explicit = k + sum(mine[u] == "explicit_non_detection" for u in ref)
-        r_max = rate(k, n_explicit)
-        known, profiled = smallest_excludable(k, n, len(older))
-        lr_max = 2 * len(older) * r_max
-        out.append(dict(reading=reading, first_appearance_m=depth[fa], k=k, n_ref=n, n_ref_explicit=n_explicit,
-                        m_older=len(older), m_unresolved=sum(mine[u] == "unresolved" for u in mine if depth[u] > depth[fa]),
-                        r_hat=round(r_max, 4), lr_max=round(lr_max, 3),
-                        lr_profile=round(profile_lr(k, n, len(older), 1.0), 3), f_known=f"{CRIT / lr_max:.3g}",
-                        f_profile="inf" if math.isinf(profiled) else f"{profiled:.3g}",
-                        verdict="ceiling-limited at every origin" if lr_max < CRIT else "could exclude the reference"))
+        m = sum(depth[u] > depth[fa] and mine[u] in ("explicit_non_detection", "not_reported") for u in mine)
+        k = len(hits)
+        conversions = {"complete reported-category": len(ref),
+                       "explicit-only (optimistic diagnostic)": k + sum(mine[u] == "explicit_non_detection" for u in ref)}
+        for conversion, n in conversions.items():
+            for cls, C in CEILINGS.items():
+                known, profiled = smallest_excludable(k, n, m, C)
+                out.append(base | dict(
+                    reading=reading, reference_conversion=conversion, history_class=cls, ceiling=C, k=k, n_ref=n,
+                    m_older=m, lr_known_at_ceiling=round(2 * m * C * rate(k, n), 4),
+                    lr_profile_at_ceiling=round(profile_lr(k, n, m, C), 4), f_known=f"{known:.4g}", f_profile=f"{profiled:.4g}",
+                    excludes_target=profiled <= TARGET_F,
+                    verdict="ceiling-limited" if math.isinf(profiled) else f"finite above f = {profiled:.3g}"))
     return out
 
 
@@ -89,7 +114,7 @@ def main() -> None:
     OUT.mkdir(exist_ok=True)
     rows = borenshult()
     with open(OUT / "screen_borenshult.csv", "w", newline="") as fh:
-        w = csv.DictWriter(fh, list(rows[0]), lineterminator="\n")
+        w = csv.DictWriter(fh, list(rows[-1]), lineterminator="\n")
         w.writeheader()
         w.writerows(rows)
     for r in rows:

@@ -1,0 +1,21 @@
+{
+  "zip_sha256": "9a3baeff1fd52d60c73d0b3d106211e533b0591b1728a403898c44843f6f0155",
+  "seeds": {
+    "ext 1": 20261142,
+    "ext 2": 20261143,
+    "ext 3": 20261144,
+    "ext 4": 20261145
+  },
+  "chains": 4,
+  "nsim": 1000,
+  "burnin": 10000,
+  "samplefreq": 100,
+  "r": "R version 4.6.1 (2026-06-24)",
+  "phytools": "2.5.2",
+  "coda": "0.19.4.1",
+  "outputs": {
+    "out/diagnostics_maps_ext_b10000_s100.csv": "de35d89444614944da0b82d3dff94eb0e754564647100a9d4cd50b2fe53a610a",
+    "out/diagnostics_chains_ext_b10000_s100.csv": "735f54094f716aa991b4057f8e0241c8086f2fdbbc0c9c7d98a0be0ab0100f9f",
+    "out/diagnostics_summary_ext_b10000_s100.csv": "826a8c4ebaa509f9071c2ac431a27bed54d1c4e3cf18999b192d5baadab1faec"
+  }
+}

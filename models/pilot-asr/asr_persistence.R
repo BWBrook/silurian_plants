@@ -1,45 +1,7 @@
 # Re-run Hooper et al.'s (2026) stochastic mapping and read the persistence of the trilete aperture.
 # Design and acceptance criteria: README.md (pre-declared). Run from this directory:
 #   Rscript asr_persistence.R
-suppressPackageStartupMessages({
-  library(ape)
-  library(phytools)
-  library(jsonlite)
-})
-
-root <- normalizePath(file.path("..", ".."))
-zip <- file.path(root, "data/external/deposits/hooper2026-spore-evolution/02. Ancestral State Estimation.zip")
-inventory <- read.csv(file.path(root, "data/pilot/hooper2026-asr/source_inventory.csv"), stringsAsFactors = FALSE)
-zip_sha <- unname(tools::sha256sum(zip))
-stopifnot(zip_sha %in% unlist(inventory))
-
-work <- file.path(tempdir(), "hooper-asr")
-unzip(zip, exdir = work)
-src <- file.path(work, "02. Ancestral State Estimation")
-traits <- read.csv(file.path(src, "asr_matrix.csv"), row.names = 1, fileEncoding = "UTF-8-BOM")
-trees <- list(ext = read.tree(file.path(src, "extant.tre")),
-              eo = read.tree(file.path(src, "eophyte sister.tre")),
-              zyg = read.tree(file.path(src, "zygnema sister.tre")))
-
-land <- c("Anthoceros", "Leiosporoceros", "Phaeomegaceros", "Apotreubia", "Blasia", "Haplomitrium", "Riccardia",
-          "Andreaea", "Oedipodium", "Sphagnum", "Takakia", "Huperzia", "Isoetes", "Lycopodium", "Selaginella",
-          "Equisetum", "Marattia", "Ophioglossum", "Psilotum", "Alsophila", "Anemia", "Thelypteris", "Osmunda", "Cycas")
-groups <- list(Tracheophyta = c("Huperzia", "Isoetes", "Lycopodium", "Selaginella", "Equisetum", "Marattia", "Ophioglossum",
-                                "Psilotum", "Alsophila", "Anemia", "Thelypteris", "Osmunda", "Cycas"),
-               mosses = c("Andreaea", "Oedipodium", "Sphagnum", "Takakia"),
-               hornworts = c("Anthoceros", "Leiosporoceros", "Phaeomegaceros"),
-               liverworts = c("Apotreubia", "Blasia", "Haplomitrium", "Riccardia"))
-keep <- list(X21 = "3", X26 = "4")  # proximal trilete aperture; trilete or inaperturate monad
-myr_per_unit <- 100
-tau <- 452.8
-origins <- c(459.1, 470, 480, 500, 515.5)
-
-path_edges <- function(tree, from, to) {
-  nodes <- nodepath(tree, from, to)
-  vapply(seq_len(length(nodes) - 1), function(i) which(tree$edge[, 1] == nodes[i] & tree$edge[, 2] == nodes[i + 1]), 1L)
-}
-path_history <- function(map, edges) unlist(lapply(edges, function(e) names(map$maps[[e]])), use.names = FALSE)
-q_out <- function(Q, s) -Q[s, s]
+source("common.R")
 
 deposited <- function(kind, char, tree) {
   f <- file.path(src, "ase outputs", kind, sprintf("%s_%s_%s.csv", kind, char, tree))
@@ -55,11 +17,10 @@ for (tn in names(trees)) {
   age <- max(nodeHeights(tree)) - nodeheight(tree, emb)
   for (ch in names(keep)) {
     k <- k + 1
-    x <- as.factor(traits[match(tree$tip.label, rownames(traits)), ch]); names(x) <- tree$tip.label
+    x <- tip_states(tree, ch)
     seed <- 20261030L + k; seeds[[paste(tn, ch)]] <- seed
     set.seed(seed)
-    maps <- make.simmap(tree, x, model = "ER", nsim = 1000, Q = "mcmc", vQ = 0.01,
-                        prior = list(use.empirical = TRUE), samplefreq = 10, message = FALSE)
+    maps <- hooper_simmap(tree, x)
     scm <- summary(maps)$ace
     fits <- list(ER = fitMk(tree, x, model = "ER", pi = "fitzjohn"), ARD = fitMk(tree, x, model = "ARD", pi = "fitzjohn"))
     anc <- lapply(fits, function(f) ancr(f)$ace)
@@ -78,11 +39,11 @@ for (tn in names(trees)) {
     for (g in names(crowns)) {
       edges <- path_edges(tree, emb, crowns[[g]])
       hist <- lapply(maps, path_history, edges = edges)
-      runs <- vapply(hist, function(h) { r <- rle(h)$values; c(all(h == s0), sum(head(r, -1) == s0 & tail(r, -1) != s0),
-                                                               sum(head(r, -1) != s0 & tail(r, -1) == s0), h[1] == s0) }, numeric(4))
+      runs <- vapply(hist, path_runs, numeric(5), s0 = s0)
       persist[[length(persist) + 1]] <- data.frame(tree = tn, character = ch, state = s0, path = paste0("crown_Embryophyta->", g),
-        path_myr = sum(tree$edge.length[edges]) * myr_per_unit, p_start_in_state = mean(runs[4, ]), p_persist = mean(runs[1, ]),
-        mean_departures = mean(runs[2, ]), mean_returns = mean(runs[3, ]), crown_emb_age_ma = age * myr_per_unit)
+        path_myr = sum(tree$edge.length[edges]) * myr_per_unit, p_start_in_state = mean(runs["start", ]),
+        p_persist = mean(runs["persist", ]), mean_departures = mean(runs["departures", ]), mean_entries = mean(runs["entries", ]),
+        mean_reentries = mean(runs["reentries", ]), crown_emb_age_ma = age * myr_per_unit)
     }
     if (ch == "X21") {
       q_scm <- vapply(maps, function(m) q_out(m$Q, s0), 0) / myr_per_unit

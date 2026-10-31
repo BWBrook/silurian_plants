@@ -65,12 +65,16 @@ Claude (`audits/2026-10-31-borenshult-reading-and-screen.md`):
   the figured specimens (Fig. 5E, 5G, 5I) is the decisive evidence; an expert flag, Barry's
   decision. Barry, 2026-10-31, in chat: "Yes, worth asking them. Draft and I'll post it today."
   The request to Rubinstein and Vajda (`outreach/2026-10-31-rubinstein-vajda-borenshult.md`) asks
-  for their specimen-level view and whether chart blanks are true absences. No reply blocks
-  nothing; the notes map each possible answer to its F3 consequence.
-- **Q1:** M2's own core cannot test M2's absence premise under either reading. Under main it has no
-  reference detection. Under inclusive, its three Darriwilian samples bound the statistic at 3.2
-  against 5.99, whatever the ages or dependence. A design screen now gates any binding
-  qualification. An M2-capable frame needs in-frame Katian or later E1 detections and tens of
+  for their specimen-level view and whether chart blanks are true absences. Barry sent it, lightly
+  modified, on 2026-10-31. No reply blocks nothing; the notes map each possible answer to its F3
+  consequence.
+- **Q1:** M2's own core cannot test M2's absence premise under either reading, in the declared
+  homogeneous independent design. Under main it has no reference detection. Under inclusive, its
+  three Darriwilian samples bound the statistic at 3.2 against 5.99 (2.86 profiled). *Corrected
+  after Codex's review:* the earlier "whatever the ages or dependence" was too broad. Clustered or
+  multi-class designs can exceed the bound, and are screened with the engine once declared. A design
+  screen gates any binding qualification, and binding claims are conditional on passing it
+  (`f3-shape.md`, "Frame screen and frame selection"). An M2-capable frame needs in-frame Katian or later E1 detections and tens of
   eligible older units: 13–28 at a per-unit reference detection of 0.1–0.2 to exclude the
   reference, and roughly ten times that to bound intensity at a tenth of it.
 
@@ -79,8 +83,12 @@ Claude (`audits/2026-10-31-borenshult-reading-and-screen.md`):
 Under Barry's widened scope, Claude re-ran Hooper et al.'s stochastic mapping
 (`models/pilot-asr/`, pinned renv; 156 of 156 deposited values reproduced). P1's persistence link
 is now supported under their models.
-- Given a trilete crown ancestor, the aperture persists to crown Tracheophyta in 98–100% of maps.
-- Single-lineage retention from *T* to 452.8 Ma is 0.93–0.97 at 470 Ma and 0.76–0.90 at 515.5 Ma.
+- Given a trilete crown ancestor, the aperture persists to crown Tracheophyta with probability
+  0.98–1.00. Precision is measured on four independent chains per tree: MCSE 0.003 or less, and
+  the extant tree needed a longer chain to converge.
+- Single-lineage retention from *T* to 452.8 Ma is 0.93–0.97 at 470 Ma and 0.76–0.90 at 515.5 Ma
+  (ER and ARD point estimates). The converged posterior on the extant tree reaches down to 0.74 at
+  470 Ma and 0.33 at 515.5 Ma. τ = 452.8 Ma is a stage-boundary scenario.
 
 Retention enters an M2 statement as a named conditional or sensitivity scenario, not as a factor
 multiplied into the F3 verdict (corrected 2026-10-31 after Codex, Correspondence 2631). The

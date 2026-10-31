@@ -328,10 +328,25 @@ Agreed in discussion 99 (messages 2474, 2477 and 2484).
 
 Codex agreed H0, the reference ceiling and unconditional coverage (message 2496), accepted the repairs (R1, message 2541), accepted R2 and the core R3 repairs (message 2557), agreed the 0.955 calibration target (message 2557) and integrated the productivity condition into the reporting rule (`data/units/reporting-rule.md`, message 2558). Codex accepted the third-review repairs and the replicate re-scoring (messages 2628, 2629); its strict-parsing correction is made (`models/f3/README.md`, "Sixth review").
 
-**A design screen gates qualification (Claude, 2026-10-31; `docs/audits/2026-10-31-borenshult-reading-and-screen.md`).** Before a binding grid is built on a real frame, the frame must pass `models/f3/screen.py` under at least one declared reading. The screen bounds the zero-count statistic by 2 m r f, which nothing in the real test can raise; the reading set is fixed from the sources, not from the screen. Borenshult, the core behind M2's own fossil, fails under both readings: under main it has no in-frame E1 reference, and under inclusive its three Darriwilian samples give at most 3.2 against 5.99. Its absence premise therefore cannot be tested on its own core, whatever the age model.
+**Frame screen and frame selection (Claude, 2026-10-31; corrected the same day after Codex's review, `docs/audits/2026-10-31-screen-and-persistence-review.md`).**
+- **What the screen is.** `models/f3/screen.py` is resource triage under one declared design:
+  - homogeneous, independent units;
+  - one comparable class;
+  - fixed reference membership.
+
+  In that design its statistic equals the engine's at each class ceiling and is never weaker below it (`models/f3/test_screen.py`). Every result states the frame, reading, reference conversion, design, class ceiling and target f. It is not a theorem for clustered, multi-class or heterogeneous-reference designs, which can exceed it; those are screened with the engine under their declared structure.
+- **Borenshult.** Under main there is no in-frame E1 reference, so the screen does not apply. Under inclusive it cannot exclude reference-level intensity (f = 1) under either reference conversion: profiled 1.46 for the complete reported-category reference and 2.86 for the optimistic explicit-only one, against 5.99. H1 (ceiling 3) is finite above f ≈ 2.4 only under the optimistic conversion, which says nothing about absence. The core is deprioritised as a standalone frame. Designs whose dependence or class structure has not been declared are not ruled out.
+- **Frame selection (decision, Claude).** Choosing frames by their screen result selects on outcomes, and fixed readings do not remove that. Binding claims are therefore **conditional on passing**:
+  - The binding qualification of a selected frame applies the same screen rule (reading, conversion, design and target) in every replicate, and analyses only the replicates that pass.
+  - It must reach the 0.955 target for coverage conditional on passing, and it reports the pass rate.
+  - For frames with independent data, each reported bound then covers at the target rate given that it is reported, whichever frames are searched and in whatever order. No stopping rule ("the first frame that passes") is needed.
+  - Frames that share units are not independent: for example, Borenshult samples reused as older units beside another core's reference. Their joint selection is simulated together.
+  - Every examined frame is reported with its screen result, passing or not.
+
+  The simulation is built with the first binding qualification, since it needs that frame's design. The stage-1 and stage-2 synthetic validations remain unconditional, as specified.
 
 Open, posted in discussion 99:
-- **the shared-age scenarios for the binding grid** (item 5): built on the first frame that passes the screen, with Borenshult's ordered depths, shared boundaries and common ash correlation (Codex, `data/units/borenshult_ages.csv`) as the template;
+- **the shared-age scenarios for the binding grid** (item 5): built on a frame that passes the screen, within its conditional qualification, with Borenshult's ordered depths, shared boundaries and common ash correlation (Codex, `data/units/borenshult_ages.csv`) as the template;
 - **the frame tranche** (Codex): a frame with in-frame E1 detections after the first appearance under main (Katian or later) and tens of eligible, productive older units, or a declared transport assumption between a reference core and older cores; a complete original sample log, or another source with documented complete sample and event reporting. Hanadir's 1996 chart gives 14 depths but does not certify a complete processed inventory; Pelmis (Ghavidel-Syooki 2017) gives 27 productive sample codes, with its 140-sample collection and the MG-130 discrepancy still to reconcile.
 
 Anything unresolved goes to Barry with both positions stated.

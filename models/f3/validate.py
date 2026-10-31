@@ -320,6 +320,20 @@ def flag(r: dict, key: str) -> bool:
     return v
 
 
+def bound_state(r: dict, cls: str, ceiling: float, at: str = "") -> str:
+    """A scored bound's state, checked against the engine's invariants (Problem.fstar): finite has 0 <= f* <= C,
+    ceiling-limited has f* = C, zero-exposure has no value; at 459 Ma an empty state means the origin is not older
+    than tau. Anything else is malformed evidence: an unknown state would otherwise escape bound containment."""
+    s, v = r.get(f"state{at}_{cls}"), r.get(f"fstar{at}_{cls}")
+    number = isinstance(v, float)
+    valid = ((s == "finite" and number and 0 <= v <= ceiling * (1 + ROOT_TOL))
+             or (s == "ceiling-limited" and number and abs(v - ceiling) <= ROOT_TOL * (1 + ceiling))
+             or (s in ("zero-exposure", "" if at else None) and number and math.isnan(v)))
+    if not valid:
+        raise ValueError(f"replicate {r.get('rep')!r} of {r.get('cell')!r}: state{at}_{cls} {s!r} with f* {v!r}")
+    return s
+
+
 def coverage(rows: list[dict], covers) -> float:
     """Unconditional coverage over every replicate: no first appearance makes no claim and covers; an error
     does not."""
@@ -374,7 +388,13 @@ def summarise(cell: dict, rows: list[dict]) -> dict:
         reps_with_failed_fit=sum(r["n_failed"] > 0 for r in ok),
         seconds_per_rep=mean(r["seconds"] for r in ok),
     )
+    for r in ok:
+        if r["state_H1-no-ceiling"] not in ("unbounded", "zero-exposure"):
+            raise ValueError(f"replicate {r.get('rep')!r} of {r.get('cell')!r}: state_H1-no-ceiling {r['state_H1-no-ceiling']!r}")
     for cls in evaluated_classes(truth, spec):
+        for r in ok:
+            bound_state(r, cls, spec.h1_ceiling if cls == "H1" else 1.0)
+            bound_state(r, cls, spec.h1_ceiling if cls == "H1" else 1.0, "459")
         bound_ok = lambda r: flag(r, f"ok_fstar_{cls}")
         for label, key, target in (("", f"lr_{cls}", "abar_rel"), ("_nominal", f"lr_nominal_{cls}", "abar_nominal_rel")):
             if label and not any(r.get(key) is not None for r in ok):

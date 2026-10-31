@@ -1017,6 +1017,28 @@ def test_stage_two_refuses_malformed_replicate_ids_and_flags(tmp_path, monkeypat
             val.check_stage1(first | dict(evidence=evidence), "r", tmp_path)
 
 
+def test_stage_two_refuses_bound_states_outside_the_engine_invariants(tmp_path, monkeypatch):
+    """Codex's case (review 2026-10-31): a bound pushed below the truth is refused as finite, and must not pass by
+    renaming its state."""
+    first = _stage1(tmp_path, monkeypatch)
+    rows = [dict(r) for r in _a4_replicates()]
+    summary = val.summarise(val.CELLS[0], rows)
+    j = next(i for i, r in enumerate(rows) if not r["no_tau"] and not r["trivial"] and r["abar_rel"] > 0)
+    below = [dict(r) for r in rows]
+    below[j]["fstar_H0c"] = 0.0
+    for bad_rows, match in (
+        (below, "refused"),  # a well-formed but uncovering bound: the old summary no longer matches
+        ([dict(r, state_H0c="bogus") if i == j else r for i, r in enumerate(below)], "malformed"),
+        ([dict(r, state_H0c="ceiling-limited") if i == j else r for i, r in enumerate(below)], "malformed"),
+        ([dict(r, state_H0c="zero-exposure") if i == j else r for i, r in enumerate(below)], "malformed"),
+        ([dict(r, state459_H0c="bogus") if i == j else r for i, r in enumerate(rows)], "malformed"),
+        ([dict(r, **{"state_H1-no-ceiling": "finite"}) if i == j else r for i, r in enumerate(rows)], "malformed"),
+    ):
+        evidence = _write_stage1(tmp_path, bad_rows, [summary])
+        with pytest.raises(SystemExit, match=match):
+            val.check_stage1(first | dict(evidence=evidence), "r", tmp_path)
+
+
 def test_stage_one_evidence_may_be_read_through_its_compressed_copy(tmp_path, monkeypatch):
     first = _stage1(tmp_path, monkeypatch)
     reps = tmp_path / "validation_acc1_reps.csv"

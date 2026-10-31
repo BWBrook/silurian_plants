@@ -3,6 +3,63 @@
 Dated record of decisions that shape the programme. Newest first. Say who decided, and quote
 Barry exactly (with source) or label a paraphrase.
 
+## 2026-10-31: screen scoped, frame selection conditional, state tags checked, ASR precision measured (Claude)
+
+Responds to Codex's review (`audits/2026-10-31-screen-and-persistence-review.md`; Correspondence
+2634–2638). All of its findings are accepted.
+- **Screen** (Claude). The bound 2 m f r holds only in the homogeneous independent design: fixed
+  reference membership, one comparable class, independent units. In that design it equals the
+  engine's statistic at each class ceiling and is never weaker below it (`models/f3/test_screen.py`).
+  The previous entry's claim that nothing in the real test can raise it is withdrawn, and is struck
+  through in that entry's audit. Every screen row now names its frame, reading, reference
+  conversion, design, class ceiling and target. Borenshult's verdict stands within that design:
+  - no in-frame reference under main;
+  - under inclusive, H0 cannot exclude f = 1 under either reference conversion;
+  - H1 is finite above f ≈ 2.4 only under the optimistic conversion, which says nothing about
+    absence.
+- **Frame selection** (decision, Claude). Binding claims are conditional on passing the screen.
+  - The binding qualification applies the same screen rule in every replicate, analyses only the
+    replicates that pass, and must reach 0.955 coverage conditional on passing. It reports the pass
+    rate.
+  - For frames with independent data this covers any search order, so no "first frame that passes"
+    rule is needed.
+  - Frames that share units are simulated jointly.
+  - Every examined frame is reported with its screen result.
+  - The simulation is built with the first binding qualification. Stage-1 and stage-2 synthetic
+    validation stay unconditional.
+- **Checker** (Claude). `bound_state()` holds every scored state to the engine's invariants, so a
+  renamed tag can no longer escape containment. All 66,000 current-format stored rows pass and
+  re-score unchanged. 170 F3 tests pass.
+- **Persistence** (Claude). `mean_returns` is split into entries and re-entries. The wording now
+  says:
+  - ER maps supply the paths, and ARD supplies rate scenarios only;
+  - the trees have 27, 38 and 38 tips;
+  - τ = 452.8 Ma is a stage-boundary scenario;
+  - a node state does not date a trait's origin.
+
+  Precision is measured with four independent chains per tree, under acceptance criteria declared
+  before the run (`models/pilot-asr/README.md`, "Diagnostics").
+  - At Hooper et al.'s settings the extant-tree rate chain did not converge (R-hat 1.11). Four
+    longer chains do (1.006).
+  - Persistence given a trilete start is 0.98 (MCSE 0.003), 0.999 and 0.99 on the three trees. The
+    earlier 1.000 was a zero count.
+  - The converged retention posterior on the extant tree is wider: down to 0.33 at 515.5 Ma, not
+    0.52. The point estimates are unchanged.
+  - Seeds alone move single-chain node frequencies on that tree by up to 0.09 (0.785–0.877 for the
+    crown trilete state). Hooper et al.'s qualitative reading is unaffected.
+- **Structural review (Q1, Q4).**
+  - **Exposed:**
+    - lack of power in a declared design is not impossibility under every observation model;
+    - frame selection is part of the inferential design;
+    - Monte Carlo precision of a model-derived scenario input must be measured before its decimals
+      are quoted.
+  - **Q1:** its next step is unchanged (Codex's Libya event map, then design comparison). The
+    selection rule now travels with the first binding qualification.
+  - **Q4:** persistence holds, with measured precision. The extant-tree retention scenarios are
+    less certain than first stated.
+- **Author contact.** Barry, 2026-10-31, in chat: "I just now sent a lightly modified version of
+  your request!"
+
 ## 2026-10-31: screen scope challenged; Qusaiba and Libya inventories added (Codex)
 
 - **Review finding, pending Claude's repair:** the homogeneous independent screen

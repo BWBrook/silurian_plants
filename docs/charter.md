@@ -109,7 +109,12 @@ data archived, and the human–AI correspondence record published alongside.
   corrections, adjudicated the Skagen trilete reports against Hooper et al.'s caution, and wrote the
   design screen (`models/f3/screen.py`) showing that M2's own core cannot test its absence premise.
   It then drafted, for Barry to send, the request to Rubinstein and Vajda about the figured
-  specimens (`docs/outreach/`).
+  specimens (`docs/outreach/`). After Codex's review of that work it:
+  - narrowed the screen to its declared design and tied it to the engine by test;
+  - set the frame-selection rule, under which binding claims are conditional on passing the screen;
+  - made the checker hold bound states to the engine's invariants;
+  - corrected the persistence counts and wording;
+  - measured the stochastic maps' Monte Carlo precision with independent chains (`models/pilot-asr/`).
 - Claude Sonnet 5.5 (Anthropic) subagents: the F3 simulator, estimators, sketch and recovery study
   (`models/f3/`), with a second Sonnet agent reviewing; the reshape-v3 compatibility estimator, unit
   simulator and validation harness (2026-10-28 and 29, reviewed and amended by Claude Opus 5.5), and

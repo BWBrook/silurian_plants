@@ -1,3 +1,6 @@
-reading,first_appearance_m,k,n_ref,n_ref_explicit,m_older,m_unresolved,r_hat,lr_max,lr_profile,f_known,f_profile,verdict
-main,,0,0,0,27,7,0.0,0.0,0.0,inf,inf,no reference detection in the frame: uninformative without an external reference
-inclusive,48.2,7,31,17,3,0,0.5306,3.184,1.457,1.88,inf,ceiling-limited at every origin
+frame,design,target_f,reading,reference_conversion,history_class,ceiling,k,n_ref,m_older,lr_known_at_ceiling,lr_profile_at_ceiling,f_known,f_profile,excludes_target,verdict
+Borenshult-1,homogeneous independent; one comparable class; fixed reference membership,1.0,main,,,,0,0,,,,,,,no in-frame reference detection: the screen does not apply
+Borenshult-1,homogeneous independent; one comparable class; fixed reference membership,1.0,inclusive,complete reported-category,H0,1.0,7,31,3,1.5356,1.4567,inf,inf,False,ceiling-limited
+Borenshult-1,homogeneous independent; one comparable class; fixed reference membership,1.0,inclusive,complete reported-category,H1,3.0,7,31,3,4.6068,3.9802,inf,inf,False,ceiling-limited
+Borenshult-1,homogeneous independent; one comparable class; fixed reference membership,1.0,inclusive,explicit-only (optimistic diagnostic),H0,1.0,7,17,3,3.1838,2.8631,inf,inf,False,ceiling-limited
+Borenshult-1,homogeneous independent; one comparable class; fixed reference membership,1.0,inclusive,explicit-only (optimistic diagnostic),H1,3.0,7,17,3,9.5513,7.2548,1.882,2.358,False,finite above f = 2.36

@@ -463,11 +463,19 @@ comparison) is in `c7729ad`, its count-matched re-run in `69f2ef4` and the 60-ag
   `out/validation_dev*` hold the development grid (`dev2`: its seeds under the repaired code); `cal`, `acc1` and `receipt_cal.json` the second-review rehearsal,
   `shared` the shared-age cells. All of these predate the third-review repairs below and were written by earlier code.
 - `check_paired.py` (two runs on the same seeds, replicate by replicate) and `check_reoptimise.py` (every miss re-solved from many more starts): the rehearsal's checks.
-- `screen.py`: the design screen that gates a binding qualification on a real frame. It bounds the zero-count statistic by 2 m r f (m empty older units, r the
-  frame's own reference rate taken as known), which profiling, latent ages, dependence and the calibrated shift can only weaken. Writes
-  `out/screen_borenshult.csv`. Under the inclusive reading Borenshult reaches at most 3.2 against 5.99, so it is ceiling-limited at every origin; under main it
-  has no reference detection (`docs/audits/2026-10-31-borenshult-reading-and-screen.md`). `test_screen.py` checks the bound.
-- `test_envelope.py`: 90 tests; the whole of `models/f3` is 166 tests, all passing (about 35 s).
+- `screen.py`: resource triage before a binding qualification, under one declared design (homogeneous, independent,
+  one comparable class, fixed reference membership). There the profiled statistic is at most 2 m f r (m empty older
+  units, r the frame's own reference rate taken as known). It equals the engine's at each class ceiling and is never
+  weaker below it. Every row states the frame, reading, reference conversion, design, class ceiling and target f.
+  Clustered, multi-class or heterogeneous-reference designs can exceed it, so they are screened with the engine itself
+  (Codex's review, `docs/audits/2026-10-31-screen-and-persistence-review.md`).
+  - Writes `out/screen_borenshult.csv`. Under main, Borenshult has no reference detection, so the screen does not
+    apply. Under inclusive, H0 is ceiling-limited at f = 1 under both reference conversions (2.86 profiled at most,
+    against 5.99).
+  - Passing is outcome-dependent selection, so binding claims are conditional on it (`docs/f3-shape.md`, "Frame
+    screen and frame selection").
+  - `test_screen.py` checks the bound, the engine equivalence and the domains.
+- `test_envelope.py`: 91 tests; the whole of `models/f3` is 170 tests, all passing (about 55 s).
 
 ```bash
 uv run --with pytest --with numpy --with scipy python -m pytest -q models/f3
@@ -808,6 +816,20 @@ lowercase `false` stayed a non-empty, truthy string. Both are now strict:
 `check_stage1` reports either case as malformed evidence and refuses the stage 1. Blank flags in classes a cell does
 not evaluate are never read. All 66,000 stored replicate rows of the current format parse under the strict rules and
 re-score to their stored coverage. 164 F3 tests pass.
+
+**Seventh review (2026-10-31).** Codex found that a state tag escaped bound containment
+(`docs/audits/2026-10-31-screen-and-persistence-review.md` §3). Its case: push a bound below the truth and keep the
+old summary. Tagged `finite`, stage 1 is refused; renamed `bogus`, it was accepted, because only `finite` and
+`ceiling-limited` bounds were checked for containment. `bound_state()` now holds every scored state to the engine's
+invariants before scoring:
+- `finite` has 0 ≤ f* ≤ C;
+- `ceiling-limited` has f* = C;
+- `zero-exposure` has no value;
+- an empty 459 Ma state means the origin is not older than τ;
+- `H1-no-ceiling` is `unbounded` or `zero-exposure`.
+
+Anything else is malformed evidence. A new test covers the renamed tags. All 66,000 current-format stored rows pass
+and re-score unchanged. 170 F3 tests pass.
 
 ### Open choices
 

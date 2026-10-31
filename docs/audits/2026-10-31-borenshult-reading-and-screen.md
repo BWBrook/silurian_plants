@@ -49,23 +49,39 @@ It is worth flagging because §2 shows the reading decides whether this core can
 
 ## 2. What this core can deliver: a design screen
 
-Before building a binding qualification on a frame, ask the most it could ever show.
-`models/f3/screen.py` computes an upper bound on the zero-count statistic: 2 m r f, with m empty
-older units and r the reference rate from the frame's own reference units, treated as known.
-Everything the real test adds can only lower the statistic or raise its critical value: profiling
-r, latent ages that move a unit out of the interval, shared ages and clusters, and the calibrated
-shift (not below 0). If 2 m r < 5.99, the frame cannot exclude reference-level intensity (f = 1)
-at any candidate origin, in any history class, under any age model.
+**Corrected the same day after Codex's review** (`2026-10-31-screen-and-persistence-review.md`).
+The bound holds only in a homogeneous independent design: fixed reference membership, one
+comparable class, independent units. Its universal form was wrong:
+- clustering or several sampling classes can raise the engine's statistic above it;
+- H1, whose ceiling is 3, can be finite where H0 is ceiling-limited.
+
+The struck claims are marked below. `screen.py` now states its design, class ceiling and target in
+every result.
+
+Before building a binding qualification on a frame, ask the most it could show under a declared
+simple design. `models/f3/screen.py` computes an upper bound on the zero-count statistic: 2 m r f,
+with m empty older units and r the reference rate from the frame's own reference units, treated as
+known.
+- **Within that design:** profiling r and latent ages that remove older exposure can only lower the
+  statistic. At each class ceiling it equals the engine's statistic (`test_screen.py`).
+- ~~**Shared ages, clusters and the shift:** these can only lower it too. If 2 m r < 5.99 the frame
+  cannot exclude f = 1 at any origin, in any history class, under any age model.~~ Wrong in general;
+  see the correction above.
 
 The most favourable conversion is taken on each side:
 - every documented older non-detection, explicit or `not_reported` under full-category reporting,
   counts as an empty trial;
 - a reference unit counts against r only if its non-detection is explicit.
 
-| Reading | First appearance | Reference | Empty older units | Upper bound on the statistic | Profiled, symmetric conversion | Verdict |
+| Reading | First appearance | Reference | Empty older units | Plug-in statistic at f = 1 | Profiled at f = 1 | Verdict, homogeneous design (H0, ceiling 1) |
 |---|---|---|---|---|---|---|
-| main | none in the frame | 0 detections | 27, plus 7 unresolved | 0 | 0 | uninformative without an external reference |
-| inclusive | 48.2 m | 7 of 31 (7 of 17 explicit) | 3 (71.1, 67.6, 59.1 m) | 3.18 | 1.46 | ceiling-limited at every origin |
+| main | none in the frame | 0 detections | 27, plus 7 unresolved | n/a | n/a | the screen does not apply: no in-frame reference |
+| inclusive, complete reported-category reference | 48.2 m | 7 of 31 | 3 (71.1, 67.6, 59.1 m) | 1.54 | 1.46 | ceiling-limited |
+| inclusive, explicit-only reference (optimistic diagnostic) | 48.2 m | 7 of 17 | 3 | 3.18 | 2.86 | ceiling-limited |
+
+H1 (ceiling 3) is ceiling-limited under the complete conversion. Under the optimistic explicit-only
+conversion it is finite above f ≈ 2.4, or 2.59 in the engine. That bound concerns intensities above
+twice the reference, not absence.
 
 For *T* = 459.1 Ma itself the inclusive case is weaker still. Only 59.1 m (about 459 Ma on the
 2019 calibration) can lie between that origin and the first appearance.
@@ -75,8 +91,11 @@ For *T* = 459.1 Ma itself the inclusive case is weaker still. Only 59.1 m (about
   - **Under main** there is no positive reference in the frame.
   - **Under inclusive** three Darriwilian samples cannot outweigh a per-sample reference
     detection probability of roughly 0.2–0.4.
-  - The result does not depend on the age model, the shared-age structure, the binary conversion
-    rule or the calibration batch, so neither needs settling for this core first.
+  - ~~The result does not depend on the age model, the shared-age structure, the binary conversion
+    rule or the calibration batch.~~ It holds for the declared homogeneous independent design. A
+    declared dependence or class structure would be screened with the engine itself. The
+    homogeneous failure deprioritises this core as a standalone frame; it does not prove every
+    design useless.
 - **What the core still contributes.**
   - **An audit of M2's own fossil (§1).** This is reused evidence, not independent corroboration.
   - **A sample-level template.** Its complete, scope-documented inventory is the pattern for other
@@ -111,9 +130,12 @@ at a tenth of the reference.
 ## 3. Consequence for the F3 sequence (decision, Claude)
 
 - **A screen gates qualification.** Before a binding validation grid is built on a real frame, the
-  frame must pass this screen under at least one declared reading, with its reading set fixed from
-  the sources, not from the screen. The shared-age cells (`f3-shape.md`, second review, item 5) are
-  built on the first frame that passes. Borenshult's ordered depths, shared stage and subzone
+  frame must pass this screen under at least one declared reading and design, with its reading set
+  fixed from the sources, not from the screen. Corrected after Codex's review: passing is
+  outcome-dependent selection. Binding claims are therefore conditional on passing, and the
+  qualification simulates the screen in every replicate (`f3-shape.md`, "Frame screen and frame
+  selection"). The shared-age cells (`f3-shape.md`, second review, item 5) are built on a frame that
+  passes. Borenshult's ordered depths, shared stage and subzone
   boundaries and common ash correlation (Codex's `borenshult_ages.csv`) are the template for them.
   This replaces the previous plan to build them now on Borenshult.
 - **Next frame work (proposed to Codex, who owns frames).** Aim for a frame with in-frame Katian or

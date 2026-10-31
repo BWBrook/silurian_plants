@@ -206,12 +206,16 @@ What this does to the mappings (I):
   tolerances. Stochastic-mapping values differ by at most 0.036; ER and ARD reproduce exactly.
 - **Persistence on the maps.** Given a trilete crown ancestor, the aperture stays trilete along
   the whole path to crown Tracheophyta in 98.4–100% of maps on the three trees. On the
-  liverwort path it does so in only about a third.
+  liverwort path it does so in only about a third. Four independent chains per tree put it at
+  0.98–1.00 with measured precision (`models/pilot-asr/README.md`, "Diagnostics results"). The
+  extant-tree chain needed a longer run to converge, and the 100% was a zero count: 3 departures in
+  3,876 starts.
 - **Retention, single lineage.**
   - Fitted rates out of the trilete state are 0.0016–0.0043 per Myr.
   - A lineage making trilete spores at *T* keeps doing so without interruption to the base of
     the Katian with probability 0.93–0.97 for *T* = 470 Ma, and 0.76–0.90 for *T* = 515.5 Ma.
-    These are ER and ARD point estimates; the widest posterior 95% interval reaches 0.52.
+    These are ER and ARD point estimates. On the converged chains the widest posterior 95%
+    interval reaches 0.33 (extant tree, 515.5 Ma); the single unconverged chain had said 0.52.
 - **Correction to the design's premise.** The deposited ancestral-state timetrees put crown
   Embryophyta at 508 Ma, from the earlier Harris and Clark dates, not at Hooper et al.'s
   recalibrated 457–450 Ma. The map-based persistence is therefore conditional on those older dates,
@@ -227,8 +231,9 @@ sensitivity scenarios beside the F3 result ("if a crown lineage at *T* kept prod
 spores, which these Mk fits make probable at 0.76–0.99, then …"), until an inferential combination
 is justified and validated. The retention values for older *T* hold the fitted rates fixed while
 lengthening the path. Re-fitting on a tree rescaled to an older crown would change the rates, so
-those values are sensitivity scenarios, not estimates. A reconstructed node state says when the
-trait arose; it does not make the oldest observed fossil predate the node.
+those values are sensitivity scenarios, not estimates. A reconstructed node state estimates the
+state at that node. It does not date the trait's origin, which needs further inference, and it does
+not make the oldest observed fossil predate the node (corrected after Codex's review, 2026-10-31).
 
 ## Characters and coding rules
 
