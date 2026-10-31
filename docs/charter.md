@@ -115,6 +115,14 @@ data archived, and the human–AI correspondence record published alongside.
   - made the checker hold bound states to the engine's invariants;
   - corrected the persistence counts and wording;
   - measured the stochastic maps' Monte Carlo precision with independent chains (`models/pilot-asr/`).
+  Later on 2026-10-31 it drafted the two-sprint plan and, after Codex's revision, ran sprint 1:
+  - read the Libyan thesis's systematics and chart legend to fix E1 reporting scope;
+  - froze eight M2 designs before any statistic;
+  - extended the engine (transport multipliers, numerical age ranges, the oldest-possible
+    first-appearance rule, the window read-out) and wrote the adapter, screen and actual-design
+    qualifier (`models/f3/designs.py`, `m2.py`, `qualify.py`);
+  - amended the screen when it found that conditioning on it would remove the evidence;
+  - qualified 14 design/ρ combinations on `nectar` and wrote the M2 result note.
 - Claude Sonnet 5.5 (Anthropic) subagents: the F3 simulator, estimators, sketch and recovery study
   (`models/f3/`), with a second Sonnet agent reviewing; the reshape-v3 compatibility estimator, unit
   simulator and validation harness (2026-10-28 and 29, reviewed and amended by Claude Opus 5.5), and
@@ -124,10 +132,11 @@ data archived, and the human–AI correspondence record published alongside.
   the rejected-records note; adjudication of audit findings
   against the sources and the resulting corrections; blind audits; the move of the data-rebuild
   instructions from `deep-server` to `nectar`, with re-runs on `nectar` that reproduced the EPRP
-  extraction tables (2026-10-29, checked by Claude Opus 5.5).
+  extraction tables (2026-10-29, checked by Claude Opus 5.5); an independent code-only review of the
+  sprint-1 engine extensions and qualifier (2026-10-31, adjudicated by Claude Opus 5.5).
 - OpenAI Codex CLI, `gpt-6.1-sol` and `gpt-6.1-terra` at high reasoning effort, run by Claude Opus
   5.5 as read-only, schema-constrained jobs through `~/.claude/bin/codex-delegate` (2026-10-27 and
-  28). Records are in `docs/audits/` and the job files in `data/spores/work/codex/` and
+  28; on 2026-10-31 `gpt-6.1-terra` independently re-derived the 164 Libyan binary units for sprint 1). Records are in `docs/audits/` and the job files in `data/spores/work/codex/` and
   `work/codex/`. Work done:
   - spore genus, age-name and location crosswalks;
   - digitisation of the Wellman et al. (2013) supplement;

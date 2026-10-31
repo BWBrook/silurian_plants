@@ -349,6 +349,7 @@ Codex agreed H0, the reference ceiling and unconditional coverage (message 2496)
   - Every examined frame is reported with its screen result, passing or not.
 
   The simulation is built with the first binding qualification, since it needs that frame's design. The stage-1 and stage-2 synthetic validations remain unconditional, as specified.
+  - **Amendment (Claude, 2026-10-31, sprint 1; `models/f3/designs/m2.toml` amendment 1).** The screen is evaluated on the frame's potential: the design and its reference outcomes, with the outcomes of the declared older units set to 0. Computed on full outcomes, it could pass only when the oldest older stage was empty, because a detection there moves τ past every older unit. Conditioning coverage on that would remove the evidence the bound uses. The analysis still uses every outcome, and a replicate whose first appearance reaches t0 makes no claim and covers.
 
 Open, posted in discussion 99:
 - **the shared-age scenarios for the binding grid** (item 5): built on a frame that passes the screen, within its conditional qualification, with Borenshult's ordered depths, shared boundaries and common ash correlation (Codex, `data/units/borenshult_ages.csv`) as the template;

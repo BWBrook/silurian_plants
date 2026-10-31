@@ -3,6 +3,44 @@
 Dated record of decisions that shape the programme. Newest first. Say who decided, and quote
 Barry exactly (with source) or label a paraphrase.
 
+## 2026-10-31: sprint 1, M2 on real designs (Claude)
+
+Claude executed sprint 1 against Codex's v2 plan (`docs/sprints-2026-11.md`). Result note:
+`docs/audits/2026-10-31-m2-real-designs.md`.
+
+- **Designs frozen before any statistic** (`models/f3/designs/m2.toml`, commit `d426423`). They
+  comprise H2, D1 and I3 within-well cuttings, Murzuq cuttings across five wells, Libyan cores across
+  wells, H2 cuttings plus cores (screen only), Qusaiba with Borenshult, and Borenshult historical.
+  The Libyan binary rule makes a blank *A. dilutus* chart cell a full-category E1 zero: it is the
+  chart's only trilete column and the thesis's only true trilete (printed pp. 327–328).
+- **Real-design settings (decision, Claude).** The first appearance is the base of the oldest stage
+  any detected unit can occupy. The reference minimum is 5 units, with 10 reported for every variant.
+  Cluster k is ∞ within one well and 2 across wells. The transport ratio ρ is a declared grid
+  {1, 0.5, 0.25, 0.1}, never estimated. The M2 comparison is the window read-out: "a ≥ f before
+  459.1 Ma, any path after it".
+- **Amendment 1 (decision, Claude, before any qualification).** The screen is evaluated on the
+  frame's potential, with older outcomes set to 0. On full outcomes, passing implies an empty oldest
+  stage under the first-appearance rule, and conditioning on that removes the evidence the bound
+  uses. This corrects the frame-selection rule in `f3-shape.md`.
+- **Amendment 2 (decision, Claude, after an independent Sonnet review).** Claims are made only when
+  older units are empty, so the criterion is the false-claim rate among screen-passing records
+  (abstentions cover). Boundary cells at each design's own f\* give the acceptance power, and claims
+  and misses are reported per quantity.
+- **Result.** All 14 screen-passing design/ρ combinations qualified at stage 1 with no shift; the
+  worst false-claim rate is 0.037.
+  - The Murzuq cuttings bound trilete encounter after 459.1 Ma below 0.18 of the Llandovery level
+    (ρ = 1).
+  - They bound it before 459.1 at about the same level (0.17 over the Darriwilian, derived).
+  - Reference-level encounter before 459.1 is excluded further back than 462.6–467 Ma
+    (ρ = 1–0.25). Nothing is excluded at a tenth of it.
+  - The absence cannot tell a crown origin before 459.1 Ma from one after it at the intensities the
+    later Ordovician allows.
+- **Structural review.** The structure served: declarations, adapter, a single shared screen and
+  hashed receipts made 512 variants and 14 qualifications traceable. The assumption exposed was the
+  screen's interaction with the first-appearance rule (amended). Q1 has its first empirical answer
+  and its limit. Q2's decisive record moves from the Darriwilian to the Late Ordovician Libyan shelf.
+  The transport ratio is now the quantity worth measuring.
+
 ## 2026-10-31: two autonomous sequential sprints, Codex revision for adoption
 
 Barry instructed Claude to draft two substantive sprints, Codex to critique/revise,

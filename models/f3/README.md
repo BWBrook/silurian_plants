@@ -906,7 +906,9 @@ Qualified (receipts in `out/qual/`):
 - origin grid step 0.5 Myr, domain edge 560 Ma; read-outs f_min ∈ {1, 0.1, 0.01};
 - the amended screen.
 
-Every combination that passed the screen needed no shift and passed acceptance at stage 1.
+Every combination that passed the screen needed no shift and passed acceptance at stage 1. The
+criterion is the false-claim rate among screen-passing replicates (amendment 2); read `claims_*` and
+`claimmiss_*` in the receipts before relying on a quantity, since claims are rare at truths near f\*.
 
 Not supported, and not to be assumed:
 - estimating ρ, or a between-section variance from one section;
