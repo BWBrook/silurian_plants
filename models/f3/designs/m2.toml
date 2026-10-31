@@ -158,3 +158,21 @@ diagnostics = [
 # Acceptance quantities, per cell, for the classes containing the truth (H0 and H1 always):
 #   f*_K(t0) delivered coverage; origin-set coverage of t0 (H0c, H0m, H0) at each applicable f_min;
 #   window read-out coverage (H0, start 459.1) at each applicable f_min. X cells are diagnostic.
+
+# --- amendment 1 (2026-10-31, Claude), after the first screen and before any qualification run -----
+# Defect: the frozen screen is computed on the full outcomes. Under the first-appearance rule a detection
+# in the oldest older stage moves tau past every older unit, so S0 fails; passing therefore implies that
+# those units are empty. Conditioning coverage on passing would condition away the very outcomes the
+# bound uses: coverage is then unattainable for any truth with appreciable older intensity, however good
+# the estimator (H2, truth f = 0.3: about 1-2% of replicates pass, all with an empty Hawaz).
+# Repair: S0 and S1 are evaluated on the design and the reference outcomes, with the outcomes of the
+# declared transported (older) units set to 0: the frame's potential to exclude f = 1, not its result.
+# Conditioning on it addresses the selection the rule was adopted for (frames whose reference rate
+# happens to be high). The analysis itself still uses every outcome and still finds its own first
+# appearance; a replicate whose first appearance moves past t0 makes no claim there and covers.
+# Effect on the data: none for any design whose older outcomes are all 0 (every Libyan design; QB under
+# main). QB under inclusive changes. Diagnostic X3 is added: the true reference detection probability
+# at its one-sided 95% lower Clopper-Pearson limit, to measure the selection on a high fitted rate.
+[amendment_1]
+screen = "S0 and S1 on the design with transported-unit outcomes set to 0, unshifted critical value"
+diagnostics_added = [{ name = "X3", history = "H0c", f = 0.3, t0 = 470.0, reference_p = "lower-95" }]

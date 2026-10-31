@@ -110,7 +110,7 @@ def libya_age(formation: str, zone: str) -> tuple[str, str]:
     if "bir tlacsin" in f:
         return "Hirnantian", "Hirnantian"
     if "shugran" in f or "memouniat" in f:
-        return "Katian", "Hirnantian"
+        return "Hirnantian", "Katian"
     if "tanezzuft" in f or "taezzuft" in f or "hot shale" in f:
         if "Cr4" in zone:
             return "Telychian", "Rhuddanian"

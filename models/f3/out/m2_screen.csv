@@ -1,0 +1,513 @@
+design,variant,min_ref,rho,primary,status,passes,tau,n_ref,k_ref,r_ref,n_old,older_detections,dropped_uncalibrated,lr_f1,crit
+LY-H2-CU,allocation=stage;cluster_k=inf;material_type=chart-code,5,1.0,True,passes,True,443.1,8,7,2.079,9,0,0,17.0065,5.9915
+LY-H2-CU,allocation=stage;cluster_k=inf;material_type=chart-code,5,0.5,True,passes,True,443.1,8,7,2.079,9,0,0,11.1199,5.9915
+LY-H2-CU,allocation=stage;cluster_k=inf;material_type=chart-code,5,0.25,True,passes,True,443.1,8,7,2.079,9,0,0,6.7769,5.9915
+LY-H2-CU,allocation=stage;cluster_k=inf;material_type=chart-code,5,0.1,True,S1 fails,False,443.1,8,7,2.079,9,0,0,3.2016,5.9915
+LY-H2-CU,allocation=stage;cluster_k=inf;material_type=chart-code,10,1.0,False,S0 fails: no class has min_units_per_class reference units,False,,,,,,,,,
+LY-H2-CU,allocation=stage;cluster_k=inf;material_type=chart-code,10,0.5,False,S0 fails: no class has min_units_per_class reference units,False,,,,,,,,,
+LY-H2-CU,allocation=stage;cluster_k=inf;material_type=chart-code,10,0.25,False,S0 fails: no class has min_units_per_class reference units,False,,,,,,,,,
+LY-H2-CU,allocation=stage;cluster_k=inf;material_type=chart-code,10,0.1,False,S0 fails: no class has min_units_per_class reference units,False,,,,,,,,,
+LY-H2-CU,allocation=pre459;cluster_k=inf;material_type=chart-code,5,1.0,False,passes,True,443.1,8,7,2.079,9,0,0,17.0065,5.9915
+LY-H2-CU,allocation=pre459;cluster_k=inf;material_type=chart-code,5,0.5,False,passes,True,443.1,8,7,2.079,9,0,0,11.1199,5.9915
+LY-H2-CU,allocation=pre459;cluster_k=inf;material_type=chart-code,5,0.25,False,passes,True,443.1,8,7,2.079,9,0,0,6.7769,5.9915
+LY-H2-CU,allocation=pre459;cluster_k=inf;material_type=chart-code,5,0.1,False,S1 fails,False,443.1,8,7,2.079,9,0,0,3.2016,5.9915
+LY-H2-CU,allocation=pre459;cluster_k=inf;material_type=chart-code,10,1.0,False,S0 fails: no class has min_units_per_class reference units,False,,,,,,,,,
+LY-H2-CU,allocation=pre459;cluster_k=inf;material_type=chart-code,10,0.5,False,S0 fails: no class has min_units_per_class reference units,False,,,,,,,,,
+LY-H2-CU,allocation=pre459;cluster_k=inf;material_type=chart-code,10,0.25,False,S0 fails: no class has min_units_per_class reference units,False,,,,,,,,,
+LY-H2-CU,allocation=pre459;cluster_k=inf;material_type=chart-code,10,0.1,False,S0 fails: no class has min_units_per_class reference units,False,,,,,,,,,
+LY-H2-CU,allocation=stage;cluster_k=inf;material_type=appendix-only,5,1.0,False,passes,True,443.1,8,7,2.079,7,0,0,14.6994,5.9915
+LY-H2-CU,allocation=stage;cluster_k=inf;material_type=appendix-only,5,0.5,False,passes,True,443.1,8,7,2.079,7,0,0,9.3662,5.9915
+LY-H2-CU,allocation=stage;cluster_k=inf;material_type=appendix-only,5,0.25,False,S1 fails,False,443.1,8,7,2.079,7,0,0,5.5718,5.9915
+LY-H2-CU,allocation=stage;cluster_k=inf;material_type=appendix-only,5,0.1,False,S1 fails,False,443.1,8,7,2.079,7,0,0,2.5666,5.9915
+LY-H2-CU,allocation=stage;cluster_k=inf;material_type=appendix-only,10,1.0,False,S0 fails: no class has min_units_per_class reference units,False,,,,,,,,,
+LY-H2-CU,allocation=stage;cluster_k=inf;material_type=appendix-only,10,0.5,False,S0 fails: no class has min_units_per_class reference units,False,,,,,,,,,
+LY-H2-CU,allocation=stage;cluster_k=inf;material_type=appendix-only,10,0.25,False,S0 fails: no class has min_units_per_class reference units,False,,,,,,,,,
+LY-H2-CU,allocation=stage;cluster_k=inf;material_type=appendix-only,10,0.1,False,S0 fails: no class has min_units_per_class reference units,False,,,,,,,,,
+LY-H2-CU,allocation=pre459;cluster_k=inf;material_type=appendix-only,5,1.0,False,passes,True,443.1,8,7,2.079,7,0,0,14.6994,5.9915
+LY-H2-CU,allocation=pre459;cluster_k=inf;material_type=appendix-only,5,0.5,False,passes,True,443.1,8,7,2.079,7,0,0,9.3662,5.9915
+LY-H2-CU,allocation=pre459;cluster_k=inf;material_type=appendix-only,5,0.25,False,S1 fails,False,443.1,8,7,2.079,7,0,0,5.5718,5.9915
+LY-H2-CU,allocation=pre459;cluster_k=inf;material_type=appendix-only,5,0.1,False,S1 fails,False,443.1,8,7,2.079,7,0,0,2.5666,5.9915
+LY-H2-CU,allocation=pre459;cluster_k=inf;material_type=appendix-only,10,1.0,False,S0 fails: no class has min_units_per_class reference units,False,,,,,,,,,
+LY-H2-CU,allocation=pre459;cluster_k=inf;material_type=appendix-only,10,0.5,False,S0 fails: no class has min_units_per_class reference units,False,,,,,,,,,
+LY-H2-CU,allocation=pre459;cluster_k=inf;material_type=appendix-only,10,0.25,False,S0 fails: no class has min_units_per_class reference units,False,,,,,,,,,
+LY-H2-CU,allocation=pre459;cluster_k=inf;material_type=appendix-only,10,0.1,False,S0 fails: no class has min_units_per_class reference units,False,,,,,,,,,
+LY-D1-CU,allocation=stage;cluster_k=inf;material_type=chart-code,5,1.0,True,passes,True,443.1,16,13,1.674,9,0,0,19.1749,5.9915
+LY-D1-CU,allocation=stage;cluster_k=inf;material_type=chart-code,5,0.5,True,passes,True,443.1,16,13,1.674,9,0,0,11.4827,5.9915
+LY-D1-CU,allocation=stage;cluster_k=inf;material_type=chart-code,5,0.25,True,passes,True,443.1,16,13,1.674,9,0,0,6.4595,5.9915
+LY-D1-CU,allocation=stage;cluster_k=inf;material_type=chart-code,5,0.1,True,S1 fails,False,443.1,16,13,1.674,9,0,0,2.8164,5.9915
+LY-D1-CU,allocation=stage;cluster_k=inf;material_type=chart-code,10,1.0,False,passes,True,443.1,16,13,1.674,9,0,0,19.1749,5.9915
+LY-D1-CU,allocation=stage;cluster_k=inf;material_type=chart-code,10,0.5,False,passes,True,443.1,16,13,1.674,9,0,0,11.4827,5.9915
+LY-D1-CU,allocation=stage;cluster_k=inf;material_type=chart-code,10,0.25,False,passes,True,443.1,16,13,1.674,9,0,0,6.4595,5.9915
+LY-D1-CU,allocation=stage;cluster_k=inf;material_type=chart-code,10,0.1,False,S1 fails,False,443.1,16,13,1.674,9,0,0,2.8164,5.9915
+LY-D1-CU,allocation=pre459;cluster_k=inf;material_type=chart-code,5,1.0,False,passes,True,443.1,16,13,1.674,9,0,0,19.1749,5.9915
+LY-D1-CU,allocation=pre459;cluster_k=inf;material_type=chart-code,5,0.5,False,passes,True,443.1,16,13,1.674,9,0,0,11.4827,5.9915
+LY-D1-CU,allocation=pre459;cluster_k=inf;material_type=chart-code,5,0.25,False,passes,True,443.1,16,13,1.674,9,0,0,6.4595,5.9915
+LY-D1-CU,allocation=pre459;cluster_k=inf;material_type=chart-code,5,0.1,False,S1 fails,False,443.1,16,13,1.674,9,0,0,2.8164,5.9915
+LY-D1-CU,allocation=pre459;cluster_k=inf;material_type=chart-code,10,1.0,False,passes,True,443.1,16,13,1.674,9,0,0,19.1749,5.9915
+LY-D1-CU,allocation=pre459;cluster_k=inf;material_type=chart-code,10,0.5,False,passes,True,443.1,16,13,1.674,9,0,0,11.4827,5.9915
+LY-D1-CU,allocation=pre459;cluster_k=inf;material_type=chart-code,10,0.25,False,passes,True,443.1,16,13,1.674,9,0,0,6.4595,5.9915
+LY-D1-CU,allocation=pre459;cluster_k=inf;material_type=chart-code,10,0.1,False,S1 fails,False,443.1,16,13,1.674,9,0,0,2.8164,5.9915
+LY-D1-CU,allocation=stage;cluster_k=inf;material_type=appendix-only,5,1.0,False,passes,True,443.1,14,11,1.54,9,0,0,17.293,5.9915
+LY-D1-CU,allocation=stage;cluster_k=inf;material_type=appendix-only,5,0.5,False,passes,True,443.1,14,11,1.54,9,0,0,10.432,5.9915
+LY-D1-CU,allocation=stage;cluster_k=inf;material_type=appendix-only,5,0.25,False,S1 fails,False,443.1,14,11,1.54,9,0,0,5.8997,5.9915
+LY-D1-CU,allocation=stage;cluster_k=inf;material_type=appendix-only,5,0.1,False,S1 fails,False,443.1,14,11,1.54,9,0,0,2.583,5.9915
+LY-D1-CU,allocation=stage;cluster_k=inf;material_type=appendix-only,10,1.0,False,passes,True,443.1,14,11,1.54,9,0,0,17.293,5.9915
+LY-D1-CU,allocation=stage;cluster_k=inf;material_type=appendix-only,10,0.5,False,passes,True,443.1,14,11,1.54,9,0,0,10.432,5.9915
+LY-D1-CU,allocation=stage;cluster_k=inf;material_type=appendix-only,10,0.25,False,S1 fails,False,443.1,14,11,1.54,9,0,0,5.8997,5.9915
+LY-D1-CU,allocation=stage;cluster_k=inf;material_type=appendix-only,10,0.1,False,S1 fails,False,443.1,14,11,1.54,9,0,0,2.583,5.9915
+LY-D1-CU,allocation=pre459;cluster_k=inf;material_type=appendix-only,5,1.0,False,passes,True,443.1,14,11,1.54,9,0,0,17.293,5.9915
+LY-D1-CU,allocation=pre459;cluster_k=inf;material_type=appendix-only,5,0.5,False,passes,True,443.1,14,11,1.54,9,0,0,10.432,5.9915
+LY-D1-CU,allocation=pre459;cluster_k=inf;material_type=appendix-only,5,0.25,False,S1 fails,False,443.1,14,11,1.54,9,0,0,5.8997,5.9915
+LY-D1-CU,allocation=pre459;cluster_k=inf;material_type=appendix-only,5,0.1,False,S1 fails,False,443.1,14,11,1.54,9,0,0,2.583,5.9915
+LY-D1-CU,allocation=pre459;cluster_k=inf;material_type=appendix-only,10,1.0,False,passes,True,443.1,14,11,1.54,9,0,0,17.293,5.9915
+LY-D1-CU,allocation=pre459;cluster_k=inf;material_type=appendix-only,10,0.5,False,passes,True,443.1,14,11,1.54,9,0,0,10.432,5.9915
+LY-D1-CU,allocation=pre459;cluster_k=inf;material_type=appendix-only,10,0.25,False,S1 fails,False,443.1,14,11,1.54,9,0,0,5.8997,5.9915
+LY-D1-CU,allocation=pre459;cluster_k=inf;material_type=appendix-only,10,0.1,False,S1 fails,False,443.1,14,11,1.54,9,0,0,2.583,5.9915
+LY-I3-CU,allocation=stage;cluster_k=inf;material_type=chart-code,5,1.0,True,passes,True,443.1,20,16,1.609,10,0,0,21.4393,5.9915
+LY-I3-CU,allocation=stage;cluster_k=inf;material_type=chart-code,5,0.5,True,passes,True,443.1,20,16,1.609,10,0,0,12.6548,5.9915
+LY-I3-CU,allocation=stage;cluster_k=inf;material_type=chart-code,5,0.25,True,passes,True,443.1,20,16,1.609,10,0,0,7.0358,5.9915
+LY-I3-CU,allocation=stage;cluster_k=inf;material_type=chart-code,5,0.1,True,S1 fails,False,443.1,20,16,1.609,10,0,0,3.0366,5.9915
+LY-I3-CU,allocation=stage;cluster_k=inf;material_type=chart-code,10,1.0,False,passes,True,443.1,20,16,1.609,10,0,0,21.4393,5.9915
+LY-I3-CU,allocation=stage;cluster_k=inf;material_type=chart-code,10,0.5,False,passes,True,443.1,20,16,1.609,10,0,0,12.6548,5.9915
+LY-I3-CU,allocation=stage;cluster_k=inf;material_type=chart-code,10,0.25,False,passes,True,443.1,20,16,1.609,10,0,0,7.0358,5.9915
+LY-I3-CU,allocation=stage;cluster_k=inf;material_type=chart-code,10,0.1,False,S1 fails,False,443.1,20,16,1.609,10,0,0,3.0366,5.9915
+LY-I3-CU,allocation=pre459;cluster_k=inf;material_type=chart-code,5,1.0,False,passes,True,443.1,20,16,1.609,10,0,0,21.4393,5.9915
+LY-I3-CU,allocation=pre459;cluster_k=inf;material_type=chart-code,5,0.5,False,passes,True,443.1,20,16,1.609,10,0,0,12.6548,5.9915
+LY-I3-CU,allocation=pre459;cluster_k=inf;material_type=chart-code,5,0.25,False,passes,True,443.1,20,16,1.609,10,0,0,7.0358,5.9915
+LY-I3-CU,allocation=pre459;cluster_k=inf;material_type=chart-code,5,0.1,False,S1 fails,False,443.1,20,16,1.609,10,0,0,3.0366,5.9915
+LY-I3-CU,allocation=pre459;cluster_k=inf;material_type=chart-code,10,1.0,False,passes,True,443.1,20,16,1.609,10,0,0,21.4393,5.9915
+LY-I3-CU,allocation=pre459;cluster_k=inf;material_type=chart-code,10,0.5,False,passes,True,443.1,20,16,1.609,10,0,0,12.6548,5.9915
+LY-I3-CU,allocation=pre459;cluster_k=inf;material_type=chart-code,10,0.25,False,passes,True,443.1,20,16,1.609,10,0,0,7.0358,5.9915
+LY-I3-CU,allocation=pre459;cluster_k=inf;material_type=chart-code,10,0.1,False,S1 fails,False,443.1,20,16,1.609,10,0,0,3.0366,5.9915
+LY-I3-CU,allocation=stage;cluster_k=inf;material_type=appendix-only,5,1.0,False,passes,True,443.1,20,16,1.609,10,0,0,21.4393,5.9915
+LY-I3-CU,allocation=stage;cluster_k=inf;material_type=appendix-only,5,0.5,False,passes,True,443.1,20,16,1.609,10,0,0,12.6548,5.9915
+LY-I3-CU,allocation=stage;cluster_k=inf;material_type=appendix-only,5,0.25,False,passes,True,443.1,20,16,1.609,10,0,0,7.0358,5.9915
+LY-I3-CU,allocation=stage;cluster_k=inf;material_type=appendix-only,5,0.1,False,S1 fails,False,443.1,20,16,1.609,10,0,0,3.0366,5.9915
+LY-I3-CU,allocation=stage;cluster_k=inf;material_type=appendix-only,10,1.0,False,passes,True,443.1,20,16,1.609,10,0,0,21.4393,5.9915
+LY-I3-CU,allocation=stage;cluster_k=inf;material_type=appendix-only,10,0.5,False,passes,True,443.1,20,16,1.609,10,0,0,12.6548,5.9915
+LY-I3-CU,allocation=stage;cluster_k=inf;material_type=appendix-only,10,0.25,False,passes,True,443.1,20,16,1.609,10,0,0,7.0358,5.9915
+LY-I3-CU,allocation=stage;cluster_k=inf;material_type=appendix-only,10,0.1,False,S1 fails,False,443.1,20,16,1.609,10,0,0,3.0366,5.9915
+LY-I3-CU,allocation=pre459;cluster_k=inf;material_type=appendix-only,5,1.0,False,passes,True,443.1,20,16,1.609,10,0,0,21.4393,5.9915
+LY-I3-CU,allocation=pre459;cluster_k=inf;material_type=appendix-only,5,0.5,False,passes,True,443.1,20,16,1.609,10,0,0,12.6548,5.9915
+LY-I3-CU,allocation=pre459;cluster_k=inf;material_type=appendix-only,5,0.25,False,passes,True,443.1,20,16,1.609,10,0,0,7.0358,5.9915
+LY-I3-CU,allocation=pre459;cluster_k=inf;material_type=appendix-only,5,0.1,False,S1 fails,False,443.1,20,16,1.609,10,0,0,3.0366,5.9915
+LY-I3-CU,allocation=pre459;cluster_k=inf;material_type=appendix-only,10,1.0,False,passes,True,443.1,20,16,1.609,10,0,0,21.4393,5.9915
+LY-I3-CU,allocation=pre459;cluster_k=inf;material_type=appendix-only,10,0.5,False,passes,True,443.1,20,16,1.609,10,0,0,12.6548,5.9915
+LY-I3-CU,allocation=pre459;cluster_k=inf;material_type=appendix-only,10,0.25,False,passes,True,443.1,20,16,1.609,10,0,0,7.0358,5.9915
+LY-I3-CU,allocation=pre459;cluster_k=inf;material_type=appendix-only,10,0.1,False,S1 fails,False,443.1,20,16,1.609,10,0,0,3.0366,5.9915
+LY-MZ-CU,allocation=stage;cluster_k=2.0;material_type=chart-code,5,1.0,True,passes,True,443.1,59,51,2.85,28,0,0,63.2575,5.9915
+LY-MZ-CU,allocation=stage;cluster_k=2.0;material_type=chart-code,5,0.5,True,passes,True,443.1,59,51,2.85,28,0,0,38.6681,5.9915
+LY-MZ-CU,allocation=stage;cluster_k=2.0;material_type=chart-code,5,0.25,True,passes,True,443.1,59,51,2.85,28,0,0,22.245,5.9915
+LY-MZ-CU,allocation=stage;cluster_k=2.0;material_type=chart-code,5,0.1,True,passes,True,443.1,59,51,2.85,28,0,0,9.9508,5.9915
+LY-MZ-CU,allocation=stage;cluster_k=2.0;material_type=chart-code,10,1.0,False,passes,True,443.1,59,51,2.85,28,0,0,63.2575,5.9915
+LY-MZ-CU,allocation=stage;cluster_k=2.0;material_type=chart-code,10,0.5,False,passes,True,443.1,59,51,2.85,28,0,0,38.6681,5.9915
+LY-MZ-CU,allocation=stage;cluster_k=2.0;material_type=chart-code,10,0.25,False,passes,True,443.1,59,51,2.85,28,0,0,22.245,5.9915
+LY-MZ-CU,allocation=stage;cluster_k=2.0;material_type=chart-code,10,0.1,False,passes,True,443.1,59,51,2.85,28,0,0,9.9508,5.9915
+LY-MZ-CU,allocation=stage;cluster_k=inf;material_type=chart-code,5,1.0,False,passes,True,443.1,59,51,1.998,28,0,0,71.1763,5.9915
+LY-MZ-CU,allocation=stage;cluster_k=inf;material_type=chart-code,5,0.5,False,passes,True,443.1,59,51,1.998,28,0,0,42.5229,5.9915
+LY-MZ-CU,allocation=stage;cluster_k=inf;material_type=chart-code,5,0.25,False,passes,True,443.1,59,51,1.998,28,0,0,23.9146,5.9915
+LY-MZ-CU,allocation=stage;cluster_k=inf;material_type=chart-code,5,0.1,False,passes,True,443.1,59,51,1.998,28,0,0,10.4379,5.9915
+LY-MZ-CU,allocation=stage;cluster_k=inf;material_type=chart-code,10,1.0,False,passes,True,443.1,59,51,1.998,28,0,0,71.1763,5.9915
+LY-MZ-CU,allocation=stage;cluster_k=inf;material_type=chart-code,10,0.5,False,passes,True,443.1,59,51,1.998,28,0,0,42.5229,5.9915
+LY-MZ-CU,allocation=stage;cluster_k=inf;material_type=chart-code,10,0.25,False,passes,True,443.1,59,51,1.998,28,0,0,23.9146,5.9915
+LY-MZ-CU,allocation=stage;cluster_k=inf;material_type=chart-code,10,0.1,False,passes,True,443.1,59,51,1.998,28,0,0,10.4379,5.9915
+LY-MZ-CU,allocation=pre459;cluster_k=2.0;material_type=chart-code,5,1.0,False,passes,True,443.1,59,51,2.85,28,0,0,63.2575,5.9915
+LY-MZ-CU,allocation=pre459;cluster_k=2.0;material_type=chart-code,5,0.5,False,passes,True,443.1,59,51,2.85,28,0,0,38.6681,5.9915
+LY-MZ-CU,allocation=pre459;cluster_k=2.0;material_type=chart-code,5,0.25,False,passes,True,443.1,59,51,2.85,28,0,0,22.245,5.9915
+LY-MZ-CU,allocation=pre459;cluster_k=2.0;material_type=chart-code,5,0.1,False,passes,True,443.1,59,51,2.85,28,0,0,9.9508,5.9915
+LY-MZ-CU,allocation=pre459;cluster_k=2.0;material_type=chart-code,10,1.0,False,passes,True,443.1,59,51,2.85,28,0,0,63.2575,5.9915
+LY-MZ-CU,allocation=pre459;cluster_k=2.0;material_type=chart-code,10,0.5,False,passes,True,443.1,59,51,2.85,28,0,0,38.6681,5.9915
+LY-MZ-CU,allocation=pre459;cluster_k=2.0;material_type=chart-code,10,0.25,False,passes,True,443.1,59,51,2.85,28,0,0,22.245,5.9915
+LY-MZ-CU,allocation=pre459;cluster_k=2.0;material_type=chart-code,10,0.1,False,passes,True,443.1,59,51,2.85,28,0,0,9.9508,5.9915
+LY-MZ-CU,allocation=pre459;cluster_k=inf;material_type=chart-code,5,1.0,False,passes,True,443.1,59,51,1.998,28,0,0,71.1763,5.9915
+LY-MZ-CU,allocation=pre459;cluster_k=inf;material_type=chart-code,5,0.5,False,passes,True,443.1,59,51,1.998,28,0,0,42.5229,5.9915
+LY-MZ-CU,allocation=pre459;cluster_k=inf;material_type=chart-code,5,0.25,False,passes,True,443.1,59,51,1.998,28,0,0,23.9146,5.9915
+LY-MZ-CU,allocation=pre459;cluster_k=inf;material_type=chart-code,5,0.1,False,passes,True,443.1,59,51,1.998,28,0,0,10.4379,5.9915
+LY-MZ-CU,allocation=pre459;cluster_k=inf;material_type=chart-code,10,1.0,False,passes,True,443.1,59,51,1.998,28,0,0,71.1763,5.9915
+LY-MZ-CU,allocation=pre459;cluster_k=inf;material_type=chart-code,10,0.5,False,passes,True,443.1,59,51,1.998,28,0,0,42.5229,5.9915
+LY-MZ-CU,allocation=pre459;cluster_k=inf;material_type=chart-code,10,0.25,False,passes,True,443.1,59,51,1.998,28,0,0,23.9146,5.9915
+LY-MZ-CU,allocation=pre459;cluster_k=inf;material_type=chart-code,10,0.1,False,passes,True,443.1,59,51,1.998,28,0,0,10.4379,5.9915
+LY-MZ-CU,allocation=stage;cluster_k=2.0;material_type=appendix-only,5,1.0,False,passes,True,443.1,57,49,2.807,26,0,0,58.7633,5.9915
+LY-MZ-CU,allocation=stage;cluster_k=2.0;material_type=appendix-only,5,0.5,False,passes,True,443.1,57,49,2.807,26,0,0,35.6428,5.9915
+LY-MZ-CU,allocation=stage;cluster_k=2.0;material_type=appendix-only,5,0.25,False,passes,True,443.1,57,49,2.807,26,0,0,20.3332,5.9915
+LY-MZ-CU,allocation=stage;cluster_k=2.0;material_type=appendix-only,5,0.1,False,passes,True,443.1,57,49,2.807,26,0,0,9.006,5.9915
+LY-MZ-CU,allocation=stage;cluster_k=2.0;material_type=appendix-only,10,1.0,False,passes,True,443.1,57,49,2.807,26,0,0,58.7633,5.9915
+LY-MZ-CU,allocation=stage;cluster_k=2.0;material_type=appendix-only,10,0.5,False,passes,True,443.1,57,49,2.807,26,0,0,35.6428,5.9915
+LY-MZ-CU,allocation=stage;cluster_k=2.0;material_type=appendix-only,10,0.25,False,passes,True,443.1,57,49,2.807,26,0,0,20.3332,5.9915
+LY-MZ-CU,allocation=stage;cluster_k=2.0;material_type=appendix-only,10,0.1,False,passes,True,443.1,57,49,2.807,26,0,0,9.006,5.9915
+LY-MZ-CU,allocation=stage;cluster_k=inf;material_type=appendix-only,5,1.0,False,passes,True,443.1,57,49,1.964,26,0,0,66.0982,5.9915
+LY-MZ-CU,allocation=stage;cluster_k=inf;material_type=appendix-only,5,0.5,False,passes,True,443.1,57,49,1.964,26,0,0,39.2826,5.9915
+LY-MZ-CU,allocation=stage;cluster_k=inf;material_type=appendix-only,5,0.25,False,passes,True,443.1,57,49,1.964,26,0,0,21.995,5.9915
+LY-MZ-CU,allocation=stage;cluster_k=inf;material_type=appendix-only,5,0.1,False,passes,True,443.1,57,49,1.964,26,0,0,9.5617,5.9915
+LY-MZ-CU,allocation=stage;cluster_k=inf;material_type=appendix-only,10,1.0,False,passes,True,443.1,57,49,1.964,26,0,0,66.0982,5.9915
+LY-MZ-CU,allocation=stage;cluster_k=inf;material_type=appendix-only,10,0.5,False,passes,True,443.1,57,49,1.964,26,0,0,39.2826,5.9915
+LY-MZ-CU,allocation=stage;cluster_k=inf;material_type=appendix-only,10,0.25,False,passes,True,443.1,57,49,1.964,26,0,0,21.995,5.9915
+LY-MZ-CU,allocation=stage;cluster_k=inf;material_type=appendix-only,10,0.1,False,passes,True,443.1,57,49,1.964,26,0,0,9.5617,5.9915
+LY-MZ-CU,allocation=pre459;cluster_k=2.0;material_type=appendix-only,5,1.0,False,passes,True,443.1,57,49,2.807,26,0,0,58.7633,5.9915
+LY-MZ-CU,allocation=pre459;cluster_k=2.0;material_type=appendix-only,5,0.5,False,passes,True,443.1,57,49,2.807,26,0,0,35.6428,5.9915
+LY-MZ-CU,allocation=pre459;cluster_k=2.0;material_type=appendix-only,5,0.25,False,passes,True,443.1,57,49,2.807,26,0,0,20.3332,5.9915
+LY-MZ-CU,allocation=pre459;cluster_k=2.0;material_type=appendix-only,5,0.1,False,passes,True,443.1,57,49,2.807,26,0,0,9.006,5.9915
+LY-MZ-CU,allocation=pre459;cluster_k=2.0;material_type=appendix-only,10,1.0,False,passes,True,443.1,57,49,2.807,26,0,0,58.7633,5.9915
+LY-MZ-CU,allocation=pre459;cluster_k=2.0;material_type=appendix-only,10,0.5,False,passes,True,443.1,57,49,2.807,26,0,0,35.6428,5.9915
+LY-MZ-CU,allocation=pre459;cluster_k=2.0;material_type=appendix-only,10,0.25,False,passes,True,443.1,57,49,2.807,26,0,0,20.3332,5.9915
+LY-MZ-CU,allocation=pre459;cluster_k=2.0;material_type=appendix-only,10,0.1,False,passes,True,443.1,57,49,2.807,26,0,0,9.006,5.9915
+LY-MZ-CU,allocation=pre459;cluster_k=inf;material_type=appendix-only,5,1.0,False,passes,True,443.1,57,49,1.964,26,0,0,66.0982,5.9915
+LY-MZ-CU,allocation=pre459;cluster_k=inf;material_type=appendix-only,5,0.5,False,passes,True,443.1,57,49,1.964,26,0,0,39.2826,5.9915
+LY-MZ-CU,allocation=pre459;cluster_k=inf;material_type=appendix-only,5,0.25,False,passes,True,443.1,57,49,1.964,26,0,0,21.995,5.9915
+LY-MZ-CU,allocation=pre459;cluster_k=inf;material_type=appendix-only,5,0.1,False,passes,True,443.1,57,49,1.964,26,0,0,9.5617,5.9915
+LY-MZ-CU,allocation=pre459;cluster_k=inf;material_type=appendix-only,10,1.0,False,passes,True,443.1,57,49,1.964,26,0,0,66.0982,5.9915
+LY-MZ-CU,allocation=pre459;cluster_k=inf;material_type=appendix-only,10,0.5,False,passes,True,443.1,57,49,1.964,26,0,0,39.2826,5.9915
+LY-MZ-CU,allocation=pre459;cluster_k=inf;material_type=appendix-only,10,0.25,False,passes,True,443.1,57,49,1.964,26,0,0,21.995,5.9915
+LY-MZ-CU,allocation=pre459;cluster_k=inf;material_type=appendix-only,10,0.1,False,passes,True,443.1,57,49,1.964,26,0,0,9.5617,5.9915
+LY-XW-CO,a28i=column-absent-zero;allocation=stage;cluster_k=2.0;e1_7287=prose-detected;material_type=chart-code,5,1.0,True,S1 fails,False,443.1,5,1,0.2235,46,0,0,4.3616,5.9915
+LY-XW-CO,a28i=column-absent-zero;allocation=stage;cluster_k=2.0;e1_7287=prose-detected;material_type=chart-code,5,0.5,True,S1 fails,False,443.1,5,1,0.2235,46,0,0,3.2312,5.9915
+LY-XW-CO,a28i=column-absent-zero;allocation=stage;cluster_k=2.0;e1_7287=prose-detected;material_type=chart-code,5,0.25,True,S1 fails,False,443.1,5,1,0.2235,46,0,0,2.2576,5.9915
+LY-XW-CO,a28i=column-absent-zero;allocation=stage;cluster_k=2.0;e1_7287=prose-detected;material_type=chart-code,5,0.1,True,S1 fails,False,443.1,5,1,0.2235,46,0,0,1.2721,5.9915
+LY-XW-CO,a28i=column-absent-zero;allocation=stage;cluster_k=2.0;e1_7287=prose-detected;material_type=chart-code,10,1.0,False,S0 fails: no class has min_units_per_class reference units,False,,,,,,,,,
+LY-XW-CO,a28i=column-absent-zero;allocation=stage;cluster_k=2.0;e1_7287=prose-detected;material_type=chart-code,10,0.5,False,S0 fails: no class has min_units_per_class reference units,False,,,,,,,,,
+LY-XW-CO,a28i=column-absent-zero;allocation=stage;cluster_k=2.0;e1_7287=prose-detected;material_type=chart-code,10,0.25,False,S0 fails: no class has min_units_per_class reference units,False,,,,,,,,,
+LY-XW-CO,a28i=column-absent-zero;allocation=stage;cluster_k=2.0;e1_7287=prose-detected;material_type=chart-code,10,0.1,False,S0 fails: no class has min_units_per_class reference units,False,,,,,,,,,
+LY-XW-CO,a28i=column-absent-zero;allocation=stage;cluster_k=2.0;e1_7287=unresolved;material_type=chart-code,5,1.0,False,S0 fails: no detection,False,,,,,,,,,
+LY-XW-CO,a28i=column-absent-zero;allocation=stage;cluster_k=2.0;e1_7287=unresolved;material_type=chart-code,5,0.5,False,S0 fails: no detection,False,,,,,,,,,
+LY-XW-CO,a28i=column-absent-zero;allocation=stage;cluster_k=2.0;e1_7287=unresolved;material_type=chart-code,5,0.25,False,S0 fails: no detection,False,,,,,,,,,
+LY-XW-CO,a28i=column-absent-zero;allocation=stage;cluster_k=2.0;e1_7287=unresolved;material_type=chart-code,5,0.1,False,S0 fails: no detection,False,,,,,,,,,
+LY-XW-CO,a28i=column-absent-zero;allocation=stage;cluster_k=2.0;e1_7287=unresolved;material_type=chart-code,10,1.0,False,S0 fails: no detection,False,,,,,,,,,
+LY-XW-CO,a28i=column-absent-zero;allocation=stage;cluster_k=2.0;e1_7287=unresolved;material_type=chart-code,10,0.5,False,S0 fails: no detection,False,,,,,,,,,
+LY-XW-CO,a28i=column-absent-zero;allocation=stage;cluster_k=2.0;e1_7287=unresolved;material_type=chart-code,10,0.25,False,S0 fails: no detection,False,,,,,,,,,
+LY-XW-CO,a28i=column-absent-zero;allocation=stage;cluster_k=2.0;e1_7287=unresolved;material_type=chart-code,10,0.1,False,S0 fails: no detection,False,,,,,,,,,
+LY-XW-CO,a28i=column-absent-excluded;allocation=stage;cluster_k=2.0;e1_7287=prose-detected;material_type=chart-code,5,1.0,False,S1 fails,False,443.1,5,1,0.2235,24,0,0,3.2812,5.9915
+LY-XW-CO,a28i=column-absent-excluded;allocation=stage;cluster_k=2.0;e1_7287=prose-detected;material_type=chart-code,5,0.5,False,S1 fails,False,443.1,5,1,0.2235,24,0,0,2.3016,5.9915
+LY-XW-CO,a28i=column-absent-excluded;allocation=stage;cluster_k=2.0;e1_7287=prose-detected;material_type=chart-code,5,0.25,False,S1 fails,False,443.1,5,1,0.2235,24,0,0,1.5144,5.9915
+LY-XW-CO,a28i=column-absent-excluded;allocation=stage;cluster_k=2.0;e1_7287=prose-detected;material_type=chart-code,5,0.1,False,S1 fails,False,443.1,5,1,0.2235,24,0,0,0.7874,5.9915
+LY-XW-CO,a28i=column-absent-excluded;allocation=stage;cluster_k=2.0;e1_7287=prose-detected;material_type=chart-code,10,1.0,False,S0 fails: no class has min_units_per_class reference units,False,,,,,,,,,
+LY-XW-CO,a28i=column-absent-excluded;allocation=stage;cluster_k=2.0;e1_7287=prose-detected;material_type=chart-code,10,0.5,False,S0 fails: no class has min_units_per_class reference units,False,,,,,,,,,
+LY-XW-CO,a28i=column-absent-excluded;allocation=stage;cluster_k=2.0;e1_7287=prose-detected;material_type=chart-code,10,0.25,False,S0 fails: no class has min_units_per_class reference units,False,,,,,,,,,
+LY-XW-CO,a28i=column-absent-excluded;allocation=stage;cluster_k=2.0;e1_7287=prose-detected;material_type=chart-code,10,0.1,False,S0 fails: no class has min_units_per_class reference units,False,,,,,,,,,
+LY-XW-CO,a28i=column-absent-excluded;allocation=stage;cluster_k=2.0;e1_7287=unresolved;material_type=chart-code,5,1.0,False,S0 fails: no detection,False,,,,,,,,,
+LY-XW-CO,a28i=column-absent-excluded;allocation=stage;cluster_k=2.0;e1_7287=unresolved;material_type=chart-code,5,0.5,False,S0 fails: no detection,False,,,,,,,,,
+LY-XW-CO,a28i=column-absent-excluded;allocation=stage;cluster_k=2.0;e1_7287=unresolved;material_type=chart-code,5,0.25,False,S0 fails: no detection,False,,,,,,,,,
+LY-XW-CO,a28i=column-absent-excluded;allocation=stage;cluster_k=2.0;e1_7287=unresolved;material_type=chart-code,5,0.1,False,S0 fails: no detection,False,,,,,,,,,
+LY-XW-CO,a28i=column-absent-excluded;allocation=stage;cluster_k=2.0;e1_7287=unresolved;material_type=chart-code,10,1.0,False,S0 fails: no detection,False,,,,,,,,,
+LY-XW-CO,a28i=column-absent-excluded;allocation=stage;cluster_k=2.0;e1_7287=unresolved;material_type=chart-code,10,0.5,False,S0 fails: no detection,False,,,,,,,,,
+LY-XW-CO,a28i=column-absent-excluded;allocation=stage;cluster_k=2.0;e1_7287=unresolved;material_type=chart-code,10,0.25,False,S0 fails: no detection,False,,,,,,,,,
+LY-XW-CO,a28i=column-absent-excluded;allocation=stage;cluster_k=2.0;e1_7287=unresolved;material_type=chart-code,10,0.1,False,S0 fails: no detection,False,,,,,,,,,
+LY-XW-CO,a28i=column-absent-zero;allocation=stage;cluster_k=inf;e1_7287=prose-detected;material_type=chart-code,5,1.0,False,S1 fails,False,443.1,5,1,0.2231,46,0,0,4.8399,5.9915
+LY-XW-CO,a28i=column-absent-zero;allocation=stage;cluster_k=inf;e1_7287=prose-detected;material_type=chart-code,5,0.5,False,S1 fails,False,443.1,5,1,0.2231,46,0,0,3.6242,5.9915
+LY-XW-CO,a28i=column-absent-zero;allocation=stage;cluster_k=inf;e1_7287=prose-detected;material_type=chart-code,5,0.25,False,S1 fails,False,443.1,5,1,0.2231,46,0,0,2.5408,5.9915
+LY-XW-CO,a28i=column-absent-zero;allocation=stage;cluster_k=inf;e1_7287=prose-detected;material_type=chart-code,5,0.1,False,S1 fails,False,443.1,5,1,0.2231,46,0,0,1.4115,5.9915
+LY-XW-CO,a28i=column-absent-zero;allocation=stage;cluster_k=inf;e1_7287=prose-detected;material_type=chart-code,10,1.0,False,S0 fails: no class has min_units_per_class reference units,False,,,,,,,,,
+LY-XW-CO,a28i=column-absent-zero;allocation=stage;cluster_k=inf;e1_7287=prose-detected;material_type=chart-code,10,0.5,False,S0 fails: no class has min_units_per_class reference units,False,,,,,,,,,
+LY-XW-CO,a28i=column-absent-zero;allocation=stage;cluster_k=inf;e1_7287=prose-detected;material_type=chart-code,10,0.25,False,S0 fails: no class has min_units_per_class reference units,False,,,,,,,,,
+LY-XW-CO,a28i=column-absent-zero;allocation=stage;cluster_k=inf;e1_7287=prose-detected;material_type=chart-code,10,0.1,False,S0 fails: no class has min_units_per_class reference units,False,,,,,,,,,
+LY-XW-CO,a28i=column-absent-zero;allocation=stage;cluster_k=inf;e1_7287=unresolved;material_type=chart-code,5,1.0,False,S0 fails: no detection,False,,,,,,,,,
+LY-XW-CO,a28i=column-absent-zero;allocation=stage;cluster_k=inf;e1_7287=unresolved;material_type=chart-code,5,0.5,False,S0 fails: no detection,False,,,,,,,,,
+LY-XW-CO,a28i=column-absent-zero;allocation=stage;cluster_k=inf;e1_7287=unresolved;material_type=chart-code,5,0.25,False,S0 fails: no detection,False,,,,,,,,,
+LY-XW-CO,a28i=column-absent-zero;allocation=stage;cluster_k=inf;e1_7287=unresolved;material_type=chart-code,5,0.1,False,S0 fails: no detection,False,,,,,,,,,
+LY-XW-CO,a28i=column-absent-zero;allocation=stage;cluster_k=inf;e1_7287=unresolved;material_type=chart-code,10,1.0,False,S0 fails: no detection,False,,,,,,,,,
+LY-XW-CO,a28i=column-absent-zero;allocation=stage;cluster_k=inf;e1_7287=unresolved;material_type=chart-code,10,0.5,False,S0 fails: no detection,False,,,,,,,,,
+LY-XW-CO,a28i=column-absent-zero;allocation=stage;cluster_k=inf;e1_7287=unresolved;material_type=chart-code,10,0.25,False,S0 fails: no detection,False,,,,,,,,,
+LY-XW-CO,a28i=column-absent-zero;allocation=stage;cluster_k=inf;e1_7287=unresolved;material_type=chart-code,10,0.1,False,S0 fails: no detection,False,,,,,,,,,
+LY-XW-CO,a28i=column-absent-excluded;allocation=stage;cluster_k=inf;e1_7287=prose-detected;material_type=chart-code,5,1.0,False,S1 fails,False,443.1,5,1,0.2231,24,0,0,3.6957,5.9915
+LY-XW-CO,a28i=column-absent-excluded;allocation=stage;cluster_k=inf;e1_7287=prose-detected;material_type=chart-code,5,0.5,False,S1 fails,False,443.1,5,1,0.2231,24,0,0,2.6024,5.9915
+LY-XW-CO,a28i=column-absent-excluded;allocation=stage;cluster_k=inf;e1_7287=prose-detected;material_type=chart-code,5,0.25,False,S1 fails,False,443.1,5,1,0.2231,24,0,0,1.698,5.9915
+LY-XW-CO,a28i=column-absent-excluded;allocation=stage;cluster_k=inf;e1_7287=prose-detected;material_type=chart-code,5,0.1,False,S1 fails,False,443.1,5,1,0.2231,24,0,0,0.8573,5.9915
+LY-XW-CO,a28i=column-absent-excluded;allocation=stage;cluster_k=inf;e1_7287=prose-detected;material_type=chart-code,10,1.0,False,S0 fails: no class has min_units_per_class reference units,False,,,,,,,,,
+LY-XW-CO,a28i=column-absent-excluded;allocation=stage;cluster_k=inf;e1_7287=prose-detected;material_type=chart-code,10,0.5,False,S0 fails: no class has min_units_per_class reference units,False,,,,,,,,,
+LY-XW-CO,a28i=column-absent-excluded;allocation=stage;cluster_k=inf;e1_7287=prose-detected;material_type=chart-code,10,0.25,False,S0 fails: no class has min_units_per_class reference units,False,,,,,,,,,
+LY-XW-CO,a28i=column-absent-excluded;allocation=stage;cluster_k=inf;e1_7287=prose-detected;material_type=chart-code,10,0.1,False,S0 fails: no class has min_units_per_class reference units,False,,,,,,,,,
+LY-XW-CO,a28i=column-absent-excluded;allocation=stage;cluster_k=inf;e1_7287=unresolved;material_type=chart-code,5,1.0,False,S0 fails: no detection,False,,,,,,,,,
+LY-XW-CO,a28i=column-absent-excluded;allocation=stage;cluster_k=inf;e1_7287=unresolved;material_type=chart-code,5,0.5,False,S0 fails: no detection,False,,,,,,,,,
+LY-XW-CO,a28i=column-absent-excluded;allocation=stage;cluster_k=inf;e1_7287=unresolved;material_type=chart-code,5,0.25,False,S0 fails: no detection,False,,,,,,,,,
+LY-XW-CO,a28i=column-absent-excluded;allocation=stage;cluster_k=inf;e1_7287=unresolved;material_type=chart-code,5,0.1,False,S0 fails: no detection,False,,,,,,,,,
+LY-XW-CO,a28i=column-absent-excluded;allocation=stage;cluster_k=inf;e1_7287=unresolved;material_type=chart-code,10,1.0,False,S0 fails: no detection,False,,,,,,,,,
+LY-XW-CO,a28i=column-absent-excluded;allocation=stage;cluster_k=inf;e1_7287=unresolved;material_type=chart-code,10,0.5,False,S0 fails: no detection,False,,,,,,,,,
+LY-XW-CO,a28i=column-absent-excluded;allocation=stage;cluster_k=inf;e1_7287=unresolved;material_type=chart-code,10,0.25,False,S0 fails: no detection,False,,,,,,,,,
+LY-XW-CO,a28i=column-absent-excluded;allocation=stage;cluster_k=inf;e1_7287=unresolved;material_type=chart-code,10,0.1,False,S0 fails: no detection,False,,,,,,,,,
+LY-XW-CO,a28i=column-absent-zero;allocation=pre459;cluster_k=2.0;e1_7287=prose-detected;material_type=chart-code,5,1.0,False,S1 fails,False,443.1,5,1,0.2235,46,0,0,4.3616,5.9915
+LY-XW-CO,a28i=column-absent-zero;allocation=pre459;cluster_k=2.0;e1_7287=prose-detected;material_type=chart-code,5,0.5,False,S1 fails,False,443.1,5,1,0.2235,46,0,0,3.2312,5.9915
+LY-XW-CO,a28i=column-absent-zero;allocation=pre459;cluster_k=2.0;e1_7287=prose-detected;material_type=chart-code,5,0.25,False,S1 fails,False,443.1,5,1,0.2235,46,0,0,2.2576,5.9915
+LY-XW-CO,a28i=column-absent-zero;allocation=pre459;cluster_k=2.0;e1_7287=prose-detected;material_type=chart-code,5,0.1,False,S1 fails,False,443.1,5,1,0.2235,46,0,0,1.2721,5.9915
+LY-XW-CO,a28i=column-absent-zero;allocation=pre459;cluster_k=2.0;e1_7287=prose-detected;material_type=chart-code,10,1.0,False,S0 fails: no class has min_units_per_class reference units,False,,,,,,,,,
+LY-XW-CO,a28i=column-absent-zero;allocation=pre459;cluster_k=2.0;e1_7287=prose-detected;material_type=chart-code,10,0.5,False,S0 fails: no class has min_units_per_class reference units,False,,,,,,,,,
+LY-XW-CO,a28i=column-absent-zero;allocation=pre459;cluster_k=2.0;e1_7287=prose-detected;material_type=chart-code,10,0.25,False,S0 fails: no class has min_units_per_class reference units,False,,,,,,,,,
+LY-XW-CO,a28i=column-absent-zero;allocation=pre459;cluster_k=2.0;e1_7287=prose-detected;material_type=chart-code,10,0.1,False,S0 fails: no class has min_units_per_class reference units,False,,,,,,,,,
+LY-XW-CO,a28i=column-absent-zero;allocation=pre459;cluster_k=2.0;e1_7287=unresolved;material_type=chart-code,5,1.0,False,S0 fails: no detection,False,,,,,,,,,
+LY-XW-CO,a28i=column-absent-zero;allocation=pre459;cluster_k=2.0;e1_7287=unresolved;material_type=chart-code,5,0.5,False,S0 fails: no detection,False,,,,,,,,,
+LY-XW-CO,a28i=column-absent-zero;allocation=pre459;cluster_k=2.0;e1_7287=unresolved;material_type=chart-code,5,0.25,False,S0 fails: no detection,False,,,,,,,,,
+LY-XW-CO,a28i=column-absent-zero;allocation=pre459;cluster_k=2.0;e1_7287=unresolved;material_type=chart-code,5,0.1,False,S0 fails: no detection,False,,,,,,,,,
+LY-XW-CO,a28i=column-absent-zero;allocation=pre459;cluster_k=2.0;e1_7287=unresolved;material_type=chart-code,10,1.0,False,S0 fails: no detection,False,,,,,,,,,
+LY-XW-CO,a28i=column-absent-zero;allocation=pre459;cluster_k=2.0;e1_7287=unresolved;material_type=chart-code,10,0.5,False,S0 fails: no detection,False,,,,,,,,,
+LY-XW-CO,a28i=column-absent-zero;allocation=pre459;cluster_k=2.0;e1_7287=unresolved;material_type=chart-code,10,0.25,False,S0 fails: no detection,False,,,,,,,,,
+LY-XW-CO,a28i=column-absent-zero;allocation=pre459;cluster_k=2.0;e1_7287=unresolved;material_type=chart-code,10,0.1,False,S0 fails: no detection,False,,,,,,,,,
+LY-XW-CO,a28i=column-absent-excluded;allocation=pre459;cluster_k=2.0;e1_7287=prose-detected;material_type=chart-code,5,1.0,False,S1 fails,False,443.1,5,1,0.2235,24,0,0,3.2812,5.9915
+LY-XW-CO,a28i=column-absent-excluded;allocation=pre459;cluster_k=2.0;e1_7287=prose-detected;material_type=chart-code,5,0.5,False,S1 fails,False,443.1,5,1,0.2235,24,0,0,2.3016,5.9915
+LY-XW-CO,a28i=column-absent-excluded;allocation=pre459;cluster_k=2.0;e1_7287=prose-detected;material_type=chart-code,5,0.25,False,S1 fails,False,443.1,5,1,0.2235,24,0,0,1.5144,5.9915
+LY-XW-CO,a28i=column-absent-excluded;allocation=pre459;cluster_k=2.0;e1_7287=prose-detected;material_type=chart-code,5,0.1,False,S1 fails,False,443.1,5,1,0.2235,24,0,0,0.7874,5.9915
+LY-XW-CO,a28i=column-absent-excluded;allocation=pre459;cluster_k=2.0;e1_7287=prose-detected;material_type=chart-code,10,1.0,False,S0 fails: no class has min_units_per_class reference units,False,,,,,,,,,
+LY-XW-CO,a28i=column-absent-excluded;allocation=pre459;cluster_k=2.0;e1_7287=prose-detected;material_type=chart-code,10,0.5,False,S0 fails: no class has min_units_per_class reference units,False,,,,,,,,,
+LY-XW-CO,a28i=column-absent-excluded;allocation=pre459;cluster_k=2.0;e1_7287=prose-detected;material_type=chart-code,10,0.25,False,S0 fails: no class has min_units_per_class reference units,False,,,,,,,,,
+LY-XW-CO,a28i=column-absent-excluded;allocation=pre459;cluster_k=2.0;e1_7287=prose-detected;material_type=chart-code,10,0.1,False,S0 fails: no class has min_units_per_class reference units,False,,,,,,,,,
+LY-XW-CO,a28i=column-absent-excluded;allocation=pre459;cluster_k=2.0;e1_7287=unresolved;material_type=chart-code,5,1.0,False,S0 fails: no detection,False,,,,,,,,,
+LY-XW-CO,a28i=column-absent-excluded;allocation=pre459;cluster_k=2.0;e1_7287=unresolved;material_type=chart-code,5,0.5,False,S0 fails: no detection,False,,,,,,,,,
+LY-XW-CO,a28i=column-absent-excluded;allocation=pre459;cluster_k=2.0;e1_7287=unresolved;material_type=chart-code,5,0.25,False,S0 fails: no detection,False,,,,,,,,,
+LY-XW-CO,a28i=column-absent-excluded;allocation=pre459;cluster_k=2.0;e1_7287=unresolved;material_type=chart-code,5,0.1,False,S0 fails: no detection,False,,,,,,,,,
+LY-XW-CO,a28i=column-absent-excluded;allocation=pre459;cluster_k=2.0;e1_7287=unresolved;material_type=chart-code,10,1.0,False,S0 fails: no detection,False,,,,,,,,,
+LY-XW-CO,a28i=column-absent-excluded;allocation=pre459;cluster_k=2.0;e1_7287=unresolved;material_type=chart-code,10,0.5,False,S0 fails: no detection,False,,,,,,,,,
+LY-XW-CO,a28i=column-absent-excluded;allocation=pre459;cluster_k=2.0;e1_7287=unresolved;material_type=chart-code,10,0.25,False,S0 fails: no detection,False,,,,,,,,,
+LY-XW-CO,a28i=column-absent-excluded;allocation=pre459;cluster_k=2.0;e1_7287=unresolved;material_type=chart-code,10,0.1,False,S0 fails: no detection,False,,,,,,,,,
+LY-XW-CO,a28i=column-absent-zero;allocation=pre459;cluster_k=inf;e1_7287=prose-detected;material_type=chart-code,5,1.0,False,S1 fails,False,443.1,5,1,0.2231,46,0,0,4.8399,5.9915
+LY-XW-CO,a28i=column-absent-zero;allocation=pre459;cluster_k=inf;e1_7287=prose-detected;material_type=chart-code,5,0.5,False,S1 fails,False,443.1,5,1,0.2231,46,0,0,3.6242,5.9915
+LY-XW-CO,a28i=column-absent-zero;allocation=pre459;cluster_k=inf;e1_7287=prose-detected;material_type=chart-code,5,0.25,False,S1 fails,False,443.1,5,1,0.2231,46,0,0,2.5408,5.9915
+LY-XW-CO,a28i=column-absent-zero;allocation=pre459;cluster_k=inf;e1_7287=prose-detected;material_type=chart-code,5,0.1,False,S1 fails,False,443.1,5,1,0.2231,46,0,0,1.4115,5.9915
+LY-XW-CO,a28i=column-absent-zero;allocation=pre459;cluster_k=inf;e1_7287=prose-detected;material_type=chart-code,10,1.0,False,S0 fails: no class has min_units_per_class reference units,False,,,,,,,,,
+LY-XW-CO,a28i=column-absent-zero;allocation=pre459;cluster_k=inf;e1_7287=prose-detected;material_type=chart-code,10,0.5,False,S0 fails: no class has min_units_per_class reference units,False,,,,,,,,,
+LY-XW-CO,a28i=column-absent-zero;allocation=pre459;cluster_k=inf;e1_7287=prose-detected;material_type=chart-code,10,0.25,False,S0 fails: no class has min_units_per_class reference units,False,,,,,,,,,
+LY-XW-CO,a28i=column-absent-zero;allocation=pre459;cluster_k=inf;e1_7287=prose-detected;material_type=chart-code,10,0.1,False,S0 fails: no class has min_units_per_class reference units,False,,,,,,,,,
+LY-XW-CO,a28i=column-absent-zero;allocation=pre459;cluster_k=inf;e1_7287=unresolved;material_type=chart-code,5,1.0,False,S0 fails: no detection,False,,,,,,,,,
+LY-XW-CO,a28i=column-absent-zero;allocation=pre459;cluster_k=inf;e1_7287=unresolved;material_type=chart-code,5,0.5,False,S0 fails: no detection,False,,,,,,,,,
+LY-XW-CO,a28i=column-absent-zero;allocation=pre459;cluster_k=inf;e1_7287=unresolved;material_type=chart-code,5,0.25,False,S0 fails: no detection,False,,,,,,,,,
+LY-XW-CO,a28i=column-absent-zero;allocation=pre459;cluster_k=inf;e1_7287=unresolved;material_type=chart-code,5,0.1,False,S0 fails: no detection,False,,,,,,,,,
+LY-XW-CO,a28i=column-absent-zero;allocation=pre459;cluster_k=inf;e1_7287=unresolved;material_type=chart-code,10,1.0,False,S0 fails: no detection,False,,,,,,,,,
+LY-XW-CO,a28i=column-absent-zero;allocation=pre459;cluster_k=inf;e1_7287=unresolved;material_type=chart-code,10,0.5,False,S0 fails: no detection,False,,,,,,,,,
+LY-XW-CO,a28i=column-absent-zero;allocation=pre459;cluster_k=inf;e1_7287=unresolved;material_type=chart-code,10,0.25,False,S0 fails: no detection,False,,,,,,,,,
+LY-XW-CO,a28i=column-absent-zero;allocation=pre459;cluster_k=inf;e1_7287=unresolved;material_type=chart-code,10,0.1,False,S0 fails: no detection,False,,,,,,,,,
+LY-XW-CO,a28i=column-absent-excluded;allocation=pre459;cluster_k=inf;e1_7287=prose-detected;material_type=chart-code,5,1.0,False,S1 fails,False,443.1,5,1,0.2231,24,0,0,3.6957,5.9915
+LY-XW-CO,a28i=column-absent-excluded;allocation=pre459;cluster_k=inf;e1_7287=prose-detected;material_type=chart-code,5,0.5,False,S1 fails,False,443.1,5,1,0.2231,24,0,0,2.6024,5.9915
+LY-XW-CO,a28i=column-absent-excluded;allocation=pre459;cluster_k=inf;e1_7287=prose-detected;material_type=chart-code,5,0.25,False,S1 fails,False,443.1,5,1,0.2231,24,0,0,1.698,5.9915
+LY-XW-CO,a28i=column-absent-excluded;allocation=pre459;cluster_k=inf;e1_7287=prose-detected;material_type=chart-code,5,0.1,False,S1 fails,False,443.1,5,1,0.2231,24,0,0,0.8573,5.9915
+LY-XW-CO,a28i=column-absent-excluded;allocation=pre459;cluster_k=inf;e1_7287=prose-detected;material_type=chart-code,10,1.0,False,S0 fails: no class has min_units_per_class reference units,False,,,,,,,,,
+LY-XW-CO,a28i=column-absent-excluded;allocation=pre459;cluster_k=inf;e1_7287=prose-detected;material_type=chart-code,10,0.5,False,S0 fails: no class has min_units_per_class reference units,False,,,,,,,,,
+LY-XW-CO,a28i=column-absent-excluded;allocation=pre459;cluster_k=inf;e1_7287=prose-detected;material_type=chart-code,10,0.25,False,S0 fails: no class has min_units_per_class reference units,False,,,,,,,,,
+LY-XW-CO,a28i=column-absent-excluded;allocation=pre459;cluster_k=inf;e1_7287=prose-detected;material_type=chart-code,10,0.1,False,S0 fails: no class has min_units_per_class reference units,False,,,,,,,,,
+LY-XW-CO,a28i=column-absent-excluded;allocation=pre459;cluster_k=inf;e1_7287=unresolved;material_type=chart-code,5,1.0,False,S0 fails: no detection,False,,,,,,,,,
+LY-XW-CO,a28i=column-absent-excluded;allocation=pre459;cluster_k=inf;e1_7287=unresolved;material_type=chart-code,5,0.5,False,S0 fails: no detection,False,,,,,,,,,
+LY-XW-CO,a28i=column-absent-excluded;allocation=pre459;cluster_k=inf;e1_7287=unresolved;material_type=chart-code,5,0.25,False,S0 fails: no detection,False,,,,,,,,,
+LY-XW-CO,a28i=column-absent-excluded;allocation=pre459;cluster_k=inf;e1_7287=unresolved;material_type=chart-code,5,0.1,False,S0 fails: no detection,False,,,,,,,,,
+LY-XW-CO,a28i=column-absent-excluded;allocation=pre459;cluster_k=inf;e1_7287=unresolved;material_type=chart-code,10,1.0,False,S0 fails: no detection,False,,,,,,,,,
+LY-XW-CO,a28i=column-absent-excluded;allocation=pre459;cluster_k=inf;e1_7287=unresolved;material_type=chart-code,10,0.5,False,S0 fails: no detection,False,,,,,,,,,
+LY-XW-CO,a28i=column-absent-excluded;allocation=pre459;cluster_k=inf;e1_7287=unresolved;material_type=chart-code,10,0.25,False,S0 fails: no detection,False,,,,,,,,,
+LY-XW-CO,a28i=column-absent-excluded;allocation=pre459;cluster_k=inf;e1_7287=unresolved;material_type=chart-code,10,0.1,False,S0 fails: no detection,False,,,,,,,,,
+LY-XW-CO,a28i=column-absent-zero;allocation=stage;cluster_k=2.0;e1_7287=prose-detected;material_type=appendix-only,5,1.0,False,S1 fails,False,443.1,5,1,0.2235,46,0,0,4.3616,5.9915
+LY-XW-CO,a28i=column-absent-zero;allocation=stage;cluster_k=2.0;e1_7287=prose-detected;material_type=appendix-only,5,0.5,False,S1 fails,False,443.1,5,1,0.2235,46,0,0,3.2312,5.9915
+LY-XW-CO,a28i=column-absent-zero;allocation=stage;cluster_k=2.0;e1_7287=prose-detected;material_type=appendix-only,5,0.25,False,S1 fails,False,443.1,5,1,0.2235,46,0,0,2.2576,5.9915
+LY-XW-CO,a28i=column-absent-zero;allocation=stage;cluster_k=2.0;e1_7287=prose-detected;material_type=appendix-only,5,0.1,False,S1 fails,False,443.1,5,1,0.2235,46,0,0,1.2721,5.9915
+LY-XW-CO,a28i=column-absent-zero;allocation=stage;cluster_k=2.0;e1_7287=prose-detected;material_type=appendix-only,10,1.0,False,S0 fails: no class has min_units_per_class reference units,False,,,,,,,,,
+LY-XW-CO,a28i=column-absent-zero;allocation=stage;cluster_k=2.0;e1_7287=prose-detected;material_type=appendix-only,10,0.5,False,S0 fails: no class has min_units_per_class reference units,False,,,,,,,,,
+LY-XW-CO,a28i=column-absent-zero;allocation=stage;cluster_k=2.0;e1_7287=prose-detected;material_type=appendix-only,10,0.25,False,S0 fails: no class has min_units_per_class reference units,False,,,,,,,,,
+LY-XW-CO,a28i=column-absent-zero;allocation=stage;cluster_k=2.0;e1_7287=prose-detected;material_type=appendix-only,10,0.1,False,S0 fails: no class has min_units_per_class reference units,False,,,,,,,,,
+LY-XW-CO,a28i=column-absent-zero;allocation=stage;cluster_k=2.0;e1_7287=unresolved;material_type=appendix-only,5,1.0,False,S0 fails: no detection,False,,,,,,,,,
+LY-XW-CO,a28i=column-absent-zero;allocation=stage;cluster_k=2.0;e1_7287=unresolved;material_type=appendix-only,5,0.5,False,S0 fails: no detection,False,,,,,,,,,
+LY-XW-CO,a28i=column-absent-zero;allocation=stage;cluster_k=2.0;e1_7287=unresolved;material_type=appendix-only,5,0.25,False,S0 fails: no detection,False,,,,,,,,,
+LY-XW-CO,a28i=column-absent-zero;allocation=stage;cluster_k=2.0;e1_7287=unresolved;material_type=appendix-only,5,0.1,False,S0 fails: no detection,False,,,,,,,,,
+LY-XW-CO,a28i=column-absent-zero;allocation=stage;cluster_k=2.0;e1_7287=unresolved;material_type=appendix-only,10,1.0,False,S0 fails: no detection,False,,,,,,,,,
+LY-XW-CO,a28i=column-absent-zero;allocation=stage;cluster_k=2.0;e1_7287=unresolved;material_type=appendix-only,10,0.5,False,S0 fails: no detection,False,,,,,,,,,
+LY-XW-CO,a28i=column-absent-zero;allocation=stage;cluster_k=2.0;e1_7287=unresolved;material_type=appendix-only,10,0.25,False,S0 fails: no detection,False,,,,,,,,,
+LY-XW-CO,a28i=column-absent-zero;allocation=stage;cluster_k=2.0;e1_7287=unresolved;material_type=appendix-only,10,0.1,False,S0 fails: no detection,False,,,,,,,,,
+LY-XW-CO,a28i=column-absent-excluded;allocation=stage;cluster_k=2.0;e1_7287=prose-detected;material_type=appendix-only,5,1.0,False,S1 fails,False,443.1,5,1,0.2235,24,0,0,3.2812,5.9915
+LY-XW-CO,a28i=column-absent-excluded;allocation=stage;cluster_k=2.0;e1_7287=prose-detected;material_type=appendix-only,5,0.5,False,S1 fails,False,443.1,5,1,0.2235,24,0,0,2.3016,5.9915
+LY-XW-CO,a28i=column-absent-excluded;allocation=stage;cluster_k=2.0;e1_7287=prose-detected;material_type=appendix-only,5,0.25,False,S1 fails,False,443.1,5,1,0.2235,24,0,0,1.5144,5.9915
+LY-XW-CO,a28i=column-absent-excluded;allocation=stage;cluster_k=2.0;e1_7287=prose-detected;material_type=appendix-only,5,0.1,False,S1 fails,False,443.1,5,1,0.2235,24,0,0,0.7874,5.9915
+LY-XW-CO,a28i=column-absent-excluded;allocation=stage;cluster_k=2.0;e1_7287=prose-detected;material_type=appendix-only,10,1.0,False,S0 fails: no class has min_units_per_class reference units,False,,,,,,,,,
+LY-XW-CO,a28i=column-absent-excluded;allocation=stage;cluster_k=2.0;e1_7287=prose-detected;material_type=appendix-only,10,0.5,False,S0 fails: no class has min_units_per_class reference units,False,,,,,,,,,
+LY-XW-CO,a28i=column-absent-excluded;allocation=stage;cluster_k=2.0;e1_7287=prose-detected;material_type=appendix-only,10,0.25,False,S0 fails: no class has min_units_per_class reference units,False,,,,,,,,,
+LY-XW-CO,a28i=column-absent-excluded;allocation=stage;cluster_k=2.0;e1_7287=prose-detected;material_type=appendix-only,10,0.1,False,S0 fails: no class has min_units_per_class reference units,False,,,,,,,,,
+LY-XW-CO,a28i=column-absent-excluded;allocation=stage;cluster_k=2.0;e1_7287=unresolved;material_type=appendix-only,5,1.0,False,S0 fails: no detection,False,,,,,,,,,
+LY-XW-CO,a28i=column-absent-excluded;allocation=stage;cluster_k=2.0;e1_7287=unresolved;material_type=appendix-only,5,0.5,False,S0 fails: no detection,False,,,,,,,,,
+LY-XW-CO,a28i=column-absent-excluded;allocation=stage;cluster_k=2.0;e1_7287=unresolved;material_type=appendix-only,5,0.25,False,S0 fails: no detection,False,,,,,,,,,
+LY-XW-CO,a28i=column-absent-excluded;allocation=stage;cluster_k=2.0;e1_7287=unresolved;material_type=appendix-only,5,0.1,False,S0 fails: no detection,False,,,,,,,,,
+LY-XW-CO,a28i=column-absent-excluded;allocation=stage;cluster_k=2.0;e1_7287=unresolved;material_type=appendix-only,10,1.0,False,S0 fails: no detection,False,,,,,,,,,
+LY-XW-CO,a28i=column-absent-excluded;allocation=stage;cluster_k=2.0;e1_7287=unresolved;material_type=appendix-only,10,0.5,False,S0 fails: no detection,False,,,,,,,,,
+LY-XW-CO,a28i=column-absent-excluded;allocation=stage;cluster_k=2.0;e1_7287=unresolved;material_type=appendix-only,10,0.25,False,S0 fails: no detection,False,,,,,,,,,
+LY-XW-CO,a28i=column-absent-excluded;allocation=stage;cluster_k=2.0;e1_7287=unresolved;material_type=appendix-only,10,0.1,False,S0 fails: no detection,False,,,,,,,,,
+LY-XW-CO,a28i=column-absent-zero;allocation=stage;cluster_k=inf;e1_7287=prose-detected;material_type=appendix-only,5,1.0,False,S1 fails,False,443.1,5,1,0.2231,46,0,0,4.8399,5.9915
+LY-XW-CO,a28i=column-absent-zero;allocation=stage;cluster_k=inf;e1_7287=prose-detected;material_type=appendix-only,5,0.5,False,S1 fails,False,443.1,5,1,0.2231,46,0,0,3.6242,5.9915
+LY-XW-CO,a28i=column-absent-zero;allocation=stage;cluster_k=inf;e1_7287=prose-detected;material_type=appendix-only,5,0.25,False,S1 fails,False,443.1,5,1,0.2231,46,0,0,2.5408,5.9915
+LY-XW-CO,a28i=column-absent-zero;allocation=stage;cluster_k=inf;e1_7287=prose-detected;material_type=appendix-only,5,0.1,False,S1 fails,False,443.1,5,1,0.2231,46,0,0,1.4115,5.9915
+LY-XW-CO,a28i=column-absent-zero;allocation=stage;cluster_k=inf;e1_7287=prose-detected;material_type=appendix-only,10,1.0,False,S0 fails: no class has min_units_per_class reference units,False,,,,,,,,,
+LY-XW-CO,a28i=column-absent-zero;allocation=stage;cluster_k=inf;e1_7287=prose-detected;material_type=appendix-only,10,0.5,False,S0 fails: no class has min_units_per_class reference units,False,,,,,,,,,
+LY-XW-CO,a28i=column-absent-zero;allocation=stage;cluster_k=inf;e1_7287=prose-detected;material_type=appendix-only,10,0.25,False,S0 fails: no class has min_units_per_class reference units,False,,,,,,,,,
+LY-XW-CO,a28i=column-absent-zero;allocation=stage;cluster_k=inf;e1_7287=prose-detected;material_type=appendix-only,10,0.1,False,S0 fails: no class has min_units_per_class reference units,False,,,,,,,,,
+LY-XW-CO,a28i=column-absent-zero;allocation=stage;cluster_k=inf;e1_7287=unresolved;material_type=appendix-only,5,1.0,False,S0 fails: no detection,False,,,,,,,,,
+LY-XW-CO,a28i=column-absent-zero;allocation=stage;cluster_k=inf;e1_7287=unresolved;material_type=appendix-only,5,0.5,False,S0 fails: no detection,False,,,,,,,,,
+LY-XW-CO,a28i=column-absent-zero;allocation=stage;cluster_k=inf;e1_7287=unresolved;material_type=appendix-only,5,0.25,False,S0 fails: no detection,False,,,,,,,,,
+LY-XW-CO,a28i=column-absent-zero;allocation=stage;cluster_k=inf;e1_7287=unresolved;material_type=appendix-only,5,0.1,False,S0 fails: no detection,False,,,,,,,,,
+LY-XW-CO,a28i=column-absent-zero;allocation=stage;cluster_k=inf;e1_7287=unresolved;material_type=appendix-only,10,1.0,False,S0 fails: no detection,False,,,,,,,,,
+LY-XW-CO,a28i=column-absent-zero;allocation=stage;cluster_k=inf;e1_7287=unresolved;material_type=appendix-only,10,0.5,False,S0 fails: no detection,False,,,,,,,,,
+LY-XW-CO,a28i=column-absent-zero;allocation=stage;cluster_k=inf;e1_7287=unresolved;material_type=appendix-only,10,0.25,False,S0 fails: no detection,False,,,,,,,,,
+LY-XW-CO,a28i=column-absent-zero;allocation=stage;cluster_k=inf;e1_7287=unresolved;material_type=appendix-only,10,0.1,False,S0 fails: no detection,False,,,,,,,,,
+LY-XW-CO,a28i=column-absent-excluded;allocation=stage;cluster_k=inf;e1_7287=prose-detected;material_type=appendix-only,5,1.0,False,S1 fails,False,443.1,5,1,0.2231,24,0,0,3.6957,5.9915
+LY-XW-CO,a28i=column-absent-excluded;allocation=stage;cluster_k=inf;e1_7287=prose-detected;material_type=appendix-only,5,0.5,False,S1 fails,False,443.1,5,1,0.2231,24,0,0,2.6024,5.9915
+LY-XW-CO,a28i=column-absent-excluded;allocation=stage;cluster_k=inf;e1_7287=prose-detected;material_type=appendix-only,5,0.25,False,S1 fails,False,443.1,5,1,0.2231,24,0,0,1.698,5.9915
+LY-XW-CO,a28i=column-absent-excluded;allocation=stage;cluster_k=inf;e1_7287=prose-detected;material_type=appendix-only,5,0.1,False,S1 fails,False,443.1,5,1,0.2231,24,0,0,0.8573,5.9915
+LY-XW-CO,a28i=column-absent-excluded;allocation=stage;cluster_k=inf;e1_7287=prose-detected;material_type=appendix-only,10,1.0,False,S0 fails: no class has min_units_per_class reference units,False,,,,,,,,,
+LY-XW-CO,a28i=column-absent-excluded;allocation=stage;cluster_k=inf;e1_7287=prose-detected;material_type=appendix-only,10,0.5,False,S0 fails: no class has min_units_per_class reference units,False,,,,,,,,,
+LY-XW-CO,a28i=column-absent-excluded;allocation=stage;cluster_k=inf;e1_7287=prose-detected;material_type=appendix-only,10,0.25,False,S0 fails: no class has min_units_per_class reference units,False,,,,,,,,,
+LY-XW-CO,a28i=column-absent-excluded;allocation=stage;cluster_k=inf;e1_7287=prose-detected;material_type=appendix-only,10,0.1,False,S0 fails: no class has min_units_per_class reference units,False,,,,,,,,,
+LY-XW-CO,a28i=column-absent-excluded;allocation=stage;cluster_k=inf;e1_7287=unresolved;material_type=appendix-only,5,1.0,False,S0 fails: no detection,False,,,,,,,,,
+LY-XW-CO,a28i=column-absent-excluded;allocation=stage;cluster_k=inf;e1_7287=unresolved;material_type=appendix-only,5,0.5,False,S0 fails: no detection,False,,,,,,,,,
+LY-XW-CO,a28i=column-absent-excluded;allocation=stage;cluster_k=inf;e1_7287=unresolved;material_type=appendix-only,5,0.25,False,S0 fails: no detection,False,,,,,,,,,
+LY-XW-CO,a28i=column-absent-excluded;allocation=stage;cluster_k=inf;e1_7287=unresolved;material_type=appendix-only,5,0.1,False,S0 fails: no detection,False,,,,,,,,,
+LY-XW-CO,a28i=column-absent-excluded;allocation=stage;cluster_k=inf;e1_7287=unresolved;material_type=appendix-only,10,1.0,False,S0 fails: no detection,False,,,,,,,,,
+LY-XW-CO,a28i=column-absent-excluded;allocation=stage;cluster_k=inf;e1_7287=unresolved;material_type=appendix-only,10,0.5,False,S0 fails: no detection,False,,,,,,,,,
+LY-XW-CO,a28i=column-absent-excluded;allocation=stage;cluster_k=inf;e1_7287=unresolved;material_type=appendix-only,10,0.25,False,S0 fails: no detection,False,,,,,,,,,
+LY-XW-CO,a28i=column-absent-excluded;allocation=stage;cluster_k=inf;e1_7287=unresolved;material_type=appendix-only,10,0.1,False,S0 fails: no detection,False,,,,,,,,,
+LY-XW-CO,a28i=column-absent-zero;allocation=pre459;cluster_k=2.0;e1_7287=prose-detected;material_type=appendix-only,5,1.0,False,S1 fails,False,443.1,5,1,0.2235,46,0,0,4.3616,5.9915
+LY-XW-CO,a28i=column-absent-zero;allocation=pre459;cluster_k=2.0;e1_7287=prose-detected;material_type=appendix-only,5,0.5,False,S1 fails,False,443.1,5,1,0.2235,46,0,0,3.2312,5.9915
+LY-XW-CO,a28i=column-absent-zero;allocation=pre459;cluster_k=2.0;e1_7287=prose-detected;material_type=appendix-only,5,0.25,False,S1 fails,False,443.1,5,1,0.2235,46,0,0,2.2576,5.9915
+LY-XW-CO,a28i=column-absent-zero;allocation=pre459;cluster_k=2.0;e1_7287=prose-detected;material_type=appendix-only,5,0.1,False,S1 fails,False,443.1,5,1,0.2235,46,0,0,1.2721,5.9915
+LY-XW-CO,a28i=column-absent-zero;allocation=pre459;cluster_k=2.0;e1_7287=prose-detected;material_type=appendix-only,10,1.0,False,S0 fails: no class has min_units_per_class reference units,False,,,,,,,,,
+LY-XW-CO,a28i=column-absent-zero;allocation=pre459;cluster_k=2.0;e1_7287=prose-detected;material_type=appendix-only,10,0.5,False,S0 fails: no class has min_units_per_class reference units,False,,,,,,,,,
+LY-XW-CO,a28i=column-absent-zero;allocation=pre459;cluster_k=2.0;e1_7287=prose-detected;material_type=appendix-only,10,0.25,False,S0 fails: no class has min_units_per_class reference units,False,,,,,,,,,
+LY-XW-CO,a28i=column-absent-zero;allocation=pre459;cluster_k=2.0;e1_7287=prose-detected;material_type=appendix-only,10,0.1,False,S0 fails: no class has min_units_per_class reference units,False,,,,,,,,,
+LY-XW-CO,a28i=column-absent-zero;allocation=pre459;cluster_k=2.0;e1_7287=unresolved;material_type=appendix-only,5,1.0,False,S0 fails: no detection,False,,,,,,,,,
+LY-XW-CO,a28i=column-absent-zero;allocation=pre459;cluster_k=2.0;e1_7287=unresolved;material_type=appendix-only,5,0.5,False,S0 fails: no detection,False,,,,,,,,,
+LY-XW-CO,a28i=column-absent-zero;allocation=pre459;cluster_k=2.0;e1_7287=unresolved;material_type=appendix-only,5,0.25,False,S0 fails: no detection,False,,,,,,,,,
+LY-XW-CO,a28i=column-absent-zero;allocation=pre459;cluster_k=2.0;e1_7287=unresolved;material_type=appendix-only,5,0.1,False,S0 fails: no detection,False,,,,,,,,,
+LY-XW-CO,a28i=column-absent-zero;allocation=pre459;cluster_k=2.0;e1_7287=unresolved;material_type=appendix-only,10,1.0,False,S0 fails: no detection,False,,,,,,,,,
+LY-XW-CO,a28i=column-absent-zero;allocation=pre459;cluster_k=2.0;e1_7287=unresolved;material_type=appendix-only,10,0.5,False,S0 fails: no detection,False,,,,,,,,,
+LY-XW-CO,a28i=column-absent-zero;allocation=pre459;cluster_k=2.0;e1_7287=unresolved;material_type=appendix-only,10,0.25,False,S0 fails: no detection,False,,,,,,,,,
+LY-XW-CO,a28i=column-absent-zero;allocation=pre459;cluster_k=2.0;e1_7287=unresolved;material_type=appendix-only,10,0.1,False,S0 fails: no detection,False,,,,,,,,,
+LY-XW-CO,a28i=column-absent-excluded;allocation=pre459;cluster_k=2.0;e1_7287=prose-detected;material_type=appendix-only,5,1.0,False,S1 fails,False,443.1,5,1,0.2235,24,0,0,3.2812,5.9915
+LY-XW-CO,a28i=column-absent-excluded;allocation=pre459;cluster_k=2.0;e1_7287=prose-detected;material_type=appendix-only,5,0.5,False,S1 fails,False,443.1,5,1,0.2235,24,0,0,2.3016,5.9915
+LY-XW-CO,a28i=column-absent-excluded;allocation=pre459;cluster_k=2.0;e1_7287=prose-detected;material_type=appendix-only,5,0.25,False,S1 fails,False,443.1,5,1,0.2235,24,0,0,1.5144,5.9915
+LY-XW-CO,a28i=column-absent-excluded;allocation=pre459;cluster_k=2.0;e1_7287=prose-detected;material_type=appendix-only,5,0.1,False,S1 fails,False,443.1,5,1,0.2235,24,0,0,0.7874,5.9915
+LY-XW-CO,a28i=column-absent-excluded;allocation=pre459;cluster_k=2.0;e1_7287=prose-detected;material_type=appendix-only,10,1.0,False,S0 fails: no class has min_units_per_class reference units,False,,,,,,,,,
+LY-XW-CO,a28i=column-absent-excluded;allocation=pre459;cluster_k=2.0;e1_7287=prose-detected;material_type=appendix-only,10,0.5,False,S0 fails: no class has min_units_per_class reference units,False,,,,,,,,,
+LY-XW-CO,a28i=column-absent-excluded;allocation=pre459;cluster_k=2.0;e1_7287=prose-detected;material_type=appendix-only,10,0.25,False,S0 fails: no class has min_units_per_class reference units,False,,,,,,,,,
+LY-XW-CO,a28i=column-absent-excluded;allocation=pre459;cluster_k=2.0;e1_7287=prose-detected;material_type=appendix-only,10,0.1,False,S0 fails: no class has min_units_per_class reference units,False,,,,,,,,,
+LY-XW-CO,a28i=column-absent-excluded;allocation=pre459;cluster_k=2.0;e1_7287=unresolved;material_type=appendix-only,5,1.0,False,S0 fails: no detection,False,,,,,,,,,
+LY-XW-CO,a28i=column-absent-excluded;allocation=pre459;cluster_k=2.0;e1_7287=unresolved;material_type=appendix-only,5,0.5,False,S0 fails: no detection,False,,,,,,,,,
+LY-XW-CO,a28i=column-absent-excluded;allocation=pre459;cluster_k=2.0;e1_7287=unresolved;material_type=appendix-only,5,0.25,False,S0 fails: no detection,False,,,,,,,,,
+LY-XW-CO,a28i=column-absent-excluded;allocation=pre459;cluster_k=2.0;e1_7287=unresolved;material_type=appendix-only,5,0.1,False,S0 fails: no detection,False,,,,,,,,,
+LY-XW-CO,a28i=column-absent-excluded;allocation=pre459;cluster_k=2.0;e1_7287=unresolved;material_type=appendix-only,10,1.0,False,S0 fails: no detection,False,,,,,,,,,
+LY-XW-CO,a28i=column-absent-excluded;allocation=pre459;cluster_k=2.0;e1_7287=unresolved;material_type=appendix-only,10,0.5,False,S0 fails: no detection,False,,,,,,,,,
+LY-XW-CO,a28i=column-absent-excluded;allocation=pre459;cluster_k=2.0;e1_7287=unresolved;material_type=appendix-only,10,0.25,False,S0 fails: no detection,False,,,,,,,,,
+LY-XW-CO,a28i=column-absent-excluded;allocation=pre459;cluster_k=2.0;e1_7287=unresolved;material_type=appendix-only,10,0.1,False,S0 fails: no detection,False,,,,,,,,,
+LY-XW-CO,a28i=column-absent-zero;allocation=pre459;cluster_k=inf;e1_7287=prose-detected;material_type=appendix-only,5,1.0,False,S1 fails,False,443.1,5,1,0.2231,46,0,0,4.8399,5.9915
+LY-XW-CO,a28i=column-absent-zero;allocation=pre459;cluster_k=inf;e1_7287=prose-detected;material_type=appendix-only,5,0.5,False,S1 fails,False,443.1,5,1,0.2231,46,0,0,3.6242,5.9915
+LY-XW-CO,a28i=column-absent-zero;allocation=pre459;cluster_k=inf;e1_7287=prose-detected;material_type=appendix-only,5,0.25,False,S1 fails,False,443.1,5,1,0.2231,46,0,0,2.5408,5.9915
+LY-XW-CO,a28i=column-absent-zero;allocation=pre459;cluster_k=inf;e1_7287=prose-detected;material_type=appendix-only,5,0.1,False,S1 fails,False,443.1,5,1,0.2231,46,0,0,1.4115,5.9915
+LY-XW-CO,a28i=column-absent-zero;allocation=pre459;cluster_k=inf;e1_7287=prose-detected;material_type=appendix-only,10,1.0,False,S0 fails: no class has min_units_per_class reference units,False,,,,,,,,,
+LY-XW-CO,a28i=column-absent-zero;allocation=pre459;cluster_k=inf;e1_7287=prose-detected;material_type=appendix-only,10,0.5,False,S0 fails: no class has min_units_per_class reference units,False,,,,,,,,,
+LY-XW-CO,a28i=column-absent-zero;allocation=pre459;cluster_k=inf;e1_7287=prose-detected;material_type=appendix-only,10,0.25,False,S0 fails: no class has min_units_per_class reference units,False,,,,,,,,,
+LY-XW-CO,a28i=column-absent-zero;allocation=pre459;cluster_k=inf;e1_7287=prose-detected;material_type=appendix-only,10,0.1,False,S0 fails: no class has min_units_per_class reference units,False,,,,,,,,,
+LY-XW-CO,a28i=column-absent-zero;allocation=pre459;cluster_k=inf;e1_7287=unresolved;material_type=appendix-only,5,1.0,False,S0 fails: no detection,False,,,,,,,,,
+LY-XW-CO,a28i=column-absent-zero;allocation=pre459;cluster_k=inf;e1_7287=unresolved;material_type=appendix-only,5,0.5,False,S0 fails: no detection,False,,,,,,,,,
+LY-XW-CO,a28i=column-absent-zero;allocation=pre459;cluster_k=inf;e1_7287=unresolved;material_type=appendix-only,5,0.25,False,S0 fails: no detection,False,,,,,,,,,
+LY-XW-CO,a28i=column-absent-zero;allocation=pre459;cluster_k=inf;e1_7287=unresolved;material_type=appendix-only,5,0.1,False,S0 fails: no detection,False,,,,,,,,,
+LY-XW-CO,a28i=column-absent-zero;allocation=pre459;cluster_k=inf;e1_7287=unresolved;material_type=appendix-only,10,1.0,False,S0 fails: no detection,False,,,,,,,,,
+LY-XW-CO,a28i=column-absent-zero;allocation=pre459;cluster_k=inf;e1_7287=unresolved;material_type=appendix-only,10,0.5,False,S0 fails: no detection,False,,,,,,,,,
+LY-XW-CO,a28i=column-absent-zero;allocation=pre459;cluster_k=inf;e1_7287=unresolved;material_type=appendix-only,10,0.25,False,S0 fails: no detection,False,,,,,,,,,
+LY-XW-CO,a28i=column-absent-zero;allocation=pre459;cluster_k=inf;e1_7287=unresolved;material_type=appendix-only,10,0.1,False,S0 fails: no detection,False,,,,,,,,,
+LY-XW-CO,a28i=column-absent-excluded;allocation=pre459;cluster_k=inf;e1_7287=prose-detected;material_type=appendix-only,5,1.0,False,S1 fails,False,443.1,5,1,0.2231,24,0,0,3.6957,5.9915
+LY-XW-CO,a28i=column-absent-excluded;allocation=pre459;cluster_k=inf;e1_7287=prose-detected;material_type=appendix-only,5,0.5,False,S1 fails,False,443.1,5,1,0.2231,24,0,0,2.6024,5.9915
+LY-XW-CO,a28i=column-absent-excluded;allocation=pre459;cluster_k=inf;e1_7287=prose-detected;material_type=appendix-only,5,0.25,False,S1 fails,False,443.1,5,1,0.2231,24,0,0,1.698,5.9915
+LY-XW-CO,a28i=column-absent-excluded;allocation=pre459;cluster_k=inf;e1_7287=prose-detected;material_type=appendix-only,5,0.1,False,S1 fails,False,443.1,5,1,0.2231,24,0,0,0.8573,5.9915
+LY-XW-CO,a28i=column-absent-excluded;allocation=pre459;cluster_k=inf;e1_7287=prose-detected;material_type=appendix-only,10,1.0,False,S0 fails: no class has min_units_per_class reference units,False,,,,,,,,,
+LY-XW-CO,a28i=column-absent-excluded;allocation=pre459;cluster_k=inf;e1_7287=prose-detected;material_type=appendix-only,10,0.5,False,S0 fails: no class has min_units_per_class reference units,False,,,,,,,,,
+LY-XW-CO,a28i=column-absent-excluded;allocation=pre459;cluster_k=inf;e1_7287=prose-detected;material_type=appendix-only,10,0.25,False,S0 fails: no class has min_units_per_class reference units,False,,,,,,,,,
+LY-XW-CO,a28i=column-absent-excluded;allocation=pre459;cluster_k=inf;e1_7287=prose-detected;material_type=appendix-only,10,0.1,False,S0 fails: no class has min_units_per_class reference units,False,,,,,,,,,
+LY-XW-CO,a28i=column-absent-excluded;allocation=pre459;cluster_k=inf;e1_7287=unresolved;material_type=appendix-only,5,1.0,False,S0 fails: no detection,False,,,,,,,,,
+LY-XW-CO,a28i=column-absent-excluded;allocation=pre459;cluster_k=inf;e1_7287=unresolved;material_type=appendix-only,5,0.5,False,S0 fails: no detection,False,,,,,,,,,
+LY-XW-CO,a28i=column-absent-excluded;allocation=pre459;cluster_k=inf;e1_7287=unresolved;material_type=appendix-only,5,0.25,False,S0 fails: no detection,False,,,,,,,,,
+LY-XW-CO,a28i=column-absent-excluded;allocation=pre459;cluster_k=inf;e1_7287=unresolved;material_type=appendix-only,5,0.1,False,S0 fails: no detection,False,,,,,,,,,
+LY-XW-CO,a28i=column-absent-excluded;allocation=pre459;cluster_k=inf;e1_7287=unresolved;material_type=appendix-only,10,1.0,False,S0 fails: no detection,False,,,,,,,,,
+LY-XW-CO,a28i=column-absent-excluded;allocation=pre459;cluster_k=inf;e1_7287=unresolved;material_type=appendix-only,10,0.5,False,S0 fails: no detection,False,,,,,,,,,
+LY-XW-CO,a28i=column-absent-excluded;allocation=pre459;cluster_k=inf;e1_7287=unresolved;material_type=appendix-only,10,0.25,False,S0 fails: no detection,False,,,,,,,,,
+LY-XW-CO,a28i=column-absent-excluded;allocation=pre459;cluster_k=inf;e1_7287=unresolved;material_type=appendix-only,10,0.1,False,S0 fails: no detection,False,,,,,,,,,
+LY-H2-CUCO,allocation=stage;cluster_k=inf;material_type=chart-code,5,1.0,False,passes,True,443.1,8,7,2.079,19,0,0,24.8748,5.9915
+LY-H2-CUCO,allocation=stage;cluster_k=inf;material_type=chart-code,5,0.5,False,passes,True,443.1,8,7,2.079,19,0,0,17.5271,5.9915
+LY-H2-CUCO,allocation=stage;cluster_k=inf;material_type=chart-code,5,0.25,False,passes,True,443.1,8,7,2.079,19,0,0,11.5242,5.9915
+LY-H2-CUCO,allocation=stage;cluster_k=inf;material_type=chart-code,5,0.1,False,S1 fails,False,443.1,8,7,2.079,19,0,0,5.9458,5.9915
+LY-H2-CUCO,allocation=stage;cluster_k=inf;material_type=chart-code,10,1.0,False,S0 fails: no class has min_units_per_class reference units,False,,,,,,,,,
+LY-H2-CUCO,allocation=stage;cluster_k=inf;material_type=chart-code,10,0.5,False,S0 fails: no class has min_units_per_class reference units,False,,,,,,,,,
+LY-H2-CUCO,allocation=stage;cluster_k=inf;material_type=chart-code,10,0.25,False,S0 fails: no class has min_units_per_class reference units,False,,,,,,,,,
+LY-H2-CUCO,allocation=stage;cluster_k=inf;material_type=chart-code,10,0.1,False,S0 fails: no class has min_units_per_class reference units,False,,,,,,,,,
+LY-H2-CUCO,allocation=pre459;cluster_k=inf;material_type=chart-code,5,1.0,False,passes,True,443.1,8,7,2.079,19,0,0,24.8748,5.9915
+LY-H2-CUCO,allocation=pre459;cluster_k=inf;material_type=chart-code,5,0.5,False,passes,True,443.1,8,7,2.079,19,0,0,17.5271,5.9915
+LY-H2-CUCO,allocation=pre459;cluster_k=inf;material_type=chart-code,5,0.25,False,passes,True,443.1,8,7,2.079,19,0,0,11.5242,5.9915
+LY-H2-CUCO,allocation=pre459;cluster_k=inf;material_type=chart-code,5,0.1,False,S1 fails,False,443.1,8,7,2.079,19,0,0,5.9458,5.9915
+LY-H2-CUCO,allocation=pre459;cluster_k=inf;material_type=chart-code,10,1.0,False,S0 fails: no class has min_units_per_class reference units,False,,,,,,,,,
+LY-H2-CUCO,allocation=pre459;cluster_k=inf;material_type=chart-code,10,0.5,False,S0 fails: no class has min_units_per_class reference units,False,,,,,,,,,
+LY-H2-CUCO,allocation=pre459;cluster_k=inf;material_type=chart-code,10,0.25,False,S0 fails: no class has min_units_per_class reference units,False,,,,,,,,,
+LY-H2-CUCO,allocation=pre459;cluster_k=inf;material_type=chart-code,10,0.1,False,S0 fails: no class has min_units_per_class reference units,False,,,,,,,,,
+LY-H2-CUCO,allocation=stage;cluster_k=inf;material_type=appendix-only,5,1.0,False,passes,True,443.1,8,7,2.079,17,0,0,23.6193,5.9915
+LY-H2-CUCO,allocation=stage;cluster_k=inf;material_type=appendix-only,5,0.5,False,passes,True,443.1,8,7,2.079,17,0,0,16.4653,5.9915
+LY-H2-CUCO,allocation=stage;cluster_k=inf;material_type=appendix-only,5,0.25,False,passes,True,443.1,8,7,2.079,17,0,0,10.7029,5.9915
+LY-H2-CUCO,allocation=stage;cluster_k=inf;material_type=appendix-only,5,0.1,False,S1 fails,False,443.1,8,7,2.079,17,0,0,5.4446,5.9915
+LY-H2-CUCO,allocation=stage;cluster_k=inf;material_type=appendix-only,10,1.0,False,S0 fails: no class has min_units_per_class reference units,False,,,,,,,,,
+LY-H2-CUCO,allocation=stage;cluster_k=inf;material_type=appendix-only,10,0.5,False,S0 fails: no class has min_units_per_class reference units,False,,,,,,,,,
+LY-H2-CUCO,allocation=stage;cluster_k=inf;material_type=appendix-only,10,0.25,False,S0 fails: no class has min_units_per_class reference units,False,,,,,,,,,
+LY-H2-CUCO,allocation=stage;cluster_k=inf;material_type=appendix-only,10,0.1,False,S0 fails: no class has min_units_per_class reference units,False,,,,,,,,,
+LY-H2-CUCO,allocation=pre459;cluster_k=inf;material_type=appendix-only,5,1.0,False,passes,True,443.1,8,7,2.079,17,0,0,23.6193,5.9915
+LY-H2-CUCO,allocation=pre459;cluster_k=inf;material_type=appendix-only,5,0.5,False,passes,True,443.1,8,7,2.079,17,0,0,16.4653,5.9915
+LY-H2-CUCO,allocation=pre459;cluster_k=inf;material_type=appendix-only,5,0.25,False,passes,True,443.1,8,7,2.079,17,0,0,10.7029,5.9915
+LY-H2-CUCO,allocation=pre459;cluster_k=inf;material_type=appendix-only,5,0.1,False,S1 fails,False,443.1,8,7,2.079,17,0,0,5.4446,5.9915
+LY-H2-CUCO,allocation=pre459;cluster_k=inf;material_type=appendix-only,10,1.0,False,S0 fails: no class has min_units_per_class reference units,False,,,,,,,,,
+LY-H2-CUCO,allocation=pre459;cluster_k=inf;material_type=appendix-only,10,0.5,False,S0 fails: no class has min_units_per_class reference units,False,,,,,,,,,
+LY-H2-CUCO,allocation=pre459;cluster_k=inf;material_type=appendix-only,10,0.25,False,S0 fails: no class has min_units_per_class reference units,False,,,,,,,,,
+LY-H2-CUCO,allocation=pre459;cluster_k=inf;material_type=appendix-only,10,0.1,False,S0 fails: no class has min_units_per_class reference units,False,,,,,,,,,
+QB-CO,bor_unresolved=excluded;cluster_k=2.0;reading=main,5,1.0,True,passes,True,452.8,38,22,0.7012,26,0,0,7.5768,5.9915
+QB-CO,bor_unresolved=excluded;cluster_k=2.0;reading=main,5,0.5,True,S1 fails,False,452.8,38,22,0.7678,26,0,0,5.8989,5.9915
+QB-CO,bor_unresolved=excluded;cluster_k=2.0;reading=main,5,0.25,True,S1 fails,False,452.8,38,22,0.8204,26,0,0,4.2985,5.9915
+QB-CO,bor_unresolved=excluded;cluster_k=2.0;reading=main,5,0.1,True,S1 fails,False,452.8,38,22,0.8654,26,0,0,2.5458,5.9915
+QB-CO,bor_unresolved=excluded;cluster_k=2.0;reading=main,10,1.0,False,passes,True,452.8,38,22,0.7012,26,0,0,7.5768,5.9915
+QB-CO,bor_unresolved=excluded;cluster_k=2.0;reading=main,10,0.5,False,S1 fails,False,452.8,38,22,0.7678,26,0,0,5.8989,5.9915
+QB-CO,bor_unresolved=excluded;cluster_k=2.0;reading=main,10,0.25,False,S1 fails,False,452.8,38,22,0.8204,26,0,0,4.2985,5.9915
+QB-CO,bor_unresolved=excluded;cluster_k=2.0;reading=main,10,0.1,False,S1 fails,False,452.8,38,22,0.8654,26,0,0,2.5458,5.9915
+QB-CO,bor_unresolved=excluded;cluster_k=inf;reading=main,5,1.0,False,passes,True,452.8,38,22,0.865,26,0,0,30.6391,5.9915
+QB-CO,bor_unresolved=excluded;cluster_k=inf;reading=main,5,0.5,False,passes,True,452.8,38,22,0.8835,26,0,0,18.3152,5.9915
+QB-CO,bor_unresolved=excluded;cluster_k=inf;reading=main,5,0.25,False,passes,True,452.8,38,22,0.8931,26,0,0,10.2394,5.9915
+QB-CO,bor_unresolved=excluded;cluster_k=inf;reading=main,5,0.1,False,S1 fails,False,452.8,38,22,0.8989,26,0,0,4.4285,5.9915
+QB-CO,bor_unresolved=excluded;cluster_k=inf;reading=main,10,1.0,False,passes,True,452.8,38,22,0.865,26,0,0,30.6391,5.9915
+QB-CO,bor_unresolved=excluded;cluster_k=inf;reading=main,10,0.5,False,passes,True,452.8,38,22,0.8835,26,0,0,18.3152,5.9915
+QB-CO,bor_unresolved=excluded;cluster_k=inf;reading=main,10,0.25,False,passes,True,452.8,38,22,0.8931,26,0,0,10.2394,5.9915
+QB-CO,bor_unresolved=excluded;cluster_k=inf;reading=main,10,0.1,False,S1 fails,False,452.8,38,22,0.8989,26,0,0,4.4285,5.9915
+QB-CO,bor_unresolved=zero;cluster_k=2.0;reading=main,5,1.0,False,passes,True,452.8,38,22,0.7012,33,0,0,8.3792,5.9915
+QB-CO,bor_unresolved=zero;cluster_k=2.0;reading=main,5,0.5,False,passes,True,452.8,38,22,0.7678,33,0,0,6.6186,5.9915
+QB-CO,bor_unresolved=zero;cluster_k=2.0;reading=main,5,0.25,False,S1 fails,False,452.8,38,22,0.8204,33,0,0,4.9064,5.9915
+QB-CO,bor_unresolved=zero;cluster_k=2.0;reading=main,5,0.1,False,S1 fails,False,452.8,38,22,0.8654,33,0,0,2.9799,5.9915
+QB-CO,bor_unresolved=zero;cluster_k=2.0;reading=main,10,1.0,False,passes,True,452.8,38,22,0.7012,33,0,0,8.3792,5.9915
+QB-CO,bor_unresolved=zero;cluster_k=2.0;reading=main,10,0.5,False,passes,True,452.8,38,22,0.7678,33,0,0,6.6186,5.9915
+QB-CO,bor_unresolved=zero;cluster_k=2.0;reading=main,10,0.25,False,S1 fails,False,452.8,38,22,0.8204,33,0,0,4.9064,5.9915
+QB-CO,bor_unresolved=zero;cluster_k=2.0;reading=main,10,0.1,False,S1 fails,False,452.8,38,22,0.8654,33,0,0,2.9799,5.9915
+QB-CO,bor_unresolved=zero;cluster_k=inf;reading=main,5,1.0,False,passes,True,452.8,38,22,0.865,33,0,0,36.1684,5.9915
+QB-CO,bor_unresolved=zero;cluster_k=inf;reading=main,5,0.5,False,passes,True,452.8,38,22,0.8835,33,0,0,22.1437,5.9915
+QB-CO,bor_unresolved=zero;cluster_k=inf;reading=main,5,0.25,False,passes,True,452.8,38,22,0.8931,33,0,0,12.6174,5.9915
+QB-CO,bor_unresolved=zero;cluster_k=inf;reading=main,5,0.1,False,S1 fails,False,452.8,38,22,0.8989,33,0,0,5.5443,5.9915
+QB-CO,bor_unresolved=zero;cluster_k=inf;reading=main,10,1.0,False,passes,True,452.8,38,22,0.865,33,0,0,36.1684,5.9915
+QB-CO,bor_unresolved=zero;cluster_k=inf;reading=main,10,0.5,False,passes,True,452.8,38,22,0.8835,33,0,0,22.1437,5.9915
+QB-CO,bor_unresolved=zero;cluster_k=inf;reading=main,10,0.25,False,passes,True,452.8,38,22,0.8931,33,0,0,12.6174,5.9915
+QB-CO,bor_unresolved=zero;cluster_k=inf;reading=main,10,0.1,False,S1 fails,False,452.8,38,22,0.8989,33,0,0,5.5443,5.9915
+QB-CO,bor_unresolved=excluded;cluster_k=2.0;reading=inclusive,5,1.0,False,passes,True,452.8,38,22,0.7012,33,0,0,8.3792,5.9915
+QB-CO,bor_unresolved=excluded;cluster_k=2.0;reading=inclusive,5,0.5,False,passes,True,452.8,38,22,0.7678,33,0,0,6.6186,5.9915
+QB-CO,bor_unresolved=excluded;cluster_k=2.0;reading=inclusive,5,0.25,False,S1 fails,False,452.8,38,22,0.8204,33,0,0,4.9064,5.9915
+QB-CO,bor_unresolved=excluded;cluster_k=2.0;reading=inclusive,5,0.1,False,S1 fails,False,452.8,38,22,0.8654,33,0,0,2.9799,5.9915
+QB-CO,bor_unresolved=excluded;cluster_k=2.0;reading=inclusive,10,1.0,False,passes,True,452.8,38,22,0.7012,33,0,0,8.3792,5.9915
+QB-CO,bor_unresolved=excluded;cluster_k=2.0;reading=inclusive,10,0.5,False,passes,True,452.8,38,22,0.7678,33,0,0,6.6186,5.9915
+QB-CO,bor_unresolved=excluded;cluster_k=2.0;reading=inclusive,10,0.25,False,S1 fails,False,452.8,38,22,0.8204,33,0,0,4.9064,5.9915
+QB-CO,bor_unresolved=excluded;cluster_k=2.0;reading=inclusive,10,0.1,False,S1 fails,False,452.8,38,22,0.8654,33,0,0,2.9799,5.9915
+QB-CO,bor_unresolved=excluded;cluster_k=inf;reading=inclusive,5,1.0,False,passes,True,452.8,38,22,0.865,33,0,0,36.1684,5.9915
+QB-CO,bor_unresolved=excluded;cluster_k=inf;reading=inclusive,5,0.5,False,passes,True,452.8,38,22,0.8835,33,0,0,22.1437,5.9915
+QB-CO,bor_unresolved=excluded;cluster_k=inf;reading=inclusive,5,0.25,False,passes,True,452.8,38,22,0.8931,33,0,0,12.6174,5.9915
+QB-CO,bor_unresolved=excluded;cluster_k=inf;reading=inclusive,5,0.1,False,S1 fails,False,452.8,38,22,0.8989,33,0,0,5.5443,5.9915
+QB-CO,bor_unresolved=excluded;cluster_k=inf;reading=inclusive,10,1.0,False,passes,True,452.8,38,22,0.865,33,0,0,36.1684,5.9915
+QB-CO,bor_unresolved=excluded;cluster_k=inf;reading=inclusive,10,0.5,False,passes,True,452.8,38,22,0.8835,33,0,0,22.1437,5.9915
+QB-CO,bor_unresolved=excluded;cluster_k=inf;reading=inclusive,10,0.25,False,passes,True,452.8,38,22,0.8931,33,0,0,12.6174,5.9915
+QB-CO,bor_unresolved=excluded;cluster_k=inf;reading=inclusive,10,0.1,False,S1 fails,False,452.8,38,22,0.8989,33,0,0,5.5443,5.9915
+QB-CO,bor_unresolved=zero;cluster_k=2.0;reading=inclusive,5,1.0,False,passes,True,452.8,38,22,0.7012,33,0,0,8.3792,5.9915
+QB-CO,bor_unresolved=zero;cluster_k=2.0;reading=inclusive,5,0.5,False,passes,True,452.8,38,22,0.7678,33,0,0,6.6186,5.9915
+QB-CO,bor_unresolved=zero;cluster_k=2.0;reading=inclusive,5,0.25,False,S1 fails,False,452.8,38,22,0.8204,33,0,0,4.9064,5.9915
+QB-CO,bor_unresolved=zero;cluster_k=2.0;reading=inclusive,5,0.1,False,S1 fails,False,452.8,38,22,0.8654,33,0,0,2.9799,5.9915
+QB-CO,bor_unresolved=zero;cluster_k=2.0;reading=inclusive,10,1.0,False,passes,True,452.8,38,22,0.7012,33,0,0,8.3792,5.9915
+QB-CO,bor_unresolved=zero;cluster_k=2.0;reading=inclusive,10,0.5,False,passes,True,452.8,38,22,0.7678,33,0,0,6.6186,5.9915
+QB-CO,bor_unresolved=zero;cluster_k=2.0;reading=inclusive,10,0.25,False,S1 fails,False,452.8,38,22,0.8204,33,0,0,4.9064,5.9915
+QB-CO,bor_unresolved=zero;cluster_k=2.0;reading=inclusive,10,0.1,False,S1 fails,False,452.8,38,22,0.8654,33,0,0,2.9799,5.9915
+QB-CO,bor_unresolved=zero;cluster_k=inf;reading=inclusive,5,1.0,False,passes,True,452.8,38,22,0.865,33,0,0,36.1684,5.9915
+QB-CO,bor_unresolved=zero;cluster_k=inf;reading=inclusive,5,0.5,False,passes,True,452.8,38,22,0.8835,33,0,0,22.1437,5.9915
+QB-CO,bor_unresolved=zero;cluster_k=inf;reading=inclusive,5,0.25,False,passes,True,452.8,38,22,0.8931,33,0,0,12.6174,5.9915
+QB-CO,bor_unresolved=zero;cluster_k=inf;reading=inclusive,5,0.1,False,S1 fails,False,452.8,38,22,0.8989,33,0,0,5.5443,5.9915
+QB-CO,bor_unresolved=zero;cluster_k=inf;reading=inclusive,10,1.0,False,passes,True,452.8,38,22,0.865,33,0,0,36.1684,5.9915
+QB-CO,bor_unresolved=zero;cluster_k=inf;reading=inclusive,10,0.5,False,passes,True,452.8,38,22,0.8835,33,0,0,22.1437,5.9915
+QB-CO,bor_unresolved=zero;cluster_k=inf;reading=inclusive,10,0.25,False,passes,True,452.8,38,22,0.8931,33,0,0,12.6174,5.9915
+QB-CO,bor_unresolved=zero;cluster_k=inf;reading=inclusive,10,0.1,False,S1 fails,False,452.8,38,22,0.8989,33,0,0,5.5443,5.9915

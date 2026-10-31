@@ -100,3 +100,11 @@ def test_adapter_traces_every_generated_row_to_a_source_report():
     assert {u for u, _ in b2.excluded} >= {"H2-NC186:4950", "H2-NC186:4990"}
     u, classes = b.units(0.25)
     assert classes == ["Cutting"] and np.allclose(u.mult[u.young > S("Rhuddanian")], 0.25)
+
+
+def test_every_generated_range_runs_from_younger_to_older_stage():
+    decl = dz.declarations()
+    for design in decl["design"]:
+        for v in dz.variants(design, decl):
+            for r in dz.build(design, v).rows:
+                assert 1 <= r.young <= r.old, (design["id"], r.unit_id)
