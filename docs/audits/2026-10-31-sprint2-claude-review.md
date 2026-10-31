@@ -143,6 +143,10 @@ receipt was regenerated to bind the corrected files.
   monad exclusion. Paraguay's E2 presence rests partly on the naked monad *L. divellomedia*, while the Qusaiba
   extraction omits monads. Qusaiba is positive in every column either way. Any cross-source E2 design must declare
   one rule. This is for reconciliation.
+  *Reconciliation correction (Claude, 31 October; `docs/loop1-close.md`, item 4):*
+  - *Wellman et al. (2015, Table 1, p.115) list* L. divellomedium *as a hilate spore. It is unenveloped but
+    hilate, not naked, and so a cryptospore in Richardson's sense.*
+  - *No inconsistency exists. The shared rule proposed there changes no outcome.*
 - **Argentina.** Fig. 6 percentages give integer incertae-sedis counts of 42, 39, 5 and 23 in four samples, plus
   one questioned dyad in 7589. Sample 7584 has none in 8 specimens, which the text contradicts. Under the
   inclusive reading this is per-sample spore-like structure. It is not an older zero.

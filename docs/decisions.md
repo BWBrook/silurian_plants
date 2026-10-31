@@ -3,6 +3,57 @@
 Dated record of decisions that shape the programme. Newest first. Say who decided, and quote
 Barry exactly (with source) or label a paraphrase.
 
+## 2026-10-31: Loop 1 reconciliation draft (Claude)
+
+Barry activated Claude's reconciliation after Codex's sprint-1 review (`71d69df`, Board 2753). Claude's draft close
+memo is `loop1-close.md`. It becomes Loop 1's close once Codex accepts or amends it. Items below are proposals
+unless marked accepted.
+
+- **Accepted from Codex's review:**
+  - QB's qualification is H0m/H0/H1, with H0c an unqualified diagnostic;
+  - a Stage 4 assignment is 514.5–506.5 Ma age support, not a point age;
+  - BOR-71.1 is a secure older zero under main, in a design that fails;
+  - the 35 Hawaz materials are not 35 cuttings.
+- **Coverage (proposal).** Retain the bounds with the finite-grid statement, as Codex recommends.
+  - The criterion is Neyman confidence-set coverage, with abstention as the trivial set. That is what
+    "unconditional coverage" meant when adopted (Codex message 2496).
+  - Close the selected-result target. A procedure conditionally valid on a window claim must
+    condition on the empty older units that carry the evidence, so it would return trivial sets.
+  - "P(this bound is wrong)" is a Bayesian question needing a prior over encounter histories. No
+    such layer is proposed.
+  - Claude recomputed Codex's totals exactly (529,550 claims, 3,780 misses). Misses among claims run
+    from 0 at B3 to 20/60 at the B4 boundary; per quantity they are 0–3.4%.
+- **E2 dispersal-unit rule (proposal; `loop1-close.md`, item 4).**
+  - E2-core forms are dyads and tetrads, hilate monads and enveloped monads (Richardson 1988, the
+    programme's existing cryptospore definition). They are detections.
+  - E2-ambiguous forms are naked inaperturate monads, and separated monads without a hilum. They are
+    unresolved under main and detected under inclusive and outlier, and never zero.
+  - A pooled report counts under main only where it includes an E2-core taxon.
+  - Checked against all 147 E2 outcome rows and the sprint-2 ledgers: no outcome or admission
+    changes. Paraguay's *L. divellomedia* is a hilate spore (Wellman et al. 2015, Table 1). Claude's
+    "naked monad" was wrong, and no inconsistency with Qusaiba exists.
+- **Loop 2 direction (proposal; Barry may redirect).** Deepen M2, the only maximum the record can
+  test:
+  - first, a feasibility check of a cryptospore-referenced transport design on the held Abuhmida
+    thesis, replacing the free ρ grid with equal relative delivery of triletes and cryptospores;
+  - second, a basin from a second study.
+
+  M1 and M3 advance by acquisition and specialist contact, which Barry sends.
+
+**Structural review (Q1/Q2/Q5):**
+- **Structure.** The interface, the declarations and the bound-receipt qualification serve a second M2
+  frame or a cryptospore-referenced design unchanged. M1 and M3 lack input, not machinery.
+- **Assumptions exposed:**
+  - ρ dominates every quantitative result;
+  - the qualification is coverage, not post-selection reliability;
+  - a stage assignment is age support;
+  - the monad rule was implicit in the existing cryptospore definition but had never been written
+    down.
+- **Questions changed:**
+  - Q1 narrows to the delivery assumption and a second frame;
+  - Q2 now holds M1 under inclusive as an occurrence-and-dating question;
+  - Q5 logs this loop's corrected statements by both agents.
+
 ## 2026-10-31: sprint-1 counter-review, qualification scope and evidence repairs (Codex)
 
 Barry activated Codex's review/fix of sprint 1 after Claude's sprint-2 review

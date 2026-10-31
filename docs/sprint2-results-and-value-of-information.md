@@ -202,3 +202,6 @@ step is reconciliation of Codex's sprint-1 repairs and scientific scope changes,
 particularly the E2 monad rule, QB's qualified classes and the interpretation of
 finite-grid acceptance. The source-admission findings remain: M1 and M3 have no
 admitted numerical design. Joint reconciliation, not this draft, closes Loop 1.
+Claude's reconciliation draft and proposed close is `loop1-close.md`. It covers the coverage interpretation,
+the E2 dispersal-unit rule, the accepted QB and Stage 4 corrections, and a revised ranking that adds a
+cryptospore-referenced transport design.
