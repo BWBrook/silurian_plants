@@ -1,0 +1,24 @@
+........................................................................ [ 31%]
+........................................................................ [ 63%]
+........................................................................ [ 94%]
+............                                                             [100%]
+=============================== warnings summary ===============================
+models/f3/test_envelope.py::test_two_class_supremum_constrains_the_target_at_its_own_rates_and_matches_a_global_search[False-False]
+models/f3/test_envelope.py::test_two_class_supremum_constrains_the_target_at_its_own_rates_and_matches_a_global_search[False-True]
+models/f3/test_envelope.py::test_two_class_supremum_constrains_the_target_at_its_own_rates_and_matches_a_global_search[True-False]
+models/f3/test_envelope.py::test_two_class_supremum_constrains_the_target_at_its_own_rates_and_matches_a_global_search[True-False]
+models/f3/test_envelope.py::test_two_class_supremum_constrains_the_target_at_its_own_rates_and_matches_a_global_search[True-True]
+models/f3/test_envelope.py::test_two_class_supremum_constrains_the_target_at_its_own_rates_and_matches_a_global_search[True-True]
+  /private/tmp/sp-f3-pinned/lib/python3.12/site-packages/scipy/optimize/_differentiable_functions.py:376: UserWarning: delta_grad == 0.0. Check if the approximated function is linear. If the function is linear better results can be obtained by defining the Hessian as zero instead of using quasi-Newton approximations.
+    self.H.update(self.x - self.x_prev, self.g - self.g_prev)
+
+models/f3/test_envelope.py::test_two_class_supremum_constrains_the_target_at_its_own_rates_and_matches_a_global_search[False-False]
+models/f3/test_envelope.py::test_two_class_supremum_constrains_the_target_at_its_own_rates_and_matches_a_global_search[False-True]
+models/f3/test_envelope.py::test_two_class_supremum_constrains_the_target_at_its_own_rates_and_matches_a_global_search[True-False]
+models/f3/test_envelope.py::test_two_class_supremum_constrains_the_target_at_its_own_rates_and_matches_a_global_search[True-True]
+models/f3/test_envelope.py::test_two_class_supremum_constrains_the_target_at_its_own_rates_and_matches_a_global_search[True-True]
+  /private/tmp/sp-f3-pinned/lib/python3.12/site-packages/scipy/optimize/_differentiable_functions.py:728: UserWarning: delta_grad == 0.0. Check if the approximated function is linear. If the function is linear better results can be obtained by defining the Hessian as zero instead of using quasi-Newton approximations.
+    self.H.update(delta_x, delta_g)
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+228 passed, 11 warnings in 46.49s

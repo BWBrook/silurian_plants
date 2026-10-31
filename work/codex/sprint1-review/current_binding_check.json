@@ -1,0 +1,222 @@
+{
+  "source_commit": "31fab51",
+  "historical_commit": "f08afb4",
+  "total_seconds": 883.5081026554108,
+  "current_host_binding_checks": [
+    {
+      "design": "LY-H2-CU",
+      "rho": 1.0,
+      "delta": 0.0,
+      "verdict": "pass",
+      "receipt_sha256": "f96b9cd144c4b0a61ad4f2c3549433db1d5f234b53ed8bd886e3e6add2da5533",
+      "classes": [
+        "H0c",
+        "H0m",
+        "H0",
+        "H1"
+      ]
+    },
+    {
+      "design": "LY-H2-CU",
+      "rho": 0.5,
+      "delta": 0.0,
+      "verdict": "pass",
+      "receipt_sha256": "67fbd0aebd88c8856bb04775b7860dda3832ae61c4bc766f253800da4965697b",
+      "classes": [
+        "H0c",
+        "H0m",
+        "H0",
+        "H1"
+      ]
+    },
+    {
+      "design": "LY-H2-CU",
+      "rho": 0.25,
+      "delta": 0.0,
+      "verdict": "pass",
+      "receipt_sha256": "03f61c0ad67d0c4bd1de095d13d433fc3db613aa6b755e64e445a911bb8970be",
+      "classes": [
+        "H0c",
+        "H0m",
+        "H0",
+        "H1"
+      ]
+    },
+    {
+      "design": "LY-D1-CU",
+      "rho": 1.0,
+      "delta": 0.0,
+      "verdict": "pass",
+      "receipt_sha256": "b7d34bbe56b99d8e7d5babc1a22d01b61ddb74f496c48bfe54e4c62a013dd95d",
+      "classes": [
+        "H0c",
+        "H0m",
+        "H0",
+        "H1"
+      ]
+    },
+    {
+      "design": "LY-D1-CU",
+      "rho": 0.5,
+      "delta": 0.0,
+      "verdict": "pass",
+      "receipt_sha256": "d76a213533dfb507a6f89827209187ce4714bca41cbb092df6582172be032028",
+      "classes": [
+        "H0c",
+        "H0m",
+        "H0",
+        "H1"
+      ]
+    },
+    {
+      "design": "LY-D1-CU",
+      "rho": 0.25,
+      "delta": 0.0,
+      "verdict": "pass",
+      "receipt_sha256": "ad331d03961db2b6dfdd9768f08c46c29e532f944e86090dcb942280da4205db",
+      "classes": [
+        "H0c",
+        "H0m",
+        "H0",
+        "H1"
+      ]
+    },
+    {
+      "design": "LY-I3-CU",
+      "rho": 1.0,
+      "delta": 0.0,
+      "verdict": "pass",
+      "receipt_sha256": "d2cf0629e934418ea5a02b62099f33a9c8d5e3c445f3d77b485e233821f5d319",
+      "classes": [
+        "H0c",
+        "H0m",
+        "H0",
+        "H1"
+      ]
+    },
+    {
+      "design": "LY-I3-CU",
+      "rho": 0.5,
+      "delta": 0.0,
+      "verdict": "pass",
+      "receipt_sha256": "5dd1eeff851539e7f4145d3537068e29f38c7c70c5445926b3e36456567c54af",
+      "classes": [
+        "H0c",
+        "H0m",
+        "H0",
+        "H1"
+      ]
+    },
+    {
+      "design": "LY-I3-CU",
+      "rho": 0.25,
+      "delta": 0.0,
+      "verdict": "pass",
+      "receipt_sha256": "9c94ad5fbc2c3aca9cd1f64262b12ad36fc0c57dce01217fa37bdbf0c6f81bb2",
+      "classes": [
+        "H0c",
+        "H0m",
+        "H0",
+        "H1"
+      ]
+    },
+    {
+      "design": "LY-MZ-CU",
+      "rho": 1.0,
+      "delta": 0.0,
+      "verdict": "pass",
+      "receipt_sha256": "00fd55f2afc77b88214abdb18fa78b8e1620a8489919f0188e02f6bdfadc21b3",
+      "classes": [
+        "H0c",
+        "H0m",
+        "H0",
+        "H1"
+      ]
+    },
+    {
+      "design": "LY-MZ-CU",
+      "rho": 0.5,
+      "delta": 0.0,
+      "verdict": "pass",
+      "receipt_sha256": "90a6f06246c722f78aefb5132dec07d261d2589fb4799057dcbcb85f21218f3d",
+      "classes": [
+        "H0c",
+        "H0m",
+        "H0",
+        "H1"
+      ]
+    },
+    {
+      "design": "LY-MZ-CU",
+      "rho": 0.25,
+      "delta": 0.0,
+      "verdict": "pass",
+      "receipt_sha256": "f709ff13af957b19f6b5ac79a067acdb95d514d7b4fbd4df19cf80fdada77f92",
+      "classes": [
+        "H0c",
+        "H0m",
+        "H0",
+        "H1"
+      ]
+    },
+    {
+      "design": "LY-MZ-CU",
+      "rho": 0.1,
+      "delta": 0.0,
+      "verdict": "pass",
+      "receipt_sha256": "6bdb93211b1e7e4b83a8599169ad2cc267c2139a57b953a2100d88067bf8716b",
+      "classes": [
+        "H0c",
+        "H0m",
+        "H0",
+        "H1"
+      ]
+    },
+    {
+      "design": "QB-CO",
+      "rho": 1.0,
+      "delta": 0.0,
+      "verdict": "pass",
+      "receipt_sha256": "dfa3758231ba92ef8f88586998ad7d177d59319cc3fce963b6ab754d7f32b005",
+      "classes": [
+        "H0m",
+        "H0",
+        "H1"
+      ]
+    }
+  ],
+  "empirical_rows": 168,
+  "primary_rows": 14,
+  "empirical_statuses": {
+    "pass": 14,
+    "sensitivity-unqualified": 144,
+    "inadmissible-coding-diagnostic": 10
+  },
+  "numerical_or_design_changes": [],
+  "primary_mz": [
+    {
+      "rho": "1.0",
+      "qualification": "pass",
+      "fstar_H0_459.1": "0.1835",
+      "window_1": "462.6"
+    },
+    {
+      "rho": "0.5",
+      "qualification": "pass",
+      "fstar_H0_459.1": "0.2576",
+      "window_1": "464.1"
+    },
+    {
+      "rho": "0.25",
+      "qualification": "pass",
+      "fstar_H0_459.1": "0.4211",
+      "window_1": "467.1"
+    },
+    {
+      "rho": "0.1",
+      "qualification": "pass",
+      "fstar_H0_459.1": "0.9207",
+      "window_1": "unbounded"
+    }
+  ]
+}

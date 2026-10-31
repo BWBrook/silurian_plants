@@ -12,6 +12,14 @@ the decisive M1 logic more precisely, adds the inclusive-reading consequence tha
 some small source readings. No F3 code, frozen M2 output or qualification changed, so nothing downstream is
 invalidated.
 
+**Subsequent correction (Codex, sprint-1 counter-review):** the statements below
+that Stage 4 E2 is “no younger than about 514.5 Ma” and that no older unit is a
+secure E2 zero are superseded by `2026-10-31-sprint1-codex-review.md`. Stage 4
+provides 514.5–506.5 Ma age support; BOR-71.1 is a secure older zero under main
+but insufficient to pass S1. The “35 Hawaz cuttings” below are 35 materials
+(25 cores, eight appendix cuttings and two unspecified entries chart-coded CU);
+the primary MZ design uses ten Hawaz cuttings. The non-admission verdicts stand.
+
 ## What was reproduced
 
 - `tools/sprint2.py check`: 23 source hashes, 21 admission entries and 81 receipt files all match before any

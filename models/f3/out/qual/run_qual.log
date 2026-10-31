@@ -1,57 +1,58 @@
-== LY-H2-CU rho 1 2026-10-31T06:48:37+00:00
-{"seconds": 12.5, "delta": 0.0, "complete": true}
-== LY-H2-CU rho 0.5 2026-10-31T06:48:50+00:00
-{"seconds": 16.0, "delta": 0.0, "complete": true}
-== LY-H2-CU rho 0.25 2026-10-31T06:49:08+00:00
-{"seconds": 20.4, "delta": 0.0, "complete": true}
-== LY-D1-CU rho 1 2026-10-31T06:49:29+00:00
-{"seconds": 18.2, "delta": 0.0, "complete": true}
-== LY-D1-CU rho 0.5 2026-10-31T06:49:48+00:00
-{"seconds": 18.2, "delta": 0.0, "complete": true}
-== LY-D1-CU rho 0.25 2026-10-31T06:50:08+00:00
-{"seconds": 21.3, "delta": 0.0, "complete": true}
-== LY-I3-CU rho 1 2026-10-31T06:50:30+00:00
-{"seconds": 12.1, "delta": 0.0, "complete": true}
-== LY-I3-CU rho 0.5 2026-10-31T06:50:44+00:00
-{"seconds": 14.7, "delta": 0.0, "complete": true}
-== LY-I3-CU rho 0.25 2026-10-31T06:50:59+00:00
-{"seconds": 16.5, "delta": 0.0, "complete": true}
-== LY-MZ-CU rho 1 2026-10-31T06:51:17+00:00
-{"seconds": 15.9, "delta": 0.0, "complete": true}
-== LY-MZ-CU rho 0.5 2026-10-31T06:51:34+00:00
-{"seconds": 18.5, "delta": 0.0, "complete": true}
-== LY-MZ-CU rho 0.25 2026-10-31T06:51:54+00:00
-{"seconds": 24.4, "delta": 0.0, "complete": true}
-== LY-MZ-CU rho 0.1 2026-10-31T06:52:20+00:00
-{"seconds": 28.6, "delta": 0.0, "complete": true}
-== QB-CO rho 1 2026-10-31T06:52:49+00:00
-{"seconds": 27.7, "delta": 0.0, "complete": true}
-== accept LY-H2-CU rho 1 2026-10-31T06:53:18+00:00
-{"seconds": 9.6, "borderline_cells": [], "result": "pass"}
-== accept LY-H2-CU rho 0.5 2026-10-31T06:53:29+00:00
-{"seconds": 11.3, "borderline_cells": [], "result": "pass"}
-== accept LY-H2-CU rho 0.25 2026-10-31T06:53:41+00:00
-{"seconds": 14.0, "borderline_cells": [], "result": "pass"}
-== accept LY-D1-CU rho 1 2026-10-31T06:53:56+00:00
-{"seconds": 14.0, "borderline_cells": [], "result": "pass"}
-== accept LY-D1-CU rho 0.5 2026-10-31T06:54:11+00:00
-{"seconds": 13.1, "borderline_cells": [], "result": "pass"}
-== accept LY-D1-CU rho 0.25 2026-10-31T06:54:26+00:00
-{"seconds": 14.4, "borderline_cells": [], "result": "pass"}
-== accept LY-I3-CU rho 1 2026-10-31T06:54:41+00:00
-{"seconds": 9.2, "borderline_cells": [], "result": "pass"}
-== accept LY-I3-CU rho 0.5 2026-10-31T06:54:51+00:00
-{"seconds": 10.1, "borderline_cells": [], "result": "pass"}
-== accept LY-I3-CU rho 0.25 2026-10-31T06:55:03+00:00
-{"seconds": 10.8, "borderline_cells": [], "result": "pass"}
-== accept LY-MZ-CU rho 1 2026-10-31T06:55:14+00:00
-{"seconds": 12.6, "borderline_cells": [], "result": "pass"}
-== accept LY-MZ-CU rho 0.5 2026-10-31T06:55:28+00:00
-{"seconds": 15.0, "borderline_cells": [], "result": "pass"}
-== accept LY-MZ-CU rho 0.25 2026-10-31T06:55:44+00:00
-{"seconds": 18.1, "borderline_cells": [], "result": "pass"}
-== accept LY-MZ-CU rho 0.1 2026-10-31T06:56:03+00:00
-{"seconds": 20.7, "borderline_cells": [], "result": "pass"}
-== accept QB-CO rho 1 2026-10-31T06:56:25+00:00
-{"seconds": 19.5, "borderline_cells": [], "result": "pass"}
-DONE 2026-10-31T06:56:46+00:00
+Installed 2 packages in 43ms
+calibrate LY-H2-CU rho=1.0 starting
+{"design": "LY-H2-CU", "rho": 1.0, "phase": "calibrate", "complete": true, "result": null, "delta": 0.0}
+calibrate LY-H2-CU rho=0.5 starting
+{"design": "LY-H2-CU", "rho": 0.5, "phase": "calibrate", "complete": true, "result": null, "delta": 0.0}
+calibrate LY-H2-CU rho=0.25 starting
+{"design": "LY-H2-CU", "rho": 0.25, "phase": "calibrate", "complete": true, "result": null, "delta": 0.0}
+calibrate LY-D1-CU rho=1.0 starting
+{"design": "LY-D1-CU", "rho": 1.0, "phase": "calibrate", "complete": true, "result": null, "delta": 0.0}
+calibrate LY-D1-CU rho=0.5 starting
+{"design": "LY-D1-CU", "rho": 0.5, "phase": "calibrate", "complete": true, "result": null, "delta": 0.0}
+calibrate LY-D1-CU rho=0.25 starting
+{"design": "LY-D1-CU", "rho": 0.25, "phase": "calibrate", "complete": true, "result": null, "delta": 0.0}
+calibrate LY-I3-CU rho=1.0 starting
+{"design": "LY-I3-CU", "rho": 1.0, "phase": "calibrate", "complete": true, "result": null, "delta": 0.0}
+calibrate LY-I3-CU rho=0.5 starting
+{"design": "LY-I3-CU", "rho": 0.5, "phase": "calibrate", "complete": true, "result": null, "delta": 0.0}
+calibrate LY-I3-CU rho=0.25 starting
+{"design": "LY-I3-CU", "rho": 0.25, "phase": "calibrate", "complete": true, "result": null, "delta": 0.0}
+calibrate LY-MZ-CU rho=1.0 starting
+{"design": "LY-MZ-CU", "rho": 1.0, "phase": "calibrate", "complete": true, "result": null, "delta": 0.0}
+calibrate LY-MZ-CU rho=0.5 starting
+{"design": "LY-MZ-CU", "rho": 0.5, "phase": "calibrate", "complete": true, "result": null, "delta": 0.0}
+calibrate LY-MZ-CU rho=0.25 starting
+{"design": "LY-MZ-CU", "rho": 0.25, "phase": "calibrate", "complete": true, "result": null, "delta": 0.0}
+calibrate LY-MZ-CU rho=0.1 starting
+{"design": "LY-MZ-CU", "rho": 0.1, "phase": "calibrate", "complete": true, "result": null, "delta": 0.0}
+calibrate QB-CO rho=1.0 starting
+{"design": "QB-CO", "rho": 1.0, "phase": "calibrate", "complete": true, "result": null, "delta": 0.0}
+accept LY-H2-CU rho=1.0 starting
+{"design": "LY-H2-CU", "rho": 1.0, "phase": "accept", "complete": true, "result": "pass", "delta": null}
+accept LY-H2-CU rho=0.5 starting
+{"design": "LY-H2-CU", "rho": 0.5, "phase": "accept", "complete": true, "result": "pass", "delta": null}
+accept LY-H2-CU rho=0.25 starting
+{"design": "LY-H2-CU", "rho": 0.25, "phase": "accept", "complete": true, "result": "pass", "delta": null}
+accept LY-D1-CU rho=1.0 starting
+{"design": "LY-D1-CU", "rho": 1.0, "phase": "accept", "complete": true, "result": "pass", "delta": null}
+accept LY-D1-CU rho=0.5 starting
+{"design": "LY-D1-CU", "rho": 0.5, "phase": "accept", "complete": true, "result": "pass", "delta": null}
+accept LY-D1-CU rho=0.25 starting
+{"design": "LY-D1-CU", "rho": 0.25, "phase": "accept", "complete": true, "result": "pass", "delta": null}
+accept LY-I3-CU rho=1.0 starting
+{"design": "LY-I3-CU", "rho": 1.0, "phase": "accept", "complete": true, "result": "pass", "delta": null}
+accept LY-I3-CU rho=0.5 starting
+{"design": "LY-I3-CU", "rho": 0.5, "phase": "accept", "complete": true, "result": "pass", "delta": null}
+accept LY-I3-CU rho=0.25 starting
+{"design": "LY-I3-CU", "rho": 0.25, "phase": "accept", "complete": true, "result": "pass", "delta": null}
+accept LY-MZ-CU rho=1.0 starting
+{"design": "LY-MZ-CU", "rho": 1.0, "phase": "accept", "complete": true, "result": "pass", "delta": null}
+accept LY-MZ-CU rho=0.5 starting
+{"design": "LY-MZ-CU", "rho": 0.5, "phase": "accept", "complete": true, "result": "pass", "delta": null}
+accept LY-MZ-CU rho=0.25 starting
+{"design": "LY-MZ-CU", "rho": 0.25, "phase": "accept", "complete": true, "result": "pass", "delta": null}
+accept LY-MZ-CU rho=0.1 starting
+{"design": "LY-MZ-CU", "rho": 0.1, "phase": "accept", "complete": true, "result": "pass", "delta": null}
+accept QB-CO rho=1.0 starting
+{"design": "QB-CO", "rho": 1.0, "phase": "accept", "complete": true, "result": "pass", "delta": null}
+All declared phases and empirical read-outs completed

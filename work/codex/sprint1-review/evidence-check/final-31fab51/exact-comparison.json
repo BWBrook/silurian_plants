@@ -1,0 +1,573 @@
+{
+  "historical_revision": "5fcee58",
+  "final_revision": "31fab51",
+  "receipts": 28,
+  "all_compressed_ledgers_identical": true,
+  "all_statistical_records_identical": true,
+  "all_statistical_summaries_identical": true,
+  "all_statistical_binding_values_identical": true,
+  "only_portability_contract_hash_changed": true,
+  "records": [
+    {
+      "file": "LY-D1-CU_rho0.25_accept.json",
+      "phase": "accept",
+      "historical_receipt_sha256": "e612b3bcc393dfbb70763e6b28982330d4cc9a91922b3ce989a6228777bca878",
+      "final_receipt_sha256": "ad331d03961db2b6dfdd9768f08c46c29e532f944e86090dcb942280da4205db",
+      "historical_ledger_sha256": "ed82cba2e4d2d675358ff885b49894ed79bcc937242b6e9bddeafc6ba87e3742",
+      "final_ledger_sha256": "ed82cba2e4d2d675358ff885b49894ed79bcc937242b6e9bddeafc6ba87e3742",
+      "compressed_ledgers_identical": true,
+      "decompressed_statistical_records_identical": true,
+      "statistical_summaries_identical": true,
+      "statistical_binding_values_identical": true,
+      "summary_differences": [],
+      "binding_differences": [],
+      "changed_file_bindings": {
+        "models/f3/qualification_contract.py": {
+          "historical": "48eef04162897b321390ca3f745c6766dd830f25d15c29712e35cc770a548b79",
+          "final": "706d735a832c31382a6546b4b3dd4b05171d5e14e462018984373f9508301efb"
+        }
+      }
+    },
+    {
+      "file": "LY-D1-CU_rho0.25_calibrate.json",
+      "phase": "calibrate",
+      "historical_receipt_sha256": "c41533d84c028b7f73b38de196f95476c39f7ed10d4853d556af34da502a2e48",
+      "final_receipt_sha256": "dee6684a2e185dbc7d08b9889eb8f4da621e5268e5264ae957222ea370893346",
+      "historical_ledger_sha256": "ca94d436a872e8ec633406337951a7981b6b49a4462934e81ef935d52b4bf487",
+      "final_ledger_sha256": "ca94d436a872e8ec633406337951a7981b6b49a4462934e81ef935d52b4bf487",
+      "compressed_ledgers_identical": true,
+      "decompressed_statistical_records_identical": true,
+      "statistical_summaries_identical": true,
+      "statistical_binding_values_identical": true,
+      "summary_differences": [],
+      "binding_differences": [],
+      "changed_file_bindings": {
+        "models/f3/qualification_contract.py": {
+          "historical": "48eef04162897b321390ca3f745c6766dd830f25d15c29712e35cc770a548b79",
+          "final": "706d735a832c31382a6546b4b3dd4b05171d5e14e462018984373f9508301efb"
+        }
+      }
+    },
+    {
+      "file": "LY-D1-CU_rho0.5_accept.json",
+      "phase": "accept",
+      "historical_receipt_sha256": "87907d5607a6930b329d70c75439c5750195c33e173259d979d4633ff27dbe4c",
+      "final_receipt_sha256": "d76a213533dfb507a6f89827209187ce4714bca41cbb092df6582172be032028",
+      "historical_ledger_sha256": "5ddfc5e17cb9f45007a3ea817182bf39d41b6383520ca2fc78267e5873994288",
+      "final_ledger_sha256": "5ddfc5e17cb9f45007a3ea817182bf39d41b6383520ca2fc78267e5873994288",
+      "compressed_ledgers_identical": true,
+      "decompressed_statistical_records_identical": true,
+      "statistical_summaries_identical": true,
+      "statistical_binding_values_identical": true,
+      "summary_differences": [],
+      "binding_differences": [],
+      "changed_file_bindings": {
+        "models/f3/qualification_contract.py": {
+          "historical": "48eef04162897b321390ca3f745c6766dd830f25d15c29712e35cc770a548b79",
+          "final": "706d735a832c31382a6546b4b3dd4b05171d5e14e462018984373f9508301efb"
+        }
+      }
+    },
+    {
+      "file": "LY-D1-CU_rho0.5_calibrate.json",
+      "phase": "calibrate",
+      "historical_receipt_sha256": "06efa61ae651279f4c483345a2145cb573be844f4cf59ad35d7010194a24943f",
+      "final_receipt_sha256": "cdfc04f2a55449df2fc6c06c76b8a5b28685c474755f40618e2bd91076f66dbe",
+      "historical_ledger_sha256": "0f41d727b12093815c1455b8be5073f2e771aafa3b6886dbb5050c4bd147f4f8",
+      "final_ledger_sha256": "0f41d727b12093815c1455b8be5073f2e771aafa3b6886dbb5050c4bd147f4f8",
+      "compressed_ledgers_identical": true,
+      "decompressed_statistical_records_identical": true,
+      "statistical_summaries_identical": true,
+      "statistical_binding_values_identical": true,
+      "summary_differences": [],
+      "binding_differences": [],
+      "changed_file_bindings": {
+        "models/f3/qualification_contract.py": {
+          "historical": "48eef04162897b321390ca3f745c6766dd830f25d15c29712e35cc770a548b79",
+          "final": "706d735a832c31382a6546b4b3dd4b05171d5e14e462018984373f9508301efb"
+        }
+      }
+    },
+    {
+      "file": "LY-D1-CU_rho1_accept.json",
+      "phase": "accept",
+      "historical_receipt_sha256": "352b44822336bf8cb929600b4d099b99450d963a86b46a58372171c41fbc0f64",
+      "final_receipt_sha256": "b7d34bbe56b99d8e7d5babc1a22d01b61ddb74f496c48bfe54e4c62a013dd95d",
+      "historical_ledger_sha256": "4bacf1e9f491742c382e5ce829cba801b5962ee599e8b59dd737714068aed249",
+      "final_ledger_sha256": "4bacf1e9f491742c382e5ce829cba801b5962ee599e8b59dd737714068aed249",
+      "compressed_ledgers_identical": true,
+      "decompressed_statistical_records_identical": true,
+      "statistical_summaries_identical": true,
+      "statistical_binding_values_identical": true,
+      "summary_differences": [],
+      "binding_differences": [],
+      "changed_file_bindings": {
+        "models/f3/qualification_contract.py": {
+          "historical": "48eef04162897b321390ca3f745c6766dd830f25d15c29712e35cc770a548b79",
+          "final": "706d735a832c31382a6546b4b3dd4b05171d5e14e462018984373f9508301efb"
+        }
+      }
+    },
+    {
+      "file": "LY-D1-CU_rho1_calibrate.json",
+      "phase": "calibrate",
+      "historical_receipt_sha256": "0c6c501064a6dc5fe90e1c2f60f5b46566f84b3575b83535889fa9bd1989dc03",
+      "final_receipt_sha256": "7909f0fb029b0695c9cca08f776daed7931c3b9c4417a660932377abaaef2077",
+      "historical_ledger_sha256": "e5c3af78855249f2f0a972e97a07f1a3a2ac397e81ced238094d6d76a9b9bc68",
+      "final_ledger_sha256": "e5c3af78855249f2f0a972e97a07f1a3a2ac397e81ced238094d6d76a9b9bc68",
+      "compressed_ledgers_identical": true,
+      "decompressed_statistical_records_identical": true,
+      "statistical_summaries_identical": true,
+      "statistical_binding_values_identical": true,
+      "summary_differences": [],
+      "binding_differences": [],
+      "changed_file_bindings": {
+        "models/f3/qualification_contract.py": {
+          "historical": "48eef04162897b321390ca3f745c6766dd830f25d15c29712e35cc770a548b79",
+          "final": "706d735a832c31382a6546b4b3dd4b05171d5e14e462018984373f9508301efb"
+        }
+      }
+    },
+    {
+      "file": "LY-H2-CU_rho0.25_accept.json",
+      "phase": "accept",
+      "historical_receipt_sha256": "b8eda479b7902cbe0eb0502ef3454e81607ba367511fa048cfe896c1fddc64f8",
+      "final_receipt_sha256": "03f61c0ad67d0c4bd1de095d13d433fc3db613aa6b755e64e445a911bb8970be",
+      "historical_ledger_sha256": "71ee1ccc3f74c3ebf897fddb6a3c3191d5221cf4458c8674a186cfbeb24599e0",
+      "final_ledger_sha256": "71ee1ccc3f74c3ebf897fddb6a3c3191d5221cf4458c8674a186cfbeb24599e0",
+      "compressed_ledgers_identical": true,
+      "decompressed_statistical_records_identical": true,
+      "statistical_summaries_identical": true,
+      "statistical_binding_values_identical": true,
+      "summary_differences": [],
+      "binding_differences": [],
+      "changed_file_bindings": {
+        "models/f3/qualification_contract.py": {
+          "historical": "48eef04162897b321390ca3f745c6766dd830f25d15c29712e35cc770a548b79",
+          "final": "706d735a832c31382a6546b4b3dd4b05171d5e14e462018984373f9508301efb"
+        }
+      }
+    },
+    {
+      "file": "LY-H2-CU_rho0.25_calibrate.json",
+      "phase": "calibrate",
+      "historical_receipt_sha256": "c1b9b9e863f27667d50f35360cf9b166d7d3e1a457a871d8c58b6ffaf37ee071",
+      "final_receipt_sha256": "104fedb75d0597b0c35f24b5375e8a3fa52b636448e911dd236d115a67aee7cb",
+      "historical_ledger_sha256": "5646c1c1e7c8490b12a6eb5873f492747ac5e36f7fe5dfe062356d3cc5aa88b8",
+      "final_ledger_sha256": "5646c1c1e7c8490b12a6eb5873f492747ac5e36f7fe5dfe062356d3cc5aa88b8",
+      "compressed_ledgers_identical": true,
+      "decompressed_statistical_records_identical": true,
+      "statistical_summaries_identical": true,
+      "statistical_binding_values_identical": true,
+      "summary_differences": [],
+      "binding_differences": [],
+      "changed_file_bindings": {
+        "models/f3/qualification_contract.py": {
+          "historical": "48eef04162897b321390ca3f745c6766dd830f25d15c29712e35cc770a548b79",
+          "final": "706d735a832c31382a6546b4b3dd4b05171d5e14e462018984373f9508301efb"
+        }
+      }
+    },
+    {
+      "file": "LY-H2-CU_rho0.5_accept.json",
+      "phase": "accept",
+      "historical_receipt_sha256": "9371c0ba9f6316d903672cc6e3474e86336d923236ff018c006a0d1934628565",
+      "final_receipt_sha256": "67fbd0aebd88c8856bb04775b7860dda3832ae61c4bc766f253800da4965697b",
+      "historical_ledger_sha256": "47df370fb0d729da64a56e17cd225cc9057554d4baa41fd263485c91f6786f0d",
+      "final_ledger_sha256": "47df370fb0d729da64a56e17cd225cc9057554d4baa41fd263485c91f6786f0d",
+      "compressed_ledgers_identical": true,
+      "decompressed_statistical_records_identical": true,
+      "statistical_summaries_identical": true,
+      "statistical_binding_values_identical": true,
+      "summary_differences": [],
+      "binding_differences": [],
+      "changed_file_bindings": {
+        "models/f3/qualification_contract.py": {
+          "historical": "48eef04162897b321390ca3f745c6766dd830f25d15c29712e35cc770a548b79",
+          "final": "706d735a832c31382a6546b4b3dd4b05171d5e14e462018984373f9508301efb"
+        }
+      }
+    },
+    {
+      "file": "LY-H2-CU_rho0.5_calibrate.json",
+      "phase": "calibrate",
+      "historical_receipt_sha256": "57309daf270370a5f29698cf6d9c39cf56c7f70024cac4f1464bfdbfe823a1aa",
+      "final_receipt_sha256": "c98ce6f5a5fa407bca60289d4def0f1f76df02d83a7dbe2e4e5254ee7cb1d1b3",
+      "historical_ledger_sha256": "93ac1949b157fd7cbfc3c76a5be9ec80181ef8e972d85e68d01e20d659bc6017",
+      "final_ledger_sha256": "93ac1949b157fd7cbfc3c76a5be9ec80181ef8e972d85e68d01e20d659bc6017",
+      "compressed_ledgers_identical": true,
+      "decompressed_statistical_records_identical": true,
+      "statistical_summaries_identical": true,
+      "statistical_binding_values_identical": true,
+      "summary_differences": [],
+      "binding_differences": [],
+      "changed_file_bindings": {
+        "models/f3/qualification_contract.py": {
+          "historical": "48eef04162897b321390ca3f745c6766dd830f25d15c29712e35cc770a548b79",
+          "final": "706d735a832c31382a6546b4b3dd4b05171d5e14e462018984373f9508301efb"
+        }
+      }
+    },
+    {
+      "file": "LY-H2-CU_rho1_accept.json",
+      "phase": "accept",
+      "historical_receipt_sha256": "800da153a27cb5dc7f3e9e04727e7261115a6646b6cd394ef437279f2d8771d6",
+      "final_receipt_sha256": "f96b9cd144c4b0a61ad4f2c3549433db1d5f234b53ed8bd886e3e6add2da5533",
+      "historical_ledger_sha256": "d2ce97cf92018a24d924ca408e605e2f7f3ccb735316fdaa328b96d612ea611c",
+      "final_ledger_sha256": "d2ce97cf92018a24d924ca408e605e2f7f3ccb735316fdaa328b96d612ea611c",
+      "compressed_ledgers_identical": true,
+      "decompressed_statistical_records_identical": true,
+      "statistical_summaries_identical": true,
+      "statistical_binding_values_identical": true,
+      "summary_differences": [],
+      "binding_differences": [],
+      "changed_file_bindings": {
+        "models/f3/qualification_contract.py": {
+          "historical": "48eef04162897b321390ca3f745c6766dd830f25d15c29712e35cc770a548b79",
+          "final": "706d735a832c31382a6546b4b3dd4b05171d5e14e462018984373f9508301efb"
+        }
+      }
+    },
+    {
+      "file": "LY-H2-CU_rho1_calibrate.json",
+      "phase": "calibrate",
+      "historical_receipt_sha256": "1bbfa136553fbc37cc248acb08ed2728d27c8447519f235cd0437cc4be3bb91b",
+      "final_receipt_sha256": "0d9e8368bd8dc237f83b84968164c8e5c8bf8b188d97d572d04b65283c2143b0",
+      "historical_ledger_sha256": "a8a43662868fd69cb2dbf2891dc7f0dd229c87d6f43b9a07f2099a8a58f01c84",
+      "final_ledger_sha256": "a8a43662868fd69cb2dbf2891dc7f0dd229c87d6f43b9a07f2099a8a58f01c84",
+      "compressed_ledgers_identical": true,
+      "decompressed_statistical_records_identical": true,
+      "statistical_summaries_identical": true,
+      "statistical_binding_values_identical": true,
+      "summary_differences": [],
+      "binding_differences": [],
+      "changed_file_bindings": {
+        "models/f3/qualification_contract.py": {
+          "historical": "48eef04162897b321390ca3f745c6766dd830f25d15c29712e35cc770a548b79",
+          "final": "706d735a832c31382a6546b4b3dd4b05171d5e14e462018984373f9508301efb"
+        }
+      }
+    },
+    {
+      "file": "LY-I3-CU_rho0.25_accept.json",
+      "phase": "accept",
+      "historical_receipt_sha256": "ef99ef5c8b2175fd5ed311dddadda8bf7bafd1f677522bb200e7702decb2f5c1",
+      "final_receipt_sha256": "9c94ad5fbc2c3aca9cd1f64262b12ad36fc0c57dce01217fa37bdbf0c6f81bb2",
+      "historical_ledger_sha256": "4d4189eb108a2cf5655f6b4298eee29a7ba8f9068051f07112e156198cfa2a18",
+      "final_ledger_sha256": "4d4189eb108a2cf5655f6b4298eee29a7ba8f9068051f07112e156198cfa2a18",
+      "compressed_ledgers_identical": true,
+      "decompressed_statistical_records_identical": true,
+      "statistical_summaries_identical": true,
+      "statistical_binding_values_identical": true,
+      "summary_differences": [],
+      "binding_differences": [],
+      "changed_file_bindings": {
+        "models/f3/qualification_contract.py": {
+          "historical": "48eef04162897b321390ca3f745c6766dd830f25d15c29712e35cc770a548b79",
+          "final": "706d735a832c31382a6546b4b3dd4b05171d5e14e462018984373f9508301efb"
+        }
+      }
+    },
+    {
+      "file": "LY-I3-CU_rho0.25_calibrate.json",
+      "phase": "calibrate",
+      "historical_receipt_sha256": "ac965d2a5f1191a29162edcfdcae1372f06c78986c437afaa7b90fb9a4f99b88",
+      "final_receipt_sha256": "4573243575e8886f30862322ff26cd3f71bdb96bf98a5d6d25e541c92cebb947",
+      "historical_ledger_sha256": "fdeac40b7846231e31ff932fdaa04c2f305dab3c4fbda496847e6b9acd611b53",
+      "final_ledger_sha256": "fdeac40b7846231e31ff932fdaa04c2f305dab3c4fbda496847e6b9acd611b53",
+      "compressed_ledgers_identical": true,
+      "decompressed_statistical_records_identical": true,
+      "statistical_summaries_identical": true,
+      "statistical_binding_values_identical": true,
+      "summary_differences": [],
+      "binding_differences": [],
+      "changed_file_bindings": {
+        "models/f3/qualification_contract.py": {
+          "historical": "48eef04162897b321390ca3f745c6766dd830f25d15c29712e35cc770a548b79",
+          "final": "706d735a832c31382a6546b4b3dd4b05171d5e14e462018984373f9508301efb"
+        }
+      }
+    },
+    {
+      "file": "LY-I3-CU_rho0.5_accept.json",
+      "phase": "accept",
+      "historical_receipt_sha256": "ca69cf0db16b7f39dd26b6d4f16c8da5767d1e5361969e2f4a4608347e208729",
+      "final_receipt_sha256": "5dd1eeff851539e7f4145d3537068e29f38c7c70c5445926b3e36456567c54af",
+      "historical_ledger_sha256": "ddfa119fe380a5bacfe60a829fd49f76b436818e9c44914a4e06c3d26d60438d",
+      "final_ledger_sha256": "ddfa119fe380a5bacfe60a829fd49f76b436818e9c44914a4e06c3d26d60438d",
+      "compressed_ledgers_identical": true,
+      "decompressed_statistical_records_identical": true,
+      "statistical_summaries_identical": true,
+      "statistical_binding_values_identical": true,
+      "summary_differences": [],
+      "binding_differences": [],
+      "changed_file_bindings": {
+        "models/f3/qualification_contract.py": {
+          "historical": "48eef04162897b321390ca3f745c6766dd830f25d15c29712e35cc770a548b79",
+          "final": "706d735a832c31382a6546b4b3dd4b05171d5e14e462018984373f9508301efb"
+        }
+      }
+    },
+    {
+      "file": "LY-I3-CU_rho0.5_calibrate.json",
+      "phase": "calibrate",
+      "historical_receipt_sha256": "b15f0776d2e10f57bc203d52728deaf85844589ceac27cf596e473068217b8be",
+      "final_receipt_sha256": "70183f97abd4e7f7e06a75abdc161481d111662e7669b5b0c0db2262b405ed69",
+      "historical_ledger_sha256": "30cfb78868d14064881553ef5c7b9b059400212da4ecb4f6d26e5afe7442674d",
+      "final_ledger_sha256": "30cfb78868d14064881553ef5c7b9b059400212da4ecb4f6d26e5afe7442674d",
+      "compressed_ledgers_identical": true,
+      "decompressed_statistical_records_identical": true,
+      "statistical_summaries_identical": true,
+      "statistical_binding_values_identical": true,
+      "summary_differences": [],
+      "binding_differences": [],
+      "changed_file_bindings": {
+        "models/f3/qualification_contract.py": {
+          "historical": "48eef04162897b321390ca3f745c6766dd830f25d15c29712e35cc770a548b79",
+          "final": "706d735a832c31382a6546b4b3dd4b05171d5e14e462018984373f9508301efb"
+        }
+      }
+    },
+    {
+      "file": "LY-I3-CU_rho1_accept.json",
+      "phase": "accept",
+      "historical_receipt_sha256": "bbbc90a4231c83f3c0684f1b2fdcdae9d585378479e26be0436b411ecf7ac7f8",
+      "final_receipt_sha256": "d2cf0629e934418ea5a02b62099f33a9c8d5e3c445f3d77b485e233821f5d319",
+      "historical_ledger_sha256": "13461e3a151877e555234f8f17399fae2e3b2ecade56dd3e767a01e62dadebb7",
+      "final_ledger_sha256": "13461e3a151877e555234f8f17399fae2e3b2ecade56dd3e767a01e62dadebb7",
+      "compressed_ledgers_identical": true,
+      "decompressed_statistical_records_identical": true,
+      "statistical_summaries_identical": true,
+      "statistical_binding_values_identical": true,
+      "summary_differences": [],
+      "binding_differences": [],
+      "changed_file_bindings": {
+        "models/f3/qualification_contract.py": {
+          "historical": "48eef04162897b321390ca3f745c6766dd830f25d15c29712e35cc770a548b79",
+          "final": "706d735a832c31382a6546b4b3dd4b05171d5e14e462018984373f9508301efb"
+        }
+      }
+    },
+    {
+      "file": "LY-I3-CU_rho1_calibrate.json",
+      "phase": "calibrate",
+      "historical_receipt_sha256": "6cec9621e24710761597fb8192097490a802ce232fc280cf2533873c3ddf31dc",
+      "final_receipt_sha256": "7be23cdd74432c66d652193755435cfd54a559e20938f50a1170009b09cd9b36",
+      "historical_ledger_sha256": "e01a53c7e8d2e9653881d2e484cc3988c3dc6c8e029255ed6aac58c6c7d777bc",
+      "final_ledger_sha256": "e01a53c7e8d2e9653881d2e484cc3988c3dc6c8e029255ed6aac58c6c7d777bc",
+      "compressed_ledgers_identical": true,
+      "decompressed_statistical_records_identical": true,
+      "statistical_summaries_identical": true,
+      "statistical_binding_values_identical": true,
+      "summary_differences": [],
+      "binding_differences": [],
+      "changed_file_bindings": {
+        "models/f3/qualification_contract.py": {
+          "historical": "48eef04162897b321390ca3f745c6766dd830f25d15c29712e35cc770a548b79",
+          "final": "706d735a832c31382a6546b4b3dd4b05171d5e14e462018984373f9508301efb"
+        }
+      }
+    },
+    {
+      "file": "LY-MZ-CU_rho0.1_accept.json",
+      "phase": "accept",
+      "historical_receipt_sha256": "78c3877b0444ea04d38d60c5add511545c8dde557491d420315e6ca998158065",
+      "final_receipt_sha256": "6bdb93211b1e7e4b83a8599169ad2cc267c2139a57b953a2100d88067bf8716b",
+      "historical_ledger_sha256": "bdf5221fee6c095b23e35d2b2622ea06bd6895118e26c433bdf07219e4bd4493",
+      "final_ledger_sha256": "bdf5221fee6c095b23e35d2b2622ea06bd6895118e26c433bdf07219e4bd4493",
+      "compressed_ledgers_identical": true,
+      "decompressed_statistical_records_identical": true,
+      "statistical_summaries_identical": true,
+      "statistical_binding_values_identical": true,
+      "summary_differences": [],
+      "binding_differences": [],
+      "changed_file_bindings": {
+        "models/f3/qualification_contract.py": {
+          "historical": "48eef04162897b321390ca3f745c6766dd830f25d15c29712e35cc770a548b79",
+          "final": "706d735a832c31382a6546b4b3dd4b05171d5e14e462018984373f9508301efb"
+        }
+      }
+    },
+    {
+      "file": "LY-MZ-CU_rho0.1_calibrate.json",
+      "phase": "calibrate",
+      "historical_receipt_sha256": "942606c9020d46e6e451abcaa54e35b16b8d04b21181811d6dcaefcc1f2ec996",
+      "final_receipt_sha256": "95ae25b604a223bcff43f3faedf3b91518cff53fc1f9b0b271c10fb090125fd2",
+      "historical_ledger_sha256": "bc78417a778b5d5d8d9ffe3bd09c39c5bd6dc799e023e5e20cf6613adc2ddad3",
+      "final_ledger_sha256": "bc78417a778b5d5d8d9ffe3bd09c39c5bd6dc799e023e5e20cf6613adc2ddad3",
+      "compressed_ledgers_identical": true,
+      "decompressed_statistical_records_identical": true,
+      "statistical_summaries_identical": true,
+      "statistical_binding_values_identical": true,
+      "summary_differences": [],
+      "binding_differences": [],
+      "changed_file_bindings": {
+        "models/f3/qualification_contract.py": {
+          "historical": "48eef04162897b321390ca3f745c6766dd830f25d15c29712e35cc770a548b79",
+          "final": "706d735a832c31382a6546b4b3dd4b05171d5e14e462018984373f9508301efb"
+        }
+      }
+    },
+    {
+      "file": "LY-MZ-CU_rho0.25_accept.json",
+      "phase": "accept",
+      "historical_receipt_sha256": "ca83b1705431f4f563d27dbbcc47c6854bc5b798057b59cc00c530f7ecef62b2",
+      "final_receipt_sha256": "f709ff13af957b19f6b5ac79a067acdb95d514d7b4fbd4df19cf80fdada77f92",
+      "historical_ledger_sha256": "508923a1b47382e040a6b90d5a2989f25f2a13157cccc719d7ff149dc8e681b9",
+      "final_ledger_sha256": "508923a1b47382e040a6b90d5a2989f25f2a13157cccc719d7ff149dc8e681b9",
+      "compressed_ledgers_identical": true,
+      "decompressed_statistical_records_identical": true,
+      "statistical_summaries_identical": true,
+      "statistical_binding_values_identical": true,
+      "summary_differences": [],
+      "binding_differences": [],
+      "changed_file_bindings": {
+        "models/f3/qualification_contract.py": {
+          "historical": "48eef04162897b321390ca3f745c6766dd830f25d15c29712e35cc770a548b79",
+          "final": "706d735a832c31382a6546b4b3dd4b05171d5e14e462018984373f9508301efb"
+        }
+      }
+    },
+    {
+      "file": "LY-MZ-CU_rho0.25_calibrate.json",
+      "phase": "calibrate",
+      "historical_receipt_sha256": "a8a80bd4deaa0669cc1118196396266b3bbe311d9db8c0bf49179e22d44482b2",
+      "final_receipt_sha256": "bc2a128afe52143a36486dabcd93f9469a35fa00f320d8bf6341322b06897876",
+      "historical_ledger_sha256": "0cf1b477cc3b0576a2b10330dc0e28861be6fdf967e6a1c85d4af5e00b465291",
+      "final_ledger_sha256": "0cf1b477cc3b0576a2b10330dc0e28861be6fdf967e6a1c85d4af5e00b465291",
+      "compressed_ledgers_identical": true,
+      "decompressed_statistical_records_identical": true,
+      "statistical_summaries_identical": true,
+      "statistical_binding_values_identical": true,
+      "summary_differences": [],
+      "binding_differences": [],
+      "changed_file_bindings": {
+        "models/f3/qualification_contract.py": {
+          "historical": "48eef04162897b321390ca3f745c6766dd830f25d15c29712e35cc770a548b79",
+          "final": "706d735a832c31382a6546b4b3dd4b05171d5e14e462018984373f9508301efb"
+        }
+      }
+    },
+    {
+      "file": "LY-MZ-CU_rho0.5_accept.json",
+      "phase": "accept",
+      "historical_receipt_sha256": "c07416b61fdda0d1a97bad5c3bc45323dae051ad885a2575033dd3cb4dc34775",
+      "final_receipt_sha256": "90a6f06246c722f78aefb5132dec07d261d2589fb4799057dcbcb85f21218f3d",
+      "historical_ledger_sha256": "75c21ef83bd827cd7faaee618c5b64bbce1864da87b17737db1e4062c7bde6e2",
+      "final_ledger_sha256": "75c21ef83bd827cd7faaee618c5b64bbce1864da87b17737db1e4062c7bde6e2",
+      "compressed_ledgers_identical": true,
+      "decompressed_statistical_records_identical": true,
+      "statistical_summaries_identical": true,
+      "statistical_binding_values_identical": true,
+      "summary_differences": [],
+      "binding_differences": [],
+      "changed_file_bindings": {
+        "models/f3/qualification_contract.py": {
+          "historical": "48eef04162897b321390ca3f745c6766dd830f25d15c29712e35cc770a548b79",
+          "final": "706d735a832c31382a6546b4b3dd4b05171d5e14e462018984373f9508301efb"
+        }
+      }
+    },
+    {
+      "file": "LY-MZ-CU_rho0.5_calibrate.json",
+      "phase": "calibrate",
+      "historical_receipt_sha256": "6b9f454fb0c5b9607256b192ccb3890ff4d5b7f35e4316fe3ccad5d18aaca593",
+      "final_receipt_sha256": "d3435cb0a32677c369a787ac81f42d40ae44945479f771212915ea436ec8c94f",
+      "historical_ledger_sha256": "ae76e7427eedb7396c21cef0cafd71c89cc15f9856c864c09652256bfd459b94",
+      "final_ledger_sha256": "ae76e7427eedb7396c21cef0cafd71c89cc15f9856c864c09652256bfd459b94",
+      "compressed_ledgers_identical": true,
+      "decompressed_statistical_records_identical": true,
+      "statistical_summaries_identical": true,
+      "statistical_binding_values_identical": true,
+      "summary_differences": [],
+      "binding_differences": [],
+      "changed_file_bindings": {
+        "models/f3/qualification_contract.py": {
+          "historical": "48eef04162897b321390ca3f745c6766dd830f25d15c29712e35cc770a548b79",
+          "final": "706d735a832c31382a6546b4b3dd4b05171d5e14e462018984373f9508301efb"
+        }
+      }
+    },
+    {
+      "file": "LY-MZ-CU_rho1_accept.json",
+      "phase": "accept",
+      "historical_receipt_sha256": "0fef0d91c6b6e0170f345fe33ba40aaa4bd9ce28b627e90b9dd2e229ad055745",
+      "final_receipt_sha256": "00fd55f2afc77b88214abdb18fa78b8e1620a8489919f0188e02f6bdfadc21b3",
+      "historical_ledger_sha256": "52f10a80ce21a9f8613dfc0a25d7ddc531ef02350881d325ca45e7a9885272c6",
+      "final_ledger_sha256": "52f10a80ce21a9f8613dfc0a25d7ddc531ef02350881d325ca45e7a9885272c6",
+      "compressed_ledgers_identical": true,
+      "decompressed_statistical_records_identical": true,
+      "statistical_summaries_identical": true,
+      "statistical_binding_values_identical": true,
+      "summary_differences": [],
+      "binding_differences": [],
+      "changed_file_bindings": {
+        "models/f3/qualification_contract.py": {
+          "historical": "48eef04162897b321390ca3f745c6766dd830f25d15c29712e35cc770a548b79",
+          "final": "706d735a832c31382a6546b4b3dd4b05171d5e14e462018984373f9508301efb"
+        }
+      }
+    },
+    {
+      "file": "LY-MZ-CU_rho1_calibrate.json",
+      "phase": "calibrate",
+      "historical_receipt_sha256": "b110a15423a7a00bb4c8c9ee0477f80db72fad8454b60b5a819cc2257f704b4b",
+      "final_receipt_sha256": "432bfde2373f3fac42c294fdaa7282022caa88a6fdfee52d8de017197de4bf53",
+      "historical_ledger_sha256": "dca28cf26617b2212327acba09476a33a821def80f5f3f5a86ab531c54ec63c9",
+      "final_ledger_sha256": "dca28cf26617b2212327acba09476a33a821def80f5f3f5a86ab531c54ec63c9",
+      "compressed_ledgers_identical": true,
+      "decompressed_statistical_records_identical": true,
+      "statistical_summaries_identical": true,
+      "statistical_binding_values_identical": true,
+      "summary_differences": [],
+      "binding_differences": [],
+      "changed_file_bindings": {
+        "models/f3/qualification_contract.py": {
+          "historical": "48eef04162897b321390ca3f745c6766dd830f25d15c29712e35cc770a548b79",
+          "final": "706d735a832c31382a6546b4b3dd4b05171d5e14e462018984373f9508301efb"
+        }
+      }
+    },
+    {
+      "file": "QB-CO_rho1_accept.json",
+      "phase": "accept",
+      "historical_receipt_sha256": "d36b2f7c93de9405a2b8dff5efb61b4f7beed913ad9614d774c07f419ec1a74c",
+      "final_receipt_sha256": "dfa3758231ba92ef8f88586998ad7d177d59319cc3fce963b6ab754d7f32b005",
+      "historical_ledger_sha256": "d4b2e10fff49635ca1598e144906bda733a92262dcb391ab5c08c665f2975771",
+      "final_ledger_sha256": "d4b2e10fff49635ca1598e144906bda733a92262dcb391ab5c08c665f2975771",
+      "compressed_ledgers_identical": true,
+      "decompressed_statistical_records_identical": true,
+      "statistical_summaries_identical": true,
+      "statistical_binding_values_identical": true,
+      "summary_differences": [],
+      "binding_differences": [],
+      "changed_file_bindings": {
+        "models/f3/qualification_contract.py": {
+          "historical": "48eef04162897b321390ca3f745c6766dd830f25d15c29712e35cc770a548b79",
+          "final": "706d735a832c31382a6546b4b3dd4b05171d5e14e462018984373f9508301efb"
+        }
+      }
+    },
+    {
+      "file": "QB-CO_rho1_calibrate.json",
+      "phase": "calibrate",
+      "historical_receipt_sha256": "e3f0d00c39616d47b2223c28f13cfab8540ca1b20e7830d6648f941284fa4207",
+      "final_receipt_sha256": "c9c33a7455716eb9aa8243aa40e07a0cf6774fa7442ca3c354685d7047054a55",
+      "historical_ledger_sha256": "e67bc0a0d9238e8fc34b2dae2aaf560d9b14d311d61147fd2defc4d1565e85f3",
+      "final_ledger_sha256": "e67bc0a0d9238e8fc34b2dae2aaf560d9b14d311d61147fd2defc4d1565e85f3",
+      "compressed_ledgers_identical": true,
+      "decompressed_statistical_records_identical": true,
+      "statistical_summaries_identical": true,
+      "statistical_binding_values_identical": true,
+      "summary_differences": [],
+      "binding_differences": [],
+      "changed_file_bindings": {
+        "models/f3/qualification_contract.py": {
+          "historical": "48eef04162897b321390ca3f745c6766dd830f25d15c29712e35cc770a548b79",
+          "final": "706d735a832c31382a6546b4b3dd4b05171d5e14e462018984373f9508301efb"
+        }
+      }
+    }
+  ],
+  "comparison_script_sha256": "38c0e13fc759d7987234264af6559df9ed6ac0aeea3ae8a7cb5b372c860ec7bb"
+}

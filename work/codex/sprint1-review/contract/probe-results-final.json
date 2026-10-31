@@ -1,0 +1,34 @@
+{
+  "prescreen_error": {
+    "complete": false,
+    "result": "incomplete",
+    "errors_before_screen": 1
+  },
+  "contradictory_screen": {
+    "rejected": true,
+    "error": "T: screen flag contradicts its statistic"
+  },
+  "unconverged_screen": {
+    "rejected": true,
+    "error": "frame-potential statistic failed to converge"
+  },
+  "orphan_stage2_low_level": {
+    "rejected": true,
+    "error": "cannot read receipt /private/tmp/sp-sprint1-contract-review/toy-artifacts-final/AUDIT-TOY_rho1_accept.json: [Errno 2] No such file or directory: '/private/tmp/sp-sprint1-contract-review/toy-artifacts-final/AUDIT-TOY_rho1_accept.json'"
+  },
+  "orphan_stage2_attachment": {
+    "status": "calibrated only",
+    "delta": 0.0
+  },
+  "immutable_rewrite": {
+    "rejected": true,
+    "error": "qualification artifacts already exist: AUDIT-TOY_rho1_calibrate; use a new output directory"
+  },
+  "derived_tolerance": {
+    "small_change_accepted": true,
+    "large_change": {
+      "rejected": true,
+      "error": "recomputed reference rates or boundary truths exceed the declared tolerance"
+    }
+  }
+}

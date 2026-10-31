@@ -1,0 +1,229 @@
+{
+  "seconds": 883.5081026554108,
+  "phases": [
+    {
+      "design": "LY-H2-CU",
+      "rho": 1.0,
+      "phase": "calibrate",
+      "complete": true,
+      "result": null,
+      "delta": 0.0
+    },
+    {
+      "design": "LY-H2-CU",
+      "rho": 0.5,
+      "phase": "calibrate",
+      "complete": true,
+      "result": null,
+      "delta": 0.0
+    },
+    {
+      "design": "LY-H2-CU",
+      "rho": 0.25,
+      "phase": "calibrate",
+      "complete": true,
+      "result": null,
+      "delta": 0.0
+    },
+    {
+      "design": "LY-D1-CU",
+      "rho": 1.0,
+      "phase": "calibrate",
+      "complete": true,
+      "result": null,
+      "delta": 0.0
+    },
+    {
+      "design": "LY-D1-CU",
+      "rho": 0.5,
+      "phase": "calibrate",
+      "complete": true,
+      "result": null,
+      "delta": 0.0
+    },
+    {
+      "design": "LY-D1-CU",
+      "rho": 0.25,
+      "phase": "calibrate",
+      "complete": true,
+      "result": null,
+      "delta": 0.0
+    },
+    {
+      "design": "LY-I3-CU",
+      "rho": 1.0,
+      "phase": "calibrate",
+      "complete": true,
+      "result": null,
+      "delta": 0.0
+    },
+    {
+      "design": "LY-I3-CU",
+      "rho": 0.5,
+      "phase": "calibrate",
+      "complete": true,
+      "result": null,
+      "delta": 0.0
+    },
+    {
+      "design": "LY-I3-CU",
+      "rho": 0.25,
+      "phase": "calibrate",
+      "complete": true,
+      "result": null,
+      "delta": 0.0
+    },
+    {
+      "design": "LY-MZ-CU",
+      "rho": 1.0,
+      "phase": "calibrate",
+      "complete": true,
+      "result": null,
+      "delta": 0.0
+    },
+    {
+      "design": "LY-MZ-CU",
+      "rho": 0.5,
+      "phase": "calibrate",
+      "complete": true,
+      "result": null,
+      "delta": 0.0
+    },
+    {
+      "design": "LY-MZ-CU",
+      "rho": 0.25,
+      "phase": "calibrate",
+      "complete": true,
+      "result": null,
+      "delta": 0.0
+    },
+    {
+      "design": "LY-MZ-CU",
+      "rho": 0.1,
+      "phase": "calibrate",
+      "complete": true,
+      "result": null,
+      "delta": 0.0
+    },
+    {
+      "design": "QB-CO",
+      "rho": 1.0,
+      "phase": "calibrate",
+      "complete": true,
+      "result": null,
+      "delta": 0.0
+    },
+    {
+      "design": "LY-H2-CU",
+      "rho": 1.0,
+      "phase": "accept",
+      "complete": true,
+      "result": "pass",
+      "delta": null
+    },
+    {
+      "design": "LY-H2-CU",
+      "rho": 0.5,
+      "phase": "accept",
+      "complete": true,
+      "result": "pass",
+      "delta": null
+    },
+    {
+      "design": "LY-H2-CU",
+      "rho": 0.25,
+      "phase": "accept",
+      "complete": true,
+      "result": "pass",
+      "delta": null
+    },
+    {
+      "design": "LY-D1-CU",
+      "rho": 1.0,
+      "phase": "accept",
+      "complete": true,
+      "result": "pass",
+      "delta": null
+    },
+    {
+      "design": "LY-D1-CU",
+      "rho": 0.5,
+      "phase": "accept",
+      "complete": true,
+      "result": "pass",
+      "delta": null
+    },
+    {
+      "design": "LY-D1-CU",
+      "rho": 0.25,
+      "phase": "accept",
+      "complete": true,
+      "result": "pass",
+      "delta": null
+    },
+    {
+      "design": "LY-I3-CU",
+      "rho": 1.0,
+      "phase": "accept",
+      "complete": true,
+      "result": "pass",
+      "delta": null
+    },
+    {
+      "design": "LY-I3-CU",
+      "rho": 0.5,
+      "phase": "accept",
+      "complete": true,
+      "result": "pass",
+      "delta": null
+    },
+    {
+      "design": "LY-I3-CU",
+      "rho": 0.25,
+      "phase": "accept",
+      "complete": true,
+      "result": "pass",
+      "delta": null
+    },
+    {
+      "design": "LY-MZ-CU",
+      "rho": 1.0,
+      "phase": "accept",
+      "complete": true,
+      "result": "pass",
+      "delta": null
+    },
+    {
+      "design": "LY-MZ-CU",
+      "rho": 0.5,
+      "phase": "accept",
+      "complete": true,
+      "result": "pass",
+      "delta": null
+    },
+    {
+      "design": "LY-MZ-CU",
+      "rho": 0.25,
+      "phase": "accept",
+      "complete": true,
+      "result": "pass",
+      "delta": null
+    },
+    {
+      "design": "LY-MZ-CU",
+      "rho": 0.1,
+      "phase": "accept",
+      "complete": true,
+      "result": "pass",
+      "delta": null
+    },
+    {
+      "design": "QB-CO",
+      "rho": 1.0,
+      "phase": "accept",
+      "complete": true,
+      "result": "pass",
+      "delta": null
+    }
+  ]
+}

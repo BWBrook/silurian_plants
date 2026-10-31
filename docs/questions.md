@@ -20,6 +20,22 @@ The register is updated at each loop's close. Started 2026-10-28 by Claude Opus 
   - **answered**: with a pointer to the result.
 - **Kind of contribution.** Each has its own standard of success (charter): synthesis, statistics, simulation, phylogeny.
 
+**Sprint-1 counter-review (Codex, 31 October; Q1/Q2/Q5):** source/design
+reconstruction retained the primary Murzuq contrast (51/59 reference, 28 empty
+older cuttings), and independent numerical integration reproduced its bound.
+The qualification contract now binds inputs, code and declared quantities,
+retains every attempt and checks the phase chain; current rerun evidence is in
+`audits/2026-10-31-sprint1-codex-review.md`. Sensitivities cannot inherit a
+primary pass; QB H0c is an unqualified diagnostic and disputed QB forms cannot
+be coded as zeros. The Murzuq bound is exposure-weighted, leaving an unsampled
+Sandbian pulse unconstrained. Stage 4's oldest endpoint is not an occurrence
+age. These corrections narrow claims without changing the M1/M3 non-admissions.
+The final expanded grid passes all fourteen primary combinations at zero shift,
+but its central window test misses in 20/60 non-abstentions versus 20/1,000
+screen-passing records. Q1 therefore retains the selected-result confidence
+question. Next is Claude's reconciliation of both counter-reviews, including
+that limitation and the shared E2 monad rule. Older dated next-step snapshots below are historical.
+
 **Autonomous sprint plan, 31 October:** `sprints-2026-11.md` v2 proposes Claude's
 M2/real-design pipeline followed by Codex's bounded M1 source/analysis programme,
 M3 denominator assessment and combined synthesis, then counter-review and
@@ -29,10 +45,12 @@ conflicts. This prospective plan changes no question's status or existing result
 
 **Sprint-2 review (Claude, 31 October; Q1/Q2/Q5):** the non-admissions hold. Borenshult, Libya and Ghelli,
 left out of the M1 roster, were assessed for E2 and none is admitted. Borenshult passes the screen only if two
-disputed Darriwilian forms are coded as zeros. No older unit in any frame is a secure E2 zero under any reading,
-and that outcome-coding rule decides M1 as much as the missing rosters. Under the inclusive reading, Stage 4
-forms place E2 within c.1 Myr of M1, so M1 becomes an occurrence question needing productive pre-514.5 Ma
-material (Q1). Source corrections and new leads (Baldwin 2004; the Balang Stage 4 *Tetrahedraletes*?
+disputed Darriwilian forms are coded as zeros. The disputed older forms cannot be coded as E2 zeros; Borenshult
+has one secure older zero under main but still fails its screen. Under inclusive, Stage 4 forms
+count as E2 within the 514.5–506.5 Ma stage interval, not at its oldest boundary. Their identities
+and ages bear on M1, but do not place E2 within 1 Myr of it. Productive pre-514.5 Ma material
+would precede the whole interval; a direct test before M1 needs exposure older than 515.5 Ma
+(Q1; age/scope correction by Codex in the sprint-1 counter-review). Source corrections and new leads (Baldwin 2004; the Balang Stage 4 *Tetrahedraletes*?
 report; the Hanadir Fig. 2 cryptospore fractions) are in `audits/2026-10-31-sprint2-claude-review.md`. The
 E2 monad rule must be made consistent across sources before any cross-source E2 design (Q5).
 

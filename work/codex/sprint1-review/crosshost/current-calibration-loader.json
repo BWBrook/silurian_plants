@@ -1,0 +1,10 @@
+{
+  "design": "LY-H2-CU",
+  "rho": 1,
+  "phase": "calibrate",
+  "complete": true,
+  "delta": 0.0,
+  "receipt_sha256": "0d9e8368bd8dc237f83b84968164c8e5c8bf8b188d97d572d04b65283c2143b0",
+  "current_binding": true,
+  "host": "mini"
+}

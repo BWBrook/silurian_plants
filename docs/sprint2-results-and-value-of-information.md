@@ -1,19 +1,33 @@
 # Draft combined results and value of information
 
 31 October 2026. Codex, sprint 2 of the agreed sequential programme. This is the
-execution handoff for Claude's review of sprint 2. Codex's full counter-review
-of sprint 1 and joint reconciliation follow; this is not the final Loop 1 close
+combined working memo, updated during the two counter-reviews;
+joint reconciliation follows; this is not the final Loop 1 close
 memo or a public manuscript.
 
 ## What the evidence presently supports
 
 | Maximum and fossil channel | Result/status | What it does not establish |
 |---|---|---|
-| M1, 515.5 Ma; E2 cryptospores | Bounded source assessment complete; no older/reference numerical design admitted under main, inclusive or outlier readings. Claude's review added Borenshult, Libya and Ghelli: none admitted. Under the inclusive reading the Stage 4 forms are E2 itself, within c.1 Myr of M1 | No empirical rate, origin bound, maximum-age probability or evidence of biological absence follows from failed admission. |
-| M2, 459.1 Ma; E1 trilete spores | Sprint 1 returns conditional bounds from Murzuq cuttings and records stage-1 acceptance for fourteen primary design/transport combinations. Stored numbers and the bounded pipeline smoke were checked; full scientific counter-review and receipt/protocol repairs remain open. | The bounds are not probabilities that a crown date is true. The acceptance contract does not establish coverage conditional on an informative claim, or a universal 5% error guarantee. |
+| M1, 515.5 Ma; E2 cryptospores | Bounded source assessment complete; no older/reference numerical design admitted under main, inclusive or outlier readings. Claude's review added Borenshult, Libya and Ghelli: none admitted. Under the inclusive reading the Stage 4 forms are E2 itself, with 514.5–506.5 Ma stage-level age support | No empirical rate, origin bound, maximum-age probability or evidence of biological absence follows from failed admission. |
+| M2, 459.1 Ma; E1 trilete spores | Counter-reviewed Murzuq bounds; all fourteen submitted design/transport combinations pass the expanded grid at zero shift. Current receipts bind inputs, code and protocol; sensitivity variants remain unqualified. | The bounds are not probabilities that a crown date is true. The acceptance contract does not establish coverage conditional on an informative claim, or a universal 5% error guarantee. |
 | M3, 431.2 Ma; E3 polysporangiate bodies | Bounded database/primary-literature denominator assessment complete; no numerical absence design admitted | Occurrence lists, fifty selected axes, eleven fragments or six lithological units are not independent searched-negative rock trials. |
 
-**Claude's review (31 October) of the M1 logic.** No older unit in any held frame is a secure E2 zero under any reading. Older Cambrian–Floian material either contains E2-type forms of disputed affinity (unresolved under main, detected under inclusive) or lacks target-specific reporting (Samphire core 4, Argentine 7584). Coding disputed forms as zeros is what would make a design pass: Borenshult passes the screen only that way. Under the inclusive reading, the question changes from absence to occurrence: E2 is observed from c.514.5 Ma, and testing M1 needs productive pre-514.5 Ma (Stage 3 or Terreneuvian) material, which no holding supplies. Details: `audits/2026-10-31-sprint2-claude-review.md`.
+**Review of the M1 logic (Claude, with Codex's age/scope correction).** No
+assessed frame supplies an admitted older-zero/reference E2 design. This does
+not mean that every older unit is unknown: Borenshult has one secure older zero
+under main, but its screen fails. The selected Cambrian–Floian materials instead
+contain disputed E2-type forms or lack adequate target-specific reporting;
+disputed forms cannot become zeros. Under inclusive, the Stage 4 forms count as
+E2, so occurrence identity and age become central. Stage 4 spans 514.5–506.5 Ma
+in `data/timescale.csv`; 514.5 is the oldest end of the support, not a point
+occurrence or a minimum age. Its possible gap below M1 is therefore about
+1–9 Myr at stage resolution. Productive pre-514.5 Ma material would precede the
+whole Stage 4 interval; testing sustained encounter before 515.5 Ma additionally
+needs sampled exposure before that maximum. A near-direct contradiction of M1
+does not follow from these Stage 4 assignments. Details and the broader Series 2
+alternative: `audits/2026-10-31-sprint2-claude-review.md` and the dated correction
+in `audits/2026-10-31-sprint1-codex-review.md`.
 
 The source synthesis and numerical claims have different scopes. Recovering a
 complete report can change admissibility without producing a usable comparison.
@@ -30,7 +44,8 @@ The table below is read directly from the primary LY-MZ-CU rows in
 `models/f3/out/m2_results.csv`, with minimum reference support 5, chart-code
 material interpretation, full-stage age allocation and cluster shape k = 2.
 Those rows have 51 marked reference cuttings among 59 and 28 older cuttings.
-No new empirical M2 computation or interpretation is adopted in this sprint.
+Codex's sprint-1 counter-review regenerates the empirical outputs and narrows
+the qualification and interpretation as documented below.
 
 | Assumed older/reference transport ratio, rho | H0 exposure/reference-rate-weighted mean-intensity upper read-out over 443.1–459.1 Ma | Window endpoint T for f = 1 on (459.1,T] Ma | Window at f = 0.1 or 0.01 |
 |---:|---:|---:|---|
@@ -39,6 +54,10 @@ No new empirical M2 computation or interpretation is adopted in this sprint.
 | 0.25 | 0.4211 | 467.1 Ma | unbounded |
 | 0.1 | 0.9207 | unbounded | unbounded |
 
+The four decimal places reproduce the CSV, not numerical accuracy: the root
+tolerance is 1e-3. An independent tight-root calculation gives 0.183790945
+for the first row, supporting the reported approximately 0.18 bound.
+
 These values show why a reference-level production assumption matters. The
 declared designs can exclude sustained high encounter, while allowing a low
 encounter history across the proposed maximum. They do not establish that low
@@ -46,7 +65,10 @@ encounter equals low biological abundance: production, delivery, preservation
 and search all intervene. Nor is a claim that early intensities were
 "realistic" established merely by fitting their observational upper bound.
 The mean is weighted by the sampled exposure and class rates, not uniformly
-over geological time. The window imposes a(t) at least f on (459.1,T] and leaves
+over geological time. In the primary Murzuq design the Sandbian interval
+(452.8,458.2] Ma is unsampled: a reference-level pulse confined to those
+5.4 Myr has calendar mean 0.3375 over 443.1–459.1 Ma but weighted mean zero,
+so the approximately 0.18 read-out does not exclude that pulse. The window imposes a(t) at least f on (459.1,T] and leaves
 younger history free; its endpoint is not a general biological-origin bound.
 
 The amended qualification quantity is the probability of a false delivered
@@ -54,24 +76,28 @@ claim **among records passing the frame-potential screen**, counting abstentions
 as non-errors. It is not error conditional on obtaining an informative bound.
 Calibration targets 0.955, the nominal confidence level is 0.95, and independent
 acceptance assesses the 0.93 floor on the declared finite grid. The reported
-worst observed false-claim frequency of 0.037 is a simulation result, not a
+worst observed false-claim frequency of 0.038 is a simulation result, not a
 proof of universal error at most 0.05. Claim frequencies and misses must remain
 beside the coverage summaries.
 The frequencies are marginal for each quantity/truth cell, not the probability
 that any of the many reported curves or design results is wrong. For example,
-MZ/rho=1 acceptance cell B1 has 260 non-trivial H0c f-star evaluations among
-1,000 passing records, with 16 misses: 1.6% of passing records and 6.15% of
-those evaluations. That distinction is the reason to report both denominators.
+MZ/rho=1's new B4 window test has 60 non-abstaining results among 1,000 passing
+records, with 20 misses: 2% of passing records but 33.3% of non-abstentions.
+Its B3 intensity-boundary test has no H0 misses among 703 non-abstentions.
+The adopted qualification supports the first denominator, not 95% coverage
+conditional on obtaining a claim. This distinction is a substantive result of
+the counter-review and must accompany the numerical window endpoint.
 
-The independent reuse check verified all 28 receipts' currently recorded code
-hashes and the complete H2/rho=1 calibration/acceptance row-to-summary counts.
-It also found that the implementation does not bind the active declaration,
-source inputs and every statistical dependency, or fully enforce calibration
-completeness and receipt compatibility. M1 boundary cells also cannot inherit
-the hard-coded M2 age. These are open software requirements, not evidence that
-the checked stored simulations are wrong. No M1 design required binding reuse,
-so this sprint preserves the frozen M2 results and carries the repair list into
-the agreed later counter-review. See `audits/2026-10-31-sprint2-pipeline-reuse.md`.
+The initial reuse check exposed incomplete input and protocol binding. Codex's
+counter-review independently reconstructed all 28 historical receipts and their
+3,122 cell/quantity summaries, then repaired the evidence contract. Current
+receipts bind inputs, code, declarations, runtime and quantities; every consumed
+attempt is retained and the full phase chain is checked. Sensitivities no longer
+inherit a primary pass. QB's constant-history H0c output is an unqualified
+diagnostic, and QB main/zero coding is inadmissible because it turns disputed
+forms into absences. The new grid directly tests the 459.1 Ma intensity boundary
+and the 462.6 Ma window boundary, with fresh calibration/acceptance seeds.
+See `audits/2026-10-31-sprint1-codex-review.md` for the completed rerun evidence.
 
 ## M1 and M3: what changed through source work
 
@@ -117,9 +143,8 @@ estimated expected value or an acquisition commitment.
 | 4 | Re-examination/reconciliation of Argentine 7999, Samphire core 4 and the younger Samphire spore-like forms | E2 first-appearance and producer-affinity readings; candidate preservation controls | Affinity resolution alone does not reconstruct missing sampling coverage or identify reference transport. |
 | 5 | Resolve H2/D1 material-code ambiguity, the Libyan 7287-ft prose/chart discrepancy and relevant age allocations | Stability of M2 variant screens and core-reference admission | The primary cuttings results are not all driven by these records; the core design still has weak reference support even with 7287 accepted. |
 
-Repairing and rechecking qualification receipts is an immediate implementation
-dependency before the next binding numerical tranche, separate from this ranking
-of scientific evidence. External inquiries may help recover ledgers or specimens,
+The sprint-1 counter-review repairs and rechecks qualification receipts;
+scientific evidence needs remain distinct from that software verification. External inquiries may help recover ledgers or specimens,
 but Barry sends them; no external contact or publication occurred here.
 
 ## Transparent conditional sampling calculations
@@ -144,7 +169,11 @@ illustrates the sensitivity of a proposed design; it is not F3 qualification,
 an empirically estimated collecting requirement, or a probability for a clock
 maximum. Several fragments or repeated papers from one bed cannot supply n.
 
-## Review handoff
+## Original sprint-2 verification
+
+The following records the original sprint-2 execution; the subsequent
+counter-review and rerun are recorded in the sprint-1 audit.
+
 
 Source, model and review statuses are separate throughout. The package changes
 evidence tables, reproducible extraction/planning scripts and programme records;
@@ -166,10 +195,10 @@ in four unchanged request/action/outreach files (captured Markdown/URL suffixes
 and citation-context checks). No flag concerns a changed sprint-2 source; the
 log is retained as `data/units/sprint2/doi-scan.log`.
 
-Claude's next owned step is review/fix of sprint 2: independently reconstruct
-the decisive non-admission evidence, check the Qusaiba/Samphire mapping, and
-challenge whether any declared reading really supplies an admissible contrast.
-Then Codex reviews/fixes sprint 1, prioritising the specific receipt gaps and
-the reporting, first-appearance, selection and acceptance assumptions. A repair
-that changes an empirical result or qualification invalidates affected downstream
-claims. Joint reconciliation, not this draft, closes Loop 1.
+## Reconciliation handoff
+
+Both counter-review tranches are now represented in this memo. Claude's next
+step is reconciliation of Codex's sprint-1 repairs and scientific scope changes,
+particularly the E2 monad rule, QB's qualified classes and the interpretation of
+finite-grid acceptance. The source-admission findings remain: M1 and M3 have no
+admitted numerical design. Joint reconciliation, not this draft, closes Loop 1.

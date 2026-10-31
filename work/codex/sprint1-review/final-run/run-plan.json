@@ -1,0 +1,63 @@
+{
+  "combinations": [
+    [
+      "LY-H2-CU",
+      1.0
+    ],
+    [
+      "LY-H2-CU",
+      0.5
+    ],
+    [
+      "LY-H2-CU",
+      0.25
+    ],
+    [
+      "LY-D1-CU",
+      1.0
+    ],
+    [
+      "LY-D1-CU",
+      0.5
+    ],
+    [
+      "LY-D1-CU",
+      0.25
+    ],
+    [
+      "LY-I3-CU",
+      1.0
+    ],
+    [
+      "LY-I3-CU",
+      0.5
+    ],
+    [
+      "LY-I3-CU",
+      0.25
+    ],
+    [
+      "LY-MZ-CU",
+      1.0
+    ],
+    [
+      "LY-MZ-CU",
+      0.5
+    ],
+    [
+      "LY-MZ-CU",
+      0.25
+    ],
+    [
+      "LY-MZ-CU",
+      0.1
+    ],
+    [
+      "QB-CO",
+      1.0
+    ]
+  ],
+  "workers": 62,
+  "output": "/data/codex/silurian_plants/sprint1-review-31fab51/rerun",
+  "interpretation": "per-design marginal qualification; QB H0c excluded; not joint selection coverage"
+}

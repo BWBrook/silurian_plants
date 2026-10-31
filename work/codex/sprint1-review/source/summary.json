@@ -1,0 +1,146 @@
+{
+  "libya_appendix_rows": 164,
+  "libya_chart_rows": 158,
+  "exact_joins": 153,
+  "appendix_only": 11,
+  "chart_only": 5,
+  "all_chart_target_marks": 52,
+  "exact_join_target_marks": 51,
+  "explicit_barren_appendix": 14,
+  "libya_variant_groups_checked": 36,
+  "libya_adapter_differences": [],
+  "mz_reference_contexts": {
+    "Cr4-listed-interval": 56,
+    "Cr3-listed-interval;Cr4-listed-interval": 2,
+    "Cr3-listed-interval": 1
+  },
+  "mz_older_formations": {
+    "M. Shugran": 13,
+    "Hawaz": 10,
+    "Bir Tlacsin": 5
+  },
+  "mz_by_well": {
+    "B2-NC186": {
+      "n_ref": 6,
+      "ref_marks": 6,
+      "n_old": 0
+    },
+    "D1-200": {
+      "n_ref": 16,
+      "ref_marks": 13,
+      "n_old": 9
+    },
+    "E1-NC174": {
+      "n_ref": 9,
+      "ref_marks": 9,
+      "n_old": 0
+    },
+    "H2-NC186": {
+      "n_ref": 8,
+      "ref_marks": 7,
+      "n_old": 9
+    },
+    "I3-NC186": {
+      "n_ref": 20,
+      "ref_marks": 16,
+      "n_old": 10
+    }
+  },
+  "mz_non_Cr4_reference": [
+    {
+      "unit_id": "B2-NC186:3950",
+      "d": "1",
+      "e1_assemblage_context": "Cr3-listed-interval;Cr4-listed-interval"
+    },
+    {
+      "unit_id": "I3-NC186:4600",
+      "d": "1",
+      "e1_assemblage_context": "Cr3-listed-interval;Cr4-listed-interval"
+    },
+    {
+      "unit_id": "I3-NC186:4640",
+      "d": "1",
+      "e1_assemblage_context": "Cr3-listed-interval"
+    }
+  ],
+  "all_exact_Hawaz_types": {
+    "Core": 25,
+    "Cutting": 8,
+    "unspecified": 2
+  },
+  "all_exact_Hawaz_green_min": 3,
+  "all_exact_Hawaz_green_max": 16,
+  "qusaiba_table2_n": 37,
+  "qusaiba_table2_states": {
+    "taxon-mark-present": 22,
+    "no-trilete-mark": 15
+  },
+  "bor_E1_states_by_reading": {
+    "main": {
+      "explicit_non_detection": 11,
+      "not_reported": 16,
+      "unresolved": 7
+    },
+    "inclusive": {
+      "explicit_non_detection": 11,
+      "not_reported": 16,
+      "detected": 7
+    },
+    "outlier": {
+      "explicit_non_detection": 11,
+      "not_reported": 16,
+      "detected": 7
+    }
+  },
+  "qb_variants_checked": 4,
+  "inputs": [
+    {
+      "file": "models/f3/designs.py",
+      "sha256": "0fd2588f84b5dd0b3fabcd45a875de203f8b28f5320aeb6f9adf7148f4f44ca8"
+    },
+    {
+      "file": "models/f3/designs/m2.toml",
+      "sha256": "654b21b9308481e9ed0f108a7747651578e8652ddce676099913de0001f6bf52"
+    },
+    {
+      "file": "models/f3/out/m2_units.csv",
+      "sha256": "6fcae5714f4a5e04e1e61e6ff15bbce3fd35db1374fae665038e3d6ba3e344c0"
+    },
+    {
+      "file": "models/f3/out/m2_screen.csv",
+      "sha256": "65469950798ae6051c6132775ef375715c01ace3f462f20932cea12625661647"
+    },
+    {
+      "file": "data/units/libya_appendix1.csv",
+      "sha256": "b3b8861263d08fa0a0f042de149a7b1719bb4e0e341e35787f210a3e40c228a1"
+    },
+    {
+      "file": "data/units/libya_chart_reports.csv",
+      "sha256": "54881d62e2cfe4720ea405d77403f9e873e27a4db3519ee5f7dc001a73e1d01c"
+    },
+    {
+      "file": "data/units/libya_prose_support.csv",
+      "sha256": "3a89c14c0287691ec2a1d26ec23a95c26b0fbca3b89bd6e8d7831118c0608e98"
+    },
+    {
+      "file": "data/units/qusaiba_inventory.csv",
+      "sha256": "1ffb4db3cc2e1a1b1f322da2653fda315d0c566bacf3366edc87a5bf0dbcc0c0"
+    },
+    {
+      "file": "data/units/borenshult_ages.csv",
+      "sha256": "4f8997c81468ee43ee03c54172c0647df49ef6b420d241a43b8e9fc00e675fae"
+    },
+    {
+      "file": "data/units/borenshult_reporting.csv",
+      "sha256": "82bc262d8e922e01bd7549c7fecd1fe00a62c759b05964d852211123abe1ac84"
+    },
+    {
+      "file": "data/units/outcomes.csv",
+      "sha256": "9c996647d9e101a830cfd16efe466348a191f92396b71bad76cab791b756e37c"
+    },
+    {
+      "file": "data/units/source_files.csv",
+      "sha256": "f4cd50b5ceabd2acb139e6974aabf3ebac786b46ea8aa5ec7d659ded433b523e"
+    }
+  ]
+}

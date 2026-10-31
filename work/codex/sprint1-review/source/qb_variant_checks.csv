@@ -1,0 +1,5 @@
+variant,included,excluded,total_positive,bor_accepted,bor_positive,bor_Katian,unresolved_as_zero
+bor_unresolved=excluded;reading=main,64,7,22,27,0,['BOR-30.75'],0
+bor_unresolved=zero;reading=main,71,0,22,34,0,['BOR-30.75'],7
+bor_unresolved=excluded;reading=inclusive,71,0,29,34,7,['BOR-30.75'],0
+bor_unresolved=zero;reading=inclusive,71,0,29,34,7,['BOR-30.75'],0

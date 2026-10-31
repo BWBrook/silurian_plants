@@ -2,20 +2,25 @@
 
 Claude Opus 5.5 (`claude-opus-5-5`), 31 October 2026. Sprint 1 of `docs/sprints-2026-11.md` (v2,
 Codex's revision, accepted by starting against it). Questions Q1, Q2 and Q5. Code and outputs:
-`models/f3/designs/m2.toml` (frozen declarations and amendment 1), `designs.py` (adapter), `m2.py`
+`models/f3/designs/m2.toml` (frozen declarations and dated amendments), `designs.py` (adapter), `m2.py`
 (screen and read-outs), `qualify.py` (conditional qualification); `models/f3/out/m2_units.csv`,
 `m2_screen.csv`, `m2_results.csv`, `out/qual/` (receipts and replicate tables).
+
+Counter-reviewed and updated by Codex, 31 October 2026. The current qualification
+and interpretation below incorporate both sprint counter-reviews; original
+source and implementation attribution is retained above.
 
 ## Result
 
 The first qualified empirical F3 statements exist, from the Murzuq Basin (Abuhmida 2013). They are about
-trilete-spore (E1) encounter in drill cuttings, relative to the Rhuddanian–Telychian (Cr4) Tanezzuft
-cuttings of the same wells, under a declared transport ratio ρ (older-cutting detection rate over
+trilete-spore (E1) encounter in drill cuttings, relative to the Tanezzuft cuttings of the same wells, primarily Cr4
+(Rhuddanian–Telychian) with some Cr3 material, under a declared transport ratio ρ (older-cutting detection rate over
 reference-cutting rate at equal intensity).
 
 - **After the M2 maximum the record is already nearly empty.** In the multi-well cuttings design
   (LY-MZ-CU: 51 of 59 reference cuttings marked, 28 empty Late Ordovician and Darriwilian cuttings),
-  mean encounter over 443.1–459.1 Ma is below 0.18 of the Llandovery level at ρ = 1 (H0, any path up
+  the exposure/reference-rate-weighted mean encounter across sampled ranges within
+  443.1–459.1 Ma has an upper read-out of about 0.18 of the Llandovery level at ρ = 1 (H0, any path up
   to the reference level), below 0.26 at ρ = 0.5, 0.42 at 0.25 and 0.92 at 0.1.
 - **Before the maximum the constraint is the same size.** The window read-out (trilete encounter at
   least f before 459.1 Ma, anything afterwards) excludes reference-level encounter (f = 1) sustained
@@ -28,16 +33,22 @@ reference-cutting rate at equal intensity).
   But the same cuttings bound encounter after 459.1 Ma, where the clock places crown embryophytes, as
   tightly as before it. An origin shortly before 459.1 Ma with encounter at the levels the Late
   Ordovician actually shows (below about a fifth of the Llandovery's at ρ = 1) leaves the same empty
-  record as an origin after it. **The absence cannot distinguish a crown origin before 459.1 Ma from
-  one after it at any intensity the later Ordovician record allows.** The soft maximum is not
-  contradicted; its absence premise is uninformative at realistic early intensities.
+  record as an origin after it. **The absence remains compatible with some low-encounter histories on either
+  side of 459.1 Ma.** The post-maximum mean and pre-maximum window are different targets;
+  these bounds do not demonstrate indistinguishability at every allowed intensity. The
+  sources do not independently establish which early intensities are biologically realistic.
+  No probability that the clock maximum is true follows from these calculations.
 
-All primary results qualify in the sense the procedure can support: among replicates that pass the
-screen, the probability of reporting a bound, origin set or window read-out that the truth violates
-stays below 0.037 in every cell (nominal 0.05, floor 0.07), with no critical-value shift, at stage 1
-for every design and ρ. Codex independently re-derived all 164 Libyan binary units from the source
-tables with no disagreement. An independent review showed that the first acceptance grid was mostly
-abstentions; the grid was amended and rerun (amendment 2, below).
+All fourteen primary design/transport pairs submitted to qualification pass the
+counter-review grid, with zero critical-value shift and no stage 2. The largest
+observed per-cell/quantity false-delivered-claim frequency is 0.038 among
+screen-passing simulations. This is acceptance against a 0.93 floor on the
+finite declared grid, not a universal 5% error guarantee. In the new MZ/rho=1
+window-boundary test, 20 of 1,000 passing simulations exclude truth, but those
+errors occur among only 60 non-abstaining results. The qualification therefore
+must not be presented as 95% coverage conditional on obtaining a claim.
+Codex's source and numerical reconstructions, contract repairs and rerun are
+recorded in `2026-10-31-sprint1-codex-review.md`.
 
 ## Designs and their admission
 
@@ -59,8 +70,10 @@ reference minimum 5 or 10). Primary variants:
 Under the 7287 ft "unresolved" reading the core design has no reference detection at all. Ages come from
 the thesis abstract (printed pp. iv–v): Cr4 Tanezzuft late Rhuddanian–Telychian, Cr3 early–mid
 Rhuddanian, Bir Tlacsin late Hirnantian, Melez Shugran and pre-glacial Memouniat early late
-Katian–early Hirnantian, Hawaz mid–late Darriwilian. Every first appearance falls in the Rhuddanian, so
-τ = 443.1 Ma (Qusaiba: Katian, τ = 452.8).
+Katian–early Hirnantian, Hawaz mid–late Darriwilian. The primary Murzuq reference comprises 56 Cr4-only rows, two Cr3/Cr4-boundary
+rows and one Cr3-only row (I3 4640 ft). The chart-priority interpretation retains
+the recorded conflict with the prose's single-Cr3-specimen claim. Every Libyan
+first appearance falls in the Rhuddanian, so τ = 443.1 Ma (Qusaiba: Katian, τ = 452.8).
 
 **Reporting scope (source check).** The green chart group is headed "Cryptospores/Spores"; its only
 trilete column is *Ambitisporites dilutus*, and the thesis systematics (printed pp. 327–328) describe
@@ -71,48 +84,83 @@ I3 Ash Shabiyat rows whose recovery the thesis calls possibly caved (printed p. 
 
 **The other five frames.** Hanadir (TAYM-4) has a figure inventory but no certified processed inventory
 or in-frame reference; Paraguay's eight pilot depths were chosen through outcomes and its 53-sample log
-is missing; Samphire's original report is unread; Pelmis needs its 140-sample collection mapped to the
+is missing; Samphire's original report was unverified at the sprint-1 freeze (verified in sprint 2); Pelmis needs its 140-sample collection mapped to the
 27 tabulated samples. None supplies an M2 design this sprint. Borenshult enters only as QB's older
 units; Qusaiba only as QB's reference.
 
-## Qualification
+## Qualification after counter-review
 
-Conditional on the amended screen, at the actual designs (`qualify.py`, commit `0780402`). Truth: the data's fitted
-reference rate, the declared ρ and cluster k, depth-ordered true ages within each well and formation,
-τ0 = the data's τ; eight acceptance cells (constant f = 1, 0.3, 0.1 from 470 Ma; f = 1 from 459.1 Ma;
-the least favourable H0 and H1 paths; a ramp; reference level after 459.1 with 0.1 before), two
-boundary cells at the design's own reported f\* (B1: f\*_H0c with all exposure; B2: f\*_H0 to 469.4),
-and three diagnostics. Quantities: f\*_K(t0) for each class containing the truth, origin-set coverage of t0 at
-each applicable f_min (H0c, H0m, H0), and window coverage (H0, start 459.1). The calibration and
-acceptance seeds are independent (20261101, 20261102).
+The full rerun uses the same potential screen, fitted reference-rate nuisance
+settings, transport ratios, cluster shapes and depth-ordered ages as the
+original design. The declaration has twelve acceptance cells and three
+calibration diagnostics. Original Q1–Q8 and B1/B2 are retained. B3 directly
+tests the H0 f*(459.1) boundary. B4 tests reference-level encounter on
+(459.1,462.6] Ma, zero encounter between tau0 and 459.1, and reference encounter
+younger than tau0; this is an H0/H1 window test, not H0m. Fresh roots
+20261111/20261112/20261113 separate calibration, acceptance and optional stage 2.
+The amendments were declared with the older results known, before the rerun.
 
-**What the qualification certifies (amendment 2).** When the truth has appreciable older intensity,
-older cuttings detect, τ moves past them and the analysis makes no claim; an abstention covers. A
-claim is made only when the older units are empty, so coverage *given that a claim is made* is not a
-property any procedure here can have: at the boundary truths a large share of the few claims are
-wrong (I3 at ρ = 1, B2: 15 of 22). The certified property is the ordinary one of a 95% procedure:
-P(a false claim) ≤ 0.05 per screen-passing record. Every cell reports its claims and the misses among
-them (receipts, `claims_*`, `claimmiss_*`); across the grid, 3,193 of 414,831 claims missed.
+Each binding cell requires 1,000 screen-passing records, with a 20,000-attempt
+cap. Calibration targets 0.955; independent acceptance assesses a 0.93 floor
+for the nominal-95% procedure. All fourteen combinations passed stage 1 with
+shift zero. The evidence loader reconstructs the counts, calibrated shift and
+verdict, verifies the exact phase chain, binds consumed inputs/code/declarations
+and retains every attempt. QB qualifies H0m/H0/H1 only; its H0c is an unqualified
+class diagnostic. Other variants do not inherit primary qualification.
 
-| Design, ρ | Shift | Acceptance (stage 1) | Worst 1 − false-claim rate | Boundary-cell claims (B1 / B2, of 1,000) |
-|---|---|---|---|---|
-| LY-H2-CU 1 / 0.5 / 0.25 | 0 | pass ×3 | 0.975 / 0.972 / 0.971 | 38/5, 42/25, 38/35 |
-| LY-D1-CU 1 / 0.5 / 0.25 | 0 | pass ×3 | 0.988 / 0.981 / 0.974 | 328/146, 309/236, 328/311 |
-| LY-I3-CU 1 / 0.5 / 0.25 | 0 | pass ×3 | 0.983 / 0.975 / 0.963 | 86/22, 84/79, 96/96 |
-| LY-MZ-CU 1 / 0.5 / 0.25 / 0.1 | 0 | pass ×4 | 0.984 / 0.984 / 0.984 / 0.979 | 260/101, 241/160, 238/220, 237/226 |
-| QB-CO 1 | 0 | pass | 0.985 | 366/363 |
+The criterion is the false-delivered-claim frequency among screen-passing
+records, counting abstentions as non-errors. Across acceptance there are
+529,550 quantity evaluations labelled as claims, with 3,780 misses. These are
+correlated quantity evaluations, not independent experiments. `claims_*` means
+non-abstaining under the implemented rule and does not itself guarantee an
+informative finite exclusion; I3's unbounded windows illustrate that distinction.
+Neither the 0.93 tolerance nor the observed worst frequency 0.038 establishes
+a universal 5% error bound, simultaneous coverage across curves/designs, or
+coverage conditional on an informative result.
 
-Diagnostics (calibration batch): halving the true transport ratio (X1) drops coverage to 0.89–0.97 at
-ρ ≥ 0.5, so ρ is the assumption that matters and every result is reported across its grid. A true
-between-well shape of 0.8 (X2) and a reference rate at its lower 95% limit (X3) keep coverage at
-0.974 or above, although X3 passes the screen only 5% of the time for H2 and D1 at ρ = 0.25. Each full
-grid ran in about 7 minutes on Nectar `c3.3xlarge` (numpy 2.3.4, scipy 1.16.3); the receipts hold the
-code hashes of commit `0780402`. The first run (`e1cd198`, before amendment 2) gave the same verdicts
-and the same read-outs.
+The table shows the worst marginal coverage across each pair's acceptance
+cells/quantities, plus the two new boundary checks. Misses/non-abstentions are
+separate from their common denominator of 1,000 screen-passing records.
+
+| Design | ρ | Worst 1 − false-claim rate | B3 H0 misses/non-abstentions | B4 window f=1 misses/non-abstentions |
+|---|---:|---:|---:|---:|
+| LY-H2-CU | 1 | 0.972 | 5/588 | 0/113 |
+| LY-H2-CU | 0.5 | 0.962 | 32/682 | 0/194 |
+| LY-H2-CU | 0.25 | 0.973 | 0/779 | 0/378 |
+| LY-D1-CU | 1 | 0.985 | 1/874 | 0/397 |
+| LY-D1-CU | 0.5 | 0.980 | 13/889 | 0/556 |
+| LY-D1-CU | 0.25 | 0.965 | 15/917 | 0/687 |
+| LY-I3-CU | 1 | 0.978 | 1/27 | 0/1000 |
+| LY-I3-CU | 0.5 | 0.978 | 3/55 | 0/1000 |
+| LY-I3-CU | 0.25 | 0.963 | 19/94 | 0/1000 |
+| LY-MZ-CU | 1 | 0.980 | 0/703 | 20/60 |
+| LY-MZ-CU | 0.5 | 0.982 | 2/827 | 7/107 |
+| LY-MZ-CU | 0.25 | 0.985 | 4/843 | 0/247 |
+| LY-MZ-CU | 0.1 | 0.982 | 12/839 | 0/466 |
+| QB-CO | 1 | 0.985 | 14/916 | 0/670 |
+
+MZ/rho=1's B3 H0 bound misses in 0/703 non-abstentions. Its B4 window misses in
+20/60 (33.3%), versus 20/1,000 (2%) of passing records. This is a material limit
+of the adopted selection/acceptance criterion, retained prominently rather than
+hidden by the overall pass. It does not invalidate the arithmetic or authorise
+a confidence statement for the selected subset.
+
+Diagnostic X1 (true transport half that assumed) has worst marginal coverage
+0.895, so a misspecified transport ratio matters. X2 (true between-well shape
+0.8) and X3 (a count-based lower-rate scenario) have minima 0.975 and 0.983.
+X3 uses a binomial Clopper–Pearson calculation and u=1 transformation; with
+clustered reference data it is not a calibrated confidence limit for the
+Gamma-mixture rate. Diagnostics are not included in binding acceptance.
+
+The original `0780402` evidence is historical and remains recoverable from Git;
+its independently reconstructed totals are in the counter-review audit. Current
+code binding, runtime, cross-host checks and final run timings are recorded there.
 
 ## Results by design (primary variants, qualified shift 0)
 
-f\* is the largest mean encounter over (τ, T], relative to the reference cuttings, not rejected at 95%.
+f\* is the largest exposure/reference-rate-weighted mean encounter over (τ, T],
+relative to the reference cuttings, not rejected by the nominal-95% rule. It is
+not a calendar-time mean: unsampled intervals carry no weight.
 
 | Design | ρ | H0c, all exposure | H0 to 459.1 | H0 to 469.4 | H1 to 469.4 | Origins excluded beyond (H0; f = 1 / 0.1) | Window (f = 1) |
 |---|---|---|---|---|---|---|---|
@@ -129,7 +177,7 @@ f\* is the largest mean encounter over (τ, T], relative to the reference cuttin
 | LY-I3-CU | 1 | 0.21 | 0.33 | 0.33 | 0.78 | 444.6 / none | none (no Darriwilian) |
 | | 0.5 | 0.42 | 0.50 | 0.50 | 0.86 | 445.6 / none | none |
 | | 0.25 | 0.83 | 0.86 | 0.86 | 1.15 | 451.1 / none | none |
-| QB-CO | 1 | 0.61 | 0.69 | 0.62 | 0.72 | 456.8 / none | none |
+| QB-CO | 1 | 0.61 (unqualified diagnostic) | 0.69 | 0.62 | 0.72 | 456.8 / none | none |
 
 H0m lies at most 0.05 below H0 in any variant (by construction it is never above). Origin sets at f = 0.01 are unbounded
 everywhere. Inverting the window test in f (derived: the qualification covers f = 1, 0.1 and 0.01 only),
@@ -137,7 +185,7 @@ the largest constant pre-459.1 encounter over the whole Darriwilian is 0.17 / 0.
 0.5 / 0.25; 0.16 / 0.31 / 0.63 with the Hawaz placed wholly before 459.1), 0.30 / 0.61 for H2 (ρ = 1 /
 0.5) and 0.79 for D1 (ρ = 1).
 
-**Sensitivity across the declared variants (`m2_results.csv`).** For MZ at ρ = 1, allocation (whole
+**Sensitivity across the declared variants (`m2_results.csv`; not independently qualified).** For MZ at ρ = 1, allocation (whole
 Darriwilian or [459.1, 469.4] Ma), material type (chart code or appendix only), cluster k (2 or ∞) move
 f\*_H0(459.1) within 0.175–0.191, the window endpoint within 462.6–463.6 Ma and the f = 0.1 origin
 endpoint within 451.6–452.6 Ma. The within-well designs move by up to 0.12 in f\*.
@@ -155,18 +203,21 @@ endpoint within 451.6–452.6 Ma. The within-well designs move by up to 0.12 in 
   under Q2; it does not affect the cuttings designs.
 - **The declared between-core variance decides QB.** With k = 2 for two cores in different regions,
   QB passes only at ρ = 1 (main) or 0.5 (other variants). With no well effect (k = ∞) it passes down
-  to ρ = 0.25 and gives f\* as low as 0.11. One core per region cannot estimate that variance.
+  to ρ = 0.25 and gives f\* as low as 0.11. One core per region cannot estimate that variance. QB main/zero converts
+  seven disputed Sandbian reports to zeros and is retained only as an inadmissible
+  coding diagnostic; it does not contribute scientific sensitivity evidence.
 - **The transport ratio ρ decides everything quantitative.** No source measures it. The thesis does
   show that land-derived spores reached and survived in the older samples: cryptospores are 20–44% of
   upper Hawaz assemblages (printed pp. 395–396) against 5–15% in the middle–upper Tanezzuft (pp.
-  402–403), and every eligible Hawaz chart row carries 6–10 marks in the chart's "Cryptospores/Spores"
-  group. That argues against small ρ
-  for the Hawaz, not for any particular value.
+  402–403), and each of the ten primary Hawaz cutting rows carries 6–10 marks in the chart's "Cryptospores/Spores"
+  group. This establishes a preservation and delivery route for cryptospores. It does not
+  identify, or place a quantitative lower bound on, trilete delivery/recovery per unit
+  producer output; the relative producer outputs remain unknown.
 
 ## The three layers
 
 1. **Encounter intensity (what is qualified).** The numbers above: E1 encounter in Murzuq cuttings,
-   relative to Cr4 Tanezzuft cuttings, given ρ.
+   relative to the declared Tanezzuft reference cuttings, given ρ.
 2. **Biological translation (conditional).** Encounter is spore output times transport into these
    shelf settings times recovery. Equal ρ means equal delivery and recovery per unit producer output;
    the Hawaz cryptospore evidence bears on delivery, not on how trilete producers' share of the land
@@ -176,11 +227,18 @@ endpoint within 451.6–452.6 Ma. The within-well designs move by up to 0.12 in 
 3. **Fossil-to-node (Hooper's mapping).** If the crown ancestor made trilete monads, the crown can be
    no older than the first trilete producers, and the producers' encounter before 459.1 Ma is bounded
    as above. A crown origin before 459.1 Ma is excluded only for producers at or near the Llandovery
-   level; at the levels the post-459.1 record allows, the absence has nothing to say. Node-retention
+   level; some low-encounter histories allowed after 459.1 Ma also remain compatible before it.
+   This is not equivalence of all histories below the post-maximum mean bound. Node-retention
    scenarios (`models/pilot-asr/`) sit beside this and are not multiplied in.
 
 ## Limits
 
+- The primary Murzuq design has no sampled age support in the Sandbian interval
+  (452.8,458.2] Ma. An H0 history at the reference level throughout that gap and
+  zero in the sampled older ranges has calendar-time mean 0.3375 over
+  443.1–459.1 Ma, but exposure-weighted mean zero and the same older-data
+  likelihood as complete absence. The approximately 0.18 bound therefore does
+  not bound a calendar-time mean or exclude an unsampled pulse.
 - ρ is a scenario grid, not an estimate. A misspecified ρ undercovers (diagnostic X1).
 - One basin and one thesis. The reference and the older cuttings share an author, a laboratory and a
   chart system; this helps comparability but makes the frame a single-study frame (Q5 notes the
@@ -189,13 +247,16 @@ endpoint within 451.6–452.6 Ma. The within-well designs move by up to 0.12 in 
 - The Hawaz is placed at stage resolution (whole Darriwilian, or wholly before 459.1 Ma); the thesis
   says "mid–late Darriwilian", which neither captures exactly. Between the two declared allocations
   (with material type) the window endpoints move by at most 2 Myr.
-- Caving: positive cuttings may hold caved material. τ is set at the oldest stage any detected cutting
-  can occupy, so caving from younger beds cannot move it older; caving into the older cuttings would add
-  false positives, of which there are none. Caving that inflates the reference rate relative to
-  indigenous encounter acts like a smaller ρ.
-- Ages within a range are independent in the estimator and depth-ordered in the simulation; for one
-  class of all-empty older units the two give the same likelihood (exchangeability), and coverage held
-  with ordered truth.
+- Caving: positive cuttings may hold caved material. τ is set from the age range of the material in which a spore is recovered;
+  this is a reporting rule, not an indigenous first-appearance date. A younger caved
+  fossil recovered from an older bed can move inferred τ older. No target mark occurs
+  in the admitted older Libyan cuttings, but reference contamination could inflate
+  the fitted rate. A smaller ρ illustrates some rate distortion; it does not qualify
+  an additive, depth-dependent contamination process.
+- Ages within a range are independent in the estimator and depth-ordered in the simulation; sorting exchangeable equal-range, equal-rate older units within a common
+  cluster leaves their all-zero likelihood unchanged. This argument does not apply
+  to arbitrary unequal multipliers, age ranges or mixed outcomes. The qualification
+  is limited to its declared ordered-age scenarios, not every joint chronology.
 
 ## Repairs and amendments
 

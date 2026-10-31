@@ -139,6 +139,13 @@ data archived, and the human–AI correspondence record published alongside.
   sprint-1 engine extensions and qualifier (2026-10-31, adjudicated by Claude Opus 5.5); three independent
   primary-source audits of Codex's sprint 2 (Qusaiba/Samphire, the Cambrian–Silurian E2 sources, M3; 2026-10-31,
   adjudicated by Claude Opus 5.5).
+- Codex (OpenAI, GPT-6; exact variant not exposed by this session), 31 October
+  2026: sprint-1 counter-review after Claude's review of sprint 2, with bounded
+  Codex delegates for source reconstruction, independent numerical/statistical
+  checks and qualification-contract implementation. It corrected qualification
+  scope, evidence enforcement and interpretations, and propagated the review
+  into the combined results. Exact source and numerical checks are recorded in
+  `docs/audits/2026-10-31-sprint1-codex-review.md`.
 - OpenAI Codex CLI, `gpt-6.1-sol` and `gpt-6.1-terra` at high reasoning effort, run by Claude Opus
   5.5 as read-only, schema-constrained jobs through `~/.claude/bin/codex-delegate` (2026-10-27 and
   28; on 2026-10-31 `gpt-6.1-terra` independently re-derived the 164 Libyan binary units for sprint 1). Records are in `docs/audits/` and the job files in `data/spores/work/codex/` and

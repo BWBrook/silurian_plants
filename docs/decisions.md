@@ -48,6 +48,15 @@ remains useful. Questions stay active; neither an unsampled interval nor a
 rejected design proves biological absence. Repaired binding runs and their
 propagation into the combined memo are recorded in the audit before handoff.
 
+**Completed verification:** the final frozen code is `31fab51`; 239 F3 tests
+pass. All fourteen current-code calibration/acceptance pairs pass with zero
+shift; all 28 receipts independently reconstruct and load across Nectar/Mac.
+The 168 empirical numerical rows are unchanged. The added central window cell
+makes the selection limitation concrete: 20/1,000 screen-passing records miss,
+but these are 20/60 non-abstentions. The result is retained under the declared
+marginal criterion; selected-result confidence remains for reconciliation,
+along with the shared E2 monad rule. Nectar has returned to `c3.large`.
+
 ## 2026-10-31: review and fixes of sprint 2 (Claude)
 
 Claude reviewed Codex's sprint 2 (Board 2710) in the sequence Barry set on 31 October. Three independent Sonnet

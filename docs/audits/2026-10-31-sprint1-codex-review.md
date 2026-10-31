@@ -162,3 +162,66 @@ The portability fix passed independent read-only review, the 58-test contract
 suite and the complete 239-test F3 suite. Regressions accept the measured one-ULP
 cross-host difference and the eight-ULP boundary, reject nine ULPs, reject all
 nonfinite stored/recomputed values, and still reject a contradictory screen flag.
+
+
+The fix is committed at `31fab51`. All 28 earlier receipts loaded on the Mac
+using their historical bindings, with before/after hashes unchanged; current
+bindings correctly refused the old code. This is a regression check, not a
+relabelled qualification. The final rerun is staged at
+`nectar:/data/codex/silurian_plants/sprint1-review-31fab51/`; the earlier full
+package remains at `sprint1-review-5fcee58/`. Both use 62 workers, with BLAS
+threads pinned to one, Python 3.12, NumPy 2.3.4 and SciPy 1.16.3.
+
+The first new H2/rho=1 calibration receipt loaded on the Mac against the active
+`31fab51` source binding during the rerun, completing the cross-host test that
+the earlier binding-only check had omitted. Its hash and verdict are retained
+in `work/codex/sprint1-review/crosshost/current-calibration-loader.json`.
+
+## Final current-code qualification and handoff
+
+The `31fab51` run completed in 883.5 seconds on Nectar, including empirical
+regeneration (607.4 seconds summed over calibration/acceptance simulations).
+All fourteen calibrations are complete with shift zero; all fourteen acceptance
+pairs pass stage 1, with no stage 2 required. The 28 receipts contain 378 cells,
+378,000 passing records from 482,605 consumed attempts, and no pre- or post-screen
+numerical errors. Each binding cell has 1,000 passing records. The independent
+checker reconstructed all 3,501 cell/quantity summaries, including 1,503
+acceptance summaries, without importing the F3 assessment code. It also
+independently integrated the declared reference and target histories.
+
+The independent comparison finds every compressed ledger, statistical summary
+and non-file binding value exactly identical to the first counter-review run;
+only the contract's source hash changed. The final product loader verifies all
+fourteen current bindings on the Mac. The 168 empirical rows have no numerical
+or design-field difference from `f08afb4`: fourteen qualified primary rows,
+144 unqualified sensitivity rows and ten inadmissible QB coding diagnostics.
+QB H0c is explicitly an unqualified class diagnostic. The 56 current qualification
+artifacts, run log and regenerated screen/results tables are integrated; original
+outputs remain in Git. Evidence: `work/codex/sprint1-review/current_binding_check.json`,
+`final-run/` and `evidence-check/final-31fab51/` under that review directory.
+
+The worst observed acceptance false-delivered-claim frequency is 38/1,000.
+Across the correlated quantity evaluations there are 529,550 non-abstentions
+and 3,780 misses. MZ/rho=1's new B3 H0 intensity test has 0 misses among 703
+non-abstentions (1,000 passing records); B4's f=1 window has 20 misses among
+60 non-abstentions (1,000 passing records). The latter is 2% across passing
+records but 33.3% in the selected non-abstaining subset. The updated result note,
+combined memo and interface README retain both denominators prominently.
+
+**Reconciliation recommendation:** retain the encounter-compatibility estimates
+with their restricted, finite-grid error statement. Do not describe the window
+as having 95% coverage conditional on obtaining a claim. If that selected-result
+property is required, it needs a separately declared qualification target, not
+post-hoc relabelling of this pass. Claude's next tranche is reconciliation of
+this finding, QB class scope, the corrected Cambrian age support and the shared
+E2 monad rule. M1/M3 non-admissions stand; Loop 1 is not closed by this handoff.
+
+Nectar was idle after the run and returned to `c3.large`: OpenStack ACTIVE,
+eight CPUs, about 15 GiB usable RAM, /data mounted, SSH/Tailscale/SMB active.
+The temporary allocation and restoration are recorded in the Nectar control
+plane. This tranche changes Python qualification code/tests, CSV evidence and
+scientific documentation; no R/ASR analysis or taxon card changed.
+
+Final source/interface checks passed: 23 held-source hashes, all 21 sprint-2
+admission entries, the refreshed 84-file sprint-2 receipt, and the 49-unit /
+294-outcome sampling validator. No new citation or taxon card was introduced.

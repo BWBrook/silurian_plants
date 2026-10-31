@@ -872,11 +872,30 @@ section is the interface sprint 2 (M1, M3) uses without a new design negotiation
 - `m2.py screen | results [workers]`: the screen, shared with the simulator, writes
   `out/<max>_screen.csv` for every variant. The read-outs at each design's qualified shift go to
   `out/<max>_results.csv`: f\*_K at `[common] report_ma` (default the M2 ages), origin sets and the
-  window read-out at each f_min.
+  window read-out at each f_min. `--qual-dir PATH --out-dir PATH` selects evidence and output directories.
+  Only the exact declared primary variant can attach qualification; sensitivity variants and
+  inadmissible QB main/zero coding retain explicit diagnostic labels.
 - `qualify.py --design D --rho R --phase calibrate|accept|stage2 [--workers N]` writes
   `out/qual/<D>_rho<R>_<phase>.json` (cells, attempts, passes, coverage counts, shift, verdicts, code
-  hashes) and `..._reps.csv.gz` (one row per passing replicate). `--phase dev --target 40` is a smoke
+  hashes) and `..._reps.csv.gz` (every consumed attempt, including failed screens and errors).
+  `--out-dir PATH` selects a fresh evidence directory; existing phase artifacts cannot be overwritten.
+  `--phase dev --target 40` is a smoke
   run on root seed 20261100.
+
+### Counter-review evidence contract (31 October 2026)
+
+`qualification_contract.py` binds the active declaration, all consumed input files,
+generated units, statistical dependencies, requested quantities and phase protocol.
+Python major.minor and exact NumPy/SciPy versions must match. Derived fitted values
+have a declared 1e-8 cross-host comparison tolerance; acceptance reuses calibration's
+stored values exactly. Raw file hashes and the phase chain match exactly.
+
+The loader reconstructs summaries, calibration shifts and stage verdicts from strict
+attempt ledgers. Missing quantities, failed screen flags, pre-screen errors, incomplete
+calibration, orphan stage 2 and stale bindings cannot attach a pass. Binding runs use
+1,000 passing records per cell with a 20,000-attempt cap; reduced targets are development
+only. The counter-review's B3/B4 cells and fresh seed roots are declared in `m2.toml`.
+QB's H0c output is outside the qualified scope; its H0m/H0/H1 classes remain eligible.
 
 ### Engine support added (`envelope.py`)
 
@@ -906,15 +925,21 @@ Qualified (receipts in `out/qual/`):
 - origin grid step 0.5 Myr, domain edge 560 Ma; read-outs f_min ∈ {1, 0.1, 0.01};
 - the amended screen.
 
-Every combination that passed the screen needed no shift and passed acceptance at stage 1. The
-criterion is the false-claim rate among screen-passing replicates (amendment 2); read `claims_*` and
-`claimmiss_*` in the receipts before relying on a quantity, since claims are rare at truths near f\*.
+All fourteen submitted primary design/transport combinations needed no shift and
+passed acceptance at stage 1 on the expanded twelve-cell grid. The 168 empirical
+rows distinguish 14 qualified primaries, 144 unqualified sensitivities and ten
+inadmissible QB coding diagnostics. The criterion is the false-claim rate among screen-passing replicates (amendment 2); read `claims_*` and
+`claimmiss_*` in the receipts before relying on a quantity, since claims can be rare at truths near f\*. In the added MZ/rho=1 window
+boundary cell, 20/1,000 passing records miss truth, but those are 20/60
+non-abstentions. A pass does not establish 95% coverage conditional on a claim.
 
 Not supported, and not to be assumed:
 - estimating ρ, or a between-section variance from one section;
-- a contamination model for positives among older units (caving is handled by τ's rule and by ρ);
-- joint ordered ages in the estimator. It treats ages as independent, which is exact for exchangeable
-  all-negative older units of one class; the simulator orders them by depth;
+- a contamination model for positives: τ uses recovery-depth age support, not an indigenous
+  first appearance; a smaller ρ is not a general additive-caving model;
+- joint ordered ages in the estimator. Sorting equal-range, equal-rate units within a cluster
+  leaves an exchangeable all-zero likelihood unchanged; that special case does not establish
+  equivalence for mixed outcomes or unequal units. The simulator orders ages by depth;
 - screens computed on full outcomes (amendment 1).
 
 A design whose screen fails makes no claim. The cap of 20,000 attempts means "qualification incomplete

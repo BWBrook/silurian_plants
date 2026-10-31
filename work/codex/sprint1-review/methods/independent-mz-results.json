@@ -1,0 +1,40 @@
+{
+  "reference_counts": [
+    {
+      "cluster": 0,
+      "n": 6,
+      "det": 6
+    },
+    {
+      "cluster": 1,
+      "n": 16,
+      "det": 13
+    },
+    {
+      "cluster": 2,
+      "n": 9,
+      "det": 9
+    },
+    {
+      "cluster": 3,
+      "n": 8,
+      "det": 7
+    },
+    {
+      "cluster": 4,
+      "n": 20,
+      "det": 16
+    }
+  ],
+  "direct_r": 2.8503948783219144,
+  "direct_alt": -25.2945663519901,
+  "H0c_far": 0.05795606051234413,
+  "H0_459p1": 0.18379094498981366,
+  "window_endpoint_exact": 462.54790317764923,
+  "window_f_all_Darriwilian": 0.17346661917942524,
+  "engine_H0c_far": 0.057956024648543984,
+  "engine_H0_459p1": 0.18353798563256174,
+  "engine_strict_root_48": 0.18379092333298638,
+  "engine_strict_root_96": 0.18379093584786985,
+  "engine_lr_at_direct_root": 5.991465292092471
+}

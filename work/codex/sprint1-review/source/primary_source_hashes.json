@@ -1,0 +1,42 @@
+[
+  {
+    "source_id": "rubinstein2019-open",
+    "path": "library/closed/rubinstein2019-open_firststudy.pdf",
+    "sha256": "9d99b91dab9d49b694a108f4070792208da2aec29512461bd5c6c35429e9fdd4",
+    "role": "article",
+    "observed_sha256": "9d99b91dab9d49b694a108f4070792208da2aec29512461bd5c6c35429e9fdd4",
+    "matches": true
+  },
+  {
+    "source_id": "rubinstein2023",
+    "path": "library/closed/rubinstein2023_firststudy.pdf",
+    "sha256": "751925898f563305e8f3a22394ec7ce7d2dcfb75e43f235b9e94cb53608d5441",
+    "role": "article",
+    "observed_sha256": "751925898f563305e8f3a22394ec7ce7d2dcfb75e43f235b9e94cb53608d5441",
+    "matches": true
+  },
+  {
+    "source_id": "wellman2015",
+    "path": "library/closed/wellman2015_firststudy.pdf",
+    "sha256": "8d3b68ed52c0281cd843b25b82c74be1285bfa7832dcf88b730033ad73b51cfc",
+    "role": "article",
+    "observed_sha256": "8d3b68ed52c0281cd843b25b82c74be1285bfa7832dcf88b730033ad73b51cfc",
+    "matches": true
+  },
+  {
+    "source_id": "leherisse2015",
+    "path": "library/closed/leherisse2015_firststudy.pdf",
+    "sha256": "28047f302da4d685902bdf6d2fb96f92909a278fa562053c343704e0140f523d",
+    "role": "author-manuscript",
+    "observed_sha256": "28047f302da4d685902bdf6d2fb96f92909a278fa562053c343704e0140f523d",
+    "matches": true
+  },
+  {
+    "source_id": "abuhmida2013",
+    "path": "library/closed/abuhmida2013-thesis-related_macbook20261030.pdf",
+    "sha256": "c0e3bf798fb3c27db0bf9cbb155396be5b4b8e003ee2228defb615a65abf3211",
+    "role": "thesis",
+    "observed_sha256": "c0e3bf798fb3c27db0bf9cbb155396be5b4b8e003ee2228defb615a65abf3211",
+    "matches": true
+  }
+]

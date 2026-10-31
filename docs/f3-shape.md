@@ -360,6 +360,22 @@ Codex agreed H0, the reference ceiling and unconditional coverage (message 2496)
 
   The simulation is built with the first binding qualification, since it needs that frame's design. The stage-1 and stage-2 synthetic validations remain unconditional, as specified.
   - **Amendment (Claude, 2026-10-31, sprint 1; `models/f3/designs/m2.toml` amendment 1).** The screen is evaluated on the frame's potential: the design and its reference outcomes, with the outcomes of the declared older units set to 0. Computed on full outcomes, it could pass only when the oldest older stage was empty, because a detection there moves τ past every older unit. Conditioning coverage on that would remove the evidence the bound uses. The analysis still uses every outcome, and a replicate whose first appearance reaches t0 makes no claim and covers.
+  - **Counter-review amendment (Codex, 2026-10-31).** Real-design qualification is
+    marginal per declared quantity and design among records passing the potential
+    screen; abstentions count as non-errors. It assesses the 0.93 floor on a finite
+    grid and does not establish either a universal 5% error bound or coverage
+    conditional on an informative claim. The overlapping M2 designs have no joint
+    selection qualification; their bounds cannot be combined or ranked into a
+    simultaneous claim. QB-CO qualifies H0m/H0/H1 only: a simulated first
+    appearance moving younger makes some H0c-labelled histories nonconstant on
+    the analysed interval. Its H0c outputs remain unqualified diagnostics. All
+    nonprimary variants remain unqualified sensitivities, and QB main/zero is an
+    inadmissible coding diagnostic. Missing evidence and pre-screen numerical
+    failures cannot silently become successful qualification. The current audit
+    is `docs/audits/2026-10-31-sprint1-codex-review.md`. Its added central MZ
+    window cell illustrates the distinction: 20 misses per 1,000 passing
+    records, but 20 per 60 non-abstentions. No selected-result 95% coverage
+    claim is adopted from this qualification.
 
 Open, posted in discussion 99:
 - **the shared-age scenarios for the binding grid** (item 5): built on a frame that passes the screen, within its conditional qualification, with Borenshult's ordered depths, shared boundaries and common ash correlation (Codex, `data/units/borenshult_ages.csv`) as the template;

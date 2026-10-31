@@ -1,0 +1,270 @@
+{
+  "scope": "Development proof of repaired Mac loader against historical bindings; does not qualify old receipts against current code",
+  "python": "3.12.15",
+  "platform": "macOS-27.2-arm64-arm-64bit",
+  "seconds": 35.98676612500276,
+  "receipt_count": 28,
+  "chain_count": 14,
+  "files_unchanged": true,
+  "all_complete": true,
+  "code_sha256": {
+    "models/f3/qualification_contract.py": "706d735a832c31382a6546b4b3dd4b05171d5e14e462018984373f9508301efb",
+    "models/f3/test_qualification_contract.py": "ba2c49cd89b299b7c69cc58eed1c3ea242ae48cb525da0727b42889f8dbd4e65"
+  },
+  "results": [
+    {
+      "file": "LY-D1-CU_rho0.25_accept.json",
+      "phase": "accept",
+      "result": "pass",
+      "complete": true,
+      "sha256": "e612b3bcc393dfbb70763e6b28982330d4cc9a91922b3ce989a6228777bca878"
+    },
+    {
+      "file": "LY-D1-CU_rho0.25_calibrate.json",
+      "phase": "calibrate",
+      "result": "calibrated",
+      "complete": true,
+      "sha256": "c41533d84c028b7f73b38de196f95476c39f7ed10d4853d556af34da502a2e48"
+    },
+    {
+      "file": "LY-D1-CU_rho0.5_accept.json",
+      "phase": "accept",
+      "result": "pass",
+      "complete": true,
+      "sha256": "87907d5607a6930b329d70c75439c5750195c33e173259d979d4633ff27dbe4c"
+    },
+    {
+      "file": "LY-D1-CU_rho0.5_calibrate.json",
+      "phase": "calibrate",
+      "result": "calibrated",
+      "complete": true,
+      "sha256": "06efa61ae651279f4c483345a2145cb573be844f4cf59ad35d7010194a24943f"
+    },
+    {
+      "file": "LY-D1-CU_rho1_accept.json",
+      "phase": "accept",
+      "result": "pass",
+      "complete": true,
+      "sha256": "352b44822336bf8cb929600b4d099b99450d963a86b46a58372171c41fbc0f64"
+    },
+    {
+      "file": "LY-D1-CU_rho1_calibrate.json",
+      "phase": "calibrate",
+      "result": "calibrated",
+      "complete": true,
+      "sha256": "0c6c501064a6dc5fe90e1c2f60f5b46566f84b3575b83535889fa9bd1989dc03"
+    },
+    {
+      "file": "LY-H2-CU_rho0.25_accept.json",
+      "phase": "accept",
+      "result": "pass",
+      "complete": true,
+      "sha256": "b8eda479b7902cbe0eb0502ef3454e81607ba367511fa048cfe896c1fddc64f8"
+    },
+    {
+      "file": "LY-H2-CU_rho0.25_calibrate.json",
+      "phase": "calibrate",
+      "result": "calibrated",
+      "complete": true,
+      "sha256": "c1b9b9e863f27667d50f35360cf9b166d7d3e1a457a871d8c58b6ffaf37ee071"
+    },
+    {
+      "file": "LY-H2-CU_rho0.5_accept.json",
+      "phase": "accept",
+      "result": "pass",
+      "complete": true,
+      "sha256": "9371c0ba9f6316d903672cc6e3474e86336d923236ff018c006a0d1934628565"
+    },
+    {
+      "file": "LY-H2-CU_rho0.5_calibrate.json",
+      "phase": "calibrate",
+      "result": "calibrated",
+      "complete": true,
+      "sha256": "57309daf270370a5f29698cf6d9c39cf56c7f70024cac4f1464bfdbfe823a1aa"
+    },
+    {
+      "file": "LY-H2-CU_rho1_accept.json",
+      "phase": "accept",
+      "result": "pass",
+      "complete": true,
+      "sha256": "800da153a27cb5dc7f3e9e04727e7261115a6646b6cd394ef437279f2d8771d6"
+    },
+    {
+      "file": "LY-H2-CU_rho1_calibrate.json",
+      "phase": "calibrate",
+      "result": "calibrated",
+      "complete": true,
+      "sha256": "1bbfa136553fbc37cc248acb08ed2728d27c8447519f235cd0437cc4be3bb91b"
+    },
+    {
+      "file": "LY-I3-CU_rho0.25_accept.json",
+      "phase": "accept",
+      "result": "pass",
+      "complete": true,
+      "sha256": "ef99ef5c8b2175fd5ed311dddadda8bf7bafd1f677522bb200e7702decb2f5c1"
+    },
+    {
+      "file": "LY-I3-CU_rho0.25_calibrate.json",
+      "phase": "calibrate",
+      "result": "calibrated",
+      "complete": true,
+      "sha256": "ac965d2a5f1191a29162edcfdcae1372f06c78986c437afaa7b90fb9a4f99b88"
+    },
+    {
+      "file": "LY-I3-CU_rho0.5_accept.json",
+      "phase": "accept",
+      "result": "pass",
+      "complete": true,
+      "sha256": "ca69cf0db16b7f39dd26b6d4f16c8da5767d1e5361969e2f4a4608347e208729"
+    },
+    {
+      "file": "LY-I3-CU_rho0.5_calibrate.json",
+      "phase": "calibrate",
+      "result": "calibrated",
+      "complete": true,
+      "sha256": "b15f0776d2e10f57bc203d52728deaf85844589ceac27cf596e473068217b8be"
+    },
+    {
+      "file": "LY-I3-CU_rho1_accept.json",
+      "phase": "accept",
+      "result": "pass",
+      "complete": true,
+      "sha256": "bbbc90a4231c83f3c0684f1b2fdcdae9d585378479e26be0436b411ecf7ac7f8"
+    },
+    {
+      "file": "LY-I3-CU_rho1_calibrate.json",
+      "phase": "calibrate",
+      "result": "calibrated",
+      "complete": true,
+      "sha256": "6cec9621e24710761597fb8192097490a802ce232fc280cf2533873c3ddf31dc"
+    },
+    {
+      "file": "LY-MZ-CU_rho0.1_accept.json",
+      "phase": "accept",
+      "result": "pass",
+      "complete": true,
+      "sha256": "78c3877b0444ea04d38d60c5add511545c8dde557491d420315e6ca998158065"
+    },
+    {
+      "file": "LY-MZ-CU_rho0.1_calibrate.json",
+      "phase": "calibrate",
+      "result": "calibrated",
+      "complete": true,
+      "sha256": "942606c9020d46e6e451abcaa54e35b16b8d04b21181811d6dcaefcc1f2ec996"
+    },
+    {
+      "file": "LY-MZ-CU_rho0.25_accept.json",
+      "phase": "accept",
+      "result": "pass",
+      "complete": true,
+      "sha256": "ca83b1705431f4f563d27dbbcc47c6854bc5b798057b59cc00c530f7ecef62b2"
+    },
+    {
+      "file": "LY-MZ-CU_rho0.25_calibrate.json",
+      "phase": "calibrate",
+      "result": "calibrated",
+      "complete": true,
+      "sha256": "a8a80bd4deaa0669cc1118196396266b3bbe311d9db8c0bf49179e22d44482b2"
+    },
+    {
+      "file": "LY-MZ-CU_rho0.5_accept.json",
+      "phase": "accept",
+      "result": "pass",
+      "complete": true,
+      "sha256": "c07416b61fdda0d1a97bad5c3bc45323dae051ad885a2575033dd3cb4dc34775"
+    },
+    {
+      "file": "LY-MZ-CU_rho0.5_calibrate.json",
+      "phase": "calibrate",
+      "result": "calibrated",
+      "complete": true,
+      "sha256": "6b9f454fb0c5b9607256b192ccb3890ff4d5b7f35e4316fe3ccad5d18aaca593"
+    },
+    {
+      "file": "LY-MZ-CU_rho1_accept.json",
+      "phase": "accept",
+      "result": "pass",
+      "complete": true,
+      "sha256": "0fef0d91c6b6e0170f345fe33ba40aaa4bd9ce28b627e90b9dd2e229ad055745"
+    },
+    {
+      "file": "LY-MZ-CU_rho1_calibrate.json",
+      "phase": "calibrate",
+      "result": "calibrated",
+      "complete": true,
+      "sha256": "b110a15423a7a00bb4c8c9ee0477f80db72fad8454b60b5a819cc2257f704b4b"
+    },
+    {
+      "file": "QB-CO_rho1_accept.json",
+      "phase": "accept",
+      "result": "pass",
+      "complete": true,
+      "sha256": "d36b2f7c93de9405a2b8dff5efb61b4f7beed913ad9614d774c07f419ec1a74c"
+    },
+    {
+      "file": "QB-CO_rho1_calibrate.json",
+      "phase": "calibrate",
+      "result": "calibrated",
+      "complete": true,
+      "sha256": "e3f0d00c39616d47b2223c28f13cfab8540ca1b20e7830d6648f941284fa4207"
+    }
+  ],
+  "unchanged_artifact_hashes": {
+    "LY-D1-CU_rho0.25_accept.json": "e612b3bcc393dfbb70763e6b28982330d4cc9a91922b3ce989a6228777bca878",
+    "LY-D1-CU_rho0.25_accept_reps.csv.gz": "ed82cba2e4d2d675358ff885b49894ed79bcc937242b6e9bddeafc6ba87e3742",
+    "LY-D1-CU_rho0.25_calibrate.json": "c41533d84c028b7f73b38de196f95476c39f7ed10d4853d556af34da502a2e48",
+    "LY-D1-CU_rho0.25_calibrate_reps.csv.gz": "ca94d436a872e8ec633406337951a7981b6b49a4462934e81ef935d52b4bf487",
+    "LY-D1-CU_rho0.5_accept.json": "87907d5607a6930b329d70c75439c5750195c33e173259d979d4633ff27dbe4c",
+    "LY-D1-CU_rho0.5_accept_reps.csv.gz": "5ddfc5e17cb9f45007a3ea817182bf39d41b6383520ca2fc78267e5873994288",
+    "LY-D1-CU_rho0.5_calibrate.json": "06efa61ae651279f4c483345a2145cb573be844f4cf59ad35d7010194a24943f",
+    "LY-D1-CU_rho0.5_calibrate_reps.csv.gz": "0f41d727b12093815c1455b8be5073f2e771aafa3b6886dbb5050c4bd147f4f8",
+    "LY-D1-CU_rho1_accept.json": "352b44822336bf8cb929600b4d099b99450d963a86b46a58372171c41fbc0f64",
+    "LY-D1-CU_rho1_accept_reps.csv.gz": "4bacf1e9f491742c382e5ce829cba801b5962ee599e8b59dd737714068aed249",
+    "LY-D1-CU_rho1_calibrate.json": "0c6c501064a6dc5fe90e1c2f60f5b46566f84b3575b83535889fa9bd1989dc03",
+    "LY-D1-CU_rho1_calibrate_reps.csv.gz": "e5c3af78855249f2f0a972e97a07f1a3a2ac397e81ced238094d6d76a9b9bc68",
+    "LY-H2-CU_rho0.25_accept.json": "b8eda479b7902cbe0eb0502ef3454e81607ba367511fa048cfe896c1fddc64f8",
+    "LY-H2-CU_rho0.25_accept_reps.csv.gz": "71ee1ccc3f74c3ebf897fddb6a3c3191d5221cf4458c8674a186cfbeb24599e0",
+    "LY-H2-CU_rho0.25_calibrate.json": "c1b9b9e863f27667d50f35360cf9b166d7d3e1a457a871d8c58b6ffaf37ee071",
+    "LY-H2-CU_rho0.25_calibrate_reps.csv.gz": "5646c1c1e7c8490b12a6eb5873f492747ac5e36f7fe5dfe062356d3cc5aa88b8",
+    "LY-H2-CU_rho0.5_accept.json": "9371c0ba9f6316d903672cc6e3474e86336d923236ff018c006a0d1934628565",
+    "LY-H2-CU_rho0.5_accept_reps.csv.gz": "47df370fb0d729da64a56e17cd225cc9057554d4baa41fd263485c91f6786f0d",
+    "LY-H2-CU_rho0.5_calibrate.json": "57309daf270370a5f29698cf6d9c39cf56c7f70024cac4f1464bfdbfe823a1aa",
+    "LY-H2-CU_rho0.5_calibrate_reps.csv.gz": "93ac1949b157fd7cbfc3c76a5be9ec80181ef8e972d85e68d01e20d659bc6017",
+    "LY-H2-CU_rho1_accept.json": "800da153a27cb5dc7f3e9e04727e7261115a6646b6cd394ef437279f2d8771d6",
+    "LY-H2-CU_rho1_accept_reps.csv.gz": "d2ce97cf92018a24d924ca408e605e2f7f3ccb735316fdaa328b96d612ea611c",
+    "LY-H2-CU_rho1_calibrate.json": "1bbfa136553fbc37cc248acb08ed2728d27c8447519f235cd0437cc4be3bb91b",
+    "LY-H2-CU_rho1_calibrate_reps.csv.gz": "a8a43662868fd69cb2dbf2891dc7f0dd229c87d6f43b9a07f2099a8a58f01c84",
+    "LY-I3-CU_rho0.25_accept.json": "ef99ef5c8b2175fd5ed311dddadda8bf7bafd1f677522bb200e7702decb2f5c1",
+    "LY-I3-CU_rho0.25_accept_reps.csv.gz": "4d4189eb108a2cf5655f6b4298eee29a7ba8f9068051f07112e156198cfa2a18",
+    "LY-I3-CU_rho0.25_calibrate.json": "ac965d2a5f1191a29162edcfdcae1372f06c78986c437afaa7b90fb9a4f99b88",
+    "LY-I3-CU_rho0.25_calibrate_reps.csv.gz": "fdeac40b7846231e31ff932fdaa04c2f305dab3c4fbda496847e6b9acd611b53",
+    "LY-I3-CU_rho0.5_accept.json": "ca69cf0db16b7f39dd26b6d4f16c8da5767d1e5361969e2f4a4608347e208729",
+    "LY-I3-CU_rho0.5_accept_reps.csv.gz": "ddfa119fe380a5bacfe60a829fd49f76b436818e9c44914a4e06c3d26d60438d",
+    "LY-I3-CU_rho0.5_calibrate.json": "b15f0776d2e10f57bc203d52728deaf85844589ceac27cf596e473068217b8be",
+    "LY-I3-CU_rho0.5_calibrate_reps.csv.gz": "30cfb78868d14064881553ef5c7b9b059400212da4ecb4f6d26e5afe7442674d",
+    "LY-I3-CU_rho1_accept.json": "bbbc90a4231c83f3c0684f1b2fdcdae9d585378479e26be0436b411ecf7ac7f8",
+    "LY-I3-CU_rho1_accept_reps.csv.gz": "13461e3a151877e555234f8f17399fae2e3b2ecade56dd3e767a01e62dadebb7",
+    "LY-I3-CU_rho1_calibrate.json": "6cec9621e24710761597fb8192097490a802ce232fc280cf2533873c3ddf31dc",
+    "LY-I3-CU_rho1_calibrate_reps.csv.gz": "e01a53c7e8d2e9653881d2e484cc3988c3dc6c8e029255ed6aac58c6c7d777bc",
+    "LY-MZ-CU_rho0.1_accept.json": "78c3877b0444ea04d38d60c5add511545c8dde557491d420315e6ca998158065",
+    "LY-MZ-CU_rho0.1_accept_reps.csv.gz": "bdf5221fee6c095b23e35d2b2622ea06bd6895118e26c433bdf07219e4bd4493",
+    "LY-MZ-CU_rho0.1_calibrate.json": "942606c9020d46e6e451abcaa54e35b16b8d04b21181811d6dcaefcc1f2ec996",
+    "LY-MZ-CU_rho0.1_calibrate_reps.csv.gz": "bc78417a778b5d5d8d9ffe3bd09c39c5bd6dc799e023e5e20cf6613adc2ddad3",
+    "LY-MZ-CU_rho0.25_accept.json": "ca83b1705431f4f563d27dbbcc47c6854bc5b798057b59cc00c530f7ecef62b2",
+    "LY-MZ-CU_rho0.25_accept_reps.csv.gz": "508923a1b47382e040a6b90d5a2989f25f2a13157cccc719d7ff149dc8e681b9",
+    "LY-MZ-CU_rho0.25_calibrate.json": "a8a80bd4deaa0669cc1118196396266b3bbe311d9db8c0bf49179e22d44482b2",
+    "LY-MZ-CU_rho0.25_calibrate_reps.csv.gz": "0cf1b477cc3b0576a2b10330dc0e28861be6fdf967e6a1c85d4af5e00b465291",
+    "LY-MZ-CU_rho0.5_accept.json": "c07416b61fdda0d1a97bad5c3bc45323dae051ad885a2575033dd3cb4dc34775",
+    "LY-MZ-CU_rho0.5_accept_reps.csv.gz": "75c21ef83bd827cd7faaee618c5b64bbce1864da87b17737db1e4062c7bde6e2",
+    "LY-MZ-CU_rho0.5_calibrate.json": "6b9f454fb0c5b9607256b192ccb3890ff4d5b7f35e4316fe3ccad5d18aaca593",
+    "LY-MZ-CU_rho0.5_calibrate_reps.csv.gz": "ae76e7427eedb7396c21cef0cafd71c89cc15f9856c864c09652256bfd459b94",
+    "LY-MZ-CU_rho1_accept.json": "0fef0d91c6b6e0170f345fe33ba40aaa4bd9ce28b627e90b9dd2e229ad055745",
+    "LY-MZ-CU_rho1_accept_reps.csv.gz": "52f10a80ce21a9f8613dfc0a25d7ddc531ef02350881d325ca45e7a9885272c6",
+    "LY-MZ-CU_rho1_calibrate.json": "b110a15423a7a00bb4c8c9ee0477f80db72fad8454b60b5a819cc2257f704b4b",
+    "LY-MZ-CU_rho1_calibrate_reps.csv.gz": "dca28cf26617b2212327acba09476a33a821def80f5f3f5a86ab531c54ec63c9",
+    "QB-CO_rho1_accept.json": "d36b2f7c93de9405a2b8dff5efb61b4f7beed913ad9614d774c07f419ec1a74c",
+    "QB-CO_rho1_accept_reps.csv.gz": "d4b2e10fff49635ca1598e144906bda733a92262dcb391ab5c08c665f2975771",
+    "QB-CO_rho1_calibrate.json": "e3f0d00c39616d47b2223c28f13cfab8540ca1b20e7830d6648f941284fa4207",
+    "QB-CO_rho1_calibrate_reps.csv.gz": "e67bc0a0d9238e8fc34b2dae2aaf560d9b14d311d61147fd2defc4d1565e85f3"
+  }
+}

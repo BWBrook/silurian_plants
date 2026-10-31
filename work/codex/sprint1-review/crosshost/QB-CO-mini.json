@@ -1,0 +1,1779 @@
+{
+  "design": "QB-CO",
+  "rho": 1.0,
+  "declaration_id": "m2-designs-v1",
+  "files": {
+    "models/f3/envelope.py": "0f6d1b2e9cb2e99b2d7211fafaf442c5946fa7f3579f6940d453d2084f18d473",
+    "models/f3/designs.py": "0fd2588f84b5dd0b3fabcd45a875de203f8b28f5320aeb6f9adf7148f4f44ca8",
+    "models/f3/m2.py": "48da9074700e4a17e5555c2849de43a780ad3e44423d5ecfe8a96ed95ac313e1",
+    "models/f3/qualify.py": "279989c16864571a550cedcaf8e1a6de56358d67370674324aa0b6d0b291ab6b",
+    "models/f3/qualification_contract.py": "48eef04162897b321390ca3f745c6766dd830f25d15c29712e35cc770a548b79",
+    "models/f3/validate.py": "b0fc19d3fd1462f99b1e447d1ef2d061e804e49862446f49fa59abcc94765fa3",
+    "models/f3/sim.py": "a37ea8c62919d43fe0fab85cdbce2f6c554fc9371b035e11d179e75b224e7bf7",
+    "models/f3/units_sim.py": "e914fb1db3aa65d4700f87484d1ec63f50a05b32aa7a8e2c78473414d8b6b98f",
+    "active_declaration": "d27bd4277d9910a9396f688d0b893b06f5feeea007523134a8e49b09bb5421bd",
+    "data/timescale.csv": "29c6cc4a68b1746d1a67c66623e5df30ac5dd316257b55ca5948c9854886f826",
+    "data/units/qusaiba_inventory.csv": "1ffb4db3cc2e1a1b1f322da2653fda315d0c566bacf3366edc87a5bf0dbcc0c0",
+    "data/units/outcomes.csv": "9c996647d9e101a830cfd16efe466348a191f92396b71bad76cab791b756e37c",
+    "data/units/borenshult_ages.csv": "4f8997c81468ee43ee03c54172c0647df49ef6b420d241a43b8e9fc00e675fae",
+    "data/units/source_files.csv": "f4cd50b5ceabd2acb139e6974aabf3ebac786b46ea8aa5ec7d659ded433b523e",
+    "data/units/reporting-rule.md": "02d09f1d93012365604b043b3f2e955a7b71c7c739741a7ead8c1dae9c1ea594"
+  },
+  "generated_units": {
+    "design": "QB-CO",
+    "variant": {
+      "reading": "main",
+      "bor_unresolved": "excluded",
+      "cluster_k": 2.0
+    },
+    "rows": [
+      {
+        "unit_id": "QSBA-depth-551p0",
+        "source": "wellman2015",
+        "cluster_name": "Qusaiba-1",
+        "cls_name": "Core",
+        "young": 17,
+        "old": 17,
+        "d": 1,
+        "rule": "qusaiba-table2-v1",
+        "evidence": "taxon-mark-present Ambitisporites avitus;Aneurospora sp. A; Wellman2015 Table2 p116/PDF6; methods pp112-113; age p122; L",
+        "lo_ma": {
+          "nonfinite": "nan"
+        },
+        "hi_ma": {
+          "nonfinite": "nan"
+        },
+        "rate_class": "",
+        "depth": 551.0,
+        "formation": "Qasim Formation; ?Quwarah Member",
+        "transported": false
+      },
+      {
+        "unit_id": "QSBA-depth-536p7",
+        "source": "wellman2015",
+        "cluster_name": "Qusaiba-1",
+        "cls_name": "Core",
+        "young": 16,
+        "old": 17,
+        "d": 1,
+        "rule": "qusaiba-table2-v1",
+        "evidence": "taxon-mark-present Aneurospora sp. A; Wellman2015 Table2 p116/PDF6; methods pp112-113; age p122; L",
+        "lo_ma": {
+          "nonfinite": "nan"
+        },
+        "hi_ma": {
+          "nonfinite": "nan"
+        },
+        "rate_class": "",
+        "depth": 536.7,
+        "formation": "Qasim Formation; Quwarah Member",
+        "transported": false
+      },
+      {
+        "unit_id": "QSBA-depth-535p2",
+        "source": "wellman2015",
+        "cluster_name": "Qusaiba-1",
+        "cls_name": "Core",
+        "young": 16,
+        "old": 17,
+        "d": 0,
+        "rule": "qusaiba-table2-v1",
+        "evidence": "no-trilete-mark ; Wellman2015 Table2 p116/PDF6; methods pp112-113; age p122; L",
+        "lo_ma": {
+          "nonfinite": "nan"
+        },
+        "hi_ma": {
+          "nonfinite": "nan"
+        },
+        "rate_class": "",
+        "depth": 535.2,
+        "formation": "Qasim Formation; Quwarah Member",
+        "transported": false
+      },
+      {
+        "unit_id": "QSBA-depth-528p3",
+        "source": "wellman2015",
+        "cluster_name": "Qusaiba-1",
+        "cls_name": "Core",
+        "young": 16,
+        "old": 17,
+        "d": 0,
+        "rule": "qusaiba-table2-v1",
+        "evidence": "no-trilete-mark ; Wellman2015 Table2 p116/PDF6; methods pp112-113; age p122; L",
+        "lo_ma": {
+          "nonfinite": "nan"
+        },
+        "hi_ma": {
+          "nonfinite": "nan"
+        },
+        "rate_class": "",
+        "depth": 528.3,
+        "formation": "Qasim Formation; Quwarah Member",
+        "transported": false
+      },
+      {
+        "unit_id": "QSBA-depth-518p5",
+        "source": "wellman2015",
+        "cluster_name": "Qusaiba-1",
+        "cls_name": "Core",
+        "young": 16,
+        "old": 17,
+        "d": 1,
+        "rule": "qusaiba-table2-v1",
+        "evidence": "taxon-mark-present Chelinospora prisca; Wellman2015 Table2 p116/PDF6; methods pp112-113; age p122; L",
+        "lo_ma": {
+          "nonfinite": "nan"
+        },
+        "hi_ma": {
+          "nonfinite": "nan"
+        },
+        "rate_class": "",
+        "depth": 518.5,
+        "formation": "Qasim Formation; Quwarah Member",
+        "transported": false
+      },
+      {
+        "unit_id": "QSBA-depth-507p15",
+        "source": "wellman2015",
+        "cluster_name": "Qusaiba-1",
+        "cls_name": "Core",
+        "young": 16,
+        "old": 17,
+        "d": 1,
+        "rule": "qusaiba-table2-v1",
+        "evidence": "taxon-mark-present Chelinospora prisca; Wellman2015 Table2 p116/PDF6; methods pp112-113; age p122; L",
+        "lo_ma": {
+          "nonfinite": "nan"
+        },
+        "hi_ma": {
+          "nonfinite": "nan"
+        },
+        "rate_class": "",
+        "depth": 507.15,
+        "formation": "Qasim Formation; Quwarah Member",
+        "transported": false
+      },
+      {
+        "unit_id": "QSBA-depth-503p1",
+        "source": "wellman2015",
+        "cluster_name": "Qusaiba-1",
+        "cls_name": "Core",
+        "young": 16,
+        "old": 17,
+        "d": 0,
+        "rule": "qusaiba-table2-v1",
+        "evidence": "no-trilete-mark ; Wellman2015 Table2 p116/PDF6; methods pp112-113; age p122; L",
+        "lo_ma": {
+          "nonfinite": "nan"
+        },
+        "hi_ma": {
+          "nonfinite": "nan"
+        },
+        "rate_class": "",
+        "depth": 503.1,
+        "formation": "Qasim Formation; Quwarah Member",
+        "transported": false
+      },
+      {
+        "unit_id": "QSBA-depth-497p8",
+        "source": "wellman2015",
+        "cluster_name": "Qusaiba-1",
+        "cls_name": "Core",
+        "young": 16,
+        "old": 17,
+        "d": 0,
+        "rule": "qusaiba-table2-v1",
+        "evidence": "no-trilete-mark ; Wellman2015 Table2 p116/PDF6; methods pp112-113; age p122; L",
+        "lo_ma": {
+          "nonfinite": "nan"
+        },
+        "hi_ma": {
+          "nonfinite": "nan"
+        },
+        "rate_class": "",
+        "depth": 497.8,
+        "formation": "Qasim Formation; Quwarah Member",
+        "transported": false
+      },
+      {
+        "unit_id": "QSBA-depth-488p3",
+        "source": "wellman2015",
+        "cluster_name": "Qusaiba-1",
+        "cls_name": "Core",
+        "young": 16,
+        "old": 17,
+        "d": 0,
+        "rule": "qusaiba-table2-v1",
+        "evidence": "no-trilete-mark ; Wellman2015 Table2 p116/PDF6; methods pp112-113; age p122; L",
+        "lo_ma": {
+          "nonfinite": "nan"
+        },
+        "hi_ma": {
+          "nonfinite": "nan"
+        },
+        "rate_class": "",
+        "depth": 488.3,
+        "formation": "Qasim Formation; Quwarah Member",
+        "transported": false
+      },
+      {
+        "unit_id": "QSBA-depth-484p7",
+        "source": "wellman2015",
+        "cluster_name": "Qusaiba-1",
+        "cls_name": "Core",
+        "young": 16,
+        "old": 17,
+        "d": 1,
+        "rule": "qusaiba-table2-v1",
+        "evidence": "taxon-mark-present Ambitisporites avitus; Wellman2015 Table2 p116/PDF6; methods pp112-113; age p122; L",
+        "lo_ma": {
+          "nonfinite": "nan"
+        },
+        "hi_ma": {
+          "nonfinite": "nan"
+        },
+        "rate_class": "",
+        "depth": 484.7,
+        "formation": "Qasim Formation; Quwarah Member",
+        "transported": false
+      },
+      {
+        "unit_id": "QSBA-depth-479p4",
+        "source": "wellman2015",
+        "cluster_name": "Qusaiba-1",
+        "cls_name": "Core",
+        "young": 16,
+        "old": 17,
+        "d": 0,
+        "rule": "qusaiba-table2-v1",
+        "evidence": "no-trilete-mark ; Wellman2015 Table2 p116/PDF6; methods pp112-113; age p122; L",
+        "lo_ma": {
+          "nonfinite": "nan"
+        },
+        "hi_ma": {
+          "nonfinite": "nan"
+        },
+        "rate_class": "",
+        "depth": 479.4,
+        "formation": "Qasim Formation; Quwarah Member",
+        "transported": false
+      },
+      {
+        "unit_id": "QSBA-depth-476p7",
+        "source": "wellman2015",
+        "cluster_name": "Qusaiba-1",
+        "cls_name": "Core",
+        "young": 16,
+        "old": 17,
+        "d": 0,
+        "rule": "qusaiba-table2-v1",
+        "evidence": "no-trilete-mark ; Wellman2015 Table2 p116/PDF6; methods pp112-113; age p122; L",
+        "lo_ma": {
+          "nonfinite": "nan"
+        },
+        "hi_ma": {
+          "nonfinite": "nan"
+        },
+        "rate_class": "",
+        "depth": 476.7,
+        "formation": "Qasim Formation; Quwarah Member",
+        "transported": false
+      },
+      {
+        "unit_id": "QSBA-depth-458p4",
+        "source": "wellman2015",
+        "cluster_name": "Qusaiba-1",
+        "cls_name": "Core",
+        "young": 16,
+        "old": 16,
+        "d": 1,
+        "rule": "qusaiba-table2-v1",
+        "evidence": "taxon-mark-present Ambitisporites avitus; Wellman2015 Table2 p116/PDF6; methods pp112-113; age p122; L",
+        "lo_ma": {
+          "nonfinite": "nan"
+        },
+        "hi_ma": {
+          "nonfinite": "nan"
+        },
+        "rate_class": "",
+        "depth": 458.4,
+        "formation": "Sarah Formation; Sarah Sandstone Member (Table2 SF:SSSM)",
+        "transported": false
+      },
+      {
+        "unit_id": "QSBA-depth-452p75",
+        "source": "wellman2015",
+        "cluster_name": "Qusaiba-1",
+        "cls_name": "Core",
+        "young": 16,
+        "old": 16,
+        "d": 1,
+        "rule": "qusaiba-table2-v1",
+        "evidence": "taxon-mark-present Synorisporites? sp. A;Chelinospora prisca; Wellman2015 Table2 p116/PDF6; methods pp112-113; age p122; L",
+        "lo_ma": {
+          "nonfinite": "nan"
+        },
+        "hi_ma": {
+          "nonfinite": "nan"
+        },
+        "rate_class": "",
+        "depth": 452.75,
+        "formation": "Sarah Formation; Sarah Sandstone Member (Table2 SF:SSSM)",
+        "transported": false
+      },
+      {
+        "unit_id": "QSBA-depth-438p7",
+        "source": "wellman2015",
+        "cluster_name": "Qusaiba-1",
+        "cls_name": "Core",
+        "young": 16,
+        "old": 16,
+        "d": 1,
+        "rule": "qusaiba-table2-v1",
+        "evidence": "taxon-mark-present Ambitisporites avitus;Aneurospora sp. A; Wellman2015 Table2 p116/PDF6; methods pp112-113; age p122; L",
+        "lo_ma": {
+          "nonfinite": "nan"
+        },
+        "hi_ma": {
+          "nonfinite": "nan"
+        },
+        "rate_class": "",
+        "depth": 438.7,
+        "formation": "Sarah Formation; Sarah Sandstone Member (Table2 SF:SSSM)",
+        "transported": false
+      },
+      {
+        "unit_id": "QSBA-depth-436p0",
+        "source": "wellman2015",
+        "cluster_name": "Qusaiba-1",
+        "cls_name": "Core",
+        "young": 16,
+        "old": 16,
+        "d": 0,
+        "rule": "qusaiba-table2-v1",
+        "evidence": "no-trilete-mark ; Wellman2015 Table2 p116/PDF6; methods pp112-113; age p122; L",
+        "lo_ma": {
+          "nonfinite": "nan"
+        },
+        "hi_ma": {
+          "nonfinite": "nan"
+        },
+        "rate_class": "",
+        "depth": 436.0,
+        "formation": "Sarah Formation; Sarah Sandstone Member (Table2 SF:SSSM)",
+        "transported": false
+      },
+      {
+        "unit_id": "QSBA-depth-350p6",
+        "source": "wellman2015",
+        "cluster_name": "Qusaiba-1",
+        "cls_name": "Core",
+        "young": 16,
+        "old": 16,
+        "d": 1,
+        "rule": "qusaiba-table2-v1",
+        "evidence": "taxon-mark-present Synorisporites? sp. C; Wellman2015 Table2 p116/PDF6; methods pp112-113; age p122; L",
+        "lo_ma": {
+          "nonfinite": "nan"
+        },
+        "hi_ma": {
+          "nonfinite": "nan"
+        },
+        "rate_class": "",
+        "depth": 350.6,
+        "formation": "Sarah Formation; Baqa Shale Member",
+        "transported": false
+      },
+      {
+        "unit_id": "QSBA-depth-348p8",
+        "source": "wellman2015",
+        "cluster_name": "Qusaiba-1",
+        "cls_name": "Core",
+        "young": 16,
+        "old": 16,
+        "d": 1,
+        "rule": "qusaiba-table2-v1",
+        "evidence": "taxon-mark-present Ambitisporites avitus;Chelinospora prisca; Wellman2015 Table2 p116/PDF6; methods pp112-113; age p122; L",
+        "lo_ma": {
+          "nonfinite": "nan"
+        },
+        "hi_ma": {
+          "nonfinite": "nan"
+        },
+        "rate_class": "",
+        "depth": 348.8,
+        "formation": "Sarah Formation; Baqa Shale Member",
+        "transported": false
+      },
+      {
+        "unit_id": "QSBA-depth-345p85",
+        "source": "wellman2015",
+        "cluster_name": "Qusaiba-1",
+        "cls_name": "Core",
+        "young": 16,
+        "old": 16,
+        "d": 1,
+        "rule": "qusaiba-table2-v1",
+        "evidence": "taxon-mark-present Chelinospora prisca; Wellman2015 Table2 p116/PDF6; methods pp112-113; age p122; L",
+        "lo_ma": {
+          "nonfinite": "nan"
+        },
+        "hi_ma": {
+          "nonfinite": "nan"
+        },
+        "rate_class": "",
+        "depth": 345.85,
+        "formation": "Sarah Formation; Baqa Shale Member",
+        "transported": false
+      },
+      {
+        "unit_id": "QSBA-depth-342p3",
+        "source": "wellman2015",
+        "cluster_name": "Qusaiba-1",
+        "cls_name": "Core",
+        "young": 16,
+        "old": 16,
+        "d": 1,
+        "rule": "qusaiba-table2-v1",
+        "evidence": "taxon-mark-present Synorisporites sp. B; Wellman2015 Table2 p116/PDF6; methods pp112-113; age p122; L",
+        "lo_ma": {
+          "nonfinite": "nan"
+        },
+        "hi_ma": {
+          "nonfinite": "nan"
+        },
+        "rate_class": "",
+        "depth": 342.3,
+        "formation": "Sarah Formation; Baqa Shale Member",
+        "transported": false
+      },
+      {
+        "unit_id": "QSBA-depth-341p0",
+        "source": "wellman2015",
+        "cluster_name": "Qusaiba-1",
+        "cls_name": "Core",
+        "young": 16,
+        "old": 16,
+        "d": 1,
+        "rule": "qusaiba-table2-v1",
+        "evidence": "taxon-mark-present Chelinospora prisca; Wellman2015 Table2 p116/PDF6; methods pp112-113; age p122; L",
+        "lo_ma": {
+          "nonfinite": "nan"
+        },
+        "hi_ma": {
+          "nonfinite": "nan"
+        },
+        "rate_class": "",
+        "depth": 341.0,
+        "formation": "Sarah Formation; Baqa Shale Member",
+        "transported": false
+      },
+      {
+        "unit_id": "QSBA-depth-338p4",
+        "source": "wellman2015",
+        "cluster_name": "Qusaiba-1",
+        "cls_name": "Core",
+        "young": 16,
+        "old": 16,
+        "d": 1,
+        "rule": "qusaiba-table2-v1",
+        "evidence": "taxon-mark-present Leiotriletes sp. A; Wellman2015 Table2 p116/PDF6; methods pp112-113; age p122; L",
+        "lo_ma": {
+          "nonfinite": "nan"
+        },
+        "hi_ma": {
+          "nonfinite": "nan"
+        },
+        "rate_class": "",
+        "depth": 338.4,
+        "formation": "Sarah Formation; Baqa Shale Member",
+        "transported": false
+      },
+      {
+        "unit_id": "QSBA-depth-335p7",
+        "source": "wellman2015",
+        "cluster_name": "Qusaiba-1",
+        "cls_name": "Core",
+        "young": 16,
+        "old": 16,
+        "d": 1,
+        "rule": "qusaiba-table2-v1",
+        "evidence": "taxon-mark-present Chelinospora prisca; Wellman2015 Table2 p116/PDF6; methods pp112-113; age p122; L",
+        "lo_ma": {
+          "nonfinite": "nan"
+        },
+        "hi_ma": {
+          "nonfinite": "nan"
+        },
+        "rate_class": "",
+        "depth": 335.7,
+        "formation": "Sarah Formation; Baqa Shale Member",
+        "transported": false
+      },
+      {
+        "unit_id": "QSBA-depth-333p4",
+        "source": "wellman2015",
+        "cluster_name": "Qusaiba-1",
+        "cls_name": "Core",
+        "young": 16,
+        "old": 16,
+        "d": 0,
+        "rule": "qusaiba-table2-v1",
+        "evidence": "no-trilete-mark ; Wellman2015 Table2 p116/PDF6; methods pp112-113; age p122; L",
+        "lo_ma": {
+          "nonfinite": "nan"
+        },
+        "hi_ma": {
+          "nonfinite": "nan"
+        },
+        "rate_class": "",
+        "depth": 333.4,
+        "formation": "Sarah Formation; Baqa Shale Member",
+        "transported": false
+      },
+      {
+        "unit_id": "QSBA-depth-330p3",
+        "source": "wellman2015",
+        "cluster_name": "Qusaiba-1",
+        "cls_name": "Core",
+        "young": 16,
+        "old": 16,
+        "d": 1,
+        "rule": "qusaiba-table2-v1",
+        "evidence": "taxon-mark-present Chelinospora prisca; Wellman2015 Table2 p116/PDF6; methods pp112-113; age p122; L",
+        "lo_ma": {
+          "nonfinite": "nan"
+        },
+        "hi_ma": {
+          "nonfinite": "nan"
+        },
+        "rate_class": "",
+        "depth": 330.3,
+        "formation": "Sarah Formation; Baqa Shale Member",
+        "transported": false
+      },
+      {
+        "unit_id": "QSBA-depth-327p9",
+        "source": "wellman2015",
+        "cluster_name": "Qusaiba-1",
+        "cls_name": "Core",
+        "young": 16,
+        "old": 16,
+        "d": 0,
+        "rule": "qusaiba-table2-v1",
+        "evidence": "no-trilete-mark ; Wellman2015 Table2 p116/PDF6; methods pp112-113; age p122; L",
+        "lo_ma": {
+          "nonfinite": "nan"
+        },
+        "hi_ma": {
+          "nonfinite": "nan"
+        },
+        "rate_class": "",
+        "depth": 327.9,
+        "formation": "Sarah Formation; Baqa Shale Member",
+        "transported": false
+      },
+      {
+        "unit_id": "QSBA-depth-325p4",
+        "source": "wellman2015",
+        "cluster_name": "Qusaiba-1",
+        "cls_name": "Core",
+        "young": 16,
+        "old": 16,
+        "d": 1,
+        "rule": "qusaiba-table2-v1",
+        "evidence": "taxon-mark-present Chelinospora prisca; Wellman2015 Table2 p116/PDF6; methods pp112-113; age p122; L",
+        "lo_ma": {
+          "nonfinite": "nan"
+        },
+        "hi_ma": {
+          "nonfinite": "nan"
+        },
+        "rate_class": "",
+        "depth": 325.4,
+        "formation": "Sarah Formation; Baqa Shale Member",
+        "transported": false
+      },
+      {
+        "unit_id": "QSBA-depth-323p1",
+        "source": "wellman2015",
+        "cluster_name": "Qusaiba-1",
+        "cls_name": "Core",
+        "young": 16,
+        "old": 16,
+        "d": 0,
+        "rule": "qusaiba-table2-v1",
+        "evidence": "no-trilete-mark ; Wellman2015 Table2 p116/PDF6; methods pp112-113; age p122; L",
+        "lo_ma": {
+          "nonfinite": "nan"
+        },
+        "hi_ma": {
+          "nonfinite": "nan"
+        },
+        "rate_class": "",
+        "depth": 323.1,
+        "formation": "Sarah Formation; Baqa Shale Member",
+        "transported": false
+      },
+      {
+        "unit_id": "QSBA-depth-319p1",
+        "source": "wellman2015",
+        "cluster_name": "Qusaiba-1",
+        "cls_name": "Core",
+        "young": 16,
+        "old": 16,
+        "d": 0,
+        "rule": "qusaiba-table2-v1",
+        "evidence": "no-trilete-mark ; Wellman2015 Table2 p116/PDF6; methods pp112-113; age p122; L",
+        "lo_ma": {
+          "nonfinite": "nan"
+        },
+        "hi_ma": {
+          "nonfinite": "nan"
+        },
+        "rate_class": "",
+        "depth": 319.1,
+        "formation": "Sarah Formation; Baqa Shale Member",
+        "transported": false
+      },
+      {
+        "unit_id": "QSBA-depth-318p2",
+        "source": "wellman2015",
+        "cluster_name": "Qusaiba-1",
+        "cls_name": "Core",
+        "young": 16,
+        "old": 16,
+        "d": 0,
+        "rule": "qusaiba-table2-v1",
+        "evidence": "no-trilete-mark ; Wellman2015 Table2 p116/PDF6; methods pp112-113; age p122; L",
+        "lo_ma": {
+          "nonfinite": "nan"
+        },
+        "hi_ma": {
+          "nonfinite": "nan"
+        },
+        "rate_class": "",
+        "depth": 318.2,
+        "formation": "Sarah Formation; Baqa Shale Member",
+        "transported": false
+      },
+      {
+        "unit_id": "QSBA-depth-310p2",
+        "source": "wellman2015",
+        "cluster_name": "Qusaiba-1",
+        "cls_name": "Core",
+        "young": 16,
+        "old": 16,
+        "d": 0,
+        "rule": "qusaiba-table2-v1",
+        "evidence": "no-trilete-mark ; Wellman2015 Table2 p116/PDF6; methods pp112-113; age p122; L",
+        "lo_ma": {
+          "nonfinite": "nan"
+        },
+        "hi_ma": {
+          "nonfinite": "nan"
+        },
+        "rate_class": "",
+        "depth": 310.2,
+        "formation": "Sarah Formation; Baqa Shale Member",
+        "transported": false
+      },
+      {
+        "unit_id": "QSBA-depth-307p7",
+        "source": "wellman2015",
+        "cluster_name": "Qusaiba-1",
+        "cls_name": "Core",
+        "young": 16,
+        "old": 16,
+        "d": 1,
+        "rule": "qusaiba-table2-v1",
+        "evidence": "taxon-mark-present Ambitisporites avitus;Chelinospora prisca; Wellman2015 Table2 p116/PDF6; methods pp112-113; age p122; L",
+        "lo_ma": {
+          "nonfinite": "nan"
+        },
+        "hi_ma": {
+          "nonfinite": "nan"
+        },
+        "rate_class": "",
+        "depth": 307.7,
+        "formation": "Sarah Formation; Baqa Shale Member",
+        "transported": false
+      },
+      {
+        "unit_id": "QSBA-depth-305p0",
+        "source": "wellman2015",
+        "cluster_name": "Qusaiba-1",
+        "cls_name": "Core",
+        "young": 16,
+        "old": 16,
+        "d": 1,
+        "rule": "qusaiba-table2-v1",
+        "evidence": "taxon-mark-present Chelinospora sp. A; Wellman2015 Table2 p116/PDF6; methods pp112-113; age p122; L",
+        "lo_ma": {
+          "nonfinite": "nan"
+        },
+        "hi_ma": {
+          "nonfinite": "nan"
+        },
+        "rate_class": "",
+        "depth": 305.0,
+        "formation": "Sarah Formation; Baqa Shale Member",
+        "transported": false
+      },
+      {
+        "unit_id": "QSBA-depth-302p11",
+        "source": "wellman2015",
+        "cluster_name": "Qusaiba-1",
+        "cls_name": "Core",
+        "young": 16,
+        "old": 16,
+        "d": 1,
+        "rule": "qusaiba-table2-v1",
+        "evidence": "taxon-mark-present Ambitisporites avitus; Wellman2015 Table2 p116/PDF6; methods pp112-113; age p122; L",
+        "lo_ma": {
+          "nonfinite": "nan"
+        },
+        "hi_ma": {
+          "nonfinite": "nan"
+        },
+        "rate_class": "",
+        "depth": 302.11,
+        "formation": "Sarah Formation; Baqa Shale Member",
+        "transported": false
+      },
+      {
+        "unit_id": "QSBA-depth-301p1",
+        "source": "wellman2015",
+        "cluster_name": "Qusaiba-1",
+        "cls_name": "Core",
+        "young": 16,
+        "old": 16,
+        "d": 1,
+        "rule": "qusaiba-table2-v1",
+        "evidence": "taxon-mark-present Ambitisporites avitus;Chelinospora prisca; Wellman2015 Table2 p116/PDF6; methods pp112-113; age p122; L",
+        "lo_ma": {
+          "nonfinite": "nan"
+        },
+        "hi_ma": {
+          "nonfinite": "nan"
+        },
+        "rate_class": "",
+        "depth": 301.1,
+        "formation": "Sarah Formation; Baqa Shale Member",
+        "transported": false
+      },
+      {
+        "unit_id": "QSBA-depth-294p8",
+        "source": "wellman2015",
+        "cluster_name": "Qusaiba-1",
+        "cls_name": "Core",
+        "young": 16,
+        "old": 16,
+        "d": 0,
+        "rule": "qusaiba-table2-v1",
+        "evidence": "no-trilete-mark ; Wellman2015 Table2 p116/PDF6; methods pp112-113; age p122; L",
+        "lo_ma": {
+          "nonfinite": "nan"
+        },
+        "hi_ma": {
+          "nonfinite": "nan"
+        },
+        "rate_class": "",
+        "depth": 294.8,
+        "formation": "Sarah Formation; Baqa Shale Member",
+        "transported": false
+      },
+      {
+        "unit_id": "QSBA-depth-292p3",
+        "source": "wellman2015",
+        "cluster_name": "Qusaiba-1",
+        "cls_name": "Core",
+        "young": 16,
+        "old": 16,
+        "d": 1,
+        "rule": "qusaiba-table2-v1",
+        "evidence": "taxon-mark-present Chelinospora prisca; Wellman2015 Table2 p116/PDF6; methods pp112-113; age p122; L",
+        "lo_ma": {
+          "nonfinite": "nan"
+        },
+        "hi_ma": {
+          "nonfinite": "nan"
+        },
+        "rate_class": "",
+        "depth": 292.3,
+        "formation": "Sarah Formation; Baqa Sandstone Member",
+        "transported": false
+      },
+      {
+        "unit_id": "BOR-71.1",
+        "source": "rubinstein2019;rubinstein2023",
+        "cluster_name": "Borenshult-1",
+        "cls_name": "Core",
+        "young": 19,
+        "old": 19,
+        "d": 0,
+        "rule": "borenshult-outcomes-v1",
+        "evidence": "explicit_non_detection under main",
+        "lo_ma": {
+          "nonfinite": "nan"
+        },
+        "hi_ma": {
+          "nonfinite": "nan"
+        },
+        "rate_class": "",
+        "depth": 71.1,
+        "formation": "",
+        "transported": true
+      },
+      {
+        "unit_id": "BOR-67.6",
+        "source": "rubinstein2019;rubinstein2023",
+        "cluster_name": "Borenshult-1",
+        "cls_name": "Core",
+        "young": 19,
+        "old": 19,
+        "d": 0,
+        "rule": "borenshult-outcomes-v1",
+        "evidence": "not_reported under main",
+        "lo_ma": {
+          "nonfinite": "nan"
+        },
+        "hi_ma": {
+          "nonfinite": "nan"
+        },
+        "rate_class": "",
+        "depth": 67.6,
+        "formation": "",
+        "transported": true
+      },
+      {
+        "unit_id": "BOR-59.1",
+        "source": "rubinstein2019;rubinstein2023",
+        "cluster_name": "Borenshult-1",
+        "cls_name": "Core",
+        "young": 19,
+        "old": 19,
+        "d": 0,
+        "rule": "borenshult-outcomes-v1",
+        "evidence": "not_reported under main",
+        "lo_ma": {
+          "nonfinite": "nan"
+        },
+        "hi_ma": {
+          "nonfinite": "nan"
+        },
+        "rate_class": "",
+        "depth": 59.1,
+        "formation": "",
+        "transported": true
+      },
+      {
+        "unit_id": "BOR-41.1",
+        "source": "rubinstein2019;rubinstein2023",
+        "cluster_name": "Borenshult-1",
+        "cls_name": "Core",
+        "young": 18,
+        "old": 18,
+        "d": 0,
+        "rule": "borenshult-outcomes-v1",
+        "evidence": "not_reported under main",
+        "lo_ma": {
+          "nonfinite": "nan"
+        },
+        "hi_ma": {
+          "nonfinite": "nan"
+        },
+        "rate_class": "",
+        "depth": 41.1,
+        "formation": "",
+        "transported": true
+      },
+      {
+        "unit_id": "BOR-40.1",
+        "source": "rubinstein2019;rubinstein2023",
+        "cluster_name": "Borenshult-1",
+        "cls_name": "Core",
+        "young": 18,
+        "old": 18,
+        "d": 0,
+        "rule": "borenshult-outcomes-v1",
+        "evidence": "explicit_non_detection under main",
+        "lo_ma": {
+          "nonfinite": "nan"
+        },
+        "hi_ma": {
+          "nonfinite": "nan"
+        },
+        "rate_class": "",
+        "depth": 40.1,
+        "formation": "",
+        "transported": true
+      },
+      {
+        "unit_id": "BOR-39.8",
+        "source": "rubinstein2019;rubinstein2023",
+        "cluster_name": "Borenshult-1",
+        "cls_name": "Core",
+        "young": 18,
+        "old": 18,
+        "d": 0,
+        "rule": "borenshult-outcomes-v1",
+        "evidence": "not_reported under main",
+        "lo_ma": {
+          "nonfinite": "nan"
+        },
+        "hi_ma": {
+          "nonfinite": "nan"
+        },
+        "rate_class": "",
+        "depth": 39.8,
+        "formation": "",
+        "transported": true
+      },
+      {
+        "unit_id": "BOR-39.50",
+        "source": "rubinstein2019;rubinstein2023",
+        "cluster_name": "Borenshult-1",
+        "cls_name": "Core",
+        "young": 18,
+        "old": 18,
+        "d": 0,
+        "rule": "borenshult-outcomes-v1",
+        "evidence": "explicit_non_detection under main",
+        "lo_ma": {
+          "nonfinite": "nan"
+        },
+        "hi_ma": {
+          "nonfinite": "nan"
+        },
+        "rate_class": "",
+        "depth": 39.5,
+        "formation": "",
+        "transported": true
+      },
+      {
+        "unit_id": "BOR-39.35",
+        "source": "rubinstein2019;rubinstein2023",
+        "cluster_name": "Borenshult-1",
+        "cls_name": "Core",
+        "young": 18,
+        "old": 18,
+        "d": 0,
+        "rule": "borenshult-outcomes-v1",
+        "evidence": "explicit_non_detection under main",
+        "lo_ma": {
+          "nonfinite": "nan"
+        },
+        "hi_ma": {
+          "nonfinite": "nan"
+        },
+        "rate_class": "",
+        "depth": 39.35,
+        "formation": "",
+        "transported": true
+      },
+      {
+        "unit_id": "BOR-39.20",
+        "source": "rubinstein2019;rubinstein2023",
+        "cluster_name": "Borenshult-1",
+        "cls_name": "Core",
+        "young": 18,
+        "old": 18,
+        "d": 0,
+        "rule": "borenshult-outcomes-v1",
+        "evidence": "explicit_non_detection under main",
+        "lo_ma": {
+          "nonfinite": "nan"
+        },
+        "hi_ma": {
+          "nonfinite": "nan"
+        },
+        "rate_class": "",
+        "depth": 39.2,
+        "formation": "",
+        "transported": true
+      },
+      {
+        "unit_id": "BOR-39.10",
+        "source": "rubinstein2019;rubinstein2023",
+        "cluster_name": "Borenshult-1",
+        "cls_name": "Core",
+        "young": 18,
+        "old": 18,
+        "d": 0,
+        "rule": "borenshult-outcomes-v1",
+        "evidence": "not_reported under main",
+        "lo_ma": {
+          "nonfinite": "nan"
+        },
+        "hi_ma": {
+          "nonfinite": "nan"
+        },
+        "rate_class": "",
+        "depth": 39.1,
+        "formation": "",
+        "transported": true
+      },
+      {
+        "unit_id": "BOR-39.0",
+        "source": "rubinstein2019;rubinstein2023",
+        "cluster_name": "Borenshult-1",
+        "cls_name": "Core",
+        "young": 18,
+        "old": 18,
+        "d": 0,
+        "rule": "borenshult-outcomes-v1",
+        "evidence": "explicit_non_detection under main",
+        "lo_ma": {
+          "nonfinite": "nan"
+        },
+        "hi_ma": {
+          "nonfinite": "nan"
+        },
+        "rate_class": "",
+        "depth": 39.0,
+        "formation": "",
+        "transported": true
+      },
+      {
+        "unit_id": "BOR-38.98",
+        "source": "rubinstein2019;rubinstein2023",
+        "cluster_name": "Borenshult-1",
+        "cls_name": "Core",
+        "young": 18,
+        "old": 18,
+        "d": 0,
+        "rule": "borenshult-outcomes-v1",
+        "evidence": "not_reported under main",
+        "lo_ma": {
+          "nonfinite": "nan"
+        },
+        "hi_ma": {
+          "nonfinite": "nan"
+        },
+        "rate_class": "",
+        "depth": 38.98,
+        "formation": "",
+        "transported": true
+      },
+      {
+        "unit_id": "BOR-38.85",
+        "source": "rubinstein2019;rubinstein2023",
+        "cluster_name": "Borenshult-1",
+        "cls_name": "Core",
+        "young": 18,
+        "old": 18,
+        "d": 0,
+        "rule": "borenshult-outcomes-v1",
+        "evidence": "not_reported under main",
+        "lo_ma": {
+          "nonfinite": "nan"
+        },
+        "hi_ma": {
+          "nonfinite": "nan"
+        },
+        "rate_class": "",
+        "depth": 38.85,
+        "formation": "",
+        "transported": true
+      },
+      {
+        "unit_id": "BOR-38.73",
+        "source": "rubinstein2019;rubinstein2023",
+        "cluster_name": "Borenshult-1",
+        "cls_name": "Core",
+        "young": 18,
+        "old": 18,
+        "d": 0,
+        "rule": "borenshult-outcomes-v1",
+        "evidence": "explicit_non_detection under main",
+        "lo_ma": {
+          "nonfinite": "nan"
+        },
+        "hi_ma": {
+          "nonfinite": "nan"
+        },
+        "rate_class": "",
+        "depth": 38.73,
+        "formation": "",
+        "transported": true
+      },
+      {
+        "unit_id": "BOR-38.70",
+        "source": "rubinstein2019;rubinstein2023",
+        "cluster_name": "Borenshult-1",
+        "cls_name": "Core",
+        "young": 18,
+        "old": 18,
+        "d": 0,
+        "rule": "borenshult-outcomes-v1",
+        "evidence": "not_reported under main",
+        "lo_ma": {
+          "nonfinite": "nan"
+        },
+        "hi_ma": {
+          "nonfinite": "nan"
+        },
+        "rate_class": "",
+        "depth": 38.7,
+        "formation": "",
+        "transported": true
+      },
+      {
+        "unit_id": "BOR-38.35",
+        "source": "rubinstein2019;rubinstein2023",
+        "cluster_name": "Borenshult-1",
+        "cls_name": "Core",
+        "young": 18,
+        "old": 18,
+        "d": 0,
+        "rule": "borenshult-outcomes-v1",
+        "evidence": "not_reported under main",
+        "lo_ma": {
+          "nonfinite": "nan"
+        },
+        "hi_ma": {
+          "nonfinite": "nan"
+        },
+        "rate_class": "",
+        "depth": 38.35,
+        "formation": "",
+        "transported": true
+      },
+      {
+        "unit_id": "BOR-38.06",
+        "source": "rubinstein2019;rubinstein2023",
+        "cluster_name": "Borenshult-1",
+        "cls_name": "Core",
+        "young": 18,
+        "old": 18,
+        "d": 0,
+        "rule": "borenshult-outcomes-v1",
+        "evidence": "explicit_non_detection under main",
+        "lo_ma": {
+          "nonfinite": "nan"
+        },
+        "hi_ma": {
+          "nonfinite": "nan"
+        },
+        "rate_class": "",
+        "depth": 38.06,
+        "formation": "",
+        "transported": true
+      },
+      {
+        "unit_id": "BOR-37.5",
+        "source": "rubinstein2019;rubinstein2023",
+        "cluster_name": "Borenshult-1",
+        "cls_name": "Core",
+        "young": 18,
+        "old": 18,
+        "d": 0,
+        "rule": "borenshult-outcomes-v1",
+        "evidence": "not_reported under main",
+        "lo_ma": {
+          "nonfinite": "nan"
+        },
+        "hi_ma": {
+          "nonfinite": "nan"
+        },
+        "rate_class": "",
+        "depth": 37.5,
+        "formation": "",
+        "transported": true
+      },
+      {
+        "unit_id": "BOR-37",
+        "source": "rubinstein2019;rubinstein2023",
+        "cluster_name": "Borenshult-1",
+        "cls_name": "Core",
+        "young": 18,
+        "old": 18,
+        "d": 0,
+        "rule": "borenshult-outcomes-v1",
+        "evidence": "explicit_non_detection under main",
+        "lo_ma": {
+          "nonfinite": "nan"
+        },
+        "hi_ma": {
+          "nonfinite": "nan"
+        },
+        "rate_class": "",
+        "depth": 37.0,
+        "formation": "",
+        "transported": true
+      },
+      {
+        "unit_id": "BOR-36.7",
+        "source": "rubinstein2019;rubinstein2023",
+        "cluster_name": "Borenshult-1",
+        "cls_name": "Core",
+        "young": 18,
+        "old": 18,
+        "d": 0,
+        "rule": "borenshult-outcomes-v1",
+        "evidence": "explicit_non_detection under main",
+        "lo_ma": {
+          "nonfinite": "nan"
+        },
+        "hi_ma": {
+          "nonfinite": "nan"
+        },
+        "rate_class": "",
+        "depth": 36.7,
+        "formation": "",
+        "transported": true
+      },
+      {
+        "unit_id": "BOR-36.6",
+        "source": "rubinstein2019;rubinstein2023",
+        "cluster_name": "Borenshult-1",
+        "cls_name": "Core",
+        "young": 18,
+        "old": 18,
+        "d": 0,
+        "rule": "borenshult-outcomes-v1",
+        "evidence": "not_reported under main",
+        "lo_ma": {
+          "nonfinite": "nan"
+        },
+        "hi_ma": {
+          "nonfinite": "nan"
+        },
+        "rate_class": "",
+        "depth": 36.6,
+        "formation": "",
+        "transported": true
+      },
+      {
+        "unit_id": "BOR-36.4",
+        "source": "rubinstein2019;rubinstein2023",
+        "cluster_name": "Borenshult-1",
+        "cls_name": "Core",
+        "young": 18,
+        "old": 18,
+        "d": 0,
+        "rule": "borenshult-outcomes-v1",
+        "evidence": "not_reported under main",
+        "lo_ma": {
+          "nonfinite": "nan"
+        },
+        "hi_ma": {
+          "nonfinite": "nan"
+        },
+        "rate_class": "",
+        "depth": 36.4,
+        "formation": "",
+        "transported": true
+      },
+      {
+        "unit_id": "BOR-36.3",
+        "source": "rubinstein2019;rubinstein2023",
+        "cluster_name": "Borenshult-1",
+        "cls_name": "Core",
+        "young": 18,
+        "old": 18,
+        "d": 0,
+        "rule": "borenshult-outcomes-v1",
+        "evidence": "not_reported under main",
+        "lo_ma": {
+          "nonfinite": "nan"
+        },
+        "hi_ma": {
+          "nonfinite": "nan"
+        },
+        "rate_class": "",
+        "depth": 36.3,
+        "formation": "",
+        "transported": true
+      },
+      {
+        "unit_id": "BOR-35.4",
+        "source": "rubinstein2019;rubinstein2023",
+        "cluster_name": "Borenshult-1",
+        "cls_name": "Core",
+        "young": 18,
+        "old": 18,
+        "d": 0,
+        "rule": "borenshult-outcomes-v1",
+        "evidence": "explicit_non_detection under main",
+        "lo_ma": {
+          "nonfinite": "nan"
+        },
+        "hi_ma": {
+          "nonfinite": "nan"
+        },
+        "rate_class": "",
+        "depth": 35.4,
+        "formation": "",
+        "transported": true
+      },
+      {
+        "unit_id": "BOR-35.2",
+        "source": "rubinstein2019;rubinstein2023",
+        "cluster_name": "Borenshult-1",
+        "cls_name": "Core",
+        "young": 18,
+        "old": 18,
+        "d": 0,
+        "rule": "borenshult-outcomes-v1",
+        "evidence": "not_reported under main",
+        "lo_ma": {
+          "nonfinite": "nan"
+        },
+        "hi_ma": {
+          "nonfinite": "nan"
+        },
+        "rate_class": "",
+        "depth": 35.2,
+        "formation": "",
+        "transported": true
+      },
+      {
+        "unit_id": "BOR-34.45",
+        "source": "rubinstein2019;rubinstein2023",
+        "cluster_name": "Borenshult-1",
+        "cls_name": "Core",
+        "young": 18,
+        "old": 18,
+        "d": 0,
+        "rule": "borenshult-outcomes-v1",
+        "evidence": "not_reported under main",
+        "lo_ma": {
+          "nonfinite": "nan"
+        },
+        "hi_ma": {
+          "nonfinite": "nan"
+        },
+        "rate_class": "",
+        "depth": 34.45,
+        "formation": "",
+        "transported": true
+      },
+      {
+        "unit_id": "BOR-30.75",
+        "source": "rubinstein2019;rubinstein2023",
+        "cluster_name": "Borenshult-1",
+        "cls_name": "Core",
+        "young": 17,
+        "old": 17,
+        "d": 0,
+        "rule": "borenshult-outcomes-v1",
+        "evidence": "not_reported under main",
+        "lo_ma": {
+          "nonfinite": "nan"
+        },
+        "hi_ma": {
+          "nonfinite": "nan"
+        },
+        "rate_class": "",
+        "depth": 30.75,
+        "formation": "",
+        "transported": true
+      }
+    ],
+    "excluded": [
+      [
+        "BOR-48.2",
+        "unresolved E1 identification"
+      ],
+      [
+        "BOR-43.1",
+        "unresolved E1 identification"
+      ],
+      [
+        "BOR-41.9",
+        "unresolved E1 identification"
+      ],
+      [
+        "BOR-40.35",
+        "unresolved E1 identification"
+      ],
+      [
+        "BOR-40.2",
+        "unresolved E1 identification"
+      ],
+      [
+        "BOR-34",
+        "unresolved E1 identification"
+      ],
+      [
+        "BOR-33.05",
+        "unresolved E1 identification"
+      ]
+    ]
+  },
+  "specification": {
+    "reference_stages": 5,
+    "min_units_per_class": 5,
+    "domain_ma": [
+      0.0,
+      560.0
+    ],
+    "classes": [
+      "H0c",
+      "H0m",
+      "H0",
+      "H1"
+    ],
+    "h1_ceiling": 3.0,
+    "h0m_lag_ma": 10.0,
+    "alpha": 0.05,
+    "readouts": [
+      1.0,
+      0.1,
+      0.01
+    ],
+    "cluster_shape_k": 2.0,
+    "crit_shift": 0.0,
+    "age_scenario": "chart",
+    "nodes": 48,
+    "fa_rule": "oldest-possible"
+  },
+  "age_bases": [
+    358.86,
+    372.15,
+    382.31,
+    387.95,
+    393.47,
+    410.62,
+    413.02,
+    419.62,
+    422.7,
+    425.0,
+    426.7,
+    430.6,
+    432.9,
+    438.6,
+    440.5,
+    443.1,
+    445.2,
+    452.8,
+    458.2,
+    469.4,
+    471.3,
+    477.1,
+    486.85,
+    491.0,
+    494.2,
+    497.0,
+    500.5,
+    504.5,
+    506.5,
+    514.5,
+    521.0,
+    529.0,
+    538.8
+  ],
+  "fitted_reference_rates": [
+    0.7012119792400833
+  ],
+  "origin_step_ma": 0.5,
+  "qualification_classes": [
+    "H0m",
+    "H0",
+    "H1"
+  ],
+  "runtime_contract": {
+    "python": "3.12",
+    "numpy": "2.3.4",
+    "scipy": "1.16.3"
+  },
+  "derived_tolerance": {
+    "absolute": 1e-08,
+    "relative": 1e-08
+  },
+  "protocol": {
+    "target_passing": 1000,
+    "max_attempts": 20000,
+    "calibration_target": 0.955,
+    "root_seeds": {
+      "calibrate": 20261111,
+      "accept": 20261112,
+      "stage2": 20261113
+    },
+    "stage1_n": 1000,
+    "stage2_n": 1000,
+    "floor": 0.93,
+    "stage2_pass": 1886,
+    "first_rep": 0,
+    "criterion": "marginal false-claim frequency among screen-passing replicates; abstentions are non-errors"
+  },
+  "grid": [
+    {
+      "name": "Q1",
+      "history": "H0c",
+      "f": 1.0,
+      "t0": 470.0,
+      "kind": "acceptance",
+      "index": 0,
+      "quantities": [
+        "f_H0",
+        "f_H0m",
+        "f_H1",
+        "o_H0_0.01",
+        "o_H0_0.1",
+        "o_H0_1",
+        "o_H0m_0.01",
+        "o_H0m_0.1",
+        "o_H0m_1",
+        "w_0.01",
+        "w_0.1",
+        "w_1"
+      ]
+    },
+    {
+      "name": "Q2",
+      "history": "H0c",
+      "f": 0.3,
+      "t0": 470.0,
+      "kind": "acceptance",
+      "index": 1,
+      "quantities": [
+        "f_H0",
+        "f_H0m",
+        "f_H1",
+        "o_H0_0.01",
+        "o_H0_0.1",
+        "o_H0m_0.01",
+        "o_H0m_0.1",
+        "w_0.01",
+        "w_0.1"
+      ]
+    },
+    {
+      "name": "Q3",
+      "history": "H0c",
+      "f": 0.1,
+      "t0": 470.0,
+      "kind": "acceptance",
+      "index": 2,
+      "quantities": [
+        "f_H0",
+        "f_H0m",
+        "f_H1",
+        "o_H0_0.01",
+        "o_H0_0.1",
+        "o_H0m_0.01",
+        "o_H0m_0.1",
+        "w_0.01",
+        "w_0.1"
+      ]
+    },
+    {
+      "name": "Q4",
+      "history": "H0c",
+      "f": 1.0,
+      "t0": 459.1,
+      "kind": "acceptance",
+      "index": 3,
+      "quantities": [
+        "f_H0",
+        "f_H0m",
+        "f_H1",
+        "o_H0_0.01",
+        "o_H0_0.1",
+        "o_H0_1"
+      ]
+    },
+    {
+      "name": "Q5",
+      "history": "hide",
+      "f": 0.3,
+      "t0": 470.0,
+      "kind": "acceptance",
+      "index": 4,
+      "quantities": [
+        "f_H0",
+        "f_H1"
+      ]
+    },
+    {
+      "name": "Q6",
+      "history": "hide_h1",
+      "f": 0.3,
+      "t0": 470.0,
+      "pulse": 3.0,
+      "kind": "acceptance",
+      "index": 5,
+      "quantities": [
+        "f_H1"
+      ]
+    },
+    {
+      "name": "Q7",
+      "history": "ramp",
+      "t0": 470.0,
+      "kind": "acceptance",
+      "index": 6,
+      "quantities": [
+        "f_H0",
+        "f_H0m",
+        "f_H1",
+        "o_H0m_0.01",
+        "o_H0m_0.1"
+      ]
+    },
+    {
+      "name": "Q8",
+      "history": "window",
+      "f": 0.1,
+      "after": 1.0,
+      "t0": 470.0,
+      "kind": "acceptance",
+      "index": 7,
+      "quantities": [
+        "f_H0",
+        "f_H0m",
+        "f_H1",
+        "o_H0_0.01",
+        "o_H0_0.1",
+        "o_H0m_0.01",
+        "o_H0m_0.1",
+        "w_0.01",
+        "w_0.1"
+      ]
+    },
+    {
+      "name": "B1",
+      "history": "H0c",
+      "f_data": {
+        "class": "H0c",
+        "at": "domain"
+      },
+      "t0": 470.0,
+      "kind": "acceptance",
+      "index": 8,
+      "f": 0.6050040571134667,
+      "quantities": [
+        "f_H0",
+        "f_H0m",
+        "f_H1",
+        "o_H0_0.01",
+        "o_H0_0.1",
+        "o_H0m_0.01",
+        "o_H0m_0.1",
+        "w_0.01",
+        "w_0.1"
+      ]
+    },
+    {
+      "name": "B2",
+      "history": "H0c",
+      "f_data": {
+        "class": "H0",
+        "at": 469.4
+      },
+      "t0": 470.0,
+      "kind": "acceptance",
+      "index": 9,
+      "f": 0.6223371520161105,
+      "quantities": [
+        "f_H0",
+        "f_H0m",
+        "f_H1",
+        "o_H0_0.01",
+        "o_H0_0.1",
+        "o_H0m_0.01",
+        "o_H0m_0.1",
+        "w_0.01",
+        "w_0.1"
+      ]
+    },
+    {
+      "name": "B3",
+      "history": "H0c",
+      "f_data": {
+        "class": "H0",
+        "at": 459.1
+      },
+      "t0": 459.1,
+      "kind": "acceptance",
+      "index": 10,
+      "f": 0.6929485629011054,
+      "quantities": [
+        "f_H0",
+        "f_H0m",
+        "f_H1",
+        "o_H0_0.01",
+        "o_H0_0.1"
+      ]
+    },
+    {
+      "name": "B4",
+      "history": "window",
+      "f": 1.0,
+      "after": 0.0,
+      "t0": 462.6,
+      "kind": "acceptance",
+      "index": 11,
+      "quantities": [
+        "f_H0",
+        "f_H1",
+        "w_0.01",
+        "w_0.1",
+        "w_1"
+      ]
+    },
+    {
+      "name": "X1",
+      "history": "H0c",
+      "f": 0.3,
+      "t0": 470.0,
+      "rho_true_factor": 0.5,
+      "kind": "diagnostic",
+      "index": 12,
+      "quantities": [
+        "f_H0",
+        "f_H0m",
+        "f_H1",
+        "o_H0_0.01",
+        "o_H0_0.1",
+        "o_H0m_0.01",
+        "o_H0m_0.1",
+        "w_0.01",
+        "w_0.1"
+      ]
+    },
+    {
+      "name": "X2",
+      "history": "H0c",
+      "f": 0.3,
+      "t0": 470.0,
+      "k_true": 0.8,
+      "kind": "diagnostic",
+      "index": 13,
+      "quantities": [
+        "f_H0",
+        "f_H0m",
+        "f_H1",
+        "o_H0_0.01",
+        "o_H0_0.1",
+        "o_H0m_0.01",
+        "o_H0m_0.1",
+        "w_0.01",
+        "w_0.1"
+      ]
+    },
+    {
+      "name": "X3",
+      "history": "H0c",
+      "f": 0.3,
+      "t0": 470.0,
+      "reference_p": "lower-95",
+      "kind": "diagnostic",
+      "index": 14,
+      "quantities": [
+        "f_H0",
+        "f_H0m",
+        "f_H1",
+        "o_H0_0.01",
+        "o_H0_0.1",
+        "o_H0m_0.01",
+        "o_H0m_0.1",
+        "w_0.01",
+        "w_0.1"
+      ]
+    }
+  ]
+}

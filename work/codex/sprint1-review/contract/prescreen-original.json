@@ -1,0 +1,24 @@
+{
+  "cells": [
+    {
+      "cell": "T",
+      "kind": "acceptance",
+      "attempts": 1001,
+      "passes": 1000,
+      "pass_rate": 0.999000999000999,
+      "complete": true,
+      "errors": 0,
+      "errors_before_screen": 1,
+      "cover_f_H0": 1000,
+      "claims_f_H0": 1000,
+      "claimmiss_f_H0": 0,
+      "delta_f_H0": 0.0
+    }
+  ],
+  "complete": true,
+  "verdicts": {
+    "T:f_H0": "pass"
+  },
+  "borderline_cells": [],
+  "result": "pass"
+}

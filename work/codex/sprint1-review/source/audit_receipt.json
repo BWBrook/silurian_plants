@@ -1,0 +1,75 @@
+{
+  "baseline_commit": "f08afb4c9705e7b1e60c188f5691f998bf31881e",
+  "scope": "source/design review; statistical qualification separate",
+  "source_pdfs_rehashed": 5,
+  "source_hashes_all_match": true,
+  "libya_variants_reconstructed": 36,
+  "qb_variants_reconstructed": 4,
+  "disagreements": 0,
+  "qusaiba_columns_primary_checked": 37,
+  "qusaiba_columns_positive": 22,
+  "repository_writes": false,
+  "copyrighted_scratch_derivatives_excluded_from_delivery": true,
+  "outputs": [
+    {
+      "file": "source_design_review.md",
+      "sha256": "88701e148376f2faa321b67c2f6997e9f0dea6353b891e289fa81e7a4caf715a",
+      "bytes": 12747
+    },
+    {
+      "file": "reproduce.py",
+      "sha256": "5e9efdaff4c91b3a3eaefdfee80279d04be0ba1e3e508a69d9eccfbe7f9068e9",
+      "bytes": 8924
+    },
+    {
+      "file": "reconstruct_qusaiba.py",
+      "sha256": "7853221ead9d523f9c66d2045aa896b98f7a3a029339da3ae648bf91d60e87b2",
+      "bytes": 1874
+    },
+    {
+      "file": "primary_source_hashes.json",
+      "sha256": "aff1ca2c81a49e62eda45d7afecd720805487bbdcf2da1337b55e2d50a1d1d9e",
+      "bytes": 1630
+    },
+    {
+      "file": "summary.json",
+      "sha256": "3b4fd3b966a8759a98b614268b0869e832d4f3174aacd6b708bc55ac8f6a800c",
+      "bytes": 3773
+    },
+    {
+      "file": "libya_all_material_joins.csv",
+      "sha256": "275276b1e3237187b40ecd0e4d9a3488ad2627ba8a5ba3ca4fe398b6f550d5d8",
+      "bytes": 18836
+    },
+    {
+      "file": "all_libya_variant_checks.csv",
+      "sha256": "0dfed766d03a17681ab07fa6ecb469f09bd6855c315563f284eb3139ad93573f",
+      "bytes": 3425
+    },
+    {
+      "file": "primary_cutting_units.csv",
+      "sha256": "264206ec63984280f83f0b404e1121286d5447f73a8d24df5de5383dfb87c06e",
+      "bytes": 56851
+    },
+    {
+      "file": "qb_variant_checks.csv",
+      "sha256": "98a82d21ffa4ff13b5894bafffeebd77a693a5e118d9eb92b543458ca0dd3e46",
+      "bytes": 368
+    },
+    {
+      "file": "qusaiba_primary_reconstruction.csv",
+      "sha256": "6f617c9e13e154e067f448e5959fc5f912fa2b9daa8a66832c01aa5e3fc3f259",
+      "bytes": 1709
+    },
+    {
+      "file": "baseline_designs.py",
+      "sha256": "0fd2588f84b5dd0b3fabcd45a875de203f8b28f5320aeb6f9adf7148f4f44ca8",
+      "bytes": 12594
+    },
+    {
+      "file": "baseline_m2.toml",
+      "sha256": "c3f5314e4df00e01da2fd8bf052ade0a8e40540ee41494eb93b158512b5eb6bc",
+      "bytes": 11634
+    }
+  ]
+}

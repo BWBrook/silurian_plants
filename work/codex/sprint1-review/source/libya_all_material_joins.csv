@@ -1,0 +1,170 @@
+well,depth_ft,appendix_present,chart_present,appendix_type,chart_type,formation,target_report,marine_symbols,other_green_symbols,prose_productivity,e1_context
+A28i-NC186,4482.0,True,True,Core,CO,M. Shugran,column-absent,62,6,assemblage-productivity-only,Cr2-explicit-well-interval-absence-scope
+A28i-NC186,4492.0,True,True,Core,CO,M. Shugran,column-absent,58,7,assemblage-productivity-only,Cr2-explicit-well-interval-absence-scope
+A28i-NC186,4499.5,True,False,Core,,M. Shugran,,,,assemblage-productivity-only,Cr2-explicit-well-interval-absence-scope
+A28i-NC186,4500.0,False,True,,CO,,column-absent,53,6,,
+A28i-NC186,4501.0,True,True,Core,CO,M. Shugran,column-absent,64,6,assemblage-productivity-only,Cr2-explicit-well-interval-absence-scope
+A28i-NC186,4505.0,True,True,Core,CO,M. Shugran,column-absent,52,7,assemblage-productivity-only,Cr2-explicit-well-interval-absence-scope
+A28i-NC186,4508.0,True,True,Core,CO,M. Shugran,column-absent,65,5,assemblage-productivity-only,Cr2-explicit-well-interval-absence-scope
+A28i-NC186,4513.0,True,True,Core,CO,M. Shugran,column-absent,66,5,assemblage-productivity-only,Cr2-explicit-well-interval-absence-scope
+A28i-NC186,4517.0,True,True,Core,CO,M. Shugran,column-absent,61,4,assemblage-productivity-only,Cr2-explicit-well-interval-absence-scope
+A28i-NC186,4518.0,True,True,Core,CO,Hawaz,column-absent,2,8,assemblage-productivity-only,Cr1-listed-interval
+A28i-NC186,4519.0,True,True,Core,CO,Hawaz,column-absent,5,7,assemblage-productivity-only,Cr1-listed-interval
+A28i-NC186,4544.0,True,True,Core,CO,Hawaz,column-absent,4,11,assemblage-productivity-only,Cr1-listed-interval
+A28i-NC186,4557.5,True,False,Core,,Hawaz,,,,assemblage-productivity-only,Cr1-listed-interval
+A28i-NC186,4558.0,False,True,,CO,,column-absent,1,9,,
+A28i-NC186,4562.0,True,True,Core,CO,Hawaz,column-absent,2,9,assemblage-productivity-only,Cr1-listed-interval
+A28i-NC186,4570.0,True,True,Core,CO,Hawaz,column-absent,2,10,assemblage-productivity-only,Cr1-listed-interval
+A28i-NC186,4571.0,True,True,Core,CO,Hawaz,column-absent,2,13,assemblage-productivity-only,Cr1-listed-interval
+A28i-NC186,4604.0,True,True,Core,CO,Hawaz,column-absent,2,16,assemblage-productivity-only,Cr1-listed-interval
+A28i-NC186,4611.0,True,True,Core,CO,Hawaz,column-absent,12,8,assemblage-productivity-only,Cr1-listed-interval
+A28i-NC186,4633.0,True,True,Core,CO,Hawaz,column-absent,14,9,assemblage-productivity-only,Cr1-listed-interval
+A28i-NC186,4639.0,True,True,Core,CO,Hawaz,column-absent,13,8,assemblage-productivity-only,Cr1-listed-interval
+A28i-NC186,4641.0,True,True,Core,CO,Hawaz,column-absent,16,10,assemblage-productivity-only,Cr1-listed-interval
+A28i-NC186,4681.0,True,True,Core,CO,Hawaz,column-absent,15,8,assemblage-productivity-only,Cr1-listed-interval
+A28i-NC186,4706.0,True,True,Core,CO,Hawaz,column-absent,26,3,assemblage-productivity-only,Cr1-listed-interval
+A28i-NC186,4715.0,True,True,Core,CO,Hawaz,column-absent,12,6,assemblage-productivity-only,Cr1-listed-interval
+A28i-NC186,4723.0,True,True,Core,CO,Hawaz,column-absent,11,7,assemblage-productivity-only,Cr1-listed-interval
+B2-NC186,3700.0,True,True,Cutting,CU,Tanezzuft,mark-present,31,5,unresolved-per-sample,Cr4-listed-interval
+B2-NC186,3750.0,True,True,Cutting,CU,Tanezzuft,mark-present,28,6,unresolved-per-sample,Cr4-listed-interval
+B2-NC186,3800.0,True,True,Cutting,CU,Tanezzuft,mark-present,28,5,unresolved-per-sample,Cr4-listed-interval
+B2-NC186,3850.0,True,True,Cutting,CU,Tanezzuft,mark-present,27,5,unresolved-per-sample,Cr4-listed-interval
+B2-NC186,3900.0,True,True,Cutting,CU,Hot shale,mark-present,28,5,unresolved-per-sample,Cr4-listed-interval
+B2-NC186,3950.0,True,True,Cutting,CU,Hot shale,mark-present,9,1,assemblage-productivity-only,Cr3-listed-interval;Cr4-listed-interval
+B2-NC186,4100.0,True,True,Cutting,CO,Memouniat,no-mark,0,0,explicit-barren-report-within-named-scope,
+B2-NC186,4200.0,True,True,Cutting,CO,Memouniat,no-mark,0,0,explicit-barren-report-within-named-scope,
+B2-NC186,4300.0,True,True,Cutting,CU,Memouniat,no-mark,0,0,explicit-barren-report-within-named-scope,
+B2-NC186,4410.0,True,True,Cutting,CU,Memouniat,no-mark,0,0,explicit-barren-report-within-named-scope,
+B2-NC186,4520.0,True,True,Cutting,CU,Memouniat,no-mark,0,0,explicit-barren-report-within-named-scope,
+B2-NC186,4535.0,True,True,Cutting,CU,Memouniat,no-mark,0,0,explicit-barren-report-within-named-scope,
+B2-NC186,4565.0,True,True,Cutting,CU,Memouniat,no-mark,0,0,explicit-barren-report-within-named-scope,
+B2-NC186,4640.0,True,True,Cutting,CU,Memouniat,no-mark,0,0,explicit-barren-report-within-named-scope,
+B2-NC186,4690.0,True,True,Cutting,CU,Memouniat,no-mark,0,0,explicit-barren-report-within-named-scope,
+B2-NC186,4800.0,True,True,Cutting,CU,Ash Shabiyat,no-mark,0,0,explicit-barren-report-within-named-scope,
+B2-NC186,4900.0,True,True,Cutting,CU,Ash Shabiyat,no-mark,0,0,explicit-barren-report-within-named-scope,
+D1-200,3850.0,True,True,Cutting,CU,Taezzuft,mark-present,33,10,assemblage-productivity-only,Cr4-listed-interval
+D1-200,3900.0,True,True,Cutting,CU,Taezzuft,mark-present,33,10,assemblage-productivity-only,Cr4-listed-interval
+D1-200,3970.0,True,True,Cutting,CU,Taezzuft,mark-present,28,8,assemblage-productivity-only,Cr4-listed-interval
+D1-200,4050.0,True,True,unspecified,CU,Taezzuft,mark-present,35,6,assemblage-productivity-only,Cr4-listed-interval
+D1-200,4150.0,True,True,Cutting,CU,Taezzuft,mark-present,47,5,assemblage-productivity-only,Cr4-listed-interval
+D1-200,4200.0,True,True,unspecified,CU,Taezzuft,mark-present,40,6,assemblage-productivity-only,Cr4-listed-interval
+D1-200,4250.0,True,True,Cutting,CU,Taezzuft,no-mark,38,6,assemblage-productivity-only,Cr4-listed-interval
+D1-200,4300.0,True,True,Cutting,CU,Taezzuft,mark-present,39,7,assemblage-productivity-only,Cr4-listed-interval
+D1-200,4340.0,True,True,Cutting,CU,Taezzuft,no-mark,37,6,assemblage-productivity-only,Cr4-listed-interval
+D1-200,4400.0,True,True,Cutting,CU,Taezzuft,mark-present,32,6,assemblage-productivity-only,Cr4-listed-interval
+D1-200,4450.0,True,True,Cutting,CU,Taezzuft,mark-present,32,7,assemblage-productivity-only,Cr4-listed-interval
+D1-200,4500.0,True,True,Cutting,CU,Taezzuft,mark-present,31,8,assemblage-productivity-only,Cr4-listed-interval
+D1-200,4550.0,True,True,Cutting,CU,Taezzuft,no-mark,34,6,assemblage-productivity-only,Cr4-listed-interval
+D1-200,4600.0,True,True,Cutting,CU,Taezzuft,mark-present,30,5,assemblage-productivity-only,Cr4-listed-interval
+D1-200,4650.0,True,True,Cutting,CU,Taezzuft,mark-present,34,6,assemblage-productivity-only,Cr4-listed-interval
+D1-200,4700.0,True,True,Cutting,CU,Taezzuft,mark-present,31,4,assemblage-productivity-only,Cr4-listed-interval
+D1-200,4778.0,True,True,Core,CO,M. Shugran,no-mark,55,7,assemblage-productivity-only,Cr2-explicit-well-interval-absence-scope
+D1-200,4788.0,True,True,Core,CO,M. Shugran,no-mark,46,6,assemblage-productivity-only,Cr2-explicit-well-interval-absence-scope
+D1-200,4794.0,True,True,Core,CO,M. Shugran,no-mark,48,9,assemblage-productivity-only,Cr2-explicit-well-interval-absence-scope
+D1-200,4810.0,True,True,Core,CO,M. Shugran,no-mark,55,9,assemblage-productivity-only,Cr2-explicit-well-interval-absence-scope
+D1-200,4825.0,True,True,Core,CO,M. Shugran,no-mark,42,6,assemblage-productivity-only,Cr2-explicit-well-interval-absence-scope
+D1-200,4831.5,True,True,Core,CO,M. Shugran,no-mark,45,8,assemblage-productivity-only,Cr2-explicit-well-interval-absence-scope
+D1-200,4846.0,True,True,Core,CO,M. Shugran,no-mark,44,7,assemblage-productivity-only,Cr2-explicit-well-interval-absence-scope
+D1-200,4854.0,True,True,Core,CO,M. Shugran,no-mark,47,7,assemblage-productivity-only,Cr2-explicit-well-interval-absence-scope
+D1-200,4864.0,True,True,Core,CO,M. Shugran,no-mark,40,4,assemblage-productivity-only,Cr2-explicit-well-interval-absence-scope
+D1-200,4878.0,True,True,Core,CO,M. Shugran,no-mark,42,6,assemblage-productivity-only,Cr2-explicit-well-interval-absence-scope
+D1-200,4900.0,True,True,Cutting,CU,M. Shugran,no-mark,44,4,assemblage-productivity-only,Cr2-explicit-well-interval-absence-scope
+D1-200,4950.0,True,True,Cutting,CU,M. Shugran,no-mark,40,5,assemblage-productivity-only,Cr2-explicit-well-interval-absence-scope
+D1-200,4960.0,True,True,Cutting,CU,M. Shugran,no-mark,33,5,assemblage-productivity-only,Cr2-explicit-well-interval-absence-scope
+D1-200,4970.0,True,True,Cutting,CU,M. Shugran,no-mark,34,4,assemblage-productivity-only,Cr2-explicit-well-interval-absence-scope
+D1-200,5000.0,True,True,Cutting,CU,M. Shugran,no-mark,42,5,assemblage-productivity-only,Cr2-explicit-well-interval-absence-scope
+D1-200,5130.0,True,True,Cutting,CU,M. Shugran,no-mark,40,5,assemblage-productivity-only,Cr2-explicit-well-interval-absence-scope
+D1-200,5150.0,True,False,Cutting,,Hawaz,,,,assemblage-productivity-only,Cr1-listed-interval
+D1-200,5250.0,True,False,Cutting,,Hawaz,,,,assemblage-productivity-only,Cr1-listed-interval
+D1-200,5350.0,True,False,unspecified,,Hawaz,,,,assemblage-productivity-only,Cr1-listed-interval
+D1-200,5450.0,True,False,unspecified,,Hawaz,,,,assemblage-productivity-only,Cr1-listed-interval
+D1-200,5550.0,True,True,Cutting,CU,Hawaz,no-mark,9,7,assemblage-productivity-only,Cr1-listed-interval
+D1-200,5600.0,True,True,Cutting,CU,Hawaz,no-mark,7,7,assemblage-productivity-only,Cr1-listed-interval
+D1-200,5700.0,True,True,Cutting,CU,Hawaz,no-mark,7,9,assemblage-productivity-only,Cr1-listed-interval
+E1-NC174,6350.0,True,True,Cutting,CU,Taezzuft,mark-present,27,8,assemblage-productivity-only,Cr4-listed-interval
+E1-NC174,6500.0,True,True,Cutting,CU,Taezzuft,mark-present,30,11,assemblage-productivity-only,Cr4-listed-interval
+E1-NC174,6690.0,True,True,Cutting,CU,Taezzuft,mark-present,28,10,assemblage-productivity-only,Cr4-listed-interval
+E1-NC174,6750.0,False,True,,CU,,mark-present,31,8,,
+E1-NC174,6800.0,True,True,Cutting,CU,Taezzuft,mark-present,35,5,assemblage-productivity-only,Cr4-listed-interval
+E1-NC174,6850.0,True,True,Cutting,CU,Taezzuft,mark-present,31,6,assemblage-productivity-only,Cr4-listed-interval
+E1-NC174,6950.0,True,True,Cutting,CU,Taezzuft,mark-present,33,6,assemblage-productivity-only,Cr4-listed-interval
+E1-NC174,7000.0,True,True,Cutting,CU,Taezzuft,mark-present,28,6,assemblage-productivity-only,Cr4-listed-interval
+E1-NC174,7050.0,True,True,Cutting,CU,Taezzuft,mark-present,31,8,assemblage-productivity-only,Cr4-listed-interval
+E1-NC174,7110.0,True,True,Cutting,CU,Taezzuft,mark-present,28,5,assemblage-productivity-only,Cr4-listed-interval
+E1-NC174,7150.0,True,False,Cutting,,Taezzuft,,,,assemblage-productivity-only,Cr4-listed-interval
+E1-NC174,7200.0,True,False,Cutting,,Taezzuft,,,,assemblage-productivity-only,Cr4-listed-interval
+E1-NC174,7246.0,True,True,Core,CO,Taezzuft,no-mark,19,2,assemblage-productivity-only,Cr3-listed-interval;Cr4-listed-interval
+E1-NC174,7255.0,True,True,Core,CO,Taezzuft,no-mark,24,1,assemblage-productivity-only,Cr3-listed-interval
+E1-NC174,7267.0,True,True,Core,CO,Taezzuft,no-mark,20,0,assemblage-productivity-only,Cr3-listed-interval
+E1-NC174,7270.0,True,True,Core,CO,Taezzuft,no-mark,31,1,assemblage-productivity-only,Cr3-listed-interval
+E1-NC174,7287.0,True,True,Core,CO,Taezzuft,no-mark,43,4,sample-positive-from-E1-prose,Cr3-listed-interval
+H2-NC186,4160.0,True,True,Cutting,CU,Tanezzuft,mark-present,27,5,assemblage-productivity-only,Cr4-listed-interval
+H2-NC186,4200.0,True,True,Cutting,CU,Tanezzuft,mark-present,34,4,assemblage-productivity-only,Cr4-listed-interval
+H2-NC186,4250.0,True,True,Cutting,CU,Tanezzuft,mark-present,36,6,assemblage-productivity-only,Cr4-listed-interval
+H2-NC186,4300.0,True,True,Cutting,CU,Tanezzuft,mark-present,34,5,assemblage-productivity-only,Cr4-listed-interval
+H2-NC186,4350.0,True,True,Cutting,CU,Tanezzuft,mark-present,35,7,assemblage-productivity-only,Cr4-listed-interval
+H2-NC186,4400.0,True,True,Cutting,CU,Tanezzuft,mark-present,31,6,assemblage-productivity-only,Cr4-listed-interval
+H2-NC186,4450.0,True,True,Cutting,CU,Tanezzuft,mark-present,36,5,assemblage-productivity-only,Cr4-listed-interval
+H2-NC186,4500.0,True,True,Cutting,CU,Tanezzuft,no-mark,35,8,assemblage-productivity-only,Cr4-listed-interval
+H2-NC186,4550.0,True,True,Cutting,CU,Bir Tlacsin,no-mark,43,5,unresolved-per-sample,Cr2-explicit-well-interval-absence-scope
+H2-NC186,4590.0,True,True,Cutting,CU,Bir Tlacsin,no-mark,38,6,unresolved-per-sample,Cr2-explicit-well-interval-absence-scope
+H2-NC186,4606.0,True,True,Core,CO,Hawaz,no-mark,3,9,assemblage-productivity-only,Cr1-listed-interval
+H2-NC186,4637.0,True,True,Core,CO,Hawaz,no-mark,3,10,assemblage-productivity-only,Cr1-listed-interval
+H2-NC186,4644.0,True,True,Core,CO,Hawaz,no-mark,2,9,assemblage-productivity-only,Cr1-listed-interval
+H2-NC186,4665.0,True,True,Core,CO,Hawaz,no-mark,2,11,assemblage-productivity-only,Cr1-listed-interval
+H2-NC186,4672.0,True,True,Core,CO,Hawaz,no-mark,2,8,assemblage-productivity-only,Cr1-listed-interval
+H2-NC186,4682.0,True,True,Core,CO,Hawaz,no-mark,2,9,assemblage-productivity-only,Cr1-listed-interval
+H2-NC186,4687.0,True,True,Core,CO,Hawaz,no-mark,2,7,assemblage-productivity-only,Cr1-listed-interval
+H2-NC186,4742.0,True,True,Core,CO,Hawaz,no-mark,5,11,assemblage-productivity-only,Cr1-listed-interval
+H2-NC186,4815.0,True,True,Cutting,CU,Hawaz,no-mark,3,10,assemblage-productivity-only,Cr1-listed-interval
+H2-NC186,4833.0,True,True,Core,CO,Hawaz,no-mark,4,13,assemblage-productivity-only,Cr1-listed-interval
+H2-NC186,4842.0,True,True,Core,CO,Hawaz,no-mark,6,13,assemblage-productivity-only,Cr1-listed-interval
+H2-NC186,4930.0,True,True,Cutting,CU,Hawaz,no-mark,6,6,assemblage-productivity-only,Cr1-listed-interval
+H2-NC186,4950.0,True,True,unspecified,CU,Hawaz,no-mark,11,7,assemblage-productivity-only,Cr1-listed-interval
+H2-NC186,4990.0,True,True,unspecified,CU,Hawaz,no-mark,10,9,assemblage-productivity-only,Cr1-listed-interval
+H2-NC186,5040.0,True,True,Cutting,CU,Hawaz,no-mark,10,8,assemblage-productivity-only,Cr1-listed-interval
+H2-NC186,5100.0,True,True,Cutting,CU,Hawaz,no-mark,6,8,assemblage-productivity-only,Cr1-listed-interval
+H2-NC186,5150.0,False,True,,CU,,no-mark,9,10,,
+H2-NC186,5200.0,True,True,Cutting,CU,Hawaz,no-mark,9,9,assemblage-productivity-only,Cr1-listed-interval
+H2-NC186,5250.0,True,False,Cutting,,Ash Shbiyat,,,,explicit-barren-report-within-named-scope,
+H2-NC186,5300.0,True,False,Cutting,,Ash Shbiyat,,,,explicit-barren-report-within-named-scope,
+I3-NC186,3700.0,True,True,Cutting,CU,Tanezzuft,mark-present,35,5,assemblage-productivity-only,Cr4-listed-interval
+I3-NC186,3750.0,True,True,Cutting,CU,Tanezzuft,mark-present,37,5,assemblage-productivity-only,Cr4-listed-interval
+I3-NC186,3800.0,True,True,Cutting,CU,Tanezzuft,mark-present,45,7,assemblage-productivity-only,Cr4-listed-interval
+I3-NC186,3890.0,True,True,Cutting,CU,Tanezzuft,mark-present,50,4,assemblage-productivity-only,Cr4-listed-interval
+I3-NC186,3900.0,True,True,Cutting,CU,Tanezzuft,mark-present,40,5,assemblage-productivity-only,Cr4-listed-interval
+I3-NC186,3950.0,True,True,Cutting,CU,Tanezzuft,no-mark,52,4,assemblage-productivity-only,Cr4-listed-interval
+I3-NC186,4000.0,True,True,Cutting,CU,Tanezzuft,no-mark,40,7,assemblage-productivity-only,Cr4-listed-interval
+I3-NC186,4050.0,True,True,Cutting,CU,Tanezzuft,no-mark,41,5,assemblage-productivity-only,Cr4-listed-interval
+I3-NC186,4100.0,True,True,Cutting,CU,Tanezzuft,mark-present,43,5,assemblage-productivity-only,Cr4-listed-interval
+I3-NC186,4180.0,True,True,Cutting,CU,Tanezzuft,mark-present,50,4,assemblage-productivity-only,Cr4-listed-interval
+I3-NC186,4200.0,True,True,Cutting,CU,Tanezzuft,mark-present,49,5,sample-positive-from-E1-plate,Cr4-listed-interval
+I3-NC186,4250.0,True,True,Cutting,CU,Tanezzuft,mark-present,49,4,assemblage-productivity-only,Cr4-listed-interval
+I3-NC186,4300.0,True,True,Cutting,CU,Tanezzuft,mark-present,40,5,assemblage-productivity-only,Cr4-listed-interval
+I3-NC186,4350.0,True,True,Cutting,CU,Tanezzuft,no-mark,40,3,assemblage-productivity-only,Cr4-listed-interval
+I3-NC186,4400.0,True,True,Cutting,CU,Tanezzuft,mark-present,37,3,assemblage-productivity-only,Cr4-listed-interval
+I3-NC186,4450.0,True,True,Cutting,CU,Tanezzuft,mark-present,42,4,assemblage-productivity-only,Cr4-listed-interval
+I3-NC186,4500.0,True,True,Cutting,CU,Tanezzuft,mark-present,42,4,assemblage-productivity-only,Cr4-listed-interval
+I3-NC186,4550.0,True,True,Cutting,CU,Tanezzuft,mark-present,37,4,assemblage-productivity-only,Cr4-listed-interval
+I3-NC186,4600.0,True,True,Cutting,CU,Hot shale,mark-present,24,1,assemblage-productivity-only,Cr3-listed-interval;Cr4-listed-interval
+I3-NC186,4640.0,True,True,Cutting,CU,Hot shale,mark-present,20,1,assemblage-productivity-only,Cr3-listed-interval
+I3-NC186,4680.0,True,True,Cutting,CU,Bir Tlacsin,no-mark,33,5,assemblage-productivity-only,Cr2-explicit-well-interval-absence-scope
+I3-NC186,4700.0,True,True,Cutting,CU,Bir Tlacsin,no-mark,37,5,assemblage-productivity-only,Cr2-explicit-well-interval-absence-scope
+I3-NC186,4740.0,True,True,Cutting,CU,Bir Tlacsin,no-mark,33,3,assemblage-productivity-only,Cr2-explicit-well-interval-absence-scope
+I3-NC186,4782.0,True,True,Core,CO,Memouniat,no-mark,30,9,assemblage-productivity-only,Cr2-explicit-well-interval-absence-scope
+I3-NC186,4787.0,True,True,Core,CO,Memouniat,no-mark,37,7,assemblage-productivity-only,Cr2-explicit-well-interval-absence-scope
+I3-NC186,4796.0,True,True,Core,CO,Memouniat,no-mark,40,5,assemblage-productivity-only,Cr2-explicit-well-interval-absence-scope
+I3-NC186,4799.0,True,True,Core,CO,Memouniat,no-mark,41,5,assemblage-productivity-only,Cr2-explicit-well-interval-absence-scope
+I3-NC186,4810.0,True,True,Cutting,CU,M. Shugran,no-mark,40,7,assemblage-productivity-only,
+I3-NC186,4850.0,True,True,Cutting,CU,M. Shugran,no-mark,41,6,assemblage-productivity-only,
+I3-NC186,4900.0,True,True,Cutting,CU,M. Shugran,no-mark,42,7,assemblage-productivity-only,
+I3-NC186,4975.0,True,True,Cutting,CU,M. Shugran,no-mark,38,6,assemblage-productivity-only,
+I3-NC186,5040.0,True,True,Cutting,CU,M. Shugran,no-mark,41,6,assemblage-productivity-only,
+I3-NC186,5075.0,True,True,Cutting,CU,M. Shugran,no-mark,32,6,assemblage-productivity-only,
+I3-NC186,5200.0,True,True,Cutting,CU,M. Shugran,no-mark,35,5,assemblage-productivity-only,
+I3-NC186,5220.0,False,True,,CU,,no-mark,34,5,,
+I3-NC186,5230.0,True,False,Cutting,,M. Shugran,,,,assemblage-productivity-only,
+I3-NC186,5250.0,True,True,Cutting,CU,Ash Shabiyat,no-mark,3,0,source-conflict-or-mixed-interval,
+I3-NC186,5320.0,True,True,Cutting,CU,Ash Shabiyat,no-mark,3,0,source-conflict-or-mixed-interval,
+I3-NC186,5340.0,True,True,Cutting,CU,Ash Shabiyat,no-mark,3,0,source-conflict-or-mixed-interval,
+I3-NC186,5400.0,True,True,Cutting,CU,Ash Shabiyat,no-mark,0,0,explicit-barren-report-within-named-scope,

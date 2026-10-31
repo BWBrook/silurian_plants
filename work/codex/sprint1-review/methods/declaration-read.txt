@@ -1,0 +1,198 @@
+# M2 real-design declarations, sprint 1 (docs/sprints-2026-11.md, v2).
+# Frozen before any numerical screen of these designs. A change makes a new file with a new id.
+# Rules named here are implemented in models/f3/designs.py (RULES); generated binary rows go to
+# models/f3/out/m2_units.csv with a link to each source row, the reading and the rule version.
+
+[freeze]
+id = "m2-designs-v1"
+date = "2026-10-31"
+author = "Claude Opus 5.5 (claude-opus-5-5)"
+status = "frozen-before-screen"
+# Outcomes already known when these designs were declared (prospective after source inspection, not
+# outcome-blind): every Libyan chart target cell (Codex, libya_chart_reports.csv), the 7287 ft prose
+# report, the Borenshult and Qusaiba inventories, and the Borenshult homogeneous screen (Oct 31).
+# No engine statistic, f* or origin set had been computed for any design below.
+known_outcomes = "Libya chart marks and blanks; 7287 ft prose positive; Qusaiba 22/37 marked; Borenshult main 0 detections; Borenshult homogeneous screen"
+
+[common]
+maximum = "M2"
+event = "E1"
+max_ma = 459.1
+fa_rule = "base-of-oldest-possible-detection-stage"   # tau = base of the oldest stage any detected unit can occupy
+reference_stages = 5
+min_ref_units = [5, 10]          # 5 primary; 10 (the synthetic-study default) reported for every variant
+classes = ["H0c", "H0m", "H0", "H1"]
+h1_ceiling = 3.0
+h0m_lag_ma = 10.0
+alpha = 0.05
+readouts = [1.0, 0.1, 0.01]
+window_start_ma = 459.1          # window read-out: "a >= f_min on (459.1, T]", any path in [0, 1] after 459.1 (H0)
+origin_step_ma = 0.5
+domain_ma = 560.0
+rho = [1.0, 0.5, 0.25, 0.1]      # transport ratio: older-unit rate / reference rate at equal intensity
+nodes = 48
+
+[screen]
+# Applied identically to the data and to every simulated replicate. Unshifted critical value.
+# S0: a first appearance exists under fa_rule; a class with fewer than min_ref_units reference units is
+#     dropped (engine); at least one older unit of a calibrated class remains.
+# S1: at T_far (the domain edge, every older unit exposed) the statistic for the constant history
+#     a = 1 exceeds count_crit(n_older_detections): the design could exclude reference-level intensity.
+rule = "S0 and S1 at f = 1, unshifted critical value"
+
+# --- Libya, Abuhmida (2013), rule libya-chart-v1 --------------------------------------------------
+# Material trial: an appendix entry (declared inventory) with an exact chart row. Appendix-only and
+# chart-only labels are not trials. Eligibility: >= 1 marine-group symbol in the chart row (non-target
+# recovery, reporting-rule.md item 4); rows in explicit barren scopes and the I3 Ash Shabiyat rows whose
+# recovery the source calls possibly caved are excluded. E1: target mark = 1, blank target cell = 0 (the
+# green "Cryptospores/Spores" group's only trilete column; the thesis systematics, printed pp. 327-328,
+# describe A. dilutus as its only true trilete). No E1 dispute is recorded for these marks, so main,
+# inclusive and outlier coincide. Class: appendix type (Cutting/Core). Cluster: well.
+# Ages (thesis abstract, printed pp. iv-v; zones from libya_prose_support.csv):
+#   Cr4 / middle-upper Tanezzuft: Rhuddanian-Telychian; Cr3 / lower Tanezzuft and hot shale: Rhuddanian
+#   (rows listed in both Cr3 and Cr4: Rhuddanian-Telychian); Bir Tlacsin: Hirnantian; Melez Shugran,
+#   Memouniat (pre-glacial) and A28i 4482-4517: Katian-Hirnantian; Hawaz (Cr1): Darriwilian.
+[libya]
+rule = "libya-chart-v1"
+material_type = ["chart-code", "appendix-only"]   # unspecified appendix type: chart CU/CO code, or excluded
+allocation = ["stage", "pre459"]                  # Hawaz: whole Darriwilian, or [459.1, 469.4] Ma
+a28i = ["column-absent-zero", "column-absent-excluded"]   # A28i chart has no A. dilutus column
+e1_7287 = ["prose-detected", "unresolved"]        # 7287 ft core: prose specimen vs blank chart cell
+
+[[design]]
+id = "LY-H2-CU"
+label = "H2 within well, cuttings"
+wells = ["H2-NC186"]
+classes = ["Cutting"]
+cluster_k = [inf]                # one cluster: a well effect is common to reference and older units
+primary = { material_type = "chart-code", allocation = "stage", cluster_k = inf, min_ref_units = 5 }
+
+[[design]]
+id = "LY-D1-CU"
+label = "D1 within well, cuttings"
+wells = ["D1-200"]
+classes = ["Cutting"]
+cluster_k = [inf]
+primary = { material_type = "chart-code", allocation = "stage", cluster_k = inf, min_ref_units = 5 }
+
+[[design]]
+id = "LY-I3-CU"
+label = "I3 within well, cuttings"
+wells = ["I3-NC186"]
+classes = ["Cutting"]
+cluster_k = [inf]
+primary = { material_type = "chart-code", allocation = "stage", cluster_k = inf, min_ref_units = 5 }
+
+[[design]]
+id = "LY-MZ-CU"
+label = "Murzuq cuttings across wells"
+wells = ["B2-NC186", "D1-200", "E1-NC174", "H2-NC186", "I3-NC186"]
+classes = ["Cutting"]
+cluster_k = [2.0, inf]
+primary = { material_type = "chart-code", allocation = "stage", cluster_k = 2.0, min_ref_units = 5 }
+
+[[design]]
+id = "LY-XW-CO"
+label = "Libya cores across wells"
+wells = ["A28i-NC186", "D1-200", "E1-NC174", "H2-NC186", "I3-NC186"]
+classes = ["Core"]
+cluster_k = [2.0, inf]
+primary = { material_type = "chart-code", allocation = "stage", cluster_k = 2.0, min_ref_units = 5, a28i = "column-absent-zero", e1_7287 = "prose-detected" }
+
+[[design]]
+id = "LY-H2-CUCO"
+label = "H2 cuttings plus cores at the cutting rate times rho (transport scenario, screen only)"
+wells = ["H2-NC186"]
+classes = ["Cutting", "Core"]
+core_as = "Cutting"              # cores take the cutting class rate times rho; no core reference exists in H2
+cluster_k = [inf]
+qualify = false
+
+# --- Qusaiba-1 reference with Borenshult-1 older units, cross-region transport -------------------
+# Qusaiba: the 37 Wellman et al. (2015) Table 2 depths; a trilete taxon mark = 1, unmarked = 0 (complete
+# spore table); Quwarah Member: Katian-Hirnantian (551.0: Katian); Sarah Formation: Hirnantian. All are
+# accepted under main (the Katian Saudi triletes are main-reading E1, reading_assignments.csv). Borenshult:
+# outcomes.csv under the named reading; explicit_non_detection and not_reported (full-category reporting
+# documented) = 0; unresolved excluded or 0 (bor_unresolved); detected = 1. Ages: borenshult_ages.csv
+# reported_stage. Class: core, Borenshult at the Qusaiba rate times rho. Clusters: the two cores.
+[[design]]
+id = "QB-CO"
+label = "Qusaiba reference, Borenshult older (cross-region)"
+reading = ["main", "inclusive"]
+bor_unresolved = ["excluded", "zero"]
+cluster_k = [2.0, inf]
+primary = { reading = "main", bor_unresolved = "excluded", cluster_k = 2.0, min_ref_units = 5 }
+
+[[design]]
+id = "BOR"
+label = "Borenshult alone: historical scoped screen (docs/audits/2026-10-31-borenshult-reading-and-screen.md)"
+qualify = false
+recompute = false
+
+# --- conditional qualification (frozen with the designs) ------------------------------------------
+# For each design's primary variant at each rho where its data pass the screen. Truth: the variant's
+# fitted reference rate(s), the declared rho, the declared k (true well effects Gamma(k, k)), true ages
+# ordered by depth within each well and formation (sorted uniforms in the unit's range), tau0 = the data's
+# tau. The estimator assumes independent ages. Each cell runs until 1,000 replicates pass the screen,
+# capped at 20,000 attempts; calibration and acceptance on separate root seeds; acceptance by the
+# two-stage rule of validate.py (floor 0.93, stage 2 at 1,886 of 2,000 pooled).
+[qualification]
+target_passing = 1000
+max_attempts = 20000
+calibration_target = 0.955
+root_seeds = { calibrate = 20261101, accept = 20261102, stage2 = 20261103 }
+cells = [
+  { name = "Q1", history = "H0c", f = 1.0, t0 = 470.0 },
+  { name = "Q2", history = "H0c", f = 0.3, t0 = 470.0 },
+  { name = "Q3", history = "H0c", f = 0.1, t0 = 470.0 },
+  { name = "Q4", history = "H0c", f = 1.0, t0 = 459.1 },
+  { name = "Q5", history = "hide", f = 0.3, t0 = 470.0 },
+  { name = "Q6", history = "hide_h1", f = 0.3, t0 = 470.0, pulse = 3.0 },
+  { name = "Q7", history = "ramp", t0 = 470.0 },
+  { name = "Q8", history = "window", f = 0.1, t0 = 470.0 },
+]
+diagnostics = [
+  { name = "X1", history = "H0c", f = 0.3, t0 = 470.0, rho_true_factor = 0.5 },
+  { name = "X2", history = "H0c", f = 0.3, t0 = 470.0, k_true = 0.8 },
+]
+# Acceptance quantities, per cell, for the classes containing the truth (H0 and H1 always):
+#   f*_K(t0) delivered coverage; origin-set coverage of t0 (H0c, H0m, H0) at each applicable f_min;
+#   window read-out coverage (H0, start 459.1) at each applicable f_min. X cells are diagnostic.
+
+# --- amendment 1 (2026-10-31, Claude), after the first screen and before any qualification run -----
+# Defect: the frozen screen is computed on the full outcomes. Under the first-appearance rule a detection
+# in the oldest older stage moves tau past every older unit, so S0 fails; passing therefore implies that
+# those units are empty. Conditioning coverage on passing would condition away the very outcomes the
+# bound uses: coverage is then unattainable for any truth with appreciable older intensity, however good
+# the estimator (H2, truth f = 0.3: about 1-2% of replicates pass, all with an empty Hawaz).
+# Repair: S0 and S1 are evaluated on the design and the reference outcomes, with the outcomes of the
+# declared transported (older) units set to 0: the frame's potential to exclude f = 1, not its result.
+# Conditioning on it addresses the selection the rule was adopted for (frames whose reference rate
+# happens to be high). The analysis itself still uses every outcome and still finds its own first
+# appearance; a replicate whose first appearance moves past t0 makes no claim there and covers.
+# Effect on the data: none for any design whose older outcomes are all 0 (every Libyan design; QB under
+# main). QB under inclusive changes. Diagnostic X3 is added: the true reference detection probability
+# at its one-sided 95% lower Clopper-Pearson limit, to measure the selection on a high fitted rate.
+[amendment_1]
+screen = "S0 and S1 on the design with transported-unit outcomes set to 0, unshifted critical value"
+diagnostics_added = [{ name = "X3", history = "H0c", f = 0.3, t0 = 470.0, reference_p = "lower-95" }]
+
+# --- amendment 2 (2026-10-31, Claude), after the independent review and before the final qualification -
+# Finding (Claude Sonnet 5.5 review): under the first-appearance rule a truth with appreciable older
+# intensity makes older units detect, tau moves past them and the analysis abstains; abstentions count as
+# covering, so cells Q1-Q3 and Q7 were almost entirely abstentions (H2, Q2: 2961 of 2997) and the
+# acceptance had little power. Coverage of a claim given that it is made cannot be the criterion: claims
+# are made only when the older units are empty. The criterion is stated as what it is, the false-claim
+# rate: among screen-passing replicates, P(a reported bound, origin set or window read-out excludes the
+# truth) <= 0.05, abstentions covering. Repairs:
+#   - boundary cells B1 and B2, constant truth from 470 Ma at the design's own reported f*_H0c (all
+#     exposure) and f*_H0 (to 469.4) at shift 0: there claims are frequent and a miscalibration shows;
+#   - every quantity reports its non-trivial count (claims made) and the misses among them;
+#   - an analysis without a calibrated first appearance after the screen passed is an abstention, not
+#     an error.
+[amendment_2]
+criterion = "false-claim rate among screen-passing replicates, abstentions covering; non-trivial n and misses reported"
+cells_added = [
+  { name = "B1", history = "H0c", f_data = "fstar_H0c_far", t0 = 470.0 },
+  { name = "B2", history = "H0c", f_data = "fstar_H0_469.4", t0 = 470.0 },
+]
