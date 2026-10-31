@@ -1,0 +1,184 @@
+{
+  "raster_checks": 134,
+  "raster_agree": 134,
+  "raster_mark_counts": {
+    "mark-present": 52,
+    "no-mark": 82
+  },
+  "target_headers": [
+    {
+      "well": "A28i-NC186",
+      "target_header_count_upper": 0,
+      "dilutus_tokens_upper": 0
+    },
+    {
+      "well": "B2-NC186",
+      "target_header_count_upper": 1,
+      "dilutus_tokens_upper": 1
+    },
+    {
+      "well": "D1-200",
+      "target_header_count_upper": 1,
+      "dilutus_tokens_upper": 1
+    },
+    {
+      "well": "E1-NC174",
+      "target_header_count_upper": 1,
+      "dilutus_tokens_upper": 1
+    },
+    {
+      "well": "H2-NC186",
+      "target_header_count_upper": 1,
+      "dilutus_tokens_upper": 1
+    },
+    {
+      "well": "I3-NC186",
+      "target_header_count_upper": 1,
+      "dilutus_tokens_upper": 1
+    }
+  ],
+  "hashes_match": {
+    "source": true,
+    "script": true,
+    "libya_appendix1.csv": true,
+    "libya_enclosures.csv": true,
+    "libya_chart_reports.csv": true
+  },
+  "chart_rows": 158,
+  "unique_chart_keys": 158,
+  "exact_appendix_keys": 153,
+  "appendix_only": [
+    [
+      "A28i-NC186",
+      4499.5
+    ],
+    [
+      "A28i-NC186",
+      4557.5
+    ],
+    [
+      "D1-200",
+      5150.0
+    ],
+    [
+      "D1-200",
+      5250.0
+    ],
+    [
+      "D1-200",
+      5350.0
+    ],
+    [
+      "D1-200",
+      5450.0
+    ],
+    [
+      "E1-NC174",
+      7150.0
+    ],
+    [
+      "E1-NC174",
+      7200.0
+    ],
+    [
+      "H2-NC186",
+      5250.0
+    ],
+    [
+      "H2-NC186",
+      5300.0
+    ],
+    [
+      "I3-NC186",
+      5230.0
+    ]
+  ],
+  "chart_only": [
+    [
+      "A28i-NC186",
+      4500.0
+    ],
+    [
+      "A28i-NC186",
+      4558.0
+    ],
+    [
+      "E1-NC174",
+      6750.0
+    ],
+    [
+      "H2-NC186",
+      5150.0
+    ],
+    [
+      "I3-NC186",
+      5220.0
+    ]
+  ],
+  "enclosure_keys_and_types_match": true,
+  "appendix_join_flag_mismatches": [],
+  "all_blank_rows": [
+    {
+      "well": "B2-NC186",
+      "depth_ft": "4100.00",
+      "type_code": "CO"
+    },
+    {
+      "well": "B2-NC186",
+      "depth_ft": "4200.00",
+      "type_code": "CO"
+    },
+    {
+      "well": "B2-NC186",
+      "depth_ft": "4300.00",
+      "type_code": "CU"
+    },
+    {
+      "well": "B2-NC186",
+      "depth_ft": "4410.00",
+      "type_code": "CU"
+    },
+    {
+      "well": "B2-NC186",
+      "depth_ft": "4520.00",
+      "type_code": "CU"
+    },
+    {
+      "well": "B2-NC186",
+      "depth_ft": "4535.00",
+      "type_code": "CU"
+    },
+    {
+      "well": "B2-NC186",
+      "depth_ft": "4565.00",
+      "type_code": "CU"
+    },
+    {
+      "well": "B2-NC186",
+      "depth_ft": "4640.00",
+      "type_code": "CU"
+    },
+    {
+      "well": "B2-NC186",
+      "depth_ft": "4690.00",
+      "type_code": "CU"
+    },
+    {
+      "well": "B2-NC186",
+      "depth_ft": "4800.00",
+      "type_code": "CU"
+    },
+    {
+      "well": "B2-NC186",
+      "depth_ft": "4900.00",
+      "type_code": "CU"
+    },
+    {
+      "well": "I3-NC186",
+      "depth_ft": "5400.00",
+      "type_code": "CU"
+    }
+  ],
+  "core_target_marks": [],
+  "scope": "Independent rendered-pixel target detection, header check and CSV/source receipt joins; no production extractor imported or called."
+}

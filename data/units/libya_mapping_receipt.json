@@ -1,0 +1,44 @@
+{
+  "date": "2026-10-31",
+  "status": "source-evidence-only; no adopted binary outcomes or empirical F3 result",
+  "source_sha256": "c0e3bf798fb3c27db0bf9cbb155396be5b4b8e003ee2228defb615a65abf3211",
+  "inventory_rows": 164,
+  "chart_rows": 158,
+  "exact_matches": 153,
+  "ambitisporites_chart_marks": 52,
+  "exact_appendix_chart_marks": 51,
+  "chart_marks_on_appendix_confirmed_cores": 0,
+  "appendix_rows_in_explicit_barren_scopes": 14,
+  "i3_ash_rows_with_marine_reports_and_possible_caving": 3,
+  "independent_target_raster_checks": 134,
+  "independent_marine_raster_checks": 158,
+  "raster_disagreements": 0,
+  "files_sha256": {
+    "data/units/libya_chart_reports.csv": "54881d62e2cfe4720ea405d77403f9e873e27a4db3519ee5f7dc001a73e1d01c",
+    "data/units/libya_chart_receipt.json": "9948116a8b9818c944656169a76c05ef84f53148eed63ab13ceca864d75e03b2",
+    "data/units/libya_prose_evidence.csv": "53980e90c67225c13d299f01c9850d4625141ad09c44d141ec54324ebf158dd6",
+    "data/units/libya_prose_support.csv": "3a89c14c0287691ec2a1d26ec23a95c26b0fbca3b89bd6e8d7831118c0608e98",
+    "data/units/libya_appendix1.csv": "b3b8861263d08fa0a0f042de149a7b1719bb4e0e341e35787f210a3e40c228a1",
+    "data/units/libya_enclosures.csv": "5bac7c20cdcd18ca7d48ba7d364a249b7c4528d1931cdaa5c3bb3d31254856ac",
+    "tools/libya_charts.py": "f19b0b18b520c0bcd47ecc85fc5acec7f8804bcc097463fa0469fd9a07e0803e",
+    "tools/units.py": "d9df62a971add7c938eba86fc8d23b1a020d07d9217901db4eb82f309cfc19ea",
+    "docs/audits/2026-10-31-libya-independent-check/README.md": "3c743e8236c23ff59c85512473f9cd3c7fdd5b68f8574d879537199c47609a44",
+    "docs/audits/2026-10-31-libya-independent-check/independent_receipt.json": "86f6cf970660552a0522b7b315de24a34a02d3bc83ade164d97394ff4efa9a77",
+    "docs/audits/2026-10-31-libya-independent-check/marine_raster_check.py": "066a4186cae76f7bcd61dcb363162a63b80b1b688b1ededc48f6489d47c4c9af",
+    "docs/audits/2026-10-31-libya-independent-check/raster_check.py": "f2e3dcb4ffaf80e771207731db8bf71c170a9c8178cf4e8f4849a42d1119f4b4",
+    "docs/audits/2026-10-31-libya-independent-check/raster_marine_checks.csv": "012d29caa2953bd779bde7c2d41ffea791664aae73225d57547e759c94a2faa9",
+    "docs/audits/2026-10-31-libya-independent-check/raster_target_checks.csv": "a2da098156d490ed515df3b0837880440bbc43125fff76b0e2e5406a1b57bfcd"
+  },
+  "known_source_conflicts": [
+    "Prose-positive E1 7287 core is blank in both target chart panels.",
+    "I3 4600 and 4640 are chart-positive within Cr3 despite sole-specimen prose wording.",
+    "I3 Ash Shabiyat 5250/5320/5340 have marine point reports; possible caving remains.",
+    "Depth/type/formation and 164-versus-167 inventory discrepancies retained."
+  ],
+  "checks": [
+    "Complete unique source keys and exact material joins; no aliases inferred.",
+    "Every extracted coloured point mapped unambiguously; both panels agree.",
+    "Independent upper-panel raster presence agrees with all target and marine reports.",
+    "Injected binary outcome and duplicate/missing chart material rejected."
+  ]
+}

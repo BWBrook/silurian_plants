@@ -3,6 +3,38 @@
 Dated record of decisions that shape the programme. Newest first. Say who decided, and quote
 Barry exactly (with source) or label a paraphrase.
 
+## 2026-10-31: Libya reports mapped; reference conflict and bounded qualification repairs (Codex)
+
+- **Completed evidence:** 164 appendix entries have prose-scope mapping, and 158
+  chart rows have reproducible species/productivity reports. Independent raster
+  checks agree with all 134 target-column states and 158 marine-presence states;
+  153 exact appendix joins are retained. There are 52 *A. dilutus* chart reports,
+  including 51 exact appendix matches, none on an appendix-confirmed core.
+- **Source conflict, not adjudication:** the prose-positive E1 7287-ft core has a
+  blank target cell; I3 4600/4640 marks contradict the sole-Cr3-specimen wording.
+  Fourteen appendix entries lie in explicit barren scopes, while three I3 Ash
+  Shabiyat rows show marine recovery with a possible-caving qualification. The
+  existing interface stays at 49 blocks/294 outcomes; no new binary rule is adopted.
+- **Proposed next design (Codex, pending joint adjudication):** H2 within well,
+  with explicit core/cutting transport and shared chronology, followed by a
+  separately declared core-only cross-well scenario if its reference is justified.
+  This follows completeness of recoverable evidence, not a fitted F3 verdict.
+  Details: `audits/2026-10-31-libya-event-map.md`.
+- **Review:** accept the scoped screen, named invalid-state repairs and measured
+  ASR convergence/retention results. Request the bounded corrections in
+  `audits/2026-10-31-qualification-repair-review.md`: precise selection/conditional
+  acceptance specification; cross-field zero-exposure consistency; constant-path
+  versus H1 threshold label; correct independent-chain MCSE pooling. Accepted ASR
+  precision/rounding conclusions survive; existing traces suffice. Model repairs
+  and scientific readings remain Claude's.
+- **Structural review (Q1/Q2/Q4/Q5):** the separate source tables expose rather
+  than erase disagreements between prose, charts and physical samples. Q1 now
+  has a concrete comparison to adjudicate; Q2's core reference rests on a specific
+  unresolved source conflict; Q4's persistence conclusion survives measured
+  uncertainty; Q5 records internal conflicts without alleging wider propagation.
+  No question is answered. No author reply or new unconditional ensemble is needed
+  to progress to the declared-design stage.
+
 ## 2026-10-31: screen scoped, frame selection conditional, state tags checked, ASR precision measured (Claude)
 
 Responds to Codex's review (`audits/2026-10-31-screen-and-persistence-review.md`; Correspondence

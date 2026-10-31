@@ -1,0 +1,79 @@
+{
+  "source_path": "library/closed/abuhmida2013-thesis-related_macbook20261030.pdf",
+  "source_sha256": "c0e3bf798fb3c27db0bf9cbb155396be5b4b8e003ee2228defb615a65abf3211",
+  "pymupdf_version": "2.0",
+  "script_sha256": "f19b0b18b520c0bcd47ecc85fc5acec7f8804bcc097463fa0469fd9a07e0803e",
+  "input_sha256": {
+    "libya_appendix1.csv": "b3b8861263d08fa0a0f042de149a7b1719bb4e0e341e35787f210a3e40c228a1",
+    "libya_enclosures.csv": "5bac7c20cdcd18ca7d48ba7d364a249b7c4528d1931cdaa5c3bb3d31254856ac"
+  },
+  "output_sha256": {
+    "libya_chart_reports.csv": "54881d62e2cfe4720ea405d77403f9e873e27a4db3519ee5f7dc001a73e1d01c"
+  },
+  "pages": [
+    {
+      "well": "A28i-NC186",
+      "pdf_page": 630,
+      "chart_rows": 24,
+      "vector_symbols_both_panels": 1616,
+      "max_row_residual_pt": 0.130524,
+      "unmapped_symbols": 0,
+      "panels_agree": true
+    },
+    {
+      "well": "B2-NC186",
+      "pdf_page": 632,
+      "chart_rows": 17,
+      "vector_symbols_both_panels": 368,
+      "max_row_residual_pt": 0.212036,
+      "unmapped_symbols": 0,
+      "panels_agree": true
+    },
+    {
+      "well": "D1-200",
+      "pdf_page": 634,
+      "chart_rows": 35,
+      "vector_symbols_both_panels": 3026,
+      "max_row_residual_pt": 0.134613,
+      "unmapped_symbols": 0,
+      "panels_agree": true
+    },
+    {
+      "well": "E1-NC174",
+      "pdf_page": 636,
+      "chart_rows": 15,
+      "vector_symbols_both_panels": 1060,
+      "max_row_residual_pt": 0.179871,
+      "unmapped_symbols": 0,
+      "panels_agree": true
+    },
+    {
+      "well": "H2-NC186",
+      "pdf_page": 638,
+      "chart_rows": 28,
+      "vector_symbols_both_panels": 1350,
+      "max_row_residual_pt": 0.174286,
+      "unmapped_symbols": 0,
+      "panels_agree": true
+    },
+    {
+      "well": "I3-NC186",
+      "pdf_page": 640,
+      "chart_rows": 39,
+      "vector_symbols_both_panels": 3128,
+      "max_row_residual_pt": 0.12738,
+      "unmapped_symbols": 0,
+      "panels_agree": true
+    }
+  ],
+  "chart_rows": 158,
+  "exact_appendix_matches": 153,
+  "target_report_counts": {
+    "column-absent": 24,
+    "mark-present": 52,
+    "no-mark": 82
+  },
+  "rows_with_marine_symbols": 146,
+  "rows_without_symbols": 12,
+  "interpretation": "Literal source symbols only; blanks and omitted columns are not adopted absences."
+}

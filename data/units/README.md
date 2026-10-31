@@ -23,6 +23,10 @@ unadopted. No reference rate, first appearance or fossil-absence result is gener
 | `qusaiba_inventory.csv` | 41 reported depth records: the 37 spore samples, companion acritarch records and an unresolved depth pair; literal table reports, not adopted event/reading outcomes |
 | `libya_appendix1.csv` | Independently transcribed complete 164-entry appendix, including ambiguous type cells and formations as printed |
 | `libya_enclosures.csv` | 158 explicit chart depth/type labels; 153 exact numeric matches to the appendix, with conflicts retained rather than silently merged |
+| `libya_chart_reports.csv` | 158 enclosure rows with literal A. dilutus and marine-group symbol reports; both chart panels agree; exact appendix joins only |
+| `libya_prose_evidence.csv` | 27 paraphrased thesis statements with source scopes and printed/PDF locators |
+| `libya_prose_support.csv` | All 164 appendix rows linked to prose evidence, with source conflicts and chart comparisons; binary-outcome field blank throughout |
+| `libya_chart_receipt.json`, `libya_mapping_receipt.json` | Source/extractor/output hashes and bounded mapping/independent-check results |
 | `frame_inventory_receipt.json` | Source and output hashes plus inventory comparison counts for the 31 October tranche |
 | `borenshult_reporting.csv` | All 34 depths with literal source reports, E1 taxon lists, chart/count scope and non-target productivity; no accepted binary outcomes |
 | `borenshult_ages.csv` | All 34 depths with separate 2019/2023 zone/contact readings and historical numerical contexts; no age density or fitted age-depth model |
@@ -43,14 +47,30 @@ frame, with no sampled pre-459.1 Ma exposure. The companion's 40 acritarch sampl
 are not additional spore trials. Metre/foot labels, the 302.11/302.40 discrepancy,
 and the distinction between table reports and named readings remain explicit.
 
-Libya's complete appendix contains 164 entries across six wells, but the six
-range-chart pages contain 158 depth/type labels, with only 153 exact matches.
-The two source inventories remain separate. Core/cutting differences, barren
-material and unresolved samples stay visible. The thesis supplies an explicit
-assemblage-level trilete absence and younger occurrences; no pooled statement
-has been distributed across unidentified samples. Mapping events and productivity
-is the next tranche, before any reference-rate transport or actual-design
-qualification. See `docs/audits/2026-10-31-qusaiba-libya-frames.md`.
+Libya's complete appendix contains 164 entries across six wells; its 158 chart
+rows now have species/productivity reports, with only 153 exact appendix matches.
+The separate prose table covers all 164 entries. Join on well and numeric depth
+in feet; unresolved aliases and chart-only labels do not create material trials.
+The charts contain 52 A. dilutus marks, 82 unmarked target cells and 24 rows in
+a well without that target column. None is an adopted event/reading outcome.
+Marine symbols occur in 146 chart rows; twelve are completely blank.
+
+The prose-positive E1 core 7287 ft is blank in the target chart column, and all
+51 exact-match chart positives lie outside the appendix-confirmed core subset.
+Fourteen appendix entries lie in explicit barren scopes; three I3 Ash Shabiyat
+rows show marine recovery possibly due to caving. H2 offers the most complete
+within-well Hawaz/younger comparison, proposed for design adjudication with
+core/cutting transport, caving and shared ages explicit. No binary conversion,
+reference rate or empirical bound is adopted. See
+`docs/audits/2026-10-31-libya-event-map.md` and the preceding inventory audit.
+
+Regenerate the chart table from the pinned local source with
+`uv run --with pymupdf==2.0.0 tools/libya_charts.py`. It compares both display
+panels and asserts complete mapping of coloured point symbols; counts mean
+plotted symbols, not specimens or search effort. The prose tables are curated
+source paraphrases and scoped links. Independent raster checks agree on all
+134 target-column states and 158 marine-presence states. The normal unit check
+also verifies mapping keys, source links, symbol totals and unadopted binary status.
 
 ## The original 15-block pilot
 

@@ -146,6 +146,13 @@ data archived, and the human–AI correspondence record published alongside.
     adjudicated by Claude Opus 5.5 (`work/codex/loop1b/`), and the Cambrian age, location and
     vetting jobs for the widened Palynodata window (2026-10-28).
 - OpenAI Codex (OpenAI, Codex desktop; exact model version not exposed in this session):
+  On the next 31 October tranche, mapped Libya's 164 appendix entries to prose
+  scopes and 158 enclosure rows to species/productivity reports. An independent
+  delegate checked the prose and then all target/marine row states by raster
+  rendering; two others reviewed the scoped F3 contract and saved four-chain ASR
+  diagnostics. The parent integrated the source conflicts, reproducible extraction,
+  checks and proposed design comparison, and reproduced the decisive model and
+  MCSE calculations. No binary conversion or empirical F3 bound was adopted.
   On 31 October 2026, independently reviewed the new design screen and trilete
   persistence implementation, and assembled Qusaiba and Libya candidate sample
   inventories. Three bounded same-model delegates checked the F3 contract, ASR

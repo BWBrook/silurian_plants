@@ -146,6 +146,53 @@ def check(directory=ROOT / "data/units"):
                 f"{uid}: age stage mismatch")
         require(row["depth_m"] == borenshult.get(uid, {}).get("depth_m"), f"{uid}: age depth mismatch")
         require(bool(row["source_locators"] and row["age_evidence_status"]), f"{uid}: missing age evidence")
+    def material_key(row):
+        return row["well"], float(row["depth_ft"])
+
+    appendix_rows = rows(directory / "libya_appendix1.csv")
+    appendix = {material_key(r): r for r in appendix_rows}
+    enclosure_rows = rows(directory / "libya_enclosures.csv")
+    enclosure = {material_key(r): r for r in enclosure_rows}
+    prose = rows(directory / "libya_prose_support.csv")
+    chart = rows(directory / "libya_chart_reports.csv")
+    evidence_rows = rows(directory / "libya_prose_evidence.csv")
+    evidence = {r["evidence_id"] for r in evidence_rows}
+    require(len(appendix) == len(appendix_rows) == 164, "Libya appendix keys changed")
+    require(len(enclosure) == len(enclosure_rows) == 158, "Libya enclosure keys changed")
+    require(len(evidence) == len(evidence_rows), "duplicate Libya prose evidence id")
+    require(len(prose) == len(appendix) and {material_key(r) for r in prose} == set(appendix),
+            "Libya prose support must cover the appendix exactly once")
+    require(len(chart) == len(enclosure) and {material_key(r) for r in chart} == set(enclosure),
+            "Libya chart reports must cover enclosure labels exactly once")
+    for row in prose:
+        key = material_key(row)
+        source = appendix.get(key, {})
+        require(row["appendix_type"] == source.get("type") and
+                row["appendix_formation"] == source.get("formation"),
+                f"{key}: Libya prose changed appendix identity")
+        require(row["exact_chart_label_present"] == ("yes" if key in enclosure else "no"),
+                f"{key}: Libya chart linkage mismatch")
+        references(row, "evidence_ids", evidence)
+        require(not row["adopted_binary_e1"], f"{key}: Libya binary outcomes are not adopted")
+    for row in chart:
+        key = material_key(row)
+        require(row["type_code"] == enclosure.get(key, {}).get("type_code"),
+                f"{key}: Libya enclosure type mismatch")
+        require(row["exact_appendix_match"] == ("yes" if key in appendix else "no"),
+                f"{key}: Libya appendix linkage mismatch")
+        report = row["ambitisporites_dilutus_report"]
+        require(report in {"mark-present", "no-mark", "column-absent"},
+                f"{key}: invalid Libya target report")
+        fields = ["target_symbols", "marine_symbols", "other_green_symbols", "total_symbols"]
+        valid_counts = all(row[field].isdecimal() for field in fields)
+        require(valid_counts, f"{key}: invalid Libya chart symbol counts")
+        if valid_counts:
+            require(int(row["target_symbols"]) == int(report == "mark-present"),
+                    f"{key}: Libya target count/report mismatch")
+            require(int(row["total_symbols"]) == sum(int(row[field]) for field in fields[:3]),
+                    f"{key}: Libya chart symbol total mismatch")
+        require(row["panels_agree"] == "yes" and row["source_id"] == "abuhmida2013"
+                and bool(row["source_locator"]), f"{key}: missing Libya chart evidence")
     for source_file in rows(directory / "source_files.csv"):
         require(source_file["source_id"] in sources, "unknown file source")
         require(len(source_file["sha256"]) == 64, f"invalid digest for {source_file['path']}")
@@ -157,6 +204,7 @@ def check(directory=ROOT / "data/units"):
         raise ValueError("\n".join(errors))
     return {"units": len(units), "outcomes": len(outcomes), "candidate_frames": len(frames),
             "frame_samples": len(samples),
+            "libya_prose_rows": len(prose), "libya_chart_rows": len(chart),
             "main_E1": dict(Counter(r["outcome"] for r in outcomes if r["event_id"] == "E1" and r["reading_id"] == "main")),
             "main_E2": dict(Counter(r["outcome"] for r in outcomes if r["event_id"] == "E2" and r["reading_id"] == "main"))}
 

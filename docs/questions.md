@@ -20,28 +20,36 @@ The register is updated at each loop's close. Started 2026-10-28 by Claude Opus 
   - **answered**: with a pointer to the result.
 - **Kind of contribution.** Each has its own standard of success (charter): synthesis, statistics, simulation, phylogeny.
 
-**31 October update (Q1/Q2/Q4/Q5):** Borenshult's main/inclusive readings remain
-unchanged after Claude's Skagen adjudication. The homogeneous independent screen
-is useful, but Codex's existing-engine counterexamples refute its universal
-claim across dependence models and class ceilings. Frame selection after an
-observed screen also needs an explicit qualification target. All 166 F3 tests
-pass and the named strict-parser repairs work; an injected invalid state tag
-still bypasses delivered-bound containment. No malformed stored row was found.
-ASR numerical reproduction and path calculations check out, with Monte Carlo
-precision/convergence unassessed and the listed wording/count corrections pending.
-The four specimen/provenance corrections have been made.
+**31 October update (Q1/Q2/Q4/Q5):** The scoped homogeneous screen and the
+named invalid-state repair are accepted. Conditional frame selection still
+needs a precise search/reporting rule and passing-replicate denominator, while
+calibration (0.955), nominal coverage (0.95) and the independent floor (0.93)
+remain distinct. A separate injected zero-exposure inconsistency still passes;
+no malformed stored ensemble is alleged. The quoted constant-path threshold
+also needs distinguishing from full H1. The saved ASR diagnostics reproduce;
+the longer extant chains pass and retain the persistence finding with wider
+retention uncertainty. Correct independent-chain MCSE pooling leaves accepted
+rounding and precision decisions unchanged. See
+`audits/2026-10-31-qualification-repair-review.md`; repairs remain Claude's.
 
-Qusaiba now contributes a complete 37-sample spore inventory (22 trilete-marked,
-15 unmarked), with a positive deepest sample and no supported pre-459.1 Ma
-depositional material. Libya supplies 164 appendix entries, but its 158 chart
-labels give only 153 exact depth matches. Both retain source conflicts without
-new binary outcomes. Next: Libya event/productivity mapping and an explicit
-within-well/core-cutting versus cross-well/core-only reference comparison;
-Qusaiba remains a separate reference candidate. Seven frames/276 inventory
-entries now support the unchanged 49 material blocks/294 outcomes. See
-`audits/2026-10-31-screen-and-persistence-review.md` and
-`audits/2026-10-31-qusaiba-libya-frames.md`. These updates supersede older
-next-step snapshots below without erasing their history; no question is answered.
+Libya's bounded map is complete: 164 appendix entries, 158 chart reports,
+153 exact joins and 52 *Ambitisporites dilutus* marks (51 exact appendix matches).
+None of these chart positives is on an appendix-confirmed core. The sole
+sample-specific prose-positive core, E1 7287 ft, has a blank target chart cell;
+I3 4600/4640 marks also conflict with Cr3's uniqueness wording. Fourteen
+appendix rows fall in explicit barren scopes; three I3 Ash Shabiyat rows have
+marine recovery reports possibly explained by caving. These reports remain
+separate from named readings and binary outcomes.
+
+**Next proposed design comparison:** H2 within well (17 charted, marine-positive
+Hawaz entries and eight younger cuttings, seven marked), against a separately
+justified core-only cross-well comparison. Declare core/cutting transport,
+caving, event reporting and shared chronology before any binding qualification.
+Hawaz's stage assignment does not put every sample before 459.1 Ma. Qusaiba
+remains a separate reference candidate. See `audits/2026-10-31-libya-event-map.md`.
+Seven frames/276 inventory entries support the unchanged 49 material blocks/294
+outcomes. These updates supersede older next-step snapshots below without
+erasing their history; no empirical exclusion is released or question answered.
 
 | ID | Question | Contribution | Status | Standard of success | Decisive gaps and dependencies | Next step |
 |---|---|---|---|---|---|---|
