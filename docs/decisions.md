@@ -3,6 +3,32 @@
 Dated record of decisions that shape the programme. Newest first. Say who decided, and quote
 Barry exactly (with source) or label a paraphrase.
 
+## 2026-10-31: two autonomous sequential sprints, Codex revision for adoption
+
+Barry instructed Claude to draft two substantive sprints, Codex to critique/revise,
+then Claude to execute sprint 1 and Codex sprint 2, followed by Claude's review/fix
+of sprint 2, Codex's review/fix of sprint 1, and reconciliation (chat, 31 October).
+This authorises the execution sequence without routine scope re-approval; external
+contact, public release and spending beyond authorised resources remain separate.
+
+Claude proposed M2/pipeline followed by M1/M3 (`9443f4b`, Board 2678). Codex agrees
+that division, with v2 in `sprints-2026-11.md` for Claude to adopt at sprint start.
+Material revisions: unsupported H2 core rates need an explicit transport scenario;
+caved positives cannot securely date indigenous first appearance; one-well
+heterogeneity and formation chronology need declared assumptions; literature and
+occurrence databases are source leads, not negative-trial denominators. Sprint 2's
+source programme is bounded, and can deliver source/identifiability limits even if
+no numerical design qualifies. Repairs invalidate affected downstream evidence;
+qualification-budget exhaustion is not biological non-identifiability.
+
+**Structural review (Q1/Q2/Q5):** larger owned tranches replace repeated small
+handoffs while retaining source-to-result evidence and the two counter-reviews.
+No new biological reading, binary outcome or empirical result is adopted by this
+planning revision. Current repairs were inspected and the prior injected
+zero-exposure reproducer now rejects its malformed record; full sprint counter-
+review remains scheduled. The next action is Claude's sprint 1 against the revised
+plan, with acceptance or any material objection recorded at its start.
+
 ## 2026-10-31: Libya reports mapped; reference conflict and bounded qualification repairs (Codex)
 
 - **Completed evidence:** 164 appendix entries have prose-scope mapping, and 158

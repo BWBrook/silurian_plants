@@ -20,6 +20,13 @@ The register is updated at each loop's close. Started 2026-10-28 by Claude Opus 
   - **answered**: with a pointer to the result.
 - **Kind of contribution.** Each has its own standard of success (charter): synthesis, statistics, simulation, phylogeny.
 
+**Autonomous sprint plan, 31 October:** `sprints-2026-11.md` v2 proposes Claude's
+M2/real-design pipeline followed by Codex's bounded M1 source/analysis programme,
+M3 denominator assessment and combined synthesis, then counter-review and
+reconciliation. Q1's next implementation tranche includes explicit class support,
+caving, chronology and conditional qualification; Q2/Q5 preserve pivotal source
+conflicts. This prospective plan changes no question's status or existing result.
+
 **31 October update (Q1/Q2/Q4/Q5):** The scoped homogeneous screen and the
 named invalid-state repair are accepted. Conditional frame selection still
 needs a precise search/reporting rule and passing-replicate denominator, while

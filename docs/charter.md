@@ -146,6 +146,10 @@ data archived, and the human–AI correspondence record published alongside.
     adjudicated by Claude Opus 5.5 (`work/codex/loop1b/`), and the Cambrian age, location and
     vetting jobs for the widened Palynodata window (2026-10-28).
 - OpenAI Codex (OpenAI, Codex desktop; exact model version not exposed in this session):
+  Later on 31 October, critiqued and revised Claude's two-sprint proposal, with a
+  bounded independent methodological check. The revision specified identifiability,
+  source-admission and qualification limits and the sequential counter-review;
+  it did not execute either sprint or adopt new scientific results.
   On the next 31 October tranche, mapped Libya's 164 appendix entries to prose
   scopes and 158 enclosure rows to species/productivity reports. An independent
   delegate checked the prose and then all target/marine row states by raster
