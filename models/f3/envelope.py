@@ -104,6 +104,7 @@ LOG_R_BOUNDS = (math.log(1e-5), math.log(8.0))
 TINY = 1e-300
 STATES = ("finite", "ceiling-limited", "unbounded", "zero-exposure")
 SCENARIOS = ("chart", "older", "younger")
+FA_RULES = {"base-of-oldest-certain-detection-stage": "certain", "base-of-oldest-possible-detection-stage": "oldest-possible"}
 SPREAD_FLAG = 0.05
 REPAIR_ITER = 1000
 TIE = 1e-6
@@ -149,18 +150,31 @@ class AgeModel:
 
 @dataclass(frozen=True)
 class Units:
-    """Eligible binary sampling units. young and old index the youngest and oldest stage of the range."""
+    """Eligible binary sampling units. young and old index the youngest and oldest stage of the range.
+    mult is a declared, fixed multiplier of the class rate (a transport scenario between material types,
+    facies or regions; 1 by default). lo_ma and hi_ma optionally narrow an older unit's age range to a
+    numerical interval inside its stage range (NaN: the whole stage range)."""
 
     young: np.ndarray
     old: np.ndarray
     cls: np.ndarray
     cluster: np.ndarray
     d: np.ndarray
+    mult: np.ndarray | None = None
+    lo_ma: np.ndarray | None = None
+    hi_ma: np.ndarray | None = None
 
     def __post_init__(self):
         n = len(self.d)
-        if not all(len(a) == n for a in (self.young, self.old, self.cls, self.cluster)):
+        for name, fill in (("mult", 1.0), ("lo_ma", math.nan), ("hi_ma", math.nan)):
+            if getattr(self, name) is None:
+                object.__setattr__(self, name, np.full(n, fill))
+        if not all(len(a) == n for a in (self.young, self.old, self.cls, self.cluster, self.mult, self.lo_ma, self.hi_ma)):
             raise ValueError("unit arrays differ in length")
+        if np.any(~(self.mult > 0)):
+            raise ValueError("rate multipliers must be positive")
+        if np.any(np.isnan(self.lo_ma) != np.isnan(self.hi_ma)) or np.any(self.lo_ma >= self.hi_ma):
+            raise ValueError("a numerical age range needs both ends, younger first")
         if np.any(self.young > self.old) or np.any(self.young < 1):
             raise ValueError("a unit's range must run from a stage younger than or equal to its oldest, and not the first stage")
         if not np.all((self.d == 0) | (self.d == 1)):
@@ -170,7 +184,7 @@ class Units:
         return len(self.d)
 
     def take(self, mask: np.ndarray) -> "Units":
-        return Units(*(a[mask] for a in (self.young, self.old, self.cls, self.cluster, self.d)))
+        return Units(*(a[mask] for a in (self.young, self.old, self.cls, self.cluster, self.d, self.mult, self.lo_ma, self.hi_ma)))
 
 
 @dataclass(frozen=True)
@@ -189,6 +203,7 @@ class Spec:
     crit_shift: float = 0.0
     age_scenario: str = "chart"
     nodes: int = 48
+    fa_rule: str = "certain"
 
     @classmethod
     def from_toml(cls, path: Path) -> "Spec":
@@ -208,6 +223,7 @@ class Spec:
             crit_shift=inf["crit_shift"],
             age_scenario=inf["age_scenario"],
             nodes=inf["nodes"],
+            fa_rule=FA_RULES[t["first_appearance"]["rule"]],
         )
 
 
@@ -371,6 +387,7 @@ class Block:
     seg_starts: np.ndarray
     seg_pos: np.ndarray
     d: np.ndarray | None = None
+    mult: np.ndarray | None = None
     qref: np.ndarray | None = None
     rest: np.ndarray | None = None
     m_unit: np.ndarray | None = None
@@ -446,9 +463,11 @@ class Problem:
         if age.scenario != spec.age_scenario:
             raise ValueError(f"age model scenario {age.scenario!r} differs from the specification's {spec.age_scenario!r}")
         self.spec, self.age = spec, age
-        certain = (units.d == 1) & (units.young == units.old)
+        if spec.fa_rule not in FA_RULES.values():
+            raise ValueError(f"fa_rule must be one of {tuple(FA_RULES.values())}")
+        certain = (units.d == 1) & ((units.young == units.old) | (spec.fa_rule == "oldest-possible"))
         if not certain.any():
-            raise NoFirstAppearance("no certain detection")
+            raise NoFirstAppearance("no certain detection" if spec.fa_rule == "certain" else "no detection")
         base = age.base
         self.s_star = int(units.old[certain].max())
         self.tau = float(base[self.s_star])
@@ -474,7 +493,13 @@ class Problem:
         self.rc, self.rd, self.rcl = remap[ref.cls], ref.d, np.searchsorted(self.cluster_ids, ref.cluster)
         self.oc, self.od, self.ocl = remap[old.cls], old.d, np.searchsorted(self.cluster_ids, old.cluster)
         self.n_ref, self.n_old = len(ref), len(old)
-        self.lo, self.hi = base[old.young - 1], base[old.old]
+        lo, hi = base[old.young - 1], base[old.old]
+        self.lo, self.hi = np.where(np.isnan(old.lo_ma), lo, old.lo_ma), np.where(np.isnan(old.hi_ma), hi, old.hi_ma)
+        if np.any(self.lo < lo - 1e-9) or np.any(self.hi > hi + 1e-9):
+            raise ValueError("a numerical age range must lie inside the unit's stage range")
+        numeric = ~np.isnan(old.lo_ma)
+        self._cuts = np.unique(np.r_[self.lo[numeric], self.hi[numeric]])
+        self.rm, self.om = ref.mult, old.mult
         self.width = self.hi - self.lo
         self.Qref = np.clip((np.minimum(self.hi, self.tau) - self.lo) / self.width, 0.0, 1.0) if self.n_old else np.zeros(0)
         self.T_flat = float(self.hi.max()) if self.n_old else self.tau
@@ -488,19 +513,21 @@ class Problem:
         self._th = np.log(self.r_ref)
         _, self._th, _ = self._profile(self.window((self.tau,), ref_only=True), np.zeros(0), np.zeros(0), np.zeros(0), False)
         self.r_ref = np.exp(self._th)
-        self._wr = self.r_ref[self.oc]
+        self._wr = self.r_ref[self.oc] * self.om
 
     # --- windows -----------------------------------------------------------------------------
 
-    def edges(self, T: float, lag: float = 0.0) -> tuple[float, ...]:
-        """Piece edges for origin T: tau, the stage bases strictly between tau and T, T - lag when it lies
-        inside (tau, T), and T. Just (tau,) when T <= tau."""
+    def edges(self, T: float, lag: float = 0.0, cut: float | None = None) -> tuple[float, ...]:
+        """Piece edges for origin T: tau, the stage bases and the ends of numerical unit ranges strictly
+        between tau and T, T - lag and cut when they lie inside (tau, T), and T. Just (tau,) when T <= tau."""
         if T <= self.tau:
             return (self.tau,)
-        b = self.age.base
+        b = np.r_[self.age.base, self._cuts]
         pts = [self.tau, float(T), *b[(b > self.tau + 1e-9) & (b < T - 1e-9)]]
         if lag > 0 and self.tau + 1e-9 < T - lag < T - 1e-9:
             pts.append(T - lag)
+        if cut is not None and self.tau + 1e-9 < cut < T - 1e-9:
+            pts.append(cut)
         return tuple(float(v) for v in np.unique(np.round(pts, 9)))
 
     def edges_const(self, T: float) -> tuple[float, ...]:
@@ -529,13 +556,13 @@ class Problem:
         has_det = bool(np.any((self.od == 1) & (qmid > 1e-12)))
         rest = np.clip(1.0 - self.Qref - qmid, 0.0, 1.0)
         ids = np.unique(np.concatenate([self.rcl, self.ocl[active]]))
-        ref = self._block(self.rcl, self.rc, ids, d=self.rd)
+        ref = self._block(self.rcl, self.rc, ids, d=self.rd, mult=self.rm)
         old0 = self._old_block(active & (self.od == 0), ids, W, rest)
         old1 = self._old_block(active & (self.od == 1), ids, W, rest)
         E = None
         if not ref_only and n and qmid.sum() > 0:
             E = np.zeros((self.n_cls, W.shape[1]))
-            np.add.at(E, self.oc, W)
+            np.add.at(E, self.oc, W * self.om[:, None])
         return Window(edges, float(edges[-1]), plo[keep], phi[keep], W, qmid, impossible, has_det, len(ids), ref, old0, old1, E)
 
     @staticmethod
@@ -546,7 +573,7 @@ class Problem:
 
     def _old_block(self, mask: np.ndarray, ids: np.ndarray, W: np.ndarray, rest: np.ndarray) -> Block:
         idx = np.flatnonzero(mask)
-        b = self._block(self.ocl[idx], self.oc[idx], ids, qref=self.Qref[idx], rest=rest[idx])
+        b = self._block(self.ocl[idx], self.oc[idx], ids, qref=self.Qref[idx], rest=rest[idx], mult=self.om[idx])
         ui, pi = np.nonzero(W[idx] > 1e-12) if W.shape[1] else (np.zeros(0, int), np.zeros(0, int))
         if len(ui):
             b.m_unit, b.m_piece, b.m_w = ui, pi, W[idx][ui, pi]
@@ -566,7 +593,7 @@ class Problem:
         Lk = np.zeros((win.K, len(u)))
         rb, o0, o1 = win.ref, win.old0, win.old1
 
-        ru_r = r[rb.cls][:, None] * u
+        ru_r = (r[rb.cls] * rb.mult)[:, None] * u
         d1 = rb.d == 1
         lp = np.where(d1[:, None], np.log(np.maximum(-np.expm1(-ru_r), TINY)), -ru_r)
         if rb.n:
@@ -579,7 +606,7 @@ class Problem:
 
         cache0 = None
         if o0.n:
-            ru0 = r[o0.cls][:, None] * u
+            ru0 = (r[o0.cls] * o0.mult)[:, None] * u
             e1 = np.exp(-ru0)
             P0 = o0.qref[:, None] * e1 + o0.rest[:, None]
             if o0.m:
@@ -596,7 +623,7 @@ class Problem:
 
         cache1 = None
         if o1.n:
-            ru1 = r[o1.cls][:, None] * u
+            ru1 = (r[o1.cls] * o1.mult)[:, None] * u
             e1b = np.exp(-ru1)
             D = o1.qref[:, None] * (1.0 - e1b)
             if o1.m:
@@ -959,12 +986,17 @@ class Problem:
             g = np.append(g, self.spec.domain_ma[1])
         return g
 
-    def origin_stat(self, cls: str, T: float, f_min: float) -> Statistic:
+    def origin_stat(self, cls: str, T: float, f_min: float, start: float | None = None) -> Statistic:
         """The origin test statistic at one T, exactly: 2 (alt - null), where alt is the best constant history
         on [0, 1] and null the supremum under the class's reading of "a >= f_min on (tau, T]" (module
         docstring). Zero for T <= tau; infinite when T is impossible. Converged only when the alternative and
-        the null both converged."""
-        if T <= self.tau:
+        the null both converged.
+        With start (H0 only), the window read-out: the null is "a >= f_min on (start, T]", with any path in
+        [0, 1] on (tau, start]; zero for T <= start. It asks whether the lineage could have been at f_min
+        before a given age, whatever it did afterwards."""
+        if start is not None and cls != "H0":
+            raise ValueError("the window read-out is defined for H0")
+        if T <= self.tau or (start is not None and T <= start):
             return Statistic(0.0, True, 0.0)
         alt, _, alt_ok, alt_spread = self.const_max(T, 0.0, 1.0)
         if not np.isfinite(alt):
@@ -973,8 +1005,13 @@ class Problem:
             null, _, ok, spread = self.const_max(T, f_min, 1.0)
         elif cls in ("H0", "H0m"):
             lag = self.spec.h0m_lag_ma if cls == "H0m" else 0.0
-            win = self.window(self.edges(T, lag))
-            L = np.where(win.piece_hi <= T - lag + 1e-9, f_min, 0.0) if cls == "H0m" else np.full(win.P, f_min)
+            win = self.window(self.edges(T, lag, start))
+            if cls == "H0m":
+                L = np.where(win.piece_hi <= T - lag + 1e-9, f_min, 0.0)
+            elif start is not None:
+                L = np.where(win.piece_lo >= start - 1e-9, f_min, 0.0)
+            else:
+                L = np.full(win.P, f_min)
             fit = self.bound_sup(win, L, np.ones(win.P), cls == "H0m")
             null, ok, spread = fit.value, fit.converged, fit.spread
         else:
@@ -985,17 +1022,17 @@ class Problem:
     def lr_origin(self, cls: str, T: float, f_min: float) -> float:
         return self.origin_stat(cls, T, f_min).value
 
-    def origin_set(self, cls: str, f_min: float, grid: np.ndarray) -> OriginSet:
+    def origin_set(self, cls: str, f_min: float, grid: np.ndarray, start: float | None = None) -> OriginSet:
         """Test inversion on the grid: T is excluded when the statistic exceeds crit. Past the point where
         every piece that carries weight lies at or younger than T - lag the statistic is constant, so it is
-        copied."""
+        copied. start gives the window read-out (origin_stat)."""
         lag = self.spec.h0m_lag_ma if cls == "H0m" else 0.0
         lr, ok = np.empty(len(grid)), np.empty(len(grid), bool)
         crit = np.array([self.crit(T) for T in grid])
         flat = np.flatnonzero(grid - lag >= self.T_flat - 1e-9)
         stop = int(flat[0]) if len(flat) else len(grid) - 1
         for i in range(stop + 1):
-            st = self.origin_stat(cls, float(grid[i]), f_min)
+            st = self.origin_stat(cls, float(grid[i]), f_min, start)
             lr[i], ok[i] = st.value, st.converged
         lr[stop + 1:], ok[stop + 1:] = lr[stop], ok[stop]
         top = float(self.age.base[self.s_star - 1]) if self.s_star >= 1 else self.tau
@@ -1013,5 +1050,6 @@ class Problem:
         ok = over_hi > over_lo
         mass = np.where(ok, (A(over_hi) - A(over_lo)) / self.width, 0.0)
         qmid = np.where(ok, (over_hi - over_lo) / self.width, 0.0)
-        den = float((qmid * r[self.oc]).sum())
-        return float((mass * r[self.oc]).sum() / den) if den > 0 else math.nan
+        w = r[self.oc] * self.om
+        den = float((qmid * w).sum())
+        return float((mass * w).sum() / den) if den > 0 else math.nan
