@@ -3,10 +3,10 @@
 # dependencies = ["numpy", "scipy"]
 # ///
 
-"""M2 on the frozen real designs (designs/m2.toml): the screen, and the empirical read-outs.
+"""A maximum on frozen real designs (designs/m2.toml, or F3_DESIGNS): the screen, and the empirical read-outs.
 
     uv run models/f3/m2.py screen            # out/m2_screen.csv: every design, variant, rho and reference minimum
-    uv run models/f3/m2.py results            # out/m2_results.csv at the qualified critical-value shifts
+    uv run models/f3/m2.py results [workers]  # out/m2_results.csv at the qualified critical-value shifts
 
 The screen (S0, S1 in m2.toml) is the function `screen`, called unchanged by qualify.py on every simulated
 replicate. It uses the unshifted critical value, so it does not depend on the calibration.
@@ -52,6 +52,10 @@ def problem(b: dz.Built, decl: dict, rho: float, cluster_k: float, min_ref: int,
     return ev.Problem(u, spec, ev.AgeModel.load())
 
 
+def prefix(decl: dict) -> str:
+    return decl["common"]["maximum"].lower()
+
+
 def vkey(v: dict) -> str:
     return ";".join(f"{k}={v[k]}" for k in sorted(v))
 
@@ -86,7 +90,7 @@ def run_screen() -> list[dict]:
     return rows
 
 
-T_REPORT = (445.2, 452.8, 458.2, 459.1, 464.0, 469.4, 480.0, 560.0)
+T_REPORT = (445.2, 452.8, 458.2, 459.1, 464.0, 469.4, 480.0, 560.0)  # [common] report_ma overrides
 
 
 def shift_for(design_id: str, rho: float) -> tuple[float | None, str]:
@@ -105,9 +109,9 @@ def shift_for(design_id: str, rho: float) -> tuple[float | None, str]:
     return delta, result
 
 
-def readouts(pr: ev.Problem) -> dict:
+def readouts(pr: ev.Problem, common: dict) -> dict:
     out = {}
-    for T in T_REPORT:
+    for T in common.get("report_ma", T_REPORT):
         if T <= pr.tau:
             continue
         for K in pr.spec.classes:
@@ -120,35 +124,37 @@ def readouts(pr: ev.Problem) -> dict:
             o = pr.origin_set(K, f, grid)
             out[f"origin_{K}_{f:g}"] = "unbounded" if o.unbounded else round(o.older_endpoint, 2)
             out[f"origin_ok_{K}_{f:g}"] = bool(o.ok.all()) and o.connected
-        o = pr.origin_set("H0", f, grid, start=459.1)
+        o = pr.origin_set("H0", f, grid, start=common["window_start_ma"])
         out[f"window_{f:g}"] = "unbounded" if o.unbounded else round(o.older_endpoint, 2)
         out[f"window_ok_{f:g}"] = bool(o.ok.all()) and o.connected
     return out
 
 
-def run_results() -> list[dict]:
+def _result(job: tuple) -> dict:
+    design_id, v, min_ref, rho = job
+    decl = dz.declarations()
+    design = next(d for d in decl["design"] if d["id"] == design_id)
+    delta, result = shift_for(design_id, rho)
+    row = dict(design=design_id, variant=vkey(v), min_ref=min_ref, rho=rho, primary=is_primary(design, v, min_ref),
+               qualification=result, shift="" if delta is None else delta)
+    pr = problem(dz.build(design, v), decl, rho, v["cluster_k"], min_ref, shift=delta or 0.0)
+    row.update(tau=pr.tau, n_ref=pr.n_ref, k_ref=int(pr.rd.sum()), n_old=pr.n_old,
+               older_detections=int(pr.od.sum()), r_ref=";".join(f"{r:.4g}" for r in pr.r_ref))
+    return row | readouts(pr, decl["common"])
+
+
+def run_results(workers: int = 8) -> list[dict]:
+    """Read-outs for every variant that passes the screen, at its design's qualified shift for that rho
+    (the primary variant's; other variants are labelled by `primary`)."""
+    from multiprocessing import Pool
     decl = dz.declarations()
     screened = {(r["design"], r["variant"], int(r["min_ref"]), float(r["rho"])): r["passes"] == "True"
-                for r in csv.DictReader(open(OUT / "m2_screen.csv"))}
-    rows = []
-    for design in decl["design"]:
-        for v in dz.variants(design, decl):
-            b = dz.build(design, v)
-            for min_ref in decl["common"]["min_ref_units"]:
-                for rho in decl["common"]["rho"]:
-                    if not screened[(design["id"], vkey(v), min_ref, rho)]:
-                        continue
-                    delta, result = shift_for(design["id"], rho)
-                    row = dict(design=design["id"], variant=vkey(v), min_ref=min_ref, rho=rho,
-                               primary=is_primary(design, v, min_ref), qualification=result,
-                               shift="" if delta is None else delta)
-                    pr = problem(b, decl, rho, v["cluster_k"], min_ref, shift=delta or 0.0)
-                    row.update(tau=pr.tau, n_ref=pr.n_ref, k_ref=int(pr.rd.sum()), n_old=pr.n_old,
-                               older_detections=int(pr.od.sum()), r_ref=";".join(f"{r:.4g}" for r in pr.r_ref))
-                    row.update(readouts(pr))
-                    rows.append(row)
-                    print(design["id"], vkey(v), min_ref, rho, result, flush=True)
-    return rows
+                for r in csv.DictReader(open(OUT / f"{prefix(decl)}_screen.csv"))}
+    jobs = [(design["id"], v, min_ref, rho) for design in decl["design"] for v in dz.variants(design, decl)
+            for min_ref in decl["common"]["min_ref_units"] for rho in decl["common"]["rho"]
+            if screened[(design["id"], vkey(v), min_ref, rho)]]
+    with Pool(workers) as pool:
+        return pool.map(_result, jobs, chunksize=1)
 
 
 def write(path: Path, rows: list[dict]) -> None:
@@ -163,12 +169,12 @@ def main() -> None:
     OUT.mkdir(exist_ok=True)
     if sys.argv[1:] == ["screen"]:
         rows = run_screen()
-        write(OUT / "m2_screen.csv", rows)
+        write(OUT / f"{prefix(dz.declarations())}_screen.csv", rows)
         for r in rows:
             if r["primary"]:
                 print({k: r.get(k) for k in ("design", "rho", "status", "n_ref", "k_ref", "n_old", "lr_f1", "crit")})
-    elif sys.argv[1:] == ["results"]:
-        write(OUT / "m2_results.csv", run_results())
+    elif sys.argv[1:2] == ["results"]:
+        write(OUT / f"{prefix(dz.declarations())}_results.csv", run_results(int(sys.argv[2]) if len(sys.argv) > 2 else 8))
     else:
         raise SystemExit("usage: m2.py screen | results")
 

@@ -9,6 +9,7 @@ Each generated unit keeps its source key, the named reading, the variant and the
 binary outcome traces to a literal source report (data/units/). Source tables are never edited here.
 
     uv run models/f3/designs.py      # writes out/m2_units.csv: every generated row of every variant
+    F3_DESIGNS=models/f3/designs/<other>.toml uv run models/f3/designs.py   # another declaration file
 
 Rules (RULES; designs/m2.toml states them in prose):
   libya-chart-v1  Abuhmida (2013): appendix entry with an exact chart row; >= 1 marine-group symbol;
@@ -22,6 +23,7 @@ Rules (RULES; designs/m2.toml states them in prose):
 import csv
 import itertools
 import math
+import os
 import tomllib
 from dataclasses import dataclass, field
 from pathlib import Path
@@ -33,7 +35,7 @@ import sim
 
 ROOT = Path(__file__).resolve().parents[2]
 UNITS = ROOT / "data" / "units"
-DESIGNS = Path(__file__).resolve().parent / "designs" / "m2.toml"
+DESIGNS = Path(os.environ.get("F3_DESIGNS", Path(__file__).resolve().parent / "designs" / "m2.toml"))
 OUT = Path(__file__).resolve().parent / "out"
 RULES = {"libya": "libya-chart-v1", "qusaiba": "qusaiba-table2-v1", "borenshult": "borenshult-outcomes-v1"}
 TS = sim.Timescale.load()
@@ -269,7 +271,7 @@ def main() -> None:
         if k not in seen:
             seen.add(k)
             rows.append(r)
-    with open(OUT / "m2_units.csv", "w", newline="") as f:
+    with open(OUT / f"{decl['common']['maximum'].lower()}_units.csv", "w", newline="") as f:
         w = csv.DictWriter(f, list(out[0]), lineterminator="\n")
         w.writeheader()
         for r in rows:

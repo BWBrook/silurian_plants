@@ -22,7 +22,7 @@ Acceptance quantities (delivered coverage among passing replicates, at the truth
   f_<K>         f*_K(t0) contains abar_rel and LR_K(abar_rel) <= crit, both converged (K containing the truth);
   o_<K>_<f>     the origin set at f_min = f contains t0: exact statistic at t0 <= crit and the grid point
                 at or below t0 kept, both converged (H0c only for constant truths; H0m for monotone ones);
-  w_<f>         the window read-out (H0, start 459.1) likewise, when a >= f on (459.1, t0].
+  w_<f>         the window read-out (H0, start = [common] window_start_ma) likewise, when a >= f on (start, t0].
 A replicate whose first appearance reaches t0 makes no claim there and covers. Margins (statistic minus
 the unshifted critical value; inf for a failed output) give the calibration shift, as in validate.py.
 """
@@ -62,7 +62,7 @@ def path_for(cell: dict, tau0: float, ctx: dict):
     elif h == "ramp":
         mid = lambda t: (t0 - t) / (t0 - tau0)
     elif h == "window":
-        mid = lambda t: np.where(t <= 459.1, 1.0, f)
+        mid = lambda t: np.where(t <= ctx["start"], 1.0, f)
     elif h in ("hide", "hide_h1"):
         height = cell.get("pulse", 1.0) if h == "hide_h1" else 1.0
         edges = np.unique(np.r_[tau0, t0, ctx["bases"][(ctx["bases"] > tau0) & (ctx["bases"] < t0)]])
@@ -103,6 +103,7 @@ class Context:
         self.variant = {k: p[k] for k in p if k != "min_ref_units"}
         self.min_ref, self.k = p["min_ref_units"], p["cluster_k"]
         self.rho = rho
+        self.start = self.decl["common"]["window_start_ma"]
         self.built = dz.build(self.design, self.variant)
         self.units, _ = self.built.units(rho)
         self.transported = np.array([r.transported for r in self.built.rows])
@@ -142,7 +143,7 @@ def simulate(ctx: Context, cell: dict, rng: np.random.Generator):
     rates = ctx.rates(cell)
     mult = ctx.units.mult * np.where(ctx.transported, cell.get("rho_true_factor", 1.0), 1.0)
     k = cell.get("k_true", ctx.k)
-    path = path_for(cell, ctx.tau0, dict(bases=ctx.age.base, density=ctx.density(rates, mult)))
+    path = path_for(cell, ctx.tau0, dict(bases=ctx.age.base, density=ctx.density(rates, mult), start=ctx.start))
     t = np.empty(len(ctx.units.d))
     for g in ctx.groups:
         # deeper units are older: sorted uniforms assigned by depth (Qusaiba/Borenshult depths in metres
@@ -188,7 +189,11 @@ def replicate(job) -> dict:
             return out
         out["passed"] = True
         spec = ev.Spec(**{**ctx.spec0.__dict__, "crit_shift": shift})
-        pr = ev.Problem(units, spec, ctx.age)
+        try:
+            pr = ev.Problem(units, spec, ctx.age)
+        except ev.NoFirstAppearance:
+            out["trivial"] = True  # no calibrated first appearance: the analysis abstains
+            return out
         out.update(_analyse(ctx, cell, pr, path, rates, mult))
     except Exception as e:  # a failure after passing stays in the denominator as a miss
         out["error"] = f"{type(e).__name__}: {e}"
@@ -197,8 +202,8 @@ def replicate(job) -> dict:
 
 def _analyse(ctx: Context, cell: dict, pr: ev.Problem, path, rates, mult) -> dict:
     t0 = cell["t0"]
-    out = dict(tau=pr.tau)
     trivial = t0 <= pr.tau or pr.exposure(t0) <= 0
+    out = dict(tau=pr.tau, trivial=trivial)
     crit0 = ev.count_crit(pr.n_older_detections(t0), pr.spec.alpha)
     crit = crit0 + pr.spec.crit_shift
     first = pr.s_star - pr.spec.reference_stages + 1
@@ -230,8 +235,8 @@ def _analyse(ctx: Context, cell: dict, pr: ev.Problem, path, rates, mult) -> dic
             for f in applicable(cell, path, ctx.tau0, 1.0, None, lag if K == "H0m" else 0.0):
                 out.update(_point(pr, f"o_{K}_{f:g}", K, f, t0, g_below, crit0, crit, None, trivial))
     if "H0" in m:
-        for f in applicable(cell, path, ctx.tau0, 1.0, 459.1, 0.0):
-            out.update(_point(pr, f"w_{f:g}", "H0", f, t0, g_below, crit0, crit, 459.1, trivial))
+        for f in applicable(cell, path, ctx.tau0, 1.0, ctx.start, 0.0):
+            out.update(_point(pr, f"w_{f:g}", "H0", f, t0, g_below, crit0, crit, ctx.start, trivial))
     out["n_fits"], out["n_failed"] = pr.n_fits, pr.n_failed
     return out
 
@@ -264,7 +269,7 @@ def _ctx(design_id: str, rho: float) -> Context:
 
 def cells(decl: dict, diagnostics: bool = True) -> list[dict]:
     q = decl["qualification"]
-    out = [dict(c, kind="acceptance") for c in q["cells"]]
+    out = [dict(c, kind="acceptance") for c in q["cells"] + decl["amendment_2"]["cells_added"]]
     if diagnostics:
         out += [dict(c, kind="diagnostic") for c in q["diagnostics"] + decl["amendment_1"]["diagnostics_added"]]
     return [dict(c, index=i) for i, c in enumerate(out)]
@@ -288,6 +293,15 @@ def run_cell(pool, design_id, rho, cell, root, shift, target, cap, first_rep=0) 
     return passing, attempts
 
 
+def resolve(cell: dict, ctx: "Context") -> dict:
+    """Boundary cells (amendment 2): the truth's f is the data's own reported f* at shift 0."""
+    if "f_data" not in cell:
+        return cell
+    K, T = {"fstar_H0c_far": ("H0c", ctx.decl["common"]["domain_ma"]), "fstar_H0_469.4": ("H0", 469.4)}[cell["f_data"]]
+    b = ctx.data.fstar(K, T)
+    return dict(cell, f=float(min(b.value, 1.0)))
+
+
 def quantities(rows: list[dict], cell: dict) -> list[str]:
     keys = sorted({k[2:] for r in rows for k in r if k.startswith("c_")})
     return keys
@@ -300,6 +314,9 @@ def summarise(rows: list[dict], cell: dict, attempts: int, target: int) -> dict:
     for q in quantities(rows, cell):
         hits = [r.get(f"c_{q}", True) and not r["error"] for r in rows]
         s[f"cover_{q}"] = sum(hits)
+        claims = [r for r in rows if r["error"] or not r.get("trivial", False)]
+        s[f"claims_{q}"] = len(claims)
+        s[f"claimmiss_{q}"] = sum(1 for r in claims if r["error"] or not r.get(f"c_{q}", True))
         margins = [math.inf if r["error"] else r.get(f"m_{q}", -math.inf) for r in rows]
         s[f"delta_{q}"] = va.shift_to_target(margins) if rows else math.nan
     return s
@@ -346,7 +363,9 @@ def main() -> None:
     t_start = time.time()
     summaries, reps = [], []
     with Pool(a.workers) as pool:
+        ctx = _ctx(a.design, a.rho)
         for cell in todo:
+            cell = resolve(cell, ctx)
             rows, attempts = run_cell(pool, a.design, a.rho, cell, root, shift, target, cap, first_rep)
             summaries.append(summarise(rows, cell, attempts, target))
             reps += rows

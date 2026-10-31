@@ -176,3 +176,23 @@ diagnostics = [
 [amendment_1]
 screen = "S0 and S1 on the design with transported-unit outcomes set to 0, unshifted critical value"
 diagnostics_added = [{ name = "X3", history = "H0c", f = 0.3, t0 = 470.0, reference_p = "lower-95" }]
+
+# --- amendment 2 (2026-10-31, Claude), after the independent review and before the final qualification -
+# Finding (Claude Sonnet 5.5 review): under the first-appearance rule a truth with appreciable older
+# intensity makes older units detect, tau moves past them and the analysis abstains; abstentions count as
+# covering, so cells Q1-Q3 and Q7 were almost entirely abstentions (H2, Q2: 2961 of 2997) and the
+# acceptance had little power. Coverage of a claim given that it is made cannot be the criterion: claims
+# are made only when the older units are empty. The criterion is stated as what it is, the false-claim
+# rate: among screen-passing replicates, P(a reported bound, origin set or window read-out excludes the
+# truth) <= 0.05, abstentions covering. Repairs:
+#   - boundary cells B1 and B2, constant truth from 470 Ma at the design's own reported f*_H0c (all
+#     exposure) and f*_H0 (to 469.4) at shift 0: there claims are frequent and a miscalibration shows;
+#   - every quantity reports its non-trivial count (claims made) and the misses among them;
+#   - an analysis without a calibrated first appearance after the screen passed is an abstention, not
+#     an error.
+[amendment_2]
+criterion = "false-claim rate among screen-passing replicates, abstentions covering; non-trivial n and misses reported"
+cells_added = [
+  { name = "B1", history = "H0c", f_data = "fstar_H0c_far", t0 = 470.0 },
+  { name = "B2", history = "H0c", f_data = "fstar_H0_469.4", t0 = 470.0 },
+]

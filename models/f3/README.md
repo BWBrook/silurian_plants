@@ -851,3 +851,69 @@ and re-score unchanged. 170 F3 tests pass.
 - The supremum is found by local search from three starts, with one repair restart when the selected run did not converge; a missed optimum makes the statistic too large (f* too small, anti-conservative). Per-result status, the spread flag and the nesting checks are the guard; there is no proof of global optimality, and a failed statistic counts against coverage.
 - The target weights follow the rates being profiled (Codex R2), so the constraint is bilinear when two or more classes carry older exposure across two or more pieces. SLSQP handles it from the same starts; a differential-evolution check agrees on one two-class design, which is not a certificate for every design.
 - `Spec.from_toml` requires every inference field; the draft specification declares the `Spec` defaults (`test_draft_specification_sets_every_inference_field`).
+
+## Step 5: real designs (sprint 1, 2026-10-31)
+
+Claude Opus 5.5. The M2 result and its audit are `docs/audits/2026-10-31-m2-real-designs.md`. This
+section is the interface sprint 2 (M1, M3) uses without a new design negotiation.
+
+### Files
+
+- `designs/m2.toml`: frozen declarations for one maximum. It holds the designs and their variant axes,
+  the screen, the ρ grid, the reference minima, the window start, the qualification cells and seeds, and
+  dated amendments. A new maximum gets its own file (for example `designs/m1.toml`) with the same
+  tables, committed before its first screen; select it with `F3_DESIGNS=models/f3/designs/m1.toml`.
+- `designs.py`: the adapter. One builder per source (`libya`, `qusaiba`, `borenshult`) returns `Row`s
+  (`unit_id`, `source`, `cluster_name`, `cls_name`, optional `rate_class`, `young`/`old` stage
+  indices, optional `lo_ma`/`hi_ma`, `d`, `transported`, `rule`, `evidence`, `depth`, `formation`) and
+  the excluded entries with reasons. `variants()` and `build()` map a `[[design]]` and a variant to rows.
+  A new source needs a builder and a line in each of those two functions. `Built.units(rho)` makes the
+  engine's `Units`, multiplying the transported rows' rates by ρ.
+- `m2.py screen | results [workers]`: the screen, shared with the simulator, writes
+  `out/<max>_screen.csv` for every variant. The read-outs at each design's qualified shift go to
+  `out/<max>_results.csv`: f\*_K at `[common] report_ma` (default the M2 ages), origin sets and the
+  window read-out at each f_min.
+- `qualify.py --design D --rho R --phase calibrate|accept|stage2 [--workers N]` writes
+  `out/qual/<D>_rho<R>_<phase>.json` (cells, attempts, passes, coverage counts, shift, verdicts, code
+  hashes) and `..._reps.csv.gz` (one row per passing replicate). `--phase dev --target 40` is a smoke
+  run on root seed 20261100.
+
+### Engine support added (`envelope.py`)
+
+- `Units.mult`: a fixed rate multiplier per unit (a declared transport ratio).
+- `Units.lo_ma`, `hi_ma`: a numerical age range inside the stage range. Their ends become piece edges,
+  so the chord bound still sees whole pieces.
+- `Spec.fa_rule`: `"certain"` (default) or `"oldest-possible"`. The second sets τ at the base of the
+  oldest stage any detected unit can occupy, for designs whose reference units span several stages.
+- `origin_stat`/`origin_set(..., start=)`: the window read-out, H0 only. It tests "a ≥ f_min on
+  (start, T]" with any path in [0, 1] on (τ, start].
+
+`test_designs.py` (11 tests) has the known answers to check a handoff against:
+- a uniform multiplier ρ on the older units equals the constant history ρf at multiplier 1;
+- with multipliers, the engine's constant-history statistic equals the homogeneous profile
+  (`screen.profile_lr`) with m replaced by Σρ;
+- a numerical range equal to the stage range changes nothing;
+- the window read-out equals the origin test when no unit lies after its start, and it cannot reject
+  on units that lie wholly after it;
+- the H2 adapter yields 8 reference cuttings (7 marked) and 9 empty older cuttings.
+
+### Validated settings and what is not supported
+
+Qualified (receipts in `out/qual/`):
+- first-appearance rule `oldest-possible`; five reference stages; reference minimum 5 (10 reported);
+- cluster shape k = ∞ within one well and k = 2 across wells or cores;
+- ρ ∈ {1, 0.5, 0.25, 0.1}, applied to transported units only;
+- origin grid step 0.5 Myr, domain edge 560 Ma; read-outs f_min ∈ {1, 0.1, 0.01};
+- the amended screen.
+
+Every combination that passed the screen needed no shift and passed acceptance at stage 1.
+
+Not supported, and not to be assumed:
+- estimating ρ, or a between-section variance from one section;
+- a contamination model for positives among older units (caving is handled by τ's rule and by ρ);
+- joint ordered ages in the estimator. It treats ages as independent, which is exact for exchangeable
+  all-negative older units of one class; the simulator orders them by depth;
+- screens computed on full outcomes (amendment 1).
+
+A design whose screen fails makes no claim. The cap of 20,000 attempts means "qualification incomplete
+under this budget", not non-identifiability.
