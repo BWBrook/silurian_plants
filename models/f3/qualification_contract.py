@@ -14,6 +14,7 @@ import validate as va
 SCHEMA = "f3-real-qualification-v1"
 PHASES = ("calibrate", "accept", "stage2", "dev")
 DERIVED_TOLERANCE = dict(absolute=1e-8, relative=1e-8)
+SCREEN_CRITICAL_ULPS = 8
 
 
 class EvidenceError(ValueError):
@@ -189,7 +190,10 @@ def summarise(rows: list[dict], cell: dict, target: int, cap: int, shift: float,
             n = integer(row.get("screen_n_older_detections"), "screen older-detection count")
             lr, critical = row.get("screen_lr"), row.get("screen_crit")
             require(type(lr) in (int, float) and math.isfinite(lr) and lr >= 0, f"{name}: invalid screen statistic")
-            require(type(critical) in (int, float) and critical == va.ev.count_crit(n), f"{name}: wrong screen critical value")
+            expected_critical = va.ev.count_crit(n)
+            require(type(critical) in (int, float) and math.isfinite(critical) and math.isfinite(expected_critical)
+                    and abs(critical - expected_critical) <= SCREEN_CRITICAL_ULPS * math.ulp(expected_critical),
+                    f"{name}: wrong screen critical value")
             require(row["passed"] == (lr > critical), f"{name}: screen flag contradicts its statistic")
         else:
             require(not row["passed"] and status in {"no-first-appearance", "error"}, f"{name}: missing or invalid screen status")

@@ -365,3 +365,43 @@ def test_window_boundary_path_is_nonmonotone_and_not_scored_as_h0m():
     assert qa.members(b4) == {"H0", "H1"}
     q8 = next(c for c in qa.cells(declaration) if c["name"] == "Q8")
     assert q8["after"] == 1 and qa.members(q8) == {"H0m", "H0", "H1"}
+
+
+def test_nectar_screen_critical_value_revalidates_on_mac(monkeypatch, binding):
+    """5fcee58 LY-H2-CU/rho1 calibration Q1: Nectar 5.991464547107979, Mini 5.991464547107980."""
+    cell = binding["grid"][0]
+    rows = rows_for([cell])
+    for row in rows:
+        row["screen_crit"] = 5.991464547107979
+    monkeypatch.setattr(ev, "count_crit", lambda n: 5.991464547107980)
+    summary = qc.summarise(rows, cell, 1000, 20000, 0.0, .955)
+    assert summary["complete"] and summary["cover_f_H0"] == 1000
+    rows[0]["screen_lr"] = rows[0]["screen_crit"]
+    with pytest.raises(qc.EvidenceError, match="screen flag contradicts"):
+        qc.summarise(rows, cell, 1000, 20000, 0.0, .955)
+
+
+@pytest.mark.parametrize("ulp_count,allowed", [(8, True), (-8, True), (9, False), (-9, False)])
+def test_screen_critical_tolerance_is_bounded_to_roundoff(binding, ulp_count, allowed):
+    cell = binding["grid"][0]
+    rows = rows_for([cell])
+    expected = ev.count_crit(0)
+    rows[0]["screen_crit"] = expected + ulp_count * math.ulp(expected)
+    if allowed:
+        assert qc.summarise(rows, cell, 1000, 20000, 0.0, .955)["complete"]
+    else:
+        with pytest.raises(qc.EvidenceError, match="wrong screen critical"):
+            qc.summarise(rows, cell, 1000, 20000, 0.0, .955)
+
+
+@pytest.mark.parametrize("nonfinite", [math.inf, -math.inf, math.nan])
+@pytest.mark.parametrize("field", ["stored", "expected"])
+def test_screen_critical_values_must_both_be_finite(monkeypatch, binding, nonfinite, field):
+    cell = binding["grid"][0]
+    rows = rows_for([cell])
+    if field == "stored":
+        rows[0]["screen_crit"] = nonfinite
+    else:
+        monkeypatch.setattr(ev, "count_crit", lambda n: nonfinite)
+    with pytest.raises(qc.EvidenceError, match="wrong screen critical"):
+        qc.summarise(rows, cell, 1000, 20000, 0.0, .955)

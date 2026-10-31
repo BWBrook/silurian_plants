@@ -106,3 +106,59 @@ accepted on the 12-cell grid, with three additional calibration diagnostics.
 Target/cap remain 1,000 passing/20,000 attempts per cell. Stage 2 runs only for
 validated borderline quantities. Historical outputs are retained until the
 new evidence is checked and the affected empirical read-outs are regenerated.
+
+## Source and interpretation checks
+
+The independent source audit reconstructed all 36 Libyan variant groups and four
+QB groups, including the 37-column, eight-trilete-row Qusaiba chart (22 positive
+columns). Five primary PDF hashes matched. The primary Murzuq reference is
+51/59, with 28 empty older cuttings: 56 reference rows are Cr4-only, two span
+Cr3/Cr4 and I3 4640 ft is Cr3-only. The chart-priority reading preserves the
+conflict with prose claiming only one Cr3 specimen. All 35 exact-Hawaz materials
+include 25 cores, eight appendix-specified cuttings and two unspecified materials
+coded CU on the chart; only ten enter the primary cutting contrast. Their green
+chart marks range from 6–10, versus 3–16 across all 35 materials.
+
+The independent method check identified a zero-exposure Sandbian gap. A
+reference-level pulse there has calendar-time mean 0.3375 on 443.1–459.1 Ma,
+but exposure-weighted mean zero. The reported bound is therefore explicitly
+weighted, not a calendar-time limit. Cryptospore recovery establishes a delivery
+and preservation route but does not identify a trilete transport ratio. Recovery
+ages of potentially caved fossils cannot securely establish indigenous appearance.
+The current audit and combined synthesis state these limits.
+
+## Contract repairs
+
+Receipts now bind consumed source tables, generated units, statistical code,
+active declarations, runtime and a predeclared quantity/phase roster. Every
+consumed attempt is retained. Verification reconstructs the summary, calibrated
+shift and verdict, checks the exact predecessor chain, and refuses incomplete,
+stale or malformed evidence. Failed optimisation before the screen blocks
+qualification rather than disappearing from its population. Nonprimary variants
+cannot inherit a primary pass. QB main/zero is an inadmissible coding diagnostic.
+These repairs leave the estimator itself unchanged.
+
+## Cross-host loader defect found by the completed-run check
+
+The first full counter-review run at `5fcee58` completed all fourteen calibration
+and acceptance pairs, with zero shifts and every acceptance passing. The
+regenerated 168 empirical rows have no numerical/design change from `f08afb4`;
+labels distinguish fourteen qualified primaries, 144 unqualified sensitivities
+and ten inadmissible coding diagnostics. An independent checker reconstructed
+all saved numerical evidence.
+
+Loading those receipts on the Mac nevertheless failed closed: the stored Linux
+screen critical value 5.991464547107979 differed by one binary ULP from the
+Mac's recomputation, 5.991464547107980. The original implementation compared
+them exactly. A cross-host binding comparison had not exercised this load path.
+The narrow repair permits eight ULPs only for this independently recomputed
+critical value, with both values finite. The recorded LR > recorded critical
+screen decision, raw files, counts and dependency hashes remain exact.
+The method and truth grid are unchanged. The repaired code is frozen and the
+full run repeated against it, using the same seeds; the old package remains
+historical rather than being silently rebound to new code.
+
+The portability fix passed independent read-only review, the 58-test contract
+suite and the complete 239-test F3 suite. Regressions accept the measured one-ULP
+cross-host difference and the eight-ULP boundary, reject nine ULPs, reject all
+nonfinite stored/recomputed values, and still reject a contradictory screen flag.
