@@ -3,4 +3,4 @@ Borenshult-1,homogeneous independent; one comparable class; fixed reference memb
 Borenshult-1,homogeneous independent; one comparable class; fixed reference membership,1.0,inclusive,complete reported-category,H0,1.0,7,31,3,1.5356,1.4567,inf,inf,False,ceiling-limited
 Borenshult-1,homogeneous independent; one comparable class; fixed reference membership,1.0,inclusive,complete reported-category,H1,3.0,7,31,3,4.6068,3.9802,inf,inf,False,ceiling-limited
 Borenshult-1,homogeneous independent; one comparable class; fixed reference membership,1.0,inclusive,explicit-only (optimistic diagnostic),H0,1.0,7,17,3,3.1838,2.8631,inf,inf,False,ceiling-limited
-Borenshult-1,homogeneous independent; one comparable class; fixed reference membership,1.0,inclusive,explicit-only (optimistic diagnostic),H1,3.0,7,17,3,9.5513,7.2548,1.882,2.358,False,finite above f = 2.36
+Borenshult-1,homogeneous independent; one comparable class; fixed reference membership,1.0,inclusive,explicit-only (optimistic diagnostic),H1,3.0,7,17,3,9.5513,7.2548,1.882,2.358,False,not ceiling-limited; constant-path threshold 2.36 (the class bound is no lower)

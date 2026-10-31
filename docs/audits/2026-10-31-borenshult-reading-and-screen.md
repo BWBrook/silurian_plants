@@ -80,7 +80,7 @@ The most favourable conversion is taken on each side:
 | inclusive, explicit-only reference (optimistic diagnostic) | 48.2 m | 7 of 17 | 3 | 3.18 | 2.86 | ceiling-limited |
 
 H1 (ceiling 3) is ceiling-limited under the complete conversion. Under the optimistic explicit-only
-conversion it is finite above f ≈ 2.4, or 2.59 in the engine. That bound concerns intensities above
+conversion it is not ceiling-limited: the constant-path threshold is 2.36 and the full H1 engine bound is 2.59. That bound concerns intensities above
 twice the reference, not absence.
 
 For *T* = 459.1 Ma itself the inclusive case is weaker still. Only 59.1 m (about 459 Ma on the

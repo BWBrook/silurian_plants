@@ -1,0 +1,14 @@
+{
+  "inputs": {
+    "out/diagnostics_maps.csv": "d3a3330d791dbfffb754a42557116e08cc86de645a1bad2ceeed04930c8bd262",
+    "out/diagnostics_maps_ext_b10000_s100.csv": "de35d89444614944da0b82d3dff94eb0e754564647100a9d4cd50b2fe53a610a"
+  },
+  "coda": "0.19.4.1",
+  "outputs": {
+    "out/diagnostics_chains.csv": "4acc7efd7201c5a7221de822735ef980caff0617e729b32a55feb24d8a4e70e6",
+    "out/diagnostics_summary.csv": "9118105c87cc1102f260d72df5101d417ed56a69b7ef275d7879480b4e8ef3b4",
+    "out/diagnostics_chains_ext_b10000_s100.csv": "1efa3696b62d57cfae98d5d989d2b7e13ff2ed8b7409ae33c8b2a4a6b7e67bdc",
+    "out/diagnostics_summary_ext_b10000_s100.csv": "18f741c91b1994733e0f224ba3d3cf435e073bc95a9468b54bf8fdb7edc9e5a8",
+    "out/retention_chains.csv": "f7abd09e6e64b2a64072d346a5fe7d7f5806f75da9ffb8b3d05f63a5e80a9e08"
+  }
+}

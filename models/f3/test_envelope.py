@@ -1033,6 +1033,8 @@ def test_stage_two_refuses_bound_states_outside_the_engine_invariants(tmp_path, 
         ([dict(r, state_H0c="zero-exposure") if i == j else r for i, r in enumerate(below)], "malformed"),
         ([dict(r, state459_H0c="bogus") if i == j else r for i, r in enumerate(rows)], "malformed"),
         ([dict(r, **{"state_H1-no-ceiling": "finite"}) if i == j else r for i, r in enumerate(rows)], "malformed"),
+        # Codex's second case: zero exposure with no value, yet a finite truth and truth-point statistic retained
+        ([dict(r, state_H0c="zero-exposure", fstar_H0c=math.nan) if i == j else r for i, r in enumerate(rows)], "malformed"),
     ):
         evidence = _write_stage1(tmp_path, bad_rows, [summary])
         with pytest.raises(SystemExit, match=match):

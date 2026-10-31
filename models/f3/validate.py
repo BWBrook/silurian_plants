@@ -393,8 +393,13 @@ def summarise(cell: dict, rows: list[dict]) -> dict:
             raise ValueError(f"replicate {r.get('rep')!r} of {r.get('cell')!r}: state_H1-no-ceiling {r['state_H1-no-ceiling']!r}")
     for cls in evaluated_classes(truth, spec):
         for r in ok:
-            bound_state(r, cls, spec.h1_ceiling if cls == "H1" else 1.0)
+            state = bound_state(r, cls, spec.h1_ceiling if cls == "H1" else 1.0)
             bound_state(r, cls, spec.h1_ceiling if cls == "H1" else 1.0, "459")
+            # replicate() computes the truth-point statistic exactly when the bound has exposure and a finite truth
+            tested = not flag(r, "trivial") and state != "zero-exposure" and np.isfinite(r["abar_rel"])
+            if (r.get(f"lr_{cls}") is not None) != tested or (not tested and r.get(f"lr_nominal_{cls}") is not None):
+                raise ValueError(f"replicate {r.get('rep')!r} of {r.get('cell')!r}: lr_{cls} {r.get(f'lr_{cls}')!r} "
+                                 f"inconsistent with state {state!r}, trivial {r['trivial']!r}, truth {r['abar_rel']!r}")
         bound_ok = lambda r: flag(r, f"ok_fstar_{cls}")
         for label, key, target in (("", f"lr_{cls}", "abar_rel"), ("_nominal", f"lr_nominal_{cls}", "abar_nominal_rel")):
             if label and not any(r.get(key) is not None for r in ok):

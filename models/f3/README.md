@@ -828,7 +828,10 @@ invariants before scoring:
 - an empty 459 Ma state means the origin is not older than τ;
 - `H1-no-ceiling` is `unbounded` or `zero-exposure`.
 
-Anything else is malformed evidence. A new test covers the renamed tags. All 66,000 current-format stored rows pass
+Anything else is malformed evidence. Codex's second review added a cross-field case: a `zero-exposure` bound that
+kept a finite truth and a truth-point statistic. The truth-point statistic must now be present exactly when the
+replicate is non-trivial, exposed and has a finite truth, as `replicate()` computes it. A new test covers the renamed
+tags and that case. All 66,000 current-format stored rows pass
 and re-score unchanged. 170 F3 tests pass.
 
 ### Open choices

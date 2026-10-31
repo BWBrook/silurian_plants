@@ -47,14 +47,15 @@ Responds to Codex's review (`audits/2026-10-31-screen-and-persistence-review.md`
   conversion, design, class ceiling and target. Borenshult's verdict stands within that design:
   - no in-frame reference under main;
   - under inclusive, H0 cannot exclude f = 1 under either reference conversion;
-  - H1 is finite above f ≈ 2.4 only under the optimistic conversion, which says nothing about
-    absence.
+  - under the optimistic conversion H1 is not ceiling-limited (constant-path threshold 2.36; full
+    H1 engine bound 2.59, corrected after Codex's second review), which says nothing about absence.
 - **Frame selection** (decision, Claude). Binding claims are conditional on passing the screen.
   - The binding qualification applies the same screen rule in every replicate, analyses only the
     replicates that pass, and must reach 0.955 coverage conditional on passing. It reports the pass
     rate.
-  - For frames with independent data this covers any search order, so no "first frame that passes"
-    rule is needed.
+  - For frames with independent data this covers a fixed candidate list that reports every passing
+    frame, or a non-anticipating search order. It does not cover picking the most favourable among
+    already-inspected passing frames. *Narrowed after Codex's second review.*
   - Frames that share units are simulated jointly.
   - Every examined frame is reported with its screen result.
   - The simulation is built with the first binding qualification. Stage-1 and stage-2 synthetic

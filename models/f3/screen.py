@@ -106,7 +106,8 @@ def borenshult() -> list[dict]:
                     m_older=m, lr_known_at_ceiling=round(2 * m * C * rate(k, n), 4),
                     lr_profile_at_ceiling=round(profile_lr(k, n, m, C), 4), f_known=f"{known:.4g}", f_profile=f"{profiled:.4g}",
                     excludes_target=profiled <= TARGET_F,
-                    verdict="ceiling-limited" if math.isinf(profiled) else f"finite above f = {profiled:.3g}"))
+                    verdict="ceiling-limited" if math.isinf(profiled)
+                    else f"not ceiling-limited; constant-path threshold {profiled:.3g} (the class bound is no lower)"))
     return out
 
 

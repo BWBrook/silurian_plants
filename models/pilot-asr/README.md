@@ -75,9 +75,12 @@ crown nodes, as context. X26 is read for state 4 (trilete or inaperturate monad)
 - `out/persistence.csv`: B, by tree, character and path.
 - `out/retention.csv`: C.
 - `out/receipt.json`: input hashes, seeds, R and package versions.
-- `out/diagnostics_*.csv`, `out/diagnostics_receipt*.json` and `out/retention_chains.csv`: the
-  diagnostic chains, from `asr_diagnostics.R` and `retention_chains.R`. Shared inputs and path
-  readers are in `common.R`.
+- `out/diagnostics_maps*.csv` and `out/diagnostics_receipt*.json`: the kept chains, from
+  `asr_diagnostics.R`. The generation receipts' hashes for the chain and summary tables refer to the
+  first summaries, which are superseded.
+- `out/diagnostics_chains*.csv`, `out/diagnostics_summary*.csv`, `out/retention_chains.csv` and
+  `out/summary_receipt.json`: summaries of the kept chains, from `summarise_chains.R`. Shared inputs
+  and path readers are in `common.R`.
 - The run script is `asr_persistence.R`. Packages are pinned in `renv.lock`, the project-local renv
   this directory activates through `.Rprofile`; restore them with `Rscript -e 'renv::restore()'`.
   The lockfile was written with `renv::snapshot(force = TRUE)`, because phangorn (a phytools
@@ -203,12 +206,14 @@ refactor, reproduces every earlier value exactly; `mean_returns` is renamed `mea
 
 | Tree | Chain settings | R-hat q₃ | Pooled ESS q₃ | Persistence given a trilete start | MCSE | Range over chains | Reproduction value inside? |
 |---|---|---|---|---|---|---|---|
-| extant only | Hooper | **1.111 (fails)** | 416 | 0.97 (0.969; 101 departures in 3,299 starts) | 0.004 | 0.030 | (unconverged) |
+| extant only | Hooper | **1.111 (fails)** | 416 | 0.97 (0.969; 101 departures in 3,299 starts) | 0.007 | 0.030 | (unconverged) |
 | extant only | burn-in 10,000, thin 100 | 1.006 | 1,750 | **0.98** (0.977; 77 in 3,382) | 0.003 | 0.010 | 0.984: yes |
 | eophytes on the embryophyte stem | Hooper | 1.007 | 3,732 | **0.999** (3 in 3,876) | 0.0005 | 0.002 | 1.000: yes |
 | eophytes on the tracheophyte stem | Hooper | 1.000 | 3,909 | **0.99** (0.995; 20 in 3,788) | 0.001 | 0.004 | 0.998: yes |
 
-Every criterion passes on the converged runs. What changes:
+Every criterion passes on the converged runs. MCSEs pool independent chains through the variances of
+their means (corrected after Codex's second review; the first summary under-stated the failed
+extant run's MCSE, 0.004 against 0.007). What changes:
 - **The 1.000 was a zero count.** Departures do occur on the embryophyte-stem tree, 3 in 3,876
   starts. The reproduction chain happened to draw none of its 969.
 - **Extant-tree mixing.** At Hooper et al.'s settings the rate chain on the extant tree does not
@@ -231,7 +236,7 @@ Every criterion passes on the converged runs. What changes:
   | 500 | 0.919 (0.436–0.967) | 0.925 (0.852–0.964) | 0.923 (0.842–0.964) |
   | 515.5 | 0.894 (0.332–0.956) | 0.902 (0.808–0.953) | 0.899 (0.796–0.953) |
 
-  These come from `retention_chains.R`, which reads the kept rate traces. The widest interval at
+  These come from `summarise_chains.R`, which reads the kept rate traces. The widest interval at
   515.5 Ma now reaches 0.33, not 0.52.
 
 **Reading.** P1's persistence link stays supported under these models. Given a trilete crown
