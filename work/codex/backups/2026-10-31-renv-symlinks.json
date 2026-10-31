@@ -1,0 +1,234 @@
+{
+  "date": "2026-10-31",
+  "scope": "Authorised renv cache-link backup repair and successful production rerun; no scientific edits owned",
+  "code_commit": "e86a56f325d115b5edf8e929358acce3f8a812e1",
+  "source_root": "/Users/bwbrook/papers/silurian_plants",
+  "result": {
+    "generation": "/data/codex/silurian_plants/backups/mac-mini/snapshots/20261031T003729.813012Z",
+    "local_staging_cleanup": "complete",
+    "restore_test": {
+      "bytes": 18695575,
+      "external_renv_cache": "not_captured",
+      "files": 28,
+      "kind": "sample",
+      "sha256": "all_match",
+      "symlink_targets": "all_match",
+      "symlinks": 31,
+      "target": "/data/codex/silurian_plants/backups/mac-mini/restore-tests/20261031T003729.813012Z"
+    },
+    "scrub": null,
+    "timings": {
+      "capture_seconds": 6.9,
+      "inventory_seconds": 1.245,
+      "publish_seconds": 78.003,
+      "source_hash_seconds": 2.852,
+      "total_seconds": 822.434,
+      "transfer_seconds": 704.725
+    },
+    "transfer_stats": {
+      "attempts": 1,
+      "final_attempt": {
+        "Literal data": 1623842255,
+        "Number of regular files transferred": 1645,
+        "Total bytes sent": 1544171251,
+        "Total transferred file size": 1623842255
+      }
+    },
+    "verification": {
+      "bytes": 6847551589,
+      "external_renv_cache": "not_captured",
+      "files": 7155,
+      "fresh_files": 1645,
+      "git": {
+        "fsck": "ok",
+        "head": "e86a56f325d115b5edf8e929358acce3f8a812e1"
+      },
+      "inherited_files": 5510,
+      "seconds": 69.787,
+      "sha256": "fresh_match_inherited_metadata_trusted",
+      "symlink_targets": "all_match",
+      "symlinks": 31
+    }
+  },
+  "independent_remote_verification": {
+    "generation": "/data/codex/silurian_plants/backups/mac-mini/snapshots/20261031T003729.813012Z",
+    "latest": "snapshots/20261031T003729.813012Z/project",
+    "verification": {
+      "bytes": 6847551589,
+      "external_renv_cache": "not_captured",
+      "files": 7155,
+      "fresh_files": 1645,
+      "git": {
+        "fsck": "ok",
+        "head": "e86a56f325d115b5edf8e929358acce3f8a812e1"
+      },
+      "inherited_files": 5510,
+      "seconds": 69.787,
+      "sha256": "fresh_match_inherited_metadata_trusted",
+      "symlink_targets": "all_match",
+      "symlinks": 31
+    },
+    "restore_test": {
+      "bytes": 18695575,
+      "external_renv_cache": "not_captured",
+      "files": 28,
+      "kind": "sample",
+      "sha256": "all_match",
+      "symlink_targets": "all_match",
+      "symlinks": 31,
+      "target": "/data/codex/silurian_plants/backups/mac-mini/restore-tests/20261031T003729.813012Z"
+    },
+    "verified_link_and_lock_restores": 31,
+    "completed_generations_retained": 7,
+    "previous_generations_preserved": true,
+    "failed_staging_preserved": [
+      "20261031T003625.519491Z.partial"
+    ],
+    "weekly_scrub_due": false,
+    "last_scrub_unchanged": true,
+    "last_scrub": {
+      "completed_utc": "2026-10-28T23:58:27.831067+00:00",
+      "generation": "20261028T235736.413753Z",
+      "generations": 3,
+      "seconds": 5.439,
+      "status": "passed",
+      "unique_inodes": 4745
+    },
+    "sealed_read_only": true,
+    "remote_metadata_and_identity_verification": "passed",
+    "external_cache_contents_captured": false
+  },
+  "source_capture_inventory_stable": true,
+  "source_symlink_count": 31,
+  "local_capture_removed": true,
+  "local_staging_generations_retained": true,
+  "local_stage": "/private/tmp/silurian-plants-backup/20261031T003729.813012Z",
+  "attempts": [
+    {
+      "attempt": 1,
+      "outcome": "stopped safely on concurrent source drift during hashing",
+      "local_stage": "/private/tmp/silurian-plants-backup/20261031T003625.519491Z",
+      "failed_staging_retained": true
+    },
+    {
+      "attempt": 2,
+      "outcome": "verified and promoted",
+      "generation": "/data/codex/silurian_plants/backups/mac-mini/snapshots/20261031T003729.813012Z"
+    }
+  ],
+  "tests": {
+    "command": "python3 tools/test_backup_nectar.py",
+    "count": 28,
+    "result": "passed",
+    "log": "............................\n----------------------------------------------------------------------\nRan 28 tests in 18.415s\n\nOK\n"
+  },
+  "independent_code_review": {
+    "reviewed_at_utc": "2026-10-31T00:35:54.657002+00:00",
+    "scope": "Approved renv package-leaf symlinks and existing snapshot integrity and retention safeguards; no general symlink support.",
+    "reviewed_sha256": {
+      "tools/backup_nectar.py": "284e5a4f05928f51b488e47a9356d8f36f20928e1fefa6d83131c2b2b6bc797a",
+      "tools/test_backup_nectar.py": "757148c407332c86c9581bc6e5b118c6b15cc2d3294e62cd6543ce709d0c4177"
+    },
+    "verdict": "no_outstanding_material_findings_within_approved_renv_scope",
+    "findings": [],
+    "observations": [
+      "All 31 live checkout links were under models/pilot-asr/renv/library, targeted the expected v5 cache path and matched package versions in that project lockfile.",
+      "The patch records literal link targets and source link signatures separately; destination link identities omit device and ctime; source and destination symlink modes are not directly compared.",
+      "Manifest validation rejects a link that is a parent of another manifest path. Sample and full restore include links and their project lockfiles.",
+      "Old manifests, source inventories and identity receipts default missing symlink maps to empty. Code inspection supports legacy compatibility; the current legacy regression does not remove every newly introduced symlink key.",
+      "External cache bytes are deliberately not backed up; the receipts disclose this.",
+      "git diff --check passed. The parent is running the regression suite; this review did not independently run it or touch production.",
+      "Delta review: the parent reports the 28-test suite is running; this agent did not run the suite or access production. git diff --check passed.",
+      "Final delta review found no outstanding material issue in the approved renv leaf-link and backup-integrity scope. Retained generations are private and read-only by permissions, not WORM; capture is not a project-wide atomic snapshot. git diff --check passed. Parent reruns the suite; production was not accessed by this reviewer."
+    ],
+    "review_history": [
+      {
+        "reviewed_at_utc": "2026-10-31T00:33:38.267131+00:00",
+        "reviewed_sha256": {
+          "tools/backup_nectar.py": "35f599a13c47857fc247a302b2a054003616f0b15277fc19f228d4142788fcb8",
+          "tools/test_backup_nectar.py": "39c77af1c6fa8e8466a33ea47de2483e48d8f92a78be55a96747f38a96cc05f8"
+        },
+        "verdict": "changes_requested_for_strict_no_follow_claim",
+        "findings": [
+          {
+            "id": "restore-copy-follows-concurrently-replaced-ancestor",
+            "severity": "P2",
+            "location": "tools/backup_nectar.py:360-383",
+            "scenario": "A directory recorded as ordinary in a generation is replaced with a symlink after verify_metadata and before shutil.copy2 reads a descendant. copy2 follows ancestor symlinks and can read and copy external cache bytes before the checksum check. If the external file has the expected bytes, the check may also pass.",
+            "qualification": "Completed generations are normally sealed; this requires concurrent modification of a generation and is not the normal steady-state path.",
+            "recommendation": "Copy restore input through the descriptor-relative regular_file helper, with no-follow traversal and opened-file identity/stability checking; add a race regression that swaps an ancestor immediately before restore copying."
+          },
+          {
+            "id": "seal-chmod-follows-raced-links",
+            "severity": "P2",
+            "location": "tools/backup_nectar.py:402-413",
+            "scenario": "seal checks p.is_symlink and then separately calls p.stat/p.chmod. A file or directory component swapped to a symlink between those calls can cause chmod on a target outside the generation. The topdown=False directory pass also chmods by pathname.",
+            "qualification": "This requires a concurrent mutation while sealing; ordinary stable renv leaf links are skipped and are not chmodded.",
+            "recommendation": "Use directory_fd and fchmod on verified directory descriptors, and regular_file plus fchmod on verified file descriptors; skip approved symlink entries without following their targets. Add a link-swap-before-chmod regression."
+          },
+          {
+            "id": "inventory-stats-raced-ancestor",
+            "severity": "P3",
+            "location": "tools/backup_nectar.py:154-188",
+            "scenario": "inventory closes its safe directory fd after listdir, then calls path.lstat and os.readlink on pathnames. A concurrent replacement of the parent directory by a symlink can make those metadata lookups follow that ancestor. Later safe signature/file reads generally stop the capture, but an absolute no-target-dereference claim is not yet established.",
+            "recommendation": "Keep the verified directory descriptor open while doing os.stat(name, dir_fd=descriptor, follow_symlinks=False) and os.readlink(name, dir_fd=descriptor); test concurrent replacement of a package parent."
+          }
+        ]
+      },
+      {
+        "reviewed_at_utc": "2026-10-31T00:35:34.143116+00:00",
+        "reviewed_sha256": {
+          "tools/backup_nectar.py": "505b5146e18626be84cda3dd14ab7de6a04eef184d646c21d7d4a2978bd12c6c",
+          "tools/test_backup_nectar.py": "39c77af1c6fa8e8466a33ea47de2483e48d8f92a78be55a96747f38a96cc05f8"
+        },
+        "verdict": "changes_requested_for_incremental_integrity_and_missing_lock_diagnostics",
+        "findings": [
+          {
+            "id": "seal-fchmods-already-readonly-inherited-files",
+            "severity": "P2",
+            "location": "tools/backup_nectar.py:429-432",
+            "scenario": "seal unconditionally fchmods every regular inode. Unchanged files are hardlinked to prior generations, so even setting an unchanged mode changes their shared inode ctime and violates the existing no-op chmod safeguard.",
+            "recommendation": "After fstat, call fchmod only if mode has write bits; test by spying on fchmod for an already-readonly inherited inode. Whole-run ctime comparisons are unsuitable because hardlink creation itself can change ctime."
+          },
+          {
+            "id": "missing-lock-exception-wrapped",
+            "severity": "P3",
+            "location": "tools/backup_nectar.py:47-60,133-141",
+            "scenario": "directory_fd catches OSError thrown by its with-body; a missing final lockfile in path_stat is converted from FileNotFoundError to RuntimeError. check_renv_lock cannot catch it as intended, so the missing-lock regression and diagnostic fail. Reproduced with a nonexistent name in /private/tmp.",
+            "recommendation": "Restrict the OSError handler to directory-component opens; do not wrap exceptions raised by the caller inside the yielded context."
+          }
+        ]
+      }
+    ],
+    "resolved_findings": [
+      {
+        "id": "restore-copy-follows-concurrently-replaced-ancestor",
+        "resolution": "restore now reads input through descriptor-relative regular_file with O_NOFOLLOW"
+      },
+      {
+        "id": "seal-chmod-follows-raced-links",
+        "resolution": "seal now uses no-follow directory/file descriptors and fchmod; known manifest symlinks are matched and skipped"
+      },
+      {
+        "id": "inventory-stats-raced-ancestor",
+        "resolution": "inventory now uses path_stat and link_target, both of which resolve parent components using directory_fd and O_NOFOLLOW"
+      },
+      {
+        "id": "seal-fchmods-already-readonly-inherited-files",
+        "resolution": "seal checks current descriptor mode and calls fchmod only when write bits are set; the zero-change incremental test spies on fchmod"
+      },
+      {
+        "id": "missing-lock-exception-wrapped",
+        "resolution": "directory_fd now confines OSError wrapping to opening directory components; path_stat on a missing final entry was independently confirmed to raise FileNotFoundError"
+      }
+    ]
+  },
+  "source_file_sha256": {
+    "script": "284e5a4f05928f51b488e47a9356d8f36f20928e1fefa6d83131c2b2b6bc797a",
+    "tests": "757148c407332c86c9581bc6e5b118c6b15cc2d3294e62cd6543ce709d0c4177"
+  },
+  "external_renv_cache_contents_captured": false,
+  "restore_requirement": "Literal package-cache links and renv.lock are preserved; rebuild packages using renv::restore when the Mac cache is unavailable. No guarantee of future external package source availability.",
+  "schedule": "Daily incremental; full scrub automatically when seven days have elapsed since last successful scrub. No scheduling or retention changes.",
+  "receipt_created_after_generation": true
+}

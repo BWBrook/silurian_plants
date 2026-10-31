@@ -112,3 +112,11 @@ rsync -a nectar:/data/codex/silurian_plants/restores/GENERATION/ /path/to/new-lo
 The restore command refuses an existing target and reinstates the captured POSIX
 modes. Confirm the destination before using the restored project; do not overwrite an
 active checkout.
+
+## Verified renv-link rerun, 31 October 2026
+
+Generation `20261031T003729.813012Z` passed incremental verification, Git integrity,
+all 31 restored link targets and the sample restore; `latest` advanced and all six
+previous completed generations were retained. The failed concurrent-change attempt
+was preserved. See [the audit](audits/2026-10-31-renv-backup.md) and
+`work/codex/backups/2026-10-31-renv-symlinks.json` for counts and independent checks.
