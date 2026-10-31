@@ -3,6 +3,51 @@
 Dated record of decisions that shape the programme. Newest first. Say who decided, and quote
 Barry exactly (with source) or label a paraphrase.
 
+## 2026-10-31: sprint-1 counter-review, qualification scope and evidence repairs (Codex)
+
+Barry activated Codex's review/fix of sprint 1 after Claude's sprint-2 review
+(`f08afb4`, Board 2720). The review is in
+`audits/2026-10-31-sprint1-codex-review.md`; joint reconciliation follows.
+
+- **Scientific scope correction (Codex, independently checked):** QB-CO's
+  H0c read-outs are unqualified diagnostics. In seven saved acceptance records,
+  the selected first appearance moves younger than the simulated reference
+  breakpoint, making the history nonconstant on the analysed interval. Its
+  qualification scope is H0m/H0/H1; the Libyan scope is unchanged. The amended
+  declaration is frozen before the new binding run. The rerun adds a boundary
+  cell at H0 f*(459.1), because the original grid tested that age only at f=1
+  and placed its informative boundary cells at 470 Ma. A second new cell tests
+  the window at 462.6 Ma with reference-level encounter before 459.1 and zero
+  afterwards; it belongs to H0/H1, not H0m. Fresh roots 20261111/12/13 separate
+  calibration, acceptance and optional stage 2 from the already-reviewed runs.
+  No missing/inapplicable
+  constant-history test is silently counted as success.
+- **Coding status:** QB main/zero remains visible only as an inadmissible coding
+  diagnostic: it converts seven disputed Sandbian reports to zeros. Primary QB
+  excludes them. Nonprimary variants cannot inherit primary qualification.
+- **Evidence contract:** new receipts bind the active declaration, consumed
+  inputs, generated units, statistical code, quantity grid and phase protocol.
+  All attempts and failures are retained; complete calibration and the exact
+  acceptance/stage-2 chain are checked before attaching qualification. Historical
+  receipts are preserved as dated evidence and cannot certify changed code.
+- **Interpretation:** MZ's approximately 0.18 bound is weighted by sampled
+  exposure/reference rates. Its unsampled Sandbian gap permits a pulse with a
+  larger calendar-time mean. Simulation acceptance assesses the declared 0.93
+  floor; it does not prove a universal 5% error bound or conditional coverage
+  among informative claims. Caving is not solved by the first-appearance rule.
+- **Sprint-2 review correction:** accepting Stage 4 forms as E2 assigns them
+  514.5–506.5 Ma stage support, not an observed age of 514.5 Ma. The oldest
+  endpoint is not a minimum age. BOR-71.1 is a secure older E2 zero under main,
+  although its design fails the screen. These corrections preserve non-admission
+  while narrowing the synthesis. The E2 monad rule remains for reconciliation.
+
+**Structural review (Q1/Q2/Q5):** separating source reports, numerical targets,
+qualification scope and delivered claims exposed errors that agreement of
+stored counts alone would not reveal. The existing inventory/reading separation
+remains useful. Questions stay active; neither an unsampled interval nor a
+rejected design proves biological absence. Repaired binding runs and their
+propagation into the combined memo are recorded in the audit before handoff.
+
 ## 2026-10-31: review and fixes of sprint 2 (Claude)
 
 Claude reviewed Codex's sprint 2 (Board 2710) in the sequence Barry set on 31 October. Three independent Sonnet

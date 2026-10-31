@@ -28,27 +28,25 @@ the unshifted critical value; inf for a failed output) give the calibration shif
 """
 
 import argparse
-import gzip
-import hashlib
-import io
-import csv
 import json
 import math
 import platform
 import time
+from dataclasses import asdict
 from multiprocessing import Pool
 from pathlib import Path
 
 import numpy as np
+import scipy
 from scipy import stats
 
 import designs as dz
 import envelope as ev
 import m2
+import qualification_contract as qc
 import validate as va
 
 OUT = Path(__file__).resolve().parent / "out" / "qual"
-STEP = 0.5
 TOL = va.ROOT_TOL
 
 
@@ -62,7 +60,7 @@ def path_for(cell: dict, tau0: float, ctx: dict):
     elif h == "ramp":
         mid = lambda t: (t0 - t) / (t0 - tau0)
     elif h == "window":
-        mid = lambda t: np.where(t <= ctx["start"], 1.0, f)
+        mid = lambda t: np.where(t <= ctx["start"], cell["after"], f)
     elif h in ("hide", "hide_h1"):
         height = cell.get("pulse", 1.0) if h == "hide_h1" else 1.0
         edges = np.unique(np.r_[tau0, t0, ctx["bases"][(ctx["bases"] > tau0) & (ctx["bases"] < t0)]])
@@ -86,7 +84,9 @@ def members(cell: dict) -> set[str]:
     h = cell["history"]
     if h == "H0c":
         return {"H0c", "H0m", "H0", "H1"} if cell["f"] <= 1 else {"H1"}
-    if h in ("ramp", "window"):
+    if h == "window":
+        return {"H0m", "H0", "H1"} if cell["after"] >= cell["f"] else {"H0", "H1"}
+    if h == "ramp":
         return {"H0m", "H0", "H1"}
     if h == "hide":
         return {"H0", "H1"}
@@ -97,8 +97,10 @@ class Context:
     """The fixed design, its data fit and the truth settings shared by a cell's replicates."""
 
     def __init__(self, design_id: str, rho: float):
-        self.decl = dz.declarations()
+        self.decl = dz.declarations(dz.DESIGNS)
         self.design = next(d for d in self.decl["design"] if d["id"] == design_id)
+        qc.require(self.design.get("qualify", True) and "primary" in self.design, "design has no binding primary variant")
+        qc.require(rho in self.decl["common"]["rho"], "rho is not declared")
         p = self.design["primary"]
         self.variant = {k: p[k] for k in p if k != "min_ref_units"}
         self.min_ref, self.k = p["min_ref_units"], p["cluster_k"]
@@ -123,6 +125,12 @@ class Context:
                        for g in dict.fromkeys(keys)]
         self.descending = {r.source for r in self.built.rows}
         self.spec0 = m2.problem(self.built, self.decl, rho, self.k, self.min_ref).spec
+        self.qualification_classes = tuple(self.design.get("qualification_classes", self.spec0.classes))
+        qc.require(bool(self.qualification_classes) and len(set(self.qualification_classes)) == len(self.qualification_classes)
+                   and set(self.qualification_classes) <= set(self.spec0.classes), "invalid qualification class scope")
+        self.step = self.decl["common"]["origin_step_ma"]
+        qc.require(type(self.step) in (int, float) and math.isfinite(self.step) and self.step > 0,
+                   "origin_step_ma must be finite and positive")
 
     def rates(self, cell: dict) -> np.ndarray:
         r = self.r_data.copy()
@@ -159,7 +167,8 @@ def simulate(ctx: Context, cell: dict, rng: np.random.Generator):
 
 # --- one replicate -----------------------------------------------------------------------------------
 
-def applicable(cell: dict, path, tau0: float, a_ref: float, start: float | None, lag: float) -> list[float]:
+def applicable(cell: dict, path, tau0: float, a_ref: float, start: float | None, lag: float,
+               readouts) -> list[float]:
     t0 = cell["t0"]
     lo = tau0 if start is None else start
     hi = t0 - lag
@@ -167,12 +176,28 @@ def applicable(cell: dict, path, tau0: float, a_ref: float, start: float | None,
         return []
     grid = np.linspace(lo + 1e-6, hi, 2000)
     m = float(path(grid).min()) / a_ref
-    return [f for f in (1.0, 0.1, 0.01) if f <= m + 1e-9]
+    return [f for f in readouts if f <= m + 1e-9]
+
+
+def expected_quantities(ctx: Context, cell: dict) -> list[str]:
+    rates = ctx.rates(cell)
+    mult = ctx.units.mult * np.where(ctx.transported, cell.get("rho_true_factor", 1.0), 1.0)
+    path = path_for(cell, ctx.tau0, dict(bases=ctx.age.base, density=ctx.density(rates, mult), start=ctx.start))
+    membership = members(cell) & set(ctx.qualification_classes)
+    keys = [f"f_{K}" for K in sorted(membership)]
+    for K in ("H0c", "H0m", "H0"):
+        if K in membership:
+            keys += [f"o_{K}_{f:g}" for f in applicable(cell, path, ctx.tau0, 1.0, None,
+                     ctx.spec0.h0m_lag_ma if K == "H0m" else 0.0, ctx.spec0.readouts)]
+    if "H0" in membership:
+        keys += [f"w_{f:g}" for f in applicable(cell, path, ctx.tau0, 1.0, ctx.start, 0.0, ctx.spec0.readouts)]
+    return sorted(keys)
 
 
 def replicate(job) -> dict:
-    design_id, rho, cell, rep, root, shift = job
+    design_id, rho, cell, rep, root, shift, reference_rates = job
     ctx = _ctx(design_id, rho)
+    ctx.r_data = np.asarray(reference_rates, float)
     ss = np.random.SeedSequence(root, spawn_key=(ctx.design_index, ctx.rho_index, cell["index"], rep))
     rng = np.random.default_rng(ss)
     out = dict(cell=cell["name"], rep=rep, passed=False, error="")
@@ -181,10 +206,12 @@ def replicate(job) -> dict:
         out["n_old_det"] = int(units.d[ctx.transported].sum())
         try:
             pot = ev.Problem(m2.potential(units, ctx.transported), ctx.spec0, ctx.age)
-            ok, lr1, _ = m2.screen(pot)
+            ok, lr1, critical = m2.screen(pot)
+            out.update(screen_status="evaluated", screen_converged=True, screen_lr=lr1, screen_crit=critical,
+                       screen_n_older_detections=pot.n_older_detections(pot.spec.domain_ma[1]))
         except ev.NoFirstAppearance:
-            ok, lr1 = False, 0.0
-        out["screen_lr"] = lr1
+            ok = False
+            out["screen_status"] = "no-first-appearance"
         if not ok:
             return out
         out["passed"] = True
@@ -192,11 +219,19 @@ def replicate(job) -> dict:
         try:
             pr = ev.Problem(units, spec, ctx.age)
         except ev.NoFirstAppearance:
-            out["trivial"] = True  # no calibrated first appearance: the analysis abstains
+            out.update(trivial=True, abstain_reason="no-calibrated-first-appearance")
+            for q in cell["quantities"]:
+                out[f"c_{q}"], out[f"m_{q}"] = True, -math.inf
             return out
         out.update(_analyse(ctx, cell, pr, path, rates, mult))
     except Exception as e:  # a failure after passing stays in the denominator as a miss
         out["error"] = f"{type(e).__name__}: {e}"
+        if not out["passed"]:
+            out.update(screen_status="error", screen_converged=False)
+        if out["passed"]:
+            out["trivial"] = False
+            for q in cell["quantities"]:
+                out[f"c_{q}"], out[f"m_{q}"] = False, math.inf
     return out
 
 
@@ -212,9 +247,11 @@ def _analyse(ctx: Context, cell: dict, pr: ev.Problem, path, rates, mult) -> dic
     a_ref = float(w @ va.range_mean(path, ctx.lo[is_ref], ctx.hi[is_ref]) / w.sum())
     # the target: the true path's mean over (tau, t0], weighted by the declared exposure (true rates times
     # the declared multipliers), relative to the realised reference intensity
-    abar = math.nan if trivial else pr.abar_truth(path, t0, rates[pr.calibrated]) / a_ref
-    out.update(a_ref=a_ref, abar_rel=abar)
-    m = members(cell)
+    abar = None if trivial else pr.abar_truth(path, t0, rates[pr.calibrated]) / a_ref
+    out["a_ref"] = a_ref
+    if abar is not None:
+        out["abar_rel"] = abar
+    m = members(cell) & set(ctx.qualification_classes)
     for K in sorted(m):
         if trivial:
             out[f"m_f_{K}"], out[f"c_f_{K}"] = -math.inf, True
@@ -226,16 +263,16 @@ def _analyse(ctx: Context, cell: dict, pr: ev.Problem, path, rates, mult) -> dic
         out[f"fstar_{K}"], out[f"state_{K}"] = b.value, b.state
         out[f"m_f_{K}"] = math.inf if (not good or (st.value <= crit and not contains)) else st.value - crit0
         out[f"c_f_{K}"] = bool(good and st.value <= crit and contains)
-    grid = pr.grid(STEP)
+    grid = pr.grid(ctx.step)
     below = grid[grid <= t0 + 1e-9]
     g_below = float(below.max()) if len(below) else t0
     lag = pr.spec.h0m_lag_ma
     for K in ("H0c", "H0m", "H0"):
         if K in m:
-            for f in applicable(cell, path, ctx.tau0, 1.0, None, lag if K == "H0m" else 0.0):
+            for f in applicable(cell, path, ctx.tau0, 1.0, None, lag if K == "H0m" else 0.0, pr.spec.readouts):
                 out.update(_point(pr, f"o_{K}_{f:g}", K, f, t0, g_below, crit0, crit, None, trivial))
     if "H0" in m:
-        for f in applicable(cell, path, ctx.tau0, 1.0, ctx.start, 0.0):
+        for f in applicable(cell, path, ctx.tau0, 1.0, ctx.start, 0.0, pr.spec.readouts):
             out.update(_point(pr, f"w_{f:g}", "H0", f, t0, g_below, crit0, crit, ctx.start, trivial))
     out["n_fits"], out["n_failed"] = pr.n_fits, pr.n_failed
     return out
@@ -269,66 +306,122 @@ def _ctx(design_id: str, rho: float) -> Context:
 
 def cells(decl: dict, diagnostics: bool = True) -> list[dict]:
     q = decl["qualification"]
-    out = [dict(c, kind="acceptance") for c in q["cells"] + decl["amendment_2"]["cells_added"]]
+    amendments = [decl[k] for k in sorted((k for k in decl if k.startswith("amendment_")),
+                                         key=lambda k: int(k.removeprefix("amendment_")))]
+    added = [c for amendment in amendments for c in amendment.get("cells_added", [])]
+    out = [dict(c, kind="acceptance") for c in q["cells"] + added]
     if diagnostics:
-        out += [dict(c, kind="diagnostic") for c in q["diagnostics"] + decl["amendment_1"]["diagnostics_added"]]
+        added = [c for amendment in amendments for c in amendment.get("diagnostics_added", [])]
+        out += [dict(c, kind="diagnostic") for c in q["diagnostics"] + added]
     return [dict(c, index=i) for i, c in enumerate(out)]
 
 
-def run_cell(pool, design_id, rho, cell, root, shift, target, cap, first_rep=0) -> tuple[list[dict], int]:
-    """Replicates first_rep, first_rep+1, ... until `target` pass or `cap` attempts; returns the passing rows
-    (in index order, cut at target) and the attempts used."""
-    passing, attempts, rep, batch = [], 0, first_rep, 256
-    while len(passing) < target and attempts < cap:
+def run_cell(pool, design_id, rho, cell, root, shift, target, cap, reference_rates, first_rep=0) -> tuple[list[dict], int]:
+    """Return every consumed attempt in index order, stopping at the target pass or attempt cap."""
+    consumed, passing, attempts, rep, batch = [], 0, 0, first_rep, 256
+    while passing < target and attempts < cap:
         n = min(batch, cap - attempts)
-        rows = pool.map(replicate, [(design_id, rho, cell, rep + i, root, shift) for i in range(n)], chunksize=4)
+        rows = pool.map(replicate, [(design_id, rho, cell, rep + i, root, shift, reference_rates) for i in range(n)], chunksize=4)
         for r in rows:
             attempts += 1
+            consumed.append(r)
             if r["passed"]:
-                passing.append(r)
-                if len(passing) == target:
+                passing += 1
+                if passing == target:
                     break
         rep += n
-        batch = max(256, int(1.2 * (target - len(passing)) * attempts / max(len(passing), 1)))
-    return passing, attempts
+        batch = max(256, int(1.2 * (target - passing) * attempts / max(passing, 1)))
+    return consumed, attempts
 
 
 def resolve(cell: dict, ctx: "Context") -> dict:
     """Boundary cells (amendment 2): the truth's f is the data's own reported f* at shift 0."""
     if "f_data" not in cell:
         return cell
-    K, T = {"fstar_H0c_far": ("H0c", ctx.decl["common"]["domain_ma"]), "fstar_H0_469.4": ("H0", 469.4)}[cell["f_data"]]
+    data = cell["f_data"]
+    qc.require(isinstance(data, dict) and set(data) == {"class", "at"}, "f_data needs an explicit class and age")
+    K = data["class"]
+    T = ctx.decl["common"]["domain_ma"] if data["at"] == "domain" else data["at"]
+    qc.require(K in ctx.spec0.classes and type(T) in (int, float) and math.isfinite(T)
+               and ctx.tau0 < T <= ctx.decl["common"]["domain_ma"], "invalid boundary-class age")
     b = ctx.data.fstar(K, T)
+    qc.require(b.converged and math.isfinite(b.value) and b.value >= 0, "boundary fit did not converge to a usable intensity")
     return dict(cell, f=float(min(b.value, 1.0)))
 
 
-def quantities(rows: list[dict], cell: dict) -> list[str]:
-    keys = sorted({k[2:] for r in rows for k in r if k.startswith("c_")})
-    return keys
-
-
-def summarise(rows: list[dict], cell: dict, attempts: int, target: int) -> dict:
-    s = dict(cell=cell["name"], kind=cell["kind"], attempts=attempts, passes=len(rows),
-             pass_rate=len(rows) / attempts if attempts else math.nan, complete=len(rows) >= target,
-             errors=sum(bool(r["error"]) for r in rows))
-    for q in quantities(rows, cell):
-        hits = [r.get(f"c_{q}", True) and not r["error"] for r in rows]
-        s[f"cover_{q}"] = sum(hits)
-        claims = [r for r in rows if r["error"] or not r.get("trivial", False)]
-        s[f"claims_{q}"] = len(claims)
-        s[f"claimmiss_{q}"] = sum(1 for r in claims if r["error"] or not r.get(f"c_{q}", True))
-        margins = [math.inf if r["error"] else r.get(f"m_{q}", -math.inf) for r in rows]
-        s[f"delta_{q}"] = va.shift_to_target(margins) if rows else math.nan
-    return s
-
-
-def code_hashes() -> dict:
+def bound_paths(design_id: str) -> dict[str, Path]:
     here = Path(__file__).resolve().parent
-    return {p: hashlib.sha256((here / p).read_bytes()).hexdigest() for p in
-            ("envelope.py", "designs.py", "m2.py", "qualify.py", "designs/m2.toml")}
+    paths = {f"models/f3/{p}": here / p for p in
+             ("envelope.py", "designs.py", "m2.py", "qualify.py", "qualification_contract.py", "validate.py", "sim.py", "units_sim.py")}
+    paths["active_declaration"] = dz.DESIGNS.resolve()
+    paths["data/timescale.csv"] = ev.sim.TIMESCALE_CSV
+    if design_id.startswith("LY-"):
+        source_tables = ("libya_appendix1.csv", "libya_chart_reports.csv", "libya_prose_support.csv")
+    elif design_id == "QB-CO":
+        source_tables = ("qusaiba_inventory.csv", "outcomes.csv", "borenshult_ages.csv")
+    else:
+        raise qc.EvidenceError(f"no source-input contract for {design_id}")
+    for name in source_tables + ("source_files.csv", "reporting-rule.md"):
+        paths[f"data/units/{name}"] = dz.UNITS / name
+    return paths
 
 
-def main() -> None:
+def capture(paths: dict[str, Path]) -> dict:
+    out = {}
+    for name, path in paths.items():
+        before = path.stat()
+        sha = qc.file_hash(path)
+        after = path.stat()
+        qc.require((before.st_size, before.st_mtime_ns) == (after.st_size, after.st_mtime_ns), f"input changed while hashing: {name}")
+        out[name] = (sha, after.st_size, after.st_mtime_ns)
+    return out
+
+
+def build_binding(design_id: str, rho: float) -> tuple[Context, dict, dict]:
+    paths = bound_paths(design_id)
+    before = capture(paths)
+    ctx = Context(design_id, rho)
+    grid = [resolve(c, ctx) for c in cells(ctx.decl)]
+    qc.require(len({c["name"] for c in grid}) == len(grid), "qualification cell names are not unique")
+    for c in grid:
+        c["quantities"] = expected_quantities(ctx, c)
+    binding = dict(design=design_id, rho=rho, declaration_id=ctx.decl["freeze"]["id"],
+                   files={name: state[0] for name, state in before.items()},
+                   generated_units=asdict(ctx.built), specification=asdict(ctx.spec0),
+                   age_bases=ctx.age.base.tolist(), fitted_reference_rates=ctx.r_data.tolist(),
+                   origin_step_ma=ctx.step, qualification_classes=list(ctx.qualification_classes),
+                   runtime_contract=dict(python=".".join(platform.python_version_tuple()[:2]),
+                                         numpy=np.__version__, scipy=scipy.__version__),
+                   derived_tolerance=qc.DERIVED_TOLERANCE, protocol=qc.protocol(ctx.decl), grid=grid)
+    qc.require(capture(paths) == before, "qualification inputs changed while the design was built")
+    return ctx, binding, before
+
+
+def load_qualification(design_id: str, rho: float, directory: Path) -> tuple[float | None, str, str, dict]:
+    """Validate the whole evidence chain before attaching a qualification to current empirical outputs."""
+    ctx, binding, before = build_binding(design_id, rho)
+    cal_path, _ = qc.paths(directory, binding, "calibrate")
+    if not cal_path.exists():
+        return None, "not qualified", "", binding
+    potential = m2.problem(ctx.built, ctx.decl, rho, ctx.k, ctx.min_ref, screened=True)
+    qc.require(m2.screen(potential)[0], "primary data do not pass the current frame-potential screen")
+    cal = qc.load(directory, binding, "calibrate")
+    qc.require(cal.record["complete"], "calibration is incomplete; no empirical shift can be attached")
+    delta = qc.finite_shift(cal.record["delta"], "calibration delta")
+    accepted_path, _ = qc.paths(directory, binding, "accept")
+    final, status = cal, "calibrated only"
+    if accepted_path.exists():
+        final = qc.load(directory, binding, "accept")
+        status = final.record["result"]
+        stage2_path, _ = qc.paths(directory, binding, "stage2")
+        if stage2_path.exists():
+            final = qc.load(directory, binding, "stage2")
+            status = final.record["result"]
+    qc.require(capture(bound_paths(design_id)) == before, "qualification inputs changed while evidence was checked")
+    return delta, status, final.sha256, qc.restored(final.record["binding"])
+
+
+def main(argv=None) -> None:
     ap = argparse.ArgumentParser()
     ap.add_argument("--design", required=True)
     ap.add_argument("--rho", type=float, required=True)
@@ -336,80 +429,58 @@ def main() -> None:
     ap.add_argument("--workers", type=int, default=4)
     ap.add_argument("--target", type=int, default=None)
     ap.add_argument("--no-diagnostics", action="store_true")
-    a = ap.parse_args()
-    decl = dz.declarations()
-    q = decl["qualification"]
-    target = a.target or q["target_passing"]
-    cap = q["max_attempts"] if a.target is None else 20 * target
-    tag = f"{a.design}_rho{a.rho:g}"
-    OUT.mkdir(parents=True, exist_ok=True)
-    seeds = q["root_seeds"]
-    shift, first_rep, todo = 0.0, 0, cells(decl, not a.no_diagnostics)
+    ap.add_argument("--out-dir", type=Path, default=OUT)
+    a = ap.parse_args(argv)
+    if a.phase != "dev" and (a.target is not None or a.no_diagnostics):
+        ap.error("--target and --no-diagnostics are development-only options")
+    if a.workers < 1 or (a.target is not None and a.target < 1):
+        ap.error("workers and development target must be positive")
+    _CTX.clear()
+    ctx, binding, before = build_binding(a.design, a.rho)
+    if a.phase != "dev":
+        potential = m2.problem(ctx.built, ctx.decl, a.rho, ctx.k, ctx.min_ref, screened=True)
+        qc.require(m2.screen(potential)[0], "primary data do not pass the current frame-potential screen")
+    _CTX[(a.design, a.rho)] = ctx
+    ctx.design_index = [d["id"] for d in ctx.decl["design"]].index(a.design)
+    ctx.rho_index = ctx.decl["common"]["rho"].index(a.rho)
+    p = binding["protocol"]
+    target = a.target if a.target is not None else p["target_passing"]
+    cap = 20 * target if a.phase == "dev" else p["max_attempts"]
+    path, reps_path = qc.paths(a.out_dir, binding, a.phase)
+    qc.require(not path.exists() and not reps_path.exists(), "output already exists; select a fresh --out-dir")
+    shift, dependencies, first = 0.0, {}, None
     if a.phase == "dev":
         root = 20261100
-    elif a.phase == "calibrate":
-        root = seeds["calibrate"]
     else:
-        rec = json.loads((OUT / f"{tag}_calibrate.json").read_text())
-        if rec["code"] != code_hashes():
-            raise SystemExit("calibration receipt does not match the code")
-        shift = rec["delta"]
-        root = seeds["accept"] if a.phase == "accept" else seeds["stage2"]
-        if a.phase == "stage2":
-            acc = json.loads((OUT / f"{tag}_accept.json").read_text())
-            if acc["code"] != code_hashes():
-                raise SystemExit("acceptance receipt does not match the code")
-            todo = [c for c in todo if c["name"] in acc["borderline_cells"]]
+        root = p["root_seeds"][a.phase]
+        if a.phase != "calibrate":
+            cal = qc.load(a.out_dir, binding, "calibrate")
+            qc.require(cal.record["complete"], "calibration is incomplete")
+            shift = qc.finite_shift(cal.record["delta"], "calibration delta")
+            binding = qc.restored(cal.record["binding"])
+            ctx.r_data = np.asarray(binding["fitted_reference_rates"], float)
+            dependencies["calibrate"] = cal.sha256
+            if a.phase == "stage2":
+                accepted = qc.load(a.out_dir, binding, "accept")
+                first = accepted.record
+                dependencies["accept"] = accepted.sha256
+    todo = qc.phase_cells(binding, a.phase, first, not a.no_diagnostics)
     t_start = time.time()
-    summaries, reps = [], []
+    reps = []
     with Pool(a.workers) as pool:
-        ctx = _ctx(a.design, a.rho)
         for cell in todo:
-            cell = resolve(cell, ctx)
-            rows, attempts = run_cell(pool, a.design, a.rho, cell, root, shift, target, cap, first_rep)
-            summaries.append(summarise(rows, cell, attempts, target))
+            rows, attempts = run_cell(pool, a.design, a.rho, cell, root, shift, target, cap, ctx.r_data.tolist())
+            summary = qc.summarise(rows, cell, target, cap, shift, p["calibration_target"])
             reps += rows
-            print(json.dumps({k: v for k, v in summaries[-1].items() if not k.startswith("delta")}), flush=True)
-    rec = dict(design=a.design, rho=a.rho, phase=a.phase, root=root, shift=shift, target=target, cap=cap,
-               code=code_hashes(), python=platform.python_version(), numpy=np.__version__,
-               seconds=round(time.time() - t_start, 1), cells=summaries)
-    acc_cells = [s for s in summaries if s["kind"] == "acceptance"]
-    if a.phase == "calibrate":
-        deltas = [v for s in acc_cells for k, v in s.items() if k.startswith("delta_")]
-        rec["delta"] = max(deltas) if deltas else 0.0
-        rec["complete"] = all(s["complete"] for s in acc_cells)
-    elif a.phase in ("accept", "stage2"):
-        verdicts = {}
-        for s in acc_cells:
-            for k, v in s.items():
-                if k.startswith("cover_"):
-                    verdicts[f"{s['cell']}:{k[6:]}"] = va.stage1(v, s["passes"]) if s["complete"] else "incomplete"
-        if a.phase == "stage2":
-            acc = json.loads((OUT / f"{tag}_accept.json").read_text())
-            first = {f"{s['cell']}:{k[6:]}": (v, s["passes"]) for s in acc["cells"] for k, v in s.items() if k.startswith("cover_")}
-            now = {f"{s['cell']}:{k[6:]}": (v, s["passes"]) for s in acc_cells for k, v in s.items() if k.startswith("cover_")}
-            verdicts = {}
-            for key, v in acc["verdicts"].items():
-                if v != "borderline":
-                    verdicts[key] = v
-                elif key in now and now[key][1] + first[key][1] >= 2 * target:
-                    verdicts[key] = va.stage2(first[key][0] + now[key][0])
-                else:
-                    verdicts[key] = "incomplete"
-        rec["verdicts"] = verdicts
-        rec["borderline_cells"] = sorted({k.split(":")[0] for k, v in verdicts.items() if v == "borderline"})
-        rec["result"] = ("pass" if all(v == "pass" for v in verdicts.values()) else
-                         "fail" if any(v == "fail" for v in verdicts.values()) else
-                         "incomplete" if any(v == "incomplete" for v in verdicts.values()) else "borderline")
-    (OUT / f"{tag}_{a.phase}.json").write_text(json.dumps(rec, indent=1, default=float))
-    buf = io.StringIO()
-    keys = list(dict.fromkeys(k for r in reps for k in r))
-    w = csv.DictWriter(buf, keys, lineterminator="\n")
-    w.writeheader()
-    w.writerows(reps)
-    with gzip.open(OUT / f"{tag}_{a.phase}_reps.csv.gz", "wt") as f:
-        f.write(buf.getvalue())
-    print(json.dumps({k: rec[k] for k in rec if k in ("delta", "complete", "result", "seconds", "borderline_cells")}))
+            print(json.dumps({k: v for k, v in summary.items() if not k.startswith("delta")}), flush=True)
+    qc.require(capture(bound_paths(a.design)) == before, "qualification inputs changed during the run; outputs were not sealed")
+    written = qc.write(a.out_dir, binding, a.phase, reps, root, target, cap, shift, dependencies,
+                       dict(python=platform.python_version(), numpy=np.__version__, scipy=scipy.__version__,
+                            platform=platform.platform()), round(time.time() - t_start, 1), first, not a.no_diagnostics)
+    if a.phase != "dev":
+        qc.load(a.out_dir, binding, a.phase)
+    print(json.dumps({k: v for k, v in written.record.items() if k in
+                      ("delta", "complete", "result", "seconds", "borderline_cells", "payload_sha256")}))
 
 
 if __name__ == "__main__":

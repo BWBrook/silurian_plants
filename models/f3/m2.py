@@ -12,16 +12,16 @@ The screen (S0, S1 in m2.toml) is the function `screen`, called unchanged by qua
 replicate. It uses the unshifted critical value, so it does not depend on the calibration.
 """
 
+import argparse
 import csv
-import json
 import math
-import sys
 from pathlib import Path
 
 import numpy as np
 
 import designs as dz
 import envelope as ev
+import qualification_contract as qc
 
 OUT = Path(__file__).resolve().parent / "out"
 
@@ -39,7 +39,9 @@ def screen(pr: ev.Problem) -> tuple[bool, float, float]:
     T = pr.spec.domain_ma[1]
     crit = ev.count_crit(pr.n_older_detections(T), pr.spec.alpha)
     st = pr.lr("H0c", T, 1.0)
-    return bool(st.converged and st.value > crit), float(st.value), crit
+    if not st.converged or not math.isfinite(st.value):
+        raise RuntimeError("frame-potential statistic failed to converge")
+    return bool(st.value > crit), float(st.value), crit
 
 
 def problem(b: dz.Built, decl: dict, rho: float, cluster_k: float, min_ref: int, shift: float = 0.0,
@@ -65,8 +67,14 @@ def is_primary(design: dict, v: dict, min_ref: int) -> bool:
     return bool(p) and all(v.get(k, p[k]) == p[k] for k in p if k != "min_ref_units") and min_ref == p["min_ref_units"]
 
 
+def analysis_role(design: dict, variant: dict, min_ref: int) -> str:
+    if design["id"] == "QB-CO" and variant.get("reading") == "main" and variant.get("bor_unresolved") == "zero":
+        return "inadmissible-coding-diagnostic"
+    return "primary" if is_primary(design, variant, min_ref) else "sensitivity"
+
+
 def run_screen() -> list[dict]:
-    decl = dz.declarations()
+    decl = dz.declarations(dz.DESIGNS)
     rows = []
     for design in decl["design"]:
         for v in dz.variants(design, decl):
@@ -74,7 +82,8 @@ def run_screen() -> list[dict]:
             for min_ref in decl["common"]["min_ref_units"]:
                 for rho in decl["common"]["rho"]:
                     row = dict(design=design["id"], variant=vkey(v), min_ref=min_ref, rho=rho,
-                               primary=is_primary(design, v, min_ref))
+                               primary=is_primary(design, v, min_ref), analysis_role=analysis_role(design, v, min_ref),
+                               admissible=analysis_role(design, v, min_ref) != "inadmissible-coding-diagnostic")
                     try:
                         pr = problem(b, decl, rho, v["cluster_k"], min_ref, screened=True)
                     except ev.NoFirstAppearance as e:
@@ -93,20 +102,13 @@ def run_screen() -> list[dict]:
 T_REPORT = (445.2, 452.8, 458.2, 459.1, 464.0, 469.4, 480.0, 560.0)  # [common] report_ma overrides
 
 
-def shift_for(design_id: str, rho: float) -> tuple[float | None, str]:
-    """The calibrated shift of the design's primary variant at rho, and the qualification result."""
-    q = OUT / "qual"
-    tag = f"{design_id}_rho{rho:g}"
-    cal, acc, st2 = (q / f"{tag}_{p}.json" for p in ("calibrate", "accept", "stage2"))
-    if not cal.exists():
-        return None, "not qualified"
-    delta = json.loads(cal.read_text())["delta"]
-    if not acc.exists():
-        return delta, "calibrated only"
-    result = json.loads(acc.read_text())["result"]
-    if result == "borderline" and st2.exists():
-        result = json.loads(st2.read_text())["result"]
-    return delta, result
+_QUALIFICATIONS: dict = {}
+
+
+def shift_for(design_id: str, rho: float, directory: Path | None = None) -> tuple[float | None, str, str, dict]:
+    """Validate primary evidence before attaching its calibration or verdict to empirical outputs."""
+    import qualify
+    return qualify.load_qualification(design_id, rho, directory or OUT / "qual")
 
 
 def readouts(pr: ev.Problem, common: dict) -> dict:
@@ -118,7 +120,7 @@ def readouts(pr: ev.Problem, common: dict) -> dict:
             b = pr.fstar(K, T)
             out[f"fstar_{K}_{T:g}"] = "" if b.state == "zero-exposure" else round(b.value, 4)
             out[f"state_{K}_{T:g}"] = b.state + ("" if b.converged else " (not converged)")
-    grid = pr.grid(0.5)
+    grid = pr.grid(common["origin_step_ma"])
     for f in pr.spec.readouts:
         for K in ("H0c", "H0m", "H0"):
             o = pr.origin_set(K, f, grid)
@@ -131,52 +133,82 @@ def readouts(pr: ev.Problem, common: dict) -> dict:
 
 
 def _result(job: tuple) -> dict:
-    design_id, v, min_ref, rho = job
-    decl = dz.declarations()
+    design_id, v, min_ref, rho, directory = job
+    decl = dz.declarations(dz.DESIGNS)
     design = next(d for d in decl["design"] if d["id"] == design_id)
-    delta, result = shift_for(design_id, rho)
+    if not design.get("qualify", True):
+        delta, result, receipt_sha, binding = None, "not qualified", "", {}
+    else:
+        key = (design_id, rho, str(directory))
+        if key not in _QUALIFICATIONS:
+            _QUALIFICATIONS[key] = shift_for(design_id, rho, directory)
+        delta, result, receipt_sha, binding = _QUALIFICATIONS[key]
+    role = analysis_role(design, v, min_ref)
+    qualification = result if role == "primary" else "sensitivity-unqualified" if role == "sensitivity" else role
     row = dict(design=design_id, variant=vkey(v), min_ref=min_ref, rho=rho, primary=is_primary(design, v, min_ref),
-               qualification=result, shift="" if delta is None else delta)
+               analysis_role=role, admissible=role != "inadmissible-coding-diagnostic", qualification=qualification,
+               primary_qualification=result, primary_receipt_sha256=receipt_sha,
+               qualification_binding_sha256=qc.digest(binding) if binding else "",
+               qualified_classes=";".join(binding.get("qualification_classes", [])) if role == "primary" and result == "pass" else "",
+               shift="" if delta is None else delta)
+    for K in decl["common"]["classes"]:
+        row[f"qualification_{K}"] = qualification if role != "primary" or result != "pass" else \
+            "pass" if K in binding["qualification_classes"] else "unqualified-class-diagnostic"
+    row["qualification_window"] = row["qualification_H0"]
     pr = problem(dz.build(design, v), decl, rho, v["cluster_k"], min_ref, shift=delta or 0.0)
     row.update(tau=pr.tau, n_ref=pr.n_ref, k_ref=int(pr.rd.sum()), n_old=pr.n_old,
                older_detections=int(pr.od.sum()), r_ref=";".join(f"{r:.4g}" for r in pr.r_ref))
     return row | readouts(pr, decl["common"])
 
 
-def run_results(workers: int = 8) -> list[dict]:
+def run_results(workers: int = 8, qualification_dir: Path | None = None) -> list[dict]:
     """Read-outs for every variant that passes the screen, at its design's qualified shift for that rho
     (the primary variant's; other variants are labelled by `primary`)."""
     from multiprocessing import Pool
-    decl = dz.declarations()
-    screened = {(r["design"], r["variant"], int(r["min_ref"]), float(r["rho"])): r["passes"] == "True"
-                for r in csv.DictReader(open(OUT / f"{prefix(decl)}_screen.csv"))}
-    jobs = [(design["id"], v, min_ref, rho) for design in decl["design"] for v in dz.variants(design, decl)
+    import qualify
+    decl = dz.declarations(dz.DESIGNS)
+    inputs = {name: path for d in decl["design"] if dz.variants(d, decl) for name, path in qualify.bound_paths(d["id"]).items()}
+    before = qualify.capture(inputs)
+    _QUALIFICATIONS.clear()
+    screened = {(r["design"], r["variant"], r["min_ref"], r["rho"]): r["passes"] for r in run_screen()}
+    jobs = [(design["id"], v, min_ref, rho, qualification_dir or OUT / "qual") for design in decl["design"] for v in dz.variants(design, decl)
             for min_ref in decl["common"]["min_ref_units"] for rho in decl["common"]["rho"]
             if screened[(design["id"], vkey(v), min_ref, rho)]]
     with Pool(workers) as pool:
-        return pool.map(_result, jobs, chunksize=1)
+        rows = pool.map(_result, jobs, chunksize=1)
+    qc.require(qualify.capture(inputs) == before, "empirical inputs changed during screening or fitting")
+    return rows
 
 
 def write(path: Path, rows: list[dict]) -> None:
     keys = list(dict.fromkeys(k for r in rows for k in r))
-    with open(path, "w", newline="") as f:
+    with open(path, "x", newline="") as f:
         w = csv.DictWriter(f, keys, lineterminator="\n")
         w.writeheader()
         w.writerows(rows)
 
 
-def main() -> None:
-    OUT.mkdir(exist_ok=True)
-    if sys.argv[1:] == ["screen"]:
+def main(argv=None) -> None:
+    ap = argparse.ArgumentParser()
+    ap.add_argument("command", choices=("screen", "results"))
+    ap.add_argument("workers", type=int, nargs="?", default=8)
+    ap.add_argument("--out-dir", type=Path, default=OUT)
+    ap.add_argument("--qual-dir", type=Path, default=OUT / "qual")
+    args = ap.parse_args(argv)
+    if args.workers < 1:
+        ap.error("workers must be positive")
+    args.out_dir.mkdir(parents=True, exist_ok=True)
+    path = args.out_dir / f"{prefix(dz.declarations(dz.DESIGNS))}_{args.command}.csv"
+    if path.exists():
+        ap.error("output already exists; select a fresh --out-dir")
+    if args.command == "screen":
         rows = run_screen()
-        write(OUT / f"{prefix(dz.declarations())}_screen.csv", rows)
+        write(path, rows)
         for r in rows:
             if r["primary"]:
                 print({k: r.get(k) for k in ("design", "rho", "status", "n_ref", "k_ref", "n_old", "lr_f1", "crit")})
-    elif sys.argv[1:2] == ["results"]:
-        write(OUT / f"{prefix(dz.declarations())}_results.csv", run_results(int(sys.argv[2]) if len(sys.argv) > 2 else 8))
     else:
-        raise SystemExit("usage: m2.py screen | results")
+        write(path, run_results(args.workers, args.qual_dir))
 
 
 if __name__ == "__main__":

@@ -118,6 +118,7 @@ qualify = false
 [[design]]
 id = "QB-CO"
 label = "Qusaiba reference, Borenshult older (cross-region)"
+qualification_classes = ["H0m", "H0", "H1"]
 reading = ["main", "inclusive"]
 bor_unresolved = ["excluded", "zero"]
 cluster_k = [2.0, inf]
@@ -140,7 +141,7 @@ recompute = false
 target_passing = 1000
 max_attempts = 20000
 calibration_target = 0.955
-root_seeds = { calibrate = 20261101, accept = 20261102, stage2 = 20261103 }
+root_seeds = { calibrate = 20261111, accept = 20261112, stage2 = 20261113 }
 cells = [
   { name = "Q1", history = "H0c", f = 1.0, t0 = 470.0 },
   { name = "Q2", history = "H0c", f = 0.3, t0 = 470.0 },
@@ -149,7 +150,7 @@ cells = [
   { name = "Q5", history = "hide", f = 0.3, t0 = 470.0 },
   { name = "Q6", history = "hide_h1", f = 0.3, t0 = 470.0, pulse = 3.0 },
   { name = "Q7", history = "ramp", t0 = 470.0 },
-  { name = "Q8", history = "window", f = 0.1, t0 = 470.0 },
+  { name = "Q8", history = "window", f = 0.1, after = 1.0, t0 = 470.0 },
 ]
 diagnostics = [
   { name = "X1", history = "H0c", f = 0.3, t0 = 470.0, rho_true_factor = 0.5 },
@@ -183,8 +184,9 @@ diagnostics_added = [{ name = "X3", history = "H0c", f = 0.3, t0 = 470.0, refere
 # covering, so cells Q1-Q3 and Q7 were almost entirely abstentions (H2, Q2: 2961 of 2997) and the
 # acceptance had little power. Coverage of a claim given that it is made cannot be the criterion: claims
 # are made only when the older units are empty. The criterion is stated as what it is, the false-claim
-# rate: among screen-passing replicates, P(a reported bound, origin set or window read-out excludes the
-# truth) <= 0.05, abstentions covering. Repairs:
+# rate for each declared quantity and truth cell among screen-passing replicates, with abstentions
+# counted as non-errors. Nominal coverage is 0.95; calibration targets 0.955 and independent acceptance
+# assesses the 0.93 floor. Finite-grid acceptance is not a universal <=0.05 error guarantee. Repairs:
 #   - boundary cells B1 and B2, constant truth from 470 Ma at the design's own reported f*_H0c (all
 #     exposure) and f*_H0 (to 469.4) at shift 0: there claims are frequent and a miscalibration shows;
 #   - every quantity reports its non-trivial count (claims made) and the misses among them;
@@ -193,6 +195,28 @@ diagnostics_added = [{ name = "X3", history = "H0c", f = 0.3, t0 = 470.0, refere
 [amendment_2]
 criterion = "false-claim rate among screen-passing replicates, abstentions covering; non-trivial n and misses reported"
 cells_added = [
-  { name = "B1", history = "H0c", f_data = "fstar_H0c_far", t0 = 470.0 },
-  { name = "B2", history = "H0c", f_data = "fstar_H0_469.4", t0 = 470.0 },
+  { name = "B1", history = "H0c", f_data = { class = "H0c", at = "domain" }, t0 = 470.0 },
+  { name = "B2", history = "H0c", f_data = { class = "H0", at = 469.4 }, t0 = 470.0 },
+]
+
+# Integrity-review amendment: boundary classes/ages and origin_step_ma are consumed directly;
+# their numerical M2 settings are unchanged. New receipts bind the active declaration and inputs.
+# QB main/bor_unresolved=zero remains in the declared roster only as an inadmissible coding diagnostic:
+# it converts disputed reports to negatives. QB inclusive variants preserve those reports as detections.
+# QB's selected first appearance can move younger than its generating first appearance, so a constant
+# generating cell need not remain H0c over the realised older interval. H0c read-outs are unqualified
+# diagnostics; the binding QB grid covers H0m, H0 and H1. Libyan class scope is unchanged.
+
+# Amendment 3 (Codex, 2026-10-31, independent sprint-1 counter-review): directly test the boundary of
+# the central H0 mean-intensity result at 459.1 Ma. Q4 tests f=1 there and often abstains; B1/B2 evaluate
+# at 470 Ma. This adds grid coverage without changing the estimator, nominal level or acceptance floor.
+# The review used the earlier acceptance evidence, so all binding phases use fresh roots 20261111–13;
+# earlier roots 20261101–03 and their receipts remain historical. Development retains root 20261100.
+# B4 directly stresses the central MZ pre-459.1 window: reference-level production before 459.1 through
+# 462.6 Ma, zero between tau0 and 459.1, and reference level younger than tau0. It belongs to H0/H1,
+# not H0m. Q8 now states its unchanged after=1 explicitly. This final grid has 12 acceptance cells.
+[amendment_3]
+cells_added = [
+  { name = "B3", history = "H0c", f_data = { class = "H0", at = 459.1 }, t0 = 459.1 },
+  { name = "B4", history = "window", f = 1.0, after = 0.0, t0 = 462.6 },
 ]
