@@ -33,6 +33,28 @@ and inherited files must match the previous generation's saved inode and modific
 time. Missing source-baseline records or a different source identity stop the run.
 Git integrity and a sample restore are still checked before promotion.
 
+The only accepted symlinks are package entries under a project's
+`renv/library/<platform>/<R-version>/<architecture>/`. Each must point to the
+matching package/platform/version in the mini's known
+`/Users/bwbrook/Library/Caches/org.R-project.R/R/renv/cache/` layout and match a
+regular project `renv.lock`. Cache hashes must have renv's canonical shape and,
+when recorded in the lockfile, match its hash. Relative, escaping, unrelated or
+unlocked targets are rejected. No manifest file or directory may descend through
+one of these links.
+
+These links are captured as literal targets with source-side identity/change
+checks, recreated separately in each generation, and checked during publication,
+scrubbing and restoration. Destination-side identities detect link replacement;
+source and destination link permissions are not compared across macOS and Linux.
+The sample restore includes every link and its lockfile. Sealing never follows or
+chmods a link. Receipts report link-target verification separately from file
+checksums and explicitly say `external_renv_cache: not_captured`.
+**The external package cache is not part of the checkout backup.** Its contents
+are neither read nor copied. Restored links can therefore be dangling on another
+host or after cache loss; run `renv::restore()` from the corresponding analysis
+directory to rebuild packages from the captured lockfile. Availability of those
+external package sources is not guaranteed by this backup.
+
 A full integrity scrub runs automatically when seven days have elapsed since the last
 successful scrub, including on the next run after a missed night. The first run after
 this change establishes the scrub baseline. To force one sooner, use:
@@ -65,7 +87,7 @@ Never edit the backup tree; restore to a new location first. Daily promotion ver
 changed files and inherited-file identity; the weekly scrub verifies all retained bytes.
 
 The attached `/data` volume is not included in Nectar's instance-root snapshots. The
-script stops on symlinks, special files, Git locks, credential-like filenames, sensitive
+script stops on all other symlinks, special files, Git locks, credential-like filenames, sensitive
 Git configuration, protected PBDB receipt/history names, and recognised SQLite,
 Access or DuckDB files or sidecars without a dedicated capture method. The known
 fixed-release Palynodata Access database is accepted only at its recorded SHA-256.

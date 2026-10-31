@@ -50,12 +50,18 @@ class BackupIntegrityTests(unittest.TestCase):
         self.destination = self.root / "remote"
         self.destination.mkdir()
         self.stage = self.root / "staging"
+        self.cache = self.root / "cache"
+        self.cache_patch = patch.object(backup, "RENV_CACHE_ROOT", self.cache)
+        self.cache_patch.start()
+        self.addCleanup(self.cache_patch.stop)
 
     def tearDown(self):
         for directory, _, files in os.walk(self.root):
             os.chmod(directory, stat.S_IMODE(os.stat(directory).st_mode) | 0o700)
             for name in files:
                 path = Path(directory) / name
+                if path.is_symlink():
+                    continue
                 path.chmod(stat.S_IMODE(path.stat().st_mode) | 0o600)
         self.temp.cleanup()
 
@@ -122,6 +128,175 @@ class BackupIntegrityTests(unittest.TestCase):
         path.chmod(original_mode)
         os.utime(path, ns=(original.st_atime_ns, original.st_mtime_ns))
 
+    def renv_package(self, package="DEoptim", version="2.2-8", installed=True):
+        project = self.source / "models/pilot"
+        library = project / "renv/library/macos/R-4.6/arm64"
+        library.mkdir(parents=True, exist_ok=True)
+        lock = project / "renv.lock"
+        contents = json.loads(lock.read_text()) if lock.exists() else {"Packages": {}}
+        contents["Packages"][package] = {"Package": package, "Version": version}
+        backup.write_json(lock, contents)
+        target = self.cache / "v5/macos/R-4.6/arm64" / package / version / ("a" * 32) / package
+        if installed:
+            target.mkdir(parents=True)
+            (target / "DESCRIPTION").write_text("external cache bytes\n")
+        link = library / package
+        link.symlink_to(target)
+        return link, target
+
+    def test_renv_links_roundtrip_without_following_cache_or_changing_permissions(self):
+        link, target = self.renv_package()
+        dangling, missing = self.renv_package("Missing", "1.0", installed=False)
+        target.chmod(0o500)
+        (target / "DESCRIPTION").chmod(0o400)
+        original_digest = backup.digest
+
+        def no_external_digest(path):
+            self.assertFalse(Path(path).resolve().is_relative_to(self.cache), str(path))
+            return original_digest(path)
+
+        with patch.object(backup, "digest", side_effect=no_external_digest):
+            first, result = self.snapshot()
+            self.assertEqual(result["verification"]["symlinks"], 2)
+            self.assertEqual(result["restore_test"]["symlinks"], 2)
+            second, incremental = self.snapshot()
+            self.assertIsNone(incremental["scrub"])
+            self.assertEqual(incremental["verification"]["symlink_targets"], "all_match")
+            self.assertEqual(incremental["verification"]["external_renv_cache"], "not_captured")
+            for sample in (False, True):
+                restored = self.root / ("restore-sample" if sample else "restore-full")
+                drill = backup.restore(second, restored, sample=sample)
+                self.assertEqual(drill["symlinks"], 2)
+                self.assertTrue((restored / "models/pilot/renv.lock").is_file())
+                for source_link in (link, dangling):
+                    self.assertEqual(os.readlink(restored / source_link.relative_to(self.source)),
+                                     os.readlink(source_link))
+            self.assertEqual(backup.verify(first)["symlinks"], 2)
+        self.assertFalse(missing.exists())
+        self.assertEqual(stat.S_IMODE(target.stat().st_mode), 0o500)
+        self.assertEqual(stat.S_IMODE((target / "DESCRIPTION").stat().st_mode), 0o400)
+
+    def test_renv_link_destination_modes_are_not_source_modes(self):
+        self.renv_package()
+        first, _ = self.snapshot()
+        manifest = json.loads((first / "manifest.json").read_text())
+        rel = next(iter(manifest["symlinks"]))
+        manifest["source_modes"][rel] ^= 0o022
+        path = first / "manifest.json"
+        path.chmod(0o600)
+        backup.write_json(path, manifest)
+        path.chmod(0o400)
+        self.assertEqual(backup.verify(first)["symlinks"], 1)
+
+    def test_renv_links_require_known_cache_shape_and_matching_lock(self):
+        link, target = self.renv_package()
+        cases = [str(self.root / "unrelated"), str(target).replace("v5/", "v5/../v5/"),
+                 str(target).replace("arm64/", "other/"), str(target).replace("2.2-8/", "9.9/"),
+                 str(target).replace("a" * 32, "invalid-hash"), "relative/target"]
+        for bad in cases:
+            with self.subTest(target=bad):
+                link.unlink()
+                link.symlink_to(bad)
+                with self.assertRaisesRegex(RuntimeError, "renv cache link"):
+                    backup.inventory(self.source)
+        link.unlink()
+        link.symlink_to(target)
+        (self.source / "models/pilot/renv.lock").unlink()
+        with self.assertRaisesRegex(RuntimeError, "regular project lockfile"):
+            backup.inventory(self.source)
+
+    def test_renv_retarget_during_capture_does_not_move_latest(self):
+        link, target = self.renv_package()
+        first, _ = self.snapshot()
+        other = target.parent.parent / ("b" * 32) / target.name
+
+        def retarget():
+            link.unlink()
+            link.symlink_to(other)
+
+        with self.assertRaisesRegex(RuntimeError, "Source drift while cloning"):
+            self.snapshot(after_clone=retarget)
+        self.assertEqual((self.destination / "latest").resolve(), first / "project")
+        self.assertTrue(list((self.destination / "snapshots").glob("*.partial")))
+
+    def test_package_directory_replaced_before_hash_cannot_read_external_cache(self):
+        link, target = self.renv_package()
+        link.unlink()
+        link.mkdir()
+        (link / "DESCRIPTION").write_text("physical package\n")
+        first, _ = self.snapshot()
+        original_record = backup.file_record
+
+        def replace_before_read(path):
+            if path == link / "DESCRIPTION":
+                link.rename(self.root / "retired-package")
+                link.symlink_to(target)
+            return original_record(path)
+
+        with patch.object(backup, "file_record", side_effect=replace_before_read):
+            with self.assertRaisesRegex(RuntimeError, "Unsafe directory path"):
+                self.snapshot(scrub=True)
+        self.assertEqual((self.destination / "latest").resolve(), first / "project")
+
+    def test_regular_file_reader_rejects_final_symlink(self):
+        link, target = self.renv_package()
+        alias = self.source / "ordinary-file"
+        alias.symlink_to(target / "DESCRIPTION")
+        with self.assertRaisesRegex(RuntimeError, "Unsafe regular-file path"):
+            backup.digest(alias)
+
+    def test_lockfile_hash_is_checked_when_present(self):
+        self.renv_package()
+        lock = self.source / "models/pilot/renv.lock"
+        contents = json.loads(lock.read_text())
+        contents["Packages"]["DEoptim"]["Hash"] = "b" * 32
+        backup.write_json(lock, contents)
+        with self.assertRaisesRegex(RuntimeError, "differs from project lockfile"):
+            backup.inventory(self.source)
+
+    def test_retained_renv_link_replacement_is_rejected(self):
+        link, _ = self.renv_package()
+        first, _ = self.snapshot()
+        path = first / "project" / link.relative_to(self.source)
+        mode = stat.S_IMODE(path.parent.stat().st_mode)
+        path.parent.chmod(mode | 0o200)
+        replacement = path.parent / "replacement"
+        replacement.symlink_to(os.readlink(path))
+        replacement.replace(path)
+        path.parent.chmod(mode)
+        with self.assertRaisesRegex(RuntimeError, "Destination file identity mismatch"):
+            self.snapshot()
+        self.assertEqual((self.destination / "latest").resolve(), first / "project")
+
+    def test_renv_link_corruption_in_scrub_preserves_latest_and_scrub_marker(self):
+        link, target = self.renv_package()
+        first, _ = self.snapshot()
+        second, _ = self.snapshot()
+        marker = (self.destination / "last-scrub.json").read_bytes()
+        path = first / "project" / link.relative_to(self.source)
+        mode = stat.S_IMODE(path.parent.stat().st_mode)
+        path.parent.chmod(mode | 0o200)
+        path.unlink()
+        path.symlink_to(target.parent.parent / ("b" * 32) / target.name)
+        path.parent.chmod(mode)
+        with self.assertRaisesRegex(RuntimeError, "symlink targets differ"):
+            self.snapshot(scrub=True)
+        self.assertEqual((self.destination / "latest").resolve(), second / "project")
+        self.assertEqual((self.destination / "last-scrub.json").read_bytes(), marker)
+        self.assertTrue((self.destination / "scrub-pending.json").exists())
+
+    def test_manifest_cannot_restore_files_through_renv_link(self):
+        link, _ = self.renv_package()
+        first, _ = self.snapshot()
+        path = first / "manifest.json"
+        path.chmod(0o600)
+        manifest = json.loads(path.read_text())
+        manifest["files"][str(link.relative_to(self.source) / "escape")] = {"bytes": 0, "sha256": ""}
+        backup.write_json(path, manifest)
+        with self.assertRaisesRegex(RuntimeError, "descendant path"):
+            backup.restore(first, self.root / "unsafe-restore")
+        self.assertFalse((self.root / "unsafe-restore").exists())
+
     def test_guards_reject_unstable_or_sensitive_inputs(self):
         cases = [(".git/index.lock", "Git lock"), (".env", "Credential-like"),
                  ("other.sqlite3-wal", "Database"), ("other.mdb", "Access database")]
@@ -169,7 +344,16 @@ class BackupIntegrityTests(unittest.TestCase):
 
     def test_zero_change_generation_reuses_every_file(self):
         first, _ = self.snapshot()
-        second, result = self.snapshot()
+        original_chmod = os.fchmod
+
+        def no_reseal_readonly_file(descriptor, mode):
+            current = os.fstat(descriptor)
+            if stat.S_ISREG(current.st_mode):
+                self.assertTrue(stat.S_IMODE(current.st_mode) & 0o222)
+            return original_chmod(descriptor, mode)
+
+        with patch.object(backup.os, "fchmod", side_effect=no_reseal_readonly_file):
+            second, result = self.snapshot()
         verification = result["verification"]
         self.assertEqual(verification["fresh_files"], 0)
         self.assertEqual(verification["inherited_files"], verification["files"])

@@ -6,6 +6,7 @@ Adapted from BWBrook/eprp resources/tools/paleodata_backup.py at 995e1a2.
 
 import argparse
 import configparser
+import contextlib
 import datetime as dt
 import fcntl
 import hashlib
@@ -25,6 +26,7 @@ KNOWN_MDB = {"data/external/local/spores/work/paly.mdb":
              "eb1fa8c3b2f8a1e06a31e2194846ae541ac5240338b4194f63b00823ccde85c1"}
 LOCK_ROOT = Path("/private/tmp/silurian-plants-backup")
 SCRUB_INTERVAL = dt.timedelta(days=7)
+RENV_CACHE_ROOT = Path("/Users/bwbrook/Library/Caches/org.R-project.R/R/renv/cache")
 
 
 def run(args, **kwargs):
@@ -42,9 +44,41 @@ def write_json(path, value):
     path.write_text(json.dumps(value, indent=2, sort_keys=True) + "\n")
 
 
+@contextlib.contextmanager
+def directory_fd(path):
+    flags = os.O_RDONLY | os.O_DIRECTORY | os.O_NOFOLLOW
+    descriptor = os.open("/", flags)
+    try:
+        try:
+            for part in Path(os.path.abspath(path)).parts[1:]:
+                next_descriptor = os.open(part, flags, dir_fd=descriptor)
+                os.close(descriptor)
+                descriptor = next_descriptor
+        except OSError as error:
+            raise RuntimeError("Unsafe directory path: " + str(path)) from error
+        yield descriptor
+    finally:
+        os.close(descriptor)
+
+
+@contextlib.contextmanager
+def regular_file(path):
+    path = Path(path)
+    with directory_fd(path.parent) as parent:
+        try:
+            descriptor = os.open(path.name, os.O_RDONLY | os.O_NOFOLLOW | os.O_NONBLOCK,
+                                 dir_fd=parent)
+        except OSError as error:
+            raise RuntimeError("Unsafe regular-file path: " + str(path)) from error
+        with os.fdopen(descriptor, "rb") as stream:
+            if not stat.S_ISREG(os.fstat(stream.fileno()).st_mode):
+                raise RuntimeError("Expected regular file: " + str(path))
+            yield stream
+
+
 def digest(path):
     h = hashlib.sha256()
-    with path.open("rb") as stream:
+    with regular_file(path) as stream:
         for block in iter(lambda: stream.read(4 * 1024 * 1024), b""):
             h.update(block)
     return h.hexdigest()
@@ -58,23 +92,89 @@ def protected(path):
                 ("receipt", "quarantine", "access_global", "access_region", "history"))))
 
 
+def path_stat(path):
+    path = Path(path)
+    with directory_fd(path.parent) as parent:
+        return os.stat(path.name, dir_fd=parent, follow_symlinks=False)
+
+
+def link_target(path):
+    path = Path(path)
+    with directory_fd(path.parent) as parent:
+        return os.readlink(path.name, dir_fd=parent)
+
+
 def signature(path):
-    s = path.stat(follow_symlinks=False)
+    s = path_stat(path)
     return [s.st_dev, s.st_ino, s.st_size, s.st_mtime_ns, s.st_ctime_ns,
             stat.S_IMODE(s.st_mode)]
 
 
+def renv_link(rel, target):
+    parts = safe_relative(rel).parts
+    marker = next((i for i in range(len(parts) - 1)
+                   if parts[i:i + 2] == ("renv", "library")), None)
+    if marker is None or len(parts) - marker != 6 or ".git" in parts:
+        raise RuntimeError("Unsupported symlink/special path: " + rel)
+    package = parts[-1]
+    destination = Path(target)
+    try:
+        cache = destination.relative_to(RENV_CACHE_ROOT).parts
+    except ValueError as error:
+        raise RuntimeError("Unsupported renv cache link: " + rel) from error
+    if (not destination.is_absolute() or str(destination) != target or ".." in destination.parts
+            or len(cache) != 8 or not re.fullmatch(r"v[0-9]+", cache[0])
+            or cache[1:5] != (*parts[marker + 2:marker + 5], package)
+            or cache[-1] != package or not re.fullmatch(r"[A-Za-z][A-Za-z0-9.]*", package)
+            or not re.fullmatch(r"[0-9a-f]{32}", cache[-2])):
+        raise RuntimeError("Unsupported renv cache link: " + rel)
+    return (Path(*parts[:marker]) / "renv.lock").as_posix(), package, cache[-3], cache[-2]
+
+
+def check_renv_lock(root, rel, target):
+    lock_rel, package, version, cache_hash = renv_link(rel, target)
+    lock = root / lock_rel
+    try:
+        regular = stat.S_ISREG(path_stat(lock).st_mode)
+    except FileNotFoundError:
+        regular = False
+    if not regular:
+        raise RuntimeError("renv cache link requires a regular project lockfile: " + rel)
+    try:
+        with regular_file(lock) as stream:
+            record = json.load(stream)["Packages"][package]
+        if (record["Version"] != version or record.get("Package", package) != package
+                or (record.get("Hash") is not None and record["Hash"] != cache_hash)):
+            raise ValueError("package version/hash differs")
+    except (KeyError, TypeError, ValueError) as error:
+        raise RuntimeError("renv cache link differs from project lockfile: " + rel) from error
+
+
+def manifest_symlinks(manifest):
+    links = manifest.get("symlinks", {})
+    paths = set(manifest["files"]) | set(manifest["directories"]) | set(links)
+    for rel, target in links.items():
+        lock_rel, _, _, _ = renv_link(rel, target)
+        if (rel in manifest["files"] or rel in manifest["directories"]
+                or lock_rel not in manifest["files"]
+                or any(Path(rel) in Path(other).parents for other in paths if other != rel)):
+            raise RuntimeError("Invalid renv link inventory or descendant path: " + rel)
+    return links
+
+
 def inventory(root):
-    files, dirs, modes = {}, [], {}
-    def fail(error):
-        raise error
-    for directory, dirnames, filenames in os.walk(root, followlinks=False, onerror=fail):
-        for name in sorted(dirnames + filenames):
-            path = Path(directory) / name
+    files, dirs, modes, links = {}, [], {}, {}
+    pending = [root]
+    while pending:
+        directory = pending.pop()
+        with directory_fd(directory) as descriptor:
+            names = sorted(os.listdir(descriptor))
+        for name in names:
+            path = directory / name
             rel = path.relative_to(root).as_posix()
             if protected(rel):
                 raise RuntimeError("Protected PBDB receipt/history path found; no payload read: " + rel)
-            s = path.lstat()
+            s = path_stat(path)
             if ".git" in path.relative_to(root).parts and name.endswith(".lock"):
                 raise RuntimeError("Git lock present; retry after the Git operation: " + rel)
             lower_name = name.lower()
@@ -91,17 +191,27 @@ def inventory(root):
             if stat.S_ISREG(s.st_mode) and lower_name.endswith(".mdb") and rel not in KNOWN_MDB:
                 raise RuntimeError("Unrecognised Access database requires a dedicated capture method: " + rel)
             modes[rel] = stat.S_IMODE(s.st_mode)
-            if stat.S_ISLNK(s.st_mode) or not (stat.S_ISDIR(s.st_mode) or stat.S_ISREG(s.st_mode)):
+            if stat.S_ISLNK(s.st_mode):
+                target = link_target(path)
+                check_renv_lock(root, rel, target)
+                sig = signature(path)
+                if sig != [s.st_dev, s.st_ino, s.st_size, s.st_mtime_ns, s.st_ctime_ns,
+                           stat.S_IMODE(s.st_mode)] or link_target(path) != target:
+                    raise RuntimeError("renv cache link changed during inventory: " + rel)
+                links[rel] = {"target": target, "signature": sig}
+            elif not (stat.S_ISDIR(s.st_mode) or stat.S_ISREG(s.st_mode)):
                 raise RuntimeError("Unsupported symlink/special path: " + rel)
-            if stat.S_ISDIR(s.st_mode):
+            elif stat.S_ISDIR(s.st_mode):
                 dirs.append(rel)
+                pending.append(path)
             else:
                 files[rel] = signature(path)
-    return {"files": files, "dirs": sorted(dirs), "modes": modes}
+    return {"files": files, "dirs": sorted(dirs), "modes": modes, "symlinks": links}
 
 
 def stable(inventory_a, inventory_b):
-    return all(inventory_a[k] == inventory_b[k] for k in ("files", "dirs", "modes"))
+    return (all(inventory_a[k] == inventory_b[k] for k in ("files", "dirs", "modes"))
+            and inventory_a.get("symlinks", {}) == inventory_b.get("symlinks", {}))
 
 
 def check_git_config(source):
@@ -118,7 +228,11 @@ def check_git_config(source):
 
 
 def file_record(path):
-    return {"bytes": path.stat().st_size, "sha256": digest(path)}
+    before = signature(path)
+    checksum = digest(path)
+    if signature(path) != before:
+        raise RuntimeError("File changed while checksumming: " + str(path))
+    return {"bytes": before[2], "sha256": checksum}
 
 
 def safe_relative(value):
@@ -130,6 +244,7 @@ def safe_relative(value):
 
 def verify_metadata(generation):
     manifest = json.loads((generation / "manifest.json").read_text())
+    links = manifest_symlinks(manifest)
     root = generation / "project"
     if root.is_symlink() or not root.is_dir():
         raise RuntimeError("Generation project must be a directory: " + str(root))
@@ -139,6 +254,8 @@ def verify_metadata(generation):
         raise RuntimeError("Destination file inventory differs from manifest")
     if found["dirs"] != manifest["directories"]:
         raise RuntimeError("Destination directory inventory differs from manifest")
+    if {rel: entry["target"] for rel, entry in found["symlinks"].items()} != links:
+        raise RuntimeError("Destination symlink targets differ from manifest")
     partial = generation.name.endswith(".partial")
     for rel in manifest["directories"]:
         expected_mode = manifest["source_modes"][rel]
@@ -161,6 +278,12 @@ def destination_identities(found):
     return {rel: [sig[1], sig[2], sig[3], sig[5]] for rel, sig in found["files"].items()}
 
 
+def destination_link_identities(found):
+    return {rel: {"target": entry["target"],
+                  "identity": [entry["signature"][i] for i in (1, 2, 3, 5)]}
+            for rel, entry in found["symlinks"].items()}
+
+
 def check_destination_identities(generation, found, required=False):
     path = generation / "file-identities.json"
     if not os.path.lexists(path):
@@ -170,7 +293,8 @@ def check_destination_identities(generation, found, required=False):
     if path.is_symlink() or not path.is_file():
         raise RuntimeError("Invalid file-identity receipt: " + str(path))
     receipt = json.loads(path.read_text())
-    if receipt.get("format") != 1 or receipt.get("files") != destination_identities(found):
+    if (receipt.get("format") != 1 or receipt.get("files") != destination_identities(found)
+            or receipt.get("symlinks", {}) != destination_link_identities(found)):
         raise RuntimeError("Destination file identity mismatch: " + str(generation))
     return True
 
@@ -178,6 +302,16 @@ def check_destination_identities(generation, found, required=False):
 def check_source_inventory(manifest, before):
     try:
         files = before["files"]
+        links = manifest_symlinks(manifest)
+        if {rel: entry["target"] for rel, entry in before.get("symlinks", {}).items()} != links:
+            raise RuntimeError("Manifest differs from the source link inventory")
+        for rel, entry in before.get("symlinks", {}).items():
+            sig = entry["signature"]
+            if (not isinstance(sig, list) or len(sig) != 6
+                    or any(not isinstance(value, int) for value in sig)
+                    or sig[2] != len(os.fsencode(entry["target"]))
+                    or sig[5] != before["modes"][rel]):
+                raise RuntimeError("Invalid source link inventory entry: " + rel)
         if (set(files) != set(manifest["files"]) or
                 before["dirs"] != manifest["directories"] or
                 before["modes"] != manifest["source_modes"]):
@@ -213,7 +347,9 @@ def verify(generation, inode_cache=None):
             raise RuntimeError("Checksum/size mismatch: " + rel)
     if not stable(found, inventory(generation / "project")):
         raise RuntimeError("Generation changed during verification: " + str(generation))
-    return {"files": len(found["files"]), "bytes": total, "sha256": "all_match"}
+    return {"files": len(found["files"]), "bytes": total, "sha256": "all_match",
+            "symlinks": len(found["symlinks"]), "symlink_targets": "all_match",
+            "external_renv_cache": "not_captured"}
 
 
 def scrub_generations(root, inode_cache=None):
@@ -233,7 +369,8 @@ def scrub_generations(root, inode_cache=None):
 
 
 def restore(generation, destination, sample=False):
-    manifest = json.loads((generation / "manifest.json").read_text())
+    manifest, _, _ = verify_metadata(generation)
+    links = manifest_symlinks(manifest)
     if destination.exists():
         raise RuntimeError("Restore target must be new: " + str(destination))
     destination.mkdir(parents=True, mode=0o700)
@@ -246,6 +383,7 @@ def restore(generation, destination, sample=False):
                        ({"README.md", "library/closed.tsv", "library/open.tsv",
                          "library/closed/edwards2007.pdf", "library/open/W1820528062_SI.doc",
                          ".git/HEAD"} & set(paths)))
+        paths = sorted(set(paths) | {renv_link(rel, target)[0] for rel, target in links.items()})
     else:
         for rel in manifest["directories"]:
             (destination / safe_relative(rel)).mkdir(parents=True, exist_ok=True)
@@ -253,28 +391,57 @@ def restore(generation, destination, sample=False):
     for rel in paths:
         output = destination / safe_relative(rel)
         output.parent.mkdir(parents=True, exist_ok=True)
-        shutil.copy2(generation / "project" / rel, output)
+        with regular_file(generation / "project" / rel) as original:
+            metadata = os.fstat(original.fileno())
+            with output.open("xb") as copied:
+                shutil.copyfileobj(original, copied)
+        os.utime(output, ns=(metadata.st_atime_ns, metadata.st_mtime_ns))
         if file_record(output) != manifest["files"][rel]:
             raise RuntimeError("Restore checksum failed: " + rel)
         total += manifest["files"][rel]["bytes"]
         output.chmod(manifest["source_modes"][rel])
+    for rel, target in links.items():
+        output = destination / safe_relative(rel)
+        output.parent.mkdir(parents=True, exist_ok=True)
+        output.symlink_to(target)
+        if not output.is_symlink() or os.readlink(output) != target:
+            raise RuntimeError("Restore symlink failed: " + rel)
     if not sample:
         for rel in sorted(manifest["directories"], key=lambda p: len(Path(p).parts), reverse=True):
             (destination / rel).chmod(manifest["source_modes"][rel])
     return {"kind": "sample" if sample else "full", "files": len(paths), "bytes": total,
-            "sha256": "all_match", "target": str(destination)}
+            "sha256": "all_match", "target": str(destination), "symlinks": len(links),
+            "symlink_targets": "all_match", "external_renv_cache": "not_captured"}
 
 
 def seal(generation):
-    for directory, dirs, files in os.walk(generation):
-        for name in files:
-            p = Path(directory) / name
-            mode = stat.S_IMODE(p.stat().st_mode)
-            if mode & 0o222:
-                p.chmod(mode & ~0o222)
-    for directory, dirs, files in os.walk(generation, topdown=False):
-        p = Path(directory)
-        p.chmod(stat.S_IMODE(p.stat().st_mode) & ~0o222)
+    with regular_file(generation / "manifest.json") as stream:
+        links = manifest_symlinks(json.load(stream))
+    pending, directories = [generation], []
+    while pending:
+        directory = pending.pop()
+        directories.append(directory)
+        with directory_fd(directory) as descriptor:
+            for name in os.listdir(descriptor):
+                path = directory / name
+                mode = os.stat(name, dir_fd=descriptor, follow_symlinks=False).st_mode
+                if stat.S_ISDIR(mode):
+                    pending.append(path)
+                elif stat.S_ISREG(mode):
+                    with regular_file(path) as stream:
+                        current_mode = stat.S_IMODE(os.fstat(stream.fileno()).st_mode)
+                        if current_mode & 0o222:
+                            os.fchmod(stream.fileno(), current_mode & ~0o222)
+                elif stat.S_ISLNK(mode):
+                    rel = path.relative_to(generation).as_posix()
+                    if (not rel.startswith("project/") or
+                            links.get(rel[len("project/"):]) != os.readlink(name, dir_fd=descriptor)):
+                        raise RuntimeError("Unexpected symlink during sealing: " + rel)
+                else:
+                    raise RuntimeError("Unexpected special path during sealing: " + str(path))
+    for directory in reversed(directories):
+        with directory_fd(directory) as descriptor:
+            os.fchmod(descriptor, stat.S_IMODE(os.fstat(descriptor).st_mode) & ~0o222)
 
 
 def on_data_volume(root):
@@ -420,7 +587,10 @@ def inherit(root, generation):
         directory.chmod(0o700)
     for rel in manifest["inherited"]:
         os.link(previous / safe_relative(rel), project / safe_relative(rel))
-    return {"inherited_files": len(manifest["inherited"])}
+    links = manifest_symlinks(manifest)
+    for rel, target in links.items():
+        (project / safe_relative(rel)).symlink_to(target)
+    return {"inherited_files": len(manifest["inherited"]), "symlinks": len(links)}
 
 
 def verify_incremental(partial, previous, hash_fresh=True):
@@ -444,7 +614,9 @@ def verify_incremental(partial, previous, hash_fresh=True):
     return {"files": len(found["files"]), "bytes": total,
             "fresh_files": len(found["files"]) - len(inherited),
             "inherited_files": len(inherited),
-            "sha256": "fresh_match_inherited_metadata_trusted"}
+            "sha256": "fresh_match_inherited_metadata_trusted",
+            "symlinks": len(found["symlinks"]), "symlink_targets": "all_match",
+            "external_renv_cache": "not_captured"}
 
 
 def assert_latest(root, previous):
@@ -468,6 +640,7 @@ def publish_locked(root, generation):
     assert_latest(root, previous)
     latest = root / "latest"
     manifest = json.loads((partial / "manifest.json").read_text())
+    manifest_symlinks(manifest)
     if manifest.get("based_on") != plan["previous"] or manifest.get("scrub") != plan["scrub"]:
         raise RuntimeError("Capture does not match the prepared plan")
     project = partial / "project"
@@ -500,7 +673,8 @@ def publish_locked(root, generation):
         raise RuntimeError("Generation changed before promotion")
     result["seconds"] = round(time.monotonic() - started, 3)
     write_json(partial / "file-identities.json",
-               {"format": 1, "files": destination_identities(verification_after)})
+               {"format": 1, "files": destination_identities(verification_after),
+                "symlinks": destination_link_identities(verification_after)})
     write_json(partial / "verification.json", result)
     write_json(partial / "restore-test.json", drill)
     if scrub:
@@ -644,6 +818,8 @@ def snapshot(args):
         captured = inventory(capture)
         if (set(captured["files"]) != set(before["files"]) or
                 captured["dirs"] != before["dirs"] or captured["modes"] != before["modes"] or
+                {rel: entry["target"] for rel, entry in captured["symlinks"].items()} !=
+                {rel: entry["target"] for rel, entry in before["symlinks"].items()} or
                 any(captured["files"][rel][2:4] != sig[2:4]
                     for rel, sig in before["files"].items())):
             raise RuntimeError("Local clone inventory or modes differ from the source")
@@ -658,6 +834,8 @@ def snapshot(args):
         manifest = {"format": 2, "generation": generation, "source_host": os.uname().nodename,
                     "source": str(source), "git_head": git_head, "git_status": git_status,
                     "files": files, "directories": before["dirs"],
+                    "symlinks": {rel: entry["target"]
+                                 for rel, entry in before["symlinks"].items()},
                     "source_modes": before["modes"], "source_root": root_sig[1],
                     "based_on": receipt["previous"], "inherited": sorted(inherited),
                     "scrub": receipt["scrub"],
