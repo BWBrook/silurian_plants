@@ -1,0 +1,153 @@
+scope,selection,TMIC,meaning,taxon_rows,documents
+full_release,cambrian_any_named_endpoint,ALL,all indexed types,17502,776
+full_release,cambrian_any_named_endpoint,A,Acritarchs,16150,711
+full_release,cambrian_any_named_endpoint,D,Dinoflagellates,70,47
+full_release,cambrian_any_named_endpoint,E,Algae,590,157
+full_release,cambrian_any_named_endpoint,F,Fungal Spores,46,26
+full_release,cambrian_any_named_endpoint,K,Scolecodonts,70,9
+full_release,cambrian_any_named_endpoint,M,Microfossils of unknown affinity,59,36
+full_release,cambrian_any_named_endpoint,O,Other,166,76
+full_release,cambrian_any_named_endpoint,R,Modern Dinoflagellates,4,4
+full_release,cambrian_any_named_endpoint,S,Spores or Pollen,288,98
+full_release,cambrian_any_named_endpoint,Z,Chitinozoans,59,23
+full_release,cambrian_explicit_endpoint,ALL,all indexed types,17208,763
+full_release,cambrian_explicit_endpoint,A,Acritarchs,15867,698
+full_release,cambrian_explicit_endpoint,D,Dinoflagellates,68,45
+full_release,cambrian_explicit_endpoint,E,Algae,586,154
+full_release,cambrian_explicit_endpoint,F,Fungal Spores,46,26
+full_release,cambrian_explicit_endpoint,K,Scolecodonts,70,9
+full_release,cambrian_explicit_endpoint,M,Microfossils of unknown affinity,57,34
+full_release,cambrian_explicit_endpoint,O,Other,164,74
+full_release,cambrian_explicit_endpoint,R,Modern Dinoflagellates,4,4
+full_release,cambrian_explicit_endpoint,S,Spores or Pollen,288,98
+full_release,cambrian_explicit_endpoint,Z,Chitinozoans,58,22
+full_release,cambrian_only_populated_endpoints,ALL,all indexed types,13015,603
+full_release,cambrian_only_populated_endpoints,A,Acritarchs,12317,561
+full_release,cambrian_only_populated_endpoints,D,Dinoflagellates,47,30
+full_release,cambrian_only_populated_endpoints,E,Algae,294,90
+full_release,cambrian_only_populated_endpoints,F,Fungal Spores,15,9
+full_release,cambrian_only_populated_endpoints,K,Scolecodonts,4,1
+full_release,cambrian_only_populated_endpoints,M,Microfossils of unknown affinity,32,22
+full_release,cambrian_only_populated_endpoints,O,Other,103,48
+full_release,cambrian_only_populated_endpoints,R,Modern Dinoflagellates,1,1
+full_release,cambrian_only_populated_endpoints,S,Spores or Pollen,193,71
+full_release,cambrian_only_populated_endpoints,Z,Chitinozoans,9,8
+full_release,cambrian_or_tremadocian_any_named_endpoint,ALL,all indexed types,23718,956
+full_release,cambrian_or_tremadocian_any_named_endpoint,A,Acritarchs,21954,849
+full_release,cambrian_or_tremadocian_any_named_endpoint,D,Dinoflagellates,80,56
+full_release,cambrian_or_tremadocian_any_named_endpoint,E,Algae,591,158
+full_release,cambrian_or_tremadocian_any_named_endpoint,F,Fungal Spores,46,26
+full_release,cambrian_or_tremadocian_any_named_endpoint,K,Scolecodonts,114,13
+full_release,cambrian_or_tremadocian_any_named_endpoint,M,Microfossils of unknown affinity,66,38
+full_release,cambrian_or_tremadocian_any_named_endpoint,O,Other,167,77
+full_release,cambrian_or_tremadocian_any_named_endpoint,R,Modern Dinoflagellates,5,5
+full_release,cambrian_or_tremadocian_any_named_endpoint,S,Spores or Pollen,340,111
+full_release,cambrian_or_tremadocian_any_named_endpoint,Z,Chitinozoans,355,81
+full_release,cambrian_regional_endpoint_without_explicit_Cambrian,ALL,all indexed types,294,22
+full_release,cambrian_regional_endpoint_without_explicit_Cambrian,A,Acritarchs,283,22
+full_release,cambrian_regional_endpoint_without_explicit_Cambrian,D,Dinoflagellates,2,2
+full_release,cambrian_regional_endpoint_without_explicit_Cambrian,E,Algae,4,3
+full_release,cambrian_regional_endpoint_without_explicit_Cambrian,M,Microfossils of unknown affinity,2,2
+full_release,cambrian_regional_endpoint_without_explicit_Cambrian,O,Other,2,2
+full_release,cambrian_regional_endpoint_without_explicit_Cambrian,Z,Chitinozoans,1,1
+full_release,cambrian_tremadocian_cross_range,ALL,all indexed types,721,75
+full_release,cambrian_tremadocian_cross_range,A,Acritarchs,710,71
+full_release,cambrian_tremadocian_cross_range,D,Dinoflagellates,3,3
+full_release,cambrian_tremadocian_cross_range,K,Scolecodonts,1,1
+full_release,cambrian_tremadocian_cross_range,M,Microfossils of unknown affinity,1,1
+full_release,cambrian_tremadocian_cross_range,O,Other,1,1
+full_release,cambrian_tremadocian_cross_range,Z,Chitinozoans,5,4
+full_release,tremadocian_any_named_endpoint,ALL,all indexed types,6937,312
+full_release,tremadocian_any_named_endpoint,A,Acritarchs,6514,265
+full_release,tremadocian_any_named_endpoint,D,Dinoflagellates,13,13
+full_release,tremadocian_any_named_endpoint,E,Algae,1,1
+full_release,tremadocian_any_named_endpoint,K,Scolecodonts,45,7
+full_release,tremadocian_any_named_endpoint,M,Microfossils of unknown affinity,8,3
+full_release,tremadocian_any_named_endpoint,O,Other,2,2
+full_release,tremadocian_any_named_endpoint,R,Modern Dinoflagellates,1,1
+full_release,tremadocian_any_named_endpoint,S,Spores or Pollen,52,14
+full_release,tremadocian_any_named_endpoint,Z,Chitinozoans,301,62
+full_release,tremadocian_only_populated_endpoints,ALL,all indexed types,4378,240
+full_release,tremadocian_only_populated_endpoints,A,Acritarchs,4177,213
+full_release,tremadocian_only_populated_endpoints,D,Dinoflagellates,9,9
+full_release,tremadocian_only_populated_endpoints,K,Scolecodonts,20,4
+full_release,tremadocian_only_populated_endpoints,M,Microfossils of unknown affinity,7,2
+full_release,tremadocian_only_populated_endpoints,R,Modern Dinoflagellates,1,1
+full_release,tremadocian_only_populated_endpoints,S,Spores or Pollen,26,10
+full_release,tremadocian_only_populated_endpoints,Z,Chitinozoans,138,34
+held_window,cambrian_any_named_endpoint,ALL,all indexed types,17500,776
+held_window,cambrian_any_named_endpoint,A,Acritarchs,16148,711
+held_window,cambrian_any_named_endpoint,D,Dinoflagellates,70,47
+held_window,cambrian_any_named_endpoint,E,Algae,590,157
+held_window,cambrian_any_named_endpoint,F,Fungal Spores,46,26
+held_window,cambrian_any_named_endpoint,K,Scolecodonts,70,9
+held_window,cambrian_any_named_endpoint,M,Microfossils of unknown affinity,59,36
+held_window,cambrian_any_named_endpoint,O,Other,166,76
+held_window,cambrian_any_named_endpoint,R,Modern Dinoflagellates,4,4
+held_window,cambrian_any_named_endpoint,S,Spores or Pollen,288,98
+held_window,cambrian_any_named_endpoint,Z,Chitinozoans,59,23
+held_window,cambrian_explicit_endpoint,ALL,all indexed types,17206,763
+held_window,cambrian_explicit_endpoint,A,Acritarchs,15865,698
+held_window,cambrian_explicit_endpoint,D,Dinoflagellates,68,45
+held_window,cambrian_explicit_endpoint,E,Algae,586,154
+held_window,cambrian_explicit_endpoint,F,Fungal Spores,46,26
+held_window,cambrian_explicit_endpoint,K,Scolecodonts,70,9
+held_window,cambrian_explicit_endpoint,M,Microfossils of unknown affinity,57,34
+held_window,cambrian_explicit_endpoint,O,Other,164,74
+held_window,cambrian_explicit_endpoint,R,Modern Dinoflagellates,4,4
+held_window,cambrian_explicit_endpoint,S,Spores or Pollen,288,98
+held_window,cambrian_explicit_endpoint,Z,Chitinozoans,58,22
+held_window,cambrian_only_populated_endpoints,ALL,all indexed types,13013,603
+held_window,cambrian_only_populated_endpoints,A,Acritarchs,12315,561
+held_window,cambrian_only_populated_endpoints,D,Dinoflagellates,47,30
+held_window,cambrian_only_populated_endpoints,E,Algae,294,90
+held_window,cambrian_only_populated_endpoints,F,Fungal Spores,15,9
+held_window,cambrian_only_populated_endpoints,K,Scolecodonts,4,1
+held_window,cambrian_only_populated_endpoints,M,Microfossils of unknown affinity,32,22
+held_window,cambrian_only_populated_endpoints,O,Other,103,48
+held_window,cambrian_only_populated_endpoints,R,Modern Dinoflagellates,1,1
+held_window,cambrian_only_populated_endpoints,S,Spores or Pollen,193,71
+held_window,cambrian_only_populated_endpoints,Z,Chitinozoans,9,8
+held_window,cambrian_or_tremadocian_any_named_endpoint,ALL,all indexed types,23716,956
+held_window,cambrian_or_tremadocian_any_named_endpoint,A,Acritarchs,21952,849
+held_window,cambrian_or_tremadocian_any_named_endpoint,D,Dinoflagellates,80,56
+held_window,cambrian_or_tremadocian_any_named_endpoint,E,Algae,591,158
+held_window,cambrian_or_tremadocian_any_named_endpoint,F,Fungal Spores,46,26
+held_window,cambrian_or_tremadocian_any_named_endpoint,K,Scolecodonts,114,13
+held_window,cambrian_or_tremadocian_any_named_endpoint,M,Microfossils of unknown affinity,66,38
+held_window,cambrian_or_tremadocian_any_named_endpoint,O,Other,167,77
+held_window,cambrian_or_tremadocian_any_named_endpoint,R,Modern Dinoflagellates,5,5
+held_window,cambrian_or_tremadocian_any_named_endpoint,S,Spores or Pollen,340,111
+held_window,cambrian_or_tremadocian_any_named_endpoint,Z,Chitinozoans,355,81
+held_window,cambrian_regional_endpoint_without_explicit_Cambrian,ALL,all indexed types,294,22
+held_window,cambrian_regional_endpoint_without_explicit_Cambrian,A,Acritarchs,283,22
+held_window,cambrian_regional_endpoint_without_explicit_Cambrian,D,Dinoflagellates,2,2
+held_window,cambrian_regional_endpoint_without_explicit_Cambrian,E,Algae,4,3
+held_window,cambrian_regional_endpoint_without_explicit_Cambrian,M,Microfossils of unknown affinity,2,2
+held_window,cambrian_regional_endpoint_without_explicit_Cambrian,O,Other,2,2
+held_window,cambrian_regional_endpoint_without_explicit_Cambrian,Z,Chitinozoans,1,1
+held_window,cambrian_tremadocian_cross_range,ALL,all indexed types,721,75
+held_window,cambrian_tremadocian_cross_range,A,Acritarchs,710,71
+held_window,cambrian_tremadocian_cross_range,D,Dinoflagellates,3,3
+held_window,cambrian_tremadocian_cross_range,K,Scolecodonts,1,1
+held_window,cambrian_tremadocian_cross_range,M,Microfossils of unknown affinity,1,1
+held_window,cambrian_tremadocian_cross_range,O,Other,1,1
+held_window,cambrian_tremadocian_cross_range,Z,Chitinozoans,5,4
+held_window,tremadocian_any_named_endpoint,ALL,all indexed types,6937,312
+held_window,tremadocian_any_named_endpoint,A,Acritarchs,6514,265
+held_window,tremadocian_any_named_endpoint,D,Dinoflagellates,13,13
+held_window,tremadocian_any_named_endpoint,E,Algae,1,1
+held_window,tremadocian_any_named_endpoint,K,Scolecodonts,45,7
+held_window,tremadocian_any_named_endpoint,M,Microfossils of unknown affinity,8,3
+held_window,tremadocian_any_named_endpoint,O,Other,2,2
+held_window,tremadocian_any_named_endpoint,R,Modern Dinoflagellates,1,1
+held_window,tremadocian_any_named_endpoint,S,Spores or Pollen,52,14
+held_window,tremadocian_any_named_endpoint,Z,Chitinozoans,301,62
+held_window,tremadocian_only_populated_endpoints,ALL,all indexed types,4378,240
+held_window,tremadocian_only_populated_endpoints,A,Acritarchs,4177,213
+held_window,tremadocian_only_populated_endpoints,D,Dinoflagellates,9,9
+held_window,tremadocian_only_populated_endpoints,K,Scolecodonts,20,4
+held_window,tremadocian_only_populated_endpoints,M,Microfossils of unknown affinity,7,2
+held_window,tremadocian_only_populated_endpoints,R,Modern Dinoflagellates,1,1
+held_window,tremadocian_only_populated_endpoints,S,Spores or Pollen,26,10
+held_window,tremadocian_only_populated_endpoints,Z,Chitinozoans,138,34

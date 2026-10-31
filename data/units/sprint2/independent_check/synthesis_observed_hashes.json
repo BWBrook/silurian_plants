@@ -1,0 +1,11 @@
+{
+  "docs/sprints-2026-11.md": "05b0a5190c9aa6268ea9cf2314e84e1a996c8cbc6d19ea83b04bfaadf460cc74",
+  "docs/sprint2-source-roster.md": "85c434ce68310171ca9c9225298e0a76444628344a62deea28caffab9a1c0e0a",
+  "docs/sprint2-results-and-value-of-information.md": "9a3787cffcb778886c424727e9366b1a6a8fd208427b174f3d25c92915ee36a4",
+  "docs/audits/2026-10-31-sprint2-m1.md": "b42bdbf7d48b02f454fda00d0ce839dacbd5813e758118cc16bf3a247b3e1a9b",
+  "models/f3/envelope.py": "0f6d1b2e9cb2e99b2d7211fafaf442c5946fa7f3579f6940d453d2084f18d473",
+  "models/f3/m2.py": "eae068281fb4655fa26e46e3395bd427c3bf264463f25be1a300174ab686715b",
+  "models/f3/out/m2_results.csv": "0d87fb1bd6674387553f4aefe7b9d0eb2657020cd056bf0ad63ae5a794056926",
+  "models/f3/out/qual/LY-MZ-CU_rho1_accept.json": "96f835ac951c26f623161f3264a9f7bc4eb8ab4b611c2bdc1ff192321f59da78",
+  "data/units/sprint2/conditional_sampling.csv": "1941cd3cef8989740549010b8a8a1a5abc2e89341d78267da52dc1bfac2585fd"
+}

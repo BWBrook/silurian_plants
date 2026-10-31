@@ -1,0 +1,251 @@
+{
+  "source_roster_commit": "d17d033cc2bb7f083a61e31228d30919f2406beb",
+  "sprint1_handoff_commit": "63ca45e",
+  "scope": "Source-admission evidence and conditional planning, not binding M1/M3 qualification",
+  "sources": [
+    {
+      "source_id": "steemanspereira2002",
+      "path": "library/open/steemanspereira2002.pdf",
+      "sha256": "7130e8128eb7027c6334509c5fb92662774796ab0bcc63607c205ecad6e3385d",
+      "role": "article",
+      "verification": "source-file hash checked; source-specific reading scope in audit"
+    },
+    {
+      "source_id": "grahn2000",
+      "path": "library/open/grahn2000.pdf",
+      "sha256": "3fb709ce9a396518672e9619285de1b3415d2a409f9b8971fc6a0633700b71b6",
+      "role": "article",
+      "verification": "source-file hash checked; source-specific reading scope in audit"
+    },
+    {
+      "source_id": "strother2021",
+      "path": "library/closed/strother2021.pdf",
+      "sha256": "1ed9098b5d2a8f26822f44c94544cca28f0688054e05aff4485df253c7aacd0d",
+      "role": "article",
+      "verification": "source-file hash checked; source-specific reading scope in audit"
+    },
+    {
+      "source_id": "strother2015",
+      "path": "library/closed/strother2015.pdf",
+      "sha256": "902f183848f947a638de283fc9b566278c83f2b9b653ecdd0eca481d8d53691e",
+      "role": "article",
+      "verification": "source-file hash checked; source-specific reading scope in audit"
+    },
+    {
+      "source_id": "rubinstein2010",
+      "path": "library/open/W1820528062.pdf",
+      "sha256": "046069e3563b339f9b7db2c53e98fe623c35a7424cc28c521687812cdcc21bd3",
+      "role": "article",
+      "verification": "source-file hash checked; source-specific reading scope in audit"
+    },
+    {
+      "source_id": "strother2021",
+      "path": "library/closed/strother2021_SI.pdf",
+      "sha256": "bd5f9d93d48652b1ce3d16e7e08ea687354142f3893b6e458808e6dd1891f062",
+      "role": "supplement",
+      "verification": "source-file hash checked; source-specific reading scope in audit"
+    },
+    {
+      "source_id": "rubinstein2010",
+      "path": "library/open/W1820528062_SI.doc",
+      "sha256": "3aea72c15d8071dc39d510e69b6999e32741aca0f46462451f502eb033825161",
+      "role": "supplement",
+      "verification": "source-file hash checked; source-specific reading scope in audit"
+    },
+    {
+      "source_id": "strother1996",
+      "path": "library/closed/strother1996.pdf",
+      "sha256": "2c284f78bbc8394d61be8e703c2f0b004f708b99ebe2d065f66a6358dbd033a6",
+      "role": "article",
+      "verification": "source-file hash checked; source-specific reading scope in audit"
+    },
+    {
+      "source_id": "wellman2015",
+      "path": "library/closed/wellman2015_firststudy.pdf",
+      "sha256": "8d3b68ed52c0281cd843b25b82c74be1285bfa7832dcf88b730033ad73b51cfc",
+      "role": "article",
+      "verification": "source-file hash checked; source-specific reading scope in audit"
+    },
+    {
+      "source_id": "steemans2009a",
+      "path": "library/closed/steemans2009a_firststudy.pdf",
+      "sha256": "464015c72b433afe238ab5ae5d83f95491450cb3d204ebc9a257bea090f57f8c",
+      "role": "article",
+      "verification": "source-file hash checked; source-specific reading scope in audit"
+    },
+    {
+      "source_id": "steemans2009a",
+      "path": "library/closed/steemans2009a_firststudy_SI1.pdf",
+      "sha256": "2576cd7c914dddfc4e8cde2772c15a2730c195fa88729d374c0f354e0e63e658",
+      "role": "supplement",
+      "verification": "source-file hash checked; source-specific reading scope in audit"
+    },
+    {
+      "source_id": "leherisse2015",
+      "path": "library/closed/leherisse2015_firststudy.pdf",
+      "sha256": "28047f302da4d685902bdf6d2fb96f92909a278fa562053c343704e0140f523d",
+      "role": "author-manuscript",
+      "verification": "source-file hash checked; source-specific reading scope in audit"
+    },
+    {
+      "source_id": "balme1961",
+      "path": "library/closed/balme1961_macbook20261030.pdf",
+      "sha256": "1405dd41c15f2ce08f4e7bef246a3fc03cc7d2ff93676655b6fa5707f6d40b07",
+      "role": "report-section-printed22-26/PDF26-30",
+      "verification": "source-file hash checked; source-specific reading scope in audit"
+    },
+    {
+      "source_id": "strother2016",
+      "path": "library/closed/strother2016_macbook20261030.pdf",
+      "sha256": "d225743dd0ed7529d87648f483813e2bd0dd7a988997c233b93980bc580737ef",
+      "role": "article",
+      "verification": "source-file hash and relevant tables/plates read in sprint2"
+    },
+    {
+      "source_id": "wang2022",
+      "path": "library/closed/wang2022_macbook20261030.pdf",
+      "sha256": "d2fcfd8b5fa58d9fd469c71aa2e53a40651815b7279f9a6354c950ced312b937",
+      "role": "article",
+      "verification": "source-file hash and relevant tables/plates read in sprint2"
+    },
+    {
+      "source_id": "wang2022_SI1",
+      "path": "library/closed/wang2022_tier2_SI1.xlsx",
+      "sha256": "82fd330bd220e7c91dadc5e076255d3e3b5ad707c42cd7ed10081e29428d1e4a",
+      "role": "supplement",
+      "verification": "source-file hash and relevant tables/plates read in sprint2"
+    },
+    {
+      "source_id": "rubinstein2011",
+      "path": "library/closed/rubinstein2011_macbook20261030.pdf",
+      "sha256": "07f015f5095a619647bbf42bdc839389e2b4b5862c06b9086f13a1a57107179f",
+      "role": "article",
+      "verification": "source-file hash and relevant tables/plates read in sprint2"
+    },
+    {
+      "source_id": "edwards_feehan_1980",
+      "path": "library/closed/edwardsfeehan1980.pdf",
+      "sha256": "f4283789681a0d91d42b15c2364259a9ed0392bac9a513c4d63ce6fb5db01397",
+      "role": "article-or-supplement",
+      "verification": "independent primary denominator audit; full source locators retained"
+    },
+    {
+      "source_id": "libertin_2018_nature_plants",
+      "path": "library/closed/libertin2018.pdf",
+      "sha256": "5564a5c21d2bed19e8b6a24a48922fa695bc5406041e2531176741645dc29e4f",
+      "role": "article-or-supplement",
+      "verification": "independent primary denominator audit; full source locators retained"
+    },
+    {
+      "source_id": "libertin_2018_supplement",
+      "path": "library/closed/libertin2018_SI.pdf",
+      "sha256": "b9b1f332bd6cdb4d8ed566def7bb6cfa5343f62e99c4b835f6d1c18e5b185147",
+      "role": "article-or-supplement",
+      "verification": "independent primary denominator audit; full source locators retained"
+    },
+    {
+      "source_id": "edwards_feehan_smith_1983",
+      "path": "library/closed/al1983_oup.pdf",
+      "sha256": "dbb16028f73adb3f72411c0b56c02c6b3f47e328b9c3249212819855f2c7a126",
+      "role": "article-or-supplement",
+      "verification": "independent primary denominator audit; full source locators retained"
+    },
+    {
+      "source_id": "libertin_2018_fossil_imprint",
+      "path": "library/closed/libertin2018a_tier2.pdf",
+      "sha256": "921c11666d49e1696e736d9c135f059c6cc1eecee30afc4eb9821198930b989e",
+      "role": "article-or-supplement",
+      "verification": "independent primary denominator audit; full source locators retained"
+    },
+    {
+      "source_id": "strullu_derrien_2010",
+      "path": "library/closed/strulluderrien2010.pdf",
+      "sha256": "fb3c53b092b0900a9bf8ee36f1e1cd351f8533e68f503e23e3227d1cce0e612b",
+      "role": "article-or-supplement",
+      "verification": "independent primary denominator audit; full source locators retained"
+    }
+  ],
+  "files": {
+    "data/external/spores/MANIFEST.tsv": "6307746094c919d5dd822cf07d3a90f2487de0b562cfbbe19113bb3abdff1fea",
+    "data/timescale.csv": "29c6cc4a68b1746d1a67c66623e5df30ac5dd316257b55ca5948c9854886f826",
+    "data/units/candidates.csv": "85e690eb8c0935a53acb237a272ecae0f21c57452a2daec25c099ac567d4b290",
+    "data/units/frame_samples.csv": "1a898ebb879d533f6dac584bb7fd5ee8e0908a8dc4a49b5f02dbdc3618306b94",
+    "data/units/frames.csv": "426e189dea16ba3782c4cf209dfe58232ba7bd685c34b84b4fa22365e2b61381",
+    "data/units/outcomes.csv": "9c996647d9e101a830cfd16efe466348a191f92396b71bad76cab791b756e37c",
+    "data/units/source_files.csv": "f4cd50b5ceabd2acb139e6974aabf3ebac786b46ea8aa5ec7d659ded433b523e",
+    "data/units/sources.csv": "05116b559f2382039a305bce1b2395c49a5d419222f9d25539f9b4ce355219f2",
+    "data/units/sprint2/README.md": "ef2a5a6698345b4e8fc5c6704bb04a57fb8b5c85fc37484515e421973cb3345f",
+    "data/units/sprint2/cambrian_argentina/argentina_material_crosswalk.csv": "0e7921fcd4847881cc028e4fb9387dadcc9c40dafbf3a800c90afc7e39492c50",
+    "data/units/sprint2/cambrian_argentina/extract_tables.py": "cea9090984c0f31185cfae63f665d9f739f75eb61856206f87141d0111497e2d",
+    "data/units/sprint2/cambrian_argentina/rubinstein2011_fig6_percentages.csv": "97eb14dc2534255c68348fc8b8009a5bdef1cb0e408d9608945b2874b3276255",
+    "data/units/sprint2/cambrian_argentina/rubinstein2011_quantitative_sample_summary.csv": "8b2ce5972b0834e923a522992a4678ece21a18603f3e2a838798868e7dd2cfe2",
+    "data/units/sprint2/cambrian_argentina/source_hashes.json": "e256ea81afbf8cb4c8907b0ee4930c762cd6f84c873b3ef572119cfafd323d4b",
+    "data/units/sprint2/cambrian_argentina/source_ledger.csv": "9c9ca604e2477c9650450a340c67f52faa2b2109d632f6a668780082fdd41a6f",
+    "data/units/sprint2/cambrian_argentina/strother2016_plate_source_inventory.csv": "04b1869e5e0ec720c447435f7a2719aa85c1abc3ac7dbaaca72ee8f234c9f536",
+    "data/units/sprint2/cambrian_argentina/validation.json": "bbb184fa56ea83df6a2218bc52e32563ac34ae733890b71382007191b0ecaba9",
+    "data/units/sprint2/cambrian_argentina/wang2022_catalogue_taxon_counts.csv": "f011e1c000160784f90d4e27bc8c3b145cc211e7d54b9b910bdf6ec37149e1fa",
+    "data/units/sprint2/cambrian_argentina/wang2022_prefix_summary.csv": "48917f050f432dc04973281f98c271e6ee5c6d741f8ac511b9835ee104ccbedc",
+    "data/units/sprint2/cambrian_argentina/wang2022_reported_composition.csv": "034dea9008f2be1f0fcdbf3f6177704accc07603e2494c260ea587dc10b605bb",
+    "data/units/sprint2/cambrian_argentina/wang2022_specimen_catalogue.csv": "8cbc1d8a6c0cea9abf2f96d5ea182302bea972ceedb45b34f5a16bbb94848943",
+    "data/units/sprint2/conditional_sampling.csv": "1941cd3cef8989740549010b8a8a1a5abc2e89341d78267da52dc1bfac2585fd",
+    "data/units/sprint2/crossref_identity.json": "da0c67324882203647ec7cfecead9addf477b689e8f69fbf1c49873d4d30067b",
+    "data/units/sprint2/doi-scan.log": "c30a2bfc2ad2238d2a90f898875ec31b02c98ece427182c53706673269c4bd56",
+    "data/units/sprint2/independent_check/balme_inventory_independent_check.csv": "8c52cb3b31ae76d63248a6b4c24a8733b95b15df7cfe93275d8c9b9d7b1114fd",
+    "data/units/sprint2/independent_check/check_parent.py": "754505bd9347554e054216ab429b2d82ea27c44c2974062bd989bd4b347b8c81",
+    "data/units/sprint2/independent_check/conditional_sampling_independent_check.csv": "4daa0921d9eb70b0904183a12ba1dbec939159723993420a0fdf286b0b15a026",
+    "data/units/sprint2/independent_check/final_receipt.json": "69f932732cc03ec595be6901fc06e54c74d606aec0847ae72a95bd7e309e2020",
+    "data/units/sprint2/independent_check/qusaiba_raster_cells.csv": "d4076985b224e170ed4218eca9add90b6c00ddc607d24430cdf0f27ff6a73ead",
+    "data/units/sprint2/independent_check/qusaiba_raster_check.csv": "211b9e5a10c45b9d4095bb5b5f80be8b071963b9c8c62749cc0288d59dba9ca1",
+    "data/units/sprint2/independent_check/raster_check.py": "f078f7aa85767f76e77b4a03172b053b583b6f593c3cbc8e12ccbb09f020adee",
+    "data/units/sprint2/independent_check/receipt.json": "d08a2f1ad3a36e14492d19e515d2319be3a27f2cced489cf4203b45286ad99e9",
+    "data/units/sprint2/independent_check/synthesis_observed_hashes.json": "f41a1578e422620ee1b9acc23b717387c0ec117f2ae9ee1b68a0e9484a01fef7",
+    "data/units/sprint2/m1_admission.csv": "e273aebb0472d56b735cb296496b73859f505c0bf71ccbb13027c1caa770163a",
+    "data/units/sprint2/m3/database_grain_coverage.csv": "dccac201782a0fd311b6a078a09c36dba32e68b44321b4248ee78329fe22b56d",
+    "data/units/sprint2/m3/field_coverage.csv": "5ac399d8aecf7eaf9a13f08f3e71d629d18d241370866f1e8501ed15f4441e5e",
+    "data/units/sprint2/m3/m3_source_denominator_assessment.csv": "d91accea664485c51e16f237effbdc86163446e121872f6b456d0e2c60eb372c",
+    "data/units/sprint2/m3/pbdb_irish_collection_10594.csv": "7a3a2402d1bd1a211669850fc00f0ccaf33a4b3800880782bba41347f07f1022",
+    "data/units/sprint2/m3/pbdb_irish_occurrences_10594.csv": "1e0046b625015a68a2e725dc6f6aa0053bcd6a8c668164e22413d16993535fc4",
+    "data/units/sprint2/m3/pbdb_irish_references.csv": "d09973b496adb2b22500319abf879bc1bb844b57f7e70a76d35213b3da014e58",
+    "data/units/sprint2/m3/pbdb_rock_censused_metadata.csv": "6b80ff169a5c367beedcaf0d18db16b9fe43ea06fe6d7b97ca80af156df48988",
+    "data/units/sprint2/m3/primary_material_inventory.csv": "c0ab49a478a34a31c64bb05a71d69aab8771dcbaca5b386c45f3bca1fdcbe438",
+    "data/units/sprint2/m3/prospective_scenarios.csv": "1cd9fb552272234e4e89e6f812d6b8f335818374dabdec3655a3738d3b75c70c",
+    "data/units/sprint2/m3/receipt.json": "7eefed134bc94d0d93ed80346ed1a479ed736befdf41c2b07500f3806cf51814",
+    "data/units/sprint2/m3/reproduce.py": "235a0898ab6e78ba9b05f94c2a3135b912dead9b65b51b426129e29a2a94d988",
+    "data/units/sprint2/m3/selection-criteria.md": "a694625dd11fc6282defca8090ffa91fa5d00a184dd5a7c5ffd75efb638ff1f7",
+    "data/units/sprint2/m3/source_integrity.csv": "2cf97ada9550354d75d29d2c647bb27a2f36738dcdb5a1aa9f18ef3da05fc61e",
+    "data/units/sprint2/palynodata/census.py": "5e1d503df48fe1f1df6eecb47c2d8dbe0d90176b1321bd39a4558c459662fd64",
+    "data/units/sprint2/palynodata/hashes.csv": "1e1a0b7d5e240276f2ebad01a880cccd365ebb8a0f1c09f284ccafef255716ae",
+    "data/units/sprint2/palynodata/legacy_coverage_summary.csv": "90ba53f873c9e1e4f7b40bee2422860545b045ff56cdff1b4e2706ff08598f72",
+    "data/units/sprint2/palynodata/legacy_document_coverage.csv": "ca70d9579fe6ebf4d4f3b560d1fd2ee47762c096e0727ac0c5a848a9a0cbfef9",
+    "data/units/sprint2/palynodata/legacy_label_selection.csv": "2095fc6d40d3c0e1871f2add645ed8e331eb3dfdf661b0264f4aa5de6f752146",
+    "data/units/sprint2/palynodata/receipt.json": "d16bc58fe1e9d3234cb2d3c0597ae0987d07e0c8ce61c0b5b9e0a05894f2e90c",
+    "data/units/sprint2/palynodata/roster_age_intervals.csv": "bbb52c160ed425ee80e641fd4302b881bb6dea01e949dd19e09326855053baab",
+    "data/units/sprint2/palynodata/roster_documents.csv": "9a3dee5b71f327406ccebf05bd55b596be61ecb399ecfed871eb55f7cf5fc05e",
+    "data/units/sprint2/palynodata/roster_post2006_unmatched.csv": "12dc7d79d3f73c6dbaeccdc426260bfae9b4ba3e355510efaa954ead34b47cc4",
+    "data/units/sprint2/palynodata/roster_taxon_rows.csv": "ca17e7efc0afeb3215687d177714b5d6581cd18f08857f0729fed89a256469a7",
+    "data/units/sprint2/palynodata/roster_tmic_counts.csv": "06e7c6eb3e9e95d012f090bd7f7e58da3f7fd357d9488d046c2e4d3e72d43fdb",
+    "data/units/sprint2/pipeline/LY-H2-CU_rho1_dev.json": "965d84f5316188aade95f95d64825aecb640763ba8cb83834b98f9ed69c01b70",
+    "data/units/sprint2/pipeline/LY-H2-CU_rho1_dev_reps.csv.gz": "ea76ca80b57bd307c6c1200f3b16c2f469306624c11ff6b65f3b9aae37eb35ba",
+    "data/units/sprint2/pipeline/dev.log": "1498d6cd1a10c854482f4f2c9fd7c9a64bb27d75609ebb15a8db9220c349f225",
+    "data/units/sprint2/pipeline/run_dev.py": "bb0fdac658a6fc7b81a96b95fc09e71b40017f11cc1215364de4502df81ba712",
+    "data/units/sprint2/qusaiba_e2_reports.csv": "9489c720cfa9a7eebd5f655a2e08223e049c6fa8ac4cb4a42c71a25662b83f56",
+    "data/units/sprint2/samphire1961_inventory.csv": "2be00990e16344ffb304950787a197bf9f1ab97bf0bf2523f28b68ea00c19da0",
+    "data/units/sprint2/source_files.csv": "8c72caf71aeaaff5984f88fdeb71937a5d60117efcbc27bc6a8ca79f12b24c72",
+    "data/units/sprint2/source_frame_map.csv": "d49fc94ccf45d2df23543bea7b5daba5ffe5e03d5ee012f35db8ea8ba8131099",
+    "data/units/units.csv": "3bc35500b9c3ff9d144949b070a1f20547ba05d6b0c96833f7a01f921378fcca",
+    "docs/audits/2026-10-31-sprint2-cambrian-argentina.md": "a1e21ef34509c4bf4e2e0d86bcf5911356446d1fffac25a347db1ca7c37907e8",
+    "docs/audits/2026-10-31-sprint2-independent-check.md": "918a9fa1c03af9e7973eb40a465f40844bd902231d6ed1678c5d9a3cb7b67e1a",
+    "docs/audits/2026-10-31-sprint2-m1.md": "26dd8bdbe10d3f81824722b5d08e85ebf47b4057daf090fe3108d4767d996d6b",
+    "docs/audits/2026-10-31-sprint2-m3.md": "38b004da21d14f0a06677586994c215488cbc776e3647f4c7639e538484d23ca",
+    "docs/audits/2026-10-31-sprint2-palynodata.md": "55ed64fe071a2ab20a3d56a25bb0b9c578f34fc1e8d1827bc4475331a597b265",
+    "docs/audits/2026-10-31-sprint2-pipeline-reuse.md": "2e43cc4defac597ebe9fa6d7451775d2565dce671717cc1ea0866dce91f975ec",
+    "docs/audits/2026-10-31-sprint2-synthesis-review.md": "a76935620ed4bec65d5f3fd264c1da7f6b1f29e9f080f9743e3a926f7b26b424",
+    "docs/sprint2-results-and-value-of-information.md": "2f3707b76f7b4b1d7d29f58e4998af82d4dc27ad11f5e64d3804025bd61e406d",
+    "docs/sprint2-source-roster.md": "85c434ce68310171ca9c9225298e0a76444628344a62deea28caffab9a1c0e0a",
+    "docs/sprints-2026-11.md": "05b0a5190c9aa6268ea9cf2314e84e1a996c8cbc6d19ea83b04bfaadf460cc74",
+    "models/f3/out/m2_results.csv": "0d87fb1bd6674387553f4aefe7b9d0eb2657020cd056bf0ad63ae5a794056926",
+    "models/f3/out/m2_screen.csv": "65469950798ae6051c6132775ef375715c01ace3f462f20932cea12625661647",
+    "models/f3/out/m2_units.csv": "6fcae5714f4a5e04e1e61e6ff15bbce3fd35db1374fae665038e3d6ba3e344c0",
+    "tools/sprint2.py": "84dc8df5967d4400dda7f853eec4b4460d73a407e6ed50bebf6f2458298e475b"
+  }
+}

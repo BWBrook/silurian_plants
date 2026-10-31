@@ -1,0 +1,71 @@
+# Sprint 2: Cambrian and Argentine source admission
+
+31 October 2026. Codex source extraction for the fixed source roster, independently checked and integrated by the parent. Tables and reproducer are in `data/units/sprint2/cambrian_argentina/`. Analytical outcomes and the F3 engine were not changed. Source-admission decisions are adopted for this sprint; no new numerical design is admitted.
+
+## Admission result
+
+None of these three source groups presently supplies an analysis-ready M1 older/reference design. This is a source-admission result, not a numerical result or a claim that Cambrian cryptospore-like forms were absent. Tennessee provides selected illustration sources; Shandong provides a specimen catalogue without its complete 13-sample inventory; Argentina provides ten material identities, including a complete five-sample quantitative subset, but cannot supply securely classified E2 positives/negatives for an older/reference contrast. Its temporal coverage is also much younger than the M1 comparison point.
+
+| Group | Recovered unit-level evidence | Remaining admission limit |
+|---|---|---|
+| Strother 2016, Tennessee plus Grand Canyon comparators | 11 methods-list sample identifiers: seven JOY No.2 core, two Thorn Hill, two Grand Canyon | Explicitly plate-source selection, not a complete collected/processed/searched inventory. Independent non-target productivity and effort are not given for every material. |
+| Wang et al. 2022, Shandong | 463 unique catalogue specimens; three inferred original-collection prefixes, each with named Cambrian cryptospore-like forms and acritarchs | Thirteen shale samples declared, no full identity/failure roster. Catalogue records are not trial counts or an exhaustive sample abundance census. |
+| Rubinstein et al. 2010/2011, Rio Capillas | Ten plotted sample identities, of which five are exactly shared with the 2011 study. All five 2011 samples have reported non-target counts and effort | Target affinity remains contested or explicitly uncertain; narrative/figure/table reporting is inconsistent at sample level. No ten-sample E2 zero vector is justified. |
+
+The absence of a complete M1 design is robust to switching between the project main and inclusive affinity readings: inclusion changes which observations count as the event, but does not recover the missing sampling frame or establish securely dated pre-515.5 Ma exposure. Lack of pre-maximum samples alone would not prevent a test of persistent high production through younger sampled intervals; here the reporting/reference defects independently prevent that test. A window claim allowing any intensity after 515.5 Ma has no direct pre-window support from the admitted material. It therefore does not justify running the F3 engine on a vector of inferred zeroes.
+
+## Tennessee: what the eleven identifiers establish
+
+Strother (2016), p.28, explicitly presents taxonomy from a limited number of samples and postpones a comprehensive distribution assessment. The p.30 methods list is expressly the source of the illustrations. `strother2016_plate_source_inventory.csv` preserves all eleven IDs and selected specimen/plate links. Grand Canyon is a comparator area, not a Tennessee locality.
+
+The p.32 Fig.1 age column puts the sampled Rogersville and Pumpkin Valley shales in Series 3 Stage 5 and the Rome Formation in Series 2/Stage 4 graphically. Its caption limits Rome to the Olenellus biozone, probably Series 2, and calls the stage boundaries estimates. Plate II 4–5, p.34 (caption p.35), explicitly links SB01-14 to the early/Series 2 Rome Formation. Consequently this is a valuable broad-age lead but not a demonstrated sample older than 515.5 Ma. Using the project's timescale, Series 2 spans 521.0–506.5 Ma; choosing a uniform age or a Stage 4-only age would be an additional model, not a reported observation. Stage 5 corresponds to Wuliuan, 506.5–504.5 Ma in the current table.
+
+The source interprets its material as aeroterrestrial charophyte spores and does not claim a particular ancestral embryophyte lineage (pp.28–29). Those are positive cryptospore-like observations under the inclusive project reading and possible preservation controls under the main reading. Neither usage turns the unreported remainder of the collection into searched E2 negatives. Plate V includes a specimen captioned a tetrahedral tetrad (12, J2-1803), but the author's population-level interpretation remains the Cambrian charophyte reading; morphology visible in one figure is not a new source-level adjudication here.
+
+Preparation also varies: Boston College methods generally combine a 10 or 20 micrometre screened fraction with an unscreened fraction, while Sheffield splits are mostly screened at 20 micrometres and not oxidised in Schultze's solution (p.32). The `s` suffix marks the Sheffield preparation, not another independent rock sample. The reported 50 measured Vidalgea specimens from J2-1803/A3 are a size sample (p.39), not palynomorph abundance or a trial denominator. Preserve two identifier discrepancies: methods GC96-10A versus caption GC96-10, and Plate II 1–2 sample J2-1571 versus slide J2-1517/B. Neither is grounds to create a twelfth material.
+
+## Shandong: recoverable catalogue, missing sample roster
+
+Wang et al. (2022), p.2, report thirteen shale samples additional to earlier studied material. Fig.2 supplies a stratigraphic column/fossil horizon rather than thirteen individual sample IDs. Each selected specimen was separately mounted and given a PB catalogue number. The held XLSX supplies `Specimen no.`, `Original collection no.`, `Taxa`, `Locality`, and `Horizon`; it has 578 XML rows including its header and styled blank rows, but exactly **463 nonblank specimen rows**, each with five populated fields and unique PB and original collection IDs.
+
+`wang2022_specimen_catalogue.csv` preserves the literal fields and Excel row address. Original collection strings yield three prefixes: LGZZSD-Y10 (72 specimens), Y11 (363), and Y13 (28). Their interpretation as three source collections is an explicit inference; the supplement does not authenticate these as the full 13-sample roster. Named Cambrian cryptospore taxa account for 77 catalogue entries: Adinosporus voluminosus 50, A. geminus 12, A. bullatus 6, Spissuspora laevigata 2, and the literal workbook spelling Vidalgea masculata 7. Each prefix includes these forms (2,64,11 records) and sphaeromorph acritarchs (61,69,2 records). This provides linked preservation evidence for catalogued material but does not establish an exhaustive search, processing failures, unbiased relative abundance, or the other ten samples' outcomes.
+
+The paper's one quantitative composition is explicitly based on an unnamed sample of 256 specimens: 15.4% cryptospores, 31.5% clustered forms, 20.1% acritarchs, 30.3% filaments, 2.7% indeterminate (p.2). Only the last percentage can result from an integer count out of 256 rounded to one decimal place. The first four have no compatible integer numerator under ordinary nearest-decimal rounding. The published proportions sum to 100%; preserve them literally and leave their sample identity and actual counting denominator unresolved. The script records this diagnostic; it does not repair counts or link this census to a catalogue prefix.
+
+The main text distinguishes named cryptospore-like forms from heterogeneous cell clusters, notes that some clusters could increase the cryptospore tally under a different assignment, and adopts cryptospore sensu lato (pp.3–5). Its concluding interpretation is ancestral streptophyte algae in the transition to land plants (p.8), not a secure crown-embryophyte identification. Main/inclusive E2 alternatives remain necessary. The author's ca.514–509 Ma estimate is historical; the reported Stage 4 maps to **514.5–506.5 Ma** in `data/timescale.csv`. The entire stage interval is younger than 515.5 Ma. Thus even an inclusive positive interpretation neither demonstrates presence nor supplies a searched-negative opportunity before M1.
+
+## Argentina: recoverable overlap and five-sample counts
+
+Rubinstein et al. (2010), Fig.1 p.366, identifies, from base upward, **7586, 7587, 7585, 7999, 8000, 7584, 7596, 7595, 7588, 7589**. Main text p.367 discusses five lower samples from the upper Zanjon Formation/transition to Laja Morada and describes the taxonomically diverse assemblage from sample 7999. The original SI Note S1 says all ten samples yielded phytoplankton, chitinozoans, scolecodonts and cryptospores. However, Fig.1 marks a definite cryptospore symbol only at 7999, question-mark cryptospore symbols at 7596/7595/7588/7589, and none at the other five plotted levels. Blank symbols are not absences; the reporting conflict remains explicit in `argentina_material_crosswalk.csv`.
+
+The 2011 materials section (p.129) names exactly the upper five samples: 7584 (Laja Morada), 7596/7595 (Lagunilla), 7588/7589 (Capillas). Their positions, formation assignments and IDs establish overlap with 2010; they are not five additional biological trials. The source gives approximately 10 micrometre sieving and up to four minutes of nitric-acid oxidation. The 2010 processing reports 12 micrometre sieving and a duplicate laboratory preparation; this technical replication is not another material unit.
+
+Fig.6 (2011 p.129) is transcribed as 125 literal genus-by-sample cells and a separate sample summary. In stratigraphic order:
+
+| Sample | Counted specimens | Counted slides | Reported diversity | Incertae sedis % | Questioned Dyadospora % |
+|---|---:|---:|---:|---:|---:|
+| 7584 | 8 | 3 | 2 | dash | dash |
+| 7596 | 74 | 3 | 5 | 56.8 | dash |
+| 7595 | 130 | 1 | 8 | 30.0 | dash |
+| 7588 | 69 | 3 | 9 | 7.2 | dash |
+| 7589 | 166 | 1 | 21 | 13.9 | 0.6 |
+
+The total is 447 counted palynomorphs across five material samples. Counts are not independent trials; the caption's counting rule also changes effort (one slide at 100 or more individuals, otherwise three). Non-target recovery is directly observed in all five. The printed percentages sum to 100.0,100.1,100.0,99.7,100.0; no normalisation or integer count reconstruction is applied.
+
+Two source discrepancies matter. First, p.129 says spore-like forms are common at all sampled levels, whereas the 7584 table and range chart contain only Cymatiosphaera and Leiosphaeridia. Second, Ampullula? is reported in the text and Fig.5 for 7589 but has dashes across Fig.6. Qualitative observations can fall outside the quantitative count: these differences require reconciliation, and do not prove an author error. They show why neither a dash nor omission from a quantitative subsample is automatically a searched whole-sample absence. Conversely, the 2011 five-sample subset does provide genuine per-sample processing and non-target productivity information; it should not be dismissed as having no inventory.
+
+Taxonomic readings must remain separate:
+
+- The 2010 authors identify five genera in 7999, including Tetrahedraletes cf. medinensis (Fig.2g/S3g), and infer embryophytes at Dapingian age. The original colour plate in the DOC supplement was recovered and inspected alongside the main plate; it does not substitute for renewed specimen study.
+- Strother et al. (2015), pp.108–109, challenge precisely that figured specimen: they do not see four spores in a regular/tetrahedral attachment, and find its margins and contact features inadequate. They regard the monads as unable to prove land-plant derivation and the enclosed planar tetrad (Fig.2h/S3h) as probably chlorophyte. This is a published contrary interpretation, not an observational reclassification performed here.
+- The 2011 source deliberately retains most forms as Incertae sedis, acknowledges that only its questioned Dyadospora could possibly meet the narrower definition (p.131), and expressly says a definite cryptospore affinity for that dyad cannot be established (p.136). The broad reading admits more spore-like forms but does not turn these qualifications into secure embryophyte identifications.
+
+Age disagreements are retained at their source grain: 2010 assigns lower samples early–middle Dapingian, the SI gives middle Dapingian at the transition, and the 2011 Lagunilla assignment is probably Dapingian with Capillas Darriwilian. The historical 473–471 Ma statement is not used as a current numerical age. These sources can inform the possible first appearance/reference interpretation; they provide no material at the much older M1 comparison point.
+
+## Integration and verification
+
+Candidate source additions are useful even though analytical admission fails. Preserve the eleven Tennessee plate-source identities, the three inferred Shandong catalogue prefixes with the declared thirteen-sample scope still open, and the ten Argentine material identities with the overlapping five-sample quantitative subset. Do not import 463 specimens or fifteen Argentine paper/sample appearances as new material trials. No absent target outcome, failure rate, complete processing roster, independent effective sample size, or reference encounter probability was invented.
+
+Seven held source hashes matched their acquisition records. PDF text was extracted with pdftotext; pivotal tables, range charts and plates were visually checked. The original Word SI was read with textutil and its four embedded JPEG figures recovered directly after LibreOffice conversion failed; no text or figure was substituted from another publication. XLSX rows were re-extracted directly from OOXML with the supplied standard-library script; uniqueness, prefix totals, all nonempty fields, quantitative-table shape and reported totals are checked in `validation.json`.
+
+The most useful next information is the complete processed-material inventory and sample-specific recovery/reporting for Tennessee and Shandong, especially securely pre-515.5 Ma material; for Argentina it is adjudication of the pivotal 7999 specimen and reconciliation of the five-sample spore-like reporting. External contact is not necessary to finish this admission tranche, and none was made. The parent records Q1 (coverage/age), Q2 (affinity) and Q5 (source-reporting qualifications) at the existing question/register grain.

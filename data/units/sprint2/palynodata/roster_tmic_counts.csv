@@ -1,0 +1,14 @@
+source_key,document_id,TMIC,meaning,rows_full,rows_window
+balme1961,03280,D,Dinoflagellates,5,1
+balme1961,03280,S,Spores or Pollen,39,0
+strother1996,18701,A,Acritarchs,4,4
+strother1996,18701,E,Algae,1,1
+strother1996,18701,S,Spores or Pollen,4,4
+strother1996,18701,Z,Chitinozoans,4,4
+steemanspereira2002,21733,A,Acritarchs,2,2
+steemanspereira2002,21733,S,Spores or Pollen,19,19
+grahn2000,20806,Z,Chitinozoans,58,39
+edwardsfeehan1980,09667,S,Spores or Pollen,1,1
+edwardsfeehansmith1983,16937,A,Acritarchs,3,3
+edwardsfeehansmith1983,16937,S,Spores or Pollen,7,7
+edwardsfeehansmith1983,16937,Z,Chitinozoans,1,1

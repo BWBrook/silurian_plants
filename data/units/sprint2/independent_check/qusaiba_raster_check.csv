@@ -1,0 +1,38 @@
+column,raster_core,literal_depth_label,record_id,raster_positive,raster_dyad_tetrad_marks,source_text_dyad_tetrad_marks,all_taxon_marks_match,manual_core_depth_join_match,raster_taxa
+1,C31,292.3m,QSBA-depth-292p3,True,13,13,True,True,Dyadospora. murusattenuata;D. murusdensa;Didymospora fucosogranulata;A. laevigatus?;Pseudodyadospora laevigata;S. membranifera;S. rugosa;Tetrahedraletes medinensis;Cryptotetras mordacis;Tetraplanarisporites laevigatus;V. laevigata;V. reticulata;V. rugulata
+2,C31,294.8m,QSBA-depth-294p8,True,3,3,True,True,Dyadospora. murusattenuata;Tetrahedraletes medinensis;V. rugulata
+3,C32,301.1m,QSBA-depth-301p1,True,11,11,True,True,Dyadospora. murusattenuata;D. murusdensa;Abditusdyadus chalazus?;A. laevigatus?;Pseudodyadospora laevigata;P. petasus;S. membranifera;Tetrahedraletes medinensis;Tetraplanarisporites laevigatus;V. laevigata;V. reticulata
+4,C32,302.11m,QSBA-depth-302p11,True,6,6,True,True,D. murusdensa;A. laevigatus?;Tetrahedraletes medinensis;Tetraplanarisporites laevigatus;V. rugulata;Sphaerosaccus glabellus
+5,C32,305.0m,QSBA-depth-305p0,True,9,9,True,True,D. murusdensa;Didymospora fucosogranulata;Pseudodyadospora laevigata;S. rugosa;Tetrahedraletes medinensis;Cryptotetras mordacis;V. laevigata;V. reticulata;V. rugulata
+6,C32,307.7m,QSBA-depth-307p7,True,4,4,True,True,S. rugosa;Tetrahedraletes medinensis;Tetraplanarisporites laevigatus;V. rugulata
+7,C32,310.2m,QSBA-depth-310p2,True,9,9,True,True,Dyadospora. murusattenuata;D. murusdensa;Didymospora fucosogranulata;P. petasus;Tetrahedraletes medinensis;Cryptotetras mordacis;Cheilotetras spp.;Tetraplanarisporites laevigatus;V. laevigata
+8,C33,318.2m,QSBA-depth-318p2,True,4,4,True,True,Dyadospora. murusattenuata;Segestrespora laevigata;Tetrahedraletes medinensis;V. rugulata
+9,C33,319.1m,QSBA-depth-319p1,True,7,7,True,True,D. murusdensa;Abditusdyadus chalazus?;Pseudodyadospora laevigata;Tetrahedraletes medinensis;Cryptotetras mordacis;Tetraplanarisporites laevigatus;V. rugulata
+10,C34,323.1m,QSBA-depth-323p1,True,2,2,True,True,Dyadospora. murusattenuata;Tetraplanarisporites laevigatus
+11,C34,325.4m,QSBA-depth-325p4,True,8,8,True,True,D. murusdensa;Didymospora fucosogranulata;A. laevigatus?;P. petasus;Tetrahedraletes medinensis;Cryptotetras mordacis;Tetraplanarisporites laevigatus;V. laevigata
+12,C34,327.9m,QSBA-depth-327p9,True,2,2,True,True,Segestrespora laevigata;V. rugulata
+13,C34,330.3m,QSBA-depth-330p3,True,6,6,True,True,Dyadospora. murusattenuata;Pseudodyadospora laevigata;S. rugosa;Tetrahedraletes medinensis;Tetraplanarisporites laevigatus;V. laevigata
+14,C35,333.4m,QSBA-depth-333p4,True,3,3,True,True,Dyadospora. murusattenuata;P. petasus;Tetraplanarisporites laevigatus
+15,C35,335.7m,QSBA-depth-335p7,True,10,10,True,True,D. murusdensa;Didymospora fucosogranulata;A. laevigatus?;P. petasus;Segestrespora laevigata;Tetrahedraletes medinensis;Tetraplanarisporites laevigatus;V. laevigata;V. reticulata;V. rugulata
+16,C35,338.4m,QSBA-depth-338p4,True,10,10,True,True,Dyadospora. murusattenuata;D. murusdensa;A. laevigatus?;Pseudodyadospora laevigata;S. rugosa;Tetrahedraletes medinensis;Tetraplanarisporites laevigatus;Tetraplanarisporites sp. A;V. laevigata;Sphaerosaccus glabellus
+17,C36,?341.0m,QSBA-depth-341p0,True,6,6,True,True,Dyadospora. murusattenuata;D. murusdensa;Didymospora fucosogranulata;Tetrahedraletes medinensis;Tetraplanarisporites laevigatus;V. laevigata
+18,C36,342.3m,QSBA-depth-342p3,True,4,4,True,True,A. laevigatus?;Tetrahedraletes medinensis;V. laevigata;V. rugulata
+19,C36,345.85m,QSBA-depth-345p85,True,8,8,True,True,Dyadospora. murusattenuata;D. murusdensa;A. laevigatus?;Pseudodyadospora laevigata;P. petasus;Tetrahedraletes medinensis;Cryptotetras mordacis;V. reticulata
+20,C36,348.8m,QSBA-depth-348p8,True,8,8,True,True,Dyadospora. murusattenuata;D. murusdensa;Pseudodyadospora laevigata;S. rugosa;Tetrahedraletes medinensis;Velatitetras anatoliensis;V. reticulata;V. rugulata
+21,C36,350.6m,QSBA-depth-350p6,True,9,9,True,True,Dyadospora. murusattenuata;D. murusdensa;Didymospora fucosogranulata;A. laevigatus?;Pseudodyadospora laevigata;P. petasus;Tetrahedraletes medinensis;Cryptotetras mordacis;Tetraplanarisporites laevigatus
+22,C45,436.0m,QSBA-depth-436p0,True,2,2,True,True,P. petasus;S. membranifera
+23,C47,438.7m,QSBA-depth-438p7,True,11,11,True,True,Dyadospora. murusattenuata;D. murusdensa;A. laevigatus?;Pseudodyadospora laevigata;P. petasus;Segestrespora laevigata;S. rugosa;Tetrahedraletes medinensis;Tetraplanarisporites laevigatus;V. reticulata;V. rugulata
+24,C47,452.75m,QSBA-depth-452p75,True,8,8,True,True,Dyadospora. murusattenuata;D. murusdensa;A. laevigatus?;S. rugosa;Tetrahedraletes medinensis;Tetraplanarisporites sp. A;V. reticulata;V. rugulata
+25,C47,458.4m,QSBA-depth-458p4,True,6,6,True,True,Dyadospora. murusattenuata;D. murusdensa;P. petasus;Tetrahedraletes medinensis;Tetraplanarisporites laevigatus;V. rugulata
+26,C49,476.7m,QSBA-depth-476p7,True,3,3,True,True,Dyadospora. murusattenuata;Pseudodyadospora laevigata;Tetrahedraletes medinensis
+27,C49,479.4m,QSBA-depth-479p4,True,1,1,True,True,Tetrahedraletes medinensis
+28,C50,484.7m,QSBA-depth-484p7,True,7,7,True,True,Pseudodyadospora laevigata;S. rugosa;Tetrahedraletes medinensis;Tetraplanarisporites laevigatus;Tetraplanarisporites sp. A;Tetraplanarisporites sp. B;V. laevigata
+29,C50,488.3m,QSBA-depth-488p3,True,7,7,True,True,Dyadospora. murusattenuata;Segestrespora laevigata;S. rugosa;Tetrahedraletes medinensis;Tetraplanarisporites laevigatus;V. laevigata;V. reticulata
+30,C51,497.8m,QSBA-depth-497p8,True,5,5,True,True,Segestrespora laevigata;S. rugosa;Tetrahedraletes medinensis;V. laevigata;Sphaerosaccus glabellus
+31,C52,503.1m,QSBA-depth-503p1,True,2,2,True,True,Tetrahedraletes medinensis;V. reticulata
+32,C52,507.15m,QSBA-depth-507p15,True,1,1,True,True,Dyadospora. murusattenuata
+33,C53,518.5m,QSBA-depth-518p5,True,5,5,True,True,D. murusdensa;Tetrahedraletes medinensis;Tetraplanarisporites laevigatus;V. laevigata;V. rugulata
+34,C54,528.3m,QSBA-depth-528p3,True,2,2,True,True,Didymospora fucosogranulata;Tetrahedraletes medinensis
+35,C55,535.2m,QSBA-depth-535p2,True,8,8,True,True,Dyadospora. murusattenuata;D. murusdensa;S. rugosa;Tetrahedraletes medinensis;Tetraplanarisporites laevigatus;V. laevigata;V. reticulata;V. rugulata
+36,C56,536.7m,QSBA-depth-536p7,True,8,8,True,True,Dyadospora. murusattenuata;D. murusdensa;S. rugosa;Tetrahedraletes medinensis;Tetraplanarisporites laevigatus;Velatitetras anatoliensis;V. laevigata;V. rugulata
+37,C56,551.0m,QSBA-depth-551p0,True,8,8,True,True,Pseudodyadospora laevigata;P. petasus;S. membranifera;S. rugosa;Tetrahedraletes medinensis;Cheilotetras spp.;Tetraplanarisporites laevigatus;V. rugulata

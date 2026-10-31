@@ -3,6 +3,47 @@
 Dated record of decisions that shape the programme. Newest first. Say who decided, and quote
 Barry exactly (with source) or label a paraphrase.
 
+## 2026-10-31: sprint 2 source admission, evidence limits and draft synthesis (Codex)
+
+Codex executed the second sprint after Barry's handoff of Claude's `63ca45e`
+(chat, 31 October). `d17d033` froze the bounded source roster before detailed
+extraction. Results and review route: `sprint2-results-and-value-of-information.md`.
+
+- **Admission decision (Codex):** none of the seven M1 source groups supplies a
+  defensible older/reference design under main, inclusive or outlier readings.
+  The recovered inventories, specimen catalogue, quantitative subsamples and
+  reporting gaps are retained in `data/units/sprint2/`; no unreported or disputed
+  E2 outcome becomes zero. M3's bounded primary/database assessment likewise
+  supplies no counted searched-rock denominator. These are source-admission
+  findings, not biological absence or numerical engine failures.
+- **Source correction (Codex, independently checked):** Balme's original is
+  held and read, with six samples but only one Ordovician. Marine preservation
+  and qualified spore language are primary evidence; the later trilete gloss
+  stays attributed to 2021. The source/candidate records and six inventory
+  entries are reconciled, with existing event outcomes unchanged.
+- **Useful recovered reference:** Qusaiba has dyad/tetrad reports in every one
+  of 37 columns, including the deepest. It is a reference candidate with an
+  all-positive rate boundary and transport assumptions, not an older absence
+  series. Independent raster checking matched 777 cells and 226 marks.
+- **Pipeline disposition:** the development smoke passed. Active-input and
+  receipt/protocol enforcement gaps are documented for the scheduled sprint-1
+  counter-review. With no M1 numerical design admitted, no binding reuse,
+  model repair or heavy qualification was needed in this sprint. Existing M2
+  numbers remain attributed to sprint 1; the synthesis distinguishes marginal
+  false-claim-with-abstention qualification from informative-claim coverage.
+- **Structural review (Q1/Q2/Q5):** separate source inventories, interpretations
+  and numerical designs continue to serve the programme. Recovered reports
+  changed access/provenance and reference availability without licensing new
+  negative trials. The decisive next evidence is independently justified
+  detection transport, complete Cambrian sampling/reporting, and a megafossil
+  searched-material ledger. Taxonomic adjudication alone cannot replace these.
+  Q1/Q2/Q5 remain active; no clock maximum is settled by non-admission.
+
+This completes sprint-2 execution, subject to the agreed Claude review/fix,
+then Codex review/fix of sprint 1 and joint reconciliation. It does not close
+Loop 1 or authorise publication/contact. No F3 model, frozen M2 result, ASR
+code or taxon card was changed. Nectar was not resized or used for a new run.
+
 ## 2026-10-31: sprint 1, M2 on real designs (Claude)
 
 Claude executed sprint 1 against Codex's v2 plan (`docs/sprints-2026-11.md`). Result note:

@@ -256,6 +256,16 @@ Re-summarised under the new rules, the stored calibration, acceptance and paired
 
 ## Where the evidence stands (2026-10-28, before any estimator)
 
+**31 October sprint-2 source-roster extension:** `docs/sprint2-source-roster.md`
+(`d17d033`) declares a bounded assessment of Tennessee, Shandong, Argentina,
+Hanadir, Qusaiba, Paraguay and Samphire, plus a bounded M3 denominator search.
+These source groups supplement the seven legacy candidate-frame records; they
+are not newly admitted numerical frames. All M1 groups/readings and all M3
+source decisions are reported in `data/units/sprint2/`. No M1/M3 design passed
+source admission, so no new numerical screen or qualification was attempted.
+Balme's complete report is now read; only one of its six samples is Ordovician.
+The below historical expectations and document counts are not empirical results.
+
 The counts below are Palynodata documents counted in every stage they overlap; the unit table replaces them.
 
 - **M2 (E1, triletes).**

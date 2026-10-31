@@ -155,7 +155,15 @@ data archived, and the human–AI correspondence record published alongside.
     adjudicated by Claude Opus 5.5 (`work/codex/loop1b/`), and the Cambrian age, location and
     vetting jobs for the widened Palynodata window (2026-10-28).
 - OpenAI Codex (OpenAI, Codex desktop; exact model version not exposed in this session):
-  Later on 31 October, critiqued and revised Claude's two-sprint proposal, with a
+  Executed sprint 2 on 31 October: bounded M1 source admission, M3 denominator
+  assessment, full-release Palynodata coverage/regeneration, source-register
+  reconciliation and the combined draft result/value-of-information memo.
+  Bounded Codex delegates extracted Cambrian/Argentine material, audited M3,
+  checked pipeline reuse and independently checked the parent's source mappings,
+  sampling arithmetic and synthesis. The parent integrated and adjudicated the
+  findings, including explicit non-admission under all readings. No binding M1/M3
+  result or F3/ASR model edit was made; cross-system counter-review remains pending.
+  Earlier on 31 October, critiqued and revised Claude's two-sprint proposal, with a
   bounded independent methodological check. The revision specified identifiability,
   source-admission and qualification limits and the sequential counter-review;
   it did not execute either sprint or adopt new scientific results.

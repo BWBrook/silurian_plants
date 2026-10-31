@@ -1,0 +1,54 @@
+{
+  "utc": "2026-10-31T10:13:50.379506+00:00",
+  "base_commit": "d17d033cc2bb7f083a61e31228d30919f2406beb",
+  "inputs_checked": 17,
+  "input_hashes": {
+    "data/eprp/record/pbdb_plant_occurrences.csv": "bc617e869f133ede3461eac25ef54fd9cb9efe5a2be3f137ae1b8a7f8537ef01",
+    "data/eprp/record/pbdb_plant_collections.csv": "b75db371a979d774ef707afdf689b21111e5e753b542dd660e8c864540a39c66",
+    "data/eprp/record/pbdb_plant_references.csv": "60a183a8781afec69300f6d7277a2c7955a23ee87b48a439b24407bff61a5a82",
+    "data/external/gbdb/gbdb_plant_fossils.csv": "599beb77415da4cc604b5f7f10a5097cbf5db11ea599213c5ed3c4e581e3ff93",
+    "data/external/gbdb/gbdb_plant_sections.csv": "17b88b22b0a5dec2f909625ab8acc9c566b3d4b1497602fb36b0141ea19f4261",
+    "data/external/gbdb/gbdb_window_sections_all.csv": "d2a883c2ae98505d799718b32c2ca7040d5e0eaffa6e9a9b6a9c968934de831b",
+    "data/external/gbdb/gbdb_plant_no_age_candidates.csv": "1cc144c7e907493033f10cc5ad29e3da2a1ea8679c51a6fda16ae060caf918ed",
+    "data/external/gbdb/gbdb_plant_fossils_table_only.csv": "f8421a866f76170a632f93e51b559bfa403b8a8150cf661cb4b687fa44149656",
+    "data/external/gbdb/gbdb_fields.csv": "dfe628427bf5db6b4f5ad124f19e7cc49876da019bc8afc6e2777b7865530bfe",
+    "data/external/gbdb/provenance.tsv": "f16d2e7743953568d856fb9503a7b597bd49ad4c01fac6aed662a4d92502e7a6",
+    "data/occurrences/raw/pbdb_collections_darriwilian_emsian_2026-10-28.csv": "e0d1f772c1617c218948d1d2605661e93edcfe75e0fe8ce92afee91d3350a8b8",
+    "library/closed/edwardsfeehan1980.pdf": "f4283789681a0d91d42b15c2364259a9ed0392bac9a513c4d63ce6fb5db01397",
+    "library/closed/libertin2018.pdf": "5564a5c21d2bed19e8b6a24a48922fa695bc5406041e2531176741645dc29e4f",
+    "library/closed/libertin2018_SI.pdf": "b9b1f332bd6cdb4d8ed566def7bb6cfa5343f62e99c4b835f6d1c18e5b185147",
+    "library/closed/al1983_oup.pdf": "dbb16028f73adb3f72411c0b56c02c6b3f47e328b9c3249212819855f2c7a126",
+    "library/closed/libertin2018a_tier2.pdf": "921c11666d49e1696e736d9c135f059c6cc1eecee30afc4eb9821198930b989e",
+    "library/closed/strulluderrien2010.pdf": "fb3c53b092b0900a9bf8ee36f1e1cd351f8533e68f503e23e3227d1cce0e612b"
+  },
+  "upstream_limit": "PBDB EPRP remote raw and GBDB remote workbooks not re-opened; held derivative hashes checked against manifests. All-taxon PBDB raw CSV checked locally.",
+  "no_network_acquisition": true,
+  "integration": "Parent integrated derived evidence during authorised sprint2",
+  "outputs": {
+    "pbdb_irish_references.csv": "d09973b496adb2b22500319abf879bc1bb844b57f7e70a76d35213b3da014e58",
+    "field_coverage.csv": "5ac399d8aecf7eaf9a13f08f3e71d629d18d241370866f1e8501ed15f4441e5e",
+    "pbdb_rock_censused_metadata.csv": "6b80ff169a5c367beedcaf0d18db16b9fe43ea06fe6d7b97ca80af156df48988",
+    "pbdb_irish_collection_10594.csv": "7a3a2402d1bd1a211669850fc00f0ccaf33a4b3800880782bba41347f07f1022",
+    "prospective_scenarios.csv": "1cd9fb552272234e4e89e6f812d6b8f335818374dabdec3655a3738d3b75c70c",
+    "pbdb_irish_occurrences_10594.csv": "1e0046b625015a68a2e725dc6f6aa0053bcd6a8c668164e22413d16993535fc4",
+    "m3_source_denominator_assessment.csv": "d91accea664485c51e16f237effbdc86163446e121872f6b456d0e2c60eb372c",
+    "source_integrity.csv": "2cf97ada9550354d75d29d2c647bb27a2f36738dcdb5a1aa9f18ef3da05fc61e",
+    "database_grain_coverage.csv": "dccac201782a0fd311b6a078a09c36dba32e68b44321b4248ee78329fe22b56d",
+    "primary_material_inventory.csv": "c0ab49a478a34a31c64bb05a71d69aab8771dcbaca5b386c45f3bca1fdcbe438"
+  },
+  "code_sha256": {
+    "reproduce.py": "235a0898ab6e78ba9b05f94c2a3135b912dead9b65b51b426129e29a2a94d988"
+  },
+  "definition_sha256": {
+    "docs/sprint2-source-roster.md": "85c434ce68310171ca9c9225298e0a76444628344a62deea28caffab9a1c0e0a",
+    "docs/f3-shape.md": "f094c3b66d5ac93f0f5a00431ed114c8f683a5aceae082413b2b44cffcf8f632",
+    "data/eprp/record/README.md": "f35c1de5523e066c3cfae932993774b97cc8a4e5347563d620f9f9f362643dca",
+    "data/external/gbdb/README.md": "76e198b198f3bae6326a6ce4d68d5ff9cd350ec35f5271fa39e87c38775bac64",
+    "data/occurrences/README.md": "4256428ea6eb406eff828dc717d7fad4a8f5b8d52285f3f4e1e90fc22f546e65",
+    "data/eprp/record/MANIFEST.tsv": "6bd088f53b3b1ee9fa796c0c82a7908969329d7f7ab629466550ea2f4fb7a7fe",
+    "data/external/gbdb/MANIFEST.tsv": "83e0de98b13b160c015ca1ea8d4490eeab06723d9077dd3592bf50d6466a6356",
+    "library/closed.tsv": "94730f4862766b05aa0329dc8a674ef3a314cdef4c8038ccce2616b477014791"
+  },
+  "review_sha256": "38b004da21d14f0a06677586994c215488cbc776e3647f4c7639e538484d23ca",
+  "selection_criteria_sha256": "a694625dd11fc6282defca8090ffa91fa5d00a184dd5a7c5ffd75efb638ff1f7"
+}

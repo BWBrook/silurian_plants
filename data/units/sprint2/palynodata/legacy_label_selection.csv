@@ -1,0 +1,64 @@
+label,selected_group,explicit_Cambrian_word,rows_with_this_label,legacy_start,legacy_end
+Acadian,Cambrian,False,49,540,514
+Atdabanian,Cambrian,False,41,558.7,540
+Botomian,Cambrian,False,47,547.725,541.83
+Cambrian,Cambrian,True,2596,570,500
+Dresbachian,Cambrian,False,0,514,510
+E.Acadian,Cambrian,False,0,540,529.33
+E.Atdabanian,Cambrian,False,0,558.7,552.467
+E.Cambrian,Cambrian,True,0,570,540
+E.Franconian,Cambrian,False,0,510,508.332
+E.Merioneth,Cambrian,False,0,514,509.333
+E.Precambrian,EXCLUDED,False,0,4100,2923.333
+E.Tommotian,Cambrian,False,0,570,566.2329999999999
+E.Tremadocian,Tremadocian,False,0,500,496.666
+E.Trempealeauan,Cambrian,False,0,505,503.333
+Early Acadian,Cambrian,False,3,,
+Early Atdabanian,Cambrian,False,2,,
+Early Cambrian,Cambrian,True,8615,,
+Early Merioneth,Cambrian,False,1,,
+Early Precambrian,EXCLUDED,False,58,,
+Early Tremadocian,Tremadocian,False,1330,,
+Eocambrian,EXCLUDED,False,21,650,570
+Franconian,Cambrian,False,0,510,505
+L.Acadian,Cambrian,False,0,520.67,514
+L.Atdabanian,Cambrian,False,0,546.2329999999999,540
+L.Cambrian,Cambrian,True,0,514,500
+L.Franconian,Cambrian,False,0,506.667,505
+L.Merioneth,Cambrian,False,0,504.667,500
+L.Precambrian,EXCLUDED,False,0,1746.667,570
+L.Tommotian,Cambrian,False,0,562.467,558.7
+L.Tremadocian,Tremadocian,False,0,493.333,490
+L.Trempealeauan,Cambrian,False,0,501.666,500
+Late Acadian,Cambrian,False,11,,
+Late Atdabanian,Cambrian,False,1,,
+Late Cambrian,Cambrian,True,3765,,
+Late Merioneth,Cambrian,False,7,,
+Late Precambrian,EXCLUDED,False,3012,,
+Late Tremadocian,Tremadocian,False,1284,,
+M.Acadian,Cambrian,False,0,529.33,520.67
+M.Atdabanian,Cambrian,False,0,552.467,546.2329999999999
+M.Cambrian,Cambrian,True,0,540,514
+M.Franconian,Cambrian,False,0,508.332,506.667
+M.Merioneth,Cambrian,False,0,509.333,504.667
+M.Precambrian,EXCLUDED,False,0,2923.333,1746.667
+M.Tommotian,Cambrian,False,0,566.2329999999999,562.467
+M.Tremadocian,Tremadocian,False,0,496.666,493.333
+M.Trempealeauan,Cambrian,False,0,503.333,501.666
+Merioneth,Cambrian,False,55,514,500
+Middle Cambria,EXCLUDED,False,2,,
+Middle Cambrian,Cambrian,True,3827,,
+Middle Precambrian,EXCLUDED,False,262,,
+Middle Tommotian,Cambrian,False,21,,
+Middle Tremadocian,Tremadocian,False,64,,
+Potsdamian,Cambrian,False,16,514,500
+Precambrain,EXCLUDED,False,34,,
+Precambriam,EXCLUDED,False,20,,
+Precambrian,EXCLUDED,False,1946,4100,570
+PrecambrianPrecambrian,EXCLUDED,False,3,,
+Precambrianv,EXCLUDED,False,1,,
+Solvan,Cambrian,False,13,540,527
+Tommotian,Cambrian,False,27,570,558.7
+Toyonan,Cambrian,False,0,541.83,540
+Tremadocian,Tremadocian,False,4288,500,490
+Trempealeauan,Cambrian,False,0,505,500

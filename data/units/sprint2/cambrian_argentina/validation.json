@@ -1,0 +1,35 @@
+{
+  "source_hashes_match": true,
+  "wang_xml_rows_including_header_and_styled_blanks": 578,
+  "wang_nonblank_specimen_records": 463,
+  "wang_unique_specimen_ids": 463,
+  "wang_unique_original_ids": 463,
+  "wang_prefix_counts": {
+    "LGZZSD-Y10": 72,
+    "LGZZSD-Y11": 363,
+    "LGZZSD-Y13": 28
+  },
+  "wang_named_cambrian_cryptospore_records": 77,
+  "wang_named_cryptospore_taxa_n": 5,
+  "wang_percentage_compatibility": {
+    "cryptospores": "none",
+    "clustered forms": "none",
+    "acritarchs": "none",
+    "filaments": "none",
+    "other indeterminate specimens": "7"
+  },
+  "tennessee_plate_source_identifiers": 11,
+  "argentina_unique_material_identifiers": 10,
+  "argentina_2011_overlap_materials": 5,
+  "argentina_fig6_cells": 125,
+  "argentina_fig6_percentage_sums": {
+    "7584": "100.0",
+    "7596": "100.1",
+    "7595": "100.0",
+    "7588": "99.7",
+    "7589": "100.0"
+  },
+  "argentina_fig6_reported_specimen_total": 447,
+  "binary_e2_zeros_created": 0,
+  "integration": "Derived evidence only; raw sources unchanged"
+}

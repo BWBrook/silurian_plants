@@ -1,0 +1,29 @@
+source_key,document_id,oldage,youngage,agestart_legacy,ageend_legacy,taxon_rows
+balme1961,03280,Early Ordovician,,500,478.33301,1
+balme1961,03280,Middle Jurassic,,174,160,11
+balme1961,03280,Oxfordian,Kimmeridgian,160,145,18
+balme1961,03280,Permian,,280,230,3
+balme1961,03280,Sakmarian,,280,267,11
+strother1996,18701,Llanvirnian,,472,461,13
+steemanspereira2002,21733,Llandoverian,,435,423,21
+grahn2000,20806,Early Aeronian,,432,430,5
+grahn2000,20806,Early Aeronian,Late Telychian,432,423,3
+grahn2000,20806,Early Aeronian,Pragian,432,372,1
+grahn2000,20806,Early Givetian,,366,364,1
+grahn2000,20806,Late Emsian,,371.33301,370,6
+grahn2000,20806,Late Rhuddanian,,433,432,2
+grahn2000,20806,Late Rhuddanian,Early Aeronian,433,430,2
+grahn2000,20806,Late Rhuddanian,Late Telychian,433,423,3
+grahn2000,20806,Late Telychian,,424,423,9
+grahn2000,20806,Llandoverian,,435,423,4
+grahn2000,20806,Llanvirnian,Early Aeronian,472,430,1
+grahn2000,20806,Llanvirnian,Late Ashgillian,472,435,1
+grahn2000,20806,Llanvirnian,Late Telychian,472,423,2
+grahn2000,20806,Llanvirnian,Pragian,472,372,4
+grahn2000,20806,Lochkovian,Pragian,395,372,2
+grahn2000,20806,Pragian,,378,372,2
+grahn2000,20806,Pragian,Early Givetian,378,364,1
+grahn2000,20806,Pragian,Emsian,378,370,8
+grahn2000,20806,Pragian,Late Emsian,378,370,1
+edwardsfeehan1980,09667,Early Ludlovian,,414,407.66599,1
+edwardsfeehansmith1983,16937,Late Wenlockian,,417,414,11

@@ -1,0 +1,110 @@
+[
+  {
+    "queried_doi": "10.1017/s001675681000004x",
+    "returned_doi": "10.1017/s001675681000004x",
+    "title": "The early land plants from the Armorican Massif: sedimentological and palynological considerations on age and environment",
+    "first_author": "STRULLU-DERRIEN",
+    "published": {
+      "date-parts": [
+        [
+          2010,
+          3,
+          15
+        ]
+      ]
+    },
+    "doi_match": true
+  },
+  {
+    "queried_doi": "10.1111/j.1095-8339.1983.tb00715.x",
+    "returned_doi": "10.1111/j.1095-8339.1983.tb00715.x",
+    "title": "A late Wenlock flora from Co. Tipperary, Ireland",
+    "first_author": "EDWARDS",
+    "published": {
+      "date-parts": [
+        [
+          1983,
+          1
+        ]
+      ]
+    },
+    "doi_match": true
+  },
+  {
+    "queried_doi": "10.2478/if-2018-0020",
+    "returned_doi": "10.2478/if-2018-0020",
+    "title": "Plant Diversity of The Mid Silurian (Lower Wenlock, Sheinwoodian) Terrestrial Vegetation Preserved in Marine Sediments from The Barrandian Area, The Czech Republic",
+    "first_author": "Libert\u00edn",
+    "published": {
+      "date-parts": [
+        [
+          2018,
+          12,
+          28
+        ]
+      ]
+    },
+    "doi_match": true
+  },
+  {
+    "queried_doi": "10.1016/j.revpalbo.2015.10.006",
+    "returned_doi": "10.1016/j.revpalbo.2015.10.006",
+    "title": "Systematics and evolutionary significance of some new cryptospores from the Cambrian of eastern Tennessee, USA",
+    "first_author": "Strother",
+    "published": {
+      "date-parts": [
+        [
+          2016,
+          4
+        ]
+      ]
+    },
+    "doi_match": true
+  },
+  {
+    "queried_doi": "10.1016/j.revpalbo.2022.104645",
+    "returned_doi": "10.1016/j.revpalbo.2022.104645",
+    "title": "A palynological assemblage from the Cambrian (Series 2, Stage 4) of Shandong Province, China, and its implications to the transition from algae to land plants",
+    "first_author": "Wang",
+    "published": {
+      "date-parts": [
+        [
+          2022,
+          6
+        ]
+      ]
+    },
+    "doi_match": true
+  },
+  {
+    "queried_doi": "10.1016/j.jsames.2010.07.006",
+    "returned_doi": "10.1016/j.jsames.2010.07.006",
+    "title": "Biostratigraphy and paleoenvironmental characterization of the Middle Ordovician from the Sierras Subandinas (NW Argentina) based on organic-walled microfossils and sequence stratigraphy",
+    "first_author": "Rubinstein",
+    "published": {
+      "date-parts": [
+        [
+          2011,
+          2
+        ]
+      ]
+    },
+    "doi_match": true
+  },
+  {
+    "queried_doi": "10.1111/j.1469-8137.2010.03433.x",
+    "returned_doi": "10.1111/j.1469-8137.2010.03433.x",
+    "title": "Early Middle Ordovician evidence for land plants in Argentina (eastern Gondwana)",
+    "first_author": "Rubinstein",
+    "published": {
+      "date-parts": [
+        [
+          2010,
+          8,
+          20
+        ]
+      ]
+    },
+    "doi_match": true
+  }
+]

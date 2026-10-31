@@ -103,7 +103,7 @@ also verifies mapping keys, source links, symbol totals and unadopted binary sta
 Within these original 15 blocks, in the main reading, E1 has 3 detections, 2 explicit non-detections, 8 not-reported outcomes and
 2 unresolved identifications. E2 has 6 detections, 5 not-reported outcomes and 4 unresolved
 identifications. These are counts of the selected evidence, not detection-rate estimates.
-Samphire's negative remains secondary and its eligibility unknown. Hanadir now supplies a
+Samphire's original was checked on 31 October: the definite-spore statement is primary, but E2 remains unresolved and modern target-specific eligibility unknown (see sprint-2 update below). Hanadir now supplies a
 primary study-scoped negative linked to material examined in both papers. Its source-scope
 eligibility does not establish complete-frame admission, a reference rate or independent trials:
 **there is still no analysis-ready older/reference denominator for an M2 exclusion.**
@@ -132,8 +132,9 @@ retain Llandovery bounds pending reconciliation of the sample logs and companion
 limits must come from `data/timescale.csv`. No printed chart uncertainty has been reinterpreted
 as a Normal standard deviation. A real analysis must specify age densities, shared uncertainty,
 frame inclusion, a binary reporting rule, first-appearance selection and reference support before
-any conversion to `models/f3/envelope.py`'s binary `Units` object. That adapter is intentionally
-not implemented before those choices are settled.
+any conversion to `models/f3/envelope.py`'s binary `Units` object. At the pilot release that adapter was deferred until those choices were settled;
+sprint 1 subsequently implemented named M2 designs in `models/f3/designs.py`.
+Sprint-2 source admission does not automatically extend that adapter to E2.
 
 ## Borenshult and earlier frame reviews, 29–31 October
 
@@ -190,9 +191,9 @@ The earlier 29 October handoff prioritised complete sample inventories from a sm
 Palynodata studies chosen by age, geography and reporting scope, before inspecting their E1
 outcomes: Balme's original core-4 account, the original Hanadir sample mapping,
 and the complete Paraguay sample log. The bounded follow-up recovered the Hanadir chart and one
-exact specimen link, but no complete processed-sample log. Balme's official GA record redirects
-to a catalogue whose tested public record/export routes exposed no scan; the original remains
-needed. Paraguay's already-checked charts were not re-extracted. Grahn's chitinozoan survey also demonstrates why a paper
+exact specimen link, but no complete processed-sample log. At that 29 October check, Balme's official GA record redirected
+to a catalogue whose tested public record/export routes exposed no scan. Barry's subsequently
+supplied original was reconciled in sprint 2 on 31 October; it is no longer missing. Paraguay's already-checked charts were not re-extracted. Grahn's chitinozoan survey also demonstrates why a paper
 without an indexed spore record is not automatically an extra negative spore trial.
 
 New references, identities verified against Crossref on 29 October 2026:
@@ -217,3 +218,27 @@ inventory, sample-to-chart mapping and older ages need reconciliation.
 related Khoshyeilagh assessments and the methods-review handoff. The productivity
 rule conditions inference on eligible productive preparations; it does not turn
 marine palynomorph recovery into proof of trilete search scope.
+
+## Sprint 2 source admission, 31 October 2026
+
+`data/units/sprint2/` holds the bounded M1 source/admission evidence and M3
+denominator assessment; its README separates source transcriptions, generated
+reports and conditional sampling arithmetic. The source roster was frozen in
+`d17d033` before detailed extraction. These evidence products do not add binary
+inputs to the F3 engine.
+
+Balme's original pp.22–26 now supports a complete six-sample report inventory,
+added to `frame_samples.csv`: three Jurassic cuttings, two Permian cores and one
+Ordovician core. Thus the legacy interface has seven candidate frames and 282
+inventory entries; the 49 material blocks and 294 event/reading rows are unchanged.
+The original core-4 report explicitly documents marine recovery and the absence
+of definite spores, while leaving alete bodies uncertain. The trilete gloss is
+Strother & Foster's 2021 interpretation. E2 is not converted to zero.
+
+The original's five younger samples are not an early-Palaeozoic reference class.
+Qusaiba's separately generated E2 map has dyad/tetrad reports in all 37 columns,
+including its deepest sample. It is a potential later reference, requiring
+transport and boundary-rate treatment; it supplies no pre-appearance material.
+The other sprint-2 material inventories stay separate because collection labels,
+figured specimens, overlapping publications and studied rock samples are not
+interchangeable units. See `docs/audits/2026-10-31-sprint2-m1.md`.

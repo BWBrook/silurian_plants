@@ -1,0 +1,12 @@
+cluster,reported_quantity,quantity_unit,primary_locator,can_be_E3_trial_count,reason
+Borrisnoe_Irish_late_Wenlock,unquantified,fossil-free grey-green mudstone,Edwards & Feehan1980 p.41,no,"Explicit qualitative absence retained, but material/search count and comparable preservation eligibility missing"
+Barrande_Lodenice_historical_lot,50; approximately50 in companion,selected plant-axis specimens/samples,Libertin2018 reporting summary; Libertin2018a pp.327-328,no,Selection already conditions on plant material; not50 independently searched beds or slabs
+Barrande_Lodenice_historical_lot,1,historical fertile holotype with in situ spores,Libertin2018 p.269 and reporting summary,no,"Success condition is in situ spores among selected axes, not E3 occurrence among rock searches"
+Barrande_Lodenice_historical_lot,3,additional described fertile specimens,"Libertin2018a pp.327,330-331",no,Museum re-examination of same source lot; parts/counterparts and descriptions are not new collecting trials
+Lodenice_relocated_layer4,11,newly collected sterile fragments,Libertin2018a p.329,no,"Fragments share field layer; incompleteness means unresolved E3 morphology, not eleven independent negatives"
+Lodenice_section,6,numbered lithological units,Libertin2018a Fig1 pp.328-329,no,No declared complete megafossil searches across all units
+Lodenice_layer4,0.5-1,metres of layer thickness,Libertin2018a Fig1 caption p.329,no,"Thickness gives geological context, not volume/surface searched"
+Chateaupanne_quarry,14,mapped positions with logs,Strullu-Derrien2010 Fig3 p.833,no,Some outcrops removed and some visible; mapped log does not establish search coverage
+Chateaupanne_quarry,7,currently exposed places,Strullu-Derrien2010 p.831,no,Not a complete independently specified megafossil search denominator
+Chateaupanne_quarry,3,"localities used for described macrofossils:11,12,13",Strullu-Derrien2010 p.831,no,Occurrence-selected described collections; all searched negative sites not enumerated
+Chateaupanne_quarry,5,palynological processed samples,Strullu-Derrien2010 p.832,no,Different observation channel; cannot become megafossil trials

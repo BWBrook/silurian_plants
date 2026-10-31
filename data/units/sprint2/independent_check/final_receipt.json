@@ -1,0 +1,50 @@
+{
+  "source_hash_checks": [
+    {
+      "path": "library/closed/balme1961_macbook20261030.pdf",
+      "sha256": "1405dd41c15f2ce08f4e7bef246a3fc03cc7d2ff93676655b6fa5707f6d40b07",
+      "registered_sha256": "1405dd41c15f2ce08f4e7bef246a3fc03cc7d2ff93676655b6fa5707f6d40b07",
+      "match": true
+    },
+    {
+      "path": "library/closed/strother2021_SI.pdf",
+      "sha256": "bd5f9d93d48652b1ce3d16e7e08ea687354142f3893b6e458808e6dd1891f062",
+      "registered_sha256": "bd5f9d93d48652b1ce3d16e7e08ea687354142f3893b6e458808e6dd1891f062",
+      "match": true
+    },
+    {
+      "path": "library/closed/wellman2015_firststudy.pdf",
+      "sha256": "8d3b68ed52c0281cd843b25b82c74be1285bfa7832dcf88b730033ad73b51cfc",
+      "registered_sha256": "8d3b68ed52c0281cd843b25b82c74be1285bfa7832dcf88b730033ad73b51cfc",
+      "match": true
+    }
+  ],
+  "input_hashes": {
+    "tools/sprint2.py": "84dc8df5967d4400dda7f853eec4b4460d73a407e6ed50bebf6f2458298e475b",
+    "data/units/qusaiba_inventory.csv": "1ffb4db3cc2e1a1b1f322da2653fda315d0c566bacf3366edc87a5bf0dbcc0c0",
+    "data/units/sprint2/qusaiba_e2_reports.csv": "9489c720cfa9a7eebd5f655a2e08223e049c6fa8ac4cb4a42c71a25662b83f56",
+    "data/units/sprint2/conditional_sampling.csv": "1941cd3cef8989740549010b8a8a1a5abc2e89341d78267da52dc1bfac2585fd",
+    "data/units/sprint2/samphire1961_inventory.csv": "2be00990e16344ffb304950787a197bf9f1ab97bf0bf2523f28b68ea00c19da0",
+    "data/occurrences/readings.csv": "ed2b8bb37edef495511c4ece323103ae4435a399056a687f05202d6d73c78cbe",
+    "data/occurrences/interpretations.csv": "0c60549169a4b46f9bf22dbeb352b580ad094db7a44f3df3d9e12e587ca518b9",
+    "data/units/outcomes.csv": "9c996647d9e101a830cfd16efe466348a191f92396b71bad76cab791b756e37c"
+  },
+  "regenerated_files_match": true,
+  "conditional_rows_checked": 27,
+  "conditional_min_n": 2,
+  "conditional_max_n": 28434,
+  "raster_matrix_cells": 777,
+  "raster_marks": 226,
+  "raster_positive_columns": 37,
+  "all_core_depth_joins_match": true,
+  "code_sha256": {
+    "check_parent.py": "754505bd9347554e054216ab429b2d82ea27c44c2974062bd989bd4b347b8c81",
+    "raster_check.py": "f078f7aa85767f76e77b4a03172b053b583b6f593c3cbc8e12ccbb09f020adee"
+  },
+  "outputs": {
+    "conditional_sampling_independent_check.csv": "4daa0921d9eb70b0904183a12ba1dbec939159723993420a0fdf286b0b15a026",
+    "balme_inventory_independent_check.csv": "8c52cb3b31ae76d63248a6b4c24a8733b95b15df7cfe93275d8c9b9d7b1114fd",
+    "qusaiba_raster_check.csv": "211b9e5a10c45b9d4095bb5b5f80be8b071963b9c8c62749cc0288d59dba9ca1",
+    "qusaiba_raster_cells.csv": "d4076985b224e170ed4218eca9add90b6c00ddc607d24430cdf0f27ff6a73ead"
+  }
+}

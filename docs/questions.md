@@ -27,6 +27,22 @@ reconciliation. Q1's next implementation tranche includes explicit class support
 caving, chronology and conditional qualification; Q2/Q5 preserve pivotal source
 conflicts. This prospective plan changes no question's status or existing result.
 
+**Sprint-2 execution update (31 October; Q1/Q2/Q5):** the bounded M1 source
+programme and M3 denominator assessment are complete, with no numerical design
+admitted for either. Seven M1 groups are reported under all three readings.
+Balme's original is now verified; Qusaiba's 37 E2-positive sample reports are a
+potential reference, and Argentina supplies five quantified samples within ten
+deduplicated material identities. Missing older E2 reporting and comparable
+references remain distinct from affinity disputes. M3 retains an explicit Irish
+mudstone non-detection but lacks its searched-material count. Literature/database
+mentions remain coverage, not negative trials. Q5 records source/index and
+quantitative/qualitative differences without assuming every omission is an error.
+The combined result/limit and ranked-evidence memo is
+`sprint2-results-and-value-of-information.md`. Source admission does not settle
+any clock maximum; all three questions remain active. Next: Claude's review/fix
+of sprint 2, then Codex's full sprint-1 counter-review and reconciliation.
+The older dated next-step snapshots below are retained as history.
+
 **31 October update (Q1/Q2/Q4/Q5):** The scoped homogeneous screen and the
 named invalid-state repair are accepted. Conditional frame selection still
 needs a precise search/reporting rule and passing-replicate denominator, while

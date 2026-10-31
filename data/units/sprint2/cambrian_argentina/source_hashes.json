@@ -1,0 +1,51 @@
+[
+  {
+    "file": "library/closed/strother2015.pdf",
+    "sha256": "902f183848f947a638de283fc9b566278c83f2b9b653ecdd0eca481d8d53691e",
+    "registered_sha256": "902f183848f947a638de283fc9b566278c83f2b9b653ecdd0eca481d8d53691e",
+    "matches": true,
+    "citation": "Strother PK, Traverse A, Vecoli M (2015). Cryptospores from the Hanadir Shale Member of the Qasim Formation, Ordovician (Darriwilian) of Saudi Arabia: taxonomy and systematics. Review of Palaeobotany and Palynology 212: 97-110"
+  },
+  {
+    "file": "library/closed/wang2022_tier2_SI1.xlsx",
+    "sha256": "82fd330bd220e7c91dadc5e076255d3e3b5ad707c42cd7ed10081e29428d1e4a",
+    "registered_sha256": "82fd330bd220e7c91dadc5e076255d3e3b5ad707c42cd7ed10081e29428d1e4a",
+    "matches": true,
+    "citation": "Wang, Xu & Yin (2022). A palynological assemblage from the Cambrian (Series 2, Stage 4) of Shandong Province, China, and its implications to the transition from algae to land plants. Review of Palaeobotany and Palynology 301: 104645"
+  },
+  {
+    "file": "library/closed/strother2016_macbook20261030.pdf",
+    "sha256": "d225743dd0ed7529d87648f483813e2bd0dd7a988997c233b93980bc580737ef",
+    "registered_sha256": "d225743dd0ed7529d87648f483813e2bd0dd7a988997c233b93980bc580737ef",
+    "matches": true,
+    "citation": "Strother (2016). Systematics and evolutionary significance of some new cryptospores from the Cambrian of eastern Tennessee, USA. Review of Palaeobotany and Palynology 227: 28-41"
+  },
+  {
+    "file": "library/closed/wang2022_macbook20261030.pdf",
+    "sha256": "d2fcfd8b5fa58d9fd469c71aa2e53a40651815b7279f9a6354c950ced312b937",
+    "registered_sha256": "d2fcfd8b5fa58d9fd469c71aa2e53a40651815b7279f9a6354c950ced312b937",
+    "matches": true,
+    "citation": "Wang, Xu & Yin (2022). A palynological assemblage from the Cambrian (Series 2, Stage 4) of Shandong Province, China, and its implications to the transition from algae to land plants. Review of Palaeobotany and Palynology 301: 104645"
+  },
+  {
+    "file": "library/closed/rubinstein2011_macbook20261030.pdf",
+    "sha256": "07f015f5095a619647bbf42bdc839389e2b4b5862c06b9086f13a1a57107179f",
+    "registered_sha256": "07f015f5095a619647bbf42bdc839389e2b4b5862c06b9086f13a1a57107179f",
+    "matches": true,
+    "citation": "Rubinstein, Vecoli & Astini (2011). Biostratigraphy and paleoenvironmental characterization of the Middle Ordovician from the Sierras Subandinas (NW Argentina) based on organic-walled microfossils and sequence stratigraphy. Journal of South American Earth Sciences 31: 124-138"
+  },
+  {
+    "file": "library/open/W1820528062.pdf",
+    "sha256": "046069e3563b339f9b7db2c53e98fe623c35a7424cc28c521687812cdcc21bd3",
+    "registered_sha256": "046069e3563b339f9b7db2c53e98fe623c35a7424cc28c521687812cdcc21bd3",
+    "matches": true,
+    "citation": "Rubinstein et al. 2010, New Phytologist 188: 365-369; publisher version"
+  },
+  {
+    "file": "library/open/W1820528062_SI.doc",
+    "sha256": "3aea72c15d8071dc39d510e69b6999e32741aca0f46462451f502eb033825161",
+    "registered_sha256": "3aea72c15d8071dc39d510e69b6999e32741aca0f46462451f502eb033825161",
+    "matches": true,
+    "citation": "Rubinstein et al. 2010, supporting information: Notes S1-S2 and Figs S1-S4"
+  }
+]
