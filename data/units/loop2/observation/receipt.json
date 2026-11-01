@@ -1,0 +1,27 @@
+{
+  "counts": {
+    "appendix_rows": 164,
+    "chart_rows": 158,
+    "exact_appendix_chart_matches": 153,
+    "prose_rows": 164,
+    "rows_written": 164,
+    "unmatched_appendix_rows": 11,
+    "unmatched_chart_rows": 5
+  },
+  "outputs": {
+    "README.md": "62ddad359d7789c9c03f5c0d839b19f1bb5dfa8d5fcb137926b9b82f4f59d8a9",
+    "observation_basis.csv": "e37d51b280a92ef0254aec9d7e3b4a189790cfa980c1143d0dd79e937c640102",
+    "summary.json": "5cf19581ecf3dd609538c858a5833db6c2a51e005b345c8c7c0fc8e25b8a0dba",
+    "unmatched_chart_rows.csv": "232cb846cd043dc7bbb16856fade75eca5c8a57969077a9c327f3843781f59c9"
+  },
+  "schema": "loop2-murzuq-observation-receipt-v1",
+  "script_sha256": "894dae037f84a2b783533a0bc2163bc85ff73c0ddf771ba7bd78a3c5de0fde0e",
+  "source_hashes": {
+    "data/units/libya_appendix1.csv": "b3b8861263d08fa0a0f042de149a7b1719bb4e0e341e35787f210a3e40c228a1",
+    "data/units/libya_chart_reports.csv": "54881d62e2cfe4720ea405d77403f9e873e27a4db3519ee5f7dc001a73e1d01c",
+    "data/units/libya_prose_support.csv": "3a89c14c0287691ec2a1d26ec23a95c26b0fbca3b89bd6e8d7831118c0608e98",
+    "docs/audits/2026-11-01-loop2-count-gate.md": "35dc5919d6fbcd7f7f157beb335811a26eb608d921ecb5de4a6ca74d49590ce1",
+    "library/closed/abuhmida2013-thesis-related_macbook20261030.pdf": "c0e3bf798fb3c27db0bf9cbb155396be5b4b8e003ee2228defb615a65abf3211"
+  },
+  "status": "observation_audit_only_no_outcome_recode"
+}

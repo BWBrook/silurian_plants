@@ -1,0 +1,109 @@
+{
+  "all_grid_rows_pass": true,
+  "assumptions": [
+    "independent Poisson strata or conditional binomial counts",
+    "known target/control effective effort ratio",
+    "shared relative intensity within the declared stratum",
+    "producer interpretation additionally assumes the supplied effort ratio captures relative delivery/recovery"
+  ],
+  "code_sha256": "9daf88ae23fe7c68e80ea95c723f27300a82186ad42443275a85a14054c50487",
+  "csv_sha256": "47f1c929e9226c02f35afe2ad8516c2fcbd0cd5dd4ab2e24a46eb3fa0834fb6a",
+  "diagnostics": {
+    "clustered_counts_example": {
+      "independent_count_bound": 0.09503385285530411,
+      "observed_control": 30,
+      "observed_target": 0,
+      "status": "stress-only; shared preparation/frailty violates independent-binomial construction"
+    },
+    "wrong_effort_example": {
+      "observed_control": 30,
+      "observed_target": 0,
+      "reported_effort_ratio": 1.0,
+      "reported_upper_biological_share": 0.09503385285530411,
+      "status": "stress-only; wrong effort ratio is misspecification, not covered",
+      "true_effort_ratio_not_used": 0.25
+    },
+    "zero_stratified_examples": [
+      {
+        "alpha": 0.05,
+        "biological_share_upper": 0.25886555089305224,
+        "control_counts": [
+          10
+        ],
+        "effort_ratios": [
+          1.0
+        ],
+        "status": "finite",
+        "theta_upper": 0.3492828476735633
+      },
+      {
+        "alpha": 0.05,
+        "biological_share_upper": 0.06610212633191287,
+        "control_counts": [
+          10,
+          20
+        ],
+        "effort_ratios": [
+          0.5,
+          2.0
+        ],
+        "status": "finite",
+        "theta_upper": 0.07078089392396021
+      },
+      {
+        "alpha": 0.05,
+        "biological_share_upper": 1.0,
+        "control_counts": [
+          10,
+          20
+        ],
+        "effort_ratios": [
+          0.0,
+          0.0
+        ],
+        "status": "unidentified-zero-effort",
+        "theta_upper": Infinity
+      }
+    ]
+  },
+  "minimum_exact_coverage": 0.9504055350059091,
+  "parameters": {
+    "alpha": 0.05,
+    "effort_ratio": 1.0,
+    "n": [
+      1,
+      3,
+      10,
+      30,
+      100,
+      300,
+      1000
+    ],
+    "pgrid": [
+      0.0,
+      0.001,
+      0.01,
+      0.05,
+      0.1,
+      0.25,
+      0.5,
+      0.75,
+      0.9,
+      0.99,
+      1.0
+    ]
+  },
+  "rows": 77,
+  "runtime": {
+    "created_at_utc": "2026-11-01T04:41:54.637411+00:00",
+    "numpy": "2.5.4",
+    "platform": "macOS-27.2-arm64-arm-64bit-Mach-O",
+    "python": "3.14.4",
+    "scipy": "1.18.1"
+  },
+  "schema": "loop2-count-share-method-validation-v1",
+  "source_gate": "docs/audits/2026-11-01-loop2-count-gate.md",
+  "source_gate_sha256": "35dc5919d6fbcd7f7f157beb335811a26eb608d921ecb5de4a6ca74d49590ce1",
+  "status": "method-validation-only; not real-design qualification",
+  "validation_sha256": "6b41691953da0aa72a24ebc8d6a762c20f8cd3a0f78ebc6f1774808489876ee6"
+}

@@ -1,0 +1,35 @@
+{
+  "count_semantics": {
+    "e1_search": "all palynomorphs on first biostratigraphic slide plus additional-slide rare-form scan",
+    "palynofacies_denominator": "nominal 200 organic particles; actual per-row count not recovered",
+    "share_model": "not admitted from this audit; paired counts/search effort unavailable"
+  },
+  "counts": {
+    "appendix_rows": 164,
+    "chart_rows": 158,
+    "exact_appendix_chart_matches": 153,
+    "prose_rows": 164,
+    "rows_written": 164,
+    "unmatched_appendix_rows": 11,
+    "unmatched_chart_rows": 5
+  },
+  "panel_locators": {
+    "A28i-NC186": "Abuhmida 2013 enclosure 4 palynofacies panel, PDF p.631 (printed p.615); locator only",
+    "B2-NC186": "Abuhmida 2013 enclosure 4 palynofacies panel, PDF p.633 (printed p.617); locator only",
+    "D1-200": "Abuhmida 2013 enclosure 4 palynofacies panel, PDF p.635 (printed p.619); locator only",
+    "E1-NC174": "Abuhmida 2013 enclosure 4 palynofacies panel, PDF p.637 (printed p.621); locator only",
+    "H2-NC186": "Abuhmida 2013 enclosure 4 palynofacies panel, PDF p.639 (printed p.623); locator only",
+    "I3-NC186": "Abuhmida 2013 enclosure 4 palynofacies panel, PDF p.641 (printed p.625); locator only"
+  },
+  "schema": "loop2-murzuq-observation-basis-v1",
+  "script_sha256": "894dae037f84a2b783533a0bc2163bc85ff73c0ddf771ba7bd78a3c5de0fde0e",
+  "source_hashes": {
+    "data/units/libya_appendix1.csv": "b3b8861263d08fa0a0f042de149a7b1719bb4e0e341e35787f210a3e40c228a1",
+    "data/units/libya_chart_reports.csv": "54881d62e2cfe4720ea405d77403f9e873e27a4db3519ee5f7dc001a73e1d01c",
+    "data/units/libya_prose_support.csv": "3a89c14c0287691ec2a1d26ec23a95c26b0fbca3b89bd6e8d7831118c0608e98",
+    "docs/audits/2026-11-01-loop2-count-gate.md": "35dc5919d6fbcd7f7f157beb335811a26eb608d921ecb5de4a6ca74d49590ce1",
+    "library/closed/abuhmida2013-thesis-related_macbook20261030.pdf": "c0e3bf798fb3c27db0bf9cbb155396be5b4b8e003ee2228defb615a65abf3211"
+  },
+  "status": "observation_audit_only_no_outcome_recode",
+  "thesis_sha256_expected_from_count_gate": "c0e3bf798fb3c27db0bf9cbb155396be5b4b8e003ee2228defb615a65abf3211"
+}
