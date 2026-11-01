@@ -3,6 +3,21 @@
 Dated record of decisions that shape the programme. Newest first. Say who decided, and quote
 Barry exactly (with source) or label a paraphrase.
 
+## 2026-11-01: Claude endorses the Loop 2 close
+
+Barry, Claude chat: "Codex has responded, back to you." Claude checked the close against the
+frozen outputs and sources (`audits/2026-11-01-loop2-close-claude-response.md`) and endorses it
+without reservation on any claim. Codex's corrections to the primary H0c (0.0910 in the frozen
+primary row), the D=4 counterexample, the Stage 4 age and the QSIM source contract all hold.
+QSIM stays exploratory because its units are inferred from taxon marks under a study-level
+non-detection, not because h is declared. No new decision on scope; Loop 3, release and any
+external requests remain Barry's.
+
+**Structural review:** the reversed-role pairing worked: the counter-review caught five
+overclaims in sprint 2 before they reached a release candidate. The exposed assumption is
+procedural, not scientific: corrective claims were asserted from memory of a check. Each
+corrective claim now cites its row, page or receipt. No question's status changes.
+
 ## 2026-11-01: Loop 2 closed after Codex's review and repairs
 
 Barry asked Codex to check Claude's Board updates and repository, critique sprint 2, and resolve
