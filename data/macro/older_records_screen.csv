@@ -1,0 +1,557 @@
+occurrence_no,collection_no,name,max_ma,min_ma,d_subset,d_record_type,reference_no,source_review_id,screen_status
+3285,324,Tetradium,457.3,449.6,red_algae,unspecified,60987,,database_category_screened_not_source_audited
+3679,335,Tetradium,471.3,458.2,red_algae,unspecified,61112,,database_category_screened_not_source_audited
+4409,368,Tetradium,449.6,445.5,red_algae,unspecified,61146,,database_category_screened_not_source_audited
+4534,374,Tetradium huronense,449.6,445.5,red_algae,unspecified,11467,,database_category_screened_not_source_audited
+4918,385,Lepidolites,451.0,450.2,green_algae,unspecified,316,,database_category_screened_not_source_audited
+5821,395,Tetradium,449.6,445.5,red_algae,unspecified,316,,database_category_screened_not_source_audited
+5872,395,Cyclocrinites,449.6,445.5,green_algae,unspecified,316,,database_category_screened_not_source_audited
+35965,2646,Tetradium,452.3,449.0,red_algae,unspecified,76,,database_category_screened_not_source_audited
+35970,2647,Tetradium,452.3,449.0,red_algae,unspecified,76,,database_category_screened_not_source_audited
+35979,2648,Tetradium,452.3,449.0,red_algae,unspecified,76,,database_category_screened_not_source_audited
+37804,2685,Rhodophyta,458.2,449.0,red_algae,unspecified,80,,database_category_screened_not_source_audited
+37810,2685,Tetradium,458.2,449.0,red_algae,unspecified,80,,database_category_screened_not_source_audited
+37811,2685,Tetradium,458.2,449.0,red_algae,unspecified,80,,database_category_screened_not_source_audited
+37812,2685,Tetradium,458.2,449.0,red_algae,unspecified,80,,database_category_screened_not_source_audited
+37813,2685,Tetradium,458.2,449.0,red_algae,unspecified,80,,database_category_screened_not_source_audited
+37814,2685,Tetradium,458.2,449.0,red_algae,unspecified,80,,database_category_screened_not_source_audited
+37815,2685,Tetradium,458.2,449.0,red_algae,unspecified,80,,database_category_screened_not_source_audited
+37851,2686,Tetradium,453.0,449.0,red_algae,unspecified,80,,database_category_screened_not_source_audited
+37880,2691,Tetradium,458.2,457.2,red_algae,unspecified,81,,database_category_screened_not_source_audited
+37885,2692,Tetradium,458.2,449.0,red_algae,unspecified,81,,database_category_screened_not_source_audited
+38011,2699,Tetradium,452.3,449.0,red_algae,unspecified,86,,database_category_screened_not_source_audited
+38038,2700,Tetradium,452.3,449.0,red_algae,unspecified,86,,database_category_screened_not_source_audited
+38093,2702,Tetradium,452.3,449.0,red_algae,unspecified,86,,database_category_screened_not_source_audited
+38112,2703,Tetradium,458.2,457.2,red_algae,unspecified,86,,database_category_screened_not_source_audited
+38119,2705,Tetradium,458.2,457.2,red_algae,unspecified,87,,database_category_screened_not_source_audited
+38150,2707,Tetradium,452.3,449.0,red_algae,unspecified,87,,database_category_screened_not_source_audited
+38188,2708,Tetradium,458.2,457.2,red_algae,unspecified,87,,database_category_screened_not_source_audited
+38223,2714,Tetradium,458.2,457.2,red_algae,unspecified,88,,database_category_screened_not_source_audited
+38240,2715,Tetradium,458.2,457.2,red_algae,unspecified,88,,database_category_screened_not_source_audited
+38249,2716,Tetradium,458.2,457.2,red_algae,unspecified,88,,database_category_screened_not_source_audited
+38261,2717,Tetradium,458.2,457.2,red_algae,unspecified,88,,database_category_screened_not_source_audited
+38268,2719,Tetradium,458.2,449.0,red_algae,unspecified,88,,database_category_screened_not_source_audited
+38280,2720,Tetradium,455.0,449.0,red_algae,unspecified,88,,database_category_screened_not_source_audited
+38286,2721,Tetradium,458.2,449.0,red_algae,unspecified,91,,database_category_screened_not_source_audited
+38297,2722,Tetradium,455.0,449.0,red_algae,unspecified,88,,database_category_screened_not_source_audited
+38306,2723,Tetradium,453.0,449.0,red_algae,unspecified,88,,database_category_screened_not_source_audited
+38418,2745,Tetradium,452.3,449.0,red_algae,unspecified,94,,database_category_screened_not_source_audited
+38530,2753,Tetradium,452.3,449.0,red_algae,unspecified,92,,database_category_screened_not_source_audited
+38558,2754,Tetradium,452.3,449.0,red_algae,unspecified,92,,database_category_screened_not_source_audited
+48511,2765,Baltisphaeridium,458.2,457.2,acritarchs_prasinophytes,unspecified,103,,database_category_screened_not_source_audited
+51644,3857,Bojophyton pragensis,469.4,463.3,plant_unlinked_name,unspecified,227,L3O-006,excluded_non_embryophyte_source_review
+72691,5326,Cyclocrinites,449.6,445.5,green_algae,unspecified,316,,database_category_screened_not_source_audited
+72864,5328,Tetradium,457.3,449.6,red_algae,unspecified,317,,database_category_screened_not_source_audited
+72932,5329,Tetradium,457.3,449.6,red_algae,unspecified,317,,database_category_screened_not_source_audited
+73027,5331,Solenopora,457.3,449.6,red_algae,unspecified,317,,database_category_screened_not_source_audited
+73031,5331,Tetradium,457.3,449.6,red_algae,unspecified,317,,database_category_screened_not_source_audited
+73128,5333,Solenopora,457.3,449.6,red_algae,unspecified,317,,database_category_screened_not_source_audited
+73130,5333,Tetradium,457.3,449.6,red_algae,unspecified,317,,database_category_screened_not_source_audited
+73131,5333,Tetradium,457.3,449.6,red_algae,unspecified,317,,database_category_screened_not_source_audited
+73336,5346,Tetradium,457.3,449.6,red_algae,unspecified,317,,database_category_screened_not_source_audited
+73419,5351,Solenopora,457.3,449.6,red_algae,unspecified,317,,database_category_screened_not_source_audited
+73421,5351,Tetradium,457.3,449.6,red_algae,unspecified,317,,database_category_screened_not_source_audited
+73447,5352,Solenopora,457.3,449.6,red_algae,unspecified,317,,database_category_screened_not_source_audited
+73606,5358,Tetradium,457.3,449.6,red_algae,unspecified,317,,database_category_screened_not_source_audited
+73607,5358,Tetradium,457.3,449.6,red_algae,unspecified,317,,database_category_screened_not_source_audited
+73629,5359,Prismostylus fibratum,457.3,449.6,red_algae,unspecified,317,,database_category_screened_not_source_audited
+73630,5359,Tetradium,457.3,449.6,red_algae,unspecified,317,,database_category_screened_not_source_audited
+73646,5361,Solenopora,457.3,449.6,red_algae,unspecified,317,,database_category_screened_not_source_audited
+73651,5361,Prismostylus fibratum,457.3,449.6,red_algae,unspecified,317,,database_category_screened_not_source_audited
+73652,5361,Tetradium,457.3,449.6,red_algae,unspecified,317,,database_category_screened_not_source_audited
+73882,5368,Solenopora,457.3,449.6,red_algae,unspecified,317,,database_category_screened_not_source_audited
+73886,5368,Prismostylus fibratum,457.3,449.6,red_algae,unspecified,317,,database_category_screened_not_source_audited
+73951,5370,Prismostylus fibratum,457.3,450.2,red_algae,unspecified,317,,database_category_screened_not_source_audited
+73982,5371,Prismostylus fibratum,457.3,450.2,red_algae,unspecified,317,,database_category_screened_not_source_audited
+73983,5371,Tetradium,457.3,450.2,red_algae,unspecified,317,,database_category_screened_not_source_audited
+74035,5374,Solenopora,450.2,449.6,red_algae,unspecified,317,,database_category_screened_not_source_audited
+74040,5374,Prismostylus fibratum,450.2,449.6,red_algae,unspecified,317,,database_category_screened_not_source_audited
+93769,6990,Cyclocrinites pyriformis,471.3,449.6,green_algae,unspecified,437,,database_category_screened_not_source_audited
+93787,6991,Receptaculites,471.3,449.6,green_algae,unspecified,437,,database_category_screened_not_source_audited
+94715,7095,Receptaculites,471.3,457.3,green_algae,unspecified,437,,database_category_screened_not_source_audited
+126719,10338,Receptaculites,450.2,445.5,green_algae,unspecified,3828,,database_category_screened_not_source_audited
+153692,13629,Vermiporella,458.2,449.5,green_algae,unspecified,6135,,database_category_screened_not_source_audited
+153788,13654,Receptaculites,451.0,445.5,green_algae,unspecified,6140,,database_category_screened_not_source_audited
+153834,13655,Receptaculites,451.0,445.5,green_algae,unspecified,6140,,database_category_screened_not_source_audited
+153862,13656,Receptaculites,451.0,445.5,green_algae,unspecified,6140,,database_category_screened_not_source_audited
+153892,13657,Receptaculites,451.0,445.5,green_algae,unspecified,6140,,database_category_screened_not_source_audited
+153908,13658,Receptaculites,451.0,445.5,green_algae,unspecified,6140,,database_category_screened_not_source_audited
+205763,22960,Tetradium huronense,449.6,445.5,red_algae,unspecified,6608,,database_category_screened_not_source_audited
+207584,23092,Ischadites,457.3,449.6,green_algae,unspecified,6644,,database_category_screened_not_source_audited
+244474,23989,Baltisphaeridium,457.3,449.6,acritarchs_prasinophytes,unspecified,6767,,database_category_screened_not_source_audited
+244475,23989,Baltisphaeridium,457.3,449.6,acritarchs_prasinophytes,unspecified,6767,,database_category_screened_not_source_audited
+244476,23989,Baltisphaeridium,457.3,449.6,acritarchs_prasinophytes,unspecified,6767,,database_category_screened_not_source_audited
+244477,23989,Baltisphaeridium,457.3,449.6,acritarchs_prasinophytes,unspecified,6767,,database_category_screened_not_source_audited
+244478,23989,Baltisphaeridium,457.3,449.6,acritarchs_prasinophytes,unspecified,6767,,database_category_screened_not_source_audited
+244481,23989,Gorgonisphaeridium,457.3,449.6,acritarchs_prasinophytes,unspecified,6767,,database_category_screened_not_source_audited
+244487,23989,Poikilofusa,457.3,449.6,acritarchs_prasinophytes,unspecified,6767,,database_category_screened_not_source_audited
+244488,23989,Polyancistrodorus,457.3,449.6,acritarchs_prasinophytes,unspecified,6767,,database_category_screened_not_source_audited
+244490,23989,Veryhachium,457.3,449.6,acritarchs_prasinophytes,unspecified,6767,,database_category_screened_not_source_audited
+244491,23989,Veryhachium,457.3,449.6,acritarchs_prasinophytes,unspecified,6767,,database_category_screened_not_source_audited
+246126,24116,Receptaculites,453.8,450.2,green_algae,unspecified,6817,,database_category_screened_not_source_audited
+246127,24116,Receptaculites,453.8,450.2,green_algae,unspecified,6817,,database_category_screened_not_source_audited
+247380,24186,Receptaculites,449.6,445.5,green_algae,unspecified,6817,,database_category_screened_not_source_audited
+248046,24225,Receptaculites,451.0,450.2,green_algae,unspecified,6817,,database_category_screened_not_source_audited
+248079,24225,Receptaculites,451.0,450.2,green_algae,unspecified,6817,,database_category_screened_not_source_audited
+248080,24225,Receptaculites,451.0,450.2,green_algae,unspecified,6817,,database_category_screened_not_source_audited
+248167,24230,Receptaculites,451.0,450.2,green_algae,unspecified,6817,,database_category_screened_not_source_audited
+248168,24230,Receptaculites,451.0,450.2,green_algae,unspecified,6817,,database_category_screened_not_source_audited
+265785,21075,Acanthodiacrodium,477.1,468.0,acritarchs_prasinophytes,unspecified,6387,,database_category_screened_not_source_audited
+265792,21075,Eupoikilofusa,477.1,468.0,acritarchs_prasinophytes,unspecified,6387,,database_category_screened_not_source_audited
+265793,21075,Goniosphaeridium,477.1,468.0,acritarchs_prasinophytes,unspecified,6387,,database_category_screened_not_source_audited
+265795,21075,Micrhystridium,477.1,468.0,acritarchs_prasinophytes,unspecified,6387,,database_category_screened_not_source_audited
+273335,26172,Tetradium,457.3,449.6,red_algae,unspecified,7251,,database_category_screened_not_source_audited
+273350,26174,Prismostylus fibratum,457.3,453.8,red_algae,unspecified,7251,,database_category_screened_not_source_audited
+273351,26174,Tetradium,457.3,453.8,red_algae,unspecified,7251,,database_category_screened_not_source_audited
+273352,26174,Tetradium,457.3,453.8,red_algae,unspecified,7251,,database_category_screened_not_source_audited
+273404,26175,Tetradium,457.3,453.8,red_algae,unspecified,7251,,database_category_screened_not_source_audited
+273405,26175,Prismostylus fibratum,457.3,453.8,red_algae,unspecified,7251,,database_category_screened_not_source_audited
+273576,26188,Receptaculites,457.3,453.8,green_algae,unspecified,7251,,database_category_screened_not_source_audited
+273577,26188,Solenopora,457.3,453.8,red_algae,unspecified,7251,,database_category_screened_not_source_audited
+273584,26188,Tetradium,457.3,453.8,red_algae,unspecified,7251,,database_category_screened_not_source_audited
+273612,26191,Solenopora,457.3,453.8,red_algae,unspecified,7251,,database_category_screened_not_source_audited
+273640,26192,Receptaculites,457.3,449.6,green_algae,unspecified,7251,,database_category_screened_not_source_audited
+273641,26192,Receptaculites,457.3,449.6,green_algae,unspecified,7251,,database_category_screened_not_source_audited
+273642,26192,Solenopora,457.3,449.6,red_algae,unspecified,7251,,database_category_screened_not_source_audited
+273651,26192,Tetradium,457.3,449.6,red_algae,unspecified,7251,,database_category_screened_not_source_audited
+274637,26263,Cyclocrinites globosus,453.8,451.0,green_algae,unspecified,7251,,database_category_screened_not_source_audited
+274638,26263,Receptaculites,453.8,451.0,green_algae,unspecified,7251,,database_category_screened_not_source_audited
+275263,26275,Tetradium,458.2,449.5,red_algae,unspecified,7251,,database_category_screened_not_source_audited
+275532,26290,Ischadites,458.2,449.5,green_algae,unspecified,7251,,database_category_screened_not_source_audited
+283065,26935,Receptaculites,457.3,449.6,green_algae,unspecified,7446,,database_category_screened_not_source_audited
+283066,26936,Receptaculites,457.3,449.6,green_algae,unspecified,7446,,database_category_screened_not_source_audited
+283067,26937,Receptaculites,457.3,449.6,green_algae,unspecified,7446,,database_category_screened_not_source_audited
+283076,26938,Receptaculites,457.3,449.6,green_algae,unspecified,7446,,database_category_screened_not_source_audited
+283086,26940,Receptaculites,457.3,449.6,green_algae,unspecified,7446,,database_category_screened_not_source_audited
+283103,26942,Receptaculites,451.0,449.6,green_algae,unspecified,7452,,database_category_screened_not_source_audited
+283120,26943,Receptaculites,451.0,449.6,green_algae,unspecified,7452,,database_category_screened_not_source_audited
+283153,26944,Cyclocrinites globosus,457.3,449.6,green_algae,unspecified,7452,,database_category_screened_not_source_audited
+283154,26944,Receptaculites,457.3,449.6,green_algae,unspecified,7452,,database_category_screened_not_source_audited
+283169,26945,Receptaculites,457.3,449.6,green_algae,unspecified,7452,,database_category_screened_not_source_audited
+283177,26946,Cyclocrinites globosus,457.3,449.6,green_algae,unspecified,7452,,database_category_screened_not_source_audited
+283178,26946,Receptaculites,457.3,449.6,green_algae,unspecified,7452,,database_category_screened_not_source_audited
+283190,26947,Receptaculites,457.3,449.6,green_algae,unspecified,7452,,database_category_screened_not_source_audited
+283191,26947,Receptaculites,457.3,449.6,green_algae,unspecified,7452,,database_category_screened_not_source_audited
+283213,26948,Receptaculites,457.3,449.6,green_algae,unspecified,7452,,database_category_screened_not_source_audited
+283237,26949,Receptaculites,457.3,449.6,green_algae,unspecified,7452,,database_category_screened_not_source_audited
+283265,26951,Receptaculites,457.3,449.6,green_algae,unspecified,7452,,database_category_screened_not_source_audited
+283285,26952,Receptaculites,457.3,449.6,green_algae,unspecified,7452,,database_category_screened_not_source_audited
+283300,26953,Receptaculites,457.3,449.6,green_algae,unspecified,7452,,database_category_screened_not_source_audited
+283321,26954,Receptaculites,457.3,449.6,green_algae,unspecified,7452,,database_category_screened_not_source_audited
+283324,26955,Receptaculites,457.3,449.6,green_algae,unspecified,7452,,database_category_screened_not_source_audited
+283334,26956,Receptaculites,457.3,449.6,green_algae,unspecified,7452,,database_category_screened_not_source_audited
+283339,26957,Receptaculites,457.3,449.6,green_algae,unspecified,7452,,database_category_screened_not_source_audited
+344567,32468,Solenopora,458.2,449.5,red_algae,unspecified,8741,,database_category_screened_not_source_audited
+344568,32469,Solenopora,458.2,449.5,red_algae,unspecified,8741,,database_category_screened_not_source_audited
+345183,32547,Prismostylus fibratum,458.2,449.5,red_algae,unspecified,8741,,database_category_screened_not_source_audited
+345266,32552,Prismostylus fibratum,458.2,449.5,red_algae,unspecified,8741,,database_category_screened_not_source_audited
+345327,32553,Prismostylus fibratum,458.2,449.5,red_algae,unspecified,8741,,database_category_screened_not_source_audited
+345389,32554,Prismostylus fibratum,458.2,449.5,red_algae,unspecified,8741,,database_category_screened_not_source_audited
+345451,32557,Prismostylus fibratum,458.2,449.5,red_algae,unspecified,8741,,database_category_screened_not_source_audited
+345512,32558,Prismostylus fibratum,458.2,449.5,red_algae,unspecified,8741,,database_category_screened_not_source_audited
+345746,32574,Tetradium,458.2,449.5,red_algae,unspecified,8741,,database_category_screened_not_source_audited
+345747,32574,Prismostylus fibratum,458.2,449.5,red_algae,unspecified,8741,,database_category_screened_not_source_audited
+345756,32576,Tetradium,458.2,449.5,red_algae,unspecified,8741,,database_category_screened_not_source_audited
+345757,32576,Prismostylus fibratum,458.2,449.5,red_algae,unspecified,8741,,database_category_screened_not_source_audited
+345766,32577,Tetradium,458.2,449.5,red_algae,unspecified,8741,,database_category_screened_not_source_audited
+345767,32577,Prismostylus fibratum,458.2,449.5,red_algae,unspecified,8741,,database_category_screened_not_source_audited
+345776,32578,Prismostylus fibratum,458.2,449.5,red_algae,unspecified,8741,,database_category_screened_not_source_audited
+345796,32579,Prismostylus fibratum,458.2,449.5,red_algae,unspecified,8741,,database_category_screened_not_source_audited
+345810,32580,Prismostylus fibratum,458.2,449.5,red_algae,unspecified,8741,,database_category_screened_not_source_audited
+345824,32581,Prismostylus fibratum,458.2,449.5,red_algae,unspecified,8741,,database_category_screened_not_source_audited
+345838,32583,Prismostylus fibratum,458.2,449.5,red_algae,unspecified,8741,,database_category_screened_not_source_audited
+345853,32585,Prismostylus fibratum,458.2,449.5,red_algae,unspecified,8741,,database_category_screened_not_source_audited
+345867,32586,Prismostylus fibratum,458.2,449.5,red_algae,unspecified,8741,,database_category_screened_not_source_audited
+346148,32614,Prismostylus fibratum,458.2,449.5,red_algae,unspecified,8741,,database_category_screened_not_source_audited
+346174,32615,Prismostylus fibratum,458.2,449.5,red_algae,unspecified,8741,,database_category_screened_not_source_audited
+346202,32617,Prismostylus fibratum,458.2,449.5,red_algae,unspecified,8741,,database_category_screened_not_source_audited
+346228,32618,Prismostylus fibratum,458.2,449.5,red_algae,unspecified,8741,,database_category_screened_not_source_audited
+346254,32619,Prismostylus fibratum,458.2,449.5,red_algae,unspecified,8741,,database_category_screened_not_source_audited
+346424,32653,Prismostylus fibratum,458.2,449.5,red_algae,unspecified,8741,,database_category_screened_not_source_audited
+346434,32656,Prismostylus fibratum,458.2,449.5,red_algae,unspecified,8741,,database_category_screened_not_source_audited
+347190,32779,Tetradium,458.2,449.5,red_algae,unspecified,8741,,database_category_screened_not_source_audited
+347221,32783,Tetradium,458.2,449.5,red_algae,unspecified,8741,,database_category_screened_not_source_audited
+347255,32787,Tetradium,458.2,449.5,red_algae,unspecified,8741,,database_category_screened_not_source_audited
+347299,32791,Tetradium,458.2,449.5,red_algae,unspecified,8741,,database_category_screened_not_source_audited
+347345,32798,Tetradium,458.2,449.5,red_algae,unspecified,8741,,database_category_screened_not_source_audited
+347483,32823,Tetradium,458.2,449.5,red_algae,unspecified,8741,,database_category_screened_not_source_audited
+347507,32824,Tetradium,458.2,449.5,red_algae,unspecified,8741,,database_category_screened_not_source_audited
+347531,32825,Tetradium,458.2,449.5,red_algae,unspecified,8741,,database_category_screened_not_source_audited
+347653,32826,Tetradium,458.2,449.5,red_algae,unspecified,8741,,database_category_screened_not_source_audited
+347682,32832,Tetradium,458.2,449.5,red_algae,unspecified,8741,,database_category_screened_not_source_audited
+347813,32872,Solenopora,458.2,449.5,red_algae,unspecified,8741,,database_category_screened_not_source_audited
+347816,32872,Tetradium,458.2,449.5,red_algae,unspecified,8741,,database_category_screened_not_source_audited
+347817,32872,Tetradium,458.2,449.5,red_algae,unspecified,8741,,database_category_screened_not_source_audited
+347827,32873,Solenopora,458.2,449.5,red_algae,unspecified,8741,,database_category_screened_not_source_audited
+347830,32873,Tetradium,458.2,449.5,red_algae,unspecified,8741,,database_category_screened_not_source_audited
+347831,32873,Tetradium,458.2,449.5,red_algae,unspecified,8741,,database_category_screened_not_source_audited
+347840,32874,Solenopora,458.2,449.5,red_algae,unspecified,8741,,database_category_screened_not_source_audited
+347843,32874,Tetradium,458.2,449.5,red_algae,unspecified,8741,,database_category_screened_not_source_audited
+347844,32874,Tetradium,458.2,449.5,red_algae,unspecified,8741,,database_category_screened_not_source_audited
+347859,32875,Solenopora,458.2,449.5,red_algae,unspecified,8741,,database_category_screened_not_source_audited
+347862,32875,Tetradium,458.2,449.5,red_algae,unspecified,8741,,database_category_screened_not_source_audited
+347863,32875,Tetradium,458.2,449.5,red_algae,unspecified,8741,,database_category_screened_not_source_audited
+347889,32879,Solenopora,458.2,449.5,red_algae,unspecified,8741,,database_category_screened_not_source_audited
+347892,32879,Tetradium,458.2,449.5,red_algae,unspecified,8741,,database_category_screened_not_source_audited
+347893,32879,Tetradium,458.2,449.5,red_algae,unspecified,8741,,database_category_screened_not_source_audited
+348458,33103,Solenopora,458.2,449.5,red_algae,unspecified,8741,,database_category_screened_not_source_audited
+348459,33103,Tetradium,458.2,449.5,red_algae,unspecified,8741,,database_category_screened_not_source_audited
+348460,33103,Tetradium,458.2,449.5,red_algae,unspecified,8741,,database_category_screened_not_source_audited
+348485,33104,Solenopora,458.2,449.5,red_algae,unspecified,8741,,database_category_screened_not_source_audited
+348486,33104,Tetradium,458.2,449.5,red_algae,unspecified,8741,,database_category_screened_not_source_audited
+348487,33104,Tetradium,458.2,449.5,red_algae,unspecified,8741,,database_category_screened_not_source_audited
+348512,33105,Solenopora,458.2,449.5,red_algae,unspecified,8741,,database_category_screened_not_source_audited
+348513,33105,Tetradium,458.2,449.5,red_algae,unspecified,8741,,database_category_screened_not_source_audited
+348514,33105,Tetradium,458.2,449.5,red_algae,unspecified,8741,,database_category_screened_not_source_audited
+348539,33106,Solenopora,458.2,449.5,red_algae,unspecified,8741,,database_category_screened_not_source_audited
+348540,33106,Tetradium,458.2,449.5,red_algae,unspecified,8741,,database_category_screened_not_source_audited
+348541,33106,Tetradium,458.2,449.5,red_algae,unspecified,8741,,database_category_screened_not_source_audited
+348566,33107,Solenopora,458.2,449.5,red_algae,unspecified,8741,,database_category_screened_not_source_audited
+348567,33107,Tetradium,458.2,449.5,red_algae,unspecified,8741,,database_category_screened_not_source_audited
+348568,33107,Tetradium,458.2,449.5,red_algae,unspecified,8741,,database_category_screened_not_source_audited
+348949,33182,Solenopora,458.2,449.5,red_algae,unspecified,8741,,database_category_screened_not_source_audited
+348971,33186,Solenopora,458.2,449.5,red_algae,unspecified,8741,,database_category_screened_not_source_audited
+348991,33188,Solenopora,458.2,449.5,red_algae,unspecified,8741,,database_category_screened_not_source_audited
+351108,33449,Tetradium,458.2,449.5,red_algae,unspecified,8880,,database_category_screened_not_source_audited
+351115,33450,Tetradium,458.2,449.5,red_algae,unspecified,8880,,database_category_screened_not_source_audited
+351122,33451,Tetradium,458.2,449.5,red_algae,unspecified,8880,,database_category_screened_not_source_audited
+351129,33452,Tetradium,458.2,449.5,red_algae,unspecified,8880,,database_category_screened_not_source_audited
+351136,33453,Tetradium,458.2,449.5,red_algae,unspecified,8880,,database_category_screened_not_source_audited
+351951,33528,Solenopora,458.2,449.5,red_algae,unspecified,8880,,database_category_screened_not_source_audited
+351953,33528,Receptaculites,458.2,449.5,green_algae,unspecified,8880,,database_category_screened_not_source_audited
+351974,33531,Cyclocrinites,458.2,449.5,green_algae,unspecified,8880,,database_category_screened_not_source_audited
+351976,33532,Cyclocrinites pyriformis,457.3,449.6,green_algae,unspecified,8880,,database_category_screened_not_source_audited
+351990,33533,Cyclocrinites,458.2,449.5,green_algae,unspecified,8880,,database_category_screened_not_source_audited
+351991,33534,Cyclocrinites,458.2,449.5,green_algae,unspecified,8880,,database_category_screened_not_source_audited
+351993,33534,Receptaculites,458.2,449.5,green_algae,unspecified,8880,,database_category_screened_not_source_audited
+351994,33535,Cyclocrinites,458.2,449.5,green_algae,unspecified,8880,,database_category_screened_not_source_audited
+351995,33536,Receptaculites,458.2,449.5,green_algae,unspecified,8880,,database_category_screened_not_source_audited
+352014,33538,Cyclocrinites pyriformis,458.2,449.5,green_algae,unspecified,8880,,database_category_screened_not_source_audited
+352015,33539,Cyclocrinites,458.2,449.5,green_algae,unspecified,8880,,database_category_screened_not_source_audited
+352016,33540,Receptaculites,458.2,449.5,green_algae,unspecified,8880,,database_category_screened_not_source_audited
+352030,33544,Tetradium,457.3,449.6,red_algae,unspecified,8880,,database_category_screened_not_source_audited
+352061,33545,Tetradium,457.3,449.6,red_algae,unspecified,8880,,database_category_screened_not_source_audited
+352093,33546,Tetradium,457.3,449.6,red_algae,unspecified,8880,,database_category_screened_not_source_audited
+352124,33547,Tetradium,457.3,449.6,red_algae,unspecified,8880,,database_category_screened_not_source_audited
+352162,33549,Tetradium,458.2,449.5,red_algae,unspecified,8880,,database_category_screened_not_source_audited
+352167,33550,Tetradium,458.2,449.5,red_algae,unspecified,8880,,database_category_screened_not_source_audited
+355634,33927,Tetradium,458.2,449.5,red_algae,unspecified,8880,,database_category_screened_not_source_audited
+355643,33929,Tetradium,458.2,449.5,red_algae,unspecified,8880,,database_category_screened_not_source_audited
+355648,33930,Tetradium,458.2,449.5,red_algae,unspecified,8880,,database_category_screened_not_source_audited
+355653,33932,Tetradium,458.2,449.5,red_algae,unspecified,8880,,database_category_screened_not_source_audited
+355662,33933,Tetradium,458.2,449.5,red_algae,unspecified,8880,,database_category_screened_not_source_audited
+356910,33995,Solenopora,457.3,449.6,red_algae,unspecified,8880,,database_category_screened_not_source_audited
+356912,33995,Tetradium,457.3,449.6,red_algae,unspecified,8880,,database_category_screened_not_source_audited
+356932,33996,Solenopora,457.3,449.6,red_algae,unspecified,8880,,database_category_screened_not_source_audited
+356934,33996,Tetradium,457.3,449.6,red_algae,unspecified,8880,,database_category_screened_not_source_audited
+356955,33997,Solenopora,457.3,449.6,red_algae,unspecified,8880,,database_category_screened_not_source_audited
+356957,33997,Tetradium,457.3,449.6,red_algae,unspecified,8880,,database_category_screened_not_source_audited
+356977,34007,Solenopora,458.2,449.5,red_algae,unspecified,8880,,database_category_screened_not_source_audited
+356979,34007,Tetradium,458.2,449.5,red_algae,unspecified,8880,,database_category_screened_not_source_audited
+357522,34028,Solenopora,458.2,449.5,red_algae,unspecified,8880,,database_category_screened_not_source_audited
+357524,34028,Tetradium,458.2,449.5,red_algae,unspecified,8880,,database_category_screened_not_source_audited
+357543,34029,Solenopora,458.2,449.5,red_algae,unspecified,8880,,database_category_screened_not_source_audited
+357545,34029,Tetradium,458.2,449.5,red_algae,unspecified,8880,,database_category_screened_not_source_audited
+357566,34030,Solenopora,458.2,449.5,red_algae,unspecified,8880,,database_category_screened_not_source_audited
+357568,34030,Tetradium,458.2,449.5,red_algae,unspecified,8880,,database_category_screened_not_source_audited
+357588,34031,Solenopora,458.2,449.5,red_algae,unspecified,8880,,database_category_screened_not_source_audited
+357590,34031,Tetradium,458.2,449.5,red_algae,unspecified,8880,,database_category_screened_not_source_audited
+357610,34032,Solenopora,458.2,449.5,red_algae,unspecified,8880,,database_category_screened_not_source_audited
+357612,34032,Tetradium,458.2,449.5,red_algae,unspecified,8880,,database_category_screened_not_source_audited
+360699,34152,Solenopora,458.2,449.5,red_algae,unspecified,8880,,database_category_screened_not_source_audited
+360701,34152,Tetradium,458.2,449.5,red_algae,unspecified,8880,,database_category_screened_not_source_audited
+360748,34153,Solenopora,458.2,449.5,red_algae,unspecified,8880,,database_category_screened_not_source_audited
+360750,34153,Tetradium,458.2,449.5,red_algae,unspecified,8880,,database_category_screened_not_source_audited
+360770,34167,Solenopora,458.2,449.5,red_algae,unspecified,8880,,database_category_screened_not_source_audited
+360772,34167,Tetradium,458.2,449.5,red_algae,unspecified,8880,,database_category_screened_not_source_audited
+360792,34168,Solenopora,458.2,449.5,red_algae,unspecified,8880,,database_category_screened_not_source_audited
+360794,34168,Tetradium,458.2,449.5,red_algae,unspecified,8880,,database_category_screened_not_source_audited
+360814,34169,Solenopora,458.2,449.5,red_algae,unspecified,8880,,database_category_screened_not_source_audited
+360816,34169,Tetradium,458.2,449.5,red_algae,unspecified,8880,,database_category_screened_not_source_audited
+360838,34172,Solenopora,458.2,449.5,red_algae,unspecified,8880,,database_category_screened_not_source_audited
+360844,34173,Solenopora,458.2,449.5,red_algae,unspecified,8880,,database_category_screened_not_source_audited
+360849,34174,Solenopora,458.2,449.5,red_algae,unspecified,8880,,database_category_screened_not_source_audited
+360855,34175,Solenopora,458.2,449.5,red_algae,unspecified,8880,,database_category_screened_not_source_audited
+360861,34176,Solenopora,458.2,449.5,red_algae,unspecified,8880,,database_category_screened_not_source_audited
+360981,34197,Tetradium,458.2,449.5,red_algae,unspecified,8880,,database_category_screened_not_source_audited
+361029,34211,Tetradium,458.2,449.5,red_algae,unspecified,8880,,database_category_screened_not_source_audited
+361033,34212,Tetradium,458.2,449.5,red_algae,unspecified,8880,,database_category_screened_not_source_audited
+361037,34213,Tetradium,458.2,449.5,red_algae,unspecified,8880,,database_category_screened_not_source_audited
+361041,34214,Tetradium,458.2,449.5,red_algae,unspecified,8880,,database_category_screened_not_source_audited
+361044,34214,Tetradium,458.2,449.5,red_algae,unspecified,8880,,database_category_screened_not_source_audited
+361045,34214,Tetradium,458.2,449.5,red_algae,unspecified,8880,,database_category_screened_not_source_audited
+361046,34214,Tetradium,458.2,449.5,red_algae,unspecified,8880,,database_category_screened_not_source_audited
+361056,34215,Tetradium,458.2,449.5,red_algae,unspecified,8880,,database_category_screened_not_source_audited
+361057,34215,Tetradium,458.2,449.5,red_algae,unspecified,8880,,database_category_screened_not_source_audited
+361058,34215,Tetradium,458.2,449.5,red_algae,unspecified,8880,,database_category_screened_not_source_audited
+361068,34216,Tetradium,458.2,449.5,red_algae,unspecified,8880,,database_category_screened_not_source_audited
+361069,34216,Tetradium,458.2,449.5,red_algae,unspecified,8880,,database_category_screened_not_source_audited
+361070,34216,Tetradium,458.2,449.5,red_algae,unspecified,8880,,database_category_screened_not_source_audited
+361080,34217,Tetradium,458.2,449.5,red_algae,unspecified,8880,,database_category_screened_not_source_audited
+361081,34217,Tetradium,458.2,449.5,red_algae,unspecified,8880,,database_category_screened_not_source_audited
+361082,34217,Tetradium,458.2,449.5,red_algae,unspecified,8880,,database_category_screened_not_source_audited
+361092,34218,Tetradium,458.2,449.5,red_algae,unspecified,8880,,database_category_screened_not_source_audited
+361093,34218,Tetradium,458.2,449.5,red_algae,unspecified,8880,,database_category_screened_not_source_audited
+361094,34218,Tetradium,458.2,449.5,red_algae,unspecified,8880,,database_category_screened_not_source_audited
+361153,34224,Solenopora,458.2,449.5,red_algae,unspecified,8880,,database_category_screened_not_source_audited
+361161,34224,Receptaculites,458.2,449.5,green_algae,unspecified,8880,,database_category_screened_not_source_audited
+361235,34235,Solenopora,458.2,449.5,red_algae,unspecified,8880,,database_category_screened_not_source_audited
+361243,34235,Receptaculites,458.2,449.5,green_algae,unspecified,8880,,database_category_screened_not_source_audited
+361255,34237,Solenopora,458.2,449.5,red_algae,unspecified,8880,,database_category_screened_not_source_audited
+361263,34237,Receptaculites,458.2,449.5,green_algae,unspecified,8880,,database_category_screened_not_source_audited
+361307,34241,Solenopora,458.2,449.5,red_algae,unspecified,8880,,database_category_screened_not_source_audited
+361315,34241,Receptaculites,458.2,449.5,green_algae,unspecified,8880,,database_category_screened_not_source_audited
+361321,34243,Solenopora,458.2,449.5,red_algae,unspecified,8880,,database_category_screened_not_source_audited
+361329,34243,Receptaculites,458.2,449.5,green_algae,unspecified,8880,,database_category_screened_not_source_audited
+361334,34244,Solenopora,458.2,449.5,red_algae,unspecified,8880,,database_category_screened_not_source_audited
+361342,34244,Receptaculites,458.2,449.5,green_algae,unspecified,8880,,database_category_screened_not_source_audited
+361347,34245,Solenopora,458.2,449.5,red_algae,unspecified,8880,,database_category_screened_not_source_audited
+361355,34245,Receptaculites,458.2,449.5,green_algae,unspecified,8880,,database_category_screened_not_source_audited
+361360,34246,Solenopora,458.2,449.5,red_algae,unspecified,8880,,database_category_screened_not_source_audited
+361368,34246,Receptaculites,458.2,449.5,green_algae,unspecified,8880,,database_category_screened_not_source_audited
+361401,34247,Receptaculites,458.2,449.5,green_algae,unspecified,8880,,database_category_screened_not_source_audited
+361422,34248,Receptaculites,458.2,449.5,green_algae,unspecified,8880,,database_category_screened_not_source_audited
+361443,34249,Receptaculites,458.2,449.5,green_algae,unspecified,8880,,database_category_screened_not_source_audited
+361464,34250,Receptaculites,458.2,449.5,green_algae,unspecified,8880,,database_category_screened_not_source_audited
+361485,34251,Receptaculites,458.2,449.5,green_algae,unspecified,8880,,database_category_screened_not_source_audited
+361506,34252,Receptaculites,458.2,449.5,green_algae,unspecified,8880,,database_category_screened_not_source_audited
+361672,34265,Prismostylus fibratum,458.2,449.5,red_algae,unspecified,8880,,database_category_screened_not_source_audited
+361673,34266,Prismostylus fibratum,458.2,449.5,red_algae,unspecified,8880,,database_category_screened_not_source_audited
+361675,34268,Tetradium,458.2,449.5,red_algae,unspecified,8880,,database_category_screened_not_source_audited
+361676,34268,Prismostylus fibratum,458.2,449.5,red_algae,unspecified,8880,,database_category_screened_not_source_audited
+361677,34268,Tetradium,458.2,449.5,red_algae,unspecified,8880,,database_category_screened_not_source_audited
+361717,34272,Tetradium,458.2,449.5,red_algae,unspecified,8880,,database_category_screened_not_source_audited
+361718,34272,Tetradium,458.2,449.5,red_algae,unspecified,8880,,database_category_screened_not_source_audited
+361719,34272,Prismostylus fibratum,458.2,449.5,red_algae,unspecified,8880,,database_category_screened_not_source_audited
+361751,34273,Tetradium,458.2,449.5,red_algae,unspecified,8880,,database_category_screened_not_source_audited
+361752,34273,Tetradium,458.2,449.5,red_algae,unspecified,8880,,database_category_screened_not_source_audited
+361753,34273,Prismostylus fibratum,458.2,449.5,red_algae,unspecified,8880,,database_category_screened_not_source_audited
+361791,34276,Tetradium,458.2,449.5,red_algae,unspecified,8880,,database_category_screened_not_source_audited
+361792,34276,Tetradium,458.2,449.5,red_algae,unspecified,8880,,database_category_screened_not_source_audited
+361793,34276,Prismostylus fibratum,458.2,449.5,red_algae,unspecified,8880,,database_category_screened_not_source_audited
+361801,34277,Tetradium,458.2,449.5,red_algae,unspecified,8880,,database_category_screened_not_source_audited
+361827,34279,Tetradium,458.2,449.5,red_algae,unspecified,8880,,database_category_screened_not_source_audited
+361850,34281,Tetradium,458.2,449.5,red_algae,unspecified,8880,,database_category_screened_not_source_audited
+361981,34324,Tetradium,458.2,449.5,red_algae,unspecified,8880,,database_category_screened_not_source_audited
+362048,34326,Tetradium,458.2,449.5,red_algae,unspecified,8880,,database_category_screened_not_source_audited
+362074,34327,Tetradium,458.2,449.5,red_algae,unspecified,8880,,database_category_screened_not_source_audited
+362099,34328,Tetradium,458.2,449.5,red_algae,unspecified,8880,,database_category_screened_not_source_audited
+362256,34333,Prismostylus fibratum,458.2,449.5,red_algae,unspecified,8880,,database_category_screened_not_source_audited
+362257,34334,Prismostylus fibratum,458.2,449.5,red_algae,unspecified,8880,,database_category_screened_not_source_audited
+362259,34335,Prismostylus fibratum,458.2,449.5,red_algae,unspecified,8880,,database_category_screened_not_source_audited
+362261,34336,Prismostylus fibratum,458.2,449.5,red_algae,unspecified,8880,,database_category_screened_not_source_audited
+362263,34337,Prismostylus fibratum,458.2,449.5,red_algae,unspecified,8880,,database_category_screened_not_source_audited
+362265,34338,Prismostylus fibratum,458.2,449.5,red_algae,unspecified,8880,,database_category_screened_not_source_audited
+364476,34547,Tetradium,453.8,451.0,red_algae,unspecified,3965,,database_category_screened_not_source_audited
+367201,34738,Solenopora,468.0,458.2,red_algae,unspecified,9217,,database_category_screened_not_source_audited
+367991,34813,Fisherites,450.2,449.6,green_algae,unspecified,9295,,database_category_screened_not_source_audited
+367992,34813,Receptaculites,450.2,449.6,green_algae,unspecified,9295,,database_category_screened_not_source_audited
+368259,3251,Hedstroemia,458.2,454.0,green_algae,unspecified,118,,database_category_screened_not_source_audited
+368260,3251,Solenopora spongioides,458.2,454.0,red_algae,unspecified,118,,database_category_screened_not_source_audited
+368300,34844,Solenopora,458.2,453.0,red_algae,unspecified,118,,database_category_screened_not_source_audited
+368308,34844,Vermiporella,458.2,453.0,green_algae,unspecified,118,,database_category_screened_not_source_audited
+368310,34843,Solenopora,458.2,453.0,red_algae,unspecified,118,,database_category_screened_not_source_audited
+368312,34843,Vermiporella,458.2,453.0,green_algae,unspecified,118,,database_category_screened_not_source_audited
+368882,34895,Dasycladacea,451.0,450.2,green_algae,unspecified,9363,,database_category_screened_not_source_audited
+393076,37810,Vermiporella,452.8,451.8,green_algae,unspecified,10070,,database_category_screened_not_source_audited
+393175,37833,Tetradium approximatum,449.6,445.5,red_algae,unspecified,6800,,database_category_screened_not_source_audited
+395309,38037,Leiosphaeridia,453.9,452.8,green_algae,unspecified,10070,,database_category_screened_not_source_audited
+395323,38038,Vermiporella,451.8,450.5,green_algae,unspecified,10070,,database_category_screened_not_source_audited
+395325,38038,Cyclocrinites,451.8,450.5,green_algae,unspecified,10070,,database_category_screened_not_source_audited
+459758,45281,Tetradium,471.3,457.3,red_algae,unspecified,11775,,database_category_screened_not_source_audited
+459759,45281,Parachaetetes,471.3,457.3,red_algae,unspecified,11775,,database_category_screened_not_source_audited
+459798,45286,Receptaculites,453.8,450.2,green_algae,unspecified,11779,,database_category_screened_not_source_audited
+486641,48753,Solenopora,453.8,451.0,red_algae,unspecified,9838,,database_category_screened_not_source_audited
+486646,48754,Solenopora,453.8,451.0,red_algae,unspecified,9838,,database_category_screened_not_source_audited
+486650,48755,Solenopora,453.8,451.0,red_algae,unspecified,9838,,database_category_screened_not_source_audited
+486674,48759,Solenopora,453.8,451.0,red_algae,unspecified,9838,,database_category_screened_not_source_audited
+538539,55999,Prismostylus fibratum,457.3,449.6,red_algae,unspecified,15105,,database_category_screened_not_source_audited
+538540,55999,Tetradium,457.3,449.6,red_algae,unspecified,15105,,database_category_screened_not_source_audited
+538541,55999,Tetradium,457.3,449.6,red_algae,unspecified,15105,,database_category_screened_not_source_audited
+538646,56000,Poikilofusa,449.6,445.5,acritarchs_prasinophytes,unspecified,15106,,database_category_screened_not_source_audited
+538647,56000,Poikilofusa spinata,449.6,445.5,acritarchs_prasinophytes,unspecified,15106,,database_category_screened_not_source_audited
+585785,61730,Tetradium,458.2,449.5,red_algae,unspecified,17785,,database_category_screened_not_source_audited
+597155,63297,Solenopora,471.3,457.3,red_algae,unspecified,18202,,database_category_screened_not_source_audited
+597167,63297,Solenopora,471.3,457.3,red_algae,unspecified,18202,,database_category_screened_not_source_audited
+597189,63307,Solenopora,471.3,457.3,red_algae,unspecified,18204,,database_category_screened_not_source_audited
+672319,72452,Tetradium,449.6,445.5,red_algae,unspecified,24429,,database_category_screened_not_source_audited
+672322,72453,Tetradium,449.6,445.5,red_algae,unspecified,24429,,database_category_screened_not_source_audited
+674090,72688,Tetradium,449.6,445.5,red_algae,unspecified,24429,,database_category_screened_not_source_audited
+674133,72692,Tetradium,449.6,445.5,red_algae,unspecified,24429,,database_category_screened_not_source_audited
+677722,73115,Solenopora,449.6,445.5,red_algae,unspecified,24429,,database_category_screened_not_source_audited
+710846,76089,Prismostylus fibratum,453.8,451.0,red_algae,unspecified,25788,,database_category_screened_not_source_audited
+710911,76090,Prismostylus fibratum,453.8,451.0,red_algae,unspecified,25788,,database_category_screened_not_source_audited
+711253,76125,Cyclocrinites pyriformis,458.2,449.5,green_algae,unspecified,25807,,database_category_screened_not_source_audited
+747064,80004,Halysis,468.0,458.2,red_algae,unspecified,26896,,database_category_screened_not_source_audited
+749600,80177,Contexta binata,458.2,452.8,green_algae,unspecified,26962,,database_category_screened_not_source_audited
+749603,80177,Vermiporella,458.2,452.8,green_algae,unspecified,26962,,database_category_screened_not_source_audited
+749604,80177,Vermiporella,458.2,452.8,green_algae,unspecified,26962,,database_category_screened_not_source_audited
+749605,80177,Palaeoporella,458.2,452.8,green_algae,unspecified,26962,,database_category_screened_not_source_audited
+749606,80177,Moniliporella,458.2,452.8,green_algae,unspecified,26962,,database_category_screened_not_source_audited
+749607,80177,Coelosphaeridium,458.2,452.8,green_algae,unspecified,26962,,database_category_screened_not_source_audited
+749608,80177,Apidium,458.2,452.8,green_algae,unspecified,26962,,database_category_screened_not_source_audited
+749997,80224,Apidium,458.2,452.8,green_algae,unspecified,26964,,database_category_screened_not_source_audited
+749998,80224,Cyclocrinites nikitini,458.2,452.8,green_algae,unspecified,26964,,database_category_screened_not_source_audited
+750002,80224,Contexta binata,458.2,452.8,green_algae,unspecified,26964,,database_category_screened_not_source_audited
+753606,45282,Solenopora,458.2,449.5,red_algae,unspecified,27138,,database_category_screened_not_source_audited
+754866,45283,Solenopora,471.3,457.3,red_algae,unspecified,27160,,database_category_screened_not_source_audited
+754867,45283,Hedstroemia,471.3,457.3,green_algae,unspecified,27160,,database_category_screened_not_source_audited
+754868,45283,Halysis,471.3,457.3,red_algae,unspecified,27160,,database_category_screened_not_source_audited
+791927,85803,Tetradium,457.3,451.0,red_algae,unspecified,28962,,database_category_screened_not_source_audited
+791944,85805,Solenopora,457.3,451.0,red_algae,unspecified,28962,,database_category_screened_not_source_audited
+793234,86057,Tetradium,457.3,451.0,red_algae,unspecified,28962,,database_category_screened_not_source_audited
+793446,86088,Tetradium,457.3,451.0,red_algae,unspecified,28962,,database_category_screened_not_source_audited
+793462,86091,Tetradium,457.3,451.0,red_algae,unspecified,28962,,database_category_screened_not_source_audited
+793472,86093,Tetradium,457.3,451.0,red_algae,unspecified,28962,,database_category_screened_not_source_audited
+793484,86095,Tetradium,457.3,451.0,red_algae,unspecified,28962,,database_category_screened_not_source_audited
+793644,86110,Tetradium,457.3,451.0,red_algae,unspecified,28962,,database_category_screened_not_source_audited
+793692,86113,Tetradium,457.3,451.0,red_algae,unspecified,28962,,database_category_screened_not_source_audited
+793916,86135,Tetradium,457.3,451.0,red_algae,unspecified,28962,,database_category_screened_not_source_audited
+793937,86137,Tetradium,457.3,451.0,red_algae,unspecified,28962,,database_category_screened_not_source_audited
+805214,87737,Tetradium,457.3,449.6,red_algae,unspecified,29528,,database_category_screened_not_source_audited
+914890,103907,Receptaculites,486.85,457.3,green_algae,unspecified,25414,,database_category_screened_not_source_audited
+917398,104492,Receptaculites,457.3,451.0,green_algae,unspecified,25411,,database_category_screened_not_source_audited
+918724,104241,Ischadites mammillaris,471.3,457.3,green_algae,unspecified,18349,,database_category_screened_not_source_audited
+998753,2696,Anomaloides reticulatus,452.3,449.0,green_algae,unspecified,38645,,database_category_screened_not_source_audited
+1137549,144636,Solenopora,452.8,445.2,red_algae,unspecified,46799,,database_category_screened_not_source_audited
+1219072,159348,Palaeoporella,449.5,445.2,green_algae,unspecified,52100,,database_category_screened_not_source_audited
+1240800,163485,Vermiporella,449.5,445.2,green_algae,unspecified,53321,,database_category_screened_not_source_audited
+1244058,89024,Receptaculites,457.3,449.6,green_algae,unspecified,15774,,database_category_screened_not_source_audited
+1276256,169387,Cyclocrinites,449.6,445.5,green_algae,unspecified,36817,,database_category_screened_not_source_audited
+1290090,171705,Solenopora,471.3,457.3,red_algae,unspecified,15149,,database_category_screened_not_source_audited
+1291544,172352,Solenopora,471.3,457.3,red_algae,unspecified,15149,,database_category_screened_not_source_audited
+1297558,173082,Tetradium huronense,449.6,445.5,red_algae,unspecified,11615,,database_category_screened_not_source_audited
+1297601,173085,Tetradium huronense,449.6,445.5,red_algae,unspecified,11615,,database_category_screened_not_source_audited
+1297727,173116,Tetradium huronense,449.6,445.5,red_algae,unspecified,11615,,database_category_screened_not_source_audited
+1297775,173135,Tetradium huronense,449.6,445.5,red_algae,unspecified,11615,,database_category_screened_not_source_audited
+1297795,173141,Tetradium huronense,449.6,445.5,red_algae,unspecified,11615,,database_category_screened_not_source_audited
+1297802,173148,Tetradium huronense,449.6,445.5,red_algae,unspecified,11615,,database_category_screened_not_source_audited
+1298745,173320,Tetradium huronense,449.6,445.5,red_algae,unspecified,11615,,database_category_screened_not_source_audited
+1299027,173372,Kordephyton,452.8,445.2,red_algae,unspecified,56450,,database_category_screened_not_source_audited
+1299029,173372,Epiphyton,452.8,445.2,red_algae,unspecified,56450,,database_category_screened_not_source_audited
+1299030,173372,Tetradium,452.8,445.2,red_algae,unspecified,56450,,database_category_screened_not_source_audited
+1299031,173372,Dasyporella,452.8,445.2,green_algae,unspecified,56450,,database_category_screened_not_source_audited
+1299032,173372,Vermiporella,452.8,445.2,green_algae,unspecified,56450,,database_category_screened_not_source_audited
+1302351,87962,Tetradium,457.3,449.6,red_algae,unspecified,29528,,database_category_screened_not_source_audited
+1303471,166052,Receptaculites poelmi,452.8,451.8,green_algae,unspecified,56764,,database_category_screened_not_source_audited
+1306449,168766,Solenopora spongioides,452.8,451.8,red_algae,unspecified,57187,,database_category_screened_not_source_audited
+1306450,168713,Solenopora spongioides,452.8,451.8,red_algae,unspecified,57187,,database_category_screened_not_source_audited
+1310598,175904,Solenopora,471.3,457.3,red_algae,unspecified,57648,,database_category_screened_not_source_audited
+1310606,175905,Solenopora,471.3,457.3,red_algae,unspecified,57648,,database_category_screened_not_source_audited
+1340609,181091,Prismostylus fibratum,457.3,453.8,red_algae,unspecified,15920,,database_category_screened_not_source_audited
+1359076,174157,Tetradium,457.3,453.8,red_algae,unspecified,16223,,database_category_screened_not_source_audited
+1359077,174157,Tetradium,457.3,453.8,red_algae,unspecified,16223,,database_category_screened_not_source_audited
+1359078,174157,Prismostylus fibratum,457.3,453.8,red_algae,unspecified,16223,,database_category_screened_not_source_audited
+1359079,174157,Tetradium,457.3,453.8,red_algae,unspecified,16223,,database_category_screened_not_source_audited
+1361023,185002,Fisherites reticulatus,453.8,451.0,green_algae,unspecified,62037,,database_category_screened_not_source_audited
+1361917,185260,Fisherites reticulatus,453.8,451.0,green_algae,unspecified,62037,,database_category_screened_not_source_audited
+1361944,185265,Fisherites reticulatus,453.8,451.0,green_algae,unspecified,62037,,database_category_screened_not_source_audited
+1361972,185268,Fisherites reticulatus,453.8,451.0,green_algae,unspecified,62037,,database_category_screened_not_source_audited
+1362992,185478,Fisherites reticulatus,457.3,453.8,green_algae,unspecified,62037,,database_category_screened_not_source_audited
+1363007,185480,Fisherites reticulatus,457.3,453.8,green_algae,unspecified,62037,,database_category_screened_not_source_audited
+1363024,185481,Fisherites reticulatus,457.3,453.8,green_algae,unspecified,62037,,database_category_screened_not_source_audited
+1363037,185484,Fisherites reticulatus,457.3,453.8,green_algae,unspecified,62037,,database_category_screened_not_source_audited
+1363081,185487,Fisherites reticulatus,452.8,445.2,green_algae,unspecified,62184,,database_category_screened_not_source_audited
+1379313,188769,Receptaculites,449.6,445.5,green_algae,unspecified,63386,,database_category_screened_not_source_audited
+1379333,188773,Receptaculites,449.6,445.5,green_algae,unspecified,63386,,database_category_screened_not_source_audited
+1381758,175234,Solenopora,471.3,457.3,red_algae,unspecified,63569,,database_category_screened_not_source_audited
+1381803,103298,Solenopora,471.3,457.3,red_algae,unspecified,63569,,database_category_screened_not_source_audited
+1389827,191093,Cyclocrinites porosus,458.0,452.8,green_algae,unspecified,67422,,database_category_screened_not_source_audited
+1389828,191093,Cyclocrinites spaskii,458.0,452.8,green_algae,unspecified,67422,,database_category_screened_not_source_audited
+1389830,191092,Coelosphaeridium,458.0,452.8,green_algae,unspecified,64425,,database_category_screened_not_source_audited
+1389831,191092,Cyclocrinites porosus,458.0,452.8,green_algae,unspecified,67422,,database_category_screened_not_source_audited
+1394736,192065,Coelosphaeridium,458.0,449.9,green_algae,unspecified,64628,,database_category_screened_not_source_audited
+1394737,192065,Cyclocrinites porosus,458.0,449.9,green_algae,unspecified,64628,,database_category_screened_not_source_audited
+1394739,192065,Mastopora concava,458.0,449.9,green_algae,unspecified,64628,,database_category_screened_not_source_audited
+1394740,192065,Vermiporella fragilis,458.0,449.9,green_algae,unspecified,64628,,database_category_screened_not_source_audited
+1396143,192339,Fisherites,453.8,450.2,green_algae,unspecified,65083,,database_category_screened_not_source_audited
+1400437,192984,Mastopora concava,452.8,449.9,green_algae,unspecified,65615,,database_category_screened_not_source_audited
+1400542,192989,Vermiporella,449.9,449.5,green_algae,unspecified,65615,,database_category_screened_not_source_audited
+1401890,2646,Tetradium,452.3,449.0,red_algae,unspecified,76,,database_category_screened_not_source_audited
+1402846,193514,Mastopora concava,458.0,452.8,green_algae,unspecified,65746,,database_category_screened_not_source_audited
+1402854,193515,Mastopora concava,452.8,449.9,green_algae,unspecified,65746,,database_category_screened_not_source_audited
+1402882,193516,Mastopora concava,453.9,452.8,green_algae,unspecified,65746,,database_category_screened_not_source_audited
+1402916,193518,Mastopora concava,458.0,452.8,green_algae,unspecified,65746,,database_category_screened_not_source_audited
+1402936,193519,Mastopora concava,452.8,449.9,green_algae,unspecified,65746,,database_category_screened_not_source_audited
+1402948,193520,Mastopora concava,453.9,452.8,green_algae,unspecified,65746,,database_category_screened_not_source_audited
+1402965,193521,Mastopora concava,458.0,452.8,green_algae,unspecified,65746,,database_category_screened_not_source_audited
+1402988,193522,Mastopora concava,452.8,449.9,green_algae,unspecified,65746,,database_category_screened_not_source_audited
+1403550,193695,Kazakhstanelia,458.2,449.5,plantae_unplaced_pbdb_tree,unspecified,65791,L3O-003,excluded_non_embryophyte_source_review
+1414896,195554,Mastopora concava,453.9,452.8,green_algae,unspecified,66560,,database_category_screened_not_source_audited
+1414908,195554,Cyclocrinites,453.9,452.8,green_algae,unspecified,67422,,database_category_screened_not_source_audited
+1415436,195642,Vermiporella,449.5,445.2,green_algae,unspecified,66589,,database_category_screened_not_source_audited
+1415437,195642,Dasyporella,449.5,445.2,green_algae,unspecified,66589,,database_category_screened_not_source_audited
+1415440,195641,Vermiporella,449.5,445.2,green_algae,unspecified,66589,,database_category_screened_not_source_audited
+1415441,195641,Dasyporella,449.5,445.2,green_algae,unspecified,66589,,database_category_screened_not_source_audited
+1415485,195652,Cyclocrinites,451.8,450.5,green_algae,unspecified,66589,,database_category_screened_not_source_audited
+1415487,195651,Cyclocrinites,451.8,450.5,green_algae,unspecified,66589,,database_category_screened_not_source_audited
+1417463,196189,Receptaculitidae,471.3,458.2,green_algae,unspecified,66726,,database_category_screened_not_source_audited
+1421761,164447,Cyclocrinites pyriformis,457.3,449.6,green_algae,unspecified,44678,,database_category_screened_not_source_audited
+1422232,197475,Mastopora concava,452.8,449.9,green_algae,unspecified,67332,,database_category_screened_not_source_audited
+1422257,197476,Mastopora concava,452.8,449.9,green_algae,unspecified,67332,,database_category_screened_not_source_audited
+1422282,197479,Mastopora concava,452.8,449.9,green_algae,unspecified,67332,,database_category_screened_not_source_audited
+1422291,197480,Mastopora concava,452.8,449.9,green_algae,unspecified,67332,,database_category_screened_not_source_audited
+1422310,197481,Mastopora concava,452.8,449.9,green_algae,unspecified,67332,,database_category_screened_not_source_audited
+1422320,197482,Mastopora concava,458.0,452.8,green_algae,unspecified,67332,,database_category_screened_not_source_audited
+1422338,197483,Mastopora concava,452.8,449.9,green_algae,unspecified,67332,,database_category_screened_not_source_audited
+1422345,197485,Mastopora concava,452.8,449.9,green_algae,unspecified,67332,,database_category_screened_not_source_audited
+1422366,197486,Mastopora concava,452.8,449.9,green_algae,unspecified,67332,,database_category_screened_not_source_audited
+1422386,197488,Mastopora concava,452.8,449.9,green_algae,unspecified,67332,,database_category_screened_not_source_audited
+1422491,197514,Mastopora concava,452.8,449.9,green_algae,unspecified,67332,,database_category_screened_not_source_audited
+1422498,197515,Mastopora concava,452.8,449.9,green_algae,unspecified,67332,,database_category_screened_not_source_audited
+1422532,197520,Solenopora,453.9,452.8,red_algae,unspecified,67332,,database_category_screened_not_source_audited
+1422562,197530,Leiosphaeridia,453.9,452.8,green_algae,unspecified,67332,,database_category_screened_not_source_audited
+1459514,203704,Fucoides serra,469.4,458.2,algae_unspecified,unspecified,69815,,database_category_screened_not_source_audited
+1461591,203982,Fucoides serra,477.1,468.0,algae_unspecified,unspecified,69909,,database_category_screened_not_source_audited
+1470723,205386,Tetradium,458.2,452.8,red_algae,unspecified,70468,,database_category_screened_not_source_audited
+1484005,206485,Prismostylus fibratum,458.2,445.2,red_algae,unspecified,70896,,database_category_screened_not_source_audited
+1498873,208573,Ischadites mammillaris,471.3,457.3,green_algae,unspecified,72014,,database_category_screened_not_source_audited
+1515982,211602,Algae,452.8,445.2,algae_unspecified,unspecified,81860,,database_category_screened_not_source_audited
+1537693,215981,Tetradium,449.6,445.5,red_algae,unspecified,74464,,database_category_screened_not_source_audited
+1540002,216511,Algae,461.1,458.2,algae_unspecified,unspecified,74809,,database_category_screened_not_source_audited
+1541269,216847,Receptaculitidae,469.4,458.2,green_algae,unspecified,74981,,database_category_screened_not_source_audited
+1541270,216847,Calathida,469.4,458.2,green_algae,unspecified,74981,,database_category_screened_not_source_audited
+1554761,219335,Paleophyllum mazourkensis,457.3,449.6,red_algae,unspecified,76247,,database_category_screened_not_source_audited
+1554775,119486,Cyclocrinites,471.3,457.3,green_algae,unspecified,38344,,database_category_screened_not_source_audited
+1562047,220534,Angusticellularia,458.2,452.8,red_algae,unspecified,77078,,database_category_screened_not_source_audited
+1562048,220534,Hedstroemia,458.2,452.8,green_algae,unspecified,77078,,database_category_screened_not_source_audited
+1583174,211138,Algae,469.4,458.2,algae_unspecified,unspecified,78691,,database_category_screened_not_source_audited
+1599982,226105,Phacelophyton yushanensis,458.2,452.8,plant_unlinked_name,unspecified,81860,L3O-007,excluded_non_embryophyte_source_review
+1599983,226105,Proaulopora,458.2,452.8,plantae_unplaced_pbdb_tree,unspecified,81860,L3O-004,excluded_non_embryophyte_source_review
+1600018,226110,Proaulopora,452.8,445.2,plantae_unplaced_pbdb_tree,unspecified,81860,L3O-004,excluded_non_embryophyte_source_review
+1600020,226111,Proaulopora,452.8,445.2,plantae_unplaced_pbdb_tree,unspecified,81860,L3O-004,excluded_non_embryophyte_source_review
+1600024,211603,Phacelophyton yushanensis,469.4,458.2,plant_unlinked_name,unspecified,81860,L3O-007,excluded_non_embryophyte_source_review
+1600027,226115,Phacelophyton yushanensis,469.4,458.2,plant_unlinked_name,unspecified,81860,L3O-007,excluded_non_embryophyte_source_review
+1600155,226151,Proaulopora,458.2,452.8,plantae_unplaced_pbdb_tree,unspecified,81860,L3O-004,excluded_non_embryophyte_source_review
+1600156,226152,Proaulopora,458.2,452.8,plantae_unplaced_pbdb_tree,unspecified,81860,L3O-004,excluded_non_embryophyte_source_review
+1600157,226153,Proaulopora,458.2,452.8,plantae_unplaced_pbdb_tree,unspecified,81860,L3O-004,excluded_non_embryophyte_source_review
+1600159,226154,Proaulopora,458.2,452.8,plantae_unplaced_pbdb_tree,unspecified,81860,L3O-004,excluded_non_embryophyte_source_review
+1600160,226112,Proaulopora,458.2,452.8,plantae_unplaced_pbdb_tree,unspecified,81860,L3O-004,excluded_non_embryophyte_source_review
+1600161,226116,Zonotrichites lissaviensis,458.2,452.8,plantae_unplaced_pbdb_tree,unspecified,81860,L3O-005,excluded_non_embryophyte_source_review
+1600169,226107,Vermiporella,452.8,445.2,green_algae,unspecified,81860,,database_category_screened_not_source_audited
+1600170,226108,Solenopora,452.8,445.2,red_algae,unspecified,81860,,database_category_screened_not_source_audited
+1600172,211603,Halysis,469.4,458.2,red_algae,unspecified,81860,,database_category_screened_not_source_audited
+1600180,226116,Tetradium,458.2,452.8,red_algae,unspecified,81860,,database_category_screened_not_source_audited
+1600184,226157,Proaulopora,458.2,452.8,plantae_unplaced_pbdb_tree,unspecified,81860,L3O-004,excluded_non_embryophyte_source_review
+1600246,226179,Algae indet.,458.2,452.8,algae_unspecified,unspecified,81980,,database_category_screened_not_source_audited
+1600784,226285,Receptaculites,471.3,457.3,green_algae,unspecified,82029,,database_category_screened_not_source_audited
+1600789,226289,Receptaculites,471.3,457.3,green_algae,unspecified,82029,,database_category_screened_not_source_audited
+1600798,226293,Receptaculites,471.3,457.3,green_algae,unspecified,82029,,database_category_screened_not_source_audited
+1613691,228229,Algae,452.8,445.2,algae_unspecified,unspecified,83197,,database_category_screened_not_source_audited
+1626403,230215,Inocladus,469.4,458.2,green_algae,unspecified,84758,,database_category_screened_not_source_audited
+1626409,230215,Filisphaeridium,469.4,458.2,acritarchs_prasinophytes,unspecified,84758,,database_category_screened_not_source_audited
+1626410,230215,Leiosphaeridia,469.4,458.2,green_algae,unspecified,84758,,database_category_screened_not_source_audited
+1661249,235817,Medusaegraptus,452.8,449.9,green_algae,unspecified,88528,,database_category_screened_not_source_audited
+1661283,235818,Korilophyton,471.3,469.1,acritarchs_prasinophytes,unspecified,88528,,database_category_screened_not_source_audited
+1662372,235978,Dasyporella,452.8,445.2,green_algae,unspecified,89322,,database_category_screened_not_source_audited
+1662373,235978,Sinuatoporella,452.8,445.2,green_algae,unspecified,89322,,database_category_screened_not_source_audited
+1662374,235978,Vermiporella,452.8,445.2,green_algae,unspecified,89322,,database_category_screened_not_source_audited
+1662926,236049,Tetradium,452.3,449.0,red_algae,unspecified,89459,,database_category_screened_not_source_audited
+1679154,3872,Coelosphaeridium,459.3,445.2,green_algae,unspecified,227,,database_category_screened_not_source_audited
+1700461,240958,Chaetocladus,449.6,445.5,green_algae,unspecified,92235,,database_category_screened_not_source_audited
+1700462,240958,Archaeobatophora typa,449.6,445.5,green_algae,unspecified,92235,,database_category_screened_not_source_audited
+2067560,279517,Bythotrephis,469.4,458.2,plantae_unplaced_pbdb_tree,unspecified,95242,L3O-002,excluded_non_embryophyte_source_review
+2067724,279115,Alectorurus,459.7,450.1,plantae_unplaced_pbdb_tree,unspecified,95267,L3O-001,excluded_non_embryophyte_source_review
+2069867,113158,Paleophyllum,449.6,445.5,red_algae,unspecified,95656,,database_category_screened_not_source_audited
+2071342,279998,Vermiporella,452.8,445.2,green_algae,unspecified,95785,,database_category_screened_not_source_audited
+2071343,279998,Solenopora,452.8,445.2,red_algae,unspecified,95785,,database_category_screened_not_source_audited

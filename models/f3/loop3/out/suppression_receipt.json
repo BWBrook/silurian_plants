@@ -1,0 +1,28 @@
+{
+  "inputs": {
+    "data/macro/horizons_reviewed.csv": "2088c3274c4a91c57b113054660c4a6a14d30fca1a15da7bd96d5c3d4279e1ad",
+    "data/macro/effort_reviewed.csv": "d2ecfd0a80505e0ac3f22655bcf7635453b9bfc6bda86230315174f5c6e96ee7",
+    "data/macro/build_receipt.json": "43c5bde72e2352690f6a137d824c4b0242f08dab8d321493aef7e8a3a5613d3f",
+    "data/timescale.csv": "29c6cc4a68b1746d1a67c66623e5df30ac5dd316257b55ca5948c9854886f826",
+    "models/f3/loop3/analysis.py": "161edb7741eaf1644dba5216b15f7f6a412d29d0eabc3a8e7db92e6c14939f5a",
+    "models/f3/loop3/histories.py": "06f6b8f0ab1dcdcd7730444d8286b47ea38c30ee04a5e4149e3c965ebe0400f8",
+    "models/f3/loop3/endpoint.py": "e4a9d28ced03894ef59f38ebdc8586488413525f1b403503652bdd5f972b3594",
+    "models/f3/loop3/suppression_sensitivity.py": "77d26793932389cd30b8f3c383967234662dcbbdb91f22fcc633b11eb0acd43f"
+  },
+  "outputs": {
+    "models/f3/loop3/out/suppression_sensitivity.csv": "f7a21f6e4dda5c7e6d0f0b6fd29fb440ae5968cde1aeca187e9e2ceb7c51e0df"
+  },
+  "breaks_ma": [
+    419.62,
+    426.7,
+    432.9
+  ],
+  "older_multipliers": [
+    1.0,
+    0.5,
+    0.1,
+    0.01
+  ],
+  "rows": 144,
+  "scope": "retrospective complete sensitivity grid; not fitted or selected against clock ages"
+}

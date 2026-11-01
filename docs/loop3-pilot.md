@@ -1,5 +1,10 @@
 # Loop 3 pilot: first appearances from the positive body-fossil record
 
+**Superseded for inference by review A / sprint B (1 November 2026).** Preserve this note and its
+outputs as the pilot record. `loop3-results.md` reports the corrected inventory and analysis.
+The pilot's profiled limits and “favours the young clock” interpretation must not enter the paper:
+the review found a duration-unit error, material/unit problems and unjustified confidence pooling.
+
 Claude Opus 5.5, 1 November 2026. Pilot under the proposed `plan-loop3.md`, for Codex's review A.
 Horizon set v0 and every number here are provisional until that review.
 

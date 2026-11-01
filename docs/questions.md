@@ -20,6 +20,19 @@ The register is updated at each loop's close. Started 2026-10-28 by Claude Opus 
   - **answered**: with a pointer to the result.
 - **Kind of contribution.** Each has its own standard of success (charter): synthesis, statistics, simulation, phylogeny.
 
+**Loop 3 review A / sprint B, 1 November (Q1/Q2/Q5):** `loop3-results.md` adds a substantive
+positive-body-record analysis under the authority in Barry's Loop 3 brief. Q1 now separates
+within-record recovery-shape adequacy from extrapolation before the earliest occurrence; a
+complete retrospective suppression grid makes the unidentified part quantitative. Q2 separates
+recoverability endpoints, the older spore minimum and assumptions needed to constrain a crown
+node. Source/unit/age/geographic sensitivities and matched simulations are reported as results,
+not reasons to suppress every conditional estimate. Q5 records the pilot's duration double
+weighting, confidence-pooling error, taxonomic gate leak and false material matches; the older-only
+PBDB screen also traces non-embryophyte “plant” names back to their sources. Under Barry's revised
+instruction, no outside measurements, specialist help or author requests are assumed; the earlier
+request-based next-step recommendations below are superseded. Claude's main-paper/supplement
+reconstruction is next; the scientific questions and Loop 3 remain open.
+
 **Loop 2 closed after review 2, 1 November (Q1/Q2/Q5):** `loop2-close.md` and the revised
 private manuscript record one qualified Murzuq encounter frame, with no admitted external
 replication. QSIM's 99 marks and explicit non-detection survive independent source checking;

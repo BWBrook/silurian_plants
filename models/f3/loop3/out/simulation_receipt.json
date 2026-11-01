@@ -1,0 +1,40 @@
+{
+  "root_seed": 20261101,
+  "n_reps_per_cell": 3000,
+  "confidence": 0.95,
+  "conditioning": "fixed n; no empirical calibration claim",
+  "delay_adjustment": "a fixed lag shifts both a finite recoverability bound and its reported target domain; endpoint status and claim frequency remain those of the recoverability calculation",
+  "truth_ages_ma": [
+    432.0,
+    445.0,
+    458.2
+  ],
+  "history_names": [
+    "flat",
+    "decline25",
+    "decline10",
+    "pbdb_all",
+    "pbdb_plant_excluded",
+    "pbdb_excluded_decline10"
+  ],
+  "observed_locality_age_counts": {
+    "B0": 75,
+    "B1": 70,
+    "B2": 48
+  },
+  "inputs": {
+    "data/timescale.csv": "29c6cc4a68b1746d1a67c66623e5df30ac5dd316257b55ca5948c9854886f826",
+    "data/macro/build_receipt.json": "43c5bde72e2352690f6a137d824c4b0242f08dab8d321493aef7e8a3a5613d3f",
+    "data/macro/horizons_reviewed.csv": "2088c3274c4a91c57b113054660c4a6a14d30fca1a15da7bd96d5c3d4279e1ad",
+    "data/macro/effort_reviewed.csv": "d2ecfd0a80505e0ac3f22655bcf7635453b9bfc6bda86230315174f5c6e96ee7",
+    "models/f3/loop3/endpoint.py": "e4a9d28ced03894ef59f38ebdc8586488413525f1b403503652bdd5f972b3594",
+    "models/f3/loop3/histories.py": "06f6b8f0ab1dcdcd7730444d8286b47ea38c30ee04a5e4149e3c965ebe0400f8",
+    "models/f3/loop3/simulation.py": "2f1ca87328d79719dc4993e39bc90dc2bba5565a6ffcb6c0426fd6e93ed5640c"
+  },
+  "outputs": {
+    "models/f3/loop3/out/simulation_results.csv": "b8734590d9e4e599dad7255324b77c5a8ef1aa551aa7c1ffa8019cde1cc26b6c"
+  },
+  "cells": 144,
+  "numpy": "2.5.4",
+  "pandas": "3.1.0"
+}

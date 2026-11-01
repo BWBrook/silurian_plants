@@ -1,0 +1,412 @@
+unit_id,min_ma,max_ma,region,member_ids,n_members,category,reading
+"AU|maradana shale|-33.2,148.7|413.02|419.62",413.02,419.62,Gondwana-Australia-Antarctica,pbdb:24907,1,B0,main
+"Argentina|chica de zonda range, san juan|419.62|422.7",419.62,422.7,Gondwana-South-America,tail:M-rinconada,1,B0,main
+Australia|frenchmans spur / thomson river type-material district|393.47|413.02,393.47,413.02,Gondwana-Australia-Antarctica,tail:M-wilson-creek,1,B0,main
+"Australia|ghin ghin road, yea|393.47|422.7",393.47,422.7,Gondwana-Australia-Antarctica,tail:M-ghin-ghin-b2,1,B0,main
+"Australia|ghin ghin road, yea|393.47|426.7",393.47,426.7,Gondwana-Australia-Antarctica,tail:M-ghin-ghin,1,B0,main
+"Australia|limestone road, brackley's (barkley's) cutting, yea; loc. 4 (= h4) of garratt's 1978 map; the national heritage place flora fossil site|393.47|426.7",393.47,426.7,Gondwana-Australia-Antarctica,tail:M-limestone-road,1,B0,main
+"BE|bois d'ausse sandstone|50.5,5.7|413.02|419.62",413.02,419.62,Avalonia,pbdb:11722,1,B0,main
+"BE|burnotien|50.6,4.1|399.5|413.02",399.5,413.02,Avalonia,pbdb:23200;pbdb:23202,2,B0,main
+"BE|grès de wiheries|50.4,3.8|410.62|413.02",410.62,413.02,Avalonia,pbdb:22860;pbdb:23197,2,B0,main
+"BY||53.2,30.8|393.47|399.5",393.47,399.5,Baltica,pbdb:232956,1,B0,main
+"Bolivia|c. 500 m ne of negra muerta farm, c. 30 km ne of tarija, bolivia|422.7|426.7",422.7,426.7,Gondwana-South-America,tail:M-bolivia-caledonica,1,B0,main
+"CA|bathurst island|75.8,-98.4|410.62|413.02",410.62,413.02,Laurentia,pbdb:11421;pbdb:11425,2,B0,main
+"CA|battery point|48.6,-64.3|393.47|410.62",393.47,410.62,Laurentia,pbdb:29001;pbdb:31004,2,B0,main
+"CA|battery point|48.8,-64.3|393.47|410.62",393.47,410.62,Laurentia,pbdb:26026;pbdb:26547;pbdb:28924;pbdb:28997;pbdb:29002;pbdb:29003;pbdb:29026;pbdb:31023;pbdb:31212,9,B0,main
+"CA|battery point|48.8,-64.3|399.5|410.62",399.5,410.62,Laurentia,pbdb:203163,1,B0,main
+"CA|battery point|48.8,-64.4|393.47|410.62",393.47,410.62,Laurentia,pbdb:28968;pbdb:28971;pbdb:31002;pbdb:31003;pbdb:31213;pbdb:31215,6,B0,main
+"CA|battery point|48.8,-64.5|393.47|410.62",393.47,410.62,Laurentia,pbdb:28950;pbdb:28969;pbdb:28996;pbdb:28998;pbdb:29029;pbdb:31007;pbdb:31010;pbdb:31011;pbdb:31027,9,B0,main
+"CA|battery point|48.9,-64.4|393.47|410.62",393.47,410.62,Laurentia,pbdb:31214,1,B0,main
+"CA|williamsville|42.9,-78.9|419.62|422.7",419.62,422.7,Laurentia,pbdb:53825;pbdb:53830,2,B0,main
+"CA|york river|48.6,-64.3|393.47|410.62",393.47,410.62,Laurentia,pbdb:31216,1,B0,main
+"CA|york river|48.8,-64.4|393.47|410.62",393.47,410.62,Laurentia,pbdb:29020;pbdb:31005,2,B0,main
+"CN|posongchong|23.3,104.2|410.62|413.02",410.62,413.02,South-China,pbdb:10891,1,B0,main
+"CN|posongchong|23.3,104.3|410.62|413.02",410.62,413.02,South-China,pbdb:10896,1,B0,main
+"CN|xiemisitai|46.8,85.6|419.62|422.7",419.62,422.7,Tarim,pbdb:278439,1,B0,main
+"CN|xujiachong (also called longhuashan)|26.0,104.0|393.47|410.62",393.47,410.62,South-China,pbdb:10941,1,B0,main
+"CZ|lochkov|49.9,14.2|413.02|419.62",413.02,419.62,peri-Gondwana-Europe,pbdb:13895,1,B0,main
+"CZ|pozary|49.5,13.5|419.62|422.7",419.62,422.7,peri-Gondwana-Europe,pbdb:14131,1,B0,main
+"CZ|pozary|49.9,14.0|419.62|422.7",419.62,422.7,peri-Gondwana-Europe,pbdb:14043,1,B0,main
+"CZ|pozary|50.0,12.9|419.62|422.7",419.62,422.7,peri-Gondwana-Europe,pbdb:14045,1,B0,main
+"CZ|pridoli schichten|50.0,14.3|419.62|422.7",419.62,422.7,peri-Gondwana-Europe,pbdb:52698,1,B0,main
+"CZ||50.0,14.3|419.62|422.7",419.62,422.7,peri-Gondwana-Europe,pbdb:53599,1,B0,main
+"Canada|us383 (=us600), polar bear pass region, bathurst island|419.62|425.0",419.62,425.0,Laurentia,tail:M-bathurst-us383,1,B0,main
+"Canada|us384, polar bear pass region, bathurst island|419.62|425.0",419.62,425.0,Laurentia,tail:M-bathurst-us384,1,B0,main
+"Canada|us385 (=us601), polar bear pass region, bathurst island|419.62|425.0",419.62,425.0,Laurentia,tail:M-bathurst-us385,1,B0,main
+"Canada|us688, polar bear pass region, bathurst island|419.62|425.0",419.62,425.0,Laurentia,tail:M-bathurst-us688,1,B0,main
+"China|mangkelu ii section, wutubulake village, hoboksar, west junggar|419.62|422.7",419.62,422.7,Kazakhstania,tail:M-mangkelu-ii,1,B0,main
+"China|qujing, northeastern yunnan|419.62|422.7",419.62,422.7,South-China,tail:M-qujingense,1,B0,main
+China|west junggar|419.62|422.7,419.62,422.7,Kazakhstania,tail:M-aberlemnia-junggaria,1,B0,main
+"Czech Republic|karlštejn, ve spáleném, near house 132|419.62|422.7",419.62,422.7,peri-Gondwana-Europe,tail:M-baragwanathia-karlstejn,1,B0,main
+"Czech Republic|kosov quarry, prague basin|419.62|422.7",419.62,422.7,peri-Gondwana-Europe,tail:M-bohemica,1,B0,main
+"Czech Republic|loděnice, špičatý vrch–barrandovy jámy|430.6|432.9",430.6,432.9,peri-Gondwana-Europe,tail:M-barrandei,1,B0,main
+"DE|hunsrück slate|49.8,7.4|399.5|410.62",399.5,410.62,multiple,pbdb:26904,1,B0,main
+"DE|hunsrück slate|49.9,7.5|399.5|410.62",399.5,410.62,multiple,pbdb:26903,1,B0,main
+"DE|wahnbach|50.9,7.3|410.62|413.02",410.62,413.02,multiple,pbdb:232143,1,B0,main
+"DE||50.2,7.4|399.5|410.62",399.5,410.62,multiple,pbdb:27049;pbdb:27129,2,B0,main
+"Ireland|borrisnoe mountain, devil’s bit range, county tipperary|426.7|430.6",426.7,430.6,Avalonia,tail:M-borrisnoe,1,B0,main
+"KZ|aigyrzhal'skaya suite|47.0,79.0|393.47|413.02",393.47,413.02,Kazakhstania,pbdb:32851,1,B0,main
+"KZ|tokrau fm|47.5,76.0|419.62|422.7",419.62,422.7,Kazakhstania,pbdb:53609;pbdb:53610;pbdb:53656,3,B0,main
+"LY||30.0,11.0|419.62|422.7",419.62,422.7,Gondwana-North-Africa-Arabia,pbdb:53669,1,B0,main
+"Norway|red bay series brook section, spitsbergen|413.02|419.62",413.02,419.62,Laurentia,tail:M-svalbard,1,B0,main
+"PL|winnica mudstone complex|50.9,21.1|419.62|422.7",419.62,422.7,multiple,pbdb:52667,1,B0,main
+"RU|pridorozhnaya|54.5,89.9|399.5|410.62",399.5,410.62,multiple,pbdb:238400,1,B0,main
+"RU|salairka horizon|54.3,85.9|399.5|410.62",399.5,410.62,multiple,pbdb:35709,1,B0,main
+"RU|shanda horizon|54.3,85.9|387.95|399.5",387.95,399.5,multiple,pbdb:35721,1,B0,main
+"UA|rashkovskie beds|48.5,26.3|419.62|422.7",419.62,422.7,Baltica,pbdb:52702,1,B0,main
+"UA|skala|49.6,23.9|419.62|422.7",419.62,422.7,Baltica,pbdb:13873,1,B0,main
+"UK|dryden flags|57.3,-2.8|410.62|413.02",410.62,413.02,Laurentia,pbdb:10721,1,B0,main
+"UK|dundee flagstone|56.0,-2.0|413.02|419.62",413.02,419.62,Laurentia,pbdb:10705,1,B0,main
+"UK|dundee|56.7,-2.8|413.02|419.62",413.02,419.62,Laurentia,pbdb:26755;pbdb:26757,2,B0,main
+"UK|rushall|52.0,-2.0|419.62|422.7",419.62,422.7,Avalonia,pbdb:10706,1,B0,main
+"UK|senni|51.9,-3.6|410.62|413.02",410.62,413.02,multiple,pbdb:238752,1,B0,main
+"UK|st. maughans|52.0,-2.0|413.02|419.62",413.02,419.62,Avalonia,pbdb:10679,1,B0,main
+"UK|strathmore|55.0,-4.0|393.47|410.62",393.47,410.62,Laurentia,pbdb:10719,1,B0,main
+"UK|strathmore|56.2,-4.2|393.47|410.62",393.47,410.62,Laurentia,pbdb:11513,1,B0,main
+"US|beartooth butte|44.9,-108.1|393.47|410.62",393.47,410.62,Laurentia,pbdb:29294,1,B0,main
+"US|beartooth butte|45.0,-109.6|393.47|410.62",393.47,410.62,Laurentia,pbdb:26176;pbdb:29292;pbdb:31000,3,B0,main
+"US|bertie|42.9,-75.1|419.62|422.7",419.62,422.7,Laurentia,pbdb:20664,1,B0,main
+"US|bertie|43.5,-74.9|419.62|422.7",419.62,422.7,Laurentia,pbdb:26087,1,B0,main
+"US|fiddlers green|43.0,-75.0|419.62|422.7",419.62,422.7,Laurentia,pbdb:53827,1,B0,main
+"US|trout valley|46.1,-68.6|387.95|399.5",387.95,399.5,Laurentia,pbdb:10614;pbdb:10617,2,B0,main
+"US|williamsville|42.9,-78.9|419.62|422.7",419.62,422.7,Laurentia,pbdb:53831,1,B0,main
+"US|williamsville|43.0,-78.7|419.62|422.7",419.62,422.7,Laurentia,pbdb:53837,1,B0,main
+"US||43.2,-78.6|422.7|432.9",422.7,432.9,Laurentia,pbdb:53832,1,B0,main
+"United Kingdom|capel horeb / halfway quarry, powys|422.7|425.0",422.7,425.0,Avalonia,tail:M-capel-horeb-ludlow,1,B0,main
+United Kingdom|welsh borderland; exact original site unresolved|413.02|419.62,413.02,419.62,Avalonia,tail:M-lang-tracheid-axis,1,B0,main
+"Vietnam|xóm chè quarry, northern vietnam|419.62|422.7",419.62,422.7,South-China,tail:M-van-canh,1,B0,main
+pbdb:27182|413.02|419.62,413.02,419.62,unknown,pbdb:27182,1,B0,main
+"AU|maradana shale|-33.2,148.7|413.02|419.62",413.02,419.62,Gondwana-Australia-Antarctica,pbdb:24907,1,B1,main
+"Argentina|chica de zonda range, san juan|419.62|422.7",419.62,422.7,Gondwana-South-America,tail:M-rinconada,1,B1,main
+Australia|frenchmans spur / thomson river type-material district|393.47|413.02,393.47,413.02,Gondwana-Australia-Antarctica,tail:M-wilson-creek,1,B1,main
+"Australia|ghin ghin road, yea|393.47|422.7",393.47,422.7,Gondwana-Australia-Antarctica,tail:M-ghin-ghin-b2,1,B1,main
+"Australia|ghin ghin road, yea|393.47|426.7",393.47,426.7,Gondwana-Australia-Antarctica,tail:M-ghin-ghin,1,B1,main
+"Australia|limestone road, brackley's (barkley's) cutting, yea; loc. 4 (= h4) of garratt's 1978 map; the national heritage place flora fossil site|393.47|426.7",393.47,426.7,Gondwana-Australia-Antarctica,tail:M-limestone-road,1,B1,main
+"BE|bois d'ausse sandstone|50.5,5.7|413.02|419.62",413.02,419.62,Avalonia,pbdb:11722,1,B1,main
+"BE|burnotien|50.6,4.1|399.5|413.02",399.5,413.02,Avalonia,pbdb:23200;pbdb:23202,2,B1,main
+"BE|grès de wiheries|50.4,3.8|410.62|413.02",410.62,413.02,Avalonia,pbdb:22860;pbdb:23197,2,B1,main
+"BY||53.2,30.8|393.47|399.5",393.47,399.5,Baltica,pbdb:232956,1,B1,main
+"Bolivia|c. 500 m ne of negra muerta farm, c. 30 km ne of tarija, bolivia|422.7|426.7",422.7,426.7,Gondwana-South-America,tail:M-bolivia-caledonica,1,B1,main
+"CA|bathurst island|75.8,-98.4|410.62|413.02",410.62,413.02,Laurentia,pbdb:11421;pbdb:11425,2,B1,main
+"CA|battery point|48.6,-64.3|393.47|410.62",393.47,410.62,Laurentia,pbdb:29001;pbdb:31004,2,B1,main
+"CA|battery point|48.8,-64.3|393.47|410.62",393.47,410.62,Laurentia,pbdb:26026;pbdb:26547;pbdb:28924;pbdb:28997;pbdb:29002;pbdb:29003;pbdb:29026;pbdb:31023;pbdb:31212,9,B1,main
+"CA|battery point|48.8,-64.3|399.5|410.62",399.5,410.62,Laurentia,pbdb:203163,1,B1,main
+"CA|battery point|48.8,-64.4|393.47|410.62",393.47,410.62,Laurentia,pbdb:28968;pbdb:28971;pbdb:31002;pbdb:31003;pbdb:31213;pbdb:31215,6,B1,main
+"CA|battery point|48.8,-64.5|393.47|410.62",393.47,410.62,Laurentia,pbdb:28950;pbdb:28969;pbdb:28996;pbdb:28998;pbdb:29029;pbdb:31007;pbdb:31010;pbdb:31011;pbdb:31027,9,B1,main
+"CA|battery point|48.9,-64.4|393.47|410.62",393.47,410.62,Laurentia,pbdb:31214,1,B1,main
+"CA|williamsville|42.9,-78.9|419.62|422.7",419.62,422.7,Laurentia,pbdb:53825,1,B1,main
+"CA|york river|48.6,-64.3|393.47|410.62",393.47,410.62,Laurentia,pbdb:31216,1,B1,main
+"CA|york river|48.8,-64.4|393.47|410.62",393.47,410.62,Laurentia,pbdb:29020;pbdb:31005,2,B1,main
+"CN|posongchong|23.3,104.2|410.62|413.02",410.62,413.02,South-China,pbdb:10891,1,B1,main
+"CN|posongchong|23.3,104.3|410.62|413.02",410.62,413.02,South-China,pbdb:10896,1,B1,main
+"CN|xiemisitai|46.8,85.6|419.62|422.7",419.62,422.7,Tarim,pbdb:278439,1,B1,main
+"CN|xujiachong (also called longhuashan)|26.0,104.0|393.47|410.62",393.47,410.62,South-China,pbdb:10941,1,B1,main
+"CZ|lochkov|49.9,14.2|413.02|419.62",413.02,419.62,peri-Gondwana-Europe,pbdb:13895,1,B1,main
+"CZ|pozary|49.5,13.5|419.62|422.7",419.62,422.7,peri-Gondwana-Europe,pbdb:14131,1,B1,main
+"CZ|pozary|49.9,14.0|419.62|422.7",419.62,422.7,peri-Gondwana-Europe,pbdb:14043,1,B1,main
+"CZ|pozary|50.0,12.9|419.62|422.7",419.62,422.7,peri-Gondwana-Europe,pbdb:14045,1,B1,main
+"CZ|pridoli schichten|50.0,14.3|419.62|422.7",419.62,422.7,peri-Gondwana-Europe,pbdb:52698,1,B1,main
+"Canada|us383 (=us600), polar bear pass region, bathurst island|419.62|425.0",419.62,425.0,Laurentia,tail:M-bathurst-us383,1,B1,main
+"Canada|us384, polar bear pass region, bathurst island|419.62|425.0",419.62,425.0,Laurentia,tail:M-bathurst-us384,1,B1,main
+"Canada|us385 (=us601), polar bear pass region, bathurst island|419.62|425.0",419.62,425.0,Laurentia,tail:M-bathurst-us385,1,B1,main
+"Canada|us688, polar bear pass region, bathurst island|419.62|425.0",419.62,425.0,Laurentia,tail:M-bathurst-us688,1,B1,main
+"China|mangkelu ii section, wutubulake village, hoboksar, west junggar|419.62|422.7",419.62,422.7,Kazakhstania,tail:M-mangkelu-ii,1,B1,main
+"China|qujing, northeastern yunnan|419.62|422.7",419.62,422.7,South-China,tail:M-qujingense,1,B1,main
+China|west junggar|419.62|422.7,419.62,422.7,Kazakhstania,tail:M-aberlemnia-junggaria,1,B1,main
+"Czech Republic|karlštejn, ve spáleném, near house 132|419.62|422.7",419.62,422.7,peri-Gondwana-Europe,tail:M-baragwanathia-karlstejn,1,B1,main
+"Czech Republic|kosov quarry, prague basin|419.62|422.7",419.62,422.7,peri-Gondwana-Europe,tail:M-bohemica,1,B1,main
+"Czech Republic|loděnice, špičatý vrch–barrandovy jámy|430.6|432.9",430.6,432.9,peri-Gondwana-Europe,tail:M-barrandei,1,B1,main
+"DE|hunsrück slate|49.8,7.4|399.5|410.62",399.5,410.62,multiple,pbdb:26904,1,B1,main
+"DE|wahnbach|50.9,7.3|410.62|413.02",410.62,413.02,multiple,pbdb:232143,1,B1,main
+"DE||50.2,7.4|399.5|410.62",399.5,410.62,multiple,pbdb:27049;pbdb:27129,2,B1,main
+"Ireland|borrisnoe mountain, devil’s bit range, county tipperary|426.7|430.6",426.7,430.6,Avalonia,tail:M-borrisnoe,1,B1,main
+"KZ|aigyrzhal'skaya suite|47.0,79.0|393.47|413.02",393.47,413.02,Kazakhstania,pbdb:32851,1,B1,main
+"KZ|tokrau fm|47.5,76.0|419.62|422.7",419.62,422.7,Kazakhstania,pbdb:53609;pbdb:53610;pbdb:53656,3,B1,main
+"LY||30.0,11.0|419.62|422.7",419.62,422.7,Gondwana-North-Africa-Arabia,pbdb:53669,1,B1,main
+"Norway|red bay series brook section, spitsbergen|413.02|419.62",413.02,419.62,Laurentia,tail:M-svalbard,1,B1,main
+"PL|winnica mudstone complex|50.9,21.1|419.62|422.7",419.62,422.7,multiple,pbdb:52667,1,B1,main
+"RU|pridorozhnaya|54.5,89.9|399.5|410.62",399.5,410.62,multiple,pbdb:238400,1,B1,main
+"RU|salairka horizon|54.3,85.9|399.5|410.62",399.5,410.62,multiple,pbdb:35709,1,B1,main
+"RU|shanda horizon|54.3,85.9|387.95|399.5",387.95,399.5,multiple,pbdb:35721,1,B1,main
+"UA|rashkovskie beds|48.5,26.3|419.62|422.7",419.62,422.7,Baltica,pbdb:52702,1,B1,main
+"UA|skala|49.6,23.9|419.62|422.7",419.62,422.7,Baltica,pbdb:13873,1,B1,main
+"UK|dryden flags|57.3,-2.8|410.62|413.02",410.62,413.02,Laurentia,pbdb:10721,1,B1,main
+"UK|dundee flagstone|56.0,-2.0|413.02|419.62",413.02,419.62,Laurentia,pbdb:10705,1,B1,main
+"UK|dundee|56.7,-2.8|413.02|419.62",413.02,419.62,Laurentia,pbdb:26755;pbdb:26757,2,B1,main
+"UK|rushall|52.0,-2.0|419.62|422.7",419.62,422.7,Avalonia,pbdb:10706,1,B1,main
+"UK|senni|51.9,-3.6|410.62|413.02",410.62,413.02,multiple,pbdb:238752,1,B1,main
+"UK|st. maughans|52.0,-2.0|413.02|419.62",413.02,419.62,Avalonia,pbdb:10679,1,B1,main
+"UK|strathmore|55.0,-4.0|393.47|410.62",393.47,410.62,Laurentia,pbdb:10719,1,B1,main
+"UK|strathmore|56.2,-4.2|393.47|410.62",393.47,410.62,Laurentia,pbdb:11513,1,B1,main
+"US|beartooth butte|44.9,-108.1|393.47|410.62",393.47,410.62,Laurentia,pbdb:29294,1,B1,main
+"US|beartooth butte|45.0,-109.6|393.47|410.62",393.47,410.62,Laurentia,pbdb:26176;pbdb:29292;pbdb:31000,3,B1,main
+"US|bertie|42.9,-75.1|419.62|422.7",419.62,422.7,Laurentia,pbdb:20664,1,B1,main
+"US|bertie|43.5,-74.9|419.62|422.7",419.62,422.7,Laurentia,pbdb:26087,1,B1,main
+"US|fiddlers green|43.0,-75.0|419.62|422.7",419.62,422.7,Laurentia,pbdb:53827,1,B1,main
+"US|trout valley|46.1,-68.6|387.95|399.5",387.95,399.5,Laurentia,pbdb:10614;pbdb:10617,2,B1,main
+"United Kingdom|capel horeb / halfway quarry, powys|422.7|425.0",422.7,425.0,Avalonia,tail:M-capel-horeb-ludlow,1,B1,main
+United Kingdom|welsh borderland; exact original site unresolved|413.02|419.62,413.02,419.62,Avalonia,tail:M-lang-tracheid-axis,1,B1,main
+"Vietnam|xóm chè quarry, northern vietnam|419.62|422.7",419.62,422.7,South-China,tail:M-van-canh,1,B1,main
+pbdb:27182|413.02|419.62,413.02,419.62,unknown,pbdb:27182,1,B1,main
+"Argentina|chica de zonda range, san juan|419.62|422.7",419.62,422.7,Gondwana-South-America,tail:M-rinconada,1,B2,main
+Australia|frenchmans spur / thomson river type-material district|393.47|413.02,393.47,413.02,Gondwana-Australia-Antarctica,tail:M-wilson-creek,1,B2,main
+"Australia|ghin ghin road, yea|393.47|422.7",393.47,422.7,Gondwana-Australia-Antarctica,tail:M-ghin-ghin-b2,1,B2,main
+"Australia|ghin ghin road, yea|393.47|426.7",393.47,426.7,Gondwana-Australia-Antarctica,tail:M-ghin-ghin,1,B2,main
+"Australia|limestone road, brackley's (barkley's) cutting, yea; loc. 4 (= h4) of garratt's 1978 map; the national heritage place flora fossil site|393.47|426.7",393.47,426.7,Gondwana-Australia-Antarctica,tail:M-limestone-road,1,B2,main
+"BE|bois d'ausse sandstone|50.5,5.7|413.02|419.62",413.02,419.62,Avalonia,pbdb:11722,1,B2,main
+"BE|burnotien|50.6,4.1|399.5|413.02",399.5,413.02,Avalonia,pbdb:23200;pbdb:23202,2,B2,main
+"BE|grès de wiheries|50.4,3.8|410.62|413.02",410.62,413.02,Avalonia,pbdb:22860;pbdb:23197,2,B2,main
+"BY||53.2,30.8|393.47|399.5",393.47,399.5,Baltica,pbdb:232956,1,B2,main
+"CA|bathurst island|75.8,-98.4|410.62|413.02",410.62,413.02,Laurentia,pbdb:11421;pbdb:11425,2,B2,main
+"CA|battery point|48.6,-64.3|393.47|410.62",393.47,410.62,Laurentia,pbdb:29001;pbdb:31004,2,B2,main
+"CA|battery point|48.8,-64.3|393.47|410.62",393.47,410.62,Laurentia,pbdb:26026;pbdb:26547;pbdb:28924;pbdb:28997;pbdb:29002;pbdb:29003;pbdb:29026;pbdb:31023;pbdb:31212,9,B2,main
+"CA|battery point|48.8,-64.4|393.47|410.62",393.47,410.62,Laurentia,pbdb:28968;pbdb:28971;pbdb:31002;pbdb:31003;pbdb:31213;pbdb:31215,6,B2,main
+"CA|battery point|48.8,-64.5|393.47|410.62",393.47,410.62,Laurentia,pbdb:28950;pbdb:28969;pbdb:28996;pbdb:28998;pbdb:29029;pbdb:31007;pbdb:31010;pbdb:31011;pbdb:31027,9,B2,main
+"CA|battery point|48.9,-64.4|393.47|410.62",393.47,410.62,Laurentia,pbdb:31214,1,B2,main
+"CA|york river|48.6,-64.3|393.47|410.62",393.47,410.62,Laurentia,pbdb:31216,1,B2,main
+"CA|york river|48.8,-64.4|393.47|410.62",393.47,410.62,Laurentia,pbdb:29020;pbdb:31005,2,B2,main
+"CN|posongchong|23.3,104.2|410.62|413.02",410.62,413.02,South-China,pbdb:10891,1,B2,main
+"CN|posongchong|23.3,104.3|410.62|413.02",410.62,413.02,South-China,pbdb:10896,1,B2,main
+"CN|xiemisitai|46.8,85.6|419.62|422.7",419.62,422.7,Tarim,pbdb:278439,1,B2,main
+"CN|xujiachong (also called longhuashan)|26.0,104.0|393.47|410.62",393.47,410.62,South-China,pbdb:10941,1,B2,main
+"Canada|us383 (=us600), polar bear pass region, bathurst island|419.62|425.0",419.62,425.0,Laurentia,tail:M-bathurst-us383,1,B2,main
+"Canada|us384, polar bear pass region, bathurst island|419.62|425.0",419.62,425.0,Laurentia,tail:M-bathurst-us384,1,B2,main
+"Canada|us385 (=us601), polar bear pass region, bathurst island|419.62|425.0",419.62,425.0,Laurentia,tail:M-bathurst-us385,1,B2,main
+"Canada|us688, polar bear pass region, bathurst island|419.62|425.0",419.62,425.0,Laurentia,tail:M-bathurst-us688,1,B2,main
+"China|mangkelu ii section, wutubulake village, hoboksar, west junggar|419.62|422.7",419.62,422.7,Kazakhstania,tail:M-mangkelu-ii,1,B2,main
+"China|qujing, northeastern yunnan|419.62|422.7",419.62,422.7,South-China,tail:M-qujingense,1,B2,main
+China|west junggar|419.62|422.7,419.62,422.7,Kazakhstania,tail:M-aberlemnia-junggaria,1,B2,main
+"Czech Republic|karlštejn, ve spáleném, near house 132|419.62|422.7",419.62,422.7,peri-Gondwana-Europe,tail:M-baragwanathia-karlstejn,1,B2,main
+"DE|hunsrück slate|49.8,7.4|399.5|410.62",399.5,410.62,multiple,pbdb:26904,1,B2,main
+"DE|wahnbach|50.9,7.3|410.62|413.02",410.62,413.02,multiple,pbdb:232143,1,B2,main
+"DE||50.2,7.4|399.5|410.62",399.5,410.62,multiple,pbdb:27049;pbdb:27129,2,B2,main
+"KZ|aigyrzhal'skaya suite|47.0,79.0|393.47|413.02",393.47,413.02,Kazakhstania,pbdb:32851,1,B2,main
+"Norway|red bay series brook section, spitsbergen|413.02|419.62",413.02,419.62,Laurentia,tail:M-svalbard,1,B2,main
+"RU|pridorozhnaya|54.5,89.9|399.5|410.62",399.5,410.62,multiple,pbdb:238400,1,B2,main
+"RU|salairka horizon|54.3,85.9|399.5|410.62",399.5,410.62,multiple,pbdb:35709,1,B2,main
+"RU|shanda horizon|54.3,85.9|387.95|399.5",387.95,399.5,multiple,pbdb:35721,1,B2,main
+"UA|rashkovskie beds|48.5,26.3|419.62|422.7",419.62,422.7,Baltica,pbdb:52702,1,B2,main
+"UA|skala|49.6,23.9|419.62|422.7",419.62,422.7,Baltica,pbdb:13873,1,B2,main
+"UK|dryden flags|57.3,-2.8|410.62|413.02",410.62,413.02,Laurentia,pbdb:10721,1,B2,main
+"UK|dundee flagstone|56.0,-2.0|413.02|419.62",413.02,419.62,Laurentia,pbdb:10705,1,B2,main
+"UK|dundee|56.7,-2.8|413.02|419.62",413.02,419.62,Laurentia,pbdb:26755;pbdb:26757,2,B2,main
+"UK|senni|51.9,-3.6|410.62|413.02",410.62,413.02,multiple,pbdb:238752,1,B2,main
+"UK|st. maughans|52.0,-2.0|413.02|419.62",413.02,419.62,Avalonia,pbdb:10679,1,B2,main
+"UK|strathmore|55.0,-4.0|393.47|410.62",393.47,410.62,Laurentia,pbdb:10719,1,B2,main
+"UK|strathmore|56.2,-4.2|393.47|410.62",393.47,410.62,Laurentia,pbdb:11513,1,B2,main
+"US|beartooth butte|44.9,-108.1|393.47|410.62",393.47,410.62,Laurentia,pbdb:29294,1,B2,main
+"US|beartooth butte|45.0,-109.6|393.47|410.62",393.47,410.62,Laurentia,pbdb:26176;pbdb:29292;pbdb:31000,3,B2,main
+"US|trout valley|46.1,-68.6|387.95|399.5",387.95,399.5,Laurentia,pbdb:10614;pbdb:10617,2,B2,main
+"Vietnam|xóm chè quarry, northern vietnam|419.62|422.7",419.62,422.7,South-China,tail:M-van-canh,1,B2,main
+"AU|maradana shale|-33.2,148.7|413.02|419.62",413.02,419.62,Gondwana-Australia-Antarctica,pbdb:24907,1,B0,inclusive
+"Argentina|chica de zonda range, san juan|419.62|422.7",419.62,422.7,Gondwana-South-America,tail:M-rinconada,1,B0,inclusive
+Australia|frenchmans spur / thomson river type-material district|393.47|413.02,393.47,413.02,Gondwana-Australia-Antarctica,tail:M-wilson-creek,1,B0,inclusive
+"Australia|ghin ghin road, yea|393.47|422.7",393.47,422.7,Gondwana-Australia-Antarctica,tail:M-ghin-ghin-b2,1,B0,inclusive
+"Australia|ghin ghin road, yea|393.47|426.7",393.47,426.7,Gondwana-Australia-Antarctica,tail:M-ghin-ghin,1,B0,inclusive
+"Australia|limestone road, brackley's (barkley's) cutting, yea; loc. 4 (= h4) of garratt's 1978 map; the national heritage place flora fossil site|393.47|426.7",393.47,426.7,Gondwana-Australia-Antarctica,tail:M-limestone-road,1,B0,inclusive
+"BE|bois d'ausse sandstone|50.5,5.7|413.02|419.62",413.02,419.62,Avalonia,pbdb:11722,1,B0,inclusive
+"BE|burnotien|50.6,4.1|399.5|413.02",399.5,413.02,Avalonia,pbdb:23200;pbdb:23202,2,B0,inclusive
+"BE|grès de wiheries|50.4,3.8|410.62|413.02",410.62,413.02,Avalonia,pbdb:22860;pbdb:23197,2,B0,inclusive
+"BY||53.2,30.8|393.47|399.5",393.47,399.5,Baltica,pbdb:232956,1,B0,inclusive
+"Bolivia|c. 500 m ne of negra muerta farm, c. 30 km ne of tarija, bolivia|422.7|426.7",422.7,426.7,Gondwana-South-America,tail:M-bolivia-caledonica,1,B0,inclusive
+"CA|bathurst island|75.8,-98.4|410.62|413.02",410.62,413.02,Laurentia,pbdb:11421;pbdb:11425,2,B0,inclusive
+"CA|battery point|48.6,-64.3|393.47|410.62",393.47,410.62,Laurentia,pbdb:29001;pbdb:31004,2,B0,inclusive
+"CA|battery point|48.8,-64.3|393.47|410.62",393.47,410.62,Laurentia,pbdb:26026;pbdb:26547;pbdb:28924;pbdb:28997;pbdb:29002;pbdb:29003;pbdb:29026;pbdb:31023;pbdb:31212,9,B0,inclusive
+"CA|battery point|48.8,-64.3|399.5|410.62",399.5,410.62,Laurentia,pbdb:203163,1,B0,inclusive
+"CA|battery point|48.8,-64.4|393.47|410.62",393.47,410.62,Laurentia,pbdb:28968;pbdb:28971;pbdb:31002;pbdb:31003;pbdb:31213;pbdb:31215,6,B0,inclusive
+"CA|battery point|48.8,-64.5|393.47|410.62",393.47,410.62,Laurentia,pbdb:28950;pbdb:28969;pbdb:28996;pbdb:28998;pbdb:29029;pbdb:31007;pbdb:31010;pbdb:31011;pbdb:31027,9,B0,inclusive
+"CA|battery point|48.9,-64.4|393.47|410.62",393.47,410.62,Laurentia,pbdb:31214,1,B0,inclusive
+"CA|williamsville|42.9,-78.9|419.62|422.7",419.62,422.7,Laurentia,pbdb:53825;pbdb:53830,2,B0,inclusive
+"CA|york river|48.6,-64.3|393.47|410.62",393.47,410.62,Laurentia,pbdb:31216,1,B0,inclusive
+"CA|york river|48.8,-64.4|393.47|410.62",393.47,410.62,Laurentia,pbdb:29020;pbdb:31005,2,B0,inclusive
+"CN|posongchong|23.3,104.2|410.62|413.02",410.62,413.02,South-China,pbdb:10891,1,B0,inclusive
+"CN|posongchong|23.3,104.3|410.62|413.02",410.62,413.02,South-China,pbdb:10896,1,B0,inclusive
+"CN|xiemisitai|46.8,85.6|419.62|422.7",419.62,422.7,Tarim,pbdb:278439,1,B0,inclusive
+"CN|xujiachong (also called longhuashan)|26.0,104.0|393.47|410.62",393.47,410.62,South-China,pbdb:10941,1,B0,inclusive
+"CZ|lochkov|49.9,14.2|413.02|419.62",413.02,419.62,peri-Gondwana-Europe,pbdb:13895,1,B0,inclusive
+"CZ|pozary|49.5,13.5|419.62|422.7",419.62,422.7,peri-Gondwana-Europe,pbdb:14131,1,B0,inclusive
+"CZ|pozary|49.9,14.0|419.62|422.7",419.62,422.7,peri-Gondwana-Europe,pbdb:14043,1,B0,inclusive
+"CZ|pozary|50.0,12.9|419.62|422.7",419.62,422.7,peri-Gondwana-Europe,pbdb:14045,1,B0,inclusive
+"CZ|pridoli schichten|50.0,14.3|419.62|422.7",419.62,422.7,peri-Gondwana-Europe,pbdb:52698,1,B0,inclusive
+"CZ||50.0,14.3|419.62|422.7",419.62,422.7,peri-Gondwana-Europe,pbdb:53599,1,B0,inclusive
+"Canada|us383 (=us600), polar bear pass region, bathurst island|419.62|425.0",419.62,425.0,Laurentia,tail:M-bathurst-us383,1,B0,inclusive
+"Canada|us384, polar bear pass region, bathurst island|422.7|426.7",422.7,426.7,Laurentia,tail:M-bathurst-us384,1,B0,inclusive
+"Canada|us385 (=us601), polar bear pass region, bathurst island|419.62|425.0",419.62,425.0,Laurentia,tail:M-bathurst-us385,1,B0,inclusive
+"Canada|us688, polar bear pass region, bathurst island|419.62|425.0",419.62,425.0,Laurentia,tail:M-bathurst-us688,1,B0,inclusive
+"China|mangkelu ii section, wutubulake village, hoboksar, west junggar|419.62|422.7",419.62,422.7,Kazakhstania,tail:M-mangkelu-ii,1,B0,inclusive
+"China|mongkelu, east of wutubulak, west junggar|413.02|419.62",413.02,419.62,Kazakhstania,tail:M-xinjiang-leafy,1,B0,inclusive
+"China|qujing, northeastern yunnan|419.62|422.7",419.62,422.7,South-China,tail:M-qujingense,1,B0,inclusive
+China|west junggar|419.62|422.7,419.62,422.7,Kazakhstania,tail:M-aberlemnia-junggaria,1,B0,inclusive
+"Czech Republic|karlštejn, ve spáleném, near house 132|419.62|422.7",419.62,422.7,peri-Gondwana-Europe,tail:M-baragwanathia-karlstejn,1,B0,inclusive
+"Czech Republic|kosov quarry, prague basin|419.62|422.7",419.62,422.7,peri-Gondwana-Europe,tail:M-bohemica,1,B0,inclusive
+"Czech Republic|loděnice, špičatý vrch–barrandovy jámy|430.6|432.9",430.6,432.9,peri-Gondwana-Europe,tail:M-barrandei,1,B0,inclusive
+"DE|hunsrück slate|49.8,7.4|399.5|410.62",399.5,410.62,multiple,pbdb:26904,1,B0,inclusive
+"DE|hunsrück slate|49.9,7.5|399.5|410.62",399.5,410.62,multiple,pbdb:26903,1,B0,inclusive
+"DE|wahnbach|50.9,7.3|410.62|413.02",410.62,413.02,multiple,pbdb:232143,1,B0,inclusive
+"DE||50.2,7.4|399.5|410.62",399.5,410.62,multiple,pbdb:27049;pbdb:27129,2,B0,inclusive
+"Ireland|borrisnoe mountain, devil’s bit range, county tipperary|426.7|430.6",426.7,430.6,Avalonia,tail:M-borrisnoe,1,B0,inclusive
+"KZ|aigyrzhal'skaya suite|47.0,79.0|393.47|413.02",393.47,413.02,Kazakhstania,pbdb:32851,1,B0,inclusive
+"KZ|tokrau fm|47.5,76.0|419.62|422.7",419.62,422.7,Kazakhstania,pbdb:53609;pbdb:53610;pbdb:53656,3,B0,inclusive
+"LY||30.0,11.0|419.62|422.7",419.62,422.7,Gondwana-North-Africa-Arabia,pbdb:53669,1,B0,inclusive
+"Norway|red bay series brook section, spitsbergen|413.02|419.62",413.02,419.62,Laurentia,tail:M-svalbard,1,B0,inclusive
+"PL|winnica mudstone complex|50.9,21.1|419.62|422.7",419.62,422.7,multiple,pbdb:52667,1,B0,inclusive
+"Poland|zbrza, trench at 50.725946 n, 20.569382 e, southern holy cross mountains|443.1|445.2",443.1,445.2,Baltica,tail:M-zbrza,1,B0,inclusive
+"RU|pridorozhnaya|54.5,89.9|399.5|410.62",399.5,410.62,multiple,pbdb:238400,1,B0,inclusive
+"RU|salairka horizon|54.3,85.9|399.5|410.62",399.5,410.62,multiple,pbdb:35709,1,B0,inclusive
+"RU|shanda horizon|54.3,85.9|387.95|399.5",387.95,399.5,multiple,pbdb:35721,1,B0,inclusive
+"UA|rashkovskie beds|48.5,26.3|419.62|422.7",419.62,422.7,Baltica,pbdb:52702,1,B0,inclusive
+"UA|skala|49.6,23.9|419.62|422.7",419.62,422.7,Baltica,pbdb:13873,1,B0,inclusive
+"UK|dryden flags|57.3,-2.8|410.62|413.02",410.62,413.02,Laurentia,pbdb:10721,1,B0,inclusive
+"UK|dundee flagstone|56.0,-2.0|413.02|419.62",413.02,419.62,Laurentia,pbdb:10705,1,B0,inclusive
+"UK|dundee|56.7,-2.8|413.02|419.62",413.02,419.62,Laurentia,pbdb:26755;pbdb:26757,2,B0,inclusive
+"UK|rushall|52.0,-2.0|419.62|422.7",419.62,422.7,Avalonia,pbdb:10706,1,B0,inclusive
+"UK|senni|51.9,-3.6|410.62|413.02",410.62,413.02,multiple,pbdb:238752,1,B0,inclusive
+"UK|st. maughans|52.0,-2.0|413.02|419.62",413.02,419.62,Avalonia,pbdb:10679,1,B0,inclusive
+"UK|strathmore|55.0,-4.0|393.47|410.62",393.47,410.62,Laurentia,pbdb:10719,1,B0,inclusive
+"UK|strathmore|56.2,-4.2|393.47|410.62",393.47,410.62,Laurentia,pbdb:11513,1,B0,inclusive
+"US|beartooth butte|44.9,-108.1|393.47|410.62",393.47,410.62,Laurentia,pbdb:29294,1,B0,inclusive
+"US|beartooth butte|45.0,-109.6|393.47|410.62",393.47,410.62,Laurentia,pbdb:26176;pbdb:29292;pbdb:31000,3,B0,inclusive
+"US|bertie|42.9,-75.1|419.62|422.7",419.62,422.7,Laurentia,pbdb:20664,1,B0,inclusive
+"US|bertie|43.5,-74.9|419.62|422.7",419.62,422.7,Laurentia,pbdb:26087,1,B0,inclusive
+"US|fiddlers green|43.0,-75.0|419.62|422.7",419.62,422.7,Laurentia,pbdb:53827,1,B0,inclusive
+"US|trout valley|46.1,-68.6|387.95|399.5",387.95,399.5,Laurentia,pbdb:10614;pbdb:10617,2,B0,inclusive
+"US|williamsville|42.9,-78.9|419.62|422.7",419.62,422.7,Laurentia,pbdb:53831,1,B0,inclusive
+"US|williamsville|43.0,-78.7|419.62|422.7",419.62,422.7,Laurentia,pbdb:53837,1,B0,inclusive
+"US||43.2,-78.6|422.7|432.9",422.7,432.9,Laurentia,pbdb:53832,1,B0,inclusive
+Ukraine|podolia; exact original site unresolved|419.62|425.0,419.62,425.0,Baltica,tail:M-podolia-zosterophyllum,1,B0,inclusive
+"United Kingdom|capel horeb / halfway quarry, powys|422.7|425.0",422.7,425.0,Avalonia,tail:M-capel-horeb-ludlow,1,B0,inclusive
+"United Kingdom|freshwater east, pembrokeshire|419.62|422.7",419.62,422.7,Avalonia,tail:M-freshwater-east,1,B0,inclusive
+United Kingdom|welsh borderland; exact original site unresolved|413.02|419.62,413.02,419.62,Avalonia,tail:M-lang-tracheid-axis,1,B0,inclusive
+"Vietnam|xóm chè quarry, northern vietnam|419.62|422.7",419.62,422.7,South-China,tail:M-van-canh,1,B0,inclusive
+pbdb:27182|413.02|419.62,413.02,419.62,unknown,pbdb:27182,1,B0,inclusive
+"AU|maradana shale|-33.2,148.7|413.02|419.62",413.02,419.62,Gondwana-Australia-Antarctica,pbdb:24907,1,B1,inclusive
+"Argentina|chica de zonda range, san juan|419.62|422.7",419.62,422.7,Gondwana-South-America,tail:M-rinconada,1,B1,inclusive
+Australia|frenchmans spur / thomson river type-material district|393.47|413.02,393.47,413.02,Gondwana-Australia-Antarctica,tail:M-wilson-creek,1,B1,inclusive
+"Australia|ghin ghin road, yea|393.47|422.7",393.47,422.7,Gondwana-Australia-Antarctica,tail:M-ghin-ghin-b2,1,B1,inclusive
+"Australia|ghin ghin road, yea|393.47|426.7",393.47,426.7,Gondwana-Australia-Antarctica,tail:M-ghin-ghin,1,B1,inclusive
+"Australia|limestone road, brackley's (barkley's) cutting, yea; loc. 4 (= h4) of garratt's 1978 map; the national heritage place flora fossil site|393.47|426.7",393.47,426.7,Gondwana-Australia-Antarctica,tail:M-limestone-road,1,B1,inclusive
+"BE|bois d'ausse sandstone|50.5,5.7|413.02|419.62",413.02,419.62,Avalonia,pbdb:11722,1,B1,inclusive
+"BE|burnotien|50.6,4.1|399.5|413.02",399.5,413.02,Avalonia,pbdb:23200;pbdb:23202,2,B1,inclusive
+"BE|grès de wiheries|50.4,3.8|410.62|413.02",410.62,413.02,Avalonia,pbdb:22860;pbdb:23197,2,B1,inclusive
+"BY||53.2,30.8|393.47|399.5",393.47,399.5,Baltica,pbdb:232956,1,B1,inclusive
+"Bolivia|c. 500 m ne of negra muerta farm, c. 30 km ne of tarija, bolivia|422.7|426.7",422.7,426.7,Gondwana-South-America,tail:M-bolivia-caledonica,1,B1,inclusive
+"CA|bathurst island|75.8,-98.4|410.62|413.02",410.62,413.02,Laurentia,pbdb:11421;pbdb:11425,2,B1,inclusive
+"CA|battery point|48.6,-64.3|393.47|410.62",393.47,410.62,Laurentia,pbdb:29001;pbdb:31004,2,B1,inclusive
+"CA|battery point|48.8,-64.3|393.47|410.62",393.47,410.62,Laurentia,pbdb:26026;pbdb:26547;pbdb:28924;pbdb:28997;pbdb:29002;pbdb:29003;pbdb:29026;pbdb:31023;pbdb:31212,9,B1,inclusive
+"CA|battery point|48.8,-64.3|399.5|410.62",399.5,410.62,Laurentia,pbdb:203163,1,B1,inclusive
+"CA|battery point|48.8,-64.4|393.47|410.62",393.47,410.62,Laurentia,pbdb:28968;pbdb:28971;pbdb:31002;pbdb:31003;pbdb:31213;pbdb:31215,6,B1,inclusive
+"CA|battery point|48.8,-64.5|393.47|410.62",393.47,410.62,Laurentia,pbdb:28950;pbdb:28969;pbdb:28996;pbdb:28998;pbdb:29029;pbdb:31007;pbdb:31010;pbdb:31011;pbdb:31027,9,B1,inclusive
+"CA|battery point|48.9,-64.4|393.47|410.62",393.47,410.62,Laurentia,pbdb:31214,1,B1,inclusive
+"CA|williamsville|42.9,-78.9|419.62|422.7",419.62,422.7,Laurentia,pbdb:53825,1,B1,inclusive
+"CA|york river|48.6,-64.3|393.47|410.62",393.47,410.62,Laurentia,pbdb:31216,1,B1,inclusive
+"CA|york river|48.8,-64.4|393.47|410.62",393.47,410.62,Laurentia,pbdb:29020;pbdb:31005,2,B1,inclusive
+"CN|posongchong|23.3,104.2|410.62|413.02",410.62,413.02,South-China,pbdb:10891,1,B1,inclusive
+"CN|posongchong|23.3,104.3|410.62|413.02",410.62,413.02,South-China,pbdb:10896,1,B1,inclusive
+"CN|xiemisitai|46.8,85.6|419.62|422.7",419.62,422.7,Tarim,pbdb:278439,1,B1,inclusive
+"CN|xujiachong (also called longhuashan)|26.0,104.0|393.47|410.62",393.47,410.62,South-China,pbdb:10941,1,B1,inclusive
+"CZ|lochkov|49.9,14.2|413.02|419.62",413.02,419.62,peri-Gondwana-Europe,pbdb:13895,1,B1,inclusive
+"CZ|pozary|49.5,13.5|419.62|422.7",419.62,422.7,peri-Gondwana-Europe,pbdb:14131,1,B1,inclusive
+"CZ|pozary|49.9,14.0|419.62|422.7",419.62,422.7,peri-Gondwana-Europe,pbdb:14043,1,B1,inclusive
+"CZ|pozary|50.0,12.9|419.62|422.7",419.62,422.7,peri-Gondwana-Europe,pbdb:14045,1,B1,inclusive
+"CZ|pridoli schichten|50.0,14.3|419.62|422.7",419.62,422.7,peri-Gondwana-Europe,pbdb:52698,1,B1,inclusive
+"Canada|us383 (=us600), polar bear pass region, bathurst island|419.62|425.0",419.62,425.0,Laurentia,tail:M-bathurst-us383,1,B1,inclusive
+"Canada|us384, polar bear pass region, bathurst island|422.7|426.7",422.7,426.7,Laurentia,tail:M-bathurst-us384,1,B1,inclusive
+"Canada|us385 (=us601), polar bear pass region, bathurst island|419.62|425.0",419.62,425.0,Laurentia,tail:M-bathurst-us385,1,B1,inclusive
+"Canada|us688, polar bear pass region, bathurst island|419.62|425.0",419.62,425.0,Laurentia,tail:M-bathurst-us688,1,B1,inclusive
+"China|mangkelu ii section, wutubulake village, hoboksar, west junggar|419.62|422.7",419.62,422.7,Kazakhstania,tail:M-mangkelu-ii,1,B1,inclusive
+"China|mongkelu, east of wutubulak, west junggar|413.02|419.62",413.02,419.62,Kazakhstania,tail:M-xinjiang-leafy,1,B1,inclusive
+"China|qujing, northeastern yunnan|419.62|422.7",419.62,422.7,South-China,tail:M-qujingense,1,B1,inclusive
+China|west junggar|419.62|422.7,419.62,422.7,Kazakhstania,tail:M-aberlemnia-junggaria,1,B1,inclusive
+"Czech Republic|karlštejn, ve spáleném, near house 132|419.62|422.7",419.62,422.7,peri-Gondwana-Europe,tail:M-baragwanathia-karlstejn,1,B1,inclusive
+"Czech Republic|kosov quarry, prague basin|419.62|422.7",419.62,422.7,peri-Gondwana-Europe,tail:M-bohemica,1,B1,inclusive
+"Czech Republic|loděnice, špičatý vrch–barrandovy jámy|430.6|432.9",430.6,432.9,peri-Gondwana-Europe,tail:M-barrandei,1,B1,inclusive
+"DE|hunsrück slate|49.8,7.4|399.5|410.62",399.5,410.62,multiple,pbdb:26904,1,B1,inclusive
+"DE|wahnbach|50.9,7.3|410.62|413.02",410.62,413.02,multiple,pbdb:232143,1,B1,inclusive
+"DE||50.2,7.4|399.5|410.62",399.5,410.62,multiple,pbdb:27049;pbdb:27129,2,B1,inclusive
+"Ireland|borrisnoe mountain, devil’s bit range, county tipperary|426.7|430.6",426.7,430.6,Avalonia,tail:M-borrisnoe,1,B1,inclusive
+"KZ|aigyrzhal'skaya suite|47.0,79.0|393.47|413.02",393.47,413.02,Kazakhstania,pbdb:32851,1,B1,inclusive
+"KZ|tokrau fm|47.5,76.0|419.62|422.7",419.62,422.7,Kazakhstania,pbdb:53609;pbdb:53610;pbdb:53656,3,B1,inclusive
+"LY||30.0,11.0|419.62|422.7",419.62,422.7,Gondwana-North-Africa-Arabia,pbdb:53669,1,B1,inclusive
+"Norway|red bay series brook section, spitsbergen|413.02|419.62",413.02,419.62,Laurentia,tail:M-svalbard,1,B1,inclusive
+"PL|winnica mudstone complex|50.9,21.1|419.62|422.7",419.62,422.7,multiple,pbdb:52667,1,B1,inclusive
+"Poland|zbrza, trench at 50.725946 n, 20.569382 e, southern holy cross mountains|443.1|445.2",443.1,445.2,Baltica,tail:M-zbrza,1,B1,inclusive
+"RU|pridorozhnaya|54.5,89.9|399.5|410.62",399.5,410.62,multiple,pbdb:238400,1,B1,inclusive
+"RU|salairka horizon|54.3,85.9|399.5|410.62",399.5,410.62,multiple,pbdb:35709,1,B1,inclusive
+"RU|shanda horizon|54.3,85.9|387.95|399.5",387.95,399.5,multiple,pbdb:35721,1,B1,inclusive
+"UA|rashkovskie beds|48.5,26.3|419.62|422.7",419.62,422.7,Baltica,pbdb:52702,1,B1,inclusive
+"UA|skala|49.6,23.9|419.62|422.7",419.62,422.7,Baltica,pbdb:13873,1,B1,inclusive
+"UK|dryden flags|57.3,-2.8|410.62|413.02",410.62,413.02,Laurentia,pbdb:10721,1,B1,inclusive
+"UK|dundee flagstone|56.0,-2.0|413.02|419.62",413.02,419.62,Laurentia,pbdb:10705,1,B1,inclusive
+"UK|dundee|56.7,-2.8|413.02|419.62",413.02,419.62,Laurentia,pbdb:26755;pbdb:26757,2,B1,inclusive
+"UK|rushall|52.0,-2.0|419.62|422.7",419.62,422.7,Avalonia,pbdb:10706,1,B1,inclusive
+"UK|senni|51.9,-3.6|410.62|413.02",410.62,413.02,multiple,pbdb:238752,1,B1,inclusive
+"UK|st. maughans|52.0,-2.0|413.02|419.62",413.02,419.62,Avalonia,pbdb:10679,1,B1,inclusive
+"UK|strathmore|55.0,-4.0|393.47|410.62",393.47,410.62,Laurentia,pbdb:10719,1,B1,inclusive
+"UK|strathmore|56.2,-4.2|393.47|410.62",393.47,410.62,Laurentia,pbdb:11513,1,B1,inclusive
+"US|beartooth butte|44.9,-108.1|393.47|410.62",393.47,410.62,Laurentia,pbdb:29294,1,B1,inclusive
+"US|beartooth butte|45.0,-109.6|393.47|410.62",393.47,410.62,Laurentia,pbdb:26176;pbdb:29292;pbdb:31000,3,B1,inclusive
+"US|bertie|42.9,-75.1|419.62|422.7",419.62,422.7,Laurentia,pbdb:20664,1,B1,inclusive
+"US|bertie|43.5,-74.9|419.62|422.7",419.62,422.7,Laurentia,pbdb:26087,1,B1,inclusive
+"US|fiddlers green|43.0,-75.0|419.62|422.7",419.62,422.7,Laurentia,pbdb:53827,1,B1,inclusive
+"US|trout valley|46.1,-68.6|387.95|399.5",387.95,399.5,Laurentia,pbdb:10614;pbdb:10617,2,B1,inclusive
+Ukraine|podolia; exact original site unresolved|419.62|425.0,419.62,425.0,Baltica,tail:M-podolia-zosterophyllum,1,B1,inclusive
+"United Kingdom|capel horeb / halfway quarry, powys|422.7|425.0",422.7,425.0,Avalonia,tail:M-capel-horeb-ludlow,1,B1,inclusive
+"United Kingdom|freshwater east, pembrokeshire|419.62|422.7",419.62,422.7,Avalonia,tail:M-freshwater-east,1,B1,inclusive
+United Kingdom|welsh borderland; exact original site unresolved|413.02|419.62,413.02,419.62,Avalonia,tail:M-lang-tracheid-axis,1,B1,inclusive
+"Vietnam|xóm chè quarry, northern vietnam|419.62|422.7",419.62,422.7,South-China,tail:M-van-canh,1,B1,inclusive
+pbdb:27182|413.02|419.62,413.02,419.62,unknown,pbdb:27182,1,B1,inclusive
+"Argentina|chica de zonda range, san juan|419.62|422.7",419.62,422.7,Gondwana-South-America,tail:M-rinconada,1,B2,inclusive
+Australia|frenchmans spur / thomson river type-material district|393.47|413.02,393.47,413.02,Gondwana-Australia-Antarctica,tail:M-wilson-creek,1,B2,inclusive
+"Australia|ghin ghin road, yea|393.47|422.7",393.47,422.7,Gondwana-Australia-Antarctica,tail:M-ghin-ghin-b2,1,B2,inclusive
+"Australia|ghin ghin road, yea|393.47|426.7",393.47,426.7,Gondwana-Australia-Antarctica,tail:M-ghin-ghin,1,B2,inclusive
+"Australia|limestone road, brackley's (barkley's) cutting, yea; loc. 4 (= h4) of garratt's 1978 map; the national heritage place flora fossil site|393.47|426.7",393.47,426.7,Gondwana-Australia-Antarctica,tail:M-limestone-road,1,B2,inclusive
+"BE|bois d'ausse sandstone|50.5,5.7|413.02|419.62",413.02,419.62,Avalonia,pbdb:11722,1,B2,inclusive
+"BE|burnotien|50.6,4.1|399.5|413.02",399.5,413.02,Avalonia,pbdb:23200;pbdb:23202,2,B2,inclusive
+"BE|grès de wiheries|50.4,3.8|410.62|413.02",410.62,413.02,Avalonia,pbdb:22860;pbdb:23197,2,B2,inclusive
+"BY||53.2,30.8|393.47|399.5",393.47,399.5,Baltica,pbdb:232956,1,B2,inclusive
+"Bolivia|c. 500 m ne of negra muerta farm, c. 30 km ne of tarija, bolivia|422.7|426.7",422.7,426.7,Gondwana-South-America,tail:M-bolivia-caledonica,1,B2,inclusive
+"CA|bathurst island|75.8,-98.4|410.62|413.02",410.62,413.02,Laurentia,pbdb:11421;pbdb:11425,2,B2,inclusive
+"CA|battery point|48.6,-64.3|393.47|410.62",393.47,410.62,Laurentia,pbdb:29001;pbdb:31004,2,B2,inclusive
+"CA|battery point|48.8,-64.3|393.47|410.62",393.47,410.62,Laurentia,pbdb:26026;pbdb:26547;pbdb:28924;pbdb:28997;pbdb:29002;pbdb:29003;pbdb:29026;pbdb:31023;pbdb:31212,9,B2,inclusive
+"CA|battery point|48.8,-64.4|393.47|410.62",393.47,410.62,Laurentia,pbdb:28968;pbdb:28971;pbdb:31002;pbdb:31003;pbdb:31213;pbdb:31215,6,B2,inclusive
+"CA|battery point|48.8,-64.5|393.47|410.62",393.47,410.62,Laurentia,pbdb:28950;pbdb:28969;pbdb:28996;pbdb:28998;pbdb:29029;pbdb:31007;pbdb:31010;pbdb:31011;pbdb:31027,9,B2,inclusive
+"CA|battery point|48.9,-64.4|393.47|410.62",393.47,410.62,Laurentia,pbdb:31214,1,B2,inclusive
+"CA|york river|48.6,-64.3|393.47|410.62",393.47,410.62,Laurentia,pbdb:31216,1,B2,inclusive
+"CA|york river|48.8,-64.4|393.47|410.62",393.47,410.62,Laurentia,pbdb:29020;pbdb:31005,2,B2,inclusive
+"CN|posongchong|23.3,104.2|410.62|413.02",410.62,413.02,South-China,pbdb:10891,1,B2,inclusive
+"CN|posongchong|23.3,104.3|410.62|413.02",410.62,413.02,South-China,pbdb:10896,1,B2,inclusive
+"CN|xiemisitai|46.8,85.6|419.62|422.7",419.62,422.7,Tarim,pbdb:278439,1,B2,inclusive
+"CN|xujiachong (also called longhuashan)|26.0,104.0|393.47|410.62",393.47,410.62,South-China,pbdb:10941,1,B2,inclusive
+"Canada|us383 (=us600), polar bear pass region, bathurst island|419.62|425.0",419.62,425.0,Laurentia,tail:M-bathurst-us383,1,B2,inclusive
+"Canada|us384, polar bear pass region, bathurst island|422.7|426.7",422.7,426.7,Laurentia,tail:M-bathurst-us384,1,B2,inclusive
+"Canada|us385 (=us601), polar bear pass region, bathurst island|419.62|425.0",419.62,425.0,Laurentia,tail:M-bathurst-us385,1,B2,inclusive
+"Canada|us688, polar bear pass region, bathurst island|419.62|425.0",419.62,425.0,Laurentia,tail:M-bathurst-us688,1,B2,inclusive
+"China|mangkelu ii section, wutubulake village, hoboksar, west junggar|419.62|422.7",419.62,422.7,Kazakhstania,tail:M-mangkelu-ii,1,B2,inclusive
+"China|mongkelu, east of wutubulak, west junggar|413.02|419.62",413.02,419.62,Kazakhstania,tail:M-xinjiang-leafy,1,B2,inclusive
+"China|qujing, northeastern yunnan|419.62|422.7",419.62,422.7,South-China,tail:M-qujingense,1,B2,inclusive
+China|west junggar|419.62|422.7,419.62,422.7,Kazakhstania,tail:M-aberlemnia-junggaria,1,B2,inclusive
+"Czech Republic|karlštejn, ve spáleném, near house 132|419.62|422.7",419.62,422.7,peri-Gondwana-Europe,tail:M-baragwanathia-karlstejn,1,B2,inclusive
+"Czech Republic|kosov quarry, prague basin|419.62|422.7",419.62,422.7,peri-Gondwana-Europe,tail:M-bohemica,1,B2,inclusive
+"DE|hunsrück slate|49.8,7.4|399.5|410.62",399.5,410.62,multiple,pbdb:26904,1,B2,inclusive
+"DE|wahnbach|50.9,7.3|410.62|413.02",410.62,413.02,multiple,pbdb:232143,1,B2,inclusive
+"DE||50.2,7.4|399.5|410.62",399.5,410.62,multiple,pbdb:27049;pbdb:27129,2,B2,inclusive
+"KZ|aigyrzhal'skaya suite|47.0,79.0|393.47|413.02",393.47,413.02,Kazakhstania,pbdb:32851,1,B2,inclusive
+"Norway|red bay series brook section, spitsbergen|413.02|419.62",413.02,419.62,Laurentia,tail:M-svalbard,1,B2,inclusive
+"RU|pridorozhnaya|54.5,89.9|399.5|410.62",399.5,410.62,multiple,pbdb:238400,1,B2,inclusive
+"RU|salairka horizon|54.3,85.9|399.5|410.62",399.5,410.62,multiple,pbdb:35709,1,B2,inclusive
+"RU|shanda horizon|54.3,85.9|387.95|399.5",387.95,399.5,multiple,pbdb:35721,1,B2,inclusive
+"UA|rashkovskie beds|48.5,26.3|419.62|422.7",419.62,422.7,Baltica,pbdb:52702,1,B2,inclusive
+"UA|skala|49.6,23.9|419.62|422.7",419.62,422.7,Baltica,pbdb:13873,1,B2,inclusive
+"UK|dryden flags|57.3,-2.8|410.62|413.02",410.62,413.02,Laurentia,pbdb:10721,1,B2,inclusive
+"UK|dundee flagstone|56.0,-2.0|413.02|419.62",413.02,419.62,Laurentia,pbdb:10705,1,B2,inclusive
+"UK|dundee|56.7,-2.8|413.02|419.62",413.02,419.62,Laurentia,pbdb:26755;pbdb:26757,2,B2,inclusive
+"UK|senni|51.9,-3.6|410.62|413.02",410.62,413.02,multiple,pbdb:238752,1,B2,inclusive
+"UK|st. maughans|52.0,-2.0|413.02|419.62",413.02,419.62,Avalonia,pbdb:10679,1,B2,inclusive
+"UK|strathmore|55.0,-4.0|393.47|410.62",393.47,410.62,Laurentia,pbdb:10719,1,B2,inclusive
+"UK|strathmore|56.2,-4.2|393.47|410.62",393.47,410.62,Laurentia,pbdb:11513,1,B2,inclusive
+"US|beartooth butte|44.9,-108.1|393.47|410.62",393.47,410.62,Laurentia,pbdb:29294,1,B2,inclusive
+"US|beartooth butte|45.0,-109.6|393.47|410.62",393.47,410.62,Laurentia,pbdb:26176;pbdb:29292;pbdb:31000,3,B2,inclusive
+"US|trout valley|46.1,-68.6|387.95|399.5",387.95,399.5,Laurentia,pbdb:10614;pbdb:10617,2,B2,inclusive
+Ukraine|podolia; exact original site unresolved|419.62|425.0,419.62,425.0,Baltica,tail:M-podolia-zosterophyllum,1,B2,inclusive
+"United Kingdom|freshwater east, pembrokeshire|419.62|422.7",419.62,422.7,Avalonia,tail:M-freshwater-east,1,B2,inclusive
+"Vietnam|xóm chè quarry, northern vietnam|419.62|422.7",419.62,422.7,South-China,tail:M-van-canh,1,B2,inclusive

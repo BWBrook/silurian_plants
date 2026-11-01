@@ -1,0 +1,19 @@
+{
+  "inputs": {
+    "models/f3/loop3/out/reviewed_bounds.csv": "10c694db71af4cd94cdd7c84c2bd27e999dea7dd7ef511bb6f9ac181d6131f89",
+    "models/f3/loop3/out/primary_unit_membership.csv": "c6daa079dec8b201e14dc0cebf84df959efb935d9dcd99b3fb7d441a8fc4bc6f",
+    "models/f3/loop3/out/suppression_sensitivity.csv": "f7a21f6e4dda5c7e6d0f0b6fd29fb440ae5968cde1aeca187e9e2ceb7c51e0df",
+    "docs/primer.md": "d19466c3963ad100b1fcc913f17babe808480c1ec05fdc9a81c5d1b07b7b0534",
+    "data/spores/first_appearances.csv": "3069ac06d11eaa534ac2b158a96d6ac7bd6d173d134ac2b14347242f7561422d",
+    "models/f3/loop3/figures_reviewed.py": "9badd9ce8437336f0153528f5c9459bc46d128873d5b95a9749041f8c6607195"
+  },
+  "outputs": {
+    "models/f3/loop3/out/fig_macro_recovery.png": "86a38efba9a3b19f35339218127207bc3627fefe260742e17f2d0aecbf2ccaff",
+    "models/f3/loop3/out/fig_macro_recovery.pdf": "fbda90fb44a7ccc8003bf7cc216ff71afb61722280c7b39a1bb157580c35128c",
+    "models/f3/loop3/out/fig_macro_sensitivity.png": "0ab7cdac051a37a8891a2aa45b29ee1c1abbcd0b5a33480cfe76288be7b594e5",
+    "models/f3/loop3/out/fig_macro_sensitivity.pdf": "0157b2a53872e64d6ea8658ecc244d71a1c4b2a0a75ffda0000cda2e84b856f4",
+    "models/f3/loop3/out/fig_macro_suppression.png": "1041e684b0e04d03d9202ebf9387505f551ee767527c465d81bc5e7db0bd5697",
+    "models/f3/loop3/out/fig_macro_suppression.pdf": "f13db63fe5262afbee19ba7cfb51b4bac5b657d02f0fbd7ebc710c477c16852f"
+  },
+  "matplotlib": "3.11.2"
+}

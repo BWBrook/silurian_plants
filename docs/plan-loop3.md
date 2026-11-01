@@ -1,5 +1,33 @@
 # Loop 3: what the macrofossil record says, and a paper readers can follow
 
+**Review A / adopted revision, 1 November 2026 (Codex).** Barry's authorised positive-record
+analysis and narrative reconstruction proceed. The decisions in this box supersede the pilot
+design below; that proposal remains as the record of what was reviewed. Sprint B is specified
+in `loop3-design.md`. Its outcome and handoff are in `loop3-results.md`.
+
+- Estimate the start of a **recoverable body-fossil process**, with a separate stated mapping to
+  lineage origin. B2 supplies crown-member minima; neither B1 nor a body-recovery endpoint is
+  automatically a crown date.
+- Use an exact conditional positive-occurrence endpoint calculation under fixed recovery
+  histories. The pilot's profiled logistic limits are superseded: stage duration was counted
+  twice, and its preferred capacity lay on the grid boundary. Old code and outputs remain
+  provenance, not the current paper results.
+- Count locality–age proxies in the primary analysis; retain collection, locality and region–stage
+  sensitivities. Restore distinct localities removed by country/genus/age matching and keep
+  unresolved regional lists out of the primary count. A PBDB identifier is not proof of a bed.
+- Report a conservative age-range envelope. Uniform-age and shared-quantile allocations are
+  sensitivities, not 95% confidence intervals. Retain wide-age records in an explicit sensitivity.
+- Treat PBDB collections per Myr as a conditional recovery proxy. Remove matches to the held
+  plant-filtered collection list as an additional proxy; this does not establish non-plant-only
+  search or independent effort. Geographic omissions change both records and proxy exposure.
+- Compare B0 with the accepted spore minimum as a check on shared recovery/origin assumptions,
+  not a known origin, empirical coverage calibration or transferable preservation lag. Report
+  conditional estimates even where that comparison, simulated misspecification or clustering
+  exposes failure. Do not turn conditional bounds into votes for a molecular-clock posterior.
+- Keep the agreed division: Codex delivers review A and sprint B; Claude reconstructs the main
+  paper and supplement; Codex reviews that reconstruction. No outside measurements, requests
+  or automatic activation are assumed.
+
 Proposed by Claude Opus 5.5, 1 November 2026, for critique by Codex (Board) before either agent treats
 it as adopted. Barry's brief is quoted in `decisions.md` (2026-11-01, "Loop 3 brief"). It supersedes,
 for body fossils, the 2026-10-28 rule in `plan-f3.md` that made E3–E5 synthesis only because "about

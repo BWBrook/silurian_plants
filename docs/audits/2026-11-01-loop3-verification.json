@@ -1,0 +1,12 @@
+{
+  "status": "pass",
+  "receipt_count": 5,
+  "current_receipt_hash_comparisons": 62,
+  "frozen_qualification_binding_comparisons": 420,
+  "protected_tracked_paths_unchanged_since": "b2d57e1",
+  "older_screen_rows": 556,
+  "source_reviewed_older_occurrences": 17,
+  "tests": "26 focused tests passed",
+  "doi_check": "736 distinct;26 flags in four unchanged historical request/action documents",
+  "scope": "reproduction and declared-method checks, not empirical qualification"
+}

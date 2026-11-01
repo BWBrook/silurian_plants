@@ -3,6 +3,42 @@
 Dated record of decisions that shape the programme. Newest first. Say who decided, and quote
 Barry exactly (with source) or label a paraphrase.
 
+## 2026-11-01: Loop 3 review A and sprint B delivered (Codex)
+
+Barry returned the work to Codex after Claude posted the Loop 3 brief and pilot (Board 106,
+message 2809). Under the authority quoted below, Codex adopted `plan-loop3.md`'s revised design
+and completed the positive-record tranche; `loop3-design.md` and `loop3-results.md` govern its
+methods and interpretation. Claude retains the main-paper/supplement reconstruction next.
+
+- The absence-rate admission gate does not govern every positive-occurrence estimator. Use exact
+  conditional endpoint inference under fixed recovery histories, with a conservative age envelope;
+  report the estimates and their sensitivities without inherited F3 qualification.
+- Replace the pilot's numerical interpretation. Source review corrected material matching and
+  collection/bed pseudoreplication; methods review identified stage-total/per-Myr double weighting,
+  unsupported pooling of confidence limits and profiled-shape boundary dependence.
+- Primary units are locality–age proxies, with collection, locality, region–stage, age, source and
+  geographic sensitivities. Preserve uncertain material and older rejected/non-embryophyte records
+  explicitly. Neither PBDB labels nor taxonomic exclusion establish a searched fossil absence.
+- A spore minimum challenges equating the B0 body-recovery endpoint with embryophyte origin; it
+  does not supply a known origin or a preservation lag transferable to B2. Fixed-delay scenarios
+  remain assumptions.
+- The observed sequence can reject some recovery shapes within its range. A complete retrospective
+  stage-break grid separately exposes recovery before the first possible occurrence: main B2's
+  flat-history rule moves from 428.84 to 448.10 Ma at 0.1 pre-426.7 Ma recovery, with unchanged
+  within-record shape; 0.01 has no bound through 469.4 Ma. This is sensitivity, not selected or
+  simultaneous 95% inference, nor validation of a clock posterior.
+- No new measurements, author assistance or outside requests are part of the next step. The next
+  step is the authorised manuscript reconstruction from these existing results and sources.
+
+**Structural review (Q1/Q2/Q5):** positive-record inference answers a question that the empty-rock
+admission framework did not, and improves the paper beyond an account of non-admission. The
+source-linked inventory, an exact small estimator and explicit recovery/history sensitivities
+separate data defects from assumptions that remain unidentified. The result survives transparent
+source qualification; it does not need to be suppressed because some assumptions fail. Independent
+source and methods reviews changed both the numerical result and its biological interpretation.
+Loop 3 remains open for Claude's reconstruction and Codex's paper review. Frozen F3 and R artefacts
+are unchanged, and release remains Barry's decision.
+
 ## 2026-11-01: Loop 3 brief (Barry)
 
 Barry, Claude chat, 1 November 2026 (exact quotations; the full message is in the session record):

@@ -1,0 +1,3 @@
+analysis_source_id,original_namespace,original_source_id,doi,identity,access_evidence
+wang2026-zosterophyllum,data/occurrences/sources.csv,wang2026,10.1093/aob/mcaf337,"Wang et al.; Uncoupling of morphological disparity and species diversity in Zosterophyllum; Annals of Botany","Source review checked journal web record; do not resolve this to library/closed/wang2026.pdf"
+wang2026-cryptospores,library/closed.tsv,wang2026,10.1016/j.earscirev.2026.105476,"Wang et al.; Dynamic evolution of cryptospores; Earth-Science Reviews","library/closed/wang2026.pdf; identity and hash in original library manifest"

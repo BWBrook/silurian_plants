@@ -1,0 +1,25 @@
+category,reading,cutoff,n,older_bound_ma,status,interpretation
+B0,main,Emsian,77,433.27878408,bounded,classical observed-range comparison at midpoint ages; conditional only
+B0,main,Pragian,50,433.00648604,bounded,classical observed-range comparison at midpoint ages; conditional only
+B0,main,Lochkovian,43,432.89077539,bounded,classical observed-range comparison at midpoint ages; conditional only
+B0,main,Pridoli,34,432.75634457,bounded,classical observed-range comparison at midpoint ages; conditional only
+B1,main,Emsian,72,433.38873327,bounded,classical observed-range comparison at midpoint ages; conditional only
+B1,main,Pragian,46,433.12193604,bounded,classical observed-range comparison at midpoint ages; conditional only
+B1,main,Lochkovian,39,433.01565868,bounded,classical observed-range comparison at midpoint ages; conditional only
+B1,main,Pridoli,30,432.90245930,bounded,classical observed-range comparison at midpoint ages; conditional only
+B2,main,Emsian,50,424.11214017,bounded,classical observed-range comparison at midpoint ages; conditional only
+B2,main,Pragian,25,423.70461374,bounded,classical observed-range comparison at midpoint ages; conditional only
+B2,main,Lochkovian,18,423.46427229,bounded,classical observed-range comparison at midpoint ages; conditional only
+B2,main,Pridoli,13,422.63610417,bounded,classical observed-range comparison at midpoint ages; conditional only
+B0,inclusive,Emsian,81,446.07404724,bounded,classical observed-range comparison at midpoint ages; conditional only
+B0,inclusive,Pragian,54,446.03002885,bounded,classical observed-range comparison at midpoint ages; conditional only
+B0,inclusive,Lochkovian,47,446.02273681,bounded,classical observed-range comparison at midpoint ages; conditional only
+B0,inclusive,Pridoli,37,446.14496201,bounded,classical observed-range comparison at midpoint ages; conditional only
+B1,inclusive,Emsian,76,446.20489694,bounded,classical observed-range comparison at midpoint ages; conditional only
+B1,inclusive,Pragian,50,446.18824354,bounded,classical observed-range comparison at midpoint ages; conditional only
+B1,inclusive,Lochkovian,43,446.20753591,bounded,classical observed-range comparison at midpoint ages; conditional only
+B1,inclusive,Pridoli,33,446.40620815,bounded,classical observed-range comparison at midpoint ages; conditional only
+B2,inclusive,Emsian,55,426.46694413,bounded,classical observed-range comparison at midpoint ages; conditional only
+B2,inclusive,Pragian,30,426.10166910,bounded,classical observed-range comparison at midpoint ages; conditional only
+B2,inclusive,Lochkovian,23,425.92244317,bounded,classical observed-range comparison at midpoint ages; conditional only
+B2,inclusive,Pridoli,17,425.42891627,bounded,classical observed-range comparison at midpoint ages; conditional only

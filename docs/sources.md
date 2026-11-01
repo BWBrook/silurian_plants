@@ -32,6 +32,7 @@ relying on a particular generation.
 | Source | What it gives | Status | Where | Licence |
 |---|---|---|---|---|
 | PBDB plant occurrences, collections, references | 3,704 occurrences (2,628 core), 1,302 collections; snapshot 2026-10-23 | held | `data/eprp/record/` | CC0 |
+| Loop 3 positive body-record inventory and reviewed recovery proxies (Q1/Q2/Q5) | 241 classified names; source-linked material/unit corrections, main/inclusive readings, older-only 556-row database screen and seven source-adjudicated non-embryophyte candidates; raw PBDB collection density reconstructed per Myr with plant-filter exclusion sensitivity | held derived data; underlying snapshot local | `data/macro/README.md`, `data/macro/build_receipt.json`, `docs/audits/2026-11-01-loop3-*.md` | factual database extraction and authored adjudications; no copyrighted full texts included |
 | PBDB anchors, Frasnian–Famennian | 163 occurrences (*Archaeopteris*, *Callixylon*, *Eospermatopteris*, *Elkinsia*) | held | `data/eprp/record/` | CC0 |
 | PBDB taxa and opinions | window subsets (413 taxa, 653 opinions) tracked; whole plant tree local | held / local | `data/eprp/record/`, `data/eprp/local/record/` | CC0 |
 | PBDB specimens and measurements | none links to a window plant occurrence: plant sizes must come from the literature | held (as a negative result) | `data/eprp/record/` | CC0 |

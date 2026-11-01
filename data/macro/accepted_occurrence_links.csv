@@ -1,0 +1,665 @@
+occurrence_no,collection_no,name,max_ma,min_ma,b0,b1,b2,low_confidence,reference_no
+128542,10594,Cooksonia,430.6,426.7,True,True,False,False,3918
+128610,10614,Drepanophycus,399.5,387.95,True,True,True,False,3926
+128611,10617,Psilophyton,399.5,387.95,True,True,True,False,3927
+128626,10625,Drepanophycus spinaeformis,419.62,393.47,True,True,True,False,3930
+128627,10625,Taeniocrada,419.62,393.47,True,False,False,False,3930
+128810,10594,Cooksonia pertoni,430.6,426.7,True,True,False,False,3940
+128811,10594,Cooksonia hemisphaerica,430.6,426.7,True,True,False,False,3940
+128812,10594,Cooksonia,430.6,426.7,True,True,False,False,3940
+129486,10679,Cooksonia hemisphaerica,419.62,413.02,True,True,False,False,3915
+129487,10679,Cooksonia pertoni,419.62,413.02,True,True,False,False,3957
+129488,10679,Cooksonia,419.62,413.02,True,True,False,False,3957
+129489,10679,Cooksonia,419.62,413.02,True,True,False,False,3957
+129490,10679,Salopella marcensis n. sp.,419.62,413.02,True,True,False,False,3958
+129491,10679,Tortilicaulis transwalliensis,419.62,413.02,True,True,False,False,3958
+129492,10679,Uskiella reticulata n. sp.,419.62,413.02,True,True,False,False,3958
+129493,10679,cf. Uskiella reticulata,419.62,413.02,True,True,False,False,3958
+129494,10679,Tarrantia salopensis n. gen. n. sp.,419.62,413.02,True,True,False,False,3958
+129495,10679,Zosterophyllum,419.62,413.02,True,True,True,False,3915
+129496,10679,Rhyniophytina indet.,419.62,413.02,True,True,False,False,3957
+129499,10679,Hostinella,419.62,413.02,True,False,False,False,3957
+129500,10679,Salopella sp.,419.62,413.02,True,True,False,False,3957
+129501,10679,Yarravia,419.62,413.02,True,True,False,False,3957
+129743,10705,Zosterophyllum,419.62,413.02,True,True,True,False,3978
+129746,10706,Cooksonia pertoni,422.7,419.62,True,True,False,False,3915
+129748,10706,Pertonella dactylethra n. gen. n. sp.,422.7,419.62,True,True,False,False,3979
+129749,10706,Caia langii n. gen. n. sp.,422.7,419.62,True,True,False,False,3916
+129750,10706,Salopella sp.,422.7,419.62,True,True,False,False,3979
+129751,10706,Hostinella,422.7,419.62,True,False,False,False,3915
+129810,10706,Cooksonia,422.7,419.62,True,True,False,False,3982
+129812,10719,Sporogonites,410.62,393.47,True,False,False,False,3983
+129813,10719,Zosterophyllum,410.62,393.47,True,True,True,False,3983
+129814,10719,Sawdonia ornata,410.62,393.47,True,True,True,False,3985
+129815,10719,Drepanophycus spinaeformis,410.62,393.47,True,True,True,False,3986
+129816,10719,Dawsonites,410.62,393.47,True,True,True,False,3983
+129830,10721,Rhynia,413.02,410.62,True,True,False,False,3987
+129831,10721,Lyonophyton rhyniensis n. gen. n. sp.,413.02,410.62,True,True,False,False,4016
+129832,10721,Langiophyton mackei,413.02,410.62,True,True,False,False,4014
+129833,10721,Horneophyton lignieri,413.02,410.62,True,True,False,False,4009
+129834,10721,Trichopherophyton teuchansii,413.02,410.62,True,True,True,False,3987
+129835,10721,Asteroxylon,413.02,410.62,True,True,True,False,4010
+129840,10721,Nothia aphylla,413.02,410.62,True,True,False,False,3987
+129841,10721,Rhynia,413.02,410.62,True,True,False,False,4009
+129842,10721,Kidstonophyton discoides,413.02,410.62,True,True,False,False,4015
+131790,10891,Eophyllophyton bellum,413.02,410.62,True,True,True,False,4037
+131791,10891,Gumuia zyzzata,413.02,410.62,True,True,True,False,4029
+131806,10896,Zosterophyllum,413.02,410.62,True,True,True,False,4043
+131807,10896,Psilophyton,413.02,410.62,True,True,True,False,4027
+131808,10896,Gumuia zyzzata,413.02,410.62,True,True,True,False,4027
+131981,10941,Drepanophycus,410.62,393.47,True,True,True,False,4039
+132404,11009,Huia recurvata,413.02,382.31,True,True,False,False,4027
+133503,11211,Ciguelia juvenile n. gen. n. sp.,419.62,393.47,True,False,False,True,4131
+133504,11211,Salopella brasiliana n. sp.,419.62,393.47,True,True,False,False,4131
+136191,11421,Bathurstia cf. denticulata,413.02,410.62,True,True,True,False,3920
+136193,11421,Distichophytum,413.02,410.62,True,True,True,False,3920
+136200,11425,Zosterophyllum,413.02,410.62,True,True,True,False,3920
+136724,11513,Sawdonia ornata,410.62,393.47,True,True,True,False,3985
+136725,11513,Margophyton,410.62,393.47,True,True,True,False,4168
+136726,11513,Drepanophycus spinaeformis,410.62,393.47,True,True,True,False,4166
+136727,11513,Dawsonites,410.62,393.47,True,True,True,False,4166
+155976,13873,Zosterophyllum,422.7,419.62,True,True,True,False,6163
+156540,13895,Cooksonia,419.62,413.02,True,True,False,False,6165
+156541,13895,Cooksonia,419.62,413.02,True,True,False,False,6165
+158456,14043,Cooksonia,422.7,419.62,True,True,False,False,6185
+158579,14045,Cooksonia hemisphaerica,422.7,419.62,True,True,False,False,6185
+158580,14045,Cooksonia,422.7,419.62,True,True,False,False,6185
+160664,14131,Cooksonia,422.7,419.62,True,True,False,False,6191
+200114,20664,Cooksonia,422.7,419.62,True,True,False,False,6336
+200163,20677,Hostinella,443.1,413.02,True,False,False,False,6337
+200164,20677,Bowerophylloides mendozaensis,443.1,413.02,True,False,False,False,6337
+200165,20677,Isidrophyton iniguezii,443.1,413.02,True,True,False,False,6337
+200166,20677,cf. Tortilicaulis sp.,443.1,413.02,True,True,False,False,6337
+200170,20683,cf. Salopella sp.,443.1,413.02,True,True,False,False,6337
+200319,20754,Salopella australis,426.7,422.7,True,True,False,False,6408
+200320,20754,Yarravia,426.7,422.7,True,True,False,False,6408
+200321,20754,Zosterophyllales,426.7,422.7,True,True,True,False,6408
+200322,20754,Baragwanthia longifolia,426.7,422.7,True,True,True,False,6408
+200323,20759,Cooksonia,443.1,419.62,True,True,False,False,6340
+200324,20759,Cooksonia,443.1,419.62,True,True,False,False,6340
+200505,20822,Crenaticaulis,410.62,382.31,True,True,True,False,6434
+200508,20839,Zosterophyllum,443.1,419.62,True,True,True,False,6435
+200509,20839,Taeniocrada,443.1,419.62,True,False,False,False,6435
+200510,20839,Hostinella,443.1,419.62,True,False,False,False,6435
+200512,20841,Drepanophycus spinaeformis,419.62,393.47,True,True,True,False,6437
+200533,20664,Hostinella,422.7,419.62,True,False,False,False,6336
+200535,20677,Salopella indet.,443.1,413.02,True,True,False,False,6337
+200574,20890,Taeniocrada,443.1,419.62,True,False,False,False,6340
+200575,20896,Salopella australis,413.02,382.31,True,True,False,False,6408
+200576,20896,Salopella caespitosa,413.02,382.31,True,True,False,False,6408
+200577,20896,Yarravia oblonga,413.02,382.31,True,True,False,False,6408
+200578,20896,Yarravia,413.02,382.31,True,True,False,False,6408
+200579,20896,Zosterophyllum,413.02,382.31,True,True,True,False,6408
+200580,20896,Baragwanathia longifolia,413.02,382.31,True,True,True,False,6408
+200581,20896,Baragwanathia,413.02,382.31,True,True,True,False,6408
+200582,20896,<Lycopsids>,413.02,382.31,True,True,True,False,6408
+200583,20896,Dawsonites,413.02,382.31,True,True,True,False,6408
+200746,20992,Psilophyton,419.62,382.31,True,True,True,False,6435
+200747,20993,Hostinella,419.62,393.47,True,False,False,False,6435
+201132,20895,Taeniocrada,419.62,358.86,True,False,False,False,6408
+201339,21190,Drepanophycus spinaeformis,419.62,393.47,True,True,True,False,6491
+201340,21190,Sawdonia ornata,419.62,393.47,True,True,True,False,6491
+201341,21190,Psilophyton,419.62,393.47,True,True,True,False,6491
+201342,21190,Psilophyton,419.62,393.47,True,True,True,False,6491
+201343,21190,Aphyllopteris,419.62,393.47,True,False,False,False,6491
+201344,21190,Hostinella,419.62,393.47,True,False,False,False,6491
+201345,21190,Sporogonites exuberans,419.62,393.47,True,False,False,False,6491
+201347,21192,Hostinella,419.62,393.47,True,False,False,False,6491
+201365,21194,Sawdonia ornata,419.62,393.47,True,True,True,False,6492
+201366,21194,Drepanophycus spinaeformis,419.62,393.47,True,True,True,False,6492
+201367,21194,Psilophyton,419.62,393.47,True,True,True,False,6492
+201368,21194,Aphyllopteris,419.62,393.47,True,False,False,False,6492
+201369,21194,Hostinella,419.62,393.47,True,False,False,False,6492
+201370,21194,Hostinella,419.62,393.47,True,False,False,False,6492
+201379,21195,Sawdonia ornata,419.62,393.47,True,True,True,False,6492
+201380,21195,Drepanophycus spinaeformis,419.62,393.47,True,True,True,False,6492
+201381,21195,Psilophyton,419.62,393.47,True,True,True,False,6492
+201382,21195,Aphyllopteris,419.62,393.47,True,False,False,False,6492
+201383,21195,Hostinella,419.62,393.47,True,False,False,False,6492
+201384,21195,Hostinella,419.62,393.47,True,False,False,False,6492
+202129,21266,Psilophyton dawsonii,419.62,393.47,True,True,True,False,6516
+203800,11722,Zosterophyllum,419.62,413.02,True,True,True,False,4179
+203801,11722,Zosterophyllum,419.62,413.02,True,True,True,False,4179
+203802,11722,Taeniocrada,419.62,413.02,True,False,False,False,4179
+203803,11722,Hostinella,419.62,413.02,True,False,False,False,4179
+206465,23007,Chaleuria cirrosa,419.62,393.47,True,True,True,False,6627
+209040,22860,Taeniocrada,413.02,410.62,True,False,False,False,6577
+209042,22860,Hostinella,413.02,410.62,True,False,False,False,6577
+209043,22860,Pinakodendron,413.02,410.62,True,True,True,False,6577
+209048,22860,Taeniocrada,413.02,410.62,True,False,False,False,6577
+209049,22860,Aphyllopteris,413.02,410.62,True,False,False,False,6577
+209050,22860,Dawsonites arcuatus,413.02,410.62,True,True,True,False,6577
+209102,23197,Drepanophycus,413.02,410.62,True,True,True,False,6667
+209103,23197,Gosslingia breconensis,413.02,410.62,True,True,True,False,6667
+209212,23200,Psilophyton,413.02,399.5,True,True,True,False,6577
+209213,23200,Drepanophycus gaspianus,413.02,399.5,True,True,True,False,6577
+209214,23200,Drepanophycus,413.02,399.5,True,True,True,False,6577
+209215,23202,Aphyllopteris,413.02,399.5,True,False,False,False,6667
+209216,23202,Drepanophycus,413.02,399.5,True,True,True,False,6667
+209217,23202,Hostinella,413.02,399.5,True,False,False,False,6667
+209218,23202,Psilophyton,413.02,399.5,True,True,True,False,6667
+210418,23256,Taeniocrada,419.62,382.31,True,False,False,False,6577
+210420,23256,Sporogonites exuberans,419.62,382.31,True,False,False,False,6577
+210479,23258,Stocksmansella langii,419.62,382.31,True,True,False,False,6577
+210480,23258,Psilophyton princeps,419.62,382.31,True,True,True,False,6577
+210481,23258,Drepanophycus spinaeformis,419.62,382.31,True,True,True,False,6577
+210482,23258,Dawsonites arcuatus,419.62,382.31,True,True,True,False,6577
+210488,23260,Stocksmansella langii,419.62,382.31,True,True,False,False,6577
+210489,23260,Estinnophyton gracile,419.62,382.31,True,True,True,False,6577
+210794,23275,Svalbardia,419.62,358.86,True,True,True,False,6687
+210795,23275,Flabellofolium,419.62,358.86,True,True,False,False,6687
+232171,23523,Sporogonites exuberans,419.62,382.31,True,False,False,False,6577
+232172,23523,Drepanophycus spinaeformis,419.62,382.31,True,True,True,False,6577
+232173,23523,Taeniocrada,419.62,382.31,True,False,False,False,6577
+232174,23523,Psilophyton,419.62,382.31,True,True,True,False,6577
+232175,23525,Taeniocrada,419.62,382.31,True,False,False,False,6577
+232176,23525,Drepanophycus spinaeformis,419.62,382.31,True,True,True,False,6577
+232199,23528,Psilophyton,419.62,382.31,True,True,True,False,6667
+232200,23528,Rebuchia,419.62,382.31,True,True,True,False,6667
+232227,23535,Drepanophycus spinaeformis,419.62,382.31,True,True,True,False,6577
+232249,23536,Taeniocrada,419.62,382.31,True,False,False,False,6577
+232250,23536,Taeniocrada,419.62,382.31,True,False,False,False,6577
+232251,23536,Psilophyton,419.62,382.31,True,True,True,False,6577
+232252,23536,Psilophyton princeps,419.62,382.31,True,True,True,False,6577
+232253,23536,Drepanophycus gaspianus,419.62,382.31,True,True,True,False,6577
+232254,23536,Sporogonites exuberans,419.62,382.31,True,False,False,False,6577
+232255,23536,Drepanophycus spinaeformis,419.62,382.31,True,True,True,False,6577
+232256,23536,Psilophyton,419.62,382.31,True,True,True,False,6577
+232257,23538,Drepanophycus spinaeformis,419.62,382.31,True,True,True,False,6577
+232421,23541,Taeniocrada,419.62,382.31,True,False,False,False,6577
+232422,23541,Psilophyton,419.62,382.31,True,True,True,False,6577
+232423,23541,Drepanophycus gaspianus,419.62,382.31,True,True,True,False,6577
+232438,23545,Psilophyton princeps,419.62,382.31,True,True,True,False,6577
+232439,23545,Drepanophycus spinaeformis,419.62,382.31,True,True,True,False,6577
+232440,23545,Dawsonites arcuatus,419.62,382.31,True,True,True,False,6577
+232441,23545,Dawsonites,419.62,382.31,True,True,True,False,6577
+232442,23545,Sporogonites exuberans,419.62,382.31,True,False,False,False,6577
+233016,23559,Psilophyton princeps,419.62,382.31,True,True,True,False,6577
+233017,23559,Drepanophycus spinaeformis,419.62,382.31,True,True,True,False,6577
+233018,23559,Dawsonites arcuatus,419.62,382.31,True,True,True,False,6577
+233019,23559,Dawsonites,419.62,382.31,True,True,True,False,6577
+233020,23559,Sporogonites exuberans,419.62,382.31,True,False,False,False,6577
+233021,23559,Anisophyton cf. gothanii,419.62,382.31,True,True,True,False,6577
+233022,23559,Drepanophycus gaspianus,419.62,382.31,True,True,True,False,6577
+233023,23559,Foozia minuta,419.62,382.31,True,True,True,False,6577
+233024,23559,Psilophyton,419.62,382.31,True,True,True,False,6577
+233025,23559,Taeniocrada,419.62,382.31,True,False,False,False,6577
+233026,23559,Urpicalis steemansii,419.62,382.31,True,True,False,False,6577
+233074,23562,Stocksmansella langii,419.62,382.31,True,True,False,False,6577
+233075,23562,Psilophyton princeps,419.62,382.31,True,True,True,False,6577
+233076,23562,Psilophyton,419.62,382.31,True,True,True,False,6577
+233077,23562,Drepanophycus spinaeformis,419.62,382.31,True,True,True,False,6577
+233078,23562,Drepanophycus gaspianus,419.62,382.31,True,True,True,False,6577
+233079,23562,Dawsonites arcuatus,419.62,382.31,True,True,True,False,6577
+233080,23562,Sporogonites exuberans,419.62,382.31,True,False,False,False,6577
+233131,23564,Taeniocrada,419.62,382.31,True,False,False,False,6577
+233132,23564,Psilophyton,419.62,382.31,True,True,True,False,6577
+233133,23564,Drepanophycus spinaeformis,419.62,382.31,True,True,True,False,6577
+233134,23564,Dawsonites,419.62,382.31,True,True,True,False,6577
+233146,23565,Psilophyton,419.62,382.31,True,True,True,False,6577
+233147,23565,Drepanophycus gaspianus,419.62,382.31,True,True,True,False,6577
+233151,23567,Drepanophycus spinaeformis,419.62,382.31,True,True,True,False,6577
+233163,23007,Pertica,419.62,393.47,True,True,True,False,6739
+233204,23569,Psilophyton,419.62,382.31,True,True,True,False,6577
+233205,23569,Drepanophycus spinaeformis,419.62,382.31,True,True,True,False,6577
+233227,23571,Drepanophycus spinaeformis,419.62,382.31,True,True,True,False,6577
+233265,23572,Taeniocrada,419.62,382.31,True,False,False,False,6577
+233270,23575,Dawsonites,419.62,382.31,True,True,True,False,6577
+233271,23575,Drepanophycus,419.62,382.31,True,True,True,False,6577
+233272,23575,Drepanophycus,419.62,382.31,True,True,True,False,6577
+233273,23575,Psilophytites,419.62,382.31,True,False,False,False,6577
+233333,23576,Taeniocrada,419.62,382.31,True,False,False,False,6577
+233575,23580,Pertica varia,419.62,387.95,True,True,True,False,6742
+237845,23715,Psilophyton,419.62,382.31,True,True,True,False,6756
+237846,23715,Drepanophycus,419.62,382.31,True,True,True,False,6756
+244020,23962,Konioria andrychoviensis,419.62,393.47,True,True,True,False,6547
+244046,23967,Bathurstia denticulata n. gen. n. sp.,419.62,393.47,True,True,True,False,6543
+244047,23967,Rebuchia,419.62,393.47,True,True,True,False,6543
+244048,23967,Sawdonia ornata,419.62,393.47,True,True,True,False,6543
+244049,23967,Drepanophycus spinaeformis,419.62,393.47,True,True,True,False,6543
+244050,23967,Bathurstia sp.,419.62,393.47,True,True,True,False,6543
+244051,23967,<zosterophylloid>,419.62,393.47,True,True,True,False,6543
+245104,24038,Dawsonites arcuatus,419.62,382.31,True,True,True,False,6801
+245105,24038,Gosferia curvata,419.62,382.31,True,True,True,False,6801
+245106,24038,Krithodeophyton,419.62,382.31,True,True,False,False,6801
+245107,24038,Psilophyton,419.62,382.31,True,True,True,False,6801
+245108,24038,Psilophyton,419.62,382.31,True,True,True,False,6801
+245109,24038,Psilophyton,419.62,382.31,True,True,True,False,6801
+245110,24038,Psilophyton,419.62,382.31,True,True,True,False,6801
+245111,24038,Psilophyton,419.62,382.31,True,True,True,False,6801
+245112,24038,cf. Sawdonia ornata,419.62,382.31,True,True,True,False,6801
+245113,24038,Zosterophyllum,419.62,382.31,True,True,True,False,6801
+245114,24038,Zosterophyllum,419.62,382.31,True,True,True,False,6801
+245115,24040,Psilophyton,419.62,382.31,True,True,True,False,6801
+245137,24043,Psilophyton,419.62,382.31,True,True,True,False,6804
+245158,24046,Zosterophyllum,419.62,382.31,True,True,True,False,6806
+245164,24052,Gosferia curvata,419.62,382.31,True,True,True,False,6807
+245181,24054,Odonax borealis n. sp.,419.62,382.31,True,True,True,False,6808
+245190,24056,Psilophyton,419.62,382.31,True,True,True,False,6809
+246532,24146,Oricilla bilinearis n. gen. n. sp.,419.62,393.47,True,True,True,False,6545
+246558,23200,Estinnophyton gracile,413.02,399.5,True,True,True,False,6577
+246597,24151,Anisophyton cf. gothanii,419.62,382.31,True,True,True,False,6827
+246611,24153,Urpicalis steemansii,419.62,382.31,True,True,False,False,6828
+246612,24152,Foozia minuta,419.62,382.31,True,True,True,False,6828
+253668,24673,Stockmansella langii,419.62,393.47,True,True,False,False,6678
+256678,24903,Tracheophyta,422.7,393.47,True,True,False,False,6984
+256734,24907,Tracheophyta,419.62,413.02,True,True,False,False,6984
+261018,25242,Zosterophyllum,419.62,393.47,True,True,True,False,7072
+271121,26026,Drepanophycus spinaeformis,410.62,393.47,True,True,True,False,7211
+272261,26087,Cooksonia,422.7,419.62,True,True,False,False,4261
+273418,26176,Renalia,410.62,393.47,True,True,False,False,7258
+273419,26176,Distichophytum,410.62,393.47,True,True,True,False,7258
+273420,26176,<Trimerophyte>,410.62,393.47,True,True,True,False,7258
+273421,26176,Sawdonia wyomingense n. sp.,410.62,393.47,True,True,True,True,7258
+273422,26176,Drepanophycus,410.62,393.47,True,True,True,False,7258
+273423,26176,Leclercqia complexa,410.62,393.47,True,True,True,False,7258
+273425,26176,<Morphotype I>,410.62,393.47,True,False,False,True,7258
+273426,26176,<Morphotype II>,410.62,393.47,True,False,False,True,7258
+273934,26179,Gosslingia,419.62,393.47,True,True,True,False,7258
+273935,26179,Drepanophycus,419.62,393.47,True,True,True,False,7258
+273936,26179,Psilophyton,419.62,393.47,True,True,True,False,7258
+273937,26179,<Morphotype III>,419.62,393.47,True,False,False,False,7258
+277032,26424,Bitelaria dubjanskii,419.62,393.47,True,True,False,False,7274
+277033,26424,Psilophyton,419.62,393.47,True,True,True,False,7274
+277041,26438,Sawdonia acanthotheca n. sp.,419.62,393.47,True,True,True,False,6546
+277042,26438,Zosterophyllum divaricatum,419.62,393.47,True,True,True,False,6546
+277043,26438,Taeniocrada,419.62,393.47,True,False,False,False,6546
+277225,26439,Psilophyton,419.62,393.47,True,True,True,False,7275
+277226,26439,Oocampsa catheta,419.62,393.47,True,True,True,False,7275
+277227,26439,"<""Kaulangiophyton"">",419.62,393.47,True,True,True,False,7275
+277228,26439,"<""Leclercqia"">",419.62,393.47,True,True,True,False,7275
+277230,26525,Drepanophycus spinaeformis,419.62,393.47,True,True,True,False,7283
+277231,26525,Drepanophycus gaspianus,419.62,393.47,True,True,True,False,7283
+277232,26525,"<""Leclerqia"">",419.62,393.47,True,True,True,False,7283
+277233,26525,Sawdonia ornata,419.62,393.47,True,True,True,False,7283
+277238,26526,Drepanophycus spinaeformis,419.62,393.47,True,True,True,False,7283
+277239,26526,Drepanophycus gaspianus,419.62,393.47,True,True,True,False,7283
+277240,26526,Psilophyton,419.62,393.47,True,True,True,False,7283
+277241,26529,Drepanophycus spinaeformis,419.62,393.47,True,True,True,False,7283
+277242,26529,Drepanophycus spinaeformis,419.62,393.47,True,True,True,False,7283
+277259,26547,Psilophyton,410.62,393.47,True,True,True,False,7212
+278691,26650,Pertica,419.62,393.47,True,True,True,False,6505
+278708,26650,Psilophyton,419.62,393.47,True,True,True,False,6505
+278709,26650,"""Forania"" indet.",419.62,393.47,True,True,True,False,6505
+278710,26650,Psilophyton,419.62,393.47,True,True,True,False,6505
+278759,26536,Psilophyton,419.62,393.47,True,True,True,False,7287
+278807,26656,Drepanophycus spinaeformis,419.62,393.47,True,True,True,False,7340
+278808,26656,Psilophyton princeps,419.62,393.47,True,True,True,False,7340
+278810,26660,Psilophyton,419.62,393.47,True,True,True,False,7339
+278811,26660,"""Forania"" indet.",419.62,393.47,True,True,True,False,7339
+278969,26661,Aarabia brevicaulis n. gen. n. sp.,419.62,393.47,True,True,True,False,7359
+280033,26757,Zosterophyllum myretonianum,419.62,413.02,True,True,True,False,7380
+280096,26755,Zosterophyllum myretonianum,419.62,413.02,True,True,True,False,7380
+280638,26785,Drepanophycus spinaeformis,419.62,393.47,True,True,True,False,4167
+280639,26785,Sawdonia ornata,419.62,393.47,True,True,True,False,4167
+283809,26903,Taeniocrada,410.62,399.5,True,False,False,False,7445
+283811,26904,Psilophyton,410.62,399.5,True,True,True,False,7445
+283812,26904,Trimerophyton,410.62,399.5,True,True,True,False,7445
+283813,26904,Drepanophycus,410.62,399.5,True,True,True,False,7445
+284798,27049,Dawsonites,410.62,399.5,True,True,True,False,7464
+285520,27129,Taeniocrada,410.62,399.5,True,False,False,False,7465
+285521,27129,Taeniocrada,410.62,399.5,True,False,False,False,7465
+285522,27129,Zosterophyllum,410.62,399.5,True,True,True,False,7465
+285523,27129,Psilophyton,410.62,399.5,True,True,True,False,7465
+285891,27182,Cooksonia,419.62,413.02,True,True,False,False,6340
+293201,27917,Zosterophyllum,422.7,393.47,True,True,True,False,4053
+293852,28038,Psilophyton,419.62,393.47,True,True,True,False,7677
+293853,28038,Psilophyton,419.62,393.47,True,True,True,False,7677
+293854,28038,Drepanophycus,419.62,393.47,True,True,True,False,7677
+293855,28038,Hostinella,419.62,393.47,True,False,False,False,7677
+293856,28038,Aphyllopteris,419.62,393.47,True,False,False,False,7677
+293857,28038,Rhabdophyton striatus,419.62,393.47,True,False,False,False,7677
+293858,28038,Calamophyton,419.62,393.47,True,True,True,False,7677
+293859,28038,Dawsonites arcuatus,419.62,393.47,True,True,True,False,7677
+295198,28207,Psilophyton princeps,419.62,393.47,True,True,True,False,7678
+295199,28207,Psilophyton,419.62,393.47,True,True,True,False,7678
+295200,28207,Taeniocrada,419.62,393.47,True,False,False,False,7678
+295201,28207,Hostinella,419.62,393.47,True,False,False,False,7678
+295204,28207,<Articulale>,419.62,393.47,True,False,False,True,7678
+295205,28207,Zosterophyllum,419.62,393.47,True,True,True,False,7678
+295206,28207,Dawsonites arcuatus,419.62,393.47,True,True,True,False,7678
+295207,28207,Dawsonites,419.62,393.47,True,True,True,False,7678
+295208,28207,Sporogonites exuberans,419.62,393.47,True,False,False,False,7678
+295209,28207,Yarravia,419.62,393.47,True,True,False,False,7678
+295307,28216,Lycopodia indet.,419.62,393.47,True,True,True,True,6895
+295308,28216,Euphyllophytina,419.62,393.47,True,True,True,False,6895
+295309,28216,Euphyllophytina,419.62,393.47,True,True,True,False,6895
+295310,28216,Euphyllophytina,419.62,393.47,True,True,True,False,6895
+295311,28216,Euphyllophytina,419.62,393.47,True,True,True,False,6895
+295757,28302,Lepidodendropsis,419.62,393.47,True,True,True,False,6895
+295758,28302,Euphyllophytina,419.62,393.47,True,True,True,False,6895
+295759,28302,Euphyllophytina,419.62,393.47,True,True,True,False,6895
+295760,28303,Lycopodia indet.,419.62,393.47,True,True,True,True,6895
+295761,28303,Euphyllophytina,419.62,393.47,True,True,True,False,6895
+295762,28303,Euphyllophytina,419.62,393.47,True,True,True,False,6895
+298994,28768,Euphyllophytina,419.62,393.47,True,True,True,False,6895
+300355,28207,Drepanophycus spinaeformis,419.62,393.47,True,True,True,False,7678
+300508,28921,Drepanophycus,419.62,393.47,True,True,True,False,6895
+300509,28921,Euphyllophytina,419.62,393.47,True,True,True,False,6895
+300510,28921,Euphyllophytina,419.62,393.47,True,True,True,False,6895
+300517,28924,Euphyllophytina,410.62,393.47,True,True,True,False,6895
+300518,28924,Euphyllophytina,410.62,393.47,True,True,True,False,6895
+300705,28950,Euphyllophytina,410.62,393.47,True,True,True,False,6895
+300712,28950,Euphyllophytina,410.62,393.47,True,True,True,False,6895
+300713,28950,Euphyllophytina,410.62,393.47,True,True,True,False,6895
+300714,28950,Euphyllophytina,410.62,393.47,True,True,True,False,6895
+300781,28921,Euphyllophytina,419.62,393.47,True,True,True,False,6895
+300782,28921,Euphyllophytina,419.62,393.47,True,True,True,False,6895
+300783,28921,Euphyllophytina,419.62,393.47,True,True,True,False,6895
+300785,28968,Euphyllophytina,410.62,393.47,True,True,True,False,6895
+300786,28968,Euphyllophytina,410.62,393.47,True,True,True,False,6895
+300787,28968,Euphyllophytina,410.62,393.47,True,True,True,False,6895
+300788,28968,Psilophyton,410.62,393.47,True,True,True,False,6895
+300789,28969,Lycopodia indet.,410.62,393.47,True,True,True,True,6895
+300790,28969,Euphyllophytina,410.62,393.47,True,True,True,False,6895
+300791,28969,Euphyllophytina,410.62,393.47,True,True,True,False,6895
+300792,28969,Euphyllophytina,410.62,393.47,True,True,True,False,6895
+300793,28969,Euphyllophytina,410.62,393.47,True,True,True,False,6895
+300794,28969,Euphyllophytina,410.62,393.47,True,True,True,False,6895
+300795,28969,Euphyllophytina,410.62,393.47,True,True,True,False,6895
+300799,28971,Euphyllophytina,410.62,393.47,True,True,True,False,6895
+300800,28971,Euphyllophytina,410.62,393.47,True,True,True,False,6895
+300801,28971,Euphyllophytina,410.62,393.47,True,True,True,False,6895
+300802,28971,Euphyllophytina,410.62,393.47,True,True,True,False,6895
+301118,28996,Psilophyton,410.62,393.47,True,True,True,False,6895
+301119,28996,Psilophyton princeps,410.62,393.47,True,True,True,False,6895
+301120,28996,Trimerophyton,410.62,393.47,True,True,True,False,6895
+301121,28996,Euphyllophytina,410.62,393.47,True,True,True,False,6895
+301122,28996,Euphyllophytina,410.62,393.47,True,True,True,False,6895
+301123,28997,Psilophyton princeps,410.62,393.47,True,True,True,False,6895
+301124,28997,Euphyllophytina,410.62,393.47,True,True,True,False,6895
+301125,20822,Crenaticaulis,410.62,382.31,True,True,True,False,6895
+301126,20822,Euphyllophytina,410.62,382.31,True,True,True,False,6895
+301127,28998,Lycopodia ? sp.,410.62,393.47,True,True,True,True,6895
+301128,28998,Euphyllophytina,410.62,393.47,True,True,True,False,6895
+301129,28998,Euphyllophytina,410.62,393.47,True,True,True,False,6895
+301130,28998,Euphyllophytina,410.62,393.47,True,True,True,False,6895
+301131,28998,Euphyllophytina,410.62,393.47,True,True,True,False,6895
+301132,28998,Euphyllophytina,410.62,393.47,True,True,True,False,6895
+301146,28969,Euphyllophytina,410.62,393.47,True,True,True,False,6895
+301147,28969,Euphyllophytina,410.62,393.47,True,True,True,False,6895
+301148,28969,Euphyllophytina,410.62,393.47,True,True,True,False,6895
+301149,28969,Euphyllophytina,410.62,393.47,True,True,True,False,6895
+301167,28921,Euphyllophytina,419.62,393.47,True,True,True,False,6895
+301170,28924,Euphyllophytina,410.62,393.47,True,True,True,False,6895
+301171,28924,Euphyllophytina,410.62,393.47,True,True,True,False,6895
+301172,28924,Sawdonia sp.,410.62,393.47,True,True,True,False,6895
+301173,28924,Taeniocrada,410.62,393.47,True,False,False,False,6895
+301174,29001,Lycopodia indet.,410.62,393.47,True,True,True,True,6895
+301175,29001,Euphyllophytina,410.62,393.47,True,True,True,False,6895
+301176,29001,Euphyllophytina,410.62,393.47,True,True,True,False,6895
+301177,29002,Psilophyton,410.62,393.47,True,True,True,False,6895
+301178,29002,Euphyllophytina,410.62,393.47,True,True,True,False,6895
+301179,29003,Psilophyton,410.62,393.47,True,True,True,False,6895
+301180,29003,Euphyllophytina,410.62,393.47,True,True,True,False,6895
+301181,29003,Sawdonia sp.,410.62,393.47,True,True,True,False,6895
+301320,28921,Euphyllophytina,419.62,393.47,True,True,True,False,6895
+301321,28921,Euphyllophytina,419.62,393.47,True,True,True,False,6895
+301322,28921,Euphyllophytina,419.62,393.47,True,True,True,False,6895
+301323,28921,Euphyllophytina,419.62,393.47,True,True,True,False,6895
+301375,28924,Psilophyton princeps,410.62,393.47,True,True,True,False,6895
+301376,28924,Euphyllophytina,410.62,393.47,True,True,True,False,6895
+301377,29001,Euphyllophytina,410.62,393.47,True,True,True,False,6895
+301378,29001,Euphyllophytina,410.62,393.47,True,True,True,False,6895
+301379,28969,Euphyllophytina,410.62,393.47,True,True,True,False,6895
+301424,28968,Euphyllophytina,410.62,393.47,True,True,True,False,6895
+301425,28968,Euphyllophytina,410.62,393.47,True,True,True,False,6895
+301445,29020,Psilophyton,410.62,393.47,True,True,True,False,6895
+301446,29020,Euphyllophytina,410.62,393.47,True,True,True,False,6895
+301461,29021,Euphyllophytina,419.62,393.47,True,True,True,False,6895
+301462,29021,Euphyllophytina,419.62,393.47,True,True,True,False,6895
+301469,29026,Sawdonia ornata,410.62,393.47,True,True,True,False,6895
+301470,29026,Trimerophyton,410.62,393.47,True,True,True,False,6895
+301472,29029,Crenaticaulis,410.62,393.47,True,True,True,False,6895
+301473,29029,Dawsonites,410.62,393.47,True,True,True,False,6895
+302163,29003,Euphyllophytina,410.62,393.47,True,True,True,False,6895
+302164,29003,Euphyllophytina,410.62,393.47,True,True,True,False,6895
+302165,28971,Euphyllophytina,410.62,393.47,True,True,True,False,6895
+302166,28971,Euphyllophytina,410.62,393.47,True,True,True,False,6895
+302167,28971,Euphyllophytina,410.62,393.47,True,True,True,False,6895
+302168,28971,Euphyllophytina,410.62,393.47,True,True,True,False,6895
+302170,28968,Euphyllophytina,410.62,393.47,True,True,True,False,6895
+302171,28998,Psilophyton,410.62,393.47,True,True,True,False,6895
+303571,29292,Euphyllophytina,410.62,393.47,True,True,True,False,6895
+303572,29292,Euphyllophytina,410.62,393.47,True,True,True,False,6895
+303573,29292,Euphyllophytina,410.62,393.47,True,True,True,False,6895
+303574,29292,Euphyllophytina,410.62,393.47,True,True,True,False,6895
+303575,29292,Euphyllophytina,410.62,393.47,True,True,True,False,6895
+303576,29292,Euphyllophytina,410.62,393.47,True,True,True,False,6895
+303577,29292,Euphyllophytina,410.62,393.47,True,True,True,False,6895
+303578,29292,Euphyllophytina,410.62,393.47,True,True,True,False,6895
+303579,29292,Euphyllophytina,410.62,393.47,True,True,True,False,6895
+303580,29292,Euphyllophytina,410.62,393.47,True,True,True,False,6895
+303581,29292,Euphyllophytina,410.62,393.47,True,True,True,False,6895
+303583,29294,Euphyllophytina,410.62,393.47,True,True,True,False,6895
+303584,29294,Euphyllophytina,410.62,393.47,True,True,True,False,6895
+303585,29294,Euphyllophytina,410.62,393.47,True,True,True,False,6895
+303586,29294,Euphyllophytina,410.62,393.47,True,True,True,False,6895
+303587,29294,Euphyllophytina,410.62,393.47,True,True,True,False,6895
+303588,29294,Euphyllophytina,410.62,393.47,True,True,True,False,6895
+303589,29294,Euphyllophytina,410.62,393.47,True,True,True,False,6895
+303590,29294,Euphyllophytina,410.62,393.47,True,True,True,False,6895
+303591,29294,Euphyllophytina,410.62,393.47,True,True,True,False,6895
+303592,29294,Euphyllophytina,410.62,393.47,True,True,True,False,6895
+303593,29294,Euphyllophytina,410.62,393.47,True,True,True,False,6895
+303594,29294,Euphyllophytina,410.62,393.47,True,True,True,False,6895
+303595,29294,Euphyllophytina,410.62,393.47,True,True,True,False,6895
+303596,29294,Gosslingia,410.62,393.47,True,True,True,False,6895
+303600,29021,Euphyllophytina,419.62,393.47,True,True,True,False,6895
+303601,29021,Euphyllophytina,419.62,393.47,True,True,True,False,6895
+303602,29021,Euphyllophytina,419.62,393.47,True,True,True,False,6895
+303603,29021,Euphyllophytina,419.62,393.47,True,True,True,False,6895
+303604,31000,Euphyllophytina,410.62,393.47,True,True,True,False,6895
+303605,31000,Euphyllophytina,410.62,393.47,True,True,True,False,6895
+303606,31000,Euphyllophytina,410.62,393.47,True,True,True,False,6895
+303607,31000,Euphyllophytina,410.62,393.47,True,True,True,False,6895
+303608,31000,Euphyllophytina,410.62,393.47,True,True,True,False,6895
+303609,31000,Euphyllophytina,410.62,393.47,True,True,True,False,6895
+303610,31000,Euphyllophytina,410.62,393.47,True,True,True,False,6895
+303611,31000,Euphyllophytina,410.62,393.47,True,True,True,False,6895
+303612,31000,Psilophyton,410.62,393.47,True,True,True,False,6895
+303613,29334,Euphyllophytina,419.62,393.47,True,True,True,False,6895
+303614,29334,Euphyllophytina,419.62,393.47,True,True,True,False,6895
+303615,29334,Euphyllophytina,419.62,393.47,True,True,True,False,6895
+303616,29334,Euphyllophytina,419.62,393.47,True,True,True,False,6895
+303617,29334,Euphyllophytina,419.62,393.47,True,True,True,False,6895
+303618,29334,Euphyllophytina,419.62,393.47,True,True,True,False,6895
+303619,30997,Euphyllophytina,419.62,393.47,True,True,True,False,6895
+303620,30997,Euphyllophytina,419.62,393.47,True,True,True,False,6895
+303621,30997,Taeniocrada,419.62,393.47,True,False,False,False,6895
+303622,30998,Euphyllophytina,419.62,393.47,True,True,True,False,6895
+303623,30998,Euphyllophytina,419.62,393.47,True,True,True,False,6895
+303624,30998,Euphyllophytina,419.62,393.47,True,True,True,False,6895
+303625,30998,Euphyllophytina,419.62,393.47,True,True,True,False,6895
+303626,30998,Euphyllophytina,419.62,393.47,True,True,True,False,6895
+303627,30998,Euphyllophytina,419.62,393.47,True,True,True,False,6895
+303628,30999,Drepanophycus gaspianus,419.62,393.47,True,True,True,False,6895
+303629,30999,Euphyllophytina,419.62,393.47,True,True,True,False,6895
+303630,30999,Euphyllophytina,419.62,393.47,True,True,True,False,6895
+303631,30999,Euphyllophytina,419.62,393.47,True,True,True,False,6895
+303632,30999,Euphyllophytina,419.62,393.47,True,True,True,False,6895
+303633,30999,Euphyllophytina,419.62,393.47,True,True,True,False,6895
+303634,30999,Euphyllophytina,419.62,393.47,True,True,True,False,6895
+303635,30999,Euphyllophytina,419.62,393.47,True,True,True,False,6895
+303637,31002,Euphyllophytina,410.62,393.47,True,True,True,False,6895
+303638,31002,Euphyllophytina,410.62,393.47,True,True,True,False,6895
+303639,31002,Euphyllophytina,410.62,393.47,True,True,True,False,6895
+303640,31002,Euphyllophytina,410.62,393.47,True,True,True,False,6895
+303641,31002,Euphyllophytina,410.62,393.47,True,True,True,False,6895
+303642,31002,Euphyllophytina,410.62,393.47,True,True,True,False,6895
+303643,31003,Euphyllophytina,410.62,393.47,True,True,True,False,6895
+303644,31003,Euphyllophytina,410.62,393.47,True,True,True,False,6895
+303645,31003,Euphyllophytina,410.62,393.47,True,True,True,False,6895
+303646,31003,Euphyllophytina,410.62,393.47,True,True,True,False,6895
+303647,31004,Drepanophycus,410.62,393.47,True,True,True,False,6895
+303648,31004,Euphyllophytina,410.62,393.47,True,True,True,False,6895
+303649,31004,Euphyllophytina,410.62,393.47,True,True,True,False,6895
+303650,31004,Euphyllophytina,410.62,393.47,True,True,True,False,6895
+303651,31004,Euphyllophytina,410.62,393.47,True,True,True,False,6895
+303652,31004,Euphyllophytina,410.62,393.47,True,True,True,False,6895
+303653,31004,Euphyllophytina,410.62,393.47,True,True,True,False,6895
+303654,31004,Euphyllophytina,410.62,393.47,True,True,True,False,6895
+303655,31004,Euphyllophytina,410.62,393.47,True,True,True,False,6895
+303656,31005,Lycopodia indet.,410.62,393.47,True,True,True,True,6895
+303657,31005,Euphyllophytina,410.62,393.47,True,True,True,False,6895
+303658,31005,Euphyllophytina,410.62,393.47,True,True,True,False,6895
+303659,31005,Euphyllophytina,410.62,393.47,True,True,True,False,6895
+303661,29029,Lycopodia <sp.>,410.62,393.47,True,True,True,True,6895
+303662,29029,Euphyllophytina,410.62,393.47,True,True,True,False,6895
+303663,29029,Euphyllophytina,410.62,393.47,True,True,True,False,6895
+303664,29029,Euphyllophytina,410.62,393.47,True,True,True,False,6895
+303665,30997,Lycopodia indet.,419.62,393.47,True,True,True,True,6895
+303666,31007,Drepanophycus spinaeformis,410.62,393.47,True,True,True,False,6895
+303667,31007,Euphyllophytina,410.62,393.47,True,True,True,False,6895
+303668,31007,Euphyllophytina,410.62,393.47,True,True,True,False,6895
+303669,31007,Euphyllophytina,410.62,393.47,True,True,True,False,6895
+303670,31007,Euphyllophytina,410.62,393.47,True,True,True,False,6895
+303674,31010,Drepanophycus spinaeformis,410.62,393.47,True,True,True,False,6895
+303675,31010,Taeniocrada,410.62,393.47,True,False,False,False,6895
+303676,31010,Euphyllophytina,410.62,393.47,True,True,True,False,6895
+303677,31010,Euphyllophytina,410.62,393.47,True,True,True,False,6895
+303678,31010,Euphyllophytina,410.62,393.47,True,True,True,False,6895
+303687,31011,Sawdonia ornata,410.62,393.47,True,True,True,False,6895
+303688,31011,Lycopodia indet.,410.62,393.47,True,True,True,True,6895
+303689,31011,Euphyllophytina,410.62,393.47,True,True,True,False,6895
+303690,31011,Euphyllophytina,410.62,393.47,True,True,True,False,6895
+303691,31011,Euphyllophytina,410.62,393.47,True,True,True,False,6895
+303692,31011,Euphyllophytina,410.62,393.47,True,True,True,False,6895
+303693,31011,Euphyllophytina,410.62,393.47,True,True,True,False,6895
+303767,31023,Lycopodia indet.,410.62,393.47,True,True,True,True,6895
+303768,31023,Euphyllophytina,410.62,393.47,True,True,True,False,6895
+303769,31023,Euphyllophytina,410.62,393.47,True,True,True,False,6895
+303770,31023,Euphyllophytina,410.62,393.47,True,True,True,False,6895
+303771,31023,Euphyllophytina,410.62,393.47,True,True,True,False,6895
+303772,31023,Euphyllophytina,410.62,393.47,True,True,True,False,6895
+303773,31023,Euphyllophytina,410.62,393.47,True,True,True,False,6895
+303774,31023,Euphyllophytina,410.62,393.47,True,True,True,False,6895
+303775,31023,Sawdonia ornata,410.62,393.47,True,True,True,False,6895
+303776,31023,Psilophyton,410.62,393.47,True,True,True,False,6895
+303777,31023,Euphyllophytina,410.62,393.47,True,True,True,False,6895
+303778,31023,Euphyllophytina,410.62,393.47,True,True,True,False,6895
+303797,31027,Sawdonia ornata,410.62,393.47,True,True,True,False,6895
+303798,31027,Euphyllophytina,410.62,393.47,True,True,True,False,6895
+303799,31027,Euphyllophytina,410.62,393.47,True,True,True,False,6895
+303800,31027,Euphyllophytina,410.62,393.47,True,True,True,False,6895
+303801,31027,Euphyllophytina,410.62,393.47,True,True,True,False,6895
+303802,31027,Euphyllophytina,410.62,393.47,True,True,True,False,6895
+303803,31027,Euphyllophytina,410.62,393.47,True,True,True,False,6895
+303804,31027,Euphyllophytina,410.62,393.47,True,True,True,False,6895
+303819,28950,Euphyllophytina,410.62,393.47,True,True,True,False,6895
+305664,29334,Psilophyton princeps,419.62,393.47,True,True,True,False,6895
+305670,28924,Euphyllophytina,410.62,393.47,True,True,True,False,6895
+331622,31023,Euphyllophytina,410.62,393.47,True,True,True,False,6895
+331623,31023,Euphyllophytina,410.62,393.47,True,True,True,False,6895
+331624,31023,Euphyllophytina,410.62,393.47,True,True,True,False,6895
+331625,31023,Euphyllophytina,410.62,393.47,True,True,True,False,6895
+331626,31212,Euphyllophytina,410.62,393.47,True,True,True,False,6895
+331627,31212,Euphyllophytina,410.62,393.47,True,True,True,False,6895
+331628,31212,Euphyllophytina,410.62,393.47,True,True,True,False,6895
+331629,31212,Euphyllophytina,410.62,393.47,True,True,True,False,6895
+331630,31212,Euphyllophytina,410.62,393.47,True,True,True,False,6895
+331631,31212,Euphyllophytina,410.62,393.47,True,True,True,False,6895
+331633,31213,Euphyllophytina,410.62,393.47,True,True,True,False,6895
+331634,31213,Euphyllophytina,410.62,393.47,True,True,True,False,6895
+331636,31214,Euphyllophytina,410.62,393.47,True,True,True,False,6895
+331637,31214,Euphyllophytina,410.62,393.47,True,True,True,False,6895
+331638,31214,Euphyllophytina,410.62,393.47,True,True,True,False,6895
+331639,31214,Euphyllophytina,410.62,393.47,True,True,True,False,6895
+331640,28950,Lycopodia indet.,410.62,393.47,True,True,True,True,6895
+331641,28950,Euphyllophytina,410.62,393.47,True,True,True,False,6895
+331642,28950,Euphyllophytina,410.62,393.47,True,True,True,False,6895
+331643,28950,Euphyllophytina,410.62,393.47,True,True,True,False,6895
+331644,28950,Euphyllophytina,410.62,393.47,True,True,True,False,6895
+331645,28950,Euphyllophytina,410.62,393.47,True,True,True,False,6895
+331646,28950,Euphyllophytina,410.62,393.47,True,True,True,False,6895
+331647,28950,Euphyllophytina,410.62,393.47,True,True,True,False,6895
+331648,31215,Sawdonia ornata,410.62,393.47,True,True,True,False,6895
+331649,31215,Euphyllophytina,410.62,393.47,True,True,True,False,6895
+331650,31216,Lycopodia indet.,410.62,393.47,True,True,True,True,6895
+331651,31216,Euphyllophytina,410.62,393.47,True,True,True,False,6895
+331652,31216,Euphyllophytina,410.62,393.47,True,True,True,False,6895
+331653,31216,Euphyllophytina,410.62,393.47,True,True,True,False,6895
+331654,31216,Euphyllophytina,410.62,393.47,True,True,True,False,6895
+331655,31216,Euphyllophytina,410.62,393.47,True,True,True,False,6895
+331726,28950,Euphyllophytina,410.62,393.47,True,True,True,False,6895
+331727,28950,Euphyllophytina,410.62,393.47,True,True,True,False,6895
+331728,28950,Euphyllophytina,410.62,393.47,True,True,True,False,6895
+347755,32851,Yarravia,413.02,393.47,True,True,False,False,8796
+347756,32851,Drepanophycus spinaeformis,413.02,393.47,True,True,True,False,8796
+347757,32851,Zosterophyllum,413.02,393.47,True,True,True,False,8796
+347758,32851,Blasaria,413.02,393.47,True,True,True,False,8796
+369441,34965,Gosslingia breconensis,419.62,393.47,True,True,True,False,9403
+376886,35559,Psilophytopsida,419.62,393.47,True,True,False,False,9604
+378154,35709,Blasaria,410.62,399.5,True,True,True,False,9633
+378155,35709,Hostinella,410.62,399.5,True,False,False,False,9633
+378156,35709,Protocephalopteris praecox,410.62,399.5,True,True,True,False,9633
+378157,35709,Taeniocrada,410.62,399.5,True,False,False,False,9633
+378158,35709,Psilophyton,410.62,399.5,True,True,True,False,9633
+378839,35721,Hostinella,399.5,387.95,True,False,False,False,9633
+378840,35721,Protocephalopteris praecox,399.5,387.95,True,True,True,False,9633
+378841,35721,Psilophyton,399.5,387.95,True,True,True,False,9633
+378842,35721,Drepanophycus,399.5,387.95,True,True,True,False,9633
+378844,35721,Barsassia ornata,399.5,387.95,True,True,True,False,9633
+378845,35721,Uralia,399.5,387.95,True,True,False,True,9633
+378846,35721,Anaeurophyton germanicum,399.5,387.95,True,True,True,False,9633
+387387,24146,Psilophyton,419.62,393.47,True,True,True,False,7339
+388299,37128,Archaeosigillaria,410.62,387.95,True,True,True,False,9944
+388300,37128,Palaeostigma,410.62,387.95,True,True,False,False,9944
+388301,37128,Protolepidodendron,410.62,387.95,True,True,True,False,9944
+518520,52667,Cooksonia,422.7,419.62,True,True,False,False,13946
+518521,52667,Hostinella,422.7,419.62,True,False,False,False,13946
+518618,52698,Cooksonia,422.7,419.62,True,True,False,False,7704
+518623,52702,Cooksonia hemisphaerica,422.7,419.62,True,True,False,False,14181
+518624,52702,Cooksonia pertoni,422.7,419.62,True,True,False,False,14181
+518625,52702,Cooksonia,422.7,419.62,True,True,False,False,14181
+518626,52702,Cooksonia,422.7,419.62,True,True,False,False,14181
+518627,52702,Eorhynia primigenia,422.7,419.62,True,True,False,False,14181
+518628,52702,Zosterophyllum myretonianum,422.7,419.62,True,True,True,False,14181
+518629,52702,Protosawdonia prima n. gen. n. sp.,422.7,419.62,True,False,False,False,14181
+521942,53599,Hostinella,422.7,419.62,True,False,False,False,6340
+521970,53609,Eocooksonia,422.7,419.62,True,True,False,False,14186
+521971,53609,Jugumella burubaensis,422.7,419.62,True,True,False,False,14186
+521972,53610,Jugumella burubaensis,422.7,419.62,True,True,False,False,14186
+522035,53656,Eocooksonia,422.7,419.62,True,True,False,False,14186
+522036,53656,Eocooksonia,422.7,419.62,True,True,False,False,14186
+522037,53656,Jugumella burubaensis,422.7,419.62,True,True,False,False,14186
+522041,53659,Jugumella burubaensis,422.7,419.62,True,True,False,False,14473
+522042,53659,Taeniocrada,422.7,419.62,True,False,False,False,14473
+522043,53659,Eocooksonia,422.7,419.62,True,True,False,False,14473
+522044,53660,Baragwanathia longifolia,426.7,422.7,True,True,True,False,14184
+522045,53660,Yarravia,426.7,422.7,True,True,False,False,14184
+522046,53660,Salopella australia,426.7,422.7,True,True,False,False,14184
+522062,53664,Baragwanathia longifolia,426.7,422.7,True,True,True,False,14185
+522075,53669,Cooksonia,422.7,419.62,True,True,False,False,14183
+522459,53825,Cooksonia,422.7,419.62,True,True,False,False,14490
+522460,53825,Cooksonia,422.7,419.62,True,True,False,False,14490
+522461,53825,Hostinella,422.7,419.62,True,False,False,False,14490
+522469,53827,Cooksonia hemisphaerica,422.7,419.62,True,True,False,False,14490
+522470,53827,Hostinella,422.7,419.62,True,False,False,False,14490
+522471,53830,Hostinella,422.7,419.62,True,False,False,False,14490
+527470,53831,Hostinella,422.7,419.62,True,False,False,False,14490
+527471,53832,Hostinella,432.9,422.7,True,False,False,False,14490
+527481,53837,Hostinella,422.7,419.62,True,False,False,False,14490
+528133,53919,Macivera gracilis,426.7,419.62,True,True,True,False,3920
+528135,53920,Zosterophyllum,426.7,419.62,True,True,True,False,3920
+574411,60395,Zosterophyllum myretonianum,419.62,393.47,True,True,True,False,17373
+574412,60395,Protobarinophyton obrutschevii,419.62,393.47,True,True,True,False,17373
+574413,60395,Pectinophyton,419.62,393.47,True,True,True,False,17373
+574414,60395,Psilophyton,419.62,393.47,True,True,True,False,17373
+574415,60395,Psilophytites,419.62,393.47,True,False,False,False,17373
+574417,60395,Protohyenia janovii,419.62,393.47,True,True,True,False,17373
+955708,111863,Taeniocrada,419.62,382.31,True,False,False,False,36540
+955709,111863,Psilophyton,419.62,382.31,True,True,True,False,36540
+1412236,14147,Eorhynia primigenia,425.0,419.62,True,True,False,False,66364
+1412238,14147,Cooksonia,425.0,419.62,True,True,False,False,66364
+1412239,14147,Zosterophyllum myretonianum,425.0,419.62,True,True,True,False,66364
+1456347,203163,Renalia hueberi,410.62,399.5,True,True,False,False,61616
+1643022,232956,Selaginellites gracilis,399.5,393.47,True,True,True,True,86836
+1682289,232143,Drepanophycus spinaeformis,413.02,410.62,True,True,True,False,90489
+1682442,238400,Margophyton,410.62,399.5,True,True,True,False,90519
+1682443,238400,Drepanophycus gaspianus,410.62,399.5,True,True,True,False,90519
+1685795,238752,Drepanophycus,413.02,410.62,True,True,True,False,30349
+1685796,238752,Gosslingia,413.02,410.62,True,True,True,False,30349
+1685797,238752,Zosterophyllum,413.02,410.62,True,True,True,False,30349
+2062376,278439,Aberlemnia sp.,422.7,419.62,True,True,True,False,94384
+2063047,153611,Tracheophyta,425.0,422.7,True,True,False,False,94569

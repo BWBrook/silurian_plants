@@ -1,0 +1,19 @@
+collection_no,obs_id,material_root,basis,locator
+20657,M-eohostimella-heathana,M-eohostimella-heathana,explicit collection or occurrence identifier in curated observation,Schopf et al. pp. D69–D75; PBDB collection 20657
+53660,M-ghin-ghin,M-ghin-ghin,explicit collection or occurrence identifier in curated observation,taxa/baragwanathia-flora.md; PBDB collection 53660
+20754,M-limestone-road,M-limestone-road,explicit collection or occurrence identifier in curated observation,taxa/baragwanathia-flora.md; PBDB collection 20754
+3857,M-pbdb-51644,M-boiophyton,explicit collection or occurrence identifier in curated observation,pbdb_pre_pridoli.csv occurrence_no=51644
+53920,M-pbdb-bathurst384,M-bathurst-us384,explicit collection or occurrence identifier in curated observation,pbdb_pre_pridoli.csv occurrence_no=528135
+53919,M-pbdb-bathurst385,M-bathurst-us385,explicit collection or occurrence identifier in curated observation,pbdb_pre_pridoli.csv occurrence_no=528133
+10594,M-pbdb-borrisnoe,M-borrisnoe,explicit collection or occurrence identifier in curated observation,pbdb_pre_pridoli.csv occurrence_no=128542;128810;128811;128812
+153611,M-pbdb-capel,M-capel-horeb-ludlow,explicit collection or occurrence identifier in curated observation,pbdb_pre_pridoli.csv occurrence_no=2063047
+20657,M-pbdb-eohostimella,M-eohostimella-heathana,explicit collection or occurrence identifier in curated observation,pbdb_pre_pridoli.csv occurrence_no=200034
+53660,M-pbdb-ghin,M-ghin-ghin,explicit collection or occurrence identifier in curated observation,pbdb_pre_pridoli.csv occurrence_no=522044
+20759,M-pbdb-kosov,M-bohemica,explicit collection or occurrence identifier in curated observation,pbdb_pre_pridoli.csv occurrence_no=200323;200324
+20754,M-pbdb-limestone,M-limestone-road,explicit collection or occurrence identifier in curated observation,pbdb_pre_pridoli.csv occurrence_no=200321;200322
+14147,M-pbdb-podolia,M-podolia-zosterophyllum,explicit collection or occurrence identifier in curated observation,pbdb_pre_pridoli.csv occurrence_no=1412239
+20677,M-pbdb-san-isidro,M-san-isidro,explicit collection or occurrence identifier in curated observation,pbdb_pre_pridoli.csv occurrence_no=200164
+20839,M-pbdb-svalbard,M-svalbard,explicit collection or occurrence identifier in curated observation,pbdb_pre_pridoli.csv occurrence_no=200508
+53664,M-pbdb-yea,M-yea-unspecified,explicit collection or occurrence identifier in curated observation,pbdb_pre_pridoli.csv occurrence_no=522062
+20839,M-svalbard,M-svalbard,explicit collection or occurrence identifier in curated observation,PBDB collection 20839; occurrence 200508
+53664,M-yea-unspecified,M-yea-unspecified,explicit collection or occurrence identifier in curated observation,PBDB collection 53664; occurrence 522062
