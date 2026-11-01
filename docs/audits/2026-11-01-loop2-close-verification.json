@@ -1,0 +1,15 @@
+{
+  "qualification_receipts": 28,
+  "unique_qualification_inputs": 18,
+  "tests": "51 passed",
+  "observation_audit": "164 rows pass",
+  "earlier_sprint_receipt": "23 source hashes,21 admissions,84 file hashes pass",
+  "unchanged_frozen_tracked_content_files": 262,
+  "preexisting_checkout_line_ending_difference": [
+    "models/f3/out/reoptimise_cal.csv"
+  ],
+  "models/f3/loop2/replication/out/qsim_share_receipt.json": "pass",
+  "manuscript/figures/figures.json": "pass",
+  "pilot_summary_bindings": "pass; R not rerun",
+  "scope": "provenance and computational verification, not new qualification"
+}

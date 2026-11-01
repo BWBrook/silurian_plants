@@ -3,6 +3,34 @@
 Dated record of decisions that shape the programme. Newest first. Say who decided, and quote
 Barry exactly (with source) or label a paraphrase.
 
+## 2026-11-01: Loop 2 closed after Codex's review and repairs
+
+Barry asked Codex to check Claude's Board updates and repository, critique sprint 2, and resolve
+outstanding work before closure. Codex reviewed `2133389`/`cb70b36` and Board 2791–2793, using
+independent statistical, QSIM-source and affinity reviews. `loop2-close.md` records the resolution.
+
+- The 99 QSIM marks are correct, and the random-lower-bound argument is valid under its model.
+  Its historical co-ascertainment and independent target-detectable units are not demonstrated.
+  Adopt the calculation as exploratory, not a new empirical confidence bound or admitted primary
+  frame. It bounds a minimum; D=2/4 rows are heuristic. The single-study manuscript branch applies.
+- Correct primary Murzuq H0c/H0 at 459.1 Ma to 0.0910/0.1835, the values already in frozen outputs.
+  g denotes indigenous encounter intensity; conditional windows do not imply constant-history
+  compatibility. Qualification and all frozen files remain unchanged.
+- Preserve the main Cambrian E2 reading and the expressly assumed inclusive alternative.
+  Withdraw unsupported circularity and definitive affinity-rejection claims, distinguish source
+  dates from ICS conversion, and retain Argentine 7999's named-reading outcomes.
+- Correct Hanadir to separate TAYM-4 material, withdraw undocumented exhaustive reference-search
+  claims and specimen-count readings of taxon prose, and add the missing specimen-to-node pilot
+  synthesis. Re-render all dependent manuscript artefacts and update source/claim/package ledgers.
+
+**Structural review:** the paired sprint delivered a complete private research package after
+counter-review narrowed its external inference. It exposed both a useful marks-based method
+and the observation contract needed to apply it. The existing versioned outputs supported
+correction without re-running R or altering frozen qualifications. Q1/Q2 remain open scientific
+questions; Loop 2's implementation/review tranche is closed. The next priority is a bounded
+microscopy/ascertainment and matched-count evidence request, not another unconstrained model or
+an automatic further sprint. Barry retains external contact, public release and submission.
+
 ## 2026-11-01: review 1 and Loop 2 sprint 2 (Claude)
 
 Barry, in Claude chat: "Back to you for review, and your sprint (if ready)."

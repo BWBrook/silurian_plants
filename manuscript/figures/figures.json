@@ -1,6 +1,28 @@
 {
-  "data/units/loop2/replication/qsim801_vecoli2017_table1.csv": "325e97fa006e7f2fd3f50cb5f193fbd843356a646341f871088aa4644dd66754",
-  "data/timescale.csv": "29c6cc4a68b1746d1a67c66623e5df30ac5dd316257b55ca5948c9854886f826",
-  "models/f3/loop2/contamination.py": "a9b9ef588e1d590501eeb0cecef4d5d22929f4dd98a1c989a418f9b53da4fe25",
-  "manuscript/figures.py": "aee687a953cb991bbddbe8ce2fbb8a81a98036f109023ee7f7c84baf93a4814e"
+  "inputs": {
+    "models/f3/loop2/robustness_design.json": "31a30020be0b312e9726482667c4efc3bac477fc733df3730a0c7dfae9637610",
+    "models/f3/loop2/contamination.py": "a9b9ef588e1d590501eeb0cecef4d5d22929f4dd98a1c989a418f9b53da4fe25",
+    "models/f3/loop2/test_contamination.py": "2d01164769b886cd69a39944f557cec31d2cb272a4bf7951b8a27eab836d63b1",
+    "docs/audits/2026-11-01-loop2-count-gate.md": "35dc5919d6fbcd7f7f157beb335811a26eb608d921ecb5de4a6ca74d49590ce1",
+    "models/f3/designs.py": "0fd2588f84b5dd0b3fabcd45a875de203f8b28f5320aeb6f9adf7148f4f44ca8",
+    "models/f3/envelope.py": "0f6d1b2e9cb2e99b2d7211fafaf442c5946fa7f3579f6940d453d2084f18d473",
+    "models/f3/sim.py": "a37ea8c62919d43fe0fab85cdbce2f6c554fc9371b035e11d179e75b224e7bf7",
+    "models/f3/designs/m2.toml": "d27bd4277d9910a9396f688d0b893b06f5feeea007523134a8e49b09bb5421bd",
+    "data/timescale.csv": "29c6cc4a68b1746d1a67c66623e5df30ac5dd316257b55ca5948c9854886f826",
+    "data/units/libya_appendix1.csv": "b3b8861263d08fa0a0f042de149a7b1719bb4e0e341e35787f210a3e40c228a1",
+    "data/units/libya_chart_reports.csv": "54881d62e2cfe4720ea405d77403f9e873e27a4db3519ee5f7dc001a73e1d01c",
+    "data/units/libya_prose_support.csv": "3a89c14c0287691ec2a1d26ec23a95c26b0fbca3b89bd6e8d7831118c0608e98",
+    "data/units/loop2/replication/qsim801_vecoli2017_table1.csv": "325e97fa006e7f2fd3f50cb5f193fbd843356a646341f871088aa4644dd66754",
+    "manuscript/figures.py": "29ce047da2280db98c1098c9a6664d2d60801e36cf0a679aa4ba4be3ba97258e",
+    "manuscript/mapping.csv": "ddb3fe9f01b0eb300afa9019730e3ee99bfe3b8e0ca2aa42c8442391046a0c55"
+  },
+  "outputs": {
+    "manuscript/figures/fig1_support.png": "2e3448bcc7c204bb3557236a226984325226b9ae239156bf6f1b5afab9bc38fc",
+    "manuscript/figures/fig3_qsim_share.png": "ba96267bf6a15379e7cb6171367a478a1e770b6d40ebef1d1b6f0ab467d5389b",
+    "manuscript/figures/fig4_mapping.png": "68e43a5bac88fbff5bdd0374a9751e01d1d097ea7df18f32c06c36f3d390009b",
+    "manuscript/figures/fig1_support.pdf": "b58a768e3da5c8ae7a089bbeec6486826dd0c3f7b4bc700f61e99378d2bdf9a0",
+    "manuscript/figures/fig3_qsim_share.pdf": "e66d5f0372ca08791afbcfcc537834047eb8c3b83c4e7ea43459dbd0f987b605",
+    "manuscript/figures/fig4_mapping.pdf": "45bc71c732cba3bedd08c35a928e5000d5d36fef8c8557bb2dcc8b04b2c3fe38"
+  },
+  "status": "source-support-and-model-conditional-illustrations"
 }

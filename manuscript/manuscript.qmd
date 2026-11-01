@@ -1,9 +1,9 @@
 ---
 title: "Which fossil maximum ages for the origin of land plants can the sampled record test?"
-subtitle: "Internal research draft, Loop 2 sprint 2. Not for release; release and submission are Barry W. Brook's decision."
+subtitle: "Internal research draft, revised after Loop 2 review. Not for release; release and submission are Barry W. Brook's decision."
 author:
   - Barry W. Brook
-  - Claude Opus 5.5 (Anthropic) and OpenAI Codex (AI collaborators; roles stated in full below)
+  - Claude Opus 5.5 and OpenAI Codex (AI roles below)
 date: 2026-11-01
 format:
   html:
@@ -18,410 +18,340 @@ format:
 
 ## Abstract
 
-Molecular clocks for land plants rely on fossil maximum ages: claims that a lineage did not
-yet exist because its diagnostic fossils are absent from older rocks. Such a claim is testable
-only if the older rocks were searched in a way that would have found the fossils. We tested
-three maxima in current use under explicit sampling models:
+Fossil maximum-age arguments require both an observation model for absence and a biological
+link from the diagnostic character to the dated node. We assessed the sampled evidence behind
+three land-plant clock maxima: 515.5 and 459.1 Ma for crown Embryophyta, and 431.2 Ma for crown
+Tracheophyta. Of the assessed frames, only a Murzuq Basin cutting series supports a qualified
+older-zero/reference comparison. It contains 28 older cuttings without trilete reports and 51
+detections among 59 Llandovery reference cuttings. At equal older/reference delivery, the
+constant and exposure-weighted intensity limits at 459.1 Ma are 0.0910 and 0.1835 of reference
+encounter. A reference-level window extends to 462.6 Ma, but its location is sensitive to well
+composition, reference contamination and chronology. At the window's simulation boundary,
+20 of 1,000 passing records missed the truth, including 20 of the 60 non-abstaining results;
+coverage conditional on a claim is not established.
 
-- **M1, 515.5 Ma:** crown embryophytes, cryptospores;
-- **M2, 459.1 Ma:** crown embryophytes, trilete spores;
-- **M3, 431.2 Ma:** crown tracheophytes, polysporangiate bodies.
-
-**Only M2 is testable, and in two ways resting on different assumptions.**
-
-- **Murzuq Basin, Libya.** 28 Darriwilian–Hirnantian well cuttings without trilete spores, against
-  51 of 59 Llandovery cuttings with them. Together they exclude producers delivering triletes at
-  Llandovery-reference levels for more than 3.5–8 Myr before 459.1 Ma, if older cuttings recovered
-  spores at least a quarter as well as the reference. The conclusion depends on that transport ratio,
-  which no source measures.
-- **QSIM-801 core, Saudi Arabia.** No trilete spore was found in late Dapingian–early Darriwilian
-  samples, among at least 99 examined cryptospore units. A trilete-to-cryptospore ratio above 0.031
-  in every sample is excluded at the 5% level, if triletes and cryptospores were recovered and
-  recognised alike. This within-sample comparison needs no between-interval transport assumption.
-- **What remains possible.** Neither record excludes trilete producers that were rare: below about
-  a tenth of reference encounter in Murzuq, or at early-Rhuddanian rarity in QSIM-801.
-
-**M1 and M3 are not testable from the published record.** M1 has no admitted design. Its occurrence
-route requires reading Cambrian Stage 4 cryptospore-like forms as embryophytic, an affinity that
-every describing source rejects. M3 has no searched-material denominator.
-
-We give the observations that would make each maximum testable. We also give a general
-identification result: binary absence data cannot separate producer rarity from poor delivery or
-contaminated references.
+An independent QSIM-801 source records 99 cryptospore morphotaxon occurrences and no triletes.
+Those marks motivate a conservative persistent-floor calculation, but the source does not
+document the target-detectable search units needed to admit it as an empirical confidence bound.
+No second frame qualifies, and no assessed frame supplies an absence design for the other two
+maxima. The Cambrian affinity review supports the main reading without eliminating declared
+alternatives; Stage 4 occurrences would in any case be younger than 515.5 Ma. Existing specimen
+and ancestral-state evidence makes explicit the additional trait-persistence and node-mapping
+assumptions. The result is a source-specific encounter analysis and a tested account of its
+limits, not a new crown-age estimate or independent replication.
 
 ## 1. Introduction
 
-Fossil calibrations bound the ages of nodes in molecular-clock analyses. A minimum rests on a fossil
-that exists. A maximum rests on fossils that do not, in rocks old enough to have held them. The
-second kind of claim makes an implicit sampling argument: had the lineage existed, its fossils
-would have been preserved, recovered and reported. That argument is rarely written down and more
-rarely tested, although a maximum can shift a posterior divergence age as much as any minimum.
+A fossil minimum can be anchored to an observed specimen, although its age and phylogenetic
+placement still require justification. A fossil maximum based on absence additionally requires
+that older sampled material could have recorded the diagnostic remains. An apparently empty
+interval can reflect late origin, low production, poor delivery, preservation or incomplete
+search. Distinguishing those explanations is part of the calibration argument.
 
-Land-plant clocks illustrate the problem sharply. Three maxima recur in recent analyses:
+We examine three maximum-age arguments used in land-plant clocks: M1, 515.5 Ma for crown
+Embryophyta, associated with the cryptospore record (Morris et al. 2018; Su et al. 2021); M2,
+459.1 Ma for crown Embryophyta, associated with trilete spores; and M3, 431.2 Ma for crown
+Tracheophyta, associated with *Cooksonia*-type polysporangiate bodies (Hooper et al. 2026).
+These are named calibration propositions, not three interchangeable observations of crown
+origins. Trilete production, cryptospore affinity, branching architecture and vascular anatomy
+have different relationships to the relevant nodes.
 
-- **M1, 515.5 Ma, crown Embryophyta** (Morris et al. 2018; Su et al. 2021). It rests on Cambrian
-  cryptospore-like palynomorphs.
-- **M2, 459.1 Ma, crown Embryophyta** (Hooper et al. 2026). It rests on the oldest possible trilete
-  spores, under an ancestral-state reading that the crown ancestor produced trilete monads.
-- **M3, 431.2 Ma, crown Tracheophyta** (Hooper et al. 2026). It rests on Homerian *Cooksonia* cf.
-  *pertoni* read as a total-group record.
-
-The fossil record below each maximum is dominated by palynological samples from marine and
-marginal-marine rocks, gathered for biostratigraphy rather than to search for land plants. Whether
-those samples can carry a maximum is an empirical question about their observation process.
-
-We asked, for each maximum: is there a set of older sampled units, reported completely enough to
-count as absences, together with a comparable reference in which the target fossils are reliably
-recovered? If so, what origin ages and abundances does the record exclude, under which explicit
-assumptions? If not, which specific observation is missing? We treat a maximum as a claim about
-encounter: how often a producer's diagnostic remains reach and are recovered from sampled rock.
-Encounter is distinct from origin. A finite bound on encounter does not by itself date a node.
+Our contribution is a material-level audit of the observations that can test those propositions,
+coupled to explicit encounter models and an existing trait-to-node pilot. Morris et al., Su et
+al. and Hooper et al. estimate divergence times using fossils and phylogenetic models. Here we
+instead test the observation arguments behind selected maxima. We neither infer a new dated
+tree nor claim priority for fossil-absence methods. The useful outcome can be a conditional
+bound, an identification limit, or a specific observation needed to make the proposed test work.
 
 ## 2. Methods
 
-### 2.1 Events, readings and outcome coding
+### 2.1 Events, named readings and observation frames
 
-**Events.** Each maximum maps to an observable event:
+E1 denotes trilete spores, E2 cryptospores accepted as embryophytic under a named reading, and
+E3 polysporangiate bodies. The main, inclusive and outlier readings retain explicit alternative
+identifications or affinities. A wider reading requires a record-specific acceptance; it does
+not promote every unresolved grain to a detection. The E2 rule separates morphology and producer
+evidence from the embryophyte affinity accepted by that reading.
 
-- **E1:** trilete spores;
-- **E2:** cryptospores accepted as embryophytic;
-- **E3:** polysporangiate bodies.
+Within each frame, the same reporting rule applies to older and reference material. An explicit
+non-detection is scoped to the material actually examined. A missing report becomes zero only
+after a full-category reporting audit; unresolved identification, missing links and unreported
+effort remain distinct from absence. Stage ages use ICS v2024/12. Source-specific age statements
+and modern numerical conversions are retained separately. Uniform within-range ages and shared
+age positions are modelling choices, not measured dating distributions.
 
-**Readings.** Disputed identifications are carried as named readings rather than resolved by fiat.
+### 2.2 Murzuq encounter model and qualification
 
-- **main:** the default identification of each disputed record;
-- **inclusive:** wider acceptance of disputed forms as the event;
-- **outlier:** isolated records treated separately.
+For an eligible unit, detection probability conditional on a well effect is
+$1-\exp(-rux)$, with reference rate $r$, shared $u\sim\mathrm{Gamma}(2,2)$ and older relative
+intensity $x=\rho f$. The older/reference delivery-and-recovery ratio $\rho$ takes declared
+values 1, 0.5, 0.25 and 0.1; it is not estimated from the source. Productive cuttings supply the
+primary frame. Reference and older outcomes share the well effect and are fitted jointly.
 
-**Coding rules.**
+H0c constrains constant intensity; H0 and H0m constrain exposure-weighted intensity under their
+declared history classes; H1 allows the declared higher ceiling. The origin read-out at 459.1 Ma
+concerns the interval from the reference boundary $\tau=443.1$ Ma to that age. A window comparison
+instead tests a persistent minimum intensity on an older interval beginning at 459.1 Ma, allowing
+zero intensity between that boundary and $\tau$. These are different hypotheses: an unbounded
+low-intensity window does not establish compatibility of the same constant intensity all the
+way to the reference.
 
-- **Same rule in both intervals.** Within a frame (a study's complete sample inventory), older and
-  reference units are coded by the same rule.
-- **Detections and zeros.** A detection maps to one. An explicit non-detection maps to zero only
-  within its verified scope. A not-reported outcome becomes zero only after a full-category reporting
-  audit.
-- **Unresolved records never become zeros.** This includes disputed records, unknown outcomes and
-  missing sample links.
-- **E2 identifications** follow a two-axis rule (Supplement S2):
-  - the morphology and producer evidence the source reports;
-  - the embryophyte affinity the named reading accepts.
+The potential screen, eligibility and estimation path were simulated on a declared finite grid.
+Results are nominal 95% compatibility bounds, qualified per quantity and design against a 0.93
+coverage floor (calibration target 0.955), conditional on passing the potential screen; abstentions
+count as covering. The largest observed marginal miss proportion was 38/1,000. Population 95%
+coverage, coverage conditional on a non-abstaining result, simultaneous coverage and validity
+beyond the tested histories are not established. Qualification receipts and the complete
+reporting contract are supplied in Supplement S1.
 
-  A cryptospore label alone does not establish E2.
+### 2.3 Contamination, chronology and identification
 
-### 2.2 The encounter model and its qualification (Murzuq)
+Murzuq's palynofacies fractions use a different preparation and a 200-organic-particle denominator;
+they cannot supply separate trilete/cryptospore counts for the chart search. We retain binary
+observations and introduce a sensitivity model. Let $g$ be the indigenous fraction of reference
+**encounter intensity**, not the fraction of positive samples; let $\kappa$ transfer the
+contaminant component into older cuts. For age-exposure weight $q_i$, an older zero has probability
 
-**Unit model.** Each productive sampled unit has a detection probability 1 − exp(−r u x).
+$$\exp[-ru\kappa(1-g)]\{(1-q_i)+q_i\exp[-ru\rho gf]\}.$$
 
-- r is the reference encounter rate;
-- u ~ Gamma(k, k) is a well effect shared by all units of a well (k = 2);
-- x is the unit's relative encounter intensity.
+The likelihood depends on these parameters through $a=\rho gf$ and $b=\kappa(1-g)$. Tuples
+preserving both are observationally equivalent in this model. If every $q_i=1$, only their sum
+enters the older-zero likelihood. This is an identification result within the declared model,
+not a universal property of every binary observation design.
 
-For older units, x = ρf. Here f is the producers' intensity relative to the reference, and ρ is the
-older-to-reference delivery-and-recovery ratio. ρ is a declared scenario (1, 0.5, 0.25, 0.1), never
-estimated.
+A predeclared 5,760-row factorial grid varies delivery, indigenous fraction, transfer, allocation,
+chronology, interval and intensity. Independent uniform ages are compared with fixed, depth-ordered
+10%, 50% and 90% positions within source ranges. The threshold $-2\log(0.05)$ is an uncalibrated
+comparison convention. A contamination scenario that conflicts with older zeros even at $f=0$
+is flagged separately from candidate non-rejection. The 384 break-even entries explicitly fix
+$\kappa=b=0$. These surfaces and the separate 36-case well/age influence exercise are
+unqualified sensitivities; they inherit no coverage from the frozen model.
 
-**Quantities reported.**
+### 2.4 QSIM-801: a mark-based calculation and its admission gate
 
-- **Origin comparisons:** a constant intensity (H0c), exposure-weighted (H0, H0m) and flexible (H1)
-  intensity bounds at 459.1 Ma;
-- **Window comparisons:** the oldest age to which reference-level encounter (f = 1) could have
-  persisted before 459.1 Ma without contradicting the older zeros.
+Vecoli et al. (2017, Table 1, p.321) report 99 cryptospore morphotaxon occurrences across 17 of
+20 tabled samples assigned to the late Dapingian–early Darriwilian; p.330 explicitly reports no
+triletes in the studied sequence. This source assignment is finer than its full-stage numerical
+enclosure, but does not supply individual sample ages. The table was
+independently reconstructed from the rendered source. Its 22 categories include informal
+morphotypes. Marks represent distinct recorded occurrences, not measured counts of independent
+producer individuals or dispersal events. The table-defined depths are 675.1–767.8 ft; the
+methods' shallower endpoint, 586.9 ft, is inconsistent and is not used to extend the frame.
 
-**Screen and qualification.**
+Let $\theta_i$ be the trilete/control unit-intensity ratio in sample $i$, before a relative
+effective recovery/ascertainment factor $h>0$. If the reported objects form a co-ascertained
+independent target/control sample, conditioning Poisson counts on the true land-spore total
+$N_i$ gives target probability $h\theta_i/(1+h\theta_i)$. For a persistent floor
+$\psi=\min_i\theta_i\geq\theta$, the all-zero probability is at most
+$(1+h\theta)^{-\sum_iN_i}$. If each mark contributes a distinct target-detectable unit, observed
+$M\leq\sum_iN_i$ permits a conservative rejection rule: no targets and
+$(1+h\theta)^{-M}\leq\alpha$. Randomness of $M$ does not invalidate the rule: conditional on
+the actual totals, rejection is a subset of the all-zero event with at least the number of
+units needed to cross the threshold. The proof and assumptions are in Supplement S3.
 
-- **Potential screen.** A frame is analysed only if it passes a likelihood-ratio screen against
-  5.991, so that it could in principle reject a reference-level history.
-- **Qualification.** Each released quantity was qualified by simulating the full eligibility, screen
-  and estimation path on a declared finite grid of histories, against a 0.93 coverage floor (nominal
-  0.95; calibration target 0.955).
-- **Abstentions** count as covering.
-- **Reporting.** We report these as nominal 95% compatibility bounds. Coverage conditional on a
-  non-abstaining result was not established (Supplement S1).
+Under that model, $U=\{\alpha^{-1/M}-1\}/h$ bounds the **minimum**, not every sample's ratio,
+an arithmetic mean, or the pooled share. A transformed floor-share limit has the same restricted
+meaning. Recovery parity $h=1$ is an assumption; producer output additionally requires relative
+delivery and preservation assumptions.
 
-### 2.3 Identification and robustness without counts (sprint 1)
+The source specifies preparation but not the search coverage needed to establish that every
+mark represents a unit on which triletes were detectable under the declared rule. Independence,
+effective ascertainment and sampling/stopping conditions are unverified. The calculation is
+therefore retained as an **exploratory model-conditional limit**, not an admitted empirical
+confidence bound or a second qualified result. Multiplying the exponent by $1/D$ for $D=2,4$
+is a heuristic sensitivity, not a validated correction for clustering. Toy Poisson simulations
+check the mathematical construction; they cannot validate the historical search protocol.
+Le Hérissé et al.'s companion percentages are not used.
 
-The Murzuq outcomes are binary marks on range charts. Its per-sample palynofacies percentages count
-200 organic particles on separate preparations and cannot be paired with the trilete marks. We
-therefore extended the binary model rather than fitting counts.
+### 2.5 Biological mapping and external-source review
 
-**Extended model.**
+The existing pilot separates specimen observations, accepted event readings, encounter,
+trait persistence and node interpretation. We reused its source-adjudicated combinations,
+Hooper et al.'s deposited crown-state outputs and the already checked stochastic-map analyses;
+we did not rerun the R analysis. Aperture (X21) and dispersal unit (X26) were modelled separately,
+so their marginal supports do not define a joint ancestral phenotype. The X26 monad category
+combines trilete and inaperturate monads; it is not an automatic absence of E2 cryptospory.
 
-- A fraction g of reference encounter is indigenous; the remainder is contamination (for cuttings,
-  mainly caving).
-- Contamination reaches older units at relative intensity κ.
-- An older unit's zero then has probability exp[−r u κ(1 − g)]·{(1 − q) + q·exp(−r u ρ g f)}, where q
-  is the probability that the unit falls in the target interval.
-
-**Grid and comparisons.**
-
-- **Declared before computation:** a 5,760-row grid over ρ, g, κ, Hawaz age allocation, four
-  chronology scenarios, four targets and three intensities.
-- **Shared-age scenarios:** fixed, depth-ordered positions at the 10%, 50% and 90% points of each
-  unit's age range.
-- **Comparisons** use the likelihood-ratio convention −2 log 0.05 without calibration.
-- **Status:** they are unqualified sensitivities, not confidence statements.
-
-### 2.4 A within-sample share bound (QSIM-801)
-
-**The observations.** Vecoli et al. (2017) examined 20 core samples from the QSIM-801 well. Their
-Table 1 lists the cryptospore species seen in each sample. They state that "only cryptospores and no
-trilete spores have been observed" (p.330). One examination per sample produced both observations.
-
-**The lower bound.** Each occurrence mark is at least one examined cryptospore unit. The 99 marks
-across 17 positive samples therefore lower-bound the land-spore units examined.
-
-**The bound.** Let θ_i be sample i's trilete:cryptospore ratio among units reaching the slides. Let h
-be the probability that a trilete unit is recovered and recorded, relative to a cryptospore unit.
-
-- **Model.** Under independent Poisson sampling, conditioning on each sample's land-spore total N_i
-  gives a binomial trilete count.
-- **Inequality.** The probability of no triletes is ∏(1 + hθ_i)^(−N_i) ≤ (1 + hθ)^(−M), where θ is a
-  floor holding in every sample and M = 99 ≤ ΣN_i.
-- **Test.** Rejecting θ when (1 + hθ)^(−99) ≤ 0.05 is a valid level-0.05 test of that persistent
-  floor.
-
-**What it is not.** It is not a bound on a mean ratio: heterogeneity between samples makes zeros
-more likely.
-
-**Assumptions.**
-
-- **Parity scenarios:** h = 1, 0.5, 0.25 or 0.1. Within-sample clustering enters as a design effect
-  that divides M (1, 2, 4).
-- **Known-answer check.** Simulation verified the test's level when the true examined count far
-  exceeds the marks, and in a stress regime where marks nearly equal counts (Supplement S3).
-
-We did not use Le Hérissé et al.'s (2017) palynomorph percentages. Their preparations and counts
-cannot be linked to Vecoli et al.'s examination (Codex, sprint-1 gate).
-
-### 2.5 Source adjudication for M1 and M3
-
-**M1.** For the M1 occurrence route, we applied the E2 rule to every held source describing the
-oldest cryptospore-like forms. Each source's morphology and stated affinity were recorded separately,
-with page locators.
-
-**M3.** For M3, we assessed whether any held source records searched rock or beds that yielded no
-polysporangiate fossils, together with their effort.
+The bounded external roster comprises QSIM-801, Qusaiba-1, Hanadir/TAYM-4, Röstånga-1 and
+Caspalá/Lipeón, plus the search for a matched counted reference. Each has an inspectable
+disposition in `external_candidates.csv`. No exhaustive absence claim about all held literature
+is inferred from a keyword scan. The Cambrian review examines Strother (2016), Taylor & Strother
+(2024) and Wang et al. (2022), retaining material identity, source ages and affinity uncertainty.
 
 ## 3. Results
 
-### 3.1 M2 in the Murzuq Basin
+### 3.1 The qualified Murzuq comparison
 
-**The frame.** The admitted cutting frame holds 28 older units (Darriwilian–Hirnantian), none with a
-trilete report, and 59 Llandovery reference units, 51 with triletes (Abuhmida 2013).
+The primary chart-code cutting frame contains 28 older reported zeros and 51 detections among
+59 reference units. At $\rho=1$, the frozen primary row gives H0c $f^*=0.0910$ and H0
+$f^*=0.1835$ at 459.1 Ma. The values 0.0955 and approximately 0.189 belong to other read-outs
+or the pre-459 allocation sensitivity, not that primary row.
 
-**Origin comparison.** At ρ = 1, the constant-intensity bound at 459.1 Ma is H0c f* = 0.0955. The
-exposure-weighted H0 bound is f* = 0.189.
+Reference-level windows end at 462.6, 464.1 and 467.1 Ma for $\rho=1,0.5,0.25$, respectively;
+the $\rho=0.1$ window is unbounded within the declared domain. Windows at $f=0.1$ and 0.01
+are unbounded for all four delivery scenarios. This concerns the pre-459.1 window hypothesis,
+not uninterrupted production at that level through the reference boundary.
 
-**Window endpoints.** Reference-level encounter (f = 1) is excluded for longer than a short window
-before 459.1 Ma.
+The central 462.6 Ma window has a material qualification limitation. At its B4 boundary,
+20 of 1,000 screen-passing simulations excluded the truth; 60 delivered non-abstaining window
+claims, so 20 of those 60 missed. It is not a population 95% guarantee conditional on a claim.
+There are thirteen qualified Murzuq design/delivery combinations; the fourteenth qualified pair
+is QB-CO, which supplies no older M2 interval and has a narrower qualified class scope.
 
-- **Endpoints by ρ:** the window ends at 462.6, 464.1 and 467.1 Ma at ρ = 1, 0.5 and 0.25. It is
-  unbounded at ρ = 0.1.
-- **Low encounter.** Windows at f = 0.1 and 0.01 are unbounded at every ρ: low encounter is
-  compatible with any origin age.
-- **Qualification.** All fourteen qualified combinations pass the finite-grid contract: thirteen
-  Murzuq design/ρ pairs and one core comparison without an older interval.
-
-**Boundary case.** At the edge of the real 462.6 Ma claim, 20 of 1,000 simulated passing records gave
-a bound excluding the truth. Those 20 are a third of the 60 records that gave any window claim.
-
-**Robustness (Table 1; Figure 2).**
-
-| Assumption | Effect at ρ = 1 | Status |
+| Challenge at $\rho=1$ | Observed sensitivity | Scope |
 |---|---|---|
-| Leave one well out | H0 bound 0.178–0.365; window endpoint 462.6–468.1 Ma (omitting H2 gives 468.1) | unqualified sensitivity |
-| Reference contamination, no transfer to older units (κ = 0), independent uniform ages | 462.6 Ma window flips when indigenous fraction g < 0.956; 467.1 Ma window at g < 0.236; origin comparison at g < 0.091 | unqualified sensitivity |
-| Shared midpoint ages | 459.1–462.6 Ma has no sampled exposure | identification limit |
-| Rarity against delivery | the likelihood depends on biology and transport only through a = ρgf and b = κ(1 − g) | identification limit |
+| Five leave-one-well-out cases | H0 0.1850–0.3646; window endpoints 462.6–468.1 Ma | One factor at a time; unqualified |
+| All nine influence/age/allocation cases | H0 0.1775–0.3646 | Unqualified |
+| $\kappa=0$, independent uniform stage ages | Critical $g$: 0.0910 for constant origin intensity; 0.9559, 0.2363, 0.1735 for windows ending 462.6, 467.1, 469.4 Ma | $f=1$; comparison contours, not confidence limits |
+| Shared midpoint ages | No exposure in the 459.1–462.6 Ma window | Fixed chronology scenario |
 
-: What changes the Murzuq answer. Values from `models/f3/loop2/out/`.
+The short-window result is fragile under these scenarios. A reduction exceeding about 4.4%
+in the indigenous reference intensity crosses its comparison threshold when older contaminant
+transfer is zero. This is not a measured contamination fraction or a percentage of reference
+positive samples. Wider windows survive more contamination on that particular no-transfer
+surface; they are not robust over unrestricted delivery, transfer and chronology. For example,
+shared 90% ages leave no exposure in the window ending at 467.1 Ma.
 
-**What the robustness work shows.**
+![Sampled support and missing observation designs. Broad stage enclosures are distinguished from the source's finer qualitative dating; bars are not occurrence dates.](figures/fig1_support.png)
 
-- **The short window is fragile.** Under 5% contamination of reference positives defeats it, and
-  shared midpoint ages remove its exposure altogether.
-- **The wider statements are robust.** The origin comparison and the 467.1 Ma window survive
-  substantial contamination.
-- **The general limit.** Producer rarity, poor delivery and contaminated references are
-  observationally equivalent along a = ρgf. Binary absences cannot bound indigenous production
-  without an assumption on delivery and reference purity.
+![Joint sensitivity of the short Murzuq window. Colours report an uncalibrated comparison or model-conflict flag, not confidence or probabilities over geology.](../models/f3/loop2/out/joint_window_sensitivity.png)
 
-![Sampled support relative to the three maxima. Bars are age support, not occurrence dates.](figures/fig1_support.png)
+### 3.2 External comparison: verified observations, no qualified replication
 
-![Sensitivity of the short Murzuq window to reference contamination and chronology (sprint 1).](../models/f3/loop2/out/joint_window_sensitivity.png)
+QSIM-801 supplies 99 verified marks and an explicit trilete non-detection from a separate study.
+At $M=99,h=1,D=1$, the conditional floor limit is 0.030722; at $h=0.1$ it is 0.307224.
+These calculations do not establish that every sample, or the pooled land-spore rain, contained
+less than 3% triletes. They would reject a floor maintained in every informative sample only
+under the stated observation model.
 
-### 3.2 M2 in central Saudi Arabia (QSIM-801)
-
-**The bound.** At h = 1, a persistent trilete:cryptospore ratio θ > 0.0307 is excluded: the
-recovered trilete share is below 3.0% of land-spore units (Table 2; Figure 3). The bound scales as
-1/h. At h = 0.1, triletes being recovered or recognised ten times less readily than cryptospores, it
-is θ < 0.31.
-
-| h | Design effect 1 | 2 | 4 |
+| Relative effective recovery $h$ | Independent-unit calculation, $D=1$ | Heuristic $D=2$ | Heuristic $D=4$ |
 |---:|---:|---:|---:|
 | 1 | 0.031 | 0.062 | 0.129 |
 | 0.5 | 0.061 | 0.125 | 0.257 |
 | 0.25 | 0.123 | 0.250 | 0.515 |
 | 0.1 | 0.307 | 0.624 | 1.287 |
 
-: Upper 95% bound on a persistent trilete:cryptospore ratio θ, QSIM-801.
+: Model-conditional floor limits or exponent sensitivities; none is an admitted empirical confidence bound.
 
-**The reference comparison is qualitative.** No held source gives counted trilete and cryptospore
-tallies for a Katian–Llandovery reference. We scanned 346 held texts. The published descriptions
-are:
+Even the heuristic table does not support an exclusion across all scenarios: at $D=4,h=0.1$,
+the floor limit exceeds one. The independent-unit formula's $h>0.03072$ threshold for a floor
+of one is therefore conditional on $D=1$, as well as the unverified sampling contract.
 
-- **Early Rhuddanian:** a single trilete among "very rare" cryptospores in one Murzuq assemblage
-  (Abuhmida 2013, p.382);
-- **Another Ashgillian–Rhuddanian-correlated zone:** triletes "moderately abundant" (Abuhmida 2013,
-  p.383);
-- **Mid-Telychian onward:** triletes dominate assemblages (Gray et al. 1992, as summarised in
-  Abuhmida 2013, p.350).
+No matched counted Katian–Llandovery reference was recovered in this bounded review. Abuhmida's
+early-Rhuddanian account names one trilete taxon among qualitatively rare spores; it does not
+provide a one-specimen tally or a target/control denominator. His Cr-4 assemblage is assigned
+late Rhuddanian–Telychian, notwithstanding comparison to an older Saudi zone. Such descriptions
+cannot establish quantitative agreement with a floor limit. Qusaiba supplies reference context
+only. Röstånga and Caspalá/Lipeón are younger than M2. Hanadir/TAYM-4 is separate borehole
+material, not demonstrably reused QSIM material, but no independent qualified design is
+established here. Same region alone is not evidence of specimen reuse.
 
-**What it excludes, and what it doesn't.**
+![Upper bound on the all-zero probability under the hypothetical independent, co-ascertained unit model. The curves are not fitted probabilities for the historical examination; points mark its algebraic 0.05 threshold.](figures/fig3_qsim_share.png)
 
-- **Excluded:** a trilete-dominated land-spore rain (θ ≥ 1) in the late Dapingian–early Darriwilian,
-  under every recovery scenario down to h = 0.031.
-- **Not excluded:** early-Llandovery rarity.
+### 3.3 M1: affinity remains reading-dependent
 
-**Relation to Murzuq.** The Saudi result shares the Murzuq conclusion: abundant trilete producers are
-excluded, rare ones are not. It rests on a different assumption, within-sample recovery parity
-rather than between-interval transport.
+No assessed frame admits the required E2 older-zero/reference design. The Borenshult 71.1 m
+zero is secure under main but belongs to a frame failing its potential screen; it is not a
+pre-515.5 Ma observation. Strother places the assessed Tennessee taxa in Charophyta; Taylor &
+Strother interpret the packets as pre-embryophytic; Wang et al. favour ancestral aeroterrestrial
+algae while calling direct embryophyte affinity unlikely and the interpretation premature.
+None of these three sources explicitly accepts the assessed Stage 4 producers as embryophytes.
 
-**What it is not.**
+This supports the main exclusion, not a claim that the fossils have no affinity-relevant
+evidence. Wall ultrastructure and developmental features bear on precursor relationships.
+The inclusive reading remains an explicit alternative assumption. No evidence establishes the
+previous suggestion that clock dates were the principal reason for that reading, and we withdraw it.
+Argentine sample RIOCAP-7999 remains unresolved under main and detected under inclusive/outlier;
+Vecoli's taxonomic correction does not turn its tetrads into an absence or settle affinity.
 
-- **Not a replication:** the estimands differ, and no counted reference makes them comparable.
-- **Not a qualified primary result:** it is an empirical bound under declared parity.
+Stage 4 converts to 514.5–506.5 Ma under the project's timescale. This is stage support, not a
+measured occurrence age, and all of it is younger than 515.5 Ma. Even accepting E2 would not
+itself contradict that maximum or establish crown membership. Productive pre-515.5 Ma material,
+complete target reporting, and a defensible node mapping are still needed for the older-side test.
 
-![Probability of no triletes among at least 99 examined cryptospore units, against a persistent trilete:cryptospore ratio, for four recovery-parity scenarios. Points mark the 5% bound.](figures/fig3_qsim_share.png)
+### 3.4 M3 and the biological implication chain
 
-### 3.3 M1: no admitted design, and an occurrence route the describing sources reject
+The Irish fossil-free mudstone is genuine qualitative negative evidence, but no enumerated,
+comparable searched-bed roster follows from it. Historical Czech axes are selected specimens,
+not search trials. Database non-recording is likewise not an E3 zero. No assessed source admits
+an M3 absence design. Draft requests specify all eligible searched units, outcomes, effort,
+age evidence and comparable reference material; an external reply is not a completion requirement.
 
-**No admitted design.** No assessed frame supplies an older-zero/reference design for E2. The one
-secure older zero (Borenshult 71.1 m) belongs to a frame that fails the potential screen (LR 2.21).
-Disputed Cambrian–Floian forms cannot become zeros.
+The pilot shows why solving the denominator problem would not by itself date a crown. The
+*C. barrandei* holotype links trilete production and multiple sporangia directly, while tracheids
+are unknown; the Irish Homerian material has conditional sporangial interpretation and no
+direct demonstration of the anatomy transferred from younger *C. pertoni*. A total-group or
+stem occurrence and a crown assignment remain distinct.
 
-**The occurrence route.** The alternative is to read the Cambrian Stage 4 forms (514.5–506.5 Ma) as E2
-itself. Under the E2 rule this requires embryophyte affinity, which the held describing sources
-reject:
+For M2, proximal trilete aperture is modal at the embryophyte crown across the deposited methods
+and trees. The combined phenotype is less secure: X26 has a dyad-dominated alternative while
+X21 remains trilete-dominated. No joint phenotype probability follows from these separate
+marginals. The checked stochastic-map analyses nevertheless support aperture persistence
+conditional on a trilete start and their Mk models. On the converged extant-tree runs, 77 of
+3,382 trilete starts depart along the path to crown Tracheophyta: conditional persistence
+0.977, with Monte Carlo standard error 0.0026. These trees put crown Embryophyta at 508 Ma,
+not at Hooper's recalibrated 457–450 Ma.
 
-- **Strother (2016)** places the Tennessee taxa in Charophyta (pp.28, 32);
-- **Taylor & Strother (2024)** interpret the Rome Formation packets, coeval with the oldest North
-  Chinese forms, as "pre-embryophytic spore types" (p.90). They read them as the products of
-  terrestrial charophytic algae, "likely not produced in a sporangium" (p.103);
-- **Wang et al. (2022)** judge the Shandong Stage 4 forms "unlikely directly related to embryophytes"
-  (p.6).
+Fixed-rate retention scenarios to a Katian-boundary scenario of 452.8 Ma give an extant-tree
+median of 0.989 (95% interval 0.895–0.995) from 459.1 Ma and 0.894 (0.332–0.956) from
+515.5 Ma. They are model-conditional aperture-state retention scenarios, not abundance evidence,
+observed survival or a date-free correction. They are not multiplied into F3 coverage.
+For M1, cryptospore persistence has not been established. Figure 4 separates the links.
 
-**Verdict.** The inclusive reading therefore rests on morphology alone. It also comes close to
-assuming what M1 tests: the clock's own prediction of embryophytes by about 515 Ma is the main reason
-to read these forms as embryophytic. M1 remains an absence question. Testing it needs productive,
-completely reported material older than 515.5 Ma; none is held.
-
-### 3.4 M3: genuine negative evidence without a denominator
-
-**Edwards & Feehan (1980)** report fossil-free interlaminated mudstone beside *Cooksonia*-bearing
-siltstone in Ireland. This is real negative evidence, but it has no n.
-
-**The Czech material** comprises about fifty historical axes and eleven new sterile fragments. These
-are selected plant specimens, not searched beds (Libertín et al. 2018).
-
-**Databases.** Of the 3,217 GBDB sections, 3,154 have no recorded core plants. Those are database
-omissions, not E3 non-detections.
-
-**What would admit a design.** A field or collection ledger of searched beds, with effort and
-preservation, together with a comparable reference.
+![From observed material to node interpretation. Each row keeps the observation, event reading, sampling result, persistence assumption and crown implication separate.](figures/fig4_mapping.png)
 
 ## 4. Discussion
 
-### What is testable
+The completed study has one qualified encounter frame and an independently scrutinised external
+comparison limit. Murzuq can challenge specified sustained trilete-encounter histories under
+declared delivery and history assumptions. QSIM contributes verified occurrence evidence and a
+useful lower-bound method, but does not supply an admitted second confidence statement or
+geographic replication. Failure to admit that frame is not biological disagreement with Murzuq.
 
-Of three maxima, one can be tested. It is testable under two assumptions that differ in kind, and the
-two agree. Trilete producers that were abundant and delivered spores as the Llandovery flora did are
-excluded:
+The short Murzuq window should not be treated as a geological edge. Its B4 example has 20 misses
+among 1,000 passing simulations and among 60 non-abstaining claims; reference purity and age
+allocation can change its comparison status. The stronger general result is the identification
+limit within the declared observation model: declining indigenous output can be offset by
+delivery and reference contamination along the stated parameter combinations. No unconditional
+maximum-age probability or recommendation for a clock prior follows from these calculations.
 
-- from the Murzuq shelf for more than about 3.5–8 Myr before 459.1 Ma;
-- from the central Saudi land-spore rain of the late Dapingian–early Darriwilian, older than
-  458.2 Ma.
+A crown implication additionally requires that the diagnostic state existed at the crown,
+persisted into the sampled interval and produced enough recoverable remains. The pilot supports
+some of those links under specified models and leaves others contested. It does not turn a
+dispersed spore, a branched axis or a high persistence estimate into an independently dated crown.
+The appropriate scientific claim is consequently narrower than either accepting or rejecting
+the clock maxima outright.
 
-Producers that were rare, or poorly delivered relative to the reference, are compatible with any
-origin age in both records. The record is just as empty immediately after 459.1 Ma: the Murzuq H0
-read-out bounds post-maximum encounter below about 0.19 of the reference. The absence argues against
-an old, abundant crown flora. It does not date the crown.
-
-### Why rarity and delivery cannot be separated with absences
-
-The sprint-1 identification result is general. In any binary design with a shared well effect, the
-older zeros constrain only the product of delivery, indigenous reference fraction and producer
-intensity. A contaminant fraction enters separately. So a maximum built on absence is only as strong
-as an independent constraint on delivery and reference purity.
-
-The within-sample design changes which assumption carries the weight. Cryptospores in the same
-slides show that land-derived spores did arrive and were recovered, so the ratio test needs only
-recovery parity between two spore types of similar size. Taken alone, its reference comparison is
-qualitative.
-
-The single most valuable new observation is a counted Katian–Llandovery assemblage with separate
-trilete and cryptospore tallies, from a comparable facies. It would turn the Saudi bound into a
-quantitative comparison with the reference flora.
-
-### What the clock analyses should take from this
-
-- **M2.** As a soft maximum, M2 is defensible against abundant, well-delivered trilete producers. It
-  is not defensible against a rare early lineage, and its 462.6 Ma window should not be read as a
-  hard edge.
-- **M1.** M1 cannot be tested by absence from the published record. Its occurrence basis, if any,
-  rests on an affinity its describers reject.
-- **M3.** M3 has no denominator.
-
-None of this argues that the maxima are wrong. It shows which parts of each are evidence and which
-are assumption. The specific missing observations are:
-
-- **M1:** complete rosters of productive pre-515.5 Ma samples;
-- **M3:** searched-bed ledgers for the Irish and Loděnice sections;
-- **M2:** counted reference shares and matched contamination diagnostics.
-
-### Limitations
-
-- **Single studies.** Each M2 frame comes from one study: one author or laboratory, and one chart
-  system or table.
-- **ρ and h are declared, not measured.**
-- **Contamination.** The contamination model is a scenario model, not an estimate of caving.
-- **Qualification is finite-grid.**
-  - Coverage given a claim, simultaneous coverage across curves and validity beyond the tested
-    histories are not established.
-  - The QSIM-801 bound is not qualified by the Loop 1 contract. It is an exact test whose level was
-    checked by simulation.
-- **Age support versus age.** Age support is used where occurrence dates are unavailable.
+The next observation depends on which limit is to be resolved. For QSIM, the first need is the
+microscopy/ascertainment record connecting occurrence marks and target search; a counted
+reference alone would not repair that contract. Matched target/control counts and effective
+recovery evidence would then permit a quantitative comparison. Murzuq needs contamination-transfer
+information and finer correlated age control. M1 needs a productive, completely reported roster
+older than 515.5 Ma with justified event/node readings; M3 needs comparable searched-bed ledgers.
+These are bounded data needs, not claims that no relevant evidence exists anywhere in the literature.
 
 ## Roles of AI systems and humans
 
-- **Barry W. Brook** set the programme and its principles, authorised each stage, and reviews the
-  final work. This draft has not yet had that review.
-- **Claude Opus 5.5** (Anthropic, `claude-opus-5-5`, via Claude Code):
-  - drafted the F3 framing, the cards and the Loop 1 close;
-  - in Loop 1, froze the M2 designs and wrote the engine extensions, adapter, screen and
-    actual-design qualifier;
-  - wrote Loop 2 plan v2;
-  - reviewed sprint 1 and independently reproduced its break-even thresholds;
-  - derived and implemented the QSIM-801 bound;
-  - adjudicated the M1 affinity sources;
-  - wrote this manuscript.
-- **OpenAI Codex** (Codex desktop; GPT-6, exact variant not exposed):
-  - proposed and executed Loop 2 sprint 1 (observation audit, identification result, sensitivity
-    grids, count-share method);
-  - ran Loop 1's M1/M3 source admission, then counter-reviewed and requalified the M2 designs;
-  - corrected the coverage statement and the cryptospore definition during reconciliation.
-- **Claude Sonnet 5.5 subagents** and **Codex delegates** performed bounded extraction, simulation and
-  audit tasks, each verified by the parent agent.
-
-The full record, including the human–AI correspondence, is in the repository (`docs/charter.md`,
-`docs/decisions.md`, `docs/audits/`).
+Barry W. Brook set the programme, authorised its stages and retains release and submission
+decisions. This is an internal draft awaiting his final review. Claude Opus 5.5 (Anthropic,
+`claude-opus-5-5`, Claude Code) developed the F3 framing and engine, led Loop 1 modelling,
+reviewed Loop 2 sprint 1, proposed the QSIM marks argument, reviewed Cambrian affinity sources
+and drafted this manuscript. OpenAI Codex (GPT-6; exact parent variant not exposed in this
+session) implemented Loop 2 sprint 1 and led the present counter-review and corrections,
+including the conditional QSIM interpretation, source scope, frozen numerical values and
+biological synthesis. Bounded Codex delegates independently checked the mathematics, rendered
+QSIM table and Cambrian source claims, and implemented isolated corrections. Earlier Claude
+Sonnet 5.5 and Codex delegates contributed source extraction and modelling checks. Exact exposed
+roles, versions and review records are retained in `docs/charter.md` and `docs/audits/`.
 
 ## Data and code
 
-All derived tables, code, qualification receipts and figure scripts are in the repository. Copyrighted
-source texts are held locally only. `manuscript/data-manifest.csv` separates distributable derivatives
-from private-reproduction inputs. `manuscript/claims.csv` links every headline number to its evidence
-and status.
+The package includes source-linked derived tables, model code, frozen qualification evidence,
+new conditional diagnostics, rendered figures, a claim ledger, external-candidate dispositions
+and an exact file manifest. Copyrighted source texts and upstream deposits requiring their
+own licence checks remain private reproduction inputs. The manifest is a candidate inventory,
+not authorisation for public redistribution. No external messages or public release accompany
+this draft.
 
 ## References
 
@@ -442,11 +372,16 @@ and status.
 
 ## Supplement
 
-- **S1. Coverage statement and qualification receipts.** `docs/loop1-close.md`; `models/f3/out/qual/`.
-- **S2. E2 rule.** `data/units/e2-unit-rule.md` (v1).
-- **S3. QSIM-801 extraction, bound and known-answer check.**
-  `data/units/loop2/replication/`; `models/f3/loop2/replication/`.
-- **S4. Sprint-1 observation audit, identification proof and sensitivity grids.**
-  `docs/loop2-sprint1-results.md`; `models/f3/loop2/`.
-- **S5. M1 affinity adjudication and drafted data requests.** `data/units/loop2/m1-m3/`.
-- **S6. Claim-to-evidence table** (`claims.csv`) and data manifest (`data-manifest.csv`).
+- **S1. Frozen observation rules, model definitions and qualification:** `docs/f3-shape.md`,
+  `docs/loop1-close.md`, `models/f3/out/qual/` and their source bindings.
+- **S2. Event and biological mapping:** `data/units/e2-unit-rule.md`, `data/pilot/specimens.csv`,
+  `data/pilot/combinations.csv`, `data/pilot/hooper2026-asr/`, `models/pilot-asr/out/` and
+  `docs/pilot-traits.md`. The pilot outputs are reused without reanalysis.
+- **S3. QSIM transcription, proof and conditional diagnostics:**
+  `data/units/loop2/replication/`, `models/f3/loop2/replication/` and the three close-review
+  audits in `docs/audits/2026-11-01-loop2-close-*.md`.
+- **S4. Murzuq observation audit and sensitivities:** `docs/loop2-sprint1-results.md`,
+  `data/units/loop2/observation/` and `models/f3/loop2/`.
+- **S5. Affinity verdicts and unsent ledger requests:** `data/units/loop2/m1-m3/`.
+- **S6. Package navigation:** `claims.csv`, `external_candidates.csv`, `mapping.csv`,
+  `data-manifest.csv`, `package_manifest.csv` and `README.md` in `manuscript/`.

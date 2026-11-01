@@ -1,5 +1,11 @@
 # Loop 2: preservation, independent replication and a complete research package
 
+**Loop 2 closed after review 2, 1 November 2026:** `loop2-close.md` records completion and
+corrections. The final package follows the single-qualified-study branch: QSIM remains an
+exploratory model-conditional calculation, not an admitted empirical confidence bound. The
+biological pilot, candidate dispositions, claim ledger and rendered private draft are integrated.
+The dated plan and handoffs below remain history; the close governs final claim status.
+
 **Sprint 1 delivered, 1 November 2026:** `loop2-sprint1-results.md`, the claim ledger and
 `models/f3/loop2/README.md` give the evidence, limitations and executable handoff. The count-free
 branch is complete; no new empirical count-share frame or primary qualification is claimed.

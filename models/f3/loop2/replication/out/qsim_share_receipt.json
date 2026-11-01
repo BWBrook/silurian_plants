@@ -1,15 +1,62 @@
 {
-  "analysis": "QSIM-801 persistent-floor trilete:cryptospore bound (Loop 2 sprint 2)",
   "alpha": 0.05,
+  "analysis": "QSIM-801 persistent-floor model calculation (Loop 2 close repair)",
+  "assumptions": {
+    "D1": "co-ascertained independent target-classifiable units with fixed positive h",
+    "D2_D4": "heuristic effective-M exponent sensitivities; not clustering confidence bounds"
+  },
+  "estimand": "minimum-sample-ratio-persistent-floor-not-pooled-share",
+  "input_drift": false,
   "marks_M": 99,
-  "inputs": {
+  "output_hashes": {
+    "models/f3/loop2/replication/out/qsim_share_bounds.csv": "d5bb2184f43a606892ea0c0705603cb5149aec062899ba61167bf8a9bcee8b81",
+    "models/f3/loop2/replication/out/qsim_share_known_answer.csv": "d97a3174670e9726ee8f9b10cf1977cb0222bcf49e3dbd08b41a26ac76b1f8bb",
+    "models/f3/loop2/replication/out/qsim_share_scenarios.csv": "2f371255fffd122525a17f150499aa89075c7f677a708a4b09eb119ccfe7ffc0"
+  },
+  "positive_samples": 17,
+  "post_run_hashes": {
     "data/units/loop2/replication/qsim801_vecoli2017_table1.csv": "325e97fa006e7f2fd3f50cb5f193fbd843356a646341f871088aa4644dd66754",
-    "library/closed/vecoli2017.pdf": "5932b8da36d10be365089f06cab55ad472ade98c238186432058e9493459936b"
+    "library/closed/vecoli2017.pdf": "5932b8da36d10be365089f06cab55ad472ade98c238186432058e9493459936b",
+    "models/f3/loop2/count_share.py": "2a31baad0ce533d7ac88e1bdda4b56f1230b2f76744665cc06b149555360ace1",
+    "models/f3/loop2/replication/qsim_share.py": "19d1f9fbf04f5f3a8d4da04f55c83e7e40684168c29c1783c184f5b899e45cb4"
   },
-  "code": {
-    "models/f3/loop2/replication/qsim_share.py": "5462b808a5a15e7820e8d4c342a9303f0ddd2ce5a2415a86270dfa67cd0d22a5",
-    "models/f3/loop2/count_share.py": "2a31baad0ce533d7ac88e1bdda4b56f1230b2f76744665cc06b149555360ace1"
+  "pre_run_hashes": {
+    "data/units/loop2/replication/qsim801_vecoli2017_table1.csv": "325e97fa006e7f2fd3f50cb5f193fbd843356a646341f871088aa4644dd66754",
+    "library/closed/vecoli2017.pdf": "5932b8da36d10be365089f06cab55ad472ade98c238186432058e9493459936b",
+    "models/f3/loop2/count_share.py": "2a31baad0ce533d7ac88e1bdda4b56f1230b2f76744665cc06b149555360ace1",
+    "models/f3/loop2/replication/qsim_share.py": "19d1f9fbf04f5f3a8d4da04f55c83e7e40684168c29c1783c184f5b899e45cb4"
   },
-  "max_false_rejection": 0.0191,
-  "status": "unqualified empirical bound under declared parity; known-answer check of the marks lower bound"
+  "runtime": {
+    "numpy": "2.5.4",
+    "python": "3.14.4",
+    "scipy": "1.18.1",
+    "seconds": 41.201158
+  },
+  "simulation": {
+    "floors": [
+      0.01,
+      0.03,
+      0.05
+    ],
+    "maximum_observed_false_rejection_rate": 0.0191,
+    "regimes": {
+      "boundary": {
+        "dirichlet_concentration": 50.0,
+        "lambda_high": 10.0,
+        "lambda_low": 2.0,
+        "taxon_pool": 400
+      },
+      "turnover": {
+        "dirichlet_concentration": 0.3,
+        "lambda_high": 300.0,
+        "lambda_low": 5.0,
+        "taxon_pool": 22
+      }
+    },
+    "replicates_per_cell": 20000,
+    "scope": "toy-method-stress-not-real-frame-qualification",
+    "seed": 20261101,
+    "strata": 17
+  },
+  "status": "model-conditional-method-calculation-not-real-frame-qualification"
 }

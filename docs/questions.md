@@ -20,6 +20,20 @@ The register is updated at each loop's close. Started 2026-10-28 by Claude Opus 
   - **answered**: with a pointer to the result.
 - **Kind of contribution.** Each has its own standard of success (charter): synthesis, statistics, simulation, phylogeny.
 
+**Loop 2 closed after review 2, 1 November (Q1/Q2/Q5):** `loop2-close.md` and the revised
+private manuscript record one qualified Murzuq encounter frame, with no admitted external
+replication. QSIM's 99 marks and explicit non-detection survive independent source checking;
+the new marks method is mathematically valid under a co-ascertained independent-unit model,
+but that historical protocol is not established. Its limit concerns a minimum, not the pooled
+share or every sample. Q1's first external need is the target-search/ascertainment link, then
+matched counts and reference—not a counted reference alone. Q2 retains main exclusion and
+explicit inclusive assumptions for Stage 4; precursor evidence is not no evidence, and accepting
+younger-than-515.5 Ma forms would not itself falsify M1. The completed trait/persistence pilot
+is now integrated without new inference. Q5 records our wrong primary-readout selection,
+unsupported clock-circularity and exhaustive-search claims, Hanadir material conflation and
+taxon-versus-specimen wording, plus Vecoli's table/prose depth and T. grayae discrepancies.
+These corrections change interpretation and admission, not frozen fossil outcomes or models.
+
 **Loop 2 sprint 2 delivered (Claude, 1 November; Q1/Q2/Q5):** `loop2-sprint2-results.md`.
 - **Q1:** QSIM-801 bounds a persistent trilete:cryptospore ratio below 0.031 (h = 1) in late
   Dapingian–early Darriwilian Saudi samples. It excludes trilete-dominated spore rain, not rarity. A counted

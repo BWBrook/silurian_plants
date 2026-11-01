@@ -1,21 +1,27 @@
-"""QSIM-801 within-sample trilete-share bound from Vecoli et al. (2017).
+"""Model-conditional QSIM-801 persistent-floor calculation.
 
-Observation contract (sprint 2, Claude):
-- one examination per sample (Vecoli et al.'s 20 Liège preparations) produced both the
-  cryptospore occurrence marks of their Table 1 and the study-wide statement that no trilete
-  spore was observed (printed p.330);
-- every mark is at least one examined cryptospore dispersal unit, so the marks lower-bound the
-  examined land-spore units; Le Hérissé et al.'s counts are not used;
-- h is the probability that a trilete unit present in the examined material is recovered and
-  recorded, relative to a cryptospore unit (recognition and preparation parity at h = 1).
+Vecoli et al. (2017) report 99 cryptospore taxon-by-sample presence marks in
+17 of 20 samples and no observed trilete spores. A mark proves that at least
+one cryptospore specimen was observed, but the source does not document the
+search effort, stopping rule, recognition protocol, or independence needed to
+treat every mark as a target-detectable independent trial.
 
-Estimand: a persistent floor theta on the trilete:cryptospore unit ratio, i.e. theta_i >= theta in
-every positive sample.  Conditional on each sample's land-spore total N_i, zero triletes has
-probability prod (1 + h theta_i)^(-N_i) <= (1 + h theta)^(-M) with M = sum of marks <= sum N_i,
-so rejecting theta when (1 + h theta)^(-M) <= alpha is a valid level-alpha test of the floor.
-It is not a bound on a mean ratio: heterogeneity raises the all-zero probability.
-Within-sample clustering is carried as a design effect that divides M.
+The D=1 calculation is therefore conditional on a co-ascertainment model: each
+mark lower-bounds an independently target-classifiable unit, target detection
+remains active with relative effort h, and theta is a floor holding in every
+informative sample. It is a limit on the minimum sample ratio, not a pooled
+share and not an empirical qualification of the fossil frame. Divisors D=2
+and D=4 are heuristic effective-M exponent sensitivities, not validated
+clustering adjustments or confidence bounds.
 """
+
+# /// script
+# requires-python = ">=3.12"
+# dependencies = [
+#   "numpy>=2.0",
+#   "scipy>=1.14",
+# ]
+# ///
 
 from __future__ import annotations
 
@@ -23,10 +29,14 @@ import csv
 import hashlib
 import json
 import math
+import platform
 import sys
+import time
 from pathlib import Path
+from typing import Sequence
 
 import numpy as np
+import scipy
 
 ROOT = Path(__file__).resolve().parents[4]
 sys.path.insert(0, str(ROOT / "models" / "f3" / "loop2"))
@@ -34,119 +44,304 @@ from count_share import zero_target_stratified_bound  # noqa: E402
 
 TABLE = ROOT / "data" / "units" / "loop2" / "replication" / "qsim801_vecoli2017_table1.csv"
 SOURCE = ROOT / "library" / "closed" / "vecoli2017.pdf"
-OUT = Path(__file__).resolve().parent / "out"
+SCRIPT = Path(__file__).resolve()
+COUNT_SHARE = ROOT / "models" / "f3" / "loop2" / "count_share.py"
+OUT = SCRIPT.parent / "out"
 ALPHA = 0.05
 EFFORTS = (1.0, 0.5, 0.25, 0.1)
-DESIGN_EFFECTS = (1, 2, 4)
+EFFECTIVE_M_DIVISORS = (1.0, 2.0, 4.0)
 SCENARIO_RATIOS = (0.01, 0.03, 0.1, 0.3, 1.0)
+SIMULATION_REPS = 20_000
+SIMULATION_SEED = 20_261_101
+TOY_STRATA = 17
+TOY_FLOORS = (0.01, 0.03, 0.05)
+TOY_REGIMES = {
+    "boundary": {
+        "lambda_low": 2.0,
+        "lambda_high": 10.0,
+        "taxon_pool": 400,
+        "dirichlet_concentration": 50.0,
+    },
+    "turnover": {
+        "lambda_low": 5.0,
+        "lambda_high": 300.0,
+        "taxon_pool": 22,
+        "dirichlet_concentration": 0.3,
+    },
+}
 
 
 def sha256(path: Path) -> str:
     return hashlib.sha256(path.read_bytes()).hexdigest()
 
 
+def _integer_marks(value: int) -> int:
+    if isinstance(value, bool) or not isinstance(value, (int, np.integer)):
+        raise TypeError("marks must be a positive integer")
+    value = int(value)
+    if value <= 0:
+        raise ValueError("marks must be a positive integer")
+    return value
+
+
+def _positive_finite(value: float, name: str, *, minimum: float = 0.0) -> float:
+    if isinstance(value, bool) or not isinstance(value, (int, float, np.integer, np.floating)):
+        raise TypeError(f"{name} must be a finite number greater than {minimum}")
+    value = float(value)
+    if not math.isfinite(value) or value <= minimum:
+        raise ValueError(f"{name} must be a finite number greater than {minimum}")
+    return value
+
+
+def _alpha(value: float) -> float:
+    if isinstance(value, bool) or not isinstance(value, (int, float, np.integer, np.floating)):
+        raise TypeError("alpha must be a finite number in (0, 1)")
+    value = float(value)
+    if not math.isfinite(value) or not 0.0 < value < 1.0:
+        raise ValueError("alpha must be a finite number in (0, 1)")
+    return value
+
+
+def persistent_floor(sample_ratios: Sequence[float]) -> float:
+    """Return the minimum sample ratio, deliberately not a mean."""
+    if not sample_ratios:
+        raise ValueError("sample_ratios must be non-empty")
+    ratios = []
+    for i, value in enumerate(sample_ratios):
+        if isinstance(value, bool) or not isinstance(value, (int, float, np.integer, np.floating)):
+            raise TypeError(f"sample_ratios[{i}] must be finite and non-negative")
+        value = float(value)
+        if not math.isfinite(value) or value < 0.0:
+            raise ValueError(f"sample_ratios[{i}] must be finite and non-negative")
+        ratios.append(value)
+    return min(ratios)
+
+
+def theta_upper(marks: int, h: float, effective_m_divisor: float = 1.0,
+                alpha: float = ALPHA) -> float:
+    """Invert the all-zero exponent calculation.
+
+    Only ``effective_m_divisor=1`` is the analytic model-conditional bound.
+    Larger divisors are explicitly heuristic effective-M sensitivities.
+    """
+    marks = _integer_marks(marks)
+    h = _positive_finite(h, "h")
+    divisor = _positive_finite(effective_m_divisor, "effective_m_divisor")
+    if divisor < 1.0:
+        raise ValueError("effective_m_divisor must be at least 1")
+    alpha = _alpha(alpha)
+    effective_m = marks / divisor
+    return math.expm1(-math.log(alpha) / effective_m) / h
+
+
+def zero_probability(marks: int, theta: float, h: float,
+                     effective_m_divisor: float = 1.0) -> float:
+    """Return the declared all-zero exponent probability or sensitivity."""
+    marks = _integer_marks(marks)
+    h = _positive_finite(h, "h")
+    divisor = _positive_finite(effective_m_divisor, "effective_m_divisor")
+    if divisor < 1.0:
+        raise ValueError("effective_m_divisor must be at least 1")
+    if isinstance(theta, bool) or not isinstance(theta, (int, float, np.integer, np.floating)):
+        raise TypeError("theta must be finite and non-negative")
+    theta = float(theta)
+    if not math.isfinite(theta) or theta < 0.0:
+        raise ValueError("theta must be finite and non-negative")
+    return math.exp(-(marks / divisor) * math.log1p(h * theta))
+
+
 def load() -> list[dict]:
-    with TABLE.open() as f:
+    with TABLE.open(newline="") as f:
         rows = list(csv.DictReader(f))
-    for r in rows:
-        r["cryptospore_marks"] = int(r["cryptospore_marks"])
-        assert int(r["trilete_reported"]) == 0
-        assert r["cryptospore_marks"] == (len(r["taxa"].split("; ")) if r["taxa"] else 0)
+    if len(rows) != 20:
+        raise ValueError(f"expected 20 QSIM-801 rows, found {len(rows)}")
+    depths = set()
+    for i, row in enumerate(rows, start=2):
+        try:
+            marks = int(row["cryptospore_marks"])
+            triletes = int(row["trilete_reported"])
+        except (KeyError, TypeError, ValueError) as exc:
+            raise ValueError(f"invalid count field at CSV line {i}") from exc
+        if marks < 0:
+            raise ValueError(f"negative cryptospore marks at CSV line {i}")
+        if triletes != 0:
+            raise ValueError(f"non-zero trilete report at CSV line {i}")
+        taxa_count = len(row["taxa"].split("; ")) if row["taxa"] else 0
+        if marks != taxa_count:
+            raise ValueError(f"mark/taxon mismatch at CSV line {i}: {marks} != {taxa_count}")
+        if row["depth_ft"] in depths:
+            raise ValueError(f"duplicate depth at CSV line {i}: {row['depth_ft']}")
+        depths.add(row["depth_ft"])
+        row["cryptospore_marks"] = marks
+        row["trilete_reported"] = triletes
     return rows
 
 
-def theta_upper(marks: int, h: float, design_effect: float = 1.0) -> float:
-    m_eff = marks / design_effect
-    return (ALPHA ** (-1.0 / m_eff) - 1.0) / h
-
-
 def bounds(rows: list[dict]) -> list[dict]:
-    counts = [r["cryptospore_marks"] for r in rows if r["cryptospore_marks"] > 0]
-    m = sum(counts)
+    counts = [row["cryptospore_marks"] for row in rows if row["cryptospore_marks"] > 0]
+    marks = sum(counts)
     out = []
     for h in EFFORTS:
         module = zero_target_stratified_bound(counts, [h] * len(counts), ALPHA)["theta_upper"]
-        for de in DESIGN_EFFECTS:
-            t = theta_upper(m, h, de)
-            if de == 1:
-                assert math.isclose(t, module, rel_tol=1e-7), (t, module)
-            out.append({"effort_ratio_h": h, "design_effect": de, "marks_M": m,
-                        "positive_samples": len(counts), "theta_upper": round(t, 5),
-                        "recovered_share_upper": round(h * t / (1 + h * t), 5)})
+        for divisor in EFFECTIVE_M_DIVISORS:
+            theta = theta_upper(marks, h, divisor)
+            if divisor == 1.0 and not math.isclose(theta, module, rel_tol=1e-12):
+                raise RuntimeError(f"analytic/module disagreement: {theta} != {module}")
+            status = (
+                "model-conditional-independent-unit-calculation"
+                if divisor == 1.0
+                else "heuristic-effective-M-exponent-sensitivity-not-confidence-bound"
+            )
+            out.append({
+                "effort_ratio_h": h,
+                "effective_M_divisor": divisor,
+                "marks_M": marks,
+                "effective_M": round(marks / divisor, 5),
+                "positive_samples": len(counts),
+                "theta_upper": round(theta, 5),
+                "persistent_floor_share_limit": round(theta / (1.0 + theta), 5),
+                "estimand": "minimum-sample-ratio-persistent-floor-not-pooled-share",
+                "status": status,
+            })
     return out
 
 
-def scenarios(m: int) -> list[dict]:
-    return [{"persistent_ratio": th, "effort_ratio_h": h,
-             "p_zero_triletes_given_at_least_M": round((1 + h * th) ** (-m), 6)}
-            for th in SCENARIO_RATIOS for h in EFFORTS]
+def scenarios(marks: int) -> list[dict]:
+    return [{
+        "persistent_ratio": theta,
+        "effort_ratio_h": h,
+        "p_zero_triletes_given_at_least_M": round(zero_probability(marks, theta, h), 6),
+        "status": "model-conditional-independent-unit-probability",
+    } for theta in SCENARIO_RATIOS for h in EFFORTS]
 
 
-def known_answer(rows: list[dict], reps: int = 20000, seed: int = 20261101) -> list[dict]:
-    """False-rejection rate of the persistent-floor test when the true floor holds.
+def known_answer(reps: int = SIMULATION_REPS, seed: int = SIMULATION_SEED) -> list[dict]:
+    """Toy method stress, not qualification of the QSIM-801 observation frame.
 
-    Regime "boundary": small samples and a large, even species pool, so marks nearly equal the
-    examined count (the least favourable case for the marks lower bound) and all-zero outcomes
-    are common near the declared bound.  Regime "turnover": Vecoli-like richness, where marks
-    fall far below the examined count.
+    Seventeen strata retain the original stress design because they match the
+    number of positive table rows. They are not treated as a random sample or
+    as evidence that the microscopy observation contract holds.
     """
+    reps = _integer_marks(reps)
     rng = np.random.default_rng(seed)
-    n_pos = sum(1 for r in rows if r["cryptospore_marks"] > 0)
-    regimes = {"boundary": (2.0, 10.0, 400, 50.0), "turnover": (5.0, 300.0, 22, 0.3)}
     out = []
-    for regime, (lo, hi, pool, conc) in regimes.items():
-        for floor in (0.01, 0.03, 0.05):
-            for hetero in (False, True):
+    for regime, parameters in TOY_REGIMES.items():
+        low = parameters["lambda_low"]
+        high = parameters["lambda_high"]
+        pool = parameters["taxon_pool"]
+        concentration = parameters["dirichlet_concentration"]
+        for floor in TOY_FLOORS:
+            for heterogeneous in (False, True):
                 false_reject = 0
                 marks_sum = 0
                 for _ in range(reps):
-                    marks, zero = 0, True
-                    for _ in range(n_pos):
-                        lam = float(rng.uniform(lo, hi))
-                        seen = rng.multinomial(int(rng.poisson(lam)), rng.dirichlet(np.full(pool, conc)))
+                    marks = 0
+                    zero = True
+                    for _ in range(TOY_STRATA):
+                        lam = float(rng.uniform(low, high))
+                        seen = rng.multinomial(
+                            int(rng.poisson(lam)),
+                            rng.dirichlet(np.full(pool, concentration)),
+                        )
                         marks += int((seen > 0).sum())
-                        th = floor * (1.0 + rng.exponential(2.0)) if hetero else floor
-                        if rng.poisson(lam * th) > 0:
+                        theta = floor * (1.0 + rng.exponential(2.0)) if heterogeneous else floor
+                        if rng.poisson(lam * theta) > 0:
                             zero = False
                     marks_sum += marks
-                    if zero and (1 + floor) ** (-marks) <= ALPHA:
+                    if zero and marks > 0 and zero_probability(marks, floor, 1.0) <= ALPHA:
                         false_reject += 1
-                out.append({"regime": regime, "true_floor": floor, "heterogeneous_above_floor": hetero,
-                            "replicates": reps, "false_rejection_rate": round(false_reject / reps, 4),
-                            "mean_marks": round(marks_sum / reps, 1)})
+                out.append({
+                    "regime": regime,
+                    "true_floor": floor,
+                    "heterogeneous_above_floor": heterogeneous,
+                    "toy_strata": TOY_STRATA,
+                    "replicates": reps,
+                    "seed": seed,
+                    "false_rejection_rate": round(false_reject / reps, 4),
+                    "mean_marks": round(marks_sum / reps, 1),
+                    "status": "toy-method-stress-not-real-frame-qualification",
+                })
     return out
 
 
 def write(path: Path, rows: list[dict]) -> None:
     with path.open("w", newline="") as f:
-        w = csv.DictWriter(f, fieldnames=list(rows[0]), lineterminator="\n")
-        w.writeheader()
-        w.writerows(rows)
+        writer = csv.DictWriter(f, fieldnames=list(rows[0]), lineterminator="\n")
+        writer.writeheader()
+        writer.writerows(rows)
 
 
 def main() -> None:
+    started = time.perf_counter()
+    tracked = (TABLE, SOURCE, SCRIPT, COUNT_SHARE)
+    missing = [str(path) for path in tracked if not path.is_file()]
+    if missing:
+        raise FileNotFoundError(f"missing bound source/code files: {missing}")
+    pre_hashes = {str(path.relative_to(ROOT)): sha256(path) for path in tracked}
+
     rows = load()
     OUT.mkdir(exist_ok=True)
-    b = bounds(rows)
-    m = b[0]["marks_M"]
-    s = scenarios(m)
-    k = known_answer(rows)
-    write(OUT / "qsim_share_bounds.csv", b)
-    write(OUT / "qsim_share_scenarios.csv", s)
-    write(OUT / "qsim_share_known_answer.csv", k)
-    receipt = {
-        "analysis": "QSIM-801 persistent-floor trilete:cryptospore bound (Loop 2 sprint 2)",
-        "alpha": ALPHA,
-        "marks_M": m,
-        "inputs": {str(TABLE.relative_to(ROOT)): sha256(TABLE),
-                   "library/closed/vecoli2017.pdf": sha256(SOURCE) if SOURCE.exists() else "not-held-here"},
-        "code": {str(Path(__file__).relative_to(ROOT)): sha256(Path(__file__)),
-                 "models/f3/loop2/count_share.py": sha256(ROOT / "models/f3/loop2/count_share.py")},
-        "max_false_rejection": max(r["false_rejection_rate"] for r in k),
-        "status": "unqualified empirical bound under declared parity; known-answer check of the marks lower bound",
+    bound_rows = bounds(rows)
+    marks = bound_rows[0]["marks_M"]
+    scenario_rows = scenarios(marks)
+    simulation_rows = known_answer()
+    output_paths = {
+        "bounds": OUT / "qsim_share_bounds.csv",
+        "scenarios": OUT / "qsim_share_scenarios.csv",
+        "toy_method_stress": OUT / "qsim_share_known_answer.csv",
     }
-    (OUT / "qsim_share_receipt.json").write_text(json.dumps(receipt, indent=2) + "\n")
-    print(json.dumps({"M": m, "h1": b[0], "max_false_rejection": receipt["max_false_rejection"]}, indent=1))
+    write(output_paths["bounds"], bound_rows)
+    write(output_paths["scenarios"], scenario_rows)
+    write(output_paths["toy_method_stress"], simulation_rows)
+
+    post_hashes = {str(path.relative_to(ROOT)): sha256(path) for path in tracked}
+    if pre_hashes != post_hashes:
+        raise RuntimeError("source or code drifted during the QSIM-801 run")
+    runtime_seconds = time.perf_counter() - started
+    receipt = {
+        "analysis": "QSIM-801 persistent-floor model calculation (Loop 2 close repair)",
+        "status": "model-conditional-method-calculation-not-real-frame-qualification",
+        "estimand": "minimum-sample-ratio-persistent-floor-not-pooled-share",
+        "alpha": ALPHA,
+        "marks_M": marks,
+        "positive_samples": sum(row["cryptospore_marks"] > 0 for row in rows),
+        "assumptions": {
+            "D1": "co-ascertained independent target-classifiable units with fixed positive h",
+            "D2_D4": "heuristic effective-M exponent sensitivities; not clustering confidence bounds",
+        },
+        "simulation": {
+            "scope": "toy-method-stress-not-real-frame-qualification",
+            "seed": SIMULATION_SEED,
+            "replicates_per_cell": SIMULATION_REPS,
+            "strata": TOY_STRATA,
+            "floors": list(TOY_FLOORS),
+            "regimes": TOY_REGIMES,
+            "maximum_observed_false_rejection_rate": max(
+                row["false_rejection_rate"] for row in simulation_rows
+            ),
+        },
+        "runtime": {
+            "seconds": round(runtime_seconds, 6),
+            "python": platform.python_version(),
+            "numpy": np.__version__,
+            "scipy": scipy.__version__,
+        },
+        "pre_run_hashes": pre_hashes,
+        "post_run_hashes": post_hashes,
+        "input_drift": False,
+        "output_hashes": {
+            str(path.relative_to(ROOT)): sha256(path) for path in output_paths.values()
+        },
+    }
+    receipt_path = OUT / "qsim_share_receipt.json"
+    receipt_path.write_text(json.dumps(receipt, indent=2, sort_keys=True) + "\n")
+    print(json.dumps({
+        "M": marks,
+        "D1_h1": bound_rows[0],
+        "toy_max_false_rejection": receipt["simulation"]["maximum_observed_false_rejection_rate"],
+        "runtime_seconds": receipt["runtime"]["seconds"],
+        "receipt": str(receipt_path.relative_to(ROOT)),
+    }, indent=2))
 
 
 if __name__ == "__main__":

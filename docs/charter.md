@@ -174,6 +174,14 @@ data archived, and the human–AI correspondence record published alongside.
   effort and impossible-data handling in the count-share code. No new fossil design was
   qualified; the parent retained the frozen benchmark and documented the distinction between
   a structural identification limit and an unqualified numerical comparison.
+  In review 2 it checked Claude's sprint 2 with two independent source delegates and a statistical
+  specialist (`sol_high_specialist`, configured GPT-5.6-sol/high; other delegates inherited the
+  parent model). It verified the 99 QSIM marks, retained the mathematical lower-bound idea but
+  withheld empirical admission, corrected the minimum estimand and heuristic dependence labels,
+  and repaired primary-readout, affinity, source-scope and material-identity overclaims. It
+  integrated the existing biological pilot and regenerated the private manuscript/package,
+  without rerunning R or changing frozen qualification. The three close audits identify the
+  checked evidence and local repairs; no claim is made that model agreement alone validates it.
 - OpenAI Codex CLI, `gpt-6.1-sol` and `gpt-6.1-terra` at high reasoning effort, run by Claude Opus
   5.5 as read-only, schema-constrained jobs through `~/.claude/bin/codex-delegate` (2026-10-27 and
   28; on 2026-10-31 `gpt-6.1-terra` independently re-derived the 164 Libyan binary units for sprint 1). Records are in `docs/audits/` and the job files in `data/spores/work/codex/` and

@@ -1,98 +1,74 @@
-# Loop 2 sprint 2: replication attempt, M1 and M3 targets, and the private paper package
+# Loop 2 sprint 2: reviewed results and private paper package
 
-Claude Opus 5.5 (`claude-opus-5-5`), 1 November 2026, under `sprints-loop2.md` v2.1 after review 1
-(`audits/2026-11-01-loop2-sprint1-claude-review.md`). This is the handoff for Codex's review 2, not the
-Loop 2 close.
+Claude Opus 5.5, 1 November 2026; revised by Codex after review 2 the same day. This replaces
+the sprint-2 handoff interpretation at `cb70b36`, preserved in Git. Review 2 and final status
+are recorded in `loop2-close.md` and the three `audits/2026-11-01-loop2-close-*.md` reports.
 
-## Result
+## Result after review
 
-**M2 gains a second line of evidence, under a different assumption.**
-- **The data.** QSIM-801 (central Saudi Arabia, late Dapingian–early Darriwilian) has no trilete
-  spore among at least 99 examined cryptospore units in 17 samples (Vecoli et al. 2017).
-- **The bound.** A trilete:cryptospore ratio above **0.031 in every sample** is excluded at the 5%
-  level, if triletes and cryptospores were recovered and recognised alike (h = 1). The bound scales as
-  1/h, reaching 0.31 at h = 0.1.
-- **What it excludes.** A trilete-dominated land-spore rain, θ ≥ 1, which is typical from the
-  mid-Telychian onward. It does so for every h above 0.031.
-- **What it doesn't.** Early-Rhuddanian rarity, where single triletes are reported.
-- **Agreement with Murzuq.** The pattern matches Murzuq's: abundant producers are excluded and rare
-  ones are not. Murzuq rests on between-interval transport, QSIM-801 on within-sample recovery parity.
-- **Status.** This is not a replication, because no counted reference share exists to put the two
-  estimands on one scale. It is an unqualified empirical bound under declared assumptions.
+**One qualified encounter frame remains: Murzuq.** QSIM-801 adds independently checked source
+evidence and a model-conditional lower-bound calculation, but no empirical confidence bound
+or second qualified frame is admitted. The manuscript follows the single-study branch with
+an independently assessed external-admission limit. This is not failed biological replication.
 
-**M1: the occurrence route has no source support.** All three held sources describing the Cambrian
-Stage 4 cryptospore-like forms assign charophyte, pre-embryophytic affinity (`data/units/loop2/m1-m3/`).
-- **Under the adopted E2 rule** these forms are not E2 under main. The inclusive reading rests on
-  morphology alone.
-- **M1 remains an absence question** without an admitted design.
+**QSIM transcription passes.** All 99 occurrence marks across 17 of 20 tabled samples reproduce
+from the rendered Table 1. The table and explicit trilete non-detection concern the same study
+material. The source does not establish that every mark arose in an independent target-detectable
+search. The 20 table depths are 675.1–767.8 ft; the methods' 586.9-ft endpoint is inconsistent.
+The five Table 1 T. grayae marks also differ from the prose's uppermost four. The table is retained
+literally; neither discrepancy changes its sum or licenses invented trial counts.
 
-**M3: unchanged.** The data requests are drafted for Barry (`data/units/loop2/m1-m3/requests.md`).
+**The mathematics is useful, with a narrower interpretation.** For co-ascertained independent
+units with known positive effective recovery h, a random mark count M lower-bounding actual
+target-detectable units permits the persistent-floor test. At M=99 and h=1 its algebraic limit
+is 0.030722. It bounds a minimum across informative samples, not every ratio, a pooled share or
+producer abundance. Dividing M by asserted design effects 2 or 4 is heuristic, not a calibrated
+clustering correction. At D=4,h=0.1 the limit is 1.2867, contradicting the handoff's blanket
+exclusion of a ratio of one. The code, tests, output labels and receipt now enforce these limits.
+Toy simulations remain method diagnostics; they do not qualify the real frame.
 
-**Paper package.** A rendered private draft is in `manuscript/`:
-- the manuscript (`manuscript.qmd`, `.html`, `.pdf`, 12 pages);
-- two new figures from declared tables, plus a sprint-1 figure;
-- a 17-row claim-to-evidence table;
-- a data manifest separating distributable derivatives from locally held copyrighted sources.
+**External dispositions are inspectable.** `../manuscript/external_candidates.csv` records seven
+candidate/observation routes. Le Hérissé companion counts remain unpaired; Qusaiba gives reference
+context; Röstånga and Caspalá/Lipeón are younger than M2. Hanadir/TAYM-4 is separate material,
+not demonstrably reused QSIM material, but is not separately admitted. No matched counted
+reference was recovered in this bounded review. The undocumented assertion that a scan of
+346 PDFs/195 texts established that none is held is withdrawn.
 
-## External-frame dispositions
+**M1 main reading stands, with uncertainty retained.** None of the three assessed sources
+explicitly accepts the Stage 4 producers as embryophytes. Their precursor-character evidence
+is not erased, and the historical inclusive reading remains an explicit alternative. The claim
+that clock dates were the principal reason for embryophyte assignment was unsupported and is
+withdrawn. Stage 4's ICS conversion, 514.5–506.5 Ma, is younger than 515.5 Ma; even an accepted
+occurrence would not by itself contradict that maximum or establish crown membership.
+RIOCAP-7999 remains unresolved under main and detected under inclusive/outlier.
 
-| Candidate | Disposition | Reason |
-|---|---|---|
-| QSIM-801 (Vecoli et al. 2017) | admitted under the within-sample share contract; unqualified empirical bound | one examination yields both the cryptospore marks and the trilete zero; marks lower-bound the denominator |
-| QSIM-801 (Le Hérissé et al. 2017 counts) | not used | preparations and counts cannot be linked to Vecoli et al.'s examination (sprint-1 gate) |
-| Qusaiba-1 (Wellman et al. 2015) | reference context only | deepest sample already trilete-positive; presence-coded; no counted share |
-| Counted Katian–Llandovery reference | not found | 346 held PDFs and 195 held text files scanned for trilete percentage statements: none. Only qualitative descriptors (Abuhmida 2013, pp.350, 382–383) |
-| Röstånga-1 (Badawy et al. 2014) | not an M2 older-side frame | Katian, younger than 459.1 Ma |
-| Caspalá/Lipeón (Rubinstein et al. 2016) | not an M2 older-side frame | Ordovician/Silurian boundary interval, younger than 459.1 Ma |
-| Hanadir (Strother et al. 2015) | not assessed further | same region and interval as QSIM-801, so not independent of it |
+**M3 remains without an admitted searched-unit design.** The expanded, unsent requests specify
+complete eligible units, target outcomes, selection, effort, age and reference information.
+No external reply is a completion dependency.
 
-## The QSIM-801 bound
+## Corrections to the Murzuq interpretation
 
-**Inputs.**
-- `data/units/loop2/replication/qsim801_vecoli2017_table1.csv`: 20 samples and 22 taxa, transcribed
-  from Table 1 (printed p.321).
-- **The transcription was checked twice.** The rendered page gives 72 + 27 marks, and the text layer
-  gives 99.
-- Cryptospore-free samples (695.7, 731.6, 735.1 ft) match p.330.
+The frozen primary LY-MZ-CU/stage/rho1 row at 459.1 Ma gives H0c=0.0910 and H0=0.1835.
+The handoff confused these with other read-outs/allocation sensitivities. The independent-uniform
+constant-intensity likelihood correctly matches the primary H0c statistic; 0.0955 under
+shared midpoint ages is a separate chronology sensitivity. No frozen value was changed.
 
-**Code.** `models/f3/loop2/replication/qsim_share.py` reuses sprint 1's
-`count_share.zero_target_stratified_bound` for the design-effect-1 rows and asserts agreement with the
-closed form.
+The indigenous fraction g is a fraction of encounter intensity, not the proportion of positive
+samples free from contamination. The 95.59% break-even refers to that intensity and to the
+declared no-transfer model. Wider-window survival is conditional on its tested envelope; shared
+90% ages remove exposure even in the window ending at 467.1 Ma. Low-intensity pre-459.1 windows
+are distinct from uninterrupted constant-origin histories. These distinctions now run through
+the abstract, methods, results, discussion, figures and claim ledger.
 
-**Assumptions, all declared:**
-- **Recovery and recognition parity h,** with scenarios 1, 0.5, 0.25 and 0.1. It converts the
-  recovered ratio into a ratio among units reaching the slides. Delivery parity, a further
-  assumption, converts that into producer output.
-- **Within-sample exchangeability** of examined units, with design effects 1, 2 and 4 for clustering.
-- **A persistent-floor estimand,** not a mean, because heterogeneity raises the all-zero probability.
+## Completed private package
 
-**Known-answer check** (`out/qsim_share_known_answer.csv`): 20,000 replicates per cell.
-- **Boundary stress regime.** Small samples and a large, even taxon pool, so marks nearly equal
-  counts. The false-rejection rate is at most 0.0191 against a nominal 0.05.
-- **Turnover regime.** Vecoli-like richness, with marks far below counts. No false rejections occur.
+`../manuscript/` contains the revised source, rendered HTML/PDF, four figures, 23-row claim ledger,
+external-candidate dispositions, specimen-to-node mapping, reproduction instructions and exact
+candidate-file manifest. Existing specimen, deposited ancestral-state and converged persistence
+results are integrated without re-running R. Separately modelled characters do not supply a
+joint ancestral phenotype, and retention probabilities are not multiplied into F3 coverage.
 
-## What changes the answer
-
-- **A counted reference trilete share** turns the Saudi bound into a comparison with the Llandovery
-  flora. It is the single most valuable new observation for M2.
-- **Evidence on h.** Differential trilete and cryptospore recovery under oxidation and 12-µm sieving,
-  or recognition rates, would fix h. Sizes overlap, so h near 1 is plausible but undemonstrated.
-- **Finer chitinozoan dating of the QSIM-801 samples** would place them against the Murzuq window
-  endpoints.
-
-## Handoff to Codex (review 2)
-
-Please challenge:
-1. **The marks lower-bound argument and the floor estimand**, particularly whether a mark can fail to
-   represent an examined unit from the same search as the trilete statement.
-2. **The parity framing of h.**
-3. **The M1 affinity verdict and its circularity remark.**
-4. **Whether the manuscript's claims match the statuses** in `manuscript/claims.csv`, from title to
-   discussion.
-
-Sprint 2 changed no frozen Loop 1 file and no sprint-1 file. Owned new paths:
-- `data/units/loop2/replication/`;
-- `data/units/loop2/m1-m3/`;
-- `models/f3/loop2/replication/`;
-- `manuscript/`;
-- this note and the review-1 audit.
+The manuscript and package remain private research artefacts, awaiting Barry's release review.
+Frozen Loop 1 and sprint-1 model/data/output bytes remain unchanged. Source-specific limitations
+are retained as findings; they are not unresolved implementation work or reasons to wait for
+an unprompted collaborator.

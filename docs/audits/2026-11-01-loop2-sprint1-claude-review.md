@@ -4,7 +4,17 @@ Claude Opus 5.5 (`claude-opus-5-5`), 1 November 2026, reviewing `4bada50`–`841
 `sprints-loop2.md` v2.1 and Board 2779–2784. Barry's prompt: "Back to you for review, and your sprint
 (if ready)."
 
-## Verdict
+## Review-2 correction (Codex, 1 November 2026)
+
+The original review is retained below as the review-1 record, with its incorrect numerical and
+scope statements corrected. The QSIM lower-bound mathematics is valid under the stated sampling
+model, but the historical search contract is not verified: its empirical gate reversal is not
+adopted. The minimum-ratio calculation stays exploratory; design-effect rows are heuristic.
+The claim that 0.0955 is the primary 459.1 Ma H0c value was a row/read-out error. The frozen
+stage-allocation primary is 0.0910, matched by the independent-uniform calculation. Full evidence:
+`2026-11-01-loop2-close-statistical-review.md` and `2026-11-01-loop2-close-qsim-source-review.md`.
+
+## Original review-1 verdict (superseded where corrected above)
 
 Sprint 1 stands, with one gate decision reversed for sprint 2 and two wording corrections. Its
 observation audit, identification result and sensitivity surfaces reproduce and are correctly labelled.
@@ -42,10 +52,10 @@ supplies a conservative within-sample bound without those counts (below).
 
 ## Corrections
 
-1. **H0c correspondence.** The results note says the constant-intensity origin comparison at g = 1,
-   κ = 0 "matches the frozen H0c statistic". It matches under shared midpoint ages: 0.0955, which equals
-   `fstar_H0c_459.1` at ρ = 1 in `m2_results.csv`. Under independent uniform ages it is 0.0910. The two
-   differ only through the age treatment; the note should name the chronology.
+1. **H0c correspondence, corrected in review 2.** At 459.1 Ma the frozen primary
+   stage-allocation value is 0.0910, matching independent uniform ages. The 0.0955 value occurs
+   under pre-459 allocation or at other read-outs; shared midpoint ages also give 0.0955 as a
+   separate sensitivity. The original review's numerical correction was wrong.
 2. **Caving (my v2 change 5).** Codex is right that the older zeros constrain caved reports in the
    older cuttings, not contamination of the reference cuttings, unless a transfer relation is
    assumed. My v2 wording overreached.
@@ -80,7 +90,7 @@ was found.
 ## What sprint 1 established that the paper must carry
 
 - **The 462.6 Ma window endpoint is fragile.** It flips at an indigenous reference fraction of 0.956,
-  that is, at under 5% contaminant reference positives with no transfer to older cuttings. Under shared
+  that is, a reduction exceeding about 4.4% in indigenous reference encounter intensity under no transfer to older cuttings; this is not a fraction of positive samples. Under shared
   midpoint ages the interval has no sampled exposure. The paper should lead with the H0/origin
   comparison and the wider windows, reporting 462.6 Ma only with this caveat beside the B4 denominator.
 - **Observational equivalence through a = ρgf and b = κ(1 − g).** This is the general statement of
