@@ -128,7 +128,7 @@
     "models/f3/designs.py": "0fd2588f84b5dd0b3fabcd45a875de203f8b28f5320aeb6f9adf7148f4f44ca8",
     "models/f3/designs/m2.toml": "d27bd4277d9910a9396f688d0b893b06f5feeea007523134a8e49b09bb5421bd",
     "models/f3/envelope.py": "0f6d1b2e9cb2e99b2d7211fafaf442c5946fa7f3579f6940d453d2084f18d473",
-    "models/f3/loop2/engine_sensitivity.py": "d6acbefae73d740aac3ec184813fa258044c5ca7d8171aee2b49c0b30d415a49",
+    "models/f3/loop2/engine_sensitivity.py": "75124e007b6b1880cb4afb93be6136d84d0f5fcbb0698d4e0c6b3d6ba57debd7",
     "models/f3/loop2/robustness_design.json": "31a30020be0b312e9726482667c4efc3bac477fc733df3730a0c7dfae9637610",
     "models/f3/m2.py": "48da9074700e4a17e5555c2849de43a780ad3e44423d5ecfe8a96ed95ac313e1",
     "models/f3/out/m2_results.csv": "8c06ce3a12b83952df2af43e2a286e745f8178753578408e060e52960bf30966",
@@ -136,14 +136,14 @@
   },
   "numerical_failures": 0,
   "outputs": {
-    "engine_sensitivity.csv": "55f917ef07751332b25b3b5b7df7db8f9db2b52968b400edc1984cf9e17901a8",
-    "engine_sensitivity_reference_inventory.csv": "2258a5cd7248996e461b3b9aadb50d25d3a742dedaf59aa7bb1ca6be648017d2"
+    "engine_sensitivity.csv": "500394993f15616baa760ae5f023a5afa937c58249a2619865806ee3111ad02d",
+    "engine_sensitivity_reference_inventory.csv": "023d25cf1349cf2f3914c0e0ac85b41363cbb8a72e3859dbcf16e74a4cc206aa"
   },
   "runtime": {
     "numpy": "2.5.4",
     "python": "3.14.4",
     "scipy": "1.18.1"
   },
-  "seconds": 2.2258956249861512,
+  "seconds": 2.2776097079913598,
   "status": "unqualified-sensitivity; frozen baseline reproduced only"
 }

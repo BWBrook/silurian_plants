@@ -11,5 +11,6 @@
   "observation_check": "pass: all 164 rows",
   "figures": "PNG images visually inspected; PNG and PDF generated from same figures",
   "failures": [],
-  "scope": "provenance and numerical checks; not new empirical qualification"
+  "scope": "provenance and numerical checks; not new empirical qualification",
+  "csv_portability": "explicit LF; scientific engine fields exactly identical after regeneration"
 }
