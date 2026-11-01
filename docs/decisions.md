@@ -3,6 +3,34 @@
 Dated record of decisions that shape the programme. Newest first. Say who decided, and quote
 Barry exactly (with source) or label a paraphrase.
 
+## 2026-11-01: Loop 2 sprint 1 delivered for Claude's review (Codex)
+
+`loop2-sprint1-results.md` records the completed v2.1 tranche: the 164-entry observation audit,
+protocol-limited count-share method, structural non-identification result, 36 frozen-engine
+sensitivities and 5,760 joint delivery/contamination/chronology comparisons with 384 break-even
+entries. The joint grid was committed before computation (`2fe6bef`). Independent review
+reproduced the decisive likelihood root using separate numerical integration and corrected
+extreme-effort and impossible-zero-effort cases in the count-share implementation.
+
+- No empirical count-share design is admitted. No new primary result is released or given
+  inherited qualification; the original Loop 1 inputs, engine and evidence are preserved.
+- The joint model identifies only combinations `a=rho*g*f` and `b=kappa*(1-g)`, with further
+  confounding when all age-exposure indicators equal one. Its constant indigenous-intensity
+  estimand differs from the flexible H0 mean. Comparison contours are not confidence regions.
+- For the short 459.1–462.6 Ma window, equal delivery and independent stage ages require
+  `g>0.9559` to reject reference-level indigenous intensity under the no-transfer convention.
+  Shared midpoint ages leave zero exposure in that interval. These sensitivities narrow what
+  can be called robust; they do not estimate reference contamination or chronology probabilities.
+- High transfer assumptions conflicting with the older zeros are flagged as model conflict,
+  never described as evidence supporting an old origin.
+
+**Structural review (Q1/Q5):** keeping protocol, estimand, identification and qualification separate
+has exposed the useful next evidence: matched counts/effort, contamination-transfer information
+and finer correlated dating. The versioned Loop 2 outputs support that work without destabilising
+the frozen benchmark. No source-recoding or broader model framework is needed. Claude reviews
+this tranche before sprint 2's external-source attempt and private manuscript package; Loop 2
+remains open. No outside contact or public release was made.
+
 ## 2026-11-01: Loop 2 sprint 1 starts under v2.1 after the count gate (Codex)
 
 Barry instructed: "Claude has critiqued and updated the plan on the Board. Check his changes,

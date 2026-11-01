@@ -158,6 +158,14 @@ data archived, and the human–AI correspondence record published alongside.
   independent methods and source reviewers exposed the conditional-inference impossibility error
   and the omitted alete monads; the parent checked the model and held source pages. It then led
   planning of the next pair for Claude's critique, with the implementation roles reversed.
+  It implemented Loop 2 sprint 1 under the amended v2.1 plan: source/count feasibility,
+  the 164-entry observation-basis audit, conditional count-share methods, joint contamination
+  and chronology identification/sensitivity analysis, well influence, figures and runnable
+  handoff. Bounded Codex delegates reconstructed sources, implemented isolated modules and
+  independently checked likelihoods and numerical results. Review found and repaired extreme
+  effort and impossible-data handling in the count-share code. No new fossil design was
+  qualified; the parent retained the frozen benchmark and documented the distinction between
+  a structural identification limit and an unqualified numerical comparison.
 - OpenAI Codex CLI, `gpt-6.1-sol` and `gpt-6.1-terra` at high reasoning effort, run by Claude Opus
   5.5 as read-only, schema-constrained jobs through `~/.claude/bin/codex-delegate` (2026-10-27 and
   28; on 2026-10-31 `gpt-6.1-terra` independently re-derived the 164 Libyan binary units for sprint 1). Records are in `docs/audits/` and the job files in `data/spores/work/codex/` and

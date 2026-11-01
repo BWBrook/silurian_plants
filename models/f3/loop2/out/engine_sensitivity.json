@@ -1,0 +1,149 @@
+{
+  "all_delivered_converged": true,
+  "baseline_checks": [
+    {
+      "difference": 1.6721237685368706e-05,
+      "passes": true,
+      "quantity": "fstar_H0",
+      "rho": 0.1,
+      "tolerance": 0.0011
+    },
+    {
+      "difference": 3.878285172675966e-06,
+      "passes": true,
+      "quantity": "fstar_H0c",
+      "rho": 0.1,
+      "tolerance": 0.0011
+    },
+    {
+      "passes": true,
+      "quantity": "window_1",
+      "rho": 0.1
+    },
+    {
+      "passes": true,
+      "quantity": "window_0.1",
+      "rho": 0.1
+    },
+    {
+      "passes": true,
+      "quantity": "window_0.01",
+      "rho": 0.1
+    },
+    {
+      "difference": 3.5893792601104924e-05,
+      "passes": true,
+      "quantity": "fstar_H0",
+      "rho": 0.25,
+      "tolerance": 0.0011
+    },
+    {
+      "difference": 1.8476757423224743e-05,
+      "passes": true,
+      "quantity": "fstar_H0c",
+      "rho": 0.25,
+      "tolerance": 0.0011
+    },
+    {
+      "passes": true,
+      "quantity": "window_1",
+      "rho": 0.25
+    },
+    {
+      "passes": true,
+      "quantity": "window_0.1",
+      "rho": 0.25
+    },
+    {
+      "passes": true,
+      "quantity": "window_0.01",
+      "rho": 0.25
+    },
+    {
+      "difference": 4.896607630971994e-05,
+      "passes": true,
+      "quantity": "fstar_H0",
+      "rho": 0.5,
+      "tolerance": 0.0011
+    },
+    {
+      "difference": 4.094690444420013e-05,
+      "passes": true,
+      "quantity": "fstar_H0c",
+      "rho": 0.5,
+      "tolerance": 0.0011
+    },
+    {
+      "passes": true,
+      "quantity": "window_1",
+      "rho": 0.5
+    },
+    {
+      "passes": true,
+      "quantity": "window_0.1",
+      "rho": 0.5
+    },
+    {
+      "passes": true,
+      "quantity": "window_0.01",
+      "rho": 0.5
+    },
+    {
+      "difference": 3.798563256879328e-05,
+      "passes": true,
+      "quantity": "fstar_H0",
+      "rho": 1.0,
+      "tolerance": 0.0011
+    },
+    {
+      "difference": 2.9180370064246786e-05,
+      "passes": true,
+      "quantity": "fstar_H0c",
+      "rho": 1.0,
+      "tolerance": 0.0011
+    },
+    {
+      "passes": true,
+      "quantity": "window_1",
+      "rho": 1.0
+    },
+    {
+      "passes": true,
+      "quantity": "window_0.1",
+      "rho": 1.0
+    },
+    {
+      "passes": true,
+      "quantity": "window_0.01",
+      "rho": 1.0
+    }
+  ],
+  "cases": 36,
+  "input_sha256": {
+    "data/timescale.csv": "29c6cc4a68b1746d1a67c66623e5df30ac5dd316257b55ca5948c9854886f826",
+    "data/units/libya_appendix1.csv": "b3b8861263d08fa0a0f042de149a7b1719bb4e0e341e35787f210a3e40c228a1",
+    "data/units/libya_chart_reports.csv": "54881d62e2cfe4720ea405d77403f9e873e27a4db3519ee5f7dc001a73e1d01c",
+    "data/units/libya_prose_support.csv": "3a89c14c0287691ec2a1d26ec23a95c26b0fbca3b89bd6e8d7831118c0608e98",
+    "docs/audits/2026-11-01-loop2-count-gate.md": "35dc5919d6fbcd7f7f157beb335811a26eb608d921ecb5de4a6ca74d49590ce1",
+    "models/f3/designs.py": "0fd2588f84b5dd0b3fabcd45a875de203f8b28f5320aeb6f9adf7148f4f44ca8",
+    "models/f3/designs/m2.toml": "d27bd4277d9910a9396f688d0b893b06f5feeea007523134a8e49b09bb5421bd",
+    "models/f3/envelope.py": "0f6d1b2e9cb2e99b2d7211fafaf442c5946fa7f3579f6940d453d2084f18d473",
+    "models/f3/loop2/engine_sensitivity.py": "d6acbefae73d740aac3ec184813fa258044c5ca7d8171aee2b49c0b30d415a49",
+    "models/f3/loop2/robustness_design.json": "31a30020be0b312e9726482667c4efc3bac477fc733df3730a0c7dfae9637610",
+    "models/f3/m2.py": "48da9074700e4a17e5555c2849de43a780ad3e44423d5ecfe8a96ed95ac313e1",
+    "models/f3/out/m2_results.csv": "8c06ce3a12b83952df2af43e2a286e745f8178753578408e060e52960bf30966",
+    "models/f3/sim.py": "a37ea8c62919d43fe0fab85cdbce2f6c554fc9371b035e11d179e75b224e7bf7"
+  },
+  "numerical_failures": 0,
+  "outputs": {
+    "engine_sensitivity.csv": "55f917ef07751332b25b3b5b7df7db8f9db2b52968b400edc1984cf9e17901a8",
+    "engine_sensitivity_reference_inventory.csv": "2258a5cd7248996e461b3b9aadb50d25d3a742dedaf59aa7bb1ca6be648017d2"
+  },
+  "runtime": {
+    "numpy": "2.5.4",
+    "python": "3.14.4",
+    "scipy": "1.18.1"
+  },
+  "seconds": 2.2258956249861512,
+  "status": "unqualified-sensitivity; frozen baseline reproduced only"
+}

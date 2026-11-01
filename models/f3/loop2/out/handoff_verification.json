@@ -1,0 +1,15 @@
+{
+  "frozen_qualification_receipts": 28,
+  "unique_frozen_bound_files": 18,
+  "frozen_files_changed_since_plan_baseline": [],
+  "engine_sensitivity.json": "pass",
+  "contamination_manifest.json": "pass",
+  "count_share_validation": "pass",
+  "grid_rows": 5760,
+  "all_profiles_interior_ok": true,
+  "focused_tests": "37 passed",
+  "observation_check": "pass: all 164 rows",
+  "figures": "PNG images visually inspected; PNG and PDF generated from same figures",
+  "failures": [],
+  "scope": "provenance and numerical checks; not new empirical qualification"
+}

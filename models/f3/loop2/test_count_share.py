@@ -32,6 +32,32 @@ def test_common_effort_nonzero_target_is_exact_cp_upper():
     assert got.rate_ratio_upper == pytest.approx(q / (1 - q) / 1.5)
 
 
+def test_common_effort_analytic_one_one_cp_upper():
+    got = common_effort_bound(1, 1, 1.0, alpha=0.05)
+    assert got.share_upper == pytest.approx(math.sqrt(1 - 0.05))
+
+
+def test_zero_stratified_one_control_matches_expm1_formula():
+    got = zero_target_stratified_bound([1], [1.0], alpha=0.05)
+    assert got["theta_upper"] == pytest.approx(math.expm1(-math.log(0.05)))
+
+
+@pytest.mark.parametrize("effort", [1e14, 1e16])
+def test_zero_stratified_large_effort_uses_scaled_root(effort):
+    got = zero_target_stratified_bound([1], [effort], alpha=0.05)
+    expected = math.expm1(-math.log(0.05)) / effort
+    assert got["theta_upper"] == pytest.approx(expected, rel=1e-12, abs=0.0)
+
+
+def test_zero_stratified_finite_effort_range_is_guarded():
+    got = zero_target_stratified_bound([1], [1e308], alpha=0.05)
+    expected = math.expm1(-math.log(0.05)) / 1e308
+    assert got["theta_upper"] == pytest.approx(expected, rel=1e-12, abs=0.0)
+    unrepresentable = zero_target_stratified_bound([1], [5e-324], alpha=0.05)
+    assert math.isinf(unrepresentable["theta_upper"])
+    assert unrepresentable["status"] == "numerically-unbounded"
+
+
 def test_zero_stratified_root_and_residual():
     got = zero_target_stratified_bound([10, 20], [0.5, 2.0], alpha=0.05)
     theta = got["theta_upper"]
@@ -47,11 +73,21 @@ def test_zero_stratified_monotonic_information():
 
 
 def test_zero_effort_is_vacuous_and_empty_counts_are_vacuous():
-    assert common_effort_bound(0, 30, 0.0).status == "unidentified-zero-effort"
+    assert common_effort_bound(0, 30, 0.0).status == "unidentified-known-zero-effort"
+    assert common_effort_bound(0, 30, None).status == "unidentified-unknown-effort-includes-zero"
+    assert common_effort_bound(0, 0, 1.0).status == "unidentified-no-counts"
+    with pytest.raises(ValueError, match="impossible"):
+        common_effort_bound(1, 30, 0.0)
     got = zero_target_stratified_bound([10, 20], [0.0, 0.0])
     assert math.isinf(got["theta_upper"])
     assert got["biological_share_upper"] == 1.0
-    assert zero_target_stratified_bound([], [])["status"] == "unidentified-zero-effort"
+    assert zero_target_stratified_bound([], [])["status"] == "unidentified-no-known-positive-effort"
+
+
+def test_zero_stratified_unknown_effort_stratum_contributes_no_information():
+    known = zero_target_stratified_bound([10], [1.0])
+    mixed = zero_target_stratified_bound([10, 20], [1.0, None])
+    assert mixed["theta_upper"] == pytest.approx(known["theta_upper"])
 
 
 @pytest.mark.parametrize("args", [

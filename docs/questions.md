@@ -20,6 +20,17 @@ The register is updated at each loop's close. Started 2026-10-28 by Claude Opus 
   - **answered**: with a pointer to the result.
 - **Kind of contribution.** Each has its own standard of success (charter): synthesis, statistics, simulation, phylogeny.
 
+**Loop 2 sprint 1 delivered, 1 November (Q1/Q5):** `loop2-sprint1-results.md` supersedes the
+optimistic count-admission statements in the dated plan entries below. Neither Murzuq nor QSIM
+has the matched counts and effective effort needed for a fossil count-share bound. The 164-entry
+observation audit preserves that limit. The count-free model exposes equivalence classes
+`rho*g*f` and `kappa*(1-g)`; its joint sensitivities show that the short 459.1–462.6 Ma window
+depends on the indigenous reference fraction and actual age exposure. Shared midpoint ages leave
+no exposure there. These are identification limits and unqualified sensitivities, with frozen
+primary qualification retained, not replacement biological bounds. Q5 records the 695.7-ft
+10.4% misreading as *Micrhystridium*, not cryptospores. Claude's review and sprint-2 evidence work
+remain next; the research questions and paired loop are open.
+
 **Next pair proposed, 1 November (Q1/Q2/Q5):** `sprints-loop2.md` v1 awaits Claude's critique and
 revision. Codex would implement the observation-model/robustness sprint; Claude would review it,
 then implement external-source replication, targeted M1/M3 evidence work and the integrated private

@@ -1,0 +1,8 @@
+claim_id,status,claim,evidence,limit
+L2-01,frozen qualified result,Loop 1 primary Murzuq results retained,../out/qual/;../../../docs/loop1-close.md,finite-grid qualification and original two-stage contract only
+L2-02,identification limit,No paired count-share fossil design admitted,../../../docs/audits/2026-11-01-loop2-count-gate.md,missing preparation and effective-effort linkage
+L2-03,identification limit,Tuples preserving a=rho*g*f and b=kappa*(1-g) are observationally equivalent,contamination.py;../../../docs/loop2-sprint1-results.md,within declared joint observation model
+L2-04,unqualified sensitivity,36 frozen-engine influence and chronology cases,out/engine_sensitivity.csv;out/engine_sensitivity.json,one-at-a-time diagnostics without transferred qualification
+L2-05,unqualified sensitivity,5760 joint delivery contamination chronology comparisons,out/contamination_grid.csv;out/contamination_manifest.json,uncalibrated comparison and conflict flags
+L2-06,unqualified sensitivity,384 no-transfer break-even entries including no-root cases,out/contamination_break_even.csv,constant intensity or persistent window estimand; not a confidence region
+L2-07,method validation only,Exact count-share coverage and misspecification examples,out/count_share_validation.json;out/count_share_validation.csv,no QSIM or Murzuq application or qualification

@@ -1,0 +1,11 @@
+design,well,n_ref,positive_ref,n_old,positive_old,reference_depths,interpretation
+LY-MZ-CU,B2-NC186,6,6,0,0,3700:1;3750:1;3800:1;3850:1;3900:1;3950:1,not a matched core-cutting experiment; no contamination estimate
+LY-MZ-CU,D1-200,16,13,9,0,3850:1;3900:1;3970:1;4050:1;4150:1;4200:1;4250:0;4300:1;4340:0;4400:1;4450:1;4500:1;4550:0;4600:1;4650:1;4700:1,not a matched core-cutting experiment; no contamination estimate
+LY-MZ-CU,E1-NC174,9,9,0,0,6350:1;6500:1;6690:1;6800:1;6850:1;6950:1;7000:1;7050:1;7110:1,not a matched core-cutting experiment; no contamination estimate
+LY-MZ-CU,H2-NC186,8,7,9,0,4160:1;4200:1;4250:1;4300:1;4350:1;4400:1;4450:1;4500:0,not a matched core-cutting experiment; no contamination estimate
+LY-MZ-CU,I3-NC186,20,16,10,0,3700:1;3750:1;3800:1;3890:1;3900:1;3950:0;4000:0;4050:0;4100:1;4180:1;4200:1;4250:1;4300:1;4350:0;4400:1;4450:1;4500:1;4550:1;4600:1;4640:1,not a matched core-cutting experiment; no contamination estimate
+LY-XW-CO,A28i-NC186,0,0,22,0,,not a matched core-cutting experiment; no contamination estimate
+LY-XW-CO,D1-200,0,0,10,0,,not a matched core-cutting experiment; no contamination estimate
+LY-XW-CO,E1-NC174,5,1,0,0,7246:0;7255:0;7267:0;7270:0;7287:1,not a matched core-cutting experiment; no contamination estimate
+LY-XW-CO,H2-NC186,0,0,10,0,,not a matched core-cutting experiment; no contamination estimate
+LY-XW-CO,I3-NC186,0,0,4,0,,not a matched core-cutting experiment; no contamination estimate

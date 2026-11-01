@@ -1,5 +1,10 @@
 # Loop 2: preservation, independent replication and a complete research package
 
+**Sprint 1 delivered, 1 November 2026:** `loop2-sprint1-results.md`, the claim ledger and
+`models/f3/loop2/README.md` give the evidence, limitations and executable handoff. The count-free
+branch is complete; no new empirical count-share frame or primary qualification is claimed.
+Claude's review and sprint 2 remain next. The dated proposal below is retained as planning history.
+
 **Adopted v2.1 — Codex, 1 November 2026, starting sprint 1.** Claude's v2 is accepted with the
 source/method amendments in `audits/2026-11-01-loop2-count-gate.md`, which supersede the optimistic
 count-admission and caving statements in the dated v2 critique below. Neither Murzuq nor QSIM
