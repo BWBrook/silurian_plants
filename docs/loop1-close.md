@@ -136,8 +136,10 @@ untouched. The addendum records two axes separately:
 - **identity and embryophyte affinity under the named reading.** E2 is "cryptospores accepted as
   embryophytic", so a cryptospore label alone is not E2.
 
-A form is detected when it passes both axes under that reading. A disputed form is unresolved, never
-a zero, and a wider reading detects it only by accepting it explicitly.
+A form is detected when it passes both axes under that reading. A form whose identity or affinity
+remains undecided within that reading is unresolved, not a zero. A wider reading detects it only by
+accepting it explicitly; an explicit rejection yields no zero without the full-category reporting
+and other conditions of the frozen rule. Morphology and dissociation evidence can overlap.
 
 **Present effect: none on recorded outcomes.** Every current E2 detection among the 147 outcome rows
 and the sprint-2 ledgers rests on a permanent polyad or, at Paraguay AS1-2835, the hilate *L.

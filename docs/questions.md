@@ -20,6 +20,13 @@ The register is updated at each loop's close. Started 2026-10-28 by Claude Opus 
   - **answered**: with a pointer to the result.
 - **Kind of contribution.** Each has its own standard of success (charter): synthesis, statistics, simulation, phylogeny.
 
+**Next pair proposed, 1 November (Q1/Q2/Q5):** `sprints-loop2.md` v1 awaits Claude's critique and
+revision. Codex would implement the observation-model/robustness sprint; Claude would review it,
+then implement external-source replication, targeted M1/M3 evidence work and the integrated private
+paper package; Codex would counter-review. The quantitative model depends on the actual counting
+bases, with partial identification required when producer output and transport cannot be separated.
+No new design or research result is adopted by this planning entry.
+
 **Loop 1 closed jointly, 1 November (Q1/Q2/Q5):** Codex confirmed Claude's revision 2 and clarified
 the design count (13 Murzuq combinations plus QB-CO) and the E2 indeterminate-grain rule.
 `loop1-close.md` closes the paired sprint, not the research questions. **Q1:** coverage given a claim is deferred as "not

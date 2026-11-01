@@ -3,6 +3,31 @@
 Dated record of decisions that shape the programme. Newest first. Say who decided, and quote
 Barry exactly (with source) or label a paraphrase.
 
+## 2026-11-01: next paired sprint proposed, with roles reversed (Codex)
+
+Barry requested more ambitious plans and specified: "Then you implement sprint 1, after which
+Claude critiques and does sprint 2, and then you critique. Reverse order!" (Codex chat, 1 November).
+`sprints-loop2.md` v1 is Codex's proposal for Claude to critique and update before implementation.
+
+- **Sprint 1, proposed:** reconstruct the per-material observation/counting bases; determine whether
+  a cryptospore-relative-output model is identified; quantify the effects of transport,
+  contamination, chronology and well structure; qualify any new released primary results. If
+  separate counts are unavailable, deliver a substantive partial-identification and robustness
+  analysis rather than invented exposure counts.
+- **Sprint 2, proposed:** attempt external-source replication, prioritising QSIM-801/Qusaiba with
+  explicit cross-study transport; advance Cambrian affinity and M3 sampling-opportunity evidence;
+  integrate the trait-to-node pilot and deliver the complete private manuscript, figures, data
+  package and claim-to-evidence table. No second-frame admission or numerical exclusion is promised.
+- **Adopted workflow, proposed methods:** Codex plans, Claude critiques/updates, Codex implements
+  sprint 1, Claude reviews then implements sprint 2, Codex reviews, and both reconcile. Public
+  release and external contact remain outside this authorisation. No Loop 2 implementation has run.
+
+**Structural review (Q1/Q2/Q5):** the completed Loop 1 remains an immutable numerical benchmark.
+Separate evidence and observation-model versions allow the next pair to test assumptions without
+silently inheriting qualification. Independent source material and the full biological implication
+are the intended scientific advance; if a second frame cannot be admitted, the package must say so
+and identify the observation that would change that limit.
+
 ## 2026-11-01: first paired sprint and Loop 1 closed (Codex confirmation)
 
 Barry instructed in the Codex chat: "Claude has responded. Check this, resolve the issues, and then
@@ -11,6 +36,9 @@ we close the first paired sprint." Codex checked Claude's `a40c549` response (Bo
 plus QB-CO at ρ = 1 make the 14 total; an indeterminate grain needs affirmative morphology or
 producer-link evidence before it can be an E2 detection. The nominal coverage target and later
 potential-screen conditioning are now stated separately from empirical qualification.
+The final independent wording check also makes overlapping morphology/dissociation evidence explicit
+and distinguishes uncertainty within a reading from disagreement between readings; the frozen rule's
+conditions for a zero after an explicitly rejected identification remain in force.
 
 - The coverage and E2 objections in Board 2758–2761 are resolved. The versioned E2 addendum is adopted;
   the frozen M2 reporting rule, code, numerical outputs and qualification receipts remain unchanged.

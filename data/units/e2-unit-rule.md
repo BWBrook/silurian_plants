@@ -22,8 +22,10 @@ wording formerly on `taxa/ordovician-cryptospores.md` and pilot criterion C2 is 
 
 ## Two axes, recorded separately
 
-**Axis 1: morphology and producer evidence, as the source reports it.** One category per reported
-form:
+**Axis 1: morphology and producer evidence, as the source reports it.** Record configuration,
+hilum/envelope state and evidence of dissociation separately where they overlap. The rows below
+are evidence categories, not mutually exclusive taxonomic bins; uncertainty in any feature stays
+explicit.
 
 | Category | Example (Wellman et al. 2015, Table 1, p.115, and p.122) |
 |---|---|
@@ -51,8 +53,10 @@ definitions sought to remove; Edwards et al. 2014, p.52).
   affirmative evidence of a cryptospore morphology or producer link under that reading. In
   particular, an alete monad without hilum or envelope is accepted where the record-specific
   evidence supports both axes; the missing hilum or envelope alone does not make it unresolved.
-- **Unresolved** where either axis is disputed or undocumented under that reading. A disputed
-  candidate never becomes an absence trial by default.
+- **Unresolved** where either axis remains undecided or undocumented under that reading. Disagreement
+  between readings does not itself make each reading unresolved. An explicitly rejected identification
+  can contribute to a zero only under the full-category reporting and other conditions of
+  `reporting-rule.md`, qualification 3; rejection alone supplies no absence trial.
 - **A wider reading detects a disputed record only if that reading explicitly accepts it**
   (`reporting-rule.md`, qualification 3). Selecting `inclusive` or `outlier` does not promote an
   unknown observation, a generic "spores" pool, an indeterminate grain or a missing sample link.
