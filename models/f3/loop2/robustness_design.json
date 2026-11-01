@@ -1,0 +1,43 @@
+{
+  "id": "loop2-murzuq-sensitivity-v1",
+  "date": "2026-11-01",
+  "status": "declared-before-computation; unqualified-sensitivity-only",
+  "baseline_commit": "309074f",
+  "gate_commit": "4bada50",
+  "source_design": "LY-MZ-CU",
+  "rho": [0.1, 0.25, 0.5, 1.0],
+  "indigenous_reference_fraction_g": [0.1, 0.25, 0.5, 0.75, 1.0],
+  "contaminant_transfer_kappa": [0.0, 0.1, 1.0],
+  "allocations": ["stage", "pre459"],
+  "chronologies": ["independent-uniform", "shared-quantile-0.1", "shared-quantile-0.5", "shared-quantile-0.9"],
+  "targets": [
+    {"name": "origin459.1", "start": "tau", "end_ma": 459.1},
+    {"name": "window462.6", "start": 459.1, "end_ma": 462.6},
+    {"name": "window467.1", "start": 459.1, "end_ma": 467.1},
+    {"name": "window469.4", "start": 459.1, "end_ma": 469.4}
+  ],
+  "relative_indigenous_intensity_f": [0.01, 0.1, 1.0],
+  "cluster_k": 2.0,
+  "quadrature_nodes": 96,
+  "log_rate_grid": 31,
+  "alpha_comparison": 0.05,
+  "parameter_constraints": "0<rho; 0<g<=1; kappa>=0; 0<=f<=1; common total observed reference rate r profiled",
+  "older_zero_probability": "exp(-r*u*kappa*(1-g))*[(1-q)+q*exp(-r*u*rho*g*f)]",
+  "likelihood": "reference and older Bernoulli outcomes share Gamma(k,k) effect within each well; common r profiled jointly",
+  "equivalence": "parameters enter through a=rho*g*f and b=kappa*(1-g); a+b alone suffices only if every q=1",
+  "model_conflict": "reference-fit conditional probability of all older zeros below alpha or f=0 joint-vs-reference-only profiled deviance above -2log(alpha); uncalibrated flag, never compatibility",
+  "coverage": "none for this new observation model; inherited -2log(alpha) is a comparison convention only",
+  "engine_sensitivities": {
+    "leave_out": ["none", "B2-NC186", "D1-200", "E1-NC174", "H2-NC186", "I3-NC186"],
+    "age_scenarios": ["chart", "older", "younger"],
+    "allocations": ["stage", "pre459"],
+    "rho": [0.1, 0.25, 0.5, 1.0],
+    "minimum_reference_units": 5,
+    "outputs": ["H0_fstar459.1", "H0c_fstar459.1", "window_f1", "window_f0.1", "window_f0.01", "screen_and_exposure"]
+  },
+  "engine_grid": "change one of leave-out, age scenario or allocation from baseline; no joint coverage claim",
+  "joint_grid": "factorial rho,g,kappa,allocation,chronology,target,f; same model/criterion every row",
+  "randomness": "none; deterministic profiling and source joins",
+  "resources": "local mini, at most four workers; time/memory smoke before full grid",
+  "output_policy": "new loop2 outputs only; frozen Loop1 input/code/result/receipt bytes unchanged"
+}
