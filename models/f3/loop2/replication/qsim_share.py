@@ -119,7 +119,7 @@ def known_answer(rows: list[dict], reps: int = 20000, seed: int = 20261101) -> l
 
 def write(path: Path, rows: list[dict]) -> None:
     with path.open("w", newline="") as f:
-        w = csv.DictWriter(f, fieldnames=list(rows[0]))
+        w = csv.DictWriter(f, fieldnames=list(rows[0]), lineterminator="\n")
         w.writeheader()
         w.writerows(rows)
 
