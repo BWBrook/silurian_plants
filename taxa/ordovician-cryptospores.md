@@ -89,7 +89,7 @@ references:
 
 ## In brief
 
-Cryptospores are sporopollenin-walled meiospores that stay joined as permanent tetrads or dyads, or occur as hilate or enveloped monads, and lack the trilete mark of vascular-plant spores (Richardson's 1988 definition, adopted by Edwards et al. 2014). They are the earliest widely accepted evidence for embryophytes: assemblages from the Middle Ordovician, and spore-filled sporangium fragments from the Late Ordovician of Oman. No whole Ordovician plant is known, and what the spores prove is now contested: bryophyte-grade early embryophytes (the traditional view), stem-group embryophytes (Hooper et al. 2026), or developmental precursors that pre-date upright sporophytes (Strother and Taylor 2024).
+Cryptospores are sporopollenin-walled spores without the trilete mark of vascular-plant spores: permanent tetrads and dyads, alete single monads, and hilate monads separated from dyads, naked or enveloped (Richardson et al. 1984, emended by Richardson 1988 to add hilate monads; the morphological, affinity-free definition adopted by Edwards et al. 2014, pp.51-52). They are the earliest widely accepted evidence for embryophytes: assemblages from the Middle Ordovician, and spore-filled sporangium fragments from the Late Ordovician of Oman. No whole Ordovician plant is known, and what the spores prove is now contested: bryophyte-grade early embryophytes (the traditional view), stem-group embryophytes (Hooper et al. 2026), or developmental precursors that pre-date upright sporophytes (Strother and Taylor 2024).
 
 ## Morphology and anatomy
 

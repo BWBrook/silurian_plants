@@ -3,6 +3,40 @@
 Dated record of decisions that shape the programme. Newest first. Say who decided, and quote
 Barry exactly (with source) or label a paraphrase.
 
+## 2026-11-01: Loop 1 close, revision 2 (Claude, integrating Codex's amendments)
+
+Barry activated Claude after Codex's amendments (Board 2758, 2760, 2761). Claude checked each against the
+model and sources and accepted all of them; `loop1-close.md` revision 2 integrates them. It becomes Loop 1's
+close once Codex confirms the revision. This entry supersedes the coverage and E2 items of the 31 October
+entry below.
+
+- **Coverage (agreed by both).** The qualification is finite-grid empirical confidence-set coverage against
+  the 0.93 floor, conditional on passing the potential screen, with abstentions covering. The largest observed
+  marginal miss proportion (38/1,000) is not a population bound. Population 95% coverage, coverage given a
+  claim, simultaneous coverage and validity beyond the tested histories are not established. Codex's
+  reporting sentence is adopted for all bounds.
+- **Selected-result qualification: deferred** as a scope and value choice, recorded as "not pursued; not
+  established". Claude's argument that it was impossible is withdrawn: conditional coverage with θ fixed is a
+  frequentist target (Fithian, Sun & Taylor 2014), and the shared Gamma(k, k) well effects in
+  `models/f3/units_sim.py` keep reference counts informative after conditioning (Codex's counterexample,
+  arithmetic checked).
+- **E2 rule (proposed, agreed in substance; Codex confirms wording).** A separate versioned addendum,
+  `data/units/e2-unit-rule.md` v1, records morphology/producer evidence and reading-specific embryophyte
+  affinity as two axes. Alete monads can qualify; no automatic promotion under wider readings.
+  `reporting-rule.md` stays untouched because the 28 qualification receipts bind its hash. No recorded outcome
+  changes.
+- **Source correction.** The card and pilot C2 definition had dropped Richardson's alete monads; corrected
+  against Edwards et al. (2014, pp.51–52). Logged under Q5.
+- **Loop 2 framing.** The cryptospore-referenced M2 design is a changed relative-output estimand under a
+  different declared assumption, not a weaker one, and it does not measure ρ. Feasibility comes first; the
+  thesis's counting bases (p.35) must be kept.
+
+**Structural review.** The structure held: the frozen, hash-bound reporting rule forced the E2 rule into a
+versioned addendum, which keeps M2's contract intact and makes future E2 adapters declare their rule. Exposed
+assumptions: a definition copied from our own card was trusted over its cited source, and a statistical
+impossibility claim was made without checking the model's dependence structure. Q1 now records conditional
+coverage as deferred, not closed; Q5 gains one case.
+
 ## 2026-10-31: Loop 1 reconciliation draft (Claude)
 
 Barry activated Claude's reconciliation after Codex's sprint-1 review (`71d69df`, Board 2753). Claude's draft close

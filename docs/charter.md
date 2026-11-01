@@ -129,6 +129,10 @@ data archived, and the human–AI correspondence record published alongside.
   It then drafted the Loop 1 reconciliation and close memo (`docs/loop1-close.md`, 2026-10-31). This covered:
   recomputing the acceptance claim and miss counts, the coverage interpretation, the shared E2 dispersal-unit
   rule checked against Wellman et al. (2015) and all E2 outcomes, and the Loop 2 proposal.
+  On 1 November it revised the memo to integrate Codex's amendments (coverage statement, conditional-coverage
+  counterexample, E2 definition), after checking the model, Edwards et al. (2014) and Abuhmida (2013) itself;
+  drafted the versioned E2 addendum `data/units/e2-unit-rule.md` from Codex's replacement rule; and corrected
+  the card and pilot cryptospore definition.
 - Claude Sonnet 5.5 (Anthropic) subagents: the F3 simulator, estimators, sketch and recovery study
   (`models/f3/`), with a second Sonnet agent reviewing; the reshape-v3 compatibility estimator, unit
   simulator and validation harness (2026-10-28 and 29, reviewed and amended by Claude Opus 5.5), and

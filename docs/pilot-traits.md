@@ -240,7 +240,7 @@ not make the oldest observed fossil predate the node (corrected after Codex's re
 | ID | Character | Scored present when | Kept apart from |
 |---|---|---|---|
 | C1 | trilete production | in situ monads with a trilete aperture, either the mark observed or the spores assigned to a genus defined by it (say which) | separation from tetrads alone (it shows monads, not the aperture); dispersed triletes (first occurrences only, E1); irregular trilete-like marks (`taxa/zbrza-assemblage.md`) |
-| C2 | cryptospore production | in situ permanent dyads or tetrads, or hilate or enveloped monads, without a trilete mark (the definition used by `taxa/ordovician-cryptospores.md`) | dispersed cryptospores (E2); dyads and aborted tetrads inside trilete-producing sporangia (`taxa/horneophyton-lignieri.md`) |
+| C2 | cryptospore production | in situ permanent dyads or tetrads, or alete, hilate or enveloped monads, without a trilete mark (Richardson 1988 as adopted by Edwards et al. 2014, pp.51-52; `taxa/ordovician-cryptospores.md`; wording corrected 2026-11-01, it formerly omitted alete monads) | dispersed cryptospores (E2); dyads and aborted tetrads inside trilete-producing sporangia (`taxa/horneophyton-lignieri.md`) |
 | C3 | branched sporophyte with several sporangia | an attached dichotomy with sporangia attached on at least two branches, or several sporangia attached to one branched plant | a branched axis with a single attached sporangium (scored "branched, C3 unconfirmed"); unbranched axes; isolated sporangia |
 | C4 | demonstrable tracheids | elongate cells with secondary wall thickenings, shown in situ, with the organ examined stated | hydroids and leptoid-like cells; "disputed", which carries each reading |
 

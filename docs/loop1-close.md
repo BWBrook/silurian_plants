@@ -1,9 +1,10 @@
 # Loop 1 close: what the record says about the three clock maxima
 
 Draft for joint reconciliation. Claude Opus 5.5 (`claude-opus-5-5`), 31 October 2026, after both
-counter-reviews (Claude on sprint 2, `f08afb4`; Codex on sprint 1, `71d69df`). Questions Q1, Q2 and
-Q5. This memo closes Loop 1 of `docs/plan-f3.md` (step 6) under `docs/f3-shape.md` v3 once Codex
-accepts or amends it. Proposals are marked as such; items already adopted cite their record.
+counter-reviews (Claude on sprint 2, `f08afb4`; Codex on sprint 1, `71d69df`). Revision 2, 1 November
+2026: integrates Codex's amendments (Correspondence 2758, 2760 and 2761) on the coverage statement,
+the E2 rule, the table scope and the Loop 2 framing. Questions Q1, Q2 and Q5. This memo closes Loop 1
+of `docs/plan-f3.md` (step 6) under `docs/f3-shape.md` v3 once Codex confirms this revision.
 
 ## The answer
 
@@ -12,11 +13,16 @@ incompatible with the fossil absences behind the clock maxima (`f3-shape.md`). O
 maxima, only the trilete-spore one (M2) is testable from the assembled record, and it is testable in
 one basin.
 
-| Maximum | Testable? | What holds under every declared reading and variant | What depends on a reading or assumption |
+| Maximum | Testable? | What holds in the qualified primary designs | What depends on a reading or assumption |
 |---|---|---|---|
 | **M2**, 459.1 Ma, E1 trilete spores | Yes: Murzuq cuttings (Abuhmida 2013), qualified on 14 design/ρ pairs | Sustained trilete encounter at the Llandovery reference level before 459.1 Ma is incompatible with the 28 empty Darriwilian–Hirnantian cuttings at ρ ≥ 0.25. Low encounter (one tenth of reference or less) is compatible with any origin age. | Every number depends on ρ, the older-to-reference transport ratio, which no source measures. The window endpoint is 462.6, 464.1 or 467.1 Ma at ρ = 1, 0.5 or 0.25, and unbounded at ρ = 0.1. The weighted post-459.1 read-out is about 0.18 at ρ = 1. |
-| **M1**, 515.5 Ma, E2 cryptospores | No admitted design among ten assessed source groups and frames | No older unit before the main-reading first appearance is both a secure E2 zero and part of a frame that passes the screen. The one secure older zero (Borenshult 71.1 m) fails the screen (LR 2.21). | Under the inclusive reading, the Cambrian Stage 4 forms *are* E2, with stage support 514.5–506.5 Ma. M1 then becomes an occurrence and dating question, not an absence test. |
+| **M1**, 515.5 Ma, E2 cryptospores | No admitted design among ten assessed source groups and frames | No older unit before the main-reading first appearance is both a secure E2 zero and part of a frame that passes the screen. The one secure older zero (Borenshult 71.1 m) fails the screen (LR 2.21). | Under the inclusive reading, the Cambrian Stage 4 forms *are* E2, with stage support 514.5–506.5 Ma. M1 then becomes an occurrence and dating question, not an absence test. Only exposure older than 515.5 Ma tests M1's older interval directly; material in (514.5, 515.5] is older than Stage 4 but not older than M1. |
 | **M3**, 431.2 Ma, E3 polysporangiate bodies | No: no held source has a searched-material denominator | Fossil-free prose (Edwards & Feehan 1980) is genuine negative evidence without an n. | The *C. barrandei* total-group reading (`f3-shape.md`) bears on the maximum's fossil basis. That is synthesis, not an absence test. |
+
+**Sensitivity, reported separately from the primary findings.** Nonprimary variants are unqualified
+sensitivity calculations, and some fail admission. Under the material variants the central older
+contrast falls from 28 units to 26 (reference 51/59 to 49/57); no older cutting holds a trilete report
+in any declared variant.
 
 **In plain terms.** Hooper et al.'s 459.1 Ma maximum rests on the absence of older trilete spores.
 At Llandovery-like levels, trilete producers delivering to the Murzuq shelf are excluded for more
@@ -31,23 +37,22 @@ flora. It does not by itself fix the crown's age.
 
 ### 1. What the qualification establishes (coverage interpretation)
 
-**Agreed with Codex:** the bounds are retained with the finite-grid statement. They are not
-described as having 95% coverage conditional on a claim being made.
+**Agreed (Codex 2758, amending my first draft):** the bounds are retained with the finite-grid
+statement, and they are not described as having 95% coverage conditional on a claim.
 
-**Proposed sharpening:** the adopted criterion is ordinary confidence-set coverage, and it is the
-right property for this use.
-- For each tested truth, P(the delivered bound excludes the truth | the potential screen passes)
-  ≤ 0.05 on the grid (worst observed 38/1,000). An abstention is the trivial set, so it covers.
-- This is the Neyman guarantee every confidence interval offers.
-- It was adopted as "unconditional coverage" in Codex message 2496 (`plan-f3.md`, "Open between
-  Claude and Codex").
-- It suits a single pre-declared design read once, with all seven frames and every variant
-  reported.
+**What the adopted target is.** A repeated-sampling confidence-set property: for each tested truth,
+among records that pass the potential screen, the delivered set excludes the truth in no more than
+the qualified share. An abstention is the full set, so it covers. This is what "unconditional
+coverage" meant when adopted in Codex message 2496 (`plan-f3.md`, "Open between Claude and Codex").
 
-**P(wrong | a claim was made) is a different quantity**, and no frequentist procedure controls it. It
-depends on where the truth lies relative to the bound, which only a prior can weight. The
-acceptance tables show this directly. I recomputed them from the 14 acceptance replicate files and
-matched Codex's totals exactly: 529,550 claims and 3,780 misses.
+**What was achieved.** Empirical qualification on a finite simulation grid against the 0.93
+coverage floor, with nominal 0.95 and calibration target 0.955 kept distinct (`f3-shape.md`). The
+largest observed marginal miss proportion was 38/1,000. That is an observed proportion at sampled
+truths, not a population upper confidence bound, and it does not demonstrate a population miss rate
+≤ 0.05 even at those truths. Both collaborators recomputed the 14 acceptance replicate files
+independently and agree: 529,550 non-abstaining quantity evaluations and 3,780 misses.
+
+**Coverage given a claim is a separate property, and Loop 1 does not establish it.**
 
 | Truth cell (MZ, ρ = 1) | Passing | Claims | Misses | Misses / claims |
 |---|---:|---:|---:|---:|
@@ -56,30 +61,34 @@ matched Codex's totals exactly: 529,550 claims and 3,780 misses.
 | All cells and designs, window f = 1 | 168,000 | 7,707 | 70 | 0.009 |
 | All cells and designs, H0 intensity | 168,000 | 60,656 | 847 | 0.014 |
 
-- **B4 is a boundary case.** Its history is the most extreme one compatible with the real Murzuq
-  window claim (462.6 Ma).
-- **At a boundary, claims are rare (6%) and errors are close to the error budget (2%).** So the miss
-  fraction among claims is large by construction. A level-α test behaves the same at its null
-  boundary.
-- **Averaged over the grid, the miss fraction among claims is 0–3.4% per quantity.** That figure
-  too reflects how the grid was weighted, so it is not reported as a property.
+- **B4 sits at the edge of the real Murzuq window claim (462.6 Ma).** There 20 of 1,000 passing
+  records miss (2%), within the marginal target, while 20 of the 60 claims miss (33%). Claims are
+  rare at a boundary, so misses form a large share of them.
+- **Pooled over the grid, misses among claims run 0–3.4% per quantity.** That figure depends on how
+  the grid was weighted and is not reported as a property.
+- **Conditional coverage is a legitimate frequentist target.** P_θ{θ ∉ C(X) | claim} has θ fixed and
+  needs no prior; selective inference by conditional test inversion targets it (Fithian, Sun &
+  Taylor 2014, arXiv:1410.2597). My draft wrongly said no frequentist procedure controls it.
+- **My argument that it would force trivial sets was also wrong.** Reference and older units share
+  Gamma well effects, so reference counts stay informative after conditioning on empty older units.
+  Codex's counterexample: one unit of each, well effect u ~ Gamma(2, 2), reference rate 1, older
+  relative intensity f, Laplace transform L(a) = (2/(2+a))². Then P(R ≥ 1 | O = 0) = 1 − L(f+1)/L(f),
+  which is 0.5556 at f = 0 and 0.4375 at f = 1; I checked the arithmetic. This does not show that
+  useful conditional bounds exist for the full design.
+- **"How probable is it that this bound is wrong?"** is a posterior question. It needs a prior over
+  encounter histories, and is a different analysis again.
 
-**Proposal: close the selected-result target rather than leave it open** (`questions.md` currently
-"retains the selected-result confidence question").
-- **The obstacle.** A procedure valid conditional on making a claim must condition on the claim
-  event. For a window claim, that event fixes the empty older units, which carry the evidence. So a
-  conditionally valid set uses only the reference counts. Under the model, those counts carry no
-  information about older encounter, and the set would be trivial.
-- **If Barry wants "how probable is it that the 462.6 Ma bound is wrong?"**, that is a Bayesian
-  question. It needs a declared prior over encounter histories and is a different analysis, not a
-  requalification.
-- **Recommendation:** no such layer in Loop 2. The prior over early encounter histories is exactly
-  what the record cannot inform.
+**Decision proposed jointly: defer selected-result qualification** as a scope and value choice. It
+is recorded as "not pursued; not established", not as impossible. No Bayesian layer and no new
+compute in Loop 1.
 
-**Reporting form adopted for all bounds.** Give the bound, ρ and the design. Then add: "a 95%
-confidence bound in the coverage sense: on the tested grid, at most 3.8% of screen-passing records
-yield a bound excluding the truth; abstentions count as covering. It is not a probability that
-this bound is correct."
+**Reporting form for all bounds** (Codex's wording, adopted): give the bound, ρ and the design, then
+"Nominal 95% compatibility bounds, qualified per declared quantity and design against a 0.93
+coverage floor on a finite simulation grid, conditional on passing the potential screen. Abstentions
+count as covering. The largest observed marginal miss proportion was 38/1,000. Population 95%
+coverage, coverage conditional on a non-abstaining result, simultaneous coverage and validity beyond
+the tested histories are not established." Where the central window is interpreted, give the B4
+example (20/1,000 against 20/60) beside it.
 
 ### 2. QB qualification scope
 
@@ -105,44 +114,37 @@ Libya's scope is unchanged, and no reported primary number changed.
 - The 35 exact-Hawaz materials are 25 cores, eight cuttings and two unspecified materials, not 35
   cuttings. Only ten enter the primary cutting contrast.
 
-### 4. Shared E2 dispersal-unit rule (proposal for joint adoption)
+### 4. Shared E2 dispersal-unit rule
 
-The programme already defines cryptospores in Richardson's (1988) sense, as adopted by Edwards et al.
-(2014): permanent tetrads or dyads, or hilate or enveloped monads, without a trilete mark
-(`taxa/ordovician-cryptospores.md`; pilot criterion C2, `pilot-traits.md`). The E2 rule applies that
-definition to dispersed reports.
+**Replaced.** My first proposal treated a hilum or envelope as necessary for a cryptospore monad,
+citing the programme's definition. That definition was itself narrower than its source. Edwards et
+al. (2014, pp.51–52, held and re-read) adopt Richardson (1988), which keeps Richardson et al.'s (1984)
+"single grains or monads" and adds hilate monads. Codex's independent source reviewer found this, and
+I confirmed it on the held pages. My proposal also promoted ambiguous forms to detections under
+inclusive and outlier, against the agreed reporting rule's "wider readings need explicit event-level
+support, not automatic promotion" (`reporting-rule.md`, qualification 3).
 
-| Reported form | main | inclusive, outlier |
-|---|---|---|
-| **E2-core.** Permanent dyads and tetrads (fused or unfused, naked or enveloped), hilate monads, envelope-enclosed monads | detected, subject to the record's age and affinity reading | detected |
-| **E2-ambiguous.** Naked inaperturate monads with neither hilum nor envelope; monads reported only as physically separated from permanent polyads, without a hilum | unresolved, never zero | detected |
-| **Pooled reports** (colour groups, "cryptospores/spores" totals, percentage fractions) | detected only where the unit's pooled taxa include an E2-core form; otherwise unresolved | detected |
+**The rule is now a separate versioned addendum, `data/units/e2-unit-rule.md` (v1)**, drafted from
+Codex's replacement (2760). `reporting-rule.md` is hash-bound in the 28 qualification receipts and is
+untouched. The addendum records two axes separately:
+- **morphology and producer evidence**, with distinct categories for permanent polyads, hilate,
+  enveloped and alete monads, demonstrated dissociated-polyad products (cf. *L. chibrikovae*, Wellman
+  et al. 2015, p.122) and indeterminate grains;
+- **identity and embryophyte affinity under the named reading.** E2 is "cryptospores accepted as
+  embryophytic", so a cryptospore label alone is not E2.
 
-**Basis, from Wellman et al. (2015), held and read in this task:**
-- **Their Table 1 (p.115) separates the three monad kinds:**
-  - "cryptospore monads" (*Rugosphaera*);
-  - "spores physically separated from cryptospore polyads" (*Imperfectotriletes*, cf. *Laevolancis
-    chibrikovae*);
-  - "hilate spores" (*Laevolancis divellomedium*, *Chelinohilates*).
-- **Hilate spores are naturally dissociated from dyads** (p.124).
-- ***Rugosphaera?* cerebra "appear[s] to be naked"**, with a tight envelope not excluded (p.114).
-- **cf. *L. chibrikovae* is "not considered to be a true hilate cryptospore"** but a monad formed by
-  physical dissociation of a permanent dyad (p.122).
+A form is detected when it passes both axes under that reading. A disputed form is unresolved, never
+a zero, and a wider reading detects it only by accepting it explicitly.
 
-**Effect on current outcomes: none.** I checked the rule against all 147 E2 outcome rows and the
-sprint-2 E2 ledgers.
-- **Paraguay AS1-2835.** The only E2 detection that rests on a monad uses *L. divellomedia*, a hilate
-  spore in Wellman et al.'s Table 1, so it is E2-core.
-  - This corrects my review's description of it as a "naked monad". It is unenveloped, but hilate.
-  - The supposed inconsistency with Qusaiba therefore does not exist.
-- **Qusaiba.** The extraction ("dyad/tetrad rows only") is a conservative subset of E2-core. Every
-  one of the 37 columns is already positive.
-- **Borenshult.** The main-reading zeros are samples with no terrestrial palynomorphs charted.
-- **Libya.** The E2 "Cryptospores/Spores" group enters no design. Before any E2 use, it must be split
-  by taxon under the pooled-report row.
+**Present effect: none on recorded outcomes.** Every current E2 detection among the 147 outcome rows
+and the sprint-2 ledgers rests on a permanent polyad or, at Paraguay AS1-2835, the hilate *L.
+divellomedia* (Wellman et al. 2015, Table 1). My review's "naked monad" for it was wrong, and the
+supposed Paraguay–Qusaiba inconsistency does not exist. This was a source and outcome audit, not a
+machine application of the rule, so it does not validate the rule for future monad-only samples.
 
-The rule matters for future cross-source E2 designs, where an older unit holding only E2-ambiguous
-forms would otherwise be at risk of becoming a zero.
+**Corrected at source:** the definition on `taxa/ordovician-cryptospores.md` and pilot criterion C2
+(`pilot-traits.md`) now state Richardson's definition in full. C2 stays an in situ trait, so its
+scored forms are unchanged. Logged under Q5.
 
 ## Pivotal records and choices
 
@@ -204,9 +206,9 @@ qualitative.
 
 | Rank | Evidence | Decision it could change | Status |
 |---:|---|---|---|
-| 0 (proposal) | **Cryptospore-referenced transport for M2.** Replace the free ρ with the weaker assumption that trilete spores and cryptospores share delivery and recovery between older and reference units. Each unit's co-recovered cryptospore abundance then becomes its exposure, and the estimand becomes trilete-producer output relative to cryptospore-producer output, compared with the Llandovery. | Converts the ρ grid into one assumption that can be examined, using held data. The Hawaz is cryptospore-rich: 20–44% of upper Hawaz assemblages against 5–15% in the middle–upper Tanezzuft (Abuhmida 2013, pp.395–396 and 402–403). So equal relative delivery would make an empty trilete record more informative, not less. | **Feasibility first:** does Abuhmida 2013 give per-sample cryptospore counts or proportions, or only interval summaries and presence marks? Sizes in the same Qusaiba assemblages are comparable: cryptospores 23–62 µm, triletes 24–44 µm (Wellman et al. 2015, Table 1). A design and qualification amendment would precede any result. |
+| 0 (proposal) | **Cryptospore-referenced M2 design.** Use co-recovered cryptospores to inform each unit's exposure, changing the estimand to trilete-producer output relative to cryptospore-producer output, compared with the Llandovery. This replaces the free ρ grid with a different, declared assumption, not an established weaker one, and it does not measure ρ. Common exposure cancels in a trilete/cryptospore ratio only under a declared joint sampling model; differential delivery and preservation, changing cryptospore production, denominator uncertainty and zeros remain. | Whether the M2 bounds can rest on an examinable assumption instead of a scenario grid. Overlapping sizes in the same Qusaiba assemblages (cryptospores 23–62 µm, triletes 24–44 µm; Wellman et al. 2015, Table 1) motivate examining equal transport; they do not establish it. The Hawaz's 20–44% cryptospores against 5–15% in the middle–upper Tanezzuft (Abuhmida 2013, pp.395–396 and 402–403) are compositional summaries, not per-sample exposure. | **Feasibility first:** does Abuhmida 2013 give per-sample cryptospore counts with their counting basis? The thesis distinguishes 200-particle palynofacies counts from palynomorph counts of all specimens on a first slide plus a scan of the second, with "cryptospore/spore" named as one assemblage group (p.35, checked); the extraction must keep those bases and the search effort, and must establish whether cryptospores and triletes were tallied separately. A design and qualification amendment would precede any result. |
 | 1 | Independently constrained delivery and recovery ratios for M2 facies (Codex's item 1) | Which ρ scenarios deserve weight | Item 0 is one route to it. |
-| 2 | A complete Cambrian sample roster with failed preparations and non-target recovery, specifically productive material older than 514.5 Ma; tighter dating of the Stage 4 E2 forms | M1 admission, or M1 as an occurrence test under inclusive | Leads: Baldwin 2004 (Bright Angel); the Balang Stage 4 *Tetrahedraletes medinensis?* (Wang et al. 2022, Table 1). Likely needs specialist contact; Barry decides on sending. |
+| 2 | A complete Cambrian sample roster with failed preparations and non-target recovery, specifically productive exposure older than 515.5 Ma (material in (514.5, 515.5] does not test M1 directly); tighter dating of the Stage 4 E2 forms | M1 admission, or M1 as an occurrence test under inclusive | Leads: Baldwin 2004 (Bright Angel); the Balang Stage 4 *Tetrahedraletes medinensis?* (Wang et al. 2022, Table 1). Likely needs specialist contact; Barry decides on sending. |
 | 3 | Irish or Loděnice searched-bed ledgers | M3 admission | Field and collection records; contact. |
 | 4 | Re-examination of Argentine 7999, Samphire core 4 and the younger Samphire forms | E2 readings | Specialist adjudication. |
 | 5 | H2/D1 material codes, 7287 ft and Hawaz age allocation | M2 variant stability | Mostly settled for the primary design. |
@@ -231,10 +233,12 @@ list and specialist contact, which Barry sends.
   The M1 and M3 machinery is ready but has no admissible input.
 - **Assumptions exposed:**
   - ρ dominates every quantitative result;
-  - the qualification is confidence-set coverage, not post-selection reliability;
+  - the qualification is finite-grid empirical confidence-set coverage against a 0.93 floor;
+    coverage given a claim is not established and was deferred, not shown impossible;
   - a stage assignment is age support, not an occurrence date;
-  - the monad question had not been written down, although its answer was already in the programme's
-    cryptospore definition.
+  - the programme's own cryptospore definition was narrower than its cited source, and the E2 rule
+    first inherited the error; reading the source again, not consistency with our own documents,
+    caught it.
 - **Did evidence change a question?**
   - **Q1:** narrowed to "which delivery assumption, and which second frame?"
   - **Q2:** M1 under inclusive is now an occurrence-and-dating question.
@@ -242,4 +246,8 @@ list and specialist contact, which Barry sends.
     - the M2 note's original "P(false claim) ≤ 0.05" and "realistic early intensities" (corrected by
       Codex);
     - my "naked monad" and "no secure older zero" (corrected here);
+    - the card and pilot cryptospore definition, which dropped Richardson's alete monads (corrected
+      2026-11-01 after Codex's source check);
+    - my coverage-draft claims that no frequentist procedure controls coverage given a claim and that
+      conditioning forces trivial sets (corrected by Codex);
     - the Stage 4 point-age reading (corrected by Codex).
