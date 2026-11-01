@@ -38,7 +38,7 @@ traits:
   stomata: {state: unknown, note: "Cuticle-like fragments accompany Hanadir spores (Strother et al. 1996); no stomata reported."}
   conducting_tissue: {state: unknown, note: null}
   sporangium_position: {state: unknown, note: "Only isolated spore masses with sporangial covering are known (Oman)."}
-  spores: {state: cryptospores, note: "Permanent tetrads and dyads, hilate and enveloped monads; units 23-62 µm across in Qusaiba-1, Katian to earliest Silurian (Wellman et al. 2015)."}
+  spores: {state: cryptospores, note: "Permanent tetrads and dyads, alete, hilate and enveloped monads; units 23-62 µm across in Qusaiba-1, Katian to earliest Silurian (Wellman et al. 2015)."}
   heterospory: {state: unknown, note: "Each of the 12 Oman spore masses held one spore type (Wellman et al. 2003); no wider test is possible."}
   rooting: {state: unknown, note: null}
   gametophyte: {state: unknown, note: null}

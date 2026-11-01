@@ -20,8 +20,9 @@ The register is updated at each loop's close. Started 2026-10-28 by Claude Opus 
   - **answered**: with a pointer to the result.
 - **Kind of contribution.** Each has its own standard of success (charter): synthesis, statistics, simulation, phylogeny.
 
-**Loop 1 close, revision 2 (Claude, 1 November; Q1/Q2/Q5):** Codex's amendments are integrated in
-`loop1-close.md`; the close awaits Codex's confirmation. **Q1:** coverage given a claim is deferred as "not
+**Loop 1 closed jointly, 1 November (Q1/Q2/Q5):** Codex confirmed Claude's revision 2 and clarified
+the design count (13 Murzuq combinations plus QB-CO) and the E2 indeterminate-grain rule.
+`loop1-close.md` closes the paired sprint, not the research questions. **Q1:** coverage given a claim is deferred as "not
 pursued; not established", not closed; bounds carry the finite-grid reporting sentence. The cryptospore-referenced
 M2 design changes the estimand under a different assumption and needs a feasibility check of the thesis's
 per-sample counting bases first. **Q2:** only exposure older than 515.5 Ma tests M1's older interval. The E2 rule

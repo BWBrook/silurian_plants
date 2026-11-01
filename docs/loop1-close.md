@@ -1,10 +1,12 @@
 # Loop 1 close: what the record says about the three clock maxima
 
-Draft for joint reconciliation. Claude Opus 5.5 (`claude-opus-5-5`), 31 October 2026, after both
+Closed by joint reconciliation on 1 November 2026. Claude Opus 5.5 (`claude-opus-5-5`) drafted this on 31 October after both
 counter-reviews (Claude on sprint 2, `f08afb4`; Codex on sprint 1, `71d69df`). Revision 2, 1 November
 2026: integrates Codex's amendments (Correspondence 2758, 2760 and 2761) on the coverage statement,
-the E2 rule, the table scope and the Loop 2 framing. Questions Q1, Q2 and Q5. This memo closes Loop 1
-of `docs/plan-f3.md` (step 6) under `docs/f3-shape.md` v3 once Codex confirms this revision.
+the E2 rule, the table scope and the Loop 2 framing. Codex confirmed the revision on 1 November,
+with the primary-design count and E2 wording clarified. Questions Q1, Q2 and Q5. This memo closes
+Loop 1 of `docs/plan-f3.md` (step 6) under `docs/f3-shape.md` v3; it does not close those research
+questions or qualify the proposed Loop 2 analyses.
 
 ## The answer
 
@@ -15,7 +17,7 @@ one basin.
 
 | Maximum | Testable? | What holds in the qualified primary designs | What depends on a reading or assumption |
 |---|---|---|---|
-| **M2**, 459.1 Ma, E1 trilete spores | Yes: Murzuq cuttings (Abuhmida 2013), qualified on 14 design/ρ pairs | Sustained trilete encounter at the Llandovery reference level before 459.1 Ma is incompatible with the 28 empty Darriwilian–Hirnantian cuttings at ρ ≥ 0.25. Low encounter (one tenth of reference or less) is compatible with any origin age. | Every number depends on ρ, the older-to-reference transport ratio, which no source measures. The window endpoint is 462.6, 464.1 or 467.1 Ma at ρ = 1, 0.5 or 0.25, and unbounded at ρ = 0.1. The weighted post-459.1 read-out is about 0.18 at ρ = 1. |
+| **M2**, 459.1 Ma, E1 trilete spores | Yes: Murzuq cuttings (Abuhmida 2013), with 13 qualified design/ρ pairs; the fourteenth qualified pair is QB-CO at ρ = 1, which supplies no older M2 interval | Sustained trilete encounter at the Llandovery reference level before 459.1 Ma is incompatible with the 28 empty Darriwilian–Hirnantian cuttings at ρ ≥ 0.25. Low encounter (one tenth of reference or less) is compatible with any origin age. | Every number depends on ρ, the older-to-reference transport ratio, which no source measures. The window endpoint is 462.6, 464.1 or 467.1 Ma at ρ = 1, 0.5 or 0.25, and unbounded at ρ = 0.1. The weighted post-459.1 read-out is about 0.18 at ρ = 1. |
 | **M1**, 515.5 Ma, E2 cryptospores | No admitted design among ten assessed source groups and frames | No older unit before the main-reading first appearance is both a secure E2 zero and part of a frame that passes the screen. The one secure older zero (Borenshult 71.1 m) fails the screen (LR 2.21). | Under the inclusive reading, the Cambrian Stage 4 forms *are* E2, with stage support 514.5–506.5 Ma. M1 then becomes an occurrence and dating question, not an absence test. Only exposure older than 515.5 Ma tests M1's older interval directly; material in (514.5, 515.5] is older than Stage 4 but not older than M1. |
 | **M3**, 431.2 Ma, E3 polysporangiate bodies | No: no held source has a searched-material denominator | Fossil-free prose (Edwards & Feehan 1980) is genuine negative evidence without an n. | The *C. barrandei* total-group reading (`f3-shape.md`) bears on the maximum's fossil basis. That is synthesis, not an absence test. |
 
@@ -40,10 +42,11 @@ flora. It does not by itself fix the crown's age.
 **Agreed (Codex 2758, amending my first draft):** the bounds are retained with the finite-grid
 statement, and they are not described as having 95% coverage conditional on a claim.
 
-**What the adopted target is.** A repeated-sampling confidence-set property: for each tested truth,
-among records that pass the potential screen, the delivered set excludes the truth in no more than
-the qualified share. An abstention is the full set, so it covers. This is what "unconditional
-coverage" meant when adopted in Codex message 2496 (`plan-f3.md`, "Open between Claude and Codex").
+**What the adopted target is.** Nominal 95% repeated-sampling coverage for each declared quantity,
+conditional on passing the potential screen, with an abstention represented by the full, covering
+set. Marginal treatment of abstentions was adopted as "unconditional coverage" in Codex message
+2496; the real-design potential-screen conditioning was added later (`f3-shape.md`). The target
+and the empirical qualification achieved below are distinct.
 
 **What was achieved.** Empirical qualification on a finite simulation grid against the 0.93
 coverage floor, with nominal 0.95 and calibration target 0.955 kept distinct (`f3-shape.md`). The
@@ -78,7 +81,7 @@ independently and agree: 529,550 non-abstaining quantity evaluations and 3,780 m
 - **"How probable is it that this bound is wrong?"** is a posterior question. It needs a prior over
   encounter histories, and is a different analysis again.
 
-**Decision proposed jointly: defer selected-result qualification** as a scope and value choice. It
+**Joint decision: defer selected-result qualification** as a scope and value choice. It
 is recorded as "not pursued; not established", not as impossible. No Bayesian layer and no new
 compute in Loop 1.
 

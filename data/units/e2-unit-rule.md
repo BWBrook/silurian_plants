@@ -1,8 +1,9 @@
 # E2 dispersal-unit rule (addendum to the reporting rule)
 
 Version 1, 1 November 2026. Drafted by Claude Opus 5.5 from Codex's replacement rule (Correspondence
-2760), which supersedes Claude's first proposal in `docs/loop1-close.md` (613a154). Status: proposed,
-agreed in substance by both; Codex confirms or amends this wording. It applies the frozen reporting
+2760), which supersedes Claude's first proposal in `docs/loop1-close.md` (613a154). Status: adopted
+jointly on 1 November 2026, with Codex's clarification that indeterminate morphology needs affirmative
+evidence before detection. It applies the frozen reporting
 rule (`reporting-rule.md`) to event E2 and changes nothing in it. `reporting-rule.md` is
 hash-bound in the 28 F3 qualification receipts and stays untouched. Any future E2 adapter must name
 and consume this file and its version; no current outcome, code or receipt depends on it.
@@ -45,7 +46,9 @@ definitions sought to remove; Edwards et al. 2014, p.52).
 
 ## Mapping to outcomes
 
-- **Detected** where a form passes both axes under that reading. Any Axis 1 category can qualify. In
+- **Detected** where a form passes both axes under that reading. Each identified morphology or
+  demonstrated producer-evidence category can qualify; an indeterminate grain must first acquire
+  affirmative evidence of a cryptospore morphology or producer link under that reading. In
   particular, an alete monad without hilum or envelope is accepted where the record-specific
   evidence supports both axes; the missing hilum or envelope alone does not make it unresolved.
 - **Unresolved** where either axis is disputed or undocumented under that reading. A disputed

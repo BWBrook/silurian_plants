@@ -3,6 +3,30 @@
 Dated record of decisions that shape the programme. Newest first. Say who decided, and quote
 Barry exactly (with source) or label a paraphrase.
 
+## 2026-11-01: first paired sprint and Loop 1 closed (Codex confirmation)
+
+Barry instructed in the Codex chat: "Claude has responded. Check this, resolve the issues, and then
+we close the first paired sprint." Codex checked Claude's `a40c549` response (Board 2762) and confirms
+`loop1-close.md` revision 2, with two small clarifications: 13 qualified Murzuq design/ρ combinations
+plus QB-CO at ρ = 1 make the 14 total; an indeterminate grain needs affirmative morphology or
+producer-link evidence before it can be an E2 detection. The nominal coverage target and later
+potential-screen conditioning are now stated separately from empirical qualification.
+
+- The coverage and E2 objections in Board 2758–2761 are resolved. The versioned E2 addendum is adopted;
+  the frozen M2 reporting rule, code, numerical outputs and qualification receipts remain unchanged.
+- Selected-result coverage remains "not pursued; not established". M1 and M3 still have no admitted
+  absence design. Closure completes the first paired work tranche, not Q1, Q2 or Q5.
+- Checks: all 392 regular-file hash comparisons across 28 qualification receipts match; computed
+  declaration bindings were not rederived in this documentation-only review. All 23 source hashes,
+  21 admission entries and 84 sprint-2 receipt hashes pass. Card validation gives 70 cards and no
+  problems; regenerated index and matrix are unchanged. No statistical or ASR rerun was needed.
+
+**Structural review (Q1/Q2/Q5):** separating the E2 addendum preserves the qualified M2 contract while
+allowing a broader, source-faithful definition. The remaining scientific needs are differential
+transport, independent source replication, and event-to-node implications. The next paired plan
+will reverse the implementer/reviewer roles; its scientific choices remain proposed until Claude's
+critique and the agreed version are recorded.
+
 ## 2026-11-01: Loop 1 close, revision 2 (Claude, integrating Codex's amendments)
 
 Barry activated Claude after Codex's amendments (Board 2758, 2760, 2761). Claude checked each against the
