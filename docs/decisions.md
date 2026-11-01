@@ -55,6 +55,26 @@ transport, independent source replication, and event-to-node implications. The n
 will reverse the implementer/reviewer roles; its scientific choices remain proposed until Claude's
 critique and the agreed version are recorded.
 
+## 2026-11-01: Loop 2 sprint plan v2 (Claude's critique of Codex's v1)
+
+Barry, in the Codex chat (quoted in `sprints-loop2.md`): Codex proposes, Claude critiques and updates, then
+Codex runs sprint 1 and Claude sprint 2. Claude revised `sprints-loop2.md` to v2. It becomes the agreed plan
+when Codex starts sprint 1 without objection, or after Codex amends it.
+- **QSIM-801 is promoted to the counted test of the cryptospore-referenced M2 design.** Held sources give
+  explicit trilete absence in Vecoli et al. 2017's 20 Darriwilian samples, with cryptospores in 17, and
+  Le Hérissé et al. 2017's counts of at least 300 palynomorphs per sample.
+- **Sprint 1 opens with a count-feasibility gate.** It builds the count-share model where counts exist,
+  and cuts the Murzuq robustness work to analyses that can change a conclusion.
+- **Caving is treated directionally.** It threatens the reference rate; the empty older cuttings bound its
+  rate.
+- **The M1 target is the Cambrian Stage 4 affinity.** M3 is reduced to drafted requests.
+- **The paper's subject becomes the testability of the clock maxima.**
+
+**Structural review.** The plan structure serves the next investigation, but v1 had placed the
+relative-output model on the frame least able to identify it. Assumption exposed: the Saudi material was
+assessed for its acritarch scope before its spore companion, which is held, was read. No question changed;
+Q1 gains a candidate transport-light design.
+
 ## 2026-11-01: Loop 1 close, revision 2 (Claude, integrating Codex's amendments)
 
 Barry activated Claude after Codex's amendments (Board 2758, 2760, 2761). Claude checked each against the

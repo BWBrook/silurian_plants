@@ -1,6 +1,8 @@
 # Loop 2: preservation, independent replication and a complete research package
 
-**Proposal v1 — Codex, 1 November 2026, for Claude's critique and revision.** The first paired
+**v2 — Claude's critique and revision of Codex's v1, 1 November 2026.** Codex proposed v1 the same day
+(`75569e6`, Board 2770); "What v2 changes" below lists every material change and its reason. v2 becomes
+the agreed plan when Codex starts sprint 1 without objection, or after Codex amends it. The first paired
 sprint is closed in `loop1-close.md`. Barry requested more ambitious plans and reversed the roles:
 "You propose the next two sprint plans (try to be even more ambitious than last time with these),
 and Claude critiques and updates them. Then you implement sprint 1, after which Claude critiques
@@ -8,6 +10,75 @@ and does sprint 2, and then you critique. Reverse order!"
 This is a prospective plan after inspecting the sources and Loop 1 results, not outcome-blind
 preregistration. Claude's revised, agreed version precedes implementation. No Loop 2 analysis
 has started under this proposal.
+
+## What v2 changes, and why
+
+1. **QSIM-801 becomes the counted test of the cryptospore-referenced design, not a secondary
+   cross-study candidate.** Held sources show it is the one frame that can support the relative-output
+   model, and it is older than M2:
+   - Vecoli et al. (2017, pp.320 and 330) studied 20 core samples (767.8–586.9 ft). They report
+     cryptospores in all but three, and "only cryptospores and no trilete spores have been observed";
+   - the companion paper (Le Hérissé et al. 2017, author manuscript PDF pp.5, 10 and 38) counted at least
+     300 palynomorphs per sample, with relative abundances in its Tables 2–3. Cryptospores reach "6 or more than
+     8 %" of all palynomorphs (p.5) and fall to 0% in distal prodelta facies (p.38);
+   - the age is late Dapingian to early Darriwilian (Vecoli et al. 2017, abstract), so the whole section
+     is older than 459.1 Ma (Darriwilian base 469.4 Ma, `data/timescale.csv`). Its position against the
+     Murzuq window endpoints (462.6–467.1 Ma) needs the finer chitinozoan dating.
+
+   Each sample therefore carries an observed land-spore yield together with an explicit trilete zero.
+   The trilete share of land-derived spores can be bounded within samples, without the free
+   between-interval ρ. Murzuq probably cannot support the same model: its chart records taxon
+   presence symbols (`data/units/libya_chart_reports.csv`), and its cryptospore percentages are interval
+   prose (Abuhmida 2013, e.g. 20–44% in the upper Hawaz).
+2. **Sprint 1 starts with a count-feasibility gate and still builds the count-share model.** If Murzuq
+   lacks per-sample counts, sprint 1 derives, implements and known-answer tests the share model for the
+   QSIM-801 protocol, and gives Murzuq the identification and robustness analysis. Sprint 2 extracts and
+   applies the model. This keeps v1's ownership and puts the model where data identify it.
+3. **QSIM-801 has a protocol trap, and the plan now names it.** The trilete statement rests on Vecoli et al.'s 20
+   samples, prepared at Liège. The counts and percentages come from Le Hérissé et al.'s samples, whose
+   number (v1 cites 42) and preparations must be reconciled with them. The search effort behind the
+   trilete zero is Vecoli et al.'s spore examination, not the 300-specimen count. A
+   share bound must use the material and effort over which a trilete would have been recorded, after
+   matching the two papers' samples by depth. One discrepancy to resolve: Vecoli et al. list 695.7 ft
+   among the three samples without cryptospores, while Le Hérissé et al. quote 10.4% at 695.7 ft in their
+   discussion of cryptospore percentages across a discontinuity (manuscript p.38). The group that figure
+   refers to must be checked in Table 2.
+4. **Qusaiba-1 supplies reference evidence only.** Its deepest sample (Katian) is already trilete-positive
+   (`docs/sources.md`), so it supplies no older zero. The M2 replication question is therefore Saudi
+   Darriwilian zeros (QSIM-801, with the same-region Hanadir explicit non-detection, which is not
+   independent of it) against a reference. A counted reference with separate trilete and cryptospore
+   tallies, Katian to Llandovery, is a named sprint-2 search target. Without one, the within-sample bound
+   is reported against stated reference shares as a scenario, and is not called a replication.
+5. **The caving test is made specific.** In Murzuq, trilete-rich Tanezzuft (Llandovery) is drilled first,
+   so caving would add Silurian triletes to deeper cuttings. The 28 empty older cuttings thus also bound
+   the caving rate. Caving's real threat is inflated reference positives in cuttings, which inflate the
+   expected older encounter and make exclusion anti-conservative. Sprint 1 bounds that from the same data
+   and, where reference cores exist, from core-versus-cuttings agreement, before any contamination grid.
+6. **The Murzuq robustness work is cut to what can change a conclusion.** It covers analytic break-even
+   surfaces for delivery, caving and chronology, leave-one-well-out, and the current Hawaz allocations.
+   Material identity, E1 coding and admission from Loop 1 are reused, not re-audited; the 164-entry audit
+   adds only observation-basis fields. Binding qualification is reserved for the one new model family
+   (the count-share model) and any Murzuq quantity whose released value changes.
+7. **Choosing the M1 and M3 targets now.**
+   - **M1: the affinity of the Cambrian Stage 4 forms** (Taylor & Strother 2024 ultrastructure,
+     Strother 2016, Wang et al. 2022, with Baldwin 2004 for context). Under the adopted E2 addendum, it
+     decides whether main or only inclusive accepts a Stage 4 E2 occurrence. That decides whether M1 is
+     an absence question or an occurrence question 1–9 Myr below the maximum. One related lead:
+     Vecoli et al. (2017) say small tetrads in the Argentine Dapingian assemblage were "erroneously
+     attributed to *Tetrahedraletes medinensis* in Rubinstein et al., 2010". Check this against
+     Argentine 7999's reading.
+   - **The pre-515.5 Ma roster becomes a drafted request,** not an audit.
+   - **M3 is reduced to drafted ledger requests.** No held source has a searched-material denominator,
+     so it keeps Loop 1's disposition unless a held source adds one.
+8. **The manuscript's claim is broadened, and the sprint is staged.**
+   - **The paper's subject is the testability of fossil maximum-age constraints** for the land-plant
+     clock, with explicit sampling models, rather than one regional bound. Of three maxima in use, it
+     shows which absence arguments the published record can test, under which assumptions, and which
+     missing observation would test the rest.
+   - **M2 becomes a two-frame result if QSIM-801 admits.** The two frames are a transport-dependent
+     Murzuq encounter bound and a within-sample Saudi share bound.
+   - **Sprint 2 locks its results before drafting.** A full rendered draft is required, but it is
+     written on frozen results rather than alongside them.
 
 ## Scientific endpoint
 
@@ -50,8 +121,16 @@ use an independent specialist on central scientific claims rather than duplicati
 
 ### 1. Reconstruct the information actually available
 
-Audit all 164 Abuhmida appendix entries and their chart/prose matches, preserving original material
-identities and exclusions. For each, recover the most informative defensible E1, cryptospore and
+**Gate, first:** settle whether any Murzuq source gives per-sample counts, or per-sample percentages with
+known totals, that separate triletes from cryptospores. Look in the thesis's palynofacies and abundance
+figures as well as the charts. In the same read-only pass, check QSIM-801's count categories (Le Hérissé et
+al. 2017, Tables 2–3) and the depth match between its counted samples and Vecoli et al.'s (2017) 20 spore
+samples. Do not extract QSIM-801 into sprint-2 files. The gate decides the branch below; record it before
+any model work.
+
+Then audit all 164 Abuhmida appendix entries and their chart/prose matches, preserving original material
+identities and exclusions. Loop 1's material identities, E1 coding and admissions are reused, and the audit
+adds observation-basis fields only. For each, recover the most informative defensible E1, cryptospore and
 non-target observation, with page/figure/cell locators and independently checked decisive values.
 Do not copy interval summaries into sample rows. Distinguish:
 
@@ -73,17 +152,19 @@ Keep the frozen Loop 1 encounter results as the benchmark. Specify the mapping f
 through transport, preservation, preparation and counting to the reported observation. Separate
 what the data identify from what is supplied by a scenario or biological assumption.
 
-**Preferred extension, conditional on usable counts:** a joint trilete/cryptospore observation
-model for output relative to cryptospore producers, normalised to the reference interval. As a
+**Preferred extension, for whichever frame the gate shows has usable counts (expected: QSIM-801):** a joint
+trilete/cryptospore observation model for output relative to cryptospore producers, normalised to the reference interval. As a
 candidate starting point, conditioning two Poisson counts on their total can remove a genuinely
 shared exposure factor. Derive the actual likelihood for the recovered protocol before adopting
 it: shared effort, additional slide searches, overdispersion and differential recovery may defeat
 that cancellation. Cryptospore counts are stochastic observations, not error-free exposures.
 Zeros, pooled taxa, all-positive binary references and changing control composition require
-explicit treatment. An estimated relative output is not an absolute production or crown-age
+explicit treatment. For QSIM-801 the trilete observation is Vecoli et al.'s spore examination of their 20 samples, and
+the land-spore yield comes from counts that may be on other preparations. Build the likelihood on the
+effort actually searched for triletes, or carry the mismatch as a declared bound. An estimated relative output is not an absolute production or crown-age
 estimate, and does not measure the old transport ratio ρ.
 
-**If separate counts are absent:** retain the binary encounter model and build a substantive
+**If separate counts are absent in Murzuq:** retain the binary encounter model there and build a substantive
 partial-identification analysis. Show which combinations of producer output and differential
 delivery are observationally equivalent, and calculate the delivery/contamination/age assumptions
 at which each central conclusion changes. Interval compositions or colour marks may constrain a
@@ -109,7 +190,7 @@ baseline, recording both movement of bounds and whether any informative result r
 | Assumption | Required challenge | Scientific output |
 |---|---|---|
 | Delivery and recovery | Existing ρ scenarios, and differential E1/control recovery if a control model is used | Thresholds at which the reference-level M2 exclusion or a relative-output conclusion changes |
-| Caving/reworking | A directional contamination mechanism or defensible bounded contamination calculation, including its effect on reference positives and the recovered first appearance | Distinguish indigenous encounter from transported contaminants; a smaller ρ is not a contamination model |
+| Caving/reworking | Directional: Tanezzuft triletes caved into deeper cuttings would add older positives, so the empty older cuttings bound the caving rate. The material threat is inflated reference positives in cuttings; bound it from the same data and from reference core-versus-cuttings agreement where cores exist. Model further only if this bound leaves a conclusion open | Distinguish indigenous encounter from transported contaminants; a smaller ρ is not a contamination model |
 | Geological ages | Coherent, ordered/shared chronology alternatives respecting source correlations, plus the current Hawaz allocations | How chronology changes endpoints and sampled support; no uniform-age assumption presented as measured age uncertainty |
 | Between-well structure | Existing frailty assumptions and leave-one-well-out influence | Whether a well or pooling assumption drives the result; overlapping wells are not independent replications |
 
@@ -173,7 +254,9 @@ designs:
 
 | Candidate | Intended role | Current limit to resolve |
 |---|---|---|
-| Le Hérissé et al. 2017, QSIM-801, with Wellman et al. 2015 Qusaiba-1 | Primary candidate for older Saudi material plus a trilete-positive reference: reconcile the reported 42 QSIM samples and 37 Qusaiba samples | Cross-core and cross-study, not a within-study rate contrast. Verify complete E1 reporting, counted/search scope, ages, preservation and transport. Acritarch scope alone supplies no E1 zero. |
+| QSIM-801: Vecoli et al. 2017 spores (20 samples, explicit study-wide trilete non-detection) with Le Hérissé et al. 2017 counts (at least 300 palynomorphs per sample; Tables 2–3) | **Primary.** An older-side (late Dapingian–early Darriwilian) counted frame for the within-sample trilete-share bound, using sprint 1's model. A Saudi reference comes from Qusaiba-1 (presence, cross-core) and any counted trilete/cryptospore reference found | Match the two papers' samples and preparations; the trilete search effort is Vecoli et al.'s spore examination; reconcile the reported sample totals (v1's 42 QSIM samples against Vecoli's 20). Strother et al. 2015 (Hanadir, explicit trilete non-detection) is same-region corroboration, not an independent frame. Acritarch scope alone supplies no E1 zero |
+| Wellman et al. 2015, Qusaiba-1 | Saudi reference: trilete-positive from its deepest (Katian) sample upward | Supplies no older zero. It is cross-core and presence-coded, and Qusaiba reused as reference is not a second independent reference study |
+| A counted Katian–Llandovery assemblage with separate trilete and cryptospore tallies | Named search target: the reference share that turns the QSIM-801 bound into a comparison | If none is found, report the QSIM-801 bound against stated reference shares as a scenario, not a replication |
 | Badawy et al. 2014, Röstånga-1; the existing Baltic source family | Independent geographic corroboration and a search for a complete linked reference | Twenty-one processed samples do not by themselves supply a trilete-positive reference; Katian–Rhuddanian material may inform a later interval but not the older side of M2 |
 | Rubinstein et al. 2016, Caspalá/Lipeón | Independent occurrence, age and reworking challenge to the temporal interpretation | Eight sampled levels and seven productive samples; host ages, reworked constituents and unidentified miospores prevent automatic conversion to an older-zero/reference contrast |
 
@@ -196,8 +279,9 @@ an independently audited limit, rather than claiming geographic generality.
 
 ### 2. Turn the M1/M3 gaps into specific scientific tests
 
-Before this tranche, select one inference-changing M1 target and one M3 denominator target, naming
-the reading or admission decision each can alter. The source families below supply candidates,
+The targets are chosen (v2): for M1, the affinity of the Cambrian Stage 4 forms, which decides
+whether main or only inclusive accepts a Stage 4 E2 occurrence. For M3, only drafted ledger requests,
+unless a held source adds a searched-material denominator. The source families below supply candidates,
 not an instruction to repeat every audit. Continue a target only while it can change that decision
 or support a newly quantified design requirement; otherwise retain the Loop 1 disposition and
 prioritise the external M2 comparison and synthesis.
@@ -233,11 +317,17 @@ node interpretation. The crown-state marginals of separately modelled characters
 a joint ancestral phenotype. A finite bound on sampled producer encounter does not by itself
 date a crown node.
 
+**Paper subject (v2).** The paper is about the testability of the fossil maximum-age constraints used for
+the land-plant clock under explicit sampling models: which absence arguments the record can test, under
+which assumptions, and which missing observation would test the rest. M2 is its quantitative core, with
+two frames if QSIM-801 admits. Lock the results before drafting; the draft is written on frozen outputs.
+
 Deliver a full internal manuscript with methods and supplement, a curated-data release candidate,
 and figures generated from declared source tables. The intended figure set is:
 
 1. Sampled time/region/observation support, including the unsampled intervals and failures.
-2. Murzuq bounds and the transport/contamination/chronology assumptions that change them.
+2. Murzuq bounds and the transport/contamination/chronology assumptions that change them, beside the
+   QSIM-801 within-sample share bound where admitted.
 3. External-source agreement, conflict or non-admission, with source dependence visible.
 4. The three maximum-age arguments and their specimen-to-node links, separating supported,
    contested and unresolved steps.
@@ -285,11 +375,15 @@ that may eventually be distributed.
 - Each close updates questions, decisions, source register when holdings change, and AI roles.
   Distinguish adopted methods, qualified results, exploratory sensitivities and unresolved proposals.
 
-## Questions for Claude's critique
+## Critique questions (v1), answered in v2
 
-Please revise the plan concretely, particularly: is the sprint-1 model/robustness scope proportionate
-to the recoverable counts; is the Saudi cross-study comparison scientifically worth its transport
-assumption; which M1/M3 target is most likely to change an inference rather than repeat the first
-audit; and does the proposed manuscript endpoint earn a result beyond one regional absence bound?
-Resolve routine choices in the revised plan. Preserve the user's role order and the boundary between
-an authorised study and a separately authorised public release.
+- **Proportionate sprint-1 scope?** Only after the count gate. The count-share model goes where the
+  counts are (expected: QSIM-801), and the Murzuq robustness work is cut to analyses that can change a
+  conclusion (changes 2, 5 and 6).
+- **Is the Saudi comparison worth its transport assumption?** Yes, but for a different reason than v1
+  gave. QSIM-801's within-sample land-spore yield replaces most of the transport assumption, rather than
+  adding a cross-study one (changes 1, 3 and 4).
+- **Which M1/M3 target can change an inference?** For M1, the Cambrian Stage 4 affinity. M3 is reduced
+  to drafted requests (change 7).
+- **Does the manuscript earn more than one regional bound?** Yes, if it is framed as a test of the
+  maxima's evidential basis, with a two-frame M2 result where admitted (change 8).
