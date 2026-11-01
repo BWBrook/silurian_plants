@@ -1,0 +1,82 @@
+name_id,nm,n_occ,n_coll,oldest_max_ma,youngest_min_ma,rank,identified_as,pbdb_group,organ,countries,lineage
+N000,"""Forania"" indet.",2,2,419.62,393.47,,"""Forania"" indet.",plantae_other_or_indet,"sterile axis; sterile axis,fertile axis",CA,
+N001,"<""Kaulangiophyton"">",1,1,419.62,393.47,,"<""Kaulangiophyton"">",plantae_other_or_indet,"fertile axis,sterile axis",CA,
+N002,"<""Leclercqia"">",1,1,419.62,393.47,,"<""Leclercqia"">",plantae_other_or_indet,"fertile axis,sterile axis",CA,
+N003,"<""Leclerqia"">",1,1,419.62,393.47,,"<""Leclerqia"">",plantae_other_or_indet,fertile axis,CA,
+N004,<Articulale>,1,1,419.62,393.47,,<Articulale>,plantae_other_or_indet,sterile axis,FR,
+N005,<Lycopsids>,1,1,413.02,382.31,,<Lycopsids>,plantae_other_or_indet,sterile axis,AU,
+N006,<Morphotype I>,1,1,410.62,393.47,,<Morphotype I>,plantae_other_or_indet,sterile axis,US,
+N007,<Morphotype II>,1,1,410.62,393.47,,<Morphotype II>,plantae_other_or_indet,sterile axis,US,
+N008,<Morphotype III>,1,1,419.62,393.47,,<Morphotype III>,plantae_other_or_indet,sterile axis,US,
+N009,<Trimerophyte>,1,1,410.62,393.47,,<Trimerophyte>,plantae_other_or_indet,non-seed repro,US,
+N010,<zosterophylloid>,1,1,419.62,393.47,,<zosterophylloid>,plantae_other_or_indet,axis,CA,
+N011,? Euomphalopteris sp.,1,1,393.47,382.31,,? Euomphalopteris sp.,plantae_other_or_indet,,US,
+N012,? Pachytheca sp.,1,1,413.02,410.62,,? Pachytheca sp.,nematophytes_and_thalloid_problematica,,UK,
+N013,? Protaxites loganii,1,1,410.62,399.5,,? Protaxites loganii,nematophytes_and_thalloid_problematica,,DE,
+N014,? Protoarticulata indet.,1,1,393.47,382.31,,? Protoarticulata indet.,plantae_other_or_indet,axis,NO,
+N015,? Psilophyte indet.,1,1,393.47,382.31,,? Psilophyte indet.,plantae_other_or_indet,axis,NO,
+N016,Aarabia brevicaulis n. gen. n. sp.,1,1,419.62,393.47,,Aarabia brevicaulis n. gen. n. sp.,plantae_other_or_indet,"fertile axis,cuticle",MA,
+N017,Aberlemnia sp.,1,1,422.7,419.62,,Aberlemnia sp.,plantae_other_or_indet,,CN,
+N018,Actinophyllum,4,4,422.7,387.95,genus,Actinophyllum sp.,plantae_other_or_indet,,UK US,Life > Eukaryota > Plantae > Actinophyllum
+N019,Actinopodium nathorstii,1,1,393.47,382.31,species,Actinopodium nathorstii,plantae_other_or_indet,axis,NO,Life > Eukaryota > Plantae > Actinopodium > Actinopodium nathorstii
+N020,Anaeurophyton germanicum,1,1,399.5,387.95,,Anaeurophyton germanicum,plantae_other_or_indet,,RU,
+N021,Anapaulia moodyi,1,1,393.47,379.0,,Anapaulia moodyi,plantae_other_or_indet,axis,VE,
+N022,Aneurophytales,1,1,393.47,387.95,order,Aneurophytales indet.,pbdb_progymnosperms,axis,US,lantae > Streptophyta > Embryophyta > Tracheophyta > Pteridobiotina > Cycadophytanae > Aneurophytophyta > Aneurophytophytina > Aneurophytopsida > Aneurophytales
+N023,Aneurophyton germanicum,1,1,393.47,382.31,species,Aneurophyton germanicum,pbdb_progymnosperms,"sterile axis,fertile axis",DE,obiotina > Cycadophytanae > Aneurophytophyta > Aneurophytophytina > Aneurophytopsida > Aneurophytales > Aneurophytaceae > Aneurophyton > Aneurophyton germanicum
+N024,Aneurophyton hallii,1,1,393.47,382.31,species,Aneurophyton hallii,pbdb_progymnosperms,axis,US,eridobiotina > Cycadophytanae > Aneurophytophyta > Aneurophytophytina > Aneurophytopsida > Aneurophytales > Aneurophytaceae > Aneurophyton > Aneurophyton hallii
+N025,Angarolaminariopsis zinovae,1,1,419.62,393.47,species,Angarolaminariopsis zinovae n. gen. n. sp.,plantae_other_or_indet,,RU,Life > Eukaryota > Plantae > Angarolaminariopsis > Angarolaminariopsis zinovae
+N026,Anisophyton cf. gothanii,2,2,419.62,382.31,,Anisophyton cf. gothanii,plantae_other_or_indet,axis; fertile axis,BE,
+N027,Aphyllopteris,6,6,419.62,393.47,genus,Aphyllopteris cf. robusta; Aphyllopteris sp.,plantae_other_or_indet,sterile axis; unassigned,BE FR NO,Life > Eukaryota > Plantae > Aphyllopteris
+N028,Archaeosigillaria,27,26,410.62,358.86,genus,Archaeosigillaria caespitosa; Archaeosigillaria devriesii; Archaeosigillaria sp.,pbdb_lycophytes_incl_zosterophylls,axis; unassigned,BR ZA,Life > Eukaryota > Plantae > Viridiplantae > Streptophyta > Embryophyta > Tracheophyta > Pteridophyta > Lycopsida > Archaeosigillaria
+N029,Asterocalamites,1,1,413.02,410.62,genus,Asterocalamites sp.,plantae_other_or_indet,axis,BE,Life > Eukaryota > Plantae > Asterocalamites
+N030,Asteroxylon,1,1,413.02,410.62,genus,Asteroxylon mackei,pbdb_lycophytes_incl_zosterophylls,fertile axis,UK,Life > Eukaryota > Plantae > Lycopodophyta > Asteroxylon
+N031,Baragwanathia,1,1,413.02,382.31,genus,Baragwanathia sp.,pbdb_lycophytes_incl_zosterophylls,axis,AU,Life > Eukaryota > Plantae > Lycopodophyta > Baragwanathia
+N032,Baragwanathia longifolia,3,3,426.7,382.31,species,Baragwanathia longifolia,pbdb_lycophytes_incl_zosterophylls,"axis; sterile axis,leaf",AU,Life > Eukaryota > Plantae > Lycopodophyta > Baragwanathia > Baragwanathia longifolia
+N033,Baragwanthia longifolia,1,1,426.7,422.7,,Baragwanthia longifolia,plantae_other_or_indet,axis,AU,
+N034,Barinophyton,1,1,393.47,382.31,genus,Barinophyton sp.,pbdb_lycophytes_incl_zosterophylls,fertile axis,NO,Life > Eukaryota > Plantae > Viridiplantae > Streptophyta > Embryophyta > Zosterophyllophyta > Zosterophyllopsida > Barinophyton
+N035,Barsassia ornata,1,1,399.5,387.95,species,Barsassia cf. ornata,pbdb_psilophytes_incl_trimerophytes,,RU,Life > Eukaryota > Plantae > Viridiplantae > Streptophyta > Embryophyta > Psilophytophyta > Psilophytopsida > Psilophytales > Barsassia > Barsassia ornata
+N036,Bathurstia cf. denticulata,1,1,413.02,410.62,,Bathurstia cf. denticulata,plantae_other_or_indet,axis,CA,
+N037,Bathurstia denticulata n. gen. n. sp.,1,1,419.62,393.47,,Bathurstia denticulata n. gen. n. sp.,plantae_other_or_indet,axis,CA,
+N038,Bathurstia sp.,1,1,419.62,393.47,,Bathurstia sp.,plantae_other_or_indet,axis,CA,
+N039,Bergeria,3,3,393.47,382.31,genus,Bergeria mimerensis; Bergeria mimerensis n. sp.,pbdb_lycophytes_incl_zosterophylls,axis; sterile axis,NO,Life > Eukaryota > Plantae > Viridiplantae > Streptophyta > Embryophyta > Lycophyta > Lepidodendrales > Lepidodendraceae > Bergeria
+N040,Bitelaria dubjanskii,1,1,419.62,393.47,,Bitelaria dubjanskii,plantae_other_or_indet,sterile axis,CA,
+N041,Blasaria,2,2,413.02,393.47,genus,Blasaria minor n. sp.; Blasaria sibirica,pbdb_lycophytes_incl_zosterophylls,,KZ RU,Life > Eukaryota > Plantae > Lycopodophyta > Blasaria
+N042,Bowerophylloides mendozaensis,1,1,443.1,413.02,,Bowerophylloides mendozaensis,plantae_other_or_indet,sterile axis,AR,
+N043,Caia langii n. gen. n. sp.,1,1,422.7,419.62,,Caia langii n. gen. n. sp.,plantae_other_or_indet,fertile axis,UK,
+N044,Calamophyton,3,3,419.62,382.31,genus,Calamophyton <sp.>; Calamophyton bicephalum; Calamophyton sp.,pbdb_ferns_cladoxylopsids_sphenophytes,"axis; fertile axis,sterile axis; sterile axis",FR US,a > Plantae > Viridiplantae > Streptophyta > Embryophyta > Tracheophyta > Euphyllophytina > Moniliformopses > Cladoxylopsida > Pseudosporochnales > Calamophyton
+N045,Calamophyton primaevum,1,1,393.47,358.86,species,Calamophyton primaevum,pbdb_ferns_cladoxylopsids_sphenophytes,fertile axis,DE,ae > Streptophyta > Embryophyta > Tracheophyta > Euphyllophytina > Moniliformopses > Cladoxylopsida > Pseudosporochnales > Calamophyton > Calamophyton primaevum
+N046,Callixylon,1,1,393.47,382.31,genus,Callixylon newberryi,pbdb_seed_plants,wood,US,Life > Eukaryota > Plantae > Viridiplantae > Streptophyta > Embryophyta > Coniferophyta > Cordaitales > Callixylon
+N047,Catenalis digitata,1,1,413.02,410.62,species,Catenalis digitata,pbdb_tracheophyta_other_or_indet,,CN,Life > Eukaryota > Plantae > Viridiplantae > Streptophyta > Embryophyta > Tracheophyta > Catenalis > Catenalis digitata
+N048,Caulopteris,3,2,393.47,382.31,genus,Caulopteris antiqua; Caulopteris peregrina; Caulopteris sp.,pbdb_ferns_cladoxylopsids_sphenophytes,"sterile axis; sterile axis,root; unassigned",NO US,a > Plantae > Viridiplantae > Streptophyta > Embryophyta > Tracheophyta > Pteridophyta > Polypodiopsida > Marattiidae > Marattiales > Marattiaceae > Caulopteris
+N049,Cephalopteris,1,1,393.47,382.31,genus,? Cephalopteris praecox n. sp.,pbdb_seed_plants,"sterile axis,fertile axis",NO,Life > Eukaryota > Plantae > Viridiplantae > Streptophyta > Embryophyta > Pteridospermophyta > Cephalopteris
+N050,Chaleuria cirrosa,1,1,419.62,393.47,,Chaleuria cirrosa,plantae_other_or_indet,"fertile axis,sterile axis",CA,
+N051,Chauvinia scharyana,1,1,393.47,382.31,species,Protolepidodendron scharianum,plantae_other_or_indet,sterile axis,CZ,Life > Eukaryota > Plantae > Chauvinia > Chauvinia scharyana
+N052,Ciguelia juvenile n. gen. n. sp.,1,1,419.62,393.47,,Ciguelia juvenile n. gen. n. sp.,plantae_other_or_indet,axis,BR,
+N053,Cladophlebis,1,1,538.8,201.4,genus,Cladophlebis sp.,pbdb_ferns_cladoxylopsids_sphenophytes,,CL,Life > Eukaryota > Plantae > Viridiplantae > Streptophyta > Embryophyta > Tracheophyta > Pteridophyta > Polypodiopsida > Cladophlebis
+N054,Cladoxylon,1,1,393.47,382.31,genus,Cladoxylon scoparium,pbdb_ferns_cladoxylopsids_sphenophytes,fertile axis,DE,ota > Plantae > Viridiplantae > Streptophyta > Embryophyta > Tracheophyta > Euphyllophytina > Moniliformopses > Cladoxylopsida > Pseudosporochnales > Cladoxylon
+N055,Cladoxylopsida,2,2,393.47,387.95,class,Cladoxylopsida indet.,pbdb_ferns_cladoxylopsids_sphenophytes,"axis,root",CA,Life > Eukaryota > Plantae > Viridiplantae > Streptophyta > Embryophyta > Tracheophyta > Euphyllophytina > Moniliformopses > Cladoxylopsida
+N056,Coactilum,1,1,419.62,413.02,genus,Coactilum sp.,plantae_other_or_indet,,TJ,Life > Eukaryota > Plantae > Coactilum
+N057,Codonophycus austinii,1,1,419.62,298.9,species,Codonophycus austinii,plantae_other_or_indet,,US,Life > Eukaryota > Plantae > Codonophycus > Codonophycus austinii
+N058,Colpodexylon,7,6,393.47,379.0,genus,Colpodexylon cachiriense; Colpodexylon camptophyllum; Colpodexylon coloradense; Colpodexylon sp.,pbdb_lycophytes_incl_zosterophylls,"axis; axis,fertile axis; axis,leaf",US VE,Life > Eukaryota > Plantae > Lycopodophyta > Colpodexylon
+N059,Colpodexylon deatsii,1,1,393.47,382.31,species,Colpodexylon deatsii,pbdb_lycophytes_incl_zosterophylls,"axis,leaf",US,Life > Eukaryota > Plantae > Lycopodophyta > Colpodexylon > Colpodexylon deatsii
+N060,Compsocradus laevigatus,1,1,393.47,379.0,,Compsocradus laevigatus,plantae_other_or_indet,"sterile axis,fertile axis",VE,
+N061,Conchulophyton quadrosii n. gen. n. sp.,1,1,419.62,393.47,,Conchulophyton quadrosii n. gen. n. sp.,plantae_other_or_indet,unassigned,BR,
+N062,Cooksonia,23,17,443.1,413.02,genus,? Cooksonia <sp.>; ? Cooksonia sp.; Cooksonia <sp. 1>; Cooksonia <sp. 2>,pbdb_psilophytes_incl_trimerophytes,axis; fertile axis; unassigned,CA CZ IE LY PL UA UK US,Life > Eukaryota > Plantae > Viridiplantae > Streptophyta > Embryophyta > Psilophytophyta > Psilophytopsida > Psilophytales > Cooksonia
+N063,Cooksonia hemisphaerica,5,5,430.6,413.02,species,Cooksonia cf. hemisphaerica; Cooksonia hemisphaerica; Cooksonia hemisphaerica n. sp.; cf. Cooksonia hemisphaerica,pbdb_psilophytes_incl_trimerophytes,fertile axis,CZ IE UA UK US,ife > Eukaryota > Plantae > Viridiplantae > Streptophyta > Embryophyta > Psilophytophyta > Psilophytopsida > Psilophytales > Cooksonia > Cooksonia hemisphaerica
+N064,Cooksonia pertoni,4,4,430.6,413.02,species,Cooksonia pertoni; Cooksonia pertoni n. gen. n. sp.; cf. Cooksonia pertoni,pbdb_psilophytes_incl_trimerophytes,fertile axis,IE UA UK,Life > Eukaryota > Plantae > Viridiplantae > Streptophyta > Embryophyta > Psilophytophyta > Psilophytopsida > Psilophytales > Cooksonia > Cooksonia pertoni
+N065,Crenaticaulis,3,2,410.62,382.31,genus,Crenaticaulis sp.; Crenaticaulis verruculosus,pbdb_ferns_cladoxylopsids_sphenophytes,"axis; axis,non-seed repro",CA,Life > Eukaryota > Plantae > Viridiplantae > Streptophyta > Embryophyta > Tracheophyta > Pteridophyta > Crenaticaulis
+N066,Cryptoxylon forfarense,1,1,413.02,410.62,species,Cryptoxylon forfarense,plantae_other_or_indet,,BE,Life > Eukaryota > Plantae > Cryptoxylon > Cryptoxylon forfarense
+N067,Dadoxylon,1,1,393.47,382.31,genus,Dadoxylon cf. halli,pbdb_ferns_cladoxylopsids_sphenophytes,unassigned,US,ridiplantae > Streptophyta > Embryophyta > Tracheophyta > Pteridobiotina > Pteridophytanae > Equisetophyta > Equisetopsida > Pinidae > Araucariaceae > Dadoxylon
+N068,Dalejophyton nemejci,1,1,393.47,382.31,species,Dalejophyton nemejci n. gen. n. sp.,plantae_other_or_indet,fertile axis,CZ,Life > Eukaryota > Plantae > Dalejophyton > Dalejophyton nemejci
+N069,Dawsonites,10,10,419.62,382.31,genus,Dawsonites cf. minor; Dawsonites jabachensis; Dawsonites minor; Dawsonites sp.,pbdb_psilophytes_incl_trimerophytes,fertile axis; non-seed repro; sterile axis,AU BE CA DE FR UK,Life > Eukaryota > Plantae > Viridiplantae > Streptophyta > Embryophyta > Psilophytophyta > Psilophytopsida > Dawsonites
+N070,Dawsonites arcuatus,8,8,419.62,382.31,species,Dawsonites arcuatus; Dawsonites cf. arcuatus,pbdb_psilophytes_incl_trimerophytes,fertile axis,BE FR,Life > Eukaryota > Plantae > Viridiplantae > Streptophyta > Embryophyta > Psilophytophyta > Psilophytopsida > Dawsonites > Dawsonites arcuatus
+N071,Distichophytum,2,2,413.02,393.47,genus,Distichophytum ovatum,pbdb_psilophytes_incl_trimerophytes,fertile axis,CA US,Life > Eukaryota > Plantae > Viridiplantae > Streptophyta > Embryophyta > Psilophytophyta > Psilophytopsida > Psilophytales > Distichophytum
+N072,Drepanophycus,23,22,419.62,382.31,genus,Drepanophycus ? crepini; Drepanophycus colophyllus; Drepanophycus crepinii n. sp.; Drepanophycus devonicus,pbdb_psilophytes_incl_trimerophytes,"axis; axis,leaf; fertile axis,sterile axis",BE CA CN CZ DE FR NO RU UK US,Life > Eukaryota > Plantae > Viridiplantae > Streptophyta > Embryophyta > Psilophytophyta > Drepanophycus
+N073,Drepanophycus gaspianus,10,10,419.62,382.31,species,Drepanophycus aff. gaspianus; Drepanophycus gaspianus,pbdb_psilophytes_incl_trimerophytes,"axis,leaf; sterile axis",BE CA RU,Life > Eukaryota > Plantae > Viridiplantae > Streptophyta > Embryophyta > Psilophytophyta > Drepanophycus > Drepanophycus gaspianus
+N074,Drepanophycus spinaeformis,33,32,419.62,382.31,species,Drepanophycus cf. spinaeformis; Drepanophycus spinaeformis,pbdb_psilophytes_incl_trimerophytes,"axis; axis,leaf; cuticle,leaf",BE CA DE FR KZ NO UK,Life > Eukaryota > Plantae > Viridiplantae > Streptophyta > Embryophyta > Psilophytophyta > Drepanophycus > Drepanophycus spinaeformis
+N075,Dutoitea,1,1,393.47,358.86,genus,Dutoitea maraisia,pbdb_psilophytes_incl_trimerophytes,unassigned,ZA,Life > Eukaryota > Plantae > Viridiplantae > Streptophyta > Embryophyta > Tracheophyta > Rhyniopsida > Dutoitea
+N076,Dutoitia,2,2,393.47,358.86,genus,Dutoitia ? alfreda; Dutoitia alfreda,pbdb_psilophytes_incl_trimerophytes,unassigned,ZA,Life > Eukaryota > Plantae > Viridiplantae > Streptophyta > Embryophyta > Psilophytophyta > Psilophytopsida > Psilophytales > Dutoitia
+N077,Dutoitia pulchra,1,1,393.47,358.86,species,Dutoitia pulchra,pbdb_psilophytes_incl_trimerophytes,unassigned,ZA,Life > Eukaryota > Plantae > Viridiplantae > Streptophyta > Embryophyta > Psilophytophyta > Psilophytopsida > Psilophytales > Dutoitia > Dutoitia pulchra
+N078,Enigmophyton,2,1,393.47,382.31,genus,? Enigmophyton indet.,plantae_other_or_indet,fertile axis,NO,Life > Eukaryota > Plantae > Enigmophyton
+N079,Enigmophyton superbum,1,1,393.47,382.31,species,Enigmophyton superbum n. gen. n. sp.,plantae_other_or_indet,"fertile axis,sterile axis",NO,Life > Eukaryota > Plantae > Enigmophyton > Enigmophyton superbum
+N080,Eocooksonia,4,3,422.7,419.62,genus,Cooksonella sp.; Cooksonella sphaerica,pbdb_lycophytes_incl_zosterophylls,"axis,non-seed repro",KZ,Life > Eukaryota > Plantae > Viridiplantae > Streptophyta > Embryophyta > Zosterophyllophyta > Zosterophyllopsida > Cooksoniales > Eocooksonia

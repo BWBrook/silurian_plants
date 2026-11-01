@@ -1,0 +1,814 @@
+{
+  "items": [
+    {
+      "name_id": "N000",
+      "name": "\"Forania\" indet.",
+      "category": "lycophyte_line",
+      "polysporangiophyte": "yes",
+      "crown_tracheophyte": "yes",
+      "basis": "Forania is a zosterophyll with branched, spinose axes and lateral bivalved sporangia.",
+      "source": "[Jensen & Gensel (2013), Forania plegiospinosa: A Zosterophyll from the Early Devonian](https://www.journals.uchicago.edu/doi/pdfplus/10.1086/669914), abstract.",
+      "confidence": "high"
+    },
+    {
+      "name_id": "N001",
+      "name": "<\"Kaulangiophyton\">",
+      "category": "lycophyte_line",
+      "polysporangiophyte": "yes",
+      "crown_tracheophyte": "yes",
+      "basis": "Kaulangiophyton comprises branched shoots bearing sporangia and is assigned to the zosterophyll lineage.",
+      "source": "[USGS, Index of Generic Names of Fossil Plants, 1966–1973, Kaulangiophyton entry](https://pubs.usgs.gov/bul/1396/report.pdf), indexed passage.",
+      "confidence": "high"
+    },
+    {
+      "name_id": "N002",
+      "name": "<\"Leclercqia\">",
+      "category": "lycophyte_line",
+      "polysporangiophyte": "yes",
+      "crown_tracheophyte": "yes",
+      "basis": "Leclercqia is a microphyllous lycopsid; ligules are documented in its type species.",
+      "source": "[Grierson & Bonamo (1979), Leclercqia complexa: Earliest Ligulate Lycopod](https://bsapubs.onlinelibrary.wiley.com/doi/10.1002/j.1537-2197.1979.tb06248.x).",
+      "confidence": "high"
+    },
+    {
+      "name_id": "N003",
+      "name": "<\"Leclerqia\">",
+      "category": "lycophyte_line",
+      "polysporangiophyte": "yes",
+      "crown_tracheophyte": "yes",
+      "basis": "Interpreted as a misspelling of Leclercqia, the ligulate lycopsid, rather than a distinct genus.",
+      "source": "[Grierson & Bonamo (1979), Leclercqia complexa: Earliest Ligulate Lycopod](https://bsapubs.onlinelibrary.wiley.com/doi/10.1002/j.1537-2197.1979.tb06248.x).",
+      "confidence": "medium"
+    },
+    {
+      "name_id": "N004",
+      "name": "<Articulale>",
+      "category": "embryophyte_axis_indet",
+      "polysporangiophyte": "uncertain",
+      "crown_tracheophyte": "uncertain",
+      "basis": "The extract records a sterile axis; the informal label does not establish articulated sphenopsid morphology or vascular anatomy.",
+      "source": "none checked",
+      "confidence": "low"
+    },
+    {
+      "name_id": "N005",
+      "name": "<Lycopsids>",
+      "category": "lycophyte_line",
+      "polysporangiophyte": "yes",
+      "crown_tracheophyte": "yes",
+      "basis": "The identification explicitly denotes lycopsids; these flags classify that named group, conditional on the sterile-axis identification.",
+      "source": "[Claisse et al. (2025), Re-evaluating the phylogenetic relationships of zosterophylls](https://pmc.ncbi.nlm.nih.gov/articles/PMC13274996/).",
+      "confidence": "medium"
+    },
+    {
+      "name_id": "N006",
+      "name": "<Morphotype I>",
+      "category": "embryophyte_axis_indet",
+      "polysporangiophyte": "uncertain",
+      "crown_tracheophyte": "uncertain",
+      "basis": "An anonymous sterile-axis morphotype supplies no diagnostic reproductive or anatomical evidence for a vascular lineage.",
+      "source": "none checked",
+      "confidence": "low"
+    },
+    {
+      "name_id": "N007",
+      "name": "<Morphotype II>",
+      "category": "embryophyte_axis_indet",
+      "polysporangiophyte": "uncertain",
+      "crown_tracheophyte": "uncertain",
+      "basis": "The sterile-axis record and anonymous morphotype label do not establish sporangia, tracheids or a particular land-plant lineage.",
+      "source": "none checked",
+      "confidence": "low"
+    },
+    {
+      "name_id": "N008",
+      "name": "<Morphotype III>",
+      "category": "embryophyte_axis_indet",
+      "polysporangiophyte": "uncertain",
+      "crown_tracheophyte": "uncertain",
+      "basis": "Published material assigned to Tanner's morphotype III consists of axes radiating from a common attachment; diagnostic fertility and vascular anatomy remain unestablished.",
+      "source": "[Caruso & Tomescu (2012), Microconchid encrusters colonizing land plants](https://mihaibotany.online/pdf/Caruso%202012%20Lethaia.pdf), text and figure 1F–G.",
+      "confidence": "medium"
+    },
+    {
+      "name_id": "N009",
+      "name": "<Trimerophyte>",
+      "category": "euphyllophyte",
+      "polysporangiophyte": "yes",
+      "crown_tracheophyte": "yes",
+      "basis": "Trimerophytes are basal euphyllophytes. This classifies the informal group identification without independently validating the occurrence.",
+      "source": "[Cantino et al. (2007), Towards a phylogenetic nomenclature of Tracheophyta](https://donoghuelab.yale.edu/sites/default/files/165_cantino_taxon07.pdf), discussion of Pan-Euphyllophyta.",
+      "confidence": "medium"
+    },
+    {
+      "name_id": "N010",
+      "name": "<zosterophylloid>",
+      "category": "lycophyte_line",
+      "polysporangiophyte": "yes",
+      "crown_tracheophyte": "yes",
+      "basis": "The label denotes a zosterophyll; the Canadian zosterophylloid-axis material was subsequently associated with Bathurstia denticulata.",
+      "source": "[Kotyk (1998), Late Silurian and Early Devonian fossil plants of Bathurst Island](https://harvest.usask.ca/bitstreams/518d9179-7afe-4dd9-88b1-1833d37449e8/download), indexed primary-text passages.",
+      "confidence": "medium"
+    },
+    {
+      "name_id": "N011",
+      "name": "? Euomphalopteris sp.",
+      "category": "implausible_in_window",
+      "polysporangiophyte": "no",
+      "crown_tracheophyte": "no",
+      "basis": "Euomphalopteris is a marine gastropod name appearing in the original Alaskan faunal list. This is non-plant contamination of the extract, rather than an anomalously aged land plant.",
+      "source": "[USGS Professional Paper 87, Geology of the Hanagita–Bremner Region and southeastern Alaska contributions](https://pubs.usgs.gov/pp/0087/report.pdf), Kasaan Peninsula faunal list, p. 71, indexed passage.",
+      "confidence": "high"
+    },
+    {
+      "name_id": "N012",
+      "name": "? Pachytheca sp.",
+      "category": "nematophyte_or_problematic",
+      "polysporangiophyte": "no",
+      "crown_tracheophyte": "no",
+      "basis": "Pachytheca comprises small spheres with differentiated filamentous tissues and conjectural, commonly algal affinities; it is not an accepted embryophyte.",
+      "source": "[Gerrienne, Les Pachytheca de La Gileppe et de Nonceveux](https://popups.ulg.ac.be/0037-9395/index.php?id=1298&lang=en), published abstract.",
+      "confidence": "high"
+    },
+    {
+      "name_id": "N013",
+      "name": "? Protaxites loganii",
+      "category": "nematophyte_or_problematic",
+      "polysporangiophyte": "no",
+      "crown_tracheophyte": "no",
+      "basis": "Interpreted as a misspelling of Prototaxites loganii, a tubular, non-vascular problematic organism rather than a branched embryophyte sporophyte.",
+      "source": "[Retallack & Landing (2014), Affinities and architecture of Devonian trunks of Prototaxites loganii](https://pubmed.ncbi.nlm.nih.gov/24990121/), abstract.",
+      "confidence": "high"
+    },
+    {
+      "name_id": "N014",
+      "name": "? Protoarticulata indet.",
+      "category": "embryophyte_axis_indet",
+      "polysporangiophyte": "uncertain",
+      "crown_tracheophyte": "uncertain",
+      "basis": "Høeg's material consists of axes with irregular verticils and possible leaf bases, explicitly retained incertae sedis despite comparison with Hyenia.",
+      "source": "[Høeg (1942), The Downtonian and Devonian flora of Spitsbergen](https://brage.npolar.no/npolar-xmlui/bitstream/handle/11250/173926/Skrifter083.pdf?isAllowed=y&sequence=1), p. 88, indexed passage.",
+      "confidence": "medium"
+    },
+    {
+      "name_id": "N015",
+      "name": "? Psilophyte indet.",
+      "category": "embryophyte_axis_indet",
+      "polysporangiophyte": "uncertain",
+      "crown_tracheophyte": "uncertain",
+      "basis": "The historical specimen is a slender axis with two isotomous bifurcations, subsequently compared with Hostinella; diagnostic fertility is lacking.",
+      "source": "[Prestianni et al. (2012), Review of Palaeobotany and Palynology 179:44–55](https://orbi.uliege.be/bitstream/2268/137700/1/Prestiannietal2012.pdf), section 5.5.2.",
+      "confidence": "medium"
+    },
+    {
+      "name_id": "N016",
+      "name": "Aarabia brevicaulis n. gen. n. sp.",
+      "category": "euphyllophyte",
+      "polysporangiophyte": "yes",
+      "crown_tracheophyte": "yes",
+      "basis": "Pseudomonopodial shoots bear differentiated lateral branching systems and elongate terminal sporangia; the published analysis associates Aarabia with basal euphyllophytes.",
+      "source": "[Meyer-Berthaud & Gerrienne (2001), Aarabia, a new Early Devonian vascular plant from Africa](https://www.sciencedirect.com/science/article/abs/pii/S003466670100063X), abstract and conclusion.",
+      "confidence": "medium"
+    },
+    {
+      "name_id": "N017",
+      "name": "Aberlemnia sp.",
+      "category": "lycophyte_line",
+      "polysporangiophyte": "yes",
+      "crown_tracheophyte": "yes",
+      "basis": "Aberlemnia has dichotomous axes with terminal, bivalved sporangia and is interpreted as a basal member of Lycophytina.",
+      "source": "[Libertín, Kvaček & Bek (2024), The genus Aberlemnia and its Silurian–Devonian fossil record](https://www.sciencedirect.com/science/article/abs/pii/S0034666723001860), abstract and highlights.",
+      "confidence": "medium"
+    },
+    {
+      "name_id": "N018",
+      "name": "Actinophyllum",
+      "category": "uncertain",
+      "polysporangiophyte": "uncertain",
+      "crown_tracheophyte": "uncertain",
+      "basis": "The historical fossil was compared with an alga, but the consulted geological account retains uncertain affinity; secure embryophyte characters are not established.",
+      "source": "[Cleal & Thomas, Palaeozoic Palaeobotany of Great Britain, Silurian chapter](https://data.jncc.gov.uk/data/a2ed7572-87e2-40b9-93cf-2f3af82d8797/gcr-v9-palaeozoic-palaeobotany-of-great-britain-c3.pdf), Actinophyllum discussion.",
+      "confidence": "medium"
+    },
+    {
+      "name_id": "N019",
+      "name": "Actinopodium nathorstii",
+      "category": "euphyllophyte",
+      "polysporangiophyte": "yes",
+      "crown_tracheophyte": "yes",
+      "basis": "Permineralised axes have a stellate vascular system and secondary xylem; Actinopodium is included among archaeopteridalean progymnosperms.",
+      "source": "[Cornet et al. (2012), A Middle Devonian Callixylon from Ronquières, Belgium](https://orbi.uliege.be/bitstream/2268/129376/1/Cornet%20et%20al.,%202012..pdf), introduction.",
+      "confidence": "medium"
+    },
+    {
+      "name_id": "N020",
+      "name": "Anaeurophyton germanicum",
+      "category": "euphyllophyte",
+      "polysporangiophyte": "yes",
+      "crown_tracheophyte": "yes",
+      "basis": "Interpreted as a spelling error for Aneurophyton germanicum, an aneurophytalean progymnosperm with complex branching systems and woody axes.",
+      "source": "[Krings (2024), Branch system of a progymnosperm, Bavarian State Collection](https://bspg.snsb.de/oktober-2024-xxx/?lang=en).",
+      "confidence": "medium"
+    },
+    {
+      "name_id": "N021",
+      "name": "Anapaulia moodyi",
+      "category": "euphyllophyte",
+      "polysporangiophyte": "yes",
+      "crown_tracheophyte": "yes",
+      "basis": "Whorled branching systems and dichotomising appendages support the published interpretation as a probable iridopteridalean.",
+      "source": "[Berry & Edwards (1996), Anapaulia moodyi: a probable iridopteridalean compression fossil](https://orca.cardiff.ac.uk/id/eprint/10072/), abstract.",
+      "confidence": "high"
+    },
+    {
+      "name_id": "N022",
+      "name": "Aneurophytales",
+      "category": "euphyllophyte",
+      "polysporangiophyte": "yes",
+      "crown_tracheophyte": "yes",
+      "basis": "Aneurophytales are woody, spore-producing progymnosperms on the euphyllophyte lineage.",
+      "source": "[Krings (2024), Branch system of a progymnosperm](https://bspg.snsb.de/oktober-2024-xxx/?lang=en).",
+      "confidence": "high"
+    },
+    {
+      "name_id": "N023",
+      "name": "Aneurophyton germanicum",
+      "category": "euphyllophyte",
+      "polysporangiophyte": "yes",
+      "crown_tracheophyte": "yes",
+      "basis": "Aneurophyton germanicum is an aneurophytalean progymnosperm with spirally arranged, repeatedly divided branching systems.",
+      "source": "[Krings (2024), Branch system of a progymnosperm](https://bspg.snsb.de/oktober-2024-xxx/?lang=en).",
+      "confidence": "high"
+    },
+    {
+      "name_id": "N024",
+      "name": "Aneurophyton hallii",
+      "category": "euphyllophyte",
+      "polysporangiophyte": "yes",
+      "crown_tracheophyte": "yes",
+      "basis": "Material historically assigned this name includes the woody aneurophytalean subsequently revised as Triloboxylon arnoldii; species-level synonymy requires care.",
+      "source": "[Stein & Beck (1983), Triloboxylon arnoldii from the Middle Devonian of Western New York](https://deepblue.lib.umich.edu/bitstream/2027.42/48520/2/ID372.pdf), indexed abstract and synonymy.",
+      "confidence": "medium"
+    },
+    {
+      "name_id": "N025",
+      "name": "Angarolaminariopsis zinovae",
+      "category": "alga",
+      "polysporangiophyte": "no",
+      "crown_tracheophyte": "no",
+      "basis": "The consulted account records its provisional assignment to Laminariales; this supports an algal interpretation without establishing that it was a true kelp.",
+      "source": "[Zerov (1972), Essay on the phylogeny of non-vascular plants](https://ru.djvu.online/file/HkY3t7gfb3lE0), indexed digitised text discussing Ananiev's material.",
+      "confidence": "medium"
+    },
+    {
+      "name_id": "N026",
+      "name": "Anisophyton cf. gothanii",
+      "category": "lycophyte_line",
+      "polysporangiophyte": "yes",
+      "crown_tracheophyte": "yes",
+      "basis": "Anisophyton is placed within the sawdoniaceous zosterophylls; the species comparison remains provisional.",
+      "source": "[Claisse et al. (2025)](https://pmc.ncbi.nlm.nih.gov/articles/PMC13274996/), phylogeny and illustrated Anisophyton material.",
+      "confidence": "medium"
+    },
+    {
+      "name_id": "N027",
+      "name": "Aphyllopteris",
+      "category": "embryophyte_axis_indet",
+      "polysporangiophyte": "uncertain",
+      "crown_tracheophyte": "uncertain",
+      "basis": "Aphyllopteris is a form-genus for incomplete leafless branching axes; its architecture alone does not establish a particular vascular lineage.",
+      "source": "[Høeg (1952), Psilophytites, a new form genus of Devonian plants](https://journals.sagepub.com/doi/pdf/10.54991/jop.1952.409), indexed discussion of Aphyllopteris.",
+      "confidence": "medium"
+    },
+    {
+      "name_id": "N028",
+      "name": "Archaeosigillaria",
+      "category": "lycophyte_line",
+      "polysporangiophyte": "yes",
+      "crown_tracheophyte": "yes",
+      "basis": "Archaeosigillaria is a lycopsid genus, although revision has reassigned some historically included species.",
+      "source": "[Berry & Edwards (1997), A new species of Gilboaphyton, with a revision of Archaeosigillaria](https://www.sciencedirect.com/science/article/pii/S0034666796000152).",
+      "confidence": "high"
+    },
+    {
+      "name_id": "N029",
+      "name": "Asterocalamites",
+      "category": "implausible_in_window",
+      "polysporangiophyte": "yes",
+      "crown_tracheophyte": "yes",
+      "basis": "This archaeocalamitalean sphenopsid has a documented range beginning in the Late Devonian; the Pragian identification requires correction.",
+      "source": "[Newfoundland Geological Survey, Current Research (1999), Boyce contribution](https://www.gov.nl.ca/em/files/mines-geoscience-publications-currentresearch-1999-boyce.pdf), indexed Asterocalamites/Archaeocalamites discussion.",
+      "confidence": "high"
+    },
+    {
+      "name_id": "N030",
+      "name": "Asteroxylon",
+      "category": "lycophyte_line",
+      "polysporangiophyte": "yes",
+      "crown_tracheophyte": "yes",
+      "basis": "Anatomically demonstrated drepanophycalean lycopsid with leafy shoots and differentiated rooting systems.",
+      "source": "[Hetherington et al. (2021), Asteroxylon reconstruction and rooting-system study](https://elifesciences.org/articles/69447).",
+      "confidence": "high"
+    },
+    {
+      "name_id": "N031",
+      "name": "Baragwanathia",
+      "category": "lycophyte_line",
+      "polysporangiophyte": "yes",
+      "crown_tracheophyte": "yes",
+      "basis": "Microphyllous shoots and vascular anatomy establish lycopsid affinity; disputed earliest occurrence ages do not alter this placement.",
+      "source": "[Selden & Edwards, Colonisation of the land](https://www.paulselden.net/uploads/7/5/3/2/7532217/colonisation.pdf), Baragwanathia discussion.",
+      "confidence": "high"
+    },
+    {
+      "name_id": "N032",
+      "name": "Baragwanathia longifolia",
+      "category": "lycophyte_line",
+      "polysporangiophyte": "yes",
+      "crown_tracheophyte": "yes",
+      "basis": "Its microphyllous morphology and anatomy support lycopsid placement; the debated dating of particular Australian records is a separate issue.",
+      "source": "[Selden & Edwards, Colonisation of the land](https://www.paulselden.net/uploads/7/5/3/2/7532217/colonisation.pdf).",
+      "confidence": "high"
+    },
+    {
+      "name_id": "N033",
+      "name": "Baragwanthia longifolia",
+      "category": "lycophyte_line",
+      "polysporangiophyte": "yes",
+      "crown_tracheophyte": "yes",
+      "basis": "The Australian context identifies this as a spelling variant of Baragwanathia longifolia, a microphyllous lycopsid.",
+      "source": "[Selden & Edwards, Colonisation of the land](https://www.paulselden.net/uploads/7/5/3/2/7532217/colonisation.pdf).",
+      "confidence": "medium"
+    },
+    {
+      "name_id": "N034",
+      "name": "Barinophyton",
+      "category": "lycophyte_line",
+      "polysporangiophyte": "yes",
+      "crown_tracheophyte": "yes",
+      "basis": "Recent phylogenetic analyses place barinophytes within Lycophytina, among the zosterophyll grade.",
+      "source": "[Claisse et al. (2025)](https://pmc.ncbi.nlm.nih.gov/articles/PMC13274996/).",
+      "confidence": "high"
+    },
+    {
+      "name_id": "N035",
+      "name": "Barsassia ornata",
+      "category": "lycophyte_line",
+      "polysporangiophyte": "yes",
+      "crown_tracheophyte": "yes",
+      "basis": "Modern revision identifies a herbaceous lycopsid with imbricate leaves and vascular anatomy, superseding the legacy psilophyte grouping.",
+      "source": "[Liu et al. (2021), Barsassia morphology and nomenclatural revision](https://pmc.ncbi.nlm.nih.gov/articles/PMC8703484/).",
+      "confidence": "high"
+    },
+    {
+      "name_id": "N036",
+      "name": "Bathurstia cf. denticulata",
+      "category": "lycophyte_line",
+      "polysporangiophyte": "yes",
+      "crown_tracheophyte": "yes",
+      "basis": "Bathurstia is a zosterophyll within Lycophytina; the species identification is explicitly tentative.",
+      "source": "[Claisse et al. (2025)](https://pmc.ncbi.nlm.nih.gov/articles/PMC13274996/).",
+      "confidence": "medium"
+    },
+    {
+      "name_id": "N037",
+      "name": "Bathurstia denticulata n. gen. n. sp.",
+      "category": "lycophyte_line",
+      "polysporangiophyte": "yes",
+      "crown_tracheophyte": "yes",
+      "basis": "Bathurstia is recovered within Lycophytina, close to the barinophytes.",
+      "source": "[Claisse et al. (2025)](https://pmc.ncbi.nlm.nih.gov/articles/PMC13274996/).",
+      "confidence": "high"
+    },
+    {
+      "name_id": "N038",
+      "name": "Bathurstia sp.",
+      "category": "lycophyte_line",
+      "polysporangiophyte": "yes",
+      "crown_tracheophyte": "yes",
+      "basis": "The genus denotes a zosterophyll; its identification from this axis remains conditional.",
+      "source": "[Claisse et al. (2025)](https://pmc.ncbi.nlm.nih.gov/articles/PMC13274996/).",
+      "confidence": "medium"
+    },
+    {
+      "name_id": "N039",
+      "name": "Bergeria",
+      "category": "lycophyte_line",
+      "polysporangiophyte": "yes",
+      "crown_tracheophyte": "yes",
+      "basis": "The identified B. mimerensis material consists of lepidophytic stems with leaf cushions; its precise relationship to other Devonian lycopsids remains unresolved.",
+      "source": "[Høeg (1942), The Downtonian and Devonian flora of Spitsbergen](https://brage.npolar.no/npolar-xmlui/bitstream/handle/11250/173926/Skrifter083.pdf?isAllowed=y&sequence=1), original-description excerpts.",
+      "confidence": "medium"
+    },
+    {
+      "name_id": "N040",
+      "name": "Bitelaria dubjanskii",
+      "category": "tracheophyte_indet",
+      "polysporangiophyte": "yes",
+      "crown_tracheophyte": "uncertain",
+      "basis": "Canadian material was reinterpreted as a vascular land plant rather than an alga, but its position relative to the lycophyte–euphyllophyte split remains unresolved.",
+      "source": "[Johnson & Gensel (1992), Bitelaria study](https://eurekamag.com/research/008/071/008071253.php); [published abstract reproduced](https://documentsdelivered.com/source/018/452/018452481.php).",
+      "confidence": "medium"
+    },
+    {
+      "name_id": "N041",
+      "name": "Blasaria",
+      "category": "lycophyte_line",
+      "polysporangiophyte": "yes",
+      "crown_tracheophyte": "yes",
+      "basis": "Blasaria was founded on lycopod leaf-base impressions; the named genus supports lycophyte affinity, with incomplete evidence for every included species.",
+      "source": "[USGS generic index, Blasaria entry](https://pubs.usgs.gov/bul/1013/report.pdf); [Liu et al. (2021), comparison with Barsassia](https://pmc.ncbi.nlm.nih.gov/articles/PMC8703484/).",
+      "confidence": "medium"
+    },
+    {
+      "name_id": "N042",
+      "name": "Bowerophylloides mendozaensis",
+      "category": "embryophyte_axis_indet",
+      "polysporangiophyte": "uncertain",
+      "crown_tracheophyte": "uncertain",
+      "basis": "The original account describes sterile leafy axes that cannot be unequivocally assigned to established taxa; reproductive and diagnostic vascular characters are lacking.",
+      "source": "[Edwards et al. (2001), Bowerophylloides original account](https://orca.cardiff.ac.uk/id/eprint/10065/), abstract.",
+      "confidence": "medium"
+    },
+    {
+      "name_id": "N043",
+      "name": "Caia langii n. gen. n. sp.",
+      "category": "rhyniophytoid_cooksonioid",
+      "polysporangiophyte": "yes",
+      "crown_tracheophyte": "uncertain",
+      "basis": "Dichotomous naked axes terminate in elongate sporangia containing trilete spores; comparison with Horneophyton supports rhyniophytoid organisation.",
+      "source": "[Fanning et al. (1990), Caia original description](https://orca.cardiff.ac.uk/id/eprint/10177/), abstract.",
+      "confidence": "high"
+    },
+    {
+      "name_id": "N044",
+      "name": "Calamophyton",
+      "category": "euphyllophyte",
+      "polysporangiophyte": "yes",
+      "crown_tracheophyte": "yes",
+      "basis": "Calamophyton is a pseudosporochnalean cladoxylopsid reconstructed from connected trunks, branching crowns and roots.",
+      "source": "[Giesen & Berry (2013), Calamophyton whole-plant reconstruction](https://orca.cardiff.ac.uk/id/eprint/47293/), abstract.",
+      "confidence": "high"
+    },
+    {
+      "name_id": "N045",
+      "name": "Calamophyton primaevum",
+      "category": "euphyllophyte",
+      "polysporangiophyte": "yes",
+      "crown_tracheophyte": "yes",
+      "basis": "This genuine Middle Devonian species is a cladoxylopsid with organically connected trunk, crown and rooting structures.",
+      "source": "[Giesen & Berry (2013), Calamophyton whole-plant reconstruction](https://orca.cardiff.ac.uk/id/eprint/47293/).",
+      "confidence": "high"
+    },
+    {
+      "name_id": "N046",
+      "name": "Callixylon",
+      "category": "euphyllophyte",
+      "polysporangiophyte": "yes",
+      "crown_tracheophyte": "yes",
+      "basis": "Callixylon denotes archaeopteridalean progymnosperm wood, characterised by grouped tracheid pitting. PBDB's cordaitalean placement is inappropriate.",
+      "source": "[Cornet et al. (2012), A Middle Devonian Callixylon from Ronquières, Belgium](https://orbi.uliege.be/bitstream/2268/129376/1/Cornet%20et%20al.,%202012..pdf).",
+      "confidence": "high"
+    },
+    {
+      "name_id": "N047",
+      "name": "Catenalis digitata",
+      "category": "uncertain",
+      "polysporangiophyte": "uncertain",
+      "crown_tracheophyte": "uncertain",
+      "basis": "The original account describes branched axes with putative sporangia but cannot establish typical tracheids and entertains both algal and vascular-plant interpretations.",
+      "source": "[Hao & Beck (1991), Catenalis digitata](https://www.researchgate.net/publication/237164533_Catenalis_digitata_gen_et_spnov_a_plant_from_the_Lower_Devonian_Siegenian_of_Yunnan_China), reproduced abstract.",
+      "confidence": "medium"
+    },
+    {
+      "name_id": "N048",
+      "name": "Caulopteris",
+      "category": "euphyllophyte",
+      "polysporangiophyte": "yes",
+      "crown_tracheophyte": "yes",
+      "basis": "The identified Devonian species were described as fern-like stems with petiole or leaf-scar characters; broad euphyllophyte affinity is more defensible than a specific marattialean assignment.",
+      "source": "[Dawson (1888), The Geological History of Plants](https://readingroo.ms/5/1/0/2/51021/51021-h/51021-h.htm), descriptions of Devonian Caulopteris.",
+      "confidence": "medium"
+    },
+    {
+      "name_id": "N049",
+      "name": "Cephalopteris",
+      "category": "euphyllophyte",
+      "polysporangiophyte": "yes",
+      "crown_tracheophyte": "yes",
+      "basis": "The actual identification is C. praecox, subsequently Protocephalopteris praecox, a Devonian fern-like plant; it should not inherit the old genus's seed-fern assignment.",
+      "source": "[Xue & Basinger (2016), Melvillipteris quadriseriata](https://www.researchgate.net/publication/283145584_Melvillipteris_quadriseriata_gen_et_sp_nov_a_new_plant_from_the_Upper_Devonian_Famennian_of_Arctic_Canada), published comparison.",
+      "confidence": "medium"
+    },
+    {
+      "name_id": "N050",
+      "name": "Chaleuria cirrosa",
+      "category": "euphyllophyte",
+      "polysporangiophyte": "yes",
+      "crown_tracheophyte": "yes",
+      "basis": "Monopodial axes bear dichotomous ultimate branches and paired terminal sporangia; the original authors suggested primitive progymnosperm affinities.",
+      "source": "[Andrews, Gensel & Forbes (1974), An apparently heterosporous plant from the Middle Devonian of New Brunswick](https://palass.org/sites/default/files/media/publications/palaeontology/volume_17/vol17_part2_pp387-408.pdf).",
+      "confidence": "medium"
+    },
+    {
+      "name_id": "N051",
+      "name": "Chauvinia scharyana",
+      "category": "lycophyte_line",
+      "polysporangiophyte": "yes",
+      "crown_tracheophyte": "yes",
+      "basis": "This historical fossil name denotes Protolepidodendron scharianum material with lepidodendroid shoots and narrow, sometimes divided leaves, rather than the living algal homonym.",
+      "source": "[USGS generic index, Chauvinia entry](https://pubs.usgs.gov/bul/1300/report.pdf); [Jahn (1903), description and synonymy](https://opac.geologie.ac.at/ais312/dokumente/Verh_kk_geol_RA_1903_komplett.pdf), indexed passages.",
+      "confidence": "medium"
+    },
+    {
+      "name_id": "N052",
+      "name": "Ciguelia juvenile n. gen. n. sp.",
+      "category": "embryophyte_axis_indet",
+      "polysporangiophyte": "uncertain",
+      "crown_tracheophyte": "uncertain",
+      "basis": "The original abstract groups Ciguelia among sterile, simply dichotomising axes; diagnostic fertility and vascular anatomy are not established in the consulted material.",
+      "source": "[Mussa et al. (1996), original abstract reproduced on this literature page](https://www.researchgate.net/publication/326217684_EARLY_DEVONIAN_TAPHOFLORA_RECORD_IN_PONTA_GROSSA_ARCH_PARANA_BASIN_SOUTHERN_BRAZIL_AND_ITS_PALAEOGEOGRAPHIC_IMPLICATIONS_REGISTRO_DA_TAFOFLORA_DEVONIANA_NO_ARCO_DE_PONTA_GROSSA_BACIA_DO_PARANA_SUL_DO_).",
+      "confidence": "low"
+    },
+    {
+      "name_id": "N053",
+      "name": "Cladophlebis",
+      "category": "implausible_in_window",
+      "polysporangiophyte": "yes",
+      "crown_tracheophyte": "yes",
+      "basis": "Cladophlebis is a younger fern-foliage morphogenus, particularly characteristic of Mesozoic floras; the enormous collection-age interval does not establish an early Palaeozoic occurrence.",
+      "source": "[Jud et al. (2013), discussion of Cladophlebis foliage](https://bsapubs.onlinelibrary.wiley.com/doi/full/10.3732/ajb.1200637).",
+      "confidence": "high"
+    },
+    {
+      "name_id": "N054",
+      "name": "Cladoxylon",
+      "category": "euphyllophyte",
+      "polysporangiophyte": "yes",
+      "crown_tracheophyte": "yes",
+      "basis": "The identified C. scoparium is a genuine Devonian cladoxylopsid, associated in modern reconstruction with Calamophyton primaevum.",
+      "source": "[Giesen & Berry (2013), Calamophyton reconstruction and synonymy](https://orca.cardiff.ac.uk/id/eprint/47293/).",
+      "confidence": "high"
+    },
+    {
+      "name_id": "N055",
+      "name": "Cladoxylopsida",
+      "category": "euphyllophyte",
+      "polysporangiophyte": "yes",
+      "crown_tracheophyte": "yes",
+      "basis": "Cladoxylopsids are euphyllophytes, despite continuing uncertainty over their relationships within that lineage.",
+      "source": "[Durieux et al. (2026), Systematics and evolution of cladoxylopsids](https://www.cambridge.org/core/journals/journal-of-paleontology/article/systematics-and-evolution-of-cladoxylopsids-a-consequential-yet-underappreciated-tracheophyte-group-with-a-deep-fossil-history/BA2D34F54ABDA687AFA0672771F708E5).",
+      "confidence": "high"
+    },
+    {
+      "name_id": "N056",
+      "name": "Coactilum",
+      "category": "alga",
+      "polysporangiophyte": "no",
+      "crown_tracheophyte": "no",
+      "basis": "A calcimicrobe traditionally treated as a schizophyte alga and referred to Rothpletzella; precise microbial affinity is uncertain, but embryophyte affinity is unsupported.",
+      "source": "[Liu et al. (2016), Tarim calcimicrobe systematic account](https://robertriding.com/pdf/liu-etal-2016-tarim.pdf).",
+      "confidence": "medium"
+    },
+    {
+      "name_id": "N057",
+      "name": "Codonophycus austinii",
+      "category": "implausible_in_window",
+      "polysporangiophyte": "no",
+      "crown_tracheophyte": "no",
+      "basis": "The taxon is an alga described from the Mississippian Madison Formation; the broad PBDB interval supplies no evidence of a Devonian occurrence.",
+      "source": "[USGS generic index, Codonophycus entry, p. 56](https://digital.library.unt.edu/ark%3A/67531/metadc1114957/m1/62/), indexed entry.",
+      "confidence": "high"
+    },
+    {
+      "name_id": "N058",
+      "name": "Colpodexylon",
+      "category": "lycophyte_line",
+      "polysporangiophyte": "yes",
+      "crown_tracheophyte": "yes",
+      "basis": "A protolepidodendralean lycopsid with characteristically divided microphylls.",
+      "source": "[Edwards & Benedetto (1985), Devonian lycophyte systematic account](https://palass.org/sites/default/files/media/publications/palaeontology/volume_28/vol28_part3_pp599-618.pdf).",
+      "confidence": "high"
+    },
+    {
+      "name_id": "N059",
+      "name": "Colpodexylon deatsii",
+      "category": "lycophyte_line",
+      "polysporangiophyte": "yes",
+      "crown_tracheophyte": "yes",
+      "basis": "The lycopsid type species has lobed xylem and trifurcate leaves. Its Frasnian type record warrants checking this particular Middle Devonian identification.",
+      "source": "[Edwards & Benedetto (1985)](https://palass.org/sites/default/files/media/publications/palaeontology/volume_28/vol28_part3_pp599-618.pdf), Colpodexylon comparison.",
+      "confidence": "high"
+    },
+    {
+      "name_id": "N060",
+      "name": "Compsocradus laevigatus",
+      "category": "euphyllophyte",
+      "polysporangiophyte": "yes",
+      "crown_tracheophyte": "yes",
+      "basis": "An anatomically documented iridopteridalean with a six-ribbed mesarch vascular system and complex lateral branching.",
+      "source": "[Berry & Stein (2000), Compsocradus laevigatus](https://www.journals.uchicago.edu/doi/abs/10.1086/314295), abstract.",
+      "confidence": "high"
+    },
+    {
+      "name_id": "N061",
+      "name": "Conchulophyton quadrosii n. gen. n. sp.",
+      "category": "uncertain",
+      "polysporangiophyte": "uncertain",
+      "crown_tracheophyte": "uncertain",
+      "basis": "Bibliographic metadata confirms the name, but no diagnostic description was recovered; its Furnas provenance alone cannot establish biological affinity.",
+      "source": "[Mussa et al. (2002), New taxa from the Furnas Formation: institutional catalogue](https://www.infraestruturameioambiente.sp.gov.br/institutodebotanica/2002/01/new-taxa-from-the-furnas-formation-parana-basin-brasil-an-approach-and-revalidation-of-names/), metadata only.",
+      "confidence": "low"
+    },
+    {
+      "name_id": "N062",
+      "name": "Cooksonia",
+      "category": "rhyniophytoid_cooksonioid",
+      "polysporangiophyte": "yes",
+      "crown_tracheophyte": "uncertain",
+      "basis": "Branched sporophytes bear terminal sporangia; heterogeneous historical usage and unresolved phylogenetic placement prevent a secure crown-tracheophyte assignment.",
+      "source": "Gonez & Gerrienne (2010), A new definition and a lectotypification of the genus Cooksonia Lang 1937, International Journal of Plant Sciences 171:199–215; full local PDF consulted.",
+      "confidence": "high"
+    },
+    {
+      "name_id": "N063",
+      "name": "Cooksonia hemisphaerica",
+      "category": "rhyniophytoid_cooksonioid",
+      "polysporangiophyte": "yes",
+      "crown_tracheophyte": "uncertain",
+      "basis": "Branched axes terminate in hemispherical sporangia; poor preservation leaves its precise systematic position unresolved.",
+      "source": "Gonez & Gerrienne (2010), A new definition and a lectotypification of the genus Cooksonia Lang 1937, International Journal of Plant Sciences 171:199–215; full local PDF consulted.",
+      "confidence": "high"
+    },
+    {
+      "name_id": "N064",
+      "name": "Cooksonia pertoni",
+      "category": "rhyniophytoid_cooksonioid",
+      "polysporangiophyte": "yes",
+      "crown_tracheophyte": "uncertain",
+      "basis": "Tracheids establish vascular status, but published phylogenetic analyses do not securely settle placement relative to the crown-tracheophyte node.",
+      "source": "Gonez & Gerrienne (2010), A new definition and a lectotypification of the genus Cooksonia Lang 1937, International Journal of Plant Sciences 171:199–215; full local PDF consulted.",
+      "confidence": "high"
+    },
+    {
+      "name_id": "N065",
+      "name": "Crenaticaulis",
+      "category": "lycophyte_line",
+      "polysporangiophyte": "yes",
+      "crown_tracheophyte": "yes",
+      "basis": "A sawdoniaceous zosterophyll within Lycophytina.",
+      "source": "[Claisse et al. (2025)](https://pmc.ncbi.nlm.nih.gov/articles/PMC13274996/).",
+      "confidence": "high"
+    },
+    {
+      "name_id": "N066",
+      "name": "Cryptoxylon forfarense",
+      "category": "nematophyte_or_problematic",
+      "polysporangiophyte": "no",
+      "crown_tracheophyte": "no",
+      "basis": "Kidston and Lang transferred this fossil to Nematophyton; its pseudoparenchymatous organisation does not represent vascular wood.",
+      "source": "[Kidston & Lang (1924), Notes on fossil plants from the Old Red Sandstone of Scotland: Nematophyton forfarense](https://www.cambridge.org/core/journals/earth-and-environmental-science-transactions-of-royal-society-of-edinburgh/article/abs/xxixnotes-on-fossil-plants-from-the-old-red-sandstone-of-scotland-ii-nematophyton-forfarense-kidston-sp-iii-on-two-species-of-pachytheca-p-media-and-p-fasciculata-based-on-the-characters-of-the-algal-filaments/70862AE7D7A9C1D5A6F6B08DB13A7D7F), extract.",
+      "confidence": "high"
+    },
+    {
+      "name_id": "N067",
+      "name": "Dadoxylon",
+      "category": "euphyllophyte",
+      "polysporangiophyte": "yes",
+      "crown_tracheophyte": "yes",
+      "basis": "The identified D. cf. halli denotes secondary wood consistent with a lignophyte; its precise whole-plant association remains unproved.",
+      "source": "[Knowlton, Revision of Araucarioxylon](https://repository.si.edu/bitstreams/66b52b0c-1ca2-460b-a6b4-f8c86a6da839/download), discussion of Dadoxylon halli.",
+      "confidence": "medium"
+    },
+    {
+      "name_id": "N068",
+      "name": "Dalejophyton nemejci",
+      "category": "embryophyte_axis_indet",
+      "polysporangiophyte": "uncertain",
+      "crown_tracheophyte": "uncertain",
+      "basis": "A later assessment interprets the supposed sporangia as probably unflattened coiled sterile tips; anatomy and epidermal characters remain unknown.",
+      "source": "[Broushkin & Gordenko, Istchenkophyton filiciforme](https://www.researchgate.net/publication/225638287_Istchenkophyton_filiciforme_gen_et_sp_nov_a_New_Small_Vascular_Plant_with_Thick_Cuticle_from_the_Devonian_of_Voronezh_Region_European_Russia), published comparison excerpt.",
+      "confidence": "medium"
+    },
+    {
+      "name_id": "N069",
+      "name": "Dawsonites",
+      "category": "euphyllophyte",
+      "polysporangiophyte": "yes",
+      "crown_tracheophyte": "yes",
+      "basis": "A form-genus for isolated fertile branching systems resembling Psilophyton and other basal euphyllophytes, rather than a securely reconstructed natural genus.",
+      "source": "[Revisiting the Rebreuve plant assemblage from the Lower Devonian of Artois](https://orbi.uliege.be/bitstream/2268/302489/1/Revisiting%20the%20Rebreuve%20plant%20assemblage%20from%20the%20Lower%20Devonian%20of%20Artois%20northern%20France.pdf), Dawsonites discussion.",
+      "confidence": "medium"
+    },
+    {
+      "name_id": "N070",
+      "name": "Dawsonites arcuatus",
+      "category": "euphyllophyte",
+      "polysporangiophyte": "yes",
+      "crown_tracheophyte": "yes",
+      "basis": "Clusters of pendulous fusiform sporangia are interpreted as trimerophyte fertile organs; some better-characterised material has been reassigned to Psilophyton.",
+      "source": "[Revisiting the Rebreuve plant assemblage from the Lower Devonian of Artois](https://orbi.uliege.be/bitstream/2268/302489/1/Revisiting%20the%20Rebreuve%20plant%20assemblage%20from%20the%20Lower%20Devonian%20of%20Artois%20northern%20France.pdf).",
+      "confidence": "medium"
+    },
+    {
+      "name_id": "N071",
+      "name": "Distichophytum",
+      "category": "lycophyte_line",
+      "polysporangiophyte": "yes",
+      "crown_tracheophyte": "yes",
+      "basis": "A zosterophyll recovered within Lycophytina in recent analyses.",
+      "source": "[Claisse et al. (2025)](https://pmc.ncbi.nlm.nih.gov/articles/PMC13274996/).",
+      "confidence": "high"
+    },
+    {
+      "name_id": "N072",
+      "name": "Drepanophycus",
+      "category": "lycophyte_line",
+      "polysporangiophyte": "yes",
+      "crown_tracheophyte": "yes",
+      "basis": "A microphyllous lycopsid, despite its legacy PBDB psilophyte grouping.",
+      "source": "[Claisse et al. (2025)](https://pmc.ncbi.nlm.nih.gov/articles/PMC13274996/).",
+      "confidence": "high"
+    },
+    {
+      "name_id": "N073",
+      "name": "Drepanophycus gaspianus",
+      "category": "lycophyte_line",
+      "polysporangiophyte": "yes",
+      "crown_tracheophyte": "yes",
+      "basis": "A microphyllous lycophyte; predominantly vegetative material and poorly known fertility complicate discrimination from related genera.",
+      "source": "[Li & Edwards (1997), published abstract](https://pubmed.ncbi.nlm.nih.gov/21708551/); [Kotyk (1998), Bathurst Island fossil plants](https://harvest.usask.ca/bitstream/handle/10388/12414/Kotyk_Michelle_Elizabeth_Ann_1998_sec.pdf?isAllowed=y&sequence=1), pp. 63–64.",
+      "confidence": "medium"
+    },
+    {
+      "name_id": "N074",
+      "name": "Drepanophycus spinaeformis",
+      "category": "lycophyte_line",
+      "polysporangiophyte": "yes",
+      "crown_tracheophyte": "yes",
+      "basis": "An anatomically documented lycophyte with protostelic xylem and annular or helical tracheids.",
+      "source": "[The effect of pyrite on the tracheid structure of Drepanophycus spinaeformis (1981)](https://www.sciencedirect.com/science/article/pii/0034666781900063), abstract.",
+      "confidence": "high"
+    },
+    {
+      "name_id": "N075",
+      "name": "Dutoitea",
+      "category": "implausible_in_window",
+      "polysporangiophyte": "yes",
+      "crown_tracheophyte": "uncertain",
+      "basis": "The actual identification, D. maraisia, concerns Famennian material; modern revision rejects its rhyniophytoid attribution and compares its fertile appendages with Flabellopteris.",
+      "source": "[Gess & Prestianni, Flabellopteris lococannensis](https://orbi.uliege.be/bitstream/2268/302493/1/1-s2.0-S0034666721002098-main.pdf), section 7.",
+      "confidence": "medium"
+    },
+    {
+      "name_id": "N076",
+      "name": "Dutoitia",
+      "category": "polysporangiophyte_indet",
+      "polysporangiophyte": "yes",
+      "crown_tracheophyte": "uncertain",
+      "basis": "The identified D. alfreda was described as a branched plant with terminal sporangia, but its relationship to the rhyniophytoid type species and vascular lineages remains uncertain.",
+      "source": "[Plumstead (1967), original description of Dutoitia alfreda](https://wiredspace.wits.ac.za/bitstreams/9fdfc1a6-f6a5-4295-b5a8-da67d61127d0/download), indexed text and [plate I](https://wiredspace.wits.ac.za/bitstreams/938bc525-ad4f-4760-a2b2-ed82d61657d5/download).",
+      "confidence": "medium"
+    },
+    {
+      "name_id": "N077",
+      "name": "Dutoitia pulchra",
+      "category": "rhyniophytoid_cooksonioid",
+      "polysporangiophyte": "yes",
+      "crown_tracheophyte": "uncertain",
+      "basis": "The type species has rhyniophytoid organisation; modern reassessment places its locality in the probably Lochkovian Baviaanskloof Formation, contrary to the extract's broad younger interval.",
+      "source": "[Gess & Prestianni (2021), An early Devonian flora from the Baviaanskloof Formation](https://pmc.ncbi.nlm.nih.gov/articles/PMC8178408/).",
+      "confidence": "high"
+    },
+    {
+      "name_id": "N078",
+      "name": "Enigmophyton",
+      "category": "tracheophyte_indet",
+      "polysporangiophyte": "yes",
+      "crown_tracheophyte": "uncertain",
+      "basis": "A large fan-leaved vascular-plant morphotype of unresolved affinity; associated reproductive organs should not be transferred to it without organic connection.",
+      "source": "[Svalbard plants and sediments study (2021)](https://orca.cardiff.ac.uk/id/eprint/140269/1/JGS%20Accepted%20Svalbard%20Plants%20and%20Sediments%202021.pdf), table 2; [Bateman & DiMichele (1994)](https://repository.si.edu/bitstream/handle/10088/7107/paleo_1994_BatemanDiMichele_Heterospory_BiolRev_small.pdf), p. 381.",
+      "confidence": "medium"
+    },
+    {
+      "name_id": "N079",
+      "name": "Enigmophyton superbum",
+      "category": "tracheophyte_indet",
+      "polysporangiophyte": "yes",
+      "crown_tracheophyte": "uncertain",
+      "basis": "The foliage plant's precise affinity is unresolved; supposedly associated heterosporous fructifications lack organic connection and may belong to Barinophyton.",
+      "source": "[Bateman & DiMichele (1994), Heterospory: the most iterative key innovation in the evolutionary history of the plant kingdom](https://repository.si.edu/bitstream/handle/10088/7107/paleo_1994_BatemanDiMichele_Heterospory_BiolRev_small.pdf), p. 381.",
+      "confidence": "medium"
+    },
+    {
+      "name_id": "N080",
+      "name": "Eocooksonia",
+      "category": "rhyniophytoid_cooksonioid",
+      "polysporangiophyte": "yes",
+      "crown_tracheophyte": "uncertain",
+      "basis": "Revised material has branching systems terminating in sporangia with triangular emergences; this supports rhyniophytoid organisation rather than unquestioned inheritance of PBDB's zosterophyll placement.",
+      "source": "[Xue et al. (2015), New observations of the early land plant Eocooksonia from the Pridoli of Xinjiang](https://doi.org/10.1016/j.jseaes.2015.02.003), abstract consulted through the Peking University institutional index.",
+      "confidence": "medium"
+    }
+  ]
+}

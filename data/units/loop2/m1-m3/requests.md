@@ -1,4 +1,8 @@
-# Drafted data requests (not sent; Barry decides)
+# Drafted data requests (withdrawn; will not be sent)
+
+Barry, Claude chat, 1 November 2026: "Please don't send the existing requests on my behalf." The
+programme assumes no new data from original authors or specialists (`AGENTS.md`). The drafts are kept
+only as a record of which observation fields would change admission; a paper may cite that list.
 
 Each request names the material and the exact missing fields. No reply is a dependency of any result.
 

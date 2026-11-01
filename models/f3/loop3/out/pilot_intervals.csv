@@ -1,0 +1,43 @@
+category,reading,n_horizons,n_localities,oldest_max_ma,oldest_mid_ma,estimator,assumption,older_limit_ma,limit_q05,limit_q95,bounded,n_used_median
+B0,main,107,75,432.90,431.75,classical_to_Pridoli,uniform horizons to cut-off,433.08,431.94,434.18,True,31
+B0,main,107,75,432.90,431.75,classical_to_Lochkovian,uniform horizons to cut-off,433.22,432.09,434.26,True,43
+B0,main,107,75,432.90,431.75,classical_to_Pragian,uniform horizons to cut-off,433.10,432.02,434.15,True,52
+B0,main,107,75,432.90,431.75,classical_to_Emsian,uniform horizons to cut-off,432.93,431.89,433.96,True,105
+B0,main,107,75,432.90,431.75,constant,rate = land+marginal PBDB effort x constant abundance,434.54,434.49,435.00,True,107
+B0,main,107,75,432.90,431.75,logistic,rate = land+marginal PBDB effort x logistic abundance,452.57,451.69,456.62,True,107
+B0,main,107,75,432.90,431.75,bd,rate = land+marginal PBDB effort x bd abundance,434.54,434.49,435.00,True,107
+B0,inclusive,111,79,445.20,444.15,classical_to_Pridoli,uniform horizons to cut-off,446.59,445.45,447.47,True,34
+B0,inclusive,111,79,445.20,444.15,classical_to_Lochkovian,uniform horizons to cut-off,446.35,445.28,447.26,True,46
+B0,inclusive,111,79,445.20,444.15,classical_to_Pragian,uniform horizons to cut-off,446.13,445.05,447.03,True,56
+B0,inclusive,111,79,445.20,444.15,classical_to_Emsian,uniform horizons to cut-off,445.67,444.65,446.54,True,108
+B0,inclusive,111,79,445.20,444.15,constant,rate = land+marginal PBDB effort x constant abundance,446.45,446.43,446.47,True,111
+B0,inclusive,111,79,445.20,444.15,logistic,rate = land+marginal PBDB effort x logistic abundance,473.10,472.30,474.39,True,111
+B0,inclusive,111,79,445.20,444.15,bd,rate = land+marginal PBDB effort x bd abundance,446.68,446.59,446.78,True,111
+B1,main,101,70,432.90,431.75,classical_to_Pridoli,uniform horizons to cut-off,433.39,432.09,434.42,True,26
+B1,main,101,70,432.90,431.75,classical_to_Lochkovian,uniform horizons to cut-off,433.43,432.20,434.38,True,38
+B1,main,101,70,432.90,431.75,classical_to_Pragian,uniform horizons to cut-off,433.27,432.04,434.26,True,47
+B1,main,101,70,432.90,431.75,classical_to_Emsian,uniform horizons to cut-off,433.04,431.87,434.00,True,99
+B1,main,101,70,432.90,431.75,constant,rate = land+marginal PBDB effort x constant abundance,434.69,434.66,434.76,True,101
+B1,main,101,70,432.90,431.75,logistic,rate = land+marginal PBDB effort x logistic abundance,454.14,453.43,454.78,True,101
+B1,main,101,70,432.90,431.75,bd,rate = land+marginal PBDB effort x bd abundance,434.69,434.66,434.76,True,101
+B1,inclusive,105,74,445.20,444.15,classical_to_Pridoli,uniform horizons to cut-off,446.89,445.82,447.88,True,29
+B1,inclusive,105,74,445.20,444.15,classical_to_Lochkovian,uniform horizons to cut-off,446.51,445.48,447.51,True,42
+B1,inclusive,105,74,445.20,444.15,classical_to_Pragian,uniform horizons to cut-off,446.22,445.20,447.21,True,51
+B1,inclusive,105,74,445.20,444.15,classical_to_Emsian,uniform horizons to cut-off,445.69,444.69,446.61,True,103
+B1,inclusive,105,74,445.20,444.15,constant,rate = land+marginal PBDB effort x constant abundance,446.53,446.52,446.56,True,105
+B1,inclusive,105,74,445.20,444.15,logistic,rate = land+marginal PBDB effort x logistic abundance,475.49,474.98,476.32,True,105
+B1,inclusive,105,74,445.20,444.15,bd,rate = land+marginal PBDB effort x bd abundance,447.02,446.87,447.17,True,105
+B2,main,84,54,426.70,422.31,classical_to_Pridoli,uniform horizons to cut-off,425.57,423.45,427.73,True,14
+B2,main,84,54,426.70,422.31,classical_to_Lochkovian,uniform horizons to cut-off,426.07,424.09,428.12,True,22
+B2,main,84,54,426.70,422.31,classical_to_Pragian,uniform horizons to cut-off,425.84,423.88,427.78,True,32
+B2,main,84,54,426.70,422.31,classical_to_Emsian,uniform horizons to cut-off,425.56,423.78,427.41,True,81
+B2,main,84,54,426.70,422.31,constant,rate = land+marginal PBDB effort x constant abundance,427.73,426.79,428.44,True,84
+B2,main,84,54,426.70,422.31,logistic,rate = land+marginal PBDB effort x logistic abundance,438.02,436.42,439.89,True,84
+B2,main,84,54,426.70,422.31,bd,rate = land+marginal PBDB effort x bd abundance,427.74,426.79,428.46,True,84
+B2,inclusive,89,59,426.70,424.70,classical_to_Pridoli,uniform horizons to cut-off,426.79,424.94,427.94,True,18
+B2,inclusive,89,59,426.70,424.70,classical_to_Lochkovian,uniform horizons to cut-off,427.20,425.40,428.26,True,27
+B2,inclusive,89,59,426.70,424.70,classical_to_Pragian,uniform horizons to cut-off,427.02,425.32,428.04,True,37
+B2,inclusive,89,59,426.70,424.70,classical_to_Emsian,uniform horizons to cut-off,426.85,425.27,427.80,True,86
+B2,inclusive,89,59,426.70,424.70,constant,rate = land+marginal PBDB effort x constant abundance,428.31,427.60,428.35,True,89
+B2,inclusive,89,59,426.70,424.70,logistic,rate = land+marginal PBDB effort x logistic abundance,437.33,436.00,438.54,True,89
+B2,inclusive,89,59,426.70,424.70,bd,rate = land+marginal PBDB effort x bd abundance,428.31,427.60,428.35,True,89

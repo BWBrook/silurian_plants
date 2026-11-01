@@ -1,0 +1,176 @@
+horizon_id,reading,source,max_ma,min_ma,b0,b1,b2,cc,locality,names,stage_oldest,stage_youngest
+pbdb:10614,all,pbdb,399.5,387.95,True,True,True,US,"US|trout valley|46.1,-68.6",Drepanophycus,Emsian,
+pbdb:10617,all,pbdb,399.5,387.95,True,True,True,US,"US|trout valley|46.1,-68.6",Psilophyton,Emsian,
+pbdb:10705,all,pbdb,419.62,413.02,True,True,True,UK,"UK|dundee flagstone|56.0,-2.0",Zosterophyllum,Lochkovian,Lochkovian
+pbdb:10719,all,pbdb,410.62,393.47,True,True,True,UK,"UK|strathmore|55.0,-4.0",Dawsonites; Drepanophycus spinaeformis; Prototaxites; Sawdonia ornata; Sporogonites; Zosterophyllum,Emsian,Emsian
+pbdb:10721,all,pbdb,413.02,410.62,True,True,True,UK,"UK|dryden flags|57.3,-2.8",? Pachytheca sp.; Asteroxylon; Horneophyton lignieri; Kidstonophyton discoides; Langiophyton mackei; Lyonophyton rhyniensis n. gen. n. sp.; Nematophyton; Nematoplexus; Nematoplexus rhyniensis; Nothia aphylla; Palaeonitella; Palaeonitella cranii; Prototaxites; Rhynia; Trichopherophyton teuchansii,Pragian,Pragian
+pbdb:10891,all,pbdb,413.02,410.62,True,True,True,CN,"CN|posongchong|23.3,104.2",Eophyllophyton bellum; Gumuia zyzzata,Pragian,Pragian
+pbdb:10896,all,pbdb,413.02,410.62,True,True,True,CN,"CN|posongchong|23.3,104.3",Gumuia zyzzata; Psilophyton; Zosterophyllum,Pragian,Pragian
+pbdb:10941,all,pbdb,410.62,393.47,True,True,True,CN,"CN|xujiachong (also called longhuashan)|26.0,104.0",Drepanophycus,Emsian,Emsian
+pbdb:11421,all,pbdb,413.02,410.62,True,True,True,CA,"CA|bathurst island|75.8,-98.4",Bathurstia cf. denticulata; Distichophytum,Pragian,Pragian
+pbdb:11425,all,pbdb,413.02,410.62,True,True,True,CA,"CA|bathurst island|75.8,-98.4",Newspeciesd newspecies; Zosterophyllum,Pragian,Pragian
+pbdb:11513,all,pbdb,410.62,393.47,True,True,True,UK,"UK|strathmore|56.2,-4.2",Dawsonites; Drepanophycus spinaeformis; Margophyton; Pachytheca sp.; Sawdonia ornata,Emsian,Emsian
+pbdb:11722,all,pbdb,419.62,413.02,True,True,True,BE,"BE|bois d'ausse sandstone|50.5,5.7",Hostinella; Plantae; Taeniocrada; Zosterophyllum,Lochkovian,Lochkovian
+pbdb:13895,all,pbdb,419.62,413.02,True,True,False,CZ,"CZ|lochkov|49.9,14.2",Cooksonia,Lochkovian,Lochkovian
+pbdb:203163,all,pbdb,410.62,399.5,True,True,False,CA,"CA|battery point|48.8,-64.3",Renalia hueberi,Emsian,Emsian
+pbdb:20664,all,pbdb,422.7,419.62,True,True,False,US,"US|bertie|42.9,-75.1",Cooksonia; Hostinella,Pridoli,Pridoli
+pbdb:22860,all,pbdb,413.02,410.62,True,True,True,BE,"BE|grès de wiheries|50.4,3.8",Aphyllopteris; Asterocalamites; Cryptoxylon forfarense; Dawsonites arcuatus; Hostinella; Pathytheca sp.; Pinakodendron; Prototaxites; Taeniocrada,Pragian,Pragian
+pbdb:23197,all,pbdb,413.02,410.62,True,True,True,BE,"BE|grès de wiheries|50.4,3.8",Drepanophycus; Gosslingia breconensis,Pragian,Pragian
+pbdb:23200,all,pbdb,413.02,399.5,True,True,True,BE,"BE|burnotien|50.6,4.1",Drepanophycus; Drepanophycus gaspianus; Estinnophyton gracile; Psilophyton,Pragian,Emsian
+pbdb:23202,all,pbdb,413.02,399.5,True,True,True,BE,"BE|burnotien|50.6,4.1",Aphyllopteris; Drepanophycus; Hostinella; Psilophyton,Pragian,Emsian
+pbdb:232143,all,pbdb,413.02,410.62,True,True,True,DE,"DE|wahnbach|50.9,7.3",Drepanophycus spinaeformis; Prototaxites,Pragian,Pragian
+pbdb:232956,all,pbdb,399.5,393.47,True,True,True,BY,"BY|korma 1 borehole 323.6m|53.2,30.8",Selaginellites gracilis,Emsian,Emsian
+pbdb:238400,all,pbdb,410.62,399.5,True,True,True,RU,"RU|pridorozhnaya|54.5,89.9",Drepanophycus gaspianus; Margophyton,Emsian,Emsian
+pbdb:238752,all,pbdb,413.02,410.62,True,True,True,UK,"UK|senni|51.9,-3.6",Drepanophycus; Gosslingia; Zosterophyllum,Pragian,Pragian
+pbdb:24907,all,pbdb,419.62,413.02,True,True,False,AU,"AU|maradana shale|-33.2,148.7",Tracheophyta,Lochkovian,Lochkovian
+pbdb:26026,all,pbdb,410.62,393.47,True,True,True,CA,"CA|battery point|48.8,-64.3",Drepanophycus spinaeformis,Emsian,Emsian
+pbdb:26087,all,pbdb,422.7,419.62,True,True,False,US,"US|bertie|43.5,-74.9",Cooksonia,Pridoli,Pridoli
+pbdb:26176,all,pbdb,410.62,393.47,True,True,True,US,"US|beartooth butte|45.0,-109.6",<Morphotype I>; <Morphotype II>; <Trimerophyte>; Distichophytum; Drepanophycus; Leclercqia complexa; Renalia; Sawdonia wyomingense n. sp.; Sphondylophyton hyenioides,Emsian,Emsian
+pbdb:26547,all,pbdb,410.62,393.47,True,True,True,CA,"CA|battery point|48.8,-64.3",Psilophyton,Emsian,Emsian
+pbdb:26755,all,pbdb,419.62,413.02,True,True,True,UK,"UK|dundee|56.7,-2.8",Parka; Prototaxites; Zosterophyllum myretonianum,Lochkovian,Lochkovian
+pbdb:26757,all,pbdb,419.62,413.02,True,True,True,UK,"UK|dundee|56.7,-2.8",Zosterophyllum myretonianum,Lochkovian,Lochkovian
+pbdb:26903,all,pbdb,410.62,399.5,True,False,False,DE,"DE|hunsrück slate|49.9,7.5",Taeniocrada,Emsian,Emsian
+pbdb:26904,all,pbdb,410.62,399.5,True,True,True,DE,"DE|hunsrück slate|49.8,7.4",Drepanophycus; Prototaxites; Psilophyton; Trimerophyton,Emsian,Emsian
+pbdb:27049,all,pbdb,410.62,399.5,True,True,True,DE,"DE|alken #3, nellen koepfchen beds, germany|50.2,7.4",Dawsonites,Emsian,Emsian
+pbdb:27129,all,pbdb,410.62,399.5,True,True,True,DE,"DE|alken #4, nellen koepfchen beds, germany|50.2,7.4",Mosellophyton hefteri; Psilophyton; Taeniocrada; Zosterophyllum,Emsian,Emsian
+pbdb:27182,all,pbdb,419.62,413.02,True,True,False,,"|lochkov|49.9,14.1",Cooksonia,Lochkovian,Lochkovian
+pbdb:28924,all,pbdb,410.62,393.47,True,True,True,CA,"CA|battery point|48.8,-64.3",Euphyllophytina; Psilophyton princeps; Sawdonia sp.; Taeniocrada,Emsian,Emsian
+pbdb:28950,all,pbdb,410.62,393.47,True,True,True,CA,"CA|battery point|48.8,-64.5",Euphyllophytina; Lycopodia indet.,Emsian,Emsian
+pbdb:28968,all,pbdb,410.62,393.47,True,True,True,CA,"CA|battery point|48.8,-64.4",Euphyllophytina; Psilophyton,Emsian,Emsian
+pbdb:28969,all,pbdb,410.62,393.47,True,True,True,CA,"CA|battery point|48.8,-64.5",Euphyllophytina; Lycopodia indet.,Emsian,Emsian
+pbdb:28971,all,pbdb,410.62,393.47,True,True,True,CA,"CA|battery point|48.8,-64.4",Euphyllophytina,Emsian,Emsian
+pbdb:28996,all,pbdb,410.62,393.47,True,True,True,CA,"CA|battery point|48.8,-64.5",Euphyllophytina; Psilophyton; Psilophyton princeps; Trimerophyton,Emsian,Emsian
+pbdb:28997,all,pbdb,410.62,393.47,True,True,True,CA,"CA|battery point|48.8,-64.3",Euphyllophytina; Psilophyton princeps,Emsian,Emsian
+pbdb:28998,all,pbdb,410.62,393.47,True,True,True,CA,"CA|battery point|48.8,-64.5",Euphyllophytina; Lycopodia ? sp.; Psilophyton,Emsian,Emsian
+pbdb:29001,all,pbdb,410.62,393.47,True,True,True,CA,"CA|battery point|48.6,-64.3",Euphyllophytina; Lycopodia indet.,Emsian,Emsian
+pbdb:29002,all,pbdb,410.62,393.47,True,True,True,CA,"CA|battery point|48.8,-64.3",Euphyllophytina; Psilophyton,Emsian,Emsian
+pbdb:29003,all,pbdb,410.62,393.47,True,True,True,CA,"CA|battery point|48.8,-64.3",Euphyllophytina; Psilophyton; Sawdonia sp.,Emsian,Emsian
+pbdb:29020,all,pbdb,410.62,393.47,True,True,True,CA,"CA|york river|48.8,-64.4",Euphyllophytina; Psilophyton,Emsian,Emsian
+pbdb:29026,all,pbdb,410.62,393.47,True,True,True,CA,"CA|battery point|48.8,-64.3",Sawdonia ornata; Trimerophyton,Emsian,Emsian
+pbdb:29029,all,pbdb,410.62,393.47,True,True,True,CA,"CA|battery point|48.8,-64.5",Crenaticaulis; Dawsonites; Euphyllophytina; Lycopodia <sp.>,Emsian,Emsian
+pbdb:29292,all,pbdb,410.62,393.47,True,True,True,US,"US|beartooth butte|45.0,-109.6",Euphyllophytina,Emsian,Emsian
+pbdb:29294,all,pbdb,410.62,393.47,True,True,True,US,"US|beartooth butte|44.9,-108.1",Euphyllophytina; Gosslingia,Emsian,Emsian
+pbdb:31000,all,pbdb,410.62,393.47,True,True,True,US,"US|beartooth butte|45.0,-109.6",Euphyllophytina; Psilophyton,Emsian,Emsian
+pbdb:31002,all,pbdb,410.62,393.47,True,True,True,CA,"CA|battery point|48.8,-64.4",Euphyllophytina,Emsian,Emsian
+pbdb:31003,all,pbdb,410.62,393.47,True,True,True,CA,"CA|battery point|48.8,-64.4",Euphyllophytina,Emsian,Emsian
+pbdb:31004,all,pbdb,410.62,393.47,True,True,True,CA,"CA|battery point|48.6,-64.3",Drepanophycus; Euphyllophytina,Emsian,Emsian
+pbdb:31005,all,pbdb,410.62,393.47,True,True,True,CA,"CA|york river|48.8,-64.4",Euphyllophytina; Lycopodia indet.,Emsian,Emsian
+pbdb:31007,all,pbdb,410.62,393.47,True,True,True,CA,"CA|battery point|48.8,-64.5",Drepanophycus spinaeformis; Euphyllophytina,Emsian,Emsian
+pbdb:31010,all,pbdb,410.62,393.47,True,True,True,CA,"CA|battery point|48.8,-64.5",Drepanophycus spinaeformis; Euphyllophytina; Taeniocrada,Emsian,Emsian
+pbdb:31011,all,pbdb,410.62,393.47,True,True,True,CA,"CA|battery point|48.8,-64.5",Euphyllophytina; Lycopodia indet.; Sawdonia ornata,Emsian,Emsian
+pbdb:31023,all,pbdb,410.62,393.47,True,True,True,CA,"CA|battery point|48.8,-64.3",Euphyllophytina; Lycopodia indet.; Psilophyton; Sawdonia ornata,Emsian,Emsian
+pbdb:31027,all,pbdb,410.62,393.47,True,True,True,CA,"CA|battery point|48.8,-64.5",Euphyllophytina; Sawdonia ornata,Emsian,Emsian
+pbdb:31212,all,pbdb,410.62,393.47,True,True,True,CA,"CA|battery point|48.8,-64.3",Euphyllophytina,Emsian,Emsian
+pbdb:31213,all,pbdb,410.62,393.47,True,True,True,CA,"CA|battery point|48.8,-64.4",Euphyllophytina; Pachytheca ashlayer,Emsian,Emsian
+pbdb:31214,all,pbdb,410.62,393.47,True,True,True,CA,"CA|battery point|48.9,-64.4",Euphyllophytina,Emsian,Emsian
+pbdb:31215,all,pbdb,410.62,393.47,True,True,True,CA,"CA|battery point|48.8,-64.4",Euphyllophytina; Sawdonia ornata,Emsian,Emsian
+pbdb:31216,all,pbdb,410.62,393.47,True,True,True,CA,"CA|york river|48.6,-64.3",Euphyllophytina; Lycopodia indet.,Emsian,Emsian
+pbdb:32851,all,pbdb,413.02,393.47,True,True,True,KZ,"KZ|aigyrzhal'skaya suite|47.0,79.0",Blasaria; Drepanophycus spinaeformis; Yarravia; Zosterophyllum,Pragian,Emsian
+pbdb:35709,all,pbdb,410.62,399.5,True,True,True,RU,"RU|salairka horizon|54.3,85.9",Blasaria; Hostinella; Protocephalopteris praecox; Psilophyton; Taeniocrada,Emsian,Emsian
+pbdb:35721,all,pbdb,399.5,387.95,True,True,True,RU,"RU|shanda horizon|54.3,85.9",Anaeurophyton germanicum; Barsassia ornata; Drepanophycus; Hostinella; Protocephalopteris praecox; Psilophyton; Uralia,Emsian,
+pbdb:52667,all,pbdb,422.7,419.62,True,True,False,PL,"PL|winnica mudstone complex|50.9,21.1",Cooksonia; Hostinella,Pridoli,Pridoli
+pbdb:53599,all,pbdb,422.7,419.62,True,False,False,CZ,"CZ|cement quarry in prag-podoli|50.0,14.3",Hostinella,Pridoli,Pridoli
+pbdb:53669,all,pbdb,422.7,419.62,True,True,False,LY,"LY|tripolitanian borehole|30.0,11.0",Cooksonia,Pridoli,Pridoli
+pbdb:53825,all,pbdb,422.7,419.62,True,True,False,CA,"CA|williamsville|42.9,-78.9",Cooksonia; Hostinella,Pridoli,Pridoli
+pbdb:53827,all,pbdb,422.7,419.62,True,True,False,US,"US|fiddlers green|43.0,-75.0",Cooksonia hemisphaerica; Hostinella,Pridoli,Pridoli
+pbdb:53830,all,pbdb,422.7,419.62,True,False,False,CA,"CA|williamsville|42.9,-78.9",Hostinella,Pridoli,Pridoli
+pbdb:53831,all,pbdb,422.7,419.62,True,False,False,US,"US|williamsville|42.9,-78.9",Hostinella,Pridoli,Pridoli
+pbdb:53832,all,pbdb,432.9,422.7,True,False,False,US,"US|south part of gasport stone quarry|43.2,-78.6",Hostinella,Sheinwoodian,Ludfordian
+pbdb:53837,all,pbdb,422.7,419.62,True,False,False,US,"US|williamsville|43.0,-78.7",Hostinella,Pridoli,Pridoli
+tail:M-aberlemnia-junggaria,inclusive,tail,422.7,419.62,True,True,True,China,China|west junggar,Aberlemnia junggaria,Pridoli,Pridoli
+tail:M-aberlemnia-junggaria,main,tail,422.7,419.62,True,True,True,China,China|west junggar,Aberlemnia junggaria,Pridoli,Pridoli
+tail:M-aberlemnia-junggaria,outlier,tail,422.7,419.62,True,True,True,China,China|west junggar,Aberlemnia junggaria,Pridoli,Pridoli
+tail:M-aberlemnia-krizii,inclusive,tail,422.7,419.62,True,True,True,Czech Republic,Czech Republic|barrandian area; original collecting site unresolved,Aberlemnia krizii,Pridoli,Pridoli
+tail:M-aberlemnia-krizii,main,tail,422.7,419.62,True,True,True,Czech Republic,Czech Republic|barrandian area; original collecting site unresolved,Aberlemnia krizii,Pridoli,Pridoli
+tail:M-aberlemnia-krizii,outlier,tail,422.7,419.62,True,True,True,Czech Republic,Czech Republic|barrandian area; original collecting site unresolved,Aberlemnia krizii,Pridoli,Pridoli
+tail:M-baragwanathia-karlstejn,inclusive,tail,422.7,419.62,True,True,True,Czech Republic,"Czech Republic|karlštejn, ve spáleném, near house 132","Baragwanathia brevifolia, renamed B. brevifolioides",Pridoli,Pridoli
+tail:M-baragwanathia-karlstejn,main,tail,422.7,419.62,True,True,True,Czech Republic,"Czech Republic|karlštejn, ve spáleném, near house 132","Baragwanathia brevifolia, renamed B. brevifolioides",Pridoli,Pridoli
+tail:M-baragwanathia-karlstejn,outlier,tail,422.7,419.62,True,True,True,Czech Republic,"Czech Republic|karlštejn, ve spáleném, near house 132","Baragwanathia brevifolia, renamed B. brevifolioides",Pridoli,Pridoli
+tail:M-barrandei,inclusive,tail,432.9,430.6,True,True,False,Czech Republic,"Czech Republic|loděnice, špičatý vrch–barrandovy jámy",Cooksonia barrandei and associated cooksonioid material,Sheinwoodian,Sheinwoodian
+tail:M-barrandei,main,tail,432.9,430.6,True,True,False,Czech Republic,"Czech Republic|loděnice, špičatý vrch–barrandovy jámy",Cooksonia barrandei and associated cooksonioid material,Sheinwoodian,Sheinwoodian
+tail:M-barrandei,outlier,tail,432.9,430.6,True,True,False,Czech Republic,"Czech Republic|loděnice, špičatý vrch–barrandovy jámy",Cooksonia barrandei and associated cooksonioid material,Sheinwoodian,Sheinwoodian
+tail:M-bathurst-us383,inclusive,tail,425.0,419.62,True,True,True,Canada,"Canada|us383 (=us600), polar bear pass region, bathurst island",cf. Bathurstia; Distichophytum; aff. Zosterophyllum B; rhyniophytoid,Ludfordian,Pridoli
+tail:M-bathurst-us383,main,tail,425.0,419.62,True,True,True,Canada,"Canada|us383 (=us600), polar bear pass region, bathurst island",cf. Bathurstia; Distichophytum; aff. Zosterophyllum B; rhyniophytoid,Ludfordian,Pridoli
+tail:M-bathurst-us383,outlier,tail,425.0,419.62,True,True,True,Canada,"Canada|us383 (=us600), polar bear pass region, bathurst island",cf. Bathurstia; Distichophytum; aff. Zosterophyllum B; rhyniophytoid,Ludfordian,Pridoli
+tail:M-bathurst-us384,inclusive,tail,426.7,422.7,True,True,True,Canada,"Canada|us384, polar bear pass region, bathurst island",Zosterophyllum sp.; cf. Bathurstia,Gorstian,Ludfordian
+tail:M-bathurst-us384,main,tail,425.0,419.62,True,True,True,Canada,"Canada|us384, polar bear pass region, bathurst island",Zosterophyllum sp.; cf. Bathurstia,Ludfordian,Pridoli
+tail:M-bathurst-us384,outlier,tail,426.7,422.7,True,True,True,Canada,"Canada|us384, polar bear pass region, bathurst island",Zosterophyllum sp.; cf. Bathurstia,Gorstian,Ludfordian
+tail:M-bathurst-us385,inclusive,tail,425.0,419.62,True,True,True,Canada,"Canada|us385 (=us601), polar bear pass region, bathurst island",Macivera gracilis,Ludfordian,Pridoli
+tail:M-bathurst-us385,main,tail,425.0,419.62,True,True,True,Canada,"Canada|us385 (=us601), polar bear pass region, bathurst island",Macivera gracilis,Ludfordian,Pridoli
+tail:M-bathurst-us385,outlier,tail,425.0,419.62,True,True,True,Canada,"Canada|us385 (=us601), polar bear pass region, bathurst island",Macivera gracilis,Ludfordian,Pridoli
+tail:M-bathurst-us688,inclusive,tail,425.0,419.62,True,True,True,Canada,"Canada|us688, polar bear pass region, bathurst island",aff. Zosterophyllum sp. A,Ludfordian,Pridoli
+tail:M-bathurst-us688,main,tail,425.0,419.62,True,True,True,Canada,"Canada|us688, polar bear pass region, bathurst island",aff. Zosterophyllum sp. A,Ludfordian,Pridoli
+tail:M-bathurst-us688,outlier,tail,425.0,419.62,True,True,True,Canada,"Canada|us688, polar bear pass region, bathurst island",aff. Zosterophyllum sp. A,Ludfordian,Pridoli
+tail:M-bohemica,inclusive,tail,422.7,419.62,True,True,True,Czech Republic,"Czech Republic|kosov quarry, prague basin",Cooksonia bohemica / Aberlemnia bohemica,Pridoli,Pridoli
+tail:M-bohemica,main,tail,422.7,419.62,True,True,False,Czech Republic,"Czech Republic|kosov quarry, prague basin",Cooksonia bohemica / Aberlemnia bohemica,Pridoli,Pridoli
+tail:M-bohemica,outlier,tail,422.7,419.62,True,True,True,Czech Republic,"Czech Republic|kosov quarry, prague basin",Cooksonia bohemica / Aberlemnia bohemica,Pridoli,Pridoli
+tail:M-bolivia-caledonica,inclusive,tail,426.7,422.7,True,True,True,Bolivia,"Bolivia|c. 500 m ne of negra muerta farm, c. 30 km ne of tarija, bolivia",Cooksonia cf. caledonica: one 12.5 mm specimen with two branch points and three terminal sporangia; abundant sterile axes 3–4 m below; no spores recovered,Gorstian,Ludfordian
+tail:M-bolivia-caledonica,main,tail,426.7,422.7,True,True,False,Bolivia,"Bolivia|c. 500 m ne of negra muerta farm, c. 30 km ne of tarija, bolivia",Cooksonia cf. caledonica: one 12.5 mm specimen with two branch points and three terminal sporangia; abundant sterile axes 3–4 m below; no spores recovered,Gorstian,Ludfordian
+tail:M-bolivia-caledonica,outlier,tail,426.7,422.7,True,True,True,Bolivia,"Bolivia|c. 500 m ne of negra muerta farm, c. 30 km ne of tarija, bolivia",Cooksonia cf. caledonica: one 12.5 mm specimen with two branch points and three terminal sporangia; abundant sterile axes 3–4 m below; no spores recovered,Gorstian,Ludfordian
+tail:M-borrisnoe,inclusive,tail,430.6,426.7,True,True,False,Ireland,"Ireland|borrisnoe mountain, devil’s bit range, county tipperary",Cooksonia cf. pertoni; cf. C. hemisphaerica; cf. C. cambrensis,Homerian,Homerian
+tail:M-borrisnoe,main,tail,430.6,426.7,True,True,False,Ireland,"Ireland|borrisnoe mountain, devil’s bit range, county tipperary",Cooksonia cf. pertoni; cf. C. hemisphaerica; cf. C. cambrensis,Homerian,Homerian
+tail:M-borrisnoe,outlier,tail,430.6,426.7,True,True,False,Ireland,"Ireland|borrisnoe mountain, devil’s bit range, county tipperary",Cooksonia cf. pertoni; cf. C. hemisphaerica; cf. C. cambrensis,Homerian,Homerian
+tail:M-capel-horeb-ludlow,inclusive,tail,425.0,422.7,True,True,False,United Kingdom,"United Kingdom|capel horeb / halfway quarry, powys",Vascularised sterile axes; Cooksonia; Steganotheca; cf. Cooksonia caledonica,Ludfordian,Ludfordian
+tail:M-capel-horeb-ludlow,main,tail,425.0,422.7,True,True,False,United Kingdom,"United Kingdom|capel horeb / halfway quarry, powys",Vascularised sterile axes; Cooksonia; Steganotheca; cf. Cooksonia caledonica,Ludfordian,Ludfordian
+tail:M-capel-horeb-ludlow,outlier,tail,425.0,422.7,True,True,False,United Kingdom,"United Kingdom|capel horeb / halfway quarry, powys",Vascularised sterile axes; Cooksonia; Steganotheca; cf. Cooksonia caledonica,Ludfordian,Ludfordian
+tail:M-cooksonella-kazakhstan,inclusive,tail,422.7,419.62,True,True,False,Kazakhstan,Kazakhstan|tokrau/balkhash region; exact collecting site unresolved,"Cooksonella sphaerica, subsequently Eocooksonia; compared with Junggaria spinosa",Pridoli,Pridoli
+tail:M-cooksonella-kazakhstan,main,tail,422.7,419.62,True,True,False,Kazakhstan,Kazakhstan|tokrau/balkhash region; exact collecting site unresolved,"Cooksonella sphaerica, subsequently Eocooksonia; compared with Junggaria spinosa",Pridoli,Pridoli
+tail:M-cooksonella-kazakhstan,outlier,tail,422.7,419.62,True,True,False,Kazakhstan,Kazakhstan|tokrau/balkhash region; exact collecting site unresolved,"Cooksonella sphaerica, subsequently Eocooksonia; compared with Junggaria spinosa",Pridoli,Pridoli
+tail:M-freshwater-east,inclusive,tail,422.7,419.62,True,True,True,United Kingdom,"United Kingdom|freshwater east, pembrokeshire",Cooksonia cambrensis; C. cf. caledonica; Tortilicaulis transwalliensis,Pridoli,Pridoli
+tail:M-freshwater-east,outlier,tail,422.7,419.62,True,True,True,United Kingdom,"United Kingdom|freshwater east, pembrokeshire",Cooksonia cambrensis; C. cf. caledonica; Tortilicaulis transwalliensis,Pridoli,Pridoli
+tail:M-ghin-ghin,inclusive,tail,426.7,393.47,True,True,True,Australia,"Australia|ghin ghin road, yea",Baragwanathia longifolia; Parazosterophyllum timsiae; associated rhyniophytoids,Gorstian,Emsian
+tail:M-ghin-ghin,main,tail,426.7,393.47,True,True,True,Australia,"Australia|ghin ghin road, yea",Baragwanathia longifolia; Parazosterophyllum timsiae; associated rhyniophytoids,Gorstian,Emsian
+tail:M-ghin-ghin,outlier,tail,426.7,393.47,True,True,True,Australia,"Australia|ghin ghin road, yea",Baragwanathia longifolia; Parazosterophyllum timsiae; associated rhyniophytoids,Gorstian,Emsian
+tail:M-ghin-ghin-b2,inclusive,tail,422.7,393.47,True,True,True,Australia,"Australia|ghin ghin, near yea",Early Baragwanathia flora with Monograptus cf. prognatus,Pridoli,Emsian
+tail:M-ghin-ghin-b2,main,tail,422.7,393.47,True,True,True,Australia,"Australia|ghin ghin, near yea",Early Baragwanathia flora with Monograptus cf. prognatus,Pridoli,Emsian
+tail:M-ghin-ghin-b2,outlier,tail,422.7,393.47,True,True,True,Australia,"Australia|ghin ghin, near yea",Early Baragwanathia flora with Monograptus cf. prognatus,Pridoli,Emsian
+tail:M-kazakh-lycophytes,inclusive,tail,422.7,419.62,True,True,True,Kazakhstan,Kazakhstan|balkhash area; exact locality unresolved,Baragwanathia sp.; Jugumella burubaensis; Taeniocrada sp.,Pridoli,Pridoli
+tail:M-kazakh-lycophytes,main,tail,422.7,419.62,True,True,True,Kazakhstan,Kazakhstan|balkhash area; exact locality unresolved,Baragwanathia sp.; Jugumella burubaensis; Taeniocrada sp.,Pridoli,Pridoli
+tail:M-kazakh-lycophytes,outlier,tail,422.7,419.62,True,True,True,Kazakhstan,Kazakhstan|balkhash area; exact locality unresolved,Baragwanathia sp.; Jugumella burubaensis; Taeniocrada sp.,Pridoli,Pridoli
+tail:M-kazakh-zosterophyllum,inclusive,tail,422.7,419.62,True,True,True,Kazakhstan,Kazakhstan|kazakhstan; locality unresolved,Zosterophyllum sp. with Cooksonia sp.,Pridoli,Pridoli
+tail:M-kazakh-zosterophyllum,main,tail,422.7,419.62,True,True,True,Kazakhstan,Kazakhstan|kazakhstan; locality unresolved,Zosterophyllum sp. with Cooksonia sp.,Pridoli,Pridoli
+tail:M-kazakh-zosterophyllum,outlier,tail,422.7,419.62,True,True,True,Kazakhstan,Kazakhstan|kazakhstan; locality unresolved,Zosterophyllum sp. with Cooksonia sp.,Pridoli,Pridoli
+tail:M-lang-tracheid-axis,inclusive,tail,419.62,413.02,True,True,False,United Kingdom,United Kingdom|welsh borderland; exact original site unresolved,Sterile axis assigned by Lang to Cooksonia hemisphaerica,Lochkovian,Lochkovian
+tail:M-lang-tracheid-axis,main,tail,419.62,413.02,True,True,False,United Kingdom,United Kingdom|welsh borderland; exact original site unresolved,Sterile axis assigned by Lang to Cooksonia hemisphaerica,Lochkovian,Lochkovian
+tail:M-lang-tracheid-axis,outlier,tail,419.62,413.02,True,True,False,United Kingdom,United Kingdom|welsh borderland; exact original site unresolved,Sterile axis assigned by Lang to Cooksonia hemisphaerica,Lochkovian,Lochkovian
+tail:M-limestone-road,inclusive,tail,426.7,393.47,True,True,True,Australia,"Australia|limestone road, brackley's (barkley's) cutting, yea; loc. 4 (= h4) of garratt's 1978 map; the national heritage place flora fossil site",Baragwanathia longifolia; zosterophylls including manuscript Pluricaulis biformis; Salopella; Yarravia,Gorstian,Emsian
+tail:M-limestone-road,main,tail,426.7,393.47,True,True,True,Australia,"Australia|limestone road, brackley's (barkley's) cutting, yea; loc. 4 (= h4) of garratt's 1978 map; the national heritage place flora fossil site",Baragwanathia longifolia; zosterophylls including manuscript Pluricaulis biformis; Salopella; Yarravia,Gorstian,Emsian
+tail:M-limestone-road,outlier,tail,426.7,393.47,True,True,True,Australia,"Australia|limestone road, brackley's (barkley's) cutting, yea; loc. 4 (= h4) of garratt's 1978 map; the national heritage place flora fossil site",Baragwanathia longifolia; zosterophylls including manuscript Pluricaulis biformis; Salopella; Yarravia,Gorstian,Emsian
+tail:M-mangkelu-ii,inclusive,tail,422.7,419.62,True,True,True,China,"China|mangkelu ii section, wutubulake village, hoboksar, west junggar",Zosterophyllum mangkeluense,Pridoli,Pridoli
+tail:M-mangkelu-ii,main,tail,422.7,419.62,True,True,True,China,"China|mangkelu ii section, wutubulake village, hoboksar, west junggar",Zosterophyllum mangkeluense,Pridoli,Pridoli
+tail:M-mangkelu-ii,outlier,tail,422.7,419.62,True,True,True,China,"China|mangkelu ii section, wutubulake village, hoboksar, west junggar",Zosterophyllum mangkeluense,Pridoli,Pridoli
+tail:M-ordos-e27-717,outlier,tail,458.2,452.8,True,True,False,China,"China|ordos basin, borehole e-27","Tracheid-bearing axis, PB24363",Sandbian,Sandbian
+tail:M-piterophyton,outlier,tail,458.2,452.8,True,True,False,Russia,"Russia|volgovo quarry, leningrad region",Piterophyton caudatum,Sandbian,Sandbian
+tail:M-podolia-zosterophyllum,inclusive,tail,425.0,419.62,True,True,True,Ukraine,Ukraine|podolia; exact original site unresolved,Zosterophyllum myretonianum / ?Zosterophyllum; Lycopodolica,Ludfordian,Pridoli
+tail:M-podolia-zosterophyllum,outlier,tail,425.0,419.62,True,True,True,Ukraine,Ukraine|podolia; exact original site unresolved,Zosterophyllum myretonianum / ?Zosterophyllum; Lycopodolica,Ludfordian,Pridoli
+tail:M-protolepidodendron,inclusive,tail,387.95,382.31,True,True,True,Czech Republic,Czech Republic|bohemian type locality; precise site unresolved,Protolepidodendron scharianum / scharyanum,,
+tail:M-protolepidodendron,main,tail,387.95,382.31,True,True,True,Czech Republic,Czech Republic|bohemian type locality; precise site unresolved,Protolepidodendron scharianum / scharyanum,,
+tail:M-protolepidodendron,outlier,tail,387.95,382.31,True,True,True,Czech Republic,Czech Republic|bohemian type locality; precise site unresolved,Protolepidodendron scharianum / scharyanum,,
+tail:M-qujingense,inclusive,tail,422.7,419.62,True,True,True,China,"China|qujing, northeastern yunnan",Zosterophyllum qujingense,Pridoli,Pridoli
+tail:M-qujingense,main,tail,422.7,419.62,True,True,True,China,"China|qujing, northeastern yunnan",Zosterophyllum qujingense,Pridoli,Pridoli
+tail:M-qujingense,outlier,tail,422.7,419.62,True,True,True,China,"China|qujing, northeastern yunnan",Zosterophyllum qujingense,Pridoli,Pridoli
+tail:M-rinconada,inclusive,tail,422.7,419.62,True,True,True,Argentina,"Argentina|chica de zonda range, san juan",Aberlemnia caledonica,Pridoli,Pridoli
+tail:M-rinconada,main,tail,422.7,419.62,True,True,True,Argentina,"Argentina|chica de zonda range, san juan",Aberlemnia caledonica,Pridoli,Pridoli
+tail:M-rinconada,outlier,tail,422.7,419.62,True,True,True,Argentina,"Argentina|chica de zonda range, san juan",Aberlemnia caledonica,Pridoli,Pridoli
+tail:M-svalbard,inclusive,tail,419.62,413.02,True,True,True,Norway,"Norway|red bay series brook section, spitsbergen",?Zosterophyllum sp.,Lochkovian,Lochkovian
+tail:M-svalbard,main,tail,419.62,413.02,True,True,True,Norway,"Norway|red bay series brook section, spitsbergen",?Zosterophyllum sp.,Lochkovian,Lochkovian
+tail:M-svalbard,outlier,tail,419.62,413.02,True,True,True,Norway,"Norway|red bay series brook section, spitsbergen",?Zosterophyllum sp.,Lochkovian,Lochkovian
+tail:M-van-canh,inclusive,tail,422.7,419.62,True,True,True,Vietnam,"Vietnam|xóm chè quarry, northern vietnam",Putative zosterophylls with rhyniophytoids,Pridoli,Pridoli
+tail:M-van-canh,main,tail,422.7,419.62,True,True,True,Vietnam,"Vietnam|xóm chè quarry, northern vietnam",Putative zosterophylls with rhyniophytoids,Pridoli,Pridoli
+tail:M-van-canh,outlier,tail,422.7,419.62,True,True,True,Vietnam,"Vietnam|xóm chè quarry, northern vietnam",Putative zosterophylls with rhyniophytoids,Pridoli,Pridoli
+tail:M-wilson-creek,inclusive,tail,413.02,393.47,True,True,True,Australia,Australia|frenchmans spur / thomson river type-material district,"Baragwanathia longifolia, original Victorian specimen set",Pragian,Emsian
+tail:M-wilson-creek,main,tail,413.02,393.47,True,True,True,Australia,Australia|frenchmans spur / thomson river type-material district,"Baragwanathia longifolia, original Victorian specimen set",Pragian,Emsian
+tail:M-wilson-creek,outlier,tail,413.02,393.47,True,True,True,Australia,Australia|frenchmans spur / thomson river type-material district,"Baragwanathia longifolia, original Victorian specimen set",Pragian,Emsian
+tail:M-xinjiang-leafy,inclusive,tail,419.62,413.02,True,True,True,China,"China|mongkelu, east of wutubulak, west junggar",Leafy sterile axis compared with Lycopodolica; associated Junggaria and Salopella,Lochkovian,Lochkovian
+tail:M-xinjiang-leafy,outlier,tail,419.62,413.02,True,True,True,China,"China|mongkelu, east of wutubulak, west junggar",Leafy sterile axis compared with Lycopodolica; associated Junggaria and Salopella,Lochkovian,Lochkovian
+tail:M-xinjiang-santanhu,inclusive,tail,422.7,413.02,True,True,True,China,"China|santanhu, barkol, eastern junggar basin",Fragmentary lycophyte-like axis,Pridoli,Lochkovian
+tail:M-xinjiang-santanhu,main,tail,422.7,413.02,True,True,True,China,"China|santanhu, barkol, eastern junggar basin",Fragmentary lycophyte-like axis,Pridoli,Lochkovian
+tail:M-xinjiang-santanhu,outlier,tail,422.7,413.02,True,True,True,China,"China|santanhu, barkol, eastern junggar basin",Fragmentary lycophyte-like axis,Pridoli,Lochkovian
+tail:M-xinjiang-zosterophyllum,inclusive,tail,422.7,413.02,True,True,True,China,"China|mongkelu, west junggar",?Zosterophyllum sp.,Pridoli,Lochkovian
+tail:M-xinjiang-zosterophyllum,main,tail,422.7,413.02,True,True,True,China,"China|mongkelu, west junggar",?Zosterophyllum sp.,Pridoli,Lochkovian
+tail:M-xinjiang-zosterophyllum,outlier,tail,422.7,413.02,True,True,True,China,"China|mongkelu, west junggar",?Zosterophyllum sp.,Pridoli,Lochkovian
+tail:M-yea-unspecified,inclusive,tail,426.7,393.47,True,True,True,Australia,Australia|unspecified yea locality,Baragwanathia longifolia,Gorstian,Emsian
+tail:M-yea-unspecified,main,tail,426.7,393.47,True,True,True,Australia,Australia|unspecified yea locality,Baragwanathia longifolia,Gorstian,Emsian
+tail:M-yea-unspecified,outlier,tail,426.7,393.47,True,True,True,Australia,Australia|unspecified yea locality,Baragwanathia longifolia,Gorstian,Emsian
+tail:M-zbrza,inclusive,tail,445.2,443.1,True,True,False,Poland,"Poland|zbrza, trench at 50.725946 n, 20.569382 e, southern holy cross mountains",Putative polysporangiophytes; Hostinella; terminal sporangium-like bodies,Hirnantian,Hirnantian
+tail:M-zbrza,outlier,tail,445.2,443.1,True,True,False,Poland,"Poland|zbrza, trench at 50.725946 n, 20.569382 e, southern holy cross mountains",Putative polysporangiophytes; Hostinella; terminal sporangium-like bodies,Hirnantian,Hirnantian

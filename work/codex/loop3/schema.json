@@ -1,0 +1,9 @@
+{"type":"object","additionalProperties":false,"required":["items"],"properties":{"items":{"type":"array","items":{"type":"object","additionalProperties":false,
+"required":["name_id","name","category","polysporangiophyte","crown_tracheophyte","basis","source","confidence"],
+"properties":{
+"name_id":{"type":"string"},"name":{"type":"string"},
+"category":{"type":"string","enum":["rhyniophytoid_cooksonioid","lycophyte_line","euphyllophyte","tracheophyte_indet","polysporangiophyte_indet","embryophyte_axis_indet","bryophyte_grade","nematophyte_or_problematic","alga","implausible_in_window","uncertain"]},
+"polysporangiophyte":{"type":"string","enum":["yes","no","uncertain"]},
+"crown_tracheophyte":{"type":"string","enum":["yes","no","uncertain"]},
+"basis":{"type":"string"},"source":{"type":"string"},
+"confidence":{"type":"string","enum":["high","medium","low"]}}}}}}

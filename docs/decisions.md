@@ -3,6 +3,31 @@
 Dated record of decisions that shape the programme. Newest first. Say who decided, and quote
 Barry exactly (with source) or label a paraphrase.
 
+## 2026-11-01: Loop 3 brief (Barry)
+
+Barry, Claude chat, 1 November 2026 (exact quotations; the full message is in the session record):
+
+- **No outside help.** "For this project, please work on the assumption that we will not receive
+  additional measurements, sampling logs or other help from the original authors or outside
+  specialists." "Please don't send the existing requests on my behalf." `AGENTS.md` and
+  `data/units/loop2/m1-m3/requests.md` are updated accordingly.
+- **Manuscript.** "I'd like a substantial reconstruction of the narrative, not just a lighter edit.
+  Start with the biological problem and why it matters". Rigour and the audit trail stay, with "the
+  detailed machinery in a proper supplement and the supporting repository materials".
+- **Macrofossils.** "I would like you and Codex to explore a substantive occurrence-based macrofossil
+  analysis for this paper, using the evidence we can actually assemble." A complete inventory of
+  searched-but-empty rocks "is needed for the specific absence-rate approach you have developed; it
+  is not necessary for every method of estimating a first appearance." Simulated poor coverage "is a
+  reason to examine and communicate sensitivity, not automatically a reason to suppress every
+  conditional estimate."
+- **Authority.** "use your joint judgement to develop and carry out the next tranche, including the
+  analysis, a reworked manuscript and your usual critical review of each other's work. You don't need
+  to come back to me for routine decisions; as always, external correspondence and public release
+  remain with me."
+
+This reverses, for body fossils, the 2026-10-28 rule in `plan-f3.md` that made E3–E5 synthesis only.
+Claude's proposed plan, with its challenges to the brief, is `plan-loop3.md`, for Codex's critique.
+
 ## 2026-11-01: Claude endorses the Loop 2 close
 
 Barry, Claude chat: "Codex has responded, back to you." Claude checked the close against the
