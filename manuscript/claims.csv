@@ -1,0 +1,18 @@
+claim_id,claim,value,status,evidence,limit
+C01,Murzuq older cuttings with trilete reports,0 of 28,source extraction (frozen),data/units/libya_appendix1.csv; models/f3/out/m2_results.csv,primary chart-code variant; 26 under material variants
+C02,Murzuq reference cuttings with triletes,51 of 59,source extraction (frozen),models/f3/out/m2_results.csv,Llandovery cuttings; contamination not estimated
+C03,Reference-level window endpoints at rho 1/0.5/0.25/0.1,462.6/464.1/467.1/unbounded Ma,frozen qualified result,models/f3/out/m2_results.csv; models/f3/out/qual/,finite-grid 0.93 floor; conditional coverage not established; rho declared
+C04,H0c and H0 bounds at 459.1 Ma (rho 1),0.0955 and 0.189,frozen qualified result,models/f3/out/m2_results.csv,finite-grid qualification
+C05,Low encounter (f 0.1 and 0.01) compatible with any origin,unbounded windows,frozen qualified result,models/f3/out/m2_results.csv,
+C06,Boundary-case misses,20/1000 passing; 20/60 claims,qualification evidence,docs/loop1-close.md,reported beside the 462.6 Ma window
+C07,Leave-one-well-out range at rho 1,H0 0.178-0.365; window 462.6-468.1 Ma,unqualified sensitivity,models/f3/loop2/out/engine_sensitivity.csv,one-at-a-time; no joint coverage
+C08,Indigenous-fraction break-even (kappa 0; independent uniform ages),0.0910/0.9559/0.2363/0.1735,unqualified sensitivity,models/f3/loop2/out/contamination_break_even.csv; docs/audits/2026-11-01-loop2-sprint1-claude-review.md,uncalibrated comparison; reproduced independently by Claude
+C09,Short window has no exposure under shared midpoint ages,no root,identification limit,models/f3/loop2/out/contamination_break_even.csv,fixed chronology scenario
+C10,Observational equivalence through a=rho*g*f and b=kappa*(1-g),structural,identification limit,docs/loop2-sprint1-results.md; models/f3/loop2/contamination.py,within the declared joint model
+C11,QSIM-801 examined cryptospore units (lower bound),99 marks in 17 of 20 samples; 0 triletes,source extraction,data/units/loop2/replication/qsim801_vecoli2017_table1.csv,Vecoli et al. 2017 Table 1 p.321 and p.330; checked on rendered page
+C12,QSIM-801 persistent trilete:cryptospore ratio bound,theta < 0.0307 (h 1); 0.307 (h 0.1),unqualified empirical bound,models/f3/loop2/replication/out/qsim_share_bounds.csv,declared recovery parity h; within-sample exchangeability; floor not mean
+C13,Marks-lower-bound test holds its level,max false rejection 0.0191,method check,models/f3/loop2/replication/out/qsim_share_known_answer.csv,simulation regimes declared in code
+C14,No counted Katian-Llandovery trilete/cryptospore reference held,none in 346 held PDFs or 195 text files,search result,docs/loop2-sprint2-results.md,regex scan for percentage statements; qualitative descriptors only
+C15,Cambrian Stage 4 forms not E2 under main,charophyte affinity in all three describing sources,source adjudication,data/units/loop2/m1-m3/m1_affinity.csv,inclusive reading remains declared but unsupported by source affinity
+C16,M1 has no admitted older-zero design,none of ten source groups,source admission (Loop 1),docs/sprint2-results-and-value-of-information.md,
+C17,M3 has no searched-material denominator,none,source admission (Loop 1),docs/audits/2026-10-31-sprint2-m3.md,

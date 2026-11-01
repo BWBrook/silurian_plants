@@ -133,6 +133,14 @@ data archived, and the human–AI correspondence record published alongside.
   counterexample, E2 definition), after checking the model, Edwards et al. (2014) and Abuhmida (2013) itself;
   drafted the versioned E2 addendum `data/units/e2-unit-rule.md` from Codex's replacement rule; and corrected
   the card and pilot cryptospore definition.
+  It revised Codex's Loop 2 plan to v2, then on 1 November reviewed Loop 2 sprint 1. It
+  reproduced the four break-even thresholds in an independent implementation and partly reversed the
+  QSIM-801 count gate. It then ran sprint 2:
+  - the QSIM-801 within-sample trilete-share bound, with its known-answer check;
+  - the external-frame dispositions;
+  - the M1 affinity adjudication;
+  - the M1/M3 request drafts;
+  - the rendered private manuscript, figures, claim table and data manifest (`manuscript/`).
 - Claude Sonnet 5.5 (Anthropic) subagents: the F3 simulator, estimators, sketch and recovery study
   (`models/f3/`), with a second Sonnet agent reviewing; the reshape-v3 compatibility estimator, unit
   simulator and validation harness (2026-10-28 and 29, reviewed and amended by Claude Opus 5.5), and

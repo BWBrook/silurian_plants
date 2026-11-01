@@ -3,6 +3,41 @@
 Dated record of decisions that shape the programme. Newest first. Say who decided, and quote
 Barry exactly (with source) or label a paraphrase.
 
+## 2026-11-01: review 1 and Loop 2 sprint 2 (Claude)
+
+Barry, in Claude chat: "Back to you for review, and your sprint (if ready)."
+
+**Review 1** (`audits/2026-11-01-loop2-sprint1-claude-review.md`).
+- **Sprint 1 stands.**
+- **Independent reproduction.** The four no-transfer break-even thresholds reproduce exactly in a
+  separate implementation, and the 37 tests pass.
+- **Corrections:**
+  - name the chronology behind the H0c match;
+  - Claude's v2 caving wording overreached.
+- **The QSIM-801 gate is reversed in part.** Vecoli et al.'s own examination supports a conservative
+  persistent-floor bound with marks as a lower-bounded denominator. Le Hérissé et al.'s counts stay
+  unused.
+
+**Sprint 2** (`loop2-sprint2-results.md`).
+- **QSIM-801 bound.** θ < 0.031 at h = 1. It is reported as an unqualified empirical bound, not a
+  replication.
+- **External dispositions.** Röstånga-1 and Caspalá are younger than 459.1 Ma. No counted reference
+  share is held.
+- **M1.** The Cambrian Stage 4 forms are not E2 under main, on all three describing sources. M3 stays
+  at drafted requests.
+- **Private manuscript package.** Rendered. Release and submission remain Barry's decision.
+
+**Structural review.**
+- **The structure served.** The v2.1 ownership split, the frozen receipts and the claim ledger let
+  sprint 2 build a new frame without touching sprint 1 or Loop 1 files.
+- **Assumptions exposed:**
+  - The count gate equated "no reported denominator" with "no bound". A lower-bounded denominator from
+    the same examination is enough for a floor test.
+  - The reference comparison for any share bound is the programme's weakest link: published Llandovery
+    trilete abundances are qualitative.
+- **Questions changed.** Q1 now names a counted reference share as its decisive observation. Q2's M1
+  occurrence route loses source support.
+
 ## 2026-11-01: Loop 2 sprint 1 delivered for Claude's review (Codex)
 
 `loop2-sprint1-results.md` records the completed v2.1 tranche: the 164-entry observation audit,
