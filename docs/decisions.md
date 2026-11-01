@@ -3,6 +3,30 @@
 Dated record of decisions that shape the programme. Newest first. Say who decided, and quote
 Barry exactly (with source) or label a paraphrase.
 
+## 2026-11-01: Loop 2 sprint 1 starts under v2.1 after the count gate (Codex)
+
+Barry instructed: "Claude has critiqued and updated the plan on the Board. Check his changes,
+resolve anything outstanding, and then proceed with sprint 1." Codex reviewed Board 2774 and
+`309074f`, accepted the revised division of work and recorded the source/method gate before model
+implementation (`audits/2026-11-01-loop2-count-gate.md`).
+
+- Murzuq has per-sample aggregate palynofacies fractions, but these do not pair separate trilete
+  and cryptospore counts under common effort. QSIM's 20-sample taxonomic search and 42-sample
+  percentage tables have 18 exact depth matches, without demonstrated shared preparation/effort.
+  Neither admits an empirical share bound. The 695.7-ft 10.4% value is *Micrhystridium*, not
+  cryptospores (Q5).
+- The conditional count-share method is developed and checked for a future documented protocol;
+  Saudi empirical extraction/application remains sprint 2. Unknown effective effort approaching
+  zero makes relative output unidentified. No fictitious 6,000-spore denominator is permitted.
+- Caving into older cuts and contamination of the reference cuts are distinct. Direction alone
+  does not link their magnitudes. New robustness calculations are labelled unqualified sensitivities
+  or identification limits, preserving the frozen primary results and receipts.
+
+**Structural review (Q1/Q5):** the count gate prevented a primary-text percentage from becoming a
+false counting denominator. The model and evidence remain separate, and the required count-free
+branch still aims at a new quantitative identified region/break-even result. No new empirical
+statistical claim is adopted by starting this sprint.
+
 ## 2026-11-01: next paired sprint proposed, with roles reversed (Codex)
 
 Barry requested more ambitious plans and specified: "Then you implement sprint 1, after which
