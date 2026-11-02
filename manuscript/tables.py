@@ -1,11 +1,15 @@
-"""Write the supplement's body-record tables as Markdown, directly from the reviewed Loop 3 outputs."""
+"""Write the supplement's body-record tables into text/supplement.md from the reviewed Loop 3 outputs.
+
+Each table replaces the block between `<!-- table:NAME -->` and `<!-- /table:NAME -->`."""
 
 import csv
+import re
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 OUT_DIR = ROOT / "models/f3/loop3/out"
-TABLES = Path(__file__).resolve().parent / "tables"
+SUPPLEMENT = Path(__file__).resolve().parent / "text/supplement.md"
+BLOCKS = {}
 
 CAT = {"B0": "Any land-plant body", "B1": "Polysporangiophyte body", "B2": "Crown vascular-plant body"}
 HIST = {"flat": "Constant", "pbdb_all": "PBDB collection density", "pbdb_plant_excluded": "PBDB density, plant matches removed",
@@ -29,12 +33,12 @@ def fmt(r, key="older_bound_ma"):
     return f"{float(r[key]):.2f}" if r["status"] == "bounded" else "none ≤ 469.4"
 
 
-def table(path, header, rows):
+def table(name, header, rows):
     widths = [max(6, len(h), *(len(str(row[i])) for row in rows)) for i, h in enumerate(header)]
     seps = ["-" * widths[0]] + ["-" * (w - 1) + ":" for w in widths[1:]]
     lines = ["| " + " | ".join(header) + " |", "|" + "|".join(seps) + "|"]
     lines += ["| " + " | ".join(str(c) for c in row) + " |" for row in rows]
-    path.write_text("\n".join(lines) + "\n")
+    BLOCKS[name] = "\n".join(lines)
 
 
 def primary(r):
@@ -42,7 +46,6 @@ def primary(r):
 
 
 def main():
-    TABLES.mkdir(exist_ok=True)
     bounds = read("reviewed_bounds.csv")
 
     rows = []
@@ -53,7 +56,7 @@ def main():
             any_r = next(iter(sel.values()))
             rows.append([reading, CAT[cat], f"{any_r['n_guaranteed']}/{any_r['n_possible']}",
                          f"{float(any_r['oldest_possible_ma']):.1f}"] + [fmt(sel[h]) for h in HIST])
-    table(TABLES / "primary.md", ["Reading", "Category", "Units", "Oldest possible"] + list(HIST.values()), rows)
+    table("primary", ["Reading", "Category", "Units", "Oldest possible"] + list(HIST.values()), rows)
 
     rows = []
     for cut in ("Emsian", "Pragian", "Lochkovian", "Pridoli"):
@@ -61,14 +64,14 @@ def main():
                and r["cutoff"] == cut}
         rows.append([f"{cut} ({float(sel['flat']['cutoff_ma']):.2f})", sel["flat"]["n_guaranteed"]]
                     + [fmt(sel[h]) for h in HIST])
-    table(TABLES / "cutoffs.md", ["Younger cutoff (Ma)", "Units"] + list(HIST.values()), rows)
+    table("cutoffs", ["Younger cutoff (Ma)", "Units"] + list(HIST.values()), rows)
 
     rows = []
     for (units, variant), label in VARIANT.items():
         sel = {r["history"]: r for r in bounds if r["units"] == units and r["variant"] == variant and not r["excluded_region"]
                and r["reading"] == "main" and r["category"] == "B2" and r["cutoff"] == "Emsian"}
         rows.append([label, sel["flat"]["n_guaranteed"], fmt(sel["flat"]), fmt(sel["pbdb_all"]), fmt(sel["decline25"])])
-    table(TABLES / "units.md", ["B2 unit or source variant", "Units", "Constant", "PBDB density", "Decline 25 Myr"], rows)
+    table("units", ["B2 unit or source variant", "Units", "Constant", "PBDB density", "Decline 25 Myr"], rows)
 
     rows = []
     for r in sorted((r for r in bounds if r["excluded_region"] and r["reading"] == "main" and r["category"] == "B2"
@@ -77,14 +80,14 @@ def main():
                   and x["category"] == "B2" and x["cutoff"] == "Emsian" and x["history"] == "pbdb_all")
         rows.append([r["excluded_region"].replace("-", " "), r["n_guaranteed"], f"{float(r['oldest_possible_ma']):.1f}",
                      fmt(r), fmt(pb)])
-    table(TABLES / "regions.md", ["Region left out", "Units", "Oldest possible", "Constant", "PBDB density"], rows)
+    table("regions", ["Region left out", "Units", "Oldest possible", "Constant", "PBDB density"], rows)
 
     rows = []
     for r in read("shape_diagnostics.csv"):
         if r["reading"] == "main" and r["age_rule"] == "independent_uniform":
             rows.append([CAT[r["category"]], HIST[r["history"]], f"{float(r['midpoint_D']):.3f}",
                          f"{float(r['imputed_nominal_p_q05']):.2g}–{float(r['imputed_nominal_p_q95']):.2g}"])
-    table(TABLES / "shape.md", ["Category", "History", "KS D at midpoint ages", "Nominal p, 5–95% of age draws"], rows)
+    table("shape", ["Category", "History", "KS D at midpoint ages", "Nominal p, 5–95% of age draws"], rows)
 
     rows = []
     for r in read("suppression_sensitivity.csv"):
@@ -92,7 +95,7 @@ def main():
             rows.append([r["baseline"].replace("pbdb_all", "PBDB density").replace("flat", "constant"), r["break_ma"],
                          r["older_multiplier"], r["modified_segment_overlaps_age_support"],
                          fmt(r), f"{float(r['midpoint_nominal_shape_p']):.3g}"])
-    table(TABLES / "suppression.md", ["Baseline", "Break (Ma)", "Older multiplier", "Changes age support?",
+    table("suppression", ["Baseline", "Break (Ma)", "Older multiplier", "Changes age support?",
                                       "Older bound (Ma)", "Midpoint shape p"], rows)
 
     rows = []
@@ -101,14 +104,14 @@ def main():
             q = (lambda k: f"{float(r[k]):.2f}" if r[k] else "—")
             rows.append([CAT[r["category"]], HIST[r["history"]], r["age_rule"].replace("_", " "),
                          q("bound_q05_ma"), q("bound_median_ma"), q("bound_q95_ma"), r["beyond_domain_fraction"][:4]])
-    table(TABLES / "ages.md", ["Category", "History", "Allocation", "5%", "Median", "95%", "Unbounded fraction"], rows)
+    table("ages", ["Category", "History", "Allocation", "5%", "Median", "95%", "Unbounded fraction"], rows)
 
     rows = []
     for r in read("delay_sensitivity.csv"):
         if r["history"] == "flat":
             rows.append([CAT[r["category"]], r["assumed_delay_myr"], f"{float(r['recoverability_bound_ma']):.2f}",
                          f"{float(r['lineage_bound_if_delay_fixed_ma']):.2f}"])
-    table(TABLES / "delay.md", ["Category", "Assumed delay (Myr)", "Recoverability bound", "Lineage bound"], rows)
+    table("delay", ["Category", "Assumed delay (Myr)", "Recoverability bound", "Lineage bound"], rows)
 
     rows = []
     for r in read("simulation_results.csv"):
@@ -118,8 +121,16 @@ def main():
         rows.append([r["scenario"].replace("_", " "), HIST.get(r["true_history"], r["true_history"]),
                      HIST.get(r["fitted_history"], r["fitted_history"]), r["age_mode"].replace("_", " "), r["duplicate_factor"],
                      r["delay_adjustment_ma"], r["recovery_truth_ma"], f"{float(r['claim_frequency']):.3f}", cov])
-    table(TABLES / "simulation.md", ["Scenario", "True history", "Fitted history", "Ages", "Duplication", "Delay adj.",
+    table("simulation", ["Scenario", "True history", "Fitted history", "Ages", "Duplication", "Delay adj.",
                                      "Endpoint (Ma)", "Claim frequency", "Coverage (Wilson 95%)"], rows)
+
+    text = SUPPLEMENT.read_text()
+    for name, block in BLOCKS.items():
+        text, n = re.subn(rf"(<!-- table:{name} -->\n).*?(\n<!-- /table:{name} -->)",
+                          lambda m: m.group(1) + block + m.group(2), text, flags=re.S)
+        if n != 1:
+            raise ValueError(f"marker for table {name} found {n} times")
+    SUPPLEMENT.write_text(text)
 
 
 if __name__ == "__main__":

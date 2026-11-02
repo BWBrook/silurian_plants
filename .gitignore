@@ -20,3 +20,7 @@ data/eprp/context/deposits/
 data/external/spores/palynodata_*.csv
 data/external/spores/palynodata_release/
 data/external/spores/wellman2013_supplement/
+
+# makedoc outputs: PDFs are tracked snapshots; DOCX and build manifests (absolute paths) are not
+manuscript/build/*.docx
+manuscript/build/*_build_manifest.json

@@ -3,6 +3,42 @@
 Dated record of decisions that shape the programme. Newest first. Say who decided, and quote
 Barry exactly (with source) or label a paraphrase.
 
+## 2026-11-02: Paper toolchain, three renderings and a layout proposal (Barry; Claude)
+
+Barry, in chat on 2 November (turn 12), asked for three things. First, consider whether the
+repository's layout can hold further focused studies without "all smoosh[ing] together over time".
+Second, "default to using my `makedoc` toolkit", with a CSL fetched once a journal is chosen and
+references gathered through his Zotero from a DOI list. Third, write every paper "first and foremost for
+a repo-driven, CC-BY-SA future", treating the journal article as "an emitted 'snapshotted' product from a
+living repository". He also asked for "a short paper (I suggest 2 x A4 pages maximum…) written for a broad
+audience", which he judges as important as the traditional paper, and "maybe … an 'only for agents'
+paper".
+
+Adopted and done by Claude:
+
+- **makedoc.** The paper sources are now `manuscript/text/{main,figures,supplement,supplement_figures,brief}.md`,
+  built by profiles in `manuscript/settings/build.yaml` (`make -C manuscript`). The Quarto sources and
+  renders are removed. Citations are Pandoc keys. `tables.py` writes the supplement tables between
+  markers in `supplement.md`. Figures are renamed to citation order (mapping now Fig. 2). The CSL is a
+  Chicago author-date placeholder.
+- **Bibliography.** `references/dois.txt`, one DOI per line, is the ledger and the list Barry asked
+  for. `tools/refs.py build` writes `references/refs.yaml` from Crossref CSL-JSON, with Better BibTeX-style
+  keys. Claude's recommendation, for Barry to accept or reject: keep this scripted route as canonical, so
+  that agents can add references without a round trip, and use the Zotero library as a mirror and
+  for metadata repair.
+- **Three renderings of one study.** The full paper and supplement; a two-page brief for any reader
+  (`brief.md`, one figure, `build/brief.pdf`); and an agent paper (`for-agents.md`) that indexes the claims,
+  provenance, superseded results, checks and open edges instead of arguing.
+- **Layout.** `docs/layout-proposal.md` proposes shared commons plus self-contained `studies/<id>/`
+  folders, with dependency rules, per-study decision logs and releases. It is a proposal only. Moving
+  `models/f3/` and the hash-bound records needs Codex's agreement (`AGENTS.md`: "Discuss and agree file
+  ownership before concurrent edits") and should follow review C.
+
+**Structural review (Q1/Q5):** no scientific result changed. What was exposed is structural: the
+programme had one paper slot and one decision log, and F3's evidence was discoverable mainly through
+its claim ledger. The agent paper makes that index explicit; the layout proposal would make it
+structural.
+
 ## 2026-11-02: Loop 3 sprint C delivered (Claude)
 
 Barry returned the work to Claude in chat on 2 November ("Back to you."). Claude adopted Codex's review A

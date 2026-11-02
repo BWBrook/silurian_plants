@@ -1,23 +1,6 @@
----
-title: "Older than their fossils? What the Ordovician–Silurian record can test about the maxima that divide land-plant molecular clocks"
-subtitle: "Internal research draft, Loop 3 reconstruction. Not for release; release and submission are Barry W. Brook's decision."
-author:
-  - Barry W. Brook
-  - Claude Opus 5.5 and OpenAI Codex (AI roles below)
-date: 2026-11-02
-format:
-  html:
-    toc: true
-    embed-resources: true
-  pdf:
-    pdf-engine: xelatex
-    toc: false
-    geometry: margin=2.2cm
-    mainfont: "Helvetica Neue"
-crossref:
-  fig-prefix: Fig.
-  tbl-prefix: Table
----
+# Older than their fossils? What the Ordovician–Silurian record can test about the maxima that divide land-plant molecular clocks
+
+<div id="authors"></div>
 
 ## Abstract
 
@@ -44,36 +27,34 @@ not require one.
 ## 1. Why fossil maxima decide the age of land plants
 
 When did plants colonise the land, and how fast did the vascular plants that came to dominate it
-diversify? Molecular clocks give strikingly different answers (@fig-problem). Morris et al. (2018) placed
+diversify? Molecular clocks give strikingly different answers (Fig. [1](#fig-problem)). @morris2018TimescaleEarlyLand placed
 crown Embryophyta (the last common ancestor of living land plants and all its descendants) at 515–474 Ma
-across seven topologies, and Harris et al. (2022) at 515–493 Ma. Hooper et al. (2026), using the same molecular dataset as Harris et al. but
+across seven topologies, and @harris2022DivergentEvolutionaryTrajectories at 515–493 Ma. @hooper2026ReconstructingSporeEvolution, using the same molecular dataset as Harris et al. but
 recalibrated fossils, obtained 457–450 Ma: a crown-group mean 55 Myr younger. For crown Tracheophyta
 (living vascular plants) the estimates are 451–419 Ma (Morris et al.), 452–447 Ma (Harris et al.) and
-432–428 Ma (Hooper et al.). Su et al. (2021) obtained still older crown-embryophyte ages with a
+432–428 Ma (Hooper et al.). @su2021LargescalePhylogenomicAnalyses obtained still older crown-embryophyte ages with a
 Proterozoic maximum. These are disagreeing results, not one uncertain estimate.
 
 The difference matters biologically. If crown land plants are Cambrian, they existed for about 80 Myr
-before the first recognisable land-plant body fossil, from the Sheinwoodian, about 432 Ma (Libertín et al.
-2018). If they are Late Ordovician, that gap shrinks to as little as 19 Myr and the oldest bodies sit close
+before the first recognisable land-plant body fossil, from the Sheinwoodian, about 432 Ma [@libertin2018SporophytesPolysporangiateLand]. If they are Late Ordovician, that gap shrinks to as little as 19 Myr and the oldest bodies sit close
 to the root of the living radiation. The two readings imply different histories of terrestrial
-productivity, weathering and the assembly of the plant body plan (Kenrick et al. 2012; Strother & Foster
-2021; Donoghue et al. 2021).
+productivity, weathering and the assembly of the plant body plan [@kenrick2012TimelineTerrestrializationConsequences; @strother2021FossilRecordLand; @donoghue2021EvolutionaryEmergenceLand].
 
 Fossils enter clocks as minima and maxima. A minimum rests on a dated fossil whose placement can be
 argued. A maximum rests on what was not found: older rocks that should have yielded the diagnostic
 fossil if the lineage had existed. Hooper et al.'s recalibration shows how much rides on that argument.
 Where Morris et al. set the crown land-plant maximum at 515.5 Ma from Cambrian cryptospores, Hooper et al.
 set it at 459.1 Ma from the oldest trilete spores, and they set 431.2 Ma for crown vascular plants. The use
-of absence-based maxima is itself contested (Hedges et al. 2018; Su et al. 2021).
+of absence-based maxima is itself contested [@hedges2018AccurateTimetreesRequire; @su2021LargescalePhylogenomicAnalyses].
 
-A maximum makes two claims that are easily run together (@fig-mapping). The first concerns recovery:
+A maximum makes two claims that are easily run together (Fig. [2](#fig-mapping)). The first concerns recovery:
 that sampled rocks of the right age, facies and preparation would have yielded the fossil if its
 producers were present at some stated abundance. The second concerns biology: that the producing
 lineage made the diagnostic spore or body from its origin, so the first recoverable fossil can stand
 in for the node. Early land plants strain both. Land-plant spores appear about 40 Myr before land-plant
-bodies (Wellman & Gray 2000). Terrestrial deposits are scarce before the latest Silurian, at least in
-western Europe (Kenrick et al. 2012). The oldest parent plants known in detail are minute, and
-bryophyte-grade plants lack lignin and preserve poorly (Edwards et al. 2014; Morris et al. 2018).
+bodies [@wellman2000MicrofossilRecordEarly]. Terrestrial deposits are scarce before the latest Silurian, at least in
+western Europe [@kenrick2012TimelineTerrestrializationConsequences]. The oldest parent plants known in detail are minute, and
+bryophyte-grade plants lack lignin and preserve poorly [@edwards2014CryptosporesCryptophytesReveal; @morris2018TimescaleEarlyLand].
 
 We therefore asked what each of the three maxima would need from the sampled record, and then tested
 what the record allows. The work had three parts:
@@ -89,21 +70,19 @@ what the record allows. The work had three parts:
 The third part needs no inventory of searched but empty rock; it substitutes an assumption about how
 recovery behaved before the first find, and we vary that assumption explicitly.
 
-![The problem. Top two panels: published crown-age intervals from three molecular-clock studies (Morris et al. 2018; Harris et al. 2022; Hooper et al. 2026), with the three calibration maxima examined here (dashed). Bottom: first appearances of four fossil channels. Pale bars run from the oldest possible to the oldest certain occurrence; for spores these are the strict-set first appearances of the project compilation, and for bodies they are the reviewed locality units of this study. The hatched bar marks Cambrian Stage 4 cryptospore-like forms, whose land-plant affinity none of the sources examined accepts.](figures/fig1_problem.png){#fig-problem}
-
 ## 2. Evidence, its geography and its independence
 
-Three bodies of evidence carry the tests (@fig-evidence).
+Three bodies of evidence carry the tests (Fig. [3](#fig-evidence)).
 
-**Murzuq Basin cuttings.** Abuhmida (2013) reported palynology from Ordovician to lower Silurian
+**Murzuq Basin cuttings.** @abuhmida2013PalynologicalAnalysisOrdovician reported palynology from Ordovician to lower Silurian
 wells in southwest Libya. We transcribed all 164 appendix samples and their chart and prose reports,
 and used the chart-coded cuttings of five wells as the primary frame. Three wells supply 28 cuttings
 older than the Llandovery, none reporting trilete spores, and all five supply 59 Llandovery reference
 cuttings, 51 of which report them. Northern Africa lay near the Ordovician South Pole, within the area
-of Hirnantian glaciation (Cocks & Torsvik 2021; Scotese et al. 2021), so this frame samples one
+of Hirnantian glaciation [@cocks2021OrdovicianPalaeogeographyClimate; @scotese2021PhanerozoicPaleotemperaturesEarths], so this frame samples one
 high-latitude basin.
 
-**QSIM-801.** Vecoli et al. (2017) tabulate 99 cryptospore occurrences in 17 of 20 samples from a
+**QSIM-801.** @vecoli2017MiddleOrdovicianCryptospores tabulate 99 cryptospore occurrences in 17 of 20 samples from a
 Saudi Arabian borehole assigned to the late Dapingian–early Darriwilian, and report no trilete spores
 in the studied sequence. The material and basin are independent of Murzuq.
 
@@ -118,9 +97,8 @@ several sporangia) and 50 of crown vascular-plant members (the lycophyte line or
 
 The body record is geographically concentrated where it matters most. Of the 48 crown vascular-plant
 units, only 16 have age support older than the Silurian–Devonian boundary, and those come from eight
-regions. The two oldest-possible clusters are Yea, Victoria (two horizons whose age is disputed between
-Gorstian and Early Devonian; Earp 2024) and Bathurst Island, Arctic Canada (Ludfordian; Kotyk et al.
-2002). Silurian land-plant bodies more generally come mainly from Laurentia (11 of 34 wholly Silurian units)
+regions. The two oldest-possible clusters are Yea, Victoria, two horizons whose age is disputed between Gorstian and Early Devonian [@earp2024NotanopliidBrachiopodsAssociated], and the
+Ludfordian of Bathurst Island, Arctic Canada [@kotyk2002MorphologicallyComplexPlant]. Silurian land-plant bodies more generally come mainly from Laurentia (11 of 34 wholly Silurian units)
 and peri-Gondwanan Europe (8).
 Laurentia supplies 29 of the 77 land-plant units, most of them Devonian.
 
@@ -132,16 +110,14 @@ calibrations, and the oldest trilete spores set a maximum. Agreement between a b
 clock therefore tests whether an absence-based maximum is reasonable; it does not validate a clock
 posterior.
 
-![Where the tested evidence comes from. Body-fossil locality units (main reading) by palaeogeographic region; bars span reported age ranges, coloured by the most specific category each unit supports. Blue: Murzuq Basin cuttings used in the spore test (older cuttings without trilete reports, and the Llandovery reference block). Hatched: QSIM-801 cryptospore samples (full-stage enclosure; the source assigns them more finely, to the late Dapingian–early Darriwilian). Regions follow approximate modern country or state assignments, not a palaeogeographic reconstruction. Spore records outside these two frames are not shown.](figures/fig2_evidence.png){#fig-evidence}
-
 ## 3. Results
 
 ### 3.1 Crown land plants before 515.5 Ma: a question of affinity, not absence
 
-The 515.5 Ma maximum of Morris et al. (2018) rests on Cambrian cryptospore-like packets and polyads.
-Of the three sources we examined, none accepts them as land-plant spores. Strother (2016) placed the
-Tennessee taxa in Charophyta, Taylor & Strother (2024) read the packets as pre-embryophytic, and
-Wang et al. (2022) favoured ancestral aeroterrestrial algae while calling an embryophyte affinity unlikely.
+The 515.5 Ma maximum of @morris2018TimescaleEarlyLand rests on Cambrian cryptospore-like packets and polyads.
+Of the three sources we examined, none accepts them as land-plant spores. @strother2016SystematicsEvolutionarySignificance placed the
+Tennessee taxa in Charophyta, @taylor2024UltrastructureCambrianCryptospores read the packets as pre-embryophytic, and
+@wang2022PalynologicalAssemblageCambrian favoured ancestral aeroterrestrial algae while calling an embryophyte affinity unlikely.
 More decisively, the material is Stage 4, 514.5–506.5 Ma on our timescale, and so younger than the maximum
 itself. Even accepting it would neither contradict 515.5 Ma nor establish crown membership. No assessed
 source documents productive sampled material older than 515.5 Ma in which land-plant spores would have
@@ -149,7 +125,7 @@ been reported. This maximum cannot be tested from the sampled record; it is a ju
 
 ### 3.2 Crown land plants before 459.1 Ma: one quantitative test, conditional on recovery
 
-The 459.1 Ma maximum of Hooper et al. (2026) rests on the oldest possible trilete spores. Under their
+The 459.1 Ma maximum of @hooper2026ReconstructingSporeEvolution rests on the oldest possible trilete spores. Under their
 ancestral-state reconstruction, trilete monads mark total-group land plants, so a crown older than
 459.1 Ma would imply undetected trilete producers. Murzuq is the only frame we found in which that
 implication can be confronted with documented older and younger samples.
@@ -160,6 +136,8 @@ delivery-and-recovery ratio *ρ* covers differences in transport, preservation a
 older and younger material. Procedures were checked by simulation on a declared grid and admitted only
 where coverage reached 0.93 (Supplement S2).
 
+**Table 1.** What the Murzuq comparison allows: 95% compatibility limits on older trilete-producer intensity as a fraction *f* of the Llandovery reference, primary stage allocation. Rows 1–2 constrain intensity sustained from 459.1 Ma to the reference; rows 3–4 constrain an interval of fixed intensity beginning at 459.1 Ma and extending further back.
+
 | Question asked of the 28 older cuttings | Delivery equal (*ρ* = 1) | Delivery halved | Delivery quartered | Delivery a tenth |
 |------------------------------------|-----------:|-----------:|-----------:|-----------:|
 | Largest constant producer intensity, 459.1 Ma to the Llandovery | 0.091 | 0.182 | 0.364 | 0.910 |
@@ -167,9 +145,7 @@ where coverage reached 0.93 (Supplement S2).
 | Oldest end of a reference-intensity interval beginning at 459.1 Ma | 462.6 Ma | 464.1 Ma | 467.1 Ma | no limit |
 | Oldest end of an interval at 0.1 or 0.01 of reference intensity | no limit | no limit | no limit | no limit |
 
-: What the Murzuq comparison allows: 95% compatibility limits on older trilete-producer intensity as a fraction *f* of the Llandovery reference, primary stage allocation. Rows 1–2 constrain intensity sustained from 459.1 Ma to the reference; rows 3–4 constrain an interval of fixed intensity beginning at 459.1 Ma and extending further back. {#tbl-murzuq}
-
-The result is clear in form and conditional in substance (@tbl-murzuq). What the zeros constrain is
+The result is clear in form and conditional in substance (Table 1). What the zeros constrain is
 delivered, recovered encounter: the product *ρf* stays near 0.09 across delivery scenarios. If older
 material delivered and preserved spores as well as the Llandovery reference, trilete producers sustained
 from 459.1 Ma must have been below a tenth of their Llandovery intensity. If delivery was a tenth as good,
@@ -195,15 +171,13 @@ qualified test (Supplement S3).
 ### 3.3 Crown vascular plants: what the body record allows
 
 No assessed source supplies a roster of searched Silurian beds with comparable effort for the 431.2 Ma
-maximum. The Irish late-Wenlock sections report fossil-free mudstone qualitatively, without an enumerated
-roster, and the historical Barrandian axes are selected specimens, not search trials. We therefore turned to the positive record.
+maximum. The Irish late-Wenlock sections report fossil-free mudstone qualitatively, without an enumerated roster [@edwards1980RecordsCooksoniatypeSporangia], and the historical Barrandian axes are selected specimens, not search trials. We therefore turned to the positive record.
 
 **Method.** For a fixed recovery history *w*(*t*), the relative rate at which an existing lineage
 contributes dated, recoverable occurrences, and *n* independent units after a younger cutoff *c*, the
 one-sided 95% older bound *T* on the start of the recoverable record solves
 $U(T) = U(A)\,0.05^{-1/n}$. Here *A* is the oldest unit's age and $U(a)=\int_c^a w(s)\,ds$. With constant
-*w* this is the classical confidence interval on a stratigraphic range (Strauss & Sadler 1989; Marshall
-1990), and the absolute rate cancels. Interval-dated units enter conservatively: the oldest possible
+*w* this is the classical confidence interval on a stratigraphic range [@strauss1989ClassicalConfidenceIntervals; @marshall1990ConfidenceIntervalsStratigraphic], and the absolute rate cancels. Interval-dated units enter conservatively: the oldest possible
 age and the smallest number certainly older than the cutoff. We report the bound for six histories:
 constant recovery; recovery proportional to PBDB land and marginal-marine collections per Myr, with and
 without collections that match the plant-filtered extract; and recovery declining exponentially into
@@ -213,7 +187,7 @@ the past on 25 and 10 Myr timescales, the last also combined with plant-excluded
 **The known-answer check.** The same calculation for any land-plant body (75 units, oldest the
 Sheinwoodian *Cooksonia barrandei*) gives bounds of 434.5–437.2 Ma under the four histories that
 produce one. Land-plant cryptospores are certainly present by 458.2 Ma. The start of the recoverable
-body record therefore lies 21–24 Myr after the land-plant lineage is known to exist (@fig-bodies, top).
+body record therefore lies 21–24 Myr after the land-plant lineage is known to exist (Fig. [4](#fig-bodies), top).
 This does not supply a preservation lag to transfer to vascular plants or an origination date to
 calibrate against. It does show, in this system, that a lineage can be present for more than 20 Myr
 before its bodies enter the record at the rate seen later. Under the inclusive reading the Hirnantian
@@ -222,9 +196,11 @@ still 11 Myr short of the spores.
 
 **Crown vascular plants.** For the 48 crown-member units the bounds are tightly grouped under the
 histories tied to the observed record: 428.8 Ma for constant recovery, 428.9 Ma for collection density
-and 428.5 Ma with plant-matched collections removed (@tbl-bodies). These fall within Hooper et al.'s
+and 428.5 Ma with plant-matched collections removed (Table 2). These fall within Hooper et al.'s
 432–428 Ma interval and are younger than their 431.2 Ma maximum. A 25 Myr decline into the past gives
 431.6 Ma. A 10 Myr decline gives no bound within the 469.4 Ma limit of the effort history.
+
+**Table 2.** Conservative 95% older bounds (Ma) on the start of the recoverable body record, main reading, conditional on each recovery history and on independent units. † Retrospective sensitivity chosen after the main analysis; not a nominal 95% bound.
 
 | Recovery history | Land-plant body | Polysporangiophyte | Crown vascular plant |
 |----------------------------------------|-----------:|-----------:|-----------:|
@@ -235,8 +211,6 @@ and 428.5 Ma with plant-matched collections removed (@tbl-bodies). These fall wi
 | Declining into the past, 10 Myr timescale | none ≤ 469.4 | none ≤ 469.4 | none ≤ 469.4 |
 | Constant, recovery before 426.7 Ma reduced tenfold† | 446.7 | 447.7 | 448.1 |
 | Constant, recovery before 426.7 Ma reduced a hundredfold† | none ≤ 469.4 | none ≤ 469.4 | none ≤ 469.4 |
-
-: Conservative 95% older bounds (Ma) on the start of the recoverable body record, main reading, conditional on each recovery history and on independent units. † Retrospective sensitivity chosen after the main analysis; not a nominal 95% bound. {#tbl-bodies}
 
 These numbers are robust to most data choices and sensitive to a few (Supplement Tables S4–S6).
 Counting individual collections instead of locality proxies gives 428.0 Ma, and restoring wide-age
@@ -268,8 +242,6 @@ horizons treated as independent cut coverage to about 0.78 (pairs) or 0.53 (quar
 recovery to a true 10 Myr decline gives 0.03–0.24. An ignored 10–20 Myr origin-to-body delay can give
 zero coverage of the lineage age (Supplement S5.6, Table S11).
 
-![Older bounds on the start of the recoverable body record. Each row is one declared recovery history; points are conservative 95% older bounds conditional on that history and on independent locality units (main reading). Grey: span of the observed units. Open triangles (†) are retrospective sensitivities in which recovery before 426.7 Ma is reduced; for the crown-member category they leave the fit to the observed record unchanged. Top: blue shading marks land-plant cryptospores, possible from 469.4 Ma and certain by 458.2 Ma. Bottom: shaded bands are published crown vascular-plant intervals and the dashed line is the 431.2 Ma maximum; they are comparators, not validation targets. Arrows: no bound within the 469.4 Ma limit of the declared histories.](figures/fig3_bodies.png){#fig-bodies}
-
 ## 4. What follows for early land-plant evolution
 
 ### 4.1 An older, sparsely recorded flora is allowed, not required
@@ -288,8 +260,8 @@ recoverable record at the rate seen afterwards. A lag of that kind is therefore 
 this system, not a special pleading invoked to rescue old clock dates. The record does not show how long
 any such lag lasted for crown vascular plants. Recoverable bodies need size, cuticle and lignified tissue,
 and those traits evolved along the lineages being dated. Terrestrial deposits are scarce before the latest Silurian
-(Kenrick et al. 2012), and the oldest unequivocal body fossil is preserved in marine sediments
-(Libertín et al. 2018). In our judgement, a tenfold lower pre-Ludlow recovery is therefore not extreme,
+[@kenrick2012TimelineTerrestrializationConsequences], and the oldest unequivocal body fossil is preserved in marine sediments
+[@libertin2018SporophytesPolysporangiateLand]. In our judgement, a tenfold lower pre-Ludlow recovery is therefore not extreme,
 but neither is it demonstrated.
 
 The young clock of Hooper et al. is thus consistent with the record under the simplest recovery
@@ -303,17 +275,17 @@ instead of hiding it in a soft-bound tail probability.
 
 ### 4.2 Which conclusions depend on which assumptions
 
+**Table 3.** Dependence of each main conclusion on recovery assumptions and on the character-to-lineage mapping.
+
 | Conclusion | Rests on | Fails if |
 |------------------|----------------------|----------------------|
 | Murzuq excludes abundant, well-delivered trilete producers through the Late Ordovician | encounter model; delivery *ρ*; reference purity; stage dating of cuttings | older delivery was much lower, reference triletes include caved or recycled grains, or ages are shifted |
-| That exclusion bears on crown land plants | trilete production at the embryophyte crown and its persistence (Hooper et al. 2026); our persistence pilot | the ancestral land plant did not make trilete monads, or they were lost in lineages present in the basin |
+| That exclusion bears on crown land plants | trilete production at the embryophyte crown and its persistence [@hooper2026ReconstructingSporeEvolution]; our persistence pilot | the ancestral land plant did not make trilete monads, or they were lost in lineages present in the basin |
 | Recoverable crown vascular-plant bodies began after about 429 Ma | recovery history before and within the record; unit independence; ages within reported ranges | pre-Ludlow recovery was much lower; units are pseudoreplicated; Yea or Bathurst ages are wrong |
 | That bound bears on the crown vascular-plant node | lycophyte-line and euphyllophyte bodies are crown members; crown-diagnostic bodies arose near the node | crown origin preceded recognisable crown bodies by a long delay |
 | Bodies lag the land-plant lineage by more than 20 Myr | accepted cryptospores are land-plant; body bounds as above | cryptospore affinity is wrong; recovery rose steeply before the Silurian |
 
-: Dependence of each main conclusion on recovery assumptions and on the character-to-lineage mapping. {#tbl-assumptions}
-
-The two right-hand columns of @tbl-assumptions separate assumptions about how fossils were recovered
+The two right-hand columns of Table 3 separate assumptions about how fossils were recovered
 from assumptions about what the fossils were. The second kind cannot be tested by sampling at all: no
 amount of searched rock establishes that a body with sporangia but no demonstrated tracheids belongs
 to the vascular crown, or that a trilete mark means an embryophyte producer. Our pilot of
@@ -321,8 +293,6 @@ specimen-to-node links shows that some of these links are supported under declar
 example, under stochastic-mapping models fitted to Hooper et al.'s deposited data, a trilete aperture
 present at the land-plant crown persists to the vascular-plant crown with probability 0.977. Others, notably the link from the oldest branched sporophytes to vascular crown
 membership, remain contested (Supplement S6).
-
-![From observed material to node interpretation. For each maximum, the observed material, what it is taken to be, the sampling evidence, the persistence of the diagnostic trait and the implication for the crown node are separate links; a maximum needs all five.](figures/fig4_mapping.png){#fig-mapping}
 
 ### 4.3 What would sharpen the answer
 
@@ -390,27 +360,3 @@ Copyrighted source texts and third-party deposits are not redistributed; scripts
 and verify their hashes. Public release is Barry W. Brook's decision.
 
 ## References
-
-- Abuhmida FH (2013). Palynological analysis of the Ordovician to Lower Silurian sediments from the Murzuq Basin, southwest Libya. PhD thesis, University of Sheffield.
-- Cocks LRM, Torsvik TH (2021). Ordovician palaeogeography and climate change. Gondwana Research 100: 53–72. https://doi.org/10.1016/j.gr.2020.09.008
-- Donoghue PCJ, Harrison CJ, Paps J, et al. (2021). The evolutionary emergence of land plants. Current Biology 31: R1281–R1298. https://doi.org/10.1016/j.cub.2021.07.038
-- Earp C (2024). Notanopliid brachiopods and associated fossils from the Yea area, central Victoria: a key to resolving age and correlation problems in a complex geological setting. Proceedings of the Royal Society of Victoria 136. https://doi.org/10.1071/rs23021
-- Edwards D, Feehan J (1980). Records of Cooksonia-type sporangia from late Wenlock strata in Ireland. Nature 287: 41–42. https://doi.org/10.1038/287041a0
-- Edwards D, Morris JL, Richardson JB, Kenrick P (2014). Cryptospores and cryptophytes reveal hidden diversity in early land floras. New Phytologist 202: 50–78. https://doi.org/10.1111/nph.12645
-- Harris BJ, Clark JW, Schrempf D, et al. (2022). Divergent evolutionary trajectories of bryophytes and tracheophytes from a complex common ancestor of land plants. Nature Ecology & Evolution 6: 1634–1643. https://doi.org/10.1038/s41559-022-01885-x
-- Hedges SB, Tao Q, Walker M, et al. (2018). Accurate timetrees require accurate calibrations. Proceedings of the National Academy of Sciences 115. https://doi.org/10.1073/pnas.1812558115
-- Hooper J, Worth AM, Wellman CH, Clark JW, Donoghue PCJ (2026). Reconstructing spore evolution recalibrates the timescale of land plant diversification. Nature Plants. https://doi.org/10.1038/s41477-026-02432-3
-- Kenrick P, Wellman CH, Schneider H, et al. (2012). A timeline for terrestrialization: consequences for the carbon cycle in the Palaeozoic. Philosophical Transactions of the Royal Society B 367: 519–536. https://doi.org/10.1098/rstb.2011.0271
-- Kotyk ME, Basinger JF, Gensel PG, et al. (2002). Morphologically complex plant macrofossils from the Late Silurian of Arctic Canada. American Journal of Botany 89: 1004–1013. https://doi.org/10.3732/ajb.89.6.1004
-- Libertín M, Kvaček J, Bek J, et al. (2018). Sporophytes of polysporangiate land plants from the early Silurian period may have been photosynthetically autonomous. Nature Plants 4: 269–271. https://doi.org/10.1038/s41477-018-0140-y
-- Marshall CR (1990). Confidence intervals on stratigraphic ranges. Paleobiology 16: 1–10. https://doi.org/10.1017/s0094837300009672
-- Morris JL, Puttick MN, Clark JW, et al. (2018). The timescale of early land plant evolution. Proceedings of the National Academy of Sciences 115: E2274–E2283. https://doi.org/10.1073/pnas.1719588115
-- Scotese CR, Song H, Mills BJW, et al. (2021). Phanerozoic paleotemperatures: The earth’s changing climate during the last 540 million years. Earth-Science Reviews 215: 103503. https://doi.org/10.1016/j.earscirev.2021.103503
-- Strauss D, Sadler PM (1989). Classical confidence intervals and Bayesian probability estimates for ends of local taxon ranges. Mathematical Geology 21: 411–427. https://doi.org/10.1007/bf00897326
-- Strother PK (2016). Systematics and evolutionary significance of some new cryptospores from the Cambrian of eastern Tennessee, USA. Review of Palaeobotany and Palynology 227: 28–41. https://doi.org/10.1016/j.revpalbo.2015.10.006
-- Strother PK, Foster C (2021). A fossil record of land plant origins from charophyte algae. Science 373: 792–796. https://doi.org/10.1126/science.abj2927
-- Su D, Yang L, Shi X, et al. (2021). Large-scale phylogenomic analyses reveal the monophyly of bryophytes and Neoproterozoic origin of land plants. Molecular Biology and Evolution 38: 3332–3344. https://doi.org/10.1093/molbev/msab106
-- Taylor WA, Strother PK (2024). Ultrastructure of Cambrian cryptospores and the early evolution of the plant spore wall. Fossil Imprint 80: 90–106. https://doi.org/10.37520/fi.2024.009
-- Vecoli M, Wellman CH, Gerrienne P, Le Hérissé A, Steemans P (2017). Middle Ordovician cryptospores from the Saq-Hanadir transitional beds in the QSIM-801 well, Saudi Arabia. Revue de Micropaléontologie 60: 319–331. https://doi.org/10.1016/j.revmic.2017.06.003
-- Wang K, Xu H-H, Yin L-M (2022). A palynological assemblage from the Cambrian (Series 2, Stage 4) of Shandong Province, China, and its implications to the transition from algae to land plants. Review of Palaeobotany and Palynology 301: 104645. https://doi.org/10.1016/j.revpalbo.2022.104645
-- Wellman CH, Gray J (2000). The microfossil record of early land plants. Philosophical Transactions of the Royal Society B 355: 717–732. https://doi.org/10.1098/rstb.2000.0612

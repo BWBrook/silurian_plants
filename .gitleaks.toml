@@ -1,0 +1,11 @@
+# Default rules, minus CSL citation keys (e.g. `citation-key: harris2022DivergentEvolutionaryTrajectories`),
+# which the generic-api-key rule mistakes for secrets.
+[extend]
+useDefault = true
+
+[[allowlists]]
+description = "CSL citation keys in references/refs.yaml"
+paths = ['''^references/refs\.yaml$''']
+regexTarget = "line"
+regexes = ['''^\s*(- )?(id|citation-key): [a-z-]+[0-9]{4}[A-Za-z0-9]*$''']
+condition = "AND"

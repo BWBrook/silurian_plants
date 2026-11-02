@@ -1,25 +1,8 @@
----
-title: "Supplement: methods, sensitivities and audit trail"
-subtitle: "For “Older than their fossils? What the Ordovician–Silurian record can test about the maxima that divide land-plant molecular clocks”. Internal research draft; not for release."
-author:
-  - Barry W. Brook
-  - Claude Opus 5.5 and OpenAI Codex
-date: 2026-11-02
-format:
-  html:
-    toc: true
-    embed-resources: true
-  pdf:
-    pdf-engine: xelatex
-    toc: true
-    geometry: margin=2.2cm
-    mainfont: "Helvetica Neue"
-crossref:
-  fig-prefix: Fig.
-  tbl-prefix: Table
-  fig-title: "Figure S"
-  tbl-title: "Table S"
----
+# Supplement: methods, sensitivities and audit trail
+
+For *Older than their fossils? What the Ordovician–Silurian record can test about the maxima that divide land-plant molecular clocks*.
+
+<div id="authors"></div>
 
 This supplement holds the machinery behind the main text. Repository paths are given so that every
 number can be traced to the table or script that produced it. Internal labels appear here because
@@ -52,7 +35,7 @@ within-range positions are modelling choices, not measured dating distributions.
 
 ### S2.1 Source and frame
 
-Abuhmida (2013) reports palynology from six Murzuq Basin wells. All 164 appendix samples were
+@abuhmida2013PalynologicalAnalysisOrdovician reports palynology from six Murzuq Basin wells. All 164 appendix samples were
 transcribed independently, with 158 chart depth and type labels (153 exact matches). The 164 prose-scope
 rows and 158 chart reports were mapped, retaining barren material and possible caving
 (`data/units/libya_*.csv`; `docs/audits/2026-10-31-libya-event-map.md`). The primary frame is the
@@ -108,6 +91,8 @@ comparison convention. A contamination scenario that conflicts with older zeros 
 flagged separately. The 384 break-even entries fix $\kappa=b=0$. These surfaces and the 36-case
 well/age influence exercise are unqualified sensitivities.
 
+**Table S1.** Murzuq sensitivities (`models/f3/loop2/out/`; `docs/loop2-sprint1-results.md`).
+
 | Challenge at $\rho=1$ | Observed sensitivity | Scope |
 |--------------------|------------------------------|----------------|
 | Five leave-one-well-out cases | H0 0.1850–0.3646; window endpoints 462.6–468.1 Ma | one factor at a time; unqualified |
@@ -116,13 +101,9 @@ well/age influence exercise are unqualified sensitivities.
 | Shared midpoint ages | no exposure in the 459.1–462.6 Ma window | fixed chronology scenario |
 | Shared 90% ages | no exposure in the window ending at 467.1 Ma | fixed chronology scenario |
 
-: Murzuq sensitivities (`models/f3/loop2/out/`; `docs/loop2-sprint1-results.md`). {#tbl-murzuq-sens}
-
-![Joint sensitivity of the short Murzuq window. Colours report an uncalibrated comparison or model-conflict flag, not confidence or probabilities over geology.](../models/f3/loop2/out/joint_window_sensitivity.png){#fig-joint}
-
 ## S3. QSIM-801: a model-conditional floor calculation
 
-Vecoli et al. (2017, Table 1, p. 321) report 99 cryptospore morphotaxon occurrences across 17 of 20
+@vecoli2017MiddleOrdovicianCryptospores [Table 1, p. 321] report 99 cryptospore morphotaxon occurrences across 17 of 20
 tabled samples assigned to the late Dapingian–early Darriwilian. Their p. 330 explicitly reports no
 triletes in the studied sequence. The table was independently reconstructed from the rendered source
 (`data/units/loop2/replication/`). Its 22 categories include informal morphotypes. Marks are distinct
@@ -139,14 +120,14 @@ Randomness of $M$ does not invalidate the rule: conditional on the actual totals
 of the all-zero event with enough units to cross the threshold. Then $U=\{\alpha^{-1/M}-1\}/h$ bounds the
 *minimum* ratio, not every sample's ratio, a mean, or the pooled share.
 
+**Table S2.** Model-conditional floor limits; none is an admitted empirical confidence bound. $D$ divides the exponent as a heuristic for clustering, not a validated correction.
+
 | Relative effective recovery $h$ | Independent units, $D=1$ | Heuristic $D=2$ | Heuristic $D=4$ |
 |---:|---:|---:|---:|
 | 1 | 0.031 | 0.062 | 0.129 |
 | 0.5 | 0.061 | 0.125 | 0.257 |
 | 0.25 | 0.123 | 0.250 | 0.515 |
 | 0.1 | 0.307 | 0.624 | 1.287 |
-
-: Model-conditional floor limits; none is an admitted empirical confidence bound. $D$ divides the exponent as a heuristic for clustering, not a validated correction. {#tbl-qsim}
 
 The source specifies preparation but not the search coverage needed to show that every mark represents
 a unit on which triletes were detectable. Independence, effective ascertainment and sampling and stopping
@@ -155,14 +136,12 @@ algebra but cannot validate the historical protocol. No matched counted Katian�
 recovered. Qusaiba-1 supplies reference context only. Röstånga and Caspalá/Lipeón are younger than M2,
 and Hanadir/TAYM-4 is separate material without a qualified design (`manuscript/external_candidates.csv`).
 
-![Upper bound on the all-zero probability under the hypothetical independent, co-ascertained unit model; points mark the 0.05 threshold.](figures/figS1_qsim.png){#fig-qsim}
-
 ## S4. The Cambrian affinity review (M1)
 
 No assessed frame admits an E2 older-zero/reference design. The Borenshult 71.1 m zero is secure under
 the main reading but belongs to a frame that fails its potential screen. It is not a pre-515.5 Ma
-observation. Strother (2016) places the Tennessee taxa in Charophyta. Taylor & Strother (2024) interpret
-the packets as pre-embryophytic, and Wang et al. (2022) favour ancestral aeroterrestrial algae while
+observation. @strother2016SystematicsEvolutionarySignificance places the Tennessee taxa in Charophyta. @taylor2024UltrastructureCambrianCryptospores interpret
+the packets as pre-embryophytic, and @wang2022PalynologicalAssemblageCambrian favour ancestral aeroterrestrial algae while
 calling direct embryophyte affinity unlikely and the interpretation premature. None explicitly accepts
 the assessed Stage 4 producers as embryophytes. Wall ultrastructure and developmental features bear on
 precursor relationships, so the inclusive reading stays an explicit alternative. Argentine sample
@@ -208,9 +187,7 @@ $P(A\leq a)=\{U(a)/U(T)\}^n$. Inverting at 0.05 gives the exact one-sided 95% ol
 
 $$U(T_{\mathrm{upper}})=U(A)\,0.05^{-1/n}.$$
 
-The absolute recovery rate cancels. For constant $w$ this is the Strauss & Sadler (1989) and Marshall
-(1990) expression with a fixed cutoff, which uses all $n$ observations. Marshall (1994, 1997) and Wang
-et al. (2016) relax the assumption of uniform recovery in other ways. A bound beyond the declared history's
+The absolute recovery rate cancels. For constant $w$ this is the @strauss1989ClassicalConfidenceIntervals and @marshall1990ConfidenceIntervalsStratigraphic expression with a fixed cutoff, which uses all $n$ observations. Marshall [-@marshall1994ConfidenceIntervalsStratigraphic; -@marshall1997ConfidenceIntervalsStratigraphic] and @wang2016AdaptiveCredibleIntervals relax the assumption of uniform recovery in other ways. A bound beyond the declared history's
 domain (469.4 Ma, where the held PBDB effort series ends) is reported as *not bounded within the domain*,
 not as an infinite-age inference.
 
@@ -219,7 +196,7 @@ of units guaranteed older than $c$. The bound increases with $A$ and decreases w
 envelope of the exact-age bounds whenever every reported age interval contains the true age. That
 geological condition is separate from statistical coverage. Independent-uniform and shared-quantile
 allocations (256 draws, seed 20261102) are reported as sensitivities. Their quantiles are not confidence
-bounds (@tbl-ages).
+bounds (Table S8).
 
 **Histories.** Six histories are fixed without fitting them to the focal fossils:
 
@@ -235,34 +212,112 @@ actual search opportunities. Cutoffs are the ends of the Emsian, Pragian, Lochko
 
 **Shape diagnostics.** Conditional on the maximum, the remaining unit ages should be distributed as
 $U(a)/U(A)$. Kolmogorov–Smirnov statistics at midpoint ages and across age draws expose histories that
-fit the observed sequence poorly (@tbl-shape). Nominal exact-age *p* values and their spread across draws
+fit the observed sequence poorly (Table S7). Nominal exact-age *p* values and their spread across draws
 are not a combined test for interval-dated fossils, a model-selection criterion or an empirical calibration.
 
 ### S5.3 Results and sensitivities
 
-{{< include tables/primary.md >}}
+<!-- table:primary -->
+| Reading | Category | Units | Oldest possible | Constant | PBDB collection density | PBDB density, plant matches removed | Decline into past, 25 Myr | Decline into past, 10 Myr | Plant-excluded PBDB × 10 Myr decline |
+|---------|------------------------:|-----:|--------------:|-------:|----------------------:|----------------------------------:|------------------------:|------------------------:|-----------------------------------:|
+| main | Any land-plant body | 75/77 | 432.9 | 434.51 | 436.38 | 435.73 | 437.16 | none ≤ 469.4 | none ≤ 469.4 |
+| main | Polysporangiophyte body | 70/72 | 432.9 | 434.62 | 436.63 | 435.94 | 437.50 | none ≤ 469.4 | none ≤ 469.4 |
+| main | Crown vascular-plant body | 48/50 | 426.7 | 428.84 | 428.88 | 428.45 | 431.63 | none ≤ 469.4 | none ≤ 469.4 |
+| inclusive | Any land-plant body | 79/81 | 445.2 | 447.20 | 448.27 | 447.85 | 452.98 | none ≤ 469.4 | none ≤ 469.4 |
+| inclusive | Polysporangiophyte body | 74/76 | 445.2 | 447.34 | 448.48 | 448.03 | 453.62 | none ≤ 469.4 | none ≤ 469.4 |
+| inclusive | Crown vascular-plant body | 53/55 | 426.7 | 428.63 | 428.67 | 428.28 | 431.10 | none ≤ 469.4 | 468.65 |
+<!-- /table:primary -->
+**Table S3.** Conservative 95% older bounds (Ma) by category, reading and recovery history; Emsian cutoff. Units: guaranteed/possible. "None ≤ 469.4": no bound within the declared domain.
 
-: Conservative 95% older bounds (Ma) by category, reading and recovery history; Emsian cutoff. Units: guaranteed/possible. "None ≤ 469.4": no bound within the declared domain. {#tbl-primary}
+<!-- table:cutoffs -->
+| Younger cutoff (Ma) | Units | Constant | PBDB collection density | PBDB density, plant matches removed | Decline into past, 25 Myr | Decline into past, 10 Myr | Plant-excluded PBDB × 10 Myr decline |
+|-------------------|-----:|-------:|----------------------:|----------------------------------:|------------------------:|------------------------:|-----------------------------------:|
+| Emsian (393.47) | 48 | 428.84 | 428.88 | 428.45 | 431.63 | none ≤ 469.4 | none ≤ 469.4 |
+| Pragian (410.62) | 25 | 428.75 | 429.71 | 429.43 | 429.75 | 433.80 | 451.56 |
+| Lochkovian (413.02) | 18 | 429.18 | 430.09 | 429.81 | 430.24 | 434.25 | 447.52 |
+| Pridoli (419.62) | 13 | 428.53 | 428.54 | 428.35 | 428.92 | 429.80 | 429.55 |
+<!-- /table:cutoffs -->
+**Table S4.** Crown vascular-plant bounds by younger cutoff, main reading.
 
-{{< include tables/cutoffs.md >}}
+<!-- table:units -->
+| B2 unit or source variant | Units | Constant | PBDB density | Decline 25 Myr |
+|-----------------------------------|-----:|-------:|-----------:|-------------:|
+| Individual collections/observations | 78 | 428.00 | 428.03 | 429.58 |
+| Locality–age proxies (primary) | 48 | 428.84 | 428.88 | 431.63 |
+| Whole localities | 47 | 428.89 | 428.93 | 431.75 |
+| Region–stage cells | 20 | 432.07 | 431.91 | 441.60 |
+| Wide-age records restored | 73 | 428.09 | 428.12 | 429.79 |
+| Uncertain material restored | 54 | 428.60 | 428.63 | 431.01 |
+| Low-confidence names omitted | 46 | 428.94 | 428.98 | 431.87 |
+| Weak botanical source omitted | 48 | 428.84 | 428.88 | 431.63 |
+| Kosov/Podolia links collapsed | 47 | 428.89 | 428.93 | 431.75 |
+| Curated oldest-record set only | 15 | 434.05 | 434.62 | 450.50 |
+<!-- /table:units -->
+**Table S5.** Crown vascular-plant bounds under alternative units and source choices (main reading, Emsian cutoff). Region–stage cells use midpoint stage and are a deliberately coarse dependence diagnostic.
 
-: Crown vascular-plant bounds by younger cutoff, main reading. {#tbl-cutoffs}
+<!-- table:regions -->
+| Region left out | Units | Oldest possible | Constant | PBDB density |
+|-----------------------------|-----:|--------------:|-------:|-----------:|
+| Gondwana Australia Antarctica | 44 | 425.0 | 427.22 | 427.33 |
+| Gondwana South America | 47 | 426.7 | 428.89 | 428.87 |
+| Tarim | 47 | 426.7 | 428.89 | 428.92 |
+| peri Gondwana Europe | 47 | 426.7 | 428.89 | 428.85 |
+| Baltica | 45 | 426.7 | 428.99 | 431.80 |
+| Kazakhstania | 45 | 426.7 | 428.99 | 429.03 |
+| Avalonia | 44 | 426.7 | 429.04 | 428.95 |
+| South China | 43 | 426.7 | 429.10 | 429.06 |
+| multiple | 42 | 426.7 | 429.16 | 428.74 |
+| Laurentia | 28 | 426.7 | 430.45 | 429.58 |
+<!-- /table:regions -->
+**Table S6.** Leave-one-region-out bounds for crown vascular-plant members, with PBDB exposure recomputed after the same omission. Regions are approximate modern country/state assignments.
 
-{{< include tables/units.md >}}
+<!-- table:shape -->
+| Category | History | KS D at midpoint ages | Nominal p, 5–95% of age draws |
+|-------------------------|-----------------------------------:|--------------------:|----------------------------:|
+| Any land-plant body | Constant | 0.194 | 0.0041–0.062 |
+| Any land-plant body | PBDB collection density | 0.174 | 0.0075–0.088 |
+| Any land-plant body | PBDB density, plant matches removed | 0.214 | 0.00054–0.039 |
+| Any land-plant body | Decline into past, 25 Myr | 0.331 | 6.2e-09–2.7e-06 |
+| Any land-plant body | Decline into past, 10 Myr | 0.549 | 2.3e-22–4e-17 |
+| Any land-plant body | Plant-excluded PBDB × 10 Myr decline | 0.363 | 2e-10–5.4e-08 |
+| Polysporangiophyte body | Constant | 0.204 | 0.0046–0.068 |
+| Polysporangiophyte body | PBDB collection density | 0.185 | 0.011–0.13 |
+| Polysporangiophyte body | PBDB density, plant matches removed | 0.224 | 0.00086–0.032 |
+| Polysporangiophyte body | Decline into past, 25 Myr | 0.328 | 3.1e-08–1.8e-05 |
+| Polysporangiophyte body | Decline into past, 10 Myr | 0.546 | 1.9e-20–1.8e-15 |
+| Polysporangiophyte body | Plant-excluded PBDB × 10 Myr decline | 0.346 | 1e-08–1.6e-06 |
+| Crown vascular-plant body | Constant | 0.236 | 0.073–0.76 |
+| Crown vascular-plant body | PBDB collection density | 0.234 | 0.014–0.27 |
+| Crown vascular-plant body | PBDB density, plant matches removed | 0.320 | 0.00019–0.016 |
+| Crown vascular-plant body | Decline into past, 25 Myr | 0.363 | 7e-05–0.016 |
+| Crown vascular-plant body | Decline into past, 10 Myr | 0.549 | 2.2e-11–8.4e-07 |
+| Crown vascular-plant body | Plant-excluded PBDB × 10 Myr decline | 0.347 | 0.0011–0.044 |
+<!-- /table:shape -->
+**Table S7.** Within-record shape diagnostics, main reading, independent-uniform age allocations.
 
-: Crown vascular-plant bounds under alternative units and source choices (main reading, Emsian cutoff). Region–stage cells use midpoint stage and are a deliberately coarse dependence diagnostic. {#tbl-units}
-
-{{< include tables/regions.md >}}
-
-: Leave-one-region-out bounds for crown vascular-plant members, with PBDB exposure recomputed after the same omission. Regions are approximate modern country/state assignments. {#tbl-regions}
-
-{{< include tables/shape.md >}}
-
-: Within-record shape diagnostics, main reading, independent-uniform age allocations. {#tbl-shape}
-
-{{< include tables/ages.md >}}
-
-: Age-allocation sensitivity (Emsian cutoff, main reading). Quantiles across allocations are descriptive, not confidence bounds. {#tbl-ages}
+<!-- table:ages -->
+| Category | History | Allocation | 5% | Median | 95% | Unbounded fraction |
+|-------------------------|------------------------:|------------------:|-----:|-----:|-----:|-----------------:|
+| Any land-plant body | Constant | independent uniform | 432.25 | 433.34 | 434.42 | 0.00 |
+| Any land-plant body | PBDB collection density | independent uniform | 432.02 | 433.42 | 436.18 | 0.00 |
+| Any land-plant body | Decline into past, 25 Myr | independent uniform | 434.48 | 435.76 | 437.01 | 0.00 |
+| Any land-plant body | Constant | shared quantile | 432.23 | 433.27 | 434.35 | 0.00 |
+| Any land-plant body | PBDB collection density | shared quantile | 432.00 | 433.27 | 435.99 | 0.00 |
+| Any land-plant body | Decline into past, 25 Myr | shared quantile | 434.48 | 435.66 | 436.90 | 0.00 |
+| Polysporangiophyte body | Constant | independent uniform | 432.32 | 433.33 | 434.43 | 0.00 |
+| Polysporangiophyte body | PBDB collection density | independent uniform | 432.07 | 433.35 | 436.15 | 0.00 |
+| Polysporangiophyte body | Decline into past, 25 Myr | independent uniform | 434.72 | 435.93 | 437.22 | 0.00 |
+| Polysporangiophyte body | Constant | shared quantile | 432.34 | 433.38 | 434.46 | 0.00 |
+| Polysporangiophyte body | PBDB collection density | shared quantile | 432.09 | 433.50 | 436.23 | 0.00 |
+| Polysporangiophyte body | Decline into past, 25 Myr | shared quantile | 434.78 | 435.97 | 437.21 | 0.00 |
+| Crown vascular-plant body | Constant | independent uniform | 424.31 | 426.33 | 428.46 | 0.00 |
+| Crown vascular-plant body | PBDB collection density | independent uniform | 425.14 | 426.71 | 428.51 | 0.00 |
+| Crown vascular-plant body | Decline into past, 25 Myr | independent uniform | 426.19 | 428.57 | 431.05 | 0.00 |
+| Crown vascular-plant body | Constant | shared quantile | 421.58 | 424.10 | 427.03 | 0.00 |
+| Crown vascular-plant body | PBDB collection density | shared quantile | 421.22 | 424.81 | 427.18 | 0.00 |
+| Crown vascular-plant body | Decline into past, 25 Myr | shared quantile | 423.10 | 425.92 | 429.34 | 0.00 |
+<!-- /table:ages -->
+**Table S8.** Age-allocation sensitivity (Emsian cutoff, main reading). Quantiles across allocations are descriptive, not confidence bounds.
 
 ### S5.4 Recovery before the oldest record
 
@@ -272,21 +327,61 @@ categories and both readings (144 cells). The 426.7 Ma break coincides with the 
 record, so no main B2 unit's age support is changed and the within-record shape statistic is unchanged.
 The grid is a retrospective sensitivity; the 0.05 rule supplies no nominal, simultaneous or
 selection-adjusted confidence for it. The 432.9 Ma break is a null control when the bound lies younger.
-No member was selected to match a clock (@tbl-suppression).
+No member was selected to match a clock (Table S9).
 
-{{< include tables/suppression.md >}}
-
-: Retrospective stage-break grid for crown vascular-plant members, main reading (`models/f3/loop3/out/suppression_sensitivity.csv`). {#tbl-suppression}
+<!-- table:suppression -->
+| Baseline | Break (Ma) | Older multiplier | Changes age support? | Older bound (Ma) | Midpoint shape p |
+|------------|---------:|---------------:|-------------------:|---------------:|---------------:|
+| constant | 419.62 | 1 | True | 428.84 | 0.00848 |
+| constant | 419.62 | 0.5 | True | 430.52 | 0.00424 |
+| constant | 419.62 | 0.1 | True | 444.00 | 0.00223 |
+| constant | 419.62 | 0.01 | True | none ≤ 469.4 | 0.00191 |
+| constant | 426.7 | 1 | False | 428.84 | 0.00848 |
+| constant | 426.7 | 0.5 | False | 430.98 | 0.00848 |
+| constant | 426.7 | 0.1 | False | 448.10 | 0.00848 |
+| constant | 426.7 | 0.01 | False | none ≤ 469.4 | 0.00848 |
+| constant | 432.9 | 1 | False | 428.84 | 0.00848 |
+| constant | 432.9 | 0.5 | False | 428.84 | 0.00848 |
+| constant | 432.9 | 0.1 | False | 428.84 | 0.00848 |
+| constant | 432.9 | 0.01 | False | 428.84 | 0.00848 |
+| PBDB density | 419.62 | 1 | True | 428.88 | 0.00918 |
+| PBDB density | 419.62 | 0.5 | True | 430.60 | 0.0186 |
+| PBDB density | 419.62 | 0.1 | True | 451.09 | 0.00729 |
+| PBDB density | 419.62 | 0.01 | True | none ≤ 469.4 | 0.00576 |
+| PBDB density | 426.7 | 1 | False | 428.88 | 0.00918 |
+| PBDB density | 426.7 | 0.5 | False | 430.98 | 0.00918 |
+| PBDB density | 426.7 | 0.1 | False | 458.47 | 0.00918 |
+| PBDB density | 426.7 | 0.01 | False | none ≤ 469.4 | 0.00918 |
+| PBDB density | 432.9 | 1 | False | 428.88 | 0.00918 |
+| PBDB density | 432.9 | 0.5 | False | 428.88 | 0.00918 |
+| PBDB density | 432.9 | 0.1 | False | 428.88 | 0.00918 |
+| PBDB density | 432.9 | 0.01 | False | 428.88 | 0.00918 |
+<!-- /table:suppression -->
+**Table S9.** Retrospective stage-break grid for crown vascular-plant members, main reading (`models/f3/loop3/out/suppression_sensitivity.csv`).
 
 ### S5.5 Biological delay
 
 Fixed delays of 0, 5, 10 and 20 Myr map the recoverability bound to a lineage bound and shift the
 lineage domain by the same amount. A delay is an assumed mapping, not inferred from this record or
-transferred from the spore comparison (@tbl-delay).
+transferred from the spore comparison (Table S10).
 
-{{< include tables/delay.md >}}
-
-: Fixed-delay mapping, constant recovery, main reading. {#tbl-delay}
+<!-- table:delay -->
+| Category | Assumed delay (Myr) | Recoverability bound | Lineage bound |
+|-------------------------|------------------:|-------------------:|------------:|
+| Any land-plant body | 0 | 434.51 | 434.51 |
+| Any land-plant body | 5 | 434.51 | 439.51 |
+| Any land-plant body | 10 | 434.51 | 444.51 |
+| Any land-plant body | 20 | 434.51 | 454.51 |
+| Polysporangiophyte body | 0 | 434.62 | 434.62 |
+| Polysporangiophyte body | 5 | 434.62 | 439.62 |
+| Polysporangiophyte body | 10 | 434.62 | 444.62 |
+| Polysporangiophyte body | 20 | 434.62 | 454.62 |
+| Crown vascular-plant body | 0 | 428.84 | 428.84 |
+| Crown vascular-plant body | 5 | 428.84 | 433.84 |
+| Crown vascular-plant body | 10 | 428.84 | 438.84 |
+| Crown vascular-plant body | 20 | 428.84 | 448.84 |
+<!-- /table:delay -->
+**Table S10.** Fixed-delay mapping, constant recovery, main reading.
 
 ### S5.6 Simulation checks
 
@@ -297,19 +392,63 @@ underlying units two or four times, and impose 10 or 20 Myr delays with and with
 adjustment. Coverage counts no-bound outcomes as covering. Claim frequency and coverage among bounded
 claims are reported separately, because 95% unconditional coverage does not imply 95% coverage after
 selecting bounded outcomes. These runs verify the declared procedures and expose their failure modes.
-They do not qualify the fossils (@tbl-sim; all categories in `simulation_results.csv`).
+They do not qualify the fossils (Table S11; all categories in `simulation_results.csv`).
 
-{{< include tables/simulation.md >}}
-
-: Simulation results for crown vascular-plant counts. {#tbl-sim}
+<!-- table:simulation -->
+| Scenario | True history | Fitted history | Ages | Duplication | Delay adj. | Endpoint (Ma) | Claim frequency | Coverage (Wilson 95%) |
+|-------------------------------|-----------------------------------:|-----------------------------------:|-------------:|----------:|---------:|------------:|--------------:|--------------------:|
+| matched | Constant | Constant | exact | 1 | 0.0 | 432.0 | 1.000 | 0.955 (0.947–0.962) |
+| matched | Constant | Constant | stage envelope | 1 | 0.0 | 432.0 | 1.000 | 1.000 (0.998–1.000) |
+| matched | Constant | Constant | exact | 1 | 0.0 | 445.0 | 1.000 | 0.949 (0.941–0.957) |
+| matched | Constant | Constant | stage envelope | 1 | 0.0 | 445.0 | 1.000 | 0.985 (0.980–0.989) |
+| matched | Constant | Constant | exact | 1 | 0.0 | 458.2 | 1.000 | 0.945 (0.936–0.953) |
+| matched | Constant | Constant | stage envelope | 1 | 0.0 | 458.2 | 1.000 | 0.983 (0.977–0.987) |
+| matched | Decline into past, 25 Myr | Decline into past, 25 Myr | exact | 1 | 0.0 | 432.0 | 1.000 | 0.945 (0.936–0.952) |
+| matched | Decline into past, 25 Myr | Decline into past, 25 Myr | stage envelope | 1 | 0.0 | 432.0 | 1.000 | 0.956 (0.948–0.963) |
+| matched | Decline into past, 25 Myr | Decline into past, 25 Myr | exact | 1 | 0.0 | 445.0 | 1.000 | 0.958 (0.951–0.965) |
+| matched | Decline into past, 25 Myr | Decline into past, 25 Myr | stage envelope | 1 | 0.0 | 445.0 | 1.000 | 0.990 (0.985–0.993) |
+| matched | Decline into past, 25 Myr | Decline into past, 25 Myr | exact | 1 | 0.0 | 458.2 | 0.212 | 0.941 (0.932–0.949) |
+| matched | Decline into past, 25 Myr | Decline into past, 25 Myr | stage envelope | 1 | 0.0 | 458.2 | 0.070 | 0.966 (0.959–0.972) |
+| matched | Decline into past, 10 Myr | Decline into past, 10 Myr | exact | 1 | 0.0 | 432.0 | 0.139 | 0.950 (0.942–0.958) |
+| matched | Decline into past, 10 Myr | Decline into past, 10 Myr | stage envelope | 1 | 0.0 | 432.0 | 0.078 | 0.998 (0.996–0.999) |
+| matched | Decline into past, 10 Myr | Decline into past, 10 Myr | exact | 1 | 0.0 | 445.0 | 0.065 | 0.949 (0.940–0.956) |
+| matched | Decline into past, 10 Myr | Decline into past, 10 Myr | stage envelope | 1 | 0.0 | 445.0 | 0.034 | 0.966 (0.959–0.972) |
+| matched | Decline into past, 10 Myr | Decline into past, 10 Myr | exact | 1 | 0.0 | 458.2 | 0.053 | 0.950 (0.941–0.957) |
+| matched | Decline into past, 10 Myr | Decline into past, 10 Myr | stage envelope | 1 | 0.0 | 458.2 | 0.032 | 0.968 (0.961–0.974) |
+| matched | PBDB collection density | PBDB collection density | exact | 1 | 0.0 | 432.0 | 1.000 | 0.950 (0.942–0.958) |
+| matched | PBDB collection density | PBDB collection density | stage envelope | 1 | 0.0 | 432.0 | 1.000 | 0.999 (0.998–1.000) |
+| matched | PBDB collection density | PBDB collection density | exact | 1 | 0.0 | 445.0 | 1.000 | 0.957 (0.949–0.963) |
+| matched | PBDB collection density | PBDB collection density | stage envelope | 1 | 0.0 | 445.0 | 1.000 | 0.967 (0.960–0.973) |
+| matched | PBDB collection density | PBDB collection density | exact | 1 | 0.0 | 458.2 | 1.000 | 0.953 (0.945–0.960) |
+| matched | PBDB collection density | PBDB collection density | stage envelope | 1 | 0.0 | 458.2 | 1.000 | 0.999 (0.998–1.000) |
+| matched | PBDB density, plant matches removed | PBDB density, plant matches removed | exact | 1 | 0.0 | 432.0 | 1.000 | 0.954 (0.946–0.961) |
+| matched | PBDB density, plant matches removed | PBDB density, plant matches removed | stage envelope | 1 | 0.0 | 432.0 | 1.000 | 1.000 (0.998–1.000) |
+| matched | PBDB density, plant matches removed | PBDB density, plant matches removed | exact | 1 | 0.0 | 445.0 | 1.000 | 0.948 (0.939–0.955) |
+| matched | PBDB density, plant matches removed | PBDB density, plant matches removed | stage envelope | 1 | 0.0 | 445.0 | 1.000 | 0.983 (0.977–0.987) |
+| matched | PBDB density, plant matches removed | PBDB density, plant matches removed | exact | 1 | 0.0 | 458.2 | 1.000 | 0.952 (0.944–0.959) |
+| matched | PBDB density, plant matches removed | PBDB density, plant matches removed | stage envelope | 1 | 0.0 | 458.2 | 1.000 | 0.954 (0.946–0.961) |
+| matched | Plant-excluded PBDB × 10 Myr decline | Plant-excluded PBDB × 10 Myr decline | exact | 1 | 0.0 | 432.0 | 0.175 | 0.951 (0.943–0.958) |
+| matched | Plant-excluded PBDB × 10 Myr decline | Plant-excluded PBDB × 10 Myr decline | stage envelope | 1 | 0.0 | 432.0 | 0.119 | 0.992 (0.988–0.995) |
+| matched | Plant-excluded PBDB × 10 Myr decline | Plant-excluded PBDB × 10 Myr decline | exact | 1 | 0.0 | 445.0 | 0.069 | 0.954 (0.946–0.961) |
+| matched | Plant-excluded PBDB × 10 Myr decline | Plant-excluded PBDB × 10 Myr decline | stage envelope | 1 | 0.0 | 445.0 | 0.049 | 0.951 (0.942–0.958) |
+| matched | Plant-excluded PBDB × 10 Myr decline | Plant-excluded PBDB × 10 Myr decline | exact | 1 | 0.0 | 458.2 | 0.045 | 0.956 (0.948–0.962) |
+| matched | Plant-excluded PBDB × 10 Myr decline | Plant-excluded PBDB × 10 Myr decline | stage envelope | 1 | 0.0 | 458.2 | 0.040 | 0.960 (0.953–0.967) |
+| history mismatch | Constant | Decline into past, 10 Myr | exact | 1 | 0.0 | 432.0 | 0.000 | 1.000 (0.999–1.000) |
+| history mismatch | Constant | Decline into past, 10 Myr | exact | 1 | 0.0 | 445.0 | 0.000 | 1.000 (0.999–1.000) |
+| history mismatch | Constant | Decline into past, 10 Myr | exact | 1 | 0.0 | 458.2 | 0.000 | 1.000 (0.999–1.000) |
+| history mismatch | Decline into past, 10 Myr | Constant | exact | 1 | 0.0 | 432.0 | 1.000 | 0.241 (0.226–0.257) |
+| history mismatch | Decline into past, 10 Myr | Constant | exact | 1 | 0.0 | 445.0 | 1.000 | 0.104 (0.094–0.116) |
+| history mismatch | Decline into past, 10 Myr | Constant | exact | 1 | 0.0 | 458.2 | 1.000 | 0.034 (0.028–0.041) |
+| duplicated horizons | Constant | Constant | exact | 2 | 0.0 | 445.0 | 1.000 | 0.782 (0.767–0.797) |
+| duplicated horizons | Constant | Constant | exact | 4 | 0.0 | 445.0 | 1.000 | 0.529 (0.511–0.546) |
+| recoverability delay unadjusted | Constant | Constant | exact | 1 | 0.0 | 432.0 | 1.000 | 0.000 (0.000–0.001) |
+| recoverability delay adjusted | Constant | Constant | exact | 1 | 10.0 | 432.0 | 1.000 | 0.947 (0.938–0.954) |
+| recoverability delay unadjusted | Constant | Constant | exact | 1 | 0.0 | 432.0 | 1.000 | 0.000 (0.000–0.001) |
+| recoverability delay adjusted | Constant | Constant | exact | 1 | 20.0 | 432.0 | 1.000 | 0.952 (0.943–0.959) |
+<!-- /table:simulation -->
+**Table S11.** Simulation results for crown vascular-plant counts.
 
 ### S5.7 Figures from the reviewed analysis
-
-![Reviewed main macrofossil figure as delivered by the analysis (`models/f3/loop3/out/fig_macro_recovery.pdf`).](../models/f3/loop3/out/fig_macro_recovery.png){#fig-macro-recovery}
-
-![Sensitivity of the crown vascular-plant bound to units, sources, regions and age rules.](../models/f3/loop3/out/fig_macro_sensitivity.png){#fig-macro-sensitivity}
-
-![Retrospective recovery-suppression grid.](../models/f3/loop3/out/fig_macro_suppression.png){#fig-macro-suppression}
 
 ## S6. From specimens to nodes
 
@@ -368,8 +507,8 @@ From the repository root:
 uv run --with numpy --with pandas --with scipy --with pytest python -m pytest models/f3/loop3 -q
 uv run manuscript/figures.py
 python3 manuscript/tables.py
-quarto render manuscript/manuscript.qmd
-quarto render manuscript/supplement.qmd
+uv run tools/refs.py build
+make -C manuscript
 python3 manuscript/package.py
 ```
 
@@ -379,9 +518,4 @@ and outputs. Frozen Loop 1 and Loop 2 runs are retained without regeneration. Th
 fetched by `data/external/scripts/deposits_fetch.py` and verified against `MANIFEST.tsv`.
 `manuscript/claims.csv` links each main claim to its evidence and limits.
 
-## Supplement references
-
-- Marshall CR (1994). Confidence intervals on stratigraphic ranges: partial relaxation of the assumption of randomly distributed fossil horizons. Paleobiology 20: 459–469. https://doi.org/10.1017/s0094837300012938
-- Marshall CR (1997). Confidence intervals on stratigraphic ranges with nonrandom distributions of fossil horizons. Paleobiology 23: 165–173. https://doi.org/10.1017/s0094837300016766
-- Wang SC, Everson PJ, Zhou HJ, et al. (2016). Adaptive credible intervals on stratigraphic ranges when recovery potential is unknown. Paleobiology 42: 240–256. https://doi.org/10.1017/pab.2015.37
-- Other references as in the main text.
+## References

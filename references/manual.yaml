@@ -1,0 +1,13 @@
+# Works without a DOI, in CSL YAML. tools/refs.py merges them into refs.yaml.
+references:
+  - id: abuhmida2013PalynologicalAnalysisOrdovician
+    type: thesis
+    genre: PhD thesis
+    title: Palynological analysis of the Ordovician to Lower Silurian sediments from the Murzuq Basin, southwest Libya
+    author:
+      - family: Abuhmida
+        given: Faisal Hadi
+    issued:
+      date-parts: [[2013]]
+    publisher: University of Sheffield
+    URL: https://etheses.whiterose.ac.uk/id/eprint/4475/

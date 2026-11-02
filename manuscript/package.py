@@ -17,8 +17,6 @@ def write(path, fields, rows):
 
 
 def main():
-    html = HERE / "manuscript.html"
-    html.write_text("\n".join(line.rstrip() for line in html.read_text().splitlines()) + "\n")
     files = {}
 
     def add(path, role):
@@ -37,12 +35,14 @@ def main():
             if p.is_file() and "__pycache__" not in p.parts and p.suffix not in {".pyc", ".tex", ".log"}:
                 add(p.relative_to(ROOT), role)
 
-    for name in ("manuscript.qmd", "manuscript.html", "manuscript.pdf", "supplement.qmd", "supplement.html",
-                 "supplement.pdf", "claims.csv", "external_candidates.csv", "mapping.csv", "figures.py", "tables.py",
-                 "package.py", "README.md"):
-        add("manuscript/"+name, "authored manuscript, evidence ledger or reproduction code")
+    for name in ("claims.csv", "external_candidates.csv", "mapping.csv", "figures.py", "tables.py", "package.py",
+                 "README.md", "authors.yaml", "Makefile", "settings/build.yaml", "csl/chicago-author-date.csl"):
+        add("manuscript/"+name, "authored manuscript build, evidence ledger or reproduction code")
+    collect("manuscript/text/*.md", "authored paper source: main, supplement, brief, agent paper")
+    collect("manuscript/build/*.pdf", "rendered snapshot of the paper sources")
     collect("manuscript/figures/*", "authored figure or bound figure receipt")
-    collect("manuscript/tables/*", "supplement table generated from reviewed outputs")
+    for name in ("references/dois.txt", "references/manual.yaml", "references/refs.yaml", "tools/refs.py"):
+        add(name, "bibliography ledger, generated bibliography or its builder")
     for name in ("loop1-close.md", "loop2-close.md", "loop2-sprint1-results.md", "loop2-sprint2-results.md",
                  "f3-shape.md", "pilot-traits.md", "charter.md", "decisions.md", "plan-loop3.md", "loop3-pilot.md",
                  "loop3-design.md", "loop3-results.md"):

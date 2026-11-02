@@ -1,0 +1,535 @@
+---
+references:
+- id: abuhmida2013PalynologicalAnalysisOrdovician
+  citation-key: abuhmida2013PalynologicalAnalysisOrdovician
+  type: thesis
+  genre: PhD thesis
+  title: Palynological analysis of the Ordovician to Lower Silurian sediments from the Murzuq Basin, southwest Libya
+  author:
+  - family: Abuhmida
+    given: Faisal Hadi
+  issued:
+    date-parts:
+    - - 2013
+  publisher: University of Sheffield
+  URL: https://etheses.whiterose.ac.uk/id/eprint/4475/
+- id: cocks2021OrdovicianPalaeogeographyClimate
+  citation-key: cocks2021OrdovicianPalaeogeographyClimate
+  type: article-journal
+  title: Ordovician palaeogeography and climate change
+  author:
+  - family: Cocks
+    given: L. Robin M.
+  - family: Torsvik
+    given: Trond H.
+  issued:
+    date-parts:
+    - - 2021
+  container-title: Gondwana Research
+  volume: '100'
+  page: 53–72
+  publisher: Elsevier BV
+  DOI: 10.1016/j.gr.2020.09.008
+- id: donoghue2021EvolutionaryEmergenceLand
+  citation-key: donoghue2021EvolutionaryEmergenceLand
+  type: article-journal
+  title: The evolutionary emergence of land plants
+  author:
+  - family: Donoghue
+    given: Philip C.J.
+  - family: Harrison
+    given: C. Jill
+  - family: Paps
+    given: Jordi
+  - family: Schneider
+    given: Harald
+  issued:
+    date-parts:
+    - - 2021
+  container-title: Current Biology
+  volume: '31'
+  issue: '19'
+  page: R1281–R1298
+  publisher: Elsevier BV
+  DOI: 10.1016/j.cub.2021.07.038
+- id: earp2024NotanopliidBrachiopodsAssociated
+  citation-key: earp2024NotanopliidBrachiopodsAssociated
+  type: article-journal
+  title: 'Notanopliid brachiopods and associated fossils from the Yea area, central Victoria: a key to resolving age and correlation problems in a complex geological setting'
+  author:
+  - family: Earp
+    given: Clem
+  issued:
+    date-parts:
+    - - 2024
+  container-title: Proceedings of the Royal Society of Victoria
+  volume: '136'
+  issue: '1'
+  article-number: RS23021
+  publisher: CSIRO Publishing
+  DOI: 10.1071/rs23021
+- id: edwards1980RecordsCooksoniatypeSporangia
+  citation-key: edwards1980RecordsCooksoniatypeSporangia
+  type: article-journal
+  title: Records of Cooksonia-type sporangia from late Wenlock strata in Ireland
+  author:
+  - family: Edwards
+    given: D.
+  - family: Feehan
+    given: J.
+  issued:
+    date-parts:
+    - - 1980
+  container-title: Nature
+  volume: '287'
+  issue: '5777'
+  page: 41–42
+  publisher: Springer Science and Business Media LLC
+  DOI: 10.1038/287041a0
+- id: edwards2014CryptosporesCryptophytesReveal
+  citation-key: edwards2014CryptosporesCryptophytesReveal
+  type: article-journal
+  title: Cryptospores and cryptophytes reveal hidden diversity in early land floras
+  author:
+  - family: Edwards
+    given: Dianne
+  - family: Morris
+    given: Jennifer L.
+  - family: Richardson
+    given: John B.
+  - family: Kenrick
+    given: Paul
+  issued:
+    date-parts:
+    - - 2014
+  container-title: New Phytologist
+  volume: '202'
+  issue: '1'
+  page: 50–78
+  publisher: Wiley
+  DOI: 10.1111/nph.12645
+- id: harris2022DivergentEvolutionaryTrajectories
+  citation-key: harris2022DivergentEvolutionaryTrajectories
+  type: article-journal
+  title: Divergent evolutionary trajectories of bryophytes and tracheophytes from a complex common ancestor of land plants
+  author:
+  - family: Harris
+    given: Brogan J.
+  - family: Clark
+    given: James W.
+  - family: Schrempf
+    given: Dominik
+  - family: Szöllősi
+    given: Gergely J.
+  - family: Donoghue
+    given: Philip C. J.
+  - family: Hetherington
+    given: Alistair M.
+  - family: Williams
+    given: Tom A.
+  issued:
+    date-parts:
+    - - 2022
+  container-title: Nature Ecology &amp; Evolution
+  volume: '6'
+  issue: '11'
+  page: 1634–1643
+  publisher: Springer Science and Business Media LLC
+  DOI: 10.1038/s41559-022-01885-x
+- id: hedges2018AccurateTimetreesRequire
+  citation-key: hedges2018AccurateTimetreesRequire
+  type: article-journal
+  title: Accurate timetrees require accurate calibrations
+  author:
+  - family: Hedges
+    given: S. Blair
+  - family: Tao
+    given: Qiqing
+  - family: Walker
+    given: Mark
+  - family: Kumar
+    given: Sudhir
+  issued:
+    date-parts:
+    - - 2018
+  container-title: Proceedings of the National Academy of Sciences
+  volume: '115'
+  issue: '41'
+  publisher: National Academy of Sciences
+  DOI: 10.1073/pnas.1812558115
+- id: hooper2026ReconstructingSporeEvolution
+  citation-key: hooper2026ReconstructingSporeEvolution
+  type: article-journal
+  title: Reconstructing spore evolution recalibrates the timescale of land plant diversification
+  author:
+  - family: Hooper
+    given: Jack
+  - family: Worth
+    given: Annabel M.
+  - family: Wellman
+    given: Charles H.
+  - family: Clark
+    given: James W.
+  - family: Donoghue
+    given: Philip C. J.
+  issued:
+    date-parts:
+    - - 2026
+  container-title: Nature Plants
+  publisher: Springer Science and Business Media LLC
+  DOI: 10.1038/s41477-026-02432-3
+- id: kenrick2012TimelineTerrestrializationConsequences
+  citation-key: kenrick2012TimelineTerrestrializationConsequences
+  type: article-journal
+  title: 'A timeline for terrestrialization: consequences for the carbon cycle in the Palaeozoic'
+  author:
+  - family: Kenrick
+    given: Paul
+  - family: Wellman
+    given: Charles H.
+  - family: Schneider
+    given: Harald
+  - family: Edgecombe
+    given: Gregory D.
+  issued:
+    date-parts:
+    - - 2012
+  container-title: 'Philosophical Transactions of the Royal Society B: Biological Sciences'
+  volume: '367'
+  issue: '1588'
+  page: 519–536
+  publisher: The Royal Society
+  DOI: 10.1098/rstb.2011.0271
+- id: kotyk2002MorphologicallyComplexPlant
+  citation-key: kotyk2002MorphologicallyComplexPlant
+  type: article-journal
+  title: Morphologically complex plant macrofossils from the Late Silurian of Arctic Canada
+  author:
+  - family: Kotyk
+    given: Michele E.
+  - family: Basinger
+    given: James F.
+  - family: Gensel
+    given: Patricia G.
+  - family: de Freitas
+    given: Tim A.
+  issued:
+    date-parts:
+    - - 2002
+  container-title: American Journal of Botany
+  volume: '89'
+  issue: '6'
+  page: 1004–1013
+  publisher: Wiley
+  DOI: 10.3732/ajb.89.6.1004
+- id: libertin2018SporophytesPolysporangiateLand
+  citation-key: libertin2018SporophytesPolysporangiateLand
+  type: article-journal
+  title: Sporophytes of polysporangiate land plants from the early Silurian period may have been photosynthetically autonomous
+  author:
+  - family: Libertín
+    given: Milan
+  - family: Kvaček
+    given: Jiří
+  - family: Bek
+    given: Jiří
+  - family: Žárský
+    given: Viktor
+  - family: Štorch
+    given: Petr
+  issued:
+    date-parts:
+    - - 2018
+  container-title: Nature Plants
+  volume: '4'
+  issue: '5'
+  page: 269–271
+  publisher: Springer Science and Business Media LLC
+  DOI: 10.1038/s41477-018-0140-y
+- id: marshall1990ConfidenceIntervalsStratigraphic
+  citation-key: marshall1990ConfidenceIntervalsStratigraphic
+  type: article-journal
+  title: Confidence intervals on stratigraphic ranges
+  author:
+  - family: Marshall
+    given: Charles R.
+  issued:
+    date-parts:
+    - - 1990
+  container-title: Paleobiology
+  volume: '16'
+  issue: '1'
+  page: 1–10
+  publisher: Cambridge University Press (CUP)
+  DOI: 10.1017/s0094837300009672
+- id: marshall1994ConfidenceIntervalsStratigraphic
+  citation-key: marshall1994ConfidenceIntervalsStratigraphic
+  type: article-journal
+  title: 'Confidence intervals on stratigraphic ranges: partial relaxation of the assumption of randomly distributed fossil horizons'
+  author:
+  - family: Marshall
+    given: Charles R.
+  issued:
+    date-parts:
+    - - 1994
+  container-title: Paleobiology
+  volume: '20'
+  issue: '4'
+  page: 459–469
+  publisher: Cambridge University Press (CUP)
+  DOI: 10.1017/s0094837300012938
+- id: marshall1997ConfidenceIntervalsStratigraphic
+  citation-key: marshall1997ConfidenceIntervalsStratigraphic
+  type: article-journal
+  title: Confidence intervals on stratigraphic ranges with nonrandom distributions of fossil horizons
+  author:
+  - family: Marshall
+    given: Charles R.
+  issued:
+    date-parts:
+    - - 1997
+  container-title: Paleobiology
+  volume: '23'
+  issue: '2'
+  page: 165–173
+  publisher: Cambridge University Press (CUP)
+  DOI: 10.1017/s0094837300016766
+- id: morris2018TimescaleEarlyLand
+  citation-key: morris2018TimescaleEarlyLand
+  type: article-journal
+  title: The timescale of early land plant evolution
+  author:
+  - family: Morris
+    given: Jennifer L.
+  - family: Puttick
+    given: Mark N.
+  - family: Clark
+    given: James W.
+  - family: Edwards
+    given: Dianne
+  - family: Kenrick
+    given: Paul
+  - family: Pressel
+    given: Silvia
+  - family: Wellman
+    given: Charles H.
+  - family: Yang
+    given: Ziheng
+  - family: Schneider
+    given: Harald
+  - family: Donoghue
+    given: Philip C. J.
+  issued:
+    date-parts:
+    - - 2018
+  container-title: Proceedings of the National Academy of Sciences
+  volume: '115'
+  issue: '10'
+  publisher: National Academy of Sciences
+  DOI: 10.1073/pnas.1719588115
+- id: scotese2021PhanerozoicPaleotemperaturesEarths
+  citation-key: scotese2021PhanerozoicPaleotemperaturesEarths
+  type: article-journal
+  title: 'Phanerozoic paleotemperatures: The earth’s changing climate during the last 540 million years'
+  author:
+  - family: Scotese
+    given: Christopher R.
+  - family: Song
+    given: Haijun
+  - family: Mills
+    given: Benjamin J.W.
+  - family: van der Meer
+    given: Douwe G.
+  issued:
+    date-parts:
+    - - 2021
+  container-title: Earth-Science Reviews
+  volume: '215'
+  page: '103503'
+  article-number: '103503'
+  publisher: Elsevier BV
+  DOI: 10.1016/j.earscirev.2021.103503
+- id: strauss1989ClassicalConfidenceIntervals
+  citation-key: strauss1989ClassicalConfidenceIntervals
+  type: article-journal
+  title: Classical confidence intervals and Bayesian probability estimates for ends of local taxon ranges
+  author:
+  - family: Strauss
+    given: David
+  - family: Sadler
+    given: Peter M.
+  issued:
+    date-parts:
+    - - 1989
+  container-title: Mathematical Geology
+  volume: '21'
+  issue: '4'
+  page: 411–427
+  publisher: Springer Science and Business Media LLC
+  DOI: 10.1007/bf00897326
+- id: strother2016SystematicsEvolutionarySignificance
+  citation-key: strother2016SystematicsEvolutionarySignificance
+  type: article-journal
+  title: Systematics and evolutionary significance of some new cryptospores from the Cambrian of eastern Tennessee, USA
+  author:
+  - family: Strother
+    given: Paul K.
+  issued:
+    date-parts:
+    - - 2016
+  container-title: Review of Palaeobotany and Palynology
+  volume: '227'
+  page: 28–41
+  publisher: Elsevier BV
+  DOI: 10.1016/j.revpalbo.2015.10.006
+- id: strother2021FossilRecordLand
+  citation-key: strother2021FossilRecordLand
+  type: article-journal
+  title: A fossil record of land plant origins from charophyte algae
+  author:
+  - family: Strother
+    given: Paul K.
+  - family: Foster
+    given: Clinton
+  issued:
+    date-parts:
+    - - 2021
+  container-title: Science
+  volume: '373'
+  issue: '6556'
+  page: 792–796
+  publisher: American Association for the Advancement of Science (AAAS)
+  DOI: 10.1126/science.abj2927
+- id: su2021LargescalePhylogenomicAnalyses
+  citation-key: su2021LargescalePhylogenomicAnalyses
+  type: article-journal
+  title: Large-Scale Phylogenomic Analyses Reveal the Monophyly of Bryophytes and Neoproterozoic Origin of Land Plants
+  author:
+  - family: Su
+    given: Danyan
+  - family: Yang
+    given: Lingxiao
+  - family: Shi
+    given: Xuan
+  - family: Ma
+    given: Xiaoya
+  - family: Zhou
+    given: Xiaofan
+  - family: Hedges
+    given: S Blair
+  - family: Zhong
+    given: Bojian
+  issued:
+    date-parts:
+    - - 2021
+  container-title: Molecular Biology and Evolution
+  volume: '38'
+  issue: '8'
+  page: 3332–3344
+  publisher: Oxford University Press (OUP)
+  DOI: 10.1093/molbev/msab106
+- id: taylor2024UltrastructureCambrianCryptospores
+  citation-key: taylor2024UltrastructureCambrianCryptospores
+  type: article-journal
+  title: Ultrastructure of Cambrian cryptospores and the early evolution of the plant spore wall
+  author:
+  - family: Taylor
+    given: Wilson A.
+  - family: Strother
+    given: Paul K.
+  issued:
+    date-parts:
+    - - 2024
+  container-title: Fossil Imprint
+  volume: '80'
+  issue: '1'
+  page: 90–106
+  publisher: National Museum, Czech Republic
+  DOI: 10.37520/fi.2024.009
+- id: vecoli2017MiddleOrdovicianCryptospores
+  citation-key: vecoli2017MiddleOrdovicianCryptospores
+  type: article-journal
+  title: Middle Ordovician cryptospores from the Saq-Hanadir transitional beds in the QSIM-801 well, Saudi Arabia
+  author:
+  - family: Vecoli
+    given: Marco
+  - family: Wellman
+    given: Charles H.
+  - family: Gerrienne
+    given: Philippe
+  - family: Le Hérissé
+    given: Alain
+  - family: Steemans
+    given: Philippe
+  issued:
+    date-parts:
+    - - 2017
+  container-title: Revue de Micropaléontologie
+  volume: '60'
+  issue: '3'
+  page: 319–331
+  publisher: Elsevier BV
+  DOI: 10.1016/j.revmic.2017.06.003
+- id: wang2016AdaptiveCredibleIntervals
+  citation-key: wang2016AdaptiveCredibleIntervals
+  type: article-journal
+  title: Adaptive credible intervals on stratigraphic ranges when recovery potential is unknown
+  author:
+  - family: Wang
+    given: Steve C.
+  - family: Everson
+    given: Philip J.
+  - family: Zhou
+    given: Heather Jianan
+  - family: Park
+    given: Dasol
+  - family: Chudzicki
+    given: David J.
+  issued:
+    date-parts:
+    - - 2016
+  container-title: Paleobiology
+  volume: '42'
+  issue: '2'
+  page: 240–256
+  publisher: Cambridge University Press (CUP)
+  DOI: 10.1017/pab.2015.37
+- id: wang2022PalynologicalAssemblageCambrian
+  citation-key: wang2022PalynologicalAssemblageCambrian
+  type: article-journal
+  title: A palynological assemblage from the Cambrian (Series 2, Stage 4) of Shandong Province, China, and its implications to the transition from algae to land plants
+  author:
+  - family: Wang
+    given: Kai
+  - family: Xu
+    given: Hong-He
+  - family: Yin
+    given: Lei-Ming
+  issued:
+    date-parts:
+    - - 2022
+  container-title: Review of Palaeobotany and Palynology
+  volume: '301'
+  page: '104645'
+  article-number: '104645'
+  publisher: Elsevier BV
+  DOI: 10.1016/j.revpalbo.2022.104645
+- id: wellman2000MicrofossilRecordEarly
+  citation-key: wellman2000MicrofossilRecordEarly
+  type: article-journal
+  title: The microfossil record of early land plants
+  author:
+  - family: Wellman
+    given: Charles H.
+  - family: Gray
+    given: Jane
+  issued:
+    date-parts:
+    - - 2000
+  container-title: 'Philosophical Transactions of the Royal Society of London. Series B: Biological Sciences'
+  volume: '355'
+  issue: '1398'
+  page: 717–732
+  publisher: The Royal Society
+  DOI: 10.1098/rstb.2000.0612
+...

@@ -145,7 +145,11 @@ data archived, and the human–AI correspondence record published alongside.
   review superseded. In sprint C (2 November) it verified Codex's reviewed endpoint results by hand and
   reconstructed the paper around the biological problem: a new main text, four new or redrawn figures
   (`manuscript/figures.py`), a supplement with tables generated from the reviewed outputs
-  (`manuscript/supplement.qmd`, `tables.py`) and an extended claim ledger.
+  (`manuscript/supplement.qmd`, `tables.py`) and an extended claim ledger. Later the same day it moved
+  the paper to Barry's makedoc toolkit (`manuscript/text/`, `settings/build.yaml`), built the programme
+  bibliography from a DOI ledger (`references/`, `tools/refs.py`), wrote the two-page plain-language
+  brief and its figure and the agent-facing paper (`manuscript/text/brief.md`, `for-agents.md`), and
+  proposed the multi-study layout (`docs/layout-proposal.md`).
 - Claude Sonnet 5.5 (Anthropic) subagents: the F3 simulator, estimators, sketch and recovery study
   (`models/f3/`), with a second Sonnet agent reviewing; the reshape-v3 compatibility estimator, unit
   simulator and validation harness (2026-10-28 and 29, reviewed and amended by Claude Opus 5.5), and

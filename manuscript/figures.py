@@ -4,8 +4,8 @@
 # ///
 """Figures for the reconstructed manuscript and its supplement.
 
-Main text: fig1_problem, fig2_evidence, fig3_bodies, fig4_mapping.
-Supplement: figS_qsim, plus the reviewed Loop 2 and Loop 3 figures reused unchanged from models/.
+Main text, in citation order: fig1_problem, fig2_mapping, fig3_evidence, fig4_bodies.
+Two-page brief: figB1_brief. Supplement: figS2_qsim, plus the reviewed Loop 2 and Loop 3 figures reused unchanged from models/.
 Every number drawn here is read from a frozen or reviewed output table, never retyped, except the
 published clock intervals and calibration maxima, which are taken from docs/primer.md §5.3.
 """
@@ -299,16 +299,57 @@ def fig_qsim(path):
     save(fig, path)
 
 
+def fig_brief(path):
+    """One plain-language timeline for the two-page brief: clock estimates against what the rocks show."""
+    fig, ax = plt.subplots(figsize=(7.4, 4.0))
+    groups = [("Molecular clocks: common ancestor of all living land plants",
+               [(n.replace(" et al.", ""), o, y, CLOCK_COLOURS[n], None) for n, o, y in CLOCKS["embryophyta"]]),
+              ("Molecular clocks: common ancestor of living vascular plants",
+               [(n.replace(" et al.", ""), o, y, CLOCK_COLOURS[n], None) for n, o, y in CLOCKS["tracheophyta"]]),
+              ("Fossils (pale: possibly present; dark: certainly present)",
+               [("Land-plant spores", *spore_first("cryptospore")[::-1], "#5b7fa6", None),
+                ("Land-plant bodies", *body_first("B0")[::-1], "#5b7fa6", None),
+                ("Vascular-plant bodies", *body_first("B2")[::-1], "#5b7fa6", None)])]
+    y, ticks, labels = 0, [], []
+    for title, rows in reversed(groups):
+        for lab, a, b, col, _ in reversed(rows):
+            if col == "#5b7fa6":
+                certain, possible = a, b
+                ax.barh(y, possible - certain, left=certain, height=0.6, color=col, alpha=0.35)
+                ax.barh(y, certain - 400, left=400, height=0.6, color=col)
+            else:
+                ax.barh(y, a - b, left=b, height=0.6, color=col)
+            ticks.append(y); labels.append(lab); y += 1
+        ax.text(527, y - 0.15, title, fontsize=8, fontweight="bold", va="bottom")
+        y += 1.0
+    steady, _, _ = primary_bound("B2", "flat")
+    sparse = suppressed("B2", 0.1)
+    ax.annotate("", xy=(steady, -0.45), xytext=(steady, -1.2), arrowprops={"arrowstyle": "->", "color": "#1f6f4a"})
+    ax.text(steady - 1.5, -1.25, f"{steady:.0f} Ma: earliest start of the\nvascular-plant body record\nif fossilisation was steady",
+            ha="left", va="top", fontsize=7, color="#1f6f4a")
+    ax.annotate("", xy=(sparse, -0.45), xytext=(sparse, -1.2), arrowprops={"arrowstyle": "->", "color": "#1f6f4a"})
+    ax.text(sparse + 1.5, -1.25, f"{sparse:.0f} Ma: earliest start if\nearly plants fossilised\nten times less well",
+            ha="right", va="top", fontsize=7, color="#1f6f4a")
+    ax.set_yticks(ticks, labels, fontsize=7.4)
+    ax.tick_params(axis="y", length=0)
+    ax.set_xlim(527, 400)
+    ax.set_ylim(-3.0, y - 0.6)
+    ax.spines[["left", "top", "right"]].set_visible(False)
+    ax.set_xlabel("Millions of years ago")
+    fig.tight_layout()
+    save(fig, path)
+
 def main():
     OUT.mkdir(exist_ok=True)
-    for stale in ("fig1_support", "fig3_qsim_share"):
+    for stale in ("fig1_support", "fig3_qsim_share", "fig2_evidence", "fig3_bodies", "fig4_mapping", "figS1_qsim"):
         for ext in ("png", "pdf"):
             (OUT / f"{stale}.{ext}").unlink(missing_ok=True)
     fig_problem(OUT / "fig1_problem")
-    fig_evidence(OUT / "fig2_evidence")
-    fig_bodies(OUT / "fig3_bodies")
-    fig_mapping(OUT / "fig4_mapping")
-    fig_qsim(OUT / "figS1_qsim")
+    fig_mapping(OUT / "fig2_mapping")
+    fig_evidence(OUT / "fig3_evidence")
+    fig_bodies(OUT / "fig4_bodies")
+    fig_qsim(OUT / "figS2_qsim")
+    fig_brief(OUT / "figB1_brief")
     inputs = [QSIM, TIMESCALE, SPORES, MEMBERS, BOUNDS, SUPPRESS, MAPPING,
               ROOT / "models/f3/loop2/contamination.py", Path(__file__)]
     bound = contamination._input_hashes()
