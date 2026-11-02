@@ -35,12 +35,11 @@ within-range positions are modelling choices, not measured dating distributions.
 
 ### S2.1 Source and frame
 
-@abuhmida2013PalynologicalAnalysisOrdovician reports palynology from six Murzuq Basin wells. All 164 appendix samples were
+@abuhmida2013PalynologicalAnalysisOrdovician reports palynology from six Murzuq Basin wells. All [164]{.C38} appendix samples were
 transcribed independently, with 158 chart depth and type labels (153 exact matches). The 164 prose-scope
 rows and 158 chart reports were mapped, retaining barren material and possible caving
 (`data/units/libya_*.csv`; `docs/audits/2026-10-31-libya-event-map.md`). The primary frame is the
-chart-coded cuttings design `LY-MZ-CU`. Five wells contribute 59 Llandovery reference cuttings (51 with
-trilete reports), and three of them contribute 28 older cuttings without trilete reports.
+chart-coded cuttings design `LY-MZ-CU`. Five wells contribute [59]{.C02} Llandovery reference cuttings ([51]{.C02} with trilete reports), and three of them contribute [28]{.C01} older cuttings without trilete reports.
 
 ### S2.2 Model and qualification
 
@@ -62,7 +61,7 @@ The potential screen, eligibility and estimation path were simulated on a declar
 are nominal 95% compatibility bounds, qualified per quantity and design against a 0.93 coverage floor
 (calibration target 0.955), conditional on passing the potential screen, with abstentions counted as
 covering. The largest observed marginal miss proportion was 38/1,000. At the B4 boundary of the 462.6 Ma
-window, 20 of 1,000 screen-passing simulations excluded the truth, and 60 delivered non-abstaining window
+window, [20 of 1,000]{.C06} screen-passing simulations excluded the truth, and [60]{.C06} delivered non-abstaining window
 claims, so 20 of those 60 missed. Population 95% coverage, coverage conditional on a non-abstaining
 result, simultaneous coverage and validity beyond the tested histories are not established. Thirteen
 Murzuq design/delivery combinations qualify. A fourteenth qualified pair, QB-CO, supplies no older M2
@@ -95,15 +94,15 @@ well/age influence exercise are unqualified sensitivities.
 
 | Challenge at $\rho=1$ | Observed sensitivity | Scope |
 |--------------------|------------------------------|----------------|
-| Five leave-one-well-out cases | H0 0.1850–0.3646; window endpoints 462.6–468.1 Ma | one factor at a time; unqualified |
-| All nine influence/age/allocation cases | H0 0.1775–0.3646 | unqualified |
-| $\kappa=0$, independent uniform stage ages | critical $g$: 0.0910 for constant origin intensity; 0.9559, 0.2363, 0.1735 for windows ending 462.6, 467.1, 469.4 Ma | $f=1$; comparison contours, not confidence limits |
-| Shared midpoint ages | no exposure in the 459.1–462.6 Ma window | fixed chronology scenario |
+| Five leave-one-well-out cases | H0 [0.1850–0.3646]{.C07}; window endpoints [462.6–468.1]{.C07} Ma | one factor at a time; unqualified |
+| All nine influence/age/allocation cases | H0 [0.1775–0.3646]{.C07} | unqualified |
+| $\kappa=0$, independent uniform stage ages | critical $g$: [0.0910]{.C08} for constant origin intensity; [0.9559, 0.2363, 0.1735]{.C08} for windows ending 462.6, 467.1, 469.4 Ma | $f=1$; comparison contours, not confidence limits |
+| Shared midpoint ages | no exposure in the [459.1–462.6]{.C09} Ma window | fixed chronology scenario |
 | Shared 90% ages | no exposure in the window ending at 467.1 Ma | fixed chronology scenario |
 
 ## S3. QSIM-801: a model-conditional floor calculation
 
-@vecoli2017MiddleOrdovicianCryptospores [Table 1, p. 321] report 99 cryptospore morphotaxon occurrences across 17 of 20
+@vecoli2017MiddleOrdovicianCryptospores [Table 1, p. 321] report [99]{.C11} cryptospore morphotaxon occurrences across [17 of 20]{.C11}
 tabled samples assigned to the late Dapingian–early Darriwilian. Their p. 330 explicitly reports no
 triletes in the studied sequence. The table was independently reconstructed from the rendered source
 (`data/units/loop2/replication/`). Its 22 categories include informal morphotypes. Marks are distinct
@@ -124,17 +123,17 @@ of the all-zero event with enough units to cross the threshold. Then $U=\{\alpha
 
 | Relative effective recovery $h$ | Independent units, $D=1$ | Heuristic $D=2$ | Heuristic $D=4$ |
 |---:|---:|---:|---:|
-| 1 | 0.031 | 0.062 | 0.129 |
+| 1 | [0.031]{.C12} | 0.062 | 0.129 |
 | 0.5 | 0.061 | 0.125 | 0.257 |
 | 0.25 | 0.123 | 0.250 | 0.515 |
-| 0.1 | 0.307 | 0.624 | 1.287 |
+| 0.1 | [0.307]{.C12} | 0.624 | [1.287]{.C23} |
 
 The source specifies preparation but not the search coverage needed to show that every mark represents
 a unit on which triletes were detectable. Independence, effective ascertainment and sampling and stopping
 conditions are unverified. The calculation therefore stays exploratory. Toy Poisson simulations check the
-algebra but cannot validate the historical protocol. No matched counted Katian–Llandovery reference was
+algebra[]{.C13} but cannot validate the historical protocol. No matched counted Katian–Llandovery reference was
 recovered. Qusaiba-1 supplies reference context only. Röstånga and Caspalá/Lipeón are younger than M2,
-and Hanadir/TAYM-4 is separate material without a qualified design (`manuscript/external_candidates.csv`).
+and Hanadir/TAYM-4 is separate material without a qualified design[]{.C22} (`manuscript/external_candidates.csv`).
 
 ## S4. The Cambrian affinity review (M1)
 
@@ -146,13 +145,13 @@ calling direct embryophyte affinity unlikely and the interpretation premature. N
 the assessed Stage 4 producers as embryophytes. Wall ultrastructure and developmental features bear on
 precursor relationships, so the inclusive reading stays an explicit alternative. Argentine sample
 RIOCAP-7999 is unresolved under main and detected under inclusive and outlier readings. Stage 4 converts
-to 514.5–506.5 Ma, all younger than 515.5 Ma (`data/units/loop2/m1-m3/`).
+to [514.5–506.5]{.C16} Ma, all younger than 515.5 Ma (`data/units/loop2/m1-m3/`).
 
 ## S5. The positive body-record analysis
 
 ### S5.1 Inventory and units
 
-**Names.** The 241 distinct PBDB macrofossil names overlapping 445.2–393.47 Ma were classified by
+**Names.** The [241]{.C38} distinct PBDB macrofossil names overlapping 445.2–393.47 Ma were classified by
 `gpt-6.1-sol` with web search. Each name received a category, polysporangiophyte and crown-member flags,
 a basis, a cited source and a confidence (`data/macro/name_classifications.csv`). Names judged
 implausible for the window, for example the Cretaceous angiosperm leaf genus *Protophyllum*, cannot enter
@@ -173,7 +172,7 @@ oldest-member age has support from the maximum of member lower ages to the maxim
 Missing geographic keys retain the collection identifier. The proxy is conservative but is not a verified
 bed (`models/f3/loop3/out/primary_unit_membership.csv` lists every constituent record).
 
-**Older screen.** A separate screen covers all 556 older-only non-spore PBDB rows (69 names). Source
+**Older screen.** A separate screen covers all [556]{.C38} older-only non-spore PBDB rows (69 names). Source
 review of the seven plausible or unplaced names (17 occurrences) found cyanobacteria, algae or trace
 fossils and the rejected *Boiophyton*, not an additional embryophyte body. These exclusions are not
 fossil non-detections, and the screen is not a search denominator
@@ -461,15 +460,15 @@ combines trilete and inaperturate monads; it is not an automatic absence of cryp
 
 For M2, a proximal trilete aperture is modal at the embryophyte crown across the deposited methods and
 trees. X26 has a dyad-dominated alternative while X21 stays trilete-dominated, so no joint phenotype
-probability follows. On the converged extant-tree runs, 77 of 3,382 trilete starts depart along the
-path to crown Tracheophyta: conditional persistence 0.977 (Monte Carlo SE 0.0026). These trees put crown
+probability follows. On the converged extant-tree runs, [77 of 3,382]{.C19} trilete starts depart along the
+path to crown Tracheophyta: conditional persistence [0.977]{.C19} (Monte Carlo SE [0.0026]{.C19}). These trees put crown
 Embryophyta at 508 Ma, not at Hooper et al.'s 457–450 Ma. Fixed-rate retention scenarios to 452.8 Ma give
-an extant-tree median of 0.989 (95% interval 0.895–0.995) from 459.1 Ma and 0.894 (0.332–0.956) from
+an extant-tree median of [0.989]{.C20} (95% interval [0.895–0.995]{.C20}) from 459.1 Ma and [0.894]{.C20} ([0.332–0.956]{.C20}) from
 515.5 Ma. These are model-conditional aperture retention scenarios, not observed survival, and they are
 not multiplied into any coverage.
 
 For M3, the *Cooksonia barrandei* holotype links trilete production and multiple sporangia directly, but
-its tracheids are unknown. The Irish Homerian material has a conditional sporangial interpretation and no
+its tracheids are unknown[]{.C21}. The Irish Homerian material has a conditional sporangial interpretation and no
 direct demonstration of the anatomy known from younger *C. pertoni*. A total-group or stem occurrence and
 a crown assignment remain distinct. For M1, cryptospore persistence has not been assessed.
 
@@ -479,7 +478,7 @@ Two analyses were replaced after independent review. The record is kept so that 
 changed and why.
 
 **The Loop 3 body-record pilot** (`docs/loop3-pilot.md`, provisional, by Claude) reported logistic-ramp
-limits of 452.6, 454.1 and 438.0 Ma for B0, B1 and B2. It read them as favouring the young clock, with a
+limits of [452.6, 454.1 and 438.0]{.C35 .superseded} Ma for B0, B1 and B2. It read them as favouring the young clock, with a
 15–25 Myr preservation lag. Codex's review found:
 
 - stage collection totals passed where per-Myr density was required, counting stage duration twice. The

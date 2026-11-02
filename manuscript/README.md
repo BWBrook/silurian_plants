@@ -14,7 +14,10 @@ The same study is written three ways, all in `text/`, all from one evidence base
 | `brief.md` | anyone: two A4 pages, one sheet printed double-sided | `build/brief.pdf` |
 | `for-agents.md` | an agent arriving cold: claims, provenance, traps, checks | read as Markdown |
 
-`claims.csv` links each claim to its evidence and limits. `mapping.csv` separates each maximum's
+`claims.csv` is the single claims ledger: every claim's ID, status (supported, provisional, refuted,
+superseded), value, evidence files, verifying commit, reproduce command and limits. All four
+renderings cite it, binding quoted numbers as `[428.8]{.C27}` (invisible in PDF and DOCX), and
+`make -C manuscript check` runs `tools/claims.py check` to catch any drift. `mapping.csv` separates each maximum's
 specimen, identification, sampling, persistence and node links. `external_candidates.csv` records the
 spore-frame routes examined. `package_manifest.csv` inventories the candidate files with SHA-256;
 `data-manifest.csv` names the excluded private inputs.

@@ -12,4 +12,5 @@ $(PROFILES):
 	$(RUN) $(MAKE) -C "$(MAKEDOC)" CONFIG="$(CONFIG)" PROFILE=$@ all
 
 check:
+	python3 ../tools/claims.py check claims.csv text/main.md text/supplement.md text/brief.md text/for-agents.md
 	$(foreach p,$(PROFILES),$(RUN) $(MAKE) -C "$(MAKEDOC)" CONFIG="$(CONFIG)" PROFILE=$(p) lint-manuscript refs-audit &&) true

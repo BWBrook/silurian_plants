@@ -3,7 +3,7 @@ document: agent-facing paper
 study: F3, fossil maxima behind land-plant molecular clocks
 status: internal draft; Loop 3 sprint C delivered, awaiting Codex review C and Claude's loop close
 human_paper: manuscript/text/main.md (+ supplement.md, brief.md)
-claims_ledger: manuscript/claims.csv
+claims_ledger: manuscript/claims.csv (single source for all renderings; checked by tools/claims.py)
 governing_docs: [docs/charter.md, docs/decisions.md, docs/plan-f3.md, docs/f3-shape.md, docs/loop3-design.md, docs/loop3-results.md]
 authority: Barry W. Brook decides public release, submission and any correspondence outside Claude and Codex
 updated: 2026-11-02
@@ -18,31 +18,41 @@ artefact wins and this file is wrong: fix it in the same commit.
 
 ## 1. Read order and trust
 
-1. This file, then `manuscript/claims.csv`, the ledger of 34 claims (C01–C34). Each row gives the
-   value, its status class, its evidence path and its limit. Quote a claim only with its limit.
+1. This file, then `manuscript/claims.csv`, the single claims ledger behind every rendering of this
+   study (39 claims, C01–C39). Each row gives the claim, its value, its status, its basis, its evidence
+   files, the commit at which that evidence was verified, the command that reproduces it, its limit
+   and, if superseded, its replacement. Quote a claim only with its limit.
 2. `manuscript/text/main.md` for the argument; `supplement.md` for the machinery.
 3. `docs/decisions.md` (newest first) for what was settled, by whom, and why.
 4. `docs/questions.md` for the programme's open questions (Q1–Q10). This study answers part of Q1.
 
-Status classes in `claims.csv`, from strongest to weakest: *source extraction* and *frozen qualified
-result*; *reviewed inventory*; *conditional endpoint inference*; *declared* or *retrospective
-sensitivity*; *exploratory model-conditional calculation*; *procedure check*. A procedure check (for
-example, simulation coverage) tests the method, never the fossils.
+`status` is one of *supported* (verified by a second agent against its evidence), *provisional*
+(awaiting that check), *refuted* or *superseded*. `basis` says what kind of result it is, from
+strongest to weakest: *source extraction* and *frozen qualified result*; *reviewed inventory*;
+*conditional endpoint inference*; *declared* or *retrospective sensitivity*; *exploratory
+model-conditional calculation*; *procedure check*. A procedure check (for example, simulation
+coverage) tests the method, never the fossils.
+
+The article, supplement, brief and this guide all cite the ledger. In the Markdown, `[428.8]{.C27}`
+binds a quoted number to C27 (invisible when rendered), and `tools/claims.py check` fails if the number
+no longer equals one of C27's values at the precision shown, if a cited claim is superseded, or if a
+ledger value cannot be found in its evidence. Change a result in the ledger first; the check then lists
+every sentence that must follow.
 
 ## 2. The answer, as claims
 
 - **M1 (515.5 Ma, crown Embryophyta).** Untestable from sampled absence. No admitted older-zero design
-  (C16). The Stage 4 material is younger than the maximum (514.5–506.5 Ma) and is not accepted as
+  (C16). The Stage 4 material is younger than the maximum ([514.5–506.5]{.C16} Ma) and is not accepted as
   embryophyte by the three assessed sources (C15).
 - **M2 (459.1 Ma, crown Embryophyta).** One qualified comparison, Murzuq Basin (C01–C06, C24). It
-  constrains the product of delivery and producer intensity, ρ·f ≈ 0.09, not either alone. QSIM-801
+  constrains the product of delivery and producer intensity, ρ·f ≈ [0.09]{.C24}, not either alone (C04 gives the ρ = 1 readouts). QSIM-801
   is exploratory only (C11–C14, C23).
 - **M3 (431.2 Ma, crown Tracheophyta).** No absence design (C17). Positive-record endpoints for B2:
-  428.84 / 428.88 / 428.45 / 431.63 Ma / none within domain, for constant, PBDB-density,
+  [428.84]{.C27} / [428.88]{.C27} / [428.45]{.C27} / [431.63]{.C27} Ma / none within domain, for constant, PBDB-density,
   plant-excluded-density, 25 Myr decline and 10 Myr decline histories (C27). Recovery reduced tenfold
-  before 426.7 Ma gives 448.10 Ma; a hundredfold gives no bound (C32, retrospective).
-- **Known-answer check.** B0 bounds of 434.51–437.16 Ma sit 21–24 Myr after cryptospores are certainly
-  present at 458.2 Ma (C28). This shows that a body lag has occurred once in this system. It is *not* a
+  before [426.7]{.C32} Ma gives [448.10]{.C32} Ma; a hundredfold gives no bound (C32, retrospective).
+- **Known-answer check.** B0 bounds of [434.51–437.16]{.C28} Ma sit [21–24]{.C28} Myr after cryptospores are certainly
+  present at [458.2]{.C28} Ma (C28). This shows that a body lag has occurred once in this system. It is *not* a
   lag estimate to transfer to B2.
 - **Synthesis.** An older, sparsely recorded flora is allowed, not required. The record cannot test
   recovery before its oldest find.
@@ -91,12 +101,12 @@ The primary row of `reviewed_bounds.csv` is: `reading=main`, `units=locality_age
 Do not reintroduce any of these. Each was caught in review; the record is in `supplement.md` §S7 and
 `docs/audits/`.
 
-1. **Loop 3 pilot numbers.** The logistic-ramp limits 452.6 / 454.1 / 438.0 Ma, "favours the young
+1. **Loop 3 pilot numbers (C35, superseded by C27).** The logistic-ramp limits [452.6 / 454.1 / 438.0]{.C35 .superseded} Ma, "favours the young
    clock" and "a measured 15–25 Myr lag" are retired (`docs/loop3-pilot.md` is marked provisional).
    The defects: stage collection totals used as per-Myr density, which counts duration twice; medians
    of imputed limits presented as 95% limits; PBDB localities merged by country, genus and age
    overlap; collections treated as independent beds.
-2. **"Murzuq excludes abundant producers."** It excludes abundant, *well-delivered* producers. Only ρ·f
+2. **"Murzuq excludes abundant producers" (C36, superseded by C24).** It excludes abundant, *well-delivered* producers. Only ρ·f
    is constrained (C24).
 3. **QSIM as a second qualified test.** It is not; search coverage and independence are undocumented.
 4. **Age-allocation quantiles as confidence bounds** (Table S8). They are descriptive.
@@ -126,15 +136,15 @@ uv run --with numpy --with pandas --with scipy --with pytest python -m pytest mo
 uv run manuscript/figures.py              # rewrites figures/ and figures.json hashes
 python3 manuscript/tables.py              # supplement tables; on unchanged inputs, a no-op diff
 uv run tools/refs.py build                # bibliography; key collisions fail loudly
-make -C manuscript check                  # makedoc lint and reference audit, all profiles
+make -C manuscript check                  # claims drift check, then makedoc lint and citation audit
 make -C manuscript                        # PDF and DOCX for main, supplement and brief into manuscript/build/
 python3 tools/units.py check              # unit tables and source hashes
 python3 manuscript/package.py             # release inventory with SHA-256
 ```
 
-Invariants worth asserting when you touch the body-record code: B2 constant bound 428.84 Ma at
-n_guaranteed 48 and oldest possible 426.7 Ma; B0 constant bound 434.51 Ma; exact-age simulation coverage
-0.941–0.958. Any change to these needs a decision entry, not just a passing test.
+Invariants worth asserting when you touch the body-record code: B2 constant bound [428.84]{.C27} Ma at
+n_guaranteed [48]{.C25} and oldest possible 426.7 Ma; B0 constant bound [434.51]{.C28} Ma; exact-age simulation coverage
+[0.941–0.958]{.C34}. Any change to these needs a decision entry and a ledger update, not just a passing test.
 
 ## 7. Open edges
 
@@ -148,7 +158,7 @@ Assume no new measurements, logs or help from original authors or outside specia
   counted target and control grains. `manuscript/external_candidates.csv` lists the routes already
   tried.
 - **Q2 (pivotal ages).** Yea and Bathurst Island set the B2 tail; leave-one-region-out spans
-  427.22–430.45 Ma.
+  [427.22–430.45]{.C30} Ma.
 - **Q4 (character-to-node links).** The tracheid status of the oldest polysporangiate bodies and the
   timing of crown-diagnostic body features. See `data/pilot/combinations.csv` and `supplement.md` §S6.
 - **Q9 (clock sensitivity).** Parked. Rerunning a clock with the M3 bound replaced by the conditional
@@ -159,6 +169,8 @@ Assume no new measurements, logs or help from original authors or outside specia
 - Read `AGENTS.md`. Facts and citations come from sources read in the task; every DOI is checked.
 - Codex and Claude share one checkout. Check that the git index is empty, stage explicit paths only,
   and agree file ownership on the Board (project `silurian-plants`) before concurrent edits.
+- To add or change a claim, edit `manuscript/claims.csv`, reverify the evidence, run
+  `python3 tools/claims.py stamp manuscript/claims.csv ID`, then make every document pass the check.
 - To cite a new work, add its DOI to `references/dois.txt`, run `tools/refs.py build`, and cite the
   printed key as `[@key]`.
 - Record decisions in `docs/decisions.md` with who decided. Keep `docs/charter.md`'s AI-roles section

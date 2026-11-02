@@ -70,6 +70,11 @@ do not wait or poll for a reply from an unprompted collaborator.
   (`renv.lock` committed, libraries ignored), for example `models/pilot-asr/`; restore with
   `renv::restore()` from that directory.
 - `tools/cards.py`: card validation, DOI checking and index generation.
+- `manuscript/`: the F3 paper, built with makedoc. One evidence base, three renderings in `text/`: the
+  article and supplement, a two-page brief for any reader, and a guide for agents (`for-agents.md`),
+  all citing one claims ledger, `claims.csv`. See `manuscript/README.md`.
+- `references/`: the programme bibliography. `dois.txt` is canonical; `tools/refs.py build` writes
+  `refs.yaml` from Crossref (Barry, 2026-11-02). Zotero supplies extra metadata only where needed.
 
 ## Commands
 
@@ -78,6 +83,8 @@ uv run tools/cards.py check   # schema and vocabulary
 uv run tools/cards.py dois    # DOIs in taxa/ and docs/ against Crossref
 uv run tools/cards.py index   # regenerate taxa/README.md
 uv run tools/cards.py matrix  # regenerate data/traits.csv
+uv run tools/refs.py build    # references/refs.yaml from references/dois.txt
+make -C manuscript check      # claims drift check, makedoc lint and citation audit
 ```
 
 Run `check`, `index` and `matrix` after editing cards, and `dois` after adding references.
@@ -122,4 +129,10 @@ Run `check`, `index` and `matrix` after editing cards, and `dois` after adding r
 - Record decisions that shape the programme in `docs/decisions.md`, naming who decided. Keep
   the AI-roles section of `docs/charter.md` current: the work will be published with a full
   statement of which systems did what.
+- Every paper has one claims ledger. Each claim has an ID, a status (supported, provisional, refuted or
+  superseded), evidence files, the commit at which they were verified, and the command that
+  reproduces it. The article, supplement, brief and agent guide cite those IDs, binding each quoted
+  number as `[428.8]{.C27}`; `tools/claims.py check` must pass before committing a change to a paper
+  or its evidence. Change a result in the ledger first, then the documents. A claim becomes
+  supported only after the other agent or Barry has checked it against its evidence.
 - Commit to `main` when work reaches a coherent state, and push.

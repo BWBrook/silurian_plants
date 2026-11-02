@@ -44,7 +44,7 @@ studies/
     data/        study-derived evidence (today's data/units, pilot, macro, sprint2)
     models/      analysis code and outputs (today's models/f3, models/pilot-asr)
     paper/       makedoc sources and renderings: text/{main,supplement,brief,for-agents}.md,
-                 figures/, settings/, csl/, build/, claims.csv
+                 figures/, settings/, csl/, build/, and claims.csv, the single ledger all four cite
   q9-hooper-provenance/   parked; today's data/q9 and its audit
 ```
 
@@ -54,15 +54,17 @@ Rules that keep it from re-smooshing:
    Studies do not import each other's internals. A study that produces something reusable promotes
    it to `data/` or `tools/` with a README and a decision entry. A later study may also pin an
    earlier one's tagged release.
-2. **One study, one folder, one front door.** Everything needed to rebuild a study's claims is in its
+2. **One ledger per paper.** Every rendering cites `claims.csv` IDs, and `tools/claims.py check` fails on drift
+   (adopted 2026-11-02 for F3; see `AGENTS.md`).
+3. **One study, one folder, one front door.** Everything needed to rebuild a study's claims is in its
    folder or in the commons. Its `README.md` and `paper/text/for-agents.md` are the entry points.
-3. **Two decision logs.** `docs/decisions.md` keeps charter-level and cross-study decisions, and links
+4. **Two decision logs.** `docs/decisions.md` keeps charter-level and cross-study decisions, and links
    each study log. Each study keeps its own routine record. The questions register stays
    programme-wide, and studies cite Q IDs.
-4. **Releases are per study.** Tag `f3-v1.0` with its own Zenodo DOI and `CITATION.cff` entry. The
+5. **Releases are per study.** Tag `f3-v1.0` with its own Zenodo DOI and `CITATION.cff` entry. The
    journal article, the brief and the agent paper are renderings of that tag. The repository stays the
    living record.
-5. **Each study names its framing and question.** For example, `f3-*` cites `docs/framings.md` F3 and
+6. **Each study names its framing and question.** For example, `f3-*` cites `docs/framings.md` F3 and
    Q1. A new study needs its own decision before model code starts, as `AGENTS.md` already requires.
 
 ## Alternatives considered

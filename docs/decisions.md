@@ -3,6 +3,47 @@
 Dated record of decisions that shape the programme. Newest first. Say who decided, and quote
 Barry exactly (with source) or label a paraphrase.
 
+## 2026-11-02: One claims ledger for all renderings; scripted bibliography canonical (Barry; Claude)
+
+Barry, in chat on 2 November (turn 12): "scripted route should be canonical, we'll use the Zotero for
+additional metadata as/if required, agreed." `references/dois.txt` with `tools/refs.py` is now the
+canonical bibliography (`AGENTS.md`).
+
+He also set a structural rule for the three renderings: "all three draw on a single list of the paper's
+claims. Each claim has an ID, a status (supported, provisional, refuted or superseded), links to its
+evidence files and commits, and the command that reproduces it. The article, the two-page brief and the
+agent guide cite those IDs, so a script can catch them drifting apart. Without that, three documents
+will diverge within a month."
+
+Done by Claude:
+
+- **Ledger.** `manuscript/claims.csv` is rebuilt with the columns id, status, claim, value, basis,
+  evidence, commit, reproduce, limit and superseded_by. It holds 39 claims:
+  - 34 supported;
+  - 3 provisional (C24, C28, C33: Claude's interpretation or arithmetic, awaiting Codex's review C);
+  - 2 superseded (C35, the Loop 3 pilot limits; C36, the overstated Murzuq wording).
+  - New supported claims: geography (C37), inventory sizes (C38) and the B1 bounds (C39).
+- **Checker.** `tools/claims.py`:
+  - `check` fails on unknown or duplicate IDs, on statuses outside the four, on missing evidence or
+    reproduce commands, on a non-derived ledger value that cannot be found in its evidence at its
+    precision, on a quoted number that does not equal a value of the cited claim, and on a citation of a
+    superseded claim that is not marked as such.
+  - It warns on stale evidence (changed since the recorded commit) and on uncited claims.
+  - `stamp` records the verifying commit.
+  - It already caught four ledger values that did not match their evidence files, each now corrected
+    or marked derived. The clearest case: C12 had quoted 0.030722 where the evidence holds 0.03072.
+- **Citations.** All four documents bind their quoted numbers as `[428.8]{.C27}`; the binding is invisible
+  in PDF and DOCX. All 39 claims are cited. `make -C manuscript check` runs the check first.
+- **Tested.** Changing C27's constant bound to 430.10 and marking C24 superseded produced 18 errors,
+  each pointing at the document line that would have drifted.
+- **Known limit.** A rounded quotation can match another value of the same claim. For example, 429
+  matches both 428.84 and 428.88, so a change to one of them can pass unnoticed where the text gives
+  only the rounded figure.
+
+**Structural review (Q1/Q5):** the ledger is now the paper's spine, and every rendering is checked
+against it. It also turns Q5's discipline (claims failing against their sources) on our own work: a
+ledger value must be found in its evidence.
+
 ## 2026-11-02: Paper toolchain, three renderings and a layout proposal (Barry; Claude)
 
 Barry, in chat on 2 November (turn 12), asked for three things. First, consider whether the

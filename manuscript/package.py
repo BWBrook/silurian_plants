@@ -41,7 +41,7 @@ def main():
     collect("manuscript/text/*.md", "authored paper source: main, supplement, brief, agent paper")
     collect("manuscript/build/*.pdf", "rendered snapshot of the paper sources")
     collect("manuscript/figures/*", "authored figure or bound figure receipt")
-    for name in ("references/dois.txt", "references/manual.yaml", "references/refs.yaml", "tools/refs.py"):
+    for name in ("references/dois.txt", "references/manual.yaml", "references/refs.yaml", "tools/refs.py", "tools/claims.py"):
         add(name, "bibliography ledger, generated bibliography or its builder")
     for name in ("loop1-close.md", "loop2-close.md", "loop2-sprint1-results.md", "loop2-sprint2-results.md",
                  "f3-shape.md", "pilot-traits.md", "charter.md", "decisions.md", "plan-loop3.md", "loop3-pilot.md",
