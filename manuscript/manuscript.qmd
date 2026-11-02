@@ -1,10 +1,10 @@
 ---
-title: "Which fossil maximum ages for the origin of land plants can the sampled record test?"
-subtitle: "Internal research draft, revised after Loop 2 review. Not for release; release and submission are Barry W. Brook's decision."
+title: "Older than their fossils? What the Ordovician–Silurian record can test about the maxima that divide land-plant molecular clocks"
+subtitle: "Internal research draft, Loop 3 reconstruction. Not for release; release and submission are Barry W. Brook's decision."
 author:
   - Barry W. Brook
   - Claude Opus 5.5 and OpenAI Codex (AI roles below)
-date: 2026-11-01
+date: 2026-11-02
 format:
   html:
     toc: true
@@ -14,374 +14,403 @@ format:
     toc: false
     geometry: margin=2.2cm
     mainfont: "Helvetica Neue"
+crossref:
+  fig-prefix: Fig.
+  tbl-prefix: Table
 ---
 
 ## Abstract
 
-Fossil maximum-age arguments require both an observation model for absence and a biological
-link from the diagnostic character to the dated node. We assessed the sampled evidence behind
-three land-plant clock maxima: 515.5 and 459.1 Ma for crown Embryophyta, and 431.2 Ma for crown
-Tracheophyta. Of the assessed frames, only a Murzuq Basin cutting series supports a qualified
-older-zero/reference comparison. It contains 28 older cuttings without trilete reports and 51
-detections among 59 Llandovery reference cuttings. At equal older/reference delivery, the
-constant and exposure-weighted intensity limits at 459.1 Ma are 0.0910 and 0.1835 of reference
-encounter. A reference-level window extends to 462.6 Ma, but its location is sensitive to well
-composition, reference contamination and chronology. At the window's simulation boundary,
-20 of 1,000 passing records missed the truth, including 20 of the 60 non-abstaining results;
-coverage conditional on a claim is not established.
+Molecular clocks place the origin of crown land plants anywhere from about 515 to 450 million years
+ago (Ma), and of crown vascular plants from about 452 to 428 Ma. With the same sequence data, much of
+that spread follows from fossil calibrations, and above all from maximum ages: claims that a lineage
+would have left recoverable fossils earlier had it existed. We asked what the sampled Ordovician–Silurian
+record can actually test about three such maxima: 515.5 and 459.1 Ma for crown land plants, and 431.2 Ma
+for crown vascular plants. None can be tested as a pure absence. The 515.5 Ma maximum rests on the
+affinity of Cambrian spore-like fossils, which none of the sources we examined accepts as land-plant,
+not on sampled absence. For 459.1 Ma, one Libyan basin supplies the only qualified quantitative comparison:
+28 older well cuttings without trilete spores against 51 of 59 younger cuttings with them. It limits
+Late Ordovician trilete encounter to about a tenth of the younger level, but cannot say whether that
+reflects rare producers or poor delivery, and its verdict depends on assumed contamination and dating. For vascular plants we analysed 48 dated
+crown-member localities. If recovery was constant, or tracked collecting effort, crown vascular-plant
+bodies entered the recoverable record no earlier than about 429 Ma (95% bound), consistent with the young
+clock. The same methods, applied to all land-plant bodies, put their start 21–24 Myr after land-plant
+spores are certainly present, so bodies demonstrably lagged the lineage once in this system. If recovery
+before the Ludlow was a tenth of later levels, the bound moves to 448 Ma, overlapping older clock
+estimates. The record within its observed range cannot distinguish these cases. Under plausible
+assumptions the evidence is therefore compatible with an older, sparsely recorded early flora; it does
+not require one.
 
-An independent QSIM-801 source records 99 cryptospore morphotaxon occurrences and no triletes.
-Those marks motivate a conservative persistent-floor calculation, but the source does not
-document the target-detectable search units needed to admit it as an empirical confidence bound.
-No second frame qualifies, and no assessed frame supplies an absence design for the other two
-maxima. The Cambrian affinity review supports the main reading without eliminating declared
-alternatives; Stage 4 occurrences would in any case be younger than 515.5 Ma. Existing specimen
-and ancestral-state evidence makes explicit the additional trait-persistence and node-mapping
-assumptions. The result is a source-specific encounter analysis and a tested account of its
-limits, not a new crown-age estimate or independent replication.
+## 1. Why fossil maxima decide the age of land plants
 
-## 1. Introduction
+When did plants colonise the land, and how fast did the vascular plants that came to dominate it
+diversify? Molecular clocks give strikingly different answers (@fig-problem). Morris et al. (2018) placed
+crown Embryophyta (the last common ancestor of living land plants and all its descendants) at 515–474 Ma
+across seven topologies, and Harris et al. (2022) at 515–493 Ma. Hooper et al. (2026), using the same molecular dataset as Harris et al. but
+recalibrated fossils, obtained 457–450 Ma: a crown-group mean 55 Myr younger. For crown Tracheophyta
+(living vascular plants) the estimates are 451–419 Ma (Morris et al.), 452–447 Ma (Harris et al.) and
+432–428 Ma (Hooper et al.). Su et al. (2021) obtained still older crown-embryophyte ages with a
+Proterozoic maximum. These are disagreeing results, not one uncertain estimate.
 
-A fossil minimum can be anchored to an observed specimen, although its age and phylogenetic
-placement still require justification. A fossil maximum based on absence additionally requires
-that older sampled material could have recorded the diagnostic remains. An apparently empty
-interval can reflect late origin, low production, poor delivery, preservation or incomplete
-search. Distinguishing those explanations is part of the calibration argument.
+The difference matters biologically. If crown land plants are Cambrian, they existed for about 80 Myr
+before the first recognisable land-plant body fossil, from the Sheinwoodian, about 432 Ma (Libertín et al.
+2018). If they are Late Ordovician, that gap shrinks to as little as 19 Myr and the oldest bodies sit close
+to the root of the living radiation. The two readings imply different histories of terrestrial
+productivity, weathering and the assembly of the plant body plan (Kenrick et al. 2012; Strother & Foster
+2021; Donoghue et al. 2021).
 
-We examine three maximum-age arguments used in land-plant clocks: M1, 515.5 Ma for crown
-Embryophyta, associated with the cryptospore record (Morris et al. 2018; Su et al. 2021); M2,
-459.1 Ma for crown Embryophyta, associated with trilete spores; and M3, 431.2 Ma for crown
-Tracheophyta, associated with *Cooksonia*-type polysporangiate bodies (Hooper et al. 2026).
-These are named calibration propositions, not three interchangeable observations of crown
-origins. Trilete production, cryptospore affinity, branching architecture and vascular anatomy
-have different relationships to the relevant nodes.
+Fossils enter clocks as minima and maxima. A minimum rests on a dated fossil whose placement can be
+argued. A maximum rests on what was not found: older rocks that should have yielded the diagnostic
+fossil if the lineage had existed. Hooper et al.'s recalibration shows how much rides on that argument.
+Where Morris et al. set the crown land-plant maximum at 515.5 Ma from Cambrian cryptospores, Hooper et al.
+set it at 459.1 Ma from the oldest trilete spores, and they set 431.2 Ma for crown vascular plants. The use
+of absence-based maxima is itself contested (Hedges et al. 2018; Su et al. 2021).
 
-Our contribution is a material-level audit of the observations that can test those propositions,
-coupled to explicit encounter models and an existing trait-to-node pilot. Morris et al., Su et
-al. and Hooper et al. estimate divergence times using fossils and phylogenetic models. Here we
-instead test the observation arguments behind selected maxima. We neither infer a new dated
-tree nor claim priority for fossil-absence methods. The useful outcome can be a conditional
-bound, an identification limit, or a specific observation needed to make the proposed test work.
+A maximum makes two claims that are easily run together (@fig-mapping). The first concerns recovery:
+that sampled rocks of the right age, facies and preparation would have yielded the fossil if its
+producers were present at some stated abundance. The second concerns biology: that the producing
+lineage made the diagnostic spore or body from its origin, so the first recoverable fossil can stand
+in for the node. Early land plants strain both. Land-plant spores appear about 40 Myr before land-plant
+bodies (Wellman & Gray 2000). Terrestrial deposits are scarce before the latest Silurian, at least in
+western Europe (Kenrick et al. 2012). The oldest parent plants known in detail are minute, and
+bryophyte-grade plants lack lignin and preserve poorly (Edwards et al. 2014; Morris et al. 2018).
 
-## 2. Methods
+We therefore asked what each of the three maxima would need from the sampled record, and then tested
+what the record allows. The work had three parts:
 
-### 2.1 Events, named readings and observation frames
+1. **An audit** of the observations behind each maximum, keeping the specimen, its identification, the
+   sampling evidence, the persistence of the diagnostic trait and the node it bears on as separate
+   links.
+2. **An absence test** wherever an older-empty, younger-positive spore comparison could be built from
+   documented samples.
+3. **A positive-record analysis** of dated body fossils, which estimates how far before the oldest find
+   the recoverable record probably began, under declared recovery histories.
 
-E1 denotes trilete spores, E2 cryptospores accepted as embryophytic under a named reading, and
-E3 polysporangiate bodies. The main, inclusive and outlier readings retain explicit alternative
-identifications or affinities. A wider reading requires a record-specific acceptance; it does
-not promote every unresolved grain to a detection. The E2 rule separates morphology and producer
-evidence from the embryophyte affinity accepted by that reading.
+The third part needs no inventory of searched but empty rock; it substitutes an assumption about how
+recovery behaved before the first find, and we vary that assumption explicitly.
 
-Within each frame, the same reporting rule applies to older and reference material. An explicit
-non-detection is scoped to the material actually examined. A missing report becomes zero only
-after a full-category reporting audit; unresolved identification, missing links and unreported
-effort remain distinct from absence. Stage ages use ICS v2024/12. Source-specific age statements
-and modern numerical conversions are retained separately. Uniform within-range ages and shared
-age positions are modelling choices, not measured dating distributions.
+![The problem. Top two panels: published crown-age intervals from three molecular-clock studies (Morris et al. 2018; Harris et al. 2022; Hooper et al. 2026), with the three calibration maxima examined here (dashed). Bottom: first appearances of four fossil channels. Pale bars run from the oldest possible to the oldest certain occurrence; for spores these are the strict-set first appearances of the project compilation, and for bodies they are the reviewed locality units of this study. The hatched bar marks Cambrian Stage 4 cryptospore-like forms, whose land-plant affinity none of the sources examined accepts.](figures/fig1_problem.png){#fig-problem}
 
-### 2.2 Murzuq encounter model and qualification
+## 2. Evidence, its geography and its independence
 
-For an eligible unit, detection probability conditional on a well effect is
-$1-\exp(-rux)$, with reference rate $r$, shared $u\sim\mathrm{Gamma}(2,2)$ and older relative
-intensity $x=\rho f$. The older/reference delivery-and-recovery ratio $\rho$ takes declared
-values 1, 0.5, 0.25 and 0.1; it is not estimated from the source. Productive cuttings supply the
-primary frame. Reference and older outcomes share the well effect and are fitted jointly.
+Three bodies of evidence carry the tests (@fig-evidence).
 
-H0c constrains constant intensity; H0 and H0m constrain exposure-weighted intensity under their
-declared history classes; H1 allows the declared higher ceiling. The origin read-out at 459.1 Ma
-concerns the interval from the reference boundary $\tau=443.1$ Ma to that age. A window comparison
-instead tests a persistent minimum intensity on an older interval beginning at 459.1 Ma, allowing
-zero intensity between that boundary and $\tau$. These are different hypotheses: an unbounded
-low-intensity window does not establish compatibility of the same constant intensity all the
-way to the reference.
+**Murzuq Basin cuttings.** Abuhmida (2013) reported palynology from Ordovician to lower Silurian
+wells in southwest Libya. We transcribed all 164 appendix samples and their chart and prose reports,
+and used the chart-coded cuttings of five wells as the primary frame. Three wells supply 28 cuttings
+older than the Llandovery, none reporting trilete spores, and all five supply 59 Llandovery reference
+cuttings, 51 of which report them. Northern Africa lay near the Ordovician South Pole, within the area
+of Hirnantian glaciation (Cocks & Torsvik 2021; Scotese et al. 2021), so this frame samples one
+high-latitude basin.
 
-The potential screen, eligibility and estimation path were simulated on a declared finite grid.
-Results are nominal 95% compatibility bounds, qualified per quantity and design against a 0.93
-coverage floor (calibration target 0.955), conditional on passing the potential screen; abstentions
-count as covering. The largest observed marginal miss proportion was 38/1,000. Population 95%
-coverage, coverage conditional on a non-abstaining result, simultaneous coverage and validity
-beyond the tested histories are not established. Qualification receipts and the complete
-reporting contract are supplied in Supplement S1.
+**QSIM-801.** Vecoli et al. (2017) tabulate 99 cryptospore occurrences in 17 of 20 samples from a
+Saudi Arabian borehole assigned to the late Dapingian–early Darriwilian, and report no trilete spores
+in the studied sequence. The material and basin are independent of Murzuq.
 
-### 2.3 Contamination, chronology and identification
+**Dated body fossils.** We assembled the accepted land-plant body occurrences from 445 to 393 Ma that could
+be dated and linked to a locality. Sources were the Paleobiology Database (PBDB) names, classified
+by AI with cited sources and audited, together with our curated set of the oldest records and their
+competing readings. The audit also covered a separate screen of all 556 older non-spore PBDB rows. The
+counting unit is a locality–age proxy, so several collections, taxa or papers from one horizon count once.
+The main reading yields 77 land-plant body units, 72 of polysporangiophytes (branched sporophytes with
+several sporangia) and 50 of crown vascular-plant members (the lycophyte line or euphyllophytes). Of these,
+75, 70 and 48 are certainly older than the end of the Emsian (393.47 Ma).
 
-Murzuq's palynofacies fractions use a different preparation and a 200-organic-particle denominator;
-they cannot supply separate trilete/cryptospore counts for the chart search. We retain binary
-observations and introduce a sensitivity model. Let $g$ be the indigenous fraction of reference
-**encounter intensity**, not the fraction of positive samples; let $\kappa$ transfer the
-contaminant component into older cuts. For age-exposure weight $q_i$, an older zero has probability
+The body record is geographically concentrated where it matters most. Of the 48 crown vascular-plant
+units, only 16 have age support older than the Silurian–Devonian boundary, and those come from eight
+regions. The two oldest-possible clusters are Yea, Victoria (two horizons whose age is disputed between
+Gorstian and Early Devonian; Earp 2024) and Bathurst Island, Arctic Canada (Ludfordian; Kotyk et al.
+2002). Silurian land-plant bodies more generally come mainly from Laurentia (11 of 34 wholly Silurian units)
+and peri-Gondwanan Europe (8).
+Laurentia supplies 29 of the 77 land-plant units, most of them Devonian.
 
-$$\exp[-ru\kappa(1-g)]\{(1-q_i)+q_i\exp[-ru\rho gf]\}.$$
+Three comparisons are independent of one another in material: Murzuq, QSIM and the body record. Within
+each, independence is limited. Murzuq's 87 cuttings come from five wells, and its older cuttings from three. Body units share regions and
+collectors, and their proxy for a horizon is not a verified bed. None is independent of the clocks
+in the way a validation would need. The oldest *Cooksonia* and Ludlow *Zosterophyllum* are themselves
+calibrations, and the oldest trilete spores set a maximum. Agreement between a body-record bound and a
+clock therefore tests whether an absence-based maximum is reasonable; it does not validate a clock
+posterior.
 
-The likelihood depends on these parameters through $a=\rho gf$ and $b=\kappa(1-g)$. Tuples
-preserving both are observationally equivalent in this model. If every $q_i=1$, only their sum
-enters the older-zero likelihood. This is an identification result within the declared model,
-not a universal property of every binary observation design.
-
-A predeclared 5,760-row factorial grid varies delivery, indigenous fraction, transfer, allocation,
-chronology, interval and intensity. Independent uniform ages are compared with fixed, depth-ordered
-10%, 50% and 90% positions within source ranges. The threshold $-2\log(0.05)$ is an uncalibrated
-comparison convention. A contamination scenario that conflicts with older zeros even at $f=0$
-is flagged separately from candidate non-rejection. The 384 break-even entries explicitly fix
-$\kappa=b=0$. These surfaces and the separate 36-case well/age influence exercise are
-unqualified sensitivities; they inherit no coverage from the frozen model.
-
-### 2.4 QSIM-801: a mark-based calculation and its admission gate
-
-Vecoli et al. (2017, Table 1, p.321) report 99 cryptospore morphotaxon occurrences across 17 of
-20 tabled samples assigned to the late Dapingian–early Darriwilian; p.330 explicitly reports no
-triletes in the studied sequence. This source assignment is finer than its full-stage numerical
-enclosure, but does not supply individual sample ages. The table was
-independently reconstructed from the rendered source. Its 22 categories include informal
-morphotypes. Marks represent distinct recorded occurrences, not measured counts of independent
-producer individuals or dispersal events. The table-defined depths are 675.1–767.8 ft; the
-methods' shallower endpoint, 586.9 ft, is inconsistent and is not used to extend the frame.
-
-Let $\theta_i$ be the trilete/control unit-intensity ratio in sample $i$, before a relative
-effective recovery/ascertainment factor $h>0$. If the reported objects form a co-ascertained
-independent target/control sample, conditioning Poisson counts on the true land-spore total
-$N_i$ gives target probability $h\theta_i/(1+h\theta_i)$. For a persistent floor
-$\psi=\min_i\theta_i\geq\theta$, the all-zero probability is at most
-$(1+h\theta)^{-\sum_iN_i}$. If each mark contributes a distinct target-detectable unit, observed
-$M\leq\sum_iN_i$ permits a conservative rejection rule: no targets and
-$(1+h\theta)^{-M}\leq\alpha$. Randomness of $M$ does not invalidate the rule: conditional on
-the actual totals, rejection is a subset of the all-zero event with at least the number of
-units needed to cross the threshold. The proof and assumptions are in Supplement S3.
-
-Under that model, $U=\{\alpha^{-1/M}-1\}/h$ bounds the **minimum**, not every sample's ratio,
-an arithmetic mean, or the pooled share. A transformed floor-share limit has the same restricted
-meaning. Recovery parity $h=1$ is an assumption; producer output additionally requires relative
-delivery and preservation assumptions.
-
-The source specifies preparation but not the search coverage needed to establish that every
-mark represents a unit on which triletes were detectable under the declared rule. Independence,
-effective ascertainment and sampling/stopping conditions are unverified. The calculation is
-therefore retained as an **exploratory model-conditional limit**, not an admitted empirical
-confidence bound or a second qualified result. Multiplying the exponent by $1/D$ for $D=2,4$
-is a heuristic sensitivity, not a validated correction for clustering. Toy Poisson simulations
-check the mathematical construction; they cannot validate the historical search protocol.
-Le Hérissé et al.'s companion percentages are not used.
-
-### 2.5 Biological mapping and external-source review
-
-The existing pilot separates specimen observations, accepted event readings, encounter,
-trait persistence and node interpretation. We reused its source-adjudicated combinations,
-Hooper et al.'s deposited crown-state outputs and the already checked stochastic-map analyses;
-we did not rerun the R analysis. Aperture (X21) and dispersal unit (X26) were modelled separately,
-so their marginal supports do not define a joint ancestral phenotype. The X26 monad category
-combines trilete and inaperturate monads; it is not an automatic absence of E2 cryptospory.
-
-The bounded external roster comprises QSIM-801, Qusaiba-1, Hanadir/TAYM-4, Röstånga-1 and
-Caspalá/Lipeón, plus the search for a matched counted reference. Each has an inspectable
-disposition in `external_candidates.csv`. No exhaustive absence claim about all held literature
-is inferred from a keyword scan. The Cambrian review examines Strother (2016), Taylor & Strother
-(2024) and Wang et al. (2022), retaining material identity, source ages and affinity uncertainty.
+![Where the tested evidence comes from. Body-fossil locality units (main reading) by palaeogeographic region; bars span reported age ranges, coloured by the most specific category each unit supports. Blue: Murzuq Basin cuttings used in the spore test (older cuttings without trilete reports, and the Llandovery reference block). Hatched: QSIM-801 cryptospore samples (full-stage enclosure; the source assigns them more finely, to the late Dapingian–early Darriwilian). Regions follow approximate modern country or state assignments, not a palaeogeographic reconstruction. Spore records outside these two frames are not shown.](figures/fig2_evidence.png){#fig-evidence}
 
 ## 3. Results
 
-### 3.1 The qualified Murzuq comparison
+### 3.1 Crown land plants before 515.5 Ma: a question of affinity, not absence
 
-The primary chart-code cutting frame contains 28 older reported zeros and 51 detections among
-59 reference units. At $\rho=1$, the frozen primary row gives H0c $f^*=0.0910$ and H0
-$f^*=0.1835$ at 459.1 Ma. The values 0.0955 and approximately 0.189 belong to other read-outs
-or the pre-459 allocation sensitivity, not that primary row.
+The 515.5 Ma maximum of Morris et al. (2018) rests on Cambrian cryptospore-like packets and polyads.
+Of the three sources we examined, none accepts them as land-plant spores. Strother (2016) placed the
+Tennessee taxa in Charophyta, Taylor & Strother (2024) read the packets as pre-embryophytic, and
+Wang et al. (2022) favoured ancestral aeroterrestrial algae while calling an embryophyte affinity unlikely.
+More decisively, the material is Stage 4, 514.5–506.5 Ma on our timescale, and so younger than the maximum
+itself. Even accepting it would neither contradict 515.5 Ma nor establish crown membership. No assessed
+source documents productive sampled material older than 515.5 Ma in which land-plant spores would have
+been reported. This maximum cannot be tested from the sampled record; it is a judgement about affinity.
 
-Reference-level windows end at 462.6, 464.1 and 467.1 Ma for $\rho=1,0.5,0.25$, respectively;
-the $\rho=0.1$ window is unbounded within the declared domain. Windows at $f=0.1$ and 0.01
-are unbounded for all four delivery scenarios. This concerns the pre-459.1 window hypothesis,
-not uninterrupted production at that level through the reference boundary.
+### 3.2 Crown land plants before 459.1 Ma: one quantitative test, conditional on recovery
 
-The central 462.6 Ma window has a material qualification limitation. At its B4 boundary,
-20 of 1,000 screen-passing simulations excluded the truth; 60 delivered non-abstaining window
-claims, so 20 of those 60 missed. It is not a population 95% guarantee conditional on a claim.
-There are thirteen qualified Murzuq design/delivery combinations; the fourteenth qualified pair
-is QB-CO, which supplies no older M2 interval and has a narrower qualified class scope.
+The 459.1 Ma maximum of Hooper et al. (2026) rests on the oldest possible trilete spores. Under their
+ancestral-state reconstruction, trilete monads mark total-group land plants, so a crown older than
+459.1 Ma would imply undetected trilete producers. Murzuq is the only frame we found in which that
+implication can be confronted with documented older and younger samples.
 
-| Challenge at $\rho=1$ | Observed sensitivity | Scope |
-|---|---|---|
-| Five leave-one-well-out cases | H0 0.1850–0.3646; window endpoints 462.6–468.1 Ma | One factor at a time; unqualified |
-| All nine influence/age/allocation cases | H0 0.1775–0.3646 | Unqualified |
-| $\kappa=0$, independent uniform stage ages | Critical $g$: 0.0910 for constant origin intensity; 0.9559, 0.2363, 0.1735 for windows ending 462.6, 467.1, 469.4 Ma | $f=1$; comparison contours, not confidence limits |
-| Shared midpoint ages | No exposure in the 459.1–462.6 Ma window | Fixed chronology scenario |
+We modelled each cutting's chance of reporting triletes as an encounter process sharing a well effect,
+with older encounter intensity expressed as a fraction *f* of the Llandovery reference. An assumed
+delivery-and-recovery ratio *ρ* covers differences in transport, preservation and preparation between
+older and younger material. Procedures were checked by simulation on a declared grid and admitted only
+where coverage reached 0.93 (Supplement S2).
 
-The short-window result is fragile under these scenarios. A reduction exceeding about 4.4%
-in the indigenous reference intensity crosses its comparison threshold when older contaminant
-transfer is zero. This is not a measured contamination fraction or a percentage of reference
-positive samples. Wider windows survive more contamination on that particular no-transfer
-surface; they are not robust over unrestricted delivery, transfer and chronology. For example,
-shared 90% ages leave no exposure in the window ending at 467.1 Ma.
+| Question asked of the 28 older cuttings | Delivery equal (*ρ* = 1) | Delivery halved | Delivery quartered | Delivery a tenth |
+|------------------------------------|-----------:|-----------:|-----------:|-----------:|
+| Largest constant producer intensity, 459.1 Ma to the Llandovery | 0.091 | 0.182 | 0.364 | 0.910 |
+| Largest intensity, exposure-weighted history class | 0.184 | 0.258 | 0.421 | 0.921 |
+| Oldest end of a reference-intensity interval beginning at 459.1 Ma | 462.6 Ma | 464.1 Ma | 467.1 Ma | no limit |
+| Oldest end of an interval at 0.1 or 0.01 of reference intensity | no limit | no limit | no limit | no limit |
 
-![Sampled support and missing observation designs. Broad stage enclosures are distinguished from the source's finer qualitative dating; bars are not occurrence dates.](figures/fig1_support.png)
+: What the Murzuq comparison allows: 95% compatibility limits on older trilete-producer intensity as a fraction *f* of the Llandovery reference, primary stage allocation. Rows 1–2 constrain intensity sustained from 459.1 Ma to the reference; rows 3–4 constrain an interval of fixed intensity beginning at 459.1 Ma and extending further back. {#tbl-murzuq}
 
-![Joint sensitivity of the short Murzuq window. Colours report an uncalibrated comparison or model-conflict flag, not confidence or probabilities over geology.](../models/f3/loop2/out/joint_window_sensitivity.png)
+The result is clear in form and conditional in substance (@tbl-murzuq). What the zeros constrain is
+delivered, recovered encounter: the product *ρf* stays near 0.09 across delivery scenarios. If older
+material delivered and preserved spores as well as the Llandovery reference, trilete producers sustained
+from 459.1 Ma must have been below a tenth of their Llandovery intensity. If delivery was a tenth as good,
+producers at nearly the reference intensity are allowed. Intervals of producers at a tenth or a
+hundredth of reference intensity are unbounded under every delivery scenario. The record therefore
+rejects abundant, well-delivered Late Ordovician trilete producers in this basin, not sparse or poorly
+delivered ones, and it cannot tell those two apart.
 
-### 3.2 External comparison: verified observations, no qualified replication
+The verdict also moves with the auxiliary assumptions. Removing one well at a time spans exposure-weighted limits of 0.185–0.365. Shared within-stage age positions can remove all exposure from the
+459.1–462.6 Ma window. With no contaminant transfer to older cuttings, a reduction of more than about
+4.4% in the indigenous share of reference intensity crosses the short window's comparison threshold. At that window's simulated boundary,
+20 of 1,000 screen-passing simulations missed the truth, and those 20 were among only 60 that made a
+claim. The comparison is real and useful, but it is one basin, it sits at a glacial pole, and it depends
+on preservation and recovery.
 
-QSIM-801 supplies 99 verified marks and an explicit trilete non-detection from a separate study.
-At $M=99,h=1,D=1$, the conditional floor limit is 0.030722; at $h=0.1$ it is 0.307224.
-These calculations do not establish that every sample, or the pooled land-spore rain, contained
-less than 3% triletes. They would reject a floor maintained in every informative sample only
-under the stated observation model.
+QSIM-801 points the same way without reaching the same standard. Treating each of the 99 occurrences
+as an independent unit on which a trilete would have been detected, a persistent trilete share above
+about 3% of land-plant spores would be rejected at equal recovery, and above about 31% at a tenth of it.
+The source does not document the search protocol needed to make those units independent and
+target-detectable, so we report this as an exploratory, model-conditional calculation, not a second
+qualified test (Supplement S3).
 
-| Relative effective recovery $h$ | Independent-unit calculation, $D=1$ | Heuristic $D=2$ | Heuristic $D=4$ |
-|---:|---:|---:|---:|
-| 1 | 0.031 | 0.062 | 0.129 |
-| 0.5 | 0.061 | 0.125 | 0.257 |
-| 0.25 | 0.123 | 0.250 | 0.515 |
-| 0.1 | 0.307 | 0.624 | 1.287 |
+### 3.3 Crown vascular plants: what the body record allows
 
-: Model-conditional floor limits or exponent sensitivities; none is an admitted empirical confidence bound.
+No assessed source supplies a roster of searched Silurian beds with comparable effort for the 431.2 Ma
+maximum. The Irish late-Wenlock sections report fossil-free mudstone qualitatively, without an enumerated
+roster, and the historical Barrandian axes are selected specimens, not search trials. We therefore turned to the positive record.
 
-Even the heuristic table does not support an exclusion across all scenarios: at $D=4,h=0.1$,
-the floor limit exceeds one. The independent-unit formula's $h>0.03072$ threshold for a floor
-of one is therefore conditional on $D=1$, as well as the unverified sampling contract.
+**Method.** For a fixed recovery history *w*(*t*), the relative rate at which an existing lineage
+contributes dated, recoverable occurrences, and *n* independent units after a younger cutoff *c*, the
+one-sided 95% older bound *T* on the start of the recoverable record solves
+$U(T) = U(A)\,0.05^{-1/n}$. Here *A* is the oldest unit's age and $U(a)=\int_c^a w(s)\,ds$. With constant
+*w* this is the classical confidence interval on a stratigraphic range (Strauss & Sadler 1989; Marshall
+1990), and the absolute rate cancels. Interval-dated units enter conservatively: the oldest possible
+age and the smallest number certainly older than the cutoff. We report the bound for six histories:
+constant recovery; recovery proportional to PBDB land and marginal-marine collections per Myr, with and
+without collections that match the plant-filtered extract; and recovery declining exponentially into
+the past on 25 and 10 Myr timescales, the last also combined with plant-excluded collection density
+(Supplement S5).
 
-No matched counted Katian–Llandovery reference was recovered in this bounded review. Abuhmida's
-early-Rhuddanian account names one trilete taxon among qualitatively rare spores; it does not
-provide a one-specimen tally or a target/control denominator. His Cr-4 assemblage is assigned
-late Rhuddanian–Telychian, notwithstanding comparison to an older Saudi zone. Such descriptions
-cannot establish quantitative agreement with a floor limit. Qusaiba supplies reference context
-only. Röstånga and Caspalá/Lipeón are younger than M2. Hanadir/TAYM-4 is separate borehole
-material, not demonstrably reused QSIM material, but no independent qualified design is
-established here. Same region alone is not evidence of specimen reuse.
+**The known-answer check.** The same calculation for any land-plant body (75 units, oldest the
+Sheinwoodian *Cooksonia barrandei*) gives bounds of 434.5–437.2 Ma under the four histories that
+produce one. Land-plant cryptospores are certainly present by 458.2 Ma. The start of the recoverable
+body record therefore lies 21–24 Myr after the land-plant lineage is known to exist (@fig-bodies, top).
+This does not supply a preservation lag to transfer to vascular plants or an origination date to
+calibrate against. It does show, in this system, that a lineage can be present for more than 20 Myr
+before its bodies enter the record at the rate seen later. Under the inclusive reading the Hirnantian
+Zbrza axes become the oldest land-plant body, and the bound moves to 447.2 Ma under constant recovery,
+still 11 Myr short of the spores.
 
-![Upper bound on the all-zero probability under the hypothetical independent, co-ascertained unit model. The curves are not fitted probabilities for the historical examination; points mark its algebraic 0.05 threshold.](figures/fig3_qsim_share.png)
+**Crown vascular plants.** For the 48 crown-member units the bounds are tightly grouped under the
+histories tied to the observed record: 428.8 Ma for constant recovery, 428.9 Ma for collection density
+and 428.5 Ma with plant-matched collections removed (@tbl-bodies). These fall within Hooper et al.'s
+432–428 Ma interval and are younger than their 431.2 Ma maximum. A 25 Myr decline into the past gives
+431.6 Ma. A 10 Myr decline gives no bound within the 469.4 Ma limit of the effort history.
 
-### 3.3 M1: affinity remains reading-dependent
+| Recovery history | Land-plant body | Polysporangiophyte | Crown vascular plant |
+|----------------------------------------|-----------:|-----------:|-----------:|
+| Constant | 434.5 | 434.6 | 428.8 |
+| Proportional to PBDB collection density | 436.4 | 436.6 | 428.9 |
+| Collection density, plant-matched collections removed | 435.7 | 435.9 | 428.5 |
+| Declining into the past, 25 Myr timescale | 437.2 | 437.5 | 431.6 |
+| Declining into the past, 10 Myr timescale | none ≤ 469.4 | none ≤ 469.4 | none ≤ 469.4 |
+| Constant, recovery before 426.7 Ma reduced tenfold† | 446.7 | 447.7 | 448.1 |
+| Constant, recovery before 426.7 Ma reduced a hundredfold† | none ≤ 469.4 | none ≤ 469.4 | none ≤ 469.4 |
 
-No assessed frame admits the required E2 older-zero/reference design. The Borenshult 71.1 m
-zero is secure under main but belongs to a frame failing its potential screen; it is not a
-pre-515.5 Ma observation. Strother places the assessed Tennessee taxa in Charophyta; Taylor &
-Strother interpret the packets as pre-embryophytic; Wang et al. favour ancestral aeroterrestrial
-algae while calling direct embryophyte affinity unlikely and the interpretation premature.
-None of these three sources explicitly accepts the assessed Stage 4 producers as embryophytes.
+: Conservative 95% older bounds (Ma) on the start of the recoverable body record, main reading, conditional on each recovery history and on independent units. † Retrospective sensitivity chosen after the main analysis; not a nominal 95% bound. {#tbl-bodies}
 
-This supports the main exclusion, not a claim that the fossils have no affinity-relevant
-evidence. Wall ultrastructure and developmental features bear on precursor relationships.
-The inclusive reading remains an explicit alternative assumption. No evidence establishes the
-previous suggestion that clock dates were the principal reason for that reading, and we withdraw it.
-Argentine sample RIOCAP-7999 remains unresolved under main and detected under inclusive/outlier;
-Vecoli's taxonomic correction does not turn its tetrads into an absence or settle affinity.
+These numbers are robust to most data choices and sensitive to a few (Supplement Tables S4–S6).
+Counting individual collections instead of locality proxies gives 428.0 Ma, and restoring wide-age
+records 428.1 Ma. Leaving out each region in turn gives 427.2–430.5 Ma: the youngest without the
+Australian–Antarctic records (including Yea), the oldest without Laurentia. Ending the window at the Silurian–Devonian boundary, which
+leaves 13 mainly Silurian units, gives 428.5 Ma, so the result is not an artefact of the dense Devonian
+record. The bound grows when effective density falls. Collapsing units to region–stage cells (20 units)
+gives 432.1 Ma, and the curated oldest-record set alone (15 units) gives 434.05 Ma.
 
-Stage 4 converts to 514.5–506.5 Ma under the project's timescale. This is stage support, not a
-measured occurrence age, and all of it is younger than 515.5 Ma. Even accepting E2 would not
-itself contradict that maximum or establish crown membership. Productive pre-515.5 Ma material,
-complete target reporting, and a defensible node mapping are still needed for the older-side test.
+**What the record can and cannot test.** The observed age sequence can reject some recovery histories.
+A steep (10 Myr) decline into the past fits the crown-member sequence poorly: nominal goodness-of-fit
+*p* values of about 10⁻¹¹ to 10⁻⁶ across age allocations, against 0.07–0.77 for constant recovery. The
+25 Myr decline and plant-excluded density also fit poorly. The unbounded and 431.6 Ma cases should
+therefore not be read as equally supported alternatives. The observed sequence says nothing about
+recovery before the oldest possible crown-member find. Suppose crown vascular plants existed, but
+their bodies were recovered at a tenth of the later rate before the Ludlow (426.7 Ma). The fitted
+records would look exactly the same, and the bound would move to 448.1 Ma; at a hundredth there is
+no bound. These are retrospective sensitivities, not confidence statements, but they show where the
+answer is decided: in an interval the body record cannot see.
 
-### 3.4 M3 and the biological implication chain
+Finally, a recoverability endpoint is not a crown date. Mapping one to the other needs an assumed
+delay between crown origin and the recoverable presence of crown-diagnostic bodies. With constant
+recovery, reaching the young end of Harris et al.'s interval (447 Ma) requires a delay of about
+18 Myr; a 20 Myr delay maps 428.8 Ma to 448.8 Ma. The record does not estimate that delay.
 
-The Irish fossil-free mudstone is genuine qualitative negative evidence, but no enumerated,
-comparable searched-bed roster follows from it. Historical Czech axes are selected specimens,
-not search trials. Database non-recording is likewise not an E3 zero. No assessed source admits
-an M3 absence design. Draft requests specify all eligible searched units, outcomes, effort,
-age evidence and comparable reference material; an external reply is not a completion requirement.
+Simulations at the real unit counts confirm that the calculation behaves as stated when its
+assumptions hold (exact-age coverage 0.941–0.958) and show how it fails when they do not. Duplicated
+horizons treated as independent cut coverage to about 0.78 (pairs) or 0.53 (quartets). Fitting constant
+recovery to a true 10 Myr decline gives 0.03–0.24. An ignored 10–20 Myr origin-to-body delay can give
+zero coverage of the lineage age (Supplement S5.6, Table S11).
 
-The pilot shows why solving the denominator problem would not by itself date a crown. The
-*C. barrandei* holotype links trilete production and multiple sporangia directly, while tracheids
-are unknown; the Irish Homerian material has conditional sporangial interpretation and no
-direct demonstration of the anatomy transferred from younger *C. pertoni*. A total-group or
-stem occurrence and a crown assignment remain distinct.
+![Older bounds on the start of the recoverable body record. Each row is one declared recovery history; points are conservative 95% older bounds conditional on that history and on independent locality units (main reading). Grey: span of the observed units. Open triangles (†) are retrospective sensitivities in which recovery before 426.7 Ma is reduced; for the crown-member category they leave the fit to the observed record unchanged. Top: blue shading marks land-plant cryptospores, possible from 469.4 Ma and certain by 458.2 Ma. Bottom: shaded bands are published crown vascular-plant intervals and the dashed line is the 431.2 Ma maximum; they are comparators, not validation targets. Arrows: no bound within the 469.4 Ma limit of the declared histories.](figures/fig3_bodies.png){#fig-bodies}
 
-For M2, proximal trilete aperture is modal at the embryophyte crown across the deposited methods
-and trees. The combined phenotype is less secure: X26 has a dyad-dominated alternative while
-X21 remains trilete-dominated. No joint phenotype probability follows from these separate
-marginals. The checked stochastic-map analyses nevertheless support aperture persistence
-conditional on a trilete start and their Mk models. On the converged extant-tree runs, 77 of
-3,382 trilete starts depart along the path to crown Tracheophyta: conditional persistence
-0.977, with Monte Carlo standard error 0.0026. These trees put crown Embryophyta at 508 Ma,
-not at Hooper's recalibrated 457–450 Ma.
+## 4. What follows for early land-plant evolution
 
-Fixed-rate retention scenarios to a Katian-boundary scenario of 452.8 Ma give an extant-tree
-median of 0.989 (95% interval 0.895–0.995) from 459.1 Ma and 0.894 (0.332–0.956) from
-515.5 Ma. They are model-conditional aperture-state retention scenarios, not abundance evidence,
-observed survival or a date-free correction. They are not multiplied into F3 coverage.
-For M1, cryptospore persistence has not been established. Figure 4 separates the links.
+### 4.1 An older, sparsely recorded flora is allowed, not required
 
-![From observed material to node interpretation. Each row keeps the observation, event reading, sampling result, persistence assumption and crown implication separate.](figures/fig4_mapping.png)
+Taken together, the three tests support a specific, conditional conclusion. Where the record can be
+interrogated, it rules out early land plants that were both abundant and recoverable before the
+younger dates: no well-delivered, Llandovery-level trilete producers in Late Ordovician Murzuq, and no
+crown vascular-plant bodies recovered at the later Silurian–Devonian rate before about 429 Ma. It does not
+rule out early land plants that were rare, small or poorly preserved. Murzuq allows trilete producers at
+a tenth of their later intensity, or at full intensity with poor delivery. The body record allows crown vascular plants that were present but recovered at
+a tenth of later rates, or that lacked crown-diagnostic bodies, before the Ludlow.
 
-## 4. Discussion
+Whether those allowances are plausible is a biological question, and the record gives one direct handle
+on it. Land plants as a whole were present for more than 20 Myr before their bodies entered the
+recoverable record at the rate seen afterwards. A lag of that kind is therefore an observed feature of
+this system, not a special pleading invoked to rescue old clock dates. The record does not show how long
+any such lag lasted for crown vascular plants. Recoverable bodies need size, cuticle and lignified tissue,
+and those traits evolved along the lineages being dated. Terrestrial deposits are scarce before the latest Silurian
+(Kenrick et al. 2012), and the oldest unequivocal body fossil is preserved in marine sediments
+(Libertín et al. 2018). In our judgement, a tenfold lower pre-Ludlow recovery is therefore not extreme,
+but neither is it demonstrated.
 
-The completed study has one qualified encounter frame and an independently scrutinised external
-comparison limit. Murzuq can challenge specified sustained trilete-encounter histories under
-declared delivery and history assumptions. QSIM contributes verified occurrence evidence and a
-useful lower-bound method, but does not supply an admitted second confidence statement or
-geographic replication. Failure to admit that frame is not biological disagreement with Murzuq.
+The young clock of Hooper et al. is thus consistent with the record under the simplest recovery
+assumptions, and its 431.2 Ma maximum is conservative relative to our bounds under those assumptions.
+Harris et al.'s interval, and the Morris et al. means near 444 Ma, need one of two things: a long early
+phase in which crown vascular plants were rare or poorly recoverable as bodies, or crown-diagnostic body
+features that arose about 15–23 Myr after the crown node (under constant recovery). The record within its observed range cannot discriminate between these possibilities and the young
+clock. The disagreement among clocks is thus largely a disagreement about recovery and trait history in an
+interval that leaves few bodies, and fossil maxima set there should carry that uncertainty explicitly
+instead of hiding it in a soft-bound tail probability.
 
-The short Murzuq window should not be treated as a geological edge. Its B4 example has 20 misses
-among 1,000 passing simulations and among 60 non-abstaining claims; reference purity and age
-allocation can change its comparison status. The stronger general result is the identification
-limit within the declared observation model: declining indigenous output can be offset by
-delivery and reference contamination along the stated parameter combinations. No unconditional
-maximum-age probability or recommendation for a clock prior follows from these calculations.
+### 4.2 Which conclusions depend on which assumptions
 
-A crown implication additionally requires that the diagnostic state existed at the crown,
-persisted into the sampled interval and produced enough recoverable remains. The pilot supports
-some of those links under specified models and leaves others contested. It does not turn a
-dispersed spore, a branched axis or a high persistence estimate into an independently dated crown.
-The appropriate scientific claim is consequently narrower than either accepting or rejecting
-the clock maxima outright.
+| Conclusion | Rests on | Fails if |
+|------------------|----------------------|----------------------|
+| Murzuq excludes abundant, well-delivered trilete producers through the Late Ordovician | encounter model; delivery *ρ*; reference purity; stage dating of cuttings | older delivery was much lower, reference triletes include caved or recycled grains, or ages are shifted |
+| That exclusion bears on crown land plants | trilete production at the embryophyte crown and its persistence (Hooper et al. 2026); our persistence pilot | the ancestral land plant did not make trilete monads, or they were lost in lineages present in the basin |
+| Recoverable crown vascular-plant bodies began after about 429 Ma | recovery history before and within the record; unit independence; ages within reported ranges | pre-Ludlow recovery was much lower; units are pseudoreplicated; Yea or Bathurst ages are wrong |
+| That bound bears on the crown vascular-plant node | lycophyte-line and euphyllophyte bodies are crown members; crown-diagnostic bodies arose near the node | crown origin preceded recognisable crown bodies by a long delay |
+| Bodies lag the land-plant lineage by more than 20 Myr | accepted cryptospores are land-plant; body bounds as above | cryptospore affinity is wrong; recovery rose steeply before the Silurian |
 
-The next observation depends on which limit is to be resolved. For QSIM, the first need is the
-microscopy/ascertainment record connecting occurrence marks and target search; a counted
-reference alone would not repair that contract. Matched target/control counts and effective
-recovery evidence would then permit a quantitative comparison. Murzuq needs contamination-transfer
-information and finer correlated age control. M1 needs a productive, completely reported roster
-older than 515.5 Ma with justified event/node readings; M3 needs comparable searched-bed ledgers.
-These are bounded data needs, not claims that no relevant evidence exists anywhere in the literature.
+: Dependence of each main conclusion on recovery assumptions and on the character-to-lineage mapping. {#tbl-assumptions}
+
+The two right-hand columns of @tbl-assumptions separate assumptions about how fossils were recovered
+from assumptions about what the fossils were. The second kind cannot be tested by sampling at all: no
+amount of searched rock establishes that a body with sporangia but no demonstrated tracheids belongs
+to the vascular crown, or that a trilete mark means an embryophyte producer. Our pilot of
+specimen-to-node links shows that some of these links are supported under declared models. For
+example, under stochastic-mapping models fitted to Hooper et al.'s deposited data, a trilete aperture
+present at the land-plant crown persists to the vascular-plant crown with probability 0.977. Others, notably the link from the oldest branched sporophytes to vascular crown
+membership, remain contested (Supplement S6).
+
+![From observed material to node interpretation. For each maximum, the observed material, what it is taken to be, the sampling evidence, the persistence of the diagnostic trait and the implication for the crown node are separate links; a maximum needs all five.](figures/fig4_mapping.png){#fig-mapping}
+
+### 4.3 What would sharpen the answer
+
+Four kinds of evidence would most improve these inferences. Any author could use them, and none is
+requested here.
+
+1. Documented searched-but-empty Silurian non-marine beds with stated effort, which would turn the body
+   record's untestable pre-Ludlow recovery into an estimable quantity.
+2. A second older-empty, younger-positive spore sequence outside polar Gondwana, with counted target and
+   control grains.
+3. Finer, independent dating of the Yea and Bathurst Island horizons, which set the crown-member bound.
+4. Anatomical demonstration of tracheids in the oldest polysporangiate bodies, which would replace an
+   assumed character-to-node link with an observed one.
+
+## 5. Conclusions
+
+The fossil maxima that most divide land-plant clocks cannot be justified or rejected by absence alone.
+One cannot be tested at all from the sampled record. One has a single qualified test, in one polar
+basin, and that test excludes abundant, well-delivered early producers but not sparse or poorly delivered ones. The third is consistent with
+the positive body record under representative recovery, but becomes compatible with much older crown
+ages if recovery before the Ludlow was low. The record shows that land-plant bodies lagged the
+land-plant lineage by more than 20 Myr. An older, sparsely recorded early flora is therefore a live
+possibility under assumptions that the record itself cannot test. Clock analyses should treat these
+maxima as conditional on stated recovery and character assumptions, and propagate them as such.
+
+## Methods in brief
+
+All ages use the ICS v2024/12 stage bases held in the project timescale. Literature dated to GTS2012 was
+converted at stage level, with source-specific statements retained. Each analysis declares a named
+reading of disputed identifications (main or inclusive). An explicit non-detection is scoped to the
+material examined; a missing report becomes a zero only after a full reporting audit. The Murzuq encounter
+model, its simulation-based qualification and the contamination identification result are in
+Supplement S2. The QSIM floor calculation and its proof are in S3, and the Cambrian affinity review in S4.
+The body-record inventory, unit rules, age envelope, recovery histories, shape diagnostics, sensitivity
+grids and simulations are in S5, and the specimen-to-node pilot in S6. Supplement S7 records analyses
+superseded during review and why.
 
 ## Roles of AI systems and humans
 
-Barry W. Brook set the programme, authorised its stages and retains release and submission
-decisions. This is an internal draft awaiting his final review. Claude Opus 5.5 (Anthropic,
-`claude-opus-5-5`, Claude Code) developed the F3 framing and engine, led Loop 1 modelling,
-reviewed Loop 2 sprint 1, proposed the QSIM marks argument, reviewed Cambrian affinity sources
-and drafted this manuscript. OpenAI Codex (GPT-6; exact parent variant not exposed in this
-session) implemented Loop 2 sprint 1 and led the present counter-review and corrections,
-including the conditional QSIM interpretation, source scope, frozen numerical values and
-biological synthesis. Bounded Codex delegates independently checked the mathematics, rendered
-QSIM table and Cambrian source claims, and implemented isolated corrections. Earlier Claude
-Sonnet 5.5 and Codex delegates contributed source extraction and modelling checks. Exact exposed
-roles, versions and review records are retained in `docs/charter.md` and `docs/audits/`.
+Barry W. Brook set the programme and its stages and directed the reconstruction of this paper. He
+authorised the AI collaborators to proceed on routine decisions and retains decisions on external
+correspondence, release and submission. This is an internal draft awaiting his final review.
+
+Claude Opus 5.5 (Anthropic, `claude-opus-5-5`, in Claude Code) developed the absence-test framing and
+engine and led the first modelling loop. It proposed the QSIM floor argument, reviewed the Cambrian
+affinity sources, and proposed and piloted the positive body-record analysis. It also drew the
+manuscript figures and wrote this reconstruction and its supplement.
+
+OpenAI Codex (GPT-6; the exact variant was not exposed to it) implemented the Murzuq observation audit and the
+second loop's corrections. It reviewed the body-record pilot and replaced its estimator, units and
+source matching after finding material defects, then implemented the reviewed body-record analysis,
+simulations and sensitivity grids.
+
+Bounded delegates of both systems contributed. `gpt-6.1-sol` with web search classified the 241 PBDB
+plant names with cited sources. Codex and Claude subagents independently checked the mathematics, the
+transcribed tables and the source claims. Each agent reviewed the other's work. Agreement between the
+two is not independent validation, and disagreements are kept visible in the audit record. Exact roles,
+versions and reviews are in `docs/charter.md`, `docs/decisions.md` and `docs/audits/`.
 
 ## Data and code
 
-The package includes source-linked derived tables, model code, frozen qualification evidence,
-new conditional diagnostics, rendered figures, a claim ledger, external-candidate dispositions
-and an exact file manifest. Copyrighted source texts and upstream deposits requiring their
-own licence checks remain private reproduction inputs. The manifest is a candidate inventory,
-not authorisation for public redistribution. No external messages or public release accompany
-this draft.
+The repository holds the source-linked derived tables, model code, frozen qualification evidence,
+reviewed body-record outputs with hash receipts, figure and table scripts, and the audit trail.
+Copyrighted source texts and third-party deposits are not redistributed; scripts fetch the deposits
+and verify their hashes. Public release is Barry W. Brook's decision.
 
 ## References
 
 - Abuhmida FH (2013). Palynological analysis of the Ordovician to Lower Silurian sediments from the Murzuq Basin, southwest Libya. PhD thesis, University of Sheffield.
+- Cocks LRM, Torsvik TH (2021). Ordovician palaeogeography and climate change. Gondwana Research 100: 53–72. https://doi.org/10.1016/j.gr.2020.09.008
+- Donoghue PCJ, Harrison CJ, Paps J, et al. (2021). The evolutionary emergence of land plants. Current Biology 31: R1281–R1298. https://doi.org/10.1016/j.cub.2021.07.038
+- Earp C (2024). Notanopliid brachiopods and associated fossils from the Yea area, central Victoria: a key to resolving age and correlation problems in a complex geological setting. Proceedings of the Royal Society of Victoria 136. https://doi.org/10.1071/rs23021
 - Edwards D, Feehan J (1980). Records of Cooksonia-type sporangia from late Wenlock strata in Ireland. Nature 287: 41–42. https://doi.org/10.1038/287041a0
 - Edwards D, Morris JL, Richardson JB, Kenrick P (2014). Cryptospores and cryptophytes reveal hidden diversity in early land floras. New Phytologist 202: 50–78. https://doi.org/10.1111/nph.12645
-- Fithian W, Sun D, Taylor J (2014). Optimal inference after model selection. arXiv:1410.2597.
-- Hooper et al. (2026). Reconstructing spore evolution recalibrates the timescale of land plant diversification. Nature Plants. https://doi.org/10.1038/s41477-026-02432-3
-- Le Hérissé A, Vecoli M, Guidat C, et al. (2017). Middle Ordovician acritarchs and problematic organic-walled microfossils from the Saq-Hanadir transitional beds in the QSIM-801 well, Saudi Arabia. Revue de Micropaléontologie 60: 289–318. https://doi.org/10.1016/j.revmic.2017.08.001
+- Harris BJ, Clark JW, Schrempf D, et al. (2022). Divergent evolutionary trajectories of bryophytes and tracheophytes from a complex common ancestor of land plants. Nature Ecology & Evolution 6: 1634–1643. https://doi.org/10.1038/s41559-022-01885-x
+- Hedges SB, Tao Q, Walker M, et al. (2018). Accurate timetrees require accurate calibrations. Proceedings of the National Academy of Sciences 115. https://doi.org/10.1073/pnas.1812558115
+- Hooper J, Worth AM, Wellman CH, Clark JW, Donoghue PCJ (2026). Reconstructing spore evolution recalibrates the timescale of land plant diversification. Nature Plants. https://doi.org/10.1038/s41477-026-02432-3
+- Kenrick P, Wellman CH, Schneider H, et al. (2012). A timeline for terrestrialization: consequences for the carbon cycle in the Palaeozoic. Philosophical Transactions of the Royal Society B 367: 519–536. https://doi.org/10.1098/rstb.2011.0271
+- Kotyk ME, Basinger JF, Gensel PG, et al. (2002). Morphologically complex plant macrofossils from the Late Silurian of Arctic Canada. American Journal of Botany 89: 1004–1013. https://doi.org/10.3732/ajb.89.6.1004
 - Libertín M, Kvaček J, Bek J, et al. (2018). Sporophytes of polysporangiate land plants from the early Silurian period may have been photosynthetically autonomous. Nature Plants 4: 269–271. https://doi.org/10.1038/s41477-018-0140-y
-- Morris JL, Puttick MN, Clark JW, et al. (2018). The timescale of early land plant evolution. PNAS 115: E2274–E2283. https://doi.org/10.1073/pnas.1719588115
+- Marshall CR (1990). Confidence intervals on stratigraphic ranges. Paleobiology 16: 1–10. https://doi.org/10.1017/s0094837300009672
+- Morris JL, Puttick MN, Clark JW, et al. (2018). The timescale of early land plant evolution. Proceedings of the National Academy of Sciences 115: E2274–E2283. https://doi.org/10.1073/pnas.1719588115
+- Scotese CR, Song H, Mills BJW, et al. (2021). Phanerozoic paleotemperatures: The earth’s changing climate during the last 540 million years. Earth-Science Reviews 215: 103503. https://doi.org/10.1016/j.earscirev.2021.103503
+- Strauss D, Sadler PM (1989). Classical confidence intervals and Bayesian probability estimates for ends of local taxon ranges. Mathematical Geology 21: 411–427. https://doi.org/10.1007/bf00897326
 - Strother PK (2016). Systematics and evolutionary significance of some new cryptospores from the Cambrian of eastern Tennessee, USA. Review of Palaeobotany and Palynology 227: 28–41. https://doi.org/10.1016/j.revpalbo.2015.10.006
+- Strother PK, Foster C (2021). A fossil record of land plant origins from charophyte algae. Science 373: 792–796. https://doi.org/10.1126/science.abj2927
 - Su D, Yang L, Shi X, et al. (2021). Large-scale phylogenomic analyses reveal the monophyly of bryophytes and Neoproterozoic origin of land plants. Molecular Biology and Evolution 38: 3332–3344. https://doi.org/10.1093/molbev/msab106
 - Taylor WA, Strother PK (2024). Ultrastructure of Cambrian cryptospores and the early evolution of the plant spore wall. Fossil Imprint 80: 90–106. https://doi.org/10.37520/fi.2024.009
 - Vecoli M, Wellman CH, Gerrienne P, Le Hérissé A, Steemans P (2017). Middle Ordovician cryptospores from the Saq-Hanadir transitional beds in the QSIM-801 well, Saudi Arabia. Revue de Micropaléontologie 60: 319–331. https://doi.org/10.1016/j.revmic.2017.06.003
 - Wang K, Xu H-H, Yin L-M (2022). A palynological assemblage from the Cambrian (Series 2, Stage 4) of Shandong Province, China, and its implications to the transition from algae to land plants. Review of Palaeobotany and Palynology 301: 104645. https://doi.org/10.1016/j.revpalbo.2022.104645
-- Wellman CH, Steemans P, Miller MA (2015). Spore assemblages from Upper Ordovician and lowermost Silurian sediments recovered from the Qusaiba-1 shallow core hole, Qasim region, central Saudi Arabia. Review of Palaeobotany and Palynology 212: 111–126. https://doi.org/10.1016/j.revpalbo.2014.09.003
-
-## Supplement
-
-- **S1. Frozen observation rules, model definitions and qualification:** `docs/f3-shape.md`,
-  `docs/loop1-close.md`, `models/f3/out/qual/` and their source bindings.
-- **S2. Event and biological mapping:** `data/units/e2-unit-rule.md`, `data/pilot/specimens.csv`,
-  `data/pilot/combinations.csv`, `data/pilot/hooper2026-asr/`, `models/pilot-asr/out/` and
-  `docs/pilot-traits.md`. The pilot outputs are reused without reanalysis.
-- **S3. QSIM transcription, proof and conditional diagnostics:**
-  `data/units/loop2/replication/`, `models/f3/loop2/replication/` and the three close-review
-  audits in `docs/audits/2026-11-01-loop2-close-*.md`.
-- **S4. Murzuq observation audit and sensitivities:** `docs/loop2-sprint1-results.md`,
-  `data/units/loop2/observation/` and `models/f3/loop2/`.
-- **S5. Affinity verdicts and unsent ledger requests:** `data/units/loop2/m1-m3/`.
-- **S6. Package navigation:** `claims.csv`, `external_candidates.csv`, `mapping.csv`,
-  `data-manifest.csv`, `package_manifest.csv` and `README.md` in `manuscript/`.
+- Wellman CH, Gray J (2000). The microfossil record of early land plants. Philosophical Transactions of the Royal Society B 355: 717–732. https://doi.org/10.1098/rstb.2000.0612

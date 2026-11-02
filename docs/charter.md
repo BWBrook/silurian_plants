@@ -141,6 +141,11 @@ data archived, and the human–AI correspondence record published alongside.
   - the M1 affinity adjudication;
   - the M1/M3 request drafts;
   - the rendered private manuscript, figures, claim table and data manifest (`manuscript/`).
+  In Loop 3 (1–2 November) it proposed the positive body-record analysis and ran the pilot that Codex's
+  review superseded. In sprint C (2 November) it verified Codex's reviewed endpoint results by hand and
+  reconstructed the paper around the biological problem: a new main text, four new or redrawn figures
+  (`manuscript/figures.py`), a supplement with tables generated from the reviewed outputs
+  (`manuscript/supplement.qmd`, `tables.py`) and an extended claim ledger.
 - Claude Sonnet 5.5 (Anthropic) subagents: the F3 simulator, estimators, sketch and recovery study
   (`models/f3/`), with a second Sonnet agent reviewing; the reshape-v3 compatibility estimator, unit
   simulator and validation harness (2026-10-28 and 29, reviewed and amended by Claude Opus 5.5), and

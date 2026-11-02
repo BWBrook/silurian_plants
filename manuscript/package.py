@@ -37,15 +37,23 @@ def main():
             if p.is_file() and "__pycache__" not in p.parts and p.suffix not in {".pyc", ".tex", ".log"}:
                 add(p.relative_to(ROOT), role)
 
-    for name in ("manuscript.qmd", "manuscript.html", "manuscript.pdf", "claims.csv", "external_candidates.csv",
-                 "mapping.csv", "figures.py", "package.py", "README.md"):
+    for name in ("manuscript.qmd", "manuscript.html", "manuscript.pdf", "supplement.qmd", "supplement.html",
+                 "supplement.pdf", "claims.csv", "external_candidates.csv", "mapping.csv", "figures.py", "tables.py",
+                 "package.py", "README.md"):
         add("manuscript/"+name, "authored manuscript, evidence ledger or reproduction code")
     collect("manuscript/figures/*", "authored figure or bound figure receipt")
+    collect("manuscript/tables/*", "supplement table generated from reviewed outputs")
     for name in ("loop1-close.md", "loop2-close.md", "loop2-sprint1-results.md", "loop2-sprint2-results.md",
-                 "f3-shape.md", "pilot-traits.md", "charter.md", "decisions.md"):
+                 "f3-shape.md", "pilot-traits.md", "charter.md", "decisions.md", "plan-loop3.md", "loop3-pilot.md",
+                 "loop3-design.md", "loop3-results.md"):
         add("docs/"+name, "authored methods, interpretation or provenance")
     collect("docs/audits/2026-11-01-loop2-*.md", "authored independent review")
     collect("docs/audits/2026-11-01-loop2-*.json", "verification receipt")
+    collect("docs/audits/2026-11-01-loop3-*", "authored independent review or verification receipt")
+    collect("models/f3/loop3/*.py", "body-record method, simulation or figure code")
+    collect("models/f3/loop3/README.md", "body-record method guide")
+    collect("models/f3/loop3/out/*", "reviewed body-record output, superseded pilot output or receipt")
+    collect("data/macro/*", "source-linked body-record inventory and adjudication")
     collect("models/f3/loop2/**/*", "new method, sensitivity or conditional diagnostic")
     collect("data/units/loop2/**/*", "source-linked factual extraction or authored evidence ledger")
     collect("models/f3/out/qual/*", "frozen qualification evidence")
