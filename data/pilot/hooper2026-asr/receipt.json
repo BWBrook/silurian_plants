@@ -6,7 +6,7 @@
   "state_rows": 240,
   "node_rows": 6,
   "matrix_comparisons": 76,
-  "script_sha256": "6b6d293d276fb55beef8580aac2c11bbabc3cc9825b2ae0f486fb9b6104b151c",
+  "script_sha256": "3ce472ccfc4c3c4bd7ee6b047284d1ae667f2484c48a7756268ee6a32dc77ff4",
   "parser_sha256": "2f34f5d9bfafb25d1369f0221c160944383868a4b8b30fc422b8db3eeb272b80",
   "outputs": {
     "crown_states.csv": "a19bebc9eada95be1ab3d247e80734529a13008993b21934c348accbbd46ee77",

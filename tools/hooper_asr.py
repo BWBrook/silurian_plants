@@ -59,8 +59,10 @@ def write_csv(path, rows):
 
 def extract(root, out):
     deposit = root / DEPOSIT
-    provenance = json.loads((deposit / "PROVENANCE.json").read_text())
-    expected = {f["key"]: f["sha256"] for entry in provenance for f in entry["files"]}
+    with (root / "data/external/deposits/MANIFEST.tsv").open(encoding="utf-8", newline="") as handle:
+        expected = {Path(r["path"]).name: r["sha256"]
+                    for r in csv.DictReader(handle, delimiter="\t", quoting=csv.QUOTE_NONE)
+                    if r["path"].startswith("deposits/hooper2026-spore-evolution/")}
     archives, inventory = {}, []
     for name in ("01. Data.zip", "02. Ancestral State Estimation.zip"):
         data = (deposit / name).read_bytes()
