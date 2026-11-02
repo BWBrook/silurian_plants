@@ -1,15 +1,14 @@
 # silurian_plants
 
-An exploratory, long-term programme on simulation modelling of the evolution of early land
-plants, from the Late Ordovician to the Early Devonian (c. 458–393 Ma).
+> **Status:** developed in the open as a working record. This is work in progress: contents may change, and nothing here is peer-reviewed unless stated.
 
-The project is at the orientation stage: building shared context on the taxa, the period and
-prior modelling before choosing a research question. See [docs/charter.md](docs/charter.md) for
+A long-term programme on simulation modelling of the evolution of early land plants, from the
+Late Ordovician to the Early Devonian (c. 458–393 Ma). See [docs/charter.md](docs/charter.md) for
 the purpose, the criteria a framing must meet and the planned route.
 
 ## Contents
 
-- [Private reading portal](https://silurian-plants-library.barry-brook.chatgpt.site): illustrated
+- Reading portal (private; not publicly accessible): illustrated
   reading room, searchable taxon atlas and full-text search, generated from the Markdown.
   Build and refresh instructions are in [portal/README.md](portal/README.md).
 
@@ -37,3 +36,15 @@ Barry W. Brook (University of Tasmania) with Claude Opus 5.5 and Claude Sonnet 5
 working in Claude Code. Roles are recorded in [docs/charter.md](docs/charter.md).
 
 OpenAI Codex implemented the private reading portal; its role is recorded in the charter.
+
+## Third-party data
+
+Third-party datasets, supplements and code deposits are not stored in this repository. Fetch the
+openly licensed deposits with `python3 data/external/scripts/deposits_fetch.py`: it reads
+[data/external/deposits/MANIFEST.tsv](data/external/deposits/MANIFEST.tsv), writes into the git-ignored
+`data/external/local/deposits/` and checks every file against its sha256. Licences and the other
+fetch-only sources are in [THIRD_PARTY.md](THIRD_PARTY.md).
+
+## Licence
+
+Code is released under the [MIT Licence](LICENSE). Text, figures and data created for this project are released under [CC BY-SA 4.0](LICENSE-CONTENT). Third-party material keeps its own terms where stated: see [THIRD_PARTY.md](THIRD_PARTY.md).
