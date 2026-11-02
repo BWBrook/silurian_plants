@@ -14,7 +14,7 @@ the histories under their own data, trees and settings, and reads off persistenc
 
 ## Inputs (read-only)
 
-- `data/external/deposits/hooper2026-spore-evolution/02. Ancestral State Estimation.zip`:
+- `data/external/local/deposits/hooper2026-spore-evolution/02. Ancestral State Estimation.zip`:
   `asr_matrix.csv`; `extant.tre`, `eophyte sister.tre` and `zygnema sister.tre`; `ASE code chunk.R`.
   Its hash is checked against Codex's `data/pilot/hooper2026-asr/source_inventory.csv`.
 - Characters: `X21`, the aperture (0 not present, 1 hilate, 2 proximal monolete, 3 proximal

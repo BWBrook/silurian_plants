@@ -15,7 +15,7 @@ from zipfile import ZipFile
 from hooper_provenance import NewickParser, assign_preorder_ids, sha256_bytes
 
 
-DEPOSIT = "data/external/deposits/hooper2026-spore-evolution"
+DEPOSIT = "data/external/local/deposits/hooper2026-spore-evolution"
 PREFIX = "02. Ancestral State Estimation/"
 TREES = {"ext": "extant.tre", "eo": "eophyte sister.tre", "zyg": "zygnema sister.tre"}
 METHODS = {

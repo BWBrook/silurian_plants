@@ -6,7 +6,7 @@ suppressPackageStartupMessages({
 })
 
 root <- normalizePath(file.path("..", ".."))
-zip <- file.path(root, "data/external/deposits/hooper2026-spore-evolution/02. Ancestral State Estimation.zip")
+zip <- file.path(root, "data/external/local/deposits/hooper2026-spore-evolution/02. Ancestral State Estimation.zip")
 inventory <- read.csv(file.path(root, "data/pilot/hooper2026-asr/source_inventory.csv"), stringsAsFactors = FALSE)
 zip_sha <- unname(tools::sha256sum(zip))
 stopifnot(zip_sha %in% unlist(inventory))

@@ -5,6 +5,15 @@ status, sizes and paths, is in `deposit_index.csv`; every mirrored file is in `M
 with the mirroring tool's provenance (URL, retrieval time, provider checksum), are on `deep-server` (not reachable from the Macs; a rebuild re-mirrors on `nectar`) under
 `/data/codex/silurian_plants/raw/deposits/<id>/<UTC stamp>/`.
 
+## Fetching the files
+
+The deposit files themselves are not in git. `MANIFEST.tsv` lists every openly licensed file with its source URL and
+sha256, and `python3 data/external/scripts/deposits_fetch.py [--only ID ...]` downloads them into
+`data/external/local/deposits/<id>/` (git-ignored), verifying each hash and unpacking archive members where the manifest
+names one. Rows under `local/deposits/` in the manifest are paywalled or unlicensed works held on one machine only and are
+not fetched. Licences per source are summarised in `THIRD_PARTY.md` at the repository root. Paths below such as
+`deposits/<id>/` refer to this fetched layout under `local/`.
+
 ## Result
 
 25 target works (the 24 with DOIs in the brief, whose Hooper entry appears in two lists, plus Ball's thesis, which has none),

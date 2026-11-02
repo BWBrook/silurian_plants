@@ -4,6 +4,12 @@ Extracted 2026-10-27 by Claude Opus 5.5 (Anthropic) on mac-mini for the project'
 gap (framing F3's spore channel, F4). This is an as-is extract: no ages converted, no names
 harmonised, no duplicates merged. Building a compilation from it is project work.
 
+> **Fetch-only.** The Palynodata window tables (`palynodata_*.csv`), `palynodata_release/` and the Wellman 2013
+> supplement PDF are not tracked in git (see `THIRD_PARTY.md`). Put the release zip at `data/external/local/spores/of_5793.zip`
+> (NRCan Open S&T Repository, doi 10.4095/225704) and run `scripts/spores_palynodata.py` to regenerate them in this folder;
+> download the Wellman supplement from Figshare doi 10.6084/m9.figshare.3453524 into `wellman2013_supplement/`. The derived
+> spore tables in `data/spores/` are tracked.
+
 ## Sources
 
 - **Palynodata Datafile: 2006 version** (Palynodata Inc. & J.M. White 2008, Geological Survey of

@@ -72,8 +72,8 @@ def main():
              distribution="internal release candidate; public release remains Barry's decision"),
         dict(path="library/closed/", role="primary copyrighted PDFs and private source quotes for verification",
              distribution="private reproduction inputs; excluded from candidate inventory"),
-        dict(path="data/external/deposits/hooper2026-spore-evolution/", role="upstream ASR archives used by the existing pilot",
-             distribution="not included; retrieve separately under original provenance and licence terms"),
+        dict(path="data/external/local/deposits/hooper2026-spore-evolution/", role="upstream ASR archives used by the existing pilot",
+             distribution="not included; fetch with data/external/scripts/deposits_fetch.py under original provenance and licence terms"),
     ])
     print(json.dumps({"candidate_files": len(records), "bytes": sum(r["bytes"] for r in records),
                       "private_source_files_included": 0}))

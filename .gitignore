@@ -8,3 +8,15 @@ library/open/
 
 # raw API pulls for data/occurrences (provenance in its README)
 data/occurrences/raw/
+
+# Codex run logs (embed third-party paper text); never tracked
+*.events.jsonl
+
+# Third-party deposits: fetched by data/external/scripts/deposits_fetch.py into data/external/local/ (see THIRD_PARTY.md)
+data/external/deposits/*/
+data/eprp/context/deposits/
+
+# Palynodata extract and Wellman 2013 supplement: fetch-only (see data/external/spores/README.md)
+data/external/spores/palynodata_*.csv
+data/external/spores/palynodata_release/
+data/external/spores/wellman2013_supplement/

@@ -7,7 +7,7 @@ this file whenever a source is added, extracted or ruled out. A gap that bears o
 in `docs/questions.md`.
 
 Status values:
-- **held**: in the repository, committed;
+- **held**: in the repository, committed; third-party deposits marked "(fetched)" are not committed and are downloaded by `data/external/scripts/deposits_fetch.py` (licences in `THIRD_PARTY.md`);
 - **local**: on mac-mini in a git-ignored `local/` or `library/` folder because of licence or size;
 - **limited**: access blocked or on request;
 - **missing**: not yet sourced;
@@ -60,7 +60,7 @@ relying on a particular generation.
 | Reconciled existing literature | Field et al. 2016 and Kidston & Lang 1921 Part IV were already held in the external-library harvest, despite being marked needed | local | `data/external/local/library/pdf/W2176407474.pdf`, `data/external/local/library/pdf/XU101.pdf`; original hashes and routes in `data/external/library/fetch_results.tsv` and `data/external/library/open_unread_results.tsv` | Field PDF states CC BY 4.0; Kidston access and reuse terms not assessed |
 | Garratt 1978 context (Q1, Q2) | A 2008 public submission reproduces its geological map; Garratt 1983 gives a later primary account of the graptolites; Earp 2023 reviews the older evidence in detail. The full 1978 article remains needed, and the Earp review is an unreviewed first draft | local | `library/closed/jelinek2008_garratt1978_map.pdf` p. 12; `library/closed/garratt1983.pdf` p. 81; `library/closed/earp2023_yea_review_first_draft.pdf`; provenance in `library/closed.tsv` | Garratt 1983 is an article extract from the Biodiversity Heritage Library/Internet Archive scan, whose article record states CC BY-NC-SA 4.0; the other files have no assessed reuse licence |
 | GBDB (Zenodo 2020) | 410 core window plant records (131 genera, mostly China), 3,217 window sections; GTS2012 ages | held | `data/external/gbdb/` | CC BY 4.0 |
-| Diversity compilations | Xiong 2013, Silvestro 2015, Capel 2025 mirrored; Capel 2021, 2022, Cascales-Miñana 2016, Ball 2022 local; Capel 2023 limited | mixed | `data/external/deposits/` | per deposit |
+| Diversity compilations | Xiong 2013, Silvestro 2015, Capel 2025 mirrored; Capel 2021, 2022, Cascales-Miñana 2016, Ball 2022 local; Capel 2023 limited | mixed | `data/external/local/deposits/` (fetched) | per deposit |
 | Fossil Record 2 plant families | Harland 1990 ages | local | `data/eprp/local/record/` | none stated |
 
 ## 2. Museum specimens
@@ -85,7 +85,7 @@ among GBIF fossil specimens.
 | Source | Status | Where |
 |---|---|---|
 | Card trait matrix (59 taxa) | held, draft | `data/traits.csv` |
-| Clark et al. 2023 (548 × 410), Claisse et al. 2025, Hooper et al. 2026 spore matrix | held | `data/external/deposits/` |
+| Clark et al. 2023 (548 × 410), Claisse et al. 2025, Hooper et al. 2026 spore matrix | held | `data/external/local/deposits/` (fetched) |
 | Kenrick & Crane 1997 matrix | ruled out | print only |
 | Toledo et al. 2021 | limited | Wiley blocks the supplement |
 
@@ -93,7 +93,7 @@ among GBIF fossil specimens.
 
 | Source | Status | Where |
 |---|---|---|
-| Hooper et al. 2026 (MCMCTree files, calibrations); Morris et al. 2018 (alignments, calibrations); Harris et al. 2022 | held; Hooper input/publication discrepancy unresolved (Q9) | `data/external/deposits/`; large and licence-restricted files in git-ignored `data/external/local/deposits/` |
+| Hooper et al. 2026 (MCMCTree files, calibrations); Morris et al. 2018 (alignments, calibrations); Harris et al. 2022 | held; Hooper input/publication discrepancy unresolved (Q9) | `data/external/local/deposits/` (fetched); large and licence-restricted files in git-ignored `data/external/local/deposits/` |
 
 Hooper archive inspected by Codex, 2026-10-29: checksum matches its retrieval manifest; all 69 fossil calibrations specify 1% tails whereas the article states 2.5%. Using all 5,001 saved rows, the deposited crown-embryophyte posterior has mean 453.70 Ma and empirical 2.5–97.5% interval 450.05–457.36 Ma. The independently clade-matched output tree reports a 449.91–457.21 Ma HPD interval. These different interval definitions agree with the rounded publication summary but no run log or control-file hash links the outputs to the supplied settings. A second burn-in deletion in the preliminary extraction was corrected; the old 4,800-row result is a sensitivity only. Evidence, inventory and reproducible summaries are in `docs/audits/2026-10-29-q9-provenance-check.md` and `data/q9/hooper2026-provenance/`. Q9 remains unresolved.
 
@@ -114,14 +114,14 @@ clock audit).
 |---|---|---|
 | PhanDA GMST and CO2; PhanSST | local | `data/eprp/local/context/` |
 | Song et al. 2021 SST; Scotese 2021 GMST (derived); Rothman 2017 events | held | `data/eprp/context/` |
-| CO2: Foster et al. 2017, Dahl et al. 2022, Witkowski et al. 2018 | held | `data/external/deposits/` |
-| Carbon cycle: Cai et al. 2026 data and COPSE code; COPSE (Mills) | held | `data/external/deposits/` |
+| CO2: Foster et al. 2017, Dahl et al. 2022, Witkowski et al. 2018 | held | `data/external/local/deposits/` (fetched) |
+| Carbon cycle: Cai et al. 2026 data and COPSE code; COPSE (Mills) | held | `data/external/local/deposits/` (fetched) |
 | COPSE (Daines); Krause et al. 2018; Glasspool & Scott 2010 | local | `data/external/local/deposits/` |
 | Lenton et al. 2016 | limited | PNAS supplement blocked |
-| δ13C, Sr, δ18O: Grossman & Joachimski 2022, DM-SED 2025 held; Veizer 1999, Veizer & Prokoph 2015, Prokoph 2008 local | mixed | `data/external/deposits/` |
+| δ13C, Sr, δ18O: Grossman & Joachimski 2022, DM-SED 2025 held; Veizer 1999, Veizer & Prokoph 2015, Prokoph 2008 local | mixed | `data/external/local/deposits/` (fetched) |
 | Seawater Sr look-up (McArthur LOWESS) | limited | on request from the authors |
-| Sea level: van der Meer 2025 held; Haq & Schutter 2008 limited; Franziskakis 2025 maps link only (1.3 GB) | mixed | `data/external/deposits/` |
-| Weathering and land-plant proxies: Yuan 2023, Avila 2025, Wu 2026 | held | `data/external/deposits/` |
+| Sea level: van der Meer 2025 held; Haq & Schutter 2008 limited; Franziskakis 2025 maps link only (1.3 GB) | mixed | `data/external/local/deposits/` (fetched) |
+| Weathering and land-plant proxies: Yuan 2023, Avila 2025, Wu 2026 | held | `data/external/local/deposits/` (fetched) |
 
 ## 7. Palaeogeography and climate fields
 
@@ -141,7 +141,7 @@ clock audit).
 | BGS DiGMapGB-625 | held | `data/external/rock-record/` | 2,634 Silurian–Devonian polygons, 48,575 km²; 2008 BGS age scale; no marine/terrestrial split |
 | BGS Lexicon prose | local | `data/external/local/rock-record/` | no licence stated |
 | ASUD | held | `data/eprp/record/` | 3,753 Australian Silurian–Devonian units, CC BY 4.0 |
-| Palynological sampling effort | held | `data/external/spores/`, GAD in `data/external/deposits/` | documents reporting marine palynomorphs without spores |
+| Palynological sampling effort | held | `data/external/spores/`, GAD in `data/external/local/deposits/` (fetched) | documents reporting marine palynomorphs without spores |
 
 ## 9. Literature
 
@@ -243,8 +243,8 @@ unchanged.
 
 ## 10. Models and software
 
-Pointers: `data/eprp/pointers/`. TREED code: `data/eprp/context/deposits/`. COPSE variants and the
-GAD code: `data/external/deposits/`. gen3sis, FossilSim, paleobuddy, PyRate and cGENIE are on
+Pointers: `data/eprp/pointers/`. TREED code: `data/eprp/context/deposits/` (fetched; see `THIRD_PARTY.md`). COPSE variants and the
+GAD code: `data/external/local/deposits/` (fetched). gen3sis, FossilSim, paleobuddy, PyRate and cGENIE are on
 `deep-server` (not reachable from the Macs). SCI-FI (SCION with FLORA; Gurung et al. 2024) runs headless in MATLAB on mac-mini (smoke test 2026-10-27; outputs in `deep-server:/data/codex/silurian_plants/runs/scifi-smoke-2026-10-27/`). The Codex CLI (0.164) runs non-interactively here with schema-constrained output,
 which makes it a candidate for bulk extraction (2026-10-27 smoke test).
 

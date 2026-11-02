@@ -3,13 +3,13 @@
   "scope": "Inventory of held deposit; no reconstruction or clock run",
   "archives": [
     {
-      "path": "data/external/deposits/hooper2026-spore-evolution/01. Data.zip",
+      "path": "data/external/local/deposits/hooper2026-spore-evolution/01. Data.zip",
       "sha256": "ce4ba716cf4ca62657ba8022052ec7ae3468d57f9b837e78301acfd9becdd7be",
       "non_resource_fork_file_count": 1,
       "serialized_members": []
     },
     {
-      "path": "data/external/deposits/hooper2026-spore-evolution/02. Ancestral State Estimation.zip",
+      "path": "data/external/local/deposits/hooper2026-spore-evolution/02. Ancestral State Estimation.zip",
       "sha256": "9a3baeff1fd52d60c73d0b3d106211e533b0591b1728a403898c44843f6f0155",
       "non_resource_fork_file_count": 245,
       "serialized_members": [

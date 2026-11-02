@@ -3,7 +3,7 @@
 Extracted by Codex, 29 October 2026. This reads published output tables; it does
 not fit a tree, reconstruct characters again, or estimate innovation dates.
 The source archive and its retrieval metadata remain in
-`data/external/deposits/hooper2026-spore-evolution/`.
+`data/external/local/deposits/hooper2026-spore-evolution/`.
 
 ```bash
 python3 tools/hooper_asr.py

@@ -2,7 +2,7 @@ args <- commandArgs(trailingOnly = TRUE)
 root <- if (length(args)) args[[1]] else "."
 if (!requireNamespace("ape", quietly = TRUE)) stop("The independent check requires R package ape")
 out <- file.path(root, "data/pilot/hooper2026-asr")
-archive <- file.path(root, "data/external/deposits/hooper2026-spore-evolution/02. Ancestral State Estimation.zip")
+archive <- file.path(root, "data/external/local/deposits/hooper2026-spore-evolution/02. Ancestral State Estimation.zip")
 nodes <- read.csv(file.path(out, "nodes.csv"), check.names = FALSE)
 states <- read.csv(file.path(out, "crown_states.csv"), check.names = FALSE, colClasses = "character")
 trees <- list()
