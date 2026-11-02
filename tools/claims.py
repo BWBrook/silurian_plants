@@ -14,7 +14,7 @@ limit, superseded_by. Documents cite claims in two ways:
 
 In `value`, a number prefixed with `~` is derived (a difference, a rounding) and is not looked for in
 the evidence files. Every other value number must appear, at its precision, in at least one evidence
-file. A claim whose evidence changed after its recorded commit is reported as stale.
+file. A current claim whose evidence changed after its recorded commit is reported as stale.
 """
 
 import csv
@@ -84,7 +84,7 @@ def check_ledger(rows, errors, warnings):
             errors.append(f"{cid}: evidence {p} does not exist")
         if not r["commit"] or git("cat-file", "-e", f"{r['commit']}^{{commit}}").returncode:
             errors.append(f"{cid}: commit '{r['commit']}' not found; run stamp")
-        elif not missing and (git("diff", "--quiet", r["commit"], "--", *paths).returncode
+        elif not missing and r["status"] in {"supported", "provisional"} and (git("diff", "--quiet", r["commit"], "--", *paths).returncode
                               or git("diff", "--quiet", "HEAD", "--", *paths).returncode):
             warnings.append(f"{cid}: evidence changed since {r['commit']}; reverify, then stamp")
         if missing or r["status"] in {"superseded", "refuted"}:
