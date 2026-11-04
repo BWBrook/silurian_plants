@@ -175,7 +175,11 @@ The taxa and the hypotheses about them need separating, because rejecting a plan
 - **Claimed:** Rubinstein & Vajda (2019): trilete spores from the Sandbian of the Borenshult-1 core, Sweden, offered by some as the earliest trilete spores. Two horizons appear in the sources read and are kept apart here. (a) *Chelinospora*? sp. at 48.2 m, in the *Baltoniodus variabilis* conodont Biozone (lower Sandbian), called a probable trilete spore in the Hooper et al. supplementary information. (b) *Ambitisporites* sp. at 41.9 m, in a younger interval constrained to 455-454.41 Ma by the Kinnekulle K-bentonite (U-Pb 454.41 +/- 0.17 Ma), as recorded in `taxa/ambitisporites.md`.
 - **Dispute:** Hooper et al. (2026) use (a) only as a soft maximum of 459.1 Ma for crown embryophytes, calling it the earliest possible trilete spore and the Katian Saudi *Ambitisporites avitus* the earliest unequivocal one (Supplementary Table 4). The project card records that they did not use (b) as a minimum because its trilete mark might be a compression artefact (from their main text, not re-read here). Spores torn from cryptospore tetrads often bear false trilete marks (Wellman et al. 2022); that is a general risk, not a finding on either specimen. No source read shows that either Swedish specimen is an artefact, and each needs judging separately.
 - **Error type:** unresolved dispute (possible false trilete mark, not shown).
-- **Read status:** Hooper et al. SI and Wellman et al. read; Rubinstein & Vajda not read.
+- **Describing authors' own split (2026-11-04).** Rubinstein & Vajda (2019, Fig. 3) plot definite triletes at six
+  depths (43.1, 41.9, 41.1, 40.35, 40.2, 33.05 m) and *possible* triletes only at 48.2 and 34.0 m, matching the queried
+  taxa of their Fig. 4. Fig. 4 lists no trilete at 41.1 m, so the figures disagree there. Specimen (a) is therefore a
+  possible trilete in its own authors' figure; (b) is definite. See `audits/2026-11-04-borenshult-figure3-reading.md`.
+- **Read status:** Hooper et al. SI and Wellman et al. read; Rubinstein & Vajda (2019) Figs. 3–5 read 2026-11-04.
 - **Sources:** Rubinstein & Vajda 2019; Hooper et al. 2026; Wellman et al. 2022.
 
 ### 16. Argentine Dapingian cryptospores
