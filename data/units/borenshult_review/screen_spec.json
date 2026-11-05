@@ -1,0 +1,45 @@
+{
+  "schema": "borenshult-review-screen-v1",
+  "reading_ids": [
+    "figure3-definite",
+    "figure4-definite",
+    "concordant-definite"
+  ],
+  "event_id": "E1",
+  "design": "homogeneous independent; one comparable class; fixed reference membership",
+  "boundary_rule": "maximum depth with detected E1 under the reading",
+  "older_exposure": "all eligible older units fully exposed; no age model",
+  "unresolved": "excluded from reference and older binary trials",
+  "reference_conversions": [
+    "complete reported-category",
+    "explicit-only (optimistic diagnostic)"
+  ],
+  "target_f": 1.0,
+  "critical_value": 5.991464547107979,
+  "ceilings": {
+    "H0": 1.0,
+    "H1": 3.0
+  },
+  "fixed_age_test": false,
+  "qualification": "not performed",
+  "source_audit": "docs/audits/2026-11-04-borenshult-figure3-reading.md",
+  "source_file": "library/closed/rubinstein2019-open_firststudy.pdf",
+  "source_sha256": "9d99b91dab9d49b694a108f4070792208da2aec29512461bd5c6c35429e9fdd4",
+  "preserved_qualification_files": {
+    "models/f3/envelope.py": "0f6d1b2e9cb2e99b2d7211fafaf442c5946fa7f3579f6940d453d2084f18d473",
+    "models/f3/designs.py": "0fd2588f84b5dd0b3fabcd45a875de203f8b28f5320aeb6f9adf7148f4f44ca8",
+    "models/f3/m2.py": "48da9074700e4a17e5555c2849de43a780ad3e44423d5ecfe8a96ed95ac313e1",
+    "models/f3/qualify.py": "279989c16864571a550cedcaf8e1a6de56358d67370674324aa0b6d0b291ab6b",
+    "models/f3/qualification_contract.py": "706d735a832c31382a6546b4b3dd4b05171d5e14e462018984373f9508301efb",
+    "models/f3/validate.py": "b0fc19d3fd1462f99b1e447d1ef2d061e804e49862446f49fa59abcc94765fa3",
+    "models/f3/sim.py": "a37ea8c62919d43fe0fab85cdbce2f6c554fc9371b035e11d179e75b224e7bf7",
+    "models/f3/units_sim.py": "e914fb1db3aa65d4700f87484d1ec63f50a05b32aa7a8e2c78473414d8b6b98f",
+    "data/timescale.csv": "29c6cc4a68b1746d1a67c66623e5df30ac5dd316257b55ca5948c9854886f826",
+    "data/units/qusaiba_inventory.csv": "1ffb4db3cc2e1a1b1f322da2653fda315d0c566bacf3366edc87a5bf0dbcc0c0",
+    "data/units/outcomes.csv": "9c996647d9e101a830cfd16efe466348a191f92396b71bad76cab791b756e37c",
+    "data/units/borenshult_ages.csv": "4f8997c81468ee43ee03c54172c0647df49ef6b420d241a43b8e9fc00e675fae",
+    "data/units/source_files.csv": "f4cd50b5ceabd2acb139e6974aabf3ebac786b46ea8aa5ec7d659ded433b523e",
+    "data/units/reporting-rule.md": "02d09f1d93012365604b043b3f2e955a7b71c7c739741a7ead8c1dae9c1ea594",
+    "models/f3/designs/m2.toml": "d27bd4277d9910a9396f688d0b893b06f5feeea007523134a8e49b09bb5421bd"
+  }
+}

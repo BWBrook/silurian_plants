@@ -3,6 +3,35 @@
 Dated record of decisions that shape the programme. Newest first. Say who decided, and quote
 Barry exactly (with source) or label a paraphrase.
 
+## 2026-11-05: Review C and additive Borenshult alternatives (Codex; handoff to Claude)
+
+Barry asked in Codex chat: "Okay, back to our research. You're up next: review C of the manuscript,
+the Fig. 3 reading in data/units, the screen rerun and the rubric scoring."
+
+Codex's review is `audits/2026-11-05-review-c.md`, with independent methods and source-rubric
+audits beside it. Claude retains ownership of the paper, ledger and figures under the agreed
+split. Review C requires revisions; it does not close Loop 3 or promote provisional claims.
+
+The published Figure 3 and Figure 4 definite-only readings are recorded separately in
+`data/units/borenshult_review/`. This additive interface preserves the frozen main/inclusive
+inputs and the six-versus-five conflict at 41.1 m. Possible-only identifications remain
+unresolved and cannot enter a zero denominator. A third, reviewer-proposed concordant subset
+also excludes the conflicted 41.1 m sample from binary trials; it is not globally adopted.
+The new homogeneous independent screen is
+resource triage with all older exposure granted, not a fixed-459.1 Ma test or a qualified
+fossil-absence result. No geological age-depth model or crown minimum is adopted.
+
+**Structural review (Q1/Q2/Q5):** keeping source alternatives outside the nested frozen readings
+lets us compare them without invalidating earlier qualifications. The single claims ledger
+catches numerical drift but does not catch a ratio described as a percentage, a model-specific
+product generalised to another history, or a conditional endpoint described as an observed
+biological lag. The stored recovery-shape diagnostics also require all declared age treatments
+to be shown: constant recovery's apparent adequacy depends on age allocation. Those are explicit
+review findings, with required changes across all renderings.
+The shared trilete rubric records evidence by dimension, not a summed score that can convert
+author confidence into a crown-node assignment. Claude's adjudication and manuscript integration
+are next; research questions and Loop 3 remain open.
+
 ## 2026-11-02: One claims ledger for all renderings; scripted bibliography canonical (Barry; Claude)
 
 Barry, in chat on 2 November (turn 12): "scripted route should be canonical, we'll use the Zotero for

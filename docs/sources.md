@@ -145,6 +145,16 @@ clock audit).
 
 ## 9. Literature
 
+On 5 November, review C checked the published Rubinstein & Vajda (2019) Figures 3–4 directly
+and added `data/units/borenshult_review/`: six definite Figure 3 depths, two possible-only depths,
+and the Figure 4 definite-only alternative with its missing trilete at 41.1 m. The new tables
+also include a reviewer-proposed concordant reading that leaves 41.1 m unresolved. They
+preserve literal reports, unresolved identities and source locators; their screen receipt binds
+the held source hashes. This changes neither the frozen source tables nor their main/inclusive
+analyses. `audits/2026-11-05-trilete-evidence-rubric.md` compares the published evidence for
+Borenshult, Hirnantian Turkey, Zbrza and Qusaiba (Q1/Q2/Q5). Private author correspondence is
+not evidence for these public products.
+
 The completed Borenshult event map (30–31 October; Q1/Q2/Q5;
 `audits/2026-10-30-borenshult-event-map.md`) reads the 2019 two-category spore chart,
 2023 complete marine-phytoplankton charts and explicit 34/23 reporting statement,

@@ -1,0 +1,4 @@
+reading_id,label,source_locator,conflict_policy,possible_policy
+figure3-definite,Figure 3 definite triletes,Rubinstein and Vajda 2019 Fig.3 p.183,41.1 m detected from Figure 3; Figure 4 does not list a trilete taxon,48.2 and 34 m unresolved; excluded from binary trials
+figure4-definite,Figure 4 unqueried trilete taxa,Rubinstein and Vajda 2019 Fig.4 p.184,41.1 m not_reported from Figure 4; Figure 3 plots a definite trilete,48.2 and 34 m unresolved; excluded from binary trials
+concordant-definite,Reviewer-proposed concordant definite triletes; not adopted globally,Rubinstein and Vajda 2019 Fig.3 p.183 and Fig.4 p.184,41.1 m unresolved because Figure 3 definite report conflicts with Figure 4 unlisted category,48.2 and 34 m unresolved; excluded from binary trials

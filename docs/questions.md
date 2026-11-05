@@ -9,6 +9,18 @@ The programme's working list of provisional questions: what each needs, which ga
 
 The register is updated at each loop's close. Started 2026-10-28 by Claude Opus 5.5 from Barry's programme principles; questions are added or reworded by either.
 
+**Review C, 5 November (Q1/Q2/Q5):** `audits/2026-11-05-review-c.md` requires correction of
+the manuscript's unconditional spore/body-lag language, the scope of the Murzuq 0.09 product,
+QSIM's ratio-versus-percentage wording, and selective presentation of the age-dependent
+recovery-shape diagnostics. The model outputs themselves are retained. The
+published Borenshult Figure 3 reading and Figure 4 definite-only comparator now have an additive
+unit table and reproducible screen in `data/units/borenshult_review/`; 41.1 m remains a figure
+conflict, and 48.2/34 m remain unresolved. Q1's triage conclusion stays design-specific, without
+a fixed-459.1 chronology or new qualification. Q2 separates the unchanged historical stage-base
+maximum from any proposed crown minimum. Q5 now also compares Borenshult, Turkey, Zbrza and
+Qusaiba with one source-linked rubric (`audits/2026-11-05-trilete-evidence-rubric.md`). Claude's
+reading adjudication and paper integration are next; this review does not close Loop 3.
+
 - **Linking.** Gaps elsewhere point here by question number:
   - the leads register (`docs/audits/2026-10-28-card-consistency-leads.csv`);
   - the closed-literature list (`docs/closed-literature.csv`, column `needed_for`);

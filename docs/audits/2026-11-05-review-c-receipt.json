@@ -1,0 +1,63 @@
+{
+  "date": "2026-11-05",
+  "base_commit": "9f694aa7674c6c3f35fa28fad79be885d53dd0f6",
+  "manuscript_target_commit": "3d51eb3",
+  "disposition": "revision required; Loop 3 open; no global reading adoption",
+  "reviewed_inputs": {
+    "manuscript/text/figures.md": "6a1e7362ca5998deba1c21ad51e2bb74f7e2ca7f1a6903f29d7208268b55ca58",
+    "manuscript/text/brief_figures.md": "51e4cb5a7a0a0ee07054a90396be52a1a6bb696629a91a2aecf0c858dee7a917",
+    "manuscript/text/supplement.md": "84424ff855d7dc9c777e7bd6a4a130193402f81c28456f048f5a36dafe888ec8",
+    "manuscript/text/main.md": "333d9ddb0278cfd8fbd546bec30de1672dc72f7c18280b39b857b6e8ec0d7b70",
+    "manuscript/text/supplement_figures.md": "7db96eb0c444778e4d33730df7e794a1fa2a72c58f388cc973a31233cdcb51ad",
+    "manuscript/text/brief.md": "c0fc20c25873b17b29af887bcae9c36c785584b639b646f429bb8608da5b8af4",
+    "manuscript/text/for-agents.md": "44875d71e05cbeede04eb6d831e04c058b462e5fe3bbb2300c3c8a2be85acf67",
+    "manuscript/claims.csv": "46907c7569bd711206f40657da37b1fc4fd2e7aeb6d99443fc2f5fd819a86005",
+    "manuscript/mapping.csv": "d2b160ca927ea0fa1c9616faad20e51107f317d491766a79f0b2012c780c4a6a",
+    "models/f3/out/m2_results.csv": "8c06ce3a12b83952df2af43e2a286e745f8178753578408e060e52960bf30966",
+    "models/f3/loop3/out/shape_diagnostics.csv": "21b1cdec2c83c808c3d97f07bb06e9d38d73a60167d2a0103bb68f1c0b59019f",
+    "models/f3/loop3/out/reviewed_bounds.csv": "10c694db71af4cd94cdd7c84c2bd27e999dea7dd7ef511bb6f9ac181d6131f89",
+    "data/occurrences/observations.csv": "605b9532b62210f05f40856e9d42bf5a271ec727cc280cfa0449eab81b0c9f94",
+    "models/f3/loop3/build_reviewed.py": "435343db4bc8381013c383e89a6c03df2727a20b1835f3cf651972a5db1dc425"
+  },
+  "held_source_hashes": {
+    "library/closed/rubinstein2019-open_firststudy.pdf": "9d99b91dab9d49b694a108f4070792208da2aec29512461bd5c6c35429e9fdd4",
+    "library/closed/rubinstein2023_firststudy.pdf": "751925898f563305e8f3a22394ec7ce7d2dcfb75e43f235b9e94cb53608d5441",
+    "library/closed/hooper2026_firststudy.pdf": "1e919a8bba50015cdc2e98ad5cbac0e724ca383252cb60cd84622a20904315af",
+    "data/external/local/deposits/hooper2026-spore-evolution-esm/41477_2026_2432_MOESM1_ESM.pdf": "edf6fe2a68c42a4cb093fba9fa925b4ba34f49d7411e373bb62f493f17060e8b",
+    "library/closed/_incoming/macbook-2026-10-30/acquired/downloads-2026-10-30/steemans1996.pdf": "116d57d6f80fd3fa33d0a228418554331d37f65122d8cdb9bd3e1fe0a4e9f773",
+    "library/closed/salamon2018.pdf": "9ee5dc6ac5d84cf644adb76490c374ed14aed8c2c4341bad106930ecb0134dd9",
+    "library/closed/salamon2018_SI.pdf": "500309eec320be3b40c6b82021567d2376207ffbfe441330edc03f58a7241de2",
+    "library/closed/wellman2015_firststudy.pdf": "8d3b68ed52c0281cd843b25b82c74be1285bfa7832dcf88b730033ad73b51cfc",
+    "library/open/W4306698490.pdf": "b8b6ef7a007d2870995e7c1e5f5dc9891097154eccc4297f7adc9c0780936b4c"
+  },
+  "audits": {
+    "docs/audits/2026-11-05-review-c-methods.md": "3331ee0d295d4367c4eff3adc8936d509c78a72934419d2b95e64afc8910927d",
+    "docs/audits/2026-11-05-review-c.md": "2b70871e870cae8663472e491659a8a8fd5a0a52999845929ce31ba0893c4bdb",
+    "docs/audits/2026-11-05-trilete-evidence-rubric.md": "6044d6a7bc2e1b63f43b558b048e56c3a7eb02a21cd6e164d42c8073341d79ca"
+  },
+  "screen_receipt_sha256": "7076892bf2587b3e07066428c5380122f86b7e9051bb41098fe48e956e40a961",
+  "checks": {
+    "claims": {
+      "cited": 39,
+      "errors": 0,
+      "warnings": 0
+    },
+    "manuscript_lint_and_references": "passed for main/supplement/brief",
+    "loop3_tests": 26,
+    "new_and_existing_screen_tests": 12,
+    "loop3_receipt_hash_entries_verified": 42,
+    "original_units_check": "passed;49units294outcomes",
+    "new_reading_outcomes": 102,
+    "screen_rows": 12,
+    "independent_target_lr_max_absolute_error": 3.552713678800501e-15,
+    "brief": "two A4 pages; visually inspected"
+  },
+  "limits": [
+    "No new empirical qualification",
+    "No R rerun",
+    "No frozen outputs regenerated",
+    "No manuscript or claims ledger edits",
+    "No private correspondence used as evidence",
+    "No exhaustive botanical source re-audit"
+  ]
+}

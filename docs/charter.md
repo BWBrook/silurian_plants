@@ -203,6 +203,14 @@ data archived, and the human–AI correspondence record published alongside.
   names. Their work exposed errors in the pilot and distinguished record-recovery endpoints from
   lineage origins. Claude owns the manuscript reconstruction; Codex will review it. No R or
   frozen F3 qualification was rerun or altered for this tranche.
+  In review C (5 November), Codex checked the article, supplement, brief and agent guide against
+  the results and source definitions, and delivered required interpretation corrections while
+  Claude retained manuscript ownership. A `sol_high_specialist` delegate (configured GPT-5.6-sol/high)
+  independently audited the numerical claims; a `sol_medium_scientist` delegate (configured
+  GPT-5.6-sol/medium) compared published trilete evidence with one rubric. An explorer delegate
+  mapped the frozen input contracts and implemented a separate Borenshult reading/screen with
+  tests and provenance; the parent checked the published figures and integrated the review.
+  No R analysis, frozen qualification or crown calibration was changed.
 - OpenAI Codex CLI, `gpt-6.1-sol` and `gpt-6.1-terra` at high reasoning effort, run by Claude Opus
   5.5 as read-only, schema-constrained jobs through `~/.claude/bin/codex-delegate` (2026-10-27 and
   28; on 2026-10-31 `gpt-6.1-terra` independently re-derived the 164 Libyan binary units for sprint 1; on 2026-11-01 `gpt-6.1-sol` with web search classified the 241 PBDB macrofossil names for the Loop 3 pilot, `work/codex/loop3/`). Records are in `docs/audits/` and the job files in `data/spores/work/codex/` and
