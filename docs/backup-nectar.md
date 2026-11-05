@@ -33,7 +33,7 @@ and inherited files must match the previous generation's saved inode and modific
 time. Missing source-baseline records or a different source identity stop the run.
 Git integrity and a sample restore are still checked before promotion.
 
-The only accepted symlinks are package entries under a project's
+Accepted external symlinks are package entries under a project's
 `renv/library/<platform>/<R-version>/<architecture>/`. Each must point to the
 matching package/platform/version in the mini's known
 `/Users/bwbrook/Library/Caches/org.R-project.R/R/renv/cache/` layout and match a
@@ -42,11 +42,20 @@ when recorded in the lockfile, match its hash. Relative, escaping, unrelated or
 unlocked targets are rejected. No manifest file or directory may descend through
 one of these links.
 
+One internal link is also accepted: `data/external/deposits/hooper2026-spore-evolution-esm`
+must have the literal target `../local/deposits/hooper2026-spore-evolution-esm`.
+Its canonical destination must be a real directory within the captured project, with no
+symlink in its ancestor chain, and must appear in the manifest. Other internal links and
+alternative spellings of this target are rejected. The relocated supplement is captured
+once at its canonical path; the alias is never traversed for capture. Both full and sample
+restores include the entire canonical target subtree, so this link resolves within the
+restored project. This preserves the source path required by frozen scientific receipts.
+
 These links are captured as literal targets with source-side identity/change
 checks, recreated separately in each generation, and checked during publication,
 scrubbing and restoration. Destination-side identities detect link replacement;
 source and destination link permissions are not compared across macOS and Linux.
-The sample restore includes every link and its lockfile. Sealing never follows or
+The sample restore includes every link, each renv lockfile and the internal link's payload. Sealing never follows or
 chmods a link. Receipts report link-target verification separately from file
 checksums and explicitly say `external_renv_cache: not_captured`.
 **The external package cache is not part of the checkout backup.** Its contents

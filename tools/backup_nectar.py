@@ -27,6 +27,11 @@ KNOWN_MDB = {"data/external/local/spores/work/paly.mdb":
 LOCK_ROOT = Path("/private/tmp/silurian-plants-backup")
 SCRUB_INTERVAL = dt.timedelta(days=7)
 RENV_CACHE_ROOT = Path("/Users/bwbrook/Library/Caches/org.R-project.R/R/renv/cache")
+PROJECT_LINKS = {
+    "data/external/deposits/hooper2026-spore-evolution-esm": (
+        "../local/deposits/hooper2026-spore-evolution-esm",
+        "data/external/local/deposits/hooper2026-spore-evolution-esm"),
+}
 
 
 def run(args, **kwargs):
@@ -150,15 +155,30 @@ def check_renv_lock(root, rel, target):
         raise RuntimeError("renv cache link differs from project lockfile: " + rel) from error
 
 
+def project_link(rel, target):
+    if rel not in PROJECT_LINKS:
+        return None
+    expected, destination = PROJECT_LINKS[rel]
+    if target != expected:
+        raise RuntimeError("Unexpected project symlink target: " + rel)
+    return destination
+
+
 def manifest_symlinks(manifest):
     links = manifest.get("symlinks", {})
     paths = set(manifest["files"]) | set(manifest["directories"]) | set(links)
     for rel, target in links.items():
-        lock_rel, _, _, _ = renv_link(rel, target)
+        destination = project_link(rel, target)
+        if destination is not None:
+            if destination not in manifest["directories"]:
+                raise RuntimeError("Project link destination is not captured: " + rel)
+        else:
+            lock_rel, _, _, _ = renv_link(rel, target)
+            if lock_rel not in manifest["files"]:
+                raise RuntimeError("renv link lockfile is not captured: " + rel)
         if (rel in manifest["files"] or rel in manifest["directories"]
-                or lock_rel not in manifest["files"]
                 or any(Path(rel) in Path(other).parents for other in paths if other != rel)):
-            raise RuntimeError("Invalid renv link inventory or descendant path: " + rel)
+            raise RuntimeError("Invalid link inventory or descendant path: " + rel)
     return links
 
 
@@ -193,11 +213,16 @@ def inventory(root):
             modes[rel] = stat.S_IMODE(s.st_mode)
             if stat.S_ISLNK(s.st_mode):
                 target = link_target(path)
-                check_renv_lock(root, rel, target)
+                destination = project_link(rel, target)
+                if destination is not None:
+                    with directory_fd(root / destination):
+                        pass
+                else:
+                    check_renv_lock(root, rel, target)
                 sig = signature(path)
                 if sig != [s.st_dev, s.st_ino, s.st_size, s.st_mtime_ns, s.st_ctime_ns,
                            stat.S_IMODE(s.st_mode)] or link_target(path) != target:
-                    raise RuntimeError("renv cache link changed during inventory: " + rel)
+                    raise RuntimeError("Symlink changed during inventory: " + rel)
                 links[rel] = {"target": target, "signature": sig}
             elif not (stat.S_ISDIR(s.st_mode) or stat.S_ISREG(s.st_mode)):
                 raise RuntimeError("Unsupported symlink/special path: " + rel)
@@ -383,7 +408,18 @@ def restore(generation, destination, sample=False):
                        ({"README.md", "library/closed.tsv", "library/open.tsv",
                          "library/closed/edwards2007.pdf", "library/open/W1820528062_SI.doc",
                          ".git/HEAD"} & set(paths)))
-        paths = sorted(set(paths) | {renv_link(rel, target)[0] for rel, target in links.items()})
+        required = set(paths)
+        for rel, target in links.items():
+            linked_directory = project_link(rel, target)
+            if linked_directory is None:
+                required.add(renv_link(rel, target)[0])
+            else:
+                required.update(p for p in manifest["files"]
+                                if Path(p).is_relative_to(linked_directory))
+                for directory in manifest["directories"]:
+                    if Path(directory).is_relative_to(linked_directory):
+                        (destination / safe_relative(directory)).mkdir(parents=True, exist_ok=True)
+        paths = sorted(required)
     else:
         for rel in manifest["directories"]:
             (destination / safe_relative(rel)).mkdir(parents=True, exist_ok=True)

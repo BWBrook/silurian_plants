@@ -188,6 +188,83 @@ class BackupIntegrityTests(unittest.TestCase):
         path.chmod(0o400)
         self.assertEqual(backup.verify(first)["symlinks"], 1)
 
+    def hooper_link(self):
+        rel, (target, destination) = next(iter(backup.PROJECT_LINKS.items()))
+        folder = self.source / destination
+        folder.mkdir(parents=True)
+        (folder / "supplement.pdf").write_bytes(b"held supplement fixture")
+        (folder / "empty").mkdir()
+        link = self.source / rel
+        link.parent.mkdir(parents=True)
+        link.symlink_to(target)
+        return link, folder
+
+    def test_project_link_roundtrip_captures_payload_once_and_restores_sample(self):
+        link, folder = self.hooper_link()
+        self.renv_package()
+        first, _ = self.snapshot()
+        second, result = self.snapshot()
+        self.assertEqual(result["verification"]["symlinks"], 2)
+        manifest = json.loads((second / "manifest.json").read_text())
+        rel = link.relative_to(self.source)
+        self.assertFalse(any(Path(p).is_relative_to(rel) for p in manifest["files"]))
+        canonical = str((folder / "supplement.pdf").relative_to(self.source))
+        self.assertIn(canonical, manifest["files"])
+        self.assertIn(canonical, manifest["inherited"])
+        for sample in (True, False):
+            restored = self.root / ("project-sample" if sample else "project-full")
+            backup.restore(second, restored, sample=sample)
+            self.assertEqual(os.readlink(restored / rel), os.readlink(link))
+            self.assertEqual((restored / rel / "supplement.pdf").read_bytes(),
+                             (folder / "supplement.pdf").read_bytes())
+            self.assertTrue((restored / rel / "empty").is_dir())
+        self.assertEqual(backup.verify(first)["symlink_targets"], "all_match")
+        self.assertEqual(backup.scrub_generations(self.destination)["generations"], 2)
+
+    def test_project_link_rejects_other_targets_and_missing_or_linked_destination(self):
+        link, folder = self.hooper_link()
+        target = os.readlink(link)
+        for bad in (str(folder), "../local/deposits/other", "../../../../outside"):
+            with self.subTest(target=bad):
+                link.unlink()
+                link.symlink_to(bad)
+                with self.assertRaisesRegex(RuntimeError, "Unexpected project symlink target"):
+                    backup.inventory(self.source)
+        link.unlink()
+        link.symlink_to(target)
+        moved = self.root / "held-target"
+        folder.rename(moved)
+        with self.assertRaisesRegex(RuntimeError, "Unsafe directory path"):
+            backup.inventory(self.source)
+        folder.symlink_to(moved, target_is_directory=True)
+        with self.assertRaises(RuntimeError):
+            backup.inventory(self.source)
+
+    def test_project_manifest_requires_target_and_forbids_alias_descendants(self):
+        link, folder = self.hooper_link()
+        generation, _ = self.snapshot()
+        manifest = json.loads((generation / "manifest.json").read_text())
+        manifest["directories"].remove(str(folder.relative_to(self.source)))
+        with self.assertRaisesRegex(RuntimeError, "destination is not captured"):
+            backup.manifest_symlinks(manifest)
+        manifest["directories"].append(str(folder.relative_to(self.source)))
+        manifest["files"][str(link.relative_to(self.source) / "smuggled")] = {}
+        with self.assertRaisesRegex(RuntimeError, "descendant path"):
+            backup.manifest_symlinks(manifest)
+
+    def test_project_link_retarget_during_capture_preserves_latest(self):
+        link, _ = self.hooper_link()
+        first, _ = self.snapshot()
+
+        def retarget():
+            link.unlink()
+            link.symlink_to("../local/deposits/other")
+
+        with self.assertRaisesRegex(RuntimeError, "Unexpected project symlink target"):
+            self.snapshot(after_clone=retarget)
+        self.assertEqual((self.destination / "latest").resolve(), first / "project")
+        self.assertTrue(list((self.destination / "snapshots").glob("*.partial")))
+
     def test_renv_links_require_known_cache_shape_and_matching_lock(self):
         link, target = self.renv_package()
         cases = [str(self.root / "unrelated"), str(target).replace("v5/", "v5/../v5/"),
