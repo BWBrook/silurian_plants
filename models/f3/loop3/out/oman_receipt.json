@@ -1,0 +1,27 @@
+{
+  "seed": 20261102,
+  "added_unit": {
+    "unit_id": "Oman|ghaba-1 borehole|Katian",
+    "min_ma": 445.2,
+    "max_ma": 452.8,
+    "region": "Gondwana-North-Africa-Arabia",
+    "member_ids": "tail:S-w22-K12",
+    "n_members": 1
+  },
+  "inputs": {
+    "data/macro/horizons_reviewed.csv": "2088c3274c4a91c57b113054660c4a6a14d30fca1a15da7bd96d5c3d4279e1ad",
+    "data/macro/effort_reviewed.csv": "d2ecfd0a80505e0ac3f22655bcf7635453b9bfc6bda86230315174f5c6e96ee7",
+    "data/occurrences/observations.csv": "605b9532b62210f05f40856e9d42bf5a271ec727cc280cfa0449eab81b0c9f94",
+    "data/occurrences/reading_assignments.csv": "d90ae91673535c40d36d853d6a1f9739e11c552805cbaec5e10e400ad2d98631",
+    "data/timescale.csv": "29c6cc4a68b1746d1a67c66623e5df30ac5dd316257b55ca5948c9854886f826",
+    "models/f3/loop3/analysis.py": "161edb7741eaf1644dba5216b15f7f6a412d29d0eabc3a8e7db92e6c14939f5a",
+    "models/f3/loop3/endpoint.py": "e4a9d28ced03894ef59f38ebdc8586488413525f1b403503652bdd5f972b3594",
+    "models/f3/loop3/histories.py": "06f6b8f0ab1dcdcd7730444d8286b47ea38c30ee04a5e4149e3c965ebe0400f8",
+    "models/f3/loop3/oman_sensitivity.py": "d033234b896eb5f04bb6bcb1fd982383dbc2b641da1ae96920e4e0555100eb94"
+  },
+  "outputs": {
+    "models/f3/loop3/out/oman_sensitivity.csv": "debd46ae749dbf0e95189945bfa6f8d5116de3091630370485a6ff26a481cd39",
+    "models/f3/loop3/out/oman_shape.csv": "89cacbf81efa9466bdc72d69577fbbd7b212535ae63c8d36617a27e99b36f1a7"
+  },
+  "scope": "declared sensitivity for the B0 definition; frozen Loop 3 outputs unchanged"
+}

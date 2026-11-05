@@ -1,0 +1,25 @@
+category,reading,inventory,history,midpoint_nominal_p,independent_uniform_p_q05,independent_uniform_p_q95,independent_uniform_bound_median_ma,interpretation
+B0,main,frozen_E3_E5_tail,flat,0.006565696072,0.00413291029,0.06238033134,433.3379788,age-allocation sensitivity; not confidence bounds or a combined test
+B0,main,frozen_E3_E5_tail,pbdb_all,0.01965296424,0.007487115562,0.08829533933,433.4165138,age-allocation sensitivity; not confidence bounds or a combined test
+B0,main,frozen_E3_E5_tail,pbdb_plant_excluded,0.001900940044,0.0005404357478,0.03855563926,432.8607277,age-allocation sensitivity; not confidence bounds or a combined test
+B0,main,frozen_E3_E5_tail,decline25,1.16927691e-07,6.215184881e-09,2.741212271e-06,435.7610283,age-allocation sensitivity; not confidence bounds or a combined test
+B0,main,frozen_E3_E5_tail,decline10,2.494305457e-20,2.325133834e-22,3.977154518e-17,inf,age-allocation sensitivity; not confidence bounds or a combined test
+B0,main,frozen_E3_E5_tail,pbdb_excluded_decline10,3.931559411e-09,1.964943338e-10,5.425126426e-08,inf,age-allocation sensitivity; not confidence bounds or a combined test
+B0,main,with_oman_fragments,flat,5.535582391e-12,5.239774118e-13,5.187710438e-09,451.0885316,age-allocation sensitivity; not confidence bounds or a combined test
+B0,main,with_oman_fragments,pbdb_all,7.497075403e-08,1.225530848e-08,4.738202488e-06,452.1872199,age-allocation sensitivity; not confidence bounds or a combined test
+B0,main,with_oman_fragments,pbdb_plant_excluded,1.115752084e-10,1.340306376e-11,1.975027766e-08,451.7519977,age-allocation sensitivity; not confidence bounds or a combined test
+B0,main,with_oman_fragments,decline25,6.344498724e-06,3.236757022e-06,0.00084858583,458.6694936,age-allocation sensitivity; not confidence bounds or a combined test
+B0,main,with_oman_fragments,decline10,7.353785264e-20,9.591296733e-22,1.409680718e-16,inf,age-allocation sensitivity; not confidence bounds or a combined test
+B0,main,with_oman_fragments,pbdb_excluded_decline10,1.235225e-08,1.247668301e-09,1.465958426e-07,inf,age-allocation sensitivity; not confidence bounds or a combined test
+B0,inclusive,frozen_E3_E5_tail,flat,3.144251112e-09,1.652685369e-09,1.62028513e-07,446.0280137,age-allocation sensitivity; not confidence bounds or a combined test
+B0,inclusive,frozen_E3_E5_tail,pbdb_all,6.189496105e-06,2.016404438e-06,8.374831881e-05,446.5089747,age-allocation sensitivity; not confidence bounds or a combined test
+B0,inclusive,frozen_E3_E5_tail,pbdb_plant_excluded,2.38329921e-08,6.81786553e-09,7.035429731e-07,446.0794977,age-allocation sensitivity; not confidence bounds or a combined test
+B0,inclusive,frozen_E3_E5_tail,decline25,1.498358675e-06,2.924744896e-07,8.266380525e-05,451.3309922,age-allocation sensitivity; not confidence bounds or a combined test
+B0,inclusive,frozen_E3_E5_tail,decline10,7.832070671e-21,3.156315049e-23,5.245227479e-18,inf,age-allocation sensitivity; not confidence bounds or a combined test
+B0,inclusive,frozen_E3_E5_tail,pbdb_excluded_decline10,6.546916813e-10,1.07023769e-10,2.103470936e-08,inf,age-allocation sensitivity; not confidence bounds or a combined test
+B0,inclusive,with_oman_fragments,flat,2.328181884e-11,1.121764653e-12,1.321407411e-08,451.1171095,age-allocation sensitivity; not confidence bounds or a combined test
+B0,inclusive,with_oman_fragments,pbdb_all,2.642857993e-07,2.686340843e-08,1.16185205e-05,452.1605324,age-allocation sensitivity; not confidence bounds or a combined test
+B0,inclusive,with_oman_fragments,pbdb_plant_excluded,4.577320545e-10,2.853705948e-11,5.081549606e-08,451.7472024,age-allocation sensitivity; not confidence bounds or a combined test
+B0,inclusive,with_oman_fragments,decline25,2.747053882e-06,8.213819346e-07,0.000173606944,458.2912946,age-allocation sensitivity; not confidence bounds or a combined test
+B0,inclusive,with_oman_fragments,decline10,5.137204129e-21,1.764306464e-23,2.537329879e-18,inf,age-allocation sensitivity; not confidence bounds or a combined test
+B0,inclusive,with_oman_fragments,pbdb_excluded_decline10,3.604763182e-10,4.821573861e-11,1.128594802e-08,inf,age-allocation sensitivity; not confidence bounds or a combined test

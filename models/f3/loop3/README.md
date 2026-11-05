@@ -11,6 +11,7 @@ uv run models/f3/loop3/build_reviewed.py
 uv run models/f3/loop3/analysis.py
 uv run models/f3/loop3/simulation.py
 uv run models/f3/loop3/suppression_sensitivity.py
+uv run models/f3/loop3/oman_sensitivity.py
 uv run models/f3/loop3/figures_reviewed.py
 uv run --with numpy --with pandas --with scipy --with pytest python -m pytest models/f3/loop3/test_endpoint.py models/f3/loop3/test_simulation.py models/f3/loop3/test_analysis.py models/f3/loop3/test_suppression.py -q
 ```
@@ -35,6 +36,9 @@ The main outputs in `out/` are:
   bounded claims for every declared simulation cell.
 - `suppression_sensitivity.csv`: all combinations of baseline, stage break and earlier-recovery
   multiplier, with age-support overlap and scope explicit.
+- `oman_sensitivity.csv`, `oman_shape.csv`: B0 with the Katian Oman sporangial fragments (S-w22-K12),
+  which the declared B0 (macro- and mesofossils) admits but the frozen E3–E5 tail omits; review C,
+  2026-11-05. The script checks that it reproduces the frozen B0 rows before writing.
 - `fig_macro_recovery.*`, `fig_macro_sensitivity.*`, `fig_macro_suppression.*`: PNG/PDF figures.
 
 Each producing stage writes its own receipt. `beyond_domain` means no bound within 393.47–469.4 Ma,
