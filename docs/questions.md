@@ -196,6 +196,21 @@ erasing their history; no empirical exclusion is released or question answered.
 | Q9 | Does the Hooper et al. (2026) recalibration survive alternative maxima and placements of the eophytes? | phylogeny (clocks) | parked | the share of the 55 Myr shift owed to each calibration choice | alignment, calibration tables, prior/posterior outputs are held (`data/external/deposits/` and git-ignored `data/external/local/deposits/`); their version correspondence is not yet established. Hooper deposited input specifies 1% tails while the article describes 2.5% (Codex, 2026-10-28; review F3-R1). The bounded check reproduces the rounded node-184 summary but does not link the output to the control file. | Bounded check complete: all 5,001 saved rows and independently clade-matched output-tree HPDs recorded in `data/q9/hooper2026-provenance/` and `docs/audits/2026-10-29-q9-provenance-check.md`. Preliminary double burn-in deletion corrected; Board 2490–2494 is superseded by the final handoff. A controlled comparison of the deposited 1% and described 2.5% specifications is the next proposed diagnostic; it can quantify sensitivity but cannot prove historical provenance. No full clock reanalysis run |
 | Q10 | How much did early vegetation weather, bury carbon and raise O2? | simulation | parked | which parameters dominate, with each input marked as observed or assumed (primer §3, §8 questions 1 and 6) | productivity, P release and fire-threshold inputs; charcoal record | F5, later |
 
+### How Hooper et al. derive 459.1 Ma, 2026-11-05 (Q2, Q5)
+
+Claude (addendum to `audits/2026-11-04-borenshult-figure3-reading.md`), from Hooper et al.'s Supplementary
+Table 4:
+- **Q2:** 459.1 Ma is the GTS2012 Sandbian base plus its uncertainty (458.4 + 0.7), keyed to the stage
+  of the 48.2 m specimen, not to the level. The definite triletes from 43.1 m are lower Sandbian too, so
+  the same rule gives the same maximum either way: M2's value does not depend on the doubtful specimen.
+  Under ICS v2024/12 the rule gives 458.9 Ma. What the Borenshult reading would move is the crown
+  minimum (426.9 Ma, Cooksonia), which Hooper et al. withheld from the Dalby spores on the compression
+  caution; accepting the definite triletes as crown evidence would raise it to about 454.4 Ma
+  (interpretation). This supersedes the 2026-11-04 line below that the maximum "rests on a specimen its
+  describing authors plot as possible only" as a numerical concern.
+- **Q5 (minor):** the table calls the 48.2 m specimen "probable"; the describing authors plot it as
+  possible.
+
 ### Borenshult definite and possible triletes, 2026-11-04 (Q1, Q2, Q5)
 
 Claude (`audits/2026-11-04-borenshult-figure3-reading.md`), from the published paper alone:

@@ -91,3 +91,35 @@ Zbrza and Qusaiba-1. The rubric:
 - the describing authors' own confidence in the mark;
 - independent age control;
 - whether any source demonstrates an artefact, as opposed to raising the possibility of one.
+
+## Addendum, 2026-11-05: how Hooper et al. derive 459.1 Ma (Q2)
+
+Source: Hooper et al. (2026), main text (calibration paragraph) and Supplementary Table 4
+(`data/external/local/deposits/hooper2026-spore-evolution-esm/41477_2026_2432_MOESM1_ESM.pdf`, crown-Embryophyta
+entry). Read 2026-11-05.
+
+- **Main text:** the maximum rests "on the basis of the oldest possible trilete spores" from the Dalby
+  Limestone of Borenshult-1. They decline to use the same spores for a minimum because the trilete mark "might
+  be an artefact of compression".
+- **Supplementary Table 4:** the soft maximum is keyed to *Chelinospora?* sp. at 48.2 m, which the table
+  calls a "probable trilete spore". The level lies in the *Baltoniodus variabilis* conodont zone (lower
+  Sandbian), below the Kinnekulle K-bentonite (454.41 ± 0.17 Ma). The number is then taken from the
+  stage, not from the level: the maximum "corresponds to the base of the Sandbian stage", dated
+  458.4 ± 0.7 Ma, giving 459.1 Ma. So 459.1 = 458.4 + 0.7 (GTS2012 Sandbian base). Under ICS
+  v2024/12 (`data/timescale.csv`, 458.2 ± 0.7) the same rule gives 458.9 Ma.
+
+**Consequence for the Fig. 3 reading.** The definite triletes at 43.1 m are also lower Sandbian, below
+the bentonite. Hooper et al.'s stage-base rule would therefore give the same 459.1 Ma from the describing
+authors' lowest definite specimen. The value of M2 does not depend on the doubtful 48.2 m specimen. Our
+2026-11-04 framing ("M2's 459.1 Ma rests on a specimen plotted as possible only") is true of the specimen
+named but has no numerical consequence. The paper's wording ("rests on the oldest possible trilete spores")
+quotes Hooper et al. correctly and needs only the stage-base derivation added. The table's "probable" for
+the 48.2 m specimen is stronger than the describing authors' own "? Possible trilete spore" (Q5, minor).
+
+**A consequence Hooper et al. do not draw (interpretation).** Their stated reason for not using the Dalby
+spores as a minimum is the compression caution, applied to all figured specimens. The describing authors
+plot six depths as definite. If those are accepted and triletes are taken as crown-embryophyte evidence, the
+crown-Embryophyta minimum would rise from 426.9 Ma (Cooksonia, Homerian) to about 454.4 Ma (the
+bentonite above 43.1 m), and the calibration window would shrink from 32 to about 5 Myr. Whether triletes
+alone can place a fossil in the crown is a separate question (their minimum uses a total-group tracheophyte,
+not a spore); this note records only that the minimum, not the maximum, is what the Borenshult reading moves.
