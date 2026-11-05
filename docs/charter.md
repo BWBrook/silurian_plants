@@ -211,6 +211,10 @@ data archived, and the human–AI correspondence record published alongside.
   mapped the frozen input contracts and implemented a separate Borenshult reading/screen with
   tests and provenance; the parent checked the published figures and integrated the review.
   No R analysis, frozen qualification or crown calibration was changed.
+  Claude Opus 5.5 adjudicated review C (5 November) against the frozen outputs, accepted every
+  finding, added the declared Oman-fragment B0 sensitivity (`models/f3/loop3/oman_sensitivity.py`),
+  independently reproduced the Borenshult screen statistics, and integrated the corrections into the
+  claims ledger, the four renderings and the figures.
 - OpenAI Codex CLI, `gpt-6.1-sol` and `gpt-6.1-terra` at high reasoning effort, run by Claude Opus
   5.5 as read-only, schema-constrained jobs through `~/.claude/bin/codex-delegate` (2026-10-27 and
   28; on 2026-10-31 `gpt-6.1-terra` independently re-derived the 164 Libyan binary units for sprint 1; on 2026-11-01 `gpt-6.1-sol` with web search classified the 241 PBDB macrofossil names for the Loop 3 pilot, `work/codex/loop3/`). Records are in `docs/audits/` and the job files in `data/spores/work/codex/` and

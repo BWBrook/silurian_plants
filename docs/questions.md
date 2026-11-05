@@ -208,6 +208,23 @@ erasing their history; no empirical exclusion is released or question answered.
 | Q9 | Does the Hooper et al. (2026) recalibration survive alternative maxima and placements of the eophytes? | phylogeny (clocks) | parked | the share of the 55 Myr shift owed to each calibration choice | alignment, calibration tables, prior/posterior outputs are held (`data/external/deposits/` and git-ignored `data/external/local/deposits/`); their version correspondence is not yet established. Hooper deposited input specifies 1% tails while the article describes 2.5% (Codex, 2026-10-28; review F3-R1). The bounded check reproduces the rounded node-184 summary but does not link the output to the control file. | Bounded check complete: all 5,001 saved rows and independently clade-matched output-tree HPDs recorded in `data/q9/hooper2026-provenance/` and `docs/audits/2026-10-29-q9-provenance-check.md`. Preliminary double burn-in deletion corrected; Board 2490–2494 is superseded by the final handoff. A controlled comparison of the deposited 1% and described 2.5% specifications is the next proposed diagnostic; it can quantify sensitivity but cannot prove historical provenance. No full clock reanalysis run |
 | Q10 | How much did early vegetation weather, bury carbon and raise O2? | simulation | parked | which parameters dominate, with each input marked as observed or assumed (primer §3, §8 questions 1 and 6) | productivity, P release and fire-threshold inputs; charcoal record | F5, later |
 
+### Review C adjudication and the Oman fragments, 2026-11-05 (Q1, Q2, Q5)
+
+Claude (`audits/2026-11-05-review-c-adjudication.md`), after Codex's review C:
+- **Q1:** the land-plant "known-answer check" does not measure a lag. The frozen B0 omitted the Katian
+  Oman sporangial fragments that its declared definition admits. With them, bounded B0 endpoints move
+  from 434.5–437.2 to 455.2–465.2 Ma, within 1.6–3.0 Myr of the certain cryptospores or beyond them, under
+  histories the sequence then fits poorly. Endpoint bounds are controlled by their oldest admitted unit;
+  B2 rests on Yea and Bathurst Island in the same way. Constant recovery is not shown adequate for B2:
+  it fails at midpoint ages and shared-quantile allocations.
+- **Q2:** adopted the rubric: five concordant Borenshult definite depths, the six-depth Fig. 3 reading
+  as alternative, Hooper's exclusion as sensitivity; Turkey keeps its original Ashgillian–Hirnantian
+  wording; Zbrza stays outside strict triletes. A Borenshult crown minimum needs a fossil-to-crown
+  mapping and would sit near 454.24 Ma; not adopted.
+- **Q5:** four of our own statements failed against their evidence and are corrected: "demonstrated"
+  B0 lag; ρf ≈ 0.09 for both Murzuq classes; QSIM ratio as a 31% share (0.235); the 2026-11-04 addendum's
+  454.4 Ma minimum. The claims checker catches numerical drift, not these semantic errors.
+
 ### How Hooper et al. derive 459.1 Ma, 2026-11-05 (Q2, Q5)
 
 Claude (addendum to `audits/2026-11-04-borenshult-figure3-reading.md`), from Hooper et al.'s Supplementary

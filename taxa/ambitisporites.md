@@ -18,14 +18,16 @@ range:
     (Steemans et al. 2009; Wellman et al. 2015; Hooper et al. 2026, who use its age, 449.65 Ma, as a minimum for the algae-embryophyte split). Older claim:
     Ambitisporites sp. in the Sandbian of Sweden, constrained to 455-454.41 Ma (Rubinstein and Vajda 2019);
     Hooper et al. (2026) did not use it as a minimum age because the trilete mark might be a compression
-    artefact. Hirnantian Turkey (Steemans et al. 1996) is accepted; putative Hirnantian specimens in Poland
+    artefact; its describing authors plot definite triletes from 43.1 m and only possible ones at 48.2 m.
+    South-eastern Turkey (Steemans et al. 1996), dated Ashgillian to Hirnantian in the original paper and
+    later cited as Hirnantian, is accepted, with an unreported Ordovician specimen count; putative Hirnantian specimens in Poland
     have irregular marks (Salamon et al. 2018). Abundant only from the Silurian. Last = youngest in situ record
     verified here (Cooksonia banksii, Lochkovian; Habgood et al. 2002); the dispersed range probably extends
     higher but was not checked.
 regions: [Gondwana, Baltica, Avalonia]
 localities:
   - Qusaiba-1 core, Qasim region, Saudi Arabia (Qasim and Sarah formations; Katian-Hirnantian)
-  - South-eastern Turkey (Hirnantian; Steemans et al. 1996)
+  - South-eastern Turkey (Ashgillian–Hirnantian in the original paper; Steemans et al. 1996)
   - Libya (Lower Silurian; type material of Hoffmeister 1959)
   - Borenshult-1 core, Östergötland, Sweden (Dalby Limestone; Sandbian, Baltica; disputed)
   - Brown Clee Hill and other Welsh Borderland sites, UK (in situ in Cooksonia; Pridoli-Lochkovian)

@@ -34,6 +34,8 @@ SPORES = ROOT / "data/spores/first_appearances.csv"
 MEMBERS = ROOT / "models/f3/loop3/out/primary_unit_membership.csv"
 BOUNDS = ROOT / "models/f3/loop3/out/reviewed_bounds.csv"
 SUPPRESS = ROOT / "models/f3/loop3/out/suppression_sensitivity.csv"
+OMAN = ROOT / "models/f3/loop3/out/oman_sensitivity.csv"
+BENTONITE_MA = 454.41
 MAPPING = ROOT / "manuscript/mapping.csv"
 
 # Published crown-age intervals (Ma, older first) and calibration maxima; docs/primer.md §5.3.
@@ -44,7 +46,7 @@ CLOCKS = {
                      ("Hooper et al. 2026", 432.0, 428.0)],
 }
 MAXIMA = {"embryophyta": [(515.5, "515.5 Ma maximum\n(Cambrian cryptospores)"),
-                          (459.1, "459.1 Ma maximum\n(oldest triletes)")],
+                          (459.1, "459.1 Ma maximum\n(Sandbian base; oldest\npossible trilete)")],
           "tracheophyta": [(431.2, "431.2 Ma maximum\n(Cooksonia-type bodies)")]}
 CLOCK_COLOURS = {"Morris et al. 2018": "#9aa9b8", "Harris et al. 2022": "#c98a3a", "Hooper et al. 2026": "#3f7f5f"}
 REGIONS = ["Laurentia", "Avalonia", "Baltica", "peri-Gondwana-Europe", "Gondwana-North-Africa-Arabia",
@@ -102,7 +104,7 @@ def body_first(cat):
 
 def fig_problem(path):
     """Clock intervals, the maxima that shape them and the first appearances of each fossil channel."""
-    fig, axes = plt.subplots(3, 1, figsize=(8.6, 6.6), sharex=True, gridspec_kw={"height_ratios": [3, 3, 4.2]})
+    fig, axes = plt.subplots(3, 1, figsize=(8.6, 7.4), sharex=True, gridspec_kw={"height_ratios": [3, 3, 6]})
     for ax, (key, title) in zip(axes[:2], (("embryophyta", "Crown land plants (Embryophyta)"),
                                            ("tracheophyta", "Crown vascular plants (Tracheophyta)"))):
         for i, (name, old, young) in enumerate(CLOCKS[key]):
@@ -117,16 +119,21 @@ def fig_problem(path):
         ax.spines[["left", "top", "right"]].set_visible(False)
     ax = axes[2]
     crypt, trilete = spore_first("cryptospore"), spore_first("trilete")
-    rows = [("Land-plant cryptospores", crypt), ("Trilete spores", trilete),
-            ("Land-plant bodies (any)", body_first("B0")), ("Crown vascular-plant bodies", body_first("B2"))]
+    oman = max(float(r["oldest_possible_ma"]) for r in read(OMAN) if r["inventory"] == "with_oman_fragments")
+    rows = [("Land-plant cryptospores (compilation)", crypt), ("Trilete spores (compilation)", trilete),
+            ("Trilete spores, Borenshult-1 definite (describing authors)", (stage_base("Sandbian"), BENTONITE_MA)),
+            ("Land-plant bodies (inventory as built)", body_first("B0")),
+            ("Land-plant bodies, with Oman sporangial fragments", (oman, stage_base("Hirnantian"))),
+            ("Crown vascular-plant bodies", body_first("B2"))]
     s4 = (stage_base("Stage 4"), stage_base("Wuliuan"))
-    ax.barh(4, s4[0] - s4[1], left=s4[1], height=0.5, color="#bbbbbb", hatch="///", edgecolor="#888888")
-    ax.text(s4[1] - 1.2, 4, "Cambrian cryptospore-like forms (affinity not accepted)", va="center", fontsize=8)
+    top = len(rows)
+    ax.barh(top, s4[0] - s4[1], left=s4[1], height=0.5, color="#bbbbbb", hatch="///", edgecolor="#888888")
+    ax.text(s4[1] - 1.2, top, "Cambrian cryptospore-like forms (affinity not accepted)", va="center", fontsize=8)
     for i, (lab, (possible, certain)) in enumerate(reversed(rows)):
         ax.barh(i, possible - certain, left=certain, height=0.5, color="#5b7fa6", alpha=0.35)
         ax.barh(i, certain - 400, left=400, height=0.5, color="#5b7fa6")
         ax.text(possible + 1.2, i, lab, va="center", ha="right", fontsize=8)
-    ax.set_ylim(-0.7, 4.6)
+    ax.set_ylim(-0.7, top + 0.6)
     ax.set_yticks([])
     ax.set_title("Fossil record: first appearances (pale: possible, dark: certain)", fontsize=9.5, loc="left")
     ax.spines[["left", "top", "right"]].set_visible(False)
@@ -208,7 +215,7 @@ def fig_bodies(path):
             ("decline25", "Recovery declining into the past (25 Myr)", "o", "#b5651d"),
             ("decline10", "Recovery declining into the past (10 Myr)", "o", "#b5651d")]
     retro = [(0.1, "Pre-Ludlow recovery reduced tenfold"), (0.01, "Pre-Ludlow recovery reduced a hundredfold")]
-    cats = [("B0", "Any land-plant body"), ("B1", "Multi-sporangiate (polysporangiophyte) body"),
+    cats = [("B0", "Land-plant body, inventory as built (×: with Oman fragments)"), ("B1", "Multi-sporangiate (polysporangiophyte) body"),
             ("B2", "Crown vascular-plant body")]
     fig, axes = plt.subplots(3, 1, figsize=(9.2, 8.4), sharex=True)
     crypt = spore_first("cryptospore")
@@ -221,6 +228,11 @@ def fig_bodies(path):
             rows.append((lab + " †", suppressed(cat, mult), "^", "#7d3c98", True))
         n = int(r["n_guaranteed"])
         if cat == "B0":
+            om = {r["history"]: r for r in read(OMAN) if r["reading"] == "main" and r["cutoff"] == "Emsian"
+                  and r["inventory"] == "with_oman_fragments"}
+            for i, (key, *_rest) in enumerate(hist):
+                if om[key]["status"] == "bounded":
+                    ax.plot(float(om[key]["older_bound_ma"]), len(rows) - 1 - i, "x", color="0.35", ms=6, mew=1.3)
             ax.axvspan(crypt[1], crypt[0], color="#5b7fa6", alpha=0.18, lw=0)
             ax.axvline(crypt[1], color="#5b7fa6", lw=1.0)
             ax.text(crypt[1] + 0.4, len(rows) + 0.15, "land-plant cryptospores certain by 458.2 Ma", fontsize=7,

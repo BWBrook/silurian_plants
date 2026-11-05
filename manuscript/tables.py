@@ -11,7 +11,7 @@ OUT_DIR = ROOT / "models/f3/loop3/out"
 SUPPLEMENT = Path(__file__).resolve().parent / "text/supplement.md"
 BLOCKS = {}
 
-CAT = {"B0": "Any land-plant body", "B1": "Polysporangiophyte body", "B2": "Crown vascular-plant body"}
+CAT = {"B0": "Land-plant body, without Oman fragments", "B1": "Polysporangiophyte body", "B2": "Crown vascular-plant body"}
 HIST = {"flat": "Constant", "pbdb_all": "PBDB collection density", "pbdb_plant_excluded": "PBDB density, plant matches removed",
         "decline25": "Decline into past, 25 Myr", "decline10": "Decline into past, 10 Myr",
         "pbdb_excluded_decline10": "Plant-excluded PBDB × 10 Myr decline"}
@@ -83,11 +83,28 @@ def main():
     table("regions", ["Region left out", "Units", "Oldest possible", "Constant", "PBDB density"], rows)
 
     rows = []
-    for r in read("shape_diagnostics.csv"):
-        if r["reading"] == "main" and r["age_rule"] == "independent_uniform":
-            rows.append([CAT[r["category"]], HIST[r["history"]], f"{float(r['midpoint_D']):.3f}",
-                         f"{float(r['imputed_nominal_p_q05']):.2g}–{float(r['imputed_nominal_p_q95']):.2g}"])
-    table("shape", ["Category", "History", "KS D at midpoint ages", "Nominal p, 5–95% of age draws"], rows)
+    shape = {(r["category"], r["history"], r["age_rule"]): r for r in read("shape_diagnostics.csv") if r["reading"] == "main"}
+    span = lambda r: f"{float(r['imputed_nominal_p_q05']):.2g}–{float(r['imputed_nominal_p_q95']):.2g}"
+    for cat in CAT:
+        for h in HIST:
+            u, q = shape[(cat, h, "independent_uniform")], shape[(cat, h, "shared_quantile")]
+            rows.append([CAT[cat], HIST[h], f"{float(u['midpoint_nominal_p']):.2g}", span(u), span(q)])
+    for r in read("oman_shape.csv"):
+        if r["reading"] == "main" and r["inventory"] == "with_oman_fragments":
+            rows.append(["Land-plant body, with Oman fragments", HIST[r["history"]], f"{float(r['midpoint_nominal_p']):.2g}",
+                         f"{float(r['independent_uniform_p_q05']):.2g}–{float(r['independent_uniform_p_q95']):.2g}", "—"])
+    table("shape", ["Category", "History", "Nominal p, midpoint ages", "Independent-uniform ages, 5–95%",
+                    "Shared-quantile ages, 5–95%"], rows)
+
+    rows = []
+    for r in read("oman_sensitivity.csv"):
+        if r["cutoff"] == "Emsian" and r["history"] == "flat":
+            sel = {x["history"]: x for x in read("oman_sensitivity.csv") if x["cutoff"] == "Emsian"
+                   and x["reading"] == r["reading"] and x["inventory"] == r["inventory"]}
+            label = "with Oman fragments" if r["inventory"] == "with_oman_fragments" else "without (frozen)"
+            rows.append([r["reading"], label, f"{r['n_guaranteed']}/{r['n_possible']}", f"{float(r['oldest_possible_ma']):.1f}"]
+                        + [fmt(sel[h]) for h in HIST])
+    table("oman", ["Reading", "Oman fragments", "Units", "Oldest possible"] + list(HIST.values()), rows)
 
     rows = []
     for r in read("suppression_sensitivity.csv"):

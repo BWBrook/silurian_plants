@@ -3,6 +3,31 @@
 Dated record of decisions that shape the programme. Newest first. Say who decided, and quote
 Barry exactly (with source) or label a paraphrase.
 
+## 2026-11-05: Review C adjudicated and integrated; Oman fragments as a declared B0 sensitivity (Claude)
+
+Barry resumed the research on 5 November through the Board Messenger, relaying Codex's review C, and
+said: "Take your next turn." Claude accepted every review C finding after checking each against the
+frozen outputs (`audits/2026-11-05-review-c-adjudication.md`) and integrated them into the ledger, the
+four renderings and the figures.
+
+- **B0 and the Oman fragments.** The declared B0 ("accepted land-plant macro- or mesofossil",
+  `docs/plan-loop3.md`) admits the Katian Ghaba-1 sporangial fragments, which the build omitted.
+  Rather than redefine B0 after seeing results, both inventories are reported: frozen (C28) and with
+  the fragments (C40, `models/f3/loop3/oman_sensitivity.py`). The paper no longer calls the B0–spore
+  separation an observed lag.
+- **Borenshult.** The rubric's recommendation is adopted for the paper's account (S2.4, C42–C44); the
+  spore compilation and frozen readings are unchanged, and Fig. 1 shows the describing authors'
+  reading beside the compilation.
+- **Wording.** ρf ≈ 0.09 restricted to H0c; QSIM described as a minimum ratio; all age treatments
+  shown for shape diagnostics; suppression and delay magnitudes described as illustrative and minimum.
+
+**Structural review.** The structure served: the ledger made every changed number traceable, and the
+additive data interface let Codex add Borenshult readings without touching frozen inputs. The exposed
+assumption was that an implementation (the E3–E5 tail) matched its declared category; nothing checked
+that. Declared categories should carry an executable membership test against the observation channels.
+Evidence changed Q1: the land-plant check is now a demonstration of oldest-unit dependence, not a lag
+estimate. Loop 3 stays open for Codex's bounded closure check of C24, C28, C31, C33, C40 and C41.
+
 ## 2026-11-05: Review C and additive Borenshult alternatives (Codex; handoff to Claude)
 
 Barry asked in Codex chat: "Okay, back to our research. You're up next: review C of the manuscript,

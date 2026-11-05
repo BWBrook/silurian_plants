@@ -1,6 +1,6 @@
 # When did plants first live on land? What the rocks can and cannot tell us
 
-Barry W. Brook (University of Tasmania), with Claude Opus 5.5 (Anthropic) and OpenAI Codex. Draft of 2 November 2026; a plain-language summary of a living research repository, <https://github.com/BWBrook/silurian_plants>.
+Barry W. Brook (University of Tasmania), with Claude Opus 5.5 (Anthropic) and OpenAI Codex. Draft of 5 November 2026; a plain-language summary of a living research repository, <https://github.com/BWBrook/silurian_plants>.
 
 ## The puzzle
 
@@ -24,14 +24,14 @@ We asked a simple question: for each of the three maxima that divide the clocks 
 
 - **Spores from Libyan boreholes.** In one North African basin, [28]{.C01} rock samples older than about 443 Ma contain no spores of the advanced (trilete) type, while [51 of 59]{.C02} younger samples do. This is the only place we found where a "not found in older rock" claim can be tested with numbers.
 - **Spores from a Saudi Arabian borehole**, as a rougher check.
-- **The dated fossils of early plant bodies** that we could link to a place and an age: [77]{.C25} localities, [48]{.C25} of them belonging to the vascular-plant group. From how these finds are spread through time, a standard statistical method estimates how far back before the oldest find the fossil record of a group probably began. That estimate depends on how well plants were fossilised before the oldest find, so we tried several assumptions and reported each one.
+- **The dated fossils of early plant bodies** that we could link to a place and an age: [77]{.C25} dated places, [50]{.C25} of them with members of the vascular-plant group. From how these finds are spread through time, a standard statistical method estimates how far back before the oldest find the fossil record of a group probably began. That estimate depends on how well plants were fossilised before the oldest find, so we tried several assumptions and reported each one.
 
 ## What we found
 
-1. **The oldest maximum (515.5 Ma) cannot be tested from the rocks at all.**[]{.C16} It rests on whether some Cambrian microfossils are land-plant spores, and the specialists who described them do not accept them as such[]{.C15}. Even if they were, they are younger than the maximum.
-2. **The 459.1 Ma maximum gets one real test, and it is conditional.** The Libyan samples rule out abundant, well-preserved producers of advanced spores before 443 Ma in that basin. They cannot rule out rare producers, or spores that simply did not reach and survive in those rocks[]{.C24}.
-3. **For vascular plants, the answer depends on a single assumption.** If plants were fossilised at a steady rate, their body fossils became findable no earlier than about [429]{.C27} Ma, which agrees with the youngest clock. If early plants fossilised ten times less well before about [427]{.C32} Ma, which is plausible but unproven, the same finds allow a start as early as [448]{.C32} Ma, which agrees with the older clocks. The fossils we have cannot tell these apart, because the answer is decided in a stretch of time that left almost no plant bodies.
-4. **We know that a long lag has happened at least once.** Land-plant spores are certainly present by [458]{.C28} Ma, yet by the same method land-plant bodies enter the record [21–24]{.C28} million years later. Plants can be present for a long time before their bodies show up as fossils.
+1. **The oldest maximum (515.5 Ma) cannot be tested from the rocks we could assess.**[]{.C16} It rests on whether some Cambrian microfossils are land-plant spores, and the specialists who described them do not accept them as such[]{.C15}. Even if they were, they are younger than the maximum.
+2. **The 459.1 Ma maximum gets one real test, and it is conditional.** In that one Libyan basin, the samples rule out producers of advanced spores that were abundant throughout the time before 443 Ma and whose spores reached the rocks as well as later ones did. They cannot rule out rare producers, or spores that simply did not reach and survive in those rocks[]{.C24}.
+3. **For vascular plants, the answer depends most on one assumption.** If plants were fossilised at a steady rate, their body fossils became findable no earlier than about [429]{.C27} Ma, which agrees with the youngest clock. In one illustrative case where early plants fossilised ten times less well before about [427]{.C32} Ma, which is plausible but unproven, the same finds allow a start as early as [448]{.C32} Ma, which agrees with the older clocks. The fossils we have cannot tell these apart, because the answer is decided in a stretch of time that left almost no plant bodies. Fossil ages, which finds count as vascular plants and whether finds are independent matter too.
+4. **One fossil can move the answer by 20 million years.** Land-plant spores are certainly present by [458]{.C28} Ma. Counting stems and spore capsules, the same method says land-plant bodies became findable [21–24]{.C28} million years later. Count one set of tiny, spore-filled capsule fragments from Late Ordovician Oman as well, and the gap almost vanishes[]{.C40}. Plants may have lived for a long time before their bodies show up as fossils, but the record cannot say how long.
 
 ## What it means
 

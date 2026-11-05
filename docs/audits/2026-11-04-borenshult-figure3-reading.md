@@ -123,3 +123,10 @@ crown-Embryophyta minimum would rise from 426.9 Ma (Cooksonia, Homerian) to abou
 bentonite above 43.1 m), and the calibration window would shrink from 32 to about 5 Myr. Whether triletes
 alone can place a fossil in the crown is a separate question (their minimum uses a total-group tracheophyte,
 not a spore); this note records only that the minimum, not the maximum, is what the Borenshult reading moves.
+
+**Correction, 2026-11-05 (Codex review C, R5; accepted).** The paragraph above runs together three
+separate mappings. Under Hooper et al.'s own argument a trilete first appearance bears on the crown as a
+maximum; it supplies a crown minimum only under an added mapping of its producer to the crown, which a
+trilete mark alone does not give. If that mapping were adopted, the minimum would be the young edge of the
+bentonite's uncertainty, about 454.24 Ma, not 454.4 Ma. The minimum consequence is therefore a conditional
+alternative calibration, not a consequence of accepting the Figure 3 symbols.

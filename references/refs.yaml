@@ -327,6 +327,24 @@ references:
   issue: '10'
   publisher: National Academy of Sciences
   DOI: 10.1073/pnas.1719588115
+- id: rubinstein2019BalticaCradleEarly
+  citation-key: rubinstein2019BalticaCradleEarly
+  type: article-journal
+  title: Baltica cradle of early land plants? Oldest record of trilete spores and diverse cryptospore assemblages; evidence from Ordovician successions of Sweden
+  author:
+  - family: Rubinstein
+    given: Claudia V.
+  - family: Vajda
+    given: Vivi
+  issued:
+    date-parts:
+    - - 2019
+  container-title: GFF
+  volume: '141'
+  issue: '3'
+  page: 181–190
+  publisher: Informa UK Limited
+  DOI: 10.1080/11035897.2019.1636860
 - id: scotese2021PhanerozoicPaleotemperaturesEarths
   citation-key: scotese2021PhanerozoicPaleotemperaturesEarths
   type: article-journal
@@ -532,4 +550,24 @@ references:
   page: 717–732
   publisher: The Royal Society
   DOI: 10.1098/rstb.2000.0612
+- id: wellman2003FragmentsEarliestLand
+  citation-key: wellman2003FragmentsEarliestLand
+  type: article-journal
+  title: Fragments of the earliest land plants
+  author:
+  - family: Wellman
+    given: Charles H.
+  - family: Osterloff
+    given: Peter L.
+  - family: Mohiuddin
+    given: Uzma
+  issued:
+    date-parts:
+    - - 2003
+  container-title: Nature
+  volume: '425'
+  issue: '6955'
+  page: 282–285
+  publisher: Springer Science and Business Media LLC
+  DOI: 10.1038/nature01884
 ...

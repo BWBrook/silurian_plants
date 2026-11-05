@@ -44,16 +44,23 @@ every sentence that must follow.
 - **M1 (515.5 Ma, crown Embryophyta).** Untestable from sampled absence. No admitted older-zero design
   (C16). The Stage 4 material is younger than the maximum ([514.5–506.5]{.C16} Ma) and is not accepted as
   embryophyte by the three assessed sources (C15).
-- **M2 (459.1 Ma, crown Embryophyta).** One qualified comparison, Murzuq Basin (C01–C06, C24). It
-  constrains the product of delivery and producer intensity, ρ·f ≈ [0.09]{.C24}, not either alone (C04 gives the ρ = 1 readouts). QSIM-801
-  is exploratory only (C11–C14, C23).
+- **M2 (459.1 Ma, crown Embryophyta).** The value is the GTS2012 Sandbian base plus its uncertainty,
+  [458.4 + 0.7 = 459.1]{.C42} Ma, keyed to a possible trilete at Borenshult-1 48.2 m; definite triletes start at
+  43.1 m, also Sandbian, so the value does not depend on the doubtful specimen (C42, C43). Borenshult
+  cannot test M2 under any reading (C44). One qualified comparison, Murzuq Basin (C01–C06, C24),
+  constrains the product of delivery and producer intensity, not either alone: ρ·f ≈ [0.091]{.C24} for the
+  constant class H0c, [0.092–0.184]{.C24} for the exposure-weighted class H0 (C04 gives the ρ = 1 readouts).
+  QSIM-801 is exploratory only (C11–C14, C23); C12 is a minimum trilete:cryptospore ratio, not a share.
 - **M3 (431.2 Ma, crown Tracheophyta).** No absence design (C17). Positive-record endpoints for B2:
   [428.84]{.C27} / [428.88]{.C27} / [428.45]{.C27} / [431.63]{.C27} Ma / none within domain, for constant, PBDB-density,
   plant-excluded-density, 25 Myr decline and 10 Myr decline histories (C27). Recovery reduced tenfold
   before [426.7]{.C32} Ma gives [448.10]{.C32} Ma; a hundredfold gives no bound (C32, retrospective).
-- **Known-answer check.** B0 bounds of [434.51–437.16]{.C28} Ma sit [21–24]{.C28} Myr after cryptospores are certainly
-  present at [458.2]{.C28} Ma (C28). This shows that a body lag has occurred once in this system. It is *not* a
-  lag estimate to transfer to B2.
+- **Land-plant check.** For the B0 inventory as built (no palynological fragments), bounds of
+  [434.51–437.16]{.C28} Ma sit [21–24]{.C28} Myr after cryptospores are certainly present at [458.2]{.C28} Ma (C28). Adding the
+  Katian Oman sporangial fragments, which the declared B0 admits, gives [455.19–456.62]{.C40} Ma under the
+  bounded effort-like histories and [465.21]{.C40} Ma under decline25 (C40), and every history then fits poorly
+  (C41). The separation is conditional on inventory and history. It is neither an observed lag nor a lag
+  to transfer to B2.
 - **Synthesis.** An older, sparsely recorded flora is allowed, not required. The record cannot test
   recovery before its oldest find.
 
@@ -63,7 +70,7 @@ every sentence that must follow.
 |---|---|
 | M1, M2, M3 | The 515.5, 459.1 and 431.2 Ma maxima |
 | E1–E5 | Event channels: trilete spores; cryptospores accepted as embryophytic; polysporangiate bodies; tracheids; crown vascular-plant members |
-| B0, B1, B2 | Body categories: any land-plant body; polysporangiophyte; crown vascular-plant member (lycophyte line or euphyllophyte) |
+| B0, B1, B2 | Body categories: any land-plant body (declared: any accepted macro- or mesofossil; the frozen inventory omits the E2 Oman fragments, C40); polysporangiophyte; crown vascular-plant member (lycophyte line or euphyllophyte) |
 | main / inclusive / outlier | Named readings of disputed records; every analysis declares one (`supplement.md` §S1) |
 | unit | Locality–age proxy: PBDB formation + 0.1° coordinates + identical age support, or a curated site |
 | possible / guaranteed | Units counted at oldest possible age / only those certainly older than the cutoff |
@@ -88,6 +95,8 @@ to the Strauss–Sadler/Marshall interval. Code: `models/f3/loop3/endpoint.py`.
 | Persistence pilot | Hooper et al. deposits (fetched, hash-checked) | `models/pilot-asr/` (R, renv) | `models/pilot-asr/out/` | C18–C20 |
 | Body record | PBDB extract and `data/macro/*` (names, adjudications, older screen) | `models/f3/loop3/build_reviewed.py`, `analysis.py` | `models/f3/loop3/out/reviewed_bounds.csv`, `primary_unit_membership.csv`, `shape_diagnostics.csv`, `age_sensitivity.csv`, `delay_sensitivity.csv` | C25–C31, C33 |
 | Suppression grid | as above | `suppression_sensitivity.py` | `suppression_sensitivity.csv` | C32 |
+| Oman B0 sensitivity | as above, plus observation S-w22-K12 | `oman_sensitivity.py` | `oman_sensitivity.csv`, `oman_shape.csv` | C40–C41 |
+| Borenshult readings | `data/units/borenshult_review/` | `models/f3/borenshult_review.py` | `models/f3/out/borenshult_review/` | C42–C44 |
 | Simulations | unit counts from above | `simulation.py` | `simulation_results.csv` | C34 |
 | Paper figures | the outputs above, `data/spores/first_appearances.csv`, `data/timescale.csv` | `manuscript/figures.py` | `manuscript/figures/`, hashes in `figures.json` | — |
 | Supplement tables S3–S11 | `models/f3/loop3/out/` | `manuscript/tables.py` (rewrites marked blocks in `supplement.md`) | `manuscript/text/supplement.md` | — |
@@ -110,10 +119,11 @@ Do not reintroduce any of these. Each was caught in review; the record is in `su
    is constrained (C24).
 3. **QSIM as a second qualified test.** It is not; search coverage and independence are undocumented.
 4. **Age-allocation quantiles as confidence bounds** (Table S8). They are descriptive.
-5. **The suppression grid as a nominal 95% result.** It was chosen after seeing the shape diagnostics
-   and is retrospective.
-6. **The B0 lag as a B2 lag.** The record does not estimate any delay for B2 (C33 is arithmetic on an
-   assumed delay).
+5. **The suppression grid as a nominal 95% result, a fitted reduction or a threshold.** The tenfold case
+   is one illustrative scenario, chosen after seeing the shape diagnostics.
+6. **The B0 separation as an observed lag, or as a B2 lag.** It is a conditional separation that the Oman
+   fragments nearly remove (C28, C40). The record estimates no delay for B2; C33's 15–23 Myr are minimum
+   assumed offsets at the endpoint bound.
 7. **Agreement between Claude and Codex as validation.** The two systems review each other; neither is
    independent ground truth.
 8. **Clocks as validation targets.** The oldest *Cooksonia* and Ludlow *Zosterophyllum* are themselves
@@ -126,6 +136,14 @@ Do not reintroduce any of these. Each was caught in review; the record is in `su
     `fig4_bodies`, `figS2_qsim`). Older audits use earlier names.
 12. **GTS2012 against ICS v2024/12.** Literature Early Devonian boundaries differ from ours by up to
     3 Myr; `data/timescale.csv` is the only source of numerical ages.
+13. **ρ·f ≈ 0.09 for both Murzuq classes.** It holds for H0c only (C24).
+14. **QSIM 0.307 as "31% of spores".** It is a minimum trilete:cryptospore ratio; the share is 0.235 (C12).
+15. **Constant recovery as the adequate history.** It fits B2 only under independent age draws; it fails
+    at midpoint ages and shared quantiles (C31). The shape tests discriminate against steep declines; they
+    select nothing.
+16. **"M2 rests on a doubtful specimen."** The value is a stage base; the definite 43.1 m triletes give
+    the same number (C42).
+
 
 ## 6. Checks before and after any change
 

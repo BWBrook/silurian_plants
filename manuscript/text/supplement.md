@@ -9,7 +9,9 @@ number can be traced to the table or script that produced it. Internal labels ap
 the repository uses them: **M1**, **M2** and **M3** are the 515.5, 459.1 and 431.2 Ma maxima; **E1**
 trilete spores, **E2** cryptospores accepted as embryophytic under a named reading, **E3**
 polysporangiate bodies, and **E5** crown vascular-plant members. **B0**, **B1** and **B2** are the
-body-record categories: any land-plant body, polysporangiophyte body and crown vascular-plant member.
+body-record categories: any land-plant body (declared as any accepted macro- or mesofossil; the inventory
+as built omits sporangial fragments from palynological preparations, S5.1), polysporangiophyte body and
+crown vascular-plant member.
 
 ## S1. Readings, observations and units
 
@@ -100,6 +102,39 @@ well/age influence exercise are unqualified sensitivities.
 | Shared midpoint ages | no exposure in the [459.1–462.6]{.C09} Ma window | fixed chronology scenario |
 | Shared 90% ages | no exposure in the window ending at 467.1 Ma | fixed chronology scenario |
 
+### S2.4 The calibration material: Borenshult-1
+
+@hooper2026ReconstructingSporeEvolution base the 459.1 Ma maximum on the oldest possible trilete spores from the
+Borenshult-1 core, Östergötland, Sweden [@rubinstein2019BalticaCradleEarly]. Their Supplementary Table 4 keys the soft
+maximum to *Chelinospora?* sp. at 48.2 m (*Baltoniodus variabilis* zone, lower Sandbian) and takes the value from
+the GTS2012 Sandbian base plus its uncertainty, [458.4 + 0.7 = 459.1]{.C42} Ma. The same rule on our timescale gives
+[458.9]{.C42} Ma. They did not use the Borenshult spores for a minimum because the trilete marks might be
+compression artefacts.
+
+Rubinstein and Vajda's Fig. 3 separates definite from possible triletes. It plots definite triletes at
+six depths from 43.1 to 33.05 m, all Sandbian or younger and the lowest below the [454.41]{.C43} Ma Kinnekulle
+K-bentonite, and possible triletes only at 48.2 and 34.0 m. Their Fig. 4 lists no trilete taxon at 41.1 m,
+so five depths are concordant between the figures[]{.C43}. We carry three readings: Fig. 3 definite, Fig. 4
+definite and the concordant five, each with the two possible-only depths unresolved, plus Hooper et al.'s
+wholesale exclusion as a sensitivity (`data/units/borenshult_review/`,
+`docs/audits/2026-11-05-trilete-evidence-rubric.md`). Symbols and positive depths are not specimen counts.
+
+The readings bear on three separate questions. (1) The maximum: the stage-base rule gives 459.1 Ma from the
+definite 43.1 m level as from the possible 48.2 m one. (2) A minimum: the definite triletes would set a
+crown-embryophyte minimum only under an added mapping of their producers to the crown; that mapping is not
+supplied by the mark, and its minimum would be the young edge of the bentonite age, not the level itself.
+(3) An absence test: only three Darriwilian samples lie below the first definite trilete. With all three
+fully exposed, the screen statistic at reference intensity is [1.3157]{.C44}, [1.0753]{.C44} and [1.1155]{.C44} for the
+three readings, against [5.9915]{.C44}, so the core cannot exclude reference-level intensity before its first
+definite trilete under any reading (`models/f3/out/borenshult_review/screen.csv`). This screen has no
+numerical chronology and is not a test at 459.1 Ma.
+
+The comparison of the earliest trilete claims on common axes (specimen basis, the describing authors'
+confidence, independent age control, artefact evidence and documentary consistency) keeps Qusaiba-1 as
+the secure comparator, retains the Turkish occurrence with its original Ashgillian–Hirnantian age wording,
+and keeps the Hirnantian Zbrza marks outside strict trilete occurrences because their authors doubt them.
+No composite score is computed.
+
 ## S3. QSIM-801: a model-conditional floor calculation
 
 @vecoli2017MiddleOrdovicianCryptospores [Table 1, p. 321] report [99]{.C11} cryptospore morphotaxon occurrences across [17 of 20]{.C11}
@@ -178,6 +213,32 @@ fossils and the rejected *Boiophyton*, not an additional embryophyte body. These
 fossil non-detections, and the screen is not a search denominator
 (`data/macro/older_records_screen.csv`; `docs/audits/2026-11-01-loop3-older-records-review.md`).
 
+**The Oman sporangial fragments.** B0 was declared as any accepted land-plant macro- or mesofossil,
+sterile axes included (`docs/plan-loop3.md`). The inventory as built takes curated records from the
+E3–E5 channels only, so the spore masses and spore-filled sporangial fragments of the Ghaba-1 borehole,
+Oman [@wellman2003FragmentsEarliestLand], recorded in E2 as Katian (observation S-w22-K12), never entered it. They lack
+axes and conducting tissue, so their exclusion from B1 and B2 is correct; their exclusion from B0 is not
+justified by its definition. They were recovered from palynological preparations of borehole material,
+a different route from the macrofossil collections that dominate the recovery proxies. We therefore add
+them to B0 as one locality–age unit in a declared sensitivity (`models/f3/loop3/oman_sensitivity.py`,
+which first reproduces the frozen B0 rows), rather than redefining B0 after seeing the result. No other
+pre-Silurian sporangial or spore-mass fragment is held in the inventory.
+
+<!-- table:oman -->
+| Reading | Oman fragments | Units | Oldest possible | Constant | PBDB collection density | PBDB density, plant matches removed | Decline into past, 25 Myr | Decline into past, 10 Myr | Plant-excluded PBDB × 10 Myr decline |
+|---------|------------------:|-----:|--------------:|-------:|----------------------:|----------------------------------:|------------------------:|------------------------:|-----------------------------------:|
+| main | without (frozen) | 75/77 | 432.9 | 434.51 | 436.38 | 435.73 | 437.16 | none ≤ 469.4 | none ≤ 469.4 |
+| main | with Oman fragments | 76/78 | 452.8 | 455.19 | 456.62 | 456.09 | 465.21 | none ≤ 469.4 | none ≤ 469.4 |
+| inclusive | without (frozen) | 79/81 | 445.2 | 447.20 | 448.27 | 447.85 | 452.98 | none ≤ 469.4 | none ≤ 469.4 |
+| inclusive | with Oman fragments | 80/82 | 452.8 | 455.06 | 456.43 | 455.92 | 464.40 | none ≤ 469.4 | none ≤ 469.4 |
+<!-- /table:oman -->
+**Table S3b.** B0 bounds (Ma) with and without the Katian Oman fragments, Emsian cutoff. Units: guaranteed/possible.
+
+With the fragments, the oldest unit is Katian, followed by more than 12 Myr with no body unit, and every
+declared history fits the sequence poorly (Table S7)[]{.C41}. The bounds move to within a few Myr of the
+certain cryptospore minimum, or beyond it under the 25 Myr decline[]{.C40}. Neither inventory supplies an
+observed lag: the comparison shows how far an endpoint bound depends on its oldest admitted unit.
+
 ### S5.2 The endpoint calculation
 
 For a fixed younger cutoff $c$, let $U(a)=\int_c^a w(s)\,ds$ be cumulative recovery. Conditional on $n$
@@ -211,18 +272,23 @@ actual search opportunities. Cutoffs are the ends of the Emsian, Pragian, Lochko
 
 **Shape diagnostics.** Conditional on the maximum, the remaining unit ages should be distributed as
 $U(a)/U(A)$. Kolmogorov–Smirnov statistics at midpoint ages and across age draws expose histories that
-fit the observed sequence poorly (Table S7). Nominal exact-age *p* values and their spread across draws
-are not a combined test for interval-dated fossils, a model-selection criterion or an empirical calibration.
+fit the observed sequence poorly (Table S7). Table S7 reports every declared age treatment: midpoint ages,
+independent uniform draws within each range and a shared quantile applied to all ranges. No probability
+law for ages within ranges was declared, so none is preferred. For crown vascular-plant bodies, constant
+recovery fits under independent draws but not at midpoint ages or shared quantiles; the 10 Myr decline
+fits poorly under all three. The robust result is discrimination against steep declines, not support for
+constant recovery. Nominal exact-age *p* values and their spread across draws are not a combined test for
+interval-dated fossils, a model-selection criterion or an empirical calibration.
 
 ### S5.3 Results and sensitivities
 
 <!-- table:primary -->
 | Reading | Category | Units | Oldest possible | Constant | PBDB collection density | PBDB density, plant matches removed | Decline into past, 25 Myr | Decline into past, 10 Myr | Plant-excluded PBDB × 10 Myr decline |
-|---------|------------------------:|-----:|--------------:|-------:|----------------------:|----------------------------------:|------------------------:|------------------------:|-----------------------------------:|
-| main | Any land-plant body | 75/77 | 432.9 | 434.51 | 436.38 | 435.73 | 437.16 | none ≤ 469.4 | none ≤ 469.4 |
+|---------|--------------------------------------:|-----:|--------------:|-------:|----------------------:|----------------------------------:|------------------------:|------------------------:|-----------------------------------:|
+| main | Land-plant body, without Oman fragments | 75/77 | 432.9 | 434.51 | 436.38 | 435.73 | 437.16 | none ≤ 469.4 | none ≤ 469.4 |
 | main | Polysporangiophyte body | 70/72 | 432.9 | 434.62 | 436.63 | 435.94 | 437.50 | none ≤ 469.4 | none ≤ 469.4 |
 | main | Crown vascular-plant body | 48/50 | 426.7 | 428.84 | 428.88 | 428.45 | 431.63 | none ≤ 469.4 | none ≤ 469.4 |
-| inclusive | Any land-plant body | 79/81 | 445.2 | 447.20 | 448.27 | 447.85 | 452.98 | none ≤ 469.4 | none ≤ 469.4 |
+| inclusive | Land-plant body, without Oman fragments | 79/81 | 445.2 | 447.20 | 448.27 | 447.85 | 452.98 | none ≤ 469.4 | none ≤ 469.4 |
 | inclusive | Polysporangiophyte body | 74/76 | 445.2 | 447.34 | 448.48 | 448.03 | 453.62 | none ≤ 469.4 | none ≤ 469.4 |
 | inclusive | Crown vascular-plant body | 53/55 | 426.7 | 428.63 | 428.67 | 428.28 | 431.10 | none ≤ 469.4 | 468.65 |
 <!-- /table:primary -->
@@ -271,38 +337,44 @@ are not a combined test for interval-dated fossils, a model-selection criterion 
 **Table S6.** Leave-one-region-out bounds for crown vascular-plant members, with PBDB exposure recomputed after the same omission. Regions are approximate modern country/state assignments.
 
 <!-- table:shape -->
-| Category | History | KS D at midpoint ages | Nominal p, 5–95% of age draws |
-|-------------------------|-----------------------------------:|--------------------:|----------------------------:|
-| Any land-plant body | Constant | 0.194 | 0.0041–0.062 |
-| Any land-plant body | PBDB collection density | 0.174 | 0.0075–0.088 |
-| Any land-plant body | PBDB density, plant matches removed | 0.214 | 0.00054–0.039 |
-| Any land-plant body | Decline into past, 25 Myr | 0.331 | 6.2e-09–2.7e-06 |
-| Any land-plant body | Decline into past, 10 Myr | 0.549 | 2.3e-22–4e-17 |
-| Any land-plant body | Plant-excluded PBDB × 10 Myr decline | 0.363 | 2e-10–5.4e-08 |
-| Polysporangiophyte body | Constant | 0.204 | 0.0046–0.068 |
-| Polysporangiophyte body | PBDB collection density | 0.185 | 0.011–0.13 |
-| Polysporangiophyte body | PBDB density, plant matches removed | 0.224 | 0.00086–0.032 |
-| Polysporangiophyte body | Decline into past, 25 Myr | 0.328 | 3.1e-08–1.8e-05 |
-| Polysporangiophyte body | Decline into past, 10 Myr | 0.546 | 1.9e-20–1.8e-15 |
-| Polysporangiophyte body | Plant-excluded PBDB × 10 Myr decline | 0.346 | 1e-08–1.6e-06 |
-| Crown vascular-plant body | Constant | 0.236 | 0.073–0.76 |
-| Crown vascular-plant body | PBDB collection density | 0.234 | 0.014–0.27 |
-| Crown vascular-plant body | PBDB density, plant matches removed | 0.320 | 0.00019–0.016 |
-| Crown vascular-plant body | Decline into past, 25 Myr | 0.363 | 7e-05–0.016 |
-| Crown vascular-plant body | Decline into past, 10 Myr | 0.549 | 2.2e-11–8.4e-07 |
-| Crown vascular-plant body | Plant-excluded PBDB × 10 Myr decline | 0.347 | 0.0011–0.044 |
+| Category | History | Nominal p, midpoint ages | Independent-uniform ages, 5–95% | Shared-quantile ages, 5–95% |
+|---------------------------------------|-----------------------------------:|-----------------------:|------------------------------:|--------------------------:|
+| Land-plant body, without Oman fragments | Constant | 0.0066 | 0.0041–0.062 | 1.1e-09–0.0062 |
+| Land-plant body, without Oman fragments | PBDB collection density | 0.02 | 0.0075–0.088 | 0.00033–0.022 |
+| Land-plant body, without Oman fragments | PBDB density, plant matches removed | 0.0019 | 0.00054–0.039 | 4.4e-05–0.0047 |
+| Land-plant body, without Oman fragments | Decline into past, 25 Myr | 1.2e-07 | 6.2e-09–2.7e-06 | 2e-21–1.9e-06 |
+| Land-plant body, without Oman fragments | Decline into past, 10 Myr | 2.5e-20 | 2.3e-22–4e-17 | 1.4e-40–8.4e-17 |
+| Land-plant body, without Oman fragments | Plant-excluded PBDB × 10 Myr decline | 3.9e-09 | 2e-10–5.4e-08 | 1.7e-16–1.4e-08 |
+| Polysporangiophyte body | Constant | 0.0053 | 0.0046–0.068 | 6.2e-09–0.0056 |
+| Polysporangiophyte body | PBDB collection density | 0.016 | 0.011–0.13 | 0.00061–0.031 |
+| Polysporangiophyte body | PBDB density, plant matches removed | 0.0016 | 0.00086–0.032 | 4.1e-05–0.0038 |
+| Polysporangiophyte body | Decline into past, 25 Myr | 4.5e-07 | 3.1e-08–1.8e-05 | 7.6e-20–1.1e-05 |
+| Polysporangiophyte body | Decline into past, 10 Myr | 7.8e-19 | 1.9e-20–1.8e-15 | 1.1e-37–4.3e-15 |
+| Polysporangiophyte body | Plant-excluded PBDB × 10 Myr decline | 8.5e-08 | 1e-08–1.6e-06 | 2.9e-15–5.6e-07 |
+| Crown vascular-plant body | Constant | 0.0085 | 0.073–0.76 | 3.1e-09–0.016 |
+| Crown vascular-plant body | PBDB collection density | 0.0092 | 0.014–0.27 | 2.7e-05–0.058 |
+| Crown vascular-plant body | PBDB density, plant matches removed | 8.6e-05 | 0.00019–0.016 | 2.2e-06–0.019 |
+| Crown vascular-plant body | Decline into past, 25 Myr | 4.9e-06 | 7e-05–0.016 | 4.6e-16–0.0019 |
+| Crown vascular-plant body | Decline into past, 10 Myr | 3.1e-13 | 2.2e-11–8.4e-07 | 3.5e-26–8e-07 |
+| Crown vascular-plant body | Plant-excluded PBDB × 10 Myr decline | 1.5e-05 | 0.0011–0.044 | 5.9e-11–0.0064 |
+| Land-plant body, with Oman fragments | Constant | 5.5e-12 | 5.2e-13–5.2e-09 | — |
+| Land-plant body, with Oman fragments | PBDB collection density | 7.5e-08 | 1.2e-08–4.7e-06 | — |
+| Land-plant body, with Oman fragments | PBDB density, plant matches removed | 1.1e-10 | 1.3e-11–2e-08 | — |
+| Land-plant body, with Oman fragments | Decline into past, 25 Myr | 6.3e-06 | 3.2e-06–0.00085 | — |
+| Land-plant body, with Oman fragments | Decline into past, 10 Myr | 7.4e-20 | 9.6e-22–1.4e-16 | — |
+| Land-plant body, with Oman fragments | Plant-excluded PBDB × 10 Myr decline | 1.2e-08 | 1.2e-09–1.5e-07 | — |
 <!-- /table:shape -->
-**Table S7.** Within-record shape diagnostics, main reading, independent-uniform age allocations.
+**Table S7.** Within-record shape diagnostics (conditional-on-maximum Kolmogorov–Smirnov), main reading, under each declared age treatment. Ranges are the 5th–95th percentiles of nominal *p* across 256 age draws, not minimum-to-maximum ranges.
 
 <!-- table:ages -->
 | Category | History | Allocation | 5% | Median | 95% | Unbounded fraction |
-|-------------------------|------------------------:|------------------:|-----:|-----:|-----:|-----------------:|
-| Any land-plant body | Constant | independent uniform | 432.25 | 433.34 | 434.42 | 0.00 |
-| Any land-plant body | PBDB collection density | independent uniform | 432.02 | 433.42 | 436.18 | 0.00 |
-| Any land-plant body | Decline into past, 25 Myr | independent uniform | 434.48 | 435.76 | 437.01 | 0.00 |
-| Any land-plant body | Constant | shared quantile | 432.23 | 433.27 | 434.35 | 0.00 |
-| Any land-plant body | PBDB collection density | shared quantile | 432.00 | 433.27 | 435.99 | 0.00 |
-| Any land-plant body | Decline into past, 25 Myr | shared quantile | 434.48 | 435.66 | 436.90 | 0.00 |
+|---------------------------------------|------------------------:|------------------:|-----:|-----:|-----:|-----------------:|
+| Land-plant body, without Oman fragments | Constant | independent uniform | 432.25 | 433.34 | 434.42 | 0.00 |
+| Land-plant body, without Oman fragments | PBDB collection density | independent uniform | 432.02 | 433.42 | 436.18 | 0.00 |
+| Land-plant body, without Oman fragments | Decline into past, 25 Myr | independent uniform | 434.48 | 435.76 | 437.01 | 0.00 |
+| Land-plant body, without Oman fragments | Constant | shared quantile | 432.23 | 433.27 | 434.35 | 0.00 |
+| Land-plant body, without Oman fragments | PBDB collection density | shared quantile | 432.00 | 433.27 | 435.99 | 0.00 |
+| Land-plant body, without Oman fragments | Decline into past, 25 Myr | shared quantile | 434.48 | 435.66 | 436.90 | 0.00 |
 | Polysporangiophyte body | Constant | independent uniform | 432.32 | 433.33 | 434.43 | 0.00 |
 | Polysporangiophyte body | PBDB collection density | independent uniform | 432.07 | 433.35 | 436.15 | 0.00 |
 | Polysporangiophyte body | Decline into past, 25 Myr | independent uniform | 434.72 | 435.93 | 437.22 | 0.00 |
@@ -366,11 +438,11 @@ transferred from the spore comparison (Table S10).
 
 <!-- table:delay -->
 | Category | Assumed delay (Myr) | Recoverability bound | Lineage bound |
-|-------------------------|------------------:|-------------------:|------------:|
-| Any land-plant body | 0 | 434.51 | 434.51 |
-| Any land-plant body | 5 | 434.51 | 439.51 |
-| Any land-plant body | 10 | 434.51 | 444.51 |
-| Any land-plant body | 20 | 434.51 | 454.51 |
+|---------------------------------------|------------------:|-------------------:|------------:|
+| Land-plant body, without Oman fragments | 0 | 434.51 | 434.51 |
+| Land-plant body, without Oman fragments | 5 | 434.51 | 439.51 |
+| Land-plant body, without Oman fragments | 10 | 434.51 | 444.51 |
+| Land-plant body, without Oman fragments | 20 | 434.51 | 454.51 |
 | Polysporangiophyte body | 0 | 434.62 | 434.62 |
 | Polysporangiophyte body | 5 | 434.62 | 439.62 |
 | Polysporangiophyte body | 10 | 434.62 | 444.62 |
@@ -474,7 +546,7 @@ a crown assignment remain distinct. For M1, cryptospore persistence has not been
 
 ## S7. Analyses superseded during review
 
-Two analyses were replaced after independent review. The record is kept so that readers can see what
+Analyses and wording were replaced after independent review. The record is kept so that readers can see what
 changed and why.
 
 **The Loop 3 body-record pilot** (`docs/loop3-pilot.md`, provisional, by Claude) reported logistic-ramp
@@ -493,6 +565,13 @@ limits of [452.6, 454.1 and 438.0]{.C35 .superseded} Ma for B0, B1 and B2. It re
 All were repaired. The fixed-history endpoint calculation (S5.2) replaced the profiled ramp. Its numbers
 and interpretation govern; the pilot's do not (`docs/audits/2026-11-01-loop3-methods-review.md`,
 `docs/loop3-results.md`).
+
+**Review C wording** (`docs/audits/2026-11-05-review-c.md`, `docs/audits/2026-11-05-review-c-methods.md`).
+The previous draft called the B0–spore separation a demonstrated, observed lag; applied the *ρf* ≈ 0.09
+product to both Murzuq history classes when it holds for the constant class only; reported the QSIM
+minimum ratios as percentages of all spores (0.307 as 31% rather than a 23.5% share); showed shape
+diagnostics for one age treatment only; and presented the tenfold suppression and the 15–23 Myr delays as
+if they were estimated. All are corrected here, and the Oman sensitivity was added.
 
 **Loop 2 corrections** (`docs/loop2-close.md`, `docs/audits/2026-11-01-loop2-close-claude-response.md`)
 fixed a misread H0c column, an overgeneralised exponent sensitivity, an unsupported circularity claim and
