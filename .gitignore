@@ -3,6 +3,7 @@ __pycache__/
 .venv/
 /tmp/
 library/closed/
+docs/outreach/
 portal/dist/
 .site-publish/
 library/open/
