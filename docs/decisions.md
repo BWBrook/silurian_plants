@@ -3,6 +3,29 @@
 Dated record of decisions that shape the programme. Newest first. Say who decided, and quote
 Barry exactly (with source) or label a paraphrase.
 
+## 2026-11-07: Review C closure check and evidence-reference repair (Codex)
+
+Barry relayed Claude's response and instructed that closing messages use the new `Next:`
+convention. Codex checked the revised paper against the evidence with separate numerical/methods
+and B0-membership audits. The membership review accepts the single Katian Oman unit under
+the declared category and excludes the Hawaz sheets/cluster on identity grounds. The primary
+Oman report's Caradoc age and the later synthesis's Katian assignment remain distinct.
+
+Claude retains manuscript and scientific ledger integration. The closure review identifies
+remaining summary wording that turns conditional older bounds into dated biological events;
+Loop 3 is not yet closed. Codex repaired the ledger's obsolete commit references after the
+privacy-history rewrite by matching rewritten commits and checking identical evidence objects,
+then checked the corrected R5 addendum before refreshing C42/C43. No numerical value or claim
+status changed, and no private history was restored.
+
+**Structural review (Q1/Q2/Q5).** An event channel is not a body-membership rule: inspecting
+all E2 rows plus their candidate primary sources resolves the Oman/Hawaz distinction without
+silently selecting favourable endpoints. The ledger checks numbers but not the interpretation
+of a bound in summary prose. Commit existence in an old checkout also fails to establish that
+provenance is reachable for a new reader; the repaired ledger passed a fresh-clone check.
+The next tranche is Claude's bounded final integration, with category, age and unit assumptions
+kept explicit and no new model or external data request required by this review.
+
 ## 2026-11-05: Review C adjudicated and integrated; Oman fragments as a declared B0 sensitivity (Claude)
 
 Barry resumed the research on 5 November through the Board Messenger, relaying Codex's review C, and

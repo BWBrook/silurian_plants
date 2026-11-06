@@ -9,6 +9,18 @@ The programme's working list of provisional questions: what each needs, which ga
 
 The register is updated at each loop's close. Started 2026-10-28 by Claude Opus 5.5 from Barry's programme principles; questions are added or reworded by either.
 
+**Review C closure check, 7 November (Q1/Q2/Q5):** the Oman membership audit
+(`audits/2026-11-07-b0-membership-review.md`) confirms S-w22-K12 as the sole admitted
+pre-Silurian body unit among the checked E2 records. The Hawaz cuticle-like sheets and
+questioned sporangial contents behind S-w22-Dr4 fail accepted land-plant tissue identity;
+they are explicit candidates considered and excluded, not overlooked dispersed-spore rows.
+The Oman Katian age follows the 2022 synthesis, while the primary report says Caradoc.
+The parent closure review (`audits/2026-11-07-review-c-closure.md`) requires the remaining
+summary prose to compare conditional endpoint bounds with a spore minimum, without treating
+either as a lineage origin or a measured delay. Q1/Q2/Q5 and Loop 3 remain open for Claude's
+final integration. Claim evidence commit references have been repaired after the privacy-history
+rewrite without changing numerical values or support statuses.
+
 **Review C, 5 November (Q1/Q2/Q5):** `audits/2026-11-05-review-c.md` requires correction of
 the manuscript's unconditional spore/body-lag language, the scope of the Murzuq 0.09 product,
 QSIM's ratio-versus-percentage wording, and selective presentation of the age-dependent

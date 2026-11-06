@@ -215,6 +215,13 @@ data archived, and the human–AI correspondence record published alongside.
   finding, added the declared Oman-fragment B0 sensitivity (`models/f3/loop3/oman_sensitivity.py`),
   independently reproduced the Borenshult screen statistics, and integrated the corrections into the
   claims ledger, the four renderings and the figures.
+  In the 7 November closure check, Codex reviewed the revised interpretation and repaired
+  evidence-commit references after the privacy-history rewrite, verifying identical evidence
+  objects and a fresh clone. A `sol_high_specialist` delegate (configured GPT-5.6-sol/high)
+  independently checked the numerical/method claims, while a `sol_medium_scientist` delegate
+  (configured GPT-5.6-sol/medium) audited all E2 candidates and the primary Oman/Hawaz sources
+  against the declared B0 category. Claude retains final paper integration; numerical values,
+  frozen analyses and support statuses were not changed by the parent review.
 - OpenAI Codex CLI, `gpt-6.1-sol` and `gpt-6.1-terra` at high reasoning effort, run by Claude Opus
   5.5 as read-only, schema-constrained jobs through `~/.claude/bin/codex-delegate` (2026-10-27 and
   28; on 2026-10-31 `gpt-6.1-terra` independently re-derived the 164 Libyan binary units for sprint 1; on 2026-11-01 `gpt-6.1-sol` with web search classified the 241 PBDB macrofossil names for the Loop 3 pilot, `work/codex/loop3/`). Records are in `docs/audits/` and the job files in `data/spores/work/codex/` and
