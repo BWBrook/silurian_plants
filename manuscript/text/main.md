@@ -12,18 +12,20 @@ would have left recoverable fossils earlier had it existed. We reassessed three 
 sampling opportunity and the link from character to node separate. The 515.5 Ma maximum combines
 disputed fossil affinity with a qualitative preservation-control argument from older marine
 microfossil sequences; the material we assembled cannot quantify that argument. The 459.1 Ma value is
-the base of the Sandbian stage, which the oldest possible and the oldest definite Swedish trilete
-spores give alike. One Libyan basin supplies the only qualified quantitative comparison: [28]{.C01} older
-well cuttings without trilete spores against [51 of 59]{.C02} younger cuttings with them. If cuttings are
-independent and delivery was equal, it limits sustained, delivered trilete encounter in that basin,
-mostly through later-Ordovician samples, to about a tenth of the Llandovery level; treating cuttings from
-one well and formation as a block loosens the limit to about [0.4]{.C51 .V053}. It does not date a global absence.
+the GTS2012 base of the Sandbian stage plus its quoted uncertainty, which the oldest possible and the
+oldest definite Swedish trilete spores give alike. One Libyan basin supplies the only qualified quantitative comparison: [28]{.C01} older
+well cuttings without trilete spores against [51 of 59]{.C02} younger cuttings with them. Given a shared
+well effect, otherwise independent cutting outcomes and equal delivery, the qualified comparison limits
+sustained, delivered trilete encounter in that basin, chiefly through later-Ordovician samples, to about
+a tenth of the Llandovery level. Inverse-block-size composite weighting gives an unqualified comparison
+contour near [0.4]{.C51 .V053}. It does not date a global absence.
 For crown vascular plants, [48]{.C25} dated locality–age units give a 95% older bound of about [429]{.C27 .V002} Ma on
 the start of their recoverable record if the rate of recorded, identifiable occurrences was constant or
-tracked collecting effort; shifting the stage boundaries within their uncertainties leaves it younger
-than 431.2 Ma. Coarser unit treatments move it to [432.4–434.05]{.C30} Ma. For it to reach the 444–452 Ma of
-older clocks, identifiable bodies before the oldest find must have been recorded about [8]{.C48 .V054} to [12]{.C48 .V055} times
-less often than later, or [2.4]{.C48 .V056} to [4.5]{.C48 .V057} times under coarser units, which the record cannot test.
+tracked collecting effort; it stays younger than 431.2 Ma under each tested shared-boundary scenario.
+Coarser unit treatments move it to [432.4–434.05]{.C30} Ma. Under a retrospective step model with no assumed
+delay before diagnostic bodies, lineage ages of 444–452 Ma would need identifiable bodies before the oldest
+find to have been recorded about [8]{.C48 .V054} to [12]{.C48 .V055} times less often than later, or [2.4]{.C48 .V056} to [4.5]{.C48 .V057} times under coarser
+units; an origin-to-body delay reduces the contrast needed, and the record cannot test either.
 Including Ordovician sporangial fragments from Oman moves the broad land-plant-body bound about 20 Myr
 older, to [455.2]{.C40 .V020} Ma under constant intensity, and then no age assignment within the recorded ranges
 lets any tested history pass a shape diagnostic. These results
@@ -183,7 +185,9 @@ character evidence.
 
 Hooper et al.'s ancestral-state reconstructions make a proximal trilete aperture modal at the
 embryophyte crown (aperture and dispersal unit were reconstructed separately; Supplement S6), so a crown
-older than 459.1 Ma would imply undetected trilete producers. Murzuq is the only frame we found in which
+older than 459.1 Ma would imply undetected trilete producers, provided the state persisted in early
+lineages, they made recognisable trilete spores, and some lived in the sampled catchment (Table 4,
+Supplement S6). Murzuq is the only frame we found in which
 that implication can be confronted with documented older and younger samples. Its source describes the
 microscopy protocol and states the absences explicitly, so the zeros are observations, not database
 gaps [@abuhmida2013PalynologicalAnalysisOrdovician]. Their timing matters, though: of the [28]{.C01} older cuttings, [10]{.C45} are Darriwilian, broadly
@@ -210,7 +214,7 @@ delivered, recovered encounter, sustained over the later Ordovician in one basin
 comes from the [18]{.C45} younger cuttings. Under the constant history the product $\rho f$ stays at [0.091]{.C24} across
 delivery scenarios; under the exposure-weighted history it runs from [0.184]{.C24} at equal delivery to [0.092]{.C24}
 at a tenth. If older material delivered and preserved spores as well as the Llandovery reference, trilete
-producers at constant intensity from 459.1 Ma must have been below a tenth of their Llandovery intensity,
+producers at constant intensity from 459.1 Ma would have had to be, under the model, below a tenth of their Llandovery intensity,
 and below about [0.18]{.C24} of it under the exposure-weighted history. This bounds sustained intensity in one
 basin, not the intensity at every time in the Late Ordovician. If delivery was a tenth as good,
 producers at nearly the reference intensity are allowed under either history. Intervals of producers at a tenth or a
@@ -227,13 +231,15 @@ claim. That conditional miss rate is reported for transparency; it is not by its
 unconditional procedure, but it shows that a finite boundary claim from this frame should not be read as
 an unrestricted 95% guarantee.
 
-Dependence among cuttings matters as much. Cuttings from one well share a formation and a stage
-assignment, and a shared well effect need not absorb that. Fitting a separate rate to each well barely
-moves the constant-history limit ([0.0995]{.C51 .V058} against [0.0910]{.C51 .V059}). Down-weighting each cutting by the size of
-its well–formation or well–stage block, so that the older record counts as about six blocks rather than
-28 cuttings, loosens it to [0.393]{.C51 .V060} and [0.419]{.C51 .V061}. These are retrospective composite-likelihood
-sensitivities outside the qualified procedure, but they show that "a tenth" rests on treating cuttings
-from one well and formation as independent observations (Supplement S2.5, Fig. S2). The comparison is
+Dependence among cuttings matters as much. The qualified model treats cutting outcomes as independent
+given a shared well effect, but cuttings from one well also share a formation and a stage assignment,
+which that well effect need not absorb. Fitting a separate rate to each well barely moves the
+constant-history comparison contour ([0.0995]{.C51 .V058} against [0.0910]{.C51 .V059}). Weighting each cutting's likelihood
+by the inverse size of its well–formation or well–stage block, so that each block carries unit total
+weight and the older record a total weight of about six rather than 28, gives comparison contours of
+[0.393]{.C51 .V060} and [0.419]{.C51 .V061}. These are unqualified, retrospective composite-likelihood sensitivities, not a
+fitted model of block dependence, but they show that "a tenth" leans on conditional independence within
+wells (Supplement S2.5, Fig. S2). The comparison is
 real and useful, but it is one basin at a glacial pole, it depends on preservation, delivery and
 dependence, and its reference positives are all cuttings.
 
@@ -344,10 +350,10 @@ diagnostic, not which history is true[]{.C49}. The steep decline fails the diagn
 age assignment; the 25 Myr decline does not; constant intensity is not shown to be adequate.
 
 The sequence says nothing about the rate before the oldest possible crown-member find, so we asked how
-much rarer earlier records would have to be for a recoverable record to begin at a given older age. With
-a step in the rate at the oldest possible find ([426.7]{.C32} Ma) and no assumed delay before diagnostic bodies,
-a start at 431.2 Ma needs earlier records at [0.48]{.C48 .V071} of the later rate, and starts at 444, 447 and 452 Ma
-need [0.124]{.C48 .V072}, [0.105]{.C48 .V073} and [0.085]{.C48 .V074} of it (Supplement Table S9b). Under the coarser region–stage or curated
+much rarer earlier records would have to be for a candidate lineage age to lie on the bound. With a step
+in the rate at the oldest possible find ([426.7]{.C32} Ma) and no assumed delay before diagnostic bodies, so that
+the recoverable record starts at the lineage age, 431.2 Ma would need earlier records at [0.48]{.C48 .V071} of the
+later rate, and 444, 447 and 452 Ma would need [0.124]{.C48 .V072}, [0.105]{.C48 .V073} and [0.085]{.C48 .V074} of it (Supplement Table S9b). Under the coarser region–stage or curated
 units, 431.2 Ma needs no reduction at all and 444–452 Ma needs [0.22]{.C48 .V075} to [0.42]{.C48 .V076} of the later rate. These
 are retrospective compatibility contours: the step sits at an age chosen after seeing the data, the
 0.05 rule gives them no nominal confidence, and they are not fitted rates. The tenfold scenario in
@@ -371,12 +377,12 @@ zero coverage of the lineage age (Supplement S5.6, Table S11).
 
 ### 4.1 An older, sparsely recorded flora is allowed, not required
 
-Taken together, the three analyses support a specific, conditional conclusion. Where the record can be
-interrogated, it rules out early land plants that were both abundant and readily recorded before the
-younger dates: no well-delivered, Llandovery-level trilete producers sustained through the later
-Ordovician in the Murzuq Basin, and no crown vascular-plant bodies recorded at the later Silurian–Devonian
-rate before about [429]{.C27 .V018} Ma, under the primary unit rule. It does not rule out early land plants that were rare,
-local, small, poorly preserved or seldom recognised. Murzuq allows trilete producers at a tenth of their
+Taken together, the three analyses support a specific, conditional conclusion. Where the record can
+be interrogated, it places conditional limits on two specific observation histories: sustained,
+well-delivered Llandovery-level trilete encounter through the later Ordovician in the Murzuq Basin, and
+the start of the recoverable crown vascular-plant body record under the later Silurian–Devonian
+recording rate and primary unit rule (one-sided 95% older bound near [429]{.C27 .V018} Ma). Neither limits early land
+plants that were rare, local, small, poorly preserved or seldom recognised. Murzuq allows trilete producers at a tenth of their
 later intensity, at full intensity with poor delivery, or living outside the basin's catchment. The body
 record allows crown vascular plants that were present but recorded at a tenth of later rates, or that
 lacked crown-diagnostic bodies, before the Ludlow.
@@ -395,9 +401,9 @@ recoverable.
 What this means for the clocks is an audit of assumptions, not a ranking. Under constant or
 effort-tracking intensity and the primary unit rule, the crown vascular-plant bound lies inside Hooper
 et al.'s 432–428 Ma interval and inside the full Morris et al. range (451–419 Ma). The Morris et al. means
-near [444]{.C33} Ma and Harris et al.'s interval need either a long early phase in which crown vascular plants were
-recorded as identifiable bodies about [8]{.C48 .V077} to [12]{.C48 .V078} times less often than later (under the primary unit rule;
-[2.4]{.C48 .V079} to [4.5]{.C48 .V080} times under coarser ones), or crown-diagnostic body features that arose at least about
+near [444]{.C33} Ma and Harris et al.'s interval would need either a long early phase in which crown vascular plants
+were recorded as identifiable bodies less often than later (about [8]{.C48 .V077} to [12]{.C48 .V078} times under the retrospective step
+model, primary unit rule and zero assumed delay; [2.4]{.C48 .V079} to [4.5]{.C48 .V080} times under coarser units), or crown-diagnostic body features that arose at least about
 [15–23]{.C33} Myr after the crown node (minimum offsets at the constant-intensity bound), or some combination. Constant intensity is algebraically simple,
 but nothing shows it is biologically appropriate near a clade's origin, so agreement between its bound
 and the youngest clock is not independent support for that clock; the same fossils are among its
@@ -411,9 +417,9 @@ and character history, rather than chosen by convention.
 
 | Conclusion | Rests on | Fails if |
 |------------------|----------------------|----------------------|
-| Murzuq excludes abundant, well-delivered trilete producers sustained through the later Ordovician[]{.C24} | encounter model; delivery $\rho$; reference purity; stage dating of cuttings, chiefly [18]{.C45} later-Ordovician ones; independence of cuttings within a well | older delivery was much lower, reference triletes include caved or recycled grains, ages are shifted, or cuttings from one well and formation behave as one observation (limit about [0.4]{.C51 .V081}) |
+| Murzuq excludes abundant, well-delivered trilete producers sustained through the later Ordovician[]{.C24} | encounter model; delivery $\rho$; reference purity; stage dating of cuttings, chiefly [18]{.C45} later-Ordovician ones; cutting outcomes independent given a shared well effect | older delivery was much lower, reference triletes include caved or recycled grains, ages are shifted, or cuttings within a well and formation are strongly dependent (an unqualified block-weighting sensitivity gives a comparison contour near [0.4]{.C51 .V081}) |
 | That exclusion bears on crown land plants | producers lived in the catchment; trilete production at the embryophyte crown and its persistence [@hooper2026ReconstructingSporeEvolution]; our persistence pilot | early producers lived elsewhere, did not make recognisable trilete monads, or lost them in lineages present in the basin |
-| Recoverable crown vascular-plant bodies began after about [429]{.C27 .V019} Ma | recording history before and within the record; unit rule and independence; ages within reported ranges; adopted stage boundaries | earlier recording was several times lower (§3.3); units are pseudoreplicated or coarser (region–stage or curated units give [432.4–434.05]{.C30} Ma); Yea or Bathurst ages are wrong |
+| The one-sided 95% older bound on the start of the recoverable crown vascular-plant body record is about [429]{.C27 .V019} Ma | recording history before and within the record; unit rule and independence; ages within reported ranges; adopted stage boundaries | earlier recording was several times lower (§3.3); units are pseudoreplicated or coarser (region–stage or curated units give [432.4–434.05]{.C30} Ma); Yea or Bathurst ages are wrong |
 | That bound bears on the crown vascular-plant node | lycophyte-line and euphyllophyte bodies are crown members; crown-diagnostic bodies arose near the node | crown origin preceded recognisable crown bodies by a long delay |
 | The land-plant body bound is [455.2]{.C40 .V030} Ma under constant intensity | the Oman fragments are one unit of the declared category; recording history | the fragments are excluded ([434.5]{.C28} Ma) or split; the poorly fitting histories misdescribe the sequence |
 
@@ -447,11 +453,12 @@ The fossil maxima that most divide land-plant clocks cannot be justified or reje
 The oldest combines disputed affinity with a qualitative preservation-control argument that the
 assembled material cannot quantify. The second has one qualified local test, in one polar basin, which
 excludes abundant, well-delivered producers sustained through the later Ordovician there, but not sparse,
-poorly delivered or absent-from-the-catchment ones, and whose strength depends on treating cuttings as
-independent. The third is consistent with the positive body record under constant or effort-tracking
+poorly delivered or absent-from-the-catchment ones, and whose strength depends on cuttings being
+independent given a shared well effect. The third is consistent with the positive body record under constant or effort-tracking
 recording and the primary unit rule, and becomes compatible with the older clocks if identifiable crown
-vascular-plant bodies were recorded several times less often before the oldest find than after it, by a
-factor that depends on how the records are counted. Bounds of this kind are set by their
+vascular-plant bodies were recorded several times less often before the oldest find than after it, or
+if crown-diagnostic bodies appeared some time after the node; the factor needed depends on that delay and
+on how the records are counted. Bounds of this kind are set by their
 oldest admitted records: one Ordovician fragment assemblage moves the land-plant body bound by about
 20 Myr[]{.C40}. An older, sparsely recorded early flora is therefore a live possibility under assumptions that
 the record itself cannot test. Clock analyses should treat these maxima as conditional on stated

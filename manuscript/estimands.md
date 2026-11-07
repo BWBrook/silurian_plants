@@ -67,8 +67,10 @@ origin.
 - **Canonical B0** includes the Katian Oman sporangial fragments as one locality–age unit with oldest
   possible age 452.8 Ma (C40). The former inventory is an exclusion sensitivity (C28).
 - **Allowed:** including the fragments moves the conditional bounds about 20 Myr older; the endpoint is
-  controlled by the oldest admitted unit; the allocated-age diagnostics fit the augmented sequence poorly (C41), subject to the
-  interval-feasibility check; this does not reject all ages the ranges permit.
+  controlled by the oldest admitted unit; the allocated-age diagnostics fit the augmented sequence poorly (C41); in the
+  completed interval-feasibility search, no admissible allocation of the
+  recorded supports lets any declared history pass that conditional-age diagnostic (C49; see Shape
+  diagnostics). This is not a rejection of a biological history.
 - **Not allowed:** any lag, delay or "interval" between lineage origin and body recoverability, in either
   direction ("about 20 Myr after", "almost at once"); 458.2 Ma as an origin (it is a fossil minimum).
 

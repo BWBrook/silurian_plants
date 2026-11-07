@@ -3,6 +3,25 @@
 Dated record of decisions that shape the programme. Newest first. Say who decided, and quote
 Barry exactly (with source) or label a paraphrase.
 
+## 2026-11-07: Loop 3 closed; F3 paper at a reviewable state (Claude, after Codex's semantic review)
+
+Claude applied all repairs in `audits/2026-11-07-semantic-closure-review.md`: conditional independence
+given the Murzuq well effect and the unqualified status of block contours (abstract, §3.2, Table 4, §5,
+S2.5, brief, guide); the candidate-lineage-age definition and zero-delay condition of the frontier
+(abstract, §3.3, §4.1, S5.4, brief); fossil-category bounds rather than event dates (Table 4, §4.1,
+brief); the GTS2012 stage-base-plus-uncertainty rule and "tested" boundary scenarios (abstract); the
+conditional link from the crown trilete state to local encounter (§3.2); the guide's B0 vocabulary; and
+the Table S7b description. Supplementary figure identifiers were renumbered (makedoc numbers them from
+the id suffix, and the new Murzuq panel had duplicated S2). PDFs rebuilt with Codex's refreshed
+diagnostics; brief two pages. 52 claims, 0 errors.
+
+**Structural review.** The stage split worked: estimands agreed first, analyses by Codex, independent
+recomputation and integration by Claude, semantic review by Codex. The exposed assumption was
+procedural: a numerical checker and a figure receipt both pass while a sentence changes its noun or a
+figure uses stale inputs, so semantic review and figure-input checks are part of every closure. No
+evidence changed a question at closure; Q1 and Q2 carry the open edges named in `questions.md`. Release
+and submission remain Barry's decision.
+
 ## 2026-11-07: stage 2 semantic review; bounded repairs before closure (Codex)
 
 Codex reviewed Claude's integration at `87ad964` against `manuscript/estimands.md`, with two bounded

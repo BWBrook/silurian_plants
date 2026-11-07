@@ -146,12 +146,12 @@ lies inside the window ($q_i = 0.9/11.2$ under a uniform age within the stage).
 
 The qualified model shares a Gamma(2, 2) frailty within each well. Three retrospective, unqualified
 sensitivities (`models/f3/loop3/murzuq_stage2.py`) ask how much the constant-history contour on $\rho f$
-depends on independence among cuttings. Each uses the declared $-2\log(0.05)$ threshold as a comparison
+depends on cuttings being independent given the shared well effect. Each uses the declared $-2\log(0.05)$ threshold as a comparison
 convention, not a calibrated critical value.
 
 | Treatment | Contour on $\rho f$ |
 |---|---:|
-| Independent cuttings, shared well frailty (as qualified) | [0.0910]{.C51 .V087} |
+| Conditionally independent cuttings given shared well frailty (as qualified) | [0.0910]{.C51 .V087} |
 | A separate reference rate for each well, no frailty | [0.0995]{.C51 .V086} |
 | Each cutting weighted by 1/(size of its well × formation block) | [0.393]{.C51 .V084} |
 | Each cutting weighted by 1/(size of its well × stage-support block) | [0.419]{.C51 .V085} |
@@ -159,9 +159,11 @@ convention, not a calibrated critical value.
 
 **Table S1b.** Murzuq dependence sensitivities (`models/f3/loop3/out/stage2_murzuq/dependence_sensitivity.csv`).
 
-Block weights make each block contribute about one observation, giving about seven reference and six
-older blocks: a composite likelihood, not an estimated correlation. Between independence and full block
-dependence the limit moves from about a tenth to about four tenths of the reference intensity. Dropping
+Inverse block-size weights give each block unit total likelihood weight: about seven reference and six
+older blocks in total weight. Reference blocks mix positive and negative cuttings, so a block is not
+replaced by a single binary observation. This composite sensitivity does not estimate correlation or full
+block dependence; its unqualified comparison contour is about four tenths of reference intensity, against
+about a tenth for the qualified model. Dropping
 I3-NC186, which holds ten of the 18 younger older-frame cuttings, has the largest single-well effect. Claude
 reproduced the four undropped contours with an independent implementation.
 
@@ -353,9 +355,10 @@ values of the maximum's exposure, so the search enumerates every such event poin
 between them and solves a bipartite matching in each, bracketing the global minimum of $D$ to within
 $5 \times 10^{-11}$. The two units in each category whose support straddles the Emsian cutoff may fall below it
 and leave the conditional sample, so all four inclusion states are searched. The cutoff is held at
-393.47 Ma; shared boundary shifts are treated separately (S5.3). Table S7b gives, for each state and
-history, the asymptotic and finite-sample *p* at the best allocation. Where no allocation reaches 0.05
-these are upper bounds, so the failure holds for every allocation within the recorded supports; where one
+393.47 Ma; shared boundary shifts are treated separately (S5.3). Table S7b displays, for each state and
+history, the asymptotic *p* at the best allocation and flags where the finite-sample reference changes
+the classification; both values are in the source CSV. Where no allocation reaches 0.05 these are upper
+bounds, so the failure holds for every allocation within the recorded supports; where one
 does, the allocation file is a witness. Optimising over ages invalidates these *p* values as calibrated
 tests: they state what the recorded supports permit for this diagnostic, not which ages or which history
 is true. A separate brute-force permutation implementation (Codex) agreed on 720 fixed-$D$ decisions and 120 optimum
@@ -579,11 +582,11 @@ No member was selected to match a clock (Table S9).
 **Table S9.** Retrospective stage-break grid for crown vascular-plant members, main reading (`models/f3/loop3/out/suppression_sensitivity.csv`).
 
 **The age–intensity frontier.** The grid fixes multipliers and reads off bounds. The frontier inverts it:
-for a candidate start $T$ of the recoverable record, what ratio of earlier to later recording intensity
-puts $T$ exactly on the 95% bound? With constant later intensity, a step at the oldest possible age $A$,
+for a candidate lineage age $T$ and an assumed delay $d$ before recoverable diagnostic bodies, what ratio
+of earlier to later recording intensity puts the corresponding recoverability start $T-d$ exactly on the
+95% bound? With constant later intensity, a step at the oldest possible age $A$,
 fixed cutoff $c$ and $n$ guaranteed units, the earlier exposure needed is $(A-c)(0.05^{-1/n}-1)$, and the
-ratio is that exposure divided by $T-d-A$ for an assumed delay $d$ between lineage origin and recoverable
-diagnostic bodies (`models/f3/loop3/frontier.py`). A ratio above one means no reduction is needed. Where
+ratio is that exposure divided by $T-d-A$ (`models/f3/loop3/frontier.py`). A ratio above one means no reduction is needed. Where
 $T-d \le A$ the contour is undefined in this parameterisation (shown as —), which does not exclude the
 combination, because the oldest fossil may be younger within its support. The step's position is chosen
 from the data and the contour is not a fitted rate, a likelihood surface or a joint confidence region. The

@@ -9,6 +9,16 @@ The programme's working list of provisional questions: what each needs, which ga
 
 The register is updated at each loop's close. Started 2026-10-28 by Claude Opus 5.5 from Barry's programme principles; questions are added or reworded by either.
 
+**Loop 3 closed, 7 November (Q1/Q2/Q5):** Claude applied every wording repair in Codex's semantic
+closure review (`audits/2026-11-07-semantic-closure-review.md`) and rebuilt the three PDFs with the
+refreshed diagnostics. The F3 paper now states: M1 as affinity plus an unquantifiable qualitative
+preservation control; M2's Murzuq limit as qualified given a shared well effect, with block weighting
+an unqualified sensitivity near 0.4; M3 as a conditional older bound near 429 Ma on the recoverable
+crown-member body record, crossed by coarser units and by retrospective step models that would need
+earlier recording 8–12 times lower at zero delay. Open edges for the next loop: an independent proxy for
+Silurian non-marine recording (Q1, M3); a second spore frame outside polar Gondwana (Q1, M2); section-level
+ordering of the pivotal Yea and Bathurst supports (Q2). Release and submission are Barry's decision.
+
 **Stage 2 semantic review, 7 November (Q1/Q2/Q5):** Claude independently checked C48–C52 and marked
 them supported at `87ad964`. Codex's semantic review
 (`audits/2026-11-07-semantic-closure-review.md`) retains the results and identifies finite wording
@@ -252,7 +262,9 @@ Codex analyses, Claude check and integration (`audits/2026-11-07-stage2-handoff.
   identifiable crown-member occurrences at about 0.12–0.085 of the later rate for starts at 444–452 Ma
   (primary units, no delay), 0.42–0.22 under coarser units. The question is now whether any independent
   evidence bears on a several-fold lower Silurian recording rate (C48).
-- **Q1 (M2):** the Murzuq limit loosens from about 0.09 to about 0.4 under well–formation block
+- **Q1 (M2):** (wording corrected at Loop 3 closure: the qualified limit assumes independence given a
+  shared well effect; inverse-block-size weighting gives an unqualified comparison contour near 0.4.)
+  The Murzuq limit loosens from about 0.09 to about 0.4 under well–formation block
   dependence (C51); the frame's strength rests on within-well independence.
 - **Q2:** shared stage-boundary shifts move the B2 bound by at most 1.6 Myr and do not cross 431.2 Ma
   under constant or effort-tracking intensity (C50). Removing Yea moves it 1.67 Myr younger (C52). The
