@@ -9,6 +9,12 @@ The programme's working list of provisional questions: what each needs, which ga
 
 The register is updated at each loop's close. Started 2026-10-28 by Claude Opus 5.5 from Barry's programme principles; questions are added or reworded by either.
 
+**GPT-6 Pro follow-up, 7 November (Q1/Q2/Q5):** a Q5-type error of our own: the stage-2 builder read a
+missing E3 row as an assessed absence of branching, which removed two branched fertile records from B1
+(`audits/2026-11-07-gpt6pro-review2-triage.md`). Q1 is reframed in the paper as what older crown ages
+would require (frontier figure); the record still cannot estimate early recording or a diagnostic delay.
+Q2: the Yea cell no longer claims sporangia for the material claimed as Silurian (Libertín et al. 2024).
+
 **Loop 3 closed, 7 November (Q1/Q2/Q5):** Claude applied every wording repair in Codex's semantic
 closure review (`audits/2026-11-07-semantic-closure-review.md`) and rebuilt the three PDFs with the
 refreshed diagnostics. The F3 paper now states: M1 as affinity plus an unquantifiable qualitative

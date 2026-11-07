@@ -13,6 +13,40 @@ references:
     - - 2013
   publisher: University of Sheffield
   URL: https://etheses.whiterose.ac.uk/id/eprint/4475/
+- id: berger1994PValuesMaximized
+  citation-key: berger1994PValuesMaximized
+  type: article-journal
+  title: "*P*\n                    Values Maximized Over a Confidence Set for the Nuisance Parameter"
+  author:
+  - family: Berger
+    given: Roger L.
+  - family: Boos
+    given: Dennis D.
+  issued:
+    date-parts:
+    - - 1994
+  container-title: Journal of the American Statistical Association
+  volume: '89'
+  issue: '427'
+  page: 1012–1016
+  publisher: Informa UK Limited
+  DOI: 10.1080/01621459.1994.10476836
+- id: claramunt2022CladedateCalibrationInformation
+  citation-key: claramunt2022CladedateCalibrationInformation
+  type: article-journal
+  title: "CladeDate\n                    : Calibration information generator for divergence time estimation"
+  author:
+  - family: Claramunt
+    given: Santiago
+  issued:
+    date-parts:
+    - - 2022
+  container-title: Methods in Ecology and Evolution
+  volume: '13'
+  issue: '11'
+  page: 2331–2338
+  publisher: Wiley
+  DOI: 10.1111/2041-210x.13977
 - id: cocks2021OrdovicianPalaeogeographyClimate
   citation-key: cocks2021OrdovicianPalaeogeographyClimate
   type: article-journal
@@ -68,6 +102,24 @@ references:
   article-number: RS23021
   publisher: CSIRO Publishing
   DOI: 10.1071/rs23021
+- id: edwards1979RecordsFertileRhyniophytina
+  citation-key: edwards1979RecordsFertileRhyniophytina
+  type: article-journal
+  title: New records of fertile Rhyniophytina from the late Silurian of Wales
+  author:
+  - family: Edwards
+    given: D.
+  - family: Rogerson
+    given: E. C. W.
+  issued:
+    date-parts:
+    - - 1979
+  container-title: Geological Magazine
+  volume: '116'
+  issue: '2'
+  page: 93–98
+  publisher: Cambridge University Press (CUP)
+  DOI: 10.1017/s0016756800042503
 - id: edwards1980RecordsCooksoniatypeSporangia
   citation-key: edwards1980RecordsCooksoniatypeSporangia
   type: article-journal
@@ -246,6 +298,48 @@ references:
   page: 269–271
   publisher: Springer Science and Business Media LLC
   DOI: 10.1038/s41477-018-0140-y
+- id: libertin2022EarlyLandPlant
+  citation-key: libertin2022EarlyLandPlant
+  type: article-journal
+  title: The early land plant Cooksonia bohemica from the Pridoli, late Silurian, Barrandian area, the Czech Republic, Central Europe
+  author:
+  - family: Libertín
+    given: Milan
+  - family: Kvaček
+    given: Jiří
+  - family: Bek
+    given: Jiří
+  - family: McLoughlin
+    given: Stephen
+  issued:
+    date-parts:
+    - - 2022
+  container-title: Historical Biology
+  volume: '35'
+  issue: '12'
+  page: 2504–2514
+  publisher: Informa UK Limited
+  DOI: 10.1080/08912963.2022.2144286
+- id: libertin2024GenusAberlemniaSiluriandevonian
+  citation-key: libertin2024GenusAberlemniaSiluriandevonian
+  type: article-journal
+  title: The genus Aberlemnia and its Silurian–Devonian fossil record
+  author:
+  - family: Libertín
+    given: Milan
+  - family: Kvaček
+    given: Jiří
+  - family: Bek
+    given: Jiří
+  issued:
+    date-parts:
+    - - 2024
+  container-title: Review of Palaeobotany and Palynology
+  volume: '320'
+  page: '105017'
+  article-number: '105017'
+  publisher: Elsevier BV
+  DOI: 10.1016/j.revpalbo.2023.105017
 - id: liu2024EvolutionSilurianPhytogeography
   citation-key: liu2024EvolutionSilurianPhytogeography
   type: article-journal
@@ -441,6 +535,28 @@ references:
   article-number: '103503'
   publisher: Elsevier BV
   DOI: 10.1016/j.earscirev.2021.103503
+- id: silvestro2015RevisitingOriginDiversification
+  citation-key: silvestro2015RevisitingOriginDiversification
+  type: article-journal
+  title: Revisiting the origin and diversification of vascular plants through a comprehensive Bayesian analysis of the fossil record
+  author:
+  - family: Silvestro
+    given: Daniele
+  - family: Cascales‐Miñana
+    given: Borja
+  - family: Bacon
+    given: Christine D.
+  - family: Antonelli
+    given: Alexandre
+  issued:
+    date-parts:
+    - - 2015
+  container-title: New Phytologist
+  volume: '207'
+  issue: '2'
+  page: 425–436
+  publisher: Wiley
+  DOI: 10.1111/nph.13247
 - id: strauss1989ClassicalConfidenceIntervals
   citation-key: strauss1989ClassicalConfidenceIntervals
   type: article-journal

@@ -59,8 +59,13 @@ origin.
 - **Not allowed:** a crown date; a ranking of clocks; "the simplest assumption favours the young clock";
   constant intensity as the adequate or preferred history.
 - **Fossil basis:** *C. barrandei* (Sheinwoodian, horizon inferred) is older than the Irish Homerian
-  anchor; on Hooper et al.'s own rule it would move the anchor by up to about 3 Myr. An older stem fossil
-  does not contradict a younger crown maximum (C21).
+  anchor. On the current scale the stage-base-plus-uncertainty rule gives 431.9 Ma (Homerian) and
+  434.1 Ma (Sheinwoodian), about 2.2 Myr apart; the 2.9 Myr difference from the published 431.2 Ma mixes
+  GTS2012 and ICS v2024/12 (C47). Neither number dates the slab, and an older positive anchor does not
+  show that a documented absence began earlier. An older stem fossil does not contradict a younger crown
+  maximum (C21).
+- **Not allowed:** "earliest start" or "earliest date" for the 429 Ma bound; the bound alone without
+  the 432–434 Ma unit sensitivity; its overlap with the youngest clock as support for that clock.
 
 ## B0 and the spore comparison
 
@@ -82,9 +87,17 @@ origin.
   of the recorded supports, for B2 in all four inclusion states and for canonical B0; every canonical B0
   history fails likewise; the 25 Myr decline and plant-excluded density × 10 Myr decline have passing B2
   allocations when cutoff-straddling units are counted (C49). Constant intensity is not shown adequate.
-- **Not allowed:** "rejected" or "falsified" for a biological history (the result is about this
-  diagnostic and the encoded supports, treated as independent); a witness allocation read as the true
-  ages; optimised p values read as calibrated; model selection.
+- **Finite-sample reference primary** (GPT-6 Pro follow-up review, 7 November). The 25 Myr decline
+  passes with all 50 possible B2 units, falls just short with 49 (passes only asymptotically) and fails
+  with 48; the combined history passes with 49 or 50 but not 48.
+- **Allowed:** a failure over every admissible allocation as a conservative rejection of that fixed
+  history for this diagnostic, stated with its conditions: the supports contain the true ages and
+  inclusion state, the finite-sample reference, the fixed history and the independent observation model
+  (sup-p argument; Berger and Boos 1994).
+- **Not allowed:** "rejected" or "falsified" for a biological history without those conditions, or as
+  an unconditional error rate (geological ranges are not demonstrated simultaneous confidence sets); a
+  witness allocation read as the true ages, a probable chronology or evidence of adequacy; the asymptotic
+  reference as primary; model selection.
 
 ## Trait-to-node links
 

@@ -167,8 +167,9 @@ def main():
         cells = []
         for h in HIST:
             r = iv[(key, h)]
-            mark = "*" if r["any_asymptotic_p_ge_0_05"] != "True" else ("†" if r["any_finite_sample_p_ge_0_05"] != "True" else "")
-            cells.append(f"{p(r['witness_asymptotic_p'])}{mark}")
+            fs = r["any_finite_sample_p_ge_0_05"] == "True"
+            mark = "" if fs else ("†" if r["any_asymptotic_p_ge_0_05"] == "True" else "*")
+            cells.append(f"{p(r['witness_finite_sample_p'])}{mark}")
         rows.append([cat, label] + cells)
     table("interval", ["Category", "Units"] + [SHORT[h] for h in HIST], rows)
 

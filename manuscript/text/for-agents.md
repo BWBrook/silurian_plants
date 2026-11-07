@@ -1,7 +1,7 @@
 ---
 document: agent-facing paper
 study: F3, fossil maxima behind land-plant molecular clocks
-status: internal draft; Loop 3 closed 2026-11-07 after the GPT-6 Pro review (analyses by Codex, integration by Claude, semantic review by Codex); release and submission are Barry's decision
+status: internal draft; Loop 3 closed 2026-11-07; revised after the GPT-6 Pro follow-up review of 342153a (triage docs/audits/2026-11-07-gpt6pro-review2-triage.md; B1 restoration pending with Codex); release and submission are Barry's decision
 human_paper: manuscript/text/main.md (+ supplement.md, brief.md)
 claims_ledger: manuscript/claims.csv (single source for all renderings; checked by tools/claims.py)
 governing_docs: [docs/charter.md, docs/decisions.md, docs/plan-f3.md, docs/f3-shape.md, docs/loop3-design.md, docs/loop3-results.md]
@@ -62,7 +62,7 @@ every sentence that must follow.
   plant-excluded-density, 25 Myr decline and 10 Myr decline histories (C27). Recovery reduced tenfold
   before [426.7]{.C32} Ma gives [448.10]{.C32} Ma; a hundredfold gives no bound (C32, retrospective). Region–stage and
   curated-only units give [432.38]{.C30} and [434.05]{.C30} Ma under constant intensity (C30), across 431.2 Ma. The anchor
-  of 431.2 Ma omits the older *C. barrandei*, a shift of up to about [3]{.C47} Myr on Hooper et al.'s own rule (C47).
+  of 431.2 Ma omits the older *C. barrandei*. On the current scale the stage-base-plus-uncertainty rule gives [431.9]{.C47} Ma (Homerian) and [434.1]{.C47} Ma (Sheinwoodian), [2.2]{.C47} Myr apart; [2.9]{.C47} Myr is the difference from the published GTS2012 value and mixes scales (C47).
   The tested shared-boundary scenarios move the constant bound within [427.31]{.C50 .V098}–[430.42]{.C50 .V099} Ma, younger than the maximum under
   all three comparisons (C50). Lineage ages of 444–452 Ma would need earlier/later intensity [0.124]{.C48 .V100}–[0.085]{.C48 .V101} (primary units,
   zero delay; C48). No admissible age allocation rescues the 10 Myr decline; some rescue the 25 Myr
@@ -173,6 +173,17 @@ Do not reintroduce any of these. Each was caught in review; the record is in `su
     effect; unqualified inverse-block-size weighting gives a comparison contour near four tenths (C51).
 24. **B1 from tracheids.** E4-only tracheid evidence does not admit a polysporangiophyte; B1 needs E3 or
     nested E5. An earlier build broke this for three records.
+25. **A missing event row as a negative.** E3 was enumerated only for the Homerian and older, so a
+    younger record without an E3 row was not assessed for branching. *C. bohemica* and Capel Horeb have
+    published branched fertile material and belong in B1; the Lang axis does not
+    (`docs/audits/2026-11-07-gpt6pro-review2-triage.md`).
+26. **429 Ma as an earliest start.** It is a conditional one-sided 95% older bound on the start of the
+    recognisable record under constant recording and primary units, not an earliest possible start or
+    an origin date; quote it beside the 432–434 Ma unit sensitivity.
+27. **Interval failures and passes.** Use the finite-sample reference. A failure across every
+    admissible allocation is a conservative rejection of that fixed history for the diagnostic only if
+    the supports contain the true ages (sup-p argument, Berger and Boos 1994); a pass is a possibility,
+    not a fit or a ranking (C49).
 
 
 ## Stage 2 results (integrated 7 November 2026)
@@ -191,7 +202,9 @@ all are applied.
   decline an asymptotic conditional-age p of [0.07661]{.C49 .V044}. This defeats a blanket rejection of
   that history across the recorded age supports. The output also enumerates cutoff-straddling
   inclusion states and provides negative certificates where the best attainable diagnostic fails.
-  The optimised p values are not calibrated p values for a latent-age search.
+  Finite-sample p is primary: 25 Myr decline [0.067]{.C49 .V104} with 50 units, [0.049]{.C49 .V105} with 49,
+  [0.035]{.C49 .V106} with 48. A failure over all admissible allocations is a conservative rejection only if
+  the supports contain the true ages; a passing witness is a possibility, not a fitted chronology.
 - **Timescale (C50):** the primary constant B2 bound ranges from [427.31]{.C50 .V045} to [430.42]{.C50 .V046} Ma
   across the shared-boundary scenarios. This is sensitivity to stated deterministic boundary
   movements, with source-scale mapping explicit; it is not a probability interval.

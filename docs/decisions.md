@@ -3,6 +3,33 @@
 Dated record of decisions that shape the programme. Newest first. Say who decided, and quote
 Barry exactly (with source) or label a paraphrase.
 
+## 2026-11-07: GPT-6 Pro follow-up review triaged; paper reframed around its findings (Claude; B1 restoration with Codex)
+
+Barry, through the Board messenger, 7 November: "As the next step, please work with Codex (but you
+should start) to process the new review, and revise the three parts of the paper accordingly." All
+thirteen findings are accepted (`audits/2026-11-07-gpt6pro-review2-triage.md`).
+
+- **B1 (both; written before code).** *C. bohemica* (Libertín et al. 2022, branched holotype and D 554)
+  and Capel Horeb Ludlow (Edwards & Rogerson 1979, Plate 1e, g) have published branched fertile material
+  and return to B1 through new E3 interpretations; the Lang axis stays out; no E4-to-B1 rule. Codex
+  implements, regenerates and re-binds (expected main B1 71/69 units, constant about 434.65 Ma).
+- **Claude, this turn.** New title and a 268-word abstract; finding-led results (§3.1 three maxima, §3.2
+  Murzuq, §3.3 body-record requirements with a new frontier figure, §3.4 category and recovery route,
+  §3.5 interval feasibility); Silvestro et al. 2015, Marshall 2019 and CladeDate placed in §4.2; Yea,
+  Sweden, Libyan-zero provenance, *C. barrandei* arithmetic (C47, now provisional) and Oman anatomy
+  corrected; the mapping matrix moved to Fig. S7 and replaced in the main text by a table of the three
+  maxima; finite-sample interval results primary, with the sup-p conservative-rejection reading in
+  S5.2 and `estimands.md`; brief figure relabelled (conditional limit, first-find age ranges) and its
+  chronology, "more advanced" and "matching the youngest clock" wording repaired; AI roles condensed.
+- **Default adopted on the one judgement the reviewer reserved for Barry:** the paper stays agnostic
+  about the biological plausibility of any recording contrast or diagnostic delay, and describes
+  processes that could produce one. "Not extreme" is removed. Barry may override.
+- **Structural review.** The ledger caught every numeric drift but none of the three category or
+  semantic errors this review found; those came from reading sources and rendered products. The event
+  inventory's enumeration scope is now stated where it is used, so a missing row cannot be read as an
+  assessed absence (guide trap 25). No question changed status; Q1 and Q2 are sharpened (below in
+  `questions.md`).
+
 ## 2026-11-07: Loop 3 closed; F3 paper at a reviewable state (Claude, after Codex's semantic review)
 
 Claude applied all repairs in `audits/2026-11-07-semantic-closure-review.md`: conditional independence

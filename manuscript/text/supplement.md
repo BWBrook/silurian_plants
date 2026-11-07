@@ -186,14 +186,14 @@ Randomness of $M$ does not invalidate the rule: conditional on the actual totals
 of the all-zero event with enough units to cross the threshold. Then $U=\{\alpha^{-1/M}-1\}/h$ bounds the
 *minimum* ratio, not every sample's ratio, a mean, or the pooled share.
 
-**Table S2.** Model-conditional floor limits; none is an admitted empirical confidence bound. $D$ divides the exponent as a heuristic for clustering, not a validated correction.
-
 | Relative effective recovery $h$ | Independent units, $D=1$ | Heuristic $D=2$ | Heuristic $D=4$ |
 |---:|---:|---:|---:|
 | 1 | [0.031]{.C12} | 0.062 | 0.129 |
 | 0.5 | 0.061 | 0.125 | 0.257 |
 | 0.25 | 0.123 | 0.250 | 0.515 |
 | 0.1 | [0.307]{.C12} | 0.624 | [1.287]{.C23} |
+
+**Table S2.** Model-conditional floor limits; none is an admitted empirical confidence bound. $D$ divides the exponent as a heuristic for clustering, not a validated correction.
 
 The source specifies preparation but not the search coverage needed to show that every mark represents
 a unit on which triletes were detectable. Independence, effective ascertainment and sampling and stopping
@@ -255,13 +255,20 @@ fossils and the rejected *Boiophyton*, not an additional embryophyte body. These
 fossil non-detections, and the screen is not a search denominator
 (`data/macro/older_records_screen.csv`; `docs/audits/2026-11-01-loop3-older-records-review.md`).
 
-**Category admission.** Membership is now tested by the builder from each record's evidence channel
-(`data/macro/body_membership.csv`). B1 requires E3 (branching) or nested E5 (crown membership) evidence.
-The first build also admitted E4-only records, in which tracheids are reported without branching, to B1;
-tracheids are synthesis evidence and do not show a branched sporophyte with several sporangia. The repair
-removed *M-bohemica*, the Capel Horeb Ludlow axis and the Lang tracheid axis from main-reading B1 (the
-inclusive reading keeps *M-bohemica* through its E5 reading). Main B1 fell from 70 to 67 guaranteed units and
-its constant bound moved from 434.62 to 434.70 Ma; no B2 primary bound changed. Separately, PBDB collection
+**Category admission.** Membership is tested by the builder from each record's evidence channel
+(`data/macro/body_membership.csv`). B1 requires E3 (branched axes bearing sporangia) or nested E5 (crown
+membership) evidence. Tracheids alone (E4) are synthesis evidence and do not show a branched sporophyte
+with several sporangia, so E4-only material does not enter B1: the Lochkovian Lang tracheid axis, a
+sterile axis, stays out. The E3 channel was enumerated only for the Homerian and older, so a younger
+record without an E3 row was never assessed for branching, and its absence is not a negative. Two such
+records have published branched fertile material and are admitted to B1 on that evidence:
+*Cooksonia bohemica* from Kosov, whose emended diagnosis and holotype describe isotomously branched axes
+with terminal sporangia [@libertin2022EarlyLandPlant], and the Upper Roman Camp Beds at Capel Horeb, which
+yielded branching specimens of *Steganotheca striata* and *Cooksonia* sp. from the same Ludlow beds as
+the tracheid-bearing sterile axis [@edwards1979RecordsFertileRhyniophytina, Plate 1e, g]. Branching,
+conducting anatomy and crown membership are adjudicated separately for each, and tracheids are not
+transferred to the fertile specimens (`docs/audits/2026-11-07-gpt6pro-review2-triage.md`).
+Separately, PBDB collection
 278439 (Xiemisitai Bed 16, Hoboksar County) is in West Junggar, not Tarim
 [@liu2024EvolutionSilurianPhytogeography]; it is now grouped with the other West Junggar material under Kazakhstania in
 both the fossil and the effort tables, which changes the region–stage sensitivity (C30) but no
@@ -272,8 +279,8 @@ sterile axes included (`docs/plan-loop3.md`). The inventory as first built took 
 E3–E5 channels only, so the spore-filled sporangial fragments of the Ghaba-1 borehole, Oman
 [@wellman2003FragmentsEarliestLand], recorded in E2 (observation S-w22-K12), never entered it. The primary report describes
 fragments from three samples of one core, some with a sporangial covering around in situ cryptospores; it
-dates them Caradoc, and the later review we follow correlates them to the Katian. They lack axes and
-conducting tissue, so they stay out of B1 and B2, but the declared B0 admits them. The omission was an
+dates them Caradoc, and the later review we follow correlates them to the Katian. No associated axes or
+conducting tissue are preserved, so they stay out of B1 and B2, but the declared B0 admits them. The omission was an
 inventory-assembly error, so the Oman-inclusive B0 is canonical and the former inventory is reported as
 an exclusion sensitivity. The fragments enter as one locality–age unit (Katian enclosure 452.8–445.2 Ma),
 not as twelve fragments or three samples. Codex's membership audit of all 111 E2 observations found no
@@ -356,31 +363,44 @@ between them and solves a bipartite matching in each, bracketing the global mini
 $5 \times 10^{-11}$. The two units in each category whose support straddles the Emsian cutoff may fall below it
 and leave the conditional sample, so all four inclusion states are searched. The cutoff is held at
 393.47 Ma; shared boundary shifts are treated separately (S5.3). Table S7b displays, for each state and
-history, the asymptotic *p* at the best allocation and flags where the finite-sample reference changes
-the classification; both values are in the source CSV. Where no allocation reaches 0.05 these are upper
-bounds, so the failure holds for every allocation within the recorded supports; where one
-does, the allocation file is a witness. Optimising over ages invalidates these *p* values as calibrated
-tests: they state what the recorded supports permit for this diagnostic, not which ages or which history
-is true. A separate brute-force permutation implementation (Codex) agreed on 720 fixed-$D$ decisions and 120 optimum
-brackets, and Claude recomputed $D$ from the decisive witness files. The supports are encoded as independent rectangles; coherent
-section-level chronologies, which would exclude some combinations, are not encoded.
+history, the finite-sample *p* at the best allocation, and flags where the asymptotic reference would
+change the classification; both values are in the source CSV. Where no allocation reaches 0.05 these are
+upper bounds, so the failure holds for every allocation within the recorded supports; where one does, the
+allocation file is a witness.
+
+**What a failure and a pass mean.** Let $z$ be the true exact ages and inclusion state, $S$ the admitted
+supports, and $p(z)$ the finite-sample *p* under a declared fixed history and independent continuous
+observation model. If $S$ contains $z$, then $p_{\sup}(S)=\sup_{z'\in S}p(z')\ge p(z)$, so
+$\Pr\{p_{\sup}\le\alpha\}\le\Pr\{p(z)\le\alpha\}\le\alpha$: rejecting only when no admissible allocation
+reaches $\alpha$ is a conservative test of that history for this diagnostic, the principle of maximising
+*p* over nuisance values [@berger1994PValuesMaximized]. It holds only if the supports contain the true
+ages, which geological ranges have not been shown to do jointly, and only under the finite-sample
+reference, the fixed history and the independent observation model. Conditioning on the count and
+maximum, and maximising over inclusion states that include the true one, do not defeat the argument. A
+pass is weaker: a witness allocation is a possibility, not a probable chronology, evidence of model
+adequacy or a ranking of histories. Coherent section-level chronologies, which the independent
+rectangular supports do not encode, could exclude a passing allocation but could not rescue a failure. A
+separate brute-force permutation implementation (Codex) agreed on 720 fixed-$D$ decisions and 120 optimum
+brackets, and Claude recomputed $D$ from the decisive witness files; the GPT-6 Pro follow-up review
+independently checked small cases and all 48 saved witnesses.
 
 <!-- table:interval -->
 | Category | Units | Const. | PBDB | PBDB −plant | Decl. 25 | Decl. 10 | −plant × decl. 10 |
 |--------|------------------:|-----:|-----:|----------:|-------:|-------:|----------------:|
-| B2 | 48 guaranteed | 0.991 | 0.759 | 0.282 | 0.041* | 6e-06* | 0.052† |
-| B2 | 49 (one straddling) | 0.997 | 0.705 | 0.240 | 0.057† | 1e-05* | 0.059 |
-| B2 | 50 possible | 0.999 | 0.650 | 0.204 | 0.077 | 2e-05* | 0.066 |
-| B0 +Oman | 76 guaranteed | 5e-07* | 1e-04* | 2e-06* | 0.002* | 5e-16* | 1e-07* |
-| B0 +Oman | 77 (one straddling) | 4e-07* | 1e-04* | 1e-06* | 0.003* | 1e-15* | 2e-07* |
-| B0 +Oman | 78 possible | 3e-07* | 9e-05* | 1e-06* | 0.005* | 3e-15* | 2e-07* |
+| B2 | 48 guaranteed | 0.985 | 0.722 | 0.256 | 0.035* | 3e-06* | 0.045† |
+| B2 | 49 (one straddling) | 0.994 | 0.667 | 0.217 | 0.049† | 6e-06* | 0.051 |
+| B2 | 50 possible | 0.998 | 0.612 | 0.184 | 0.067 | 9e-06* | 0.057 |
+| B0 +Oman | 76 guaranteed | 3e-07* | 9e-05* | 1e-06* | 0.002* | 5e-17* | 6e-08* |
+| B0 +Oman | 77 (one straddling) | 2e-07* | 8e-05* | 8e-07* | 0.003* | 1e-16* | 9e-08* |
+| B0 +Oman | 78 possible | 2e-07* | 7e-05* | 6e-07* | 0.004* | 3e-16* | 1e-07* |
 <!-- /table:interval -->
-**Table S7b.** Best attainable conditional-age diagnostic over all admissible allocations, main reading, Emsian cutoff: asymptotic *p* at the most favourable allocation. * no admissible allocation reaches *p* = 0.05, so the history fails this diagnostic for every age assignment within the recorded supports; † reaches it under the asymptotic reference only, not the finite-sample one. Units: number inside the window, by inclusion of the units that straddle the cutoff (either of the two gives the same result). Not calibrated after optimisation (`models/f3/loop3/out/stage2_interval/`).
+**Table S7b.** Best attainable conditional-age diagnostic over all admissible allocations, main reading, Emsian cutoff: finite-sample *p* at the most favourable allocation. * no admissible allocation reaches *p* = 0.05, so the history fails this diagnostic for every age assignment within the recorded supports; † fails under the finite-sample reference but reaches 0.05 under the asymptotic one. Units: number inside the window, by inclusion of the units that straddle the cutoff (either of the two gives the same result). A failure is a conservative rejection only if the supports contain the true ages (see text); a pass is a possibility, not a fit (`models/f3/loop3/out/stage2_interval/`).
 
-For crown-member bodies the 10 Myr decline fails in every inclusion state; the 25 Myr decline and the
-plant-excluded density times the 10 Myr decline pass when straddling units are counted, but with the 48
-guaranteed units the 25 Myr decline fails and the combined history passes only under the asymptotic
-reference. For canonical land-plant bodies, every history fails in every state.
+Under the finite-sample reference, for crown-member bodies the 10 Myr decline fails in every inclusion
+state. The 25 Myr decline passes with all 50 possible units, falls just short with one straddling unit
+(*p* = 0.049, which passes only asymptotically) and fails with the 48 guaranteed units. The plant-excluded
+density times the 10 Myr decline passes with 49 or 50 units but not 48. For canonical land-plant bodies,
+every history fails in every state under either reference.
 
 ### S5.3 Results and sensitivities
 
@@ -702,6 +722,10 @@ They do not qualify the fossils (Table S11; all categories in `simulation_result
 
 ### S5.7 Figures from the reviewed analysis
 
+Figs S4–S6 are the reviewed analysis's own diagnostic figures (`models/f3/loop3/figures_reviewed.py`),
+regenerated from the accepted tables: recovery bounds by category, the crown vascular-plant sensitivity
+grid and the retrospective suppression grid.
+
 ## S6. From specimens to nodes
 
 The specimen-to-node pilot separates specimen observations, accepted event readings, encounter, trait
@@ -761,6 +785,17 @@ executable membership test found that E4-only tracheid records had entered the p
 category (S5.1). The 5th–95th percentiles of independent allocations for constant intensity changed from
 0.073–0.765 to 0.056–0.715 when the random streams were keyed to each analysis cell; this is a new Monte
 Carlo sample, not a data change.
+
+**The GPT-6 Pro follow-up review** (`docs/audits/2026-11-07-gpt6pro-review2-triage.md`) of commit
+`342153a` found that the stage-2 admission repair had removed two records from B1 because they lacked an
+E3 row, although E3 had never been enumerated for Ludlow and Pridoli records; both have published
+branched fertile material and are restored (S5.1). It also found that the Yea entry in the pivotal-record
+table listed sporangia that are not reported from the material claimed as Silurian; that the brief
+labelled a conditional bound as an earliest start, drew the oldest finds as continuous records, and
+compressed the spore-to-capsule interval to "within ten million years"; that the *C. barrandei* anchor
+comparison mixed timescales; and that the interval search was reported on the asymptotic reference and
+with a blanket statement that optimisation invalidates the tests. All are corrected, and the
+finite-sample reference is now primary (S5.2).
 
 **Review C wording** (`docs/audits/2026-11-05-review-c.md`, `docs/audits/2026-11-05-review-c-methods.md`).
 The previous draft called the B0–spore separation a demonstrated, observed lag; applied the $\rho f \approx 0.09$

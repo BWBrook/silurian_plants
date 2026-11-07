@@ -1,1 +1,1 @@
-![](../figures/figB1_brief.png){#fig-brief width=80%}
+![](../figures/figB1_brief.png){#fig-brief width=68%}

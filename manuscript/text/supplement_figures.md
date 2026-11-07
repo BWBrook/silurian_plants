@@ -9,3 +9,5 @@
 ![Sensitivity of the crown vascular-plant bound to units, sources, regions and age rules.](../../models/f3/loop3/out/fig_macro_sensitivity.png){#fig-macro-sensitivity-s5 width=100%}
 
 ![Retrospective recovery-suppression grid.](../../models/f3/loop3/out/fig_macro_suppression.png){#fig-macro-suppression-s6 width=100%}
+
+![From observed material to node interpretation. For each maximum, the observed material, what it is taken to be, the sampling evidence, the persistence of the diagnostic trait and the implication for the crown node are separate links; a maximum needs all five. `manuscript/figures.py`.](../figures/figS7_mapping.png){#fig-mapping-s7 width=100%}

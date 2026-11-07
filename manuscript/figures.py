@@ -4,8 +4,8 @@
 # ///
 """Figures for the reconstructed manuscript and its supplement.
 
-Main text, in citation order: fig1_problem, fig2_mapping, fig3_evidence, fig4_bodies.
-Two-page brief: figB1_brief. Supplement: figS2_qsim, plus the reviewed Loop 2 and Loop 3 figures reused unchanged from models/.
+Main text, in citation order: fig1_problem, fig2_evidence, fig3_bodies, fig4_frontier.
+Two-page brief: figB1_brief. Supplement: figS2_qsim, figS7_mapping, plus the reviewed Loop 2 and Loop 3 figures reused unchanged from models/.
 Every number drawn here is read from a frozen or reviewed output table, never retyped, except the
 published clock intervals and calibration maxima, which are taken from docs/primer.md §5.3.
 """
@@ -132,11 +132,12 @@ def fig_problem(path):
     ax.text(s4[1] - 1.2, top, "Cambrian cryptospore-like forms (affinity not accepted)", va="center", fontsize=8)
     for i, (lab, (possible, certain)) in enumerate(reversed(rows)):
         ax.barh(i, possible - certain, left=certain, height=0.5, color="#5b7fa6", alpha=0.35)
-        ax.barh(i, certain - 400, left=400, height=0.5, color="#5b7fa6")
+        ax.plot([certain, certain], [i - 0.25, i + 0.25], color="#1f3f66", lw=2.2)
         ax.text(possible + 1.2, i, lab, va="center", ha="right", fontsize=8)
     ax.set_ylim(-0.7, top + 0.6)
     ax.set_yticks([])
-    ax.set_title("Fossil record: first appearances (pale: possible, dark: certain)", fontsize=9.5, loc="left")
+    ax.set_title("Fossil record: age range of the oldest accepted find (band) and the age by which it is certain (tick)",
+                 fontsize=9.5, loc="left")
     ax.spines[["left", "top", "right"]].set_visible(False)
     ax.set_xlim(530, 400)
     ax.set_xlabel("Age (Ma)")
@@ -313,6 +314,64 @@ def fig_qsim(path):
     save(fig, path)
 
 
+FRONTIER = ROOT / "models/f3/loop3/out/frontier.csv"
+
+
+def fig_frontier(path):
+    """Retrospective age-intensity-delay frontier for crown vascular-plant bodies (main reading).
+
+    Curves use the closed form of the flat-plus-step contour, r = (A - c)(0.05^(-1/n) - 1) / (T - d - A),
+    with A, c and n read from frontier.csv; every tabulated contour row is checked against it."""
+    rows = [r for r in read(FRONTIER) if r["reading"] == "main"]
+    params = {}
+    for r in rows:
+        key = r["unit_treatment"]
+        A, c, n = float(r["oldest_possible_ma"]), float(r["cutoff_ma"]), int(r["n_guaranteed"])
+        params[key] = (A, c, n)
+        if r["status"] == "contour":
+            T, d = float(r["candidate_lineage_ma"]), float(r["assumed_diagnostic_delay_myr"])
+            ratio = (A - c) * (0.05 ** (-1 / n) - 1) / (T - d - A)
+            assert abs(ratio - float(r["earlier_to_later_intensity"])) < 1e-8, r
+    T = np.linspace(426.9, 456, 600)
+
+    def curve(key, d):
+        A, c, n = params[key]
+        with np.errstate(divide="ignore", invalid="ignore"):
+            r = np.where(T - d > A, (A - c) * (0.05 ** (-1 / n) - 1) / (T - d - A), np.inf)
+        return np.minimum(r, 1.0)
+
+    fig, ax = plt.subplots(figsize=(7.6, 5.4))
+    for name, old, young in CLOCKS["tracheophyta"]:
+        ax.axvspan(young, min(old, 456), color=CLOCK_COLOURS[name], alpha=0.08 if name.startswith("Morris") else 0.16, lw=0)
+        ax.text((young + min(old, 456)) / 2 if name != "Morris et al. 2018" else 440.0, 1.13,
+                name.replace(" et al.", ""), fontsize=7.5, ha="center", color=CLOCK_COLOURS[name])
+    ax.axvline(431.2, color="#a32020", lw=1.0, ls="--")
+    ax.text(431.0, 0.032, "431.2 Ma\nmaximum", fontsize=7, color="#a32020", ha="right", va="bottom")
+    greens = {0: "#0b4f30", 5: "#2f7d55", 10: "#5ea37f", 20: "#9ccbb0"}
+    for d, col in greens.items():
+        ax.plot(T, curve("primary", d), color=col, lw=2.0 if d == 0 else 1.4,
+                label=f"primary units ({params['primary'][2]}), delay {d} Myr")
+    ax.plot(T, curve("region_stage", 0), color="0.35", lw=1.3, ls="--",
+            label=f"region–stage units ({params['region_stage'][2]}), no delay")
+    ax.plot(T, curve("curated", 0), color="0.35", lw=1.3, ls=":",
+            label=f"curated oldest-record units ({params['curated'][2]}), no delay")
+    for r in rows:
+        if r["status"] == "contour" and r["unit_treatment"] == "primary" and float(r["assumed_diagnostic_delay_myr"]) == 0:
+            ax.plot(float(r["candidate_lineage_ma"]), float(r["earlier_to_later_intensity"]), "o", color=greens[0], ms=4)
+    ax.axvline(params["primary"][0], color="0.6", lw=0.8)
+    ax.text(params["primary"][0] - 0.3, 0.032, "oldest possible\ncrown-member find", fontsize=7, color="0.4", va="bottom")
+    ax.set_yscale("log")
+    ax.set_ylim(0.03, 1.25)
+    ax.set_yticks([0.05, 0.1, 0.2, 0.5, 1.0], ["0.05", "0.1", "0.2", "0.5", "1"])
+    ax.set_xlim(456, 425)
+    ax.set_xlabel("Candidate crown vascular-plant lineage age (Ma)")
+    ax.set_ylabel("Earlier / later recording intensity\nneeded to reach the 95% bound")
+    ax.spines[["top", "right"]].set_visible(False)
+    ax.legend(fontsize=7.2, frameon=False, loc="upper center", bbox_to_anchor=(0.45, -0.14), ncol=2)
+    fig.tight_layout()
+    save(fig, path)
+
+
 def fig_brief(path):
     """One plain-language timeline for the two-page brief: clock estimates against what the rocks show."""
     fig, ax = plt.subplots(figsize=(7.4, 4.0))
@@ -320,7 +379,7 @@ def fig_brief(path):
                [(n.replace(" et al.", ""), o, y, CLOCK_COLOURS[n], None) for n, o, y in CLOCKS["embryophyta"]]),
               ("Molecular clocks: common ancestor of living vascular plants",
                [(n.replace(" et al.", ""), o, y, CLOCK_COLOURS[n], None) for n, o, y in CLOCKS["tracheophyta"]]),
-              ("Fossils (pale: possibly present; dark: certainly present)",
+              ("Fossils: age range of the oldest accepted find",
                [("Land-plant spores", *spore_first("cryptospore")[::-1], "#5b7fa6", None),
                 ("Spore-capsule fragments (Oman)", stage_base("Hirnantian"), body_first("B0")[0], "#5b7fa6", None),
                 ("Branched plant bodies", *body_first("B1")[::-1], "#5b7fa6", None),
@@ -330,8 +389,8 @@ def fig_brief(path):
         for lab, a, b, col, _ in reversed(rows):
             if col == "#5b7fa6":
                 certain, possible = a, b
-                ax.barh(y, possible - certain, left=certain, height=0.6, color=col, alpha=0.35)
-                ax.barh(y, certain - 400, left=400, height=0.6, color=col)
+                ax.barh(y, possible - certain, left=certain, height=0.6, color=col, alpha=0.45)
+                ax.plot([certain, certain], [y - 0.3, y + 0.3], color="#1f3f66", lw=2.0)
             else:
                 ax.barh(y, a - b, left=b, height=0.6, color=col)
             ticks.append(y); labels.append(lab); y += 1
@@ -340,10 +399,10 @@ def fig_brief(path):
     steady, _, _ = primary_bound("B2", "flat")
     sparse = suppressed("B2", 0.1)
     ax.annotate("", xy=(steady, -0.45), xytext=(steady, -1.2), arrowprops={"arrowstyle": "->", "color": "#1f6f4a"})
-    ax.text(steady - 1.5, -1.25, f"{steady:.0f} Ma: earliest start of the\nvascular-plant body record\nif finds accrued at a steady rate",
+    ax.text(steady - 1.5, -1.25, f"{steady:.0f} Ma: conditional 95% older limit\nconstant recording; primary units",
             ha="left", va="top", fontsize=7, color="#1f6f4a")
     ax.annotate("", xy=(sparse, -0.45), xytext=(sparse, -1.2), arrowprops={"arrowstyle": "->", "color": "#7d3c98", "ls": "--"})
-    ax.text(sparse + 1.5, -1.25, f"{sparse:.0f} Ma: one assumed case,\nten times fewer finds\nbefore about 427 Ma",
+    ax.text(sparse + 1.5, -1.25, f"{sparse:.0f} Ma: illustrative older limit\n10-fold lower earlier recording",
             ha="right", va="top", fontsize=7, color="#7d3c98")
     ax.set_yticks(ticks, labels, fontsize=7.4)
     ax.tick_params(axis="y", length=0)
@@ -356,16 +415,17 @@ def fig_brief(path):
 
 def main():
     OUT.mkdir(exist_ok=True)
-    for stale in ("fig1_support", "fig3_qsim_share", "fig2_evidence", "fig3_bodies", "fig4_mapping", "figS1_qsim"):
+    for stale in ("fig1_support", "fig3_qsim_share", "fig2_mapping", "fig3_evidence", "fig4_bodies", "fig4_mapping", "figS1_qsim"):
         for ext in ("png", "pdf"):
             (OUT / f"{stale}.{ext}").unlink(missing_ok=True)
     fig_problem(OUT / "fig1_problem")
-    fig_mapping(OUT / "fig2_mapping")
-    fig_evidence(OUT / "fig3_evidence")
-    fig_bodies(OUT / "fig4_bodies")
+    fig_evidence(OUT / "fig2_evidence")
+    fig_bodies(OUT / "fig3_bodies")
+    fig_frontier(OUT / "fig4_frontier")
+    fig_mapping(OUT / "figS7_mapping")
     fig_qsim(OUT / "figS2_qsim")
     fig_brief(OUT / "figB1_brief")
-    inputs = [QSIM, TIMESCALE, SPORES, MEMBERS, BOUNDS, SUPPRESS, MAPPING,
+    inputs = [QSIM, TIMESCALE, SPORES, MEMBERS, BOUNDS, SUPPRESS, MAPPING, FRONTIER,
               ROOT / "models/f3/loop2/contamination.py", Path(__file__)]
     bound = contamination._input_hashes()
     bound.update({str(p.relative_to(ROOT)): hashlib.sha256(p.read_bytes()).hexdigest() for p in inputs})
