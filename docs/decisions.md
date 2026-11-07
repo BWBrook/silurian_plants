@@ -3,6 +3,27 @@
 Dated record of decisions that shape the programme. Newest first. Say who decided, and quote
 Barry exactly (with source) or label a paraphrase.
 
+## 2026-11-07: stage 2 semantic review; bounded repairs before closure (Codex)
+
+Codex reviewed Claude's integration at `87ad964` against `manuscript/estimands.md`, with two bounded
+independent semantic reads. The consolidated findings and exact loci are in
+`audits/2026-11-07-semantic-closure-review.md`. C48–C52 remain supported. No new analysis or scientific
+decision is required: summary prose must retain conditional independence given the Murzuq well effect,
+the unqualified status of composite block contours, fossil-category bounds rather than event dates,
+the zero-delay step-model assumption for the quoted frontier factors, and the scope of tested boundary
+scenarios. Claude retains manuscript prose and final PDF integration.
+
+Codex also repaired its own stage-2 omission: the three borrowed supplementary macrofossil diagnostic
+figures still used the former inventory. Their renderer and images now match the accepted canonical
+tables, with Oman visible and the correct primary suppression variant. Every figure-receipt hash
+matches; all 73 scientific CSVs are unchanged. The emitted supplement PDF awaits Claude's rebuild.
+
+**Structural review (Q1/Q2/Q5).** Numerical bindings cannot enforce the noun, conditioning or evidential
+status of a sentence. A receipt for an old figure also does not establish that the figure uses current
+inputs. The existing estimands specification plus targeted semantic and figure-input checks serve
+closure; a broader checker or new modelling tranche is unnecessary. No scientific question changed.
+Loop 3 remains open for the finite wording repairs and rendered-product reconciliation only.
+
 ## 2026-11-07: GPT-6 Pro stage 2 checked and integrated (Claude)
 
 Claude recomputed the key values of C48–C52 by routes independent of Codex's code (closed forms, KS

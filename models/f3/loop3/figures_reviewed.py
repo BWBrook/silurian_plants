@@ -25,6 +25,7 @@ LABELS = ["Constant", "PBDB density", "Plant-filter matches removed", "Decline i
 REGIONS = {"Laurentia": "#355f8d", "Avalonia": "#1f968b", "Baltica": "#73b761",
            "peri-Gondwana-Europe": "#d39435", "Kazakhstania": "#9254a2", "South-China": "#cf5f57",
            "Gondwana-Australia-Antarctica": "#586bb0", "Gondwana-South-America": "#a27653",
+           "Gondwana-North-Africa-Arabia": "#b45f8b",
            "Tarim": "#b18aab", "unknown": "#8a8a8a", "multiple": "#b0b0b0"}
 
 
@@ -44,8 +45,9 @@ def save(fig, name):
 
 def main_figure():
     bounds = [r for r in read("reviewed_bounds.csv") if primary(r)]
-    suppression = [r for r in read("suppression_sensitivity.csv") if r["reading"] == "main" and r["baseline"] == "flat" and float(r["break_ma"]) == 426.7]
+    suppression = [r for r in read("suppression_sensitivity.csv") if r["reading"] == "main" and r["baseline"] == "flat" and float(r["break_ma"]) == 426.7 and r["inventory_variant"] == "primary"]
     units = [r for r in read("primary_unit_membership.csv") if r["reading"] == "main"]
+    oldest_panel_age = max(447., max(float(r["max_ma"]) for r in units) + 1.)
     fig, axes = plt.subplots(3, 2, figsize=(12, 10), gridspec_kw={"width_ratios": [1.12, 1]}, layout="constrained")
     for i, (cat, label) in enumerate(CATEGORIES):
         a, b = axes[i]
@@ -54,7 +56,7 @@ def main_figure():
         for y, row in enumerate(r):
             a.plot([float(row["min_ma"]), float(row["max_ma"])], [y, y],
                    color=REGIONS.get(row["region"], "#888888"), lw=1.8)
-        a.set_xlim(447, 392)
+        a.set_xlim(oldest_panel_age, 392)
         a.set_ylim(-2, len(r) + 1)
         a.set_yticks([])
         a.set_title(f"{label}\n{len(r)} units with age support extending beyond 413 Ma", fontsize=10, loc="left")
@@ -74,14 +76,14 @@ def main_figure():
                 b.text(462, y, "no bound", ha="right", va="center", fontsize=8, color=colour)
         if cat == "B0":
             b.axvline(458.2, color="#734f0c", ls=":", lw=1.2)
-            b.text(458.7, 2.4, "Spore minimum, 458.2 Ma", rotation=90, ha="left", va="center", fontsize=8, color="#734f0c")
+            b.text(458.2, 5.6, "Spore minimum, 458.2 Ma", ha="center", va="top", fontsize=8, color="#734f0c")
         if cat == "B2":
             b.axvspan(428, 432, color="#72ab7c", alpha=.2)
             b.axvspan(447, 452, color="#72ab7c", alpha=.2)
             b.axvline(431.2, color="#a03939", ls="--", lw=1)
             b.text(430, 5.6, "Hooper", ha="center", va="top", fontsize=8, color="#3f7448")
             b.text(449.5, 5.6, "Harris", ha="center", va="top", fontsize=8, color="#3f7448")
-        b.set_yticks(range(6), LABELS[:4] + ["Pre-Ludlow recovery × 0.1 †", "Pre-Ludlow recovery × 0.01 †"], fontsize=8)
+        b.set_yticks(range(6), LABELS[:4] + ["Pre-Ludlow recording × 0.1 †", "Pre-Ludlow recording × 0.01 †"], fontsize=8)
         b.set_ylim(6.2, -.7)
         b.set_xlim(419, 473)
         b.set_xlabel("Conditional older bound (Ma; older →)")
@@ -93,7 +95,7 @@ def main_figure():
     handles = [Line2D([0], [0], color=c, lw=2, label=region.replace("Gondwana-", "G.-")) for region, c in REGIONS.items()
                if any(r["region"] == region for r in units)]
     fig.legend(handles=handles, loc="outside lower center", ncol=4, fontsize=7.5, frameon=False)
-    fig.suptitle("Body-fossil timing depends on recovery assumptions\nMain reading; recoverable-process endpoints. † Retrospective sensitivity, break at 426.7 Ma", fontsize=12)
+    fig.suptitle("Body-fossil timing depends on recording assumptions\nMain reading; recoverable-process endpoints. † Retrospective sensitivity, break at 426.7 Ma", fontsize=12)
     save(fig, "fig_macro_recovery")
 
 
@@ -138,7 +140,7 @@ def suppression_figure():
                 if r["status"] == "beyond_domain":
                     ax.annotate("", xy=(xx[j], 470), xytext=(xx[j], 465), arrowprops={"arrowstyle": "->", "color": colour})
         ax.set_xticks(range(4), ["1", "0.5", "0.1", "0.01"])
-        ax.set_xlabel("Multiplier applied to older recovery")
+        ax.set_xlabel("Multiplier applied to older recording intensity")
         ax.set_title("Constant baseline" if baseline == "flat" else "PBDB density baseline")
         ax.set_ylim(425, 472)
         ax.axhline(469.4, color=".6", ls=":", lw=1)
@@ -147,7 +149,7 @@ def suppression_figure():
         ax.spines[["top", "right"]].set_visible(False)
     axes[0].set_ylabel("Sensitivity older bound (Ma)")
     axes[1].legend(loc="lower right", frameon=False, fontsize=8)
-    fig.suptitle("Recovery before the oldest crown-member record is not identified\nComplete stage-break grid; retrospective sensitivity, not selection-adjusted confidence", fontsize=11)
+    fig.suptitle("Recording intensity before the oldest crown-member record is not identified\nComplete stage-break grid; retrospective sensitivity, not selection-adjusted confidence", fontsize=11)
     save(fig, "fig_macro_suppression")
 
 

@@ -242,6 +242,11 @@ data archived, and the human–AI correspondence record published alongside.
   Claude Opus 5.5 then recomputed the stage-2 key values independently (frontier closed form, witness
   KS distances, constant-history endpoints and a separate Murzuq dependence implementation), marked
   C48–C52 supported and integrated them into the four renderings (`docs/audits/2026-11-07-stage2-integration.md`).
+  Codex (`gpt-6.1-sol`) then reviewed that integration semantically against `manuscript/estimands.md`,
+  with bounded `sol_high_specialist` and `sol_medium_scientist` independent reads of body-record and
+  Murzuq/source-facing statements. The parent adjudicated the wording findings and corrected stale
+  supplementary diagnostic figures in its own stage-2 delivery; all scientific CSVs remained unchanged.
+  Claude retains prose repairs and final rendering (`docs/audits/2026-11-07-semantic-closure-review.md`).
 - OpenAI Codex CLI, `gpt-6.1-sol` and `gpt-6.1-terra` at high reasoning effort, run by Claude Opus
   5.5 as read-only, schema-constrained jobs through `~/.claude/bin/codex-delegate` (2026-10-27 and
   28; on 2026-10-31 `gpt-6.1-terra` independently re-derived the 164 Libyan binary units for sprint 1; on 2026-11-01 `gpt-6.1-sol` with web search classified the 241 PBDB macrofossil names for the Loop 3 pilot, `work/codex/loop3/`). Records are in `docs/audits/` and the job files in `data/spores/work/codex/` and

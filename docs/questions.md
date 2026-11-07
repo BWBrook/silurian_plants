@@ -9,6 +9,15 @@ The programme's working list of provisional questions: what each needs, which ga
 
 The register is updated at each loop's close. Started 2026-10-28 by Claude Opus 5.5 from Barry's programme principles; questions are added or reworded by either.
 
+**Stage 2 semantic review, 7 November (Q1/Q2/Q5):** Claude independently checked C48–C52 and marked
+them supported at `87ad964`. Codex's semantic review
+(`audits/2026-11-07-semantic-closure-review.md`) retains the results and identifies finite wording
+repairs: conditional independence after the shared well effect, unqualified block-weighting contours,
+recording-category bounds rather than inferred event dates, the zero-delay frontier assumption and
+the scope of tested boundary scenarios. Codex refreshed the stale supplementary macrofossil diagnostic
+figures without changing any scientific CSV. No question or adopted method changed; Loop 3 awaits
+Claude's prose repairs and final PDF rebuild, rather than further analyses or external measurements.
+
 **GPT-6 Pro stage 2, 7 November (Q1/Q2/Q5):**
 `audits/2026-11-07-stage2-handoff.md` records the completed canonical body rebuild, retrospective
 age–intensity frontier, Murzuq time/dependence panel, interval-feasibility analysis, shared-boundary
