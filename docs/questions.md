@@ -235,6 +235,21 @@ erasing their history; no empirical exclusion is released or question answered.
 | Q9 | Does the Hooper et al. (2026) recalibration survive alternative maxima and placements of the eophytes? | phylogeny (clocks) | parked | the share of the 55 Myr shift owed to each calibration choice | alignment, calibration tables, prior/posterior outputs are held (`data/external/deposits/` and git-ignored `data/external/local/deposits/`); their version correspondence is not yet established. Hooper deposited input specifies 1% tails while the article describes 2.5% (Codex, 2026-10-28; review F3-R1). The bounded check reproduces the rounded node-184 summary but does not link the output to the control file. | Bounded check complete: all 5,001 saved rows and independently clade-matched output-tree HPDs recorded in `data/q9/hooper2026-provenance/` and `docs/audits/2026-10-29-q9-provenance-check.md`. Preliminary double burn-in deletion corrected; Board 2490–2494 is superseded by the final handoff. A controlled comparison of the deposited 1% and described 2.5% specifications is the next proposed diagnostic; it can quantify sensitivity but cannot prove historical provenance. No full clock reanalysis run |
 | Q10 | How much did early vegetation weather, bury carbon and raise O2? | simulation | parked | which parameters dominate, with each input marked as observed or assumed (primer §3, §8 questions 1 and 6) | productivity, P release and fire-threshold inputs; charcoal record | F5, later |
 
+### GPT-6 Pro review, stages 2 and 4, 2026-11-07 (Q1, Q2)
+
+Codex analyses, Claude check and integration (`audits/2026-11-07-stage2-handoff.md`,
+`audits/2026-11-07-stage2-integration.md`):
+- **Q1 (M3):** the age–intensity frontier quantifies what the older clocks need: earlier recorded,
+  identifiable crown-member occurrences at about 0.12–0.085 of the later rate for starts at 444–452 Ma
+  (primary units, no delay), 0.42–0.22 under coarser units. The question is now whether any independent
+  evidence bears on a several-fold lower Silurian recording rate (C48).
+- **Q1 (M2):** the Murzuq limit loosens from about 0.09 to about 0.4 under well–formation block
+  dependence (C51); the frame's strength rests on within-well independence.
+- **Q2:** shared stage-boundary shifts move the B2 bound by at most 1.6 Myr and do not cross 431.2 Ma
+  under constant or effort-tracking intensity (C50). Removing Yea moves it 1.67 Myr younger (C52). The
+  interval search encodes supports as independent rectangles; section-level ordering of pivotal records
+  is the open lever.
+
 ### GPT-6 Pro review, stage 1, 2026-11-07 (Q1, Q2, Q5)
 
 Claude (`audits/2026-11-07-gpt6pro-triage.md`, `audits/2026-11-07-m1-rationale.md`):

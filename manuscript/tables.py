@@ -141,6 +141,48 @@ def main():
                      f"{true_delay:g}", r["delay_adjustment_ma"], f"{float(r['claim_frequency']):.3f}", cov])
     table("simulation", ["Scenario", "True", "Fitted", "Ages", "Dup.", "True delay", "Adj.", "Claims", "Coverage (95% CI)"], rows)
 
+    cands = ("431.2", "440", "444", "447", "452")
+    names = {"primary": "Locality–age (primary)", "region_stage": "Region–stage", "curated": "Curated oldest set"}
+    fr = {(r["unit_treatment"], r["assumed_diagnostic_delay_myr"], r["candidate_lineage_ma"]): r
+          for r in read("frontier.csv") if r["reading"] == "main"}
+    rows = []
+    for ut in names:
+        for d in ("0", "5", "10", "20"):
+            cells = []
+            for c in cands:
+                r = fr[(ut, d, c)]
+                cells.append(f"{float(r['earlier_to_later_intensity']):.3f}" if r["status"] == "contour" else "—")
+            rows.append([names[ut], d] + cells)
+    table("frontier", ["Units", "Delay (Myr)"] + [f"{c} Ma" for c in cands], rows)
+
+    def p(v):
+        v = float(v)
+        return f"{v:.3f}" if v >= 0.001 else f"{v:.0e}"
+    states = [("B2_guaranteed", "B2", "48 guaranteed"), ("B2_partial_01", "B2", "49 (one straddling)"),
+              ("B2_possible", "B2", "50 possible"), ("B0_guaranteed", "B0 +Oman", "76 guaranteed"),
+              ("B0_partial_01", "B0 +Oman", "77 (one straddling)"), ("B0_canonical", "B0 +Oman", "78 possible")]
+    iv = {(r["category"], r["history"]): r for r in read("stage2_interval/interval_feasibility_summary.csv")}
+    rows = []
+    for key, cat, label in states:
+        cells = []
+        for h in HIST:
+            r = iv[(key, h)]
+            mark = "*" if r["any_asymptotic_p_ge_0_05"] != "True" else ("†" if r["any_finite_sample_p_ge_0_05"] != "True" else "")
+            cells.append(f"{p(r['witness_asymptotic_p'])}{mark}")
+        rows.append([cat, label] + cells)
+    table("interval", ["Category", "Units"] + [SHORT[h] for h in HIST], rows)
+
+    ts = {(r["scenario"], r["history"]): r for r in read("stage2_timescale/bound_sensitivity.csv")
+          if r["category"] == "B2_primary"}
+    rows = []
+    for sc in ("baseline", "all_younger", "all_older", "alternating_a", "alternating_b"):
+        base = ts[(sc, "flat")]
+        cells = [f"{float(ts[(sc, h)]['older_bound_ma']):.2f}" for h in ("flat", "pbdb_all", "pbdb_plant_excluded", "decline25")]
+        rows.append([sc.replace("_", " "), f"{float(base['cutoff_ma']):.2f}", base["n_guaranteed"]] + cells
+                    + [f"{float(base['candidate_same_scale_ma']):.2f}", f"{float(base['candidate_source_rule_ma']):.2f}"])
+    table("timescale", ["Scenario", "Cutoff", "Units", "Const.", "PBDB", "PBDB −plant", "Decl. 25",
+                        "431.2 mapped", "Source rule"], rows)
+
     text = SUPPLEMENT.read_text()
     for name, block in BLOCKS.items():
         text, n = re.subn(rf"(<!-- table:{name} -->\n).*?(\n<!-- /table:{name} -->)",

@@ -31,6 +31,9 @@ origin.
   relative to a Llandovery reference, chiefly from later-Ordovician samples: 18 of the 28 older cuttings
   are wholly younger than 459.1 Ma, and the pre-maximum window rests on 10 broadly dated Darriwilian
   cuttings in two wells (C45). Constant class: ρf ≈ 0.091; exposure-weighted class: 0.092–0.184 (C24).
+  Both assume conditionally independent cuttings given a well effect. Block weighting by well and
+  formation or stage support gives about 0.39–0.42 (C51): an unqualified composite-likelihood
+  sensitivity, reported beside the limit, never in place of it.
 - **Not allowed:** a dated global absence before 459.1 Ma; an estimate of producer abundance separate from
   delivery; local absence read as global absence (the lineage may have lived outside the catchment).
 - **"Qualified"** means the procedure passed a 0.93 coverage floor on a declared simulation grid. It is
@@ -49,7 +52,10 @@ origin.
   and collection and reporting. Say "rate of recorded, identifiable occurrences", not "fossilisation".
 - **Allowed:** under constant or effort-tracking intensity, crown vascular-plant bodies give bounds near
   428.5–428.9 Ma; unit treatments move the constant bound to 432.4 (region–stage; 19 units after the West Junggar correction) or 434.05 Ma (curated
-  subset), across 431.2 Ma; reduced earlier intensity moves it further (frontier, retrospective).
+  subset), across 431.2 Ma; reduced earlier intensity moves it further. The frontier (C48) states the
+  earlier/later intensity at which a candidate start lies on the bound, for a declared unit rule and
+  assumed delay; say "would need", never "was". Shared stage-boundary scenarios (C50) are deterministic:
+  "stays younger under each scenario", not "with probability".
 - **Not allowed:** a crown date; a ranking of clocks; "the simplest assumption favours the young clock";
   constant intensity as the adequate or preferred history.
 - **Fossil basis:** *C. barrandei* (Sheinwoodian, horizon inferred) is older than the Irish Homerian
@@ -70,10 +76,13 @@ origin.
 
 - Asymptotic KS p values, computed on allocated ages treated as exact; ranges are 5th–95th percentiles
   over 256 allocations (C31, C41).
-- **Allowed:** the 10 Myr decline fits poorly under every allocation examined; constant intensity is not
-  shown adequate.
-- **Not allowed:** rejection of a history across all ages the intervals admit, unless an interval-aware
-  analysis shows it; model selection.
+- **Allowed:** the 10 Myr decline fails the conditional-age diagnostic under every admissible allocation
+  of the recorded supports, for B2 in all four inclusion states and for canonical B0; every canonical B0
+  history fails likewise; the 25 Myr decline and plant-excluded density × 10 Myr decline have passing B2
+  allocations when cutoff-straddling units are counted (C49). Constant intensity is not shown adequate.
+- **Not allowed:** "rejected" or "falsified" for a biological history (the result is about this
+  diagnostic and the encoded supports, treated as independent); a witness allocation read as the true
+  ages; optimised p values read as calibrated; model selection.
 
 ## Trait-to-node links
 

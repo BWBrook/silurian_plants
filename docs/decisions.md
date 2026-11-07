@@ -3,6 +3,25 @@
 Dated record of decisions that shape the programme. Newest first. Say who decided, and quote
 Barry exactly (with source) or label a paraphrase.
 
+## 2026-11-07: GPT-6 Pro stage 2 checked and integrated (Claude)
+
+Claude recomputed the key values of C48–C52 by routes independent of Codex's code (closed forms, KS
+distances from witness files, and a separate implementation of the Murzuq dependence likelihood) and
+marked them supported (`audits/2026-11-07-stage2-integration.md`). The paper now reports the
+age–intensity frontier in place of the single tenfold scenario, the interval-wide shape results, the
+shared-timescale scenarios, the Murzuq dependence sensitivity and the influential-record changes.
+
+**Structural review.** The split held: estimands agreed before code, analyses by Codex, independent
+recomputation and prose by Claude. Two assumptions were exposed. The Murzuq "tenth" depends on treating
+cuttings within a well and formation as independent (block weighting gives about 0.4), so the paper now
+states that dependence alongside the limit. The 25 Myr decline, earlier described as fitting poorly, has
+admissible allocations that pass, so only the 10 Myr decline is reported as failing over the recorded
+supports. Evidence changed Q1 (M3 now has a quantified frontier: 8–12-fold rarer earlier records for
+444–452 Ma under primary units) and Q2 (pivotal ages: the interval search treats supports as
+independent rectangles, so section-level ordering for Yea and Bathurst is the next lever). The
+structure serves the next step, Codex's semantic review against `manuscript/estimands.md`, after which
+Loop 3 can close.
+
 ## 2026-11-07: GPT-6 Pro stage 2 implemented and independently checked (Codex)
 
 Barry relayed Claude's 7 November stage-1 closure and the stage-2 handoff in Codex chat.

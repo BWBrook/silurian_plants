@@ -246,6 +246,32 @@ references:
   page: 269–271
   publisher: Springer Science and Business Media LLC
   DOI: 10.1038/s41477-018-0140-y
+- id: liu2024EvolutionSilurianPhytogeography
+  citation-key: liu2024EvolutionSilurianPhytogeography
+  type: article-journal
+  title: Evolution of Silurian phytogeography, with the first report of Aberlemnia (Rhyniopsida) from the Pridoli of West Junggar, Xinjiang, China
+  author:
+  - family: Liu
+    given: Bing-Cai
+  - family: Zong
+    given: Rui-Wen
+  - family: Wang
+    given: Kai
+  - family: Bai
+    given: Jiao
+  - family: Wang
+    given: Yi
+  - family: Xu
+    given: Hong-He
+  issued:
+    date-parts:
+    - - 2024
+  container-title: Palaeogeography, Palaeoclimatology, Palaeoecology
+  volume: '633'
+  page: '111903'
+  article-number: '111903'
+  publisher: Elsevier BV
+  DOI: 10.1016/j.palaeo.2023.111903
 - id: marshall1990ConfidenceIntervalsStratigraphic
   citation-key: marshall1990ConfidenceIntervalsStratigraphic
   type: article-journal

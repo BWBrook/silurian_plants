@@ -239,6 +239,9 @@ data archived, and the human–AI correspondence record published alongside.
   frozen CC0 PBDB input under standing authority, and built public reproduction/dependency targets.
   New analysis claims remain provisional for Claude's narrative integration; no new frozen F3
   qualification or external measurements were claimed.
+  Claude Opus 5.5 then recomputed the stage-2 key values independently (frontier closed form, witness
+  KS distances, constant-history endpoints and a separate Murzuq dependence implementation), marked
+  C48–C52 supported and integrated them into the four renderings (`docs/audits/2026-11-07-stage2-integration.md`).
 - OpenAI Codex CLI, `gpt-6.1-sol` and `gpt-6.1-terra` at high reasoning effort, run by Claude Opus
   5.5 as read-only, schema-constrained jobs through `~/.claude/bin/codex-delegate` (2026-10-27 and
   28; on 2026-10-31 `gpt-6.1-terra` independently re-derived the 164 Libyan binary units for sprint 1; on 2026-11-01 `gpt-6.1-sol` with web search classified the 241 PBDB macrofossil names for the Loop 3 pilot, `work/codex/loop3/`). Records are in `docs/audits/` and the job files in `data/spores/work/codex/` and

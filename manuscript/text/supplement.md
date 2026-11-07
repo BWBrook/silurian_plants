@@ -135,6 +135,36 @@ the secure comparator, retains the Turkish occurrence with its original Ashgilli
 and keeps the Hirnantian Zbrza marks outside strict trilete occurrences because their authors doubt them.
 No composite score is computed.
 
+### S2.5 Time support by well and dependence among cuttings
+
+Fig. S2 plots every chart-coded cutting by well and depth with its full stage enclosure. The older frame
+has three Darriwilian cuttings in D1-200 and seven in H2-NC186, whose enclosures reach before 459.1 Ma, and
+18 Katian or Hirnantian cuttings in D1-200, H2-NC186 and I3-NC186 that are wholly younger[]{.C45}. In the
+encounter likelihood a Darriwilian cutting enters as a mixture: with probability $1-q_i$ its age lies
+before 459.1 Ma, where a history sustained from 459.1 Ma gives no producers, and with probability $q_i$ it
+lies inside the window ($q_i = 0.9/11.2$ under a uniform age within the stage).
+
+The qualified model shares a Gamma(2, 2) frailty within each well. Three retrospective, unqualified
+sensitivities (`models/f3/loop3/murzuq_stage2.py`) ask how much the constant-history contour on $\rho f$
+depends on independence among cuttings. Each uses the declared $-2\log(0.05)$ threshold as a comparison
+convention, not a calibrated critical value.
+
+| Treatment | Contour on $\rho f$ |
+|---|---:|
+| Independent cuttings, shared well frailty (as qualified) | [0.0910]{.C51 .V087} |
+| A separate reference rate for each well, no frailty | [0.0995]{.C51 .V086} |
+| Each cutting weighted by 1/(size of its well × formation block) | [0.393]{.C51 .V084} |
+| Each cutting weighted by 1/(size of its well × stage-support block) | [0.419]{.C51 .V085} |
+| One well left out at a time | [0.093]{.C51 .V082} to [0.186]{.C51 .V083} |
+
+**Table S1b.** Murzuq dependence sensitivities (`models/f3/loop3/out/stage2_murzuq/dependence_sensitivity.csv`).
+
+Block weights make each block contribute about one observation, giving about seven reference and six
+older blocks: a composite likelihood, not an estimated correlation. Between independence and full block
+dependence the limit moves from about a tenth to about four tenths of the reference intensity. Dropping
+I3-NC186, which holds ten of the 18 younger older-frame cuttings, has the largest single-well effect. Claude
+reproduced the four undropped contours with an independent implementation.
+
 ## S3. QSIM-801: a model-conditional floor calculation
 
 @vecoli2017MiddleOrdovicianCryptospores [Table 1, p. 321] report [99]{.C11} cryptospore morphotaxon occurrences across [17 of 20]{.C11}
@@ -223,6 +253,18 @@ fossils and the rejected *Boiophyton*, not an additional embryophyte body. These
 fossil non-detections, and the screen is not a search denominator
 (`data/macro/older_records_screen.csv`; `docs/audits/2026-11-01-loop3-older-records-review.md`).
 
+**Category admission.** Membership is now tested by the builder from each record's evidence channel
+(`data/macro/body_membership.csv`). B1 requires E3 (branching) or nested E5 (crown membership) evidence.
+The first build also admitted E4-only records, in which tracheids are reported without branching, to B1;
+tracheids are synthesis evidence and do not show a branched sporophyte with several sporangia. The repair
+removed *M-bohemica*, the Capel Horeb Ludlow axis and the Lang tracheid axis from main-reading B1 (the
+inclusive reading keeps *M-bohemica* through its E5 reading). Main B1 fell from 70 to 67 guaranteed units and
+its constant bound moved from 434.62 to 434.70 Ma; no B2 primary bound changed. Separately, PBDB collection
+278439 (Xiemisitai Bed 16, Hoboksar County) is in West Junggar, not Tarim
+[@liu2024EvolutionSilurianPhytogeography]; it is now grouped with the other West Junggar material under Kazakhstania in
+both the fossil and the effort tables, which changes the region–stage sensitivity (C30) but no
+locality–age unit.
+
 **The Oman sporangial fragments.** B0 was declared as any accepted land-plant macro- or mesofossil,
 sterile axes included (`docs/plan-loop3.md`). The inventory as first built took curated records from the
 E3–E5 channels only, so the spore-filled sporangial fragments of the Ghaba-1 borehole, Oman
@@ -302,10 +344,40 @@ fits poorly under all three. The robust result is discrimination against steep d
 constant recovery. The *p* values are asymptotic Kolmogorov–Smirnov values computed on allocated ages
 treated as exact, not exact finite-sample tests, and their spread across draws is a set of percentiles,
 not a combined test for interval-dated fossils, a model-selection criterion or an empirical calibration.
-Because a history that fails under the examined allocations may fit another allocation the intervals
-admit, an independent review constructed admissible allocations under which the 25 Myr decline is not
-rejected for the 50 possible crown-member units; an interval-aware analysis is in hand, and until it is
-complete only the 10 Myr decline is treated as disfavoured.
+**Interval feasibility.** A history that fails under the allocations drawn may fit another allocation
+that the ranges admit; the GPT-6 Pro review constructed such allocations for the 25 Myr decline. For each
+category and history, `models/f3/loop3/interval_feasibility.py` finds the admissible allocation that
+minimises the Kolmogorov–Smirnov distance $D$. Each unit's age support becomes an interval of
+transformed exposure; compatibility of a unit with an order-statistic rank changes only at finitely many
+values of the maximum's exposure, so the search enumerates every such event point and the open cells
+between them and solves a bipartite matching in each, bracketing the global minimum of $D$ to within
+$5 \times 10^{-11}$. The two units in each category whose support straddles the Emsian cutoff may fall below it
+and leave the conditional sample, so all four inclusion states are searched. The cutoff is held at
+393.47 Ma; shared boundary shifts are treated separately (S5.3). Table S7b gives, for each state and
+history, the asymptotic and finite-sample *p* at the best allocation. Where no allocation reaches 0.05
+these are upper bounds, so the failure holds for every allocation within the recorded supports; where one
+does, the allocation file is a witness. Optimising over ages invalidates these *p* values as calibrated
+tests: they state what the recorded supports permit for this diagnostic, not which ages or which history
+is true. A separate brute-force permutation implementation (Codex) agreed on 720 fixed-$D$ decisions and 120 optimum
+brackets, and Claude recomputed $D$ from the decisive witness files. The supports are encoded as independent rectangles; coherent
+section-level chronologies, which would exclude some combinations, are not encoded.
+
+<!-- table:interval -->
+| Category | Units | Const. | PBDB | PBDB −plant | Decl. 25 | Decl. 10 | −plant × decl. 10 |
+|--------|------------------:|-----:|-----:|----------:|-------:|-------:|----------------:|
+| B2 | 48 guaranteed | 0.991 | 0.759 | 0.282 | 0.041* | 6e-06* | 0.052† |
+| B2 | 49 (one straddling) | 0.997 | 0.705 | 0.240 | 0.057† | 1e-05* | 0.059 |
+| B2 | 50 possible | 0.999 | 0.650 | 0.204 | 0.077 | 2e-05* | 0.066 |
+| B0 +Oman | 76 guaranteed | 5e-07* | 1e-04* | 2e-06* | 0.002* | 5e-16* | 1e-07* |
+| B0 +Oman | 77 (one straddling) | 4e-07* | 1e-04* | 1e-06* | 0.003* | 1e-15* | 2e-07* |
+| B0 +Oman | 78 possible | 3e-07* | 9e-05* | 1e-06* | 0.005* | 3e-15* | 2e-07* |
+<!-- /table:interval -->
+**Table S7b.** Best attainable conditional-age diagnostic over all admissible allocations, main reading, Emsian cutoff: asymptotic *p* at the most favourable allocation. * no admissible allocation reaches *p* = 0.05, so the history fails this diagnostic for every age assignment within the recorded supports; † reaches it under the asymptotic reference only, not the finite-sample one. Units: number inside the window, by inclusion of the units that straddle the cutoff (either of the two gives the same result). Not calibrated after optimisation (`models/f3/loop3/out/stage2_interval/`).
+
+For crown-member bodies the 10 Myr decline fails in every inclusion state; the 25 Myr decline and the
+plant-excluded density times the 10 Myr decline pass when straddling units are counted, but with the 48
+guaranteed units the 25 Myr decline fails and the combined history passes only under the asymptotic
+reference. For canonical land-plant bodies, every history fails in every state.
 
 ### S5.3 Results and sensitivities
 
@@ -325,7 +397,7 @@ independent-uniform age allocation; shared q places every unit at a common withi
 | inclusive | B1 | 72/74 | 445.2 | 447.40 | 448.57 | 448.11 | 453.90 | none | none |
 | inclusive | B2 | 53/55 | 426.7 | 428.63 | 428.67 | 428.28 | 431.10 | none | 468.65 |
 <!-- /table:primary -->
-**Table S3.** Conservative 95% older bounds (Ma) by category, reading and recording history from the frozen inventory, which excludes the Oman fragments (Table S3b gives B0 with them); Emsian cutoff. Units: guaranteed/possible; Oldest: oldest possible age. History abbreviations: Const., constant; PBDB, proportional to PBDB land and marginal-marine collection density; PBDB −plant, the same with plant-matched collections removed; Decl. 25 and Decl. 10, exponential decline into the past on 25 and 10 Myr timescales; −plant × decl. 10, their product. "None": no bound within the 469.4 Ma limit of the declared domain.
+**Table S3.** Conservative 95% older bounds (Ma) by category, reading and recording history from the canonical inventory, in which B0 includes the Oman fragments (Table S3b compares B0 with and without them); Emsian cutoff. Units: guaranteed/possible; Oldest: oldest possible age. History abbreviations: Const., constant; PBDB, proportional to PBDB land and marginal-marine collection density; PBDB −plant, the same with plant-matched collections removed; Decl. 25 and Decl. 10, exponential decline into the past on 25 and 10 Myr timescales; −plant × decl. 10, their product. "None": no bound within the 469.4 Ma limit of the declared domain.
 
 <!-- table:cutoffs -->
 | Cutoff (Ma) | Units | Const. | PBDB | PBDB −plant | Decl. 25 | Decl. 10 | −plant × decl. 10 |
@@ -367,6 +439,44 @@ independent-uniform age allocation; shared q places every unit at a common withi
 | Laurentia | 28 | 426.7 | 430.45 | 429.58 |
 <!-- /table:regions -->
 **Table S6.** Leave-one-region-out bounds for crown vascular-plant members, with PBDB exposure recomputed after the same omission. Regions are approximate modern country/state assignments.
+
+**Shared timescale boundaries.** The bounds above take stage boundaries as fixed. Five deterministic
+scenarios (`models/f3/loop3/timescale_sensitivity.py`) move every boundary in `data/timescale.csv` at once:
+baseline; all one quoted uncertainty younger; all one older; and two alternating patterns, scaled to
+0.7345 and 0.5610 of the quoted uncertainties so that stage order is kept. Each shifted boundary moves
+curated stage-based endpoints, the cutoff, the analysis domain and the effort-stage widths together. A
+PBDB numerical interval moves only when both of its endpoints match project boundaries (27 of 35 PBDB
+crown-member units); otherwise its numbers are kept, because an equal number does not show that the
+source used the ICS boundary. The maximum is compared three ways: the published 431.2 Ma held fixed; 431.2
+Ma moved to the same fractional position between the shifted Homerian and Sheinwoodian bases; and Hooper
+et al.'s rule reapplied on the current scale, the shifted Homerian base plus the 1.3 Myr uncertainty the
+current table quotes for it (431.9 Ma at baseline, against the 431.2 Ma their GTS2012 value gives). The
+constant-intensity bound stays younger than the maximum under all three comparisons in every scenario,
+with margins of [−4.65]{.C50 .V088} to [−0.71]{.C50 .V089} Myr; the two collection-density histories also stay younger. The
+25 Myr decline crosses in both directions. Scenarios with an older cutoff have 47 guaranteed units
+because one PBDB support (393.47–399.5 Ma) keeps its numerical younger end. These are sensitivity
+scenarios, not a probability distribution over geological ages.
+
+<!-- table:timescale -->
+| Scenario | Cutoff | Units | Const. | PBDB | PBDB −plant | Decl. 25 | 431.2 mapped | Source rule |
+|-------------|-----:|-----:|-----:|-----:|----------:|-------:|-----------:|----------:|
+| baseline | 393.47 | 48 | 428.84 | 428.88 | 428.45 | 431.63 | 431.20 | 431.90 |
+| all younger | 392.48 | 48 | 427.31 | 427.53 | 427.08 | 429.98 | 429.93 | 430.60 |
+| all older | 394.46 | 47 | 430.42 | 430.35 | 429.90 | 433.41 | 432.47 | 433.20 |
+| alternating a | 394.20 | 47 | 430.01 | 429.05 | 428.78 | 432.96 | 430.72 | 430.95 |
+| alternating b | 392.91 | 48 | 427.98 | 428.64 | 428.11 | 430.70 | 431.56 | 432.63 |
+<!-- /table:timescale -->
+**Table S6b.** Crown vascular-plant bounds (Ma) under shared boundary scenarios, main reading, Emsian cutoff (shifted with the scenario). Units: guaranteed. "431.2 mapped": the published maximum held at its fractional position in the shifted Homerian; "Source rule": shifted Homerian base plus its quoted 1.3 Myr uncertainty (`models/f3/loop3/out/stage2_timescale/`).
+
+**Influential records.** Leave-group-out comparisons at the same unit rule and cutoff
+(`models/f3/loop3/out/influential_taxa.csv`) remove the records that set the oldest ages. Under constant
+intensity, removing the three Yea *Baragwanathia* units changes the crown-member bound by [−1.67]{.C52 .V090} Myr
+(younger): the oldest age falls to the Bathurst Island 425.0 Ma support. Removing the five Bathurst Island
+units changes it by [0.26]{.C52 .V091} Myr (older), because Yea remains oldest while the count falls. Removing
+*C. barrandei* changes the polysporangiophyte bound by [−2.38]{.C52 .V092} Myr but canonical B0 by only [0.03]{.C52 .V093} Myr,
+because the Oman unit sets B0's oldest age. Under other histories and readings the signs can change, since loss of count and loss
+of the oldest record pull in opposite directions. A leave-out is a leverage diagnostic, not a
+reidentification of any fossil.
 
 <!-- table:shape -->
 | Category | History | Nominal p, midpoint ages | Independent-uniform ages, 5–95% | Shared-quantile ages, 5–95% |
@@ -467,6 +577,36 @@ No member was selected to match a clock (Table S9).
 | PBDB density | 432.9 | 0.01 | False | 428.88 | 0.00918 |
 <!-- /table:suppression -->
 **Table S9.** Retrospective stage-break grid for crown vascular-plant members, main reading (`models/f3/loop3/out/suppression_sensitivity.csv`).
+
+**The age–intensity frontier.** The grid fixes multipliers and reads off bounds. The frontier inverts it:
+for a candidate start $T$ of the recoverable record, what ratio of earlier to later recording intensity
+puts $T$ exactly on the 95% bound? With constant later intensity, a step at the oldest possible age $A$,
+fixed cutoff $c$ and $n$ guaranteed units, the earlier exposure needed is $(A-c)(0.05^{-1/n}-1)$, and the
+ratio is that exposure divided by $T-d-A$ for an assumed delay $d$ between lineage origin and recoverable
+diagnostic bodies (`models/f3/loop3/frontier.py`). A ratio above one means no reduction is needed. Where
+$T-d \le A$ the contour is undefined in this parameterisation (shown as —), which does not exclude the
+combination, because the oldest fossil may be younger within its support. The step's position is chosen
+from the data and the contour is not a fitted rate, a likelihood surface or a joint confidence region. The
+delay and the earlier rate are not separately identifiable from positive records: a longer delay needs
+less suppression for the same $T$.
+
+<!-- table:frontier -->
+| Units | Delay (Myr) | 431.2 Ma | 440 Ma | 444 Ma | 447 Ma | 452 Ma |
+|----------------------|----------:|-------:|-----:|-----:|-----:|-----:|
+| Locality–age (primary) | 0 | 0.476 | 0.161 | 0.124 | 0.105 | 0.085 |
+| Locality–age (primary) | 5 | — | 0.258 | 0.174 | 0.140 | 0.105 |
+| Locality–age (primary) | 10 | — | 0.648 | 0.293 | 0.208 | 0.140 |
+| Locality–age (primary) | 20 | — | — | — | 7.133 | 0.404 |
+| Region–stage | 0 | 1.261 | 0.427 | 0.328 | 0.280 | 0.224 |
+| Region–stage | 5 | — | 0.684 | 0.461 | 0.371 | 0.280 |
+| Region–stage | 10 | — | 1.720 | 0.777 | 0.551 | 0.371 |
+| Region–stage | 20 | — | — | — | 18.917 | 1.071 |
+| Curated oldest set | 0 | 1.632 | 0.552 | 0.425 | 0.362 | 0.290 |
+| Curated oldest set | 5 | — | 0.885 | 0.597 | 0.480 | 0.362 |
+| Curated oldest set | 10 | — | 2.226 | 1.006 | 0.713 | 0.480 |
+| Curated oldest set | 20 | — | — | — | 24.486 | 1.386 |
+<!-- /table:frontier -->
+**Table S9b.** Retrospective age–intensity frontier for crown vascular-plant members, main reading, Emsian cutoff: earlier/later recording intensity at which each candidate lineage age lies on the conservative 95% bound, by unit treatment and assumed delay (`models/f3/loop3/out/frontier.csv`). Primary units: 48 guaranteed; region–stage: 19; curated: 15; oldest possible age 426.7 Ma in each.
 
 ### S5.5 Biological delay
 
@@ -609,8 +749,15 @@ found that the earlier drafts described the 515.5 Ma maximum as resting only on 
 published preservation-control argument; kept the Oman fragments out of the primary land-plant inventory;
 described the recording rate as fossilisation alone; did not show that 18 of the 28 older Murzuq zeros
 are younger than 459.1 Ma; and read shape diagnostics on allocated ages as rejections. All are corrected
-here; analyses that the review requested (interval feasibility, an age–intensity frontier, shared
-timescale-boundary scenarios, Murzuq block dependence and a public raw-input rebuild) are in hand.
+here. The analyses it requested (interval feasibility, an age–intensity frontier, shared
+timescale-boundary scenarios, Murzuq block dependence, influential-record checks and a public raw-input
+rebuild) are reported in S2.5, S5.2–S5.4 and S8 (`docs/audits/2026-11-07-stage2-handoff.md`). Two of
+their findings changed earlier statements: no admissible allocation rescues the 10 Myr decline, but some
+rescue the 25 Myr decline, which earlier drafts had listed as fitting poorly; and the canonical rebuild's
+executable membership test found that E4-only tracheid records had entered the polysporangiophyte
+category (S5.1). The 5th–95th percentiles of independent allocations for constant intensity changed from
+0.073–0.765 to 0.056–0.715 when the random streams were keyed to each analysis cell; this is a new Monte
+Carlo sample, not a data change.
 
 **Review C wording** (`docs/audits/2026-11-05-review-c.md`, `docs/audits/2026-11-05-review-c-methods.md`).
 The previous draft called the B0–spore separation a demonstrated, observed lag; applied the $\rho f \approx 0.09$
@@ -628,7 +775,9 @@ an overstated examination count in an earlier draft.
 From the repository root:
 
 ```sh
-uv run --with numpy --with pandas --with scipy --with pytest python -m pytest models/f3/loop3 -q
+make check-public       # public tests; no copyrighted text or private outputs needed
+make reproduce-derived  # regenerate selected result tables from tracked inputs, byte for byte
+make rebuild-source     # restore the archived PBDB extract and rebuild inventories and results
 uv run manuscript/figures.py
 python3 manuscript/tables.py
 uv run tools/refs.py build
@@ -640,6 +789,12 @@ The body-record analysis is reproduced by `models/f3/loop3/build_reviewed.py`, `
 `simulation.py`, `suppression_sensitivity.py` and `figures_reviewed.py`. Hash receipts bind their inputs
 and outputs. Frozen Loop 1 and Loop 2 runs are retained without regeneration. Third-party deposits are
 fetched by `data/external/scripts/deposits_fetch.py` and verified against `MANIFEST.tsv`.
-`manuscript/claims.csv` links each main claim to its evidence and limits.
+`manuscript/claims.csv` links each main claim to its evidence and limits, and
+`manuscript/value-bindings.csv` binds each quoted number of the strictly checked claims to one row and
+field of its evidence. That check catches swapped or drifted values; it does not check what a sentence
+means. The frozen PBDB all-taxa collections extract (27,830 collections) is archived under CC0 at
+<https://doi.org/10.5281/zenodo.24028289>; `make fetch-pbdb` restores it and verifies its SHA-256.
+`make check-sources` re-runs the checks that need held copyrighted texts and reports an explicit skip
+where they are absent. `makedoc.lock.json` pins the document builder.
 
 ## References

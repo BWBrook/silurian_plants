@@ -1,7 +1,7 @@
 ---
 document: agent-facing paper
 study: F3, fossil maxima behind land-plant molecular clocks
-status: internal draft; review C closed numerically; GPT-6 Pro review being actioned (stage 1 done by Claude; stage 2 analyses with Codex)
+status: internal draft; review C closed numerically; GPT-6 Pro review actioned through stage 2 (analyses by Codex, integration by Claude); Codex's semantic review against estimands.md pending
 human_paper: manuscript/text/main.md (+ supplement.md, brief.md)
 claims_ledger: manuscript/claims.csv (single source for all renderings; checked by tools/claims.py)
 governing_docs: [docs/charter.md, docs/decisions.md, docs/plan-f3.md, docs/f3-shape.md, docs/loop3-design.md, docs/loop3-results.md]
@@ -20,7 +20,7 @@ artefact wins and this file is wrong: fix it in the same commit.
 
 1. This file, then `manuscript/estimands.md`, which says what each analysis bounds and which
    phrasings are not allowed, then `manuscript/claims.csv`, the single claims ledger behind every
-   rendering of this study (C01–C47). Each row gives the claim, its value, its status, its basis, its evidence
+   rendering of this study (C01–C52). Each row gives the claim, its value, its status, its basis, its evidence
    files, the commit at which that evidence was verified, the command that reproduces it, its limit
    and, if superseded, its replacement. Quote a claim only with its limit.
 2. `manuscript/text/main.md` for the argument; `supplement.md` for the machinery.
@@ -54,6 +54,7 @@ every sentence that must follow.
   Murzuq Basin (C01–C06, C24), constrains sustained local encounter, chiefly through [18]{.C45} later-Ordovician
   cuttings; only [10]{.C45} Darriwilian cuttings reach before 459.1 Ma (C45). It constrains the product of delivery and producer intensity, not either alone: ρ·f ≈ [0.091]{.C24} for the
   constant class H0c, [0.092–0.184]{.C24} for the exposure-weighted class H0 (C04 gives the ρ = 1 readouts).
+  Block-weighting cuttings by well and formation loosens the constant-class contour to [0.393]{.C51 .V103} (C51).
   QSIM-801 is exploratory only (C11–C14, C23); C12 is a minimum trilete:cryptospore ratio, not a share.
 - **M3 (431.2 Ma, crown Tracheophyta).** No absence design (C17). Positive-record endpoints for B2:
   [428.84]{.C27 .V013} / [428.88]{.C27 .V014} / [428.45]{.C27 .V015} / [431.63]{.C27 .V016} Ma / none within domain, for constant, PBDB-density,
@@ -61,9 +62,14 @@ every sentence that must follow.
   before [426.7]{.C32} Ma gives [448.10]{.C32} Ma; a hundredfold gives no bound (C32, retrospective). Region–stage and
   curated-only units give [432.38]{.C30} and [434.05]{.C30} Ma under constant intensity (C30), across 431.2 Ma. The anchor
   of 431.2 Ma omits the older *C. barrandei*, a shift of up to about [3]{.C47} Myr on Hooper et al.'s own rule (C47).
+  Shared boundary shifts move the constant bound within [427.31]{.C50 .V098}–[430.42]{.C50 .V099} Ma, younger than the maximum under
+  all three comparisons (C50). Starts at 444–452 Ma need earlier/later intensity [0.124]{.C48 .V100}–[0.085]{.C48 .V101} (primary units,
+  zero delay; C48). No admissible age allocation rescues the 10 Myr decline; some rescue the 25 Myr
+  decline when cutoff-straddling units are counted (C49). Removing Yea moves the bound [−1.67]{.C52 .V102} Myr (C52).
 - **Land-plant bodies (B0).** Canonical B0 includes the Katian Oman sporangial fragments as one unit,
   oldest possible age [452.8]{.C40 .V031} Ma: bounds [455.19]{.C40 .V032}–[456.62]{.C40 .V033} Ma under constant and effort-like histories and
-  [465.21]{.C40 .V034} Ma under decline25, and every history fits poorly (C40, C41). Excluding them (C28) gives
+  [465.21]{.C40 .V034} Ma under decline25, and every history fails the shape diagnostic under every admissible age
+  allocation (C40, C41, C49). Excluding them (C28) gives
   [434.51–437.16]{.C28} Ma. Neither is a lag, a delay or a date of body recoverability; 458.2 Ma is a fossil minimum.
   The canonical inventory and its exclusion variant now rebuild through `build_reviewed.py` and
   `analysis.py`, with explicit body-membership tests.
@@ -155,16 +161,25 @@ Do not reintroduce any of these. Each was caught in review; the record is in `su
     collection; say "recorded, identifiable occurrences".
 19. **Murzuq as a dated global absence before 459.1 Ma.** 18 of 28 older zeros are younger than 459.1 Ma,
     and a local absence is not a global one (C45).
-20. **The checker as semantic validation.** It matches numbers to claims, not sentences to estimands.
-    A swap of two values within one claim passes; check meaning against `estimands.md`.
+20. **The checker as semantic validation.** It matches numbers to claims and, for claims listed in
+    `value-bindings.csv`, each number to one evidence row and field. It does not match sentences to
+    estimands; check meaning against `estimands.md`.
+21. **"The 25 Myr decline fits poorly."** Only on drawn allocations. Some admissible allocations pass when
+    cutoff-straddling units are counted (C49). The 10 Myr decline fails under every admissible allocation.
+22. **Frontier contours as fitted rates.** They are retrospective compatibility contours with a
+    data-chosen step; delay and earlier intensity trade off and are not separately identified (C48).
+23. **"Murzuq limits intensity to a tenth."** Only with independent cuttings; block weighting gives about
+    four tenths (C51).
+24. **B1 from tracheids.** E4-only tracheid evidence does not admit a polysporangiophyte; B1 needs E3 or
+    nested E5. An earlier build broke this for three records.
 
 
-## Stage 2 results awaiting paper integration
+## Stage 2 results (integrated 7 November 2026)
 
-The numerical package is implemented; C48–C52 remain provisional for Claude's integration and
-semantic review against `estimands.md`. Canonical B0 and the E4-only B1 admission repair are
-already propagated into the older claims and generated tables; the full new analyses have not
-been written into the article or brief.
+C48–C52 are supported: Claude recomputed their key values independently (frontier closed form,
+witness KS distances, constant-history endpoints, and all Murzuq contours). They are written into
+the article (§3.2, §3.3, §4), supplement (S2.5, S5.1–S5.4, Tables S1b, S6b, S7b, S9b) and brief.
+Codex's semantic review of the integrated prose against `estimands.md` is the remaining step.
 
 - **Frontier (C48):** with the primary B2 units and zero assumed diagnostic delay, candidate ages
   [431.2]{.C48 .V035}, [444]{.C48 .V036}, [447]{.C48 .V037} and [452]{.C48 .V038} Ma have earlier/later recording contours
@@ -217,7 +232,8 @@ Assume no new measurements, logs or help from original authors or outside specia
   counted target and control grains. `manuscript/external_candidates.csv` lists the routes already
   tried.
 - **Q2 (pivotal ages).** Yea and Bathurst Island set the B2 tail; leave-one-region-out spans
-  [427.22–430.45]{.C30} Ma.
+  [427.22–430.45]{.C30} Ma. The interval search treats age supports as independent rectangles; encoding
+  section-level orderings for the pivotal records would narrow what it admits.
 - **Q4 (character-to-node links).** The tracheid status of the oldest polysporangiate bodies and the
   timing of crown-diagnostic body features. See `data/pilot/combinations.csv` and `supplement.md` §S6.
 - **Q9 (clock sensitivity).** Parked. Rerunning a clock with the M3 bound replaced by the conditional
