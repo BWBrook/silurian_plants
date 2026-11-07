@@ -15,6 +15,8 @@ CAT = {"B0": "Land-plant body, without Oman fragments", "B1": "Polysporangiophyt
 HIST = {"flat": "Constant", "pbdb_all": "PBDB collection density", "pbdb_plant_excluded": "PBDB density, plant matches removed",
         "decline25": "Decline into past, 25 Myr", "decline10": "Decline into past, 10 Myr",
         "pbdb_excluded_decline10": "Plant-excluded PBDB × 10 Myr decline"}
+SHORT = {"flat": "Const.", "pbdb_all": "PBDB", "pbdb_plant_excluded": "PBDB −plant", "decline25": "Decl. 25",
+         "decline10": "Decl. 10", "pbdb_excluded_decline10": "−plant × decl. 10"}
 VARIANT = {("collection", "primary"): "Individual collections/observations", ("locality_age", "primary"): "Locality–age proxies (primary)",
            ("locality", "primary"): "Whole localities", ("region_stage", "primary"): "Region–stage cells",
            ("locality_age", "wide_age"): "Wide-age records restored", ("locality_age", "unresolved_material"): "Uncertain material restored",
@@ -30,7 +32,7 @@ def read(name):
 
 
 def fmt(r, key="older_bound_ma"):
-    return f"{float(r[key]):.2f}" if r["status"] == "bounded" else "none ≤ 469.4"
+    return f"{float(r[key]):.2f}" if r["status"] == "bounded" else "none"
 
 
 def table(name, header, rows):
@@ -56,7 +58,7 @@ def main():
             any_r = next(iter(sel.values()))
             rows.append([reading, CAT[cat], f"{any_r['n_guaranteed']}/{any_r['n_possible']}",
                          f"{float(any_r['oldest_possible_ma']):.1f}"] + [fmt(sel[h]) for h in HIST])
-    table("primary", ["Reading", "Category", "Units", "Oldest possible"] + list(HIST.values()), rows)
+    table("primary", ["Reading", "Category", "Units", "Oldest"] + list(SHORT.values()), rows)
 
     rows = []
     for cut in ("Emsian", "Pragian", "Lochkovian", "Pridoli"):
@@ -64,7 +66,7 @@ def main():
                and r["cutoff"] == cut}
         rows.append([f"{cut} ({float(sel['flat']['cutoff_ma']):.2f})", sel["flat"]["n_guaranteed"]]
                     + [fmt(sel[h]) for h in HIST])
-    table("cutoffs", ["Younger cutoff (Ma)", "Units"] + list(HIST.values()), rows)
+    table("cutoffs", ["Cutoff (Ma)", "Units"] + list(SHORT.values()), rows)
 
     rows = []
     for (units, variant), label in VARIANT.items():
@@ -101,10 +103,10 @@ def main():
         if r["cutoff"] == "Emsian" and r["history"] == "flat":
             sel = {x["history"]: x for x in read("oman_sensitivity.csv") if x["cutoff"] == "Emsian"
                    and x["reading"] == r["reading"] and x["inventory"] == r["inventory"]}
-            label = "with Oman fragments" if r["inventory"] == "with_oman_fragments" else "without (frozen)"
+            label = "included" if r["inventory"] == "with_oman_fragments" else "excluded"
             rows.append([r["reading"], label, f"{r['n_guaranteed']}/{r['n_possible']}", f"{float(r['oldest_possible_ma']):.1f}"]
                         + [fmt(sel[h]) for h in HIST])
-    table("oman", ["Reading", "Oman fragments", "Units", "Oldest possible"] + list(HIST.values()), rows)
+    table("oman", ["Reading", "Oman", "Units", "Oldest"] + list(SHORT.values()), rows)
 
     rows = []
     for r in read("suppression_sensitivity.csv"):
@@ -135,11 +137,11 @@ def main():
         if r["category"] != "B2":
             continue
         cov = f"{float(r['coverage_including_no_claim']):.3f} ({float(r['coverage_wilson_low']):.3f}–{float(r['coverage_wilson_high']):.3f})"
-        rows.append([r["scenario"].replace("_", " "), HIST.get(r["true_history"], r["true_history"]),
-                     HIST.get(r["fitted_history"], r["fitted_history"]), r["age_mode"].replace("_", " "), r["duplicate_factor"],
-                     r["delay_adjustment_ma"], r["recovery_truth_ma"], f"{float(r['claim_frequency']):.3f}", cov])
-    table("simulation", ["Scenario", "True history", "Fitted history", "Ages", "Duplication", "Delay adj.",
-                                     "Endpoint (Ma)", "Claim frequency", "Coverage (Wilson 95%)"], rows)
+        true_delay = float(r["target_truth_ma"]) - float(r["recovery_truth_ma"])
+        rows.append([r["scenario"].replace("_", " "), SHORT.get(r["true_history"], r["true_history"]),
+                     SHORT.get(r["fitted_history"], r["fitted_history"]), r["age_mode"].replace("_", " "), r["duplicate_factor"],
+                     f"{true_delay:g}", r["delay_adjustment_ma"], f"{float(r['claim_frequency']):.3f}", cov])
+    table("simulation", ["Scenario", "True", "Fitted", "Ages", "Dup.", "True delay", "Adj.", "Claims", "Coverage (95% CI)"], rows)
 
     text = SUPPLEMENT.read_text()
     for name, block in BLOCKS.items():

@@ -294,6 +294,54 @@ references:
   page: 165–173
   publisher: Cambridge University Press (CUP)
   DOI: 10.1017/s0094837300016766
+- id: marshall2019UsingFossilRecord
+  citation-key: marshall2019UsingFossilRecord
+  type: article-journal
+  title: Using the Fossil Record to Evaluate Timetree Timescales
+  author:
+  - family: Marshall
+    given: Charles R.
+  issued:
+    date-parts:
+    - - 2019
+  container-title: Frontiers in Genetics
+  volume: '10'
+  article-number: '1049'
+  publisher: Frontiers Media SA
+  DOI: 10.3389/fgene.2019.01049
+- id: morris2018ReplyHedgesEt
+  citation-key: morris2018ReplyHedgesEt
+  type: article-journal
+  title: 'Reply to Hedges et al.: Accurate timetrees do indeed require accurate calibrations'
+  author:
+  - family: Morris
+    given: Jennifer L.
+  - family: Puttick
+    given: Mark N.
+  - family: Clark
+    given: James W.
+  - family: Edwards
+    given: Dianne
+  - family: Kenrick
+    given: Paul
+  - family: Pressel
+    given: Silvia
+  - family: Wellman
+    given: Charles H.
+  - family: Yang
+    given: Ziheng
+  - family: Schneider
+    given: Harald
+  - family: Donoghue
+    given: Philip C. J.
+  issued:
+    date-parts:
+    - - 2018
+  container-title: Proceedings of the National Academy of Sciences
+  volume: '115'
+  issue: '41'
+  publisher: National Academy of Sciences
+  DOI: 10.1073/pnas.1812816115
 - id: morris2018TimescaleEarlyLand
   citation-key: morris2018TimescaleEarlyLand
   type: article-journal

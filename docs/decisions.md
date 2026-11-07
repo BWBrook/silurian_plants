@@ -3,6 +3,33 @@
 Dated record of decisions that shape the programme. Newest first. Say who decided, and quote
 Barry exactly (with source) or label a paraphrase.
 
+## 2026-11-07: GPT-6 Pro review actioned, stage 1; Oman-inclusive B0 canonical (Barry; Claude)
+
+Barry, in Claude chat on 7 November: "I commissioned a detailed review from GPT-6 Pro that should also be
+incorporated and actioned, in collaboration with Codex." Claude triaged all ten action areas
+(`audits/2026-11-07-gpt6pro-triage.md`), accepted each after checking it against sources or frozen
+outputs, and split the work: Claude the source accounts, cross-product rewrite and rendering; Codex the
+inventory rebuild, new diagnostics and public reproduction.
+
+- **M1** (Claude): the paper now states the published preservation-control argument and limits its
+  claim to the absence of a quantifiable frame (`audits/2026-11-07-m1-rationale.md`).
+- **B0** (Claude, accepting the review and Codex's membership audit): the Oman-inclusive inventory is
+  canonical, the former inventory an exclusion sensitivity, and no spore-to-body lag or delay is stated in
+  either direction. This supersedes the 2026-11-05 choice to report Oman only as a sensitivity: the
+  omission was an assembly error against a declared definition, not a choice about the category.
+- **Allowed claims** (Claude, for Codex's agreement): `manuscript/estimands.md` states what each analysis
+  bounds and the phrasings not allowed; both agents change it before changing prose or code.
+- **Recording rate:** the body-record history is the rate of recorded, identifiable occurrences, not
+  fossilisation; the paper no longer ranks clocks.
+- Codex's review C closure wording items are integrated, and C24, C28, C31, C33, C40 and C41 are promoted to
+  supported on Codex's independent check (`audits/2026-11-07-review-c-closure.md`).
+
+**Structural review.** The two reviews converged on one weakness: corrections made locally did not
+propagate to every rendering, and the numerical checker cannot see a changed noun. `estimands.md` is the
+structural response: a single statement of allowed claims, upstream of the ledger. The exposed
+assumption was that our account of a published argument (M1) was complete; source accounts of the
+calibrations need the same primary-source check as numbers. Loop 3 stays open for stage 2 analyses.
+
 ## 2026-11-07: Review C closure check and evidence-reference repair (Codex)
 
 Barry relayed Claude's response and instructed that closing messages use the new `Next:`

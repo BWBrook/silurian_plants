@@ -17,22 +17,23 @@
     "models/f3/loop3/out/primary_unit_membership.csv": "c6daa079dec8b201e14dc0cebf84df959efb935d9dcd99b3fb7d441a8fc4bc6f",
     "models/f3/loop3/out/reviewed_bounds.csv": "10c694db71af4cd94cdd7c84c2bd27e999dea7dd7ef511bb6f9ac181d6131f89",
     "models/f3/loop3/out/suppression_sensitivity.csv": "f7a21f6e4dda5c7e6d0f0b6fd29fb440ae5968cde1aeca187e9e2ceb7c51e0df",
-    "manuscript/mapping.csv": "f96f509c53991af512e2d8d51c3c14a13e9a73c6ff2c6edf4b3c58e2cefa35a3",
-    "manuscript/figures.py": "8f403eafd37dc3c89a9fdc18d982cbaa92597c43682f73f58c24bdf80cd28a52"
+    "models/f3/loop3/out/oman_sensitivity.csv": "debd46ae749dbf0e95189945bfa6f8d5116de3091630370485a6ff26a481cd39",
+    "manuscript/mapping.csv": "722bcafc5ba30cd08b30861a33267d7a0f21cb2eb58fc5ac4a4ee03205a9bfb9",
+    "manuscript/figures.py": "9effe19ab5ca6cef11d892aa3f0309e24a6ce1f51e77f00ac07407a0663b529f"
   },
   "outputs": {
-    "manuscript/figures/fig1_problem.png": "9707742f918e9358d0e6b3f64bdaf137f6b3f3535b93859904106d3bacd4adef",
-    "manuscript/figures/fig2_mapping.png": "31e2c8fef2595e5793ad4f2b351177acef4cb80a29091c5ba7892e42051f76a5",
+    "manuscript/figures/fig1_problem.png": "01e38a282486595473326896cdfda0477640f51b5133508862fac0523e05485f",
+    "manuscript/figures/fig2_mapping.png": "ee22b6abb225350f58dc8eb68c248ac446ac57829b2d5796fd163bd105365232",
     "manuscript/figures/fig3_evidence.png": "8c87673f133dd9bf7f56836cd8ab57097d8f1d4b404759b4190ce1a8d8d4a6fc",
-    "manuscript/figures/fig4_bodies.png": "c9c9e5d46cb4c4dc5ed6925c27a00fb664374d58dda56bef4d3706f07c8748eb",
-    "manuscript/figures/figB1_brief.png": "48477ef988ea84a791d429dbefebff92314d1320365ef0a774a73697053bb900",
+    "manuscript/figures/fig4_bodies.png": "67547642a7998604fdf7d8fb2c47136e1c136f58376eb96284fa6600a1392809",
+    "manuscript/figures/figB1_brief.png": "bb08d2134a6624d37f6ae239212f3c3411421b929c9c2b764de34b795c09ba0e",
     "manuscript/figures/figS2_qsim.png": "ba96267bf6a15379e7cb6171367a478a1e770b6d40ebef1d1b6f0ab467d5389b",
-    "manuscript/figures/fig1_problem.pdf": "64128da5ae118758433667391ea0f8a4837a7a12896b8ad78fb30570c9f9c0a6",
-    "manuscript/figures/fig2_mapping.pdf": "afac63933d745d61c852356322346f71fafcd5add9a1c2d58f47df9a22717d84",
-    "manuscript/figures/fig3_evidence.pdf": "252040190d0d3f10b06f39f4b44c98a382e35e2eb841d332f95887d669fd206f",
-    "manuscript/figures/fig4_bodies.pdf": "3b7f5312d8f889ed6f149ee67ca099c90da66cf6fc430df5cd42db9e110e6576",
-    "manuscript/figures/figB1_brief.pdf": "d7a29c330430d7543e0ebe552fd8ad191fdd72ebd8c008eea05a066385e90f0f",
-    "manuscript/figures/figS2_qsim.pdf": "b3a7c6280a0151e42e49bc5621663172c12f4ed70b923d0a0e94bb6e66d49da2"
+    "manuscript/figures/fig1_problem.pdf": "1910170f0f620663e747fda1dc803f72d2bf5dcf7b7810e3a5a3c10742da6084",
+    "manuscript/figures/fig2_mapping.pdf": "a9d2c6fcdd41d48003375e71c741192d9c2cf2a381b59145bbe25d4e31b8a0c1",
+    "manuscript/figures/fig3_evidence.pdf": "4ec13f0d8ac6a0bf5a9762e5ddcf9ba26f26a74e7c604febba39d3facf396ca0",
+    "manuscript/figures/fig4_bodies.pdf": "02038c39eb95726fb2c095a8ab38474dbd38062ef55378615268e53d193873f6",
+    "manuscript/figures/figB1_brief.pdf": "412c52032839b8a587da44b78cb554459cc17b632fc0453eeb5ca1d5d2be3429",
+    "manuscript/figures/figS2_qsim.pdf": "1f5aa101b8ed583be411128857b41196b05b7b8ae8fb629768f9a1590eb4ce23"
   },
   "status": "manuscript figures drawn from frozen or reviewed output tables"
 }

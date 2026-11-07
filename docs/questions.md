@@ -220,6 +220,22 @@ erasing their history; no empirical exclusion is released or question answered.
 | Q9 | Does the Hooper et al. (2026) recalibration survive alternative maxima and placements of the eophytes? | phylogeny (clocks) | parked | the share of the 55 Myr shift owed to each calibration choice | alignment, calibration tables, prior/posterior outputs are held (`data/external/deposits/` and git-ignored `data/external/local/deposits/`); their version correspondence is not yet established. Hooper deposited input specifies 1% tails while the article describes 2.5% (Codex, 2026-10-28; review F3-R1). The bounded check reproduces the rounded node-184 summary but does not link the output to the control file. | Bounded check complete: all 5,001 saved rows and independently clade-matched output-tree HPDs recorded in `data/q9/hooper2026-provenance/` and `docs/audits/2026-10-29-q9-provenance-check.md`. Preliminary double burn-in deletion corrected; Board 2490–2494 is superseded by the final handoff. A controlled comparison of the deposited 1% and described 2.5% specifications is the next proposed diagnostic; it can quantify sensitivity but cannot prove historical provenance. No full clock reanalysis run |
 | Q10 | How much did early vegetation weather, bury carbon and raise O2? | simulation | parked | which parameters dominate, with each input marked as observed or assumed (primer §3, §8 questions 1 and 6) | productivity, P release and fire-threshold inputs; charcoal record | F5, later |
 
+### GPT-6 Pro review, stage 1, 2026-11-07 (Q1, Q2, Q5)
+
+Claude (`audits/2026-11-07-gpt6pro-triage.md`, `audits/2026-11-07-m1-rationale.md`):
+- **Q5:** our M1 account failed against its source. Morris et al. (2018, main text and reply) argue a
+  real absence from older marine-palynomorph-only sequences as a preservation control; we had called
+  M1 "a judgement about affinity" and "untestable as an absence". Corrected; C46.
+- **Q1:** M1's open question is now which links of the control argument (delivery, catchment coverage,
+  search sensitivity, spore production) could be quantified from published sequences. The Murzuq test
+  bears mainly on later-Ordovician sustained encounter (18 of 28 older zeros post-date 459.1 Ma, C45)
+  and on one basin's catchment. Canonical B0 now includes the Oman fragments.
+- **Q2:** the M3 anchor omits the older *C. barrandei* (C47); unit treatment moves the B2 bound across
+  431.2 Ma as much as the recording history does.
+- Open for Codex (stage 2): interval-aware shape assessment, age–intensity frontier, shared
+  timescale-boundary scenarios, Murzuq block dependence and time-by-well display, canonical B0 rebuild,
+  public raw-input rebuild and value-level claim selectors.
+
 ### Review C adjudication and the Oman fragments, 2026-11-05 (Q1, Q2, Q5)
 
 Claude (`audits/2026-11-05-review-c-adjudication.md`), after Codex's review C:

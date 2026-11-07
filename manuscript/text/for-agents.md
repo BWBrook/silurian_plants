@@ -1,12 +1,12 @@
 ---
 document: agent-facing paper
 study: F3, fossil maxima behind land-plant molecular clocks
-status: internal draft; Loop 3 sprint C delivered, awaiting Codex review C and Claude's loop close
+status: internal draft; review C closed numerically; GPT-6 Pro review being actioned (stage 1 done by Claude; stage 2 analyses with Codex)
 human_paper: manuscript/text/main.md (+ supplement.md, brief.md)
 claims_ledger: manuscript/claims.csv (single source for all renderings; checked by tools/claims.py)
 governing_docs: [docs/charter.md, docs/decisions.md, docs/plan-f3.md, docs/f3-shape.md, docs/loop3-design.md, docs/loop3-results.md]
 authority: Barry W. Brook decides public release, submission and any correspondence outside Claude and Codex
-updated: 2026-11-02
+updated: 2026-11-07
 ---
 
 # F3 for agents: what this study established, how to verify it, and how not to break it
@@ -18,8 +18,9 @@ artefact wins and this file is wrong: fix it in the same commit.
 
 ## 1. Read order and trust
 
-1. This file, then `manuscript/claims.csv`, the single claims ledger behind every rendering of this
-   study (39 claims, C01–C39). Each row gives the claim, its value, its status, its basis, its evidence
+1. This file, then `manuscript/estimands.md`, which says what each analysis bounds and which
+   phrasings are not allowed, then `manuscript/claims.csv`, the single claims ledger behind every
+   rendering of this study (C01–C47). Each row gives the claim, its value, its status, its basis, its evidence
    files, the commit at which that evidence was verified, the command that reproduces it, its limit
    and, if superseded, its replacement. Quote a claim only with its limit.
 2. `manuscript/text/main.md` for the argument; `supplement.md` for the machinery.
@@ -41,28 +42,33 @@ every sentence that must follow.
 
 ## 2. The answer, as claims
 
-- **M1 (515.5 Ma, crown Embryophyta).** Untestable from sampled absence. No admitted older-zero design
-  (C16). The Stage 4 material is younger than the maximum ([514.5–506.5]{.C16} Ma) and is not accepted as
+- **M1 (515.5 Ma, crown Embryophyta).** Placed below the oldest possible cryptospores (base of the
+  *Olenellus* Biozone, [515.5]{.C46} Ma), with a qualitative preservation-control absence argument from older
+  marine-palynomorph-only sequences (C46). No assessed source supplies an enumerated frame to quantify it
+  (C16). The Stage 4 material ([514.5–506.5]{.C16} Ma) lies below the maximum by design and is not accepted as
   embryophyte by the three assessed sources (C15).
 - **M2 (459.1 Ma, crown Embryophyta).** The value is the GTS2012 Sandbian base plus its uncertainty,
   [458.4 + 0.7 = 459.1]{.C42} Ma, keyed to a possible trilete at Borenshult-1 48.2 m; definite triletes start at
   43.1 m, also Sandbian, so the value does not depend on the doubtful specimen (C42, C43). Borenshult
-  cannot test M2 under any reading (C44). One qualified comparison, Murzuq Basin (C01–C06, C24),
-  constrains the product of delivery and producer intensity, not either alone: ρ·f ≈ [0.091]{.C24} for the
+  cannot exclude reference-level intensity under the examined screen (C44). One qualified comparison,
+  Murzuq Basin (C01–C06, C24), constrains sustained local encounter, chiefly through [18]{.C45} later-Ordovician
+  cuttings; only [10]{.C45} Darriwilian cuttings reach before 459.1 Ma (C45). It constrains the product of delivery and producer intensity, not either alone: ρ·f ≈ [0.091]{.C24} for the
   constant class H0c, [0.092–0.184]{.C24} for the exposure-weighted class H0 (C04 gives the ρ = 1 readouts).
   QSIM-801 is exploratory only (C11–C14, C23); C12 is a minimum trilete:cryptospore ratio, not a share.
 - **M3 (431.2 Ma, crown Tracheophyta).** No absence design (C17). Positive-record endpoints for B2:
   [428.84]{.C27} / [428.88]{.C27} / [428.45]{.C27} / [431.63]{.C27} Ma / none within domain, for constant, PBDB-density,
   plant-excluded-density, 25 Myr decline and 10 Myr decline histories (C27). Recovery reduced tenfold
-  before [426.7]{.C32} Ma gives [448.10]{.C32} Ma; a hundredfold gives no bound (C32, retrospective).
-- **Land-plant check.** For the B0 inventory as built (no palynological fragments), bounds of
-  [434.51–437.16]{.C28} Ma sit [21–24]{.C28} Myr after cryptospores are certainly present at [458.2]{.C28} Ma (C28). Adding the
-  Katian Oman sporangial fragments, which the declared B0 admits, gives [455.19–456.62]{.C40} Ma under the
-  bounded effort-like histories and [465.21]{.C40} Ma under decline25 (C40), and every history then fits poorly
-  (C41). The separation is conditional on inventory and history. It is neither an observed lag nor a lag
-  to transfer to B2.
-- **Synthesis.** An older, sparsely recorded flora is allowed, not required. The record cannot test
-  recovery before its oldest find.
+  before [426.7]{.C32} Ma gives [448.10]{.C32} Ma; a hundredfold gives no bound (C32, retrospective). Region–stage and
+  curated-only units give [432.07]{.C30} and [434.05]{.C30} Ma under constant intensity (C30), across 431.2 Ma. The anchor
+  of 431.2 Ma omits the older *C. barrandei*, a shift of up to about [3]{.C47} Myr on Hooper et al.'s own rule (C47).
+- **Land-plant bodies (B0).** Canonical B0 includes the Katian Oman sporangial fragments as one unit,
+  oldest possible age [452.8]{.C40} Ma: bounds [455.19–456.62]{.C40} Ma under constant and effort-like histories and
+  [465.21]{.C40} Ma under decline25, and every history fits poorly (C40, C41). Excluding them (C28) gives
+  [434.51–437.16]{.C28} Ma. Neither is a lag, a delay or a date of body recoverability; 458.2 Ma is a fossil minimum.
+  The canonical rebuild of `horizons_reviewed.csv` is pending (Codex); until then C40 comes from
+  `oman_sensitivity.py`.
+- **Synthesis.** An older, sparsely recorded flora is allowed, not required. The record cannot test the
+  rate of recorded, identifiable occurrences before its oldest find, and no result ranks the clocks.
 
 ## 3. Vocabulary that the files use
 
@@ -121,8 +127,8 @@ Do not reintroduce any of these. Each was caught in review; the record is in `su
 4. **Age-allocation quantiles as confidence bounds** (Table S8). They are descriptive.
 5. **The suppression grid as a nominal 95% result, a fitted reduction or a threshold.** The tenfold case
    is one illustrative scenario, chosen after seeing the shape diagnostics.
-6. **The B0 separation as an observed lag, or as a B2 lag.** It is a conditional separation that the Oman
-   fragments nearly remove (C28, C40). The record estimates no delay for B2; C33's 15–23 Myr are minimum
+6. **Any spore-to-body lag or delay, in either direction.** "About 20 Myr after" and "almost at once" are
+   both wrong: the bounds are model-conditioned endpoints and 458.2 Ma is a fossil minimum (C28, C40). The record estimates no delay for B2; C33's 15–23 Myr are minimum
    assumed offsets at the endpoint bound.
 7. **Agreement between Claude and Codex as validation.** The two systems review each other; neither is
    independent ground truth.
@@ -143,6 +149,14 @@ Do not reintroduce any of these. Each was caught in review; the record is in `su
     select nothing.
 16. **"M2 rests on a doubtful specimen."** The value is a stage base; the definite 43.1 m triletes give
     the same number (C42).
+17. **"M1 rests only on affinity" or "M1 is untestable as an absence."** Its authors give a qualitative
+    preservation-control argument; what is missing is a quantifiable frame (C16, C46).
+18. **"Fossilisation" for w(t).** The rate combines abundance, range, diagnosability, preservation and
+    collection; say "recorded, identifiable occurrences".
+19. **Murzuq as a dated global absence before 459.1 Ma.** 18 of 28 older zeros are younger than 459.1 Ma,
+    and a local absence is not a global one (C45).
+20. **The checker as semantic validation.** It matches numbers to claims, not sentences to estimands.
+    A swap of two values within one claim passes; check meaning against `estimands.md`.
 
 
 ## 6. Checks before and after any change

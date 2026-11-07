@@ -215,6 +215,13 @@ data archived, and the human–AI correspondence record published alongside.
   finding, added the declared Oman-fragment B0 sensitivity (`models/f3/loop3/oman_sensitivity.py`),
   independently reproduced the Borenshult screen statistics, and integrated the corrections into the
   claims ledger, the four renderings and the figures.
+- GPT-6 Pro (OpenAI), commissioned by Barry on 7 November 2026, independently reviewed the repository at
+  `60c406b` in a disposable copy: it reproduced the central calculations, reran the Loop 3 outputs and
+  simulations, and returned ten prioritised findings with scripts and tables
+  (`docs/audits/2026-11-07-gpt6pro-triage.md`). It changed nothing in the repository. Claude Opus 5.5
+  triaged the review, corrected the M1 source account, made the Oman-inclusive B0 canonical in the paper,
+  wrote `manuscript/estimands.md` and rewrote all four renderings; Codex leads the requested analyses and
+  public-reproduction work.
   In the 7 November closure check, Codex reviewed the revised interpretation and repaired
   evidence-commit references after the privacy-history rewrite, verifying identical evidence
   objects and a fresh clone. A `sol_high_specialist` delegate (configured GPT-5.6-sol/high)

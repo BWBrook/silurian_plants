@@ -122,8 +122,8 @@ def fig_problem(path):
     oman = max(float(r["oldest_possible_ma"]) for r in read(OMAN) if r["inventory"] == "with_oman_fragments")
     rows = [("Land-plant cryptospores (compilation)", crypt), ("Trilete spores (compilation)", trilete),
             ("Trilete spores, Borenshult-1 definite (describing authors)", (stage_base("Sandbian"), BENTONITE_MA)),
-            ("Land-plant bodies (inventory as built)", body_first("B0")),
-            ("Land-plant bodies, with Oman sporangial fragments", (oman, stage_base("Hirnantian"))),
+            ("Land-plant bodies, including Oman sporangial fragments", (oman, stage_base("Hirnantian"))),
+            ("Land-plant bodies, excluding Oman fragments", body_first("B0")),
             ("Crown vascular-plant bodies", body_first("B2"))]
     s4 = (stage_base("Stage 4"), stage_base("Wuliuan"))
     top = len(rows)
@@ -210,29 +210,34 @@ def fig_evidence(path):
 
 def fig_bodies(path):
     """Older bounds on the start of the recoverable body record under each recovery history."""
-    hist = [("flat", "Constant recovery", "o", "#1b4f72"), ("pbdb_all", "Collection density (PBDB)", "s", "#1b4f72"),
+    hist = [("flat", "Constant rate", "o", "#1b4f72"), ("pbdb_all", "Collection density (PBDB)", "s", "#1b4f72"),
             ("pbdb_plant_excluded", "Collection density, plant collections removed", "D", "#1b4f72"),
-            ("decline25", "Recovery declining into the past (25 Myr)", "o", "#b5651d"),
-            ("decline10", "Recovery declining into the past (10 Myr)", "o", "#b5651d")]
-    retro = [(0.1, "Pre-Ludlow recovery reduced tenfold"), (0.01, "Pre-Ludlow recovery reduced a hundredfold")]
-    cats = [("B0", "Land-plant body, inventory as built (×: with Oman fragments)"), ("B1", "Multi-sporangiate (polysporangiophyte) body"),
+            ("decline25", "Rate declining into the past (25 Myr)", "o", "#b5651d"),
+            ("decline10", "Rate declining into the past (10 Myr)", "o", "#b5651d")]
+    retro = [(0.1, "Pre-Ludlow rate reduced tenfold"), (0.01, "Pre-Ludlow rate reduced a hundredfold")]
+    cats = [("B0", "Land-plant body, including Oman fragments (×: excluding them)"), ("B1", "Multi-sporangiate (polysporangiophyte) body"),
             ("B2", "Crown vascular-plant body")]
     fig, axes = plt.subplots(3, 1, figsize=(9.2, 8.4), sharex=True)
     crypt = spore_first("cryptospore")
     for ax, (cat, title) in zip(axes, cats):
         rows = []
+        om = {r["history"]: r for r in read(OMAN) if r["reading"] == "main" and r["cutoff"] == "Emsian"
+              and r["inventory"] == "with_oman_fragments"}
         for key, lab, mk, col in hist:
             b, oldest, r = primary_bound(cat, key)
-            rows.append((lab, b, mk, col, False))
-        for mult, lab in retro:
-            rows.append((lab + " †", suppressed(cat, mult), "^", "#7d3c98", True))
+            if cat == "B0":
+                excluded = b
+                b = float(om[key]["older_bound_ma"]) if om[key]["status"] == "bounded" else None
+            rows.append((lab, b, mk, col, False, excluded if cat == "B0" else None))
+        if cat != "B0":
+            for mult, lab in retro:
+                rows.append((lab + " †", suppressed(cat, mult), "^", "#7d3c98", True, None))
         n = int(r["n_guaranteed"])
         if cat == "B0":
-            om = {r["history"]: r for r in read(OMAN) if r["reading"] == "main" and r["cutoff"] == "Emsian"
-                  and r["inventory"] == "with_oman_fragments"}
-            for i, (key, *_rest) in enumerate(hist):
-                if om[key]["status"] == "bounded":
-                    ax.plot(float(om[key]["older_bound_ma"]), len(rows) - 1 - i, "x", color="0.35", ms=6, mew=1.3)
+            oldest, n = float(om["flat"]["oldest_possible_ma"]), int(om["flat"]["n_guaranteed"])
+            for i, row in enumerate(rows):
+                if row[5] is not None:
+                    ax.plot(row[5], len(rows) - 1 - i, "x", color="0.35", ms=6, mew=1.3)
             ax.axvspan(crypt[1], crypt[0], color="#5b7fa6", alpha=0.18, lw=0)
             ax.axvline(crypt[1], color="#5b7fa6", lw=1.0)
             ax.text(crypt[1] + 0.4, len(rows) + 0.15, "land-plant cryptospores certain by 458.2 Ma", fontsize=7,
@@ -245,7 +250,7 @@ def fig_bodies(path):
             ax.axvline(431.2, color="#a32020", lw=1.0, ls="--")
         ax.axvspan(oldest, 393.47, color="0.85", alpha=0.6, lw=0)
         ax.text(oldest - 0.3, len(rows) - 0.4, "observed\nrecord", fontsize=7, color="0.35", va="top")
-        for i, (lab, b, mk, col, is_retro) in enumerate(rows):
+        for i, (lab, b, mk, col, is_retro, _) in enumerate(rows):
             yy = len(rows) - 1 - i
             if b is None:
                 ax.annotate("", xy=(472, yy), xytext=(oldest + 3, yy),
@@ -320,7 +325,8 @@ def fig_brief(path):
                [(n.replace(" et al.", ""), o, y, CLOCK_COLOURS[n], None) for n, o, y in CLOCKS["tracheophyta"]]),
               ("Fossils (pale: possibly present; dark: certainly present)",
                [("Land-plant spores", *spore_first("cryptospore")[::-1], "#5b7fa6", None),
-                ("Land-plant bodies", *body_first("B0")[::-1], "#5b7fa6", None),
+                ("Spore-capsule fragments (Oman)", stage_base("Hirnantian"), max(float(r["oldest_possible_ma"]) for r in read(OMAN)), "#5b7fa6", None),
+                ("Branched plant bodies", *body_first("B1")[::-1], "#5b7fa6", None),
                 ("Vascular-plant bodies", *body_first("B2")[::-1], "#5b7fa6", None)])]
     y, ticks, labels = 0, [], []
     for title, rows in reversed(groups):
@@ -337,11 +343,11 @@ def fig_brief(path):
     steady, _, _ = primary_bound("B2", "flat")
     sparse = suppressed("B2", 0.1)
     ax.annotate("", xy=(steady, -0.45), xytext=(steady, -1.2), arrowprops={"arrowstyle": "->", "color": "#1f6f4a"})
-    ax.text(steady - 1.5, -1.25, f"{steady:.0f} Ma: earliest start of the\nvascular-plant body record\nif fossilisation was steady",
+    ax.text(steady - 1.5, -1.25, f"{steady:.0f} Ma: earliest start of the\nvascular-plant body record\nif finds accrued at a steady rate",
             ha="left", va="top", fontsize=7, color="#1f6f4a")
-    ax.annotate("", xy=(sparse, -0.45), xytext=(sparse, -1.2), arrowprops={"arrowstyle": "->", "color": "#1f6f4a"})
-    ax.text(sparse + 1.5, -1.25, f"{sparse:.0f} Ma: earliest start if\nearly plants fossilised\nten times less well",
-            ha="right", va="top", fontsize=7, color="#1f6f4a")
+    ax.annotate("", xy=(sparse, -0.45), xytext=(sparse, -1.2), arrowprops={"arrowstyle": "->", "color": "#7d3c98", "ls": "--"})
+    ax.text(sparse + 1.5, -1.25, f"{sparse:.0f} Ma: one assumed case,\nten times fewer finds\nbefore about 427 Ma",
+            ha="right", va="top", fontsize=7, color="#7d3c98")
     ax.set_yticks(ticks, labels, fontsize=7.4)
     ax.tick_params(axis="y", length=0)
     ax.set_xlim(527, 400)
@@ -362,7 +368,7 @@ def main():
     fig_bodies(OUT / "fig4_bodies")
     fig_qsim(OUT / "figS2_qsim")
     fig_brief(OUT / "figB1_brief")
-    inputs = [QSIM, TIMESCALE, SPORES, MEMBERS, BOUNDS, SUPPRESS, MAPPING,
+    inputs = [QSIM, TIMESCALE, SPORES, MEMBERS, BOUNDS, SUPPRESS, OMAN, MAPPING,
               ROOT / "models/f3/loop2/contamination.py", Path(__file__)]
     bound = contamination._input_hashes()
     bound.update({str(p.relative_to(ROOT)): hashlib.sha256(p.read_bytes()).hexdigest() for p in inputs})
