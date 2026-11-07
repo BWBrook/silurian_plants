@@ -1,0 +1,17 @@
+base_category,analysis_set,partial_inclusion_mask,unit_id,recorded_min_ma,recorded_max_ma,included_at_or_above_cutoff,omitted_age_implication
+B2,B2_guaranteed,00,"RU|shanda horizon|54.3,85.9|387.95|399.5",387.95,399.5,False,allocated below cutoff
+B2,B2_guaranteed,00,"US|trout valley|46.1,-68.6|387.95|399.5",387.95,399.5,False,allocated below cutoff
+B2,B2_partial_01,01,"RU|shanda horizon|54.3,85.9|387.95|399.5",387.95,399.5,True,allocated at or above cutoff
+B2,B2_partial_01,01,"US|trout valley|46.1,-68.6|387.95|399.5",387.95,399.5,False,allocated below cutoff
+B2,B2_partial_10,10,"RU|shanda horizon|54.3,85.9|387.95|399.5",387.95,399.5,False,allocated below cutoff
+B2,B2_partial_10,10,"US|trout valley|46.1,-68.6|387.95|399.5",387.95,399.5,True,allocated at or above cutoff
+B2,B2_possible,11,"RU|shanda horizon|54.3,85.9|387.95|399.5",387.95,399.5,True,allocated at or above cutoff
+B2,B2_possible,11,"US|trout valley|46.1,-68.6|387.95|399.5",387.95,399.5,True,allocated at or above cutoff
+B0,B0_guaranteed,00,"RU|shanda horizon|54.3,85.9|387.95|399.5",387.95,399.5,False,allocated below cutoff
+B0,B0_guaranteed,00,"US|trout valley|46.1,-68.6|387.95|399.5",387.95,399.5,False,allocated below cutoff
+B0,B0_partial_01,01,"RU|shanda horizon|54.3,85.9|387.95|399.5",387.95,399.5,True,allocated at or above cutoff
+B0,B0_partial_01,01,"US|trout valley|46.1,-68.6|387.95|399.5",387.95,399.5,False,allocated below cutoff
+B0,B0_partial_10,10,"RU|shanda horizon|54.3,85.9|387.95|399.5",387.95,399.5,False,allocated below cutoff
+B0,B0_partial_10,10,"US|trout valley|46.1,-68.6|387.95|399.5",387.95,399.5,True,allocated at or above cutoff
+B0,B0_canonical,11,"RU|shanda horizon|54.3,85.9|387.95|399.5",387.95,399.5,True,allocated at or above cutoff
+B0,B0_canonical,11,"US|trout valley|46.1,-68.6|387.95|399.5",387.95,399.5,True,allocated at or above cutoff

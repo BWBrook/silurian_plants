@@ -25,7 +25,7 @@ spore-frame routes examined. `package_manifest.csv` inventories the candidate fi
 ## Build
 
 The paper builds with [makedoc](https://github.com/BWBrook/makedoc), expected at `~/work/makedoc`.
-Profiles are in `settings/build.yaml`; `uv` supplies a Python with PyYAML. From the repository root:
+Profiles are in `settings/build.yaml`; `makedoc.lock.json` pins the build tool revision, checked before builds. TeX/Pandoc remain system dependencies; `uv` supplies a Python with PyYAML. From the repository root:
 
 ```sh
 uv run --with numpy --with pandas --with scipy --with pytest python -m pytest models/f3/loop3 -q
@@ -48,3 +48,26 @@ Generated content is not edited by hand: the table blocks in `supplement.md`, `f
 `models/f3/loop3/` (see its README); frozen Loop 1 and Loop 2 outputs and the R pilot are reused
 without regeneration. Copyrighted sources stay in the ignored `library/closed/`; third-party
 deposits are fetched by script and hash-checked.
+
+## Public reproduction and source access
+
+From the repository root, `make reproduce-derived` regenerates the core Loop 3 bounds, age/shape
+diagnostics, simulations, suppression/frontier tables, Murzuq sensitivities and interval witnesses in a temporary copy made only from tracked files,
+then compares CSV bytes. `make rebuild-source` first restores the exact archived CC0 PBDB input
+from <https://doi.org/10.5281/zenodo.24028289>, checks its compressed and raw SHA-256, rebuilds
+the inventory/effort tables and performs the downstream and shared-timescale comparisons. The derived-only target explicitly skips
+raw-collection timescale recomputation; the source target exercises it. Neither substitutes a
+live database query. `make check-public` runs the public Loop 3 and case-binding regression tests.
+
+`make check-sources` is separate: it reports an explicit skip when the copyrighted thesis is
+unavailable and otherwise checks the held thesis-linked observation extraction. It does not
+authenticate all palaeontological identifications or rerun frozen qualification. The printed receipts
+state the scope; the R pilot is reused rather than rebuilt.
+
+`dependency-manifest.csv` traverses declared ledger evidence, receipt input/output paths and local
+Python imports from the candidate products. Public bulk inputs have immutable retrieval locations;
+private sources are recorded without copying them. This is a declared dependency closure, not a
+claim that static inspection discovers every possible runtime dependency. Numerical citation
+metadata can use `value-bindings.csv` to bind a claim span to a specific table selector and field;
+C27, C40 and the new C48–C52 result spans are migrated; C27 rejects the reviewer's cross-case value swap. Further
+claim migration belongs with Claude's final ledger/prose integration.

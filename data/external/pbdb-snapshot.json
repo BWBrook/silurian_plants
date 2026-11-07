@@ -1,0 +1,13 @@
+{
+  "path": "data/occurrences/raw/pbdb_collections_darriwilian_emsian_2026-10-28.csv",
+  "url": "https://zenodo.org/records/24028289/files/pbdb_collections_darriwilian_emsian_2026-10-28.csv.gz?download=1",
+  "doi": "10.5281/zenodo.24028289",
+  "bytes": 12983563,
+  "sha256": "e0d1f772c1617c218948d1d2605661e93edcfe75e0fe8ce92afee91d3350a8b8",
+  "gzip_sha256": "54b2aa032ccf82e70356a74b9c26379345a0e8930fee16d9437b54d5f1c39781",
+  "rows": 27830,
+  "license": "CC0-1.0",
+  "query": "https://paleobiodb.org/data1.2/colls/list.csv?interval=Darriwilian,Emsian&show=loc,strat,paleoloc,env,stratext&limit=all",
+  "retrieved": "2026-10-28",
+  "archive_scope": "Exact frozen input to the all-taxa collection-density proxy for silurian_plants. Archival snapshot only; not a paper release or a claim of completeness. PBDB numerical ages retain their source scale."
+}

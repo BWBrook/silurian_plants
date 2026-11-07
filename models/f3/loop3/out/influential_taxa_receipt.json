@@ -1,0 +1,53 @@
+{
+  "unit_treatment": "locality_age",
+  "fixed_cutoff": "Emsian",
+  "fixed_cutoff_ma": 393.47,
+  "groups": {
+    "yea_baragwanathia": {
+      "categories": [
+        "B2"
+      ],
+      "members": [
+        "tail:M-ghin-ghin",
+        "tail:M-ghin-ghin-b2",
+        "tail:M-limestone-road"
+      ]
+    },
+    "bathurst_zosterophyllum": {
+      "categories": [
+        "B2"
+      ],
+      "members": [
+        "pbdb:11421",
+        "pbdb:11425",
+        "tail:M-bathurst-us383",
+        "tail:M-bathurst-us384",
+        "tail:M-bathurst-us385",
+        "tail:M-bathurst-us688"
+      ]
+    },
+    "cooksonia_barrandei": {
+      "categories": [
+        "B0",
+        "B1"
+      ],
+      "members": [
+        "tail:M-barrandei"
+      ]
+    }
+  },
+  "inputs": {
+    "data/macro/horizons_reviewed.csv": "0cba53e0b70cd1d1cc180c2de3003fc16575b33d280dcd28dd04aefc06671f37",
+    "data/macro/effort_reviewed.csv": "6f26e0535f295ac2cef93dfd8201ca05fbc5514f8751453d7bbccf267f07788c",
+    "data/timescale.csv": "29c6cc4a68b1746d1a67c66623e5df30ac5dd316257b55ca5948c9854886f826",
+    "models/f3/loop3/analysis.py": "ad2a07f2a4907a763dab7adf043f8305b97a67be12f8773a02f07259fa5c2001",
+    "models/f3/loop3/endpoint.py": "e4a9d28ced03894ef59f38ebdc8586488413525f1b403503652bdd5f972b3594",
+    "models/f3/loop3/histories.py": "06f6b8f0ab1dcdcd7730444d8286b47ea38c30ee04a5e4149e3c965ebe0400f8",
+    "models/f3/loop3/influential_taxa.py": "09061385dfb936fbfc72e1954a1c82b239a27aceb76fcd062a0be35933bc3b78"
+  },
+  "outputs": {
+    "models/f3/loop3/out/influential_taxa.csv": "65ae315e4ec5334939a1515191a3e7d39fdf3dcc7609913391b1038b2e79c22c"
+  },
+  "rows": 48,
+  "scope": "targeted leave-group-out sensitivity; fossil identity and age ranges otherwise unchanged"
+}

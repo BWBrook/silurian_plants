@@ -22,7 +22,7 @@ Australia|frenchmans spur / thomson river type-material district|393.47|413.02,3
 "CA|york river|48.8,-64.4|393.47|410.62",393.47,410.62,Laurentia,pbdb:29020;pbdb:31005,2,B0,main
 "CN|posongchong|23.3,104.2|410.62|413.02",410.62,413.02,South-China,pbdb:10891,1,B0,main
 "CN|posongchong|23.3,104.3|410.62|413.02",410.62,413.02,South-China,pbdb:10896,1,B0,main
-"CN|xiemisitai|46.8,85.6|419.62|422.7",419.62,422.7,Tarim,pbdb:278439,1,B0,main
+"CN|xiemisitai|46.8,85.6|419.62|422.7",419.62,422.7,Kazakhstania,pbdb:278439,1,B0,main
 "CN|xujiachong (also called longhuashan)|26.0,104.0|393.47|410.62",393.47,410.62,South-China,pbdb:10941,1,B0,main
 "CZ|lochkov|49.9,14.2|413.02|419.62",413.02,419.62,peri-Gondwana-Europe,pbdb:13895,1,B0,main
 "CZ|pozary|49.5,13.5|419.62|422.7",419.62,422.7,peri-Gondwana-Europe,pbdb:14131,1,B0,main
@@ -49,6 +49,7 @@ China|west junggar|419.62|422.7,419.62,422.7,Kazakhstania,tail:M-aberlemnia-jung
 "KZ|tokrau fm|47.5,76.0|419.62|422.7",419.62,422.7,Kazakhstania,pbdb:53609;pbdb:53610;pbdb:53656,3,B0,main
 "LY||30.0,11.0|419.62|422.7",419.62,422.7,Gondwana-North-Africa-Arabia,pbdb:53669,1,B0,main
 "Norway|red bay series brook section, spitsbergen|413.02|419.62",413.02,419.62,Laurentia,tail:M-svalbard,1,B0,main
+"Oman|ghaba-1 borehole, northern oman|445.2|452.8",445.2,452.8,Gondwana-North-Africa-Arabia,tail:S-w22-K12,1,B0,main
 "PL|winnica mudstone complex|50.9,21.1|419.62|422.7",419.62,422.7,multiple,pbdb:52667,1,B0,main
 "RU|pridorozhnaya|54.5,89.9|399.5|410.62",399.5,410.62,multiple,pbdb:238400,1,B0,main
 "RU|salairka horizon|54.3,85.9|399.5|410.62",399.5,410.62,multiple,pbdb:35709,1,B0,main
@@ -99,7 +100,7 @@ Australia|frenchmans spur / thomson river type-material district|393.47|413.02,3
 "CA|york river|48.8,-64.4|393.47|410.62",393.47,410.62,Laurentia,pbdb:29020;pbdb:31005,2,B1,main
 "CN|posongchong|23.3,104.2|410.62|413.02",410.62,413.02,South-China,pbdb:10891,1,B1,main
 "CN|posongchong|23.3,104.3|410.62|413.02",410.62,413.02,South-China,pbdb:10896,1,B1,main
-"CN|xiemisitai|46.8,85.6|419.62|422.7",419.62,422.7,Tarim,pbdb:278439,1,B1,main
+"CN|xiemisitai|46.8,85.6|419.62|422.7",419.62,422.7,Kazakhstania,pbdb:278439,1,B1,main
 "CN|xujiachong (also called longhuashan)|26.0,104.0|393.47|410.62",393.47,410.62,South-China,pbdb:10941,1,B1,main
 "CZ|lochkov|49.9,14.2|413.02|419.62",413.02,419.62,peri-Gondwana-Europe,pbdb:13895,1,B1,main
 "CZ|pozary|49.5,13.5|419.62|422.7",419.62,422.7,peri-Gondwana-Europe,pbdb:14131,1,B1,main
@@ -114,7 +115,6 @@ Australia|frenchmans spur / thomson river type-material district|393.47|413.02,3
 "China|qujing, northeastern yunnan|419.62|422.7",419.62,422.7,South-China,tail:M-qujingense,1,B1,main
 China|west junggar|419.62|422.7,419.62,422.7,Kazakhstania,tail:M-aberlemnia-junggaria,1,B1,main
 "Czech Republic|karlštejn, ve spáleném, near house 132|419.62|422.7",419.62,422.7,peri-Gondwana-Europe,tail:M-baragwanathia-karlstejn,1,B1,main
-"Czech Republic|kosov quarry, prague basin|419.62|422.7",419.62,422.7,peri-Gondwana-Europe,tail:M-bohemica,1,B1,main
 "Czech Republic|loděnice, špičatý vrch–barrandovy jámy|430.6|432.9",430.6,432.9,peri-Gondwana-Europe,tail:M-barrandei,1,B1,main
 "DE|hunsrück slate|49.8,7.4|399.5|410.62",399.5,410.62,multiple,pbdb:26904,1,B1,main
 "DE|wahnbach|50.9,7.3|410.62|413.02",410.62,413.02,multiple,pbdb:232143,1,B1,main
@@ -144,8 +144,6 @@ China|west junggar|419.62|422.7,419.62,422.7,Kazakhstania,tail:M-aberlemnia-jung
 "US|bertie|43.5,-74.9|419.62|422.7",419.62,422.7,Laurentia,pbdb:26087,1,B1,main
 "US|fiddlers green|43.0,-75.0|419.62|422.7",419.62,422.7,Laurentia,pbdb:53827,1,B1,main
 "US|trout valley|46.1,-68.6|387.95|399.5",387.95,399.5,Laurentia,pbdb:10614;pbdb:10617,2,B1,main
-"United Kingdom|capel horeb / halfway quarry, powys|422.7|425.0",422.7,425.0,Avalonia,tail:M-capel-horeb-ludlow,1,B1,main
-United Kingdom|welsh borderland; exact original site unresolved|413.02|419.62,413.02,419.62,Avalonia,tail:M-lang-tracheid-axis,1,B1,main
 "Vietnam|xóm chè quarry, northern vietnam|419.62|422.7",419.62,422.7,South-China,tail:M-van-canh,1,B1,main
 pbdb:27182|413.02|419.62,413.02,419.62,unknown,pbdb:27182,1,B1,main
 "Argentina|chica de zonda range, san juan|419.62|422.7",419.62,422.7,Gondwana-South-America,tail:M-rinconada,1,B2,main
@@ -167,7 +165,7 @@ Australia|frenchmans spur / thomson river type-material district|393.47|413.02,3
 "CA|york river|48.8,-64.4|393.47|410.62",393.47,410.62,Laurentia,pbdb:29020;pbdb:31005,2,B2,main
 "CN|posongchong|23.3,104.2|410.62|413.02",410.62,413.02,South-China,pbdb:10891,1,B2,main
 "CN|posongchong|23.3,104.3|410.62|413.02",410.62,413.02,South-China,pbdb:10896,1,B2,main
-"CN|xiemisitai|46.8,85.6|419.62|422.7",419.62,422.7,Tarim,pbdb:278439,1,B2,main
+"CN|xiemisitai|46.8,85.6|419.62|422.7",419.62,422.7,Kazakhstania,pbdb:278439,1,B2,main
 "CN|xujiachong (also called longhuashan)|26.0,104.0|393.47|410.62",393.47,410.62,South-China,pbdb:10941,1,B2,main
 "Canada|us383 (=us600), polar bear pass region, bathurst island|419.62|425.0",419.62,425.0,Laurentia,tail:M-bathurst-us383,1,B2,main
 "Canada|us384, polar bear pass region, bathurst island|419.62|425.0",419.62,425.0,Laurentia,tail:M-bathurst-us384,1,B2,main
@@ -221,7 +219,7 @@ Australia|frenchmans spur / thomson river type-material district|393.47|413.02,3
 "CA|york river|48.8,-64.4|393.47|410.62",393.47,410.62,Laurentia,pbdb:29020;pbdb:31005,2,B0,inclusive
 "CN|posongchong|23.3,104.2|410.62|413.02",410.62,413.02,South-China,pbdb:10891,1,B0,inclusive
 "CN|posongchong|23.3,104.3|410.62|413.02",410.62,413.02,South-China,pbdb:10896,1,B0,inclusive
-"CN|xiemisitai|46.8,85.6|419.62|422.7",419.62,422.7,Tarim,pbdb:278439,1,B0,inclusive
+"CN|xiemisitai|46.8,85.6|419.62|422.7",419.62,422.7,Kazakhstania,pbdb:278439,1,B0,inclusive
 "CN|xujiachong (also called longhuashan)|26.0,104.0|393.47|410.62",393.47,410.62,South-China,pbdb:10941,1,B0,inclusive
 "CZ|lochkov|49.9,14.2|413.02|419.62",413.02,419.62,peri-Gondwana-Europe,pbdb:13895,1,B0,inclusive
 "CZ|pozary|49.5,13.5|419.62|422.7",419.62,422.7,peri-Gondwana-Europe,pbdb:14131,1,B0,inclusive
@@ -249,6 +247,7 @@ China|west junggar|419.62|422.7,419.62,422.7,Kazakhstania,tail:M-aberlemnia-jung
 "KZ|tokrau fm|47.5,76.0|419.62|422.7",419.62,422.7,Kazakhstania,pbdb:53609;pbdb:53610;pbdb:53656,3,B0,inclusive
 "LY||30.0,11.0|419.62|422.7",419.62,422.7,Gondwana-North-Africa-Arabia,pbdb:53669,1,B0,inclusive
 "Norway|red bay series brook section, spitsbergen|413.02|419.62",413.02,419.62,Laurentia,tail:M-svalbard,1,B0,inclusive
+"Oman|ghaba-1 borehole, northern oman|445.2|452.8",445.2,452.8,Gondwana-North-Africa-Arabia,tail:S-w22-K12,1,B0,inclusive
 "PL|winnica mudstone complex|50.9,21.1|419.62|422.7",419.62,422.7,multiple,pbdb:52667,1,B0,inclusive
 "Poland|zbrza, trench at 50.725946 n, 20.569382 e, southern holy cross mountains|443.1|445.2",443.1,445.2,Baltica,tail:M-zbrza,1,B0,inclusive
 "RU|pridorozhnaya|54.5,89.9|399.5|410.62",399.5,410.62,multiple,pbdb:238400,1,B0,inclusive
@@ -302,7 +301,7 @@ Australia|frenchmans spur / thomson river type-material district|393.47|413.02,3
 "CA|york river|48.8,-64.4|393.47|410.62",393.47,410.62,Laurentia,pbdb:29020;pbdb:31005,2,B1,inclusive
 "CN|posongchong|23.3,104.2|410.62|413.02",410.62,413.02,South-China,pbdb:10891,1,B1,inclusive
 "CN|posongchong|23.3,104.3|410.62|413.02",410.62,413.02,South-China,pbdb:10896,1,B1,inclusive
-"CN|xiemisitai|46.8,85.6|419.62|422.7",419.62,422.7,Tarim,pbdb:278439,1,B1,inclusive
+"CN|xiemisitai|46.8,85.6|419.62|422.7",419.62,422.7,Kazakhstania,pbdb:278439,1,B1,inclusive
 "CN|xujiachong (also called longhuashan)|26.0,104.0|393.47|410.62",393.47,410.62,South-China,pbdb:10941,1,B1,inclusive
 "CZ|lochkov|49.9,14.2|413.02|419.62",413.02,419.62,peri-Gondwana-Europe,pbdb:13895,1,B1,inclusive
 "CZ|pozary|49.5,13.5|419.62|422.7",419.62,422.7,peri-Gondwana-Europe,pbdb:14131,1,B1,inclusive
@@ -350,9 +349,7 @@ China|west junggar|419.62|422.7,419.62,422.7,Kazakhstania,tail:M-aberlemnia-jung
 "US|fiddlers green|43.0,-75.0|419.62|422.7",419.62,422.7,Laurentia,pbdb:53827,1,B1,inclusive
 "US|trout valley|46.1,-68.6|387.95|399.5",387.95,399.5,Laurentia,pbdb:10614;pbdb:10617,2,B1,inclusive
 Ukraine|podolia; exact original site unresolved|419.62|425.0,419.62,425.0,Baltica,tail:M-podolia-zosterophyllum,1,B1,inclusive
-"United Kingdom|capel horeb / halfway quarry, powys|422.7|425.0",422.7,425.0,Avalonia,tail:M-capel-horeb-ludlow,1,B1,inclusive
 "United Kingdom|freshwater east, pembrokeshire|419.62|422.7",419.62,422.7,Avalonia,tail:M-freshwater-east,1,B1,inclusive
-United Kingdom|welsh borderland; exact original site unresolved|413.02|419.62,413.02,419.62,Avalonia,tail:M-lang-tracheid-axis,1,B1,inclusive
 "Vietnam|xóm chè quarry, northern vietnam|419.62|422.7",419.62,422.7,South-China,tail:M-van-canh,1,B1,inclusive
 pbdb:27182|413.02|419.62,413.02,419.62,unknown,pbdb:27182,1,B1,inclusive
 "Argentina|chica de zonda range, san juan|419.62|422.7",419.62,422.7,Gondwana-South-America,tail:M-rinconada,1,B2,inclusive
@@ -375,7 +372,7 @@ Australia|frenchmans spur / thomson river type-material district|393.47|413.02,3
 "CA|york river|48.8,-64.4|393.47|410.62",393.47,410.62,Laurentia,pbdb:29020;pbdb:31005,2,B2,inclusive
 "CN|posongchong|23.3,104.2|410.62|413.02",410.62,413.02,South-China,pbdb:10891,1,B2,inclusive
 "CN|posongchong|23.3,104.3|410.62|413.02",410.62,413.02,South-China,pbdb:10896,1,B2,inclusive
-"CN|xiemisitai|46.8,85.6|419.62|422.7",419.62,422.7,Tarim,pbdb:278439,1,B2,inclusive
+"CN|xiemisitai|46.8,85.6|419.62|422.7",419.62,422.7,Kazakhstania,pbdb:278439,1,B2,inclusive
 "CN|xujiachong (also called longhuashan)|26.0,104.0|393.47|410.62",393.47,410.62,South-China,pbdb:10941,1,B2,inclusive
 "Canada|us383 (=us600), polar bear pass region, bathurst island|419.62|425.0",419.62,425.0,Laurentia,tail:M-bathurst-us383,1,B2,inclusive
 "Canada|us384, polar bear pass region, bathurst island|422.7|426.7",422.7,426.7,Laurentia,tail:M-bathurst-us384,1,B2,inclusive

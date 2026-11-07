@@ -18,12 +18,12 @@ well cuttings without trilete spores against [51 of 59]{.C02} younger cuttings w
 sustained, delivered trilete encounter in that basin, mostly through later-Ordovician samples, to about
 a tenth of the Llandovery level under constant intensity, conditional on dating, delivery, contamination
 and dependence; it does not date a global absence. For crown vascular plants, [48]{.C25} dated locality–age
-units give a 95% older bound of about [429]{.C27} Ma on the start of their recoverable record if the rate of
+units give a 95% older bound of about [429]{.C27 .V002} Ma on the start of their recoverable record if the rate of
 recorded, identifiable occurrences was constant or tracked collecting effort. Coarser unit treatments
-move it to [432.1–434.05]{.C30} Ma, and lower earlier recording moves it further: one illustrative tenfold
+move it to [432.4–434.05]{.C30} Ma, and lower earlier recording moves it further: one illustrative tenfold
 reduction gives [448]{.C32} Ma. Records within the observed range cannot distinguish these histories.
 Including Ordovician sporangial fragments from Oman moves the broad land-plant-body bound about 20 Myr
-older, to [455.2]{.C40} Ma under constant intensity, and the tested histories then fit poorly. These results
+older, to [455.2]{.C40 .V020} Ma under constant intensity, and the tested histories then fit poorly. These results
 make explicit which assumptions connect fossil records to maximum ages. They neither estimate a delay
 between plant origins and their bodies nor rank the competing clocks.
 
@@ -104,15 +104,15 @@ inventory as an exclusion sensitivity (§3.3). Sources were the Paleobiology Dat
 by AI with cited sources and audited, together with our curated set of the oldest records and their
 competing readings. The audit also covered a separate screen of all [556]{.C38} older non-spore PBDB rows. The
 counting unit is a locality–age proxy, so several collections, taxa or papers from one horizon count once.
-Without the Oman unit, the main reading yields [77]{.C25} land-plant body units, [72]{.C25} of polysporangiophytes
+Without the Oman unit, the main reading yields [77]{.C25} land-plant body units, [69]{.C25} of polysporangiophytes
 (branched sporophytes with several sporangia) and [50]{.C25} of crown vascular-plant members (the lycophyte line
-or euphyllophytes); [75, 70 and 48]{.C25} are certainly older than the end of the Emsian ([393.47]{.C25} Ma). The
-Oman unit adds one to the land-plant count only ([76]{.C40} certain).
+or euphyllophytes); [75, 67 and 48]{.C25} are certainly older than the end of the Emsian ([393.47]{.C25} Ma). The
+Oman unit adds one to the land-plant count only ([76]{.C40 .V021} certain).
 
-The body record is geographically concentrated where it matters most. Of the [48]{.C25} crown vascular-plant units, only [16]{.C26} have age support older than the Silurian–Devonian boundary, and those come from eight
+The body record is geographically concentrated where it matters most. Of the [48]{.C25} crown vascular-plant units, only [16]{.C26} have age support older than the Silurian–Devonian boundary, and those come from seven
 regions. The two oldest-possible clusters are Yea, Victoria, two horizons whose age is disputed between Gorstian and Early Devonian [@earp2024NotanopliidBrachiopodsAssociated], and the
 Ludfordian of Bathurst Island, Arctic Canada [@kotyk2002MorphologicallyComplexPlant]. Silurian land-plant bodies more generally come mainly from Laurentia ([11 of 34]{.C37} wholly Silurian units) and peri-Gondwanan Europe ([8]{.C37}).
-Laurentia supplies [29 of the 77]{.C37} land-plant units, most of them Devonian.
+Laurentia supplies [29 of the 78]{.C37} land-plant units, most of them Devonian.
 
 Three comparisons are independent of one another in material: Murzuq, QSIM and the body record. Within
 each, independence is limited. Murzuq's 87 cuttings come from five wells, and its older cuttings from three. Body units share regions and
@@ -261,10 +261,10 @@ and intensity declining exponentially into the past on 25 and 10 Myr timescales,
 with plant-excluded collection density (Supplement S5).
 
 **Crown vascular plants.** For the [48]{.C25} crown-member units the bounds are close together under the histories
-tied to the observed record: [428.8]{.C27} Ma for constant intensity, [428.9]{.C27} Ma for collection density and
-[428.5]{.C27} Ma with plant-matched collections removed (Table 3). A 25 Myr decline into the past gives [431.6]{.C27} Ma, and
-a 10 Myr decline gives no bound within the [469.4]{.C27} Ma limit of the effort history. The unit definition matters
-as much. Under constant intensity, collapsing units to region–stage cells ([20]{.C30} units) gives [432.1]{.C30} Ma and the
+tied to the observed record: [428.8]{.C27 .V003} Ma for constant intensity, [428.9]{.C27 .V004} Ma for collection density and
+[428.5]{.C27 .V005} Ma with plant-matched collections removed (Table 3). A 25 Myr decline into the past gives [431.6]{.C27 .V006} Ma, and
+a 10 Myr decline gives no bound within the [469.4]{.C27 .V007} Ma limit of the effort history. The unit definition matters
+as much. Under constant intensity, collapsing units to region–stage cells ([19]{.C30} units) gives [432.4]{.C30} Ma and the
 curated oldest-record set alone ([15]{.C30} units) gives [434.05]{.C30} Ma, both older than 431.2 Ma. These are not
 estimates of an effective sample size, and the curated set also changes what was searched, but they show
 that plausible ways of organising the same records move the bound across the maximum. Other declared
@@ -276,19 +276,19 @@ sensitivities stay close to the primary value: individual collections [428.0]{.C
 
 | Recording history or unit rule | Land-plant body | Land-plant body, without Oman | Polysporangiophyte | Crown vascular plant |
 |----------------------------------------|-----------:|-----------:|-----------:|-----------:|
-| Constant | [455.2]{.C40} | [434.5]{.C28} | [434.6]{.C39} | [428.8]{.C27} |
-| Proportional to PBDB collection density | [456.6]{.C40} | [436.4]{.C28} | [436.6]{.C39} | [428.9]{.C27} |
-| Collection density, plant-matched collections removed | [456.1]{.C40} | [435.7]{.C28} | [435.9]{.C39} | [428.5]{.C27} |
-| Declining into the past, 25 Myr timescale | [465.2]{.C40} | [437.2]{.C28} | [437.5]{.C39} | [431.6]{.C27} |
+| Constant | [455.2]{.C40 .V022} | [434.5]{.C28} | [434.7]{.C39} | [428.8]{.C27 .V008} |
+| Proportional to PBDB collection density | [456.6]{.C40 .V023} | [436.4]{.C28} | [436.8]{.C39} | [428.9]{.C27 .V009} |
+| Collection density, plant-matched collections removed | [456.1]{.C40 .V024} | [435.7]{.C28} | [436.1]{.C39} | [428.5]{.C27 .V010} |
+| Declining into the past, 25 Myr timescale | [465.2]{.C40 .V025} | [437.2]{.C28} | [437.7]{.C39} | [431.6]{.C27 .V011} |
 | Declining into the past, 10 Myr timescale | [none]{.C40} | [none]{.C28} | [none]{.C39} | [none]{.C27} |
-| Constant, region–stage units | — | — | — | [432.1]{.C30} |
+| Constant, region–stage units | — | — | — | [432.4]{.C30} |
 | Constant, curated oldest-record set only | — | — | — | [434.05]{.C30} |
-| Constant, earlier intensity reduced tenfold before 426.7 Ma† | — | [446.7]{.C32} | [447.7]{.C32} | [448.1]{.C32} |
+| Constant, earlier intensity reduced tenfold before 426.7 Ma† | — | [446.7]{.C32} | [448.4]{.C32} | [448.1]{.C32} |
 | Constant, earlier intensity reduced a hundredfold before 426.7 Ma† | — | [none]{.C32} | [none]{.C32} | [none]{.C32} |
 
 **Land-plant bodies and the oldest admitted unit.** Including the Ghaba-1 fragments as one unit, with
-oldest possible age [452.8]{.C40} Ma, gives land-plant body bounds of [455.2–456.6]{.C40} Ma under constant and
-effort-tracking intensity and [465.2]{.C40} Ma under the 25 Myr decline. Without them, the oldest unit is the
+oldest possible age [452.8]{.C40 .V026} Ma, gives land-plant body bounds of [455.2]{.C40 .V027}–[456.6]{.C40 .V028} Ma under constant and
+effort-tracking intensity and [465.2]{.C40 .V029} Ma under the 25 Myr decline. Without them, the oldest unit is the
 Sheinwoodian *C. barrandei* and the bounds are [434.5–437.2]{.C28} Ma (Fig. [4](#fig-bodies), top). One unit moves the bound
 by about 20 Myr. With it, every declared history fits the sequence poorly (constant intensity: nominal
 *p* = 5.5 $\times$ $10^{-12}$ at midpoint ages[]{.C41}), because the Katian unit is followed by more than 12 Myr without
@@ -304,7 +304,7 @@ each history, using asymptotic tests on ages allocated within their reported ran
 exact. A steep (10 Myr) decline fits the crown-member sequence poorly under every allocation examined:
 *p* of about $10^{-11}$ to $10^{-6}$ across the 5th–95th percentiles of independent allocations and 3 $\times$ $10^{-13}$ at
 midpoint ages[]{.C31}. Constant intensity looks adequate only under independent allocation
-(*p* = [0.073–0.765]{.C31}, 5th–95th percentiles); at midpoint ages its *p* is [0.0085]{.C31}, and with every age at a shared
+(*p* = [0.056–0.715]{.C31}, 5th–95th percentiles); at midpoint ages its *p* is [0.0085]{.C31}, and with every age at a shared
 quantile of its range it spans 3 $\times$ $10^{-9}$ to [0.0165]{.C31}. A history that fails under particular allocations
 can still fit some other set of ages that the intervals admit, so these tests do not reject a history
 across the interval data, and they select none (Supplement Table S7). We draw only the narrow conclusion
@@ -337,7 +337,7 @@ Taken together, the three analyses support a specific, conditional conclusion. W
 interrogated, it rules out early land plants that were both abundant and readily recorded before the
 younger dates: no well-delivered, Llandovery-level trilete producers sustained through the later
 Ordovician in the Murzuq Basin, and no crown vascular-plant bodies recorded at the later Silurian–Devonian
-rate before about [429]{.C27} Ma, under the primary unit rule. It does not rule out early land plants that were rare,
+rate before about [429]{.C27 .V018} Ma, under the primary unit rule. It does not rule out early land plants that were rare,
 local, small, poorly preserved or seldom recognised. Murzuq allows trilete producers at a tenth of their
 later intensity, at full intensity with poor delivery, or living outside the basin's catchment. The body
 record allows crown vascular plants that were present but recorded at a tenth of later rates, or that
@@ -374,9 +374,9 @@ and character history, rather than chosen by convention.
 |------------------|----------------------|----------------------|
 | Murzuq excludes abundant, well-delivered trilete producers sustained through the later Ordovician[]{.C24} | encounter model; delivery $\rho$; reference purity; stage dating of cuttings, chiefly [18]{.C45} later-Ordovician ones | older delivery was much lower, reference triletes include caved or recycled grains, or ages are shifted |
 | That exclusion bears on crown land plants | producers lived in the catchment; trilete production at the embryophyte crown and its persistence [@hooper2026ReconstructingSporeEvolution]; our persistence pilot | early producers lived elsewhere, did not make recognisable trilete monads, or lost them in lineages present in the basin |
-| Recoverable crown vascular-plant bodies began after about [429]{.C27} Ma | recording history before and within the record; unit rule and independence; ages within reported ranges | earlier recording was much lower; units are pseudoreplicated or coarser (region–stage or curated units give [432.1–434.05]{.C30} Ma); Yea or Bathurst ages are wrong |
+| Recoverable crown vascular-plant bodies began after about [429]{.C27 .V019} Ma | recording history before and within the record; unit rule and independence; ages within reported ranges | earlier recording was much lower; units are pseudoreplicated or coarser (region–stage or curated units give [432.4–434.05]{.C30} Ma); Yea or Bathurst ages are wrong |
 | That bound bears on the crown vascular-plant node | lycophyte-line and euphyllophyte bodies are crown members; crown-diagnostic bodies arose near the node | crown origin preceded recognisable crown bodies by a long delay |
-| The land-plant body bound is [455.2]{.C40} Ma under constant intensity | the Oman fragments are one unit of the declared category; recording history | the fragments are excluded ([434.5]{.C28} Ma) or split; the poorly fitting histories misdescribe the sequence |
+| The land-plant body bound is [455.2]{.C40 .V030} Ma under constant intensity | the Oman fragments are one unit of the declared category; recording history | the fragments are excluded ([434.5]{.C28} Ma) or split; the poorly fitting histories misdescribe the sequence |
 
 The right-hand columns of Table 4 separate assumptions about how fossils were recorded from assumptions
 about what the fossils were. More searching of empty rock cannot settle the second kind: no number of

@@ -18,6 +18,8 @@ file. A current claim whose evidence changed after its recorded commit is report
 """
 
 import csv
+import decimal
+import json
 import re
 import subprocess
 import sys
@@ -26,9 +28,10 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 FIELDS = ["id", "status", "claim", "value", "basis", "evidence", "commit", "reproduce", "limit", "superseded_by"]
+BINDING_FIELDS = ["binding_id", "claim_id", "evidence", "selector", "value_column", "estimand", "display_values"]
 STATUS = {"supported", "provisional", "refuted", "superseded"}
-NUMBER = re.compile(r"(?<![\w.])(~?)(−?\d{1,3}(?:,\d{3})+(?:\.\d+)?(?!\d)|−?\d+(?:\.\d+)?(?:e[−-]?\d+)?)")
-PLAIN = re.compile(r"(?<![\w.])(~?)(−?\d+(?:\.\d+)?(?:e[−-]?\d+)?)")
+NUMBER = re.compile(r"(?<![\w.])(~?)([−-]?\d{1,3}(?:,\d{3})+(?:\.\d+)?(?!\d)|[−-]?\d+(?:\.\d+)?(?:e[−-]?\d+)?)")
+PLAIN = re.compile(r"(?<![\w.])(~?)([−-]?\d+(?:\.\d+)?(?:e[−-]?\d+)?)")
 SPAN = re.compile(r"(?<!!)\[([^\[\]]*)\]\{([^}]*)\}")
 BARE = re.compile(r"(?<![\w.{-])C\d{2}\b")
 
@@ -58,6 +61,154 @@ def load(ledger):
         if reader.fieldnames != FIELDS:
             sys.exit(f"{ledger}: columns must be {','.join(FIELDS)}")
         return list(reader)
+
+
+def load_bindings(path):
+    """Read the optional value-to-evidence binding sidecar."""
+    with open(path, newline="") as f:
+        reader = csv.DictReader(f)
+        if reader.fieldnames != BINDING_FIELDS:
+            sys.exit(f"{path}: columns must be {','.join(BINDING_FIELDS)}")
+        rows = []
+        for row in reader:
+            try:
+                row["selector_json"] = json.loads(row["selector"])
+                row["display_json"] = json.loads(row["display_values"])
+            except json.JSONDecodeError as exc:
+                raise SystemExit(f"{path}: {row.get('binding_id', '')}: invalid JSON: {exc}") from exc
+            rows.append(row)
+        return rows
+
+
+def _csv_rows(path):
+    with open(path, newline="") as f:
+        return list(csv.DictReader(f))
+
+
+def _matches(row, selector):
+    """Apply equality selectors, including an explicit equality-any group."""
+    for key, expected in selector.items():
+        if isinstance(expected, list):
+            if row.get(key, "") not in {str(value) for value in expected}:
+                return False
+        elif expected is None:
+            if row.get(key, "") != "":
+                return False
+        elif row.get(key, "") != str(expected):
+            return False
+    return True
+
+
+def _selected_rows(path, selector):
+    """Return rows selected by an equality selector and its optional aggregate."""
+    if not isinstance(selector, dict):
+        raise ValueError("selector must be a JSON object")
+    where = selector.get("where", selector)
+    if not isinstance(where, dict):
+        raise ValueError("selector.where must be an object")
+    if not where:
+        raise ValueError("selector must contain at least one equality field")
+    rows = _csv_rows(path)
+    selected = [row for row in rows if _matches(row, where)]
+    return selected, selector.get("aggregate")
+
+
+def _binding_value(binding, evidence_path):
+    selected, aggregate = _selected_rows(evidence_path, binding["selector_json"])
+    if aggregate is None:
+        if len(selected) != 1:
+            raise ValueError(f"selector matched {len(selected)} rows, expected exactly one")
+        value = selected[0].get(binding["value_column"], "")
+        if value == "":
+            raise ValueError(f"selected row has no value in {binding['value_column']}")
+        return [Decimal(value.replace("−", "-"))]
+    if not isinstance(aggregate, dict) or aggregate.get("op") != "count":
+        raise ValueError("aggregate must be {\"op\": \"count\"}")
+    if not selected:
+        raise ValueError("aggregate selector matched no rows")
+    column = aggregate.get("column", binding["value_column"])
+    values = [row.get(column, "") for row in selected]
+    if any(value == "" for value in values):
+        raise ValueError(f"aggregate column {column} contains blank values")
+    if aggregate.get("distinct", False):
+        values = list(dict.fromkeys(values))
+    return [Decimal(len(values))]
+
+
+def check_bindings(path, by_id, docs, errors):
+    """Check strict value bindings and return binding rows indexed by token."""
+    rows = load_bindings(path)
+    by_token = {}
+    for row in rows:
+        token = row["binding_id"]
+        claim = row["claim_id"]
+        if not re.fullmatch(r"V\d{3}", token):
+            errors.append(f"{path}: {token}: binding_id must be V followed by three digits")
+        if token in by_token:
+            errors.append(f"{path}: duplicate binding_id {token}")
+        by_token[token] = row
+        if claim not in by_id:
+            errors.append(f"{path}: {token}: unknown claim {claim}")
+        evidence = row["evidence"].strip()
+        evidence_path = ROOT / evidence
+        if not evidence or not evidence_path.is_file():
+            errors.append(f"{path}: {token}: evidence {evidence} does not exist")
+            continue
+        if not isinstance(row["selector_json"], dict):
+            errors.append(f"{path}: {token}: selector must be a JSON object")
+        if not isinstance(row["display_json"], list) or not row["display_json"]:
+            errors.append(f"{path}: {token}: display_values must be a non-empty JSON list")
+        try:
+            source_values = _binding_value(row, evidence_path)
+            displays = [Decimal(str(value).replace("−", "-")) for value in row["display_json"]]
+            if len(displays) != len(source_values):
+                raise ValueError(f"display_values has {len(displays)} values; source has {len(source_values)}")
+            for shown, source in zip(displays, source_values):
+                if not same(shown, source):
+                    raise ValueError(f"displayed {shown} does not match source {source}")
+        except (ValueError, KeyError, TypeError, decimal.InvalidOperation) as exc:
+            errors.append(f"{path}: {token}: {exc}")
+    strict = {row["claim_id"] for row in rows}
+    for doc in docs:
+        text = re.sub(r"`[^`\n]*`", lambda m: " " * len(m.group(0)), Path(doc).read_text())
+        for m in SPAN.finditer(text):
+            classes = re.findall(r"\.([\w-]+)", m.group(2))
+            claims = [c for c in classes if re.fullmatch(r"C\d{2}", c)]
+            tokens = [c for c in classes if re.fullmatch(r"V\d{3}", c)]
+            if not claims:
+                continue
+            where = f"{doc}:{text.count(chr(10), 0, m.start()) + 1}"
+            shown = numbers(m.group(1))
+            if shown and len(tokens) > 1:
+                errors.append(f"{where}: numeric {claims[0]} span has multiple .V### bindings")
+                continue
+            if tokens:
+                token = tokens[0]
+                binding = by_token.get(token)
+                if binding is None:
+                    errors.append(f"{where}: unknown binding {token}")
+                    continue
+                if binding["claim_id"] != claims[0]:
+                    errors.append(f"{where}: {token} binds {binding['claim_id']}, not {claims[0]}")
+                    continue
+            if claims[0] not in strict:
+                continue
+            if shown and len(tokens) != 1:
+                errors.append(f"{where}: strict numeric {claims[0]} span requires exactly one .V### binding")
+                continue
+            if not shown:
+                if tokens:
+                    errors.append(f"{where}: {tokens[0]} binds a span with no numeric value")
+                continue
+            token = tokens[0]
+            binding = by_token.get(token)
+            if binding is None:
+                errors.append(f"{where}: unknown binding {token}")
+                continue
+            displays = [Decimal(str(value).replace("−", "-")) for value in binding["display_json"]]
+            if len(shown) != len(displays) or any(shown[i][1] != displays[i] for i in range(len(shown))):
+                errors.append(f"{where}: {token} display_values do not match the cited numeric span")
+    return by_token
 
 
 def check_ledger(rows, errors, warnings):
@@ -156,6 +307,9 @@ def main():
     by_id = check_ledger(rows, errors, warnings)
     for doc in sys.argv[3:]:
         check_doc(doc, by_id, cited, errors)
+    bindings = Path(ledger).with_name("value-bindings.csv")
+    if bindings.exists():
+        check_bindings(bindings, by_id, sys.argv[3:], errors)
     for cid, r in by_id.items():
         if r["status"] in {"supported", "provisional"} and cid not in cited:
             warnings.append(f"{cid}: not cited in any document")

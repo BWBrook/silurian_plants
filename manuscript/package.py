@@ -1,12 +1,75 @@
 """Inventory the internal release candidate without copying private source texts."""
 
 import csv
+import ast
 import hashlib
 import json
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 HERE = Path(__file__).resolve().parent
+ARCHIVAL_RECEIPTS = {"models/f3/loop3/out/oman_receipt.json": "df805b2"}
+
+
+def dependency_closure(seeds):
+    pending = [(p, "product or declared analysis dependency") for p in sorted(seeds)]
+    seen, edges = set(), []
+    archive = json.loads((ROOT / "data/external/pbdb-snapshot.json").read_text())
+    while pending:
+        relative, parent = pending.pop()
+        p = ROOT / relative
+        if relative in seen:
+            continue
+        seen.add(relative)
+        if relative in ARCHIVAL_RECEIPTS:
+            availability = "archived provenance; regenerate at historical commit"
+            locator = f"https://github.com/BWBrook/silurian_plants/blob/{ARCHIVAL_RECEIPTS[relative]}/{relative}"
+        elif "library" in p.relative_to(ROOT).parts or "local" in p.relative_to(ROOT).parts:
+            availability, locator = "excluded source; see source register", "docs/sources.md"
+        elif relative == archive["path"]:
+            availability, locator = "public immutable archive; bulk input excluded from Git", archive["url"]
+        elif p.is_file() and not p.is_symlink():
+            availability, locator = "candidate", ""
+        else:
+            raise FileNotFoundError(f"missing declared dependency {relative} from {parent}")
+        edges.append({"path": relative, "declared_by": parent, "availability": availability,
+                      "sha256": hashlib.sha256(p.read_bytes()).hexdigest() if p.is_file() else "",
+                      "locator": locator})
+        if availability != "candidate":
+            continue
+        if p.suffix == ".json":
+            data = json.loads(p.read_text())
+            if not isinstance(data, dict):
+                continue
+            maps = [data.get(k, {}) for k in ("inputs", "outputs")]
+            maps += [data.get("binding", {}).get("files", {})]
+            for mapping in maps:
+                if not isinstance(mapping, dict):
+                    continue
+                for path in mapping:
+                    path = "models/f3/designs/m2.toml" if path == "active_declaration" else path
+                    if path.startswith(("data/", "models/", "tools/", "manuscript/", "docs/", "library/")):
+                        pending.append((path, relative))
+                    elif Path(path).suffix:
+                        candidates = {q.resolve() for q in (p.parent / path, p.parent.parent / path)
+                                      if q.is_file() and q.resolve().is_relative_to(ROOT)}
+                        if len(candidates) != 1:
+                            raise ValueError(f"unresolved or ambiguous receipt-local dependency {path} in {relative}")
+                        pending.append((str(candidates.pop().relative_to(ROOT)), relative))
+        elif p.suffix == ".py":
+            for node in ast.walk(ast.parse(p.read_text())):
+                names = []
+                if isinstance(node, ast.Import):
+                    names = [x.name for x in node.names]
+                elif isinstance(node, ast.ImportFrom) and node.module:
+                    names = [node.module]
+                for name in names:
+                    for directory in (p.parent, ROOT / "tools", ROOT / "models/f3", ROOT / "models/f3/loop2"):
+                        q = directory / (name.replace(".", "/") + ".py")
+                        if q.is_file():
+                            pending.append((str(q.relative_to(ROOT)), relative))
+                            break
+    return edges
 
 
 def write(path, fields, rows):
@@ -35,7 +98,7 @@ def main():
             if p.is_file() and "__pycache__" not in p.parts and p.suffix not in {".pyc", ".tex", ".log"}:
                 add(p.relative_to(ROOT), role)
 
-    for name in ("claims.csv", "external_candidates.csv", "mapping.csv", "figures.py", "tables.py", "package.py",
+    for name in ("claims.csv", "value-bindings.csv", "estimands.md", "makedoc.lock.json", "external_candidates.csv", "mapping.csv", "figures.py", "tables.py", "package.py",
                  "README.md", "authors.yaml", "Makefile", "settings/build.yaml", "csl/chicago-author-date.csl"):
         add("manuscript/"+name, "authored manuscript build, evidence ledger or reproduction code")
     collect("manuscript/text/*.md", "authored paper source: main, supplement, brief, agent paper")
@@ -52,7 +115,7 @@ def main():
     collect("docs/audits/2026-11-01-loop3-*", "authored independent review or verification receipt")
     collect("models/f3/loop3/*.py", "body-record method, simulation or figure code")
     collect("models/f3/loop3/README.md", "body-record method guide")
-    collect("models/f3/loop3/out/*", "reviewed body-record output, superseded pilot output or receipt")
+    collect("models/f3/loop3/out/**/*", "reviewed body-record output, superseded pilot output or receipt")
     collect("data/macro/*", "source-linked body-record inventory and adjudication")
     collect("models/f3/loop2/**/*", "new method, sensitivity or conditional diagnostic")
     collect("data/units/loop2/**/*", "source-linked factual extraction or authored evidence ledger")
@@ -68,6 +131,28 @@ def main():
     collect("models/pilot-asr/out/*", "previously checked model-conditional pilot output")
     for name in ("README.md", "renv.lock", "common.R", "asr_persistence.R", "asr_diagnostics.R", "summarise_chains.R"):
         add("models/pilot-asr/"+name, "previously checked pilot source; not rerun for Loop 2 close")
+    for path in ("Makefile", "tools/reproduce.py", "data/external/pbdb-snapshot.json",
+                 "data/external/scripts/fetch_pbdb_snapshot.py", "data/spores/first_appearances.csv"):
+        add(path, "public reproduction dependency")
+    collect("docs/audits/2026-11-07*.md", "review and analysis disposition")
+    collect("data/units/borenshult_review/*", "calibration reading dependency")
+    add("models/f3/borenshult_review.py", "calibration reading screen")
+    collect("models/f3/out/borenshult_review/*", "calibration reading screen output")
+    seeds = {str(p.relative_to(ROOT)) for p in files}
+    with (HERE / "claims.csv").open() as f:
+        for row in csv.DictReader(f):
+            for path in row["evidence"].split(";"):
+                if (ROOT / path).is_dir():
+                    seeds.update(str(p.relative_to(ROOT)) for p in (ROOT / path).rglob("*") if p.is_file())
+                else:
+                    seeds.add(path)
+    closure = dependency_closure(seeds)
+    for row in closure:
+        if row["availability"] == "candidate":
+            add(row["path"], "dependency closure: " + row["declared_by"])
+    write(HERE / "dependency-manifest.csv", ["path", "declared_by", "availability", "sha256", "locator"],
+          sorted(closure, key=lambda row: row["path"]))
+    add("manuscript/dependency-manifest.csv", "declared dependency closure and excluded-source locations")
     records = []
     for path, role in sorted(files.items()):
         content = path.read_bytes()
@@ -82,9 +167,15 @@ def main():
              distribution="private reproduction inputs; excluded from candidate inventory"),
         dict(path="data/external/local/deposits/hooper2026-spore-evolution/", role="upstream ASR archives used by the existing pilot",
              distribution="not included; fetch with data/external/scripts/deposits_fetch.py under original provenance and licence terms"),
+        dict(path=archive_path(), role="frozen all-taxa PBDB raw input to inventory/effort rebuild",
+             distribution="CC0; exact bytes publicly archived at https://doi.org/10.5281/zenodo.24028289; restore with make fetch-pbdb"),
     ])
     print(json.dumps({"candidate_files": len(records), "bytes": sum(r["bytes"] for r in records),
                       "private_source_files_included": 0}))
+
+
+def archive_path():
+    return json.loads((ROOT / "data/external/pbdb-snapshot.json").read_text())["path"]
 
 
 if __name__ == "__main__":

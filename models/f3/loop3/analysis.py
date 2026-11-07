@@ -22,7 +22,14 @@ SEED = 20261102
 AGE_DRAWS = 256
 
 
-def select_records(h, category, reading="main", units="locality_age", variant="primary", exclude_region=None):
+def case_rng(*parts):
+    key = "|".join([str(SEED), *map(str, parts)]).encode()
+    seed = int.from_bytes(hashlib.sha256(key).digest()[:16], "big")
+    return np.random.default_rng(seed)
+
+
+def select_records(h, category, reading="main", units="locality_age", variant="primary", exclude_region=None,
+                   exclude_members=None):
     r = h[h.reading.isin(["all", reading]) & h[category.lower()]].copy()
     if variant == "wide_age":
         include = r.eligible_primary | (r.disposition.eq("wide_age_sensitivity") & (r.max_ma <= DOMAIN))
@@ -42,6 +49,8 @@ def select_records(h, category, reading="main", units="locality_age", variant="p
         r.loc[r.horizon_id.isin(["pbdb:13873", "pbdb:52702"]), "locality"] = "sensitivity:podolia"
     if exclude_region is not None:
         r = r[r.region != exclude_region]
+    if exclude_members:
+        r = r[~r.horizon_id.isin(exclude_members)]
     if units == "collection":
         r["unit_id"] = r.horizon_id
     elif units == "locality_age":
@@ -104,55 +113,74 @@ def main():
     h = pd.read_csv(inputs[0])
     histories = load_histories()
     rows, membership, dates, classical, adequacy = [], [], [], [], []
-    rng = np.random.default_rng(SEED)
     for reading in ("main", "inclusive"):
         for category in ("B0", "B1", "B2"):
             r = select_records(h, category, reading)
             membership.extend(r.assign(category=category, reading=reading).to_dict("records"))
+            without_oman = (select_records(h, category, reading,
+                                           exclude_members={"tail:S-w22-K12"})
+                            if category == "B0" else None)
             for name, cutoff in CUTOFFS.items():
                 for history, recovery in histories.items():
                     rows.append(row_for(r, history, recovery, category, reading, "locality_age", "primary", name))
-                for mode in ("independent_uniform", "shared_quantile"):
-                    if mode == "independent_uniform":
-                        draws = rng.uniform(r.min_ma.values, r.max_ma.values, size=(AGE_DRAWS, len(r)))
-                    else:
-                        q = (np.arange(AGE_DRAWS) + .5)[:, None] / AGE_DRAWS
-                        draws = r.min_ma.values + q * (r.max_ma.values - r.min_ma.values)
-                    for history, recovery in histories.items():
-                        limits, statuses, ns = [], [], []
-                        for ages in draws:
-                            used = ages[ages >= cutoff]
-                            f = known_cutoff_bound(used, recovery, cutoff)
-                            ns.append(len(used))
-                            limits.append(f.bound_ma if f.status in ("bounded", "at_boundary") else np.inf)
-                            statuses.append(f.status)
-                        a = np.sort(limits)
-                        def order_q(q):
-                            v = a[min(len(a) - 1, int(q * len(a)))]; return v if np.isfinite(v) else np.nan
-                        dates.append({"category": category, "reading": reading, "cutoff": name,
-                                      "history": history, "age_rule": mode, "draws": AGE_DRAWS,
-                                      "bound_q05_ma": order_q(.05), "bound_median_ma": order_q(.5),
-                                      "bound_q95_ma": order_q(.95), "beyond_domain_fraction": statuses.count("beyond_domain") / AGE_DRAWS,
-                                      "undefined_fraction": statuses.count("undefined") / AGE_DRAWS,
-                                      "n_min": min(ns), "n_max": max(ns),
-                                      "interpretation": "age-allocation sensitivity; quantiles are not confidence bounds"})
-                        if name == "Emsian":
-                            checks = np.array([shape_check(a, recovery, cutoff) for a in draws])
-                            midpoint = (r.min_ma.values + r.max_ma.values) / 2
-                            d, p = shape_check(midpoint, recovery, cutoff)
-                            adequacy.append({"category": category, "reading": reading, "history": history,
-                                             "age_rule": mode, "midpoint_D": d, "midpoint_nominal_p": p,
-                                             "imputed_D_q05": np.quantile(checks[:, 0], .05),
-                                             "imputed_D_q95": np.quantile(checks[:, 0], .95),
-                                             "imputed_nominal_p_q05": np.quantile(checks[:, 1], .05),
-                                             "imputed_nominal_p_q95": np.quantile(checks[:, 1], .95),
-                                             "interpretation": "conditional-max KS; asymptotic exact-age p only; imputation spread not a combined test"})
-                midpoint = ((r.min_ma + r.max_ma) / 2).values
-                used = midpoint[midpoint >= cutoff]
-                f = observed_range_bound(used, histories["flat"])
-                classical.append({"category": category, "reading": reading, "cutoff": name,
-                                  "n": len(used), "older_bound_ma": f.bound_ma, "status": f.status,
-                                  "interpretation": "classical observed-range comparison at midpoint ages; conditional only"})
+                    if without_oman is not None:
+                        rows.append(row_for(without_oman, history, recovery, category, reading, "locality_age",
+                                            "without_oman_fragments", name))
+                inventories = [("primary", r)]
+                if without_oman is not None:
+                    inventories.append(("without_oman_fragments", without_oman))
+                for inventory_variant, inventory in inventories:
+                    for mode in ("independent_uniform", "shared_quantile"):
+                        if mode == "independent_uniform":
+                            rng_key = (reading, category, name, mode)
+                            if inventory_variant != "primary":
+                                rng_key += (inventory_variant,)
+                            rng = case_rng(*rng_key)
+                            draws = rng.uniform(inventory.min_ma.values, inventory.max_ma.values,
+                                                size=(AGE_DRAWS, len(inventory)))
+                        else:
+                            q = (np.arange(AGE_DRAWS) + .5)[:, None] / AGE_DRAWS
+                            draws = (inventory.min_ma.values +
+                                     q * (inventory.max_ma.values - inventory.min_ma.values))
+                        for history, recovery in histories.items():
+                            limits, statuses, ns = [], [], []
+                            for ages in draws:
+                                used = ages[ages >= cutoff]
+                                f = known_cutoff_bound(used, recovery, cutoff)
+                                ns.append(len(used))
+                                limits.append(f.bound_ma if f.status in ("bounded", "at_boundary") else np.inf)
+                                statuses.append(f.status)
+                            a = np.sort(limits)
+                            def order_q(q):
+                                v = a[min(len(a) - 1, int(q * len(a)))]; return v if np.isfinite(v) else np.nan
+                            dates.append({"category": category, "reading": reading,
+                                          "variant": inventory_variant, "cutoff": name,
+                                          "history": history, "age_rule": mode, "draws": AGE_DRAWS,
+                                          "bound_q05_ma": order_q(.05), "bound_median_ma": order_q(.5),
+                                          "bound_q95_ma": order_q(.95),
+                                          "beyond_domain_fraction": statuses.count("beyond_domain") / AGE_DRAWS,
+                                          "undefined_fraction": statuses.count("undefined") / AGE_DRAWS,
+                                          "n_min": min(ns), "n_max": max(ns),
+                                          "interpretation": "age-allocation sensitivity; quantiles are not confidence bounds"})
+                            if name == "Emsian":
+                                checks = np.array([shape_check(a, recovery, cutoff) for a in draws])
+                                midpoint = (inventory.min_ma.values + inventory.max_ma.values) / 2
+                                d, p = shape_check(midpoint, recovery, cutoff)
+                                adequacy.append({"category": category, "reading": reading,
+                                                 "variant": inventory_variant, "history": history,
+                                                 "age_rule": mode, "midpoint_D": d, "midpoint_nominal_p": p,
+                                                 "imputed_D_q05": np.quantile(checks[:, 0], .05),
+                                                 "imputed_D_q95": np.quantile(checks[:, 0], .95),
+                                                 "imputed_nominal_p_q05": np.quantile(checks[:, 1], .05),
+                                                 "imputed_nominal_p_q95": np.quantile(checks[:, 1], .95),
+                                                 "interpretation": "conditional-max KS; asymptotic exact-age p only; imputation spread not a combined test"})
+                    midpoint = ((inventory.min_ma + inventory.max_ma) / 2).values
+                    used = midpoint[midpoint >= cutoff]
+                    f = observed_range_bound(used, histories["flat"])
+                    classical.append({"category": category, "reading": reading,
+                                      "variant": inventory_variant, "cutoff": name,
+                                      "n": len(used), "older_bound_ma": f.bound_ma, "status": f.status,
+                                      "interpretation": "classical observed-range comparison at midpoint ages; conditional only"})
     for category in ("B0", "B1", "B2"):
         scenarios = [(u, "primary", None) for u in ("collection", "locality", "region_stage")]
         scenarios += [("locality_age", v, None) for v in ("wide_age", "unresolved_material", "without_low_confidence",
@@ -160,7 +188,8 @@ def main():
         regions = sorted(h[h.eligible_primary & h.reading.isin(["all", "main"]) & h[category.lower()]].region.unique())
         scenarios += [("locality_age", "primary", region) for region in regions]
         for units, variant, region in scenarios:
-            r = select_records(h, category, units=units, variant=variant, exclude_region=region)
+            r = select_records(h, category, units=units, variant=variant, exclude_region=region,
+                               exclude_members=None)
             matched = load_histories(exclude_region=region) if region else histories
             for history, recovery in matched.items():
                 rows.append(row_for(r, history, recovery, category, "main", units, variant, "Emsian", region or ""))
@@ -186,7 +215,9 @@ def main():
         raise RuntimeError("analysis inputs drifted")
     outputs = [OUT / n for n in ("reviewed_bounds.csv", "age_sensitivity.csv", "classical_comparison.csv",
                                  "primary_unit_membership.csv", "delay_sensitivity.csv", "shape_diagnostics.csv")]
-    receipt = {"seed": SEED, "age_draws_per_cell": AGE_DRAWS, "domain_ma": [YOUNG, DOMAIN],
+    receipt = {"seed": SEED, "age_draws_per_cell": AGE_DRAWS,
+               "age_rng": "SHA-256 keyed per reading/category/cutoff/rule; first 128 bits",
+               "domain_ma": [YOUNG, DOMAIN],
                "inputs": before, "outputs": {str(p.relative_to(ROOT)): digest(p) for p in outputs},
                "bound_rows": len(result), "age_sensitivity_rows": len(dates),
                "scope": "conditional estimates; no empirical qualification or clock-posterior validation"}

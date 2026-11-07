@@ -1,0 +1,7 @@
+cluster,formation,oldest_stage,youngest_stage,n,possible_pre,wholly_post,uniform_exposure
+D1-200,Hawaz,Darriwilian,Darriwilian,3,3,0,0.24107142857143796
+D1-200,M. Shugran,Katian,Hirnantian,6,0,6,6.0
+H2-NC186,Bir Tlacsin,Hirnantian,Hirnantian,2,0,2,2.0
+H2-NC186,Hawaz,Darriwilian,Darriwilian,7,7,0,0.5625000000000219
+I3-NC186,Bir Tlacsin,Hirnantian,Hirnantian,3,0,3,3.0
+I3-NC186,M. Shugran,Katian,Hirnantian,7,0,7,7.0

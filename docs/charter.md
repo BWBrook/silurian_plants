@@ -229,6 +229,16 @@ data archived, and the human–AI correspondence record published alongside.
   (configured GPT-5.6-sol/medium) audited all E2 candidates and the primary Oman/Hawaz sources
   against the declared B0 category. Claude retains final paper integration; numerical values,
   frozen analyses and support statuses were not changed by the parent review.
+  On 7 November, Codex (parent model `gpt-6.1-sol`) implemented the GPT-6 Pro stage-2 tranche.
+  A `sol_high_specialist` delegate rebuilt canonical body membership, frontier and influence
+  diagnostics; another implemented interval-feasibility and shared-timescale analyses. The first
+  independently audited the second's central optimisation using brute permutation enumeration.
+  A `luna_high_executor` delegate implemented case bindings and separately checked the parent's
+  Murzuq likelihood/dependence and reproduction work. The parent verified C45–C47 against sources,
+  integrated the executable category repair, propagated changed numerical summaries, archived the
+  frozen CC0 PBDB input under standing authority, and built public reproduction/dependency targets.
+  New analysis claims remain provisional for Claude's narrative integration; no new frozen F3
+  qualification or external measurements were claimed.
 - OpenAI Codex CLI, `gpt-6.1-sol` and `gpt-6.1-terra` at high reasoning effort, run by Claude Opus
   5.5 as read-only, schema-constrained jobs through `~/.claude/bin/codex-delegate` (2026-10-27 and
   28; on 2026-10-31 `gpt-6.1-terra` independently re-derived the 164 Libyan binary units for sprint 1; on 2026-11-01 `gpt-6.1-sol` with web search classified the 241 PBDB macrofossil names for the Loop 3 pilot, `work/codex/loop3/`). Records are in `docs/audits/` and the job files in `data/spores/work/codex/` and

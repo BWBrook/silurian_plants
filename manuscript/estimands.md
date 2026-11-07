@@ -4,6 +4,11 @@ The interpretation specification for the F3 paper. Every rendering (article, sup
 states these results only in these terms. Claude and Codex maintain it jointly; change it before changing
 the prose. Adopted 7 November 2026 after review C and the GPT-6 Pro review (`docs/audits/2026-11-07-gpt6pro-triage.md`).
 
+Codex agrees this specification on 7 November 2026 for the stage 2 work. Timescale perturbations
+are shared-boundary scenarios, not a probability distribution over ages; intensity frontiers and
+diagnostic delays are retrospective compatibility calculations. Interval-feasibility witnesses test
+what the admitted ranges permit and do not select the true ages or a preferred history.
+
 A sentence passes only if its subject is the same object as the calculation. A caveat attached to a
 sentence does not rescue it if its noun has changed, for example from a fossil-category endpoint to an
 origin.
@@ -43,7 +48,7 @@ origin.
 - **The intensity** combines biological abundance and range, diagnosability, delivery and preservation,
   and collection and reporting. Say "rate of recorded, identifiable occurrences", not "fossilisation".
 - **Allowed:** under constant or effort-tracking intensity, crown vascular-plant bodies give bounds near
-  428.5–428.9 Ma; unit treatments move the constant bound to 432.1 (region–stage) or 434.05 Ma (curated
+  428.5–428.9 Ma; unit treatments move the constant bound to 432.4 (region–stage; 19 units after the West Junggar correction) or 434.05 Ma (curated
   subset), across 431.2 Ma; reduced earlier intensity moves it further (frontier, retrospective).
 - **Not allowed:** a crown date; a ranking of clocks; "the simplest assumption favours the young clock";
   constant intensity as the adequate or preferred history.
@@ -56,7 +61,8 @@ origin.
 - **Canonical B0** includes the Katian Oman sporangial fragments as one locality–age unit with oldest
   possible age 452.8 Ma (C40). The former inventory is an exclusion sensitivity (C28).
 - **Allowed:** including the fragments moves the conditional bounds about 20 Myr older; the endpoint is
-  controlled by the oldest admitted unit; every declared history fits the augmented sequence poorly (C41).
+  controlled by the oldest admitted unit; the allocated-age diagnostics fit the augmented sequence poorly (C41), subject to the
+  interval-feasibility check; this does not reject all ages the ranges permit.
 - **Not allowed:** any lag, delay or "interval" between lineage origin and body recoverability, in either
   direction ("about 20 Myr after", "almost at once"); 458.2 Ma as an origin (it is a fossil minimum).
 
@@ -76,3 +82,5 @@ origin.
 - The 0.977 persistence (C19) is conditional on character coding, model, tree and chronology; it is not the
   share of extinct local producers that made recognisable trilete monads.
 - A trilete mark alone does not place its producer in the crown.
+
+B1 admission requires E3 branching or E5 crown membership; E4-only tracheid evidence is insufficient.

@@ -1,28 +1,29 @@
 {
   "seed": 20261102,
   "age_draws_per_cell": 256,
+  "age_rng": "SHA-256 keyed per reading/category/cutoff/rule; first 128 bits",
   "domain_ma": [
     393.47,
     469.4
   ],
   "inputs": {
-    "data/macro/horizons_reviewed.csv": "2088c3274c4a91c57b113054660c4a6a14d30fca1a15da7bd96d5c3d4279e1ad",
-    "data/macro/effort_reviewed.csv": "d2ecfd0a80505e0ac3f22655bcf7635453b9bfc6bda86230315174f5c6e96ee7",
-    "data/macro/build_receipt.json": "43c5bde72e2352690f6a137d824c4b0242f08dab8d321493aef7e8a3a5613d3f",
+    "data/macro/horizons_reviewed.csv": "0cba53e0b70cd1d1cc180c2de3003fc16575b33d280dcd28dd04aefc06671f37",
+    "data/macro/effort_reviewed.csv": "6f26e0535f295ac2cef93dfd8201ca05fbc5514f8751453d7bbccf267f07788c",
+    "data/macro/build_receipt.json": "b113f14989b9fe89aa7bcf44f2ffbc7644d239bc6b941935122db6c29cc4ac33",
     "data/timescale.csv": "29c6cc4a68b1746d1a67c66623e5df30ac5dd316257b55ca5948c9854886f826",
     "models/f3/loop3/endpoint.py": "e4a9d28ced03894ef59f38ebdc8586488413525f1b403503652bdd5f972b3594",
     "models/f3/loop3/histories.py": "06f6b8f0ab1dcdcd7730444d8286b47ea38c30ee04a5e4149e3c965ebe0400f8",
-    "models/f3/loop3/analysis.py": "161edb7741eaf1644dba5216b15f7f6a412d29d0eabc3a8e7db92e6c14939f5a"
+    "models/f3/loop3/analysis.py": "ad2a07f2a4907a763dab7adf043f8305b97a67be12f8773a02f07259fa5c2001"
   },
   "outputs": {
-    "models/f3/loop3/out/reviewed_bounds.csv": "10c694db71af4cd94cdd7c84c2bd27e999dea7dd7ef511bb6f9ac181d6131f89",
-    "models/f3/loop3/out/age_sensitivity.csv": "129e71413894e1e30a9ef630c3da59355c0ba5d745862cb20ec9db5965ba9dca",
-    "models/f3/loop3/out/classical_comparison.csv": "d8f75d8853970e3f88874003b10fefeaff6f4cdde88dab4a49244b28d67c3430",
-    "models/f3/loop3/out/primary_unit_membership.csv": "c6daa079dec8b201e14dc0cebf84df959efb935d9dcd99b3fb7d441a8fc4bc6f",
-    "models/f3/loop3/out/delay_sensitivity.csv": "e3f26d2d1c00b07e8967b874099c2c28a3ba8f3da038d41ec1f4f917306a3c6d",
-    "models/f3/loop3/out/shape_diagnostics.csv": "21b1cdec2c83c808c3d97f07bb06e9d38d73a60167d2a0103bb68f1c0b59019f"
+    "models/f3/loop3/out/reviewed_bounds.csv": "11c573626c8567e4de5ef9cccc676144d183c290742b63dee875c79d32e3f2b6",
+    "models/f3/loop3/out/age_sensitivity.csv": "4b294a65df7d29d048760b9796293709873e78026919d3dc3aff4be780005369",
+    "models/f3/loop3/out/classical_comparison.csv": "15cf6b9275b21d91ed869ec6242afdfe1bdb0016de4c1122538959212eb97e1e",
+    "models/f3/loop3/out/primary_unit_membership.csv": "43eb5e24f5e69d5a20cf5bd8269c41b8778adee5dd08a5dede750939ab25f9db",
+    "models/f3/loop3/out/delay_sensitivity.csv": "303465b9efe8d9fee72b92d9dfc6467e3b786a2be50e45db208248de939f97c3",
+    "models/f3/loop3/out/shape_diagnostics.csv": "b6292a2b15c900460ced8a94c75d6f21b052cad18333982bb7da0c7689e037be"
   },
-  "bound_rows": 510,
-  "age_sensitivity_rows": 288,
+  "bound_rows": 540,
+  "age_sensitivity_rows": 384,
   "scope": "conditional estimates; no empirical qualification or clock-posterior validation"
 }

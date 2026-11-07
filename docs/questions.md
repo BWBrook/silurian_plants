@@ -9,6 +9,21 @@ The programme's working list of provisional questions: what each needs, which ga
 
 The register is updated at each loop's close. Started 2026-10-28 by Claude Opus 5.5 from Barry's programme principles; questions are added or reworded by either.
 
+**GPT-6 Pro stage 2, 7 November (Q1/Q2/Q5):**
+`audits/2026-11-07-stage2-handoff.md` records the completed canonical body rebuild, retrospective
+age–intensity frontier, Murzuq time/dependence panel, interval-feasibility analysis, shared-boundary
+scenarios, influential-record checks and public reproduction. C45–C47 are source-checked and
+supported; new C48–C52 remain provisional for Claude's integration. Q1 now separates nominal
+conditional-age diagnostic feasibility from a calibrated test after searching latent ages. The
+25 Myr B2 decline has a permitted all-possible-unit witness; pure decline10 and every tested
+canonical B0 history have no nominal 5% witness under the encoded supports, including every
+cutoff-straddler inclusion state. This is not rejection of a biological history. Q2 retains the
+recording-to-node distinction and the source-rule identity of the published maxima. Q5 gains the
+E4-only-to-B1 category leak, corrected alongside the Oman omission, and the West Junggar region
+correction. Raw PBDB reproduction is now public and immutable at
+<https://doi.org/10.5281/zenodo.24028289>. Loop 3 remains open for Claude's integration and the
+semantic cross-product check; no new external measurements are assumed.
+
 **Review C closure check, 7 November (Q1/Q2/Q5):** the Oman membership audit
 (`audits/2026-11-07-b0-membership-review.md`) confirms S-w22-K12 as the sole admitted
 pre-Silurian body unit among the checked E2 records. The Hawaz cuticle-like sheets and

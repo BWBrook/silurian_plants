@@ -11,7 +11,7 @@ OUT_DIR = ROOT / "models/f3/loop3/out"
 SUPPLEMENT = Path(__file__).resolve().parent / "text/supplement.md"
 BLOCKS = {}
 
-CAT = {"B0": "Land-plant body, without Oman fragments", "B1": "Polysporangiophyte body", "B2": "Crown vascular-plant body"}
+CAT = {"B0": "B0 +Oman", "B1": "B1", "B2": "B2"}
 HIST = {"flat": "Constant", "pbdb_all": "PBDB collection density", "pbdb_plant_excluded": "PBDB density, plant matches removed",
         "decline25": "Decline into past, 25 Myr", "decline10": "Decline into past, 10 Myr",
         "pbdb_excluded_decline10": "Plant-excluded PBDB × 10 Myr decline"}
@@ -85,26 +85,24 @@ def main():
     table("regions", ["Region left out", "Units", "Oldest possible", "Constant", "PBDB density"], rows)
 
     rows = []
-    shape = {(r["category"], r["history"], r["age_rule"]): r for r in read("shape_diagnostics.csv") if r["reading"] == "main"}
+    shape = {(r["category"], r["variant"], r["history"], r["age_rule"]): r for r in read("shape_diagnostics.csv") if r["reading"] == "main"}
     span = lambda r: f"{float(r['imputed_nominal_p_q05']):.2g}–{float(r['imputed_nominal_p_q95']):.2g}"
-    for cat in CAT:
+    for cat, variant in (("B0", "primary"), ("B0", "without_oman_fragments"), ("B1", "primary"), ("B2", "primary")):
+        label = "B0 -Oman" if variant == "without_oman_fragments" else CAT[cat]
         for h in HIST:
-            u, q = shape[(cat, h, "independent_uniform")], shape[(cat, h, "shared_quantile")]
-            rows.append([CAT[cat], HIST[h], f"{float(u['midpoint_nominal_p']):.2g}", span(u), span(q)])
-    for r in read("oman_shape.csv"):
-        if r["reading"] == "main" and r["inventory"] == "with_oman_fragments":
-            rows.append(["Land-plant body, with Oman fragments", HIST[r["history"]], f"{float(r['midpoint_nominal_p']):.2g}",
-                         f"{float(r['independent_uniform_p_q05']):.2g}–{float(r['independent_uniform_p_q95']):.2g}", "—"])
+            u, q = shape[(cat, variant, h, "independent_uniform")], shape[(cat, variant, h, "shared_quantile")]
+            rows.append([label, SHORT[h], f"{float(u['midpoint_nominal_p']):.2g}", span(u), span(q)])
     table("shape", ["Category", "History", "Nominal p, midpoint ages", "Independent-uniform ages, 5–95%",
                     "Shared-quantile ages, 5–95%"], rows)
 
     rows = []
-    for r in read("oman_sensitivity.csv"):
-        if r["cutoff"] == "Emsian" and r["history"] == "flat":
-            sel = {x["history"]: x for x in read("oman_sensitivity.csv") if x["cutoff"] == "Emsian"
-                   and x["reading"] == r["reading"] and x["inventory"] == r["inventory"]}
-            label = "included" if r["inventory"] == "with_oman_fragments" else "excluded"
-            rows.append([r["reading"], label, f"{r['n_guaranteed']}/{r['n_possible']}", f"{float(r['oldest_possible_ma']):.1f}"]
+    for reading in ("main", "inclusive"):
+        for variant, label in (("primary", "included"), ("without_oman_fragments", "excluded")):
+            sel = {r["history"]: r for r in bounds if r["category"] == "B0" and r["reading"] == reading
+                   and r["units"] == "locality_age" and r["variant"] == variant and not r["excluded_region"]
+                   and r["cutoff"] == "Emsian"}
+            r = sel["flat"]
+            rows.append([reading, label, f"{r['n_guaranteed']}/{r['n_possible']}", f"{float(r['oldest_possible_ma']):.1f}"]
                         + [fmt(sel[h]) for h in HIST])
     table("oman", ["Reading", "Oman", "Units", "Oldest"] + list(SHORT.values()), rows)
 
@@ -121,7 +119,7 @@ def main():
     for r in read("age_sensitivity.csv"):
         if r["reading"] == "main" and r["cutoff"] == "Emsian" and r["history"] in ("flat", "pbdb_all", "decline25"):
             q = (lambda k: f"{float(r[k]):.2f}" if r[k] else "—")
-            rows.append([CAT[r["category"]], HIST[r["history"]], r["age_rule"].replace("_", " "),
+            rows.append([("B0 -Oman" if r["variant"] == "without_oman_fragments" else CAT[r["category"]]), SHORT[r["history"]], ("indep." if r["age_rule"] == "independent_uniform" else "shared q"),
                          q("bound_q05_ma"), q("bound_median_ma"), q("bound_q95_ma"), r["beyond_domain_fraction"][:4]])
     table("ages", ["Category", "History", "Allocation", "5%", "Median", "95%", "Unbounded fraction"], rows)
 

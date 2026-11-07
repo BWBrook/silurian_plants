@@ -1,0 +1,36 @@
+{
+  "scenario_basis": {
+    "baseline": "zero shift",
+    "all_younger": "every boundary minus one quoted base_unc_ma",
+    "all_older": "every boundary plus one quoted base_unc_ma",
+    "alternating_a_b": "opposite-sign uncertainty basis, globally scaled to retain strict stage order with 1 percent gap reserve"
+  },
+  "pbdb_mapping_rule": "move both endpoints only when both match project boundaries within 1e-06 Ma; otherwise retain numerical support",
+  "candidate_431_2_rule": "retain published numerical 431.2; report a conditional within-Sheinwoodian fractional mapping; and separately reapply the source Homerian-base-plus-quoted-uncertainty rule on the current shifted scale",
+  "b0_membership_source": "canonical_horizons_reviewed",
+  "inputs": {
+    "data/timescale.csv": "29c6cc4a68b1746d1a67c66623e5df30ac5dd316257b55ca5948c9854886f826",
+    "data/macro/horizons_reviewed.csv": "0cba53e0b70cd1d1cc180c2de3003fc16575b33d280dcd28dd04aefc06671f37",
+    "data/macro/effort_reviewed.csv": "6f26e0535f295ac2cef93dfd8201ca05fbc5514f8751453d7bbccf267f07788c",
+    "data/occurrences/raw/pbdb_collections_darriwilian_emsian_2026-10-28.csv": "e0d1f772c1617c218948d1d2605661e93edcfe75e0fe8ce92afee91d3350a8b8",
+    "data/eprp/record/pbdb_plant_collections.csv": "b75db371a979d774ef707afdf689b21111e5e753b542dd660e8c864540a39c66",
+    "models/f3/loop3/analysis.py": "ad2a07f2a4907a763dab7adf043f8305b97a67be12f8773a02f07259fa5c2001",
+    "models/f3/loop3/endpoint.py": "e4a9d28ced03894ef59f38ebdc8586488413525f1b403503652bdd5f972b3594",
+    "models/f3/loop3/histories.py": "06f6b8f0ab1dcdcd7730444d8286b47ea38c30ee04a5e4149e3c965ebe0400f8",
+    "models/f3/loop3/timescale_sensitivity.py": "2bd15ed162d40a5d50159c8f53eb7c4e4865feccf68566abd015b7eb95252002"
+  },
+  "outputs": {
+    "models/f3/loop3/out/stage2_timescale/boundary_scenarios.csv": "0aa5a7ebeae78e50056564b2b13565184f0dcd1a3b3a081353cf9321708fc075",
+    "models/f3/loop3/out/stage2_timescale/unit_age_mapping.csv": "e0bf577c6f895963e4c0ebdcf1683d92952baf446edc1ce164748a24f965cc64",
+    "models/f3/loop3/out/stage2_timescale/effort_scenarios.csv": "3a4bd76e5538dd2befca1879dd287ff578a9019e83f06d45ee22683d4bf79492",
+    "models/f3/loop3/out/stage2_timescale/bound_sensitivity.csv": "60ae847c622bb99ee5f92afcbfb2221e22c73f7ae5d7dfcfbf6b9d865047e4f8",
+    "models/f3/loop3/out/stage2_timescale/max_influence.csv": "98064572daac596303fb463bf2b04f2754723ef81ea3f773be6305cb4b1b3cad"
+  },
+  "environment": {
+    "python": "3.14.4",
+    "numpy": "2.5.4",
+    "pandas": "3.1.1"
+  },
+  "scope": "deterministic shared-boundary sensitivity; quoted uncertainties are not independent uniforms, priors, or propagated confidence distributions",
+  "residual_age_uncertainty": "source correlations, biozone/order constraints, non-ICS PBDB numerical supports and uncertainty in published fossil assignments remain outside these scenarios"
+}

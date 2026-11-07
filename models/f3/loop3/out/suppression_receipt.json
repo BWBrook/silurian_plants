@@ -1,16 +1,16 @@
 {
   "inputs": {
-    "data/macro/horizons_reviewed.csv": "2088c3274c4a91c57b113054660c4a6a14d30fca1a15da7bd96d5c3d4279e1ad",
-    "data/macro/effort_reviewed.csv": "d2ecfd0a80505e0ac3f22655bcf7635453b9bfc6bda86230315174f5c6e96ee7",
-    "data/macro/build_receipt.json": "43c5bde72e2352690f6a137d824c4b0242f08dab8d321493aef7e8a3a5613d3f",
+    "data/macro/horizons_reviewed.csv": "0cba53e0b70cd1d1cc180c2de3003fc16575b33d280dcd28dd04aefc06671f37",
+    "data/macro/effort_reviewed.csv": "6f26e0535f295ac2cef93dfd8201ca05fbc5514f8751453d7bbccf267f07788c",
+    "data/macro/build_receipt.json": "b113f14989b9fe89aa7bcf44f2ffbc7644d239bc6b941935122db6c29cc4ac33",
     "data/timescale.csv": "29c6cc4a68b1746d1a67c66623e5df30ac5dd316257b55ca5948c9854886f826",
-    "models/f3/loop3/analysis.py": "161edb7741eaf1644dba5216b15f7f6a412d29d0eabc3a8e7db92e6c14939f5a",
+    "models/f3/loop3/analysis.py": "ad2a07f2a4907a763dab7adf043f8305b97a67be12f8773a02f07259fa5c2001",
     "models/f3/loop3/histories.py": "06f6b8f0ab1dcdcd7730444d8286b47ea38c30ee04a5e4149e3c965ebe0400f8",
     "models/f3/loop3/endpoint.py": "e4a9d28ced03894ef59f38ebdc8586488413525f1b403503652bdd5f972b3594",
-    "models/f3/loop3/suppression_sensitivity.py": "77d26793932389cd30b8f3c383967234662dcbbdb91f22fcc633b11eb0acd43f"
+    "models/f3/loop3/suppression_sensitivity.py": "49a0c87efd1c8eae27a0122e27b21a32b82de07fbf3031b1c557220eb937a05c"
   },
   "outputs": {
-    "models/f3/loop3/out/suppression_sensitivity.csv": "f7a21f6e4dda5c7e6d0f0b6fd29fb440ae5968cde1aeca187e9e2ceb7c51e0df"
+    "models/f3/loop3/out/suppression_sensitivity.csv": "33e8a553071a03a5b7e9d81618eb3675b62e11d93f259043ecef6eeab15fbed1"
   },
   "breaks_ma": [
     419.62,
@@ -23,6 +23,6 @@
     0.1,
     0.01
   ],
-  "rows": 144,
+  "rows": 192,
   "scope": "retrospective complete sensitivity grid; not fitted or selected against clock ages"
 }

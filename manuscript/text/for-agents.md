@@ -34,7 +34,7 @@ strongest to weakest: *source extraction* and *frozen qualified result*; *review
 model-conditional calculation*; *procedure check*. A procedure check (for example, simulation
 coverage) tests the method, never the fossils.
 
-The article, supplement, brief and this guide all cite the ledger. In the Markdown, `[428.8]{.C27}`
+The article, supplement, brief and this guide all cite the ledger. In the Markdown, `[428.8]{.C27 .V012}`
 binds a quoted number to C27 (invisible when rendered), and `tools/claims.py check` fails if the number
 no longer equals one of C27's values at the precision shown, if a cited claim is superseded, or if a
 ledger value cannot be found in its evidence. Change a result in the ledger first; the check then lists
@@ -56,17 +56,17 @@ every sentence that must follow.
   constant class H0c, [0.092–0.184]{.C24} for the exposure-weighted class H0 (C04 gives the ρ = 1 readouts).
   QSIM-801 is exploratory only (C11–C14, C23); C12 is a minimum trilete:cryptospore ratio, not a share.
 - **M3 (431.2 Ma, crown Tracheophyta).** No absence design (C17). Positive-record endpoints for B2:
-  [428.84]{.C27} / [428.88]{.C27} / [428.45]{.C27} / [431.63]{.C27} Ma / none within domain, for constant, PBDB-density,
+  [428.84]{.C27 .V013} / [428.88]{.C27 .V014} / [428.45]{.C27 .V015} / [431.63]{.C27 .V016} Ma / none within domain, for constant, PBDB-density,
   plant-excluded-density, 25 Myr decline and 10 Myr decline histories (C27). Recovery reduced tenfold
   before [426.7]{.C32} Ma gives [448.10]{.C32} Ma; a hundredfold gives no bound (C32, retrospective). Region–stage and
-  curated-only units give [432.07]{.C30} and [434.05]{.C30} Ma under constant intensity (C30), across 431.2 Ma. The anchor
+  curated-only units give [432.38]{.C30} and [434.05]{.C30} Ma under constant intensity (C30), across 431.2 Ma. The anchor
   of 431.2 Ma omits the older *C. barrandei*, a shift of up to about [3]{.C47} Myr on Hooper et al.'s own rule (C47).
 - **Land-plant bodies (B0).** Canonical B0 includes the Katian Oman sporangial fragments as one unit,
-  oldest possible age [452.8]{.C40} Ma: bounds [455.19–456.62]{.C40} Ma under constant and effort-like histories and
-  [465.21]{.C40} Ma under decline25, and every history fits poorly (C40, C41). Excluding them (C28) gives
+  oldest possible age [452.8]{.C40 .V031} Ma: bounds [455.19]{.C40 .V032}–[456.62]{.C40 .V033} Ma under constant and effort-like histories and
+  [465.21]{.C40 .V034} Ma under decline25, and every history fits poorly (C40, C41). Excluding them (C28) gives
   [434.51–437.16]{.C28} Ma. Neither is a lag, a delay or a date of body recoverability; 458.2 Ma is a fossil minimum.
-  The canonical rebuild of `horizons_reviewed.csv` is pending (Codex); until then C40 comes from
-  `oman_sensitivity.py`.
+  The canonical inventory and its exclusion variant now rebuild through `build_reviewed.py` and
+  `analysis.py`, with explicit body-membership tests.
 - **Synthesis.** An older, sparsely recorded flora is allowed, not required. The record cannot test the
   rate of recorded, identifiable occurrences before its oldest find, and no result ranks the clocks.
 
@@ -101,7 +101,7 @@ to the Strauss–Sadler/Marshall interval. Code: `models/f3/loop3/endpoint.py`.
 | Persistence pilot | Hooper et al. deposits (fetched, hash-checked) | `models/pilot-asr/` (R, renv) | `models/pilot-asr/out/` | C18–C20 |
 | Body record | PBDB extract and `data/macro/*` (names, adjudications, older screen) | `models/f3/loop3/build_reviewed.py`, `analysis.py` | `models/f3/loop3/out/reviewed_bounds.csv`, `primary_unit_membership.csv`, `shape_diagnostics.csv`, `age_sensitivity.csv`, `delay_sensitivity.csv` | C25–C31, C33 |
 | Suppression grid | as above | `suppression_sensitivity.py` | `suppression_sensitivity.csv` | C32 |
-| Oman B0 sensitivity | as above, plus observation S-w22-K12 | `oman_sensitivity.py` | `oman_sensitivity.csv`, `oman_shape.csv` | C40–C41 |
+| Canonical B0 and Oman exclusion | as above; `body_membership.csv` admits S-w22-K12 | `build_reviewed.py` and `analysis.py` | `reviewed_bounds.csv`, `shape_diagnostics.csv` (`variant=primary` or `without_oman_fragments`) | C28, C40–C41 |
 | Borenshult readings | `data/units/borenshult_review/` | `models/f3/borenshult_review.py` | `models/f3/out/borenshult_review/` | C42–C44 |
 | Simulations | unit counts from above | `simulation.py` | `simulation_results.csv` | C34 |
 | Paper figures | the outputs above, `data/spores/first_appearances.csv`, `data/timescale.csv` | `manuscript/figures.py` | `manuscript/figures/`, hashes in `figures.json` | — |
@@ -159,6 +159,33 @@ Do not reintroduce any of these. Each was caught in review; the record is in `su
     A swap of two values within one claim passes; check meaning against `estimands.md`.
 
 
+## Stage 2 results awaiting paper integration
+
+The numerical package is implemented; C48–C52 remain provisional for Claude's integration and
+semantic review against `estimands.md`. Canonical B0 and the E4-only B1 admission repair are
+already propagated into the older claims and generated tables; the full new analyses have not
+been written into the article or brief.
+
+- **Frontier (C48):** with the primary B2 units and zero assumed diagnostic delay, candidate ages
+  [431.2]{.C48 .V035}, [444]{.C48 .V036}, [447]{.C48 .V037} and [452]{.C48 .V038} Ma have earlier/later recording contours
+  [0.475557]{.C48 .V039}, [0.123700]{.C48 .V040}, [0.105419]{.C48 .V041} and [0.084585]{.C48 .V042}.
+  Unit and diagnostic-delay alternatives are in `frontier.csv`; they are retrospective contours.
+- **Intervals (C49):** a permitted allocation of all [50]{.C49 .V043} possible B2 units gives the 25 Myr
+  decline an asymptotic conditional-age p of [0.07661]{.C49 .V044}. This defeats a blanket rejection of
+  that history across the recorded age supports. The output also enumerates cutoff-straddling
+  inclusion states and provides negative certificates where the best attainable diagnostic fails.
+  The optimised p values are not calibrated p values for a latent-age search.
+- **Timescale (C50):** the primary constant B2 bound ranges from [427.31]{.C50 .V045} to [430.42]{.C50 .V046} Ma
+  across the shared-boundary scenarios. This is sensitivity to stated deterministic boundary
+  movements, with source-scale mapping explicit; it is not a probability interval.
+- **Murzuq (C51):** the independent constant-history contour is [0.091030]{.C51 .V047}; separate well
+  rates give [0.099513]{.C51 .V048}, and inverse block-size weighting gives [0.393002]{.C51 .V049} for
+  well–formation blocks and [0.418871]{.C51 .V050} for well–stage-support blocks. The latter are
+  unqualified composite-likelihood sensitivities.
+- **Influence (C52):** removing the three Yea units changes the main constant B2 bound by
+  [−1.669552]{.C52 .V051} Myr; removing the five Bathurst units changes it by [0.257617]{.C52 .V052} Myr.
+  The same-unit leave-out table records both readings; effects can change direction.
+
 ## 6. Checks before and after any change
 
 From the repository root:
@@ -174,7 +201,7 @@ python3 tools/units.py check              # unit tables and source hashes
 python3 manuscript/package.py             # release inventory with SHA-256
 ```
 
-Invariants worth asserting when you touch the body-record code: B2 constant bound [428.84]{.C27} Ma at
+Invariants worth asserting when you touch the body-record code: B2 constant bound [428.84]{.C27 .V017} Ma at
 n_guaranteed [48]{.C25} and oldest possible 426.7 Ma; B0 constant bound [434.51]{.C28} Ma; exact-age simulation coverage
 [0.941–0.958]{.C34}. Any change to these needs a decision entry and a ledger update, not just a passing test.
 

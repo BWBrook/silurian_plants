@@ -44,8 +44,10 @@ def main():
     histories = load_histories()
     rows = []
     for reading in ("main", "inclusive"):
-        for category in ("B0", "B1", "B2"):
-            records = analysis.select_records(h, category, reading)
+        for category, variant in (("B0", "primary"), ("B0", "without_oman_fragments"),
+                                  ("B1", "primary"), ("B2", "primary")):
+            excluded = {"tail:S-w22-K12"} if variant == "without_oman_fragments" else None
+            records = analysis.select_records(h, category, reading, exclude_members=excluded)
             midpoint = (records.min_ma.values + records.max_ma.values) / 2
             for baseline in ("flat", "pbdb_all"):
                 for break_ma in BREAKS:
@@ -54,7 +56,7 @@ def main():
                         fit, possible, certain, oldest = analysis.envelope(records, recovery, YOUNG)
                         d, p = analysis.shape_check(midpoint, recovery, YOUNG)
                         modified_support = int((records.max_ma > break_ma).sum())
-                        rows.append({"category": category, "reading": reading, "baseline": baseline,
+                        rows.append({"category": category, "reading": reading, "inventory_variant": variant, "baseline": baseline,
                                      "break_ma": break_ma, "older_multiplier": multiplier,
                                      "n_guaranteed": certain, "n_possible": possible, "oldest_possible_ma": oldest,
                                      "n_units_support_older_than_break": modified_support,

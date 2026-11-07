@@ -1,0 +1,16 @@
+{
+  "inputs": {
+    "models/f3/out/m2_units.csv": "6fcae5714f4a5e04e1e61e6ff15bbce3fd35db1374fae665038e3d6ba3e344c0",
+    "data/timescale.csv": "29c6cc4a68b1746d1a67c66623e5df30ac5dd316257b55ca5948c9854886f826",
+    "models/f3/loop3/murzuq_stage2.py": "362e6ffd04476418ab045a8eb9e08395881c2635e8b34fbf9e501305fe8add19"
+  },
+  "outputs": {
+    "models/f3/loop3/out/stage2_murzuq/time_by_well.pdf": "9e8986cff5709ce3baf654c76e65139fcbe79e778261a06de78f887bae04b04a",
+    "models/f3/loop3/out/stage2_murzuq/time_by_well.png": "55676683192ab72e2614f16b7fe71643b1fe8bc9c909f525a59b3732fed7b82c",
+    "models/f3/loop3/out/stage2_murzuq/sample_time_support.csv": "1bdce844d50af77693c4e0a0cfd909131212844bf2952972d020ab003ab3603f",
+    "models/f3/loop3/out/stage2_murzuq/older_support_summary.csv": "7fe551cadc3c47e94db754509553e427e3ef55f99e57a4c2f8957f57f245d798",
+    "models/f3/loop3/out/stage2_murzuq/dependence_sensitivity.csv": "062fdc10ebefd6f3ae92e4840459e6bead041a85ee926322e5147ac00c359b80"
+  },
+  "age_model": "independent uniform full-stage support for exposure; diagnostic only",
+  "block_model": "inverse block-size weights; not a calibrated confidence procedure"
+}

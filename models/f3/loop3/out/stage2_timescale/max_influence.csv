@@ -1,0 +1,13 @@
+category,history,max_bound_influence_scenario,max_absolute_bound_shift_ma,signed_bound_shift_ma,max_candidate_comparison_influence_scenario,max_absolute_candidate_margin_shift_ma,signed_candidate_margin_shift_ma,max_source_rule_comparison_influence_scenario,max_absolute_source_rule_margin_shift_ma,signed_source_rule_margin_shift_ma
+B0_canonical,decline10,no_finite_bound,,,no_finite_bound,,,no_finite_bound,,
+B0_canonical,decline25,alternating_a,1.15729021797,-1.15729021797,all_younger,0.781517259653,0.781517259653,all_younger,0.807604216175,0.807604216175
+B0_canonical,flat,all_older,0.720626128339,0.720626128339,all_younger,0.585572409256,0.585572409256,all_younger,0.611659365777,0.611659365777
+B0_canonical,pbdb_all,all_younger,0.886715665843,-0.886715665843,all_older,0.401124040265,-0.401124040265,alternating_a,0.544157014994,0.544157014994
+B0_canonical,pbdb_excluded_decline10,no_finite_bound,,,no_finite_bound,,,no_finite_bound,,
+B0_canonical,pbdb_plant_excluded,all_older,0.840993445459,0.840993445459,all_younger,0.472468048765,0.472468048765,alternating_a,0.56043854074,0.56043854074
+B2_primary,decline10,no_finite_bound,,,no_finite_bound,,,no_finite_bound,,
+B2_primary,decline25,all_older,1.77718441719,1.77718441719,alternating_a,1.81264056582,1.81264056582,alternating_a,2.29167261561,2.29167261561
+B2_primary,flat,all_older,1.58056409595,1.58056409595,alternating_a,1.64926527643,1.64926527643,alternating_a,2.12829732622,2.12829732622
+B2_primary,pbdb_all,all_older,1.46802906369,1.46802906369,alternating_a,0.645365672947,0.645365672947,alternating_a,1.12439772274,1.12439772274
+B2_primary,pbdb_excluded_decline10,no_finite_bound,,,no_finite_bound,,,no_finite_bound,,
+B2_primary,pbdb_plant_excluded,all_older,1.44868069695,1.44868069695,alternating_a,0.804236488974,0.804236488974,alternating_a,1.28326853876,1.28326853876

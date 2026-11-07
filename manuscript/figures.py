@@ -34,7 +34,6 @@ SPORES = ROOT / "data/spores/first_appearances.csv"
 MEMBERS = ROOT / "models/f3/loop3/out/primary_unit_membership.csv"
 BOUNDS = ROOT / "models/f3/loop3/out/reviewed_bounds.csv"
 SUPPRESS = ROOT / "models/f3/loop3/out/suppression_sensitivity.csv"
-OMAN = ROOT / "models/f3/loop3/out/oman_sensitivity.csv"
 BENTONITE_MA = 454.41
 MAPPING = ROOT / "manuscript/mapping.csv"
 
@@ -83,9 +82,9 @@ def spore_first(cls):
     return float(row["fa_possible_ma"]), float(row["fa_certain_ma"])
 
 
-def primary_bound(cat, history):
+def primary_bound(cat, history, variant="primary"):
     r = next(r for r in read(BOUNDS) if r["category"] == cat and r["reading"] == "main" and r["units"] == "locality_age"
-             and r["variant"] == "primary" and not r["excluded_region"] and r["cutoff"] == "Emsian"
+             and r["variant"] == variant and not r["excluded_region"] and r["cutoff"] == "Emsian"
              and r["history"] == history)
     return (float(r["older_bound_ma"]) if r["status"] == "bounded" else None), float(r["oldest_possible_ma"]), r
 
@@ -96,9 +95,11 @@ def suppressed(cat, mult):
     return float(r["older_bound_ma"]) if r["status"] == "bounded" else None
 
 
-def body_first(cat):
+def body_first(cat, exclude_oman=False):
     """Oldest possible age, and the age by which a unit of this category is certainly present."""
     units = [r for r in read(MEMBERS) if r["reading"] == "main" and r["category"] == cat]
+    if exclude_oman:
+        units = [r for r in units if "tail:S-w22-K12" not in r["member_ids"]]
     return max(float(r["max_ma"]) for r in units), max(float(r["min_ma"]) for r in units)
 
 
@@ -119,11 +120,11 @@ def fig_problem(path):
         ax.spines[["left", "top", "right"]].set_visible(False)
     ax = axes[2]
     crypt, trilete = spore_first("cryptospore"), spore_first("trilete")
-    oman = max(float(r["oldest_possible_ma"]) for r in read(OMAN) if r["inventory"] == "with_oman_fragments")
+    oman = body_first("B0")[0]
     rows = [("Land-plant cryptospores (compilation)", crypt), ("Trilete spores (compilation)", trilete),
             ("Trilete spores, Borenshult-1 definite (describing authors)", (stage_base("Sandbian"), BENTONITE_MA)),
             ("Land-plant bodies, including Oman sporangial fragments", (oman, stage_base("Hirnantian"))),
-            ("Land-plant bodies, excluding Oman fragments", body_first("B0")),
+            ("Land-plant bodies, excluding Oman fragments", body_first("B0", exclude_oman=True)),
             ("Crown vascular-plant bodies", body_first("B2"))]
     s4 = (stage_base("Stage 4"), stage_base("Wuliuan"))
     top = len(rows)
@@ -221,20 +222,16 @@ def fig_bodies(path):
     crypt = spore_first("cryptospore")
     for ax, (cat, title) in zip(axes, cats):
         rows = []
-        om = {r["history"]: r for r in read(OMAN) if r["reading"] == "main" and r["cutoff"] == "Emsian"
-              and r["inventory"] == "with_oman_fragments"}
         for key, lab, mk, col in hist:
             b, oldest, r = primary_bound(cat, key)
             if cat == "B0":
-                excluded = b
-                b = float(om[key]["older_bound_ma"]) if om[key]["status"] == "bounded" else None
+                excluded = primary_bound(cat, key, "without_oman_fragments")[0]
             rows.append((lab, b, mk, col, False, excluded if cat == "B0" else None))
         if cat != "B0":
             for mult, lab in retro:
                 rows.append((lab + " †", suppressed(cat, mult), "^", "#7d3c98", True, None))
         n = int(r["n_guaranteed"])
         if cat == "B0":
-            oldest, n = float(om["flat"]["oldest_possible_ma"]), int(om["flat"]["n_guaranteed"])
             for i, row in enumerate(rows):
                 if row[5] is not None:
                     ax.plot(row[5], len(rows) - 1 - i, "x", color="0.35", ms=6, mew=1.3)
@@ -255,7 +252,7 @@ def fig_bodies(path):
             if b is None:
                 ax.annotate("", xy=(472, yy), xytext=(oldest + 3, yy),
                             arrowprops={"arrowstyle": "->", "color": col, "lw": 1.2, "ls": "--" if is_retro else "-"})
-                ax.text(oldest + 4, yy + 0.25, "no bound within 469.4 Ma", fontsize=6.6, color=col)
+                ax.text(oldest + 4, yy + 0.25, "no bound within 469.4 Ma", fontsize=6.6, color=col, ha="right")
             else:
                 ax.plot([oldest, b], [yy, yy], color=col, lw=1.0, alpha=0.6, ls="--" if is_retro else "-")
                 ax.plot(b, yy, mk, color=col, ms=5.5, mfc="white" if is_retro else col)
@@ -325,7 +322,7 @@ def fig_brief(path):
                [(n.replace(" et al.", ""), o, y, CLOCK_COLOURS[n], None) for n, o, y in CLOCKS["tracheophyta"]]),
               ("Fossils (pale: possibly present; dark: certainly present)",
                [("Land-plant spores", *spore_first("cryptospore")[::-1], "#5b7fa6", None),
-                ("Spore-capsule fragments (Oman)", stage_base("Hirnantian"), max(float(r["oldest_possible_ma"]) for r in read(OMAN)), "#5b7fa6", None),
+                ("Spore-capsule fragments (Oman)", stage_base("Hirnantian"), body_first("B0")[0], "#5b7fa6", None),
                 ("Branched plant bodies", *body_first("B1")[::-1], "#5b7fa6", None),
                 ("Vascular-plant bodies", *body_first("B2")[::-1], "#5b7fa6", None)])]
     y, ticks, labels = 0, [], []
@@ -368,7 +365,7 @@ def main():
     fig_bodies(OUT / "fig4_bodies")
     fig_qsim(OUT / "figS2_qsim")
     fig_brief(OUT / "figB1_brief")
-    inputs = [QSIM, TIMESCALE, SPORES, MEMBERS, BOUNDS, SUPPRESS, OMAN, MAPPING,
+    inputs = [QSIM, TIMESCALE, SPORES, MEMBERS, BOUNDS, SUPPRESS, MAPPING,
               ROOT / "models/f3/loop2/contamination.py", Path(__file__)]
     bound = contamination._input_hashes()
     bound.update({str(p.relative_to(ROOT)): hashlib.sha256(p.read_bytes()).hexdigest() for p in inputs})

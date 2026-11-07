@@ -1,0 +1,51 @@
+category,history,unit_id,recorded_min_ma,analysis_min_ma,recorded_max_ma,member_ids,n_members,allocated_ma,role,conditional_rank,normalised_exposure,within_recorded_support,n_units,n_conditional_ages
+B2_possible,pbdb_all,"Argentina|chica de zonda range, san juan|419.62|422.7",419.62,419.62,422.7,tail:M-rinconada,1,419.62,conditional_age,38,0.860306169339,True,50,49
+B2_possible,pbdb_all,Australia|frenchmans spur / thomson river type-material district|393.47|413.02,393.47,393.47,413.02,tail:M-wilson-creek,1,412.603554661,conditional_age,23,0.459183673469,True,50,49
+B2_possible,pbdb_all,"Australia|ghin ghin road, yea|393.47|422.7",393.47,393.47,422.7,tail:M-ghin-ghin-b2,1,416.139770662,conditional_age,33,0.663265306122,True,50,49
+B2_possible,pbdb_all,"Australia|ghin ghin road, yea|393.47|426.7",393.47,393.47,426.7,tail:M-ghin-ghin,1,415.779311987,conditional_age,32,0.642857142857,True,50,49
+B2_possible,pbdb_all,"Australia|limestone road, brackley's (barkley's) cutting, yea; loc. 4 (= h4) of garratt's 1978 map; the national heritage place flora fossil site|393.47|426.7",393.47,393.47,426.7,tail:M-limestone-road,1,415.418853311,conditional_age,31,0.622448979592,True,50,49
+B2_possible,pbdb_all,"BE|bois d'ausse sandstone|50.5,5.7|413.02|419.62",413.02,413.02,419.62,pbdb:11722,1,415.058394636,conditional_age,30,0.602040816327,True,50,49
+B2_possible,pbdb_all,"BE|burnotien|50.6,4.1|399.5|413.02",399.5,399.5,413.02,pbdb:23200;pbdb:23202,2,413.02,conditional_age,25,0.486632606213,True,50,49
+B2_possible,pbdb_all,"BE|grès de wiheries|50.4,3.8|410.62|413.02",410.62,410.62,413.02,pbdb:22860;pbdb:23197,2,410.62,conditional_age,12,0.328442725196,True,50,49
+B2_possible,pbdb_all,"BY||53.2,30.8|393.47|399.5",393.47,393.47,399.5,pbdb:232956,1,399.330991437,conditional_age,6,0.112244897959,True,50,49
+B2_possible,pbdb_all,"CA|bathurst island|75.8,-98.4|410.62|413.02",410.62,410.62,413.02,pbdb:11421;pbdb:11425,2,410.62,conditional_age,13,0.328442725196,True,50,49
+B2_possible,pbdb_all,"CA|battery point|48.6,-64.3|393.47|410.62",393.47,393.47,410.62,pbdb:29001;pbdb:31004,2,400.396626244,conditional_age,7,0.132653061224,True,50,49
+B2_possible,pbdb_all,"CA|battery point|48.8,-64.3|393.47|410.62",393.47,393.47,410.62,pbdb:26026;pbdb:26547;pbdb:28924;pbdb:28997;pbdb:29002;pbdb:29003;pbdb:29026;pbdb:31023;pbdb:31212,9,401.462261051,conditional_age,8,0.15306122449,True,50,49
+B2_possible,pbdb_all,"CA|battery point|48.8,-64.4|393.47|410.62",393.47,393.47,410.62,pbdb:28968;pbdb:28971;pbdb:31002;pbdb:31003;pbdb:31213;pbdb:31215,6,402.527895858,conditional_age,9,0.173469387755,True,50,49
+B2_possible,pbdb_all,"CA|battery point|48.8,-64.5|393.47|410.62",393.47,393.47,410.62,pbdb:28950;pbdb:28969;pbdb:28996;pbdb:28998;pbdb:29029;pbdb:31007;pbdb:31010;pbdb:31011;pbdb:31027,9,403.593530664,conditional_age,10,0.19387755102,True,50,49
+B2_possible,pbdb_all,"CA|battery point|48.9,-64.4|393.47|410.62",393.47,393.47,410.62,pbdb:31214,1,404.659165471,conditional_age,11,0.214285714286,True,50,49
+B2_possible,pbdb_all,"CA|york river|48.6,-64.3|393.47|410.62",393.47,393.47,410.62,pbdb:31216,1,407.856069891,conditional_age,14,0.275510204082,True,50,49
+B2_possible,pbdb_all,"CA|york river|48.8,-64.4|393.47|410.62",393.47,393.47,410.62,pbdb:29020;pbdb:31005,2,408.921704698,conditional_age,15,0.295918367347,True,50,49
+B2_possible,pbdb_all,"CN|posongchong|23.3,104.2|410.62|413.02",410.62,410.62,413.02,pbdb:10891,1,413.02,conditional_age,26,0.486632606213,True,50,49
+B2_possible,pbdb_all,"CN|posongchong|23.3,104.3|410.62|413.02",410.62,410.62,413.02,pbdb:10896,1,413.02,conditional_age,28,0.486632606213,True,50,49
+B2_possible,pbdb_all,"CN|xiemisitai|46.8,85.6|419.62|422.7",419.62,419.62,422.7,pbdb:278439,1,419.62,conditional_age,39,0.860306169339,True,50,49
+B2_possible,pbdb_all,"CN|xujiachong (also called longhuashan)|26.0,104.0|393.47|410.62",393.47,393.47,410.62,pbdb:10941,1,410.62,conditional_age,18,0.328442725196,True,50,49
+B2_possible,pbdb_all,"Canada|us383 (=us600), polar bear pass region, bathurst island|419.62|425.0",419.62,419.62,425,tail:M-bathurst-us383,1,419.62,conditional_age,40,0.860306169339,True,50,49
+B2_possible,pbdb_all,"Canada|us384, polar bear pass region, bathurst island|419.62|425.0",419.62,419.62,425,tail:M-bathurst-us384,1,419.62,conditional_age,41,0.860306169339,True,50,49
+B2_possible,pbdb_all,"Canada|us385 (=us601), polar bear pass region, bathurst island|419.62|425.0",419.62,419.62,425,tail:M-bathurst-us385,1,419.62,conditional_age,42,0.860306169339,True,50,49
+B2_possible,pbdb_all,"Canada|us688, polar bear pass region, bathurst island|419.62|425.0",419.62,419.62,425,tail:M-bathurst-us688,1,423.186982176,profiled_maximum,,1,True,50,49
+B2_possible,pbdb_all,"China|mangkelu ii section, wutubulake village, hoboksar, west junggar|419.62|422.7",419.62,419.62,422.7,tail:M-mangkelu-ii,1,420.27295911,conditional_age,44,0.887755102041,True,50,49
+B2_possible,pbdb_all,"China|qujing, northeastern yunnan|419.62|422.7",419.62,419.62,422.7,tail:M-qujingense,1,420.758431396,conditional_age,45,0.908163265306,True,50,49
+B2_possible,pbdb_all,China|west junggar|419.62|422.7,419.62,419.62,422.7,tail:M-aberlemnia-junggaria,1,421.243903683,conditional_age,46,0.928571428571,True,50,49
+B2_possible,pbdb_all,"Czech Republic|karlštejn, ve spáleném, near house 132|419.62|422.7",419.62,419.62,422.7,tail:M-baragwanathia-karlstejn,1,421.729375969,conditional_age,47,0.948979591837,True,50,49
+B2_possible,pbdb_all,"DE|hunsrück slate|49.8,7.4|399.5|410.62",399.5,399.5,410.62,pbdb:26904,1,410.62,conditional_age,19,0.328442725196,True,50,49
+B2_possible,pbdb_all,"DE|wahnbach|50.9,7.3|410.62|413.02",410.62,410.62,413.02,pbdb:232143,1,413.02,conditional_age,29,0.486632606213,True,50,49
+B2_possible,pbdb_all,"DE||50.2,7.4|399.5|410.62",399.5,399.5,410.62,pbdb:27049;pbdb:27129,2,410.62,conditional_age,21,0.328442725196,True,50,49
+B2_possible,pbdb_all,"KZ|aigyrzhal'skaya suite|47.0,79.0|393.47|413.02",393.47,393.47,413.02,pbdb:32851,1,412.293929346,conditional_age,22,0.438775510204,True,50,49
+B2_possible,pbdb_all,"Norway|red bay series brook section, spitsbergen|413.02|419.62",413.02,413.02,419.62,tail:M-svalbard,1,417.581605363,conditional_age,37,0.744897959184,True,50,49
+B2_possible,pbdb_all,"RU|pridorozhnaya|54.5,89.9|399.5|410.62",399.5,399.5,410.62,pbdb:238400,1,410.62,conditional_age,20,0.328442725196,True,50,49
+B2_possible,pbdb_all,"RU|salairka horizon|54.3,85.9|399.5|410.62",399.5,399.5,410.62,pbdb:35709,1,399.5,conditional_age,4,0.11548161125,True,50,49
+B2_possible,pbdb_all,"UA|rashkovskie beds|48.5,26.3|419.62|422.7",419.62,419.62,422.7,pbdb:52702,1,422.214848256,conditional_age,48,0.969387755102,True,50,49
+B2_possible,pbdb_all,"UA|skala|49.6,23.9|419.62|422.7",419.62,419.62,422.7,pbdb:13873,1,422.7,conditional_age,49,0.989782443504,True,50,49
+B2_possible,pbdb_all,"UK|dryden flags|57.3,-2.8|410.62|413.02",410.62,410.62,413.02,pbdb:10721,1,412.913179977,conditional_age,24,0.479591836735,True,50,49
+B2_possible,pbdb_all,"UK|dundee flagstone|56.0,-2.0|413.02|419.62",413.02,413.02,419.62,pbdb:10705,1,417.221146688,conditional_age,36,0.724489795918,True,50,49
+B2_possible,pbdb_all,"UK|dundee|56.7,-2.8|413.02|419.62",413.02,413.02,419.62,pbdb:26755;pbdb:26757,2,416.860688013,conditional_age,35,0.704081632653,True,50,49
+B2_possible,pbdb_all,"UK|senni|51.9,-3.6|410.62|413.02",410.62,410.62,413.02,pbdb:238752,1,413.02,conditional_age,27,0.486632606213,True,50,49
+B2_possible,pbdb_all,"UK|st. maughans|52.0,-2.0|413.02|419.62",413.02,413.02,419.62,pbdb:10679,1,416.500229337,conditional_age,34,0.683673469388,True,50,49
+B2_possible,pbdb_all,"UK|strathmore|55.0,-4.0|393.47|410.62",393.47,393.47,410.62,pbdb:10719,1,396.134087017,conditional_age,3,0.0510204081633,True,50,49
+B2_possible,pbdb_all,"UK|strathmore|56.2,-4.2|393.47|410.62",393.47,393.47,410.62,pbdb:11513,1,395.06845221,conditional_age,2,0.030612244898,True,50,49
+B2_possible,pbdb_all,"US|beartooth butte|44.9,-108.1|393.47|410.62",393.47,393.47,410.62,pbdb:29294,1,410.62,conditional_age,17,0.328442725196,True,50,49
+B2_possible,pbdb_all,"US|beartooth butte|45.0,-109.6|393.47|410.62",393.47,393.47,410.62,pbdb:26176;pbdb:29292;pbdb:31000,3,409.987339505,conditional_age,16,0.316326530612,True,50,49
+B2_possible,pbdb_all,"Vietnam|xóm chè quarry, northern vietnam|419.62|422.7",419.62,419.62,422.7,tail:M-van-canh,1,419.787486823,conditional_age,43,0.867346938776,True,50,49
+B2_possible,pbdb_all,"RU|shanda horizon|54.3,85.9|387.95|399.5",387.95,393.47,399.5,pbdb:35721,1,398.26535663,conditional_age,5,0.0918367346939,True,50,49
+B2_possible,pbdb_all,"US|trout valley|46.1,-68.6|387.95|399.5",387.95,393.47,399.5,pbdb:10614;pbdb:10617,2,394.002817403,conditional_age,1,0.0102040816327,True,50,49

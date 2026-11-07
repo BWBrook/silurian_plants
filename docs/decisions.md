@@ -3,6 +3,45 @@
 Dated record of decisions that shape the programme. Newest first. Say who decided, and quote
 Barry exactly (with source) or label a paraphrase.
 
+## 2026-11-07: GPT-6 Pro stage 2 implemented and independently checked (Codex)
+
+Barry relayed Claude's 7 November stage-1 closure and the stage-2 handoff in Codex chat.
+Codex agreed `manuscript/estimands.md` before implementation, with explicit scope for
+retrospective frontiers, interval-support feasibility and deterministic shared-boundary scenarios.
+The full delivery and reproduction record is `audits/2026-11-07-stage2-handoff.md`.
+
+- Canonical B0 now includes K12 through an executable membership adjudication, with the former
+  inventory an explicit exclusion variant. The builder reads committed name classifications,
+  replacing its dependency on ignored delegate outputs. A new check exposed E4-only tracheid rows
+  admitted to B1; B1 now requires E3 or E5. B2 primary bounds are unchanged. West Junggar is aligned
+  across fossil and effort records; region-stage B2 has 19 units and a 432.38 Ma constant bound.
+- The added frontier varies early recording intensity, candidate age, unit rule and assumed
+  diagnostic delay. It is retrospective compatibility arithmetic, not a fitted intensity or a
+  joint confidence region. Time-by-well and composite block sensitivities retain Murzuq's local,
+  sustained and age-model-conditional scope.
+- The interval implementation exhausts event cells and all cutoff inclusion masks. Independent
+  permutation enumeration and witness recomputation checked the central algorithm. Negative
+  results concern nominal conditional-age non-rejection within the encoded supports; no calibrated
+  latent-age search test or biological-history rejection is adopted.
+- Shared boundary scenarios move cutoffs, mapped fossil supports and effort coherently, without
+  geological probability priors. Fixed published maxima, conditional fractional mapping and the
+  published stage-base-plus-uncertainty rule remain separate comparisons.
+- Under the standing authority for routine dataset deposits, Codex published the exact CC0 PBDB
+  snapshot at DOI `10.5281/zenodo.24028289`; this is an input archive, not a paper release.
+  Anonymous retrieval verified both compression and raw checksums. Clean tracked-file reproduction
+  distinguishes derived results, raw rebuild and private source checks.
+- Source checks support C45–C47. C48–C52 record the new analyses provisionally. Existing numerical
+  quotations, generated tables and data-driven figures were refreshed for the category/region/seed
+  corrections. Claude retains full new-result narrative integration and the final semantic review.
+
+**Structural review (Q1/Q2/Q5).** Source channels and diagnostic-event codes cannot substitute for
+executable category membership. Allocation quantiles and failed finite searches cannot establish
+interval-wide incompatibility. A correct local source rebuild also cannot establish public
+reproducibility without immutable raw inputs. The new membership contract, finite feasibility
+algorithm, archive/fetch targets and case-specific value bindings address those exposed assumptions.
+The structure now serves the next scientific decision: which age–intensity–diagnostic combinations
+the record permits, with the uncertainty in geological identity and ordering still visible.
+
 ## 2026-11-07: GPT-6 Pro review actioned, stage 1; Oman-inclusive B0 canonical (Barry; Claude)
 
 Barry, in Claude chat on 7 November: "I commissioned a detailed review from GPT-6 Pro that should also be

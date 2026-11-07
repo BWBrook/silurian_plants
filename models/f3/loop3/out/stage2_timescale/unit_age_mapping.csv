@@ -1,0 +1,641 @@
+scenario,category,unit_id,member_ids,source,baseline_min_ma,baseline_max_ma,scenario_min_ma,scenario_max_ma,mapping_basis
+baseline,B0_canonical,"AU|maradana shale|-33.2,148.7|413.02|419.62",pbdb:24907,pbdb,413.02,419.62,413.02,419.62,shared_pbdb_exact_boundary_support
+baseline,B0_canonical,"Argentina|chica de zonda range, san juan|419.62|422.7",tail:M-rinconada,tail,419.62,422.7,419.62,422.7,shared_curated_stage_boundaries
+baseline,B0_canonical,Australia|frenchmans spur / thomson river type-material district|393.47|413.02,tail:M-wilson-creek,tail,393.47,413.02,393.47,413.02,shared_curated_stage_boundaries
+baseline,B0_canonical,"Australia|ghin ghin road, yea|393.47|422.7",tail:M-ghin-ghin-b2,tail,393.47,422.7,393.47,422.7,shared_curated_stage_boundaries
+baseline,B0_canonical,"Australia|ghin ghin road, yea|393.47|426.7",tail:M-ghin-ghin,tail,393.47,426.7,393.47,426.7,shared_curated_stage_boundaries
+baseline,B0_canonical,"Australia|limestone road, brackley's (barkley's) cutting, yea; loc. 4 (= h4) of garratt's 1978 map; the national heritage place flora fossil site|393.47|426.7",tail:M-limestone-road,tail,393.47,426.7,393.47,426.7,shared_curated_stage_boundaries
+baseline,B0_canonical,"BE|bois d'ausse sandstone|50.5,5.7|413.02|419.62",pbdb:11722,pbdb,413.02,419.62,413.02,419.62,shared_pbdb_exact_boundary_support
+baseline,B0_canonical,"BE|burnotien|50.6,4.1|399.5|413.02",pbdb:23200;pbdb:23202,pbdb,399.5,413.02,399.5,413.02,fixed_pbdb_numerical_support_not_exactly_mapped
+baseline,B0_canonical,"BE|grès de wiheries|50.4,3.8|410.62|413.02",pbdb:22860;pbdb:23197,pbdb,410.62,413.02,410.62,413.02,shared_pbdb_exact_boundary_support
+baseline,B0_canonical,"BY||53.2,30.8|393.47|399.5",pbdb:232956,pbdb,393.47,399.5,393.47,399.5,fixed_pbdb_numerical_support_not_exactly_mapped
+baseline,B0_canonical,"Bolivia|c. 500 m ne of negra muerta farm, c. 30 km ne of tarija, bolivia|422.7|426.7",tail:M-bolivia-caledonica,tail,422.7,426.7,422.7,426.7,shared_curated_stage_boundaries
+baseline,B0_canonical,"CA|bathurst island|75.8,-98.4|410.62|413.02",pbdb:11421;pbdb:11425,pbdb,410.62,413.02,410.62,413.02,shared_pbdb_exact_boundary_support
+baseline,B0_canonical,"CA|battery point|48.6,-64.3|393.47|410.62",pbdb:29001;pbdb:31004,pbdb,393.47,410.62,393.47,410.62,shared_pbdb_exact_boundary_support
+baseline,B0_canonical,"CA|battery point|48.8,-64.3|393.47|410.62",pbdb:26026;pbdb:26547;pbdb:28924;pbdb:28997;pbdb:29002;pbdb:29003;pbdb:29026;pbdb:31023;pbdb:31212,pbdb,393.47,410.62,393.47,410.62,shared_pbdb_exact_boundary_support
+baseline,B0_canonical,"CA|battery point|48.8,-64.3|399.5|410.62",pbdb:203163,pbdb,399.5,410.62,399.5,410.62,fixed_pbdb_numerical_support_not_exactly_mapped
+baseline,B0_canonical,"CA|battery point|48.8,-64.4|393.47|410.62",pbdb:28968;pbdb:28971;pbdb:31002;pbdb:31003;pbdb:31213;pbdb:31215,pbdb,393.47,410.62,393.47,410.62,shared_pbdb_exact_boundary_support
+baseline,B0_canonical,"CA|battery point|48.8,-64.5|393.47|410.62",pbdb:28950;pbdb:28969;pbdb:28996;pbdb:28998;pbdb:29029;pbdb:31007;pbdb:31010;pbdb:31011;pbdb:31027,pbdb,393.47,410.62,393.47,410.62,shared_pbdb_exact_boundary_support
+baseline,B0_canonical,"CA|battery point|48.9,-64.4|393.47|410.62",pbdb:31214,pbdb,393.47,410.62,393.47,410.62,shared_pbdb_exact_boundary_support
+baseline,B0_canonical,"CA|williamsville|42.9,-78.9|419.62|422.7",pbdb:53825;pbdb:53830,pbdb,419.62,422.7,419.62,422.7,shared_pbdb_exact_boundary_support
+baseline,B0_canonical,"CA|york river|48.6,-64.3|393.47|410.62",pbdb:31216,pbdb,393.47,410.62,393.47,410.62,shared_pbdb_exact_boundary_support
+baseline,B0_canonical,"CA|york river|48.8,-64.4|393.47|410.62",pbdb:29020;pbdb:31005,pbdb,393.47,410.62,393.47,410.62,shared_pbdb_exact_boundary_support
+baseline,B0_canonical,"CN|posongchong|23.3,104.2|410.62|413.02",pbdb:10891,pbdb,410.62,413.02,410.62,413.02,shared_pbdb_exact_boundary_support
+baseline,B0_canonical,"CN|posongchong|23.3,104.3|410.62|413.02",pbdb:10896,pbdb,410.62,413.02,410.62,413.02,shared_pbdb_exact_boundary_support
+baseline,B0_canonical,"CN|xiemisitai|46.8,85.6|419.62|422.7",pbdb:278439,pbdb,419.62,422.7,419.62,422.7,shared_pbdb_exact_boundary_support
+baseline,B0_canonical,"CN|xujiachong (also called longhuashan)|26.0,104.0|393.47|410.62",pbdb:10941,pbdb,393.47,410.62,393.47,410.62,shared_pbdb_exact_boundary_support
+baseline,B0_canonical,"CZ|lochkov|49.9,14.2|413.02|419.62",pbdb:13895,pbdb,413.02,419.62,413.02,419.62,shared_pbdb_exact_boundary_support
+baseline,B0_canonical,"CZ|pozary|49.5,13.5|419.62|422.7",pbdb:14131,pbdb,419.62,422.7,419.62,422.7,shared_pbdb_exact_boundary_support
+baseline,B0_canonical,"CZ|pozary|49.9,14.0|419.62|422.7",pbdb:14043,pbdb,419.62,422.7,419.62,422.7,shared_pbdb_exact_boundary_support
+baseline,B0_canonical,"CZ|pozary|50.0,12.9|419.62|422.7",pbdb:14045,pbdb,419.62,422.7,419.62,422.7,shared_pbdb_exact_boundary_support
+baseline,B0_canonical,"CZ|pridoli schichten|50.0,14.3|419.62|422.7",pbdb:52698,pbdb,419.62,422.7,419.62,422.7,shared_pbdb_exact_boundary_support
+baseline,B0_canonical,"CZ||50.0,14.3|419.62|422.7",pbdb:53599,pbdb,419.62,422.7,419.62,422.7,shared_pbdb_exact_boundary_support
+baseline,B0_canonical,"Canada|us383 (=us600), polar bear pass region, bathurst island|419.62|425.0",tail:M-bathurst-us383,tail,419.62,425,419.62,425,shared_curated_stage_boundaries
+baseline,B0_canonical,"Canada|us384, polar bear pass region, bathurst island|419.62|425.0",tail:M-bathurst-us384,tail,419.62,425,419.62,425,shared_curated_stage_boundaries
+baseline,B0_canonical,"Canada|us385 (=us601), polar bear pass region, bathurst island|419.62|425.0",tail:M-bathurst-us385,tail,419.62,425,419.62,425,shared_curated_stage_boundaries
+baseline,B0_canonical,"Canada|us688, polar bear pass region, bathurst island|419.62|425.0",tail:M-bathurst-us688,tail,419.62,425,419.62,425,shared_curated_stage_boundaries
+baseline,B0_canonical,"China|mangkelu ii section, wutubulake village, hoboksar, west junggar|419.62|422.7",tail:M-mangkelu-ii,tail,419.62,422.7,419.62,422.7,shared_curated_stage_boundaries
+baseline,B0_canonical,"China|qujing, northeastern yunnan|419.62|422.7",tail:M-qujingense,tail,419.62,422.7,419.62,422.7,shared_curated_stage_boundaries
+baseline,B0_canonical,China|west junggar|419.62|422.7,tail:M-aberlemnia-junggaria,tail,419.62,422.7,419.62,422.7,shared_curated_stage_boundaries
+baseline,B0_canonical,"Czech Republic|karlštejn, ve spáleném, near house 132|419.62|422.7",tail:M-baragwanathia-karlstejn,tail,419.62,422.7,419.62,422.7,shared_curated_stage_boundaries
+baseline,B0_canonical,"Czech Republic|kosov quarry, prague basin|419.62|422.7",tail:M-bohemica,tail,419.62,422.7,419.62,422.7,shared_curated_stage_boundaries
+baseline,B0_canonical,"Czech Republic|loděnice, špičatý vrch–barrandovy jámy|430.6|432.9",tail:M-barrandei,tail,430.6,432.9,430.6,432.9,shared_curated_stage_boundaries
+baseline,B0_canonical,"DE|hunsrück slate|49.8,7.4|399.5|410.62",pbdb:26904,pbdb,399.5,410.62,399.5,410.62,fixed_pbdb_numerical_support_not_exactly_mapped
+baseline,B0_canonical,"DE|hunsrück slate|49.9,7.5|399.5|410.62",pbdb:26903,pbdb,399.5,410.62,399.5,410.62,fixed_pbdb_numerical_support_not_exactly_mapped
+baseline,B0_canonical,"DE|wahnbach|50.9,7.3|410.62|413.02",pbdb:232143,pbdb,410.62,413.02,410.62,413.02,shared_pbdb_exact_boundary_support
+baseline,B0_canonical,"DE||50.2,7.4|399.5|410.62",pbdb:27049;pbdb:27129,pbdb,399.5,410.62,399.5,410.62,fixed_pbdb_numerical_support_not_exactly_mapped
+baseline,B0_canonical,"Ireland|borrisnoe mountain, devil’s bit range, county tipperary|426.7|430.6",tail:M-borrisnoe,tail,426.7,430.6,426.7,430.6,shared_curated_stage_boundaries
+baseline,B0_canonical,"KZ|aigyrzhal'skaya suite|47.0,79.0|393.47|413.02",pbdb:32851,pbdb,393.47,413.02,393.47,413.02,shared_pbdb_exact_boundary_support
+baseline,B0_canonical,"KZ|tokrau fm|47.5,76.0|419.62|422.7",pbdb:53609;pbdb:53610;pbdb:53656,pbdb,419.62,422.7,419.62,422.7,shared_pbdb_exact_boundary_support
+baseline,B0_canonical,"LY||30.0,11.0|419.62|422.7",pbdb:53669,pbdb,419.62,422.7,419.62,422.7,shared_pbdb_exact_boundary_support
+baseline,B0_canonical,"Norway|red bay series brook section, spitsbergen|413.02|419.62",tail:M-svalbard,tail,413.02,419.62,413.02,419.62,shared_curated_stage_boundaries
+baseline,B0_canonical,"Oman|ghaba-1 borehole, northern oman|445.2|452.8",tail:S-w22-K12,tail,445.2,452.8,445.2,452.8,shared_curated_stage_boundaries
+baseline,B0_canonical,"PL|winnica mudstone complex|50.9,21.1|419.62|422.7",pbdb:52667,pbdb,419.62,422.7,419.62,422.7,shared_pbdb_exact_boundary_support
+baseline,B0_canonical,"RU|pridorozhnaya|54.5,89.9|399.5|410.62",pbdb:238400,pbdb,399.5,410.62,399.5,410.62,fixed_pbdb_numerical_support_not_exactly_mapped
+baseline,B0_canonical,"RU|salairka horizon|54.3,85.9|399.5|410.62",pbdb:35709,pbdb,399.5,410.62,399.5,410.62,fixed_pbdb_numerical_support_not_exactly_mapped
+baseline,B0_canonical,"RU|shanda horizon|54.3,85.9|387.95|399.5",pbdb:35721,pbdb,387.95,399.5,387.95,399.5,fixed_pbdb_numerical_support_not_exactly_mapped
+baseline,B0_canonical,"UA|rashkovskie beds|48.5,26.3|419.62|422.7",pbdb:52702,pbdb,419.62,422.7,419.62,422.7,shared_pbdb_exact_boundary_support
+baseline,B0_canonical,"UA|skala|49.6,23.9|419.62|422.7",pbdb:13873,pbdb,419.62,422.7,419.62,422.7,shared_pbdb_exact_boundary_support
+baseline,B0_canonical,"UK|dryden flags|57.3,-2.8|410.62|413.02",pbdb:10721,pbdb,410.62,413.02,410.62,413.02,shared_pbdb_exact_boundary_support
+baseline,B0_canonical,"UK|dundee flagstone|56.0,-2.0|413.02|419.62",pbdb:10705,pbdb,413.02,419.62,413.02,419.62,shared_pbdb_exact_boundary_support
+baseline,B0_canonical,"UK|dundee|56.7,-2.8|413.02|419.62",pbdb:26755;pbdb:26757,pbdb,413.02,419.62,413.02,419.62,shared_pbdb_exact_boundary_support
+baseline,B0_canonical,"UK|rushall|52.0,-2.0|419.62|422.7",pbdb:10706,pbdb,419.62,422.7,419.62,422.7,shared_pbdb_exact_boundary_support
+baseline,B0_canonical,"UK|senni|51.9,-3.6|410.62|413.02",pbdb:238752,pbdb,410.62,413.02,410.62,413.02,shared_pbdb_exact_boundary_support
+baseline,B0_canonical,"UK|st. maughans|52.0,-2.0|413.02|419.62",pbdb:10679,pbdb,413.02,419.62,413.02,419.62,shared_pbdb_exact_boundary_support
+baseline,B0_canonical,"UK|strathmore|55.0,-4.0|393.47|410.62",pbdb:10719,pbdb,393.47,410.62,393.47,410.62,shared_pbdb_exact_boundary_support
+baseline,B0_canonical,"UK|strathmore|56.2,-4.2|393.47|410.62",pbdb:11513,pbdb,393.47,410.62,393.47,410.62,shared_pbdb_exact_boundary_support
+baseline,B0_canonical,"US|beartooth butte|44.9,-108.1|393.47|410.62",pbdb:29294,pbdb,393.47,410.62,393.47,410.62,shared_pbdb_exact_boundary_support
+baseline,B0_canonical,"US|beartooth butte|45.0,-109.6|393.47|410.62",pbdb:26176;pbdb:29292;pbdb:31000,pbdb,393.47,410.62,393.47,410.62,shared_pbdb_exact_boundary_support
+baseline,B0_canonical,"US|bertie|42.9,-75.1|419.62|422.7",pbdb:20664,pbdb,419.62,422.7,419.62,422.7,shared_pbdb_exact_boundary_support
+baseline,B0_canonical,"US|bertie|43.5,-74.9|419.62|422.7",pbdb:26087,pbdb,419.62,422.7,419.62,422.7,shared_pbdb_exact_boundary_support
+baseline,B0_canonical,"US|fiddlers green|43.0,-75.0|419.62|422.7",pbdb:53827,pbdb,419.62,422.7,419.62,422.7,shared_pbdb_exact_boundary_support
+baseline,B0_canonical,"US|trout valley|46.1,-68.6|387.95|399.5",pbdb:10614;pbdb:10617,pbdb,387.95,399.5,387.95,399.5,fixed_pbdb_numerical_support_not_exactly_mapped
+baseline,B0_canonical,"US|williamsville|42.9,-78.9|419.62|422.7",pbdb:53831,pbdb,419.62,422.7,419.62,422.7,shared_pbdb_exact_boundary_support
+baseline,B0_canonical,"US|williamsville|43.0,-78.7|419.62|422.7",pbdb:53837,pbdb,419.62,422.7,419.62,422.7,shared_pbdb_exact_boundary_support
+baseline,B0_canonical,"US||43.2,-78.6|422.7|432.9",pbdb:53832,pbdb,422.7,432.9,422.7,432.9,shared_pbdb_exact_boundary_support
+baseline,B0_canonical,"United Kingdom|capel horeb / halfway quarry, powys|422.7|425.0",tail:M-capel-horeb-ludlow,tail,422.7,425,422.7,425,shared_curated_stage_boundaries
+baseline,B0_canonical,United Kingdom|welsh borderland; exact original site unresolved|413.02|419.62,tail:M-lang-tracheid-axis,tail,413.02,419.62,413.02,419.62,shared_curated_stage_boundaries
+baseline,B0_canonical,"Vietnam|xóm chè quarry, northern vietnam|419.62|422.7",tail:M-van-canh,tail,419.62,422.7,419.62,422.7,shared_curated_stage_boundaries
+baseline,B0_canonical,pbdb:27182|413.02|419.62,pbdb:27182,pbdb,413.02,419.62,413.02,419.62,shared_pbdb_exact_boundary_support
+baseline,B2_primary,"Argentina|chica de zonda range, san juan|419.62|422.7",tail:M-rinconada,tail,419.62,422.7,419.62,422.7,shared_curated_stage_boundaries
+baseline,B2_primary,Australia|frenchmans spur / thomson river type-material district|393.47|413.02,tail:M-wilson-creek,tail,393.47,413.02,393.47,413.02,shared_curated_stage_boundaries
+baseline,B2_primary,"Australia|ghin ghin road, yea|393.47|422.7",tail:M-ghin-ghin-b2,tail,393.47,422.7,393.47,422.7,shared_curated_stage_boundaries
+baseline,B2_primary,"Australia|ghin ghin road, yea|393.47|426.7",tail:M-ghin-ghin,tail,393.47,426.7,393.47,426.7,shared_curated_stage_boundaries
+baseline,B2_primary,"Australia|limestone road, brackley's (barkley's) cutting, yea; loc. 4 (= h4) of garratt's 1978 map; the national heritage place flora fossil site|393.47|426.7",tail:M-limestone-road,tail,393.47,426.7,393.47,426.7,shared_curated_stage_boundaries
+baseline,B2_primary,"BE|bois d'ausse sandstone|50.5,5.7|413.02|419.62",pbdb:11722,pbdb,413.02,419.62,413.02,419.62,shared_pbdb_exact_boundary_support
+baseline,B2_primary,"BE|burnotien|50.6,4.1|399.5|413.02",pbdb:23200;pbdb:23202,pbdb,399.5,413.02,399.5,413.02,fixed_pbdb_numerical_support_not_exactly_mapped
+baseline,B2_primary,"BE|grès de wiheries|50.4,3.8|410.62|413.02",pbdb:22860;pbdb:23197,pbdb,410.62,413.02,410.62,413.02,shared_pbdb_exact_boundary_support
+baseline,B2_primary,"BY||53.2,30.8|393.47|399.5",pbdb:232956,pbdb,393.47,399.5,393.47,399.5,fixed_pbdb_numerical_support_not_exactly_mapped
+baseline,B2_primary,"CA|bathurst island|75.8,-98.4|410.62|413.02",pbdb:11421;pbdb:11425,pbdb,410.62,413.02,410.62,413.02,shared_pbdb_exact_boundary_support
+baseline,B2_primary,"CA|battery point|48.6,-64.3|393.47|410.62",pbdb:29001;pbdb:31004,pbdb,393.47,410.62,393.47,410.62,shared_pbdb_exact_boundary_support
+baseline,B2_primary,"CA|battery point|48.8,-64.3|393.47|410.62",pbdb:26026;pbdb:26547;pbdb:28924;pbdb:28997;pbdb:29002;pbdb:29003;pbdb:29026;pbdb:31023;pbdb:31212,pbdb,393.47,410.62,393.47,410.62,shared_pbdb_exact_boundary_support
+baseline,B2_primary,"CA|battery point|48.8,-64.4|393.47|410.62",pbdb:28968;pbdb:28971;pbdb:31002;pbdb:31003;pbdb:31213;pbdb:31215,pbdb,393.47,410.62,393.47,410.62,shared_pbdb_exact_boundary_support
+baseline,B2_primary,"CA|battery point|48.8,-64.5|393.47|410.62",pbdb:28950;pbdb:28969;pbdb:28996;pbdb:28998;pbdb:29029;pbdb:31007;pbdb:31010;pbdb:31011;pbdb:31027,pbdb,393.47,410.62,393.47,410.62,shared_pbdb_exact_boundary_support
+baseline,B2_primary,"CA|battery point|48.9,-64.4|393.47|410.62",pbdb:31214,pbdb,393.47,410.62,393.47,410.62,shared_pbdb_exact_boundary_support
+baseline,B2_primary,"CA|york river|48.6,-64.3|393.47|410.62",pbdb:31216,pbdb,393.47,410.62,393.47,410.62,shared_pbdb_exact_boundary_support
+baseline,B2_primary,"CA|york river|48.8,-64.4|393.47|410.62",pbdb:29020;pbdb:31005,pbdb,393.47,410.62,393.47,410.62,shared_pbdb_exact_boundary_support
+baseline,B2_primary,"CN|posongchong|23.3,104.2|410.62|413.02",pbdb:10891,pbdb,410.62,413.02,410.62,413.02,shared_pbdb_exact_boundary_support
+baseline,B2_primary,"CN|posongchong|23.3,104.3|410.62|413.02",pbdb:10896,pbdb,410.62,413.02,410.62,413.02,shared_pbdb_exact_boundary_support
+baseline,B2_primary,"CN|xiemisitai|46.8,85.6|419.62|422.7",pbdb:278439,pbdb,419.62,422.7,419.62,422.7,shared_pbdb_exact_boundary_support
+baseline,B2_primary,"CN|xujiachong (also called longhuashan)|26.0,104.0|393.47|410.62",pbdb:10941,pbdb,393.47,410.62,393.47,410.62,shared_pbdb_exact_boundary_support
+baseline,B2_primary,"Canada|us383 (=us600), polar bear pass region, bathurst island|419.62|425.0",tail:M-bathurst-us383,tail,419.62,425,419.62,425,shared_curated_stage_boundaries
+baseline,B2_primary,"Canada|us384, polar bear pass region, bathurst island|419.62|425.0",tail:M-bathurst-us384,tail,419.62,425,419.62,425,shared_curated_stage_boundaries
+baseline,B2_primary,"Canada|us385 (=us601), polar bear pass region, bathurst island|419.62|425.0",tail:M-bathurst-us385,tail,419.62,425,419.62,425,shared_curated_stage_boundaries
+baseline,B2_primary,"Canada|us688, polar bear pass region, bathurst island|419.62|425.0",tail:M-bathurst-us688,tail,419.62,425,419.62,425,shared_curated_stage_boundaries
+baseline,B2_primary,"China|mangkelu ii section, wutubulake village, hoboksar, west junggar|419.62|422.7",tail:M-mangkelu-ii,tail,419.62,422.7,419.62,422.7,shared_curated_stage_boundaries
+baseline,B2_primary,"China|qujing, northeastern yunnan|419.62|422.7",tail:M-qujingense,tail,419.62,422.7,419.62,422.7,shared_curated_stage_boundaries
+baseline,B2_primary,China|west junggar|419.62|422.7,tail:M-aberlemnia-junggaria,tail,419.62,422.7,419.62,422.7,shared_curated_stage_boundaries
+baseline,B2_primary,"Czech Republic|karlštejn, ve spáleném, near house 132|419.62|422.7",tail:M-baragwanathia-karlstejn,tail,419.62,422.7,419.62,422.7,shared_curated_stage_boundaries
+baseline,B2_primary,"DE|hunsrück slate|49.8,7.4|399.5|410.62",pbdb:26904,pbdb,399.5,410.62,399.5,410.62,fixed_pbdb_numerical_support_not_exactly_mapped
+baseline,B2_primary,"DE|wahnbach|50.9,7.3|410.62|413.02",pbdb:232143,pbdb,410.62,413.02,410.62,413.02,shared_pbdb_exact_boundary_support
+baseline,B2_primary,"DE||50.2,7.4|399.5|410.62",pbdb:27049;pbdb:27129,pbdb,399.5,410.62,399.5,410.62,fixed_pbdb_numerical_support_not_exactly_mapped
+baseline,B2_primary,"KZ|aigyrzhal'skaya suite|47.0,79.0|393.47|413.02",pbdb:32851,pbdb,393.47,413.02,393.47,413.02,shared_pbdb_exact_boundary_support
+baseline,B2_primary,"Norway|red bay series brook section, spitsbergen|413.02|419.62",tail:M-svalbard,tail,413.02,419.62,413.02,419.62,shared_curated_stage_boundaries
+baseline,B2_primary,"RU|pridorozhnaya|54.5,89.9|399.5|410.62",pbdb:238400,pbdb,399.5,410.62,399.5,410.62,fixed_pbdb_numerical_support_not_exactly_mapped
+baseline,B2_primary,"RU|salairka horizon|54.3,85.9|399.5|410.62",pbdb:35709,pbdb,399.5,410.62,399.5,410.62,fixed_pbdb_numerical_support_not_exactly_mapped
+baseline,B2_primary,"RU|shanda horizon|54.3,85.9|387.95|399.5",pbdb:35721,pbdb,387.95,399.5,387.95,399.5,fixed_pbdb_numerical_support_not_exactly_mapped
+baseline,B2_primary,"UA|rashkovskie beds|48.5,26.3|419.62|422.7",pbdb:52702,pbdb,419.62,422.7,419.62,422.7,shared_pbdb_exact_boundary_support
+baseline,B2_primary,"UA|skala|49.6,23.9|419.62|422.7",pbdb:13873,pbdb,419.62,422.7,419.62,422.7,shared_pbdb_exact_boundary_support
+baseline,B2_primary,"UK|dryden flags|57.3,-2.8|410.62|413.02",pbdb:10721,pbdb,410.62,413.02,410.62,413.02,shared_pbdb_exact_boundary_support
+baseline,B2_primary,"UK|dundee flagstone|56.0,-2.0|413.02|419.62",pbdb:10705,pbdb,413.02,419.62,413.02,419.62,shared_pbdb_exact_boundary_support
+baseline,B2_primary,"UK|dundee|56.7,-2.8|413.02|419.62",pbdb:26755;pbdb:26757,pbdb,413.02,419.62,413.02,419.62,shared_pbdb_exact_boundary_support
+baseline,B2_primary,"UK|senni|51.9,-3.6|410.62|413.02",pbdb:238752,pbdb,410.62,413.02,410.62,413.02,shared_pbdb_exact_boundary_support
+baseline,B2_primary,"UK|st. maughans|52.0,-2.0|413.02|419.62",pbdb:10679,pbdb,413.02,419.62,413.02,419.62,shared_pbdb_exact_boundary_support
+baseline,B2_primary,"UK|strathmore|55.0,-4.0|393.47|410.62",pbdb:10719,pbdb,393.47,410.62,393.47,410.62,shared_pbdb_exact_boundary_support
+baseline,B2_primary,"UK|strathmore|56.2,-4.2|393.47|410.62",pbdb:11513,pbdb,393.47,410.62,393.47,410.62,shared_pbdb_exact_boundary_support
+baseline,B2_primary,"US|beartooth butte|44.9,-108.1|393.47|410.62",pbdb:29294,pbdb,393.47,410.62,393.47,410.62,shared_pbdb_exact_boundary_support
+baseline,B2_primary,"US|beartooth butte|45.0,-109.6|393.47|410.62",pbdb:26176;pbdb:29292;pbdb:31000,pbdb,393.47,410.62,393.47,410.62,shared_pbdb_exact_boundary_support
+baseline,B2_primary,"US|trout valley|46.1,-68.6|387.95|399.5",pbdb:10614;pbdb:10617,pbdb,387.95,399.5,387.95,399.5,fixed_pbdb_numerical_support_not_exactly_mapped
+baseline,B2_primary,"Vietnam|xóm chè quarry, northern vietnam|419.62|422.7",tail:M-van-canh,tail,419.62,422.7,419.62,422.7,shared_curated_stage_boundaries
+all_younger,B0_canonical,"AU|maradana shale|-33.2,148.7|413.02|419.62",pbdb:24907,pbdb,413.02,419.62,411.11,418.26,shared_pbdb_exact_boundary_support
+all_younger,B0_canonical,"Argentina|chica de zonda range, san juan|419.62|422.7",tail:M-rinconada,tail,419.62,422.7,418.26,421.1,shared_curated_stage_boundaries
+all_younger,B0_canonical,Australia|frenchmans spur / thomson river type-material district|393.47|413.02,tail:M-wilson-creek,tail,393.47,413.02,392.48,411.11,shared_curated_stage_boundaries
+all_younger,B0_canonical,"Australia|ghin ghin road, yea|393.47|422.7",tail:M-ghin-ghin-b2,tail,393.47,422.7,392.48,421.1,shared_curated_stage_boundaries
+all_younger,B0_canonical,"Australia|ghin ghin road, yea|393.47|426.7",tail:M-ghin-ghin,tail,393.47,426.7,392.48,425.2,shared_curated_stage_boundaries
+all_younger,B0_canonical,"Australia|limestone road, brackley's (barkley's) cutting, yea; loc. 4 (= h4) of garratt's 1978 map; the national heritage place flora fossil site|393.47|426.7",tail:M-limestone-road,tail,393.47,426.7,392.48,425.2,shared_curated_stage_boundaries
+all_younger,B0_canonical,"BE|bois d'ausse sandstone|50.5,5.7|413.02|419.62",pbdb:11722,pbdb,413.02,419.62,411.11,418.26,shared_pbdb_exact_boundary_support
+all_younger,B0_canonical,"BE|burnotien|50.6,4.1|399.5|413.02",pbdb:23200;pbdb:23202,pbdb,399.5,413.02,399.5,413.02,fixed_pbdb_numerical_support_not_exactly_mapped
+all_younger,B0_canonical,"BE|grès de wiheries|50.4,3.8|410.62|413.02",pbdb:22860;pbdb:23197,pbdb,410.62,413.02,408.67,411.11,shared_pbdb_exact_boundary_support
+all_younger,B0_canonical,"BY||53.2,30.8|393.47|399.5",pbdb:232956,pbdb,393.47,399.5,393.47,399.5,fixed_pbdb_numerical_support_not_exactly_mapped
+all_younger,B0_canonical,"Bolivia|c. 500 m ne of negra muerta farm, c. 30 km ne of tarija, bolivia|422.7|426.7",tail:M-bolivia-caledonica,tail,422.7,426.7,421.1,425.2,shared_curated_stage_boundaries
+all_younger,B0_canonical,"CA|bathurst island|75.8,-98.4|410.62|413.02",pbdb:11421;pbdb:11425,pbdb,410.62,413.02,408.67,411.11,shared_pbdb_exact_boundary_support
+all_younger,B0_canonical,"CA|battery point|48.6,-64.3|393.47|410.62",pbdb:29001;pbdb:31004,pbdb,393.47,410.62,392.48,408.67,shared_pbdb_exact_boundary_support
+all_younger,B0_canonical,"CA|battery point|48.8,-64.3|393.47|410.62",pbdb:26026;pbdb:26547;pbdb:28924;pbdb:28997;pbdb:29002;pbdb:29003;pbdb:29026;pbdb:31023;pbdb:31212,pbdb,393.47,410.62,392.48,408.67,shared_pbdb_exact_boundary_support
+all_younger,B0_canonical,"CA|battery point|48.8,-64.3|399.5|410.62",pbdb:203163,pbdb,399.5,410.62,399.5,410.62,fixed_pbdb_numerical_support_not_exactly_mapped
+all_younger,B0_canonical,"CA|battery point|48.8,-64.4|393.47|410.62",pbdb:28968;pbdb:28971;pbdb:31002;pbdb:31003;pbdb:31213;pbdb:31215,pbdb,393.47,410.62,392.48,408.67,shared_pbdb_exact_boundary_support
+all_younger,B0_canonical,"CA|battery point|48.8,-64.5|393.47|410.62",pbdb:28950;pbdb:28969;pbdb:28996;pbdb:28998;pbdb:29029;pbdb:31007;pbdb:31010;pbdb:31011;pbdb:31027,pbdb,393.47,410.62,392.48,408.67,shared_pbdb_exact_boundary_support
+all_younger,B0_canonical,"CA|battery point|48.9,-64.4|393.47|410.62",pbdb:31214,pbdb,393.47,410.62,392.48,408.67,shared_pbdb_exact_boundary_support
+all_younger,B0_canonical,"CA|williamsville|42.9,-78.9|419.62|422.7",pbdb:53825;pbdb:53830,pbdb,419.62,422.7,418.26,421.1,shared_pbdb_exact_boundary_support
+all_younger,B0_canonical,"CA|york river|48.6,-64.3|393.47|410.62",pbdb:31216,pbdb,393.47,410.62,392.48,408.67,shared_pbdb_exact_boundary_support
+all_younger,B0_canonical,"CA|york river|48.8,-64.4|393.47|410.62",pbdb:29020;pbdb:31005,pbdb,393.47,410.62,392.48,408.67,shared_pbdb_exact_boundary_support
+all_younger,B0_canonical,"CN|posongchong|23.3,104.2|410.62|413.02",pbdb:10891,pbdb,410.62,413.02,408.67,411.11,shared_pbdb_exact_boundary_support
+all_younger,B0_canonical,"CN|posongchong|23.3,104.3|410.62|413.02",pbdb:10896,pbdb,410.62,413.02,408.67,411.11,shared_pbdb_exact_boundary_support
+all_younger,B0_canonical,"CN|xiemisitai|46.8,85.6|419.62|422.7",pbdb:278439,pbdb,419.62,422.7,418.26,421.1,shared_pbdb_exact_boundary_support
+all_younger,B0_canonical,"CN|xujiachong (also called longhuashan)|26.0,104.0|393.47|410.62",pbdb:10941,pbdb,393.47,410.62,392.48,408.67,shared_pbdb_exact_boundary_support
+all_younger,B0_canonical,"CZ|lochkov|49.9,14.2|413.02|419.62",pbdb:13895,pbdb,413.02,419.62,411.11,418.26,shared_pbdb_exact_boundary_support
+all_younger,B0_canonical,"CZ|pozary|49.5,13.5|419.62|422.7",pbdb:14131,pbdb,419.62,422.7,418.26,421.1,shared_pbdb_exact_boundary_support
+all_younger,B0_canonical,"CZ|pozary|49.9,14.0|419.62|422.7",pbdb:14043,pbdb,419.62,422.7,418.26,421.1,shared_pbdb_exact_boundary_support
+all_younger,B0_canonical,"CZ|pozary|50.0,12.9|419.62|422.7",pbdb:14045,pbdb,419.62,422.7,418.26,421.1,shared_pbdb_exact_boundary_support
+all_younger,B0_canonical,"CZ|pridoli schichten|50.0,14.3|419.62|422.7",pbdb:52698,pbdb,419.62,422.7,418.26,421.1,shared_pbdb_exact_boundary_support
+all_younger,B0_canonical,"CZ||50.0,14.3|419.62|422.7",pbdb:53599,pbdb,419.62,422.7,418.26,421.1,shared_pbdb_exact_boundary_support
+all_younger,B0_canonical,"Canada|us383 (=us600), polar bear pass region, bathurst island|419.62|425.0",tail:M-bathurst-us383,tail,419.62,425,418.26,423.5,shared_curated_stage_boundaries
+all_younger,B0_canonical,"Canada|us384, polar bear pass region, bathurst island|419.62|425.0",tail:M-bathurst-us384,tail,419.62,425,418.26,423.5,shared_curated_stage_boundaries
+all_younger,B0_canonical,"Canada|us385 (=us601), polar bear pass region, bathurst island|419.62|425.0",tail:M-bathurst-us385,tail,419.62,425,418.26,423.5,shared_curated_stage_boundaries
+all_younger,B0_canonical,"Canada|us688, polar bear pass region, bathurst island|419.62|425.0",tail:M-bathurst-us688,tail,419.62,425,418.26,423.5,shared_curated_stage_boundaries
+all_younger,B0_canonical,"China|mangkelu ii section, wutubulake village, hoboksar, west junggar|419.62|422.7",tail:M-mangkelu-ii,tail,419.62,422.7,418.26,421.1,shared_curated_stage_boundaries
+all_younger,B0_canonical,"China|qujing, northeastern yunnan|419.62|422.7",tail:M-qujingense,tail,419.62,422.7,418.26,421.1,shared_curated_stage_boundaries
+all_younger,B0_canonical,China|west junggar|419.62|422.7,tail:M-aberlemnia-junggaria,tail,419.62,422.7,418.26,421.1,shared_curated_stage_boundaries
+all_younger,B0_canonical,"Czech Republic|karlštejn, ve spáleném, near house 132|419.62|422.7",tail:M-baragwanathia-karlstejn,tail,419.62,422.7,418.26,421.1,shared_curated_stage_boundaries
+all_younger,B0_canonical,"Czech Republic|kosov quarry, prague basin|419.62|422.7",tail:M-bohemica,tail,419.62,422.7,418.26,421.1,shared_curated_stage_boundaries
+all_younger,B0_canonical,"Czech Republic|loděnice, špičatý vrch–barrandovy jámy|430.6|432.9",tail:M-barrandei,tail,430.6,432.9,429.3,431.7,shared_curated_stage_boundaries
+all_younger,B0_canonical,"DE|hunsrück slate|49.8,7.4|399.5|410.62",pbdb:26904,pbdb,399.5,410.62,399.5,410.62,fixed_pbdb_numerical_support_not_exactly_mapped
+all_younger,B0_canonical,"DE|hunsrück slate|49.9,7.5|399.5|410.62",pbdb:26903,pbdb,399.5,410.62,399.5,410.62,fixed_pbdb_numerical_support_not_exactly_mapped
+all_younger,B0_canonical,"DE|wahnbach|50.9,7.3|410.62|413.02",pbdb:232143,pbdb,410.62,413.02,408.67,411.11,shared_pbdb_exact_boundary_support
+all_younger,B0_canonical,"DE||50.2,7.4|399.5|410.62",pbdb:27049;pbdb:27129,pbdb,399.5,410.62,399.5,410.62,fixed_pbdb_numerical_support_not_exactly_mapped
+all_younger,B0_canonical,"Ireland|borrisnoe mountain, devil’s bit range, county tipperary|426.7|430.6",tail:M-borrisnoe,tail,426.7,430.6,425.2,429.3,shared_curated_stage_boundaries
+all_younger,B0_canonical,"KZ|aigyrzhal'skaya suite|47.0,79.0|393.47|413.02",pbdb:32851,pbdb,393.47,413.02,392.48,411.11,shared_pbdb_exact_boundary_support
+all_younger,B0_canonical,"KZ|tokrau fm|47.5,76.0|419.62|422.7",pbdb:53609;pbdb:53610;pbdb:53656,pbdb,419.62,422.7,418.26,421.1,shared_pbdb_exact_boundary_support
+all_younger,B0_canonical,"LY||30.0,11.0|419.62|422.7",pbdb:53669,pbdb,419.62,422.7,418.26,421.1,shared_pbdb_exact_boundary_support
+all_younger,B0_canonical,"Norway|red bay series brook section, spitsbergen|413.02|419.62",tail:M-svalbard,tail,413.02,419.62,411.11,418.26,shared_curated_stage_boundaries
+all_younger,B0_canonical,"Oman|ghaba-1 borehole, northern oman|445.2|452.8",tail:S-w22-K12,tail,445.2,452.8,444.3,452.1,shared_curated_stage_boundaries
+all_younger,B0_canonical,"PL|winnica mudstone complex|50.9,21.1|419.62|422.7",pbdb:52667,pbdb,419.62,422.7,418.26,421.1,shared_pbdb_exact_boundary_support
+all_younger,B0_canonical,"RU|pridorozhnaya|54.5,89.9|399.5|410.62",pbdb:238400,pbdb,399.5,410.62,399.5,410.62,fixed_pbdb_numerical_support_not_exactly_mapped
+all_younger,B0_canonical,"RU|salairka horizon|54.3,85.9|399.5|410.62",pbdb:35709,pbdb,399.5,410.62,399.5,410.62,fixed_pbdb_numerical_support_not_exactly_mapped
+all_younger,B0_canonical,"RU|shanda horizon|54.3,85.9|387.95|399.5",pbdb:35721,pbdb,387.95,399.5,387.95,399.5,fixed_pbdb_numerical_support_not_exactly_mapped
+all_younger,B0_canonical,"UA|rashkovskie beds|48.5,26.3|419.62|422.7",pbdb:52702,pbdb,419.62,422.7,418.26,421.1,shared_pbdb_exact_boundary_support
+all_younger,B0_canonical,"UA|skala|49.6,23.9|419.62|422.7",pbdb:13873,pbdb,419.62,422.7,418.26,421.1,shared_pbdb_exact_boundary_support
+all_younger,B0_canonical,"UK|dryden flags|57.3,-2.8|410.62|413.02",pbdb:10721,pbdb,410.62,413.02,408.67,411.11,shared_pbdb_exact_boundary_support
+all_younger,B0_canonical,"UK|dundee flagstone|56.0,-2.0|413.02|419.62",pbdb:10705,pbdb,413.02,419.62,411.11,418.26,shared_pbdb_exact_boundary_support
+all_younger,B0_canonical,"UK|dundee|56.7,-2.8|413.02|419.62",pbdb:26755;pbdb:26757,pbdb,413.02,419.62,411.11,418.26,shared_pbdb_exact_boundary_support
+all_younger,B0_canonical,"UK|rushall|52.0,-2.0|419.62|422.7",pbdb:10706,pbdb,419.62,422.7,418.26,421.1,shared_pbdb_exact_boundary_support
+all_younger,B0_canonical,"UK|senni|51.9,-3.6|410.62|413.02",pbdb:238752,pbdb,410.62,413.02,408.67,411.11,shared_pbdb_exact_boundary_support
+all_younger,B0_canonical,"UK|st. maughans|52.0,-2.0|413.02|419.62",pbdb:10679,pbdb,413.02,419.62,411.11,418.26,shared_pbdb_exact_boundary_support
+all_younger,B0_canonical,"UK|strathmore|55.0,-4.0|393.47|410.62",pbdb:10719,pbdb,393.47,410.62,392.48,408.67,shared_pbdb_exact_boundary_support
+all_younger,B0_canonical,"UK|strathmore|56.2,-4.2|393.47|410.62",pbdb:11513,pbdb,393.47,410.62,392.48,408.67,shared_pbdb_exact_boundary_support
+all_younger,B0_canonical,"US|beartooth butte|44.9,-108.1|393.47|410.62",pbdb:29294,pbdb,393.47,410.62,392.48,408.67,shared_pbdb_exact_boundary_support
+all_younger,B0_canonical,"US|beartooth butte|45.0,-109.6|393.47|410.62",pbdb:26176;pbdb:29292;pbdb:31000,pbdb,393.47,410.62,392.48,408.67,shared_pbdb_exact_boundary_support
+all_younger,B0_canonical,"US|bertie|42.9,-75.1|419.62|422.7",pbdb:20664,pbdb,419.62,422.7,418.26,421.1,shared_pbdb_exact_boundary_support
+all_younger,B0_canonical,"US|bertie|43.5,-74.9|419.62|422.7",pbdb:26087,pbdb,419.62,422.7,418.26,421.1,shared_pbdb_exact_boundary_support
+all_younger,B0_canonical,"US|fiddlers green|43.0,-75.0|419.62|422.7",pbdb:53827,pbdb,419.62,422.7,418.26,421.1,shared_pbdb_exact_boundary_support
+all_younger,B0_canonical,"US|trout valley|46.1,-68.6|387.95|399.5",pbdb:10614;pbdb:10617,pbdb,387.95,399.5,387.95,399.5,fixed_pbdb_numerical_support_not_exactly_mapped
+all_younger,B0_canonical,"US|williamsville|42.9,-78.9|419.62|422.7",pbdb:53831,pbdb,419.62,422.7,418.26,421.1,shared_pbdb_exact_boundary_support
+all_younger,B0_canonical,"US|williamsville|43.0,-78.7|419.62|422.7",pbdb:53837,pbdb,419.62,422.7,418.26,421.1,shared_pbdb_exact_boundary_support
+all_younger,B0_canonical,"US||43.2,-78.6|422.7|432.9",pbdb:53832,pbdb,422.7,432.9,421.1,431.7,shared_pbdb_exact_boundary_support
+all_younger,B0_canonical,"United Kingdom|capel horeb / halfway quarry, powys|422.7|425.0",tail:M-capel-horeb-ludlow,tail,422.7,425,421.1,423.5,shared_curated_stage_boundaries
+all_younger,B0_canonical,United Kingdom|welsh borderland; exact original site unresolved|413.02|419.62,tail:M-lang-tracheid-axis,tail,413.02,419.62,411.11,418.26,shared_curated_stage_boundaries
+all_younger,B0_canonical,"Vietnam|xóm chè quarry, northern vietnam|419.62|422.7",tail:M-van-canh,tail,419.62,422.7,418.26,421.1,shared_curated_stage_boundaries
+all_younger,B0_canonical,pbdb:27182|413.02|419.62,pbdb:27182,pbdb,413.02,419.62,411.11,418.26,shared_pbdb_exact_boundary_support
+all_younger,B2_primary,"Argentina|chica de zonda range, san juan|419.62|422.7",tail:M-rinconada,tail,419.62,422.7,418.26,421.1,shared_curated_stage_boundaries
+all_younger,B2_primary,Australia|frenchmans spur / thomson river type-material district|393.47|413.02,tail:M-wilson-creek,tail,393.47,413.02,392.48,411.11,shared_curated_stage_boundaries
+all_younger,B2_primary,"Australia|ghin ghin road, yea|393.47|422.7",tail:M-ghin-ghin-b2,tail,393.47,422.7,392.48,421.1,shared_curated_stage_boundaries
+all_younger,B2_primary,"Australia|ghin ghin road, yea|393.47|426.7",tail:M-ghin-ghin,tail,393.47,426.7,392.48,425.2,shared_curated_stage_boundaries
+all_younger,B2_primary,"Australia|limestone road, brackley's (barkley's) cutting, yea; loc. 4 (= h4) of garratt's 1978 map; the national heritage place flora fossil site|393.47|426.7",tail:M-limestone-road,tail,393.47,426.7,392.48,425.2,shared_curated_stage_boundaries
+all_younger,B2_primary,"BE|bois d'ausse sandstone|50.5,5.7|413.02|419.62",pbdb:11722,pbdb,413.02,419.62,411.11,418.26,shared_pbdb_exact_boundary_support
+all_younger,B2_primary,"BE|burnotien|50.6,4.1|399.5|413.02",pbdb:23200;pbdb:23202,pbdb,399.5,413.02,399.5,413.02,fixed_pbdb_numerical_support_not_exactly_mapped
+all_younger,B2_primary,"BE|grès de wiheries|50.4,3.8|410.62|413.02",pbdb:22860;pbdb:23197,pbdb,410.62,413.02,408.67,411.11,shared_pbdb_exact_boundary_support
+all_younger,B2_primary,"BY||53.2,30.8|393.47|399.5",pbdb:232956,pbdb,393.47,399.5,393.47,399.5,fixed_pbdb_numerical_support_not_exactly_mapped
+all_younger,B2_primary,"CA|bathurst island|75.8,-98.4|410.62|413.02",pbdb:11421;pbdb:11425,pbdb,410.62,413.02,408.67,411.11,shared_pbdb_exact_boundary_support
+all_younger,B2_primary,"CA|battery point|48.6,-64.3|393.47|410.62",pbdb:29001;pbdb:31004,pbdb,393.47,410.62,392.48,408.67,shared_pbdb_exact_boundary_support
+all_younger,B2_primary,"CA|battery point|48.8,-64.3|393.47|410.62",pbdb:26026;pbdb:26547;pbdb:28924;pbdb:28997;pbdb:29002;pbdb:29003;pbdb:29026;pbdb:31023;pbdb:31212,pbdb,393.47,410.62,392.48,408.67,shared_pbdb_exact_boundary_support
+all_younger,B2_primary,"CA|battery point|48.8,-64.4|393.47|410.62",pbdb:28968;pbdb:28971;pbdb:31002;pbdb:31003;pbdb:31213;pbdb:31215,pbdb,393.47,410.62,392.48,408.67,shared_pbdb_exact_boundary_support
+all_younger,B2_primary,"CA|battery point|48.8,-64.5|393.47|410.62",pbdb:28950;pbdb:28969;pbdb:28996;pbdb:28998;pbdb:29029;pbdb:31007;pbdb:31010;pbdb:31011;pbdb:31027,pbdb,393.47,410.62,392.48,408.67,shared_pbdb_exact_boundary_support
+all_younger,B2_primary,"CA|battery point|48.9,-64.4|393.47|410.62",pbdb:31214,pbdb,393.47,410.62,392.48,408.67,shared_pbdb_exact_boundary_support
+all_younger,B2_primary,"CA|york river|48.6,-64.3|393.47|410.62",pbdb:31216,pbdb,393.47,410.62,392.48,408.67,shared_pbdb_exact_boundary_support
+all_younger,B2_primary,"CA|york river|48.8,-64.4|393.47|410.62",pbdb:29020;pbdb:31005,pbdb,393.47,410.62,392.48,408.67,shared_pbdb_exact_boundary_support
+all_younger,B2_primary,"CN|posongchong|23.3,104.2|410.62|413.02",pbdb:10891,pbdb,410.62,413.02,408.67,411.11,shared_pbdb_exact_boundary_support
+all_younger,B2_primary,"CN|posongchong|23.3,104.3|410.62|413.02",pbdb:10896,pbdb,410.62,413.02,408.67,411.11,shared_pbdb_exact_boundary_support
+all_younger,B2_primary,"CN|xiemisitai|46.8,85.6|419.62|422.7",pbdb:278439,pbdb,419.62,422.7,418.26,421.1,shared_pbdb_exact_boundary_support
+all_younger,B2_primary,"CN|xujiachong (also called longhuashan)|26.0,104.0|393.47|410.62",pbdb:10941,pbdb,393.47,410.62,392.48,408.67,shared_pbdb_exact_boundary_support
+all_younger,B2_primary,"Canada|us383 (=us600), polar bear pass region, bathurst island|419.62|425.0",tail:M-bathurst-us383,tail,419.62,425,418.26,423.5,shared_curated_stage_boundaries
+all_younger,B2_primary,"Canada|us384, polar bear pass region, bathurst island|419.62|425.0",tail:M-bathurst-us384,tail,419.62,425,418.26,423.5,shared_curated_stage_boundaries
+all_younger,B2_primary,"Canada|us385 (=us601), polar bear pass region, bathurst island|419.62|425.0",tail:M-bathurst-us385,tail,419.62,425,418.26,423.5,shared_curated_stage_boundaries
+all_younger,B2_primary,"Canada|us688, polar bear pass region, bathurst island|419.62|425.0",tail:M-bathurst-us688,tail,419.62,425,418.26,423.5,shared_curated_stage_boundaries
+all_younger,B2_primary,"China|mangkelu ii section, wutubulake village, hoboksar, west junggar|419.62|422.7",tail:M-mangkelu-ii,tail,419.62,422.7,418.26,421.1,shared_curated_stage_boundaries
+all_younger,B2_primary,"China|qujing, northeastern yunnan|419.62|422.7",tail:M-qujingense,tail,419.62,422.7,418.26,421.1,shared_curated_stage_boundaries
+all_younger,B2_primary,China|west junggar|419.62|422.7,tail:M-aberlemnia-junggaria,tail,419.62,422.7,418.26,421.1,shared_curated_stage_boundaries
+all_younger,B2_primary,"Czech Republic|karlštejn, ve spáleném, near house 132|419.62|422.7",tail:M-baragwanathia-karlstejn,tail,419.62,422.7,418.26,421.1,shared_curated_stage_boundaries
+all_younger,B2_primary,"DE|hunsrück slate|49.8,7.4|399.5|410.62",pbdb:26904,pbdb,399.5,410.62,399.5,410.62,fixed_pbdb_numerical_support_not_exactly_mapped
+all_younger,B2_primary,"DE|wahnbach|50.9,7.3|410.62|413.02",pbdb:232143,pbdb,410.62,413.02,408.67,411.11,shared_pbdb_exact_boundary_support
+all_younger,B2_primary,"DE||50.2,7.4|399.5|410.62",pbdb:27049;pbdb:27129,pbdb,399.5,410.62,399.5,410.62,fixed_pbdb_numerical_support_not_exactly_mapped
+all_younger,B2_primary,"KZ|aigyrzhal'skaya suite|47.0,79.0|393.47|413.02",pbdb:32851,pbdb,393.47,413.02,392.48,411.11,shared_pbdb_exact_boundary_support
+all_younger,B2_primary,"Norway|red bay series brook section, spitsbergen|413.02|419.62",tail:M-svalbard,tail,413.02,419.62,411.11,418.26,shared_curated_stage_boundaries
+all_younger,B2_primary,"RU|pridorozhnaya|54.5,89.9|399.5|410.62",pbdb:238400,pbdb,399.5,410.62,399.5,410.62,fixed_pbdb_numerical_support_not_exactly_mapped
+all_younger,B2_primary,"RU|salairka horizon|54.3,85.9|399.5|410.62",pbdb:35709,pbdb,399.5,410.62,399.5,410.62,fixed_pbdb_numerical_support_not_exactly_mapped
+all_younger,B2_primary,"RU|shanda horizon|54.3,85.9|387.95|399.5",pbdb:35721,pbdb,387.95,399.5,387.95,399.5,fixed_pbdb_numerical_support_not_exactly_mapped
+all_younger,B2_primary,"UA|rashkovskie beds|48.5,26.3|419.62|422.7",pbdb:52702,pbdb,419.62,422.7,418.26,421.1,shared_pbdb_exact_boundary_support
+all_younger,B2_primary,"UA|skala|49.6,23.9|419.62|422.7",pbdb:13873,pbdb,419.62,422.7,418.26,421.1,shared_pbdb_exact_boundary_support
+all_younger,B2_primary,"UK|dryden flags|57.3,-2.8|410.62|413.02",pbdb:10721,pbdb,410.62,413.02,408.67,411.11,shared_pbdb_exact_boundary_support
+all_younger,B2_primary,"UK|dundee flagstone|56.0,-2.0|413.02|419.62",pbdb:10705,pbdb,413.02,419.62,411.11,418.26,shared_pbdb_exact_boundary_support
+all_younger,B2_primary,"UK|dundee|56.7,-2.8|413.02|419.62",pbdb:26755;pbdb:26757,pbdb,413.02,419.62,411.11,418.26,shared_pbdb_exact_boundary_support
+all_younger,B2_primary,"UK|senni|51.9,-3.6|410.62|413.02",pbdb:238752,pbdb,410.62,413.02,408.67,411.11,shared_pbdb_exact_boundary_support
+all_younger,B2_primary,"UK|st. maughans|52.0,-2.0|413.02|419.62",pbdb:10679,pbdb,413.02,419.62,411.11,418.26,shared_pbdb_exact_boundary_support
+all_younger,B2_primary,"UK|strathmore|55.0,-4.0|393.47|410.62",pbdb:10719,pbdb,393.47,410.62,392.48,408.67,shared_pbdb_exact_boundary_support
+all_younger,B2_primary,"UK|strathmore|56.2,-4.2|393.47|410.62",pbdb:11513,pbdb,393.47,410.62,392.48,408.67,shared_pbdb_exact_boundary_support
+all_younger,B2_primary,"US|beartooth butte|44.9,-108.1|393.47|410.62",pbdb:29294,pbdb,393.47,410.62,392.48,408.67,shared_pbdb_exact_boundary_support
+all_younger,B2_primary,"US|beartooth butte|45.0,-109.6|393.47|410.62",pbdb:26176;pbdb:29292;pbdb:31000,pbdb,393.47,410.62,392.48,408.67,shared_pbdb_exact_boundary_support
+all_younger,B2_primary,"US|trout valley|46.1,-68.6|387.95|399.5",pbdb:10614;pbdb:10617,pbdb,387.95,399.5,387.95,399.5,fixed_pbdb_numerical_support_not_exactly_mapped
+all_younger,B2_primary,"Vietnam|xóm chè quarry, northern vietnam|419.62|422.7",tail:M-van-canh,tail,419.62,422.7,418.26,421.1,shared_curated_stage_boundaries
+all_older,B0_canonical,"AU|maradana shale|-33.2,148.7|413.02|419.62",pbdb:24907,pbdb,413.02,419.62,414.93,420.98,shared_pbdb_exact_boundary_support
+all_older,B0_canonical,"Argentina|chica de zonda range, san juan|419.62|422.7",tail:M-rinconada,tail,419.62,422.7,420.98,424.3,shared_curated_stage_boundaries
+all_older,B0_canonical,Australia|frenchmans spur / thomson river type-material district|393.47|413.02,tail:M-wilson-creek,tail,393.47,413.02,394.46,414.93,shared_curated_stage_boundaries
+all_older,B0_canonical,"Australia|ghin ghin road, yea|393.47|422.7",tail:M-ghin-ghin-b2,tail,393.47,422.7,394.46,424.3,shared_curated_stage_boundaries
+all_older,B0_canonical,"Australia|ghin ghin road, yea|393.47|426.7",tail:M-ghin-ghin,tail,393.47,426.7,394.46,428.2,shared_curated_stage_boundaries
+all_older,B0_canonical,"Australia|limestone road, brackley's (barkley's) cutting, yea; loc. 4 (= h4) of garratt's 1978 map; the national heritage place flora fossil site|393.47|426.7",tail:M-limestone-road,tail,393.47,426.7,394.46,428.2,shared_curated_stage_boundaries
+all_older,B0_canonical,"BE|bois d'ausse sandstone|50.5,5.7|413.02|419.62",pbdb:11722,pbdb,413.02,419.62,414.93,420.98,shared_pbdb_exact_boundary_support
+all_older,B0_canonical,"BE|burnotien|50.6,4.1|399.5|413.02",pbdb:23200;pbdb:23202,pbdb,399.5,413.02,399.5,413.02,fixed_pbdb_numerical_support_not_exactly_mapped
+all_older,B0_canonical,"BE|grès de wiheries|50.4,3.8|410.62|413.02",pbdb:22860;pbdb:23197,pbdb,410.62,413.02,412.57,414.93,shared_pbdb_exact_boundary_support
+all_older,B0_canonical,"BY||53.2,30.8|393.47|399.5",pbdb:232956,pbdb,393.47,399.5,393.47,399.5,fixed_pbdb_numerical_support_not_exactly_mapped
+all_older,B0_canonical,"Bolivia|c. 500 m ne of negra muerta farm, c. 30 km ne of tarija, bolivia|422.7|426.7",tail:M-bolivia-caledonica,tail,422.7,426.7,424.3,428.2,shared_curated_stage_boundaries
+all_older,B0_canonical,"CA|bathurst island|75.8,-98.4|410.62|413.02",pbdb:11421;pbdb:11425,pbdb,410.62,413.02,412.57,414.93,shared_pbdb_exact_boundary_support
+all_older,B0_canonical,"CA|battery point|48.6,-64.3|393.47|410.62",pbdb:29001;pbdb:31004,pbdb,393.47,410.62,394.46,412.57,shared_pbdb_exact_boundary_support
+all_older,B0_canonical,"CA|battery point|48.8,-64.3|393.47|410.62",pbdb:26026;pbdb:26547;pbdb:28924;pbdb:28997;pbdb:29002;pbdb:29003;pbdb:29026;pbdb:31023;pbdb:31212,pbdb,393.47,410.62,394.46,412.57,shared_pbdb_exact_boundary_support
+all_older,B0_canonical,"CA|battery point|48.8,-64.3|399.5|410.62",pbdb:203163,pbdb,399.5,410.62,399.5,410.62,fixed_pbdb_numerical_support_not_exactly_mapped
+all_older,B0_canonical,"CA|battery point|48.8,-64.4|393.47|410.62",pbdb:28968;pbdb:28971;pbdb:31002;pbdb:31003;pbdb:31213;pbdb:31215,pbdb,393.47,410.62,394.46,412.57,shared_pbdb_exact_boundary_support
+all_older,B0_canonical,"CA|battery point|48.8,-64.5|393.47|410.62",pbdb:28950;pbdb:28969;pbdb:28996;pbdb:28998;pbdb:29029;pbdb:31007;pbdb:31010;pbdb:31011;pbdb:31027,pbdb,393.47,410.62,394.46,412.57,shared_pbdb_exact_boundary_support
+all_older,B0_canonical,"CA|battery point|48.9,-64.4|393.47|410.62",pbdb:31214,pbdb,393.47,410.62,394.46,412.57,shared_pbdb_exact_boundary_support
+all_older,B0_canonical,"CA|williamsville|42.9,-78.9|419.62|422.7",pbdb:53825;pbdb:53830,pbdb,419.62,422.7,420.98,424.3,shared_pbdb_exact_boundary_support
+all_older,B0_canonical,"CA|york river|48.6,-64.3|393.47|410.62",pbdb:31216,pbdb,393.47,410.62,394.46,412.57,shared_pbdb_exact_boundary_support
+all_older,B0_canonical,"CA|york river|48.8,-64.4|393.47|410.62",pbdb:29020;pbdb:31005,pbdb,393.47,410.62,394.46,412.57,shared_pbdb_exact_boundary_support
+all_older,B0_canonical,"CN|posongchong|23.3,104.2|410.62|413.02",pbdb:10891,pbdb,410.62,413.02,412.57,414.93,shared_pbdb_exact_boundary_support
+all_older,B0_canonical,"CN|posongchong|23.3,104.3|410.62|413.02",pbdb:10896,pbdb,410.62,413.02,412.57,414.93,shared_pbdb_exact_boundary_support
+all_older,B0_canonical,"CN|xiemisitai|46.8,85.6|419.62|422.7",pbdb:278439,pbdb,419.62,422.7,420.98,424.3,shared_pbdb_exact_boundary_support
+all_older,B0_canonical,"CN|xujiachong (also called longhuashan)|26.0,104.0|393.47|410.62",pbdb:10941,pbdb,393.47,410.62,394.46,412.57,shared_pbdb_exact_boundary_support
+all_older,B0_canonical,"CZ|lochkov|49.9,14.2|413.02|419.62",pbdb:13895,pbdb,413.02,419.62,414.93,420.98,shared_pbdb_exact_boundary_support
+all_older,B0_canonical,"CZ|pozary|49.5,13.5|419.62|422.7",pbdb:14131,pbdb,419.62,422.7,420.98,424.3,shared_pbdb_exact_boundary_support
+all_older,B0_canonical,"CZ|pozary|49.9,14.0|419.62|422.7",pbdb:14043,pbdb,419.62,422.7,420.98,424.3,shared_pbdb_exact_boundary_support
+all_older,B0_canonical,"CZ|pozary|50.0,12.9|419.62|422.7",pbdb:14045,pbdb,419.62,422.7,420.98,424.3,shared_pbdb_exact_boundary_support
+all_older,B0_canonical,"CZ|pridoli schichten|50.0,14.3|419.62|422.7",pbdb:52698,pbdb,419.62,422.7,420.98,424.3,shared_pbdb_exact_boundary_support
+all_older,B0_canonical,"CZ||50.0,14.3|419.62|422.7",pbdb:53599,pbdb,419.62,422.7,420.98,424.3,shared_pbdb_exact_boundary_support
+all_older,B0_canonical,"Canada|us383 (=us600), polar bear pass region, bathurst island|419.62|425.0",tail:M-bathurst-us383,tail,419.62,425,420.98,426.5,shared_curated_stage_boundaries
+all_older,B0_canonical,"Canada|us384, polar bear pass region, bathurst island|419.62|425.0",tail:M-bathurst-us384,tail,419.62,425,420.98,426.5,shared_curated_stage_boundaries
+all_older,B0_canonical,"Canada|us385 (=us601), polar bear pass region, bathurst island|419.62|425.0",tail:M-bathurst-us385,tail,419.62,425,420.98,426.5,shared_curated_stage_boundaries
+all_older,B0_canonical,"Canada|us688, polar bear pass region, bathurst island|419.62|425.0",tail:M-bathurst-us688,tail,419.62,425,420.98,426.5,shared_curated_stage_boundaries
+all_older,B0_canonical,"China|mangkelu ii section, wutubulake village, hoboksar, west junggar|419.62|422.7",tail:M-mangkelu-ii,tail,419.62,422.7,420.98,424.3,shared_curated_stage_boundaries
+all_older,B0_canonical,"China|qujing, northeastern yunnan|419.62|422.7",tail:M-qujingense,tail,419.62,422.7,420.98,424.3,shared_curated_stage_boundaries
+all_older,B0_canonical,China|west junggar|419.62|422.7,tail:M-aberlemnia-junggaria,tail,419.62,422.7,420.98,424.3,shared_curated_stage_boundaries
+all_older,B0_canonical,"Czech Republic|karlštejn, ve spáleném, near house 132|419.62|422.7",tail:M-baragwanathia-karlstejn,tail,419.62,422.7,420.98,424.3,shared_curated_stage_boundaries
+all_older,B0_canonical,"Czech Republic|kosov quarry, prague basin|419.62|422.7",tail:M-bohemica,tail,419.62,422.7,420.98,424.3,shared_curated_stage_boundaries
+all_older,B0_canonical,"Czech Republic|loděnice, špičatý vrch–barrandovy jámy|430.6|432.9",tail:M-barrandei,tail,430.6,432.9,431.9,434.1,shared_curated_stage_boundaries
+all_older,B0_canonical,"DE|hunsrück slate|49.8,7.4|399.5|410.62",pbdb:26904,pbdb,399.5,410.62,399.5,410.62,fixed_pbdb_numerical_support_not_exactly_mapped
+all_older,B0_canonical,"DE|hunsrück slate|49.9,7.5|399.5|410.62",pbdb:26903,pbdb,399.5,410.62,399.5,410.62,fixed_pbdb_numerical_support_not_exactly_mapped
+all_older,B0_canonical,"DE|wahnbach|50.9,7.3|410.62|413.02",pbdb:232143,pbdb,410.62,413.02,412.57,414.93,shared_pbdb_exact_boundary_support
+all_older,B0_canonical,"DE||50.2,7.4|399.5|410.62",pbdb:27049;pbdb:27129,pbdb,399.5,410.62,399.5,410.62,fixed_pbdb_numerical_support_not_exactly_mapped
+all_older,B0_canonical,"Ireland|borrisnoe mountain, devil’s bit range, county tipperary|426.7|430.6",tail:M-borrisnoe,tail,426.7,430.6,428.2,431.9,shared_curated_stage_boundaries
+all_older,B0_canonical,"KZ|aigyrzhal'skaya suite|47.0,79.0|393.47|413.02",pbdb:32851,pbdb,393.47,413.02,394.46,414.93,shared_pbdb_exact_boundary_support
+all_older,B0_canonical,"KZ|tokrau fm|47.5,76.0|419.62|422.7",pbdb:53609;pbdb:53610;pbdb:53656,pbdb,419.62,422.7,420.98,424.3,shared_pbdb_exact_boundary_support
+all_older,B0_canonical,"LY||30.0,11.0|419.62|422.7",pbdb:53669,pbdb,419.62,422.7,420.98,424.3,shared_pbdb_exact_boundary_support
+all_older,B0_canonical,"Norway|red bay series brook section, spitsbergen|413.02|419.62",tail:M-svalbard,tail,413.02,419.62,414.93,420.98,shared_curated_stage_boundaries
+all_older,B0_canonical,"Oman|ghaba-1 borehole, northern oman|445.2|452.8",tail:S-w22-K12,tail,445.2,452.8,446.1,453.5,shared_curated_stage_boundaries
+all_older,B0_canonical,"PL|winnica mudstone complex|50.9,21.1|419.62|422.7",pbdb:52667,pbdb,419.62,422.7,420.98,424.3,shared_pbdb_exact_boundary_support
+all_older,B0_canonical,"RU|pridorozhnaya|54.5,89.9|399.5|410.62",pbdb:238400,pbdb,399.5,410.62,399.5,410.62,fixed_pbdb_numerical_support_not_exactly_mapped
+all_older,B0_canonical,"RU|salairka horizon|54.3,85.9|399.5|410.62",pbdb:35709,pbdb,399.5,410.62,399.5,410.62,fixed_pbdb_numerical_support_not_exactly_mapped
+all_older,B0_canonical,"RU|shanda horizon|54.3,85.9|387.95|399.5",pbdb:35721,pbdb,387.95,399.5,387.95,399.5,fixed_pbdb_numerical_support_not_exactly_mapped
+all_older,B0_canonical,"UA|rashkovskie beds|48.5,26.3|419.62|422.7",pbdb:52702,pbdb,419.62,422.7,420.98,424.3,shared_pbdb_exact_boundary_support
+all_older,B0_canonical,"UA|skala|49.6,23.9|419.62|422.7",pbdb:13873,pbdb,419.62,422.7,420.98,424.3,shared_pbdb_exact_boundary_support
+all_older,B0_canonical,"UK|dryden flags|57.3,-2.8|410.62|413.02",pbdb:10721,pbdb,410.62,413.02,412.57,414.93,shared_pbdb_exact_boundary_support
+all_older,B0_canonical,"UK|dundee flagstone|56.0,-2.0|413.02|419.62",pbdb:10705,pbdb,413.02,419.62,414.93,420.98,shared_pbdb_exact_boundary_support
+all_older,B0_canonical,"UK|dundee|56.7,-2.8|413.02|419.62",pbdb:26755;pbdb:26757,pbdb,413.02,419.62,414.93,420.98,shared_pbdb_exact_boundary_support
+all_older,B0_canonical,"UK|rushall|52.0,-2.0|419.62|422.7",pbdb:10706,pbdb,419.62,422.7,420.98,424.3,shared_pbdb_exact_boundary_support
+all_older,B0_canonical,"UK|senni|51.9,-3.6|410.62|413.02",pbdb:238752,pbdb,410.62,413.02,412.57,414.93,shared_pbdb_exact_boundary_support
+all_older,B0_canonical,"UK|st. maughans|52.0,-2.0|413.02|419.62",pbdb:10679,pbdb,413.02,419.62,414.93,420.98,shared_pbdb_exact_boundary_support
+all_older,B0_canonical,"UK|strathmore|55.0,-4.0|393.47|410.62",pbdb:10719,pbdb,393.47,410.62,394.46,412.57,shared_pbdb_exact_boundary_support
+all_older,B0_canonical,"UK|strathmore|56.2,-4.2|393.47|410.62",pbdb:11513,pbdb,393.47,410.62,394.46,412.57,shared_pbdb_exact_boundary_support
+all_older,B0_canonical,"US|beartooth butte|44.9,-108.1|393.47|410.62",pbdb:29294,pbdb,393.47,410.62,394.46,412.57,shared_pbdb_exact_boundary_support
+all_older,B0_canonical,"US|beartooth butte|45.0,-109.6|393.47|410.62",pbdb:26176;pbdb:29292;pbdb:31000,pbdb,393.47,410.62,394.46,412.57,shared_pbdb_exact_boundary_support
+all_older,B0_canonical,"US|bertie|42.9,-75.1|419.62|422.7",pbdb:20664,pbdb,419.62,422.7,420.98,424.3,shared_pbdb_exact_boundary_support
+all_older,B0_canonical,"US|bertie|43.5,-74.9|419.62|422.7",pbdb:26087,pbdb,419.62,422.7,420.98,424.3,shared_pbdb_exact_boundary_support
+all_older,B0_canonical,"US|fiddlers green|43.0,-75.0|419.62|422.7",pbdb:53827,pbdb,419.62,422.7,420.98,424.3,shared_pbdb_exact_boundary_support
+all_older,B0_canonical,"US|trout valley|46.1,-68.6|387.95|399.5",pbdb:10614;pbdb:10617,pbdb,387.95,399.5,387.95,399.5,fixed_pbdb_numerical_support_not_exactly_mapped
+all_older,B0_canonical,"US|williamsville|42.9,-78.9|419.62|422.7",pbdb:53831,pbdb,419.62,422.7,420.98,424.3,shared_pbdb_exact_boundary_support
+all_older,B0_canonical,"US|williamsville|43.0,-78.7|419.62|422.7",pbdb:53837,pbdb,419.62,422.7,420.98,424.3,shared_pbdb_exact_boundary_support
+all_older,B0_canonical,"US||43.2,-78.6|422.7|432.9",pbdb:53832,pbdb,422.7,432.9,424.3,434.1,shared_pbdb_exact_boundary_support
+all_older,B0_canonical,"United Kingdom|capel horeb / halfway quarry, powys|422.7|425.0",tail:M-capel-horeb-ludlow,tail,422.7,425,424.3,426.5,shared_curated_stage_boundaries
+all_older,B0_canonical,United Kingdom|welsh borderland; exact original site unresolved|413.02|419.62,tail:M-lang-tracheid-axis,tail,413.02,419.62,414.93,420.98,shared_curated_stage_boundaries
+all_older,B0_canonical,"Vietnam|xóm chè quarry, northern vietnam|419.62|422.7",tail:M-van-canh,tail,419.62,422.7,420.98,424.3,shared_curated_stage_boundaries
+all_older,B0_canonical,pbdb:27182|413.02|419.62,pbdb:27182,pbdb,413.02,419.62,414.93,420.98,shared_pbdb_exact_boundary_support
+all_older,B2_primary,"Argentina|chica de zonda range, san juan|419.62|422.7",tail:M-rinconada,tail,419.62,422.7,420.98,424.3,shared_curated_stage_boundaries
+all_older,B2_primary,Australia|frenchmans spur / thomson river type-material district|393.47|413.02,tail:M-wilson-creek,tail,393.47,413.02,394.46,414.93,shared_curated_stage_boundaries
+all_older,B2_primary,"Australia|ghin ghin road, yea|393.47|422.7",tail:M-ghin-ghin-b2,tail,393.47,422.7,394.46,424.3,shared_curated_stage_boundaries
+all_older,B2_primary,"Australia|ghin ghin road, yea|393.47|426.7",tail:M-ghin-ghin,tail,393.47,426.7,394.46,428.2,shared_curated_stage_boundaries
+all_older,B2_primary,"Australia|limestone road, brackley's (barkley's) cutting, yea; loc. 4 (= h4) of garratt's 1978 map; the national heritage place flora fossil site|393.47|426.7",tail:M-limestone-road,tail,393.47,426.7,394.46,428.2,shared_curated_stage_boundaries
+all_older,B2_primary,"BE|bois d'ausse sandstone|50.5,5.7|413.02|419.62",pbdb:11722,pbdb,413.02,419.62,414.93,420.98,shared_pbdb_exact_boundary_support
+all_older,B2_primary,"BE|burnotien|50.6,4.1|399.5|413.02",pbdb:23200;pbdb:23202,pbdb,399.5,413.02,399.5,413.02,fixed_pbdb_numerical_support_not_exactly_mapped
+all_older,B2_primary,"BE|grès de wiheries|50.4,3.8|410.62|413.02",pbdb:22860;pbdb:23197,pbdb,410.62,413.02,412.57,414.93,shared_pbdb_exact_boundary_support
+all_older,B2_primary,"BY||53.2,30.8|393.47|399.5",pbdb:232956,pbdb,393.47,399.5,393.47,399.5,fixed_pbdb_numerical_support_not_exactly_mapped
+all_older,B2_primary,"CA|bathurst island|75.8,-98.4|410.62|413.02",pbdb:11421;pbdb:11425,pbdb,410.62,413.02,412.57,414.93,shared_pbdb_exact_boundary_support
+all_older,B2_primary,"CA|battery point|48.6,-64.3|393.47|410.62",pbdb:29001;pbdb:31004,pbdb,393.47,410.62,394.46,412.57,shared_pbdb_exact_boundary_support
+all_older,B2_primary,"CA|battery point|48.8,-64.3|393.47|410.62",pbdb:26026;pbdb:26547;pbdb:28924;pbdb:28997;pbdb:29002;pbdb:29003;pbdb:29026;pbdb:31023;pbdb:31212,pbdb,393.47,410.62,394.46,412.57,shared_pbdb_exact_boundary_support
+all_older,B2_primary,"CA|battery point|48.8,-64.4|393.47|410.62",pbdb:28968;pbdb:28971;pbdb:31002;pbdb:31003;pbdb:31213;pbdb:31215,pbdb,393.47,410.62,394.46,412.57,shared_pbdb_exact_boundary_support
+all_older,B2_primary,"CA|battery point|48.8,-64.5|393.47|410.62",pbdb:28950;pbdb:28969;pbdb:28996;pbdb:28998;pbdb:29029;pbdb:31007;pbdb:31010;pbdb:31011;pbdb:31027,pbdb,393.47,410.62,394.46,412.57,shared_pbdb_exact_boundary_support
+all_older,B2_primary,"CA|battery point|48.9,-64.4|393.47|410.62",pbdb:31214,pbdb,393.47,410.62,394.46,412.57,shared_pbdb_exact_boundary_support
+all_older,B2_primary,"CA|york river|48.6,-64.3|393.47|410.62",pbdb:31216,pbdb,393.47,410.62,394.46,412.57,shared_pbdb_exact_boundary_support
+all_older,B2_primary,"CA|york river|48.8,-64.4|393.47|410.62",pbdb:29020;pbdb:31005,pbdb,393.47,410.62,394.46,412.57,shared_pbdb_exact_boundary_support
+all_older,B2_primary,"CN|posongchong|23.3,104.2|410.62|413.02",pbdb:10891,pbdb,410.62,413.02,412.57,414.93,shared_pbdb_exact_boundary_support
+all_older,B2_primary,"CN|posongchong|23.3,104.3|410.62|413.02",pbdb:10896,pbdb,410.62,413.02,412.57,414.93,shared_pbdb_exact_boundary_support
+all_older,B2_primary,"CN|xiemisitai|46.8,85.6|419.62|422.7",pbdb:278439,pbdb,419.62,422.7,420.98,424.3,shared_pbdb_exact_boundary_support
+all_older,B2_primary,"CN|xujiachong (also called longhuashan)|26.0,104.0|393.47|410.62",pbdb:10941,pbdb,393.47,410.62,394.46,412.57,shared_pbdb_exact_boundary_support
+all_older,B2_primary,"Canada|us383 (=us600), polar bear pass region, bathurst island|419.62|425.0",tail:M-bathurst-us383,tail,419.62,425,420.98,426.5,shared_curated_stage_boundaries
+all_older,B2_primary,"Canada|us384, polar bear pass region, bathurst island|419.62|425.0",tail:M-bathurst-us384,tail,419.62,425,420.98,426.5,shared_curated_stage_boundaries
+all_older,B2_primary,"Canada|us385 (=us601), polar bear pass region, bathurst island|419.62|425.0",tail:M-bathurst-us385,tail,419.62,425,420.98,426.5,shared_curated_stage_boundaries
+all_older,B2_primary,"Canada|us688, polar bear pass region, bathurst island|419.62|425.0",tail:M-bathurst-us688,tail,419.62,425,420.98,426.5,shared_curated_stage_boundaries
+all_older,B2_primary,"China|mangkelu ii section, wutubulake village, hoboksar, west junggar|419.62|422.7",tail:M-mangkelu-ii,tail,419.62,422.7,420.98,424.3,shared_curated_stage_boundaries
+all_older,B2_primary,"China|qujing, northeastern yunnan|419.62|422.7",tail:M-qujingense,tail,419.62,422.7,420.98,424.3,shared_curated_stage_boundaries
+all_older,B2_primary,China|west junggar|419.62|422.7,tail:M-aberlemnia-junggaria,tail,419.62,422.7,420.98,424.3,shared_curated_stage_boundaries
+all_older,B2_primary,"Czech Republic|karlštejn, ve spáleném, near house 132|419.62|422.7",tail:M-baragwanathia-karlstejn,tail,419.62,422.7,420.98,424.3,shared_curated_stage_boundaries
+all_older,B2_primary,"DE|hunsrück slate|49.8,7.4|399.5|410.62",pbdb:26904,pbdb,399.5,410.62,399.5,410.62,fixed_pbdb_numerical_support_not_exactly_mapped
+all_older,B2_primary,"DE|wahnbach|50.9,7.3|410.62|413.02",pbdb:232143,pbdb,410.62,413.02,412.57,414.93,shared_pbdb_exact_boundary_support
+all_older,B2_primary,"DE||50.2,7.4|399.5|410.62",pbdb:27049;pbdb:27129,pbdb,399.5,410.62,399.5,410.62,fixed_pbdb_numerical_support_not_exactly_mapped
+all_older,B2_primary,"KZ|aigyrzhal'skaya suite|47.0,79.0|393.47|413.02",pbdb:32851,pbdb,393.47,413.02,394.46,414.93,shared_pbdb_exact_boundary_support
+all_older,B2_primary,"Norway|red bay series brook section, spitsbergen|413.02|419.62",tail:M-svalbard,tail,413.02,419.62,414.93,420.98,shared_curated_stage_boundaries
+all_older,B2_primary,"RU|pridorozhnaya|54.5,89.9|399.5|410.62",pbdb:238400,pbdb,399.5,410.62,399.5,410.62,fixed_pbdb_numerical_support_not_exactly_mapped
+all_older,B2_primary,"RU|salairka horizon|54.3,85.9|399.5|410.62",pbdb:35709,pbdb,399.5,410.62,399.5,410.62,fixed_pbdb_numerical_support_not_exactly_mapped
+all_older,B2_primary,"RU|shanda horizon|54.3,85.9|387.95|399.5",pbdb:35721,pbdb,387.95,399.5,387.95,399.5,fixed_pbdb_numerical_support_not_exactly_mapped
+all_older,B2_primary,"UA|rashkovskie beds|48.5,26.3|419.62|422.7",pbdb:52702,pbdb,419.62,422.7,420.98,424.3,shared_pbdb_exact_boundary_support
+all_older,B2_primary,"UA|skala|49.6,23.9|419.62|422.7",pbdb:13873,pbdb,419.62,422.7,420.98,424.3,shared_pbdb_exact_boundary_support
+all_older,B2_primary,"UK|dryden flags|57.3,-2.8|410.62|413.02",pbdb:10721,pbdb,410.62,413.02,412.57,414.93,shared_pbdb_exact_boundary_support
+all_older,B2_primary,"UK|dundee flagstone|56.0,-2.0|413.02|419.62",pbdb:10705,pbdb,413.02,419.62,414.93,420.98,shared_pbdb_exact_boundary_support
+all_older,B2_primary,"UK|dundee|56.7,-2.8|413.02|419.62",pbdb:26755;pbdb:26757,pbdb,413.02,419.62,414.93,420.98,shared_pbdb_exact_boundary_support
+all_older,B2_primary,"UK|senni|51.9,-3.6|410.62|413.02",pbdb:238752,pbdb,410.62,413.02,412.57,414.93,shared_pbdb_exact_boundary_support
+all_older,B2_primary,"UK|st. maughans|52.0,-2.0|413.02|419.62",pbdb:10679,pbdb,413.02,419.62,414.93,420.98,shared_pbdb_exact_boundary_support
+all_older,B2_primary,"UK|strathmore|55.0,-4.0|393.47|410.62",pbdb:10719,pbdb,393.47,410.62,394.46,412.57,shared_pbdb_exact_boundary_support
+all_older,B2_primary,"UK|strathmore|56.2,-4.2|393.47|410.62",pbdb:11513,pbdb,393.47,410.62,394.46,412.57,shared_pbdb_exact_boundary_support
+all_older,B2_primary,"US|beartooth butte|44.9,-108.1|393.47|410.62",pbdb:29294,pbdb,393.47,410.62,394.46,412.57,shared_pbdb_exact_boundary_support
+all_older,B2_primary,"US|beartooth butte|45.0,-109.6|393.47|410.62",pbdb:26176;pbdb:29292;pbdb:31000,pbdb,393.47,410.62,394.46,412.57,shared_pbdb_exact_boundary_support
+all_older,B2_primary,"US|trout valley|46.1,-68.6|387.95|399.5",pbdb:10614;pbdb:10617,pbdb,387.95,399.5,387.95,399.5,fixed_pbdb_numerical_support_not_exactly_mapped
+all_older,B2_primary,"Vietnam|xóm chè quarry, northern vietnam|419.62|422.7",tail:M-van-canh,tail,419.62,422.7,420.98,424.3,shared_curated_stage_boundaries
+alternating_a,B0_canonical,"AU|maradana shale|-33.2,148.7|413.02|419.62",pbdb:24907,pbdb,413.02,419.62,414.422925196,418.621058499,shared_pbdb_exact_boundary_support
+alternating_a,B0_canonical,"Argentina|chica de zonda range, san juan|419.62|422.7",tail:M-rinconada,tail,419.62,422.7,418.621058499,423.875225295,shared_curated_stage_boundaries
+alternating_a,B0_canonical,Australia|frenchmans spur / thomson river type-material district|393.47|413.02,tail:M-wilson-creek,tail,393.47,413.02,394.197170652,414.422925196,shared_curated_stage_boundaries
+alternating_a,B0_canonical,"Australia|ghin ghin road, yea|393.47|422.7",tail:M-ghin-ghin-b2,tail,393.47,422.7,394.197170652,423.875225295,shared_curated_stage_boundaries
+alternating_a,B0_canonical,"Australia|ghin ghin road, yea|393.47|426.7",tail:M-ghin-ghin,tail,393.47,426.7,394.197170652,427.801773715,shared_curated_stage_boundaries
+alternating_a,B0_canonical,"Australia|limestone road, brackley's (barkley's) cutting, yea; loc. 4 (= h4) of garratt's 1978 map; the national heritage place flora fossil site|393.47|426.7",tail:M-limestone-road,tail,393.47,426.7,394.197170652,427.801773715,shared_curated_stage_boundaries
+alternating_a,B0_canonical,"BE|bois d'ausse sandstone|50.5,5.7|413.02|419.62",pbdb:11722,pbdb,413.02,419.62,414.422925196,418.621058499,shared_pbdb_exact_boundary_support
+alternating_a,B0_canonical,"BE|burnotien|50.6,4.1|399.5|413.02",pbdb:23200;pbdb:23202,pbdb,399.5,413.02,399.5,413.02,fixed_pbdb_numerical_support_not_exactly_mapped
+alternating_a,B0_canonical,"BE|grès de wiheries|50.4,3.8|410.62|413.02",pbdb:22860;pbdb:23197,pbdb,410.62,413.02,409.187694171,414.422925196,shared_pbdb_exact_boundary_support
+alternating_a,B0_canonical,"BY||53.2,30.8|393.47|399.5",pbdb:232956,pbdb,393.47,399.5,393.47,399.5,fixed_pbdb_numerical_support_not_exactly_mapped
+alternating_a,B0_canonical,"Bolivia|c. 500 m ne of negra muerta farm, c. 30 km ne of tarija, bolivia|422.7|426.7",tail:M-bolivia-caledonica,tail,422.7,426.7,423.875225295,427.801773715,shared_curated_stage_boundaries
+alternating_a,B0_canonical,"CA|bathurst island|75.8,-98.4|410.62|413.02",pbdb:11421;pbdb:11425,pbdb,410.62,413.02,409.187694171,414.422925196,shared_pbdb_exact_boundary_support
+alternating_a,B0_canonical,"CA|battery point|48.6,-64.3|393.47|410.62",pbdb:29001;pbdb:31004,pbdb,393.47,410.62,394.197170652,409.187694171,shared_pbdb_exact_boundary_support
+alternating_a,B0_canonical,"CA|battery point|48.8,-64.3|393.47|410.62",pbdb:26026;pbdb:26547;pbdb:28924;pbdb:28997;pbdb:29002;pbdb:29003;pbdb:29026;pbdb:31023;pbdb:31212,pbdb,393.47,410.62,394.197170652,409.187694171,shared_pbdb_exact_boundary_support
+alternating_a,B0_canonical,"CA|battery point|48.8,-64.3|399.5|410.62",pbdb:203163,pbdb,399.5,410.62,399.5,410.62,fixed_pbdb_numerical_support_not_exactly_mapped
+alternating_a,B0_canonical,"CA|battery point|48.8,-64.4|393.47|410.62",pbdb:28968;pbdb:28971;pbdb:31002;pbdb:31003;pbdb:31213;pbdb:31215,pbdb,393.47,410.62,394.197170652,409.187694171,shared_pbdb_exact_boundary_support
+alternating_a,B0_canonical,"CA|battery point|48.8,-64.5|393.47|410.62",pbdb:28950;pbdb:28969;pbdb:28996;pbdb:28998;pbdb:29029;pbdb:31007;pbdb:31010;pbdb:31011;pbdb:31027,pbdb,393.47,410.62,394.197170652,409.187694171,shared_pbdb_exact_boundary_support
+alternating_a,B0_canonical,"CA|battery point|48.9,-64.4|393.47|410.62",pbdb:31214,pbdb,393.47,410.62,394.197170652,409.187694171,shared_pbdb_exact_boundary_support
+alternating_a,B0_canonical,"CA|williamsville|42.9,-78.9|419.62|422.7",pbdb:53825;pbdb:53830,pbdb,419.62,422.7,418.621058499,423.875225295,shared_pbdb_exact_boundary_support
+alternating_a,B0_canonical,"CA|york river|48.6,-64.3|393.47|410.62",pbdb:31216,pbdb,393.47,410.62,394.197170652,409.187694171,shared_pbdb_exact_boundary_support
+alternating_a,B0_canonical,"CA|york river|48.8,-64.4|393.47|410.62",pbdb:29020;pbdb:31005,pbdb,393.47,410.62,394.197170652,409.187694171,shared_pbdb_exact_boundary_support
+alternating_a,B0_canonical,"CN|posongchong|23.3,104.2|410.62|413.02",pbdb:10891,pbdb,410.62,413.02,409.187694171,414.422925196,shared_pbdb_exact_boundary_support
+alternating_a,B0_canonical,"CN|posongchong|23.3,104.3|410.62|413.02",pbdb:10896,pbdb,410.62,413.02,409.187694171,414.422925196,shared_pbdb_exact_boundary_support
+alternating_a,B0_canonical,"CN|xiemisitai|46.8,85.6|419.62|422.7",pbdb:278439,pbdb,419.62,422.7,418.621058499,423.875225295,shared_pbdb_exact_boundary_support
+alternating_a,B0_canonical,"CN|xujiachong (also called longhuashan)|26.0,104.0|393.47|410.62",pbdb:10941,pbdb,393.47,410.62,394.197170652,409.187694171,shared_pbdb_exact_boundary_support
+alternating_a,B0_canonical,"CZ|lochkov|49.9,14.2|413.02|419.62",pbdb:13895,pbdb,413.02,419.62,414.422925196,418.621058499,shared_pbdb_exact_boundary_support
+alternating_a,B0_canonical,"CZ|pozary|49.5,13.5|419.62|422.7",pbdb:14131,pbdb,419.62,422.7,418.621058499,423.875225295,shared_pbdb_exact_boundary_support
+alternating_a,B0_canonical,"CZ|pozary|49.9,14.0|419.62|422.7",pbdb:14043,pbdb,419.62,422.7,418.621058499,423.875225295,shared_pbdb_exact_boundary_support
+alternating_a,B0_canonical,"CZ|pozary|50.0,12.9|419.62|422.7",pbdb:14045,pbdb,419.62,422.7,418.621058499,423.875225295,shared_pbdb_exact_boundary_support
+alternating_a,B0_canonical,"CZ|pridoli schichten|50.0,14.3|419.62|422.7",pbdb:52698,pbdb,419.62,422.7,418.621058499,423.875225295,shared_pbdb_exact_boundary_support
+alternating_a,B0_canonical,"CZ||50.0,14.3|419.62|422.7",pbdb:53599,pbdb,419.62,422.7,418.621058499,423.875225295,shared_pbdb_exact_boundary_support
+alternating_a,B0_canonical,"Canada|us383 (=us600), polar bear pass region, bathurst island|419.62|425.0",tail:M-bathurst-us383,tail,419.62,425,418.621058499,423.898226285,shared_curated_stage_boundaries
+alternating_a,B0_canonical,"Canada|us384, polar bear pass region, bathurst island|419.62|425.0",tail:M-bathurst-us384,tail,419.62,425,418.621058499,423.898226285,shared_curated_stage_boundaries
+alternating_a,B0_canonical,"Canada|us385 (=us601), polar bear pass region, bathurst island|419.62|425.0",tail:M-bathurst-us385,tail,419.62,425,418.621058499,423.898226285,shared_curated_stage_boundaries
+alternating_a,B0_canonical,"Canada|us688, polar bear pass region, bathurst island|419.62|425.0",tail:M-bathurst-us688,tail,419.62,425,418.621058499,423.898226285,shared_curated_stage_boundaries
+alternating_a,B0_canonical,"China|mangkelu ii section, wutubulake village, hoboksar, west junggar|419.62|422.7",tail:M-mangkelu-ii,tail,419.62,422.7,418.621058499,423.875225295,shared_curated_stage_boundaries
+alternating_a,B0_canonical,"China|qujing, northeastern yunnan|419.62|422.7",tail:M-qujingense,tail,419.62,422.7,418.621058499,423.875225295,shared_curated_stage_boundaries
+alternating_a,B0_canonical,China|west junggar|419.62|422.7,tail:M-aberlemnia-junggaria,tail,419.62,422.7,418.621058499,423.875225295,shared_curated_stage_boundaries
+alternating_a,B0_canonical,"Czech Republic|karlštejn, ve spáleném, near house 132|419.62|422.7",tail:M-baragwanathia-karlstejn,tail,419.62,422.7,418.621058499,423.875225295,shared_curated_stage_boundaries
+alternating_a,B0_canonical,"Czech Republic|kosov quarry, prague basin|419.62|422.7",tail:M-bohemica,tail,419.62,422.7,418.621058499,423.875225295,shared_curated_stage_boundaries
+alternating_a,B0_canonical,"Czech Republic|loděnice, špičatý vrch–barrandovy jámy|430.6|432.9",tail:M-barrandei,tail,430.6,432.9,429.645129447,433.781418972,shared_curated_stage_boundaries
+alternating_a,B0_canonical,"DE|hunsrück slate|49.8,7.4|399.5|410.62",pbdb:26904,pbdb,399.5,410.62,399.5,410.62,fixed_pbdb_numerical_support_not_exactly_mapped
+alternating_a,B0_canonical,"DE|hunsrück slate|49.9,7.5|399.5|410.62",pbdb:26903,pbdb,399.5,410.62,399.5,410.62,fixed_pbdb_numerical_support_not_exactly_mapped
+alternating_a,B0_canonical,"DE|wahnbach|50.9,7.3|410.62|413.02",pbdb:232143,pbdb,410.62,413.02,409.187694171,414.422925196,shared_pbdb_exact_boundary_support
+alternating_a,B0_canonical,"DE||50.2,7.4|399.5|410.62",pbdb:27049;pbdb:27129,pbdb,399.5,410.62,399.5,410.62,fixed_pbdb_numerical_support_not_exactly_mapped
+alternating_a,B0_canonical,"Ireland|borrisnoe mountain, devil’s bit range, county tipperary|426.7|430.6",tail:M-borrisnoe,tail,426.7,430.6,427.801773715,429.645129447,shared_curated_stage_boundaries
+alternating_a,B0_canonical,"KZ|aigyrzhal'skaya suite|47.0,79.0|393.47|413.02",pbdb:32851,pbdb,393.47,413.02,394.197170652,414.422925196,shared_pbdb_exact_boundary_support
+alternating_a,B0_canonical,"KZ|tokrau fm|47.5,76.0|419.62|422.7",pbdb:53609;pbdb:53610;pbdb:53656,pbdb,419.62,422.7,418.621058499,423.875225295,shared_pbdb_exact_boundary_support
+alternating_a,B0_canonical,"LY||30.0,11.0|419.62|422.7",pbdb:53669,pbdb,419.62,422.7,418.621058499,423.875225295,shared_pbdb_exact_boundary_support
+alternating_a,B0_canonical,"Norway|red bay series brook section, spitsbergen|413.02|419.62",tail:M-svalbard,tail,413.02,419.62,414.422925196,418.621058499,shared_curated_stage_boundaries
+alternating_a,B0_canonical,"Oman|ghaba-1 borehole, northern oman|445.2|452.8",tail:S-w22-K12,tail,445.2,452.8,445.861064229,452.285838933,shared_curated_stage_boundaries
+alternating_a,B0_canonical,"PL|winnica mudstone complex|50.9,21.1|419.62|422.7",pbdb:52667,pbdb,419.62,422.7,418.621058499,423.875225295,shared_pbdb_exact_boundary_support
+alternating_a,B0_canonical,"RU|pridorozhnaya|54.5,89.9|399.5|410.62",pbdb:238400,pbdb,399.5,410.62,399.5,410.62,fixed_pbdb_numerical_support_not_exactly_mapped
+alternating_a,B0_canonical,"RU|salairka horizon|54.3,85.9|399.5|410.62",pbdb:35709,pbdb,399.5,410.62,399.5,410.62,fixed_pbdb_numerical_support_not_exactly_mapped
+alternating_a,B0_canonical,"RU|shanda horizon|54.3,85.9|387.95|399.5",pbdb:35721,pbdb,387.95,399.5,387.95,399.5,fixed_pbdb_numerical_support_not_exactly_mapped
+alternating_a,B0_canonical,"UA|rashkovskie beds|48.5,26.3|419.62|422.7",pbdb:52702,pbdb,419.62,422.7,418.621058499,423.875225295,shared_pbdb_exact_boundary_support
+alternating_a,B0_canonical,"UA|skala|49.6,23.9|419.62|422.7",pbdb:13873,pbdb,419.62,422.7,418.621058499,423.875225295,shared_pbdb_exact_boundary_support
+alternating_a,B0_canonical,"UK|dryden flags|57.3,-2.8|410.62|413.02",pbdb:10721,pbdb,410.62,413.02,409.187694171,414.422925196,shared_pbdb_exact_boundary_support
+alternating_a,B0_canonical,"UK|dundee flagstone|56.0,-2.0|413.02|419.62",pbdb:10705,pbdb,413.02,419.62,414.422925196,418.621058499,shared_pbdb_exact_boundary_support
+alternating_a,B0_canonical,"UK|dundee|56.7,-2.8|413.02|419.62",pbdb:26755;pbdb:26757,pbdb,413.02,419.62,414.422925196,418.621058499,shared_pbdb_exact_boundary_support
+alternating_a,B0_canonical,"UK|rushall|52.0,-2.0|419.62|422.7",pbdb:10706,pbdb,419.62,422.7,418.621058499,423.875225295,shared_pbdb_exact_boundary_support
+alternating_a,B0_canonical,"UK|senni|51.9,-3.6|410.62|413.02",pbdb:238752,pbdb,410.62,413.02,409.187694171,414.422925196,shared_pbdb_exact_boundary_support
+alternating_a,B0_canonical,"UK|st. maughans|52.0,-2.0|413.02|419.62",pbdb:10679,pbdb,413.02,419.62,414.422925196,418.621058499,shared_pbdb_exact_boundary_support
+alternating_a,B0_canonical,"UK|strathmore|55.0,-4.0|393.47|410.62",pbdb:10719,pbdb,393.47,410.62,394.197170652,409.187694171,shared_pbdb_exact_boundary_support
+alternating_a,B0_canonical,"UK|strathmore|56.2,-4.2|393.47|410.62",pbdb:11513,pbdb,393.47,410.62,394.197170652,409.187694171,shared_pbdb_exact_boundary_support
+alternating_a,B0_canonical,"US|beartooth butte|44.9,-108.1|393.47|410.62",pbdb:29294,pbdb,393.47,410.62,394.197170652,409.187694171,shared_pbdb_exact_boundary_support
+alternating_a,B0_canonical,"US|beartooth butte|45.0,-109.6|393.47|410.62",pbdb:26176;pbdb:29292;pbdb:31000,pbdb,393.47,410.62,394.197170652,409.187694171,shared_pbdb_exact_boundary_support
+alternating_a,B0_canonical,"US|bertie|42.9,-75.1|419.62|422.7",pbdb:20664,pbdb,419.62,422.7,418.621058499,423.875225295,shared_pbdb_exact_boundary_support
+alternating_a,B0_canonical,"US|bertie|43.5,-74.9|419.62|422.7",pbdb:26087,pbdb,419.62,422.7,418.621058499,423.875225295,shared_pbdb_exact_boundary_support
+alternating_a,B0_canonical,"US|fiddlers green|43.0,-75.0|419.62|422.7",pbdb:53827,pbdb,419.62,422.7,418.621058499,423.875225295,shared_pbdb_exact_boundary_support
+alternating_a,B0_canonical,"US|trout valley|46.1,-68.6|387.95|399.5",pbdb:10614;pbdb:10617,pbdb,387.95,399.5,387.95,399.5,fixed_pbdb_numerical_support_not_exactly_mapped
+alternating_a,B0_canonical,"US|williamsville|42.9,-78.9|419.62|422.7",pbdb:53831,pbdb,419.62,422.7,418.621058499,423.875225295,shared_pbdb_exact_boundary_support
+alternating_a,B0_canonical,"US|williamsville|43.0,-78.7|419.62|422.7",pbdb:53837,pbdb,419.62,422.7,418.621058499,423.875225295,shared_pbdb_exact_boundary_support
+alternating_a,B0_canonical,"US||43.2,-78.6|422.7|432.9",pbdb:53832,pbdb,422.7,432.9,423.875225295,433.781418972,shared_pbdb_exact_boundary_support
+alternating_a,B0_canonical,"United Kingdom|capel horeb / halfway quarry, powys|422.7|425.0",tail:M-capel-horeb-ludlow,tail,422.7,425,423.875225295,423.898226285,shared_curated_stage_boundaries
+alternating_a,B0_canonical,United Kingdom|welsh borderland; exact original site unresolved|413.02|419.62,tail:M-lang-tracheid-axis,tail,413.02,419.62,414.422925196,418.621058499,shared_curated_stage_boundaries
+alternating_a,B0_canonical,"Vietnam|xóm chè quarry, northern vietnam|419.62|422.7",tail:M-van-canh,tail,419.62,422.7,418.621058499,423.875225295,shared_curated_stage_boundaries
+alternating_a,B0_canonical,pbdb:27182|413.02|419.62,pbdb:27182,pbdb,413.02,419.62,414.422925196,418.621058499,shared_pbdb_exact_boundary_support
+alternating_a,B2_primary,"Argentina|chica de zonda range, san juan|419.62|422.7",tail:M-rinconada,tail,419.62,422.7,418.621058499,423.875225295,shared_curated_stage_boundaries
+alternating_a,B2_primary,Australia|frenchmans spur / thomson river type-material district|393.47|413.02,tail:M-wilson-creek,tail,393.47,413.02,394.197170652,414.422925196,shared_curated_stage_boundaries
+alternating_a,B2_primary,"Australia|ghin ghin road, yea|393.47|422.7",tail:M-ghin-ghin-b2,tail,393.47,422.7,394.197170652,423.875225295,shared_curated_stage_boundaries
+alternating_a,B2_primary,"Australia|ghin ghin road, yea|393.47|426.7",tail:M-ghin-ghin,tail,393.47,426.7,394.197170652,427.801773715,shared_curated_stage_boundaries
+alternating_a,B2_primary,"Australia|limestone road, brackley's (barkley's) cutting, yea; loc. 4 (= h4) of garratt's 1978 map; the national heritage place flora fossil site|393.47|426.7",tail:M-limestone-road,tail,393.47,426.7,394.197170652,427.801773715,shared_curated_stage_boundaries
+alternating_a,B2_primary,"BE|bois d'ausse sandstone|50.5,5.7|413.02|419.62",pbdb:11722,pbdb,413.02,419.62,414.422925196,418.621058499,shared_pbdb_exact_boundary_support
+alternating_a,B2_primary,"BE|burnotien|50.6,4.1|399.5|413.02",pbdb:23200;pbdb:23202,pbdb,399.5,413.02,399.5,413.02,fixed_pbdb_numerical_support_not_exactly_mapped
+alternating_a,B2_primary,"BE|grès de wiheries|50.4,3.8|410.62|413.02",pbdb:22860;pbdb:23197,pbdb,410.62,413.02,409.187694171,414.422925196,shared_pbdb_exact_boundary_support
+alternating_a,B2_primary,"BY||53.2,30.8|393.47|399.5",pbdb:232956,pbdb,393.47,399.5,393.47,399.5,fixed_pbdb_numerical_support_not_exactly_mapped
+alternating_a,B2_primary,"CA|bathurst island|75.8,-98.4|410.62|413.02",pbdb:11421;pbdb:11425,pbdb,410.62,413.02,409.187694171,414.422925196,shared_pbdb_exact_boundary_support
+alternating_a,B2_primary,"CA|battery point|48.6,-64.3|393.47|410.62",pbdb:29001;pbdb:31004,pbdb,393.47,410.62,394.197170652,409.187694171,shared_pbdb_exact_boundary_support
+alternating_a,B2_primary,"CA|battery point|48.8,-64.3|393.47|410.62",pbdb:26026;pbdb:26547;pbdb:28924;pbdb:28997;pbdb:29002;pbdb:29003;pbdb:29026;pbdb:31023;pbdb:31212,pbdb,393.47,410.62,394.197170652,409.187694171,shared_pbdb_exact_boundary_support
+alternating_a,B2_primary,"CA|battery point|48.8,-64.4|393.47|410.62",pbdb:28968;pbdb:28971;pbdb:31002;pbdb:31003;pbdb:31213;pbdb:31215,pbdb,393.47,410.62,394.197170652,409.187694171,shared_pbdb_exact_boundary_support
+alternating_a,B2_primary,"CA|battery point|48.8,-64.5|393.47|410.62",pbdb:28950;pbdb:28969;pbdb:28996;pbdb:28998;pbdb:29029;pbdb:31007;pbdb:31010;pbdb:31011;pbdb:31027,pbdb,393.47,410.62,394.197170652,409.187694171,shared_pbdb_exact_boundary_support
+alternating_a,B2_primary,"CA|battery point|48.9,-64.4|393.47|410.62",pbdb:31214,pbdb,393.47,410.62,394.197170652,409.187694171,shared_pbdb_exact_boundary_support
+alternating_a,B2_primary,"CA|york river|48.6,-64.3|393.47|410.62",pbdb:31216,pbdb,393.47,410.62,394.197170652,409.187694171,shared_pbdb_exact_boundary_support
+alternating_a,B2_primary,"CA|york river|48.8,-64.4|393.47|410.62",pbdb:29020;pbdb:31005,pbdb,393.47,410.62,394.197170652,409.187694171,shared_pbdb_exact_boundary_support
+alternating_a,B2_primary,"CN|posongchong|23.3,104.2|410.62|413.02",pbdb:10891,pbdb,410.62,413.02,409.187694171,414.422925196,shared_pbdb_exact_boundary_support
+alternating_a,B2_primary,"CN|posongchong|23.3,104.3|410.62|413.02",pbdb:10896,pbdb,410.62,413.02,409.187694171,414.422925196,shared_pbdb_exact_boundary_support
+alternating_a,B2_primary,"CN|xiemisitai|46.8,85.6|419.62|422.7",pbdb:278439,pbdb,419.62,422.7,418.621058499,423.875225295,shared_pbdb_exact_boundary_support
+alternating_a,B2_primary,"CN|xujiachong (also called longhuashan)|26.0,104.0|393.47|410.62",pbdb:10941,pbdb,393.47,410.62,394.197170652,409.187694171,shared_pbdb_exact_boundary_support
+alternating_a,B2_primary,"Canada|us383 (=us600), polar bear pass region, bathurst island|419.62|425.0",tail:M-bathurst-us383,tail,419.62,425,418.621058499,423.898226285,shared_curated_stage_boundaries
+alternating_a,B2_primary,"Canada|us384, polar bear pass region, bathurst island|419.62|425.0",tail:M-bathurst-us384,tail,419.62,425,418.621058499,423.898226285,shared_curated_stage_boundaries
+alternating_a,B2_primary,"Canada|us385 (=us601), polar bear pass region, bathurst island|419.62|425.0",tail:M-bathurst-us385,tail,419.62,425,418.621058499,423.898226285,shared_curated_stage_boundaries
+alternating_a,B2_primary,"Canada|us688, polar bear pass region, bathurst island|419.62|425.0",tail:M-bathurst-us688,tail,419.62,425,418.621058499,423.898226285,shared_curated_stage_boundaries
+alternating_a,B2_primary,"China|mangkelu ii section, wutubulake village, hoboksar, west junggar|419.62|422.7",tail:M-mangkelu-ii,tail,419.62,422.7,418.621058499,423.875225295,shared_curated_stage_boundaries
+alternating_a,B2_primary,"China|qujing, northeastern yunnan|419.62|422.7",tail:M-qujingense,tail,419.62,422.7,418.621058499,423.875225295,shared_curated_stage_boundaries
+alternating_a,B2_primary,China|west junggar|419.62|422.7,tail:M-aberlemnia-junggaria,tail,419.62,422.7,418.621058499,423.875225295,shared_curated_stage_boundaries
+alternating_a,B2_primary,"Czech Republic|karlštejn, ve spáleném, near house 132|419.62|422.7",tail:M-baragwanathia-karlstejn,tail,419.62,422.7,418.621058499,423.875225295,shared_curated_stage_boundaries
+alternating_a,B2_primary,"DE|hunsrück slate|49.8,7.4|399.5|410.62",pbdb:26904,pbdb,399.5,410.62,399.5,410.62,fixed_pbdb_numerical_support_not_exactly_mapped
+alternating_a,B2_primary,"DE|wahnbach|50.9,7.3|410.62|413.02",pbdb:232143,pbdb,410.62,413.02,409.187694171,414.422925196,shared_pbdb_exact_boundary_support
+alternating_a,B2_primary,"DE||50.2,7.4|399.5|410.62",pbdb:27049;pbdb:27129,pbdb,399.5,410.62,399.5,410.62,fixed_pbdb_numerical_support_not_exactly_mapped
+alternating_a,B2_primary,"KZ|aigyrzhal'skaya suite|47.0,79.0|393.47|413.02",pbdb:32851,pbdb,393.47,413.02,394.197170652,414.422925196,shared_pbdb_exact_boundary_support
+alternating_a,B2_primary,"Norway|red bay series brook section, spitsbergen|413.02|419.62",tail:M-svalbard,tail,413.02,419.62,414.422925196,418.621058499,shared_curated_stage_boundaries
+alternating_a,B2_primary,"RU|pridorozhnaya|54.5,89.9|399.5|410.62",pbdb:238400,pbdb,399.5,410.62,399.5,410.62,fixed_pbdb_numerical_support_not_exactly_mapped
+alternating_a,B2_primary,"RU|salairka horizon|54.3,85.9|399.5|410.62",pbdb:35709,pbdb,399.5,410.62,399.5,410.62,fixed_pbdb_numerical_support_not_exactly_mapped
+alternating_a,B2_primary,"RU|shanda horizon|54.3,85.9|387.95|399.5",pbdb:35721,pbdb,387.95,399.5,387.95,399.5,fixed_pbdb_numerical_support_not_exactly_mapped
+alternating_a,B2_primary,"UA|rashkovskie beds|48.5,26.3|419.62|422.7",pbdb:52702,pbdb,419.62,422.7,418.621058499,423.875225295,shared_pbdb_exact_boundary_support
+alternating_a,B2_primary,"UA|skala|49.6,23.9|419.62|422.7",pbdb:13873,pbdb,419.62,422.7,418.621058499,423.875225295,shared_pbdb_exact_boundary_support
+alternating_a,B2_primary,"UK|dryden flags|57.3,-2.8|410.62|413.02",pbdb:10721,pbdb,410.62,413.02,409.187694171,414.422925196,shared_pbdb_exact_boundary_support
+alternating_a,B2_primary,"UK|dundee flagstone|56.0,-2.0|413.02|419.62",pbdb:10705,pbdb,413.02,419.62,414.422925196,418.621058499,shared_pbdb_exact_boundary_support
+alternating_a,B2_primary,"UK|dundee|56.7,-2.8|413.02|419.62",pbdb:26755;pbdb:26757,pbdb,413.02,419.62,414.422925196,418.621058499,shared_pbdb_exact_boundary_support
+alternating_a,B2_primary,"UK|senni|51.9,-3.6|410.62|413.02",pbdb:238752,pbdb,410.62,413.02,409.187694171,414.422925196,shared_pbdb_exact_boundary_support
+alternating_a,B2_primary,"UK|st. maughans|52.0,-2.0|413.02|419.62",pbdb:10679,pbdb,413.02,419.62,414.422925196,418.621058499,shared_pbdb_exact_boundary_support
+alternating_a,B2_primary,"UK|strathmore|55.0,-4.0|393.47|410.62",pbdb:10719,pbdb,393.47,410.62,394.197170652,409.187694171,shared_pbdb_exact_boundary_support
+alternating_a,B2_primary,"UK|strathmore|56.2,-4.2|393.47|410.62",pbdb:11513,pbdb,393.47,410.62,394.197170652,409.187694171,shared_pbdb_exact_boundary_support
+alternating_a,B2_primary,"US|beartooth butte|44.9,-108.1|393.47|410.62",pbdb:29294,pbdb,393.47,410.62,394.197170652,409.187694171,shared_pbdb_exact_boundary_support
+alternating_a,B2_primary,"US|beartooth butte|45.0,-109.6|393.47|410.62",pbdb:26176;pbdb:29292;pbdb:31000,pbdb,393.47,410.62,394.197170652,409.187694171,shared_pbdb_exact_boundary_support
+alternating_a,B2_primary,"US|trout valley|46.1,-68.6|387.95|399.5",pbdb:10614;pbdb:10617,pbdb,387.95,399.5,387.95,399.5,fixed_pbdb_numerical_support_not_exactly_mapped
+alternating_a,B2_primary,"Vietnam|xóm chè quarry, northern vietnam|419.62|422.7",tail:M-van-canh,tail,419.62,422.7,418.621058499,423.875225295,shared_curated_stage_boundaries
+alternating_b,B0_canonical,"AU|maradana shale|-33.2,148.7|413.02|419.62",pbdb:24907,pbdb,413.02,419.62,411.94849063,420.382959551,shared_pbdb_exact_boundary_support
+alternating_b,B0_canonical,"Argentina|chica de zonda range, san juan|419.62|422.7",tail:M-rinconada,tail,419.62,422.7,420.382959551,421.802400528,shared_curated_stage_boundaries
+alternating_b,B0_canonical,Australia|frenchmans spur / thomson river type-material district|393.47|413.02,tail:M-wilson-creek,tail,393.47,413.02,392.914610327,411.94849063,shared_curated_stage_boundaries
+alternating_b,B0_canonical,"Australia|ghin ghin road, yea|393.47|422.7",tail:M-ghin-ghin-b2,tail,393.47,422.7,392.914610327,421.802400528,shared_curated_stage_boundaries
+alternating_b,B0_canonical,"Australia|ghin ghin road, yea|393.47|426.7",tail:M-ghin-ghin,tail,393.47,426.7,392.914610327,425.858500495,shared_curated_stage_boundaries
+alternating_b,B0_canonical,"Australia|limestone road, brackley's (barkley's) cutting, yea; loc. 4 (= h4) of garratt's 1978 map; the national heritage place flora fossil site|393.47|426.7",tail:M-limestone-road,tail,393.47,426.7,392.914610327,425.858500495,shared_curated_stage_boundaries
+alternating_b,B0_canonical,"BE|bois d'ausse sandstone|50.5,5.7|413.02|419.62",pbdb:11722,pbdb,413.02,419.62,411.94849063,420.382959551,shared_pbdb_exact_boundary_support
+alternating_b,B0_canonical,"BE|burnotien|50.6,4.1|399.5|413.02",pbdb:23200;pbdb:23202,pbdb,399.5,413.02,399.5,413.02,fixed_pbdb_numerical_support_not_exactly_mapped
+alternating_b,B0_canonical,"BE|grès de wiheries|50.4,3.8|410.62|413.02",pbdb:22860;pbdb:23197,pbdb,410.62,413.02,411.713949356,411.94849063,shared_pbdb_exact_boundary_support
+alternating_b,B0_canonical,"BY||53.2,30.8|393.47|399.5",pbdb:232956,pbdb,393.47,399.5,393.47,399.5,fixed_pbdb_numerical_support_not_exactly_mapped
+alternating_b,B0_canonical,"Bolivia|c. 500 m ne of negra muerta farm, c. 30 km ne of tarija, bolivia|422.7|426.7",tail:M-bolivia-caledonica,tail,422.7,426.7,421.802400528,425.858500495,shared_curated_stage_boundaries
+alternating_b,B0_canonical,"CA|bathurst island|75.8,-98.4|410.62|413.02",pbdb:11421;pbdb:11425,pbdb,410.62,413.02,411.713949356,411.94849063,shared_pbdb_exact_boundary_support
+alternating_b,B0_canonical,"CA|battery point|48.6,-64.3|393.47|410.62",pbdb:29001;pbdb:31004,pbdb,393.47,410.62,392.914610327,411.713949356,shared_pbdb_exact_boundary_support
+alternating_b,B0_canonical,"CA|battery point|48.8,-64.3|393.47|410.62",pbdb:26026;pbdb:26547;pbdb:28924;pbdb:28997;pbdb:29002;pbdb:29003;pbdb:29026;pbdb:31023;pbdb:31212,pbdb,393.47,410.62,392.914610327,411.713949356,shared_pbdb_exact_boundary_support
+alternating_b,B0_canonical,"CA|battery point|48.8,-64.3|399.5|410.62",pbdb:203163,pbdb,399.5,410.62,399.5,410.62,fixed_pbdb_numerical_support_not_exactly_mapped
+alternating_b,B0_canonical,"CA|battery point|48.8,-64.4|393.47|410.62",pbdb:28968;pbdb:28971;pbdb:31002;pbdb:31003;pbdb:31213;pbdb:31215,pbdb,393.47,410.62,392.914610327,411.713949356,shared_pbdb_exact_boundary_support
+alternating_b,B0_canonical,"CA|battery point|48.8,-64.5|393.47|410.62",pbdb:28950;pbdb:28969;pbdb:28996;pbdb:28998;pbdb:29029;pbdb:31007;pbdb:31010;pbdb:31011;pbdb:31027,pbdb,393.47,410.62,392.914610327,411.713949356,shared_pbdb_exact_boundary_support
+alternating_b,B0_canonical,"CA|battery point|48.9,-64.4|393.47|410.62",pbdb:31214,pbdb,393.47,410.62,392.914610327,411.713949356,shared_pbdb_exact_boundary_support
+alternating_b,B0_canonical,"CA|williamsville|42.9,-78.9|419.62|422.7",pbdb:53825;pbdb:53830,pbdb,419.62,422.7,420.382959551,421.802400528,shared_pbdb_exact_boundary_support
+alternating_b,B0_canonical,"CA|york river|48.6,-64.3|393.47|410.62",pbdb:31216,pbdb,393.47,410.62,392.914610327,411.713949356,shared_pbdb_exact_boundary_support
+alternating_b,B0_canonical,"CA|york river|48.8,-64.4|393.47|410.62",pbdb:29020;pbdb:31005,pbdb,393.47,410.62,392.914610327,411.713949356,shared_pbdb_exact_boundary_support
+alternating_b,B0_canonical,"CN|posongchong|23.3,104.2|410.62|413.02",pbdb:10891,pbdb,410.62,413.02,411.713949356,411.94849063,shared_pbdb_exact_boundary_support
+alternating_b,B0_canonical,"CN|posongchong|23.3,104.3|410.62|413.02",pbdb:10896,pbdb,410.62,413.02,411.713949356,411.94849063,shared_pbdb_exact_boundary_support
+alternating_b,B0_canonical,"CN|xiemisitai|46.8,85.6|419.62|422.7",pbdb:278439,pbdb,419.62,422.7,420.382959551,421.802400528,shared_pbdb_exact_boundary_support
+alternating_b,B0_canonical,"CN|xujiachong (also called longhuashan)|26.0,104.0|393.47|410.62",pbdb:10941,pbdb,393.47,410.62,392.914610327,411.713949356,shared_pbdb_exact_boundary_support
+alternating_b,B0_canonical,"CZ|lochkov|49.9,14.2|413.02|419.62",pbdb:13895,pbdb,413.02,419.62,411.94849063,420.382959551,shared_pbdb_exact_boundary_support
+alternating_b,B0_canonical,"CZ|pozary|49.5,13.5|419.62|422.7",pbdb:14131,pbdb,419.62,422.7,420.382959551,421.802400528,shared_pbdb_exact_boundary_support
+alternating_b,B0_canonical,"CZ|pozary|49.9,14.0|419.62|422.7",pbdb:14043,pbdb,419.62,422.7,420.382959551,421.802400528,shared_pbdb_exact_boundary_support
+alternating_b,B0_canonical,"CZ|pozary|50.0,12.9|419.62|422.7",pbdb:14045,pbdb,419.62,422.7,420.382959551,421.802400528,shared_pbdb_exact_boundary_support
+alternating_b,B0_canonical,"CZ|pridoli schichten|50.0,14.3|419.62|422.7",pbdb:52698,pbdb,419.62,422.7,420.382959551,421.802400528,shared_pbdb_exact_boundary_support
+alternating_b,B0_canonical,"CZ||50.0,14.3|419.62|422.7",pbdb:53599,pbdb,419.62,422.7,420.382959551,421.802400528,shared_pbdb_exact_boundary_support
+alternating_b,B0_canonical,"Canada|us383 (=us600), polar bear pass region, bathurst island|419.62|425.0",tail:M-bathurst-us383,tail,419.62,425,420.382959551,425.841499505,shared_curated_stage_boundaries
+alternating_b,B0_canonical,"Canada|us384, polar bear pass region, bathurst island|419.62|425.0",tail:M-bathurst-us384,tail,419.62,425,420.382959551,425.841499505,shared_curated_stage_boundaries
+alternating_b,B0_canonical,"Canada|us385 (=us601), polar bear pass region, bathurst island|419.62|425.0",tail:M-bathurst-us385,tail,419.62,425,420.382959551,425.841499505,shared_curated_stage_boundaries
+alternating_b,B0_canonical,"Canada|us688, polar bear pass region, bathurst island|419.62|425.0",tail:M-bathurst-us688,tail,419.62,425,420.382959551,425.841499505,shared_curated_stage_boundaries
+alternating_b,B0_canonical,"China|mangkelu ii section, wutubulake village, hoboksar, west junggar|419.62|422.7",tail:M-mangkelu-ii,tail,419.62,422.7,420.382959551,421.802400528,shared_curated_stage_boundaries
+alternating_b,B0_canonical,"China|qujing, northeastern yunnan|419.62|422.7",tail:M-qujingense,tail,419.62,422.7,420.382959551,421.802400528,shared_curated_stage_boundaries
+alternating_b,B0_canonical,China|west junggar|419.62|422.7,tail:M-aberlemnia-junggaria,tail,419.62,422.7,420.382959551,421.802400528,shared_curated_stage_boundaries
+alternating_b,B0_canonical,"Czech Republic|karlštejn, ve spáleném, near house 132|419.62|422.7",tail:M-baragwanathia-karlstejn,tail,419.62,422.7,420.382959551,421.802400528,shared_curated_stage_boundaries
+alternating_b,B0_canonical,"Czech Republic|kosov quarry, prague basin|419.62|422.7",tail:M-bohemica,tail,419.62,422.7,420.382959551,421.802400528,shared_curated_stage_boundaries
+alternating_b,B0_canonical,"Czech Republic|loděnice, špičatý vrch–barrandovy jámy|430.6|432.9",tail:M-barrandei,tail,430.6,432.9,431.329299571,432.226800396,shared_curated_stage_boundaries
+alternating_b,B0_canonical,"DE|hunsrück slate|49.8,7.4|399.5|410.62",pbdb:26904,pbdb,399.5,410.62,399.5,410.62,fixed_pbdb_numerical_support_not_exactly_mapped
+alternating_b,B0_canonical,"DE|hunsrück slate|49.9,7.5|399.5|410.62",pbdb:26903,pbdb,399.5,410.62,399.5,410.62,fixed_pbdb_numerical_support_not_exactly_mapped
+alternating_b,B0_canonical,"DE|wahnbach|50.9,7.3|410.62|413.02",pbdb:232143,pbdb,410.62,413.02,411.713949356,411.94849063,shared_pbdb_exact_boundary_support
+alternating_b,B0_canonical,"DE||50.2,7.4|399.5|410.62",pbdb:27049;pbdb:27129,pbdb,399.5,410.62,399.5,410.62,fixed_pbdb_numerical_support_not_exactly_mapped
+alternating_b,B0_canonical,"Ireland|borrisnoe mountain, devil’s bit range, county tipperary|426.7|430.6",tail:M-borrisnoe,tail,426.7,430.6,425.858500495,431.329299571,shared_curated_stage_boundaries
+alternating_b,B0_canonical,"KZ|aigyrzhal'skaya suite|47.0,79.0|393.47|413.02",pbdb:32851,pbdb,393.47,413.02,392.914610327,411.94849063,shared_pbdb_exact_boundary_support
+alternating_b,B0_canonical,"KZ|tokrau fm|47.5,76.0|419.62|422.7",pbdb:53609;pbdb:53610;pbdb:53656,pbdb,419.62,422.7,420.382959551,421.802400528,shared_pbdb_exact_boundary_support
+alternating_b,B0_canonical,"LY||30.0,11.0|419.62|422.7",pbdb:53669,pbdb,419.62,422.7,420.382959551,421.802400528,shared_pbdb_exact_boundary_support
+alternating_b,B0_canonical,"Norway|red bay series brook section, spitsbergen|413.02|419.62",tail:M-svalbard,tail,413.02,419.62,411.94849063,420.382959551,shared_curated_stage_boundaries
+alternating_b,B0_canonical,"Oman|ghaba-1 borehole, northern oman|445.2|452.8",tail:S-w22-K12,tail,445.2,452.8,444.695100297,453.192699769,shared_curated_stage_boundaries
+alternating_b,B0_canonical,"PL|winnica mudstone complex|50.9,21.1|419.62|422.7",pbdb:52667,pbdb,419.62,422.7,420.382959551,421.802400528,shared_pbdb_exact_boundary_support
+alternating_b,B0_canonical,"RU|pridorozhnaya|54.5,89.9|399.5|410.62",pbdb:238400,pbdb,399.5,410.62,399.5,410.62,fixed_pbdb_numerical_support_not_exactly_mapped
+alternating_b,B0_canonical,"RU|salairka horizon|54.3,85.9|399.5|410.62",pbdb:35709,pbdb,399.5,410.62,399.5,410.62,fixed_pbdb_numerical_support_not_exactly_mapped
+alternating_b,B0_canonical,"RU|shanda horizon|54.3,85.9|387.95|399.5",pbdb:35721,pbdb,387.95,399.5,387.95,399.5,fixed_pbdb_numerical_support_not_exactly_mapped
+alternating_b,B0_canonical,"UA|rashkovskie beds|48.5,26.3|419.62|422.7",pbdb:52702,pbdb,419.62,422.7,420.382959551,421.802400528,shared_pbdb_exact_boundary_support
+alternating_b,B0_canonical,"UA|skala|49.6,23.9|419.62|422.7",pbdb:13873,pbdb,419.62,422.7,420.382959551,421.802400528,shared_pbdb_exact_boundary_support
+alternating_b,B0_canonical,"UK|dryden flags|57.3,-2.8|410.62|413.02",pbdb:10721,pbdb,410.62,413.02,411.713949356,411.94849063,shared_pbdb_exact_boundary_support
+alternating_b,B0_canonical,"UK|dundee flagstone|56.0,-2.0|413.02|419.62",pbdb:10705,pbdb,413.02,419.62,411.94849063,420.382959551,shared_pbdb_exact_boundary_support
+alternating_b,B0_canonical,"UK|dundee|56.7,-2.8|413.02|419.62",pbdb:26755;pbdb:26757,pbdb,413.02,419.62,411.94849063,420.382959551,shared_pbdb_exact_boundary_support
+alternating_b,B0_canonical,"UK|rushall|52.0,-2.0|419.62|422.7",pbdb:10706,pbdb,419.62,422.7,420.382959551,421.802400528,shared_pbdb_exact_boundary_support
+alternating_b,B0_canonical,"UK|senni|51.9,-3.6|410.62|413.02",pbdb:238752,pbdb,410.62,413.02,411.713949356,411.94849063,shared_pbdb_exact_boundary_support
+alternating_b,B0_canonical,"UK|st. maughans|52.0,-2.0|413.02|419.62",pbdb:10679,pbdb,413.02,419.62,411.94849063,420.382959551,shared_pbdb_exact_boundary_support
+alternating_b,B0_canonical,"UK|strathmore|55.0,-4.0|393.47|410.62",pbdb:10719,pbdb,393.47,410.62,392.914610327,411.713949356,shared_pbdb_exact_boundary_support
+alternating_b,B0_canonical,"UK|strathmore|56.2,-4.2|393.47|410.62",pbdb:11513,pbdb,393.47,410.62,392.914610327,411.713949356,shared_pbdb_exact_boundary_support
+alternating_b,B0_canonical,"US|beartooth butte|44.9,-108.1|393.47|410.62",pbdb:29294,pbdb,393.47,410.62,392.914610327,411.713949356,shared_pbdb_exact_boundary_support
+alternating_b,B0_canonical,"US|beartooth butte|45.0,-109.6|393.47|410.62",pbdb:26176;pbdb:29292;pbdb:31000,pbdb,393.47,410.62,392.914610327,411.713949356,shared_pbdb_exact_boundary_support
+alternating_b,B0_canonical,"US|bertie|42.9,-75.1|419.62|422.7",pbdb:20664,pbdb,419.62,422.7,420.382959551,421.802400528,shared_pbdb_exact_boundary_support
+alternating_b,B0_canonical,"US|bertie|43.5,-74.9|419.62|422.7",pbdb:26087,pbdb,419.62,422.7,420.382959551,421.802400528,shared_pbdb_exact_boundary_support
+alternating_b,B0_canonical,"US|fiddlers green|43.0,-75.0|419.62|422.7",pbdb:53827,pbdb,419.62,422.7,420.382959551,421.802400528,shared_pbdb_exact_boundary_support
+alternating_b,B0_canonical,"US|trout valley|46.1,-68.6|387.95|399.5",pbdb:10614;pbdb:10617,pbdb,387.95,399.5,387.95,399.5,fixed_pbdb_numerical_support_not_exactly_mapped
+alternating_b,B0_canonical,"US|williamsville|42.9,-78.9|419.62|422.7",pbdb:53831,pbdb,419.62,422.7,420.382959551,421.802400528,shared_pbdb_exact_boundary_support
+alternating_b,B0_canonical,"US|williamsville|43.0,-78.7|419.62|422.7",pbdb:53837,pbdb,419.62,422.7,420.382959551,421.802400528,shared_pbdb_exact_boundary_support
+alternating_b,B0_canonical,"US||43.2,-78.6|422.7|432.9",pbdb:53832,pbdb,422.7,432.9,421.802400528,432.226800396,shared_pbdb_exact_boundary_support
+alternating_b,B0_canonical,"United Kingdom|capel horeb / halfway quarry, powys|422.7|425.0",tail:M-capel-horeb-ludlow,tail,422.7,425,421.802400528,425.841499505,shared_curated_stage_boundaries
+alternating_b,B0_canonical,United Kingdom|welsh borderland; exact original site unresolved|413.02|419.62,tail:M-lang-tracheid-axis,tail,413.02,419.62,411.94849063,420.382959551,shared_curated_stage_boundaries
+alternating_b,B0_canonical,"Vietnam|xóm chè quarry, northern vietnam|419.62|422.7",tail:M-van-canh,tail,419.62,422.7,420.382959551,421.802400528,shared_curated_stage_boundaries
+alternating_b,B0_canonical,pbdb:27182|413.02|419.62,pbdb:27182,pbdb,413.02,419.62,411.94849063,420.382959551,shared_pbdb_exact_boundary_support
+alternating_b,B2_primary,"Argentina|chica de zonda range, san juan|419.62|422.7",tail:M-rinconada,tail,419.62,422.7,420.382959551,421.802400528,shared_curated_stage_boundaries
+alternating_b,B2_primary,Australia|frenchmans spur / thomson river type-material district|393.47|413.02,tail:M-wilson-creek,tail,393.47,413.02,392.914610327,411.94849063,shared_curated_stage_boundaries
+alternating_b,B2_primary,"Australia|ghin ghin road, yea|393.47|422.7",tail:M-ghin-ghin-b2,tail,393.47,422.7,392.914610327,421.802400528,shared_curated_stage_boundaries
+alternating_b,B2_primary,"Australia|ghin ghin road, yea|393.47|426.7",tail:M-ghin-ghin,tail,393.47,426.7,392.914610327,425.858500495,shared_curated_stage_boundaries
+alternating_b,B2_primary,"Australia|limestone road, brackley's (barkley's) cutting, yea; loc. 4 (= h4) of garratt's 1978 map; the national heritage place flora fossil site|393.47|426.7",tail:M-limestone-road,tail,393.47,426.7,392.914610327,425.858500495,shared_curated_stage_boundaries
+alternating_b,B2_primary,"BE|bois d'ausse sandstone|50.5,5.7|413.02|419.62",pbdb:11722,pbdb,413.02,419.62,411.94849063,420.382959551,shared_pbdb_exact_boundary_support
+alternating_b,B2_primary,"BE|burnotien|50.6,4.1|399.5|413.02",pbdb:23200;pbdb:23202,pbdb,399.5,413.02,399.5,413.02,fixed_pbdb_numerical_support_not_exactly_mapped
+alternating_b,B2_primary,"BE|grès de wiheries|50.4,3.8|410.62|413.02",pbdb:22860;pbdb:23197,pbdb,410.62,413.02,411.713949356,411.94849063,shared_pbdb_exact_boundary_support
+alternating_b,B2_primary,"BY||53.2,30.8|393.47|399.5",pbdb:232956,pbdb,393.47,399.5,393.47,399.5,fixed_pbdb_numerical_support_not_exactly_mapped
+alternating_b,B2_primary,"CA|bathurst island|75.8,-98.4|410.62|413.02",pbdb:11421;pbdb:11425,pbdb,410.62,413.02,411.713949356,411.94849063,shared_pbdb_exact_boundary_support
+alternating_b,B2_primary,"CA|battery point|48.6,-64.3|393.47|410.62",pbdb:29001;pbdb:31004,pbdb,393.47,410.62,392.914610327,411.713949356,shared_pbdb_exact_boundary_support
+alternating_b,B2_primary,"CA|battery point|48.8,-64.3|393.47|410.62",pbdb:26026;pbdb:26547;pbdb:28924;pbdb:28997;pbdb:29002;pbdb:29003;pbdb:29026;pbdb:31023;pbdb:31212,pbdb,393.47,410.62,392.914610327,411.713949356,shared_pbdb_exact_boundary_support
+alternating_b,B2_primary,"CA|battery point|48.8,-64.4|393.47|410.62",pbdb:28968;pbdb:28971;pbdb:31002;pbdb:31003;pbdb:31213;pbdb:31215,pbdb,393.47,410.62,392.914610327,411.713949356,shared_pbdb_exact_boundary_support
+alternating_b,B2_primary,"CA|battery point|48.8,-64.5|393.47|410.62",pbdb:28950;pbdb:28969;pbdb:28996;pbdb:28998;pbdb:29029;pbdb:31007;pbdb:31010;pbdb:31011;pbdb:31027,pbdb,393.47,410.62,392.914610327,411.713949356,shared_pbdb_exact_boundary_support
+alternating_b,B2_primary,"CA|battery point|48.9,-64.4|393.47|410.62",pbdb:31214,pbdb,393.47,410.62,392.914610327,411.713949356,shared_pbdb_exact_boundary_support
+alternating_b,B2_primary,"CA|york river|48.6,-64.3|393.47|410.62",pbdb:31216,pbdb,393.47,410.62,392.914610327,411.713949356,shared_pbdb_exact_boundary_support
+alternating_b,B2_primary,"CA|york river|48.8,-64.4|393.47|410.62",pbdb:29020;pbdb:31005,pbdb,393.47,410.62,392.914610327,411.713949356,shared_pbdb_exact_boundary_support
+alternating_b,B2_primary,"CN|posongchong|23.3,104.2|410.62|413.02",pbdb:10891,pbdb,410.62,413.02,411.713949356,411.94849063,shared_pbdb_exact_boundary_support
+alternating_b,B2_primary,"CN|posongchong|23.3,104.3|410.62|413.02",pbdb:10896,pbdb,410.62,413.02,411.713949356,411.94849063,shared_pbdb_exact_boundary_support
+alternating_b,B2_primary,"CN|xiemisitai|46.8,85.6|419.62|422.7",pbdb:278439,pbdb,419.62,422.7,420.382959551,421.802400528,shared_pbdb_exact_boundary_support
+alternating_b,B2_primary,"CN|xujiachong (also called longhuashan)|26.0,104.0|393.47|410.62",pbdb:10941,pbdb,393.47,410.62,392.914610327,411.713949356,shared_pbdb_exact_boundary_support
+alternating_b,B2_primary,"Canada|us383 (=us600), polar bear pass region, bathurst island|419.62|425.0",tail:M-bathurst-us383,tail,419.62,425,420.382959551,425.841499505,shared_curated_stage_boundaries
+alternating_b,B2_primary,"Canada|us384, polar bear pass region, bathurst island|419.62|425.0",tail:M-bathurst-us384,tail,419.62,425,420.382959551,425.841499505,shared_curated_stage_boundaries
+alternating_b,B2_primary,"Canada|us385 (=us601), polar bear pass region, bathurst island|419.62|425.0",tail:M-bathurst-us385,tail,419.62,425,420.382959551,425.841499505,shared_curated_stage_boundaries
+alternating_b,B2_primary,"Canada|us688, polar bear pass region, bathurst island|419.62|425.0",tail:M-bathurst-us688,tail,419.62,425,420.382959551,425.841499505,shared_curated_stage_boundaries
+alternating_b,B2_primary,"China|mangkelu ii section, wutubulake village, hoboksar, west junggar|419.62|422.7",tail:M-mangkelu-ii,tail,419.62,422.7,420.382959551,421.802400528,shared_curated_stage_boundaries
+alternating_b,B2_primary,"China|qujing, northeastern yunnan|419.62|422.7",tail:M-qujingense,tail,419.62,422.7,420.382959551,421.802400528,shared_curated_stage_boundaries
+alternating_b,B2_primary,China|west junggar|419.62|422.7,tail:M-aberlemnia-junggaria,tail,419.62,422.7,420.382959551,421.802400528,shared_curated_stage_boundaries
+alternating_b,B2_primary,"Czech Republic|karlštejn, ve spáleném, near house 132|419.62|422.7",tail:M-baragwanathia-karlstejn,tail,419.62,422.7,420.382959551,421.802400528,shared_curated_stage_boundaries
+alternating_b,B2_primary,"DE|hunsrück slate|49.8,7.4|399.5|410.62",pbdb:26904,pbdb,399.5,410.62,399.5,410.62,fixed_pbdb_numerical_support_not_exactly_mapped
+alternating_b,B2_primary,"DE|wahnbach|50.9,7.3|410.62|413.02",pbdb:232143,pbdb,410.62,413.02,411.713949356,411.94849063,shared_pbdb_exact_boundary_support
+alternating_b,B2_primary,"DE||50.2,7.4|399.5|410.62",pbdb:27049;pbdb:27129,pbdb,399.5,410.62,399.5,410.62,fixed_pbdb_numerical_support_not_exactly_mapped
+alternating_b,B2_primary,"KZ|aigyrzhal'skaya suite|47.0,79.0|393.47|413.02",pbdb:32851,pbdb,393.47,413.02,392.914610327,411.94849063,shared_pbdb_exact_boundary_support
+alternating_b,B2_primary,"Norway|red bay series brook section, spitsbergen|413.02|419.62",tail:M-svalbard,tail,413.02,419.62,411.94849063,420.382959551,shared_curated_stage_boundaries
+alternating_b,B2_primary,"RU|pridorozhnaya|54.5,89.9|399.5|410.62",pbdb:238400,pbdb,399.5,410.62,399.5,410.62,fixed_pbdb_numerical_support_not_exactly_mapped
+alternating_b,B2_primary,"RU|salairka horizon|54.3,85.9|399.5|410.62",pbdb:35709,pbdb,399.5,410.62,399.5,410.62,fixed_pbdb_numerical_support_not_exactly_mapped
+alternating_b,B2_primary,"RU|shanda horizon|54.3,85.9|387.95|399.5",pbdb:35721,pbdb,387.95,399.5,387.95,399.5,fixed_pbdb_numerical_support_not_exactly_mapped
+alternating_b,B2_primary,"UA|rashkovskie beds|48.5,26.3|419.62|422.7",pbdb:52702,pbdb,419.62,422.7,420.382959551,421.802400528,shared_pbdb_exact_boundary_support
+alternating_b,B2_primary,"UA|skala|49.6,23.9|419.62|422.7",pbdb:13873,pbdb,419.62,422.7,420.382959551,421.802400528,shared_pbdb_exact_boundary_support
+alternating_b,B2_primary,"UK|dryden flags|57.3,-2.8|410.62|413.02",pbdb:10721,pbdb,410.62,413.02,411.713949356,411.94849063,shared_pbdb_exact_boundary_support
+alternating_b,B2_primary,"UK|dundee flagstone|56.0,-2.0|413.02|419.62",pbdb:10705,pbdb,413.02,419.62,411.94849063,420.382959551,shared_pbdb_exact_boundary_support
+alternating_b,B2_primary,"UK|dundee|56.7,-2.8|413.02|419.62",pbdb:26755;pbdb:26757,pbdb,413.02,419.62,411.94849063,420.382959551,shared_pbdb_exact_boundary_support
+alternating_b,B2_primary,"UK|senni|51.9,-3.6|410.62|413.02",pbdb:238752,pbdb,410.62,413.02,411.713949356,411.94849063,shared_pbdb_exact_boundary_support
+alternating_b,B2_primary,"UK|st. maughans|52.0,-2.0|413.02|419.62",pbdb:10679,pbdb,413.02,419.62,411.94849063,420.382959551,shared_pbdb_exact_boundary_support
+alternating_b,B2_primary,"UK|strathmore|55.0,-4.0|393.47|410.62",pbdb:10719,pbdb,393.47,410.62,392.914610327,411.713949356,shared_pbdb_exact_boundary_support
+alternating_b,B2_primary,"UK|strathmore|56.2,-4.2|393.47|410.62",pbdb:11513,pbdb,393.47,410.62,392.914610327,411.713949356,shared_pbdb_exact_boundary_support
+alternating_b,B2_primary,"US|beartooth butte|44.9,-108.1|393.47|410.62",pbdb:29294,pbdb,393.47,410.62,392.914610327,411.713949356,shared_pbdb_exact_boundary_support
+alternating_b,B2_primary,"US|beartooth butte|45.0,-109.6|393.47|410.62",pbdb:26176;pbdb:29292;pbdb:31000,pbdb,393.47,410.62,392.914610327,411.713949356,shared_pbdb_exact_boundary_support
+alternating_b,B2_primary,"US|trout valley|46.1,-68.6|387.95|399.5",pbdb:10614;pbdb:10617,pbdb,387.95,399.5,387.95,399.5,fixed_pbdb_numerical_support_not_exactly_mapped
+alternating_b,B2_primary,"Vietnam|xóm chè quarry, northern vietnam|419.62|422.7",tail:M-van-canh,tail,419.62,422.7,420.382959551,421.802400528,shared_curated_stage_boundaries

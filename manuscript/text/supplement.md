@@ -237,17 +237,19 @@ other record that passes the declared B0 before the Silurian
 (`docs/audits/2026-11-07-b0-membership-review.md`); the older Hawaz sheets lack secure land-plant tissue
 identity. Their recovery through palynological preparation differs from the macrofossil collections that
 dominate the recording proxies, which is a further reason the B0 histories may misdescribe the sequence.
-The B0 values here come from `models/f3/loop3/oman_sensitivity.py`, which first reproduces the 48 frozen
-B0 output cells (two readings, four cutoffs, six histories) to floating-point tolerance and then adds the
-unit.
+The B0 values now come from the canonical `build_reviewed.py` and `analysis.py` pipeline. The
+explicit `body_membership.csv` admits K12 as B0 only and excludes the Hawaz candidate on tissue
+identity; `variant=without_oman_fragments` reconstructs the former inventory. Bounds and allocation
+diagnostics for both inventories come from the same current analysis. The earlier additive outputs
+are retained as archived provenance, with their receipt bound to historical commit `df805b2`.
 
 <!-- table:oman -->
 | Reading | Oman | Units | Oldest | Const. | PBDB | PBDB −plant | Decl. 25 | Decl. 10 | −plant × decl. 10 |
 |---------|-------:|-----:|-----:|-----:|-----:|----------:|-------:|-------:|----------------:|
-| main | excluded | 75/77 | 432.9 | 434.51 | 436.38 | 435.73 | 437.16 | none | none |
 | main | included | 76/78 | 452.8 | 455.19 | 456.62 | 456.09 | 465.21 | none | none |
-| inclusive | excluded | 79/81 | 445.2 | 447.20 | 448.27 | 447.85 | 452.98 | none | none |
+| main | excluded | 75/77 | 432.9 | 434.51 | 436.38 | 435.73 | 437.16 | none | none |
 | inclusive | included | 80/82 | 452.8 | 455.06 | 456.43 | 455.92 | 464.40 | none | none |
+| inclusive | excluded | 79/81 | 445.2 | 447.20 | 448.27 | 447.85 | 452.98 | none | none |
 <!-- /table:oman -->
 **Table S3b.** Land-plant body (B0) bounds (Ma) with the Katian Oman fragments included (canonical) and excluded, Emsian cutoff. Units: guaranteed/possible; Oldest: oldest possible age. History abbreviations: Const., constant; PBDB, proportional to PBDB land and marginal-marine collection density; PBDB −plant, the same with plant-matched collections removed; Decl. 25 and Decl. 10, exponential decline into the past on 25 and 10 Myr timescales; −plant × decl. 10, their product. "None": no bound within the 469.4 Ma limit of the declared domain.
 
@@ -275,7 +277,7 @@ not as an infinite-age inference.
 of units guaranteed older than $c$. The bound increases with $A$ and decreases with $n$, so this is an
 envelope of the exact-age bounds whenever every reported age interval contains the true age. That
 geological condition is separate from statistical coverage. Independent-uniform and shared-quantile
-allocations (256 draws, seed 20261102) are reported as sensitivities. Their quantiles are not confidence
+allocations (256 draws, case-keyed seeds rooted at 20261102) are reported as sensitivities. Their quantiles are not confidence
 bounds (Table S8).
 
 **Histories.** Six histories are fixed without fitting them to the focal fossils:
@@ -307,15 +309,21 @@ complete only the 10 Myr decline is treated as disfavoured.
 
 ### S5.3 Results and sensitivities
 
+**Table labels.** B0 +Oman is the canonical land-plant body category; B0 -Oman excludes the
+Ghaba-1 fragments; B1 is the E3-or-E5 polysporangiophyte category; B2 is crown vascular-plant
+membership. Const. is constant intensity; PBDB is all-collection density; PBDB -plant removes
+plant-matched collections; Decl. 25/10 denotes the exponential time constant in Myr. Indep. is
+independent-uniform age allocation; shared q places every unit at a common within-range quantile.
+
 <!-- table:primary -->
 | Reading | Category | Units | Oldest | Const. | PBDB | PBDB −plant | Decl. 25 | Decl. 10 | −plant × decl. 10 |
-|---------|--------------------------------------:|-----:|-----:|-----:|-----:|----------:|-------:|-------:|----------------:|
-| main | Land-plant body, without Oman fragments | 75/77 | 432.9 | 434.51 | 436.38 | 435.73 | 437.16 | none | none |
-| main | Polysporangiophyte body | 70/72 | 432.9 | 434.62 | 436.63 | 435.94 | 437.50 | none | none |
-| main | Crown vascular-plant body | 48/50 | 426.7 | 428.84 | 428.88 | 428.45 | 431.63 | none | none |
-| inclusive | Land-plant body, without Oman fragments | 79/81 | 445.2 | 447.20 | 448.27 | 447.85 | 452.98 | none | none |
-| inclusive | Polysporangiophyte body | 74/76 | 445.2 | 447.34 | 448.48 | 448.03 | 453.62 | none | none |
-| inclusive | Crown vascular-plant body | 53/55 | 426.7 | 428.63 | 428.67 | 428.28 | 431.10 | none | 468.65 |
+|---------|-------:|-----:|-----:|-----:|-----:|----------:|-------:|-------:|----------------:|
+| main | B0 +Oman | 76/78 | 452.8 | 455.19 | 456.62 | 456.09 | 465.21 | none | none |
+| main | B1 | 67/69 | 432.9 | 434.70 | 436.80 | 436.08 | 437.73 | none | none |
+| main | B2 | 48/50 | 426.7 | 428.84 | 428.88 | 428.45 | 431.63 | none | none |
+| inclusive | B0 +Oman | 80/82 | 452.8 | 455.06 | 456.43 | 455.92 | 464.40 | none | none |
+| inclusive | B1 | 72/74 | 445.2 | 447.40 | 448.57 | 448.11 | 453.90 | none | none |
+| inclusive | B2 | 53/55 | 426.7 | 428.63 | 428.67 | 428.28 | 431.10 | none | 468.65 |
 <!-- /table:primary -->
 **Table S3.** Conservative 95% older bounds (Ma) by category, reading and recording history from the frozen inventory, which excludes the Oman fragments (Table S3b gives B0 with them); Emsian cutoff. Units: guaranteed/possible; Oldest: oldest possible age. History abbreviations: Const., constant; PBDB, proportional to PBDB land and marginal-marine collection density; PBDB −plant, the same with plant-matched collections removed; Decl. 25 and Decl. 10, exponential decline into the past on 25 and 10 Myr timescales; −plant × decl. 10, their product. "None": no bound within the 469.4 Ma limit of the declared domain.
 
@@ -335,7 +343,7 @@ complete only the 10 Myr decline is treated as disfavoured.
 | Individual collections/observations | 78 | 428.00 | 428.03 | 429.58 |
 | Locality–age proxies (primary) | 48 | 428.84 | 428.88 | 431.63 |
 | Whole localities | 47 | 428.89 | 428.93 | 431.75 |
-| Region–stage cells | 20 | 432.07 | 431.91 | 441.60 |
+| Region–stage cells | 19 | 432.38 | 432.16 | 442.78 |
 | Wide-age records restored | 73 | 428.09 | 428.12 | 429.79 |
 | Uncertain material restored | 54 | 428.60 | 428.63 | 431.01 |
 | Low-confidence names omitted | 46 | 428.94 | 428.98 | 431.87 |
@@ -350,11 +358,10 @@ complete only the 10 Myr decline is treated as disfavoured.
 |-----------------------------|-----:|--------------:|-------:|-----------:|
 | Gondwana Australia Antarctica | 44 | 425.0 | 427.22 | 427.33 |
 | Gondwana South America | 47 | 426.7 | 428.89 | 428.87 |
-| Tarim | 47 | 426.7 | 428.89 | 428.92 |
 | peri Gondwana Europe | 47 | 426.7 | 428.89 | 428.85 |
 | Baltica | 45 | 426.7 | 428.99 | 431.80 |
-| Kazakhstania | 45 | 426.7 | 428.99 | 429.03 |
 | Avalonia | 44 | 426.7 | 429.04 | 428.95 |
+| Kazakhstania | 44 | 426.7 | 429.04 | 429.08 |
 | South China | 43 | 426.7 | 429.10 | 429.06 |
 | multiple | 42 | 426.7 | 429.16 | 428.74 |
 | Laurentia | 28 | 426.7 | 430.45 | 429.58 |
@@ -363,55 +370,61 @@ complete only the 10 Myr decline is treated as disfavoured.
 
 <!-- table:shape -->
 | Category | History | Nominal p, midpoint ages | Independent-uniform ages, 5–95% | Shared-quantile ages, 5–95% |
-|---------------------------------------|-----------------------------------:|-----------------------:|------------------------------:|--------------------------:|
-| Land-plant body, without Oman fragments | Constant | 0.0066 | 0.0041–0.062 | 1.1e-09–0.0062 |
-| Land-plant body, without Oman fragments | PBDB collection density | 0.02 | 0.0075–0.088 | 0.00033–0.022 |
-| Land-plant body, without Oman fragments | PBDB density, plant matches removed | 0.0019 | 0.00054–0.039 | 4.4e-05–0.0047 |
-| Land-plant body, without Oman fragments | Decline into past, 25 Myr | 1.2e-07 | 6.2e-09–2.7e-06 | 2e-21–1.9e-06 |
-| Land-plant body, without Oman fragments | Decline into past, 10 Myr | 2.5e-20 | 2.3e-22–4e-17 | 1.4e-40–8.4e-17 |
-| Land-plant body, without Oman fragments | Plant-excluded PBDB × 10 Myr decline | 3.9e-09 | 2e-10–5.4e-08 | 1.7e-16–1.4e-08 |
-| Polysporangiophyte body | Constant | 0.0053 | 0.0046–0.068 | 6.2e-09–0.0056 |
-| Polysporangiophyte body | PBDB collection density | 0.016 | 0.011–0.13 | 0.00061–0.031 |
-| Polysporangiophyte body | PBDB density, plant matches removed | 0.0016 | 0.00086–0.032 | 4.1e-05–0.0038 |
-| Polysporangiophyte body | Decline into past, 25 Myr | 4.5e-07 | 3.1e-08–1.8e-05 | 7.6e-20–1.1e-05 |
-| Polysporangiophyte body | Decline into past, 10 Myr | 7.8e-19 | 1.9e-20–1.8e-15 | 1.1e-37–4.3e-15 |
-| Polysporangiophyte body | Plant-excluded PBDB × 10 Myr decline | 8.5e-08 | 1e-08–1.6e-06 | 2.9e-15–5.6e-07 |
-| Crown vascular-plant body | Constant | 0.0085 | 0.073–0.76 | 3.1e-09–0.016 |
-| Crown vascular-plant body | PBDB collection density | 0.0092 | 0.014–0.27 | 2.7e-05–0.058 |
-| Crown vascular-plant body | PBDB density, plant matches removed | 8.6e-05 | 0.00019–0.016 | 2.2e-06–0.019 |
-| Crown vascular-plant body | Decline into past, 25 Myr | 4.9e-06 | 7e-05–0.016 | 4.6e-16–0.0019 |
-| Crown vascular-plant body | Decline into past, 10 Myr | 3.1e-13 | 2.2e-11–8.4e-07 | 3.5e-26–8e-07 |
-| Crown vascular-plant body | Plant-excluded PBDB × 10 Myr decline | 1.5e-05 | 0.0011–0.044 | 5.9e-11–0.0064 |
-| Land-plant body, with Oman fragments | Constant | 5.5e-12 | 5.2e-13–5.2e-09 | — |
-| Land-plant body, with Oman fragments | PBDB collection density | 7.5e-08 | 1.2e-08–4.7e-06 | — |
-| Land-plant body, with Oman fragments | PBDB density, plant matches removed | 1.1e-10 | 1.3e-11–2e-08 | — |
-| Land-plant body, with Oman fragments | Decline into past, 25 Myr | 6.3e-06 | 3.2e-06–0.00085 | — |
-| Land-plant body, with Oman fragments | Decline into past, 10 Myr | 7.4e-20 | 9.6e-22–1.4e-16 | — |
-| Land-plant body, with Oman fragments | Plant-excluded PBDB × 10 Myr decline | 1.2e-08 | 1.2e-09–1.5e-07 | — |
+|--------|----------------:|-----------------------:|------------------------------:|--------------------------:|
+| B0 +Oman | Const. | 5.5e-12 | 3.1e-13–4e-09 | 2.9e-12–1.2e-11 |
+| B0 +Oman | PBDB | 7.5e-08 | 9.1e-09–4.1e-06 | 2.1e-09–1.6e-07 |
+| B0 +Oman | PBDB −plant | 1.1e-10 | 9.4e-12–1.6e-08 | 2.5e-12–2.7e-10 |
+| B0 +Oman | Decl. 25 | 6.3e-06 | 3.8e-06–0.00086 | 2e-16–0.00045 |
+| B0 +Oman | Decl. 10 | 7.4e-20 | 1.2e-21–8.5e-17 | 1e-39–2.8e-16 |
+| B0 +Oman | −plant × decl. 10 | 1.2e-08 | 1.1e-09–1.3e-07 | 4.6e-16–6.3e-08 |
+| B0 -Oman | Const. | 0.0066 | 0.004–0.055 | 1.1e-09–0.0062 |
+| B0 -Oman | PBDB | 0.02 | 0.0095–0.091 | 0.00033–0.022 |
+| B0 -Oman | PBDB −plant | 0.0019 | 0.00074–0.03 | 4.4e-05–0.0047 |
+| B0 -Oman | Decl. 25 | 1.2e-07 | 4.9e-09–3.2e-06 | 2e-21–1.9e-06 |
+| B0 -Oman | Decl. 10 | 2.5e-20 | 4.3e-22–3.7e-17 | 1.4e-40–8.4e-17 |
+| B0 -Oman | −plant × decl. 10 | 3.9e-09 | 3.2e-10–5.2e-08 | 1.7e-16–1.4e-08 |
+| B1 | Const. | 0.0033 | 0.0033–0.094 | 1.7e-08–0.0038 |
+| B1 | PBDB | 0.0099 | 0.0072–0.15 | 0.00031–0.024 |
+| B1 | PBDB −plant | 0.00073 | 0.00056–0.03 | 2.4e-05–0.0045 |
+| B1 | Decl. 25 | 1e-06 | 2.8e-07–9.7e-05 | 6.7e-19–6.2e-05 |
+| B1 | Decl. 10 | 6.2e-18 | 9.8e-19–7.1e-14 | 6.3e-36–1.4e-13 |
+| B1 | −plant × decl. 10 | 3.1e-07 | 9.1e-08–8e-06 | 1.6e-14–2.8e-06 |
+| B2 | Const. | 0.0085 | 0.056–0.71 | 3.1e-09–0.016 |
+| B2 | PBDB | 0.0092 | 0.016–0.24 | 2.7e-05–0.058 |
+| B2 | PBDB −plant | 8.6e-05 | 0.00022–0.019 | 2.2e-06–0.019 |
+| B2 | Decl. 25 | 4.9e-06 | 4.9e-05–0.016 | 4.6e-16–0.0019 |
+| B2 | Decl. 10 | 3.1e-13 | 1.6e-11–5.1e-07 | 3.5e-26–8e-07 |
+| B2 | −plant × decl. 10 | 1.5e-05 | 0.001–0.042 | 5.9e-11–0.0064 |
 <!-- /table:shape -->
 **Table S7.** Within-record shape diagnostics (conditional-on-maximum Kolmogorov–Smirnov), main reading, under each declared age treatment. Ranges are the 5th–95th percentiles of nominal *p* across 256 age draws, not minimum-to-maximum ranges.
 
 <!-- table:ages -->
 | Category | History | Allocation | 5% | Median | 95% | Unbounded fraction |
-|---------------------------------------|------------------------:|------------------:|-----:|-----:|-----:|-----------------:|
-| Land-plant body, without Oman fragments | Constant | independent uniform | 432.25 | 433.34 | 434.42 | 0.00 |
-| Land-plant body, without Oman fragments | PBDB collection density | independent uniform | 432.02 | 433.42 | 436.18 | 0.00 |
-| Land-plant body, without Oman fragments | Decline into past, 25 Myr | independent uniform | 434.48 | 435.76 | 437.01 | 0.00 |
-| Land-plant body, without Oman fragments | Constant | shared quantile | 432.23 | 433.27 | 434.35 | 0.00 |
-| Land-plant body, without Oman fragments | PBDB collection density | shared quantile | 432.00 | 433.27 | 435.99 | 0.00 |
-| Land-plant body, without Oman fragments | Decline into past, 25 Myr | shared quantile | 434.48 | 435.66 | 436.90 | 0.00 |
-| Polysporangiophyte body | Constant | independent uniform | 432.32 | 433.33 | 434.43 | 0.00 |
-| Polysporangiophyte body | PBDB collection density | independent uniform | 432.07 | 433.35 | 436.15 | 0.00 |
-| Polysporangiophyte body | Decline into past, 25 Myr | independent uniform | 434.72 | 435.93 | 437.22 | 0.00 |
-| Polysporangiophyte body | Constant | shared quantile | 432.34 | 433.38 | 434.46 | 0.00 |
-| Polysporangiophyte body | PBDB collection density | shared quantile | 432.09 | 433.50 | 436.23 | 0.00 |
-| Polysporangiophyte body | Decline into past, 25 Myr | shared quantile | 434.78 | 435.97 | 437.21 | 0.00 |
-| Crown vascular-plant body | Constant | independent uniform | 424.31 | 426.33 | 428.46 | 0.00 |
-| Crown vascular-plant body | PBDB collection density | independent uniform | 425.14 | 426.71 | 428.51 | 0.00 |
-| Crown vascular-plant body | Decline into past, 25 Myr | independent uniform | 426.19 | 428.57 | 431.05 | 0.00 |
-| Crown vascular-plant body | Constant | shared quantile | 421.58 | 424.10 | 427.03 | 0.00 |
-| Crown vascular-plant body | PBDB collection density | shared quantile | 421.22 | 424.81 | 427.18 | 0.00 |
-| Crown vascular-plant body | Decline into past, 25 Myr | shared quantile | 423.10 | 425.92 | 429.34 | 0.00 |
+|--------|-------:|---------:|-----:|-----:|-----:|-----------------:|
+| B0 +Oman | Const. | indep. | 447.70 | 451.38 | 454.82 | 0.00 |
+| B0 +Oman | PBDB | indep. | 448.82 | 452.47 | 456.20 | 0.00 |
+| B0 +Oman | Decl. 25 | indep. | 453.81 | 459.13 | 464.39 | 0.00 |
+| B0 +Oman | Const. | shared q | 447.67 | 451.19 | 454.74 | 0.00 |
+| B0 +Oman | PBDB | shared q | 448.78 | 452.27 | 456.10 | 0.00 |
+| B0 +Oman | Decl. 25 | shared q | 453.89 | 458.73 | 464.17 | 0.00 |
+| B0 -Oman | Const. | indep. | 432.27 | 433.50 | 434.38 | 0.00 |
+| B0 -Oman | PBDB | indep. | 432.04 | 433.84 | 436.06 | 0.00 |
+| B0 -Oman | Decl. 25 | indep. | 434.48 | 435.91 | 436.97 | 0.00 |
+| B0 -Oman | Const. | shared q | 432.23 | 433.27 | 434.35 | 0.00 |
+| B0 -Oman | PBDB | shared q | 432.00 | 433.27 | 435.99 | 0.00 |
+| B0 -Oman | Decl. 25 | shared q | 434.48 | 435.66 | 436.90 | 0.00 |
+| B1 | Const. | indep. | 432.36 | 433.49 | 434.57 | 0.00 |
+| B1 | PBDB | indep. | 432.10 | 433.74 | 436.47 | 0.00 |
+| B1 | Decl. 25 | indep. | 434.87 | 436.21 | 437.51 | 0.00 |
+| B1 | Const. | shared q | 432.42 | 433.45 | 434.53 | 0.00 |
+| B1 | PBDB | shared q | 432.15 | 433.66 | 436.39 | 0.00 |
+| B1 | Decl. 25 | shared q | 434.99 | 436.17 | 437.43 | 0.00 |
+| B2 | Const. | indep. | 424.24 | 426.24 | 427.69 | 0.00 |
+| B2 | PBDB | indep. | 425.05 | 426.64 | 427.80 | 0.00 |
+| B2 | Decl. 25 | indep. | 426.13 | 428.43 | 430.19 | 0.00 |
+| B2 | Const. | shared q | 421.58 | 424.10 | 427.03 | 0.00 |
+| B2 | PBDB | shared q | 421.22 | 424.81 | 427.18 | 0.00 |
+| B2 | Decl. 25 | shared q | 423.10 | 425.92 | 429.34 | 0.00 |
 <!-- /table:ages -->
 **Table S8.** Age-allocation sensitivity (Emsian cutoff, main reading). Quantiles across allocations are descriptive, not confidence bounds.
 
@@ -419,7 +432,7 @@ complete only the 10 Myr decline is treated as disfavoured.
 
 After seeing that steep smooth declines fit poorly, we evaluated a complete stage-break grid: flat and
 PBDB baselines; breaks at 419.62, 426.7 and 432.9 Ma; older multipliers 1, 0.5, 0.1 and 0.01; all
-categories and both readings (144 cells). The 426.7 Ma break coincides with the oldest possible main B2
+categories and both readings, with an additional B0 exclusion inventory (192 cells). The 426.7 Ma break coincides with the oldest possible main B2
 record, so no main B2 unit's age support is changed and the within-record shape statistic is unchanged.
 The grid is a retrospective sensitivity; the 0.05 rule supplies no nominal, simultaneous or
 selection-adjusted confidence for it. The 432.9 Ma break is a null control when the bound lies younger.
@@ -463,19 +476,19 @@ transferred from the spore comparison (Table S10).
 
 <!-- table:delay -->
 | Category | Assumed delay (Myr) | Recoverability bound | Lineage bound |
-|---------------------------------------|------------------:|-------------------:|------------:|
-| Land-plant body, without Oman fragments | 0 | 434.51 | 434.51 |
-| Land-plant body, without Oman fragments | 5 | 434.51 | 439.51 |
-| Land-plant body, without Oman fragments | 10 | 434.51 | 444.51 |
-| Land-plant body, without Oman fragments | 20 | 434.51 | 454.51 |
-| Polysporangiophyte body | 0 | 434.62 | 434.62 |
-| Polysporangiophyte body | 5 | 434.62 | 439.62 |
-| Polysporangiophyte body | 10 | 434.62 | 444.62 |
-| Polysporangiophyte body | 20 | 434.62 | 454.62 |
-| Crown vascular-plant body | 0 | 428.84 | 428.84 |
-| Crown vascular-plant body | 5 | 428.84 | 433.84 |
-| Crown vascular-plant body | 10 | 428.84 | 438.84 |
-| Crown vascular-plant body | 20 | 428.84 | 448.84 |
+|--------|------------------:|-------------------:|------------:|
+| B0 +Oman | 0 | 455.19 | 455.19 |
+| B0 +Oman | 5 | 455.19 | 460.19 |
+| B0 +Oman | 10 | 455.19 | 465.19 |
+| B0 +Oman | 20 | 455.19 | 475.19 |
+| B1 | 0 | 434.70 | 434.70 |
+| B1 | 5 | 434.70 | 439.70 |
+| B1 | 10 | 434.70 | 444.70 |
+| B1 | 20 | 434.70 | 454.70 |
+| B2 | 0 | 428.84 | 428.84 |
+| B2 | 5 | 428.84 | 433.84 |
+| B2 | 10 | 428.84 | 438.84 |
+| B2 | 20 | 428.84 | 448.84 |
 <!-- /table:delay -->
 **Table S10.** Fixed-delay mapping, constant recovery, main reading.
 
