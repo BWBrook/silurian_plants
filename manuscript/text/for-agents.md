@@ -202,7 +202,7 @@ python3 manuscript/package.py             # release inventory with SHA-256
 ```
 
 Invariants worth asserting when you touch the body-record code: B2 constant bound [428.84]{.C27 .V017} Ma at
-n_guaranteed [48]{.C25} and oldest possible 426.7 Ma; B0 constant bound [434.51]{.C28} Ma; exact-age simulation coverage
+n_guaranteed [48]{.C25} and oldest possible 426.7 Ma; B0 exclusion constant bound [434.51]{.C28} Ma (the canonical B0 is C40); exact-age simulation coverage
 [0.941–0.958]{.C34}. Any change to these needs a decision entry and a ledger update, not just a passing test.
 
 ## 7. Open edges

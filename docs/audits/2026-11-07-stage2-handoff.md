@@ -40,6 +40,7 @@ baseline 431.9 Ma) separately. None is silently substituted as a new calibration
 
 ## Verification and reproduction
 
+- Final claims check: 52 claims cited, zero errors and zero warnings; five new analyses are provisional.
 - `make check-public`: 60 tests pass. Public tests require no copyrighted PDF or private delegate output.
 - `make reproduce-derived`: 65 selected result CSVs regenerate byte for byte in a temporary copy
   containing tracked files only. Raw-collection timescale recalculation is explicitly skipped there.
