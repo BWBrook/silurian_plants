@@ -78,7 +78,7 @@ $$
 
 Thus samples from the same well are marginally dependent. The likelihood profiles $r$ jointly with the
 history; the reference-only fit supplies starting values, not a plug-in rate held fixed. In the primary
-data there are [59]{.C02} reference cuttings ([51]{.C02} positive) and [28]{.C01} older zeros in five wells. At $T=459.1$ Ma,
+data there are [59]{.C02} reference cuttings ([51]{.C02} positive) and [28]{.C01} older zeros, across five wells; the older zeros come from three of them. At $T=459.1$ Ma,
 18 older cuttings have all their age support in $(\tau,T]$, while each of the ten Darriwilian cuttings
 has exposure weight $q_i=0.9/11.2=0.08036$. Under the constant history $a(t)=f$, its zero probability
 reduces to
@@ -130,7 +130,7 @@ older detections and the accepted shift is zero, giving $-2\log(0.05)=5.991$.
 
 Origin read-outs impose pointwise restrictions rather than only the mean target. H0c requires a
 constant $a\ge f$ on $(\tau,T]$; H0 requires $f\le a(t)\le1$ throughout that interval; H0m requires the
-floor through $T-10$ Ma and permits zero intensity during the first 10 Myr after origin. The separate H0
+floor from $T-10$ Ma to $\tau$ and permits lower intensity, down to zero, during the first 10 Myr after origin. The separate H0
 window read-out beginning at 459.1 Ma requires $a(t)\ge f$ only on $(459.1,T]$ and allows any path in
 $[0,1]$ between $\tau$ and 459.1 Ma. These are marginal read-outs, not a simultaneous confidence band.
 
