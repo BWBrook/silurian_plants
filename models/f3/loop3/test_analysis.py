@@ -91,19 +91,20 @@ def test_cross_channel_body_admission_and_geography_are_bound_to_sources():
     assert "West Junggar" in xiemisitai.region_basis
 
 
-def test_e4_only_tail_records_do_not_enter_b1():
+def test_source_backed_e3_admits_branched_fertile_records_but_not_e4_only_axis():
     h = pd.read_csv(analysis.ROOT / "data/macro/horizons_reviewed.csv")
     indexed = h.set_index(["horizon_id", "reading"])
-    for horizon, reading in [
-        ("tail:M-bohemica", "main"),
-        ("tail:M-capel-horeb-ludlow", "main"),
-        ("tail:M-capel-horeb-ludlow", "inclusive"),
-        ("tail:M-lang-tracheid-axis", "main"),
-        ("tail:M-lang-tracheid-axis", "inclusive"),
-    ]:
+    for horizon, reading in [(h, r) for h in ("tail:M-bohemica", "tail:M-capel-horeb-ludlow")
+                             for r in ("main", "inclusive")]:
         row = indexed.loc[(horizon, reading)]
+        assert row.b0 and row.b1
+    for reading in ("main", "inclusive"):
+        row = indexed.loc[("tail:M-lang-tracheid-axis", reading)]
         assert row.b0 and not row.b1 and not row.b2
+    assert not indexed.loc[("tail:M-bohemica", "main"), "b2"]
     assert indexed.loc[("tail:M-bohemica", "inclusive"), "b2"]
+    assert not indexed.loc[("tail:M-capel-horeb-ludlow", "main"), "b2"]
+    assert not indexed.loc[("tail:M-capel-horeb-ludlow", "inclusive"), "b2"]
 
 
 def test_age_allocation_rng_is_keyed_to_the_analysis_cell():

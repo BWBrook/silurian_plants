@@ -91,9 +91,13 @@ origin.
   passes with all 50 possible B2 units, falls just short with 49 (passes only asymptotically) and fails
   with 48; the combined history passes with 49 or 50 but not 48.
 - **Allowed:** a failure over every admissible allocation as a conservative rejection of that fixed
-  history for this diagnostic, stated with its conditions: the supports contain the true ages and
-  inclusion state, the finite-sample reference, the fixed history and the independent observation model
-  (sup-p argument; Berger and Boos 1994).
+  history for this diagnostic, under an observation model in which the supports contain the true ages
+  and inclusion state almost surely. The finite-sample reference, independent continuous occurrence
+  model, history, cutoff, timescale, inventory and unit rule are fixed. The rejection event is contained
+  in that of the exact-age test; if support containment can fail with probability delta, the direct
+  error-rate bound is alpha + delta. Geological ranges have no demonstrated joint coverage. Maximised-p
+  nuisance-parameter methods (Berger and Boos 1994) are related, rather than the justification for
+  treating these coarsened observations as an error-free support set.
 - **Not allowed:** "rejected" or "falsified" for a biological history without those conditions, or as
   an unconditional error rate (geological ranges are not demonstrated simultaneous confidence sets); a
   witness allocation read as the true ages, a probable chronology or evidence of adequacy; the asymptotic

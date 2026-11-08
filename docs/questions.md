@@ -9,6 +9,16 @@ The programme's working list of provisional questions: what each needs, which ga
 
 The register is updated at each loop's close. Started 2026-10-28 by Claude Opus 5.5 from Barry's programme principles; questions are added or reworded by either.
 
+**Follow-up implemented, 8 November (Q1/Q2/Q5):** the two source-backed E3 records are restored without
+an E4-to-B1 shortcut. Main B1 is 71/69 units, constant bound 434.649615 Ma; B2 is unchanged. The age-search
+rejection has the almost-sure containment and fixed-model conditions it needs; this is no new
+geological coverage claim. C47 is supported after independent source/decimal checks. The primary Murzuq
+likelihood and class restrictions are now explicit, and clean-copy public tests plus both reproduction
+routes pass. The semantic review also corrected undefined frontier segments and first-record band
+labels (`audits/2026-11-08-review2-handoff.md`). No question changed status and Loop 3 remains closed.
+Claude checks the new mathematical exposition before Barry's focused review; no additional analysis
+or external evidence is assumed for this revision.
+
 **GPT-6 Pro follow-up, 7 November (Q1/Q2/Q5):** a Q5-type error of our own: the stage-2 builder read a
 missing E3 row as an assessed absence of branching, which removed two branched fertile records from B1
 (`audits/2026-11-07-gpt6pro-review2-triage.md`). Q1 is reframed in the paper as what older crown ages

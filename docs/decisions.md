@@ -3,6 +3,44 @@
 Dated record of decisions that shape the programme. Newest first. Say who decided, and quote
 Barry exactly (with source) or label a paraphrase.
 
+## 2026-11-08: follow-up implementation and cross-product reconciliation (Codex)
+
+Barry relayed Claude's `8a2194e` handoff. Codex completed F1/F9/F10/F12 and C47 verification,
+with source/model, reproduction and mathematical delegates assigned disjoint files. The delivery
+record is `audits/2026-11-08-review2-handoff.md`.
+
+- **Source-backed B1 restoration.** E3 now explicitly records branched fertile material at Kosov and
+  Capel Horeb, with the conducting-tissue evidence kept anatomically separate. The sterile Lang axis
+  remains outside B1. Main B1 has 71 possible/69 guaranteed units and a constant bound of 434.649615 Ma;
+  inclusive B1 has 75/73 and 447.367027 Ma. The parent independently recounted units and evaluated the
+  constant and step bounds and the *C. barrandei* leave-out from closed forms. All B0/B2 result rows
+  remain unchanged. C25/C39/C32/C52 and the affected simulation summary C34 are propagated.
+- **Inference and specification.** The finite-sample interval-wide rejection is valid when the supports
+  contain the true ages/inclusion almost surely under the observation model, with fixed history,
+  cutoff, timescale, inventory and unit rule and independent continuous ages. If containment fails with
+  probability delta, only an alpha + delta size bound follows. Berger–Boos is an analogy, not a
+  geological coverage guarantee. S2.2 now specifies the age mixture, shared-well likelihood, nuisance
+  rates, history restrictions, upper envelope, inversion and qualification scope without changing the
+  model. C47's 2.2/2.9 Myr comparisons are independently source- and arithmetic-checked, hence supported.
+- **Reproduction.** The public test target fetches the archived input first. Optimiser round-off has a
+  declared absolute tolerance of 1e-9 for one CSV only, with exact identities/schema and both hashes
+  retained. Both reproduction routes pass (65/76 tables, all byte-identical on this run), as does the
+  63-test public target in a tracked-file copy with the raw input initially absent. Source checking
+  reports the public thesis route and expected hash even when the copyrighted PDF is absent.
+- **Semantic review.** The new frontier figure now omits undefined T-minus-delay combinations and
+  states its no-reduction display ceiling. First-record bands are category supports whose endpoints
+  can come from different finds, rather than the date range of a single specimen. The conclusion and
+  brief retain conditional bounds and the shared well effect. Biological plausibility remains
+  unranked, as adopted in Claude's triage; no new clock analysis, measurements or source requests.
+
+**Structural review (Q1/Q2/Q5).** Event-enumeration scope is part of the evidence: absence from an
+event list cannot substitute for a source-level character assessment. A precise numerical frontier
+can also be misdrawn through domain clipping, and valid interval-wide rejection needs an observation
+model for containment rather than a citation alone. Source-backed admissions, explicit mathematical
+conditions, clean-copy execution and checks of plotted meaning serve this revision without a schema
+redesign or another modelling tranche. Loop 3 stays closed; Claude's final editorial check of the new
+S2.2 specification precedes Barry's review. Release and submission remain Barry's decisions.
+
 ## 2026-11-07: GPT-6 Pro follow-up review triaged; paper reframed around its findings (Claude; B1 restoration with Codex)
 
 Barry, through the Board messenger, 7 November: "As the next step, please work with Codex (but you

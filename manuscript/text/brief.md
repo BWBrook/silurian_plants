@@ -1,6 +1,6 @@
 # When did plants first live on land? What the rocks can and cannot tell us
 
-Barry W. Brook (University of Tasmania), with Claude Opus 5.5 (Anthropic) and OpenAI Codex. Draft of 7 November 2026; a plain-language summary of a living research repository, <https://github.com/BWBrook/silurian_plants>.
+Barry W. Brook (University of Tasmania), with Claude Opus 5.5 (Anthropic) and OpenAI Codex. Draft of 8 November 2026; a plain-language summary of a living research repository, <https://github.com/BWBrook/silurian_plants>.
 
 ## The puzzle
 
@@ -12,7 +12,7 @@ Three recent clock studies show how much rides on this. Two place the common anc
 
 <div id="figures"></div>
 
-*Figure. Clock estimates against the oldest fossil of each kind (each band is one find's age range, not a continuous record). Arrows: limits on how far back the vascular-plant body record could reach if fossils were recorded at a steady rate (green) or ten times less often before about 427 Ma (purple). Neither is an origin date, and the fossils cannot choose between them.*
+*Figure. Clock estimates and first-record age supports (bands span earliest possible to earliest certain records; endpoints may be different finds). Arrows: limits on how far back the vascular-plant body record could reach if fossils were recorded at a steady rate (green) or ten times less often before about 427 Ma (purple). Neither is an origin date, and the fossils cannot choose between them.*
 
 ## Why the rocks are hard to read
 
@@ -29,8 +29,8 @@ For each maximum (515.5, 459.1 and 431.2 Ma) we asked what the fossil record can
 ## What we found
 
 1. **The oldest maximum (515.5 Ma) rests on an argument the rocks we assessed cannot put numbers on.** Its authors argue that older marine rocks preserve tough algal cysts but no land-plant spores, so the spores' absence is real[]{.C46}. Whether land spores reached those seas, and would have been found, cannot be measured here.
-2. **The 459.1 Ma maximum gets one real test, and it is local and conditional.** In one Libyan basin, the samples rule out spore producers that were abundant through the later Ordovician and whose spores reached the rocks as well as later ones did. They cannot rule out rare producers, spores that did not reach those rocks, or plants that lived elsewhere[]{.C24}. It assumes samples within a well are otherwise independent[]{.C51}.
-3. **For vascular plants, the answer depends on assumptions the fossils cannot check.** If finds accrued at a steady rate, the recognisable fossil record of their bodies is unlikely (95% confidence) to have begun before about [429]{.C27 .V001} Ma, or about [432–434]{.C30} Ma if the finds are counted as fewer independent places. This limits the fossil record, not the origin date, and overlap with the youngest clock does not confirm that clock. If recognisable bodies appeared as soon as the group did, the older clocks' dates (444–452 Ma) would need such fossils to have been found [8]{.C48 .V094} to [12]{.C48 .V095} times less often before the oldest find than after it ([2.4]{.C48 .V096} to [4.5]{.C48 .V097} if counted cautiously), or less if they appeared later.
+2. **The 459.1 Ma maximum gets one real test, and it is local and conditional.** In one Libyan basin, the samples rule out spore producers that were abundant through the later Ordovician and whose spores reached the rocks as well as later ones did. They cannot rule out rare producers, spores that did not reach those rocks, or plants that lived elsewhere[]{.C24}. It allows a shared well effect, with samples otherwise independent[]{.C51}.
+3. **For vascular plants, the answer depends on assumptions the fossils cannot check.** At a steady recording rate, the conditional 95% older limit on their recognisable body record is about [429]{.C27 .V001} Ma, or about [432–434]{.C30} Ma if the finds are counted as fewer independent places. This limits the fossil record, not the origin date, and overlap with the youngest clock does not confirm that clock. If recognisable bodies appeared as soon as the group did, the older clocks' dates (444–452 Ma) would need such fossils to have been found [8]{.C48 .V094} to [12]{.C48 .V095} times less often before the oldest find than after it ([2.4]{.C48 .V096} to [4.5]{.C48 .V097} if counted cautiously), or less if they appeared later.
 4. **One fossil can move the limit by 20 million years.** Counting one set of tiny spore-capsule fragments from Late Ordovician Oman moves the calculated limit for land-plant bodies back by about 20 million years[]{.C40}.
 
 ## What it means

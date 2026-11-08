@@ -135,6 +135,8 @@ def main():
                  "data/external/scripts/fetch_pbdb_snapshot.py", "data/spores/first_appearances.csv"):
         add(path, "public reproduction dependency")
     collect("docs/audits/2026-11-07*.md", "review and analysis disposition")
+    collect("docs/audits/2026-11-08*.md", "follow-up source, numerical and semantic review")
+    collect("docs/audits/2026-11-08*.json", "follow-up public reproduction receipt")
     collect("data/units/borenshult_review/*", "calibration reading dependency")
     add("models/f3/borenshult_review.py", "calibration reading screen")
     collect("models/f3/out/borenshult_review/*", "calibration reading screen output")

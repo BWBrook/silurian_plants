@@ -118,8 +118,8 @@ crown-member characters; crown vascular-plant members belong to the lycophyte li
 Tracheids alone do not admit a unit to the polysporangiophytes, and a record not assessed for branching
 is not treated as lacking it (Supplement S5.1). The main reading yields [78]{.C25} land-plant body units,
 including the spore-filled sporangial fragments from the Ghaba-1 borehole, Oman
-[@wellman2003FragmentsEarliestLand], as one Katian unit; [69]{.C25} polysporangiophyte units; and
-[50]{.C25} crown vascular-plant units. Of these, [76]{.C40 .V021}, [67]{.C25} and [48]{.C25} are certainly
+[@wellman2003FragmentsEarliestLand], as one Katian unit; [71]{.C25} polysporangiophyte units; and
+[50]{.C25} crown vascular-plant units. Of these, [76]{.C40 .V021}, [69]{.C25} and [48]{.C25} are certainly
 older than the end of the Emsian ([393.47]{.C25} Ma).
 
 The body record is geographically concentrated where it matters most. Of the [48]{.C25} crown
@@ -319,14 +319,14 @@ and fitting constant intensity to a true 10 Myr decline gives [0.03–0.24]{.C34
 
 | Recording history or unit rule | Land-plant body | Land-plant body, without Oman | Polysporangiophyte | Crown vascular plant |
 |----------------------------------------|-----------:|-----------:|-----------:|-----------:|
-| Constant | [455.2]{.C40 .V022} | [434.5]{.C28} | [434.7]{.C39} | [428.8]{.C27 .V008} |
-| Proportional to PBDB collection density | [456.6]{.C40 .V023} | [436.4]{.C28} | [436.8]{.C39} | [428.9]{.C27 .V009} |
-| Collection density, plant-matched collections removed | [456.1]{.C40 .V024} | [435.7]{.C28} | [436.1]{.C39} | [428.5]{.C27 .V010} |
-| Declining into the past, 25 Myr timescale | [465.2]{.C40 .V025} | [437.2]{.C28} | [437.7]{.C39} | [431.6]{.C27 .V011} |
+| Constant | [455.2]{.C40 .V022} | [434.5]{.C28} | [434.6]{.C39} | [428.8]{.C27 .V008} |
+| Proportional to PBDB collection density | [456.6]{.C40 .V023} | [436.4]{.C28} | [436.7]{.C39} | [428.9]{.C27 .V009} |
+| Collection density, plant-matched collections removed | [456.1]{.C40 .V024} | [435.7]{.C28} | [436.0]{.C39} | [428.5]{.C27 .V010} |
+| Declining into the past, 25 Myr timescale | [465.2]{.C40 .V025} | [437.2]{.C28} | [437.6]{.C39} | [431.6]{.C27 .V011} |
 | Declining into the past, 10 Myr timescale | [none]{.C40} | [none]{.C28} | [none]{.C39} | [none]{.C27} |
 | Constant, region–stage units | — | — | — | [432.4]{.C30} |
 | Constant, curated oldest-record set only | — | — | — | [434.05]{.C30} |
-| Constant, earlier intensity reduced tenfold before 426.7 Ma† | — | [446.7]{.C32} | [448.4]{.C32} | [448.1]{.C32} |
+| Constant, earlier intensity reduced tenfold before 426.7 Ma† | — | [446.7]{.C32} | [447.9]{.C32} | [448.1]{.C32} |
 | Constant, earlier intensity reduced a hundredfold before 426.7 Ma† | — | [none]{.C32} | [none]{.C32} | [none]{.C32} |
 
 **What an older crown would require.** The sequence says nothing about the rate before the oldest
@@ -348,8 +348,8 @@ between crown origin and the recognisable presence of crown-diagnostic bodies
 [@marshall2019UsingFossilRecord]. With constant intensity, reaching the young end of Harris et al.'s
 interval ([447]{.C33} Ma) needs an assumed delay of at least about [18]{.C33} Myr at the 95% endpoint
 bound; a [20]{.C33} Myr delay maps [428.8]{.C33} Ma to [448.8]{.C33} Ma. These are minimum offsets, not
-fitted delays. Delay and earlier recording rate trade off: each assumed delay moves the frontier's
-curve towards the observed fossils (Fig. [4](#fig-frontier); Supplement Table S9b). An ignored 10–20 Myr
+fitted delays. Delay and earlier recording rate trade off: at a given candidate crown age, an assumed
+delay reduces the required recording contrast (Fig. [4](#fig-frontier); Supplement Table S9b). An ignored 10–20 Myr
 origin-to-body delay can give zero coverage of the lineage age (Supplement Table S11).
 
 ### 3.4 Fossil category and recovery route move the bound
@@ -396,11 +396,12 @@ land-plant bodies with the Oman unit, none of the six histories has a passing al
 inclusion state.
 
 A failure across every admissible allocation is a conservative rejection of that fixed history for this
-diagnostic: if the recorded supports contain the true ages and inclusion state, the largest finite-sample
-*p* over the supports cannot be smaller than the *p* at the true ages
-[@berger1994PValuesMaximized][]{.C49}. That reading needs the supports to contain the true ages, the
-finite-sample reference, the fixed history and the independent observation model; geological ranges are
-not demonstrated simultaneous confidence sets, and the supports are encoded as independent rectangles,
+diagnostic under an observation model in which the recorded supports contain the true ages and
+inclusion state almost surely: the largest finite-sample *p* over those supports cannot be smaller than
+the *p* at the true ages[]{.C49}. This fixes the history, cutoff, timescale, inventory and unit rule and
+assumes independent continuous occurrence ages. If containment can fail, its error probability must be
+added to the nominal test level; geological ranges have no demonstrated joint coverage. The supports
+are encoded as independent rectangles,
 so a coherent section-level chronology could exclude some passing allocations but cannot rescue a
 failure. A passing allocation shows only that the history is possible under the diagnostic; it is not a
 fitted chronology, evidence of model adequacy or a ranking of histories. So the steep decline conflicts
@@ -507,10 +508,10 @@ body recording. They constrain crown ages more weakly when the earliest producer
 recording intensity and diagnostic characters are left unspecified. The three maxima examined here
 therefore need different justifications: a qualitative preservation control at 515.5 Ma; a
 geographically limited non-detection comparison at 459.1 Ma, whose strength depends on how the Libyan
-cuttings depend on one another; and extrapolation from a positive body record at 431.2 Ma, which the
-record supports under constant recording and the primary unit rule and which older crown ages can
-accommodate if identifiable bodies were recorded several times less often before the oldest find, or
-appeared some time after the node. One Ordovician fragment assemblage moves a body-record bound by about
+cuttings depend on one another; and, at 431.2 Ma, an assumed link from the positive body record to crown
+origin. Under constant recording and the primary unit rule, the body-record bound is younger than that
+maximum. Older crown ages remain compatible if identifiable bodies were recorded several times less
+often before the oldest find, or appeared some time after the node. One Ordovician fragment assemblage moves a body-record bound by about
 20 Myr[]{.C40}, so such bounds are set by the fossils admitted to them. Future clock analyses can use this
 evidence by declaring the character, recording and dependence assumptions behind each maximum, and by
 examining how alternative defensible assumptions change the resulting timescale.

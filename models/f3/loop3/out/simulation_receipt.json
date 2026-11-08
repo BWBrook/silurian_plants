@@ -19,20 +19,20 @@
   ],
   "observed_locality_age_counts": {
     "B0": 76,
-    "B1": 67,
+    "B1": 69,
     "B2": 48
   },
   "inputs": {
     "data/timescale.csv": "29c6cc4a68b1746d1a67c66623e5df30ac5dd316257b55ca5948c9854886f826",
-    "data/macro/build_receipt.json": "b113f14989b9fe89aa7bcf44f2ffbc7644d239bc6b941935122db6c29cc4ac33",
-    "data/macro/horizons_reviewed.csv": "0cba53e0b70cd1d1cc180c2de3003fc16575b33d280dcd28dd04aefc06671f37",
+    "data/macro/build_receipt.json": "ffc1168252da35e7f412ff432911dbc195d98e1224f847638af7bef35e75fbc8",
+    "data/macro/horizons_reviewed.csv": "097df7d49308fb0394cd647701f250ebdbcb69ba6bb49e71e44cd1b598c092ee",
     "data/macro/effort_reviewed.csv": "6f26e0535f295ac2cef93dfd8201ca05fbc5514f8751453d7bbccf267f07788c",
     "models/f3/loop3/endpoint.py": "e4a9d28ced03894ef59f38ebdc8586488413525f1b403503652bdd5f972b3594",
     "models/f3/loop3/histories.py": "06f6b8f0ab1dcdcd7730444d8286b47ea38c30ee04a5e4149e3c965ebe0400f8",
     "models/f3/loop3/simulation.py": "2f1ca87328d79719dc4993e39bc90dc2bba5565a6ffcb6c0426fd6e93ed5640c"
   },
   "outputs": {
-    "models/f3/loop3/out/simulation_results.csv": "b3e0976e41cc6002b765d93a905889d0eef1a6b7a74399588d37748392b314bb"
+    "models/f3/loop3/out/simulation_results.csv": "0a1ddb100ad144aeb45d0095a0ca9e33021a3f6f3011cbb92e2f6dccef66957c"
   },
   "cells": 144,
   "numpy": "2.5.4",

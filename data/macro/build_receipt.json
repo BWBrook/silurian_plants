@@ -2,8 +2,8 @@
   "inputs": {
     "data/eprp/record/pbdb_plant_occurrences.csv": "bc617e869f133ede3461eac25ef54fd9cb9efe5a2be3f137ae1b8a7f8537ef01",
     "data/eprp/record/pbdb_plant_collections.csv": "b75db371a979d774ef707afdf689b21111e5e753b542dd660e8c864540a39c66",
-    "data/occurrences/observations.csv": "605b9532b62210f05f40856e9d42bf5a271ec727cc280cfa0449eab81b0c9f94",
-    "data/occurrences/reading_assignments.csv": "d90ae91673535c40d36d853d6a1f9739e11c552805cbaec5e10e400ad2d98631",
+    "data/occurrences/observations.csv": "ca4f256627416665884f7442ed6dc627fae701f11c32722cbabf566bd7a44ce3",
+    "data/occurrences/reading_assignments.csv": "66d74747b7098400637d505c544b03f02b58b64ece0e011e45d71ca71f626976",
     "data/occurrences/raw/pbdb_collections_darriwilian_emsian_2026-10-28.csv": "e0d1f772c1617c218948d1d2605661e93edcfe75e0fe8ce92afee91d3350a8b8",
     "data/timescale.csv": "29c6cc4a68b1746d1a67c66623e5df30ac5dd316257b55ca5948c9854886f826",
     "tools/occurrences.py": "eadcec772d465bd9e8719bb862f9f13726494edba3794a01b6a9a966f968766e",
@@ -17,7 +17,7 @@
   "outputs": {
     "data/macro/material_links.csv": "3695b2ea4e55a694935785f25458176d92edf8ac4e8d6ff0cb7fc3c76d7c06e8",
     "data/macro/accepted_occurrence_links.csv": "b5bc4e3fee3dcbb6e823f9a6b1292297c631f450a34338a2771d4f2e10c64aff",
-    "data/macro/horizons_reviewed.csv": "0cba53e0b70cd1d1cc180c2de3003fc16575b33d280dcd28dd04aefc06671f37",
+    "data/macro/horizons_reviewed.csv": "097df7d49308fb0394cd647701f250ebdbcb69ba6bb49e71e44cd1b598c092ee",
     "data/macro/effort_reviewed.csv": "6f26e0535f295ac2cef93dfd8201ca05fbc5514f8751453d7bbccf267f07788c",
     "data/macro/older_records_screen.csv": "6bcaf4edfbc92203821a78f45171acbe9611b5a02844313f29dcc95f2b38434e"
   },

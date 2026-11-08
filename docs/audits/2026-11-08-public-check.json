@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "scope": "make check-public in tracked-file copy with archived PBDB input absent initially; fetch prerequisite restored exact input; no private source PDFs copied",
+  "run_utc": "2026-11-08T03:43:06.350011+00:00",
+  "inputs": {
+    "Makefile": "ed80716d32945a5495e43142a41107d61885febb2beab444fbcf4965cd0db1dd",
+    "tools/reproduce.py": "456058c4a58be792410c2952e60d8ef7162f6404e94b4beec1fa1b049b7a57da",
+    "tools/test_reproduction.py": "9a7a6a8608966f9492af6231a9c22a3a9640a5cbac3ae778b62d71cd51c25d4f",
+    "models/f3/loop3/test_analysis.py": "4f34bea7bc46f2b0b406516fb0e265215b4a10576ccbbc4926b842f9ec8fb0e8",
+    "data/occurrences/observations.csv": "ca4f256627416665884f7442ed6dc627fae701f11c32722cbabf566bd7a44ce3",
+    "data/occurrences/interpretations.csv": "0c19372f196b1b97b3d293d93a71a34e956efbadeb74dc733d38edfe69e21654",
+    "data/occurrences/reading_assignments.csv": "66d74747b7098400637d505c544b03f02b58b64ece0e011e45d71ca71f626976"
+  },
+  "restored_raw_sha256": "e0d1f772c1617c218948d1d2605661e93edcfe75e0fe8ce92afee91d3350a8b8",
+  "test_summary": "63 passed in 5.65s"
+}

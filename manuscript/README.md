@@ -53,14 +53,18 @@ deposits are fetched by script and hash-checked.
 
 From the repository root, `make reproduce-derived` regenerates the core Loop 3 bounds, age/shape
 diagnostics, simulations, suppression/frontier tables, Murzuq sensitivities and interval witnesses in a temporary copy made only from tracked files,
-then compares CSV bytes. `make rebuild-source` first restores the exact archived CC0 PBDB input
+then compares CSV bytes, except for the Murzuq optimisation table's floating-point fields (absolute
+tolerance `1e-9`; schema, row order, keys and categorical fields remain exact). Receipts record both
+reference and regenerated SHA-256 hashes and the comparison method. `make rebuild-source` first restores the exact archived CC0 PBDB input
 from <https://doi.org/10.5281/zenodo.24028289>, checks its compressed and raw SHA-256, rebuilds
 the inventory/effort tables and performs the downstream and shared-timescale comparisons. The derived-only target explicitly skips
 raw-collection timescale recomputation; the source target exercises it. Neither substitutes a
-live database query. `make check-public` runs the public Loop 3 and case-binding regression tests.
+live database query. `make check-public` first restores/hash-checks that same input, then runs the
+public Loop 3 and case-binding regression tests.
 
 `make check-sources` is separate: it reports an explicit skip when the copyrighted thesis is
-unavailable and otherwise checks the held thesis-linked observation extraction. It does not
+unavailable, including its public White Rose route and expected hash in the skip report, and otherwise
+checks the held thesis-linked observation extraction against the source hash. It does not
 authenticate all palaeontological identifications or rerun frozen qualification. The printed receipts
 state the scope; the R pilot is reused rather than rebuilt.
 

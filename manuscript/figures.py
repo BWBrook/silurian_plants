@@ -136,7 +136,7 @@ def fig_problem(path):
         ax.text(possible + 1.2, i, lab, va="center", ha="right", fontsize=8)
     ax.set_ylim(-0.7, top + 0.6)
     ax.set_yticks([])
-    ax.set_title("Fossil record: age range of the oldest accepted find (band) and the age by which it is certain (tick)",
+    ax.set_title("Fossil record: first-record age supports (band), with earliest certain records marked (tick)",
                  fontsize=9.5, loc="left")
     ax.spines[["left", "top", "right"]].set_visible(False)
     ax.set_xlim(530, 400)
@@ -337,7 +337,7 @@ def fig_frontier(path):
     def curve(key, d):
         A, c, n = params[key]
         with np.errstate(divide="ignore", invalid="ignore"):
-            r = np.where(T - d > A, (A - c) * (0.05 ** (-1 / n) - 1) / (T - d - A), np.inf)
+            r = np.where(T - d > A, (A - c) * (0.05 ** (-1 / n) - 1) / (T - d - A), np.nan)
         return np.minimum(r, 1.0)
 
     fig, ax = plt.subplots(figsize=(7.6, 5.4))
@@ -379,7 +379,7 @@ def fig_brief(path):
                [(n.replace(" et al.", ""), o, y, CLOCK_COLOURS[n], None) for n, o, y in CLOCKS["embryophyta"]]),
               ("Molecular clocks: common ancestor of living vascular plants",
                [(n.replace(" et al.", ""), o, y, CLOCK_COLOURS[n], None) for n, o, y in CLOCKS["tracheophyta"]]),
-              ("Fossils: age range of the oldest accepted find",
+              ("Fossils: first-record age supports",
                [("Land-plant spores", *spore_first("cryptospore")[::-1], "#5b7fa6", None),
                 ("Spore-capsule fragments (Oman)", stage_base("Hirnantian"), body_first("B0")[0], "#5b7fa6", None),
                 ("Branched plant bodies", *body_first("B1")[::-1], "#5b7fa6", None),

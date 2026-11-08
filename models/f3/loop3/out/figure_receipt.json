@@ -1,19 +1,19 @@
 {
   "inputs": {
-    "models/f3/loop3/out/reviewed_bounds.csv": "11c573626c8567e4de5ef9cccc676144d183c290742b63dee875c79d32e3f2b6",
-    "models/f3/loop3/out/primary_unit_membership.csv": "43eb5e24f5e69d5a20cf5bd8269c41b8778adee5dd08a5dede750939ab25f9db",
-    "models/f3/loop3/out/suppression_sensitivity.csv": "33e8a553071a03a5b7e9d81618eb3675b62e11d93f259043ecef6eeab15fbed1",
+    "models/f3/loop3/out/reviewed_bounds.csv": "596c887498bb2366e9e16fef311dac8fda4211aa341ba258236c7b33afeedb11",
+    "models/f3/loop3/out/primary_unit_membership.csv": "82e96708fd7d261b81b4d79992083a4627d24f0a25c22357ef3937cf5ad42b58",
+    "models/f3/loop3/out/suppression_sensitivity.csv": "f772e4436eb1113d89c750b0f2d02029a0ac712651a9612dc9b260f7b424ad2c",
     "docs/primer.md": "d19466c3963ad100b1fcc913f17babe808480c1ec05fdc9a81c5d1b07b7b0534",
     "data/spores/first_appearances.csv": "3069ac06d11eaa534ac2b158a96d6ac7bd6d173d134ac2b14347242f7561422d",
     "models/f3/loop3/figures_reviewed.py": "4105a91d3717514c986d1bc7ccb98f4484c96fa272f634eff062cd85c7c1788d"
   },
   "outputs": {
-    "models/f3/loop3/out/fig_macro_recovery.png": "a63df3c7c529e314374b336ddd9265ec7e669d4775f430ea3a50e54d11696d34",
-    "models/f3/loop3/out/fig_macro_recovery.pdf": "a372fbd552c94654b11eb4c382e36f85a2fa246a7774a5a8bbc67193610016e1",
+    "models/f3/loop3/out/fig_macro_recovery.png": "29c64d2a710624c4437a90a268d70d1ed4a3db3ebd99497db5489487a76a8bd1",
+    "models/f3/loop3/out/fig_macro_recovery.pdf": "72fd462df87ab96d329e6946f8b06c09483584c8f258d528d7e18178c4857b52",
     "models/f3/loop3/out/fig_macro_sensitivity.png": "07045dd370c64520f1e612cb01d1665b967ff03f467bab7874b3820dddb38da9",
-    "models/f3/loop3/out/fig_macro_sensitivity.pdf": "a56a35059e9b05f970df59045b5bb2357b11de4129e6f0598ab910f4baffc728",
+    "models/f3/loop3/out/fig_macro_sensitivity.pdf": "c27ce1ca4bd1110864c79449b1c231209e93d5c1d3687aa47313adf1e00eda2b",
     "models/f3/loop3/out/fig_macro_suppression.png": "5cb26bd5e79ac4c1142427a1fee124fe2cdab5514f919226e27d500a857a9f39",
-    "models/f3/loop3/out/fig_macro_suppression.pdf": "d716e8558831dca01671fcd988733be8a8bb17c97dbc843b626f128e791d35a3"
+    "models/f3/loop3/out/fig_macro_suppression.pdf": "e3cd8bfae23edefbbeecda0e97615b64d85d294dccb33ebda6782f0c06157760"
   },
   "matplotlib": "3.11.2"
 }

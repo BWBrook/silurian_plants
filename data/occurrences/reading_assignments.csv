@@ -132,8 +132,10 @@ main,E2,S-wellman2013-W13-020-cryptospore,S-wellman2013-W13-020-cryptospore-a,Ka
 main,E2,S-wellman2013-W13-021-cryptospore,S-wellman2013-W13-021-cryptospore-a,Katian,Hirnantian,
 main,E2,S-wellman2013-W13-022-cryptospore,S-wellman2013-W13-022-cryptospore-a,Katian,Hirnantian,
 main,E3,M-barrandei,I-barrandei-polysporangiate,Sheinwoodian,Sheinwoodian,
+main,E3,M-bohemica,I-bohemica-vascular,Pridoli,Pridoli,
 main,E3,M-bolivia-caledonica,I-bolivia-caledonica-resemblance,Gorstian,Ludfordian,
 main,E3,M-borrisnoe,I-borrisnoe-homerian,Homerian,Homerian,
+main,E3,M-capel-horeb-ludlow,I-capel-horeb-ludlow-sterile-tracheids,Ludfordian,Ludfordian,
 main,E3,M-pbdb-borrisnoe,I-pbdb-borrisnoe-main,Homerian,Homerian,M-borrisnoe
 main,E4,M-bohemica,I-bohemica-vascular,Pridoli,Pridoli,
 main,E4,M-capel-horeb-ludlow,I-capel-horeb-ludlow-sterile-tracheids,Ludfordian,Ludfordian,
@@ -336,8 +338,10 @@ inclusive,E2,S-wellman2013-W13-020-cryptospore,S-wellman2013-W13-020-cryptospore
 inclusive,E2,S-wellman2013-W13-021-cryptospore,S-wellman2013-W13-021-cryptospore-a,Katian,Hirnantian,
 inclusive,E2,S-wellman2013-W13-022-cryptospore,S-wellman2013-W13-022-cryptospore-a,Katian,Hirnantian,
 inclusive,E3,M-barrandei,I-barrandei-polysporangiate,Sheinwoodian,Sheinwoodian,
+inclusive,E3,M-bohemica,I-bohemica-vascular,Pridoli,Pridoli,
 inclusive,E3,M-bolivia-caledonica,I-bolivia-caledonica-resemblance,Gorstian,Ludfordian,
 inclusive,E3,M-borrisnoe,I-borrisnoe-homerian,Homerian,Homerian,
+inclusive,E3,M-capel-horeb-ludlow,I-capel-horeb-ludlow-sterile-tracheids,Ludfordian,Ludfordian,
 inclusive,E3,M-pbdb-borrisnoe,I-pbdb-borrisnoe-main,Homerian,Homerian,M-borrisnoe
 inclusive,E3,M-zbrza,I-zbrza-polysporangiate,Hirnantian,Hirnantian,
 inclusive,E4,M-bohemica,I-bohemica-vascular,Pridoli,Pridoli,
@@ -546,8 +550,10 @@ outlier,E2,S-wellman2013-W13-020-cryptospore,S-wellman2013-W13-020-cryptospore-a
 outlier,E2,S-wellman2013-W13-021-cryptospore,S-wellman2013-W13-021-cryptospore-a,Katian,Hirnantian,
 outlier,E2,S-wellman2013-W13-022-cryptospore,S-wellman2013-W13-022-cryptospore-a,Katian,Hirnantian,
 outlier,E3,M-barrandei,I-barrandei-polysporangiate,Sheinwoodian,Sheinwoodian,
+outlier,E3,M-bohemica,I-bohemica-vascular,Pridoli,Pridoli,
 outlier,E3,M-bolivia-caledonica,I-bolivia-caledonica-resemblance,Gorstian,Ludfordian,
 outlier,E3,M-borrisnoe,I-borrisnoe-homerian,Homerian,Homerian,
+outlier,E3,M-capel-horeb-ludlow,I-capel-horeb-ludlow-sterile-tracheids,Ludfordian,Ludfordian,
 outlier,E3,M-pbdb-borrisnoe,I-pbdb-borrisnoe-main,Homerian,Homerian,M-borrisnoe
 outlier,E3,M-piterophyton,I-piterophyton-tracheophyte,Sandbian,Sandbian,
 outlier,E3,M-zbrza,I-zbrza-polysporangiate,Hirnantian,Hirnantian,

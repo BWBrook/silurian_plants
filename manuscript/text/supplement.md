@@ -43,22 +43,105 @@ rows and 158 chart reports were mapped, retaining barren material and possible c
 (`data/units/libya_*.csv`; `docs/audits/2026-10-31-libya-event-map.md`). The primary frame is the
 chart-coded cuttings design `LY-MZ-CU`. Five wells contribute [59]{.C02} Llandovery reference cuttings ([51]{.C02} with trilete reports), and three of them contribute [28]{.C01} older cuttings without trilete reports.
 
-### S2.2 Model and qualification
+### S2.2 Model, targets and qualification
 
-For an eligible unit, the detection probability conditional on a well effect is $1-\exp(-rux)$. Here
-$r$ is the reference rate, $u\sim\mathrm{Gamma}(2,2)$ is shared within a well, and $x=\rho f$ is the older
-relative intensity. The older/reference delivery-and-recovery ratio $\rho$ takes the declared values 1,
-0.5, 0.25 and 0.1; it is not estimated from the source. Reference and older outcomes share the well
-effect and are fitted jointly.
+Let $d_i\in\{0,1\}$ be the reported trilete outcome for eligible cutting $i$, $c(i)$ its eligibility
+class, $k(i)$ its well, and $[l_i,h_i]$ its declared age range. Conditional on the fixed stage
+boundaries, latent age is uniform on that range. Let $r_c>0$ be the nuisance reference encounter hazard
+for class $c$. A mean-one well effect
+$u_k\sim\mathrm{Gamma}(\nu,\nu)$ is shared by the reference and older cuttings in well $k$;
+the primary across-well design fixes $\nu=2$. Well effects are integrated out, not estimated.
+Cutting outcomes are independent conditional on their well effect and latent ages.
 
-H0c constrains constant intensity; H0 and H0m constrain exposure-weighted intensity under their
-declared history classes; H1 allows the declared higher ceiling. The origin read-out at 459.1 Ma
-concerns the interval from the reference boundary $\tau=443.1$ Ma to that age. A window comparison
-instead tests a persistent minimum intensity on an older interval beginning at 459.1 Ma, allowing zero
-intensity between that boundary and $\tau$. An unbounded low-intensity window therefore does not show
-that the same intensity is compatible all the way to the reference.
+The first-appearance rule gives $\tau=443.1$ Ma. Encounter intensity is scaled to $a(t)=1$ in the
+five-stage reference window. For a candidate origin $T>\tau$, $a(t)=0$ for $t>T$. The declared older-to-
+reference delivery and recovery multiplier is $m_i=\rho$ for transported older cuttings and 1 otherwise,
+with $\rho\in\{1,0.5,0.25,0.1\}$ fixed in separate analyses rather than estimated. Partition
+$(\tau,T]$ at stage and numerical-range boundaries. If $w_{ip}$ is the fraction of unit $i$'s age range
+in piece $p$, $Q_i$ the fraction in the reference interval at or younger than $\tau$, and $x_p$ the mean
+of $a(t)$ in piece $p$, its age-integrated detection probability conditional on $u$ is
 
-Inference is by test inversion with a declared, simulation-calibrated critical value (`docs/f3-shape.md`).
+$$
+\pi_i(u;r,x)=Q_i\{1-\exp(-r_{c(i)}m_i u)\}
+ +\sum_p w_{ip}\{1-\exp(-r_{c(i)}m_i u x_p)\}.
+$$
+
+The unshown remainder of the age range lies older than $T$ and contributes zero detection probability.
+For piecewise-constant histories this expression is exact. The joint likelihood is
+
+$$
+L(r,x)=\prod_k\int_0^\infty
+  g_{\nu,\nu}(u)
+  \prod_{i:k(i)=k}\pi_i(u;r,x)^{d_i}
+       \{1-\pi_i(u;r,x)\}^{1-d_i}\,du .
+$$
+
+Thus samples from the same well are marginally dependent. The likelihood profiles $r$ jointly with the
+history; the reference-only fit supplies starting values, not a plug-in rate held fixed. In the primary
+data there are [59]{.C02} reference cuttings ([51]{.C02} positive) and [28]{.C01} older zeros in five wells. At $T=459.1$ Ma,
+18 older cuttings have all their age support in $(\tau,T]$, while each of the ten Darriwilian cuttings
+has exposure weight $q_i=0.9/11.2=0.08036$. Under the constant history $a(t)=f$, its zero probability
+reduces to
+
+$$
+1-q_i+q_i\exp(-r\rho u f),
+$$
+
+inside the same well integral as the reference outcomes.
+
+For nonconstant histories the reported target is the fitted-rate-weighted mean intensity
+
+$$
+\bar a_r(T)=\sum_p c_p(r)x_p,\qquad
+c_p(r)=\frac{\sum_i r_{c(i)}m_i w_{ip}}
+             {\sum_i r_{c(i)}m_i\sum_q w_{iq}}.
+$$
+
+The rates in these weights are profiled in the likelihood. With the primary cutting-only design there is
+one rate class, so class-rate uncertainty does not change the relative piece weights.
+
+| Class | Restriction on $a(t)$ for $\tau<t\le T$ | Ceiling | Reported use |
+|---|---|---:|---|
+| H0c | $a(t)=x$, constant | 1 | exact constant-history bound and origin read-out |
+| H0 | any path $0\le a(t)\le1$ | 1 | bound on $\bar a_r$; pointwise origin and window read-outs |
+| H0m | H0 plus intensity non-decreasing towards $\tau$ | 1 | monotone bound; origin read-out permits the declared 10 Myr delay |
+| H1 | any path $0\le a(t)\le3$ | 3 | higher-ceiling sensitivity for $\bar a_r$; no origin read-out |
+
+For H0c the age-integrated likelihood is exact. For H0, H0m and H1 the implementation bounds each
+piece using the convex chord for non-detections and Jensen's inequality for detections, then maximises
+over piece means. With no older detections, as in the primary Murzuq design, the H0 and H1 bounds are
+attainable. The H0m within-piece relaxation remains conservative because its extremal path need not be
+monotone inside every piece.
+
+For class $K$ and threshold $f$, let $\bar\ell_{0,K}(f;T)$ be the supremum of the implemented
+chord/Jensen **upper log-likelihood envelope** over nuisance rates and piece means satisfying
+$\bar a_r(T)\ge f$, and let $\ell_{A,K}(T)$ be the exact log likelihood of the best constant history up
+to that class's ceiling. For H0c the null is also exact, so $\bar\ell_{0,K}=\ell_{0,K}$. For H0 and H1
+the envelope is attained in the present no-older-detection application; for H0m it can remain strictly
+above the likelihood supremum over monotone paths and therefore gives a conservative statistic. The
+implemented statistic is
+
+$$\Lambda_K(f;T)=\max\left[0,\ 2\{\ell_{A,K}(T)-\bar\ell_{0,K}(f;T)\}\right].$$
+
+The reported $f_K^*(T)$ is the largest $f$ not excluded. H0c, H0m and H0 share the constant alternative
+on $[0,1]$; H1 uses its ceiling of 3. The declared critical value is the one-sided count-matched value
+for the number of older detections plus a simulation-calibrated nonnegative shift. Here there are no
+older detections and the accepted shift is zero, giving $-2\log(0.05)=5.991$.
+
+Origin read-outs impose pointwise restrictions rather than only the mean target. H0c requires a
+constant $a\ge f$ on $(\tau,T]$; H0 requires $f\le a(t)\le1$ throughout that interval; H0m requires the
+floor through $T-10$ Ma and permits zero intensity during the first 10 Myr after origin. The separate H0
+window read-out beginning at 459.1 Ma requires $a(t)\ge f$ only on $(459.1,T]$ and allows any path in
+$[0,1]$ between $\tau$ and 459.1 Ma. These are marginal read-outs, not a simultaneous confidence band.
+
+“Qualified” means that the complete screen, first-appearance selection, likelihood fitting and test
+inversion attained at least the declared 0.93 marginal-coverage floor on the frozen finite simulation
+grid, with a calibration target of 0.955 and a separate acceptance run. It does not validate uniform age
+within stages, Gamma$(2,2)$ well heterogeneity, conditional independence, equal reporting scope, the
+chosen $\rho$, or the historical sampling process outside that grid. Inverse-block-size weighting and
+leave-one-well-out results in S2.5 are retrospective unqualified sensitivities, not alternative qualified
+dependence models.
+
 The potential screen, eligibility and estimation path were simulated on a declared finite grid. Results
 are nominal 95% compatibility bounds, qualified per quantity and design against a 0.93 coverage floor
 (calibration target 0.955), conditional on passing the potential screen, with abstentions counted as
@@ -368,18 +451,20 @@ change the classification; both values are in the source CSV. Where no allocatio
 upper bounds, so the failure holds for every allocation within the recorded supports; where one does, the
 allocation file is a witness.
 
-**What a failure and a pass mean.** Let $z$ be the true exact ages and inclusion state, $S$ the admitted
-supports, and $p(z)$ the finite-sample *p* under a declared fixed history and independent continuous
-observation model. If $S$ contains $z$, then $p_{\sup}(S)=\sup_{z'\in S}p(z')\ge p(z)$, so
-$\Pr\{p_{\sup}\le\alpha\}\le\Pr\{p(z)\le\alpha\}\le\alpha$: rejecting only when no admissible allocation
-reaches $\alpha$ is a conservative test of that history for this diagnostic, the principle of maximising
-*p* over nuisance values [@berger1994PValuesMaximized]. It holds only if the supports contain the true
-ages, which geological ranges have not been shown to do jointly, and only under the finite-sample
-reference, the fixed history and the independent observation model. Conditioning on the count and
-maximum, and maximising over inclusion states that include the true one, do not defeat the argument. A
-pass is weaker: a witness allocation is a possibility, not a probable chronology, evidence of model
-adequacy or a ranking of histories. Coherent section-level chronologies, which the independent
-rectangular supports do not encode, could exclude a passing allocation but could not rescue a failure. A
+**What a failure and a pass mean.** Fix the recording history, cutoff, timescale, inventory and unit
+rule. Let $z$ be the latent exact ages and inclusion state, $S$ the allocations allowed by the recorded
+supports, and $p(z)$ the finite-sample conditional-on-count-and-maximum KS *p* value under independent
+continuous occurrence ages. The interval rule rejects only if every $z'\in S$ has $p(z')<\alpha$.
+Under an observation model in which the reported intervals contain the latent ages almost surely, the
+true allocation belongs to $S$, so this rejection event is a subset of rejection by the level-$\alpha$
+exact-age test. It is therefore conservative. If containment can fail with probability $\delta$, the
+direct size bound is instead $\alpha+\delta$; these geological ranges have no demonstrated joint
+coverage. The maximisation resembles maximised-*p* constructions [@berger1994PValuesMaximized], but here
+the intervals coarsen observations rather than form a confidence set for a nuisance parameter.
+Enumerating all cutoff-inclusion states preserves the argument when the true state is included. A
+passing witness is an admissible allocation, not an estimated chronology, evidence of model adequacy or
+a ranking of histories. A coherent section chronology could remove a passing allocation but cannot
+rescue an interval-wide failure if it contains the truth. A
 separate brute-force permutation implementation (Codex) agreed on 720 fixed-$D$ decisions and 120 optimum
 brackets, and Claude recomputed $D$ from the decisive witness files; the GPT-6 Pro follow-up review
 independently checked small cases and all 48 saved witnesses.
@@ -414,10 +499,10 @@ independent-uniform age allocation; shared q places every unit at a common withi
 | Reading | Category | Units | Oldest | Const. | PBDB | PBDB −plant | Decl. 25 | Decl. 10 | −plant × decl. 10 |
 |---------|-------:|-----:|-----:|-----:|-----:|----------:|-------:|-------:|----------------:|
 | main | B0 +Oman | 76/78 | 452.8 | 455.19 | 456.62 | 456.09 | 465.21 | none | none |
-| main | B1 | 67/69 | 432.9 | 434.70 | 436.80 | 436.08 | 437.73 | none | none |
+| main | B1 | 69/71 | 432.9 | 434.65 | 436.68 | 435.98 | 437.57 | none | none |
 | main | B2 | 48/50 | 426.7 | 428.84 | 428.88 | 428.45 | 431.63 | none | none |
 | inclusive | B0 +Oman | 80/82 | 452.8 | 455.06 | 456.43 | 455.92 | 464.40 | none | none |
-| inclusive | B1 | 72/74 | 445.2 | 447.40 | 448.57 | 448.11 | 453.90 | none | none |
+| inclusive | B1 | 73/75 | 445.2 | 447.37 | 448.53 | 448.07 | 453.76 | none | none |
 | inclusive | B2 | 53/55 | 426.7 | 428.63 | 428.67 | 428.28 | 431.10 | none | 468.65 |
 <!-- /table:primary -->
 **Table S3.** Conservative 95% older bounds (Ma) by category, reading and recording history from the canonical inventory, in which B0 includes the Oman fragments (Table S3b compares B0 with and without them); Emsian cutoff. Units: guaranteed/possible; Oldest: oldest possible age. History abbreviations: Const., constant; PBDB, proportional to PBDB land and marginal-marine collection density; PBDB −plant, the same with plant-matched collections removed; Decl. 25 and Decl. 10, exponential decline into the past on 25 and 10 Myr timescales; −plant × decl. 10, their product. "None": no bound within the 469.4 Ma limit of the declared domain.
@@ -516,12 +601,12 @@ reidentification of any fossil.
 | B0 -Oman | Decl. 25 | 1.2e-07 | 4.9e-09–3.2e-06 | 2e-21–1.9e-06 |
 | B0 -Oman | Decl. 10 | 2.5e-20 | 4.3e-22–3.7e-17 | 1.4e-40–8.4e-17 |
 | B0 -Oman | −plant × decl. 10 | 3.9e-09 | 3.2e-10–5.2e-08 | 1.7e-16–1.4e-08 |
-| B1 | Const. | 0.0033 | 0.0033–0.094 | 1.7e-08–0.0038 |
-| B1 | PBDB | 0.0099 | 0.0072–0.15 | 0.00031–0.024 |
-| B1 | PBDB −plant | 0.00073 | 0.00056–0.03 | 2.4e-05–0.0045 |
-| B1 | Decl. 25 | 1e-06 | 2.8e-07–9.7e-05 | 6.7e-19–6.2e-05 |
-| B1 | Decl. 10 | 6.2e-18 | 9.8e-19–7.1e-14 | 6.3e-36–1.4e-13 |
-| B1 | −plant × decl. 10 | 3.1e-07 | 9.1e-08–8e-06 | 1.6e-14–2.8e-06 |
+| B1 | Const. | 0.006 | 0.0058–0.082 | 8.7e-09–0.0063 |
+| B1 | PBDB | 0.017 | 0.011–0.14 | 0.00049–0.034 |
+| B1 | PBDB −plant | 0.0014 | 0.00095–0.032 | 4.6e-05–0.0043 |
+| B1 | Decl. 25 | 5.9e-07 | 5.6e-08–2.1e-05 | 1.6e-19–2e-05 |
+| B1 | Decl. 10 | 1.6e-18 | 2.9e-20–5.1e-15 | 4.4e-37–1.4e-14 |
+| B1 | −plant × decl. 10 | 1.7e-07 | 7.5e-09–1.2e-06 | 5.2e-15–4e-07 |
 | B2 | Const. | 0.0085 | 0.056–0.71 | 3.1e-09–0.016 |
 | B2 | PBDB | 0.0092 | 0.016–0.24 | 2.7e-05–0.058 |
 | B2 | PBDB −plant | 8.6e-05 | 0.00022–0.019 | 2.2e-06–0.019 |
@@ -546,12 +631,12 @@ reidentification of any fossil.
 | B0 -Oman | Const. | shared q | 432.23 | 433.27 | 434.35 | 0.00 |
 | B0 -Oman | PBDB | shared q | 432.00 | 433.27 | 435.99 | 0.00 |
 | B0 -Oman | Decl. 25 | shared q | 434.48 | 435.66 | 436.90 | 0.00 |
-| B1 | Const. | indep. | 432.36 | 433.49 | 434.57 | 0.00 |
-| B1 | PBDB | indep. | 432.10 | 433.74 | 436.47 | 0.00 |
-| B1 | Decl. 25 | indep. | 434.87 | 436.21 | 437.51 | 0.00 |
-| B1 | Const. | shared q | 432.42 | 433.45 | 434.53 | 0.00 |
-| B1 | PBDB | shared q | 432.15 | 433.66 | 436.39 | 0.00 |
-| B1 | Decl. 25 | shared q | 434.99 | 436.17 | 437.43 | 0.00 |
+| B1 | Const. | indep. | 432.35 | 433.32 | 434.51 | 0.00 |
+| B1 | PBDB | indep. | 432.10 | 433.31 | 436.33 | 0.00 |
+| B1 | Decl. 25 | indep. | 434.79 | 435.93 | 437.35 | 0.00 |
+| B1 | Const. | shared q | 432.36 | 433.40 | 434.48 | 0.00 |
+| B1 | PBDB | shared q | 432.11 | 433.55 | 436.28 | 0.00 |
+| B1 | Decl. 25 | shared q | 434.85 | 436.03 | 437.28 | 0.00 |
 | B2 | Const. | indep. | 424.24 | 426.24 | 427.69 | 0.00 |
 | B2 | PBDB | indep. | 425.05 | 426.64 | 427.80 | 0.00 |
 | B2 | Decl. 25 | indep. | 426.13 | 428.43 | 430.19 | 0.00 |
@@ -644,10 +729,10 @@ transferred from the spore comparison (Table S10).
 | B0 +Oman | 5 | 455.19 | 460.19 |
 | B0 +Oman | 10 | 455.19 | 465.19 |
 | B0 +Oman | 20 | 455.19 | 475.19 |
-| B1 | 0 | 434.70 | 434.70 |
-| B1 | 5 | 434.70 | 439.70 |
-| B1 | 10 | 434.70 | 444.70 |
-| B1 | 20 | 434.70 | 454.70 |
+| B1 | 0 | 434.65 | 434.65 |
+| B1 | 5 | 434.65 | 439.65 |
+| B1 | 10 | 434.65 | 444.65 |
+| B1 | 20 | 434.65 | 454.65 |
 | B2 | 0 | 428.84 | 428.84 |
 | B2 | 5 | 428.84 | 433.84 |
 | B2 | 10 | 428.84 | 438.84 |
@@ -814,7 +899,7 @@ From the repository root:
 
 ```sh
 make check-public       # public tests; no copyrighted text or private outputs needed
-make reproduce-derived  # regenerate selected result tables from tracked inputs, byte for byte
+make reproduce-derived  # selected tables; declared optimiser tolerance
 make rebuild-source     # restore the archived PBDB extract and rebuild inventories and results
 uv run manuscript/figures.py
 python3 manuscript/tables.py
@@ -832,7 +917,14 @@ fetched by `data/external/scripts/deposits_fetch.py` and verified against `MANIF
 field of its evidence. That check catches swapped or drifted values; it does not check what a sentence
 means. The frozen PBDB all-taxa collections extract (27,830 collections) is archived under CC0 at
 <https://doi.org/10.5281/zenodo.24028289>; `make fetch-pbdb` restores it and verifies its SHA-256.
-`make check-sources` re-runs the checks that need held copyrighted texts and reports an explicit skip
-where they are absent. `makedoc.lock.json` pins the document builder.
+`make check-public` restores/hash-checks that input before the tests. Reproduction requires byte
+identity except for the Murzuq optimisation CSV, whose floating-point fields have absolute tolerance
+$10^{-9}$ while its schema, row order, keys and categorical fields stay exact; receipts record both
+reference and regenerated SHA-256 hashes. `make check-sources` reports the public thesis route
+<https://etheses.whiterose.ac.uk/id/eprint/4475/> and expected hash even when the copyrighted PDF is
+absent. The held source is the related 2013 thesis, not the 2011 abstract. Its SHA-256 is
+`c0e3bf798fb3c27db0bf9cbb155396be5b4b8e003ee2228defb615a65abf3211`; the source check verifies it and
+the byte count before checking the observation extraction. No source text is redistributed.
+`makedoc.lock.json` pins the document builder.
 
 ## References

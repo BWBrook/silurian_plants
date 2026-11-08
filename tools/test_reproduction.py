@@ -43,7 +43,56 @@ def test_dependency_closure_requires_declared_input_and_finds_local_import(tmp_p
 def test_public_checkout_reports_private_source_check_as_skipped(tmp_path, capsys):
     reproduce = module(ROOT / "tools/reproduce.py", "reproduce_skip_test")
     reproduce.ROOT = tmp_path
+    (tmp_path / "library").mkdir()
+    (tmp_path / "library/closed.tsv").write_text(
+        "abuhmida2013-thesis-related_macbook20261030\t\ttitle\tclosed/x.pdf\t"
+        "https://etheses.whiterose.ac.uk/id/eprint/4475/\troute\t641\t9\t"
+        "expected-hash\tdate\tnote\n"
+    )
     reproduce.source_checks()
     report = json.loads(capsys.readouterr().out)
     assert report["status"] == "SKIPPED"
     assert report["missing"] == ["library/closed/abuhmida2013-thesis-related_macbook20261030.pdf"]
+    assert report["expected_bytes"] == 9
+    assert report["expected_sha256"] == "expected-hash"
+    assert report["public_route"].startswith("https://etheses.whiterose.ac.uk/")
+
+
+def test_optimiser_comparison_allows_roundoff_but_keeps_identity_exact(tmp_path):
+    reproduce = module(ROOT / "tools/reproduce.py", "reproduce_compare_test")
+    reference = tmp_path / "reference.csv"
+    candidate = tmp_path / "candidate.csv"
+    content = "grouping,n_reference,rho_f_contour,scope\nindependent,59,0.09102964787638201,retrospective\n"
+    reference.write_text(content)
+    candidate.write_text(content.replace("0.09102964787638201", "0.09102964787638246"))
+    assert reproduce.compare_csv(reference, candidate, identity_columns={"grouping", "n_reference"})["status"] == "PASS"
+    candidate.write_text(content.replace(",59,", ",60,"))
+    assert reproduce.compare_csv(reference, candidate, identity_columns={"grouping", "n_reference"})["status"] == "FAIL"
+
+
+def test_optimiser_comparison_rejects_non_numeric_or_large_numeric_drift(tmp_path):
+    reproduce = module(ROOT / "tools/reproduce.py", "reproduce_compare_drift_test")
+    reference = tmp_path / "reference.csv"
+    candidate = tmp_path / "candidate.csv"
+    reference.write_text("key,value,note\nA,1.0,ok\n")
+    candidate.write_text("key,value,note\nA,1.0001,ok\n")
+    assert reproduce.compare_csv(reference, candidate, identity_columns={"key"})["status"] == "FAIL"
+    candidate.write_text("key,value,note\nA,1.0,changed\n")
+    assert reproduce.compare_csv(reference, candidate, identity_columns={"key"})["status"] == "FAIL"
+
+
+def test_public_source_check_reports_route_and_hash(tmp_path, capsys):
+    reproduce = module(ROOT / "tools/reproduce.py", "reproduce_source_manifest_test")
+    reproduce.ROOT = tmp_path
+    source = tmp_path / "library/closed/abuhmida2013-thesis-related_macbook20261030.pdf"
+    source.parent.mkdir(parents=True)
+    source.write_bytes(b"test source")
+    manifest = tmp_path / "library/closed.tsv"
+    expected = __import__("hashlib").sha256(source.read_bytes()).hexdigest()
+    manifest.write_text("abuhmida2013-thesis-related_macbook20261030\t\ttitle\tclosed/x.pdf\thttps://etheses.whiterose.ac.uk/id/eprint/4475/\troute\t641\t11\t" + expected + "\tdate\tnote\n")
+    reproduce.execute = lambda command, cwd: None
+    reproduce.source_checks()
+    report = json.loads(capsys.readouterr().out)
+    assert report["status"] == "PASS"
+    assert report["public_route"].startswith("https://etheses.whiterose.ac.uk/")
+    assert report["sha256"] == expected

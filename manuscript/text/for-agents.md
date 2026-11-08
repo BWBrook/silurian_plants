@@ -1,12 +1,12 @@
 ---
 document: agent-facing paper
 study: F3, fossil maxima behind land-plant molecular clocks
-status: internal draft; Loop 3 closed 2026-11-07; revised after the GPT-6 Pro follow-up review of 342153a (triage docs/audits/2026-11-07-gpt6pro-review2-triage.md; B1 restoration pending with Codex); release and submission are Barry's decision
+status: internal draft; Loop 3 closed 2026-11-07; follow-up review implemented 2026-11-08 (docs/audits/2026-11-08-review2-handoff.md); release and submission are Barry's decision
 human_paper: manuscript/text/main.md (+ supplement.md, brief.md)
 claims_ledger: manuscript/claims.csv (single source for all renderings; checked by tools/claims.py)
 governing_docs: [docs/charter.md, docs/decisions.md, docs/plan-f3.md, docs/f3-shape.md, docs/loop3-design.md, docs/loop3-results.md]
 authority: Barry W. Brook decides public release, submission and any correspondence outside Claude and Codex
-updated: 2026-11-07
+updated: 2026-11-08
 ---
 
 # F3 for agents: what this study established, how to verify it, and how not to break it
@@ -145,8 +145,8 @@ Do not reintroduce any of these. Each was caught in review; the record is in `su
 9. **The Yea *Baragwanathia* age.** It is unresolved, Gorstian to Emsian, and carried as the full range.
    Do not fix it to either end.
 10. **Wells.** The Murzuq frame has five wells; the 28 older cuttings come from three of them.
-11. **Figure numbering.** Files are named in citation order (`fig2_mapping`, `fig3_evidence`,
-    `fig4_bodies`, `figS2_qsim`). Older audits use earlier names.
+11. **Figure numbering.** Main files are named in citation order (`fig1_problem`, `fig2_evidence`,
+    `fig3_bodies`, `fig4_frontier`); the mapping matrix is `figS7_mapping`. Older audits use earlier names.
 12. **GTS2012 against ICS v2024/12.** Literature Early Devonian boundaries differ from ours by up to
     3 Myr; `data/timescale.csv` is the only source of numerical ages.
 13. **ρ·f ≈ 0.09 for both Murzuq classes.** It holds for H0c only (C24).
@@ -182,8 +182,10 @@ Do not reintroduce any of these. Each was caught in review; the record is in `su
     an origin date; quote it beside the 432–434 Ma unit sensitivity.
 27. **Interval failures and passes.** Use the finite-sample reference. A failure across every
     admissible allocation is a conservative rejection of that fixed history for the diagnostic only if
-    the supports contain the true ages (sup-p argument, Berger and Boos 1994); a pass is a possibility,
-    not a fit or a ranking (C49).
+    the supports contain the true ages and inclusion state almost surely under the observation model,
+    with fixed history, cutoff, timescale, inventory and unit rule and independent continuous ages.
+    Containment failure probability delta gives only an alpha + delta size bound; the geological
+    ranges have no demonstrated joint coverage. A pass is a possibility, not a fit or a ranking (C49).
 
 
 ## Stage 2 results (integrated 7 November 2026)
@@ -193,6 +195,10 @@ witness KS distances, constant-history endpoints, and all Murzuq contours). They
 the article (§3.2, §3.3, §4), supplement (S2.5, S5.1–S5.4, Tables S1b, S6b, S7b, S9b) and brief.
 Codex's semantic review (`docs/audits/2026-11-07-semantic-closure-review.md`) found wording repairs only;
 all are applied.
+The 8 November follow-up restored two source-backed B1 records (C25/C39/C32), with the E4 anatomical
+interpretations kept separate, and refreshed B1 influence (C52) and simulation summaries (C34).
+Codex independently recounted the units and checked the constant and step bounds and leave-outs by
+closed forms. B0 and B2 result rows are unchanged (`docs/audits/2026-11-08-b1-restoration.md`).
 
 - **Frontier (C48):** with the primary B2 units and zero assumed diagnostic delay, candidate ages
   [431.2]{.C48 .V035}, [444]{.C48 .V036}, [447]{.C48 .V037} and [452]{.C48 .V038} Ma have earlier/later recording contours
@@ -203,12 +209,14 @@ all are applied.
   that history across the recorded age supports. The output also enumerates cutoff-straddling
   inclusion states and provides negative certificates where the best attainable diagnostic fails.
   Finite-sample p is primary: 25 Myr decline [0.067]{.C49 .V104} with 50 units, [0.049]{.C49 .V105} with 49,
-  [0.035]{.C49 .V106} with 48. A failure over all admissible allocations is a conservative rejection only if
-  the supports contain the true ages; a passing witness is a possibility, not a fitted chronology.
+  [0.035]{.C49 .V106} with 48. A failure over all admissible allocations is a conservative rejection under
+  the almost-sure support-containment and fixed-model conditions in trap 27; a passing witness is a
+  possibility, not a fitted chronology.
 - **Timescale (C50):** the primary constant B2 bound ranges from [427.31]{.C50 .V045} to [430.42]{.C50 .V046} Ma
   across the shared-boundary scenarios. This is sensitivity to stated deterministic boundary
   movements, with source-scale mapping explicit; it is not a probability interval.
-- **Murzuq (C51):** the independent constant-history contour is [0.091030]{.C51 .V047}; separate well
+- **Murzuq (C51):** the constant-history contour with cutting outcomes conditionally independent given
+  the shared well effect is [0.091030]{.C51 .V047}; separate well
   rates give [0.099513]{.C51 .V048}, and inverse block-size weighting gives [0.393002]{.C51 .V049} for
   well–formation blocks and [0.418871]{.C51 .V050} for well–stage-support blocks. The latter are
   unqualified composite-likelihood sensitivities.
@@ -221,7 +229,10 @@ all are applied.
 From the repository root:
 
 ```sh
-uv run --with numpy --with pandas --with scipy --with pytest python -m pytest models/f3/loop3 -q  # 26 tests
+make check-public                        # fetch/hash the archived PBDB input, then public regression tests
+make reproduce-derived                   # selected tracked-input outputs; declared optimiser tolerance
+make rebuild-source                      # exact archived raw input, inventory and downstream rebuild
+make check-sources                       # route/hash and held-source check, or explicit skip
 uv run manuscript/figures.py              # rewrites figures/ and figures.json hashes
 python3 manuscript/tables.py              # supplement tables; on unchanged inputs, a no-op diff
 uv run tools/refs.py build                # bibliography; key collisions fail loudly
@@ -230,6 +241,11 @@ make -C manuscript                        # PDF and DOCX for main, supplement an
 python3 tools/units.py check              # unit tables and source hashes
 python3 manuscript/package.py             # release inventory with SHA-256
 ```
+
+Reproduction compares bytes except for the Murzuq optimisation CSV, where numerical fields have
+absolute tolerance $10^{-9}$ and keys, schema and categorical fields remain exact. Receipts retain
+both reference and regenerated hashes. The source check reports the public White Rose thesis route
+and expected hash even when the copyrighted PDF is absent; it does not redistribute the thesis.
 
 Invariants worth asserting when you touch the body-record code: B2 constant bound [428.84]{.C27 .V017} Ma at
 n_guaranteed [48]{.C25} and oldest possible 426.7 Ma; B0 exclusion constant bound [434.51]{.C28} Ma (the canonical B0 is C40); exact-age simulation coverage
