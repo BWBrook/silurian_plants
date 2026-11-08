@@ -27,3 +27,4 @@ data/external/spores/wellman2013_supplement/
 manuscript/build/*.docx
 manuscript/build/*_build_manifest.json
 /work/stage2/
+.scrivmark/

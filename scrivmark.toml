@@ -1,0 +1,5 @@
+[manuscript]
+# Source files in reading order.
+files = ["manuscript/text/brief.md", "manuscript/text/main.md", "manuscript/text/figures.md"]
+bibliography = ["library/closed/_incoming/macbook-2026-10-30/intake/deep-research-2026-10-30/unpacked/palaeobotany_literature_recovery_2026-10-30/recovered_sources.bib"]
+csl = "manuscript/csl/chicago-author-date.csl"
