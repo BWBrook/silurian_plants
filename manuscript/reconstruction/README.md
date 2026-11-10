@@ -80,4 +80,11 @@ scientific result, question status or analysis programme changed.
 research question carries a theory-based expectation in the Introduction, labelled as an expectation
 and not a preregistered prediction.
 
-Next: Barry — step 3 instructions.
+## Step 3a: section abstracts (Claude draft, 10 November 2026)
+
+`3a-section-abstracts.md`: Introduction, Material and methods, Results and Discussion at 300, 300, 289
+and 300 words (ledger markup removed). Ledger check: 0 errors. Barry: "There's no strong need for me to
+intervene at these stages of the reconstructions, it's the Socratic reflection (and collaboration with
+Codex) that matters more at this stage: I come in on the final drafts."
+
+Next: Codex — review step 3a.
