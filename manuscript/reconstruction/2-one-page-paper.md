@@ -1,61 +1,79 @@
 # Reconstruction step 2: the one-page paper
 
-Draft by Claude Opus 5.5, 10 November 2026, built from step 1 (`1a`–`1d`). Target: about 600 words, readable
-as a complete paper. Every number is a ledger value bound in `text/main.md`.
+Claude Opus 5.5 draft revised by Codex (`gpt-6.1-sol`), 10 November 2026. Target: about 600 words,
+readable as a complete paper. The questions organise completed analyses; their formulation belongs to
+this reconstruction. Claude's version is preserved at `1fe577c`. Review decisions and remaining
+disagreements are indexed in `README.md`.
 
 ---
 
-## When did living land plants arise? What the fossil maxima behind molecular clocks assume
+## When did living land plants arise? What their fossil age limits require
 
-**Background.** Molecular clocks date the splits between lineages by combining DNA differences with
-fossil age limits. Three recent clocks place the common ancestor of living land plants at 515–474,
-515–493 and 457–450 million years ago (Ma); the youngest used the same DNA as the second, with different
-fossil limits. The most contested limits are maximum ages, which claim that older rocks would have yielded a
-lineage's fossils had it existed. Each therefore assumes how often early plants were fossilised and
-found, a rate clock studies rarely state.
+**Background.** Molecular clocks combine DNA differences and fossil limits to date ancestors.
+Morris et al. (2018), Harris et al. (2022) and Hooper et al. (2026) place the ancestor shared by living
+land plants at 515–474, 515–493 and 457–450 million years ago (Ma), respectively. Hooper reused Harris's
+DNA data with revised fossil calibrations. These dates concern a shared ancestor; earlier extinct lineages could already have occupied land. A fossil maximum sets an older age
+limit, drawing on an argument that earlier plants would probably have left recognisable evidence.
 
-**Aims and hypotheses.** We tested the three maxima that divide recent clocks: 515.5 and 459.1 Ma for
-living land plants, and 431.2 Ma for living vascular plants (those with water-conducting tissue). We expected that (H1) the maxima
-have different weak links: a fossil's identity, its age, the sampling before it, or the link between its
-character and the living group; (H2) spores, abundant and durable but unevenly transported, constrain
-only basins that demonstrably received them; and (H3) under constant recording, the vascular-plant body
-record bounds its own start close to the youngest clock, because confidence intervals on a fossil range
-narrow as finds accumulate.
+**Questions.** We examined three maxima: 515.5 and 459.1 Ma for living land plants, and 431.2 Ma for
+vascular plants, the group containing ferns, conifers, flowering plants and their relatives. We asked
+which evidence underlies each maximum, what Libyan spores constrain, and which early recording rates
+or delays before recognisable bodies permit older vascular-plant origins.
 
-**Approach.** We traced each maximum to its source fossils and checked their identity and age. For
-spores, we modelled the chance that each well cutting from the Murzuq Basin, Libya, contains spores with
-a three-rayed (trilete) mark, given the rate in younger cuttings, an allowance for poorer delivery to
-older rocks, and a shared effect for each well. For plant bodies, we grouped vascular-plant
-fossils into 48 locality–age units and calculated conservative 95% bounds on when their record began,
-first under constant recording, then under recording that rose at a chosen time. Inverting the bounds
-gives the recording contrast that each candidate origin requires.
+**Approach.** We audited the calibration fossils' identities, ages and sampling opportunities. In the Murzuq Basin, Libya, a model combines the spore reports from
+older and younger well cuttings (rock chips from drilling), age uncertainty, delivery from land and a
+shared well effect.
+For vascular-plant bodies, we calculated a conservative 95% older bound on the start of the recognisable fossil
+record, using [48]{.C25} locality–age units certainly inside the analysis window. The base treatment
+holds the rate of recorded, identifiable finds constant. A retrospective
+step model changes recording before the oldest possible find to compute the contrasts needed for
+candidate origins.
 
-**Results.** The three maxima rest on different evidence (H1). The 515.5 Ma maximum rests on a
-qualitative argument that Cambrian marine rocks preserving algal cysts would also preserve land-plant
-spores; quantifying it needs sample-level counts that the sources lack. The 459.1 Ma maximum applies a
-stage-boundary rule to the oldest possible trilete spore, from Sweden; the 431.2 Ma maximum applies the same
-rule to Irish *Cooksonia*, and applied to an older Czech *Cooksonia* the rule gives 434.1 Ma.
+**Results: calibration evidence.** The 515.5 Ma rationale uses older marine algal cysts as a
+preservation control for land-plant spores. The assembled material leaves the relevant search
+opportunity and terrestrial delivery unquantified. The younger maxima use a geological stage's oldest age plus its uncertainty, keyed to Swedish
+triletes (three-rayed spores) and Irish *Cooksonia* bodies. An older Czech *Cooksonia* offers another
+candidate body anchor.
 
-In Libya, 28 older cuttings lacked trilete spores, while 51 of 59 younger cuttings contained them (H2).
-With equal delivery, trilete producers through the later Ordovician were below a tenth of their later
-abundance; with a tenth of the delivery, near-full abundance fits.
+**Results: Libyan spores.** The charts record triletes in [51 of 59]{.C02} younger cuttings and zero
+of [28]{.C01} older cuttings. With constant input and equal delivery, the model gives an upper
+compatibility limit near a tenth of the younger reference level for sustained local spore encounter.
+Tenfold poorer delivery permits near-reference producer input.
 
-Under constant recording, the 95% older bound on the start of the vascular-plant body record is about
-429 Ma, within the youngest clock's vascular-plant estimate of 432–428 Ma (H3). Vascular-plant origins at
-444–452 Ma, as in the older clocks, require earlier bodies
-to have been recorded 8–12 times less often, or diagnostic bodies to have appeared 15–23 million years
-after the origin. Admitting Ordovician fragments of spore capsules (sporangia) from Oman moves the broader land-plant body bound from
-434.5 to 455.2 Ma.
+**Results: plant bodies.** The base treatment gives an older body-record bound near [429]{.C27 .V002}
+Ma. Candidate vascular-plant origins of about 444–452 Ma cover the older Morris mean dates and Harris
+interval. With zero assumed delay before recognisable bodies, the step model puts them on the comparison bound with
+earlier recording [8]{.C48 .V054}–[12]{.C48 .V055} times lower. Retaining constant recording instead
+requires assumed delays of at least [15–23]{.C33} Myr before recognisable bodies appeared, depending on
+the candidate age. Adding
+Ordovician spore-capsule fragments from Oman moves the broader land-plant body bound under constant recording from
+[434.5]{.C28} to [455.2]{.C40 .V022} Ma.
 
-**Assumptions.** These results assume:
-- correctly dated cuttings and a pure younger spore reference;
-- independent cuttings within each well (weighting by well block raises the Libyan limit from about 0.1
-  to 0.4);
-- independent locality–age units (coarser groupings give 432–434 Ma and a 2.4–4.5-fold contrast);
-- fossil ages within their reported ranges;
-- earliest vascular bodies that belong to the living group.
+**Assumptions and sensitivity.**
 
-**Conclusions.** The fossil record supports a young origin of land plants only if the earliest plants
-were fossilised and found as often as later ones. Clock studies should state the recording assumption
-behind each maximum and set soft bounds whose tails reflect it. Measuring how recording changed through
-the Ordovician and Silurian would decide between the young and old clocks.
+- The spore model assumes uniform ages within stages and an indigenous younger reference. Eighteen of
+  the older cuttings are younger than 459.1 Ma; ten broadly dated cuttings reach before it.
+- Cutting outcomes are independent given the shared well effect. Discounting repeated
+  cuttings within wells and rock units gives an exploratory comparison near 0.4.
+- Body units are independent and their age ranges contain the true ages. Coarser groupings or a
+  curated subset give bounds of [432–434]{.C30} Ma and recording contrasts of
+  [2.4]{.C48 .V056}–[4.5]{.C48 .V057} times.
+- Relating bodies to the ancestor of living vascular plants assumes the fossils belong among its
+  descendants and specifies a delay before recognisable bodies. The recording contrasts and offsets specify scenarios; they remain quantities to
+  constrain independently.
+
+- The constant-rate model fits the Oman-inclusive age sequence poorly; its bounds illustrate inventory
+  sensitivity.
+
+**Conclusions.** The fossil record allows older plant origins when early remains were found and
+identified less often, or distinctive body features appeared later. Clock builders should justify each maximum's
+character, geographical and recording assumptions and its soft-bound tail. Independent evidence on
+early recording and diagnostic characters would narrow the compatible histories.
+
+---
+
+Numerical trace: C01/C02 (cuttings); C25/C27/C30 (body units and bounds); C48 (zero-delay step
+contours); C33 (minimum assumed offsets); C28/C40 (Oman comparison); C49 (Oman-inclusive shape check); C24/C45/C51 (Libyan model,
+time support and unqualified block sensitivity). Clock intervals and source identities are traced in
+the frozen article's Introduction and calibration account. The body is a reconstruction draft;
+`manuscript/text/`, the ledger, models and generators retain their frozen versions.

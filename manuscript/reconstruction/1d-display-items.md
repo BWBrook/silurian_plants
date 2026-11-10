@@ -1,50 +1,57 @@
 # Reconstruction step 1d: display items
 
-Main message (1c): *The fossil record supports a young origin of land plants only if the earliest
-plants were fossilised and found as often as later ones.*
+Codex revision of Claude's plan, 10 November 2026. Retain four figures and up to two tables as an
+editorial budget. Barry endorsed the earlier allocation as “much more rational”; the changes below
+specify the scientific meaning of the displays. Construction waits for the later prose/display phase.
 
-## Budget
+Main-message proposal (1c): *The fossil record allows older plant origins when early remains were found
+and identified less often, or distinctive body features appeared later.*
 
-- **Comparators** (`docs/audits/2026-11-10-procb-format-comparison.md`): five recent *Proc B* papers
-  carry 2–4 figures and 0–3 tables.
-- **Length cap:** about 10,000 words, including legends, tables and references; still to be confirmed.
-  It works out at roughly one page for every 2–4 small figures.
-- **Effect of restoring Methods:** putting the methods back in the main text spends most of the slack.
-- **Ceiling:** 4 figures and 2 tables, with the second table the first to go if length bites. The
-  current draft has 4 figures and 5 tables, three more tables than this paper can carry.
+## Budget and venue
 
-## Proposed main display items
+- *Proc B* remains the adopted target. Its biological scope fits this source-based assessment of an
+  evolutionary timing question. The contribution is the quantified empirical requirements of particular
+  maxima, using established inference methods.
+- Five journal comparators carry two to four figures and zero to three tables
+  (`docs/audits/2026-11-10-procb-format-comparison.md`). Four plus two is our allocation, not a verified
+  publisher cap. A third figure remains sufficient if a separate methods schematic adds little.
+- Official Royal Society guidance confirms a 200-word abstract and enough main Methods to understand
+  and replicate the work. The journal-specific length page remains inaccessible; the proposed
+  10,000-word limit is unverified. No page-to-figure conversion is assumed.
+- The optional second table can become the dedicated assumptions paragraph. The sensitivities that
+  change the interpretation remain visible in the main result and graphic.
 
-| Item | Content | Role | Built from |
-|---|---|---|---|
-| **Fig. 1** Context: the question | (a) Crown-age intervals from the three clock studies for land plants and vascular plants, with the three maxima marked. (b) The evidence on the same time axis: cryptospores, trilete spores, the Oman fragments, the Murzuq interval and the first vascular bodies. (c) Inset palaeogeographic map placing Libya, Oman, Wales, Bohemia and Australia. | Shows a new reader the disagreement, the evidence that bears on it and where that evidence lies | Current Fig. 1 and the time axis of Fig. 2. The map is new, from `data/eprp/context` (PaleoDEM slices and plate models). |
-| **Fig. 2** Methods schematic: how a fossil maximum is built | Four links in a chain: identity → age → opportunity for sampling before the find → link from character to crown. Beneath it, a single panel showing how the oldest find and the rate of finding together set a 95% older bound, under constant and under stepped recording. | Supports the methods and H1 and H3; gives a reader with no background in stratigraphic confidence intervals the core idea | New. |
-| **Fig. 3** Result: Libya | (a) Each well's cuttings through time, coloured by trilete presence or absence: the raw pattern of 28 barren cuttings against 51 of 59 with spores. (b) Region of compatibility between older trilete intensity (*f*) and delivery (ρ), as contours. | Tests H2; turns Table 3 into a figure | Current Table 3 and the Murzuq outputs. |
-| **Fig. 4** Result: vascular-plant bodies (headline) | (a) The body-record units through time, with the 95% older bound near 429 Ma under constant recording. (b) The frontier: the recording contrast needed for each candidate crown age, with the clock estimates marked (8–12× at 444–452 Ma). | Tests H3; carries the main message | Current Figs 3 and 4, merged; the per-history bounds move to the Supplement. |
-| **Table 1** The three maxima | One row per maximum (515.5, 459.1, 431.2 Ma). Columns: the evidence it rests on, its weakest link, and what our analysis finds. | Answers aim 1 in one place; replaces current Tables 1 and 2 | Current Tables 1 and 2, condensed. |
-| **Table 2** Assumptions and their consequences (optional) | One row per conclusion: what it assumes, and how the result moves when the assumption changes. | Holds the constraints and assumptions in one place (prose rule 2). Becomes a prose paragraph if length bites. | Current Table 5, rewritten positively. |
+## Proposed main displays
 
-## To the Supplement
+| Item | Content | Purpose and representation |
+|---|---|---|
+| **Fig. 1: clock question and fossil evidence** | Clock intervals for land-plant and vascular-plant ancestors; the maxima; first-record age supports for spores, Oman fragments and vascular bodies. A small locator is optional. | Introduces the different nodes, data types and time scales. Fossil supports span earliest possible to earliest certain occurrence, with endpoints potentially from different finds. Preserve the differing statistical meanings of published clock bars. |
+| **Fig. 2: the inference** | A compact example showing how the oldest find, observation count and recording history produce an older body-record bound, plus the assumed bridge from a node to diagnostic bodies. | Teaches the Methods. Keep the source/identity/age rubric in Table 1 to avoid recreating the old dense mapping matrix. A separate figure earns its space by explaining the calculation. |
+| **Fig. 3: Libya** | Sample age supports and trilete reports by well, with the reference interval and 459.1 Ma marked; a second panel showing the delivery–input trade-off. | Distinguish ten broadly dated cuttings with possible pre-459.1 support from eighteen wholly younger older-frame cuttings. Label target-zero cuttings accurately; they can contain other palynomorphs. Contours constrain the product of delivery and source intensity under stated scenarios, rather than estimate both axes separately. |
+| **Fig. 4: body records and older-age requirements** | (a) Crown-member body units and primary 429 Ma bound, with the 432–434 Ma unit alternatives alongside. (b) Earlier/later recording contours by candidate age, with zero-delay and delayed cases and clock comparators. | Merges the existing body-bound and frontier figures. Identify the retrospective step, unit choice and diagnostic delay. Omit undefined age-minus-delay combinations and state any display cap at one. The 8–12-fold contrast belongs to primary units and zero delay; alternatives give 2.4–4.5-fold. |
+| **Table 1: the three maxima** | One row per maximum: source fossil and age rule, recording comparison available, biological mapping still required. | Answers the source-evidence question. Replace a single “weakest link” verdict with the actual evidence and remaining links; multiple links can be uncertain. |
+| **Table 2: assumptions and consequences (optional)** | One row per result: conditions, which changes were examined, and how the result moves. | Gathers the detailed conditions once, in accessible language. The format is optional; clear visibility of the sensitivity is essential. |
 
-- Table of pivotal records (current Table 2, full form).
-- Murzuq compatibility limits (current Table 3).
-- Bounds under each recording history, as a table and a figure (current Table 4 and Fig. 3).
-- The character-to-lineage mapping figure (S7) and the sensitivity tables (unit rules, regions, leave-one-out).
+## Geographic context
 
-## Reasoning
+A modern locator is adequate for identifying the source areas. A palaeomap would need an explicit
+reconstruction age and plate model, and a clear treatment of fossils spanning different periods.
+Libya/Oman, Wales/Bohemia and Australia cannot silently be plotted at their separate event ages as if
+contemporaneous. Use dated panels if palaeogeography is scientifically necessary. If Fig. 1 crowds,
+move the locator into the Libya panel or omit it; the quantitative question has priority.
 
-- **Two context items, both needed by a reader we assume knows nothing.** The map shows the evidence
-  is scattered across distant palaeocontinents. The schematic makes the bound logic visible before the
-  Methods describe it in words.
-- **One figure per hypothesis-bearing result:** Libya tests H2, the bodies test H3, and Table 1 covers
-  H1.
-- **Figures take over from tables wherever a pattern matters more than exact values.** The exact
-  values move to the Supplement and stay bound to the ledger.
-- **Fig. 4b is the figure a clock builder would reuse.** It is the "application" answer from 1a.
-- **Risk:** Fig. 1 at three panels is dense. If it crowds, the map moves into Fig. 3 as context for
-  Libya and Oman.
+## Supplement
 
-## The brief
+Retain the full pivotal-record table, numerical Murzuq limits, per-history body bounds, source/region/
+unit/age/influence sensitivities and the character-to-node mapping. The main text's three source rows
+and headline graphic point directly to those details. Core Methods return to the main article.
 
-The brief keeps its single figure. A redrawn Fig. 4b, the frontier with the clock estimates, would serve
-it better than the current timeline, because it shows the main message directly.
+## Brief — visible design disagreement
+
+Claude proposed replacing the brief's timeline with the frontier. Codex recommends retaining the
+clock/fossil timeline as the default: it teaches a newcomer which dates and records are being compared.
+A full frontier adds rate, unit and delay axes. A simplified frontier or a two-panel version can be
+compared in the actual two-page layout during the authorised display phase. The current frozen brief
+and generators stay unchanged.
+
+See `codex-message-display-check.md` for the independent critique and official guidance links.

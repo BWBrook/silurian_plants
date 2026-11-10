@@ -1,92 +1,83 @@
 # Reconstruction step 1a: working abstract
 
-Not for submission. This is a reference point for rebuilding the F3 article from first principles,
-following Barry's method (chat, 10 November 2026). Drafted by Claude Opus 5.5 from `main` at `f490c44`.
-The numbers are the ledger values bound in `text/main.md` (claim IDs in brackets). Target journal:
-*Proc B*.
+Working record for Barry's reconstruction method. Claude Opus 5.5 draft revised by Codex
+(`gpt-6.1-sol`), 10 November 2026, from `1fe577c`. These are proposed revisions for reconciliation;
+the original drafts and the material disagreements remain linked in `README.md`. Target: *Proc B*.
 
 ## Why are we doing this?
 
-Molecular clocks place crown land plants anywhere from the Cambrian to the Late Ordovician. Recalibrating
-the fossils alone moved one estimate 55 Myr. The fossil maxima that drive this have never been tested
-against the recording assumptions they hide.
+Molecular clocks disagree about the ancestor of living land plants. Different fossil calibrations
+contribute to that disagreement. We examine what their maximum ages require of the fossil evidence.
 
 ## Aims
 
-**Core aim:** Can the fossil record support the three maxima that divide recent clocks (515.5, 459.1 and
-431.2 Ma), and under what assumptions?
+**Core aim:** What evidence and biological assumptions support the three maxima, and what alternative
+recording or character histories permit older origins?
 
-**Sub-aims:**
-1. What kind of evidence does each maximum rest on?
-2. What do spore-barren Ordovician cuttings in the Libyan wells constrain?
-3. What does the vascular-plant body record constrain?
-4. Which records and assumptions are pivotal?
+1. What fossil identity, age, sampling and character-to-ancestor links underlie each maximum?
+2. What sustained older spore encounter does the Murzuq Basin record constrain?
+3. What recording and diagnostic-delay combinations permit candidate vascular-plant ages, and how do
+   fossil selection, unit definitions and age supports affect the answer?
 
-## Hypotheses (a priori)
+## Status of the questions
 
-- **H1 (identity and character linkage).** A maximum is only as strong as its weakest link: the
-  fossil's identity, its age, the sampling opportunity before it, and the link from character to crown.
-  Prediction: the three maxima fail at different links. The oldest fails at sampling opportunity, which
-  cannot be quantified.
-- **H2 (spore taphonomy).** Spores are abundant, decay-resistant and carried into marine basins, so
-  their absence is more informative than absence of bodies. It constrains only catchments with
-  demonstrable delivery. Prediction: the Libyan wells give a local limit that depends on delivery, not a
-  global origin.
-- **H3 (stratigraphic confidence-interval theory).** Under constant recording, a well-sampled body
-  record places its true start shortly before the oldest find. Prediction: the vascular-plant body bound
-  lies near the youngest clocks, and older crown ages need recording that rose markedly through the
-  Silurian.
+These questions organise completed analyses. They replace the retrospective H1–H3 labelled “a priori”
+in Claude's draft. The original body-record design follows the pilot and explicitly disclaims
+preregistration before it (`docs/loop3-design.md`); the earlier plan distinguishes estimator checks from
+predictions about the correct timescale (`docs/plan-f3.md`).
+
+The useful theoretical expectation is precise: for a fixed history, cutoff and oldest find, adding
+independent occurrences narrows the older bound. That result does not predict which clock the bound
+will overlap. Likewise, the study has no matched experiment comparing the informativeness of spore and
+body absences. A question-led empirical synthesis fits the evidence and its history.
 
 ## What did we do?
 
-We audited the pivotal records for identity, age, stratigraphic placement and recovery route, and built
-locality–age units from them.
-
-Three analyses use those units:
-- a model of spore encounter in the Murzuq well cuttings, with a well effect;
-- finite-sample confidence bounds on the start of the body record;
-- step-change recording models, a frontier relating the required contrast to the crown age, and tests
-  of whether each recording history fits the observed sequence.
-
-Results are given across the alternative readings of the evidence.
+We audited calibration sources, retaining fossil identity, age, recovery route and alternative readings.
+We modelled spore encounter in Libyan cuttings with age uncertainty, delivery scenarios and shared well
+effects. For positive body records, we calculated conditional older bounds and examined unit, age,
+recording-history and diagnostic-delay alternatives. A retrospective step model quantifies which early
+recording contrasts would accommodate particular candidate ages.
 
 ## What did we find?
 
-- **The oldest maximum, 515.5 Ma,** rests on a qualitative preservation argument that the material
-  cannot quantify.
-- **Murzuq basin.** The well counts are [28]{.C01} older cuttings without trilete spores, against
-  [51 of 59]{.C02} younger cuttings with them. They limit sustained, well-delivered trilete input, but
-  only locally and chiefly in the later Ordovician.
-- **Vascular-plant bodies** under constant recording:
-  - the 95% older bound on their recognisable record is about [429]{.C27} Ma;
-  - crown ages of 444–452 Ma would need earlier bodies to be recorded about [8–12]{.C48} times less
-    often.
-- **Land-plant bodies.** Admitting the Ordovician Oman fragments moves the land-plant body bound
-  (B0), not the vascular-plant bound, about 20 Myr older ([455.2]{.C40} against [434.5]{.C28} Ma).
+- **Calibration evidence:** the 515.5 Ma preservation-control rationale remains qualitative in the
+  assembled material; the younger maxima use source-specific stage-base rules and character links.
+- **Local spores:** the Libyan charts contain [28]{.C01} older cuttings with zero trilete reports and
+  [51 positives among 59]{.C02} younger reference cuttings. The constant-input, equal-delivery model
+  puts the upper compatibility limit for sustained local encounter near a tenth of the reference.
+- **Vascular-plant bodies:** constant recording and the primary units give an older bound near
+  [429]{.C27 .V002} Ma. Coarser grouping or the curated subset gives [432–434]{.C30} Ma. For candidate
+  origins of 444–452 Ma, the retrospective zero-delay step contours require earlier recording
+  [8]{.C48 .V054}–[12]{.C48 .V055} times lower; the unit alternatives give
+  [2.4]{.C48 .V056}–[4.5]{.C48 .V057} times. Constant-rate alternatives use minimum assumed delays
+  of [15–23]{.C33} Myr, depending on the candidate age.
+- **Broad land-plant bodies:** including Oman moves the constant bound from [434.5]{.C28} to
+  [455.2]{.C40 .V022} Ma. This concerns the broader land-plant category; the vascular-plant bound is
+  unchanged by Oman.
 
 ## What do the results mean?
 
-None of the three maxima is a hard limit. The two younger ones hold if recording was roughly constant.
-Older clocks remain possible only if early land plants were recorded far less often, or lacked
-diagnostic bodies. That turns the dispute into a question that can be answered: how intense was the
-earlier recording?
+The fossil evidence constrains different observation histories: sustained local spore encounter,
+recognisable body records and the conditions needed to connect those records to a common ancestor.
+Older origins remain compatible under alternative recording, geographical and diagnostic histories.
+The body-record frontier quantifies some of those requirements; the earlier recording contrast itself
+remains a quantity to estimate independently.
 
 ## What is it good for, and how does it generalise?
 
-**For clock builders:** state each maximum as a soft bound, together with its recording assumption,
-and use the frontier to see what an older node would require.
+Clock builders can state the evidence and mapping behind each maximum, justify its soft-bound tail
+under a named recording and character history, and examine alternative calibrations. The separation
+of source evidence, recording process and biological mapping transfers to other absence-based maxima.
+Its practical application still requires each group's fossil record and diagnostics to be assessed.
 
-**Beyond plants:** splitting a maximum into its links (identity, age, sampling opportunity, character
-linkage), and the trade-off between recording contrast and crown age, both transfer to any maximum
-based on absence. Examples are Cambrian animals, angiosperms and placental mammals.
+## What the Codex review changed
 
-## What drafting this exposed
-
-1. **The draft states no hypotheses.** H1–H3 are reconstructed after the fact. H3 is the only one with
-   a quantitative prediction made in advance, and it held: under constant recording the bound lies at
-   the youngest clock. The rebuilt Introduction should lead to these three hypotheses.
-2. **The application answer is not in the draft.** The paper never tells clock builders what to do
-   (the "who cares" gap, 10 November).
-3. **The answer to "what does it mean" points to the missing analysis.** That analysis is measuring the
-   recording contrast, which we have deferred to later work. Without it, the paper's honest headline is
-   a price on the older clocks, not a verdict between them.
+1. Three retrospective questions replace a prospective-hypothesis narrative. Claude's H1 was an
+   assessment rubric, H2 a locality/delivery argument, and H3 a method implication plus an observed
+   clock overlap. Their original wording is retained at `1fe577c` and discussed in the science check.
+2. The main-message proposal states compatibility with older origins positively. The necessary
+   equal-recording claim in Claude's version fails even within the primary step model (1c).
+3. A limit on local spore encounter stays distinct from measured producer abundance. Delays remain
+   minimum assumed scenario offsets. Independent evidence could narrow these alternatives while
+   geographical, anatomical and age-mapping questions remain.
