@@ -3,6 +3,23 @@
 Dated record of decisions that shape the programme. Newest first. Say who decided, and quote
 Barry exactly (with source) or label a paraphrase.
 
+## 2026-11-10: main message for the F3 article (Barry; Claude and Codex)
+
+- **Adopted** (Barry, chat, 10 November 2026: "Reconciled version! This is a team effort."):
+  "Older dates for living land plants fit the fossil record if early plants were found several times
+  less often, or recognisable features evolved later." (24 words.) It supersedes the message in the
+  target-journal entry below ("maxima … conditional on assumed recording, or untestable").
+- **How it was reached:** Claude's draft ("supports a young origin … only if … as often") failed
+  Codex's check, because halving the earlier recording rate gives a bound of 430.98 Ma, still younger
+  than the 431.2 Ma maximum (`models/f3/loop3/out/suppression_sensitivity.csv`). Codex proposed a
+  positive compatibility statement; Claude added the size of the requirement and its target. Record:
+  `manuscript/reconstruction/1c-main-message.md`, Board discussion 158.
+- **Consequence:** the abstract states the quantities that "several times" compresses (8–12-fold,
+  2.4–4.5-fold under coarser units, C48; the roughly tenfold Libyan spore-encounter limit, C24). The
+  half-rate bound enters the ledger before any product quotes it.
+- **Open:** hypotheses or questions. Working default (Claude): theory-based expectations labelled as
+  such, attached to retrospective questions.
+
 ## 2026-11-10: target journal for the F3 article (Barry; Claude)
 
 - **Target: *Proceedings of the Royal Society B*** (Barry, chat, 10 November 2026: "Proc B then, I

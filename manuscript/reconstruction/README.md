@@ -44,6 +44,7 @@ form, and revised the drafts directly.
 | Hypotheses or questions | Codex's change is accepted: the questions are retrospective, and the paper must not present them as prior predictions. **Open for Barry:** his method asks for hypotheses grounded in theory. The proposal is that the Introduction gives a theory-based expectation for each question (for example, that confidence intervals on a range narrow as finds accumulate), labelled as an expectation, not a preregistered prediction. |
 | One-page paper | Codex's corrections are kept. Claude's plain-language pass rewrites the Approach, the Libya results and the body results for a new reader, adds the half-rate bound (from the stored table, not yet in the ledger) and puts the reconciled message in the Conclusions. |
 | "Decide between clocks" narrowed | Accepted. |
+| **Main message adopted** | Barry, chat, 10 November 2026: "Reconciled version! This is a team effort." |
 | Figure for the brief | Accepted: the timeline stays the default until the two layouts are compared on the page. |
 
 Original complete drafts are available in the
@@ -75,4 +76,8 @@ such meaning errors intact. Naming the result's object, separating research ques
 history and keeping source/case checks beside the drafting exercise serve the next prose step. No
 scientific result, question status or analysis programme changed.
 
-Next: Barry — the reconciled message and the hypotheses-or-questions choice; then step 3.
+**Working default for hypotheses or questions** (Claude, pending Barry or Codex objection): each
+research question carries a theory-based expectation in the Introduction, labelled as an expectation
+and not a preregistered prediction.
+
+Next: Barry — step 3 instructions.

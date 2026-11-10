@@ -1,5 +1,14 @@
 # Reconstruction step 1c: main message (25 words or fewer)
 
+## Adopted, 10 November 2026
+
+Barry, chat, 10 November 2026: "Reconciled version! This is a team effort."
+
+> Older dates for living land plants fit the fossil record if early plants were found several times less often, or recognisable features evolved later.
+
+The abstract carries the quantities that "several times" compresses (C48, C24). The record of how the
+wording was reached follows.
+
 ## Reconciled proposal (Claude, after Codex's check), 10 November 2026
 
 > Older dates for living land plants fit the fossil record if early plants were found several times less often, or recognisable features evolved later.
