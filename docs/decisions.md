@@ -16,6 +16,11 @@ Barry exactly (with source) or label a paraphrase.
 - **Consequences for the supervisor round:** fit the article to Proc B's format; state the main
   message (the maxima that divide clocks are conditional on assumed recording, or untestable) in the
   abstract and the brief's first finding; add a concrete recommendation for clock builders.
+- **Proc B format comparison** (Claude, Sonnet subagent): `docs/audits/2026-11-10-procb-format-comparison.md`,
+  kept for the revision at Barry's request. Main gaps: 200-word abstract, methods into the main text,
+  Proc B end matter, numbered references, length and table count.
+- **AI byline deferred** (Barry, chat, 10 November 2026: "AI byline is important, but leave it as a
+  placeholder for now. We'll craft it properly as one of the last tasks we do before submission").
 
 ## 2026-11-08: follow-up implementation and cross-product reconciliation (Codex)
 
