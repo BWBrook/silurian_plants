@@ -1,8 +1,9 @@
 # Reconstructing the F3 article from first principles
 
 Barry's method for rebuilding a paper after its first draft (chat, 10 November 2026). The files form a
-working reconstruction. Claude's first version of steps 1–2 is preserved at `1fe577c`; Codex's current
-revision is a proposal for reconciliation before the next reconstruction step. The target remains
+working reconstruction. Claude's first version of steps 1–2 is preserved at `1fe577c`; those steps have
+been reconciled and Barry adopted their main message at `0306623`. Codex's step 3a revision awaits
+Claude's reconciliation before the next reconstruction step. The target remains
 *Proceedings of the Royal Society B*. AI byline wording remains a placeholder for the submission phase.
 
 ## Steps 1–2
@@ -11,13 +12,13 @@ revision is a proposal for reconciliation before the next reconstruction step. T
 |---|---|
 | `1a-working-abstract.md` | Seven organising questions and answers. Retrospective analytical questions replace the “a priori” H1–H3 narrative. |
 | `1b-abstract.md` | Abstract under 150 words, including the conclusion-changing unit sensitivity. |
-| `1c-main-message.md` | Codex's positive 22-word proposal, Claude's earlier wording and the scientific disagreement, with a stored-model counterexample. |
+| `1c-main-message.md` | The adopted 24-word message, with the earlier proposals, disagreement and stored-model counterexample preserved. |
 | `1d-display-items.md` | Four figures and up to two tables as an editorial allocation; revised contracts for geography, delivery–input trade-offs and unit/delay sensitivities. |
 | `2-one-page-paper.md` | Revised complete-paper outline, about 600 words, with detailed conditions gathered in one section. Result values retain ledger/case links. |
 
 Barry called the earlier display allocation “much more rational”. The target venue and prose rules
-remain adopted decisions. The revised main message, question-led framing and brief display choice are
-Codex's proposals; this index records no new endorsement by Barry or Claude.
+remain adopted decisions. The reconciliation below records the accepted question-led framing and
+brief display choice, followed by Barry's adoption of the reconciled main message.
 
 ## Review record and disagreements
 
@@ -63,7 +64,7 @@ retrospective status and the actual row selectors. A new-reader and scientific w
 positive findings, term definitions and consolidated conditions. Word counts refer to the paper body
 between the horizontal rules, with numerical citation markup removed; the title is excluded.
 
-Observed checks: 52 claims cited, zero numerical errors or warnings; abstract 144 words, one-page
+At Codex's first review (`1ef04ea`): 52 claims cited, zero numerical errors or warnings; abstract 144 words, one-page
 body 638, proposed message 22. The abstract and one-page body contain none of the scanned explicit
 negation terms. The independent science check of the revised drafts passed after clarifying that the
 48-unit calculation concerns vascular-plant bodies. The writing scanner's heading flags reflect the
@@ -80,11 +81,47 @@ scientific result, question status or analysis programme changed.
 research question carries a theory-based expectation in the Introduction, labelled as an expectation
 and not a preregistered prediction.
 
-## Step 3a: section abstracts (Claude draft, 10 November 2026)
+## Step 3a: section abstracts (Codex revision, 10 November 2026)
 
-`3a-section-abstracts.md`: Introduction, Material and methods, Results and Discussion at 300, 300, 289
-and 300 words (ledger markup removed). Ledger check: 0 errors. Barry: "There's no strong need for me to
+`3a-section-abstracts.md` revises Claude's draft at `9e42e71`. The sections contain **272, 261, 275 and
+280 words**, respectively. Counts split on whitespace after removing ledger attributes, exclude
+section headings, and include paragraph labels and formula spans. Each is below Barry's strict
+300-word ceiling, also when hyphens and dashes are counted as word separators. Barry: "There's no strong need for me to
 intervene at these stages of the reconstructions, it's the Socratic reflection (and collaboration with
 Codex) that matters more at this stage: I come in on the final drafts."
 
-Next: Codex — review step 3a.
+The independent checks are `codex-3a-methods-check.md` and `codex-3a-argument-check.md`. Their focused
+acceptance reads passed after the revisions below. These are review notes, rather than further
+reconstruction steps.
+
+| Compression issue | Revision |
+|---|---|
+| Zero detections treated as decisive on their own | The encounter expectation requires comparable exposure. The observed spore–body gap remains distinct from unmeasured divergence and recognition delays. |
+| Locality–ages treated as verified horizons; interval ages assigned to oldest endpoints | Name the proxy units and use the greatest possible oldest age with the minimum guaranteed count. The formula now defines its cutoff and cumulative recording exposure. |
+| Two Murzuq numbers treated as one intensity limit | Distinguish constant input from the exposure-weighted mean over bounded variable histories. Keep their local, relative-input targets. |
+| Open body bound and failed histories stated without domains | Name the 469.4 Ma search domain, the pure 10 Myr decline and the six fixed Oman-inclusive histories. |
+| Recording scenarios read as estimated biological histories | Identify the primary half-rate step, zero-delay contrasts and minimum assumed delays. The step retains its retrospective status. |
+| A body delay used to explain both spore and body constraints | Keep the spore and body mappings separate. Gather the reference, age, dependence and character assumptions in Conditions. |
+| Block comparison presented as a raised calibrated limit | Retain the exploratory contour near 0.4 with unqualified coverage. |
+| 0.977 attributed to Hooper's fitted models | Reserve this project's conditional stochastic-map reanalysis for the supplement, with its coding, model, tree and chronology. |
+
+**Placement decisions for reconciliation.** Calibration-audit findings stay in Results; the audit
+protocol belongs in Methods. Keep the conditional shape finding, because an unresolved older bound
+and a history passing the age-sequence diagnostic answer different questions. Stage-boundary and
+coverage ranges remain in the Results outline; their details go to the supplement. The adopted main
+message closes Discussion unchanged. Proc B and the display allocation remain settled.
+
+**Observed checks.** The numerical check includes all four frozen products and reconstruction steps
+1a, 1b, 2 and 3a: 52 claims cited, zero errors and zero warnings. The four section bodies contain none
+of the scanned explicit negation terms. The half-rate value remains pending ledger integration before
+full prose; its saved output and independent algebra were checked in steps 1–2. The checker passes
+the existing bindings and does not confer support on that unbound value. No model runs or product
+builds were needed; the ledger, analyses and canonical products remain frozen.
+
+**Structural review (Q1/Q2/Q5).** Compression again changed the subject of several sound numbers.
+Keeping the age-envelope rule, object labels and scenario selectors visible, while gathering detailed
+conditions, serves the full-prose step. This review changes the reconstruction wording and placement;
+the scientific results, question statuses and analysis programme remain as adopted. The frozen
+question and decision registers can record the completed reconstruction loop when it closes.
+
+Next: Claude — reconcile step 3a, then continue the reconstruction.
