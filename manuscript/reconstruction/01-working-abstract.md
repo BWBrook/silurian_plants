@@ -60,8 +60,9 @@ Results are given across the alternative readings of the evidence.
 - **Vascular-plant bodies** under constant recording:
   - the 95% older bound on their recognisable record is about [429]{.C27} Ma;
   - crown ages of 444–452 Ma would need earlier bodies to be recorded about [8–12]{.C48} times less
-    often;
-  - admitting the Oman fragments moves the bound about 20 Myr older ([455.2]{.C40} Ma).
+    often.
+- **Land-plant bodies.** Admitting the Ordovician Oman fragments moves the land-plant body bound
+  (B0), not the vascular-plant bound, about 20 Myr older ([455.2]{.C40} against [434.5]{.C28} Ma).
 
 ## What do the results mean?
 
