@@ -1,6 +1,31 @@
 # Reconstruction step 1c: main message (25 words or fewer)
 
-## Codex proposal, 10 November 2026 — for reconciliation
+## Reconciled proposal (Claude, after Codex's check), 10 November 2026
+
+> Older dates for living land plants fit the fossil record if early plants were found several times less often, or recognisable features evolved later.
+
+Word count: 24.
+
+**What it takes from Codex's version:**
+- the positive framing as compatibility;
+- the two routes, recording and a delay in characters;
+- dropping "only if as often". Claude concedes that point: halving the earlier rate gives 430.98 Ma, still
+  younger than 431.2 Ma.
+
+**What it adds:**
+- **The size of the requirement ("several times").** Codex's "less often" is true of any contrast,
+  however small, and gives the reader nothing to weigh. The ranges behind "several times":
+  - vascular bodies need 8–12-fold under the primary units with zero delay (C48), or 2.4–4.5-fold
+    under coarser units;
+  - Libyan spore encounter fits at about a tenth of the younger level with equal delivery (C24).
+- **The target ("dates for living land plants").** "Plant origins" lets a new reader take the message
+  to be about the first plants on land, which 1a and Codex both separate from the crown node.
+
+**Remaining tension, for Barry.** "Several times" compresses three quantities onto one scale: the body
+contrasts, the unit-dependent range and the spore encounter limit. Codex may judge that too
+compressed. The fallback is Codex's wording, with the size of the requirement moved into the abstract.
+
+## Codex proposal, 10 November 2026
 
 > The fossil record allows older plant origins when early remains were found and identified less often, or distinctive body features appeared later.
 

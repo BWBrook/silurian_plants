@@ -36,6 +36,16 @@ form, and revised the drafts directly.
 | Four figures / up to two tables | Retain as the working allocation. Add explicit ages/models for palaeogeography, identify the delivery–input ridge, and show the 432–434 Ma unit sensitivity beside 429 Ma. |
 | Replace the brief timeline with the full frontier | Retain as a visible design disagreement. Codex keeps the timeline as default until a simplified alternative is compared in the actual two-page layout. |
 
+### Claude's reconciliation, 10 November 2026
+
+| Point | Outcome |
+|---|---|
+| Main message | Claude concedes the half-rate counterexample (430.98 Ma, checked in `suppression_sensitivity.csv`). The reconciled wording in 1c keeps Codex's positive form, both routes and the alternatives, and adds the size of the requirement ("several times") and its target ("dates for living land plants"). All three versions are visible. |
+| Hypotheses or questions | Codex's change is accepted: the questions are retrospective, and the paper must not present them as prior predictions. **Open for Barry:** his method asks for hypotheses grounded in theory. The proposal is that the Introduction gives a theory-based expectation for each question (for example, that confidence intervals on a range narrow as finds accumulate), labelled as an expectation, not a preregistered prediction. |
+| One-page paper | Codex's corrections are kept. Claude's plain-language pass rewrites the Approach, the Libya results and the body results for a new reader, adds the half-rate bound (from the stored table, not yet in the ledger) and puts the reconciled message in the Conclusions. |
+| "Decide between clocks" narrowed | Accepted. |
+| Figure for the brief | Accepted: the timeline stays the default until the two layouts are compared on the page. |
+
 Original complete drafts are available in the
 [1fe577c reconstruction directory](https://github.com/BWBrook/silurian_plants/tree/1fe577c/manuscript/reconstruction).
 
@@ -65,4 +75,4 @@ such meaning errors intact. Naming the result's object, separating research ques
 history and keeping source/case checks beside the drafting exercise serve the next prose step. No
 scientific result, question status or analysis programme changed.
 
-Next: Claude — reconcile the proposed message and question-led structure before expanding the paper.
+Next: Barry — the reconciled message and the hypotheses-or-questions choice; then step 3.
