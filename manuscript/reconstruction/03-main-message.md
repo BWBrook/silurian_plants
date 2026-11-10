@@ -1,32 +1,34 @@
 # Reconstruction step 3: main message (25 words or fewer)
 
-> Fossil maxima dividing land-plant clocks are not hard limits; the young ones hold only if early plants were recorded as often as later ones.
+> The fossil record supports a young origin of land plants only if the earliest plants were fossilised and found as often as later ones.
 
-Word count: 24 (`wc -w`; "land-plant" counts as one word).
+Word count: 24 (`wc -w`).
 
-## Why this wording
+## Notes
 
-**It names the condition.** The 10 November version said the maxima are "conditional on how often
-earlier plants were recorded". This one says which way the condition cuts:
+- **Written for a reader who knows nothing of the study.** Plain words replace our jargon: "fossil
+  maxima" and "clocks" become what they claim, and "recording" becomes "fossilised and found".
+- **A young origin** means the youngest molecular-clock dates, which follow from the young fossil
+  maxima: 459.1 Ma for land plants and 431.2 Ma for vascular plants.
+- **"Fossilised and found"** covers preservation, recovery and recognition, together called recording
+  intensity in the paper.
+- **Every line of evidence turns on that one condition:** the Libyan wells, the vascular-plant body
+  bound and the Oman record. The other route to an older origin, a delay before diagnostic bodies
+  appeared, goes in the Results and in the paragraph on assumptions.
 
-- the young maxima (459.1 and 431.2 Ma) stand only if earlier recording was as intense as later
-  recording;
-- the older clocks survive only if it was not.
+Superseded wording (10 November, rejected by Barry as unclear to a new reader and built on a negation):
+"Fossil maxima dividing land-plant clocks are not hard limits; the young ones hold only if early plants
+were recorded as often as later ones."
 
-That is the hinge that the study's lines of evidence share:
+## Prose rules for the rebuild (Barry, chat, 10 November 2026)
 
-- **Libya:** the well cuttings give a local limit that depends on delivery.
-- **Vascular-plant bodies:** the bound near 429 Ma holds under constant recording, and an 8–12-fold
-  lower earlier rate permits 444–452 Ma.
-- **Oman:** one record moves the broader body bound.
+"Don't assume anything of your reader. Also, main messages with a '... are not x' negation is bad form.
+You really overuse negations within positive statements throughout. Constraints, assumptions and
+limitations are better packaged up in a specific paragraph or section rather than being injected
+repeatedly throughout the text. This is a general writing problem that will need fixing when we get back
+to the prose."
 
-**The oldest maximum (515.5 Ma) fits as well.** "Not hard limits" covers it, because its preservation
-argument cannot be quantified, so nothing establishes it as a hard limit either.
-
-**The diagnostic delay is not in the 25 words.** It is the second route to older clocks, carried in the
-abstract and the Results. One message, one hinge: recording.
-
-## Consistency
-
-The abstract's last sentence (`02-abstract.md`) should restate this message when the abstract is
-rebuilt.
+1. **State findings positively.** Avoid "not x" and "rather than" inside claims.
+2. **Gather the conditions in one place.** Constraints, assumptions and limitations go in one dedicated
+   paragraph or section; the claims elsewhere stay clean.
+3. **Assume nothing of the reader.** Define each term at first use, or replace it with plain words.
