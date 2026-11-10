@@ -3,6 +3,20 @@
 Dated record of decisions that shape the programme. Newest first. Say who decided, and quote
 Barry exactly (with source) or label a paraphrase.
 
+## 2026-11-10: target journal for the F3 article (Barry; Claude)
+
+- **Target: *Proceedings of the Royal Society B*** (Barry, chat, 10 November 2026: "Proc B then, I
+  agree. That feels right, and will stop us wasting time at the other venues. Still a good
+  contribution, but I think our later work on the Silurian Plants repo has more chance of
+  harder-hitting novelty/innovation."). Claude had argued for *PNAS* (where Morris et al. 2018
+  appeared) and then conceded that, without an estimate of the earlier-to-later recording contrast,
+  the result is a price on older clocks rather than an answer. That estimate (Macrostrat rock and
+  palynological sampling, Late Ordovician–Llandovery against Wenlock–Ludlow) is noted as a candidate
+  for later work, not added to F3.
+- **Consequences for the supervisor round:** fit the article to Proc B's format; state the main
+  message (the maxima that divide clocks are conditional on assumed recording, or untestable) in the
+  abstract and the brief's first finding; add a concrete recommendation for clock builders.
+
 ## 2026-11-08: follow-up implementation and cross-product reconciliation (Codex)
 
 Barry relayed Claude's `8a2194e` handoff. Codex completed F1/F9/F10/F12 and C47 verification,
