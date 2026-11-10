@@ -1,6 +1,6 @@
-# Reconstruction step 4: display items
+# Reconstruction step 1d: display items
 
-Main message (step 3): *The fossil record supports a young origin of land plants only if the earliest
+Main message (1c): *The fossil record supports a young origin of land plants only if the earliest
 plants were fossilised and found as often as later ones.*
 
 ## Budget
@@ -40,7 +40,7 @@ plants were fossilised and found as often as later ones.*
   H1.
 - **Figures take over from tables wherever a pattern matters more than exact values.** The exact
   values move to the Supplement and stay bound to the ledger.
-- **Fig. 4b is the figure a clock builder would reuse.** It is the "application" answer from step 1.
+- **Fig. 4b is the figure a clock builder would reuse.** It is the "application" answer from 1a.
 - **Risk:** Fig. 1 at three panels is dense. If it crowds, the map moves into Fig. 3 as context for
   Libya and Oman.
 

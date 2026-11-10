@@ -1,6 +1,6 @@
-# Reconstruction step 2: abstract (under 150 words)
+# Reconstruction step 1b: abstract (under 150 words)
 
-Built from `01-working-abstract.md`. Word count 149 (`wc -w`). It can grow to Proc B's 200-word limit.
+Built from `1a-working-abstract.md`. Word count 149 (`wc -w`). It can grow to Proc B's 200-word limit.
 Every number comes from the ledger: C27 (429), C48 (8–12), C40 and C28 (Oman, 455.2 against
 434.5 Ma), C33 (444–452).
 
@@ -30,6 +30,6 @@ limit: each assumes a recording history clocks should state.
   first.
 - **"8–12 times" assumes no diagnostic delay;** the clause "or a delay…" carries that condition.
 - **The Oman result is the land-plant body bound (B0), not the vascular-plant bound (B2).** The draft of
-  step 1 conflated the two; it has been corrected.
+  1a conflated the two; it has been corrected.
 - **The closing sentence is the main message from 10 November**, recast as a recommendation to clock
   builders.

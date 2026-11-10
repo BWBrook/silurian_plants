@@ -1,4 +1,4 @@
-# Reconstruction step 3: main message (25 words or fewer)
+# Reconstruction step 1c: main message (25 words or fewer)
 
 > The fossil record supports a young origin of land plants only if the earliest plants were fossilised and found as often as later ones.
 

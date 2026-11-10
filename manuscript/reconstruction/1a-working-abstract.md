@@ -1,4 +1,4 @@
-# Reconstruction step 1: working abstract
+# Reconstruction step 1a: working abstract
 
 Not for submission. This is a reference point for rebuilding the F3 article from first principles,
 following Barry's method (chat, 10 November 2026). Drafted by Claude Opus 5.5 from `main` at `f490c44`.
