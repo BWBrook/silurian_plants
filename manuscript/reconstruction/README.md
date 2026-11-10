@@ -133,4 +133,12 @@ body-size and tissue traits as recording mechanisms (attached to the body compar
 transfer to other absence-based maxima. Simulation coverage moves to the supplement. Counts: 272, 295,
 290 and 292 words; claims check 0 errors. Step 3a is locked as a draft.
 
-Next: Barry — instructions for the next expansion stage (3b).
+## Step 3b: paragraph abstracts (Claude draft, 10 November 2026)
+
+`3b-paragraph-abstracts.md`: 26 paragraphs (Introduction 5, Material and methods 8, Results 8,
+Discussion 6), each with a one-sentence key message, order and coverage checks against 3a, and an
+abstract of 3–4 sentences with citation signposts. The signposts use 34 existing references and 14
+candidates whose DOIs were checked against Crossref; candidates are to be read before citing. Claims
+check: 0 errors.
+
+Next: Codex — review step 3b.
