@@ -31,13 +31,13 @@ millions of years; western Europe's terrestrial deposits are scarce before the l
 We examine maxima of 515.5 and 459.1 Ma for living land plants and 431.2 Ma for living vascular plants,
 through three retrospective questions with theory-based expectations.
 
-What evidence and ancestral links underlie each maximum? Absence-based maxima require documented
+1. What evidence and ancestral links underlie each maximum? Absence-based maxima require documented
 opportunities for delivery, preservation and discovery.
 
-What sustained older spore encounter does one Libyan basin allow? With comparable exposure,
+2. What sustained older spore encounter does one Libyan basin allow? With comparable exposure,
 accumulating zeros increasingly constrain high encounter, while permitting lower delivery or input.
 
-Which earlier recording rates (identifiable finds per unit time) or delays permit older vascular-plant
+3. Which earlier recording rates (identifiable finds per unit time) or delays permit older vascular-plant
 ancestors? At fixed oldest age, study-window endpoint and recording history, additional independent
 finds narrow the start bound; reducing earlier recording extends it.
 
@@ -57,46 +57,48 @@ preparation. Shared well effects and uniform within-stage ages enter the model. 
 declared simulation grid with coverage floor 0.93.
 
 **Body record.** Classified Paleobiology Database occurrences and source-reviewed early records span
-453–393 Ma. Locality–age groups proxy independent fossil horizons. Three nested categories retain
+453–393 Ma. Locality–age groups stand in for independent fossil horizons. Three nested categories retain
 competing readings. Crown vascular plants comprise the lycophyte and fern–seed-plant lineages; their
 category supplies [50]{.C25} possible units, [48]{.C25} certain within the analysis window.
 
 For fixed relative recording rate $w$, define $U(a)=\int_c^a w(s)\,ds$ above the Emsian-end cutoff
 $c=393.47$ Ma. The one-sided 95% older bound $T$ on record start solves
-$U(T)=U(A)\,0.05^{-1/n}$. Age ranges enter through the greatest possible oldest age $A$ and minimum
+$U(T)=U(A)\,0.05^{-1/n}$; constant $w$ gives the classical stratigraphic confidence interval (Strauss &
+Sadler 1989; Marshall 1990). Age ranges enter through the greatest possible oldest age $A$ and minimum
 guaranteed count $n$.
 
 Six fixed histories use constant recording, two collection-density proxies, exponential declines into
 the past over 25 or 10 Myr, and plant-excluded density multiplied by the 10 Myr decline. A
-retrospective step lowers earlier recording before [426.7]{.C32} Ma. Its contrast and an assumed delay
-connect record start to candidate ancestor ages. Conditional Kolmogorov–Smirnov tests search
+retrospective step lowers earlier recording before [426.7]{.C32} Ma; the later-to-earlier rate ratio
+that places record start at a candidate ancestor age is its recording contrast. An assumed diagnostic
+delay offers a second route from record start to ancestor age. Conditional Kolmogorov–Smirnov tests search
 admissible age allocations and cutoff-inclusion states for each history's fit.
 
 ## Results
 
 **Calibration evidence.** The 515.5 Ma absence argument uses older marine algal cysts as a preservation
 control; spore delivery and searching remain unquantified. [Three]{.C15} examined sources assign
-Cambrian spore-like packets to algae or pre-land-plant lineages. Swedish definite triletes yield 459.1 Ma under a
-stage-base-plus-uncertainty rule. Irish *Cooksonia* anchors the 431.2 Ma maximum; the Czech candidate
-*C. barrandei* gives that rule's current-scale outer value of [434.1]{.C47} Ma.
+Cambrian spore-like packets to algae or pre-land-plant lineages. Hooper et al. key 459.1 Ma to a possible
+Swedish trilete; definite triletes from that stage give the same value under their
+stage-base-plus-uncertainty rule. Irish *Cooksonia* anchors the 431.2 Ma maximum; the older Czech
+*C. barrandei*, with the same characters, gives [434.1]{.C47} Ma on the current timescale.
 
 **Libyan spores.** Triletes occur in [51 of 59]{.C02} reference cuttings and zero of [28]{.C01} older
 cuttings. At 459.1 Ma and equal delivery, upper compatibility limits are [0.091]{.C24} for constant
 input and [0.184]{.C24} for exposure-weighted mean input over bounded variable histories, relative to
 reference input. Delivery at a tenth of the reference permits constant input near reference
-([0.910]{.C24}). [18]{.C45} older cuttings lie wholly younger than 459.1 Ma.
+([0.910]{.C24}). Most older exposure comes from [18]{.C45} cuttings wholly younger than 459.1 Ma, so
+these limits chiefly concern the later Ordovician.
 
 **Vascular-plant bodies.** The primary bounds are [428.8]{.C27 .V003} Ma under constant recording,
 [428.5]{.C27 .V010}–[428.9]{.C27 .V009} Ma tracking collection density and [431.6]{.C27 .V011} Ma under
 the 25 Myr decline. The pure 10 Myr decline leaves record start unresolved through 469.4 Ma and fails
 the conditional shape diagnostic under every admissible age allocation[]{.C49}. Coarser or curated
 units give [432.4–434.05]{.C30} Ma; tested shared-boundary scenarios give
-[427.31]{.C50 .V062}–[430.42]{.C50 .V063} Ma. Matched exact-age simulations give coverage
-[0.941–0.958]{.C34}. With constant later recording, the primary step gives 431.0 Ma when earlier
-recording is halved. With zero assumed diagnostic delay,
+[427.31]{.C50 .V062}–[430.42]{.C50 .V063} Ma. Halving earlier recording in the primary step gives 431.0 Ma. With zero assumed diagnostic delay,
 candidate ancestors at 444–452 Ma require earlier recording [8]{.C48 .V054}–[12]{.C48 .V055} times
-lower, or [2.4]{.C48 .V056}–[4.5]{.C48 .V057} times with alternative units. Under constant recording,
-minimum assumed delays of [15–23]{.C33} Myr provide another route.
+lower, or [2.4]{.C48 .V056}–[4.5]{.C48 .V057} times with alternative units. Alternatively, constant recording
+needs assumed delays of at least [15–23]{.C33} Myr.
 
 **Land-plant bodies.** Adding Oman's sporangial fragments (spore capsules) moves the broader category's
 constant-rate bound from [434.5]{.C28} to [455.2]{.C40 .V022} Ma. All six fixed histories then fail the
@@ -106,18 +108,19 @@ conditional shape diagnostic[]{.C49}.
 
 The record constrains sustained local trilete input in one polar basin and the start of recognisable
 vascular-plant bodies. Lower spore delivery or producers outside the catchment accommodate older
-ancestors in the first comparison. Lower earlier body recording or later acquisition of diagnostic
-features accommodate them in the second. Rarity, restricted distributions, preservation and searching
-can affect recording; the analysis leaves their biological plausibility open.
+ancestors in the first comparison. Lower earlier body recording or later diagnostic features
+accommodate them in the second. Rarity, restricted ranges, limited searching and small bodies lacking
+cuticle or lignified tissue, traits that evolved along the dated lineages, all lower recording; their
+plausibility stays open.
 
 Silvestro et al. (2015) estimated a vascular-plant origin near 433.5 Ma using genus occurrences and
-fitted preservation. Their genus-origin estimates and our fixed-history category bounds target
-different quantities, using overlapping data. CladeDate constructs calibration densities from fossil
-times; our analysis quantifies requirements behind specific maxima and compatible histories.
+fitted preservation. Their genus-origin estimates and our category bounds target
+different quantities from overlapping data. CladeDate builds calibration densities from fossil
+times; we quantify what specific maxima require.
 
 **Conditions.** Spore limits assume an indigenous younger reference, comparable reporting, uniform
 within-stage ages and independence given a shared well effect. Well–formation block weighting gives
-an exploratory comparison contour near [0.4]{.C51 .V081}, whose coverage remains unqualified.
+an unqualified exploratory contour near [0.4]{.C51 .V081}.
 Mapping this local encounter to ancestors requires
 recognisable spore production, trait persistence and catchment occupancy. Body bounds assume
 independent locality–age proxies, true ages within recorded ranges and specified recording histories.
@@ -129,7 +132,8 @@ stated effort, a second complete older-zero and later-positive spore sequence ou
 finer ages for the oldest vascular-plant horizons, and characters placing the oldest branched plants.
 
 Clock builders can state each maximum's character, geographical and recording assumptions and justify
-probability assigned to ages beyond it. Older dates for living land plants fit the fossil record if
+probability assigned to ages beyond it; this separation of evidence, recording and mapping applies to
+any absence-based maximum. Older dates for living land plants fit the fossil record if
 early plants were found several times less often, or recognisable features evolved later.
 
 ---
@@ -153,6 +157,15 @@ early plants were found several times less often, or recognisable features evolv
 - **Expectations, not predictions.** The Introduction's theory-based expectations accompany
   retrospective questions. The encounter expectation requires comparable exposure; the range-count
   expectation fixes the oldest age, cutoff and recording history.
+- **Claude's reconciliation (10 November 2026).** Codex's repairs are accepted: the age-envelope rule,
+  the two distinct Libyan limits, separate spore and body mappings, the 0.977 result moved to the
+  supplement as this project's reanalysis, and domains for the open bound and failed histories.
+  Restored for a new reader: numbered questions; the classical stratigraphic interval as the method's
+  anchor; a definition of recording contrast; Hooper's keying of 459.1 Ma to the possible trilete;
+  why the 18 younger cuttings matter; body-size and tissue traits as recording mechanisms, attached to
+  the body comparison only; and the transfer to other absence-based maxima. Simulation coverage moves
+  to the supplement, as Codex suggested when space is short. Word counts (whitespace): 272, 295, 290,
+  292.
 - **Placement resolved for reconciliation:** calibration findings stay in Results; Methods states the
   audit protocol. Keep the shape-diagnostic finding: the absence of an older bound under a history
   differs from that history's agreement with the observed age sequence.

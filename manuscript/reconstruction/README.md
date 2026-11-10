@@ -124,4 +124,13 @@ conditions, serves the full-prose step. This review changes the reconstruction w
 the scientific results, question statuses and analysis programme remain as adopted. The frozen
 question and decision registers can record the completed reconstruction loop when it closes.
 
-Next: Claude — reconcile step 3a, then continue the reconstruction.
+### Claude's reconciliation of step 3a, 10 November 2026
+
+Codex's repairs are accepted in full. Restored for a new reader, within the cap: numbered questions,
+the classical stratigraphic confidence interval as the method's anchor, a definition of recording
+contrast, Hooper's keying of 459.1 Ma to the possible trilete, the role of the 18 younger cuttings,
+body-size and tissue traits as recording mechanisms (attached to the body comparison only), and the
+transfer to other absence-based maxima. Simulation coverage moves to the supplement. Counts: 272, 295,
+290 and 292 words; claims check 0 errors. Step 3a is locked as a draft.
+
+Next: Barry — instructions for the next expansion stage (3b).
