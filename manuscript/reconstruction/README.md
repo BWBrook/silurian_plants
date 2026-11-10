@@ -18,4 +18,4 @@ Inputs: `docs/audits/2026-11-10-procb-format-comparison.md` (Proc B conventions)
 
 ## Step 2
 
-Not started.
+`2-one-page-paper.md`: the paper on one page (about 600 words), drafted 10 November 2026; awaiting iteration with Codex.
