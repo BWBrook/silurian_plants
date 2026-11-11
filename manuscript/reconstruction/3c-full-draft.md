@@ -392,9 +392,10 @@ This research received no specific funding.
 - **Half-rate bound.** Now ledger claim C53, binding V108 (430.9800119 Ma, `suppression_sensitivity.csv`,
   step at 426.7 Ma, multiplier 0.5). Codex checked the closed form on 10 November; Claude recomputed it on
   11 November: $U(A)=33.23$, $U(T)=33.23\times20^{1/48}=35.37$, so $T=426.7+2(35.37-33.23)=430.98$.
-- **References.** Claude reports that the 3b candidates were read before citing. Codex read Yang and
-  Rannala, and Parham et al., in its 3b review; Claude reports a delegated read of the other 11
-  (`gpt-6.1-sol` with web search, legitimately hosted copies only). Claude checked four of the quotes it
+- **References.** The 3b candidates were read before citing. Codex read Yang and Rannala, and Parham et
+  al., in its 3b review; a delegated Codex job read the other 11 (`gpt-6.1-sol` with web search,
+  legitimately hosted copies only; receipt in `docs/audits/2026-11-11-3c-reference-reads.md` with its
+  prompt and JSON output). Claude checked four of the quotes it
   returned verbatim against the source PDFs
   (Steemans, dos Reis, Benton, Peters) and rewrote each sentence to the scope the source supports: Ho and
   dos Reis now support calibration sensitivity in the Introduction; Kenrick and Crane support stepwise
@@ -404,9 +405,8 @@ This research received no specific funding.
   Hooper et al. Twelve DOIs were added to `references/dois.txt`; existing entries are unchanged.
   Codex's 3c review independently checked targeted original material for Benton and Donoghue, dos Reis
   et al., Kenrick and Crane, and Brown and Smith, with the scope and access limits in
-  `codex-3c-argument-check.md`. The separate eleven-source job receipt was not located in the bounded
-  repository search; preserving its source URLs, sections and claim scopes remains a provenance task
-  for the reconciliation.
+  `codex-3c-argument-check.md`. The receipt records each source's copy, URL, sections read, verdict and
+  claim scope.
 - **Codex review.** The scientific and source checks are `codex-3c-science-check.md` and
   `codex-3c-argument-check.md`. They confirm C53 and preserve the lean length. The revisions define
   the potential screen, restore the 429 Ma older-bound meaning, distinguish a passing age allocation
@@ -414,6 +414,14 @@ This research received no specific funding.
   dependence comparisons as unqualified. Region/Yea details and the illustrative 20 Myr delay remain
   in the supplement. Figure captions retain the contracts for statistical meaning, age envelopes and
   retrospective contrasts; figures remain to be built.
+- **Claude's reconciliation (11 November 2026).** All of Codex's 3c repairs are accepted: 429 Ma
+  restated as an older confidence bound, the potential screen and acceptance rule defined, the
+  25 Myr result stated as a witness allocation, the containment condition stated with its α + δ size
+  bound, all dependence comparisons labelled unqualified, the Oman gap dropped as a cause, scoped
+  claims for the 515.5 Ma evidence, Brown and Smith's effective-prior comparison, the regional scope
+  of deposit scarcity, and the source-access wording. Claude checked the Gamma(2, 2) shared-well
+  effect against `models/f3/envelope.py` and `cluster_k=2.0` in `m2_results.csv`. Step 3c is locked as
+  a draft.
 - **End matter.** The AI-use statement credits recorded systems and tasks and keeps Barry's final
   review prospective. Funding follows Barry's chat reply, 11 November 2026: "No specific funding for
   this project."

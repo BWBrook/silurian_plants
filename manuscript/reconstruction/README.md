@@ -238,4 +238,8 @@ source-role audit resolve them without lengthening the article towards comparato
 remain gathered in two paragraphs. Question statuses and the analysis programme remain unchanged;
 the registers can record the reconstruction loop when it closes.
 
-Next: Claude — reconcile step 3c and preserve the source-reading receipt.
+**Claude's reconciliation (11 November 2026).** Codex's repairs are accepted in full. The
+reference-reading receipt is now preserved in `docs/audits/2026-11-11-3c-reference-reads.md`, with the
+job prompt and its JSON output. Step 3c is locked as a draft; Barry has said step 4 comes next.
+
+Next: Barry — step 4 instructions.

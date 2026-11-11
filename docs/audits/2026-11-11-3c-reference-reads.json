@@ -1,0 +1,136 @@
+{
+  "items": [
+    {
+      "id": "lenton2012",
+      "doi": "10.1038/ngeo1390",
+      "accessed": "full_text_open",
+      "sections_read": "Author-posted published text: pp. 86–88, including Weathering experiments, Effects of plant colonization, Phosphorus weathering, and Figures 1–3.",
+      "verdict": "supports",
+      "support_location": "Weathering experiments and Effects of plant colonization, pp. 87–88; Figures 2–3. [Author-posted text](https://www.researchgate.net/publication/220023048_First_plants_cooled_the_Ordovician).",
+      "paraphrase": "Experiments with a modern moss demonstrate enhanced silicate weathering, and model simulations suggest that early non-vascular vegetation could have lowered atmospheric CO2 and global temperature. Changing the assumed timing of colonisation changes the simulated timing of cooling.",
+      "short_quote": "Moss enhances the weathering of Al, Ca, Fe, K and Mg from silicates.",
+      "needed_qualification": "",
+      "suggested_sentence": "Early non-vascular plants may have enhanced silicate weathering and contributed to Ordovician cooling, so the timing of land-plant origins bears on Earth-system history."
+    },
+    {
+      "id": "benton2007",
+      "doi": "10.1093/molbev/msl150",
+      "accessed": "full_text_open",
+      "sections_read": "Introduction; The Nature of Minimum Constraints and the Need for Maximum Constraints, pp. 28–29; Figure 1 and its caption.",
+      "verdict": "partly_supports",
+      "support_location": "The Nature of Minimum Constraints and the Need for Maximum Constraints, pp. 28–29; Figure 1. [University-hosted published text](https://bpb-eu-w2.wpmucdn.com/blogs.bristol.ac.uk/dist/3/589/files/2019/08/Benton__Donoghue_2007.pdf).",
+      "paraphrase": "The authors combine phylogenetic bracketing with absence from underlying deposits expected to preserve the lineage. They discuss ecological distribution, facies, exposure and preservation of anatomically similar organisms as evidence informing recovery potential.",
+      "short_quote": "absence of fossils from underlying deposits",
+      "needed_qualification": "Replace 'oldest well-sampled rocks' with suitable older deposits, particularly the next older relevant fossil horizon. Describe a soft maximum and acknowledge that phylogenetic evidence also contributes.",
+      "suggested_sentence": "A fossil-based soft maximum on a divergence can be justified by the lineage’s absence from suitable older fossiliferous deposits, informed by phylogenetic relationships and evidence that comparable organisms could be preserved."
+    },
+    {
+      "id": "ho2009",
+      "doi": "10.1093/sysbio/syp035",
+      "accessed": "full_text_open",
+      "sections_read": "Discussion of calibration constraints and parametric prior distributions, pp. 370–373; interactions among priors, pp. 374–375; Case Study: Avian Diversification and Concluding Remarks, pp. 376–377; Figures 2–5.",
+      "verdict": "partly_supports",
+      "support_location": "Soft-bound and parametric-distribution discussions, pp. 371–372, Figure 2; avian case study, pp. 376–377, Figure 5. [University-hosted published text](https://www2.gwu.edu/~clade/bisc%20207/Ho_%26_Phillips_2009_Calibration_Uncertainty.pdf).",
+      "paraphrase": "The paper explains how calibration distributions encode uncertainty, including declining probability beyond soft bounds. Its avian example produces substantially different divergence estimates and uncertainty intervals under different calibration treatments, although it does not isolate maximum-tail shape as the sole cause.",
+      "short_quote": "they add a diminishing tail of probability beyond the bound",
+      "needed_qualification": "Specify a soft maximum: hard maxima have no probability beyond them. Use 'can strongly influence'; the demonstrated sensitivity concerns calibration treatments broadly.",
+      "suggested_sentence": "The representation of calibration uncertainty, including prior-distribution shape and probability assigned beyond soft maximum bounds, can strongly influence estimated divergence times."
+    },
+    {
+      "id": "dosreis2016",
+      "doi": "10.1038/nrg.2015.8",
+      "accessed": "accepted_manuscript",
+      "sections_read": "Limits of Bayesian divergence time estimation, manuscript PDF pp. 6–7; relevant Challenges discussion, PDF pp. 11–12; Figures 1–2 and captions.",
+      "verdict": "partly_supports",
+      "support_location": "Limits of Bayesian divergence time estimation; Figure 2 caption. [UCL self-archived manuscript](https://discovery.ucl.ac.uk/id/eprint/1473649/1/PRR_dos_Reis_in_revision_1445434492_78-for-self-archiving.pdf).",
+      "paraphrase": "With calibration information held fixed, increasing sequence data does not eliminate uncertainty in absolute divergence times. The review reports datasets where calibration uncertainty dominates, while emphasising that priors on both times and evolutionary rates remain influential.",
+      "short_quote": "most of the uncertainty in the posterior time estimates is due to uncertain calibrations",
+      "needed_qualification": "Avoid presenting calibration dominance as inevitable for every dataset or clock estimate. Restrict the statement to absolute divergence times and retain the role of rate-model assumptions.",
+      "suggested_sentence": "With sufficiently large sequence datasets, uncertainty in absolute divergence-time estimates can be dominated by fossil calibrations, while priors on times and evolutionary rates remain influential."
+    },
+    {
+      "id": "brown2018",
+      "doi": "10.1093/sysbio/syx074",
+      "accessed": "full_text_open",
+      "sections_read": "Author-posted advance-publication version: abstract and introduction, p. 1; Priors and Posteriors: A Diptych in Three Parts; discussion of parametric calibration distributions; Figures 2–3 and captions.",
+      "verdict": "supports",
+      "support_location": "Abstract and introduction; Priors and Posteriors: A Diptych in Three Parts; discussion of calibration-prior interactions. [Author-posted published text](https://www.researchgate.net/publication/319575442_The_Past_Sure_is_Tense_On_Interpreting_Phylogenetic_Divergence_Time_Estimates).",
+      "paraphrase": "The authors show that fossil-calibration densities and the tree prior can interact to constrain inferred ages strongly, sometimes with little change between marginal prior and posterior distributions. They recommend comparing those distributions to assess what the molecular data actually contribute.",
+      "short_quote": "marginal prior and posterior distributions be carefully compared",
+      "needed_qualification": "",
+      "suggested_sentence": "Divergence-time estimates depend on calibration and model choices, and their reported uncertainty should be interpreted in that light."
+    },
+    {
+      "id": "rubinstein2010",
+      "doi": "10.1111/j.1469-8137.2010.03433.x",
+      "accessed": "full_text_open",
+      "sections_read": "Summary, p. 365; stratigraphic and sampling account, pp. 366–367; cryptospore descriptions and Figure 2; Discussion, p. 368.",
+      "verdict": "partly_supports",
+      "support_location": "Summary, p. 365; stratigraphic assignment, p. 367; Discussion, p. 368. [Publisher-hosted text](https://onlinelibrary.wiley.com/doi/pdfdirect/10.1111/j.1469-8137.2010.03433.x).",
+      "paraphrase": "The paper reports cryptospores from Argentina’s Zanjón Formation, assigned an early to middle Dapingian age using associated palynomorphs. The authors interpret them as the earliest evidence then known of plants on land.",
+      "short_quote": "are currently the earliest evidence of plants on land",
+      "needed_qualification": "The paper supports the occurrence, age assignment and authors’ earliest-record interpretation; it does not establish subsequent or present-day consensus implied by 'widely accepted'.",
+      "suggested_sentence": "Rubinstein et al. reported cryptospores from Dapingian deposits in Argentina and interpreted them as the oldest known evidence of land plants."
+    },
+    {
+      "id": "steemans2009",
+      "doi": "10.1126/science.1169659",
+      "accessed": "full_text_open",
+      "sections_read": "Complete one-page article, p. 353, including Figure 1 and its caption.",
+      "verdict": "supports",
+      "support_location": "Main text, p. 353: Qusaiba-1 corehole stratigraphy, spore assemblages and vascular-plant interpretation; Figure 1. [Ghent University repository copy](https://biblio.ugent.be/publication/697223/file/709198.pdf).",
+      "paraphrase": "The authors report diverse trilete spores from Katian deposits in northern Saudi Arabia, then part of Gondwana. They interpret these as possible evidence of early vascular-lineage diversification, while acknowledging that some living bryophytes also produce trilete spores.",
+      "short_quote": "Trilete spores are generally considered to derive from the vascular plant lineage",
+      "needed_qualification": "",
+      "suggested_sentence": "Trilete spores, often attributed to vascular plants or their ancestors, appear in Late Ordovician Gondwanan rocks."
+    },
+    {
+      "id": "kenrick1997",
+      "doi": "10.1038/37918",
+      "accessed": "full_text_open",
+      "sections_read": "Opening synthesis and fossil-record discussion, pp. 33–34; Building a land plant; Box 1 and its phylogeny, p. 34; Box 2 and morphological discussion, p. 36.",
+      "verdict": "supports",
+      "support_location": "Box 1, p. 34, especially the placement of Aglaophyton and Horneophyton between bryophytes and vascular plants; Building a land plant, pp. 34–36. [University-hosted published text](https://blog.richmond.edu/paleontology/files/2008/03/nature-evol-plants-kendrickcrane1997.pdf).",
+      "paraphrase": "The phylogenetic synthesis nests vascular plants within land plants and places fossils with branched, independent sporophytes below plants possessing fully differentiated tracheids. These combinations support successive acquisition of characteristic vascular-plant features.",
+      "short_quote": "a branched, nutritionally independent sporophyte",
+      "needed_qualification": "",
+      "suggested_sentence": "Phylogenetic analysis places vascular plants within the land plants, with characters such as branched sporophytes and vascular tissue acquired stepwise along the lineage."
+    },
+    {
+      "id": "peters2018",
+      "doi": "10.1029/2018GC007467",
+      "accessed": "full_text_open",
+      "sections_read": "Abstract and Introduction; sections 2.1–2.2 on units and columns; geological-map integration; section 5, Example Results and Future Directions; Figures 2 and 6–7.",
+      "verdict": "partly_supports",
+      "support_location": "Introduction; sections 2.1–2.2 and geological-map integration; section 5 and Figure 7. [Author-hosted published text](https://strata.geology.wisc.edu/reprints/Peters_etal_2018.pdf).",
+      "paraphrase": "Macrostrat links rock-unit ages, locations, lithologies, thicknesses and inferred depositional environments, supporting analyses of rock quantity through time. Its records include subsurface rocks, and the paper documents substantial geographical limitations.",
+      "short_quote": "estimating rock quantities and ages",
+      "needed_qualification": "The proposed application is an inference. Distinguish terrestrial depositional environments from continental location, and treat rock quantity as a proxy rather than a direct measurement of exposed, accessible or previously searched rock.",
+      "suggested_sentence": "Macrostrat compiles rock-unit ages, locations and geological attributes, which could provide proxies for terrestrial sedimentary-rock availability through time where coverage and environmental assignments permit."
+    },
+    {
+      "id": "cohen2013",
+      "doi": "10.18814/epiiugs/2013/v36i3/002",
+      "accessed": "full_text_open",
+      "sections_read": "Abstract and Introduction, p. 199; Figure 1; The times they are changing and Updates and source data, pp. 202–203.",
+      "verdict": "supports",
+      "support_location": "Abstract, p. 199; The times they are changing and Updates and source data, pp. 202–203. [Utrecht University repository copy](https://dspace.library.uu.nl/bitstream/handle/1874/289106/CohenICSInternationalChronostratigraphicChart.pdf).",
+      "paraphrase": "The paper describes ICS production and dissemination of the chart, including stage divisions and calibrated numerical boundary ages. It explicitly explains annual or more frequent updates and year/month version numbering.",
+      "short_quote": "be updated annually and on occasions even more often",
+      "needed_qualification": "",
+      "suggested_sentence": "The International Commission on Stratigraphy publishes and periodically updates the International Chronostratigraphic Chart of stage boundaries and their numerical ages."
+    },
+    {
+      "id": "gradstein2012",
+      "doi": "10.1016/C2011-1-08249-8",
+      "accessed": "abstract_only",
+      "sections_read": "Limited book access: front matter and publisher description/contents; Chapter 28 abstract and outline, p. 855. Also read the official GTS2012 companion wallchart. The relevant numerical-uncertainty tables were not accessible.",
+      "verdict": "partly_supports",
+      "support_location": "Numerical boundary ages are visible on the [official companion wallchart](https://timescalefoundation.org/charts/GTS2012_Wallchart.pdf). The [accessible chapter preview](https://www.researchgate.net/profile/Robert-Speijer/publication/236611297_The_Paleogene_Period/links/5a1fb8bc0f7e9b9d5e02c3b4/The-Paleogene-Period.pdf) contains only p. 855 and does not verify the uncertainty claim.",
+      "paraphrase": "The companion chart supplies numerical ages alongside stage boundaries. The book material I could read does not expose the boundary-age uncertainty tables, so that part of the proposed sentence remains unverified.",
+      "short_quote": "",
+      "needed_qualification": "Numerical ages are directly verified from the companion chart; uncertainties require inspection of the relevant book tables. This access limitation does not establish that the book lacks uncertainties.",
+      "suggested_sentence": "The Geologic Time Scale 2012 companion chart gives numerical ages for stage boundaries."
+    }
+  ]
+}
