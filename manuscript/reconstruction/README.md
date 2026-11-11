@@ -3,7 +3,7 @@
 Barry's method for rebuilding a paper after its first draft (chat, 10 November 2026). The files form a
 working reconstruction. Claude's first version of steps 1–2 is preserved at `1fe577c`; those steps have
 been reconciled and Barry adopted their main message at `0306623`. Step 3a is reconciled at `dabd5b9`;
-Codex's step 3b revision awaits Claude's reconciliation before the next reconstruction step. The target remains
+Step 3b is reconciled and locked as a draft; step 3c awaits Barry's guidance. The target remains
 *Proceedings of the Royal Society B*. AI byline wording remains a placeholder for the submission phase.
 
 ## Steps 1–2
@@ -176,4 +176,10 @@ attached to its case and each mechanism distinct from the aggregate contrast. Se
 and sensitivity paragraphs preserve the conclusion-changing unit result. Question statuses and the
 analysis programme remain unchanged; the registers can record the reconstruction loop when it closes.
 
-Next: Claude — reconcile step 3b before expanding the full prose.
+**Claude's reconciliation (11 November 2026).** Codex's repairs are accepted in full. M7 keeps the
+operational rejection rule; its independence and support-containment conditions join D4's body
+conditions. Claude's draft miscounted its own framework as 26 paragraphs; there are 27. Step 3b is
+locked as a draft. Barry, via the Board, 11 November 2026: "await my guidance for step 3c before
+expanding the prose."
+
+Next: Barry — guidance for step 3c.

@@ -180,10 +180,8 @@ greatest possible oldest age and the minimum count guaranteed inside the window.
 declines into the past over 25 or 10 Myr, and plant-excluded density times the 10 Myr decline.
 The collection proxies count Paleobiology Database land and marginal-marine collections per Myr,
 including or excluding plant matches. Finite-sample Kolmogorov–Smirnov tests condition on count
-and oldest find, searching every admissible age allocation and cutoff-inclusion state.
-Conservative rejection of that fixed history for this diagnostic requires failure throughout
-those supports, independent continuous ages, and supports containing the true ages and inclusion
-state with probability one under the observation model.
+and oldest find, searching every admissible age allocation and cutoff-inclusion state. A history
+that fails under every allocation and state is rejected for this diagnostic.
 [@marshall1997ConfidenceIntervalsStratigraphic; S5.2 for the support-containment argument;
 @berger1994PValuesMaximized as a related nuisance-parameter method]
 
@@ -347,9 +345,10 @@ record.
 within-stage ages, and cuttings independent given a well effect. Weighting cuttings by well and
 formation gives an exploratory contour near [0.4]{.C51 .V081}, with coverage unqualified.
 Mapping local encounter to ancestors requires recognisable trilete production, persistence of
-the trait and producers in the catchment. The body bounds assume independent units, true ages
-within recorded ranges and the stated histories; the rate step is retrospective, and mapping
-bodies to ancestors requires crown membership and a specified diagnostic delay.
+the trait and producers in the catchment. The body bounds and shape rejections assume
+independent units with continuous ages, recorded supports that contain each true age and inclusion state,
+and the stated histories; the rate step is retrospective, and mapping bodies to ancestors
+requires crown membership and a specified diagnostic delay.
 [Table 2 (optional); @hooper2026ReconstructingSporeEvolution; S2.5; S5; S6]
 
 **D5.** Four kinds of published evidence would narrow these histories. Searched Silurian
@@ -413,6 +412,17 @@ often, or recognisable features evolved later.
     evidence that would sharpen the results. Base treatments remain explicit in Methods; Conditions
     gathers their inferential limits. The support-containment argument in M7 is this study's own
     justification, with Berger and Boos signposted as related work.
+- **Claude's reconciliation (11 November 2026).** All of Codex's repairs are accepted: the
+  screened two-stage qualification rule, locality–age groups as proxies, the minimum guaranteed
+  count, case labels on the unit and timescale results, the zero-delay scope of the contrasts, the
+  R4 correction (Darriwilian supports extend before 459.1 Ma; their exposure depends on the
+  within-stage treatment), I2's soft-prior definition, and aggregate rather than per-mechanism
+  sizing in D1–D2. One change: M7 now states the operational rejection rule, and its independence
+  and support-containment conditions move to D4, under Barry's rule that conditions gather in one
+  place. Claude's draft said 26 paragraphs; its framework already had 27. Checked against the
+  frozen text and ledger: the ten Darriwilian cuttings come from two wells (C45; `main.md`), and
+  Hooper's 55 Myr shift is in the frozen Introduction. For the prose: define the potential screen
+  in M4 at first use, or move the term to S2. Step 3b is locked as a draft.
 - **Pending full prose.** Bind the independently checked half-rate value in the ledger before using
   it in a canonical product. Preserve the domain and case labels in the body sensitivities and
   distinguish aggregate scenario requirements from separately measured biological mechanisms.
