@@ -376,6 +376,8 @@ This research received no specific funding.
 
 ## Figure legends
 
+![](figures/fig1_dispute.png)
+
 **Figure 1.** The dating dispute and its fossil evidence. Upper bars give dates for the ancestor of
 living land plants; the next group gives living vascular plants. Morris et al.'s bars envelope 95%
 highest posterior density (HPD) intervals across seven tree topologies; Harris et al. and Hooper et al.
@@ -390,14 +392,18 @@ compilation reading, possible and definite Borenshult triletes [@rubinstein2019B
 Oman's sporangial fragments [@wellman2003FragmentsEarliestLand], and crown vascular-plant bodies
 [@earp2024NotanopliidBrachiopodsAssociated; @kotyk2002MorphologicallyComplexPlant].
 
-**Figure 2.** How the body-record calculation links fossils to ancestors. Ticks mark recorded finds
-above the younger cutoff *c*. For a specified fixed recording history, the oldest find *A* and count
+![](figures/fig2_bound.png)
+
+**Figure 2.** How the body-record calculation links fossils to ancestors. Dots mark the guaranteed finds above the younger cutoff *c*, stacked where
+they share an oldest possible age. For a specified fixed recording history, the oldest find *A* and count
 *n* give a one-sided 95% older bound *T* on when the recognisable record began. For range-dated finds,
 *A* is the greatest possible oldest age and *n* the minimum guaranteed count. In the retrospective step
 scenarios, lower earlier recording moves the compatibility endpoint older; an assumed delay *d*
 before recognisable bodies connects record start to candidate ancestor age *t*. The selected step's
 curves describe retrospective compatibility. For the chosen units and cutoff, sparser earlier
 recording or an assumed diagnostic delay can accommodate ancestors older than the fixed-history bound.
+
+![](figures/fig3_murzuq.png)
 
 **Figure 3.** Spore records from the Murzuq Basin, Libya [@abuhmida2013PalynologicalAnalysisOrdovician].
 (*a*) Age ranges of chart-coded cuttings (drilling chips) from five wells. Filled symbols denote
@@ -412,6 +418,8 @@ delivery ratio *ρ* includes transport, preservation and preparation; *ρ* = 1 m
 Values below a curve remain compatible under its stated history class and the primary shared-well
 model. The curves compare specified delivery scenarios; poorer delivery permits input near the
 reference level.
+
+![](figures/fig4_requirements.png)
 
 **Figure 4.** Recording scenarios compatible with older vascular-plant ancestors. (*a*) The
 [50]{.C25} possible locality–age units, ordered by oldest possible age; [48]{.C25} are guaranteed within
@@ -465,6 +473,8 @@ early bodies were recorded several times less often, or recognisable bodies appe
 - **Prepared submission material:** `4-submission-materials.md` contains an exact 100-word media
   summary, evidence trace and proposed contribution inventory. Byline and final CRediT wording
   remain deferred under Barry's decision. The competing-interest statement awaits his answer.
-- **Still open:** the four figures, the deferred byline/final CRediT statement and the competing-interest
+- **Figures.** Built by `figures_step4.py` from the frozen and reviewed output tables into `figures/`, with
+  input and output hashes in `figures/figures.json`; each figure asserts its ledger counts and selectors.
+- **Still open:** the deferred byline/final CRediT statement and the competing-interest
   declaration. The Vancouver style switch remains for canonical integration. The archived eleven-source
   reading receipt and the dataset citation have now been checked; their provenance issues are closed.

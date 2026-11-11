@@ -1,0 +1,24 @@
+{
+  "inputs": {
+    "data/timescale.csv": "29c6cc4a68b1746d1a67c66623e5df30ac5dd316257b55ca5948c9854886f826",
+    "data/spores/first_appearances.csv": "3069ac06d11eaa534ac2b158a96d6ac7bd6d173d134ac2b14347242f7561422d",
+    "models/f3/loop3/out/primary_unit_membership.csv": "82e96708fd7d261b81b4d79992083a4627d24f0a25c22357ef3937cf5ad42b58",
+    "models/f3/loop3/out/reviewed_bounds.csv": "596c887498bb2366e9e16fef311dac8fda4211aa341ba258236c7b33afeedb11",
+    "models/f3/loop3/out/suppression_sensitivity.csv": "f772e4436eb1113d89c750b0f2d02029a0ac712651a9612dc9b260f7b424ad2c",
+    "models/f3/out/m2_units.csv": "6fcae5714f4a5e04e1e61e6ff15bbce3fd35db1374fae665038e3d6ba3e344c0",
+    "models/f3/out/m2_results.csv": "8c06ce3a12b83952df2af43e2a286e745f8178753578408e060e52960bf30966",
+    "models/f3/loop3/out/frontier.csv": "79715363375a2b4f3a5f42791e5101895c74f3de83c83b0115f783b68b85d454",
+    "manuscript/figures.py": "f3aef528e8c6a170ccb65c84f724fda0ebf0b459475d3821a1bfbaf06ce40a67",
+    "manuscript/reconstruction/figures_step4.py": "5ce265d7537249a87804c6ddfce01ef7116d773a735a3c43afb0128578d321e4"
+  },
+  "outputs": {
+    "manuscript/reconstruction/figures/fig1_dispute.png": "15f787b2a4674ddc60497fbacb2d8e86c88a7864903cf8449bfb10b8b6bde800",
+    "manuscript/reconstruction/figures/fig2_bound.png": "0f43609bc4e4491f4f40f4781f5d57954294b3234925dda451369622ab41c173",
+    "manuscript/reconstruction/figures/fig3_murzuq.png": "1a7d0499dc6d7376627d331ee5791d992ea032589849db9b78bf048a08056104",
+    "manuscript/reconstruction/figures/fig4_requirements.png": "b0bbc84919339e98af0a096657b47052af786451dc31d0970bdd474319ad13ee",
+    "manuscript/reconstruction/figures/fig1_dispute.pdf": "fa3622902f4d5cba376b1f240ca184c219169a26ba38897e5e62d5c2cabb0e61",
+    "manuscript/reconstruction/figures/fig2_bound.pdf": "d0e2bab27ec7a54b55e4f7ea68edea14e75f4fd2c67a391e424a1f377553ceaf",
+    "manuscript/reconstruction/figures/fig3_murzuq.pdf": "bccd7518cf9b7a4a492d11f254ebd897f2c3366cc68da5836f1ac302c4535d14",
+    "manuscript/reconstruction/figures/fig4_requirements.pdf": "aa61d84d8498442dc0b51c65f5bc6004daab5224bb7167d07b8c68b7f39bf2d1"
+  }
+}

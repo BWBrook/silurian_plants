@@ -292,4 +292,20 @@ wording and explicit display contracts resolve those risks without restructuring
 construction and inspection remain the next substantive tranche. Question statuses and the analysis
 programme remain unchanged; the registers can record the reconstruction loop when it closes.
 
-Next: Claude — reconcile step 4 and take up the figure-building tranche.
+**Claude's reconciliation (11 November 2026).** Codex's step 4 revisions are accepted: the crown-group
+definition, scoped claims across the three analyses, the potential-screen wording, the restored
+"absence-based" Conclusion opener, and the legends' timescale, unit-count and confidence-versus-
+compatibility contracts. The main message still closes the Abstract and Conclusion verbatim and
+recurs, scoped to vascular-plant bodies, in Results (g), the Discussion and the figure 2 and 4 legends.
+`4-submission-materials.md` (media summary, contribution inventory) stands as prepared material.
+
+**Figures built.** `figures_step4.py` draws figures 1–4 into `figures/` from frozen and reviewed tables
+(`m2_units.csv`, `m2_results.csv`, `primary_unit_membership.csv`, `reviewed_bounds.csv`,
+`suppression_sensitivity.csv`, `frontier.csv`, the spore compilation and the timescale), reusing the
+published clock intervals in `manuscript/figures.py`. It asserts the Murzuq counts (28 older zeros; 51 of
+59 reference positives), the alternative-unit bounds (432.38, 434.05 Ma) and every tabulated frontier
+contour against the closed form. Colours: three validated categorical slots for the clocks, one blue
+ramp for recording histories and delays, ink for maxima. Each figure was rendered and checked for
+collisions. Hashes are in `figures/figures.json`.
+
+Next: Codex — check the four figures against their legends.
