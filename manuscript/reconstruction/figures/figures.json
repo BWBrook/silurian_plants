@@ -9,16 +9,16 @@
     "models/f3/out/m2_results.csv": "8c06ce3a12b83952df2af43e2a286e745f8178753578408e060e52960bf30966",
     "models/f3/loop3/out/frontier.csv": "79715363375a2b4f3a5f42791e5101895c74f3de83c83b0115f783b68b85d454",
     "manuscript/figures.py": "f3aef528e8c6a170ccb65c84f724fda0ebf0b459475d3821a1bfbaf06ce40a67",
-    "manuscript/reconstruction/figures_step4.py": "5ce265d7537249a87804c6ddfce01ef7116d773a735a3c43afb0128578d321e4"
+    "manuscript/reconstruction/figures_step4.py": "ccf404a3727e97e36eb8b9e81e45730464a5f1764c5502a848cd31a6e7c9099f"
   },
   "outputs": {
-    "manuscript/reconstruction/figures/fig1_dispute.png": "15f787b2a4674ddc60497fbacb2d8e86c88a7864903cf8449bfb10b8b6bde800",
-    "manuscript/reconstruction/figures/fig2_bound.png": "0f43609bc4e4491f4f40f4781f5d57954294b3234925dda451369622ab41c173",
-    "manuscript/reconstruction/figures/fig3_murzuq.png": "1a7d0499dc6d7376627d331ee5791d992ea032589849db9b78bf048a08056104",
-    "manuscript/reconstruction/figures/fig4_requirements.png": "b0bbc84919339e98af0a096657b47052af786451dc31d0970bdd474319ad13ee",
-    "manuscript/reconstruction/figures/fig1_dispute.pdf": "fa3622902f4d5cba376b1f240ca184c219169a26ba38897e5e62d5c2cabb0e61",
-    "manuscript/reconstruction/figures/fig2_bound.pdf": "d0e2bab27ec7a54b55e4f7ea68edea14e75f4fd2c67a391e424a1f377553ceaf",
-    "manuscript/reconstruction/figures/fig3_murzuq.pdf": "bccd7518cf9b7a4a492d11f254ebd897f2c3366cc68da5836f1ac302c4535d14",
-    "manuscript/reconstruction/figures/fig4_requirements.pdf": "aa61d84d8498442dc0b51c65f5bc6004daab5224bb7167d07b8c68b7f39bf2d1"
+    "manuscript/reconstruction/figures/fig1_dispute.png": "b723e77b9660f6c99b832700d36a0815f0f7adc0542e216159bf4f4d5ffd0472",
+    "manuscript/reconstruction/figures/fig2_bound.png": "5eba7560eefbf72a5588ff40c5dcf49b34be7426e3e6cbce14bdcb43e959e37d",
+    "manuscript/reconstruction/figures/fig3_murzuq.png": "abc39e5eecf7ca10c1c86290140783186e49f827f2b41577c8799135f3f5e2dc",
+    "manuscript/reconstruction/figures/fig4_requirements.png": "f0d6298020f0ea3d93f2a5f24763f218bbbfd618269f9ef9dfe69330afd97286",
+    "manuscript/reconstruction/figures/fig1_dispute.pdf": "024ed91d7ae21f950832d84e3bf5f70180d4c7f37df07db93091c8a372817ccf",
+    "manuscript/reconstruction/figures/fig2_bound.pdf": "211295fe750b6cd5a30120bc86b08cacbfcbacfff177197b8eace92846d56c35",
+    "manuscript/reconstruction/figures/fig3_murzuq.pdf": "8a822faebb608fc20cd1f00df4a8e480db816fe622ae1bd7babff421833480c6",
+    "manuscript/reconstruction/figures/fig4_requirements.pdf": "82a71815018ec087c9216fd0012345fd06f2dcc9f2e050c157706efa407ec97d"
   }
 }

@@ -299,7 +299,7 @@ compatibility contracts. The main message still closes the Abstract and Conclusi
 recurs, scoped to vascular-plant bodies, in Results (g), the Discussion and the figure 2 and 4 legends.
 `4-submission-materials.md` (media summary, contribution inventory) stands as prepared material.
 
-**Figures built.** `figures_step4.py` draws figures 1–4 into `figures/` from frozen and reviewed tables
+**Claude's figure build (`f6ba666`).** `figures_step4.py` draws figures 1–4 into `figures/` from frozen and reviewed tables
 (`m2_units.csv`, `m2_results.csv`, `primary_unit_membership.csv`, `reviewed_bounds.csv`,
 `suppression_sensitivity.csv`, `frontier.csv`, the spore compilation and the timescale), reusing the
 published clock intervals in `manuscript/figures.py`. It asserts the Murzuq counts (28 older zeros; 51 of
@@ -308,4 +308,37 @@ contour against the closed form. Colours: three validated categorical slots for 
 ramp for recording histories and delays, ink for maxima. Each figure was rendered and checked for
 collisions. Hashes are in `figures/figures.json`.
 
-Next: Codex — check the four figures against their legends.
+### Built-figure acceptance (Codex, 11 November 2026)
+
+All four figures now agree with the reviewed legends and source cases. The bounded independent
+audits are `codex-figures-13-check.md` and `codex-figures-24-check.md`; their focused acceptance
+reads cover the revised exports. The final vector PDFs were also placed at **170 mm width** with
+their legends in a four-page local proof and visually inspected.
+
+| Figure | Repair and accepted evidence |
+|---|---|
+| 1 | Split the possible and definite Borenshult readings into separate rows. Both share the declared coarse age bracket; age certainty is conditional on identification. The clock, fossil and ash values agree with their source tables. |
+| 2 | The graphic now distinguishes the constant-history 95% bound from retrospective half/tenth step endpoints and the assumed delay. The 48 guaranteed dots and 428.8/431.0/448.1/448.8 Ma labels match their cases. |
+| 3 | All 87 cuttings are visible with well separators and counts, and the 10 broad / 18 wholly younger split is printed directly. Midpoint symbols are explicitly for display. Only four delivery scenarios were evaluated: dotted joining lines are visual guides, with compatibility stated at markers. Straight log-axis interpolation previously overstated intermediate limits. |
+| 4 | The internal title and axis describe retrospective compatibility. The 50 possible / 48 guaranteed / 2 straddling units, unit alternatives, delays, domain omissions, floor and saved 8.1×/11.8× markers match the tables and formula. |
+
+The darker clock green and third blue, and distinct primary delay line styles, improve visual
+separation. The fixed cutoff and nominal level are read from the reviewed bound case. Step endpoints
+select the primary inventory explicitly; count, support and contour assertions guard the selected
+cases. PNG and PDF exports were rebuilt with updated hashes. Suppressing variable PDF date metadata
+permits an exact repeat build: all **10 input hashes and 8 output hashes** match byte for byte.
+
+**Checks.** The plotting assertions pass; all input/output hashes verify; the draft-inclusive claims
+check reports 53 cited claims, zero errors and zero warnings. PDF and PNG rendering, glyphs, labels
+and article-width legibility pass the visual checks. The 170 mm proof is a local review artefact;
+the eight committed figure exports and their manifest are the retained outputs. No models, source
+tables, ledger, bibliography or canonical products changed. The earlier byline/CRediT deferral and
+pending competing-interest statement remain as recorded.
+
+**Structural review (Q1/Q2/Q5).** Source-correct numbers alone did not ensure faithful figures:
+merged affinity readings, an inference label and interpolated scenario limits changed the meaning
+of otherwise accurate data. Separate reading labels, display conventions and explicit figure-level
+model scope resolve those issues. The figures are ready for canonical integration with the reviewed
+text and planned citation-style change; question statuses and the analysis programme are unchanged.
+
+Next: Claude — integrate the reviewed figures and manuscript across the canonical products.

@@ -390,17 +390,24 @@ within the declared inventories, spanning earliest possible to earliest certain 
 may come from different finds. Separate bars identify cryptospores and triletes under the strict
 compilation reading, possible and definite Borenshult triletes [@rubinstein2019BalticaCradleEarly],
 Oman's sporangial fragments [@wellman2003FragmentsEarliestLand], and crown vascular-plant bodies
-[@earp2024NotanopliidBrachiopodsAssociated; @kotyk2002MorphologicallyComplexPlant].
+[@earp2024NotanopliidBrachiopodsAssociated; @kotyk2002MorphologicallyComplexPlant]. The two Borenshult
+readings share this coarse age bracket. Age certainty is conditional on the labelled identification;
+the queried specimen remains a possible trilete.
 
 ![](figures/fig2_bound.png)
 
-**Figure 2.** How the body-record calculation links fossils to ancestors. Dots mark the guaranteed finds above the younger cutoff *c*, stacked where
-they share an oldest possible age. For a specified fixed recording history, the oldest find *A* and count
+**Figure 2.** How the body-record calculation links fossils to ancestors, illustrated with the primary
+crown vascular-plant units. (*a*) Later recording is constant; earlier recording is unchanged, halved
+or reduced to a tenth. (*b*) Dots show guaranteed units at the older ends of their recorded age
+ranges, stacked for visibility. For a specified fixed recording history, the oldest find *A* and count
 *n* give a one-sided 95% older bound *T* on when the recognisable record began. For range-dated finds,
 *A* is the greatest possible oldest age and *n* the minimum guaranteed count. In the retrospective step
 scenarios, lower earlier recording moves the compatibility endpoint older; an assumed delay *d*
 before recognisable bodies connects record start to candidate ancestor age *t*. The selected step's
-curves describe retrospective compatibility. For the chosen units and cutoff, sparser earlier
+curves describe retrospective compatibility: the endpoints are [431.0]{.C53 .V108} Ma when earlier
+recording is halved and [448.1]{.C32} Ma at a tenth, compared with the constant-history bound
+[428.8]{.C27 .V003} Ma. The arrow adds an assumed [20]{.C33} Myr delay to that constant-history
+endpoint, giving [448.8]{.C33} Ma. For the chosen units and cutoff, sparser earlier
 recording or an assumed diagnostic delay can accommodate ancestors older than the fixed-history bound.
 
 ![](figures/fig3_murzuq.png)
@@ -408,16 +415,18 @@ recording or an assumed diagnostic delay can accommodate ancestors older than th
 **Figure 3.** Spore records from the Murzuq Basin, Libya [@abuhmida2013PalynologicalAnalysisOrdovician].
 (*a*) Age ranges of chart-coded cuttings (drilling chips) from five wells. Filled symbols denote
 triletes; open symbols denote audited trilete-zero reports, from explicit statements or complete
-reporting charts. All [28]{.C01} older cuttings are coded zero; [51 of 59]{.C02} Llandovery (earliest
+reporting charts. Symbols are centred on their age-support bars for display; the primary model
+integrates uniform ages over each support. Horizontal separators identify wells, with cutting counts
+beside their names. All [28]{.C01} older cuttings are coded zero; [51 of 59]{.C02} Llandovery (earliest
 Silurian) reference cuttings are positive. Of the older frame, [18]{.C45} cuttings are wholly younger
 than 459.1 Ma; only [10]{.C45} broadly dated Darriwilian cuttings in two wells have support extending
 older. Shading marks the reference interval; the dashed line marks 459.1 Ma. (*b*) Upper 95%
 compatibility limits on older input divided by reference input, *f*, for constant histories and the
 exposure-weighted mean of bounded variable histories beginning at 459.1 Ma. The older/reference
 delivery ratio *ρ* includes transport, preservation and preparation; *ρ* = 1 means equal delivery.
-Values below a curve remain compatible under its stated history class and the primary shared-well
-model. The curves compare specified delivery scenarios; poorer delivery permits input near the
-reference level.
+Markers identify the four evaluated delivery scenarios; dotted connecting lines are visual guides.
+At a marked ratio, input below its limit remains compatible under the stated history class and
+primary shared-well model. Poorer delivery permits input near the reference level.
 
 ![](figures/fig4_requirements.png)
 
@@ -431,7 +440,8 @@ and the younger cutoff is *c* = [393.47]{.C25} Ma. The contour sets the probabil
 recorded age at most *A* to 0.05, conditional on count. Primary curves use *n* = [48]{.C25} and assumed diagnostic
 delays of zero, ten and twenty Myr; zero-delay comparison curves use region–stage
 (*n* = [19]{.C30}) and curated (*n* = [15]{.C30}) units. Shading identifies the published clock
-summaries. Undefined combinations with *t* − *d* ≤ *A* are omitted; ratios requiring no reduction are
+summaries; Morris's younger interval continues outside this panel (figure 1). Undefined combinations
+with *t* − *d* ≤ *A* are omitted; ratios requiring no reduction are
 drawn at one. These data-selected contours describe compatibility scenarios. Older ancestors fit if
 early bodies were recorded several times less often, or recognisable bodies appeared later.
 
@@ -456,25 +466,31 @@ early bodies were recorded several times less often, or recognisable bodies appe
   ("figure 3*a*", "table 1"). Numbered Vancouver style is a build setting for the canonical integration;
   the current CSL is Chicago author-date.
 - **Plain-language pass.** Stage names gain their period at first use (Llandovery, Katian–Hirnantian,
-  Darriwilian, Sheinwoodian); "crown" is glossed as "living group" in reader-facing places; question 3 is
+  Darriwilian, Sheinwoodian); crown groups are defined to include extinct descendants; question 3 is
   restated in plain terms; "palynology" became "spores and other microfossils".
 - **Hard edit.** Cut the Results restatement of Morris et al.'s argument (stated in the Introduction),
   the Introduction's list of three fossil kinds (carried by table 1 and the next paragraph), and a
   repeated statement that the earliest parent plants were minute; split the four longest sentences
   (qualification rule, body categories, dependence checks); replaced two "price" metaphors with literal
-  statements. Main text about 3,030 words (Introduction to Conclusion) against 3,040 at 3c, after adding
+  statements. Main text about 3,060 words (Introduction to Conclusion) against 3,040 at 3c, after adding
   the Conclusion heading and finding-led sub-headings; abstract 191 words.
 - **Codex review.** `codex-4-science-check.md` and `codex-4-argument-check.md` record the independent
-  checks and source/case limits. Restore the fixed younger cutoff, potential-screen definition and
-  independent acceptance batch. The legends now distinguish source-era clocks from stage-mapped
+  checks and source/case limits. The prose review restored the fixed younger cutoff, potential-screen
+  definition and independent acceptance batch. The legends distinguish source-era clocks from stage-mapped
   fossil supports, audited zeros from explicit absences, fixed-history confidence bounds from
   retrospective scenarios, and 50 possible units from 48 guaranteed. Figure 4 specifies the contour
-  cases and display floor; these are drawing contracts, with no figure rendered in this turn.
+  cases and display floor; the built figures were then checked against these contracts.
 - **Prepared submission material:** `4-submission-materials.md` contains an exact 100-word media
   summary, evidence trace and proposed contribution inventory. Byline and final CRediT wording
   remain deferred under Barry's decision. The competing-interest statement awaits his answer.
 - **Figures.** Built by `figures_step4.py` from the frozen and reviewed output tables into `figures/`, with
   input and output hashes in `figures/figures.json`; each figure asserts its ledger counts and selectors.
+- **Built-figure review.** `codex-figures-13-check.md` and `codex-figures-24-check.md` record the
+  independent checks of the original exports and their source cases. The revised exports separate
+  the Borenshult readings, distinguish fixed-history confidence from retrospective scenarios inside
+  the graphics, separate wells and sample supports, and restrict spore compatibility to evaluated
+  delivery markers. Dotted lines in figure 3 are visual guides. The final PDFs and legends passed
+  focused acceptance reads and a 170 mm width proof. Numerical source tables remain unchanged.
 - **Still open:** the deferred byline/final CRediT statement and the competing-interest
   declaration. The Vancouver style switch remains for canonical integration. The archived eleven-source
   reading receipt and the dataset citation have now been checked; their provenance issues are closed.
