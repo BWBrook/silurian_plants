@@ -1,6 +1,7 @@
 # Reconstruction step 4: final detailing
 
-Claude Opus 5.5, 11 November 2026, from the locked step 3c draft at `ef253d6`. Barry's instruction (chat,
+Claude Opus 5.5, revised by Codex (`gpt-6.1-sol`), 11 November 2026, from the locked step 3c draft at
+`ef253d6`. Claude's step-4 version is preserved at `7e560c5`. Barry's instruction (chat,
 11 November 2026): add references, formatting and display-item legends, give it "a hard edit, to cut
 verbiage", repeat the main message strategically, then make a second pass for "context, clarity, your
 target audience, and a general audience: no re-structures at this stage". Numbers carry ledger
@@ -34,7 +35,8 @@ confidence interval; Ordovician–Silurian
 ## Introduction
 
 Molecular clocks estimate when lineages diverged by combining DNA differences with fossil limits on the
-ages of selected ancestors. For the ancestor of all living land plants (crown embryophytes),
+ages of selected ancestors. A crown group comprises the most recent ancestor shared by its living
+members and all its descendants, including extinct lineages. For the ancestor of all living land plants (crown embryophytes),
 @morris2018TimescaleEarlyLand obtained 515–474 Ma across seven tree topologies and
 @harris2022DivergentEvolutionaryTrajectories 515–493 Ma. @hooper2026ReconstructingSporeEvolution
 reanalysed Harris et al.'s DNA data with revised fossil calibrations and obtained 457–450 Ma, a mean
@@ -75,15 +77,16 @@ dispersed spores and on plant bodies, each with its own route into the record, a
 
 We ask three questions of the published record. What evidence supports each maximum, and which links
 connect it to the dated ancestor? How much sustained spore input before the Silurian do the records of
-one Libyan basin allow? How much rarer must early vascular-plant fossils have been, or how much later
-must recognisable bodies have appeared, for older ancestors to fit? Established theory sets an
+one Libyan basin allow? What reduction in early fossil recording, or delay before recognisable bodies,
+would accommodate older vascular-plant ancestors? Established theory sets an
 expectation for each. An absence argument needs documented opportunities for delivery, preservation and
 discovery [@parham2011BestPracticesJustifying; @marshall2019UsingFossilRecord]. With comparable
 exposure, accumulating zero records increasingly constrain high sustained spore input. For a fixed oldest
-find and recording history, more independent finds narrow the bound on when a record began, and lower
+find, younger cutoff and recording history, more independent finds narrow the bound on when a record began, and lower
 earlier recording extends it [@strauss1989ClassicalConfidenceIntervals;
-@marshall1990ConfidenceIntervalsStratigraphic]. We express each requirement as a number a clock builder
-can weigh: how much rarer early finds, or how much later diagnostic features, an older date demands.
+@marshall1990ConfidenceIntervalsStratigraphic]. The audit identifies what each maximum assumes; the
+quantitative tests bound local spore input and describe the earlier recording or diagnostic delays
+compatible with older vascular-plant dates.
 
 **Table 1.** The three maxima examined: the evidence each rests on, the test the published record
 allows, and the links a clock must still assume. GTS2012, Geologic Time Scale 2012.
@@ -91,8 +94,8 @@ allows, and the links a clock must still assume. GTS2012, Geologic Time Scale 20
 | Maximum | Set by | Evidence | Test available | Links assumed |
 |---|---|---|---|---|
 | 515.5 Ma, living land plants | Morris et al. | Base of the *Olenellus* Biozone, below the oldest possible Cambrian spore-like packets; older marine rocks with algal cysts | Affinity of the Cambrian packets; any enumerated older sequence | Spore delivery to marine basins, catchment, search effort, spore production by the earliest members |
-| 459.1 Ma, living land plants | Hooper et al. | GTS2012 Sandbian base plus uncertainty, keyed to the oldest possible trilete spore (Borenshult-1, Sweden) | Older zeros against younger positives, Murzuq Basin, Libya | Trilete producers belong to the living group, the trait persisted, producers lived in the catchment |
-| 431.2 Ma, living vascular plants | Hooper et al. | GTS2012 Homerian base plus uncertainty, keyed to Irish Homerian *Cooksonia* | A bound from the body-fossil record, and what older ancestors require | Recording before the oldest find, delay before recognisable bodies, the anchor belongs to the living group |
+| 459.1 Ma, living land plants | Hooper et al. | GTS2012 Sandbian base plus uncertainty, keyed to the oldest possible trilete spore (Borenshult-1, Sweden) | Older zeros against younger positives, Murzuq Basin, Libya | Earliest crown members produced triletes, the trait persisted, producers lived in the catchment |
+| 431.2 Ma, living vascular plants | Hooper et al. | GTS2012 Homerian base plus uncertainty, keyed to Irish Homerian *Cooksonia* | A bound from the body-fossil record, and what older ancestors require | Recording before the oldest find, delay before recognisable bodies, the anchor lies within the vascular crown |
 
 ## Material and methods
 
@@ -124,10 +127,11 @@ effect and their ages, which are uniform within each cutting's stage range, cutt
 independent. Older input is a fraction *f* of Llandovery input, and a fixed delivery ratio *ρ* covers
 differences in transport, preservation and preparation. We computed upper 95% compatibility limits on
 *f* for constant input, and for the exposure-weighted mean of variable histories, from a postulated
-start, with input between zero and the reference level. A screen first checks that a frame could
-exclude constant reference-level input at all: it needs a usable younger reference and enough older
-cuttings that all-zero reports would exclude that input. Independent
-simulations then qualified each declared quantity on a finite scenario grid. Among replicates passing the
+start, with input between zero and the reference level. The potential screen sets older reports to
+zero and checks whether the frame could exclude constant reference-level input when every older
+cutting is exposed, with a usable younger reference. Each simulation uses the same screen; the
+analysis uses the actual reports. Acceptance simulations independent of calibration then qualified
+each declared quantity on a finite scenario grid. Among replicates passing the
 screen, with withheld claims counted as non-errors, the one-sided 95% lower confidence limit on coverage
 had to exceed 0.93; borderline quantities went to a preplanned pooled rule (electronic supplementary
 material, S2).
@@ -137,7 +141,7 @@ Database (PBDB) occurrences, whose names an AI model classified with cited sourc
 and from a source-reviewed set of the oldest records with their competing readings. Collections, taxa
 or papers sharing a locality and age count once, as proxies for independent fossil horizons. We declare
 three nested categories. Land-plant bodies are any accepted macro- or mesofossil. Polysporangiophytes
-have documented branched axes bearing sporangia (spore capsules), or placement among living vascular plants. Crown
+have documented branched axes bearing sporangia (spore capsules), or placement within the vascular crown. Crown
 vascular plants belong to the lycophyte line (clubmosses and relatives) or the euphyllophytes
 (ferns and seed plants) [@kotyk2002MorphologicallyComplexPlant;
 @libertin2018SporophytesPolysporangiateLand; @earp2024NotanopliidBrachiopodsAssociated;
@@ -232,7 +236,7 @@ gives [434.05]{.C30} Ma, both under constant recording. Shifting stage boundarie
 uncertainties, in the tested shared-boundary scenarios, moves the primary bound between
 [427.31]{.C50 .V062} and [430.42]{.C50 .V063} Ma (electronic supplementary material, S5.3).
 
-**(g) Older ancestors need sparser early recording or later recognisable bodies.** In the primary step
+**(g) Older vascular-plant dates fit sparser early recording or later recognisable bodies.** In the primary step
 model, halving earlier recording gives [431.0]{.C53 .V108} Ma, still younger than the 431.2 Ma maximum.
 With zero assumed delay, ancestors at 444–452 Ma, spanning the Morris et al. mean dates and the Harris
 et al. interval, need earlier recording [8]{.C48 .V054}–[12]{.C48 .V055} times lower than later
@@ -256,8 +260,9 @@ well-delivered trilete input at the Llandovery level through the later Ordovicia
 zero records; lower delivery, lower local input or producers outside the catchment all remain
 compatible. Under constant or collection-density recording, the one-sided 95% older bound on the
 recognisable crown vascular-plant record lies near [429]{.C27 .V018} Ma, and coarser or curated units
-put it at [432.4–434.05]{.C30} Ma. Ancestors older than these bounds require sparser early recording,
-later recognisable bodies, or both; the models size each requirement in aggregate.
+put it at [432.4–434.05]{.C30} Ma. For these unit treatments, sparser earlier recording, later
+recognisable bodies or both can accommodate ancestors older than the corresponding fixed-history
+bounds; the models size each requirement in aggregate.
 
 Several processes could have made early plants scarcer in the record. Producers may have been rarer,
 more geographically restricted, concentrated where little terrestrial sediment accumulated, or preserved in
@@ -277,16 +282,16 @@ recognisable record of a declared crown category under fixed recording histories
 ancestors require. The two analyses target different quantities from partly shared data and test
 different assumptions. CladeDate builds calibration densities directly from fossil times
 [@claramunt2022CladedateCalibrationInformation], and Hooper et al. link spore-character reconstruction
-to revised calibrations. We add the recording contrasts and delays that older dates require at each
-maximum dividing current clocks.
+to revised calibrations. We make the maxima's observational requirements explicit, quantifying local
+spore input and the body-recording contrasts or diagnostic delays compatible with older vascular-plant dates.
 
 **Conditions.** The spore limits assume an indigenous younger reference, comparable reporting in older
 and younger cuttings, ages uniform within stages, and cutting outcomes independent given a shared well
 effect. Three exploratory dependence checks, with unqualified coverage, give
 contours of [0.0995]{.C51 .V058} with separate reference rates per well and no random well effect, near
 [0.4]{.C51 .V081} with well–formation block weighting, and [0.185–0.365]{.C07} (exposure-weighted) with
-one well left out at a time. Linking the local spore record to ancestors requires that the earliest members of the
-living group produced recognisable trilete spores, that the trait persisted and that producers lived in
+one well left out at a time. Linking the local spore record to ancestors requires that the earliest crown
+embryophytes produced recognisable trilete spores, that the trait persisted and that producers lived in
 the catchment (electronic supplementary material, S6).
 
 The body bounds and conservative shape rejections assume independent continuous ages; fixed histories,
@@ -295,11 +300,11 @@ ages and inclusion states with probability one. Geological ranges have no demons
 if containment fails with probability $\delta$, the direct test-size bound is $\alpha+\delta$, where
 $\alpha$ is the exact-age significance level. Matched exact-age simulations gave coverage of
 [0.941–0.958]{.C34}, falling to about [0.78]{.C34} when paired duplicate horizons were treated as
-independent (electronic supplementary material, S5.6). The step model is retrospective. Linking body fossils to
-ancestors requires that the oldest finds belong to the living group and a specified delay before
+independent (electronic supplementary material, S5.6). The step model is retrospective. Linking the vascular-body bound to
+ancestors requires crown membership of the oldest finds and a specified delay before
 recognisable bodies.
 
-Four kinds of published evidence would narrow these requirements. Records of searched Silurian
+Published evidence could narrow these requirements. Records of searched Silurian
 terrestrial beds, with effort and empty beds included, would help constrain early recording, and
 compilations of rock units could supply proxies for the terrestrial rock available at each age
 [@peters2018MacrostratPlatformGeological]. A second complete older-zero, younger-positive spore sequence
@@ -314,7 +319,8 @@ well as their link to the ancestor.
 
 ## Conclusion
 
-A fossil maximum is a claim about how often early plants, and their recognisable features, should have been found. Clock builders can
+An absence-based fossil maximum combines expectations about ancestral characters with the chance of
+finding their remains in older rocks. Clock builders can
 state each maximum's character, geographical and recording assumptions, and justify the probability
 assigned to older ages against them [@parham2011BestPracticesJustifying;
 @yang2005BayesianEstimationSpecies]. Testing alternative defensible maxima then shows how much each
@@ -326,8 +332,8 @@ several times less often, or recognisable features evolved later.
 
 ## Ethics
 
-This study used published descriptions and data only; no fieldwork, specimens or human participants
-were involved.
+We analysed published descriptions and data. The study involved no fieldwork, specimen collection or
+research involving human participants.
 
 ## Data accessibility
 
@@ -353,7 +359,8 @@ the limits of sessions whose exact variant was unavailable are recorded in `docs
 
 ## Authors' contributions
 
-[Byline and CRediT statement deferred by Barry to the submission phase.]
+[Byline and final CRediT wording remain deferred to the submission phase. A contribution inventory is
+prepared in `4-submission-materials.md`.]
 
 ## Conflict of interest declaration
 
@@ -369,52 +376,71 @@ This research received no specific funding.
 
 ## Figure legends
 
-**Figure 1.** The dating dispute and the fossil evidence behind it. Horizontal bars give the published
-clock estimates for the ancestor of living land plants (upper group) and of living vascular plants
-(lower group) from @morris2018TimescaleEarlyLand, @harris2022DivergentEvolutionaryTrajectories and
-@hooper2026ReconstructingSporeEvolution; each label states the summary its source reports. Vertical
-lines mark the maxima of 515.5, 459.1 and 431.2 Ma. Lower bars show the age ranges of the oldest
-spores, the Oman sporangial fragments and the oldest vascular-plant bodies, each spanning the earliest
-possible to the earliest certain age. Ages on the International Chronostratigraphic Chart v2024/12.
+**Figure 1.** The dating dispute and its fossil evidence. Upper bars give dates for the ancestor of
+living land plants; the next group gives living vascular plants. Morris et al.'s bars envelope 95%
+highest posterior density (HPD) intervals across seven tree topologies; Harris et al. and Hooper et al.
+give their study-specific 95% HPD intervals [@morris2018TimescaleEarlyLand;
+@harris2022DivergentEvolutionaryTrajectories; @hooper2026ReconstructingSporeEvolution]. Vertical lines
+mark the maxima of 515.5, 459.1 and 431.2 Ma. Clock estimates and maxima retain their published
+numerical ages. Fossil stage supports use the International Chronostratigraphic Chart v2024/12;
+independent radiometric ages retain their published values. Fossil bars show first-appearance supports
+within the declared inventories, spanning earliest possible to earliest certain occurrence; endpoints
+may come from different finds. Separate bars identify cryptospores and triletes under the strict
+compilation reading, possible and definite Borenshult triletes [@rubinstein2019BalticaCradleEarly],
+Oman's sporangial fragments [@wellman2003FragmentsEarliestLand], and crown vascular-plant bodies
+[@earp2024NotanopliidBrachiopodsAssociated; @kotyk2002MorphologicallyComplexPlant].
 
-**Figure 2.** How the body-record bound links fossils to ancestors. Ticks mark recorded finds above the
-younger cutoff *c*. Under a fixed recording history, the oldest find *A* and the count *n* give the
-one-sided 95% older bound *T* on when the recognisable record began; for range-dated finds, *A* is the
-greatest possible oldest age and *n* the minimum guaranteed count. A step that lowers earlier recording
-moves *T* older, and an assumed delay *d* before recognisable bodies connects *T* to a candidate
-ancestor age *t*. Older ancestors therefore need sparser early recording, a longer delay, or both.
+**Figure 2.** How the body-record calculation links fossils to ancestors. Ticks mark recorded finds
+above the younger cutoff *c*. For a specified fixed recording history, the oldest find *A* and count
+*n* give a one-sided 95% older bound *T* on when the recognisable record began. For range-dated finds,
+*A* is the greatest possible oldest age and *n* the minimum guaranteed count. In the retrospective step
+scenarios, lower earlier recording moves the compatibility endpoint older; an assumed delay *d*
+before recognisable bodies connects record start to candidate ancestor age *t*. The selected step's
+curves describe retrospective compatibility. For the chosen units and cutoff, sparser earlier
+recording or an assumed diagnostic delay can accommodate ancestors older than the fixed-history bound.
 
 **Figure 3.** Spore records from the Murzuq Basin, Libya [@abuhmida2013PalynologicalAnalysisOrdovician].
-(*a*) Age ranges of the chart-coded cuttings in five wells; filled symbols report trilete spores, open
-symbols report none. Shading marks the Llandovery reference interval; the dashed line marks 459.1 Ma.
-(*b*) Upper 95% compatibility limits on older spore input, as a fraction of reference input, against the
-delivery ratio *ρ*, for constant input and for the exposure-weighted mean of bounded variable histories
-beginning at 459.1 Ma. Both use the primary cutting frame and shared-well model. Points below each curve
-fit the zero records; poorer delivery permits input near the reference level.
+(*a*) Age ranges of chart-coded cuttings (drilling chips) from five wells. Filled symbols denote
+triletes; open symbols denote audited trilete-zero reports, from explicit statements or complete
+reporting charts. All [28]{.C01} older cuttings are coded zero; [51 of 59]{.C02} Llandovery (earliest
+Silurian) reference cuttings are positive. Of the older frame, [18]{.C45} cuttings are wholly younger
+than 459.1 Ma; only [10]{.C45} broadly dated Darriwilian cuttings in two wells have support extending
+older. Shading marks the reference interval; the dashed line marks 459.1 Ma. (*b*) Upper 95%
+compatibility limits on older input divided by reference input, *f*, for constant histories and the
+exposure-weighted mean of bounded variable histories beginning at 459.1 Ma. The older/reference
+delivery ratio *ρ* includes transport, preservation and preparation; *ρ* = 1 means equal delivery.
+Values below a curve remain compatible under its stated history class and the primary shared-well
+model. The curves compare specified delivery scenarios; poorer delivery permits input near the
+reference level.
 
-**Figure 4.** What older vascular-plant ancestors require. (*a*) The [48]{.C25} crown vascular-plant
-units, ordered by oldest possible age, with the one-sided 95% older bound under constant recording
-([428.8]{.C27 .V003} Ma) and the alternatives from region–stage and curated units
-([432.4–434.05]{.C30} Ma). (*b*) The later-to-earlier recording contrast a candidate ancestor age
-requires, for zero and longer assumed delays before recognisable bodies; shaded bands mark the clock
-intervals. Contrasts are plotted where candidate age minus delay exceeds the oldest possible find
-([426.7]{.C32} Ma). The step is placed retrospectively, so the curves show compatibility with the record. Older ancestors fit if early bodies were recorded several times less often, or appeared later.
+**Figure 4.** Recording scenarios compatible with older vascular-plant ancestors. (*a*) The
+[50]{.C25} possible locality–age units, ordered by oldest possible age; [48]{.C25} are guaranteed within
+the analysis window, and the two cutoff-straddling units are marked separately. The one-sided 95%
+older bound under constant recording is [428.8]{.C27 .V003} Ma; region–stage and curated alternatives
+give [432.4–434.05]{.C30} Ma. (*b*) Later-to-earlier recording ratios on retrospective compatibility
+contours. Later recording is constant, the step is at the oldest possible age *A* = [426.7]{.C32} Ma,
+and the younger cutoff is *c* = [393.47]{.C25} Ma. The contour sets the probability of an oldest
+recorded age at most *A* to 0.05, conditional on count. Primary curves use *n* = [48]{.C25} and assumed diagnostic
+delays of zero, ten and twenty Myr; zero-delay comparison curves use region–stage
+(*n* = [19]{.C30}) and curated (*n* = [15]{.C30}) units. Shading identifies the published clock
+summaries. Undefined combinations with *t* − *d* ≤ *A* are omitted; ratios requiring no reduction are
+drawn at one. These data-selected contours describe compatibility scenarios. Older ancestors fit if
+early bodies were recorded several times less often, or recognisable bodies appeared later.
 
 ---
 
 ## Notes on the step-4 edit
 
-- **Repetition of the main message.** Six places, each in different words: the abstract's final
-  sentence (verbatim adopted message); the Introduction's last sentence ("how much rarer early finds, or
-  how much later diagnostic features, an older date demands"); Results heading (g); the Discussion's
-  opening sentence ("The early record allows older ancestors, and the analyses state what each would require"); the last
-  sentences of the figure 2 and figure 4 legends; and the Conclusion, which opens with "A fossil maximum
-  is a claim about how often early plants, and their recognisable features, should have been found" and closes with the adopted message.
+- **Strategic repetition.** The adopted message closes the Abstract and Conclusion verbatim. The
+  Introduction distinguishes the audit from its quantitative tests; Results heading (g) and the
+  Discussion interpret body-recording and diagnostic-delay scenarios. Figures 2 and 4 each repeat
+  that conditional body message for readers of the standalone figure. This retains repetition while
+  keeping the qualitative 515.5 Ma audit and local spore-encounter limits attached to their targets.
 - **Headings.** Unnumbered, following the five *Proc B* comparators
   (`docs/audits/2026-11-10-procb-format-comparison.md`); Results sub-headings now state their finding. The
   final Discussion paragraph became a one-paragraph Conclusion, as the Royal Society guidance lists
   conclusions among the usual sections. No paragraph moved.
-- **Added front and end matter.** Keywords (6; limit 3–10), Ethics, Authors' contributions and Conflict of
+- **Added front and end matter.** Six keywords, Ethics, Authors' contributions and Conflict of
   interest placeholders, a References heading, and full figure legends written for a reader who sees only
   the figure. The Zenodo PBDB extract is cited as a dataset in the reference list
   (`brook2026FrozenPaleobiologyDatabase`, from its DataCite metadata), as the Royal Society requires.
@@ -430,5 +456,15 @@ intervals. Contrasts are plotted where candidate age minus delay exceeds the old
   (qualification rule, body categories, dependence checks); replaced two "price" metaphors with literal
   statements. Main text about 3,030 words (Introduction to Conclusion) against 3,040 at 3c, after adding
   the Conclusion heading and finding-led sub-headings; abstract 191 words.
-- **Still open:** the figures themselves (legends now specify their content), the byline and CRediT
-  statement, the conflict-of-interest statement, and the 100-word media summary at submission.
+- **Codex review.** `codex-4-science-check.md` and `codex-4-argument-check.md` record the independent
+  checks and source/case limits. Restore the fixed younger cutoff, potential-screen definition and
+  independent acceptance batch. The legends now distinguish source-era clocks from stage-mapped
+  fossil supports, audited zeros from explicit absences, fixed-history confidence bounds from
+  retrospective scenarios, and 50 possible units from 48 guaranteed. Figure 4 specifies the contour
+  cases and display floor; these are drawing contracts, with no figure rendered in this turn.
+- **Prepared submission material:** `4-submission-materials.md` contains an exact 100-word media
+  summary, evidence trace and proposed contribution inventory. Byline and final CRediT wording
+  remain deferred under Barry's decision. The competing-interest statement awaits his answer.
+- **Still open:** the four figures, the deferred byline/final CRediT statement and the competing-interest
+  declaration. The Vancouver style switch remains for canonical integration. The archived eleven-source
+  reading receipt and the dataset citation have now been checked; their provenance issues are closed.

@@ -3,7 +3,7 @@
 Barry's method for rebuilding a paper after its first draft (chat, 10 November 2026). The files form a
 working reconstruction. Claude's first version of steps 1–2 is preserved at `1fe577c`; those steps have
 been reconciled and Barry adopted their main message at `0306623`. Steps 3a and 3b are reconciled at
-`dabd5b9` and `2169670`; Codex's step 3c revision awaits Claude's reconciliation. The target remains
+`dabd5b9` and `2169670`, and step 3c at `ef253d6`; Codex's step 4 revision awaits Claude's reconciliation. The target remains
 *Proceedings of the Royal Society B*. AI byline wording remains a placeholder for the submission phase.
 
 ## Steps 1–2
@@ -242,23 +242,54 @@ the registers can record the reconstruction loop when it closes.
 reference-reading receipt is now preserved in `docs/audits/2026-11-11-3c-reference-reads.md`, with the
 job prompt and its JSON output. Step 3c is locked as a draft; Barry has said step 4 comes next.
 
-## Step 4: final detailing (Claude draft, 11 November 2026)
+## Step 4: final detailing (Codex revision, 11 November 2026)
 
 Barry's instruction (chat, 11 November 2026): references, formatting and display-item legends; "a hard
 edit, to cut verbiage"; strategic repetition of the main message; then a second pass for context,
-clarity and a general audience, with "no re-structures at this stage". `4-final-draft.md` builds on the
-locked 3c draft (`ef253d6`):
+clarity and a general audience, with "no re-structures at this stage". `4-final-draft.md` revises
+`7e560c5` without moving paragraphs or changing the adopted message. The unnumbered sections,
+finding-led Results headings, separate Conclusion and front/end matter remain. The abstract is
+**191 words** (200 when dashes split words); main text is approximately **3,063 words**, excluding
+Table 1, legends, end matter and citation keys.
 
-- *Proc B* front and end matter: keywords, unnumbered sections with finding-led Results sub-headings,
-  a one-paragraph Conclusion (the former closing Discussion paragraph), Ethics, Data accessibility, AI
-  use, Authors' contributions and Conflict of interest placeholders, Funding and a References heading.
-- Full figure legends for figures 1–4 and an expanded table 1 caption. The PBDB Zenodo extract is now a
-  cited dataset (`brook2026FrozenPaleobiologyDatabase`, `references/manual.yaml`).
-- The main message appears in six places in different words; see the draft's notes.
-- Hard edit and plain-language pass: main text about 3,035 words (3c: 3,040) despite the added headings;
-  abstract 191 words. Stage names gain their period at first use; "crown" is glossed for general readers.
-- Checks: claims check 0 errors; all citation keys resolve; `make -C manuscript check` passes.
-- Open: figures to build, byline and CRediT, conflict-of-interest wording, media summary, Vancouver CSL
-  at canonical integration.
+The bounded independent checks are `codex-4-science-check.md` and `codex-4-argument-check.md`.
+Their focused acceptance reads passed. The main numerical results and Conditions survived the cuts;
+the repairs restore the following distinctions:
 
-Next: Codex — review step 4.
+| Point | Revision |
+|---|---|
+| Strategic repetition | Keep the adopted Abstract/Conclusion endings and conditional body message in the Results, Discussion and standalone legends. The audit remains qualitative where the assembled frame prevents a numerical test. |
+| Conclusion opener | Scope it to an absence-based maximum and distinguish ancestral character production from recovery in older rocks. |
+| Plain-language crown gloss | Define crown groups as the shared living ancestor and all descendants, including extinct members. Replace “among living plants” with placement within the crown. |
+| Shortened model account | Restore the fixed younger cutoff in the count expectation, full-exposure/zero-outcome potential screen, identical screening in simulations and acceptance independent of calibration. |
+| Figure 1 | Preserve source-era clock/maximal ages, current stage mapping for fossil supports, published radiometric dates, HPD summaries versus a topology envelope, and labelled spore/source readings. |
+| Figures 2 and 4 | Keep fixed-history confidence interpretation distinct from retrospective step/delay compatibility. Figure 4 shows 50 possible units, 48 guaranteed, with cutoff-straddlers marked; the contour cases, counts, cutoff, anchor, omitted domain and display floor are explicit. |
+| Figure 3 | Define input and older/reference delivery, audited target-zero coding, the 18/10 sample-support split and model-conditional curves. |
+
+**Prepared submission material.** `4-submission-materials.md` contains an exact **100-word media
+summary**, its evidence trace, and a contribution inventory grounded in the project record and NISO
+role descriptors. It makes no byline decision. Barry's exact deferral is preserved there; final byline
+and CRediT wording remain for the submission phase. A competing-interest question was asked during
+this review; its answer remains pending, so the article retains that placeholder. The funding
+statement remains the previously confirmed absence of specific project funding.
+
+**Provenance closed.** The source-reading receipt, prompt and eleven-item JSON output are preserved
+and inspected. The dataset bibliography entry matches the registered DataCite metadata. These checks
+close the missing-record and new-reference checks; they do not re-download dataset bytes or count as
+eleven fresh source audits.
+
+**Observed checks.** The draft-inclusive numerical check covers 53 claims with zero errors or
+warnings. All 46 citation keys resolve. The abstract meets 200 words under both counts; the media
+summary is exactly 100 words. The adopted sentence matches in both Abstract and Conclusion.
+`make -C manuscript check` passes lint and reference audits, with the expected canonical-only C53
+uncited warning while the canonical text stays frozen. The writing scanner's formatting and term
+flags were reviewed manually; required section labels and scientific terminology remain. No model
+reruns, figure builds or canonical changes were made.
+
+**Structural review (Q1/Q2/Q5).** The remaining risks were claims broadened by strategic repetition
+and figure captions hiding differences in timescale, unit counts or inference type. Analysis-specific
+wording and explicit display contracts resolve those risks without restructuring. Actual figure
+construction and inspection remain the next substantive tranche. Question statuses and the analysis
+programme remain unchanged; the registers can record the reconstruction loop when it closes.
+
+Next: Claude — reconcile step 4 and take up the figure-building tranche.
