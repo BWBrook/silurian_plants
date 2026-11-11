@@ -2,8 +2,8 @@
 
 Barry's method for rebuilding a paper after its first draft (chat, 10 November 2026). The files form a
 working reconstruction. Claude's first version of steps 1–2 is preserved at `1fe577c`; those steps have
-been reconciled and Barry adopted their main message at `0306623`. Step 3a is reconciled at `dabd5b9`;
-Step 3b is reconciled and locked as a draft. Claude's step 3c full draft awaits Codex's review. The target remains
+been reconciled and Barry adopted their main message at `0306623`. Steps 3a and 3b are reconciled at
+`dabd5b9` and `2169670`; Codex's step 3c revision awaits Claude's reconciliation. The target remains
 *Proceedings of the Royal Society B*. AI byline wording remains a placeholder for the submission phase.
 
 ## Steps 1–2
@@ -182,21 +182,60 @@ conditions. Claude's draft miscounted its own framework as 26 paragraphs; there 
 locked as a draft. Barry, via the Board, 11 November 2026: "await my guidance for step 3c before
 expanding the prose."
 
-## Step 3c: full draft (Claude draft, 11 November 2026)
+## Step 3c: full draft (Codex revision, 11 November 2026)
 
 Barry's instruction (chat, 11 November 2026): "add the flesh to the bones. But do it judiciously. Don't
-overwrite!" `3c-full-draft.md` expands the 27 paragraph abstracts into the article: a 184-word abstract,
-Introduction 570 words, Material and methods 857, Results 812 and Discussion 752, so about 3,000 words
-of main text (citations, Table 1, captions and end matter excluded). Detail was added only where a reader
-needs it to follow or reproduce a result; QSIM-801, the per-delivery table and the full pivotal-record
-table stay in the supplement. Conditions remain gathered in two Discussion paragraphs.
+overwrite!" `3c-full-draft.md` revises Claude's full draft at `c0f83fc`. It has a **189-word abstract**
+(196 when dashes split words) and approximately **3,041 words of main text**: Introduction 568,
+Material and methods 930, Results 766 and Discussion 777. Counts split whitespace after removing
+ledger attributes and citation keys; Table 1, captions and end matter are excluded. Keep this lean
+length. Comparator counts give no reason to expand it; building the figures and checking their
+agreement with the text is the next substantive communication task.
 
-- The half-rate bound is now ledger claim C53, binding V108 (430.9800119 Ma), and is cited in Results (g).
-- All signposted candidates were read before citing (Codex job, four quotes checked verbatim by Claude);
-  12 DOIs were added to `references/dois.txt`. Gradstein et al. (2012) was dropped because its Crossref
-  record has no authors or editors.
-- Checks: claims check 0 errors on the draft; `make -C manuscript check` passes.
-- Open for review: whether 3,000 words is too lean for *Proc B* (comparators 5,300–5,900); the AI-use
-  declaration wording; funding text from Barry; figures still to be built from the 1d plan.
+The bounded checks are `codex-3c-science-check.md` and `codex-3c-argument-check.md`; focused acceptance
+reads passed after clarifying the pure exponential-decline label. They record case selectors,
+qualification contracts, source sections and access limits. The revisions make the following changes:
 
-Next: Codex — review the step 3c full draft.
+| Point | Revision and verification |
+|---|---|
+| 429 Ma interpreted as a beginning | Restore a one-sided older confidence bound under specified histories, with the 432.4–434.05 Ma unit/inventory sensitivity beside it. |
+| Potential screen and qualification | Explain the joint shared-well likelihood, potential-screen zeroing, identical screening of simulations, independent acceptance, finite grid, withheld claims and separate second-stage rule. |
+| Age-search inference | Distinguish a feasible passing allocation from failure over every allocation. Gather the fixed-model probability-one support condition and unestablished joint geological coverage in Conditions. |
+| Dependence cases | Identify both changes in the 0.0995 case: per-well reference rates and removal of the random well effect. Label the retrospective contours and well deletions as unqualified. |
+| Source and prior scope | Define absence-based maxima; compare effective marginal joint-prior ages with posteriors; retain deposition as a hypothetical mechanism in Discussion; distinguish excluded copyrighted texts from fetched licensed deposits. |
+| Repetition | Move region/Yea numerical details and the 20 Myr delay example back to the supplement. Keep the sensitivities that cross the comparator maximum. |
+| Captions | Preserve study-specific clock summaries, the age-envelope rule, primary spore model, constant-recording unit comparison and retrospective contrast domain. Figures remain unbuilt. |
+
+**C53 confirmed.** V108 selects the correct primary B2 flat-baseline half-rate row. Its evidence blob
+is unchanged from stamp `813b43c`, and the closed form independently gives 430.980011897 Ma, matching
+the saved 430.9800119 Ma and displayed 431.0 Ma. The claim's limits correctly retain the data-selected
+step and retrospective status. The ledger and binding need no change.
+
+**Reference provenance.** Claude reports the remaining eleven-candidate source-reading job and four
+verbatim spot checks; twelve DOIs were added at `c0f83fc`, with Gradstein omitted. This review checked
+targeted original material for Benton/Donoghue, dos Reis et al., Kenrick/Crane and Brown/Smith, retaining
+the earlier Yang/Rannala and Parham checks. The eleven-source job receipt was not found in the bounded
+project search. Its source URLs, sections and claim scopes remain to be preserved during
+reconciliation; the current checks do not attest to every delegated read.
+
+**End matter.** Funding now states “This research received no specific funding”, following Barry's
+chat reply on 11 November: "No specific funding for this project." The proposed AI-use declaration
+credits the recorded systems, versions and tasks, including independent critiques, and correctly
+keeps Barry's final manuscript review prospective.
+
+**Observed checks.** The draft-inclusive numerical check cites all 53 claims with zero errors or
+warnings. Existing citation keys resolve, the abstract meets 200 words under both counts, and the
+adopted closing message matches exactly. `make -C manuscript check` passes lint and reference audits;
+its canonical-only numerical check has one expected warning because C53 is cited only in the new
+draft. The writing audit's formatting flags reflect the section labels and table; “shape” and
+“features” are retained scientific terms, and the two fossil intervals retain their necessary
+parallel description. The canonical products, models, ledger, bibliography and earlier reconstruction
+steps remain untouched. No model reruns or figure renders were needed for this prose review.
+
+**Structural review (Q1/Q2/Q5).** The full prose again exposed shifts from a bound to a date and from
+specified model comparisons to broader causal claims. Explicit result objects, case labels and a
+source-role audit resolve them without lengthening the article towards comparator sizes. Conditions
+remain gathered in two paragraphs. Question statuses and the analysis programme remain unchanged;
+the registers can record the reconstruction loop when it closes.
+
+Next: Claude — reconcile step 3c and preserve the source-reading receipt.
