@@ -4,7 +4,7 @@
 # ///
 """Figures for the reconstructed manuscript and its supplement.
 
-Main text, in citation order: fig1_problem, fig2_evidence, fig3_bodies, fig4_frontier.
+Main text, in citation order: fig1_dispute, fig2_bound, fig3_murzuq, fig4_requirements (figures_main.py).
 Two-page brief: figB1_brief. Supplement: figS2_qsim, figS7_mapping, plus the reviewed Loop 2 and Loop 3 figures reused unchanged from models/.
 Every number drawn here is read from a frozen or reviewed output table, never retyped, except the
 published clock intervals and calibration maxima, which are taken from docs/primer.md §5.3.
@@ -72,7 +72,8 @@ def read(path):
 
 def save(fig, path):
     for ext in ("png", "pdf"):
-        fig.savefig(path.with_suffix(f".{ext}"), dpi=200)
+        fig.savefig(path.with_suffix(f".{ext}"), dpi=200,
+                    metadata={"CreationDate": None, "ModDate": None} if ext == "pdf" else None)
     plt.close(fig)
 
 
@@ -101,172 +102,6 @@ def body_first(cat, exclude_oman=False):
     if exclude_oman:
         units = [r for r in units if "tail:S-w22-K12" not in r["member_ids"]]
     return max(float(r["max_ma"]) for r in units), max(float(r["min_ma"]) for r in units)
-
-
-def fig_problem(path):
-    """Clock intervals, the maxima that shape them and the first appearances of each fossil channel."""
-    fig, axes = plt.subplots(3, 1, figsize=(8.6, 7.4), sharex=True, gridspec_kw={"height_ratios": [3, 3, 6]})
-    for ax, (key, title) in zip(axes[:2], (("embryophyta", "Crown land plants (Embryophyta)"),
-                                           ("tracheophyta", "Crown vascular plants (Tracheophyta)"))):
-        for i, (name, old, young) in enumerate(CLOCKS[key]):
-            ax.barh(i, old - young, left=young, height=0.55, color=CLOCK_COLOURS[name])
-            ax.text(young - 1.2, i, name, va="center", fontsize=8)
-        for x, lab in MAXIMA[key]:
-            ax.axvline(x, color="#a32020", lw=1.0, ls="--")
-            ax.text(x + 0.8, len(CLOCKS[key]) + 0.55, lab, color="#a32020", fontsize=7.2, ha="right", va="top")
-        ax.set_ylim(-0.7, len(CLOCKS[key]) + 0.6)
-        ax.set_yticks([])
-        ax.set_title(title + ": published molecular-clock intervals", fontsize=9.5, loc="left")
-        ax.spines[["left", "top", "right"]].set_visible(False)
-    ax = axes[2]
-    crypt, trilete = spore_first("cryptospore"), spore_first("trilete")
-    oman = body_first("B0")[0]
-    rows = [("Land-plant cryptospores (compilation)", crypt), ("Trilete spores (compilation)", trilete),
-            ("Trilete spores, Borenshult-1 definite (describing authors)", (stage_base("Sandbian"), BENTONITE_MA)),
-            ("Land-plant bodies, including Oman sporangial fragments", (oman, stage_base("Hirnantian"))),
-            ("Land-plant bodies, excluding Oman fragments", body_first("B0", exclude_oman=True)),
-            ("Crown vascular-plant bodies", body_first("B2"))]
-    s4 = (stage_base("Stage 4"), stage_base("Wuliuan"))
-    top = len(rows)
-    ax.barh(top, s4[0] - s4[1], left=s4[1], height=0.5, color="#bbbbbb", hatch="///", edgecolor="#888888")
-    ax.text(s4[1] - 1.2, top, "Cambrian cryptospore-like forms (affinity not accepted)", va="center", fontsize=8)
-    for i, (lab, (possible, certain)) in enumerate(reversed(rows)):
-        ax.barh(i, possible - certain, left=certain, height=0.5, color="#5b7fa6", alpha=0.35)
-        ax.plot([certain, certain], [i - 0.25, i + 0.25], color="#1f3f66", lw=2.2)
-        ax.text(possible + 1.2, i, lab, va="center", ha="right", fontsize=8)
-    ax.set_ylim(-0.7, top + 0.6)
-    ax.set_yticks([])
-    ax.set_title("Fossil record: first-record age supports (band), with earliest certain records marked (tick)",
-                 fontsize=9.5, loc="left")
-    ax.spines[["left", "top", "right"]].set_visible(False)
-    ax.set_xlim(530, 400)
-    ax.set_xlabel("Age (Ma)")
-    for x in (515.5, 459.1, 431.2):
-        ax.axvline(x, color="#a32020", lw=0.6, ls=":")
-    fig.tight_layout()
-    save(fig, path)
-
-
-def fig_evidence(path):
-    """Where the tested evidence comes from: body units and spore frames by region and age."""
-    members = [r for r in read(MEMBERS) if r["reading"] == "main"]
-    cats = {}
-    for r in members:
-        cats.setdefault(r["unit_id"], set()).add(r["category"])
-    units = {r["unit_id"]: (float(r["max_ma"]), float(r["min_ma"]), r["region"]) for r in members if r["category"] == "B0"}
-    frame = contamination.build_frame("stage")
-    fig, ax = plt.subplots(figsize=(8.6, 7.4))
-    y, ticks = 0.0, []
-    for region in REGIONS:
-        rows = sorted((v[0], v[1], uid) for uid, v in units.items() if v[2] == region)
-        spore = region == "Gondwana-North-Africa-Arabia"
-        if not rows and not spore:
-            continue
-        start = y
-        for old, young, uid in rows:
-            c = cats[uid]
-            col = CAT_COLOUR["B2"] if "B2" in c else CAT_COLOUR["B1"] if "B1" in c else CAT_COLOUR["B0"]
-            ax.plot([old, young], [y, y], color=col, lw=1.6, solid_capstyle="butt")
-            y += 0.32
-        if spore:
-            y += 0.3
-            y_old = y
-            for well in frame.wells:
-                for lo, hi in zip(well.older_lo, well.older_hi):
-                    ax.plot([hi, lo], [y, y], color="#3b6ea8", lw=1.0)
-                    y += 0.16
-            ref_lo, ref_hi = stage_base("Rhuddanian"), stage_base("Sheinwoodian")
-            ax.fill_between([ref_hi, ref_lo], y, y + 1.0, color="#3b6ea8", alpha=0.8, lw=0)
-            ax.text(ref_hi - 0.6, y + 0.5, "Murzuq reference: 59 Llandovery cuttings,\n51 with trilete spores",
-                    fontsize=7, va="center")
-            ax.text(441.5, (y_old + y) / 2 - 0.6, "Murzuq: 28 older cuttings,\nno trilete spores reported", fontsize=7,
-                    va="center", color="#3b6ea8")
-            y += 1.4
-            with QSIM.open() as f:
-                m = sum(int(r["cryptospore_marks"]) for r in csv.DictReader(f))
-            ax.fill_between([stage_base("Sandbian"), stage_base("Dapingian")], y, y + 0.9, facecolor="none",
-                            edgecolor="#c47f2c", hatch="///", lw=0.8)
-            ax.text(stage_base("Sandbian") - 0.6, y + 0.45,
-                    f"QSIM-801 (Saudi Arabia): {m} cryptospore occurrences, no triletes", fontsize=7, va="center")
-            y += 1.0
-        ticks.append(((start + y - 0.32) / 2, REGION_LABEL.get(region, region)))
-        ax.axhline(y + 0.1, color="0.88", lw=0.6)
-        y += 0.45
-    for x, lab in ((459.1, "459.1"), (431.2, "431.2")):
-        ax.axvline(x, color="#a32020", lw=0.9, ls="--")
-        ax.text(x - 0.5, -0.9, lab + " Ma maximum", color="#a32020", fontsize=7.2, ha="left", va="center")
-    ax.axvline(stage_base("Lochkovian"), color="0.6", lw=0.6, ls=":")
-    ax.text(stage_base("Lochkovian"), 0.0, "Silurian | Devonian", fontsize=7, color="0.4", ha="center")
-    ax.set_yticks([t for t, _ in ticks], [lab for _, lab in ticks], fontsize=8)
-    ax.set_ylim(y + 0.4, -1.4)
-    ax.set_xlim(472, 393)
-    ax.set_xlabel("Age (Ma); bars span each record's reported age range")
-    ax.spines[["top", "right"]].set_visible(False)
-    handles = [plt.Line2D([], [], color=CAT_COLOUR[k], lw=2.5) for k in ("B2", "B1", "B0")]
-    handles.append(plt.Line2D([], [], color="#3b6ea8", lw=2.5))
-    ax.legend(handles, ["crown vascular-plant body", "other multi-sporangiate body", "other land-plant body",
-                        "spore samples (Murzuq Basin, Libya)"], fontsize=7.5, frameon=False, loc="upper left", bbox_to_anchor=(0, 0.95))
-    fig.tight_layout()
-    save(fig, path)
-
-
-def fig_bodies(path):
-    """Older bounds on the start of the recoverable body record under each recovery history."""
-    hist = [("flat", "Constant rate", "o", "#1b4f72"), ("pbdb_all", "Collection density (PBDB)", "s", "#1b4f72"),
-            ("pbdb_plant_excluded", "Collection density, plant collections removed", "D", "#1b4f72"),
-            ("decline25", "Rate declining into the past (25 Myr)", "o", "#b5651d"),
-            ("decline10", "Rate declining into the past (10 Myr)", "o", "#b5651d")]
-    retro = [(0.1, "Pre-Ludlow rate reduced tenfold"), (0.01, "Pre-Ludlow rate reduced a hundredfold")]
-    cats = [("B0", "Land-plant body, including Oman fragments (×: excluding them)"), ("B1", "Multi-sporangiate (polysporangiophyte) body"),
-            ("B2", "Crown vascular-plant body")]
-    fig, axes = plt.subplots(3, 1, figsize=(9.2, 8.4), sharex=True)
-    crypt = spore_first("cryptospore")
-    for ax, (cat, title) in zip(axes, cats):
-        rows = []
-        for key, lab, mk, col in hist:
-            b, oldest, r = primary_bound(cat, key)
-            if cat == "B0":
-                excluded = primary_bound(cat, key, "without_oman_fragments")[0]
-            rows.append((lab, b, mk, col, False, excluded if cat == "B0" else None))
-        if cat != "B0":
-            for mult, lab in retro:
-                rows.append((lab + " †", suppressed(cat, mult), "^", "#7d3c98", True, None))
-        n = int(r["n_guaranteed"])
-        if cat == "B0":
-            for i, row in enumerate(rows):
-                if row[5] is not None:
-                    ax.plot(row[5], len(rows) - 1 - i, "x", color="0.35", ms=6, mew=1.3)
-            ax.axvspan(crypt[1], crypt[0], color="#5b7fa6", alpha=0.18, lw=0)
-            ax.axvline(crypt[1], color="#5b7fa6", lw=1.0)
-            ax.text(crypt[1] + 0.4, len(rows) + 0.15, "land-plant cryptospores certain by 458.2 Ma", fontsize=7,
-                    color="#3b5f86", ha="left")
-        if cat == "B2":
-            for name, old, young in CLOCKS["tracheophyta"]:
-                ax.axvspan(young, old, color=CLOCK_COLOURS[name], alpha=0.17, lw=0)
-                ax.text((old + young) / 2 if name != "Morris et al. 2018" else 441.5, len(rows) + 0.15,
-                        name.replace(" et al.", ""), fontsize=7, ha="center", color=CLOCK_COLOURS[name])
-            ax.axvline(431.2, color="#a32020", lw=1.0, ls="--")
-        ax.axvspan(oldest, 393.47, color="0.85", alpha=0.6, lw=0)
-        ax.text(oldest - 0.3, len(rows) - 0.4, "observed\nrecord", fontsize=7, color="0.35", va="top")
-        for i, (lab, b, mk, col, is_retro, _) in enumerate(rows):
-            yy = len(rows) - 1 - i
-            if b is None:
-                ax.annotate("", xy=(472, yy), xytext=(oldest + 3, yy),
-                            arrowprops={"arrowstyle": "->", "color": col, "lw": 1.2, "ls": "--" if is_retro else "-"})
-                ax.text(oldest + 4, yy + 0.25, "no bound within 469.4 Ma", fontsize=6.6, color=col, ha="right")
-            else:
-                ax.plot([oldest, b], [yy, yy], color=col, lw=1.0, alpha=0.6, ls="--" if is_retro else "-")
-                ax.plot(b, yy, mk, color=col, ms=5.5, mfc="white" if is_retro else col)
-                ax.text(b + 0.5, yy + 0.3, f"{b:.1f}", fontsize=6.8, ha="right")
-        ax.set_ylim(-1.0, len(rows) + 0.6)
-        ax.set_yticks(range(len(rows)), [r[0] for r in reversed(rows)], fontsize=7.6)
-        ax.tick_params(axis="y", length=0)
-        ax.set_title(f"{title}: {n} dated locality units", fontsize=9.5, loc="left")
-        ax.spines[["left", "top", "right"]].set_visible(False)
-    axes[-1].set_xlim(472, 422)
-    axes[-1].set_xlabel("Age (Ma)")
-    fig.tight_layout()
-    save(fig, path)
 
 
 def fig_mapping(path):
@@ -314,64 +149,6 @@ def fig_qsim(path):
     save(fig, path)
 
 
-FRONTIER = ROOT / "models/f3/loop3/out/frontier.csv"
-
-
-def fig_frontier(path):
-    """Retrospective age-intensity-delay frontier for crown vascular-plant bodies (main reading).
-
-    Curves use the closed form of the flat-plus-step contour, r = (A - c)(0.05^(-1/n) - 1) / (T - d - A),
-    with A, c and n read from frontier.csv; every tabulated contour row is checked against it."""
-    rows = [r for r in read(FRONTIER) if r["reading"] == "main"]
-    params = {}
-    for r in rows:
-        key = r["unit_treatment"]
-        A, c, n = float(r["oldest_possible_ma"]), float(r["cutoff_ma"]), int(r["n_guaranteed"])
-        params[key] = (A, c, n)
-        if r["status"] == "contour":
-            T, d = float(r["candidate_lineage_ma"]), float(r["assumed_diagnostic_delay_myr"])
-            ratio = (A - c) * (0.05 ** (-1 / n) - 1) / (T - d - A)
-            assert abs(ratio - float(r["earlier_to_later_intensity"])) < 1e-8, r
-    T = np.linspace(426.9, 456, 600)
-
-    def curve(key, d):
-        A, c, n = params[key]
-        with np.errstate(divide="ignore", invalid="ignore"):
-            r = np.where(T - d > A, (A - c) * (0.05 ** (-1 / n) - 1) / (T - d - A), np.nan)
-        return np.minimum(r, 1.0)
-
-    fig, ax = plt.subplots(figsize=(7.6, 5.4))
-    for name, old, young in CLOCKS["tracheophyta"]:
-        ax.axvspan(young, min(old, 456), color=CLOCK_COLOURS[name], alpha=0.08 if name.startswith("Morris") else 0.16, lw=0)
-        ax.text((young + min(old, 456)) / 2 if name != "Morris et al. 2018" else 440.0, 1.13,
-                name.replace(" et al.", ""), fontsize=7.5, ha="center", color=CLOCK_COLOURS[name])
-    ax.axvline(431.2, color="#a32020", lw=1.0, ls="--")
-    ax.text(431.0, 0.032, "431.2 Ma\nmaximum", fontsize=7, color="#a32020", ha="right", va="bottom")
-    greens = {0: "#0b4f30", 5: "#2f7d55", 10: "#5ea37f", 20: "#9ccbb0"}
-    for d, col in greens.items():
-        ax.plot(T, curve("primary", d), color=col, lw=2.0 if d == 0 else 1.4,
-                label=f"primary units ({params['primary'][2]}), delay {d} Myr")
-    ax.plot(T, curve("region_stage", 0), color="0.35", lw=1.3, ls="--",
-            label=f"region–stage units ({params['region_stage'][2]}), no delay")
-    ax.plot(T, curve("curated", 0), color="0.35", lw=1.3, ls=":",
-            label=f"curated oldest-record units ({params['curated'][2]}), no delay")
-    for r in rows:
-        if r["status"] == "contour" and r["unit_treatment"] == "primary" and float(r["assumed_diagnostic_delay_myr"]) == 0:
-            ax.plot(float(r["candidate_lineage_ma"]), float(r["earlier_to_later_intensity"]), "o", color=greens[0], ms=4)
-    ax.axvline(params["primary"][0], color="0.6", lw=0.8)
-    ax.text(params["primary"][0] - 0.3, 0.032, "oldest possible\ncrown-member find", fontsize=7, color="0.4", va="bottom")
-    ax.set_yscale("log")
-    ax.set_ylim(0.03, 1.25)
-    ax.set_yticks([0.05, 0.1, 0.2, 0.5, 1.0], ["0.05", "0.1", "0.2", "0.5", "1"])
-    ax.set_xlim(456, 425)
-    ax.set_xlabel("Candidate crown vascular-plant lineage age (Ma)")
-    ax.set_ylabel("Earlier / later recording intensity\nneeded to reach the 95% bound")
-    ax.spines[["top", "right"]].set_visible(False)
-    ax.legend(fontsize=7.2, frameon=False, loc="upper center", bbox_to_anchor=(0.45, -0.14), ncol=2)
-    fig.tight_layout()
-    save(fig, path)
-
-
 def fig_brief(path):
     """One plain-language timeline for the two-page brief: clock estimates against what the rocks show."""
     fig, ax = plt.subplots(figsize=(7.4, 4.0))
@@ -415,18 +192,17 @@ def fig_brief(path):
 
 def main():
     OUT.mkdir(exist_ok=True)
-    for stale in ("fig1_support", "fig3_qsim_share", "fig2_mapping", "fig3_evidence", "fig4_bodies", "fig4_mapping", "figS1_qsim"):
+    for stale in ("fig1_support", "fig3_qsim_share", "fig2_mapping", "fig3_evidence", "fig4_bodies", "fig4_mapping", "figS1_qsim",
+                  "fig1_problem", "fig2_evidence", "fig3_bodies", "fig4_frontier"):
         for ext in ("png", "pdf"):
             (OUT / f"{stale}.{ext}").unlink(missing_ok=True)
-    fig_problem(OUT / "fig1_problem")
-    fig_evidence(OUT / "fig2_evidence")
-    fig_bodies(OUT / "fig3_bodies")
-    fig_frontier(OUT / "fig4_frontier")
     fig_mapping(OUT / "figS7_mapping")
     fig_qsim(OUT / "figS2_qsim")
     fig_brief(OUT / "figB1_brief")
-    inputs = [QSIM, TIMESCALE, SPORES, MEMBERS, BOUNDS, SUPPRESS, MAPPING, FRONTIER,
-              ROOT / "models/f3/loop2/contamination.py", Path(__file__)]
+    import figures_main
+    figures_main.draw(OUT)
+    inputs = [QSIM, TIMESCALE, SPORES, MEMBERS, BOUNDS, SUPPRESS, MAPPING,
+              ROOT / "models/f3/loop2/contamination.py", Path(__file__), *figures_main.INPUTS]
     bound = contamination._input_hashes()
     bound.update({str(p.relative_to(ROOT)): hashlib.sha256(p.read_bytes()).hexdigest() for p in inputs})
     outputs = sorted(OUT.glob("*.png")) + sorted(OUT.glob("*.pdf"))

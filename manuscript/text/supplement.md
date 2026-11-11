@@ -37,7 +37,7 @@ within-range positions are modelling choices, not measured dating distributions.
 
 ### S2.1 Source and frame
 
-@abuhmida2013PalynologicalAnalysisOrdovician reports palynology from six Murzuq Basin wells. All [164]{.C38} appendix samples were
+Abuhmida [@abuhmida2013PalynologicalAnalysisOrdovician] reports palynology from six Murzuq Basin wells. All [164]{.C38} appendix samples were
 transcribed independently, with 158 chart depth and type labels (153 exact matches). The 164 prose-scope
 rows and 158 chart reports were mapped, retaining barren material and possible caving
 (`data/units/libya_*.csv`; `docs/audits/2026-10-31-libya-event-map.md`). The primary frame is the
@@ -152,6 +152,15 @@ result, simultaneous coverage and validity beyond the tested histories are not e
 Murzuq design/delivery combinations qualify. A fourteenth qualified pair, QB-CO, supplies no older M2
 interval and has a narrower class scope. The receipts are in `models/f3/out/qual/`.
 
+**Table S12.** What the Murzuq comparison allows: model-conditional 95% compatibility limits, assessed on the declared simulation grid, on older trilete-producer intensity as a fraction *f* of the Llandovery reference, primary stage allocation. Rows 1–2 constrain intensity sustained from 459.1 Ma to the reference; rows 3–4 constrain an interval of fixed intensity beginning at 459.1 Ma and extending further back.
+
+| Question asked of the 28 older cuttings | Delivery equal ($\rho$ = 1) | Delivery halved | Delivery quartered | Delivery a tenth |
+|------------------------------------|-----------:|-----------:|-----------:|-----------:|
+| Largest constant producer intensity, 459.1 Ma to the Llandovery | [0.091]{.C24} | [0.182]{.C24} | [0.364]{.C24} | [0.910]{.C24} |
+| Largest intensity, exposure-weighted history class | [0.184]{.C24} | [0.258]{.C24} | [0.421]{.C24} | [0.921]{.C24} |
+| Oldest end of a reference-intensity interval beginning at 459.1 Ma | [462.6]{.C03} Ma | [464.1]{.C03} Ma | [467.1]{.C03} Ma | [no limit]{.C03} |
+| Oldest end of an interval at 0.1 or 0.01 of reference intensity | [no limit]{.C05} | [no limit]{.C05} | [no limit]{.C05} | [no limit]{.C05} |
+
 ### S2.3 Contamination and an identification limit
 
 Murzuq's palynofacies fractions use a different preparation and a 200-particle denominator. They cannot
@@ -187,7 +196,7 @@ well/age influence exercise are unqualified sensitivities.
 
 ### S2.4 The calibration material: Borenshult-1
 
-@hooper2026ReconstructingSporeEvolution base the 459.1 Ma maximum on the oldest possible trilete spores from the
+Hooper et al. [@hooper2026ReconstructingSporeEvolution] base the 459.1 Ma maximum on the oldest possible trilete spores from the
 Borenshult-1 core, Östergötland, Sweden [@rubinstein2019BalticaCradleEarly]. Their Supplementary Table 4 keys the soft
 maximum to *Chelinospora?* sp. at 48.2 m (*Baltoniodus variabilis* zone, lower Sandbian) and takes the value from
 the GTS2012 Sandbian base plus its uncertainty, [458.4 + 0.7 = 459.1]{.C42} Ma. The same rule on our timescale gives
@@ -252,7 +261,7 @@ reproduced the four undropped contours with an independent implementation.
 
 ## S3. QSIM-801: a model-conditional floor calculation
 
-@vecoli2017MiddleOrdovicianCryptospores [Table 1, p. 321] report [99]{.C11} cryptospore morphotaxon occurrences across [17 of 20]{.C11}
+Vecoli et al. [@vecoli2017MiddleOrdovicianCryptospores] [Table 1, p. 321] report [99]{.C11} cryptospore morphotaxon occurrences across [17 of 20]{.C11}
 tabled samples assigned to the late Dapingian–early Darriwilian. Their p. 330 explicitly reports no
 triletes in the studied sequence. The table was independently reconstructed from the rendered source
 (`data/units/loop2/replication/`). Its 22 categories include informal morphotypes. Marks are distinct
@@ -287,7 +296,7 @@ and Hanadir/TAYM-4 is separate material without a qualified design[]{.C22} (`man
 
 ## S4. The 515.5 Ma maximum (M1): affinity and the preservation-control argument
 
-@morris2018TimescaleEarlyLand place the maximum at the base of the *Olenellus* Biozone, about [515.5]{.C46} Ma, below the
+Morris et al. [@morris2018TimescaleEarlyLand] place the maximum at the base of the *Olenellus* Biozone, about [515.5]{.C46} Ma, below the
 oldest possible total-group records (Stage 4 Rome Formation cryptospores), and argue for a real absence
 before it: land-plant spores share the preservation potential of the marine algal cysts with which they
 usually occur, so older cyst-bearing sequences without land-plant spores record absence
@@ -299,8 +308,8 @@ producers. The assessment below concerns whether the assembled material can quan
 
 No assessed frame admits an E2 older-zero/reference design. The Borenshult 71.1 m zero is secure under
 the main reading but belongs to a frame that fails its potential screen. It is not a pre-515.5 Ma
-observation. @strother2016SystematicsEvolutionarySignificance places the Tennessee taxa in Charophyta. @taylor2024UltrastructureCambrianCryptospores interpret
-the packets as pre-embryophytic, and @wang2022PalynologicalAssemblageCambrian favour ancestral aeroterrestrial algae while
+observation. Strother [@strother2016SystematicsEvolutionarySignificance] places the Tennessee taxa in Charophyta. Taylor and Strother [@taylor2024UltrastructureCambrianCryptospores] interpret
+the packets as pre-embryophytic, and Wang et al. [@wang2022PalynologicalAssemblageCambrian] favour ancestral aeroterrestrial algae while
 calling direct embryophyte affinity unlikely and the interpretation premature. None explicitly accepts
 the assessed Stage 4 producers as embryophytes. Wall ultrastructure and developmental features bear on
 precursor relationships, so the inclusive reading stays an explicit alternative. Argentine sample
@@ -395,6 +404,18 @@ inventory supplies a lag or delay: the 458.2 Ma cryptospore value is a fossil mi
 the bounds are model-conditioned endpoints. The comparison shows how far an endpoint bound depends on its
 oldest admitted unit.
 
+**Table S13.** Pivotal records: what each shows directly, how we use it, and what a crown claim would
+additionally need.
+
+| Record | Observed or documented | Age support | Our use | A crown claim would also need |
+|---|---|---|---|---|
+| Ghaba-1 fragments, Oman [@wellman2003FragmentsEarliestLand] | Sporangial fragments with in situ cryptospores, some with a sporangial covering; no preserved associated axes or demonstrated conducting tissue | Katian on later correlation (Caradoc in the original) | Land-plant body, one unit | Characters placing the producer in a crown group; not a polysporangiophyte or crown member |
+| Borenshult-1 triletes, Sweden [@rubinstein2019BalticaCradleEarly] | Possible trilete at 48.2 m; definite triletes from 43.1 m; the figures disagree at 41.1 m | Sandbian; the oldest definite level lies below the 454.41 Ma bentonite | The 459.1 Ma maximum's basis; a weak absence screen | An argument placing the producer in the crown; a trilete mark alone does not |
+| *Cooksonia barrandei*, Czech Republic [@libertin2018SporophytesPolysporangiateLand] | Branched fertile sporophyte with terminal sporangia and in situ trilete spores; no tracheids reported | Sheinwoodian, horizon inferred from slab fauna and correlation | Oldest polysporangiophyte | Placement on the lycophyte or euphyllophyte side; tracheids alone would not suffice |
+| Irish Homerian axes [@edwards1980RecordsCooksoniatypeSporangia] | Fragmentary sporangia on short axes, one branched; no tracheids seen | Late Homerian graptolite zone | Hooper et al.'s 431.2 Ma anchor | As for *C. barrandei* |
+| Yea *Baragwanathia*, Victoria | Microphyllous leafy axes; no reproductive structures reported from the material claimed as Silurian [@libertin2024GenusAberlemniaSiluriandevonian] | Gorstian on graptolites versus Early Devonian on brachiopods and mapping [@earp2024NotanopliidBrachiopodsAssociated]; full range carried | Influential crown vascular-plant unit | Matching the competing dates to the exact horizons |
+| Bathurst Island zosterophylls, Arctic Canada [@kotyk2002MorphologicallyComplexPlant] | Fertile zosterophylls in spikes and clusters | Late Ludlow on conodonts, graptolites and brachiopods; possibly Pridoli | Influential crown vascular-plant unit (lycophyte line) | None for crown Tracheophyta; not crown Lycophyta |
+
 ### S5.2 The endpoint calculation
 
 For a fixed younger cutoff $c$, let $U(a)=\int_c^a w(s)\,ds$ be cumulative recovery. Conditional on $n$
@@ -403,7 +424,7 @@ $P(A\leq a)=\{U(a)/U(T)\}^n$. Inverting at 0.05 gives the exact one-sided 95% ol
 
 $$U(T_{\mathrm{upper}})=U(A)\,0.05^{-1/n}.$$
 
-The absolute recovery rate cancels. For constant $w$ this is the @strauss1989ClassicalConfidenceIntervals and @marshall1990ConfidenceIntervalsStratigraphic expression with a fixed cutoff, which uses all $n$ observations. Marshall [-@marshall1994ConfidenceIntervalsStratigraphic; -@marshall1997ConfidenceIntervalsStratigraphic] and @wang2016AdaptiveCredibleIntervals relax the assumption of uniform recovery in other ways. A bound beyond the declared history's
+The absolute recovery rate cancels. For constant $w$ this is the Strauss and Sadler [@strauss1989ClassicalConfidenceIntervals] and Marshall [@marshall1990ConfidenceIntervalsStratigraphic] expression with a fixed cutoff, which uses all $n$ observations. Marshall [-@marshall1994ConfidenceIntervalsStratigraphic; -@marshall1997ConfidenceIntervalsStratigraphic] and Wang et al. [@wang2016AdaptiveCredibleIntervals] relax the assumption of uniform recovery in other ways. A bound beyond the declared history's
 domain (469.4 Ma, where the held PBDB effort series ends) is reported as *not bounded within the domain*,
 not as an infinite-age inference.
 

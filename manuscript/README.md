@@ -40,8 +40,9 @@ python3 manuscript/package.py
 Citations are Pandoc keys (`[@key]`) from the programme bibliography `references/refs.yaml`. To cite a
 new work, add its DOI to `references/dois.txt` (or a CSL entry to `references/manual.yaml` if it has no
 DOI), rebuild, and cite the printed key. Keys follow Better BibTeX's pattern, so a Zotero export of
-the same DOIs matches. The CSL is a placeholder (Chicago author-date) until a journal is chosen;
-`make -C ~/work/makedoc csl-source JOURNAL="..."` fetches a journal style.
+the same DOIs matches. The article and supplement use the *Proceedings of the Royal Society B* style
+(`csl/proceedings-of-the-royal-society-b.csl`, from the Zotero style repository), which numbers
+citations, so write narrative citations as `Morris et al. [@key]`; the brief keeps Chicago author-date.
 
 Generated content is not edited by hand: the table blocks in `supplement.md`, `figures/`,
 `references/refs.yaml`, `build/` and the manifests. The body-record analysis itself is reproduced by

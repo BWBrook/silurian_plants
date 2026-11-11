@@ -407,4 +407,12 @@ data archived, and the human–AI correspondence record published alongside.
   exposed); no new ensemble or evolutionary reconstruction ran. Findings and pending
   corrections are separated in `docs/audits/2026-10-30-frame-and-pilot-review.md`.
 
+- F3 article reconstruction (10–11 November 2026), following Barry's stepwise method: Claude drafted
+  each step (main message, abstracts, one-page paper, section and paragraph abstracts, full draft,
+  final detailing), built figures 1–4 and integrated the result into the canonical products; Codex
+  (`gpt-6.1-sol`) reviewed and revised every step, read the candidate references (with Claude
+  checking quotes verbatim), confirmed the half-rate ledger claim C53 and repaired the figures'
+  scientific contracts. A Claude Sonnet subagent aligned the agent guide. Barry chose the main
+  message and set each step. Record: `manuscript/reconstruction/README.md`.
+
 `docs/decisions.md` records who decided what and when, for the eventual statement of AI roles.

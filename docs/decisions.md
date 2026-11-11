@@ -3,6 +3,25 @@
 Dated record of decisions that shape the programme. Newest first. Say who decided, and quote
 Barry exactly (with source) or label a paraphrase.
 
+## 2026-11-11: reconstructed F3 article becomes canonical (Claude and Codex, under Barry's method)
+
+- **Integrated.** The reviewed step-4 draft (`manuscript/reconstruction/4-final-draft.md`) is now
+  `manuscript/text/main.md`, with legends in `figures.md` and figures 1–4 drawn by
+  `manuscript/figures_main.py` from `figures.py`. Codex proposed the integration after accepting the
+  figures (Board 158); Barry set the reconstruction steps in chat, including step 4: "Think of step 3
+  as building a solid house. Step 4 is the painting and decorating, to make it ready for sale."
+- **Format.** *Proc B* structure and end matter; numbered *Proc B* citation style for article and
+  supplement, with narrative citations written as "Author et al. [n]"; the brief keeps author-date.
+  The brief now leads with the adopted main message.
+- **Ledger.** C53 (half-rate bound, 430.98 Ma) added and confirmed by Codex. All 53 claims are cited
+  across the four products with no errors or warnings; C03, C05, C26 and C37 moved to the agent guide.
+- **Open for Barry:** byline and CRediT wording (deferred by Barry, 10 November 2026), competing
+  interests, final review before any submission.
+- **Structural review (Q1/Q2/Q5).** The stepwise reconstruction served: each expansion exposed a
+  scope slip (a bound read as a date, aggregate contrasts read as separate mechanisms, interpolated
+  scenario limits) that the paired review caught. No question changed status; the analysis programme
+  is unchanged.
+
 ## 2026-11-10: main message for the F3 article (Barry; Claude and Codex)
 
 - **Adopted** (Barry, chat, 10 November 2026: "Reconciled version! This is a team effort."):

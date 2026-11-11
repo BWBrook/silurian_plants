@@ -2,18 +2,14 @@
 # requires-python = ">=3.12"
 # dependencies = ["matplotlib", "numpy", "scipy"]
 # ///
-"""Figures 1-4 for the reconstructed F3 article (reconstruction step 4).
+"""Main-text figures 1-4 of the F3 article, drawn by figures.py into manuscript/figures/.
 
 Numerical results are read from frozen or reviewed output tables; the published clock intervals,
-maxima and ash age come from manuscript/figures.py. Diagnostic delays are declared scenarios. Outputs go to
-manuscript/reconstruction/figures/, with input and output hashes in figures.json.
-
-    uv run manuscript/reconstruction/figures_step4.py
+maxima and ash age come from figures.py. Diagnostic delays are declared scenarios. Built from the
+reconstruction (manuscript/reconstruction/README.md, step 4) and reviewed by Codex.
 """
 
 import csv
-import hashlib
-import json
 import sys
 from pathlib import Path
 
@@ -24,9 +20,8 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 HERE = Path(__file__).resolve().parent
-ROOT = HERE.parents[1]
-OUT = HERE / "figures"
-sys.path.insert(0, str(ROOT / "manuscript"))
+ROOT = HERE.parent
+sys.path.insert(0, str(HERE))
 import figures as F  # noqa: E402
 
 UNITS = ROOT / "models/f3/out/m2_units.csv"
@@ -335,20 +330,11 @@ def fig4(path):
     save(fig, path)
 
 
-def main():
-    OUT.mkdir(exist_ok=True)
-    fig1(OUT / "fig1_dispute")
-    fig2(OUT / "fig2_bound")
-    fig3(OUT / "fig3_murzuq")
-    fig4(OUT / "fig4_requirements")
-    inputs = [F.TIMESCALE, F.SPORES, F.MEMBERS, F.BOUNDS, F.SUPPRESS, UNITS, RESULTS, FRONTIER,
-              ROOT / "manuscript/figures.py", Path(__file__)]
-    outputs = sorted(OUT.glob("*.png")) + sorted(OUT.glob("*.pdf"))
-    digest = lambda p: hashlib.sha256(p.read_bytes()).hexdigest()  # noqa: E731
-    (OUT / "figures.json").write_text(json.dumps(
-        {"inputs": {str(p.relative_to(ROOT)): digest(p) for p in inputs},
-         "outputs": {str(p.relative_to(ROOT)): digest(p) for p in outputs}}, indent=2) + "\n")
+INPUTS = [UNITS, RESULTS, FRONTIER, Path(__file__)]
 
 
-if __name__ == "__main__":
-    main()
+def draw(out):
+    fig1(out / "fig1_dispute")
+    fig2(out / "fig2_bound")
+    fig3(out / "fig3_murzuq")
+    fig4(out / "fig4_requirements")

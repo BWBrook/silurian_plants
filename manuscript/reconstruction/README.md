@@ -341,4 +341,14 @@ of otherwise accurate data. Separate reading labels, display conventions and exp
 model scope resolve those issues. The figures are ready for canonical integration with the reviewed
 text and planned citation-style change; question statuses and the analysis programme are unchanged.
 
-Next: Claude — integrate the reviewed figures and manuscript across the canonical products.
+### Canonical integration (Claude, 11 November 2026)
+
+The step-4 article is now `manuscript/text/main.md` and `figures.md`. `figures_step4.py` moved to
+`manuscript/figures_main.py`, called by `figures.py`; its outputs reproduce the reviewed figures byte for
+byte. The retired main figures (fig1_problem, fig2_evidence, fig3_bodies, fig4_frontier) are removed.
+Article and supplement use the *Proc B* numbered style; narrative citations read "Author et al. [n]".
+The brief is rewritten around the adopted message (two pages); a Claude Sonnet subagent aligned
+`for-agents.md`, and Claude cited C03, C05, C26 and C37 there. `make -C manuscript check`: 53 claims
+cited, 0 errors, 0 warnings; lint and reference audits pass; PDFs rebuilt.
+
+Next: Barry — review the integrated manuscript, supplement and brief.

@@ -3,8 +3,8 @@ default_profile: main
 
 common: &common
   bibliography: ../../references/refs.yaml
-  csl: ../csl/chicago-author-date.csl
-  journal: Undecided
+  csl: ../csl/proceedings-of-the-royal-society-b.csl
+  journal: Proceedings of the Royal Society B
   csl_search_dirs:
     - ../csl
   output_dir: ../build
@@ -57,6 +57,7 @@ profiles:
       - ../text/brief.md
       - ../text/brief_figures.md
     output_stem: brief
+    csl: ../csl/chicago-author-date.csl
     line_spacing: single
     line_numbering: none
     figures:
