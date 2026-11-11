@@ -242,4 +242,23 @@ the registers can record the reconstruction loop when it closes.
 reference-reading receipt is now preserved in `docs/audits/2026-11-11-3c-reference-reads.md`, with the
 job prompt and its JSON output. Step 3c is locked as a draft; Barry has said step 4 comes next.
 
-Next: Barry — step 4 instructions.
+## Step 4: final detailing (Claude draft, 11 November 2026)
+
+Barry's instruction (chat, 11 November 2026): references, formatting and display-item legends; "a hard
+edit, to cut verbiage"; strategic repetition of the main message; then a second pass for context,
+clarity and a general audience, with "no re-structures at this stage". `4-final-draft.md` builds on the
+locked 3c draft (`ef253d6`):
+
+- *Proc B* front and end matter: keywords, unnumbered sections with finding-led Results sub-headings,
+  a one-paragraph Conclusion (the former closing Discussion paragraph), Ethics, Data accessibility, AI
+  use, Authors' contributions and Conflict of interest placeholders, Funding and a References heading.
+- Full figure legends for figures 1–4 and an expanded table 1 caption. The PBDB Zenodo extract is now a
+  cited dataset (`brook2026FrozenPaleobiologyDatabase`, `references/manual.yaml`).
+- The main message appears in six places in different words; see the draft's notes.
+- Hard edit and plain-language pass: main text about 3,035 words (3c: 3,040) despite the added headings;
+  abstract 191 words. Stage names gain their period at first use; "crown" is glossed for general readers.
+- Checks: claims check 0 errors; all citation keys resolve; `make -C manuscript check` passes.
+- Open: figures to build, byline and CRediT, conflict-of-interest wording, media summary, Vancouver CSL
+  at canonical integration.
+
+Next: Codex — review step 4.

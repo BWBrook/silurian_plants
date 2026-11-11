@@ -49,6 +49,18 @@ references:
   page: 1012–1016
   publisher: Informa UK Limited
   DOI: 10.1080/01621459.1994.10476836
+- id: brook2026FrozenPaleobiologyDatabase
+  citation-key: brook2026FrozenPaleobiologyDatabase
+  type: dataset
+  title: 'Frozen Paleobiology Database all-taxa collections extract: Darriwilian–Emsian, 28 October 2026'
+  author:
+  - family: Brook
+    given: Barry W.
+  issued:
+    date-parts:
+    - - 2026
+  publisher: Zenodo
+  DOI: 10.5281/zenodo.24028289
 - id: brown2017PastSureTense
   citation-key: brown2017PastSureTense
   type: article-journal

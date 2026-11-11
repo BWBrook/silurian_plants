@@ -11,3 +11,13 @@ references:
       date-parts: [[2013]]
     publisher: University of Sheffield
     URL: https://etheses.whiterose.ac.uk/id/eprint/4475/
+  - id: brook2026FrozenPaleobiologyDatabase
+    type: dataset
+    title: "Frozen Paleobiology Database all-taxa collections extract: Darriwilian–Emsian, 28 October 2026"
+    author:
+      - family: Brook
+        given: Barry W.
+    issued:
+      date-parts: [[2026]]
+    publisher: Zenodo
+    DOI: 10.5281/zenodo.24028289
