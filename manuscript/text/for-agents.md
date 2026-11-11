@@ -169,8 +169,9 @@ Do not reintroduce any of these. Each was caught in review; the record is in `su
    Do not fix it to either end.
 10. **Wells.** The Murzuq frame has five wells; the 28 older cuttings come from three of them.
 11. **Figure numbering.** The main figures are `fig1_dispute`, `fig2_bound`, `fig3_murzuq` and
-    `fig4_requirements` (from `figures_main.py`); the mapping matrix is `figS7_mapping`. The names
-    `fig1_problem`, `fig2_evidence`, `fig3_bodies` and `fig4_frontier` are retired, and older audits and
+    `fig4_requirements` (from `figures_main.py`); the graphical abstract, also the brief's figure, is
+    `graphical_abstract` (from `figures_abstract.py`); the mapping matrix is `figS7_mapping`. The names
+    `fig1_problem`, `fig2_evidence`, `fig3_bodies`, `fig4_frontier` and `figB1_brief` are retired, and older audits and
     supplement text may still use them.
 12. **GTS2012 against ICS v2024/12.** Literature Early Devonian boundaries differ from ours by up to
     3 Myr; `data/timescale.csv` is the only source of numerical ages.

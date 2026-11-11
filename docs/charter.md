@@ -414,5 +414,10 @@ data archived, and the human–AI correspondence record published alongside.
   checking quotes verbatim), confirmed the half-rate ledger claim C53 and repaired the figures'
   scientific contracts. A Claude Sonnet subagent aligned the agent guide. Barry chose the main
   message and set each step. Record: `manuscript/reconstruction/README.md`.
+- Graphical abstract (12 November 2026), at Barry's request, for the journal and as the brief's figure:
+  Claude (Opus 5.5) designed and drew it from the reviewed output tables (`manuscript/figures_abstract.py`)
+  and trimmed the brief to keep two pages; a Claude Sonnet subagent tested it cold for lay comprehension,
+  which led to direct scenario labels, plain glosses and a stated distinction between requirements and
+  95% limits.
 
 `docs/decisions.md` records who decided what and when, for the eventual statement of AI roles.

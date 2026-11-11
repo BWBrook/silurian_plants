@@ -5,7 +5,7 @@
 """Figures for the reconstructed manuscript and its supplement.
 
 Main text, in citation order: fig1_dispute, fig2_bound, fig3_murzuq, fig4_requirements (figures_main.py).
-Two-page brief: figB1_brief. Supplement: figS2_qsim, figS7_mapping, plus the reviewed Loop 2 and Loop 3 figures reused unchanged from models/.
+Graphical abstract, also the brief's figure: graphical_abstract (figures_abstract.py). Supplement: figS2_qsim, figS7_mapping, plus the reviewed Loop 2 and Loop 3 figures reused unchanged from models/.
 Every number drawn here is read from a frozen or reviewed output table, never retyped, except the
 published clock intervals and calibration maxima, which are taken from docs/primer.md §5.3.
 """
@@ -149,60 +149,21 @@ def fig_qsim(path):
     save(fig, path)
 
 
-def fig_brief(path):
-    """One plain-language timeline for the two-page brief: clock estimates against what the rocks show."""
-    fig, ax = plt.subplots(figsize=(7.4, 4.0))
-    groups = [("Molecular clocks: common ancestor of all living land plants",
-               [(n.replace(" et al.", ""), o, y, CLOCK_COLOURS[n], None) for n, o, y in CLOCKS["embryophyta"]]),
-              ("Molecular clocks: common ancestor of living vascular plants",
-               [(n.replace(" et al.", ""), o, y, CLOCK_COLOURS[n], None) for n, o, y in CLOCKS["tracheophyta"]]),
-              ("Fossils: first-record age supports",
-               [("Land-plant spores", *spore_first("cryptospore")[::-1], "#5b7fa6", None),
-                ("Spore-capsule fragments (Oman)", stage_base("Hirnantian"), body_first("B0")[0], "#5b7fa6", None),
-                ("Branched plant bodies", *body_first("B1")[::-1], "#5b7fa6", None),
-                ("Vascular-plant bodies", *body_first("B2")[::-1], "#5b7fa6", None)])]
-    y, ticks, labels = 0, [], []
-    for title, rows in reversed(groups):
-        for lab, a, b, col, _ in reversed(rows):
-            if col == "#5b7fa6":
-                certain, possible = a, b
-                ax.barh(y, possible - certain, left=certain, height=0.6, color=col, alpha=0.45)
-                ax.plot([certain, certain], [y - 0.3, y + 0.3], color="#1f3f66", lw=2.0)
-            else:
-                ax.barh(y, a - b, left=b, height=0.6, color=col)
-            ticks.append(y); labels.append(lab); y += 1
-        ax.text(527, y - 0.15, title, fontsize=8, fontweight="bold", va="bottom")
-        y += 1.0
-    steady, _, _ = primary_bound("B2", "flat")
-    sparse = suppressed("B2", 0.1)
-    ax.annotate("", xy=(steady, -0.45), xytext=(steady, -1.2), arrowprops={"arrowstyle": "->", "color": "#1f6f4a"})
-    ax.text(steady - 1.5, -1.25, f"{steady:.0f} Ma: conditional 95% older limit\nconstant recording; primary units",
-            ha="left", va="top", fontsize=7, color="#1f6f4a")
-    ax.annotate("", xy=(sparse, -0.45), xytext=(sparse, -1.2), arrowprops={"arrowstyle": "->", "color": "#7d3c98", "ls": "--"})
-    ax.text(sparse + 1.5, -1.25, f"{sparse:.0f} Ma: illustrative older limit\n10-fold lower earlier recording",
-            ha="right", va="top", fontsize=7, color="#7d3c98")
-    ax.set_yticks(ticks, labels, fontsize=7.4)
-    ax.tick_params(axis="y", length=0)
-    ax.set_xlim(527, 400)
-    ax.set_ylim(-3.0, y - 0.6)
-    ax.spines[["left", "top", "right"]].set_visible(False)
-    ax.set_xlabel("Millions of years ago")
-    fig.tight_layout()
-    save(fig, path)
-
 def main():
     OUT.mkdir(exist_ok=True)
     for stale in ("fig1_support", "fig3_qsim_share", "fig2_mapping", "fig3_evidence", "fig4_bodies", "fig4_mapping", "figS1_qsim",
-                  "fig1_problem", "fig2_evidence", "fig3_bodies", "fig4_frontier"):
+                  "fig1_problem", "fig2_evidence", "fig3_bodies", "fig4_frontier", "figB1_brief"):
         for ext in ("png", "pdf"):
             (OUT / f"{stale}.{ext}").unlink(missing_ok=True)
     fig_mapping(OUT / "figS7_mapping")
     fig_qsim(OUT / "figS2_qsim")
-    fig_brief(OUT / "figB1_brief")
     import figures_main
     figures_main.draw(OUT)
+    import figures_abstract
+    figures_abstract.draw(OUT / "graphical_abstract")
     inputs = [QSIM, TIMESCALE, SPORES, MEMBERS, BOUNDS, SUPPRESS, MAPPING,
-              ROOT / "models/f3/loop2/contamination.py", Path(__file__), *figures_main.INPUTS]
+              ROOT / "models/f3/loop2/contamination.py", Path(__file__), *figures_main.INPUTS,
+              *figures_abstract.INPUTS]
     bound = contamination._input_hashes()
     bound.update({str(p.relative_to(ROOT)): hashlib.sha256(p.read_bytes()).hexdigest() for p in inputs})
     outputs = sorted(OUT.glob("*.png")) + sorted(OUT.glob("*.pdf"))

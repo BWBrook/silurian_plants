@@ -98,7 +98,7 @@ def main():
             if p.is_file() and "__pycache__" not in p.parts and p.suffix not in {".pyc", ".tex", ".log"}:
                 add(p.relative_to(ROOT), role)
 
-    for name in ("claims.csv", "value-bindings.csv", "estimands.md", "makedoc.lock.json", "external_candidates.csv", "mapping.csv", "figures.py", "figures_main.py", "tables.py", "package.py",
+    for name in ("claims.csv", "value-bindings.csv", "estimands.md", "makedoc.lock.json", "external_candidates.csv", "mapping.csv", "figures.py", "figures_main.py", "figures_abstract.py", "tables.py", "package.py",
                  "README.md", "authors.yaml", "Makefile", "settings/build.yaml", "csl/chicago-author-date.csl",
                  "csl/proceedings-of-the-royal-society-b.csl"):
         add("manuscript/"+name, "authored manuscript build, evidence ledger or reproduction code")
