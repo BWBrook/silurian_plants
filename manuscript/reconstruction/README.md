@@ -2,8 +2,8 @@
 
 Barry's method for rebuilding a paper after its first draft (chat, 10 November 2026). The files form a
 working reconstruction. Claude's first version of steps 1–2 is preserved at `1fe577c`; those steps have
-been reconciled and Barry adopted their main message at `0306623`. Codex's step 3a revision awaits
-Claude's reconciliation before the next reconstruction step. The target remains
+been reconciled and Barry adopted their main message at `0306623`. Step 3a is reconciled at `dabd5b9`;
+Codex's step 3b revision awaits Claude's reconciliation before the next reconstruction step. The target remains
 *Proceedings of the Royal Society B*. AI byline wording remains a placeholder for the submission phase.
 
 ## Steps 1–2
@@ -133,12 +133,47 @@ body-size and tissue traits as recording mechanisms (attached to the body compar
 transfer to other absence-based maxima. Simulation coverage moves to the supplement. Counts: 272, 295,
 290 and 292 words; claims check 0 errors. Step 3a is locked as a draft.
 
-## Step 3b: paragraph abstracts (Claude draft, 10 November 2026)
+## Step 3b: paragraph abstracts (Codex revision, 11 November 2026)
 
-`3b-paragraph-abstracts.md`: 26 paragraphs (Introduction 5, Material and methods 8, Results 8,
-Discussion 6), each with a one-sentence key message, order and coverage checks against 3a, and an
-abstract of 3–4 sentences with citation signposts. The signposts use 34 existing references and 14
-candidates whose DOIs were checked against Crossref; candidates are to be read before citing. Claims
-check: 0 errors.
+`3b-paragraph-abstracts.md` revises `fca1069`. It has **27 paragraph abstracts** (Introduction 5,
+Material and methods 8, Results 8, Discussion 6), each with a one-sentence framework message and
+3–4 sentences, excluding citation signposts. Every section retains an order and coverage check
+against the reconciled 3a. The adopted main message closes D6 unchanged.
 
-Next: Codex — review step 3b.
+The bounded checks are `codex-3b-science-check.md` and `codex-3b-reference-check.md`. Their acceptance
+reads passed after restoring the specific cases and correcting R4: the Darriwilian supports extend
+older than 459.1 Ma, but their exposure contribution under a postulated start at that age depends on
+the within-stage treatment. These review notes give source sections, output selectors and model
+contracts; the numerical checker separately checks the existing bindings.
+
+| Review question or issue | Disposition |
+|---|---|
+| Keep R5 and R6 separate? | Yes. R5 gives primary conditional bounds and the fixed-history diagnostic; R6 shows unit/inventory sensitivity across 431.2 Ma and the smaller shifts in the tested primary constant-rate timescale cases. |
+| Add Wilkinson to D3? | Omit from the current paragraph. Its branching-and-sampling route to a molecular prior is distinct, but the present contrast needs Silvestro, CladeDate and Hooper. The reference audit preserves that distinction. |
+| I2's soft-bound practice | Replace the unsupported prevalence claim with a definition supported by original Yang and Rannala material; original Parham sections support explicit justification. |
+| Place Conditions at D4? | Keep after interpretation/comparison and before evidence that would sharpen the results. State the base treatment in Methods and gather limits at D4. |
+| Qualification, confidence and age diagnostics | Name the screened-design two-stage qualification rule, proxy units, minimum guaranteed count, finite-sample count/oldest-find conditioning, and the observation-model support condition for conservative rejection. Restore proper TeX. |
+| Step, timescale and causal claims | Define the contrast at ancestor age minus assumed delay, retain the retrospective step, and label the primary constant-rate timescale cases. The models quantify aggregate scenarios; separate biological mechanisms remain open. |
+| Proposed future evidence | Documented search effort could constrain recording opportunities. Rock availability alone does not identify a recording rate; new character evidence may change fossil admission as well as the node link. |
+
+**Reference coverage.** The revised signposts identify 34 existing works and 13 additional candidates.
+Strother 2021 was already in the bibliography and is now signposted by its existing key. Relevant
+original sections of Yang and Rannala and Parham were read for I2; Wilkinson was read to assess its
+distinct role, then omitted from D3. The remaining candidates are explicitly pending content reads.
+Comparator reference counts prompt a coverage check, rather than a citation quota. Bibliography
+integration waits for relevant source reading and full prose.
+
+**Observed checks.** All 27 abstracts have 3–4 sentences; counts include every sentence in I5 and M7,
+which now use ordinary prose. Existing citation keys resolve to the bibliography. The checker covers
+the four frozen products and reconstruction 1a, 1b, 2, 3a and 3b: 52 claims cited, zero errors or
+warnings. The half-rate example remains independently checked but pending ledger integration before
+canonical prose. The ledger, bibliography, models, reconciled 3a and canonical products stay frozen;
+no model runs or renders were needed.
+
+**Structural review (Q1/Q2/Q5).** Expansion reintroduced ambiguity about proxy horizons, simulation
+acceptance and the time exposed after a candidate start. The paragraph plan now keeps each result
+attached to its case and each mechanism distinct from the aggregate contrast. Separate primary-bound
+and sensitivity paragraphs preserve the conclusion-changing unit result. Question statuses and the
+analysis programme remain unchanged; the registers can record the reconstruction loop when it closes.
+
+Next: Claude — reconcile step 3b before expanding the full prose.
