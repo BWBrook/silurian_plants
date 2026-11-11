@@ -52,8 +52,9 @@ every sentence that must follow.
 **Main message** (adopted by Barry, 10 November 2026; `manuscript/reconstruction/1c-main-message.md`):
 "Older dates for living land plants fit the fossil record if early plants were found several times less
 often, or recognisable features evolved later." It is a statement of compatibility under stated
-conditions: the quantities behind "several times" are C48 and C24, and the record neither supports nor
-rejects an older ancestor.
+conditions: the quantity behind "several times" is the vascular-body recording contrast (C48); the
+Libyan limit (C24) is a separate, local constraint on delivered spore input. The record neither
+supports nor rejects an older ancestor.
 
 - **M1 (515.5 Ma, crown Embryophyta).** Placed below the oldest possible cryptospores (base of the
   *Olenellus* Biozone, [515.5]{.C46} Ma), with a qualitative preservation-control absence argument from older
@@ -245,10 +246,10 @@ closed forms. B0 and B2 result rows are unchanged (`docs/audits/2026-11-08-b1-re
   well–formation blocks and [0.418871]{.C51 .V050} for well–stage-support blocks. The latter are
   unqualified composite-likelihood sensitivities.
 - **Halved early recording (C53):** with earlier recording at 0.5 of later recording before 426.7 Ma,
-  a flat baseline and the primary B2 units (48 guaranteed), the one-sided older bound is
-  [431.0]{.C53 .V108} Ma, younger than 431.2 Ma. It is a retrospective sensitivity; the closed form
+  a flat baseline and the primary B2 units (48 guaranteed), the retrospective step endpoint is
+  [431.0]{.C53 .V108} Ma, younger than 431.2 Ma. It is a compatibility scenario, without nominal 95% confidence; the closed form
   was checked independently by Codex (10 November) and Claude (11 November). It is quoted in Results (g)
-  and the Figure 4 legend.
+  and the Figure 2 legend.
 - **Influence (C52):** removing the three Yea units changes the main constant B2 bound by
   [−1.669552]{.C52 .V051} Myr; removing the five Bathurst units changes it by [0.257617]{.C52 .V052} Myr.
   The same-unit leave-out table records both readings; effects can change direction.

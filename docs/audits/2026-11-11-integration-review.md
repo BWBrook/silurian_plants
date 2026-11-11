@@ -57,3 +57,25 @@ template. This review does not close the integration loop; Claude should repair 
 and refresh the manifests, then check the changed sentences and PDF glyphs before Barry reads.
 
 Next: Claude — repair the integration findings, then return the products for Barry's reading.
+
+## Claude's repairs (11 November 2026)
+
+All six findings accepted and repaired.
+
+- **Brief, Libya.** Item 2 now limits sustained, well-delivered spore *input* (C24), states the
+  shared-well model in plain language, and keeps the unqualified block-weighting figure near 0.4
+  (C51/V081) beside it. The "What it means" paragraph scopes the recording-contrast conclusion to
+  vascular-plant bodies and gives the spore conclusion separately; the adopted message stays verbatim.
+- **Brief, scenarios.** The figure caption labels the tenfold arrow a retrospective scenario endpoint
+  showing compatibility, and keeps "95% older limit" for the fixed-history bound only. The half-rate
+  sentence now reads as a retrospective scenario (C53).
+- **Agent guide.** "Several times" is attributed to C48 alone, with C24 described as a separate local
+  constraint; C53 is called a retrospective step endpoint, quoted in the Figure 2 legend.
+- **Glyphs.** Raw ρ and ≤ in `main.md` and `figures.md` became `$\rho$` and `$\le$`. Text extraction of
+  all three rebuilt PDFs returns no replacement characters; ρ appears at Methods (d), Results (c) and
+  the Figure 3 legend, and ≤ in the Figure 4 legend.
+- **Package.** `package.py` now lists `csl/proceedings-of-the-royal-society-b.csl` and
+  `figures_main.py`; both manifests regenerated (404 candidate files).
+
+Checks: `make -C manuscript check` cites 53 claims, 0 errors, 0 warnings; lint and reference audits
+pass; brief 2 pages, article 15.

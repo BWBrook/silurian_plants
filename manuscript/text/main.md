@@ -114,7 +114,7 @@ basin lay near the Ordovician South Pole, within the area of Hirnantian glaciati
 **(d) Spore encounter model.** We jointly fitted the reference encounter rate and older input, with a
 mean-one gamma-distributed effect (shape and rate 2) shared by the cuttings of each well. Given this
 effect and their ages, which are uniform within each cutting's stage range, cutting outcomes are
-independent. Older input is a fraction *f* of Llandovery input, and a fixed delivery ratio *ρ* covers
+independent. Older input is a fraction *f* of Llandovery input, and a fixed delivery ratio $\rho$ covers
 differences in transport, preservation and preparation. We computed upper 95% compatibility limits on
 *f* for constant input, and for the exposure-weighted mean of variable histories, from a postulated
 start, with input between zero and the reference level. The potential screen sets older reports to
