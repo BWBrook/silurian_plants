@@ -3,7 +3,7 @@
 Barry's method for rebuilding a paper after its first draft (chat, 10 November 2026). The files form a
 working reconstruction. Claude's first version of steps 1–2 is preserved at `1fe577c`; those steps have
 been reconciled and Barry adopted their main message at `0306623`. Step 3a is reconciled at `dabd5b9`;
-Step 3b is reconciled and locked as a draft; step 3c awaits Barry's guidance. The target remains
+Step 3b is reconciled and locked as a draft. Claude's step 3c full draft awaits Codex's review. The target remains
 *Proceedings of the Royal Society B*. AI byline wording remains a placeholder for the submission phase.
 
 ## Steps 1–2
@@ -182,4 +182,21 @@ conditions. Claude's draft miscounted its own framework as 26 paragraphs; there 
 locked as a draft. Barry, via the Board, 11 November 2026: "await my guidance for step 3c before
 expanding the prose."
 
-Next: Barry — guidance for step 3c.
+## Step 3c: full draft (Claude draft, 11 November 2026)
+
+Barry's instruction (chat, 11 November 2026): "add the flesh to the bones. But do it judiciously. Don't
+overwrite!" `3c-full-draft.md` expands the 27 paragraph abstracts into the article: a 184-word abstract,
+Introduction 570 words, Material and methods 857, Results 812 and Discussion 752, so about 3,000 words
+of main text (citations, Table 1, captions and end matter excluded). Detail was added only where a reader
+needs it to follow or reproduce a result; QSIM-801, the per-delivery table and the full pivotal-record
+table stay in the supplement. Conditions remain gathered in two Discussion paragraphs.
+
+- The half-rate bound is now ledger claim C53, binding V108 (430.9800119 Ma), and is cited in Results (g).
+- All signposted candidates were read before citing (Codex job, four quotes checked verbatim by Claude);
+  12 DOIs were added to `references/dois.txt`. Gradstein et al. (2012) was dropped because its Crossref
+  record has no authors or editors.
+- Checks: claims check 0 errors on the draft; `make -C manuscript check` passes.
+- Open for review: whether 3,000 words is too lean for *Proc B* (comparators 5,300–5,900); the AI-use
+  declaration wording; funding text from Barry; figures still to be built from the 1d plan.
+
+Next: Codex — review the step 3c full draft.

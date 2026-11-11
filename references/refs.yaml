@@ -13,6 +13,24 @@ references:
     - - 2013
   publisher: University of Sheffield
   URL: https://etheses.whiterose.ac.uk/id/eprint/4475/
+- id: benton2006PaleontologicalEvidenceDate
+  citation-key: benton2006PaleontologicalEvidenceDate
+  type: article-journal
+  title: Paleontological Evidence to Date the Tree of Life
+  author:
+  - family: Benton
+    given: M. J.
+  - family: Donoghue
+    given: P. C. J.
+  issued:
+    date-parts:
+    - - 2006
+  container-title: Molecular Biology and Evolution
+  volume: '24'
+  issue: '1'
+  page: 26–53
+  publisher: Oxford University Press (OUP)
+  DOI: 10.1093/molbev/msl150
 - id: berger1994PValuesMaximized
   citation-key: berger1994PValuesMaximized
   type: article-journal
@@ -31,6 +49,24 @@ references:
   page: 1012–1016
   publisher: Informa UK Limited
   DOI: 10.1080/01621459.1994.10476836
+- id: brown2017PastSureTense
+  citation-key: brown2017PastSureTense
+  type: article-journal
+  title: 'The Past Sure is Tense: On Interpreting Phylogenetic Divergence Time Estimates'
+  author:
+  - family: Brown
+    given: Joseph W
+  - family: Smith
+    given: Stephen A
+  issued:
+    date-parts:
+    - - 2017
+  container-title: Systematic Biology
+  volume: '67'
+  issue: '2'
+  page: 340–353
+  publisher: Oxford University Press (OUP)
+  DOI: 10.1093/sysbio/syx074
 - id: claramunt2022CladedateCalibrationInformation
   citation-key: claramunt2022CladedateCalibrationInformation
   type: article-journal
@@ -64,6 +100,28 @@ references:
   page: 53–72
   publisher: Elsevier BV
   DOI: 10.1016/j.gr.2020.09.008
+- id: cohen2013IcsInternationalChronostratigraphic
+  citation-key: cohen2013IcsInternationalChronostratigraphic
+  type: article-journal
+  title: The ICS International Chronostratigraphic Chart
+  author:
+  - family: Cohen
+    given: K.M.
+  - family: Finney
+    given: S.C.
+  - family: Gibbard
+    given: P.L.
+  - family: Fan
+    given: J.-X.
+  issued:
+    date-parts:
+    - - 2013
+  container-title: Episodes
+  volume: '36'
+  issue: '3'
+  page: 199–204
+  publisher: International Union of Geological Sciences
+  DOI: 10.18814/epiiugs/2013/v36i3/002
 - id: donoghue2021EvolutionaryEmergenceLand
   citation-key: donoghue2021EvolutionaryEmergenceLand
   type: article-journal
@@ -86,6 +144,26 @@ references:
   page: R1281–R1298
   publisher: Elsevier BV
   DOI: 10.1016/j.cub.2021.07.038
+- id: dosreis2015BayesianMolecularClock
+  citation-key: dosreis2015BayesianMolecularClock
+  type: article-journal
+  title: Bayesian molecular clock dating of species divergences in the genomics era
+  author:
+  - family: dos Reis
+    given: Mario
+  - family: Donoghue
+    given: Philip C. J.
+  - family: Yang
+    given: Ziheng
+  issued:
+    date-parts:
+    - - 2015
+  container-title: Nature Reviews Genetics
+  volume: '17'
+  issue: '2'
+  page: 71–80
+  publisher: Springer Science and Business Media LLC
+  DOI: 10.1038/nrg.2015.8
 - id: earp2024NotanopliidBrachiopodsAssociated
   citation-key: earp2024NotanopliidBrachiopodsAssociated
   type: article-journal
@@ -209,6 +287,24 @@ references:
   issue: '41'
   publisher: National Academy of Sciences
   DOI: 10.1073/pnas.1812558115
+- id: ho2009AccountingCalibrationUncertainty
+  citation-key: ho2009AccountingCalibrationUncertainty
+  type: article-journal
+  title: Accounting for Calibration Uncertainty in Phylogenetic Estimation of Evolutionary Divergence Times
+  author:
+  - family: Ho
+    given: Simon Y. W.
+  - family: Phillips
+    given: Matthew J.
+  issued:
+    date-parts:
+    - - 2009
+  container-title: Systematic Biology
+  volume: '58'
+  issue: '3'
+  page: 367–380
+  publisher: Oxford University Press (OUP)
+  DOI: 10.1093/sysbio/syp035
 - id: hooper2026ReconstructingSporeEvolution
   citation-key: hooper2026ReconstructingSporeEvolution
   type: article-journal
@@ -230,6 +326,24 @@ references:
   container-title: Nature Plants
   publisher: Springer Science and Business Media LLC
   DOI: 10.1038/s41477-026-02432-3
+- id: kenrick1997OriginEarlyEvolution
+  citation-key: kenrick1997OriginEarlyEvolution
+  type: article-journal
+  title: The origin and early evolution of plants on land
+  author:
+  - family: Kenrick
+    given: Paul
+  - family: Crane
+    given: Peter R.
+  issued:
+    date-parts:
+    - - 1997
+  container-title: Nature
+  volume: '389'
+  issue: '6646'
+  page: 33–39
+  publisher: Springer Science and Business Media LLC
+  DOI: 10.1038/37918
 - id: kenrick2012TimelineTerrestrializationConsequences
   citation-key: kenrick2012TimelineTerrestrializationConsequences
   type: article-journal
@@ -274,6 +388,30 @@ references:
   page: 1004–1013
   publisher: Wiley
   DOI: 10.3732/ajb.89.6.1004
+- id: lenton2012FirstPlantsCooled
+  citation-key: lenton2012FirstPlantsCooled
+  type: article-journal
+  title: First plants cooled the Ordovician
+  author:
+  - family: Lenton
+    given: Timothy M.
+  - family: Crouch
+    given: Michael
+  - family: Johnson
+    given: Martin
+  - family: Pires
+    given: Nuno
+  - family: Dolan
+    given: Liam
+  issued:
+    date-parts:
+    - - 2012
+  container-title: Nature Geoscience
+  volume: '5'
+  issue: '2'
+  page: 86–89
+  publisher: Springer Science and Business Media LLC
+  DOI: 10.1038/ngeo1390
 - id: libertin2018SporophytesPolysporangiateLand
   citation-key: libertin2018SporophytesPolysporangiateLand
   type: article-journal
@@ -495,6 +633,114 @@ references:
   issue: '10'
   publisher: National Academy of Sciences
   DOI: 10.1073/pnas.1719588115
+- id: parham2011BestPracticesJustifying
+  citation-key: parham2011BestPracticesJustifying
+  type: article-journal
+  title: Best Practices for Justifying Fossil Calibrations
+  author:
+  - family: Parham
+    given: James F.
+  - family: Donoghue
+    given: Philip C. J.
+  - family: Bell
+    given: Christopher J.
+  - family: Calway
+    given: Tyler D.
+  - family: Head
+    given: Jason J.
+  - family: Holroyd
+    given: Patricia A.
+  - family: Inoue
+    given: Jun G.
+  - family: Irmis
+    given: Randall B.
+  - family: Joyce
+    given: Walter G.
+  - family: Ksepka
+    given: Daniel T.
+  - family: Patané
+    given: José S. L.
+  - family: Smith
+    given: Nathan D.
+  - family: Tarver
+    given: James E.
+  - family: van Tuinen
+    given: Marcel
+  - family: Yang
+    given: Ziheng
+  - family: Angielczyk
+    given: Kenneth D.
+  - family: Greenwood
+    given: Jenny M.
+  - family: Hipsley
+    given: Christy A.
+  - family: Jacobs
+    given: Louis
+  - family: Makovicky
+    given: Peter J.
+  - family: Müller
+    given: Johannes
+  - family: Smith
+    given: Krister T.
+  - family: Theodor
+    given: Jessica M.
+  - family: Warnock
+    given: Rachel C. M.
+  - family: Benton
+    given: Michael J.
+  issued:
+    date-parts:
+    - - 2011
+  container-title: Systematic Biology
+  volume: '61'
+  issue: '2'
+  page: 346–359
+  publisher: Oxford University Press (OUP)
+  DOI: 10.1093/sysbio/syr107
+- id: peters2018MacrostratPlatformGeological
+  citation-key: peters2018MacrostratPlatformGeological
+  type: article-journal
+  title: 'Macrostrat: A Platform for Geological Data Integration and Deep‐Time Earth Crust Research'
+  author:
+  - family: Peters
+    given: Shanan E.
+  - family: Husson
+    given: Jon M.
+  - family: Czaplewski
+    given: John
+  issued:
+    date-parts:
+    - - 2018
+  container-title: Geochemistry, Geophysics, Geosystems
+  volume: '19'
+  issue: '4'
+  page: 1393–1409
+  publisher: American Geophysical Union (AGU)
+  DOI: 10.1029/2018gc007467
+- id: rubinstein2010EarlyMiddleOrdovician
+  citation-key: rubinstein2010EarlyMiddleOrdovician
+  type: article-journal
+  title: Early Middle Ordovician evidence for land plants in Argentina (eastern Gondwana)
+  author:
+  - family: Rubinstein
+    given: C. V.
+  - family: Gerrienne
+    given: P.
+  - family: de la Puente
+    given: G. S.
+  - family: Astini
+    given: R. A.
+  - family: Steemans
+    given: P.
+  issued:
+    date-parts:
+    - - 2010
+  container-title: New Phytologist
+  volume: '188'
+  issue: '2'
+  page: 365–369
+  publisher: Wiley
+  DOI: 10.1111/j.1469-8137.2010.03433.x
 - id: rubinstein2019BalticaCradleEarly
   citation-key: rubinstein2019BalticaCradleEarly
   type: article-journal
@@ -557,6 +803,34 @@ references:
   page: 425–436
   publisher: Wiley
   DOI: 10.1111/nph.13247
+- id: steemans2009OriginRadiationEarliest
+  citation-key: steemans2009OriginRadiationEarliest
+  type: article-journal
+  title: Origin and Radiation of the Earliest Vascular Land Plants
+  author:
+  - family: Steemans
+    given: Philippe
+  - family: Hérissé
+    given: Alain Le
+  - family: Melvin
+    given: John
+  - family: Miller
+    given: Merrell A.
+  - family: Paris
+    given: Florentin
+  - family: Verniers
+    given: Jacques
+  - family: Wellman
+    given: Charles H.
+  issued:
+    date-parts:
+    - - 2009
+  container-title: Science
+  volume: '324'
+  issue: '5925'
+  page: 353–353
+  publisher: American Association for the Advancement of Science (AAAS)
+  DOI: 10.1126/science.1169659
 - id: strauss1989ClassicalConfidenceIntervals
   citation-key: strauss1989ClassicalConfidenceIntervals
   type: article-journal
@@ -760,4 +1034,22 @@ references:
   page: 282–285
   publisher: Springer Science and Business Media LLC
   DOI: 10.1038/nature01884
+- id: yang2005BayesianEstimationSpecies
+  citation-key: yang2005BayesianEstimationSpecies
+  type: article-journal
+  title: Bayesian Estimation of Species Divergence Times Under a Molecular Clock Using Multiple Fossil Calibrations with Soft Bounds
+  author:
+  - family: Yang
+    given: Ziheng
+  - family: Rannala
+    given: Bruce
+  issued:
+    date-parts:
+    - - 2005
+  container-title: Molecular Biology and Evolution
+  volume: '23'
+  issue: '1'
+  page: 212–226
+  publisher: Oxford University Press (OUP)
+  DOI: 10.1093/molbev/msj024
 ...
