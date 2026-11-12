@@ -86,3 +86,19 @@ the conditions on both limits. Its one finding: overlapping stage ranges do not 
 production, so "trilete spores were therefore being produced while these Libyan rocks accumulated" was
 replaced by a stage-resolution statement, noting that five Libyan samples and Saudi and British
 assemblages are all Hirnantian (about 2 Myr). C54 needs a check by Codex or Barry before it is supported.
+
+## Counting independent finds as a headline (Barry's general point 4)
+
+Barry, chat, 12 November 2026: "the unit choice rivals the effect… The paper reports this honestly but
+treats it as a sensitivity when it is arguably a headline", and lead with the range. Claude found that the
+primary (48), region–stage (19) and curated (15) bounds share the oldest find and cutoff, so all three lie
+on one closed-form curve, T(n) = c + (A − c)·0.05^(−1/n), which crosses 431.2 Ma at n = 23.6, the
+duplication-factor-2 case that held 0.78 coverage in Table S11. New script
+`models/f3/loop3/count_dial.py` checks the curve against the reviewed bounds and frontier (provisional
+claim C55). Figure 3a now plots the limit against the number of independent finds. Abstract, Methods (e),
+Results (d)–(e), Discussion and Conclusion lead with the count.
+
+Sol (`2026-11-12-count-dial-check.json`) passed the arithmetic and found three problems, all repaired with
+its wording: the three treatments are counting scenarios, not estimates of the true count ("most plausibly
+lies between" removed); the 15–23 Myr delays assume all 48 finds independent (now said in the abstract
+and Conclusion); and the Discussion's range and crossing hold for constant recording only.

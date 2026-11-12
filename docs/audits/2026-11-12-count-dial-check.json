@@ -1,0 +1,29 @@
+{
+  "title": "The arithmetic passes; three interpretation and scope problems need repair.",
+  "items": [
+    {
+      "location": "manuscript/text/main.md:14–16, 216–222",
+      "current_text": "The true number most plausibly lies between them",
+      "problem": "The treatments do not estimate the true independent count or establish a plausible interval between 15/19 and 48. The abstract similarly presents their endpoint range as uncertainty about how many finds are independent. Sharing A and c establishes algebraic agreement, not a calibrated effective sample size.",
+      "severity": "high",
+      "evidence": "analysis.py:43–44 selects the curated source subset; lines 60–70 group records by region and midpoint-assigned stage while retaining member age supports. Table S5 calls region–stage counting a coarse dependence diagnostic; C30 explicitly disclaims empirically calibrated sampling designs. S5.2 derives confidence conditional on independent ages drawn from the declared density. General dependence need not be equivalent to substituting one effective n.",
+      "repair": "Replace the plausibility sentence with: “These are alternative counting scenarios; they do not estimate the number of independent finds.” In the abstract, say “Across the three unit treatments, the steady-rate limits are 428.8–434.05 Ma; the assumed-independent-count curve crosses 431.2 Ma at about half the main count.”"
+    },
+    {
+      "location": "manuscript/text/main.md:16–18 and 338–342",
+      "current_text": "or, at a steady rate, if they appeared at least [15–23]{.C33} Myr later",
+      "problem": "The broadened sentences make the delay range appear applicable across the counting treatments. The 15–23 Myr offsets use all 48 primary units as independent. Results (e) preserves this condition, but the abstract and Conclusion omit it.",
+      "severity": "medium",
+      "evidence": "C33 concerns offsets from the primary constant-rate bound, 428.8400 Ma. Independent recalculation gives offsets of 15.16–23.16 Myr for n=48, 11.62–19.62 Myr for n=19, and 9.95–17.95 Myr for n=15, for candidate ages 444–452 Ma.",
+      "repair": "Add “with all 48 finds treated as independent” to the steady-rate delay clause in both places."
+    },
+    {
+      "location": "manuscript/text/main.md:265–268",
+      "current_text": "at a steady finding rate, or one tracking collection density, the 95% confidence limit ... lies between [429]{.C27 .V018} and [434.05]{.C30} Ma ... and passes the 431.2 Ma maximum at about half the main count",
+      "problem": "The range and crossing combine two finding-rate histories. The 434.05 Ma endpoint and 23.588-count crossing belong to constant recording; collection-density tracking gives different endpoints.",
+      "severity": "medium",
+      "evidence": "Table S5 and reviewed_bounds.csv give curated endpoints of 434.04566762 Ma under constant recording and 434.61856387 Ma under PBDB collection-density tracking. C55 and count_dial.py derive the crossing only for constant recording.",
+      "repair": "Delete “or one tracking collection density” so the range and crossing retain their constant-rate condition."
+    }
+  ]
+}

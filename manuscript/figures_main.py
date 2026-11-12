@@ -27,6 +27,7 @@ import figures as F  # noqa: E402
 UNITS = ROOT / "models/f3/out/m2_units.csv"
 RESULTS = ROOT / "models/f3/out/m2_results.csv"
 FRONTIER = ROOT / "models/f3/loop3/out/frontier.csv"
+DIAL = ROOT / "models/f3/loop3/out/count_dial.csv"
 CUTOFF = float(F.primary_bound("B2", "flat")[2]["cutoff_ma"])
 ALPHA = 1 - float(F.primary_bound("B2", "flat")[2]["confidence_conditional_on_fixed_history_iid_units"])
 EMBRYOPHYTE_MAXIMA = tuple(age for age, _ in F.MAXIMA["embryophyta"])
@@ -266,28 +267,34 @@ def fig4(path):
             t, d = float(r["candidate_lineage_ma"]), float(r["assumed_diagnostic_delay_myr"])
             ratio = (t - d - A) / ((A - c) * (ALPHA ** (-1 / n) - 1))
             assert abs(ratio - float(r["later_to_earlier_intensity"])) < 1e-6, r
+    dial = F.read(DIAL)
+    curve = [(float(r["n_independent"]), float(r["older_bound_ma"])) for r in dial if not r["note"]]
+    cross = next(float(r["n_independent"]) for r in dial if r["note"])
+    marks = {r["unit_treatment"]: (float(r["n_independent"]), float(r["older_bound_ma"])) for r in dial
+             if r["unit_treatment"]}
+    assert abs(marks["primary"][1] - flat) < 1e-3 and abs(marks["region_stage"][1] - min(alt)) < 1e-3
+    assert abs(marks["curated"][1] - max(alt)) < 1e-3 and marks["primary"][0] == float(case["n_guaranteed"])
     fig, (a, b) = plt.subplots(1, 2, figsize=(7.4, 4.4), gridspec_kw={"width_ratios": [2, 3]})
-    for i, (old, young) in enumerate(units):
-        straddle = young < CUTOFF
-        a.plot([old, max(young, 386)], [i, i], color=MUTED if not straddle else CLOCK["Harris et al. 2022"], lw=1.1,
-               ls="-" if not straddle else (0, (2, 1.5)))
-    a.axvline(CUTOFF, color=MUTED, lw=0.6, ls=":")
-    a.axvspan(min(alt), max(alt), color=BLUE["250"], alpha=0.35, lw=0)
-    a.axvline(flat, color=BLUE["650"], lw=1.6)
-    a.axvline(VASCULAR_MAXIMUM, color=INK, lw=0.8, ls=(0, (4, 3)))
-    a.text(flat - 0.6, -2.0, f"{flat:.1f} Ma, steady finding rate", fontsize=6.8, color=INK, va="center", ha="left")
-    a.text(flat - 0.6, -5.0, f"{min(alt):.1f}–{max(alt):.2f} Ma, fewer independent finds", fontsize=6.8, va="center",
-           ha="left")
-    a.text(flat - 0.6, -8.0, f"{VASCULAR_MAXIMUM} Ma maximum (dashed)", fontsize=6.8, va="center", ha="left")
-    a.set_ylim(len(units) + 1, -10)
-    a.set_xlim(437, 386)
-    a.set_yticks([])
-    a.set_xlabel("Age (million years ago)")
-    a.plot([], [], color=MUTED, lw=1.1, label="certainly inside window (48)")
-    a.plot([], [], color=CLOCK["Harris et al. 2022"], lw=1.1, ls=(0, (2, 1.5)), label="straddles cutoff (2)")
-    a.legend(frameon=False, fontsize=6.8, loc="upper center", bbox_to_anchor=(0.5, -0.16), ncol=1)
-    a.set_title("(a) Crown vascular-plant finds", fontsize=8.5, loc="left")
-    a.spines[["top", "right", "left"]].set_visible(False)
+    a.plot([n for n, _ in curve], [T for _, T in curve], color=BLUE["650"], lw=2)
+    a.axhline(VASCULAR_MAXIMUM, color=INK, lw=0.8, ls=(0, (4, 3)))
+    a.text(59, VASCULAR_MAXIMUM + 0.12, f"{VASCULAR_MAXIMUM} Ma maximum", fontsize=6.8, ha="right", va="bottom")
+    a.plot([cross, cross], [427.5, VASCULAR_MAXIMUM], color=MUTED, lw=0.7, ls=":")
+    a.text(cross - 0.8, 429.0, f"{cross:.1f} finds:\nabout half\nthe main count", fontsize=6.8, color=MUTED, ha="right",
+           va="center")
+    for key, lab, ha, dx, dy, nd in (("primary", "main count", "center", 0, -0.45, 1),
+                                     ("region_stage", "region and stage", "left", 1.5, 0.0, 1),
+                                     ("curated", "curated oldest records", "left", 1.5, 0.0, 2)):
+        n, T = marks[key]
+        a.plot(n, T, "o", color=BLUE["650"], ms=5, mec="white", mew=1)
+        a.text(n + dx, T + dy, f"{lab}\n{int(n)} finds, {T:.{nd}f} Ma", fontsize=6.6, ha=ha,
+               va="top" if dy else "center")
+    a.set_xlim(10, 60)
+    a.set_ylim(427.5, 437.5)
+    a.set_xlabel("Independent finds, n")
+    a.set_ylabel("95% confidence limit on record start (Ma)")
+    a.set_title("(a) The limit depends on the count", fontsize=8.5, loc="left")
+    a.spines[["top", "right"]].set_visible(False)
+    a.grid(axis="y", color=GRID, lw=0.5)
     t = np.linspace(426.8, 456, 800)
 
     def contrast(key, d):
@@ -330,7 +337,7 @@ def fig4(path):
     save(fig, path)
 
 
-INPUTS = [UNITS, RESULTS, FRONTIER, Path(__file__)]
+INPUTS = [UNITS, RESULTS, FRONTIER, DIAL, Path(__file__)]
 
 
 def draw(out):

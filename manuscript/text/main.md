@@ -4,21 +4,20 @@
 
 ## Abstract
 
-Molecular clocks date the ancestor of living land plants from the Cambrian to the Late
-Ordovician, partly through different fossil maximum ages. We examined three maxima:
-515.5 and 459.1 million years ago (Ma) for living land plants, and 431.2 Ma for living vascular plants.
-The 515.5 Ma maximum
-rests on a qualitative preservation argument. None of [28]{.C01} Ordovician samples from Libyan boreholes
-reports three-rayed (trilete) spores, although [18]{.C45} fall in stages in which such spores occur in
-Saudi Arabia and Britain: a spore absence can be local. At a steady finding rate, the
-95% confidence limit on the vascular-plant record's start is [428.8]{.C27 .V003} Ma; counting fewer independent finds
-gives [432.4–434.05]{.C30} Ma. Vascular-plant ancestors at 444–452 Ma fit if fossils were found
-[8]{.C48 .V054}–[12]{.C48 .V055} times less often before the oldest find than after it
-([2.4]{.C48 .V056}–[4.5]{.C48 .V057} with fewer finds), with recognisable bodies appearing with the
-ancestor, or, at a steady rate, if they
-appeared at least [15–23]{.C33} Myr later. Missing fossils allow older ancestors if early
-plants were found less often or became recognisable later, and these records state how much less
-often.
+Molecular clocks date the ancestor of living land plants from the Cambrian to the Late Ordovician,
+partly through different fossil maximum ages. We examined three maxima: 515.5 and 459.1 million years
+ago (Ma) for living land plants, and 431.2 Ma for living vascular plants. The 515.5 Ma maximum rests on a
+qualitative preservation argument. None of [28]{.C01} Ordovician Libyan borehole samples reports
+three-rayed (trilete) spores, although [18]{.C45} fall in stages in which such spores occur in Saudi
+Arabia and Britain: a spore absence can be local. At a steady finding rate, the 95% confidence limit on
+the vascular-plant record's start is [428.8]{.C27 .V003}–[434.05]{.C30} Ma across three ways of
+counting [48]{.C25} finds, and reaches the 431.2 Ma maximum if about half of them are counted as
+independent. Vascular-plant ancestors at 444–452 Ma fit if fossils were found
+[2.4]{.C48 .V056}–[12]{.C48 .V055} times less often before the oldest find than after it, the factor
+rising with the count, with recognisable bodies appearing with the ancestor, or, at a steady rate with
+48 independent finds, if they appeared at least [15–23]{.C33} Myr later. Missing fossils allow older
+ancestors if early plants were found less often or became recognisable later, and these records state
+how much less often.
 
 **Keywords:** molecular clock; fossil calibration; land plants; vascular plants; stratigraphic
 confidence interval; Ordovician–Silurian
@@ -143,8 +142,10 @@ on a stratigraphic range, and the absolute rate cancels [@strauss1989ClassicalCo
 fossil horizons [@marshall1994ConfidenceIntervalsStratigraphic;
 @marshall1997ConfidenceIntervalsStratigraphic]. For finds dated by age ranges, *A* is the oldest
 possible age of the oldest find, and *n* counts only finds certainly inside the window; both choices
-move the limit older. The limit concerns the start of the record; the Discussion treats its link to
-ancestors.
+move the limit older. Finds dated by stage may record one discovery more than once, so we report the limit as a
+function of the number of independent finds, with the main count, a count of region–stage cells and the
+curated oldest records as reference points. The limit concerns the start of the record; the Discussion
+treats its link to ancestors.
 
 **(f) Finding-rate histories and shape tests.** We compared six assumed histories of the finding rate:
 steady; proportional to PBDB land and marginal-marine collections per Myr
@@ -207,37 +208,46 @@ stage[]{.C09}. With equal delivery, the samples limit steady trilete supply sinc
 samples are weighted by well and rock unit (electronic supplementary material, S2.2 and S2.5). Lower
 delivery, lower local supply or producers outside the catchment all fit.
 
-**(d) At a steady finding rate, the 95% confidence limit on the vascular-plant body record's start is
-near 429 Ma.** If crown vascular-plant fossils were found at a steady rate, the [48]{.C25} finds
-certainly inside the window put the 95% confidence limit on the start of their record at
-[428.8]{.C27 .V003} Ma (figure 3*a*).
-Finding rates that track collection density give [428.9]{.C27 .V009} Ma, or [428.5]{.C27 .V010} Ma with
-plant-bearing collections removed, and a 25 Myr decline into the past gives [431.6]{.C27 .V011} Ma. If
-finding fossils became steeply harder with age (the 10 Myr decline), the method sets no limit as far
-back as [469.4]{.C27 .V007} Ma, the edge of our data. That history, however, predicts a spread of fossil
-ages unlike the one observed, however the uncertain ages are assigned[]{.C49}. The 25 Myr decline passes
-the shape test under one assignment of ages when all [50]{.C49 .V107} possible finds are counted
-(*p* = [0.067]{.C49 .V104}), and fails under every assignment of the [48]{.C49 .V069} finds certainly
-inside the window (best *p* =
-[0.035]{.C49 .V106}).
+**(d) The limit on the vascular-plant record's start depends on how many finds are independent.** At a
+steady finding rate, the 95% confidence limit on the start of the crown vascular-plant record depends on
+the oldest find, the younger cutoff and the number of independent finds (figure 3*a*). Counting the
+[48]{.C25} finds certainly inside the window as independent gives [428.8]{.C27 .V003} Ma; treating each
+region and stage as one find ([19]{.C30}) gives [432.4]{.C30} Ma, and counting only the curated oldest
+records ([15]{.C30}) gives [434.05]{.C30} Ma. The three share the oldest find and the cutoff, so they
+lie on one curve[]{.C55}, which crosses the 431.2 Ma maximum at about [24]{.C55} independent finds,
+half the main count. The main count already merges repeated collections from one locality and age; the
+region-and-stage count treats every locality in a region and stage as one discovery, and the curated
+count keeps only the source-reviewed oldest records. These are counting scenarios, not estimates of the number of independent finds; the curve shows which
+count each limit assumes. Coarse stage ages are one reason the count is uncertain: finds from one region and stage may come from one
+bed or from beds millions of years apart. Over-counting is a known way for the method to fail. In
+simulations in which every true find was counted twice, the 95% limit held in only [0.78]{.C34} of
+trials (electronic supplementary material, S5.6); with 48 finds counted as 24 pairs, the limit that
+does hold is near the 431.2 Ma maximum.
 
-**(e) Counting fewer independent finds moves the limit past 431.2 Ma.** Treating each region and stage as one find
-([19]{.C30} finds) gives [432.4]{.C30} Ma, and counting only the curated oldest records ([15]{.C30}
-finds) gives [434.05]{.C30} Ma, both at a steady finding rate. Shifting stage boundaries by their quoted
-uncertainties, in the scenarios tested, moves the main limit between [427.31]{.C50 .V062} and
-[430.42]{.C50 .V063} Ma (electronic supplementary material, S5.3).
+With all 48 finds independent, finding rates that track collection density give [428.9]{.C27 .V009}
+Ma, or [428.5]{.C27 .V010} Ma with plant-bearing collections removed, and a 25 Myr decline into the past
+gives [431.6]{.C27 .V011} Ma. If finding fossils became steeply harder with age (the 10 Myr decline),
+the method sets no limit as far back as [469.4]{.C27 .V007} Ma, the edge of our data. That history,
+however, predicts a spread of fossil ages unlike the one observed, however the uncertain ages are
+assigned[]{.C49}. The 25 Myr decline passes the shape test under one assignment of ages when all
+[50]{.C49 .V107} possible finds are counted (*p* = [0.067]{.C49 .V104}), and fails under every
+assignment of the [48]{.C49 .V069} finds certainly inside the window (best *p* = [0.035]{.C49 .V106}).
+Shifting stage boundaries by their quoted uncertainties, in the scenarios tested, moves the main limit
+between [427.31]{.C50 .V062} and [430.42]{.C50 .V063} Ma (electronic supplementary material, S5.3).
 
-**(f) Older vascular-plant dates fit if early fossils were found less often, or recognisable bodies
+**(e) Older vascular-plant dates fit if early fossils were found less often, or recognisable bodies
 appeared later.** In the main scenario, halving the finding rate before the oldest find moves the limit
 to [431.0]{.C53 .V108} Ma, still younger than the 431.2 Ma maximum. Ancestors at 444–452 Ma, spanning
 the Morris et al. mean dates and the Harris et al. interval, fit if fossils were found
 [8]{.C48 .V054}–[12]{.C48 .V055} times less often before the oldest find than after it, with
-recognisable bodies appearing with the ancestor (figure 3*b*). Counting by region and stage, or only the
-curated oldest records, [2.4]{.C48 .V056}–[4.5]{.C48 .V057} times suffices, and 431.2 Ma already fits a
-steady rate. At a steady finding rate, the same ancestors fit if recognisable bodies appeared at least
-[15–23]{.C33} Myr after them. Smaller reductions combine with shorter delays (figure 3*b*).
+recognisable bodies appearing with the ancestor and all 48 finds independent (figure 3*b*). With about
+24 independent finds, [3.9]{.C55}–[5.7]{.C55} times suffices, and with 19 or 15,
+[2.4]{.C48 .V056}–[4.5]{.C48 .V057} times; the reduction needed grows roughly in proportion to the
+number of independent finds, and with fewer than about 24, 431.2 Ma already fits a steady rate. At a
+steady finding rate and with all 48 finds independent, the same ancestors fit if recognisable bodies
+appeared at least [15–23]{.C33} Myr after them; fewer independent finds shorten the delay needed. Smaller reductions combine with shorter delays (figure 3*b*).
 
-**(g) One Ordovician find moves the broader land-plant limit.** Sporangial fragments with in situ
+**(f) One Ordovician find moves the broader land-plant limit.** Sporangial fragments with in situ
 cryptospores from the Ghaba-1 borehole, Oman, dated to the Katian on later correlation
 [@wellman2003FragmentsEarliestLand], form one land-plant body find. Adding them moves the steady-rate
 limit for all land-plant body fossils from [434.5]{.C28} to [455.2]{.C40 .V022} Ma, and the enlarged
@@ -252,9 +262,10 @@ differs in depth between the two clades. For living land plants it comes from th
 maximum and one polar basin, whose samples report no triletes from stages in which triletes occur
 elsewhere. Those samples exclude a steady, well-delivered supply near the Llandovery level, while lower
 delivery, lower local supply or spore producers outside the catchment all fit. For living vascular plants it comes from a body
-record drawn from several regions: at a steady finding rate, or one tracking collection density, the 95%
-confidence limit on the start of the recognisable crown vascular-plant record lies near
-[429]{.C27 .V018} Ma, and counting fewer independent finds puts it at [432.4–434.05]{.C30} Ma. For each way of counting, a lower earlier finding rate, later recognisable
+record drawn from several regions: at a steady finding rate, the 95%
+confidence limit on the start of the recognisable crown vascular-plant record lies between
+[429]{.C27 .V018} and [434.05]{.C30} Ma, depending on how many finds are independent, and passes the
+431.2 Ma maximum at about half the main count. For each way of counting, a lower earlier finding rate, later recognisable
 bodies or both fit ancestors older than these limits; the models give the size of each requirement in
 aggregate.
 
@@ -293,8 +304,7 @@ whose reported age ranges always contain the true ages, including whether each f
 window. Geological age ranges carry no demonstrated joint coverage; if the probability that any range
 misses its true age is $\delta$, the test's error rate is at most $\alpha+\delta$, where $\alpha$ is its
 level for exact ages. Simulations with exact ages
-gave coverage of [0.941–0.958]{.C34}, falling to about [0.78]{.C34} when paired duplicate horizons were
-counted as independent (electronic supplementary material, S5.6). The step scenario was chosen after
+gave coverage of [0.941–0.958]{.C34} (electronic supplementary material, S5.6). The step scenario was chosen after
 seeing the data. Linking the vascular-plant limit to ancestors requires that the oldest finds belong to
 the crown group, and a specified delay before recognisable bodies.
 
@@ -307,7 +317,8 @@ reported marine sequence older than 515.5 Ma, with comparable recovery documente
 the oldest maximum's absence argument. Finer, independent ages for the Yea (Victoria, Australia) and
 Bathurst Island (Arctic Canada) horizons, which hold the oldest possible crown vascular-plant finds,
 would sharpen the body-fossil limit [@earp2024NotanopliidBrachiopodsAssociated;
-@kotyk2002MorphologicallyComplexPlant]. Characters placing the oldest branched sporophytes on the
+@kotyk2002MorphologicallyComplexPlant], and finer ages generally would show which finds share a bed, and
+so how many are independent. Characters placing the oldest branched sporophytes on the
 lycophyte or euphyllophyte side of the vascular crown could change which fossils enter the category, as
 well as their link to the ancestor.
 
@@ -326,8 +337,9 @@ its record if, with equal delivery, their steady trilete supply since 459.1 Ma s
 the later supply ([0.091]{.C24}; four-tenths under an exploratory weighting), or their spores never
 reached the basin, because the producers lived elsewhere or
 triletes evolved later. Vascular-plant ancestors at 444–452 Ma fit if early body fossils were found
-[8]{.C48 .V054}–[12]{.C48 .V055} times less often, with recognisable bodies appearing with the
-ancestor, or, at a steady rate, if those bodies appeared at least [15–23]{.C33} Myr after it; the first is a
+[2.4]{.C48 .V056}–[12]{.C48 .V055} times less often, the factor depending on how many finds are
+independent, with recognisable bodies appearing with the ancestor, or, at a steady rate with all 48 finds independent, if those
+bodies appeared at least [15–23]{.C33} Myr after it; the first is a
 scenario chosen after seeing the data. Missing fossils thus allow older ancestors if early plants were
 found less often or became recognisable later, and the records examined state how much less often.
 
