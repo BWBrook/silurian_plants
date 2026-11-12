@@ -307,21 +307,22 @@ def cmd_build():
           with r as (
             select s.TDOC as doc,
                    s.TMIC = 'S' and s.TDOC not in (select doc from doc_vetting where verdict = 'reject') as is_spore,
-                   s.TMIC = 'S' and s.TDOC not in (select doc from doc_vetting where verdict = 'reject')
-                     and g.spore_class like 'trilete%' and not coalesce(s.TIDR in ('A', 'B', 'C', 'R'), false) as is_trilete,
                    bo.base_ma as oldest_base_ma, by_.top_ma as youngest_top_ma
             from read_csv_auto('{PALY / 'palynodata_taxon_window.csv'}', all_varchar=true) s
             join locations l on l.tloc = s.TLOC
-            left join spore_genera g on g.genus = s.TGEN
             join age_names ao on ao.age_name = s.oldage
             join age_names ay on ay.age_name = coalesce(nullif(trim(s.youngage), ''), s.oldage)
             join base bo on bo.stage = ao.ics_oldest join base by_ on by_.stage = ay.ics_youngest
             where s.TDOC not in (select doc from exclusions)
               and least({RANK.format(c='ao.confidence')}, {RANK.format(c='ay.confidence')}) >= 2
-              and bo.base_ma - by_.top_ma <= 25 and l.palaeo_unit not in ('unknown'))
+              and bo.base_ma - by_.top_ma <= 25 and l.palaeo_unit not in ('unknown')),
+          t as (
+            select record_id as doc, oldest_base_ma, youngest_top_ma from occ
+            where source = 'palynodata' and usable and vetting <> 'reject' and spore_class like 'trilete%')
           select b.stage, b.base_ma, count(distinct r.doc) as n_docs,
                  count(distinct r.doc) filter (where r.is_spore) as n_docs_with_spores,
-                 count(distinct r.doc) filter (where r.is_trilete) as n_docs_with_triletes
+                 (select count(distinct t.doc) from t
+                  where b.base_ma > t.youngest_top_ma and coalesce(b.top_ma, 0) < t.oldest_base_ma) as n_docs_with_triletes
           from r join base b on b.base_ma > r.youngest_top_ma and coalesce(b.top_ma, 0) < r.oldest_base_ma
           group by all order by b.base_ma desc)
         to '{OUT / 'effort_global_by_stage.csv'}' (header)""")
