@@ -61,3 +61,28 @@ or became recognisable later, and these records state how much less often." Sol'
 (`2026-11-12-title-message-recheck.json`) accepted the title and found two dropped conditions (steady
 supply since 459.1 Ma; zero delay for 8–12), both restored. The title and message await Barry's
 confirmation; the brief and graphical-abstract headline still carry the earlier message.
+
+## Libya recast as a worked case of a local absence (Barry's general point 3)
+
+Barry, chat, 12 November 2026: the Murzuq analysis rests on three wells, mostly the wrong age for the
+459.1 Ma maximum, in an unusual polar basin, and its limit moves from 0.09 to about 0.4 under one
+dependence check; "Present Libya as a worked case of what an absence can and cannot show, not as a test
+of 459.1 Ma", with the model and its checking moved to the supplement, both ends of the limit given and
+one clause in the abstract. He asked that Sol check the reading against the Swedish and Libyan ages.
+
+Claude checked the spore compilation first. Beyond the Sandbian Borenshult triletes, trilete-bearing
+assemblages in Saudi Arabia, Turkey, southern Britain and Belgium fall in the same Katian–Hirnantian
+stages as the 18 later-Ordovician Murzuq samples (new provisional claim C54, from
+`data/spores/occurrences.csv` and the curated Wellman et al. 2013 assemblages). Changes: Methods (d)
+removed and replaced by two sentences in (c), which now also describe the spore compilation (Palynodata
+and Wellman et al. 2013 added to the bibliography, DOIs from Crossref); Results (c) and (d) merged into
+one paragraph giving both limits (0.091 main model; about 0.4 with well-and-unit weighting); old figure 3
+moved to supplement figure S2 (`figS_murzuq`), replacing the narrower time-by-well panel; figure 4 is now
+figure 3 (`fig3_requirements`).
+
+Sol (`2026-11-12-libya-worked-case-check.json`) confirmed the ages (all 18 younger than the 454.41 Ma
+bentonite; 13 Katian–Hirnantian and 5 Hirnantian), the Ashgill mapping, the C54 records and command, and
+the conditions on both limits. Its one finding: overlapping stage ranges do not establish simultaneous
+production, so "trilete spores were therefore being produced while these Libyan rocks accumulated" was
+replaced by a stage-resolution statement, noting that five Libyan samples and Saudi and British
+assemblages are all Hirnantian (about 2 Myr). C54 needs a check by Codex or Barry before it is supported.

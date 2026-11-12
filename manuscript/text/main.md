@@ -8,11 +8,9 @@ Molecular clocks date the ancestor of living land plants from the Cambrian to th
 Ordovician, partly through different fossil maximum ages. We examined three maxima:
 515.5 and 459.1 million years ago (Ma) for living land plants, and 431.2 Ma for living vascular plants.
 The 515.5 Ma maximum
-rests on a qualitative preservation argument. Libyan boreholes yield three-rayed
-(trilete) spores in [51 of 59]{.C02} early Silurian samples and none of [28]{.C01} older ones.
-With equally easy delivery throughout, steady supply since 459.1 Ma is limited to
-[9]{.C24}% of the later supply (95% limit); older land-plant ancestors fit if their spores
-arrived sparsely or not at all. At a steady finding rate, the
+rests on a qualitative preservation argument. None of [28]{.C01} Ordovician samples from Libyan boreholes
+reports three-rayed (trilete) spores, although [18]{.C45} fall in stages in which such spores occur in
+Saudi Arabia and Britain: a spore absence can be local. At a steady finding rate, the
 95% confidence limit on the vascular-plant record's start is [428.8]{.C27 .V003} Ma; counting fewer independent finds
 gives [432.4–434.05]{.C30} Ma. Vascular-plant ancestors at 444–452 Ma fit if fossils were found
 [8]{.C48 .V054}–[12]{.C48 .V055} times less often before the oldest find than after it
@@ -71,8 +69,7 @@ dispersed spores and on plant bodies, each with its own route into the record, a
 test.
 
 We ask three questions of the published record. What evidence supports each maximum, and what links
-connect it to the dated ancestor? How much steady spore supply before the Silurian do the records of one
-Libyan basin allow? How much less often would early vascular-plant fossils have to be found, or how long
+connect it to the dated ancestor? What can the absence of spores from one Libyan basin show? How much less often would early vascular-plant fossils have to be found, or how long
 after the ancestor would recognisable bodies have to appear, for older dates to fit? Established theory
 sets an expectation for each. An argument from absence needs documented chances for remains to be
 delivered, preserved and found [@parham2011BestPracticesJustifying; @marshall2019UsingFossilRecord].
@@ -80,8 +77,8 @@ Where older and younger rocks were sampled comparably, each further sample repor
 tightens the limit on a high, steady spore supply. With the oldest find and the time window fixed, more independent finds bring
 the limit on a record's start closer to that find, and a lower finding rate before it pushes the limit
 back [@strauss1989ClassicalConfidenceIntervals; @marshall1990ConfidenceIntervalsStratigraphic]. The
-audit identifies what each maximum assumes; the models limit local spore supply and describe the finding
-rates or delays that would fit older vascular-plant dates.
+audit identifies what each maximum assumes, the Libyan record shows how far a spore absence reaches, and
+the body-fossil models describe the finding rates or delays that would fit older vascular-plant dates.
 
 **Table 1.** The three maxima examined: the evidence each rests on, the test the published record
 allows, and the links a clock must still assume. GTS2012, Geologic Time Scale 2012.
@@ -89,7 +86,7 @@ allows, and the links a clock must still assume. GTS2012, Geologic Time Scale 20
 | Maximum | Set by | Evidence | Test available | Links assumed |
 |---|---|---|---|---|
 | 515.5 Ma, living land plants | Morris et al. | Base of the *Olenellus* Biozone, below the oldest possible Cambrian spore-like packets; older marine rocks with algal cysts | Affinity of the Cambrian packets; any fully reported older sequence | Spore delivery to marine basins, catchment, search effort, spore production by the earliest members |
-| 459.1 Ma, living land plants | Hooper et al. | GTS2012 Sandbian base plus uncertainty, keyed to the oldest possible trilete spore (Borenshult-1, Sweden) | Older samples reporting no triletes against younger samples reporting them, Murzuq Basin, Libya | Earliest crown members produced triletes, the trait persisted, producers lived in the catchment |
+| 459.1 Ma, living land plants | Hooper et al. | GTS2012 Sandbian base plus uncertainty, keyed to the oldest possible trilete spore (Borenshult-1, Sweden) | Libyan samples reporting no triletes, against records of the same age elsewhere | Earliest crown members produced triletes, the trait persisted, producers lived in the catchment |
 | 431.2 Ma, living vascular plants | Hooper et al. | GTS2012 Homerian base plus uncertainty, keyed to Irish Homerian *Cooksonia* | A limit on when the body-fossil record began, and what older ancestors require | Finding rate before the oldest find, delay before recognisable bodies, the oldest finds lie within the vascular crown |
 
 ## Material and methods
@@ -114,24 +111,15 @@ Llandovery samples, which serve as the reference. The source states the absence 
 explicitly for part of the sequence; for the Hawaz Formation, samples reporting none rest on complete reporting
 charts and the stated microscopy protocol. The basin lay near the Ordovician South Pole, within the area
 of Hirnantian glaciation [@cocks2021OrdovicianPalaeogeographyClimate;
-@scotese2021PhanerozoicPaleotemperaturesEarths] (figure 3*a*).
+@scotese2021PhanerozoicPaleotemperaturesEarths] (electronic supplementary material, figure S2). We
+compared the samples' ages with trilete records in our spore compilation, built from Palynodata
+[@white2008PalynodataDatafile2006], the curated assemblages of Wellman et al.
+[@wellman2013Chapter29Palaeophytogeography] and later literature, keeping records with usable ages that
+are not flagged as reworked or questionable. A model of spore supply, in which samples from one well
+share a well effect, sets upper limits on how much steady supply the samples allow; its 95% limits were
+tested on simulated data with known answers (electronic supplementary material, S2).
 
-**(d) Libyan spore model.** We modelled whether trilete spores were reported in each sample. Spore supply before
-the Llandovery is a fraction *f* of Llandovery supply, and a fixed delivery ratio $\rho$ covers
-differences between older and younger rocks in transport, preservation and preparation ($\rho=1$:
-spores reached both equally easily). Samples from one well share a well effect, gamma-distributed with
-mean one (shape and rate 2), and are otherwise independent; each sample's age is uniform within its
-stage range. Fitting the Llandovery rate and *f* together, we calculated upper 95% limits on *f* for
-steady supply from a given start, and for supply that varied between zero and the Llandovery
-level, averaged with each interval weighted by how much of the older samples' age ranges falls within it. Using the younger reports as the
-reference, we first checked that the design could exclude steady supply at the Llandovery level if
-every older sample reported no triletes and fell within the period of supply; each simulated dataset
-faced the same check. We then tested the method on simulated data with known answers. Among simulated
-datasets passing that check, the method had either to withhold a limit or to give one at or above the
-true value; a quantity was used only if this held in more than 93% of trials with 95% confidence, with a
-preplanned pooled rule for borderline cases (electronic supplementary material, S2).
-
-**(e) Body-fossil finds.** We assembled land-plant body fossils dated to 453–393 Ma from Paleobiology
+**(d) Body-fossil finds.** We assembled land-plant body fossils dated to 453–393 Ma from Paleobiology
 Database (PBDB) occurrences, whose names an AI model classified with cited sources before our audit, and
 from a source-reviewed set of the oldest records with their competing interpretations. Collections, taxa
 or papers sharing a locality and age count as one find, a proxy for an independent fossil horizon. We
@@ -145,7 +133,7 @@ or the euphyllophytes (ferns and seed plants) [@kotyk2002MorphologicallyComplexP
 certainly older than the end of the Emsian ([393.47]{.C25} Ma), the younger edge of the time window
 (electronic supplementary material, S5.1).
 
-**(f) Limit on when the record began.** Let *w*(*s*) be a fixed relative rate at which recognisable
+**(e) Limit on when the record began.** Let *w*(*s*) be a fixed relative rate at which recognisable
 fossils of a category are found at age *s*, and $U(a)=\int_c^a w(s)\,ds$ the cumulative finding rate
 between a younger cutoff *c*, here the end of the Emsian, and age *a*. For *n* independent finds with
 oldest age *A*, the 95% confidence limit *T* on the start of the recognisable record
@@ -158,7 +146,7 @@ possible age of the oldest find, and *n* counts only finds certainly inside the 
 move the limit older. The limit concerns the start of the record; the Discussion treats its link to
 ancestors.
 
-**(g) Finding-rate histories and shape tests.** We compared six assumed histories of the finding rate:
+**(f) Finding-rate histories and shape tests.** We compared six assumed histories of the finding rate:
 steady; proportional to PBDB land and marginal-marine collections per Myr
 [@brook2026FrozenPaleobiologyDatabase], with or without the collections that hold plant fossils;
 declining exponentially into the past with 25 or 10 Myr timescales; and plant-excluded collection
@@ -170,14 +158,14 @@ ranges, including whether the finds straddling the cutoff fall inside the window
 [compare @berger1994PValuesMaximized]. A history that fails under every assignment is rejected
 (electronic supplementary material, S5.2).
 
-**(h) Lower earlier finding rates and delays.** The main scenario holds the finding rate steady after
+**(g) Lower earlier finding rates and delays.** The main scenario holds the finding rate steady after
 [426.7]{.C32} Ma, the oldest possible age of a crown vascular-plant find, and lowers it before that
 age. For a candidate ancestor age *t* and an assumed delay *d* before the first recognisable bodies, the
-ratio of earlier to later finding rate that puts *t* − *d* where the limit of (*f*) would fall is
+ratio of earlier to later finding rate that puts *t* − *d* where the limit of (*e*) would fall is
 $r=(A-c)(0.05^{-1/n}-1)/(t-d-A)$, defined where $t-d>A$; fossils would then have to be found $1/r$ times
 less often before the oldest find than after it. Longer delays reduce the reduction a given ancestor
 age needs [@marshall2019UsingFossilRecord]. We chose where to put the step after seeing the data, so
-these curves show what would fit, without the 95% confidence that (*f*) gives each fixed history.
+these curves show what would fit, without the 95% confidence that (*e*) gives each fixed history.
 
 ## Results
 
@@ -204,25 +192,25 @@ and by correlation [@libertin2018SporophytesPolysporangiateLand], meets the same
 supplementary material, table S13). On the current timescale the rule gives outer values of
 [431.9]{.C47} Ma for the Homerian and [434.1]{.C47} Ma for the Sheinwoodian.
 
-**(c) Older Libyan samples reporting no triletes limit a steady, well-delivered spore supply.** Trilete spores are reported in
-[51 of 59]{.C02} Llandovery samples and in none of the [28]{.C01} older samples (figure 3*a*). If
-spores reached both sets of rocks equally easily, a steady supply since 459.1 Ma is limited to
-[0.091]{.C24} of the Llandovery supply, and a supply varying between zero and the Llandovery level to an average of [0.184]{.C24} (figure
-3*b*; electronic supplementary material, table S12). If older spores reached the rocks a tenth as
-easily, steady supply near the Llandovery level fits (limit [0.910]{.C24}). For steady supply the
-samples limit the product $\rho f$, which stays at [0.091]{.C24} whatever the delivery.
+**(c) The Libyan samples show that a spore absence can be local.** Trilete spores are reported in
+[51 of 59]{.C02} Llandovery samples and in none of the [28]{.C01} older samples (electronic
+supplementary material, figure S2). Of the older samples, [18]{.C45}, from three wells, are
+Katian–Hirnantian (Late Ordovician). They are younger than the definite Swedish triletes below the
+[454.41]{.C43} Ma bentonite, and fall in the same stages as trilete-bearing assemblages in Saudi
+Arabia, Turkey, southern Britain and Belgium [@wellman2013Chapter29Palaeophytogeography][]{.C54};
+[5]{.C45} of the Libyan samples, and assemblages in Saudi Arabia and Britain, are Hirnantian, a stage of
+about two million years. Trilete spores thus occur elsewhere in the stages these Libyan rocks
+represent, and none is reported from them. Only [10]{.C45} broadly dated Darriwilian (Middle Ordovician) samples, from two wells, have age
+ranges reaching beyond 459.1 Ma, and their weight depends on how ages are spread within the
+stage[]{.C09}. With equal delivery, the samples limit steady trilete supply since 459.1 Ma to
+[0.091]{.C24} of the Llandovery level under the main model, and to about [0.4]{.C51 .V081} when
+samples are weighted by well and rock unit (electronic supplementary material, S2.2 and S2.5). Lower
+delivery, lower local supply or producers outside the catchment all fit.
 
-**(d) The Libyan limits cover mainly the later Ordovician.** Most of the older samples' weight comes
-from [18]{.C45} Katian–Hirnantian (Late Ordovician) samples, all younger than 459.1 Ma. Only [10]{.C45}
-broadly dated Darriwilian (Middle Ordovician) samples, from two wells, have age ranges reaching beyond
-459.1 Ma. Their contribution under a start at that age depends on how ages are spread within the stage;
-placed at stage midpoints, they contribute nothing[]{.C09}. The limits therefore concern steady supply
-through the later Ordovician in one high-latitude basin.
-
-**(e) At a steady finding rate, the 95% confidence limit on the vascular-plant body record's start is
+**(d) At a steady finding rate, the 95% confidence limit on the vascular-plant body record's start is
 near 429 Ma.** If crown vascular-plant fossils were found at a steady rate, the [48]{.C25} finds
 certainly inside the window put the 95% confidence limit on the start of their record at
-[428.8]{.C27 .V003} Ma (figure 4*a*).
+[428.8]{.C27 .V003} Ma (figure 3*a*).
 Finding rates that track collection density give [428.9]{.C27 .V009} Ma, or [428.5]{.C27 .V010} Ma with
 plant-bearing collections removed, and a 25 Myr decline into the past gives [431.6]{.C27 .V011} Ma. If
 finding fossils became steeply harder with age (the 10 Myr decline), the method sets no limit as far
@@ -233,23 +221,23 @@ the shape test under one assignment of ages when all [50]{.C49 .V107} possible f
 inside the window (best *p* =
 [0.035]{.C49 .V106}).
 
-**(f) Counting fewer independent finds moves the limit past 431.2 Ma.** Treating each region and stage as one find
+**(e) Counting fewer independent finds moves the limit past 431.2 Ma.** Treating each region and stage as one find
 ([19]{.C30} finds) gives [432.4]{.C30} Ma, and counting only the curated oldest records ([15]{.C30}
 finds) gives [434.05]{.C30} Ma, both at a steady finding rate. Shifting stage boundaries by their quoted
 uncertainties, in the scenarios tested, moves the main limit between [427.31]{.C50 .V062} and
 [430.42]{.C50 .V063} Ma (electronic supplementary material, S5.3).
 
-**(g) Older vascular-plant dates fit if early fossils were found less often, or recognisable bodies
+**(f) Older vascular-plant dates fit if early fossils were found less often, or recognisable bodies
 appeared later.** In the main scenario, halving the finding rate before the oldest find moves the limit
 to [431.0]{.C53 .V108} Ma, still younger than the 431.2 Ma maximum. Ancestors at 444–452 Ma, spanning
 the Morris et al. mean dates and the Harris et al. interval, fit if fossils were found
 [8]{.C48 .V054}–[12]{.C48 .V055} times less often before the oldest find than after it, with
-recognisable bodies appearing with the ancestor (figure 4*b*). Counting by region and stage, or only the
+recognisable bodies appearing with the ancestor (figure 3*b*). Counting by region and stage, or only the
 curated oldest records, [2.4]{.C48 .V056}–[4.5]{.C48 .V057} times suffices, and 431.2 Ma already fits a
 steady rate. At a steady finding rate, the same ancestors fit if recognisable bodies appeared at least
-[15–23]{.C33} Myr after them. Smaller reductions combine with shorter delays (figure 4*b*).
+[15–23]{.C33} Myr after them. Smaller reductions combine with shorter delays (figure 3*b*).
 
-**(h) One Ordovician find moves the broader land-plant limit.** Sporangial fragments with in situ
+**(g) One Ordovician find moves the broader land-plant limit.** Sporangial fragments with in situ
 cryptospores from the Ghaba-1 borehole, Oman, dated to the Katian on later correlation
 [@wellman2003FragmentsEarliestLand], form one land-plant body find. Adding them moves the steady-rate
 limit for all land-plant body fossils from [434.5]{.C28} to [455.2]{.C40 .V022} Ma, and the enlarged
@@ -261,9 +249,9 @@ planes [@edwards1979RecordsFertileRhyniophytina].
 
 The early record allows older ancestors, and the analyses state what each would require. The evidence
 differs in depth between the two clades. For living land plants it comes from the audit of the 515.5 Ma
-maximum and one polar basin: in the Murzuq Basin, the older samples exclude a steady, well-delivered
-trilete supply at the Llandovery level through the later Ordovician, while lower delivery, lower local
-supply or spore producers outside the catchment all fit. For living vascular plants it comes from a body
+maximum and one polar basin, whose samples report no triletes from stages in which triletes occur
+elsewhere. Those samples exclude a steady, well-delivered supply near the Llandovery level, while lower
+delivery, lower local supply or spore producers outside the catchment all fit. For living vascular plants it comes from a body
 record drawn from several regions: at a steady finding rate, or one tracking collection density, the 95%
 confidence limit on the start of the recognisable crown vascular-plant record lies near
 [429]{.C27 .V018} Ma, and counting fewer independent finds puts it at [432.4–434.05]{.C30} Ma. For each way of counting, a lower earlier finding rate, later recognisable
@@ -291,12 +279,11 @@ and test different assumptions. CladeDate builds calibration densities directly 
 to revised calibrations. We make the maxima's observational requirements explicit, limiting local spore
 supply and sizing the reductions in finding rate, or the delays, that fit older vascular-plant dates.
 
-**Conditions.** The spore limits assume that the Llandovery spores are indigenous, that older and
+**Conditions.** The Libyan limits assume that the Llandovery spores are indigenous, that older and
 younger samples were reported comparably, that ages are uniform within stages, and that samples are
-independent apart from a shared well effect. Three exploratory checks of that dependence, untested on
-simulated data, give [0.0995]{.C51 .V058} with a separate Llandovery rate for each well and no well
-effect, about [0.4]{.C51 .V081} when samples are weighted by well and rock unit, and
-[0.185–0.365]{.C07} (varying supply) with one well left out at a time. Linking the local spore record to
+independent apart from a shared well effect; the four-tenths figure comes from an exploratory weighting
+that was not tested on simulated data (electronic supplementary material, S2.5). The comparison with
+other regions holds at stage resolution and depends on the coverage of the spore compilation. Linking the local spore record to
 ancestors requires that the earliest crown embryophytes produced recognisable trilete spores, that the
 trait persisted and that producers lived in the catchment (electronic supplementary material, S6).
 
@@ -315,7 +302,7 @@ Published evidence could narrow these requirements. Records of searched Silurian
 effort and empty beds included, would help constrain early finding rates, and compilations of rock units
 could supply proxies for the terrestrial rock available at each age [@peters2018MacrostratPlatformGeological].
 A second complete spore sequence outside polar Gondwana, with older samples reporting no triletes,
-younger samples reporting them and counted target and control grains, would test whether the Libyan result is general; a fully
+younger samples reporting them and counted target and control grains, would show whether supply limits of this size hold outside one polar basin; a fully
 reported marine sequence older than 515.5 Ma, with comparable recovery documented, would help quantify
 the oldest maximum's absence argument. Finer, independent ages for the Yea (Victoria, Australia) and
 Bathurst Island (Arctic Canada) horizons, which hold the oldest possible crown vascular-plant finds,
@@ -333,13 +320,15 @@ and finding-rate assumptions, and justify the probability assigned to older ages
 maxima then shows how much each assumption moves the timescale, and sampling the joint age prior without
 molecular data, then comparing its effective marginal ages with the posteriors, shows what the molecular
 data add [@brown2017PastSureTense]. The same separation of the evidence, the chance of finding it and its
-link to the ancestor applies to any maximum argued from absence. In the Libyan basin, older land-plant
-ancestors fit if, with equal delivery, their steady trilete supply since 459.1 Ma stayed below a tenth of
-the later supply ([0.091]{.C24}), or their spores never reached the basin, because the producers lived elsewhere or
+link to the ancestor applies to any maximum argued from absence. The Libyan basin shows that trilete spores can go
+unreported in rocks from stages in which they occur elsewhere. Older land-plant ancestors fit
+its record if, with equal delivery, their steady trilete supply since 459.1 Ma stayed below a tenth of
+the later supply ([0.091]{.C24}; four-tenths under an exploratory weighting), or their spores never
+reached the basin, because the producers lived elsewhere or
 triletes evolved later. Vascular-plant ancestors at 444–452 Ma fit if early body fossils were found
 [8]{.C48 .V054}–[12]{.C48 .V055} times less often, with recognisable bodies appearing with the
-ancestor, or, at a steady rate, if those bodies appeared at least [15–23]{.C33} Myr after it; both are
-scenarios chosen after seeing the data. Missing fossils thus allow older ancestors if early plants were
+ancestor, or, at a steady rate, if those bodies appeared at least [15–23]{.C33} Myr after it; the first is a
+scenario chosen after seeing the data. Missing fossils thus allow older ancestors if early plants were
 found less often or became recognisable later, and the records examined state how much less often.
 
 ## Ethics

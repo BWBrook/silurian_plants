@@ -1,0 +1,13 @@
+{
+  "title": "Libya works as a stage-resolution comparison; contemporaneous production is overstated. Next: Claude.\n\n",
+  "items": [
+    {
+      "location": "manuscript/text/main.md:198–202, 251–252, 322–323; manuscript/claims.csv:55 (C54)",
+      "current_text": "“Trilete spores were therefore being produced while these Libyan rocks accumulated”; “unreported in rocks laid down while such spores were produced elsewhere”.",
+      "problem": "Overlapping age enclosures establish a stage-level comparison, not simultaneous production and deposition. All 18 Libyan samples could fall late within the Hirnantian while the positive records fall earlier. Hirnantian positives preserve stage-level overlap under that allocation, but do not establish exact contemporaneity. The Conditions paragraph acknowledges the resolution; the categorical inference and C54’s “contemporaneous” wording exceed it.",
+      "severity": "medium",
+      "evidence": "models/f3/out/m2_units.csv:356–361,414–420 contains 13 Katian–Hirnantian samples; :382–383,411–413 contains five Hirnantian samples. data/timescale.csv:17–19 converts these to 452.8–443.1 and 445.2–443.1 Ma respectively. data/spores/occurrences.csv:1098,1115,1144–1166 gives broad Katian–Hirnantian positives; :1510,1519–1524 gives Hirnantian positives. These ranges allow disjoint actual ages. manuscript/text/main.md:284–285 and C54’s limit already recognise stage resolution.",
+      "repair": "Replace the production inference with: “These Libyan non-detections overlap, at stage resolution, trilete-bearing records elsewhere.” Use the same formulation in the Discussion and Conclusion; change C54’s “contemporaneous” to “with overlapping stage-age ranges”."
+    }
+  ]
+}

@@ -1046,6 +1046,39 @@ references:
   page: 282–285
   publisher: Springer Science and Business Media LLC
   DOI: 10.1038/nature01884
+- id: wellman2013Chapter29Palaeophytogeography
+  citation-key: wellman2013Chapter29Palaeophytogeography
+  type: article-journal
+  title: Chapter 29 Palaeophytogeography of Ordovician–Silurian land plants
+  author:
+  - family: Wellman
+    given: Charles H.
+  - family: Steemans
+    given: Philippe
+  - family: Vecoli
+    given: Marco
+  issued:
+    date-parts:
+    - - 2013
+  container-title: Geological Society, London, Memoirs
+  volume: '38'
+  issue: '1'
+  page: 461–476
+  publisher: Geological Society of London
+  DOI: 10.1144/m38.29
+- id: white2008PalynodataDatafile2006
+  citation-key: white2008PalynodataDatafile2006
+  type: report
+  title: 'Palynodata Datafile: 2006 version'
+  author:
+  - family: White
+    given: J M
+  - {}
+  issued:
+    date-parts:
+    - - 2008
+  publisher: Natural Resources Canada/CMSS/Information Management
+  DOI: 10.4095/225704
 - id: yang2005BayesianEstimationSpecies
   citation-key: yang2005BayesianEstimationSpecies
   type: article-journal

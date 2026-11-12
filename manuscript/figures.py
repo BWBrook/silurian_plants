@@ -4,7 +4,7 @@
 # ///
 """Figures for the reconstructed manuscript and its supplement.
 
-Main text, in citation order: fig1_dispute, fig2_bound, fig3_murzuq, fig4_requirements (figures_main.py).
+Main text, in citation order: fig1_dispute, fig2_bound, fig3_requirements (figures_main.py); figS_murzuq is supplement figure S2.
 Graphical abstract, also the brief's figure: graphical_abstract (figures_abstract.py). Supplement: figS2_qsim, figS7_mapping, plus the reviewed Loop 2 and Loop 3 figures reused unchanged from models/.
 Every number drawn here is read from a frozen or reviewed output table, never retyped, except the
 published clock intervals and calibration maxima, which are taken from docs/primer.md §5.3.
@@ -152,7 +152,7 @@ def fig_qsim(path):
 def main():
     OUT.mkdir(exist_ok=True)
     for stale in ("fig1_support", "fig3_qsim_share", "fig2_mapping", "fig3_evidence", "fig4_bodies", "fig4_mapping", "figS1_qsim",
-                  "fig1_problem", "fig2_evidence", "fig3_bodies", "fig4_frontier", "figB1_brief"):
+                  "fig1_problem", "fig2_evidence", "fig3_bodies", "fig4_frontier", "figB1_brief", "fig3_murzuq", "fig4_requirements"):
         for ext in ("png", "pdf"):
             (OUT / f"{stale}.{ext}").unlink(missing_ok=True)
     fig_mapping(OUT / "figS7_mapping")

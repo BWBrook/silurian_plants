@@ -336,5 +336,5 @@ INPUTS = [UNITS, RESULTS, FRONTIER, Path(__file__)]
 def draw(out):
     fig1(out / "fig1_dispute")
     fig2(out / "fig2_bound")
-    fig3(out / "fig3_murzuq")
-    fig4(out / "fig4_requirements")
+    fig3(out / "figS_murzuq")
+    fig4(out / "fig3_requirements")
