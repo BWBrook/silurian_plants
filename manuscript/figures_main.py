@@ -96,7 +96,7 @@ def fig1(path):
                 color=INK)
     maxima_lines(ax, lw=0.6)
     ax.set_ylim(-0.6, len(rows) - 0.4)
-    ax.set_title("(c) First-record age supports under the labelled identification readings",
+    ax.set_title("(c) Possible ages of the oldest finds, by labelled identification",
                  fontsize=8.5, loc="left")
     clean(ax)
     ax.set_yticks(range(len(rows)), [r[0] for r in reversed(rows)], fontsize=7.2)
@@ -123,17 +123,17 @@ def fig2(path):
     d = 20.0
     fig, (top, bot) = plt.subplots(2, 1, figsize=(7.2, 4.4), sharex=True, gridspec_kw={"height_ratios": [2, 3]})
     x0, x1 = 456, 390
-    for w, col, lab in ((1.0, BLUE["650"], "constant recording"), (0.5, BLUE["450"], "earlier recording halved"),
-                        (0.1, BLUE["250"], "earlier recording a tenth")):
+    for w, col, lab in ((1.0, BLUE["650"], "steady finding rate"), (0.5, BLUE["450"], "earlier rate halved"),
+                        (0.1, BLUE["250"], "earlier rate a tenth")):
         top.plot([x0, A, A, x1], [w, w, 1, 1], color=col, lw=2, solid_joinstyle="miter",
                  drawstyle="default", label=lab)
     top.axvline(A, color=MUTED, lw=0.6, ls=":")
     top.text(A - 0.4, 1.12, f"A = {A} Ma, oldest possible find", fontsize=7, color=MUTED, va="bottom")
     top.set_ylim(0, 1.35)
     top.set_yticks([0, 0.5, 1])
-    top.set_ylabel("Relative recording\nrate, w")
+    top.set_ylabel("Relative finding\nrate, w")
     top.legend(frameon=False, fontsize=7, loc="lower right")
-    top.set_title("(a) Assumed recording histories, differing only before A",
+    top.set_title("(a) Assumed finding-rate histories, differing only before A",
                   fontsize=8.5, loc="left")
     top.spines[["top", "right"]].set_visible(False)
     seen = {}
@@ -143,9 +143,9 @@ def fig2(path):
         bot.plot(a, 0.04 + 0.075 * k, "o", ms=2.6, color=INK)
     bot.axvline(CUTOFF, color=MUTED, lw=0.8)
     bot.text(CUTOFF + 0.4, 1.7, f"c = {CUTOFF} Ma\n(end of Emsian)", fontsize=7, color=MUTED, ha="right", va="top")
-    bot.text((A + CUTOFF) / 2, -0.12, f"n = {len(ages)} guaranteed units, stacked at their oldest possible ages",
+    bot.text((A + CUTOFF) / 2, -0.12, f"n = {len(ages)} finds certainly inside the window, stacked at their oldest possible ages",
              fontsize=7, ha="center", va="top", color=MUTED)
-    for T, col, lab, ha in ((flat, BLUE["650"], f"T = {flat:.1f} Ma\n(constant)", "left"),
+    for T, col, lab, ha in ((flat, BLUE["650"], f"T = {flat:.1f} Ma\n(steady)", "left"),
                             (half, BLUE["450"], f"{half:.1f} Ma\n(halved: scenario)", "right"),
                             (tenth, BLUE["250"], f"{tenth:.1f} Ma\n(a tenth: scenario)", "right")):
         bot.annotate("", xy=(T, 0.55), xytext=(T, 1.05), arrowprops={"arrowstyle": "-|>", "color": col, "lw": 1.4})
@@ -156,7 +156,7 @@ def fig2(path):
     bot.text(flat + d / 2, 1.42, f"assumed delay d = {d:.0f} Myr: candidate ancestor t = {flat + d:.1f} Ma",
              fontsize=7, ha="center", va="bottom")
     bot.set_ylim(-0.4, 1.75)
-    bot.set_title("(b) Finds, fixed-history 95% bound T, and retrospective step/delay scenarios",
+    bot.set_title("(b) Finds, the 95% limit T, and scenarios chosen after seeing the data",
                   fontsize=8.5, loc="left")
     clean(bot)
     bot.set_xlim(x0, x1)
@@ -197,7 +197,7 @@ def fig3(path):
             a.plot([hi, lo], [y, y], color=MUTED, lw=0.5)
             a.plot((hi + lo) / 2, y, "o", ms=2.7, mfc=INK if pos else "white", mec=INK, mew=0.6)
             y += 1
-        ticks.append(((start + y - 1) / 2, f"{w}\n({len(block)} cuttings)"))
+        ticks.append(((start + y - 1) / 2, f"{w}\n({len(block)} samples)"))
         if j < len(wells) - 1:
             a.axhline(y + 0.75, color=GRID, lw=0.7)
         y += 2.5
@@ -207,25 +207,25 @@ def fig3(path):
     a.vlines(SPORE_MAXIMUM, -1.2, y - 1.5, color=INK, lw=0.8, ls=(0, (4, 3)))
     a.set_xlim(F.stage_base("Darriwilian") + 1, F.stage_base("Sheinwoodian") - 0.5)
     a.set_xlabel("Age (million years ago)")
-    a.text(0.015, 0.985, f"Older frame: {len(broad)} broad Darriwilian supports\n"
-           f"{len(younger)} cuttings wholly younger than {SPORE_MAXIMUM} Ma",
+    a.text(0.015, 0.985, f"Older samples: {len(broad)} broadly dated Darriwilian,\n"
+           f"{len(younger)} wholly younger than {SPORE_MAXIMUM} Ma",
            transform=a.transAxes, fontsize=7, ha="left", va="top", color=INK)
     a.text(SPORE_MAXIMUM - 0.3, -2.2, f"{SPORE_MAXIMUM} Ma", fontsize=7, va="center")
     a.text((F.stage_base("Rhuddanian") + F.stage_base("Sheinwoodian")) / 2, -2.2, "Llandovery reference",
            fontsize=7, ha="center", va="center")
     a.plot([], [], "o", ms=3.2, mfc=INK, mec=INK, label="triletes reported")
-    a.plot([], [], "o", ms=3.2, mfc="white", mec=INK, label="trilete zero (audited)")
+    a.plot([], [], "o", ms=3.2, mfc="white", mec=INK, label="no triletes")
     a.legend(frameon=False, fontsize=7, loc="upper center", bbox_to_anchor=(0.5, -0.1), ncol=2)
-    a.set_title("(a) Cuttings by well: stage-range support", fontsize=8.5, loc="left")
+    a.set_title("(a) Samples by well, with their age ranges", fontsize=8.5, loc="left")
     a.spines[["top", "right", "left"]].set_visible(False)
     res = sorted(((float(r["rho"]), float(r["fstar_H0c_459.1"]), float(r["fstar_H0_459.1"])) for r in F.read(RESULTS)
                   if r["design"] == "LY-MZ-CU" and r["primary"] == "True"
                   and r["variant"] == "allocation=stage;cluster_k=2.0;material_type=chart-code"))
     rho = [r[0] for r in res]
     assert len(res) == 4 and len(set(rho)) == 4
-    b.plot(rho, [r[1] for r in res], ":o", color=CLOCK["Morris et al. 2018"], lw=1, ms=5, label="constant input")
+    b.plot(rho, [r[1] for r in res], ":o", color=CLOCK["Morris et al. 2018"], lw=1, ms=5, label="steady supply")
     b.plot(rho, [r[2] for r in res], ":s", color=CLOCK["Harris et al. 2022"], lw=1, ms=5,
-           label="exposure-weighted mean,\nbounded variable input")
+           label="varying supply (0 to Llandovery level),\nweighted by sample age ranges")
     for r_, c_, e_ in res:
         b.text(r_ * 0.93, c_ - 0.02, f"{c_:.3f}", fontsize=6.5, ha="left", va="top", color=INK)
     b.set_xscale("log")
@@ -233,8 +233,8 @@ def fig3(path):
     b.minorticks_off()
     b.invert_xaxis()
     b.set_ylim(0, 1.0)
-    b.set_xlabel("Delivery ratio ρ (older / reference)")
-    b.set_ylabel("Upper 95% limit on older input, f")
+    b.set_xlabel("Delivery ratio ρ (older / Llandovery)")
+    b.set_ylabel("Upper 95% limit on older supply, f")
     b.legend(frameon=False, fontsize=7, loc="upper left")
     b.text(0.5, -0.16, "Markers: evaluated scenarios\nDotted lines: visual guides",
            transform=b.transAxes, ha="center", va="top", fontsize=7, color=MUTED)
@@ -275,18 +275,18 @@ def fig4(path):
     a.axvspan(min(alt), max(alt), color=BLUE["250"], alpha=0.35, lw=0)
     a.axvline(flat, color=BLUE["650"], lw=1.6)
     a.axvline(VASCULAR_MAXIMUM, color=INK, lw=0.8, ls=(0, (4, 3)))
-    a.text(flat - 0.6, -2.0, f"{flat:.1f} Ma, constant recording", fontsize=6.8, color=INK, va="center", ha="left")
-    a.text(flat - 0.6, -5.0, f"{min(alt):.1f}–{max(alt):.2f} Ma, alternative units", fontsize=6.8, va="center",
+    a.text(flat - 0.6, -2.0, f"{flat:.1f} Ma, steady finding rate", fontsize=6.8, color=INK, va="center", ha="left")
+    a.text(flat - 0.6, -5.0, f"{min(alt):.1f}–{max(alt):.2f} Ma, fewer independent finds", fontsize=6.8, va="center",
            ha="left")
     a.text(flat - 0.6, -8.0, f"{VASCULAR_MAXIMUM} Ma maximum (dashed)", fontsize=6.8, va="center", ha="left")
     a.set_ylim(len(units) + 1, -10)
     a.set_xlim(437, 386)
     a.set_yticks([])
     a.set_xlabel("Age (million years ago)")
-    a.plot([], [], color=MUTED, lw=1.1, label="guaranteed unit (48)")
+    a.plot([], [], color=MUTED, lw=1.1, label="certainly inside window (48)")
     a.plot([], [], color=CLOCK["Harris et al. 2022"], lw=1.1, ls=(0, (2, 1.5)), label="straddles cutoff (2)")
     a.legend(frameon=False, fontsize=6.8, loc="upper center", bbox_to_anchor=(0.5, -0.16), ncol=1)
-    a.set_title("(a) Crown vascular-plant units", fontsize=8.5, loc="left")
+    a.set_title("(a) Crown vascular-plant finds", fontsize=8.5, loc="left")
     a.spines[["top", "right", "left"]].set_visible(False)
     t = np.linspace(426.8, 456, 800)
 
@@ -304,11 +304,11 @@ def fig4(path):
     b.axvline(VASCULAR_MAXIMUM, color=INK, lw=0.8, ls=(0, (4, 3)))
     for d, step, style in ((0, "650", "-"), (10, "450", (0, (6, 2))), (20, "250", (0, (3, 1, 1, 1)))):
         b.plot(t, contrast("primary", d), color=BLUE[step], lw=2, ls=style,
-               label=f"primary units (n = {params['primary'][2]}), delay {d} Myr")
+               label=f"main count (n = {params['primary'][2]}), delay {d} Myr")
     b.plot(t, contrast("region_stage", 0), color=MUTED, lw=1.3, ls="--",
-           label=f"region–stage units (n = {params['region_stage'][2]}), no delay")
+           label=f"region and stage (n = {params['region_stage'][2]}), no delay")
     b.plot(t, contrast("curated", 0), color=MUTED, lw=1.3, ls=":",
-           label=f"curated units (n = {params['curated'][2]}), no delay")
+           label=f"curated oldest records (n = {params['curated'][2]}), no delay")
     for r in rows:
         if r["status"] == "contour" and r["unit_treatment"] == "primary" and float(r["assumed_diagnostic_delay_myr"]) == 0 \
                 and float(r["candidate_lineage_ma"]) in (444.0, 452.0):
@@ -321,9 +321,9 @@ def fig4(path):
     b.minorticks_off()
     b.set_xlim(456, 426)
     b.set_xlabel("Candidate ancestor age, t (Ma)")
-    b.set_ylabel("Later / earlier recording ratio")
+    b.set_ylabel("Times less often found before A")
     b.legend(frameon=False, fontsize=6.6, loc="upper center", bbox_to_anchor=(0.45, -0.16), ncol=2)
-    b.set_title("(b) Retrospective recording/delay compatibility", fontsize=8.5, loc="left")
+    b.set_title("(b) Reductions and delays that would fit", fontsize=8.5, loc="left")
     b.spines[["top", "right"]].set_visible(False)
     b.grid(axis="y", color=GRID, lw=0.5)
     fig.tight_layout()

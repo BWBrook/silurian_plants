@@ -1,0 +1,140 @@
+{
+  "items": [
+    {
+      "finding_index": 1,
+      "location": "manuscript/text/main.md:15–17, Abstract",
+      "current_text": "the 95% confidence limit on their record's start is [428.8]{.C27 .V003} Ma; counting fewer independent finds gives [432.4–434.05]{.C30} Ma.",
+      "resolved": "yes",
+      "comment": "This now describes a conditional confidence limit rather than an oldest possible date. “Counting fewer independent finds” accommodates both aggregation and the restricted inventory (claims C27/C30; models/f3/loop3/analysis.py:43–62).",
+      "repair": ""
+    },
+    {
+      "finding_index": 2,
+      "location": "manuscript/text/main.md:117, Methods (d)",
+      "current_text": "We modelled whether trilete spores were reported in each sample.",
+      "resolved": "yes",
+      "comment": "The outcome is correctly identified as a report, matching supplement.md:48–54.",
+      "repair": ""
+    },
+    {
+      "finding_index": 3,
+      "location": "manuscript/text/main.md:122–124, Methods (d)",
+      "current_text": "for the average of supply that varied between zero and the Llandovery level, taken over the older samples' age ranges.",
+      "resolved": "partly",
+      "comment": "The older samples and supply cap are explicit, but the averaging rule remains ambiguous. The weights sum the fractions of individual samples’ age ranges falling in each interval; they are not simply elapsed time across the covered ages (supplement.md:92–101; models/f3/envelope.py:434–444).",
+      "repair": "For varying supply between zero and the Llandovery level, we calculated an average from the assumed start to the Llandovery, weighting each interval by the summed fractions of the older samples’ age ranges falling within it."
+    },
+    {
+      "finding_index": 4,
+      "location": "manuscript/text/main.md:124–127, Methods (d)",
+      "current_text": "Using the younger reports as the reference, we first checked that the design could exclude steady supply at the Llandovery level if every older sample reported no triletes and fell within the period of supply; each simulated dataset faced the same check.",
+      "resolved": "yes",
+      "comment": "Both missing conditions are restored: the younger reports supply the reference, and every older sample is treated as exposed. This matches models/f3/m2.py:29–44 and qualify.py:205–215.",
+      "repair": ""
+    },
+    {
+      "finding_index": 5,
+      "location": "manuscript/text/main.md:127–130, Methods (d)",
+      "current_text": "Among simulated datasets passing that check, the method had either to withhold a limit or to give one at or above the true value; a quantity was used only if this held in more than 93% of trials with 95% confidence, with a preplanned pooled rule for borderline cases",
+      "resolved": "yes",
+      "comment": "The author's wording correctly restores the conditional denominator, treatment of withheld limits, confidence requirement and pooled rule. It does not claim coverage among delivered limits. See supplement.md:137–151, qualify.py:215–225 and validate.py:133–156.",
+      "repair": ""
+    },
+    {
+      "finding_index": 6,
+      "location": "manuscript/text/main.md:148–150, Methods (f)",
+      "current_text": "For *n* independent finds with oldest age *A*, the 95% confidence limit *T* on the start of the recognisable record solves",
+      "resolved": "yes",
+      "comment": "The absolute-possibility wording has gone. The confidence-limit interpretation matches supplement.md:421–425.",
+      "repair": ""
+    },
+    {
+      "finding_index": 7,
+      "location": "manuscript/text/main.md:173–178, Methods (h)",
+      "current_text": "the ratio of earlier to later finding rate that puts *t* − *d* where the limit of (*f*) would fall ... fossils would then have to be found $1/r$ times less often ... these curves show what would fit, without the 95% confidence that (*f*) gives each fixed history.",
+      "resolved": "yes",
+      "comment": "The rate is explicitly hypothetical, and the text withdraws the confidence interpretation for the selected scenarios. This preserves the calculation and status in frontier.py:5–9,35–55 and supplement.md:672–677.",
+      "repair": ""
+    },
+    {
+      "finding_index": 8,
+      "location": "manuscript/text/main.md:177–178, Methods (h)",
+      "current_text": "We chose where to put the step after seeing the data, so these curves show what would fit, without the 95% confidence that (*f*) gives each fixed history.",
+      "resolved": "yes",
+      "comment": "“Fixed history” states the conditional assumption without claiming specification before inspecting the data, consistent with supplement.md:438–448.",
+      "repair": ""
+    },
+    {
+      "finding_index": 9,
+      "location": "manuscript/text/main.md:220–223, Results (e)",
+      "current_text": "**(e) At a steady finding rate, the 95% confidence limit on the vascular-plant body record's start is near 429 Ma.**",
+      "resolved": "yes",
+      "comment": "Both heading and following sentence now state a conditional confidence limit rather than asserting when the record actually began (claim C27; estimands.md:48–68).",
+      "repair": ""
+    },
+    {
+      "finding_index": 10,
+      "location": "manuscript/text/main.md:228–232, Results (e)",
+      "current_text": "The 25 Myr decline passes the shape test under one assignment of ages when all [50]{.C49 .V107} possible finds are counted ... and fails under every assignment of the [48]{.C49 .V069} finds certainly inside the window",
+      "resolved": "yes",
+      "comment": "A passing assignment is now described as passing this diagnostic, without promoting it to model adequacy. The values and distinction match claim C49 and supplement.md:475–507.",
+      "repair": ""
+    },
+    {
+      "finding_index": 11,
+      "location": "manuscript/text/main.md:299–302, Discussion, Conditions",
+      "current_text": "an observation process whose reported age ranges always contain the true ages, including whether each find falls inside the window.",
+      "resolved": "yes",
+      "comment": "“Observation process” and “always” restore the repeated-sampling containment condition, including inclusion states (supplement.md:475–485; estimands.md:93–100).",
+      "repair": ""
+    },
+    {
+      "finding_index": 12,
+      "location": "manuscript/text/main.md:302–304, Discussion, Conditions",
+      "current_text": "if the probability that any range misses its true age is $\\delta$, the test's error rate is at most $\\alpha+\\delta$",
+      "resolved": "yes",
+      "comment": "“Any range” correctly makes δ the probability of joint containment failure. With all permitted cutoff-inclusion states searched, containing every true age also admits the true inclusion state (supplement.md:475–485).",
+      "repair": ""
+    },
+    {
+      "finding_index": 13,
+      "location": "manuscript/text/figures.md:3, Figure 2 caption",
+      "current_text": "In the scenarios chosen after seeing the data, halving the earlier finding rate gives a compatibility endpoint of [431.0]{.C53 .V108} Ma, and cutting it to a tenth gives [448.1]{.C32} Ma; the steady-rate 95% confidence limit is [428.8]{.C27 .V003} Ma.",
+      "resolved": "yes",
+      "comment": "The selected-scenario endpoints are now distinguished from the steady-rate confidence limit, matching C53 and supplement.md:672–677.",
+      "repair": ""
+    },
+    {
+      "finding_index": 14,
+      "location": "manuscript/text/figures.md:5, Figure 3 caption, panel (a)",
+      "current_text": "No triletes are reported in any of the [28]{.C01} older samples; they are reported in [51 of 59]{.C02} Llandovery (earliest Silurian) samples, the reference.",
+      "resolved": "yes",
+      "comment": "These are correctly described as target-specific reported outcomes, rather than empty samples or biological absence (claims C01/C02; supplement.md:48–54).",
+      "repair": ""
+    },
+    {
+      "finding_index": 15,
+      "location": "manuscript/text/figures.md:5, Figure 3 caption, panel (b); manuscript/figures_main.py:227–228",
+      "current_text": "the average of supply varying between zero and the Llandovery level, taken over the older samples' age ranges ... Legend: “varying supply (0 to Llandovery level), averaged over older samples' ages”.",
+      "resolved": "partly",
+      "comment": "The bounded history class is restored in caption and legend. The averaging still leaves the same weighting ambiguity as finding 3 (supplement.md:92–108; envelope.py:434–444).",
+      "repair": "Caption: “For varying supply between zero and the Llandovery level, the average weights each interval by the summed fractions of the older samples’ age ranges falling within it.” Legend: “varying supply (0 to Llandovery level); weighted using sample age ranges”."
+    },
+    {
+      "finding_index": 16,
+      "location": "manuscript/text/figures.md:7, Figure 4 caption, panel (b)",
+      "current_text": "Along each curve, an oldest find no older than *A* has probability 0.05 given the count ... We placed the step after seeing the data, so the curves show what would fit and carry no 95% confidence.",
+      "resolved": "yes",
+      "comment": "The original inferential-status problem is resolved: the probability rule replaces the confidence-limit claim, and the selected scenarios explicitly carry no 95% confidence. The event's age direction matches frontier.py:49–55. A separate qualification of “along each curve” follows.",
+      "repair": ""
+    },
+    {
+      "finding_index": 0,
+      "location": "manuscript/text/figures.md:7, Figure 4 caption, “Along each curve” sentence",
+      "current_text": "Along each curve, an oldest find no older than *A* has probability 0.05 given the count",
+      "resolved": "no",
+      "comment": "The new equality is too broad for the plotted curves. figures_main.py:293–297 clips ratios below one to one; on those flat portions the probability can exceed 0.05. For example, the main zero-delay curve at 427 Ma gives approximately 0.650. The later statement about drawing these ages at one should explicitly qualify the equality.",
+      "repair": "Where a curve rises above one, an oldest find no older than A has probability 0.05 given the count, with the record starting at t − d. Flat portions at one show ages already allowed by a steady finding rate, for which that probability is at least 0.05."
+    }
+  ]
+}

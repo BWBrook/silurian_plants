@@ -1,0 +1,165 @@
+{
+  "overall": "The rewrite needs repairs to coverage conditions, retrospective-scenario status and some descriptions of limits. No files were edited.\n\nNext: Claude\n",
+  "items": [
+    {
+      "location": "manuscript/text/main.md:15–17, Abstract",
+      "old": "For vascular-plant bodies, constant recording gives a one-sided 95% older bound of [428.8]{.C27 .V003} Ma on their record's start, and alternative counting units give [432.4–434.05]{.C30} Ma.",
+      "new": "If vascular-plant fossils were found at a steady rate, the oldest their record could begin is [428.8]{.C27 .V003} Ma (95% limit); coarser counting gives [432.4–434.05]{.C30} Ma.",
+      "verdict": "uncertain",
+      "severity": "medium",
+      "what_changed": "“The oldest their record could begin” can make a confidence bound sound like an oldest possible date. Also, the curated subset is a restriction of the inventory, rather than simply coarser aggregation.",
+      "evidence": "manuscript/estimands.md:48–68 defines a conditional older bound and prohibits an earliest date. models/f3/loop3/analysis.py:43–44 restricts the curated inventory; lines 60–62 aggregate region–stage units.",
+      "repair": "At a steady finding rate, the upper 95% age limit for the start of the vascular-plant body-fossil record is 428.8 Ma; counting by region and stage, or using only the curated oldest records, gives 432.4–434.05 Ma."
+    },
+    {
+      "location": "manuscript/text/main.md:117, Methods (d)",
+      "old": "**(d) Spore encounter model.**",
+      "new": "**(d) Libyan spore model.** We modelled whether each sample contains trilete spores.",
+      "verdict": "changed",
+      "severity": "high",
+      "what_changed": "The added sentence makes physical presence the modelled outcome. The outcome is a reported detection, which does not establish whether an undetected sample physically contains spores.",
+      "evidence": "manuscript/text/supplement.md:48–54 defines d_i as the reported trilete outcome. data/units/reporting-rule.md:26–32 and 46–50 distinguishes reported zeros from biological absence.",
+      "repair": "We modelled whether trilete spores were reported in each sample."
+    },
+    {
+      "location": "manuscript/text/main.md:122–124, Methods (d)",
+      "old": "We computed upper 95% compatibility limits on *f* for constant input, and for the exposure-weighted mean of variable histories, from a postulated start, with input between zero and the reference level.",
+      "new": "Fitting the Llandovery rate and *f* together, we calculated upper 95% limits on *f* for steady supply from a given start, and for supply that varied between zero and the Llandovery level, averaged over the ages the samples cover.",
+      "verdict": "uncertain",
+      "severity": "medium",
+      "what_changed": "“Averaged over the ages the samples cover” could mean an ordinary time average across the covered interval. The target weights intervals by the samples’ age exposure; it is not an equally weighted average over time.",
+      "evidence": "manuscript/text/supplement.md:92–101 defines the weighted mean and its coefficients. models/f3/envelope.py:434–444 implements those coefficients and the target.",
+      "repair": "Fitting the Llandovery rate and older supply together, we calculated upper 95% limits for steady supply and for varying supply from an assumed start. Varying supply stayed between zero and the Llandovery level and was averaged using the fraction of each sample’s age range falling in each interval."
+    },
+    {
+      "location": "manuscript/text/main.md:124–126, Methods (d)",
+      "old": "The potential screen sets older reports to zero and checks whether the frame could exclude constant reference-level input when every older cutting is exposed, with a usable younger reference. Each simulation uses the same screen; the analysis uses the actual reports.",
+      "new": "Before using the reports, we confirmed that the samples could exclude steady supply at the Llandovery level if every older sample were empty; each simulated dataset faced the same check.",
+      "verdict": "changed",
+      "severity": "high",
+      "what_changed": "The paraphrase drops the assumption that every older sample is fully exposed to the hypothesised supply. It also suggests that no reports were used, although the younger reports supply the reference.",
+      "evidence": "models/f3/m2.py:29–44 sets older outcomes to zero and evaluates the screen at the domain endpoint with every older unit exposed. models/f3/qualify.py:205–216 applies that same screen to simulations.",
+      "repair": "Using the younger reports as the reference, we checked whether setting every older report to no triletes and treating every older sample as exposed could exclude steady supply at the Llandovery level. Each simulated dataset faced the same check."
+    },
+    {
+      "location": "manuscript/text/main.md:126–128, Methods (d)",
+      "old": "Acceptance simulations independent of calibration then qualified each declared quantity on a finite scenario grid. Among replicates passing the screen, with withheld claims counted as non-errors, the one-sided 95% lower confidence limit on coverage had to exceed 0.93; borderline quantities went to a preplanned pooled rule (electronic supplementary material, S2).",
+      "new": "We tested the method on simulated data with known answers before applying it: each reported limit had to contain the true value in more than 93% of trials, allowing for simulation error (electronic supplementary material, S2).",
+      "verdict": "wrong",
+      "severity": "high",
+      "what_changed": "This changes the coverage denominator to reported limits, removes conditioning on passing the screen and omits withheld claims being counted as covering. It also replaces the specified confidence-limit and pooled acceptance rules with an unspecified allowance for simulation error.",
+      "evidence": "manuscript/text/supplement.md:137–151 explicitly says coverage among non-abstaining results is not established and gives 20 misses among 60 delivered window claims. models/f3/qualify.py:215–225 counts abstentions as covering. models/f3/validate.py:133–156 specifies the lower-confidence-limit and pooled rules.",
+      "repair": "Independent checking simulations tested each quantity on a fixed scenario grid. Among trials passing the screen, withholding a claim counted as covering the truth. The one-sided 95% lower confidence limit on coverage had to exceed 93%, with a preplanned pooled check for borderline results."
+    },
+    {
+      "location": "manuscript/text/main.md:147–148, Methods (f)",
+      "old": "For *n* independent units with oldest age *A*, the one-sided 95% older bound *T* on the start of the recognisable record solves $U(T)=U(A)\\,0.05^{-1/n}$ (figure 2).",
+      "new": "For *n* independent finds with oldest age *A*, the 95% limit *T* on when the recognisable record began, the oldest it could begin, solves $U(T)=U(A)\\,0.05^{-1/n}$ (figure 2).",
+      "verdict": "uncertain",
+      "severity": "medium",
+      "what_changed": "“The oldest it could begin” adds an absolute-possibility interpretation to a confidence bound.",
+      "evidence": "manuscript/text/supplement.md:421–425 derives a one-sided confidence bound by inverting the maximum-age distribution. manuscript/estimands.md:48–50 and 67–68 specifies the permitted interpretation.",
+      "repair": "For n independent finds with oldest age A, the upper 95% age limit T for the start of the recognisable record solves the equation."
+    },
+    {
+      "location": "manuscript/text/main.md:171–174, Methods (h)",
+      "old": "For a candidate ancestor age *t* and an assumed delay *d* before recognisable bodies, the earlier-to-later rate ratio that places *t* − *d* on the bound is $r=(A-c)(0.05^{-1/n}-1)/(t-d-A)$, defined where $t-d>A$; the recording contrast is $1/r$.",
+      "new": "For a candidate ancestor age *t* and an assumed delay *d* before the first recognisable bodies, the ratio of earlier to later finding rate that places *t* − *d* exactly on the 95% limit is $r=(A-c)(0.05^{-1/n}-1)/(t-d-A)$, defined where $t-d>A$; fossils were then found $1/r$ times less often before the oldest find than after it.",
+      "verdict": "changed",
+      "severity": "high",
+      "what_changed": "The data-selected contour is called a 95% limit, and “fossils were then found” can sound like an inferred historical rate. The calculation supplies a hypothetical contrast using the 0.05 rule, without nominal confidence for the selected scenario.",
+      "evidence": "models/f3/loop3/frontier.py:5–9 and 35–55 defines retrospective compatibility contours. manuscript/text/supplement.md:672–678 explicitly denies nominal or selection-adjusted confidence. manuscript/claims.csv:49, C48, excludes fitted-rate and joint-confidence interpretations.",
+      "repair": "For a candidate ancestor age t and assumed delay d, the retrospective 0.05 compatibility contour gives the earlier-to-later finding-rate ratio r by this equation; 1/r describes how many times less often fossils would have to be found before the oldest find."
+    },
+    {
+      "location": "manuscript/text/main.md:175–176, Methods (h)",
+      "old": "We placed the step after inspecting the record, so its contours describe retrospective compatibility.",
+      "new": "We chose where to put the step after seeing the data. These curves therefore show what would fit; the 95% level belongs to the histories fixed in advance (*g*).",
+      "verdict": "wrong",
+      "severity": "high",
+      "what_changed": "“Fixed in advance” adds an unsupported claim of specification before seeing the data. The documented distinction is that the six histories were evaluated without fitting them to the focal fossils, not that they preceded inspection of the pilot.",
+      "evidence": "docs/loop3-design.md:3–5 explicitly says the specification is not a preregistration before seeing the pilot; lines 61–75 describes six histories evaluated without fitting. manuscript/text/supplement.md:438–448 uses that narrower description.",
+      "repair": "We chose where to put the step after seeing the data, so these curves show what would fit. The 95% bounds in (g) are conditional on treating each assumed history as fixed."
+    },
+    {
+      "location": "manuscript/text/main.md:218–220, Results (e)",
+      "old": "**(e) The vascular-plant body record has an older bound near 429 Ma.** The [48]{.C25} crown vascular-plant units give a one-sided 95% older bound of [428.8]{.C27 .V003} Ma under constant recording (figure 4*a*).",
+      "new": "**(e) At a steady finding rate, the vascular-plant body record began after about 429 Ma.** If crown vascular-plant fossils were found at a steady rate, the oldest their record could begin is [428.8]{.C27 .V003} Ma (95% limit; figure 4*a*), from the [48]{.C25} finds certainly inside the window.",
+      "verdict": "changed",
+      "severity": "high",
+      "what_changed": "The heading turns an older confidence bound into an assertion about when the record actually began. The following “oldest … could begin” wording reinforces that interpretation.",
+      "evidence": "manuscript/claims.csv:28, C27, records conditional endpoint inference. manuscript/estimands.md:48–68 permits an older bound and prohibits an earliest date.",
+      "repair": "**(e) At a steady finding rate, the vascular-plant body record has an upper 95% age limit near 429 Ma.** The 48 finds certainly inside the window give a limit of 428.8 Ma."
+    },
+    {
+      "location": "manuscript/text/main.md:225–228, Results (e)",
+      "old": "For the 25 Myr decline, one admissible allocation of all [50]{.C49 .V107} possible units gives *p* = [0.067]{.C49 .V104}, whereas every allocation of the [48]{.C49 .V069} guaranteed units fails (best *p* = [0.035]{.C49 .V106}).",
+      "new": "The 25 Myr decline fits one assignment of ages when all [50]{.C49 .V107} possible finds are counted (*p* = [0.067]{.C49 .V104}), and fails every assignment of the [48]{.C49 .V069} finds certainly inside the window (best *p* = [0.035]{.C49 .V106}).",
+      "verdict": "uncertain",
+      "severity": "medium",
+      "what_changed": "“Fits” can promote a non-rejection witness into evidence of model adequacy. The result establishes that at least one permitted assignment passes this diagnostic.",
+      "evidence": "manuscript/text/supplement.md:475–487 and table S7b caption at line 503 explicitly distinguish a passing possibility from evidence of adequacy. manuscript/estimands.md:101–104 prohibits that promotion.",
+      "repair": "The 25 Myr decline passes the shape test for at least one allowed assignment of ages when all 50 possible finds are counted (p = 0.067), but fails every assignment of the 48 finds certainly inside the window (best p = 0.035)."
+    },
+    {
+      "location": "manuscript/text/main.md:295–297, Discussion, Conditions",
+      "old": "The body bounds and conservative shape rejections assume independent continuous ages; fixed histories, cutoff, timescale, inventory and unit rules; and an observation model whose age ranges contain all true ages and inclusion states with probability one.",
+      "new": "The body-fossil limits and shape rejections assume independent ages on a continuous scale; fixed finding-rate histories, cutoff, timescale, inventory and counting rules; and age ranges that contain every true age, including whether each find falls inside the window.",
+      "verdict": "uncertain",
+      "severity": "medium",
+      "what_changed": "The explicit probability-one requirement on the observation process disappears. Containment of the realised ages alone does not state the repeated-sampling condition used to justify conservative error rates.",
+      "evidence": "manuscript/text/supplement.md:475–485 requires an observation model whose intervals contain the latent ages almost surely. manuscript/estimands.md:93–100 repeats that condition.",
+      "repair": "The body-fossil limits and shape rejections assume independent continuous ages; fixed finding-rate histories, cutoff, timescale, inventory and counting rules; and an observation process whose reported ranges always contain all true ages and allow their true inclusion states."
+    },
+    {
+      "location": "manuscript/text/main.md:297–299, Discussion, Conditions",
+      "old": "Geological ranges have no demonstrated joint coverage; if containment fails with probability $\\delta$, the direct test-size bound is $\\alpha+\\delta$, where $\\alpha$ is the exact-age significance level.",
+      "new": "Geological age ranges carry no demonstrated joint coverage; if a range misses the true age with probability $\\delta$, the test's error rate is at most $\\alpha+\\delta$, where $\\alpha$ is its level for exact ages.",
+      "verdict": "wrong",
+      "severity": "high",
+      "what_changed": "δ changes from the probability that joint containment fails to a single range's miss probability. Individual range coverage does not supply the stated bound for the whole test.",
+      "evidence": "manuscript/text/supplement.md:475–485 defines the full latent allocation z and its support set S; δ concerns failure of containment in that set. manuscript/estimands.md:93–100 specifies joint containment and notes that geological joint coverage is unestablished.",
+      "repair": "Geological age ranges have no demonstrated joint coverage. If the probability that any range misses its true age, or excludes the true inclusion state, is δ, the test’s error rate is at most α + δ."
+    },
+    {
+      "location": "manuscript/text/figures.md:3, Figure 2 caption",
+      "old": "The selected step's curves describe retrospective compatibility: the endpoints are [431.0]{.C53 .V108} Ma when earlier recording is halved and [448.1]{.C32} Ma at a tenth, compared with the constant-history bound [428.8]{.C27 .V003} Ma.",
+      "new": "A lower earlier finding rate moves the limit older: to [431.0]{.C53 .V108} Ma when halved and [448.1]{.C32} Ma at a tenth, against [428.8]{.C27 .V003} Ma at a steady rate.",
+      "verdict": "changed",
+      "severity": "high",
+      "what_changed": "Following the caption's definition of T as a 95% limit, this sentence gives the retrospective endpoints the same status as the constant-history confidence bound. The later statement that the step was chosen after seeing the data does not explicitly withdraw that confidence interpretation.",
+      "evidence": "manuscript/claims.csv:54, C53, explicitly says the halved-rate result has no nominal or selection-adjusted 95% status. manuscript/text/supplement.md:672–678 states the same limitation for the step grid.",
+      "repair": "In the scenarios chosen after seeing the data, halving the earlier finding rate gives a compatibility endpoint of 431.0 Ma, and cutting it to a tenth gives 448.1 Ma. The steady-rate 95% limit is 428.8 Ma."
+    },
+    {
+      "location": "manuscript/text/figures.md:5, Figure 3 caption, panel (a)",
+      "old": "All [28]{.C01} older cuttings are coded zero; [51 of 59]{.C02} Llandovery (earliest Silurian) reference cuttings are positive.",
+      "new": "All [28]{.C01} older samples are empty; [51 of 59]{.C02} Llandovery (earliest Silurian) samples, the reference, hold triletes.",
+      "verdict": "uncertain",
+      "severity": "medium",
+      "what_changed": "“Empty” can mean barren of fossils or spores generally. These are target-specific reported zeros, not empty preparations or proof of physical absence.",
+      "evidence": "manuscript/claims.csv:2, C01, says “none reporting triletes”. data/units/reporting-rule.md:33–46 distinguishes productive eligible samples, target non-detections and biological absence.",
+      "repair": "No triletes were reported in any of the 28 older samples; they were reported in 51 of the 59 Llandovery reference samples."
+    },
+    {
+      "location": "manuscript/text/figures.md:5 and manuscript/figures_main.py:227–228, Figure 3 panel (b)",
+      "old": "Upper 95% compatibility limits on older input divided by reference input, *f*, for constant histories and the exposure-weighted mean of bounded variable histories beginning at 459.1 Ma. Legend: “exposure-weighted mean, bounded variable input”.",
+      "new": "Upper 95% limits on older spore supply as a fraction of Llandovery supply, *f*, for steady supply and for supply that varied, averaged over the ages the samples cover, starting at 459.1 Ma. Legend: “varying supply, averaged over sampled ages”.",
+      "verdict": "uncertain",
+      "severity": "medium",
+      "what_changed": "The caption and legend no longer identify the bounded history class, and the averaging can be mistaken for an ordinary time average. The variable-history limit applies to a particular exposure-weighted mean with supply capped at the Llandovery level.",
+      "evidence": "manuscript/text/supplement.md:92–108 defines the weighted target and the H0 restriction 0 ≤ a(t) ≤ 1. manuscript/figures_main.py:221–228 selects the H0 output.",
+      "repair": "Upper 95% limits for steady supply and for the sample-exposure-weighted average of varying supply, starting at 459.1 Ma. Varying supply stays between zero and the Llandovery level. Legend: “varying supply, capped at Llandovery level; weighted by sampled ages”."
+    },
+    {
+      "location": "manuscript/text/figures.md:7, Figure 4 caption, panel (b)",
+      "old": "The contour sets the probability of an oldest recorded age at most *A* to 0.05, conditional on count.",
+      "new": "Each curve places the start of the record, *t* − *d*, exactly on the 95% limit.",
+      "verdict": "changed",
+      "severity": "high",
+      "what_changed": "An algebraic 0.05 compatibility contour chosen after inspecting the data becomes a 95% confidence limit. Those are different inferential statuses.",
+      "evidence": "models/f3/loop3/frontier.py:35–55 calculates contour_cdf_at_oldest = 0.05. Its documentation at lines 5–9 identifies retrospective sensitivity contours. manuscript/text/supplement.md:676–677 denies nominal or selection-adjusted confidence.",
+      "repair": "Each curve gives a scenario in which the chance of an oldest recorded age no older than A is 0.05, given the count. These scenarios were chosen after seeing the data and carry no 95% confidence guarantee."
+    }
+  ]
+}
