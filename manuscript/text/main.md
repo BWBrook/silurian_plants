@@ -5,19 +5,19 @@
 ## Abstract
 
 Molecular clocks date the ancestor of living land plants from the Cambrian to the Late Ordovician,
-partly through different fossil maximum ages. We examined three: 515.5 and 459.1 million years ago (Ma)
-for living land plants, and 431.2 Ma for living vascular plants. The 515.5 Ma maximum rests on a
-qualitative preservation argument. None of [28]{.C01} Ordovician Libyan borehole samples reports
-three-rayed (trilete) spores, although [18]{.C45} fall in stages when such spores occur elsewhere: an
-absence can be local. At a steady finding rate, the 95% confidence limit on the vascular-plant record's
-start is [428.8]{.C27 .V003}–[434.05]{.C30} Ma across three ways of counting [48]{.C25} finds, reaching
-the 431.2 Ma maximum if about half are counted as independent. Vascular-plant ancestors at 444–452 Ma fit
-if fossils were found [2.4]{.C48 .V056}–[12]{.C48 .V055} times less often before the oldest find than
-after it, with recognisable bodies appearing with the ancestor, or, at a steady
-rate with 48 independent finds, if they appeared at least [15–23]{.C33} Myr later. Before the oldest find,
-North American non-marine rock was about three times scarcer and the share of studies reporting
-triletes five to seven times lower: rock overlaps the cautious requirements, spores exceed them, and
-neither reaches the main count's.
+partly through differing fossil maxima. We examined three: 515.5 million years ago (Ma), resting on a
+qualitative argument, and 459.1 Ma for living land plants; 431.2 Ma for living vascular plants. No
+three-rayed (trilete) spores are reported in [28]{.C01} Ordovician Libyan borehole samples, [18]{.C45}
+from stages with such spores elsewhere: absence can be local. At a steady finding rate, the 95%
+confidence limit on the vascular-plant record's start is [428.8]{.C27 .V003}–[434.05]{.C30} Ma under
+three counts of [48]{.C25} finds, reaching 431.2 Ma if about half count as independent. Without a delay,
+ancestors at 444–452 Ma fit if fossils were found [2.4]{.C48 .V056}–[12]{.C48 .V055} times less often
+before the oldest find than after it, or if finding rose exponentially, doubling
+within [1.5]{.C57}–[5.1]{.C57} Myr depending on the count, allowing any older ancestor; at a steady rate with 48 independent
+finds, they fit if recognisable bodies appeared at least [15–23]{.C33} Myr later. North American
+non-marine rock was about three times scarcer before the oldest find, and a five to seven times smaller share of
+studies reported triletes: rock overlaps the cautious requirements, spores exceed them, neither alone
+meets the main count.
 
 **Keywords:** molecular clock; fossil calibration; land plants; vascular plants; stratigraphic
 confidence interval; Ordovician–Silurian

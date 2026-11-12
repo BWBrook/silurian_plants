@@ -1,0 +1,13 @@
+{
+  "title": "Needs repair: the new rise claim loses two essential conditions.\nNext: Claude\n",
+  "items": [
+    {
+      "location": "manuscript/text/main.md:15–16",
+      "current_text": "or if finding rose with a doubling time of [1.5]{.C57}–[5.1]{.C57} Myr or less, fitting any older ancestor",
+      "problem": "The absence of an older limit requires an exponential rise, and the maximum doubling time depends on the assumed independent-find count. Omitting both conditions generalises the result beyond C57 and leaves the numerical range ambiguous.",
+      "severity": "high",
+      "evidence": "C57 specifies exponential histories. Results (f), lines 266–271, restricts the unlimited-age result to that family and distinguishes counts. Supplement S5.9, lines 885–899, derives count-specific limiting doubling times: approximately 1.48 Myr for 48 independent finds and 5.09 Myr for 15.",
+      "repair": "Replace with: “or if finding rose exponentially, doubling within [1.5]{.C57}–[5.1]{.C57} Myr depending on the count, allowing any older ancestor”. The abstract remains 200 words."
+    }
+  ]
+}

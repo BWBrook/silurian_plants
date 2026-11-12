@@ -139,3 +139,5 @@ repairs, all made: requirements stated as requirements, not as a measured rate o
 measures how quickly plants became findable" removed); the Homerian–Gorstian spore comparison spans A and
 is coarse context only; the script's cross-checks described exactly; and the figure's limiting rise given
 as 1.48 Myr, since a literal 1.5 Myr doubling has a finite endpoint near 436 Ma.
+
+Abstract (Barry, chat, 12 November 2026: "Yes, make room"): the rise result now has one clause in the abstract, at 200 words. Sol (`2026-11-12-abstract-rise-check.json`) found it had dropped the exponential form and the count dependence; both restored with its wording.
