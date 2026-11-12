@@ -15,12 +15,13 @@ for the revision.
 - **Rules below are from the Royal Society's general author guidelines**,
   <https://royalsociety.org/journals/authors/author-guidelines/>, fetched 10 November 2026. That page
   says length limits are journal-specific.
-- **The *Proc B* length limit is unverified.** A search-tool summary attributes it to
-  royalsocietypublishing.org/rspb/pages/for-authors: up to 12 pages including figures and tables, no
-  more than 10,000 words including title page, abstract, legends, tables and references. It also gives
-  about 850 words to a page.
-  - *To do before planning cuts:* confirm the limit, the display-item limits and the AI-authorship
-    policy on the live *Proc B* pages.
+- **The *Proc B* length limit, verified 12 November 2026.** Barry copied it verbatim from the live
+  *Proc B* author page (chat): "Proceedings B publishes articles up to 12 pages, including figures and
+  tables, with no more than 10 000 words. The word count includes the title page, author names,
+  abstract, figure legends, tables and the reference list. As a rough guide, 10 000 words = 12 pages
+  without additional figures; 850 words = 1 page and 2-4 small figures = 1 page. For example, an
+  acceptable paper could be made up of 9 000 words and 4 small figures or 8500 words, 2 large figures
+  and 4 small figures." The display-item limits and the AI-authorship policy remain to confirm.
 - **Comparator DOIs** were checked through the Crossref API (ISSN 0962-8452) and Europe PMC; all are
   *Proc B* and open access. Full texts were read from Europe PMC XML.
 - **Electronic supplementary material (ESM) was not read.** Comparator ESM load is inferred from how
