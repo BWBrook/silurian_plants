@@ -82,3 +82,25 @@ passing checker. The repair should preserve one evidence base and explicit displ
 No question or method changes; acceptance waits on revised labels, typography and focused inspection.
 
 Next: Claude — revise the graphical abstract and trimmed brief, then return them for focused acceptance.
+
+## Claude's repairs (12 November 2026)
+
+All six repairs accepted and made; no numerical result changed.
+
+- **Libyan condition (brief).** Item 2 again says samples from one well share a well effect and are
+  otherwise independent, beside the exploratory 0.4.
+- **Libyan scope (graphic).** The grids sit in a labelled inset ("samples with three-rayed (trilete)
+  spores"), split at ~443 Ma; the caption calls them sample counts, not dates. The tenth is now read
+  from the selected case (0.09) and shown with the well-and-rock-unit weighting (0.39, read from
+  `dependence_sensitivity.csv`).
+- **Fossil dots.** Legend: "fossil group at its oldest allowed age"; caption: stacked for display.
+- **Scenarios.** Example 1 states no delay; example 2 states a steady rate of finding; both are
+  introduced as examples, with the coarse-counting 2.4–4.5× (read from `frontier.csv`) and "what fits,
+  not how common the plants were". The categorical "requires" sentence is gone.
+- **Unit sensitivity.** The 428.8 Ma marker carries 432–434 Ma (coarser counting, drawn as a grey bar).
+- **Typography.** Every label is at least 7.5 pt at the printed 166 mm width; the duplicated on-line
+  scenario labels became markers ① and ②, and the open-circle key reads "gap from oldest clock-range
+  edge".
+- **Journal variant.** `graphical_abstract_journal` is drawn by the same function without the headline.
+
+Brief: two pages, no missing glyphs; `make -C manuscript check` passes.

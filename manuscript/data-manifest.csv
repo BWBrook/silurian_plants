@@ -1,5 +1,5 @@
 path,role,distribution
-manuscript/package_manifest.csv,exact hashed inventory of 405 candidate files,internal release candidate; public release remains Barry's decision
+manuscript/package_manifest.csv,exact hashed inventory of 407 candidate files,internal release candidate; public release remains Barry's decision
 library/closed/,primary copyrighted PDFs and private source quotes for verification,private reproduction inputs; excluded from candidate inventory
 data/external/local/deposits/hooper2026-spore-evolution/,upstream ASR archives used by the existing pilot,not included; fetch with data/external/scripts/deposits_fetch.py under original provenance and licence terms
 data/occurrences/raw/pbdb_collections_darriwilian_emsian_2026-10-28.csv,frozen all-taxa PBDB raw input to inventory/effort rebuild,CC0; exact bytes publicly archived at https://doi.org/10.5281/zenodo.24028289; restore with make fetch-pbdb

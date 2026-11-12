@@ -161,6 +161,7 @@ def main():
     figures_main.draw(OUT)
     import figures_abstract
     figures_abstract.draw(OUT / "graphical_abstract")
+    figures_abstract.draw(OUT / "graphical_abstract_journal", headline=False)
     inputs = [QSIM, TIMESCALE, SPORES, MEMBERS, BOUNDS, SUPPRESS, MAPPING,
               ROOT / "models/f3/loop2/contamination.py", Path(__file__), *figures_main.INPUTS,
               *figures_abstract.INPUTS]

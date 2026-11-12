@@ -4,7 +4,7 @@ Barry W. Brook (University of Tasmania), with Claude Opus 5.5 (Anthropic) and Op
 
 <div id="figures"></div>
 
-*Graphical abstract. Coloured bars: molecular-clock estimates of each ancestor's age. Brown band: the fossil record, its pale start spanning the possible ages of the oldest finds. Thin line: the time between the oldest clock date and the first fossils. Scenarios 1 and 2 were chosen after seeing the data and show compatibility, not 95% limits; the 95% limit assumes a steady recording rate. All describe the fossil record; the ancestor itself can be older.*
+*Graphical abstract. Coloured bars: molecular-clock estimates of each ancestor's age. Brown band: the fossil record, its pale start spanning the possible ages of the oldest finds; thin line: the gap back to the oldest edge of the clock ranges. Vascular-plant dots sit at each group's oldest allowed age, stacked for display; the Libyan grids are sample counts, not dates. Examples 1 and 2 were chosen after seeing the data and show compatibility, not 95% limits; the 95% limits assume a steady recording rate. All describe the fossil record; the ancestor itself can be older.*
 
 ## The puzzle
 
@@ -23,7 +23,7 @@ We traced the three maximum ages that divide the clocks (515.5 and 459.1 Ma for 
 ## What we found
 
 1. **The oldest maximum (515.5 Ma) rests on a qualitative argument.** Older marine rocks preserve tough algal cysts and no land-plant spores, so its authors read the spores' absence as real[]{.C46}. How many spores reached those seas, and how hard anyone looked, remain unmeasured.
-2. **The Libyan rocks limit sustained, well-delivered spore input.** A steady flow of spores into these rocks from 459.1 Ma fits only below about a tenth of the later flow ([0.091]{.C24}); lower input, poor delivery or plants living elsewhere all fit. This treats samples from one well as linked; weighting samples by well and rock unit instead gives an exploratory figure near [0.4]{.C51 .V081}. The result covers mainly the later Ordovician in one polar basin.
+2. **The Libyan rocks limit sustained, well-delivered spore input.** A steady flow of spores into these rocks from 459.1 Ma fits only below about a tenth of the later flow ([0.091]{.C24}); lower input, poor delivery or plants living elsewhere all fit. This treats samples from one well as sharing a well effect and otherwise independent; weighting samples by well and rock unit instead gives an exploratory figure near [0.4]{.C51 .V081}. The result covers mainly the later Ordovician in one polar basin.
 3. **Vascular plants can be older if early fossils were scarcer, or recognisable later.** At a steady recording rate, the 95% older limit on their body record is about [429]{.C27 .V001} Ma, or [432–434]{.C30} Ma if the finds are counted as fewer independent places. A retrospective scenario that halves the earlier rate reaches only [431.0]{.C53 .V108} Ma. Dates of 444–452 Ma fit if such fossils were found [8]{.C48 .V094} to [12]{.C48 .V095} times less often before the oldest find than after it ([2.4]{.C48 .V096} to [4.5]{.C48 .V097} times if counted cautiously), or at a steady rate if recognisable bodies appeared at least [15–23]{.C33} million years after the ancestor.
 4. **One find can move the limit by 20 million years.** Counting the tiny Late Ordovician spore-capsule fragments from Oman moves the limit for land-plant bodies back by about 20 million years[]{.C40}.
 
