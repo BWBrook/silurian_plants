@@ -165,8 +165,11 @@ age. For a candidate ancestor age *t* and an assumed delay *d* before the first 
 ratio of earlier to later finding rate that puts *t* − *d* where the limit of (*e*) would fall is
 $r=(A-c)(0.05^{-1/n}-1)/(t-d-A)$, defined where $t-d>A$; fossils would then have to be found $1/r$ times
 less often before the oldest find than after it. Longer delays reduce the reduction a given ancestor
-age needs [@marshall2019UsingFossilRecord]. We chose where to put the step after seeing the data, so
-these curves show what would fit, without the 95% confidence that (*e*) gives each fixed history.
+age needs [@marshall2019UsingFossilRecord]. For any fixed history, a candidate age *t* fits when the
+relative finding rate summed over [*A*, *t*] is at most $(A-c)(0.05^{-1/n}-1)$, so the step is one shape
+among many; we also report a linear rise from zero at the ancestor and an exponential rise, each reaching
+the later level at *A*. We chose where to put the step and the rises after seeing the data, so these
+curves show what would fit, without the 95% confidence that (*e*) gives each fixed history.
 
 **(h) Outside measures.** To judge whether a required reduction is large, we compared it with three
 rough measures, defined before they were computed: the area of North American Macrostrat columns
@@ -256,7 +259,21 @@ number of independent finds, and with fewer than about 24, 431.2 Ma already fits
 steady finding rate and with all 48 finds independent, the same ancestors fit if recognisable bodies
 appeared at least [15–23]{.C33} Myr after them; fewer independent finds shorten the delay needed. Smaller reductions combine with shorter delays (figure 3*b*).
 
-**(f) Outside measures reach the cautious requirements.** For ancestors at 444–452 Ma, mapped non-marine
+**(f) A rise in finding rate, rather than a step, sets a maximum doubling time.** Whatever its shape, an
+earlier finding rate fits an ancestor when its total before the oldest find is no more than the
+equivalent of [2.1]{.C57} Myr of finding at the later rate with 48 finds, [5.7]{.C57} Myr with 19 and
+[7.3]{.C57} Myr with 15. A straight-line rise from zero at the ancestor stays within that total only for
+ancestors up to [431.0]{.C57}, [438.1]{.C57} and [441.4]{.C57} Ma. An exponential rise fits ancestors at
+444–452 Ma if finds doubled every [1.5]{.C57} Myr or faster with 48 finds, every [4.0]{.C57}–[4.2]{.C57}
+Myr with 19 and every [5.3]{.C57}–[5.8]{.C57} Myr with 15. These doubling times barely change for an
+ancestor at 500 Ma ([1.5]{.C57}, [3.9]{.C57} and [5.1]{.C57} Myr): within the exponential family, a rise
+this fast leaves no finite older limit, so the body record limits the origin only if finding rose more
+slowly. These are requirements for fitting, not estimates of how fast plants spread. For coarse context,
+the share of palynological studies reporting triletes changed between the Homerian and the Gorstian,
+across the oldest find, at an equivalent doubling time of about [6.6]{.C57} Myr, and rose fastest, about
+every [1.0]{.C57} Myr, from the Hirnantian into the Rhuddanian; neither tests the required rise.
+
+**(g) Outside measures reach the cautious requirements.** For ancestors at 444–452 Ma, mapped non-marine
 rock in North American columns covers about [3.2]{.C56}–[3.5]{.C56} times less area before the oldest
 find than after it, and PBDB land and marginal-marine collections are only [1.35]{.C56} and [1.41]{.C56}
 times sparser at 444 and 452 Ma. The share of indexed palynological studies reporting trilete spores is
@@ -268,7 +285,7 @@ exceeds each measure; whether their combined effects could supply it remains unt
 before recognisable bodies is another route. South American rock, recorded more coarsely, shows no
 decline.
 
-**(g) One Ordovician find moves the broader land-plant limit.** Sporangial fragments with in situ
+**(h) One Ordovician find moves the broader land-plant limit.** Sporangial fragments with in situ
 cryptospores from the Ghaba-1 borehole, Oman, dated to the Katian on later correlation
 [@wellman2003FragmentsEarliestLand], form one land-plant body find. Adding them moves the steady-rate
 limit for all land-plant body fossils from [434.5]{.C28} to [455.2]{.C40 .V022} Ma, and the enlarged
@@ -288,7 +305,10 @@ confidence limit on the start of the recognisable crown vascular-plant record li
 [429]{.C27 .V018} and [434.05]{.C30} Ma, depending on how many finds are independent, and passes the
 431.2 Ma maximum at about half the main count. For each way of counting, a lower earlier finding rate, later recognisable
 bodies or both fit ancestors older than these limits; the models give the size of each requirement in
-aggregate.
+aggregate. Before the oldest find, the record allows only the equivalent of [2.1]{.C57}–[7.3]{.C57} Myr of finding at the
+later rate, so it limits the total early finding rather than its shape. Within an exponential rise, a doubling
+time at or below about [1.5]{.C57}–[5.1]{.C57} Myr, depending on the count, leaves no older limit at all,
+so any limit on the origin rests on assuming how fast finding rose.
 
 Several processes could have made early plants scarcer in the record. Producers may have been rarer,
 more geographically restricted, concentrated where little terrestrial sediment accumulated, or preserved

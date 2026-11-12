@@ -121,3 +121,21 @@ side-by-side plan; document reporting share described as producer rarity; rock s
 counts at 452 Ma, where it does not; North America generalised; an endpoint range; supplement gap
 boundaries and unit counts; and a narrowed figure range. Recheck (`2026-11-12-rulers-recheck.json`): six
 resolved, two partly and two new endpoint points; all then repaired with Sol's wording.
+
+## Early-rise shapes (Barry's general point 6, the gradual-spread analysis)
+
+Barry, chat, 12 November 2026: replace the step by "a rise followed by a level stretch" as plants spread,
+with hand sums for linear and exponential rises; "it gives a rate" and "shows a limit of the method".
+Pre-specified in the `docs/plan-rulers.md` addendum; computed in `models/f3/loop3/rise_shapes.py`
+(provisional claim C57). For any fixed history, compatibility depends only on the summed earlier
+finding R(t) ≤ K(n) = (A − c)(0.05^(−1/n) − 1): 2.14, 5.68 and 7.35 Myr-equivalents for 48, 19 and 15
+finds. Barry's sums were right: a linear rise reaches 431.0/438.1/441.4 Ma; an exponential rise fits
+444–452 Ma with doubling times of 1.48, 4.0–4.2 and 5.3–5.8 Myr, and below the limits 1.48/3.93/5.09
+Myr no older limit exists. Added: Methods (g) sentence, Results (f), Discussion sentence, figure 2a
+curve, supplement S5.9 and Table S15.
+
+Sol (`2026-11-12-rise-shapes-check.json`) passed the derivation and reproduced both outputs; four
+repairs, all made: requirements stated as requirements, not as a measured rate of spread ("the record
+measures how quickly plants became findable" removed); the Homerian–Gorstian spore comparison spans A and
+is coarse context only; the script's cross-checks described exactly; and the figure's limiting rise given
+as 1.48 Myr, since a literal 1.5 Myr doubling has a finite endpoint near 436 Ma.

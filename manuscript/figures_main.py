@@ -29,6 +29,7 @@ RESULTS = ROOT / "models/f3/out/m2_results.csv"
 FRONTIER = ROOT / "models/f3/loop3/out/frontier.csv"
 DIAL = ROOT / "models/f3/loop3/out/count_dial.csv"
 RULERS = ROOT / "models/f3/loop3/out/rulers.csv"
+RISE = ROOT / "models/f3/loop3/out/rise_shapes.csv"
 CUTOFF = float(F.primary_bound("B2", "flat")[2]["cutoff_ma"])
 ALPHA = 1 - float(F.primary_bound("B2", "flat")[2]["confidence_conditional_on_fixed_history_iid_units"])
 EMBRYOPHYTE_MAXIMA = tuple(age for age, _ in F.MAXIMA["embryophyta"])
@@ -129,6 +130,11 @@ def fig2(path):
                         (0.1, BLUE["250"], "earlier rate a tenth")):
         top.plot([x0, A, A, x1], [w, w, 1, 1], color=col, lw=2, solid_joinstyle="miter",
                  drawstyle="default", label=lab)
+    rise = next(r for r in F.read(RISE) if r["n"] == case["n_guaranteed"])
+    tau = float(rise["K_myr"])
+    xs = np.linspace(A, x0, 400)
+    top.plot(np.r_[xs[::-1], A, x1], np.r_[np.exp(-(xs[::-1] - A) / tau), 1, 1], color="#4f8a3a", lw=1.4,
+             ls=(0, (4, 2)), label=f"limiting rise: finds doubling every {float(rise['exp_limit_doubling_myr']):.2f} Myr")
     top.axvline(A, color=MUTED, lw=0.6, ls=":")
     top.text(A - 0.4, 1.12, f"A = {A} Ma, oldest possible find", fontsize=7, color=MUTED, va="bottom")
     top.set_ylim(0, 1.35)
@@ -348,7 +354,7 @@ def fig4(path):
     save(fig, path)
 
 
-INPUTS = [UNITS, RESULTS, FRONTIER, DIAL, RULERS, Path(__file__)]
+INPUTS = [UNITS, RESULTS, FRONTIER, DIAL, RULERS, RISE, Path(__file__)]
 
 
 def draw(out):

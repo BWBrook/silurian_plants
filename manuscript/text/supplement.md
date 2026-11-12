@@ -876,6 +876,39 @@ numerator; Sol's review found this departure from the plan, and the corrected sh
 The measures bear on different factors (rock on preservation, searching on collection, spores on document
 reporting, which producer prevalence affects among other factors); no product is formed.
 
+### S5.9 Shapes of an early rise
+
+For a fixed history with relative finding rate *r*(*s*) before the oldest find *A* and 1 after it, the
+probability that all *n* finds are younger than *A*, given a start at *t*, is
+$\{(A-c)/[(A-c)+R(t)]\}^n$ with $R(t)=\int_A^t r(s)\,ds$. An ancestor at *t* therefore fits the 95% limit
+when $R(t)\le K=(A-c)(0.05^{-1/n}-1)$, whatever the shape of *r*; the step of S5.4 is the case of constant
+*r*. A linear rise from zero at *t* to 1 at *A* gives $R=(t-A)/2$ and reaches $t=A+2K$. An exponential rise
+$r(s)=e^{-(s-A)/\tau}$ gives $R=\tau(1-e^{-(t-A)/\tau})$, which approaches $\tau$ as *t* grows: every
+ancestor age fits once $\tau\le K$, so within this family the record sets a maximum doubling time rather
+than an older limit on the origin; these are requirements for fitting, not estimates of spread. In
+`models/f3/loop3/rise_shapes.py`, piecewise-constant histories verify the linear and exponential
+integrals, `endpoint.known_cutoff_summary` additionally confirms the exponential endpoints at 444 and
+452 Ma, and the absence of a finite endpoint for $\tau\le K$ follows analytically. The shapes were placed after seeing the record and carry no 95% status.
+
+<!-- table:rises -->
+| Independent finds | Allowance *K* (Myr at the later rate) | Linear rise reaches (Ma) | Doubling time, 444 Ma | 452 Ma | 500 Ma | Limit as *t* grows |
+|--:|--:|--:|--:|--:|--:|--:|
+| 48 | [2.14]{.C57} | [430.98]{.C57} | [1.48]{.C57} | [1.48]{.C57} | [1.48]{.C57} | [1.48]{.C57} |
+| 24 | [4.42]{.C57} | [435.54]{.C57} | [3.13]{.C57} | [3.07]{.C57} | [3.06]{.C57} | [3.06]{.C57} |
+| 19 | [5.68]{.C57} | [438.05]{.C57} | [4.17]{.C57} | [3.98]{.C57} | [3.93]{.C57} | [3.93]{.C57} |
+| 15 | [7.35]{.C57} | [441.39]{.C57} | [5.84]{.C57} | [5.28]{.C57} | [5.09]{.C57} | [5.09]{.C57} |
+<!-- /table:rises -->
+**Table S15.** Early-rise shapes before the oldest crown vascular-plant find (main interpretation, Emsian
+cutoff, zero delay). Doubling time is $\tau\ln 2$ in Myr.
+
+For coarse context, the share of Palynodata documents reporting usable triletes (S5.8) changed from
+[0.136]{.C57} in the Homerian to [0.183]{.C57} in the Gorstian, an equivalent doubling time of about
+[6.6]{.C57} Myr between stage midpoints, and from [0.016]{.C57} in the Hirnantian to [0.089]{.C57}
+in the Rhuddanian, about [1.0]{.C57} Myr. The first comparison spans the oldest find at the
+Homerian–Gorstian boundary, so it is not a test of a rise confined to before *A*; placing the Gorstian
+level at *A* instead would shorten it to about 4.6 Myr. The share is a reporting measure, not a finding
+rate for crown vascular plants.
+
 ## S6. From specimens to nodes
 
 The specimen-to-node pilot separates specimen observations, accepted event readings, encounter, trait

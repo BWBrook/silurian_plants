@@ -1,0 +1,37 @@
+{
+  "title": "Derivation and numbers pass; interpretation and verification wording need repair. Assertions passed with writes captured in memory; both CSVs reproduced exactly.",
+  "items": [
+    {
+      "location": "manuscript/text/main.md:262–270, 308–310; manuscript/text/supplement.md:887",
+      "current_text": "“gives a rate of spread”; “the body record limits how quickly finds became common”; “the record then measures how quickly plants became findable”",
+      "problem": "These turn a compatibility requirement into an estimated historical rate. The endpoint statistic constrains integrated relative finding under the assumed later plateau; it identifies neither the earlier shape nor biological spread. Specifying an exponential converts that integral requirement into a maximum compatible doubling time.",
+      "severity": "medium",
+      "evidence": "S5.2 and endpoint.known_cutoff_summary give U(t) ≤ U(A)0.05^(-1/n). With the specified plateau this becomes R(t) ≤ K. Many different histories satisfy it. The exponential result τ ≤ K genuinely permits arbitrarily old ancestors within that scenario, but does not measure τ. Methods (g), S5.9 and C57 explicitly withhold 95% status; the error is interpreting feasibility as estimation.",
+      "repair": "Use “An early rise gives compatibility requirements” as the heading. Replace the measurement claims with: “Within the assumed exponential family, sufficiently short doubling times leave no finite older compatibility endpoint. These are requirements for compatibility, not estimates of spread or findability.”"
+    },
+    {
+      "location": "manuscript/text/main.md:270–274; manuscript/text/supplement.md:902–906",
+      "current_text": "“Just before the oldest find, from the Homerian to the Gorstian … every 6.6 Myr, slower than the main count needs and close to the curated count”",
+      "problem": "The comparison crosses A into the assumed plateau, so its slope is not directly comparable with a rise confined to before A. Numerical proximity also cannot establish compatibility from a document reporting share. The relevant quantity is the whole normalised earlier integral, with the greatest exponential contribution near A.",
+      "severity": "medium",
+      "evidence": "A = 426.7 Ma is the Homerian–Gorstian boundary. The midpoints are 428.65 and 425.85 Ma: 0.85 of their 2.8 Myr separation lies after A. The reported shares give the correct equivalent doubling time, 6.5521 Myr; the Hirnantian–Rhuddanian calculation correctly gives 0.9578 Myr. Merely assigning the Gorstian level to A would change the former midpoint calculation to 4.5630 Myr, illustrating the comparison's sensitivity. Neither calculation estimates crown vascular-plant finding rate.",
+      "repair": "Say: “The Homerian–Gorstian reporting-share change, across the oldest-find boundary, has an equivalent doubling time of 6.6 Myr. This is coarse context, not a test of the required earlier rise.” Retain the share-versus-rate qualification and avoid implying that the earlier 1.0 Myr episode supplies the rise near A."
+    },
+    {
+      "location": "manuscript/text/supplement.md:888–889; models/f3/loop3/rise_shapes.py:64–77",
+      "current_text": "“checks each case against endpoint.known_cutoff_summary with piecewise-constant histories”",
+      "problem": "This overstates the endpoint cross-check coverage. Linear cases are checked only through exposure integrals; exponential endpoint inversion is checked only at 444 and 452 Ma. The finite-domain fast-rise assertion alone does not demonstrate absence of any finite bound.",
+      "severity": "medium",
+      "evidence": "All assertions passed. Lines 65–67 check linear exposures without calling the endpoint function; lines 74–75 exclude 500 Ma from endpoint checks. Additional direct calls returned beyond_domain for every discretised linear boundary, and for n=48 at 500 Ma; n=24 at 500 Ma returned 500.6324 Ma. These reflect inversion sensitivity near vanishing density, despite accurate integrals. The fast-rise calls returned beyond_domain on the 700 Ma grid; the analytic inequality τ=0.98K<K supplies the genuine infinite-domain argument.",
+      "repair": "State the checks precisely: “Piecewise histories verify the linear and exponential exposure integrals; endpoint inversion is additionally checked at 444 and 452 Ma. Absence of a finite exponential endpoint follows analytically from τ ≤ K.”"
+    },
+    {
+      "location": "manuscript/text/figures.md:3; manuscript/figures_main.py:134–137",
+      "current_text": "“finds doubling every 1.5 Myr … for an ancestor of any age, so it sets no limit”",
+      "problem": "Rounding obscures a threshold on which the categorical conclusion depends. The plotted curve is valid, but an exact 1.5 Myr doubling time has a finite endpoint.",
+      "severity": "low",
+      "evidence": "For 48 finds, K=2.14000595 Myr and the limiting doubling time is K ln 2 ≈1.48334 Myr. Setting the doubling time literally to 1.5 Myr gives an endpoint near 436.44 Ma. The figure instead uses τ=2.1400, which satisfies τ≤K.",
+      "repair": "Describe it as “the limiting exponential rise, τ=K (doubling about every 1.48 Myr), which has no finite older compatibility endpoint”.\nNext: Claude — repair the wording."
+    }
+  ]
+}
