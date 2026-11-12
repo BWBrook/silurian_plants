@@ -28,6 +28,7 @@ UNITS = ROOT / "models/f3/out/m2_units.csv"
 RESULTS = ROOT / "models/f3/out/m2_results.csv"
 FRONTIER = ROOT / "models/f3/loop3/out/frontier.csv"
 DIAL = ROOT / "models/f3/loop3/out/count_dial.csv"
+RULERS = ROOT / "models/f3/loop3/out/rulers.csv"
 CUTOFF = float(F.primary_bound("B2", "flat")[2]["cutoff_ma"])
 ALPHA = 1 - float(F.primary_bound("B2", "flat")[2]["confidence_conditional_on_fixed_history_iid_units"])
 EMBRYOPHYTE_MAXIMA = tuple(age for age, _ in F.MAXIMA["embryophyta"])
@@ -316,6 +317,16 @@ def fig4(path):
            label=f"region and stage (n = {params['region_stage'][2]}), no delay")
     b.plot(t, contrast("curated", 0), color=MUTED, lw=1.3, ls=":",
            label=f"curated oldest records (n = {params['curated'][2]}), no delay")
+    ruler_rows = F.read(RULERS)
+    for key, col, style, lab in (("rock_nonmarine_area", "#8c6d46", "-", "rock"),
+                                 ("search_all", "#8f8e86", (0, (5, 1.5, 1, 1.5)), "searching"),
+                                 ("spores_trilete_share", "#4f8a3a", "-", "spores")):
+        pts = sorted((float(r["candidate_ma"]), float(r["later_to_earlier"])) for r in ruler_rows
+                     if r["ruler"] == key and r["later_to_earlier"] not in ("inf",) )
+        xs, ys = [x for x, _ in pts], [y for _, y in pts]
+        b.plot(xs, ys, color=col, lw=1.2, ls=style, label=f"ruler: {lab}")
+        b.text(455.6, ys[-1] * (1.09 if lab != "rock" else 0.93), lab, fontsize=6.6, color=col, ha="left",
+               va="bottom" if lab != "rock" else "top")
     for r in rows:
         if r["status"] == "contour" and r["unit_treatment"] == "primary" and float(r["assumed_diagnostic_delay_myr"]) == 0 \
                 and float(r["candidate_lineage_ma"]) in (444.0, 452.0):
@@ -329,15 +340,15 @@ def fig4(path):
     b.set_xlim(456, 426)
     b.set_xlabel("Candidate ancestor age, t (Ma)")
     b.set_ylabel("Times less often found before A")
-    b.legend(frameon=False, fontsize=6.6, loc="upper center", bbox_to_anchor=(0.45, -0.16), ncol=2)
-    b.set_title("(b) Reductions and delays that would fit", fontsize=8.5, loc="left")
+    b.legend(frameon=False, fontsize=6.4, loc="upper center", bbox_to_anchor=(0.45, -0.16), ncol=2)
+    b.set_title("(b) Reductions that would fit, and outside rulers", fontsize=8.5, loc="left")
     b.spines[["top", "right"]].set_visible(False)
     b.grid(axis="y", color=GRID, lw=0.5)
     fig.tight_layout()
     save(fig, path)
 
 
-INPUTS = [UNITS, RESULTS, FRONTIER, DIAL, Path(__file__)]
+INPUTS = [UNITS, RESULTS, FRONTIER, DIAL, RULERS, Path(__file__)]
 
 
 def draw(out):

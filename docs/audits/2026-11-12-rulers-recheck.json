@@ -1,0 +1,84 @@
+{
+  "items": [
+    {
+      "finding_index": 1,
+      "location": "manuscript/text/main.md:265–267",
+      "current_text": "whether their combined effects could supply it remains untested",
+      "resolved": "yes",
+      "comment": "The repair removes the unsupported claim that combining proxies is necessary or sufficient. It correctly states that each ratio falls below the main-count requirement.",
+      "repair": ""
+    },
+    {
+      "finding_index": 2,
+      "location": "tools/spores.py:319–325; manuscript/claims.csv:C56; Table S14",
+      "current_text": "usable and vetting <> 'reject' and spore_class like 'trilete%'",
+      "resolved": "yes",
+      "comment": "The numerator now uses usable records and applies group-level vetting. Independently counting distinct documents reproduces every stage numerator. Time-weighted reporting-share ratios reproduce 5.140343 at 444 Ma and 7.104890 at 452 Ma; the matching counts reproduce 31.05 and 29.43. C56 and Table S14 carry these values.",
+      "repair": ""
+    },
+    {
+      "finding_index": 3,
+      "location": "manuscript/text/main.md:18–19, 299–302, 365–367; supplement.md:869–877; C56",
+      "current_text": "studies reporting trilete spores five to seven times fewer",
+      "resolved": "partly",
+      "comment": "Results, the caption and most of S5.8 correctly identify a reporting share and explain confounding. The abstract and conclusion still describe document counts. Discussion similarly says 'fewer ... studies' before calling this a share. S5.8's closing attribution to producer prevalence, and C56's 'spores record trilete producers', remain stronger than the measure warrants.",
+      "repair": "Use 'the share of indexed documents reporting usable triletes was five to seven times lower' throughout. Describe the spore measure as document reporting, affected by producer prevalence, geographic coverage, study aims, preservation and identification."
+    },
+    {
+      "finding_index": 4,
+      "location": "manuscript/text/main.md:18–19, 263–265, 365–367",
+      "current_text": "reaching the cautious requirements; these reach the cautious requirements",
+      "resolved": "partly",
+      "comment": "Results now correctly distinguishes overlap from exceedance. The abstract and conclusion retain the broader claim. At 452 Ma, rock's 3.1889 is below both cautious requirements: 3.4442 for 15 finds and 4.4581 for 19.",
+      "repair": "Replace both summaries with: 'The rock ratios overlap the cautious requirements, and the spore-reporting ratios exceed both; the main-count requirement exceeds each measure.'"
+    },
+    {
+      "finding_index": 5,
+      "location": "manuscript/text/main.md:18, 258–260, 365–366",
+      "current_text": "mapped North American non-marine rock",
+      "resolved": "yes",
+      "comment": "The geographic restriction is now explicit in the abstract, Results and conclusion. S5.8 specifies the column-area measure and reports South America separately.",
+      "repair": ""
+    },
+    {
+      "finding_index": 6,
+      "location": "manuscript/text/main.md:259",
+      "current_text": "about 3.2–3.5 times less area",
+      "resolved": "yes",
+      "comment": "This includes the interior rise and is correct to one decimal place. The stored candidate values span 3.1889–3.5031; the larger off-grid maximum also rounds to 3.5. A separate precision issue in C56 is reported below.",
+      "repair": ""
+    },
+    {
+      "finding_index": 7,
+      "location": "manuscript/text/supplement.md:865–867; manuscript/claims.csv:C56",
+      "current_text": "of 54 non-marine input units, 29 overlap 393.47–456 Ma",
+      "resolved": "yes",
+      "comment": "Filtering the source units independently reproduces 54 input units and 29 overlapping the window. Merging their occupied intervals reproduces gaps of 420.39–428.25 and 443.1–445.2 Ma. The repaired counts and gap boundaries are correct.",
+      "repair": ""
+    },
+    {
+      "finding_index": 8,
+      "location": "manuscript/figures_main.py:320–327; figure 3b and caption",
+      "current_text": "Ruler points now exclude only infinite ratios.",
+      "resolved": "yes",
+      "comment": "The age restriction is removed. Code and the rendered panel include the planned 427–456 Ma range and 431.2 Ma comparison. At 431.2 Ma, the corrected rock and spore ratios are 14.0670 and 3.8943. The caption explains the missing infinite rock segment and restricts comparisons to zero-delay curves.",
+      "repair": ""
+    },
+    {
+      "finding_index": 9,
+      "location": "manuscript/text/main.md:260–261",
+      "current_text": "1.35–1.41 times sparser",
+      "resolved": "no",
+      "comment": "New: this again presents endpoint values as the interval's range. rulers.csv gives 1.3378 at 445 Ma; direct integration gives 1.335059 at the 445.2 Ma boundary. Table S14's explicitly labelled endpoint values remain correct.",
+      "repair": "Use 'about 1.34–1.41 times sparser', or explicitly give 1.35 and 1.41 as the values at 444 and 452 Ma respectively."
+    },
+    {
+      "finding_index": 10,
+      "location": "manuscript/claims.csv:C56",
+      "current_text": "maximum 3.5031 (at 445.5 Ma) between them",
+      "resolved": "no",
+      "comment": "New: this is the maximum among stored candidate ages, not throughout the interval. Evaluating the generator's ruler at 445.2 Ma gives approximately 3.5226; exact integration of the unit intervals gives approximately 3.5223. The Results range remains correct at its stated precision. All reviewed text files match the supplied diff; no files were changed.",
+      "repair": "Write 'largest value among the computed candidate ages: 3.5031 at 445.5 Ma'. Next: Claude — complete the remaining repairs."
+    }
+  ]
+}

@@ -832,6 +832,50 @@ Figs S4–S6 are the reviewed analysis's own diagnostic figures (`models/f3/loop
 regenerated from the accepted tables: recovery bounds by category, the crown vascular-plant sensitivity
 grid and the retrospective suppression grid.
 
+### S5.8 Outside measures of the earlier/later ratio
+
+The frontier (S5.4) gives the ratio of later to earlier finding rate at which a candidate ancestor age,
+with zero delay, sits on the 95% limit. To judge whether such a ratio is large, three proxies were
+defined before they were computed (`docs/plan-rulers.md`). For a proxy density *x*(*s*), the ratio is the
+mean of *x* over 393.47–426.7 Ma divided by its mean over 426.7 Ma to the candidate age, time-weighted
+within stages (`models/f3/loop3/rulers.py`). *Rock* is the summed area of active North American
+Macrostrat columns holding a non-marine unit at each age [@peters2018MacrostratPlatformGeological]; South
+America is reported as a coarser secondary case. *Searching* is the PBDB land and marginal-marine
+collection density already used as a recording history [@brook2026FrozenPaleobiologyDatabase]. *Spores*
+is the share of Palynodata documents with a usable-age record that report a usable trilete record (not
+flagged as reworked, caved, questionable or a synonym-list entry, and not in a rejected document or record
+group), counting distinct documents across regions [@white2008PalynodataDatafile2006]
+(`data/spores/effort_global_by_stage.csv`). The last column inverts the closed form of S5.4: the largest
+number of independent finds for which the measure alone reaches the required ratio.
+
+<!-- table:rulers -->
+| Measure | 444 Ma | 452 Ma | Largest count matched (444 / 452 Ma) |
+|---|--:|--:|--:|
+| Rock: North America, non-marine column area | [3.29]{.C56} | [3.19]{.C56} | [20.4]{.C56} / [14.0]{.C56} |
+| Rock: North America, non-marine or mixed area | [3.39]{.C56} | [3.42]{.C56} | 21.0 / 14.9 |
+| Rock: North America, non-marine unit count | 1.80 | 2.23 | 11.8 / 10.2 |
+| Rock: South America, non-marine or mixed area | [1.01]{.C56} | [0.78]{.C56} | 7.2 / 4.4 |
+| Searching: PBDB land and marginal-marine collections | [1.35]{.C56} | [1.41]{.C56} | 9.2 / 7.0 |
+| Searching: the same, plant-filter matches removed | [1.07]{.C56} | [1.12]{.C56} | 7.5 / 5.8 |
+| Spores: share of Palynodata studies reporting triletes | [5.14]{.C56} | [7.10]{.C56} | [31.1]{.C56} / [29.4]{.C56} |
+<!-- /table:rulers -->
+**Table S14.** Outside measures: how many times scarcer each proxy was before the oldest crown
+vascular-plant find than after it, for ancestors at 444 and 452 Ma with zero delay[]{.C56}.
+
+The measures are rough and do not estimate the finding rate. The North American rock record is patchy: of 54
+non-marine input units, 29 overlap 393.47–456 Ma; active columns hold none from 428.25 to 420.39 Ma or
+from 445.2 to 443.1 Ma, and much of the later area is Early Devonian. Its ratio is therefore large for candidate ages
+just older than the oldest find and settles near three from about 444 Ma; South American rock shows no decline. Collections are dominated by marine animals. The spore
+measure is a share of indexed documents, not a count of spores or producers: its denominator includes
+acritarch and chitinozoan studies that may not report spores, and changing geographic coverage, study
+aims and the recognition of older triletes can move it independently of how common producers were.
+Trilete spores were made by a wider group than crown vascular plants, and Palynodata's literature stops
+in 2006. A first computation counted rejected record groups and synonym-list entries in the spore
+numerator; Sol's review found this departure from the plan, and the corrected share raised the 444 and
+452 Ma ratios from 4.98 and 6.67 to the values shown.
+The measures bear on different factors (rock on preservation, searching on collection, spores on document
+reporting, which producer prevalence affects among other factors); no product is formed.
+
 ## S6. From specimens to nodes
 
 The specimen-to-node pilot separates specimen observations, accepted event readings, encounter, trait

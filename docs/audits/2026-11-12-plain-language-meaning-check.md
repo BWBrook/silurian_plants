@@ -102,3 +102,22 @@ Sol (`2026-11-12-count-dial-check.json`) passed the arithmetic and found three p
 its wording: the three treatments are counting scenarios, not estimates of the true count ("most plausibly
 lies between" removed); the 15–23 Myr delays assume all 48 finds independent (now said in the abstract
 and Conclusion); and the Discussion's range and crossing hold for constant recording only.
+
+## Outside rulers for the required reduction (Barry's general point 5)
+
+Barry, chat, 12 November 2026: "is ten times a lot or a little? The paper doesn't say"; he proposed
+three rough rulers (rock, searching, spores) shown beside the requirement. Claude pre-specified them in
+`docs/plan-rulers.md`, computed them in `models/f3/loop3/rulers.py` (provisional claim C56) and added
+Methods (h), Results (f), supplement S5.8 with Table S14, ruler curves on figure 3b, and sentences in
+the abstract, Discussion and Conclusion. At 444–452 Ma: North American non-marine rock area 3.2–3.5
+times lower before the oldest find, PBDB collections 1.35–1.41, and the share of Palynodata documents
+reporting usable triletes 5.1–7.1. Rock alone matches the requirement with about 14–20 or fewer
+independent finds, spores with about 29–31 or fewer; the 48-find requirement (8–12) exceeds each.
+
+Sol (`2026-11-12-rulers-check.json`) reproduced the calculations and the count inversion and found eight
+problems: a spore-numerator bug (rejected groups and synonym-list rows were counted, against the plan;
+fixed, raising the spore ratios from 4.98/6.67 to 5.14/7.10); "needs both / act together" exceeding the
+side-by-side plan; document reporting share described as producer rarity; rock said to cover both cautious
+counts at 452 Ma, where it does not; North America generalised; an endpoint range; supplement gap
+boundaries and unit counts; and a narrowed figure range. Recheck (`2026-11-12-rulers-recheck.json`): six
+resolved, two partly and two new endpoint points; all then repaired with Sol's wording.

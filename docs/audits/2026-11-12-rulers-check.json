@@ -1,0 +1,69 @@
+{
+  "title": "Calculations reproduce and the inversion is correct; the spore numerator and several interpretations need correction.",
+  "items": [
+    {
+      "location": "manuscript/text/main.md:19, 264–266, 364",
+      "current_text": "“the main count needs both, or a delay”; “need scarcer rock, rarer plants and less searching to act together”",
+      "problem": "The individual proxy ratios falling below the frontier establishes neither the necessity nor the sufficiency of their combination. Their conversion to finding rates and their dependence are unmeasured. This exceeds the pre-specified side-by-side comparison.",
+      "severity": "high",
+      "evidence": "docs/plan-rulers.md:34–37 explicitly forms no combined factor. No combined calculation appears in rulers.py. Rock, collection records and spore reporting can share preservation and sampling effects.",
+      "repair": "“With 48 independent finds, the required reduction exceeds each proxy ratio. Whether their combined effects could supply it remains untested; a diagnostic delay is another compatible route.”"
+    },
+    {
+      "location": "tools/spores.py:310–311; data/spores/effort_global_by_stage.csv; claim C56",
+      "current_text": "is_trilete checks document rejection, genus classification and reworked/caved flags.",
+      "problem": "The numerator includes rejected record groups and synonym-list entries despite the plan specifying a usable trilete record. Matching the effort denominator’s filters does not resolve these numerator defects.",
+      "severity": "medium",
+      "evidence": "data/spores/README.md defines usable records as excluding synonym lists and says group verdicts override document verdicts. The numerator retains rejected Katian–Hirnantian groups from documents 06209 and 16121, and the rejected Hirnantian–Aeronian group from 05703. Independently removing group rejects changes the 444/452 Ma ratios from 4.9756/6.6718 to 5.2060/7.1183; also removing synonym-list rows gives 5.1403/7.1049.",
+      "repair": "Apply record usability and group-level rejection to the trilete numerator, retain the specified denominator, and regenerate C56 and its dependent text."
+    },
+    {
+      "location": "manuscript/text/main.md:18, 265, 297–299, 363; supplement.md:869–870",
+      "current_text": "“trilete spores five to seven times rarer”; “producers of trilete spores several times rarer in palynological samples”",
+      "problem": "Document reporting share has become spore rarity, sample abundance and producer abundance. The calculation measures none of those directly, and the relevant confounds are missing.",
+      "severity": "medium",
+      "evidence": "rulers.py:65–68 uses distinct-document reporting fractions. The denominator includes any palynomorph document, without requiring a search for terrestrial spores. data/external/spores/README.md:81–83 explicitly warns that acritarch/chitinozoan studies may not count or report spores. Geographic coverage, study targets, preservation/transport and recognition of older triletes can change with age.",
+      "repair": "Use “the share of indexed documents reporting triletes was five to seven times lower”. Add one explanation that changing coverage, study targets and identification can affect this share independently of producer prevalence."
+    },
+    {
+      "location": "manuscript/text/main.md:17–19, 362–364",
+      "current_text": "“Land-laid rock about three times scarcer and trilete spores five to seven times rarer … cover the cautious counts”",
+      "problem": "This suggests that each ruler covers both cautious counts throughout 444–452 Ma. Rock does not.",
+      "severity": "medium",
+      "evidence": "At 452 Ma the required ratios are 3.4442 for 15 finds and 4.4581 for 19 finds, exceeding rock’s 3.1889, and even the mixed-environment variant’s 3.4150. The rock inversion gives only 13.99 finds at that age.",
+      "repair": "“The rock ratios overlap the cautious requirements; the spore-reporting ratios exceed both cautious-count frontiers.”"
+    },
+    {
+      "location": "manuscript/text/main.md:17–18",
+      "current_text": "“Land-laid rock about three times scarcer”",
+      "problem": "The abstract presents a geographically restricted database measure as a general rock-record result.",
+      "severity": "medium",
+      "evidence": "The primary rock filter selects only active North American columns. The secondary South American ratios are approximately 1.01 and 0.78, demonstrating that the North American contrast cannot be generalised from these inputs.",
+      "repair": "“Mapped North American non-marine column area was about three times lower.”"
+    },
+    {
+      "location": "manuscript/text/main.md:258–260",
+      "current_text": "“For ancestors at 444–452 Ma … about 3.2–3.3 times less area”",
+      "problem": "The endpoint values are presented as the range across the interval, omitting its larger interior values.",
+      "severity": "low",
+      "evidence": "rulers.csv gives 3.4168 at 447 Ma and a maximum of 3.5031 among the computed candidates from 444–452 Ma. The minimum is 3.1889.",
+      "repair": "Use “about 3.2–3.5”, or explicitly identify 3.29 and 3.19 as the values at 444 and 452 Ma respectively."
+    },
+    {
+      "location": "manuscript/text/supplement.md:864–866; manuscript/claims.csv:C56",
+      "current_text": "“54 non-marine units in the window, none … from 428.3 to 420.4 Ma or from 445.3 to 443.2 Ma”",
+      "problem": "The unit count refers to the broader input extract, while the claimed empty intervals extend into occupied rock intervals.",
+      "severity": "medium",
+      "evidence": "There are 54 qualifying units in the input extract but only 29 overlap 393.47–456 Ma. Exact zero-coverage gaps are 420.39–428.25 and 443.1–445.2 Ma. Units 8318/8356 occupy part of 428.25–428.3 Ma; unit 16015 occupies 445.2–445.3 Ma.",
+      "repair": "Distinguish the 54 input units from the 29 overlapping the comparison window. Give the actual gap boundaries, or describe them approximately without asserting those larger intervals are empty."
+    },
+    {
+      "location": "manuscript/figures_main.py:324–325; figure 3b caption",
+      "current_text": "Ruler curves are filtered to candidate_ma >= 432.",
+      "problem": "The displayed range differs from the pre-specified 427–456 Ma curve, including omission of the explicitly specified 431.2 Ma comparison.",
+      "severity": "low",
+      "evidence": "docs/plan-rulers.md:16–17 specifies 427–456 Ma for figure 3b. At 431.2 Ma the stored rock and spore ratios are 14.07 and 3.84, so the omitted region contains materially different comparisons.",
+      "repair": "Show the specified range, or explicitly identify and justify the narrower display as a departure from the plan."
+    }
+  ]
+}

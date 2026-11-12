@@ -5,19 +5,19 @@
 ## Abstract
 
 Molecular clocks date the ancestor of living land plants from the Cambrian to the Late Ordovician,
-partly through different fossil maximum ages. We examined three maxima: 515.5 and 459.1 million years
-ago (Ma) for living land plants, and 431.2 Ma for living vascular plants. The 515.5 Ma maximum rests on a
+partly through different fossil maximum ages. We examined three: 515.5 and 459.1 million years ago (Ma)
+for living land plants, and 431.2 Ma for living vascular plants. The 515.5 Ma maximum rests on a
 qualitative preservation argument. None of [28]{.C01} Ordovician Libyan borehole samples reports
-three-rayed (trilete) spores, although [18]{.C45} fall in stages in which such spores occur in Saudi
-Arabia and Britain: a spore absence can be local. At a steady finding rate, the 95% confidence limit on
-the vascular-plant record's start is [428.8]{.C27 .V003}–[434.05]{.C30} Ma across three ways of
-counting [48]{.C25} finds, and reaches the 431.2 Ma maximum if about half of them are counted as
-independent. Vascular-plant ancestors at 444–452 Ma fit if fossils were found
-[2.4]{.C48 .V056}–[12]{.C48 .V055} times less often before the oldest find than after it, the factor
-rising with the count, with recognisable bodies appearing with the ancestor, or, at a steady rate with
-48 independent finds, if they appeared at least [15–23]{.C33} Myr later. Missing fossils allow older
-ancestors if early plants were found less often or became recognisable later, and these records state
-how much less often.
+three-rayed (trilete) spores, although [18]{.C45} fall in stages when such spores occur elsewhere: an
+absence can be local. At a steady finding rate, the 95% confidence limit on the vascular-plant record's
+start is [428.8]{.C27 .V003}–[434.05]{.C30} Ma across three ways of counting [48]{.C25} finds, reaching
+the 431.2 Ma maximum if about half are counted as independent. Vascular-plant ancestors at 444–452 Ma fit
+if fossils were found [2.4]{.C48 .V056}–[12]{.C48 .V055} times less often before the oldest find than
+after it, with recognisable bodies appearing with the ancestor, or, at a steady
+rate with 48 independent finds, if they appeared at least [15–23]{.C33} Myr later. Before the oldest find,
+North American non-marine rock was about three times scarcer and the share of studies reporting
+triletes five to seven times lower: rock overlaps the cautious requirements, spores exceed them, and
+neither reaches the main count's.
 
 **Keywords:** molecular clock; fossil calibration; land plants; vascular plants; stratigraphic
 confidence interval; Ordovician–Silurian
@@ -168,6 +168,15 @@ less often before the oldest find than after it. Longer delays reduce the reduct
 age needs [@marshall2019UsingFossilRecord]. We chose where to put the step after seeing the data, so
 these curves show what would fit, without the 95% confidence that (*e*) gives each fixed history.
 
+**(h) Outside measures.** To judge whether a required reduction is large, we compared it with three
+rough measures, defined before they were computed: the area of North American Macrostrat columns
+holding land-laid (non-marine) rock [@peters2018MacrostratPlatformGeological]; PBDB land and
+marginal-marine collections per Myr [@brook2026FrozenPaleobiologyDatabase]; and the share of Palynodata
+studies [@white2008PalynodataDatafile2006] that report trilete spores. Each measure's mean over the
+33 Myr after the oldest find, divided by its mean from the oldest find back to a candidate ancestor age,
+gives how many times scarcer it was earlier, at zero delay. The measures are guides; they enter no 95%
+inference (electronic supplementary material, S5.8).
+
 ## Results
 
 **(a) The 515.5 Ma maximum rests on a qualitative argument.** Morris et al. placed this maximum below the
@@ -247,7 +256,19 @@ number of independent finds, and with fewer than about 24, 431.2 Ma already fits
 steady finding rate and with all 48 finds independent, the same ancestors fit if recognisable bodies
 appeared at least [15–23]{.C33} Myr after them; fewer independent finds shorten the delay needed. Smaller reductions combine with shorter delays (figure 3*b*).
 
-**(f) One Ordovician find moves the broader land-plant limit.** Sporangial fragments with in situ
+**(f) Outside measures reach the cautious requirements.** For ancestors at 444–452 Ma, mapped non-marine
+rock in North American columns covers about [3.2]{.C56}–[3.5]{.C56} times less area before the oldest
+find than after it, and PBDB land and marginal-marine collections are only [1.35]{.C56} and [1.41]{.C56}
+times sparser at 444 and 452 Ma. The share of indexed palynological studies reporting trilete spores is
+[5.1]{.C56}–[7.1]{.C56} times lower (figure 3*b*; electronic supplementary material, S5.8). Rock alone
+matches the reduction needed if about [14]{.C56}–[20]{.C56} or fewer finds are independent, and the spore
+share alone if about [29]{.C56}–[31]{.C56} or fewer are: the rock ratios overlap the cautious
+requirements, and the spore ratios exceed them. With all 48 finds independent, the 8–12-fold reduction
+exceeds each measure; whether their combined effects could supply it remains untested, and a delay
+before recognisable bodies is another route. South American rock, recorded more coarsely, shows no
+decline.
+
+**(g) One Ordovician find moves the broader land-plant limit.** Sporangial fragments with in situ
 cryptospores from the Ghaba-1 borehole, Oman, dated to the Katian on later correlation
 [@wellman2003FragmentsEarliestLand], form one land-plant body find. Adding them moves the steady-rate
 limit for all land-plant body fossils from [434.5]{.C28} to [455.2]{.C40 .V022} Ma, and the enlarged
@@ -276,8 +297,10 @@ chance that a body is preserved, found and recognised. Branched sporophytes and 
 acquired stepwise along the lineages being dated [@kenrick1997OriginEarlyEvolution]. The early branched
 sporophyte *C. barrandei* is preserved in marine sediments [@libertin2018SporophytesPolysporangiateLand],
 and the Oman fragments show that small sporangia can survive [@wellman2003FragmentsEarliestLand]. The
-models give the combined reduction a candidate age requires; the contribution and plausibility of each
-process remain open.
+models give the combined reduction a candidate age requires, and the outside measures are consistent with
+two of these processes: less mapped land-laid rock, in North America at least, and a lower share of indexed
+palynological studies reporting trilete spores, which changing coverage, study aims, preservation and
+identification can also lower. Each measure is rough, and how they combine remains open.
 
 Silvestro et al. [@silvestro2015RevisitingOriginDiversification] modelled genus-level PBDB plant
 occurrences with a joint Bayesian model of preservation and diversification, and estimated the origin of
@@ -309,8 +332,8 @@ seeing the data. Linking the vascular-plant limit to ancestors requires that the
 the crown group, and a specified delay before recognisable bodies.
 
 Published evidence could narrow these requirements. Records of searched Silurian terrestrial beds, with
-effort and empty beds included, would help constrain early finding rates, and compilations of rock units
-could supply proxies for the terrestrial rock available at each age [@peters2018MacrostratPlatformGeological].
+effort and empty beds included, would help constrain early finding rates, and rock-unit compilations
+beyond North America would test the rock measure [@peters2018MacrostratPlatformGeological].
 A second complete spore sequence outside polar Gondwana, with older samples reporting no triletes,
 younger samples reporting them and counted target and control grains, would show whether supply limits of this size hold outside one polar basin; a fully
 reported marine sequence older than 515.5 Ma, with comparable recovery documented, would help quantify
@@ -340,7 +363,10 @@ triletes evolved later. Vascular-plant ancestors at 444–452 Ma fit if early bo
 [2.4]{.C48 .V056}–[12]{.C48 .V055} times less often, the factor depending on how many finds are
 independent, with recognisable bodies appearing with the ancestor, or, at a steady rate with all 48 finds independent, if those
 bodies appeared at least [15–23]{.C33} Myr after it; the first is a
-scenario chosen after seeing the data. Missing fossils thus allow older ancestors if early plants were
+scenario chosen after seeing the data. Before the oldest find, mapped North American non-marine rock was
+about three times scarcer and the share of indexed studies reporting triletes five to seven times lower;
+the rock ratios overlap the cautious requirements, the spore ratios exceed them, and the main count's
+requirement exceeds each. Missing fossils thus allow older ancestors if early plants were
 found less often or became recognisable later, and the records examined state how much less often.
 
 ## Ethics
