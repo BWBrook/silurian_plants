@@ -36,3 +36,25 @@ searching bear on the chance of preservation and collection; spores bear on how 
 were, a wider group than crown vascular plants. They are reported side by side; no product or combined
 factor is formed. Each Q is compared with R(t) for 48 finds (8.1–11.8 at 444–452 Ma) and for 19 or 15
 (2.4–4.5). The paper states which counts and delays each ruler is consistent with, whichever way it falls.
+
+## Addendum: shapes of an early rise (12 November 2026, before computing)
+
+Barry, chat, 12 November 2026, proposed a rise in finding rate followed by a level stretch, as plants
+spread from a few patches, in place of the step, with his hand sums: a straight-line rise from the
+ancestor reaches only about 431, 438 and 441 Ma (48, 19, 15 finds); an exponential rise reaches 444–452 Ma
+if finds doubled about every 1.5, 4 and 5–6 Myr. To be computed in `models/f3/loop3/rise_shapes.py`, with
+the finding rate level after A = 426.7 Ma and rising before it:
+
+- For any fixed history, an ancestor age t is compatible with the 95% limit when the integral of the
+  relative finding rate over [A, t] is at most K(n) = (A − c)(0.05^(−1/n) − 1); the step frontier is the
+  special case of a constant earlier rate. Tabulate K for n = 48, 24, 19, 15.
+- Linear rise from zero at t to the later level at A: the oldest compatible t, A + 2K.
+- Exponential rise (time constant τ, doubling time τ ln 2): the τ at which t = 444, 452 and 500 Ma sits on
+  the limit, and the limiting τ = K as t grows without bound.
+- Cross-check both against the reviewed `endpoint.known_cutoff_summary` with piecewise-constant
+  histories.
+- Spore context: the stage-level share of Palynodata documents reporting usable triletes
+  (`effort_global_by_stage.csv`) and the doubling time implied between the midpoints of Hirnantian and
+  Rhuddanian, and of Homerian and Gorstian. Disclosed in advance: an earlier, uncorrected numerator gave
+  shares near 0.02 (Katian), 0.03 (Hirnantian) and 0.10 (Rhuddanian). As with the rulers, these are
+  guides for comparison and enter no 95% inference; the shapes are placed after seeing the record.
