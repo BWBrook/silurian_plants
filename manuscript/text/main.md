@@ -1,4 +1,4 @@
-# When did living land plants arise? What their fossil age limits require
+# Missing fossils as evidence: what the rocks can say about the age of land plants
 
 <div id="authors"></div>
 
@@ -6,19 +6,21 @@
 
 Molecular clocks date the ancestor of living land plants from the Cambrian to the Late
 Ordovician, partly through different fossil maximum ages. We examined three maxima:
-515.5 and 459.1 million years ago (Ma) for living land plants, and 431.2 Ma for living vascular plants
-(clubmosses, ferns and seed plants). We traced their sources, modelled Libyan spore records
-and set a limit on when the vascular-plant body-fossil record began. The oldest
+515.5 and 459.1 million years ago (Ma) for living land plants, and 431.2 Ma for living vascular plants.
+The 515.5 Ma maximum
 rests on a qualitative preservation argument. Libyan boreholes yield three-rayed
 (trilete) spores in [51 of 59]{.C02} early Silurian samples and none of [28]{.C01} older ones.
-If spores reached the rocks equally easily throughout, steady supply since 459.1 Ma is limited to
-[9]{.C24}% of the later supply (95% limit). If vascular-plant fossils were found at a steady rate, the
-95% confidence limit on their record's start is [428.8]{.C27 .V003} Ma; counting fewer independent finds
-gives [432.4–434.05]{.C30} Ma. Ancestors at 444–452 Ma fit if fossils were found
+With equally easy delivery throughout, steady supply since 459.1 Ma is limited to
+[9]{.C24}% of the later supply (95% limit); older land-plant ancestors fit if their spores
+arrived sparsely or not at all. At a steady finding rate, the
+95% confidence limit on the vascular-plant record's start is [428.8]{.C27 .V003} Ma; counting fewer independent finds
+gives [432.4–434.05]{.C30} Ma. Vascular-plant ancestors at 444–452 Ma fit if fossils were found
 [8]{.C48 .V054}–[12]{.C48 .V055} times less often before the oldest find than after it
-([2.4]{.C48 .V056}–[4.5]{.C48 .V057} with fewer finds), with recognisable bodies appearing
-with the ancestor. Older dates for living land plants fit the fossil record if early plants were found
-several times less often, or recognisable features evolved later.
+([2.4]{.C48 .V056}–[4.5]{.C48 .V057} with fewer finds), with recognisable bodies appearing with the
+ancestor, or, at a steady rate, if they
+appeared at least [15–23]{.C33} Myr later. Missing fossils allow older ancestors if early
+plants were found less often or became recognisable later, and these records state how much less
+often.
 
 **Keywords:** molecular clock; fossil calibration; land plants; vascular plants; stratigraphic
 confidence interval; Ordovician–Silurian
@@ -27,7 +29,8 @@ confidence interval; Ordovician–Silurian
 
 Molecular clocks estimate when lineages diverged by combining DNA differences with fossil limits on the
 ages of selected ancestors. A crown group comprises the most recent ancestor shared by its living
-members and all its descendants, including extinct lineages. For the ancestor of all living land plants
+members and all its descendants, including extinct lineages. Clocks date these crown ancestors;
+extinct lineages outside the crown may have reached land earlier. For the ancestor of all living land plants
 (crown embryophytes), Morris et al. [@morris2018TimescaleEarlyLand] obtained 515–474 Ma across seven
 tree topologies and Harris et al. [@harris2022DivergentEvolutionaryTrajectories] 515–493 Ma. Hooper et
 al. [@hooper2026ReconstructingSporeEvolution] reanalysed Harris et al.'s DNA data with revised fossil
@@ -37,8 +40,7 @@ calibrations and obtained 457–450 Ma, a mean 55 Myr younger. For the ancestor 
 older land-plant ages still, under a Proterozoic maximum. The dates bear on the order in which plant
 characters were assembled, and on how early plants changed productivity, weathering and climate
 [@kenrick2012TimelineTerrestrializationConsequences; @donoghue2021EvolutionaryEmergenceLand;
-@strother2021FossilRecordLand; @lenton2012FirstPlantsCooled]. They date the ancestors of living plants;
-extinct lineages may have reached land earlier.
+@strother2021FossilRecordLand; @lenton2012FirstPlantsCooled].
 
 A fossil sets a minimum age: its lineage existed by the age of its oldest secure member. A maximum
 based on absence adds an argument that older rocks would probably have preserved and yielded
@@ -257,12 +259,14 @@ planes [@edwards1979RecordsFertileRhyniophytina].
 
 ## Discussion
 
-The early record allows older ancestors, and the analyses state what each would require. In the Murzuq
-Basin, the older samples exclude a steady, well-delivered trilete supply at the Llandovery level through
-the later Ordovician; lower delivery, lower local supply or spore producers outside the catchment all
-fit. At a steady finding rate, or one tracking collection density, the 95% confidence limit on the start of the
-recognisable crown vascular-plant record lies near [429]{.C27 .V018} Ma, and counting fewer independent finds
-puts it at [432.4–434.05]{.C30} Ma. For each way of counting, a lower earlier finding rate, later recognisable
+The early record allows older ancestors, and the analyses state what each would require. The evidence
+differs in depth between the two clades. For living land plants it comes from the audit of the 515.5 Ma
+maximum and one polar basin: in the Murzuq Basin, the older samples exclude a steady, well-delivered
+trilete supply at the Llandovery level through the later Ordovician, while lower delivery, lower local
+supply or spore producers outside the catchment all fit. For living vascular plants it comes from a body
+record drawn from several regions: at a steady finding rate, or one tracking collection density, the 95%
+confidence limit on the start of the recognisable crown vascular-plant record lies near
+[429]{.C27 .V018} Ma, and counting fewer independent finds puts it at [432.4–434.05]{.C30} Ma. For each way of counting, a lower earlier finding rate, later recognisable
 bodies or both fit ancestors older than these limits; the models give the size of each requirement in
 aggregate.
 
@@ -329,9 +333,14 @@ and finding-rate assumptions, and justify the probability assigned to older ages
 maxima then shows how much each assumption moves the timescale, and sampling the joint age prior without
 molecular data, then comparing its effective marginal ages with the posteriors, shows what the molecular
 data add [@brown2017PastSureTense]. The same separation of the evidence, the chance of finding it and its
-link to the ancestor applies to any maximum argued from absence. Older dates for living land plants fit
-the fossil record if early plants were found several times less often, or recognisable features evolved
-later.
+link to the ancestor applies to any maximum argued from absence. In the Libyan basin, older land-plant
+ancestors fit if, with equal delivery, their steady trilete supply since 459.1 Ma stayed below a tenth of
+the later supply ([0.091]{.C24}), or their spores never reached the basin, because the producers lived elsewhere or
+triletes evolved later. Vascular-plant ancestors at 444–452 Ma fit if early body fossils were found
+[8]{.C48 .V054}–[12]{.C48 .V055} times less often, with recognisable bodies appearing with the
+ancestor, or, at a steady rate, if those bodies appeared at least [15–23]{.C33} Myr after it; both are
+scenarios chosen after seeing the data. Missing fossils thus allow older ancestors if early plants were
+found less often or became recognisable later, and the records examined state how much less often.
 
 ## Ethics
 

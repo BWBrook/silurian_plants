@@ -1,0 +1,21 @@
+{
+  "title": "The new title does not overpromise. Two numerical conditions remain unclear. Next: Claude.\n\n",
+  "items": [
+    {
+      "location": "manuscript/text/main.md:335–338",
+      "current_text": "their trilete spores arrived through the later Ordovician at less than a tenth of the later rate ([0.091]{.C24})",
+      "problem": "The 0.091 figure still lacks its constant-history condition and starting point. It describes steady supply since 459.1 Ma, rather than a general threshold for variable later-Ordovician supply compatible with older ancestors.",
+      "severity": "medium",
+      "evidence": "C24, estimands.md M2 and supplement Table S12 distinguish the constant-history limit, 0.091, from the exposure-weighted-history limit, 0.1835. These values appear in the primary Murzuq row of models/f3/out/m2_results.csv.",
+      "repair": "In Murzuq, steady local trilete supply since 459.1 Ma is limited to [9.1]{.C24}% of the later supply under equal delivery. Older ancestors remain possible if triletes evolved later or their producers lived outside the catchment."
+    },
+    {
+      "location": "manuscript/text/main.md:17–20, Abstract",
+      "current_text": "Vascular-plant ancestors at 444–452 Ma fit if fossils were found [8]{.C48 .V054}–[12]{.C48 .V055} times less often before the oldest find than after it ([2.4]{.C48 .V056}–[4.5]{.C48 .V057} with fewer finds) or, at a steady rate, if recognisable bodies appeared at least [15–23]{.C33} Myr later.",
+      "problem": "The revision removes the zero-delay condition from the recording-rate alternative. The quoted reductions assume recognisable bodies appeared with the ancestor; allowing a delay changes those reductions. The Conclusion restores this condition, but the Abstract does not.",
+      "severity": "medium",
+      "evidence": "C48, value bindings V054–V057 and models/f3/loop3/out/frontier.csv all bind these reductions to assumed_diagnostic_delay_myr = 0. Supplement S5.4 explicitly states that longer delays need less suppression.",
+      "repair": "Add “with recognisable bodies appearing with the ancestor” after the parenthesis and before “or, at a steady rate”."
+    }
+  ]
+}

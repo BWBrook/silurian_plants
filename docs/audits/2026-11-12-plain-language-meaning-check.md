@@ -41,3 +41,23 @@ one). All three were then repaired with Sol's wording. `make -C manuscript check
 
 The supplement, brief and agent guide still use the earlier vocabulary. The brief follows the article
 (Barry, 12 November 2026); the supplement and guide should adopt the same terms once the article settles.
+
+## Title and message against the evidence (Barry's general point 2)
+
+Barry, chat, 12 November 2026: the title and closing sentence concern living land plants, while the
+quantitative core concerns vascular plants; "The land-plant question itself gets only the audit and one
+polar basin". He proposed five titles, preferring "How long could land plants have existed before
+leaving fossils?".
+
+Sol (`2026-11-12-title-message-check.json`) judged that title, in Claude's variant "How long could land
+plants have lived before their first known fossils?", to overpromise: the paper gives no such duration
+for land plants, and for vascular plants only conditional bounds and data-selected scenarios. It also
+rejected Claude's draft message "For living land plants and vascular plants alike…" as presenting a
+shared quantitative reconciliation that was never calculated. Claude adopted Barry's second option,
+"Missing fossils as evidence: what the rocks can say about the age of land plants", and rewrote the
+abstract's end, Discussion paragraph 1 and the Conclusion so that each clade carries its own evidence.
+The shared message is now: "Missing fossils allow older ancestors if early plants were found less often
+or became recognisable later, and these records state how much less often." Sol's recheck
+(`2026-11-12-title-message-recheck.json`) accepted the title and found two dropped conditions (steady
+supply since 459.1 Ma; zero delay for 8–12), both restored. The title and message await Barry's
+confirmation; the brief and graphical-abstract headline still carry the earlier message.

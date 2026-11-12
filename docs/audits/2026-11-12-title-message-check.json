@@ -1,0 +1,29 @@
+{
+  "title": "The title overpromises an upper limit on an unseen evolutionary interval. For land plants as a whole, the paper establishes no such duration: C24 bounds sustained local trilete supply, and the estimands explicitly prohibit interpreting B0 as an origin-to-recoverability interval. For crown vascular plants, it gives conditional record-start bounds (428.84 Ma; 432.38–434.05 Ma under alternative units) and rate/delay scenarios compatible with 444–452 Ma ancestors, not an unconditional maximum hidden duration. ‘Land plants’ also extends beyond the crown ancestors examined. Minimal repair: ‘What would reconcile older land-plant ancestors with their fossil record?’",
+  "items": [
+    {
+      "location": "manuscript/text/main.md:334–336, Conclusion",
+      "current_text": "For living land plants, older dates fit if their trilete spores reached the Libyan basin through the later Ordovician at less than a tenth of the later rate ([0.091]{.C24}), or trilete spores evolved later in the lineage",
+      "problem": "This turns a local, constant-history supply limit into a sufficient reconciliation of older crown dates. It omits sustained supply since 459.1 Ma and does not distinguish that window from the 515–474 Ma clock ages. Merely evolving triletes later than the ancestor does not specify whether substantial supply should already have occurred within the sampled window. The catchment alternative also disappears. The number concerns delivered encounter intensity, ρf; it bounds producer intensity f at equal delivery.",
+      "severity": "high",
+      "evidence": "estimands.md, M2; claims.csv, C24 and C45; supplement.md S2.2 and S2.5. The primary m2_results.csv row gives H0c f*=0.091 at ρ=1, versus 0.1835 for the varying-history class. Eighteen older cuttings are Katian–Hirnantian and wholly younger than 459.1 Ma; ten broadly dated Darriwilian cuttings provide the remaining age support.",
+      "repair": "In Murzuq, steady local trilete supply since 459.1 Ma is limited to [9.1]{.C24}% of the Llandovery supply under equal delivery. This does not date the older land-plant ancestor; trilete production may have begun later, or producers may have lived outside the catchment."
+    },
+    {
+      "location": "manuscript/text/main.md:336–338, Conclusion",
+      "current_text": "for living vascular plants, if early body fossils were found [8]{.C48 .V054}–[12]{.C48 .V055} times less often, or became recognisable at least [15–23]{.C33} Myr after the ancestor",
+      "problem": "The numerical alternatives lose their candidate ages and different assumptions. The 8–12-fold figures concern primary units, zero diagnostic delay and a retrospective step before the oldest permitted fossil age. The minimum 15–23 Myr offsets instead assume steady recording. Without those conditions, these read as general requirements for older vascular ancestors.",
+      "severity": "medium",
+      "evidence": "C48 and value bindings V054–V055 select 444 and 452 Ma with zero delay. frontier.csv gives reductions of 8.084 and 11.822 and labels them compatibility contours, not fitted rates or a joint confidence region. C33, delay_sensitivity.csv and supplement S5.5 derive the offsets from the constant-rate 428.840006 Ma bound.",
+      "repair": "For vascular ancestors at 444–452 Ma, primary-unit compatibility scenarios give an 8–12-fold lower recording rate before the oldest permitted find with no diagnostic delay, or assumed delays of at least 15–23 Myr at a steady recording rate."
+    },
+    {
+      "location": "manuscript/text/main.md:20–21 and 338–340, Abstract and Conclusion",
+      "current_text": "For living land plants and vascular plants alike, older dates fit the fossil record if early plants were found several times less often, or recognisable features evolved later.",
+      "problem": "‘Alike’ presents a shared quantitative reconciliation that was not calculated. The vascular analysis sizes recording reductions for specified candidate ages; the land-plant analysis limits sustained local trilete encounter in one basin after 459.1 Ma. It does not establish that a several-fold reduction reconciles the full fossil record with 515–474 Ma land-plant ancestors.",
+      "severity": "medium",
+      "evidence": "estimands.md separates M2’s local supply target from M3’s recoverable-category endpoint. C24 concerns constant delivered intensity near 0.091 of reference; C48 concerns age-specific vascular recording contours. Neither supplies a common reduction for both clades.",
+      "repair": "The Libyan record limits sustained local trilete supply; the vascular-plant analysis quantifies recording-rate reductions or assumed diagnostic delays compatible with specified older ancestors."
+    }
+  ]
+}
