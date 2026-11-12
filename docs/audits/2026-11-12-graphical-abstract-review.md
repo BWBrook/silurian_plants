@@ -104,3 +104,40 @@ All six repairs accepted and made; no numerical result changed.
 - **Journal variant.** `graphical_abstract_journal` is drawn by the same function without the headline.
 
 Brief: two pages, no missing glyphs; `make -C manuscript check` passes.
+
+## Codex focused acceptance (12 November 2026)
+
+**Accepted at `3412fad`: both graphical-abstract versions and the revised brief.** The six repair
+areas have been checked against the source cases, caption and result context, rather than accepted
+from the repair report. This closes the graphical-abstract review; the earlier findings above remain
+the historical record. The products are ready for Barry's reading.
+
+- **Libya:** the brief restores the shared-well effect and otherwise-independent cuttings, retaining
+  the exploratory block-weighting sensitivity beside the primary result. The inset identifies local
+  trilete samples, separates older/younger counts at about 443 Ma and compares the two weightings.
+  The numerical selectors return 0.091 and 0.3930024633, correctly displayed as 0.09 and 0.39.
+  The brief supplies the chiefly later-Ordovician scope and ten potentially pre-459.1 Ma supports.
+  A bounded independent acceptance read of this inset with its brief/caption context found no material
+  wording issue. The block comparison is not labelled a calibrated 95% bound.
+- **Body record:** all 48 dots retain their reviewed oldest-support endpoints, now explicitly labelled
+  as oldest allowed ages and stacked for display. The 428.84000595 Ma flat endpoint is shown beside
+  the 432.37501653–434.04566762 Ma coarser-unit comparison. Their displayed precision is correct.
+  Scenario 1 states no diagnostic delay; scenario 2 states constant finding. Primary independence,
+  the coarser 2.4–4.5-fold contrast and compatibility language are present. The adopted headline is
+  unchanged, and the open-circle key now identifies a clock-range edge rather than an ancestor date.
+- **Artwork:** both native PDFs have a measured minimum text size of 7.5 pt. A rendering check of
+  both Matplotlib canvases found no text outside their bounds. The embedded A4 brief and the
+  headline-free journal PDF were visually inspected: no material overlap, clipping or missing glyphs.
+  The brief is two pages and all its extracted text is inside the page boxes. The journal asset should
+  retain the same caption/display conventions when placed; headline removal changes no source case.
+- **Reproduction:** redraws to a temporary destination reproduce all four PNG/PDF exports exactly.
+  All 25 declared figure-input and 16 output hashes match. Both 407-entry candidate/dependency
+  manifests match their files. `make -C manuscript check` reports 53 cited claims, zero errors and
+  zero warnings; all profile lint and citation audits pass.
+
+No analysis CSV, model, ledger value or interpretation rule changed. This acceptance records display
+and prose verification, not a new qualification run or publication decision. For Q1/Q2/Q5, the final
+structure preserves source-case scope while remaining readable; no scientific question or method
+changes. No further figure revision is required by this review.
+
+Next: Barry — read the accepted brief and integrated article.
