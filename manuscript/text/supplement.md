@@ -259,6 +259,27 @@ about a tenth for the qualified model. Dropping
 I3-NC186, which holds ten of the 18 younger older-frame cuttings, has the largest single-well effect. Claude
 reproduced the four undropped contours with an independent implementation.
 
+### S2.6 Stage-level comparisons outside Libya
+
+The compilation of Wellman et al. [@wellman2013Chapter29Palaeophytogeography] lists six trilete-bearing
+review entries wholly within the adopted Katian–Hirnantian crosswalk. Checking their cited sources
+narrows the comparison used here to Saudi Arabia and Turkey[]{.C54}. Steemans et al.
+[@steemans2009OriginRadiationEarliest] report true triletes in the Katian Qasim and Hirnantian Sarah
+formations of Saudi Arabia; Steemans et al. [@steemans1996OrdovicianSilurianCryptospores, p. 40] place
+the oldest Turkish *Ambitisporites avitus* occurrence possibly between middle Ashgillian and
+Hirnantian. These are overlapping stage-age enclosures, not demonstrated simultaneous deposition,
+independent geographical replicates or evidence of a crown-embryophyte producer.
+
+The review's British entries conflict with their cited source. Burgess
+[@burgess1991SilurianCryptosporesMiospores, pp. 594, 596] distinguishes the older
+*Ambitisporites?* material, probably fragments of cryptospore tetrads, from true triletes in later
+Llandovery samples. The later tentative reinterpretation of one figured specimen by Steemans et al.
+[@steemans1996OrdovicianSilurianCryptospores, p. 47] concerns a Rhuddanian sample and does not restore
+a Hirnantian positive. The Belgian entry remains unverified against primary sources in this audit.
+We preserve the published extraction but omit these entries from the
+secure examples. The source-by-source audit and exact selectors are in
+`docs/audits/2026-11-13-c54-independent-check.md`; C54 covers only the narrowed comparison.
+
 ## S3. QSIM-801: a model-conditional floor calculation
 
 Vecoli et al. [@vecoli2017MiddleOrdovicianCryptospores] [Table 1, p. 321] report [99]{.C11} cryptospore morphotaxon occurrences across [17 of 20]{.C11}
@@ -838,26 +859,31 @@ The frontier (S5.4) gives the ratio of later to earlier finding rate at which a 
 with zero delay, sits on the 95% limit. To judge whether such a ratio is large, three proxies were
 defined before they were computed (`docs/plan-rulers.md`). For a proxy density *x*(*s*), the ratio is the
 mean of *x* over 393.47–426.7 Ma divided by its mean over 426.7 Ma to the candidate age, time-weighted
-within stages (`models/f3/loop3/rulers.py`). *Rock* is the summed area of active North American
+within stages, approximated at 0.01 Myr steps (`models/f3/loop3/rulers.py`). *Rock* is the summed area of active North American
 Macrostrat columns holding a non-marine unit at each age [@peters2018MacrostratPlatformGeological]; South
 America is reported as a coarser secondary case. *Searching* is the PBDB land and marginal-marine
 collection density already used as a recording history [@brook2026FrozenPaleobiologyDatabase]. *Spores*
 is the share of Palynodata documents with a usable-age record that report a usable trilete record (not
 flagged as reworked, caved, questionable or a synonym-list entry, and not in a rejected document or record
-group), counting distinct documents across regions [@white2008PalynodataDatafile2006]
+group), counting distinct Palynodata document IDs across regions [@white2008PalynodataDatafile2006]
 (`data/spores/effort_global_by_stage.csv`). The last column inverts the closed form of S5.4: the largest
-number of independent finds for which the measure alone reaches the required ratio.
+assumed independent-find count at which its numerical ratio equals the required finding-rate ratio.
+This is an algebraic comparison, not evidence that the proxy supplies that finding-rate change. It
+would represent the endpoint calculation if finding rate were proportional to that proxy throughout
+both windows; that transfer is not estimated. Distinct database IDs can still refer to the same
+publication, so this is not a fully deduplicated publication count; the bounded duplicate-entry check
+is recorded in `docs/audits/2026-11-13-c56-independent-check.md`.
 
 <!-- table:rulers -->
 | Measure | 444 Ma | 452 Ma | Largest count matched (444 / 452 Ma) |
 |---|--:|--:|--:|
-| Rock: North America, non-marine column area | [3.29]{.C56} | [3.19]{.C56} | [20.4]{.C56} / [14.0]{.C56} |
-| Rock: North America, non-marine or mixed area | [3.39]{.C56} | [3.42]{.C56} | 21.0 / 14.9 |
+| Rock: North America, non-marine column area | [3.29]{.C56 .V160} | [3.19]{.C56 .V161} | [20.4]{.C56 .V162} / [14.0]{.C56 .V163} |
+| Rock: North America, non-marine or mixed area | [3.39]{.C56 .V164} | [3.42]{.C56 .V165} | 21.0 / 14.9 |
 | Rock: North America, non-marine unit count | 1.80 | 2.23 | 11.8 / 10.2 |
-| Rock: South America, non-marine or mixed area | [1.01]{.C56} | [0.78]{.C56} | 7.2 / 4.4 |
-| Searching: PBDB land and marginal-marine collections | [1.35]{.C56} | [1.41]{.C56} | 9.2 / 7.0 |
-| Searching: the same, plant-filter matches removed | [1.07]{.C56} | [1.12]{.C56} | 7.5 / 5.8 |
-| Spores: share of Palynodata studies reporting triletes | [5.14]{.C56} | [7.10]{.C56} | [31.1]{.C56} / [29.4]{.C56} |
+| Rock: South America, non-marine or mixed area | [1.01]{.C56 .V166} | [0.78]{.C56 .V167} | 7.2 / 4.4 |
+| Searching: PBDB land and marginal-marine collections | [1.35]{.C56 .V130} | [1.41]{.C56 .V131} | 9.2 / 7.0 |
+| Searching: the same, plant-filter matches removed | [1.07]{.C56 .V168} | [1.12]{.C56 .V169} | 7.5 / 5.8 |
+| Spores: share of Palynodata studies reporting triletes | [5.14]{.C56 .V170} | [7.10]{.C56 .V171} | [31.1]{.C56 .V172} / [29.4]{.C56 .V173} |
 <!-- /table:rulers -->
 **Table S14.** Outside measures: how many times scarcer each proxy was before the oldest crown
 vascular-plant find than after it, for ancestors at 444 and 452 Ma with zero delay[]{.C56}.
@@ -881,11 +907,17 @@ reporting, which producer prevalence affects among other factors); no product is
 For a fixed history with relative finding rate *r*(*s*) before the oldest find *A* and 1 after it, the
 probability that all *n* finds are younger than *A*, given a start at *t*, is
 $\{(A-c)/[(A-c)+R(t)]\}^n$ with $R(t)=\int_A^t r(s)\,ds$. An ancestor at *t* therefore fits the 95% limit
-when $R(t)\le K=(A-c)(0.05^{-1/n}-1)$, whatever the shape of *r*; the step of S5.4 is the case of constant
+when $R(t)\le K=(A-c)(0.05^{-1/n}-1)$, whatever the earlier shape of *r* under the common later plateau;
+the step of S5.4 is the case of constant
 *r*. A linear rise from zero at *t* to 1 at *A* gives $R=(t-A)/2$ and reaches $t=A+2K$. An exponential rise
 $r(s)=e^{-(s-A)/\tau}$ gives $R=\tau(1-e^{-(t-A)/\tau})$, which approaches $\tau$ as *t* grows: every
-ancestor age fits once $\tau\le K$, so within this family the record sets a maximum doubling time rather
-than an older limit on the origin; these are requirements for fitting, not estimates of spread. In
+ancestor age fits once $\tau\le K$, equivalently when the doubling time is at most $K\ln 2$.
+For $\tau>K$ the endpoint remains finite, $t=A-\tau\ln(1-K/\tau)$; finite-age thresholds and rounded
+doubling times must not be substituted for the exact unlimited-age condition. Histories with the same
+earlier integral have the same conditional-on-count likelihood when the later rate is held fixed;
+the later fossil-age pattern can test that shared plateau but cannot distinguish these earlier
+shapes. These are requirements for fitting, not estimates of spread, and the unlimited-age statement
+is analytic extrapolation of this family beyond the data domain of S5.2. In
 `models/f3/loop3/rise_shapes.py`, piecewise-constant histories verify the linear and exponential
 integrals, `endpoint.known_cutoff_summary` additionally confirms the exponential endpoints at 444 and
 452 Ma, and the absence of a finite endpoint for $\tau\le K$ follows analytically. The shapes were placed after seeing the record and carry no 95% status.
@@ -893,18 +925,18 @@ integrals, `endpoint.known_cutoff_summary` additionally confirms the exponential
 <!-- table:rises -->
 | Independent finds | Allowance *K* (Myr at the later rate) | Linear rise reaches (Ma) | Doubling time, 444 Ma | 452 Ma | 500 Ma | Limit as *t* grows |
 |--:|--:|--:|--:|--:|--:|--:|
-| 48 | [2.14]{.C57} | [430.98]{.C57} | [1.48]{.C57} | [1.48]{.C57} | [1.48]{.C57} | [1.48]{.C57} |
-| 24 | [4.42]{.C57} | [435.54]{.C57} | [3.13]{.C57} | [3.07]{.C57} | [3.06]{.C57} | [3.06]{.C57} |
-| 19 | [5.68]{.C57} | [438.05]{.C57} | [4.17]{.C57} | [3.98]{.C57} | [3.93]{.C57} | [3.93]{.C57} |
-| 15 | [7.35]{.C57} | [441.39]{.C57} | [5.84]{.C57} | [5.28]{.C57} | [5.09]{.C57} | [5.09]{.C57} |
+| 48 | [2.14]{.C57 .V139} | [430.98]{.C57 .V140} | [1.48]{.C57 .V141} | [1.48]{.C57 .V142} | [1.48]{.C57 .V143} | [1.48]{.C57 .V123} |
+| 24 | [4.42]{.C57 .V144} | [435.54]{.C57 .V145} | [3.13]{.C57 .V146} | [3.07]{.C57 .V147} | [3.06]{.C57 .V148} | [3.06]{.C57 .V149} |
+| 19 | [5.68]{.C57 .V150} | [438.05]{.C57 .V151} | [4.17]{.C57 .V152} | [3.98]{.C57 .V153} | [3.93]{.C57 .V154} | [3.93]{.C57 .V124} |
+| 15 | [7.35]{.C57 .V155} | [441.39]{.C57 .V156} | [5.84]{.C57 .V157} | [5.28]{.C57 .V158} | [5.09]{.C57 .V159} | [5.09]{.C57 .V125} |
 <!-- /table:rises -->
 **Table S15.** Early-rise shapes before the oldest crown vascular-plant find (main interpretation, Emsian
 cutoff, zero delay). Doubling time is $\tau\ln 2$ in Myr.
 
 For coarse context, the share of Palynodata documents reporting usable triletes (S5.8) changed from
-[0.136]{.C57} in the Homerian to [0.183]{.C57} in the Gorstian, an equivalent doubling time of about
-[6.6]{.C57} Myr between stage midpoints, and from [0.016]{.C57} in the Hirnantian to [0.089]{.C57}
-in the Rhuddanian, about [1.0]{.C57} Myr. The first comparison spans the oldest find at the
+[0.136]{.C57 .V174} in the Homerian to [0.183]{.C57 .V175} in the Gorstian, an equivalent doubling time of about
+[6.6]{.C57 .V126} Myr between stage midpoints, and from [0.016]{.C57 .V176} in the Hirnantian to [0.089]{.C57 .V177}
+in the Rhuddanian, about [1.0]{.C57 .V127} Myr. The first comparison spans the oldest find at the
 Homerian–Gorstian boundary, so it is not a test of a rise confined to before *A*; placing the Gorstian
 level at *A* instead would shorten it to about 4.6 Myr. The share is a reporting measure, not a finding
 rate for crown vascular plants.

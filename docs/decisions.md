@@ -3,6 +3,28 @@
 Dated record of decisions that shape the programme. Newest first. Say who decided, and quote
 Barry exactly (with source) or label a paraphrase.
 
+## 2026-11-13: general-points revision independently reviewed (Codex)
+
+- **Scope.** Review of the article revision through `75f2bb0`, requested by Barry on Board 158.
+  The brief, graphical abstract and agent guide stay in their prior state until the article and
+  Barry's planned line-edit pass settle, as specified in the handoff.
+- **Claims.** C54 is supported only for the narrowed primary-source-supported Saudi/Turkish
+  comparison, with overlapping stage ranges rather than exact contemporaneity. British review
+  entries conflict with cited primary evidence; Belgium remains unverified here. C55–C57 are
+  supported after independent source-table reconstruction and closed-form calculations, with the
+  assumptions stated in `manuscript/estimands.md` and the three 13 November audit notes.
+- **Interpretation.** A continuous count curve is an algebraic sensitivity, not a calibrated
+  effective sample size. Proxy ratios put required finding-rate ratios in context without proving
+  their mechanism. Earlier histories with the same integral cannot be distinguished under a common
+  fixed later plateau. The exponential unlimited-age condition is exact; rounded finite-age
+  thresholds cannot substitute for it. No new crown date or clock ranking is inferred.
+- **Structural review (Q1/Q2/Q5).** The count → requirements → rise → outside-proxy sequence now
+  separates dependence, assumed histories and descriptive external context. The source check
+  exposed a false transfer from a review entry to a secure occurrence, and the mathematical check
+  separated finite from unlimited compatibility. The structure serves the next investigation;
+  no question changes status. The article is handed back for reconciliation and Barry's line edits,
+  with the later product pass still pending.
+
 ## 2026-11-11: reconstructed F3 article becomes canonical (Claude and Codex, under Barry's method)
 
 - **Integrated.** The reviewed step-4 draft (`manuscript/reconstruction/4-final-draft.md`) is now

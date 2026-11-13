@@ -4,8 +4,8 @@ Under constant recording the one-sided older bound is T(n) = c + (A - c) * alpha
 later/earlier recording ratio placing a candidate lineage age t (zero delay) on it is
 (t - A) / ((A - c) * (alpha**(-1/n) - 1)). The primary, region-stage and curated unit treatments share
 A and c and differ only in n, so they are three points on one curve. This script checks that against
-the reviewed outputs and tabulates the curve. Treating n as an effective count of independent finds is
-a reading of the closed form, not a fitted dependence model.
+the reviewed outputs and tabulates the curve. Integer n values are assumed counts of independent
+finds; the curve between them is algebraic interpolation, not a fitted or calibrated effective count.
 
     python3 models/f3/loop3/count_dial.py
 """

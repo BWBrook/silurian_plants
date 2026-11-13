@@ -6,6 +6,16 @@ spore first appearances (from 2026-10-28). Status as of 2026-10-27, after EPRP t
 this file whenever a source is added, extracted or ruled out. A gap that bears on a question names its ID
 in `docs/questions.md`.
 
+**13 November 2026, Q2/Q5 source assessment.** The C54 check traced six Katian–Hirnantian trilete
+review entries back to their cited primary papers. The source-supported comparison retained here is
+Saudi Arabia (Steemans et al. 2009, Katian Qasim and Hirnantian Sarah formations) and Turkey
+(Steemans et al. 1996, uncertain middle Ashgillian–Hirnantian age). Burgess (1991), held in
+`library/closed/burgess1991_firststudy.pdf`, treats the older British material as probable cryptospore
+fragments; the later tentative reinterpretation concerns a Rhuddanian specimen. The review's British
+Ordovician true-trilete interpretation is therefore not used, and the Belgian primary-source link
+remains unverified in this audit. Published extraction files stay unchanged; exact selectors,
+source pages and retained alternatives are in `audits/2026-11-13-c54-independent-check.md`.
+
 Status values:
 - **held**: in the repository, committed; third-party deposits marked "(fetched)" are not committed and are downloaded by `data/external/scripts/deposits_fetch.py` (licences in `THIRD_PARTY.md`);
 - **local**: on mac-mini in a git-ignored `local/` or `library/` folder because of licence or size;

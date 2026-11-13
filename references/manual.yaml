@@ -1,5 +1,18 @@
 # Works without a DOI, in CSL YAML. tools/refs.py merges them into refs.yaml.
 references:
+  - id: burgess1991SilurianCryptosporesMiospores
+    type: article-journal
+    title: Silurian cryptospores and miospores from the type Llandovery area, south-west Wales
+    author:
+      - family: Burgess
+        given: N. D.
+    issued:
+      date-parts: [[1991]]
+    container-title: Palaeontology
+    volume: '34'
+    issue: '3'
+    page: 575–599
+    URL: https://palass.org/publications/palaeontology-journal/archive/34/3/article_pp575-599
   - id: abuhmida2013PalynologicalAnalysisOrdovician
     type: thesis
     genre: PhD thesis

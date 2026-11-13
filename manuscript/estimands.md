@@ -67,6 +67,32 @@ origin.
 - **Not allowed:** "earliest start" or "earliest date" for the 429 Ma bound; the bound alone without
   the 432–434 Ma unit sensitivity; its overlap with the youngest clock as support for that clock.
 
+## Count, proxy and early-rise comparisons
+
+The general-points revision adds three descriptive/retrospective results, independently checked by
+Codex on 13 November 2026. They do not add a fitted finding-rate or dependence model:
+
+- **C55:** the steady-rate curve is a sensitivity to the assumed integer count of independent finds
+  at fixed oldest age and cutoff. Its real-valued crossing is algebraic interpolation, not an
+  estimated or calibrated effective sample size.
+- **C56:** outside rulers are ratios of the specified proxy means in the same two time windows.
+  Numerical overlap with a required finding-rate ratio does not show that the proxy supplies that
+  change. Such transfer is not established; proportionality to finding intensity across both windows
+  would be one sufficient assumption. The rock object is column area, not measured outcrop area; the spore object is a
+  share of distinct database document IDs, not producer prevalence. No combined factor is fitted.
+- **C57:** with the later rate fixed at one and zero delay, the oldest-find calculation constrains
+  the earlier integral to K. Equal earlier integrals are indistinguishable under that fixed later
+  plateau; this does not establish the plateau or remove the later fossil-age diagnostic. In the
+  exponential family, unlimited older compatibility requires exactly a doubling time at most K ln 2.
+  Finite-age thresholds and rounded values such as 1.5 Myr must not be read as exact unlimited-age
+  thresholds. These are data-selected compatibility scenarios, not estimated rates of spread or
+  selection-adjusted confidence bounds.
+
+**C54 source limit:** use only the primary-source-supported Saudi and Turkish review entries for
+the stage-level comparison with Libya. The British review entries conflict with cited primary
+evidence for true triletes, and the Belgian entry lacks a primary-source check here. Raw extraction
+is preserved; overlapping stage enclosures do not establish actual contemporaneity or crown affinity.
+
 ## B0 and the spore comparison
 
 - **Canonical B0** includes the Katian Oman sporangial fragments as one locality–age unit with oldest

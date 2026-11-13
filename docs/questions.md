@@ -9,6 +9,20 @@ The programme's working list of provisional questions: what each needs, which ga
 
 The register is updated at each loop's close. Started 2026-10-28 by Claude Opus 5.5 from Barry's programme principles; questions are added or reworded by either.
 
+**General-points review, 13 November (Q1/Q2/Q5):** C54 is narrowed to primary-source-supported Saudi
+and Turkish trilete reports with stage-age enclosures overlapping the Libyan non-detections. The two
+British review entries conflict with their cited primary source, while Belgium remains unverified in
+this audit; the published extraction is preserved and these entries are not secure examples. This is
+a Q5 source-to-compilation failure, not a change to the Libyan observations or a demonstrated
+contemporaneity. C55–C57 pass independent numerical checks: assumed independent counts remain
+sensitivity scenarios, outside-proxy ratios remain descriptive comparisons, and the early-rise
+integral constrains earlier histories only under the common later plateau. Unlimited older
+compatibility requires the exact exponential threshold, not its rounded finite-age examples.
+No question changes status. Global adjudication of the source-conflicted review rows remains an
+open data task; the current article uses the declared narrowed subset. The brief, graphical abstract
+and agent guide await the agreed post-line-edit product pass. Audits: `audits/2026-11-13-c54-independent-check.md`,
+`audits/2026-11-13-c55-c57-independent-check.md`, `audits/2026-11-13-c56-independent-check.md`.
+
 **Follow-up implemented, 8 November (Q1/Q2/Q5):** the two source-backed E3 records are restored without
 an E4-to-B1 shortcut. Main B1 is 71/69 units, constant bound 434.649615 Ma; B2 is unchanged. The age-search
 rejection has the almost-sure containment and fixed-model conditions it needs; this is no new

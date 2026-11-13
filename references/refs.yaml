@@ -79,6 +79,21 @@ references:
   page: 340–353
   publisher: Oxford University Press (OUP)
   DOI: 10.1093/sysbio/syx074
+- id: burgess1991SilurianCryptosporesMiospores
+  citation-key: burgess1991SilurianCryptosporesMiospores
+  type: article-journal
+  title: Silurian cryptospores and miospores from the type Llandovery area, south-west Wales
+  author:
+  - family: Burgess
+    given: N. D.
+  issued:
+    date-parts:
+    - - 1991
+  container-title: Palaeontology
+  volume: '34'
+  issue: '3'
+  page: 575–599
+  URL: https://palass.org/publications/palaeontology-journal/archive/34/3/article_pp575-599
 - id: claramunt2022CladedateCalibrationInformation
   citation-key: claramunt2022CladedateCalibrationInformation
   type: article-journal
@@ -815,6 +830,26 @@ references:
   page: 425–436
   publisher: Wiley
   DOI: 10.1111/nph.13247
+- id: steemans1996OrdovicianSilurianCryptospores
+  citation-key: steemans1996OrdovicianSilurianCryptospores
+  type: article-journal
+  title: Ordovician and Silurian cryptospores and miospores from southeastern Turkey
+  author:
+  - family: Steemans
+    given: P.
+  - family: le Hérissé
+    given: A.
+  - family: Bozdogan
+    given: N.
+  issued:
+    date-parts:
+    - - 1996
+  container-title: Review of Palaeobotany and Palynology
+  volume: '93'
+  issue: 1-4
+  page: 35–76
+  publisher: Elsevier BV
+  DOI: 10.1016/0034-6667(95)00119-0
 - id: steemans2009OriginRadiationEarliest
   citation-key: steemans2009OriginRadiationEarliest
   type: article-journal

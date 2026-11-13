@@ -419,5 +419,13 @@ data archived, and the human–AI correspondence record published alongside.
   and trimmed the brief to keep two pages; a Claude Sonnet subagent tested it cold for lay comprehension,
   which led to direct scenario labels, plain glosses and a stated distinction between requirements and
   95% limits.
+- General-points review (13 November 2026): Codex used three bounded independent checks of the
+  primary spore sources, outside-proxy calculations and count/rise mathematics, then integrated the
+  findings into the article, supplement and claims C54–C57. The reviewers inherited the session's
+  Codex model; its exact variant was not exposed. The source check narrowed the secure Libyan
+  comparison to Saudi Arabia and Turkey; separate calculations verified the numerical outputs,
+  distinguished finite from unlimited exponential compatibility, and restricted proxy comparisons
+  to descriptive ratios. Codex added case-specific numerical bindings. Barry's line-edit pass and the
+  later brief/agent-guide product pass remain separate from this verification.
 
 `docs/decisions.md` records who decided what and when, for the eventual statement of AI roles.
