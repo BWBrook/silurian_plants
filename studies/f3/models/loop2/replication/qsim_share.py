@@ -38,14 +38,14 @@ from typing import Sequence
 import numpy as np
 import scipy
 
-ROOT = Path(__file__).resolve().parents[4]
-sys.path.insert(0, str(ROOT / "models" / "f3" / "loop2"))
+ROOT = Path(__file__).resolve().parents[5]
+sys.path.insert(0, str(ROOT / "studies" / "f3" / "models" / "loop2"))
 from count_share import zero_target_stratified_bound  # noqa: E402
 
-TABLE = ROOT / "data" / "units" / "loop2" / "replication" / "qsim801_vecoli2017_table1.csv"
+TABLE = ROOT / "studies" / "f3" / "data" / "units" / "loop2" / "replication" / "qsim801_vecoli2017_table1.csv"
 SOURCE = ROOT / "library" / "closed" / "vecoli2017.pdf"
 SCRIPT = Path(__file__).resolve()
-COUNT_SHARE = ROOT / "models" / "f3" / "loop2" / "count_share.py"
+COUNT_SHARE = ROOT / "studies" / "f3" / "models" / "loop2" / "count_share.py"
 OUT = SCRIPT.parent / "out"
 ALPHA = 0.05
 EFFORTS = (1.0, 0.5, 0.25, 0.1)

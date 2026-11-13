@@ -16,7 +16,7 @@ from matplotlib.lines import Line2D
 import numpy as np
 
 HERE = Path(__file__).resolve().parent
-ROOT = HERE.parents[2]
+ROOT = HERE.parents[3]
 OUT = HERE / "out"
 CATEGORIES = [("B0", "Embryophyte bodies"), ("B1", "Polysporangiophyte bodies"), ("B2", "Crown-tracheophyte members")]
 HISTORIES = ["flat", "pbdb_all", "pbdb_plant_excluded", "decline25", "decline10", "pbdb_excluded_decline10"]

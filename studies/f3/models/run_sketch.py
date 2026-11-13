@@ -4,9 +4,9 @@
 # ///
 """Demonstration grid: coverage and bias of first-appearance estimators against a known origination.
 
-    uv run models/f3/run_sketch.py
+    uv run studies/f3/models/run_sketch.py
 
-Writes models/f3/out/sketch_grid.csv and sketch_grid.meta.json (seeds, settings, timescale hash).
+Writes studies/f3/models/out/sketch_grid.csv and sketch_grid.meta.json (seeds, settings, timescale hash).
 One row per growth form x channel psi x channel x dating x estimator. In each replicate the true
 origination age T0 is drawn uniformly within the Telychian, so results average over where in its
 stage the origination falls. Coverage is judged against T0; bias is point - T0 in Myr, positive

@@ -201,7 +201,7 @@ The taxa and the hypotheses about them need separating, because rejecting a plan
   - **Ghin Ghin, Loc. 1 (= B3, H1).** *Monograptus* aff. *uncinatus* (Gorstian) lies 2–3 cm below *Baragwanathia* beds with no break between them (Garratt 1981, reported by Earp). The association is close; the identification is the issue. Rickards (2000) calls the "aff." excessive caution. Earp's draft finds the specimens differ from *uncinatus* and that the identification "cannot be sustained", without naming a Devonian replacement. The section is faulted and folded, with *Baragwanathia* above and below Loc. 1.
   - **Limestone Road, Loc. 4 (= H4).** *Bohemograptus bohemicus bohemicus* is Gorstian, and Earp's draft accepts the identification. But the graptolites came from the spoil heap, their dark matrix differs from the weathered site, and material was stockpiled there from elsewhere. The problem is provenance.
   - **Ghin Ghin, B2,** 67 m above Loc. 1: about 70 rhabdosomes on one slab, read as Pridoli *M.* cf. *prognatus* (Garratt & Rickards 1987, who call the placement within the range speculative). Earp's draft doubts both the identification and the exclusion of the Pragian *M. thomasi*.
-- **Adjudication (Claude Opus 5.5, 2026-10-28).** No published work demonstrates an Early Devonian age for the eastern localities, and none establishes the Gorstian beyond dispute. The main reading for Loc. 1 and Loc. 4 changes from the Early Devonian baseline to "unresolved, Gorstian to Emsian"; B2 becomes its own observation, unresolved between Pridoli and Emsian (`data/occurrences/`). What would settle it: re-identification of the Loc. 1 graptolites (NMV P73824–P73826) by a graptolite specialist, and new in-place collecting at Loc. 1. Contact is Barry's decision.
+- **Adjudication (Claude Opus 5.5, 2026-10-28).** No published work demonstrates an Early Devonian age for the eastern localities, and none establishes the Gorstian beyond dispute. The main reading for Loc. 1 and Loc. 4 changes from the Early Devonian baseline to "unresolved, Gorstian to Emsian"; B2 becomes its own observation, unresolved between Pridoli and Emsian (`studies/f3/data/occurrences/`). What would settle it: re-identification of the Loc. 1 graptolites (NMV P73824–P73826) by a graptolite specialist, and new in-place collecting at Loc. 1. Contact is Barry's decision.
 - **Error type:** misdating or introduced material (unresolved for the eastern localities).
 - **Read status:** primary sources above; Earp (2024) from its abstract and the cards.
 
@@ -210,7 +210,7 @@ The taxa and the hypotheses about them need separating, because rejecting a plan
 - **Claimed:** Geng (1986): a Wenlock plant from Fenggang, Guizhou, with a conducting bundle of tubes with secondary thickening, read as among the earliest vascular plants. Its host was later dated as Telychian on brachiopods (as reported by Wang et al. 2013).
 - **Dispute:** Edwards et al. (2007) asked whether it is "the earliest vascular plant or a later rooting system". Wang et al. (2013) report it as Permian plant roots that penetrated Lower Silurian rocks beneath a Permian unconformity, about 285 Ma. The host age is not in doubt; the assumption that the fossil is as old as its host is.
 - **Error type:** younger material in older rock (reassigned).
-- **Read status:** Wang et al. (2013) in full, through the Loop 1 occurrence extraction (`data/occurrences/`); Geng (1986) as an abstract; Edwards et al. (2007) not read (closed-literature register).
+- **Read status:** Wang et al. (2013) in full, through the Loop 1 occurrence extraction (`studies/f3/data/occurrences/`); Geng (1986) as an abstract; Edwards et al. (2007) not read (closed-literature register).
 - **Sources:** Geng 1986; Edwards et al. 2007; Wang et al. 2013.
 
 ### 19. *Volkhoviella primitiva* Naugolnykh 2019 (Leningrad region, Russia)
@@ -224,7 +224,7 @@ The taxa and the hypotheses about them need separating, because rejecting a plan
 ### 20. *Piterophyton caudatum* Naugolnykh 2022 (Leningrad region, Russia)
 
 - **Claimed:** Naugolnykh (2022): a new genus of archaic land plants from the Sandbian of the Volgovo quarry, layer 2, with fertile axes and tracheids reported in an extracted stem. Some systematic passages say Middle rather than Upper Ordovician.
-- **Dispute:** no independent assessment was found. If accepted, it would move both polysporangiophyte bodies and tracheids back by about 25-30 Myr, from the Wenlock or Ludlow to the Sandbian (`models/f3/out/naive_pivotal.csv`). Under the project's main-reading rule for unassessed outliers (`data/occurrences/README.md`), it is tested as an alternative, not counted in the main reading.
+- **Dispute:** no independent assessment was found. If accepted, it would move both polysporangiophyte bodies and tracheids back by about 25-30 Myr, from the Wenlock or Ludlow to the Sandbian (`studies/f3/models/out/naive_pivotal.csv`). Under the project's main-reading rule for unassessed outliers (`studies/f3/data/occurrences/README.md`), it is tested as an alternative, not counted in the main reading.
 - **Error type:** unresolved dispute; unassessed.
 - **Read status:** the paper in full, through the Loop 1 occurrence extraction.
 - **Sources:** Naugolnykh 2022.

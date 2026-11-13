@@ -21,7 +21,7 @@ import scipy
 
 HERE = Path(__file__).resolve().parent
 F3 = HERE.parent
-ROOT = F3.parent.parent
+ROOT = F3.parents[2]
 sys.path.insert(0, str(F3))
 import designs as dz
 import envelope as ev
@@ -36,10 +36,10 @@ def bound_inputs():
     names = ["envelope.py", "sim.py", "designs.py", "m2.py", "designs/m2.toml", "out/m2_results.csv"]
     paths = [F3 / x for x in names]
     paths += [ROOT / "data/timescale.csv"]
-    paths += [ROOT / "data/units" / x for x in
+    paths += [ROOT / "studies/f3/data/units" / x for x in
               ("libya_appendix1.csv", "libya_chart_reports.csv", "libya_prose_support.csv")]
     paths += [HERE / "robustness_design.json", Path(__file__),
-              ROOT / "docs/audits/2026-11-01-loop2-count-gate.md"]
+              ROOT / "studies/f3/docs/audits/2026-11-01-loop2-count-gate.md"]
     return {str(p.relative_to(ROOT)): digest(p) for p in paths}
 
 

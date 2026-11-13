@@ -18,7 +18,7 @@ from typing import Mapping, Protocol
 
 import numpy as np
 
-ROOT = Path(__file__).resolve().parents[2]
+ROOT = Path(__file__).resolve().parents[3]
 TIMESCALE_CSV = ROOT / "data" / "timescale.csv"
 LOGISTIC_DT = 0.01  # Myr; cell width when the deterministic logistic is discretised
 MAX_SURVIVAL_TRIES = 10_000

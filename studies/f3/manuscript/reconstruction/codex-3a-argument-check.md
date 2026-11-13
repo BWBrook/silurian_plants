@@ -9,7 +9,7 @@ unchanged. Theory-based expectations are appropriate when their assumptions are 
   divergence-to-character interval nor the character-to-first-fossil interval. Say that these links
   remain uncertain in early plants.
 - Scope scarce pre-latest-Silurian terrestrial deposits to western Europe, matching the source
-  qualification retained in `manuscript/text/main.md`.
+  qualification retained in `studies/f3/manuscript/text/main.md`.
 - Make expectation 2 exposure-dependent: comparable searched exposure lets non-detections constrain
   sustained delivered encounter. Zeros alone can be uninformative; Borenshult supplies the existing
   counterexample. Expectation 3 should fix the recording history, cutoff and independent unit rule.

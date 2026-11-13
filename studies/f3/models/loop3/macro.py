@@ -13,10 +13,10 @@ reports the older limit of the origination interval under three recovery assumpt
   logistic   rate = effort proxy x logistic abundance   ramp.py, capacity profiled
   bd         rate = effort proxy x exp(g s)             ramp.py, expected birth-death
 
-Ages are Ma, older is larger. Pilot status: the horizon set is v0 and awaits audit (docs/plan-loop3.md).
+Ages are Ma, older is larger. Pilot status: the horizon set is v0 and awaits audit (studies/f3/docs/plan-loop3.md).
 
-  uv run models/f3/loop3/macro.py build      # data/macro/horizons_v0.csv
-  uv run models/f3/loop3/macro.py estimate   # models/f3/loop3/out/pilot_intervals.csv
+  uv run studies/f3/models/loop3/macro.py build      # studies/f3/data/macro/horizons_v0.csv
+  uv run studies/f3/models/loop3/macro.py estimate   # studies/f3/models/loop3/out/pilot_intervals.csv
 """
 
 import json
@@ -27,15 +27,15 @@ from pathlib import Path
 import numpy as np
 import pandas as pd
 
-ROOT = Path(__file__).resolve().parents[3]
-sys.path.insert(0, str(ROOT / "models" / "f3"))
+ROOT = Path(__file__).resolve().parents[4]
+sys.path.insert(0, str(ROOT / "studies" / "f3" / "models"))
 import estimators  # noqa: E402
 import ramp  # noqa: E402
 
 PBDB = ROOT / "data/eprp/record"
-OCC = ROOT / "data/occurrences"
-CLASSES = ROOT / "work/codex/loop3"
-HORIZONS = ROOT / "data/macro/horizons_v0.csv"
+OCC = ROOT / "studies/f3/data/occurrences"
+CLASSES = ROOT / "studies/f3/work/codex/loop3"
+HORIZONS = ROOT / "studies/f3/data/macro/horizons_v0.csv"
 OUT = Path(__file__).resolve().parent / "out"
 
 WINDOW_YOUNG, WINDOW_OLD = 393.47, 445.2  # Eifelian base to Hirnantian base
@@ -114,7 +114,7 @@ def build() -> pd.DataFrame:
 
 
 def tail_horizons() -> pd.DataFrame:
-    """Curated tail records (data/occurrences) as horizons, one row per observation and reading."""
+    """Curated tail records (studies/f3/data/occurrences) as horizons, one row per observation and reading."""
     obs = pd.read_csv(OCC / "observations.csv")
     ra = pd.read_csv(OCC / "reading_assignments.csv")
     t = pd.read_csv(ROOT / "data/timescale.csv")

@@ -126,7 +126,7 @@ def main():
     hashes = []
     derivative_names = ["palynodata_taxon_window.csv", "palynodata_documents_window.csv", "palynodata_lithostr_window.csv",
                         "palynodata_theagetable.csv", "palynodata_agetable.csv", "palynodata_age_change.csv", "palynodata_taxloc.csv", "palynodata_codes.csv"]
-    inputs = [source_zip, source_script, repo / "docs/sprint2-source-roster.md", external / "spores/README.md",
+    inputs = [source_zip, source_script, repo / "studies/f3/docs/sprint2-source-roster.md", external / "spores/README.md",
               external / "spores/MANIFEST.tsv"] + [external / "spores" / name for name in derivative_names]
     before = {str(p): sha(p) for p in inputs}
     assert before[str(source_zip)] == ZIP_SHA

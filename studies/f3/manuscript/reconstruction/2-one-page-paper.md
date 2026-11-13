@@ -70,7 +70,7 @@ early recording and diagnostic characters would narrow the compatible histories.
 ---
 
 Numerical trace: C01/C02 (cuttings); C25/C27/C30 (body units and bounds); C48 (zero-delay step
-contours); C33 (minimum assumed offsets); C28/C40 (Oman comparison); C49 (Oman-inclusive shape check); half-rate bound 430.98 Ma from `models/f3/loop3/out/suppression_sensitivity.csv` (B2, main, primary, flat, 0.5), not yet a ledger value; C24/C45/C51 (Libyan model,
+contours); C33 (minimum assumed offsets); C28/C40 (Oman comparison); C49 (Oman-inclusive shape check); half-rate bound 430.98 Ma from `studies/f3/models/loop3/out/suppression_sensitivity.csv` (B2, main, primary, flat, 0.5), not yet a ledger value; C24/C45/C51 (Libyan model,
 time support and unqualified block sensitivity). Clock intervals and source identities are traced in
 the frozen article's Introduction and calibration account. The body is a reconstruction draft;
-`manuscript/text/`, the ledger, models and generators retain their frozen versions.
+`studies/f3/manuscript/text/`, the ledger, models and generators retain their frozen versions.

@@ -7,7 +7,7 @@ biological pilot, candidate dispositions, claim ledger and rendered private draf
 The dated plan and handoffs below remain history; the close governs final claim status.
 
 **Sprint 1 delivered, 1 November 2026:** `loop2-sprint1-results.md`, the claim ledger and
-`models/f3/loop2/README.md` give the evidence, limitations and executable handoff. The count-free
+`studies/f3/models/loop2/README.md` give the evidence, limitations and executable handoff. The count-free
 branch is complete; no new empirical count-share frame or primary qualification is claimed.
 Claude's review and sprint 2 remain next. The dated proposal below is retained as planning history.
 
@@ -50,7 +50,7 @@ has started under this proposal.
    Each sample therefore carries an observed land-spore yield together with an explicit trilete zero.
    The trilete share of land-derived spores can be bounded within samples, without the free
    between-interval ρ. Murzuq probably cannot support the same model: its chart records taxon
-   presence symbols (`data/units/libya_chart_reports.csv`), and its cryptospore percentages are interval
+   presence symbols (`studies/f3/data/units/libya_chart_reports.csv`), and its cryptospore percentages are interval
    prose (Abuhmida 2013, e.g. 20–44% in the upper Hawaz).
 2. **Sprint 1 starts with a count-feasibility gate and still builds the count-share model.** If Murzuq
    lacks per-sample counts, sprint 1 derives, implements and known-answer tests the share model for the
@@ -131,9 +131,9 @@ decision.
 | Sprint 2 | Claude implements, with independent checks | External-frame replication attempt, M1/M3 evidence advance, trait-to-node synthesis, full private paper/data package |
 | Review 2 and close | Codex critiques; collaborators reconcile | Corrected package, claim-by-claim status, Loop 2 close and next highest-value evidence |
 
-No concurrent editing of shared files. Sprint 1 owns new `data/units/loop2/observation/`,
-`models/f3/loop2/` and its audit/results notes. Sprint 2 owns new
-`data/units/loop2/replication/`, `data/units/loop2/m1-m3/`, and `manuscript/`.
+No concurrent editing of shared files. Sprint 1 owns new `studies/f3/data/units/loop2/observation/`,
+`studies/f3/models/loop2/` and its audit/results notes. Sprint 2 owns new
+`studies/f3/data/units/loop2/replication/`, `studies/f3/data/units/loop2/m1-m3/`, and `studies/f3/manuscript/`.
 These are proposed output locations, not a new framework: reuse existing extractors, schemas,
 estimation and qualification modules where their contracts fit. Shared-source, card, pilot and
 programme edits are sequential and recorded. Split delegate ownership by file and bounded outcome;

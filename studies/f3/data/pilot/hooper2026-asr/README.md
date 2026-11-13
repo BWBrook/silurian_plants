@@ -6,8 +6,8 @@ The source archive and its retrieval metadata remain in
 `data/external/local/deposits/hooper2026-spore-evolution/`.
 
 ```bash
-python3 tools/hooper_asr.py
-Rscript tools/check_hooper_asr.R
+python3 studies/f3/tools/hooper_asr.py
+Rscript studies/f3/tools/check_hooper_asr.R
 ```
 
 The extractor needs only Python's standard library and the existing repository
@@ -75,7 +75,7 @@ independent marginal outputs do not supply. An extant-only or alternative-tree
 result must not silently replace this scenario.
 
 The archive's original licence and source identity remain applicable; extraction
-does not confer new rights. See `docs/audits/2026-10-29-pilot-and-contract-review.md`
+does not confer new rights. See `studies/f3/docs/audits/2026-10-29-pilot-and-contract-review.md`
 for the scientific review and amendments proposed to Claude.
 
 ## Saved branch-history check, 30 October 2026
@@ -89,4 +89,4 @@ Endpoint agreement cannot establish uninterrupted persistence along the
 tracheophyte stem. Recovering that conditional history distribution would
 require new, explicitly specified stochastic mapping; no reconstruction was
 run. Source hashes, object inspection and limits are documented in
-`docs/audits/2026-10-30-frame-and-pilot-review.md`.
+`studies/f3/docs/audits/2026-10-30-frame-and-pilot-review.md`.

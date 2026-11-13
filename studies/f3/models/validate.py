@@ -5,10 +5,10 @@
 
 """Validation harness for the F3 compatibility estimator (envelope.py), on simulated unit tables.
 
-    uv run models/f3/validate.py --reps 5                          # all cells, a quick development run
-    uv run models/f3/validate.py --phase calibrate --reps 1000 --tag cal       # writes out/receipt_cal.json
-    uv run models/f3/validate.py --phase accept --receipt out/receipt_cal.json --reps 1000 --tag acc1
-    uv run models/f3/validate.py --phase accept --receipt out/receipt_cal.json --stage1 out/verdicts_acc1.json --tag acc2
+    uv run studies/f3/models/validate.py --reps 5                          # all cells, a quick development run
+    uv run studies/f3/models/validate.py --phase calibrate --reps 1000 --tag cal       # writes out/receipt_cal.json
+    uv run studies/f3/models/validate.py --phase accept --receipt out/receipt_cal.json --reps 1000 --tag acc1
+    uv run studies/f3/models/validate.py --phase accept --receipt out/receipt_cal.json --stage1 out/verdicts_acc1.json --tag acc2
 
 Each replicate simulates a unit table (units_sim.py) and lets the estimator find its own first appearance
 and reference window. Per replicate, for each history class that contains the truth (and always H0):

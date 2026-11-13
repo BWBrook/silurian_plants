@@ -147,7 +147,7 @@ These are checks of explicit procedures and failures, not empirical qualificatio
 
 Assembly, analysis, simulation, retrospective grid and figures have separate input/output hash
 receipts. The final verification receipt records their current bindings and confirms that the
-pre-existing F3 models/qualification data, occurrence inputs and R pilot remain unchanged.
+pre-existing F3 studies/f3/models/qualification data, occurrence inputs and R pilot remain unchanged.
 No R or remote computation was needed. Public release and external correspondence remain Barry's.
 
 The required repository-wide DOI checker queried 736 distinct DOIs and flagged 26 references,
@@ -171,7 +171,7 @@ main narrative. Do not carry forward the pilot's 452.6/454.1/438.0 logistic figu
 that bodies “favour the young clock”, a measured 15–25 Myr preservation lag, or outside-author
 requests as future work.
 
-Figure files are `models/f3/loop3/out/fig_macro_recovery.pdf`, `fig_macro_sensitivity.pdf` and
+Figure files are `studies/f3/models/loop3/out/fig_macro_recovery.pdf`, `fig_macro_sensitivity.pdf` and
 `fig_macro_suppression.pdf`, with PNG previews. The main figure's first four rows are conditional
 envelope results; its purple triangles are explicitly retrospective suppression sensitivities.
 The green bands are the Hooper/Harris published crown-age intervals reproduced in the source

@@ -30,7 +30,7 @@ selects flat-baseline B2/main sensitivities with break 426.7 and multipliers 0.5
 different arrow positions are distinguishable and the reversed age axis is correct.
 
 Sources: C27/V003, C53/V108, C32, C33; `loop3/out/primary_unit_membership.csv`,
-`reviewed_bounds.csv`, `suppression_sensitivity.csv`; `manuscript/figures.py::{primary_bound,suppressed}`.
+`reviewed_bounds.csv`, `suppression_sensitivity.csv`; `studies/f3/manuscript/figures.py::{primary_bound,suppressed}`.
 The model history is constant later and changed before the data-selected anchor; the half/tenth
 numbers must retain the retrospective status recorded in the saved rows and ledger limits.
 
@@ -66,7 +66,7 @@ The conditional maximum-age CDF at these raw equality contours is 0.05 under the
 curves estimate neither historical rates nor a joint confidence region. The selected delays and
 unit alternatives are declared scenarios, not optimised biological histories.
 
-**Clock bands.** The plotted source values in `manuscript/figures.py::CLOCKS[tracheophyta]` are
+**Clock bands.** The plotted source values in `studies/f3/manuscript/figures.py::CLOCKS[tracheophyta]` are
 Morris 450.8–419.3 Ma, Harris 452–447 Ma and Hooper 432–428 Ma. Their positions and overlap are correct.
 The Morris younger end is outside the 456–426 Ma panel and the visible band continues to that edge;
 “Morris (to 451 Ma)” refers to its rounded older end. Preserve this as a clipped published summary,

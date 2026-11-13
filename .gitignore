@@ -8,8 +8,8 @@ portal/dist/
 .site-publish/
 library/open/
 
-# raw API pulls for data/occurrences (provenance in its README)
-data/occurrences/raw/
+# raw API pulls for studies/f3/data/occurrences (provenance in its README)
+studies/f3/data/occurrences/raw/
 
 # Codex run logs (embed third-party paper text); never tracked
 *.events.jsonl
@@ -24,7 +24,7 @@ data/external/spores/palynodata_release/
 data/external/spores/wellman2013_supplement/
 
 # makedoc outputs: PDFs are tracked snapshots; DOCX and build manifests (absolute paths) are not
-manuscript/build/*.docx
-manuscript/build/*_build_manifest.json
+studies/f3/manuscript/build/*.docx
+studies/f3/manuscript/build/*_build_manifest.json
 /work/stage2/
 .scrivmark/

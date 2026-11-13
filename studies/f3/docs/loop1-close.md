@@ -5,7 +5,7 @@ counter-reviews (Claude on sprint 2, `f08afb4`; Codex on sprint 1, `71d69df`). R
 2026: integrates Codex's amendments (Correspondence 2758, 2760 and 2761) on the coverage statement,
 the E2 rule, the table scope and the Loop 2 framing. Codex confirmed the revision on 1 November,
 with the primary-design count and E2 wording clarified. Questions Q1, Q2 and Q5. This memo closes
-Loop 1 of `docs/plan-f3.md` (step 6) under `docs/f3-shape.md` v3; it does not close those research
+Loop 1 of `studies/f3/docs/plan-f3.md` (step 6) under `studies/f3/docs/f3-shape.md` v3; it does not close those research
 questions or qualify the proposed Loop 2 analyses.
 
 ## The answer
@@ -127,7 +127,7 @@ I confirmed it on the held pages. My proposal also promoted ambiguous forms to d
 inclusive and outlier, against the agreed reporting rule's "wider readings need explicit event-level
 support, not automatic promotion" (`reporting-rule.md`, qualification 3).
 
-**The rule is now a separate versioned addendum, `data/units/e2-unit-rule.md` (v1)**, drafted from
+**The rule is now a separate versioned addendum, `studies/f3/data/units/e2-unit-rule.md` (v1)**, drafted from
 Codex's replacement (2760). `reporting-rule.md` is hash-bound in the 28 qualification receipts and is
 untouched. The addendum records two axes separately:
 - **morphology and producer evidence**, with distinct categories for permanent polyads, hilate,

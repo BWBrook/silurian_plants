@@ -2,13 +2,13 @@
 # requires-python = ">=3.12"
 # dependencies = ["numpy"]
 # ///
-"""Shapes of an early rise in finding rate before the oldest crown vascular-plant find (docs/plan-rulers.md).
+"""Shapes of an early rise in finding rate before the oldest crown vascular-plant find (studies/f3/docs/plan-rulers.md).
 
 With the rate level after A and r(s) relative to it before A, an ancestor age t is compatible with the
 95% limit when the integral of r over [A, t] is at most K(n) = (A - c)(alpha**(-1/n) - 1). Data-selected
 shapes: they show what would fit, without 95% status.
 
-    uv run models/f3/loop3/rise_shapes.py
+    uv run studies/f3/models/loop3/rise_shapes.py
 """
 
 import csv
@@ -20,7 +20,7 @@ import numpy as np
 from endpoint import PiecewiseRecovery, known_cutoff_summary
 
 HERE = Path(__file__).resolve().parent
-ROOT = HERE.parents[2]
+ROOT = HERE.parents[3]
 OUT = HERE / "out"
 COUNTS = (48, 24, 19, 15)
 CANDIDATES = (444.0, 452.0, 500.0)

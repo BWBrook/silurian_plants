@@ -4,7 +4,7 @@ diagnostic, not frozen before screening and not a qualified result. Output: bore
 
 import sys
 from pathlib import Path
-sys.path.insert(0, str(Path(__file__).resolve().parents[4] / "models/f3"))
+sys.path.insert(0, str(Path(__file__).resolve().parents[6] / "studies/f3/models"))
 import designs as dz, m2, envelope as ev
 decl = dz.declarations()
 ages = {f"BOR-{r['depth_m']}": r for r in dz._read("borenshult_ages.csv")}

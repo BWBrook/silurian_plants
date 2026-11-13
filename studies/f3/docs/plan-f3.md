@@ -76,7 +76,7 @@ Testing old narratives is a third contribution, and a programme-level one (Q5 in
    - **Measures.** Bias, coverage and identifiability. In particular: can an old origin with poor preservation be told apart from a young origin with good preservation?
    - **Acceptance, fixed before running.** An estimator is used on real data only if its nominal 95% intervals cover the true origination time at least 90% of the time across the plausible scenarios, with median bias under 2 Myr.
    - **Not a prediction.** These criteria are about the estimators, not about which timescale is right.
-   **Amendment after the sketch** (2026-10-28, Claude Opus 5.5; recorded before any real data were analysed). The sketch (`models/f3/README.md`) found:
+   **Amendment after the sketch** (2026-10-28, Claude Opus 5.5; recorded before any real data were analysed). The sketch (`studies/f3/models/README.md`) found:
    - **Classical intervals.** Marshall (1990) and Strauss & Sadler (1989) give the same one-endpoint bound. It covers the true origination 94–95% of the time under its own assumptions. When abundance ramps up after origination (logistic or birth–death growth), coverage falls to 4–81% and the median bias runs from 2 to 27 Myr too young. The bias is of the same order as the disagreement between the clock scenarios.
    - **GRIWM.** Its point estimate lies older than the truth in only 64–81% of replicates, even under uniform sampling. Its interval reflects dating error only.
    - **A fault in the authors' code.** The arrival option of the published GRIWM code (`signor_lipps = "arr"`, `Rextinct/R/griwm.R`) returns an estimate slightly younger than the oldest record. The sketch therefore uses the extinction algorithm on a mirrored age axis. Reporting the fault to the authors is Barry's decision.
@@ -87,11 +87,11 @@ Testing old narratives is a third contribution, and a programme-level one (Q5 in
    - **One classical estimator.** Only one classical bound is carried.
    - **Boundary ages.** These are drawn from the joint age model, not fixed.
    - **The deciding question.** Whether the ramp itself can be estimated from two channels plus effort is the identifiability question, and so the first thing the recovery study answers.
-   **Second amendment, adopted after the recovery study** (2026-10-28, drafted by Claude Opus 5.5; adopted by Barry, chat, 2026-10-28: "Yes, agreed, adopt it"; recorded before any real data were analysed). The recovery study (`models/f3/README.md`, step 3) found the following:
+   **Second amendment, adopted after the recovery study** (2026-10-28, drafted by Claude Opus 5.5; adopted by Barry, chat, 2026-10-28: "Yes, agreed, adopt it"; recorded before any real data were analysed). The recovery study (`studies/f3/models/README.md`, step 3) found the following:
    - **No estimator meets the original criteria** across the plausible scenarios. The classical bound and GRIWM fail every ramp.
    - **The capacity-profiled logistic fit covers but sits young.** Its 95% interval covers the true origination in 119 of 120 logistic scenarios, but its maximum lies 0.2–7.5 Myr young of the truth. Its older limit covers 93–98% of the time under logistic growth and 81–88% under birth–death growth.
    - **Exponential growth leaves an exact trade-off** between preservation and origination. Only empty but well-sampled older stages bound the origination. With the data starting at the Darriwilian, older originations cannot be identified at all.
-   - **Record counts.** About 100 spore records give a bounded but broad older limit under a logistic ramp: median interval widths of 24–45 Myr in the Darriwilian–Sandbian window at mid preservation, narrowing to a few Myr only at the highest preservation level in the youngest windows (`models/f3/out/recovery_grid.csv`). About 30 body-fossil records do not pass. *Correction (2026-10-28, Claude Opus 5.5, after Codex review F3-R5): this item first read "About 100 spore records bound origination to within a few Myr under a logistic ramp", which overstated the grid; nothing that followed depended on the wording.*
+   - **Record counts.** About 100 spore records give a bounded but broad older limit under a logistic ramp: median interval widths of 24–45 Myr in the Darriwilian–Sandbian window at mid preservation, narrowing to a few Myr only at the highest preservation level in the youngest windows (`studies/f3/models/out/recovery_grid.csv`). About 30 body-fossil records do not pass. *Correction (2026-10-28, Claude Opus 5.5, after Codex review F3-R5): this item first read "About 100 spore records bound origination to within a few Myr under a logistic ramp", which overstated the grid; nothing that followed depended on the wording.*
 
    Changes:
    1. **Older limit.** Judge and report the **older limit of the interval**, the quantity a test of a clock maximum needs. An estimator passes a scenario if that limit covers the true origination at least 90% of the time. Point estimates are not reported as findings, and the bias criterion applies only where one is.
@@ -102,10 +102,10 @@ Testing old narratives is a third contribution, and a programme-level one (Q5 in
    6. **Body-fossil events (E3–E5).** These have too few records for any estimator to pass under a ramp. Report their intervals with that caveat, and rest their verdicts mainly on the pivotal records.
 
    These changes narrow the claim from "origination windows" to "sampling-based older limits on origination, conditional on the shape of the rise", the quantity the clock-maximum tests require. The original criteria are kept above for the record.
-   **Third amendment: F3 reshaped** (adopted 2026-10-28; Barry, chat: "Yes, adopt v3"). `docs/f3-shape.md` v3 now governs contribution B. It was drafted by Claude Opus 5.5 after two Codex reviews (`docs/audits/2026-10-28-f3-reshape-codex-review.md`, `docs/audits/2026-10-28-f3-reshape-v2-codex-review.md`).
+   **Third amendment: F3 reshaped** (adopted 2026-10-28; Barry, chat: "Yes, adopt v3"). `studies/f3/docs/f3-shape.md` v3 now governs contribution B. It was drafted by Claude Opus 5.5 after two Codex reviews (`studies/f3/docs/audits/2026-10-28-f3-reshape-codex-review.md`, `studies/f3/docs/audits/2026-10-28-f3-reshape-v2-codex-review.md`).
    - **The question** becomes: under which explicit sampling and biological assumptions are older origins incompatible with the fossil absences behind the clock maxima (515.5, 459.1 and 431.2 Ma)?
    - **What is reported:** compatibility in eligible sampling units, in three labelled layers: encounter intensity, biological translation, node implication.
-   - **The validation study** in `docs/f3-shape.md` replaces the acceptance criteria above for the new procedure.
+   - **The validation study** in `studies/f3/docs/f3-shape.md` replaces the acceptance criteria above for the new procedure.
    - **Events:** E4 and E5 become synthesis only; E6 is parked under Q4; E7 moves to Q3.
    - **Steps 4 and 5 below** are carried out in the order M2, M1, M3.
 

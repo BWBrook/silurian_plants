@@ -1,6 +1,6 @@
 # Charter
 
-Status: **Stage 1, first deliverable** (from 2026-10-28). Orientation ran 2026-10-26 to 28. Barry chose the curated dataset plus F3, whether the record supports the competing timescales; the plan is `docs/plan-f3.md`.
+Status: **Stage 1, first deliverable** (from 2026-10-28). Orientation ran 2026-10-26 to 28. Barry chose the curated dataset plus F3, whether the record supports the competing timescales; the plan is `studies/f3/docs/plan-f3.md`.
 
 ## The idea
 
@@ -61,7 +61,7 @@ account of why. That account is itself a useful output.
 
 ## Route
 
-0. **Orientation** (closed 2026-10-28; the current plan is `docs/plan-f3.md`): taxon cards (`taxa/`), a period primer (`docs/primer.md`), a review
+0. **Orientation** (closed 2026-10-28; the current plan is `studies/f3/docs/plan-f3.md`): taxon cards (`taxa/`), a period primer (`docs/primer.md`), a review
    of modelling precedents (`docs/precedents.md`) and candidate framings (`docs/framings.md`).
    Ends with a choice of framing, which is Barry's call on a recommendation from the agents.
 1. **Sketch:** the smallest end-to-end model of the chosen framing, deterministic where possible.
@@ -94,7 +94,7 @@ data archived, and the human–AI correspondence record published alongside.
   coverage separated from truth-point test coverage, the receipt-scope and stage-1 checks, pooled
   stage 2, status-aware summaries and the 0.955 calibration target, verified by re-summarising every
   stored replicate table and a tiny-protocol smoke run of the full command-line path.
-  It drafted the trait-pilot specification (`docs/pilot-traits.md`, 2026-10-29), framed by Barry as
+  It drafted the trait-pilot specification (`studies/f3/docs/pilot-traits.md`, 2026-10-29), framed by Barry as
   a test of the trait-to-node mappings behind the clock maxima, with a Codex `gpt-6.1-sol` audit
   of its facts and logic adjudicated by Claude.
   On 2026-10-30 it closed the fourth contract review, adopted the pilot design with Codex's
@@ -105,33 +105,33 @@ data archived, and the human–AI correspondence record published alongside.
   record-identity audit from the primary descriptions.
   On 2026-10-31, under Barry's widened scope, it pre-declared and ran a reproduction of Hooper et
   al.'s stochastic mapping in R (phytools, pinned renv) and read the trilete persistence from the
-  regenerated maps (`models/pilot-asr/`). Later that day it made Codex's strict-parsing and pilot
+  regenerated maps (`studies/f3/models/pilot-asr/`). Later that day it made Codex's strict-parsing and pilot
   corrections, adjudicated the Skagen trilete reports against Hooper et al.'s caution, and wrote the
-  design screen (`models/f3/screen.py`) showing that M2's own core cannot test its absence premise.
+  design screen (`studies/f3/models/screen.py`) showing that M2's own core cannot test its absence premise.
   It then drafted, for Barry to send, the request to Rubinstein and Vajda about the figured
   specimens (`docs/outreach/`). After Codex's review of that work it:
   - narrowed the screen to its declared design and tied it to the engine by test;
   - set the frame-selection rule, under which binding claims are conditional on passing the screen;
   - made the checker hold bound states to the engine's invariants;
   - corrected the persistence counts and wording;
-  - measured the stochastic maps' Monte Carlo precision with independent chains (`models/pilot-asr/`).
+  - measured the stochastic maps' Monte Carlo precision with independent chains (`studies/f3/models/pilot-asr/`).
   Later on 2026-10-31 it drafted the two-sprint plan and, after Codex's revision, ran sprint 1:
   - read the Libyan thesis's systematics and chart legend to fix E1 reporting scope;
   - froze eight M2 designs before any statistic;
   - extended the engine (transport multipliers, numerical age ranges, the oldest-possible
     first-appearance rule, the window read-out) and wrote the adapter, screen and actual-design
-    qualifier (`models/f3/designs.py`, `m2.py`, `qualify.py`);
+    qualifier (`studies/f3/models/designs.py`, `m2.py`, `qualify.py`);
   - amended the screen when it found that conditioning on it would remove the evidence;
   - qualified 14 design/ρ combinations on `nectar` and wrote the M2 result note.
   It then reviewed Codex's sprint 2 (2026-10-31): screened Borenshult and assessed Libya and Ghelli as E2
   frames, stated the outcome-coding rule and the inclusive-reading occurrence consequence for M1, and
-  adjudicated and applied three subagent source audits (`docs/audits/2026-10-31-sprint2-claude-review.md`).
-  It then drafted the Loop 1 reconciliation and close memo (`docs/loop1-close.md`, 2026-10-31). This covered:
+  adjudicated and applied three subagent source audits (`studies/f3/docs/audits/2026-10-31-sprint2-claude-review.md`).
+  It then drafted the Loop 1 reconciliation and close memo (`studies/f3/docs/loop1-close.md`, 2026-10-31). This covered:
   recomputing the acceptance claim and miss counts, the coverage interpretation, the shared E2 dispersal-unit
   rule checked against Wellman et al. (2015) and all E2 outcomes, and the Loop 2 proposal.
   On 1 November it revised the memo to integrate Codex's amendments (coverage statement, conditional-coverage
   counterexample, E2 definition), after checking the model, Edwards et al. (2014) and Abuhmida (2013) itself;
-  drafted the versioned E2 addendum `data/units/e2-unit-rule.md` from Codex's replacement rule; and corrected
+  drafted the versioned E2 addendum `studies/f3/data/units/e2-unit-rule.md` from Codex's replacement rule; and corrected
   the card and pilot cryptospore definition.
   It revised Codex's Loop 2 plan to v2, then on 1 November reviewed Loop 2 sprint 1. It
   reproduced the four break-even thresholds in an independent implementation and partly reversed the
@@ -140,18 +140,18 @@ data archived, and the human–AI correspondence record published alongside.
   - the external-frame dispositions;
   - the M1 affinity adjudication;
   - the M1/M3 request drafts;
-  - the rendered private manuscript, figures, claim table and data manifest (`manuscript/`).
+  - the rendered private manuscript, figures, claim table and data manifest (`studies/f3/manuscript/`).
   In Loop 3 (1–2 November) it proposed the positive body-record analysis and ran the pilot that Codex's
   review superseded. In sprint C (2 November) it verified Codex's reviewed endpoint results by hand and
   reconstructed the paper around the biological problem: a new main text, four new or redrawn figures
-  (`manuscript/figures.py`), a supplement with tables generated from the reviewed outputs
-  (`manuscript/supplement.qmd`, `tables.py`) and an extended claim ledger. Later the same day it moved
-  the paper to Barry's makedoc toolkit (`manuscript/text/`, `settings/build.yaml`), built the programme
+  (`studies/f3/manuscript/figures.py`), a supplement with tables generated from the reviewed outputs
+  (`studies/f3/manuscript/supplement.qmd`, `tables.py`) and an extended claim ledger. Later the same day it moved
+  the paper to Barry's makedoc toolkit (`studies/f3/manuscript/text/`, `settings/build.yaml`), built the programme
   bibliography from a DOI ledger (`references/`, `tools/refs.py`), wrote the two-page plain-language
-  brief and its figure and the agent-facing paper (`manuscript/text/brief.md`, `for-agents.md`), and
+  brief and its figure and the agent-facing paper (`studies/f3/manuscript/text/brief.md`, `for-agents.md`), and
   proposed the multi-study layout (`docs/layout-proposal.md`).
 - Claude Sonnet 5.5 (Anthropic) subagents: the F3 simulator, estimators, sketch and recovery study
-  (`models/f3/`), with a second Sonnet agent reviewing; the reshape-v3 compatibility estimator, unit
+  (`studies/f3/models/`), with a second Sonnet agent reviewing; the reshape-v3 compatibility estimator, unit
   simulator and validation harness (2026-10-28 and 29, reviewed and amended by Claude Opus 5.5), and
   their repair after Codex's implementation review (2026-10-29, to Claude Opus 5.5's design: fixed
   boundaries, exact all-path H0, calibrated critical value); literature research and first drafts of taxon cards,
@@ -169,7 +169,7 @@ data archived, and the human–AI correspondence record published alongside.
   checks and qualification-contract implementation. It corrected qualification
   scope, evidence enforcement and interpretations, and propagated the review
   into the combined results. Exact source and numerical checks are recorded in
-  `docs/audits/2026-10-31-sprint1-codex-review.md`.
+  `studies/f3/docs/audits/2026-10-31-sprint1-codex-review.md`.
   On 1 November it reviewed and confirmed Claude's reconciliation, adopting the corrected E2
   addendum and finite-grid coverage interpretation, and closed the first paired sprint. Its
   independent methods and source reviewers exposed the conditional-inference impossibility error
@@ -188,7 +188,7 @@ data archived, and the human–AI correspondence record published alongside.
   parent model). It verified the 99 QSIM marks, retained the mathematical lower-bound idea but
   withheld empirical admission, corrected the minimum estimand and heuristic dependence labels,
   and repaired primary-readout, affinity, source-scope and material-identity overclaims. It
-  integrated the existing biological pilot and regenerated the private manuscript/package,
+  integrated the existing biological pilot and regenerated the private studies/f3/manuscript/package,
   without rerunning R or changing frozen qualification. The three close audits identify the
   checked evidence and local repairs; no claim is made that model agreement alone validates it.
   In Loop 3 review A and sprint B (1 November), it adopted Barry's positive-occurrence brief,
@@ -212,15 +212,15 @@ data archived, and the human–AI correspondence record published alongside.
   tests and provenance; the parent checked the published figures and integrated the review.
   No R analysis, frozen qualification or crown calibration was changed.
   Claude Opus 5.5 adjudicated review C (5 November) against the frozen outputs, accepted every
-  finding, added the declared Oman-fragment B0 sensitivity (`models/f3/loop3/oman_sensitivity.py`),
+  finding, added the declared Oman-fragment B0 sensitivity (`studies/f3/models/loop3/oman_sensitivity.py`),
   independently reproduced the Borenshult screen statistics, and integrated the corrections into the
   claims ledger, the four renderings and the figures.
 - GPT-6 Pro (OpenAI), commissioned by Barry on 7 November 2026, independently reviewed the repository at
   `60c406b` in a disposable copy: it reproduced the central calculations, reran the Loop 3 outputs and
   simulations, and returned ten prioritised findings with scripts and tables
-  (`docs/audits/2026-11-07-gpt6pro-triage.md`). It changed nothing in the repository. Claude Opus 5.5
+  (`studies/f3/docs/audits/2026-11-07-gpt6pro-triage.md`). It changed nothing in the repository. Claude Opus 5.5
   triaged the review, corrected the M1 source account, made the Oman-inclusive B0 canonical in the paper,
-  wrote `manuscript/estimands.md` and rewrote all four renderings; Codex leads the requested analyses and
+  wrote `studies/f3/manuscript/estimands.md` and rewrote all four renderings; Codex leads the requested analyses and
   public-reproduction work.
   In the 7 November closure check, Codex reviewed the revised interpretation and repaired
   evidence-commit references after the privacy-history rewrite, verifying identical evidence
@@ -241,17 +241,17 @@ data archived, and the human–AI correspondence record published alongside.
   qualification or external measurements were claimed.
   Claude Opus 5.5 then recomputed the stage-2 key values independently (frontier closed form, witness
   KS distances, constant-history endpoints and a separate Murzuq dependence implementation), marked
-  C48–C52 supported and integrated them into the four renderings (`docs/audits/2026-11-07-stage2-integration.md`).
-  Codex (`gpt-6.1-sol`) then reviewed that integration semantically against `manuscript/estimands.md`,
+  C48–C52 supported and integrated them into the four renderings (`studies/f3/docs/audits/2026-11-07-stage2-integration.md`).
+  Codex (`gpt-6.1-sol`) then reviewed that integration semantically against `studies/f3/manuscript/estimands.md`,
   with bounded `sol_high_specialist` and `sol_medium_scientist` independent reads of body-record and
   Murzuq/source-facing statements. The parent adjudicated the wording findings and corrected stale
   supplementary diagnostic figures in its own stage-2 delivery; all scientific CSVs remained unchanged.
-  Claude retains prose repairs and final rendering (`docs/audits/2026-11-07-semantic-closure-review.md`).
+  Claude retains prose repairs and final rendering (`studies/f3/docs/audits/2026-11-07-semantic-closure-review.md`).
   Later on 7 November Claude triaged GPT-6 Pro's follow-up review of `342153a`, checked its B1 and Yea
   findings against the primary sources, reframed the paper (title, abstract, finding-led results, frontier
   figure, Silvestro comparison), repaired the brief and source sentences, and made the finite-sample
   interval reference primary; Codex owns the B1 restoration, reproduction gates and the S2.2
-  specification (`docs/audits/2026-11-07-gpt6pro-review2-triage.md`).
+  specification (`studies/f3/docs/audits/2026-11-07-gpt6pro-review2-triage.md`).
   On 8 November Codex (`gpt-6.1-sol`) completed that handoff. A `sol_high_specialist` delegate
   restored source-backed E3 admissions and regenerated the affected B1 outputs; another independently
   checked the finite-sample rejection argument and drafted the Murzuq likelihood specification.
@@ -260,10 +260,10 @@ data archived, and the human–AI correspondence record published alongside.
   verified C47, integrated ledger/text/figures, corrected plotted domains and first-record labels,
   ran clean-copy reproduction and checked the rendered products. These are bounded source, numerical,
   mathematical and editorial roles; no new clock analysis or frozen qualification was claimed
-  (`docs/audits/2026-11-08-review2-handoff.md`).
+  (`studies/f3/docs/audits/2026-11-08-review2-handoff.md`).
 - OpenAI Codex CLI, `gpt-6.1-sol` and `gpt-6.1-terra` at high reasoning effort, run by Claude Opus
   5.5 as read-only, schema-constrained jobs through `~/.claude/bin/codex-delegate` (2026-10-27 and
-  28; on 2026-10-31 `gpt-6.1-terra` independently re-derived the 164 Libyan binary units for sprint 1; on 2026-11-01 `gpt-6.1-sol` with web search classified the 241 PBDB macrofossil names for the Loop 3 pilot, `work/codex/loop3/`). Records are in `docs/audits/` and the job files in `data/spores/work/codex/` and
+  28; on 2026-10-31 `gpt-6.1-terra` independently re-derived the 164 Libyan binary units for sprint 1; on 2026-11-01 `gpt-6.1-sol` with web search classified the 241 PBDB macrofossil names for the Loop 3 pilot, `studies/f3/work/codex/loop3/`). Records are in `docs/audits/` and the job files in `data/spores/work/codex/` and
   `work/codex/`. Work done:
   - spore genus, age-name and location crosswalks;
   - digitisation of the Wellman et al. (2013) supplement;
@@ -271,15 +271,15 @@ data archived, and the human–AI correspondence record published alongside.
   - extraction of post-2006 spore assemblages;
   - the Model transfer retrofit of 59 cards, with a consistency review of them;
   - extraction of 518 quote-verified specimen observations for the trait pilot from 27 primary
-    sources in two rounds (2026-10-30, `gpt-6.1-sol`; `data/pilot/specimens.csv`);
+    sources in two rounds (2026-10-30, `gpt-6.1-sol`; `studies/f3/data/pilot/specimens.csv`);
   - the first-study literature triage of 348 needed rows, a citation sweep of the first-study
     documents and a search for sample-level frame studies (2026-10-29, `gpt-6.1-sol`; tiers
-    adjudicated and DOIs verified by Claude Opus 5.5; `docs/first-study-literature.csv`);
+    adjudicated and DOIs verified by Claude Opus 5.5; `studies/f3/docs/first-study-literature.csv`);
   - cross-family audits of the new cards and of the primer revision;
   - one card draft for a bake-off;
   - the Loop 1 occurrence tail (Wellman et al. 2022 table, literature readings for both channels);
   - extraction of 232 quotation-verified findings from the closed papers on the pivotal records,
-    adjudicated by Claude Opus 5.5 (`work/codex/loop1b/`), and the Cambrian age, location and
+    adjudicated by Claude Opus 5.5 (`studies/f3/work/codex/loop1b/`), and the Cambrian age, location and
     vetting jobs for the widened Palynodata window (2026-10-28).
 - OpenAI Codex (OpenAI, Codex desktop; exact model version not exposed in this session):
   Executed sprint 2 on 31 October: bounded M1 source admission, M3 denominator
@@ -360,7 +360,7 @@ data archived, and the human–AI correspondence record published alongside.
   two abstracts and one qualified component copy, with three existing Morris files mirrored
   for reading. Three bounded `gpt-5.6-luna` delegates checked public routes, metadata and QA;
   the parent owned browsers, source-identity corrections and registration. Scientific readings
-  remain with the main agents (`docs/audits/2026-10-30-first-study-tier1.md`).
+  remain with the main agents (`studies/f3/docs/audits/2026-10-30-first-study-tier1.md`).
   The authorised Tier 2 pass (2026-10-30) secured 30 new main texts and reconciled twelve
   exact existing works. Three bounded `gpt-5.6-luna` executors checked public/repository
   routes, source metadata, file QA, prior holdings and the parent's integration draft;
@@ -368,7 +368,7 @@ data archived, and the human–AI correspondence record published alongside.
   registered the sources and retained office-action blockers. The audit distinguishes
   original PDFs, a BHL reconstruction, abstracts, partials and copied datasets; no
   scientific extraction or adjudication was performed in this acquisition tranche
-  (`docs/audits/2026-10-30-first-study-tier2.md`).
+  (`studies/f3/docs/audits/2026-10-30-first-study-tier2.md`).
   Barry and the counterpart MacBook Codex session then recovered 35 exact main texts
   and one intended abstract through joint browser actions, supplied files and a supplied
   deep-research package (underlying system not identified in this integration). The mini
@@ -383,15 +383,15 @@ data archived, and the human–AI correspondence record published alongside.
   calibration provenance, and direct discussion with Claude through the private Correspondence
   section `silurian-plants`. The F3 review used two `gpt-5.6-sol` specialist subagents for
   methodological and effort-data checks, integrated and checked by the parent session;
-  `docs/audits/2026-10-28-f3-reshape-codex-review.md` records the evidence and limitations.
-  The v2 follow-up (`docs/audits/2026-10-28-f3-reshape-v2-codex-review.md`) adds a draft
+  `studies/f3/docs/audits/2026-10-28-f3-reshape-codex-review.md` records the evidence and limitations.
+  The v2 follow-up (`studies/f3/docs/audits/2026-10-28-f3-reshape-v2-codex-review.md`) adds a draft
   sampling-unit interface and checks the proposed bound and validation rule, with a bounded
   follow-up by the same methodological specialist and parent verification of the calculations.
   On 2026-10-29, implementation review, a 15-block sampling-unit pilot and the bounded Q9
   provenance check; two `gpt-5.6-sol` specialists checked methods and source evidence, and a
   `gpt-5.6-luna` executor built the archive inventory. Parent review corrected an extra burn-in
   deletion and retained unconditional coverage as the primary inferential target after challenging
-  a proposed conditional-coverage requirement. The corresponding audits and `data/units/` record
+  a proposed conditional-coverage requirement. The corresponding audits and `studies/f3/data/units/` record
   which findings are verified, which recommendations await Claude, and which evidence remains
   unsuitable for analysis.
   The subsequent repair review accepted the chord/Jensen construction and independently
@@ -399,13 +399,13 @@ data archived, and the human–AI correspondence record published alongside.
   remaining target/calibration and numerical-status issues. A `gpt-5.6-luna` scout checked
   Hanadir sample provenance and bounded Balme access routes. The parent integrated the
   Hanadir frame inventory, a qualified reporting-rule proposal and data-integrity checks
-  (`docs/audits/2026-10-29-f3-repairs-and-frame-review.md`), preserving the completed Q9 work.
+  (`studies/f3/docs/audits/2026-10-29-f3-repairs-and-frame-review.md`), preserving the completed Q9 work.
   On 2026-10-30 the parent integrated independent checks of Claude's validation repairs,
   decisive specimen links and the Ghelli 2002 locality. It assembled and independently
   reconciled the 34-depth Borenshult inventory and inspected the Hooper workspace for saved
   branch histories. The three delegates used the inherited Codex model (exact variant not
   exposed); no new ensemble or evolutionary reconstruction ran. Findings and pending
-  corrections are separated in `docs/audits/2026-10-30-frame-and-pilot-review.md`.
+  corrections are separated in `studies/f3/docs/audits/2026-10-30-frame-and-pilot-review.md`.
 
 - F3 article reconstruction (10–11 November 2026), following Barry's stepwise method: Claude drafted
   each step (main message, abstracts, one-page paper, section and paragraph abstracts, full draft,
@@ -413,9 +413,9 @@ data archived, and the human–AI correspondence record published alongside.
   (`gpt-6.1-sol`) reviewed and revised every step, read the candidate references (with Claude
   checking quotes verbatim), confirmed the half-rate ledger claim C53 and repaired the figures'
   scientific contracts. A Claude Sonnet subagent aligned the agent guide. Barry chose the main
-  message and set each step. Record: `manuscript/reconstruction/README.md`.
+  message and set each step. Record: `studies/f3/manuscript/reconstruction/README.md`.
 - Graphical abstract (12 November 2026), at Barry's request, for the journal and as the brief's figure:
-  Claude (Opus 5.5) designed and drew it from the reviewed output tables (`manuscript/figures_abstract.py`)
+  Claude (Opus 5.5) designed and drew it from the reviewed output tables (`studies/f3/manuscript/figures_abstract.py`)
   and trimmed the brief to keep two pages; a Claude Sonnet subagent tested it cold for lay comprehension,
   which led to direct scenario labels, plain glosses and a stated distinction between requirements and
   95% limits.

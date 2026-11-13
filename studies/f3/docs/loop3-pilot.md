@@ -11,7 +11,7 @@ Horizon set v0 and every number here are provisional until that review.
 ## What was built
 
 - **Names.** The 241 distinct PBDB macrofossil names overlapping 445–393 Ma were classified by three
-  Codex jobs (`gpt-6.1-sol`, high effort, web search; `work/codex/loop3/`): category,
+  Codex jobs (`gpt-6.1-sol`, high effort, web search; `studies/f3/work/codex/loop3/`): category,
   polysporangiophyte (yes/no/uncertain), crown-tracheophyte member (yes/no/uncertain), basis and
   cited source. Checks: ids and names match the input set exactly; 12 rows cite no source and are
   low confidence; nine names are excluded as implausible for the window (for example *Protophyllum*, a
@@ -19,14 +19,14 @@ Horizon set v0 and every number here are provisional until that review.
   names on the oldest horizons (*Cooksonia*, *Eocooksonia*, *Eorhynia*, *Caia*, *Hostinella*,
   *Jugumella*, *Zosterophyllum*, *Aberlemnia*, *Salopella*, *Yarravia*): all agree with their cited
   sources. *Jugumella* is left as an uncertain crown member, which is conservative.
-- **Horizons** (`data/macro/horizons_v0.csv`, `models/f3/loop3/macro.py build`). 191 PBDB collections
+- **Horizons** (`studies/f3/data/macro/horizons_v0.csv`, `studies/f3/models/loop3/macro.py build`). 191 PBDB collections
   hold accepted body fossils. 92 dated more loosely than 20 Myr are dropped, mostly Early Devonian.
-  21 are replaced by the curated tail (`data/occurrences/`), because the tail already adjudicated that
+  21 are replaced by the curated tail (`studies/f3/data/occurrences/`), because the tail already adjudicated that
   material. A replaced collection is either one the tail cites by number or one sharing country,
   overlapping age and a genus with a tail observation. The tail's readings then govern; for example,
   the Yea *Baragwanathia* beds are Gorstian–Emsian under the main reading, not PBDB's Gorstian.
 - **Estimators** (`macro.py estimate`). Classical (Marshall 1990) to four cut-offs; and the Loop 1
-  ramp likelihood (`models/f3/ramp.py`) with three abundance histories: constant, logistic (capacity
+  ramp likelihood (`studies/f3/models/ramp.py`) with three abundance histories: constant, logistic (capacity
   profiled) and expected birth–death. The effort proxy is PBDB all-taxa land and marginal
   collections per stage. Each of 200 (classical) or 40 (ramp) draws of horizon ages within their
   ranges gives one older limit; the table reports their median.
@@ -43,8 +43,8 @@ The uniform range spans the four cut-offs (Pridoli to Emsian); window choice mov
 1 Myr here. Birth–death fits converge on zero net growth and repeat the constant result. Under the
 inclusive reading Zbrza (Hirnantian) becomes the oldest polysporangiophyte, and the limits move to
 445.7–446.9 (uniform), 446.5 (constant) and 475.5 (logistic). The crown-member limits move by
-about 1 Myr. Draft figure: `models/f3/loop3/out/pilot_figure.png`; full table:
-`models/f3/loop3/out/pilot_intervals.csv`.
+about 1 Myr. Draft figure: `studies/f3/models/loop3/out/pilot_figure.png`; full table:
+`studies/f3/models/loop3/out/pilot_intervals.csv`.
 
 ## What it suggests (provisional)
 
@@ -73,7 +73,7 @@ about 1 Myr. Draft figure: `models/f3/loop3/out/pilot_figure.png`; full table:
 2. **Effort proxy.** Is a non-plant proxy, such as non-marine collections without plants, available
    from the held PBDB snapshot?
 3. **Coverage.** Simulated coverage of each estimator at these record counts and this effort history
-   (`models/f3/recovery.py`), so each limit carries its own measured reliability.
+   (`studies/f3/models/recovery.py`), so each limit carries its own measured reliability.
 4. **Anomaly.** The logistic limit for polysporangiophytes is older than for all embryophyte bodies,
    though the second set contains the first. Is it a profile artefact or genuine shape sensitivity?
 5. **Geography.** Leave-one-region-out. The Silurian horizons are concentrated in Avalonia, Baltica,

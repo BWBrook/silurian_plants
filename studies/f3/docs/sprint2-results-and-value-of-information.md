@@ -41,7 +41,7 @@ create an older empty interval.
 ## M2: preserve the result and its qualification limits
 
 The table below is read directly from the primary LY-MZ-CU rows in
-`models/f3/out/m2_results.csv`, with minimum reference support 5, chart-code
+`studies/f3/models/out/m2_results.csv`, with minimum reference support 5, chart-code
 material interpretation, full-stage age allocation and cluster shape k = 2.
 Those rows have 51 marked reference cuttings among 59 and 28 older cuttings.
 Codex's sprint-1 counter-review regenerates the empirical outputs and narrows
@@ -189,11 +189,11 @@ core label is rejected by the new extraction guard. The Cambrian/Argentina
 extractor and M3 database census reproduce their tables; Palynodata's eight
 derivatives match the full-release reconstruction. The seven newly checked
 publication identities match Crossref DOI, title and first author. Final
-file hashes are bound by `data/units/sprint2/receipt.json`. The required full DOI
+file hashes are bound by `studies/f3/data/units/sprint2/receipt.json`. The required full DOI
 scan checked 736 distinct strings and returned the same 26 pre-existing flags
 in four unchanged request/action/outreach files (captured Markdown/URL suffixes
 and citation-context checks). No flag concerns a changed sprint-2 source; the
-log is retained as `data/units/sprint2/doi-scan.log`.
+log is retained as `studies/f3/data/units/sprint2/doi-scan.log`.
 
 ## Reconciliation handoff
 

@@ -76,14 +76,14 @@ frame or clustering assumptions.
 The script carries PEP 723 dependency metadata, so its declared run is:
 
 ```bash
-uv run models/f3/loop2/replication/qsim_share.py
+uv run studies/f3/models/loop2/replication/qsim_share.py
 ```
 
 Run the focused tests with:
 
 ```bash
 uv run --with numpy --with scipy --with pytest \
-  python -m pytest models/f3/loop2/replication/test_qsim_share.py -q
+  python -m pytest studies/f3/models/loop2/replication/test_qsim_share.py -q
 ```
 
 Outputs are written to `out/`:

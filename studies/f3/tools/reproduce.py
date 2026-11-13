@@ -16,8 +16,8 @@ import sys
 import tempfile
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parents[1]
-LOOP = Path("models/f3/loop3")
+ROOT = Path(__file__).resolve().parents[3]
+LOOP = Path("studies/f3/models/loop3")
 BASE = ["reviewed_bounds.csv", "age_sensitivity.csv", "classical_comparison.csv",
         "primary_unit_membership.csv", "shape_diagnostics.csv", "delay_sensitivity.csv"]
 FLOAT_TOLERANCE = 1e-9
@@ -110,7 +110,7 @@ def source_checks():
         raise RuntimeError("Abuhmida thesis byte count differs from library/closed.tsv")
     if actual_hash != expected_hash:
         raise RuntimeError("Abuhmida thesis source hash differs from library/closed.tsv")
-    execute([sys.executable, "tools/loop2_observations.py", "check"], ROOT)
+    execute([sys.executable, "studies/f3/tools/loop2_observations.py", "check"], ROOT)
     print(json.dumps({"scope": "held thesis observation check", "status": "PASS",
                       "source": str(relative), "bytes": actual_bytes,
                       "sha256": actual_hash, "public_route": row[4],
@@ -141,7 +141,7 @@ def reproduce(mode):
             execute([sys.executable, str(LOOP / "build_reviewed.py")], clone)
             for filename in ("horizons_reviewed.csv", "effort_reviewed.csv", "name_classifications.csv",
                              "material_links.csv", "accepted_occurrence_links.csv", "older_records_screen.csv"):
-                compared.append(Path("data/macro") / filename)
+                compared.append(Path("studies/f3/data/macro") / filename)
         for script in ("analysis.py", "simulation.py", "suppression_sensitivity.py"):
             execute([sys.executable, str(LOOP / script)], clone)
         compared += [LOOP / "out" / filename for filename in BASE + ["simulation_results.csv", "suppression_sensitivity.csv"]]
@@ -163,7 +163,7 @@ def reproduce(mode):
                "source_pdf_checks": "not run; separate check-sources target", "frozen_qualification": "not regenerated",
                "timescale_rebuild": "PASS" if mode == "source" else "SKIPPED: requires archived raw PBDB input; use source target",
                "scope": "byte identity for selected outputs except the declared optimiser CSV, where schema, row order, identity fields and non-numeric values are exact and numeric fields use absolute tolerance 1e-9; not scientific validation"}
-    out = ROOT / "docs/audits" / f"{run_utc[:10]}-reproduction-{mode}.json"
+    out = ROOT / "studies/f3/docs/audits" / f"{run_utc[:10]}-reproduction-{mode}.json"
     receipt["run_utc"] = run_utc
     out.write_text(json.dumps(receipt, indent=2) + "\n")
     print(json.dumps({"mode": mode, "status": "PASS", "compared_files": len(compared)}))

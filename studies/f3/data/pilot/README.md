@@ -1,6 +1,6 @@
 # Trait-pilot evidence
 
-Evidence tables for the trait pilot (`docs/pilot-traits.md`).
+Evidence tables for the trait pilot (`studies/f3/docs/pilot-traits.md`).
 
 ## `hooper2026-asr/`
 
@@ -24,7 +24,7 @@ Specimen-level observations of the four pilot characters (C1 trilete production,
 production, C3 branched sporophyte with several sporangia, C4 demonstrable tracheids) from 30
 held primary sources (524 rows). Each row is one source, taxon or specimen, and character, with:
 - state: present, absent, unknown or disputed;
-- evidence level: direct, composite or transfer (`docs/pilot-traits.md`);
+- evidence level: direct, composite or transfer (`studies/f3/docs/pilot-traits.md`);
 - the source's locality, horizon and age as stated, and the page;
 - the source's own caveats;
 - an adjudication note where Claude checked the row.
@@ -38,7 +38,7 @@ held primary sources (524 rows). Each row is one source, taxon or specimen, and 
 - Claude added six rows from his own readings: Edwards and Davies 1976, and the Irish Homerian
   material in Edwards and Feehan 1980 and Edwards et al. 1983.
 - Claude adjudicated the rows the pilot turns on.
-- Codex reviewed the first round (`docs/audits/2026-10-30-frame-and-pilot-review.md`); its
+- Codex reviewed the first round (`studies/f3/docs/audits/2026-10-30-frame-and-pilot-review.md`); its
   corrections are applied. The *Velatitetras* producer's C2 is now `disputed`, and the two Edwards
   and Davies rows have archived quotes.
 - The quotes are copyrighted text, so they stay in the git-ignored

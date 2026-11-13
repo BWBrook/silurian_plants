@@ -129,7 +129,7 @@ class BackupIntegrityTests(unittest.TestCase):
         os.utime(path, ns=(original.st_atime_ns, original.st_mtime_ns))
 
     def renv_package(self, package="DEoptim", version="2.2-8", installed=True):
-        project = self.source / "models/pilot"
+        project = self.source / "studies/f3/models/pilot"
         library = project / "renv/library/macos/R-4.6/arm64"
         library.mkdir(parents=True, exist_ok=True)
         lock = project / "renv.lock"
@@ -167,7 +167,7 @@ class BackupIntegrityTests(unittest.TestCase):
                 restored = self.root / ("restore-sample" if sample else "restore-full")
                 drill = backup.restore(second, restored, sample=sample)
                 self.assertEqual(drill["symlinks"], 2)
-                self.assertTrue((restored / "models/pilot/renv.lock").is_file())
+                self.assertTrue((restored / "studies/f3/models/pilot/renv.lock").is_file())
                 for source_link in (link, dangling):
                     self.assertEqual(os.readlink(restored / source_link.relative_to(self.source)),
                                      os.readlink(source_link))
@@ -278,7 +278,7 @@ class BackupIntegrityTests(unittest.TestCase):
                     backup.inventory(self.source)
         link.unlink()
         link.symlink_to(target)
-        (self.source / "models/pilot/renv.lock").unlink()
+        (self.source / "studies/f3/models/pilot/renv.lock").unlink()
         with self.assertRaisesRegex(RuntimeError, "regular project lockfile"):
             backup.inventory(self.source)
 
@@ -324,7 +324,7 @@ class BackupIntegrityTests(unittest.TestCase):
 
     def test_lockfile_hash_is_checked_when_present(self):
         self.renv_package()
-        lock = self.source / "models/pilot/renv.lock"
+        lock = self.source / "studies/f3/models/pilot/renv.lock"
         contents = json.loads(lock.read_text())
         contents["Packages"]["DEoptim"]["Hash"] = "b" * 32
         backup.write_json(lock, contents)

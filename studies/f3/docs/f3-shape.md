@@ -1,15 +1,15 @@
 # The shape of F3 (v3)
 
-**Status: adopted, v3, 2026-10-28** (Barry, chat: "Yes, adopt v3"). Drafted by Claude Opus 5.5; Codex agreed the scientific direction (Correspondence `silurian-plants`, discussion 99, message 2484). Codex has since agreed H0's reference ceiling and unconditional coverage as the acceptance target (message 2496). Its implementation review (2026-10-29) led to the repairs under "Repairs after Codex's implementation review", which Codex then checked and accepted (R1). Its second review led to the changes under "Second review", which govern the estimator and await Codex's check. If Codex objects, the disagreement goes back to Barry stated both ways. This document governs F3's statistical contribution (`docs/plan-f3.md`, third amendment). Nothing here has yet been applied to real data.
+**Status: adopted, v3, 2026-10-28** (Barry, chat: "Yes, adopt v3"). Drafted by Claude Opus 5.5; Codex agreed the scientific direction (Correspondence `silurian-plants`, discussion 99, message 2484). Codex has since agreed H0's reference ceiling and unconditional coverage as the acceptance target (message 2496). Its implementation review (2026-10-29) led to the repairs under "Repairs after Codex's implementation review", which Codex then checked and accepted (R1). Its second review led to the changes under "Second review", which govern the estimator and await Codex's check. If Codex objects, the disagreement goes back to Barry stated both ways. This document governs F3's statistical contribution (`studies/f3/docs/plan-f3.md`, third amendment). Nothing here has yet been applied to real data.
 
 **Revision history.**
 - **v1** (`f01d4bd`) followed Barry's adoption of the second amendment (chat, 2026-10-28: "Yes, agreed, adopt it. Then let's re-assess the full shape of F3 given this constraint").
-- **v2** (`eebb5e9`) incorporated the first Codex review (`docs/audits/2026-10-28-f3-reshape-codex-review.md`, F3-R1–R6).
-- **v3** incorporates the second (`docs/audits/2026-10-28-f3-reshape-v2-codex-review.md`, V2-R1–R5, and the draft unit interface in message 2483), with Claude's reply in discussion 99.
+- **v2** (`eebb5e9`) incorporated the first Codex review (`studies/f3/docs/audits/2026-10-28-f3-reshape-codex-review.md`, F3-R1–R6).
+- **v3** incorporates the second (`studies/f3/docs/audits/2026-10-28-f3-reshape-v2-codex-review.md`, V2-R1–R5, and the draft unit interface in message 2483), with Claude's reply in discussion 99.
 
 ## What the recovery study established, and what it did not
 
-The pilot (`models/f3/README.md`, step 3; `models/f3/out/recovery_grid.csv`) leaves four facts.
+The pilot (`studies/f3/models/README.md`, step 3; `studies/f3/models/out/recovery_grid.csv`) leaves four facts.
 
 1. **The older side of an origination interval is the usable part, and it is broad.** For the capacity-profiled logistic fit at mid preservation, Darriwilian–Sandbian window:
    - **coverage** 0.93–0.98 under logistic growth, 0.88 and 0.56 under the two birth–death settings;
@@ -99,7 +99,7 @@ A further statement that the record *supports a maximum* is made only beside an 
 
   Converting them to a binary reported-encounter outcome follows a named reporting rule.
 - **Age uncertainty is kept separate from genuinely different sampled horizons.**
-- **The first-appearance rule, reference window and eligible older units are not attributes of the evidence.** They belong to a named analysis specification (Claude, `models/f3/`).
+- **The first-appearance rule, reference window and eligible older units are not attributes of the evidence.** They belong to a named analysis specification (Claude, `studies/f3/models/`).
 
 **Eligibility.**
 - **Scope comes from stated aims, methods and reporting coverage**, never from whether the target was found.
@@ -148,12 +148,12 @@ The one-stage rule alone passes a perfectly calibrated cell only 83% of the time
 
 ## Refinements from the estimator build (2026-10-29, Claude)
 
-The estimator, simulator and smoke-scale harness are in `models/f3/` (`envelope.py`, `units_sim.py`, `validate.py`). They were built by a Claude Sonnet 5.5 subagent to the construction above and reviewed by Claude Opus 5.5. The as-built smoke run is preserved at `c7729ad`. It and the review changed six points. Codex's implementation review then overturned three of them: the exactness of the critical value (item 1), the shared alternative's cover for the logistic class (item 2), and the equal-duty H0 (item 6). The next section replaces them. Items 3–5 stand.
+The estimator, simulator and smoke-scale harness are in `studies/f3/models/` (`envelope.py`, `units_sim.py`, `validate.py`). They were built by a Claude Sonnet 5.5 subagent to the construction above and reviewed by Claude Opus 5.5. The as-built smoke run is preserved at `c7729ad`. It and the review changed six points. Codex's implementation review then overturned three of them: the exactness of the critical value (item 1), the shared alternative's cover for the logistic class (item 2), and the equal-duty H0 (item 6). The next section replaces them. Items 3–5 stand.
 
 1. **Critical value.** Both *f\** and the origin sets are one-sided upper limits on the older units' exposure, and F3's older units mostly have no detections. In that regime the statistic is −2 log P0, so χ²₁ at 3.84 rejects whenever P0 < 0.147. A one-sided level-0.05 test needs P0 < 0.05, a critical value of 5.99.
    - **As-built smoke run (χ²₁):** *f\** coverage over non-trivial replicates was 0.87–0.95 in the cells below the ceiling.
    - **Count-matched value:** 0.94–0.99.
-   - **Smoke re-run with all the refinements:** coverage over all replicates is 0.93–0.99, against 0.91–0.95 under χ²₁ (`models/f3/README.md`, "Smoke results").
+   - **Smoke re-run with all the refinements:** coverage over all replicates is 0.93–0.99, against 0.91–0.95 under χ²₁ (`studies/f3/models/README.md`, "Smoke results").
    - **The rule now:** the critical value reproduces the exact one-sided Poisson (Garwood) limit for the number *n* of older detections in (τ, *T*]. It is 5.99 at *n* = 0 and falls towards the one-sided χ² value of 2.71.
 2. **One alternative for the bounded classes.** H0c, H0, logistic and H1 are tested against the best constant history on [0, ceiling]. That history belongs to each of those classes, so the test stays conservative where the H0 bound is not attained. H0m's members are explicit, and it uses its own exact supremum. With no older detection, nothing changes.
 3. **H1 is a ceiling class.** The convex-order bound holds for every path up to the ceiling, so a pulse-duration limit adds nothing to it. H1 is now "any path up to *C* times the reference".
@@ -167,7 +167,7 @@ The estimator, simulator and smoke-scale harness are in `models/f3/` (`envelope.
 
 ## Repairs after Codex's implementation review (2026-10-29; Claude, awaiting Codex's check)
 
-Codex reviewed the estimator at `b2c6443` (`docs/audits/2026-10-29-f3-implementation-review.md`, I1–I4). Claude Opus 5.5 reproduced its counterexamples and its sequential calculation, and accepts its findings. The repairs restore the classes this document declares, and govern the estimator from this date.
+Codex reviewed the estimator at `b2c6443` (`studies/f3/docs/audits/2026-10-29-f3-implementation-review.md`, I1–I4). Claude Opus 5.5 reproduced its counterexamples and its sequential calculation, and accepts its findings. The repairs restore the classes this document declares, and govern the estimator from this date.
 
 1. **Fixed stage boundaries (I4).** The printed "±" values are not standard deviations (primer §1), so independent normal draws, sorted, are not a geological age model. The primary analysis fixes the ICS v2024/12 bases. Boundary uncertainty enters as two coherent scenarios: every base moved by its printed value towards older, or towards younger, ages, with blank values held at the chart age. Joint posterior draws, where they exist, would replace both. Latent ages within a unit's stage range are still integrated exactly.
 
@@ -204,13 +204,13 @@ Codex reviewed the estimator at `b2c6443` (`docs/audits/2026-10-29-f3-implementa
    - **Off-grid H0m members:** an off-grid step, a linear rise and a logistic rise.
    - **Diagnostics:** eligibility misassignment, lower reporting in older units, regional confinement, a wrong cluster shape, and boundaries that differ from the chart.
 
-   **The development grid has run** (2026-10-29, 21 cells × 1,000 replicates; `models/f3/README.md`). Every correctly specified cell would pass stage 1 at δ = 0, with coverage 0.946–0.995. The diagnostics stay at or above 0.945 against the effective target. Read against the nominal path, regional confinement falls to 0.907–0.936, so the biological translation (§2) must state that *f\** bounds reported, range-averaged intensity.
+   **The development grid has run** (2026-10-29, 21 cells × 1,000 replicates; `studies/f3/models/README.md`). Every correctly specified cell would pass stage 1 at δ = 0, with coverage 0.946–0.995. The diagnostics stay at or above 0.945 against the effective target. Read against the nominal path, regional confinement falls to 0.907–0.936, so the biological translation (§2) must state that *f\** bounds reported, range-averaged intensity.
 
 7. **Reporting.** Unconditional coverage is the acceptance quantity, and Codex agrees. Coverage over the truth-defined subset, where the true origin is older than τ̂, remains a diagnostic of non-uniformity. Any observable reporting rule, such as finite against unbounded or a minimum older exposure, is declared before calibration and calibrated with the procedure.
 
 ## Second review: target, numerical status and the calibration contract (2026-10-29; Claude; checked by Codex)
 
-Codex checked the repairs (`docs/audits/2026-10-29-f3-repairs-and-frame-review.md`, R1–R4; Correspondence 2541). It accepted the chord and Jensen construction within its model, the fixed boundaries and their scenarios, the withdrawal of logistic as a class and stage 2 at 1,886. It asked for three changes before any binding calibration. Claude Opus 5.5 accepts all three and has made them in `models/f3/`.
+Codex checked the repairs (`studies/f3/docs/audits/2026-10-29-f3-repairs-and-frame-review.md`, R1–R4; Correspondence 2541). It accepted the chord and Jensen construction within its model, the fixed boundaries and their scenarios, the withdrawal of logistic as a class and stage 2 at 1,886. It asked for three changes before any binding calibration. Claude Opus 5.5 accepts all three and has made them in `studies/f3/models/`.
 
 1. **The constraint targets the true-rate quantity (R2).** The weights *c_p* were fixed at the rates fitted to the reference window alone, while validation scored against the generating rates. In Codex's A12 example the two weightings give 0.212 and 0.173. The constraint ā ≥ *f* now uses *c*(*r*) at the rates being profiled, so the supremum is over the target as defined in §1, not over a plug-in. *c* depends on *r* only through the class mix of the older exposure: with one class carrying the exposure, or one piece, it is fixed. Otherwise the constraint is bilinear in (*r*, *x*). A differential-evolution search agrees with the optimiser on a two-class design to 2 × 10⁻³ in log-likelihood (`test_envelope.py`).
 
@@ -234,9 +234,9 @@ Codex checked the repairs (`docs/audits/2026-10-29-f3-repairs-and-frame-review.m
    - **What the shift guarantees.** δ tunes the procedure on 1,000 calibration replicates. At 0.95 that empirical quantile reaches the population's 95th percentile with probability of only about 0.46; at the agreed 0.955 about 0.74 (Codex). A maximum over a finite grid is not least-favourable over every nuisance value. The certificate is the independent acceptance run against the 0.93 floor. The claim made is acceptance at that floor, not population coverage of 0.95.
    - **Implementation.** `validate.py` runs the phases `dev`, `calibrate` and `accept`; acceptance stage 2 completes a verified stage-1 verdict file (third review).
 
-5. **Shared ages within a section (R1).** The likelihood treats unit ages as independent given their ranges, and the envelope argument is proved for that case. Samples from one section or borehole are ordered by depth, so their ages are not independent. Three diagnostic cells test it (`models/f3/README.md`): in D7 and D8 every unit of a cluster takes the same relative position in its own range, so a whole section is early or late together, with mean cluster size 3 and 10; D9 is D8's independent-age control. Coverage holds: shared ages cost nothing measurable at size 3 and about 0.01 at size 10 (0.969 against 0.979 under H0c), and stay at or above 0.969 in every class. The limitation is therefore declared rather than the likelihood extended. Codex agreed, with a condition (Correspondence 2557): D7–D9 test one construction, not every geological dependence, and the 0.01 is neither a universal bound nor evidence that dependence is negligible. Before application, the binding grid freezes the real frame's cluster sizes and plausible coeval, depth-ordered and shared-boundary scenarios. If the intended claim does not survive them, the claim is narrowed or the likelihood extended; a failed case is not relabelled as a diagnostic while an unconditional claim is kept.
+5. **Shared ages within a section (R1).** The likelihood treats unit ages as independent given their ranges, and the envelope argument is proved for that case. Samples from one section or borehole are ordered by depth, so their ages are not independent. Three diagnostic cells test it (`studies/f3/models/README.md`): in D7 and D8 every unit of a cluster takes the same relative position in its own range, so a whole section is early or late together, with mean cluster size 3 and 10; D9 is D8's independent-age control. Coverage holds: shared ages cost nothing measurable at size 3 and about 0.01 at size 10 (0.969 against 0.979 under H0c), and stay at or above 0.969 in every class. The limitation is therefore declared rather than the likelihood extended. Codex agreed, with a condition (Correspondence 2557): D7–D9 test one construction, not every geological dependence, and the 0.01 is neither a universal bound nor evidence that dependence is negligible. Before application, the binding grid freezes the real frame's cluster sizes and plausible coeval, depth-ordered and shared-boundary scenarios. If the intended claim does not survive them, the claim is narrowed or the likelihood extended; a failed case is not relabelled as a diagnostic while an unconditional claim is kept.
 
-6. **Dress rehearsal on the synthetic design.** Calibration, receipt and stage-1 acceptance were run on the development design (`models/f3/README.md`, "Second-review rehearsal"); stage 2 was not needed and was not yet executable. It binds nothing; the binding run waits for the real frame.
+6. **Dress rehearsal on the synthetic design.** Calibration, receipt and stage-1 acceptance were run on the development design (`studies/f3/models/README.md`, "Second-review rehearsal"); stage 2 was not needed and was not yet executable. It binds nothing; the binding run waits for the real frame.
    - **Calibration** gave δ = 0: all 117 acceptance quantities reached 0.95 unshifted (lowest A15 under H0c, 952 of 1,000).
    - **Independent acceptance** at that δ passed all 117 at stage 1 (lowest A15 under H0c, 946; the pass line is 944).
    - **Numerics.** One fit failed in 63,000 replicates, and it counted as a miss. Every calibration miss was re-solved from about 65 further starts, and none became a cover, so the misses are sampling, not missed optima.
@@ -245,7 +245,7 @@ Codex checked the repairs (`docs/audits/2026-10-29-f3-repairs-and-frame-review.m
 
 ## Third review: the executable contract (2026-10-29; Codex found, Claude repaired)
 
-Codex accepted R2 and the core R3 repairs, reproduced all 117 rehearsal quantities from the stored replicates, and found four places where the code fell short of the contract above (Correspondence 2557; `docs/audits/2026-10-29-f3-response-and-ghelli-frame.md`). Claude Opus 5.5 repaired all four in `models/f3/validate.py` (`models/f3/README.md`, "Third-review repairs"):
+Codex accepted R2 and the core R3 repairs, reproduced all 117 rehearsal quantities from the stored replicates, and found four places where the code fell short of the contract above (Correspondence 2557; `studies/f3/docs/audits/2026-10-29-f3-response-and-ghelli-frame.md`). Claude Opus 5.5 repaired all four in `studies/f3/models/validate.py` (`studies/f3/models/README.md`, "Third-review repairs"):
 
 1. **Stage 2 runs.** It refuses a stage-1 verdict file that is not complete, or was made on another receipt, code or seed; reruns only the cells with a borderline quantity on replicates 1,000–1,999; pools each borderline quantity's 2,000 and applies 1,886. The grid is accepted when every acceptance quantity passes.
 2. **The receipt's scope is checked**, as in item 4 above.
@@ -256,12 +256,12 @@ Re-summarised under the new rules, the stored calibration, acceptance and paired
 
 ## Where the evidence stands (2026-10-28, before any estimator)
 
-**31 October sprint-2 source-roster extension:** `docs/sprint2-source-roster.md`
+**31 October sprint-2 source-roster extension:** `studies/f3/docs/sprint2-source-roster.md`
 (`d17d033`) declares a bounded assessment of Tennessee, Shandong, Argentina,
 Hanadir, Qusaiba, Paraguay and Samphire, plus a bounded M3 denominator search.
 These source groups supplement the seven legacy candidate-frame records; they
 are not newly admitted numerical frames. All M1 groups/readings and all M3
-source decisions are reported in `data/units/sprint2/`. No M1/M3 design passed
+source decisions are reported in `studies/f3/data/units/sprint2/`. No M1/M3 design passed
 source admission, so no new numerical screen or qualification was attempted.
 Balme's complete report is now read; only one of its six samples is Ordovician.
 The below historical expectations and document counts are not empirical results.
@@ -322,44 +322,44 @@ Whether an absence argument is defensible and how much a maximum moves a clock p
 Agreed in discussion 99 (messages 2474, 2477 and 2484).
 
 1. **Codex:**
-   - the unit interface (`data/units/`) and a source-audited M2 pilot that deliberately includes detections, defensible negatives, unknowns, duplicates and broad-age cases;
+   - the unit interface (`studies/f3/data/units/`) and a source-audited M2 pilot that deliberately includes detections, defensible negatives, unknowns, duplicates and broad-age cases;
    - the Q9 provenance check.
 2. **Claude:**
    - the analysis specification and estimator against the agreed interface;
    - the extended origin domain;
-   - the validation study (`models/f3/`);
+   - the validation study (`studies/f3/models/`);
    - occurrence adjudication, including *C. barrandei*;
    - named reading definitions for the outcome table.
 3. **Both:** settle the validation grid and acceptance rule before running, and review each other's outputs.
 4. **Apply:** M2, then M1; M3 only as far as its sampling supports.
-5. **Close Loop 1:** value of information and the loop-close entries, as in `docs/plan-f3.md`.
+5. **Close Loop 1:** value of information and the loop-close entries, as in `studies/f3/docs/plan-f3.md`.
 
 ## Open between Claude and Codex
 
-Codex agreed H0, the reference ceiling and unconditional coverage (message 2496), accepted the repairs (R1, message 2541), accepted R2 and the core R3 repairs (message 2557), agreed the 0.955 calibration target (message 2557) and integrated the productivity condition into the reporting rule (`data/units/reporting-rule.md`, message 2558). Codex accepted the third-review repairs and the replicate re-scoring (messages 2628, 2629); its strict-parsing correction is made (`models/f3/README.md`, "Sixth review").
+Codex agreed H0, the reference ceiling and unconditional coverage (message 2496), accepted the repairs (R1, message 2541), accepted R2 and the core R3 repairs (message 2557), agreed the 0.955 calibration target (message 2557) and integrated the productivity condition into the reporting rule (`studies/f3/data/units/reporting-rule.md`, message 2558). Codex accepted the third-review repairs and the replicate re-scoring (messages 2628, 2629); its strict-parsing correction is made (`studies/f3/models/README.md`, "Sixth review").
 
-**Frame screen and frame selection (Claude, 2026-10-31; corrected the same day after Codex's review, `docs/audits/2026-10-31-screen-and-persistence-review.md`).**
-- **What the screen is.** `models/f3/screen.py` is resource triage under one declared design:
+**Frame screen and frame selection (Claude, 2026-10-31; corrected the same day after Codex's review, `studies/f3/docs/audits/2026-10-31-screen-and-persistence-review.md`).**
+- **What the screen is.** `studies/f3/models/screen.py` is resource triage under one declared design:
   - homogeneous, independent units;
   - one comparable class;
   - fixed reference membership.
 
-  In that design its statistic equals the engine's at each class ceiling and is never weaker below it (`models/f3/test_screen.py`). Every result states the frame, reading, reference conversion, design, class ceiling and target f. It is not a theorem for clustered, multi-class or heterogeneous-reference designs, which can exceed it; those are screened with the engine under their declared structure.
+  In that design its statistic equals the engine's at each class ceiling and is never weaker below it (`studies/f3/models/test_screen.py`). Every result states the frame, reading, reference conversion, design, class ceiling and target f. It is not a theorem for clustered, multi-class or heterogeneous-reference designs, which can exceed it; those are screened with the engine under their declared structure.
 - **Borenshult.** Under main there is no in-frame E1 reference, so the screen does not apply. Under inclusive it cannot exclude reference-level intensity (f = 1) under either reference conversion: profiled 1.46 for the complete reported-category reference and 2.86 for the optimistic explicit-only one, against 5.99. Under the optimistic conversion H1 (ceiling 3) is not ceiling-limited: the constant-path threshold is 2.36 and the full H1 engine bound is 2.59. Neither says anything about absence. The core is deprioritised as a standalone frame. Designs whose dependence or class structure has not been declared are not ruled out.
 - **Frame selection (decision, Claude).** Choosing frames by their screen result selects on outcomes, and fixed readings do not remove that. Binding claims are therefore **conditional on passing**:
   - The binding qualification of a selected frame applies the same screen rule (reading, conversion, design and target) in every replicate, and analyses only the replicates that pass.
-  - **Calibration and acceptance stay distinct** (corrected after Codex's second review, `docs/audits/2026-10-31-qualification-repair-review.md`). Nominal coverage is 0.95. The empirical calibration target is 0.955. The independently assessed floor is 0.93, under the adopted two-stage rule. All are computed among passing replicates. Each stage simulates until it has its count of **passing** replicates (N1 = N2 = 1,000), with a cap of 20 attempts per required pass, and it reports attempts and passes. A frame that hits the cap is reported as rarely passing, not qualified. Meeting the target in simulation is not a population guarantee.
+  - **Calibration and acceptance stay distinct** (corrected after Codex's second review, `studies/f3/docs/audits/2026-10-31-qualification-repair-review.md`). Nominal coverage is 0.95. The empirical calibration target is 0.955. The independently assessed floor is 0.93, under the adopted two-stage rule. All are computed among passing replicates. Each stage simulates until it has its count of **passing** replicates (N1 = N2 = 1,000), with a cap of 20 attempts per required pass, and it reports attempts and passes. A frame that hits the cap is reported as rarely passing, not qualified. Meeting the target in simulation is not a population guarantee.
   - **What the conditional claim covers.** Each bound covers at the target rate given that its own frame passed, under these conditions:
     - the frames come from a candidate list fixed before their outcomes are read for this purpose, and every passing frame is reported; or
     - the frames are taken in a fixed order, or each next frame is chosen before its own outcomes are inspected.
 
     It does **not** cover ranking frames that have already been inspected and passed, and reporting the most favourable. Codex's two-uniform example drops 0.955 to 0.9407 that way. If such a choice is ever wanted, the actual selection rule is qualified jointly. The claim is per bound, not simultaneous across frames.
-  - **The candidate list.** The seven frames in `data/units/frames.csv` (2026-10-31) are fixed as the list, with any design variants declared before screening. Their outcomes have already been read for inventory, so every one is reported.
+  - **The candidate list.** The seven frames in `studies/f3/data/units/frames.csv` (2026-10-31) are fixed as the list, with any design variants declared before screening. Their outcomes have already been read for inventory, so every one is reported.
   - Frames that share units are not independent: for example, Borenshult samples reused as older units beside another core's reference. Their joint selection is simulated together.
   - Every examined frame is reported with its screen result, passing or not.
 
   The simulation is built with the first binding qualification, since it needs that frame's design. The stage-1 and stage-2 synthetic validations remain unconditional, as specified.
-  - **Amendment (Claude, 2026-10-31, sprint 1; `models/f3/designs/m2.toml` amendment 1).** The screen is evaluated on the frame's potential: the design and its reference outcomes, with the outcomes of the declared older units set to 0. Computed on full outcomes, it could pass only when the oldest older stage was empty, because a detection there moves τ past every older unit. Conditioning coverage on that would remove the evidence the bound uses. The analysis still uses every outcome, and a replicate whose first appearance reaches t0 makes no claim and covers.
+  - **Amendment (Claude, 2026-10-31, sprint 1; `studies/f3/models/designs/m2.toml` amendment 1).** The screen is evaluated on the frame's potential: the design and its reference outcomes, with the outcomes of the declared older units set to 0. Computed on full outcomes, it could pass only when the oldest older stage was empty, because a detection there moves τ past every older unit. Conditioning coverage on that would remove the evidence the bound uses. The analysis still uses every outcome, and a replicate whose first appearance reaches t0 makes no claim and covers.
   - **Counter-review amendment (Codex, 2026-10-31).** Real-design qualification is
     marginal per declared quantity and design among records passing the potential
     screen; abstentions count as non-errors. It assesses the 0.93 floor on a finite
@@ -372,13 +372,13 @@ Codex agreed H0, the reference ceiling and unconditional coverage (message 2496)
     nonprimary variants remain unqualified sensitivities, and QB main/zero is an
     inadmissible coding diagnostic. Missing evidence and pre-screen numerical
     failures cannot silently become successful qualification. The current audit
-    is `docs/audits/2026-10-31-sprint1-codex-review.md`. Its added central MZ
+    is `studies/f3/docs/audits/2026-10-31-sprint1-codex-review.md`. Its added central MZ
     window cell illustrates the distinction: 20 misses per 1,000 passing
     records, but 20 per 60 non-abstentions. No selected-result 95% coverage
     claim is adopted from this qualification.
 
 Open, posted in discussion 99:
-- **the shared-age scenarios for the binding grid** (item 5): built on a frame that passes the screen, within its conditional qualification, with Borenshult's ordered depths, shared boundaries and common ash correlation (Codex, `data/units/borenshult_ages.csv`) as the template;
+- **the shared-age scenarios for the binding grid** (item 5): built on a frame that passes the screen, within its conditional qualification, with Borenshult's ordered depths, shared boundaries and common ash correlation (Codex, `studies/f3/data/units/borenshult_ages.csv`) as the template;
 - **the frame tranche** (Codex): a frame with in-frame E1 detections after the first appearance under main (Katian or later) and tens of eligible, productive older units, or a declared transport assumption between a reference core and older cores; a complete original sample log, or another source with documented complete sample and event reporting. Hanadir's 1996 chart gives 14 depths but does not certify a complete processed inventory; Pelmis (Ghavidel-Syooki 2017) gives 27 productive sample codes, with its 140-sample collection and the MG-130 discrepancy still to reconcile.
 
 Anything unresolved goes to Barry with both positions stated.

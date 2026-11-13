@@ -66,7 +66,7 @@ the disagreement. The original review-1 gate reversal is superseded by this disp
 - M1/M3 have source-specific verdicts, retained alternative readings and unsent requests for
   the observation fields that could change admission.
 - The complete private manuscript, four figures, 23-claim ledger, mapping table, seven-route
-  external ledger, reproduction README and exact candidate-file manifest are in `manuscript/`.
+  external ledger, reproduction README and exact candidate-file manifest are in `studies/f3/manuscript/`.
   HTML/PDF were regenerated and inspected; primary copyrighted PDFs remain excluded.
 
 Verification: 51 focused tests passed; the 164-row observation reconstruction passed; all 23

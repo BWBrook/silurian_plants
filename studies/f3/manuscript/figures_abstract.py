@@ -21,13 +21,13 @@ from matplotlib import font_manager, transforms
 from matplotlib.patches import Circle, Ellipse, FancyBboxPatch
 
 HERE = Path(__file__).resolve().parent
-ROOT = HERE.parent
+ROOT = HERE.parents[2]
 sys.path.insert(0, str(HERE))
 import figures as F  # noqa: E402
 
-FRONTIER = ROOT / "models/f3/loop3/out/frontier.csv"
-RESULTS = ROOT / "models/f3/out/m2_results.csv"
-DEPENDENCE = ROOT / "models/f3/loop3/out/stage2_murzuq/dependence_sensitivity.csv"
+FRONTIER = ROOT / "studies/f3/models/loop3/out/frontier.csv"
+RESULTS = ROOT / "studies/f3/models/out/m2_results.csv"
+DEPENDENCE = ROOT / "studies/f3/models/loop3/out/stage2_murzuq/dependence_sensitivity.csv"
 INPUTS = [FRONTIER, RESULTS, DEPENDENCE, Path(__file__)]
 HEADLINE = ("Older dates for living land plants fit the fossil record if early plants were found\n"
             "several times less often, or recognisable features evolved later.")

@@ -5,7 +5,7 @@
 """Paired comparison of two validation runs on the same seeds: the data must agree replicate by replicate,
 so differences in f* and coverage are the code's.
 
-    uv run models/f3/check_paired.py models/f3/out/validation_dev_reps.csv.gz models/f3/out/validation_dev2_reps.csv.gz
+    uv run studies/f3/models/check_paired.py studies/f3/models/out/validation_dev_reps.csv.gz studies/f3/models/out/validation_dev2_reps.csv.gz
 """
 
 import csv, gzip, math, statistics as st, sys, collections

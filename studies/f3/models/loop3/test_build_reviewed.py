@@ -6,10 +6,10 @@ import build_reviewed
 
 def inputs():
     root = build_reviewed.ROOT
-    observations = pd.read_csv(root / "data/occurrences/observations.csv")
-    assignments = pd.read_csv(root / "data/occurrences/reading_assignments.csv")
+    observations = pd.read_csv(root / "studies/f3/data/occurrences/observations.csv")
+    assignments = pd.read_csv(root / "studies/f3/data/occurrences/reading_assignments.csv")
     scale = pd.read_csv(root / "data/timescale.csv")
-    membership = pd.read_csv(root / "data/macro/body_membership.csv", keep_default_na=False)
+    membership = pd.read_csv(root / "studies/f3/data/macro/body_membership.csv", keep_default_na=False)
     return observations, assignments, scale, membership
 
 

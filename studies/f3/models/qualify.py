@@ -5,9 +5,9 @@
 
 """Conditional qualification of an M2 real design (designs/m2.toml, [qualification] and amendment 1).
 
-    uv run models/f3/qualify.py --design LY-H2-CU --rho 1 --phase calibrate --workers 8
-    uv run models/f3/qualify.py --design LY-H2-CU --rho 1 --phase accept --workers 8     # reads the calibration receipt
-    uv run models/f3/qualify.py --design LY-H2-CU --rho 1 --phase stage2 --workers 8     # borderline quantities only
+    uv run studies/f3/models/qualify.py --design LY-H2-CU --rho 1 --phase calibrate --workers 8
+    uv run studies/f3/models/qualify.py --design LY-H2-CU --rho 1 --phase accept --workers 8     # reads the calibration receipt
+    uv run studies/f3/models/qualify.py --design LY-H2-CU --rho 1 --phase stage2 --workers 8     # borderline quantities only
 
 The simulator keeps the design fixed: the same units, stage or numerical ranges, classes, clusters and
 transport multipliers as the data. Truth: the data's fitted reference rate (X3: its one-sided 95% lower
@@ -351,7 +351,7 @@ def resolve(cell: dict, ctx: "Context") -> dict:
 
 def bound_paths(design_id: str) -> dict[str, Path]:
     here = Path(__file__).resolve().parent
-    paths = {f"models/f3/{p}": here / p for p in
+    paths = {f"studies/f3/models/{p}": here / p for p in
              ("envelope.py", "designs.py", "m2.py", "qualify.py", "qualification_contract.py", "validate.py", "sim.py", "units_sim.py")}
     paths["active_declaration"] = dz.DESIGNS.resolve()
     paths["data/timescale.csv"] = ev.sim.TIMESCALE_CSV
@@ -362,7 +362,7 @@ def bound_paths(design_id: str) -> dict[str, Path]:
     else:
         raise qc.EvidenceError(f"no source-input contract for {design_id}")
     for name in source_tables + ("source_files.csv", "reporting-rule.md"):
-        paths[f"data/units/{name}"] = dz.UNITS / name
+        paths[f"studies/f3/data/units/{name}"] = dz.UNITS / name
     return paths
 
 

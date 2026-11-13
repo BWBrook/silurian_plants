@@ -93,7 +93,7 @@ its reading (`main`, `inclusive`).
 - **Unit:** a dated horizon (locality × bed); several taxa, specimens or papers from one horizon count
   once. Sensitivity: locality and region-stage cell as the unit, to expose clustered sampling.
 - **Ages:** stage ranges from `data/timescale.csv`; finer ages kept beside them with their source.
-- **Sources:** the curated tail (`data/occurrences/`) for the oldest records and their readings;
+- **Sources:** the curated tail (`studies/f3/data/occurrences/`) for the oldest records and their readings;
   vetted PBDB collections (`data/eprp/record/`) for the later sequence, whose density sets the rate;
   literature additions for regions PBDB under-covers. PBDB names are classified by a Codex job with
   cited sources and then audited (PBDB holds homonyms such as *Protophyllum*).
@@ -105,17 +105,17 @@ its reading (`main`, `inclusive`).
 
 | Label | Assumption | Implementation |
 |---|---|---|
-| A. Classical | horizons uniform over the range; window ends at a declared cut-off | Marshall (1990) / Strauss & Sadler (1989), `models/f3/estimators.py`; cut-offs Pridoli, Lochkovian, Pragian, Emsian |
-| B. Effort-weighted | occurrence rate ∝ effort proxy × constant abundance from origin | `models/f3/ramp.py`, birth–death family at net rate 0 |
+| A. Classical | horizons uniform over the range; window ends at a declared cut-off | Marshall (1990) / Strauss & Sadler (1989), `studies/f3/models/estimators.py`; cut-offs Pridoli, Lochkovian, Pragian, Emsian |
+| B. Effort-weighted | occurrence rate ∝ effort proxy × constant abundance from origin | `studies/f3/models/ramp.py`, birth–death family at net rate 0 |
 | C. Ramp | abundance rises after origin (logistic, capacity profiled; birth–death) | `ramp.py`, as in the recovery study |
 | D. Age uncertainty | as A–C, with horizon ages drawn within their ranges | Monte Carlo over stage allocation |
 
-Effort proxies: PBDB all-taxa land and marginal collections per stage (`data/occurrences/effort.csv`),
+Effort proxies: PBDB all-taxa land and marginal collections per stage (`studies/f3/data/occurrences/effort.csv`),
 with Macrostrat non-marine units as an alternative. Neither is independent of collecting history;
 both are stated as proxies.
 
 Each result reports the older limit, whether it is bounded, the simulated coverage of that estimator
-at this record count and effort history (from `models/f3/out/recovery_grid.csv` or a matched
+at this record count and effort history (from `studies/f3/models/out/recovery_grid.csv` or a matched
 re-run), and the clock ages it excludes or admits. A weak or unbounded result is reported as found.
 
 ### Figure for the paper
@@ -145,7 +145,7 @@ the QSIM calculation, source adjudications. The repository holds the audit trail
 
 | Step | Owner | Output |
 |---|---|---|
-| A. Plan, horizon dataset v0, pilot estimates | Claude (now) | this file; `data/macro/`; `models/f3/loop3/` |
+| A. Plan, horizon dataset v0, pilot estimates | Claude (now) | this file; `studies/f3/data/macro/`; `studies/f3/models/loop3/` |
 | Review A and sprint B | Codex | critique; independent re-derivation of a stratified sample of horizons; matched simulation coverage; age and unit sensitivity; final macrofossil figure |
 | Sprint C | Claude | reconstructed main text and supplement |
 | Review C | Codex | critique of the paper against the evidence |

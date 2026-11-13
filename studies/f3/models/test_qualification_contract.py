@@ -265,9 +265,9 @@ def test_active_declaration_sources_statistical_dependencies_and_class_scope_are
     monkeypatch.setattr(dz, "DESIGNS", active)
     _, binding, _ = qa.build_binding("QB-CO", 1.0)
     assert binding["files"]["active_declaration"] == qc.file_hash(active)
-    assert {"models/f3/validate.py", "models/f3/sim.py", "models/f3/units_sim.py", "data/timescale.csv",
-            "data/units/outcomes.csv", "data/units/qusaiba_inventory.csv", "data/units/borenshult_ages.csv",
-            "data/units/source_files.csv", "data/units/reporting-rule.md"} <= set(binding["files"])
+    assert {"studies/f3/models/validate.py", "studies/f3/models/sim.py", "studies/f3/models/units_sim.py", "data/timescale.csv",
+            "studies/f3/data/units/outcomes.csv", "studies/f3/data/units/qusaiba_inventory.csv", "studies/f3/data/units/borenshult_ages.csv",
+            "studies/f3/data/units/source_files.csv", "studies/f3/data/units/reporting-rule.md"} <= set(binding["files"])
     assert binding["generated_units"]["rows"] and binding["qualification_classes"] == ["H0m", "H0", "H1"]
     assert all("H0c" not in q for c in binding["grid"] for q in c["quantities"])
     b3 = next(c for c in binding["grid"] if c["name"] == "B3")

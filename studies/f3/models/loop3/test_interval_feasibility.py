@@ -20,7 +20,7 @@ def test_event_enumeration_has_known_unconstrained_infimum():
 
 
 def test_reproduces_reviewers_decisive_b2_witnesses():
-    records = pd.read_csv(ROOT / "data/macro/horizons_reviewed.csv")
+    records = pd.read_csv(ROOT / "studies/f3/data/macro/horizons_reviewed.csv")
     sets, _, _, _ = analysis_sets(records)
     histories = load_histories()
     expected = {
@@ -36,7 +36,7 @@ def test_reproduces_reviewers_decisive_b2_witnesses():
 
 
 def test_guaranteed_and_canonical_membership_are_explicit():
-    records = pd.read_csv(ROOT / "data/macro/horizons_reviewed.csv")
+    records = pd.read_csv(ROOT / "studies/f3/data/macro/horizons_reviewed.csv")
     sets, metadata, membership, source = analysis_sets(records)
     assert len(sets["B2_possible"]) == 50
     assert len(sets["B2_guaranteed"]) == 48

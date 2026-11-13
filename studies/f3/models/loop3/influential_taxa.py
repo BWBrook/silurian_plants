@@ -13,7 +13,7 @@ import pandas as pd
 from analysis import envelope, select_records
 from histories import CUTOFFS, load_histories
 
-ROOT = Path(__file__).resolve().parents[3]
+ROOT = Path(__file__).resolve().parents[4]
 HERE = Path(__file__).resolve().parent
 OUT = HERE / "out"
 UNITS = "locality_age"
@@ -40,7 +40,7 @@ def contains_member(value, members):
 
 
 def main():
-    inputs = [ROOT / "data/macro/horizons_reviewed.csv", ROOT / "data/macro/effort_reviewed.csv",
+    inputs = [ROOT / "studies/f3/data/macro/horizons_reviewed.csv", ROOT / "studies/f3/data/macro/effort_reviewed.csv",
               ROOT / "data/timescale.csv", HERE / "analysis.py", HERE / "endpoint.py",
               HERE / "histories.py", Path(__file__).resolve()]
     digest = lambda p: hashlib.sha256(p.read_bytes()).hexdigest()

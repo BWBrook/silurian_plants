@@ -47,10 +47,10 @@ def test_pbdb_support_moves_only_when_both_endpoints_map_exactly():
 def test_baseline_effort_is_exact_reconstruction_and_candidate_mapping_is_identity():
     scale = boundary_table()
     baseline = boundary_scenarios(scale)["baseline"]
-    raw = pd.read_csv(ROOT / "data/occurrences/raw/pbdb_collections_darriwilian_emsian_2026-10-28.csv", low_memory=False)
+    raw = pd.read_csv(ROOT / "studies/f3/data/occurrences/raw/pbdb_collections_darriwilian_emsian_2026-10-28.csv", low_memory=False)
     plant_ids = set(pd.read_csv(ROOT / "data/eprp/record/pbdb_plant_collections.csv", usecols=["collection_no"]).collection_no)
     reconstructed = effort_for_scenario(raw, plant_ids, scale, baseline)
-    stored = pd.read_csv(ROOT / "data/macro/effort_reviewed.csv")
+    stored = pd.read_csv(ROOT / "studies/f3/data/macro/effort_reviewed.csv")
     stored = stored[stored.region.eq("global")].sort_values("young_ma").reset_index(drop=True)
     for column in ["all_collection_equivalents", "plant_excluded_equivalents", "all_density_per_myr",
                    "plant_excluded_density_per_myr"]:

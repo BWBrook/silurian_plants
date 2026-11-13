@@ -1,14 +1,14 @@
 # E2 dispersal-unit rule (addendum to the reporting rule)
 
 Version 1, 1 November 2026. Drafted by Claude Opus 5.5 from Codex's replacement rule (Correspondence
-2760), which supersedes Claude's first proposal in `docs/loop1-close.md` (613a154). Status: adopted
+2760), which supersedes Claude's first proposal in `studies/f3/docs/loop1-close.md` (613a154). Status: adopted
 jointly on 1 November 2026, with Codex's clarification that indeterminate morphology needs affirmative
 evidence before detection. It applies the frozen reporting
 rule (`reporting-rule.md`) to event E2 and changes nothing in it. `reporting-rule.md` is
 hash-bound in the 28 F3 qualification receipts and stays untouched. Any future E2 adapter must name
 and consume this file and its version; no current outcome, code or receipt depends on it.
 
-E2 is "first cryptospores accepted as embryophytic" (`docs/plan-f3.md`). A morphological cryptospore
+E2 is "first cryptospores accepted as embryophytic" (`studies/f3/docs/plan-f3.md`). A morphological cryptospore
 label, from a source or from us, therefore does not by itself establish E2.
 
 ## Definition the rule rests on
@@ -68,7 +68,7 @@ definitions sought to remove; Edwards et al. 2014, p.52).
 ## Present effect
 
 None on recorded outcomes. Claude's audit of the 147 E2 outcome rows and the sprint-2 ledgers
-(1 November 2026, `docs/loop1-close.md`) found that every current E2 detection rests on a permanent
+(1 November 2026, `studies/f3/docs/loop1-close.md`) found that every current E2 detection rests on a permanent
 polyad or, at Paraguay AS1-2835, on the hilate *L. divellomedia*. That audit was a source and outcome
 check, not a machine application of this rule, and it does not validate the rule for future
 monad-only samples.

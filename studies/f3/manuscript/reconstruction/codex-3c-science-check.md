@@ -28,8 +28,8 @@ supports the broader statement. Newly read literature claims were not independen
 
 ## C53 / V108: confirmed against the actual evidence
 
-`manuscript/value-bindings.csv`, V108, selects exactly one row of
-`models/f3/loop3/out/suppression_sensitivity.csv` (CSV line 79):
+`studies/f3/manuscript/value-bindings.csv`, V108, selects exactly one row of
+`studies/f3/models/loop3/out/suppression_sensitivity.csv` (CSV line 79):
 
 | Field | Saved value |
 |---|---|
@@ -82,7 +82,7 @@ inference.
   0.0995125220; `well_formation/2.0/False/no exclusion`, 0.3930024633. C07's 0.1850–0.3646 is the
   older engine's **H0 exposure-weighted** five-well-deletion sensitivity, not this script's H0c range.
 
-Qualification sources are `models/f3/validate.py::{lower_limit,stage1,stage2}` and
+Qualification sources are `studies/f3/models/validate.py::{lower_limit,stage1,stage2}` and
 `qualification_contract.py::{protocol,assessment}`. Stage 1 requires the one-sided 95% exact lower
 limit **strictly above 0.93**, at least 944/1,000 screen-passing replicates. Borderline quantities get
 the preplanned second 1,000 passing replicates and need at least 1,886/2,000 pooled successes. Calibration

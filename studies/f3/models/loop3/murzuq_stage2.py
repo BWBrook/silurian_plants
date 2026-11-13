@@ -15,13 +15,13 @@ import numpy as np
 import pandas as pd
 from scipy import optimize, special
 
-ROOT = Path(__file__).resolve().parents[3]
+ROOT = Path(__file__).resolve().parents[4]
 OUT = Path(__file__).resolve().parent / "out" / "stage2_murzuq"
 CRITICAL = -2 * np.log(.05)
 
 
 def units():
-    u = pd.read_csv(ROOT / "models/f3/out/m2_units.csv")
+    u = pd.read_csv(ROOT / "studies/f3/models/out/m2_units.csv")
     u = u[(u.design == "LY-MZ-CU") &
           (u.variant == "allocation=stage;material_type=chart-code") &
           u.excluded.isna() & u.d.notna()].copy()
@@ -143,7 +143,7 @@ def main():
         r = fit(u[u.cluster != well]);r["excluded_well"] = well;rows.append(r)
     pd.DataFrame(rows).to_csv(OUT / "dependence_sensitivity.csv", index=False)
     panel(u)
-    paths = [ROOT / "models/f3/out/m2_units.csv", ROOT / "data/timescale.csv", Path(__file__)]
+    paths = [ROOT / "studies/f3/models/out/m2_units.csv", ROOT / "data/timescale.csv", Path(__file__)]
     digest = lambda p: hashlib.sha256(p.read_bytes()).hexdigest()
     receipt = {"inputs": {str(p.relative_to(ROOT)): digest(p) for p in paths},
                "outputs": {str(p.relative_to(ROOT)): digest(p) for p in OUT.glob("*") if p.name != "receipt.json"},

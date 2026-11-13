@@ -1,6 +1,6 @@
 """Checks of the F3 compatibility estimator (envelope.py), its simulator and the acceptance rule.
 
-    uv run --with pytest --with numpy --with scipy python -m pytest -q models/f3
+    uv run --with pytest --with numpy --with scipy python -m pytest -q studies/f3/models
 
 Ages are Ma, decreasing towards the present. Stage boundaries are fixed, so toy data sets have exact
 ranges and a closed form, an enumeration or an independent quadrature is the reference; coverage tests use
@@ -24,7 +24,7 @@ import validate as val
 AGE = ev.AgeModel.load()
 TS = AGE.timescale
 I = TS.index
-SPEC_TOML = sim.ROOT / "models" / "f3" / "specs" / "m2-draft.toml"
+SPEC_TOML = sim.ROOT / "studies" / "f3" / "models" / "specs" / "m2-draft.toml"
 
 
 def toy_units(rows):

@@ -5,7 +5,7 @@
 """Figures for the reconstructed manuscript and its supplement.
 
 Main text, in citation order: fig1_dispute, fig2_bound, fig3_requirements (figures_main.py); figS_murzuq is supplement figure S2.
-Graphical abstract, also the brief's figure: graphical_abstract (figures_abstract.py). Supplement: figS2_qsim, figS7_mapping, plus the reviewed Loop 2 and Loop 3 figures reused unchanged from models/.
+Graphical abstract, also the brief's figure: graphical_abstract (figures_abstract.py). Supplement: figS2_qsim, figS7_mapping, plus the reviewed Loop 2 and Loop 3 figures reused unchanged from studies/f3/models/.
 Every number drawn here is read from a frozen or reviewed output table, never retyped, except the
 published clock intervals and calibration maxima, which are taken from docs/primer.md §5.3.
 """
@@ -22,20 +22,20 @@ matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 import numpy as np
 
-ROOT = Path(__file__).resolve().parents[1]
+ROOT = Path(__file__).resolve().parents[3]
 OUT = Path(__file__).resolve().parent / "figures"
-sys.path.insert(0, str(ROOT / "models" / "f3" / "loop2"))
-sys.path.insert(0, str(ROOT / "models" / "f3"))
+sys.path.insert(0, str(ROOT / "studies" / "f3" / "models" / "loop2"))
+sys.path.insert(0, str(ROOT / "studies" / "f3" / "models"))
 import contamination  # noqa: E402
 
-QSIM = ROOT / "data/units/loop2/replication/qsim801_vecoli2017_table1.csv"
+QSIM = ROOT / "studies/f3/data/units/loop2/replication/qsim801_vecoli2017_table1.csv"
 TIMESCALE = ROOT / "data/timescale.csv"
 SPORES = ROOT / "data/spores/first_appearances.csv"
-MEMBERS = ROOT / "models/f3/loop3/out/primary_unit_membership.csv"
-BOUNDS = ROOT / "models/f3/loop3/out/reviewed_bounds.csv"
-SUPPRESS = ROOT / "models/f3/loop3/out/suppression_sensitivity.csv"
+MEMBERS = ROOT / "studies/f3/models/loop3/out/primary_unit_membership.csv"
+BOUNDS = ROOT / "studies/f3/models/loop3/out/reviewed_bounds.csv"
+SUPPRESS = ROOT / "studies/f3/models/loop3/out/suppression_sensitivity.csv"
 BENTONITE_MA = 454.41
-MAPPING = ROOT / "manuscript/mapping.csv"
+MAPPING = ROOT / "studies/f3/manuscript/mapping.csv"
 
 # Published crown-age intervals (Ma, older first) and calibration maxima; docs/primer.md §5.3.
 CLOCKS = {
@@ -163,7 +163,7 @@ def main():
     figures_abstract.draw(OUT / "graphical_abstract")
     figures_abstract.draw(OUT / "graphical_abstract_journal", headline=False)
     inputs = [QSIM, TIMESCALE, SPORES, MEMBERS, BOUNDS, SUPPRESS, MAPPING,
-              ROOT / "models/f3/loop2/contamination.py", Path(__file__), *figures_main.INPUTS,
+              ROOT / "studies/f3/models/loop2/contamination.py", Path(__file__), *figures_main.INPUTS,
               *figures_abstract.INPUTS]
     bound = contamination._input_hashes()
     bound.update({str(p.relative_to(ROOT)): hashlib.sha256(p.read_bytes()).hexdigest() for p in inputs})

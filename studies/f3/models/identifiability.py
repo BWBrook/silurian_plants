@@ -4,7 +4,7 @@
 # ///
 """Profile-likelihood surfaces of origination age T0 against growth rate for one simulated clade.
 
-    uv run models/f3/identifiability.py
+    uv run studies/f3/models/identifiability.py
 
 Writes out/identifiability_surface_<T0>.png for an origination in the Telychian (435 Ma) and one in the
 Darriwilian (460 Ma). Each simulates one realisation (real effort; 100 expected spore records and 30

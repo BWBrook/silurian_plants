@@ -23,7 +23,7 @@ from typing import Protocol, Sequence
 import numpy as np
 from scipy import optimize, stats
 
-T0_MAX = 515.5  # Ma; oldest origination searched: the oldest clock maximum named in docs/plan-f3.md
+T0_MAX = 515.5  # Ma; oldest origination searched: the oldest clock maximum named in studies/f3/docs/plan-f3.md
 T0_STEP = 0.5  # Myr
 PROFILE_LEVEL = 0.5 * stats.chi2.ppf(0.95, 1)
 LOG_ZERO = -1e30

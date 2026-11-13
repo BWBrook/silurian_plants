@@ -1,0 +1,468 @@
+{
+  "mode": "derived",
+  "status": "PASS",
+  "compared": [
+    {
+      "status": "PASS",
+      "reason": "byte identity",
+      "path": "studies/f3/models/loop3/out/reviewed_bounds.csv",
+      "reference_sha256": "596c887498bb2366e9e16fef311dac8fda4211aa341ba258236c7b33afeedb11",
+      "candidate_sha256": "596c887498bb2366e9e16fef311dac8fda4211aa341ba258236c7b33afeedb11"
+    },
+    {
+      "status": "PASS",
+      "reason": "byte identity",
+      "path": "studies/f3/models/loop3/out/age_sensitivity.csv",
+      "reference_sha256": "2308e71fb0a69c8d63322de06a6546dc451b1cc7b7a3e5a29a1bbd5e24110720",
+      "candidate_sha256": "2308e71fb0a69c8d63322de06a6546dc451b1cc7b7a3e5a29a1bbd5e24110720"
+    },
+    {
+      "status": "PASS",
+      "reason": "byte identity",
+      "path": "studies/f3/models/loop3/out/classical_comparison.csv",
+      "reference_sha256": "a64c4ebdd97fdf0933916609b4981fb413beaf73b6b60892b911cdb323b65490",
+      "candidate_sha256": "a64c4ebdd97fdf0933916609b4981fb413beaf73b6b60892b911cdb323b65490"
+    },
+    {
+      "status": "PASS",
+      "reason": "byte identity",
+      "path": "studies/f3/models/loop3/out/primary_unit_membership.csv",
+      "reference_sha256": "82e96708fd7d261b81b4d79992083a4627d24f0a25c22357ef3937cf5ad42b58",
+      "candidate_sha256": "82e96708fd7d261b81b4d79992083a4627d24f0a25c22357ef3937cf5ad42b58"
+    },
+    {
+      "status": "PASS",
+      "reason": "byte identity",
+      "path": "studies/f3/models/loop3/out/shape_diagnostics.csv",
+      "reference_sha256": "fa476f9b96606536b0219f63487c0d5278814eab7a27b8f8393d7f2f82137f45",
+      "candidate_sha256": "fa476f9b96606536b0219f63487c0d5278814eab7a27b8f8393d7f2f82137f45"
+    },
+    {
+      "status": "PASS",
+      "reason": "byte identity",
+      "path": "studies/f3/models/loop3/out/delay_sensitivity.csv",
+      "reference_sha256": "68b18269a62fb1686adc5c6750327d889652df51854c1d4851d0777f314a42fd",
+      "candidate_sha256": "68b18269a62fb1686adc5c6750327d889652df51854c1d4851d0777f314a42fd"
+    },
+    {
+      "status": "PASS",
+      "reason": "byte identity",
+      "path": "studies/f3/models/loop3/out/simulation_results.csv",
+      "reference_sha256": "0a1ddb100ad144aeb45d0095a0ca9e33021a3f6f3011cbb92e2f6dccef66957c",
+      "candidate_sha256": "0a1ddb100ad144aeb45d0095a0ca9e33021a3f6f3011cbb92e2f6dccef66957c"
+    },
+    {
+      "status": "PASS",
+      "reason": "byte identity",
+      "path": "studies/f3/models/loop3/out/suppression_sensitivity.csv",
+      "reference_sha256": "f772e4436eb1113d89c750b0f2d02029a0ac712651a9612dc9b260f7b424ad2c",
+      "candidate_sha256": "f772e4436eb1113d89c750b0f2d02029a0ac712651a9612dc9b260f7b424ad2c"
+    },
+    {
+      "status": "PASS",
+      "reason": "byte identity",
+      "path": "studies/f3/models/loop3/out/frontier.csv",
+      "reference_sha256": "79715363375a2b4f3a5f42791e5101895c74f3de83c83b0115f783b68b85d454",
+      "candidate_sha256": "79715363375a2b4f3a5f42791e5101895c74f3de83c83b0115f783b68b85d454"
+    },
+    {
+      "status": "PASS",
+      "reason": "byte identity",
+      "path": "studies/f3/models/loop3/out/influential_taxa.csv",
+      "reference_sha256": "98057d44c98fd23b63d0cd0d124cbdbee82f104abb4590468112c8612828214e",
+      "candidate_sha256": "98057d44c98fd23b63d0cd0d124cbdbee82f104abb4590468112c8612828214e"
+    },
+    {
+      "status": "PASS",
+      "rows": 10,
+      "columns": 12,
+      "tolerance": 1e-09,
+      "path": "studies/f3/models/loop3/out/stage2_murzuq/dependence_sensitivity.csv",
+      "reference_sha256": "062fdc10ebefd6f3ae92e4840459e6bead041a85ee926322e5147ac00c359b80",
+      "candidate_sha256": "062fdc10ebefd6f3ae92e4840459e6bead041a85ee926322e5147ac00c359b80"
+    },
+    {
+      "status": "PASS",
+      "reason": "byte identity",
+      "path": "studies/f3/models/loop3/out/stage2_murzuq/older_support_summary.csv",
+      "reference_sha256": "7fe551cadc3c47e94db754509553e427e3ef55f99e57a4c2f8957f57f245d798",
+      "candidate_sha256": "7fe551cadc3c47e94db754509553e427e3ef55f99e57a4c2f8957f57f245d798"
+    },
+    {
+      "status": "PASS",
+      "reason": "byte identity",
+      "path": "studies/f3/models/loop3/out/stage2_murzuq/sample_time_support.csv",
+      "reference_sha256": "1bdce844d50af77693c4e0a0cfd909131212844bf2952972d020ab003ab3603f",
+      "candidate_sha256": "1bdce844d50af77693c4e0a0cfd909131212844bf2952972d020ab003ab3603f"
+    },
+    {
+      "status": "PASS",
+      "reason": "byte identity",
+      "path": "studies/f3/models/loop3/out/stage2_interval/interval_feasibility_summary.csv",
+      "reference_sha256": "257851391522c8069c5f60e721730ccf7aa849fed30800fd0baaa1000e5b401a",
+      "candidate_sha256": "257851391522c8069c5f60e721730ccf7aa849fed30800fd0baaa1000e5b401a"
+    },
+    {
+      "status": "PASS",
+      "reason": "byte identity",
+      "path": "studies/f3/models/loop3/out/stage2_interval/partial_inclusion_sets.csv",
+      "reference_sha256": "d9fa8f32648466e9c79a1c6e5cc0683d50d1dee66f4546d0decd4d642568ae0a",
+      "candidate_sha256": "d9fa8f32648466e9c79a1c6e5cc0683d50d1dee66f4546d0decd4d642568ae0a"
+    },
+    {
+      "status": "PASS",
+      "reason": "byte identity",
+      "path": "studies/f3/models/loop3/out/stage2_interval/partial_subset_synthesis.csv",
+      "reference_sha256": "5f27e0e085cc720daf35e47cd960f65d1397600ee3f54664d5e80a501751b0a5",
+      "candidate_sha256": "5f27e0e085cc720daf35e47cd960f65d1397600ee3f54664d5e80a501751b0a5"
+    },
+    {
+      "status": "PASS",
+      "reason": "byte identity",
+      "path": "studies/f3/models/loop3/out/stage2_interval/reviewer_reproduction.csv",
+      "reference_sha256": "ed2f264e954cb7cfcfee915ef3a642994b24cce61a988111662215563fd8e6d9",
+      "candidate_sha256": "ed2f264e954cb7cfcfee915ef3a642994b24cce61a988111662215563fd8e6d9"
+    },
+    {
+      "status": "PASS",
+      "reason": "byte identity",
+      "path": "studies/f3/models/loop3/out/stage2_interval/witness_B0_canonical_decline10.csv",
+      "reference_sha256": "a7090f938484e02c8c5baf26b5c9ee5922021cd585b0dbfcf7f821f7375ec953",
+      "candidate_sha256": "a7090f938484e02c8c5baf26b5c9ee5922021cd585b0dbfcf7f821f7375ec953"
+    },
+    {
+      "status": "PASS",
+      "reason": "byte identity",
+      "path": "studies/f3/models/loop3/out/stage2_interval/witness_B0_canonical_decline25.csv",
+      "reference_sha256": "996e1bceb0eb85780a9c31dbe095f729d28ba99951dbdffd9b92371f903a4f09",
+      "candidate_sha256": "996e1bceb0eb85780a9c31dbe095f729d28ba99951dbdffd9b92371f903a4f09"
+    },
+    {
+      "status": "PASS",
+      "reason": "byte identity",
+      "path": "studies/f3/models/loop3/out/stage2_interval/witness_B0_canonical_flat.csv",
+      "reference_sha256": "b2b0cd284c0bb1f82a05ab0882343e4c59bd56e5a97fcc6fa018a5c08f76a9b6",
+      "candidate_sha256": "b2b0cd284c0bb1f82a05ab0882343e4c59bd56e5a97fcc6fa018a5c08f76a9b6"
+    },
+    {
+      "status": "PASS",
+      "reason": "byte identity",
+      "path": "studies/f3/models/loop3/out/stage2_interval/witness_B0_canonical_pbdb_all.csv",
+      "reference_sha256": "80cc6e13a3d138c7e2015e3f1194c69257de2ba803a696f275fb93820b1e7d5b",
+      "candidate_sha256": "80cc6e13a3d138c7e2015e3f1194c69257de2ba803a696f275fb93820b1e7d5b"
+    },
+    {
+      "status": "PASS",
+      "reason": "byte identity",
+      "path": "studies/f3/models/loop3/out/stage2_interval/witness_B0_canonical_pbdb_excluded_decline10.csv",
+      "reference_sha256": "5653ad15ea48d057159bb5830b7d37bed92e5d3bf8b764d85e28bb1a056b1852",
+      "candidate_sha256": "5653ad15ea48d057159bb5830b7d37bed92e5d3bf8b764d85e28bb1a056b1852"
+    },
+    {
+      "status": "PASS",
+      "reason": "byte identity",
+      "path": "studies/f3/models/loop3/out/stage2_interval/witness_B0_canonical_pbdb_plant_excluded.csv",
+      "reference_sha256": "e696d5d998250d962cacb550640b6d9be1b3727dccf6ca0044e57860545260c9",
+      "candidate_sha256": "e696d5d998250d962cacb550640b6d9be1b3727dccf6ca0044e57860545260c9"
+    },
+    {
+      "status": "PASS",
+      "reason": "byte identity",
+      "path": "studies/f3/models/loop3/out/stage2_interval/witness_B0_guaranteed_decline10.csv",
+      "reference_sha256": "b6d2a0ca9ae2061e02d80b2ed700aac2c3c593777b2c2d5e93d46aa4e01aa085",
+      "candidate_sha256": "b6d2a0ca9ae2061e02d80b2ed700aac2c3c593777b2c2d5e93d46aa4e01aa085"
+    },
+    {
+      "status": "PASS",
+      "reason": "byte identity",
+      "path": "studies/f3/models/loop3/out/stage2_interval/witness_B0_guaranteed_decline25.csv",
+      "reference_sha256": "6b748e807936bb8008e1d8e65ed88deff1dee1a7038cd21b3d6c10bca3a3c3e6",
+      "candidate_sha256": "6b748e807936bb8008e1d8e65ed88deff1dee1a7038cd21b3d6c10bca3a3c3e6"
+    },
+    {
+      "status": "PASS",
+      "reason": "byte identity",
+      "path": "studies/f3/models/loop3/out/stage2_interval/witness_B0_guaranteed_flat.csv",
+      "reference_sha256": "9f75e43458f2e5d8e7d2f1fe95d394f65b5e6ae727e235d5679b93bf70dc9bb6",
+      "candidate_sha256": "9f75e43458f2e5d8e7d2f1fe95d394f65b5e6ae727e235d5679b93bf70dc9bb6"
+    },
+    {
+      "status": "PASS",
+      "reason": "byte identity",
+      "path": "studies/f3/models/loop3/out/stage2_interval/witness_B0_guaranteed_pbdb_all.csv",
+      "reference_sha256": "c625cab1bb5bdf0de96e5a47091e0768a208a8d2cfeaae9000db6b9dda34aec6",
+      "candidate_sha256": "c625cab1bb5bdf0de96e5a47091e0768a208a8d2cfeaae9000db6b9dda34aec6"
+    },
+    {
+      "status": "PASS",
+      "reason": "byte identity",
+      "path": "studies/f3/models/loop3/out/stage2_interval/witness_B0_guaranteed_pbdb_excluded_decline10.csv",
+      "reference_sha256": "f79314527f53baf786927ab513206bdb9df0c2372aacdb4f3deadc1e11ea7f46",
+      "candidate_sha256": "f79314527f53baf786927ab513206bdb9df0c2372aacdb4f3deadc1e11ea7f46"
+    },
+    {
+      "status": "PASS",
+      "reason": "byte identity",
+      "path": "studies/f3/models/loop3/out/stage2_interval/witness_B0_guaranteed_pbdb_plant_excluded.csv",
+      "reference_sha256": "b371fdf2c7037003244239d066bbf6ad6966643ba490eec915897e1304215409",
+      "candidate_sha256": "b371fdf2c7037003244239d066bbf6ad6966643ba490eec915897e1304215409"
+    },
+    {
+      "status": "PASS",
+      "reason": "byte identity",
+      "path": "studies/f3/models/loop3/out/stage2_interval/witness_B0_partial_01_decline10.csv",
+      "reference_sha256": "f49bd597a1cf410e4d0c3287dc7837bea50c4decac31ec4d0f40fe3e3e41e5b2",
+      "candidate_sha256": "f49bd597a1cf410e4d0c3287dc7837bea50c4decac31ec4d0f40fe3e3e41e5b2"
+    },
+    {
+      "status": "PASS",
+      "reason": "byte identity",
+      "path": "studies/f3/models/loop3/out/stage2_interval/witness_B0_partial_01_decline25.csv",
+      "reference_sha256": "1f4cd7c73a4dd6088f1bcd17b4fcdbf1a5873d7d6b887a43da1d684e2d766a6a",
+      "candidate_sha256": "1f4cd7c73a4dd6088f1bcd17b4fcdbf1a5873d7d6b887a43da1d684e2d766a6a"
+    },
+    {
+      "status": "PASS",
+      "reason": "byte identity",
+      "path": "studies/f3/models/loop3/out/stage2_interval/witness_B0_partial_01_flat.csv",
+      "reference_sha256": "eab46f02dda4594e6aa182cd841c4fbaec82b81ab719c86c8f946699daab4c29",
+      "candidate_sha256": "eab46f02dda4594e6aa182cd841c4fbaec82b81ab719c86c8f946699daab4c29"
+    },
+    {
+      "status": "PASS",
+      "reason": "byte identity",
+      "path": "studies/f3/models/loop3/out/stage2_interval/witness_B0_partial_01_pbdb_all.csv",
+      "reference_sha256": "c1c22f09767d5f4051cf135fc3a803ea42aa7350aff915b134f3fc9ebe06e082",
+      "candidate_sha256": "c1c22f09767d5f4051cf135fc3a803ea42aa7350aff915b134f3fc9ebe06e082"
+    },
+    {
+      "status": "PASS",
+      "reason": "byte identity",
+      "path": "studies/f3/models/loop3/out/stage2_interval/witness_B0_partial_01_pbdb_excluded_decline10.csv",
+      "reference_sha256": "373abb2acad41fcc1d56f0a687c26c93d0c99c032315d2dedfa11bf1a0d3e423",
+      "candidate_sha256": "373abb2acad41fcc1d56f0a687c26c93d0c99c032315d2dedfa11bf1a0d3e423"
+    },
+    {
+      "status": "PASS",
+      "reason": "byte identity",
+      "path": "studies/f3/models/loop3/out/stage2_interval/witness_B0_partial_01_pbdb_plant_excluded.csv",
+      "reference_sha256": "bcae348a250b450c8dfe687b707f887cfb313649795da335e4689a3f473d2a59",
+      "candidate_sha256": "bcae348a250b450c8dfe687b707f887cfb313649795da335e4689a3f473d2a59"
+    },
+    {
+      "status": "PASS",
+      "reason": "byte identity",
+      "path": "studies/f3/models/loop3/out/stage2_interval/witness_B0_partial_10_decline10.csv",
+      "reference_sha256": "c26f050c07c94bee0673b4eb7ba2a10a55890d6ceb9e3d8ce4c1b4fdda4fe466",
+      "candidate_sha256": "c26f050c07c94bee0673b4eb7ba2a10a55890d6ceb9e3d8ce4c1b4fdda4fe466"
+    },
+    {
+      "status": "PASS",
+      "reason": "byte identity",
+      "path": "studies/f3/models/loop3/out/stage2_interval/witness_B0_partial_10_decline25.csv",
+      "reference_sha256": "1ddea7ec99f0317138e0fcf8e3d866e451659378f7a8f197afda14f5d682476a",
+      "candidate_sha256": "1ddea7ec99f0317138e0fcf8e3d866e451659378f7a8f197afda14f5d682476a"
+    },
+    {
+      "status": "PASS",
+      "reason": "byte identity",
+      "path": "studies/f3/models/loop3/out/stage2_interval/witness_B0_partial_10_flat.csv",
+      "reference_sha256": "ad38038dd0d46dfc08e5c13d80163deea3511140e6a6cb0ccdd5b4cde4a39983",
+      "candidate_sha256": "ad38038dd0d46dfc08e5c13d80163deea3511140e6a6cb0ccdd5b4cde4a39983"
+    },
+    {
+      "status": "PASS",
+      "reason": "byte identity",
+      "path": "studies/f3/models/loop3/out/stage2_interval/witness_B0_partial_10_pbdb_all.csv",
+      "reference_sha256": "84193ad41c2a9dca4e9fe098005e0bbeef04036998d3c27153406781df6d0872",
+      "candidate_sha256": "84193ad41c2a9dca4e9fe098005e0bbeef04036998d3c27153406781df6d0872"
+    },
+    {
+      "status": "PASS",
+      "reason": "byte identity",
+      "path": "studies/f3/models/loop3/out/stage2_interval/witness_B0_partial_10_pbdb_excluded_decline10.csv",
+      "reference_sha256": "4e0db31037b03dfdd573f80d258aa63cc382d73d56dd1c4d76599806ee0e47ea",
+      "candidate_sha256": "4e0db31037b03dfdd573f80d258aa63cc382d73d56dd1c4d76599806ee0e47ea"
+    },
+    {
+      "status": "PASS",
+      "reason": "byte identity",
+      "path": "studies/f3/models/loop3/out/stage2_interval/witness_B0_partial_10_pbdb_plant_excluded.csv",
+      "reference_sha256": "c31e7c6d8b67681b02867f8d766665f9dc1e45b973c49e5ccbfe0026a035d45d",
+      "candidate_sha256": "c31e7c6d8b67681b02867f8d766665f9dc1e45b973c49e5ccbfe0026a035d45d"
+    },
+    {
+      "status": "PASS",
+      "reason": "byte identity",
+      "path": "studies/f3/models/loop3/out/stage2_interval/witness_B2_guaranteed_decline10.csv",
+      "reference_sha256": "729c86b146967f233e0f3e3e5d4f46163fa9ff7325a9850e650262e0ab1c351f",
+      "candidate_sha256": "729c86b146967f233e0f3e3e5d4f46163fa9ff7325a9850e650262e0ab1c351f"
+    },
+    {
+      "status": "PASS",
+      "reason": "byte identity",
+      "path": "studies/f3/models/loop3/out/stage2_interval/witness_B2_guaranteed_decline25.csv",
+      "reference_sha256": "ef05565447f37c6fba658170dcbe6a16d02f0a67725165082e1d9cdf9bf4813b",
+      "candidate_sha256": "ef05565447f37c6fba658170dcbe6a16d02f0a67725165082e1d9cdf9bf4813b"
+    },
+    {
+      "status": "PASS",
+      "reason": "byte identity",
+      "path": "studies/f3/models/loop3/out/stage2_interval/witness_B2_guaranteed_flat.csv",
+      "reference_sha256": "405d1bdbf751407288564a32f1f6b7d99955486c413b7a49edf9ed014279f17a",
+      "candidate_sha256": "405d1bdbf751407288564a32f1f6b7d99955486c413b7a49edf9ed014279f17a"
+    },
+    {
+      "status": "PASS",
+      "reason": "byte identity",
+      "path": "studies/f3/models/loop3/out/stage2_interval/witness_B2_guaranteed_pbdb_all.csv",
+      "reference_sha256": "37e92d2d3a63196baa265def69f852d237528aa70ea3fd472c3fdc627473f4b7",
+      "candidate_sha256": "37e92d2d3a63196baa265def69f852d237528aa70ea3fd472c3fdc627473f4b7"
+    },
+    {
+      "status": "PASS",
+      "reason": "byte identity",
+      "path": "studies/f3/models/loop3/out/stage2_interval/witness_B2_guaranteed_pbdb_excluded_decline10.csv",
+      "reference_sha256": "f8c01076c2e8eaac40381e1cf9cf0e375e621ddd0b6f20ce031c111dbaa24986",
+      "candidate_sha256": "f8c01076c2e8eaac40381e1cf9cf0e375e621ddd0b6f20ce031c111dbaa24986"
+    },
+    {
+      "status": "PASS",
+      "reason": "byte identity",
+      "path": "studies/f3/models/loop3/out/stage2_interval/witness_B2_guaranteed_pbdb_plant_excluded.csv",
+      "reference_sha256": "1441d71a5e992236929090abcadc2763b53dcd6fec7303189eca0322345ef11a",
+      "candidate_sha256": "1441d71a5e992236929090abcadc2763b53dcd6fec7303189eca0322345ef11a"
+    },
+    {
+      "status": "PASS",
+      "reason": "byte identity",
+      "path": "studies/f3/models/loop3/out/stage2_interval/witness_B2_partial_01_decline10.csv",
+      "reference_sha256": "5b18399e820072d16d77c9f1c7a0d0582d3658aec2993c64889fbcc4e12742b9",
+      "candidate_sha256": "5b18399e820072d16d77c9f1c7a0d0582d3658aec2993c64889fbcc4e12742b9"
+    },
+    {
+      "status": "PASS",
+      "reason": "byte identity",
+      "path": "studies/f3/models/loop3/out/stage2_interval/witness_B2_partial_01_decline25.csv",
+      "reference_sha256": "019bba85a5319d1e0df0b6264ab3c3602fcbc89b4450f09de954326d74dfc181",
+      "candidate_sha256": "019bba85a5319d1e0df0b6264ab3c3602fcbc89b4450f09de954326d74dfc181"
+    },
+    {
+      "status": "PASS",
+      "reason": "byte identity",
+      "path": "studies/f3/models/loop3/out/stage2_interval/witness_B2_partial_01_flat.csv",
+      "reference_sha256": "5c56d16c78da3e11952f9427416a506defd98fb95734b692bc4ba935581c5c1c",
+      "candidate_sha256": "5c56d16c78da3e11952f9427416a506defd98fb95734b692bc4ba935581c5c1c"
+    },
+    {
+      "status": "PASS",
+      "reason": "byte identity",
+      "path": "studies/f3/models/loop3/out/stage2_interval/witness_B2_partial_01_pbdb_all.csv",
+      "reference_sha256": "f801b87af8235767b5707dd4288046d212009f5fe0923d00c1c8d3abc0c43f00",
+      "candidate_sha256": "f801b87af8235767b5707dd4288046d212009f5fe0923d00c1c8d3abc0c43f00"
+    },
+    {
+      "status": "PASS",
+      "reason": "byte identity",
+      "path": "studies/f3/models/loop3/out/stage2_interval/witness_B2_partial_01_pbdb_excluded_decline10.csv",
+      "reference_sha256": "f246fdf1d636b3f032e7902915500468f530f4fc61fcc950d048ce0c74fdb2e8",
+      "candidate_sha256": "f246fdf1d636b3f032e7902915500468f530f4fc61fcc950d048ce0c74fdb2e8"
+    },
+    {
+      "status": "PASS",
+      "reason": "byte identity",
+      "path": "studies/f3/models/loop3/out/stage2_interval/witness_B2_partial_01_pbdb_plant_excluded.csv",
+      "reference_sha256": "875f7c7796223c9c4a2abceb93bd79e140fbdfd1b7dca4159aa6081913343d56",
+      "candidate_sha256": "875f7c7796223c9c4a2abceb93bd79e140fbdfd1b7dca4159aa6081913343d56"
+    },
+    {
+      "status": "PASS",
+      "reason": "byte identity",
+      "path": "studies/f3/models/loop3/out/stage2_interval/witness_B2_partial_10_decline10.csv",
+      "reference_sha256": "afa5a45845fe1d4b2e535cbe6e1413a718d87fdfffcd0ce1914783d31ac3d400",
+      "candidate_sha256": "afa5a45845fe1d4b2e535cbe6e1413a718d87fdfffcd0ce1914783d31ac3d400"
+    },
+    {
+      "status": "PASS",
+      "reason": "byte identity",
+      "path": "studies/f3/models/loop3/out/stage2_interval/witness_B2_partial_10_decline25.csv",
+      "reference_sha256": "5f9d5dd0e53d57b65c491ba097db4ba2e600fdb78ab7c7fec6421ff8b4cc2a9d",
+      "candidate_sha256": "5f9d5dd0e53d57b65c491ba097db4ba2e600fdb78ab7c7fec6421ff8b4cc2a9d"
+    },
+    {
+      "status": "PASS",
+      "reason": "byte identity",
+      "path": "studies/f3/models/loop3/out/stage2_interval/witness_B2_partial_10_flat.csv",
+      "reference_sha256": "35293c3e29a4e18d8b9d68afe3791f232b3fe182dd856ad9b7b79238af139b09",
+      "candidate_sha256": "35293c3e29a4e18d8b9d68afe3791f232b3fe182dd856ad9b7b79238af139b09"
+    },
+    {
+      "status": "PASS",
+      "reason": "byte identity",
+      "path": "studies/f3/models/loop3/out/stage2_interval/witness_B2_partial_10_pbdb_all.csv",
+      "reference_sha256": "30fae15ed75b2d3202b441e242d77f4da61ddb92fe0abcafb2f38d0dde10779a",
+      "candidate_sha256": "30fae15ed75b2d3202b441e242d77f4da61ddb92fe0abcafb2f38d0dde10779a"
+    },
+    {
+      "status": "PASS",
+      "reason": "byte identity",
+      "path": "studies/f3/models/loop3/out/stage2_interval/witness_B2_partial_10_pbdb_excluded_decline10.csv",
+      "reference_sha256": "2ff91f45a876479a80b08dde3ddb53b91387129eaa3a9cbd52ddbaae51dcc017",
+      "candidate_sha256": "2ff91f45a876479a80b08dde3ddb53b91387129eaa3a9cbd52ddbaae51dcc017"
+    },
+    {
+      "status": "PASS",
+      "reason": "byte identity",
+      "path": "studies/f3/models/loop3/out/stage2_interval/witness_B2_partial_10_pbdb_plant_excluded.csv",
+      "reference_sha256": "1fa0dcc4faeabc81035918dbc889054f447b04b561ba838c72216204bf5677a2",
+      "candidate_sha256": "1fa0dcc4faeabc81035918dbc889054f447b04b561ba838c72216204bf5677a2"
+    },
+    {
+      "status": "PASS",
+      "reason": "byte identity",
+      "path": "studies/f3/models/loop3/out/stage2_interval/witness_B2_possible_decline10.csv",
+      "reference_sha256": "3be4a871f56b00af16d8a405e966fd72bd1031572f075ae8754eda2a3f0903e0",
+      "candidate_sha256": "3be4a871f56b00af16d8a405e966fd72bd1031572f075ae8754eda2a3f0903e0"
+    },
+    {
+      "status": "PASS",
+      "reason": "byte identity",
+      "path": "studies/f3/models/loop3/out/stage2_interval/witness_B2_possible_decline25.csv",
+      "reference_sha256": "5704e6e925621b0b51767157d9830f28e5610f7fb40e0ce04220749abf9ff044",
+      "candidate_sha256": "5704e6e925621b0b51767157d9830f28e5610f7fb40e0ce04220749abf9ff044"
+    },
+    {
+      "status": "PASS",
+      "reason": "byte identity",
+      "path": "studies/f3/models/loop3/out/stage2_interval/witness_B2_possible_flat.csv",
+      "reference_sha256": "8d5c5f0bc38dc2881a22a00d7fc7eba36bdcd7e12ff82e5934d91ff23685a76d",
+      "candidate_sha256": "8d5c5f0bc38dc2881a22a00d7fc7eba36bdcd7e12ff82e5934d91ff23685a76d"
+    },
+    {
+      "status": "PASS",
+      "reason": "byte identity",
+      "path": "studies/f3/models/loop3/out/stage2_interval/witness_B2_possible_pbdb_all.csv",
+      "reference_sha256": "88582d4bc3db9517e404b3e1d5116267d83ad8c364ef6287039b158126e8b939",
+      "candidate_sha256": "88582d4bc3db9517e404b3e1d5116267d83ad8c364ef6287039b158126e8b939"
+    },
+    {
+      "status": "PASS",
+      "reason": "byte identity",
+      "path": "studies/f3/models/loop3/out/stage2_interval/witness_B2_possible_pbdb_excluded_decline10.csv",
+      "reference_sha256": "bba8714d8fb660824807db511e4f1c65d4ac1ca090c082ef31d1f2d92ce5955a",
+      "candidate_sha256": "bba8714d8fb660824807db511e4f1c65d4ac1ca090c082ef31d1f2d92ce5955a"
+    },
+    {
+      "status": "PASS",
+      "reason": "byte identity",
+      "path": "studies/f3/models/loop3/out/stage2_interval/witness_B2_possible_pbdb_plant_excluded.csv",
+      "reference_sha256": "6acab04999711aa8853e664b489b1b15b9b68f23225c1d6148d8ca4600ae0775",
+      "candidate_sha256": "6acab04999711aa8853e664b489b1b15b9b68f23225c1d6148d8ca4600ae0775"
+    }
+  ],
+  "source_pdf_checks": "not run; separate check-sources target",
+  "frozen_qualification": "not regenerated",
+  "timescale_rebuild": "SKIPPED: requires archived raw PBDB input; use source target",
+  "scope": "byte identity for selected outputs except the declared optimiser CSV, where schema, row order, identity fields and non-numeric values are exact and numeric fields use absolute tolerance 1e-9; not scientific validation",
+  "run_utc": "2026-11-13T13:34:49+00:00"
+}

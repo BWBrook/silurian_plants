@@ -4,7 +4,7 @@ from collections import Counter
 from decimal import Decimal, ROUND_HALF_UP
 from xml.etree import ElementTree as ET
 
-ROOT = Path(__file__).resolve().parents[4]
+ROOT = Path(__file__).resolve().parents[6]
 OUT = Path(__file__).resolve().parent
 source_hashes = json.load((OUT/'source_hashes.json').open())
 for entry in source_hashes:

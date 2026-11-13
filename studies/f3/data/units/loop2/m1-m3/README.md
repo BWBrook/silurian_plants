@@ -1,11 +1,11 @@
 # Loop 2 sprint 2: M1 and M3 targets
 
 Claude Opus 5.5, 1 November 2026; corrected after Codex's independent source review the same day.
-Under `docs/sprints-loop2.md` v2.1 (change 7). Review: `docs/audits/2026-11-01-loop2-close-affinity-review.md`.
+Under `studies/f3/docs/sprints-loop2.md` v2.1 (change 7). Review: `studies/f3/docs/audits/2026-11-01-loop2-close-affinity-review.md`.
 
 ## M1: the affinity of the Cambrian Stage 4 forms (decided)
 
-`m1_affinity.csv` applies the adopted E2 addendum (`data/units/e2-unit-rule.md` v1) to the three held
+`m1_affinity.csv` applies the adopted E2 addendum (`studies/f3/data/units/e2-unit-rule.md` v1) to the three held
 sources describing Stage 4 cryptospore-like forms and related younger Cambrian material. On Axis 1
 they are packets, dyads, tetrads and irregular polyads, with evidence on wall ultrastructure and
 development. On Axis 2 none of these three sources explicitly accepts the assessed Stage 4 producers
@@ -44,12 +44,12 @@ Argentine Dapingian assemblage were "erroneously attributed to *Tetrahedraletes 
 Rubinstein et al., 2010". This corrects a taxonomic assignment while retaining identifiable tetrads
 and monads; it does not establish embryophyte affinity or turn the sample into an absence. For
 `RIOCAP-7999`, the current E2 outcome remains **unresolved under main, detected under inclusive and
-outlier** (`data/units/outcomes.csv`). This particular correction changes none of those outcomes.
+outlier** (`studies/f3/data/units/outcomes.csv`). This particular correction changes none of those outcomes.
 Separately, its Dapingian age supplies no direct pre-515.5 Ma exposure. The lead is closed without
 claiming that either the sample's affinity dispute or its missing denominator has been resolved.
 
 ## M3: drafted requests only
 
 No assessed held-source frame supplies an admissible searched-material denominator and comparable
-reference (`docs/audits/2026-10-31-sprint2-m3.md`).
+reference (`studies/f3/docs/audits/2026-10-31-sprint2-m3.md`).
 `requests.md` drafts the ledger requests; Barry decides whether to send them.

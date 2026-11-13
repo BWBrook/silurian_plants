@@ -11,7 +11,7 @@ with probability 1 - exp(-r_c u_k a(t_i)). The estimator sees only stage ranges,
 and outcomes, and must find its own first appearance and reference window from them: the real selection.
 
 Design. Units per stage are round(scale * n_docs), where n_docs is the Palynodata spore effort of
-data/occurrences/effort.csv summed over palaeogeographic units (the 2006 count). A fraction `broad_frac` of
+studies/f3/data/occurrences/effort.csv summed over palaeogeographic units (the 2006 count). A fraction `broad_frac` of
 units have a range widened by up to three stages on either side. The true stage bases are those of
 `truth_scenario` (an AgeModel) and each unit's true age is uniform within its range under them. Units are
 grouped into clusters of consecutive true age, size 1 + Poisson(cluster_mean - 1), each with its own
@@ -37,7 +37,7 @@ Truth histories between tau0 and t0, each times f, the nominal level:
             is f: the least favourable member of H0.
   hide_h1   the same at height `pulse`: the least favourable member of H1.
 
-    uv run models/f3/units_sim.py     # prints one simulated table's summary
+    uv run studies/f3/models/units_sim.py     # prints one simulated table's summary
 """
 
 import csv
@@ -49,7 +49,7 @@ import numpy as np
 import envelope as ev
 import sim
 
-EFFORT_CSV = sim.ROOT / "data" / "occurrences" / "effort.csv"
+EFFORT_CSV = sim.ROOT / "studies" / "f3" / "data" / "occurrences" / "effort.csv"
 HISTORIES = ("H0c", "step", "ramp", "logistic", "hide", "hide_h1")
 
 

@@ -1,6 +1,6 @@
 # F3: dating origination from an incomplete record
 
-Loop 1, steps 2 and 3 of `docs/plan-f3.md`. A virtual palaeontology (a clade of growing abundance that leaves
+Loop 1, steps 2 and 3 of `studies/f3/docs/plan-f3.md`. A virtual palaeontology (a clade of growing abundance that leaves
 stage-dated fossil occurrences), the classical estimators of the first appearance (step 2, the sketch), and the
 ramp-aware likelihood estimators with the recovery study that tests all of them (step 3, below). Written by
 Claude Sonnet 5.5 (`claude-sonnet-5-5`), 2026-10-28.
@@ -22,8 +22,8 @@ Claude Sonnet 5.5 (`claude-sonnet-5-5`), 2026-10-28.
   `out/sketch_grid.meta.json` (root seed, settings, `timescale.csv` hash, numpy version).
 
 ```bash
-uv run models/f3/run_sketch.py
-uv run --with pytest --with numpy --with scipy pytest models/f3 -p no:cacheprovider -s
+uv run studies/f3/models/run_sketch.py
+uv run --with pytest --with numpy --with scipy pytest studies/f3/models -p no:cacheprovider -s
 ```
 
 ## Conventions (steps 2 and 3)
@@ -128,7 +128,7 @@ estimate and of GRIWM (alpha = 0.05), in Myr; coverage is `coverage_upper`.
 
 ## Step 3: the recovery study
 
-Loop 1, step 3 of `docs/plan-f3.md`. Written by Claude Sonnet 5.5 (`claude-sonnet-5-5`), 2026-10-28. The step-2 amendment
+Loop 1, step 3 of `studies/f3/docs/plan-f3.md`. Written by Claude Sonnet 5.5 (`claude-sonnet-5-5`), 2026-10-28. The step-2 amendment
 established that classical estimators under-cover when abundance ramps up after origination. This step builds estimators
 that model the ramp, and asks which estimators may be used on real data and whether the record can identify the
 origination at all.
@@ -152,7 +152,7 @@ origination at all.
     interval at 515.5 Ma.
   - Channels share N(t) and T0 and have separate psi and E: the **joint fit** adds the channels' log-likelihoods. A channel
     without records adds nothing, so the joint fit with an empty second channel is the one-channel fit.
-- `inputs.py`: per-stage effort series for the window Darriwilian to Emsian, read from `data/occurrences/effort.csv` and written
+- `inputs.py`: per-stage effort series for the window Darriwilian to Emsian, read from `studies/f3/data/occurrences/effort.csv` and written
   to `out/effort_series.csv`. Spores: `n_docs` summed over palaeogeographic units. Bodies: `land + marginal` summed over units.
   **Stage boundaries are the fixed ICS v2024/12 ages of `data/timescale.csv`.** Propagating boundary-age uncertainty needs the
   joint, ordered age model of primer section 1.1 (the Harrigan et al. posterior), which is not yet in hand, so it is not
@@ -169,10 +169,10 @@ origination at all.
 ### Design of the study
 
 ```bash
-uv run models/f3/inputs.py          # out/effort_series.csv
-uv run models/f3/recovery.py        # out/recovery_grid.csv and .meta.json (about 28 min under heavy load)
-uv run models/f3/report.py          # out/recovery_summary.csv and the tables below
-uv run models/f3/identifiability.py # out/identifiability_surface_*.png
+uv run studies/f3/models/inputs.py          # out/effort_series.csv
+uv run studies/f3/models/recovery.py        # out/recovery_grid.csv and .meta.json (about 28 min under heavy load)
+uv run studies/f3/models/report.py          # out/recovery_summary.csv and the tables below
+uv run studies/f3/models/identifiability.py # out/identifiability_surface_*.png
 ```
 
 A **scenario** is an origination
@@ -434,10 +434,10 @@ Rows: the log-likelihood over (T0, rate) with psi profiled out; the profile for 
 
 ## Step 4: the compatibility estimator (F3 reshape v3)
 
-Implements the estimator and validation harness of `docs/f3-shape.md` (v3, "What F3 reports" and "Validation before any real-data
+Implements the estimator and validation harness of `studies/f3/docs/f3-shape.md` (v3, "What F3 reports" and "Validation before any real-data
 result"). First built by Claude Sonnet 5.5 (`claude-sonnet-5-5`), 2026-10-28, to the construction designed by Claude Opus 5.5, and
-repaired on 2026-10-29 by the same Sonnet to Opus's design after Codex's implementation review (`docs/audits/2026-10-29-f3-implementation-review.md`,
-I1 to I4). Claude Opus 5.5 made the changes after Codex's second review (`docs/audits/2026-10-29-f3-repairs-and-frame-review.md`, R1 to R4) and ran
+repaired on 2026-10-29 by the same Sonnet to Opus's design after Codex's implementation review (`studies/f3/docs/audits/2026-10-29-f3-implementation-review.md`,
+I1 to I4). Claude Opus 5.5 made the changes after Codex's second review (`studies/f3/docs/audits/2026-10-29-f3-repairs-and-frame-review.md`, R1 to R4) and ran
 their rehearsal. Nothing here has been run on real data: there is no real unit table yet. The development grid (21 cells × 1,000 replicates on the
 synthetic design, 2026-10-29) and the rehearsal of the calibration contract are below; they bind nothing, because the binding validation runs on the real design. The as-built smoke run (equal-duty H0, delay-grid H0m, logistic class, boundary draws, χ²
 comparison) is in `c7729ad`, its count-matched re-run in `69f2ef4` and the 60-against-400 boundary-draw check in `b2c6443`.
@@ -450,7 +450,7 @@ comparison) is in `c7729ad`, its count-matched re-run in `69f2ef4` and the 60-ag
   `fstar(cls, T)` (the bound, its state and its fit record), `lr(cls, T, f)` (LR_K at a target), `origin_set`, `origin_stat` and `lr_origin` (test
   inversion), `edges`, `window` (the pieces of (τ, T]), `const_max`, `bound_sup` (the optimiser), `abar_truth`, `grid`, `crit`. Also
   `no_detection_probability` (a cluster's no-detection probability, which the tests use to check the quadrature) and `count_crit`.
-- `units_sim.py`: unit tables on the real design: units per stage `round(scale * n_docs)` with `n_docs` the spore effort of `data/occurrences/effort.csv`
+- `units_sim.py`: unit tables on the real design: units per stage `round(scale * n_docs)` with `n_docs` the spore effort of `studies/f3/data/occurrences/effort.csv`
   summed over palaeogeographic units; a fraction have ranges widened by up to three stages; true ages uniform within the range under the
   truth scenario's bases; clusters are runs of consecutive true age with Gamma(k, k) effects; two classes. `Truth` histories: `H0c`, `step`
   (delay), `ramp`, `logistic`, `hide` and `hide_h1` (the least favourable H0 and H1 members: a 0/1 or 0/3 path lit on the stages with the fewest expected units per Myr
@@ -468,18 +468,18 @@ comparison) is in `c7729ad`, its count-matched re-run in `69f2ef4` and the 60-ag
   units, r the frame's own reference rate taken as known). It equals the engine's at each class ceiling and is never
   weaker below it. Every row states the frame, reading, reference conversion, design, class ceiling and target f.
   Clustered, multi-class or heterogeneous-reference designs can exceed it, so they are screened with the engine itself
-  (Codex's review, `docs/audits/2026-10-31-screen-and-persistence-review.md`).
+  (Codex's review, `studies/f3/docs/audits/2026-10-31-screen-and-persistence-review.md`).
   - Writes `out/screen_borenshult.csv`. Under main, Borenshult has no reference detection, so the screen does not
     apply. Under inclusive, H0 is ceiling-limited at f = 1 under both reference conversions (2.86 profiled at most,
     against 5.99).
-  - Passing is outcome-dependent selection, so binding claims are conditional on it (`docs/f3-shape.md`, "Frame
+  - Passing is outcome-dependent selection, so binding claims are conditional on it (`studies/f3/docs/f3-shape.md`, "Frame
     screen and frame selection").
   - `test_screen.py` checks the bound, the engine equivalence and the domains.
-- `test_envelope.py`: 91 tests; the whole of `models/f3` is 170 tests, all passing (about 55 s).
+- `test_envelope.py`: 91 tests; the whole of `studies/f3/models` is 170 tests, all passing (about 55 s).
 
 ```bash
-uv run --with pytest --with numpy --with scipy python -m pytest -q models/f3
-uv run models/f3/validate.py [--phase dev|calibrate|accept] [--receipt FILE] [--stage1 FILE] [--reps N] [--start J] [--cells NAME ...] [--workers W] [--tag TAG]
+uv run --with pytest --with numpy --with scipy python -m pytest -q studies/f3/models
+uv run studies/f3/models/validate.py [--phase dev|calibrate|accept] [--receipt FILE] [--stage1 FILE] [--reps N] [--start J] [--cells NAME ...] [--workers W] [--tag TAG]
 ```
 
 ### The construction, as implemented
@@ -750,7 +750,7 @@ check, as it should be. At the time stage 2 was not yet executable and coverage 
 ### Third-review repairs (2026-10-29)
 
 Codex accepted R2 and the core R3 repairs and reproduced the rehearsal's 117 quantities, then found four gaps between the contract and the code (Correspondence
-2557; `docs/audits/2026-10-29-f3-response-and-ghelli-frame.md`). All four are repaired in `validate.py`:
+2557; `studies/f3/docs/audits/2026-10-29-f3-response-and-ghelli-frame.md`). All four are repaired in `validate.py`:
 1. **Stage 2 is executable** (`--stage1`, `check_stage1`, `pooled_verdicts`, `grid_result`; above). Before, `stage2` existed but `main` never called it.
 2. **The receipt's scope is enforced** (`check_receipt`). Before, acceptance checked the hashes only, so a receipt calibrated on some cells could be applied to others.
 3. **Delivered coverage is separated from truth-point test coverage.** Before, f\* coverage counted a replicate whose bound failed if the statistic at the truth
@@ -774,7 +774,7 @@ the command line with the protocol patched to three replicates (cells A2, A6, D2
 replicate block, pooled their counts and accepted, and a stage-2 verdict file offered as stage 1 was refused.
 
 **Fourth review (2026-10-29).** Codex reproduced the repairs and injected four counterexamples (Correspondence 2564;
-`docs/audits/2026-10-29-pilot-and-contract-review.md` §4). All four are closed:
+`studies/f3/docs/audits/2026-10-29-pilot-and-contract-review.md` §4). All four are closed:
 1. **V1.** A stage-1 file whose count was edited while its labels were kept, or which missed or repeated a quantity,
    passed. `check_stage1` now requires:
    - exactly the grid's quantities, once each;
@@ -818,7 +818,7 @@ not evaluate are never read. All 66,000 stored replicate rows of the current for
 re-score to their stored coverage. 164 F3 tests pass.
 
 **Seventh review (2026-10-31).** Codex found that a state tag escaped bound containment
-(`docs/audits/2026-10-31-screen-and-persistence-review.md` §3). Its case: push a bound below the truth and keep the
+(`studies/f3/docs/audits/2026-10-31-screen-and-persistence-review.md` §3). Its case: push a bound below the truth and keep the
 old summary. Tagged `finite`, stage 1 is refused; renamed `bogus`, it was accepted, because only `finite` and
 `ceiling-limited` bounds were checked for containment. `bound_state()` now holds every scored state to the engine's
 invariants before scoring:
@@ -854,7 +854,7 @@ and re-score unchanged. 170 F3 tests pass.
 
 ## Step 5: real designs (sprint 1, 2026-10-31)
 
-Claude Opus 5.5. The M2 result and its audit are `docs/audits/2026-10-31-m2-real-designs.md`. This
+Claude Opus 5.5. The M2 result and its audit are `studies/f3/docs/audits/2026-10-31-m2-real-designs.md`. This
 section is the interface sprint 2 (M1, M3) uses without a new design negotiation.
 
 ### Files
@@ -862,7 +862,7 @@ section is the interface sprint 2 (M1, M3) uses without a new design negotiation
 - `designs/m2.toml`: frozen declarations for one maximum. It holds the designs and their variant axes,
   the screen, the ρ grid, the reference minima, the window start, the qualification cells and seeds, and
   dated amendments. A new maximum gets its own file (for example `designs/m1.toml`) with the same
-  tables, committed before its first screen; select it with `F3_DESIGNS=models/f3/designs/m1.toml`.
+  tables, committed before its first screen; select it with `F3_DESIGNS=studies/f3/models/designs/m1.toml`.
 - `designs.py`: the adapter. One builder per source (`libya`, `qusaiba`, `borenshult`) returns `Row`s
   (`unit_id`, `source`, `cluster_name`, `cls_name`, optional `rate_class`, `young`/`old` stage
   indices, optional `lo_ma`/`hi_ma`, `d`, `transported`, `rule`, `evidence`, `depth`, `formation`) and

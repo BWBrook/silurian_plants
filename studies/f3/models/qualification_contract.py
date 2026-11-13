@@ -3,6 +3,7 @@
 import csv
 import gzip
 import hashlib
+import sys
 import io
 import json
 import math
@@ -10,6 +11,8 @@ from dataclasses import dataclass
 from pathlib import Path
 
 import validate as va
+sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "tools"))
+from moved import premove_files  # noqa: E402
 
 SCHEMA = "f3-real-qualification-v1"
 PHASES = ("calibrate", "accept", "stage2", "dev")
@@ -113,6 +116,8 @@ def phase_cells(binding: dict, phase: str, first: dict | None = None, diagnostic
 
 
 def check_binding(expected: dict, recorded: dict) -> None:
+    if isinstance(expected, dict) and isinstance(expected.get("files"), dict):
+        expected = dict(expected, files=premove_files(expected["files"]))
     expected, recorded = normalise(expected), normalise(recorded)
     require(isinstance(recorded, dict), "missing qualification binding")
     derived = []

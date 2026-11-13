@@ -1,6 +1,6 @@
 """Checks of the ramp-aware estimators, the realistic inputs and the recovery-study machinery.
 
-    uv run --with pytest --with numpy --with scipy pytest models/f3
+    uv run --with pytest --with numpy --with scipy pytest studies/f3/models
 
 Ages are Ma, decreasing towards the present. Datasets built from expected counts (psi * E * integral
 of N, not integers) carry no sampling noise, so the likelihood must peak at the truth. Coverage tests

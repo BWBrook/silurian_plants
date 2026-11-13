@@ -2,7 +2,7 @@
 
 The interpretation specification for the F3 paper. Every rendering (article, supplement, brief, agent guide)
 states these results only in these terms. Claude and Codex maintain it jointly; change it before changing
-the prose. Adopted 7 November 2026 after review C and the GPT-6 Pro review (`docs/audits/2026-11-07-gpt6pro-triage.md`).
+the prose. Adopted 7 November 2026 after review C and the GPT-6 Pro review (`studies/f3/docs/audits/2026-11-07-gpt6pro-triage.md`).
 
 Codex agrees this specification on 7 November 2026 for the stage 2 work. Timescale perturbations
 are shared-boundary scenarios, not a probability distribution over ages; intensity frontiers and

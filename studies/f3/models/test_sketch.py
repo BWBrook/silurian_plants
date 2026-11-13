@@ -1,6 +1,6 @@
 """Checks of the F3 sketch against known truths.
 
-    uv run --with pytest --with numpy --with scipy pytest models/f3
+    uv run --with pytest --with numpy --with scipy pytest studies/f3/models
 
 Ages are Ma, decreasing towards the present. Coverage tests use fixed seeds.
 """

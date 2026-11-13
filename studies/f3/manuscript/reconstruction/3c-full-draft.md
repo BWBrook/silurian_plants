@@ -5,7 +5,7 @@ step 3b at `2169670`. Claude's original is preserved at `c0f83fc`. Barry's
 instruction (chat, 11 November 2026): "add the flesh to the bones. But do it judiciously. Don't
 overwrite!" Numbers carry ledger bindings. Citation keys resolve in `references/refs.yaml`; source-reading
 provenance and its review limits are recorded in the drafting notes. The frozen
-canonical products in `manuscript/text/` stay unchanged until this draft is reviewed.
+canonical products in `studies/f3/manuscript/text/` stay unchanged until this draft is reviewed.
 
 ---
 
@@ -369,7 +369,7 @@ each other's work. GPT-6 Pro (OpenAI) supplied independent critiques, which were
 sources and saved outputs before integration. Barry W. Brook originated and guided the programme and
 contributed scientific decisions; he will review the final manuscript before submission. Task-specific
 roles, model versions and the limits of sessions whose exact variant was unavailable are recorded in
-`docs/charter.md`, `docs/audits/` and `manuscript/reconstruction/`, with adopted decisions in
+`docs/charter.md`, `docs/audits/` and `studies/f3/manuscript/reconstruction/`, with adopted decisions in
 `docs/decisions.md`.
 
 ## Funding
@@ -394,7 +394,7 @@ This research received no specific funding.
   11 November: $U(A)=33.23$, $U(T)=33.23\times20^{1/48}=35.37$, so $T=426.7+2(35.37-33.23)=430.98$.
 - **References.** The 3b candidates were read before citing. Codex read Yang and Rannala, and Parham et
   al., in its 3b review; a delegated Codex job read the other 11 (`gpt-6.1-sol` with web search,
-  legitimately hosted copies only; receipt in `docs/audits/2026-11-11-3c-reference-reads.md` with its
+  legitimately hosted copies only; receipt in `studies/f3/docs/audits/2026-11-11-3c-reference-reads.md` with its
   prompt and JSON output). Claude checked four of the quotes it
   returned verbatim against the source PDFs
   (Steemans, dos Reis, Benton, Peters) and rewrote each sentence to the scope the source supports: Ho and
@@ -420,7 +420,7 @@ This research received no specific funding.
   bound, all dependence comparisons labelled unqualified, the Oman gap dropped as a cause, scoped
   claims for the 515.5 Ma evidence, Brown and Smith's effective-prior comparison, the regional scope
   of deposit scarcity, and the source-access wording. Claude checked the Gamma(2, 2) shared-well
-  effect against `models/f3/envelope.py` and `cluster_k=2.0` in `m2_results.csv`. Step 3c is locked as
+  effect against `studies/f3/models/envelope.py` and `cluster_k=2.0` in `m2_results.csv`. Step 3c is locked as
   a draft.
 - **End matter.** The AI-use statement credits recorded systems and tasks and keeps Barry's final
   review prospective. Funding follows Barry's chat reply, 11 November 2026: "No specific funding for

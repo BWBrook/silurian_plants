@@ -2,7 +2,7 @@ import csv,hashlib,importlib.util,json,sys
 from decimal import Decimal, ROUND_CEILING, localcontext
 from pathlib import Path
 sys.dont_write_bytecode=True
-ROOT=Path(__file__).resolve().parents[4]; OUT=Path('/private/tmp/sp-sprint2-independent-check'); OUT.mkdir(exist_ok=True)
+ROOT=Path(__file__).resolve().parents[6]; OUT=Path('/private/tmp/sp-sprint2-independent-check'); OUT.mkdir(exist_ok=True)
 def sha(p):return hashlib.sha256(p.read_bytes()).hexdigest()
 source_files=['library/closed/balme1961_macbook20261030.pdf','library/closed/strother2021_SI.pdf','library/closed/wellman2015_firststudy.pdf']
 reg=list(csv.DictReader((ROOT/'library/closed.tsv').open(),delimiter='\t'))
@@ -11,14 +11,14 @@ for f in source_files:
  rr=[r for r in reg if 'library/'+r['file']==f];assert len(rr)==1
  h=sha(ROOT/f);assert h==rr[0]['sha256']
  checks.append(dict(path=f,sha256=h,registered_sha256=rr[0]['sha256'],match=True))
-inputs=['tools/sprint2.py','data/units/qusaiba_inventory.csv','data/units/sprint2/qusaiba_e2_reports.csv','data/units/sprint2/conditional_sampling.csv','data/units/sprint2/samphire1961_inventory.csv','data/occurrences/readings.csv','data/occurrences/interpretations.csv','data/units/outcomes.csv']
+inputs=['studies/f3/tools/sprint2.py','studies/f3/data/units/qusaiba_inventory.csv','studies/f3/data/units/sprint2/qusaiba_e2_reports.csv','studies/f3/data/units/sprint2/conditional_sampling.csv','studies/f3/data/units/sprint2/samphire1961_inventory.csv','studies/f3/data/occurrences/readings.csv','studies/f3/data/occurrences/interpretations.csv','studies/f3/data/units/outcomes.csv']
 input_hashes={f:sha(ROOT/f) for f in inputs}
-sp=importlib.util.spec_from_file_location('sprint2_review',ROOT/'tools/sprint2.py');mod=importlib.util.module_from_spec(sp);sp.loader.exec_module(mod)
+sp=importlib.util.spec_from_file_location('sprint2_review',ROOT/'studies/f3/tools/sprint2.py');mod=importlib.util.module_from_spec(sp);sp.loader.exec_module(mod)
 mod.OUT=OUT/'reproduced';mod.OUT.mkdir(exist_ok=True)
 mod.qusaiba();mod.scenarios()
 for f in ['qusaiba_e2_reports.csv','conditional_sampling.csv']:
- assert sha(mod.OUT/f)==sha(ROOT/'data/units/sprint2'/f),f
-rows=list(csv.DictReader((ROOT/'data/units/sprint2/conditional_sampling.csv').open()))
+ assert sha(mod.OUT/f)==sha(ROOT/'studies/f3/data/units/sprint2'/f),f
+rows=list(csv.DictReader((ROOT/'studies/f3/data/units/sprint2/conditional_sampling.csv').open()))
 recomputed=[]
 with localcontext() as ctx:
  ctx.prec=60

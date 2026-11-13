@@ -3,14 +3,14 @@
 # dependencies = ["numpy", "scipy"]
 # ///
 
-"""F3 reshape v3 (docs/f3-shape.md): the compatibility estimator for fossil absences.
+"""F3 reshape v3 (studies/f3/docs/f3-shape.md): the compatibility estimator for fossil absences.
 
 Given eligible, binary sampling units it answers, under a named history class K: how intense could the
 lineage's encounter intensity have been between the first appearance and a candidate origin T, and
 which origins T are excluded by the empty older units?
 
 Ages are Ma, decreasing towards the present, so older means larger. Stage s spans (base[s-1], base[s]].
-Units, stage ranges and the first appearance follow the analysis specification (models/f3/specs/README.md).
+Units, stage ranges and the first appearance follow the analysis specification (studies/f3/models/specs/README.md).
 
 Model. Unit i has a latent age t_i, uniform within its stage range, an eligibility class c(i), a cluster
 k(i) and a binary outcome d_i. It detects with probability 1 - exp(-r_c u_k a(t_i)), r_c = -log(1 - p_c),
@@ -189,7 +189,7 @@ class Units:
 
 @dataclass(frozen=True)
 class Spec:
-    """The inference-side fields of an analysis specification (models/f3/specs/)."""
+    """The inference-side fields of an analysis specification (studies/f3/models/specs/)."""
 
     reference_stages: int = 5
     min_units_per_class: int = 10

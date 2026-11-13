@@ -5,8 +5,8 @@
 
 """A maximum on frozen real designs (designs/m2.toml, or F3_DESIGNS): the screen, and the empirical read-outs.
 
-    uv run models/f3/m2.py screen            # out/m2_screen.csv: every design, variant, rho and reference minimum
-    uv run models/f3/m2.py results [workers]  # out/m2_results.csv at the qualified critical-value shifts
+    uv run studies/f3/models/m2.py screen            # out/m2_screen.csv: every design, variant, rho and reference minimum
+    uv run studies/f3/models/m2.py results [workers]  # out/m2_results.csv at the qualified critical-value shifts
 
 The screen (S0, S1 in m2.toml) is the function `screen`, called unchanged by qualify.py on every simulated
 replicate. It uses the unshifted critical value, so it does not depend on the calibration.

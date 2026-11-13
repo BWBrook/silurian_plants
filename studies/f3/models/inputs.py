@@ -3,9 +3,9 @@
 # dependencies = ["numpy"]
 # ///
 
-"""Per-stage sampling effort for the window Darriwilian to Emsian, from data/occurrences/effort.csv.
+"""Per-stage sampling effort for the window Darriwilian to Emsian, from studies/f3/data/occurrences/effort.csv.
 
-    uv run models/f3/inputs.py
+    uv run studies/f3/models/inputs.py
 
 Two series, each summed over palaeogeographic units: spores are the Palynodata documents with datable
 palynomorph records (`n_docs`); bodies are the PBDB collections of all taxa from land and marginal
@@ -21,7 +21,7 @@ import numpy as np
 
 import sim
 
-EFFORT_CSV = sim.ROOT / "data" / "occurrences" / "effort.csv"
+EFFORT_CSV = sim.ROOT / "studies" / "f3" / "data" / "occurrences" / "effort.csv"
 OUT = Path(__file__).resolve().parent / "out"
 OLDEST, YOUNGEST = "Darriwilian", "Emsian"
 

@@ -36,7 +36,7 @@ from scipy import optimize
 
 HERE = Path(__file__).resolve().parent
 F3 = HERE.parent
-ROOT = F3.parents[1]
+ROOT = F3.parents[2]
 if str(F3) not in sys.path:
     sys.path.insert(0, str(F3))
 
@@ -496,10 +496,10 @@ def _sha256(path: Path) -> str:
 def _input_paths() -> list[Path]:
     return [
         CONFIG, HERE / "contamination.py", HERE / "test_contamination.py",
-        ROOT / "docs" / "audits" / "2026-11-01-loop2-count-gate.md",
+        ROOT / "studies" / "f3" / "docs" / "audits" / "2026-11-01-loop2-count-gate.md",
         F3 / "designs.py", F3 / "envelope.py", F3 / "sim.py", F3 / "designs" / "m2.toml",
-        ROOT / "data" / "timescale.csv", ROOT / "data" / "units" / "libya_appendix1.csv",
-        ROOT / "data" / "units" / "libya_chart_reports.csv", ROOT / "data" / "units" / "libya_prose_support.csv",
+        ROOT / "data" / "timescale.csv", ROOT / "studies" / "f3" / "data" / "units" / "libya_appendix1.csv",
+        ROOT / "studies" / "f3" / "data" / "units" / "libya_chart_reports.csv", ROOT / "studies" / "f3" / "data" / "units" / "libya_prose_support.csv",
     ]
 
 

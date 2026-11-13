@@ -22,7 +22,7 @@ node --check portal/app.js
 
 `uv` installs the locked, script-local dependencies. No project-wide environment is needed.
 The build reads committed, tracked `docs/**/*.md`, `taxa/*.md`, selected `data/**/README.md`,
-`models/f3/README.md`, the root README and `data/timescale.csv`. Referenced, tracked illustrations
+`studies/f3/models/README.md`, the root README and `data/timescale.csv`. Referenced, tracked illustrations
 are copied with source checksums; untracked and excluded image paths fail the build. The build
 refuses uncommitted source changes. Data `local/`,
 `closed/` and `work/` README files are excluded; full texts and bulk datasets are not bundled.

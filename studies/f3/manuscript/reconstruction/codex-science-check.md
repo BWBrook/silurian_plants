@@ -62,9 +62,9 @@ specific; the first foregrounds the result the frontier actually quantifies.
 
 ## Hypothesis provenance and scientific form
 
-`docs/loop3-design.md` opens by saying that it describes the implemented analysis after source
+`studies/f3/docs/loop3-design.md` opens by saying that it describes the implemented analysis after source
 corrections and is **not a preregistration before seeing the pilot**. Its extrapolation grid was added
-after seeing the steep-decline shape results. `docs/plan-f3.md` explicitly distinguishes estimator
+after seeing the steep-decline shape results. `studies/f3/docs/plan-f3.md` explicitly distinguishes estimator
 acceptance criteria from predictions about which timescale is correct. The declared fixed-history
 order-statistic formula predicts narrowing with increasing sample size, but it does not prospectively
 predict proximity to a particular clock. That proximity also depends on the admitted oldest fossil,
@@ -121,7 +121,7 @@ meaning of the results.
 
 ### Murzuq, C24
 
-Selected `models/f3/out/m2_results.csv` by `design=LY-MZ-CU`, `primary=True`,
+Selected `studies/f3/models/out/m2_results.csv` by `design=LY-MZ-CU`, `primary=True`,
 `variant=allocation=stage;cluster_k=2.0;material_type=chart-code`:
 
 | Fixed delivery rho | H0c at 459.1 Ma | H0 at 459.1 Ma |
@@ -131,7 +131,7 @@ Selected `models/f3/out/m2_results.csv` by `design=LY-MZ-CU`, `primary=True`,
 
 The constant sustained-path result concerns $\rho f$ near 0.091. Under the more general H0 class the
 exposure-weighted result differs. Relative producer abundance requires additional proportional and
-comparable detection assumptions (`docs/f3-shape.md`, layer 2): production, transport, preservation,
+comparable detection assumptions (`studies/f3/docs/f3-shape.md`, layer 2): production, transport, preservation,
 preparation and reporting intervene. Equal delivery alone cannot establish historical abundance.
 
 Compact replacement:
@@ -145,7 +145,7 @@ The assumptions paragraph must retain the age mixture, reference-purity and well
 
 ### Body-record rate and delay, C33/C48
 
-`models/f3/loop3/out/frontier.csv`, `reading=main`, `unit_treatment=primary`, `delay=0`, gives later/earlier
+`studies/f3/models/loop3/out/frontier.csv`, `reading=main`, `unit_treatment=primary`, `delay=0`, gives later/earlier
 ratios 8.0841 at 444 Ma, 9.4860 at 447 Ma and 11.8224 at 452 Ma. These are flat-plus-step compatibility
 contours at the data-selected oldest possible B2 age, not a fitted earlier rate.
 

@@ -29,7 +29,7 @@ identify historical abundance, individual biological mechanisms or the true reco
 
 ## Qualification: exact current gate and scope
 
-`models/f3/validate.py::lower_limit`, `stage1`, `stage2` supply the numerical rule used by
+`studies/f3/models/validate.py::lower_limit`, `stage1`, `stage2` supply the numerical rule used by
 `qualification_contract.py::assessment`:
 
 - Nominal coverage is 0.95; calibration targets empirical coverage 0.955 on an independent batch.
@@ -42,10 +42,10 @@ identify historical abundance, individual biological mechanisms or the true reco
 - Every acceptance quantity must pass. Each stage caps attempts at 20 times the required passing
   count. Missing/incomplete or pre-screen numerical-error evidence does not silently pass.
 
-Sources: `models/f3/qualification_contract.py::protocol`, `summarise`, `assessment`;
-`models/f3/qualify.py` module contract and `run_cell`; `docs/f3-shape.md`, “Conditional qualification”
+Sources: `studies/f3/models/qualification_contract.py::protocol`, `summarise`, `assessment`;
+`studies/f3/models/qualify.py` module contract and `run_cell`; `studies/f3/docs/f3-shape.md`, “Conditional qualification”
 and its counter-review amendment. The current saved Murzuq receipt
-`models/f3/out/qual/LY-MZ-CU_rho1_accept.json` has `phase=accept`, `result=pass`, `complete=true`,
+`studies/f3/models/out/qual/LY-MZ-CU_rho1_accept.json` has `phase=accept`, `result=pass`, `complete=true`,
 `target=1000`, `shift=0`, and binds this protocol in `binding.protocol`.
 
 The certificate is marginal per design and declared quantity on a finite scenario grid, conditional on
@@ -69,22 +69,22 @@ r=\frac{(A-c)(0.05^{-1/n}-1)}{T-d-A}.
 The reported later/earlier contrast is `1/r`. The definition requires `T-d>A`; otherwise the stored
 status is `candidate_not_older_than_envelope_anchor`, with no defined contrast. It is not an exclusion.
 For primary B2, `A=426.7`, `c=393.47`, `n=48`. Longer assumed delays reduce the required suppression
-within this domain. Source: `models/f3/loop3/frontier.py::contour` and `out/frontier.csv`.
+within this domain. Source: `studies/f3/models/loop3/frontier.py::contour` and `out/frontier.csv`.
 
 ## Exact evidence selectors
 
 | Result | Saved case / derivation selector |
 |---|---|
 | Age envelope and 428.8/428.5–428.9/431.6 | `loop3/analysis.py::envelope`: possible `max_ma>c`, guaranteed `min_ma>=c`, `A=max(possible.max_ma)`; `endpoint.py::known_cutoff_summary`. `loop3/out/reviewed_bounds.csv`: `category=B2, reading=main, units=locality_age, variant=primary, cutoff=Emsian`, histories `flat`, `pbdb_plant_excluded`, `pbdb_all`, `decline25`; guaranteed 48, possible 50. |
-| Murzuq 0.091/0.184/0.910 | `models/f3/out/m2_results.csv`: primary `design=LY-MZ-CU`, `allocation=stage`, `cluster_k=2.0`, `material_type=chart-code`; start 459.1 Ma, `rho=1`, classes `H0c` versus `H0`; `rho=0.1`, `H0c` for 0.910. C24. |
+| Murzuq 0.091/0.184/0.910 | `studies/f3/models/out/m2_results.csv`: primary `design=LY-MZ-CU`, `allocation=stage`, `cluster_k=2.0`, `material_type=chart-code`; start 459.1 Ma, `rho=1`, classes `H0c` versus `H0`; `rho=0.1`, `H0c` for 0.910. C24. |
 | 10 versus 18 | C45, stage-2 sample-support output. Darriwilian support 469.4–458.2 Ma; under uniform allocation at start 459.1 Ma, the eligible portion is `(459.1-458.2)/(469.4-458.2)=0.080357…` for each such cutting. The other 18 supports are wholly younger. |
-| 434.1 outer value | `data/timescale.csv`: Sheinwoodian 432.9 + 1.2 = 434.1; Homerian 430.6 + 1.3 = 431.9 on the current scale. Difference 2.2 Ma current/current, 2.9 Ma versus published 431.2. `docs/audits/2026-11-08-c47-source-check.md`; C47. |
+| 434.1 outer value | `data/timescale.csv`: Sheinwoodian 432.9 + 1.2 = 434.1; Homerian 430.6 + 1.3 = 431.9 on the current scale. Difference 2.2 Ma current/current, 2.9 Ma versus published 431.2. `studies/f3/docs/audits/2026-11-08-c47-source-check.md`; C47. |
 | Unit and timescale cases | C30 `reviewed_bounds.csv`, B2 main `flat`: `region_stage` 19 units gives 432.38; curated oldest set 15 gives 434.05. C50 `out/stage2_timescale/bound_sensitivity.csv`: `category=B2_primary, history=flat`, `all_younger` 427.31 and `all_older` 430.42. Five deterministic treatments, not draws from a geological age distribution. |
 | Six-history shape claim | `out/stage2_interval/interval_feasibility_summary.csv`, finite-sample columns, all four B2 inclusion states: pure `decline10` fails throughout; `decline25` has a passing 50-unit witness (p≈0.067), not 49 or 48. Every canonical B0 inclusion state fails all six. The optimised allocations are feasibility witnesses, not estimated dates or adequate fitted histories. C49. |
 | Contrasts / delay / half rate | `out/frontier.csv`: B2 main, primary or named coarser `unit_treatment`, `assumed_diagnostic_delay_myr=0`, candidate 444–452 Ma; C48. `out/delay_sensitivity.csv`: B2 `flat`, bound 428.84000595; minimum assumed offsets `T-bound` give 15.16–23.16 Myr; C33. Half-rate stored bound 430.9800119 remains pending ledger entry. |
 | Oman and exploratory dependence | C40 canonical B0 `flat` 455.185345419 versus legacy B0 434.5; keep inventory case explicit. C51 well/formation weighting is the unqualified exploratory dependence sensitivity, not a newly qualified 0.4 bound. |
 
-Paths abbreviated `loop3/` above are under `models/f3/loop3/`. The current `estimands.md` age-allocation
+Paths abbreviated `loop3/` above are under `studies/f3/models/loop3/`. The current `estimands.md` age-allocation
 section states the full almost-sure support conditions: with support failure probability delta, the
 direct size bound becomes alpha + delta; geological ranges have no demonstrated joint coverage. That
 condition must travel with any conservative-rejection interpretation in step 3b.

@@ -22,11 +22,15 @@ the purpose, the criteria a framing must meet and the planned route.
 - [docs/sources.md](docs/sources.md): register of every data source held or still needed.
 - [docs/spore-compilation-plan.md](docs/spore-compilation-plan.md): plan for the dispersed-spore
   occurrence dataset.
-- [docs/decisions.md](docs/decisions.md): dated decision record.
+- [docs/decisions.md](docs/decisions.md): dated record of programme and cross-study decisions.
+- [studies/](studies/): one folder per study, each with its own docs, data, models, tools, paper and
+  decision log. [studies/f3/](studies/f3/README.md) is the first: what fossil absences can say about
+  molecular-clock maxima for land plants (paper in preparation for *Proc B*).
 - [data/timescale.csv](data/timescale.csv): ICS v2024/12 stage ages.
 - [data/eprp/](data/eprp/README.md): literature, PBDB and Macrostrat records, Earth-system context
   and software pointers extracted from Barry's EPRP programme.
-- [docs/audits/](docs/audits/): independent checks of the cards and of the EPRP deposit.
+- [docs/audits/](docs/audits/): independent checks of the cards, the EPRP deposit, the spore data and
+  literature acquisition; each study keeps its own audits.
 - [tools/cards.py](tools/cards.py): card validation, Crossref DOI checks and index generation
   (`uv run tools/cards.py check|dois|index`).
 

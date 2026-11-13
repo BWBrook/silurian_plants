@@ -35,9 +35,9 @@ folders on the user's own machine.
 | `data/external/rock-record/` | British Geological Survey unit and polygon-derived tables | BGS DigMapGB-625 and Lexicon | Open Government Licence (v3 per the BGS page); contains BGS materials (c) UKRI. `bgs_geochronology_divisions_used.csv` and `bgs_units_silurian_devonian.csv` carry Lexicon fields with no licence statement found: free access, UKRI copyright, reuse terms unconfirmed, attribution given |
 | `data/external/climate/` | HadCM3L land summaries and slices for 485-383 Ma | PhanDA priors (Judd et al. 2024; Valdes et al. 2021) | CC BY 4.0 for the derived numbers. The BRIDGE mask and snow fields have no stated licence and are not redistributed |
 | `data/external/library/`, `data/eprp/library/` | bibliographic metadata, screening tables | OpenAlex, Crossref | CC0 |
-| `data/spores/`, `data/units/`, `data/occurrences/`, `data/macro/` | spore, occurrence and unit tables compiled for this project from the sources above | project work built on third-party records | CC BY-SA 4.0 for the compilation and annotations; the underlying source records keep the terms above |
+| `data/spores/`, `studies/f3/data/units/`, `studies/f3/data/occurrences/`, `studies/f3/data/macro/` | spore, occurrence and unit tables compiled for this project from the sources above | project work built on third-party records | CC BY-SA 4.0 for the compilation and annotations; the underlying source records keep the terms above |
 | `portal/assets/*.webp` | eight reading-room images | Wikimedia Commons; creator, licence and changes per image in `portal/images.json` | see the image table below |
-| `models/griwm_r/` | GRIWM extinction-model R code | adapted from CRIWM by Fred Saltre | MIT (`models/griwm_r/LICENSE`) |
+| `studies/f3/models/griwm_r/` | GRIWM extinction-model R code | adapted from CRIWM by Fred Saltre | MIT (`studies/f3/models/griwm_r/LICENSE`) |
 
 ### Portal images
 

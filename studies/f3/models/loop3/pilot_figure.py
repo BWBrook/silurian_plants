@@ -12,9 +12,9 @@ matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 import pandas as pd
 
-ROOT = Path(__file__).resolve().parents[3]
+ROOT = Path(__file__).resolve().parents[4]
 OUT = Path(__file__).resolve().parent / "out"
-h = pd.read_csv(ROOT / "data/macro/horizons_v0.csv")
+h = pd.read_csv(ROOT / "studies/f3/data/macro/horizons_v0.csv")
 iv = pd.read_csv(OUT / "pilot_intervals.csv")
 iv = iv[iv.reading == "main"]
 

@@ -45,9 +45,9 @@ compatibility scenario rather than a nominal, selection-adjusted 95% procedure.
 
 ### Primary body envelope and finite domain
 
-`models/f3/loop3/analysis.py`, `envelope`, selects `max_ma > cutoff`, counts only `min_ma >= cutoff`
+`studies/f3/models/loop3/analysis.py`, `envelope`, selects `max_ma > cutoff`, counts only `min_ma >= cutoff`
 and passes the largest possible `max_ma` plus that count to `known_cutoff_summary`.
-`models/f3/loop3/endpoint.py` inverts the maximum order statistic under a fixed recording density.
+`studies/f3/models/loop3/endpoint.py` inverts the maximum order statistic under a fixed recording density.
 `histories.py` fixes `YOUNG=393.47` and `DOMAIN=469.4`.
 
 In `reviewed_bounds.csv`, select:
@@ -68,7 +68,7 @@ comparison concerns B0. The object labels must remain visible even when detailed
 
 ### Murzuq target classes
 
-`models/f3/out/m2_results.csv`, select `design=LY-MZ-CU`, `primary=True`,
+`studies/f3/models/out/m2_results.csv`, select `design=LY-MZ-CU`, `primary=True`,
 `variant=allocation=stage;cluster_k=2.0;material_type=chart-code`:
 
 | Fixed rho | `fstar_H0c_459.1` | `fstar_H0_459.1` |
@@ -102,17 +102,17 @@ is given a shared well effect, as the Discussion already states correctly.
 
 `data/timescale.csv` gives Homerian 430.6±1.3 and Sheinwoodian 432.9±1.2 Ma. The current-scale rule
 gives 431.9 and 434.1 Ma, a 2.2 Myr difference. Against the published historical 431.2 Ma the comparison is
-2.9 Myr. `docs/audits/2026-11-08-c47-source-check.md` records the source interpretation and decimal
+2.9 Myr. `studies/f3/docs/audits/2026-11-08-c47-source-check.md` records the source interpretation and decimal
 arithmetic. The outer rule does not date the fertile slab, establish crown membership or predict a
 clock-posterior shift.
 
 ## C19: whose calculation, and what persisted
 
-`models/pilot-asr/README.md` identifies this as a new analysis, predeclared and run by Claude on
+`studies/f3/models/pilot-asr/README.md` identifies this as a new analysis, predeclared and run by Claude on
 Hooper’s deposited inputs because the deposit contained node summaries but no saved mapped paths.
 `docs/charter.md` records Claude’s mapping, diagnostics and corrections after Codex review.
 
-`models/pilot-asr/common.R` generates equal-rates(`model="ER"`) stochastic maps for character X21;
+`studies/f3/models/pilot-asr/common.R` generates equal-rates(`model="ER"`) stochastic maps for character X21;
 state 3 is the proximal trilete aperture. Its path reader requires the state to remain unchanged along
 the full path from crown Embryophyta to crown Tracheophyta. Ending with a trilete state after a loss
 and regain is insufficient.

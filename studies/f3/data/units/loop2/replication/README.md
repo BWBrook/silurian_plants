@@ -64,7 +64,7 @@ would not establish that every sample predates 459.1 Ma.
 
 ## External candidates and search limits
 
-`manuscript/external_candidates.csv` records the seven bounded candidate/design
+`studies/f3/manuscript/external_candidates.csv` records the seven bounded candidate/design
 dispositions and their source locators. No matched counted Katian–Llandovery
 reference was recovered in the bounded review. No claim of exhaustive coverage of
 346 PDFs or 195 text files is supported: a reproducible roster, exact query,
@@ -80,8 +80,8 @@ reused specimens or, by itself, statistical non-independence.
 
 - Primary PDF SHA-256: `5932b8da36d10be365089f06cab55ad472ade98c238186432058e9493459936b`.
 - Extraction CSV SHA-256: `325e97fa006e7f2fd3f50cb5f193fbd843356a646341f871088aa4644dd66754`.
-- Primary-source audit: `docs/audits/2026-11-01-loop2-close-qsim-source-review.md`.
-- Method implementation: `models/f3/loop2/replication/qsim_share.py`; numerical outputs
+- Primary-source audit: `studies/f3/docs/audits/2026-11-01-loop2-close-qsim-source-review.md`.
+- Method implementation: `studies/f3/models/loop2/replication/qsim_share.py`; numerical outputs
   retain their declared conditional/scenario scope and do not validate the historical
   microscopy protocol.
 

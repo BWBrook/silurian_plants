@@ -23,8 +23,8 @@ recording or character histories permit older origins?
 
 These questions organise completed analyses. They replace the retrospective H1–H3 labelled “a priori”
 in Claude's draft. The original body-record design follows the pilot and explicitly disclaims
-preregistration before it (`docs/loop3-design.md`); the earlier plan distinguishes estimator checks from
-predictions about the correct timescale (`docs/plan-f3.md`).
+preregistration before it (`studies/f3/docs/loop3-design.md`); the earlier plan distinguishes estimator checks from
+predictions about the correct timescale (`studies/f3/docs/plan-f3.md`).
 
 The useful theoretical expectation is precise: for a fixed history, cutoff and oldest find, adding
 independent occurrences narrows the older bound. That result does not predict which clock the bound

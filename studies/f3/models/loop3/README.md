@@ -7,12 +7,12 @@ qualification system; no qualification status is inherited.
 From the repository root:
 
 ```sh
-uv run models/f3/loop3/build_reviewed.py
-uv run models/f3/loop3/analysis.py
-uv run models/f3/loop3/simulation.py
-uv run models/f3/loop3/suppression_sensitivity.py
-uv run models/f3/loop3/figures_reviewed.py
-uv run --with numpy --with pandas --with scipy --with pytest python -m pytest models/f3/loop3/test_endpoint.py models/f3/loop3/test_simulation.py models/f3/loop3/test_analysis.py models/f3/loop3/test_suppression.py -q
+uv run studies/f3/models/loop3/build_reviewed.py
+uv run studies/f3/models/loop3/analysis.py
+uv run studies/f3/models/loop3/simulation.py
+uv run studies/f3/models/loop3/suppression_sensitivity.py
+uv run studies/f3/models/loop3/figures_reviewed.py
+uv run --with numpy --with pandas --with scipy --with pytest python -m pytest studies/f3/models/loop3/test_endpoint.py studies/f3/models/loop3/test_simulation.py studies/f3/models/loop3/test_analysis.py studies/f3/models/loop3/test_suppression.py -q
 ```
 
 The workload is moderate and runs locally. `endpoint.py` implements exact fixed-history
@@ -43,5 +43,5 @@ The main outputs in `out/` are:
 Each producing stage writes its own receipt. `beyond_domain` means no bound within 393.47–469.4 Ma,
 not proof of an infinitely old origin. A fixed delay shifts the lineage domain as well as its
 bound. These results concern a recoverable category under the declared history; crown implications
-are a separate biological argument. See `docs/loop3-design.md`, `docs/loop3-results.md` and the
+are a separate biological argument. See `studies/f3/docs/loop3-design.md`, `studies/f3/docs/loop3-results.md` and the
 three Loop 3 audits for the scientific interpretation, evidence limits and handoff to Claude.

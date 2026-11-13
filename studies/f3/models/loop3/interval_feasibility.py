@@ -27,7 +27,7 @@ from analysis import select_records, shape_check
 from histories import YOUNG, load_histories
 
 
-ROOT = Path(__file__).resolve().parents[3]
+ROOT = Path(__file__).resolve().parents[4]
 HERE = Path(__file__).resolve().parent
 OUT = HERE / "out" / "stage2_interval"
 OPT_TOL = 5e-11
@@ -237,8 +237,8 @@ def run(output=OUT):
     output = Path(output)
     output.mkdir(parents=True, exist_ok=True)
     inputs = [
-        ROOT / "data/macro/horizons_reviewed.csv",
-        ROOT / "data/macro/effort_reviewed.csv",
+        ROOT / "studies/f3/data/macro/horizons_reviewed.csv",
+        ROOT / "studies/f3/data/macro/effort_reviewed.csv",
         ROOT / "data/timescale.csv",
         HERE / "analysis.py",
         HERE / "endpoint.py",

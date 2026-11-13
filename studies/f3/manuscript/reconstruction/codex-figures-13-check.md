@@ -90,7 +90,7 @@ older/reference *ρ*, equal delivery and audited target zeros.
 
 ## Evidence and limits
 
-Inspected `figures_step4.py`, imported helpers/constants in `manuscript/figures.py`,
+Inspected `figures_step4.py`, imported helpers/constants in `studies/f3/manuscript/figures.py`,
 `figures/figures.json`, `data/timescale.csv`, the strict spore first-appearance rows, main B0/B2 unit
 membership, selected `m2_units.csv` and `m2_results.csv` rows, the legends and the existing Borenshult
 age/source audit tables. Every declared input and output hash in the figure manifest matches its

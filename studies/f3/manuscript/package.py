@@ -4,11 +4,14 @@ import csv
 import ast
 import hashlib
 import json
+import sys
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parents[1]
+ROOT = Path(__file__).resolve().parents[3]
 HERE = Path(__file__).resolve().parent
-ARCHIVAL_RECEIPTS = {"models/f3/loop3/out/oman_receipt.json": "df805b2"}
+ARCHIVAL_RECEIPTS = {"studies/f3/models/loop3/out/oman_receipt.json": "df805b2"}
+sys.path.insert(0, str(ROOT / "studies/f3/tools"))
+from moved import PREMOVE, current  # noqa: E402
 
 
 def dependency_closure(seeds):
@@ -23,7 +26,7 @@ def dependency_closure(seeds):
         seen.add(relative)
         if relative in ARCHIVAL_RECEIPTS:
             availability = "archived provenance; regenerate at historical commit"
-            locator = f"https://github.com/BWBrook/silurian_plants/blob/{ARCHIVAL_RECEIPTS[relative]}/{relative}"
+            locator = f"https://github.com/BWBrook/silurian_plants/blob/{ARCHIVAL_RECEIPTS[relative]}/{PREMOVE.get(relative, relative)}"
         elif "library" in p.relative_to(ROOT).parts or "local" in p.relative_to(ROOT).parts:
             availability, locator = "excluded source; see source register", "docs/sources.md"
         elif relative == archive["path"]:
@@ -47,8 +50,8 @@ def dependency_closure(seeds):
                 if not isinstance(mapping, dict):
                     continue
                 for path in mapping:
-                    path = "models/f3/designs/m2.toml" if path == "active_declaration" else path
-                    if path.startswith(("data/", "models/", "tools/", "manuscript/", "docs/", "library/")):
+                    path = "studies/f3/models/designs/m2.toml" if path == "active_declaration" else current(path)
+                    if path.startswith(("data/", "studies/", "tools/", "docs/", "library/")):
                         pending.append((path, relative))
                     elif Path(path).suffix:
                         candidates = {q.resolve() for q in (p.parent / path, p.parent.parent / path)
@@ -64,7 +67,7 @@ def dependency_closure(seeds):
                 elif isinstance(node, ast.ImportFrom) and node.module:
                     names = [node.module]
                 for name in names:
-                    for directory in (p.parent, ROOT / "tools", ROOT / "models/f3", ROOT / "models/f3/loop2"):
+                    for directory in (p.parent, ROOT / "tools", ROOT / "studies/f3/tools", ROOT / "studies/f3/models", ROOT / "studies/f3/models/loop2"):
                         q = directory / (name.replace(".", "/") + ".py")
                         if q.is_file():
                             pending.append((str(q.relative_to(ROOT)), relative))
@@ -83,7 +86,7 @@ def main():
     files = {}
 
     def add(path, role):
-        p = ROOT / path
+        p = ROOT / current(path)
         if not p.is_file():
             raise FileNotFoundError(path)
         if p.is_symlink() or "library" in p.relative_to(ROOT).parts:
@@ -101,46 +104,47 @@ def main():
     for name in ("claims.csv", "value-bindings.csv", "estimands.md", "makedoc.lock.json", "external_candidates.csv", "mapping.csv", "figures.py", "figures_main.py", "figures_abstract.py", "tables.py", "package.py",
                  "README.md", "authors.yaml", "Makefile", "settings/build.yaml", "csl/chicago-author-date.csl",
                  "csl/proceedings-of-the-royal-society-b.csl"):
-        add("manuscript/"+name, "authored manuscript build, evidence ledger or reproduction code")
-    collect("manuscript/text/*.md", "authored paper source: main, supplement, brief, agent paper")
-    collect("manuscript/build/*.pdf", "rendered snapshot of the paper sources")
-    collect("manuscript/figures/*", "authored figure or bound figure receipt")
+        add("studies/f3/manuscript/"+name, "authored manuscript build, evidence ledger or reproduction code")
+    collect("studies/f3/manuscript/text/*.md", "authored paper source: main, supplement, brief, agent paper")
+    collect("studies/f3/manuscript/build/*.pdf", "rendered snapshot of the paper sources")
+    collect("studies/f3/manuscript/figures/*", "authored figure or bound figure receipt")
     for name in ("references/dois.txt", "references/manual.yaml", "references/refs.yaml", "tools/refs.py", "tools/claims.py"):
         add(name, "bibliography ledger, generated bibliography or its builder")
     for name in ("loop1-close.md", "loop2-close.md", "loop2-sprint1-results.md", "loop2-sprint2-results.md",
                  "f3-shape.md", "pilot-traits.md", "charter.md", "decisions.md", "plan-loop3.md", "loop3-pilot.md",
                  "loop3-design.md", "loop3-results.md"):
-        add("docs/"+name, "authored methods, interpretation or provenance")
-    collect("docs/audits/2026-11-01-loop2-*.md", "authored independent review")
-    collect("docs/audits/2026-11-01-loop2-*.json", "verification receipt")
-    collect("docs/audits/2026-11-01-loop3-*", "authored independent review or verification receipt")
-    collect("models/f3/loop3/*.py", "body-record method, simulation or figure code")
-    collect("models/f3/loop3/README.md", "body-record method guide")
-    collect("models/f3/loop3/out/**/*", "reviewed body-record output, superseded pilot output or receipt")
-    collect("data/macro/*", "source-linked body-record inventory and adjudication")
-    collect("models/f3/loop2/**/*", "new method, sensitivity or conditional diagnostic")
-    collect("data/units/loop2/**/*", "source-linked factual extraction or authored evidence ledger")
-    collect("models/f3/out/qual/*", "frozen qualification evidence")
-    for receipt in (ROOT / "models/f3/out/qual").glob("*.json"):
+        add(("docs/" if name == "charter.md" else "studies/f3/docs/")+name, "authored methods, interpretation or provenance")
+    add("docs/decisions.md", "authored methods, interpretation or provenance")
+    collect("studies/f3/docs/audits/2026-11-01-loop2-*.md", "authored independent review")
+    collect("studies/f3/docs/audits/2026-11-01-loop2-*.json", "verification receipt")
+    collect("studies/f3/docs/audits/2026-11-01-loop3-*", "authored independent review or verification receipt")
+    collect("studies/f3/models/loop3/*.py", "body-record method, simulation or figure code")
+    collect("studies/f3/models/loop3/README.md", "body-record method guide")
+    collect("studies/f3/models/loop3/out/**/*", "reviewed body-record output, superseded pilot output or receipt")
+    collect("studies/f3/data/macro/*", "source-linked body-record inventory and adjudication")
+    collect("studies/f3/models/loop2/**/*", "new method, sensitivity or conditional diagnostic")
+    collect("studies/f3/data/units/loop2/**/*", "source-linked factual extraction or authored evidence ledger")
+    collect("studies/f3/models/out/qual/*", "frozen qualification evidence")
+    for receipt in (ROOT / "studies/f3/models/out/qual").glob("*.json"):
         for path in json.loads(receipt.read_text())["binding"]["files"]:
-            add("models/f3/designs/m2.toml" if path == "active_declaration" else path,
+            add("studies/f3/models/designs/m2.toml" if path == "active_declaration" else path,
                 "frozen qualification input; upstream terms retained")
-    for path in ("models/f3/out/m2_results.csv", "data/units/e2-unit-rule.md", "data/pilot/specimens.csv",
-                 "data/pilot/combinations.csv", "data/pilot/README.md", "data/units/sprint2/m1_admission.csv"):
+    for path in ("studies/f3/models/out/m2_results.csv", "studies/f3/data/units/e2-unit-rule.md", "studies/f3/data/pilot/specimens.csv",
+                 "studies/f3/data/pilot/combinations.csv", "studies/f3/data/pilot/README.md", "studies/f3/data/units/sprint2/m1_admission.csv"):
         add(path, "source-linked result or evidence table")
-    collect("data/pilot/hooper2026-asr/*", "derived upstream-output extraction; upstream terms retained")
-    collect("models/pilot-asr/out/*", "previously checked model-conditional pilot output")
+    collect("studies/f3/data/pilot/hooper2026-asr/*", "derived upstream-output extraction; upstream terms retained")
+    collect("studies/f3/models/pilot-asr/out/*", "previously checked model-conditional pilot output")
     for name in ("README.md", "renv.lock", "common.R", "asr_persistence.R", "asr_diagnostics.R", "summarise_chains.R"):
-        add("models/pilot-asr/"+name, "previously checked pilot source; not rerun for Loop 2 close")
-    for path in ("Makefile", "tools/reproduce.py", "data/external/pbdb-snapshot.json",
+        add("studies/f3/models/pilot-asr/"+name, "previously checked pilot source; not rerun for Loop 2 close")
+    for path in ("studies/f3/Makefile", "studies/f3/tools/reproduce.py", "data/external/pbdb-snapshot.json",
                  "data/external/scripts/fetch_pbdb_snapshot.py", "data/spores/first_appearances.csv"):
         add(path, "public reproduction dependency")
-    collect("docs/audits/2026-11-07*.md", "review and analysis disposition")
-    collect("docs/audits/2026-11-08*.md", "follow-up source, numerical and semantic review")
-    collect("docs/audits/2026-11-08*.json", "follow-up public reproduction receipt")
-    collect("data/units/borenshult_review/*", "calibration reading dependency")
-    add("models/f3/borenshult_review.py", "calibration reading screen")
-    collect("models/f3/out/borenshult_review/*", "calibration reading screen output")
+    collect("studies/f3/docs/audits/2026-11-07*.md", "review and analysis disposition")
+    collect("studies/f3/docs/audits/2026-11-08*.md", "follow-up source, numerical and semantic review")
+    collect("studies/f3/docs/audits/2026-11-08*.json", "follow-up public reproduction receipt")
+    collect("studies/f3/data/units/borenshult_review/*", "calibration reading dependency")
+    add("studies/f3/models/borenshult_review.py", "calibration reading screen")
+    collect("studies/f3/models/out/borenshult_review/*", "calibration reading screen output")
     seeds = {str(p.relative_to(ROOT)) for p in files}
     with (HERE / "claims.csv").open() as f:
         for row in csv.DictReader(f):
@@ -155,7 +159,7 @@ def main():
             add(row["path"], "dependency closure: " + row["declared_by"])
     write(HERE / "dependency-manifest.csv", ["path", "declared_by", "availability", "sha256", "locator"],
           sorted(closure, key=lambda row: row["path"]))
-    add("manuscript/dependency-manifest.csv", "declared dependency closure and excluded-source locations")
+    add("studies/f3/manuscript/dependency-manifest.csv", "declared dependency closure and excluded-source locations")
     records = []
     for path, role in sorted(files.items()):
         content = path.read_bytes()
@@ -164,7 +168,7 @@ def main():
                             distribution="internal candidate; not released; retain source and upstream terms"))
     write(HERE / "package_manifest.csv", ["path", "role", "bytes", "sha256", "distribution"], records)
     write(HERE / "data-manifest.csv", ["path", "role", "distribution"], [
-        dict(path="manuscript/package_manifest.csv", role=f"exact hashed inventory of {len(records)} candidate files",
+        dict(path="studies/f3/manuscript/package_manifest.csv", role=f"exact hashed inventory of {len(records)} candidate files",
              distribution="internal release candidate; public release remains Barry's decision"),
         dict(path="library/closed/", role="primary copyrighted PDFs and private source quotes for verification",
              distribution="private reproduction inputs; excluded from candidate inventory"),

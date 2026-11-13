@@ -2,7 +2,7 @@
 
 This additive review preserves the original sampling-unit tables, frozen M2
 declaration, qualification inputs and results. It implements the published reading
-in `docs/audits/2026-11-04-borenshult-figure3-reading.md`, independently checked
+in `studies/f3/docs/audits/2026-11-04-borenshult-figure3-reading.md`, independently checked
 against the held published Figure 3 and Figure 4. It neither replaces the global `main`/`inclusive`/`outlier` readings
 nor changes the occurrence or spore compilation.
 
@@ -32,7 +32,7 @@ the unresolved/figure-conflict distinctions.
 ## Screen contract
 
 `screen_spec.json` declares the design and binds the existing qualification files.
-`models/f3/borenshult_review.py` calls the unchanged pure functions in `screen.py`.
+`studies/f3/models/borenshult_review.py` calls the unchanged pure functions in `screen.py`.
 It uses independent, homogeneous units, one comparable class and fixed reference
 membership. The reference boundary is the deepest detected sample, 43.1 m in all
 alternatives; the screen treats every eligible older zero trial as fully exposed.
@@ -77,19 +77,19 @@ outside this homogeneous calculation.
 From the repository root, the first run writes the new output directory:
 
 ```bash
-uv run models/f3/borenshult_review.py
-uv run --with numpy --with scipy --with pytest pytest -q models/f3/test_borenshult_review.py models/f3/test_screen.py
+uv run studies/f3/models/borenshult_review.py
+uv run --with numpy --with scipy --with pytest pytest -q studies/f3/models/test_borenshult_review.py studies/f3/models/test_screen.py
 ```
 
 The runner refuses an existing output directory. Replay with a fresh path:
 
 ```bash
-uv run models/f3/borenshult_review.py --out-dir /tmp/borenshult-review-replay
+uv run studies/f3/models/borenshult_review.py --out-dir /tmp/borenshult-review-replay
 ```
 
 The evidence table has 102 rows (34 samples × three readings); the screen has
 12 rows (three readings × two conversions × two ceilings).
-Outputs under `models/f3/out/borenshult_review/` are `screen.csv`, exact
+Outputs under `studies/f3/models/out/borenshult_review/` are `screen.csv`, exact
 `membership.json`, and `receipt.json`. The receipt hashes source evidence,
 sidecars, specification, runner, shared screen code and outputs; it also records
 unchanged hashes for every file bound by the existing QB-CO qualification.

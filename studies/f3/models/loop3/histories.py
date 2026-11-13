@@ -7,7 +7,7 @@ import pandas as pd
 
 from endpoint import PiecewiseRecovery
 
-ROOT = Path(__file__).resolve().parents[3]
+ROOT = Path(__file__).resolve().parents[4]
 YOUNG, DOMAIN = 393.47, 469.4
 CUTOFFS = {"Emsian": YOUNG, "Pragian": 410.62, "Lochkovian": 413.02, "Pridoli": 419.62}
 LABELS = {
@@ -37,7 +37,7 @@ def stage_bounds(ages):
 
 
 def load_histories(exclude_region=None):
-    table = pd.read_csv(ROOT / "data/macro/effort_reviewed.csv")
+    table = pd.read_csv(ROOT / "studies/f3/data/macro/effort_reviewed.csv")
     t = table[table.region == "global"].sort_values("young_ma").copy()
     if exclude_region is not None:
         removed = table[table.region == exclude_region].set_index("stage")

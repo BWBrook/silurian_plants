@@ -12,7 +12,7 @@ def module(path, name):
     return result
 
 
-ROOT = Path(__file__).resolve().parents[1]
+ROOT = Path(__file__).resolve().parents[3]
 
 
 def test_restore_refuses_to_replace_different_existing_input(tmp_path):
@@ -25,7 +25,7 @@ def test_restore_refuses_to_replace_different_existing_input(tmp_path):
 
 
 def test_dependency_closure_requires_declared_input_and_finds_local_import(tmp_path):
-    package = module(ROOT / "manuscript/package.py", "package_test")
+    package = module(ROOT / "studies/f3/manuscript/package.py", "package_test")
     package.ROOT = tmp_path
     (tmp_path / "data/external").mkdir(parents=True)
     (tmp_path / "data/external/pbdb-snapshot.json").write_text(json.dumps({"path": "data/raw.csv", "url": "archive"}))
@@ -41,7 +41,7 @@ def test_dependency_closure_requires_declared_input_and_finds_local_import(tmp_p
 
 
 def test_public_checkout_reports_private_source_check_as_skipped(tmp_path, capsys):
-    reproduce = module(ROOT / "tools/reproduce.py", "reproduce_skip_test")
+    reproduce = module(ROOT / "studies/f3/tools/reproduce.py", "reproduce_skip_test")
     reproduce.ROOT = tmp_path
     (tmp_path / "library").mkdir()
     (tmp_path / "library/closed.tsv").write_text(
@@ -59,7 +59,7 @@ def test_public_checkout_reports_private_source_check_as_skipped(tmp_path, capsy
 
 
 def test_optimiser_comparison_allows_roundoff_but_keeps_identity_exact(tmp_path):
-    reproduce = module(ROOT / "tools/reproduce.py", "reproduce_compare_test")
+    reproduce = module(ROOT / "studies/f3/tools/reproduce.py", "reproduce_compare_test")
     reference = tmp_path / "reference.csv"
     candidate = tmp_path / "candidate.csv"
     content = "grouping,n_reference,rho_f_contour,scope\nindependent,59,0.09102964787638201,retrospective\n"
@@ -71,7 +71,7 @@ def test_optimiser_comparison_allows_roundoff_but_keeps_identity_exact(tmp_path)
 
 
 def test_optimiser_comparison_rejects_non_numeric_or_large_numeric_drift(tmp_path):
-    reproduce = module(ROOT / "tools/reproduce.py", "reproduce_compare_drift_test")
+    reproduce = module(ROOT / "studies/f3/tools/reproduce.py", "reproduce_compare_drift_test")
     reference = tmp_path / "reference.csv"
     candidate = tmp_path / "candidate.csv"
     reference.write_text("key,value,note\nA,1.0,ok\n")
@@ -82,7 +82,7 @@ def test_optimiser_comparison_rejects_non_numeric_or_large_numeric_drift(tmp_pat
 
 
 def test_public_source_check_reports_route_and_hash(tmp_path, capsys):
-    reproduce = module(ROOT / "tools/reproduce.py", "reproduce_source_manifest_test")
+    reproduce = module(ROOT / "studies/f3/tools/reproduce.py", "reproduce_source_manifest_test")
     reproduce.ROOT = tmp_path
     source = tmp_path / "library/closed/abuhmida2013-thesis-related_macbook20261030.pdf"
     source.parent.mkdir(parents=True)

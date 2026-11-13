@@ -408,7 +408,7 @@ criwm <- function(chrono_data, #input data
       date.it <- date.samp[1:(1 + i_criwm)]
       date.age.it <- date.samp[1:(1 + i_criwm)]
       if (signor_lipps == "ext") {date.mci.it <- rev(max(date.it) + 1 - date.it)} #time since the oldest date of the series
-      if (signor_lipps == "arr") {date.mci.it <- rev(date.it - min(date.it) + 1)} #time before the youngest date of the series (local fix, models/griwm_r/README.md)
+      if (signor_lipps == "arr") {date.mci.it <- rev(date.it - min(date.it) + 1)} #time before the youngest date of the series (local fix, studies/f3/models/griwm_r/README.md)
       k <- length(date.it)
       t.n <- date.mci.it[k]
       n <- k

@@ -6,10 +6,10 @@
 """The real-design adapter for M2 (designs/m2.toml): source tables to the engine's binary Units.
 
 Each generated unit keeps its source key, the named reading, the variant and the rule version, so every
-binary outcome traces to a literal source report (data/units/). Source tables are never edited here.
+binary outcome traces to a literal source report (studies/f3/data/units/). Source tables are never edited here.
 
-    uv run models/f3/designs.py      # writes out/m2_units.csv: every generated row of every variant
-    F3_DESIGNS=models/f3/designs/<other>.toml uv run models/f3/designs.py   # another declaration file
+    uv run studies/f3/models/designs.py      # writes out/m2_units.csv: every generated row of every variant
+    F3_DESIGNS=studies/f3/models/designs/<other>.toml uv run studies/f3/models/designs.py   # another declaration file
 
 Rules (RULES; designs/m2.toml states them in prose):
   libya-chart-v1  Abuhmida (2013): appendix entry with an exact chart row; >= 1 marine-group symbol;
@@ -33,8 +33,8 @@ import numpy as np
 import envelope as ev
 import sim
 
-ROOT = Path(__file__).resolve().parents[2]
-UNITS = ROOT / "data" / "units"
+ROOT = Path(__file__).resolve().parents[3]
+UNITS = ROOT / "studies" / "f3" / "data" / "units"
 DESIGNS = Path(os.environ.get("F3_DESIGNS", Path(__file__).resolve().parent / "designs" / "m2.toml"))
 OUT = Path(__file__).resolve().parent / "out"
 RULES = {"libya": "libya-chart-v1", "qusaiba": "qusaiba-table2-v1", "borenshult": "borenshult-outcomes-v1"}

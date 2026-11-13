@@ -6,8 +6,8 @@ import csv
 import re
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parents[1]
-OUT_DIR = ROOT / "models/f3/loop3/out"
+ROOT = Path(__file__).resolve().parents[3]
+OUT_DIR = ROOT / "studies/f3/models/loop3/out"
 SUPPLEMENT = Path(__file__).resolve().parent / "text/supplement.md"
 BLOCKS = {}
 

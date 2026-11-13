@@ -1,6 +1,6 @@
 """Extract literal point reports from the six held Abuhmida thesis enclosures.
 
-Run with: uv run --with pymupdf==2.0.0 tools/libya_charts.py
+Run with: uv run --with pymupdf==2.0.0 studies/f3/tools/libya_charts.py
 Requires the registered, git-ignored thesis PDF. This creates source reports,
 not adjudicated event outcomes or binary analysis inputs.
 """
@@ -15,8 +15,8 @@ from pathlib import Path
 import pymupdf
 
 
-ROOT = Path(__file__).resolve().parents[1]
-DATA = ROOT / "data/units"
+ROOT = Path(__file__).resolve().parents[3]
+DATA = ROOT / "studies/f3/data/units"
 SOURCE = ROOT / "library/closed/abuhmida2013-thesis-related_macbook20261030.pdf"
 SHA256 = "c0e3bf798fb3c27db0bf9cbb155396be5b4b8e003ee2228defb615a65abf3211"
 PAGES = [(630, "A28i-NC186", 24), (632, "B2-NC186", 17),

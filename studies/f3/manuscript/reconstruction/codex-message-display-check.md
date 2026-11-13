@@ -1,7 +1,7 @@
 # Codex check: message, structure and display plan
 
 10 November 2026. Read-only assessment of reconstruction drafts at `1fe577c`, against
-`manuscript/estimands.md`, the declared body-record design and the current claims. This is a review
+`studies/f3/manuscript/estimands.md`, the declared body-record design and the current claims. This is a review
 note within steps 1–2, not a new reconstruction step. The parent owns the draft edits. No model,
 data, frozen article or generator was changed in this check.
 
@@ -42,7 +42,7 @@ commented, and mark any replacement as Codex's proposal until reconciled.
 | H3 | The known effect of sample size on a fixed-rate interval plus the observed match to one clock | Ask what recording and diagnostic-delay combinations permit candidate ages. A confidence bound close to the oldest fossil does not predict which external clock it will overlap. |
 
 The body design says explicitly that it is not a preregistration before the pilot
-(`docs/loop3-design.md`). The reconstructed H1–H3 headings should therefore carry no “a priori” or
+(`studies/f3/docs/loop3-design.md`). The reconstructed H1–H3 headings should therefore carry no “a priori” or
 “we expected” history without contemporaneous evidence for those specific predictions. A clear aim
 and analysis-led paper does not require retrospective hypotheses to be presented as prospective.
 

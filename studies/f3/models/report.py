@@ -4,7 +4,7 @@
 # ///
 """Aggregates out/recovery_grid.csv into out/recovery_summary.csv and prints the README tables.
 
-    uv run models/f3/report.py
+    uv run studies/f3/models/report.py
 
 One summary row per channel set x estimator x growth, over the 24 scenarios that remain after fixing
 growth (3 origination windows x 2 efforts x 4 preservation levels). The printed pass tables pool growth

@@ -15,7 +15,7 @@ from scipy import stats
 from endpoint import known_cutoff_bound, known_cutoff_summary, observed_range_bound
 from histories import CUTOFFS, DOMAIN, YOUNG, load_histories, stage_bounds
 
-ROOT = Path(__file__).resolve().parents[3]
+ROOT = Path(__file__).resolve().parents[4]
 HERE = Path(__file__).resolve().parent
 OUT = HERE / "out"
 SEED = 20261102
@@ -105,8 +105,8 @@ def row_for(r, history, recovery, category, reading, units, variant, cutoff_name
 
 def main():
     OUT.mkdir(exist_ok=True)
-    inputs = [ROOT / "data/macro/horizons_reviewed.csv", ROOT / "data/macro/effort_reviewed.csv",
-              ROOT / "data/macro/build_receipt.json", ROOT / "data/timescale.csv",
+    inputs = [ROOT / "studies/f3/data/macro/horizons_reviewed.csv", ROOT / "studies/f3/data/macro/effort_reviewed.csv",
+              ROOT / "studies/f3/data/macro/build_receipt.json", ROOT / "data/timescale.csv",
               HERE / "endpoint.py", HERE / "histories.py", Path(__file__).resolve()]
     digest = lambda p: hashlib.sha256(p.read_bytes()).hexdigest()
     before = {str(p.relative_to(ROOT)): digest(p) for p in inputs}

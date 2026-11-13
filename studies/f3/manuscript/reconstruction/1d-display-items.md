@@ -13,7 +13,7 @@ and identified less often, or distinctive body features appeared later.*
   evolutionary timing question. The contribution is the quantified empirical requirements of particular
   maxima, using established inference methods.
 - Five journal comparators carry two to four figures and zero to three tables
-  (`docs/audits/2026-11-10-procb-format-comparison.md`). Four plus two is our allocation, not a verified
+  (`studies/f3/docs/audits/2026-11-10-procb-format-comparison.md`). Four plus two is our allocation, not a verified
   publisher cap. A third figure remains sufficient if a separate methods schematic adds little.
 - Official Royal Society guidance confirms a 200-word abstract and enough main Methods to understand
   and replicate the work. The journal-specific length page remains inaccessible; the proposed

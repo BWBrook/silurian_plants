@@ -91,7 +91,7 @@ not date its characters relative to the crown.
 
 Codex extracted every state of the aperture character (`X21`) and the dispersal-unit character
 (`X26`), at both crown nodes, for all four methods and three trees. The extraction is in
-`data/pilot/hooper2026-asr/`, reproduced by an independent R check.
+`studies/f3/data/pilot/hooper2026-asr/`, reproduced by an independent R check.
 
 | Crown node | Aperture (`X21`) | Dispersal unit (`X26`) |
 |---|---|---|
@@ -127,7 +127,7 @@ Hooper et al.'s main text (read 2026-10-30) adds three points.
   trilete production from the embryophyte crown must therefore run through another lineage. The
   tracheophyte stem is trilete at both of its ends in every output. That is consistent with
   persistence but does not establish it. Codex found that the deposit saves no mapped histories,
-  only node summaries (`data/pilot/hooper2026-asr/scm_workspace_audit.json`). With Barry's
+  only node summaries (`studies/f3/data/pilot/hooper2026-asr/scm_workspace_audit.json`). With Barry's
   authorisation, Claude re-ran their mapping to read the histories (third result, below).
 - **One fossil, two calibrations.** The Homerian *Cooksonia* cf. *pertoni* sets both the
   crown-embryophyte minimum (426.9 Ma) and the crown-tracheophyte maximum (431.2 Ma) ("Fossil
@@ -135,10 +135,10 @@ Hooper et al.'s main text (read 2026-10-30) adds three points.
 
 ## Second result: specimen combinations (O, held sources, 2026-10-30)
 
-From `data/pilot/specimens.csv`: 524 rows from 30 primary sources, every quote checked against its
+From `studies/f3/data/pilot/specimens.csv`: 524 rows from 30 primary sources, every quote checked against its
 text, and the decisive rows adjudicated by Claude. Codex reviewed selected decisive rows within the
 first 283-row extraction, not every row (`audits/2026-10-30-frame-and-pilot-review.md`), and later
-checked 13 quotes and the decisive plates of round 2 (`audits/2026-10-30-borenshult-event-map.md`). `data/pilot/combinations.csv` names each
+checked 13 quotes and the decisive plates of round 2 (`audits/2026-10-30-borenshult-event-map.md`). `studies/f3/data/pilot/combinations.csv` names each
 combination's member rows and evidence level, so direct single-character rows cannot become an
 unstated direct joint claim.
 
@@ -192,7 +192,7 @@ What this does to the mappings (I):
 - **M2's fossil basis** (Hooper SI Table 4, C_4). One probable trilete spore (*Chelinospora*? sp.) at
   48.2 m in the Borenshult-1 core, lower Sandbian, sets the 459.1 Ma maximum. That core is now a
   complete 34-sample frame, and 48.2 m is one of its inventoried depths (Codex, Correspondence
-  2570; `data/units/frame_samples.csv`). F3's E1 test on it therefore bears directly
+  2570; `studies/f3/data/units/frame_samples.csv`). F3's E1 test on it therefore bears directly
   on the absence premise behind M2. Hooper et al.'s own justification ("first appearance must
   pre-date the origin of crown-Embryophyta") states that premise without testing it.
 - **Q5.** Morris et al. (2024) describe the late Ludlow tracheids as in branching stems terminated
@@ -201,13 +201,13 @@ What this does to the mappings (I):
 
 ## Third result: persistence under Hooper et al.'s own models (2026-10-31)
 
-`models/pilot-asr/` re-runs Hooper et al.'s stochastic mapping and fitMk under a pinned renv.
+`studies/f3/models/pilot-asr/` re-runs Hooper et al.'s stochastic mapping and fitMk under a pinned renv.
 - **Reproduction:** 156 of 156 deposited node values are reproduced within the pre-declared
   tolerances. Stochastic-mapping values differ by at most 0.036; ER and ARD reproduce exactly.
 - **Persistence on the maps.** Given a trilete crown ancestor, the aperture stays trilete along
   the whole path to crown Tracheophyta in 98.4–100% of maps on the three trees. On the
   liverwort path it does so in only about a third. Four independent chains per tree put it at
-  0.98–1.00 with measured precision (`models/pilot-asr/README.md`, "Diagnostics results"). The
+  0.98–1.00 with measured precision (`studies/f3/models/pilot-asr/README.md`, "Diagnostics results"). The
   extant-tree chain needed a longer run to converge, and the 100% was a zero count: 3 departures in
   3,876 starts.
 - **Retention, single lineage.**

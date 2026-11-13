@@ -1,7 +1,7 @@
 import csv,hashlib,json,subprocess
 from pathlib import Path
 import numpy as np
-ROOT=Path(__file__).resolve().parents[4]
+ROOT=Path(__file__).resolve().parents[6]
 OUT=Path('/private/tmp/sp-sprint2-independent-check'); OUT.mkdir(exist_ok=True)
 (OUT/'render').mkdir(exist_ok=True)
 subprocess.run(['pdftoppm','-f','6','-l','6','-scale-to','4200','-singlefile',str(ROOT/'library/closed/wellman2015_firststudy.pdf'),str(OUT/'render/qusaiba-raster')],check=True)
@@ -26,8 +26,8 @@ labels=['Dyadospora. murusattenuata','D. murusdensa','Didymospora fucosogranulat
 manual_depths=['292.3m','294.8m','301.1m','302.11m','305.0m','307.7m','310.2m','318.2m','319.1m','323.1m','325.4m','327.9m','330.3m','333.4m','335.7m','338.4m','?341.0m','342.3m','345.85m','348.8m','350.6m','436.0m','438.7m','452.75m','458.4m','476.7m','479.4m','484.7m','488.3m','497.8m','503.1m','507.15m','518.5m','528.3m','535.2m','536.7m','551.0m']
 manual_cores=['C31']*2+['C32']*5+['C33']*2+['C34']*4+['C35']*3+['C36']*5+['C45']+['C47']*3+['C49']*2+['C50']*2+['C51']+['C52']*2+['C53','C54','C55']+['C56']*2
 assert len(manual_cores)==37
-saved=list(csv.DictReader((ROOT/'data/units/sprint2/qusaiba_e2_reports.csv').open()))
-inv=list(csv.DictReader((ROOT/'data/units/qusaiba_inventory.csv').open()))
+saved=list(csv.DictReader((ROOT/'studies/f3/data/units/sprint2/qusaiba_e2_reports.csv').open()))
+inv=list(csv.DictReader((ROOT/'studies/f3/data/units/qusaiba_inventory.csv').open()))
 inv=sorted([r for r in inv if r['wellman_table2_member']=='yes'],key=lambda r:int(r['wellman_table2_order_top_to_base']))
 results=[];differences=[];cellrows=[]
 for j,x in enumerate(xs):

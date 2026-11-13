@@ -83,7 +83,7 @@ generated entry. No dataset bytes were downloaded or rehashed for this check. Th
 distinction between excluded copyrighted texts and fetched licensed deposits remains correct.
 
 The formerly missing eleven-source receipt is now preserved as
-`docs/audits/2026-11-11-3c-reference-reads.md`, its prompt and its JSON output. The output has eleven
+`studies/f3/docs/audits/2026-11-11-3c-reference-reads.md`, its prompt and its JSON output. The output has eleven
 distinct source records, with access scope, sections, support location and qualifications; Gradstein
 is explicitly abstract-only, rather than a full-book read. This closes the missing-record issue.
 It does not turn a preserved delegation report into eleven independent fresh checks. The recorded
@@ -94,7 +94,7 @@ four quote checks and the separate targeted Codex checks retain their own scope.
 New original-text reads were limited to local publisher copies: Morris 2018, Table 2 and Figure 2
 caption; Harris 2022, Figure 2 caption and the nearby reported crown ages; Hooper 2026, Figure 5 and
 Extended Data Figure 3 captions. These support the clock-summary distinctions above. I read the
-current body Methods, `manuscript/estimands.md` M2 and the accepted display contract for report and
+current body Methods, `studies/f3/manuscript/estimands.md` M2 and the accepted display contract for report and
 delivery definitions; I did not re-extract the Libyan thesis. I inspected the preserved source-read
 prompt, receipt and structured output without searching unrelated session logs or re-reading all
 candidate papers.

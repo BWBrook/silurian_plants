@@ -7,7 +7,7 @@ import hashlib
 from collections import Counter
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parents[1]
+ROOT = Path(__file__).resolve().parents[3]
 
 
 def rows(path):
@@ -15,15 +15,15 @@ def rows(path):
         return list(csv.DictReader(handle))
 
 
-def check(directory=ROOT / "data/units"):
+def check(directory=ROOT / "studies/f3/data/units"):
     units = rows(directory / "units.csv")
     outcomes = rows(directory / "outcomes.csv")
     sources = {r["source_id"] for r in rows(directory / "sources.csv")}
     ages = {r["age_model_id"] for r in rows(directory / "age_models.csv")}
-    readings = {r["reading_id"] for r in rows(ROOT / "data/occurrences/readings.csv")}
+    readings = {r["reading_id"] for r in rows(ROOT / "studies/f3/data/occurrences/readings.csv")}
     stages = {r["stage"]: float(r["base_ma"]) for r in rows(ROOT / "data/timescale.csv")}
-    observations = {r["obs_id"] for r in rows(ROOT / "data/occurrences/observations.csv")}
-    interpretations = {r["interp_id"] for r in rows(ROOT / "data/occurrences/interpretations.csv")}
+    observations = {r["obs_id"] for r in rows(ROOT / "studies/f3/data/occurrences/observations.csv")}
+    interpretations = {r["interp_id"] for r in rows(ROOT / "studies/f3/data/occurrences/interpretations.csv")}
     errors = []
 
     def require(condition, message):

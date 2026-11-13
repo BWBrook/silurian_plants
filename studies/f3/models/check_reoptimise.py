@@ -11,7 +11,7 @@ and the alternative from many extra starts. A null that rises (or an alternative
 happen) by more than the tolerance means the standard search missed an optimum in the anti-conservative
 direction.
 
-    uv run models/f3/check_reoptimise.py models/f3/out/validation_cal_reps.csv.gz models/f3/out/reoptimise_cal.csv 60
+    uv run studies/f3/models/check_reoptimise.py studies/f3/models/out/validation_cal_reps.csv.gz studies/f3/models/out/reoptimise_cal.csv 60
 
 Run on nectar (c3.3xlarge, 62 workers, 2026-10-29) for the second-review rehearsal; the output is
 out/reoptimise_cal.csv. A wider local search is not a global-optimality certificate.

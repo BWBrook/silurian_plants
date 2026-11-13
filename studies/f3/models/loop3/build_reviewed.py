@@ -13,13 +13,13 @@ from pathlib import Path
 import numpy as np
 import pandas as pd
 
-ROOT = Path(__file__).resolve().parents[3]
-sys.path.insert(0, str(ROOT / "tools"))
+ROOT = Path(__file__).resolve().parents[4]
+sys.path.insert(0, str(ROOT / "studies/f3/tools"))
 from occurrences import LAND, MARGINAL, unit_of
 
-OUT = ROOT / "data/macro"
+OUT = ROOT / "studies/f3/data/macro"
 PBDB = ROOT / "data/eprp/record"
-OCC = ROOT / "data/occurrences"
+OCC = ROOT / "studies/f3/data/occurrences"
 YOUNG, OLD, DOMAIN = 393.47, 445.2, 469.4
 EMBRYOPHYTE = {"rhyniophytoid_cooksonioid", "lycophyte_line", "euphyllophyte", "tracheophyte_indet",
                "polysporangiophyte_indet", "embryophyte_axis_indet", "bryophyte_grade"}
@@ -280,7 +280,7 @@ def main():
     OUT.mkdir(exist_ok=True)
     inputs = [PBDB / n for n in ("pbdb_plant_occurrences.csv", "pbdb_plant_collections.csv")]
     inputs += [OCC / n for n in ("observations.csv", "reading_assignments.csv", "raw/pbdb_collections_darriwilian_emsian_2026-10-28.csv")]
-    inputs += [ROOT / "data/timescale.csv", ROOT / "tools/occurrences.py", Path(__file__).resolve()]
+    inputs += [ROOT / "data/timescale.csv", ROOT / "studies/f3/tools/occurrences.py", Path(__file__).resolve()]
     inputs += [OUT / "source_adjudications.csv", OUT / "source_identity_map.csv",
                OUT / "older_candidate_adjudications.csv", OUT / "name_classifications.csv",
                OUT / "body_membership.csv"]

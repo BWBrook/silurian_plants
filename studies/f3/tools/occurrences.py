@@ -2,13 +2,13 @@
 # requires-python = ">=3.12"
 # dependencies = []
 # ///
-"""Occurrence data for the first deliverable (data/occurrences/README.md).
+"""Occurrence data for the first deliverable (studies/f3/data/occurrences/README.md).
 
-    uv run tools/occurrences.py spores          # tail of E1/E2 from data/spores (vetted dataset rows)
-    uv run tools/occurrences.py import FILE...  # merge Codex JSON outputs (observations, interpretations, sources)
-    uv run tools/occurrences.py effort PBDB.csv # effort by stage x unit: PBDB collections (all taxa) and Palynodata documents
-    uv run tools/occurrences.py check           # schema, one main reading per observation, stages, quotes
-    uv run tools/occurrences.py readings        # resolve readings.csv into reading_assignments.csv
+    uv run studies/f3/tools/occurrences.py spores          # tail of E1/E2 from data/spores (vetted dataset rows)
+    uv run studies/f3/tools/occurrences.py import FILE...  # merge Codex JSON outputs (observations, interpretations, sources)
+    uv run studies/f3/tools/occurrences.py effort PBDB.csv # effort by stage x unit: PBDB collections (all taxa) and Palynodata documents
+    uv run studies/f3/tools/occurrences.py check           # schema, one main reading per observation, stages, quotes
+    uv run studies/f3/tools/occurrences.py readings        # resolve readings.csv into reading_assignments.csv
 """
 import csv
 import json
@@ -16,8 +16,8 @@ import re
 import sys
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parent.parent
-OUT = ROOT / "data" / "occurrences"
+ROOT = Path(__file__).resolve().parents[3]
+OUT = ROOT / "studies" / "f3" / "data" / "occurrences"
 SPORES = ROOT / "data" / "spores"
 OBS_COLS = ["obs_id", "channel", "reported_as", "locality", "country", "unit", "horizon", "palaeo_unit",
             "source_ids", "locator", "events", "same_material_as", "notes"]

@@ -7,7 +7,7 @@ A and c and differ only in n, so they are three points on one curve. This script
 the reviewed outputs and tabulates the curve. Integer n values are assumed counts of independent
 finds; the curve between them is algebraic interpolation, not a fitted or calibrated effective count.
 
-    python3 models/f3/loop3/count_dial.py
+    python3 studies/f3/models/loop3/count_dial.py
 """
 
 import csv

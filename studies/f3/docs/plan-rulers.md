@@ -21,7 +21,7 @@ time-weighted within stages. Q is computed for t = 431.2, 444, 447 and 452 Ma an
 1. **Rock.** Macrostrat units in active North American columns (`data/eprp/record/macrostrat_units_window.csv`).
    x(s) = summed column area of units with `d_env_class` non-marine spanning s. Variant: non-marine plus
    `both`. Secondary: South America, reported but not used for the band (coarse).
-2. **Searching.** PBDB land and marginal-marine collection equivalents per Myr (`data/macro/effort_reviewed.csv`,
+2. **Searching.** PBDB land and marginal-marine collection equivalents per Myr (`studies/f3/data/macro/effort_reviewed.csv`,
    global), all collections and plant-excluded. Disclosed in advance: a rough hand sum of the all-collection
    series gave about 1.4 at 444–452 Ma before this plan was written; Barry's rock sum gave about 3.
 3. **Spores.** Fraction of Palynodata documents reporting a usable trilete record among all Palynodata
@@ -42,7 +42,7 @@ factor is formed. Each Q is compared with R(t) for 48 finds (8.1–11.8 at 444�
 Barry, chat, 12 November 2026, proposed a rise in finding rate followed by a level stretch, as plants
 spread from a few patches, in place of the step, with his hand sums: a straight-line rise from the
 ancestor reaches only about 431, 438 and 441 Ma (48, 19, 15 finds); an exponential rise reaches 444–452 Ma
-if finds doubled about every 1.5, 4 and 5–6 Myr. To be computed in `models/f3/loop3/rise_shapes.py`, with
+if finds doubled about every 1.5, 4 and 5–6 Myr. To be computed in `studies/f3/models/loop3/rise_shapes.py`, with
 the finding rate level after A = 426.7 Ma and rising before it:
 
 - For any fixed history, an ancestor age t is compatible with the 95% limit when the integral of the

@@ -12,7 +12,7 @@ step. The new literature supports the central additions without requiring a broa
 1. **Separate source access from deposit reproduction.** Data accessibility currently says copyrighted
    sources and third-party deposits are fetched by script and hash-checked. The deposit fetcher's
    documented scope is openly licensed deposits; it explicitly excludes paywalled or unlicensed
-   local material. `manuscript/README.md` instead distinguishes excluded copyrighted full texts from
+   local material. `studies/f3/manuscript/README.md` instead distinguishes excluded copyrighted full texts from
    fetched deposits. Restore that distinction, for example: “Copyrighted full texts are excluded from
    the repository; source routes and held-file hashes are recorded separately. Openly licensed
    third-party deposits are fetched by script and hash-checked.” Do not promise automatic restoration

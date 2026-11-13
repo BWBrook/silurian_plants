@@ -59,8 +59,8 @@ Start with the five save/reader cases, then Hoffmeister's JSTOR terms step. The 
 mini did not prevent all browser downloads: the UTAS session and Chrome Wiley downloads
 worked for other targets. Reopen only the target being actioned; close it afterwards.
 All acquisition tabs from this pass are closed. No library or author requests were sent.
-The full [audit](audits/2026-10-30-first-study-tier2.md) and
-[status register](first-study-literature-status.csv) distinguish partials, abstracts,
+The full [audit](../studies/f3/docs/audits/2026-10-30-first-study-tier2.md) and
+[status register](../studies/f3/docs/first-study-literature-status.csv) distinguish partials, abstracts,
 existing copies and original/reconstructed PDFs.
 
 ### PDF save or reader follow-up (five)
@@ -137,8 +137,8 @@ purchases have been submitted. A failed route does not mean that no copy exists.
 The two reopened successes, **Hanadir 2007** (`al2007d`) and **Kanosh 2015** (`al2015f`),
 are now filed and verified. Four reopened Tier 1 sources remain below. Tier 2 has
 since been worked in the separate queue above; the two still-parked items retain their earlier status. Detailed outcomes are in
-[first-study-literature-status.csv](first-study-literature-status.csv) and the
-[acquisition audit](audits/2026-10-30-first-study-tier1.md).
+[first-study-literature-status.csv](../studies/f3/docs/first-study-literature-status.csv) and the
+[acquisition audit](../studies/f3/docs/audits/2026-10-30-first-study-tier1.md).
 
 | Work | Observed blocker / action | Reopen route |
 |---|---|---|

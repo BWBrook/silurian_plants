@@ -23,7 +23,7 @@ Only explicit collection/occurrence identifiers justify replacing a PBDB record 
 interpretation. Country, taxon and overlapping ages do not establish material identity. Regional
 checklists and unresolved duplicates are withheld from the primary unit count and retained in a
 separate sensitivity. Source decisions and the limits of the stratified audit are recorded in
-`data/macro/source_adjudications.csv`; this is not certification of all 241 name assignments.
+`studies/f3/data/macro/source_adjudications.csv`; this is not certification of all 241 name assignments.
 Names classified as implausible in the interval cannot enter through a yes in a B1/B2 column.
 
 PBDB ranges wider than 20 Myr remain in the inventory and enter a wide-age sensitivity when their

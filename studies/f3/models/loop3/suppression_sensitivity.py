@@ -16,7 +16,7 @@ from endpoint import PiecewiseRecovery
 from histories import DOMAIN, YOUNG, load_histories
 
 HERE = Path(__file__).resolve().parent
-ROOT = HERE.parents[2]
+ROOT = HERE.parents[3]
 OUT = HERE / "out"
 BREAKS = (419.62, 426.7, 432.9)
 MULTIPLIERS = (1., .5, .1, .01)
@@ -35,8 +35,8 @@ def step_history(baseline, break_ma, older_multiplier):
 
 
 def main():
-    inputs = [ROOT / "data/macro/horizons_reviewed.csv", ROOT / "data/macro/effort_reviewed.csv",
-              ROOT / "data/macro/build_receipt.json", ROOT / "data/timescale.csv",
+    inputs = [ROOT / "studies/f3/data/macro/horizons_reviewed.csv", ROOT / "studies/f3/data/macro/effort_reviewed.csv",
+              ROOT / "studies/f3/data/macro/build_receipt.json", ROOT / "data/timescale.csv",
               HERE / "analysis.py", HERE / "histories.py", HERE / "endpoint.py", Path(__file__).resolve()]
     sha = lambda p: hashlib.sha256(p.read_bytes()).hexdigest()
     before = {str(p.relative_to(ROOT)): sha(p) for p in inputs}

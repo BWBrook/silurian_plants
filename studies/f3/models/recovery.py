@@ -2,9 +2,9 @@
 # requires-python = ">=3.12"
 # dependencies = ["numpy", "scipy"]
 # ///
-"""Loop 1, step 3 of docs/plan-f3.md: the recovery study.
+"""Loop 1, step 3 of studies/f3/docs/plan-f3.md: the recovery study.
 
-    uv run models/f3/recovery.py
+    uv run studies/f3/models/recovery.py
 
 Simulates a clade of known origination T0 under growth, effort and preservation scenarios, estimates
 T0 from the stage-binned records, and measures coverage, bias, interval width and identifiability.
@@ -26,7 +26,7 @@ classical and GRIWM estimators, shared N(t) and T0 for the ramp fits):
   ramp_logistic_kfree  the same with the capacity profiled over CAPACITIES
   ramp_bd        ramp.fit with the expected birth-death curve
 
-Acceptance: docs/plan-f3.md fixes coverage of at least 0.90 and |median bias| under 2 Myr for an
+Acceptance: studies/f3/docs/plan-f3.md fixes coverage of at least 0.90 and |median bias| under 2 Myr for an
 interval estimator. How each estimator is judged was fixed here before the first grid run. Classical is judged on its
 nominal one-sided bound (hi >= T0), the ramp fits on their two-sided profile interval. GRIWM is a
 point estimator: |median bias| under 2 Myr and an interval calibrated by simulation, built from the

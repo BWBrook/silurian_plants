@@ -17,7 +17,7 @@ The same study is written three ways, all in `text/`, all from one evidence base
 `claims.csv` is the single claims ledger: every claim's ID, status (supported, provisional, refuted,
 superseded), value, evidence files, verifying commit, reproduce command and limits. All four
 renderings cite it, binding quoted numbers as `[428.8]{.C27}` (invisible in PDF and DOCX), and
-`make -C manuscript check` runs `tools/claims.py check` to catch any drift. `mapping.csv` separates each maximum's
+`make -C studies/f3/manuscript check` runs `tools/claims.py check` to catch any drift. `mapping.csv` separates each maximum's
 specimen, identification, sampling, persistence and node links. `external_candidates.csv` records the
 spore-frame routes examined. `package_manifest.csv` inventories the candidate files with SHA-256;
 `data-manifest.csv` names the excluded private inputs.
@@ -28,13 +28,13 @@ The paper builds with [makedoc](https://github.com/BWBrook/makedoc), expected at
 Profiles are in `settings/build.yaml`; `makedoc.lock.json` pins the build tool revision, checked before builds. TeX/Pandoc remain system dependencies; `uv` supplies a Python with PyYAML. From the repository root:
 
 ```sh
-uv run --with numpy --with pandas --with scipy --with pytest python -m pytest models/f3/loop3 -q
-uv run manuscript/figures.py      # figures and figures/figures.json hashes
-python3 manuscript/tables.py      # supplement tables S3–S11, written between markers in text/supplement.md
+uv run --with numpy --with pandas --with scipy --with pytest python -m pytest studies/f3/models/loop3 -q
+uv run studies/f3/manuscript/figures.py      # figures and figures/figures.json hashes
+python3 studies/f3/manuscript/tables.py      # supplement tables S3–S11, written between markers in text/supplement.md
 uv run tools/refs.py build        # references/refs.yaml from references/dois.txt via Crossref
-make -C manuscript check          # makedoc lint and citation audit for every profile
-make -C manuscript                # PDF and DOCX into build/ (PDFs are tracked; DOCX is not)
-python3 manuscript/package.py
+make -C studies/f3/manuscript check          # makedoc lint and citation audit for every profile
+make -C studies/f3/manuscript                # PDF and DOCX into build/ (PDFs are tracked; DOCX is not)
+python3 studies/f3/manuscript/package.py
 ```
 
 Citations are Pandoc keys (`[@key]`) from the programme bibliography `references/refs.yaml`. To cite a
@@ -46,24 +46,24 @@ citations, so write narrative citations as `Morris et al. [@key]`; the brief kee
 
 Generated content is not edited by hand: the table blocks in `supplement.md`, `figures/`,
 `references/refs.yaml`, `build/` and the manifests. The body-record analysis itself is reproduced by
-`models/f3/loop3/` (see its README); frozen Loop 1 and Loop 2 outputs and the R pilot are reused
+`studies/f3/models/loop3/` (see its README); frozen Loop 1 and Loop 2 outputs and the R pilot are reused
 without regeneration. Copyrighted sources stay in the ignored `library/closed/`; third-party
 deposits are fetched by script and hash-checked.
 
 ## Public reproduction and source access
 
-From the repository root, `make reproduce-derived` regenerates the core Loop 3 bounds, age/shape
+From the repository root, `make -C studies/f3 reproduce-derived` regenerates the core Loop 3 bounds, age/shape
 diagnostics, simulations, suppression/frontier tables, Murzuq sensitivities and interval witnesses in a temporary copy made only from tracked files,
 then compares CSV bytes, except for the Murzuq optimisation table's floating-point fields (absolute
 tolerance `1e-9`; schema, row order, keys and categorical fields remain exact). Receipts record both
-reference and regenerated SHA-256 hashes and the comparison method. `make rebuild-source` first restores the exact archived CC0 PBDB input
+reference and regenerated SHA-256 hashes and the comparison method. `make -C studies/f3 rebuild-source` first restores the exact archived CC0 PBDB input
 from <https://doi.org/10.5281/zenodo.24028289>, checks its compressed and raw SHA-256, rebuilds
 the inventory/effort tables and performs the downstream and shared-timescale comparisons. The derived-only target explicitly skips
 raw-collection timescale recomputation; the source target exercises it. Neither substitutes a
-live database query. `make check-public` first restores/hash-checks that same input, then runs the
+live database query. `make -C studies/f3 check-public` first restores/hash-checks that same input, then runs the
 public Loop 3 and case-binding regression tests.
 
-`make check-sources` is separate: it reports an explicit skip when the copyrighted thesis is
+`make -C studies/f3 check-sources` is separate: it reports an explicit skip when the copyrighted thesis is
 unavailable, including its public White Rose route and expected hash in the skip report, and otherwise
 checks the held thesis-linked observation extraction against the source hash. It does not
 authenticate all palaeontological identifications or rerun frozen qualification. The printed receipts

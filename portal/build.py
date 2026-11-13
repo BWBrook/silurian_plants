@@ -28,18 +28,18 @@ PORTAL = ROOT / "portal"
 OUT = PORTAL / "dist"
 REPO = "https://github.com/BWBrook/silurian_plants"
 CORE = [
-    ("primer", "The primer", "The period, biological transitions and the nature of the fossil record.", "01"),
-    ("framings", "Research framings", "The candidate questions and the adopted first study.", "02"),
-    ("precedents", "Modelling precedents", "What has already been modelled, and where the gaps remain.", "03"),
-    ("sources", "The evidence base", "A register of the data held, needed and ruled out.", "04"),
+    ("docs/primer", "The primer", "The period, biological transitions and the nature of the fossil record.", "01"),
+    ("docs/framings", "Research framings", "The candidate questions and the adopted first study.", "02"),
+    ("docs/precedents", "Modelling precedents", "What has already been modelled, and where the gaps remain.", "03"),
+    ("docs/sources", "The evidence base", "A register of the data held, needed and ruled out.", "04"),
 ]
 CURRENT = [
-    ("f3-shape", "Fossil absences & clock maxima", "What the sampled record can exclude, under explicit encounter histories and biological assumptions.", "F3"),
-    ("pilot-traits", "The trait pilot", "Specimen combinations, published crown states and the mappings behind the maxima.", "Traits"),
-    ("questions", "The questions register", "The questions guiding the programme, their evidence and the work still needed.", "Q"),
+    ("studies/f3/docs/f3-shape", "Fossil absences & clock maxima", "What the sampled record can exclude, under explicit encounter histories and biological assumptions.", "F3"),
+    ("studies/f3/docs/pilot-traits", "The trait pilot", "Specimen combinations, published crown states and the mappings behind the maxima.", "Traits"),
+    ("docs/questions", "The questions register", "The questions guiding the programme, their evidence and the work still needed.", "Q"),
 ]
-SUPPORT = [("charter", "Project charter"), ("decisions", "Decision record"),
-           ("spore-compilation-plan", "Spore compilation plan")]
+SUPPORT = [("docs/charter", "Project charter"), ("docs/decisions", "Decision record"),
+           ("docs/spore-compilation-plan", "Spore compilation plan")]
 GROUP_NAMES = {"incertae-sedis": "Uncertain affinity", "lycopsid": "Lycopsids",
                "rhyniophytoid": "Rhyniophytoids", "zosterophyll": "Zosterophylls",
                "cryptospore-plant": "Cryptospore plants", "nematophyte": "Nematophytes",
@@ -75,10 +75,10 @@ def main():
     parser.add_argument("--stage", action="store_true", help="Also copy the generated site into .site-publish/ for Sites publication")
     args = parser.parse_args()
     tracked = [Path(p) for p in git("ls-files", "-z").split("\0") if p]
-    paths = sorted(ROOT / p for p in tracked if p.parts[0] == "docs" and p.suffix == ".md")
-    paths += sorted(ROOT / p for p in tracked if p.parts[0] == "data" and p.name == "README.md"
+    paths = sorted(ROOT / p for p in tracked if p.suffix == ".md" and (p.parts[0] == "docs" or p.parts[0] == "studies" and p.parts[2:3] == ("docs",)))
+    paths += sorted(ROOT / p for p in tracked if (p.parts[0] == "data" or p.parts[0] == "studies" and p.parts[2:3] == ("data",)) and p.name == "README.md"
                     and not {"local", "closed", "work"}.intersection(p.parts))
-    paths += [ROOT / p for p in tracked if p == Path("models/f3/README.md")]
+    paths += [ROOT / p for p in tracked if p == Path("studies/f3/models/README.md")]
     paths += [ROOT / "README.md"]
     cards = sorted(ROOT / p for p in tracked if p.parent == Path("taxa") and p.suffix == ".md"
                    and not p.name.startswith(("_", "README")))
@@ -195,7 +195,7 @@ def main():
             for heading, documents in [("Current work", CURRENT), ("Foundations", CORE + SUPPORT)]:
                 side += f'<p class="eyebrow">{heading}</p>'
                 for slug, label, *_ in documents:
-                    path = f"docs/{slug}.html"
+                    path = f"{slug}.html"
                     side += f'<a href="{url(path)}" class="{"active" if path == current else ""}"{" aria-current=\"page\"" if path == current else ""}>{label}</a>'
             side += f'<a class="back-link" href="{url("reading.html")}">All documents ↗</a></aside>'
         elif section == "atlas" and source:
@@ -247,7 +247,7 @@ def main():
         rendered, toc, plain, title = render(body, source, current)
         title = title or p.stem.replace("-", " ").title()
         words = len(plain.split())
-        label = "Audit & evidence" if "/audits/" in source else "Source documentation" if source.startswith(("data/", "models/")) else "Reading room"
+        label = "Audit & evidence" if "/audits/" in source else "Source documentation" if source.startswith(("data/", "studies/f3/models/")) else "Reading room"
         content = f'<div class="article-header"><p class="eyebrow">{label}</p><h1>{esc(title)}</h1><p class="article-meta">{max(1, math.ceil(words / 220))} min read <span>·</span> Research in progress</p></div><article class="prose">{rendered}</article>'
         page(title, content, current, "reading", toc, source)
         search.append({"title": title, "type": label, "url": current, "text": plain})
@@ -294,14 +294,14 @@ def main():
         search.append({"title": meta["name"], "type": "Taxon card", "url": current,
                        "text": BeautifulSoup(content, "html.parser").get_text(" ", strip=True)})
 
-    reading_cards = "".join(f'<a class="reading-card" href="docs/{slug}.html"><span class="chapter">{number}</span><h2>{label}</h2><p>{description}</p><span class="text-link">Start reading ↗</span></a>' for slug, label, description, number in CORE)
-    current_cards = "".join(f'<a class="reading-card" href="docs/{slug}.html"><span class="chapter">{number}</span><h2>{label}</h2><p>{description}</p><span class="text-link">Read the work ↗</span></a>' for slug, label, description, number in CURRENT)
-    current_section = f'<section class="current-work"><div class="section-title"><div><p class="eyebrow">Current work</p><h2>From specimens to inference.</h2></div><a href="docs/plan-f3.html">The adopted plan ↗</a></div><div class="reading-grid current-grid">{current_cards}</div></section>'
-    support_cards = "".join(f'<a href="docs/{slug}.html">{label}<span>↗</span></a>' for slug, label in SUPPORT)
+    reading_cards = "".join(f'<a class="reading-card" href="{slug}.html"><span class="chapter">{number}</span><h2>{label}</h2><p>{description}</p><span class="text-link">Start reading ↗</span></a>' for slug, label, description, number in CORE)
+    current_cards = "".join(f'<a class="reading-card" href="{slug}.html"><span class="chapter">{number}</span><h2>{label}</h2><p>{description}</p><span class="text-link">Read the work ↗</span></a>' for slug, label, description, number in CURRENT)
+    current_section = f'<section class="current-work"><div class="section-title"><div><p class="eyebrow">Current work</p><h2>From specimens to inference.</h2></div><a href="studies/f3/docs/plan-f3.html">The adopted plan ↗</a></div><div class="reading-grid current-grid">{current_cards}</div></section>'
+    support_cards = "".join(f'<a href="{slug}.html">{label}<span>↗</span></a>' for slug, label in SUPPORT)
     doc_rows = []
     grouped_rows = {"Audits & evidence": [], "Data & implementation guides": [], "Operations & literature work": []}
     operations = {"backup-nectar", "barry-to-action", "literature-next-batch", "literature-requests"}
-    main_documents = {f"docs/{slug}.html" for slug, *_ in CURRENT + CORE + SUPPORT}
+    main_documents = {f"{slug}.html" for slug, *_ in CURRENT + CORE + SUPPORT}
     for entry in search:
         if entry["type"] != "Taxon card" and entry["url"] not in main_documents:
             row = f'<a class="document-row" href="{entry["url"]}"><span>{esc(entry["title"])}</span><small>{entry["type"]}</small><span aria-hidden="true">↗</span></a>'

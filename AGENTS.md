@@ -2,8 +2,8 @@
 
 Exploratory, long-term programme on simulation modelling of early land-plant evolution, Late
 Ordovician to Early Devonian (c. 458–393 Ma). Read `docs/charter.md` for purpose, stage and
-route, and `docs/decisions.md` for what has been settled. Current stage: the first deliverable,
-a curated occurrence dataset plus framing F3, chosen 2026-10-28. `docs/plan-f3.md` sets its
+route, and `docs/decisions.md` (programme) and `studies/f3/docs/decisions.md` (F3) for what has been settled. Current stage: the first deliverable,
+a curated occurrence dataset plus framing F3, chosen 2026-10-28. `studies/f3/docs/plan-f3.md` sets its
 endpoint, stages, acceptance criteria and consult triggers; model code within that plan is
 authorised. Other framings need their own decision before model code starts.
 
@@ -12,12 +12,12 @@ authorised. Other framings need their own decision before model code starts.
 Barry authorised Codex as a direct repository collaborator on 2026-10-28. Claude and Codex
 use the private Correspondence Board section **Silurian Plants** (`silurian-plants`) for
 scientific discussion and task coordination. Initial F3 review: discussion **99** and
-`docs/audits/2026-10-28-f3-reshape-codex-review.md`.
+`studies/f3/docs/audits/2026-10-28-f3-reshape-codex-review.md`.
 
 Barry follows the work through his Codex and Claude chats, not the Board. Bring material
 findings, disagreements and decisions back to those chats. Discuss and agree file ownership
 before concurrent edits; preserve the other agent's work. Keep accepted decisions in
-`docs/decisions.md` and distinguish proposals from adopted methods. Read relevant Board
+`docs/decisions.md` (programme) or the study's own log and distinguish proposals from adopted methods. Read relevant Board
 updates during active work; there is no automatic dispatch or scheduled monitoring.
 
 Barry confirmed the asynchronous cadence on 2026-10-29: each collaborator posts its results
@@ -27,12 +27,17 @@ do not wait or poll for a reply from an unprompted collaborator.
 
 ## Layout
 
+- `studies/<id>/`: one folder per study, mirroring the root (`docs/`, `docs/audits/`, `data/`, `models/`,
+  `tools/`, `manuscript/`, `work/`) with its own `README.md` and `docs/decisions.md`. A study may read the
+  commons at the root; the commons does not read a study. F3 is `studies/f3/`. Records written before the
+  14 November 2026 move name pre-move paths; `studies/f3/PATHS.tsv` maps them, and `studies/f3/tools/moved.py`
+  resolves them in code. A new study needs its own decision before model code starts.
 - `taxa/`: one information card per taxon. `taxa/_template.md` is the schema; `taxa/README.md`
   is generated.
 - `docs/`: charter, decisions, primer, precedents review, candidate framings, the source register
   (`docs/sources.md`, the index of all data held and needed: update it when a source changes),
-  the spore-compilation plan, the plan for the first deliverable (`docs/plan-f3.md`) and its adopted reshaping
-  (`docs/f3-shape.md`, v3, which governs F3's statistics), the trait pilot (`docs/pilot-traits.md`), the questions register (`docs/questions.md`), and
+  the spore-compilation plan, the plan for the first deliverable (`studies/f3/docs/plan-f3.md`) and its adopted reshaping
+  (`studies/f3/docs/f3-shape.md`, v3, which governs F3's statistics), the trait pilot (`studies/f3/docs/pilot-traits.md`), the questions register (`docs/questions.md`), and
   `docs/rejected-records.md` (rejected, reassigned and disputed
   early land-plant records, for the observation model).
 - `data/timescale.csv`: ICS v2024/12 stage base ages, the single source of numerical ages.
@@ -65,14 +70,14 @@ do not wait or poll for a reply from an unprompted collaborator.
     and similar names still resolve where nectar keeps them. `tools/backup_nectar.py` uses
     `nectar`; its existing `backups/mac-mini` storage directory is unchanged. Use the short
     machine names in operational commands.
-- `docs/audits/`: independent checks of cards and deposits.
-- `models/`: analysis code. Python runs with `uv`. Each R analysis directory has its own renv
-  (`renv.lock` committed, libraries ignored), for example `models/pilot-asr/`; restore with
+- `docs/audits/`: independent checks of cards, deposits, the spore data and literature acquisition.
+- `studies/f3/models/`: analysis code. Python runs with `uv`. Each R analysis directory has its own renv
+  (`renv.lock` committed, libraries ignored), for example `studies/f3/models/pilot-asr/`; restore with
   `renv::restore()` from that directory.
 - `tools/cards.py`: card validation, DOI checking and index generation.
-- `manuscript/`: the F3 paper, built with makedoc. One evidence base, three renderings in `text/`: the
+- `studies/f3/manuscript/`: the F3 paper, built with makedoc. One evidence base, three renderings in `text/`: the
   article and supplement, a two-page brief for any reader, and a guide for agents (`for-agents.md`),
-  all citing one claims ledger, `claims.csv`. See `manuscript/README.md`.
+  all citing one claims ledger, `claims.csv`. See `studies/f3/manuscript/README.md`.
 - `references/`: the programme bibliography. `dois.txt` is canonical; `tools/refs.py build` writes
   `refs.yaml` from Crossref (Barry, 2026-11-02). Zotero supplies extra metadata only where needed.
 
@@ -84,7 +89,7 @@ uv run tools/cards.py dois    # DOIs in taxa/ and docs/ against Crossref
 uv run tools/cards.py index   # regenerate taxa/README.md
 uv run tools/cards.py matrix  # regenerate data/traits.csv
 uv run tools/refs.py build    # references/refs.yaml from references/dois.txt
-make -C manuscript check      # claims drift check, makedoc lint and citation audit
+make -C studies/f3/manuscript check      # claims drift check, makedoc lint and citation audit
 ```
 
 Run `check`, `index` and `matrix` after editing cards, and `dois` after adding references.
@@ -95,7 +100,7 @@ Run `check`, `index` and `matrix` after editing cards, and `dois` after adding r
   DOI is verified against Crossref; never guess one. In references lists, one reference per line
   with first author, year, title and DOI, so `dois` can compare them.
 - When a source cannot be read in full (paywall, blocked supplement, print only), add it to
-  `docs/closed-literature.csv` with what it would settle (`docs/first-study-literature.csv` ranks
+  `docs/closed-literature.csv` with what it would settle (`studies/f3/docs/first-study-literature.csv` ranks
   the first study's gaps); Barry obtains these through his
   institutional login. Never bypass access controls. PDFs he obtains go in `library/closed/`,
   which is git-ignored: copyrighted texts are never committed.
@@ -113,7 +118,7 @@ Run `check`, `index` and `matrix` after editing cards, and `dois` after adding r
   `data/traits.csv` reports it in the `borrowed` column.
 - A card is `draft` until a second agent or Barry has checked its facts; then `reviewed`.
 - Keep disagreement usable. Record what a source observed separately from each interpretation of
-  it, and let every analysis declare which reading it uses (`docs/plan-f3.md`).
+  it, and let every analysis declare which reading it uses (`studies/f3/docs/plan-f3.md`).
 - Assume no new measurements, sampling logs or help will come from original authors or outside
   specialists (Barry, 2026-11-01). Work from the published record and the data, archives and
   repositories already accessible, and recover them thoroughly. A paper may say what further
@@ -123,7 +128,7 @@ Run `check`, `index` and `matrix` after editing cards, and `dois` after adding r
   the question's ID. When a claim repeated in the literature fails against its source, log it
   under Q5.
 - At the close of each loop, update `docs/questions.md` and add a structural-review entry to
-  `docs/decisions.md`: does the structure serve the next investigation, which assumptions were
+  the study's decision log: does the structure serve the next investigation, which assumptions were
   exposed, and did any evidence change a question?
 - British spelling. Dense, precise prose; no filler.
 - Record decisions that shape the programme in `docs/decisions.md`, naming who decided. Keep

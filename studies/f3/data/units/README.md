@@ -1,7 +1,7 @@
 # Sampling-unit evidence: bounded M2 interface pilot
 
 Status: **pilot only, updated 31 October 2026 with Qusaiba and Libya inventories**.
-These tables implement the two-table interface agreed in `docs/f3-shape.md`. They contain
+These tables implement the two-table interface agreed in `studies/f3/docs/f3-shape.md`. They contain
 49 identifiable material blocks, each with E1 and E2 outcomes under `main`, `inclusive`
 and `outlier` (294 outcome rows). The original 15-block evidence pilot is retained unchanged;
 34 Borenshult samples now have complete material/reporting maps. None of the seven frames is
@@ -32,7 +32,7 @@ unadopted. No reference rate, first appearance or fossil-absence result is gener
 | `borenshult_ages.csv` | All 34 depths with separate 2019/2023 zone/contact readings and historical numerical contexts; no age density or fitted age-depth model |
 | `reporting-rule.md` | Agreed core/three qualifications plus integrated productivity condition; no adapter or adopted binary data release yet |
 
-Check with `python3 tools/units.py check` (standard library only). The check rejects duplicate
+Check with `python3 studies/f3/tools/units.py check` (standard library only). The check rejects duplicate
 material, missing event/reading combinations, broken source/interpretation links, reversed stage
 ranges, and loss of a detection in a wider reading. It also enforces this release's `pilot_only`
 status, frame/sample links and listed counts, and absence of an adopted binary reporting rule. It is an integrity check, not source
@@ -62,10 +62,10 @@ rows show marine recovery possibly due to caving. H2 offers the most complete
 within-well Hawaz/younger comparison, proposed for design adjudication with
 core/cutting transport, caving and shared ages explicit. No binary conversion,
 reference rate or empirical bound is adopted. See
-`docs/audits/2026-10-31-libya-event-map.md` and the preceding inventory audit.
+`studies/f3/docs/audits/2026-10-31-libya-event-map.md` and the preceding inventory audit.
 
 Regenerate the chart table from the pinned local source with
-`uv run --with pymupdf==2.0.0 tools/libya_charts.py`. It compares both display
+`uv run --with pymupdf==2.0.0 studies/f3/tools/libya_charts.py`. It compares both display
 panels and asserts complete mapping of coloured point symbols; counts mean
 plotted symbols, not specimens or search effort. The prose tables are curated
 source paraphrases and scoped links. Independent raster checks agree on all
@@ -121,7 +121,7 @@ palynomorphs shows a preservation opportunity; it does not establish equal spore
 Class assignments remain pilot design judgements, with no reference rates attached. Unknown
 eligibility stays unknown. Post-2006 material cannot silently join the Palynodata denominator.
 
-The three reading definitions come from `data/occurrences/readings.csv`. The eight new Paraguay
+The three reading definitions come from `studies/f3/data/occurrences/readings.csv`. The eight new Paraguay
 rows have no occurrence-layer interpretation IDs yet; their explicit local evidence and reading
 choices are proposals for Claude's adjudication. Existing tail interpretation IDs are linked
 where available. Unit-level age choices remain conservative: source-correlated Aeronian and
@@ -132,8 +132,8 @@ retain Llandovery bounds pending reconciliation of the sample logs and companion
 limits must come from `data/timescale.csv`. No printed chart uncertainty has been reinterpreted
 as a Normal standard deviation. A real analysis must specify age densities, shared uncertainty,
 frame inclusion, a binary reporting rule, first-appearance selection and reference support before
-any conversion to `models/f3/envelope.py`'s binary `Units` object. At the pilot release that adapter was deferred until those choices were settled;
-sprint 1 subsequently implemented named M2 designs in `models/f3/designs.py`.
+any conversion to `studies/f3/models/envelope.py`'s binary `Units` object. At the pilot release that adapter was deferred until those choices were settled;
+sprint 1 subsequently implemented named M2 designs in `studies/f3/models/designs.py`.
 Sprint-2 source admission does not automatically extend that adapter to E2.
 
 ## Borenshult and earlier frame reviews, 29–31 October
@@ -159,13 +159,13 @@ conflicting subzone/contact readings. Shared core labels identify dependence, no
 coevality. The next step is reference support under each reading and an explicit
 ordered/shared age design, followed by actual-design qualification. This post-2006,
 source-selected frame remains outside the Palynodata denominator. Full sources,
-logic and review findings: `docs/audits/2026-10-30-borenshult-event-map.md`.
+logic and review findings: `studies/f3/docs/audits/2026-10-30-borenshult-event-map.md`.
 
 The held Ghavidel-Syooki & Winchester-Seeto (2002) paper concerns the western
 Ghelli type section, not eastern Pelmis Gorge. Its methods/figure sample ranges
 also disagree, and chitinozoan yields are not trilete outcomes. It cannot fill
 the Pelmis inventory gap; the 2001 and 2007 leads still require full texts and
-locality checks. See `docs/audits/2026-10-30-frame-and-pilot-review.md`.
+locality checks. See `studies/f3/docs/audits/2026-10-30-frame-and-pilot-review.md`.
 
 Codex assembled the pilot with a bounded independent source check by a `gpt-5.6-sol` specialist.
 The review found two provenance omissions: the main text and supplement needed separate hashes,
@@ -214,14 +214,14 @@ acritarchs occur in every table row. A study-wide statement restricts spores to
 Ghelli, but does not license 113 individual negative records. The complete
 inventory, sample-to-chart mapping and older ages need reconciliation.
 
-`docs/audits/2026-10-29-f3-response-and-ghelli-frame.md` records source locators,
+`studies/f3/docs/audits/2026-10-29-f3-response-and-ghelli-frame.md` records source locators,
 related Khoshyeilagh assessments and the methods-review handoff. The productivity
 rule conditions inference on eligible productive preparations; it does not turn
 marine palynomorph recovery into proof of trilete search scope.
 
 ## Sprint 2 source admission, 31 October 2026
 
-`data/units/sprint2/` holds the bounded M1 source/admission evidence and M3
+`studies/f3/data/units/sprint2/` holds the bounded M1 source/admission evidence and M3
 denominator assessment; its README separates source transcriptions, generated
 reports and conditional sampling arithmetic. The source roster was frozen in
 `d17d033` before detailed extraction. These evidence products do not add binary
@@ -241,4 +241,4 @@ including its deepest sample. It is a potential later reference, requiring
 transport and boundary-rate treatment; it supplies no pre-appearance material.
 The other sprint-2 material inventories stay separate because collection labels,
 figured specimens, overlapping publications and studied rock samples are not
-interchangeable units. See `docs/audits/2026-10-31-sprint2-m1.md`.
+interchangeable units. See `studies/f3/docs/audits/2026-10-31-sprint2-m1.md`.

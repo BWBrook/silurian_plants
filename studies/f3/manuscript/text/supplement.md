@@ -11,7 +11,7 @@ trilete spores, **E2** cryptospores accepted as embryophytic under a named readi
 polysporangiate bodies, and **E5** crown vascular-plant members. **B0**, **B1** and **B2** are the
 body-record categories: any land-plant body (any accepted macro- or mesofossil; canonically including
 the Katian Oman sporangial fragments, S5.1), polysporangiophyte body and crown vascular-plant member.
-`manuscript/estimands.md` states what each analysis bounds and which phrasings are not allowed.
+`studies/f3/manuscript/estimands.md` states what each analysis bounds and which phrasings are not allowed.
 
 ## S1. Readings, observations and units
 
@@ -20,7 +20,7 @@ resolved by fiat. The *main* reading accepts what the cited sources accept. The 
 adds records that a named source accepts against others, and the *outlier* reading admits further
 records that are explicitly contested. A wider reading requires a record-specific acceptance; it does
 not promote every unresolved grain or axis to a detection. The E2 rule separates spore morphology and
-producer evidence from the embryophyte affinity accepted by each reading (`data/units/e2-unit-rule.md`).
+producer evidence from the embryophyte affinity accepted by each reading (`studies/f3/data/units/e2-unit-rule.md`).
 Rejected, reassigned and disputed records are listed in `docs/rejected-records.md`.
 
 **Observations.** Within each frame, the same reporting rule applies to older and reference material.
@@ -40,7 +40,7 @@ within-range positions are modelling choices, not measured dating distributions.
 Abuhmida [@abuhmida2013PalynologicalAnalysisOrdovician] reports palynology from six Murzuq Basin wells. All [164]{.C38} appendix samples were
 transcribed independently, with 158 chart depth and type labels (153 exact matches). The 164 prose-scope
 rows and 158 chart reports were mapped, retaining barren material and possible caving
-(`data/units/libya_*.csv`; `docs/audits/2026-10-31-libya-event-map.md`). The primary frame is the
+(`studies/f3/data/units/libya_*.csv`; `studies/f3/docs/audits/2026-10-31-libya-event-map.md`). The primary frame is the
 chart-coded cuttings design `LY-MZ-CU`. Five wells contribute [59]{.C02} Llandovery reference cuttings ([51]{.C02} with trilete reports), and three of them contribute [28]{.C01} older cuttings without trilete reports.
 
 ### S2.2 Model, targets and qualification
@@ -150,7 +150,7 @@ window, [20 of 1,000]{.C06} screen-passing simulations excluded the truth, and [
 claims, so 20 of those 60 missed. Population 95% coverage, coverage conditional on a non-abstaining
 result, simultaneous coverage and validity beyond the tested histories are not established. Thirteen
 Murzuq design/delivery combinations qualify. A fourteenth qualified pair, QB-CO, supplies no older M2
-interval and has a narrower class scope. The receipts are in `models/f3/out/qual/`.
+interval and has a narrower class scope. The receipts are in `studies/f3/models/out/qual/`.
 
 **Table S12.** What the Murzuq comparison allows: model-conditional 95% compatibility limits, assessed on the declared simulation grid, on older trilete-producer intensity as a fraction *f* of the Llandovery reference, primary stage allocation. Rows 1–2 constrain intensity sustained from 459.1 Ma to the reference; rows 3–4 constrain an interval of fixed intensity beginning at 459.1 Ma and extending further back.
 
@@ -184,7 +184,7 @@ comparison convention. A contamination scenario that conflicts with older zeros 
 flagged separately. The 384 break-even entries fix $\kappa=b=0$. These surfaces and the 36-case
 well/age influence exercise are unqualified sensitivities.
 
-**Table S1.** Murzuq sensitivities (`models/f3/loop2/out/`; `docs/loop2-sprint1-results.md`).
+**Table S1.** Murzuq sensitivities (`studies/f3/models/loop2/out/`; `studies/f3/docs/loop2-sprint1-results.md`).
 
 | Challenge at $\rho=1$ | Observed sensitivity | Scope |
 |--------------------|------------------------------|----------------|
@@ -208,8 +208,8 @@ six depths from 43.1 to 33.05 m, all Sandbian or younger and the lowest below th
 K-bentonite, and possible triletes only at 48.2 and 34.0 m. Their Fig. 4 lists no trilete taxon at 41.1 m,
 so five depths are concordant between the figures[]{.C43}. We carry three readings: Fig. 3 definite, Fig. 4
 definite and the concordant five, each with the two possible-only depths unresolved, plus Hooper et al.'s
-wholesale exclusion as a sensitivity (`data/units/borenshult_review/`,
-`docs/audits/2026-11-05-trilete-evidence-rubric.md`). Symbols and positive depths are not specimen counts.
+wholesale exclusion as a sensitivity (`studies/f3/data/units/borenshult_review/`,
+`studies/f3/docs/audits/2026-11-05-trilete-evidence-rubric.md`). Symbols and positive depths are not specimen counts.
 
 The readings bear on three separate questions. (1) The maximum: the stage-base rule gives 459.1 Ma from the
 definite 43.1 m level as from the possible 48.2 m one. (2) A minimum: the definite triletes would set a
@@ -218,7 +218,7 @@ supplied by the mark, and its minimum would be the young edge of the bentonite a
 (3) An absence test: only three Darriwilian samples lie below the first definite trilete. With all three
 fully exposed, the screen statistic at reference intensity is [1.3157]{.C44}, [1.0753]{.C44} and [1.1155]{.C44} for the
 three readings, against [5.9915]{.C44}, so the core cannot exclude reference-level intensity before its first
-definite trilete under any reading (`models/f3/out/borenshult_review/screen.csv`). This screen has no
+definite trilete under any reading (`studies/f3/models/out/borenshult_review/screen.csv`). This screen has no
 numerical chronology and is not a test at 459.1 Ma.
 
 The comparison of the earliest trilete claims on common axes (specimen basis, the describing authors'
@@ -237,7 +237,7 @@ before 459.1 Ma, where a history sustained from 459.1 Ma gives no producers, and
 lies inside the window ($q_i = 0.9/11.2$ under a uniform age within the stage).
 
 The qualified model shares a Gamma(2, 2) frailty within each well. Three retrospective, unqualified
-sensitivities (`models/f3/loop3/murzuq_stage2.py`) ask how much the constant-history contour on $\rho f$
+sensitivities (`studies/f3/models/loop3/murzuq_stage2.py`) ask how much the constant-history contour on $\rho f$
 depends on cuttings being independent given the shared well effect. Each uses the declared $-2\log(0.05)$ threshold as a comparison
 convention, not a calibrated critical value.
 
@@ -249,7 +249,7 @@ convention, not a calibrated critical value.
 | Each cutting weighted by 1/(size of its well × stage-support block) | [0.419]{.C51 .V085} |
 | One well left out at a time | [0.093]{.C51 .V082} to [0.186]{.C51 .V083} |
 
-**Table S1b.** Murzuq dependence sensitivities (`models/f3/loop3/out/stage2_murzuq/dependence_sensitivity.csv`).
+**Table S1b.** Murzuq dependence sensitivities (`studies/f3/models/loop3/out/stage2_murzuq/dependence_sensitivity.csv`).
 
 Inverse block-size weights give each block unit total likelihood weight: about seven reference and six
 older blocks in total weight. Reference blocks mix positive and negative cuttings, so a block is not
@@ -278,14 +278,14 @@ Llandovery samples. The later tentative reinterpretation of one figured specimen
 a Hirnantian positive. The Belgian entry remains unverified against primary sources in this audit.
 We preserve the published extraction but omit these entries from the
 secure examples. The source-by-source audit and exact selectors are in
-`docs/audits/2026-11-13-c54-independent-check.md`; C54 covers only the narrowed comparison.
+`studies/f3/docs/audits/2026-11-13-c54-independent-check.md`; C54 covers only the narrowed comparison.
 
 ## S3. QSIM-801: a model-conditional floor calculation
 
 Vecoli et al. [@vecoli2017MiddleOrdovicianCryptospores] [Table 1, p. 321] report [99]{.C11} cryptospore morphotaxon occurrences across [17 of 20]{.C11}
 tabled samples assigned to the late Dapingian–early Darriwilian. Their p. 330 explicitly reports no
 triletes in the studied sequence. The table was independently reconstructed from the rendered source
-(`data/units/loop2/replication/`). Its 22 categories include informal morphotypes. Marks are distinct
+(`studies/f3/data/units/loop2/replication/`). Its 22 categories include informal morphotypes. Marks are distinct
 recorded occurrences, not counts of independent producers or dispersal events. The table-defined depths
 are 675.1–767.8 ft. The methods' shallower endpoint, 586.9 ft, is inconsistent and is not used.
 
@@ -313,7 +313,7 @@ a unit on which triletes were detectable. Independence, effective ascertainment 
 conditions are unverified. The calculation therefore stays exploratory. Toy Poisson simulations check the
 algebra[]{.C13} but cannot validate the historical protocol. No matched counted Katian–Llandovery reference was
 recovered. Qusaiba-1 supplies reference context only. Röstånga and Caspalá/Lipeón are younger than M2,
-and Hanadir/TAYM-4 is separate material without a qualified design[]{.C22} (`manuscript/external_candidates.csv`).
+and Hanadir/TAYM-4 is separate material without a qualified design[]{.C22} (`studies/f3/manuscript/external_candidates.csv`).
 
 ## S4. The 515.5 Ma maximum (M1): affinity and the preservation-control argument
 
@@ -321,7 +321,7 @@ Morris et al. [@morris2018TimescaleEarlyLand] place the maximum at the base of t
 oldest possible total-group records (Stage 4 Rome Formation cryptospores), and argue for a real absence
 before it: land-plant spores share the preservation potential of the marine algal cysts with which they
 usually occur, so older cyst-bearing sequences without land-plant spores record absence
-[@morris2018ReplyHedgesEt]. Our earlier drafts described only the placement (`docs/audits/2026-11-07-m1-rationale.md`). The
+[@morris2018ReplyHedgesEt]. Our earlier drafts described only the placement (`studies/f3/docs/audits/2026-11-07-m1-rationale.md`). The
 control shows that sporopollenin-walled microfossils survived and were recovered; it does not by itself
 show comparable terrestrial delivery, coverage of the land areas where early plants grew, sensitivity of
 preparation and search to small cryptospores, or production of recognisable spores by the earliest
@@ -335,7 +335,7 @@ calling direct embryophyte affinity unlikely and the interpretation premature. N
 the assessed Stage 4 producers as embryophytes. Wall ultrastructure and developmental features bear on
 precursor relationships, so the inclusive reading stays an explicit alternative. Argentine sample
 RIOCAP-7999 is unresolved under main and detected under inclusive and outlier readings. Stage 4 converts
-to [514.5–506.5]{.C16} Ma, all younger than 515.5 Ma by the maximum's design (`data/units/loop2/m1-m3/`).
+to [514.5–506.5]{.C16} Ma, all younger than 515.5 Ma by the maximum's design (`studies/f3/data/units/loop2/m1-m3/`).
 
 ## S5. The positive body-record analysis
 
@@ -343,16 +343,16 @@ to [514.5–506.5]{.C16} Ma, all younger than 515.5 Ma by the maximum's design (
 
 **Names.** The [241]{.C38} distinct PBDB macrofossil names overlapping 445.2–393.47 Ma were classified by
 `gpt-6.1-sol` with web search. Each name received a category, polysporangiophyte and crown-member flags,
-a basis, a cited source and a confidence (`data/macro/name_classifications.csv`). Names judged
+a basis, a cited source and a confidence (`studies/f3/data/macro/name_classifications.csv`). Names judged
 implausible for the window, for example the Cretaceous angiosperm leaf genus *Protophyllum*, cannot enter
-any category. A stratified source audit is in `docs/audits/2026-11-01-loop3-source-review.md`; it does not
+any category. A stratified source audit is in `studies/f3/docs/audits/2026-11-01-loop3-source-review.md`; it does not
 certify all 241 assignments.
 
 **Material identity.** Only explicit collection or occurrence identifiers justify replacing a PBDB record
 with its curated interpretation. Country, taxon and overlapping ages do not establish identity; the pilot
 used them and falsely merged distinct localities (S7). Regional checklists and unresolved duplicates are
 withheld from the primary count and kept in a sensitivity. Source decisions are in
-`data/macro/source_adjudications.csv`. Example: the two Yea horizons are kept as separate units with the
+`studies/f3/data/macro/source_adjudications.csv`. Example: the two Yea horizons are kept as separate units with the
 full disputed Gorstian–Emsian range, because the Gorstian attribution rests on a disputed graptolite
 identification. Neither a fixed Gorstian nor a fixed Devonian age is justified.
 
@@ -360,16 +360,16 @@ identification. Neither a fixed Gorstian nor a fixed Devonian age is justified.
 identical age support, or a curated named site plus identical age support. For a collapsed unit, the
 oldest-member age has support from the maximum of member lower ages to the maximum of member upper ages.
 Missing geographic keys retain the collection identifier. The proxy is conservative but is not a verified
-bed (`models/f3/loop3/out/primary_unit_membership.csv` lists every constituent record).
+bed (`studies/f3/models/loop3/out/primary_unit_membership.csv` lists every constituent record).
 
 **Older screen.** A separate screen covers all [556]{.C38} older-only non-spore PBDB rows (69 names). Source
 review of the seven plausible or unplaced names (17 occurrences) found cyanobacteria, algae or trace
 fossils and the rejected *Boiophyton*, not an additional embryophyte body. These exclusions are not
 fossil non-detections, and the screen is not a search denominator
-(`data/macro/older_records_screen.csv`; `docs/audits/2026-11-01-loop3-older-records-review.md`).
+(`studies/f3/data/macro/older_records_screen.csv`; `studies/f3/docs/audits/2026-11-01-loop3-older-records-review.md`).
 
 **Category admission.** Membership is tested by the builder from each record's evidence channel
-(`data/macro/body_membership.csv`). B1 requires E3 (branched axes bearing sporangia) or nested E5 (crown
+(`studies/f3/data/macro/body_membership.csv`). B1 requires E3 (branched axes bearing sporangia) or nested E5 (crown
 membership) evidence. Tracheids alone (E4) are synthesis evidence and do not show a branched sporophyte
 with several sporangia, so E4-only material does not enter B1: the Lochkovian Lang tracheid axis, a
 sterile axis, stays out. The E3 channel was enumerated only for the Homerian and older, so a younger
@@ -380,7 +380,7 @@ with terminal sporangia [@libertin2022EarlyLandPlant], and the Upper Roman Camp 
 yielded branching specimens of *Steganotheca striata* and *Cooksonia* sp. from the same Ludlow beds as
 the tracheid-bearing sterile axis [@edwards1979RecordsFertileRhyniophytina, Plate 1e, g]. Branching,
 conducting anatomy and crown membership are adjudicated separately for each, and tracheids are not
-transferred to the fertile specimens (`docs/audits/2026-11-07-gpt6pro-review2-triage.md`).
+transferred to the fertile specimens (`studies/f3/docs/audits/2026-11-07-gpt6pro-review2-triage.md`).
 Separately, PBDB collection
 278439 (Xiemisitai Bed 16, Hoboksar County) is in West Junggar, not Tarim
 [@liu2024EvolutionSilurianPhytogeography]; it is now grouped with the other West Junggar material under Kazakhstania in
@@ -388,7 +388,7 @@ both the fossil and the effort tables, which changes the region–stage sensitiv
 locality–age unit.
 
 **The Oman sporangial fragments.** B0 was declared as any accepted land-plant macro- or mesofossil,
-sterile axes included (`docs/plan-loop3.md`). The inventory as first built took curated records from the
+sterile axes included (`studies/f3/docs/plan-loop3.md`). The inventory as first built took curated records from the
 E3–E5 channels only, so the spore-filled sporangial fragments of the Ghaba-1 borehole, Oman
 [@wellman2003FragmentsEarliestLand], recorded in E2 (observation S-w22-K12), never entered it. The primary report describes
 fragments from three samples of one core, some with a sporangial covering around in situ cryptospores; it
@@ -398,7 +398,7 @@ inventory-assembly error, so the Oman-inclusive B0 is canonical and the former i
 an exclusion sensitivity. The fragments enter as one locality–age unit (Katian enclosure 452.8–445.2 Ma),
 not as twelve fragments or three samples. Codex's membership audit of all 111 E2 observations found no
 other record that passes the declared B0 before the Silurian
-(`docs/audits/2026-11-07-b0-membership-review.md`); the older Hawaz sheets lack secure land-plant tissue
+(`studies/f3/docs/audits/2026-11-07-b0-membership-review.md`); the older Hawaz sheets lack secure land-plant tissue
 identity. Their recovery through palynological preparation differs from the macrofossil collections that
 dominate the recording proxies, which is a further reason the B0 histories may misdescribe the sequence.
 The B0 values now come from the canonical `build_reviewed.py` and `analysis.py` pipeline. The
@@ -480,7 +480,7 @@ treated as exact, not exact finite-sample tests, and their spread across draws i
 not a combined test for interval-dated fossils, a model-selection criterion or an empirical calibration.
 **Interval feasibility.** A history that fails under the allocations drawn may fit another allocation
 that the ranges admit; the GPT-6 Pro review constructed such allocations for the 25 Myr decline. For each
-category and history, `models/f3/loop3/interval_feasibility.py` finds the admissible allocation that
+category and history, `studies/f3/models/loop3/interval_feasibility.py` finds the admissible allocation that
 minimises the Kolmogorov–Smirnov distance $D$. Each unit's age support becomes an interval of
 transformed exposure; compatibility of a unit with an order-statistic rank changes only at finitely many
 values of the maximum's exposure, so the search enumerates every such event point and the open cells
@@ -521,7 +521,7 @@ independently checked small cases and all 48 saved witnesses.
 | B0 +Oman | 77 (one straddling) | 2e-07* | 8e-05* | 8e-07* | 0.003* | 1e-16* | 9e-08* |
 | B0 +Oman | 78 possible | 2e-07* | 7e-05* | 6e-07* | 0.004* | 3e-16* | 1e-07* |
 <!-- /table:interval -->
-**Table S7b.** Best attainable conditional-age diagnostic over all admissible allocations, main reading, Emsian cutoff: finite-sample *p* at the most favourable allocation. * no admissible allocation reaches *p* = 0.05, so the history fails this diagnostic for every age assignment within the recorded supports; † fails under the finite-sample reference but reaches 0.05 under the asymptotic one. Units: number inside the window, by inclusion of the units that straddle the cutoff (either of the two gives the same result). A failure is a conservative rejection only if the supports contain the true ages (see text); a pass is a possibility, not a fit (`models/f3/loop3/out/stage2_interval/`).
+**Table S7b.** Best attainable conditional-age diagnostic over all admissible allocations, main reading, Emsian cutoff: finite-sample *p* at the most favourable allocation. * no admissible allocation reaches *p* = 0.05, so the history fails this diagnostic for every age assignment within the recorded supports; † fails under the finite-sample reference but reaches 0.05 under the asymptotic one. Units: number inside the window, by inclusion of the units that straddle the cutoff (either of the two gives the same result). A failure is a conservative rejection only if the supports contain the true ages (see text); a pass is a possibility, not a fit (`studies/f3/models/loop3/out/stage2_interval/`).
 
 Under the finite-sample reference, for crown-member bodies the 10 Myr decline fails in every inclusion
 state. The 25 Myr decline passes with all 50 possible units, falls just short with one straddling unit
@@ -591,7 +591,7 @@ independent-uniform age allocation; shared q places every unit at a common withi
 **Table S6.** Leave-one-region-out bounds for crown vascular-plant members, with PBDB exposure recomputed after the same omission. Regions are approximate modern country/state assignments.
 
 **Shared timescale boundaries.** The bounds above take stage boundaries as fixed. Five deterministic
-scenarios (`models/f3/loop3/timescale_sensitivity.py`) move every boundary in `data/timescale.csv` at once:
+scenarios (`studies/f3/models/loop3/timescale_sensitivity.py`) move every boundary in `data/timescale.csv` at once:
 baseline; all one quoted uncertainty younger; all one older; and two alternating patterns, scaled to
 0.7345 and 0.5610 of the quoted uncertainties so that stage order is kept. Each shifted boundary moves
 curated stage-based endpoints, the cutoff, the analysis domain and the effort-stage widths together. A
@@ -616,10 +616,10 @@ scenarios, not a probability distribution over geological ages.
 | alternating a | 394.20 | 47 | 430.01 | 429.05 | 428.78 | 432.96 | 430.72 | 430.95 |
 | alternating b | 392.91 | 48 | 427.98 | 428.64 | 428.11 | 430.70 | 431.56 | 432.63 |
 <!-- /table:timescale -->
-**Table S6b.** Crown vascular-plant bounds (Ma) under shared boundary scenarios, main reading, Emsian cutoff (shifted with the scenario). Units: guaranteed. "431.2 mapped": the published maximum held at its fractional position in the shifted Homerian; "Source rule": shifted Homerian base plus its quoted 1.3 Myr uncertainty (`models/f3/loop3/out/stage2_timescale/`).
+**Table S6b.** Crown vascular-plant bounds (Ma) under shared boundary scenarios, main reading, Emsian cutoff (shifted with the scenario). Units: guaranteed. "431.2 mapped": the published maximum held at its fractional position in the shifted Homerian; "Source rule": shifted Homerian base plus its quoted 1.3 Myr uncertainty (`studies/f3/models/loop3/out/stage2_timescale/`).
 
 **Influential records.** Leave-group-out comparisons at the same unit rule and cutoff
-(`models/f3/loop3/out/influential_taxa.csv`) remove the records that set the oldest ages. Under constant
+(`studies/f3/models/loop3/out/influential_taxa.csv`) remove the records that set the oldest ages. Under constant
 intensity, removing the three Yea *Baragwanathia* units changes the crown-member bound by [−1.67]{.C52 .V090} Myr
 (younger): the oldest age falls to the Bathurst Island 425.0 Ma support. Removing the five Bathurst Island
 units changes it by [0.26]{.C52 .V091} Myr (older), because Yea remains oldest while the count falls. Removing
@@ -726,14 +726,14 @@ No member was selected to match a clock (Table S9).
 | PBDB density | 432.9 | 0.1 | False | 428.88 | 0.00918 |
 | PBDB density | 432.9 | 0.01 | False | 428.88 | 0.00918 |
 <!-- /table:suppression -->
-**Table S9.** Retrospective stage-break grid for crown vascular-plant members, main reading (`models/f3/loop3/out/suppression_sensitivity.csv`).
+**Table S9.** Retrospective stage-break grid for crown vascular-plant members, main reading (`studies/f3/models/loop3/out/suppression_sensitivity.csv`).
 
 **The age–intensity frontier.** The grid fixes multipliers and reads off bounds. The frontier inverts it:
 for a candidate lineage age $T$ and an assumed delay $d$ before recoverable diagnostic bodies, what ratio
 of earlier to later recording intensity puts the corresponding recoverability start $T-d$ exactly on the
 95% bound? With constant later intensity, a step at the oldest possible age $A$,
 fixed cutoff $c$ and $n$ guaranteed units, the earlier exposure needed is $(A-c)(0.05^{-1/n}-1)$, and the
-ratio is that exposure divided by $T-d-A$ (`models/f3/loop3/frontier.py`). A ratio above one means no reduction is needed. Where
+ratio is that exposure divided by $T-d-A$ (`studies/f3/models/loop3/frontier.py`). A ratio above one means no reduction is needed. Where
 $T-d \le A$ the contour is undefined in this parameterisation (shown as —), which does not exclude the
 combination, because the oldest fossil may be younger within its support. The step's position is chosen
 from the data and the contour is not a fitted rate, a likelihood surface or a joint confidence region. The
@@ -756,7 +756,7 @@ less suppression for the same $T$.
 | Curated oldest set | 10 | — | 2.226 | 1.006 | 0.713 | 0.480 |
 | Curated oldest set | 20 | — | — | — | 24.486 | 1.386 |
 <!-- /table:frontier -->
-**Table S9b.** Retrospective age–intensity frontier for crown vascular-plant members, main reading, Emsian cutoff: earlier/later recording intensity at which each candidate lineage age lies on the conservative 95% bound, by unit treatment and assumed delay (`models/f3/loop3/out/frontier.csv`). Primary units: 48 guaranteed; region–stage: 19; curated: 15; oldest possible age 426.7 Ma in each.
+**Table S9b.** Retrospective age–intensity frontier for crown vascular-plant members, main reading, Emsian cutoff: earlier/later recording intensity at which each candidate lineage age lies on the conservative 95% bound, by unit treatment and assumed delay (`studies/f3/models/loop3/out/frontier.csv`). Primary units: 48 guaranteed; region–stage: 19; curated: 15; oldest possible age 426.7 Ma in each.
 
 ### S5.5 Biological delay
 
@@ -849,7 +849,7 @@ They do not qualify the fossils (Table S11; all categories in `simulation_result
 
 ### S5.7 Figures from the reviewed analysis
 
-Figs S4–S6 are the reviewed analysis's own diagnostic figures (`models/f3/loop3/figures_reviewed.py`),
+Figs S4–S6 are the reviewed analysis's own diagnostic figures (`studies/f3/models/loop3/figures_reviewed.py`),
 regenerated from the accepted tables: recovery bounds by category, the crown vascular-plant sensitivity
 grid and the retrospective suppression grid.
 
@@ -857,9 +857,9 @@ grid and the retrospective suppression grid.
 
 The frontier (S5.4) gives the ratio of later to earlier finding rate at which a candidate ancestor age,
 with zero delay, sits on the 95% limit. To judge whether such a ratio is large, three proxies were
-defined before they were computed (`docs/plan-rulers.md`). For a proxy density *x*(*s*), the ratio is the
+defined before they were computed (`studies/f3/docs/plan-rulers.md`). For a proxy density *x*(*s*), the ratio is the
 mean of *x* over 393.47–426.7 Ma divided by its mean over 426.7 Ma to the candidate age, time-weighted
-within stages, approximated at 0.01 Myr steps (`models/f3/loop3/rulers.py`). *Rock* is the summed area of active North American
+within stages, approximated at 0.01 Myr steps (`studies/f3/models/loop3/rulers.py`). *Rock* is the summed area of active North American
 Macrostrat columns holding a non-marine unit at each age [@peters2018MacrostratPlatformGeological]; South
 America is reported as a coarser secondary case. *Searching* is the PBDB land and marginal-marine
 collection density already used as a recording history [@brook2026FrozenPaleobiologyDatabase]. *Spores*
@@ -872,7 +872,7 @@ This is an algebraic comparison, not evidence that the proxy supplies that findi
 would represent the endpoint calculation if finding rate were proportional to that proxy throughout
 both windows; that transfer is not estimated. Distinct database IDs can still refer to the same
 publication, so this is not a fully deduplicated publication count; the bounded duplicate-entry check
-is recorded in `docs/audits/2026-11-13-c56-independent-check.md`.
+is recorded in `studies/f3/docs/audits/2026-11-13-c56-independent-check.md`.
 
 <!-- table:rulers -->
 | Measure | 444 Ma | 452 Ma | Largest count matched (444 / 452 Ma) |
@@ -918,7 +918,7 @@ earlier integral have the same conditional-on-count likelihood when the later ra
 the later fossil-age pattern can test that shared plateau but cannot distinguish these earlier
 shapes. These are requirements for fitting, not estimates of spread, and the unlimited-age statement
 is analytic extrapolation of this family beyond the data domain of S5.2. In
-`models/f3/loop3/rise_shapes.py`, piecewise-constant histories verify the linear and exponential
+`studies/f3/models/loop3/rise_shapes.py`, piecewise-constant histories verify the linear and exponential
 integrals, `endpoint.known_cutoff_summary` additionally confirms the exponential endpoints at 444 and
 452 Ma, and the absence of a finite endpoint for $\tau\le K$ follows analytically. The shapes were placed after seeing the record and carry no 95% status.
 
@@ -944,7 +944,7 @@ rate for crown vascular plants.
 ## S6. From specimens to nodes
 
 The specimen-to-node pilot separates specimen observations, accepted event readings, encounter, trait
-persistence and node interpretation (`data/pilot/`, `docs/pilot-traits.md`). We reused its
+persistence and node interpretation (`studies/f3/data/pilot/`, `studies/f3/docs/pilot-traits.md`). We reused its
 source-adjudicated combinations, Hooper et al.'s deposited crown-state outputs and the checked
 stochastic-map analyses without rerunning them. Aperture (X21) and dispersal unit (X26) were modelled
 separately, so their marginal supports do not define a joint ancestral phenotype. The X26 monad category
@@ -969,7 +969,7 @@ a crown assignment remain distinct. For M1, cryptospore persistence has not been
 Analyses and wording were replaced after independent review. The record is kept so that readers can see what
 changed and why.
 
-**The Loop 3 body-record pilot** (`docs/loop3-pilot.md`, provisional, by Claude) reported logistic-ramp
+**The Loop 3 body-record pilot** (`studies/f3/docs/loop3-pilot.md`, provisional, by Claude) reported logistic-ramp
 limits of [452.6, 454.1 and 438.0]{.C35 .superseded} Ma for B0, B1 and B2. It read them as favouring the young clock, with a
 15–25 Myr preservation lag. Codex's review found:
 
@@ -983,17 +983,17 @@ limits of [452.6, 454.1 and 438.0]{.C35 .superseded} Ma for B0, B1 and B2. It re
 - two different papers sharing the source identifier `wang2026`.
 
 All were repaired. The fixed-history endpoint calculation (S5.2) replaced the profiled ramp. Its numbers
-and interpretation govern; the pilot's do not (`docs/audits/2026-11-01-loop3-methods-review.md`,
-`docs/loop3-results.md`).
+and interpretation govern; the pilot's do not (`studies/f3/docs/audits/2026-11-01-loop3-methods-review.md`,
+`studies/f3/docs/loop3-results.md`).
 
-**The GPT-6 Pro review** (`docs/audits/2026-11-07-gpt6pro-triage.md`). An independent review of commit `60c406b`
+**The GPT-6 Pro review** (`studies/f3/docs/audits/2026-11-07-gpt6pro-triage.md`). An independent review of commit `60c406b`
 found that the earlier drafts described the 515.5 Ma maximum as resting only on affinity, omitting the
 published preservation-control argument; kept the Oman fragments out of the primary land-plant inventory;
 described the recording rate as fossilisation alone; did not show that 18 of the 28 older Murzuq zeros
 are younger than 459.1 Ma; and read shape diagnostics on allocated ages as rejections. All are corrected
 here. The analyses it requested (interval feasibility, an age–intensity frontier, shared
 timescale-boundary scenarios, Murzuq block dependence, influential-record checks and a public raw-input
-rebuild) are reported in S2.5, S5.2–S5.4 and S8 (`docs/audits/2026-11-07-stage2-handoff.md`). Two of
+rebuild) are reported in S2.5, S5.2–S5.4 and S8 (`studies/f3/docs/audits/2026-11-07-stage2-handoff.md`). Two of
 their findings changed earlier statements: no admissible allocation rescues the 10 Myr decline, but some
 rescue the 25 Myr decline, which earlier drafts had listed as fitting poorly; and the canonical rebuild's
 executable membership test found that E4-only tracheid records had entered the polysporangiophyte
@@ -1001,7 +1001,7 @@ category (S5.1). The 5th–95th percentiles of independent allocations for const
 0.073–0.765 to 0.056–0.715 when the random streams were keyed to each analysis cell; this is a new Monte
 Carlo sample, not a data change.
 
-**The GPT-6 Pro follow-up review** (`docs/audits/2026-11-07-gpt6pro-review2-triage.md`) of commit
+**The GPT-6 Pro follow-up review** (`studies/f3/docs/audits/2026-11-07-gpt6pro-review2-triage.md`) of commit
 `342153a` found that the stage-2 admission repair had removed two records from B1 because they lacked an
 E3 row, although E3 had never been enumerated for Ludlow and Pridoli records; both have published
 branched fertile material and are restored (S5.1). It also found that the Yea entry in the pivotal-record
@@ -1012,14 +1012,14 @@ comparison mixed timescales; and that the interval search was reported on the as
 with a blanket statement that optimisation invalidates the tests. All are corrected, and the
 finite-sample reference is now primary (S5.2).
 
-**Review C wording** (`docs/audits/2026-11-05-review-c.md`, `docs/audits/2026-11-05-review-c-methods.md`).
+**Review C wording** (`studies/f3/docs/audits/2026-11-05-review-c.md`, `studies/f3/docs/audits/2026-11-05-review-c-methods.md`).
 The previous draft called the B0–spore separation a demonstrated, observed lag; applied the $\rho f \approx 0.09$
 product to both Murzuq history classes when it holds for the constant class only; reported the QSIM
 minimum ratios as percentages of all spores (0.307 as 31% rather than a 23.5% share); showed shape
 diagnostics for one age treatment only; and presented the tenfold suppression and the 15–23 Myr delays as
 if they were estimated. All are corrected here, and the Oman sensitivity was added.
 
-**Loop 2 corrections** (`docs/loop2-close.md`, `docs/audits/2026-11-01-loop2-close-claude-response.md`)
+**Loop 2 corrections** (`studies/f3/docs/loop2-close.md`, `studies/f3/docs/audits/2026-11-01-loop2-close-claude-response.md`)
 fixed a misread H0c column, an overgeneralised exponent sensitivity, an unsupported circularity claim and
 an overstated examination count in an earlier draft.
 
@@ -1028,29 +1028,29 @@ an overstated examination count in an earlier draft.
 From the repository root:
 
 ```sh
-make check-public       # public tests; no copyrighted text or private outputs needed
-make reproduce-derived  # selected tables; declared optimiser tolerance
-make rebuild-source     # restore the archived PBDB extract and rebuild inventories and results
-uv run manuscript/figures.py
-python3 manuscript/tables.py
+make -C studies/f3 check-public       # public tests; no copyrighted text or private outputs needed
+make -C studies/f3 reproduce-derived  # selected tables; declared optimiser tolerance
+make -C studies/f3 rebuild-source     # restore the archived PBDB extract and rebuild inventories and results
+uv run studies/f3/manuscript/figures.py
+python3 studies/f3/manuscript/tables.py
 uv run tools/refs.py build
-make -C manuscript
-python3 manuscript/package.py
+make -C studies/f3/manuscript
+python3 studies/f3/manuscript/package.py
 ```
 
-The body-record analysis is reproduced by `models/f3/loop3/build_reviewed.py`, `analysis.py`,
+The body-record analysis is reproduced by `studies/f3/models/loop3/build_reviewed.py`, `analysis.py`,
 `simulation.py`, `suppression_sensitivity.py` and `figures_reviewed.py`. Hash receipts bind their inputs
 and outputs. Frozen Loop 1 and Loop 2 runs are retained without regeneration. Third-party deposits are
 fetched by `data/external/scripts/deposits_fetch.py` and verified against `MANIFEST.tsv`.
-`manuscript/claims.csv` links each main claim to its evidence and limits, and
-`manuscript/value-bindings.csv` binds each quoted number of the strictly checked claims to one row and
+`studies/f3/manuscript/claims.csv` links each main claim to its evidence and limits, and
+`studies/f3/manuscript/value-bindings.csv` binds each quoted number of the strictly checked claims to one row and
 field of its evidence. That check catches swapped or drifted values; it does not check what a sentence
 means. The frozen PBDB all-taxa collections extract (27,830 collections) is archived under CC0 at
 <https://doi.org/10.5281/zenodo.24028289>; `make fetch-pbdb` restores it and verifies its SHA-256.
-`make check-public` restores/hash-checks that input before the tests. Reproduction requires byte
+`make -C studies/f3 check-public` restores/hash-checks that input before the tests. Reproduction requires byte
 identity except for the Murzuq optimisation CSV, whose floating-point fields have absolute tolerance
 $10^{-9}$ while its schema, row order, keys and categorical fields stay exact; receipts record both
-reference and regenerated SHA-256 hashes. `make check-sources` reports the public thesis route
+reference and regenerated SHA-256 hashes. `make -C studies/f3 check-sources` reports the public thesis route
 <https://etheses.whiterose.ac.uk/id/eprint/4475/> and expected hash even when the copyrighted PDF is
 absent. The held source is the related 2013 thesis, not the 2011 abstract. Its SHA-256 is
 `c0e3bf798fb3c27db0bf9cbb155396be5b4b8e003ee2228defb615a65abf3211`; the source check verifies it and

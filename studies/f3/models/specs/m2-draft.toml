@@ -10,8 +10,8 @@ max_ma = 459.1
 mapping = "Hooper et al. (2026) ancestral-state reading: the crown ancestor produced trilete monads"
 
 [data]
-units = "data/units/units.csv"
-outcomes = "data/units/outcomes.csv"
+units = "studies/f3/data/units/units.csv"
+outcomes = "studies/f3/data/units/outcomes.csv"
 units_sha256 = ""
 outcomes_sha256 = ""
 

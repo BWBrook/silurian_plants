@@ -19,7 +19,7 @@ import pandas as pd
 from analysis import select_records
 from histories import YOUNG
 
-ROOT = Path(__file__).resolve().parents[3]
+ROOT = Path(__file__).resolve().parents[4]
 HERE = Path(__file__).resolve().parent
 OUT = HERE / "out"
 ALPHA = 0.05
@@ -57,7 +57,7 @@ def contour(oldest_ma, n_guaranteed, candidate_lineage_ma, diagnostic_delay_myr,
 
 
 def main():
-    inputs = [ROOT / "data/macro/horizons_reviewed.csv", ROOT / "data/timescale.csv",
+    inputs = [ROOT / "studies/f3/data/macro/horizons_reviewed.csv", ROOT / "data/timescale.csv",
               HERE / "analysis.py", HERE / "histories.py", Path(__file__).resolve()]
     digest = lambda p: hashlib.sha256(p.read_bytes()).hexdigest()
     before = {str(p.relative_to(ROOT)): digest(p) for p in inputs}

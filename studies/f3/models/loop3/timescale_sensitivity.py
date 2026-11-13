@@ -22,7 +22,7 @@ from endpoint import PiecewiseRecovery, known_cutoff_summary
 from analysis import select_records
 
 
-ROOT = Path(__file__).resolve().parents[3]
+ROOT = Path(__file__).resolve().parents[4]
 HERE = Path(__file__).resolve().parent
 OUT = HERE / "out" / "stage2_timescale"
 BASE_YOUNG = 393.47
@@ -233,9 +233,9 @@ def run(output=OUT):
     output.mkdir(parents=True, exist_ok=True)
     inputs = [
         ROOT / "data/timescale.csv",
-        ROOT / "data/macro/horizons_reviewed.csv",
-        ROOT / "data/macro/effort_reviewed.csv",
-        ROOT / "data/occurrences/raw/pbdb_collections_darriwilian_emsian_2026-10-28.csv",
+        ROOT / "studies/f3/data/macro/horizons_reviewed.csv",
+        ROOT / "studies/f3/data/macro/effort_reviewed.csv",
+        ROOT / "studies/f3/data/occurrences/raw/pbdb_collections_darriwilian_emsian_2026-10-28.csv",
         ROOT / "data/eprp/record/pbdb_plant_collections.csv",
         HERE / "analysis.py", HERE / "endpoint.py", HERE / "histories.py",
         Path(__file__).resolve(),

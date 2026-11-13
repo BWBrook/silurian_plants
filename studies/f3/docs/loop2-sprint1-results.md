@@ -22,7 +22,7 @@ of contamination. They do not replace the frozen conditional window endpoint.
 
 ## Observation evidence
 
-`data/units/loop2/observation/` accounts for all **164 appendix entries**, joined to 158 chart rows:
+`studies/f3/data/units/loop2/observation/` accounts for all **164 appendix entries**, joined to 158 chart rows:
 153 exact matches, 11 unmatched appendix rows and five unmatched chart rows. It retains literal
 reports, material identity, barren/caving caveats and the separate counting bases. It neither
 recodes E1 nor copies interval percentages to samples. Source pages, hashes and independent
@@ -113,14 +113,14 @@ omitting I3 gives the largest limit. Reference-level window endpoints range from
 468.1 Ma**; omitting H2 gives the latter. At `rho=1`, every tested case retains unbounded
 windows at `f=0.1` and `f=0.01`. These one-at-a-time checks do not establish joint robustness.
 
-![Well and chronology sensitivity](../models/f3/loop2/out/engine_influence.png)
+![Well and chronology sensitivity](../models/loop2/out/engine_influence.png)
 
-![Joint short-window sensitivity](../models/f3/loop2/out/joint_window_sensitivity.png)
+![Joint short-window sensitivity](../models/loop2/out/joint_window_sensitivity.png)
 
 The joint grid has 2,304 model-conflict rows, 561 rejected comparisons and 2,895 not rejected.
 These are counts of declared scenarios, many observationally equivalent, not probabilities
 or proportions of plausible geology. No new primary estimate or biological claim is released.
-The full claim/status ledger is `models/f3/loop2/claims.csv`.
+The full claim/status ledger is `studies/f3/models/loop2/claims.csv`.
 
 ## Count-share method and missing evidence
 
@@ -143,7 +143,7 @@ The combined focused suite passes 37 tests. All 5,760 joint reference/null/candi
 converged, and every break-even scan was monotone with valid profiles. An independent adaptive
 integration reproduced the effective-intensity root within `3.94e-11`. All 28 frozen
 qualification receipts still match their 18 unique bound files; no frozen model, data or output
-file changed from the plan baseline. `models/f3/loop2/out/handoff_verification.json` records
+file changed from the plan baseline. `studies/f3/models/loop2/out/handoff_verification.json` records
 these checks. This verifies provenance and computation, not a new coverage claim.
 
 The decisive new observations are specific:
@@ -157,7 +157,7 @@ The decisive new observations are specific:
 
 ## Handoff
 
-Run commands and the protocol example are in `models/f3/loop2/README.md`. Source/output hashes
+Run commands and the protocol example are in `studies/f3/models/loop2/README.md`. Source/output hashes
 and runtime versions accompany each analysis; figures are generated from the CSVs. The new
 code and outputs are isolated from the frozen Loop 1 inputs, implementation and qualification
 receipts. There is no new binding qualification because no new primary design is admitted.

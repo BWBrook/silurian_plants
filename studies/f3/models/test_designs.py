@@ -1,7 +1,7 @@
 """Checks of the real-design extensions: rate multipliers, numerical age ranges, the oldest-possible first
 appearance, the window read-out and the M2 adapter.
 
-    uv run --with pytest --with numpy --with scipy pytest models/f3/test_designs.py -p no:cacheprovider
+    uv run --with pytest --with numpy --with scipy pytest studies/f3/models/test_designs.py -p no:cacheprovider
 """
 
 import math

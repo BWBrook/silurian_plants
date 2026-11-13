@@ -1,8 +1,8 @@
 # Checks the local fix of the arrival branch of Rextinct::griwm and Rextinct::criwm (README.md).
-# Run from the repository root:  Rscript models/griwm_r/test_arrival_fix.R [path/to/upstream/griwm.R]
+# Run from the repository root:  Rscript studies/f3/models/griwm_r/test_arrival_fix.R [path/to/upstream/griwm.R]
 # Needs data.table. Dates have zero error, so resampling is deterministic.
 
-here <- "models/griwm_r"
+here <- "studies/f3/models/griwm_r"
 args <- commandArgs(trailingOnly = TRUE)
 
 run <- function(file, fun, ages, signor_lipps, alpha = exp(-1)) {

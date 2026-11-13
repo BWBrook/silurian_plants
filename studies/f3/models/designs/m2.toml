@@ -1,7 +1,7 @@
-# M2 real-design declarations, sprint 1 (docs/sprints-2026-11.md, v2).
+# M2 real-design declarations, sprint 1 (studies/f3/docs/sprints-2026-11.md, v2).
 # Frozen before any numerical screen of these designs. A change makes a new file with a new id.
-# Rules named here are implemented in models/f3/designs.py (RULES); generated binary rows go to
-# models/f3/out/m2_units.csv with a link to each source row, the reading and the rule version.
+# Rules named here are implemented in studies/f3/models/designs.py (RULES); generated binary rows go to
+# studies/f3/models/out/m2_units.csv with a link to each source row, the reading and the rule version.
 
 [freeze]
 id = "m2-designs-v1"
@@ -126,7 +126,7 @@ primary = { reading = "main", bor_unresolved = "excluded", cluster_k = 2.0, min_
 
 [[design]]
 id = "BOR"
-label = "Borenshult alone: historical scoped screen (docs/audits/2026-10-31-borenshult-reading-and-screen.md)"
+label = "Borenshult alone: historical scoped screen (studies/f3/docs/audits/2026-10-31-borenshult-reading-and-screen.md)"
 qualify = false
 recompute = false
 

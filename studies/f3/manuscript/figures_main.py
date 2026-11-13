@@ -2,11 +2,11 @@
 # requires-python = ">=3.12"
 # dependencies = ["matplotlib", "numpy", "scipy"]
 # ///
-"""Main-text figures 1-4 of the F3 article, drawn by figures.py into manuscript/figures/.
+"""Main-text figures 1-4 of the F3 article, drawn by figures.py into studies/f3/manuscript/figures/.
 
 Numerical results are read from frozen or reviewed output tables; the published clock intervals,
 maxima and ash age come from figures.py. Diagnostic delays are declared scenarios. Built from the
-reconstruction (manuscript/reconstruction/README.md, step 4) and reviewed by Codex.
+reconstruction (studies/f3/manuscript/reconstruction/README.md, step 4) and reviewed by Codex.
 """
 
 import csv
@@ -20,16 +20,16 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 HERE = Path(__file__).resolve().parent
-ROOT = HERE.parent
+ROOT = HERE.parents[2]
 sys.path.insert(0, str(HERE))
 import figures as F  # noqa: E402
 
-UNITS = ROOT / "models/f3/out/m2_units.csv"
-RESULTS = ROOT / "models/f3/out/m2_results.csv"
-FRONTIER = ROOT / "models/f3/loop3/out/frontier.csv"
-DIAL = ROOT / "models/f3/loop3/out/count_dial.csv"
-RULERS = ROOT / "models/f3/loop3/out/rulers.csv"
-RISE = ROOT / "models/f3/loop3/out/rise_shapes.csv"
+UNITS = ROOT / "studies/f3/models/out/m2_units.csv"
+RESULTS = ROOT / "studies/f3/models/out/m2_results.csv"
+FRONTIER = ROOT / "studies/f3/models/loop3/out/frontier.csv"
+DIAL = ROOT / "studies/f3/models/loop3/out/count_dial.csv"
+RULERS = ROOT / "studies/f3/models/loop3/out/rulers.csv"
+RISE = ROOT / "studies/f3/models/loop3/out/rise_shapes.csv"
 CUTOFF = float(F.primary_bound("B2", "flat")[2]["cutoff_ma"])
 ALPHA = 1 - float(F.primary_bound("B2", "flat")[2]["confidence_conditional_on_fixed_history_iid_units"])
 EMBRYOPHYTE_MAXIMA = tuple(age for age, _ in F.MAXIMA["embryophyta"])

@@ -422,12 +422,12 @@ work. GPT-6 Pro (OpenAI) supplied independent critiques, which were checked agai
 outputs before integration. Barry W. Brook originated and guided the programme and contributed scientific
 decisions; he will review the final manuscript before submission. Task-specific roles, model versions and
 the limits of sessions whose exact variant was unavailable are recorded in `docs/charter.md`,
-`docs/audits/` and `manuscript/reconstruction/`, with adopted decisions in `docs/decisions.md`.
+`studies/f3/docs/audits/` and `studies/f3/manuscript/reconstruction/`, with adopted decisions in `docs/decisions.md` and `studies/f3/docs/decisions.md`.
 
 ## Authors' contributions
 
 [Byline and final CRediT wording remain deferred to the submission phase. A contribution inventory is
-prepared in `manuscript/reconstruction/4-submission-materials.md`.]
+prepared in `studies/f3/manuscript/reconstruction/4-submission-materials.md`.]
 
 ## Conflict of interest declaration
 

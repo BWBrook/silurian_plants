@@ -53,7 +53,7 @@ Original complete drafts are available in the
 
 ## Scope, checks and structural review
 
-Only `manuscript/reconstruction/` is edited in this tranche. The manuscript sources, evidence ledger,
+Only `studies/f3/manuscript/reconstruction/` is edited in this tranche. The manuscript sources, evidence ledger,
 models, generators and rendered products remain frozen. Reconstruction files lie outside the sources
 listed in `scrivmark.toml`; direct edits implement the ownership agreed in Board discussion 158 and
 leave Barry's supervisor-review sources untouched.
@@ -225,7 +225,7 @@ keeps Barry's final manuscript review prospective.
 
 **Observed checks.** The draft-inclusive numerical check cites all 53 claims with zero errors or
 warnings. Existing citation keys resolve, the abstract meets 200 words under both counts, and the
-adopted closing message matches exactly. `make -C manuscript check` passes lint and reference audits;
+adopted closing message matches exactly. `make -C studies/f3/manuscript check` passes lint and reference audits;
 its canonical-only numerical check has one expected warning because C53 is cited only in the new
 draft. The writing audit's formatting flags reflect the section labels and table; “shape” and
 “features” are retained scientific terms, and the two fossil intervals retain their necessary
@@ -239,7 +239,7 @@ remain gathered in two paragraphs. Question statuses and the analysis programme 
 the registers can record the reconstruction loop when it closes.
 
 **Claude's reconciliation (11 November 2026).** Codex's repairs are accepted in full. The
-reference-reading receipt is now preserved in `docs/audits/2026-11-11-3c-reference-reads.md`, with the
+reference-reading receipt is now preserved in `studies/f3/docs/audits/2026-11-11-3c-reference-reads.md`, with the
 job prompt and its JSON output. Step 3c is locked as a draft; Barry has said step 4 comes next.
 
 ## Step 4: final detailing (Codex revision, 11 November 2026)
@@ -281,7 +281,7 @@ eleven fresh source audits.
 **Observed checks.** The draft-inclusive numerical check covers 53 claims with zero errors or
 warnings. All 46 citation keys resolve. The abstract meets 200 words under both counts; the media
 summary is exactly 100 words. The adopted sentence matches in both Abstract and Conclusion.
-`make -C manuscript check` passes lint and reference audits, with the expected canonical-only C53
+`make -C studies/f3/manuscript check` passes lint and reference audits, with the expected canonical-only C53
 uncited warning while the canonical text stays frozen. The writing scanner's formatting and term
 flags were reviewed manually; required section labels and scientific terminology remain. No model
 reruns, figure builds or canonical changes were made.
@@ -302,7 +302,7 @@ recurs, scoped to vascular-plant bodies, in Results (g), the Discussion and the 
 **Claude's figure build (`f6ba666`).** `figures_step4.py` draws figures 1–4 into `figures/` from frozen and reviewed tables
 (`m2_units.csv`, `m2_results.csv`, `primary_unit_membership.csv`, `reviewed_bounds.csv`,
 `suppression_sensitivity.csv`, `frontier.csv`, the spore compilation and the timescale), reusing the
-published clock intervals in `manuscript/figures.py`. It asserts the Murzuq counts (28 older zeros; 51 of
+published clock intervals in `studies/f3/manuscript/figures.py`. It asserts the Murzuq counts (28 older zeros; 51 of
 59 reference positives), the alternative-unit bounds (432.38, 434.05 Ma) and every tabulated frontier
 contour against the closed form. Colours: three validated categorical slots for the clocks, one blue
 ramp for recording histories and delays, ink for maxima. Each figure was rendered and checked for
@@ -343,12 +343,12 @@ text and planned citation-style change; question statuses and the analysis progr
 
 ### Canonical integration (Claude, 11 November 2026)
 
-The step-4 article is now `manuscript/text/main.md` and `figures.md`. `figures_step4.py` moved to
-`manuscript/figures_main.py`, called by `figures.py`; its outputs reproduce the reviewed figures byte for
+The step-4 article is now `studies/f3/manuscript/text/main.md` and `figures.md`. `figures_step4.py` moved to
+`studies/f3/manuscript/figures_main.py`, called by `figures.py`; its outputs reproduce the reviewed figures byte for
 byte. The retired main figures (fig1_problem, fig2_evidence, fig3_bodies, fig4_frontier) are removed.
 Article and supplement use the *Proc B* numbered style; narrative citations read "Author et al. [n]".
 The brief is rewritten around the adopted message (two pages); a Claude Sonnet subagent aligned
-`for-agents.md`, and Claude cited C03, C05, C26 and C37 there. `make -C manuscript check`: 53 claims
+`for-agents.md`, and Claude cited C03, C05, C26 and C37 there. `make -C studies/f3/manuscript check`: 53 claims
 cited, 0 errors, 0 warnings; lint and reference audits pass; PDFs rebuilt.
 
 Next: Barry — review the integrated manuscript, supplement and brief.

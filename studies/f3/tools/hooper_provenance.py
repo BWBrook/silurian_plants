@@ -572,9 +572,9 @@ def main() -> None:
     parser.add_argument("--archive", type=Path)
     parser.add_argument("--out-dir", type=Path)
     args = parser.parse_args()
-    repo_root = Path(__file__).resolve().parents[1]
+    repo_root = Path(__file__).resolve().parents[3]
     archive = args.archive or repo_root / ARCHIVE_RELATIVE
-    out_dir = args.out_dir or repo_root / "data/q9/hooper2026-provenance"
+    out_dir = args.out_dir or repo_root / "studies/f3/data/q9/hooper2026-provenance"
     inventory, payloads = inventory_archive(archive, out_dir)
     summary = build_summary(repo_root, archive, payloads, inventory)
     (out_dir / "summary.json").write_text(json.dumps(summary, indent=2) + "\n", encoding="utf-8")

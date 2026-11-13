@@ -165,7 +165,7 @@ def extract(root, out):
                "state_rows": len(states), "node_rows": len(node_rows),
                "matrix_comparisons": len(crosswalk),
                "script_sha256": sha256_bytes(Path(__file__).read_bytes()),
-               "parser_sha256": sha256_bytes((root / "tools/hooper_provenance.py").read_bytes()),
+               "parser_sha256": sha256_bytes((root / "studies/f3/tools/hooper_provenance.py").read_bytes()),
                "outputs": {p.name: sha256_bytes(p.read_bytes()) for p in sorted(out.glob("*.csv"))}}
     (out / "receipt.json").write_text(json.dumps(receipt, indent=2) + "\n")
     print(json.dumps({k: receipt[k] for k in ("state_rows", "node_rows", "matrix_comparisons")}))
@@ -173,7 +173,7 @@ def extract(root, out):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--root", type=Path, default=Path(__file__).resolve().parents[1])
-    parser.add_argument("--out", type=Path, default=Path("data/pilot/hooper2026-asr"))
+    parser.add_argument("--root", type=Path, default=Path(__file__).resolve().parents[3])
+    parser.add_argument("--out", type=Path, default=Path("studies/f3/data/pilot/hooper2026-asr"))
     args = parser.parse_args()
     extract(args.root, args.out if args.out.is_absolute() else args.root / args.out)

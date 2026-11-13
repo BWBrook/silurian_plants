@@ -12,8 +12,8 @@ import subprocess
 import tempfile
 import xml.etree.ElementTree as ET
 
-ROOT = Path(__file__).resolve().parents[1]
-OUT = ROOT / "data/units/sprint2"
+ROOT = Path(__file__).resolve().parents[3]
+OUT = ROOT / "studies/f3/data/units/sprint2"
 
 
 def write_csv(path, rows):
@@ -41,7 +41,7 @@ def qusaiba():
     taxa = {y: " ".join(t for _, t in sorted(parts))
             for y, parts in taxon_rows.items()}
     assert len(taxa) == 21
-    records = list(csv.DictReader((ROOT / "data/units/qusaiba_inventory.csv").open()))
+    records = list(csv.DictReader((ROOT / "studies/f3/data/units/qusaiba_inventory.csv").open()))
     records = sorted((r for r in records if r["wellman_table2_member"] == "yes"),
                      key=lambda r: int(r["wellman_table2_order_top_to_base"]))
     assert len(records) == 37
@@ -127,15 +127,15 @@ def evidence_check():
 
 def receipt():
     evidence_check()
-    paths = list(OUT.rglob("*")) + list((ROOT / "docs/audits").glob("2026-10-31-sprint2-*.md"))
-    paths += [Path(__file__), ROOT / "docs/sprint2-source-roster.md",
-              ROOT / "docs/sprint2-results-and-value-of-information.md",
-              ROOT / "docs/sprints-2026-11.md", ROOT / "data/timescale.csv",
+    paths = list(OUT.rglob("*")) + list((ROOT / "studies/f3/docs/audits").glob("2026-10-31-sprint2-*.md"))
+    paths += [Path(__file__), ROOT / "studies/f3/docs/sprint2-source-roster.md",
+              ROOT / "studies/f3/docs/sprint2-results-and-value-of-information.md",
+              ROOT / "studies/f3/docs/sprints-2026-11.md", ROOT / "data/timescale.csv",
               ROOT / "data/external/spores/MANIFEST.tsv"]
     for name in ("units", "outcomes", "frames", "frame_samples", "sources", "source_files", "candidates"):
-        paths.append(ROOT / f"data/units/{name}.csv")
+        paths.append(ROOT / f"studies/f3/data/units/{name}.csv")
     for name in ("m2_units", "m2_screen", "m2_results"):
-        paths.append(ROOT / f"models/f3/out/{name}.csv")
+        paths.append(ROOT / f"studies/f3/models/out/{name}.csv")
     hashes = {str(p.relative_to(ROOT)): hashlib.sha256(p.read_bytes()).hexdigest()
               for p in sorted(set(paths)) if p.is_file() and p != OUT / "receipt.json"
               and "__pycache__" not in p.parts}

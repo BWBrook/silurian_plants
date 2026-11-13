@@ -9,8 +9,8 @@ taxon-specific biostratigraphic searching.
 
 Usage from the repository root::
 
-    python tools/loop2_observations.py build
-    python tools/loop2_observations.py check
+    python studies/f3/tools/loop2_observations.py build
+    python studies/f3/tools/loop2_observations.py check
 """
 
 from __future__ import annotations
@@ -25,12 +25,12 @@ from pathlib import Path
 from typing import Iterable
 
 
-ROOT = Path(__file__).resolve().parents[1]
-OUT = ROOT / "data" / "units" / "loop2" / "observation"
-APPENDIX = ROOT / "data" / "units" / "libya_appendix1.csv"
-CHART = ROOT / "data" / "units" / "libya_chart_reports.csv"
-PROSE = ROOT / "data" / "units" / "libya_prose_support.csv"
-GATE = ROOT / "docs" / "audits" / "2026-11-01-loop2-count-gate.md"
+ROOT = Path(__file__).resolve().parents[3]
+OUT = ROOT / "studies" / "f3" / "data" / "units" / "loop2" / "observation"
+APPENDIX = ROOT / "studies" / "f3" / "data" / "units" / "libya_appendix1.csv"
+CHART = ROOT / "studies" / "f3" / "data" / "units" / "libya_chart_reports.csv"
+PROSE = ROOT / "studies" / "f3" / "data" / "units" / "libya_prose_support.csv"
+GATE = ROOT / "studies" / "f3" / "docs" / "audits" / "2026-11-01-loop2-count-gate.md"
 THESIS = ROOT / "library" / "closed" / "abuhmida2013-thesis-related_macbook20261030.pdf"
 SCRIPT = Path(__file__).resolve()
 
@@ -231,7 +231,7 @@ def build() -> None:
     (OUT / "summary.json").write_text(json.dumps(summary, indent=2, sort_keys=True) + "\n")
     readme = """# Loop 2 Murzuq observation-basis audit
 
-`observation_basis.csv` has one row per literal row in `data/units/libya_appendix1.csv` (164 rows).
+`observation_basis.csv` has one row per literal row in `studies/f3/data/units/libya_appendix1.csv` (164 rows).
 The audit joins `libya_chart_reports.csv` and `libya_prose_support.csv` by exact well plus Decimal
 depth. It preserves source strings and current source E1 statuses; it does not derive or recode an
 outcome. Five chart rows have no appendix key and are retained in `unmatched_chart_rows.csv`.
@@ -242,7 +242,7 @@ and aggregate cryptospore group are distinct from the oxidised-residue biostrati
 additional rare-form scan used for E1. Thus no paired count-share likelihood is admitted here.
 Panel page references are locators only and were not used to digitise values.
 
-Run `python tools/loop2_observations.py build` to regenerate outputs, or `python tools/loop2_observations.py check`
+Run `python studies/f3/tools/loop2_observations.py build` to regenerate outputs, or `python studies/f3/tools/loop2_observations.py check`
 to verify the deterministic reconstruction, counts, source hashes and generated output hashes without
 writing files.
 """

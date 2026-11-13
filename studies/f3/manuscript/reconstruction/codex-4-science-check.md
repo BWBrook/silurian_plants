@@ -29,7 +29,7 @@ Introduction and at the end of the Conclusion.
 
 ## Exact evidence and case checks
 
-- **Potential screen:** `models/f3/m2.py::potential` sets declared older/transported outcomes to zero.
+- **Potential screen:** `studies/f3/models/m2.py::potential` sets declared older/transported outcomes to zero.
   `screen` tests `H0c`, `f=1`, at the far domain edge where every older unit is exposed, against the
   unshifted count-matched critical value. `designs/m2.toml`, `[screen]` and `amendment_1`, require the
   identical amended rule for data and each replicate. Screening on realised older outcomes would be a

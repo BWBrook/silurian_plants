@@ -2,21 +2,21 @@
 
 Pre-declared by Claude Opus 5.5 on 30 October 2026, before any run. Authorised by Barry (Claude chat,
 2026-10-30): "widened scope is fine, proceed with the new ancestral-state analysis as/when
-appropriate." Part of the trait pilot (`docs/pilot-traits.md`, link 2, persistence).
+appropriate." Part of the trait pilot (`studies/f3/docs/pilot-traits.md`, link 2, persistence).
 
 ## Question
 
 P1, M2's mapping, needs more than a trilete ancestor. Had crown Embryophyta existed before a
 candidate time *T*, at least one lineage must have kept producing trilete spores from the node
 through the sampled interval. Hooper et al.'s deposit saves only node summaries, not mapped
-histories (Codex, `data/pilot/hooper2026-asr/scm_workspace_audit.json`). This analysis regenerates
+histories (Codex, `studies/f3/data/pilot/hooper2026-asr/scm_workspace_audit.json`). This analysis regenerates
 the histories under their own data, trees and settings, and reads off persistence.
 
 ## Inputs (read-only)
 
 - `data/external/local/deposits/hooper2026-spore-evolution/02. Ancestral State Estimation.zip`:
   `asr_matrix.csv`; `extant.tre`, `eophyte sister.tre` and `zygnema sister.tre`; `ASE code chunk.R`.
-  Its hash is checked against Codex's `data/pilot/hooper2026-asr/source_inventory.csv`.
+  Its hash is checked against Codex's `studies/f3/data/pilot/hooper2026-asr/source_inventory.csv`.
 - Characters: `X21`, the aperture (0 not present, 1 hilate, 2 proximal monolete, 3 proximal
   trilete, 4 lateral or distal), and `X26`, the dispersal unit. X21 is primary.
 - Crown nodes as in Codex's `nodes.csv`: the MRCA of the extant land-plant tips and the MRCA of the
@@ -157,7 +157,7 @@ converged intervals in "Diagnostics results" (`out/retention_chains.csv`).
 
 ## Diagnostics (pre-declared 2026-10-31, before the run)
 
-Codex's review (`docs/audits/2026-10-31-screen-and-persistence-review.md` §4) found the
+Codex's review (`studies/f3/docs/audits/2026-10-31-screen-and-persistence-review.md` §4) found the
 implementation sound but the Monte Carlo precision unassessed. Each fit had one thinned rate chain,
 and no rate trace, path indicators, ESS or MCSE was kept. `asr_diagnostics.R` addresses that.
 - **Runs.** X21 on each tree, four independent chains with their own seeds, under the reproduction's

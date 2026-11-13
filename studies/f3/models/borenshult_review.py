@@ -9,13 +9,16 @@ import argparse
 import csv
 import hashlib
 import json
+import sys
 import math
 from pathlib import Path
 
 import screen
 
-ROOT = Path(__file__).resolve().parents[2]
-DATA = ROOT / "data/units/borenshult_review"
+ROOT = Path(__file__).resolve().parents[3]
+sys.path.insert(0, str(ROOT / "studies/f3/tools"))
+from moved import current, premove_hash  # noqa: E402
+DATA = ROOT / "studies/f3/data/units/borenshult_review"
 OUT = Path(__file__).resolve().parent / "out/borenshult_review"
 READINGS = ("figure3-definite", "figure4-definite", "concordant-definite")
 DEFINITE = {"BOR-43.1", "BOR-41.9", "BOR-41.1", "BOR-40.35", "BOR-40.2", "BOR-33.05"}
@@ -47,10 +50,10 @@ def validate(rows, readings, spec):
             "screen settings differ from declared homogeneous design")
     require(spec["fixed_age_test"] is False and spec["qualification"] == "not performed",
             "this screen has no fixed-age test or qualification")
-    base = {r["unit_id"]: r for r in read_csv(ROOT / "data/units/outcomes.csv")
+    base = {r["unit_id"]: r for r in read_csv(ROOT / "studies/f3/data/units/outcomes.csv")
             if r["unit_id"].startswith("BOR-") and r["event_id"] == "E1" and r["reading_id"] == "inclusive"}
-    depth = {f"BOR-{r['depth_m']}": r["depth_m"] for r in read_csv(ROOT / "data/units/borenshult_ages.csv")}
-    reporting = {r["unit_id"]: r for r in read_csv(ROOT / "data/units/borenshult_reporting.csv")}
+    depth = {f"BOR-{r['depth_m']}": r["depth_m"] for r in read_csv(ROOT / "studies/f3/data/units/borenshult_ages.csv")}
+    reporting = {r["unit_id"]: r for r in read_csv(ROOT / "studies/f3/data/units/borenshult_reporting.csv")}
     require(len(base) == 34 and set(base) == set(depth) == set(reporting), "canonical Borenshult inventory differs")
     keys = [(r["reading_id"], r["unit_id"]) for r in rows]
     require(len(keys) == len(set(keys)), "duplicate reading/unit ID")
@@ -122,15 +125,15 @@ def run(data=DATA, out=OUT):
     rows, readings = read_csv(data / "outcomes.csv"), read_csv(data / "readings.csv")
     validate(rows, readings, spec)
     preserved = spec["preserved_qualification_files"]
-    require(all(sha256(ROOT / name) == digest for name, digest in preserved.items()),
+    require(all(premove_hash(sha256(ROOT / current(name))) == digest for name, digest in preserved.items()),
             "frozen qualification inputs differ from the review baseline")
     source = ROOT / spec["source_file"]
     require(sha256(source) == spec["source_sha256"], "published source checksum differs")
     paths = {name: ROOT / name for name in (
-        "data/units/outcomes.csv", "data/units/borenshult_ages.csv", "data/units/borenshult_reporting.csv",
-        "data/units/source_files.csv", "models/f3/screen.py", "models/f3/borenshult_review.py")}
-    paths.update({spec["source_file"]: source, spec["source_audit"]: ROOT / spec["source_audit"]})
-    published = [r for r in read_csv(ROOT / "data/units/source_files.csv")
+        "studies/f3/data/units/outcomes.csv", "studies/f3/data/units/borenshult_ages.csv", "studies/f3/data/units/borenshult_reporting.csv",
+        "studies/f3/data/units/source_files.csv", "studies/f3/models/screen.py", "studies/f3/models/borenshult_review.py")}
+    paths.update({spec["source_file"]: source, spec["source_audit"]: ROOT / current(spec["source_audit"])})
+    published = [r for r in read_csv(ROOT / "studies/f3/data/units/source_files.csv")
                  if r["source_id"] in {"rubinstein2019-open", "rubinstein2023"}]
     require({r["source_id"] for r in published} == {"rubinstein2019-open", "rubinstein2023"},
             "published source registry incomplete")
@@ -142,7 +145,7 @@ def run(data=DATA, out=OUT):
     before = {name: sha256(path) for name, path in paths.items()}
     results, membership = calculate(rows)
     require(before == {name: sha256(path) for name, path in paths.items()}, "review inputs changed during calculation")
-    require(all(sha256(ROOT / name) == digest for name, digest in preserved.items()),
+    require(all(premove_hash(sha256(ROOT / current(name))) == digest for name, digest in preserved.items()),
             "frozen qualification inputs changed during calculation")
     out.mkdir(parents=True)
     with (out / "screen.csv").open("x", newline="") as handle:

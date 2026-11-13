@@ -1,16 +1,16 @@
-"""Outside rulers for the earlier/later finding-rate ratio (docs/plan-rulers.md).
+"""Outside rulers for the earlier/later finding-rate ratio (studies/f3/docs/plan-rulers.md).
 
 For a proxy density x(s), Q(t) = mean x over [c, A] / mean x over [A, t], with A = 426.7 Ma and
 c = 393.47 Ma from the reviewed primary bound. Proxies, not estimates; they enter no 95% inference.
 
-    python3 models/f3/loop3/rulers.py
+    python3 studies/f3/models/loop3/rulers.py
 """
 
 import csv
 from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
-ROOT = HERE.parents[2]
+ROOT = HERE.parents[3]
 OUT = HERE / "out"
 STEP = 0.01
 POINTS = (431.2, 444.0, 447.0, 452.0)
@@ -57,7 +57,7 @@ def rock(env_classes, project="North America", weight="area"):
 
 
 def search(column):
-    rows = [r for r in read(ROOT / "data/macro/effort_reviewed.csv") if r["region"] == "global"]
+    rows = [r for r in read(ROOT / "studies/f3/data/macro/effort_reviewed.csv") if r["region"] == "global"]
     return piecewise({r["stage"]: float(r[column]) for r in rows}, {r["stage"]: (float(r["young_ma"]), float(r["old_ma"]))
                                                                    for r in rows})
 

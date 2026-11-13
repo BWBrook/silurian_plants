@@ -94,11 +94,11 @@ def main():
     indexed = {entry["url"] for entry in index}
     reading_links = {a["href"] for a in pages[OUT / "reading.html"].select("main a[href]")}
     for relative in manifest["sources"]:
-        if relative.startswith("docs/") and relative.endswith(".md") and str(Path(relative).with_suffix(".html")) not in reading_links:
+        if relative.startswith(("docs/", "studies/")) and "/docs/" in "/" + relative and relative.endswith(".md") and str(Path(relative).with_suffix(".html")) not in reading_links:
             errors.append(f"Document missing from reading room: {relative}")
     for path in pages:
         relative = path.relative_to(OUT).as_posix()
-        if relative.startswith(("docs/", "taxa/", "data/", "models/")) and relative not in indexed:
+        if relative.startswith(("docs/", "taxa/", "data/", "studies/")) and relative not in indexed:
             errors.append(f"Missing from search index: {relative}")
     assets = json.loads((ROOT / "portal/images.json").read_text())
     for key, image in assets.items():

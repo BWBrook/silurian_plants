@@ -29,7 +29,7 @@ def test_frontier_output_has_fixed_candidates_delays_and_units():
 
 
 def test_region_stage_change_does_not_change_primary_b2_membership():
-    h = pd.read_csv(analysis.ROOT / "data/macro/horizons_reviewed.csv")
+    h = pd.read_csv(analysis.ROOT / "studies/f3/data/macro/horizons_reviewed.csv")
     primary = analysis.select_records(h, "B2", units="locality_age")
     region_stage = analysis.select_records(h, "B2", units="region_stage")
     assert len(primary) == 50

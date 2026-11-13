@@ -14,11 +14,11 @@ import pandas as pd
 
 import histories
 
-ROOT = Path(__file__).resolve().parents[3]
+ROOT = Path(__file__).resolve().parents[4]
 HERE = Path(__file__).resolve().parent
 OUT = HERE / "out"
-HORIZONS = ROOT / "data/macro/horizons_reviewed.csv"
-EFFORT = ROOT / "data/macro/effort_reviewed.csv"
+HORIZONS = ROOT / "studies/f3/data/macro/horizons_reviewed.csv"
+EFFORT = ROOT / "studies/f3/data/macro/effort_reviewed.csv"
 SEED = 20261101
 N_REPS = 3_000
 CONFIDENCE = 0.95
@@ -193,7 +193,7 @@ def run(n_reps: int = N_REPS) -> list[dict]:
 def input_hashes():
     paths = [
         ROOT / "data/timescale.csv",
-        ROOT / "data/macro/build_receipt.json",
+        ROOT / "studies/f3/data/macro/build_receipt.json",
         HORIZONS,
         EFFORT,
         HERE / "endpoint.py",

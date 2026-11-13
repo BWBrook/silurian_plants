@@ -2,22 +2,22 @@
 # requires-python = ">=3.12"
 # dependencies = []
 # ///
-"""First, estimator-free pass at the pivotal records (docs/plan-f3.md, Loop 1 step 4).
+"""First, estimator-free pass at the pivotal records (studies/f3/docs/plan-f3.md, Loop 1 step 4).
 
-For each event, the first appearance under the main reading of data/occurrences, as two ages:
+For each event, the first appearance under the main reading of studies/f3/data/occurrences, as two ages:
 `certain`, the youngest age at which some counting record is certainly present (the top of its
 youngest stage), and `possible`, the oldest age any counting record could have (the base of its
 oldest stage). Then every observation with alternative readings is switched, one at a time, and
 the switches that move either age are listed. Observations linked by `same_material_as` move
 together when the alias has a single reading (it mirrors its canonical observation).
 
-    uv run models/f3/naive_pivotal.py   # writes models/f3/out/naive_pivotal.csv
+    uv run studies/f3/models/naive_pivotal.py   # writes studies/f3/models/out/naive_pivotal.csv
 """
 import csv
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parents[2]
-OCC = ROOT / "data" / "occurrences"
+ROOT = Path(__file__).resolve().parents[3]
+OCC = ROOT / "studies" / "f3" / "data" / "occurrences"
 EVENTS = ["E1", "E2", "E3", "E4", "E5"]
 
 
@@ -74,7 +74,7 @@ def main():
                     rows.append({"event": ev, "switch": alt["interp_id"], "obs_id": oid, "label": alt["label"],
                                  "certain_ma": c, "possible_ma": p, "d_certain": round((c or 0) - (c0 or 0), 2),
                                  "d_possible": round((p or 0) - (p0 or 0), 2), "set_by_certain": wc2, "set_by_possible": wp2})
-    out = ROOT / "models" / "f3" / "out" / "naive_pivotal.csv"
+    out = ROOT / "studies" / "f3" / "models" / "out" / "naive_pivotal.csv"
     with open(out, "w", newline="") as f:
         w = csv.DictWriter(f, fieldnames=list(rows[0]), lineterminator="\n")
         w.writeheader()

@@ -5,7 +5,7 @@ Claude Opus 5.5, revised by Codex (`gpt-6.1-sol`), 11 November 2026, from the lo
 11 November 2026): add references, formatting and display-item legends, give it "a hard edit, to cut
 verbiage", repeat the main message strategically, then make a second pass for "context, clarity, your
 target audience, and a general audience: no re-structures at this stage". Numbers carry ledger
-bindings; citation keys resolve in `references/refs.yaml`. The canonical products in `manuscript/text/`
+bindings; citation keys resolve in `references/refs.yaml`. The canonical products in `studies/f3/manuscript/text/`
 stay frozen until this draft is reviewed. Notes on the edit follow the article.
 
 ---
@@ -355,7 +355,7 @@ work. GPT-6 Pro (OpenAI) supplied independent critiques, which were checked agai
 outputs before integration. Barry W. Brook originated and guided the programme and contributed scientific
 decisions; he will review the final manuscript before submission. Task-specific roles, model versions and
 the limits of sessions whose exact variant was unavailable are recorded in `docs/charter.md`,
-`docs/audits/` and `manuscript/reconstruction/`, with adopted decisions in `docs/decisions.md`.
+`docs/audits/` and `studies/f3/manuscript/reconstruction/`, with adopted decisions in `docs/decisions.md`.
 
 ## Authors' contributions
 
@@ -455,7 +455,7 @@ early bodies were recorded several times less often, or recognisable bodies appe
   that conditional body message for readers of the standalone figure. This retains repetition while
   keeping the qualitative 515.5 Ma audit and local spore-encounter limits attached to their targets.
 - **Headings.** Unnumbered, following the five *Proc B* comparators
-  (`docs/audits/2026-11-10-procb-format-comparison.md`); Results sub-headings now state their finding. The
+  (`studies/f3/docs/audits/2026-11-10-procb-format-comparison.md`); Results sub-headings now state their finding. The
   final Discussion paragraph became a one-paragraph Conclusion, as the Royal Society guidance lists
   conclusions among the usual sections. No paragraph moved.
 - **Added front and end matter.** Six keywords, Ethics, Authors' contributions and Conflict of

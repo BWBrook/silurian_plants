@@ -1,6 +1,6 @@
 """Resource triage for a sampling frame: could it exclude a target intensity, under one declared simple design?
 
-Scope (corrected after Codex's review, docs/audits/2026-10-31-screen-and-persistence-review.md). The design is
+Scope (corrected after Codex's review, studies/f3/docs/audits/2026-10-31-screen-and-persistence-review.md). The design is
 homogeneous and independent:
 - fixed reference membership;
 - one comparable class;
@@ -24,7 +24,7 @@ class ceiling-limited: H1's ceiling is 3.
 Choosing frames by their screen result is an outcome-dependent selection. f3-shape.md, "Frame selection", sets
 what that means for coverage. This is triage; it releases no bound.
 
-    uv run --with numpy --with scipy models/f3/screen.py    # out/screen_borenshult.csv
+    uv run --with numpy --with scipy studies/f3/models/screen.py    # out/screen_borenshult.csv
 """
 
 import csv
@@ -37,7 +37,7 @@ CRIT = 5.991464547107979  # the declared critical value for no older detections 
 CEILINGS = {"H0": 1.0, "H1": 3.0}  # Spec defaults: 1 for every H0 class, h1_ceiling for H1
 TARGET_F = 1.0  # M2's absence premise: older intensity at the reference level
 DESIGN = "homogeneous independent; one comparable class; fixed reference membership"
-UNITS = Path(__file__).resolve().parents[2] / "data" / "units"
+UNITS = Path(__file__).resolve().parents[3] / "studies" / "f3" / "data" / "units"
 OUT = Path(__file__).resolve().parent / "out"
 
 

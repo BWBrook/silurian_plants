@@ -1,8 +1,8 @@
-# makedoc profiles (https://github.com/BWBrook/makedoc). Build with `make -C manuscript` from the repo root.
+# makedoc profiles (https://github.com/BWBrook/makedoc). Build with `make -C studies/f3/manuscript` from the repo root.
 default_profile: main
 
 common: &common
-  bibliography: ../../references/refs.yaml
+  bibliography: ../../../../references/refs.yaml
   csl: ../csl/proceedings-of-the-royal-society-b.csl
   journal: Proceedings of the Royal Society B
   csl_search_dirs:

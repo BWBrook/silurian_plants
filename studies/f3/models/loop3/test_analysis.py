@@ -27,14 +27,14 @@ def test_partial_window_units_cannot_increase_guaranteed_count():
 
 
 def test_missing_country_does_not_drop_known_collection():
-    h = pd.read_csv(analysis.ROOT / "data/macro/horizons_reviewed.csv")
+    h = pd.read_csv(analysis.ROOT / "studies/f3/data/macro/horizons_reviewed.csv")
     r = analysis.select_records(h, "B0")
     assert r.member_ids.str.contains("pbdb:27182", regex=False).any()
     assert not r.unit_id.isna().any()
 
 
 def test_excluded_name_cannot_reenter_through_crown_flag():
-    r = pd.read_csv(analysis.ROOT / "data/macro/accepted_occurrence_links.csv")
+    r = pd.read_csv(analysis.ROOT / "studies/f3/data/macro/accepted_occurrence_links.csv")
     assert not r.occurrence_no.isin([209041, 1573884, 1573887, 1573888]).any()
     assert r.collection_no.eq(22860).any()
     assert not (r.b2 & ~r.b1).any()
@@ -42,14 +42,14 @@ def test_excluded_name_cannot_reenter_through_crown_flag():
 
 
 def test_named_localities_are_not_deleted_by_country_genus_match():
-    h = pd.read_csv(analysis.ROOT / "data/macro/horizons_reviewed.csv").set_index("horizon_id")
+    h = pd.read_csv(analysis.ROOT / "studies/f3/data/macro/horizons_reviewed.csv").set_index("horizon_id")
     for collection in [10679, 10706, 14043, 14045, 14131, 52698]:
         assert h.loc[f"pbdb:{collection}", "eligible_primary"]
     assert not h.loc["pbdb:53659", "eligible_primary"]
 
 
 def test_proxy_density_integrates_to_collection_equivalents():
-    e = pd.read_csv(analysis.ROOT / "data/macro/effort_reviewed.csv")
+    e = pd.read_csv(analysis.ROOT / "studies/f3/data/macro/effort_reviewed.csv")
     e = e[e.region == "global"]
     for key, column in [("pbdb_all", "all_collection_equivalents"),
                         ("pbdb_plant_excluded", "plant_excluded_equivalents")]:
@@ -59,7 +59,7 @@ def test_proxy_density_integrates_to_collection_equivalents():
 
 def test_simulation_counts_match_reported_primary_envelope():
     import simulation
-    h = pd.read_csv(analysis.ROOT / "data/macro/horizons_reviewed.csv")
+    h = pd.read_csv(analysis.ROOT / "studies/f3/data/macro/horizons_reviewed.csv")
     counts = simulation.observed_counts()
     for category, n in counts.items():
         r = analysis.select_records(h, category)
@@ -67,7 +67,7 @@ def test_simulation_counts_match_reported_primary_envelope():
 
 
 def test_canonical_b0_and_former_inventory_reproduce_expected_envelopes():
-    h = pd.read_csv(analysis.ROOT / "data/macro/horizons_reviewed.csv")
+    h = pd.read_csv(analysis.ROOT / "studies/f3/data/macro/horizons_reviewed.csv")
     flat = load_histories()["flat"]
     canonical = analysis.select_records(h, "B0")
     former = analysis.select_records(h, "B0", exclude_members={"tail:S-w22-K12"})
@@ -80,7 +80,7 @@ def test_canonical_b0_and_former_inventory_reproduce_expected_envelopes():
 
 
 def test_cross_channel_body_admission_and_geography_are_bound_to_sources():
-    h = pd.read_csv(analysis.ROOT / "data/macro/horizons_reviewed.csv")
+    h = pd.read_csv(analysis.ROOT / "studies/f3/data/macro/horizons_reviewed.csv")
     oman = h[h.horizon_id.eq("tail:S-w22-K12")]
     assert set(oman.reading) == {"main", "inclusive"}
     assert oman.b0.all() and not oman.b1.any() and not oman.b2.any()
@@ -92,7 +92,7 @@ def test_cross_channel_body_admission_and_geography_are_bound_to_sources():
 
 
 def test_source_backed_e3_admits_branched_fertile_records_but_not_e4_only_axis():
-    h = pd.read_csv(analysis.ROOT / "data/macro/horizons_reviewed.csv")
+    h = pd.read_csv(analysis.ROOT / "studies/f3/data/macro/horizons_reviewed.csv")
     indexed = h.set_index(["horizon_id", "reading"])
     for horizon, reading in [(h, r) for h in ("tail:M-bohemica", "tail:M-capel-horeb-ludlow")
                              for r in ("main", "inclusive")]:

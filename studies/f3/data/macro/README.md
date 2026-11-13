@@ -18,15 +18,15 @@ The reviewed analysis estimates a recoverable-record endpoint under explicit ass
 | `effort_reviewed.csv` | Stage collection-equivalents and densities per Myr, globally and by approximate region, with/without matches to the plant-filtered extract |
 | `build_receipt.json` | Source, code and generated-file SHA-256 bindings |
 
-Rebuild from the repository root with `uv run models/f3/loop3/build_reviewed.py`. It reads the held
+Rebuild from the repository root with `uv run studies/f3/models/loop3/build_reviewed.py`. It reads the held
 PBDB extracts, the curated occurrence tail, the source-adjudication ledgers, original classification
 outputs, project timescale and the existing all-taxa PBDB collection snapshot. The latter is at
-`data/occurrences/raw/pbdb_collections_darriwilian_emsian_2026-10-28.csv` and is git-ignored; its
+`studies/f3/data/occurrences/raw/pbdb_collections_darriwilian_emsian_2026-10-28.csv` and is git-ignored; its
 hash is in the receipt. No private literature text is copied here.
 
 `eligible_primary` describes an input row. The primary counting units are **locality–age proxies**,
 assembled separately for each category/reading by `analysis.py`. Exact memberships are in
-`models/f3/loop3/out/primary_unit_membership.csv`. PBDB locality keys use formation and coordinates
+`studies/f3/models/loop3/out/primary_unit_membership.csv`. PBDB locality keys use formation and coordinates
 rounded to 0.1 degree; these are not verified beds. Missing geographical fields preserve the
 collection ID. Region assignment is the existing approximate country/state mapping for PBDB and
 the source-curated assignment for the tail. These distinctions matter for dependence sensitivity.

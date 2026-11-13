@@ -1,18 +1,18 @@
 # Loop 2 sprint 1 reproduction
 
-Result and scientific limits: `../../../docs/loop2-sprint1-results.md`.
+Result and scientific limits: `../../docs/loop2-sprint1-results.md`.
 The design was declared in `robustness_design.json` before the numerical grid.
 These files implement sensitivities and method validation, not a new qualified primary design.
 
 From the repository root:
 
 ```sh
-python3 tools/loop2_observations.py check
-uv run --with numpy --with scipy --with pytest python -m pytest models/f3/loop2/test_count_share.py models/f3/loop2/test_contamination.py -q
-uv run models/f3/loop2/count_share_validation.py
-OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 VECLIB_MAXIMUM_THREADS=1 uv run models/f3/loop2/engine_sensitivity.py --workers 4
-OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 VECLIB_MAXIMUM_THREADS=1 uv run models/f3/loop2/contamination.py --full --workers 4
-uv run models/f3/loop2/figures.py
+python3 studies/f3/tools/loop2_observations.py check
+uv run --with numpy --with scipy --with pytest python -m pytest studies/f3/models/loop2/test_count_share.py studies/f3/models/loop2/test_contamination.py -q
+uv run studies/f3/models/loop2/count_share_validation.py
+OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 VECLIB_MAXIMUM_THREADS=1 uv run studies/f3/models/loop2/engine_sensitivity.py --workers 4
+OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 VECLIB_MAXIMUM_THREADS=1 uv run studies/f3/models/loop2/contamination.py --full --workers 4
+uv run studies/f3/models/loop2/figures.py
 ```
 
 Reruns overwrite only Loop 2 outputs. Receipts record runtime versions; times and PDF metadata can
@@ -24,7 +24,7 @@ A runnable **hypothetical protocol example**, not fossil data:
 ```sh
 uv run --with numpy --with scipy python - <<'PY'
 import sys
-sys.path.insert(0, 'models/f3/loop2')
+sys.path.insert(0, 'studies/f3/models/loop2')
 from count_share import common_effort_bound, zero_target_stratified_bound
 print(common_effort_bound(0, 10, effort_ratio=1.0))
 print(zero_target_stratified_bound([10], [1.0]))

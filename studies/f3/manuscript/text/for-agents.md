@@ -1,10 +1,10 @@
 ---
 document: agent-facing paper
 study: F3, fossil maxima behind land-plant molecular clocks
-status: internal draft; Loop 3 closed 2026-11-07; follow-up review implemented 2026-11-08 (docs/audits/2026-11-08-review2-handoff.md); article reconstructed to Proc B structure 2026-11-10 to 2026-11-11 (manuscript/reconstruction/README.md); release and submission are Barry's decision
-human_paper: manuscript/text/main.md (+ supplement.md, brief.md)
-claims_ledger: manuscript/claims.csv (single source for all renderings; checked by tools/claims.py)
-governing_docs: [docs/charter.md, docs/decisions.md, docs/plan-f3.md, docs/f3-shape.md, docs/loop3-design.md, docs/loop3-results.md]
+status: internal draft; Loop 3 closed 2026-11-07; follow-up review implemented 2026-11-08 (studies/f3/docs/audits/2026-11-08-review2-handoff.md); article reconstructed to Proc B structure 2026-11-10 to 2026-11-11 (studies/f3/manuscript/reconstruction/README.md); release and submission are Barry's decision
+human_paper: studies/f3/manuscript/text/main.md (+ supplement.md, brief.md)
+claims_ledger: studies/f3/manuscript/claims.csv (single source for all renderings; checked by tools/claims.py)
+governing_docs: [docs/charter.md, docs/decisions.md, studies/f3/docs/plan-f3.md, studies/f3/docs/f3-shape.md, studies/f3/docs/loop3-design.md, studies/f3/docs/loop3-results.md]
 authority: Barry W. Brook decides public release, submission and any correspondence outside Claude and Codex
 updated: 2026-11-11
 ---
@@ -18,19 +18,19 @@ artefact wins and this file is wrong: fix it in the same commit.
 
 ## 1. Read order and trust
 
-1. This file, then `manuscript/estimands.md`, which says what each analysis bounds and which
-   phrasings are not allowed, then `manuscript/claims.csv`, the single claims ledger behind every
+1. This file, then `studies/f3/manuscript/estimands.md`, which says what each analysis bounds and which
+   phrasings are not allowed, then `studies/f3/manuscript/claims.csv`, the single claims ledger behind every
    rendering of this study (C01–C53). Each row gives the claim, its value, its status, its basis, its evidence
    files, the commit at which that evidence was verified, the command that reproduces it, its limit
    and, if superseded, its replacement. Quote a claim only with its limit.
-2. `manuscript/text/main.md` for the argument; `supplement.md` for the machinery. The article follows
+2. `studies/f3/manuscript/text/main.md` for the argument; `supplement.md` for the machinery. The article follows
    the Proceedings B structure: Abstract, Keywords, Introduction, Material and methods (a)–(h), Results
    (a)–(h) with finding-led headings, Discussion (its "Conditions" paragraph states the assumptions behind
    the limits), Conclusion, then Ethics, Data accessibility, Declaration of AI use, Authors' contributions,
    Conflict of interest, Funding, References and Figure legends. The old numbered sections (§2 Evidence,
    §3.1–3.5, §4.1–4.4, Methods in brief) and old Tables 2–5 no longer exist there; their content lives in
    the supplement (S-numbered sections and tables) or in the Discussion prose. The reconstruction record
-   (steps 1a–4, Codex reviews, the adopted main message) is indexed in `manuscript/reconstruction/README.md`.
+   (steps 1a–4, Codex reviews, the adopted main message) is indexed in `studies/f3/manuscript/reconstruction/README.md`.
 3. `docs/decisions.md` (newest first) for what was settled, by whom, and why.
 4. `docs/questions.md` for the programme's open questions (Q1–Q10). This study answers part of Q1.
 
@@ -41,7 +41,7 @@ strongest to weakest: *source extraction* and *frozen qualified result*; *review
 model-conditional calculation*; *procedure check*. A procedure check (for example, simulation
 coverage) tests the method, never the fossils.
 
-The article, supplement, brief and this guide all cite the ledger. The article and supplement use Proc B numbered citations (`manuscript/csl/proceedings-of-the-royal-society-b.csl`); the brief keeps author-date. In the Markdown, `[428.8]{.C27 .V012}`
+The article, supplement, brief and this guide all cite the ledger. The article and supplement use Proc B numbered citations (`studies/f3/manuscript/csl/proceedings-of-the-royal-society-b.csl`); the brief keeps author-date. In the Markdown, `[428.8]{.C27 .V012}`
 binds a quoted number to C27 (invisible when rendered), and `tools/claims.py check` fails if the number
 no longer equals one of C27's values at the precision shown, if a cited claim is superseded, or if a
 ledger value cannot be found in its evidence. Change a result in the ledger first; the check then lists
@@ -49,7 +49,7 @@ every sentence that must follow.
 
 ## 2. The answer, as claims
 
-**Main message** (adopted by Barry, 10 November 2026; `manuscript/reconstruction/1c-main-message.md`):
+**Main message** (adopted by Barry, 10 November 2026; `studies/f3/manuscript/reconstruction/1c-main-message.md`):
 "Older dates for living land plants fit the fossil record if early plants were found several times less
 often, or recognisable features evolved later." It is a statement of compatibility under stated
 conditions: the quantity behind "several times" is the vascular-body recording contrast (C48); the
@@ -115,27 +115,27 @@ supports nor rejects an older ancestor.
 | history | Fixed relative recovery w(t): `flat`, `pbdb_all`, `pbdb_plant_excluded`, `decline25`, `decline10`, `pbdb_excluded_decline10` |
 | ρ, f | Murzuq older/reference delivery ratio (declared, not estimated); older producer intensity as a fraction of reference |
 | H0c, H0, H0m, H1 | Murzuq history classes: constant; exposure-weighted; modified; higher ceiling |
-| qualified | Passed the simulation-calibrated 0.93 coverage floor on the declared grid (`docs/f3-shape.md`) |
+| qualified | Passed the simulation-calibrated 0.93 coverage floor on the declared grid (`studies/f3/docs/f3-shape.md`) |
 
 The endpoint formula is U(T) = U(A)·0.05^(−1/n), where U(a) = ∫_c^a w(s) ds. With constant w it reduces
-to the Strauss–Sadler/Marshall interval. Code: `models/f3/loop3/endpoint.py`.
+to the Strauss–Sadler/Marshall interval. Code: `studies/f3/models/loop3/endpoint.py`.
 
 ## 4. Provenance map
 
 | Result | Inputs | Code | Output | Claims |
 |---|---|---|---|---|
-| Murzuq frame | `data/units/libya_*.csv` (transcribed from Abuhmida 2013; the thesis is local-only) | `models/f3/` engine, Loop 1 | `models/f3/out/m2_results.csv`, `out/qual/` (frozen) | C01–C06, C24 |
-| Murzuq sensitivities | as above | `models/f3/loop2/contamination.py` | `models/f3/loop2/out/` (frozen) | C07–C10 |
-| QSIM floor | `data/units/loop2/replication/qsim801_vecoli2017_table1.csv` | `models/f3/loop2/replication/` | `.../out/qsim_share_bounds.csv` | C11–C14, C23 |
-| Cambrian affinity | sources in `data/units/loop2/m1-m3/m1_affinity.csv` | none (adjudication) | same | C15–C16 |
-| Persistence pilot | Hooper et al. deposits (fetched, hash-checked) | `models/pilot-asr/` (R, renv) | `models/pilot-asr/out/` | C18–C20 |
-| Body record | PBDB extract and `data/macro/*` (names, adjudications, older screen) | `models/f3/loop3/build_reviewed.py`, `analysis.py` | `models/f3/loop3/out/reviewed_bounds.csv`, `primary_unit_membership.csv`, `shape_diagnostics.csv`, `age_sensitivity.csv`, `delay_sensitivity.csv` | C25–C31, C33 |
+| Murzuq frame | `studies/f3/data/units/libya_*.csv` (transcribed from Abuhmida 2013; the thesis is local-only) | `studies/f3/models/` engine, Loop 1 | `studies/f3/models/out/m2_results.csv`, `out/qual/` (frozen) | C01–C06, C24 |
+| Murzuq sensitivities | as above | `studies/f3/models/loop2/contamination.py` | `studies/f3/models/loop2/out/` (frozen) | C07–C10 |
+| QSIM floor | `studies/f3/data/units/loop2/replication/qsim801_vecoli2017_table1.csv` | `studies/f3/models/loop2/replication/` | `.../out/qsim_share_bounds.csv` | C11–C14, C23 |
+| Cambrian affinity | sources in `studies/f3/data/units/loop2/m1-m3/m1_affinity.csv` | none (adjudication) | same | C15–C16 |
+| Persistence pilot | Hooper et al. deposits (fetched, hash-checked) | `studies/f3/models/pilot-asr/` (R, renv) | `studies/f3/models/pilot-asr/out/` | C18–C20 |
+| Body record | PBDB extract and `studies/f3/data/macro/*` (names, adjudications, older screen) | `studies/f3/models/loop3/build_reviewed.py`, `analysis.py` | `studies/f3/models/loop3/out/reviewed_bounds.csv`, `primary_unit_membership.csv`, `shape_diagnostics.csv`, `age_sensitivity.csv`, `delay_sensitivity.csv` | C25–C31, C33 |
 | Suppression grid | as above | `suppression_sensitivity.py` | `suppression_sensitivity.csv` | C32, C53 |
 | Canonical B0 and Oman exclusion | as above; `body_membership.csv` admits S-w22-K12 | `build_reviewed.py` and `analysis.py` | `reviewed_bounds.csv`, `shape_diagnostics.csv` (`variant=primary` or `without_oman_fragments`) | C28, C40–C41 |
-| Borenshult readings | `data/units/borenshult_review/` | `models/f3/borenshult_review.py` | `models/f3/out/borenshult_review/` | C42–C44 |
+| Borenshult readings | `studies/f3/data/units/borenshult_review/` | `studies/f3/models/borenshult_review.py` | `studies/f3/models/out/borenshult_review/` | C42–C44 |
 | Simulations | unit counts from above | `simulation.py` | `simulation_results.csv` | C34 |
-| Paper figures | the outputs above, `data/spores/first_appearances.csv`, `data/timescale.csv` | `manuscript/figures.py`, which calls `manuscript/figures_main.py` for the four main figures | `manuscript/figures/`, hashes in `figures.json` | — |
-| Supplement tables S3–S11 | `models/f3/loop3/out/` | `manuscript/tables.py` (rewrites marked blocks in `supplement.md`) | `manuscript/text/supplement.md` | — |
+| Paper figures | the outputs above, `data/spores/first_appearances.csv`, `data/timescale.csv` | `studies/f3/manuscript/figures.py`, which calls `studies/f3/manuscript/figures_main.py` for the four main figures | `studies/f3/manuscript/figures/`, hashes in `figures.json` | — |
+| Supplement tables S3–S11 | `studies/f3/models/loop3/out/` | `studies/f3/manuscript/tables.py` (rewrites marked blocks in `supplement.md`) | `studies/f3/manuscript/text/supplement.md` | — |
 | Bibliography | `references/dois.txt`, `references/manual.yaml` | `tools/refs.py build` (Crossref CSL-JSON) | `references/refs.yaml` | — |
 
 The primary row of `reviewed_bounds.csv` is: `reading=main`, `units=locality_age`, `variant=primary`,
@@ -144,10 +144,10 @@ The primary row of `reviewed_bounds.csv` is: `reading=main`, `units=locality_age
 ## 5. Traps: superseded results and known misreadings
 
 Do not reintroduce any of these. Each was caught in review; the record is in `supplement.md` §S7 and
-`docs/audits/`.
+`studies/f3/docs/audits/`.
 
 1. **Loop 3 pilot numbers (C35, superseded by C27).** The logistic-ramp limits [452.6 / 454.1 / 438.0]{.C35 .superseded} Ma, "favours the young
-   clock" and "a measured 15–25 Myr lag" are retired (`docs/loop3-pilot.md` is marked provisional).
+   clock" and "a measured 15–25 Myr lag" are retired (`studies/f3/docs/loop3-pilot.md` is marked provisional).
    The defects: stage collection totals used as per-Myr density, which counts duration twice; medians
    of imputed limits presented as 95% limits; PBDB localities merged by country, genus and age
    overlap; collections treated as independent beds.
@@ -202,7 +202,7 @@ Do not reintroduce any of these. Each was caught in review; the record is in `su
 25. **A missing event row as a negative.** E3 was enumerated only for the Homerian and older, so a
     younger record without an E3 row was not assessed for branching. *C. bohemica* and Capel Horeb have
     published branched fertile material and belong in B1; the Lang axis does not
-    (`docs/audits/2026-11-07-gpt6pro-review2-triage.md`).
+    (`studies/f3/docs/audits/2026-11-07-gpt6pro-review2-triage.md`).
 26. **429 Ma as an earliest start.** It is a conditional one-sided 95% older bound on the start of the
     recognisable record under constant recording and primary units, not an earliest possible start or
     an origin date; quote it beside the 432–434 Ma unit sensitivity.
@@ -219,12 +219,12 @@ Do not reintroduce any of these. Each was caught in review; the record is in `su
 C48–C52 are supported: Claude recomputed their key values independently (frontier closed form,
 witness KS distances, constant-history endpoints, and all Murzuq contours). They are written into
 the article (Results (e), (f) and (g), Discussion and its "Conditions" paragraph), supplement (S2.5, S5.1–S5.4, Tables S1b, S6b, S7b, S9b) and brief.
-Codex's semantic review (`docs/audits/2026-11-07-semantic-closure-review.md`) found wording repairs only;
+Codex's semantic review (`studies/f3/docs/audits/2026-11-07-semantic-closure-review.md`) found wording repairs only;
 all are applied.
 The 8 November follow-up restored two source-backed B1 records (C25/C39/C32), with the E4 anatomical
 interpretations kept separate, and refreshed B1 influence (C52) and simulation summaries (C34).
 Codex independently recounted the units and checked the constant and step bounds and leave-outs by
-closed forms. B0 and B2 result rows are unchanged (`docs/audits/2026-11-08-b1-restoration.md`).
+closed forms. B0 and B2 result rows are unchanged (`studies/f3/docs/audits/2026-11-08-b1-restoration.md`).
 
 - **Frontier (C48):** with the primary B2 units and zero assumed diagnostic delay, candidate ages
   [431.2]{.C48 .V035}, [444]{.C48 .V036}, [447]{.C48 .V037} and [452]{.C48 .V038} Ma have earlier/later recording contours
@@ -260,17 +260,17 @@ closed forms. B0 and B2 result rows are unchanged (`docs/audits/2026-11-08-b1-re
 From the repository root:
 
 ```sh
-make check-public                        # fetch/hash the archived PBDB input, then public regression tests
-make reproduce-derived                   # selected tracked-input outputs; declared optimiser tolerance
-make rebuild-source                      # exact archived raw input, inventory and downstream rebuild
-make check-sources                       # route/hash and held-source check, or explicit skip
-uv run manuscript/figures.py              # rewrites figures/ and figures.json hashes
-python3 manuscript/tables.py              # supplement tables; on unchanged inputs, a no-op diff
+make -C studies/f3 check-public                        # fetch/hash the archived PBDB input, then public regression tests
+make -C studies/f3 reproduce-derived                   # selected tracked-input outputs; declared optimiser tolerance
+make -C studies/f3 rebuild-source                      # exact archived raw input, inventory and downstream rebuild
+make -C studies/f3 check-sources                       # route/hash and held-source check, or explicit skip
+uv run studies/f3/manuscript/figures.py              # rewrites figures/ and figures.json hashes
+python3 studies/f3/manuscript/tables.py              # supplement tables; on unchanged inputs, a no-op diff
 uv run tools/refs.py build                # bibliography; key collisions fail loudly
-make -C manuscript check                  # claims drift check, then makedoc lint and citation audit
-make -C manuscript                        # PDF and DOCX for main, supplement and brief into manuscript/build/
-python3 tools/units.py check              # unit tables and source hashes
-python3 manuscript/package.py             # release inventory with SHA-256
+make -C studies/f3/manuscript check                  # claims drift check, then makedoc lint and citation audit
+make -C studies/f3/manuscript                        # PDF and DOCX for main, supplement and brief into studies/f3/manuscript/build/
+python3 studies/f3/tools/units.py check              # unit tables and source hashes
+python3 studies/f3/manuscript/package.py             # release inventory with SHA-256
 ```
 
 Reproduction compares bytes except for the Murzuq optimisation CSV, where numerical fields have
@@ -291,13 +291,13 @@ Assume no new measurements, logs or help from original authors or outside specia
   candidates are an independent effort proxy for Silurian non-marine rock, or published, documented
   searched-but-barren beds.
 - **Q1 (second M2 frame).** An older-empty, younger-positive spore sequence outside polar Gondwana with
-  counted target and control grains. `manuscript/external_candidates.csv` lists the routes already
+  counted target and control grains. `studies/f3/manuscript/external_candidates.csv` lists the routes already
   tried.
 - **Q2 (pivotal ages).** Yea and Bathurst Island set the B2 tail; leave-one-region-out spans
   [427.22–430.45]{.C30} Ma. The interval search treats age supports as independent rectangles; encoding
   section-level orderings for the pivotal records would narrow what it admits.
 - **Q4 (character-to-node links).** The tracheid status of the oldest polysporangiate bodies and the
-  timing of crown-diagnostic body features. See `data/pilot/combinations.csv` and `supplement.md` §S6.
+  timing of crown-diagnostic body features. See `studies/f3/data/pilot/combinations.csv` and `supplement.md` §S6.
 - **Q9 (clock sensitivity).** Parked. Rerunning a clock with the M3 bound replaced by the conditional
   alternatives would turn this study's arithmetic into posterior consequences.
 
@@ -306,11 +306,11 @@ Assume no new measurements, logs or help from original authors or outside specia
 - Read `AGENTS.md`. Facts and citations come from sources read in the task; every DOI is checked.
 - Codex and Claude share one checkout. Check that the git index is empty, stage explicit paths only,
   and agree file ownership on the Board (project `silurian-plants`) before concurrent edits.
-- To add or change a claim, edit `manuscript/claims.csv`, reverify the evidence, run
-  `python3 tools/claims.py stamp manuscript/claims.csv ID`, then make every document pass the check.
+- To add or change a claim, edit `studies/f3/manuscript/claims.csv`, reverify the evidence, run
+  `python3 tools/claims.py stamp studies/f3/manuscript/claims.csv ID`, then make every document pass the check.
 - To cite a new work, add its DOI to `references/dois.txt`, run `tools/refs.py build`, and cite the
   printed key as `[@key]`.
 - Record decisions in `docs/decisions.md` with who decided. Keep `docs/charter.md`'s AI-roles section
   current.
 - Do not edit generated artefacts by hand: `refs.yaml`, the table blocks in `supplement.md`, figures,
-  `package_manifest.csv`, or `models/*/out/`.
+  `package_manifest.csv`, or `studies/f3/models/*/out/`.

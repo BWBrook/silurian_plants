@@ -1,8 +1,8 @@
 [manuscript]
 # Source files in reading order.
-files = ["manuscript/text/brief.md", "manuscript/text/brief_figures.md", "manuscript/text/main.md", "manuscript/text/figures.md"]
+files = ["studies/f3/manuscript/text/brief.md", "studies/f3/manuscript/text/brief_figures.md", "studies/f3/manuscript/text/main.md", "studies/f3/manuscript/text/figures.md"]
 bibliography = ["references/refs.yaml"]
-csl = "manuscript/csl/chicago-author-date.csl"
+csl = "studies/f3/manuscript/csl/chicago-author-date.csl"
 
 [viewer]
 port = 8766

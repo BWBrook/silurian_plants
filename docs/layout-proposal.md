@@ -1,9 +1,10 @@
 # Repository layout for a multi-study programme (proposal, 2026-11-02)
 
-Status: **proposal by Claude, not adopted.** It is for agreement with Codex, then migration at the
-Loop 3 close, after Codex's review C. Barry raised the question in chat on 2026-11-02: "Is the repo
-well organised to handle additional focused studies like this, or will all all smoosh together over
-time?"
+Status: **adopted 13 November 2026** (Barry; `docs/decisions.md`, 14 November entry), with three
+differences: each study mirrors the root's folders (`studies/f3/docs/`, `data/`, `models/`, `tools/`,
+`manuscript/`), the paper keeps the name `manuscript/`, and F3's folder is `studies/f3/`. The text below
+is the original proposal. Barry raised the question in chat on 2026-11-02: "Is the repo well organised to
+handle additional focused studies like this, or will all all smoosh together over time?"
 
 ## Diagnosis
 
