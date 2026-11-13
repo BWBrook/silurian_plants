@@ -1,0 +1,122 @@
+{
+  "title": "Most passages preserve the meaning, but the delay threshold and proxy proportionality claim need correction, and several summaries need narrower wording.",
+  "items": [
+    {
+      "location": "manuscript/text/figures.md:3 — Figure 2 caption",
+      "old": "It has no finite older compatibility endpoint; it is not an estimate of spread.",
+      "new": "It fits an ancestor of any age; it is a requirement for fitting.",
+      "problem": "Meaning holds under the stated exponential history and later plateau; Conditions retains the distinction from measured spread.",
+      "severity": "ok",
+      "evidence": "For n=48, the exact unlimited-age threshold is 1.483339089640 Myr. The displayed 1.48 Myr is safely below it.",
+      "repair": ""
+    },
+    {
+      "location": "manuscript/text/main.md:13–16 — Abstract count and exponential statements",
+      "old": "About half count as independent; a sufficiently rapid exponential rise leaves no finite older limit within that family.",
+      "new": "About half are independent; ancestors of any age fit with exponential doubling every 1.48–5.09 Myr or faster, by count.",
+      "problem": "The conditional independence wording and sufficient exponential conditions hold. The rounded doubling times are conservative.",
+      "severity": "ok",
+      "evidence": "Using K=(426.7−393.47)(0.05^(−1/n)−1), exact K ln 2 values are 1.483339089640, 3.933621709486 and 5.091628800997 Myr for n=48,19,15. All displayed values round down. The annotated abstract contains 200 words after removing claim markup.",
+      "repair": ""
+    },
+    {
+      "location": "manuscript/text/main.md:16–17 — Abstract delay condition",
+      "old": "They fit if recognisable bodies appeared at least 15–23 Myr later.",
+      "new": "444–452 Ma ancestors fit if recognisable bodies appeared 15–23 Myr later or more.",
+      "problem": "Both versions turn approximate minimum delays into literal sufficient thresholds. Delays of exactly 15 and 23 Myr fall short. The range also needs an explicit correspondence with ancestor age.",
+      "severity": "error",
+      "evidence": "At n=48, the steady-rate endpoint is 428.840005948580 Ma. Required minimum delays are 15.159994051420 Myr at 444 Ma and 23.159994051420 Myr at 452 Ma. Using 15 or 23 gives oldest-find probability 0.040261, below 0.05. C33 records approximate offsets.",
+      "repair": "At a steady rate with 48 independent finds, 444–452 Ma ancestors fit with delays of 15.2–23.2 Myr or longer, respectively."
+    },
+    {
+      "location": "manuscript/text/main.md:19–20 — Abstract proxy comparison",
+      "old": "These proxy ratios overlap or exceed the cautious requirements.",
+      "new": "These ratios match or exceed the cautious requirements.",
+      "problem": "“Match or exceed” can imply that both proxies meet the cautious requirements throughout the candidate-age range. The rock comparison overlaps only part of those requirements.",
+      "severity": "risk",
+      "evidence": "At 452 Ma, the rock ratio is 3.1889, below requirements of 3.4442 for n=15 and 4.4581 for n=19. The spore-reporting ratio is 7.1049. The n=48 requirement exceeds both.",
+      "repair": "These ratios overlap some cautious requirements in size; the main count’s requirement exceeds both."
+    },
+    {
+      "location": "manuscript/text/main.md:168–172 — Methods compatibility definition",
+      "old": "A candidate age fits the oldest-find calculation when the earlier integral is at most K.",
+      "new": "A candidate age fits the oldest find when an oldest find no older than A has probability at least 0.05.",
+      "problem": "This correctly defines the compatibility rule in the surrounding conditional model. “Level” plus a relative rate preserves the previous normalization to one.",
+      "severity": "ok",
+      "evidence": "The independent audit derives P(M≤A | n,t,w)=[(A−c)/(A−c+R(t))]^n. This is at least 0.05 exactly when R(t)≤K. The following sentences retain retrospective selection and the absence of a confidence guarantee for these selected scenarios.",
+      "repair": ""
+    },
+    {
+      "location": "manuscript/text/main.md:180–182 — Methods proxy comparison",
+      "old": "Proportionality would give the finding-rate ratio; that transfer is neither estimated nor assumed.",
+      "new": "Each covers the same two windows, so the ratios can be compared in size.",
+      "problem": "The numerical comparison remains valid. Moving the transfer qualification to Conditions preserves its intended scope, provided the Conditions sentence is corrected as specified below.",
+      "severity": "ok",
+      "evidence": "C56 defines zero-delay ratios of time-weighted proxy means in the same windows. Methods retains zero delay and descriptive status; Conditions identifies the proposed proportional relationship as untested.",
+      "repair": ""
+    },
+    {
+      "location": "manuscript/text/main.md:263–266 — Results (f) heading and integral",
+      "old": "The earlier rate fits the oldest-find calculation when its total is no more than the allowance.",
+      "new": "The record limits total early finding, whatever its shape; any earlier history fits when its total is at most the allowance.",
+      "problem": "Meaning holds because the immediately following sentence retains the level later rate, zero delay and oldest-find scope. “Total” means integrated relative finding rate over the earlier interval.",
+      "severity": "ok",
+      "evidence": "C57 and rise_shapes.csv give K=2.1400, 5.6750 and 7.3457 Myr for n=48,19,15. The independent derivation applies to arbitrary non-negative earlier histories under the common later plateau.",
+      "repair": ""
+    },
+    {
+      "location": "manuscript/text/main.md:270–275 — Results (f) thresholds and spore context",
+      "old": "At or below the exact threshold, the family has no finite older limit; neither spore comparison tests the required rise.",
+      "new": "A rise this fast or faster fits any ancestor age; both spore comparisons give scale only.",
+      "problem": "Meaning holds. The exact threshold K ln 2 remains explicit, the displayed values lie below it, and “scale only” preserves the descriptive role of the spore comparisons.",
+      "severity": "ok",
+      "evidence": "The exact thresholds exceed 1.48, 3.93 and 5.09 Myr. The audit identifies the 6.5521 and 0.9578 Myr spore values as two-stage reporting-share comparisons rather than tests or estimates of crown vascular-plant finding rates. Conditions retains the requirements-versus-spread distinction.",
+      "repair": ""
+    },
+    {
+      "location": "manuscript/text/main.md:277–285 — Results (g) heading and removed qualification",
+      "old": "Outside proxy ratios overlap the cautious requirements; this compares magnitudes.",
+      "new": "Outside measures match the cautious requirements in size.",
+      "problem": "The detailed numerical text remains correct, but the heading suggests broader agreement than the results show. PBDB collection ratios fall below even the cautious requirements; rock ratios overlap only some.",
+      "severity": "risk",
+      "evidence": "rulers.csv gives PBDB ratios of 1.3528/1.4143. rulers_matching_n.csv gives rock matching counts of 20.42/13.99 and spore-reporting counts of 31.05/29.43 at 444/452 Ma. The retained body text supplies these qualifications.",
+      "repair": "Rock and spore-reporting ratios overlap some cautious requirements in size."
+    },
+    {
+      "location": "manuscript/text/main.md:308–312 — Discussion integral equivalence and older limits",
+      "old": "Earlier integrals are indistinguishable in that calculation under a fixed plateau; the later-age pattern can test the plateau.",
+      "new": "Every history with that total fits equally; any older limit from the body record rests on how fast finding rose.",
+      "problem": "Integral equivalence remains correct under the stated common plateau, whose testability survives in Conditions. The final sentence broadens the demonstrated result: restrictions on earlier histories need not take the form of a rise-speed assumption.",
+      "severity": "risk",
+      "evidence": "The C55/C57 audit establishes equivalence under the common later plateau and the exponential unlimited-age result. It explicitly distinguishes this from a general claim about all finding histories.",
+      "repair": "Under the common later plateau, histories with the same earlier total give the same oldest-find probability. An exponential rise at or below the count-specific doubling-time threshold fits every older candidate, so a finite older endpoint requires a restriction on the earlier finding history."
+    },
+    {
+      "location": "manuscript/text/main.md:324–325 — Discussion proxy interpretation",
+      "old": "Neither measures how much the body-fossil finding rate changed.",
+      "new": "How far they changed the body-fossil finding rate remains open.",
+      "problem": "The new wording can imply that the measured proxy differences caused a change in finding rate. A reporting-share difference can itself be an outcome of preservation, coverage or biological change.",
+      "severity": "risk",
+      "evidence": "C56 and the general-points audit support descriptive ratios and explicitly leave their transfer to body-fossil finding rate unestablished.",
+      "repair": "These differences give the required ratios a scale; their relationship to the body-fossil finding rate, and their combined implications, remain open."
+    },
+    {
+      "location": "manuscript/text/main.md:354–358 — Conditions paragraph",
+      "old": "Proportionality throughout both windows would give the corresponding finding-rate ratio.",
+      "new": "They would equal the finding-rate ratio only if finding rate were proportional to them in both windows.",
+      "problem": "“Only if” incorrectly makes proportionality necessary. Equal ratios of window means can arise without pointwise proportionality. The sufficient proportional relationship also requires the same proportionality constant across both windows. The relocated plateau and spread qualifications otherwise survive.",
+      "severity": "error",
+      "evidence": "The general-points audit and manuscript/estimands.md identify proportionality as a sufficient assumption. Equality of two mean ratios alone does not imply it; an independent semantic check confirmed this distinction.",
+      "repair": "Each proxy ratio would equal the ratio of mean finding rates if finding rate were proportional to that measure with the same constant in both windows; that relationship remains untested."
+    },
+    {
+      "location": "manuscript/text/main.md:395–397 — Conclusion",
+      "old": "Body-fossil calculations quantify requirements for older vascular-plant ancestors; the local spore comparison shows geographical and supply dependence.",
+      "new": "Missing fossils allow older ancestors if early plants were found less often or became recognisable later; bodies quantify the reduction and Libyan spores show local absence.",
+      "problem": "The colon preserves the explicit division between analyses, so there is no direct numerical transfer. The umbrella claim about “early plants” nevertheless invites readers to apply the body-record alternatives to the spore analysis.",
+      "severity": "risk",
+      "evidence": "The general-points audit deliberately restricted quantitative finding-rate and recognisable-body requirements to vascular body fossils. C54 supports the stage-level geographical comparison, subject to its source and age-resolution qualifications. No files were edited.\n\nNext: Claude — reconcile these wording repairs.\n\n",
+      "repair": "The body record quantifies the lower finding rates or later recognisable bodies that fit older vascular-plant ancestors; the Libyan spores show that an absence can be local."
+    }
+  ]
+}

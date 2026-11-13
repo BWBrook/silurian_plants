@@ -141,3 +141,26 @@ is coarse context only; the script's cross-checks described exactly; and the fig
 as 1.48 Myr, since a literal 1.5 Myr doubling has a finite endpoint near 436 Ma.
 
 Abstract (Barry, chat, 12 November 2026: "Yes, make room"): the rise result now has one clause in the abstract, at 200 words. Sol (`2026-11-12-abstract-rise-check.json`) found it had dropped the exponential form and the count dependence; both restored with its wording.
+
+## 13 November: plain wording for Codex's precision repairs
+
+Codex's review (`07e9866`, `docs/audits/2026-11-13-general-points-review.md`) corrected C54–C57 and
+was accepted in substance. Its new wording reintroduced the dialect and in-claim negations the
+12 November pass removed ("oldest-find calculation", "finite older compatibility limit", "does not
+establish"). Claude (Opus 5.5) restated those passages plainly and moved the plateau, spread and
+proxy-transfer qualifications into the Discussion's Conditions paragraph. The abstract quotes the
+exact-safe thresholds 1.48–5.09 Myr (below K ln 2 for 48 and 15 finds). The Conclusion restores the
+agreed message, scoped to vascular-plant ancestors, with the Libyan spores kept to local absence.
+
+Sol meaning check (`2026-11-13-codex-repair-plain-check.json`, 12 passages): 7 ok, 5 risk or error,
+all repaired as Sol proposed except where noted:
+- delays "15–23 Myr" are rounded minima (15.16, 23.16), so exactly 15 falls short: now "about 15–23
+  Myr or more" in the abstract, Results (e) and Conclusion (an error that predates this pass);
+- the proxy comparison overlaps *some* cautious requirements (abstract, Results (g) heading);
+- the Discussion now says an older limit needs an assumption restricting the early history, the
+  general form, not specifically its rise speed;
+- proportionality in Conditions is stated as sufficient, with a common constant, not necessary;
+- the Conclusion keeps Barry's message instead of Sol's replacement, scoped to vascular plants and
+  separated from the spore result by a semicolon.
+
+Claims check after the repairs: 57 claims cited, 0 errors, 0 warnings; abstract 199 words.
