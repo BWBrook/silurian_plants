@@ -5,9 +5,13 @@ one-sided limit at alpha = 0.05, each find falls before A with probability p = R
 R is the integral of the relative earlier finding rate over [A, t]. No early find has probability (1 - p)**n,
 which equals alpha when R = K = L * (alpha**(-1/n) - 1). At the later rate of n / L finds per Myr, the earlier
 interval then holds m*(n) = n * (alpha**(-1/n) - 1) expected finds, which tends to ln(1/alpha) = ln 20 = 3.00
-(the rule of three for zero counts; Hanley and Lippman-Hand 1983). This script checks that the steady-rate
-limits, the step ratios, the linear and exponential rises, the minimum delays and the outside-measure matches
-all sit at m*(n) expected early finds, using the reviewed outputs.
+(the rule of three for zero counts; Hanley and Lippman-Hand 1983). The exact conversion is n*p/(1-p),
+at the estimated later rate, rather than the conditional binomial expectation n*p.
+
+This script re-expresses selected saved step, rise and proxy results on that expected-count scale.
+Steady limits and minimum delays are derived here from A, C and ALPHA. Exponential rows give the
+infinite-tail limit, rather than finite-age thresholds. Proxy rows at 48 finds compare with m*(48);
+the matching-count rows lie approximately on the boundary, allowing for rounded inputs.
 
     python3 studies/f3/models/loop3/rule_of_three.py
 """

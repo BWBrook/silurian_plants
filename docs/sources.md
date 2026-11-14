@@ -6,6 +6,16 @@ spore first appearances (from 2026-10-28). Status as of 2026-10-27, after EPRP t
 this file whenever a source is added, extracted or ruled out. A gap that bears on a question names its ID
 in `docs/questions.md`.
 
+**14 November 2026, Q1 statistical source check.** Hanley and Lippman-Hand (1983), read in full from
+the author's [McGill reprint](https://jhanley.biostat.mcgill.ca/Reprints/If_Nothing_Goes_1983.pdf), gives
+the exact binomial zero-count boundary and its rule-of-three approximation on p. 1744. C58 converts
+that probability to expected early finding at the estimated later rate; that conversion is derived
+in this study. The local copyrighted source and its hash are recorded in `library/closed.tsv` and
+excluded from Git. Both references' DOIs were checked against Crossref, and Hanley's incomplete
+metadata against the reprint and [PubMed](https://pubmed.ncbi.nlm.nih.gov/6827763/). Jovanovic and
+Levy (1997) was checked at abstract level only; its full-text gap is in `docs/closed-literature.csv`.
+Independent derivation and table checks: `studies/f3/docs/audits/2026-11-14-c58-independent-maths.md`.
+
 **13 November 2026, Q2/Q5 source assessment.** The C54 check traced six Katian–Hirnantian trilete
 review entries back to their cited primary papers. The source-supported comparison retained here is
 Saudi Arabia (Steemans et al. 2009, Katian Qasim and Hirnantian Sarah formations) and Turkey
