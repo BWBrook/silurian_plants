@@ -15,9 +15,9 @@ independent discoveries, the longer three take; at a steady rate the 95% limit o
 start is [428.8]{.C27 .V003} Ma if all [48]{.C25} are, near 431.2 Ma if half are. Ancestors at
 444–452 Ma fit if early fossils were found [2.4]{.C48 .V056}–[12]{.C48 .V055} times less often,
 depending on that count, if finding rose fast enough, or if recognisable bodies appeared later.
-Finding proportional to a post hoc product of North American rock area and trilete-reporting share would
-fit the early silence with all [48]{.C25} finds independent, but predicts [0.1]{.C59} late-Silurian finds
-against [13]{.C59}.
+Finding that followed North American non-marine rock area times the share of studies reporting trilete
+spores would allow those ancestors but leave almost no fossils in the late Silurian, where at least
+[13]{.C59} lie.
 
 **Keywords:** molecular clock; fossil calibration; land plants; vascular plants; stratigraphic
 confidence interval; Ordovician–Silurian
@@ -447,10 +447,12 @@ concrete: if fossils turned up at a steady rate after the oldest find, the silen
 three expected finds at that rate.
 An older ancestor needs early finding low enough, or recognisable bodies late enough, to keep that
 expected count at about three or fewer, and the number of independent finds sets how many million years three finds
-span. Multiplied, North American non-marine rock area and the share of studies reporting triletes fell
-enough before the oldest find for ancestors at 444–452 Ma at every count, with zero delay, if mean
-finding rates shared that fall; finding that followed them stage by stage is contradicted by the
-late-Silurian finds, so this route rests on that shared fall alone. For spores, the Libyan basin shows that an absence can be local:
+span. North American non-marine rock area multiplied by the share of studies reporting trilete spores
+averaged far less before the oldest find than after it: enough to allow ancestors at 444–452 Ma at all
+four counts tested, even with recognisable bodies appearing with the ancestor, if average finding rates
+were lower by the same factor. Finding that rose and fell with this product through time would have left
+almost no fossils in the late Silurian, where at least [13]{.C59} lie, so this route rests on that
+difference in averages alone. For spores, the Libyan basin shows that an absence can be local:
 older land-plant ancestors fit its record if, with equal delivery, their steady trilete supply since
 459.1 Ma stayed below about a tenth of the later supply, with older onsets needing less, or if the
 producers lived elsewhere or acquired triletes later. Missing fossils thus
