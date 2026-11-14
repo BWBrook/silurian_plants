@@ -1,0 +1,5 @@
+interval,interval_ma,counting,n,observed_min,level_share,share_lower95,least_rate_relative_to_mean,p_level,largest_change_factor_cutoff_over_A,n_regions,regions
+Gorstian-Pridoli,419.62-426.7,locality_age,48,13,0.2131,0.1683,0.790,0.2079,1.764,6,Baltica;Gondwana-South-America;Kazakhstania;Laurentia;South-China;peri-Gondwana-Europe
+Gorstian-Pridoli,419.62-426.7,region_stage,19,6,0.2131,0.1475,0.692,0.2025,2.365,6,Baltica;Gondwana-South-America;Kazakhstania;Laurentia;South-China;peri-Gondwana-Europe
+Ludfordian-Pridoli,419.62-425,locality_age,48,13,0.1619,0.1683,1.039,0.0382,0.900,6,Baltica;Gondwana-South-America;Kazakhstania;Laurentia;South-China;peri-Gondwana-Europe
+Ludfordian-Pridoli,419.62-425,region_stage,19,6,0.1619,0.1475,0.911,0.0734,1.280,6,Baltica;Gondwana-South-America;Kazakhstania;Laurentia;South-China;peri-Gondwana-Europe
