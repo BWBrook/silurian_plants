@@ -11,7 +11,7 @@ interval, a guaranteed minimum. Reports, for each interval and counting rule:
   the cutoff and at A (above 1 a rise towards the present, below 1 a fall);
 - the regions represented among the late-Silurian finds.
 
-The oldest find (two Australian units, 426.7-393.47 Ma) lies in none of the late-Silurian counts, so A does
+The two Australian units that set A (426.7-393.47 Ma) lie in none of the late-Silurian counts, so A does
 not enter them by construction.
 
     python3 studies/f3/models/loop3/switch_reading.py
