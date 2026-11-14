@@ -11,8 +11,11 @@ interval, a guaranteed minimum. Reports, for each interval and counting rule:
   the cutoff and at A (above 1 a rise towards the present, below 1 a fall);
 - the regions represented among the late-Silurian finds.
 
-The two Australian units that set A (426.7-393.47 Ma) lie in none of the late-Silurian counts, so A does
-not enter them by construction.
+The two Australian units that set A (426.7-393.47 Ma) lie in none of the guaranteed late-Silurian
+counts. A and the intervals still come from the observed age supports; one counted find could be
+the actual oldest fossil. The lower bounds concern interval averages, rather than a plateau or
+the rate immediately after A. The exponential endpoint factor spans A to C, including the late
+Silurian, and the nominal fixed-window coverage does not calibrate selection of A or the intervals.
 
     python3 studies/f3/models/loop3/switch_reading.py
 """
