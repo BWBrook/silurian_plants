@@ -1,0 +1,77 @@
+{
+  "title": "The revision resolves most findings and all revised numbers agree with C59, but Conditions retains an incorrect rate assumption and placement compatibility needs qualification.",
+  "items": [
+    {
+      "location": "main.md:7–20, Abstract",
+      "old": "The product accommodated older ancestors without clearly separating that calculation from placement.",
+      "new": "Finding proportional to the post hoc product fits the early silence but predicts 0.1 late-Silurian finds against 13.",
+      "problem": "Resolved. This is true and fair compression at exactly 200 words. It states the proportionality assumption, post hoc selection and empirical contradiction; Results and Conditions can carry the detailed restrictions.",
+      "severity": "ok",
+      "evidence": "C59 gives 1.1532–1.2280 expected early finds for 48 independent finds at 444–452 Ma with zero delay, and 0.141 late-Silurian finds against 13. Rounding to 0.1 is correct for either reported placement interval.",
+      "repair": ""
+    },
+    {
+      "location": "main.md:293–294, Results (g) heading",
+      "old": "The multiplied measures meet every requirement.",
+      "new": "They would allow older ancestors if finding shared their contrast between the windows.",
+      "problem": "Resolved. The heading now identifies conditional numerical sufficiency without claiming that placement or proportionality has been validated.",
+      "severity": "ok",
+      "evidence": "C59 supports sufficiency for the tested counts and candidate ages under the transferred contrast. The following text supplies 444–452 Ma; Methods supplies zero delay.",
+      "repair": ""
+    },
+    {
+      "location": "main.md:306–320, Results (g), combined values",
+      "old": "Combined expectations and overlap statistics required numerical checking.",
+      "new": "The product gives a 21.7–29.8 contrast and 1.15–1.23 expected early finds; alternative multiplication gives 1.48–1.61.",
+      "problem": "The reported numbers agree with C59. The discussion retains post hoc selection, shared causes, study-reporting rather than abundance, geographical mismatch and the limited interpretation of correlation.",
+      "severity": "ok",
+      "evidence": "C59 gives contrasts 21.6704/29.7603; expectations 1.1532/1.2280 and 1.4758/1.6130. Searching combinations span 3.5936–4.0630 at n=48 and 1.7968–2.0315 at n=24, correctly rounded to 3.6–4.1 and 1.8–2.0. The 13 stages, rho=0.30 and p=0.31 match 13, 0.3039 and 0.3128. Every tested rock-product count meets its boundary.",
+      "repair": ""
+    },
+    {
+      "location": "main.md:322–332, Results (g), placement",
+      "old": "The interval was misnamed, and non-rejection was presented as evidence that finds followed level finding or searching.",
+      "new": "Both placement intervals are named correctly, and level finding and searching are described as compatible with 13.",
+      "problem": "The interval error and numerical errors are resolved. Compatibility with 13 is literally correct, but readers need to know that 13 is a minimum: three additional uncertain finds could bring the count to 16 and change non-rejection. This uncertainty strengthens the rejection of the rock and spore models.",
+      "severity": "risk",
+      "evidence": "C59 and placement CSV agree on 0.451→0.45, 3.762→3.8, 0.141→0.14, 10.227→10.2 and 10.089→10.1. All relevant rock/spore/product tails remain below 0.003 across both counting schemes and intervals. Ludfordian–Pridoli expectations 7.771/7.832 round to 7.8; p=0.0382/0.0404 round to 0.04. The earlier calculation check gives Gorstian–Pridoli tails near 0.036/0.032 if 16 finds lie there.",
+      "repair": "Write: “A level rate predicts 10.2 finds and searching 10.1; neither is rejected using the guaranteed minimum of 13, although up to 16 may lie there.” Retain the narrower-interval sensitivity and its post hoc qualification."
+    },
+    {
+      "location": "main.md:367–374, Discussion",
+      "old": "The combination supported older ancestors and the later finds were said to follow particular histories.",
+      "new": "Older ancestors fit if mean finding rates share the between-window contrast; proportional tracking is contradicted and the transferred contrast remains an assumption.",
+      "problem": "Resolved. The passage now distinguishes numerical sufficiency from evidential validation and retains zero delay and absence of confidence status.",
+      "severity": "ok",
+      "evidence": "The stated 48 independent finds and 444–452 Ma candidates match C59. The product predicts only 0.141 late-Silurian finds, supporting “almost none” in this context.",
+      "repair": ""
+    },
+    {
+      "location": "main.md:405–416, Conditions",
+      "old": "The outside comparison assumes a level later finding rate; searching was said to hold.",
+      "new": "The level-rate requirement remains, while searching and a level rate are described as compatible with the placement check.",
+      "problem": "Partly resolved. Independence, containing age ranges, inventory imbalance and post hoc selection are now explicit. However, the blanket level-rate requirement contradicts C59’s integral-based proportional calculation. Compatibility also needs restriction to the minimum count and Gorstian–Pridoli allocation. “One split” should describe each binary check because two interval choices are now reported.",
+      "severity": "error",
+      "evidence": "C59’s basis and plan-rulers.md explicitly state that the proportional calculation needs no level later rate. The counts 13 and six region–stage units are correct. C59 identifies 13 as a minimum, permits up to 16, and records the narrower interval’s p≈0.04.",
+      "repair": "Write: “The exponential rises and the step interpretation of the broad contrasts assume a level later rate; the integral-based proportional calculation allows variation within the later window. Level finding and searching are not rejected for the Gorstian–Pridoli allocation using the minimum count of 13, but that result depends on uncertain ages and the interval chosen. Each placement check tests one binary allocation; 13 finds, forming six region–stage units, lie wholly within it, while up to 16 finds may do so.” Retain the existing independence, age-containment, inventory and post hoc qualifications."
+    },
+    {
+      "location": "main.md:447–450, Conclusion",
+      "old": "The measures supported older ancestors and the later finds confirmed a level rate.",
+      "new": "The multiplied contrast suffices at 444–452 Ma with zero delay if finding shares it; proportional tracking is contradicted.",
+      "problem": "Resolved in context. The conclusion now makes the transferred contrast conditional and retains the tested age range and zero delay. “Every count” refers to the counts examined in the article.",
+      "severity": "ok",
+      "evidence": "C59 supports sufficiency at n=48, 24, 19 and 15 for both tested candidate ages. Post hoc selection and absence of confidence status are stated in Results, Discussion and Conditions.",
+      "repair": ""
+    },
+    {
+      "location": "figures.md:5, figure 3 caption",
+      "old": "Three separate outside measures.",
+      "new": "A dotted line shows the stage-by-stage rock–spore product, chosen after both measures were seen.",
+      "problem": "Meaning remains sound. The caption retains the proxy definitions, zero-delay restriction and lack of confidence status.",
+      "severity": "ok",
+      "evidence": "C59 and combined_rulers_curve.csv identify the plotted combination as the ratio of means of the pointwise product. No files were edited.\n\nNext: Claude — correct Conditions and qualify minimum-count compatibility.\n\n",
+      "repair": ""
+    }
+  ]
+}

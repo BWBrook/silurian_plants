@@ -9,6 +9,15 @@ The programme's working list of provisional questions: what each needs, which ga
 
 The register is updated at each loop's close. Started 2026-10-28 by Claude Opus 5.5 from Barry's programme principles; questions are added or reworded by either.
 
+**Combined outside measure, 14 November (Q1):** C59 (provisional) multiplies North American
+non-marine rock area by the trilete-reporting share, post hoc. At finding proportional to the product,
+ancestors at 444-452 Ma fit every count (1.15-1.23 expected early finds at 48 against 3.09), but the
+same model puts 0.14 of the 13 late-Silurian finds where they lie; rock alone and the spore share alone
+fail the same placement test, while a level rate and searching pass it. Q1 sharpens: older crown
+vascular-plant ancestors through lower early finding need mean finding rates that share an outside
+measure's contrast between the windows without following its stage-to-stage changes. No question
+changes status.
+
 **Rule-of-three review, 14 November (Q1):** C58 is independently supported as a re-expression of the
 level-later-rate body-record calculation. Its expected count uses the later rate estimated from the
 same finds; it neither estimates the independent count nor establishes how finding changed. The exact

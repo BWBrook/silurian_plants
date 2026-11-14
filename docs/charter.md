@@ -447,5 +447,10 @@ data archived, and the human–AI correspondence record published alongside.
   Lippman-Hand reprint, narrowed the script's verification description and supported C58. The parent
   integrated one bounded mathematical audit; no numerical results changed.
 
+- Combined outside measure (14 November 2026): Fable 5.2 asked for it (issue 2, relayed by Barry);
+  Claude (Opus 5.5) pre-specified it as a post hoc addendum, computed it with an overlap test and a
+  later-find placement test of its own design (`studies/f3/models/loop3/combined_rulers.py`, claim C59),
+  added it to figure 3b and rewrote the affected passages; `gpt-6.1-sol` recomputed the values
+  independently, caught a mislabelled interval and checked the meaning twice.
 `docs/decisions.md` and each study's decision log record who decided what and when, for the eventual
 statement of AI roles.

@@ -1,0 +1,159 @@
+{
+  "title": "C59’s arithmetic agrees within 0.011%, but claims that level or searching fits the later finds overreach, and the placement interval is mislabelled.",
+  "items": [
+    {
+      "quantity": "Rock × spore Q, 444 Ma",
+      "independent_value": "Ratio of product means: 21.668070; product of single ratios: 16.931202.",
+      "file_value": "21.6704; 16.9330.",
+      "agree": true,
+      "note": "Exact integration over all unit and stage boundaries; differences −0.01075% and −0.01062%, well below 0.5%."
+    },
+    {
+      "quantity": "Rock × spore Q, 452 Ma",
+      "independent_value": "Ratio of product means: 29.757330; product of single ratios: 22.655354.",
+      "file_value": "29.7603; 22.6570.",
+      "agree": true,
+      "note": "Differences −0.00998% and −0.00726%."
+    },
+    {
+      "quantity": "Rock × spore E, 444 Ma",
+      "independent_value": "For n=(48,15): product means E=(1.153285,0.360402); multiplied ratios E=(1.475942,0.461232).",
+      "file_value": "Product means (1.1532,0.3604); multiplied ratios (1.4758,0.4612).",
+      "agree": true,
+      "note": "Both forms fall below m*(n) for both counts."
+    },
+    {
+      "quantity": "Rock × spore E, 452 Ma",
+      "independent_value": "For n=(48,15): product means E=(1.228111,0.383785); multiplied ratios E=(1.613097,0.504093).",
+      "file_value": "Product means (1.2280,0.3837); multiplied ratios (1.6130,0.5041).",
+      "agree": true,
+      "note": "Both forms fall below m*(n) for both counts."
+    },
+    {
+      "quantity": "Searching × spore Q, 444 Ma",
+      "independent_value": "Ratio of product means: 6.452961; product of single ratios: 6.953928.",
+      "file_value": "6.4530; 6.9539.",
+      "agree": true,
+      "note": "Both differences are below 0.001%."
+    },
+    {
+      "quantity": "Searching × spore Q, 452 Ma",
+      "independent_value": "Ratio of product means: 8.994708; product of single ratios: 10.048570.",
+      "file_value": "8.9947; 10.0486.",
+      "agree": true,
+      "note": "Both differences are below 0.001%."
+    },
+    {
+      "quantity": "Searching × spore E, 444 Ma",
+      "independent_value": "For n=(48,24): product means E=(3.872558,1.936279); multiplied ratios E=(3.593576,1.796788).",
+      "file_value": "Product means (3.8726,1.9363); multiplied ratios (3.5936,1.7968).",
+      "agree": true,
+      "note": "Both forms exceed m*(48) and fall below m*(24)."
+    },
+    {
+      "quantity": "Searching × spore E, 452 Ma",
+      "independent_value": "For n=(48,24): product means E=(4.062977,2.031488); multiplied ratios E=(3.636865,1.818432).",
+      "file_value": "Product means (4.0630,2.0315); multiplied ratios (3.6369,1.8184).",
+      "agree": true,
+      "note": "Both forms exceed m*(48) and fall below m*(24)."
+    },
+    {
+      "quantity": "Rule-of-three boundaries m*(n)",
+      "independent_value": "n=48: 3.091191259; n=24: 3.190727336; n=15: 3.315829501.",
+      "file_value": "3.0912; 3.1907; 3.3158.",
+      "agree": true,
+      "note": "Computed directly as n × expm1(−log(0.05)/n)."
+    },
+    {
+      "quantity": "Rock–spore Spearman correlation and permutation p",
+      "independent_value": "13 stages; rho=0.3038720411; exact two-sided permutation p=0.3121858890.",
+      "file_value": "13 stages; rho=0.3039; simulated permutation p=0.3128.",
+      "agree": true,
+      "note": "Exact permutation distribution accounts for the three tied zero-rock stages: 323,998,004 qualifying assignments out of 1,037,836,800. The file’s 200,000-shuffle estimate is consistent with this."
+    },
+    {
+      "quantity": "Placement under level finding",
+      "independent_value": "Share=0.2130604875; expected=10.22690340; P(X≥13)=0.2079245358.",
+      "file_value": "Share=0.2131; expected=10.227; p=0.208.",
+      "agree": true,
+      "note": "Uses the requested interval 419.62–426.7 Ma and n=48."
+    },
+    {
+      "quantity": "Placement under rock",
+      "independent_value": "Share=0.009405359786; expected=0.4514572697; P(X≥13)=6.398004036e−16.",
+      "file_value": "Share=0.0094; expected=0.451; p=6.4e−16.",
+      "agree": true,
+      "note": "Exact integral counts each active column once at each age."
+    },
+    {
+      "quantity": "Placement under spore share",
+      "independent_value": "Share=0.07837999579; expected=3.762239798; P(X≥13)=5.895029381e−5.",
+      "file_value": "Share=0.0784; expected=3.762; p=5.9e−5.",
+      "agree": true,
+      "note": "Stage shares were reconstructed from document counts and timescale bounds."
+    },
+    {
+      "quantity": "Placement under searching",
+      "independent_value": "Share=0.2101929613; expected=10.08926214; P(X≥13)=0.1938224525.",
+      "file_value": "Share=0.2102; expected=10.089; p=0.194.",
+      "agree": true,
+      "note": "Uses global all_density_per_myr."
+    },
+    {
+      "quantity": "Placement under rock × spore",
+      "independent_value": "Share=0.002939121946; expected=0.1410778534; P(X≥13)=2.141378793e−22.",
+      "file_value": "Share=0.0029; expected=0.141; p=2.14e−22.",
+      "agree": true,
+      "note": "The integrand is the pointwise product."
+    },
+    {
+      "quantity": "Find selection and placement count",
+      "independent_value": "48 eligible finds: 13 wholly within 419.62–426.7 Ma, 32 wholly younger, and three crossing 419.62 Ma.",
+      "file_value": "48 eligible; 13 wholly within the older interval.",
+      "agree": true,
+      "note": "Applied the specified B2/main and age-range filters directly. The 13 also form six distinct region-and-age-range groups."
+    },
+    {
+      "quantity": "Conditional no-early-find derivation",
+      "independent_value": "Correct conditional on n independent finds drawn with density proportional to x: P(no early find | n)=[I_later/(I_later+I_early)]^n=(1+E/n)^(−n).",
+      "file_value": "P(no early find)=(1+E/n)^(−n), needing no level later rate.",
+      "agree": true,
+      "note": "Requires E=nI_early/I_later and nonzero I_later. E is the early expectation obtained by fitting intensity to the later count; the conditional expected early count given total n is instead E/(1+E/n)."
+    },
+    {
+      "quantity": "Zero support in the rock measure",
+      "independent_value": "Rock is identically zero throughout 420.39–426.7 Ma: 6.31 Myr immediately younger than A; Gorstian and Ludfordian stage means are zero. Hirnantian is also zero.",
+      "file_value": "The stage table reports zero rock for Hirnantian, Gorstian and Ludfordian.",
+      "agree": true,
+      "note": "This is database coverage under the selected geography and environmental classification, not evidence of globally absent terrestrial rock or finding opportunities."
+    },
+    {
+      "quantity": "Placement inference with uncertain ages",
+      "independent_value": "The true older count can be 13–16. Level tails range from 0.207925 to 0.036334; searching tails from 0.193822 to 0.032409.",
+      "file_value": "C59 says level and searching fit the placement; main.md says the later finds follow them.",
+      "agree": false,
+      "note": "Thirteen is a guaranteed minimum. Its upper-tail calculation supports conservative rejection of rock, spores and their product, under independent proportional sampling and valid age intervals. Non-rejection at that minimum does not establish fit for level or searching."
+    },
+    {
+      "quantity": "Probability interpretation of multiplied single ratios",
+      "independent_value": "Only the ratio of pointwise-product means directly supplies I_later/I_early for finding proportional to rock × spores or searching × spores.",
+      "file_value": "Both forms receive E, p_no_early_find and fits/exceeds columns.",
+      "agree": false,
+      "note": "The multiplied-ratio calculations are algebraically reproduced, but their probabilities require a separate model. Product-means Q divided by multiplied-ratios Q is 1.27977/1.31348 for rock and 0.92796/0.89512 for searching at 444/452 Ma."
+    },
+    {
+      "quantity": "Independence and empirical calibration",
+      "independent_value": "Weak stage-rank correlation does not demonstrate independent mechanisms or validate multiplying the proxies.",
+      "file_value": "C59 labels the combination post hoc, without a confidence level, and acknowledges shared causes and geographical mismatch.",
+      "agree": true,
+      "note": "Those qualifications are necessary. The permutation test assumes exchangeable stage labels; temporal dependence weakens its interpretation. North American rock and global spore/searching measures do not establish proportional sampling of the global fossil inventory."
+    },
+    {
+      "quantity": "Placement interval naming and sensitivity",
+      "independent_value": "419.62–426.7 Ma spans Gorstian–Pridoli. Literal Ludfordian–Pridoli is 419.62–425 Ma; the same 13 finds then give level expected=7.771291, p=0.038191, and searching expected=7.832102, p=0.040365.",
+      "file_value": "The specified interval and placement output are labelled Ludfordian–Pridoli.",
+      "agree": false,
+      "note": "The numerical checks above use the requested interval, but its label is incorrect and the claimed fit depends on the interval chosen. All calculations ran in memory without importing either production script; no repository files were written.\nNext: Barry\n"
+    }
+  ]
+}

@@ -1,0 +1,95 @@
+{
+  "title": "The combined arithmetic holds, but the placement window is mislabelled and several passages overstate what the tests establish.",
+  "items": [
+    {
+      "location": "figures.md: figure 3 caption",
+      "old": "Three outside measures, with no combined line.",
+      "new": "The dotted olive line multiplies the rock and spore measures stage by stage, a combination chosen after both were seen.",
+      "problem": "Meaning holds. The surrounding caption retains the North American non-marine definition, study-reporting share, zero-delay restriction and absence of confidence status.",
+      "severity": "ok",
+      "evidence": "C59 and combined_rulers.py define the ratio of window means of the rock × spore-share product and disclose its post hoc selection.",
+      "repair": ""
+    },
+    {
+      "location": "main.md:17–20, Abstract",
+      "old": "The separate measures suffice only with fewer independent finds.",
+      "new": "A post hoc product ... fell enough ... for all 48 finds, yet finding that tracked it predicts 0.1 latest-Silurian finds against 13.",
+      "problem": "The numerical contrast is true, and 0.1 correctly rounds 0.141. A first reader is not told that the share counts studies, that the rock is non-marine column area, or that accommodating older ancestors assumes the same contrast in mean finding rates, with zero delay and no confidence level. The two different uses of the product are compressed together.",
+      "severity": "risk",
+      "evidence": "C59 gives 1.1532–1.2280 expected early finds for 48 independent finds at 444–452 Ma. The placement prediction is 0.141 for the coded Gorstian–Pridoli window.",
+      "repair": "A post hoc product of North American non-marine column area and the share of indexed studies reporting trilete spores gives a contrast large enough to accommodate ancestors at 444–452 Ma with all 48 finds independent and zero delay, if mean finding rates share that contrast. This comparison carries no confidence level; finding proportional to the product within the later window predicts only 0.14 Gorstian–Pridoli finds, against 13 securely dated there."
+    },
+    {
+      "location": "main.md:187–192, Methods (h)",
+      "old": "The two ratios can be compared in size.",
+      "new": "Post hoc multiplication, a placement check and a global searching × spore alternative are introduced.",
+      "problem": "Meaning holds in context. The preceding sentences define the measures and zero-delay windows; the addition identifies the product as post hoc and without confidence level. The reason for using searching instead of rock in the global alternative matches the plan.",
+      "severity": "ok",
+      "evidence": "The plan-rulers.md addendum specifies both combinations and excludes searching × rock because collection density already includes rock availability.",
+      "repair": ""
+    },
+    {
+      "location": "main.md:293–294, Results (g) heading",
+      "old": "Rock and spore-reporting ratios overlap some cautious requirements in size.",
+      "new": "Multiplied, the rock and spore measures meet every requirement, as broad contrasts between the windows.",
+      "problem": "“Every requirement” exceeds the demonstrated result. The calculation meets the expected-early-find boundary for the tested counts and candidate ages; it does not meet the placement requirement or validate proportionality.",
+      "severity": "risk",
+      "evidence": "The rock-product rows fit for n = 48, 24, 19 and 15 at 444 and 452 Ma. Its later-window placement prediction is strongly contradicted.",
+      "repair": "The rock × spore contrast is large enough for every tested count at 444–452 Ma, assuming zero delay."
+    },
+    {
+      "location": "main.md:300–304, Results (g), separate measures",
+      "old": "Whether their combined effects could close that gap remains untested.",
+      "new": "That clause is removed; the separate expected counts and South American comparison remain.",
+      "problem": "The deletion is justified. The separate expected counts remain correct and explicitly conditional on proportional finding in both windows.",
+      "severity": "ok",
+      "evidence": "C58 gives rock expectations 7.5861 and 11.4602, and spore-share expectations 4.8615 and 5.1437. C59 now computes the combination. C56 supports the stated South American comparison.",
+      "repair": ""
+    },
+    {
+      "location": "main.md:306–320, Results (g), combined counts, rationale and overlap",
+      "old": "No combined calculation or overlap test.",
+      "new": "The product yields 1.15–1.23 expected early finds; every count fits; arguments for and against multiplication and rho = 0.30, p = 0.31 are reported.",
+      "problem": "The arithmetic and balanced argument hold under the preceding proportionality assumption and Methods’ zero-delay restriction. “Every count” holds for all counts tested. The correlation wording is defensible under the stated permutation test, and the final sentence correctly prevents interpreting weak correlation as independent causes.",
+      "severity": "ok",
+      "evidence": "All rock-product rows fit their 3.0912–3.3158 boundaries. The direct-ratio form gives 1.4758–1.6130. The searching ranges correctly envelope both forms: 3.5936–4.0630 at n = 48 and 1.7968–2.0315 at n = 24. The overlap output gives 13 stages, rho = 0.3039 and p = 0.3128. The permutation reference treats stage ranks as exchangeable; it does not model temporal dependence or establish causal independence.",
+      "repair": ""
+    },
+    {
+      "location": "main.md:322–329, Results (g), placement",
+      "old": "No placement test.",
+      "new": "Ludfordian–Pridoli placement predictions ... The later finds therefore follow a level rate or searching ... only as contrasts between the two windows.",
+      "problem": "The predictions belong to Gorstian–Pridoli, not Ludfordian–Pridoli. The code integrates from 419.62 to 426.7 Ma. Also, non-rejection establishes compatibility with the tested allocation, not that finds follow either history throughout the later window. Rejecting proportional tracking does not establish that a between-window relationship holds, or that it is the only possible relationship.",
+      "severity": "error",
+      "evidence": "combined_rulers.py:154–168 includes the Gorstian. For Ludfordian–Pridoli alone, stage-table integration gives approximately 7.77 level-rate finds, 7.83 searching finds and 2.89 spore-share finds, rather than 10.2, 10.1 and 3.8. Rock and product expectations remain approximately 0.45 and 0.14 because recorded Gorstian rock is zero. The reported p-values match the coded window; the level/searching tails are approximately 0.20.",
+      "repair": "Name the tested window Gorstian–Pridoli throughout this paragraph and the associated evidence labels. Replace the inference with: “This Silurian-versus-Devonian allocation is compatible with a level rate or searching and strongly contradicts finding proportional to rock, spore share or their product. Using the combined contrast to accommodate older ancestors therefore requires a separate, unvalidated assumption that mean finding rates share its between-window ratio.”"
+    },
+    {
+      "location": "main.md:367–370, Discussion",
+      "old": "Their relation to body-fossil finding rate, and their combined effect, remain open.",
+      "new": "The combination lets 48 finds fit older ancestors and supports them only as a contrast between windows.",
+      "problem": "The numerical sufficiency is established, but “supports older ancestors” suggests evidential validation of the transferred contrast. “The finds lie where” also generalises one binary placement check to their full temporal distribution.",
+      "severity": "risk",
+      "evidence": "C59 establishes sufficient contrast under assumed transfer to mean finding rates. Its placement test concerns one partition of the later window and contradicts stage-by-stage proportionality for the product.",
+      "repair": "The post hoc product is numerically sufficient for ancestors at 444–452 Ma with 48 independent finds and zero delay, if mean finding rates share its between-window contrast. The placement check contradicts proportional tracking within the later window, leaving that transfer of the broad contrast unvalidated; the combination carries no confidence level."
+    },
+    {
+      "location": "main.md:401–411, Conditions",
+      "old": "Proportionality remains untested.",
+      "new": "Proportionality fails for rock and spores and holds for searching; added post hoc and placement limitations.",
+      "problem": "“Holds for searching” asserts more than non-rejection. The window is misnamed. The limitation should explicitly identify the test as one binary allocation and retain independence and age-range containment. The surrounding statement that the outside comparison requires a level later rate also needs qualification: the code’s integral-based proportional model does not require it.",
+      "severity": "error",
+      "evidence": "C59 lists independent counting units, inventory bias and zero delay. The placement function uses one Gorstian–Pridoli-versus-Devonian split. The script and plan addendum explicitly state that the integral-based proportional calculation needs no level later rate.",
+      "repair": "State that a level later rate belongs to the broad-window interpretation, while the integral-based proportional model allows variation within the later window. Then write: “The placement check contradicts proportional tracking of rock, spore share and their product, while searching remains compatible with this single allocation. It uses 13 finds securely within Gorstian–Pridoli, or six region–stage units, assumes independent units and containing age ranges, and inherits inventory imbalance. Transferring the post hoc product’s between-window contrast to mean finding rates remains an assumption, evaluated here at zero delay and without confidence status.”"
+    },
+    {
+      "location": "main.md:442–444, Conclusion",
+      "old": "Separate measures suffice only with fewer independent finds; their connection to finding remains untested.",
+      "new": "The product suffices for every count, and later finds follow a level rate, so the measures support older ancestors as broad contrasts.",
+      "problem": "The conclusion drops the tested age range, post hoc status and conditional transfer to finding rates. It also treats compatibility with one allocation as confirmation of a level rate and treats an unvalidated contrast as support for older ancestors.",
+      "severity": "risk",
+      "evidence": "The sufficient product contrast applies to the tested 444–452 Ma candidates and counts, with zero delay. No newly quoted value differs from the saved outputs after rounding; the numerical mismatch is their attribution to Ludfordian–Pridoli in the placement passage. No files were edited.\n\nNext: Claude — correct the placement window and qualify the inferred support.\n\n",
+      "repair": "The post hoc product of North American non-marine column area and the share of studies reporting triletes gives a sufficient contrast for ancestors at 444–452 Ma across all tested counts, assuming zero delay and the same contrast in mean finding rates. This comparison has no confidence level, and the placement check contradicts proportional tracking within the later window, leaving the broad-window transfer unvalidated."
+    }
+  ]
+}

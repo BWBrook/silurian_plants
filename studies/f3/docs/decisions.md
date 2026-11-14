@@ -5,6 +5,42 @@ Programme and cross-study decisions are in `docs/decisions.md`. Entries before 1
 written before the study-first move and name pre-move paths (`models/f3/`, `data/units/`,
 `manuscript/`, `docs/audits/`); `studies/f3/PATHS.tsv` maps each to its current location.
 
+## 2026-11-14: the combined rock and spore measure is computed and tested (Barry with Fable; Claude)
+
+Fable 5.2's issue 2, relayed by Barry (chat with Fable, 14 November 2026: "Yes, I thought that was a
+strange stopping point too. 'Why not test it, if you're aware of it?' Let's be bolder, agreed."), asked
+for the combined outside measure that Results (g) had left "untested". Claude wrote the specification
+into `studies/f3/docs/plan-rulers.md` before computing (an addendum that departs from that plan's no-product rule
+and is labelled post hoc), computed it in `studies/f3/models/loop3/combined_rulers.py` and entered C59
+(provisional).
+
+- **Combined case.** Rock x spore share, as the ratio of window means of the stage-by-stage product:
+  21.7 at 444 Ma and 29.8 at 452 Ma, leaving 1.15-1.23 expected early finds with 48 finds against the
+  3.09 boundary; multiplying the two single ratios, as Fable's sum did, gives 1.48-1.61. Every count
+  fits. Fable's rough sum (1.5-1.6) holds; the stage-by-stage product is stronger because both
+  measures are high in the Early Devonian.
+- **Searching.** Not multiplied with rock (collections are made in rock; the product would count rock
+  twice). Searching x spore share, the global alternative, leaves 3.6-4.1 expected early finds at 48
+  finds (exceeds) and 1.8-2.0 at 24 (fits).
+- **Overlap.** Across the 13 stages Katian-Emsian, Spearman rho rock-spore 0.30 (permutation p 0.31);
+  13 stages cannot separate a shared cause from coincident trends.
+- **Placement test (added by Claude, beyond Fable's list).** If finding were proportional to a measure,
+  the later finds would sit where it is high. 13 of 48 finds lie wholly in the Pridoli or
+  Ludfordian-Pridoli. Rock predicts 0.45 in the Gorstian-Pridoli, spore share 3.8, their product 0.14
+  (p <= 0.003 throughout); a level rate and searching predict about 10 (compatible), and about 7.8
+  from the Ludfordian base (p about 0.04). So the record contradicts finding that tracks rock or spores
+  stage by stage, and the combined contrast supports older ancestors only under the separate assumption
+  that mean finding rates share it between the windows.
+- **Disposition.** "Yes, but": the product closes the gap arithmetically, and the same proportional
+  model is contradicted by where the later finds lie. The Abstract, Methods (h), Results (g),
+  Discussion, Conditions, Conclusion and figure 3b (a rock x spore curve) now say so; "remains
+  untested" is gone.
+- **Checks.** Sol (`gpt-6.1-sol`) recomputed every value by exact integration (within 0.011%) and found
+  the placement interval mislabelled (it ran from the Gorstian base); corrected, both splits reported.
+  Sol's meaning check flagged overstatement of "fits" for level and searching; repaired as
+  non-rejection; Sol's recheck asked that 13 be stated as a minimum (up to 16 may lie there) and that the
+  level-rate condition be limited to the window-mean reading; both repaired. Audits: `studies/f3/docs/audits/2026-11-14-c59-sol-*.json`. C59 awaits Codex's check.
+
 ## 2026-11-14: plain-wording repairs after Fable's review of issue 1 (Barry with Fable; Claude)
 
 Fable 5.2 reviewed the rule-of-three revision and judged the substance right and the wording short of
