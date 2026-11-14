@@ -149,25 +149,29 @@ def binom_tail(n, k, p):
 
 def placement(singles, combos, A, c):
     """Where would the later finds lie if finding tracked each measure stage by stage? Compare the share of
-    the later window's proxy integral in the Ludfordian-Pridoli (above the Lochkovian base) with the finds
-    whose whole age range lies there: 13 of 48 locality-age finds, 6 of 19 region-and-stage finds."""
-    lochkovian_base = stages()["Lochkovian"][1]
+    the later window's proxy integral in a late-Silurian interval with the finds whose whole age range lies
+    there (a guaranteed minimum): 13 of 48 locality-age finds, 6 of 19 region-and-stage finds, for both
+    Gorstian-Pridoli (Lochkovian base to A) and Ludfordian-Pridoli (Lochkovian base to Gorstian top)."""
+    st = stages()
+    lochkovian_base, ludfordian_base = st["Lochkovian"][1], st["Ludfordian"][1]
     finds = [r for r in read(OUT / "primary_unit_membership.csv")
              if r["category"] == "B2" and r["reading"] == "main" and float(r["min_ma"]) >= c and float(r["max_ma"]) <= A + 1e-9]
-    late = [r for r in finds if float(r["min_ma"]) >= lochkovian_base]
-    region_stage = {(r["region"], r["min_ma"], r["max_ma"]) for r in late}
-    counts = {"locality_age": (len(finds), len(late)), "region_stage": (19, len(region_stage))}
-    assert counts["locality_age"] == (48, 13) and counts["region_stage"] == (19, 6), counts
     proxies = {"level": lambda s: 1.0, **singles}
     for key, (a, b) in combos.items():
         proxies[key] = (lambda xa, xb: lambda s: xa(s) * xb(s))(singles[a], singles[b])
     with open(OUT / "combined_rulers_placement.csv", "w", newline="") as f:
         w = csv.writer(f, lineterminator="\n")
-        w.writerow(["proxy", "share_ludfordian_pridoli", "counting", "n", "observed", "expected", "p_at_least_observed"])
-        for key, x in proxies.items():
-            share = mean(x, lochkovian_base, A) * (A - lochkovian_base) / (mean(x, c, A) * (A - c))
-            for counting, (n, k) in counts.items():
-                w.writerow([key, f"{share:.4f}", counting, n, k, f"{n * share:.3f}", f"{binom_tail(n, k, share):.3g}"])
+        w.writerow(["proxy", "interval", "interval_ma", "share", "counting", "n", "observed", "expected", "p_at_least_observed"])
+        for interval, top in (("Gorstian-Pridoli", A), ("Ludfordian-Pridoli", ludfordian_base)):
+            late = [r for r in finds if float(r["min_ma"]) >= lochkovian_base and float(r["max_ma"]) <= top + 1e-9]
+            counts = {"locality_age": (len(finds), len(late)),
+                      "region_stage": (19, len({(r["region"], r["min_ma"], r["max_ma"]) for r in late}))}
+            assert counts == {"locality_age": (48, 13), "region_stage": (19, 6)}, counts
+            for key, x in proxies.items():
+                share = mean(x, lochkovian_base, top) * (top - lochkovian_base) / (mean(x, c, A) * (A - c))
+                for counting, (n, k) in counts.items():
+                    w.writerow([key, interval, f"{lochkovian_base:g}-{top:g}", f"{share:.4f}", counting, n, k,
+                                f"{n * share:.3f}", f"{binom_tail(n, k, share):.3g}"])
 
 
 if __name__ == "__main__":
