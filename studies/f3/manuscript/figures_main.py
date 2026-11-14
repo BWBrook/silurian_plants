@@ -29,7 +29,6 @@ RESULTS = ROOT / "studies/f3/models/out/m2_results.csv"
 FRONTIER = ROOT / "studies/f3/models/loop3/out/frontier.csv"
 DIAL = ROOT / "studies/f3/models/loop3/out/count_dial.csv"
 RULERS = ROOT / "studies/f3/models/loop3/out/rulers.csv"
-COMBINED = ROOT / "studies/f3/models/loop3/out/combined_rulers_curve.csv"
 RISE = ROOT / "studies/f3/models/loop3/out/rise_shapes.csv"
 CUTOFF = float(F.primary_bound("B2", "flat")[2]["cutoff_ma"])
 ALPHA = 1 - float(F.primary_bound("B2", "flat")[2]["confidence_conditional_on_fixed_history_iid_units"])
@@ -325,20 +324,15 @@ def fig4(path):
     b.plot(t, contrast("curated", 0), color=MUTED, lw=1.3, ls=":",
            label=f"curated oldest records (n = {params['curated'][2]}), no delay")
     ruler_rows = F.read(RULERS)
-    for key, col, style, lab in (("rock_nonmarine_area", "#8c6d46", "-", "rock"),
-                                 ("search_all", "#8f8e86", (0, (5, 1.5, 1, 1.5)), "searching"),
-                                 ("spores_trilete_share", "#4f8a3a", "-", "spores")):
+    for key, col, style, lab, check in (("rock_nonmarine_area", "#8c6d46", "-", "rock", "fails"),
+                                        ("search_all", "#8f8e86", (0, (5, 1.5, 1, 1.5)), "searching", "compatible"),
+                                        ("spores_trilete_share", "#4f8a3a", "-", "spores", "fails")):
         pts = sorted((float(r["candidate_ma"]), float(r["later_to_earlier"])) for r in ruler_rows
                      if r["ruler"] == key and r["later_to_earlier"] not in ("inf",) )
         xs, ys = [x for x, _ in pts], [y for _, y in pts]
-        b.plot(xs, ys, color=col, lw=1.2, ls=style, label=f"ruler: {lab}")
-        b.text(455.6, ys[-1] * (1.09 if lab != "rock" else 0.93), lab, fontsize=6.6, color=col, ha="left",
+        b.plot(xs, ys, color=col, lw=1.2, ls=style, label=f"ruler: {lab} (" + ("fails later-find check" if check == "fails" else "compatible with later finds") + ")")
+        b.text(455.6, ys[-1] * (1.09 if lab != "rock" else 0.93), lab if check == "compatible" else f"{lab} ✗", fontsize=6.6, color=col, ha="left",
                va="bottom" if lab != "rock" else "top")
-    combo = sorted((float(r["candidate_ma"]), float(r["q_combined"])) for r in F.read(COMBINED)
-                   if r["combination"] == "rock_x_spore_share" and r["q_combined"] != "inf" and float(r["candidate_ma"]) <= 456)
-    b.plot([x for x, _ in combo], [y for _, y in combo], color="#6b7a35", lw=1.2, ls=(0, (2, 1.5)),
-           label="rock × spores (chosen after seeing both)")
-    b.text(455.6, combo[-1][1] * 1.08, "rock × spores", fontsize=6.6, color="#6b7a35", ha="left", va="bottom")
     for r in rows:
         if r["status"] == "contour" and r["unit_treatment"] == "primary" and float(r["assumed_diagnostic_delay_myr"]) == 0 \
                 and float(r["candidate_lineage_ma"]) in (444.0, 452.0):
@@ -360,7 +354,7 @@ def fig4(path):
     save(fig, path)
 
 
-INPUTS = [UNITS, RESULTS, FRONTIER, DIAL, RULERS, COMBINED, RISE, Path(__file__)]
+INPUTS = [UNITS, RESULTS, FRONTIER, DIAL, RULERS, RISE, Path(__file__)]
 
 
 def draw(out):

@@ -900,7 +900,7 @@ in 2006. A first computation counted rejected record groups and synonym-list ent
 numerator; Sol's review found this departure from the plan, and the corrected share raised the 444 and
 452 Ma ratios from 4.98 and 6.67 to the values shown.
 The measures bear on different factors (rock on preservation, searching on collection, spores on document
-reporting, which producer prevalence affects among other factors); no product is formed.
+reporting, which producer prevalence affects among other factors); a product formed after they were seen is reported in S5.10.
 
 ### S5.9 Shapes of an early rise
 
@@ -940,6 +940,77 @@ in the Rhuddanian, about [1.0]{.C57 .V127} Myr. The first comparison spans the o
 Homerian–Gorstian boundary, so it is not a test of a rise confined to before *A*; placing the Gorstian
 level at *A* instead would shorten it to about 4.6 Myr. The share is a reporting measure, not a finding
 rate for crown vascular plants.
+
+### S5.10 The combined measure and where the later finds lie
+
+**Single measures at the rule-of-three scale.** The rock ratios of S5.8 are numerically as large as the
+required finding-rate ratios for about [14]{.C56 .V134}–[20]{.C56 .V135} or fewer independent finds, and the
+spore-reporting ratios for about [29]{.C56 .V136}–[31]{.C56 .V137} or fewer. With all 48 finds independent, if
+body-fossil finding were proportional to each measure in both windows, about
+[7.6]{.C58 .V180}–[11.5]{.C58 .V181} finds would have been expected before the oldest find under the rock
+measure and [4.9]{.C58 .V182}–[5.1]{.C58 .V183} under the spore-reporting share, against about three. South
+American rock, recorded more coarsely, shows no decline.
+
+**The combined measure.** After seeing the single measures, and at Fable 5.2's request relayed by Barry,
+we multiplied the rock and spore measures stage by stage (`studies/f3/docs/plan-rulers.md`, addendum of
+14 November 2026, written before any combined value was computed;
+`studies/f3/models/loop3/combined_rulers.py`). Taken stage by stage, their product is
+[21.7]{.C59 .V185}–[29.8]{.C59 .V186} times lower before the oldest find than after it for ancestors at
+444–452 Ma, leaving [1.15]{.C59 .V187}–[1.23]{.C59 .V188} expected early finds with all 48 finds independent,
+or [1.48]{.C59 .V189}–[1.61]{.C59 .V190} if the two ratios are multiplied directly; every count fits. The
+global searching measure multiplied by the spore share leaves [3.6]{.C59 .V191}–[4.1]{.C59 .V192} expected
+early finds with 48 finds and [1.8]{.C59 .V193}–[2.0]{.C59 .V194} with 24. Searching was kept out of the rock
+product because collections are made in rock and the product could count rock availability twice. The
+case for multiplying is that rock stands for where bodies could be preserved and collected, the spore
+share for how common trilete producers were, and a find needs both. The case against is that the two
+may share a cause and count one effect twice; the spore share counts studies, and trilete producers
+include plants outside the crown group; and the rock is North American, while the oldest finds come from
+Australia, Arctic Canada and other regions. Across the [13]{.C59 .V195} stages from the Katian to the
+Emsian, the rock and spore series have a weak rank correlation (Spearman $\rho$ = [0.30]{.C59 .V196},
+permutation *p* = [0.31]{.C59 .V197}); both are high in the Early Devonian, which makes the stage-by-stage
+product larger than the product of the two ratios. So few stages cannot separate a shared cause from
+coincident trends. The combination has no confidence level.
+
+**Where the later finds lie.** A measure that finding followed stage by stage would put most later finds
+where it is high. Of the 48 finds, [13]{.C59 .V198} date wholly to the Pridoli or the Ludfordian–Pridoli
+(up to 16 may lie in the late Silurian); none is among the two Australian units that set *A*, whose age
+ranges reach the Emsian. The test compares that minimum count with a binomial distribution whose event
+probability is the interval's share of the measure's later-window integral. Counting by region and
+stage, or starting the interval at the Ludfordian, gives the same verdicts for rock, the spore share and
+their product (Table S16). From the Ludfordian base, a level rate and searching each put about
+[7.8]{.C59 .V205} finds there (*p* = [0.04]{.C59 .V206}), an interval set after the finds' ages were seen, so
+the later finds sit somewhat more in the late Silurian than a level rate predicts.
+
+<!-- table:placement -->
+| Finding follows | Expected in Gorstian–Pridoli, 48 finds | *p* | Expected, 19 region–stage units | *p* |
+|---|--:|--:|--:|--:|
+| Level rate | [10.2]{.C59 .V208} | [0.21]{.C59 .V209} | [4.0]{.C59 .V210} | [0.20]{.C59 .V211} |
+| Searching (PBDB collections) | [10.1]{.C59 .V212} | [0.19]{.C59 .V213} | [4.0]{.C59 .V214} | [0.19]{.C59 .V215} |
+| Rock area | [0.45]{.C59 .V216} | <0.001 | [0.18]{.C59 .V217} | <0.001 |
+| Spore-reporting share | [3.8]{.C59 .V218} | <0.001 | [1.5]{.C59 .V219} | [0.003]{.C59 .V220} |
+| Rock × spore share | [0.14]{.C59 .V221} | <0.001 | [0.06]{.C59 .V222} | <0.001 |
+| Searching × spore share | [3.9]{.C59 .V223} | <0.001 | [1.5]{.C59 .V224} | [0.003]{.C59 .V225} |
+<!-- /table:placement -->
+**Table S16.** Expected finds dated wholly within the Gorstian to Pridoli (419.62–426.7 Ma) if finding
+followed each measure, against at least 13 of 48 finds, or 6 of 19 region–stage units, observed there;
+one-sided binomial tails, descriptive benchmarks after the interval was chosen from the observed ages[]{.C59}.
+
+**How fast finding could change after the oldest find.** The same minimum counts bound the mean
+finding rate over the late-Silurian interval after *A* (`studies/f3/models/loop3/switch_reading.py`). The one-sided 95%
+Clopper–Pearson lower bound on the Gorstian–Pridoli share, divided by the share a level rate gives, puts
+the rate there at no less than [0.79]{.C60} of the later-window mean with 48 finds and [0.69]{.C60} with 19
+region–stage units. For an exponential later history, rate proportional to $e^{gu}$ with *u* Myr after
+*A*, the largest *g* with at least the observed count having probability 0.05 gives a rise of at most
+[1.76]{.C60}-fold across the later window with 48 finds and [2.37]{.C60}-fold with 19. From the Ludfordian
+base, set after the ages were seen, the 48-find count rejects a level rate at that benchmark: within the exponential family, the largest
+compatible ratio of the rate at the cutoff to that at *A* is [0.90]{.C60}, a fall of at least about 10%, while the region–stage count allows a rise of [1.28]{.C60}-fold. The
+13 finds come from six regions: Baltica, South America, Kazakhstania, Laurentia, South China and
+peri-Gondwanan Europe. With the early-rise limits of S5.9, a straight-line rise from zero ending at *A*, one simple
+history among many, fits only if it lasts at most $2K$, [4.28]{.C60} Myr with 48 finds to [14.69]{.C60} Myr with 15. Over the
+same stages, North American non-marine column area is zero in the Gorstian and Ludfordian, about
+[7074]{.C60} km² in the Pridoli and [40161]{.C60} km² in the Lochkovian, and the trilete-reporting share
+runs [0.183]{.C60}, [0.191]{.C60} and [0.194]{.C60} from the Gorstian to the Pridoli and [0.502]{.C60} in the
+Lochkovian. These bounds are post hoc and descriptive, with the conditions of the placement test.
 
 ## S6. From specimens to nodes
 

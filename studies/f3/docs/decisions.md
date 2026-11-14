@@ -5,6 +5,39 @@ Programme and cross-study decisions are in `docs/decisions.md`. Entries before 1
 written before the study-first move and name pre-move paths (`models/f3/`, `data/units/`,
 `manuscript/`, `docs/audits/`); `studies/f3/PATHS.tsv` maps each to its current location.
 
+## 2026-11-14: outside measures read firmly; the switch reading (C60) and its interpretation (Barry with Fable; Claude)
+
+Fable's issue-2 follow-up, at 6978d4a, relayed by Barry, who wrote to Fable: "Yes, agreed, your
+cautions included. As you say, a narrower but more interesting claim ... Go ahead and write the prompt."
+
+- **Firm reading.** A measure that fails the later-find check gives little reason to trust its contrast
+  before the oldest find. Results (g) now says so in plain terms; the supporting numbers moved to
+  supplement S5.10 (Table S16). C59's claim is restated and returns to provisional for Codex's check;
+  its numbers are unchanged. Figure 3*b* drops the rock x spores line and marks rock and spores as
+  failing the check and searching as passing it.
+- **Switch reading (C60, provisional, post hoc).** Computed in `studies/f3/models/loop3/switch_reading.py`.
+  The 13 late-Silurian finds exclude the oldest find, whose two Australian units have ranges reaching
+  the Emsian, so the trap that a record starts at its first find does not enter the count. The
+  Gorstian-Pridoli rate is at least 0.79 of the later mean (0.69 by region and stage), and an
+  exponential rise across the later window is at most 1.76-fold (2.37). With C57, the simple rises that
+  fit older ancestors climb steeply to the later level near A (a straight line within 4.3-14.7 Myr; an
+  exponential doubling every 1.5-5.8 Myr or faster). Sol recomputed every number independently and
+  failed one sub-claim: "every compatible history switches abruptly" does not follow, because the
+  durations hold only for the shapes examined and the counts give a late-Silurian average, not the rate
+  immediately after A. Repaired: Fable's reading survives as a statement about the simple histories and
+  the late-Silurian average, with the switch itself labelled as interpretation.
+- **Interpretation paragraph** in the Discussion, labelled as such: Barry's trigger idea ("Maybe one or
+  more key evolutionary innovations was enough of a trigger to cause an explosive switch (in Myr
+  time-scales) from nowhere to everywhere that could be populated without further evolutionary
+  innovations."), the 1%-a-year doubling illustration, the habitat limit, the fork on the trigger, and
+  the Cooksonia cautions. The Abstract and Conclusion now state the result firmly.
+- Barry on length (same chat): "we can do another trim once we've settled all the arguments and
+  niggles. No point obsessing too much about the length at this time."
+
+**Structural review (Q1):** the later record now constrains the shape of finding on both sides of the
+oldest find: steep before it, nearly level after. That narrows Q1 to two routes, an early switch or a
+delay, and moves the trigger question to the planned trait study (`docs/innovation-scope.md`).
+
 ## 2026-11-14: C59 independently checked and supported (Codex)
 
 Two independent raw-input routes confirm the combined integrals and all 48 case verdicts, all 255

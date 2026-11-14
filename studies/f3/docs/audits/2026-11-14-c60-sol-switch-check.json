@@ -1,0 +1,151 @@
+{
+  "items": [
+    {
+      "location": "switch",
+      "subject": "(i) Finding near the later rate after the start",
+      "verdict": "flag",
+      "finding": "Survives as an interval-average statement: at least 13 finds lie in the 7.08 Myr Gorstian–Pridoli window, against 10.2269 expected at a level rate. It does not establish the rate immediately after A. Nine finds have only Pridoli ages; the other four have Ludfordian–Pridoli ages.",
+      "suggested_fix": "Say 'The late-Silurian interval averaged near the later finding rate.' Define A as the oldest possible age allowed by the reported ranges, rather than a dated first appearance."
+    },
+    {
+      "location": "switch",
+      "subject": "(ii) Histories continuing to rise",
+      "verdict": "ok",
+      "finding": "Survives for the specified histories. C49's finite-sample shape test rejects decline10 at 48 finds (p≈0.00000342) and decline25 (p≈0.03522). Decline25 has a non-rejection allocation with 50 possible finds (p≈0.06713). These results do not exclude every history that rises later.",
+      "suggested_fix": "Retain the named histories and count qualification; avoid generalising to all continuing rises."
+    },
+    {
+      "location": "switch",
+      "subject": "(iii) Rock and spore measures rise later",
+      "verdict": "ok",
+      "finding": "Survives at stage resolution. Gorstian/Ludfordian/Pridoli rock areas are 0/0/7074 km², then 40161 km² in the Lochkovian. Spore-reporting shares are 0.183/0.191/0.194, then 0.502. These describe regional rock availability and reporting, rather than measured vascular-plant finding rates.",
+      "suggested_fix": "Retain 'low through the late Silurian, rising in the Lochkovian'; avoid implying precisely dated changes or complete constancy before them."
+    },
+    {
+      "location": "switch",
+      "subject": "(iv) Every compatible history switches abruptly near A",
+      "verdict": "fail",
+      "finding": "The universal claim does not follow. C57 constrains the earlier rate integral under a later plateau; C60 constrains an interval average and one exponential family. The 4.3–14.7 Myr durations apply specifically to straight-line rises ending at A. C57 itself permits an exponential history extending from 452 Ma to A over 25.3 Myr with 15 finds. Arbitrary later histories need not remain nearly level. Targeted searching, age uncertainty and selection of A also prevent interpreting the contrast as a demonstrated biological switch.",
+      "suggested_fix": "Present a switch as an interpretation of the simple histories examined. Remove 'every history' and the general duration bound from C60 and the manuscript."
+    },
+    {
+      "location": "switch",
+      "subject": "Clopper–Pearson lower share: 13/48",
+      "verdict": "ok",
+      "finding": "Independently recomputed one-sided 95% lower bound: 0.168250659523, matching 0.1683. Used a separate Decimal binomial recurrence and Newton inversion; did not execute switch_reading.py.",
+      "suggested_fix": "None numerically. The 95% coverage is nominal for a fixed interval and independent draws, without calibration for interval selection."
+    },
+    {
+      "location": "switch",
+      "subject": "Clopper–Pearson lower share: 6/19",
+      "verdict": "ok",
+      "finding": "Independently recomputed one-sided 95% lower bound: 0.147469565559, matching 0.1475.",
+      "suggested_fix": "None numerically. Retain regional-cell independence as a counting scenario."
+    },
+    {
+      "location": "switch",
+      "subject": "Least relative rate: 13/48",
+      "verdict": "ok",
+      "finding": "The level share is 7.08/33.23 = 0.213060487511. Dividing the lower share by it gives 0.789684945754, matching 0.790.",
+      "suggested_fix": "Describe this as the interval-average rate relative to the whole later-window mean."
+    },
+    {
+      "location": "switch",
+      "subject": "Least relative rate: 6/19",
+      "verdict": "ok",
+      "finding": "The lower share divided by the same level share gives 0.692148822533, matching 0.692.",
+      "suggested_fix": "Describe this as an interval-average bound."
+    },
+    {
+      "location": "switch",
+      "subject": "Largest exponential rise factor: 48 finds",
+      "verdict": "ok",
+      "finding": "Independent numerical integration and root solving give a cutoff-to-A rate factor of 1.764065287610 at the 0.05 benchmark, matching 1.764.",
+      "suggested_fix": "Retain the restriction to the exponential later-history family and the post hoc qualification."
+    },
+    {
+      "location": "switch",
+      "subject": "Largest exponential rise factor: 19 units",
+      "verdict": "ok",
+      "finding": "Independent numerical integration and root solving give 2.364903478780, matching 2.365.",
+      "suggested_fix": "Do not translate this family-specific bound into a requirement that every later history stays level."
+    },
+    {
+      "location": "switch",
+      "subject": "Overlap with oldest-find units",
+      "verdict": "ok",
+      "finding": "Confirmed zero overlap between the 13 guaranteed late-Silurian units and the two Australian units defining A. Reconstructed 48 eligible locality-age units and 19 canonical region–midpoint-stage units, including six guaranteed late-Silurian cells. The possible late-Silurian count is 13–16. Because the Australian ages span 426.7–393.47 Ma, one of the 13 could nevertheless be the actual oldest fossil.",
+      "suggested_fix": "Say 'none defines the oldest possible boundary A', rather than asserting that none can be the actual oldest find."
+    },
+    {
+      "location": "abstract",
+      "subject": "main.md:18–20",
+      "verdict": "flag",
+      "finding": "Plain language, but 'soon after the oldest find' turns an interval average into a precisely timed result. 'Neither tracks finding' also exceeds the particular proportional histories tested.",
+      "suggested_fix": "Suggested wording: 'Late-Silurian finds suggest that finding was already near its later average, while the rock and spore measures increased later and failed to match the later pattern of finds.'"
+    },
+    {
+      "location": "results_g",
+      "subject": "main.md:299–313",
+      "verdict": "ok",
+      "finding": "The ratios, expected counts and conditional proportional reading match C59 and the placement output. The conclusion that a failed later-record comparison gives little support to transferring the earlier contrast is defensible.",
+      "suggested_fix": "For precision, replace searching 'passes' with 'remains compatible with this allocation'; its non-rejection does not validate the measure."
+    },
+    {
+      "location": "results_h",
+      "subject": "main.md:315–325",
+      "verdict": "fail",
+      "finding": "The numbers reproduce, but lines 320–324 promote model-specific results into a general history: a single climb near A followed by a nearly level rate. The counts establish an interval average; C57's duration bound belongs to the stated straight-line example. 'None ... the oldest' also needs the operational A qualification.",
+      "suggested_fix": "Separate the verified interval-average and exponential-family results from the switch interpretation. Introduce the duration figures explicitly as a straight-line example ending at A."
+    },
+    {
+      "location": "discussion",
+      "subject": "main.md:353–367",
+      "verdict": "flag",
+      "finding": "The proposed processes and fossil examples are plausible. 'Almost none' overstates the spore prediction of 3.8 against at least 13; rock and the product predict much closer to zero. 'The one test the record allows' overlooks the other shape tests. The final sentence again needs interval-average wording.",
+      "suggested_fix": "Use 'far fewer', 'this later-record check', and 'the late-Silurian average finding rate'."
+    },
+    {
+      "location": "interpretation",
+      "subject": "main.md:369–389",
+      "verdict": "flag",
+      "finding": "Clearly labelled as interpretation and explicitly leaves the inherited-trigger versus later/environmental-trigger fork open. The cited sources plausibly support heterogeneous Cooksonia, transported fragments, in-situ triletes and earlier dispersed triletes: [Kenrick et al.](https://pmc.ncbi.nlm.nih.gov/articles/PMC3248713/), [Edwards and Rogerson](https://orca.cardiff.ac.uk/id/eprint/10902/1/Edwards%201979.pdf), Libertín's held text, and [Hooper et al.](https://www.nature.com/articles/s41477-026-02432-3). However, population doubling does not establish geographical spread or show that any slow change in finding must be paced by evolution or environment; finding also includes preservation and searching.",
+      "suggested_fix": "Replace the categorical pacing statement with 'Such slow changes in finding would require controls beyond population multiplication alone.' Consider 'a widespread early form' instead of the unquantified 'commonest'."
+    },
+    {
+      "location": "conditions",
+      "subject": "main.md:438–443",
+      "verdict": "fail",
+      "finding": "Selection, coarse ages, independence and targeted searching are appropriately disclosed. The closing assertion nevertheless presents about 15 Myr as a general abruptness bound, which the evidence does not provide.",
+      "suggested_fix": "Say 'The straight-line example spans at most a few million years to about 15, depending on the count; these analyses do not bound the duration of every possible finding history.'"
+    },
+    {
+      "location": "conclusion",
+      "subject": "main.md:474–479",
+      "verdict": "fail",
+      "finding": "'Whatever kept its early fossils scarce ended within...' is an unsupported universal duration claim. 'Almost no fossils' also overstates the spore measure's prediction. The prose is accessible, but strengthens the evidence materially.",
+      "suggested_fix": "Use 'far fewer late-Silurian fossils'. Replace the universal ending with: 'Late-Silurian finds suggest that finding was already near its later average across six regions. This supports a rapid-change interpretation within the simple histories examined, while leaving the cause unresolved.'"
+    },
+    {
+      "location": "supplement_s510",
+      "subject": "supplement.md:944–1013",
+      "verdict": "flag",
+      "finding": "The numerical statements match C59/C60, and post hoc status and model restrictions are disclosed. Unlike the main text, the straight-line duration statement is correctly conditional. 'Rate just after the oldest find' still overstates temporal resolution.",
+      "suggested_fix": "Replace it with 'mean rate over the late-Silurian interval after A'. Clarify that the excluded oldest-find units are those defining A."
+    },
+    {
+      "location": "figure_caption",
+      "subject": "figures.md:5, figure 3b",
+      "verdict": "flag",
+      "finding": "The assumptions, ratios and post hoc status are faithful. 'Almost none' is too strong for the spore measure, and 'searching passes' can suggest validation.",
+      "suggested_fix": "Use 'would predict far fewer late-Silurian finds than observed' and 'searching remains compatible with this allocation'."
+    },
+    {
+      "location": "review",
+      "subject": "Completion",
+      "verdict": "ok",
+      "finding": "No files edited. Numerical checks pass; the general switch requirement needs qualification. Findings are based on the current repository evidence.",
+      "suggested_fix": "Next: Claude — revise the general switch claims while preserving the labelled interpretation and unresolved fork.\n\n"
+    }
+  ]
+}

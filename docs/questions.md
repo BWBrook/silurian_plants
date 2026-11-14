@@ -9,6 +9,13 @@ The programme's working list of provisional questions: what each needs, which ga
 
 The register is updated at each loop's close. Started 2026-10-28 by Claude Opus 5.5 from Barry's programme principles; questions are added or reworded by either.
 
+**Switch reading, 14 November (Q1):** C60 (provisional, post hoc): finding was at least about 0.8 of its
+later average over the late Silurian and, among exponential histories, rose at most about 1.8-fold over
+the next 33 Myr; with C57, the simple rises fitting an older ancestor climb steeply to that level near
+the oldest find. Rock and spore measures fail the later-find check, so Q1's
+routes narrow to an early switch or a delay before recognisable bodies; whether the trigger preceded
+the crown split is open and belongs to the trait study (`docs/innovation-scope.md`).
+
 **Combined outside measure, 14 November (Q1):** C59 (provisional) multiplies North American
 non-marine rock area by the trilete-reporting share, post hoc. At finding proportional to the product,
 ancestors at 444-452 Ma fit every count (1.15-1.23 expected early finds at 48 against 3.09), but the

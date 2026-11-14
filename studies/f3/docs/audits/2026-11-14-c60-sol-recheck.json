@@ -1,0 +1,70 @@
+{
+  "items": [
+    {
+      "location": "studies/f3/manuscript/text/main.md:18–20 — Abstract",
+      "verdict": "ok",
+      "finding": "Resolved. The timing statement now concerns the late-Silurian average, rather than the rate immediately after the oldest find. The comparison describes the observed timing mismatch without asserting a universal switch.",
+      "suggested_fix": "None."
+    },
+    {
+      "location": "studies/f3/manuscript/text/main.md:310–313 — Results (g), last sentence",
+      "verdict": "ok",
+      "finding": "Resolved. 'Compatible' replaces language implying that searching was validated by passing a test. The conclusion remains appropriately about support for transferring the earlier contrast.",
+      "suggested_fix": "For maximum precision, say 'compatible with the Gorstian–Pridoli allocation' rather than 'compatible with the later finds'."
+    },
+    {
+      "location": "studies/f3/manuscript/text/main.md:315–326 — Results (h)",
+      "verdict": "ok",
+      "finding": "Resolved. The rate bound is explicitly an interval average, the later rise bound is restricted to exponential histories, and the duration examples concern specified simple rises. The excluded units are correctly identified as those setting A. The universal requirement has gone.",
+      "suggested_fix": "None."
+    },
+    {
+      "location": "studies/f3/manuscript/text/main.md:354–368 — Discussion paragraph ending 'in six regions.'",
+      "verdict": "flag",
+      "finding": "The earlier flags are resolved: 'far fewer' replaces 'almost none', 'this later-record check' replaces the exclusive test claim, and the rate is an average. One ambiguity remains: 'near its later average, in six regions' can imply that the rate comparison was established separately in each region; the analysis pools finds from six regions.",
+      "suggested_fix": "End with: 'the pooled late-Silurian finds instead show finding already near its later average. Those finds come from six regions.'"
+    },
+    {
+      "location": "studies/f3/manuscript/text/main.md:370–390 — Interpretation paragraph",
+      "verdict": "flag",
+      "finding": "Partly resolved. The pacing sentence now includes preservation and searching, and 'widespread early form' resolves the unsupported abundance ranking. However, 'Population growth would make such a spread effectively instantaneous' still treats population multiplication as sufficient to establish geographical spread. Doubling time alone does not establish dispersal or habitat connectivity.",
+      "suggested_fix": "Replace that sentence with 'Population multiplication alone could be rapid on these timescales, although geographical spread would also depend on dispersal and habitat connectivity.'"
+    },
+    {
+      "location": "studies/f3/manuscript/text/main.md:439–444 — Conditions, switch reading",
+      "verdict": "ok",
+      "finding": "Resolved. The duration statement now belongs explicitly to the simple histories examined, with the numerical duration attached to the straight-line rise. It no longer supplies a general abruptness bound.",
+      "suggested_fix": "None."
+    },
+    {
+      "location": "studies/f3/manuscript/text/main.md:475–480 — Conclusion",
+      "verdict": "flag",
+      "finding": "The earlier failures are resolved: 'far fewer' is proportionate, and steep change is restricted to the simple histories, with its cause left open. As in the Discussion, 'near their later average rate, in six regions' could imply six independently demonstrated regional rate patterns.",
+      "suggested_fix": "Separate the pooled rate result from geographical distribution: 'The pooled late-Silurian finds instead indicate finding near its later average rate; those finds come from six regions.'"
+    },
+    {
+      "location": "studies/f3/manuscript/text/supplement.md:944–1013 — S5.10",
+      "verdict": "flag",
+      "finding": "The earlier flags are resolved: the mean-rate interval is explicit, the excluded units set A, and the straight-line duration is conditional. A remaining overstatement is 'calls for a slight fall (0.90-fold)': 0.90 is the largest allowed endpoint ratio within the exponential family at this benchmark, not an estimate establishing a slight fall.",
+      "suggested_fix": "Use 'within the exponential family, the largest endpoint ratio compatible with this benchmark is 0.90, corresponding to a fall of at least about 10%'."
+    },
+    {
+      "location": "studies/f3/manuscript/text/figures.md:5 — Figure 3 caption",
+      "verdict": "ok",
+      "finding": "Resolved. 'Far fewer' accurately covers the spore prediction, and 'remains compatible' avoids presenting non-rejection as validation.",
+      "suggested_fix": "Optionally specify 'compatible with the Gorstian–Pridoli allocation' to identify the particular check."
+    },
+    {
+      "location": "studies/f3/manuscript/claims.csv:60 — C59",
+      "verdict": "ok",
+      "finding": "Resolved. Compatibility is tied to the guaranteed minimum allocation and fixed-window benchmark; the limitations explicitly distinguish non-rejection from validation and disclose the alternative split. No new overstatement identified.",
+      "suggested_fix": "None."
+    },
+    {
+      "location": "studies/f3/manuscript/claims.csv:61 — C60",
+      "verdict": "ok",
+      "finding": "Resolved. The universal switch claim has been replaced by statements about interval averages and specified straight-line and exponential histories. The limitations explicitly exclude a bound on every possible history and distinguish A-setting units from the actual oldest fossil. This is a wording re-check; numerical calculations were not rerun.",
+      "suggested_fix": "Next: Claude — qualify the remaining spread and exponential-bound wording, and separate pooled rates from regional distribution."
+    }
+  ]
+}
