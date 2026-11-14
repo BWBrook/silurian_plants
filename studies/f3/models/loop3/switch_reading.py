@@ -72,7 +72,7 @@ def main():
             p_lo = bisect(lambda p: tail(n, k, p) - 0.05, 1e-9, k / n)
             g_max = bisect(lambda g: tail(n, k, share_exp(lo, hi, g)) - 0.05, -1.0, 1.0)
             out.append([name, f"{lo:g}-{hi:g}", counting, n, k, f"{level:.4f}", f"{p_lo:.4f}", f"{p_lo / level:.3f}",
-                        f"{tail(n, k, level):.4f}", f"{math.exp(g_max * L):.3f}", len(regions), ";".join(regions)])
+                        f"{tail(n, k, level):.4f}", f"{math.exp(g_max * L):.8f}", len(regions), ";".join(regions)])
     with open(OUT / "switch_reading.csv", "w", newline="") as f:
         w = csv.writer(f, lineterminator="\n")
         w.writerow(["interval", "interval_ma", "counting", "n", "observed_min", "level_share", "share_lower95",
