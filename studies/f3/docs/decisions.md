@@ -5,6 +5,28 @@ Programme and cross-study decisions are in `docs/decisions.md`. Entries before 1
 written before the study-first move and name pre-move paths (`models/f3/`, `data/units/`,
 `manuscript/`, `docs/audits/`); `studies/f3/PATHS.tsv` maps each to its current location.
 
+## 2026-11-14: C59 independently checked and supported (Codex)
+
+Two independent raw-input routes confirm the combined integrals and all 48 case verdicts, all 255
+curve classifications, and the 32 later-placement rows. The unit reconstruction confirms 48 and 19
+eligible units with 13 and six guaranteed late-Silurian finds. Five regenerated tables are byte-identical.
+C59 is supported, with no numerical output changed. The plain Abstract and Conclusion are retained.
+
+The review distinguishes a pointwise product from multiplying two window-mean ratios. The latter
+is a different assumed contrast, rather than the same time-varying proportional history. It also
+qualifies the placement tails as retrospective fixed-window benchmarks: A and both splits were chosen
+from observed age supports, and regional-cell independence remains a scenario. The stage-permutation
+comparison assumes exchangeable labels and ignores temporal dependence. Keeping searching out of the
+rock product avoids possible shared availability; it is a modelling rationale, not a proven causal
+decomposition. Methods, Conditions, estimands and the ledger now state those limits; the quoted C59
+numbers bind to their specific cases. Both independent checks accept the repairs.
+
+**Structural review (Q1):** computing the combination and checking its later allocation is more
+informative than leaving the product untested. It exposes the difference between matching an absence
+and matching the observed record, while keeping proxy transfer separate from actual rate estimation.
+The structure serves the next investigation; no question changes status. The article returns to Barry,
+with companion products still awaiting the agreed later pass. Audit: `docs/audits/2026-11-14-c59-review.md`.
+
 ## 2026-11-14: the combined rock and spore measure is computed and tested (Barry with Fable; Claude)
 
 Fable 5.2's issue 2, relayed by Barry (chat with Fable, 14 November 2026: "Yes, I thought that was a

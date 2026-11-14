@@ -9,15 +9,15 @@ partly through differing fossil maxima. We examined three: 515.5 million years a
 qualitative argument, and 459.1 Ma for living land plants; 431.2 Ma for living vascular plants. No
 three-rayed (trilete) spores are reported in Ordovician Libyan borehole samples[]{.C01}, most from stages
 with such spores elsewhere[]{.C45}[]{.C54}: absence can be local. For vascular plants, the rule of three
-applies: if fossils turn up at a steady rate after the oldest one, the silence before it fits any
-earlier history expected to yield about three finds or fewer at that rate[]{.C58}. The fewer finds that are
+applies: if fossils turn up at a steady rate after the oldest, the silence before it fits any
+history expected to yield about three finds or fewer at that rate[]{.C58}. The fewer finds that are
 independent discoveries, the longer three take; at a steady rate the 95% limit on the record's
 start is [428.8]{.C27 .V003} Ma if all [48]{.C25} are, near 431.2 Ma if half are. Ancestors at
 444–452 Ma fit if early fossils were found [2.4]{.C48 .V056}–[12]{.C48 .V055} times less often,
 depending on that count, if finding rose fast enough, or if recognisable bodies appeared later.
 Finding that followed North American non-marine rock area times the share of studies reporting trilete
 spores would allow those ancestors but leave almost no fossils in the late Silurian, where at least
-[13]{.C59} lie.
+[13]{.C59 .V184} lie.
 
 **Keywords:** molecular clock; fossil calibration; land plants; vascular plants; stratigraphic
 confidence interval; Ordovician–Silurian
@@ -188,8 +188,14 @@ finding-rate requirement, so the two ratios can be compared in size. After seein
 we also multiplied the rock and spore measures stage by stage, as a further
 guide without confidence level, and asked whether the later finds lie where each measure is large: a
 measure that finding followed stage by stage would put most later finds where it is high. We kept
-searching out of the product, because collections are made in rock and the product would count rock
-twice, and multiplied it with the spore measure instead as a global alternative.
+searching out of the product, because collections are made in rock and the product could count rock
+availability twice, and multiplied it with the spore measure instead as a global alternative.
+For finding proportional to a combined measure, its integrals $I_E$ over [$A,t$] and $I_L$ over [$c,A$]
+give a no-early-find probability $[I_L/(I_L+I_E)]^n$ and an expected early count $nI_E/I_L$ at the
+fitted later intensity. Multiplying the two separate ratios instead gives a different assumed contrast
+between mean finding rates. For later placement, we compare the minimum count whose whole age range
+lies within an interval with a binomial distribution whose event probability is that interval's share
+of the measure's later-window integral.
 
 ## Results
 
@@ -304,28 +310,27 @@ if body-fossil finding were proportional to each measure in both windows, about
 shows no decline.
 
 Multiplying the two measures, a combination we chose after seeing both, brings early finding within the
-rule. Taken stage by stage, their product is [21.7]{.C59}–[29.8]{.C59} times lower before the oldest find
-than after it for ancestors at 444–452 Ma, leaving [1.15]{.C59}–[1.23]{.C59} expected early finds with
-all 48 finds independent, or [1.48]{.C59}–[1.61]{.C59} if the two ratios are multiplied directly; every
-count fits. The global searching measure multiplied by the spore share leaves [3.6]{.C59}–[4.1]{.C59}
-expected early finds with 48 finds and [1.8]{.C59}–[2.0]{.C59} with 24. The case for multiplying is that
+rule. Taken stage by stage, their product is [21.7]{.C59 .V185}–[29.8]{.C59 .V186} times lower before the oldest find
+than after it for ancestors at 444–452 Ma, leaving [1.15]{.C59 .V187}–[1.23]{.C59 .V188} expected early finds with
+all 48 finds independent, or [1.48]{.C59 .V189}–[1.61]{.C59 .V190} if the two ratios are multiplied directly; every
+count fits. The global searching measure multiplied by the spore share leaves [3.6]{.C59 .V191}–[4.1]{.C59 .V192}
+expected early finds with 48 finds and [1.8]{.C59 .V193}–[2.0]{.C59 .V194} with 24. The case for multiplying is that
 rock stands for where bodies could be preserved and collected, the spore share for how common trilete
 producers were, and a find needs both. The case against is that the two may share a cause and count one
 effect twice; the spore share counts studies, and trilete producers include plants outside the crown
 group; and the rock is North American, while the oldest finds come from Australia, Arctic Canada and
-other regions. Across the [13]{.C59} stages from the Katian to the Emsian, the rock and spore series
-have a weak rank correlation (Spearman $\rho$ = [0.30]{.C59}, permutation *p* = [0.31]{.C59}), within
-the range chance gives;
+other regions. Across the [13]{.C59 .V195} stages from the Katian to the Emsian, the rock and spore series
+have a weak rank correlation (Spearman $\rho$ = [0.30]{.C59 .V196}, permutation *p* = [0.31]{.C59 .V197});
 both are high in the Early Devonian, which makes the stage-by-stage product larger than the product of
 the two ratios. So few stages cannot separate a shared cause from coincident trends.
 
-The later window tests the proportional reading directly. Of the 48 finds, [13]{.C59} date wholly to the
-Pridoli or the Ludfordian–Pridoli. Finding proportional to the rock measure would put [0.45]{.C59} finds
-in the Gorstian–Pridoli, the spore share [3.8]{.C59} and their product [0.14]{.C59}, each with one-sided
-binomial *p* below [0.003]{.C59}; counting by region and stage, or starting the interval at the
-Ludfordian, gives the same result. A level rate puts [10.2]{.C59} finds there and searching
-[10.1]{.C59}, both compatible with the 13 that certainly lie there, though up to 16 may; from the Ludfordian base each puts about [7.8]{.C59} (*p* =
-[0.04]{.C59}, an interval set after the finds' ages were seen), so the later finds sit somewhat more in
+The later window checks the proportional reading directly. Of the 48 finds, [13]{.C59 .V198} date wholly to the
+Pridoli or the Ludfordian–Pridoli. Finding proportional to the rock measure would put [0.45]{.C59 .V199} finds
+in the Gorstian–Pridoli, the spore share [3.8]{.C59 .V200} and their product [0.14]{.C59 .V201}, each with one-sided
+binomial *p* below [0.003]{.C59 .V202}; counting by region and stage, or starting the interval at the
+Ludfordian, gives the same result. A level rate puts [10.2]{.C59 .V203} finds there and searching
+[10.1]{.C59 .V204}, both compatible with the 13 that certainly lie there, though up to 16 may; from the Ludfordian base each puts about [7.8]{.C59 .V205} (*p* =
+[0.04]{.C59 .V206}, an interval set after the finds' ages were seen), so the later finds sit somewhat more in
 the late Silurian than a level rate predicts. The later record therefore contradicts finding that
 follows the rock or spore measure stage by stage. Using their combined contrast for older ancestors
 needs a separate assumption: that mean finding rates share that contrast between the two windows. A
@@ -370,7 +375,7 @@ palynological studies reporting trilete spores, which changing coverage, study a
 identification can also lower. These differences give the required ratios a scale. Multiplied, they would let even 48 independent
 finds fit ancestors at 444–452 Ma with zero delay, if mean finding rates shared their contrast between
 the windows. Finding that followed them stage by stage would have left almost none of the late-Silurian
-finds, so the record contradicts close tracking and leaves the shared contrast as a separate assumption,
+finds, so the record contradicts proportional tracking and leaves the shared contrast as a separate assumption,
 with no confidence level.
 
 Silvestro et al. [@silvestro2015RevisitingOriginDiversification] modelled genus-level PBDB plant
@@ -412,10 +417,14 @@ check contradicts finding proportional to the rock measure, the spore share or t
 later window; a level rate and searching remain compatible with the Gorstian–Pridoli allocation at the
 minimum count, a result that depends on uncertain ages and the interval chosen. The comparison
 therefore assumes that mean finding rates share each measure's contrast between the windows. Each
-placement check tests one late-Silurian allocation, using the 13 finds (six region-and-stage units)
+placement check compares one late-Silurian allocation, using the 13 finds (six region-and-stage units)
 dated wholly within it, while up to 16 may lie there, independent units and age
 ranges that contain the true ages, and inherits any imbalance in how the inventory sampled Silurian and
-Devonian records. The combined measure was chosen after the single ones were seen, has no confidence
+Devonian records. Both placement intervals and the oldest-age boundary were chosen from the observed
+age ranges, so the binomial tails describe fixed-window discrepancies rather than calibrated rejection
+probabilities after that choice. Treating regional cells as independent draws is another counting
+scenario. The stage-permutation comparison assumes exchangeable labels and leaves temporal dependence
+out of account. The combined measure was chosen after the single ones were seen, has no confidence
 level, and may count a shared cause twice.
 
 Published evidence could narrow these requirements. Records of searched Silurian terrestrial beds, with
@@ -451,7 +460,7 @@ span. North American non-marine rock area multiplied by the share of studies rep
 averaged far less before the oldest find than after it: enough to allow ancestors at 444–452 Ma at all
 four counts tested, even with recognisable bodies appearing with the ancestor, if average finding rates
 were lower by the same factor. Finding that rose and fell with this product through time would have left
-almost no fossils in the late Silurian, where at least [13]{.C59} lie, so this route rests on that
+almost no fossils in the late Silurian, where at least [13]{.C59 .V207} lie, so this route rests on that
 difference in averages alone. For spores, the Libyan basin shows that an absence can be local:
 older land-plant ancestors fit its record if, with equal delivery, their steady trilete supply since
 459.1 Ma stayed below about a tenth of the later supply, with older onsets needing less, or if the

@@ -18,6 +18,15 @@ vascular-plant ancestors through lower early finding need mean finding rates tha
 measure's contrast between the windows without following its stage-to-stage changes. No question
 changes status.
 
+**Combined-measure review, 14 November (Q1):** C59 is independently supported. The rock × spore
+product is low enough before the oldest find to permit the tested older ancestors, but transferring
+that product to finding through time predicts almost no late-Silurian finds where at least 13 lie.
+Using only its contrast between window averages is a separate assumption. The placement tails are
+retrospective allocation benchmarks, and weak stage-rank correlation cannot separate common causes
+from independent effects. This closes the uncomputed-product example, not the question of actual
+early finding rates or globally representative proxies. No question changes status. Review:
+`studies/f3/docs/audits/2026-11-14-c59-review.md`.
+
 **Rule-of-three review, 14 November (Q1):** C58 is independently supported as a re-expression of the
 level-later-rate body-record calculation. Its expected count uses the later rate estimated from the
 same finds; it neither estimates the independent count nor establishes how finding changed. The exact

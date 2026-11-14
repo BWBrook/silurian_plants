@@ -451,6 +451,9 @@ data archived, and the human–AI correspondence record published alongside.
   Claude (Opus 5.5) pre-specified it as a post hoc addendum, computed it with an overlap test and a
   later-find placement test of its own design (`studies/f3/models/loop3/combined_rulers.py`, claim C59),
   added it to figure 3b and rewrote the affected passages; `gpt-6.1-sol` recomputed the values
-  independently, caught a mislabelled interval and checked the meaning twice.
+  independently, caught a mislabelled interval and checked the meaning twice. Codex then integrated
+  two independent raw-input checks of the combined integrals, unit grouping, placement arithmetic
+  and inferential scope, supported C59, and qualified the retrospective allocation and permutation
+  benchmarks. No numerical outputs changed in that review.
 `docs/decisions.md` and each study's decision log record who decided what and when, for the eventual
 statement of AI roles.

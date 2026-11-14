@@ -97,6 +97,21 @@ Codex on 13 November 2026. They do not add a fitted finding-rate or dependence m
   after seeing the record have compatibility only. The exponential infinite-tail limit approaches
   the boundary, while the proxy-scaled 48-find expectations exceed it. The rule does not cover the
   age-shape tests, declining later-rate histories, Libyan spore model or 515.5 Ma argument.
+- **C59:** the combined rock × spore measure is a retrospective scenario, not a fitted finding rate.
+  For a time-varying measure x, integrals I_E over [A,t] and I_L over [c,A] give a conditional
+  no-early-find probability (I_L/(I_L+I_E))^n. The scale E = n I_E/I_L uses the later fitted intensity;
+  no constant later rate is required for this proportional history. Multiplying the two separate
+  ratios instead defines a different assumed contrast between mean finding rates. The combined
+  contrast permits the tested older ancestors in the absence calculation; it does not rescue a
+  proportional history that predicts almost none of the observed late-Silurian finds.
+  Placement expectations and binomial tails are retrospective fixed-window allocation benchmarks:
+  A and both splits were chosen from age supports, so these are not calibrated rejection levels
+  after selection, nor tests conditional on an exact oldest find. Regional-cell independence is
+  another assumed counting scenario. The 13 and six counts are guaranteed minima under containing
+  age supports; non-rejection at those minima does not establish fit. The stage-permutation benchmark
+  assumes exchangeable labels and ignores temporal dependence; weak correlation cannot establish
+  independent causes or justify multiplying proxies. Omitting searching from the rock product is
+  a choice to avoid possible shared rock availability, not an empirical causal decomposition.
 
 **C54 source limit:** use only the primary-source-supported Saudi and Turkish review entries for
 the stage-level comparison with Libya. The British review entries conflict with cited primary
