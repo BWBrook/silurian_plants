@@ -370,24 +370,6 @@ references:
   container-title: Nature Plants
   publisher: Springer Science and Business Media LLC
   DOI: 10.1038/s41477-026-02432-3
-- id: jovanovic1997LookRuleThree
-  citation-key: jovanovic1997LookRuleThree
-  type: article-journal
-  title: A Look at the Rule of Three
-  author:
-  - family: Jovanovic
-    given: B. D.
-  - family: Levy
-    given: P. S.
-  issued:
-    date-parts:
-    - - 1997
-  container-title: The American Statistician
-  volume: '51'
-  issue: '2'
-  page: 137–139
-  publisher: Informa UK Limited
-  DOI: 10.1080/00031305.1997.10473947
 - id: kenrick1997OriginEarlyEvolution
   citation-key: kenrick1997OriginEarlyEvolution
   type: article-journal

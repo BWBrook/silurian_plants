@@ -11,9 +11,9 @@ the author's [McGill reprint](https://jhanley.biostat.mcgill.ca/Reprints/If_Noth
 the exact binomial zero-count boundary and its rule-of-three approximation on p. 1744. C58 converts
 that probability to expected early finding at the estimated later rate; that conversion is derived
 in this study. The local copyrighted source and its hash are recorded in `library/closed.tsv` and
-excluded from Git. Both references' DOIs were checked against Crossref, and Hanley's incomplete
-metadata against the reprint and [PubMed](https://pubmed.ncbi.nlm.nih.gov/6827763/). Jovanovic and
-Levy (1997) was checked at abstract level only; its full-text gap is in `docs/closed-literature.csv`.
+excluded from Git. Its DOI was checked against Crossref, and its incomplete Crossref metadata against the reprint and
+[PubMed](https://pubmed.ncbi.nlm.nih.gov/6827763/). Jovanovic and Levy (1997), read at abstract level
+only, was dropped from the article on 14 November 2026: the 1983 paper, read in full, suffices.
 Independent derivation and table checks: `studies/f3/docs/audits/2026-11-14-c58-independent-maths.md`.
 
 **13 November 2026, Q2/Q5 source assessment.** The C54 check traced six Katian–Hirnantian trilete

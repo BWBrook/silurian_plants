@@ -5,6 +5,29 @@ Programme and cross-study decisions are in `docs/decisions.md`. Entries before 1
 written before the study-first move and name pre-move paths (`models/f3/`, `data/units/`,
 `manuscript/`, `docs/audits/`); `studies/f3/PATHS.tsv` maps each to its current location.
 
+## 2026-11-14: plain-wording repairs after Fable's review of issue 1 (Barry with Fable; Claude)
+
+Fable 5.2 reviewed the rule-of-three revision and judged the substance right and the wording short of
+its one-reading test. Barry (chat, 14 November 2026): "as Fable notes, no need to make another round of
+this. Fix these yourself". Claude made the repairs without a further Codex or Sol round:
+
+- **One phrase for the rule's condition.** "With finding level" and its variants became "if fossils turn
+  up at a steady rate after the oldest find" in the Abstract, Methods (g), Results (d) and (f), the
+  Discussion and the Conclusion.
+- **Abstract (200 words).** Independent finds are glossed as separate discoveries; the delay route keeps
+  its direction and loses its 15–23 Myr figure (still in Results (e)); the outside-measure sentence now
+  states the matching counts (rock 20 or fewer, spore-reporting share 31 or fewer, both from C56 at
+  444 Ma). Fable's suggested "fewer than about 30" holds for the spore share only; rock needs 14–20 or
+  fewer across 444–452 Ma, so the Abstract gives each.
+- **Results (f)** drops its opening sentence, which repeated (d)'s three durations, and points back to
+  (d). Methods (g)'s "Longer delays reduce the reduction" now reads "The longer the delay, the smaller
+  the reduction".
+- **Jovanovic and Levy (1997)** is dropped: it was read at abstract level only, and Hanley and
+  Lippman-Hand (1983), read in full, suffices. Removed from `references/dois.txt` and
+  `docs/closed-literature.csv`; C58's basis updated.
+- **Attribution.** Barry: Codex ran "sol, terra and astra"; how to attribute versions or named models
+  is deferred to the pre-submission pass.
+
 ## 2026-11-14: C58 independently checked and supported (Codex)
 
 Codex accepts the rule-of-three framing after an independent conditional-binomial derivation,

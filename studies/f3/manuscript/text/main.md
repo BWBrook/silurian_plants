@@ -4,20 +4,20 @@
 
 ## Abstract
 
-Molecular clocks date living land plants' ancestor from the Cambrian to the Late Ordovician,
+Molecular clocks date living land plants' ancestor from the Cambrian to Late Ordovician,
 partly through differing fossil maxima. We examined three: 515.5 million years ago (Ma), resting on
 qualitative argument, and 459.1 Ma for living land plants; 431.2 Ma for living vascular plants. No
 three-rayed (trilete) spores are reported in Ordovician Libyan borehole samples[]{.C01}, most from stages
-with such spores elsewhere[]{.C45}[]{.C54}: absence can be local. For vascular
-plants, the rule of three applies: with finding level after the oldest fossil, the
-silence before it fits any earlier history expected to yield about three finds or
-fewer at the later rate[]{.C58}. Three finds take longer when fewer are independent, so at a steady
-rate the 95% limit on the record's start is [428.8]{.C27 .V003} Ma if all [48]{.C25} are, near
-431.2 Ma if about half are. Ancestors at 444–452 Ma fit if early fossils were found
-[2.4]{.C48 .V056}–[12]{.C48 .V055} times less often, by count, if finding rose fast
-enough, or, at a steady rate with all finds independent, if recognisable bodies appeared about [15–23]{.C33} Myr or more later. The
-literature's trilete-reporting share and North American non-marine column area were lower before the oldest
-find, by factors overlapping some requirements for fewer independent finds[]{.C56}.
+with such spores elsewhere[]{.C45}[]{.C54}: absence can be local. For vascular plants, the rule of three
+applies: if fossils turn up at a steady rate after the oldest one, the silence before it fits any
+earlier history expected to yield about three finds or fewer at that rate[]{.C58}. The fewer finds that are
+independent discoveries, the longer three take; at a steady rate the 95% limit on the record's
+start is [428.8]{.C27 .V003} Ma if all [48]{.C25} are, near 431.2 Ma if half are. Ancestors at
+444–452 Ma fit if early fossils were found [2.4]{.C48 .V056}–[12]{.C48 .V055} times less often,
+depending on that count, if finding rose fast enough, or if recognisable bodies appeared later. North
+American non-marine rock area and the published trilete-reporting share were lower before the oldest
+find, by enough for that reduction only if at most [20]{.C56 .V135} and [31]{.C56 .V137} finds,
+respectively, are independent.
 
 **Keywords:** molecular clock; fossil calibration; land plants; vascular plants; stratigraphic
 confidence interval; Ordovician–Silurian
@@ -164,12 +164,13 @@ ranges, including whether the finds straddling the cutoff fall inside the window
 age. For a candidate ancestor age *t* and an assumed delay *d* before the first recognisable bodies, the
 ratio of earlier to later finding rate that puts *t* − *d* where the limit of (*e*) would fall is
 $r=(A-c)(0.05^{-1/n}-1)/(t-d-A)$, defined where $t-d>A$; fossils would then have to be found $1/r$ times
-less often before the oldest find than after it. Longer delays reduce the reduction a given ancestor
-age needs [@marshall2019UsingFossilRecord]. With the later rate level and zero delay, a candidate age *t* fits the oldest find (an oldest find no
+less often before the oldest find than after it. The longer the delay, the smaller the reduction a given
+ancestor age needs [@marshall2019UsingFossilRecord]. If fossils turn up at a steady rate after *A* and recognisable bodies appear with the ancestor (zero
+delay), a candidate age *t* fits the oldest find (an oldest find no
 older than *A* has probability at least 0.05) when the relative finding rate summed over [*A*, *t*] is at most $K=(A-c)(0.05^{-1/n}-1)$. Writing *R* for
 that sum, each of the *n* finds falls before *A* with probability $p=R/(A-c+R)$; at the boundary $R=K$,
 no early find has probability $(1-p)^n=0.05$, so $p\approx3/n$: the rule of three for zero counts
-[@hanley1983IfNothingGoes; @jovanovic1997LookRuleThree]. At the later rate estimated as $n/(A-c)$ finds per Myr,
+[@hanley1983IfNothingGoes]. At the later rate estimated as $n/(A-c)$ finds per Myr,
 *K* corresponds to $np/(1-p)=n(0.05^{-1/n}-1)$ expected finds before the oldest find, which approaches
 $\ln 20\approx3$ as *n* grows. The step is one shape among many; we also report a linear rise from zero at the ancestor and an exponential rise, each reaching
 the later level at *A*. We chose where to put the step and the rises after seeing the data, so these
@@ -226,8 +227,8 @@ samples are weighted by well and rock unit (electronic supplementary material, S
 delivery, lower local supply or producers outside the catchment all fit.
 
 **(d) The silence before the oldest find fits about three expected finds, so its limit depends on how
-many finds are independent.** The calculations that hold the finding rate level after the oldest
-find share one rule. Take that rate, estimated from the count: the absence of older finds fits
+many finds are independent.** Every calculation in which fossils turn up at a steady rate after the
+oldest find shares one rule. Take that rate, estimated from the count: the absence of older finds fits
 any earlier history expected to yield about three finds or fewer at that rate[]{.C58}, from [3.09]{.C58 .V178} with 48 independent finds to
 [3.32]{.C58 .V179} with 15 (Material and methods (*g*)). The count sets how long three finds take at the later
 rate: [2.1]{.C57 .V112} Myr with 48 finds, [5.7]{.C57 .V113} Myr with 19 and [7.3]{.C57 .V114} Myr
@@ -271,11 +272,10 @@ steady finding rate and with all 48 finds independent, the same ancestors fit if
 appeared about [15–23]{.C33} Myr or more after them, leaving at most the [2.1]{.C57 .V112} Myr that three
 finds take; fewer independent finds shorten the delay needed. Smaller reductions combine with shorter delays (figure 3*b*).
 
-**(f) The record limits early finding to about three finds in total, whatever its shape.** With finding
-level after *A* and zero delay, any earlier history fits the oldest find when it would have yielded about
-three finds or fewer: the equivalent of [2.1]{.C57 .V112} Myr of finding at the later rate with 48 finds, [5.7]{.C57 .V113} Myr with 19 and
-[7.3]{.C57 .V114} Myr with 15. A straight-line rise from zero at the ancestor stays within that total only for
-ancestors up to [431.0]{.C57 .V115}, [438.1]{.C57 .V116} and [441.4]{.C57 .V117} Ma. An exponential rise fits ancestors at
+**(f) The record limits early finding to about three finds in total, whatever its shape.** With fossils
+turning up at a steady rate after *A* and zero delay, a straight-line rise from zero at the ancestor stays
+within the three-find total of (*d*) only for ancestors up to [431.0]{.C57 .V115}, [438.1]{.C57 .V116} and
+[441.4]{.C57 .V117} Ma with 48, 19 and 15 finds. An exponential rise fits ancestors at
 444–452 Ma if finds doubled about every [1.5]{.C57 .V118} Myr or faster with 48 finds, every [4.0]{.C57 .V119}–[4.2]{.C57 .V120}
 Myr with 19 and every [5.3]{.C57 .V121}–[5.8]{.C57 .V122} Myr with 15. As candidate ages grow older, the permitted
 doubling time approaches a count-specific threshold, $K\ln 2$, about [1.48]{.C57 .V123}, [3.93]{.C57 .V124} and
@@ -318,7 +318,8 @@ confidence limit on the start of the recognisable crown vascular-plant record li
 [429]{.C27 .V018} and [434.05]{.C30} Ma, depending on how many finds are independent, and passes the
 431.2 Ma maximum at about half the main count. For each way of counting, a lower earlier finding rate, later recognisable
 bodies or both fit ancestors older than these limits; the models give the size of each requirement in
-aggregate. With a level later rate and zero delay, the record allows about three finds' worth of earlier
+aggregate. If fossils turned up at a steady rate after the oldest find and recognisable bodies appeared with the
+ancestor, the record allows about three finds' worth of earlier
 finding, so it limits the total of early finding, and every history with that total fits equally. A
 fast enough exponential rise keeps that total below three for an ancestor of any age, so an older limit
 from the body record needs an assumption that restricts the early finding history.
@@ -397,12 +398,13 @@ molecular data, then comparing its effective marginal ages with the posteriors, 
 data add [@brown2017PastSureTense].
 
 For the oldest vascular-plant body fossils, the rule of three makes the finding-rate assumption
-concrete: with finding level after the oldest find, the silence before it fits about three expected
-finds, counted at the later rate.
+concrete: if fossils turned up at a steady rate after the oldest find, the silence before it fits about
+three expected finds at that rate.
 An older ancestor needs early finding low enough, or recognisable bodies late enough, to keep that
 expected count at about three or fewer, and the number of independent finds sets how many million years three finds
 span. North American non-marine rock area and the share of studies reporting triletes were lower before
-the oldest find by factors overlapping some requirements for fewer independent finds; how they bear on
+the oldest find, by enough for the required reduction only if fewer finds are independent than the main
+count assumes; how they bear on
 body-fossil finding remains untested. For spores, the Libyan basin shows that an absence can be local:
 older land-plant ancestors fit its record if, with equal delivery, their steady trilete supply since
 459.1 Ma stayed below about a tenth of the later supply, with older onsets needing less, or if the
