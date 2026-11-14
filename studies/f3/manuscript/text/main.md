@@ -402,7 +402,7 @@ finds, counted at the later rate.
 An older ancestor needs early finding low enough, or recognisable bodies late enough, to keep that
 expected count at about three or fewer, and the number of independent finds sets how many million years three finds
 span. North American non-marine rock area and the share of studies reporting triletes were lower before
-the oldest find by factors matching some requirements for fewer independent finds; how they bear on
+the oldest find by factors overlapping some requirements for fewer independent finds; how they bear on
 body-fossil finding remains untested. For spores, the Libyan basin shows that an absence can be local:
 older land-plant ancestors fit its record if, with equal delivery, their steady trilete supply since
 459.1 Ma stayed below about a tenth of the later supply, with older onsets needing less, or if the
@@ -432,7 +432,9 @@ Codex (`gpt-6.1-sol` and `gpt-6.1-terra`) curated and checked source data, imple
 statistical methods and reproduction, and revised the manuscript. Earlier Codex work used `gpt-5.6-sol`
 and `gpt-5.6-luna` for source recovery and methodological checks. Claude and Codex reviewed each other's
 work. GPT-6 Pro (OpenAI) supplied independent critiques, which were checked against sources and saved
-outputs before integration. Barry W. Brook originated and guided the programme and contributed scientific
+outputs before integration. Claude Fable 5.2 (Anthropic) advised from 12 November 2026 through
+critiques and prompts relayed by Barry, including the proposal to organise the body-fossil results
+around the rule of three; it made no edits. Barry W. Brook originated and guided the programme and contributed scientific
 decisions; he will review the final manuscript before submission. Task-specific roles, model versions and
 the limits of sessions whose exact variant was unavailable are recorded in `docs/charter.md`,
 `studies/f3/docs/audits/` and `studies/f3/manuscript/reconstruction/`, with adopted decisions in `docs/decisions.md` and `studies/f3/docs/decisions.md`.
