@@ -10,13 +10,13 @@ qualitative argument, and 459.1 Ma for living land plants; 431.2 Ma for living v
 three-rayed (trilete) spores are reported in Ordovician Libyan borehole samples[]{.C01}, most from stages
 with such spores elsewhere[]{.C45}[]{.C54}: absence can be local. For vascular plants, the rule of three
 applies: if fossils turn up at a steady rate after the oldest, the silence before it fits any
-history expected to yield about three finds or fewer at that rate[]{.C58}. The fewer finds that are
-independent discoveries, the longer three take; at a steady rate the 95% limit on the record's
+history expected to yield about three finds or fewer at that rate[]{.C58}. Fewer independent
+discoveries mean three finds take longer; at a steady rate the 95% limit on the record's
 start is [428.8]{.C27 .V003} Ma if all [48]{.C25} are, near 431.2 Ma if half are. Ancestors at
 444–452 Ma fit if early fossils were found [2.4]{.C48 .V056}–[12]{.C48 .V055} times less often,
 depending on that count, if finding rose fast enough, or if recognisable bodies appeared later.
-In the late Silurian, fossils already turned up at near their later average rate[]{.C60}, whereas North
-American land-laid rock and the share of studies reporting trilete spores rose later, so neither matches
+The late-Silurian finding rate averaged at least two-thirds of the later-window mean[]{.C60}, whereas North
+American land-laid rock area and the share of studies reporting trilete spores rose later, so neither matches
 the pattern of finds[]{.C59}.
 
 **Keywords:** molecular clock; fossil calibration; land plants; vascular plants; stratigraphic
@@ -309,18 +309,19 @@ that followed rock area, the spore share or their product would put [0.45]{.C59 
 [3.8]{.C59 .V200} and [0.14]{.C59 .V201} finds in the Gorstian to Pridoli, where at least [13]{.C59 .V198} of
 the 48 lie; a level rate puts [10.2]{.C59 .V203} there and searching [10.1]{.C59 .V204}. A measure that
 fails where the record can test it gives little reason to trust it before the oldest find, where the
-record cannot, and the one measure compatible with the later finds, searching, falls far too little to
-fit older ancestors[]{.C59}.
+record cannot. Searching, the one measure compatible with this minimum-count allocation, falls far too
+little to fit ancestors at 444–452 Ma with zero delay[]{.C59}.
 
-**(h) In the late Silurian, finding was already near its later average.** The late-Silurian finds, none
+**(h) Late-Silurian finds limit how low the average finding rate could be.** The late-Silurian finds, none
 of them among the units that set *A*, put the average finding rate over the Gorstian to Pridoli at no
-less than [0.79]{.C60} of the later average with all 48 finds independent, or [0.69]{.C60} counting by
-region and stage (one-sided 95% bounds). Among exponential histories, finding rose at most about
-[1.8]{.C60}-fold, or [2.4]{.C60}-fold, across the following 33 Myr. The finds come from six regions, from
+less than [0.79]{.C60 .V226} of the whole later-window mean with all 48 finds independent, or [0.69]{.C60 .V227} counting by
+region and stage (one-sided 95% fixed-window benchmarks). Among exponential histories, finding could
+rise at most about [1.8]{.C60 .V228}-fold, or [2.4]{.C60 .V229}-fold, from *A* to the cutoff, a 33 Myr window that
+includes the late Silurian. The finds come from six regions, from
 Laurentia and Baltica to South China and South America. Before the oldest find, (*d*) allows about three
-finds' worth in total, so with zero delay the simple rises that fit older ancestors climb steeply to the
-later level near *A*: a straight-line rise from zero within [4.3]{.C60} Myr with 48 finds and
-[14.7]{.C60} Myr with 15, or an exponential rise doubling about every [1.5]{.C57 .V118}–[5.8]{.C57 .V122} Myr
+finds' worth in total. With zero delay and the steady later rate assumed in (*f*), the tested simple rises climb steeply to the
+later level near *A*: a straight-line rise from zero within [4.3]{.C60 .V230} Myr with 48 finds and
+[14.7]{.C60 .V231} Myr with 15, or an exponential rise doubling about every [1.5]{.C57 .V118}–[5.8]{.C57 .V122} Myr
 or faster (*f*). A delay before recognisable bodies gives the same pattern. Rock area and the spore share
 change elsewhere: both stay low through the late Silurian and rise in the Lochkovian (electronic
 supplementary material, S5.10).
@@ -364,29 +365,30 @@ palynological studies reporting trilete spores, which changing coverage, study a
 identification can also lower. These differences give the required ratios a scale, and multiplied they would fit ancestors at
 444–452 Ma at every count. Finding that followed either measure, or their product, would have left far fewer
 late-Silurian finds than the 13 observed. The measures fail this later-record check, so they give little
-support to an earlier fall in finding; the pooled late-Silurian finds instead show finding already near its
-later average, and those finds come from six regions.
+support to an earlier fall in finding. The pooled late-Silurian finds give the lower rate benchmarks in
+(*h*), and those finds come from six regions.
 
-*Interpretation.* The rest of this paragraph is interpretation beyond the tests. The record looks like a
-switch: one or more evolutionary innovations may have triggered a rapid spread into all the habitat open
-to these plants, with no further innovation needed. Population multiplication alone could be effectively instantaneous on these timescales, although
-geographical spread would also depend on dispersal and connected habitat. Even a population growing by 1% a year doubles in about
-70 years, whereas the record allows rises in finding that double about every 1.5–5.8 Myr or faster for
-ancestors at 444–452 Ma (Results (*f*)), so a rise that slow would need something besides population
-growth to pace it: evolution, environment, preservation or searching. Fast growth fills only the habitat that is open, and a lineage can persist small and rare
-for a long time, so a switch dates the spread, not the lineage. The reading forks on the trigger. If it
-was a feature both living branches inherited, the branches split after it, and their ancestor is little
-older than the first crown fossils. If the trigger came after the split, or was environmental, the
-ancestor can be much older. This paper leaves the fork open; a planned study of which traits the
-earliest fossils combine, and in what order they appear, bears on it. Three cautions apply. *Cooksonia*,
-a widespread early form, is a morphotype that groups simple plants from more than one lineage
+*Interpretation.* The rest of this paragraph is interpretation beyond the tests. One possible reading is a
+switch: one or more evolutionary innovations may have triggered rapid spread into the habitat open
+to these plants, with no further innovation needed. At an assumed net increase of 1% a year, a population
+doubles in about 70 years, far faster than the 1.5–5.8 Myr finding examples in Results (*f*). This is
+an illustration, not an estimate of ancient growth. Slow net population growth, dispersal, habitat,
+evolution, preservation or searching could all pace a rise in finding. If biological spread caused
+the pattern, a switch would date that spread rather than lineage origin; a lineage can persist small
+and rare before habitat opens. If both living branches inherited a shared innovation, it preceded
+their split. Their ancestor would be near the first crown fossils if crown members also spread
+promptly, were recognisable and were found at roughly the later rate. Shared inheritance alone leaves
+the gap open: a later or environmental trigger, or delayed spread or recognisability after an inherited
+trigger, permits a much older ancestor. A planned study of which traits the earliest fossils combine,
+and in what order they appear, bears on this reading. Three cautions apply. Widespread
+*Cooksonia*-like plants, in the broad historical sense, group simple forms from more than one lineage
 [@kenrick2012TimelineTerrestrializationConsequences], so the apparent sameness of early floras partly
-reflects how few features they show. Many early specimens are fragments that drifted into marine or
+reflects how few features they show. Early specimens include fragments preserved in marine or
 near-shore sediments [@edwards1979RecordsFertileRhyniophytina; @libertin2018SporophytesPolysporangiateLand],
-so the habitats the spread filled are inferred. And *Cooksonia*-type sporangia hold trilete spores
+so growth habitats and transport routes are inferred. And *C. barrandei* sporangia hold trilete spores
 [@libertin2018SporophytesPolysporangiateLand], while trilete spores appear tens of millions of years
-earlier [@hooper2026ReconstructingSporeEvolution], so plants with such spores but no known body lived
-long before the switch. A change in preservation, such as the spread of tissues that fossilise well,
+earlier [@hooper2026ReconstructingSporeEvolution], while the relationship of those dispersed-spore
+producers to these bodies remains uncertain. A change in preservation, such as the spread of tissues that fossilise well,
 would look the same in this record.
 
 Silvestro et al. [@silvestro2015RevisitingOriginDiversification] modelled genus-level PBDB plant
@@ -439,8 +441,11 @@ out of account. The combined measure was chosen after the single ones were seen,
 level, and may count a shared cause twice. The switch reading uses the same minimum counts, nine of the
 13 dated only to the Pridoli, and one exponential family for the later history; targeted searching of the oldest
 plant-bearing beds, which collection density does not measure, could raise the late-Silurian count.
-Its bounds are interval averages, and its durations apply to the simple histories examined: the
-straight-line rise spans at most a few million years to about 15, depending on the count. It concerns
+Its rate-share bounds are lower limits on interval averages, not evidence of a plateau, and the
+exponential factor spans *A* to the cutoff, including the late Silurian. Its early-rise durations retain
+a steady later rate and zero delay: the straight-line example spans at most a few million years to
+about 15, depending on the count. The two units setting *A* are absent from the guaranteed late count,
+but that selection remains, and a counted late find could be the actual oldest fossil. The reading concerns
 the finding of recognisable crown bodies, not when plants or the lineage arose.
 
 Published evidence could narrow these requirements. Records of searched Silurian terrestrial beds, with
@@ -475,9 +480,10 @@ expected count at about three or fewer, and the number of independent finds sets
 span. North American land-laid rock area and the share of studies reporting trilete spores fell enough
 before the oldest find to allow older ancestors, but finding that followed them would have left far fewer
 fossils in the late Silurian than the at least [13]{.C59 .V207} found there, so they give little reason
-to trust that fall. The pooled late-Silurian fossils instead show finding near its later average rate, and they come from
-six regions. If the ancestor is older, the simple histories that fit have early finding rise steeply to that
-level near the oldest find, which suggests a rapid change whose cause remains open[]{.C60}. For spores, the Libyan basin shows that an absence can be local:
+to trust that fall. The pooled late-Silurian finds limit how low the interval's average rate could be,
+and come from six regions. With a steady later rate and zero delay, the tested simple rises require
+early finding to climb steeply to that level near the oldest find; a rapid change remains an
+interpretation whose cause is open[]{.C60}. For spores, the Libyan basin shows that an absence can be local:
 older land-plant ancestors fit its record if, with equal delivery, their steady trilete supply since
 459.1 Ma stayed below about a tenth of the later supply, with older onsets needing less, or if the
 producers lived elsewhere or acquired triletes later. Missing fossils thus

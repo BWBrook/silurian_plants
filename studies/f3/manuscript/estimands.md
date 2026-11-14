@@ -112,6 +112,20 @@ Codex on 13 November 2026. They do not add a fitted finding-rate or dependence m
   assumes exchangeable labels and ignores temporal dependence; weak correlation cannot establish
   independent causes or justify multiplying proxies. Omitting searching from the rock product is
   a choice to avoid possible shared rock availability, not an empirical causal decomposition.
+- **C60:** the minimum late-Silurian counts give a one-sided lower benchmark on the interval's
+  average rate relative to the mean over the whole later window [c,A], which includes the late
+  Silurian. The 0.79/0.69 lower ratios support at least about two-thirds of that mean under the
+  48/19-count scenarios; they establish neither equality nor a near-constant plateau. The exponential
+  factor compares the rate at c with that at A, over 33.23 Myr, not a further 33 Myr after the Silurian.
+  Coverage is nominal for fixed windows and iid draws; A and both splits are selected, as for C59.
+  The absence of A-setting units from the 13 guarantees no mechanical overlap, not independence
+  from that selection; a counted late find could be the true oldest fossil. Six represented regions
+  do not supply six independently established rate histories. C57 rise durations require its steady
+  later rate and zero delay and end at A by assumption. Neither arbitrary histories nor a switch's
+  timing, biological cause or lineage age is bounded. Shared inheritance orders an innovation before
+  the crown split without bounding the gap to first fossils. A young-ancestor reading additionally
+  assumes prompt spread, recognisable crown bodies and adequate finding. The 1%-annual-growth example
+  is arithmetic, not an ancient demographic estimate or a lower bound excluding slow net growth.
 
 **C54 source limit:** use only the primary-source-supported Saudi and Turkish review entries for
 the stage-level comparison with Libya. The British review entries conflict with cited primary

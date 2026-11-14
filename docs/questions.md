@@ -25,6 +25,16 @@ vascular-plant ancestors through lower early finding need mean finding rates tha
 measure's contrast between the windows without following its stage-to-stage changes. No question
 changes status.
 
+**Late-Silurian rate review, 14 November (Q1/Q2):** C59's firm reading and C60 are independently
+supported within the fixed-window benchmarks. The pooled late-Silurian rate has a lower benchmark
+of 0.79 or 0.69 of the whole later-window mean; this neither establishes a plateau nor dates a
+switch. C57's early-rise examples still assume a steady later rate and zero delay. Excluding the
+two units that set A from the late count leaves selection of A unresolved, and a counted find may
+be the actual oldest fossil. A biological trigger remains a labelled interpretation: shared
+inheritance alone does not place the crown ancestor near the first fossil, and the demographic
+illustration does not exclude slow net growth. No question is narrowed to an exhaustive switch-or-delay
+choice or changes status. Review: `studies/f3/docs/audits/2026-11-14-c59-c60-review.md`.
+
 **Combined-measure review, 14 November (Q1):** C59 is independently supported. The rock × spore
 product is low enough before the oldest find to permit the tested older ancestors, but transferring
 that product to finding through time predicts almost no late-Silurian finds where at least 13 lie.

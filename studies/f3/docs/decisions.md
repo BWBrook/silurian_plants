@@ -5,6 +5,36 @@ Programme and cross-study decisions are in `docs/decisions.md`. Entries before 1
 written before the study-first move and name pre-move paths (`models/f3/`, `data/units/`,
 `manuscript/`, `docs/audits/`); `studies/f3/PATHS.tsv` maps each to its current location.
 
+## 2026-11-14: C59 restatement and C60 independently checked (Codex)
+
+C59 returns to supported: its five data tables are unchanged from the independent check at 6978d4a,
+and the firm reading is retained, with searching's non-rejection tied to the guaranteed-minimum
+Gorstian–Pridoli allocation and the earlier insufficiency to 444–452 Ma with zero delay.
+
+C60 is supported after independent beta-quantile and exponential-integral calculations and a separate
+source/logic audit. All four rate rows and the unit facts pass. The benchmark is a one-sided lower
+bound relative to the whole A-to-c mean, including the late Silurian; it does not establish a plateau.
+The early-rise durations retain C57's steady later rate and zero delay. Excluding the two A-setting
+units avoids mechanical overlap with that count, not selection of A, and an included late find could
+be the actual oldest fossil. A four-row derived table exposes the existing 2K durations for strict
+case binding. Higher output precision avoids double rounding: the regional broad-window factor is
+2.36490348, so its two-decimal display is 2.36 rather than 2.37. Calculations are unchanged.
+
+The interpretation keeps the proposed trigger but repairs its logic. The 1%-growth illustration
+does not rule out slow net growth. Shared inheritance orders an innovation before the split; a small
+ancestor-to-first-fossil gap additionally assumes prompt spread, recognisable crown members and
+adequate finding. The sources support broad Cooksonia-like forms, fragmentary marine preservation
+and particular in-situ triletes, with transport and producer relationships kept as inferences.
+Both independent reviewers accepted these repairs. Twenty C60 spans bind to their cases.
+
+**Structural review (Q1/Q2):** the later record adds an interval-average constraint and a restricted
+exponential benchmark, not a general shape for both sides of A. The earlier structural summary's
+exhaustive switch-or-delay reading is narrowed accordingly; no general switch, date or causal trigger
+is established and no question changes status. The hypothesis belongs in the labelled interpretation,
+while trait ordering and observation-process uncertainty remain open. The article and supplement are
+rebuilt for Barry; companion products still await the agreed later pass. Review:
+`docs/audits/2026-11-14-c59-c60-review.md`.
+
 ## 2026-11-14: outside measures read firmly; the switch reading (C60) and its interpretation (Barry with Fable; Claude)
 
 Fable's issue-2 follow-up, at 6978d4a, relayed by Barry, who wrote to Fable: "Yes, agreed, your

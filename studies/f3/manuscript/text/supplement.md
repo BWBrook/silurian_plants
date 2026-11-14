@@ -995,21 +995,23 @@ the later finds sit somewhat more in the late Silurian than a level rate predict
 followed each measure, against at least 13 of 48 finds, or 6 of 19 region–stage units, observed there;
 one-sided binomial tails, descriptive benchmarks after the interval was chosen from the observed ages[]{.C59}.
 
-**How fast finding could change after the oldest find.** The same minimum counts bound the mean
-finding rate over the late-Silurian interval after *A* (`studies/f3/models/loop3/switch_reading.py`). The one-sided 95%
+**How fast finding could change across the later window.** The same minimum counts bound the mean
+finding rate over the late-Silurian interval within [*c*, *A*] (`studies/f3/models/loop3/switch_reading.py`). The one-sided 95%
 Clopper–Pearson lower bound on the Gorstian–Pridoli share, divided by the share a level rate gives, puts
-the rate there at no less than [0.79]{.C60} of the later-window mean with 48 finds and [0.69]{.C60} with 19
-region–stage units. For an exponential later history, rate proportional to $e^{gu}$ with *u* Myr after
+the rate there at no less than [0.79]{.C60 .V232} of the later-window mean with 48 finds and [0.69]{.C60 .V233} with 19
+region–stage units. These are lower benchmarks relative to the whole later-window mean, rather than
+a measured plateau. For an exponential later history, rate proportional to $e^{gu}$ with *u* Myr after
 *A*, the largest *g* with at least the observed count having probability 0.05 gives a rise of at most
-[1.76]{.C60}-fold across the later window with 48 finds and [2.37]{.C60}-fold with 19. From the Ludfordian
+[1.76]{.C60 .V234}-fold across the *A*-to-*c* window, including the late Silurian, with 48 finds and [2.36]{.C60 .V235}-fold with 19. From the Ludfordian
 base, set after the ages were seen, the 48-find count rejects a level rate at that benchmark: within the exponential family, the largest
-compatible ratio of the rate at the cutoff to that at *A* is [0.90]{.C60}, a fall of at least about 10%, while the region–stage count allows a rise of [1.28]{.C60}-fold. The
+compatible ratio of the rate at the cutoff to that at *A* is [0.90]{.C60 .V236}, a fall of at least about 10%, while the region–stage count allows a rise of [1.28]{.C60 .V237}-fold. The
 13 finds come from six regions: Baltica, South America, Kazakhstania, Laurentia, South China and
 peri-Gondwanan Europe. With the early-rise limits of S5.9, a straight-line rise from zero ending at *A*, one simple
-history among many, fits only if it lasts at most $2K$, [4.28]{.C60} Myr with 48 finds to [14.69]{.C60} Myr with 15. Over the
+history among many with a steady later rate and zero delay, fits only if it lasts at most $2K$,
+[4.28]{.C60 .V238} Myr with 48 finds to [14.69]{.C60 .V239} Myr with 15. Over the
 same stages, North American non-marine column area is zero in the Gorstian and Ludfordian, about
-[7074]{.C60} km² in the Pridoli and [40161]{.C60} km² in the Lochkovian, and the trilete-reporting share
-runs [0.183]{.C60}, [0.191]{.C60} and [0.194]{.C60} from the Gorstian to the Pridoli and [0.502]{.C60} in the
+[7074]{.C60 .V240} km² in the Pridoli and [40161]{.C60 .V241} km² in the Lochkovian, and the trilete-reporting share
+runs [0.183]{.C60 .V242}, [0.191]{.C60 .V243} and [0.194]{.C60 .V244} from the Gorstian to the Pridoli and [0.502]{.C60 .V245} in the
 Lochkovian. These bounds are post hoc and descriptive, with the conditions of the placement test.
 
 ## S6. From specimens to nodes
