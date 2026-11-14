@@ -1,5 +1,21 @@
-# Works without a DOI, in CSL YAML. tools/refs.py merges them into refs.yaml.
+# Works without a DOI, or whose Crossref metadata is incomplete (Hanley 1983: Crossref omits the second author;
+# authors from PubMed 6827763), in CSL YAML. tools/refs.py merges them into refs.yaml.
 references:
+  - id: hanley1983IfNothingGoes
+    type: article-journal
+    title: "If nothing goes wrong, is everything all right? Interpreting zero numerators"
+    author:
+      - family: Hanley
+        given: J. A.
+      - family: Lippman-Hand
+        given: A.
+    issued:
+      date-parts: [[1983]]
+    container-title: JAMA
+    volume: '249'
+    issue: '13'
+    page: 1743–1745
+    DOI: 10.1001/jama.1983.03330370053031
   - id: burgess1991SilurianCryptosporesMiospores
     type: article-journal
     title: Silurian cryptospores and miospores from the type Llandovery area, south-west Wales

@@ -265,6 +265,23 @@ references:
   page: 50–78
   publisher: Wiley
   DOI: 10.1111/nph.12645
+- id: hanley1983IfNothingGoes
+  citation-key: hanley1983IfNothingGoes
+  type: article-journal
+  title: If nothing goes wrong, is everything all right? Interpreting zero numerators
+  author:
+  - family: Hanley
+    given: J. A.
+  - family: Lippman-Hand
+    given: A.
+  issued:
+    date-parts:
+    - - 1983
+  container-title: JAMA
+  volume: '249'
+  issue: '13'
+  page: 1743–1745
+  DOI: 10.1001/jama.1983.03330370053031
 - id: harris2022DivergentEvolutionaryTrajectories
   citation-key: harris2022DivergentEvolutionaryTrajectories
   type: article-journal
@@ -353,6 +370,24 @@ references:
   container-title: Nature Plants
   publisher: Springer Science and Business Media LLC
   DOI: 10.1038/s41477-026-02432-3
+- id: jovanovic1997LookRuleThree
+  citation-key: jovanovic1997LookRuleThree
+  type: article-journal
+  title: A Look at the Rule of Three
+  author:
+  - family: Jovanovic
+    given: B. D.
+  - family: Levy
+    given: P. S.
+  issued:
+    date-parts:
+    - - 1997
+  container-title: The American Statistician
+  volume: '51'
+  issue: '2'
+  page: 137–139
+  publisher: Informa UK Limited
+  DOI: 10.1080/00031305.1997.10473947
 - id: kenrick1997OriginEarlyEvolution
   citation-key: kenrick1997OriginEarlyEvolution
   type: article-journal

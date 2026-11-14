@@ -1,0 +1,33 @@
+case,n,candidate_ma,quantity,value,expected_early_finds,limit_expected_early_finds
+steady-rate 95% limit,48,,older_bound_ma,428.8400,3.0912,3.0912
+linear rise from zero at the ancestor,48,430.98,linear_oldest_ma,430.9800,3.0912,3.0912
+"exponential rise, any older ancestor",48,unbounded,exp_limit_doubling_myr,1.4833,3.0911,3.0912
+step: later/earlier finding-rate ratio,48,444,later_to_earlier,8.0841,3.0912,3.0912
+step: later/earlier finding-rate ratio,48,452,later_to_earlier,11.8224,3.0912,3.0912
+steady-rate 95% limit,24,,older_bound_ma,431.1178,3.1907,3.1907
+linear rise from zero at the ancestor,24,435.54,linear_oldest_ma,435.5357,3.1907,3.1907
+"exponential rise, any older ancestor",24,unbounded,exp_limit_doubling_myr,3.0622,3.1907,3.1907
+step: later/earlier finding-rate ratio,24,444,later_to_earlier,3.9160,3.1907,3.1907
+step: later/earlier finding-rate ratio,24,452,later_to_earlier,5.7268,3.1907,3.1907
+steady-rate 95% limit,19,,older_bound_ma,432.3750,3.2448,3.2448
+linear rise from zero at the ancestor,19,438.05,linear_oldest_ma,438.0500,3.2448,3.2448
+"exponential rise, any older ancestor",19,unbounded,exp_limit_doubling_myr,3.9336,3.2448,3.2448
+step: later/earlier finding-rate ratio,19,444,later_to_earlier,3.0484,3.2449,3.2448
+step: later/earlier finding-rate ratio,19,452,later_to_earlier,4.4581,3.2448,3.2448
+steady-rate 95% limit,15,,older_bound_ma,434.0457,3.3158,3.3158
+linear rise from zero at the ancestor,15,441.39,linear_oldest_ma,441.3913,3.3158,3.3158
+"exponential rise, any older ancestor",15,unbounded,exp_limit_doubling_myr,5.0916,3.3158,3.3158
+step: later/earlier finding-rate ratio,15,444,later_to_earlier,2.3551,3.3159,3.3158
+step: later/earlier finding-rate ratio,15,452,later_to_earlier,3.4442,3.3158,3.3158
+count at which the limit reaches 431.2 Ma,23.588,431.2,n_independent,23.5880,3.1943,3.1943
+minimum delay at a steady rate,48,444,delay_myr,15.1600,3.0912,3.0912
+minimum delay at a steady rate,48,452,delay_myr,23.1600,3.0912,3.0912
+"outside measure rock_nonmarine_area, at 48 finds",48,444,later_to_earlier,3.2941,7.5861,3.0912
+"outside measure rock_nonmarine_area, matching count",20.42,444,largest_n_matched,20.4200,3.2273,3.2266
+"outside measure rock_nonmarine_area, at 48 finds",48,452,later_to_earlier,3.1889,11.4602,3.0912
+"outside measure rock_nonmarine_area, matching count",13.99,452,largest_n_matched,13.9900,3.3402,3.3407
+"outside measure spores_trilete_share, at 48 finds",48,444,later_to_earlier,5.1403,4.8615,3.0912
+"outside measure spores_trilete_share, matching count",31.05,444,largest_n_matched,31.0500,3.1448,3.1450
+"outside measure spores_trilete_share, at 48 finds",48,452,later_to_earlier,7.1049,5.1437,3.0912
+"outside measure spores_trilete_share, matching count",29.43,452,largest_n_matched,29.4300,3.1537,3.1535
+limit as n grows,inf,,ln(1/alpha),2.9957,2.9957,2.9957
