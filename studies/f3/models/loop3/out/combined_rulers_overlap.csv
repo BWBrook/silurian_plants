@@ -1,0 +1,5 @@
+first,second,stages,spearman_rho,permutation_p,pearson_log
+rock,spore_share,13,0.3039,0.3128,nan
+rock,search,13,-0.0939,0.7644,nan
+search,spore_share,13,0.5220,0.0702,0.4482
+rock,search_plant_excluded,13,-0.0166,0.9637,nan

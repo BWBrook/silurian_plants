@@ -58,3 +58,32 @@ the finding rate level after A = 426.7 Ma and rising before it:
   Rhuddanian, and of Homerian and Gorstian. Disclosed in advance: an earlier, uncorrected numerator gave
   shares near 0.02 (Katian), 0.03 (Hirnantian) and 0.10 (Rhuddanian). As with the rulers, these are
   guides for comparison and enter no 95% inference; the shapes are placed after seeing the record.
+
+## Addendum: the combined rock and spore measure (14 November 2026, before computing)
+
+Claude Opus 5.5, written before any combined value was computed. Fable 5.2, advising Barry, asked for
+it (Fable's issue 2, relayed by Barry, chat, 14 November 2026: "Let's be bolder, agreed."). The plan
+above said no product would be formed; this combination departs from it and is chosen after the single
+measures were seen. Like them, it is a guide with no confidence level.
+
+- **Main combination: rock × spore share.** x(s) = North American non-marine column area (ruler 1)
+  × share of Palynodata documents reporting usable triletes (ruler 3). Reading: rock stands for
+  where land-plant bodies could be preserved and collected, the spore share for how common trilete
+  producers were; finding needs both. Two forms, both reported: the ratio of window means of the
+  stage-by-stage product (the correct quantity if finding is proportional to the product), and the
+  product of the two single-measure ratios (what a reader multiplies).
+- **Searching is not multiplied with rock.** PBDB collections are made in rock, so collection density
+  already contains rock availability, and a triple product would count rock twice. Searching × spore
+  share is reported as the global alternative to the North American rock measure. The plant-excluded
+  searching series is reported alongside it.
+- **Quantity reported.** For n = 48, 24, 19 and 15 independent finds and ancestors at 444 and 452 Ma,
+  expected early finds E = (n/(A − c))(t − A)/Q, compared with the boundary m*(n) = n(0.05^(−1/n) − 1)
+  (C58), and the chance of no early find, (1 + E/n)^(−n). Under finding proportional to x over [c, t], the chance that all n finds
+  fall after A depends only on the share of the integral of x that lies before A, so this test needs
+  no level later rate. Also reported: across 427–469 Ma, the oldest ancestor age at which E ≤ m*(n).
+- **Overlap test.** Stage means of each series, Katian to Emsian (the stages spanning the windows),
+  then Spearman rank correlations between rock, spore share and searching, with the number of stages.
+  Also the within-window covariance term: the ratio of the two forms above.
+- **What this cannot show.** About ten stages cannot separate a shared cause from coincident trends;
+  a strong correlation would mean the measures may be one signal, a weak one would not show they are
+  independent causes of finding.

@@ -1,0 +1,17 @@
+proxy,share_ludfordian_pridoli,counting,n,observed,expected,p_at_least_observed
+level,0.2131,locality_age,48,13,10.227,0.208
+level,0.2131,region_stage,19,6,4.048,0.203
+rock,0.0094,locality_age,48,13,0.451,6.4e-16
+rock,0.0094,region_stage,19,6,0.179,1.69e-08
+spore_share,0.0784,locality_age,48,13,3.762,5.9e-05
+spore_share,0.0784,region_stage,19,6,1.489,0.00257
+search,0.2102,locality_age,48,13,10.089,0.194
+search,0.2102,region_stage,19,6,3.994,0.194
+search_plant_excluded,0.2342,locality_age,48,13,11.244,0.326
+search_plant_excluded,0.2342,region_stage,19,6,4.451,0.274
+rock_x_spore_share,0.0029,locality_age,48,13,0.141,2.14e-22
+rock_x_spore_share,0.0029,region_stage,19,6,0.056,1.69e-11
+search_x_spore_share,0.0804,locality_age,48,13,3.861,7.69e-05
+search_x_spore_share,0.0804,region_stage,19,6,1.528,0.00293
+search_plant_excluded_x_spore_share,0.0929,locality_age,48,13,4.459,0.000325
+search_plant_excluded_x_spore_share,0.0929,region_stage,19,6,1.765,0.00601

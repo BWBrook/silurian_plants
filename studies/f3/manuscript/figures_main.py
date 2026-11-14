@@ -29,6 +29,7 @@ RESULTS = ROOT / "studies/f3/models/out/m2_results.csv"
 FRONTIER = ROOT / "studies/f3/models/loop3/out/frontier.csv"
 DIAL = ROOT / "studies/f3/models/loop3/out/count_dial.csv"
 RULERS = ROOT / "studies/f3/models/loop3/out/rulers.csv"
+COMBINED = ROOT / "studies/f3/models/loop3/out/combined_rulers_curve.csv"
 RISE = ROOT / "studies/f3/models/loop3/out/rise_shapes.csv"
 CUTOFF = float(F.primary_bound("B2", "flat")[2]["cutoff_ma"])
 ALPHA = 1 - float(F.primary_bound("B2", "flat")[2]["confidence_conditional_on_fixed_history_iid_units"])
@@ -312,9 +313,9 @@ def fig4(path):
 
     for name, old, young in F.CLOCKS["tracheophyta"]:
         b.axvspan(young, min(old, 456), color=CLOCK[name], alpha=0.10 if name.startswith("Morris") else 0.2, lw=0)
-    b.text(449.5, 34, "Harris", fontsize=7, ha="center", color=INK)
-    b.text(430, 34, "Hooper", fontsize=7, ha="center", color=INK)
-    b.text(440, 34, "Morris (to 451 Ma)", fontsize=7, ha="center", color=INK)
+    b.text(449.5, 125, "Harris", fontsize=7, ha="center", color=INK)
+    b.text(430, 125, "Hooper", fontsize=7, ha="center", color=INK)
+    b.text(440, 125, "Morris (to 451 Ma)", fontsize=7, ha="center", color=INK)
     b.axvline(VASCULAR_MAXIMUM, color=INK, lw=0.8, ls=(0, (4, 3)))
     for d, step, style in ((0, "650", "-"), (10, "450", (0, (6, 2))), (20, "250", (0, (3, 1, 1, 1)))):
         b.plot(t, contrast("primary", d), color=BLUE[step], lw=2, ls=style,
@@ -333,6 +334,11 @@ def fig4(path):
         b.plot(xs, ys, color=col, lw=1.2, ls=style, label=f"ruler: {lab}")
         b.text(455.6, ys[-1] * (1.09 if lab != "rock" else 0.93), lab, fontsize=6.6, color=col, ha="left",
                va="bottom" if lab != "rock" else "top")
+    combo = sorted((float(r["candidate_ma"]), float(r["q_combined"])) for r in F.read(COMBINED)
+                   if r["combination"] == "rock_x_spore_share" and r["q_combined"] != "inf" and float(r["candidate_ma"]) <= 456)
+    b.plot([x for x, _ in combo], [y for _, y in combo], color="#6b7a35", lw=1.2, ls=(0, (2, 1.5)),
+           label="rock × spores (chosen after seeing both)")
+    b.text(455.6, combo[-1][1] * 1.08, "rock × spores", fontsize=6.6, color="#6b7a35", ha="left", va="bottom")
     for r in rows:
         if r["status"] == "contour" and r["unit_treatment"] == "primary" and float(r["assumed_diagnostic_delay_myr"]) == 0 \
                 and float(r["candidate_lineage_ma"]) in (444.0, 452.0):
@@ -340,8 +346,8 @@ def fig4(path):
             b.plot(float(r["candidate_lineage_ma"]), k, "o", color=BLUE["650"], ms=5, mec="white", mew=1)
             b.text(float(r["candidate_lineage_ma"]), k * 1.18, f"{k:.1f}×", fontsize=7, ha="center", va="bottom")
     b.set_yscale("log")
-    b.set_ylim(0.9, 40)
-    b.set_yticks([1, 2, 5, 10, 20], ["1", "2", "5", "10", "20"])
+    b.set_ylim(0.9, 170)
+    b.set_yticks([1, 2, 5, 10, 20, 50, 100], ["1", "2", "5", "10", "20", "50", "100"])
     b.minorticks_off()
     b.set_xlim(456, 426)
     b.set_xlabel("Candidate ancestor age, t (Ma)")
@@ -354,7 +360,7 @@ def fig4(path):
     save(fig, path)
 
 
-INPUTS = [UNITS, RESULTS, FRONTIER, DIAL, RULERS, RISE, Path(__file__)]
+INPUTS = [UNITS, RESULTS, FRONTIER, DIAL, RULERS, COMBINED, RISE, Path(__file__)]
 
 
 def draw(out):
