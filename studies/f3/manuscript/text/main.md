@@ -4,20 +4,20 @@
 
 ## Abstract
 
-Molecular clocks date the ancestor of living land plants from the Cambrian to the Late Ordovician,
-partly through differing fossil maxima. We examined three: 515.5 million years ago (Ma), resting on a
+Molecular clocks date living land plants' ancestor from the Cambrian to the Late Ordovician,
+partly through differing fossil maxima. We examined three: 515.5 million years ago (Ma), resting on
 qualitative argument, and 459.1 Ma for living land plants; 431.2 Ma for living vascular plants. No
-three-rayed (trilete) spores are reported in [28]{.C01} Ordovician Libyan borehole samples, [18]{.C45}
-from stages with such spores elsewhere[]{.C54}: absence can be local. At a steady finding rate, the 95%
-confidence limit on the vascular-plant record's start is [428.8]{.C27 .V003}–[434.05]{.C30} Ma,
-counting [48]{.C25} finds three ways, reaching 431.2 Ma if about half are independent. Without a delay,
-ancestors at 444–452 Ma fit if fossils were found [2.4]{.C48 .V056}–[12]{.C48 .V055} times less often
-before the oldest find than after it; ancestors of any age fit if finding rose exponentially,
-doubling every [1.48]{.C57 .V123}–[5.09]{.C57 .V125} Myr or faster, by count. At a steady rate with 48 independent
-finds, 444–452 Ma ancestors fit if recognisable bodies appeared about [15–23]{.C33} Myr later or more. North American
-non-marine column area was about three times lower before the oldest find, and a five to seven times smaller share of
-studies reported triletes[]{.C56}. These ratios overlap some cautious requirements; the main
-count's exceeds both.
+three-rayed (trilete) spores are reported in Ordovician Libyan borehole samples[]{.C01}, most from stages
+with such spores elsewhere[]{.C45}[]{.C54}: absence can be local. For vascular
+plants, the rule of three applies: with finding level after the oldest fossil, the
+silence before it fits any earlier history expected to yield about three finds or
+fewer at the later rate[]{.C58}. Three finds take longer when fewer are independent, so at a steady
+rate the 95% limit on the record's start is [428.8]{.C27 .V003} Ma if all [48]{.C25} are, near
+431.2 Ma if about half are. Ancestors at 444–452 Ma fit if early fossils were found
+[2.4]{.C48 .V056}–[12]{.C48 .V055} times less often, by count, if finding rose fast
+enough, or, at a steady rate with all finds independent, if recognisable bodies appeared about [15–23]{.C33} Myr or more later. The
+literature's trilete-reporting share and North American non-marine column area were lower before the oldest
+find, by factors overlapping some requirements for fewer independent finds[]{.C56}.
 
 **Keywords:** molecular clock; fossil calibration; land plants; vascular plants; stratigraphic
 confidence interval; Ordovician–Silurian
@@ -166,8 +166,12 @@ ratio of earlier to later finding rate that puts *t* − *d* where the limit of 
 $r=(A-c)(0.05^{-1/n}-1)/(t-d-A)$, defined where $t-d>A$; fossils would then have to be found $1/r$ times
 less often before the oldest find than after it. Longer delays reduce the reduction a given ancestor
 age needs [@marshall2019UsingFossilRecord]. With the later rate level and zero delay, a candidate age *t* fits the oldest find (an oldest find no
-older than *A* has probability at least 0.05) when the relative finding rate summed over [*A*, *t*] is at most $K=(A-c)(0.05^{-1/n}-1)$, so the step is one shape
-among many; we also report a linear rise from zero at the ancestor and an exponential rise, each reaching
+older than *A* has probability at least 0.05) when the relative finding rate summed over [*A*, *t*] is at most $K=(A-c)(0.05^{-1/n}-1)$. Writing *R* for
+that sum, each of the *n* finds falls before *A* with probability $p=R/(A-c+R)$; at the boundary $R=K$,
+no early find has probability $(1-p)^n=0.05$, so $p\approx3/n$: the rule of three for zero counts
+[@hanley1983IfNothingGoes; @jovanovic1997LookRuleThree]. At the later rate of $n/(A-c)$ finds per Myr,
+*K* corresponds to $n(0.05^{-1/n}-1)$ expected finds before the oldest find, which approaches
+$\ln 20\approx3$ as *n* grows. The step is one shape among many; we also report a linear rise from zero at the ancestor and an exponential rise, each reaching
 the later level at *A*. We chose where to put the step and the rises after seeing the data, so these
 curves show what would fit, without the 95% confidence that (*e*) gives each fixed history.
 
@@ -221,9 +225,14 @@ stage[]{.C09}. With equal delivery, the samples limit steady trilete supply sinc
 samples are weighted by well and rock unit (electronic supplementary material, S2.2 and S2.5). Lower
 delivery, lower local supply or producers outside the catchment all fit.
 
-**(d) The limit on the vascular-plant record's start depends on how many finds are independent.** At a
-steady finding rate, the 95% confidence limit on the start of the crown vascular-plant record depends on
-the oldest find, the younger cutoff and the number of independent finds (figure 3*a*). Counting the
+**(d) The silence before the oldest find fits about three expected finds, so its limit depends on how
+many finds are independent.** The calculations that hold the finding rate level after the oldest
+find share one rule. Take that rate, estimated from the count: the absence of older finds fits
+any earlier history expected to yield about three finds or fewer at that rate[]{.C58}, from [3.09]{.C58} with 48 independent finds to
+[3.32]{.C58} with 15 (Material and methods (*g*)). The count sets how long three finds take at the later
+rate: [2.1]{.C57 .V112} Myr with 48 finds, [5.7]{.C57 .V113} Myr with 19 and [7.3]{.C57 .V114} Myr
+with 15. At a steady finding rate, the 95% confidence limit on the start of the crown vascular-plant
+record lies that far before the oldest find (figure 3*a*). Counting the
 [48]{.C25} finds certainly inside the window as independent gives [428.8]{.C27 .V003} Ma; treating each
 region and stage as one find ([19]{.C30}) gives [432.4]{.C30} Ma, and counting only the curated oldest
 records ([15]{.C30}) gives [434.05]{.C30} Ma. The three share the oldest find and the cutoff, so they
@@ -253,23 +262,25 @@ appeared later.** In the main scenario, halving the finding rate before the olde
 to [431.0]{.C53 .V108} Ma, still younger than the 431.2 Ma maximum. Ancestors at 444–452 Ma, spanning
 the Morris et al. mean dates and the Harris et al. interval, fit if fossils were found
 [8]{.C48 .V054}–[12]{.C48 .V055} times less often before the oldest find than after it, with
-recognisable bodies appearing with the ancestor and all 48 finds independent (figure 3*b*). With about
+recognisable bodies appearing with the ancestor and all 48 finds independent (figure 3*b*). These factors
+spread three finds' worth of finding over the 17–25 Myr between the ancestor and the oldest find. With about
 24 independent finds, [3.9]{.C55 .V110}–[5.7]{.C55 .V111} times suffices, and with 19 or 15,
 [2.4]{.C48 .V056}–[4.5]{.C48 .V057} times; the reduction needed grows roughly in proportion to the
 number of independent finds, and with fewer than about 24, 431.2 Ma already fits a steady rate. At a
 steady finding rate and with all 48 finds independent, the same ancestors fit if recognisable bodies
-appeared about [15–23]{.C33} Myr or more after them; fewer independent finds shorten the delay needed. Smaller reductions combine with shorter delays (figure 3*b*).
+appeared about [15–23]{.C33} Myr or more after them, leaving at most the [2.1]{.C57 .V112} Myr that three
+finds take; fewer independent finds shorten the delay needed. Smaller reductions combine with shorter delays (figure 3*b*).
 
-**(f) The record limits total early finding, whatever its shape.** With finding level after *A* and
-zero delay, any earlier history fits the oldest find when its total is at most the
-equivalent of [2.1]{.C57 .V112} Myr of finding at the later rate with 48 finds, [5.7]{.C57 .V113} Myr with 19 and
+**(f) The record limits early finding to about three finds in total, whatever its shape.** With finding
+level after *A* and zero delay, any earlier history fits the oldest find when it would have yielded about
+three finds or fewer: the equivalent of [2.1]{.C57 .V112} Myr of finding at the later rate with 48 finds, [5.7]{.C57 .V113} Myr with 19 and
 [7.3]{.C57 .V114} Myr with 15. A straight-line rise from zero at the ancestor stays within that total only for
 ancestors up to [431.0]{.C57 .V115}, [438.1]{.C57 .V116} and [441.4]{.C57 .V117} Ma. An exponential rise fits ancestors at
 444–452 Ma if finds doubled about every [1.5]{.C57 .V118} Myr or faster with 48 finds, every [4.0]{.C57 .V119}–[4.2]{.C57 .V120}
 Myr with 19 and every [5.3]{.C57 .V121}–[5.8]{.C57 .V122} Myr with 15. As candidate ages grow older, the permitted
 doubling time approaches a count-specific threshold, $K\ln 2$, about [1.48]{.C57 .V123}, [3.93]{.C57 .V124} and
-[5.09]{.C57 .V125} Myr; a rise this fast or faster fits an ancestor of any age. These are requirements
-for fitting. For coarse context,
+[5.09]{.C57 .V125} Myr; a rise this fast or faster fits an ancestor of any age, because its whole early
+tail sums to about three finds or fewer. These are requirements for fitting. For coarse context,
 the share of palynological studies reporting triletes changed between the Homerian and the Gorstian,
 across the oldest find, at an equivalent doubling time of about [6.6]{.C57 .V126} Myr, and rose fastest, about
 every [1.0]{.C57 .V127} Myr, from the Hirnantian into the Rhuddanian; both give scale only.
@@ -280,8 +291,10 @@ find than after it, and PBDB land and marginal-marine collections are only [1.35
 times sparser at 444 and 452 Ma. The share of indexed palynological studies reporting trilete spores is
 [5.1]{.C56 .V132}–[7.1]{.C56 .V133} times lower (figure 3*b*; electronic supplementary material, S5.8). The rock ratios
 are numerically as large as the required finding-rate ratios for about [14]{.C56 .V134}–[20]{.C56 .V135} or fewer
-independent finds, and the spore-reporting ratios for about [29]{.C56 .V136}–[31]{.C56 .V137} or fewer. With all 48 finds independent, the
-8–12-fold requirement exceeds each proxy ratio; whether their combined effects could supply it remains untested, and a delay
+independent finds, and the spore-reporting ratios for about [29]{.C56 .V136}–[31]{.C56 .V137} or fewer. With all 48 finds independent,
+if body-fossil finding were proportional to each measure in both windows, about
+[7.6]{.C58}–[11.5]{.C58} finds would have been expected before the oldest find under the rock measure and
+[4.9]{.C58}–[5.1]{.C58} under the spore-reporting share, against about three; whether their combined effects could close that gap remains untested, and a delay
 before recognisable bodies is another route. South American rock, recorded more coarsely, shows no
 decline.
 
@@ -305,11 +318,10 @@ confidence limit on the start of the recognisable crown vascular-plant record li
 [429]{.C27 .V018} and [434.05]{.C30} Ma, depending on how many finds are independent, and passes the
 431.2 Ma maximum at about half the main count. For each way of counting, a lower earlier finding rate, later recognisable
 bodies or both fit ancestors older than these limits; the models give the size of each requirement in
-aggregate. With a level later rate and zero delay, the record allows only the equivalent of
-[2.1]{.C57 .V112}–[7.3]{.C57 .V114} Myr of earlier finding at the later rate, so it limits the total of early
-finding, and every history with that total fits equally. An exponential rise doubling every
-[1.48]{.C57 .V123}–[5.09]{.C57 .V125} Myr or faster, depending on the count, fits an ancestor of any age, so an
-older limit from the body record needs an assumption that restricts the early finding history.
+aggregate. With a level later rate and zero delay, the record allows about three finds' worth of earlier
+finding, so it limits the total of early finding, and every history with that total fits equally. A
+fast enough exponential rise keeps that total below three for an ancestor of any age, so an older limit
+from the body record needs an assumption that restricts the early finding history.
 
 Several processes could have made early plants scarcer in the record. Producers may have been rarer,
 more geographically restricted, concentrated where little terrestrial sediment accumulated, or preserved
@@ -351,7 +363,9 @@ misses its true age is $\delta$, the test's error rate is at most $\alpha+\delta
 level for exact ages. Simulations with exact ages
 gave coverage of [0.941–0.958]{.C34} (electronic supplementary material, S5.6). The step scenario was chosen after
 seeing the data. Linking the vascular-plant limit to ancestors requires that the oldest finds belong to
-the crown group, and a specified delay before recognisable bodies. The rises and the outside
+the crown group, and a specified delay before recognisable bodies. The rule of three counts expected
+early finds at the later rate estimated from the same finds, so it is conditional on the count and the
+cutoff, and a delay moves the start of that count to *t* − *d*. The rises and the outside
 comparison assume a level finding rate after the oldest find, which the spread of later fossil ages can
 test; the doubling times are requirements, and the spread of early plants is unmeasured. The outside
 measures describe rock and published studies; each ratio would equal the ratio of mean finding rates if
@@ -380,22 +394,21 @@ and finding-rate assumptions, and justify the probability assigned to older ages
 [@parham2011BestPracticesJustifying; @yang2005BayesianEstimationSpecies]. Testing alternative defensible
 maxima then shows how much each assumption moves the timescale, and sampling the joint age prior without
 molecular data, then comparing its effective marginal ages with the posteriors, shows what the molecular
-data add [@brown2017PastSureTense]. The same separation of the evidence, the chance of finding it and its
-link to the ancestor applies to any maximum argued from absence. The Libyan basin shows that trilete spores can go
-unreported in rocks from stages in which they occur elsewhere. Older land-plant ancestors fit
-its record if, with equal delivery, their steady trilete supply since 459.1 Ma stayed below a tenth of
-the later supply ([0.091]{.C24}; four-tenths under an exploratory weighting), or their spores never
-reached the basin, because the producers lived elsewhere or
-triletes evolved later. Vascular-plant ancestors at 444–452 Ma fit if early body fossils were found
-[2.4]{.C48 .V056}–[12]{.C48 .V055} times less often, the factor depending on how many finds are
-independent, with recognisable bodies appearing with the ancestor, or, at a steady rate with all 48 finds independent, if those
-bodies appeared about [15–23]{.C33} Myr or more after it; the first is a
-scenario chosen after seeing the data. Before the oldest find, North American column area holding non-marine rock was
-about three times lower and the share of indexed studies reporting triletes five to seven times lower;
-the proxy ratios numerically overlap or exceed the cautious requirements, and the main count's
-requirement exceeds each. Missing fossils thus allow older vascular-plant ancestors if early plants were
-found less often or became recognisable later, and the body record states how much less often; the
-Libyan spores show that an absence can be local.
+data add [@brown2017PastSureTense].
+
+For the oldest vascular-plant body fossils, the rule of three makes the finding-rate assumption
+concrete: with finding level after the oldest find, the silence before it fits about three expected
+finds, counted at the later rate.
+An older ancestor needs early finding low enough, or recognisable bodies late enough, to keep that
+expected count at about three or fewer, and the number of independent finds sets how many million years three finds
+span. North American non-marine rock area and the share of studies reporting triletes were lower before
+the oldest find by factors matching some requirements for fewer independent finds; how they bear on
+body-fossil finding remains untested. For spores, the Libyan basin shows that an absence can be local:
+older land-plant ancestors fit its record if, with equal delivery, their steady trilete supply since
+459.1 Ma stayed below about a tenth of the later supply, with older onsets needing less, or if the
+producers lived elsewhere or acquired triletes later. Missing fossils thus
+allow older vascular-plant ancestors if early plants were found less often or became recognisable later,
+and the body record states how much less often.
 
 ## Ethics
 

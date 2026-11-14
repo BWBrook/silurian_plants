@@ -1,0 +1,113 @@
+{
+  "title": "The rule itself holds under the conditional body-fossil model, but several passages need repairs to preserve its assumptions and the narrower scope of the proxy and Libyan results.",
+  "items": [
+    {
+      "location": "Abstract — Libyan samples",
+      "old": "28 Ordovician Libyan borehole samples, 18 from stages with such spores elsewhere",
+      "new": "Ordovician Libyan borehole samples, most from stages with such spores elsewhere",
+      "problem": "Meaning holds: 18 of 28 is most, and the comparison remains explicitly at stage resolution.",
+      "severity": "ok",
+      "evidence": "C01 records 28 older samples; C45 assigns 18 to Katian–Hirnantian ranges; C54 supports overlapping stage-age records in Saudi Arabia and Turkey. This establishes neither exact contemporaneity nor a crown-group producer.",
+      "repair": ""
+    },
+    {
+      "location": "Abstract — scope and interpretation of the rule",
+      "old": "At a steady finding rate, the 95% confidence limit...",
+      "new": "For vascular plants, the statistical rule of three governs what missing fossils can say: the silence ... fits any earlier history expected to yield about three finds or fewer at the later finding rate.",
+      "problem": "“Fits any earlier history” is sound as conditional compatibility, but the sentence omits the later plateau and zero-delay assumptions and can suggest a confidence statement covering all histories. “For vascular plants” already limits the scope somewhat; “governs what missing fossils can say” still extends beyond this particular body-record calculation. The expected count also uses the later rate estimated from the same n.",
+      "severity": "risk",
+      "evidence": "C58 and Methods (g) restrict the result to a level later rate, a fixed cutoff and count, and zero delay. Retrospectively chosen histories have compatibility, not demonstrated 95% coverage. The rule supplies neither the Libyan spore result nor the 515.5 Ma argument.",
+      "repair": "“For the crown vascular-plant body record, assuming a level later finding rate and no delay before recognisable bodies, earlier histories are compatible with the oldest find when their expected early finds, scaled using the later rate estimated from the same count, total about three or fewer.”"
+    },
+    {
+      "location": "Abstract — numerical summary and final proxy sentence",
+      "old": "reaching 431.2 Ma if about half are independent ... These ratios overlap some cautious requirements",
+      "new": "431.2 Ma if about half are ... about 15–23 Myr later ... less non-marine rock and fewer trilete-reporting studies match the requirements for fewer independent finds",
+      "problem": "Most numbers are correct summaries, but 431.2 Ma is a crossing near half the count, the delays are minimum requirements under a steady rate, and the final sentence changes descriptive proxy ratios into apparent explanatory sufficiency. It also substitutes fewer studies for a smaller reporting share and drops the rock measure’s North American scope.",
+      "severity": "error",
+      "evidence": "Independent calculation gives 428.8400 Ma for n=48 and 431.1178 Ma for n=24; the continuous crossing is n=23.5880. C48’s 2.355–11.822 ratios support about 2.4–12 under zero delay and a level later rate. C33 gives minimum steady-rate delays of 15.160–23.160 Myr. C56 measures North American non-marine column area and a document reporting share; proportional transfer to body-fossil finding is untested.",
+      "repair": "“At a steady rate, the limit is 428.8 Ma with 48 independent finds and near 431.2 Ma with about half that count. With zero delay, 444–452 Ma ancestors require early finding about 2.4–12 times less frequent, depending on the count. With 48 independent finds and a steady rate, minimum delays are about 15–23 Myr. North American rock-column and trilete-reporting-share ratios overlap some cautious requirements numerically; each falls short for 48 finds.”"
+    },
+    {
+      "location": "Methods (g) — binomial derivation",
+      "old": "the relative finding rate summed over [A, t] is at most K",
+      "new": "Each of the n finds then falls before A with probability p=K/(A-c+K), and no early find has probability (1-p)^n=0.05",
+      "problem": "The derivation is correct at the boundary, but “then” incorrectly assigns equality to every history satisfying the preceding inequality. The probability uses the actual earlier exposure R, equalling the expression involving K only when R=K.",
+      "severity": "error",
+      "evidence": "Independently: put L=A-c and normalise the later relative rate to 1. For non-negative earlier exposure R=∫[A,t]w(s)ds, conditional on n independent ages drawn with density proportional to w on [c,t], P(M≤A)=[L/(L+R)]^n. Thus compatibility at 0.05 requires R≤K=L(0.05^(-1/n)-1). The plug-in later-rate equivalent is m=(n/L)R, giving m*=n(0.05^(-1/n)-1): 3.091191 for n=48, 3.315830 for n=15, tending to ln(20)=2.995732. The binomial probability bound is p*=1-0.05^(1/n); m*=np*/(1-p*), rather than np*. This is the exact zero-event inversion underlying [Hanley and Lippman-Hand](https://jhanley.biostat.mcgill.ca/c607/ch08/zero_numerator.pdf). Confidence coverage requires a fixed history and cutoff, an actual independent integer count and the declared age-support conditions. Retrospective shapes retain compatibility only. Zero delay links t to the recognisable record; otherwise its start is t-d. The absolute finding rate need not be known, and n/L is not independent rate evidence.",
+      "repair": "“Write R for the integrated relative earlier finding rate. Each draw has probability p=R/(A-c+R) of preceding A. At the compatibility boundary R=K, the probability of no earlier find is (1-p)^n=0.05. Multiplying R by the later rate estimated as n/(A-c) expresses this boundary as m*(n) expected early finds.”"
+    },
+    {
+      "location": "Results (d) — opening rule and count-dependent times",
+      "old": "The limit on the vascular-plant record's start depends on how many finds are independent.",
+      "new": "The record allows about three finds before the oldest one ... One rule underlies every body-fossil result that follows.",
+      "problem": "The numbers hold, but “allows ... finds” can sound like an allowance for actual unseen fossils. “Every body-fossil result” also sweeps in later-age shape tests and histories without the stipulated plateau. “Measure the finding rate” makes the count-derived scaling sound independently observed.",
+      "severity": "risk",
+      "evidence": "K is 2.140006, 5.675017 and 7.345668 Myr for n=48, 19 and 15, respectively. These reproduce the stated steady-rate bounds. C58 concerns expected early finds under the common later plateau; it does not replace the shape diagnostics.",
+      "repair": "“The constant-later-rate calculations share one compatibility rule: estimate the later rate from the count and window, then express earlier finding as an expected count. Its boundary is 3.09 expected finds with 48 independent finds and 3.32 with 15.”"
+    },
+    {
+      "location": "Results (e) — spreading finding across 17–25 Myr",
+      "old": "with recognisable bodies appearing with the ancestor and all 48 finds independent",
+      "new": "These factors spread three finds' worth of finding over the 17–25 Myr between the ancestor and the oldest find.",
+      "problem": "Meaning holds in the immediately stated zero-delay, 48-independent-find scenario. “Three finds’ worth” describes expected finding exposure, not three actual missing specimens.",
+      "severity": "ok",
+      "evidence": "The gaps are 444−426.7=17.3 and 452−426.7=25.3 Myr. Dividing the later-rate expectations over those intervals by the exact reduction factors 8.08409 and 11.82240 gives 3.09119 expected early finds in each case.",
+      "repair": ""
+    },
+    {
+      "location": "Results (e) — delay explanation",
+      "old": "appeared about 15–23 Myr or more after them",
+      "new": "appeared about 15–23 Myr or more after them, leaving the 2.1 Myr that three finds take",
+      "problem": "Exactly the minimum delay leaves 2.14 Myr before A. A longer admissible delay leaves less time, so “leaving the 2.1 Myr” does not describe the entire “or more” range.",
+      "severity": "risk",
+      "evidence": "For n=48, the minimum delay is t−A−K: 15.159994 Myr at 444 Ma and 23.159994 Myr at 452 Ma. Equality leaves K=2.140006 Myr; larger delays shorten that interval.",
+      "repair": "“The minimum delays are about 15–23 Myr, leaving at most 2.1 Myr of recognisable early history before A; longer delays shorten that interval further.”"
+    },
+    {
+      "location": "Results (f) — integrated finding and exponential tail",
+      "old": "total ... equivalent of 2.1 ... 7.3 Myr ... a rise this fast or faster fits an ancestor of any age",
+      "new": "about three finds or fewer ... because its whole early tail sums to about three finds or fewer",
+      "problem": "Meaning holds under the paragraph’s explicit later plateau and zero-delay assumptions, with “fits” understood as compatibility as specified in Methods (g).",
+      "severity": "ok",
+      "evidence": "For an exponential earlier history, R=τ[1−exp(−(t−A)/τ)]. Its unlimited-age supremum is τ, so compatibility for every finite candidate age follows exactly when τ≤K, equivalently doubling time D≤K ln 2. The manuscript retains this exact criterion before its rounded values. At equality, the rate-equivalent tail approaches m*(n), approximately three. The linear boundaries likewise follow from R=(t−A)/2.",
+      "repair": ""
+    },
+    {
+      "location": "Results (g) — expected finds under proxy scaling",
+      "old": "the 8–12-fold requirement exceeds each proxy ratio",
+      "new": "finding scaled down by the rock measure would still have yielded about 8–11 finds ... and scaled by the spore-reporting share about 4.9–5.1",
+      "problem": "The arithmetic holds. The counterfactual should explicitly say expected finds and identify proportionality as an assumption; otherwise “would ... have yielded” can suggest a demonstrated prediction from measured finding rates.",
+      "severity": "risk",
+      "evidence": "Using (48/33.23)(t−426.7)/Q gives rock expectations 7.5861 and 11.4602, and spore-share expectations 4.8615 and 5.1437 at 444 and 452 Ma. The stated rounding is reasonable. All exceed m*(48)=3.0912. C56 and C58 expressly leave proportional transfer untested.",
+      "repair": "“If body-fossil finding were proportional to each proxy with the same proportionality in both windows, the expected early counts would be about 7.6–11.5 for the rock measure and 4.9–5.1 for the spore-reporting share, compared with the compatibility boundary of 3.09.”"
+    },
+    {
+      "location": "Discussion — total exposure and unrestricted older ages",
+      "old": "every history with that total fits equally ... an exponential rise doubling every ... fits an ancestor of any age",
+      "new": "every history with that total fits equally ... A fast enough exponential rise keeps that total below three for an ancestor of any age",
+      "problem": "Meaning holds within the explicitly shared later plateau and zero-delay model. “Fits equally” concerns the conditional body-record likelihood, not equal historical plausibility or probabilities assigned to origins.",
+      "severity": "ok",
+      "evidence": "With all observed ages in the common plateau, equal earlier exposure gives the same normalising denominator (L+R)^n and the same observed-age numerator. A sufficiently fast exponential can keep its entire tail below three; that is a sufficient condition, slightly stricter than the exact count-specific m* boundary.",
+      "repair": ""
+    },
+    {
+      "location": "Conditions — count-derived rate and delay",
+      "old": "The rises and the outside comparison assume a level finding rate...",
+      "new": "The rule of three counts expected early finds at the later rate estimated from the same finds ... a delay moves the start of that count to t-d.",
+      "problem": "Meaning holds and usefully identifies that the expected count re-expresses the original count-based calculation rather than adding rate evidence.",
+      "severity": "ok",
+      "evidence": "The scaling is n/(A-c); with delay, earlier exposure runs from A to t-d when t-d>A. The surrounding Conditions retain independence, fixed histories and cutoff, age-support requirements, crown assignment and the untested proxy proportionality.",
+      "repair": ""
+    },
+    {
+      "location": "Conclusion — body-record summary, proxy matching and Libyan supply",
+      "old": "proxy ratios numerically overlap or exceed the cautious requirements ... steady trilete supply since 459.1 Ma ... 0.091",
+      "new": "allows about three missed finds ... match that requirement for the cautious counts ... trilete supply there stayed below about a tenth of the later supply",
+      "problem": "Three distinctions are lost. The body result constrains expected finding under a level later rate, rather than counting actual missed fossils. Proxy matching is numerical and count-dependent, and the spore measure is a reporting share. Most seriously, removing “steady” and “since 459.1 Ma” generalises C24’s 0.091 beyond its history class and onset age. Being below a tenth is not sufficient for every older steady-supply origin.",
+      "severity": "error",
+      "evidence": "Rock ratios match continuous count equivalents of 20.42 at 444 Ma and 13.99 at 452 Ma: they do not cover both cautious counts, 19 and 15, throughout the interval. Spore-share ratios match about 31.05 and 29.43. Primary LY-MZ-CU results with equal delivery give constant-supply limits 0.091 at 459.1 Ma, 0.0719 at 464 Ma and 0.058 at 469.4 Ma and older tested ages; the unrestricted-history limit at 459.1 Ma is instead 0.1835. These are current source checks, not memory-derived results.",
+      "repair": "“Under a level later finding rate, compatible earlier body-record histories have an expected early count of at most about three, using the rate estimated from the later count. North American non-marine column-area ratios and trilete-reporting-share ratios overlap some cautious requirements numerically; their transfer to body-fossil finding remains untested. In Libya, equal delivery permits steady supply from 459.1 Ma up to 0.091 of the Llandovery level under the primary model. Earlier steady onsets require lower supply; ancestors whose spores never reached the basin also remain compatible.”\n\nNo files were edited.\nNext: Claude — repair the identified passages.\n\n"
+    }
+  ]
+}

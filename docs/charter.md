@@ -84,6 +84,14 @@ data archived, and the human–AI correspondence record published alongside.
 ## Contributors and AI roles
 
 - Barry W. Brook: originator, scientific adviser and final reviewer.
+- Claude Fable 5.2 (Anthropic, `claude-fable-5-2`), adviser from 12 November 2026, in chats with Barry:
+  read-only critique, issue-finding and the prompts Barry passes to Claude and Codex; it makes no edits
+  to the repository. Its first prompt (14 November 2026) proposed restating the body-fossil results
+  around the rule of three.
+- Codex model identity. Barry, 14 November 2026: "Codex is actually Astra and Sol underneath the hood."
+  Entries below name the Codex model where a session exposed it (`gpt-6.1-sol`, `gpt-6.1-terra`,
+  `gpt-5.6-sol`, `gpt-5.6-luna`) and say so where it did not. Board posts by the historical author
+  Astra are Codex's.
 - Claude Opus 5.5 (Anthropic, `claude-opus-5-5`) in Claude Code: orchestration, programme
   design, synthesis, framings, tooling. It wrote the F3 changes after Codex's second review itself
   (2026-10-29): the target constraint weighted at the rates being profiled, the integrated reference
@@ -427,5 +435,14 @@ data archived, and the human–AI correspondence record published alongside.
   distinguished finite from unlimited exponential compatibility, and restricted proxy comparisons
   to descriptive ratios. Codex added case-specific numerical bindings. Barry's line-edit pass and the
   later brief/agent-guide product pass remain separate from this verification.
+- Plain wording and study-first layout (13–14 November 2026): Claude (Opus 5.5) restated Codex's
+  precision repairs in the article's plain register, with a `gpt-6.1-sol` meaning check, then moved F3
+  into `studies/f3/` at Barry's request, repaired live paths, split the decision log and verified the
+  move (byte-identical reproduction, claims re-stamped after comparison with the pre-move commit).
+- Rule of three (14 November 2026): Fable 5.2 proposed it; Claude (Opus 5.5) derived it independently,
+  checked every body-fossil output against it (`studies/f3/models/loop3/rule_of_three.py`, claim C58),
+  verified the statistical sources and rebuilt the Abstract, Results (d)–(g) and Conclusion around it,
+  with a `gpt-6.1-sol` meaning check.
 
-`docs/decisions.md` records who decided what and when, for the eventual statement of AI roles.
+`docs/decisions.md` and each study's decision log record who decided what and when, for the eventual
+statement of AI roles.

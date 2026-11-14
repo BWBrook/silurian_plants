@@ -5,6 +5,24 @@ Programme and cross-study decisions are in `docs/decisions.md`. Entries before 1
 written before the study-first move and name pre-move paths (`models/f3/`, `data/units/`,
 `manuscript/`, `docs/audits/`); `studies/f3/PATHS.tsv` maps each to its current location.
 
+## 2026-11-14: the rule of three organises the body-fossil results (Barry with Fable; Claude)
+
+Fable 5.2, advising Barry, proposed that every body-fossil number follows from one unstated fact: at
+the finding rate after the oldest find, the silence before it fits any earlier history expected to
+yield about three finds or fewer. Barry put it to Claude (chat with Fable, 14 November 2026, relayed in
+Barry's prompt): "Issue 1 is a great place to start ... So yes, let's put that to them first." Claude
+derived it independently: each of the *n* finds falls before *A* with probability p, no early find has
+probability (1 - p)^n = 0.05, and at the later rate the earlier interval holds n(0.05^(-1/n) - 1)
+expected finds, 3.09 for 48 and 3.32 for 15, tending to ln 20. `studies/f3/models/loop3/rule_of_three.py`
+confirms that every steady-rate limit, step ratio, rise, minimum delay, the 431.2 Ma crossing and the
+outside-measure matches sit at that count (claim C58, provisional until checked by Codex or Barry).
+Credit: Hanley and Lippman-Hand 1983 (DOI from Crossref; second author from PubMed, because Crossref
+omits her) and Jovanovic and Levy 1997. The Abstract, Results (d)–(g), Discussion and Conclusion now
+state the rule once and lean on it; the Abstract fell from 21 numerals to 13. Limits kept in the
+Conditions paragraph: the expected count uses the later rate estimated from the same finds, so it is
+conditional on the count and cutoff; a delay moves the start of the count; post hoc shapes carry
+compatibility, not 95% confidence; the rule covers the body record, not the Libyan spore model.
+
 ## 2026-11-13: general-points revision independently reviewed (Codex)
 
 - **Scope.** Review of the article revision through `75f2bb0`, requested by Barry on Board 158.

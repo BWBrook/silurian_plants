@@ -36,10 +36,17 @@ the purpose, the criteria a framing must meet and the planned route.
 
 ## People and AI systems
 
-Barry W. Brook (University of Tasmania) with Claude Opus 5.5 and Claude Sonnet 5.5 (Anthropic)
-working in Claude Code. Roles are recorded in [docs/charter.md](docs/charter.md).
+Barry W. Brook (University of Tasmania) works with two AI collaborators that edit the repository:
 
-OpenAI Codex implemented the private reading portal; its role is recorded in the charter.
+- Claude Opus 5.5 (Anthropic) in Claude Code, with Claude Sonnet 5.5 subagents;
+- OpenAI Codex, a direct collaborator since 28 October 2026, running OpenAI's Astra and Sol models
+  (Barry: "Codex is actually Astra and Sol underneath the hood"). Codex also built the private
+  reading portal.
+
+Claude Fable 5.2 (Anthropic) has advised since 12 November 2026: it reads the work and writes
+critiques and prompts, and makes no edits. GPT-6 Pro (OpenAI) reviewed the repository at Barry's
+request on 7 November 2026, and Codex CLI jobs (`gpt-6.1-sol`, `gpt-6.1-terra`) do delegated
+extraction and checks. Roles are recorded in [docs/charter.md](docs/charter.md).
 
 ## Third-party data
 

@@ -1,0 +1,68 @@
+{
+  "title": "Five of the seven previously flagged findings are resolved; two scope risks remain, with no new numerical error identified.",
+  "items": [
+    {
+      "location": "main.md:11–14 — Abstract: scope of the rule",
+      "old": "the statistical rule of three governs what missing fossils can say",
+      "new": "the rule of three applies: with finding level after the oldest fossil",
+      "problem": "Resolved in context. The later plateau is now explicit, and “fits” describes compatibility. The Conditions paragraph supplies the count-derived scaling, cutoff and treatment of delay.",
+      "severity": "ok",
+      "evidence": "C58 restricts this to the conditional body-record calculation. Methods (g) distinguishes compatibility for retrospective histories from confidence coverage.",
+      "repair": ""
+    },
+    {
+      "location": "main.md:15–20 — Abstract: numerical summary and proxies",
+      "old": "431.2 Ma if about half are; less non-marine rock and fewer trilete-reporting studies match the requirements",
+      "new": "near 431.2 Ma if about half are; North American non-marine rock area and trilete-reporting shares ... matching some requirements",
+      "problem": "Partly resolved. “Near 431.2” correctly describes the half-count result, and reporting shares replace study counts. However, the delay branch still needs its steady-rate condition. “Rock area” also obscures column area, “North American” can appear to qualify both proxies, and “matching” should explicitly mean numerical overlap.",
+      "severity": "risk",
+      "evidence": "At n=24 the bound is 431.1178 Ma; the exact crossing is n=23.588. C33's minimum delays assume steady finding. C56 concerns North American column area and a global document reporting share, with proportional transfer untested.",
+      "repair": "Use “or, at a steady finding rate with all 48 finds independent, if recognisable bodies appeared at least about 15–23 Myr later”. Then: “North American non-marine column-area ratios and global trilete-reporting-share ratios overlap some requirements numerically; their transfer to body-fossil finding remains untested.”"
+    },
+    {
+      "location": "main.md:168–174 — Methods (g): binomial derivation",
+      "old": "p=K/(A-c+K), and no early find has probability (1-p)^n=0.05",
+      "new": "p=R/(A-c+R); at the boundary R=K, no early find has probability (1-p)^n=0.05",
+      "problem": "Resolved. The probability now uses actual earlier exposure, with equality restricted to the boundary.",
+      "severity": "ok",
+      "evidence": "The stated transformation gives m*=n(0.05^(-1/n)-1), agreeing with C58 and rule_of_three.csv. The rule-of-three approximation is correctly distinguished from that exact expression.",
+      "repair": ""
+    },
+    {
+      "location": "main.md:228–256 — Results (d): scope of the opening rule",
+      "old": "One rule underlies every body-fossil result that follows",
+      "new": "One rule underlies the results that follow, which hold the finding rate level after the oldest find",
+      "problem": "Partly resolved. Expected counts and count-derived rate estimation are now clear. But the scope statement remains false: this same subsection subsequently reports collection-dependent and exponentially declining later rates, plus shape tests.",
+      "severity": "risk",
+      "evidence": "Lines 249–256 discuss histories without the common later plateau. C58's rule does not subsume those later-age shape diagnostics.",
+      "repair": "Replace the opening with: “The calculations with a level finding rate after the oldest find share one compatibility rule.”"
+    },
+    {
+      "location": "main.md:269–272 — Results (e): delay explanation",
+      "old": "leaving the 2.1 Myr that three finds take",
+      "new": "leaving at most the 2.1 Myr that three finds take",
+      "problem": "Resolved. “At most” now covers delays longer than the minimum.",
+      "severity": "ok",
+      "evidence": "C33 and rule_of_three.csv give minimum delays of 15.1600 and 23.1600 Myr. Equality leaves 2.1400 Myr before the oldest find; longer delays leave less.",
+      "repair": ""
+    },
+    {
+      "location": "main.md:294–298 — Results (g): proxy-scaled expectations",
+      "old": "finding scaled down by the rock measure would still have yielded about 8–11 finds",
+      "new": "if body-fossil finding were proportional to each measure in both windows ... finds would have been expected",
+      "problem": "Resolved. Both the counterfactual proportionality and expected-count interpretation are explicit.",
+      "severity": "ok",
+      "evidence": "rule_of_three.csv gives rock expectations 7.5861–11.4602 and spore-share expectations 4.8615–5.1437, all above m*(48)=3.0912. The Conditions paragraph specifies the same proportionality constant in both windows.",
+      "repair": ""
+    },
+    {
+      "location": "main.md:399–409 — Conclusion: body record, proxies and Libyan supply",
+      "old": "allows about three missed finds; trilete supply there stayed below about a tenth",
+      "new": "about three expected finds; steady trilete supply since 459.1 Ma ... with older onsets needing less",
+      "problem": "Resolved. The Conclusion restores expected counts, the later plateau, numerical proxy comparison with untested transfer, and the Libyan steady-supply history and onset. The alternatives of producers elsewhere or later acquisition of triletes preserve the distinction between ancestral presence and local spore supply.",
+      "severity": "ok",
+      "evidence": "C24 gives 0.091 for equal-delivery steady supply from 459.1 Ma. The primary m2_results.csv row gives 0.0719 at 464 Ma and 0.058 at 469.4 Ma, supporting “older onsets needing less”. These conclusions were checked against current files. No files were edited.\n\nNext: Claude — address the two remaining scope risks.\n\n",
+      "repair": ""
+    }
+  ]
+}
