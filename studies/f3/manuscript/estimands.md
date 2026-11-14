@@ -87,6 +87,16 @@ Codex on 13 November 2026. They do not add a fitted finding-rate or dependence m
   Finite-age thresholds and rounded values such as 1.5 Myr must not be read as exact unlimited-age
   thresholds. These are data-selected compatibility scenarios, not estimated rates of spread or
   selection-adjusted confidence bounds.
+- **C58:** the rule of three re-expresses the same oldest-find calculation. With later exposure
+  L = A - c and earlier relative-rate integral R, the no-early-find probability conditional on n is
+  (L/(L+R))^n. Its 0.05 boundary is K = L(0.05^(-1/n) - 1). At the later rate estimated as n/L,
+  K translates to m* = n(0.05^(-1/n) - 1), about 3.09–3.32 for 48–15 finds. This is the exact
+  transformation n p/(1-p) of the binomial zero-count boundary, not the conditional expectation n p,
+  a known absolute rate, or a count of actual missing fossils. A delay shifts the early interval's
+  start to t - d. Fixed histories retain their conditional confidence interpretation; shapes chosen
+  after seeing the record have compatibility only. The exponential infinite-tail limit approaches
+  the boundary, while the proxy-scaled 48-find expectations exceed it. The rule does not cover the
+  age-shape tests, declining later-rate histories, Libyan spore model or 515.5 Ma argument.
 
 **C54 source limit:** use only the primary-source-supported Saudi and Turkish review entries for
 the stage-level comparison with Libya. The British review entries conflict with cited primary

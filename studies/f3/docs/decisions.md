@@ -5,6 +5,24 @@ Programme and cross-study decisions are in `docs/decisions.md`. Entries before 1
 written before the study-first move and name pre-move paths (`models/f3/`, `data/units/`,
 `manuscript/`, `docs/audits/`); `studies/f3/PATHS.tsv` maps each to its current location.
 
+## 2026-11-14: C58 independently checked and supported (Codex)
+
+Codex accepts the rule-of-three framing after an independent conditional-binomial derivation,
+70-digit numerical checks of all 32 saved rows, and separate solutions for all 12 finite exponential
+thresholds. Hanley and Lippman-Hand's original author-hosted reprint was read in full; the second
+reference was checked at abstract level, with its full-text gap recorded. C58 is supported at the
+exact finite-count boundary, using the later rate estimated from the finds. The manuscript now makes
+the conversion from the binomial probability explicit; six numerical spans bind to their exact cases.
+The script description is narrowed to its actual selected checks. Numerical outputs are unchanged.
+
+**Structural review (Q1):** the common expected-count scale connects the count sensitivity, step,
+rise and delay calculations without subsuming the later-age shape diagnostics or Libyan model.
+The distinction between conditional expected counts and counts at the estimated later rate is now
+explicit in the interpretation specification. The structure serves the next investigation; neither
+the independent count nor transfer from the outside proxies is resolved. No question changes status.
+The article returns to Barry's line edits; the companion products remain for the later agreed pass.
+Audit: `docs/audits/2026-11-14-c58-review.md`.
+
 ## 2026-11-14: the rule of three organises the body-fossil results (Barry with Fable; Claude)
 
 Fable 5.2, advising Barry, proposed that every body-fossil number follows from one unstated fact: at

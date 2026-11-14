@@ -169,8 +169,8 @@ age needs [@marshall2019UsingFossilRecord]. With the later rate level and zero d
 older than *A* has probability at least 0.05) when the relative finding rate summed over [*A*, *t*] is at most $K=(A-c)(0.05^{-1/n}-1)$. Writing *R* for
 that sum, each of the *n* finds falls before *A* with probability $p=R/(A-c+R)$; at the boundary $R=K$,
 no early find has probability $(1-p)^n=0.05$, so $p\approx3/n$: the rule of three for zero counts
-[@hanley1983IfNothingGoes; @jovanovic1997LookRuleThree]. At the later rate of $n/(A-c)$ finds per Myr,
-*K* corresponds to $n(0.05^{-1/n}-1)$ expected finds before the oldest find, which approaches
+[@hanley1983IfNothingGoes; @jovanovic1997LookRuleThree]. At the later rate estimated as $n/(A-c)$ finds per Myr,
+*K* corresponds to $np/(1-p)=n(0.05^{-1/n}-1)$ expected finds before the oldest find, which approaches
 $\ln 20\approx3$ as *n* grows. The step is one shape among many; we also report a linear rise from zero at the ancestor and an exponential rise, each reaching
 the later level at *A*. We chose where to put the step and the rises after seeing the data, so these
 curves show what would fit, without the 95% confidence that (*e*) gives each fixed history.
@@ -228,8 +228,8 @@ delivery, lower local supply or producers outside the catchment all fit.
 **(d) The silence before the oldest find fits about three expected finds, so its limit depends on how
 many finds are independent.** The calculations that hold the finding rate level after the oldest
 find share one rule. Take that rate, estimated from the count: the absence of older finds fits
-any earlier history expected to yield about three finds or fewer at that rate[]{.C58}, from [3.09]{.C58} with 48 independent finds to
-[3.32]{.C58} with 15 (Material and methods (*g*)). The count sets how long three finds take at the later
+any earlier history expected to yield about three finds or fewer at that rate[]{.C58}, from [3.09]{.C58 .V178} with 48 independent finds to
+[3.32]{.C58 .V179} with 15 (Material and methods (*g*)). The count sets how long three finds take at the later
 rate: [2.1]{.C57 .V112} Myr with 48 finds, [5.7]{.C57 .V113} Myr with 19 and [7.3]{.C57 .V114} Myr
 with 15. At a steady finding rate, the 95% confidence limit on the start of the crown vascular-plant
 record lies that far before the oldest find (figure 3*a*). Counting the
@@ -293,8 +293,8 @@ times sparser at 444 and 452 Ma. The share of indexed palynological studies repo
 are numerically as large as the required finding-rate ratios for about [14]{.C56 .V134}–[20]{.C56 .V135} or fewer
 independent finds, and the spore-reporting ratios for about [29]{.C56 .V136}–[31]{.C56 .V137} or fewer. With all 48 finds independent,
 if body-fossil finding were proportional to each measure in both windows, about
-[7.6]{.C58}–[11.5]{.C58} finds would have been expected before the oldest find under the rock measure and
-[4.9]{.C58}–[5.1]{.C58} under the spore-reporting share, against about three; whether their combined effects could close that gap remains untested, and a delay
+[7.6]{.C58 .V180}–[11.5]{.C58 .V181} finds would have been expected before the oldest find under the rock measure and
+[4.9]{.C58 .V182}–[5.1]{.C58 .V183} under the spore-reporting share, against about three; whether their combined effects could close that gap remains untested, and a delay
 before recognisable bodies is another route. South American rock, recorded more coarsely, shows no
 decline.
 

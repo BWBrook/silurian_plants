@@ -440,9 +440,12 @@ data archived, and the human–AI correspondence record published alongside.
   into `studies/f3/` at Barry's request, repaired live paths, split the decision log and verified the
   move (byte-identical reproduction, claims re-stamped after comparison with the pre-move commit).
 - Rule of three (14 November 2026): Fable 5.2 proposed it; Claude (Opus 5.5) derived it independently,
-  checked every body-fossil output against it (`studies/f3/models/loop3/rule_of_three.py`, claim C58),
+  re-expressed selected level-later-rate results with it (`studies/f3/models/loop3/rule_of_three.py`, claim C58),
   verified the statistical sources and rebuilt the Abstract, Results (d)–(g) and Conclusion around it,
-  with a `gpt-6.1-sol` meaning check.
+  with a `gpt-6.1-sol` meaning check. Codex independently checked the derivation, all 32 saved
+  expected-count rows and all 12 finite exponential thresholds, read the original Hanley and
+  Lippman-Hand reprint, narrowed the script's verification description and supported C58. The parent
+  integrated one bounded mathematical audit; no numerical results changed.
 
 `docs/decisions.md` and each study's decision log record who decided what and when, for the eventual
 statement of AI roles.

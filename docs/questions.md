@@ -9,6 +9,15 @@ The programme's working list of provisional questions: what each needs, which ga
 
 The register is updated at each loop's close. Started 2026-10-28 by Claude Opus 5.5 from Barry's programme principles; questions are added or reworded by either.
 
+**Rule-of-three review, 14 November (Q1):** C58 is independently supported as a re-expression of the
+level-later-rate body-record calculation. Its expected count uses the later rate estimated from the
+same finds; it neither estimates the independent count nor establishes how finding changed. The exact
+finite-count boundary is about 3.09–3.32 expected early finds for 48–15 independent finds, rather than
+exactly three. Proxy-scaled examples still require untested transfer to body-fossil finding. The
+shape diagnostics, declining later-rate histories and Libyan model remain separate. No question
+changes status, and no new measurements or numerical results are added. The companion-product pass
+still follows reconciliation of the article. Review: `studies/f3/docs/audits/2026-11-14-c58-review.md`.
+
 **General-points review, 13 November (Q1/Q2/Q5):** C54 is narrowed to primary-source-supported Saudi
 and Turkish trilete reports with stage-age enclosures overlapping the Libyan non-detections. The two
 British review entries conflict with their cited primary source, while Belgium remains unverified in
