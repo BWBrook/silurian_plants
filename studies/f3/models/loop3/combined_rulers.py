@@ -5,6 +5,8 @@ If finding is proportional to a proxy x(s) over [c, t], the chance that all n fi
 only on the share of the integral of x before A. With Q = mean x over [c, A] / mean x over [A, t], the
 expected early finds at the later rate n/(A - c) are E = n (t - A) / ((A - c) Q), the chance of no early
 find is (1 + E/n)^(-n), and the ancestor fits the oldest find when E <= m*(n) = n(0.05^(-1/n) - 1) (C58).
+The ratio_of_product_means rows use that proportional history. The product_of_ratios rows instead
+assume that the ratio of mean finding rates equals the product of the two single-measure ratios.
 
     python3 studies/f3/models/loop3/combined_rulers.py
 """
@@ -151,7 +153,11 @@ def placement(singles, combos, A, c):
     """Where would the later finds lie if finding tracked each measure stage by stage? Compare the share of
     the later window's proxy integral in a late-Silurian interval with the finds whose whole age range lies
     there (a guaranteed minimum): 13 of 48 locality-age finds, 6 of 19 region-and-stage finds, for both
-    Gorstian-Pridoli (Lochkovian base to A) and Ludfordian-Pridoli (Lochkovian base to Gorstian top)."""
+    Gorstian-Pridoli (Lochkovian base to A) and Ludfordian-Pridoli (Lochkovian base to Gorstian top).
+    These are fixed-window allocation benchmarks. A and the interval splits were chosen from the
+    observed age supports; the binomial tails do not calibrate that selection or condition on an
+    exact oldest find. Treating regional cells as iid draws is a separate counting scenario.
+    """
     st = stages()
     lochkovian_base, ludfordian_base = st["Lochkovian"][1], st["Ludfordian"][1]
     finds = [r for r in read(OUT / "primary_unit_membership.csv")
