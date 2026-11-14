@@ -11,6 +11,9 @@ interval, a guaranteed minimum. Reports, for each interval and counting rule:
   the cutoff and at A (above 1 a rise towards the present, below 1 a fall);
 - the regions represented among the late-Silurian finds.
 
+A separate four-row table re-expresses C57's straight-line rise as its duration 2K, for precise
+case binding of the quoted lengths. It retains C57's steady later rate and zero-delay assumptions.
+
 The two Australian units that set A (426.7-393.47 Ma) lie in none of the guaranteed late-Silurian
 counts. A and the intervals still come from the observed age supports; one counted find could be
 the actual oldest fossil. The lower bounds concern interval averages, rather than a plateau or
@@ -76,6 +79,14 @@ def main():
                     "least_rate_relative_to_mean", "p_level", "largest_change_factor_cutoff_over_A",
                     "n_regions", "regions"])
         w.writerows(out)
+    rise = {int(r["n"]): r for r in csv.DictReader(open(OUT / "rise_shapes.csv"))}
+    with open(OUT / "switch_rise_lengths.csv", "w", newline="") as f:
+        w = csv.writer(f, lineterminator="\n")
+        w.writerow(["n", "linear_duration_myr"])
+        for n in (48, 24, 19, 15):
+            duration = 2 * L * (0.05 ** (-1 / n) - 1)
+            assert abs(duration / 2 - float(rise[n]["K_myr"])) < 5.1e-5
+            w.writerow([n, f"{duration:.8f}"])
     for r in out:
         print(r[:11])
 
