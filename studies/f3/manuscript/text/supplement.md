@@ -1140,43 +1140,49 @@ lists every condition behind the analyses, the results each bears on, what follo
 | *Spore record* | | | |
 | Llandovery reference spores are indigenous | Libyan limits | The effect depends on indigenous fraction, delivery and contaminant transfer: some combinations weaken the limits on older supply, others conflict with the older zeros | S2.3 |
 | Older and younger samples were reported comparably | Libyan limits | A reported absence could reflect reporting rather than supply | Methods (c); S2.1–S2.2 |
-| Ages are uniform within stages | Libyan limits | The share of older cuttings inside the window changes; fixed 10%, 50% and 90% positions are compared | S2.3; S2.5 |
-| Samples are independent apart from a shared well effect | Libyan limits | Further dependence can change how much the samples inform; illustrative block reweightings move the uncalibrated comparison contour from about a tenth to about four tenths of reference intensity | S2.5, Table S1b |
+| Ages are uniform within stages | Libyan limits | The share of older cuttings inside the window changes; fixed 10%, 50% and 90% positions are compared | S2.2–S2.3; S2.5 |
+| Samples are independent apart from a shared well effect | Libyan limits | Further dependence can change how much the samples inform; illustrative block reweightings move the uncalibrated comparison contour from about a tenth to about four tenths of reference intensity | S2.2; S2.5, Table S1b |
 | The four-tenths figure comes from an exploratory weighting untested on simulated data | Dependence sensitivity | It is a comparison, not a calibrated limit | S2.5 |
 | The comparison with other regions holds at stage resolution and depends on the spore compilation's coverage | Spores reported elsewhere in the same stages | Finer ages or missing records could change which stages count as holding triletes elsewhere | Methods (c); S2.6 |
 | The earliest crown embryophytes produced recognisable trilete spores, the trait persisted and producers lived in the catchment | Link from the Libyan limits to the 459.1 Ma maximum | The local absence alone would not justify the stated bound on the ancestor | Table 1; S6 |
 | *Body-fossil limit* | | | |
-| Finds are independent, with ages on a continuous scale; their number is unknown | Every body-fossil limit; shape tests | Fewer independent finds move the limit older; dependence among finds or ages off a continuous scale can also remove the limit's calibration | Methods (e); Results (d); figure 2; S5.2 |
+| Finds are independent, with ages on a continuous scale; their number is unknown | Every body-fossil limit; shape tests | Fewer independent finds move the limit older; dependence among finds or ages off a continuous scale can also remove the limit's calibration | Methods (e); Results (d); figure 3a; S5.2; S5.6 |
 | Finding-rate history, cutoff, timescale, inventory and counting rules are fixed | Limits and shape tests | Other choices can move the limits and change shape verdicts; choices made after seeing the data remove nominal calibration | Methods (e)–(f); S5.3 |
 | Reported age ranges contain the true ages, including whether each find falls inside the window | Limits and shape rejections | A test's error rate is at most $\alpha+\delta$, where $\delta$ is the chance that any range misses; simulations with exact ages gave coverage of [0.941–0.958]{.C34} | S5.2; S5.6 |
 | The oldest finds belong to the crown group | Link from the limit to the 431.2 Ma maximum and to ancestors | The limit dates a different category | Methods (d); S5.1, Table S13; S6 |
 | A specified delay separates the ancestor from recognisable bodies, moving the start of the count to *t* − *d* | Required rate reductions; rule of three | A longer delay lowers the reduction a given ancestor needs | Methods (g); S5.5 |
-| The rule of three counts expected early finds at a later rate estimated from the same finds | Results (f) | It is conditional on the count and the cutoff | Methods (g) |
-| The step and the rises were placed after seeing the data | Results (e)–(f) | They show what would fit, without 95% confidence | Methods (g); S5.9 |
-| The rises and the window-mean reading of the outside comparison assume a level finding rate after the oldest find, which the spread of later ages can test; finding proportional to a measure lets the later rate vary | Results (f)–(g) | Required ratios and doubling times change | Methods (f)–(h); S5.8–S5.9 |
+| The rule of three counts expected early finds at a later rate estimated from the same finds | Results (d)–(f), (h) | It is conditional on the count and the cutoff | Methods (g) |
+| The step and the rises were placed after seeing the data | Results (e)–(f) | They show what would fit, without calibrated 95% confidence | Methods (g); S5.4; S5.9 |
+| The rises and the window-mean reading of the outside comparison assume a level finding rate after the oldest find, which the spread of later ages can test; finding proportional to a measure lets the later rate vary | Results (f)–(g) | Required ratios and doubling times change | Methods (f)–(h); S5.8–S5.10 |
 | The doubling times are requirements; the spread of early plants is unmeasured | Results (f); Interpretation | They state what would fit, not what happened | Results (f); S5.9 |
 | *Outside measures* | | | |
 | The measures describe rock and published studies; each ratio would equal the ratio of mean finding rates if finding were proportional to the measure, with the same constant in both windows | Outside-measure ratios | The ratios give scale only | Methods (h); S5.8 |
 | Reading a measure's contrast as a finding-rate contrast assumes that mean finding rates share it between the windows | Results (g) | The placement check gives no reason to expect this for rock or spores | Results (g); S5.10 |
-| The combined measure was chosen after the single measures were seen | Results (g) | It has no confidence level and may count a shared cause twice | Methods (h); S5.10 |
-| The stage-permutation comparison assumes exchangeable stage labels | Overlap of the measures | Temporal dependence is left out of account | S5.10; `combined_rulers.py` |
+| The combined measure was chosen after the single measures were seen | Results (g) | It has no calibrated confidence level and may count a shared cause twice | Methods (h); S5.10 |
+| The stage-permutation comparison assumes exchangeable stage labels | Overlap of the measures | Temporal dependence is left out of account | Stated here; stage shuffles in the combined script |
 | *Placement check and switch reading* | | | |
 | Each placement check compares one late-Silurian allocation, using the 13 finds (six region-and-stage units) dated wholly within it, while up to 16 may lie there | Results (g)–(h) | The counts are minima; at a fixed total, more late finds would strengthen the case against the rock and spore measures and raise the rate bounds, but could weaken compatibility with a level rate and searching | Results (g); S5.10, Table S16 |
-| Placement units are independent and their age ranges contain the true ages | Results (g)–(h) | The binomial tails lose their reading | S5.2; S5.10; `combined_rulers.py` |
+| Placement units are independent and their age ranges contain the true ages | Results (g)–(h) | The binomial tails lose their reading | Methods (h); S5.2; S5.10; combined script |
 | The allocation inherits any imbalance in how the inventory sampled Silurian and Devonian records | Results (g)–(h) | An imbalance would shift finds between the intervals and bias the placement and switch results | Stated here |
-| The placement intervals and the oldest-age boundary *A* were chosen from the observed age ranges | Results (g)–(h) | The binomial tails describe fixed-window discrepancies, not calibrated rejection probabilities | S5.10; `switch_reading.py` |
+| The placement intervals and the oldest-age boundary *A* were chosen from the observed age ranges | Results (g)–(h) | The binomial tails describe fixed-window discrepancies, not calibrated rejection probabilities | S5.10; switch script |
 | Treating regional cells as independent draws is a separate counting scenario | Results (g)–(h) | The region-and-stage counts are an alternative reading | Results (d); S5.10 |
 | A level rate and searching remain compatible with the Gorstian–Pridoli allocation at the minimum count | Results (g) | Compatibility depends on uncertain ages and the interval chosen | Table S16 |
-| Nine of the 13 late-Silurian finds are dated only to the Pridoli | Results (h) | The bounds describe the late Silurian as a whole, not its first part | `out/primary_unit_membership.csv` |
-| One exponential family describes the later history | Results (h) | Other shapes give other change factors | S5.10 |
-| Collection density measures searching; targeted searching of the oldest plant-bearing beds is unmeasured | Results (g)–(h) | Targeted searching could raise the late-Silurian count | Conditions; Methods (h); S5.8 |
-| The rate-share bounds are lower limits on interval averages | Results (h) | They give no evidence of a plateau | S5.10 |
+| Nine of the 13 late-Silurian finds are dated only to the Pridoli | Results (h) | The bounds describe the late Silurian as a whole, not its first part | Membership table (B2/main) |
+| Only one exponential family is examined for later change | Results (h) | Other shapes give other change factors | S5.10 |
+| Collection density is used as a rough proxy for searching; targeted searching of the oldest plant-bearing beds is unmeasured | Results (g)–(h) | Targeted searching could raise the late-Silurian count | Conditions; Methods (h); S5.8 |
+| The rate-share bounds are lower limits on interval averages | Results (h) | They do not establish a plateau | S5.10 |
 | The exponential factor spans *A* to the cutoff, including the late Silurian | Results (h) | It bounds change across the whole later window | S5.10 |
 | The early-rise durations keep a steady later rate and zero delay | Results (h) | The straight-line rise spans at most a few million years to about 15, depending on the count; other histories differ | Results (f), (h); S5.9 |
-| The two units that set *A* lie outside the guaranteed late count | Results (h) | The selection of *A* remains, and a counted late find could be the actual oldest fossil | S5.10; `switch_reading.py` |
-| The switch reading concerns the finding of recognisable crown bodies | Results (h); Interpretation | It does not date when plants or the lineage arose | Discussion |
+| The two units that set *A* lie outside the guaranteed late count | Results (h) | The selection of *A* remains, and a counted late find could be the actual oldest fossil | S5.10; switch script |
+| The switch reading concerns the finding of recognisable crown bodies | Results (h); Interpretation | It does not date when plants or the lineage arose | Methods (e); Discussion, Interpretation |
 
 **Table S17.** Conditions behind the analyses: the results each bears on, what changes if it fails, and
 where it is tested or stated.
+
+Methods, Results, Discussion, Table 1 and figure numbers refer to the article; S-sections and S-tables
+refer to this supplement. Script and output paths are relative to `studies/f3/models/loop3/`. The
+combined script is `combined_rulers.py`, and the switch script is `switch_reading.py`. The membership
+table is `out/primary_unit_membership.csv`; its B2/main rows identify the crown vascular-plant units
+used here.
 
 ## References

@@ -5,6 +5,24 @@ Programme and cross-study decisions are in `docs/decisions.md`. Entries before 1
 written before the study-first move and name pre-move paths (`models/f3/`, `data/units/`,
 `manuscript/`, `docs/audits/`); `studies/f3/PATHS.tsv` maps each to its current location.
 
+## 2026-11-15: Table S17 and Interpretation accepted after pointer repairs (Codex)
+
+Codex accepts the shortened Conditions paragraph and reordered Interpretation at 49c8cb0. The
+conditional habitat-filling premise preserves the demographic distinction, and prompt spread,
+recognisability and finding remain explicit before the young-ancestor reading. One word,
+“exponential”, ties the doubling-time comparison to its tested family. The Abstract, Results (h)
+heading and short Conditions paragraph remain unchanged.
+
+An independent trace of all 34 S17 rows led to targeted cell repairs and a locator note: correct result and
+figure labels, direct base-assumption/method pointers, calibrated-confidence wording, stated
+exchangeability versus implemented shuffling, proxy status and examined-family scope. Every old
+condition remains represented in the table or its cited sections. Claims, bindings, analysis code
+and numerical outputs are unchanged; no new analysis is run.
+
+**Structural review:** the short main paragraph and supplement table serve readers better while
+keeping the assumptions traceable. No research question or scientific interpretation changes; this
+is an editorial review rather than a new research loop. Audit: `docs/audits/2026-11-15-wording-review.md`.
+
 ## 2026-11-15: wording repairs and a short Conditions paragraph (Barry with Fable; Claude)
 
 Fable reviewed main.md at 2a8ded3; Barry (chat with Fable, 15 November 2026): "Fix wording first". On

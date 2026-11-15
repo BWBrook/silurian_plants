@@ -370,7 +370,7 @@ support to an earlier fall in finding. The pooled late-Silurian finds give the l
 *Interpretation.* What follows goes beyond the tests. One reading is a switch: one or more evolutionary
 innovations let these plants spread quickly through the habitat open to them, with no further innovation
 needed. Populations can grow fast on geological timescales: at an illustrative net increase of 1% a year,
-numbers double in about 70 years, whereas the slowest rises in finding allowed in Results (*f*) double
+numbers double in about 70 years, whereas the slowest exponential rises in finding allowed in Results (*f*) double
 every [1.5]{.C57 .V118}–[5.8]{.C57 .V122} Myr. If populations filled the habitat open to them that quickly, a rise in finding that slow would be paced by something else: dispersal through suitable habitat, new habitat, further evolution, preservation or searching. A lineage can stay small and rare
 until habitat opens, so a switch would date the spread and leave the lineage's origin open. The family
 tree then matters. If both living branches inherited the innovation, it preceded their split, and their
