@@ -265,6 +265,32 @@ references:
   page: 50–78
   publisher: Wiley
   DOI: 10.1111/nph.12645
+- id: edwards2021PiecingTogetherEophytes
+  citation-key: edwards2021PiecingTogetherEophytes
+  type: article-journal
+  title: Piecing together the eophytes – a new group of ancient plants containing cryptospores
+  author:
+  - family: Edwards
+    given: Dianne
+  - family: Morris
+    given: Jennifer L.
+  - family: Axe
+    given: Lindsey
+  - family: Duckett
+    given: Jeffrey G.
+  - family: Pressel
+    given: Silvia
+  - family: Kenrick
+    given: Paul
+  issued:
+    date-parts:
+    - - 2021
+  container-title: New Phytologist
+  volume: '233'
+  issue: '3'
+  page: 1440–1455
+  publisher: Wiley
+  DOI: 10.1111/nph.17703
 - id: hanley1983IfNothingGoes
   citation-key: hanley1983IfNothingGoes
   type: article-journal
@@ -677,6 +703,32 @@ references:
   issue: '10'
   publisher: National Academy of Sciences
   DOI: 10.1073/pnas.1719588115
+- id: morris2024LowerDevonianTortilicaulis
+  citation-key: morris2024LowerDevonianTortilicaulis
+  type: article-journal
+  title: Lower Devonian Tortilicaulis is an early tracheophyte and not a bryophyte
+  author:
+  - family: Morris
+    given: Jennifer L.
+  - family: Edwards
+    given: Dianne
+  - family: Axe
+    given: Lindsey
+  - family: Crooks
+    given: Tom
+  - family: Murdock
+    given: Duncan
+  - family: Donoghue
+    given: Philip C. J.
+  issued:
+    date-parts:
+    - - 2024
+  container-title: Fossil Imprint
+  volume: '80'
+  issue: '1'
+  page: 135–153
+  publisher: National Museum, Czech Republic
+  DOI: 10.37520/fi.2024.012
 - id: parham2011BestPracticesJustifying
   citation-key: parham2011BestPracticesJustifying
   type: article-journal
@@ -803,6 +855,44 @@ references:
   page: 181–190
   publisher: Informa UK Limited
   DOI: 10.1080/11035897.2019.1636860
+- id: salamon2018PutativeLateOrdovician
+  citation-key: salamon2018PutativeLateOrdovician
+  type: article-journal
+  title: Putative Late Ordovician land plants
+  author:
+  - family: Salamon
+    given: Mariusz A.
+  - family: Gerrienne
+    given: Philippe
+  - family: Steemans
+    given: Philippe
+  - family: Gorzelak
+    given: Przemysław
+  - family: Filipiak
+    given: Paweł
+  - family: Le Hérissé
+    given: Alain
+  - family: Paris
+    given: Florentin
+  - family: Cascales‐Miñana
+    given: Borja
+  - family: Brachaniec
+    given: Tomasz
+  - family: Misz‐Kennan
+    given: Magdalena
+  - family: Niedźwiedzki
+    given: Robert
+  - family: Trela
+    given: Wiesław
+  issued:
+    date-parts:
+    - - 2018
+  container-title: New Phytologist
+  volume: '218'
+  issue: '4'
+  page: 1305–1309
+  publisher: Wiley
+  DOI: 10.1111/nph.15091
 - id: scotese2021PhanerozoicPaleotemperaturesEarths
   citation-key: scotese2021PhanerozoicPaleotemperaturesEarths
   type: article-journal
@@ -992,6 +1082,26 @@ references:
   page: 90–106
   publisher: National Museum, Czech Republic
   DOI: 10.37520/fi.2024.009
+- id: uhlirova2024EarlyLandPlant
+  citation-key: uhlirova2024EarlyLandPlant
+  type: article-journal
+  title: New early land plant Capesporangites petrkraftii gen. et sp. nov. from the Silurian, Prague Basin, Czech Republic
+  author:
+  - family: Uhlířová
+    given: Monika
+  - family: Pšenička
+    given: Josef
+  - family: Sakala
+    given: Jakub
+  issued:
+    date-parts:
+    - - 2024
+  container-title: Review of Palaeobotany and Palynology
+  volume: '322'
+  page: '105048'
+  article-number: '105048'
+  publisher: Elsevier BV
+  DOI: 10.1016/j.revpalbo.2023.105048
 - id: vecoli2017MiddleOrdovicianCryptospores
   citation-key: vecoli2017MiddleOrdovicianCryptospores
   type: article-journal
@@ -1118,6 +1228,26 @@ references:
   page: 461–476
   publisher: Geological Society of London
   DOI: 10.1144/m38.29
+- id: wellman2022TerrestrializationOrdovician
+  citation-key: wellman2022TerrestrializationOrdovician
+  type: article-journal
+  title: Terrestrialization in the Ordovician
+  author:
+  - family: Wellman
+    given: Charles H.
+  - family: Cascales-Miñana
+    given: Borja
+  - family: Servais
+    given: Thomas
+  issued:
+    date-parts:
+    - - 2022
+  container-title: Geological Society, London, Special Publications
+  volume: '532'
+  issue: '1'
+  page: 171–190
+  publisher: Geological Society of London
+  DOI: 10.1144/sp532-2022-92
 - id: white2008PalynodataDatafile2006
   citation-key: white2008PalynodataDatafile2006
   type: report
