@@ -5,6 +5,48 @@ Programme and cross-study decisions are in `docs/decisions.md`. Entries before 1
 written before the study-first move and name pre-move paths (`models/f3/`, `data/units/`,
 `manuscript/`, `docs/audits/`); `studies/f3/PATHS.tsv` maps each to its current location.
 
+## 2026-11-15: the three body groups on one footing; branched plants test the 431.2 Ma maximum as built (Barry with Fable; Claude)
+
+Fable's issue 3, at cbba1ae, relayed by Barry, who wrote to Fable: "I strongly agree. It is essential to
+properly contextualise group 2 ... To me, even group 1 is relevant here, because those earlier fragments
+that cannot be reliably assigned to a group *might* be early bryophytes, which are still living and still
+a potentially key part of the embryophyte origin story."
+
+Adopted (C61, provisional): a main-text Table 2 sets land-plant bodies, branched plants and crown vascular
+plants side by side with examples, the question each answers, the maximum each bears on, finds, oldest
+possible find, steady-rate limit and shape result. The 431.2 Ma maximum was keyed to a branched
+*Cooksonia*, so the branched-plant record is the test of that maximum as built: its steady-rate limit is
+434.65 Ma with 69 finds and older at every smaller count, so a 95% maximum drawn from that record would
+lie at 434.6 Ma or older. That is an upper limit: the record does not show branched plants before 431.2 Ma,
+because *C. barrandei*'s range (430.6-432.9 Ma) spans that age (Sol's repair of a first wording). The crown group answers the narrower question of when the dated clade's own characters appear
+and what older crown ancestors require; it stays the basis of C48 and C55-C60. Ancestors at 444-452 Ma
+need branched-plant finding 6.3-10.9 times lower (all 69) or 2.6-4.5 (29 region-stage cells), close to
+the crown requirement, so the requirement result does not depend on the group.
+
+Fable's premise that the branched record fits a steady rate poorly holds only for midpoint ages and many
+draws (Table S7); the interval-wide test passes (best p 0.21). Each isolated early find (Oman for land-plant
+bodies; the disputed Zbrza axes for branched plants) makes every declared history fail and, by a post hoc
+gap measure, needs finding at least 7.7 (Oman) or 6.1 (Zbrza) times lower for over ten million years.
+Fable's rough figures (6-11; 8-12) reproduce. The three named gaps change no oldest age: eophyte body
+localities (Ludford Lane, Brown Clee Hill), Targrove and Freshwater East's main-reading branched unit are
+missing later records (up to four move the branched limit to 434.55 Ma); *Capesporangites petrkraftii*
+is absent and its horizon unread (closed; added to `docs/closed-literature.csv`).
+
+Disagreement kept with Fable: the branched group does not take over the headline analyses, because the
+dated node is the crown and the C57-C60 shape and placement results were built on crown finds; it gets
+equal billing for the 431.2 Ma test and the requirement.
+
+Sol (gpt-6.1-sol, high) recomputed every group limit, factor, gap measure and both spot-checked shape
+tests independently and agreed; it also explained Table S7's midpoint failure (one allocation of all 71
+possible units at midpoints, D 0.204). Its six wording repairs were adopted: the upper-limit reading above,
+B1 as the maximum's fossil rationale rather than "as built", the gap result as an average over the gap,
+crown characters that "may have arisen" after the split, eophyte locality sources attributed separately,
+and *T. transwalliensis* "fragments". Audit: `studies/f3/docs/audits/2026-11-15-c61-groups-sol-check.json`.
+
+**Structural review (Q1, Q2):** the inventory's E3 channel was enumerated only for the Homerian and older,
+so younger branched records enter only through other routes; a later inventory pass should assess them.
+No question changes status; Q1 gains a direct test of the 431.2 Ma maximum on its own evidence.
+
 ## 2026-11-15: Table S17 and Interpretation accepted after pointer repairs (Codex)
 
 Codex accepts the shortened Conditions paragraph and reordered Interpretation at 49c8cb0. The

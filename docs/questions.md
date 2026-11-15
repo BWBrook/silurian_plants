@@ -9,6 +9,14 @@ The programme's working list of provisional questions: what each needs, which ga
 
 The register is updated at each loop's close. Started 2026-10-28 by Claude Opus 5.5 from Barry's programme principles; questions are added or reworded by either.
 
+**Body groups on one footing, 15 November (Q1, Q2):** C61 (provisional): the branched-plant record, to which
+the 431.2 Ma maximum was keyed, gives a steady-rate limit of 434.65 Ma or older at every count, so a
+95% maximum drawn from it would lie older than 431.2 Ma; older ancestors need branched-plant finding 6.3-10.9 times
+lower, close to the crown requirement. Isolated early finds (Oman; disputed Zbrza) each need over ten
+million years of finding several times lower. Q2 lead: younger branched records were never assessed through
+the E3 channel (Freshwater East, Targrove, Brown Clee Hill, Ludford Lane missing); *Capesporangites
+petrkraftii* horizon unread (closed).
+
 **Switch reading, 14 November (Q1):** C60 (provisional, post hoc): finding was at least about 0.8 of its
 later average over the late Silurian and, among exponential histories, rose at most about 1.8-fold over
 the next 33 Myr; with C57, the simple rises fitting an older ancestor climb steeply to that level near

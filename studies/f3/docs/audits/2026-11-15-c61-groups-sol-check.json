@@ -1,0 +1,109 @@
+{
+  "verdict": "repair",
+  "recomputed": [
+    {
+      "quantity": "B1 main",
+      "yours": "n=69; A=432.9; T=434.6496 Ma. Region–stage n=29, T=437.1910. Factors at 444/452 Ma: 6.3443/10.9167; region–stage: 2.5868/4.4512.",
+      "reported": "Identical at reported precision. Fable’s rough 6–11 times is correct.",
+      "agree": true
+    },
+    {
+      "quantity": "B1 inclusive",
+      "yours": "n=73; A=445.2; T=447.3670 Ma. Region–stage n=32, T=450.2767. Factors at 444/452 Ma: inapplicable/3.1379; region–stage: inapplicable/1.3394.",
+      "reported": "Identical. At 444 Ma, the algebraic factors are negative (−0.5538/−0.2364), so reporting no applicable suppression factor is appropriate.",
+      "agree": true
+    },
+    {
+      "quantity": "B0 with Oman",
+      "yours": "n=76; A=452.8; T=455.1853 Ma. Region–stage n=31, T=458.8196. Both candidate ages are younger than A, so suppression factors are inapplicable.",
+      "reported": "Identical. Raw algebraic factors at 444/452 are −3.6892/−0.3354; region–stage −1.4619/−0.1329.",
+      "agree": true
+    },
+    {
+      "quantity": "B0 without Oman",
+      "yours": "n=75; A=432.9; T=434.5068 Ma. Region–stage n=30, T=437.0407. Factors at 444/452 Ma: 6.9080/11.8867; region–stage: 2.6807/4.6128.",
+      "reported": "Identical at reported precision.",
+      "agree": true
+    },
+    {
+      "quantity": "B2 main",
+      "yours": "n=48; A=426.7; T=428.8400 Ma. Region–stage n=19, T=432.3750. Factors at 444/452 Ma: 8.0841/11.8224; region–stage: 3.0484/4.4581.",
+      "reported": "Identical at reported precision. All five groups’ additional-unit limits also reproduce.",
+      "agree": true
+    }
+  ],
+  "gap_checks": [
+    {
+      "case": "B0 with Oman; b=432.9",
+      "yours": "Other n=75, k=0. At a0=445.2/452.8: rho upper=0.130637/0.0807454; reciprocal=7.65481/12.38461. Short-gap region–stage reciprocal=2.97052.",
+      "reported": "7.6548/12.3846; region–stage 2.9705.",
+      "agree": true,
+      "note": "Inventory confirms no other guaranteed unit reaches above 432.9 Ma."
+    },
+    {
+      "case": "B1 inclusive; b=432.9",
+      "yours": "Other n=72, k=0. At a0=443.1/445.2: rho upper=0.164234/0.136194; reciprocal=6.08887/7.34246. Short-gap region–stage reciprocal=2.54964.",
+      "reported": "6.0889/7.3425; region–stage 2.5496.",
+      "agree": true,
+      "note": "Inventory confirms Zbrza is the isolated oldest unit under this reading."
+    },
+    {
+      "case": "B1 main; b=426.7",
+      "yours": "Other n=68, k=1. At a0=430.6/432.9: rho upper=0.620407/0.390256; reciprocal=1.61185/2.56242. Steady expectations=7.14247/10.69237. Short-gap region–stage reciprocal=0.623068.",
+      "reported": "1.6118/2.5624; expectations 7.14/10.69; region–stage 0.6231.",
+      "agree": true,
+      "note": "Only tail:M-borrisnoe reaches into the stretch. Thus k=1 is the conservative maximum permitted by its range; allocation exactly at b could give k=0. No suppression is required by the region–stage result."
+    }
+  ],
+  "shape_checks": [
+    {
+      "case": "B1 main, flat, guaranteed units",
+      "result": "Independent rank-allocation search gives an admissible witness with oldest age 430.824669 Ma, D=0.126517051 and finite-sample p=0.208037955. Every allocated age lies inside its support; reproduces 0.208.",
+      "agree": true
+    },
+    {
+      "case": "B1 inclusive, flat, guaranteed units",
+      "result": "Independent witness at oldest age 443.1 Ma gives D=0.302667517 and finite-sample p=2.38753858e-06. Every allocated age lies inside its support; reproduces 2.39e-06.",
+      "agree": true
+    }
+  ],
+  "midpoint_explanation": "Table S7 uses one specific allocation: all 71 possible B1 units at their midpoints. I reproduce D=0.203746828 and asymptotic p=0.00598415. Its finite-sample p would be 0.00503184. The new 0.208 instead uses 69 guaranteed units and favourable placements throughout their supports. Wide intervals permit much more evenly spaced conditional ages than their midpoints produce. Allocation optimisation explains the main difference; sample inclusion and reference distribution also differ. A passing witness establishes compatibility, not probable ages or evidence that the history is correct.",
+  "meaning_issues": [
+    {
+      "passage": "main.md:393–395 and 477–478: “younger than the start” / “younger than its own evidence allows”",
+      "issue": "These conclusions reverse the role of an upper confidence limit. T=434.65 does not establish that the record began before 431.2. The admitted C. barrandei interval, 430.6–432.9, straddles 431.2.",
+      "suggested_fix": "“The branched-body analysis gives a steady-rate upper limit of 434.6 Ma, extending beyond the published maximum; it does not establish that the record began before 431.2 Ma.”"
+    },
+    {
+      "passage": "Abstract; Results (i); Table 2: branched plants as “the record it was built from” / “431.2 Ma, as built”",
+      "issue": "B1 is relevant to auditing the maximum’s fossil rationale, but is broader than the source’s claimed unequivocal total-group Tracheophyta. Branching alone does not establish that placement. An older stem fossil also need not contradict a younger crown.",
+      "suggested_fix": "Describe B1 as “the broader branched-body record relevant to the maximum’s fossil rationale”. Retain B2 as the conditional crown-record analysis, with explicit placement and recognisability assumptions."
+    },
+    {
+      "passage": "main.md:353–354: “Either find fits ... only if finding stayed several times lower”",
+      "issue": "The post hoc calculation constrains a model-dependent interval average. It establishes neither continuous suppression throughout the gap nor an exhaustive necessary historical explanation.",
+      "suggested_fix": "“Under the independent-find calculation, these gaps imply average finding several times lower than in the later window across intervals exceeding ten million years; these are post hoc benchmarks.”"
+    },
+    {
+      "passage": "main.md:395: “such characters arose after the split”",
+      "issue": "Crown membership does not establish when diagnostic characters originated. Crown synapomorphies can predate the crown split; daughter-lineage characters may arise later.",
+      "suggested_fix": "“Characters diagnosing daughter lineages may have arisen after the crown split, delaying recognisable crown fossils.”"
+    },
+    {
+      "passage": "supplement.md:1042: “The one feature that departs from a level rate”",
+      "issue": "The analyses identify a sparse stretch, without establishing that it is the unique departure. The selected stretch also lacks calibrated significance.",
+      "suggested_fix": "“One conspicuously sparse stretch is the Homerian.”"
+    },
+    {
+      "passage": "main.md:359–361; supplement.md:1068–1072, eophytes",
+      "issue": "The card attributes Ludford Lane’s Pridoli occurrence specifically to Wellman’s 2026 abstract, whereas the passage cites Edwards 2021. It also identifies Fusiformitheca as the replacement name for Fusitheca.",
+      "suggested_fix": "Attribute the locality evidence separately and use “Fusiformitheca (formerly Fusitheca)”."
+    },
+    {
+      "passage": "supplement.md:1078: T. transwalliensis “shows unbranched fertile axes”",
+      "issue": "The specimens table records unbranched fragments and explicitly declines to infer whole-plant architecture. Freshwater East’s eligibility through branched Cooksonia is supported. Zbrza’s dispute and the distinction between T. offaeus and T. transwalliensis are represented adequately.",
+      "suggested_fix": "Use “preserves unbranched fertile fragments”. In main.md:367, clarify that a younger Capesporangites horizon could affect the count and limit, although not the oldest age."
+    }
+  ],
+  "item2_judgement": "The gap method is sound under the stated conditional iid, two-rate model: beta-quantile inversion independently reproduces the binomial limits. With n, k and b fixed, rho_upper is proportional to 1/G, so the shortest gap gives the weakest, conservative restriction; counting every potentially intersecting unit is conservative too. Selecting the stretches after observing the record removes nominal 95% coverage. The interval-wide KS rule is the appropriate conservative counterpart conditional on the fixed history, independent units, correct supports and inclusion states; it is not unconditional calibration or validation of a passing history. The crown group’s younger limit is fairly reported numerically, but its biological interpretation needs the repairs above. No files were edited.\n\nNext: Claude — repair the interpretation and source attribution.\n\n"
+}

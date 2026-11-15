@@ -1014,6 +1014,80 @@ same stages, North American non-marine column area is zero in the Gorstian and L
 runs [0.183]{.C60 .V242}, [0.191]{.C60 .V243} and [0.194]{.C60 .V244} from the Gorstian to the Pridoli and [0.502]{.C60 .V245} in the
 Lochkovian. These bounds are post hoc and descriptive, with the conditions of the placement test.
 
+### S5.11 The three groups on one footing
+
+`studies/f3/models/loop3/groups.py` puts land-plant bodies (B0, with and without the Oman fragments),
+branched plants (B1, main and inclusive readings) and crown vascular plants (B2) through the same steps:
+the steady-rate limit $c+(A-c)\,0.05^{-1/n}$, the zero-delay factor $(t-A)/[(A-c)(0.05^{-1/n}-1)]$ for
+ancestors at 444 and 452 Ma, and the interval-wide shape test of S5.2, run for the guaranteed units and
+with every straddling unit included. The limits agree with Table S3 wherever that table has a row[]{.C61}.
+
+| Group | Units | Oldest (Ma) | Limit (Ma) | Limit, region–stage (Ma) | Factor at 444 / 452 Ma | Factor, region–stage | Best *p*, constant | Best *p*, decl. 25 |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| B0 +Oman | [76]{.C61} | [452.8]{.C61} | [455.19]{.C61} | | | | [3.15e-07]{.C61} | |
+| B0 −Oman | [75]{.C61} | [432.9]{.C61} | [434.51]{.C61} | | [6.9]{.C61} / [11.9]{.C61} | | | |
+| B1 main | [69]{.C61} | [432.9]{.C61} | [434.65]{.C61} | [437.19]{.C61} | [6.34]{.C61} / [10.92]{.C61} | [2.59]{.C61} / [4.45]{.C61} | [0.208]{.C61} | [5.85e-05]{.C61} |
+| B1 inclusive (Zbrza) | [73]{.C61} | [445.2]{.C61} | [447.37]{.C61} | | — / [3.14]{.C61} | | [2.39e-06]{.C61} | |
+| B2 main | [48]{.C61} | [426.7]{.C61} | [428.84]{.C61} | | [8.08]{.C61} / [11.82]{.C61} | | [0.985]{.C61} | |
+
+**Table S17.** The three nested groups, main reading unless stated, Emsian cutoff, guaranteed units.
+Factor: how many times less often finds must have been made before the oldest find than after it, for
+ancestors at 444 and 452 Ma with zero delay. Best *p*: finite-sample conditional KS *p* at the most
+favourable admissible age allocation; every value for the other histories is in
+`studies/f3/models/loop3/out/groups.csv`.
+
+**Why the branched record looked a poor fit.** Table S7 gives the steady branched-plant history a
+midpoint *p* of 0.006 and poor fits across many age draws. Under the interval-wide test it passes (best
+*p* = [0.21]{.C61}), as the crown record does; the midpoint failure reflects where wide age ranges are
+placed. One conspicuously sparse stretch is the Homerian: after *C. barrandei*
+(430.6–432.9 Ma) the only branched find before the Ludlow is the Irish material (426.7–430.6 Ma),
+where a level rate predicts [7.14]{.C61} of the other [68]{.C61} finds, or [10.69]{.C61} if *C. barrandei* is
+as old as 432.9 Ma. Conditional on the oldest find at its age, with the other finds independent draws
+and a relative rate $\rho$ in the stretch, the one-sided 95% upper limit on $\rho$ from the count gives
+finding at least [1.61]{.C61} times lower ([2.56]{.C61} times at the longer stretch); with region–stage
+cells it gives no constraint ([0.62]{.C61}). The stretch was chosen after seeing the finds.
+
+**Gaps after isolated early finds.** The same calculation with no find in the stretch reduces to
+$\rho\le (L/G)(0.05^{-1/n}-1)$, the rule of three in reverse, for a gap $G$ before a later window of length $L$.
+
+| Oldest find | Gap (Ma) | Gap length (Myr) | Other units | At least times lower | Longest gap | Region–stage |
+|---|---|---:|---:|---:|---:|---:|
+| Oman fragments (B0) | 445.2–432.9 | [12.30]{.C61} to [19.90]{.C61} | [75]{.C61} | [7.65]{.C61} | [12.38]{.C61} | [2.97]{.C61} |
+| Zbrza axes (B1 inclusive) | 443.1–432.9 | [10.20]{.C61} to [12.30]{.C61} | [72]{.C61} | [6.09]{.C61} | [7.34]{.C61} | [2.55]{.C61} |
+
+**Table S18.** Finding rate in the gap after an isolated early find, relative to the later window
+(`studies/f3/models/loop3/out/groups_inside.csv`). The gaps were chosen after seeing the finds; the
+shape tests in Table S17 are the calibrated check, and both groups fail every declared history with the
+isolated find included. The Oman fragments came from palynological preparation of borehole material,
+unlike most later finds; Zbrza membership is disputed [@salamon2018PutativeLateOrdovician; @wellman2022TerrestrializationOrdovician]
+(`docs/rejected-records.md`, entry 11).
+
+**Records missing from the inventory.** Three gaps were checked against the inventory and the sources
+held.
+
+- *Eophytes.* Their bodies are known from the Lochkovian of Brown Clee Hill, Shropshire
+  [@edwards2021PiecingTogetherEophytes], and are reported from the Pridoli of Ludford Lane in a 2026
+  conference abstract by Wellman (`taxa/eophytes.md`); neither locality is in the inventory. All are land-plant bodies;
+  forms with a forking fertile axis, such as *Fusiformitheca* (formerly *Fusitheca*), could also qualify as branched plants, although
+  they lack water-conducting cells and their placement ranges from the embryophyte stem to the tracheophyte stem. They would add later units only.
+- *Tortilicaulis transwalliensis.* Its type locality, Freshwater East (Pridoli), enters only the
+  inclusive reading, through a lycophyte reading of its *Cooksonia*. Edwards (1979, *Palaeontology*)
+  figures branched *Cooksonia cambrensis* and *C. hemisphaerica* axes with terminal sporangia there
+  (`studies/f3/data/pilot/specimens.csv`), so the locality qualifies as a branched-plant unit in the main
+  reading too; the E3 channel was enumerated only for the Homerian and older (S5.1). *T. transwalliensis*
+  itself preserves unbranched fertile fragments at the type locality and branched ones at Targrove (Lochkovian), a
+  locality also absent; tracheid-like cells are reported in *T. offaeus* from Brown Clee Hill
+  [@morris2024LowerDevonianTortilicaulis], not in *T. transwalliensis*, so its crown status is uncertain.
+- *Capesporangites petrkraftii.* Described from the Silurian of the Prague Basin as a plant with
+  dichotomously branched axes and terminal sporangia [@uhlirova2024EarlyLandPlant], it is absent from
+  the inventory. The paper is closed and its horizon unread; the publisher's listing places the material
+  in the Kosov quarry, whose inventory unit is Pridoli. It would change an oldest age only if older than
+  *C. barrandei* (`docs/closed-literature.csv`).
+
+Each missing record is Pridoli or younger where its age is known, so it could only add later units. One to
+four more branched-plant units move the steady limit from [434.65]{.C61} to between [434.62]{.C61} and
+[434.55]{.C61} Ma.
+
 ## S6. From specimens to nodes
 
 The specimen-to-node pilot separates specimen observations, accepted event readings, encounter, trait
@@ -1132,7 +1206,7 @@ the byte count before checking the observation extraction. No source text is red
 
 ## S9. Conditions
 
-The article's Conditions paragraph names the five conditions that bear most on its conclusions. Table S17
+The article's Conditions paragraph names the five conditions that bear most on its conclusions. Table S19
 lists every condition behind the analyses, the results each bears on, what follows if it fails or what it implies, and where it is tested or stated.
 
 | Condition | Bears on | Effect if it fails, or implication | Tested or stated |
@@ -1176,7 +1250,7 @@ lists every condition behind the analyses, the results each bears on, what follo
 | The two units that set *A* lie outside the guaranteed late count | Results (h) | The selection of *A* remains, and a counted late find could be the actual oldest fossil | S5.10; switch script |
 | The switch reading concerns the finding of recognisable crown bodies | Results (h); Interpretation | It does not date when plants or the lineage arose | Methods (e); Discussion, Interpretation |
 
-**Table S17.** Conditions behind the analyses: the results each bears on, what changes if it fails, and
+**Table S19.** Conditions behind the analyses: the results each bears on, what changes if it fails, and
 where it is tested or stated.
 
 Methods, Results, Discussion, Table 1 and figure numbers refer to the article; S-sections and S-tables
