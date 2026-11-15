@@ -15,9 +15,8 @@ discoveries mean three finds take longer; at a steady rate the 95% limit on the 
 start is [428.8]{.C27 .V003} Ma if all [48]{.C25} are, near 431.2 Ma if half are. Ancestors at
 444–452 Ma fit if early fossils were found [2.4]{.C48 .V056}–[12]{.C48 .V055} times less often,
 depending on that count, if finding rose fast enough, or if recognisable bodies appeared later.
-The late-Silurian finding rate averaged at least two-thirds of the later-window mean[]{.C60}, whereas North
-American land-laid rock area and the share of studies reporting trilete spores rose later, so neither matches
-the pattern of finds[]{.C59}.
+Late-Silurian fossils turned up at two-thirds or more of their average rate after the oldest find[]{.C60},
+whereas North American land-laid rock area and the share of studies reporting trilete spores rose later; neither matches the finds[]{.C59}.
 
 **Keywords:** molecular clock; fossil calibration; land plants; vascular plants; stratigraphic
 confidence interval; Ordovician–Silurian
@@ -312,10 +311,10 @@ fails where the record can test it gives little reason to trust it before the ol
 record cannot. Searching, the one measure compatible with this minimum-count allocation, falls far too
 little to fit ancestors at 444–452 Ma with zero delay[]{.C59}.
 
-**(h) Late-Silurian finds limit how low the average finding rate could be.** The late-Silurian finds, none
+**(h) Late-Silurian fossils turned up at two-thirds or more of their average rate after the oldest find.** The late-Silurian finds, none
 of them among the units that set *A*, put the average finding rate over the Gorstian to Pridoli at no
 less than [0.79]{.C60 .V226} of the whole later-window mean with all 48 finds independent, or [0.69]{.C60 .V227} counting by
-region and stage (one-sided 95% fixed-window benchmarks). Among exponential histories, finding could
+region and stage (lower 95% bounds). Among exponential histories, finding could
 rise at most about [1.8]{.C60 .V228}-fold, or [2.4]{.C60 .V229}-fold, from *A* to the cutoff, a 33 Myr window that
 includes the late Silurian. The finds come from six regions, from
 Laurentia and Baltica to South China and South America. Before the oldest find, (*d*) allows about three
@@ -368,28 +367,20 @@ late-Silurian finds than the 13 observed. The measures fail this later-record ch
 support to an earlier fall in finding. The pooled late-Silurian finds give the lower rate benchmarks in
 (*h*), and those finds come from six regions.
 
-*Interpretation.* The rest of this paragraph is interpretation beyond the tests. One possible reading is a
-switch: one or more evolutionary innovations may have triggered rapid spread into the habitat open
-to these plants, with no further innovation needed. At an assumed net increase of 1% a year, a population
-doubles in about 70 years, far faster than the 1.5–5.8 Myr finding examples in Results (*f*). This is
-an illustration, not an estimate of ancient growth. Slow net population growth, dispersal, habitat,
-evolution, preservation or searching could all pace a rise in finding. If biological spread caused
-the pattern, a switch would date that spread rather than lineage origin; a lineage can persist small
-and rare before habitat opens. If both living branches inherited a shared innovation, it preceded
-their split. Their ancestor would be near the first crown fossils if crown members also spread
-promptly, were recognisable and were found at roughly the later rate. Shared inheritance alone leaves
-the gap open: a later or environmental trigger, or delayed spread or recognisability after an inherited
-trigger, permits a much older ancestor. A planned study of which traits the earliest fossils combine,
-and in what order they appear, bears on this reading. Three cautions apply. Widespread
-*Cooksonia*-like plants, in the broad historical sense, group simple forms from more than one lineage
-[@kenrick2012TimelineTerrestrializationConsequences], so the apparent sameness of early floras partly
-reflects how few features they show. Early specimens include fragments preserved in marine or
-near-shore sediments [@edwards1979RecordsFertileRhyniophytina; @libertin2018SporophytesPolysporangiateLand],
-so growth habitats and transport routes are inferred. And *C. barrandei* sporangia hold trilete spores
-[@libertin2018SporophytesPolysporangiateLand], while trilete spores appear tens of millions of years
-earlier [@hooper2026ReconstructingSporeEvolution], while the relationship of those dispersed-spore
-producers to these bodies remains uncertain. A change in preservation, such as the spread of tissues that fossilise well,
-would look the same in this record.
+*Interpretation.* What follows goes beyond the tests. One reading is a switch: one or more evolutionary
+innovations let these plants spread quickly through the habitat open to them, with no further innovation
+needed. Populations can grow fast on geological timescales: at an illustrative net increase of 1% a year,
+numbers double in about 70 years, whereas the slowest rises in finding allowed in Results (*f*) double
+every [1.5]{.C57 .V118}–[5.8]{.C57 .V122} Myr. If populations filled the habitat open to them that quickly, a rise in finding that slow would be paced by something else: dispersal through suitable habitat, new habitat, further evolution, preservation or searching. A lineage can stay small and rare
+until habitat opens, so a switch would date the spread and leave the lineage's origin open. The family
+tree then matters. If both living branches inherited the innovation, it preceded their split, and their
+ancestor lies near the first crown fossils, provided crown members spread promptly, were recognisable and
+were found at about the later rate; otherwise, or if the trigger came after the split or was environmental, the ancestor can be much older. A planned study of which traits the earliest fossils combine, and in what order they appear, bears on this fork. Three cautions apply: *Cooksonia*-like plants, in the broad historical sense,
+group simple forms from more than one lineage [@kenrick2012TimelineTerrestrializationConsequences], so the apparent sameness of early floras partly reflects how few features they show;
+early specimens include fragments preserved in marine or near-shore sediments, so their growth habitats and transport routes are inferred [@edwards1979RecordsFertileRhyniophytina; @libertin2018SporophytesPolysporangiateLand]; and
+trilete spores, which *C. barrandei* sporangia hold [@libertin2018SporophytesPolysporangiateLand], appear
+tens of millions of years earlier [@hooper2026ReconstructingSporeEvolution], from producers whose relation
+to these bodies is uncertain. A change in preservation would look the same in this record.
 
 Silvestro et al. [@silvestro2015RevisitingOriginDiversification] modelled genus-level PBDB plant
 occurrences with a joint Bayesian model of preservation and diversification, and estimated the origin of
@@ -402,51 +393,11 @@ and test different assumptions. CladeDate builds calibration densities directly 
 to revised calibrations. We make the maxima's observational requirements explicit, limiting local spore
 supply and sizing the reductions in finding rate, or the delays, that fit older vascular-plant dates.
 
-**Conditions.** The Libyan limits assume that the Llandovery spores are indigenous, that older and
-younger samples were reported comparably, that ages are uniform within stages, and that samples are
-independent apart from a shared well effect; the four-tenths figure comes from an exploratory weighting
-that was not tested on simulated data (electronic supplementary material, S2.5). The comparison with
-other regions holds at stage resolution and depends on the coverage of the spore compilation. Linking the local spore record to
-ancestors requires that the earliest crown embryophytes produced recognisable trilete spores, that the
-trait persisted and that producers lived in the catchment (electronic supplementary material, S6).
-
-The body-fossil limits and shape rejections assume independent ages on a continuous scale; fixed
-finding-rate histories, cutoff, timescale, inventory and counting rules; and an observation process
-whose reported age ranges always contain the true ages, including whether each find falls inside the
-window. Geological age ranges carry no demonstrated joint coverage; if the probability that any range
-misses its true age is $\delta$, the test's error rate is at most $\alpha+\delta$, where $\alpha$ is its
-level for exact ages. Simulations with exact ages
-gave coverage of [0.941–0.958]{.C34} (electronic supplementary material, S5.6). The step scenario was chosen after
-seeing the data. Linking the vascular-plant limit to ancestors requires that the oldest finds belong to
-the crown group, and a specified delay before recognisable bodies. The rule of three counts expected
-early finds at the later rate estimated from the same finds, so it is conditional on the count and the
-cutoff, and a delay moves the start of that count to *t* − *d*. The rises and the
-window-mean reading of the outside comparison assume a level finding rate after the oldest find, which
-the spread of later fossil ages can test, while finding proportional to a measure lets the later rate
-vary with it; the doubling times are requirements, and the spread of early plants is unmeasured. The outside
-measures describe rock and published studies; each ratio would equal the ratio of mean finding rates if
-finding rate were proportional to that measure, with the same constant in both windows. The placement
-check contradicts finding proportional to the rock measure, the spore share or their product within the
-later window; a level rate and searching remain compatible with the Gorstian–Pridoli allocation at the
-minimum count, a result that depends on uncertain ages and the interval chosen. Reading any measure's contrast as a finding-rate contrast assumes that mean finding rates share it
-between the windows, which the placement check gives no reason to expect for rock or spores. Each
-placement check compares one late-Silurian allocation, using the 13 finds (six region-and-stage units)
-dated wholly within it, while up to 16 may lie there, independent units and age
-ranges that contain the true ages, and inherits any imbalance in how the inventory sampled Silurian and
-Devonian records. Both placement intervals and the oldest-age boundary were chosen from the observed
-age ranges, so the binomial tails describe fixed-window discrepancies rather than calibrated rejection
-probabilities after that choice. Treating regional cells as independent draws is another counting
-scenario. The stage-permutation comparison assumes exchangeable labels and leaves temporal dependence
-out of account. The combined measure was chosen after the single ones were seen, has no confidence
-level, and may count a shared cause twice. The switch reading uses the same minimum counts, nine of the
-13 dated only to the Pridoli, and one exponential family for the later history; targeted searching of the oldest
-plant-bearing beds, which collection density does not measure, could raise the late-Silurian count.
-Its rate-share bounds are lower limits on interval averages, not evidence of a plateau, and the
-exponential factor spans *A* to the cutoff, including the late Silurian. Its early-rise durations retain
-a steady later rate and zero delay: the straight-line example spans at most a few million years to
-about 15, depending on the count. The two units setting *A* are absent from the guaranteed late count,
-but that selection remains, and a counted late find could be the actual oldest fossil. The reading concerns
-the finding of recognisable crown bodies, not when plants or the lineage arose.
+**Conditions.** Five conditions bear most on these conclusions. The number of independent finds is unknown, and every body-fossil limit depends on it and on an assumed finding-rate history. Fossil ages are ranges, and the tests assume that
+each range contains the true age. Linking the body record to an ancestor requires that the oldest finds
+belong to the crown group, and an assumed delay before recognisable bodies. The spore result comes from
+one polar basin and assumes indigenous Llandovery spores and comparable reporting of older and younger
+samples. The step, the rises, the combined measure and the late-Silurian checks were chosen after seeing the data, so none carries a calibrated confidence level. Targeted searching of the oldest plant beds could have inflated the late-Silurian count. Electronic supplementary material, table S17, lists every condition.
 
 Published evidence could narrow these requirements. Records of searched Silurian terrestrial beds, with
 effort and empty beds included, would help constrain early finding rates, and rock-unit compilations

@@ -1,0 +1,414 @@
+{
+  "verdict": "repair",
+  "items": [
+    {
+      "old_condition": "Llandovery reference spores are indigenous.",
+      "new_location": "Conditions; S17 “Llandovery reference spores are indigenous”.",
+      "status": "kept"
+                   ,
+      "note": ""
+    },
+    {
+      "old_condition": "Older and younger samples were reported comparably.",
+      "new_location": "Conditions; S17 “Older and younger samples were reported comparably”.",
+      "status": "kept"
+    ,
+      "note": ""
+    },
+    {
+      "old_condition": "Libyan sample ages are uniform within stages.",
+      "new_location": "S17 “Ages are uniform within stages”.",
+      "status": "kept"
+    ,
+      "note": ""
+    },
+    {
+      "old_condition": "Samples are independent conditional on a shared well effect.",
+      "new_location": "S17 “Samples are independent apart from a shared well effect”.",
+      "status": "kept"
+    ,
+      "note": ""
+    },
+    {
+      "old_condition": "The four-tenths result uses exploratory weighting untested on simulated data.",
+      "new_location": "S17 “The four-tenths figure comes from an exploratory weighting”.",
+      "status": "kept"
+    ,
+      "note": ""
+    },
+    {
+      "old_condition": "Regional spore comparisons have stage resolution and depend on compilation coverage.",
+      "new_location": "S17 “The comparison with other regions holds at stage resolution”.",
+      "status": "kept"
+    ,
+      "note": ""
+    },
+    {
+      "old_condition": "Linking spores to ancestors assumes earliest crown embryophytes produced recognisable triletes.",
+      "new_location": "S17 “The earliest crown embryophytes produced recognisable trilete spores”.",
+      "status": "kept"
+    ,
+      "note": ""
+    },
+    {
+      "old_condition": "The trilete trait persisted.",
+      "new_location": "Same S17 row: “the trait persisted”.",
+      "status": "kept"
+    ,
+      "note": ""
+    },
+    {
+      "old_condition": "Spore producers lived in the catchment.",
+      "new_location": "Same S17 row: “producers lived in the catchment”.",
+      "status": "kept"
+    ,
+      "note": ""
+    },
+    {
+      "old_condition": "Body-fossil limits and shape rejections assume independent, continuous occurrence ages.",
+      "new_location": "S17 “Finds are independent, with ages on a continuous scale”; S5.2 “independent continuous occurrence ages”.",
+      "status": "kept"
+    ,
+      "note": ""
+    },
+    {
+      "old_condition": "Finding history, cutoff, timescale, inventory and counting rules are fixed.",
+      "new_location": "S17 “Finding-rate history, cutoff, timescale, inventory and counting rules are fixed”.",
+      "status": "kept"
+    ,
+      "note": ""
+    },
+    {
+      "old_condition": "Reported ranges contain true ages and the true cutoff-inclusion state; this also underlies placement checks.",
+      "new_location": "Conditions; S17 “Reported age ranges contain the true ages” and “Placement units are independent”.",
+      "status": "kept"
+    ,
+      "note": ""
+    },
+    {
+      "old_condition": "Geological ranges lack demonstrated joint coverage; containment failure probability δ gives an error bound α+δ.",
+      "new_location": "S17 “Reported age ranges contain the true ages”; S5.2 “these geological ranges have no demonstrated joint coverage”.",
+      "status": "kept",
+      "note": "The absence of demonstrated joint coverage survives in S5.2."
+    },
+    {
+      "old_condition": "Exact-age simulations gave coverage 0.941–0.958.",
+      "new_location": "S17 “Reported age ranges contain the true ages”, effect cell; S5.6.",
+      "status": "kept"
+    ,
+      "note": ""
+    },
+    {
+      "old_condition": "The step was chosen after seeing the data.",
+      "new_location": "Conditions; S17 “The step and the rises were placed after seeing the data”.",
+      "status": "kept"
+    ,
+      "note": ""
+    },
+    {
+      "old_condition": "Linking body-fossil limits to ancestors requires crown membership of the oldest finds.",
+      "new_location": "Conditions; S17 “The oldest finds belong to the crown group”.",
+      "status": "kept"
+    ,
+      "note": ""
+    },
+    {
+      "old_condition": "An ancestral interpretation specifies a recognisability delay; counting begins at t−d.",
+      "new_location": "Conditions; S17 “A specified delay separates the ancestor from recognisable bodies”.",
+      "status": "kept"
+    ,
+      "note": ""
+    },
+    {
+      "old_condition": "The rule of three uses the later rate estimated from the same finds and is conditional on count and cutoff.",
+      "new_location": "S17 “The rule of three counts expected early finds”; Methods (g), “estimated as n/(A−c)”.",
+      "status": "kept"
+    ,
+      "note": ""
+    },
+    {
+      "old_condition": "Rise examples and the window-mean comparison assume a level later rate, testable using later fossil ages.",
+      "new_location": "S17 “The rises and the window-mean reading”; S5.9 “the later fossil-age pattern can test that shared plateau”.",
+      "status": "kept"
+    ,
+      "note": ""
+    },
+    {
+      "old_condition": "Finding proportional to a measure allows the later rate to vary with that measure.",
+      "new_location": "Same S17 row: “finding proportional to a measure lets the later rate vary”.",
+      "status": "kept"
+    ,
+      "note": ""
+    },
+    {
+      "old_condition": "Doubling times are fitting requirements; early-plant spread is unmeasured.",
+      "new_location": "S17 “The doubling times are requirements”; S5.9 “not estimates of spread”.",
+      "status": "kept"
+    ,
+      "note": ""
+    },
+    {
+      "old_condition": "Outside measures describe rock and published studies.",
+      "new_location": "S17 “The measures describe rock and published studies”.",
+      "status": "kept"
+    ,
+      "note": ""
+    },
+    {
+      "old_condition": "Proportional finding with the same constant across windows makes proxy ratios equal mean-rate ratios; interpreting mean contrasts requires their transfer between windows.",
+      "new_location": "S17 “The measures describe rock” and “Reading a measure's contrast”; S5.8 “if finding rate were proportional to that proxy throughout both windows”.",
+      "status": "kept",
+      "note": "S5.8 preserves the original sufficient condition, but S17 adds an incorrect “only if”; see table issues."
+    },
+    {
+      "old_condition": "Placement contradicts finding proportional to rock, spore share or their product within the later window.",
+      "new_location": "Results (g), “Finding that followed rock area, the spore share or their product would put…”; S5.10/Table S16.",
+      "status": "kept"
+    ,
+      "note": ""
+    },
+    {
+      "old_condition": "Level finding and searching remain compatible at the minimum Gorstian–Pridoli count, depending on uncertain ages and interval choice.",
+      "new_location": "S17 “A level rate and searching remain compatible”.",
+      "status": "kept"
+    ,
+      "note": ""
+    },
+    {
+      "old_condition": "Placement and switch readings use a single interval allocation: 13 guaranteed finds, six regional units, potentially up to 16 finds.",
+      "new_location": "S17 “Each placement check compares one late-Silurian allocation”; S5.10 “The same minimum counts”.",
+      "status": "kept"
+    ,
+      "note": ""
+    },
+    {
+      "old_condition": "Placement inherits Silurian–Devonian inventory sampling imbalance.",
+      "new_location": "S17 “The inventory sampled Silurian and Devonian records evenly”, effect cell: “Any imbalance passes into the allocation”.",
+      "status": "kept",
+      "note": "The caveat survives, but the condition column adds an unwarranted even-sampling assumption."
+    },
+    {
+      "old_condition": "Placement intervals and A were selected from observed ranges; tails are fixed-window discrepancies without selection-calibrated rejection probabilities.",
+      "new_location": "S17 “The placement intervals and the oldest-age boundary A”.",
+      "status": "kept"
+    ,
+      "note": ""
+    },
+    {
+      "old_condition": "Independent regional cells constitute another counting scenario.",
+      "new_location": "S17 “Treating regional cells as independent draws”.",
+      "status": "kept"
+    ,
+      "note": ""
+    },
+    {
+      "old_condition": "Stage permutation assumes exchangeable labels and ignores temporal dependence.",
+      "new_location": "S17 “The stage-permutation comparison assumes exchangeable stage labels”, including its effect cell.",
+      "status": "kept"
+    ,
+      "note": ""
+    },
+    {
+      "old_condition": "The combined measure was chosen after inspecting single measures and has no confidence level.",
+      "new_location": "S17 “The combined measure was chosen after the single measures were seen”.",
+      "status": "kept"
+    ,
+      "note": ""
+    },
+    {
+      "old_condition": "The combined measure may double-count a shared cause.",
+      "new_location": "Same S17 row, effect cell: “may count a shared cause twice”.",
+      "status": "kept"
+    ,
+      "note": ""
+    },
+    {
+      "old_condition": "Nine of the 13 late finds are dated only to the Pridoli.",
+      "new_location": "S17 “Nine of the 13 late-Silurian finds”.",
+      "status": "kept",
+      "note": "Confirmed directly from primary_unit_membership.csv: nine Pridoli supports and four Ludfordian–Pridoli supports."
+    },
+    {
+      "old_condition": "Later-history change factors use one exponential family.",
+      "new_location": "S17 “One exponential family describes the later history”.",
+      "status": "kept"
+    ,
+      "note": ""
+    },
+    {
+      "old_condition": "Targeted searching of oldest plant beds could elevate late counts and is not measured by collection density.",
+      "new_location": "Conditions; S17 “Collection density measures searching”.",
+      "status": "kept"
+    ,
+      "note": ""
+    },
+    {
+      "old_condition": "Rate-share bounds are lower bounds on interval averages, not evidence of a plateau.",
+      "new_location": "S17 “The rate-share bounds are lower limits on interval averages”.",
+      "status": "kept"
+    ,
+      "note": ""
+    },
+    {
+      "old_condition": "The exponential factor spans A to the cutoff, including the late Silurian.",
+      "new_location": "S17 “The exponential factor spans A to the cutoff”.",
+      "status": "kept"
+    ,
+      "note": ""
+    },
+    {
+      "old_condition": "Early-rise durations retain steady later finding and zero delay; linear examples last at most a few to about 15 Myr depending on count.",
+      "new_location": "S17 “The early-rise durations keep a steady later rate and zero delay”.",
+      "status": "kept"
+    ,
+      "note": ""
+    },
+    {
+      "old_condition": "A-setting units are outside guaranteed late counts, but selection remains and a counted late find could be the actual oldest fossil.",
+      "new_location": "S17 “The two units that set A lie outside the guaranteed late count”, including its effect cell.",
+      "status": "kept"
+    ,
+      "note": ""
+    },
+    {
+      "old_condition": "The switch reading concerns finding recognisable crown bodies, not plant or lineage origin.",
+      "new_location": "S17 “The switch reading concerns the finding of recognisable crown bodies”.",
+      "status": "kept"
+    ,
+      "note": ""
+    }
+  ],
+  "table_issues": [
+    {
+      "row": "Column heading “If it fails”",
+      "issue": "All 34 data rows checked. Many cells describe implications when the stated caveat holds, rather than consequences of its failure—for example, uncalibrated weighting and interval-average bounds.",
+      "suggested_fix": "Use “Implication or sensitivity”."
+    },
+    {
+      "row": "“Llandovery reference spores are indigenous”",
+      "issue": "Contamination does not invariably weaken limits. S2.3 also identifies transfer scenarios incompatible with older zeros even at f=0.",
+      "suggested_fix": "Say effects depend on indigenous fraction, delivery and contaminant transfer; some weaken limits and others conflict with the observations."
+    },
+    {
+      "row": "“Samples are independent apart from a shared well effect”",
+      "issue": "“Fewer effective samples” presents an inference the block weighting does not establish. S2.5 explicitly says it does not estimate correlation or full block dependence.",
+      "suggested_fix": "Say additional dependence can change information; the illustrative reweightings move the uncalibrated contour to about four tenths."
+    },
+    {
+      "row": "“The earliest crown embryophytes produced recognisable trilete spores”",
+      "issue": "“Would say nothing about the ancestor” is too absolute: failure removes this direct ancestral-bound interpretation, not necessarily all information. S6 also does not state the catchment requirement.",
+      "suggested_fix": "Use “The local absence alone would not justify the stated ancestral bound”; add Table 1 to the pointer."
+    },
+    {
+      "row": "“Finds are independent, with ages on a continuous scale”",
+      "issue": "Fewer genuinely independent units move the bound older, but arbitrary dependence or non-continuous ages can invalidate calibration rather than merely change the count. The row also bears on shape tests; the cited passages omit the explicit continuity condition.",
+      "suggested_fix": "Separate count sensitivity from failure of distributional assumptions; include shape tests and point to S5.2."
+    },
+    {
+      "row": "“Finding-rate history, cutoff, timescale, inventory and counting rules are fixed”",
+      "issue": "“Each choice moves the limit” is categorical and omits consequences for shape verdicts and calibration.",
+      "suggested_fix": "Say changed choices can alter limits and shape verdicts; data-dependent choices can remove nominal calibration."
+    },
+    {
+      "row": "“Reported age ranges contain the true ages”",
+      "issue": "“Error rate rises” implies a necessary increase. α+δ is an upper bound, not the actual error rate.",
+      "suggested_fix": "Restore “the error rate is at most α+δ”."
+    },
+    {
+      "row": "“The doubling times are requirements”",
+      "issue": "Results (f) states fitting requirements but does not explicitly state that spread is unmeasured.",
+      "suggested_fix": "Add S5.9, which says “not estimates of spread”."
+    },
+    {
+      "row": "“The measures describe rock and published studies”",
+      "issue": "“Only if” turns the old sufficient condition into a necessary one. Equal window-mean ratios do not require stage-by-stage proportionality.",
+      "suggested_fix": "Restore “would equal … if”; retain the separate, weaker assumption about transfer of window-mean contrasts."
+    },
+    {
+      "row": "“The stage-permutation comparison assumes exchangeable stage labels”",
+      "issue": "S5.10 reports the permutation result but states neither exchangeability nor omission of temporal dependence.",
+      "suggested_fix": "State those qualifications in S5.10 or additionally cite combined_rulers.py:spearman_exact_p for the unrestricted shuffling."
+    },
+    {
+      "row": "“Each placement check compares one late-Silurian allocation”",
+      "issue": "“More late finds would strengthen both results” is too broad. At fixed total count, more late allocations strengthen discrepancies from rock/spore proxies and increase rate lower bounds, but can undermine compatibility with level finding and searching.",
+      "suggested_fix": "Name those effects separately and specify fixed total count/counting rule."
+    },
+    {
+      "row": "“Placement units are independent and their age ranges contain the true ages”",
+      "issue": "S5.10 uses a binomial distribution but does not explicitly state these assumptions.",
+      "suggested_fix": "State them beside the placement calculation; S5.2 supplies the general containment discussion."
+    },
+    {
+      "row": "“The inventory sampled Silurian and Devonian records evenly”",
+      "issue": "Adds an even-sampling assumption absent from the old caveat. Finding rates can incorporate uneven sampling. Neither S5.1 nor S5.10 establishes even sampling or explicitly states this caveat.",
+      "suggested_fix": "Restore “The allocation inherits any Silurian–Devonian sampling imbalance”; describe its consequence for biological interpretation rather than assuming evenness."
+    },
+    {
+      "row": "“Treating regional cells as independent draws”",
+      "issue": "S5.10 compares regional counts without explicitly explaining their status as an independence scenario.",
+      "suggested_fix": "Add Results (d): “These are counting scenarios, not estimates”."
+    },
+    {
+      "row": "“Nine of the 13 late-Silurian finds”",
+      "issue": "The number is correct, but S5.10 does not give the nine/four breakdown.",
+      "suggested_fix": "Add that breakdown to S5.10 or cite primary_unit_membership.csv."
+    },
+    {
+      "row": "“Collection density measures searching”",
+      "issue": "S5.10 does not state the targeted-searching caveat.",
+      "suggested_fix": "Point to the new Conditions paragraph for that caveat; Methods (h)/S5.8 define collection density as the rough proxy."
+    },
+    {
+      "row": "“The two units that set A lie outside the guaranteed late count”",
+      "issue": "S5.10 supports exclusion, but not explicitly the remaining A-selection issue or possibility that a counted late find is actually oldest.",
+      "suggested_fix": "Add switch_reading.py:17–21, which states both qualifications."
+    }
+  ],
+  "meaning_issues": [
+    {
+      "passage": "Abstract: “fossils turned up at two-thirds or more of their later rate”",
+      "issue": "Drops both interval averaging and the denominator's identity. “Later rate” can mean a subsequent or steady rate, whereas the denominator is the whole overlapping 426.7–393.47 Ma window.",
+      "suggested_fix": "Restore “The late-Silurian finding rate averaged at least two-thirds of the whole later-window mean”, preferably identifying this as a post hoc bound."
+    },
+    {
+      "passage": "Results (h) heading and “(lower 95% bounds)”",
+      "issue": "The heading converts a conditional lower benchmark into an attained-rate statement. Removing “fixed-window benchmarks” obscures the absence of selection-calibrated coverage. “Lower 95%” adequately indicates direction, but loses the crucial qualification.",
+      "suggested_fix": "Restore the old heading and “one-sided 95% fixed-window benchmarks”."
+    },
+    {
+      "passage": "Interpretation: “Growth that slow would mean a population held near a limit”",
+      "issue": "Introduces a necessary causal inference unsupported by the demographic illustration or fossil tests; finding-rate growth also need not equal population growth.",
+      "suggested_fix": "Use a conditional argument: “If populations rapidly filled occupied habitat, a much slower rise in finding could instead reflect dispersal through suitable habitat, new habitat or further evolution, as well as preservation or searching.”"
+    },
+    {
+      "passage": "Interpretation: inherited innovation, older ancestors and “this fork”",
+      "issue": "The prompt-spread provisos remain, but the revision deletes the explicit older-ancestor alternative involving delayed spread or recognisability after an inherited trigger. The apparent two-way fork obscures that alternative.",
+      "suggested_fix": "Restore a sentence saying shared inheritance alone leaves the gap open, including delayed spread or recognisability."
+    },
+    {
+      "passage": "“the order in which the earliest fossils acquired their traits”",
+      "issue": "Changes observed trait combinations/appearance order into evolutionary acquisition order, which the fossil sequence does not directly establish.",
+      "suggested_fix": "Restore “which traits the earliest fossils combine, and in what order they appear”."
+    },
+    {
+      "passage": "Interpretation: “Three cautions apply”",
+      "issue": "Compression removes two explicit scientific qualifications: sparse features partly explain apparent floral sameness, and transport routes are inferred.",
+      "suggested_fix": "Restore those clauses if scientific content is intended to remain unchanged."
+    },
+    {
+      "passage": "Conditions: “carry no confidence level; those checks use minimum counts, which targeted searching … could raise”",
+      "issue": "The checks have nominal fixed-window benchmarks, although no selection-calibrated confidence. The adjoining wording also conflates minimum chronological allocations with possible targeted-search bias in the inventory.",
+      "suggested_fix": "Say “lack selection-calibrated confidence”; separately state that counts are minima and the inventory may reflect targeted searching."
+    }
+  ],
+  "flagged_sentence": {
+    "verdict": "new_needs_repair",
+    "reason": "Slow net growth does not necessarily imply density limitation or a moving ceiling: births and losses can nearly balance without density regulation. Calling every constraint a “limit” makes the argument tautological. Dispersal-limited range expansion is a valid conditional example: local populations may grow quickly while a front advances through fixed suitable habitat. That does not establish a rising carrying capacity. Keep the demographic contrast conditional and distinguish population growth from growth in finding."
+  },
+  "later_rate_wording": {
+    "verdict": "misleading",
+    "reason": "C60 and switch_reading.csv give lower benchmarks of 0.692 and 0.790 for a late-Silurian interval average divided by the whole later-window mean, including the late Silurian. They establish neither a subsequent steady rate nor a plateau. The abstract's earlier steady-rate assumption is conditional and does not justify that implication."
+  },
+  "five_conditions": "The five are defensible priorities, but assumed finding-rate history—especially the steady later rate behind the rule-of-three and rise examples—is at least as consequential as the combined measure's post hoc status. Fold it into the first condition while retaining five. All old caveats remain somewhere; the repairs concern added implications, pointers and changed Discussion wording. No files edited.\n\nNext: Claude — repair wording and pointers.\n\n"
+}

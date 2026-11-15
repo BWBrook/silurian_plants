@@ -5,6 +5,39 @@ Programme and cross-study decisions are in `docs/decisions.md`. Entries before 1
 written before the study-first move and name pre-move paths (`models/f3/`, `data/units/`,
 `manuscript/`, `docs/audits/`); `studies/f3/PATHS.tsv` maps each to its current location.
 
+## 2026-11-15: wording repairs and a short Conditions paragraph (Barry with Fable; Claude)
+
+Fable reviewed main.md at 2a8ded3; Barry (chat with Fable, 15 November 2026): "Fix wording first". On
+the Conditions section Barry wrote that it had "swelled to absurdity, because of an earlier directive of
+mine to the models not the end every positive statement with a hedge (a sign of bad writing) and to leave
+the caveats/limits/axioms/assumptions to a paragraph to the discussion. They obeyed, but took that
+guideline to extremis, with almost comical results. I suspect a lot of it can move to the supplementary
+information (even perhaps to a table), rather than dragging down the main article like a sheet anchor."
+
+Adopted rule: Barry's one-section rule for caveats stands, and the section must also be short. A
+condition earns main-text space only if it changes how a reader should take a headline result. The two
+Conditions paragraphs (695 words) became one of about 130 words naming five conditions; supplement S9,
+Table S17 (34 rows), holds every condition with the result it bears on, its effect if it fails, and
+where it is tested or stated. No number or claim changed.
+
+Also rewritten: the abstract's last sentence, the Results (h) heading, and the Interpretation paragraph,
+now ordered as switch, demography, habitat limit, the fork on the trigger, the trait study, cautions.
+The pacing sentence ("Slow net population growth, ... could all pace a rise in finding") was replaced:
+if populations fill open habitat within decades, a rise in finding over millions of years is paced by
+something else (dispersal, new habitat, further evolution, preservation or searching). Fable's draft
+("a population held near a limit") was not adopted: Sol noted that near-zero net growth need not mean
+density regulation and that finding need not track numbers.
+
+Sol (gpt-6.1-sol, high) checked the revision: all 40 atomic conditions of the old text are kept, and
+15 table cells and pointers were repaired as Sol proposed. Two of Sol's requests were declined because
+they restore the hedging this round removes: the old Results (h) heading and the "fixed-window
+benchmarks" parenthesis (the post hoc status is now stated once in Conditions). Sol's point that the
+assumed finding-rate history matters as much as post hoc choices was taken into the first condition.
+Audit: `studies/f3/docs/audits/2026-11-15-conditions-wording-sol-check.json`.
+
+**Structural review (Q1):** wording only; no question changes. The supplement table gives the caveats a
+home that later analyses can extend without growing the article.
+
 ## 2026-11-14: C59 restatement and C60 independently checked (Codex)
 
 C59 returns to supported: its five data tables are unchanged from the independent check at 6978d4a,
