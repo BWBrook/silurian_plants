@@ -10,8 +10,8 @@ qualitative argument, and 459.1 Ma for living land plants; 431.2 Ma for living v
 three-rayed (trilete) spores are reported in Ordovician Libyan borehole samples[]{.C01}, most from stages
 with such spores elsewhere[]{.C45}[]{.C54}: absence can be local. The rule of three applies: if fossils turn up at a steady rate after the oldest, the silence before it fits any
 history expected to yield about three finds or fewer at that rate[]{.C58}. For vascular plants, the steady-rate 95% limit on the record's start is [428.8]{.C27 .V003} Ma if all
-[48]{.C25} finds are independent, near 431.2 Ma if half are, and [434.6]{.C61} Ma or older for the branched plants
-that maximum was keyed to. Ancestors at
+[48]{.C25} finds are independent, near 431.2 Ma if half are, and [434.1]{.C61 .V246}–[437.2]{.C61 .V247} Ma for branched plants,
+which include the *Cooksonia* behind that maximum. Ancestors at
 444–452 Ma fit if early fossils were found [2.4]{.C48 .V056}–[12]{.C48 .V055} times less often,
 if finding rose fast enough, or recognisable bodies appeared later.
 Late-Silurian fossils turned up at two-thirds or more of their average rate after the oldest find[]{.C60},
@@ -325,62 +325,73 @@ or faster (*f*). A delay before recognisable bodies gives the same pattern. Rock
 change elsewhere: both stay low through the late Silurian and rise in the Lochkovian (electronic
 supplementary material, S5.10).
 
-**(i) Branched plants give an older limit, and each isolated early find implies a long stretch of
-rare finding.** Table 2 sets the three groups side by side on the steady-rate footing of (*d*). The 431.2 Ma
-maximum dates living vascular plants but was keyed to a branched *Cooksonia*, so the branched-plant
-record carries its fossil rationale: no branched plants, so no crown ancestor, before that age. That record begins with *C. barrandei* at up to [432.9]{.C61} Ma, and
-its steady-rate limit is [434.6]{.C61} Ma with all [69]{.C61} finds independent and [437.2]{.C61} Ma
-counting each region and stage once ([29]{.C61} finds). A 95% maximum drawn from this record would
-therefore lie at [434.6]{.C61} Ma or older at every count, older than 431.2 Ma; the record does not show that
-branched plants began before 431.2 Ma, because the range of *C. barrandei* spans that age. A steady rate
-fits the branched record under some assignment of its ages (best *p* = [0.21]{.C61}), as it fits the crown
-record, and declines into the past fail. Ancestors at 444–452 Ma fit if branched plants were found
-[6.3]{.C61}–[10.9]{.C61} times less often before their oldest find than after it with all 69 independent,
-or [2.6]{.C61}–[4.5]{.C61} times by region and stage, close to the crown-group requirements of (*e*). The
-Homerian holds one branched find after *C. barrandei*, the Irish material, where a level rate predicts
-[7.1]{.C61}–[10.7]{.C61}; branched-plant finding there was at least [1.6]{.C61} times lower, a measure
-chosen after seeing the finds that counting by region and stage does not support[]{.C61}.
+**(i) Branched plants give an older endpoint limit, and isolated early finds set conditional gap
+benchmarks.** Table 2 sets the three groups side by side on the steady-rate footing of (*d*). Hooper et
+al. keyed the 431.2 Ma maximum to Irish *Cooksonia* as the first unequivocal total-group vascular plant,
+citing branching sporophytes among its characters. Branched plants, a broader group that also holds
+branched bodies of unproven vascular status, test the branched-body record behind that rationale. That
+record begins with *C. barrandei* at up to [432.9]{.C61 .V248} Ma. Its steady-rate limit is [434.6]{.C61 .V249} Ma with
+all [69]{.C61 .V250} locality–age finds independent, and runs from [434.1]{.C61 .V246} Ma counting each collection
+([101]{.C61 .V251} finds) to [437.2]{.C61 .V247} Ma counting each region and stage once ([29]{.C61 .V252} finds). Under this
+endpoint method every counting rule places the limit older than 431.2 Ma, and a maximum built by the same
+method from this record would lie older too. The limit leaves a start at 431.2 Ma open, because the range
+of *C. barrandei* spans that age. A steady rate fits the branched record under some assignment of its ages
+in every inclusion state of the finds straddling the window's young end (best *p* [0.21]{.C61 .V253} or more),
+as it fits the crown record, and declines into the past fail. Ancestors at 444–452 Ma fit if branched
+plants were found [6.3]{.C61 .V254}–[10.9]{.C61 .V255} times less often before their oldest find than after it with
+all 69 independent, or [2.6]{.C61 .V256}–[4.5]{.C61 .V257} times by region and stage, close to the crown-group
+requirements of (*e*).
+
+Gaps after isolated finds are measured by a benchmark chosen after seeing the finds: with the oldest find's
+age fixed and the other finds independent, it gives the one-sided 95% limit on average finding across a
+stretch relative to the later window (electronic supplementary material, S5.11). The Homerian holds one
+branched find after *C. barrandei*, the Irish material, where a level rate predicts
+[7.1]{.C61 .V258}–[10.7]{.C61 .V259}; the benchmark requires average branched-plant finding there at least
+[1.6]{.C61 .V260} times lower, and counting by region and stage requires no reduction[]{.C61}.
 
 Two isolated older finds each widen a group. Sporangial fragments with in situ cryptospores from the
 Ghaba-1 borehole, Oman, dated to the Katian on later correlation [@wellman2003FragmentsEarliestLand], form
 one land-plant body find. Adding them moves the steady-rate limit for all land-plant body fossils from
 [434.5]{.C28} to [455.2]{.C40 .V022} Ma, and the enlarged set fails the shape test under all six
 histories[]{.C49}. In the main reading, no other land-plant body is older than 432.9 Ma, the oldest possible age of the next
-find, and the fragments are at least 445.2 Ma old; with the other [75]{.C61} finds independent, finding in that gap was at least [7.7]{.C61} times
-lower than afterwards, or [12.4]{.C61} times if the fragments are as old as 452.8 Ma ([3.0]{.C61} times by
+find, and the fragments are at least 445.2 Ma old; with the other [75]{.C61 .V261} finds independent, the benchmark requires average finding in that gap at
+least [7.7]{.C61 .V262} times lower than afterwards, or [12.4]{.C61 .V263} times if the fragments are as old as 452.8 Ma ([3.0]{.C61 .V264} times by
 region and stage). The disputed Hirnantian axes from Zbrza, Poland [@salamon2018PutativeLateOrdovician;
 @wellman2022TerrestrializationOrdovician], do the same for branched plants: accepting them moves the
-branched-plant limit to [447.4]{.C61} Ma, every declared history then fails the shape test, and finding
-in the following gap to 432.9 Ma was at least [6.1]{.C61} times lower ([2.5]{.C61} times by region and
-stage). With the finds independent, each gap implies average finding several times lower than in the later
-window over more than ten million years[]{.C61}. The gaps were measured after the finds were seen; the shape tests, which
-compare the whole spread of ages, are the calibrated check. The Oman fragments came from palynological
+branched-plant limit to [447.4]{.C61 .V265} Ma, every declared history then fails the shape test, and the
+benchmark requires average finding in the following gap to 432.9 Ma at least [6.1]{.C61 .V266} times lower
+([2.5]{.C61 .V267} times by region and stage). Each benchmark concerns the average over more than ten million
+years, however finding varied within the gap[]{.C61}; the shape tests, which compare the whole spread of
+ages, are the calibrated check. The Oman fragments came from palynological
 preparation of borehole material, whereas most later finds are compressions collected from bedding
 planes [@edwards1979RecordsFertileRhyniophytina].
 
-Some later records are missing from the inventory. Eophytes, minute plants with forking axes and
-cryptospores but no water-conducting cells, are known as bodies from the Lochkovian of Brown Clee Hill,
-Shropshire [@edwards2021PiecingTogetherEophytes], and are reported in a 2026 conference abstract from the
-Pridoli of Ludford Lane; neither locality is in the inventory. Freshwater
-East, Wales, the Pridoli type locality of *Tortilicaulis transwalliensis*, enters only the inclusive
-reading, although *Cooksonia* there has branched fertile axes; tracheid-like cells are reported in the
-Lochkovian *T. offaeus* [@morris2024LowerDevonianTortilicaulis], not in *T. transwalliensis*. Up to four such
-later finds would move the branched-plant limit to [434.55]{.C61} Ma. *Capesporangites petrkraftii*, a
-branched plant with terminal sporangia from the Silurian of the Prague Basin
-[@uhlirova2024EarlyLandPlant], is also absent; a younger horizon would add a later find, and only one older than *C. barrandei* would
-change an oldest age
+Some later records are missing from the inventory, whose screening for branched bodies covered the
+Homerian and older. Eophytes, minute plants with mostly forking axes and cryptospores but no
+water-conducting cells, are known as bodies from the Lochkovian of Brown Clee Hill, Shropshire
+[@edwards2021PiecingTogetherEophytes], and are reported in a 2026 conference abstract from the Pridoli of
+Ludford Lane, where that abstract gives no specimen-level account of branching; neither locality is in the inventory.
+Freshwater East, Wales, the Pridoli type locality of *Tortilicaulis transwalliensis*, enters only the
+inclusive reading, although *Cooksonia* there has branched fertile axes, and *T. transwalliensis* branches
+at Lochkovian Targrove; tracheid-like cells are reported in the Lochkovian *T. offaeus*
+[@morris2024LowerDevonianTortilicaulis], whose place among vascular plants remains open. *Capesporangites
+petrkraftii*, a branched plant with terminal sporangia from the Pridoli of the Prague Basin
+[@uhlirova2024EarlyLandPlant], is younger than *C. barrandei*, and the main reading already holds a Pridoli
+unit from Kosov quarry, its reported locality. As a sensitivity to these named leads, one to four further
+later finds would move the branched-plant limit to [434.62]{.C61 .V268}–[434.55]{.C61 .V269} Ma
 (electronic supplementary material, S5.11).
 
 **Table 2.** The three nested body-fossil groups on one footing: finds certainly inside the window,
 counted as independent; oldest possible age of the oldest find; steady-rate 95% limit; and whether a
 steady finding rate fits the spread of ages under some admissible assignment. Values in parentheses
-exclude the Oman fragments.
+exclude the Oman fragments. Counting each collection or each region and stage instead, the branched-plant
+limit is [434.1]{.C61 .V246} or [437.2]{.C61 .V247} Ma.
 
 | Group | Examples | Question | Maximum it bears on | Finds | Oldest find (Ma) | Steady-rate limit (Ma) | Steady rate fits |
 |---------|--------------------|--------------------|------------------|-------:|--------:|--------:|------------|
-| Land-plant bodies | Sterile axes (*Hostinella*); Oman sporangial fragments; eophytes would belong | When did any recognisable land-plant body begin? | 459.1 Ma for living land plants, if early fragments, possibly early bryophytes, lie within that crown | [76]{.C61} ([75]{.C61}) | [452.8]{.C61} ([432.9]{.C61}) | [455.2]{.C61} ([434.5]{.C61}) | No, nor any declared history (yes without Oman) |
-| Branched plants | *Cooksonia*, including *C. barrandei* and the Irish Homerian material; *Salopella*; *Steganotheca* | When did branched sporophytes, the group the maximum was keyed to, begin? | 431.2 Ma, through its fossil rationale | [69]{.C61} | [432.9]{.C61} | [434.6]{.C61} | Yes; declines fail |
-| Crown vascular plants | Zosterophylls and *Baragwanathia* (lycophyte line); *Psilophyton* (euphyllophytes) | When did bodies with the dated crown's own characters begin, and what do older ancestors require? | 431.2 Ma, as a limit on the dated ancestor | [48]{.C61} | [426.7]{.C61} | [428.8]{.C61} | Yes |
+| Land-plant bodies | Sterile axes (*Hostinella*); Oman sporangial fragments; eophytes would belong | When did any recognisable land-plant body begin? | 459.1 Ma for living land plants, if early fragments, possibly early bryophytes, lie within that crown | [76]{.C61 .V270} ([75]{.C61 .V271}) | [452.8]{.C61 .V272} ([432.9]{.C61 .V273}) | [455.2]{.C61 .V274} ([434.5]{.C61 .V275}) | No, nor any declared history (yes without Oman) |
+| Branched plants | *Cooksonia*, including *C. barrandei* and the Irish Homerian material; *Salopella*; *Steganotheca* | When did branched sporophytes, which include the *Cooksonia* the maximum was keyed to, begin? | 431.2 Ma, through the branched *Cooksonia* behind it | [69]{.C61 .V250} | [432.9]{.C61 .V248} | [434.6]{.C61 .V249} | Yes; declines fail |
+| Crown vascular plants | Zosterophylls and *Baragwanathia* (lycophyte line); *Psilophyton* (euphyllophytes) | When did bodies with the dated crown's own characters begin, and what do older ancestors require? | 431.2 Ma, as a limit on the dated ancestor | [48]{.C61 .V276} | [426.7]{.C61 .V277} | [428.8]{.C61 .V278} | Yes |
 
 ## Discussion
 
@@ -392,9 +403,10 @@ delivery, lower local supply or spore producers outside the catchment all fit. F
 record drawn from several regions: at a steady finding rate, the 95%
 confidence limit on the start of the recognisable crown vascular-plant record lies between
 [429]{.C27 .V018} and [434.05]{.C30} Ma, depending on how many finds are independent, and passes the
-431.2 Ma maximum at about half the main count. That maximum was keyed to a branched *Cooksonia*, and
-the branched-plant record it rests on, which begins with the older *C. barrandei*, gives a steady-rate limit of [434.6]{.C61} Ma or older at every count (table 2), so a maximum drawn from
-that record would lie older than 431.2 Ma. The crown group asks a narrower question, when bodies with
+431.2 Ma maximum at about half the main count. That maximum was keyed to a branched *Cooksonia*. Applied to
+the branched-plant record, which includes it and begins with the older *C. barrandei*, the same method gives
+limits of [434.1]{.C61 .V246}–[437.2]{.C61 .V247} Ma across the counting rules (table 2), so a maximum built by this
+method from that record would lie older than 431.2 Ma. The crown group asks a narrower question, when bodies with
 the dated clade's own characters appear; characters that diagnose its daughter lineages may have arisen
 after the split, delaying recognisable crown fossils. For each way of counting, a lower earlier finding rate, later recognisable
 bodies or both fit ancestors older than these limits; the models give the size of each requirement in
@@ -450,7 +462,7 @@ supply and sizing the reductions in finding rate, or the delays, that fit older 
 each range contains the true age. Linking the body record to an ancestor requires that the oldest finds
 belong to the crown group, and an assumed delay before recognisable bodies. The spore result comes from
 one polar basin and assumes indigenous Llandovery spores and comparable reporting of older and younger
-samples. The step, the rises, the combined measure and the late-Silurian checks were chosen after seeing the data, so none carries a calibrated confidence level. Targeted searching of the oldest plant beds could have inflated the late-Silurian count. Electronic supplementary material, table S19, lists every condition.
+samples. The step, the rises, the combined measure, the late-Silurian checks and the gap benchmarks were chosen after seeing the data, so none carries a calibrated confidence level. Targeted searching of the oldest plant beds could have inflated the late-Silurian count. Electronic supplementary material, table S19, lists every condition.
 
 Published evidence could narrow these requirements. Records of searched Silurian terrestrial beds, with
 effort and empty beds included, would help constrain early finding rates, and rock-unit compilations
@@ -478,9 +490,9 @@ data add [@brown2017PastSureTense].
 
 For the oldest vascular-plant body fossils, the rule of three makes the finding-rate assumption
 concrete: if fossils turned up at a steady rate after the oldest find, the silence before it fits about
-three expected finds at that rate. On the branched-plant record to which the 431.2 Ma maximum was keyed,
-the steady-rate limit is [434.6]{.C61} Ma or older, so a maximum drawn from that record would lie older
-than 431.2 Ma.
+three expected finds at that rate. On the branched-plant record, which includes the *Cooksonia* to which
+the 431.2 Ma maximum was keyed, the steady-rate limit is [434.1]{.C61 .V246}–[437.2]{.C61 .V247} Ma under every
+counting rule, older than that maximum.
 An older ancestor needs early finding low enough, or recognisable bodies late enough, to keep that
 expected count at about three or fewer, and the number of independent finds sets how many million years three finds
 span. North American land-laid rock area and the share of studies reporting trilete spores fell enough

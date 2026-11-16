@@ -5,6 +5,45 @@ Programme and cross-study decisions are in `docs/decisions.md`. Entries before 1
 written before the study-first move and name pre-move paths (`models/f3/`, `data/units/`,
 `manuscript/`, `docs/audits/`); `studies/f3/PATHS.tsv` maps each to its current location.
 
+## 2026-11-16: C61 reconciled with Codex's review (Codex; Claude)
+
+Codex's review (`docs/audits/2026-11-16-c61-review.md`, with group, gap and source reviews; Board 158)
+reproduced every C61 number and asked for five repairs. Barry relayed it to Claude; Codex's handoff read
+"Next: Claude — reconcile C61 and the affected passages." All five were adopted after checking each against its source; this entry
+corrects the 15 November entry below, which stays as the record of what was then written.
+
+1. **Endpoint, not a calibration maximum.** Hooper et al.'s Supplementary Table 4, C_24 (held ESM, read
+   for this entry) keys 431.2 Ma to Irish *Cooksonia* as the first unequivocal total-group tracheophyte,
+   citing sterome, branching sporophytes and tracheids in younger *C. pertoni*. The text now says that
+   branched plants, a broader group, test the branched-body record behind that rationale, and that each
+   limit is a conditional upper confidence limit under the steady-rate absence model: a maximum built by
+   the same method from the branched record would lie older than 431.2 Ma, and the limit leaves a start at
+   431.2 Ma open. The earlier shorthand "no branched plants, so no crown ancestor" is withdrawn.
+2. **Counting rules.** "434.6 Ma or older at every count" was wrong: counting collections (101 units)
+   gives 434.09 Ma. The B1 limit spans 434.09-437.19 Ma across the four rules, all older than 431.2 Ma.
+   Abstract, Results (i), Table 2 caption, Discussion and Conclusion now give 434.1-437.2 Ma.
+3. **Gap benchmarks.** The gap and Homerian factors are now stated once as conditional, post hoc two-rate
+   benchmarks of average finding across a stretch; the Conditions post hoc list names them, Table S19 gains
+   five rows, and Table S18's factor columns are renamed.
+4. **All inclusion states.** `groups.py` now runs the shape test for all four inclusion states of the two
+   straddling units per group (120 group x history x state verdicts, `out/groups_shape.csv`) and reports
+   limits under every counting rule. No verdict changes, as Codex's independent check found.
+5. **Missing records.** *Capesporangites petrkraftii* is Pridoli, Kosov quarry (publisher's indexed text,
+   read by Codex; ScienceDirect refuses direct fetch here), younger than *C. barrandei*, and the main reading
+   already holds a Pridoli Kosov unit, so it may add no unit. Ludford Lane establishes eophyte bodies, not
+   branching. The one-to-four extra units are labelled a sensitivity to named leads; the E3 screening's
+   restriction to the Homerian and older is stated.
+
+Sol (gpt-6.1-sol, high) checked the reconciliation read-only against the review (`docs/audits/2026-11-16-c61-reconcile-sol-check.json`): R2, R4 and R5 resolved; R1 and R3 partial, and three wording faults (the Table S19 inventory row, an overgeneralised "any further younger records", and Ludford Lane branching stated beyond the abstract). All five repairs were adopted with Sol's wording or close to it.
+
+C61 now carries strict value bindings (V246-V320), so the three groups' values cannot be silently swapped.
+It stays provisional until Codex checks this reconciliation.
+
+Structural review: the structure served; the interpretation specification (`manuscript/estimands.md`)
+now holds a C61 entry, written before the text, which is the order the ledger rule asks for. Exposed
+assumption: an endpoint from one absence model was being read as a calibration requirement. Q1 and Q2
+are unchanged in status; the Q2 lead on unassessed younger E3 records stands.
+
 ## 2026-11-15: the three body groups on one footing; branched plants test the 431.2 Ma maximum as built (Barry with Fable; Claude)
 
 Fable's issue 3, at cbba1ae, relayed by Barry, who wrote to Fable: "I strongly agree. It is essential to

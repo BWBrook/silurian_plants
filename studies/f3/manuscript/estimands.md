@@ -126,6 +126,24 @@ Codex on 13 November 2026. They do not add a fitted finding-rate or dependence m
   the crown split without bounding the gap to first fossils. A young-ancestor reading additionally
   assumes prompt spread, recognisable crown bodies and adequate finding. The 1%-annual-growth example
   is arithmetic, not an ancient demographic estimate or a lower bound excluding slow net growth.
+- **C61:** the three nested body groups (land-plant bodies B0, branched plants B1, crown vascular
+  plants B2) on the steady-rate footing of C25–C30. Each limit is a conditional one-sided 95% upper
+  confidence limit on the start of that recoverable category's record under the steady-rate absence
+  model, with ages contained in their ranges. It is not a calibration-prior tail point: a clock
+  maximum built from the B1 record would equal it only if the builder adopts this endpoint method,
+  and the limit does not exclude a B1 start at 431.2 Ma. Hooper et al. key 431.2 Ma to the first
+  unequivocal total-group tracheophyte, Irish Homerian *Cooksonia*; B1 is broader (any branched
+  sporophyte), so it tests the branched-body record relevant to that rationale, not the source's own
+  category. Branching and conducting cells do not establish crown placement. B1 limits span
+  434.09–437.19 Ma across the four counting rules (collection 101, locality 67, locality–age 69,
+  region–stage 29 units); "434.6 Ma or older" holds only for the 69-unit count and smaller counts.
+  Shape verdicts cover all four inclusion states of the two cutoff-straddling units per group; a
+  passing allocation shows non-exclusion, not adequacy. Gap factors are selected after seeing the
+  finds and are conditional benchmarks under a two-rate model (oldest unit fixed, other units iid,
+  rate ratio over a stretch against the later window): they bound average integrated finding over
+  the stretch, not a sustained low rate or its cause, and carry no calibrated level after selection.
+  The one-to-four extra later units are a sensitivity to named leads, not a bound on the unassessed
+  younger E3 inventory.
 
 **C54 source limit:** use only the primary-source-supported Saudi and Turkish review entries for
 the stage-level comparison with Libya. The British review entries conflict with cited primary

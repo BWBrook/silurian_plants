@@ -1019,43 +1019,61 @@ Lochkovian. These bounds are post hoc and descriptive, with the conditions of th
 `studies/f3/models/loop3/groups.py` puts land-plant bodies (B0, with and without the Oman fragments),
 branched plants (B1, main and inclusive readings) and crown vascular plants (B2) through the same steps:
 the steady-rate limit $c+(A-c)\,0.05^{-1/n}$, the zero-delay factor $(t-A)/[(A-c)(0.05^{-1/n}-1)]$ for
-ancestors at 444 and 452 Ma, and the interval-wide shape test of S5.2, run for the guaranteed units and
-with every straddling unit included. The limits agree with Table S3 wherever that table has a row[]{.C61}.
+ancestors at 444 and 452 Ma, and the interval-wide shape test of S5.2, run for all four inclusion states
+of the two units per group that straddle the cutoff (`groups_shape.csv`). The limits agree with Table S3
+wherever that table has a row[]{.C61}. Each limit is a conditional one-sided 95% upper confidence limit
+on the start of that category's recoverable record under the steady-rate absence model; a clock maximum
+equals it only if built by the same method. For B1 main the limit runs from [434.09]{.C61 .V279} Ma counting
+collections ([101]{.C61 .V251} units) through [434.65]{.C61 .V280} Ma (locality and age, 69) and [434.70]{.C61 .V281} Ma
+(locality, [67]{.C61 .V282}) to [437.19]{.C61 .V283} Ma (region and stage, 29). Hooper et al. key 431.2 Ma to Irish
+*Cooksonia* as the first unequivocal total-group vascular plant, citing branching sporophytes, sterome and
+tracheids in younger *C. pertoni* among its characters (their Supplementary Table 4, C_24). B1 holds every
+branched sporophyte without requiring demonstrated vascular affinity, so it tests the branched-body record
+behind that rationale; neither branching nor conducting cells alone establish crown placement.
 
 | Group | Units | Oldest (Ma) | Limit (Ma) | Limit, region–stage (Ma) | Factor at 444 / 452 Ma | Factor, region–stage | Best *p*, constant | Best *p*, decl. 25 |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|
-| B0 +Oman | [76]{.C61} | [452.8]{.C61} | [455.19]{.C61} | | | | [3.15e-07]{.C61} | |
-| B0 −Oman | [75]{.C61} | [432.9]{.C61} | [434.51]{.C61} | | [6.9]{.C61} / [11.9]{.C61} | | | |
-| B1 main | [69]{.C61} | [432.9]{.C61} | [434.65]{.C61} | [437.19]{.C61} | [6.34]{.C61} / [10.92]{.C61} | [2.59]{.C61} / [4.45]{.C61} | [0.208]{.C61} | [5.85e-05]{.C61} |
-| B1 inclusive (Zbrza) | [73]{.C61} | [445.2]{.C61} | [447.37]{.C61} | | — / [3.14]{.C61} | | [2.39e-06]{.C61} | |
-| B2 main | [48]{.C61} | [426.7]{.C61} | [428.84]{.C61} | | [8.08]{.C61} / [11.82]{.C61} | | [0.985]{.C61} | |
+| B0 +Oman | [76]{.C61 .V270} | [452.8]{.C61 .V272} | [455.19]{.C61 .V284} | | | | [3.15e-07]{.C61 .V285} | |
+| B0 −Oman | [75]{.C61 .V271} | [432.9]{.C61 .V273} | [434.51]{.C61 .V286} | | [6.9]{.C61 .V287} / [11.9]{.C61 .V288} | | | |
+| B1 main | [69]{.C61 .V250} | [432.9]{.C61 .V248} | [434.65]{.C61 .V280} | [437.19]{.C61 .V283} | [6.34]{.C61 .V289} / [10.92]{.C61 .V290} | [2.59]{.C61 .V291} / [4.45]{.C61 .V292} | [0.208]{.C61 .V293} | [5.85e-05]{.C61 .V294} |
+| B1 inclusive (Zbrza) | [73]{.C61 .V295} | [445.2]{.C61 .V296} | [447.37]{.C61 .V297} | | — / [3.14]{.C61 .V298} | | [2.39e-06]{.C61 .V299} | |
+| B2 main | [48]{.C61 .V276} | [426.7]{.C61 .V277} | [428.84]{.C61 .V300} | | [8.08]{.C61 .V301} / [11.82]{.C61 .V302} | | [0.985]{.C61 .V303} | |
 
 **Table S17.** The three nested groups, main reading unless stated, Emsian cutoff, guaranteed units.
 Factor: how many times less often finds must have been made before the oldest find than after it, for
 ancestors at 444 and 452 Ma with zero delay. Best *p*: finite-sample conditional KS *p* at the most
-favourable admissible age allocation; every value for the other histories is in
-`studies/f3/models/loop3/out/groups.csv`.
+favourable admissible age allocation of the guaranteed units. Every value for the other histories and
+inclusion states is in `studies/f3/models/loop3/out/groups_shape.csv`; the pass or fail verdicts of B0 and
+B1 are the same in all four states, and a passing allocation shows only that a history is not
+excluded.
 
 **Why the branched record looked a poor fit.** Table S7 gives the steady branched-plant history a
-midpoint *p* of 0.006 and poor fits across many age draws. Under the interval-wide test it passes (best
-*p* = [0.21]{.C61}), as the crown record does; the midpoint failure reflects where wide age ranges are
+midpoint *p* of 0.006 and poor fits across many age draws. Under the interval-wide test it passes in every
+inclusion state (best *p* [0.21]{.C61 .V253} with the guaranteed units), as the crown record does; the midpoint failure reflects where wide age ranges are
 placed. One conspicuously sparse stretch is the Homerian: after *C. barrandei*
 (430.6–432.9 Ma) the only branched find before the Ludlow is the Irish material (426.7–430.6 Ma),
-where a level rate predicts [7.14]{.C61} of the other [68]{.C61} finds, or [10.69]{.C61} if *C. barrandei* is
+where a level rate predicts [7.14]{.C61 .V304} of the other [68]{.C61 .V305} finds, or [10.69]{.C61 .V306} if *C. barrandei* is
 as old as 432.9 Ma. Conditional on the oldest find at its age, with the other finds independent draws
-and a relative rate $\rho$ in the stretch, the one-sided 95% upper limit on $\rho$ from the count gives
-finding at least [1.61]{.C61} times lower ([2.56]{.C61} times at the longer stretch); with region–stage
-cells it gives no constraint ([0.62]{.C61}). The stretch was chosen after seeing the finds.
+and a relative rate $\rho$ in the stretch, the one-sided 95% upper limit on $\rho$ from the count
+requires average finding there at least [1.61]{.C61 .V307} times lower ([2.56]{.C61 .V308} times at the longer
+stretch); with region–stage cells it requires no reduction ([0.62]{.C61 .V309}).
 
 **Gaps after isolated early finds.** The same calculation with no find in the stretch reduces to
 $\rho\le (L/G)(0.05^{-1/n}-1)$, the rule of three in reverse, for a gap $G$ before a later window of length $L$.
+These factors, like the Homerian one, are conditional benchmarks under a two-rate model: the oldest find's
+age is held fixed, the other finds are independent draws, and one rate inside the stretch is compared with
+one afterwards. They bound finding averaged across the stretch, whatever its pattern or cause within it.
+Each stretch was chosen after seeing the finds, so the nominal 95% carries no calibrated level after that
+selection; the shortest gap the oldest find's range admits gives the smallest factor. The whole-age shape
+tests address a different question.
 
-| Oldest find | Gap (Ma) | Gap length (Myr) | Other units | At least times lower | Longest gap | Region–stage |
+| Oldest find | Gap (Ma) | Gap length (Myr) | Other units | Factor, shortest gap | Factor, longest gap | Factor, region–stage |
 |---|---|---:|---:|---:|---:|---:|
-| Oman fragments (B0) | 445.2–432.9 | [12.30]{.C61} to [19.90]{.C61} | [75]{.C61} | [7.65]{.C61} | [12.38]{.C61} | [2.97]{.C61} |
-| Zbrza axes (B1 inclusive) | 443.1–432.9 | [10.20]{.C61} to [12.30]{.C61} | [72]{.C61} | [6.09]{.C61} | [7.34]{.C61} | [2.55]{.C61} |
+| Oman fragments (B0) | 445.2–432.9 | [12.30]{.C61 .V310} to [19.90]{.C61 .V311} | [75]{.C61 .V271} | [7.65]{.C61 .V312} | [12.38]{.C61 .V313} | [2.97]{.C61 .V314} |
+| Zbrza axes (B1 inclusive) | 443.1–432.9 | [10.20]{.C61 .V315} to [12.30]{.C61 .V316} | [72]{.C61 .V317} | [6.09]{.C61 .V318} | [7.34]{.C61 .V319} | [2.55]{.C61 .V320} |
 
-**Table S18.** Finding rate in the gap after an isolated early find, relative to the later window
+**Table S18.** Gap benchmarks after an isolated early find: the least factor by which average finding
+across the gap must fall below the later window, under the two-rate model above
 (`studies/f3/models/loop3/out/groups_inside.csv`). The gaps were chosen after seeing the finds; the
 shape tests in Table S17 are the calibrated check, and both groups fail every declared history with the
 isolated find included. The Oman fragments came from palynological preparation of borehole material,
@@ -1063,11 +1081,13 @@ unlike most later finds; Zbrza membership is disputed [@salamon2018PutativeLateO
 (`docs/rejected-records.md`, entry 11).
 
 **Records missing from the inventory.** Three gaps were checked against the inventory and the sources
-held.
+held. The E3 screening for branched bodies covered the Homerian and older (S5.1), so younger branched
+records beyond those named here remain unassessed.
 
 - *Eophytes.* Their bodies are known from the Lochkovian of Brown Clee Hill, Shropshire
   [@edwards2021PiecingTogetherEophytes], and are reported from the Pridoli of Ludford Lane in a 2026
-  conference abstract by Wellman (`taxa/eophytes.md`); neither locality is in the inventory. All are land-plant bodies;
+  conference abstract by Wellman (`taxa/eophytes.md`), which gives no specimen-level account of branching
+there; neither locality is in the inventory. All are land-plant bodies;
   forms with a forking fertile axis, such as *Fusiformitheca* (formerly *Fusitheca*), could also qualify as branched plants, although
   they lack water-conducting cells and their placement ranges from the embryophyte stem to the tracheophyte stem. They would add later units only.
 - *Tortilicaulis transwalliensis.* Its type locality, Freshwater East (Pridoli), enters only the
@@ -1077,16 +1097,19 @@ held.
   reading too; the E3 channel was enumerated only for the Homerian and older (S5.1). *T. transwalliensis*
   itself preserves unbranched fertile fragments at the type locality and branched ones at Targrove (Lochkovian), a
   locality also absent; tracheid-like cells are reported in *T. offaeus* from Brown Clee Hill
-  [@morris2024LowerDevonianTortilicaulis], not in *T. transwalliensis*, so its crown status is uncertain.
-- *Capesporangites petrkraftii.* Described from the Silurian of the Prague Basin as a plant with
-  dichotomously branched axes and terminal sporangia [@uhlirova2024EarlyLandPlant], it is absent from
-  the inventory. The paper is closed and its horizon unread; the publisher's listing places the material
-  in the Kosov quarry, whose inventory unit is Pridoli. It would change an oldest age only if older than
-  *C. barrandei* (`docs/closed-literature.csv`).
+  [@morris2024LowerDevonianTortilicaulis], not in *T. transwalliensis*. Morris et al. leave the genus's place
+  within the vascular-plant total group open, and conducting cells alone would place neither species in the crown.
+- *Capesporangites petrkraftii.* Described from the Prague Basin as a plant with branched leafless axes
+  and terminal sporangia [@uhlirova2024EarlyLandPlant], it is absent from the inventory as a taxon. The
+  publisher's indexed Locality and Conclusions text (read 16 November 2026) assigns it to the Pridoli and gives Kosov
+  quarry, on a loose block; the full paper is closed. It is therefore younger than *C. barrandei*, and the
+  main reading already holds a Pridoli Kosov unit (`tail:M-bohemica`), so it may add no unit; its bed and
+  provenance would settle that under the grouping rules (`docs/closed-literature.csv`).
 
-Each missing record is Pridoli or younger where its age is known, so it could only add later units. One to
-four more branched-plant units move the steady limit from [434.65]{.C61} to between [434.62]{.C61} and
-[434.55]{.C61} Ma.
+Each missing record is Pridoli or younger, so it could only add later units. As a sensitivity to these
+named leads, one to four more branched-plant units move the steady limit from [434.65]{.C61 .V280} to between
+[434.62]{.C61 .V268} and [434.55]{.C61 .V269} Ma; further independent later units certainly inside the window would move it younger again, with the oldest
+age and cutoff held fixed.
 
 ## S6. From specimens to nodes
 
@@ -1249,6 +1272,12 @@ lists every condition behind the analyses, the results each bears on, what follo
 | The early-rise durations keep a steady later rate and zero delay | Results (h) | The straight-line rise spans at most a few million years to about 15, depending on the count; other histories differ | Results (f), (h); S5.9 |
 | The two units that set *A* lie outside the guaranteed late count | Results (h) | The selection of *A* remains, and a counted late find could be the actual oldest fossil | S5.10; switch script |
 | The switch reading concerns the finding of recognisable crown bodies | Results (h); Interpretation | It does not date when plants or the lineage arose | Methods (e); Discussion, Interpretation |
+| *Three groups and gap benchmarks* | | | |
+| Branched plants hold every branched sporophyte, a broader group than Hooper et al.'s first unequivocal total-group vascular plant | Results (i); table 2; Discussion; Conclusion | The branched limit tests the branched-body record behind that rationale; neither branching nor conducting cells alone establish crown placement | Results (i); S5.11 |
+| Each group limit is a conditional upper confidence limit under the steady-rate absence model, and it varies with the counting rule | Results (i); Abstract; Discussion; Conclusion | A clock maximum equals it only if built by the same method; the branched limit leaves a start at 431.2 Ma open and spans 434.09–437.19 Ma across counting rules | Results (i); S5.11 |
+| The gap benchmarks fix the oldest find's age, treat the other finds as independent and compare one rate inside the gap with one afterwards | Results (i) | They bound finding averaged across the gap and leave its pattern and cause open | S5.11, Table S18 |
+| The Homerian stretch and the gaps after the Oman fragments and Zbrza were chosen after seeing the finds | Results (i) | The nominal 95% carries no calibrated level after that selection; the whole-age shape tests are the calibrated check | S5.11 |
+| Screening for branched bodies covered the Homerian and older | Results (i); table 2 | The main branched-plant reading omits Freshwater East, Targrove, Brown Clee Hill and Ludford Lane; *Capesporangites* is absent as a taxon, and Kosov already contributes a Pridoli unit. One to four extra later units move the limit up to about 0.1 Myr younger, a sensitivity to these leads | S5.11 |
 
 **Table S19.** Conditions behind the analyses: the results each bears on, what changes if it fails, and
 where it is tested or stated.

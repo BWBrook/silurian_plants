@@ -9,6 +9,13 @@ The programme's working list of provisional questions: what each needs, which ga
 
 The register is updated at each loop's close. Started 2026-10-28 by Claude Opus 5.5 from Barry's programme principles; questions are added or reworded by either.
 
+**C61 reconciled, 16 November (Q1, Q2):** after Codex's review, the branched-plant limit spans
+434.09-437.19 Ma across the four counting rules (not "434.6 or older at every count"), and is read as a
+conditional endpoint of the steady-rate absence model, not a required calibration maximum. Gap factors
+are post hoc two-rate benchmarks. *Capesporangites petrkraftii* is Pridoli (publisher's indexed text),
+so it cannot change an oldest age and may add no unit beyond the Kosov Pridoli unit. Q2 lead unchanged:
+younger E3 records remain unassessed.
+
 **Body groups on one footing, 15 November (Q1, Q2):** C61 (provisional): the branched-plant record, to which
 the 431.2 Ma maximum was keyed, gives a steady-rate limit of 434.65 Ma or older at every count, so a
 95% maximum drawn from it would lie older than 431.2 Ma; older ancestors need branched-plant finding 6.3-10.9 times

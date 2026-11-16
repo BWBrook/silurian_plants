@@ -1,0 +1,68 @@
+{
+  "items": [
+    {
+      "id": "R1",
+      "status": "partial",
+      "location": "studies/f3/manuscript/text/supplement.md:1024–1032",
+      "quote": "branching and conducting cells mark total-group members",
+      "problem": "The endpoint/calibration distinction and Hooper attribution are repaired across the requested passages. However, this new generalisation blurs the taxonomic distinction again: B1 includes branched plants of unproven vascular affinity, including possible stem embryophytes.",
+      "fix": "Replace with: “B1 includes branched sporophytes without requiring demonstrated vascular affinity; neither branching nor conducting cells alone establish crown placement.”"
+    },
+    {
+      "id": "R2",
+      "status": "resolved",
+      "location": "studies/f3/manuscript/text/supplement.md:1026–1028; main.md:13, 334–335, 408, 494",
+      "quote": "the limit runs from [434.09]{.C61 .V279} Ma counting",
+      "problem": "Resolved. The four counts and limits agree with groups.csv: 101/434.0870, 69/434.6496, 67/434.7030 and 29/437.1910. The corrected range reaches all requested passages and Table 2.",
+      "fix": "None required."
+    },
+    {
+      "id": "R3",
+      "status": "partial",
+      "location": "studies/f3/manuscript/text/main.md:328–329",
+      "quote": "each isolated early find implies a long stretch of rare finding",
+      "problem": "The body text now presents conditional post hoc benchmarks of average finding; the factors match groups_inside.csv. Table S19, the Conditions enumeration and S18 headings are repaired, and the moved conditions remain covered. This categorical heading still presents the historical interpretation as an implication of the finds.",
+      "fix": "Replace the heading with: “(i) Branched plants give an older endpoint limit, and isolated early finds give conditional gap benchmarks.”"
+    },
+    {
+      "id": "R4",
+      "status": "resolved",
+      "location": "studies/f3/models/loop3/groups.py:82–95, 136–155; studies/f3/manuscript/text/supplement.md:1044–1048",
+      "quote": "every inclusion state of the units straddling the cutoff",
+      "problem": "Resolved. The script enumerates every subset, and groups_shape.csv contains all 120 group × history × inclusion-state cases. The saved verdicts and quoted guaranteed-unit p-values agree with the text. Passing allocations are explicitly described as non-exclusion. The optimiser was not rerun.",
+      "fix": "None required."
+    },
+    {
+      "id": "R5",
+      "status": "resolved",
+      "location": "studies/f3/manuscript/text/supplement.md:1083–1111; main.md:369–382",
+      "quote": "As a sensitivity to these named leads",
+      "problem": "The required distinctions are present: Capesporangites is Pridoli, Kosov already contributes a unit, Ludford Lane branching is unestablished, and younger screening remains incomplete. The one-to-four-unit sensitivity matches groups.csv: 434.6241–434.5518 Ma. Additional wording problems are identified below.",
+      "fix": "None beyond X1–X3."
+    },
+    {
+      "id": "X1",
+      "status": "issue",
+      "location": "studies/f3/manuscript/text/supplement.md:1279",
+      "quote": "Freshwater East, Targrove, Brown Clee Hill, Ludford Lane and *Capesporangites* are absent",
+      "problem": "This collapses locality, reading and taxon distinctions preserved in S5.11. Freshwater East is present in the inclusive reading; Capesporangites is absent as a taxon, while its reported locality already contributes a main-reading unit.",
+      "fix": "Replace with: “The main B1 reading omits Freshwater East, Targrove, Brown Clee Hill and Ludford Lane; Capesporangites is absent as a taxon, but Kosov already contributes a Pridoli unit. One to four additional later units lower the limit by up to about 0.1 Myr, a sensitivity to these leads.”"
+    },
+    {
+      "id": "X2",
+      "status": "issue",
+      "location": "studies/f3/manuscript/text/supplement.md:1111",
+      "quote": "any further younger records would move it younger again",
+      "problem": "Additional records need not add independent counted units: they can duplicate existing locality–age units or fall beyond the cutoff. This overgeneralisation contradicts the preceding Kosov qualification.",
+      "fix": "Replace with: “Further independent later units certainly inside the same analysis window would lower the limit further, with the oldest age and cutoff held fixed.”"
+    },
+    {
+      "id": "X3",
+      "status": "issue",
+      "location": "studies/f3/manuscript/text/main.md:373",
+      "quote": "where their branching is yet to be described",
+      "problem": "Uncertain whether branching has been described elsewhere. The inspected Wellman abstract supplies no branching account; that supports a statement about the abstract, rather than a general claim about the descriptive literature.",
+      "fix": "Replace with: “where that abstract gives no specimen-level account of branching”. Next: Claude — reconcile the remaining wording."
+    }
+  ]
+}
