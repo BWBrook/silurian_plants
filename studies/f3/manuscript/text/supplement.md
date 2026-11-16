@@ -1067,6 +1067,15 @@ Each stretch was chosen after seeing the finds, so the nominal 95% carries no ca
 selection; the shortest gap the oldest find's range admits gives the smallest factor. The whole-age shape
 tests address a different question.
 
+**Silence after the oldest definite triletes.** Definite trilete spores lie below the [454.41]{.C43} Ma
+Kinnekulle K-bentonite in Borenshult-1, so land plants lived before that age; without the Oman fragments
+no land-plant body is older than 432.9 Ma. The rule of three in reverse over that [21.51]{.C62 .V327} Myr
+span, with [75]{.C62 .V322} later units and $L$ = [39.43]{.C62 .V325} Myr, gives a factor of
+[13.39]{.C62 .V328} ([5.19]{.C62 .V329} with [30]{.C62 .V326} region–stage cells). It equals the zero-delay
+requirement of Results (e) for land-plant bodies at 454.41 Ma, and lower finding, later recognisability or
+both meet it. Its start comes from the spore record rather than from a selected find; its use as a
+precedent for the vascular requirement was chosen after seeing the record (`out/groups_inside.csv`)[]{.C62}.
+
 | Oldest find | Gap (Ma) | Gap length (Myr) | Other units | Factor, shortest gap | Factor, longest gap | Factor, region–stage |
 |---|---|---:|---:|---:|---:|---:|
 | Oman fragments (B0) | 445.2–432.9 | [12.30]{.C61 .V310} to [19.90]{.C61 .V311} | [75]{.C61 .V261} | [7.65]{.C61 .V312} | [12.38]{.C61 .V313} | [2.97]{.C61 .V314} |
@@ -1276,6 +1285,7 @@ lists every condition behind the analyses, the results each bears on, what follo
 | Branched plants hold every branched sporophyte, a broader group than Hooper et al.'s first unequivocal total-group vascular plant | Results (i); table 2; Discussion; Conclusion | The branched limit tests the branched-body record behind that rationale; neither branching nor conducting cells alone establish crown placement | Results (i); S5.11 |
 | Each group limit is a conditional upper confidence limit under the steady-rate absence model, and it varies with the counting rule | Results (i); Abstract; Discussion; Conclusion | A clock maximum equals it only if built by the same method; the branched limit leaves a start at 431.2 Ma open and spans 434.09–437.19 Ma across counting rules | Results (i); S5.11 |
 | The gap benchmarks fix the oldest find's age, treat the other finds as independent and compare one rate inside the gap with one afterwards | Results (i) | They bound finding averaged across the gap and leave its pattern and cause open | S5.11, Table S18 |
+| The land-plant precedent dates land plants before 454.41 Ma from definite triletes and compares the body silence that follows with the vascular requirement | Discussion | Its factor follows from the silence's length and the number of later finds by the rule of Results (e), which shapes its similarity to the vascular requirement; it concerns bodies of any land plant, probably small and without lignified tissue, and lower finding or later recognisability can meet it | S5.11 |
 | The Homerian stretch and the gaps after the Oman fragments and Zbrza were chosen after seeing the finds | Results (i) | The nominal 95% carries no calibrated level after that selection; the whole-age shape tests are the calibrated check | S5.11 |
 | Screening for branched bodies covered the Homerian and older | Results (i); table 2 | The main branched-plant reading omits Freshwater East, Targrove, Brown Clee Hill and Ludford Lane; *Capesporangites* is absent as a taxon, and Kosov already contributes a Pridoli unit. One to four extra later units move the limit up to about 0.1 Myr younger, a sensitivity to these leads | S5.11 |
 

@@ -15,6 +15,12 @@ counting rules and case bindings. One equal-valued Oman count binding is
 corrected; no numerical result changes. Q1 and Q2 keep their statuses, and
 unassessed younger E3 records remain the same inventory lead.
 
+**Land-plant silence as precedent, 16 November (Q1):** land plants lived before 454.41 Ma (definite
+triletes), yet no land-plant body is older than 432.9 Ma in the main reading: by the C48 calculation that
+silence requires bodies found at least 13.4 times less often, or recognisable later (C62, provisional).
+A requirement of the size older vascular ancestors need has therefore been met once in this record, by
+bodies of any land plant. Q1 open: whether vascular bodies shared that low finding.
+
 **C61 reconciled, 16 November (Q1, Q2):** after Codex's review, the branched-plant limit spans
 434.09-437.19 Ma across the four counting rules (not "434.6 or older at every count"), and is read as a
 conditional endpoint of the steady-rate absence model, not a required calibration maximum. Gap factors

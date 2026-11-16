@@ -144,6 +144,20 @@ Codex on 13 November 2026. They do not add a fitted finding-rate or dependence m
   the stretch, not a sustained low rate or its cause, and carry no calibrated level after selection.
   The one-to-four extra later units are a sensitivity to named leads, not a bound on the unassessed
   younger E3 inventory.
+- **C62:** the land-plant body silence after the oldest definite triletes. Definite Borenshult-1
+  triletes lie below the 454.41 Ma bentonite (C43), so land plants lived before that age; in the main
+  reading, without the Oman fragments, no land-plant body is older than 432.9 Ma. The quantity is C48's
+  zero-delay fold for B0 without Oman evaluated at t = 454.41 Ma, equal to the k = 0 gap benchmark with
+  G = 454.41 - 432.9 and the 75 later units: the least factor by which average finding of land-plant
+  bodies across the span must fall below the later window, with lower finding, later recognisability or
+  both able to meet it. Its start is set by the spore record, independent of any selected find; its use
+  as a precedent was chosen after seeing the record. Reading: land plants lived through the span, so the
+  B0 record met a requirement of this size; this is a precedent for the size of the C48 requirement on
+  older vascular ancestors. Limits: the factor follows from the span and the number of later finds by
+  C48's rule, so its similarity to C48's 8-12 restates that the two silences are of similar length
+  relative to their later records; B0 bodies before 432.9 Ma were probably small and without lignified
+  tissue, and their producers' relation to crown vascular plants is open. The Oman version (C61) adds a
+  recognisable body inside the span, if Katian, which bears on finding rather than recognisability.
 
 **C54 source limit:** use only the primary-source-supported Saudi and Turkish review entries for
 the stage-level comparison with Libya. The British review entries conflict with cited primary

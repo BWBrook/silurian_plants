@@ -428,9 +428,17 @@ area holding land-laid rock in North America and a lower share of indexed
 palynological studies reporting trilete spores, which changing coverage, study aims, preservation and
 identification can also lower. These differences give the required ratios a scale, and multiplied they would fit ancestors at
 444–452 Ma at every count. Finding that followed either measure, or their product, would have left far fewer
-late-Silurian finds than the 13 observed. The measures fail this later-record check, so they give little
-support to an earlier fall in finding. The pooled late-Silurian finds give the lower rate benchmarks in
-(*h*), and those finds come from six regions.
+late-Silurian finds than the 13 observed. The measures fail this later-record check, so their own fall
+carries little weight as evidence about early finding. The pooled late-Silurian finds give the lower rate benchmarks in
+(*h*), and those finds come from six regions. The body record itself holds a silence of the size older
+vascular ancestors need. Definite trilete spores place land plants before [454.41]{.C43} Ma, yet in the
+main reading no land-plant body is older than 432.9 Ma; by the calculation of (*e*), that
+[21.5]{.C62 .V321} Myr silence before [75]{.C62 .V322} later finds requires land-plant bodies to have been
+found on average at least [13.4]{.C62 .V323} times less often than afterwards ([5.2]{.C62 .V324} times by
+region and stage), or to have become recognisable later, against [8]{.C48 .V054}–[12]{.C48 .V055} times for
+vascular ancestors at 444–452 Ma. Land plants lived through that span, so a requirement of this size has
+been met once in this record; the Oman fragments, if Katian, place a recognisable body inside it, which
+points to lower finding (*i*)[]{.C62}.
 
 *Interpretation.* What follows goes beyond the tests. One reading is a switch: one or more evolutionary
 innovations let these plants spread quickly through the habitat open to them, with no further innovation
@@ -462,7 +470,7 @@ supply and sizing the reductions in finding rate, or the delays, that fit older 
 each range contains the true age. Linking the body record to an ancestor requires that the oldest finds
 belong to the crown group, and an assumed delay before recognisable bodies. The spore result comes from
 one polar basin and assumes indigenous Llandovery spores and comparable reporting of older and younger
-samples. The step, the rises, the combined measure, the late-Silurian checks and the gap benchmarks were chosen after seeing the data, so none carries a calibrated confidence level. Targeted searching of the oldest plant beds could have inflated the late-Silurian count. Electronic supplementary material, table S19, lists every condition.
+samples. The step, the rises, the combined measure, the late-Silurian checks, the gap benchmarks and the land-plant precedent were chosen after seeing the data, so none carries a calibrated confidence level. That precedent concerns bodies of any land plant, probably small and without lignified tissue, and its factor, like those of (*e*), follows from the silence's length and the number of later finds. Targeted searching of the oldest plant beds could have inflated the late-Silurian count. Electronic supplementary material, table S19, lists every condition.
 
 Published evidence could narrow these requirements. Records of searched Silurian terrestrial beds, with
 effort and empty beds included, would help constrain early finding rates, and rock-unit compilations
@@ -497,8 +505,8 @@ An older ancestor needs early finding low enough, or recognisable bodies late en
 expected count at about three or fewer, and the number of independent finds sets how many million years three finds
 span. North American land-laid rock area and the share of studies reporting trilete spores fell enough
 before the oldest find to allow older ancestors, but finding that followed them would have left far fewer
-fossils in the late Silurian than the at least [13]{.C59 .V207} found there, so they give little reason
-to trust that fall. The pooled late-Silurian finds limit how low the interval's average rate could be,
+fossils in the late Silurian than the at least [13]{.C59 .V207} found there, so their fall carries
+little weight as evidence about early finding. The pooled late-Silurian finds limit how low the interval's average rate could be,
 and come from six regions. With a steady later rate and zero delay, the tested simple rises require
 early finding to climb steeply to that level near the oldest find; a rapid change remains an
 interpretation whose cause is open[]{.C60}. For spores, the Libyan basin shows that an absence can be local:

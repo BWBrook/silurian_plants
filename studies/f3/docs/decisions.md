@@ -5,6 +5,32 @@ Programme and cross-study decisions are in `docs/decisions.md`. Entries before 1
 written before the study-first move and name pre-move paths (`models/f3/`, `data/units/`,
 `manuscript/`, `docs/audits/`); `studies/f3/PATHS.tsv` maps each to its current location.
 
+## 2026-11-16: the land-plant body silence as a precedent (C62; Fable, Claude)
+
+Fable's follow-up to issue 3, relayed by Barry: Results (i) reported a body silence after the Oman
+fragments that the Discussion and Conclusion never used, while both concluded from the outside measures
+alone. Claude (Opus 5.5) adopted all four requests, with one reframing.
+
+- **The spore-anchored version is the stronger one.** Definite Borenshult-1 triletes place land plants
+  before 454.41 Ma (C43), and without Oman no land-plant body is older than 432.9 Ma. The factor is C48's
+  zero-delay requirement for B0 without Oman at 454.41 Ma: 13.39 times (5.19 by region and stage), over
+  21.51 Myr with 75 later units (`groups_inside.csv`, asserted equal to the k = 0 gap benchmark). It does
+  not rest on one find's correlated Katian age, its start is not a selected find, and it is the same
+  calculation as the vascular requirement, so the comparison is like for like. It cannot separate lower
+  finding from later recognisability; the Oman version (C61), if Katian, places a recognisable body in the
+  span and so points to finding. The Discussion reports both roles.
+- **Limits stated once, in Conditions and Table S19:** the factor follows from span and later count by
+  C48's rule, which shapes its similarity to 8-12; the bodies are of any land plant, probably small and
+  without lignified tissue. The precedent joins the post hoc list.
+- **Outside-measure sentences** in the Discussion and Conclusion now speak of the measures' own fall.
+- C62 is provisional pending the other agent's check. C61's evidence files gained one row; its rows
+  regenerate unchanged and it was restamped.
+
+Structural review: the three-group footing let the record's own silence be read against the vascular
+requirement without new data. Exposed assumption: the precedent equates "land plants present" with
+"bodies present to be found"; small, unlignified bodies may have had lower finding for reasons that do not
+transfer to vascular plants. Q1 gains a precedent; no question changes status.
+
 ## 2026-11-16: C61 reconciliation accepted (Codex)
 
 Codex accepts the scientific reconciliation at `7ab70c5` and agrees the C61
