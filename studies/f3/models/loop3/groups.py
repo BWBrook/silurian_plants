@@ -9,9 +9,11 @@ inclusive readings) and crown vascular plants (B2), reports:
 
 - the steady-rate 95% limit from reviewed_bounds.csv and the rule-of-three requirement for ancestors
   at 444 and 452 Ma with zero delay, r = (A - c)(0.05^(-1/n) - 1)/(t - A), as 1/r;
-- the interval-wide shape test: the best finite-sample KS p over every admissible allocation of ages,
-  for the guaranteed units and with every straddling unit included (interval_feasibility.py method);
-- inside measures, chosen after seeing the finds: how much less often finds could have been made in a
+- the steady-rate limit under each counting rule (collection, locality, locality and age, region and stage);
+- the interval-wide shape test: the best finite-sample KS p over every admissible allocation of ages, for
+  every inclusion state of the units straddling the cutoff (interval_feasibility.py method), written to
+  groups_shape.csv; a passing allocation shows only that the history is not excluded;
+- inside measures, chosen after seeing the finds, conditional benchmarks under a two-rate model: how much less often finds could have been made in a
   stretch right after the oldest find than after it, from the count observed in that stretch.
 
 Inside measure. Conditional on the oldest unit at its true age a0, the other n units are independent
@@ -46,6 +48,7 @@ CANDIDATES = (444.0, 452.0)
 GROUPS = (("B0", "main", "with Oman"), ("B0", "main", "without Oman"), ("B1", "main", ""),
           ("B1", "inclusive", ""), ("B2", "main", ""))
 OMAN = "tail:S-w22-K12"
+COUNTING = ("collection", "locality", "locality_age", "region_stage")
 
 
 def units_for(records, category, reading, note, units="locality_age"):
@@ -77,16 +80,19 @@ def m_star(n):
 
 
 def shape(units, recovery):
+    """Best KS p and feasibility for every inclusion state of the units straddling the cutoff."""
     possible = units[units.max_ma > YOUNG].copy()
     possible["recorded_min_ma"] = possible.min_ma
+    guaranteed = possible[possible.min_ma >= YOUNG]
+    partial = possible[possible.min_ma < YOUNG].sort_values("unit_id").reset_index(drop=True)
     out = {}
-    for label, sel in (("guaranteed", possible[possible.min_ma >= YOUNG]), ("possible", possible)):
-        sel = sel.copy()
+    for mask in range(2 ** len(partial)):
+        sel = pd.concat([guaranteed, partial.iloc[[i for i in range(len(partial)) if mask & (1 << i)]]],
+                        ignore_index=True)
         sel["min_ma"] = sel.min_ma.clip(lower=YOUNG)
-        sel = sel.reset_index(drop=True)
         _, summary, lower, upper = witness_allocation(sel, recovery)
         _, feasible, _ = threshold_certificate(lower, upper, "finite_sample")
-        out[label] = (len(sel), summary["witness_finite_sample_p"], feasible)
+        out[f"{mask:0{len(partial)}b}" if len(partial) else "none"] = (len(sel), summary["witness_finite_sample_p"], feasible)
     return out
 
 
@@ -115,30 +121,38 @@ def inside(units, edge, n_other):
 def main():
     records = pd.read_csv(ROOT / "studies/f3/data/macro/horizons_reviewed.csv")
     histories = load_histories()
-    table, insides = [], []
+    table, insides, shapes = [], [], []
     for category, reading, note in GROUPS:
         u = units_for(records, category, reading, note)
         n, n_poss, A, lim = steady(u)
-        n_rs, _, A_rs, lim_rs = steady(units_for(records, category, reading, note, "region_stage"))
-        assert A_rs == A
-        checked = [check_reviewed(category, reading, note, k, v) for k, v in (("locality_age", lim), ("region_stage", lim_rs))]
+        by_rule = {k: steady(units_for(records, category, reading, note, k)) for k in COUNTING}
+        assert all(v[2] == A for v in by_rule.values())
+        n_rs, lim_rs = by_rule["region_stage"][0], by_rule["region_stage"][3]
+        checked = [check_reviewed(category, reading, note, k, v[3]) for k, v in by_rule.items()]
         req = {}
         for t in CANDIDATES:
             for lab, cnt in (("all", n), ("region_stage", n_rs)):
                 req[(t, lab)] = (t - A) / ((A - YOUNG) * m_star(cnt)) if t > A else float("nan")
         sh = {h: shape(u, histories[h]) for h in histories}
+        label = f"{category} {reading} {note}".strip()
+        shapes += [{"group": label, "history": h, "partial_inclusion_mask": m, "n": v[0], "best_p": f"{v[1]:.3g}",
+                    "feasible": v[2]} for h in histories for m, v in sh[h].items()]
         table.append({
             "category": category, "reading": reading, "variant": note or "primary",
             "n_guaranteed": n, "n_possible": n_poss, "n_region_stage": n_rs,
             "oldest_possible_ma": f"{A:g}", "steady_limit_ma": f"{lim:.4f}",
             "steady_limit_region_stage_ma": f"{lim_rs:.4f}",
+            **{f"n_{k}": v[0] for k, v in by_rule.items() if k not in ("locality_age", "region_stage")},
+            **{f"steady_limit_{k}_ma": f"{v[3]:.4f}" for k, v in by_rule.items() if k not in ("locality_age", "region_stage")},
             "steady_limit_plus1_ma": f"{YOUNG + (A - YOUNG) * 0.05 ** (-1 / (n + 1)):.4f}",
             "steady_limit_plus4_ma": f"{YOUNG + (A - YOUNG) * 0.05 ** (-1 / (n + 4)):.4f}", "matches_reviewed_bounds": ";".join(map(str, checked)),
             **{f"fold_{int(t)}_{lab}": f"{v:.4f}" for (t, lab), v in req.items()},
-            **{f"shape_p_{h}_{s}": f"{sh[h][s][1]:.3g}" for h in histories for s in ("guaranteed", "possible")},
-            **{f"shape_any_pass_{h}": any(sh[h][s][2] for s in ("guaranteed", "possible")) for h in histories},
+            "n_inclusion_states": len(sh["flat"]),
+            **{f"shape_best_p_{h}": f"{max(v[1] for v in sh[h].values()):.3g}" for h in histories},
+            **{f"shape_states_pass_{h}": sum(v[2] for v in sh[h].values()) for h in histories},
         })
     pd.DataFrame(table).to_csv(OUT / "groups.csv", index=False, lineterminator="\n")
+    pd.DataFrame(shapes).to_csv(OUT / "groups_shape.csv", index=False, lineterminator="\n")
 
     cases = (("B0", "main", "with Oman", 432.9, "gap after the Oman fragments"),
              ("B1", "inclusive", "", 432.9, "gap after Zbrza"),
