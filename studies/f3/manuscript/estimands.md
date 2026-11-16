@@ -144,20 +144,20 @@ Codex on 13 November 2026. They do not add a fitted finding-rate or dependence m
   the stretch, not a sustained low rate or its cause, and carry no calibrated level after selection.
   The one-to-four extra later units are a sensitivity to named leads, not a bound on the unassessed
   younger E3 inventory.
-- **C62:** the land-plant body silence after the oldest definite triletes. Definite Borenshult-1
-  triletes lie below the 454.41 Ma bentonite (C43), so land plants lived before that age; in the main
-  reading, without the Oman fragments, no land-plant body is older than 432.9 Ma. The quantity is C48's
-  zero-delay fold for B0 without Oman evaluated at t = 454.41 Ma, equal to the k = 0 gap benchmark with
-  G = 454.41 - 432.9 and the 75 later units: the least factor by which average finding of land-plant
-  bodies across the span must fall below the later window, with lower finding, later recognisability or
-  both able to meet it. Its start is set by the spore record, independent of any selected find; its use
-  as a precedent was chosen after seeing the record. Reading: land plants lived through the span, so the
-  B0 record met a requirement of this size; this is a precedent for the size of the C48 requirement on
-  older vascular ancestors. Limits: the factor follows from the span and the number of later finds by
-  C48's rule, so its similarity to C48's 8-12 restates that the two silences are of similar length
-  relative to their later records; B0 bodies before 432.9 Ma were probably small and without lignified
-  tissue, and their producers' relation to crown vascular plants is open. The Oman version (C61) adds a
-  recognisable body inside the span, if Katian, which bears on finding rather than recognisability.
+- **C62:** a conditional requirement on the land-plant body record anchored by spores. Definite
+  Borenshult-1 triletes lie below the Kinnekulle K-bentonite (454.41 +/- 0.17 Ma, C43); the analysis fixes
+  the nominal age as a start before which land plants lived. Over 454.41-432.9 Ma the accepted B0
+  inventory holds one unit (Oman) among 76. The quantity is the one-sided 95% upper limit on the relative
+  rate rho in that span under the C48 two-rate model (all units independent draws on [c, 454.41], k = 1),
+  reported as 1/rho; the without-Oman sensitivity (k = 0 of 75) equals C48's zero-delay fold at
+  t = 454.41. Lower finding, later recognisability or both meet it. Reading: the land-plant record, which
+  spores show spanned the interval, requires under this model a reduction comparable in size with C48's
+  8-12 for vascular ancestors; the same rule makes them comparable. It is not a measured historical
+  reduction and not a demonstration that vascular bodies shared it. Land-plant continuity leaves open
+  continuity of producers, body forms and diagnostic features. Oman, if Katian, shows some B0 bodies
+  recognisable within the span, weakening an explanation in which all became recognisable only at 432.9
+  Ma; it does not separate encounter, preservation and searching. The comparison was chosen after seeing
+  the record.
 
 **C54 source limit:** use only the primary-source-supported Saudi and Turkish review entries for
 the stage-level comparison with Libya. The British review entries conflict with cited primary

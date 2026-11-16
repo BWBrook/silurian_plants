@@ -430,15 +430,15 @@ identification can also lower. These differences give the required ratios a scal
 444–452 Ma at every count. Finding that followed either measure, or their product, would have left far fewer
 late-Silurian finds than the 13 observed. The measures fail this later-record check, so their own fall
 carries little weight as evidence about early finding. The pooled late-Silurian finds give the lower rate benchmarks in
-(*h*), and those finds come from six regions. The body record itself holds a silence of the size older
-vascular ancestors need. Definite trilete spores place land plants before [454.41]{.C43} Ma, yet in the
-main reading no land-plant body is older than 432.9 Ma; by the calculation of (*e*), that
-[21.5]{.C62 .V321} Myr silence before [75]{.C62 .V322} later finds requires land-plant bodies to have been
-found on average at least [13.4]{.C62 .V323} times less often than afterwards ([5.2]{.C62 .V324} times by
-region and stage), or to have become recognisable later, against [8]{.C48 .V054}–[12]{.C48 .V055} times for
-vascular ancestors at 444–452 Ma. Land plants lived through that span, so a requirement of this size has
-been met once in this record; the Oman fragments, if Katian, place a recognisable body inside it, which
-points to lower finding (*i*)[]{.C62}.
+(*h*), and those finds come from six regions. The land-plant body record sets a requirement
+of the same kind. Definite trilete spores place land plants before the [454.41]{.C43} Ma Kinnekulle ash,
+and the [21.5]{.C62 .V321} Myr that follow hold one land-plant body, the Oman fragments, against
+[75]{.C62 .V322} later finds. Under the model of (*e*), that sparse record requires land-plant bodies to have
+been found on average at least [8.4]{.C62 .V330} times less often than afterwards ([3.2]{.C62 .V331} times by
+region and stage; [13.4]{.C62 .V323} times without the Oman fragments), or to have become recognisable
+later, comparable with the [8]{.C48 .V054}–[12]{.C48 .V055} times older vascular ancestors require. The Oman
+fragments, if Katian, show that some land-plant bodies were recognisable within the span, which weakens an
+explanation in which all became recognisable only at 432.9 Ma (*i*)[]{.C62}.
 
 *Interpretation.* What follows goes beyond the tests. One reading is a switch: one or more evolutionary
 innovations let these plants spread quickly through the habitat open to them, with no further innovation
@@ -470,7 +470,7 @@ supply and sizing the reductions in finding rate, or the delays, that fit older 
 each range contains the true age. Linking the body record to an ancestor requires that the oldest finds
 belong to the crown group, and an assumed delay before recognisable bodies. The spore result comes from
 one polar basin and assumes indigenous Llandovery spores and comparable reporting of older and younger
-samples. The step, the rises, the combined measure, the late-Silurian checks, the gap benchmarks and the land-plant precedent were chosen after seeing the data, so none carries a calibrated confidence level. That precedent concerns bodies of any land plant, probably small and without lignified tissue, and its factor, like those of (*e*), follows from the silence's length and the number of later finds. Targeted searching of the oldest plant beds could have inflated the late-Silurian count. Electronic supplementary material, table S19, lists every condition.
+samples. The step, the rises, the combined measure, the late-Silurian checks, the gap benchmarks and the land-plant comparison were chosen after seeing the data, so none carries a calibrated confidence level. That comparison is a conditional requirement on the land-plant record under the model of (*e*), whose size follows from the span and the number of finds; it concerns bodies of any land plant, and the spores show land plants through the span, not the same producers, body forms or diagnostic features. Targeted searching of the oldest plant beds could have inflated the late-Silurian count. Electronic supplementary material, table S19, lists every condition.
 
 Published evidence could narrow these requirements. Records of searched Silurian terrestrial beds, with
 effort and empty beds included, would help constrain early finding rates, and rock-unit compilations

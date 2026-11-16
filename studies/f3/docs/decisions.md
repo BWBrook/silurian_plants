@@ -5,6 +5,27 @@ Programme and cross-study decisions are in `docs/decisions.md`. Entries before 1
 written before the study-first move and name pre-move paths (`models/f3/`, `data/units/`,
 `manuscript/`, `docs/audits/`); `studies/f3/PATHS.tsv` maps each to its current location.
 
+## 2026-11-16: C62 reconciled with Codex's review (Codex; Claude)
+
+Codex's review (`docs/audits/2026-11-16-c62-review.md`, `39305fd`) passed the arithmetic, anchor and
+bindings and required three repairs; Claude adopted all three.
+
+- **R1, inventory.** The main reading includes the Oman fragments, so the span after 454.41 Ma is empty
+  only without them; the entry below misstated this. The main case now keeps Oman as one early unit among
+  76 (k = 1, Codex's diagnostic): at least 8.41 times (3.24 by region and stage). The empty-span 13.39
+  (5.19) is reported as the without-Oman sensitivity. Cases carry distinct `variant` selectors.
+- **R2, precedent.** "A requirement of this size has been met once" is withdrawn. The Discussion now
+  states a conditional requirement on the land-plant record, comparable in size with the vascular one
+  under the same rule, not a measured historical reduction.
+- **R3, resolution.** Oman, if Katian, weakens an explanation in which all bodies became recognisable only
+  at 432.9 Ma, without separating encounter, preservation and searching. The ash age is nominal
+  (454.41 +/- 0.17 Ma). Land-plant continuity leaves open continuity of producers, forms and features;
+  that limit sits in Conditions and Table S19.
+
+Fable's item 1 asked for a realised silence; the accepted record supports a conditional requirement, and
+the text now says that. Structural review: keeping both inventory treatments as separate cases was the
+right structure; the exposed assumption was reading the sensitivity as the main inventory.
+
 ## 2026-11-16: the land-plant body silence as a precedent (C62; Fable, Claude)
 
 Fable's follow-up to issue 3, relayed by Barry: Results (i) reported a body silence after the Oman
