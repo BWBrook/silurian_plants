@@ -19,7 +19,7 @@ inclusive readings) and crown vascular plants (B2), reports:
   K-bentonite above the definite Borenshult-1 triletes, claim C43). Over SPORE to 432.9 Ma the accepted
   B0 inventory holds one unit (Oman) among 76; the two-rate limit uses k = 1 of n = 76 (all draws on
   [c, SPORE]). The without-Oman sensitivity has k = 0 of 75 and equals C48's zero-delay fold at t = SPORE.
-  n_other in these rows is the total unit count.
+  n_other in these rows is the total unit count; n_later counts units after 432.9 Ma.
 
 Inside measure. Conditional on the oldest unit at its true age a0, the other n units are independent
 draws on [c, a0]. With finding rate rho in the stretch (b, a0] relative to 1 on [c, b], the chance that
@@ -195,7 +195,8 @@ def main():
         insides.append({"category": "B0", "reading": "main", "variant": f"{note}, spore anchor",
                         "stretch": "span after the oldest definite triletes", "oldest_unit": "C43 Borenshult-1 triletes",
                         "oldest_range_ma": f">{SPORE:g}", "stretch_ma": f"432.9-{SPORE:g}", "shortest_gap_myr": f"{gap:.2f}",
-                        "later_myr": f"{later:.2f}", "n_other": n_all, "k_in_stretch_min": k, "k_in_stretch_max": k,
+                        "later_myr": f"{later:.2f}", "n_other": n_all, "n_later": len(later_units),
+                        "k_in_stretch_min": k, "k_in_stretch_max": k,
                         "level_expected": f"{n_all * gap / (gap + later):.2f}", "rate_ratio_upper95": f"{rho:.4f}",
                         "times_less_often_at_least": f"{1 / rho:.4f}", "n_other_region_stage": n_rs,
                         "times_less_often_at_least_region_stage": f"{1 / rho_rs:.4f}"})
