@@ -150,7 +150,8 @@ Codex on 13 November 2026. They do not add a fitted finding-rate or dependence m
   inventory holds one unit (Oman) among 76. The quantity is the one-sided 95% upper limit on the relative
   rate rho in that span under the C48 two-rate model (all units independent draws on [c, 454.41], k = 1),
   reported as 1/rho; the without-Oman sensitivity (k = 0 of 75) equals C48's zero-delay fold at
-  t = 454.41. Lower finding, later recognisability or both meet it. Reading: the land-plant record, which
+  t = 454.41. Changes in which body forms were recognisable can contribute to lower average finding;
+  any onset shared by all recognisable bodies must precede Oman. Reading: the land-plant record, which
   spores show spanned the interval, requires under this model a reduction comparable in size with C48's
   8-12 for vascular ancestors; the same rule makes them comparable. It is not a measured historical
   reduction and not a demonstration that vascular bodies shared it. Land-plant continuity leaves open

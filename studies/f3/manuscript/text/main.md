@@ -433,10 +433,11 @@ carries little weight as evidence about early finding. The pooled late-Silurian 
 (*h*), and those finds come from six regions. The land-plant body record sets a requirement
 of the same kind. Definite trilete spores place land plants before the [454.41]{.C43} Ma Kinnekulle ash,
 and the [21.5]{.C62 .V321} Myr that follow hold one land-plant body, the Oman fragments, against
-[75]{.C62 .V322} later finds. Under the model of (*e*), that sparse record requires land-plant bodies to have
+[75]{.C62 .V336} later finds. Under the model of (*e*), that sparse record requires land-plant bodies to have
 been found on average at least [8.4]{.C62 .V330} times less often than afterwards ([3.2]{.C62 .V331} times by
-region and stage; [13.4]{.C62 .V323} times without the Oman fragments), or to have become recognisable
-later, comparable with the [8]{.C48 .V054}–[12]{.C48 .V055} times older vascular ancestors require. The Oman
+region and stage; [13.4]{.C62 .V323} times without the Oman fragments), comparable with the
+[8]{.C48 .V054}–[12]{.C48 .V055} times older vascular ancestors require. Changes in which body forms were
+recognisable could contribute to that lower average. The Oman
 fragments, if Katian, show that some land-plant bodies were recognisable within the span, which weakens an
 explanation in which all became recognisable only at 432.9 Ma (*i*)[]{.C62}.
 

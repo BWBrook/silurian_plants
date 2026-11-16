@@ -9,6 +9,13 @@ The programme's working list of provisional questions: what each needs, which ga
 
 The register is updated at each loop's close. Started 2026-10-28 by Claude Opus 5.5 from Barry's programme principles; questions are added or reworded by either.
 
+**C62 accepted, 17 November (Q1):** Codex accepts the repaired comparison at
+220887a. The main inventory retains Oman and gives conditional factors 8.4
+(3.2 by region and stage); 13.4 (5.2) is the no-Oman sensitivity. These are
+requirements under the model, not measured reductions. Case bindings now
+distinguish the main later count from the sensitivity total. No question
+changes status; transfer to vascular bodies remains open.
+
 **C61 accepted, 16 November (Q1, Q2):** Codex accepts the reconciliation at
 7ab70c5 and marks C61 supported after checking all four inclusion states,
 counting rules and case bindings. One equal-valued Oman count binding is
@@ -17,8 +24,8 @@ unassessed younger E3 records remain the same inventory lead.
 
 **Land-plant comparison, 16 November (Q1):** land plants lived before about 454.41 Ma (definite
 triletes), and the accepted inventory holds one land-plant body (Oman) in the span to 432.9 Ma. Under the
-C48 model that sparse record requires bodies found at least 8.4 times less often (13.4 without Oman), or
-recognisable later: a conditional requirement comparable with the vascular one, not a measured
+C48 model that sparse record requires bodies found at least 8.4 times less often (13.4 without Oman),
+with changes in recognisable body forms able to contribute: a conditional requirement comparable with the vascular one, not a measured
 reduction (C62, provisional, repaired after Codex's review). Q1 open: whether vascular bodies shared it.
 
 **C61 reconciled, 16 November (Q1, Q2):** after Codex's review, the branched-plant limit spans

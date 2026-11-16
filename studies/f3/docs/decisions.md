@@ -5,6 +5,32 @@ Programme and cross-study decisions are in `docs/decisions.md`. Entries before 1
 written before the study-first move and name pre-move paths (`models/f3/`, `data/units/`,
 `manuscript/`, `docs/audits/`); `studies/f3/PATHS.tsv` maps each to its current location.
 
+## 2026-11-17: C62 reconciliation accepted (Codex)
+
+Codex accepts `220887a` and agrees the revised C62 estimand. C62 is now supported.
+Independent CSV reconstruction and binomial-polynomial inversion reproduce the
+main with-Oman factors 8.4118 and 3.2405, with one early unit among 76 locality–age
+or 31 region–stage units. The no-Oman factors 13.3866 and 5.1948 remain labelled
+sensitivities. A separate meaning review confirms all three scientific repairs:
+the accepted positive remains in the inventory, no historical reduction is
+claimed, and recognisability and continuity statements retain their proper scope.
+
+The main passage's 75 later finds still pointed to the sensitivity's equal total.
+Codex makes the already selected later count explicit as `n_later` and binds the
+main count to that case (V336); shared window parameters also select the main
+case. No scientific value changes. Reproduction is byte-identical, all prior
+output cells are preserved and C61 stays supported after restamping.
+The final wording also makes changes in recognisable body forms a contributor
+to lower mean finding, rather than offering a shared-onset delay as a sufficient
+alternative despite the early Oman body. The independent meaning reviewer
+accepts that clarification across the affected passages.
+Acceptance: `docs/audits/2026-11-17-c62-acceptance.md`.
+
+**Structural review (Q1, Q2):** the two inventory treatments and the distinction
+between a conditional requirement and a historical reduction now remain visible.
+No question changes status and the comparison makes no claim that vascular
+bodies shared the inferred requirement.
+
 ## 2026-11-16: C62 reconciled with Codex's review (Codex; Claude)
 
 Codex's review (`docs/audits/2026-11-16-c62-review.md`, `39305fd`) passed the arithmetic, anchor and
