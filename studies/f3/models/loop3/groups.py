@@ -15,10 +15,11 @@ inclusive readings) and crown vascular plants (B2), reports:
   groups_shape.csv; a passing allocation shows only that the history is not excluded;
 - inside measures, chosen after seeing the finds, conditional benchmarks under a two-rate model: how much less often finds could have been made in a
   stretch right after the oldest find than after it, from the count observed in that stretch;
-- the spore-anchored gap: land plants lived before SPORE = 454.41 Ma (definite Borenshult-1 triletes below
-  the Kinnekulle K-bentonite, claim C43), and no land-plant body without Oman is older than 432.9 Ma. With
-  zero delay the steady-rate fold is the requirement of Results (e) at t = SPORE for B0 without Oman, the
-  same k = 0 formula as the inside measure with G = SPORE - A.
+- the spore-anchored span: land plants lived before SPORE = 454.41 Ma (nominal age of the Kinnekulle
+  K-bentonite above the definite Borenshult-1 triletes, claim C43). Over SPORE to 432.9 Ma the accepted
+  B0 inventory holds one unit (Oman) among 76; the two-rate limit uses k = 1 of n = 76 (all draws on
+  [c, SPORE]). The without-Oman sensitivity has k = 0 of 75 and equals C48's zero-delay fold at t = SPORE.
+  n_other in these rows is the total unit count.
 
 Inside measure. Conditional on the oldest unit at its true age a0, the other n units are independent
 draws on [c, a0]. With finding rate rho in the stretch (b, a0] relative to 1 on [c, b], the chance that
@@ -181,19 +182,23 @@ def main():
         n_rs = steady(units_for(records, category, reading, note, "region_stage"))[0] - 1
         rho_rs = rho_upper(n_rs, k_max, gap, later)
         insides[-1].update({"n_other_region_stage": n_rs, "times_less_often_at_least_region_stage": f"{1 / rho_rs:.4f}"})
-    u = units_for(records, "B0", "main", "without Oman")
-    n, _, A, _ = steady(u)
-    n_rs = steady(units_for(records, "B0", "main", "without Oman", "region_stage"))[0]
-    gap, later = SPORE - A, A - YOUNG
-    rho, rho_rs = rho_upper(n, 0, gap, later), rho_upper(n_rs, 0, gap, later)
-    assert abs(1 / rho - (SPORE - A) / ((A - YOUNG) * m_star(n))) < 1e-9
-    insides.append({"category": "B0", "reading": "main", "variant": "without Oman",
-                    "stretch": "gap after the oldest definite triletes", "oldest_unit": "C43 Borenshult-1 triletes",
-                    "oldest_range_ma": f">{SPORE:g}", "stretch_ma": f"{A:g}-{SPORE:g}", "shortest_gap_myr": f"{gap:.2f}",
-                    "later_myr": f"{later:.2f}", "n_other": n, "k_in_stretch_min": 0, "k_in_stretch_max": 0,
-                    "level_expected": f"{n * gap / (gap + later):.2f}", "rate_ratio_upper95": f"{rho:.4f}",
-                    "times_less_often_at_least": f"{1 / rho:.4f}", "n_other_region_stage": n_rs,
-                    "times_less_often_at_least_region_stage": f"{1 / rho_rs:.4f}"})
+    for note, k in (("with Oman", 1), ("without Oman", 0)):
+        u = units_for(records, "B0", "main", note)
+        n_all = steady(u)[0]
+        later_units = u[(u.min_ma >= YOUNG) & (u.max_ma <= 432.9 + 1e-9)]
+        assert len(later_units) == n_all - k
+        n_rs = steady(units_for(records, "B0", "main", note, "region_stage"))[0]
+        gap, later = SPORE - 432.9, 432.9 - YOUNG
+        rho, rho_rs = rho_upper(n_all, k, gap, later), rho_upper(n_rs, k, gap, later)
+        if k == 0:
+            assert abs(1 / rho - gap / (later * m_star(n_all))) < 1e-9
+        insides.append({"category": "B0", "reading": "main", "variant": f"{note}, spore anchor",
+                        "stretch": "span after the oldest definite triletes", "oldest_unit": "C43 Borenshult-1 triletes",
+                        "oldest_range_ma": f">{SPORE:g}", "stretch_ma": f"432.9-{SPORE:g}", "shortest_gap_myr": f"{gap:.2f}",
+                        "later_myr": f"{later:.2f}", "n_other": n_all, "k_in_stretch_min": k, "k_in_stretch_max": k,
+                        "level_expected": f"{n_all * gap / (gap + later):.2f}", "rate_ratio_upper95": f"{rho:.4f}",
+                        "times_less_often_at_least": f"{1 / rho:.4f}", "n_other_region_stage": n_rs,
+                        "times_less_often_at_least_region_stage": f"{1 / rho_rs:.4f}"})
     pd.DataFrame(insides).to_csv(OUT / "groups_inside.csv", index=False, lineterminator="\n")
     print(pd.DataFrame(table).T.to_string())
     print(pd.DataFrame(insides).T.to_string())
