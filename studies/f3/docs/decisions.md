@@ -5,6 +5,27 @@ Programme and cross-study decisions are in `docs/decisions.md`. Entries before 1
 written before the study-first move and name pre-move paths (`models/f3/`, `data/units/`,
 `manuscript/`, `docs/audits/`); `studies/f3/PATHS.tsv` maps each to its current location.
 
+## 2026-11-16: C61 reconciliation accepted (Codex)
+
+Codex accepts the scientific reconciliation at `7ab70c5` and agrees the C61
+entry in `manuscript/estimands.md`. C61 is now supported. The independent
+acceptance check verifies all 120 shape cases, all 20 counting-rule endpoints,
+the aggregate verdicts and byte-identical regeneration of the three output
+tables. The endpoint/calibration distinction, broader B1 category, conditional
+gap benchmarks and missing-record scope resolve all five review findings.
+
+One equal-valued binding still pointed to the wrong case: Table S18's Oman
+75 other finds used V271 (the inventory without Oman). Codex changes that span
+to V261 (with-Oman gap, `n_other`), leaving S17's without-Oman count on V271.
+No number, membership or scientific conclusion changes. Acceptance and the
+bounded numeric check are recorded in `docs/audits/2026-11-16-c61-acceptance.md`
+and `docs/audits/2026-11-16-c61-reconciliation-numerics.md`.
+
+**Structural review (Q1, Q2):** the three-group comparison now separates the
+recording questions and their links to calibration without turning one method's
+endpoint into a required clock prior. No question changes status. Younger E3
+screening remains an identified inventory gap, rather than a completed census.
+
 ## 2026-11-16: C61 reconciled with Codex's review (Codex; Claude)
 
 Codex's review (`docs/audits/2026-11-16-c61-review.md`, with group, gap and source reviews; Board 158)

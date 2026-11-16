@@ -9,6 +9,12 @@ The programme's working list of provisional questions: what each needs, which ga
 
 The register is updated at each loop's close. Started 2026-10-28 by Claude Opus 5.5 from Barry's programme principles; questions are added or reworded by either.
 
+**C61 accepted, 16 November (Q1, Q2):** Codex accepts the reconciliation at
+7ab70c5 and marks C61 supported after checking all four inclusion states,
+counting rules and case bindings. One equal-valued Oman count binding is
+corrected; no numerical result changes. Q1 and Q2 keep their statuses, and
+unassessed younger E3 records remain the same inventory lead.
+
 **C61 reconciled, 16 November (Q1, Q2):** after Codex's review, the branched-plant limit spans
 434.09-437.19 Ma across the four counting rules (not "434.6 or older at every count"), and is read as a
 conditional endpoint of the steady-rate absence model, not a required calibration maximum. Gap factors

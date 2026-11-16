@@ -1069,12 +1069,12 @@ tests address a different question.
 
 | Oldest find | Gap (Ma) | Gap length (Myr) | Other units | Factor, shortest gap | Factor, longest gap | Factor, region–stage |
 |---|---|---:|---:|---:|---:|---:|
-| Oman fragments (B0) | 445.2–432.9 | [12.30]{.C61 .V310} to [19.90]{.C61 .V311} | [75]{.C61 .V271} | [7.65]{.C61 .V312} | [12.38]{.C61 .V313} | [2.97]{.C61 .V314} |
+| Oman fragments (B0) | 445.2–432.9 | [12.30]{.C61 .V310} to [19.90]{.C61 .V311} | [75]{.C61 .V261} | [7.65]{.C61 .V312} | [12.38]{.C61 .V313} | [2.97]{.C61 .V314} |
 | Zbrza axes (B1 inclusive) | 443.1–432.9 | [10.20]{.C61 .V315} to [12.30]{.C61 .V316} | [72]{.C61 .V317} | [6.09]{.C61 .V318} | [7.34]{.C61 .V319} | [2.55]{.C61 .V320} |
 
 **Table S18.** Gap benchmarks after an isolated early find: the least factor by which average finding
 across the gap must fall below the later window, under the two-rate model above
-(`studies/f3/models/loop3/out/groups_inside.csv`). The gaps were chosen after seeing the finds; the
+(`out/groups_inside.csv`). The gaps were chosen after seeing the finds; the
 shape tests in Table S17 are the calibrated check, and both groups fail every declared history with the
 isolated find included. The Oman fragments came from palynological preparation of borehole material,
 unlike most later finds; Zbrza membership is disputed [@salamon2018PutativeLateOrdovician; @wellman2022TerrestrializationOrdovician]
