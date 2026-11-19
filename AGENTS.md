@@ -14,9 +14,10 @@ use the private Correspondence Board section **Silurian Plants** (`silurian-plan
 scientific discussion and task coordination. Initial F3 review: discussion **99** and
 `studies/f3/docs/audits/2026-10-28-f3-reshape-codex-review.md`.
 
-Barry follows the work through his Codex and Claude chats, not the Board. Bring material
+Claude, Codex and Gemini collaborate on equal terms. Coordinate with Gemini through its
+session. Barry follows the work through his Claude, Codex and Gemini chats, not the Board. Bring material
 findings, disagreements and decisions back to those chats. Discuss and agree file ownership
-before concurrent edits; preserve the other agent's work. Keep accepted decisions in
+before concurrent edits and preserve other agents' work. Keep accepted decisions in
 `docs/decisions.md` (programme) or the study's own log and distinguish proposals from adopted methods. Read relevant Board
 updates during active work; there is no automatic dispatch or scheduled monitoring.
 
@@ -46,7 +47,7 @@ do not wait or poll for a reply from an unprompted collaborator.
   records, climate and palaeogeography context, and software pointers. Treat it as inputs, not
   verified facts. Read each area's README before use, and regenerate tables with its scripts
   rather than editing them. `data/eprp/local/` is git-ignored (unlicensed, no-derivatives or bulky
-  material) and exists only on mac-mini; rebuild it with the scripts.
+  material) and exists only on `mini`; rebuild it with the scripts.
 - **Compute and mirrors (from 2026-10-29).** UTAS blocks Tailscale on campus and its VPN, so
   machine names and routes follow nectar's `docs/workflows/cross-machine-access.md`; pull nectar
   before remote work. Use the short names (`mini`, `macbook`, `nectar`, `deep`, `wsl`, `alien`).
@@ -127,9 +128,9 @@ Run `check`, `index` and `matrix` after editing cards, and `dois` after adding r
 - When a lead, a closed source or a data gap bears on a question in `docs/questions.md`, name
   the question's ID. When a claim repeated in the literature fails against its source, log it
   under Q5.
-- At the close of each loop, update `docs/questions.md` and add a structural-review entry to
-  the study's decision log: does the structure serve the next investigation, which assumptions were
-  exposed, and did any evidence change a question?
+- Update `docs/questions.md` when evidence changes a question. Add a structural review to the
+  study's decision log when it bears on a consequential choice. Record whether the structure
+  serves the next investigation and which assumptions the evidence exposed.
 - British spelling. Dense, precise prose; no filler.
 - Record decisions that shape the programme in `docs/decisions.md`, naming who decided. Keep
   the AI-roles section of `docs/charter.md` current: the work will be published with a full
@@ -139,5 +140,5 @@ Run `check`, `index` and `matrix` after editing cards, and `dois` after adding r
   reproduces it. The article, supplement, brief and agent guide cite those IDs, binding each quoted
   number as `[428.8]{.C27}`; `tools/claims.py check` must pass before committing a change to a paper
   or its evidence. Change a result in the ledger first, then the documents. A claim becomes
-  supported only after the other agent or Barry has checked it against its evidence.
+  supported only after another agent or Barry has checked it against its evidence.
 - Commit to `main` when work reaches a coherent state, and push.
