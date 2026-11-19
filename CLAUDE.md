@@ -17,8 +17,8 @@ cross-family audit and the limits on Codex jobs. This project's routing:
 
 - **To Codex:** structured extraction, classification, digitisation, crosswalks and
   table-building, that is, any job whose output can be constrained to a schema and checked by
-  machine. Use `terra` (`gpt-6.1-terra`) at high effort for mechanical work and `sol`
-  (`gpt-6.1-sol`) at high for knowledge-heavy classification.
+  machine. Use the wrapper's `terra` role at high effort for mechanical work and its
+  `sol` role at high for knowledge-heavy classification.
 - **On Claude:** source-critical synthesis (cards, reviews, the primer) until a bake-off shows
   that Codex's sourcing holds up, plus the judgement calls and the integration.
 - **Cross-family audit:** `sol` with web search audits each Claude-drafted card. The drafting
