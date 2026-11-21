@@ -55,6 +55,13 @@ EXCLUDE = {
 }
 
 
+RESTORE_NOTES = {
+    "pbdb:28768": ("Helderberg (SUNY-B 311, Milesburg PA; ref 6895, the same accession list as the three exclusions). "
+                   "Macrostrat columns 304 and 305 date the Helderberg Gp 417.97-413.02 Ma (Early Devonian), so the "
+                   "coding stands."),
+}
+
+
 def linked_tail():
     links = pd.read_csv(MACRO / "material_links.csv")
     return {"tail:" + m for m in links.material_root}, links
@@ -76,7 +83,8 @@ def dispositions(h):
         elif r.max_ma > LOCHKOVIAN_BASE:
             decision, evidence = "outside_early_devonian", "range reaches into the Silurian; not restored"
         else:
-            decision, evidence = "restore", "Early Devonian coding with no contrary evidence found in the held sources"
+            decision, evidence = "restore", RESTORE_NOTES.get(
+                r.horizon_id, "Early Devonian coding with no contrary evidence found in the held sources")
         rows.append({"horizon_id": r.horizon_id, "b0": r.b0, "b1": r.b1, "b2": r.b2, "max_ma": r.max_ma, "min_ma": r.min_ma,
                      "region": r.region, "locality": r.locality,
                      "same_locality_as_primary": r.locality in primary_localities,

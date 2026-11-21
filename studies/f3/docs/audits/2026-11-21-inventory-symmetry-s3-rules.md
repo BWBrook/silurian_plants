@@ -123,4 +123,42 @@ min_ma, max_ma) among guaranteed late locality–age units.
 
 ## Amendments
 
-None.
+All dated 21 November 2026, made after the parse was first run and before any S3 count or share. Each
+came from reading the mapping tables or the list of rows reaching above 419.62 Ma, not from a tally. The
+frozen text above is unchanged; these override it where they differ.
+
+- **S3-A1, species counts (§1).** The sheet has 810 one-row species and 194 two-row species, and no
+  three-row species. The counts in §1 (809, 195, 1) were relayed and are wrong by one row; the parser
+  asserts 810/194.
+- **S3-A2, UK regions (§5).** UK localities naming Shropshire, Hereford, Worcestershire, Gloucestershire,
+  Devon, Cornwall or Somerset map to Avalonia, like England and Wales. Found because Brown Clee Hill,
+  Targrove and Perton Lane fell to "multiple".
+- **S3-A3, Yea (§4).** The re-ageing applies only to the disputed Yea anchor units. Norton Gully Sandstone
+  (*Taungurungia garrattii*, Late Pragian–Emsian) keeps Capel's age.
+- **S3-A4, locality alias (§5).** "Altholville" and "Atholville" (Campbellton Fm) share one key.
+- **S3-A5, fuzzy sensitivity (§5), proposed for removal.** Five of the six 0.92 merges join distinct sections
+  or formations, and S3-A4 handles the sixth. Proposal: drop `S3_fuzzy`.
+- **S3-A6, unresolved sensitivity (§3), proposed for removal.** Found in the list of rows reaching above
+  419.62 Ma. Its added rows are mostly *Cooksonia*, including the Sheinwoodian *C. barrandei*, which would
+  move A to 432.9 Ma and make the set a branched-plant inventory. Proposal: drop `S3_plus_unresolved` from
+  the crown runs.
+- **S3-A7, Capel-groups-only variant (§3).** Two Silurian crown rows are crown only through F3's genus rule:
+  *Aberlemnia* cf. *caledonica* (Lipeon Fm, Bolivia) and *Aberlemnia* ? sp. (Van Canh Fm), both in Capel's
+  Basal eutracheophytes. `S3_capel_groups` applies Capel's groups alone, with no F3 override; it is
+  reported beside S3 main.
+- **S3-A8, oldest age and Task 6 on S3 (§7).** S3 main's oldest non-Yea crown row is Lipeon Fm (Ludlow,
+  426.7–422.7 Ma), so excluding Yea leaves A at 426.7 Ma. Task 6 on S3 is run twice: Yea excluded with A
+  from the data (426.7 Ma), and Yea and Lipeon both excluded so that A = 425.0 Ma (Bathurst Island Fm), the
+  hinge the specification intends.
+- **S3-A9, gates (§1).** Without S3 locality–age or shape tests, the specification's gates are restated for
+  S3. Every other condition stands as written.
+  - Gate 1 (rock, rock × spore share): holds if p < 0.05 on S1 and S2b at both grains and on S3
+    region–stage, at A = 426.7 and 425.0 Ma; withdrawn if p ≥ 0.05 on S2b at both grains and on S3
+    region–stage.
+  - Gate 2 (spore share alone): holds if p < 0.05 on S1 and S2b at both grains and on S3 region–stage;
+    withdrawn if p ≥ 0.05 on S2b locality–age and on S3 region–stage.
+  - Gate 3 (C60): the S3 conditions use region–stage only.
+  - Gate 4 (C27, C49): S3 carries no shape test, so withdrawal, which needs S2b and S3 to agree, cannot
+    fire. A failure on S2b alone counts as "narrower, inventory-dependent".
+  - Any other outcome counts as "narrower, inventory-dependent" (Fable's amendment 5). Each gate is
+    reported for S3 main and `S3_capel_groups`.

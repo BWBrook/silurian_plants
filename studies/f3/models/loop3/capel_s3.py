@@ -190,8 +190,12 @@ def fuzzy_groups(keys_by_region):
 
 
 def units(d, variant="main", counting="locality_age"):
-    """S3 units for variant main, plus_unresolved, yea_literal or fuzzy; same aggregation as select_records."""
-    r = d[d.b2.isin(["B2", "unresolved"] if variant == "plus_unresolved" else ["B2"])].copy()
+    """S3 units for variant main, capel_groups (Capel groups only, no F3 genus override), yea_literal, fuzzy or
+    plus_unresolved; same aggregation as select_records."""
+    if variant == "capel_groups":
+        r = d[d.capel_class.eq("B2")].copy()
+    else:
+        r = d[d.b2.isin(["B2", "unresolved"] if variant == "plus_unresolved" else ["B2"])].copy()
     if variant == "yea_literal":
         r["max_ma"], r["min_ma"] = r.literal_max_ma, r.literal_min_ma
     r = r[r.max_ma > YOUNG]

@@ -4,9 +4,10 @@ Claude (Opus 5.5), from 21 November 2026. Specification and Fable's amendments:
 `2026-11-21-inventory-symmetry-spec.md`. Frozen S3 rules: `2026-11-21-inventory-symmetry-s3-rules.md`
 (committed `7b6e3ae` before any S3 parse). Board discussion 191.
 
-**Stage 1 status (this record): Tasks 1A and 1B are done. No share has been computed on S1, S2a, S2b or S3,
-and Tasks 3–6 have run on S0 only, to prove the harness reproduces the committed values. The S3 mapping
-awaits Codex's sign-off.** No text, figure, ledger, estimand or frozen output was changed.
+**Stage 1 status (this record): Tasks 1A and 1B are done. No share or test has been computed on S1, S2a, S2b
+or S3: Fable's order puts the S3 sign-off before any share, and this record reads that strictly. Only the
+Tasks 3–4 harness for C59, C60 and C27/C48 exists, and it has run on S0 alone to prove it reproduces the
+committed values. Task 4.2, Task 5 and Task 6 are not built yet. The S3 mapping awaits Codex's sign-off.** No text, figure, ledger, estimand or frozen output was changed.
 
 ## Code and outputs
 
@@ -15,7 +16,7 @@ awaits Codex's sign-off.** No text, figure, ledger, estimand or frozen output wa
 | `studies/f3/models/loop3/inventory_symmetry.py` | Task 1A: disposition table; builds S0, S1, S2a, S2b and variants from `horizons_reviewed.csv` without changing it |
 | `studies/f3/models/loop3/capel_s3.py` | Task 1B: S3 parse under the frozen rules; mapping tables; no counts |
 | `studies/f3/models/loop3/inventory_symmetry_tests.py` | Tasks 3–4 harness (C59 placement, C60, C27/C48 arithmetic) |
-| `out/inventory_symmetry_dispositions.csv` | SHA-256 `5d23c7233fe500360b5265fee761c55db524cf4e3b8d175d7e5e1b138310a98d` |
+| `out/inventory_symmetry_dispositions.csv` | SHA-256 `2885c100e3a2ef3b81f2da958e2fad89ce6410d38abc65cd0590886b71ed311e` |
 | `out/inventory_symmetry_units.csv` | `ad76a374292b309fb1a4b28afbbb70159a55a32ec342fe721f65c1a09db6ba29` |
 | `out/capel_s3_rows.csv` | `aa0cc0216efed9cda81e52427ebdb8788f13cb437a78a217263c1b7868c43e44` |
 | `out/capel_s3_age_map.csv` | `9c5bc82f9851492137dc1848e03563656ecadb328169d207840117ca2f0a9e1f` |
@@ -69,6 +70,9 @@ carries its PBDB reference and interval coding. Checks on the restored rows:
   (Battery Point) and `pbdb:26179` (Beartooth Butte). Under the locality–age rule their broader age code
   makes each a separate unit. They may be the same horizons coded coarsely. The variant `_merged` adds none
   of them.
+- **`pbdb:28768` (Milesburg, Helderberg)** comes from the same SUNY-Binghamton accession list (ref 6895) as the
+  three exclusions. Macrostrat columns 304 and 305 date the Helderberg Gp 417.97–413.02 Ma, so its Early
+  Devonian coding stands; the disposition table records this.
 - **Duration filter on B0 and B1.** Five restored rows are B0 or B1 only. Task 1A builds every group, but
   Fable's order confines Tasks 3–6 to the crown group.
 
@@ -97,7 +101,10 @@ unresolved (Basal eutracheophytes and Incertae sedis without an F3 decision): 12
 
 ### Amendments made after parsing and before any S3 count (for sign-off)
 
-Each was found by reading the mapping tables, not from any tally.
+The dated text of S3-A1 to S3-A9 is in the rules file's Amendments section, which overrides its frozen text.
+S3-A1 to S3-A5 came from the mapping tables, and S3-A6 to S3-A8 from the list of rows reaching above
+419.62 Ma; none came from a tally. S3-A7 adds a Capel-groups-only variant, S3-A8 sets the Task 6 rule for
+S3 (Lipeon Fm keeps A at 426.7 Ma once Yea is excluded) and S3-A9 restates the gates for S3.
 
 - **S3-A1. Species counts.** The sheet has 810 one-row species and 194 two-row species, and no three-row
   species. Amendment 2's 809/195/1 is off by one row. The rule document's statement is corrected here.
@@ -127,18 +134,18 @@ Each was found by reading the mapping tables, not from any tally.
 S3 rows are Capel crown rows whose literal range reaches above 419.62 Ma. Yea rows carry F3's envelope in
 S3 main.
 
-| S0 unit (13 Silurian-only, 3 Yea) | S3 match | Note |
+| S0 unit and its taxa (13 Silurian-only, 3 Yea) | S3 match | Basis |
 |---|---|---|
-| Rinconada, Chica de Zonda, Argentina (`M-rinconada`) | none | Capel has no Argentine Silurian crown row |
-| Xiemisitai, West Junggar (`pbdb:278439`) | none | |
-| Mangkelu II, Wutubulake, Hoboksar (`M-mangkelu-ii`) | Wutubulake Fm, Hoboksar (*Wutubulaka multidichotoma*, Late Pridoli) | match |
-| West Junggar (`M-aberlemnia-junggaria`) | none | Capel lists no *Aberlemnia junggaria* |
-| Bathurst Island US383, US384, US385, US688 (Laurentia) | Bathurst Island Fm, Polar Bear Pass: one locality, six species, Ludfordian | S0's four units are one in S3; Capel's age (425.0–422.7) is narrower than S0's (425.0–419.62) |
-| Qujing (`M-qujingense`) | Upper Yulongsi Fm, Qujing (*Z. qujingense*, Pridoli) | match |
-| Karlštejn, Bohemia (`M-baragwanathia-karlstejn`) | Požáry Fm, Kosov Hill (*Baragwanathia brevifolioides*, Early Pridoli) | same genus and formation, different locality name; unresolved without outside search |
-| Rashkovskie Beds, Podolia (`pbdb:52702`) | Upper Rashkovskie Beds Fm, Trubchin (*Zosterophyllum ? sp.*, Pridoli) | match |
-| Skala, Podolia (`pbdb:13873`) | none | |
-| Van Canh, Vietnam (`M-van-canh`) | Van Canh Fm, Dô Son (*Aberlemnia ? sp.*, Pridoli) | match |
+| Rinconada, Argentina (`M-rinconada`; *Aberlemnia caledonica*) | none | Capel has no Argentine Silurian crown row; its nearest is *Aberlemnia* cf. *caledonica* in Bolivia |
+| Xiemisitai, West Junggar (`pbdb:278439`; *Aberlemnia* sp.) | none | |
+| Mangkelu II, Wutubulake, Hoboksar (`M-mangkelu-ii`; *Zosterophyllum mangkeluense*) | Wutubulake Fm, Hoboksar (*Wutubulaka multidichotoma*, Late Pridoli) | locality and formation; taxa differ |
+| West Junggar (`M-aberlemnia-junggaria`; *Aberlemnia junggaria*) | none | Capel lists no *A. junggaria* |
+| Bathurst Island US383, US384, US385, US688 (cf. *Bathurstia*, *Distichophytum*, *Macivera gracilis*, *Zosterophyllum* spp.) | Bathurst Island Fm, Polar Bear Pass: one locality, the same six taxa, Ludfordian | locality and taxa; S0's four units are one in S3, and Capel's age (425.0–422.7 Ma) is narrower than S0's (425.0–419.62 Ma) |
+| Qujing (`M-qujingense`; *Z. qujingense*) | Upper Yulongsi Fm, Qujing (*Z. qujingense*, Pridoli) | locality and species |
+| Karlštejn, Bohemia (`M-baragwanathia-karlstejn`; *Baragwanathia brevifolioides*) | Požáry Fm, Kosov Hill (*B. brevifolioides*, Early Pridoli) | same species and formation, different locality name; unresolved without outside search |
+| Rashkovskie Beds, Podolia (`pbdb:52702`; *Cooksonia*, *Protosawdonia* and others) | Upper Rashkovskie Beds Fm, Trubchin (*Zosterophyllum ?* sp., Pridoli) | locality and formation; taxa differ |
+| Skala, Podolia (`pbdb:13873`; *Zosterophyllum*) | none | |
+| Van Canh, Vietnam (`M-van-canh`; putative zosterophylls) | Van Canh Fm, Dô Son (*Aberlemnia ?* sp., Pridoli) | locality and formation |
 | Yea: Ghin Ghin Road (two units), Limestone Road | Upper Yea Fm (*Baragwanathia longifolia*); Ghin Ghin Road (*Parazosterophyllum timsiae*) | Capel's Limestone Road rows are not crown |
 | — | Lipeon Fm, Jarcas, Bolivia (*Aberlemnia cf. caledonica*, Ludlow) | in S3, not S0 |
 | — | Tokrau Horizon, Balkhash, Kazakhstan (*Baragwanathia? sp.*, *Jugumella burubaensis*, Pridoli) | in S3, not S0 |
@@ -159,18 +166,24 @@ regions are the same set, with Gondwana-South-America from Bolivia in S3 rather 
 ## For Codex's sign-off (stage-1 gate)
 
 1. The S3 rules, including §1: only region–stage enters the gates on S3, and Task 5 is not run on S3. This
-   departs from the specification's gates 1, 2 and 4.
-2. Amendments S3-A1 to S3-A6, including the proposals to drop `S3_fuzzy` and `S3_plus_unresolved`.
+   departs from the specification's gates 1, 2 and 4; S3-A9 restates those gates.
+2. Amendments S3-A1 to S3-A9, including the proposals to drop `S3_fuzzy` and `S3_plus_unresolved`, the
+   Capel-groups-only variant and the two Task 6 runs on S3.
 3. The crown and region mappings (`capel_s3_rows.csv`, `capel_s3_region_map.csv`) and the age map
    (`capel_s3_age_map.csv`).
 4. The Task 1A dispositions, especially the evidence for `pbdb:28216`, `28302` and `28303`, and whether the
    `_merged` variant should be primary.
 5. Whether the crosswalk's Karlštejn–Kosov pairing should count as one locality.
+6. The region "multiple" (Germany, Russia, Poland, following F3's PBDB rule) lumps much of S3's Devonian side
+   into one region and lowers its region–stage count. S0–S2b use the same rule, so the comparison is
+   like for like, but the S3 region–stage n depends on it.
 
 ## Stage 2 (after sign-off)
 
 Run Tasks 3, 4 and 6 on S0, S1, S2a, S2b (with variants) and S3 (region–stage), and Task 5 on S0–S2b.
-Report for each S2a and S2b test the expected count and the largest count rejected (amendment 6), and run
+Report region–stage k both ways: switch_reading.py's distinct (region, min, max) among late locality–age
+units, and late region–stage units counted directly, because n and k use different definitions. Report for
+each S2a and S2b test the expected count and the largest count rejected (amendment 6), and run
 all six histories in Task 4.2 (amendment 7). Then build the gate table. Any outcome outside the stated
 gate cases counts as "narrower, inventory-dependent" (amendment 5). The gate thresholds were set after
 Gemini's preliminary sums on S1 and S2: they are decision rules, not a blind pre-registration. Ledger
