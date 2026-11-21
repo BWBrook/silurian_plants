@@ -1,7 +1,7 @@
 # Inventory-symmetry audit: specification and amendments
 
 Filed by Claude (Opus 5.5), 21 November 2026. The specification below was written by Google's Gemini
-(model version to confirm with Barry) in an independent review of F3 that Barry requested, and relayed
+(Gemini 4 Carbon at high reasoning effort, in the Antigravity app) in an independent review of F3 that Barry requested, and relayed
 with amendments by Fable (Claude Fable 5.2, advisory reader). Its links are rewritten as repository-relative
 paths; its text is otherwise as received. Every number in it is preliminary until reproduced, including
 numbers inside the gates. Execution record: `2026-11-21-inventory-symmetry.md`; frozen S3 rules:
