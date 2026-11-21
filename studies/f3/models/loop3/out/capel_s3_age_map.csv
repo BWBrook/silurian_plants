@@ -1,0 +1,72 @@
+time,max_ma,min_ma,status,rows
+,,,unmapped,1
+Early Devonian,419.62,393.47,in_window,1
+Early Eifelian,393.47,387.95,outside_window,12
+Early Emsian,410.62,393.47,in_window,52
+Early Famennian,372.15,358.86,outside_window,4
+Early Frasnian,382.31,372.15,outside_window,56
+Early Frasnian-early Tournaisian,382.31,358.86,outside_window,1
+Early Givetian,387.95,382.31,outside_window,24
+Early Givetian-early Frasnian,387.95,372.15,outside_window,1
+Early Lochkovian,419.62,413.02,in_window,9
+Early Pragian,413.02,410.62,in_window,10
+Early Pridoli,422.7,419.62,in_window,6
+Early Tournaisian,358.86,358.86,outside_window,8
+Early to mid-Tournaisian,358.86,358.86,outside_window,41
+Eifelian,393.47,387.95,outside_window,15
+Eifelian-Frasnian,393.47,372.15,outside_window,1
+Emsian,410.62,393.47,in_window,23
+Famennian,372.15,358.86,outside_window,72
+Frasnian,382.31,372.15,outside_window,35
+Givetian,387.95,382.31,outside_window,41
+Givetian-Frasnian,387.95,372.15,outside_window,3
+Gordstian,426.7,425.0,in_window,2
+Homerian,430.6,426.7,in_window,1
+Late Devonian,382.31,358.86,outside_window,12
+Late Eifelian,393.47,387.95,outside_window,19
+Late Eifelian-early Givetian,393.47,382.31,outside_window,1
+Late Emsian,410.62,393.47,in_window,20
+Late Emsian-Eifelian,410.62,387.95,in_window,1
+Late Emsian-early Eifelian,410.62,387.95,in_window,7
+Late Emsian-late Frasnian,410.62,372.15,in_window,1
+Late Famennian,372.15,358.86,outside_window,87
+Late Fammenian,372.15,358.86,outside_window,3
+Late Frasnian,382.31,372.15,outside_window,22
+Late Givetian,387.95,382.31,outside_window,35
+Late Lochkovian,419.62,413.02,in_window,33
+Late Lochkovian-early Pragian,419.62,410.62,in_window,3
+Late Pragian,413.02,410.62,in_window,18
+Late Pragian-Emsian,413.02,393.47,in_window,3
+Late Pragian-early Emsian,413.02,393.47,in_window,8
+Late Pridoli,422.7,419.62,in_window,5
+Late Tournaisian,358.86,358.86,outside_window,107
+Late Tournaisian-post-Tournaisian,,,outside_window,8
+Lochkovian,419.62,413.02,in_window,18
+Lochkovian-Pragian,419.62,410.62,in_window,1
+Lochkovian-early Pragian,419.62,410.62,in_window,10
+Ludfordian,425.0,422.7,in_window,9
+Ludlow,426.7,422.7,in_window,5
+Mid- to late Emsian,410.62,393.47,in_window,19
+Mid- to late Frasnian,382.31,372.15,outside_window,1
+Mid- to late Givetian,387.95,382.31,outside_window,6
+Mid- to late Lochkovian,419.62,413.02,in_window,13
+Mid- to late Pragian,413.02,410.62,in_window,36
+Mid- to late Tournaisian,358.86,358.86,outside_window,6
+Middle Devonian,393.47,382.31,outside_window,9
+Middle Givetian,387.95,382.31,outside_window,28
+Middle Givetian-Early Frasnian,387.95,372.15,outside_window,1
+Middle Lochkovian,419.62,413.02,in_window,29
+Middle Lochkovian-early Pragian,419.62,410.62,in_window,1
+Middle Pragian,413.02,410.62,in_window,2
+Middle Pragian-Emsian,413.02,393.47,in_window,2
+Middle Tournaisian,358.86,358.86,outside_window,76
+Post-Tournaisian*,,,outside_window,47
+Pragian,413.02,410.62,in_window,19
+Pragian-Emsian,413.02,393.47,in_window,6
+Pragian-early Emsian,413.02,393.47,in_window,12
+Pridoli,422.7,419.62,in_window,13
+Pridoli-Pragian,422.7,410.62,in_window,1
+Sheinwoodian,432.9,430.6,in_window,1
+Tournaisian,358.86,358.86,outside_window,13
+early Emsian,410.62,393.47,in_window,1
+late Givetian,387.95,382.31,outside_window,1

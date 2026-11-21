@@ -88,6 +88,12 @@ data archived, and the human–AI correspondence record published alongside.
   read-only critique, issue-finding and the prompts Barry passes to Claude and Codex; it makes no edits
   to the repository. Its first prompt (14 November 2026) proposed restating the body-fossil results
   around the rule of three.
+- Gemini (Google; model version to confirm with Barry), independent reviewer at Barry's request,
+  November 2026. It found that F3's crown vascular-plant inventory treats Silurian and Early Devonian
+  finds asymmetrically (a 20 Myr age-duration filter that drops every collection dated only to the Early
+  Devonian, and literature curation concentrated in the Silurian), which bears on C59 and C60, and wrote
+  the inventory-symmetry specification Claude and Codex run
+  (`studies/f3/docs/audits/2026-11-21-inventory-symmetry-spec.md`). It makes no repository edits.
 - Codex model identity. Barry, 14 November 2026: "Codex is actually Astra and Sol underneath the hood."
   Entries below name the Codex model where a session exposed it (`gpt-6.1-sol`, `gpt-6.1-terra`,
   `gpt-5.6-sol`, `gpt-5.6-luna`) and say so where it did not. Board posts by the historical author

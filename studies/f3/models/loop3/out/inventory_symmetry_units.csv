@@ -1,0 +1,768 @@
+set,counting,unit_id,min_ma,max_ma,region,member_ids,n_members
+S0,locality_age,"Argentina|chica de zonda range, san juan|419.62|422.7",419.62,422.7,Gondwana-South-America,tail:M-rinconada,1
+S0,locality_age,Australia|frenchmans spur / thomson river type-material district|393.47|413.02,393.47,413.02,Gondwana-Australia-Antarctica,tail:M-wilson-creek,1
+S0,locality_age,"Australia|ghin ghin road, yea|393.47|422.7",393.47,422.7,Gondwana-Australia-Antarctica,tail:M-ghin-ghin-b2,1
+S0,locality_age,"Australia|ghin ghin road, yea|393.47|426.7",393.47,426.7,Gondwana-Australia-Antarctica,tail:M-ghin-ghin,1
+S0,locality_age,"Australia|limestone road, brackley's (barkley's) cutting, yea; loc. 4 (= h4) of garratt's 1978 map; the national heritage place flora fossil site|393.47|426.7",393.47,426.7,Gondwana-Australia-Antarctica,tail:M-limestone-road,1
+S0,locality_age,"BE|bois d'ausse sandstone|50.5,5.7|413.02|419.62",413.02,419.62,Avalonia,pbdb:11722,1
+S0,locality_age,"BE|burnotien|50.6,4.1|399.5|413.02",399.5,413.02,Avalonia,pbdb:23200;pbdb:23202,2
+S0,locality_age,"BE|grès de wiheries|50.4,3.8|410.62|413.02",410.62,413.02,Avalonia,pbdb:22860;pbdb:23197,2
+S0,locality_age,"BY||53.2,30.8|393.47|399.5",393.47,399.5,Baltica,pbdb:232956,1
+S0,locality_age,"CA|bathurst island|75.8,-98.4|410.62|413.02",410.62,413.02,Laurentia,pbdb:11421;pbdb:11425,2
+S0,locality_age,"CA|battery point|48.6,-64.3|393.47|410.62",393.47,410.62,Laurentia,pbdb:29001;pbdb:31004,2
+S0,locality_age,"CA|battery point|48.8,-64.3|393.47|410.62",393.47,410.62,Laurentia,pbdb:26026;pbdb:26547;pbdb:28924;pbdb:28997;pbdb:29002;pbdb:29003;pbdb:29026;pbdb:31023;pbdb:31212,9
+S0,locality_age,"CA|battery point|48.8,-64.4|393.47|410.62",393.47,410.62,Laurentia,pbdb:28968;pbdb:28971;pbdb:31002;pbdb:31003;pbdb:31213;pbdb:31215,6
+S0,locality_age,"CA|battery point|48.8,-64.5|393.47|410.62",393.47,410.62,Laurentia,pbdb:28950;pbdb:28969;pbdb:28996;pbdb:28998;pbdb:29029;pbdb:31007;pbdb:31010;pbdb:31011;pbdb:31027,9
+S0,locality_age,"CA|battery point|48.9,-64.4|393.47|410.62",393.47,410.62,Laurentia,pbdb:31214,1
+S0,locality_age,"CA|york river|48.6,-64.3|393.47|410.62",393.47,410.62,Laurentia,pbdb:31216,1
+S0,locality_age,"CA|york river|48.8,-64.4|393.47|410.62",393.47,410.62,Laurentia,pbdb:29020;pbdb:31005,2
+S0,locality_age,"CN|posongchong|23.3,104.2|410.62|413.02",410.62,413.02,South-China,pbdb:10891,1
+S0,locality_age,"CN|posongchong|23.3,104.3|410.62|413.02",410.62,413.02,South-China,pbdb:10896,1
+S0,locality_age,"CN|xiemisitai|46.8,85.6|419.62|422.7",419.62,422.7,Kazakhstania,pbdb:278439,1
+S0,locality_age,"CN|xujiachong (also called longhuashan)|26.0,104.0|393.47|410.62",393.47,410.62,South-China,pbdb:10941,1
+S0,locality_age,"Canada|us383 (=us600), polar bear pass region, bathurst island|419.62|425.0",419.62,425.0,Laurentia,tail:M-bathurst-us383,1
+S0,locality_age,"Canada|us384, polar bear pass region, bathurst island|419.62|425.0",419.62,425.0,Laurentia,tail:M-bathurst-us384,1
+S0,locality_age,"Canada|us385 (=us601), polar bear pass region, bathurst island|419.62|425.0",419.62,425.0,Laurentia,tail:M-bathurst-us385,1
+S0,locality_age,"Canada|us688, polar bear pass region, bathurst island|419.62|425.0",419.62,425.0,Laurentia,tail:M-bathurst-us688,1
+S0,locality_age,"China|mangkelu ii section, wutubulake village, hoboksar, west junggar|419.62|422.7",419.62,422.7,Kazakhstania,tail:M-mangkelu-ii,1
+S0,locality_age,"China|qujing, northeastern yunnan|419.62|422.7",419.62,422.7,South-China,tail:M-qujingense,1
+S0,locality_age,China|west junggar|419.62|422.7,419.62,422.7,Kazakhstania,tail:M-aberlemnia-junggaria,1
+S0,locality_age,"Czech Republic|karlštejn, ve spáleném, near house 132|419.62|422.7",419.62,422.7,peri-Gondwana-Europe,tail:M-baragwanathia-karlstejn,1
+S0,locality_age,"DE|hunsrück slate|49.8,7.4|399.5|410.62",399.5,410.62,multiple,pbdb:26904,1
+S0,locality_age,"DE|wahnbach|50.9,7.3|410.62|413.02",410.62,413.02,multiple,pbdb:232143,1
+S0,locality_age,"DE||50.2,7.4|399.5|410.62",399.5,410.62,multiple,pbdb:27049;pbdb:27129,2
+S0,locality_age,"KZ|aigyrzhal'skaya suite|47.0,79.0|393.47|413.02",393.47,413.02,Kazakhstania,pbdb:32851,1
+S0,locality_age,"Norway|red bay series brook section, spitsbergen|413.02|419.62",413.02,419.62,Laurentia,tail:M-svalbard,1
+S0,locality_age,"RU|pridorozhnaya|54.5,89.9|399.5|410.62",399.5,410.62,multiple,pbdb:238400,1
+S0,locality_age,"RU|salairka horizon|54.3,85.9|399.5|410.62",399.5,410.62,multiple,pbdb:35709,1
+S0,locality_age,"RU|shanda horizon|54.3,85.9|387.95|399.5",387.95,399.5,multiple,pbdb:35721,1
+S0,locality_age,"UA|rashkovskie beds|48.5,26.3|419.62|422.7",419.62,422.7,Baltica,pbdb:52702,1
+S0,locality_age,"UA|skala|49.6,23.9|419.62|422.7",419.62,422.7,Baltica,pbdb:13873,1
+S0,locality_age,"UK|dryden flags|57.3,-2.8|410.62|413.02",410.62,413.02,Laurentia,pbdb:10721,1
+S0,locality_age,"UK|dundee flagstone|56.0,-2.0|413.02|419.62",413.02,419.62,Laurentia,pbdb:10705,1
+S0,locality_age,"UK|dundee|56.7,-2.8|413.02|419.62",413.02,419.62,Laurentia,pbdb:26755;pbdb:26757,2
+S0,locality_age,"UK|senni|51.9,-3.6|410.62|413.02",410.62,413.02,multiple,pbdb:238752,1
+S0,locality_age,"UK|st. maughans|52.0,-2.0|413.02|419.62",413.02,419.62,Avalonia,pbdb:10679,1
+S0,locality_age,"UK|strathmore|55.0,-4.0|393.47|410.62",393.47,410.62,Laurentia,pbdb:10719,1
+S0,locality_age,"UK|strathmore|56.2,-4.2|393.47|410.62",393.47,410.62,Laurentia,pbdb:11513,1
+S0,locality_age,"US|beartooth butte|44.9,-108.1|393.47|410.62",393.47,410.62,Laurentia,pbdb:29294,1
+S0,locality_age,"US|beartooth butte|45.0,-109.6|393.47|410.62",393.47,410.62,Laurentia,pbdb:26176;pbdb:29292;pbdb:31000,3
+S0,locality_age,"US|trout valley|46.1,-68.6|387.95|399.5",387.95,399.5,Laurentia,pbdb:10614;pbdb:10617,2
+S0,locality_age,"Vietnam|xóm chè quarry, northern vietnam|419.62|422.7",419.62,422.7,South-China,tail:M-van-canh,1
+S0,region_stage,Avalonia|midpoint-stage:410.62,399.5,413.02,Avalonia,pbdb:23200;pbdb:23202,2
+S0,region_stage,Avalonia|midpoint-stage:413.02,410.62,413.02,Avalonia,pbdb:22860;pbdb:23197,2
+S0,region_stage,Avalonia|midpoint-stage:419.62,413.02,419.62,Avalonia,pbdb:10679;pbdb:11722,2
+S0,region_stage,Baltica|midpoint-stage:410.62,393.47,399.5,Baltica,pbdb:232956,1
+S0,region_stage,Baltica|midpoint-stage:422.7,419.62,422.7,Baltica,pbdb:13873;pbdb:52702,2
+S0,region_stage,Gondwana-Australia-Antarctica|midpoint-stage:410.62,393.47,426.7,Gondwana-Australia-Antarctica,tail:M-ghin-ghin;tail:M-ghin-ghin-b2;tail:M-limestone-road;tail:M-wilson-creek,4
+S0,region_stage,Gondwana-South-America|midpoint-stage:422.7,419.62,422.7,Gondwana-South-America,tail:M-rinconada,1
+S0,region_stage,Kazakhstania|midpoint-stage:410.62,393.47,413.02,Kazakhstania,pbdb:32851,1
+S0,region_stage,Kazakhstania|midpoint-stage:422.7,419.62,422.7,Kazakhstania,pbdb:278439;tail:M-aberlemnia-junggaria;tail:M-mangkelu-ii,3
+S0,region_stage,Laurentia|midpoint-stage:410.62,393.47,410.62,Laurentia,pbdb:10614;pbdb:10617;pbdb:10719;pbdb:11513;pbdb:26026;pbdb:26176;pbdb:26547;pbdb:28924;pbdb:28950;pbdb:28968;pbdb:28969;pbdb:28971;pbdb:28996;pbdb:28997;pbdb:28998;pbdb:29001;pbdb:29002;pbdb:29003;pbdb:29020;pbdb:29026;pbdb:29029;pbdb:29292;pbdb:29294;pbdb:31000;pbdb:31002;pbdb:31003;pbdb:31004;pbdb:31005;pbdb:31007;pbdb:31010;pbdb:31011;pbdb:31023;pbdb:31027;pbdb:31212;pbdb:31213;pbdb:31214;pbdb:31215;pbdb:31216,38
+S0,region_stage,Laurentia|midpoint-stage:413.02,410.62,413.02,Laurentia,pbdb:10721;pbdb:11421;pbdb:11425,3
+S0,region_stage,Laurentia|midpoint-stage:419.62,413.02,419.62,Laurentia,pbdb:10705;pbdb:26755;pbdb:26757;tail:M-svalbard,4
+S0,region_stage,Laurentia|midpoint-stage:422.7,419.62,425.0,Laurentia,tail:M-bathurst-us383;tail:M-bathurst-us384;tail:M-bathurst-us385;tail:M-bathurst-us688,4
+S0,region_stage,South-China|midpoint-stage:410.62,393.47,410.62,South-China,pbdb:10941,1
+S0,region_stage,South-China|midpoint-stage:413.02,410.62,413.02,South-China,pbdb:10891;pbdb:10896,2
+S0,region_stage,South-China|midpoint-stage:422.7,419.62,422.7,South-China,tail:M-qujingense;tail:M-van-canh,2
+S0,region_stage,multiple|midpoint-stage:410.62,399.5,410.62,multiple,pbdb:238400;pbdb:26904;pbdb:27049;pbdb:27129;pbdb:35709;pbdb:35721,6
+S0,region_stage,multiple|midpoint-stage:413.02,410.62,413.02,multiple,pbdb:232143;pbdb:238752,2
+S0,region_stage,peri-Gondwana-Europe|midpoint-stage:422.7,419.62,422.7,peri-Gondwana-Europe,tail:M-baragwanathia-karlstejn,1
+S1,locality_age,"Argentina|chica de zonda range, san juan|419.62|422.7",419.62,422.7,Gondwana-South-America,tail:M-rinconada,1
+S1,locality_age,Australia|frenchmans spur / thomson river type-material district|393.47|413.02,393.47,413.02,Gondwana-Australia-Antarctica,tail:M-wilson-creek,1
+S1,locality_age,"Australia|ghin ghin road, yea|393.47|422.7",393.47,422.7,Gondwana-Australia-Antarctica,tail:M-ghin-ghin-b2,1
+S1,locality_age,"Australia|ghin ghin road, yea|393.47|426.7",393.47,426.7,Gondwana-Australia-Antarctica,tail:M-ghin-ghin,1
+S1,locality_age,"Australia|limestone road, brackley's (barkley's) cutting, yea; loc. 4 (= h4) of garratt's 1978 map; the national heritage place flora fossil site|393.47|426.7",393.47,426.7,Gondwana-Australia-Antarctica,tail:M-limestone-road,1
+S1,locality_age,"BE|bois d'ausse sandstone|50.5,5.7|413.02|419.62",413.02,419.62,Avalonia,pbdb:11722,1
+S1,locality_age,"BE|burnotien|50.6,4.1|399.5|413.02",399.5,413.02,Avalonia,pbdb:23200;pbdb:23202,2
+S1,locality_age,"BE|grès de wiheries|50.4,3.8|410.62|413.02",410.62,413.02,Avalonia,pbdb:22860;pbdb:23197,2
+S1,locality_age,"BE|grès du bois d'ausse|50.6,6.0|393.47|419.62",393.47,419.62,Avalonia,pbdb:34965,1
+S1,locality_age,"BY||53.2,30.8|393.47|399.5",393.47,399.5,Baltica,pbdb:232956,1
+S1,locality_age,"CA|bathurst island|75.8,-98.4|410.62|413.02",410.62,413.02,Laurentia,pbdb:11421;pbdb:11425,2
+S1,locality_age,"CA|bathurst island|76.9,-99.4|393.47|419.62",393.47,419.62,Laurentia,pbdb:23967,1
+S1,locality_age,"CA|battery point|48.6,-64.3|393.47|410.62",393.47,410.62,Laurentia,pbdb:29001;pbdb:31004,2
+S1,locality_age,"CA|battery point|48.8,-64.3|393.47|410.62",393.47,410.62,Laurentia,pbdb:26026;pbdb:26547;pbdb:28924;pbdb:28997;pbdb:29002;pbdb:29003;pbdb:29026;pbdb:31023;pbdb:31212,9
+S1,locality_age,"CA|battery point|48.8,-64.4|393.47|410.62",393.47,410.62,Laurentia,pbdb:28968;pbdb:28971;pbdb:31002;pbdb:31003;pbdb:31213;pbdb:31215,6
+S1,locality_age,"CA|battery point|48.8,-64.4|393.47|419.62",393.47,419.62,Laurentia,pbdb:21266,1
+S1,locality_age,"CA|battery point|48.8,-64.5|393.47|410.62",393.47,410.62,Laurentia,pbdb:28950;pbdb:28969;pbdb:28996;pbdb:28998;pbdb:29029;pbdb:31007;pbdb:31010;pbdb:31011;pbdb:31027,9
+S1,locality_age,"CA|battery point|48.8,-64.5|393.47|419.62",393.47,419.62,Laurentia,pbdb:20841,1
+S1,locality_age,"CA|battery point|48.9,-64.4|393.47|410.62",393.47,410.62,Laurentia,pbdb:31214,1
+S1,locality_age,"CA|bay du nord series|47.8,-58.3|393.47|419.62",393.47,419.62,Laurentia,pbdb:10625,1
+S1,locality_age,"CA|campbellton|48.0,-66.0|393.47|419.62",393.47,419.62,Laurentia,pbdb:26439;pbdb:26525;pbdb:26526;pbdb:26529,4
+S1,locality_age,"CA|campbellton|48.0,-66.4|393.47|419.62",393.47,419.62,Laurentia,pbdb:26438;pbdb:29021;pbdb:29334;pbdb:30997;pbdb:30998;pbdb:30999,6
+S1,locality_age,"CA|campbellton|48.0,-66.5|393.47|419.62",393.47,419.62,Laurentia,pbdb:23007;pbdb:26650;pbdb:26656;pbdb:26660;pbdb:28921,5
+S1,locality_age,"CA|la garde|48.0,-66.5|393.47|419.62",393.47,419.62,Laurentia,pbdb:26424,1
+S1,locality_age,"CA|la garde|48.0,-66.7|393.47|419.62",393.47,419.62,Laurentia,pbdb:26536,1
+S1,locality_age,"CA|york river|48.6,-64.3|393.47|410.62",393.47,410.62,Laurentia,pbdb:31216,1
+S1,locality_age,"CA|york river|48.8,-64.4|393.47|410.62",393.47,410.62,Laurentia,pbdb:29020;pbdb:31005,2
+S1,locality_age,"CA||48.1,-66.8|393.47|419.62",393.47,419.62,Laurentia,pbdb:24146,1
+S1,locality_age,"CN|posongchong|23.3,104.2|410.62|413.02",410.62,413.02,South-China,pbdb:10891,1
+S1,locality_age,"CN|posongchong|23.3,104.3|410.62|413.02",410.62,413.02,South-China,pbdb:10896,1
+S1,locality_age,"CN|xiemisitai|46.8,85.6|419.62|422.7",419.62,422.7,Kazakhstania,pbdb:278439,1
+S1,locality_age,"CN|xujiachong (also called longhuashan)|26.0,104.0|393.47|410.62",393.47,410.62,South-China,pbdb:10941,1
+S1,locality_age,"Canada|us383 (=us600), polar bear pass region, bathurst island|419.62|425.0",419.62,425.0,Laurentia,tail:M-bathurst-us383,1
+S1,locality_age,"Canada|us384, polar bear pass region, bathurst island|419.62|425.0",419.62,425.0,Laurentia,tail:M-bathurst-us384,1
+S1,locality_age,"Canada|us385 (=us601), polar bear pass region, bathurst island|419.62|425.0",419.62,425.0,Laurentia,tail:M-bathurst-us385,1
+S1,locality_age,"Canada|us688, polar bear pass region, bathurst island|419.62|425.0",419.62,425.0,Laurentia,tail:M-bathurst-us688,1
+S1,locality_age,"China|mangkelu ii section, wutubulake village, hoboksar, west junggar|419.62|422.7",419.62,422.7,Kazakhstania,tail:M-mangkelu-ii,1
+S1,locality_age,"China|qujing, northeastern yunnan|419.62|422.7",419.62,422.7,South-China,tail:M-qujingense,1
+S1,locality_age,China|west junggar|419.62|422.7,419.62,422.7,Kazakhstania,tail:M-aberlemnia-junggaria,1
+S1,locality_age,"Czech Republic|karlštejn, ve spáleném, near house 132|419.62|422.7",419.62,422.7,peri-Gondwana-Europe,tail:M-baragwanathia-karlstejn,1
+S1,locality_age,"DE|hunsrück slate|49.8,7.4|399.5|410.62",399.5,410.62,multiple,pbdb:26904,1
+S1,locality_age,"DE|wahnbach|50.9,7.3|410.62|413.02",410.62,413.02,multiple,pbdb:232143,1
+S1,locality_age,"DE||50.2,7.4|399.5|410.62",399.5,410.62,multiple,pbdb:27049;pbdb:27129,2
+S1,locality_age,"FR||50.3,2.4|393.47|419.62",393.47,419.62,peri-Gondwana-Europe,pbdb:28207,1
+S1,locality_age,"FR||50.5,2.2|393.47|419.62",393.47,419.62,peri-Gondwana-Europe,pbdb:28038,1
+S1,locality_age,"KZ|aigyrzhal'skaya suite|47.0,79.0|393.47|413.02",393.47,413.02,Kazakhstania,pbdb:32851,1
+S1,locality_age,"MA||30.0,-8.0|393.47|419.62",393.47,419.62,Gondwana-North-Africa-Arabia,pbdb:26661,1
+S1,locality_age,"NO|lerbekk|62.6,11.3|393.47|419.62",393.47,419.62,Baltica,pbdb:21190;pbdb:21194;pbdb:21195,3
+S1,locality_age,"Norway|red bay series brook section, spitsbergen|413.02|419.62",413.02,419.62,Laurentia,tail:M-svalbard,1
+S1,locality_age,"PL||49.8,19.4|393.47|419.62",393.47,419.62,multiple,pbdb:23962,1
+S1,locality_age,"RU|pridorozhnaya|54.5,89.9|399.5|410.62",399.5,410.62,multiple,pbdb:238400,1
+S1,locality_age,"RU|salairka horizon|54.3,85.9|399.5|410.62",399.5,410.62,multiple,pbdb:35709,1
+S1,locality_age,"RU|shanda horizon|54.3,85.9|387.95|399.5",387.95,399.5,multiple,pbdb:35721,1
+S1,locality_age,"RU||56.0,92.9|393.47|419.62",393.47,419.62,multiple,pbdb:60395,1
+S1,locality_age,"UA|rashkovskie beds|48.5,26.3|419.62|422.7",419.62,422.7,Baltica,pbdb:52702,1
+S1,locality_age,"UA|skala|49.6,23.9|419.62|422.7",419.62,422.7,Baltica,pbdb:13873,1
+S1,locality_age,"UK|dryden flags|57.3,-2.8|410.62|413.02",410.62,413.02,Laurentia,pbdb:10721,1
+S1,locality_age,"UK|dundee flagstone|56.0,-2.0|413.02|419.62",413.02,419.62,Laurentia,pbdb:10705,1
+S1,locality_age,"UK|dundee|56.0,-4.0|393.47|419.62",393.47,419.62,Laurentia,pbdb:26785,1
+S1,locality_age,"UK|dundee|56.7,-2.8|413.02|419.62",413.02,419.62,Laurentia,pbdb:26755;pbdb:26757,2
+S1,locality_age,"UK|senni|51.9,-3.6|410.62|413.02",410.62,413.02,multiple,pbdb:238752,1
+S1,locality_age,"UK|st. maughans|52.0,-2.0|413.02|419.62",413.02,419.62,Avalonia,pbdb:10679,1
+S1,locality_age,"UK|strathmore|55.0,-4.0|393.47|410.62",393.47,410.62,Laurentia,pbdb:10719,1
+S1,locality_age,"UK|strathmore|56.2,-4.2|393.47|410.62",393.47,410.62,Laurentia,pbdb:11513,1
+S1,locality_age,"UK||52.0,-2.0|393.47|419.62",393.47,419.62,Avalonia,pbdb:25242,1
+S1,locality_age,"US|beartooth butte|44.9,-108.1|393.47|410.62",393.47,410.62,Laurentia,pbdb:29294,1
+S1,locality_age,"US|beartooth butte|44.9,-108.1|393.47|419.62",393.47,419.62,Laurentia,pbdb:26179,1
+S1,locality_age,"US|beartooth butte|45.0,-109.6|393.47|410.62",393.47,410.62,Laurentia,pbdb:26176;pbdb:29292;pbdb:31000,3
+S1,locality_age,"US|helderberg|40.9,-77.8|393.47|419.62",393.47,419.62,Laurentia,pbdb:28768,1
+S1,locality_age,"US|trout valley|46.1,-68.6|387.95|399.5",387.95,399.5,Laurentia,pbdb:10614;pbdb:10617,2
+S1,locality_age,"Vietnam|xóm chè quarry, northern vietnam|419.62|422.7",419.62,422.7,South-China,tail:M-van-canh,1
+S1,region_stage,Avalonia|midpoint-stage:410.62,399.5,419.62,Avalonia,pbdb:23200;pbdb:23202;pbdb:25242;pbdb:34965,4
+S1,region_stage,Avalonia|midpoint-stage:413.02,410.62,413.02,Avalonia,pbdb:22860;pbdb:23197,2
+S1,region_stage,Avalonia|midpoint-stage:419.62,413.02,419.62,Avalonia,pbdb:10679;pbdb:11722,2
+S1,region_stage,Baltica|midpoint-stage:410.62,393.47,419.62,Baltica,pbdb:21190;pbdb:21194;pbdb:21195;pbdb:232956,4
+S1,region_stage,Baltica|midpoint-stage:422.7,419.62,422.7,Baltica,pbdb:13873;pbdb:52702,2
+S1,region_stage,Gondwana-Australia-Antarctica|midpoint-stage:410.62,393.47,426.7,Gondwana-Australia-Antarctica,tail:M-ghin-ghin;tail:M-ghin-ghin-b2;tail:M-limestone-road;tail:M-wilson-creek,4
+S1,region_stage,Gondwana-North-Africa-Arabia|midpoint-stage:410.62,393.47,419.62,Gondwana-North-Africa-Arabia,pbdb:26661,1
+S1,region_stage,Gondwana-South-America|midpoint-stage:422.7,419.62,422.7,Gondwana-South-America,tail:M-rinconada,1
+S1,region_stage,Kazakhstania|midpoint-stage:410.62,393.47,413.02,Kazakhstania,pbdb:32851,1
+S1,region_stage,Kazakhstania|midpoint-stage:422.7,419.62,422.7,Kazakhstania,pbdb:278439;tail:M-aberlemnia-junggaria;tail:M-mangkelu-ii,3
+S1,region_stage,Laurentia|midpoint-stage:410.62,393.47,419.62,Laurentia,pbdb:10614;pbdb:10617;pbdb:10625;pbdb:10719;pbdb:11513;pbdb:20841;pbdb:21266;pbdb:23007;pbdb:23967;pbdb:24146;pbdb:26026;pbdb:26176;pbdb:26179;pbdb:26424;pbdb:26438;pbdb:26439;pbdb:26525;pbdb:26526;pbdb:26529;pbdb:26536;pbdb:26547;pbdb:26650;pbdb:26656;pbdb:26660;pbdb:26785;pbdb:28768;pbdb:28921;pbdb:28924;pbdb:28950;pbdb:28968;pbdb:28969;pbdb:28971;pbdb:28996;pbdb:28997;pbdb:28998;pbdb:29001;pbdb:29002;pbdb:29003;pbdb:29020;pbdb:29021;pbdb:29026;pbdb:29029;pbdb:29292;pbdb:29294;pbdb:29334;pbdb:30997;pbdb:30998;pbdb:30999;pbdb:31000;pbdb:31002;pbdb:31003;pbdb:31004;pbdb:31005;pbdb:31007;pbdb:31010;pbdb:31011;pbdb:31023;pbdb:31027;pbdb:31212;pbdb:31213;pbdb:31214;pbdb:31215;pbdb:31216,63
+S1,region_stage,Laurentia|midpoint-stage:413.02,410.62,413.02,Laurentia,pbdb:10721;pbdb:11421;pbdb:11425,3
+S1,region_stage,Laurentia|midpoint-stage:419.62,413.02,419.62,Laurentia,pbdb:10705;pbdb:26755;pbdb:26757;tail:M-svalbard,4
+S1,region_stage,Laurentia|midpoint-stage:422.7,419.62,425.0,Laurentia,tail:M-bathurst-us383;tail:M-bathurst-us384;tail:M-bathurst-us385;tail:M-bathurst-us688,4
+S1,region_stage,South-China|midpoint-stage:410.62,393.47,410.62,South-China,pbdb:10941,1
+S1,region_stage,South-China|midpoint-stage:413.02,410.62,413.02,South-China,pbdb:10891;pbdb:10896,2
+S1,region_stage,South-China|midpoint-stage:422.7,419.62,422.7,South-China,tail:M-qujingense;tail:M-van-canh,2
+S1,region_stage,multiple|midpoint-stage:410.62,399.5,419.62,multiple,pbdb:238400;pbdb:23962;pbdb:26904;pbdb:27049;pbdb:27129;pbdb:35709;pbdb:35721;pbdb:60395,8
+S1,region_stage,multiple|midpoint-stage:413.02,410.62,413.02,multiple,pbdb:232143;pbdb:238752,2
+S1,region_stage,peri-Gondwana-Europe|midpoint-stage:410.62,393.47,419.62,peri-Gondwana-Europe,pbdb:28038;pbdb:28207,2
+S1,region_stage,peri-Gondwana-Europe|midpoint-stage:422.7,419.62,422.7,peri-Gondwana-Europe,tail:M-baragwanathia-karlstejn,1
+S1_with_28303,locality_age,"Argentina|chica de zonda range, san juan|419.62|422.7",419.62,422.7,Gondwana-South-America,tail:M-rinconada,1
+S1_with_28303,locality_age,Australia|frenchmans spur / thomson river type-material district|393.47|413.02,393.47,413.02,Gondwana-Australia-Antarctica,tail:M-wilson-creek,1
+S1_with_28303,locality_age,"Australia|ghin ghin road, yea|393.47|422.7",393.47,422.7,Gondwana-Australia-Antarctica,tail:M-ghin-ghin-b2,1
+S1_with_28303,locality_age,"Australia|ghin ghin road, yea|393.47|426.7",393.47,426.7,Gondwana-Australia-Antarctica,tail:M-ghin-ghin,1
+S1_with_28303,locality_age,"Australia|limestone road, brackley's (barkley's) cutting, yea; loc. 4 (= h4) of garratt's 1978 map; the national heritage place flora fossil site|393.47|426.7",393.47,426.7,Gondwana-Australia-Antarctica,tail:M-limestone-road,1
+S1_with_28303,locality_age,"BE|bois d'ausse sandstone|50.5,5.7|413.02|419.62",413.02,419.62,Avalonia,pbdb:11722,1
+S1_with_28303,locality_age,"BE|burnotien|50.6,4.1|399.5|413.02",399.5,413.02,Avalonia,pbdb:23200;pbdb:23202,2
+S1_with_28303,locality_age,"BE|grès de wiheries|50.4,3.8|410.62|413.02",410.62,413.02,Avalonia,pbdb:22860;pbdb:23197,2
+S1_with_28303,locality_age,"BE|grès du bois d'ausse|50.6,6.0|393.47|419.62",393.47,419.62,Avalonia,pbdb:34965,1
+S1_with_28303,locality_age,"BY||53.2,30.8|393.47|399.5",393.47,399.5,Baltica,pbdb:232956,1
+S1_with_28303,locality_age,"CA|bathurst island|75.8,-98.4|410.62|413.02",410.62,413.02,Laurentia,pbdb:11421;pbdb:11425,2
+S1_with_28303,locality_age,"CA|bathurst island|76.9,-99.4|393.47|419.62",393.47,419.62,Laurentia,pbdb:23967,1
+S1_with_28303,locality_age,"CA|battery point|48.6,-64.3|393.47|410.62",393.47,410.62,Laurentia,pbdb:29001;pbdb:31004,2
+S1_with_28303,locality_age,"CA|battery point|48.8,-64.3|393.47|410.62",393.47,410.62,Laurentia,pbdb:26026;pbdb:26547;pbdb:28924;pbdb:28997;pbdb:29002;pbdb:29003;pbdb:29026;pbdb:31023;pbdb:31212,9
+S1_with_28303,locality_age,"CA|battery point|48.8,-64.4|393.47|410.62",393.47,410.62,Laurentia,pbdb:28968;pbdb:28971;pbdb:31002;pbdb:31003;pbdb:31213;pbdb:31215,6
+S1_with_28303,locality_age,"CA|battery point|48.8,-64.4|393.47|419.62",393.47,419.62,Laurentia,pbdb:21266,1
+S1_with_28303,locality_age,"CA|battery point|48.8,-64.5|393.47|410.62",393.47,410.62,Laurentia,pbdb:28950;pbdb:28969;pbdb:28996;pbdb:28998;pbdb:29029;pbdb:31007;pbdb:31010;pbdb:31011;pbdb:31027,9
+S1_with_28303,locality_age,"CA|battery point|48.8,-64.5|393.47|419.62",393.47,419.62,Laurentia,pbdb:20841,1
+S1_with_28303,locality_age,"CA|battery point|48.9,-64.4|393.47|410.62",393.47,410.62,Laurentia,pbdb:31214,1
+S1_with_28303,locality_age,"CA|bay du nord series|47.8,-58.3|393.47|419.62",393.47,419.62,Laurentia,pbdb:10625,1
+S1_with_28303,locality_age,"CA|campbellton|48.0,-66.0|393.47|419.62",393.47,419.62,Laurentia,pbdb:26439;pbdb:26525;pbdb:26526;pbdb:26529,4
+S1_with_28303,locality_age,"CA|campbellton|48.0,-66.4|393.47|419.62",393.47,419.62,Laurentia,pbdb:26438;pbdb:29021;pbdb:29334;pbdb:30997;pbdb:30998;pbdb:30999,6
+S1_with_28303,locality_age,"CA|campbellton|48.0,-66.5|393.47|419.62",393.47,419.62,Laurentia,pbdb:23007;pbdb:26650;pbdb:26656;pbdb:26660;pbdb:28921,5
+S1_with_28303,locality_age,"CA|la garde|48.0,-66.5|393.47|419.62",393.47,419.62,Laurentia,pbdb:26424,1
+S1_with_28303,locality_age,"CA|la garde|48.0,-66.7|393.47|419.62",393.47,419.62,Laurentia,pbdb:26536,1
+S1_with_28303,locality_age,"CA|york river|48.6,-64.3|393.47|410.62",393.47,410.62,Laurentia,pbdb:31216,1
+S1_with_28303,locality_age,"CA|york river|48.8,-64.4|393.47|410.62",393.47,410.62,Laurentia,pbdb:29020;pbdb:31005,2
+S1_with_28303,locality_age,"CA||48.1,-66.8|393.47|419.62",393.47,419.62,Laurentia,pbdb:24146,1
+S1_with_28303,locality_age,"CN|posongchong|23.3,104.2|410.62|413.02",410.62,413.02,South-China,pbdb:10891,1
+S1_with_28303,locality_age,"CN|posongchong|23.3,104.3|410.62|413.02",410.62,413.02,South-China,pbdb:10896,1
+S1_with_28303,locality_age,"CN|xiemisitai|46.8,85.6|419.62|422.7",419.62,422.7,Kazakhstania,pbdb:278439,1
+S1_with_28303,locality_age,"CN|xujiachong (also called longhuashan)|26.0,104.0|393.47|410.62",393.47,410.62,South-China,pbdb:10941,1
+S1_with_28303,locality_age,"Canada|us383 (=us600), polar bear pass region, bathurst island|419.62|425.0",419.62,425.0,Laurentia,tail:M-bathurst-us383,1
+S1_with_28303,locality_age,"Canada|us384, polar bear pass region, bathurst island|419.62|425.0",419.62,425.0,Laurentia,tail:M-bathurst-us384,1
+S1_with_28303,locality_age,"Canada|us385 (=us601), polar bear pass region, bathurst island|419.62|425.0",419.62,425.0,Laurentia,tail:M-bathurst-us385,1
+S1_with_28303,locality_age,"Canada|us688, polar bear pass region, bathurst island|419.62|425.0",419.62,425.0,Laurentia,tail:M-bathurst-us688,1
+S1_with_28303,locality_age,"China|mangkelu ii section, wutubulake village, hoboksar, west junggar|419.62|422.7",419.62,422.7,Kazakhstania,tail:M-mangkelu-ii,1
+S1_with_28303,locality_age,"China|qujing, northeastern yunnan|419.62|422.7",419.62,422.7,South-China,tail:M-qujingense,1
+S1_with_28303,locality_age,China|west junggar|419.62|422.7,419.62,422.7,Kazakhstania,tail:M-aberlemnia-junggaria,1
+S1_with_28303,locality_age,"Czech Republic|karlštejn, ve spáleném, near house 132|419.62|422.7",419.62,422.7,peri-Gondwana-Europe,tail:M-baragwanathia-karlstejn,1
+S1_with_28303,locality_age,"DE|hunsrück slate|49.8,7.4|399.5|410.62",399.5,410.62,multiple,pbdb:26904,1
+S1_with_28303,locality_age,"DE|wahnbach|50.9,7.3|410.62|413.02",410.62,413.02,multiple,pbdb:232143,1
+S1_with_28303,locality_age,"DE||50.2,7.4|399.5|410.62",399.5,410.62,multiple,pbdb:27049;pbdb:27129,2
+S1_with_28303,locality_age,"FR||50.3,2.4|393.47|419.62",393.47,419.62,peri-Gondwana-Europe,pbdb:28207,1
+S1_with_28303,locality_age,"FR||50.5,2.2|393.47|419.62",393.47,419.62,peri-Gondwana-Europe,pbdb:28038,1
+S1_with_28303,locality_age,"KZ|aigyrzhal'skaya suite|47.0,79.0|393.47|413.02",393.47,413.02,Kazakhstania,pbdb:32851,1
+S1_with_28303,locality_age,"MA||30.0,-8.0|393.47|419.62",393.47,419.62,Gondwana-North-Africa-Arabia,pbdb:26661,1
+S1_with_28303,locality_age,"NO|lerbekk|62.6,11.3|393.47|419.62",393.47,419.62,Baltica,pbdb:21190;pbdb:21194;pbdb:21195,3
+S1_with_28303,locality_age,"Norway|red bay series brook section, spitsbergen|413.02|419.62",413.02,419.62,Laurentia,tail:M-svalbard,1
+S1_with_28303,locality_age,"PL||49.8,19.4|393.47|419.62",393.47,419.62,multiple,pbdb:23962,1
+S1_with_28303,locality_age,"RU|pridorozhnaya|54.5,89.9|399.5|410.62",399.5,410.62,multiple,pbdb:238400,1
+S1_with_28303,locality_age,"RU|salairka horizon|54.3,85.9|399.5|410.62",399.5,410.62,multiple,pbdb:35709,1
+S1_with_28303,locality_age,"RU|shanda horizon|54.3,85.9|387.95|399.5",387.95,399.5,multiple,pbdb:35721,1
+S1_with_28303,locality_age,"RU||56.0,92.9|393.47|419.62",393.47,419.62,multiple,pbdb:60395,1
+S1_with_28303,locality_age,"UA|rashkovskie beds|48.5,26.3|419.62|422.7",419.62,422.7,Baltica,pbdb:52702,1
+S1_with_28303,locality_age,"UA|skala|49.6,23.9|419.62|422.7",419.62,422.7,Baltica,pbdb:13873,1
+S1_with_28303,locality_age,"UK|dryden flags|57.3,-2.8|410.62|413.02",410.62,413.02,Laurentia,pbdb:10721,1
+S1_with_28303,locality_age,"UK|dundee flagstone|56.0,-2.0|413.02|419.62",413.02,419.62,Laurentia,pbdb:10705,1
+S1_with_28303,locality_age,"UK|dundee|56.0,-4.0|393.47|419.62",393.47,419.62,Laurentia,pbdb:26785,1
+S1_with_28303,locality_age,"UK|dundee|56.7,-2.8|413.02|419.62",413.02,419.62,Laurentia,pbdb:26755;pbdb:26757,2
+S1_with_28303,locality_age,"UK|senni|51.9,-3.6|410.62|413.02",410.62,413.02,multiple,pbdb:238752,1
+S1_with_28303,locality_age,"UK|st. maughans|52.0,-2.0|413.02|419.62",413.02,419.62,Avalonia,pbdb:10679,1
+S1_with_28303,locality_age,"UK|strathmore|55.0,-4.0|393.47|410.62",393.47,410.62,Laurentia,pbdb:10719,1
+S1_with_28303,locality_age,"UK|strathmore|56.2,-4.2|393.47|410.62",393.47,410.62,Laurentia,pbdb:11513,1
+S1_with_28303,locality_age,"UK||52.0,-2.0|393.47|419.62",393.47,419.62,Avalonia,pbdb:25242,1
+S1_with_28303,locality_age,"US|beartooth butte|44.9,-108.1|393.47|410.62",393.47,410.62,Laurentia,pbdb:29294,1
+S1_with_28303,locality_age,"US|beartooth butte|44.9,-108.1|393.47|419.62",393.47,419.62,Laurentia,pbdb:26179,1
+S1_with_28303,locality_age,"US|beartooth butte|45.0,-109.6|393.47|410.62",393.47,410.62,Laurentia,pbdb:26176;pbdb:29292;pbdb:31000,3
+S1_with_28303,locality_age,"US|helderberg|40.9,-77.8|393.47|419.62",393.47,419.62,Laurentia,pbdb:28768,1
+S1_with_28303,locality_age,"US|trout valley|46.1,-68.6|387.95|399.5",387.95,399.5,Laurentia,pbdb:10614;pbdb:10617,2
+S1_with_28303,locality_age,"US||41.8,-79.0|393.47|419.62",393.47,419.62,Laurentia,pbdb:28303,1
+S1_with_28303,locality_age,"Vietnam|xóm chè quarry, northern vietnam|419.62|422.7",419.62,422.7,South-China,tail:M-van-canh,1
+S1_with_28303,region_stage,Avalonia|midpoint-stage:410.62,399.5,419.62,Avalonia,pbdb:23200;pbdb:23202;pbdb:25242;pbdb:34965,4
+S1_with_28303,region_stage,Avalonia|midpoint-stage:413.02,410.62,413.02,Avalonia,pbdb:22860;pbdb:23197,2
+S1_with_28303,region_stage,Avalonia|midpoint-stage:419.62,413.02,419.62,Avalonia,pbdb:10679;pbdb:11722,2
+S1_with_28303,region_stage,Baltica|midpoint-stage:410.62,393.47,419.62,Baltica,pbdb:21190;pbdb:21194;pbdb:21195;pbdb:232956,4
+S1_with_28303,region_stage,Baltica|midpoint-stage:422.7,419.62,422.7,Baltica,pbdb:13873;pbdb:52702,2
+S1_with_28303,region_stage,Gondwana-Australia-Antarctica|midpoint-stage:410.62,393.47,426.7,Gondwana-Australia-Antarctica,tail:M-ghin-ghin;tail:M-ghin-ghin-b2;tail:M-limestone-road;tail:M-wilson-creek,4
+S1_with_28303,region_stage,Gondwana-North-Africa-Arabia|midpoint-stage:410.62,393.47,419.62,Gondwana-North-Africa-Arabia,pbdb:26661,1
+S1_with_28303,region_stage,Gondwana-South-America|midpoint-stage:422.7,419.62,422.7,Gondwana-South-America,tail:M-rinconada,1
+S1_with_28303,region_stage,Kazakhstania|midpoint-stage:410.62,393.47,413.02,Kazakhstania,pbdb:32851,1
+S1_with_28303,region_stage,Kazakhstania|midpoint-stage:422.7,419.62,422.7,Kazakhstania,pbdb:278439;tail:M-aberlemnia-junggaria;tail:M-mangkelu-ii,3
+S1_with_28303,region_stage,Laurentia|midpoint-stage:410.62,393.47,419.62,Laurentia,pbdb:10614;pbdb:10617;pbdb:10625;pbdb:10719;pbdb:11513;pbdb:20841;pbdb:21266;pbdb:23007;pbdb:23967;pbdb:24146;pbdb:26026;pbdb:26176;pbdb:26179;pbdb:26424;pbdb:26438;pbdb:26439;pbdb:26525;pbdb:26526;pbdb:26529;pbdb:26536;pbdb:26547;pbdb:26650;pbdb:26656;pbdb:26660;pbdb:26785;pbdb:28303;pbdb:28768;pbdb:28921;pbdb:28924;pbdb:28950;pbdb:28968;pbdb:28969;pbdb:28971;pbdb:28996;pbdb:28997;pbdb:28998;pbdb:29001;pbdb:29002;pbdb:29003;pbdb:29020;pbdb:29021;pbdb:29026;pbdb:29029;pbdb:29292;pbdb:29294;pbdb:29334;pbdb:30997;pbdb:30998;pbdb:30999;pbdb:31000;pbdb:31002;pbdb:31003;pbdb:31004;pbdb:31005;pbdb:31007;pbdb:31010;pbdb:31011;pbdb:31023;pbdb:31027;pbdb:31212;pbdb:31213;pbdb:31214;pbdb:31215;pbdb:31216,64
+S1_with_28303,region_stage,Laurentia|midpoint-stage:413.02,410.62,413.02,Laurentia,pbdb:10721;pbdb:11421;pbdb:11425,3
+S1_with_28303,region_stage,Laurentia|midpoint-stage:419.62,413.02,419.62,Laurentia,pbdb:10705;pbdb:26755;pbdb:26757;tail:M-svalbard,4
+S1_with_28303,region_stage,Laurentia|midpoint-stage:422.7,419.62,425.0,Laurentia,tail:M-bathurst-us383;tail:M-bathurst-us384;tail:M-bathurst-us385;tail:M-bathurst-us688,4
+S1_with_28303,region_stage,South-China|midpoint-stage:410.62,393.47,410.62,South-China,pbdb:10941,1
+S1_with_28303,region_stage,South-China|midpoint-stage:413.02,410.62,413.02,South-China,pbdb:10891;pbdb:10896,2
+S1_with_28303,region_stage,South-China|midpoint-stage:422.7,419.62,422.7,South-China,tail:M-qujingense;tail:M-van-canh,2
+S1_with_28303,region_stage,multiple|midpoint-stage:410.62,399.5,419.62,multiple,pbdb:238400;pbdb:23962;pbdb:26904;pbdb:27049;pbdb:27129;pbdb:35709;pbdb:35721;pbdb:60395,8
+S1_with_28303,region_stage,multiple|midpoint-stage:413.02,410.62,413.02,multiple,pbdb:232143;pbdb:238752,2
+S1_with_28303,region_stage,peri-Gondwana-Europe|midpoint-stage:410.62,393.47,419.62,peri-Gondwana-Europe,pbdb:28038;pbdb:28207,2
+S1_with_28303,region_stage,peri-Gondwana-Europe|midpoint-stage:422.7,419.62,422.7,peri-Gondwana-Europe,tail:M-baragwanathia-karlstejn,1
+S1_merged,locality_age,"Argentina|chica de zonda range, san juan|419.62|422.7",419.62,422.7,Gondwana-South-America,tail:M-rinconada,1
+S1_merged,locality_age,Australia|frenchmans spur / thomson river type-material district|393.47|413.02,393.47,413.02,Gondwana-Australia-Antarctica,tail:M-wilson-creek,1
+S1_merged,locality_age,"Australia|ghin ghin road, yea|393.47|422.7",393.47,422.7,Gondwana-Australia-Antarctica,tail:M-ghin-ghin-b2,1
+S1_merged,locality_age,"Australia|ghin ghin road, yea|393.47|426.7",393.47,426.7,Gondwana-Australia-Antarctica,tail:M-ghin-ghin,1
+S1_merged,locality_age,"Australia|limestone road, brackley's (barkley's) cutting, yea; loc. 4 (= h4) of garratt's 1978 map; the national heritage place flora fossil site|393.47|426.7",393.47,426.7,Gondwana-Australia-Antarctica,tail:M-limestone-road,1
+S1_merged,locality_age,"BE|bois d'ausse sandstone|50.5,5.7|413.02|419.62",413.02,419.62,Avalonia,pbdb:11722,1
+S1_merged,locality_age,"BE|burnotien|50.6,4.1|399.5|413.02",399.5,413.02,Avalonia,pbdb:23200;pbdb:23202,2
+S1_merged,locality_age,"BE|grès de wiheries|50.4,3.8|410.62|413.02",410.62,413.02,Avalonia,pbdb:22860;pbdb:23197,2
+S1_merged,locality_age,"BE|grès du bois d'ausse|50.6,6.0|393.47|419.62",393.47,419.62,Avalonia,pbdb:34965,1
+S1_merged,locality_age,"BY||53.2,30.8|393.47|399.5",393.47,399.5,Baltica,pbdb:232956,1
+S1_merged,locality_age,"CA|bathurst island|75.8,-98.4|410.62|413.02",410.62,413.02,Laurentia,pbdb:11421;pbdb:11425,2
+S1_merged,locality_age,"CA|bathurst island|76.9,-99.4|393.47|419.62",393.47,419.62,Laurentia,pbdb:23967,1
+S1_merged,locality_age,"CA|battery point|48.6,-64.3|393.47|410.62",393.47,410.62,Laurentia,pbdb:29001;pbdb:31004,2
+S1_merged,locality_age,"CA|battery point|48.8,-64.3|393.47|410.62",393.47,410.62,Laurentia,pbdb:26026;pbdb:26547;pbdb:28924;pbdb:28997;pbdb:29002;pbdb:29003;pbdb:29026;pbdb:31023;pbdb:31212,9
+S1_merged,locality_age,"CA|battery point|48.8,-64.4|393.47|410.62",393.47,410.62,Laurentia,pbdb:28968;pbdb:28971;pbdb:31002;pbdb:31003;pbdb:31213;pbdb:31215,6
+S1_merged,locality_age,"CA|battery point|48.8,-64.5|393.47|410.62",393.47,410.62,Laurentia,pbdb:28950;pbdb:28969;pbdb:28996;pbdb:28998;pbdb:29029;pbdb:31007;pbdb:31010;pbdb:31011;pbdb:31027,9
+S1_merged,locality_age,"CA|battery point|48.9,-64.4|393.47|410.62",393.47,410.62,Laurentia,pbdb:31214,1
+S1_merged,locality_age,"CA|bay du nord series|47.8,-58.3|393.47|419.62",393.47,419.62,Laurentia,pbdb:10625,1
+S1_merged,locality_age,"CA|campbellton|48.0,-66.0|393.47|419.62",393.47,419.62,Laurentia,pbdb:26439;pbdb:26525;pbdb:26526;pbdb:26529,4
+S1_merged,locality_age,"CA|campbellton|48.0,-66.4|393.47|419.62",393.47,419.62,Laurentia,pbdb:26438;pbdb:29021;pbdb:29334;pbdb:30997;pbdb:30998;pbdb:30999,6
+S1_merged,locality_age,"CA|campbellton|48.0,-66.5|393.47|419.62",393.47,419.62,Laurentia,pbdb:23007;pbdb:26650;pbdb:26656;pbdb:26660;pbdb:28921,5
+S1_merged,locality_age,"CA|la garde|48.0,-66.5|393.47|419.62",393.47,419.62,Laurentia,pbdb:26424,1
+S1_merged,locality_age,"CA|la garde|48.0,-66.7|393.47|419.62",393.47,419.62,Laurentia,pbdb:26536,1
+S1_merged,locality_age,"CA|york river|48.6,-64.3|393.47|410.62",393.47,410.62,Laurentia,pbdb:31216,1
+S1_merged,locality_age,"CA|york river|48.8,-64.4|393.47|410.62",393.47,410.62,Laurentia,pbdb:29020;pbdb:31005,2
+S1_merged,locality_age,"CA||48.1,-66.8|393.47|419.62",393.47,419.62,Laurentia,pbdb:24146,1
+S1_merged,locality_age,"CN|posongchong|23.3,104.2|410.62|413.02",410.62,413.02,South-China,pbdb:10891,1
+S1_merged,locality_age,"CN|posongchong|23.3,104.3|410.62|413.02",410.62,413.02,South-China,pbdb:10896,1
+S1_merged,locality_age,"CN|xiemisitai|46.8,85.6|419.62|422.7",419.62,422.7,Kazakhstania,pbdb:278439,1
+S1_merged,locality_age,"CN|xujiachong (also called longhuashan)|26.0,104.0|393.47|410.62",393.47,410.62,South-China,pbdb:10941,1
+S1_merged,locality_age,"Canada|us383 (=us600), polar bear pass region, bathurst island|419.62|425.0",419.62,425.0,Laurentia,tail:M-bathurst-us383,1
+S1_merged,locality_age,"Canada|us384, polar bear pass region, bathurst island|419.62|425.0",419.62,425.0,Laurentia,tail:M-bathurst-us384,1
+S1_merged,locality_age,"Canada|us385 (=us601), polar bear pass region, bathurst island|419.62|425.0",419.62,425.0,Laurentia,tail:M-bathurst-us385,1
+S1_merged,locality_age,"Canada|us688, polar bear pass region, bathurst island|419.62|425.0",419.62,425.0,Laurentia,tail:M-bathurst-us688,1
+S1_merged,locality_age,"China|mangkelu ii section, wutubulake village, hoboksar, west junggar|419.62|422.7",419.62,422.7,Kazakhstania,tail:M-mangkelu-ii,1
+S1_merged,locality_age,"China|qujing, northeastern yunnan|419.62|422.7",419.62,422.7,South-China,tail:M-qujingense,1
+S1_merged,locality_age,China|west junggar|419.62|422.7,419.62,422.7,Kazakhstania,tail:M-aberlemnia-junggaria,1
+S1_merged,locality_age,"Czech Republic|karlštejn, ve spáleném, near house 132|419.62|422.7",419.62,422.7,peri-Gondwana-Europe,tail:M-baragwanathia-karlstejn,1
+S1_merged,locality_age,"DE|hunsrück slate|49.8,7.4|399.5|410.62",399.5,410.62,multiple,pbdb:26904,1
+S1_merged,locality_age,"DE|wahnbach|50.9,7.3|410.62|413.02",410.62,413.02,multiple,pbdb:232143,1
+S1_merged,locality_age,"DE||50.2,7.4|399.5|410.62",399.5,410.62,multiple,pbdb:27049;pbdb:27129,2
+S1_merged,locality_age,"FR||50.3,2.4|393.47|419.62",393.47,419.62,peri-Gondwana-Europe,pbdb:28207,1
+S1_merged,locality_age,"FR||50.5,2.2|393.47|419.62",393.47,419.62,peri-Gondwana-Europe,pbdb:28038,1
+S1_merged,locality_age,"KZ|aigyrzhal'skaya suite|47.0,79.0|393.47|413.02",393.47,413.02,Kazakhstania,pbdb:32851,1
+S1_merged,locality_age,"MA||30.0,-8.0|393.47|419.62",393.47,419.62,Gondwana-North-Africa-Arabia,pbdb:26661,1
+S1_merged,locality_age,"NO|lerbekk|62.6,11.3|393.47|419.62",393.47,419.62,Baltica,pbdb:21190;pbdb:21194;pbdb:21195,3
+S1_merged,locality_age,"Norway|red bay series brook section, spitsbergen|413.02|419.62",413.02,419.62,Laurentia,tail:M-svalbard,1
+S1_merged,locality_age,"PL||49.8,19.4|393.47|419.62",393.47,419.62,multiple,pbdb:23962,1
+S1_merged,locality_age,"RU|pridorozhnaya|54.5,89.9|399.5|410.62",399.5,410.62,multiple,pbdb:238400,1
+S1_merged,locality_age,"RU|salairka horizon|54.3,85.9|399.5|410.62",399.5,410.62,multiple,pbdb:35709,1
+S1_merged,locality_age,"RU|shanda horizon|54.3,85.9|387.95|399.5",387.95,399.5,multiple,pbdb:35721,1
+S1_merged,locality_age,"RU||56.0,92.9|393.47|419.62",393.47,419.62,multiple,pbdb:60395,1
+S1_merged,locality_age,"UA|rashkovskie beds|48.5,26.3|419.62|422.7",419.62,422.7,Baltica,pbdb:52702,1
+S1_merged,locality_age,"UA|skala|49.6,23.9|419.62|422.7",419.62,422.7,Baltica,pbdb:13873,1
+S1_merged,locality_age,"UK|dryden flags|57.3,-2.8|410.62|413.02",410.62,413.02,Laurentia,pbdb:10721,1
+S1_merged,locality_age,"UK|dundee flagstone|56.0,-2.0|413.02|419.62",413.02,419.62,Laurentia,pbdb:10705,1
+S1_merged,locality_age,"UK|dundee|56.0,-4.0|393.47|419.62",393.47,419.62,Laurentia,pbdb:26785,1
+S1_merged,locality_age,"UK|dundee|56.7,-2.8|413.02|419.62",413.02,419.62,Laurentia,pbdb:26755;pbdb:26757,2
+S1_merged,locality_age,"UK|senni|51.9,-3.6|410.62|413.02",410.62,413.02,multiple,pbdb:238752,1
+S1_merged,locality_age,"UK|st. maughans|52.0,-2.0|413.02|419.62",413.02,419.62,Avalonia,pbdb:10679,1
+S1_merged,locality_age,"UK|strathmore|55.0,-4.0|393.47|410.62",393.47,410.62,Laurentia,pbdb:10719,1
+S1_merged,locality_age,"UK|strathmore|56.2,-4.2|393.47|410.62",393.47,410.62,Laurentia,pbdb:11513,1
+S1_merged,locality_age,"UK||52.0,-2.0|393.47|419.62",393.47,419.62,Avalonia,pbdb:25242,1
+S1_merged,locality_age,"US|beartooth butte|44.9,-108.1|393.47|410.62",393.47,410.62,Laurentia,pbdb:29294,1
+S1_merged,locality_age,"US|beartooth butte|45.0,-109.6|393.47|410.62",393.47,410.62,Laurentia,pbdb:26176;pbdb:29292;pbdb:31000,3
+S1_merged,locality_age,"US|helderberg|40.9,-77.8|393.47|419.62",393.47,419.62,Laurentia,pbdb:28768,1
+S1_merged,locality_age,"US|trout valley|46.1,-68.6|387.95|399.5",387.95,399.5,Laurentia,pbdb:10614;pbdb:10617,2
+S1_merged,locality_age,"Vietnam|xóm chè quarry, northern vietnam|419.62|422.7",419.62,422.7,South-China,tail:M-van-canh,1
+S1_merged,region_stage,Avalonia|midpoint-stage:410.62,399.5,419.62,Avalonia,pbdb:23200;pbdb:23202;pbdb:25242;pbdb:34965,4
+S1_merged,region_stage,Avalonia|midpoint-stage:413.02,410.62,413.02,Avalonia,pbdb:22860;pbdb:23197,2
+S1_merged,region_stage,Avalonia|midpoint-stage:419.62,413.02,419.62,Avalonia,pbdb:10679;pbdb:11722,2
+S1_merged,region_stage,Baltica|midpoint-stage:410.62,393.47,419.62,Baltica,pbdb:21190;pbdb:21194;pbdb:21195;pbdb:232956,4
+S1_merged,region_stage,Baltica|midpoint-stage:422.7,419.62,422.7,Baltica,pbdb:13873;pbdb:52702,2
+S1_merged,region_stage,Gondwana-Australia-Antarctica|midpoint-stage:410.62,393.47,426.7,Gondwana-Australia-Antarctica,tail:M-ghin-ghin;tail:M-ghin-ghin-b2;tail:M-limestone-road;tail:M-wilson-creek,4
+S1_merged,region_stage,Gondwana-North-Africa-Arabia|midpoint-stage:410.62,393.47,419.62,Gondwana-North-Africa-Arabia,pbdb:26661,1
+S1_merged,region_stage,Gondwana-South-America|midpoint-stage:422.7,419.62,422.7,Gondwana-South-America,tail:M-rinconada,1
+S1_merged,region_stage,Kazakhstania|midpoint-stage:410.62,393.47,413.02,Kazakhstania,pbdb:32851,1
+S1_merged,region_stage,Kazakhstania|midpoint-stage:422.7,419.62,422.7,Kazakhstania,pbdb:278439;tail:M-aberlemnia-junggaria;tail:M-mangkelu-ii,3
+S1_merged,region_stage,Laurentia|midpoint-stage:410.62,393.47,419.62,Laurentia,pbdb:10614;pbdb:10617;pbdb:10625;pbdb:10719;pbdb:11513;pbdb:23007;pbdb:23967;pbdb:24146;pbdb:26026;pbdb:26176;pbdb:26424;pbdb:26438;pbdb:26439;pbdb:26525;pbdb:26526;pbdb:26529;pbdb:26536;pbdb:26547;pbdb:26650;pbdb:26656;pbdb:26660;pbdb:26785;pbdb:28768;pbdb:28921;pbdb:28924;pbdb:28950;pbdb:28968;pbdb:28969;pbdb:28971;pbdb:28996;pbdb:28997;pbdb:28998;pbdb:29001;pbdb:29002;pbdb:29003;pbdb:29020;pbdb:29021;pbdb:29026;pbdb:29029;pbdb:29292;pbdb:29294;pbdb:29334;pbdb:30997;pbdb:30998;pbdb:30999;pbdb:31000;pbdb:31002;pbdb:31003;pbdb:31004;pbdb:31005;pbdb:31007;pbdb:31010;pbdb:31011;pbdb:31023;pbdb:31027;pbdb:31212;pbdb:31213;pbdb:31214;pbdb:31215;pbdb:31216,60
+S1_merged,region_stage,Laurentia|midpoint-stage:413.02,410.62,413.02,Laurentia,pbdb:10721;pbdb:11421;pbdb:11425,3
+S1_merged,region_stage,Laurentia|midpoint-stage:419.62,413.02,419.62,Laurentia,pbdb:10705;pbdb:26755;pbdb:26757;tail:M-svalbard,4
+S1_merged,region_stage,Laurentia|midpoint-stage:422.7,419.62,425.0,Laurentia,tail:M-bathurst-us383;tail:M-bathurst-us384;tail:M-bathurst-us385;tail:M-bathurst-us688,4
+S1_merged,region_stage,South-China|midpoint-stage:410.62,393.47,410.62,South-China,pbdb:10941,1
+S1_merged,region_stage,South-China|midpoint-stage:413.02,410.62,413.02,South-China,pbdb:10891;pbdb:10896,2
+S1_merged,region_stage,South-China|midpoint-stage:422.7,419.62,422.7,South-China,tail:M-qujingense;tail:M-van-canh,2
+S1_merged,region_stage,multiple|midpoint-stage:410.62,399.5,419.62,multiple,pbdb:238400;pbdb:23962;pbdb:26904;pbdb:27049;pbdb:27129;pbdb:35709;pbdb:35721;pbdb:60395,8
+S1_merged,region_stage,multiple|midpoint-stage:413.02,410.62,413.02,multiple,pbdb:232143;pbdb:238752,2
+S1_merged,region_stage,peri-Gondwana-Europe|midpoint-stage:410.62,393.47,419.62,peri-Gondwana-Europe,pbdb:28038;pbdb:28207,2
+S1_merged,region_stage,peri-Gondwana-Europe|midpoint-stage:422.7,419.62,422.7,peri-Gondwana-Europe,tail:M-baragwanathia-karlstejn,1
+S2a,locality_age,"Australia|ghin ghin road, yea|393.47|426.7",393.47,426.7,Gondwana-Australia-Antarctica,tail:M-ghin-ghin,1
+S2a,locality_age,"Australia|limestone road, brackley's (barkley's) cutting, yea; loc. 4 (= h4) of garratt's 1978 map; the national heritage place flora fossil site|393.47|426.7",393.47,426.7,Gondwana-Australia-Antarctica,tail:M-limestone-road,1
+S2a,locality_age,"BE|bois d'ausse sandstone|50.5,5.7|413.02|419.62",413.02,419.62,Avalonia,pbdb:11722,1
+S2a,locality_age,"BE|burnotien|50.6,4.1|399.5|413.02",399.5,413.02,Avalonia,pbdb:23200;pbdb:23202,2
+S2a,locality_age,"BE|grès de wiheries|50.4,3.8|410.62|413.02",410.62,413.02,Avalonia,pbdb:22860;pbdb:23197,2
+S2a,locality_age,"BY||53.2,30.8|393.47|399.5",393.47,399.5,Baltica,pbdb:232956,1
+S2a,locality_age,"CA|bathurst island|75.8,-98.4|410.62|413.02",410.62,413.02,Laurentia,pbdb:11421;pbdb:11425,2
+S2a,locality_age,"CA|battery point|48.6,-64.3|393.47|410.62",393.47,410.62,Laurentia,pbdb:29001;pbdb:31004,2
+S2a,locality_age,"CA|battery point|48.8,-64.3|393.47|410.62",393.47,410.62,Laurentia,pbdb:26026;pbdb:26547;pbdb:28924;pbdb:28997;pbdb:29002;pbdb:29003;pbdb:29026;pbdb:31023;pbdb:31212,9
+S2a,locality_age,"CA|battery point|48.8,-64.4|393.47|410.62",393.47,410.62,Laurentia,pbdb:28968;pbdb:28971;pbdb:31002;pbdb:31003;pbdb:31213;pbdb:31215,6
+S2a,locality_age,"CA|battery point|48.8,-64.5|393.47|410.62",393.47,410.62,Laurentia,pbdb:28950;pbdb:28969;pbdb:28996;pbdb:28998;pbdb:29029;pbdb:31007;pbdb:31010;pbdb:31011;pbdb:31027,9
+S2a,locality_age,"CA|battery point|48.9,-64.4|393.47|410.62",393.47,410.62,Laurentia,pbdb:31214,1
+S2a,locality_age,"CA|york river|48.6,-64.3|393.47|410.62",393.47,410.62,Laurentia,pbdb:31216,1
+S2a,locality_age,"CA|york river|48.8,-64.4|393.47|410.62",393.47,410.62,Laurentia,pbdb:29020;pbdb:31005,2
+S2a,locality_age,"CN|posongchong|23.3,104.2|410.62|413.02",410.62,413.02,South-China,pbdb:10891,1
+S2a,locality_age,"CN|posongchong|23.3,104.3|410.62|413.02",410.62,413.02,South-China,pbdb:10896,1
+S2a,locality_age,"CN|xiemisitai|46.8,85.6|419.62|422.7",419.62,422.7,Kazakhstania,pbdb:278439,1
+S2a,locality_age,"CN|xujiachong (also called longhuashan)|26.0,104.0|393.47|410.62",393.47,410.62,South-China,pbdb:10941,1
+S2a,locality_age,"Canada|us384, polar bear pass region, bathurst island|419.62|425.0",419.62,425.0,Laurentia,tail:M-bathurst-us384,1
+S2a,locality_age,"Canada|us385 (=us601), polar bear pass region, bathurst island|419.62|425.0",419.62,425.0,Laurentia,tail:M-bathurst-us385,1
+S2a,locality_age,"DE|hunsrück slate|49.8,7.4|399.5|410.62",399.5,410.62,multiple,pbdb:26904,1
+S2a,locality_age,"DE|wahnbach|50.9,7.3|410.62|413.02",410.62,413.02,multiple,pbdb:232143,1
+S2a,locality_age,"DE||50.2,7.4|399.5|410.62",399.5,410.62,multiple,pbdb:27049;pbdb:27129,2
+S2a,locality_age,"KZ|aigyrzhal'skaya suite|47.0,79.0|393.47|413.02",393.47,413.02,Kazakhstania,pbdb:32851,1
+S2a,locality_age,"Norway|red bay series brook section, spitsbergen|413.02|419.62",413.02,419.62,Laurentia,tail:M-svalbard,1
+S2a,locality_age,"RU|pridorozhnaya|54.5,89.9|399.5|410.62",399.5,410.62,multiple,pbdb:238400,1
+S2a,locality_age,"RU|salairka horizon|54.3,85.9|399.5|410.62",399.5,410.62,multiple,pbdb:35709,1
+S2a,locality_age,"RU|shanda horizon|54.3,85.9|387.95|399.5",387.95,399.5,multiple,pbdb:35721,1
+S2a,locality_age,"UA|rashkovskie beds|48.5,26.3|419.62|422.7",419.62,422.7,Baltica,pbdb:52702,1
+S2a,locality_age,"UA|skala|49.6,23.9|419.62|422.7",419.62,422.7,Baltica,pbdb:13873,1
+S2a,locality_age,"UK|dryden flags|57.3,-2.8|410.62|413.02",410.62,413.02,Laurentia,pbdb:10721,1
+S2a,locality_age,"UK|dundee flagstone|56.0,-2.0|413.02|419.62",413.02,419.62,Laurentia,pbdb:10705,1
+S2a,locality_age,"UK|dundee|56.7,-2.8|413.02|419.62",413.02,419.62,Laurentia,pbdb:26755;pbdb:26757,2
+S2a,locality_age,"UK|senni|51.9,-3.6|410.62|413.02",410.62,413.02,multiple,pbdb:238752,1
+S2a,locality_age,"UK|st. maughans|52.0,-2.0|413.02|419.62",413.02,419.62,Avalonia,pbdb:10679,1
+S2a,locality_age,"UK|strathmore|55.0,-4.0|393.47|410.62",393.47,410.62,Laurentia,pbdb:10719,1
+S2a,locality_age,"UK|strathmore|56.2,-4.2|393.47|410.62",393.47,410.62,Laurentia,pbdb:11513,1
+S2a,locality_age,"US|beartooth butte|44.9,-108.1|393.47|410.62",393.47,410.62,Laurentia,pbdb:29294,1
+S2a,locality_age,"US|beartooth butte|45.0,-109.6|393.47|410.62",393.47,410.62,Laurentia,pbdb:26176;pbdb:29292;pbdb:31000,3
+S2a,locality_age,"US|trout valley|46.1,-68.6|387.95|399.5",387.95,399.5,Laurentia,pbdb:10614;pbdb:10617,2
+S2a,region_stage,Avalonia|midpoint-stage:410.62,399.5,413.02,Avalonia,pbdb:23200;pbdb:23202,2
+S2a,region_stage,Avalonia|midpoint-stage:413.02,410.62,413.02,Avalonia,pbdb:22860;pbdb:23197,2
+S2a,region_stage,Avalonia|midpoint-stage:419.62,413.02,419.62,Avalonia,pbdb:10679;pbdb:11722,2
+S2a,region_stage,Baltica|midpoint-stage:410.62,393.47,399.5,Baltica,pbdb:232956,1
+S2a,region_stage,Baltica|midpoint-stage:422.7,419.62,422.7,Baltica,pbdb:13873;pbdb:52702,2
+S2a,region_stage,Gondwana-Australia-Antarctica|midpoint-stage:410.62,393.47,426.7,Gondwana-Australia-Antarctica,tail:M-ghin-ghin;tail:M-limestone-road,2
+S2a,region_stage,Kazakhstania|midpoint-stage:410.62,393.47,413.02,Kazakhstania,pbdb:32851,1
+S2a,region_stage,Kazakhstania|midpoint-stage:422.7,419.62,422.7,Kazakhstania,pbdb:278439,1
+S2a,region_stage,Laurentia|midpoint-stage:410.62,393.47,410.62,Laurentia,pbdb:10614;pbdb:10617;pbdb:10719;pbdb:11513;pbdb:26026;pbdb:26176;pbdb:26547;pbdb:28924;pbdb:28950;pbdb:28968;pbdb:28969;pbdb:28971;pbdb:28996;pbdb:28997;pbdb:28998;pbdb:29001;pbdb:29002;pbdb:29003;pbdb:29020;pbdb:29026;pbdb:29029;pbdb:29292;pbdb:29294;pbdb:31000;pbdb:31002;pbdb:31003;pbdb:31004;pbdb:31005;pbdb:31007;pbdb:31010;pbdb:31011;pbdb:31023;pbdb:31027;pbdb:31212;pbdb:31213;pbdb:31214;pbdb:31215;pbdb:31216,38
+S2a,region_stage,Laurentia|midpoint-stage:413.02,410.62,413.02,Laurentia,pbdb:10721;pbdb:11421;pbdb:11425,3
+S2a,region_stage,Laurentia|midpoint-stage:419.62,413.02,419.62,Laurentia,pbdb:10705;pbdb:26755;pbdb:26757;tail:M-svalbard,4
+S2a,region_stage,Laurentia|midpoint-stage:422.7,419.62,425.0,Laurentia,tail:M-bathurst-us384;tail:M-bathurst-us385,2
+S2a,region_stage,South-China|midpoint-stage:410.62,393.47,410.62,South-China,pbdb:10941,1
+S2a,region_stage,South-China|midpoint-stage:413.02,410.62,413.02,South-China,pbdb:10891;pbdb:10896,2
+S2a,region_stage,multiple|midpoint-stage:410.62,399.5,410.62,multiple,pbdb:238400;pbdb:26904;pbdb:27049;pbdb:27129;pbdb:35709;pbdb:35721,6
+S2a,region_stage,multiple|midpoint-stage:413.02,410.62,413.02,multiple,pbdb:232143;pbdb:238752,2
+S2a_coord,locality_age,"AU|yea|-37.2,145.3|393.47|426.7",393.47,426.7,Gondwana-Australia-Antarctica,tail:M-ghin-ghin,1
+S2a_coord,locality_age,"AU|yea|-37.2,145.4|393.47|426.7",393.47,426.7,Gondwana-Australia-Antarctica,tail:M-limestone-road,1
+S2a_coord,locality_age,"BE|bois d'ausse sandstone|50.5,5.7|413.02|419.62",413.02,419.62,Avalonia,pbdb:11722,1
+S2a_coord,locality_age,"BE|burnotien|50.6,4.1|399.5|413.02",399.5,413.02,Avalonia,pbdb:23200;pbdb:23202,2
+S2a_coord,locality_age,"BE|grès de wiheries|50.4,3.8|410.62|413.02",410.62,413.02,Avalonia,pbdb:22860;pbdb:23197,2
+S2a_coord,locality_age,"BY||53.2,30.8|393.47|399.5",393.47,399.5,Baltica,pbdb:232956,1
+S2a_coord,locality_age,"CA|bathurst island|75.8,-98.4|410.62|413.02",410.62,413.02,Laurentia,pbdb:11421;pbdb:11425,2
+S2a_coord,locality_age,"CA|bathurst island|75.8,-98.6|419.62|425.0",419.62,425.0,Laurentia,tail:M-bathurst-us384;tail:M-bathurst-us385,2
+S2a_coord,locality_age,"CA|battery point|48.6,-64.3|393.47|410.62",393.47,410.62,Laurentia,pbdb:29001;pbdb:31004,2
+S2a_coord,locality_age,"CA|battery point|48.8,-64.3|393.47|410.62",393.47,410.62,Laurentia,pbdb:26026;pbdb:26547;pbdb:28924;pbdb:28997;pbdb:29002;pbdb:29003;pbdb:29026;pbdb:31023;pbdb:31212,9
+S2a_coord,locality_age,"CA|battery point|48.8,-64.4|393.47|410.62",393.47,410.62,Laurentia,pbdb:28968;pbdb:28971;pbdb:31002;pbdb:31003;pbdb:31213;pbdb:31215,6
+S2a_coord,locality_age,"CA|battery point|48.8,-64.5|393.47|410.62",393.47,410.62,Laurentia,pbdb:28950;pbdb:28969;pbdb:28996;pbdb:28998;pbdb:29029;pbdb:31007;pbdb:31010;pbdb:31011;pbdb:31027,9
+S2a_coord,locality_age,"CA|battery point|48.9,-64.4|393.47|410.62",393.47,410.62,Laurentia,pbdb:31214,1
+S2a_coord,locality_age,"CA|york river|48.6,-64.3|393.47|410.62",393.47,410.62,Laurentia,pbdb:31216,1
+S2a_coord,locality_age,"CA|york river|48.8,-64.4|393.47|410.62",393.47,410.62,Laurentia,pbdb:29020;pbdb:31005,2
+S2a_coord,locality_age,"CN|posongchong|23.3,104.2|410.62|413.02",410.62,413.02,South-China,pbdb:10891,1
+S2a_coord,locality_age,"CN|posongchong|23.3,104.3|410.62|413.02",410.62,413.02,South-China,pbdb:10896,1
+S2a_coord,locality_age,"CN|xiemisitai|46.8,85.6|419.62|422.7",419.62,422.7,Kazakhstania,pbdb:278439,1
+S2a_coord,locality_age,"CN|xujiachong (also called longhuashan)|26.0,104.0|393.47|410.62",393.47,410.62,South-China,pbdb:10941,1
+S2a_coord,locality_age,"DE|hunsrück slate|49.8,7.4|399.5|410.62",399.5,410.62,multiple,pbdb:26904,1
+S2a_coord,locality_age,"DE|wahnbach|50.9,7.3|410.62|413.02",410.62,413.02,multiple,pbdb:232143,1
+S2a_coord,locality_age,"DE||50.2,7.4|399.5|410.62",399.5,410.62,multiple,pbdb:27049;pbdb:27129,2
+S2a_coord,locality_age,"KZ|aigyrzhal'skaya suite|47.0,79.0|393.47|413.02",393.47,413.02,Kazakhstania,pbdb:32851,1
+S2a_coord,locality_age,"NO|frankelryggen|78.0,20.0|413.02|419.62",413.02,419.62,Laurentia,tail:M-svalbard,1
+S2a_coord,locality_age,"RU|pridorozhnaya|54.5,89.9|399.5|410.62",399.5,410.62,multiple,pbdb:238400,1
+S2a_coord,locality_age,"RU|salairka horizon|54.3,85.9|399.5|410.62",399.5,410.62,multiple,pbdb:35709,1
+S2a_coord,locality_age,"RU|shanda horizon|54.3,85.9|387.95|399.5",387.95,399.5,multiple,pbdb:35721,1
+S2a_coord,locality_age,"UA|rashkovskie beds|48.5,26.3|419.62|422.7",419.62,422.7,Baltica,pbdb:52702,1
+S2a_coord,locality_age,"UA|skala|49.6,23.9|419.62|422.7",419.62,422.7,Baltica,pbdb:13873,1
+S2a_coord,locality_age,"UK|dryden flags|57.3,-2.8|410.62|413.02",410.62,413.02,Laurentia,pbdb:10721,1
+S2a_coord,locality_age,"UK|dundee flagstone|56.0,-2.0|413.02|419.62",413.02,419.62,Laurentia,pbdb:10705,1
+S2a_coord,locality_age,"UK|dundee|56.7,-2.8|413.02|419.62",413.02,419.62,Laurentia,pbdb:26755;pbdb:26757,2
+S2a_coord,locality_age,"UK|senni|51.9,-3.6|410.62|413.02",410.62,413.02,multiple,pbdb:238752,1
+S2a_coord,locality_age,"UK|st. maughans|52.0,-2.0|413.02|419.62",413.02,419.62,Avalonia,pbdb:10679,1
+S2a_coord,locality_age,"UK|strathmore|55.0,-4.0|393.47|410.62",393.47,410.62,Laurentia,pbdb:10719,1
+S2a_coord,locality_age,"UK|strathmore|56.2,-4.2|393.47|410.62",393.47,410.62,Laurentia,pbdb:11513,1
+S2a_coord,locality_age,"US|beartooth butte|44.9,-108.1|393.47|410.62",393.47,410.62,Laurentia,pbdb:29294,1
+S2a_coord,locality_age,"US|beartooth butte|45.0,-109.6|393.47|410.62",393.47,410.62,Laurentia,pbdb:26176;pbdb:29292;pbdb:31000,3
+S2a_coord,locality_age,"US|trout valley|46.1,-68.6|387.95|399.5",387.95,399.5,Laurentia,pbdb:10614;pbdb:10617,2
+S2a_coord,region_stage,Avalonia|midpoint-stage:410.62,399.5,413.02,Avalonia,pbdb:23200;pbdb:23202,2
+S2a_coord,region_stage,Avalonia|midpoint-stage:413.02,410.62,413.02,Avalonia,pbdb:22860;pbdb:23197,2
+S2a_coord,region_stage,Avalonia|midpoint-stage:419.62,413.02,419.62,Avalonia,pbdb:10679;pbdb:11722,2
+S2a_coord,region_stage,Baltica|midpoint-stage:410.62,393.47,399.5,Baltica,pbdb:232956,1
+S2a_coord,region_stage,Baltica|midpoint-stage:422.7,419.62,422.7,Baltica,pbdb:13873;pbdb:52702,2
+S2a_coord,region_stage,Gondwana-Australia-Antarctica|midpoint-stage:410.62,393.47,426.7,Gondwana-Australia-Antarctica,tail:M-ghin-ghin;tail:M-limestone-road,2
+S2a_coord,region_stage,Kazakhstania|midpoint-stage:410.62,393.47,413.02,Kazakhstania,pbdb:32851,1
+S2a_coord,region_stage,Kazakhstania|midpoint-stage:422.7,419.62,422.7,Kazakhstania,pbdb:278439,1
+S2a_coord,region_stage,Laurentia|midpoint-stage:410.62,393.47,410.62,Laurentia,pbdb:10614;pbdb:10617;pbdb:10719;pbdb:11513;pbdb:26026;pbdb:26176;pbdb:26547;pbdb:28924;pbdb:28950;pbdb:28968;pbdb:28969;pbdb:28971;pbdb:28996;pbdb:28997;pbdb:28998;pbdb:29001;pbdb:29002;pbdb:29003;pbdb:29020;pbdb:29026;pbdb:29029;pbdb:29292;pbdb:29294;pbdb:31000;pbdb:31002;pbdb:31003;pbdb:31004;pbdb:31005;pbdb:31007;pbdb:31010;pbdb:31011;pbdb:31023;pbdb:31027;pbdb:31212;pbdb:31213;pbdb:31214;pbdb:31215;pbdb:31216,38
+S2a_coord,region_stage,Laurentia|midpoint-stage:413.02,410.62,413.02,Laurentia,pbdb:10721;pbdb:11421;pbdb:11425,3
+S2a_coord,region_stage,Laurentia|midpoint-stage:419.62,413.02,419.62,Laurentia,pbdb:10705;pbdb:26755;pbdb:26757;tail:M-svalbard,4
+S2a_coord,region_stage,Laurentia|midpoint-stage:422.7,419.62,425.0,Laurentia,tail:M-bathurst-us384;tail:M-bathurst-us385,2
+S2a_coord,region_stage,South-China|midpoint-stage:410.62,393.47,410.62,South-China,pbdb:10941,1
+S2a_coord,region_stage,South-China|midpoint-stage:413.02,410.62,413.02,South-China,pbdb:10891;pbdb:10896,2
+S2a_coord,region_stage,multiple|midpoint-stage:410.62,399.5,410.62,multiple,pbdb:238400;pbdb:26904;pbdb:27049;pbdb:27129;pbdb:35709;pbdb:35721,6
+S2a_coord,region_stage,multiple|midpoint-stage:413.02,410.62,413.02,multiple,pbdb:232143;pbdb:238752,2
+S2b,locality_age,"Australia|ghin ghin road, yea|393.47|426.7",393.47,426.7,Gondwana-Australia-Antarctica,tail:M-ghin-ghin,1
+S2b,locality_age,"Australia|limestone road, brackley's (barkley's) cutting, yea; loc. 4 (= h4) of garratt's 1978 map; the national heritage place flora fossil site|393.47|426.7",393.47,426.7,Gondwana-Australia-Antarctica,tail:M-limestone-road,1
+S2b,locality_age,"BE|bois d'ausse sandstone|50.5,5.7|413.02|419.62",413.02,419.62,Avalonia,pbdb:11722,1
+S2b,locality_age,"BE|burnotien|50.6,4.1|399.5|413.02",399.5,413.02,Avalonia,pbdb:23200;pbdb:23202,2
+S2b,locality_age,"BE|grès de wiheries|50.4,3.8|410.62|413.02",410.62,413.02,Avalonia,pbdb:22860;pbdb:23197,2
+S2b,locality_age,"BE|grès du bois d'ausse|50.6,6.0|393.47|419.62",393.47,419.62,Avalonia,pbdb:34965,1
+S2b,locality_age,"BY||53.2,30.8|393.47|399.5",393.47,399.5,Baltica,pbdb:232956,1
+S2b,locality_age,"CA|bathurst island|75.8,-98.4|410.62|413.02",410.62,413.02,Laurentia,pbdb:11421;pbdb:11425,2
+S2b,locality_age,"CA|bathurst island|76.9,-99.4|393.47|419.62",393.47,419.62,Laurentia,pbdb:23967,1
+S2b,locality_age,"CA|battery point|48.6,-64.3|393.47|410.62",393.47,410.62,Laurentia,pbdb:29001;pbdb:31004,2
+S2b,locality_age,"CA|battery point|48.8,-64.3|393.47|410.62",393.47,410.62,Laurentia,pbdb:26026;pbdb:26547;pbdb:28924;pbdb:28997;pbdb:29002;pbdb:29003;pbdb:29026;pbdb:31023;pbdb:31212,9
+S2b,locality_age,"CA|battery point|48.8,-64.4|393.47|410.62",393.47,410.62,Laurentia,pbdb:28968;pbdb:28971;pbdb:31002;pbdb:31003;pbdb:31213;pbdb:31215,6
+S2b,locality_age,"CA|battery point|48.8,-64.4|393.47|419.62",393.47,419.62,Laurentia,pbdb:21266,1
+S2b,locality_age,"CA|battery point|48.8,-64.5|393.47|410.62",393.47,410.62,Laurentia,pbdb:28950;pbdb:28969;pbdb:28996;pbdb:28998;pbdb:29029;pbdb:31007;pbdb:31010;pbdb:31011;pbdb:31027,9
+S2b,locality_age,"CA|battery point|48.8,-64.5|393.47|419.62",393.47,419.62,Laurentia,pbdb:20841,1
+S2b,locality_age,"CA|battery point|48.9,-64.4|393.47|410.62",393.47,410.62,Laurentia,pbdb:31214,1
+S2b,locality_age,"CA|bay du nord series|47.8,-58.3|393.47|419.62",393.47,419.62,Laurentia,pbdb:10625,1
+S2b,locality_age,"CA|campbellton|48.0,-66.0|393.47|419.62",393.47,419.62,Laurentia,pbdb:26439;pbdb:26525;pbdb:26526;pbdb:26529,4
+S2b,locality_age,"CA|campbellton|48.0,-66.4|393.47|419.62",393.47,419.62,Laurentia,pbdb:26438;pbdb:29021;pbdb:29334;pbdb:30997;pbdb:30998;pbdb:30999,6
+S2b,locality_age,"CA|campbellton|48.0,-66.5|393.47|419.62",393.47,419.62,Laurentia,pbdb:23007;pbdb:26650;pbdb:26656;pbdb:26660;pbdb:28921,5
+S2b,locality_age,"CA|la garde|48.0,-66.5|393.47|419.62",393.47,419.62,Laurentia,pbdb:26424,1
+S2b,locality_age,"CA|la garde|48.0,-66.7|393.47|419.62",393.47,419.62,Laurentia,pbdb:26536,1
+S2b,locality_age,"CA|york river|48.6,-64.3|393.47|410.62",393.47,410.62,Laurentia,pbdb:31216,1
+S2b,locality_age,"CA|york river|48.8,-64.4|393.47|410.62",393.47,410.62,Laurentia,pbdb:29020;pbdb:31005,2
+S2b,locality_age,"CA||48.1,-66.8|393.47|419.62",393.47,419.62,Laurentia,pbdb:24146,1
+S2b,locality_age,"CN|posongchong|23.3,104.2|410.62|413.02",410.62,413.02,South-China,pbdb:10891,1
+S2b,locality_age,"CN|posongchong|23.3,104.3|410.62|413.02",410.62,413.02,South-China,pbdb:10896,1
+S2b,locality_age,"CN|xiemisitai|46.8,85.6|419.62|422.7",419.62,422.7,Kazakhstania,pbdb:278439,1
+S2b,locality_age,"CN|xujiachong (also called longhuashan)|26.0,104.0|393.47|410.62",393.47,410.62,South-China,pbdb:10941,1
+S2b,locality_age,"Canada|us384, polar bear pass region, bathurst island|419.62|425.0",419.62,425.0,Laurentia,tail:M-bathurst-us384,1
+S2b,locality_age,"Canada|us385 (=us601), polar bear pass region, bathurst island|419.62|425.0",419.62,425.0,Laurentia,tail:M-bathurst-us385,1
+S2b,locality_age,"DE|hunsrück slate|49.8,7.4|399.5|410.62",399.5,410.62,multiple,pbdb:26904,1
+S2b,locality_age,"DE|wahnbach|50.9,7.3|410.62|413.02",410.62,413.02,multiple,pbdb:232143,1
+S2b,locality_age,"DE||50.2,7.4|399.5|410.62",399.5,410.62,multiple,pbdb:27049;pbdb:27129,2
+S2b,locality_age,"FR||50.3,2.4|393.47|419.62",393.47,419.62,peri-Gondwana-Europe,pbdb:28207,1
+S2b,locality_age,"FR||50.5,2.2|393.47|419.62",393.47,419.62,peri-Gondwana-Europe,pbdb:28038,1
+S2b,locality_age,"KZ|aigyrzhal'skaya suite|47.0,79.0|393.47|413.02",393.47,413.02,Kazakhstania,pbdb:32851,1
+S2b,locality_age,"MA||30.0,-8.0|393.47|419.62",393.47,419.62,Gondwana-North-Africa-Arabia,pbdb:26661,1
+S2b,locality_age,"NO|lerbekk|62.6,11.3|393.47|419.62",393.47,419.62,Baltica,pbdb:21190;pbdb:21194;pbdb:21195,3
+S2b,locality_age,"Norway|red bay series brook section, spitsbergen|413.02|419.62",413.02,419.62,Laurentia,tail:M-svalbard,1
+S2b,locality_age,"PL||49.8,19.4|393.47|419.62",393.47,419.62,multiple,pbdb:23962,1
+S2b,locality_age,"RU|pridorozhnaya|54.5,89.9|399.5|410.62",399.5,410.62,multiple,pbdb:238400,1
+S2b,locality_age,"RU|salairka horizon|54.3,85.9|399.5|410.62",399.5,410.62,multiple,pbdb:35709,1
+S2b,locality_age,"RU|shanda horizon|54.3,85.9|387.95|399.5",387.95,399.5,multiple,pbdb:35721,1
+S2b,locality_age,"RU||56.0,92.9|393.47|419.62",393.47,419.62,multiple,pbdb:60395,1
+S2b,locality_age,"UA|rashkovskie beds|48.5,26.3|419.62|422.7",419.62,422.7,Baltica,pbdb:52702,1
+S2b,locality_age,"UA|skala|49.6,23.9|419.62|422.7",419.62,422.7,Baltica,pbdb:13873,1
+S2b,locality_age,"UK|dryden flags|57.3,-2.8|410.62|413.02",410.62,413.02,Laurentia,pbdb:10721,1
+S2b,locality_age,"UK|dundee flagstone|56.0,-2.0|413.02|419.62",413.02,419.62,Laurentia,pbdb:10705,1
+S2b,locality_age,"UK|dundee|56.0,-4.0|393.47|419.62",393.47,419.62,Laurentia,pbdb:26785,1
+S2b,locality_age,"UK|dundee|56.7,-2.8|413.02|419.62",413.02,419.62,Laurentia,pbdb:26755;pbdb:26757,2
+S2b,locality_age,"UK|senni|51.9,-3.6|410.62|413.02",410.62,413.02,multiple,pbdb:238752,1
+S2b,locality_age,"UK|st. maughans|52.0,-2.0|413.02|419.62",413.02,419.62,Avalonia,pbdb:10679,1
+S2b,locality_age,"UK|strathmore|55.0,-4.0|393.47|410.62",393.47,410.62,Laurentia,pbdb:10719,1
+S2b,locality_age,"UK|strathmore|56.2,-4.2|393.47|410.62",393.47,410.62,Laurentia,pbdb:11513,1
+S2b,locality_age,"UK||52.0,-2.0|393.47|419.62",393.47,419.62,Avalonia,pbdb:25242,1
+S2b,locality_age,"US|beartooth butte|44.9,-108.1|393.47|410.62",393.47,410.62,Laurentia,pbdb:29294,1
+S2b,locality_age,"US|beartooth butte|44.9,-108.1|393.47|419.62",393.47,419.62,Laurentia,pbdb:26179,1
+S2b,locality_age,"US|beartooth butte|45.0,-109.6|393.47|410.62",393.47,410.62,Laurentia,pbdb:26176;pbdb:29292;pbdb:31000,3
+S2b,locality_age,"US|helderberg|40.9,-77.8|393.47|419.62",393.47,419.62,Laurentia,pbdb:28768,1
+S2b,locality_age,"US|trout valley|46.1,-68.6|387.95|399.5",387.95,399.5,Laurentia,pbdb:10614;pbdb:10617,2
+S2b,region_stage,Avalonia|midpoint-stage:410.62,399.5,419.62,Avalonia,pbdb:23200;pbdb:23202;pbdb:25242;pbdb:34965,4
+S2b,region_stage,Avalonia|midpoint-stage:413.02,410.62,413.02,Avalonia,pbdb:22860;pbdb:23197,2
+S2b,region_stage,Avalonia|midpoint-stage:419.62,413.02,419.62,Avalonia,pbdb:10679;pbdb:11722,2
+S2b,region_stage,Baltica|midpoint-stage:410.62,393.47,419.62,Baltica,pbdb:21190;pbdb:21194;pbdb:21195;pbdb:232956,4
+S2b,region_stage,Baltica|midpoint-stage:422.7,419.62,422.7,Baltica,pbdb:13873;pbdb:52702,2
+S2b,region_stage,Gondwana-Australia-Antarctica|midpoint-stage:410.62,393.47,426.7,Gondwana-Australia-Antarctica,tail:M-ghin-ghin;tail:M-limestone-road,2
+S2b,region_stage,Gondwana-North-Africa-Arabia|midpoint-stage:410.62,393.47,419.62,Gondwana-North-Africa-Arabia,pbdb:26661,1
+S2b,region_stage,Kazakhstania|midpoint-stage:410.62,393.47,413.02,Kazakhstania,pbdb:32851,1
+S2b,region_stage,Kazakhstania|midpoint-stage:422.7,419.62,422.7,Kazakhstania,pbdb:278439,1
+S2b,region_stage,Laurentia|midpoint-stage:410.62,393.47,419.62,Laurentia,pbdb:10614;pbdb:10617;pbdb:10625;pbdb:10719;pbdb:11513;pbdb:20841;pbdb:21266;pbdb:23007;pbdb:23967;pbdb:24146;pbdb:26026;pbdb:26176;pbdb:26179;pbdb:26424;pbdb:26438;pbdb:26439;pbdb:26525;pbdb:26526;pbdb:26529;pbdb:26536;pbdb:26547;pbdb:26650;pbdb:26656;pbdb:26660;pbdb:26785;pbdb:28768;pbdb:28921;pbdb:28924;pbdb:28950;pbdb:28968;pbdb:28969;pbdb:28971;pbdb:28996;pbdb:28997;pbdb:28998;pbdb:29001;pbdb:29002;pbdb:29003;pbdb:29020;pbdb:29021;pbdb:29026;pbdb:29029;pbdb:29292;pbdb:29294;pbdb:29334;pbdb:30997;pbdb:30998;pbdb:30999;pbdb:31000;pbdb:31002;pbdb:31003;pbdb:31004;pbdb:31005;pbdb:31007;pbdb:31010;pbdb:31011;pbdb:31023;pbdb:31027;pbdb:31212;pbdb:31213;pbdb:31214;pbdb:31215;pbdb:31216,63
+S2b,region_stage,Laurentia|midpoint-stage:413.02,410.62,413.02,Laurentia,pbdb:10721;pbdb:11421;pbdb:11425,3
+S2b,region_stage,Laurentia|midpoint-stage:419.62,413.02,419.62,Laurentia,pbdb:10705;pbdb:26755;pbdb:26757;tail:M-svalbard,4
+S2b,region_stage,Laurentia|midpoint-stage:422.7,419.62,425.0,Laurentia,tail:M-bathurst-us384;tail:M-bathurst-us385,2
+S2b,region_stage,South-China|midpoint-stage:410.62,393.47,410.62,South-China,pbdb:10941,1
+S2b,region_stage,South-China|midpoint-stage:413.02,410.62,413.02,South-China,pbdb:10891;pbdb:10896,2
+S2b,region_stage,multiple|midpoint-stage:410.62,399.5,419.62,multiple,pbdb:238400;pbdb:23962;pbdb:26904;pbdb:27049;pbdb:27129;pbdb:35709;pbdb:35721;pbdb:60395,8
+S2b,region_stage,multiple|midpoint-stage:413.02,410.62,413.02,multiple,pbdb:232143;pbdb:238752,2
+S2b,region_stage,peri-Gondwana-Europe|midpoint-stage:410.62,393.47,419.62,peri-Gondwana-Europe,pbdb:28038;pbdb:28207,2
+S2b_with_28303,locality_age,"Australia|ghin ghin road, yea|393.47|426.7",393.47,426.7,Gondwana-Australia-Antarctica,tail:M-ghin-ghin,1
+S2b_with_28303,locality_age,"Australia|limestone road, brackley's (barkley's) cutting, yea; loc. 4 (= h4) of garratt's 1978 map; the national heritage place flora fossil site|393.47|426.7",393.47,426.7,Gondwana-Australia-Antarctica,tail:M-limestone-road,1
+S2b_with_28303,locality_age,"BE|bois d'ausse sandstone|50.5,5.7|413.02|419.62",413.02,419.62,Avalonia,pbdb:11722,1
+S2b_with_28303,locality_age,"BE|burnotien|50.6,4.1|399.5|413.02",399.5,413.02,Avalonia,pbdb:23200;pbdb:23202,2
+S2b_with_28303,locality_age,"BE|grès de wiheries|50.4,3.8|410.62|413.02",410.62,413.02,Avalonia,pbdb:22860;pbdb:23197,2
+S2b_with_28303,locality_age,"BE|grès du bois d'ausse|50.6,6.0|393.47|419.62",393.47,419.62,Avalonia,pbdb:34965,1
+S2b_with_28303,locality_age,"BY||53.2,30.8|393.47|399.5",393.47,399.5,Baltica,pbdb:232956,1
+S2b_with_28303,locality_age,"CA|bathurst island|75.8,-98.4|410.62|413.02",410.62,413.02,Laurentia,pbdb:11421;pbdb:11425,2
+S2b_with_28303,locality_age,"CA|bathurst island|76.9,-99.4|393.47|419.62",393.47,419.62,Laurentia,pbdb:23967,1
+S2b_with_28303,locality_age,"CA|battery point|48.6,-64.3|393.47|410.62",393.47,410.62,Laurentia,pbdb:29001;pbdb:31004,2
+S2b_with_28303,locality_age,"CA|battery point|48.8,-64.3|393.47|410.62",393.47,410.62,Laurentia,pbdb:26026;pbdb:26547;pbdb:28924;pbdb:28997;pbdb:29002;pbdb:29003;pbdb:29026;pbdb:31023;pbdb:31212,9
+S2b_with_28303,locality_age,"CA|battery point|48.8,-64.4|393.47|410.62",393.47,410.62,Laurentia,pbdb:28968;pbdb:28971;pbdb:31002;pbdb:31003;pbdb:31213;pbdb:31215,6
+S2b_with_28303,locality_age,"CA|battery point|48.8,-64.4|393.47|419.62",393.47,419.62,Laurentia,pbdb:21266,1
+S2b_with_28303,locality_age,"CA|battery point|48.8,-64.5|393.47|410.62",393.47,410.62,Laurentia,pbdb:28950;pbdb:28969;pbdb:28996;pbdb:28998;pbdb:29029;pbdb:31007;pbdb:31010;pbdb:31011;pbdb:31027,9
+S2b_with_28303,locality_age,"CA|battery point|48.8,-64.5|393.47|419.62",393.47,419.62,Laurentia,pbdb:20841,1
+S2b_with_28303,locality_age,"CA|battery point|48.9,-64.4|393.47|410.62",393.47,410.62,Laurentia,pbdb:31214,1
+S2b_with_28303,locality_age,"CA|bay du nord series|47.8,-58.3|393.47|419.62",393.47,419.62,Laurentia,pbdb:10625,1
+S2b_with_28303,locality_age,"CA|campbellton|48.0,-66.0|393.47|419.62",393.47,419.62,Laurentia,pbdb:26439;pbdb:26525;pbdb:26526;pbdb:26529,4
+S2b_with_28303,locality_age,"CA|campbellton|48.0,-66.4|393.47|419.62",393.47,419.62,Laurentia,pbdb:26438;pbdb:29021;pbdb:29334;pbdb:30997;pbdb:30998;pbdb:30999,6
+S2b_with_28303,locality_age,"CA|campbellton|48.0,-66.5|393.47|419.62",393.47,419.62,Laurentia,pbdb:23007;pbdb:26650;pbdb:26656;pbdb:26660;pbdb:28921,5
+S2b_with_28303,locality_age,"CA|la garde|48.0,-66.5|393.47|419.62",393.47,419.62,Laurentia,pbdb:26424,1
+S2b_with_28303,locality_age,"CA|la garde|48.0,-66.7|393.47|419.62",393.47,419.62,Laurentia,pbdb:26536,1
+S2b_with_28303,locality_age,"CA|york river|48.6,-64.3|393.47|410.62",393.47,410.62,Laurentia,pbdb:31216,1
+S2b_with_28303,locality_age,"CA|york river|48.8,-64.4|393.47|410.62",393.47,410.62,Laurentia,pbdb:29020;pbdb:31005,2
+S2b_with_28303,locality_age,"CA||48.1,-66.8|393.47|419.62",393.47,419.62,Laurentia,pbdb:24146,1
+S2b_with_28303,locality_age,"CN|posongchong|23.3,104.2|410.62|413.02",410.62,413.02,South-China,pbdb:10891,1
+S2b_with_28303,locality_age,"CN|posongchong|23.3,104.3|410.62|413.02",410.62,413.02,South-China,pbdb:10896,1
+S2b_with_28303,locality_age,"CN|xiemisitai|46.8,85.6|419.62|422.7",419.62,422.7,Kazakhstania,pbdb:278439,1
+S2b_with_28303,locality_age,"CN|xujiachong (also called longhuashan)|26.0,104.0|393.47|410.62",393.47,410.62,South-China,pbdb:10941,1
+S2b_with_28303,locality_age,"Canada|us384, polar bear pass region, bathurst island|419.62|425.0",419.62,425.0,Laurentia,tail:M-bathurst-us384,1
+S2b_with_28303,locality_age,"Canada|us385 (=us601), polar bear pass region, bathurst island|419.62|425.0",419.62,425.0,Laurentia,tail:M-bathurst-us385,1
+S2b_with_28303,locality_age,"DE|hunsrück slate|49.8,7.4|399.5|410.62",399.5,410.62,multiple,pbdb:26904,1
+S2b_with_28303,locality_age,"DE|wahnbach|50.9,7.3|410.62|413.02",410.62,413.02,multiple,pbdb:232143,1
+S2b_with_28303,locality_age,"DE||50.2,7.4|399.5|410.62",399.5,410.62,multiple,pbdb:27049;pbdb:27129,2
+S2b_with_28303,locality_age,"FR||50.3,2.4|393.47|419.62",393.47,419.62,peri-Gondwana-Europe,pbdb:28207,1
+S2b_with_28303,locality_age,"FR||50.5,2.2|393.47|419.62",393.47,419.62,peri-Gondwana-Europe,pbdb:28038,1
+S2b_with_28303,locality_age,"KZ|aigyrzhal'skaya suite|47.0,79.0|393.47|413.02",393.47,413.02,Kazakhstania,pbdb:32851,1
+S2b_with_28303,locality_age,"MA||30.0,-8.0|393.47|419.62",393.47,419.62,Gondwana-North-Africa-Arabia,pbdb:26661,1
+S2b_with_28303,locality_age,"NO|lerbekk|62.6,11.3|393.47|419.62",393.47,419.62,Baltica,pbdb:21190;pbdb:21194;pbdb:21195,3
+S2b_with_28303,locality_age,"Norway|red bay series brook section, spitsbergen|413.02|419.62",413.02,419.62,Laurentia,tail:M-svalbard,1
+S2b_with_28303,locality_age,"PL||49.8,19.4|393.47|419.62",393.47,419.62,multiple,pbdb:23962,1
+S2b_with_28303,locality_age,"RU|pridorozhnaya|54.5,89.9|399.5|410.62",399.5,410.62,multiple,pbdb:238400,1
+S2b_with_28303,locality_age,"RU|salairka horizon|54.3,85.9|399.5|410.62",399.5,410.62,multiple,pbdb:35709,1
+S2b_with_28303,locality_age,"RU|shanda horizon|54.3,85.9|387.95|399.5",387.95,399.5,multiple,pbdb:35721,1
+S2b_with_28303,locality_age,"RU||56.0,92.9|393.47|419.62",393.47,419.62,multiple,pbdb:60395,1
+S2b_with_28303,locality_age,"UA|rashkovskie beds|48.5,26.3|419.62|422.7",419.62,422.7,Baltica,pbdb:52702,1
+S2b_with_28303,locality_age,"UA|skala|49.6,23.9|419.62|422.7",419.62,422.7,Baltica,pbdb:13873,1
+S2b_with_28303,locality_age,"UK|dryden flags|57.3,-2.8|410.62|413.02",410.62,413.02,Laurentia,pbdb:10721,1
+S2b_with_28303,locality_age,"UK|dundee flagstone|56.0,-2.0|413.02|419.62",413.02,419.62,Laurentia,pbdb:10705,1
+S2b_with_28303,locality_age,"UK|dundee|56.0,-4.0|393.47|419.62",393.47,419.62,Laurentia,pbdb:26785,1
+S2b_with_28303,locality_age,"UK|dundee|56.7,-2.8|413.02|419.62",413.02,419.62,Laurentia,pbdb:26755;pbdb:26757,2
+S2b_with_28303,locality_age,"UK|senni|51.9,-3.6|410.62|413.02",410.62,413.02,multiple,pbdb:238752,1
+S2b_with_28303,locality_age,"UK|st. maughans|52.0,-2.0|413.02|419.62",413.02,419.62,Avalonia,pbdb:10679,1
+S2b_with_28303,locality_age,"UK|strathmore|55.0,-4.0|393.47|410.62",393.47,410.62,Laurentia,pbdb:10719,1
+S2b_with_28303,locality_age,"UK|strathmore|56.2,-4.2|393.47|410.62",393.47,410.62,Laurentia,pbdb:11513,1
+S2b_with_28303,locality_age,"UK||52.0,-2.0|393.47|419.62",393.47,419.62,Avalonia,pbdb:25242,1
+S2b_with_28303,locality_age,"US|beartooth butte|44.9,-108.1|393.47|410.62",393.47,410.62,Laurentia,pbdb:29294,1
+S2b_with_28303,locality_age,"US|beartooth butte|44.9,-108.1|393.47|419.62",393.47,419.62,Laurentia,pbdb:26179,1
+S2b_with_28303,locality_age,"US|beartooth butte|45.0,-109.6|393.47|410.62",393.47,410.62,Laurentia,pbdb:26176;pbdb:29292;pbdb:31000,3
+S2b_with_28303,locality_age,"US|helderberg|40.9,-77.8|393.47|419.62",393.47,419.62,Laurentia,pbdb:28768,1
+S2b_with_28303,locality_age,"US|trout valley|46.1,-68.6|387.95|399.5",387.95,399.5,Laurentia,pbdb:10614;pbdb:10617,2
+S2b_with_28303,locality_age,"US||41.8,-79.0|393.47|419.62",393.47,419.62,Laurentia,pbdb:28303,1
+S2b_with_28303,region_stage,Avalonia|midpoint-stage:410.62,399.5,419.62,Avalonia,pbdb:23200;pbdb:23202;pbdb:25242;pbdb:34965,4
+S2b_with_28303,region_stage,Avalonia|midpoint-stage:413.02,410.62,413.02,Avalonia,pbdb:22860;pbdb:23197,2
+S2b_with_28303,region_stage,Avalonia|midpoint-stage:419.62,413.02,419.62,Avalonia,pbdb:10679;pbdb:11722,2
+S2b_with_28303,region_stage,Baltica|midpoint-stage:410.62,393.47,419.62,Baltica,pbdb:21190;pbdb:21194;pbdb:21195;pbdb:232956,4
+S2b_with_28303,region_stage,Baltica|midpoint-stage:422.7,419.62,422.7,Baltica,pbdb:13873;pbdb:52702,2
+S2b_with_28303,region_stage,Gondwana-Australia-Antarctica|midpoint-stage:410.62,393.47,426.7,Gondwana-Australia-Antarctica,tail:M-ghin-ghin;tail:M-limestone-road,2
+S2b_with_28303,region_stage,Gondwana-North-Africa-Arabia|midpoint-stage:410.62,393.47,419.62,Gondwana-North-Africa-Arabia,pbdb:26661,1
+S2b_with_28303,region_stage,Kazakhstania|midpoint-stage:410.62,393.47,413.02,Kazakhstania,pbdb:32851,1
+S2b_with_28303,region_stage,Kazakhstania|midpoint-stage:422.7,419.62,422.7,Kazakhstania,pbdb:278439,1
+S2b_with_28303,region_stage,Laurentia|midpoint-stage:410.62,393.47,419.62,Laurentia,pbdb:10614;pbdb:10617;pbdb:10625;pbdb:10719;pbdb:11513;pbdb:20841;pbdb:21266;pbdb:23007;pbdb:23967;pbdb:24146;pbdb:26026;pbdb:26176;pbdb:26179;pbdb:26424;pbdb:26438;pbdb:26439;pbdb:26525;pbdb:26526;pbdb:26529;pbdb:26536;pbdb:26547;pbdb:26650;pbdb:26656;pbdb:26660;pbdb:26785;pbdb:28303;pbdb:28768;pbdb:28921;pbdb:28924;pbdb:28950;pbdb:28968;pbdb:28969;pbdb:28971;pbdb:28996;pbdb:28997;pbdb:28998;pbdb:29001;pbdb:29002;pbdb:29003;pbdb:29020;pbdb:29021;pbdb:29026;pbdb:29029;pbdb:29292;pbdb:29294;pbdb:29334;pbdb:30997;pbdb:30998;pbdb:30999;pbdb:31000;pbdb:31002;pbdb:31003;pbdb:31004;pbdb:31005;pbdb:31007;pbdb:31010;pbdb:31011;pbdb:31023;pbdb:31027;pbdb:31212;pbdb:31213;pbdb:31214;pbdb:31215;pbdb:31216,64
+S2b_with_28303,region_stage,Laurentia|midpoint-stage:413.02,410.62,413.02,Laurentia,pbdb:10721;pbdb:11421;pbdb:11425,3
+S2b_with_28303,region_stage,Laurentia|midpoint-stage:419.62,413.02,419.62,Laurentia,pbdb:10705;pbdb:26755;pbdb:26757;tail:M-svalbard,4
+S2b_with_28303,region_stage,Laurentia|midpoint-stage:422.7,419.62,425.0,Laurentia,tail:M-bathurst-us384;tail:M-bathurst-us385,2
+S2b_with_28303,region_stage,South-China|midpoint-stage:410.62,393.47,410.62,South-China,pbdb:10941,1
+S2b_with_28303,region_stage,South-China|midpoint-stage:413.02,410.62,413.02,South-China,pbdb:10891;pbdb:10896,2
+S2b_with_28303,region_stage,multiple|midpoint-stage:410.62,399.5,419.62,multiple,pbdb:238400;pbdb:23962;pbdb:26904;pbdb:27049;pbdb:27129;pbdb:35709;pbdb:35721;pbdb:60395,8
+S2b_with_28303,region_stage,multiple|midpoint-stage:413.02,410.62,413.02,multiple,pbdb:232143;pbdb:238752,2
+S2b_with_28303,region_stage,peri-Gondwana-Europe|midpoint-stage:410.62,393.47,419.62,peri-Gondwana-Europe,pbdb:28038;pbdb:28207,2
+S2b_merged,locality_age,"Australia|ghin ghin road, yea|393.47|426.7",393.47,426.7,Gondwana-Australia-Antarctica,tail:M-ghin-ghin,1
+S2b_merged,locality_age,"Australia|limestone road, brackley's (barkley's) cutting, yea; loc. 4 (= h4) of garratt's 1978 map; the national heritage place flora fossil site|393.47|426.7",393.47,426.7,Gondwana-Australia-Antarctica,tail:M-limestone-road,1
+S2b_merged,locality_age,"BE|bois d'ausse sandstone|50.5,5.7|413.02|419.62",413.02,419.62,Avalonia,pbdb:11722,1
+S2b_merged,locality_age,"BE|burnotien|50.6,4.1|399.5|413.02",399.5,413.02,Avalonia,pbdb:23200;pbdb:23202,2
+S2b_merged,locality_age,"BE|grès de wiheries|50.4,3.8|410.62|413.02",410.62,413.02,Avalonia,pbdb:22860;pbdb:23197,2
+S2b_merged,locality_age,"BE|grès du bois d'ausse|50.6,6.0|393.47|419.62",393.47,419.62,Avalonia,pbdb:34965,1
+S2b_merged,locality_age,"BY||53.2,30.8|393.47|399.5",393.47,399.5,Baltica,pbdb:232956,1
+S2b_merged,locality_age,"CA|bathurst island|75.8,-98.4|410.62|413.02",410.62,413.02,Laurentia,pbdb:11421;pbdb:11425,2
+S2b_merged,locality_age,"CA|bathurst island|76.9,-99.4|393.47|419.62",393.47,419.62,Laurentia,pbdb:23967,1
+S2b_merged,locality_age,"CA|battery point|48.6,-64.3|393.47|410.62",393.47,410.62,Laurentia,pbdb:29001;pbdb:31004,2
+S2b_merged,locality_age,"CA|battery point|48.8,-64.3|393.47|410.62",393.47,410.62,Laurentia,pbdb:26026;pbdb:26547;pbdb:28924;pbdb:28997;pbdb:29002;pbdb:29003;pbdb:29026;pbdb:31023;pbdb:31212,9
+S2b_merged,locality_age,"CA|battery point|48.8,-64.4|393.47|410.62",393.47,410.62,Laurentia,pbdb:28968;pbdb:28971;pbdb:31002;pbdb:31003;pbdb:31213;pbdb:31215,6
+S2b_merged,locality_age,"CA|battery point|48.8,-64.5|393.47|410.62",393.47,410.62,Laurentia,pbdb:28950;pbdb:28969;pbdb:28996;pbdb:28998;pbdb:29029;pbdb:31007;pbdb:31010;pbdb:31011;pbdb:31027,9
+S2b_merged,locality_age,"CA|battery point|48.9,-64.4|393.47|410.62",393.47,410.62,Laurentia,pbdb:31214,1
+S2b_merged,locality_age,"CA|bay du nord series|47.8,-58.3|393.47|419.62",393.47,419.62,Laurentia,pbdb:10625,1
+S2b_merged,locality_age,"CA|campbellton|48.0,-66.0|393.47|419.62",393.47,419.62,Laurentia,pbdb:26439;pbdb:26525;pbdb:26526;pbdb:26529,4
+S2b_merged,locality_age,"CA|campbellton|48.0,-66.4|393.47|419.62",393.47,419.62,Laurentia,pbdb:26438;pbdb:29021;pbdb:29334;pbdb:30997;pbdb:30998;pbdb:30999,6
+S2b_merged,locality_age,"CA|campbellton|48.0,-66.5|393.47|419.62",393.47,419.62,Laurentia,pbdb:23007;pbdb:26650;pbdb:26656;pbdb:26660;pbdb:28921,5
+S2b_merged,locality_age,"CA|la garde|48.0,-66.5|393.47|419.62",393.47,419.62,Laurentia,pbdb:26424,1
+S2b_merged,locality_age,"CA|la garde|48.0,-66.7|393.47|419.62",393.47,419.62,Laurentia,pbdb:26536,1
+S2b_merged,locality_age,"CA|york river|48.6,-64.3|393.47|410.62",393.47,410.62,Laurentia,pbdb:31216,1
+S2b_merged,locality_age,"CA|york river|48.8,-64.4|393.47|410.62",393.47,410.62,Laurentia,pbdb:29020;pbdb:31005,2
+S2b_merged,locality_age,"CA||48.1,-66.8|393.47|419.62",393.47,419.62,Laurentia,pbdb:24146,1
+S2b_merged,locality_age,"CN|posongchong|23.3,104.2|410.62|413.02",410.62,413.02,South-China,pbdb:10891,1
+S2b_merged,locality_age,"CN|posongchong|23.3,104.3|410.62|413.02",410.62,413.02,South-China,pbdb:10896,1
+S2b_merged,locality_age,"CN|xiemisitai|46.8,85.6|419.62|422.7",419.62,422.7,Kazakhstania,pbdb:278439,1
+S2b_merged,locality_age,"CN|xujiachong (also called longhuashan)|26.0,104.0|393.47|410.62",393.47,410.62,South-China,pbdb:10941,1
+S2b_merged,locality_age,"Canada|us384, polar bear pass region, bathurst island|419.62|425.0",419.62,425.0,Laurentia,tail:M-bathurst-us384,1
+S2b_merged,locality_age,"Canada|us385 (=us601), polar bear pass region, bathurst island|419.62|425.0",419.62,425.0,Laurentia,tail:M-bathurst-us385,1
+S2b_merged,locality_age,"DE|hunsrück slate|49.8,7.4|399.5|410.62",399.5,410.62,multiple,pbdb:26904,1
+S2b_merged,locality_age,"DE|wahnbach|50.9,7.3|410.62|413.02",410.62,413.02,multiple,pbdb:232143,1
+S2b_merged,locality_age,"DE||50.2,7.4|399.5|410.62",399.5,410.62,multiple,pbdb:27049;pbdb:27129,2
+S2b_merged,locality_age,"FR||50.3,2.4|393.47|419.62",393.47,419.62,peri-Gondwana-Europe,pbdb:28207,1
+S2b_merged,locality_age,"FR||50.5,2.2|393.47|419.62",393.47,419.62,peri-Gondwana-Europe,pbdb:28038,1
+S2b_merged,locality_age,"KZ|aigyrzhal'skaya suite|47.0,79.0|393.47|413.02",393.47,413.02,Kazakhstania,pbdb:32851,1
+S2b_merged,locality_age,"MA||30.0,-8.0|393.47|419.62",393.47,419.62,Gondwana-North-Africa-Arabia,pbdb:26661,1
+S2b_merged,locality_age,"NO|lerbekk|62.6,11.3|393.47|419.62",393.47,419.62,Baltica,pbdb:21190;pbdb:21194;pbdb:21195,3
+S2b_merged,locality_age,"Norway|red bay series brook section, spitsbergen|413.02|419.62",413.02,419.62,Laurentia,tail:M-svalbard,1
+S2b_merged,locality_age,"PL||49.8,19.4|393.47|419.62",393.47,419.62,multiple,pbdb:23962,1
+S2b_merged,locality_age,"RU|pridorozhnaya|54.5,89.9|399.5|410.62",399.5,410.62,multiple,pbdb:238400,1
+S2b_merged,locality_age,"RU|salairka horizon|54.3,85.9|399.5|410.62",399.5,410.62,multiple,pbdb:35709,1
+S2b_merged,locality_age,"RU|shanda horizon|54.3,85.9|387.95|399.5",387.95,399.5,multiple,pbdb:35721,1
+S2b_merged,locality_age,"RU||56.0,92.9|393.47|419.62",393.47,419.62,multiple,pbdb:60395,1
+S2b_merged,locality_age,"UA|rashkovskie beds|48.5,26.3|419.62|422.7",419.62,422.7,Baltica,pbdb:52702,1
+S2b_merged,locality_age,"UA|skala|49.6,23.9|419.62|422.7",419.62,422.7,Baltica,pbdb:13873,1
+S2b_merged,locality_age,"UK|dryden flags|57.3,-2.8|410.62|413.02",410.62,413.02,Laurentia,pbdb:10721,1
+S2b_merged,locality_age,"UK|dundee flagstone|56.0,-2.0|413.02|419.62",413.02,419.62,Laurentia,pbdb:10705,1
+S2b_merged,locality_age,"UK|dundee|56.0,-4.0|393.47|419.62",393.47,419.62,Laurentia,pbdb:26785,1
+S2b_merged,locality_age,"UK|dundee|56.7,-2.8|413.02|419.62",413.02,419.62,Laurentia,pbdb:26755;pbdb:26757,2
+S2b_merged,locality_age,"UK|senni|51.9,-3.6|410.62|413.02",410.62,413.02,multiple,pbdb:238752,1
+S2b_merged,locality_age,"UK|st. maughans|52.0,-2.0|413.02|419.62",413.02,419.62,Avalonia,pbdb:10679,1
+S2b_merged,locality_age,"UK|strathmore|55.0,-4.0|393.47|410.62",393.47,410.62,Laurentia,pbdb:10719,1
+S2b_merged,locality_age,"UK|strathmore|56.2,-4.2|393.47|410.62",393.47,410.62,Laurentia,pbdb:11513,1
+S2b_merged,locality_age,"UK||52.0,-2.0|393.47|419.62",393.47,419.62,Avalonia,pbdb:25242,1
+S2b_merged,locality_age,"US|beartooth butte|44.9,-108.1|393.47|410.62",393.47,410.62,Laurentia,pbdb:29294,1
+S2b_merged,locality_age,"US|beartooth butte|45.0,-109.6|393.47|410.62",393.47,410.62,Laurentia,pbdb:26176;pbdb:29292;pbdb:31000,3
+S2b_merged,locality_age,"US|helderberg|40.9,-77.8|393.47|419.62",393.47,419.62,Laurentia,pbdb:28768,1
+S2b_merged,locality_age,"US|trout valley|46.1,-68.6|387.95|399.5",387.95,399.5,Laurentia,pbdb:10614;pbdb:10617,2
+S2b_merged,region_stage,Avalonia|midpoint-stage:410.62,399.5,419.62,Avalonia,pbdb:23200;pbdb:23202;pbdb:25242;pbdb:34965,4
+S2b_merged,region_stage,Avalonia|midpoint-stage:413.02,410.62,413.02,Avalonia,pbdb:22860;pbdb:23197,2
+S2b_merged,region_stage,Avalonia|midpoint-stage:419.62,413.02,419.62,Avalonia,pbdb:10679;pbdb:11722,2
+S2b_merged,region_stage,Baltica|midpoint-stage:410.62,393.47,419.62,Baltica,pbdb:21190;pbdb:21194;pbdb:21195;pbdb:232956,4
+S2b_merged,region_stage,Baltica|midpoint-stage:422.7,419.62,422.7,Baltica,pbdb:13873;pbdb:52702,2
+S2b_merged,region_stage,Gondwana-Australia-Antarctica|midpoint-stage:410.62,393.47,426.7,Gondwana-Australia-Antarctica,tail:M-ghin-ghin;tail:M-limestone-road,2
+S2b_merged,region_stage,Gondwana-North-Africa-Arabia|midpoint-stage:410.62,393.47,419.62,Gondwana-North-Africa-Arabia,pbdb:26661,1
+S2b_merged,region_stage,Kazakhstania|midpoint-stage:410.62,393.47,413.02,Kazakhstania,pbdb:32851,1
+S2b_merged,region_stage,Kazakhstania|midpoint-stage:422.7,419.62,422.7,Kazakhstania,pbdb:278439,1
+S2b_merged,region_stage,Laurentia|midpoint-stage:410.62,393.47,419.62,Laurentia,pbdb:10614;pbdb:10617;pbdb:10625;pbdb:10719;pbdb:11513;pbdb:23007;pbdb:23967;pbdb:24146;pbdb:26026;pbdb:26176;pbdb:26424;pbdb:26438;pbdb:26439;pbdb:26525;pbdb:26526;pbdb:26529;pbdb:26536;pbdb:26547;pbdb:26650;pbdb:26656;pbdb:26660;pbdb:26785;pbdb:28768;pbdb:28921;pbdb:28924;pbdb:28950;pbdb:28968;pbdb:28969;pbdb:28971;pbdb:28996;pbdb:28997;pbdb:28998;pbdb:29001;pbdb:29002;pbdb:29003;pbdb:29020;pbdb:29021;pbdb:29026;pbdb:29029;pbdb:29292;pbdb:29294;pbdb:29334;pbdb:30997;pbdb:30998;pbdb:30999;pbdb:31000;pbdb:31002;pbdb:31003;pbdb:31004;pbdb:31005;pbdb:31007;pbdb:31010;pbdb:31011;pbdb:31023;pbdb:31027;pbdb:31212;pbdb:31213;pbdb:31214;pbdb:31215;pbdb:31216,60
+S2b_merged,region_stage,Laurentia|midpoint-stage:413.02,410.62,413.02,Laurentia,pbdb:10721;pbdb:11421;pbdb:11425,3
+S2b_merged,region_stage,Laurentia|midpoint-stage:419.62,413.02,419.62,Laurentia,pbdb:10705;pbdb:26755;pbdb:26757;tail:M-svalbard,4
+S2b_merged,region_stage,Laurentia|midpoint-stage:422.7,419.62,425.0,Laurentia,tail:M-bathurst-us384;tail:M-bathurst-us385,2
+S2b_merged,region_stage,South-China|midpoint-stage:410.62,393.47,410.62,South-China,pbdb:10941,1
+S2b_merged,region_stage,South-China|midpoint-stage:413.02,410.62,413.02,South-China,pbdb:10891;pbdb:10896,2
+S2b_merged,region_stage,multiple|midpoint-stage:410.62,399.5,419.62,multiple,pbdb:238400;pbdb:23962;pbdb:26904;pbdb:27049;pbdb:27129;pbdb:35709;pbdb:35721;pbdb:60395,8
+S2b_merged,region_stage,multiple|midpoint-stage:413.02,410.62,413.02,multiple,pbdb:232143;pbdb:238752,2
+S2b_merged,region_stage,peri-Gondwana-Europe|midpoint-stage:410.62,393.47,419.62,peri-Gondwana-Europe,pbdb:28038;pbdb:28207,2
+S2b_coord,locality_age,"AU|yea|-37.2,145.3|393.47|426.7",393.47,426.7,Gondwana-Australia-Antarctica,tail:M-ghin-ghin,1
+S2b_coord,locality_age,"AU|yea|-37.2,145.4|393.47|426.7",393.47,426.7,Gondwana-Australia-Antarctica,tail:M-limestone-road,1
+S2b_coord,locality_age,"BE|bois d'ausse sandstone|50.5,5.7|413.02|419.62",413.02,419.62,Avalonia,pbdb:11722,1
+S2b_coord,locality_age,"BE|burnotien|50.6,4.1|399.5|413.02",399.5,413.02,Avalonia,pbdb:23200;pbdb:23202,2
+S2b_coord,locality_age,"BE|grès de wiheries|50.4,3.8|410.62|413.02",410.62,413.02,Avalonia,pbdb:22860;pbdb:23197,2
+S2b_coord,locality_age,"BE|grès du bois d'ausse|50.6,6.0|393.47|419.62",393.47,419.62,Avalonia,pbdb:34965,1
+S2b_coord,locality_age,"BY||53.2,30.8|393.47|399.5",393.47,399.5,Baltica,pbdb:232956,1
+S2b_coord,locality_age,"CA|bathurst island|75.8,-98.4|410.62|413.02",410.62,413.02,Laurentia,pbdb:11421;pbdb:11425,2
+S2b_coord,locality_age,"CA|bathurst island|75.8,-98.6|419.62|425.0",419.62,425.0,Laurentia,tail:M-bathurst-us384;tail:M-bathurst-us385,2
+S2b_coord,locality_age,"CA|bathurst island|76.9,-99.4|393.47|419.62",393.47,419.62,Laurentia,pbdb:23967,1
+S2b_coord,locality_age,"CA|battery point|48.6,-64.3|393.47|410.62",393.47,410.62,Laurentia,pbdb:29001;pbdb:31004,2
+S2b_coord,locality_age,"CA|battery point|48.8,-64.3|393.47|410.62",393.47,410.62,Laurentia,pbdb:26026;pbdb:26547;pbdb:28924;pbdb:28997;pbdb:29002;pbdb:29003;pbdb:29026;pbdb:31023;pbdb:31212,9
+S2b_coord,locality_age,"CA|battery point|48.8,-64.4|393.47|410.62",393.47,410.62,Laurentia,pbdb:28968;pbdb:28971;pbdb:31002;pbdb:31003;pbdb:31213;pbdb:31215,6
+S2b_coord,locality_age,"CA|battery point|48.8,-64.4|393.47|419.62",393.47,419.62,Laurentia,pbdb:21266,1
+S2b_coord,locality_age,"CA|battery point|48.8,-64.5|393.47|410.62",393.47,410.62,Laurentia,pbdb:28950;pbdb:28969;pbdb:28996;pbdb:28998;pbdb:29029;pbdb:31007;pbdb:31010;pbdb:31011;pbdb:31027,9
+S2b_coord,locality_age,"CA|battery point|48.8,-64.5|393.47|419.62",393.47,419.62,Laurentia,pbdb:20841,1
+S2b_coord,locality_age,"CA|battery point|48.9,-64.4|393.47|410.62",393.47,410.62,Laurentia,pbdb:31214,1
+S2b_coord,locality_age,"CA|bay du nord series|47.8,-58.3|393.47|419.62",393.47,419.62,Laurentia,pbdb:10625,1
+S2b_coord,locality_age,"CA|campbellton|48.0,-66.0|393.47|419.62",393.47,419.62,Laurentia,pbdb:26439;pbdb:26525;pbdb:26526;pbdb:26529,4
+S2b_coord,locality_age,"CA|campbellton|48.0,-66.4|393.47|419.62",393.47,419.62,Laurentia,pbdb:26438;pbdb:29021;pbdb:29334;pbdb:30997;pbdb:30998;pbdb:30999,6
+S2b_coord,locality_age,"CA|campbellton|48.0,-66.5|393.47|419.62",393.47,419.62,Laurentia,pbdb:23007;pbdb:26650;pbdb:26656;pbdb:26660;pbdb:28921,5
+S2b_coord,locality_age,"CA|la garde|48.0,-66.5|393.47|419.62",393.47,419.62,Laurentia,pbdb:26424,1
+S2b_coord,locality_age,"CA|la garde|48.0,-66.7|393.47|419.62",393.47,419.62,Laurentia,pbdb:26536,1
+S2b_coord,locality_age,"CA|york river|48.6,-64.3|393.47|410.62",393.47,410.62,Laurentia,pbdb:31216,1
+S2b_coord,locality_age,"CA|york river|48.8,-64.4|393.47|410.62",393.47,410.62,Laurentia,pbdb:29020;pbdb:31005,2
+S2b_coord,locality_age,"CA||48.1,-66.8|393.47|419.62",393.47,419.62,Laurentia,pbdb:24146,1
+S2b_coord,locality_age,"CN|posongchong|23.3,104.2|410.62|413.02",410.62,413.02,South-China,pbdb:10891,1
+S2b_coord,locality_age,"CN|posongchong|23.3,104.3|410.62|413.02",410.62,413.02,South-China,pbdb:10896,1
+S2b_coord,locality_age,"CN|xiemisitai|46.8,85.6|419.62|422.7",419.62,422.7,Kazakhstania,pbdb:278439,1
+S2b_coord,locality_age,"CN|xujiachong (also called longhuashan)|26.0,104.0|393.47|410.62",393.47,410.62,South-China,pbdb:10941,1
+S2b_coord,locality_age,"DE|hunsrück slate|49.8,7.4|399.5|410.62",399.5,410.62,multiple,pbdb:26904,1
+S2b_coord,locality_age,"DE|wahnbach|50.9,7.3|410.62|413.02",410.62,413.02,multiple,pbdb:232143,1
+S2b_coord,locality_age,"DE||50.2,7.4|399.5|410.62",399.5,410.62,multiple,pbdb:27049;pbdb:27129,2
+S2b_coord,locality_age,"FR||50.3,2.4|393.47|419.62",393.47,419.62,peri-Gondwana-Europe,pbdb:28207,1
+S2b_coord,locality_age,"FR||50.5,2.2|393.47|419.62",393.47,419.62,peri-Gondwana-Europe,pbdb:28038,1
+S2b_coord,locality_age,"KZ|aigyrzhal'skaya suite|47.0,79.0|393.47|413.02",393.47,413.02,Kazakhstania,pbdb:32851,1
+S2b_coord,locality_age,"MA||30.0,-8.0|393.47|419.62",393.47,419.62,Gondwana-North-Africa-Arabia,pbdb:26661,1
+S2b_coord,locality_age,"NO|frankelryggen|78.0,20.0|413.02|419.62",413.02,419.62,Laurentia,tail:M-svalbard,1
+S2b_coord,locality_age,"NO|lerbekk|62.6,11.3|393.47|419.62",393.47,419.62,Baltica,pbdb:21190;pbdb:21194;pbdb:21195,3
+S2b_coord,locality_age,"PL||49.8,19.4|393.47|419.62",393.47,419.62,multiple,pbdb:23962,1
+S2b_coord,locality_age,"RU|pridorozhnaya|54.5,89.9|399.5|410.62",399.5,410.62,multiple,pbdb:238400,1
+S2b_coord,locality_age,"RU|salairka horizon|54.3,85.9|399.5|410.62",399.5,410.62,multiple,pbdb:35709,1
+S2b_coord,locality_age,"RU|shanda horizon|54.3,85.9|387.95|399.5",387.95,399.5,multiple,pbdb:35721,1
+S2b_coord,locality_age,"RU||56.0,92.9|393.47|419.62",393.47,419.62,multiple,pbdb:60395,1
+S2b_coord,locality_age,"UA|rashkovskie beds|48.5,26.3|419.62|422.7",419.62,422.7,Baltica,pbdb:52702,1
+S2b_coord,locality_age,"UA|skala|49.6,23.9|419.62|422.7",419.62,422.7,Baltica,pbdb:13873,1
+S2b_coord,locality_age,"UK|dryden flags|57.3,-2.8|410.62|413.02",410.62,413.02,Laurentia,pbdb:10721,1
+S2b_coord,locality_age,"UK|dundee flagstone|56.0,-2.0|413.02|419.62",413.02,419.62,Laurentia,pbdb:10705,1
+S2b_coord,locality_age,"UK|dundee|56.0,-4.0|393.47|419.62",393.47,419.62,Laurentia,pbdb:26785,1
+S2b_coord,locality_age,"UK|dundee|56.7,-2.8|413.02|419.62",413.02,419.62,Laurentia,pbdb:26755;pbdb:26757,2
+S2b_coord,locality_age,"UK|senni|51.9,-3.6|410.62|413.02",410.62,413.02,multiple,pbdb:238752,1
+S2b_coord,locality_age,"UK|st. maughans|52.0,-2.0|413.02|419.62",413.02,419.62,Avalonia,pbdb:10679,1
+S2b_coord,locality_age,"UK|strathmore|55.0,-4.0|393.47|410.62",393.47,410.62,Laurentia,pbdb:10719,1
+S2b_coord,locality_age,"UK|strathmore|56.2,-4.2|393.47|410.62",393.47,410.62,Laurentia,pbdb:11513,1
+S2b_coord,locality_age,"UK||52.0,-2.0|393.47|419.62",393.47,419.62,Avalonia,pbdb:25242,1
+S2b_coord,locality_age,"US|beartooth butte|44.9,-108.1|393.47|410.62",393.47,410.62,Laurentia,pbdb:29294,1
+S2b_coord,locality_age,"US|beartooth butte|44.9,-108.1|393.47|419.62",393.47,419.62,Laurentia,pbdb:26179,1
+S2b_coord,locality_age,"US|beartooth butte|45.0,-109.6|393.47|410.62",393.47,410.62,Laurentia,pbdb:26176;pbdb:29292;pbdb:31000,3
+S2b_coord,locality_age,"US|helderberg|40.9,-77.8|393.47|419.62",393.47,419.62,Laurentia,pbdb:28768,1
+S2b_coord,locality_age,"US|trout valley|46.1,-68.6|387.95|399.5",387.95,399.5,Laurentia,pbdb:10614;pbdb:10617,2
+S2b_coord,region_stage,Avalonia|midpoint-stage:410.62,399.5,419.62,Avalonia,pbdb:23200;pbdb:23202;pbdb:25242;pbdb:34965,4
+S2b_coord,region_stage,Avalonia|midpoint-stage:413.02,410.62,413.02,Avalonia,pbdb:22860;pbdb:23197,2
+S2b_coord,region_stage,Avalonia|midpoint-stage:419.62,413.02,419.62,Avalonia,pbdb:10679;pbdb:11722,2
+S2b_coord,region_stage,Baltica|midpoint-stage:410.62,393.47,419.62,Baltica,pbdb:21190;pbdb:21194;pbdb:21195;pbdb:232956,4
+S2b_coord,region_stage,Baltica|midpoint-stage:422.7,419.62,422.7,Baltica,pbdb:13873;pbdb:52702,2
+S2b_coord,region_stage,Gondwana-Australia-Antarctica|midpoint-stage:410.62,393.47,426.7,Gondwana-Australia-Antarctica,tail:M-ghin-ghin;tail:M-limestone-road,2
+S2b_coord,region_stage,Gondwana-North-Africa-Arabia|midpoint-stage:410.62,393.47,419.62,Gondwana-North-Africa-Arabia,pbdb:26661,1
+S2b_coord,region_stage,Kazakhstania|midpoint-stage:410.62,393.47,413.02,Kazakhstania,pbdb:32851,1
+S2b_coord,region_stage,Kazakhstania|midpoint-stage:422.7,419.62,422.7,Kazakhstania,pbdb:278439,1
+S2b_coord,region_stage,Laurentia|midpoint-stage:410.62,393.47,419.62,Laurentia,pbdb:10614;pbdb:10617;pbdb:10625;pbdb:10719;pbdb:11513;pbdb:20841;pbdb:21266;pbdb:23007;pbdb:23967;pbdb:24146;pbdb:26026;pbdb:26176;pbdb:26179;pbdb:26424;pbdb:26438;pbdb:26439;pbdb:26525;pbdb:26526;pbdb:26529;pbdb:26536;pbdb:26547;pbdb:26650;pbdb:26656;pbdb:26660;pbdb:26785;pbdb:28768;pbdb:28921;pbdb:28924;pbdb:28950;pbdb:28968;pbdb:28969;pbdb:28971;pbdb:28996;pbdb:28997;pbdb:28998;pbdb:29001;pbdb:29002;pbdb:29003;pbdb:29020;pbdb:29021;pbdb:29026;pbdb:29029;pbdb:29292;pbdb:29294;pbdb:29334;pbdb:30997;pbdb:30998;pbdb:30999;pbdb:31000;pbdb:31002;pbdb:31003;pbdb:31004;pbdb:31005;pbdb:31007;pbdb:31010;pbdb:31011;pbdb:31023;pbdb:31027;pbdb:31212;pbdb:31213;pbdb:31214;pbdb:31215;pbdb:31216,63
+S2b_coord,region_stage,Laurentia|midpoint-stage:413.02,410.62,413.02,Laurentia,pbdb:10721;pbdb:11421;pbdb:11425,3
+S2b_coord,region_stage,Laurentia|midpoint-stage:419.62,413.02,419.62,Laurentia,pbdb:10705;pbdb:26755;pbdb:26757;tail:M-svalbard,4
+S2b_coord,region_stage,Laurentia|midpoint-stage:422.7,419.62,425.0,Laurentia,tail:M-bathurst-us384;tail:M-bathurst-us385,2
+S2b_coord,region_stage,South-China|midpoint-stage:410.62,393.47,410.62,South-China,pbdb:10941,1
+S2b_coord,region_stage,South-China|midpoint-stage:413.02,410.62,413.02,South-China,pbdb:10891;pbdb:10896,2
+S2b_coord,region_stage,multiple|midpoint-stage:410.62,399.5,419.62,multiple,pbdb:238400;pbdb:23962;pbdb:26904;pbdb:27049;pbdb:27129;pbdb:35709;pbdb:35721;pbdb:60395,8
+S2b_coord,region_stage,multiple|midpoint-stage:413.02,410.62,413.02,multiple,pbdb:232143;pbdb:238752,2
+S2b_coord,region_stage,peri-Gondwana-Europe|midpoint-stage:410.62,393.47,419.62,peri-Gondwana-Europe,pbdb:28038;pbdb:28207,2

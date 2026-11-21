@@ -1,0 +1,51 @@
+field,region,rows
+,unknown,1
+Antarctica,Gondwana-Australia-Antarctica,4
+Argentina,Gondwana-South-America,19
+Australia,Gondwana-Australia-Antarctica,43
+Belgium,Avalonia,64
+Bolivia,Gondwana-South-America,4
+Brasil,Gondwana-South-America,9
+Brazil,Gondwana-South-America,3
+Canada,Laurentia,70
+Central Kazakhstan,Kazakhstania,3
+Chad,Gondwana-North-Africa-Arabia,2
+Chile,Gondwana-South-America,2
+China,Kazakhstania,21
+China,North-China,7
+China,South-China,169
+China,Tarim,2
+China,multiple,10
+Colombia,Gondwana-South-America,2
+Czech Republic,peri-Gondwana-Europe,8
+Egypt,Gondwana-North-Africa-Arabia,1
+England,Avalonia,2
+Falkland Islands,Gondwana-other,1
+France,peri-Gondwana-Europe,64
+Germany,multiple,69
+India,Gondwana-other,2
+Ireland,Avalonia,12
+Kazakhstan,Kazakhstania,25
+Morocco,Gondwana-North-Africa-Arabia,10
+New York,Laurentia,4
+Niger,Gondwana-North-Africa-Arabia,3
+North Greenland,Laurentia,1
+Northeast Chad,Gondwana-North-Africa-Arabia,2
+Norway,Baltica,11
+Norway,Laurentia,14
+Poland,multiple,8
+Russia,multiple,111
+Russian Federation,multiple,1
+Scotland,Laurentia,13
+South Africa,Gondwana-other,25
+Southern Kazakhstan,Kazakhstania,1
+Spain,peri-Gondwana-Europe,3
+UK,Avalonia,73
+UK,Laurentia,87
+USA,Laurentia,181
+Ukraine,Baltica,13
+Venezuela,Gondwana-South-America,11
+Victoria,Gondwana-Australia-Antarctica,1
+Vietnam,South-China,2
+West Antarctica,Gondwana-Australia-Antarctica,1
+Western Norway,Baltica,3
