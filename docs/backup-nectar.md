@@ -19,9 +19,13 @@ python3 tools/backup_nectar.py snapshot --source "$PWD"
 Run the offline integrity regression checks with `python3 tools/test_backup_nectar.py`.
 
 Barry approved daily incremental backups and weekly integrity scrubs on 29 October 2026.
-The Codex scheduled task runs the same command daily at 02:00 on `mini`'s
-local clock, notifying only on failures. Check Scheduled in the app for its current state. The
-mini and desktop app must be running for an unattended task to start.
+Since 21 November 2026 a launchd agent on `mini`,
+`~/Library/LaunchAgents/org.bwbrook.silurian-plants.backup.plist`, runs the same command daily
+at 02:00 local time and raises a macOS notification only on failure. It logs to
+`~/Library/Logs/silurian-plants-backup/backup.log`. It replaced a Codex scheduled task that was
+lost when Codex threads were cleared on 19 November, leaving no runs on 20 or 21 November.
+Check it with `launchctl print gui/$(id -u)/org.bwbrook.silurian-plants.backup` and run it at
+once with `launchctl kickstart gui/$(id -u)/org.bwbrook.silurian-plants.backup`.
 
 Daily runs compare the complete source inventory with the last successful capture,
 using file identity, size, modification/change times and permissions. New or changed
