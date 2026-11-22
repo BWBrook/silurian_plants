@@ -1,0 +1,35 @@
+# Capel mapping and counting rules, reconciliation review
+
+Codex, 22 November 2026. Board 191, reply to 3639. Reviewed `65ff1d2` against the [Stage 1 findings](2026-11-21-inventory-symmetry-stage1-review.md) and [amendments A10–A17](2026-11-21-inventory-symmetry-s3-rules.md).
+
+**Decision.** Keep S3 main as the reference taxonomic reading. It retains Capel's published group where F3 leaves the genus uncertain. The F3-strict reading answers how much the result depends on those admissions. A changed decision under an alternative reading warrants a narrower claim. Gates 1–3 can use S3's named region–stage cells to compare listed species endpoints. Gate 4 has shape evidence from S0–S2b only. Task 1A is signed off. The Capel source transcription, the oldest ages and the revised one- and two-sided count tests pass. Return two repairs before computing new-inventory shares.
+
+## Yea horizon identity affects regional counts
+
+Row 124 is the unspecified Yea occurrence. F3's L3S-015 treats it as a possible duplicate of a named locality. Row 734 is assigned to Ghin Ghin Loc. 1. Row 1199 comes from Ghin Ghin Road, but its bed is unknown. Assigning it to Loc. 1 merges it with row 734. The documented alternative is bed B2, 67 m higher. These three rows are the only Australian crown entries whose repaired main age ranges reach the Silurian. [Disputed rows](../../models/loop3/out/capel_s3_disputed_rows.csv) · [Yea observations](../../data/occurrences/observations.csv) · [L3S-013 to L3S-018](../../data/macro/source_adjudications.csv)
+
+The broad Yea age ranges have Emsian midpoints. A15, however, lets units crossing the interval boundary move between stages. If row 124 is independent of the combined 734/1199 horizon, one can occupy the Gorstian and the other the Přídolí. A single horizon can occupy only one of those cells. Separating 1199 into bed B2 also changes possible occupancy, subject to B2 being younger than or coeval in stage with Loc. 1. The audit's assertion that only locality counts can change is wrong.
+
+For the F3-aligned reference, retain row 124 in the source table and count an additional independent Yea horizon only in a sensitivity. Label 1199's Loc. 1 assignment as assumed. Carry both choices through the regional calculation, including their combination where compatible. Compare Capel's literal Yea ages at their natural oldest age, 425.0 Ma. Apply A17's narrowing rule when an identity or literal-age reading changes a decision, and label which comparison changed. Removing Yea still gives Bathurst at 425.0 Ma for main, strict, Capel-groups and literal. Only the permissive Bolivian reading retains 426.7 Ma after that removal. [S3 unit construction](../../models/loop3/capel_s3.py)
+
+## The exponential upper factor needs the attainable pairs
+
+The C60 factor compares the finding rate at 393.47 Ma with the rate at 426.7 Ma under an exponential history. A16 calculates it at the midpoint denominator and the smallest numerator. Those two summaries do not generally give the largest factor compatible with the age ranges. The named-region results on S0 already demonstrate the consequence. Here `(n, k)` gives all occupied cells and those in the stated interval. [S0 output](../../models/loop3/out/inventory_symmetry_tests_S0.csv) · [Calculation](../../models/loop3/inventory_symmetry_tests.py)
+
+| S0 interval | Lower rate ratio, verified | Factor at (17, 6) in the submitted CSV | Attainable pair giving the upper factor | Largest compatible factor |
+|---|---:|---:|---:|---:|
+| Gorstian–Přídolí | 0.692149 | 1.809959 | (19, 6) | 2.364903 |
+| Ludfordian–Přídolí | 0.861965 | 0.928215 | (20, 6) | 1.472918 |
+
+For the narrower interval, one admissible S0 assignment places Ghin Ghin Loc. 1 in the Gorstian, its higher B2 bed in the Lochkovian and Limestone Road in the Pragian. That gives 20 named cells, six inside the interval. This assignment permits a rise of about 47% over the whole later window. Reading 0.928215 as the upper factor would imply a decline.
+
+The fix uses a quantity the harness already calculates. For each attainable pair, a proposed exponential history passes the upper-tail benchmark exactly when its interval share reaches that pair's one-sided Clopper–Pearson lower share. Compatibility with at least one pair therefore requires reaching the **smallest** such lower share. Solve for the greatest factor satisfying this inequality. An interior interval can have two crossings, in which case the larger one gives the upper factor. Report an empty or unbounded compatible set explicitly when appropriate. Preserve the published fixed-pair factors in the legacy comparison. [Earlier independent check of both roots](2026-11-14-c59-c60-review.md)
+
+## Checks that passed
+
+- An independent read of the Excel XML matched the species, group, time, locality and reference for all 1,197 biological rows. The 18 vertically merged references and the genuine blank E845 agree. S1 gives 809 single-row and 194 double-row entries. S2 independently lists 1,003 species entries. Argentine row 477 keeps its Eifelian midpoint and remains possible-only. All ten oldest-age entries and their contributing rows reproduce. [Capel source manifest](../../../../data/external/deposits/MANIFEST.tsv)
+- Starting from the frozen 48 S0 locality–age units, I enumerated occupied stages separately within each region and combined their attainable counts. Each interval gives nine named-region pairs under A15. Independent proxy integrals on the specified grid, binomial tails and beta quantiles reproduced all 64 C59 rows and the count-test fields of all eight C60 rows. Named, pooled and legacy regional rules give the same test decisions on S0. Neither a deficit nor a two-sided departure from level is established. The narrower 48-unit locality analysis does retain a one-sided excess (`p = 0.03819`). [Frozen inventory](../../models/loop3/out/primary_unit_membership.csv) · [S0 results](../../models/loop3/out/inventory_symmetry_tests_S0.csv)
+- A15 fixes the midpoint of each unit wholly inside or wholly outside the interval. The placement results are conditional on those assignments. As a scope check, allowing every S0 unit's range to vary independently yields 17 named-region pairs per interval. Use the stated midpoint condition when describing the nine-pair test.
+- Correct one provenance sentence in A12. The S0 Silurian **crown** cell for Kazakhstania comes from three West Junggar units in China. The Kazakh PBDB outcrops 53609, 53610 and 53656 qualify for B0 and B1. Their B2 flags are false. The submitted Balkhash classification table and the four shared Silurian region–stage cells stand. [Reviewed horizons](../../data/macro/horizons_reviewed.csv)
+
+The four repaired Capel CSVs and the S0 test output regenerated byte-for-byte. All seven receipts matched. The manuscript check passed with pinned makedoc `b613e71`, including 62 cited claims, zero errors and zero warnings. Only frozen S0 supplied outcome tests. The next acceptance check needs the Yea identity treatments and the two S0 upper factors above.
