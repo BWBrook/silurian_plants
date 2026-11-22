@@ -127,18 +127,18 @@ All dated 21 November 2026, made after the parse was first run and before any S3
 came from reading the mapping tables or the list of rows reaching above 419.62 Ma, not from a tally. The
 frozen text above is unchanged; these override it where they differ.
 
-- **S3-A1, species counts (§1).** The sheet has 810 one-row species and 194 two-row species, and no
+- **S3-A1, species counts (§1), superseded by S3-A10.** The sheet has 810 one-row species and 194 two-row species, and no
   three-row species. The counts in §1 (809, 195, 1) were relayed and are wrong by one row; the parser
   asserts 810/194.
 - **S3-A2, UK regions (§5).** UK localities naming Shropshire, Hereford, Worcestershire, Gloucestershire,
   Devon, Cornwall or Somerset map to Avalonia, like England and Wales. Found because Brown Clee Hill,
   Targrove and Perton Lane fell to "multiple".
-- **S3-A3, Yea (§4).** The re-ageing applies only to the disputed Yea anchor units. Norton Gully Sandstone
+- **S3-A3, Yea (§4), superseded by S3-A11.** The re-ageing applies only to the disputed Yea anchor units. Norton Gully Sandstone
   (*Taungurungia garrattii*, Late Pragian–Emsian) keeps Capel's age.
 - **S3-A4, locality alias (§5).** "Altholville" and "Atholville" (Campbellton Fm) share one key.
-- **S3-A5, fuzzy sensitivity (§5), proposed for removal.** Five of the six 0.92 merges join distinct sections
+- **S3-A5, fuzzy sensitivity (§5), removed (Codex review, f22b451).** Five of the six 0.92 merges join distinct sections
   or formations, and S3-A4 handles the sixth. Proposal: drop `S3_fuzzy`.
-- **S3-A6, unresolved sensitivity (§3), proposed for removal.** Found in the list of rows reaching above
+- **S3-A6, unresolved sensitivity (§3), removed (Codex review, f22b451).** Found in the list of rows reaching above
   419.62 Ma. Its added rows are mostly *Cooksonia*, including the Sheinwoodian *C. barrandei*, which would
   move A to 432.9 Ma and make the set a branched-plant inventory. Proposal: drop `S3_plus_unresolved` from
   the crown runs.
@@ -146,11 +146,11 @@ frozen text above is unchanged; these override it where they differ.
   *Aberlemnia* cf. *caledonica* (Lipeon Fm, Bolivia) and *Aberlemnia* ? sp. (Van Canh Fm), both in Capel's
   Basal eutracheophytes. `S3_capel_groups` applies Capel's groups alone, with no F3 override; it is
   reported beside S3 main.
-- **S3-A8, oldest age and Task 6 on S3 (§7).** S3 main's oldest non-Yea crown row is Lipeon Fm (Ludlow,
+- **S3-A8, oldest age and Task 6 on S3 (§7), superseded by S3-A13.** S3 main's oldest non-Yea crown row is Lipeon Fm (Ludlow,
   426.7–422.7 Ma), so excluding Yea leaves A at 426.7 Ma. Task 6 on S3 is run twice: Yea excluded with A
   from the data (426.7 Ma), and Yea and Lipeon both excluded so that A = 425.0 Ma (Bathurst Island Fm), the
   hinge the specification intends.
-- **S3-A9, gates (§1).** Without S3 locality–age or shape tests, the specification's gates are restated for
+- **S3-A9, gates (§1), superseded by S3-A17.** Without S3 locality–age or shape tests, the specification's gates are restated for
   S3. Every other condition stands as written.
   - Gate 1 (rock, rock × spore share): holds if p < 0.05 on S1 and S2b at both grains and on S3
     region–stage, at A = 426.7 and 425.0 Ma; withdrawn if p ≥ 0.05 on S2b at both grains and on S3
@@ -162,3 +162,156 @@ frozen text above is unchanged; these override it where they differ.
     fire. A failure on S2b alone counts as "narrower, inventory-dependent".
   - Any other outcome counts as "narrower, inventory-dependent" (Fable's amendment 5). Each gate is
     reported for S3 main and `S3_capel_groups`.
+
+### Second set of amendments, after Codex's Stage 1 review
+
+Dated 22 November 2026, made in response to Codex's review
+([2026-11-21-inventory-symmetry-stage1-review.md](2026-11-21-inventory-symmetry-stage1-review.md), f22b451)
+and before any Devonian tally, share or test on S1, S2a, S2b or S3. The only S3 counts are the
+Silurian-only units and cells of the crosswalk and the oldest age of each reading. The only test outputs
+are on S0, the frozen published inventory, to show that the code reproduces it. They override the text and the amendments above
+where they differ. The row-level check of every disputed case is
+[capel_s3_disputed_rows.csv](../../models/loop3/out/capel_s3_disputed_rows.csv).
+
+- **S3-A10, worksheet boundaries (supersedes A1).** Observations occupy rows 4–1200. Row 1201 is a merged
+  footnote explaining "Post-Tournaisian", which the first parse read as a species and assigned to
+  Filicopsida. The sheet therefore has 1,197 biological rows in 1,003 species entries: 809 entries with one
+  row, 194 with two, none with three. Every row has a time and a locality. The 809 in the relayed count was
+  right; its 195 and 1 were not. The 18 vertically merged reference cells (for example E9:E10) now give their
+  reference to every row they span; E845 is blank in the source and stays blank. The parser asserts 1,197
+  rows and 809/194.
+- **S3-A11, Yea by named horizon (supersedes A3 and the Yea rule of §4).** Every Capel row naming Yea, Ghin
+  Ghin or Limestone Road (except Norton Gully) maps to an F3 horizon in
+  [observations.csv](../../data/occurrences/observations.csv). It takes that horizon's main-reading envelope
+  from [interpretations.csv](../../data/occurrences/interpretations.csv), and the horizon becomes its
+  locality key, so rows from one horizon form one unit. Capel's literal ages stay in `literal_max_ma` and
+  `literal_min_ma`, and the `yea_literal` variant uses them.
+
+  | Row | Taxon (crown?) | Capel age | Horizon | Envelope | Basis |
+  |---|---|---|---|---|---|
+  | 124 | *Baragwanathia longifolia* (B2) | Ludfordian | M-yea-unspecified | Gorstian–Emsian | Garratt & Rickards 1984 is F3's source for the unspecified Yea record (L3S-015) |
+  | 734 | *Parazosterophyllum timsiae* (B2) | Přídolí–Pragian | M-ghin-ghin (Loc. 1) | Gorstian–Emsian | M-ghin-ghin lists the species and McSweeney et al. 2020 |
+  | 1199 | cf. *Zosterophyllum* sp. B (B2) | Pragian–Emsian | M-ghin-ghin (Loc. 1) | Gorstian–Emsian | Bed not stated; F3 attaches McSweeney et al. 2022 to Loc. 1 |
+  | 904 | *Salopella caespitosa* (not B2) | Ludlow | Ghin Ghin Road, bed unidentified | Gorstian–Emsian | Loc. 1 or B2 |
+  | 906, 1146 | *Salopella laidae*, *Yarravia oblonga* (not B2) | Pragian; Ludlow | M-limestone-road (Loc. 4) | Gorstian–Emsian | Loc. 4 named |
+
+  Where the bed is uncertain (row 1199), the alternative is B2, 67 m higher (Přídolí–Emsian, L3S-014). It
+  would add one locality–age unit to Yea-inclusive runs. It leaves region–stage cells unchanged, because
+  both envelopes have Emsian midpoints (410.1 and 408.1 Ma) in Gondwana-Australia-Antarctica. Task 6 excludes rows 124, 734 and
+  1199 before aggregation. Row 124 stays its own unit. F3 counts no unspecified Yea record (L3S-015), and the
+  difference affects only Yea-inclusive locality counts.
+- **S3-A12, material readings and F3 classifications (extends §3).**
+  - **The Bolivian *Aberlemnia*.** In S3 main, row 6 (*Aberlemnia* cf. *caledonica*, Lipeon Fm, Jarcas,
+    Negra Muerta; Capel: basal eutracheophytes) follows F3's reading of its Negra Muerta cf. *caledonica*
+    (`tail:M-bolivia-caledonica`): B1 in the main reading, B2 in the inclusive one. The formation,
+    reference and specimen identity differ or are open, so this follows F3's material reading rather than
+    asserting the same specimen. `S3_permissive` applies the genus rule alone and counts row 6 as B2.
+  - **Labels.** `f3_crown` now separates unanimous `uncertain` from `mixed`. No window row is mixed.
+  - **Departures from F3.** Twelve window rows enter S3 main through Capel's group where F3 reads the genus as
+    uncertain. Only one is Silurian: *Jugumella burubaensis* (row 530, Balkhash, Přídolí). The other eleven
+    are Devonian: *Enigmophyton* (371); *Huia* (512–514); *Jugumella* (531–533); *Krithodeophyton* (561, 562);
+    *Loganophyton* (629); and *Nothia* (708). A new variant, `S3_f3_strict`, drops these rows.
+  - **How each reading admits Balkhash** (Tokrau Horizon, Kokbaital Mountains).
+
+    | Row | Taxon | F3 | Capel | Main | F3-strict | Permissive | Capel groups |
+    |---|---|---|---|---|---|---|---|
+    | 128 | *Baragwanathia*? sp. | yes, genus | Lycopsida | B2 | B2 | B2 | B2 |
+    | 530 | *Jugumella burubaensis* | uncertain (N109) | Zosterophyllopsida | B2 | dropped | B2 | B2 |
+
+    The locality enters every reading through row 128. F3 keeps the queried record in its regional reading
+    (`I-kazakh-lycophytes-tentative`). S0 counts Kazakhstan through PBDB outcrops, not the regional
+    assemblage (L3S-033). Rows 128 and 530 both map to 422.7–419.62 Ma at the same locality key, so they
+    form one unit. Row 530 adds no locality–age unit and no cell in any reading.
+- **S3-A13, oldest age per variant (supersedes A8).** A is derived from the data after each run's exclusions.
+
+  | Variant | Yea included | Yea excluded |
+  |---|---|---|
+  | main | 426.7 Ma | 425.0 Ma |
+  | f3_strict | 426.7 Ma | 425.0 Ma |
+  | capel_groups | 426.7 Ma | 425.0 Ma |
+  | permissive | 426.7 Ma | 426.7 Ma |
+  | yea_literal | 425.0 Ma | 425.0 Ma |
+
+  - The Yea-excluded age of 425.0 Ma comes from Bathurst Island Fm, Ludfordian (rows 149, 338, 662, 1184,
+    1192, 1193). In permissive, row 6 holds 426.7 Ma.
+  - With Capel's literal Yea ages, row 124 is Ludfordian (425.0–422.7 Ma) and row 734 is Přídolí–Pragian.
+    So `yea_literal` has A = 425.0 Ma even with Yea included.
+  - Task 6 therefore runs on main, f3_strict and capel_groups at 425.0 Ma with no forcing.
+  - The permissive run at 425.0 Ma is labelled "forced: rows 124, 734, 1199 and 6 removed". Its unforced
+    426.7 Ma run is reported beside it.
+- **S3-A14, midpoints outside the F3 domain.** Region–stage midpoints below 393.47 Ma take their stage from the
+  full ICS table ([timescale.csv](../../../../data/timescale.csv)); inside the domain `stage_bounds` is
+  unchanged. Row 477 (*Haplostigma baldisii*, Argentina, 410.62–372.15 Ma, midpoint Eifelian) keeps both
+  endpoints. It straddles the young cutoff, so it is possible-only and outside guaranteed n. Every parse runs
+  all five retained variants (main, f3_strict, permissive, capel_groups, yea_literal) at both grains.
+- **S3-A15, counting rules, for all inventories (S0 to S3).**
+  - **n.** n is conditioned on the guaranteed whole-window inventory: units with `min_ma >= 393.47` and
+    `max_ma <= A`.
+  - **locality_age.** n is fixed. k runs from units wholly in the interval (k_min) to units reaching into
+    it (k_max).
+  - **region_stage** (cells). A cell is region × stage of a guaranteed locality–age unit, and the same cells
+    form the numerator and the denominator.
+    - A unit wholly inside or wholly outside the interval takes its midpoint stage.
+    - A unit that reaches into the interval without lying wholly inside it is placed, in turn, in every
+      stage its range allows. Moving such a unit can create or remove cells, so n and k change together.
+    - Every admissible (n, k) pair is kept. The reported n is the midpoint placement.
+    - Multi-stage units wholly outside the interval keep their midpoint cell. This is the inherited
+      midpoint convention, and it fixes n apart from the straddlers.
+  - **region_stage_named.** As region_stage, omitting the pooled codes `multiple` and `unknown` from both
+    numerator and denominator and from regional breadth. This is the decisive regional rule.
+    region_stage (pooled) is reported beside it. Any decision that changes with pooling is reported.
+  - **region_stage_legacy.** `switch_reading.py`'s pair (n from region–stage units; k as distinct (region,
+    min, max) among late locality–age units). It is kept only to reproduce the committed S0 values.
+  - **Check on S0.** The harness reproduces every committed value, including the 48-unit C48 values. Under
+    the new rules, S0 gives:
+
+    | Interval | Rule | n | k | Lower 95% rate ratio | Committed ratio |
+    |---|---|---|---|---|---|
+    | Gorstian–Přídolí | locality–age | 48 | 13–16 | 0.790 | 0.790 |
+    | Gorstian–Přídolí | cells, pooled | 19–22 | 6–9 | 0.622 | 0.692 (legacy) |
+    | Gorstian–Přídolí | cells, named | 17–20 | 6–9 | 0.692 | 0.692 (legacy) |
+    | Ludfordian–Přídolí | locality–age | 48 | 13–16 | 1.039 | 1.039 |
+    | Ludfordian–Přídolí | cells, pooled | 19–22 | 6–8 | 0.778 | 0.911 (legacy) |
+    | Ludfordian–Přídolí | cells, named | 17–20 | 6–8 | 0.862 | 0.911 (legacy) |
+
+    - No deficit and no two-sided departure from level is established on S0.
+    - Pooling against named changes no test outcome on S0, and neither does legacy against named.
+- **S3-A16, tail rules.**
+  - **Directions.** Every test is evaluated at each admissible (n, k), and its p is the largest over them.
+    An excess (upper tail; C59 placement and the C60 level upper tail) or a deficit (lower tail) is
+    established only if every admissible pair rejects. At locality–age this is the upper tail at k_min and
+    the lower tail at k_max.
+  - **Two-sided.** The two-sided p is twice the smaller one-sided tail. A two-sided rejection needs
+    rejection at every admissible pair. A set is "compatible with level" when some pair is not rejected.
+  - **Lower share.** The Clopper–Pearson lower share is the smallest over the admissible pairs, which is at
+    k_min at locality–age.
+  - **Change factor.** The largest change factor is reported at the reported n and k_min, as in
+    `switch_reading.py`. For an interval short of A the share is not monotone in the factor, so no range
+    over placements is defined.
+  - **Reported for every set.** Per proxy, the expected count and the smallest count an upper-tail test at
+    0.05 rejects. Under level, the largest count a lower-tail test at 0.05 rejects. Both are at the
+    reported n. And whether an excess, a deficit or a two-sided departure is established.
+  - **The specification's gates read accordingly.** "P(X ≤ k_obs | level)" is the largest lower tail over
+    the admissible pairs. "P(X ≥ k_min)" is the largest upper tail. "Two-sided p_level ≥ 0.05" means
+    compatible with level as defined here.
+  - **Preliminary numbers.** Any earlier deficit figure is reported only with its age assignment until rerun
+    under this rule.
+- **S3-A17, gates on S3 (supersedes A9).**
+  - **What S3 can carry.** S3 lists species endpoints, so S3 enters gates 1–3 only at region_stage_named,
+    as a comparison of listed endpoint cells. Its binomial tails are described as such. They have no
+    demonstrated calibration as a fossil-finding rate. S3 locality–age counts and endpoint arithmetic (Task
+    4) are descriptive.
+  - **Which reading decides.** S3 main is the deciding reading. f3_strict, permissive and capel_groups are
+    reported beside it. A gate outcome that changes under any of them counts as "narrower,
+    inventory-dependent".
+  - **Gate 1** (rock, rock × spore share) holds if p < 0.05 on S1 and S2b at locality_age and
+    region_stage_named, and on S3 region_stage_named, at A = 426.7 and 425.0 Ma. It is withdrawn if p ≥ 0.05
+    on S2b at both grains and on S3 region_stage_named.
+  - **Gate 2** (spore share alone) holds on the same conditions. It is withdrawn if p ≥ 0.05 on S2b
+    locality_age and on S3 region_stage_named.
+  - **Gate 3** (C60) uses S3 region_stage_named, with the tail rules of S3-A16.
+  - **Gate 4** (C27, C49). S3 evidence is unavailable: S3 carries no shape test. S0, S1, S2a and S2b are
+    judged on their own stated inventories. Withdrawal needs S2b and S3 to agree, so it cannot fire. A
+    failure on S2b alone counts as "narrower, inventory-dependent".
+  - **Any other outcome** counts as "narrower, inventory-dependent" (Fable's amendment 5).
+  - **Labelling.** Each gate result names the S3 reading and counting rule it used.

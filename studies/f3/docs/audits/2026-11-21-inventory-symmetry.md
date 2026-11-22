@@ -4,25 +4,34 @@ Claude (Opus 5.5), from 21 November 2026. Specification and Fable's amendments:
 `2026-11-21-inventory-symmetry-spec.md`. Frozen S3 rules: `2026-11-21-inventory-symmetry-s3-rules.md`
 (committed `7b6e3ae` before any S3 parse). Board discussion 191.
 
-**Stage 1 status (this record): Tasks 1A and 1B are done. No share or test has been computed on S1, S2a, S2b
-or S3: Fable's order puts the S3 sign-off before any share, and this record reads that strictly. Only the
-Tasks 3–4 harness for C59, C60 and C27/C48 exists, and it has run on S0 alone to prove it reproduces the
-committed values. Task 4.2, Task 5 and Task 6 are not built yet. The S3 mapping awaits Codex's sign-off.** No text, figure, ledger, estimand or frozen output was changed.
+**Stage 1 status (this record), 22 November 2026.**
+- Codex signed off Task 1A (`f22b451`) and returned the S3 mapping for four repairs.
+- The repairs, the counting rules and the tail rules are now amendments S3-A10 to S3-A17 in the rules file,
+  and they await Codex's sign-off.
+- No share or test has been computed on S1, S2a, S2b or S3.
+- The Tasks 3–4 harness implements the new counting and tail rules. It has run on S0 alone, where it
+  reproduces the committed values.
+- Task 4.2, Task 5 and Task 6 are not built yet.
+
+No text, figure, ledger, estimand or frozen output was changed.
 
 ## Code and outputs
 
 | File | Role |
 |---|---|
 | `studies/f3/models/loop3/inventory_symmetry.py` | Task 1A: disposition table; builds S0, S1, S2a, S2b and variants from `horizons_reviewed.csv` without changing it |
-| `studies/f3/models/loop3/capel_s3.py` | Task 1B: S3 parse under the frozen rules; mapping tables; no counts |
-| `studies/f3/models/loop3/inventory_symmetry_tests.py` | Tasks 3–4 harness (C59 placement, C60, C27/C48 arithmetic) |
+| `studies/f3/models/loop3/capel_s3.py` | Task 1B: S3 parse under the frozen rules and S3-A10 to S3-A14; mapping tables; row-level check of disputed cases; no counts |
+| `studies/f3/models/loop3/inventory_symmetry_tests.py` | Tasks 3–4 harness (C59 placement, C60, C27/C48 arithmetic) under the counting and tail rules S3-A15 and S3-A16 |
 | `out/inventory_symmetry_dispositions.csv` | SHA-256 `2885c100e3a2ef3b81f2da958e2fad89ce6410d38abc65cd0590886b71ed311e` |
 | `out/inventory_symmetry_units.csv` | `ad76a374292b309fb1a4b28afbbb70159a55a32ec342fe721f65c1a09db6ba29` |
-| `out/capel_s3_rows.csv` | `aa0cc0216efed9cda81e52427ebdb8788f13cb437a78a217263c1b7868c43e44` |
-| `out/capel_s3_age_map.csv` | `9c5bc82f9851492137dc1848e03563656ecadb328169d207840117ca2f0a9e1f` |
-| `out/capel_s3_region_map.csv` | `ba49e1650304b98395c670e8e3797e2102b0f9b07adc04c3dbf2a1823171787d` |
-| `out/capel_s3_fuzzy_merges.csv` | `48b30d8e474b0eab9ef028d3ebe388ddd309aebcca4ea632f1e8ceecce792736` |
-| `out/inventory_symmetry_tests_S0.csv` | `850e32b4a90ce302bda469433e4b87dea3d9bf35b4614d239fcb6d13e5c668dd` |
+| `out/capel_s3_rows.csv` | `70b2a0c4f15ebdf620059040708bbb74fe8d66f5ab68933f21ef54517bf7be5a` |
+| `out/capel_s3_disputed_rows.csv` | `745314a04b33a0e6dc6a63dd846d478f31c5b734af3a23ffbed3bec00572d63b` |
+| `out/capel_s3_age_map.csv` | `500942d9f3bbc8528761353ac0f6b73aaad06e15191b9912b46b7ab967e66ca0` |
+| `out/capel_s3_region_map.csv` | `90239102179339db18b4f7581c3da7bd3b55e99770565d005a9186cc71a73f76` |
+| `out/inventory_symmetry_tests_S0.csv` | `a252c1ab1955ef0ff2a867395b79161d3f6eead50969bd726dc863bbd3f1eec4` |
+
+`capel_s3_fuzzy_merges.csv` was removed with the fuzzy variant (S3-A5); its last version is at `34a36ad`. The
+stage-1 hashes of the other files are in this record at `34a36ad`.
 
 `capel_s3_rows.csv` reproduces Capel, Monnet and Cascales-Miñana (2025) Table S1 rows with derived columns,
 under its CC BY 4.0 licence (Figshare `10.6084/m9.figshare.30281263.v1`).
@@ -94,10 +103,17 @@ Gemini's 69 (S1), 38 (S2a) and 59 (S2b). Silurian counts and shares are held for
 
 ## Task 1B: S3 parse
 
-The frozen rules held for crown assignment, ages and regions, with no conflict between F3's genus
-classification and Capel's group (328 rows assigned by F3 genus, the rest by group). Crown rows: 999;
-unresolved (Basal eutracheophytes and Incertae sedis without an F3 decision): 123; not crown: 76. Ages:
-401 rows reach into the window, 796 lie outside it and 1 is blank.
+The frozen rules held for crown assignment, ages and regions. F3's genus classification and Capel's group
+never conflict: 328 rows are assigned by F3 genus, one by F3's material reading (S3-A12) and the rest by
+group.
+
+After S3-A10 to S3-A12 the sheet has 1,197 biological rows:
+- crown 997;
+- unresolved 123 (Basal eutracheophytes and Incertae sedis without an F3 decision);
+- not crown 77.
+
+On ages, 401 rows reach into the window and 796 lie outside it. In the first parse, 999/123/76 and the one
+blank age came from the footnote row and from row 6 before its material reading.
 
 ### Amendments made after parsing and before any S3 count (for sign-off)
 
@@ -129,7 +145,48 @@ S3 (Lipeon Fm keeps A at 426.7 Ma once Yea is excluded) and S3-A9 restates the g
   literal ages. The age logic was unchanged. "Tournaisian" stages map to a zero-length interval at 358.86 Ma
   because the timescale file ends there; they lie outside the window.
 
+### Repairs after Codex's review (S3-A10 to S3-A17)
+
+Codex's review ([2026-11-21-inventory-symmetry-stage1-review.md](2026-11-21-inventory-symmetry-stage1-review.md))
+is accepted in full. The repairs:
+
+1. **Worksheet boundaries (S3-A10).** The first parse counted the footnote in row 1201 as a species.
+   Without it there are 1,197 rows in 1,003 entries (809 one-row, 194 two-row). Merged references now fill
+   the rows they span.
+2. **Yea by horizon (S3-A11).** Rows 1199 and 904 (Ghin Ghin Road, no "Yea" in the text) had escaped the
+   Yea rule. Every Yea-area row now maps to a named F3 horizon with that horizon's envelope. Rows 734 and
+   1199 form one Ghin Ghin Loc. 1 unit, and Task 6 removes rows 124, 734 and 1199 before aggregation.
+3. **Material readings and the oldest age (S3-A12, S3-A13).**
+   - Row 6, the Bolivian *Aberlemnia*, follows F3's Negra Muerta reading (B1 in main) in S3 main. With Yea
+     excluded, A is then 425.0 Ma from the data in main, f3_strict and capel_groups.
+   - `S3_permissive` keeps row 6 and 426.7 Ma. Its 425.0 Ma run is labelled as forced, with the rows it
+     removes.
+   - A new `S3_f3_strict` drops the 12 window rows where F3 reads the genus as uncertain and Capel's group
+     admits it. Only one of the 12 is Silurian: *Jugumella*, at Balkhash, which shares row 128's unit.
+   - `yea_literal` has A = 425.0 Ma even with Yea included, because Capel dates row 124 Ludfordian.
+4. **Regional grouping (S3-A14).** Row 477 (Argentina, Eifelian midpoint) no longer raises an error. The
+   disputed-rows file records its midpoint stage, its possible-only status and the variants that admit it.
+   Every variant runs at both grains.
+5. **Counting and tail rules (S3-A15, S3-A16).**
+   - Cells use the same region × stage units in numerator and denominator, and the named-region rule
+     decides.
+   - Units that straddle the interval boundary are placed in every stage their range allows. Each test
+     takes its largest p over the admissible (n, k) pairs, and a two-sided rejection needs every pair.
+   - On S0 the harness still reproduces every committed value. On S0, k is 13 to 16 at locality–age, and
+     cells run 6 to 9 of 19 to 22 (pooled) or 17 to 20 (named).
+   - Neither a level deficit nor a two-sided departure is established on S0.
+   - S0's region–stage lower rate ratios move from the committed legacy pair's 0.692 and 0.911 to 0.692 and
+     0.862 (named, Gorstian–Přídolí and Ludfordian–Přídolí).
+   - No S0 test outcome changes between pooled, named and legacy.
+6. **Gates on S3 (S3-A17).**
+   - S3 enters gates 1–3 at region_stage_named as listed endpoint cells, with S3 main deciding.
+   - A gate outcome that changes under another S3 reading counts as "narrower, inventory-dependent".
+   - Gate 4 has no S3 evidence.
+
 ### Crosswalk of Silurian crown units, S0 and S3 (amendment 3)
+
+Superseded in part by the review. The table below is the stage-1 locality match, with corrections in its
+Basis column. The region–stage comparison after it replaces the stage-1 bias paragraph.
 
 S3 rows are Capel crown rows whose literal range reaches above 419.62 Ma. Yea rows carry F3's envelope in
 S3 main.
@@ -138,53 +195,53 @@ S3 main.
 |---|---|---|
 | Rinconada, Argentina (`M-rinconada`; *Aberlemnia caledonica*) | none | Capel has no Argentine Silurian crown row; its nearest is *Aberlemnia* cf. *caledonica* in Bolivia |
 | Xiemisitai, West Junggar (`pbdb:278439`; *Aberlemnia* sp.) | none | |
-| Mangkelu II, Wutubulake, Hoboksar (`M-mangkelu-ii`; *Zosterophyllum mangkeluense*) | Wutubulake Fm, Hoboksar (*Wutubulaka multidichotoma*, Late Pridoli) | locality and formation; taxa differ |
+| Mangkelu II, Wutubulake, Hoboksar (`M-mangkelu-ii`; *Zosterophyllum mangkeluense*) | Wutubulake Fm, Hoboksar (*Wutubulaka multidichotoma*, Late Pridoli) | formation and district; does not identify Mangkelu II |
 | West Junggar (`M-aberlemnia-junggaria`; *Aberlemnia junggaria*) | none | Capel lists no *A. junggaria* |
 | Bathurst Island US383, US384, US385, US688 (cf. *Bathurstia*, *Distichophytum*, *Macivera gracilis*, *Zosterophyllum* spp.) | Bathurst Island Fm, Polar Bear Pass: one locality, the same six taxa, Ludfordian | locality and taxa; S0's four units are one in S3, and Capel's age (425.0–422.7 Ma) is narrower than S0's (425.0–419.62 Ma) |
 | Qujing (`M-qujingense`; *Z. qujingense*) | Upper Yulongsi Fm, Qujing (*Z. qujingense*, Pridoli) | locality and species |
-| Karlštejn, Bohemia (`M-baragwanathia-karlstejn`; *Baragwanathia brevifolioides*) | Požáry Fm, Kosov Hill (*B. brevifolioides*, Early Pridoli) | same species and formation, different locality name; unresolved without outside search |
-| Rashkovskie Beds, Podolia (`pbdb:52702`; *Cooksonia*, *Protosawdonia* and others) | Upper Rashkovskie Beds Fm, Trubchin (*Zosterophyllum ?* sp., Pridoli) | locality and formation; taxa differ |
-| Skala, Podolia (`pbdb:13873`; *Zosterophyllum*) | none | |
+| Karlštejn, Bohemia (`M-baragwanathia-karlstejn`; *Baragwanathia brevifolioides*) | Požáry Fm, Kosov Hill (*B. brevifolioides*, Early Pridoli) | one published holotype (KR 1) under conflicting locality labels: one occurrence, both labels kept |
+| Rashkovskie Beds, Podolia (`pbdb:52702`; *Cooksonia*, *Protosawdonia* and others) | Upper Rashkovskie Beds Fm, Trubchin (*Zosterophyllum ?* sp., Pridoli) | village and member; bed not established |
+| Skala, Podolia (`pbdb:13873`; *Zosterophyllum*) | none | no separately identifiable equivalent |
 | Van Canh, Vietnam (`M-van-canh`; putative zosterophylls) | Van Canh Fm, Dô Son (*Aberlemnia ?* sp., Pridoli) | locality and formation |
-| Yea: Ghin Ghin Road (two units), Limestone Road | Upper Yea Fm (*Baragwanathia longifolia*); Ghin Ghin Road (*Parazosterophyllum timsiae*) | Capel's Limestone Road rows are not crown |
-| — | Lipeon Fm, Jarcas, Bolivia (*Aberlemnia cf. caledonica*, Ludlow) | in S3, not S0 |
+| Yea: Ghin Ghin Road (two units), Limestone Road | Ghin Ghin Loc. 1 (rows 734, 1199); unspecified Yea (row 124) | S3-A11; Capel's Limestone Road rows are not crown |
+| — | Lipeon Fm, Jarcas, Bolivia (*Aberlemnia cf. caledonica*, Ludlow) | S3_permissive only (S3-A12) |
 | — | Tokrau Horizon, Balkhash, Kazakhstan (*Baragwanathia? sp.*, *Jugumella burubaensis*, Pridoli) | in S3, not S0 |
 
-**Bias, as far as the Silurian side shows.** S3 has 8 Silurian-only crown locality–age units (Podolia,
-Bolivia, Balkhash, Wutubulake, Bathurst, Van Canh, Qujing, Kosov) against S0's 13. Six match S0 units,
-counting Kosov and Karlštejn as one pair. S3 also:
-- collapses Bathurst's four units to one;
-- lacks Rinconada, Xiemisitai, the West Junggar *Aberlemnia* and Skala;
-- adds Bolivia and Balkhash.
+**Region–stage comparison (Silurian-only units).** Cells are region × midpoint stage.
 
-S3's Silurian side is therefore thinner than S0's, not richer. Gemini's statement that S3's construction
-favours a higher Silurian share is not shown. Its direction depends on how far endpoint-only listing thins
-the Devonian side, and that waits for stage 2. On region–stage, S3's Silurian crown cells are six
-(Baltica, Gondwana-South-America, Kazakhstania, Laurentia, South-China, peri-Gondwana-Europe). S0's six
-regions are the same set, with Gondwana-South-America from Bolivia in S3 rather than Argentina.
+| Inventory | Locality units | Cells |
+|---|---:|---|
+| S0 | 13 | Baltica, Gondwana-South-America, Kazakhstania, Laurentia, South-China, peri-Gondwana-Europe (all Přídolí) |
+| S3 main, S3 f3_strict | 7 | Baltica, Kazakhstania, South-China, peri-Gondwana-Europe (Přídolí); Laurentia (Ludfordian) |
+| S3 yea_literal | 8 | as main, plus Gondwana-Australia-Antarctica (Ludfordian; row 124 at its literal age) |
+| S3 permissive | 8 | as main, plus Gondwana-South-America (Ludfordian) |
+| S3 capel_groups | 6 | as main |
 
-## For Codex's sign-off (stage-1 gate)
+- Four cells coincide. Laurentia sits in the Ludfordian in S3 because Capel dates Bathurst Ludfordian, where
+  S0 has Ludfordian–Přídolí.
+- Neither the shared regions nor the unit counts establish which way S3 moves the late-Silurian fraction.
+  Gemini's statement that S3 favours a higher Silurian share remains not shown, and so does the opposite.
 
-1. The S3 rules, including §1: only region–stage enters the gates on S3, and Task 5 is not run on S3. This
-   departs from the specification's gates 1, 2 and 4; S3-A9 restates those gates.
-2. Amendments S3-A1 to S3-A9, including the proposals to drop `S3_fuzzy` and `S3_plus_unresolved`, the
-   Capel-groups-only variant and the two Task 6 runs on S3.
-3. The crown and region mappings (`capel_s3_rows.csv`, `capel_s3_region_map.csv`) and the age map
-   (`capel_s3_age_map.csv`).
-4. The Task 1A dispositions, especially the evidence for `pbdb:28216`, `28302` and `28303`, and whether the
-   `_merged` variant should be primary.
-5. Whether the crosswalk's Karlštejn–Kosov pairing should count as one locality.
-6. The region "multiple" (Germany, Russia, Poland, following F3's PBDB rule) lumps much of S3's Devonian side
-   into one region and lowers its region–stage count. S0–S2b use the same rule, so the comparison is
-   like for like, but the S3 region–stage n depends on it.
+## For Codex's sign-off (repairs)
+
+1. S3-A10 to S3-A14 and the row-level check in `capel_s3_disputed_rows.csv`: rows 6, 8, 124, 128, 297,
+   477, 530, 734, 904, 906, 1130, 1146, 1191 and 1199, and the pooled rows 47, 158 and 556.
+2. The counting rules (S3-A15) and tail rules (S3-A16), as implemented in `inventory_symmetry_tests.py` and
+   run on S0.
+3. The S3 gate restatement (S3-A17), including S3 main as the deciding reading and the reading-dependence
+   rule.
+4. Whether `S3_f3_strict` should be the deciding S3 reading in place of main, since it matches F3's crown
+   definition more closely. Recommendation: keep main as frozen in §3 and let f3_strict trigger
+   "narrower" through S3-A17.
 
 ## Stage 2 (after sign-off)
 
-Run Tasks 3, 4 and 6 on S0, S1, S2a, S2b (with variants) and S3 (region–stage), and Task 5 on S0–S2b.
-Report region–stage k both ways: switch_reading.py's distinct (region, min, max) among late locality–age
-units, and late region–stage units counted directly, because n and k use different definitions. Report for
-each S2a and S2b test the expected count and the largest count rejected (amendment 6), and run
-all six histories in Task 4.2 (amendment 7). Then build the gate table. Any outcome outside the stated
+Run Tasks 3, 4 and 6 on S0, S1, S2a, S2b (with variants) and on the S3 readings, and Task 5 on S0–S2b, under
+S3-A15 to S3-A17.
+- Report the legacy region–stage pair beside the cell rule.
+- For every set, report the expected count, the smallest count rejected high and the largest count
+  rejected low (amendment 6).
+- Run all six histories in Task 4.2 (amendment 7). Then build the gate table. Any outcome outside the stated
 gate cases counts as "narrower, inventory-dependent" (amendment 5). The gate thresholds were set after
 Gemini's preliminary sums on S1 and S2: they are decision rules, not a blind pre-registration. Ledger
 changes follow both agents' verification and, while the texts stay frozen, are held as written proposals

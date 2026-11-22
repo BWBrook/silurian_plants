@@ -1,5 +1,4 @@
 time,max_ma,min_ma,status,rows
-,,,unmapped,1
 Early Devonian,419.62,393.47,in_window,1
 Early Eifelian,393.47,387.95,outside_window,12
 Early Emsian,410.62,393.47,in_window,52
