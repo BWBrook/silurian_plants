@@ -200,6 +200,8 @@ where they differ. The row-level check of every disputed case is
   both envelopes have Emsian midpoints (410.1 and 408.1 Ma) in Gondwana-Australia-Antarctica. Task 6 excludes rows 124, 734 and
   1199 before aggregation. Row 124 stays its own unit. F3 counts no unspecified Yea record (L3S-015), and the
   difference affects only Yea-inclusive locality counts.
+  *(The treatment of rows 124 and 1199, and the claim that only locality counts change, are superseded by
+  S3-A18.)*
 - **S3-A12, material readings and F3 classifications (extends §3).**
   - **The Bolivian *Aberlemnia*.** In S3 main, row 6 (*Aberlemnia* cf. *caledonica*, Lipeon Fm, Jarcas,
     Negra Muerta; Capel: basal eutracheophytes) follows F3's reading of its Negra Muerta cf. *caledonica*
@@ -220,7 +222,7 @@ where they differ. The row-level check of every disputed case is
 
     The locality enters every reading through row 128. F3 keeps the queried record in its regional reading
     (`I-kazakh-lycophytes-tentative`). S0 counts Kazakhstan through PBDB outcrops, not the regional
-    assemblage (L3S-033). Rows 128 and 530 both map to 422.7–419.62 Ma at the same locality key, so they
+    assemblage (L3S-033). Rows 128 and 530 both map to 422.7–419.62 Ma at the same locality key, so they *(Provenance corrected in S3-A20.)*
     form one unit. Row 530 adds no locality–age unit and no cell in any reading.
 - **S3-A13, oldest age per variant (supersedes A8).** A is derived from the data after each run's exclusions.
 
@@ -285,7 +287,7 @@ where they differ. The row-level check of every disputed case is
     rejection at every admissible pair. A set is "compatible with level" when some pair is not rejected.
   - **Lower share.** The Clopper–Pearson lower share is the smallest over the admissible pairs, which is at
     k_min at locality–age.
-  - **Change factor.** The largest change factor is reported at the reported n and k_min, as in
+  - **Change factor** *(superseded by S3-A19)*. The largest change factor is reported at the reported n and k_min, as in
     `switch_reading.py`. For an interval short of A the share is not monotone in the factor, so no range
     over placements is defined.
   - **Reported for every set.** Per proxy, the expected count and the smallest count an upper-tail test at
@@ -315,3 +317,72 @@ where they differ. The row-level check of every disputed case is
     failure on S2b alone counts as "narrower, inventory-dependent".
   - **Any other outcome** counts as "narrower, inventory-dependent" (Fable's amendment 5).
   - **Labelling.** Each gate result names the S3 reading and counting rule it used.
+
+### Third set of amendments, after Codex's reconciliation review
+
+Dated 23 November 2026, in response to Codex's review
+([2026-11-22-inventory-symmetry-reconciliation-review.md](2026-11-22-inventory-symmetry-reconciliation-review.md),
+f6e2d10, Board 3651). Still before any Devonian tally, share or test on S1, S2a, S2b or S3; the only test
+output is S0. They override the amendments above where they differ.
+
+- **S3-A18, Yea identity treatments (supersedes the row 124 and 1199 treatment in S3-A11).** Capel's
+  Yea crown rows are 124 (unspecified Yea), 734 (Ghin Ghin Loc. 1) and 1199 (Ghin Ghin Road, bed not
+  stated). They are the only Australian crown rows whose main envelopes reach the Silurian. Under S3-A15
+  each straddles the interval boundary, so the number of distinct Yea horizons sets how many Australian
+  cells the Silurian can hold: one horizon occupies one stage, two can occupy the Gorstian and the Přídolí
+  together. Identity therefore changes region–stage counts as well as locality counts. Every S3 reading
+  other than `yea_literal` carries four treatments (`units(..., yea=)` in `capel_s3.py`):
+
+  | Treatment | Row 124 | Row 1199 | Yea crown units | Stage sets the units can occupy |
+  |---|---|---|---:|---:|
+  | `ref` (deciding) | joins Loc. 1: not independent of the named horizons (L3S-015) | Loc. 1 (assumed) | 1 | 6 |
+  | `y124` | its own unit, Gorstian–Emsian | Loc. 1 (assumed) | 2 | 21 |
+  | `b2` | joins Loc. 1 | B2, Přídolí–Emsian (L3S-014) | 2 | 18 |
+  | `y124_b2` | its own unit | B2 | 3 | 38 |
+
+  - **Bed order.** B2 lies 67 m above Loc. 1, so B2 never takes an older stage than Loc. 1. The harness
+    places the two units jointly (`BED_ORDER` in `inventory_symmetry_tests.py`). The same constraint
+    applies to S0's `tail:M-ghin-ghin` and `tail:M-ghin-ghin-b2`. It does not bind there: S0's nine named
+    pairs per interval are identical with and without it.
+  - Row 124 stays in the source table under every treatment; `ref` places it in the Loc. 1 unit as a
+    possible duplicate.
+  - `yea_literal` keeps Capel's own localities and ages and runs at its natural oldest age, 425.0 Ma.
+  - **Gates.** `ref` decides within each reading. A gate outcome that changes under `y124`, `b2`,
+    `y124_b2` or `yea_literal` counts as "narrower, inventory-dependent" (S3-A17), and the gate table
+    names the treatment or comparison that changed it.
+  - The oldest-age table of S3-A13 is unchanged: every treatment keeps the Yea envelopes' 426.7 Ma, and
+    removing rows 124, 734 and 1199 leaves Bathurst's 425.0 Ma except in permissive.
+  - Output: [capel_s3_yea_units.csv](../../models/loop3/out/capel_s3_yea_units.csv) lists the Yea units and
+    their admissible stage sets per reading and treatment. It holds unit structure only.
+- **S3-A19, the exponential upper factor (supersedes the change-factor bullet of S3-A16).** For a pair
+  (n, k), an exponential history passes the upper-tail benchmark exactly when its interval share reaches
+  that pair's one-sided 95% Clopper–Pearson lower share. A history compatible with at least one admissible
+  pair must therefore reach the smallest lower share over the pairs. The reported factor (rate at
+  393.47 Ma over rate at A) is the largest factor whose share reaches it. For an interval short of A the
+  share rises then falls with the factor, and the upper crossing is taken. The harness reports
+  "unbounded" when k can be zero or no crossing lies in the search range, and "none" when no factor
+  reaches the share. The fixed-pair factor at the reported n and k_min stays in
+  `fixed_pair_factor_legacy`, where it reproduces `switch_reading.csv`.
+
+  | S0 interval | Rule | Lower rate ratio | Fixed-pair factor (legacy) | Upper factor (S3-A19) |
+  |---|---|---:|---:|---:|
+  | Gorstian–Přídolí | locality–age | 0.790 | 1.764065 | 1.764065 |
+  | Gorstian–Přídolí | cells, named | 0.692 | 1.809959 | 2.364903 |
+  | Gorstian–Přídolí | legacy pair | 0.692 | 2.364903 | 2.364903 |
+  | Ludfordian–Přídolí | locality–age | 1.039 | 0.899615 | 0.899615 |
+  | Ludfordian–Přídolí | cells, named | 0.862 | 0.928215 | 1.472918 |
+  | Ludfordian–Přídolí | legacy pair | 0.911 | 1.280264 | 1.280264 |
+
+  The named-cell upper factors reproduce Codex's 2.364903 at (19, 6) and 1.472918 at (20, 6), and the
+  harness asserts both. One assignment realising (20, 6) for Ludfordian–Přídolí (Codex) places Ghin Ghin Loc. 1 in
+  the Gorstian, B2 in the Lochkovian and Limestone Road in the Pragian. Under the named-cell rule S0 is
+  compatible with a 47% rise in the finding rate over the later window; the fixed-pair 0.928 had read as
+  a decline.
+- **S3-A20, corrections to the record.**
+  - **Kazakhstania in S0 (corrects S3-A12).** S0's Silurian crown cell for Kazakhstania comes from three West
+    Junggar units in China. The Kazakh PBDB outcrops 53609, 53610 and 53656 qualify for B0 and B1 only;
+    their B2 flags are false ([horizons_reviewed.csv](../../data/macro/horizons_reviewed.csv)). The
+    Balkhash table of S3-A12 and the four shared Silurian region–stage cells stand.
+  - **Scope of the placement pairs (qualifies S3-A15).** The nine named pairs per S0 interval hold units
+    wholly inside or wholly outside the interval at their midpoint stage. Letting every unit's range vary
+    gives 17 pairs per interval (Codex). Results are stated as conditional on the midpoint convention.

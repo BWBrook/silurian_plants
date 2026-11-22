@@ -4,10 +4,12 @@ Claude (Opus 5.5), from 21 November 2026. Specification and Fable's amendments:
 `2026-11-21-inventory-symmetry-spec.md`. Frozen S3 rules: `2026-11-21-inventory-symmetry-s3-rules.md`
 (committed `7b6e3ae` before any S3 parse). Board discussion 191.
 
-**Stage 1 status (this record), 22 November 2026.**
+**Stage 1 status (this record), 23 November 2026.**
 - Codex signed off Task 1A (`f22b451`) and returned the S3 mapping for four repairs.
-- The repairs, the counting rules and the tail rules are now amendments S3-A10 to S3-A17 in the rules file,
-  and they await Codex's sign-off.
+- The repairs, the counting rules and the tail rules became amendments S3-A10 to S3-A17 (`65ff1d2`).
+  Codex's reconciliation review (`f6e2d10`) accepted them except for two repairs, now S3-A18 (Yea
+  identity treatments) and S3-A19 (the exponential upper factor), with record corrections in S3-A20.
+  These await Codex's sign-off.
 - No share or test has been computed on S1, S2a, S2b or S3.
 - The Tasks 3–4 harness implements the new counting and tail rules. It has run on S0 alone, where it
   reproduces the committed values.
@@ -20,15 +22,16 @@ No text, figure, ledger, estimand or frozen output was changed.
 | File | Role |
 |---|---|
 | `studies/f3/models/loop3/inventory_symmetry.py` | Task 1A: disposition table; builds S0, S1, S2a, S2b and variants from `horizons_reviewed.csv` without changing it |
-| `studies/f3/models/loop3/capel_s3.py` | Task 1B: S3 parse under the frozen rules and S3-A10 to S3-A14; mapping tables; row-level check of disputed cases; no counts |
-| `studies/f3/models/loop3/inventory_symmetry_tests.py` | Tasks 3–4 harness (C59 placement, C60, C27/C48 arithmetic) under the counting and tail rules S3-A15 and S3-A16 |
+| `studies/f3/models/loop3/capel_s3.py` | Task 1B: S3 parse under the frozen rules, S3-A10 to S3-A14 and the Yea treatments of S3-A18; mapping tables; row-level check of disputed cases; no counts |
+| `studies/f3/models/loop3/inventory_symmetry_tests.py` | Tasks 3–4 harness (C59 placement, C60, C27/C48 arithmetic) under S3-A15, S3-A16, the bed order of S3-A18 and the upper factor of S3-A19 |
 | `out/inventory_symmetry_dispositions.csv` | SHA-256 `2885c100e3a2ef3b81f2da958e2fad89ce6410d38abc65cd0590886b71ed311e` |
 | `out/inventory_symmetry_units.csv` | `ad76a374292b309fb1a4b28afbbb70159a55a32ec342fe721f65c1a09db6ba29` |
-| `out/capel_s3_rows.csv` | `70b2a0c4f15ebdf620059040708bbb74fe8d66f5ab68933f21ef54517bf7be5a` |
-| `out/capel_s3_disputed_rows.csv` | `745314a04b33a0e6dc6a63dd846d478f31c5b734af3a23ffbed3bec00572d63b` |
+| `out/capel_s3_rows.csv` | `4059893f1238393c3591481fd6033617c588cbcac4cb2ad9bd42cc0217b8f3a3` |
+| `out/capel_s3_disputed_rows.csv` | `0f8ac2ba7a1b2edb8260671128ea793cc8e02c572fd391b4a32d822fea93e4f9` |
+| `out/capel_s3_yea_units.csv` | `0051293e494eda7b24742190fbe1f4e281a0bd41405b54a1afda417f4703e78a` |
 | `out/capel_s3_age_map.csv` | `500942d9f3bbc8528761353ac0f6b73aaad06e15191b9912b46b7ab967e66ca0` |
 | `out/capel_s3_region_map.csv` | `90239102179339db18b4f7581c3da7bd3b55e99770565d005a9186cc71a73f76` |
-| `out/inventory_symmetry_tests_S0.csv` | `a252c1ab1955ef0ff2a867395b79161d3f6eead50969bd726dc863bbd3f1eec4` |
+| `out/inventory_symmetry_tests_S0.csv` | `a07e1dc59b87debd4953b0bab09b485d6dc7fcd4e07aa864c540dce229d1dcd9` |
 
 `capel_s3_fuzzy_merges.csv` was removed with the fuzzy variant (S3-A5); its last version is at `34a36ad`. The
 stage-1 hashes of the other files are in this record at `34a36ad`.
@@ -203,7 +206,7 @@ S3 main.
 | Rashkovskie Beds, Podolia (`pbdb:52702`; *Cooksonia*, *Protosawdonia* and others) | Upper Rashkovskie Beds Fm, Trubchin (*Zosterophyllum ?* sp., Pridoli) | village and member; bed not established |
 | Skala, Podolia (`pbdb:13873`; *Zosterophyllum*) | none | no separately identifiable equivalent |
 | Van Canh, Vietnam (`M-van-canh`; putative zosterophylls) | Van Canh Fm, Dô Son (*Aberlemnia ?* sp., Pridoli) | locality and formation |
-| Yea: Ghin Ghin Road (two units), Limestone Road | Ghin Ghin Loc. 1 (rows 734, 1199); unspecified Yea (row 124) | S3-A11; Capel's Limestone Road rows are not crown |
+| Yea: Ghin Ghin Road (two units), Limestone Road | Ghin Ghin Loc. 1 (rows 734, 1199, and 124 as a possible duplicate) | S3-A11, S3-A18 (`ref`; 124 and B2 separate in the sensitivities); Capel's Limestone Road rows are not crown |
 | — | Lipeon Fm, Jarcas, Bolivia (*Aberlemnia cf. caledonica*, Ludlow) | S3_permissive only (S3-A12) |
 | — | Tokrau Horizon, Balkhash, Kazakhstan (*Baragwanathia? sp.*, *Jugumella burubaensis*, Pridoli) | in S3, not S0 |
 
@@ -222,7 +225,35 @@ S3 main.
 - Neither the shared regions nor the unit counts establish which way S3 moves the late-Silurian fraction.
   Gemini's statement that S3 favours a higher Silurian share remains not shown, and so does the opposite.
 
+### Repairs after Codex's reconciliation review (S3-A18 to S3-A20)
+
+Codex's reconciliation review ([2026-11-22-inventory-symmetry-reconciliation-review.md](2026-11-22-inventory-symmetry-reconciliation-review.md))
+is accepted in full.
+
+1. **Yea identity (S3-A18).** The A11 claim that the identity of rows 124 and 1199 changes only locality
+   counts was wrong: under the boundary placements of S3-A15, two Yea horizons can fill a Gorstian and a
+   Přídolí cell where one horizon fills one. `ref` (deciding) follows F3: row 124 joins Loc. 1 as a possible
+   duplicate (L3S-015) and row 1199 sits at Loc. 1 (assumed). `y124`, `b2` (1199 at B2, Přídolí–Emsian) and
+   `y124_b2` are sensitivities, and B2 never takes an older stage than Loc. 1. The Yea units have 6, 21, 18
+   and 38 admissible stage sets under the four treatments, and every treatment except `ref` lets the Yea
+   units fill two Silurian cells. A structural run of the placement code on S3 main and f3_strict under each
+   treatment finishes and gives different sets of admissible pairs; the pairs themselves were not printed
+   and no share or test was computed.
+2. **Placement enumeration.** Placements are now enumerated per region as sets of occupied stages and then
+   combined, as in Codex's independent check. This scales to S3, which has more boundary units than S0. On
+   S0 it gives the same nine pairs per interval, with or without the bed order, and every S0 output column
+   is unchanged apart from the factor.
+3. **Upper factor (S3-A19).** The factor is now the upper crossing of the smallest lower share over the
+   admissible pairs. On S0 named cells it is 2.364903 (Gorstian–Přídolí) and 1.472918 (Ludfordian–Přídolí),
+   reproducing Codex; the old fixed-pair factors (1.809959, 0.928215) and the committed `switch_reading.csv`
+   factors stay in `fixed_pair_factor_legacy`, and the harness asserts both sets.
+4. **Record corrections (S3-A20).** S0's Kazakhstania crown cell is West Junggar, not the Kazakh PBDB
+   outcrops; the nine-pair result is conditional on the midpoint convention (17 pairs if every unit varies).
+
 ## For Codex's sign-off (repairs)
+
+Second round, 23 November 2026: S3-A18 to S3-A20, `capel_s3_yea_units.csv` and the S0 factors in
+`inventory_symmetry_tests_S0.csv`. The first-round items follow.
 
 1. S3-A10 to S3-A14 and the row-level check in `capel_s3_disputed_rows.csv`: rows 6, 8, 124, 128, 297,
    477, 530, 734, 904, 906, 1130, 1146, 1191 and 1199, and the pooled rows 47, 158 and 556.
@@ -236,8 +267,8 @@ S3 main.
 
 ## Stage 2 (after sign-off)
 
-Run Tasks 3, 4 and 6 on S0, S1, S2a, S2b (with variants) and on the S3 readings, and Task 5 on S0–S2b, under
-S3-A15 to S3-A17.
+Run Tasks 3, 4 and 6 on S0, S1, S2a, S2b (with variants) and on the S3 readings, each S3 reading under the
+four Yea treatments of S3-A18 and `yea_literal` at 425.0 Ma, and Task 5 on S0–S2b, under S3-A15 to S3-A19.
 - Report the legacy region–stage pair beside the cell rule.
 - For every set, report the expected count, the smallest count rejected high and the largest count
   rejected low (amendment 6).

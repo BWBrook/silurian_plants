@@ -1,0 +1,17 @@
+variant,yea,units,unit_ids,members,stage_sets,max_cells,two_silurian_cells
+main,ref,1,yea:M-ghin-ghin|393.47|426.7,124;734;1199,6,1,False
+main,y124,2,yea:M-ghin-ghin|393.47|426.7;yea:M-yea-unspecified|393.47|426.7,734;1199;124,21,2,True
+main,b2,2,yea:M-ghin-ghin-b2|393.47|422.7;yea:M-ghin-ghin|393.47|426.7,1199;124;734,18,2,True
+main,y124_b2,3,yea:M-ghin-ghin-b2|393.47|422.7;yea:M-ghin-ghin|393.47|426.7;yea:M-yea-unspecified|393.47|426.7,1199;734;124,38,3,True
+f3_strict,ref,1,yea:M-ghin-ghin|393.47|426.7,124;734;1199,6,1,False
+f3_strict,y124,2,yea:M-ghin-ghin|393.47|426.7;yea:M-yea-unspecified|393.47|426.7,734;1199;124,21,2,True
+f3_strict,b2,2,yea:M-ghin-ghin-b2|393.47|422.7;yea:M-ghin-ghin|393.47|426.7,1199;124;734,18,2,True
+f3_strict,y124_b2,3,yea:M-ghin-ghin-b2|393.47|422.7;yea:M-ghin-ghin|393.47|426.7;yea:M-yea-unspecified|393.47|426.7,1199;734;124,38,3,True
+permissive,ref,1,yea:M-ghin-ghin|393.47|426.7,124;734;1199,6,1,False
+permissive,y124,2,yea:M-ghin-ghin|393.47|426.7;yea:M-yea-unspecified|393.47|426.7,734;1199;124,21,2,True
+permissive,b2,2,yea:M-ghin-ghin-b2|393.47|422.7;yea:M-ghin-ghin|393.47|426.7,1199;124;734,18,2,True
+permissive,y124_b2,3,yea:M-ghin-ghin-b2|393.47|422.7;yea:M-ghin-ghin|393.47|426.7;yea:M-yea-unspecified|393.47|426.7,1199;734;124,38,3,True
+capel_groups,ref,1,yea:M-ghin-ghin|393.47|426.7,124;734;1199,6,1,False
+capel_groups,y124,2,yea:M-ghin-ghin|393.47|426.7;yea:M-yea-unspecified|393.47|426.7,734;1199;124,21,2,True
+capel_groups,b2,2,yea:M-ghin-ghin-b2|393.47|422.7;yea:M-ghin-ghin|393.47|426.7,1199;124;734,18,2,True
+capel_groups,y124_b2,3,yea:M-ghin-ghin-b2|393.47|422.7;yea:M-ghin-ghin|393.47|426.7;yea:M-yea-unspecified|393.47|426.7,1199;734;124,38,3,True

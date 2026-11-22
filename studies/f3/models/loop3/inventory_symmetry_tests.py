@@ -23,16 +23,18 @@ counting and tail rules of S3-A15 and S3-A16 (2026-11-21-inventory-symmetry-s3-r
 - C60: the smallest one-sided 95% Clopper-Pearson lower share over placements, over the level share; the
   largest P(X >= k) and P(X <= k); the largest count that a lower-tail test at 0.05 rejects at the reported
   n; whether a deficit and a two-sided departure are established; the largest exponential change factor
-  (cutoff over A) with P(X >= k) >= 0.05 at the reported n and k_min, as in switch_reading.py (the share is
-  not monotone in the change factor for an interval short of A, so no range over placements is reported);
-  and the named regions.
+  (cutoff over A) compatible with some admissible pair, that is the upper crossing of the smallest lower share
+  (S3-A19), with "unbounded" or "none" where no crossing exists; the fixed-pair factor at the reported n and
+  k_min, as in switch_reading.py, kept for the legacy comparison; and the named regions.
+- Placements are enumerated per region as sets of occupied stages, with units of one section kept in
+  stratigraphic order (BED_ORDER, S3-A18).
 - C27/C48 arithmetic: T = c + (A - c) 0.05^(-1/n) and zero-delay folds at 444 and 452 Ma.
 
     uv run studies/f3/models/loop3/inventory_symmetry_tests.py S0          # reproduces the committed S0 values
 """
 
-import itertools
 import math
+import re
 import sys
 
 import pandas as pd
@@ -85,27 +87,49 @@ def stage_table(A):
 
 def cells(g, named):
     g = g[~g.region.isin(POOLED)] if named else g
-    stage = midpoint_stage(((g.min_ma + g.max_ma) / 2).values)
-    return g.assign(cell=g.region + "|" + pd.Series(stage, index=g.index).astype(str))
+    stage = pd.Series(midpoint_stage(((g.min_ma + g.max_ma) / 2).values), index=g.index)
+    return g.assign(stage=stage, cell=g.region + "|" + stage.astype(str))
+
+
+# Stratigraphic order among units of one section (S3-A18): the first pattern's unit lies above the second's,
+# so its stage is never older. Patterns match "unit_id|member_ids".
+BED_ORDER = ((r"M-ghin-ghin-b2", r"M-ghin-ghin(?!-b2)"),)
 
 
 def placements(g, named, lo, hi, A):
     """(n, k) for every admissible stage placement of the units that reach into [lo, hi] without lying wholly
-    inside it; all other units keep their midpoint cell (S3-A15)."""
+    inside it; all other units keep their midpoint cell (S3-A15). Units placed in the same region and stage
+    share a cell, so the placements are enumerated per region as sets of occupied stages and the regional
+    counts are then combined. Units in BED_ORDER are placed jointly so that the upper bed is never older."""
     c = cells(g, named)
     inside = (c.min_ma >= lo) & (c.max_ma <= hi + 1e-9)
     edge = (c.max_ma > lo) & (c.min_ma < hi) & ~inside
-    fixed = c[~edge]
-    fixed_cells, fixed_late = set(fixed.cell), set(fixed.cell[inside[~edge]])
     stages = stage_table(A)
-    options = [[(f"{r.region}|{b}", b <= hi + 1e-9 and top >= lo - 1e-9) for b, top in stages
-                if b > r.min_ma + 1e-9 and top < r.max_ma - 1e-9] for r in c[edge].itertuples()]
-    assert math.prod(len(o) for o in options) <= 10 ** 5, "too many straddler placements"
-    out = set()
-    for combo in itertools.product(*options):
-        cs = fixed_cells | {x for x, _ in combo}
-        late = fixed_late | {x for x, in_late in combo if in_late}
-        out.add((len(cs), len(late)))
+    late = {b for b, top in stages if b <= hi + 1e-9 and top >= lo - 1e-9}
+    text = c.unit_id + "|" + c.member_ids
+    pairs = []
+    for region, r in c.groupby("region"):
+        e = edge[r.index]
+        items = [[frozenset([b])] for b in r.stage[~e]]
+        opts = {i: [b for b, top in stages if b > c.min_ma[i] + 1e-9 and top < c.max_ma[i] - 1e-9]
+                for i in r.index[e]}
+        for upper, lower in BED_ORDER:
+            iu = [i for i in r.index if re.search(upper, text[i])]
+            il = [i for i in r.index if re.search(lower, text[i])]
+            assert len(iu) <= 1 and len(il) <= 1, (upper, iu, il)
+            if iu and il:
+                (u,), (l,) = iu, il
+                assert u in opts and l in opts, "an ordered unit is held at its midpoint"
+                ou, ol = opts.pop(u), opts.pop(l)
+                items.append([frozenset([bu, bl]) for bu in ou for bl in ol if bu <= bl])
+        items += [[frozenset([b]) for b in o] for o in opts.values()]
+        reach = {frozenset()}
+        for o in items:
+            reach = {s | x for s in reach for x in o}
+        pairs.append({(len(s), len(s & late)) for s in reach})
+    out = {(0, 0)}
+    for p in pairs:
+        out = {(a + x, b + y) for a, b in out for x, y in p}
     return sorted(out), len(set(c.cell)), sorted(set(c.region[inside]) - POOLED)
 
 
@@ -145,6 +169,20 @@ def run(name, la, rs, A, prox):
 
         def factor(n, k):
             return math.exp(bisect(lambda x: tail_ge(n, k, share_exp(x)) - 0.05, -1.0, 1.0) * L)
+
+        def upper_factor(p_lo):
+            """Largest change factor whose interval share reaches p_lo, the smallest one-sided lower share over
+            the admissible pairs (S3-A19): the upper crossing, 'unbounded' or 'none'."""
+            if p_lo <= 0:
+                return "unbounded"
+            xs = [i / 2000 for i in range(-4000, 4001)]
+            ok = [x for x in xs if share_exp(x) >= p_lo]
+            if not ok:
+                return "none"
+            x0 = max(ok)
+            if x0 == xs[-1]:
+                return "unbounded"
+            return f"{math.exp(bisect(lambda x: share_exp(x) - p_lo, x0, x0 + 1 / 2000) * L):.6f}"
         for counting, n, pl, regions in counts(g, gr, lo, hi, A):
             ns, ks = [a for a, _ in pl], [b for _, b in pl]
             p_lo = min(lower95(a, b) for a, b in pl)
@@ -167,7 +205,8 @@ def run(name, la, rs, A, prox):
                          "two_sided_rejected_at_all_counts": all(
                              2 * min(tail_ge(a, b, level), tail_le(a, b, level)) < 0.05 for a, b in pl),
                          "share_lower95": f"{p_lo:.4f}", "least_rate_relative_to_mean": f"{p_lo / level:.3f}",
-                         "largest_change_factor_cutoff_over_A": f"{factor(n, min(ks)):.6f}",
+                         "largest_change_factor_cutoff_over_A": upper_factor(p_lo),
+                         "fixed_pair_factor_legacy": f"{factor(n, min(ks)):.6f}",
                          "n_regions": len(regions), "regions": ";".join(regions)})
     n = len(g)
     m = 0.05 ** (-1 / n) - 1
@@ -194,13 +233,17 @@ def main(names):
             m = mine[mine.interval.eq(r.interval) & mine.counting.eq(legacy[r.counting])].iloc[0]
             assert (m.n, m.k_min) == (r.n, r.observed_min), (r, m)
             assert m.least_rate_relative_to_mean == f"{r.least_rate_relative_to_mean:.3f}", (r, m)
-            assert abs(float(m.largest_change_factor_cutoff_over_A) - r.largest_change_factor_cutoff_over_A) < 1e-5
+            assert abs(float(m.fixed_pair_factor_legacy) - r.largest_change_factor_cutoff_over_A) < 1e-5
         pl = pd.read_csv(OUT / "combined_rulers_placement.csv")
         mine = out[out.test.eq("C59_placement")]
         for r in pl.itertuples():
             m = mine[mine.proxy.eq(r.proxy) & mine.interval.eq(r.interval) & mine.counting.eq(legacy[r.counting])].iloc[0]
             assert (m.n, m.k_min, m.share) == (r.n, r.observed, f"{r.share:.4f}"), (r, m)
             assert f"{float(m.p_ge):.3g}" == f"{r.p_at_least_observed:.3g}", (r, m)
+        c60 = out[out.test.eq("C60") & out.counting.eq("region_stage_named")].set_index("interval")
+        for interval, f, ratio in (("Gorstian-Pridoli", 2.364903, "0.692"), ("Ludfordian-Pridoli", 1.472918, "0.862")):
+            assert abs(float(c60.loc[interval, "largest_change_factor_cutoff_over_A"]) - f) < 1e-6, c60.loc[interval]
+            assert c60.loc[interval, "least_rate_relative_to_mean"] == ratio
         e = out[out.test.eq("C27_C48")].iloc[0]
         assert e.T_ma == "428.8400" and e.fold_444 == "8.0841" and e.fold_452 == "11.8224", e
         print("S0 reproduces switch_reading.csv, combined_rulers_placement.csv and C27/C48")

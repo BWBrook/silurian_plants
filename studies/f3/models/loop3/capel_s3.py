@@ -13,6 +13,7 @@ wait for the second agent's sign-off.
 """
 
 import hashlib
+import itertools
 import re
 import unicodedata
 from pathlib import Path
@@ -43,14 +44,22 @@ FIRST_ROW, LAST_ROW = 4, 1200
 # F3 main-reading envelope of its horizon (interpretations.csv); literal Capel ages stay in literal_*.
 YEA_HORIZON = {
     124: ("M-yea-unspecified", "gorstian", "emsian",
-          "Upper Yea Fm., Yea; Garratt & Rickards 1984 is F3's source for the unspecified Yea Baragwanathia"),
+          "Upper Yea Fm., Yea; Garratt & Rickards 1984 is F3's source for the unspecified Yea Baragwanathia; "
+          "not independent of the named horizons in ref (L3S-015), its own unit in y124 (S3-A18)"),
     734: ("M-ghin-ghin", "gorstian", "emsian", "Parazosterophyllum timsiae and McSweeney et al. 2020 listed at Loc. 1"),
     1199: ("M-ghin-ghin", "gorstian", "emsian", "Ghin Ghin Road, bed not stated; F3 attaches McSweeney et al. 2022 "
-           "to Loc. 1; the alternative, B2 (Pridoli-Emsian), would add one unit to Yea-inclusive locality counts"),
+           "to Loc. 1, assumed in ref; the alternative, B2 (Pridoli-Emsian, L3S-014), is treatment b2 (S3-A18)"),
     904: ("ghin-ghin-road-unidentified", "gorstian", "emsian", "Ghin Ghin Road, bed not stated (Loc. 1 or B2); not crown"),
     906: ("M-limestone-road", "gorstian", "emsian", "Loc. 4, Limestone Road; not crown"),
     1146: ("M-limestone-road", "gorstian", "emsian", "Loc. 4, Limestone Road; not crown"),
 }
+# S3-A18: Yea identity treatments. ref follows F3: row 124 is not an independent horizon (L3S-015), so it joins the
+# named crown horizon, and row 1199 sits at Loc. 1 (assumed). y124 counts 124 as an additional independent unit;
+# b2 places 1199 at B2, 67 m above Loc. 1 (L3S-014); y124_b2 does both. Envelopes are F3 main readings.
+YEA_ENVELOPE = {"M-ghin-ghin": ("gorstian", "emsian"), "M-ghin-ghin-b2": ("pridoli", "emsian"),
+                "M-yea-unspecified": ("gorstian", "emsian")}
+YEA_TREATMENTS = {"ref": {124: "M-ghin-ghin"}, "y124": {}, "b2": {124: "M-ghin-ghin", 1199: "M-ghin-ghin-b2"},
+                  "y124_b2": {1199: "M-ghin-ghin-b2"}}
 # S3-A12: rows whose material F3 reads specifically, overriding the genus rule in the F3-aligned reading.
 MATERIAL = {6: ("not_B2", "Aberlemnia cf. caledonica, Negra Muerta: F3's Negra Muerta cf. caledonica "
                 "(tail:M-bolivia-caledonica) is B1 in main, B2 in inclusive; specimen identity open")}
@@ -223,18 +232,25 @@ def parse():
 VARIANTS = ("main", "f3_strict", "permissive", "capel_groups", "yea_literal")
 
 
-def units(d, variant="main", counting="locality_age", exclude_rows=()):
+def units(d, variant="main", counting="locality_age", exclude_rows=(), yea="ref"):
     """S3 units. main: F3 genus rule with F3 material readings (S3-A12); permissive: genus rule only;
     f3_strict: main without rows whose F3 genus reading is uncertain or mixed (S3-A12); capel_groups: Capel's
-    groups alone (S3-A7); yea_literal: main with Capel's literal Yea ages and keys. exclude_rows drops Capel
-    rows before aggregation (Task 6). Same aggregation as select_records."""
+    groups alone (S3-A7); yea_literal: main with Capel's literal Yea ages and keys, where yea must be "ref".
+    yea picks the Yea identity treatment (S3-A18). exclude_rows drops Capel rows before aggregation (Task 6).
+    Same aggregation as select_records."""
     col = {"main": "b2", "f3_strict": "b2", "yea_literal": "b2", "permissive": "b2_genus_rule",
            "capel_groups": "capel_class"}[variant]
     keep = d[col].eq("B2") & ~d.capel_row.isin(exclude_rows)
     if variant == "f3_strict":
         keep &= ~d.f3_crown.isin(["uncertain", "mixed"])
     r = d[keep].copy()
+    st = stages()
+    for row, hz in YEA_TREATMENTS[yea].items():
+        if row in r.index and variant != "yea_literal":
+            old, young = YEA_ENVELOPE[hz]
+            r.loc[row, ["locality_key", "max_ma", "min_ma"]] = "yea:" + hz, st[old][0], st[young][1]
     if variant == "yea_literal":
+        assert yea == "ref", "literal Yea ages carry Capel's own localities"
         r["max_ma"], r["min_ma"] = r.literal_max_ma, r.literal_min_ma
         r.loc[r.yea, "locality_key"] = r.locality[r.yea].map(locality_key)
     r = r[r.max_ma > YOUNG]
@@ -246,6 +262,32 @@ def units(d, variant="main", counting="locality_age", exclude_rows=()):
     return r.groupby("unit_id", as_index=False).agg(
         min_ma=("min_ma", "max"), max_ma=("max_ma", "max"), region=("region", "first"),
         member_ids=("capel_row", lambda x: ";".join(map(str, sorted(x)))), n_members=("capel_row", "size"))
+
+
+def yea_units(d):
+    """Yea crown units per reading and identity treatment (S3-A18), with the sets of stages they can occupy
+    together in Gondwana-Australia-Antarctica: each unit takes one stage its range allows, B2 never older than
+    Loc. 1. Unit structure only; no count, share or test."""
+    st = stages()
+    window = sorted((b, top) for b, top in st.values() if b > YOUNG and b <= 426.7 + 1e-9)
+    rows = []
+    for v in ("main", "f3_strict", "permissive", "capel_groups"):
+        for t in YEA_TREATMENTS:
+            u = units(d, v, yea=t)
+            u = u[u.unit_id.str.startswith("yea:")]
+            opts = {r.unit_id.split("|")[0]: [b for b, top in window if b > r.min_ma + 1e-9 and top < r.max_ma - 1e-9]
+                    for r in u.itertuples()}
+            sets = set()
+            for combo in itertools.product(*opts.values()):
+                place = dict(zip(opts, combo))
+                if place.get("yea:M-ghin-ghin-b2", 0) > place.get("yea:M-ghin-ghin", 999):
+                    continue
+                sets.add(frozenset(combo))
+            rows.append({"variant": v, "yea": t, "units": len(u),
+                         "unit_ids": ";".join(u.unit_id), "members": ";".join(u.member_ids),
+                         "stage_sets": len(sets), "max_cells": max(map(len, sets), default=0),
+                         "two_silurian_cells": any(len([b for b in x if b > LOCHKOVIAN_BASE]) >= 2 for x in sets)})
+    return pd.DataFrame(rows)
 
 
 DISPUTED = (6, 8, 124, 128, 297, 477, 530, 734, 904, 906, 1130, 1146, 1191, 1199, 47, 158, 556)
@@ -268,6 +310,7 @@ def main():
                                     np.where(chk.min_ma >= YOUNG, "guaranteed", "possible_only"))
     chk["counted_in"] = [";".join(v for v in VARIANTS if not units(d.loc[[i]], v).empty) for i in chk.index]
     chk.to_csv(OUT / "capel_s3_disputed_rows.csv", index=False, lineterminator="\n")
+    yea_units(d).to_csv(OUT / "capel_s3_yea_units.csv", index=False, lineterminator="\n")
     timemap = d.groupby(d.time.str.strip()).agg(max_ma=("literal_max_ma", "first"), min_ma=("literal_min_ma", "first"),
                                                  status=("age_status", "first"), rows=("capel_row", "size"))
     timemap.to_csv(OUT / "capel_s3_age_map.csv", lineterminator="\n")
