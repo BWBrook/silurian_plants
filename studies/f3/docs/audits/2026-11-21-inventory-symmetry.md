@@ -283,21 +283,21 @@ preliminary until Codex has checked it.
 |---|---|
 | `out/inventory_symmetry_stage2_tests.csv` (Tasks 3 and 6: C59 placement, C60, C27/C48 arithmetic) | `41f928aa1c9c02781f233ab5163a0b8f47443e81962c11995505b1ecf50f87fa` |
 | `out/inventory_symmetry_stage2_task4.csv` (Tasks 4.1, 4.2 and 6) | `2ad1858570106dfe5dbc4c119f7b730c9521e3d1d30d5299b14ea8bc4843a1b6` |
-| `out/inventory_symmetry_stage2_groups.csv` (B1, B0 on S0 and S1) | `9848b290ba9cb3babcf91ac71739bb3e532253843fad0d68766034b375110c25` |
-| `out/inventory_symmetry_stage2_shape.csv` (Task 5: KS feasibility over four inclusion states) | `a0c3da57765e6a464932057384063376282d454cdf571b45d361d8be39310744` |
+| `out/inventory_symmetry_stage2_groups.csv` (B1, B0 on S0 and S1: limits, folds, gap and spore benchmarks) | `0b1393e4cf473e665bb396d160d22cc892fe6c21efc2a3a560c99ee28c4472cb` |
+| `out/inventory_symmetry_stage2_shape.csv` (Task 5: KS feasibility over four inclusion states) | `f2b2612550235d3a241e0d8cbc4e22e67f8e475c51ef50f350e3eea9c7918c3a` |
 | `out/inventory_symmetry_stage2_gates.csv` (gate evaluator) | `5ddc2000dda3cb7ed03b00d6e7ad113029ccde4120d6d3c85af413312e39ca30` |
 
 Reproduce: `uv run studies/f3/models/loop3/inventory_symmetry_stage2.py` (about 40 s on `mini`).
 
-**Reproduction checks, asserted before any other set is read.**
+**Reproduction checks.** All sets are computed first. `check_s0` then asserts the S0 values below before any output is written; a failure writes nothing.
 - The S0 rows of the tests table equal the signed `inventory_symmetry_tests_S0.csv` byte for byte.
 - `reviewed_bounds.csv`: all six histories at the Emsian and Přídolí cutoffs (B2 main primary). This
   includes 429.80490705 Ma for decline10 at the Přídolí cutoff, and the two decline10-type rows that are
   beyond the domain.
-- `groups.csv` and `groups_inside.csv` for B1 and B0: steady limits under all four counting rules, the folds
-  and the spore-anchored factors.
-- `interval_feasibility_summary.csv` (B2) and `groups_shape.csv` (B1, B0): p values and finite-sample
-  verdicts in every inclusion state.
+- `groups.csv` and `groups_inside.csv` for B1 and B0: steady limits under all four counting rules, the folds,
+  the gap and Homerian benchmarks, and the spore-anchored factors.
+- `interval_feasibility_summary.csv` (B2) and `groups_shape.csv` (B0 with and without Oman, B1 main and
+  inclusive): p values and finite-sample verdicts in every inclusion state.
 - Gemini's preliminary values where comparable:
   - S1: 69 units, lower ratios 0.541 (locality–age) and 0.622 (legacy pair, 6 of 21).
   - S2b: 5 of 59, ratio 0.160; legacy pair 3 of 18.
@@ -314,13 +314,28 @@ that would change the outcome if swapped in.
 | Gate | Outcome | What decides it | Changed by |
 |---|---|---|---|
 | 1. C59: rock and rock × spore fail later-find placement | **Holds** | An excess is established in every required cell: S1 and S2b at both grains, S3 cells, both intervals, A = 426.7 and 425.0 Ma. The largest p is 0.00051. | none (every variant, S3 reading and Yea treatment holds) |
-| 2. C59: spore share alone fails | **Narrower, inventory-dependent** | Established on S1 (p ≤ 0.0045) and on S3 cells (p 0.016–0.042); not on S2b (locality–age p 0.27–0.50; cells 0.060–0.144). Withdrawal needs S3 as well, so it does not fire. | none |
+| 2. C59: spore share alone fails | **Narrower, inventory-dependent** under S3-A17. Under the specification's literal wording (S2b and S3 at locality–age): **withdrawn** | Established on S1 (p ≤ 0.0045) and on S3 named cells (p 0.016–0.042); not on S2b (locality–age p 0.27–0.50; cells 0.060–0.144). S3's locality–age p is 0.49–0.76, but S3-A17 makes those rows descriptive. With the pooled codes counted, S3's Gorstian–Přídolí cell is not established (0.064); Ludfordian–Přídolí still is (0.026–0.028). | none |
 | 3. C60: late-Silurian rate near the window mean | **Narrower** (the specification's narrower form) | No set rejects level at region–stage, and no deficit is established at cells. Lower ratios at cells: S1 0.62–0.78; S2b 0.23–0.31 (3 regions); S3 0.39–0.49 (5 regions). At locality–age, S2b establishes a Gorstian–Přídolí deficit (largest p 0.047). The withdrawal conditions are not met. | none |
 | 3b. Gate 3 at A = 425.0 Ma | Narrower | S1 0.71/0.86; S2b 0.21/0.33; S3 0.48. The S2b locality–age deficit is not established at 425.0 Ma (p 0.060). | none |
 | 4a. C27: flat passes the shape test | **Holds**; 428.8 Ma stands | flat passes in every inclusion state on S0, S1 and S2b | none |
 | 4b. C49: decline10 fails the shape test | **Narrower** | Fails in every state on S0 and S1 (best p 0.0064). Passes in every state on S2b (best p 0.24–0.30). Withdrawal would need S3, which has no shape test. | S2a and S2a_coord: decline10 fails there too, so swapping either in for S2b gives "holds" |
 | 4c. C49: decline25 fails on the guaranteed finds | **S0-specific; drop** | S0 guaranteed state fails (0.035). S1 and S2b pass in the guaranteed and all-possible states (S1 0.83–0.88; S2b 1.0). | none |
 | 5. C48, C58, C61, C62: requirements | **Holds, with upward sensitivity recorded** | See Task 4 below | — |
+
+**Gate code edited after the first run.** Only the conventions (S3-A21 to A24) preceded the numbers. After
+the first run I redefined gate 4c to the specification's wording (decline25 in the guaranteed and
+all-possible states, rather than in any state) and added gate 3b, which S3-A22 requires. Neither edit
+changed an outcome.
+
+**Pooled region–stage cells (S3-A15).**
+- No deficit and no two-sided rejection changes between pooled and named cells in any set.
+- Pooled lower ratios are lower: S0 0.62/0.78, S1 0.56/0.71, S2b 0.21/0.28, S3 0.34/0.44.
+- Some C59 excess verdicts change, all with p 0.034–0.047 named and 0.051–0.070 pooled:
+  - the spore share and search × spore share on S3 Gorstian–Přídolí (the spore cell bears on gate 2,
+    above);
+  - plant-excluded searching × spore share on S3 Ludfordian–Přídolí;
+  - the spore share and search × spore share on S2a at 425.0 Ma.
+- No gate outcome changes.
 
 Gate 5 has no failure case. The S3 Yea treatments and readings change no gate outcome. The one exception
 is the region count: S3 permissive and `yea_literal` reach six regions in one interval. S3's locality–age
@@ -426,14 +441,26 @@ Best finite-sample p over the four inclusion states, by history (`shape.csv` hol
 | S1 | 1.0 | 0.83–0.88 | 0.0043–0.0064 | 0.28–0.31 |
 | S2a | 1.0 | 0.57–0.77 | 0.0031–0.0061 | 1.0 |
 | S2b | 1.0 | 1.0 | 0.24–0.30 | 1.0 |
+| S0, A = 425.0 | 0.71–0.82 | 0.011–0.025 (fails in all four states) | ≤ 2.0e-06 | 0.030–0.039 |
+| S1, A = 425.0 | 1.0 | 0.64–0.70 | 0.0021–0.0034 | 0.23–0.26 |
+| S2b, A = 425.0 | 1.0 | 1.0 | 0.19–0.24 | 1.0 |
+
+With A at 425.0 Ma, decline25 fails on S0 in every state, including the all-possible state that passes at
+426.7 Ma. It still passes on S1 and S2b. The pattern of gate 4 is unchanged at 425.0 Ma.
 
 Results that bear on other claims (amendment 5: narrower, inventory-dependent):
 - **C61, branched plants (B1).** On S1, decline25 passes in every inclusion state (best p 0.071–0.093).
   On S0 it fails in every state. "Declines into the past fail" holds for decline10 on both, and for
   decline25 only on S0.
-- **C61, land-plant bodies with Oman (B0).** On S1, decline25 passes in every inclusion state (0.061–0.068),
-  so "each isolated early find makes every declared history fail the shape test in every inclusion state"
-  is S0-specific for the Oman record. B0 without Oman: decline25 fails on S1 (≤ 0.027), as on S0.
+- **C61, isolated early finds.** On S1, decline25 passes in every inclusion state for land-plant bodies with
+  Oman (0.061–0.068) and for branched plants with Zbrza (B1 inclusive, best 0.084). "Each isolated early
+  find makes every declared history fail the shape test in every inclusion state" is therefore S0-specific
+  for both records. Every other history still fails on S1 for both. B0 without Oman: decline25 fails on S1
+  (≤ 0.027), as on S0.
+- **C61, gap benchmarks on S1** (S0 in brackets):
+  - after Oman: at least 10.26 times lower (7.65); longest gap 16.60 (12.38); region–stage 3.28 (2.97);
+  - after Zbrza: 8.16 (6.09); 9.84 (7.34); 2.81 (2.55);
+  - Homerian after *C. barrandei*: 2.21 (1.61); 3.51 (2.56); region–stage 0.70 (0.62), still no reduction.
 
 ### Claims that change: proposed ledger wording (held, not applied)
 
@@ -451,8 +478,8 @@ break its text bindings while the texts are frozen, so the wording is held here.
     - Capel et al.'s species-endpoint list: 0.39–0.49, by region and stage only.
 
     No inventory rejects a level rate by region and stage. Counted by locality and age, the PBDB-backed
-    inventory rejects it downward for the Gorstian–Přídolí (largest p 0.047). It does not for the
-    Ludfordian–Přídolí, or with A at 425.0 Ma. Within the exponential family, the largest compatible rise
+    inventory rejects it downward for the Gorstian–Přídolí (largest p 0.047). The rejection is lost for
+    the Ludfordian–Přídolí (p 0.24), with A at 425.0 Ma (p 0.060), and with merged localities (p 0.068). Within the exponential family, the largest compatible rise
     in finding from A to 393.47 Ma is 1.5–2.4-fold on the reviewed inventory's named cells, 1.9–3.0-fold
     with the restored collections, and 12.5–18.1-fold on PBDB-backed cells (24.5–33.9 by locality and
     age). Late-Silurian finds are multiregional (six regions; five in Capel; three PBDB-backed). The level
@@ -468,11 +495,14 @@ break its text bindings while the texts are frozen, so the wording is held here.
   - **Spore share alone, inventory-dependent:**
     - The disagreement holds on the literature-curated inventories (S0, S1; p ≤ 0.0045) and on S3 cells
       (p 0.016–0.042).
+    - Capel's support is weak: p 0.016–0.042 with named cells, and the Gorstian–Přídolí cell is not
+      established when the pooled codes are counted (0.064).
     - It does not hold on PBDB-backed units (S2a, S2b; locality–age p 0.07–0.50, cells 0.04–0.14). The
-      one exception is S2a's cells at A = 425.0 Ma, where p is 0.042.
+      one exception is S2a's named cells at A = 425.0 Ma, where p is 0.042.
     - On PBDB-backed counts, then, the spore share is not contradicted by the later record. Its 5.1–7.1-fold
-      fall fits ancestors at 444–452 Ma with about 29–31 or fewer independent finds (C56: 31.05 at 444 Ma, 29.43 at 452 Ma), which includes the
-      region–stage counts (16–21).
+      fall fits ancestors at 444–452 Ma with about 29–31 or fewer independent finds (C56: 31.05 at 444 Ma,
+      29.43 at 452 Ma). S2b's region–stage counts (16–18) are within that; S1's cells reject the spore
+      share.
   - Searching remains compatible on every inventory.
 - **C49, narrowed.**
   - Pure decline10 fails in every inclusion state on the reviewed and restored inventories (S0, S1) and on
@@ -492,8 +522,10 @@ break its text bindings while the texts are frozen, so the wording is held here.
   - The steady-rate limits stay older than 431.2 Ma on S1 (433.76–436.77 Ma).
   - "Declines into the past fail" for the branched record becomes "decline10 fails; decline25 fails on the
     reviewed inventory and passes once the Early Devonian collections are restored".
-  - The statement that the Oman find makes every declared history fail in every inclusion state becomes
-    S0-specific: on S1, decline25 passes.
+  - The statement that each isolated early find (Oman, Zbrza) makes every declared history fail in every
+    inclusion state becomes S0-specific: on S1, decline25 passes for both.
+  - Gap benchmarks rise on S1: Oman 7.65 → 10.26, Zbrza 6.09 → 8.16. The Homerian benchmark is 1.61 → 2.21,
+    and still shows no reduction by region and stage.
 - **C62, holds; add sensitivity.** The factor rises from 8.4 to 11.3 with the restored collections
   (region–stage 3.2 → 3.6), and without Oman from 13.4 to 17.9.
 

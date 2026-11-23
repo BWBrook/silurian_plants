@@ -13,7 +13,8 @@ Runs every inventory at its natural oldest age and, for Task 6, with the Yea uni
 - Task 4.2: the Devonian-free window (c = 419.62 Ma) under all six histories, with leave-Bathurst-out;
 - Task 5: the interval-wide KS feasibility over the four inclusion states (C49), S0-S2b, and B1, B0 on S1;
 - the gate table (S3-A17, S3-A21 to S3-A23).
-Every piece first reproduces its committed S0 values. It writes only inventory_symmetry_stage2_*.csv.
+Every piece is checked against its committed S0 values (check_s0) before any output is written. It writes
+only inventory_symmetry_stage2_*.csv.
 
     uv run studies/f3/models/loop3/inventory_symmetry_stage2.py
 """
@@ -140,6 +141,21 @@ def group_rows(records, label):
             for lab, cnt in (("all", n), ("region_stage", n_rs)):
                 row[f"fold_{int(t)}_{lab}"] = f"{(t - A) / ((A - C) * groups.m_star(cnt)):.4f}" if t > A else ""
         rows.append(row)
+    cases = (("B0", "main", "with Oman", 432.9, "gap after the Oman fragments"),
+             ("B1", "inclusive", "", 432.9, "gap after Zbrza"),
+             ("B1", "main", "", 426.7, "Wenlock after C. barrandei"))
+    for category, reading, note, edge, stretch in cases:
+        u = groups.units_for(records, category, reading, note)
+        n_other = groups.steady(u)[0] - 1
+        oldest, k_min, k_max, gap, later, rho = groups.inside(u, edge, n_other)
+        n_rs = groups.steady(groups.units_for(records, category, reading, note, "region_stage"))[0] - 1
+        rows.append({"set": label, "category": category, "reading": reading, "variant": note or "primary",
+                     "stretch": stretch, "n_other": n_other, "k_in_span": k_max,
+                     "level_expected": f"{n_other * gap / (gap + later):.2f}",
+                     "times_less_often_at_least": f"{1 / rho:.4f}",
+                     "times_less_often_at_least_longest_gap":
+                         f"{1 / groups.rho_upper(n_other, k_max, oldest.max_ma - edge, later):.4f}",
+                     "times_less_often_at_least_region_stage": f"{1 / groups.rho_upper(n_rs, k_max, gap, later):.4f}"})
     for note, k in (("with Oman", 1), ("without Oman", 0)):
         u = groups.units_for(records, "B0", "main", note)
         n_all = groups.steady(u)[0]
@@ -170,8 +186,8 @@ def shape_jobs(h, disp):
             jobs.append((s, "B2", run_name, units(h, disp, s, exclude_members=ex)))
     for s in ("S0", "S1"):
         r = build(h, disp, s)
-        for category, reading, note in groups.GROUPS[:3]:
-            jobs.append((s, f"{category} {note}".strip(), "natural", groups.units_for(r, category, reading, note)))
+        for category, reading, note in groups.GROUPS[:4]:
+            jobs.append((s, f"{category} {reading} {note}".strip(), "natural", groups.units_for(r, category, reading, note)))
     return jobs
 
 
@@ -198,10 +214,15 @@ def check_s0(t4, grp, shp):
         for col in ("fold_444_all", "fold_452_all", "fold_444_region_stage", "fold_452_region_stage"):
             assert (m[col] or "nan") == (getattr(r, col) if isinstance(getattr(r, col), str) else "nan"), (r.category, col)
     gi = pd.read_csv(OUT / "groups_inside.csv", dtype=str)
-    for r in gi[gi.variant.str.contains("spore")].itertuples():
-        m = grp[grp.set.eq("S0") & grp.variant.eq(r.variant)].iloc[0]
+    for r in gi.itertuples():
+        sel = grp.set.eq("S0") & grp.variant.eq(r.variant)
+        if "spore" not in r.variant:
+            sel &= grp.stretch.eq(r.stretch)
+        m = grp[sel].iloc[0]
         assert (m.times_less_often_at_least, m.times_less_often_at_least_region_stage) == (
             r.times_less_often_at_least, r.times_less_often_at_least_region_stage), r.variant
+        if "spore" not in r.variant:
+            assert m.times_less_often_at_least_longest_gap == r.times_less_often_at_least_longest_gap, r.stretch
     s = pd.read_csv(OUT / "stage2_interval/interval_feasibility_summary.csv")
     label = {"00": "B2_guaranteed", "11": "B2_possible", "01": "B2_partial_01", "10": "B2_partial_10"}
     mine = shp[shp.set.eq("S0") & shp.category.eq("B2") & shp.run.eq("natural")]
@@ -209,9 +230,8 @@ def check_s0(t4, grp, shp):
         ref = s[s.category.eq(label[r.mask]) & s.history.eq(r.history)].iloc[0]
         assert abs(r.best_finite_p - ref.witness_finite_sample_p) < 1e-9 and r.feasible_finite_0_05 == ref.any_finite_sample_p_ge_0_05
     gs = pd.read_csv(OUT / "groups_shape.csv")
-    names = {"B0 with Oman": "B0 main with Oman", "B0 without Oman": "B0 main without Oman", "B1": "B1 main"}
     for r in shp[shp.set.eq("S0") & shp.category.ne("B2")].itertuples():
-        ref = gs[gs.group.eq(names[r.category]) & gs.history.eq(r.history) & gs.partial_inclusion_mask.astype(str).str.zfill(2).eq(r.mask)]
+        ref = gs[gs.group.eq(r.category) & gs.history.eq(r.history) & gs.partial_inclusion_mask.astype(str).str.zfill(2).eq(r.mask)]
         assert len(ref) == 1 and f"{r.best_finite_p:.3g}" == f"{ref.best_p.iloc[0]:.3g}" and r.feasible_finite_0_05 == ref.feasible.iloc[0], r
     print("S0 reproduces reviewed_bounds.csv (Emsian, Pridoli), groups.csv, groups_inside.csv, groups_shape.csv and "
           "interval_feasibility_summary.csv")
