@@ -434,3 +434,38 @@ leave open; the gate code in `inventory_symmetry_stage2.py` applies them mechani
   - Every new piece first reproduces its committed S0 values (`interval_feasibility_summary.csv`,
     `groups.csv`, `groups_inside.csv`, `groups_shape.csv`, the Přídolí-cutoff rows of
     `reviewed_bounds.csv`) and asserts them before any other set is read.
+
+## S3-A25: repairs after Codex's Stage 2 review (23 November 2026)
+
+Post hoc: these follow Codex's review of the Stage 2 outputs and were not frozen before any number existed.
+They change no verdict of gates 1–4c. [Stage 2 review](2026-11-23-inventory-symmetry-stage2-review.md)
+
+- **S3-A25, jointly possible allocations, region–stage Bathurst removal, the literal-Yea selector and the
+  gate 5 row.**
+  - Every Task 4 row keeps the conservative range envelope (the guaranteed count paired with the oldest
+    possible age), the published convention of `reviewed_bounds.csv`. Beside it, the `admissible_*` columns
+    give the oldest bound over allocations that can occur together. Each straddling unit lies either outside
+    the window or inside it at its oldest age. More units tighten a bound and an older A loosens it, so the
+    candidates are the guaranteed units alone and the guaranteed units plus one straddling unit older than
+    all of them. A beyond-domain bound ranks oldest. Constant-formula rows also give the smallest fold at
+    444 and 452 Ma over the candidates. A quoted fold or limit names the calculation it uses.
+  - Region–stage rows use the pooled midpoint cells at a stipulated anchor. The jointly possible columns
+    move only units that straddle the cutoff; they do not re-form cells. At c = 393.47 Ma the Australian
+    midpoint cell is guaranteed, so its 426.7 Ma oldest age and the 19-cell S0 count come from different
+    Ghin Ghin placements, as in the committed C48 and C55 rows. Locality–age counts do not depend on
+    placement.
+  - Task 4.1 reports the six-history bounds at the pooled midpoint region–stage rule as well as at
+    locality_age.
+  - Task 4.2's leave-Bathurst-out at region_stage removes the Bathurst Silurian units (S3-A24) before the
+    cells are formed. Collapsing Bathurst to one unit is not repeated at region_stage, where its units
+    already share one cell.
+  - `yea_literal` gains a 425.0 Ma run without rows 124, 734 and 1199, labelled `bathurst_425`. Its units
+    are asserted equal to S3 main's run without those rows. The literal natural run keeps Yea, also at
+    425.0 Ma, and stays the natural-A run. Gates 1, 2 and 3b read the `bathurst_425` run for the 425.0 Ma
+    comparison.
+  - The specification gives gate 5 only a "holds" branch. Its row records the full-window locality_age folds
+    on S0–S2b, the smallest jointly possible fold at 444 Ma over every S0–S2 Task 4 row, and the rows whose
+    fold at 444 Ma falls to 1 or below under either calculation. Upward sensitivity: the S1 and S2b
+    full-window folds are at least S0's. Downward sensitivity: the smallest jointly possible Devonian-free
+    fold at 444 Ma is below the smallest Devonian-free locality_age envelope fold of S0, S1 and S2b with
+    every unit kept (2.98, where the specification's 3.0–9.4 baseline starts).

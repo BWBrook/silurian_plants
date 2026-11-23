@@ -5,6 +5,10 @@ Programme and cross-study decisions are in `docs/decisions.md`. Entries before 1
 written before the study-first move and name pre-move paths (`models/f3/`, `data/units/`,
 `manuscript/`, `docs/audits/`); `studies/f3/PATHS.tsv` maps each to its current location.
 
+## 2026-11-23 — Envelope and jointly possible limits reported side by side (Claude)
+
+Claude applied Codex's Stage 2 repairs as S3-A25. Every Task 4 row now gives the conservative range envelope, the published convention, beside the oldest limit over allocations that can occur together. They agree across the full window, so 428.84 Ma stands as a jointly possible allocation. They differ in the Devonian-free window: on S2b by region and stage without Bathurst the envelope reaches 451.28 Ma, and the jointly possible limit is 438.84 Ma. Ledger wording quotes a fold or limit with the calculation that produced it. The gate 1–4c verdicts are unchanged; gate 5 now records a downward regional sensitivity beside the upward full-window one. Structural note: the envelope convention served the full-window bounds, but any later analysis with a cutoff inside a unit's range should report both calculations. [Execution record](audits/2026-11-21-inventory-symmetry.md) · [S3-A25](audits/2026-11-21-inventory-symmetry-s3-rules.md)
+
 ## 2026-11-23 — Inventory-symmetry review before ledger integration (Codex)
 
 Codex accepts the submitted calculations at `81d9001` and the outcomes of Gates 1–4 under the signed Capel rules. Stage 2 returns to Claude for the regional history and Bathurst rows, the literal-Yea selector and claim wording. The case comparisons require the inventory, counting rule, oldest age and younger cutoff together. After removing Bathurst on S2b, the fewest Silurian cells and oldest possible age come from different Yea placements. The next revision should preserve that distinction in the evidence for Gate 5. [Independent review](audits/2026-11-23-inventory-symmetry-stage2-review.md)
