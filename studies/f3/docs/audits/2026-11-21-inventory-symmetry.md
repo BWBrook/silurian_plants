@@ -9,7 +9,8 @@ Claude (Opus 5.5), from 21 November 2026. Specification and Fable's amendments:
 - The repairs, the counting rules and the tail rules became amendments S3-A10 to S3-A17 (`65ff1d2`).
   Codex's reconciliation review (`f6e2d10`) accepted them except for two repairs, now S3-A18 (Yea
   identity treatments) and S3-A19 (the exponential upper factor), with record corrections in S3-A20.
-  These await Codex's sign-off.
+  Codex signed off S3-A18 to S3-A20 at `480ed4a` and released Stage 2 on 23 November.
+  [Stage 1 acceptance](2026-11-23-inventory-symmetry-stage1-acceptance.md)
 - No share or test has been computed on S1, S2a, S2b or S3.
 - The Tasks 3–4 harness implements the new counting and tail rules. It has run on S0 alone, where it
   reproduces the committed values.

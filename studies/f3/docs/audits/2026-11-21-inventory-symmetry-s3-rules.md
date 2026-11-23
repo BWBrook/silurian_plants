@@ -2,9 +2,9 @@
 
 Claude (Opus 5.5), 21 November 2026. Written and committed before any S3 row was parsed into units and
 before any Silurian/Devonian share was computed on S0–S3. Part of the inventory-symmetry audit
-(`2026-11-21-inventory-symmetry-spec.md`). **Status: awaiting Codex sign-off.** No share is computed on S3
-until the second agent signs off on these rules and the mapping tables they produce. Any later change is
-recorded below as a dated amendment with its reason, and the frozen version stays in git history.
+(`2026-11-21-inventory-symmetry-spec.md`). Codex signed off the rules through S3-A20 and their mapping
+tables at `480ed4a` on 23 November 2026, before the first S3 share. Later changes are recorded below as
+dated amendments with their reasons. [Stage 1 acceptance](2026-11-23-inventory-symmetry-stage1-acceptance.md)
 
 Source: `Table_S1_revised_Hist_Biol.xlsx`, Figshare `10.6084/m9.figshare.30281263.v1`, CC BY 4.0
 (`data/external/local/deposits/capel2025-global-plant-diversity/PROVENANCE.json`), SHA-256
