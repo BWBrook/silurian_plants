@@ -1,0 +1,52 @@
+--- a/studies/f3/manuscript/figures_main.py
++++ b/studies/f3/manuscript/figures_main.py
+@@ -92,4 +92,5 @@
+             ("Borenshult-1 triletes,\ndefinite identification", bor),
+             ("Sporangial fragments,\nGhaba-1, Oman", oman),
++            ("Branched plants\n(C. barrandei)", F.body_first("B1")),
+             ("Crown vascular-\nplant bodies", b2)]
+     for i, (lab, (possible, certain)) in enumerate(reversed(rows)):
+@@ -313,8 +314,8 @@
+     for name, old, young in F.CLOCKS["tracheophyta"]:
+         b.axvspan(young, min(old, 456), color=CLOCK[name], alpha=0.10 if name.startswith("Morris") else 0.2, lw=0)
+-    b.text(449.5, 125, "Harris", fontsize=7, ha="center", color=INK)
+-    b.text(430, 125, "Hooper", fontsize=7, ha="center", color=INK)
+-    b.text(440, 125, "Morris (to 451 Ma)", fontsize=7, ha="center", color=INK)
+-    b.axvline(VASCULAR_MAXIMUM, color=INK, lw=0.8, ls=(0, (4, 3)))
++    b.text(449.5, .985, "Harris", fontsize=7, ha="center", va="top", transform=b.get_xaxis_transform(), color=INK)
++    b.text(430, .985, "Hooper", fontsize=7, ha="center", va="top", transform=b.get_xaxis_transform(), color=INK)
++    b.text(440, .985, "Morris (to 451 Ma)", fontsize=7, ha="center", va="top", transform=b.get_xaxis_transform(), color=INK)
++    b.axvline(VASCULAR_MAXIMUM, ymax=.91, color=INK, lw=0.8, ls=(0, (4, 3)))
+     for d, step, style in ((0, "650", "-"), (10, "450", (0, (6, 2))), (20, "250", (0, (3, 1, 1, 1)))):
+         b.plot(t, contrast("primary", d), color=BLUE[step], lw=2, ls=style,
+@@ -325,13 +326,13 @@
+            label=f"curated oldest records (n = {params['curated'][2]}), no delay")
+     ruler_rows = F.read(RULERS)
+-    for key, col, style, lab, check in (("rock_nonmarine_area", "#8c6d46", "-", "rock", "fails"),
+-                                        ("search_all", "#8f8e86", (0, (5, 1.5, 1, 1.5)), "searching", "compatible"),
+-                                        ("spores_trilete_share", "#4f8a3a", "-", "spores", "fails")):
++    for key, col, style, direct, lab in (("rock_nonmarine_area", "#8c6d46", "-", "rock", "North American non-marine rock area"),
++                                        ("search_all", "#727167", (0, (5, 1.5, 1, 1.5)), "collections", "PBDB collection density (all)"),
++                                        ("spores_trilete_share", "#4f8a3a", "-", "spores", "Trilete-reporting share")):
+         pts = sorted((float(r["candidate_ma"]), float(r["later_to_earlier"])) for r in ruler_rows
+-                     if r["ruler"] == key and r["later_to_earlier"] not in ("inf",) )
+-        xs, ys = [x for x, _ in pts], [y for _, y in pts]
+-        b.plot(xs, ys, color=col, lw=1.2, ls=style, label=f"ruler: {lab} (" + ("fails later-find check" if check == "fails" else "compatible with later finds") + ")")
+-        b.text(455.6, ys[-1] * (1.09 if lab != "rock" else 0.93), lab if check == "compatible" else f"{lab} ✗", fontsize=6.6, color=col, ha="left",
+-               va="bottom" if lab != "rock" else "top")
++                     if r["ruler"] == key and r["later_to_earlier"] != "inf")
++        xs, ys = zip(*pts)
++        b.plot(xs, ys, color=col, lw=1.2, ls=style, label=lab)
++        b.text(455.6, ys[-1] * (0.93 if direct == "rock" else 1.09), direct, fontsize=6.6,
++               color=col, ha="left", va="top" if direct == "rock" else "bottom")
+     for r in rows:
+         if r["status"] == "contour" and r["unit_treatment"] == "primary" and float(r["assumed_diagnostic_delay_myr"]) == 0 \
+@@ -341,6 +342,6 @@
+             b.text(float(r["candidate_lineage_ma"]), k * 1.18, f"{k:.1f}×", fontsize=7, ha="center", va="bottom")
+     b.set_yscale("log")
+-    b.set_ylim(0.9, 170)
+-    b.set_yticks([1, 2, 5, 10, 20, 50, 100], ["1", "2", "5", "10", "20", "50", "100"])
++    b.set_ylim(0.9, 90)
++    b.set_yticks([1, 2, 5, 10, 20, 50], ["1", "2", "5", "10", "20", "50"])
+     b.minorticks_off()
+     b.set_xlim(456, 426)

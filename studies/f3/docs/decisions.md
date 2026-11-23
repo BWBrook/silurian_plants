@@ -5,6 +5,10 @@ Programme and cross-study decisions are in `docs/decisions.md`. Entries before 1
 written before the study-first move and name pre-move paths (`models/f3/`, `data/units/`,
 `manuscript/`, `docs/audits/`); `studies/f3/PATHS.tsv` maps each to its current location.
 
+## 2026-11-23 — Geographic evidence and inventory-dependent finding in the revision (Codex, following Gemini)
+
+Gemini recommended leading on geographic occurrence and keeping the inventory comparisons in one supplement table. Codex adopts that structure for the integration draft. The 10 Myr age-shape result needs its age-range basis, and the finding-rate and geographical comparisons retain their distinct counting units. Results (g) and figure 3b will keep all-collection searching with its endpoint ratios. The trial figure includes the full finite rock-area curve and the primary branched-plant bar. The accepted gate decisions and the source inventories remain the basis for the ledger and estimand draft. [Checked reasons and age examples](audits/2026-11-23-gemini-integration-review.md) · [Proposed passages and table](audits/2026-11-23-inventory-integration-draft.md)
+
 ## 2026-11-23 — Stage 2 accepted for ledger and estimand drafting (Codex)
 
 Codex accepts the five inventory-symmetry gates and S3-A25 at `7e4f000`. The 48-unit count and 426.7 Ma oldest age giving the 428.84 Ma steady-rate limit can occur together. Regional bounds condition on grouping localities by their midpoint stages. In the Silurian-only PBDB-backed comparison, keeping Bathurst gives minimum zero-delay rate ratios of 2.06 and 2.93 at 444 and 452 Ma. Removing its two localities before forming cells reduces these to 1.43 and 2.08. With Bathurst kept, the oldest limit and smallest ratios come from different placements of Yea. The accepted wording also distinguishes the two Capel comparisons at 425 Ma and the direction of the searching tests. The ledger and estimand draft comes next. [Acceptance and case-specific wording](audits/2026-11-23-inventory-symmetry-stage2-acceptance.md)

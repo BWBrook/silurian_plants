@@ -11,6 +11,8 @@ The register is updated at each loop's close. Started 2026-10-28 by Claude Opus 
 
 **Inventory symmetry, 23 November (Q1).** Allocating finds in proportion to rock area predicts too few late-Silurian finds in the occurrence inventories and too few occupied cells in Capel’s species-endpoint list. The result for the trilete-reporting share and the lower benchmark on late-Silurian finding depend on how the inventory was assembled. Restoring broadly dated Early Devonian collections also lets the 10 Myr decline pass the age-range test on PBDB-backed finds. Q1 remains active. Codex verified the regional Bathurst comparison and signed off the wording for the ledger and estimand draft. [Stage 2 acceptance](../studies/f3/docs/audits/2026-11-23-inventory-symmetry-stage2-acceptance.md)
 
+For the 59 guaranteed database-backed finds, the 10 Myr history admits assignments with either two or all 21 of the restored units younger than 400 Ma. Applying full-stage constraints to Newton Dingle and La Gileppe lowers the best finite-sample *p* from 0.23844 to 0.06987. The relevant uncertainty is how finely the published finds can be dated. [Age-range check](../studies/f3/docs/audits/2026-11-23-gemini-integration-review.md)
+
 **C62 accepted, 17 November (Q1):** Codex accepts the repaired comparison at
 220887a. The main inventory retains Oman and gives conditional factors 8.4
 (3.2 by region and stage); 13.4 (5.2) is the no-Oman sensitivity. These are

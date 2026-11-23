@@ -93,7 +93,10 @@ data archived, and the human–AI correspondence record published alongside.
   finds asymmetrically (a 20 Myr age-duration filter that drops every collection dated only to the Early
   Devonian, and literature curation concentrated in the Silurian), which bears on C59 and C60, and wrote
   the inventory-symmetry specification Claude and Codex run
-  (`studies/f3/docs/audits/2026-11-21-inventory-symmetry-spec.md`). It makes no repository edits.
+  (`studies/f3/docs/audits/2026-11-21-inventory-symmetry-spec.md`). Its follow-up identified a potential
+  switch of collection series between the Results and figure and proposed distinguishing geographic
+  occurrence from changes in finding frequency. [Codex’s checks and integration draft](../studies/f3/docs/audits/2026-11-23-gemini-integration-review.md).
+  It makes no repository edits.
 - Codex model identity. Barry, 14 November 2026: "Codex is actually Astra and Sol underneath the hood."
   Entries below name the Codex model where a session exposed it (`gpt-6.1-sol`, `gpt-6.1-terra`,
   `gpt-5.6-sol`, `gpt-5.6-luna`) and say so where it did not. Board posts by the historical author
