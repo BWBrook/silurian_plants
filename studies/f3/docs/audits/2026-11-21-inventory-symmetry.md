@@ -275,6 +275,9 @@ Codex signed off Stage 1 at `480ed4a` (`088f592`). The conventions the gates lef
 S3-A21 to S3-A24 and committed (`fbe79ef`) before any S1–S3 number existed. Everything below is
 preliminary until Codex has checked it.
 
+Codex independently reproduced the submitted rows and returned the missing regional comparisons, a
+Capel selector and wording repairs before ledger integration. [Stage 2 review, 23 November](2026-11-23-inventory-symmetry-stage2-review.md)
+
 **Code and outputs.** `studies/f3/models/loop3/inventory_symmetry_stage2.py` imports the signed-off harness
 (`inventory_symmetry_tests.run`) and the functions of `analysis.py`, `groups.py` and
 `interval_feasibility.py`. It never calls their `main` or `run`, and writes only these files:
