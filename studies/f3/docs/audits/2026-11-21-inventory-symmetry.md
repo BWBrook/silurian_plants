@@ -4,7 +4,10 @@ Claude (Opus 5.5), from 21 November 2026. Specification and Fable's amendments:
 `2026-11-21-inventory-symmetry-spec.md`. Frozen S3 rules: `2026-11-21-inventory-symmetry-s3-rules.md`
 (committed `7b6e3ae` before any S3 parse). Board discussion 191.
 
-**Stage 1 status (this record), 23 November 2026.**
+**Status, 23 November 2026.** Stage 1 is signed off (`088f592`). Stage 2 has run and awaits Codex's check:
+see "Stage 2 results" at the end.
+
+**Stage 1 status, 23 November 2026.**
 - Codex signed off Task 1A (`f22b451`) and returned the S3 mapping for four repairs.
 - The repairs, the counting rules and the tail rules became amendments S3-A10 to S3-A17 (`65ff1d2`).
   Codex's reconciliation review (`f6e2d10`) accepted them except for two repairs, now S3-A18 (Yea
@@ -266,15 +269,271 @@ Second round, 23 November 2026: S3-A18 to S3-A20, `capel_s3_yea_units.csv` and t
    definition more closely. Recommendation: keep main as frozen in §3 and let f3_strict trigger
    "narrower" through S3-A17.
 
-## Stage 2 (after sign-off)
+## Stage 2 results (23 November 2026)
 
-Run Tasks 3, 4 and 6 on S0, S1, S2a, S2b (with variants) and on the S3 readings, each S3 reading under the
-four Yea treatments of S3-A18 and `yea_literal` at 425.0 Ma, and Task 5 on S0–S2b, under S3-A15 to S3-A19.
-- Report the legacy region–stage pair beside the cell rule.
-- For every set, report the expected count, the smallest count rejected high and the largest count
-  rejected low (amendment 6).
-- Run all six histories in Task 4.2 (amendment 7). Then build the gate table. Any outcome outside the stated
-gate cases counts as "narrower, inventory-dependent" (amendment 5). The gate thresholds were set after
-Gemini's preliminary sums on S1 and S2: they are decision rules, not a blind pre-registration. Ledger
-changes follow both agents' verification and, while the texts stay frozen, are held as written proposals
-here.
+Codex signed off Stage 1 at `480ed4a` (`088f592`). The conventions the gates left open were frozen as
+S3-A21 to S3-A24 and committed (`fbe79ef`) before any S1–S3 number existed. Everything below is
+preliminary until Codex has checked it.
+
+**Code and outputs.** `studies/f3/models/loop3/inventory_symmetry_stage2.py` imports the signed-off harness
+(`inventory_symmetry_tests.run`) and the functions of `analysis.py`, `groups.py` and
+`interval_feasibility.py`. It never calls their `main` or `run`, and writes only these files:
+
+| File | SHA-256 |
+|---|---|
+| `out/inventory_symmetry_stage2_tests.csv` (Tasks 3 and 6: C59 placement, C60, C27/C48 arithmetic) | `41f928aa1c9c02781f233ab5163a0b8f47443e81962c11995505b1ecf50f87fa` |
+| `out/inventory_symmetry_stage2_task4.csv` (Tasks 4.1, 4.2 and 6) | `2ad1858570106dfe5dbc4c119f7b730c9521e3d1d30d5299b14ea8bc4843a1b6` |
+| `out/inventory_symmetry_stage2_groups.csv` (B1, B0 on S0 and S1) | `9848b290ba9cb3babcf91ac71739bb3e532253843fad0d68766034b375110c25` |
+| `out/inventory_symmetry_stage2_shape.csv` (Task 5: KS feasibility over four inclusion states) | `a0c3da57765e6a464932057384063376282d454cdf571b45d361d8be39310744` |
+| `out/inventory_symmetry_stage2_gates.csv` (gate evaluator) | `5ddc2000dda3cb7ed03b00d6e7ad113029ccde4120d6d3c85af413312e39ca30` |
+
+Reproduce: `uv run studies/f3/models/loop3/inventory_symmetry_stage2.py` (about 40 s on `mini`).
+
+**Reproduction checks, asserted before any other set is read.**
+- The S0 rows of the tests table equal the signed `inventory_symmetry_tests_S0.csv` byte for byte.
+- `reviewed_bounds.csv`: all six histories at the Emsian and Přídolí cutoffs (B2 main primary). This
+  includes 429.80490705 Ma for decline10 at the Přídolí cutoff, and the two decline10-type rows that are
+  beyond the domain.
+- `groups.csv` and `groups_inside.csv` for B1 and B0: steady limits under all four counting rules, the folds
+  and the spore-anchored factors.
+- `interval_feasibility_summary.csv` (B2) and `groups_shape.csv` (B1, B0): p values and finite-sample
+  verdicts in every inclusion state.
+- Gemini's preliminary values where comparable:
+  - S1: 69 units, lower ratios 0.541 (locality–age) and 0.622 (legacy pair, 6 of 21).
+  - S2b: 5 of 59, ratio 0.160; legacy pair 3 of 18.
+  - Spore-share placement p: 0.174 (S2a) and 0.496 (S2b).
+  - S1 folds 11.73–17.16 with T = 428.17 Ma.
+  - Bathurst anchoring: T = 427.17 Ma, folds 8.75–12.44.
+  - Devonian-free bound 428.53 Ma at k = 13.
+
+### Gate outcomes
+
+Deciding sets: S1, S2b and S3 main with Yea treatment `ref` (S3-A21). "Changed by" lists alternative sets
+that would change the outcome if swapped in.
+
+| Gate | Outcome | What decides it | Changed by |
+|---|---|---|---|
+| 1. C59: rock and rock × spore fail later-find placement | **Holds** | An excess is established in every required cell: S1 and S2b at both grains, S3 cells, both intervals, A = 426.7 and 425.0 Ma. The largest p is 0.00051. | none (every variant, S3 reading and Yea treatment holds) |
+| 2. C59: spore share alone fails | **Narrower, inventory-dependent** | Established on S1 (p ≤ 0.0045) and on S3 cells (p 0.016–0.042); not on S2b (locality–age p 0.27–0.50; cells 0.060–0.144). Withdrawal needs S3 as well, so it does not fire. | none |
+| 3. C60: late-Silurian rate near the window mean | **Narrower** (the specification's narrower form) | No set rejects level at region–stage, and no deficit is established at cells. Lower ratios at cells: S1 0.62–0.78; S2b 0.23–0.31 (3 regions); S3 0.39–0.49 (5 regions). At locality–age, S2b establishes a Gorstian–Přídolí deficit (largest p 0.047). The withdrawal conditions are not met. | none |
+| 3b. Gate 3 at A = 425.0 Ma | Narrower | S1 0.71/0.86; S2b 0.21/0.33; S3 0.48. The S2b locality–age deficit is not established at 425.0 Ma (p 0.060). | none |
+| 4a. C27: flat passes the shape test | **Holds**; 428.8 Ma stands | flat passes in every inclusion state on S0, S1 and S2b | none |
+| 4b. C49: decline10 fails the shape test | **Narrower** | Fails in every state on S0 and S1 (best p 0.0064). Passes in every state on S2b (best p 0.24–0.30). Withdrawal would need S3, which has no shape test. | S2a and S2a_coord: decline10 fails there too, so swapping either in for S2b gives "holds" |
+| 4c. C49: decline25 fails on the guaranteed finds | **S0-specific; drop** | S0 guaranteed state fails (0.035). S1 and S2b pass in the guaranteed and all-possible states (S1 0.83–0.88; S2b 1.0). | none |
+| 5. C48, C58, C61, C62: requirements | **Holds, with upward sensitivity recorded** | See Task 4 below | — |
+
+Gate 5 has no failure case. The S3 Yea treatments and readings change no gate outcome. The one exception
+is the region count: S3 permissive and `yea_literal` reach six regions in one interval. S3's locality–age
+rows reject a level rate in both directions (two-sided) and establish a deficit (lower ratios 0.14–0.19).
+They are descriptive under S3-A17 and enter no gate.
+
+### Gate table by set and counting rule (B2)
+
+Each p is the largest over admissible pairs (S3-A16); "n.s." marks an excess not established. The lower
+ratio is the smallest over admissible pairs. The upper factor is S3-A19's largest compatible change in
+the finding rate from A to 393.47 Ma. "est." marks a deficit established at every admissible pair. Rows
+at A = 425.0 Ma are Task 6. Every proxy, the expected counts and the smallest and largest rejecting counts
+(amendment 6) are in `inventory_symmetry_stage2_tests.csv`.
+
+| Set | A (Ma) | Interval | Counting | n | k | Rock / rock×spore p | Spore-share p | Level: lower ratio | Level: deficit p | Two-sided rejected | Upper factor | Regions |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| S0 | 426.7 | Gorstian–Přídolí | locality–age | 48 | 13–16 | 6.4e-16 | 5.9e-05 | 0.790 | 0.983 | no | 1.76 | 6 |
+| S0 | 426.7 | Ludfordian–Přídolí | locality–age | 48 | 13–16 | 6.4e-16 | 3.6e-06 | 1.039 | 0.999 | no | 0.90 | 6 |
+| S0 | 426.7 | Gorstian–Přídolí | cells, named | 17–20 | 6–9 | 1.7e-08 | 0.003 | 0.692 | 0.996 | no | 2.36 | 6 |
+| S0 | 426.7 | Ludfordian–Přídolí | cells, named | 17–20 | 6–8 | 2.4e-08 | 0.00089 | 0.862 | 0.999 | no | 1.47 | 6 |
+| S0 | 425 | Ludfordian–Přídolí | locality–age | 45 | 13 | 2.5e-16 | 2e-06 | 1.056 | 0.985 | no | 0.88 | 6 |
+| S0 | 425 | Ludfordian–Přídolí | cells, named | 17 | 6 | 7.8e-09 | 0.00037 | 0.975 | 0.983 | no | 1.06 | 6 |
+| S1 | 426.7 | Gorstian–Přídolí | locality–age | 69 | 13–16 | 1.1e-13 | 0.003 | 0.541 | 0.708 | no | 3.95 | 6 |
+| S1 | 426.7 | Ludfordian–Přídolí | locality–age | 69 | 13–16 | 1.1e-13 | 0.00022 | 0.712 | 0.954 | no | 2.33 | 6 |
+| S1 | 426.7 | Gorstian–Přídolí | cells, named | 19–22 | 6–9 | 3.3e-08 | 0.004 | 0.622 | 0.990 | no | 2.97 | 6 |
+| S1 | 426.7 | Ludfordian–Přídolí | cells, named | 19–22 | 6–8 | 4.5e-08 | 0.002 | 0.778 | 0.997 | no | 1.89 | 6 |
+| S1 | 425 | Ludfordian–Přídolí | locality–age | 66 | 13 | 5.8e-14 | 0.00016 | 0.707 | 0.773 | no | 2.18 | 6 |
+| S1 | 425 | Ludfordian–Přídolí | cells, named | 19 | 6 | 1.7e-08 | 0.00072 | 0.864 | 0.968 | no | 1.41 | 6 |
+| S2a | 426.7 | Gorstian–Přídolí | locality–age | 38 | 5–7 | 2.9e-05 | 0.174 (n.s.) | 0.250 | 0.421 | no | 16.19 | 3 |
+| S2a | 426.7 | Ludfordian–Přídolí | locality–age | 38 | 5–7 | 2.9e-05 | 0.076 (n.s.) | 0.329 | 0.734 | no | 11.12 | 3 |
+| S2a | 426.7 | Gorstian–Přídolí | cells, named | 14–15 | 3–5 | 0.00035 | 0.108 (n.s.) | 0.267 | 0.921 | no | 14.51 | 3 |
+| S2a | 426.7 | Ludfordian–Přídolí | cells, named | 14–15 | 3–5 | 0.00035 | 0.058 (n.s.) | 0.351 | 0.976 | no | 9.88 | 3 |
+| S2a | 425 | Ludfordian–Přídolí | locality–age | 36 | 5 | 2.2e-05 | 0.067 (n.s.) | 0.330 | 0.406 | no | 9.14 | 3 |
+| S2a | 425 | Ludfordian–Přídolí | cells, named | 13 | 3 | 0.00022 | 0.042 | 0.387 | 0.832 | no | 6.92 | 3 |
+| S2b | 426.7 | Gorstian–Přídolí | locality–age | 59 | 5–7 | 0.00024 | 0.496 (n.s.) | 0.160 | 0.047 (est.) | no | 33.91 | 3 |
+| S2b | 426.7 | Ludfordian–Přídolí | locality–age | 59 | 5–7 | 0.00024 | 0.282 (n.s.) | 0.210 | 0.240 | no | 24.52 | 3 |
+| S2b | 426.7 | Gorstian–Přídolí | cells, named | 16–17 | 3–5 | 0.00051 | 0.144 (n.s.) | 0.234 | 0.866 | no | 18.10 | 3 |
+| S2b | 426.7 | Ludfordian–Přídolí | cells, named | 16–17 | 3–5 | 0.00051 | 0.079 (n.s.) | 0.308 | 0.956 | no | 12.54 | 3 |
+| S2b | 425 | Ludfordian–Přídolí | locality–age | 57 | 5 | 0.00021 | 0.271 (n.s.) | 0.206 | 0.060 | no | 19.92 | 3 |
+| S2b | 425 | Ludfordian–Přídolí | cells, named | 15 | 3 | 0.00035 | 0.060 (n.s.) | 0.333 | 0.755 | no | 9.00 | 3 |
+| S3 main, ref | 426.7 | Gorstian–Přídolí | locality–age | 109 | 7–8 | 8.4e-05 | 0.759 (n.s.) | 0.143 | 6.9e-05 (est.) | yes | 40.21 | 5 |
+| S3 main, ref | 426.7 | Ludfordian–Přídolí | locality–age | 109 | 7–8 | 8.4e-05 | 0.487 (n.s.) | 0.189 | 0.005 (est.) | yes | 29.37 | 5 |
+| S3 main, ref | 426.7 | Gorstian–Přídolí | cells, named | 25–26 | 5–6 | 3.3e-06 | 0.042 | 0.386 | 0.690 | no | 7.53 | 5 |
+| S3 main, ref | 426.7 | Ludfordian–Přídolí | cells, named | 25–26 | 5–6 | 4.1e-06 | 0.018 | 0.488 | 0.885 | no | 5.24 | 5 |
+| S3 main, ref | 425 | Ludfordian–Přídolí | locality–age | 108 | 7 | 7.9e-05 | 0.497 (n.s.) | 0.181 | 0.001 (est.) | yes | 24.60 | 5 |
+| S3 main, ref | 425 | Ludfordian–Přídolí | cells, named | 25 | 5 | 3.3e-06 | 0.016 | 0.482 | 0.755 | no | 4.63 | 5 |
+
+Variants, at natural A:
+- S1_with_28303 and S1_merged give locality–age ratios 0.53–0.75.
+- S2b_with_28303, S2b_merged and S2b_coord give 0.11–0.22.
+- The S2b locality–age deficit at Gorstian–Přídolí is established on S2b, S2b_with_28303 and S2b_coord,
+  and not on S2b_merged (p 0.068).
+- Every S1 and S2 variant matches its base set at region–stage.
+
+### Task 4: requirements and limits
+
+**4.1, full window (c = 393.47 Ma).**
+
+| Set, A | n locality–age; T (Ma); folds 444/452 | n region–stage; T; folds |
+|---|---|---|
+| S0, 426.7 | 48; 428.84; 8.08/11.82 | 19; 432.38; 3.05/4.46 |
+| S1, 426.7 | 69; 428.17; 11.73/17.16 | 21; 431.80; 3.40/4.97 |
+| S2a, 426.7 | 38; 429.43; 6.35/9.28 | 16; 433.54; 2.53/3.70 |
+| S2b, 426.7 | 59; 428.43; 10.00/14.62 | 18; 432.72; 2.88/4.20 |
+| S3 main ref, 426.7 (descriptive) | 109; 427.63; 18.68/27.32 | 28; 430.45; 4.61/6.74 |
+| S0, 425.0 (Task 6) | 45; 427.17; 8.75/12.44 | 19; 430.38; 3.53/5.01 |
+| S1, 425.0 | 66; 426.46; 12.98/18.44 | 21; 429.83; 3.93/5.58 |
+| S2b, 425.0 | 57; 426.70; 11.17/15.87 | 17; 431.08; 3.13/4.44 |
+
+- **Six-history older bounds (C27).** These are at natural A, locality–age.
+  - S1: flat 428.17, PBDB 428.20, plant-excluded 427.91, decline25 429.99, plant-excluded × decline10
+    438.42; decline10 sets no limit within 469.4 Ma.
+  - S2b: flat 428.43, decline25 430.61, plant-excluded × decline10 444.99; decline10 none.
+  - At 425.0 Ma, S0 flat gives 427.17 and decline25 429.78.
+  - The full table, including S3, is in `task4.csv`.
+- **B1 and B0 (C61, C62), S0 → S1.**
+  - B1 main: steady limits by counting rule 434.09–437.19 → 433.76–436.77 Ma, still older than 431.2 Ma.
+    Folds 6.34/10.92 → 8.60/14.80.
+  - B0 spore anchor: 8.41 → 11.29 with Oman (region–stage 3.24 → 3.58); without Oman 13.39 → 17.94
+    (5.19 → 5.74).
+
+**4.2, Devonian-free window (c = 419.62 Ma, guaranteed Silurian-only units).**
+
+| Set, A | k | Constant T (Ma); folds 444/452 | decline10 T | Bathurst collapsed (k; T) | Bathurst removed (k; A; T) |
+|---|---|---|---|---|---|
+| S0 = S1, 426.7 | 13 | 428.53; 9.43/13.79 | 429.80 | 10; 429.17 | 9; 426.7; 429.50 |
+| S0 = S1, region–stage | 6 | 431.28; 3.77/5.52 | — | — | — |
+| S2b, 426.7 | 5 | 432.51; 2.98/4.35 | 445.35 | 4; 434.59 | 3; 426.7; 438.84 |
+| S3 main ref, 426.7 | 7 | 430.48; 4.57/6.69 | 434.69 | — (one unit) | 6; 426.7; 431.28 |
+| S0 = S1, 425.0 | 13 | 426.39; 13.63/19.37 | 427.04 | 10; 426.88 | 9; 422.7; 423.92 |
+| S2b, 425.0 | 5 | 429.41; 4.30/6.12 | 433.79 | 4; 431.00 | 3; 422.7; 427.98 |
+
+S1 adds only Devonian units, so its Silurian-only counts equal S0's. Removing the Bathurst section at
+425.0 Ma moves A to 422.7 Ma.
+
+### Task 5 (C49), and outcomes outside the gates
+
+Best finite-sample p over the four inclusion states, by history (`shape.csv` holds every state):
+
+| Set | flat | decline25 | decline10 | plant-excluded × decline10 |
+|---|---|---|---|---|
+| S0 | 0.985–0.998 | 0.035 (00) – 0.067 (11) | ≤ 9.3e-06 | 0.045–0.057 |
+| S1 | 1.0 | 0.83–0.88 | 0.0043–0.0064 | 0.28–0.31 |
+| S2a | 1.0 | 0.57–0.77 | 0.0031–0.0061 | 1.0 |
+| S2b | 1.0 | 1.0 | 0.24–0.30 | 1.0 |
+
+Results that bear on other claims (amendment 5: narrower, inventory-dependent):
+- **C61, branched plants (B1).** On S1, decline25 passes in every inclusion state (best p 0.071–0.093).
+  On S0 it fails in every state. "Declines into the past fail" holds for decline10 on both, and for
+  decline25 only on S0.
+- **C61, land-plant bodies with Oman (B0).** On S1, decline25 passes in every inclusion state (0.061–0.068),
+  so "each isolated early find makes every declared history fail the shape test in every inclusion state"
+  is S0-specific for the Oman record. B0 without Oman: decline25 fails on S1 (≤ 0.027), as on S0.
+
+### Claims that change: proposed ledger wording (held, not applied)
+
+`claims.csv`, `estimands.md`, the four texts and the figures are unchanged. Changing a bound value would
+break its text bindings while the texts are frozen, so the wording is held here.
+
+- **C60, narrowed.**
+  - **Claim.** A post hoc fixed-window reading of the crown vascular-plant record. The guaranteed
+    late-Silurian counts set a lower bound on the interval-average finding rate relative to the whole
+    later-window mean, and that bound depends on the inventory:
+    - reviewed inventory: 0.69–0.86 by named region and stage, 0.79–1.04 by locality and age;
+    - with the Early Devonian PBDB collections that the duration filter had set aside restored: 0.62–0.78
+      and 0.54–0.71;
+    - PBDB-backed units alone: 0.23–0.31 and 0.16–0.21;
+    - Capel et al.'s species-endpoint list: 0.39–0.49, by region and stage only.
+
+    No inventory rejects a level rate by region and stage. Counted by locality and age, the PBDB-backed
+    inventory rejects it downward for the Gorstian–Přídolí (largest p 0.047). It does not for the
+    Ludfordian–Přídolí, or with A at 425.0 Ma. Within the exponential family, the largest compatible rise
+    in finding from A to 393.47 Ma is 1.5–2.4-fold on the reviewed inventory's named cells, 1.9–3.0-fold
+    with the restored collections, and 12.5–18.1-fold on PBDB-backed cells (24.5–33.9 by locality and
+    age). Late-Silurian finds are multiregional (six regions; five in Capel; three PBDB-backed). The level
+    of late-Silurian finding relative to the Early Devonian is not established: a rise concentrated near
+    A and a ramp through the Early Devonian both fit.
+  - **Value.** The rows above, from `inventory_symmetry_stage2_tests.csv`.
+  - **Limit.** Add: the inventories differ in curation (literature curation went mainly to the Silurian);
+    Capel's endpoint list omits intermediate localities; the gate thresholds were set after preliminary
+    sums.
+- **C59, narrowed for the spore share.**
+  - **Holds on every inventory:** retrospective later-window allocation strongly disagrees with finding
+    proportional to rock area or to rock × spore share (S0, S1, S2a, S2b and S3 cells; p ≤ 0.00051).
+  - **Spore share alone, inventory-dependent:**
+    - The disagreement holds on the literature-curated inventories (S0, S1; p ≤ 0.0045) and on S3 cells
+      (p 0.016–0.042).
+    - It does not hold on PBDB-backed units (S2a, S2b; locality–age p 0.07–0.50, cells 0.04–0.14). The
+      one exception is S2a's cells at A = 425.0 Ma, where p is 0.042.
+    - On PBDB-backed counts, then, the spore share is not contradicted by the later record. Its 5.1–7.1-fold
+      fall fits ancestors at 444–452 Ma with about 29–31 or fewer independent finds (C56: 31.05 at 444 Ma, 29.43 at 452 Ma), which includes the
+      region–stage counts (16–21).
+  - Searching remains compatible on every inventory.
+- **C49, narrowed.**
+  - Pure decline10 fails in every inclusion state on the reviewed and restored inventories (S0, S1) and on
+    PBDB-backed units without the restored Early Devonian collections (S2a). It passes in every state on
+    PBDB-backed units with them (S2b; best p 0.24–0.30).
+  - Remove the S0-specific statement that decline25 fails on the 48 guaranteed finds: decline25 passes in
+    every state on S1 and S2b.
+- **C27, holds; add sensitivity.**
+  - Steady-rate limit: S1 428.17 Ma, S2b 428.43, S2a 429.43 (S3 427.63, descriptive). With A at the
+    Bathurst Ludfordian (425.0 Ma): 427.17 (S0) and 426.46 (S1).
+  - decline10 sets no limit within 469.4 Ma on S0–S2b.
+- **C48 and C58, hold; add sensitivity.** Zero-delay folds at 444/452 Ma are 8.08/11.82 on S0, 11.73/17.16
+  on S1 and 10.00/14.62 on S2b. Region–stage folds change little: 3.05/4.46 on S0, 3.40/4.97 on S1 and
+  2.88/4.20 on S2b. Bathurst anchoring gives 8.75/12.44 (S0). The Devonian-free check (c = 419.62 Ma)
+  gives 9.43/13.79 on S0 and S1 and 2.98/4.35 on S2b, with 5 Silurian units.
+- **C61, narrowed.**
+  - The steady-rate limits stay older than 431.2 Ma on S1 (433.76–436.77 Ma).
+  - "Declines into the past fail" for the branched record becomes "decline10 fails; decline25 fails on the
+    reviewed inventory and passes once the Early Devonian collections are restored".
+  - The statement that the Oman find makes every declared history fail in every inclusion state becomes
+    S0-specific: on S1, decline25 passes.
+- **C62, holds; add sensitivity.** The factor rises from 8.4 to 11.3 with the restored collections
+  (region–stage 3.2 → 3.6), and without Oman from 13.4 to 17.9.
+
+### Text changes the proposals require (not made)
+
+- **Abstract.**
+  - Replace "Late-Silurian fossils turned up at two-thirds or more of their average rate after the oldest
+    find" with the inventory-dependent statement: at least two-thirds in the curated inventory, as low as
+    about a sixth to a third in PBDB-backed counts, and multiregional in every inventory.
+  - Restate "neither matches the finds": rock area fails on every inventory; the spore share fails only on
+    curated inventories.
+  - The 2.4–12 range and the limits keep the reviewed-inventory baseline (gate 5).
+- **Results (d)** (C49, not in the requested list, but bound to the same claim). The decline25 sentence
+  ("fails under every assignment of the 48 finds") needs qualifying as reviewed-inventory-specific. The
+  decline10 sentence ("predicts a spread of fossil ages unlike the one observed, however the uncertain
+  ages are assigned") holds for the curated inventories and not for S2b.
+- **Results (g).**
+  - Keep the rock-area and product statements.
+  - The spore share's failure becomes inventory-dependent.
+  - "Searching, the one measure compatible with this minimum-count allocation" becomes searching and, on
+    PBDB-backed inventories, the spore share. The spore share's fall is large enough for ancestors at
+    444–452 Ma at regional counts (C56).
+- **Results (h).**
+  - Retitle from "two-thirds or more".
+  - Replace 0.79/0.69 with the inventory ranges.
+  - Replace the 1.8- and 2.4-fold exponential bounds with the S3-A19 values and their inventory range,
+    which reaches 12–34-fold on PBDB-backed counts.
+  - "six regions" becomes five to six, three on PBDB-backed units.
+  - The steep-rise passage (C57) stays conditional on a steady later rate. Note that a Devonian ramp
+    removes that premise.
+- **Interpretation paragraph.** Demote the switch to one conditional reading alongside a ramp of finding
+  through the Early Devonian, which the PBDB-backed counts allow. The paragraph's population-growth
+  arithmetic applies only under the switch reading.
+- **Conclusion.**
+  - Rock area keeps "carries little weight". The spore share's dismissal becomes "on curated inventories".
+  - "The pooled late-Silurian finds limit how low the interval's average rate could be, and come from six
+    regions" becomes inventory-dependent.
+  - The steep-climb sentence is conditional on a steady later rate, which the PBDB-backed counts do not
+    require.
+- **Elsewhere.** These follow the same claims:
+  - Results (i) and Table 2 ("Yes; declines fail" for branched plants; C61);
+  - the supplement's C49, C59, C60 and C61 passages;
+  - the brief and the agent guide.

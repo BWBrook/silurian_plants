@@ -142,6 +142,8 @@ def counts(g, rs, lo, hi, A):
     for named in (False, True):
         pl, n_mid, regions = placements(g, named, lo, hi, A)
         out.append(("region_stage_named" if named else "region_stage", n_mid, pl, regions))
+    if rs is None:
+        return out
     late = g[inside]
     out.append(("region_stage_legacy", len(rs), [(len(rs), late.groupby(["region", "min_ma", "max_ma"]).ngroups)],
                 sorted(set(late.region))))
@@ -154,12 +156,13 @@ def lower95(n, k):
 
 def run(name, la, rs, A, prox):
     g = la[(la.min_ma >= C) & (la.max_ma <= A + 1e-9)]
-    gr = rs[(rs.min_ma >= C) & (rs.max_ma <= A + 1e-9)]
-    assert cells(g, False).cell.nunique() == len(gr), (name, cells(g, False).cell.nunique(), len(gr))
+    gr = None if rs is None else rs[(rs.min_ma >= C) & (rs.max_ma <= A + 1e-9)]
+    if gr is not None:
+        assert cells(g, False).cell.nunique() == len(gr), (name, cells(g, False).cell.nunique(), len(gr))
     L = A - C
     rows = []
     for interval, (lo, hi) in {"Gorstian-Pridoli": (LOCHKOVIAN_BASE, A), "Ludfordian-Pridoli": (LOCHKOVIAN_BASE, LUDFORDIAN_BASE)}.items():
-        if hi <= lo:
+        if hi <= lo or (interval == "Gorstian-Pridoli" and A <= LUDFORDIAN_BASE + 1e-9):
             continue
         level = (hi - lo) / L
 
