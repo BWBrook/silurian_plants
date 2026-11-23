@@ -386,3 +386,51 @@ output is S0. They override the amendments above where they differ.
   - **Scope of the placement pairs (qualifies S3-A15).** The nine named pairs per S0 interval hold units
     wholly inside or wholly outside the interval at their midpoint stage. Letting every unit's range vary
     gives 17 pairs per interval (Codex). Results are stated as conditional on the midpoint convention.
+
+### Stage 2 conventions, frozen before any S1–S3 share
+
+Dated 23 November 2026, after Codex's Stage 1 acceptance
+([2026-11-23-inventory-symmetry-stage1-acceptance.md](2026-11-23-inventory-symmetry-stage1-acceptance.md),
+`088f592`) and before any tally, share or test on S1, S2a, S2b or S3. They fix the choices the gates
+leave open; the gate code in `inventory_symmetry_stage2.py` applies them mechanically.
+
+- **S3-A21, deciding sets and variants.**
+  - The gates read the base sets S1 and S2b, and S3 main with Yea treatment `ref`. S2a, the variants
+    `_with_28303`, `_merged` and `_coord`, the other S3 readings and Yea treatments, and `yea_literal` are
+    reported beside them. A gate outcome that changes under any of them counts as "narrower,
+    inventory-dependent", and the gate table names the set that changed it.
+  - S0 is reported throughout and decides nothing in gates 1–3. Gate 4 reads S0, S1 and S2b as the
+    specification states.
+- **S3-A22, the Bathurst-anchored runs (Task 6).**
+  - S0–S2b drop `tail:M-ghin-ghin`, `tail:M-ghin-ghin-b2` and `tail:M-limestone-road` before aggregation;
+    S3 drops rows 124, 734 and 1199. A is re-derived from the remaining units and asserted to be 425.0 Ma,
+    except S3 permissive, whose 426.7 Ma run is reported unforced and whose 425.0 Ma run also drops row 6
+    and is labelled forced.
+  - At A = 425.0 Ma the Gorstian–Přídolí and Ludfordian–Přídolí intervals coincide (419.62–425.0 Ma).
+    Each test is reported once, as Ludfordian–Přídolí.
+  - Gates 1 and 2 read both the natural-A run and the 425.0 Ma run. Gate 3 reads the natural-A run; a
+    change at 425.0 Ma counts as narrower.
+- **S3-A23, gate reading of the test outputs.**
+  - Gates 1 and 2: "p < 0.05" means an excess established under S3-A16, at locality_age and
+    region_stage_named for S1 and S2b and at region_stage_named for S3, in both intervals. A gate holds
+    only if every required cell holds.
+  - Gate 3: "compatible with level" is S3-A16's definition (some admissible pair not rejected two-sided).
+    The lower ratio is the smallest over admissible pairs. "Regions" counts the named regions of units
+    wholly inside the interval at their midpoint placement. Withdrawal reads S2b at both grains and S3 at
+    region_stage_named only, since S3 locality counts are descriptive (S3-A17).
+  - Gate 4: an inclusion state is one of the four inclusion masks of the two units straddling 393.47 Ma
+    (every set has exactly two). A history "attains p ≥ 0.05" in a state when the finite-sample `kstwo`
+    certificate finds an admissible allocation with D at or below the 5% critical value. Gate 4 reads S0,
+    S1 and S2b; S3 has no shape test, so withdrawal cannot fire and a failure on S2b alone counts as
+    narrower.
+- **S3-A24, Task 4.**
+  - Task 4.1 reports T, m*(n) = n(0.05^(−1/n) − 1), K(n) = (A − c)(0.05^(−1/n) − 1) and the zero-delay folds
+    at 444 and 452 Ma from guaranteed counts at locality_age and at the pooled midpoint region_stage rule
+    that C48 and C55 use. It also reports the older bound under all six histories (C27). B1 and B0 (C61,
+    C62) are computed on S0 and S1 with `groups.py`'s functions.
+  - Task 4.2 counts guaranteed Silurian-only units (min ≥ 419.62 Ma) with c = 419.62 Ma under all six
+    histories, at natural A and at 425.0 Ma. Leave-Bathurst-out uses the Bathurst Island Silurian units
+    (min ≥ 419.62 Ma) in two forms: collapsed to one unit with A held, and removed with A re-derived.
+  - Every new piece first reproduces its committed S0 values (`interval_feasibility_summary.csv`,
+    `groups.csv`, `groups_inside.csv`, `groups_shape.csv`, the Přídolí-cutoff rows of
+    `reviewed_bounds.csv`) and asserts them before any other set is read.
