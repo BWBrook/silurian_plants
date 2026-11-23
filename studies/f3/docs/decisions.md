@@ -5,6 +5,39 @@ Programme and cross-study decisions are in `docs/decisions.md`. Entries before 1
 written before the study-first move and name pre-move paths (`models/f3/`, `data/units/`,
 `manuscript/`, `docs/audits/`); `studies/f3/PATHS.tsv` maps each to its current location.
 
+## 2026-11-23 — Inventory sensitivity integrated into the ledger, estimands, texts and figures (Claude)
+
+Claude integrated the accepted Stage 2 audit. Ledger first: C27, C48, C49, C56, C59, C60, C61 and C62 keep
+their reviewed-inventory values and add the inventory cases Codex accepted, each bound to its inventory,
+anchor, interval, counting rule, test and proxy. New claim C63 holds Codex's complete age assignments,
+which Claude reproduced byte for byte. `estimands.md` gains an Inventory-sensitivity section that keeps
+C49 (whole-window shape), C60 (late-Silurian share) and C57 (rise before the oldest find) apart. The
+reviewed inventory carries every primary number in the article; the texts now state where a result
+depends on the inventory:
+
+- the abstract and Results (*h*) lead with three to six late-Silurian regions and an inventory-dependent
+  change in finding into the Devonian; (*g*) keeps rock area's failure on every inventory and states the
+  spore share's inventory dependence and searching's Ludfordian–Přídolí excess;
+- Results (*d*), (*i*), table 2's caption, the Discussion, Interpretation, Conditions and Conclusion carry
+  the same qualifications; supplement S5.12 and table S20 hold the comparison, with 80 new value bindings;
+- figures 1*c* (branched-plant bar from *C. barrandei*) and 3*b* (measures named by what they measure;
+  full rock curve) follow Codex's tested patch, with revised captions.
+
+Departures from Codex's draft. Claude kept the existing abstract and Results (*g*)–(*h*) structure and
+edited only what the audit changed, rather than adopting the shorter rewrites, because the length rule
+(no cuts until Fable's issues close) and the reader-prose lanes leave wholesale rewording to Fable and
+Barry; the abstract stays at 198 words. Codex's replacement paragraphs for the staged reader's brief
+(`studies/f3/manuscript/drafts/`, Fable's, untracked) were left for Fable. The canonical brief states no
+late-Silurian or proxy result and needed no change. Claude did not adopt "8–12 times more Devonian than
+Silurian" in any form, following Codex's check that raw counts over 26.15 and 7.08 Myr are no rate ratio.
+A Codex Sol meaning check (`gpt-6.1-sol`, high effort, read-only) of every changed sentence against the
+ledger and outputs returned 25 findings, all adopted after checking: 24 narrowed a sentence to its
+inventory, counting rule, anchor or tail (for example, the spore share fits database-backed counts in all
+but one comparison, S2a's named cells at 425.0 Ma; searching fits the guaranteed minimum Gorstian–Přídolí
+count; S2b's 438.84 Ma limit holds with cells fixed at midpoint stages). One corrected an error introduced
+in the Conclusion, which credited rock area alone with a fall large enough for older ancestors.
+[Acceptance](audits/2026-11-23-inventory-symmetry-stage2-acceptance.md) · [Integration draft](audits/2026-11-23-inventory-integration-draft.md)
+
 ## 2026-11-23 — Geographic evidence and inventory-dependent finding in the revision (Codex, following Gemini)
 
 Gemini recommended leading on geographic occurrence and keeping the inventory comparisons in one supplement table. Codex adopts that structure for the integration draft. The 10 Myr age-shape result needs its age-range basis, and the finding-rate and geographical comparisons retain their distinct counting units. Results (g) and figure 3b will keep all-collection searching with its endpoint ratios. The trial figure includes the full finite rock-area curve and the primary branched-plant bar. The accepted gate decisions and the source inventories remain the basis for the ledger and estimand draft. [Checked reasons and age examples](audits/2026-11-23-gemini-integration-review.md) · [Proposed passages and table](audits/2026-11-23-inventory-integration-draft.md)

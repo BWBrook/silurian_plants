@@ -94,6 +94,26 @@ references:
   issue: '3'
   page: 575–599
   URL: https://palass.org/publications/palaeontology-journal/archive/34/3/article_pp575-599
+- id: capel2025TowardsImprovedAssessment
+  citation-key: capel2025TowardsImprovedAssessment
+  type: article-journal
+  title: 'Towards an improved assessment of global plant diversity in deep time: further insights from the Palaeozoic fossil record'
+  author:
+  - family: Capel
+    given: Eliott
+  - family: Monnet
+    given: Claude
+  - family: Cascales-Miñana
+    given: Borja
+  issued:
+    date-parts:
+    - - 2025
+  container-title: Historical Biology
+  volume: '38'
+  issue: '5'
+  page: 1272–1282
+  publisher: Informa UK Limited
+  DOI: 10.1080/08912963.2025.2568087
 - id: claramunt2022CladedateCalibrationInformation
   citation-key: claramunt2022CladedateCalibrationInformation
   type: article-journal
@@ -394,6 +414,9 @@ references:
     date-parts:
     - - 2026
   container-title: Nature Plants
+  volume: '12'
+  issue: '11'
+  page: 2197–2206
   publisher: Springer Science and Business Media LLC
   DOI: 10.1038/s41477-026-02432-3
 - id: kenrick1997OriginEarlyEvolution
@@ -637,6 +660,23 @@ references:
   article-number: '1049'
   publisher: Frontiers Media SA
   DOI: 10.3389/fgene.2019.01049
+- id: morris2014AnalysisVegetationalChange
+  citation-key: morris2014AnalysisVegetationalChange
+  type: article-journal
+  title: 'An analysis of vegetational change in the Lower Devonian: New data from the Lochkovian of the Welsh Borderland, U.K.'
+  author:
+  - family: Morris
+    given: J.L.
+  - family: Edwards
+    given: D.
+  issued:
+    date-parts:
+    - - 2014
+  container-title: Review of Palaeobotany and Palynology
+  volume: '211'
+  page: 28–54
+  publisher: Elsevier BV
+  DOI: 10.1016/j.revpalbo.2014.09.006
 - id: morris2018ReplyHedgesEt
   citation-key: morris2018ReplyHedgesEt
   type: article-journal

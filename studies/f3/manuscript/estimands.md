@@ -114,8 +114,8 @@ Codex on 13 November 2026. They do not add a fitted finding-rate or dependence m
   a choice to avoid possible shared rock availability, not an empirical causal decomposition.
 - **C60:** the minimum late-Silurian counts give a one-sided lower benchmark on the interval's
   average rate relative to the mean over the whole later window [c,A], which includes the late
-  Silurian. The 0.79/0.69 lower ratios support at least about two-thirds of that mean under the
-  48/19-count scenarios; they establish neither equality nor a near-constant plateau. The exponential
+  Silurian. On the reviewed inventory the 0.79/0.69 lower ratios support at least about two-thirds of that mean under the
+  48/19-count scenarios (other inventories: see Inventory sensitivity); they establish neither equality nor a near-constant plateau. The exponential
   factor compares the rate at c with that at A, over 33.23 Myr, not a further 33 Myr after the Silurian.
   Coverage is nominal for fixed windows and iid draws; A and both splits are selected, as for C59.
   The absence of A-setting units from the 13 guarantees no mechanical overlap, not independence
@@ -160,6 +160,43 @@ Codex on 13 November 2026. They do not add a fitted finding-rate or dependence m
   Ma; it does not separate encounter, preservation and searching. The comparison was chosen after seeing
   the record.
 
+## Inventory sensitivity (Stage 2 body-fossil audit, accepted 23 November 2026)
+
+The reviewed inventory (S0) carries every primary number. The audit repeats the body-record
+calculations on S1 (S0 with Early Devonian PBDB collections restored), S2a (PBDB-backed units), S2b
+(S2a with those collections restored) and Capel et al.'s species endpoints (S3). Literature curation
+went mainly to the Silurian, and a duration filter had removed collections dated only to the Early
+Devonian, so these are sensitivities to how the record was assembled. The gate thresholds were set
+after preliminary sums: the results are a retrospective sensitivity analysis.
+
+- **Bind every inventory value to its case:** inventory, anchor (A 426.7 Ma or the Bathurst
+  Ludfordian 425.0 Ma) and run, interval, counting rule, test and proxy. Shape values also keep group,
+  history and inclusion state. A minimum reduction at 444 or 452 Ma keeps its cutoff, Bathurst
+  treatment, and whether it is the conservative envelope or the oldest jointly possible limit.
+- **Three questions, kept apart.** C49 asks whether some assignment of ages within their ranges fits a
+  declared shape over the whole window. C60 asks how finds divide between a shorter interval and the
+  rest of the window. C57 asks how fast early finding must rise **before** the oldest find if the later
+  rate stays level. A history can pass one and fail another: a 10 Myr exponential time constant implies
+  a 27.74-fold rise across the window, beyond S2b's upper regional benchmarks, while C49 admits it on S2b.
+- **Allowed:** late-Silurian crown fossils lie in six named regions in the literature-augmented
+  inventories, five in Capel's main-reading endpoints (six with the literal Yea ages) and three in PBDB-backed
+  units, a minimum geographical extent.
+  The change in finding frequency into the Devonian depends on the inventory; a rise near the oldest
+  find and a rise continuing into the Devonian both remain possible, and their timing and cause are
+  unresolved. Rock area and rock × spore share predict too few late-Silurian finds on every inventory;
+  the spore share's failure depends on the inventory; all-collection searching predicts too few only in
+  S0's Ludfordian–Přídolí locality check. Capel's counts describe where species' first and last
+  localities fall.
+- **Allowed for C49 on S2b:** some age assignment within the recorded ranges passes the 10 Myr test,
+  whether two or all 21 restored units are younger than 400 Ma; midpoint ages fail.
+- **Not allowed:** a count of region–stage cells as a dispersal speed or population density; the
+  Devonian/Silurian raw count ratio as a rate ratio (the intervals span 26.15 and 7.08 Myr); a passing
+  S2b assignment as the fossils' ages; the conservative envelope where its count and age cannot occur
+  together (S2b's Silurian-only regional 451.28 Ma); Capel's endpoint ratios as finding rates; a
+  searching verdict without naming all-collection or plant-excluded searching and the direction tested.
+- **Figure 3b** names the proxies by what they measure; its caption states the inventory dependence
+  of the spore comparison.
+
 **C54 source limit:** use only the primary-source-supported Saudi and Turkish review entries for
 the stage-level comparison with Libya. The British review entries conflict with cited primary
 evidence for true triletes, and the Belgian entry lacks a primary-source check here. Raw extraction
@@ -181,7 +218,7 @@ is preserved; overlapping stage enclosures do not establish actual contemporanei
 
 - Asymptotic KS p values, computed on allocated ages treated as exact; ranges are 5th–95th percentiles
   over 256 allocations (C31, C41).
-- **Allowed:** the 10 Myr decline fails the conditional-age diagnostic under every admissible allocation
+- **Allowed:** on the reviewed inventory, the 10 Myr decline fails the conditional-age diagnostic under every admissible allocation
   of the recorded supports, for B2 in all four inclusion states and for canonical B0; every canonical B0
   history fails likewise; the 25 Myr decline and plant-excluded density × 10 Myr decline have passing B2
   allocations when cutoff-straddling units are counted (C49). Constant intensity is not shown adequate.

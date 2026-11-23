@@ -527,7 +527,8 @@ Under the finite-sample reference, for crown-member bodies the 10 Myr decline fa
 state. The 25 Myr decline passes with all 50 possible units, falls just short with one straddling unit
 (*p* = 0.049, which passes only asymptotically) and fails with the 48 guaranteed units. The plant-excluded
 density times the 10 Myr decline passes with 49 or 50 units but not 48. For canonical land-plant bodies,
-every history fails in every state under either reference.
+every history fails in every state under either reference. These verdicts hold for the reviewed inventory; S5.12 gives
+them with the Early Devonian collections restored and on database-backed finds.
 
 ### S5.3 Results and sensitivities
 
@@ -1088,8 +1089,8 @@ after seeing the record (`out/groups_inside.csv`)[]{.C62}.
 **Table S18.** Gap benchmarks after an isolated early find: the least factor by which average finding
 across the gap must fall below the later window, under the two-rate model above
 (`out/groups_inside.csv`). The gaps were chosen after seeing the finds; the
-shape tests in Table S17 are the calibrated check, and both groups fail every declared history with the
-isolated find included. The Oman fragments came from palynological preparation of borehole material,
+shape tests in Table S17 are the calibrated check, and in the reviewed inventory both groups fail every
+declared history with the isolated find included (S5.12 gives the restored-collection case). The Oman fragments came from palynological preparation of borehole material,
 unlike most later finds; Zbrza membership is disputed [@salamon2018PutativeLateOrdovician; @wellman2022TerrestrializationOrdovician]
 (`docs/rejected-records.md`, entry 11).
 
@@ -1123,6 +1124,114 @@ Each missing record is Pridoli or younger, so it could only add later units. As 
 named leads, one to four more branched-plant units move the steady limit from [434.65]{.C61 .V280} to between
 [434.62]{.C61 .V268} and [434.55]{.C61 .V269} Ma; further independent later units certainly inside the window would move it younger again, with the oldest
 age and cutoff held fixed.
+
+### S5.12 How the assembly of the record affects the late-Silurian and shape results
+
+**Why the assembly matters.** The reviewed inventory joins database occurrences with a source-reviewed set
+of the oldest records (S5.1). Literature review added records chiefly to the Silurian, and an age-range
+filter set aside database collections whose age support spans the whole Early Devonian. Both choices raise
+the late-Silurian share of the finds. We therefore repeated the late-Silurian and shape analyses on four
+occurrence inventories and one independent compilation: the reviewed inventory; the same with the
+set-aside Early Devonian collections restored after a source check; database-backed finds alone; those
+finds with the collections restored; and the species list of Capel et al.
+[@capel2025TowardsImprovedAssessment], which gives each species' first and last localities. The
+specification, counting rules, gate decisions and independent check are the inventory-symmetry records
+of 21–23 November 2026 in `studies/f3/docs/audits/`. The gate thresholds were set
+after preliminary sums, so these results are a retrospective sensitivity analysis. The reviewed inventory
+carries every primary number in the article.
+
+<!-- table:inventories -->
+| Inventory | Finds in the window | Late-Silurian finds, certain–possible | Late-Silurian regions | Lower rate ratio, regions | Spore-share *p*, regions | 10 Myr decline, best *p* |
+|---|--:|--:|--:|--:|--:|--:|
+| Reviewed | [48]{.C60 .V342} | [13]{.C60 .V343}–[16]{.C60 .V344} | [6]{.C60 .V345} | [0.692]{.C60 .V346} | [0.0026]{.C59 .V347} | [0.0000034]{.C49 .V348} |
+| Reviewed, Early Devonian collections restored | [69]{.C60 .V349} | [13]{.C60 .V350}–[16]{.C60 .V351} | [6]{.C60 .V352} | [0.622]{.C60 .V353} | [0.0045]{.C59 .V354} | [0.00425]{.C49 .V355} |
+| Database-backed | [38]{.C60 .V356} | [5]{.C60 .V357}–[7]{.C60 .V358} | [3]{.C60 .V359} | [0.267]{.C60 .V360} | [0.11]{.C59 .V361} | [0.0031]{.C49 .V362} |
+| Database-backed, Early Devonian collections restored | [59]{.C60 .V363} | [5]{.C60 .V364}–[7]{.C60 .V365} | [3]{.C60 .V366} | [0.234]{.C60 .V367} | [0.14]{.C59 .V368} | [0.24]{.C49 .V369} |
+| Capel et al., species endpoints | [109]{.C60 .V370} | [7]{.C60 .V371}–[8]{.C60 .V372} | [5]{.C60 .V373} | [0.386]{.C60 .V374} | [0.042]{.C59 .V375} | — |
+<!-- /table:inventories -->
+**Table S20.** The late-Silurian comparison across inventories, with the oldest find at its oldest possible
+age, 426.7 Ma, and the 393.47 Ma cutoff for the placement and rate columns. Finds are locality–age units certainly inside the window; for
+Capel et al., species' first and last localities. The late-Silurian columns use the Gorstian to Pridoli.
+Regions are named palaeoregions holding a guaranteed late-Silurian find. The lower rate ratio is the
+one-sided 95% lower bound on the interval's average finding rate relative to the whole later window,
+counting each named region and stage once; for Capel et al. it describes where species' endpoints fall.
+The spore-share *p* is the largest upper-tail probability, over the admissible cell counts, of at least
+the observed late-Silurian cells if finding followed the trilete-reporting share. The last column is the
+best finite-sample shape *p* for the 10 Myr decline over admissible age assignments of the guaranteed
+finds, each conditioned on its own oldest find. All are post hoc benchmarks for an interval chosen after the ages were seen[]{.C60}[]{.C59}[]{.C49}.
+
+**Where the late finds lie.** Finding proportional to rock area, or to rock area multiplied by the
+spore share, predicts too few late-Silurian finds on every inventory and too few occupied region–stage cells among
+the species endpoints (largest deciding upper-tail *p* [0.0005]{.C59 .V376})[]{.C59}. The spore share alone predicts
+too few on the reviewed inventories and in the species endpoints' named region–stage cells, and fits the
+database-backed counts, with one exception: database-backed finds without the restored collections,
+counted by named region and stage over the Ludfordian to Pridoli with the oldest find at the Bathurst Island
+Ludfordian age, 425.0 Ma, give *p* = [0.042]{.C59 .V377}[]{.C59}. Where the spore share fits, its fall before the
+oldest find is large. Its [5.14]{.C56 .V170}- and [7.10]{.C56 .V171}-fold contrasts at 444 and 452 Ma would fit those ancestors
+with up to [31.1]{.C56 .V172} and [29.4]{.C56 .V173} independent finds, against 16–17 named or 18–19 pooled region–stage cells among
+database-backed finds with the restored collections; with the oldest find at 425.0 Ma the contrasts are
+4.96 and 6.71 and the matching counts 26.1 and 25.0, against 15 named or 17 pooled cells. Both comparisons
+assume zero delay and finding that changed in proportion to the spore share[]{.C56}. All land and marginal-marine collections, the searching measure of figure 3*b*,
+predict too few finds only in the reviewed inventory's Ludfordian-to-Pridoli locality count
+(*p* = [0.040]{.C59 .V378}, or [0.035]{.C59 .V379} with the oldest find at 425.0 Ma). Plant-excluded collections pass
+every check for excess; on database-backed finds with the restored collections they predict [13.8]{.C59 .V380}
+Gorstian-to-Pridoli finds where 5 to 7 lie, a discrepancy in the opposite direction (lower-tail *p* = 0.020
+for 7)[]{.C59}.
+
+**How fast finding could change.** On database-backed counts, the lower rate ratio falls to about a
+quarter (table S20). With the restored collections, exponential histories allow finding to rise up to [18.1]{.C60 .V381}-fold across the
+window counting by region, or [33.9]{.C60 .V382}-fold by locality and age, against [2.4]{.C60 .V383}-fold by region on the reviewed
+inventory. Capel et al.'s ratios describe where species' first and last localities fall; reading them as
+finding rates would need a model of the intermediate localities the list omits. With Capel's literal Yea
+ages, the oldest endpoint is 425.0 Ma, and the comparison runs over the Ludfordian to Pridoli: retaining
+Yea gives six regions, lower ratio [0.619]{.C60 .V384} and spore-share
+*p* = [0.0042]{.C60 .V385}; removing it gives five, [0.482]{.C60 .V386} and *p* = [0.016]{.C60 .V387}[]{.C60}. The three questions in
+the article stay distinct. The shape test asks whether some assignment of ages fits a declared history over
+the whole window; the rate ratio asks how finds divide between the late Silurian and the rest of the
+window; the early rises of S5.9 ask how fast finding must climb before the oldest find with a level later
+rate. A 10 Myr exponential time constant implies a rise of about 27.7-fold across the window, beyond the
+database-backed regional bound of [18.1]{.C60 .V381}-fold, while the shape test admits that history on the same
+finds[]{.C60}.
+
+**What the coarse ages allow.** The 21 units that restoration adds to the database-backed inventory all
+carry the range 393.47–419.62 Ma. Two complete assignments of the 59 finds, with every age inside its
+range and the oldest at 425.0 Ma, pass the 10 Myr shape test: one with just two restored units younger
+than 400 Ma (*p* = [0.083]{.C63}), the other with all 21 (*p* = [0.238]{.C63}). Midpoint ages fail. Narrowing
+two localities to the stages their sources support, the late Lochkovian for the Newton Dingle plant bed
+[@morris2014AnalysisVegetationalChange] and the late Lochkovian or early Pragian for La Gileppe (PBDB
+collection note), lowers the best *p* to [0.070]{.C63}. In the reviewed inventory with the collections restored, widening only
+the 53 ranges that lie wholly in the Devonian to the whole Early Devonian raises the best *p* from
+[0.00425]{.C63} to [0.105]{.C63}, so its rejection draws on those Devonian dates. These assignments show what
+the age ranges admit; they date no fossil (`studies/f3/docs/audits/2026-11-23-inventory-age-examples.py`).
+
+**The 25 Myr decline across groups.** With the Early Devonian collections restored, the 25 Myr decline
+passes in every inclusion state for crown vascular plants (best *p* [0.83]{.C49 .V388}–[0.88]{.C49 .V389}), branched
+plants ([0.0712]{.C49 .V390}–[0.0925]{.C49 .V391}), branched plants with the Zbrza axes ([0.0767]{.C49 .V392}–[0.0836]{.C49 .V393}) and
+land-plant bodies with the Oman fragments ([0.0612]{.C49 .V394}–[0.0675]{.C49 .V395}), and fails for land-plant bodies
+without them (at most [0.0269]{.C49 .V396})[]{.C49}. The gap benchmarks rise with the restored collections: after
+the Oman fragments, [10.3]{.C61 .V397} times lower; after Zbrza, [8.2]{.C61 .V398}; and over the Homerian,
+[2.2]{.C61 .V399}[]{.C61}. The land-plant requirement anchored by spores rises from [8.4]{.C62 .V330} to [11.3]{.C62 .V400} times
+([3.6]{.C62 .V401} by region and stage)[]{.C62}.
+
+**Limits and the combinations that can occur.** Over the full window the steady-rate limit stays close
+to the reviewed inventory's [428.84]{.C27 .V013} Ma: [428.17]{.C27 .V402} Ma with the restored collections, [429.43]{.C27 .V403} Ma on
+database-backed finds and [428.43]{.C27 .V404} Ma with both; and on the reviewed inventory with the oldest find at 425.0 Ma, [427.17]{.C27 .V405} Ma. The
+reductions required at 444 and 452 Ma rise with the restored collections, to [11.7]{.C48 .V406} and
+[17.2]{.C48 .V407}[]{.C48}. A conservative envelope pairs the fewest guaranteed finds with the oldest age attained
+anywhere, and the two need not occur together. We therefore also report the oldest limit over count and age
+combinations that can occur together. Over the full window the two coincide, so 428.84 Ma is itself
+attainable. They differ for the Silurian-only cutoff at 419.62 Ma on database-backed finds counted by
+region, with the two Bathurst Island localities removed before the cells are formed and each cell fixed at
+its localities' midpoint stage: the envelope gives
+[451.3]{.C48 .V408} Ma, while the oldest attainable limit is [438.8]{.C48 .V409} Ma, which needs finding before the oldest find at
+least [1.43]{.C48 .V410} and [2.08]{.C48 .V411} times lower at 444 and 452 Ma with zero delay and a steady later rate, the smallest reductions in any setting tested.
+Under the same conditions all-collection effort gives [443.1]{.C48 .V412} Ma, plant-excluded effort [440.8]{.C48 .V413} Ma and
+the 25 Myr decline [447.3]{.C48 .V414} Ma; the 10 Myr declines set no limit within 469.4 Ma[]{.C48}. Counting pooled
+midpoint region–stage cells over the full window, plant-excluded effort gives [431.21]{.C27 .V415} Ma on the reviewed
+inventory and [430.83]{.C27 .V416} Ma with the restored collections, either side of 431.2 Ma[]{.C27}. The
+1,918 calculations are in `studies/f3/models/loop3/out/inventory_symmetry_stage2_task4.csv`, the
+placement and rate comparisons in `inventory_symmetry_stage2_tests.csv` and the shape results in
+`inventory_symmetry_stage2_shape.csv`.
 
 ## S6. From specimens to nodes
 
@@ -1276,7 +1385,8 @@ lists every condition behind the analyses, the results each bears on, what follo
 | The allocation inherits any imbalance in how the inventory sampled Silurian and Devonian records | Results (g)–(h) | An imbalance would shift finds between the intervals and bias the placement and switch results | Stated here |
 | The placement intervals and the oldest-age boundary *A* were chosen from the observed age ranges | Results (g)–(h) | The binomial tails describe fixed-window discrepancies, not calibrated rejection probabilities | S5.10; switch script |
 | Treating regional cells as independent draws is a separate counting scenario | Results (g)–(h) | The region-and-stage counts are an alternative reading | Results (d); S5.10 |
-| A level rate and searching remain compatible with the Gorstian–Pridoli allocation at the minimum count | Results (g) | Compatibility depends on uncertain ages and the interval chosen | Table S16 |
+| A level rate and searching fit the Gorstian–Pridoli allocation at the minimum count in the reviewed inventory | Results (g) | The fit depends on uncertain ages, the interval chosen and the inventory; searching predicts too few in the Ludfordian–Pridoli check | Table S16; S5.12 |
+| The reviewed inventory's assembly raises the late-Silurian share: literature review added Silurian records, and an age-range filter set aside Early Devonian collections | Results (d), (g)–(i) | Database-backed counts give lower late-Silurian ratios, admit the 10 Myr decline once the collections are restored, and fit the spore share in all but one comparison | S5.12, Table S20 |
 | Nine of the 13 late-Silurian finds are dated only to the Pridoli | Results (h) | The bounds describe the late Silurian as a whole, not its first part | Membership table (B2/main) |
 | Only one exponential family is examined for later change | Results (h) | Other shapes give other change factors | S5.10 |
 | Collection density is used as a rough proxy for searching; targeted searching of the oldest plant-bearing beds is unmeasured | Results (g)–(h) | Targeted searching could raise the late-Silurian count | Conditions; Methods (h); S5.8 |

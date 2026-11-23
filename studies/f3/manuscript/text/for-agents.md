@@ -80,15 +80,34 @@ supports nor rejects an older ancestor.
   Halving recording before 426.7 Ma (flat baseline, primary units) gives a bound of [431.0]{.C53 .V108} Ma, still younger
   than the maximum (C53). The tested shared-boundary scenarios move the constant bound within [427.31]{.C50 .V098}–[430.42]{.C50 .V099} Ma, younger than the maximum under
   all three comparisons (C50). Lineage ages of 444–452 Ma would need earlier/later intensity [0.124]{.C48 .V100}–[0.085]{.C48 .V101} (primary units,
-  zero delay; C48). No admissible age allocation rescues the 10 Myr decline; some rescue the 25 Myr
-  decline when cutoff-straddling units are counted (C49). Removing Yea moves the bound [−1.67]{.C52 .V102} Myr (C52).
+  zero delay; C48). On the reviewed inventory no admissible age allocation rescues the 10 Myr decline;
+  some rescue the 25 Myr decline when cutoff-straddling units are counted (C49). Removing Yea moves the bound [−1.67]{.C52 .V102} Myr (C52).
 - **Land-plant bodies (B0).** Canonical B0 includes the Katian Oman sporangial fragments as one unit,
   oldest possible age [452.8]{.C40 .V031} Ma: bounds [455.19]{.C40 .V032}–[456.62]{.C40 .V033} Ma under constant and effort-like histories and
-  [465.21]{.C40 .V034} Ma under decline25, and every history fails the shape diagnostic under every admissible age
-  allocation (C40, C41, C49). Excluding them (C28) gives
+  [465.21]{.C40 .V034} Ma under decline25, and on the reviewed inventory every history fails the shape diagnostic
+  under every admissible age allocation (C40, C41, C49); with the Early Devonian collections restored, the
+  25 Myr decline passes with Oman and fails without it (C49, C61). Excluding them (C28) gives
   [434.51–437.16]{.C28} Ma. Neither is a lag, a delay or a date of body recoverability; 458.2 Ma is a fossil minimum.
   The canonical inventory and its exclusion variant now rebuild through `build_reviewed.py` and
   `analysis.py`, with explicit body-membership tests.
+- **Inventory sensitivity (Stage 2 body-fossil audit, accepted 23 November 2026).** Every number above
+  uses the reviewed inventory (S0). The audit repeats the body-record analyses on S1 (S0 with the Early
+  Devonian PBDB collections that an age-range filter set aside restored), S2a (PBDB-backed units), S2b
+  (S2a with those collections) and Capel et al.'s species endpoints (S3); supplement S5.12 and Table S20
+  hold the comparison, and `estimands.md` (Inventory sensitivity) the allowed readings. By locality and
+  age with A at 426.7 Ma, the full-window steady-rate limit lies within about 1 Myr of 428.84 Ma on the four
+  occurrence inventories (C27). Late-Silurian finds lie in six named
+  regions on S0 and S1, five in Capel's main-reading endpoints (six with literal Yea ages) and three on
+  PBDB-backed units; on named region–stage cells (Gorstian–Přídolí, A 426.7 Ma) the lower rate ratio falls
+  from about two-thirds to about a quarter on PBDB-backed counts (C60). Rock area fails the
+  late-Silurian placement check on every inventory; the spore share predicts too few on S0, S1 and
+  Capel's named cells and fits PBDB-backed counts except S2a's named cells at A 425.0 Ma; among upper-tail
+  checks, all-collection searching predicts too few only in S0's Ludfordian–Pridoli locality count (C59).
+  The 10 Myr decline passes on S2b, where 21 restored units share a 26 Myr Early Devonian range (C49,
+  C63). With a Silurian-only cutoff on S2b by region and stage with Bathurst removed, the oldest jointly
+  possible limit, with cells fixed at their midpoint stages, is 438.84 Ma, with minimum later/earlier
+  ratios 1.43/2.08 at 444/452 Ma (zero delay), against a conservative envelope of 451.28 Ma
+  whose count and age cannot occur together (C48).
 - **Synthesis.** An older, sparsely recorded flora is allowed, not required. The record cannot test the
   rate of recorded, identifiable occurrences before its oldest find, and no result ranks the clocks.
 
@@ -192,7 +211,9 @@ Do not reintroduce any of these. Each was caught in review; the record is in `su
     `value-bindings.csv`, each number to one evidence row and field. It does not match sentences to
     estimands; check meaning against `estimands.md`.
 21. **"The 25 Myr decline fits poorly."** Only on drawn allocations. Some admissible allocations pass when
-    cutoff-straddling units are counted (C49). The 10 Myr decline fails under every admissible allocation.
+    cutoff-straddling units are counted (C49). On the reviewed inventory the 10 Myr decline fails under
+    every admissible allocation; on S2b some allocations pass, and a passing allocation dates no fossil
+    (C63).
 22. **Frontier contours as fitted rates.** They are retrospective compatibility contours with a
     data-chosen step; delay and earlier intensity trade off and are not separately identified (C48).
 23. **"Murzuq limits intensity to a tenth."** Only with cutting outcomes independent given a shared well
@@ -212,6 +233,13 @@ Do not reintroduce any of these. Each was caught in review; the record is in `su
     with fixed history, cutoff, timescale, inventory and unit rule and independent continuous ages.
     Containment failure probability delta gives only an alpha + delta size bound; the geological
     ranges have no demonstrated joint coverage. A pass is a possibility, not a fit or a ranking (C49).
+28. **Reviewed-inventory results quoted as inventory-free.** "Two-thirds of the later rate", "six regions",
+    "the spore share fails the later record" and "searching is compatible" belong to S0. Quote each
+    inventory value with its inventory, anchor, interval, counting rule, test and proxy, and name
+    all-collection or plant-excluded searching (C59, C60; `estimands.md`).
+29. **The conservative envelope as an attainable limit.** It pairs the fewest guaranteed finds with the
+    oldest age attained anywhere. Where those cannot occur together, quote the oldest jointly possible
+    limit beside it (C48; S3-A25 in `studies/f3/docs/audits/2026-11-21-inventory-symmetry-s3-rules.md`).
 
 
 ## Stage 2 results (integrated 7 November 2026)

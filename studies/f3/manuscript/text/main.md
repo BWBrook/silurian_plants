@@ -14,8 +14,9 @@ history expected to yield about three finds or fewer at that rate[]{.C58}. For v
 which include the *Cooksonia* behind that maximum. Ancestors at
 444–452 Ma fit if early fossils were found [2.4]{.C48 .V056}–[12]{.C48 .V055} times less often,
 if finding rose fast enough, or recognisable bodies appeared later.
-Late-Silurian fossils turned up at two-thirds or more of their average rate after the oldest find[]{.C60},
-whereas North American land-laid rock area and the share of studies reporting trilete spores rose later; neither matches the finds[]{.C59}.
+Late-Silurian fossils come from three to six regions, depending on the inventory[]{.C60}. Finding proportional
+to North American land-laid rock area predicts far fewer in every inventory; the share of studies reporting
+trilete spores fits some inventories[]{.C59}.
 
 **Keywords:** molecular clock; fossil calibration; land plants; vascular plants; stratigraphic
 confidence interval; Ordovician–Silurian
@@ -129,7 +130,12 @@ plants) [@kotyk2002MorphologicallyComplexPlant;
 @libertin2024GenusAberlemniaSiluriandevonian]. Under the main interpretation the three categories hold
 [78]{.C25}, [71]{.C25} and [50]{.C25} finds, of which [76]{.C40 .V021}, [69]{.C25} and [48]{.C25} are
 certainly older than the end of the Emsian ([393.47]{.C25} Ma), the younger edge of the time window
-(electronic supplementary material, S5.1).
+(electronic supplementary material, S5.1). Literature review added records chiefly to the Silurian, and an
+age-range filter set aside database collections dated only to the Early Devonian. We tested how this
+assembly affects the late-Silurian and shape results by restoring those collections, by repeating the
+analyses on database-backed finds alone, and by comparing where species' first and last localities fall in
+an independent compilation [@capel2025TowardsImprovedAssessment] (electronic supplementary material,
+S5.12).
 
 **(e) Limit on when the record began.** Let *w*(*s*) be a fixed relative rate at which recognisable
 fossils of a category are found at age *s*, and $U(a)=\int_c^a w(s)\,ds$ the cumulative finding rate
@@ -260,11 +266,17 @@ paired finds, their conditional steady-rate limit is near the 431.2 Ma maximum.
 With all 48 finds independent, finding rates that track collection density give [428.9]{.C27 .V009}
 Ma, or [428.5]{.C27 .V010} Ma with plant-bearing collections removed, and a 25 Myr decline into the past
 gives [431.6]{.C27 .V011} Ma. If finding fossils became steeply harder with age (the 10 Myr decline),
-the method sets no limit as far back as [469.4]{.C27 .V007} Ma, the edge of our data. That history,
-however, predicts a spread of fossil ages unlike the one observed, however the uncertain ages are
+the method sets no limit as far back as [469.4]{.C27 .V007} Ma, the edge of our data. In this inventory
+that history predicts a spread of fossil ages unlike the one observed, however the uncertain ages are
 assigned[]{.C49}. The 25 Myr decline passes the shape test under one assignment of ages when all
 [50]{.C49 .V107} possible finds are counted (*p* = [0.067]{.C49 .V104}), and fails under every
 assignment of the [48]{.C49 .V069} finds certainly inside the window (best *p* = [0.035]{.C49 .V106}).
+Both shape verdicts depend on how the record was assembled. With the Early Devonian database collections
+restored, the 25 Myr decline passes in every inclusion state. Among database-backed finds with those
+collections restored, the 10 Myr decline also passes under some assignment of ages, because 21 of the finds
+carry the same 26 Myr Early Devonian range and can be placed anywhere within it; the test then shows that a
+fitting assignment exists, and the actual ages of those finds remain open (electronic supplementary
+material, S5.12)[]{.C49}.
 Shifting stage boundaries by their quoted uncertainties, in the scenarios tested, moves the main limit
 between [427.31]{.C50 .V062} and [430.42]{.C50 .V063} Ma (electronic supplementary material, S5.3).
 
@@ -295,7 +307,7 @@ the share of palynological studies reporting triletes changed between the Homeri
 across the oldest find, at an equivalent doubling time of about [6.6]{.C57 .V126} Myr, and rose fastest, about
 every [1.0]{.C57 .V127} Myr, from the Hirnantian into the Rhuddanian; both give scale only.
 
-**(g) The measures that fall enough before the oldest find fail where the later record tests them.**
+**(g) Rock area predicts too few late-Silurian finds in every inventory.**
 Two outside measures fell enough before the oldest find to bear on older ancestors. For ancestors at
 444–452 Ma, the mean area of North American columns holding non-marine units is about
 [3.2]{.C56 .V128}–[3.5]{.C56 .V129} times lower before the oldest find than after it, the share of indexed
@@ -308,20 +320,32 @@ that followed rock area, the spore share or their product would put [0.45]{.C59 
 [3.8]{.C59 .V200} and [0.14]{.C59 .V201} finds in the Gorstian to Pridoli, where at least [13]{.C59 .V198} of
 the 48 lie; a level rate puts [10.2]{.C59 .V203} there and searching [10.1]{.C59 .V204}. A measure that
 fails where the record can test it gives little reason to trust it before the oldest find, where the
-record cannot. Searching, the one measure compatible with this minimum-count allocation, falls far too
-little to fit ancestors at 444–452 Ma with zero delay[]{.C59}.
+record cannot. Rock area and its product with the spore share fail this check in every inventory we
+assembled, including database-backed finds alone, and in the independent species compilation. The spore
+share fails it where literature review added Silurian finds and fits the database-backed counts in all but
+one comparison; there its
+fall before the oldest find would be large enough for ancestors at 444–452 Ma at the regional counts,
+if finding changed in proportion to it (electronic supplementary material, S5.12)[]{.C59}. Searching fits the guaranteed minimum
+Gorstian-to-Pridoli count, predicts too few in the narrower Ludfordian-to-Pridoli check (*p* = [0.040]{.C59 .V337}), and falls far
+too little to fit ancestors at 444–452 Ma with zero delay[]{.C59}.
 
-**(h) Late-Silurian fossils turned up at two-thirds or more of their average rate after the oldest find.** The late-Silurian finds, none
-of them among the units that set *A*, put the average finding rate over the Gorstian to Pridoli at no
-less than [0.79]{.C60 .V226} of the whole later-window mean with all 48 finds independent, or [0.69]{.C60 .V227} counting by
-region and stage (lower 95% bounds). Among exponential histories, finding could
-rise at most about [1.8]{.C60 .V228}-fold, or [2.4]{.C60 .V229}-fold, from *A* to the cutoff, a 33 Myr window that
-includes the late Silurian. The finds come from six regions, from
-Laurentia and Baltica to South China and South America. Before the oldest find, (*d*) allows about three
-finds' worth in total. With zero delay and the steady later rate assumed in (*f*), the tested simple rises climb steeply to the
+**(h) Late-Silurian fossils come from several regions; how often they turned up depends on the inventory.**
+In this inventory the late-Silurian finds, none of them among the units that set *A*, come from six regions,
+from Laurentia and Baltica to South China and South America, and put the average finding rate over the
+Gorstian to Pridoli at no less than [0.79]{.C60 .V226} of the whole later-window mean with all 48 finds
+independent, or [0.69]{.C60 .V227} counting by region and stage (lower 95% bounds). Among exponential
+histories, finding could rise at most about [1.8]{.C60 .V228}-fold, or [2.4]{.C60 .V229}-fold, from *A* to the
+cutoff, a 33 Myr window that includes the late Silurian. These bounds depend on how the record was
+assembled. With the Early Devonian database collections restored, the regional bound falls to
+[0.62]{.C60 .V338}; database-backed finds, from three regions, give [0.23]{.C60 .V339}–[0.27]{.C60 .V340}, and with
+the restored collections allow finding to rise up to about [18]{.C60 .V341}-fold across the window, counting
+by region. An independent species compilation places
+first or last localities in five late-Silurian regions (electronic supplementary material, S5.12)[]{.C60}.
+The regions establish a minimum geographical extent. Before the oldest find, (*d*) allows about three finds' worth in total. With zero delay and the steady later rate assumed in (*f*), the tested simple rises climb steeply to the
 later level near *A*: a straight-line rise from zero within [4.3]{.C60 .V230} Myr with 48 finds and
 [14.7]{.C60 .V231} Myr with 15, or an exponential rise doubling about every [1.5]{.C57 .V118}–[5.8]{.C57 .V122} Myr
-or faster (*f*). A delay before recognisable bodies gives the same pattern. Rock area and the spore share
+or faster (*f*). A delay before recognisable bodies gives the same pattern. The database-backed counts also
+allow finding to keep rising into the Devonian, a history outside the steady later rate of (*f*). Rock area and the spore share
 change elsewhere: both stay low through the late Silurian and rise in the Lochkovian (electronic
 supplementary material, S5.10).
 
@@ -337,7 +361,8 @@ endpoint method every counting rule places the limit older than 431.2 Ma, and a 
 method from this record would lie older too. The limit leaves a start at 431.2 Ma open, because the range
 of *C. barrandei* spans that age. A steady rate fits the branched record under some assignment of its ages
 in every inclusion state of the finds straddling the window's young end (best *p* [0.21]{.C61 .V253} or more),
-as it fits the crown record, and declines into the past fail. Ancestors at 444–452 Ma fit if branched
+as it fits the crown record, and declines into the past fail in this inventory; with the Early Devonian
+database collections restored, the 25 Myr decline passes (electronic supplementary material, S5.12)[]{.C61}. Ancestors at 444–452 Ma fit if branched
 plants were found [6.3]{.C61 .V254}–[10.9]{.C61 .V255} times less often before their oldest find than after it with
 all 69 independent, or [2.6]{.C61 .V256}–[4.5]{.C61 .V257} times by region and stage, close to the crown-group
 requirements of (*e*).
@@ -352,13 +377,14 @@ branched find after *C. barrandei*, the Irish material, where a level rate predi
 Two isolated older finds each widen a group. Sporangial fragments with in situ cryptospores from the
 Ghaba-1 borehole, Oman, dated to the Katian on later correlation [@wellman2003FragmentsEarliestLand], form
 one land-plant body find. Adding them moves the steady-rate limit for all land-plant body fossils from
-[434.5]{.C28} to [455.2]{.C40 .V022} Ma, and the enlarged set fails the shape test under all six
-histories[]{.C49}. In the main reading, no other land-plant body is older than 432.9 Ma, the oldest possible age of the next
+[434.5]{.C28} to [455.2]{.C40 .V022} Ma, and in this inventory the enlarged set fails the shape test under
+all six histories[]{.C49}. In the main reading, no other land-plant body is older than 432.9 Ma, the oldest possible age of the next
 find, and the fragments are at least 445.2 Ma old; with the other [75]{.C61 .V261} finds independent, the benchmark requires average finding in that gap at
 least [7.7]{.C61 .V262} times lower than afterwards, or [12.4]{.C61 .V263} times if the fragments are as old as 452.8 Ma ([3.0]{.C61 .V264} times by
 region and stage). The disputed Hirnantian axes from Zbrza, Poland [@salamon2018PutativeLateOrdovician;
 @wellman2022TerrestrializationOrdovician], do the same for branched plants: accepting them moves the
-branched-plant limit to [447.4]{.C61 .V265} Ma, every declared history then fails the shape test, and the
+branched-plant limit to [447.4]{.C61 .V265} Ma, every declared history then fails the shape test in this
+inventory, and the
 benchmark requires average finding in the following gap to 432.9 Ma at least [6.1]{.C61 .V266} times lower
 ([2.5]{.C61 .V267} times by region and stage). Each benchmark concerns the average over more than ten million
 years, however finding varied within the gap[]{.C61}; the shape tests, which compare the whole spread of
@@ -385,7 +411,9 @@ later finds would move the branched-plant limit to [434.62]{.C61 .V268}–[434.5
 counted as independent; oldest possible age of the oldest find; steady-rate 95% limit; and whether a
 steady finding rate fits the spread of ages under some admissible assignment. Values in parentheses
 exclude the Oman fragments. Counting each collection or each region and stage instead, the branched-plant
-limit is [434.1]{.C61 .V246} or [437.2]{.C61 .V247} Ma.
+limit is [434.1]{.C61 .V246} or [437.2]{.C61 .V247} Ma. Shape verdicts are for the reviewed inventory; with
+the Early Devonian database collections restored, the 25 Myr decline also fits branched plants and
+land-plant bodies including the Oman fragments (electronic supplementary material, S5.12)[]{.C61}.
 
 | Group | Examples | Question | Maximum it bears on | Finds | Oldest find (Ma) | Steady-rate limit (Ma) | Steady rate fits |
 |---------|--------------------|--------------------|------------------|-------:|--------:|--------:|------------|
@@ -427,10 +455,12 @@ models give the combined reduction a candidate age requires. The outside measure
 area holding land-laid rock in North America and a lower share of indexed
 palynological studies reporting trilete spores, which changing coverage, study aims, preservation and
 identification can also lower. These differences give the required ratios a scale, and multiplied they would fit ancestors at
-444–452 Ma at every count. Finding that followed either measure, or their product, would have left far fewer
-late-Silurian finds than the 13 observed. The measures fail this later-record check, so their own fall
-carries little weight as evidence about early finding. The pooled late-Silurian finds give the lower rate benchmarks in
-(*h*), and those finds come from six regions. The land-plant body record sets a requirement
+444–452 Ma at every count. Finding that followed rock area, or the product, would have left far fewer
+late-Silurian finds than observed in every inventory, so its fall carries little weight as evidence about
+early finding. The spore share fails the same check where literature review added Silurian finds and fits
+the database-backed counts in all but one comparison, so its weight depends on which record samples the late Silurian more fairly.
+Late-Silurian finds come from three to six regions, and the change in finding into the Devonian depends on
+the inventory (*h*). The land-plant body record sets a requirement
 of the same kind. Definite trilete spores place land plants before the [454.41]{.C43} Ma Kinnekulle ash,
 and the [21.5]{.C62 .V321} Myr that follow hold one land-plant body, the Oman fragments, against
 [75]{.C62 .V336} later finds. Under the model of (*e*), that sparse record requires land-plant bodies to have
@@ -441,7 +471,9 @@ recognisable could contribute to that lower average. The Oman
 fragments, if Katian, show that some land-plant bodies were recognisable within the span, which weakens an
 explanation in which all became recognisable only at 432.9 Ma (*i*)[]{.C62}.
 
-*Interpretation.* What follows goes beyond the tests. One reading is a switch: one or more evolutionary
+*Interpretation.* What follows goes beyond the tests. Finding may have risen gradually through the Early
+Devonian, through spread, preservation or collecting, as the database-backed counts allow (*h*). Another
+reading is a switch: one or more evolutionary
 innovations let these plants spread quickly through the habitat open to them, with no further innovation
 needed. Populations can grow fast on geological timescales: at an illustrative net increase of 1% a year,
 numbers double in about 70 years, whereas the slowest exponential rises in finding allowed in Results (*f*) double
@@ -471,7 +503,9 @@ supply and sizing the reductions in finding rate, or the delays, that fit older 
 each range contains the true age. Linking the body record to an ancestor requires that the oldest finds
 belong to the crown group, and an assumed delay before recognisable bodies. The spore result comes from
 one polar basin and assumes indigenous Llandovery spores and comparable reporting of older and younger
-samples. The step, the rises, the combined measure, the late-Silurian checks, the gap benchmarks and the land-plant comparison were chosen after seeing the data, so none carries a calibrated confidence level. That comparison is a conditional requirement on the land-plant record under the model of (*e*), whose size follows from the span and the number of finds; it concerns bodies of any land plant, and the spores show land plants through the span, not the same producers, body forms or diagnostic features. Targeted searching of the oldest plant beds could have inflated the late-Silurian count. Electronic supplementary material, table S19, lists every condition.
+samples. The step, the rises, the combined measure, the late-Silurian checks, the gap benchmarks and the land-plant comparison were chosen after seeing the data, so none carries a calibrated confidence level. That comparison is a conditional requirement on the land-plant record under the model of (*e*), whose size follows from the span and the number of finds; it concerns bodies of any land plant, and the spores show land plants through the span, not the same producers, body forms or diagnostic features. Targeted searching of the oldest plant beds, and literature review concentrated on the Silurian, could have
+inflated the late-Silurian count; database-backed counts give lower late-Silurian ratios (electronic
+supplementary material, S5.12). Electronic supplementary material, table S19, lists every condition.
 
 Published evidence could narrow these requirements. Records of searched Silurian terrestrial beds, with
 effort and empty beds included, would help constrain early finding rates, and rock-unit compilations
@@ -504,13 +538,13 @@ the 431.2 Ma maximum was keyed, the steady-rate limit is [434.1]{.C61 .V246}–[
 counting rule, older than that maximum.
 An older ancestor needs early finding low enough, or recognisable bodies late enough, to keep that
 expected count at about three or fewer, and the number of independent finds sets how many million years three finds
-span. North American land-laid rock area and the share of studies reporting trilete spores fell enough
-before the oldest find to allow older ancestors, but finding that followed them would have left far fewer
-fossils in the late Silurian than the at least [13]{.C59 .V207} found there, so their fall carries
-little weight as evidence about early finding. The pooled late-Silurian finds limit how low the interval's average rate could be,
-and come from six regions. With a steady later rate and zero delay, the tested simple rises require
-early finding to climb steeply to that level near the oldest find; a rapid change remains an
-interpretation whose cause is open[]{.C60}. For spores, the Libyan basin shows that an absence can be local:
+span. North American land-laid rock area fell before the oldest find, but finding that followed it would
+have left far fewer fossils in the late Silurian than every inventory
+holds, so its fall carries little weight as evidence about early finding. The share of studies reporting
+trilete spores fits the database-backed counts in all but one comparison and fails where literature
+review added Silurian finds[]{.C59}. Late-Silurian finds come from three to six regions. With a steady later rate and zero delay,
+the tested simple rises require early finding to climb steeply near the oldest find; finding may also
+have kept rising into the Devonian, and the timing and cause of the rise remain open[]{.C60}. For spores, the Libyan basin shows that an absence can be local:
 older land-plant ancestors fit its record if, with equal delivery, their steady trilete supply since
 459.1 Ma stayed below about a tenth of the later supply, with older onsets needing less, or if the
 producers lived elsewhere or acquired triletes later. Missing fossils thus

@@ -167,6 +167,9 @@ data archived, and the human–AI correspondence record published alongside.
   bibliography from a DOI ledger (`references/`, `tools/refs.py`), wrote the two-page plain-language
   brief and its figure and the agent-facing paper (`studies/f3/manuscript/text/brief.md`, `for-agents.md`), and
   proposed the multi-study layout (`docs/layout-proposal.md`).
+  From 21 to 23 November it ran Gemini's inventory-symmetry audit (`inventory_symmetry_stage2.py`, rules
+  S3-A1 to S3-A25) and integrated the accepted results into the F3 ledger (C27, C48, C49, C56, C59–C63),
+  estimands, article, supplement (S5.12, table S20), agent guide and figures 1*c* and 3*b*.
 - Claude Sonnet 5.5 (Anthropic) subagents: the F3 simulator, estimators, sketch and recovery study
   (`studies/f3/models/`), with a second Sonnet agent reviewing; the reshape-v3 compatibility estimator, unit
   simulator and validation harness (2026-10-28 and 29, reviewed and amended by Claude Opus 5.5), and
