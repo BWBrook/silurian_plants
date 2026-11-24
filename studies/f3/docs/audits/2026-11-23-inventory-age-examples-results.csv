@@ -1,0 +1,7 @@
+case,description,oldest_ma,D,p
+s2b_midpoints,S2b at midpoints,422.3100,0.592634630,5.9259685e-20
+s2b_2_restored_younger,"S2b, 2 restored younger than 400 Ma",425.0000,0.162695944,0.0826650576
+s2b_21_restored_younger,"S2b, 21 restored younger than 400 Ma",425.0000,0.132497017,0.238443798
+s2b_two_localities_full_stages,"S2b, Newton Dingle and La Gileppe restricted to full source stages",425.0000,0.166979775,0.0698742374
+s1_recorded,"S1, recorded ranges",425.0000,0.209576124,0.00424770787
+s1_devonian_widened,"S1, only Devonian-only ranges widened to their epoch",425.0000,0.144667829,0.104959295

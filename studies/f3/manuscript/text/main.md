@@ -16,7 +16,7 @@ which include the *Cooksonia* behind that maximum. Ancestors at
 if finding rose fast enough, or recognisable bodies appeared later.
 Late-Silurian fossils come from three to six regions, depending on the inventory[]{.C60}. Finding proportional
 to North American land-laid rock area predicts far fewer in every inventory; the share of studies reporting
-trilete spores fits some inventories[]{.C59}.
+trilete spores does so in literature-reviewed inventories[]{.C59}.
 
 **Keywords:** molecular clock; fossil calibration; land plants; vascular plants; stratigraphic
 confidence interval; Ordovician–Silurian
@@ -322,24 +322,26 @@ the 48 lie; a level rate puts [10.2]{.C59 .V203} there and searching [10.1]{.C59
 fails where the record can test it gives little reason to trust it before the oldest find, where the
 record cannot. Rock area and its product with the spore share fail this check in every inventory we
 assembled, including database-backed finds alone, and in the independent species compilation. The spore
-share fails it where literature review added Silurian finds and fits the database-backed counts in all but
-one comparison; there its
-fall before the oldest find would be large enough for ancestors at 444–452 Ma at the regional counts,
-if finding changed in proportion to it (electronic supplementary material, S5.12)[]{.C59}. Searching fits the guaranteed minimum
-Gorstian-to-Pridoli count, predicts too few in the narrower Ludfordian-to-Pridoli check (*p* = [0.040]{.C59 .V337}), and falls far
-too little to fit ancestors at 444–452 Ma with zero delay[]{.C59}.
+share fails it where literature review added Silurian finds. On database-backed finds its verdict turns on
+the fossils' ages: only one database-backed comparison predicts too few under every allowed placement, and
+where the spore share passes, its fall before the oldest find would be large enough for ancestors at
+444–452 Ma at the regional counts, if finding changed in proportion to it with zero delay (electronic
+supplementary material, S5.12)[]{.C59}. All-collection searching fits the reviewed inventory's guaranteed
+minimum Gorstian-to-Pridoli count, predicts too few in its narrower Ludfordian-to-Pridoli check
+(*p* = [0.040]{.C59 .V337}), and falls far too little to fit ancestors at 444–452 Ma with zero delay[]{.C59}.
 
-**(h) Late-Silurian fossils come from several regions; how often they turned up depends on the inventory.**
-In this inventory the late-Silurian finds, none of them among the units that set *A*, come from six regions,
-from Laurentia and Baltica to South China and South America, and put the average finding rate over the
+**(h) Late-Silurian crown fossils occur in several regions, and the inferred finding rate depends on the inventory.**
+In this inventory the [13]{.C60 .V343} finds certain to be late Silurian come from six regions, from Laurentia and
+Baltica to South China and South America; neither of the two localities that can reach *A* is among them.
+They put the average finding rate over the
 Gorstian to Pridoli at no less than [0.79]{.C60 .V226} of the whole later-window mean with all 48 finds
 independent, or [0.69]{.C60 .V227} counting by region and stage (lower 95% bounds). Among exponential
 histories, finding could rise at most about [1.8]{.C60 .V228}-fold, or [2.4]{.C60 .V229}-fold, from *A* to the
 cutoff, a 33 Myr window that includes the late Silurian. These bounds depend on how the record was
 assembled. With the Early Devonian database collections restored, the regional bound falls to
 [0.62]{.C60 .V338}; database-backed finds, from three regions, give [0.23]{.C60 .V339}–[0.27]{.C60 .V340}, and with
-the restored collections allow finding to rise up to about [18]{.C60 .V341}-fold across the window, counting
-by region. An independent species compilation places
+the restored collections allow finding to rise up to about [18]{.C60 .V341}-fold from *A* to the cutoff among
+exponential histories, counting by region. An independent species compilation places
 first or last localities in five late-Silurian regions (electronic supplementary material, S5.12)[]{.C60}.
 The regions establish a minimum geographical extent. Before the oldest find, (*d*) allows about three finds' worth in total. With zero delay and the steady later rate assumed in (*f*), the tested simple rises climb steeply to the
 later level near *A*: a straight-line rise from zero within [4.3]{.C60 .V230} Myr with 48 finds and
@@ -457,8 +459,8 @@ palynological studies reporting trilete spores, which changing coverage, study a
 identification can also lower. These differences give the required ratios a scale, and multiplied they would fit ancestors at
 444–452 Ma at every count. Finding that followed rock area, or the product, would have left far fewer
 late-Silurian finds than observed in every inventory, so its fall carries little weight as evidence about
-early finding. The spore share fails the same check where literature review added Silurian finds and fits
-the database-backed counts in all but one comparison, so its weight depends on which record samples the late Silurian more fairly.
+early finding. The spore share fails the same check where literature review added Silurian finds, and on
+database-backed counts its verdict turns on the fossils' ages, so its weight depends on which record samples the late Silurian more fairly.
 Late-Silurian finds come from three to six regions, and the change in finding into the Devonian depends on
 the inventory (*h*). The land-plant body record sets a requirement
 of the same kind. Definite trilete spores place land plants before the [454.41]{.C43} Ma Kinnekulle ash,
@@ -541,8 +543,8 @@ expected count at about three or fewer, and the number of independent finds sets
 span. North American land-laid rock area fell before the oldest find, but finding that followed it would
 have left far fewer fossils in the late Silurian than every inventory
 holds, so its fall carries little weight as evidence about early finding. The share of studies reporting
-trilete spores fits the database-backed counts in all but one comparison and fails where literature
-review added Silurian finds[]{.C59}. Late-Silurian finds come from three to six regions. With a steady later rate and zero delay,
+trilete spores fails where literature review added Silurian finds, and on database-backed counts its
+verdict turns on the fossils' ages[]{.C59}. Late-Silurian finds come from three to six regions. With a steady later rate and zero delay,
 the tested simple rises require early finding to climb steeply near the oldest find; finding may also
 have kept rising into the Devonian, and the timing and cause of the rise remain open[]{.C60}. For spores, the Libyan basin shows that an absence can be local:
 older land-plant ancestors fit its record if, with equal delivery, their steady trilete supply since

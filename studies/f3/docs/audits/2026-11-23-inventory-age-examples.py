@@ -2,7 +2,8 @@
 # requires-python = ">=3.12"
 # dependencies = ["numpy", "pandas", "scipy"]
 # ///
-"""Write two possible S2b age assignments to stdout and their checks to stderr."""
+"""Write two possible S2b age assignments to stdout, their checks to stderr and the case results to
+2026-11-23-inventory-age-examples-results.csv."""
 
 import csv
 import sys
@@ -38,7 +39,9 @@ def main():
     midpoints = (edges[1:] + edges[:-1]) / 2
     exposure = np.r_[0, np.cumsum(np.diff(edges) * np.exp(-(midpoints - cutoff) / 10))]
 
-    def score(label, ages):
+    results = []
+
+    def score(case, label, ages):
         # Condition on the actual oldest age of this assignment, leaving 58 ranks on S2b.
         x = np.sort(np.interp(ages, edges, exposure))
         u = x[:-1] / x[-1]
@@ -46,6 +49,7 @@ def main():
         d = max(np.max(ranks / len(u) - u), np.max(u - (ranks - 1) / len(u)))
         p = kstwo.sf(d, len(u))
         print(f"{label}: max {max(ages):.4f} Ma, D {d:.9f}, exact p {p:.9g}", file=sys.stderr)
+        results.append((case, label, f"{max(ages):.4f}", f"{d:.9f}", f"{p:.9g}"))
         return p
 
     def example(ranges):
@@ -56,7 +60,7 @@ def main():
         assert np.all(ages >= low - 2e-9) and np.all(ages <= high + 2e-9)
         return np.round(np.clip(ages, low, high), 12)
 
-    score("S2b at midpoints", (s2b.min_ma + s2b.max_ma) / 2)
+    score("s2b_midpoints", "S2b at midpoints", (s2b.min_ma + s2b.max_ma) / 2)
     saved = s2b[["member_ids", "min_ma", "max_ma"]].copy()
     assert saved.member_ids.is_unique
     saved["restored_in_s2b"] = restored
@@ -68,7 +72,7 @@ def main():
         ranges.loc[restored & ~young, "min_ma"] = 400.1
         ages = example(ranges)
         assert (ages[restored] < 400).sum() == n_young
-        assert score(f"S2b, {n_young} restored younger than 400 Ma", ages) > 0.05
+        assert score(f"s2b_{n_young}_restored_younger", f"S2b, {n_young} restored younger than 400 Ma", ages) > 0.05
         saved[f"example_{n_young}_younger_ma"] = ages
 
     outer = s2b.copy()
@@ -76,14 +80,19 @@ def main():
         match = outer.member_ids == member
         assert match.sum() == 1 and restored[match].all()
         outer.loc[match, "min_ma"] = stages[stage_base]
-    score("S2b, Newton Dingle and La Gileppe restricted to full source stages", example(outer))
+    score("s2b_two_localities_full_stages", "S2b, Newton Dingle and La Gileppe restricted to full source stages", example(outer))
 
     devonian = s1.max_ma <= boundary
     assert len(s1) == 69 and devonian.sum() == 53 and (s1.min_ma >= boundary).sum() == 13
-    score("S1, recorded ranges", example(s1))
+    score("s1_recorded", "S1, recorded ranges", example(s1))
     wider = s1.copy()
     wider.loc[devonian, ["min_ma", "max_ma"]] = [cutoff, boundary]
-    score("S1, only Devonian-only ranges widened to their epoch", example(wider))
+    score("s1_devonian_widened", "S1, only Devonian-only ranges widened to their epoch", example(wider))
+
+    with open(Path(__file__).with_name("2026-11-23-inventory-age-examples-results.csv"), "w", newline="") as f:
+        table = csv.writer(f, lineterminator="\n")
+        table.writerow(["case", "description", "oldest_ma", "D", "p"])
+        table.writerows(results)
 
     writer = csv.writer(sys.stdout, lineterminator="\n")
     writer.writerow(saved.columns)

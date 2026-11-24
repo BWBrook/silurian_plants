@@ -101,7 +101,9 @@ supports nor rejects an older ancestor.
   PBDB-backed units; on named region–stage cells (Gorstian–Přídolí, A 426.7 Ma) the lower rate ratio falls
   from about two-thirds to about a quarter on PBDB-backed counts (C60). Rock area fails the
   late-Silurian placement check on every inventory; the spore share predicts too few on S0, S1 and
-  Capel's named cells and fits PBDB-backed counts except S2a's named cells at A 425.0 Ma; among upper-tail
+  Capel's named cells; on PBDB-backed counts its verdict depends on placement (S2a locality-age,
+  Gorstian–Přídolí: p 0.174 with 5 late finds, rejected from 7), and only S2a's named cells,
+  Ludfordian–Přídolí, A 425.0 Ma, predict too few at every admissible placement (p 0.0416); among upper-tail
   checks, all-collection searching predicts too few only in S0's Ludfordian–Pridoli locality count (C59).
   The 10 Myr decline passes on S2b, where 21 restored units share a 26 Myr Early Devonian range (C49,
   C63). With a Silurian-only cutoff on S2b by region and stage with Bathurst removed, the oldest jointly
@@ -240,6 +242,12 @@ Do not reintroduce any of these. Each was caught in review; the record is in `su
 29. **The conservative envelope as an attainable limit.** It pairs the fewest guaranteed finds with the
     oldest age attained anywhere. Where those cannot occur together, quote the oldest jointly possible
     limit beside it (C48; S3-A25 in `studies/f3/docs/audits/2026-11-21-inventory-symmetry-s3-rules.md`).
+30. **426.7 Ma as a dated find, and a fit without its placement.** 426.7 Ma is the older edge of the
+    counting window, reached only by the two Yea localities whose ranges run into the Devonian; fixing
+    one there makes S0's certain late-Silurian count 14. A spore-share result on PBDB-backed counts
+    holds only for a stated number of late finds (S2a: p 0.174 with 5, rejected from 7). The spore
+    threshold at A 425.0 Ma and 452 Ma is 24.95 finds, so 24 whole finds fit and 25 do not (C56, C59;
+    `studies/f3/models/loop3/out/spore_threshold_anchors.csv`).
 
 
 ## Stage 2 results (integrated 7 November 2026)

@@ -184,8 +184,11 @@ after preliminary sums: the results are a retrospective sensitivity analysis.
   The change in finding frequency into the Devonian depends on the inventory; a rise near the oldest
   find and a rise continuing into the Devonian both remain possible, and their timing and cause are
   unresolved. Rock area and rock × spore share predict too few late-Silurian finds on every inventory;
-  the spore share's failure depends on the inventory; all-collection searching predicts too few only in
-  S0's Ludfordian–Přídolí locality check. Capel's counts describe where species' first and last
+  the spore share predicts too few in the literature-reviewed inventories, and on PBDB-backed counts its
+  verdict depends on the placement of the coarsely dated finds (only S2a's named cells, Ludfordian–Přídolí,
+  A 425.0 Ma, predict too few at every admissible placement); all-collection searching predicts too few
+  only in S0's Ludfordian–Přídolí locality check. The 13 certain late-Silurian finds on S0 set the
+  six-region minimum; the two Yea localities that reach A 426.7 Ma lie outside them. Capel's counts describe where species' first and last
   localities fall.
 - **Allowed for C49 on S2b:** some age assignment within the recorded ranges passes the 10 Myr test,
   whether two or all 21 restored units are younger than 400 Ma; midpoint ages fail.
@@ -193,7 +196,9 @@ after preliminary sums: the results are a retrospective sensitivity analysis.
   Devonian/Silurian raw count ratio as a rate ratio (the intervals span 26.15 and 7.08 Myr); a passing
   S2b assignment as the fossils' ages; the conservative envelope where its count and age cannot occur
   together (S2b's Silurian-only regional 451.28 Ma); Capel's endpoint ratios as finding rates; a
-  searching verdict without naming all-collection or plant-excluded searching and the direction tested.
+  searching verdict without naming all-collection or plant-excluded searching and the direction tested; a
+  spore-share "fit" on PBDB-backed counts without its placement; 426.7 Ma as the age of an actual find;
+  a non-integer matching count rounded up across a whole-find boundary (24.95 matches 24 whole finds).
 - **Figure 3b** names the proxies by what they measure; its caption states the inventory dependence
   of the spore comparison.
 

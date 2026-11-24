@@ -1,0 +1,5 @@
+anchor_ma,candidate_ma,later_to_earlier_mean,matching_n,largest_whole_n,p_no_early_find_at_next_whole_n,s2b_named_cells_min,s2b_named_cells_max,s2b_pooled_cells_min,s2b_pooled_cells_max
+426.7,444,5.14034,31.05250,31,0.0456323,16,17,18,19
+426.7,452,7.10489,29.42814,29,0.0471724,16,17,18,19
+425,444,4.95591,26.10675,26,0.0451289,15,15,17,17
+425,452,6.71204,24.94896,24,0.0496945,15,15,17,17
