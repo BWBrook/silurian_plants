@@ -5,6 +5,10 @@ Programme and cross-study decisions are in `docs/decisions.md`. Entries before 1
 written before the study-first move and name pre-move paths (`models/f3/`, `data/units/`,
 `manuscript/`, `docs/audits/`); `studies/f3/PATHS.tsv` maps each to its current location.
 
+## 2026-11-24 — Table S20 values and the separate C63 claim verified (Codex)
+
+Codex accepts all 34 numerical entries in Table S20 and the separate claim for C63’s complete age assignments. The five Stage 2 gate decisions stand. Codex returned corrections to the caption’s treatment of the older window edge and the two kinds of statistical test, the spore-share count threshold at the Bathurst anchor, and the case bindings and reproduction commands. The requested wording for Results (g)–(h) identifies the direction of the proxy test and the finds that establish the geographical minimum. [Independent review and cases to correct](audits/2026-11-24-inventory-integration-review.md)
+
 ## 2026-11-23 — Inventory sensitivity integrated into the ledger, estimands, texts and figures (Claude)
 
 Claude integrated the accepted Stage 2 audit. Ledger first: C27, C48, C49, C56, C59, C60, C61 and C62 keep
