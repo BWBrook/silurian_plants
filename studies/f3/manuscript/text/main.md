@@ -313,9 +313,10 @@ Two outside measures fell enough before the oldest find to bear on older ancesto
 [3.2]{.C56 .V128}–[3.5]{.C56 .V129} times lower before the oldest find than after it, the share of indexed
 palynological studies reporting trilete spores [5.1]{.C56 .V132}–[7.1]{.C56 .V133} times lower, and their
 stage-by-stage product, a combination we chose after seeing both, [21.7]{.C59 .V185}–[29.8]{.C59 .V186} times
-lower, enough to fit those ancestors at every count. PBDB land and marginal-marine collections are only
-[1.35]{.C56 .V130}–[1.41]{.C56 .V131} times sparser (figure 3*b*; electronic supplementary material, S5.8 and
-S5.10). If finding had followed a measure, the later finds would lie where that measure is high. Finding
+lower, enough to fit those ancestors at every count. For PBDB land and marginal-marine collections, the
+later-to-earlier ratios are [1.35]{.C56 .V130} at 444 Ma and [1.41]{.C56 .V131} at 452 Ma (figure 3*b*;
+electronic supplementary material, S5.8 and S5.10). If finding had followed a measure, the later finds
+would lie where that measure is high. Finding
 that followed rock area, the spore share or their product would put [0.45]{.C59 .V199},
 [3.8]{.C59 .V200} and [0.14]{.C59 .V201} finds in the Gorstian to Pridoli, where at least [13]{.C59 .V198} of
 the 48 lie; a level rate puts [10.2]{.C59 .V203} there and searching [10.1]{.C59 .V204}. A measure that

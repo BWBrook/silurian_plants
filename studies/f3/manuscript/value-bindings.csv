@@ -435,3 +435,4 @@ V434,C63,studies/f3/docs/audits/2026-11-23-inventory-age-examples-results.csv,"{
 V435,C63,studies/f3/docs/audits/2026-11-23-inventory-age-examples-results.csv,"{""case"": ""s2b_two_localities_full_stages""}",p,C63 complete age assignments,"[""0.070""]"
 V436,C63,studies/f3/docs/audits/2026-11-23-inventory-age-examples-results.csv,"{""case"": ""s1_recorded""}",p,C63 complete age assignments,"[""0.00425""]"
 V437,C63,studies/f3/docs/audits/2026-11-23-inventory-age-examples-results.csv,"{""case"": ""s1_devonian_widened""}",p,C63 complete age assignments,"[""0.105""]"
+V438,C59,studies/f3/models/loop3/out/inventory_symmetry_stage2_tests.csv,"{""set"": ""S2a"", ""run"": ""natural"", ""test"": ""C59_placement"", ""interval"": ""Gorstian-Pridoli"", ""counting"": ""locality_age"", ""proxy"": ""spore_share""}",smallest_k_rejected_high,S2a locality-age count first exceeding the spore upper-tail criterion,"[""7""]"

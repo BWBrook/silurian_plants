@@ -1174,12 +1174,13 @@ spore share, predicts too few late-Silurian finds on every inventory and too few
 the species endpoints (largest deciding upper-tail *p* [0.0005]{.C59 .V376})[]{.C59}. The spore share alone predicts
 too few on the reviewed inventories and in the species endpoints' named region–stage cells. On
 database-backed finds its verdict turns on where the coarsely dated finds lie. Without the restored
-collections, for example, five to seven of the [38]{.C59 .V419} finds can lie in the Gorstian to Pridoli;
-the spore share fits five (*p* = [0.174]{.C59 .V420}) and predicts too few for seven. Among database-backed
+collections, [5]{.C60 .V357} to [7]{.C60 .V358} of the [38]{.C59 .V419} finds can lie in the Gorstian to Pridoli.
+The upper-tail probability is [0.174]{.C59 .V420} at the minimum count. The first count for which the
+spore share predicts too few is [7]{.C59 .V438}. Among database-backed
 comparisons, only one predicts too few under every admissible placement: finds without the restored
 collections, counted by named region and stage over the Ludfordian to Pridoli with the older window edge at
-the Bathurst Island Ludfordian age, 425.0 Ma (*p* = [0.042]{.C59 .V377})[]{.C59}. Where the spore share
-passes, its fall before the oldest find is large. Its [5.14]{.C56 .V170}- and [7.10]{.C56 .V171}-fold contrasts
+the Bathurst Island Ludfordian age, 425.0 Ma (*p* = [0.042]{.C59 .V377})[]{.C59}. With the older edge at
+426.7 Ma, the spore share's [5.14]{.C56 .V170}- and [7.10]{.C56 .V171}-fold contrasts
 at 444 and 452 Ma would fit those ancestors with at most [31]{.C56 .V421} and [29]{.C56 .V422} independent finds,
 against [16]{.C56 .V423}–[17]{.C56 .V424} named or [18]{.C56 .V425}–[19]{.C56 .V426} pooled region–stage cells among
 database-backed finds with the restored collections. With the older edge at 425.0 Ma the contrasts are
