@@ -1,6 +1,6 @@
 # Supplement: methods, sensitivities and audit trail
 
-For *Older than their fossils? What the Ordovician–Silurian record can test about the maxima that divide land-plant molecular clocks*.
+For *Missing fossils as evidence: what the rocks can say about the age of land plants*.
 
 <div id="authors"></div>
 
@@ -1172,7 +1172,10 @@ failure at every assignment keeps the conservative reading set out in the estima
 **Where the late finds lie.** Finding proportional to rock area, or to rock area multiplied by the
 spore share, predicts too few late-Silurian finds on every inventory and too few occupied region–stage cells among
 the species endpoints (largest deciding upper-tail *p* [0.0005]{.C59 .V376})[]{.C59}. The spore share alone predicts
-too few on the reviewed inventories and in the species endpoints' named region–stage cells. On
+too few on the two inventories augmented by literature review. In the species endpoints the result rests
+on the counting rule: by named region and stage *p* = [0.042]{.C59 .V375}, with pooled cells
+[0.064]{.C59 .V443}, and by locality and age the spore share predicts [8.54]{.C59 .V441} late-Silurian units
+where [7]{.C60 .V371}–[8]{.C60 .V372} lie (*p* = [0.76]{.C59 .V442}). On
 database-backed finds its verdict turns on where the coarsely dated finds lie. Without the restored
 collections, [5]{.C60 .V357} to [7]{.C60 .V358} of the [38]{.C59 .V419} finds can lie in the Gorstian to Pridoli.
 The upper-tail probability is [0.174]{.C59 .V420} at the minimum count. The first count for which the
@@ -1193,10 +1196,13 @@ every check for excess; on database-backed finds with the restored collections t
 Gorstian-to-Pridoli finds where 5 to 7 lie, a discrepancy in the opposite direction (lower-tail *p* = 0.020
 for 7)[]{.C59}.
 
-**How fast finding could change.** On database-backed counts, the lower rate ratio falls to about a
+**How fast finding could change.** On the reviewed inventory the average Gorstian-to-Pridoli finding rate is
+at least [0.79]{.C60 .V226} of the whole-window mean with all 48 finds independent and [0.69]{.C60 .V227}
+counting by region and stage (lower 95% bounds), and exponential histories allow at most a
+[1.8]{.C60 .V228}-fold rise from *A* to the cutoff, or [2.4]{.C60 .V229}-fold by region. The literature review
+and the age filter inflate these ratios. On database-backed counts the lower rate ratio falls to about a
 quarter (table S20). With the restored collections, exponential histories allow finding to rise up to [18.1]{.C60 .V381}-fold across the
-window counting by region, or [33.9]{.C60 .V382}-fold by locality and age, against [2.4]{.C60 .V383}-fold by region on the reviewed
-inventory. Capel et al.'s ratios describe where species' first and last localities fall; reading them as
+window counting by region, or [33.9]{.C60 .V382}-fold by locality and age. Capel et al.'s ratios describe where species' first and last localities fall; reading them as
 finding rates would need a model of the intermediate localities the list omits. With Capel's literal Yea
 ages, the oldest endpoint is 425.0 Ma, and the comparison runs over the Ludfordian to Pridoli: retaining
 Yea gives six regions, lower ratio [0.619]{.C60 .V384} and spore-share
@@ -1231,16 +1237,16 @@ the Oman fragments, [10.3]{.C61 .V397} times lower; after Zbrza, [8.2]{.C61 .V39
 
 **Limits and the combinations that can occur.** Over the full window the steady-rate limit stays close
 to the reviewed inventory's [428.84]{.C27 .V013} Ma: [428.17]{.C27 .V402} Ma with the restored collections, [429.43]{.C27 .V403} Ma on
-database-backed finds and [428.43]{.C27 .V404} Ma with both; and on the reviewed inventory with the oldest find at 425.0 Ma, [427.17]{.C27 .V405} Ma. The
-reductions required at 444 and 452 Ma rise with the restored collections, to [11.7]{.C48 .V406} and
-[17.2]{.C48 .V407}[]{.C48}. A conservative envelope pairs the fewest guaranteed finds with the oldest age attained
+database-backed finds and [428.43]{.C27 .V404} Ma with both; and on the reviewed inventory with the oldest find at 425.0 Ma, [427.17]{.C27 .V405} Ma. Counting
+localities, the reductions required at 444 and 452 Ma range from [6.35]{.C48 .V439} on database-backed finds at
+444 Ma to [17.2]{.C48 .V407} with the restored collections at 452 Ma ([11.7]{.C48 .V406} at 444 Ma)[]{.C48}. A conservative envelope pairs the fewest guaranteed finds with the oldest age attained
 anywhere, and the two need not occur together. We therefore also report the oldest limit over count and age
 combinations that can occur together. Over the full window the two coincide, so 428.84 Ma is itself
 attainable. They differ for the Silurian-only cutoff at 419.62 Ma on database-backed finds counted by
 region, with the two Bathurst Island localities removed before the cells are formed and each cell fixed at
 its localities' midpoint stage: the envelope gives
 [451.3]{.C48 .V408} Ma, while the oldest attainable limit is [438.8]{.C48 .V409} Ma, which needs finding before the oldest find at
-least [1.43]{.C48 .V410} and [2.08]{.C48 .V411} times lower at 444 and 452 Ma with zero delay and a steady later rate, the smallest reductions in any setting tested.
+least [1.43]{.C48 .V410} and [2.08]{.C48 .V411} times lower at 444 and 452 Ma with zero delay and a steady later rate, the smallest reductions in any setting tested. Keeping the two Bathurst Island localities raises those smallest reductions to [2.06]{.C48 .V444} and [2.93]{.C48 .V440}.
 Under the same conditions all-collection effort gives [443.1]{.C48 .V412} Ma, plant-excluded effort [440.8]{.C48 .V413} Ma and
 the 25 Myr decline [447.3]{.C48 .V414} Ma; the 10 Myr declines set no limit within 469.4 Ma[]{.C48}. Counting pooled
 midpoint region–stage cells over the full window, plant-excluded effort gives [431.21]{.C27 .V415} Ma on the reviewed
