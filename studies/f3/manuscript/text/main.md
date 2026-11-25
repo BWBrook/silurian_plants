@@ -13,10 +13,10 @@ history expected to yield about three finds or fewer at that rate[]{.C58}. In ou
 [48]{.C25} finds are independent, near 431.2 Ma if half are, and [434.1]{.C61 .V246}–[437.2]{.C61 .V247} Ma for branched plants,
 including the *Cooksonia* behind that maximum. Ancestors at
 444–452 Ma fit if early fossils were found [8]{.C48 .V054}–[12]{.C48 .V055} times less often with 48 finds,
-or [2.4]{.C48 .V056}–[4.5]{.C48 .V057} times with 15–19, if finding rose fast enough, or
+or [2.4]{.C48 .V056}–[4.5]{.C48 .V057} times with 15 or 19, if finding rose fast enough, or
 recognisable bodies appeared later. Late-Silurian crown fossils occur in several regions[]{.C60}. Finding
 proportional to North American land-laid rock area predicts too few[]{.C59}. The inferred Devonian change in finding
-depends on the inventory[]{.C60}.
+varies by inventory[]{.C60}.
 
 **Keywords:** molecular clock; fossil calibration; land plants; vascular plants; stratigraphic
 confidence interval; Ordovician–Silurian
@@ -290,12 +290,14 @@ recognisable bodies appearing with the ancestor and all 48 finds independent (fi
 spread three finds' worth of finding over the 17–25 Myr between the ancestor and the oldest find. With about
 24 independent finds, [3.9]{.C55 .V110}–[5.7]{.C55 .V111} times suffices, and with 19 or 15,
 [2.4]{.C48 .V056}–[4.5]{.C48 .V057} times; the reduction needed grows roughly in proportion to the
-number of independent finds, and with fewer than about 24, 431.2 Ma already fits a steady rate. Across
-the four occurrence inventories, counting localities, the reductions range from [6.35]{.C48 .V439} to
-[17.2]{.C48 .V407}; on database-backed finds counted by region with the window ending at the Silurian's
-close, the smallest reductions consistent with a count and oldest age that can occur together are
-[1.43]{.C48 .V410}–[2.93]{.C48 .V440}, depending on whether the two Bathurst Island localities are kept
-(electronic supplementary material, S5.12)[]{.C48}. At a
+number of independent finds, and with fewer than about 24, 431.2 Ma already fits a steady rate. With zero delay
+and a steady later rate, the reductions across the four occurrence inventories, counting localities over
+the 426.7–393.47 Ma window, range from [6.35]{.C48 .V439} (38 database-backed finds, 444 Ma) to
+[17.2]{.C48 .V407} (69 finds with the restored collections, 452 Ma). On database-backed finds counted by
+region with the window ending at the Silurian's close, the smallest reductions for a count and oldest age
+that can occur together are [1.43]{.C48 .V410} and [2.08]{.C48 .V411} at 444 and 452 Ma with the two Bathurst
+Island localities removed, and [2.06]{.C48 .V444} and [2.93]{.C48 .V440} with them kept (electronic
+supplementary material, S5.12)[]{.C48}. At a
 steady finding rate and with all 48 finds independent, the same ancestors fit if recognisable bodies
 appeared about [15–23]{.C33} Myr or more after them, leaving at most the [2.1]{.C57 .V112} Myr that three
 finds take; fewer independent finds shorten the delay needed. Smaller reductions combine with shorter delays (figure 3*b*).
@@ -319,16 +321,16 @@ Two outside measures fell enough before the oldest find to bear on older ancesto
 [3.2]{.C56 .V128}–[3.5]{.C56 .V129} times lower before the oldest find than after it, the share of indexed
 palynological studies reporting trilete spores [5.1]{.C56 .V132}–[7.1]{.C56 .V133} times lower, and their
 stage-by-stage product, a combination we chose after seeing both, [21.7]{.C59 .V185}–[29.8]{.C59 .V186} times
-lower, enough to fit those ancestors at every count (figure 3*b*; electronic supplementary material, S5.8
-and S5.10). If finding had tracked rock area, the reviewed inventory would hold [0.45]{.C59 .V199} expected
-finds in the Gorstian to Pridoli, where at least [13]{.C59 .V198} of the 48 lie. The shortfall persists in
+lower, so that finding proportional to the product, with zero delay, would fit those ancestors at every
+count tested (figure 3*b*; electronic supplementary material, S5.8 and S5.10). If finding had tracked rock area, the reviewed inventory would hold [0.45]{.C59 .V199} expected
+finds in the Gorstian to Pridoli, where at least [13]{.C59 .V445} of the 48 lie. The shortfall persists in
 every occurrence inventory and in the regional distribution of an independent compilation's species
 endpoints, and multiplying rock area by the spore share gives the same result. The spore share alone
 predicts too few finds in the two inventories augmented by literature review; on database-backed finds its
 verdict turns on the fossils' ages (electronic supplementary material, S5.12)[]{.C59}. The density of all
 PBDB land and marginal-marine collections predicts [10.1]{.C59 .V204} finds in the reviewed inventory's
 Gorstian-to-Pridoli interval, consistent with its guaranteed minimum, and too few only in its narrower
-Ludfordian-to-Pridoli check (*p* = [0.040]{.C59 .V337}). Its later-to-earlier ratios are [1.35]{.C56 .V130}
+Ludfordian-to-Pridoli locality count (*p* = [0.040]{.C59 .V337}). Its later-to-earlier ratios are [1.35]{.C56 .V130}
 at 444 Ma and [1.41]{.C56 .V131} at 452 Ma, far too small to fit those ancestors with zero delay[]{.C59}.
 
 **(h) Late-Silurian crown fossils occur in several regions, and the inferred finding rate depends on the inventory.**
@@ -336,12 +338,14 @@ Late-Silurian crown fossils occur in six named palaeoregions in the reviewed inv
 Baltica to South China and South America, and in three when only database-backed localities are
 counted[]{.C60}. In the reviewed inventory the [13]{.C60 .V343} finds certain to be late Silurian set that
 minimum, and neither of the two localities that can reach *A* is among them. Counting occupied
-region–stage cells, each occurrence inventory admits the late-Silurian share expected under steady
-finding, and so do the species endpoints of the independent compilation[]{.C59}. Locality counts depend
+named region–stage cells over the Gorstian to Pridoli, an allocation at the share expected under steady
+finding passes for each occurrence inventory, and the same comparison passes for the independent
+compilation's species endpoints[]{.C59}. Locality counts depend
 more strongly on how the record was assembled. Restoring the broadly dated Early Devonian collections and
 counting only database-backed localities leaves [5]{.C60 .V364}–[7]{.C60 .V365} of [59]{.C60 .V363} finds in the
-Gorstian to Pridoli and allows finding to rise up to about [18]{.C60 .V341}-fold from *A* to the cutoff among
-exponential histories, counting by region (electronic supplementary material, S5.12 and table S20)[]{.C60}.
+Gorstian to Pridoli and allows finding to rise up to about [18]{.C60 .V341}-fold from *A* to the cutoff as an upper
+benchmark among exponential histories, counting named region–stage cells (electronic supplementary
+material, S5.12 and table S20)[]{.C60}.
 Finding could have kept rising into the Devonian, and changes in plant abundance, preservation or
 collecting could each affect the counts. Rock area and the spore share change elsewhere: both stay low
 through the late Silurian and rise in the Lochkovian (electronic supplementary material, S5.10).
@@ -456,7 +460,7 @@ identification can also lower. These differences give the required ratios a scal
 late-Silurian finds than observed in every inventory, so its fall carries little weight as evidence about
 early finding. The spore share fails the same check in the two inventories augmented by literature review, and on
 database-backed counts its verdict turns on the fossils' ages, so its weight depends on which record samples the late Silurian more fairly.
-Late-Silurian crown fossils occur in three to six regions, depending on the inventory, and the inferred
+Certainly late-Silurian crown fossils occur in at least three to six named regions, depending on the inventory, and the inferred
 change in finding into the Devonian depends on the inventory too (*h*). The land-plant body record sets a requirement
 of the same kind. Definite trilete spores place land plants before the [454.41]{.C43} Ma Kinnekulle ash,
 and the [21.5]{.C62 .V321} Myr that follow hold one land-plant body, the Oman fragments, against
@@ -539,7 +543,7 @@ span. North American land-laid rock area fell before the oldest find, but findin
 have left far fewer fossils in the late Silurian than every inventory
 holds, so its fall carries little weight as evidence about early finding. The share of studies reporting
 trilete spores fails in the inventories augmented by literature review, and on database-backed counts its
-verdict turns on the fossils' ages[]{.C59}. Late-Silurian crown fossils occur in three to six regions. With a steady later rate and zero delay,
+verdict turns on the fossils' ages[]{.C59}. Certainly late-Silurian crown fossils occur in at least three to six named regions, depending on the inventory. With a steady later rate and zero delay,
 the tested simple rises require early finding to climb steeply near the oldest find[]{.C57}; finding may also
 have kept rising into the Devonian, and the timing and cause of the rise remain open[]{.C60}. For spores, the Libyan basin shows that an absence can be local:
 older land-plant ancestors fit its record if, with equal delivery, their steady trilete supply since

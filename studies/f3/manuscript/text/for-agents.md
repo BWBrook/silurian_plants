@@ -237,9 +237,10 @@ Do not reintroduce any of these. Each was caught in review; the record is in `su
     ranges have no demonstrated joint coverage. A pass is a possibility, not a fit or a ranking (C49).
 28. **Reviewed-inventory results quoted as inventory-free.** "Two-thirds of the later rate", "six regions",
     "8–12 times less often", "the spore share fails the later record" and "searching is compatible" belong
-    to S0. Across the four occurrence inventories by locality the requirement at 444–452 Ma spans
-    6.35–17.16; on PBDB-backed finds by region with the Silurian-only cutoff the jointly possible minimum
-    is 1.43–2.93, depending on the Bathurst treatment (C48). Quote each
+    to S0. With zero delay and a steady later rate, over 426.7–393.47 Ma by locality the requirement spans
+    6.35 (S2a, 38 units, 444 Ma) to 17.16 (S1, 69 units, 452 Ma). On S2a/S2b by region with the
+    419.62 Ma cutoff, the jointly possible minimum at 444/452 Ma is 1.43/2.08 with Bathurst removed and
+    2.06/2.93 with Bathurst kept (C48). Quote each
     inventory value with its inventory, anchor, interval, counting rule, test and proxy, and name
     all-collection or plant-excluded searching (C59, C60; `estimands.md`).
 29. **The conservative envelope as an attainable limit.** It pairs the fewest guaranteed finds with the
