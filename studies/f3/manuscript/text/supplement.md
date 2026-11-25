@@ -1176,7 +1176,7 @@ too few on the two inventories augmented by literature review. In Capel et al.'s
 older edge at 426.7 Ma) the result rests on the counting rule. The largest upper-tail *p* over admissible
 placements is [0.042]{.C59 .V375} by named region and stage and [0.064]{.C59 .V443} with pooled cells, and by
 locality and age the spore share predicts [8.54]{.C59 .V441} late-Silurian units where [7]{.C60 .V371}–[8]{.C60 .V372}
-lie (*p* = [0.76]{.C59 .V442}). With the literal Yea ages, the older edge at 425.0 Ma and the Ludfordian to
+lie (upper-tail *p* = [0.76]{.C59 .V442} at seven). With the literal Yea ages, the older edge at 425.0 Ma and the Ludfordian to
 Pridoli, pooled cells give [0.0075]{.C59 .V446}. On
 database-backed finds its verdict turns on where the coarsely dated finds lie. Without the restored
 collections, [5]{.C60 .V357} to [7]{.C60 .V358} of the [38]{.C59 .V419} finds can lie in the Gorstian to Pridoli.
@@ -1192,7 +1192,7 @@ database-backed finds with the restored collections. With the older edge at 425.
 [4.96]{.C56 .V427} and [6.71]{.C56 .V428} and the largest matching counts [26]{.C56 .V429} and [24]{.C56 .V430}, against
 [15]{.C56 .V431} named or [17]{.C56 .V432} pooled cells. Both comparisons assume zero delay and finding that
 changed in proportion to the spore share[]{.C56}. All land and marginal-marine collections, the searching measure of figure 3*b*,
-predict too few finds only in the reviewed inventory's Ludfordian-to-Pridoli locality count
+predict too few finds under every allowed placement only in the reviewed inventory's Ludfordian-to-Pridoli locality count
 (*p* = [0.040]{.C59 .V378}, or [0.035]{.C59 .V379} with the oldest find at 425.0 Ma). Plant-excluded collections pass
 every check for excess; on database-backed finds with the restored collections they predict [13.8]{.C59 .V380}
 Gorstian-to-Pridoli finds where 5 to 7 lie, a discrepancy in the opposite direction (lower-tail *p* = 0.020
@@ -1241,7 +1241,7 @@ the Oman fragments, [10.3]{.C61 .V397} times lower; after Zbrza, [8.2]{.C61 .V39
 **Limits and the combinations that can occur.** Over the full window the steady-rate limit stays close
 to the reviewed inventory's [428.84]{.C27 .V013} Ma: [428.17]{.C27 .V402} Ma with the restored collections, [429.43]{.C27 .V403} Ma on
 database-backed finds and [428.43]{.C27 .V404} Ma with both; and on the reviewed inventory with the oldest find at 425.0 Ma, [427.17]{.C27 .V405} Ma. Counting
-localities over the 426.7–393.47 Ma window, the reductions required at 444 and 452 Ma range from
+localities over the 426.7–393.47 Ma window in the four main occurrence inventories, the reductions required at 444 and 452 Ma range from
 [6.35]{.C48 .V439} for the 38 database-backed finds at 444 Ma to [17.2]{.C48 .V407} for the 69 finds with the
 restored collections at 452 Ma ([11.7]{.C48 .V406} at 444 Ma)[]{.C48}. A conservative envelope pairs the fewest guaranteed finds with the oldest age attained
 anywhere, and the two need not occur together. We therefore also report the oldest limit over count and age
@@ -1398,17 +1398,17 @@ lists every condition behind the analyses, the results each bears on, what follo
 | Reported age ranges contain the true ages, including whether each find falls inside the window | Limits and shape rejections | A test's error rate is at most $\alpha+\delta$, where $\delta$ is the chance that any range misses; simulations with exact ages gave coverage of [0.941–0.958]{.C34} | S5.2; S5.6 |
 | The oldest finds belong to the crown group | Link from the limit to the 431.2 Ma maximum and to ancestors | The limit dates a different category | Methods (d); S5.1, Table S13; S6 |
 | A specified delay separates the ancestor from recognisable bodies, moving the start of the count to *t* − *d* | Required rate reductions; rule of three | A longer delay lowers the reduction a given ancestor needs | Methods (g); S5.5 |
-| The rule of three counts expected early finds at a later rate estimated from the same finds | Results (d)–(f), (h) | It is conditional on the count and the cutoff | Methods (g) |
+| The rule of three counts expected early finds at a later rate estimated from the same finds | Results (d)–(f) | It is conditional on the count and the cutoff | Methods (g) |
 | The step and the rises were placed after seeing the data | Results (e)–(f) | They show what would fit, without calibrated 95% confidence | Methods (g); S5.4; S5.9 |
 | The rises and the window-mean reading of the outside comparison assume a level finding rate after the oldest find, which the spread of later ages can test; finding proportional to a measure lets the later rate vary | Results (f)–(g) | Required ratios and doubling times change | Methods (f)–(h); S5.8–S5.10 |
 | The doubling times are requirements; the spread of early plants is unmeasured | Results (f); Interpretation | They state what would fit, not what happened | Results (f); S5.9 |
 | *Outside measures* | | | |
 | The measures describe rock and published studies; each ratio would equal the ratio of mean finding rates if finding were proportional to the measure, with the same constant in both windows | Outside-measure ratios | The ratios give scale only | Methods (h); S5.8 |
-| Reading a measure's contrast as a finding-rate contrast assumes that mean finding rates share it between the windows | Results (g) | The placement check gives no reason to expect this for rock or spores | Results (g); S5.10 |
+| Reading a measure's contrast as a finding-rate contrast assumes that mean finding rates share it between the windows | Results (g) | The rock measure predicts too few late-Silurian finds across inventories. The spore-share result depends on the inventory and fossil ages | Results (g); S5.10; S5.12 |
 | The combined measure was chosen after the single measures were seen | Results (g) | It has no calibrated confidence level and may count a shared cause twice | Methods (h); S5.10 |
 | The stage-permutation comparison assumes exchangeable stage labels | Overlap of the measures | Temporal dependence is left out of account | Stated here; stage shuffles in the combined script |
 | *Placement check and switch reading* | | | |
-| Each placement check compares one late-Silurian allocation, using the 13 finds (six region-and-stage units) dated wholly within it, while up to 16 may lie there | Results (g)–(h) | The counts are minima; at a fixed total, more late finds would strengthen the case against the rock and spore measures and raise the rate bounds, but could weaken compatibility with a level rate and searching | Results (g); S5.10, Table S16 |
+| The original check uses the 13 finds (six region–stage units) certain to be late Silurian. The inventory comparison tests all counts its age-placement rules allow | Results (g)–(h) | Up to 16 of the 48 reviewed finds may be late Silurian. At a fixed total, adding late finds raises the rate bound and can change whether a measure predicts too few | S5.10, Table S16; S5.12, Table S20 |
 | Placement units are independent and their age ranges contain the true ages | Results (g)–(h) | The binomial tails lose their reading | Methods (h); S5.2; S5.10; combined script |
 | The allocation inherits any imbalance in how the inventory sampled Silurian and Devonian records | Results (g)–(h) | An imbalance would shift finds between the intervals and bias the placement and switch results | Stated here |
 | The placement intervals and the oldest-age boundary *A* were chosen from the observed age ranges | Results (g)–(h) | The binomial tails describe fixed-window discrepancies, not calibrated rejection probabilities | S5.10; switch script |
@@ -1418,9 +1418,9 @@ lists every condition behind the analyses, the results each bears on, what follo
 | Nine of the 13 late-Silurian finds are dated only to the Pridoli | Results (h) | The bounds describe the late Silurian as a whole, not its first part | Membership table (B2/main) |
 | Only one exponential family is examined for later change | Results (h) | Other shapes give other change factors | S5.10 |
 | Collection density is used as a rough proxy for searching; targeted searching of the oldest plant-bearing beds is unmeasured | Results (g)–(h) | Targeted searching could raise the late-Silurian count | Conditions; Methods (h); S5.8 |
-| The rate-share bounds are lower limits on interval averages | Results (h) | They do not establish a plateau | S5.10 |
+| The rate-share bounds are lower limits on interval averages | S5.12, Table S20 | They do not establish a plateau | S5.10; S5.12 |
 | The exponential factor spans *A* to the cutoff, including the late Silurian | Results (h) | It bounds change across the whole later window | S5.10 |
-| The early-rise durations keep a steady later rate and zero delay | Results (h) | The straight-line rise spans at most a few million years to about 15, depending on the count; other histories differ | Results (f), (h); S5.9 |
+| The early-rise durations keep a steady later rate and zero delay | Results (f) | The straight-line rise spans at most a few million years to about 15, depending on the count; other histories differ | S5.9; S5.10 |
 | The two units that set *A* lie outside the guaranteed late count | Results (h) | The selection of *A* remains, and a counted late find could be the actual oldest fossil | S5.10; switch script |
 | The switch reading concerns the finding of recognisable crown bodies | Results (h); Interpretation | It does not date when plants or the lineage arose | Methods (e); Discussion, Interpretation |
 | *Three groups and gap benchmarks* | | | |

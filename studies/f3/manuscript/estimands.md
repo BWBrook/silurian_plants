@@ -187,7 +187,7 @@ after preliminary sums: the results are a retrospective sensitivity analysis.
   the spore share predicts too few in the literature-reviewed inventories, and on PBDB-backed counts its
   verdict depends on the placement of the coarsely dated finds (only S2a's named cells, Ludfordian–Přídolí,
   A 425.0 Ma, predict too few at every admissible placement); all-collection searching predicts too few
-  only in S0's Ludfordian–Přídolí locality check. The 13 certain late-Silurian finds on S0 set the
+  at every admissible placement only in S0's Ludfordian–Přídolí locality check. The 13 certain late-Silurian finds on S0 set the
   six-region minimum; the two Yea localities that reach A 426.7 Ma lie outside them. Capel's counts describe where species' first and last
   localities fall.
 - **Allowed for C49 on S2b:** some age assignment within the recorded ranges passes the 10 Myr test,
