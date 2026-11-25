@@ -122,7 +122,7 @@ studies/f3/docs/audits/2026-11-23-inventory-age-examples.csv,product or declared
 studies/f3/docs/audits/2026-11-23-inventory-age-examples.py,product or declared analysis dependency,candidate,226b1e401fe64f23c936e95b315a408d726355dd220eb382f39f44bdf67aa6e0,
 studies/f3/docs/audits/2026-11-23-inventory-symmetry-stage2-acceptance.md,product or declared analysis dependency,candidate,78e9a1898f92f22b07e26fec87c41f92236842fa461d84247ecec0d1639ffe56,
 studies/f3/docs/audits/2026-11-24-inventory-integration-review.md,product or declared analysis dependency,candidate,4e20beb05731c28d0839d041504873436c3e073931522c433f3bafb5867e634e,
-studies/f3/docs/decisions.md,product or declared analysis dependency,candidate,c142e34135ee0892588c66d4dfb017f8c349927a59176484cdd81499120dd323,
+studies/f3/docs/decisions.md,product or declared analysis dependency,candidate,30c7612d5a4bc5ea2733d72879d0b0340013e5ee57838b7794fec7f40f830360,
 studies/f3/docs/f3-shape.md,product or declared analysis dependency,candidate,ff30b032d3a080128c52228fdfcfe89d9a11d9ac0be1085443b7ab43c95caba4,
 studies/f3/docs/loop1-close.md,product or declared analysis dependency,candidate,bb8e0ccff52b11971bac37efe3d3163c830055cb411808c48e8efd447c4016a7,
 studies/f3/docs/loop2-close.md,product or declared analysis dependency,candidate,8eba686cda8c67538d5696572b23edc04c2cb9abd7ecaed9995b04dafea5962a,

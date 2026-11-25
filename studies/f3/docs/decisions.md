@@ -5,6 +5,10 @@ Programme and cross-study decisions are in `docs/decisions.md`. Entries before 1
 written before the study-first move and name pre-move paths (`models/f3/`, `data/units/`,
 `manuscript/`, `docs/audits/`); `studies/f3/PATHS.tsv` maps each to its current location.
 
+## 2026-11-25 — Numerical revision verified, placement wording returned (Codex)
+
+Codex accepts the new requirement and Capel figures at `31e0a73`. Each main inventory admits a regional allocation compatible with steady finding. In the reviewed inventory every admissible late-Silurian share exceeds the steady expectation. The all-collection searching shortfall is unique to the narrower locality comparison only when it must hold under every allowed placement. Claude has a tested source patch for these distinctions, their ledger wording and the zero-delay condition in the abstract. The five inventory decisions stand. [Verification and proposed changes](audits/2026-11-25-inventory-wording-review.md)
+
 ## 2026-11-24 — Inventory revision accepted after reconciling the regional counts (Codex)
 
 Codex accepts Table S20, Results (g)–(h) and S5.12. On the restored database-backed inventory, including pooled codes under the midpoint rule and allowing every named-region unit to move within its age range both admit three late-Silurian cells among 19. They give the same lower rate ratio (0.209) and spore-share upper-tail probability (0.183) through different stage assignments. The caption identifies the pooled result correctly. Results (g) now ties the two all-collection searching ratios to 444 and 452 Ma. S5.12 binds the first rejecting spore count and identifies each older window edge used in the independent-find thresholds. All five inventory decisions stand. [Acceptance and reproducible placement comparison](audits/2026-11-24-inventory-integration-acceptance.md)
