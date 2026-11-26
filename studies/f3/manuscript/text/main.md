@@ -431,22 +431,24 @@ land-plant bodies including the Oman fragments (electronic supplementary materia
 
 ## Discussion
 
-The early record allows older ancestors, and the analyses state what each would require. The evidence
+The early record does not exclude older ancestors, and the analyses state what each requires. The evidence
 differs in depth between the two clades. For living land plants it comes from the audit of the 515.5 Ma
 maximum and one polar basin, whose samples report no triletes from stages in which triletes occur
 elsewhere. Those samples exclude a steady, well-delivered supply near the Llandovery level, while lower
 delivery, lower local supply or spore producers outside the catchment all fit. For living vascular plants it comes from a body
 record drawn from several regions: at a steady finding rate, the 95%
 confidence limit on the start of the recognisable crown vascular-plant record lies between
-[429]{.C27 .V018} and [434.05]{.C30} Ma, depending on how many finds are independent, and passes the
+[428.8]{.C27 .V003} and [434.05]{.C30} Ma, depending on how many finds are independent, and passes the
 431.2 Ma maximum at about half the main count. That maximum was keyed to a branched *Cooksonia*. Applied to
 the branched-plant record, which includes it and begins with the older *C. barrandei*, the same method gives
 limits of [434.1]{.C61 .V246}–[437.2]{.C61 .V247} Ma across the counting rules (table 2), so a maximum built by this
 method from that record would lie older than 431.2 Ma. The crown group asks a narrower question, when bodies with
 the dated clade's own characters appear; characters that diagnose its daughter lineages may have arisen
-after the split, delaying recognisable crown fossils. For each way of counting, a lower earlier finding rate, later recognisable
-bodies or both fit ancestors older than these limits; the models give the size of each requirement in
-aggregate. If fossils turned up at a steady rate after the oldest find and recognisable bodies appeared with the
+after the split, delaying recognisable crown fossils. These limits lie from 2.4 Myr younger to 6.0 Myr older
+than 431.2 Ma; 444–452 Ma lies 12.8–20.8 Myr older, 6.8–14.8 Myr beyond the oldest limit. Ancestors there
+need finding before *A* about [8]{.C48 .V054}–[12]{.C48 .V055} times lower for crown vascular plants (426.7 Ma, 48
+independent finds) or [6.3]{.C61 .V254}–[10.9]{.C61 .V255} times for branched plants (432.9 Ma, 69), with zero delay, or later
+recognisable bodies (*e*, *i*). If fossils turned up at a steady rate after the oldest find and recognisable bodies appeared with the
 ancestor, the record allows about three finds' worth of earlier
 finding, so it limits the total of early finding, and every history with that total fits equally. A
 fast enough exponential rise keeps that total below three for an ancestor of any age, so an older limit
@@ -555,9 +557,10 @@ the tested simple rises require early finding to climb steeply near the oldest f
 have kept rising into the Devonian, and the timing and cause of the rise remain open[]{.C60}. For spores, the Libyan basin shows that an absence can be local:
 older land-plant ancestors fit its record if, with equal delivery, their steady trilete supply since
 459.1 Ma stayed below about a tenth of the later supply, with older onsets needing less, or if the
-producers lived elsewhere or acquired triletes later. Missing fossils thus
-allow older vascular-plant ancestors if early plants were found less often or became recognisable later,
-and the body record states how much less often.
+producers lived elsewhere or acquired triletes later. Across the counting rules compared, crown
+and branched steady-rate limits lie within 6.0 Myr of 431.2 Ma; ages of 444–452 Ma, 12.8–20.8 Myr older,
+fit only with lower early finding, later recognisable bodies or both, by amounts the body record states.
+We re-estimated no molecular-clock dates, so any shift in them remains untested.
 
 ## Ethics
 
