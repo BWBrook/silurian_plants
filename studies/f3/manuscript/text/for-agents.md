@@ -253,6 +253,11 @@ Do not reintroduce any of these. Each was caught in review; the record is in `su
     holds only for a stated number of late finds (S2a: p 0.174 with 5, rejected from 7). The spore
     threshold at A 425.0 Ma and 452 Ma is 24.95 finds, so 24 whole finds fit and 25 do not (C56, C59;
     `studies/f3/models/loop3/out/spore_threshold_anchors.csv`).
+31. **S2b's limits as unconditional.** On S2b by locality a steady rate predicts [12.6]{.C60 .V447}
+    Gorstian–Pridoli finds where 5–7 lie, one-sided lower-tail p [0.0076]{.C60 .V449}–[0.047]{.C60 .V448};
+    two-sided it rejects at 5 and 6 and retains 7, and S0, S1 and S2a each admit a compatible count. Quote
+    S2b's steady-rate limit (428.43 Ma) as conditional on a history this comparison counts against, and keep the one-sided, post hoc, one-inventory scope (C60;
+    `studies/f3/docs/audits/2026-11-26-locality-lower-tail.csv`).
 
 
 ## Stage 2 results (integrated 7 November 2026)

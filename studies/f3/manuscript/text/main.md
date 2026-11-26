@@ -343,9 +343,16 @@ Gorstian-to-Pridoli count compatible with steady finding across the full window.
 compatible with the regional placement of the independent compilation's species endpoints[]{.C59}. Locality counts depend
 more strongly on how the record was assembled. Restoring the broadly dated Early Devonian collections and
 counting only database-backed localities leaves [5]{.C60 .V364}–[7]{.C60 .V365} of [59]{.C60 .V363} finds in the
-Gorstian to Pridoli and allows finding to rise up to about [18]{.C60 .V341}-fold from *A* to the cutoff as an upper
-benchmark among exponential histories, counting named region–stage cells (electronic supplementary
-material, S5.12 and table S20)[]{.C60}.
+Gorstian to Pridoli, where steady finding predicts [12.6]{.C60 .V447}. At every count the ages allow, steady
+finding then predicts too many late-Silurian finds (lower-tail *p* = [0.0076]{.C60 .V449} at five to
+[0.047]{.C60 .V448} at seven), and this locality comparison counts against the steady later rate assumed in
+(*f*). The two-sided test rejects at five and six finds and retains steady finding at seven, and the
+interval was chosen after the ages were seen. Each of the other three inventories admits a locality count
+compatible with steady finding (largest lower-tail *p* [0.98]{.C60 .V450}, [0.71]{.C60 .V451} and
+[0.42]{.C60 .V452}). As upper benchmarks among exponential histories, these 59 finds allow finding to rise up
+to [33.9]{.C60 .V382}-fold from *A* to the cutoff by locality and age, or about [18]{.C60 .V341}-fold by named
+region–stage cell (electronic supplementary material, S5.12 and table
+S20)[]{.C60}.
 Finding could have kept rising into the Devonian, and changes in plant abundance, preservation or
 collecting could each affect the counts. Rock area and the spore share change elsewhere: both stay low
 through the late Silurian and rise in the Lochkovian (electronic supplementary material, S5.10).
