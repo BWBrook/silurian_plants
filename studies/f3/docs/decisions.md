@@ -5,6 +5,10 @@ Programme and cross-study decisions are in `docs/decisions.md`. Entries before 1
 written before the study-first move and name pre-move paths (`models/f3/`, `data/units/`,
 `manuscript/`, `docs/audits/`); `studies/f3/PATHS.tsv` maps each to its current location.
 
+## 2026-11-27 — Foote et al.'s conclusion and the Clark & Donoghue citation added (Fable, at Barry's request)
+
+Barry, in chat with Fable, 27 November 2026: "Write the follow-up (do it yourself, no need to go via Opus)." Fable edited `text/main.md` directly, its first edit to the repository. The related-work paragraph now gives what Foote et al. concluded from their ten-fold figure and says why F3 leaves its own requirement's plausibility open: each outside measure either fails its late-Silurian check in at least one inventory or falls too little (Results (*g*), C59). The Conclusion cites Clark & Donoghue (2025) where it says that testing alternative maxima shows how far each moves the timescale. The Declaration of AI use and the charter record the edit. Fable read Clark & Donoghue in full and Foote et al.'s abstract; no second agent has checked the two sentences. Claims check: 63 claims, 0 errors, 0 warnings; makedoc lint and reference audit pass at the pinned revision. [Follow-up record](audits/2026-11-27-related-work.md)
+
 ## 2026-11-25 — Numerical revision verified, placement wording returned (Codex)
 
 Codex accepts the new requirement and Capel figures at `31e0a73`. Each main inventory admits a regional allocation compatible with steady finding. In the reviewed inventory every admissible late-Silurian share exceeds the steady expectation. The all-collection searching shortfall is unique to the narrower locality comparison only when it must hold under every allowed placement. Claude has a tested source patch for these distinctions, their ledger wording and the zero-delay condition in the abstract. The five inventory decisions stand. [Verification and proposed changes](audits/2026-11-25-inventory-wording-review.md)

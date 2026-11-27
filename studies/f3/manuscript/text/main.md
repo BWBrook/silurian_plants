@@ -505,7 +505,10 @@ the earliest vascular-plant genus lineage arose, with a fitted, varying preserva
 start of the recognisable record of a declared crown category under assumed finding-rate histories, then
 ask what older ancestors require. Foote et al. [@foote1999EvolutionaryPreservationalConstraints] asked
 that question of placental mammals: extensive Cretaceous ordinal histories would need preservation about ten
-times lower than in other Late Cretaceous mammals. Schachat et al. [@schachat2022IllusionFlightAbsence]
+times lower than in other Late Cretaceous mammals; with that benchmark they concluded that many modern
+orders were unlikely to be much older than their oldest fossils. Here each outside measure either fails its
+late-Silurian check in at least one inventory or falls too little (*g*)[]{.C59}, so we state the requirement
+and leave its plausibility open. Schachat et al. [@schachat2022IllusionFlightAbsence]
 tested the gap molecular dates imply for winged insects; Lole Durbin et al.
 [@loledurbin2026ReevaluatingMolecularClock] argued against the Weng'an maximum: a younger, similarly
 preserved deposit postdating the first animals also lacks them; and Marjanović and Laurin
@@ -546,7 +549,8 @@ A fossil maximum based on absence combines expectations about ancestral characte
 finding their remains in older rocks. Clock builders can state each maximum's character, geographical
 and finding-rate assumptions, and justify the probability assigned to older ages against them
 [@parham2011BestPracticesJustifying; @yang2005BayesianEstimationSpecies]. Testing alternative defensible
-maxima then shows how much each assumption moves the timescale, and sampling the joint age prior without
+maxima then shows how much each assumption moves the timescale
+[@clark2025UncertaintyTimingDiversification], and sampling the joint age prior without
 molecular data, then comparing its effective marginal ages with the posteriors, shows what the molecular
 data add [@brown2017PastSureTense].
 
@@ -597,7 +601,8 @@ outputs before integration. Gemini 4 Carbon (Google), at high reasoning effort, 
 request, found that the body-fossil inventory treated Silurian and Early Devonian finds asymmetrically, and
 specified the inventory audit that Claude and Codex ran. Claude Fable 5.2 (Anthropic) advised from 12 November 2026 through
 critiques and prompts relayed by Barry, including the proposal to organise the body-fossil results
-around the rule of three; it made no edits. Barry W. Brook originated and guided the programme and contributed scientific
+around the rule of three. Its one edit to the texts, at Barry's request on 27 November 2026, added Foote et
+al.'s conclusion and one citation to the Discussion and Conclusion. Barry W. Brook originated and guided the programme and contributed scientific
 decisions; he will review the final manuscript before submission. Task-specific roles, model versions and
 the limits of sessions whose exact variant was unavailable are recorded in `docs/charter.md`,
 `studies/f3/docs/audits/` and `studies/f3/manuscript/reconstruction/`, with adopted decisions in `docs/decisions.md` and `studies/f3/docs/decisions.md`.

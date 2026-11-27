@@ -130,6 +130,24 @@ references:
   page: 2331–2338
   publisher: Wiley
   DOI: 10.1111/2041-210x.13977
+- id: clark2025UncertaintyTimingDiversification
+  citation-key: clark2025UncertaintyTimingDiversification
+  type: article-journal
+  title: Uncertainty in the timing of diversification of flowering plants rests with equivocal interpretation of their fossil record
+  author:
+  - family: Clark
+    given: James W.
+  - family: Donoghue
+    given: Philip C. J.
+  issued:
+    date-parts:
+    - - 2025
+  container-title: Royal Society Open Science
+  volume: '12'
+  issue: '5'
+  article-number: '242158'
+  publisher: The Royal Society
+  DOI: 10.1098/rsos.242158
 - id: cocks2021OrdovicianPalaeogeographyClimate
   citation-key: cocks2021OrdovicianPalaeogeographyClimate
   type: article-journal

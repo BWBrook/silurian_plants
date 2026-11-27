@@ -85,8 +85,10 @@ data archived, and the human–AI correspondence record published alongside.
 
 - Barry W. Brook: originator, scientific adviser and final reviewer.
 - Claude Fable 5.2 (Anthropic, `claude-fable-5-2`), adviser from 12 November 2026, in chats with Barry:
-  read-only critique, issue-finding and the prompts Barry passes to Claude and Codex; it makes no edits
-  to the repository. Its first prompt (14 November 2026) proposed restating the body-fossil results
+  read-only critique, issue-finding and the prompts Barry passes to Claude and Codex. It made no edits
+  to the repository until 27 November 2026, when at Barry's request it added Foote et al.'s conclusion
+  and the Clark & Donoghue (2025) citation to F3's Discussion and Conclusion, reading Clark & Donoghue
+  in full and Foote et al.'s abstract. Its first prompt (14 November 2026) proposed restating the body-fossil results
   around the rule of three.
 - Gemini (Google; Gemini 4 Carbon at high reasoning effort, in the Antigravity app), independent reviewer at Barry's request,
   November 2026. It found that F3's crown vascular-plant inventory treats Silurian and Early Devonian
