@@ -14,7 +14,7 @@ A *molecular clock* compares the DNA of living plants and works out how long the
 
 ## Why early plants are hard to date
 
-The oldest traces of land plants are tough, microscopic spores. Spores appear in the Middle Ordovician, fragments of spore capsules in Late Ordovician Oman, and branched plants, often only millimetres tall, in the Silurian. Missing fossils in older rocks can mean the plants were absent, or that small, woodless and perhaps rare plants were seldom preserved, found and recognised. A maximum age has to argue for the first reading.
+The oldest traces of land plants are tough, microscopic spores. Spores appear in the Middle Ordovician, fragments of spore capsules in Late Ordovician Oman, and branched plants, often only millimetres tall, in the Silurian. Missing fossils in older rocks can mean the plants were absent, or that small, woodless, perhaps rare plants were seldom preserved, found and recognised. A maximum age must argue for the first reading.
 
 ## What we did
 
@@ -33,6 +33,6 @@ The vascular-plant record leaves room for older ancestors if early plants were s
 
 ## How this work was done
 
-Two AI systems, Claude (Anthropic) and Codex (OpenAI), did the research with Barry Brook, who set its direction; independent reviews by GPT-6 Pro (OpenAI) and Gemini 4 Carbon (Google), which found an imbalance in the fossil list, shaped it. Every number traces to a file and script in the public repository.
+Two AI systems, Claude (Anthropic) and Codex (OpenAI), did the research with Barry Brook, who set its direction; independent reviews by GPT-6 Pro (OpenAI) and Gemini 4 Carbon (Google), which found the fossil list uneven between Silurian and Devonian, shaped it. Every number traces to a file and script in the public repository.
 
 ## Sources

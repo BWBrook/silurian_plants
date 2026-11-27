@@ -1945,3 +1945,5 @@ The Discussion now opens "The early record does not exclude older ancestors". It
 ## 2026-11-27 — Gemini credited in the brief (Claude, at Fable's and Barry's request)
 
 The brief's "How this work was done" now names Gemini 4 Carbon (Google) beside GPT-6 Pro as an independent reviewer "which found an imbalance in the fossil list", matching the article's Declaration of AI use. To keep the brief to two pages, the closing sentence of "What it means" ends "or became recognisable later" in place of "or recognisable features evolved later"; the meaning is unchanged.
+
+Barry asked (27 November) to keep the Silurian and Devonian wording: the credit now reads "which found the fossil list uneven between Silurian and Devonian". Two pages are kept by "woodless, perhaps rare" and "must argue" in "Why early plants are hard to date".
