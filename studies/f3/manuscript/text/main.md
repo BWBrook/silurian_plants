@@ -503,10 +503,19 @@ occurrences with a joint Bayesian model of preservation and diversification, and
 vascular plants at a mean of 433.5 Ma (95% highest posterior density 449.0–424.0 Ma). They estimate when
 the earliest vascular-plant genus lineage arose, with a fitted, varying preservation rate; we limit the
 start of the recognisable record of a declared crown category under assumed finding-rate histories, then
-ask what older ancestors require. The two analyses target different quantities from partly shared data
-and test different assumptions. CladeDate builds calibration densities directly from fossil times
-[@claramunt2022CladedateCalibrationInformation], and Hooper et al. link spore-character reconstruction
-to revised calibrations. We make the maxima's observational requirements explicit, limiting local spore
+ask what older ancestors require. Foote et al. [@foote1999EvolutionaryPreservationalConstraints] asked
+that question of placental mammals: extensive Cretaceous ordinal histories would need preservation about ten
+times lower than in other Late Cretaceous mammals. Schachat et al. [@schachat2022IllusionFlightAbsence]
+tested the gap molecular dates imply for winged insects; Lole Durbin et al.
+[@loledurbin2026ReevaluatingMolecularClock] argued against the Weng'an maximum: a younger, similarly
+preserved deposit postdating the first animals also lacks them; and Marjanović and Laurin
+[@marjanovic2008AssessingConfidenceIntervals] weighted Marshall's limits by rock area and diversity. Fossil
+sampling also yields origin estimates [@tavare2002UsingFossilRecord] and calibration densities
+[@claramunt2022CladedateCalibrationInformation; @matschiner2016BayesianPhylogeneticEstimation], CladeAge's
+only for clades recognisable as fossils; fossilized birth–death dating needs no node-specific
+maxima [@heath2014FossilizedBirthdeathProcess], and extinction-time methods face the mirror problem
+[@wang2016EstimatingTimesExtinction]. Hooper et al. link spore-character reconstruction to revised
+calibrations. We make the maxima's observational requirements explicit, limiting local spore
 supply and sizing the reductions in finding rate, or the delays, that fit older vascular-plant dates.
 
 **Conditions.** Five conditions bear most on these conclusions. The number of independent finds is unknown, and every body-fossil limit depends on it and on an assumed finding-rate history. Fossil ages are ranges, and the tests assume that

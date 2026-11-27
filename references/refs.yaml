@@ -311,6 +311,28 @@ references:
   page: 1440–1455
   publisher: Wiley
   DOI: 10.1111/nph.17703
+- id: foote1999EvolutionaryPreservationalConstraints
+  citation-key: foote1999EvolutionaryPreservationalConstraints
+  type: article-journal
+  title: 'Evolutionary and Preservational Constraints on Origins of Biologic Groups: Divergence Times of Eutherian Mammals'
+  author:
+  - family: Foote
+    given: Mike
+  - family: Hunter
+    given: John P.
+  - family: Janis
+    given: Christine M.
+  - family: Sepkoski
+    given: J. John
+  issued:
+    date-parts:
+    - - 1999
+  container-title: Science
+  volume: '283'
+  issue: '5406'
+  page: 1310–1314
+  publisher: American Association for the Advancement of Science (AAAS)
+  DOI: 10.1126/science.283.5406.1310
 - id: hanley1983IfNothingGoes
   citation-key: hanley1983IfNothingGoes
   type: article-journal
@@ -356,6 +378,25 @@ references:
   page: 1634–1643
   publisher: Springer Science and Business Media LLC
   DOI: 10.1038/s41559-022-01885-x
+- id: heath2014FossilizedBirthdeathProcess
+  citation-key: heath2014FossilizedBirthdeathProcess
+  type: article-journal
+  title: The fossilized birth–death process for coherent calibration of divergence-time estimates
+  author:
+  - family: Heath
+    given: Tracy A.
+  - family: Huelsenbeck
+    given: John P.
+  - family: Stadler
+    given: Tanja
+  issued:
+    date-parts:
+    - - 2014
+  container-title: Proceedings of the National Academy of Sciences
+  volume: '111'
+  issue: '29'
+  publisher: National Academy of Sciences
+  DOI: 10.1073/pnas.1319091111
 - id: hedges2018AccurateTimetreesRequire
   citation-key: hedges2018AccurateTimetreesRequire
   type: article-journal
@@ -597,6 +638,48 @@ references:
   article-number: '111903'
   publisher: Elsevier BV
   DOI: 10.1016/j.palaeo.2023.111903
+- id: loledurbin2026ReevaluatingMolecularClock
+  citation-key: loledurbin2026ReevaluatingMolecularClock
+  type: article-journal
+  title: Re-evaluating molecular clock maximum age calibrations revives pre-Ediacaran divergence estimates for animals
+  author:
+  - family: Lole Durbin
+    given: Orin M.
+  - family: Anttila
+    given: Eliel S.C.
+  - family: Briggs
+    given: Derek E.G.
+  - family: Macdonald
+    given: Francis A.
+  - family: Anderson
+    given: Ross P.
+  issued:
+    date-parts:
+    - - 2026
+  container-title: Science Advances
+  volume: '12'
+  issue: '40'
+  article-number: eaeg6289
+  publisher: American Association for the Advancement of Science (AAAS)
+  DOI: 10.1126/sciadv.aeg6289
+- id: marjanovic2008AssessingConfidenceIntervals
+  citation-key: marjanovic2008AssessingConfidenceIntervals
+  type: article-journal
+  title: 'Assessing Confidence Intervals for Stratigraphic Ranges of Higher Taxa: The Case of Lissamphibia'
+  author:
+  - family: Marjanović
+    given: David
+  - family: Laurin
+    given: Michel
+  issued:
+    date-parts:
+    - - 2008
+  container-title: Acta Palaeontologica Polonica
+  volume: '53'
+  issue: '3'
+  page: 413–432
+  publisher: Polska Akademia Nauk Instytut Paleobiologii (Institute of Paleobiology, Polish Academy of Sciences)
+  DOI: 10.4202/app.2008.0305
 - id: marshall1990ConfidenceIntervalsStratigraphic
   citation-key: marshall1990ConfidenceIntervalsStratigraphic
   type: article-journal
@@ -660,6 +743,32 @@ references:
   article-number: '1049'
   publisher: Frontiers Media SA
   DOI: 10.3389/fgene.2019.01049
+- id: matschiner2016BayesianPhylogeneticEstimation
+  citation-key: matschiner2016BayesianPhylogeneticEstimation
+  type: article-journal
+  title: Bayesian Phylogenetic Estimation of Clade Ages Supports Trans-Atlantic Dispersal of Cichlid Fishes
+  author:
+  - family: Matschiner
+    given: Michael
+  - family: Musilová
+    given: Zuzana
+  - family: Barth
+    given: Julia M. I.
+  - family: Starostová
+    given: Zuzana
+  - family: Salzburger
+    given: Walter
+  - family: Steel
+    given: Mike
+  - family: Bouckaert
+    given: Remco
+  issued:
+    date-parts:
+    - - 2016
+  container-title: Systematic Biology
+  page: syw076
+  publisher: Oxford University Press (OUP)
+  DOI: 10.1093/sysbio/syw076
 - id: morris2014AnalysisVegetationalChange
   citation-key: morris2014AnalysisVegetationalChange
   type: article-journal
@@ -933,6 +1042,34 @@ references:
   page: 1305–1309
   publisher: Wiley
   DOI: 10.1111/nph.15091
+- id: schachat2022IllusionFlightAbsence
+  citation-key: schachat2022IllusionFlightAbsence
+  type: article-journal
+  title: Illusion of flight? Absence, evidence and the age of winged insects
+  author:
+  - family: Schachat
+    given: Sandra R
+  - family: Goldstein
+    given: Paul Z
+  - family: Desalle
+    given: Rob
+  - family: Bobo
+    given: Dean M
+  - family: Boyce
+    given: C Kevin
+  - family: Payne
+    given: Jonathan L
+  - family: Labandeira
+    given: Conrad C
+  issued:
+    date-parts:
+    - - 2022
+  container-title: Biological Journal of the Linnean Society
+  volume: '138'
+  issue: '2'
+  page: 143–168
+  publisher: Oxford University Press (OUP)
+  DOI: 10.1093/biolinnean/blac137
 - id: scotese2021PhanerozoicPaleotemperaturesEarths
   citation-key: scotese2021PhanerozoicPaleotemperaturesEarths
   type: article-journal
@@ -1104,6 +1241,30 @@ references:
   page: 3332–3344
   publisher: Oxford University Press (OUP)
   DOI: 10.1093/molbev/msab106
+- id: tavare2002UsingFossilRecord
+  citation-key: tavare2002UsingFossilRecord
+  type: article-journal
+  title: Using the fossil record to estimate the age of the last common ancestor of extant primates
+  author:
+  - family: Tavaré
+    given: Simon
+  - family: Marshall
+    given: Charles R.
+  - family: Will
+    given: Oliver
+  - family: Soligo
+    given: Christophe
+  - family: Martin
+    given: Robert D.
+  issued:
+    date-parts:
+    - - 2002
+  container-title: Nature
+  volume: '416'
+  issue: '6882'
+  page: 726–729
+  publisher: Springer Science and Business Media LLC
+  DOI: 10.1038/416726a
 - id: taylor2024UltrastructureCambrianCryptospores
   citation-key: taylor2024UltrastructureCambrianCryptospores
   type: article-journal
@@ -1190,6 +1351,24 @@ references:
   page: 240–256
   publisher: Cambridge University Press (CUP)
   DOI: 10.1017/pab.2015.37
+- id: wang2016EstimatingTimesExtinction
+  citation-key: wang2016EstimatingTimesExtinction
+  type: article-journal
+  title: Estimating times of extinction in the fossil record
+  author:
+  - family: Wang
+    given: Steve C.
+  - family: Marshall
+    given: Charles R.
+  issued:
+    date-parts:
+    - - 2016
+  container-title: Biology Letters
+  volume: '12'
+  issue: '4'
+  page: '20150989'
+  publisher: The Royal Society
+  DOI: 10.1098/rsbl.2015.0989
 - id: wang2022PalynologicalAssemblageCambrian
   citation-key: wang2022PalynologicalAssemblageCambrian
   type: article-journal

@@ -1947,3 +1947,11 @@ The Discussion now opens "The early record does not exclude older ancestors". It
 The brief's "How this work was done" now names Gemini 4 Carbon (Google) beside GPT-6 Pro as an independent reviewer "which found an imbalance in the fossil list", matching the article's Declaration of AI use. To keep the brief to two pages, the closing sentence of "What it means" ends "or became recognisable later" in place of "or recognisable features evolved later"; the meaning is unchanged.
 
 Barry asked (27 November) to keep the Silurian and Devonian wording: the credit now reads "which found the fossil list uneven between Silurian and Devonian". Two pages are kept by "woodless, perhaps rare" and "must argue" in "Why early plants are hard to date".
+
+## 2026-11-27 — Earlier work in other groups cited (Claude, at Fable's and Barry's request)
+
+Fable found that the article cited none of the closer relatives that `docs/precedents.md` lists. Claude read the three named papers and searched four families: origin estimates from fossil sampling, calibration densities and fossilized birth–death dating, extinction from sighting records, and tests of absence-based maxima. Five Codex Sol searches found 22 distinct candidates, and every DOI was checked against Crossref. Claude Sonnet readers then confirmed 16 of them against their full text. Codex Sol checked the article's new sentences and the table, finding no errors in the article and one error in the table; all its points were adopted.
+
+The Discussion's related-work paragraph gains 80 words and eight references: Foote et al. 1999, Schachat et al., Lole Durbin et al. 2026, Marjanović & Laurin 2008, Tavaré et al. 2002, Matschiner et al., Heath et al. 2014 and Wang & Marshall 2016. The article now cites 64 works. Ten papers that neither agent read in full are in `docs/closed-literature.csv` and are described nowhere. The Schachat row there now records its open public-domain copy. No paper undercuts a claim; the alternatives that could change a number for this record are listed for discussion in `audits/2026-11-27-related-work.md`, with nothing changed.
+
+*Proc B* sets no limit on the number of references, but counts the reference list within its 10 000 words. The built article grows from about 10 975 to 11 302 words.
