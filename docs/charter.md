@@ -177,7 +177,7 @@ data archived, and the human–AI correspondence record published alongside.
   boundaries, exact all-path H0, calibrated critical value); literature research and first drafts of taxon cards,
   the primer (including its biological-transitions section, 2026-10-28), the precedents review and
   the rejected-records note; adjudication of audit findings
-  against the sources and the resulting corrections; blind audits; the move of the data-rebuild
+  against the sources and the resulting corrections; blind audits; the source check of the F3 related-work reading (2026-11-27, 26 papers); the move of the data-rebuild
   instructions from `deep-server` to `nectar`, with re-runs on `nectar` that reproduced the EPRP
   extraction tables (2026-10-29, checked by Claude Opus 5.5); an independent code-only review of the
   sprint-1 engine extensions and qualifier (2026-10-31, adjudicated by Claude Opus 5.5); three independent
@@ -301,6 +301,9 @@ data archived, and the human–AI correspondence record published alongside.
   - extraction of 232 quotation-verified findings from the closed papers on the pivotal records,
     adjudicated by Claude Opus 5.5 (`studies/f3/work/codex/loop1b/`), and the Cambrian age, location and
     vetting jobs for the widened Palynodata window (2026-10-28).
+  - the F3 related-work search over four families of earlier work and the three named precedents, and the
+    check of the resulting article sentences against their sources (2026-11-27, `gpt-6.1-sol` with web search;
+    `studies/f3/docs/audits/2026-11-27-related-work.md`).
 - OpenAI Codex (OpenAI, Codex desktop; exact model version not exposed in this session):
   Executed sprint 2 on 31 October: bounded M1 source admission, M3 denominator
   assessment, full-release Palynodata coverage/regeneration, source-register
