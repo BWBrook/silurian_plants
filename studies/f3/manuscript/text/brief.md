@@ -29,10 +29,10 @@ We traced the three maximum ages that divide the clocks (515.5 and 459.1 Ma for 
 
 ## What it means
 
-The vascular-plant record leaves room for older ancestors if early plants were several times scarcer in the record, or gained their recognisable features later. The Libyan spores leave room for older ancestors whose spores reached that basin sparsely or not at all. Plants that were uncommon, local, small or seldom searched for would leave exactly such a record; our calculations give the size of the requirement, and its biological plausibility remains open. Clock builders can state the fossil, geographical and recording assumptions behind each maximum and test how alternative maxima change their dates. In short: older dates for living land plants fit the fossil record if early plants were found several times less often, or recognisable features evolved later.
+The vascular-plant record leaves room for older ancestors if early plants were several times scarcer in the record, or gained their recognisable features later. The Libyan spores leave room for older ancestors whose spores reached that basin sparsely or not at all. Plants that were uncommon, local, small or seldom searched for would leave exactly such a record; our calculations give the size of the requirement, and its biological plausibility remains open. Clock builders can state the fossil, geographical and recording assumptions behind each maximum and test how alternative maxima change their dates. In short: older dates for living land plants fit the fossil record if early plants were found several times less often, or became recognisable later.
 
 ## How this work was done
 
-Two AI systems, Claude (Anthropic) and Codex (OpenAI), did the research with Barry Brook, who set its direction; independent reviews by GPT-6 Pro (OpenAI) shaped it. Every number traces to a file and script in the public repository.
+Two AI systems, Claude (Anthropic) and Codex (OpenAI), did the research with Barry Brook, who set its direction; independent reviews by GPT-6 Pro (OpenAI) and Gemini 4 Carbon (Google), which found an imbalance in the fossil list, shaped it. Every number traces to a file and script in the public repository.
 
 ## Sources
