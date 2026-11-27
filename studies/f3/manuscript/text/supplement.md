@@ -54,7 +54,7 @@ the primary across-well design fixes $\nu=2$. Well effects are integrated out, n
 Cutting outcomes are independent conditional on their well effect and latent ages.
 
 The first-appearance rule gives $\tau=443.1$ Ma. Encounter intensity is scaled to $a(t)=1$ in the
-five-stage reference window. For a candidate origin $T>\tau$, $a(t)=0$ for $t>T$. The declared older-to-
+three-stage Llandovery reference window. For a candidate origin $T>\tau$, $a(t)=0$ for $t>T$. The declared older-to-
 reference delivery and recovery multiplier is $m_i=\rho$ for transported older cuttings and 1 otherwise,
 with $\rho\in\{1,0.5,0.25,0.1\}$ fixed in separate analyses rather than estimated. Partition
 $(\tau,T]$ at stage and numerical-range boundaries. If $w_{ip}$ is the fraction of unit $i$'s age range
@@ -229,7 +229,7 @@ No composite score is computed.
 
 ### S2.5 Time support by well and dependence among cuttings
 
-Fig. S2 plots every chart-coded cutting by well and depth with its full stage enclosure. The older frame
+Fig. S2 plots every chart-coded cutting by well, ordered by age within each well, with its full stage enclosure. The older frame
 has three Darriwilian cuttings in D1-200 and seven in H2-NC186, whose enclosures reach before 459.1 Ma, and
 18 Katian or Hirnantian cuttings in D1-200, H2-NC186 and I3-NC186 that are wholly younger[]{.C45}. In the
 encounter likelihood a Darriwilian cutting enters as a mixture: with probability $1-q_i$ its age lies
@@ -341,6 +341,8 @@ to [514.5–506.5]{.C16} Ma, all younger than 515.5 Ma by the maximum's design (
 
 ### S5.1 Inventory and units
 
+Sections S5.1–S5.11 use the reviewed inventory, assembled before the inventory audit; S5.12 repeats the late-Silurian comparisons across inventories and reports shape sensitivities for the occurrence inventories, where some verdicts differ.
+
 **Names.** The [241]{.C38} distinct PBDB macrofossil names overlapping 445.2–393.47 Ma were classified by
 `gpt-6.1-sol` with web search. Each name received a category, polysporangiophyte and crown-member flags,
 a basis, a cited source and a confidence (`studies/f3/data/macro/name_classifications.csv`). Names judged
@@ -417,8 +419,11 @@ are retained as archived provenance, with their receipt bound to historical comm
 <!-- /table:oman -->
 **Table S3b.** Land-plant body (B0) bounds (Ma) with the Katian Oman fragments included (canonical) and excluded, Emsian cutoff. Units: guaranteed/possible; Oldest: oldest possible age. History abbreviations: Const., constant; PBDB, proportional to PBDB land and marginal-marine collection density; PBDB −plant, the same with plant-matched collections removed; Decl. 25 and Decl. 10, exponential decline into the past on 25 and 10 Myr timescales; −plant × decl. 10, their product. "None": no bound within the 469.4 Ma limit of the declared domain.
 
-With the fragments, the oldest unit is Katian, followed by more than 12 Myr with no body unit, and every
-declared history fits the sequence poorly (Table S7)[]{.C41}. The bounds move about 20 Myr older[]{.C40}. Under the
+In the main reading with the fragments, the oldest unit is Katian, followed by more than 12 Myr with no body unit, and on the
+reviewed inventory every declared history fits the sequence poorly (Table S7)[]{.C41}; with the Early Devonian
+collections restored (S1), the 25 Myr decline passes the interval-wide finite-sample test with the fragments
+(S5.12)[]{.C49}. The main-reading constant and
+collection-density bounds move about 20 Myr older; other histories and readings move by other amounts (Table S3b)[]{.C40}. Under the
 inclusive reading without Oman, the Hirnantian Zbrza axes are the oldest unit and give [447.20]{.C29} Ma under constant
 intensity. Neither
 inventory supplies a lag or delay: the 458.2 Ma cryptospore value is a fossil minimum, not an origin, and
@@ -438,6 +443,8 @@ additionally need.
 | Bathurst Island zosterophylls, Arctic Canada [@kotyk2002MorphologicallyComplexPlant] | Fertile zosterophylls in spikes and clusters | Late Ludlow on conodonts, graptolites and brachiopods; possibly Pridoli | Influential crown vascular-plant unit (lycophyte line) | None for crown Tracheophyta; not crown Lycophyta |
 
 ### S5.2 The endpoint calculation
+
+The shape verdicts in this section are for the reviewed inventory; S5.12 gives selected interval-wide shape comparisons for the other occurrence inventories.
 
 For a fixed younger cutoff $c$, let $U(a)=\int_c^a w(s)\,ds$ be cumulative recovery. Conditional on $n$
 independent units with ages drawn with density proportional to $w$ on $[c,T]$, the maximum $A$ satisfies
@@ -474,8 +481,8 @@ fit the observed sequence poorly (Table S7). Table S7 reports every declared age
 independent uniform draws within each range and a shared quantile applied to all ranges. No probability
 law for ages within ranges was declared, so none is preferred. For crown vascular-plant bodies, constant
 recovery fits under independent draws but not at midpoint ages or shared quantiles; the 10 Myr decline
-fits poorly under all three. The robust result is discrimination against steep declines, not support for
-constant recovery. The *p* values are asymptotic Kolmogorov–Smirnov values computed on allocated ages
+fits poorly under all three. On the reviewed inventory the robust result is discrimination against the 10 Myr
+decline, not support for constant recovery. The *p* values are asymptotic Kolmogorov–Smirnov values computed on allocated ages
 treated as exact, not exact finite-sample tests, and their spread across draws is a set of percentiles,
 not a combined test for interval-dated fossils, a model-selection criterion or an empirical calibration.
 **Interval feasibility.** A history that fails under the allocations drawn may fit another allocation
@@ -528,7 +535,9 @@ state. The 25 Myr decline passes with all 50 possible units, falls just short wi
 (*p* = 0.049, which passes only asymptotically) and fails with the 48 guaranteed units. The plant-excluded
 density times the 10 Myr decline passes with 49 or 50 units but not 48. For canonical land-plant bodies,
 every history fails in every state under either reference. These verdicts hold for the reviewed inventory; S5.12 gives
-them with the Early Devonian collections restored and on database-backed finds.
+them with the Early Devonian collections restored and on database-backed finds. On database-backed finds with the
+collections restored, the 10 Myr decline passes this finite-sample test for crown-member bodies in every inclusion
+state[]{.C49}.
 
 ### S5.3 Results and sensitivities
 
@@ -700,8 +709,8 @@ selection-adjusted confidence for it. The 432.9 Ma break is a null control when 
 No member was selected to match a clock (Table S9).
 
 <!-- table:suppression -->
-| Baseline | Break (Ma) | Older multiplier | Changes age support? | Older bound (Ma) | Midpoint shape p |
-|------------|---------:|---------------:|-------------------:|---------------:|---------------:|
+| Baseline | Break (Ma) | Older multiplier | Segment overlaps age support? | Older bound (Ma) | Midpoint shape p |
+|------------|---------:|---------------:|----------------------------:|---------------:|---------------:|
 | constant | 419.62 | 1 | True | 428.84 | 0.00848 |
 | constant | 419.62 | 0.5 | True | 430.52 | 0.00424 |
 | constant | 419.62 | 0.1 | True | 444.00 | 0.00223 |
@@ -856,8 +865,9 @@ grid and the retrospective suppression grid.
 
 ### S5.8 Outside measures of the earlier/later ratio
 
-The frontier (S5.4) gives the ratio of later to earlier finding rate at which a candidate ancestor age,
-with zero delay, sits on the 95% limit. To judge whether such a ratio is large, three proxies were
+The frontier (S5.4, Table S9b) gives the ratio of earlier to later finding rate at which a candidate ancestor
+age, with zero delay, sits on the 95% limit; this section compares the outside measures with its reciprocal,
+the ratio of later to earlier rate. To judge whether such a ratio is large, three proxies were
 defined before they were computed (`studies/f3/docs/plan-rulers.md`). For a proxy density *x*(*s*), the ratio is the
 mean of *x* over 393.47–426.7 Ma divided by its mean over 426.7 Ma to the candidate age, time-weighted
 within stages, approximated at 0.01 Myr steps (`studies/f3/models/loop3/rulers.py`). *Rock* is the summed area of active North American
@@ -944,6 +954,8 @@ rate for crown vascular plants.
 
 ### S5.10 The combined measure and where the later finds lie
 
+This section uses the reviewed inventory; S5.12 repeats the placement and rate-share checks on the other inventories.
+
 **Single measures at the rule-of-three scale.** The rock ratios of S5.8 are numerically as large as the
 required finding-rate ratios for about [14]{.C56 .V134}–[20]{.C56 .V135} or fewer independent finds, and the
 spore-reporting ratios for about [29]{.C56 .V136}–[31]{.C56 .V137} or fewer. With all 48 finds independent, if
@@ -977,8 +989,8 @@ where it is high. Of the 48 finds, [13]{.C59 .V198} date wholly to the Pridoli o
 (up to 16 may lie in the late Silurian); none is among the two Australian units that set *A*, whose age
 ranges reach the Emsian. The test compares that minimum count with a binomial distribution whose event
 probability is the interval's share of the measure's later-window integral. Counting by region and
-stage, or starting the interval at the Ludfordian, gives the same verdicts for rock, the spore share and
-their product (Table S16). From the Ludfordian base, a level rate and searching each put about
+stage (Table S16), or starting the interval at the Ludfordian (`combined_rulers_placement.csv`), gives the same
+verdicts for rock, the spore share and their product. From the Ludfordian base, a level rate and searching each put about
 [7.8]{.C59 .V205} finds there (*p* = [0.04]{.C59 .V206}), an interval set after the finds' ages were seen, so
 the later finds sit somewhat more in the late Silurian than a level rate predicts.
 
@@ -1000,7 +1012,7 @@ one-sided binomial tails, descriptive benchmarks after the interval was chosen f
 finding rate over the late-Silurian interval within [*c*, *A*] (`studies/f3/models/loop3/switch_reading.py`). The one-sided 95%
 Clopper–Pearson lower bound on the Gorstian–Pridoli share, divided by the share a level rate gives, puts
 the rate there at no less than [0.79]{.C60 .V232} of the later-window mean with 48 finds and [0.69]{.C60 .V233} with 19
-region–stage units. These are lower benchmarks relative to the whole later-window mean, rather than
+region–stage units in the reviewed inventory (S5.12 gives the other inventories). These are lower benchmarks relative to the whole later-window mean, rather than
 a measured plateau. For an exponential later history, rate proportional to $e^{gu}$ with *u* Myr after
 *A*, the largest *g* with at least the observed count having probability 0.05 gives a rise of at most
 [1.76]{.C60 .V234}-fold across the *A*-to-*c* window, including the late Silurian, with 48 finds and [2.36]{.C60 .V235}-fold with 19. From the Ludfordian
@@ -1076,7 +1088,7 @@ inventory holds one unit, the Oman fragments, among [76]{.C62 .V332}, with a lat
 95% limit from $P(X\le 1)=0.05$ requires average finding there at least [8.41]{.C62 .V333} times lower
 ([3.24]{.C62 .V334} with [31]{.C62 .V335} region–stage cells). Without the Oman fragments the span is empty
 and the rule of three in reverse gives [13.39]{.C62 .V328} ([5.19]{.C62 .V329} with [30]{.C62 .V326} cells),
-equal to the zero-delay requirement of Results (e) for land-plant bodies at 454.41 Ma with [75]{.C62 .V322}
+equal to the zero-delay requirement, computed as in Methods (g), for land-plant bodies at 454.41 Ma with [75]{.C62 .V322}
 units. Changes in which body forms were recognisable could contribute to lower average finding. The span's start comes from the
 spore record rather than from a selected find; its comparison with the vascular requirement was chosen
 after seeing the record (`out/groups_inside.csv`)[]{.C62}.
@@ -1379,7 +1391,7 @@ the byte count before checking the observation extraction. No source text is red
 
 ## S9. Conditions
 
-The article's Conditions paragraph names the five conditions that bear most on its conclusions. Table S19
+The article's Conditions paragraph names the six conditions that bear most on its conclusions. Table S19
 lists every condition behind the analyses, the results each bears on, what follows if it fails or what it implies, and where it is tested or stated.
 
 | Condition | Bears on | Effect if it fails, or implication | Tested or stated |
@@ -1415,6 +1427,7 @@ lists every condition behind the analyses, the results each bears on, what follo
 | Treating regional cells as independent draws is a separate counting scenario | Results (g)–(h) | The region-and-stage counts are an alternative reading | Results (d); S5.10 |
 | A level rate and searching fit the Gorstian–Pridoli allocation at the minimum count in the reviewed inventory | Results (g) | The fit depends on uncertain ages, the interval chosen and the inventory; searching predicts too few in the Ludfordian–Pridoli check | Table S16; S5.12 |
 | The reviewed inventory's assembly raises the late-Silurian share: literature review added Silurian records, and an age-range filter set aside Early Devonian collections | Results (d), (g)–(i) | Database-backed counts give lower late-Silurian ratios, admit the 10 Myr decline once the collections are restored, and make the spore-share verdict turn on the fossils' ages | S5.12, Table S20 |
+| Finding is steady across the later window, including the late Silurian | Results (d)–(f), (h) | On database-backed localities with the Early Devonian collections restored, steady finding predicts more Gorstian–Pridoli finds than the 5 to 7 that lie there: the lower tail rejects at every allowed count and the two-sided test at five and six. This post hoc comparison counts against the steady later rate behind the limits, rule of three and rises on that inventory | Results (h); S5.12, Table S20 |
 | Nine of the 13 late-Silurian finds are dated only to the Pridoli | Results (h) | The bounds describe the late Silurian as a whole, not its first part | Membership table (B2/main) |
 | Only one exponential family is examined for later change | Results (h) | Other shapes give other change factors | S5.10 |
 | Collection density is used as a rough proxy for searching; targeted searching of the oldest plant-bearing beds is unmeasured | Results (g)–(h) | Targeted searching could raise the late-Silurian count | Conditions; Methods (h); S5.8 |

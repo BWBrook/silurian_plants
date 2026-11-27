@@ -348,7 +348,7 @@ def fig4(path):
     b.set_xlabel("Candidate ancestor age, t (Ma)")
     b.set_ylabel("Times less often found before A")
     b.legend(frameon=False, fontsize=6.4, loc="upper center", bbox_to_anchor=(0.45, -0.16), ncol=2)
-    b.set_title("(b) Reductions that would fit, and outside rulers", fontsize=8.5, loc="left")
+    b.set_title("(b) Reductions that would fit, and outside measures", fontsize=8.5, loc="left")
     b.spines[["top", "right"]].set_visible(False)
     b.grid(axis="y", color=GRID, lw=0.5)
     fig.tight_layout()

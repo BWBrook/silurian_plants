@@ -89,7 +89,10 @@ data archived, and the human–AI correspondence record published alongside.
   to the repository until 27 November 2026, when at Barry's request it added Foote et al.'s conclusion
   and the Clark & Donoghue (2025) citation to F3's Discussion and Conclusion, reading Clark & Donoghue
   in full and Foote et al.'s abstract. Its first prompt (14 November 2026) proposed restating the body-fossil results
-  around the rule of three.
+  around the rule of three. On 27 November 2026 it read the F3 article, brief, agent guide and figures end
+  to end at `c6139d5`, commissioned a read-only consistency sweep of all four texts from Codex Sol
+  (`gpt-6.2-sol`; 27 findings, `studies/f3/docs/audits/2026-11-27-consistency-sweep-codex.json`), verified 13
+  of the findings against the files and set the clean-up that Claude carried out.
 - Gemini (Google; Gemini 4 Carbon at high reasoning effort, in the Antigravity app), independent reviewer at Barry's request,
   November 2026. It found that F3's crown vascular-plant inventory treats Silurian and Early Devonian
   finds asymmetrically (a 20 Myr age-duration filter that drops every collection dated only to the Early
@@ -100,8 +103,10 @@ data archived, and the human–AI correspondence record published alongside.
   occurrence from changes in finding frequency. [Codex’s checks and integration draft](../studies/f3/docs/audits/2026-11-23-gemini-integration-review.md).
   It makes no repository edits.
 - Codex model identity. Barry, 14 November 2026: "Codex is actually Astra and Sol underneath the hood."
-  Entries below name the Codex model where a session exposed it (`gpt-6.1-sol`, `gpt-6.1-terra`,
-  `gpt-5.6-sol`, `gpt-5.6-luna`) and say so where it did not. Board posts by the historical author
+  Entries below name the Codex model where a session exposed it (`gpt-6.1-sol`, `gpt-6.2-sol`,
+  `gpt-6.1-terra`, `gpt-5.6-sol`, `gpt-5.6-luna`) and say so where it did not. The `sol` role of
+  `~/.claude/bin/codex-delegate` ran `gpt-6.1-sol` until 16 November 2026 and `gpt-6.2-sol` from
+  19 November 2026 (its job log). Board posts by the historical author
   Astra are Codex's.
 - Claude Opus 5.5 (Anthropic, `claude-opus-5-5`) in Claude Code: orchestration, programme
   design, synthesis, framings, tooling. It wrote the F3 changes after Codex's second review itself
@@ -283,7 +288,8 @@ data archived, and the human–AI correspondence record published alongside.
   ran clean-copy reproduction and checked the rendered products. These are bounded source, numerical,
   mathematical and editorial roles; no new clock analysis or frozen qualification was claimed
   (`studies/f3/docs/audits/2026-11-08-review2-handoff.md`).
-- OpenAI Codex CLI, `gpt-6.1-sol` and `gpt-6.1-terra` at high reasoning effort, run by Claude Opus
+- OpenAI Codex CLI, `gpt-6.1-sol` (to 16 November 2026), `gpt-6.2-sol` (from 19 November 2026) and
+  `gpt-6.1-terra` at high reasoning effort, run by Claude Opus
   5.5 as read-only, schema-constrained jobs through `~/.claude/bin/codex-delegate` (2026-10-27 and
   28; on 2026-10-31 `gpt-6.1-terra` independently re-derived the 164 Libyan binary units for sprint 1; on 2026-11-01 `gpt-6.1-sol` with web search classified the 241 PBDB macrofossil names for the Loop 3 pilot, `studies/f3/work/codex/loop3/`). Records are in `docs/audits/` and the job files in `data/spores/work/codex/` and
   `work/codex/`. Work done:
@@ -304,7 +310,7 @@ data archived, and the human–AI correspondence record published alongside.
     adjudicated by Claude Opus 5.5 (`studies/f3/work/codex/loop1b/`), and the Cambrian age, location and
     vetting jobs for the widened Palynodata window (2026-10-28).
   - the F3 related-work search over four families of earlier work and the three named precedents, and the
-    check of the resulting article sentences against their sources (2026-11-27, `gpt-6.1-sol` with web search;
+    check of the resulting article sentences against their sources (2026-11-27, `gpt-6.2-sol` with web search;
     `studies/f3/docs/audits/2026-11-27-related-work.md`).
 - OpenAI Codex (OpenAI, Codex desktop; exact model version not exposed in this session):
   Executed sprint 2 on 31 October: bounded M1 source admission, M3 denominator

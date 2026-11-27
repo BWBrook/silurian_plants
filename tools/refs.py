@@ -80,7 +80,7 @@ def clean(raw):
     if entry.get("DOI"):
         entry["DOI"] = entry["DOI"].lower()
         entry.pop("URL", None)
-    entry["page"] = entry.get("page", "").replace("-", "–") or None
+    entry["page"] = (entry.get("page") or entry.get("article-number", "")).replace("-", "–") or None
     return {k: v for k, v in entry.items() if v}
 
 

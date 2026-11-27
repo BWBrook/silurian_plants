@@ -211,11 +211,13 @@ is preserved; overlapping stage enclosures do not establish actual contemporanei
 
 - **Canonical B0** includes the Katian Oman sporangial fragments as one locality–age unit with oldest
   possible age 452.8 Ma (C40). The former inventory is an exclusion sensitivity (C28).
-- **Allowed:** including the fragments moves the conditional bounds about 20 Myr older; the endpoint is
+- **Allowed:** including the fragments moves the main-reading constant and collection-density bounds about
+  20 Myr older (other histories and readings move by other amounts; Table S3b); the endpoint is
   controlled by the oldest admitted unit; the allocated-age diagnostics fit the augmented sequence poorly (C41); in the
-  completed interval-feasibility search, no admissible allocation of the
+  completed interval-feasibility search on the reviewed inventory, no admissible allocation of the
   recorded supports lets any declared history pass that conditional-age diagnostic (C49; see Shape
-  diagnostics). This is not a rejection of a biological history.
+  diagnostics); with the Early Devonian collections restored, the 25 Myr decline passes with the fragments
+  (C49, C61). This is not a rejection of a biological history.
 - **Not allowed:** any lag, delay or "interval" between lineage origin and body recoverability, in either
   direction ("about 20 Myr after", "almost at once"); 458.2 Ma as an origin (it is a fossil minimum).
 

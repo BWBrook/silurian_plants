@@ -148,6 +148,7 @@ references:
   article-number: '242158'
   publisher: The Royal Society
   DOI: 10.1098/rsos.242158
+  page: '242158'
 - id: cocks2021OrdovicianPalaeogeographyClimate
   citation-key: cocks2021OrdovicianPalaeogeographyClimate
   type: article-journal
@@ -245,6 +246,7 @@ references:
   article-number: RS23021
   publisher: CSIRO Publishing
   DOI: 10.1071/rs23021
+  page: RS23021
 - id: edwards1979RecordsFertileRhyniophytina
   citation-key: edwards1979RecordsFertileRhyniophytina
   type: article-journal
@@ -680,6 +682,7 @@ references:
   article-number: eaeg6289
   publisher: American Association for the Advancement of Science (AAAS)
   DOI: 10.1126/sciadv.aeg6289
+  page: eaeg6289
 - id: marjanovic2008AssessingConfidenceIntervals
   citation-key: marjanovic2008AssessingConfidenceIntervals
   type: article-journal
@@ -761,6 +764,7 @@ references:
   article-number: '1049'
   publisher: Frontiers Media SA
   DOI: 10.3389/fgene.2019.01049
+  page: '1049'
 - id: matschiner2016BayesianPhylogeneticEstimation
   citation-key: matschiner2016BayesianPhylogeneticEstimation
   type: article-journal

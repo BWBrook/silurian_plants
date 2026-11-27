@@ -104,11 +104,11 @@ and other microfossils from Ordovician to lower Silurian wells in the Murzuq Bas
 transcribed all [164]{.C38} appendix samples with their chart and prose reports. The analysis uses the
 chart-coded samples of drill cuttings (rock chips returned during drilling) from five wells: three supply
 [28]{.C01} samples older than the Llandovery (earliest Silurian), and all five supply [59]{.C02}
-Llandovery samples, which serve as the reference. The source states the absence of trilete spores
+Llandovery samples, which serve as the reference (electronic supplementary material, figure S2). The source states the absence of trilete spores
 explicitly for part of the sequence; for the Hawaz Formation, samples reporting none rest on complete reporting
 charts and the stated microscopy protocol. The basin lay near the Ordovician South Pole, within the area
 of Hirnantian glaciation [@cocks2021OrdovicianPalaeogeographyClimate;
-@scotese2021PhanerozoicPaleotemperaturesEarths] (electronic supplementary material, figure S2). We
+@scotese2021PhanerozoicPaleotemperaturesEarths]. We
 compared the samples' ages with trilete records in our spore compilation, built from Palynodata
 [@white2008PalynodataDatafile2006], the curated assemblages of Wellman et al.
 [@wellman2013Chapter29Palaeophytogeography] and later literature, keeping records with usable ages that
@@ -322,7 +322,7 @@ Two outside measures fell enough before the oldest find to bear on older ancesto
 palynological studies reporting trilete spores [5.1]{.C56 .V132}–[7.1]{.C56 .V133} times lower, and their
 stage-by-stage product, a combination we chose after seeing both, [21.7]{.C59 .V185}–[29.8]{.C59 .V186} times
 lower. At all four counts tested in the reviewed inventory, that contrast can account for the gap
-before the oldest find with zero delay (figure 3*b*; electronic supplementary material, S5.8 and S5.10). If finding had tracked rock area, the reviewed inventory would hold [0.45]{.C59 .V199} expected
+before the oldest find with zero delay (electronic supplementary material, S5.8 and S5.10). If finding had tracked rock area, the reviewed inventory would hold [0.45]{.C59 .V199} expected
 finds in the Gorstian to Pridoli, where at least [13]{.C59 .V445} of the 48 lie. The shortfall persists in
 every occurrence inventory and in the regional distribution of an independent compilation's species
 endpoints, and multiplying rock area by the spore share gives the same result. The spore share alone
@@ -346,7 +346,7 @@ counting only database-backed localities leaves [5]{.C60 .V364}–[7]{.C60 .V365
 Gorstian to Pridoli, where steady finding predicts [12.6]{.C60 .V447}. At every count the ages allow, steady
 finding then predicts too many late-Silurian finds (lower-tail *p* = [0.0076]{.C60 .V449} at five to
 [0.047]{.C60 .V448} at seven), and this locality comparison counts against the steady later rate assumed in
-(*f*). The two-sided test rejects at five and six finds and retains steady finding at seven, and the
+(*d*)–(*f*). The two-sided test rejects at five and six finds and retains steady finding at seven, and the
 interval was chosen after the ages were seen. Each of the other three inventories admits a locality count
 compatible with steady finding (largest lower-tail *p* [0.98]{.C60 .V450}, [0.71]{.C60 .V451} and
 [0.42]{.C60 .V452}). As upper benchmarks among exponential histories, these 59 finds allow finding to rise up
@@ -521,7 +521,7 @@ maxima [@heath2014FossilizedBirthdeathProcess], and extinction-time methods face
 calibrations. We make the maxima's observational requirements explicit, limiting local spore
 supply and sizing the reductions in finding rate, or the delays, that fit older vascular-plant dates.
 
-**Conditions.** Five conditions bear most on these conclusions. The number of independent finds is unknown, and every body-fossil limit depends on it and on an assumed finding-rate history. Fossil ages are ranges, and the tests assume that
+**Conditions.** Six conditions bear most on these conclusions. The number of independent finds is unknown, and every body-fossil limit depends on it and on an assumed finding-rate history. Fossil ages are ranges, and the tests assume that
 each range contains the true age. Linking the body record to an ancestor requires that the oldest finds
 belong to the crown group, and an assumed delay before recognisable bodies. The spore result comes from
 one polar basin and assumes indigenous Llandovery spores and comparable reporting of older and younger
@@ -557,7 +557,7 @@ data add [@brown2017PastSureTense].
 For the oldest vascular-plant body fossils, the rule of three makes the finding-rate assumption
 concrete: if fossils turned up at a steady rate after the oldest find, the silence before it fits about
 three expected finds at that rate. On the branched-plant record, which includes the *Cooksonia* to which
-the 431.2 Ma maximum was keyed, the steady-rate limit is [434.1]{.C61 .V246}–[437.2]{.C61 .V247} Ma under every
+the 431.2 Ma maximum was keyed, the steady-rate limit on the reviewed inventory is [434.1]{.C61 .V246}–[437.2]{.C61 .V247} Ma under every
 counting rule, older than that maximum.
 An older ancestor needs early finding low enough, or recognisable bodies late enough, to keep that
 expected count at about three or fewer, and the number of independent finds sets how many million years three finds
@@ -593,7 +593,7 @@ available online.
 ## Declaration of AI use
 
 Claude Opus 5.5 (Anthropic) developed and ran analyses and drafted and revised the manuscript. OpenAI
-Codex (`gpt-6.1-sol` and `gpt-6.1-terra`) curated and checked source data, implemented analyses, audited
+Codex (`gpt-6.1-sol`, `gpt-6.2-sol` and `gpt-6.1-terra`) curated and checked source data, implemented analyses, audited
 statistical methods and reproduction, and revised the manuscript. Earlier Codex work used `gpt-5.6-sol`
 and `gpt-5.6-luna` for source recovery and methodological checks. Claude and Codex reviewed each other's
 work. GPT-6 Pro (OpenAI) supplied independent critiques, which were checked against sources and saved

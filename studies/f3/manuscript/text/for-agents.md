@@ -4,9 +4,9 @@ study: F3, fossil maxima behind land-plant molecular clocks
 status: internal draft; Loop 3 closed 2026-11-07; follow-up review implemented 2026-11-08 (studies/f3/docs/audits/2026-11-08-review2-handoff.md); article reconstructed to Proc B structure 2026-11-10 to 2026-11-11 (studies/f3/manuscript/reconstruction/README.md); release and submission are Barry's decision
 human_paper: studies/f3/manuscript/text/main.md (+ supplement.md, brief.md)
 claims_ledger: studies/f3/manuscript/claims.csv (single source for all renderings; checked by tools/claims.py)
-governing_docs: [docs/charter.md, docs/decisions.md, studies/f3/docs/plan-f3.md, studies/f3/docs/f3-shape.md, studies/f3/docs/loop3-design.md, studies/f3/docs/loop3-results.md]
+governing_docs: [docs/charter.md, docs/decisions.md, studies/f3/docs/decisions.md, studies/f3/docs/plan-f3.md, studies/f3/docs/f3-shape.md, studies/f3/docs/loop3-design.md, studies/f3/docs/loop3-results.md]
 authority: Barry W. Brook decides public release, submission and any correspondence outside Claude and Codex
-updated: 2026-11-11
+updated: 2026-11-27
 ---
 
 # F3 for agents: what this study established, how to verify it, and how not to break it
@@ -20,7 +20,7 @@ artefact wins and this file is wrong: fix it in the same commit.
 
 1. This file, then `studies/f3/manuscript/estimands.md`, which says what each analysis bounds and which
    phrasings are not allowed, then `studies/f3/manuscript/claims.csv`, the single claims ledger behind every
-   rendering of this study (C01–C53). Each row gives the claim, its value, its status, its basis, its evidence
+   rendering of this study (C01–C63). Each row gives the claim, its value, its status, its basis, its evidence
    files, the commit at which that evidence was verified, the command that reproduces it, its limit
    and, if superseded, its replacement. Quote a claim only with its limit.
 2. `studies/f3/manuscript/text/main.md` for the argument; `supplement.md` for the machinery. The article follows
@@ -31,7 +31,7 @@ artefact wins and this file is wrong: fix it in the same commit.
    §3.1–3.5, §4.1–4.4, Methods in brief) and old Tables 2–5 no longer exist there; their content lives in
    the supplement (S-numbered sections and tables) or in the Discussion prose. The reconstruction record
    (steps 1a–4, Codex reviews, the adopted main message) is indexed in `studies/f3/manuscript/reconstruction/README.md`.
-3. `docs/decisions.md` (newest first) for what was settled, by whom, and why.
+3. `studies/f3/docs/decisions.md` for F3 and `docs/decisions.md` for the programme (both newest first): what was settled, by whom, and why.
 4. `docs/questions.md` for the programme's open questions (Q1–Q10). This study answers part of Q1.
 
 `status` is one of *supported* (verified by a second agent against its evidence), *provisional*
@@ -49,11 +49,13 @@ every sentence that must follow.
 
 ## 2. The answer, as claims
 
-**Main message** (adopted by Barry, 10 November 2026; `studies/f3/manuscript/reconstruction/1c-main-message.md`):
-"Older dates for living land plants fit the fossil record if early plants were found several times less
-often, or recognisable features evolved later." It is a statement of compatibility under stated
-conditions: the quantity behind "several times" is the vascular-body recording contrast (C48); the
-Libyan limit (C24) is a separate, local constraint on delivered spore input. The record neither
+**Main message** (adopted by Barry, 10 November 2026, `studies/f3/manuscript/reconstruction/1c-main-message.md`;
+narrowed from land plants to vascular plants by Barry in chat with Fable, 27 November 2026: "Yes, vascular
+plants is better."): "Older dates for living vascular plants fit the fossil record if early plants were found
+several times less often, or recognisable features evolved later." It is a statement of compatibility under stated
+conditions: the quantity behind "several times" is the vascular-body recording contrast (C48). Land plants
+have the separate Libyan limit (C24), a local constraint on delivered spore input, and the land-plant
+comparison (C62). The record neither
 supports nor rejects an older ancestor.
 
 - **M1 (515.5 Ma, crown Embryophyta).** Placed below the oldest possible cryptospores (base of the
@@ -104,12 +106,37 @@ supports nor rejects an older ancestor.
   Capel's named cells; on PBDB-backed counts its verdict depends on placement (S2a locality-age,
   Gorstian–Přídolí: p 0.174 with 5 late finds, rejected from 7), and only S2a's named cells,
   Ludfordian–Přídolí, A 425.0 Ma, predict too few at every admissible placement (p 0.0416); among upper-tail
-  checks, all-collection searching predicts too few only in S0's Ludfordian–Pridoli locality count (C59).
+  checks, all-collection searching predicts too few under every allowed placement only in S0's
+  Ludfordian–Pridoli locality count, and on S2b's Gorstian–Pridoli locality count it predicts [12.4]{.C59 .V455}
+  where 5 to 7 lie (C59).
   The 10 Myr decline passes on S2b, where 21 restored units share a 26 Myr Early Devonian range (C49,
   C63). With a Silurian-only cutoff on S2b by region and stage with Bathurst removed, the oldest jointly
   possible limit, with cells fixed at their midpoint stages, is 438.84 Ma, with minimum later/earlier
   ratios 1.43/2.08 at 444/452 Ma (zero delay), against a conservative envelope of 451.28 Ma
   whose count and age cannot occur together (C48).
+- **Rule of three (C58).** With a level later rate estimated from the same finds, the oldest-find
+  boundary allows about [3.09]{.C58 .V178}–[3.32]{.C58 .V179} expected early finds at that rate for 48 to 15 finds,
+  approaching ln 20 ≈ 3.00 as the count grows. It restates the steady-rate limits and requirements on
+  one scale and is conditional on the count and the cutoff.
+- **Count curve (C55).** The constant-rate B2 limit is one closed-form curve in the number of independent
+  finds, through the 48, 19 and 15 treatments; it crosses 431.2 Ma at [23.6]{.C55 .V138} finds, about half the
+  main count.
+- **Early rises (C57).** With a steady later rate and zero delay, a linear rise in finding from zero at the
+  ancestor to the later rate at *A* fits for ancestors no older than [431.0]{.C57 .V115} Ma with 48 finds and
+  [441.4]{.C57 .V117} Ma with 15; for an ancestor at 444 Ma an exponential rise fits if finding doubles every
+  [1.5]{.C57 .V458} (48 finds) to [5.8]{.C57 .V122} Myr (15 finds) or faster. These are requirements: they say what
+  would fit, not what happened.
+- **Branched plants (C61).** On the reviewed inventory the steady-rate limit for B1, which includes the
+  *Cooksonia* behind M3, is [434.09]{.C61 .V279}–[437.19]{.C61 .V283} Ma across the four counting rules
+  ([433.76]{.C61 .V456}–[436.77]{.C61 .V457} Ma with the Early Devonian collections restored), older than 431.2 Ma. A maximum
+  built by this method from that record would lie older than 431.2 Ma; the limit leaves a branched start
+  at 431.2 Ma open. With zero delay, a steady later rate and all 69 finds independent, ancestors at 444–452 Ma need
+  branched finding [6.3]{.C61 .V254}–[10.9]{.C61 .V255} times lower, close to the crown requirement (C48).
+- **Land-plant comparison (C62).** Definite triletes place land plants before 454.41 Ma; the accepted
+  inventory holds one land-plant body (Oman) in the [21.51]{.C62 .V327} Myr to 432.9 Ma against 75 later units,
+  so under the two-rate model with independent units average finding of land-plant bodies there must be at least [8.4]{.C62 .V330} times lower than afterwards
+  ([3.2]{.C62 .V331} by region and stage; [13.4]{.C62 .V323} without Oman). It is post hoc and conditional, and concerns
+  bodies of any land plant, not the vascular crown.
 - **Synthesis.** An older, sparsely recorded flora is allowed, not required. The record cannot test the
   rate of recorded, identifiable occurrences before its oldest find, and no result ranks the clocks.
 
@@ -198,9 +225,10 @@ Do not reintroduce any of these. Each was caught in review; the record is in `su
     3 Myr; `data/timescale.csv` is the only source of numerical ages.
 13. **ρ·f ≈ 0.09 for both Murzuq classes.** It holds for H0c only (C24).
 14. **QSIM 0.307 as "31% of spores".** It is a minimum trilete:cryptospore ratio; the share is 0.235 (C12).
-15. **Constant recovery as the adequate history.** It fits B2 only under independent age draws; it fails
-    at midpoint ages and shared quantiles (C31). The shape tests discriminate against steep declines; they
-    select nothing.
+15. **Constant recovery as the adequate history.** Under the interval-wide test it passes for B2 in every
+    inclusion state (C49, C61); the older allocated-age diagnostics of Table S7 pass it only under
+    independent age draws (C31). A pass is non-rejection, not adequacy. On the reviewed inventory the
+    shape tests reject steep declines; on S2b the 10 Myr decline passes (C49, C63). They select nothing.
 16. **"M2 rests on a doubtful specimen."** The value is a stage base; the definite 43.1 m triletes give
     the same number (C42).
 17. **"M1 rests only on affinity" or "M1 is untestable as an absence."** Its authors give a qualitative
@@ -333,7 +361,8 @@ n_guaranteed [48]{.C25} and oldest possible 426.7 Ma; B0 exclusion constant boun
 Assume no new measurements, logs or help from original authors or outside specialists (Barry,
 2026-11-01). Each edge below can be worked from the published record and the held data alone.
 
-- **Q1 (pre-Ludlow recovery for B2).** This decides M3. It is untestable within the body record. The
+- **Q1 (pre-Ludlow recovery for B2).** Constraining it would narrow one part of the argument for M3;
+  the number of independent finds and the delay before recognisable bodies also bear on M3. It is untestable within the body record. The
   candidates are an independent effort proxy for Silurian non-marine rock, or published, documented
   searched-but-barren beds.
 - **Q1 (second M2 frame).** An older-empty, younger-positive spore sequence outside polar Gondwana with
@@ -356,7 +385,7 @@ Assume no new measurements, logs or help from original authors or outside specia
   `python3 tools/claims.py stamp studies/f3/manuscript/claims.csv ID`, then make every document pass the check.
 - To cite a new work, add its DOI to `references/dois.txt`, run `tools/refs.py build`, and cite the
   printed key as `[@key]`.
-- Record decisions in `docs/decisions.md` with who decided. Keep `docs/charter.md`'s AI-roles section
+- Record F3 decisions in `studies/f3/docs/decisions.md` and programme decisions in `docs/decisions.md`, with who decided. Keep `docs/charter.md`'s AI-roles section
   current.
 - Do not edit generated artefacts by hand: `refs.yaml`, the table blocks in `supplement.md`, figures,
   `package_manifest.csv`, or `studies/f3/models/*/out/`.

@@ -1,0 +1,464 @@
+{
+  "coverage": "Read main.md, figures.md, supplement.md, supplement_figures.md, brief.md and for-agents.md in full at c6139d5 and inspected their linked figures. Checked disputed claims against the relevant ledger rows, value bindings, estimands and saved output tables. This was an internal consistency review. I did not rerun the analyses, rebuild the documents or independently recheck the cited publications. No files or Git state changed.\n\n",
+  "items": [
+    {
+      "kind": "companion_overreach",
+      "severity": "error",
+      "confidence": "high",
+      "passage_a": {
+        "file": "studies/f3/manuscript/text/brief.md",
+        "line": 32,
+        "quote": "older dates for living land plants fit the fossil record if early plants were found several times less often, or became recognisable later."
+      },
+      "passage_b": {
+        "file": "studies/f3/manuscript/text/main.md",
+        "line": 579,
+        "quote": ""
+      },
+      "verdict": "The article supports the stated rate-or-delay trade-off for the vascular-plant ancestor. The brief extends it to the ancestor of all living land plants.",
+      "evidence": "C48 models crown vascular bodies. C62 gives a separate interval-average requirement for bodies of any land plant, across a span already containing the Oman body fossil. C24 constrains delivered trilete encounter in one basin. The graphical abstract repeats the brief’s broader headline."
+    },
+    {
+      "kind": "number_mismatch",
+      "severity": "error",
+      "confidence": "high",
+      "passage_a": {
+        "file": "studies/f3/manuscript/text/brief.md",
+        "line": 13,
+        "quote": "the ancestor of living *vascular* plants, which have internal plumbing, between about 452 and 428 Ma"
+      },
+      "passage_b": {
+        "file": "studies/f3/manuscript/text/main.md",
+        "line": 34,
+        "quote": "451–419, 452–447 and 432–428 Ma (figure 1)"
+      },
+      "verdict": "The article and Figure 1b agree. The combined span of the three reported clock intervals is about 452–419 Ma.",
+      "evidence": "Figure 1b shows 419 Ma as Morris et al.’s younger endpoint. The brief uses Hooper et al.’s 428 Ma endpoint for the combined span."
+    },
+    {
+      "kind": "contradiction",
+      "severity": "error",
+      "confidence": "high",
+      "passage_a": {
+        "file": "studies/f3/manuscript/text/for-agents.md",
+        "line": 201,
+        "quote": "It fits B2 only under independent age draws; it fails\n    at midpoint ages and shared quantiles"
+      },
+      "passage_b": {
+        "file": "studies/f3/manuscript/text/supplement.md",
+        "line": 1052,
+        "quote": "Under the interval-wide test it passes in every\ninclusion state"
+      },
+      "verdict": "The interval-wide result is current. The guide’s restriction applies to the three older age-allocation diagnostics in Table S7.",
+      "evidence": "The quoted supplement sentence also says this holds for the crown record. In groups_shape.csv, the reviewed B2 steady-rate history has a passing age assignment in all four inclusion states, with best finite-sample p-values of 0.985–0.998."
+    },
+    {
+      "kind": "companion_overreach",
+      "severity": "error",
+      "confidence": "high",
+      "passage_a": {
+        "file": "studies/f3/manuscript/text/brief.md",
+        "line": 21,
+        "quote": "From how [48]{.C25} dated groups of vascular-plant fossils are spread through time, we calculated how far back that record could reach"
+      },
+      "passage_b": {
+        "file": "studies/f3/manuscript/text/figures.md",
+        "line": 3,
+        "quote": "For an assumed finding-rate history, the oldest find *A* and the count *n* give the 95% confidence limit *T* on the start of the recognisable record."
+      },
+      "verdict": "Figure 2’s caption gives the endpoint calculation correctly. The spread of the other fossil ages is used in a separate shape test.",
+      "evidence": "Methods (e) and (f) and supplement S5.2 distinguish the endpoint formula from the conditional age-distribution test."
+    },
+    {
+      "kind": "number_mismatch",
+      "severity": "error",
+      "confidence": "high",
+      "passage_a": {
+        "file": "studies/f3/manuscript/text/supplement.md",
+        "line": 57,
+        "quote": "five-stage reference window"
+      },
+      "passage_b": {
+        "file": "studies/f3/manuscript/text/supplement.md",
+        "line": 44,
+        "quote": "Five wells contribute [59]{.C02} Llandovery reference cuttings"
+      },
+      "verdict": "The reference covers three stages and draws on five wells. S2.1 gives the design correctly.",
+      "evidence": "The primary LY-MZ-CU rows in m2_units.csv give the 59 reference cuttings Rhuddanian–Telychian or Rhuddanian-only support. The Llandovery stages in data/timescale.csv are the Rhuddanian, Aeronian and Telychian."
+    },
+    {
+      "kind": "contradiction",
+      "severity": "error",
+      "confidence": "high",
+      "passage_a": {
+        "file": "studies/f3/manuscript/mapping.csv",
+        "line": 3,
+        "quote": "Crown land plants ≤ 459.1 Ma"
+      },
+      "passage_b": {
+        "file": "studies/f3/manuscript/text/supplement.md",
+        "line": 200,
+        "quote": "Their Supplementary Table 4 keys the soft\nmaximum"
+      },
+      "verdict": "The supplement correctly identifies 459.1 Ma as a soft maximum. The inequality displayed in Figure S7 reads as a hard age ceiling.",
+      "evidence": "Article lines 45–46 explain that a soft maximum permits older ages through the calibration-prior tail. Figure S7 also uses inequalities for the other two maxima."
+    },
+    {
+      "kind": "unqualified_general",
+      "severity": "imprecision",
+      "confidence": "high",
+      "passage_a": {
+        "file": "studies/f3/manuscript/text/for-agents.md",
+        "line": 202,
+        "quote": "The shape tests discriminate against steep declines"
+      },
+      "passage_b": {
+        "file": "studies/f3/manuscript/text/main.md",
+        "line": 276,
+        "quote": "Among database-backed finds with those\ncollections restored, the 10 Myr decline also passes under some assignment of ages"
+      },
+      "verdict": "The article gives the inventory-dependent verdict. The guide’s generalisation omits the restored database-backed inventory.",
+      "evidence": "C49 and inventory_symmetry_stage2_shape.csv give best finite-sample p = 0.238 for the 59 guaranteed finds in that inventory. Supplement S5.2, line 477, has a similar unqualified summary after describing the older age-allocation diagnostics."
+    },
+    {
+      "kind": "unqualified_general",
+      "severity": "imprecision",
+      "confidence": "high",
+      "passage_a": {
+        "file": "studies/f3/manuscript/text/supplement.md",
+        "line": 420,
+        "quote": "With the fragments, the oldest unit is Katian, followed by more than 12 Myr with no body unit, and every\ndeclared history fits the sequence poorly (Table S7)"
+      },
+      "passage_b": {
+        "file": "studies/f3/manuscript/text/supplement.md",
+        "line": 1232,
+        "quote": "With the Early Devonian collections restored, the 25 Myr decline\npasses in every inclusion state"
+      },
+      "verdict": "The blanket verdict in S5.1 needs the reviewed-inventory qualifier. S5.12 gives the restored-inventory result.",
+      "evidence": "C49 and inventory_symmetry_stage2_shape.csv give best finite-sample p-values of 0.0612–0.0675 with Oman and the Early Devonian collections restored. The same unqualified interval-wide claim appears in estimands.md at lines 216–217."
+    },
+    {
+      "kind": "stale_wording",
+      "severity": "stale",
+      "confidence": "high",
+      "passage_a": {
+        "file": "studies/f3/manuscript/text/supplement.md",
+        "line": 1002,
+        "quote": "the rate there at no less than [0.79]{.C60 .V232} of the later-window mean with 48 finds"
+      },
+      "passage_b": {
+        "file": "studies/f3/manuscript/text/supplement.md",
+        "line": 1201,
+        "quote": "On the reviewed inventory the average Gorstian-to-Pridoli finding rate is\nat least [0.79]{.C60 .V226} of the whole-window mean with all 48 finds independent"
+      },
+      "verdict": "S5.12 gives the necessary inventory qualifier. The older S5.10 wording retains the count but leaves the inventory implicit.",
+      "evidence": "C60 gives the locality–age lower benchmarks as 0.790, 0.541, 0.250 and 0.160 across the four occurrence inventories. The nearby 0.69 and 1.76-fold and 2.36-fold benchmarks also belong to the original reviewed comparisons."
+    },
+    {
+      "kind": "unqualified_general",
+      "severity": "imprecision",
+      "confidence": "high",
+      "passage_a": {
+        "file": "studies/f3/manuscript/text/for-agents.md",
+        "line": 107,
+        "quote": "all-collection searching predicts too few only in S0's Ludfordian–Pridoli locality count"
+      },
+      "passage_b": {
+        "file": "studies/f3/manuscript/text/supplement.md",
+        "line": 1195,
+        "quote": "predict too few finds under every allowed placement only in the reviewed inventory's Ludfordian-to-Pridoli locality count"
+      },
+      "verdict": "The supplement is right. That is the only comparison with an upper-tail discrepancy at every admissible placement.",
+      "evidence": "C59 and inventory_symmetry_stage2_tests.csv show an upper-tail discrepancy at 16 of 48 for the broader reviewed locality comparison and at some named-cell placements in the reviewed inventory with Early Devonian collections restored."
+    },
+    {
+      "kind": "unqualified_general",
+      "severity": "imprecision",
+      "confidence": "high",
+      "passage_a": {
+        "file": "studies/f3/manuscript/text/figures.md",
+        "line": 5,
+        "quote": "collection density fits the guaranteed minimum Gorstian–Pridoli count"
+      },
+      "passage_b": {
+        "file": "studies/f3/manuscript/text/main.md",
+        "line": 331,
+        "quote": "PBDB land and marginal-marine collections predicts [10.1]{.C59 .V204} finds in the reviewed inventory's\nGorstian-to-Pridoli interval, consistent with its guaranteed minimum."
+      },
+      "verdict": "The article gives the required inventory qualifier. The caption puts the searching verdict in a sentence that has just compared multiple inventories.",
+      "evidence": "For the restored database-backed locality inventory, inventory_symmetry_stage2_tests.csv gives 12.401 expected with all-collection searching and a guaranteed minimum of five. The lower-tail probability at that minimum is about 0.009."
+    },
+    {
+      "kind": "unqualified_general",
+      "severity": "imprecision",
+      "confidence": "high",
+      "passage_a": {
+        "file": "studies/f3/manuscript/text/main.md",
+        "line": 560,
+        "quote": "the steady-rate limit is [434.1]{.C61 .V246}–[437.2]{.C61 .V247} Ma under every\ncounting rule"
+      },
+      "passage_b": {
+        "file": "studies/f3/manuscript/claims.csv",
+        "line": 62,
+        "quote": "S1 B1 main steady limits by counting rule 433.7590-436.7696 Ma"
+      },
+      "verdict": "Both inventories place the branched-plant limit older than 431.2 Ma. The Conclusion’s numerical range is specific to the reviewed inventory.",
+      "evidence": "C61 and inventory_symmetry_stage2_groups.csv give 434.0870–437.1910 Ma for the four reviewed counting rules and 433.7590–436.7696 Ma with the Early Devonian collections restored."
+    },
+    {
+      "kind": "companion_overreach",
+      "severity": "imprecision",
+      "confidence": "high",
+      "passage_a": {
+        "file": "studies/f3/manuscript/text/for-agents.md",
+        "line": 336,
+        "quote": "**Q1 (pre-Ludlow recovery for B2).** This decides M3."
+      },
+      "passage_b": {
+        "file": "studies/f3/manuscript/text/main.md",
+        "line": 524,
+        "quote": "The number of independent finds is unknown, and every body-fossil limit depends on it and on an assumed finding-rate history."
+      },
+      "verdict": "The article gives the appropriate scope. Constraining early recovery would narrow one part of the argument for M3.",
+      "evidence": "Methods (e)–(g) and Conditions also require the independent-find count and a mapping from recognisable crown bodies to the ancestor, including the assumed delay."
+    },
+    {
+      "kind": "number_mismatch",
+      "severity": "imprecision",
+      "confidence": "high",
+      "passage_a": {
+        "file": "studies/f3/manuscript/text/supplement.md",
+        "line": 421,
+        "quote": "The bounds move about 20 Myr older[]{.C40}."
+      },
+      "passage_b": {
+        "file": "studies/f3/manuscript/text/supplement.md",
+        "line": 413,
+        "quote": "| main | included | 76/78 | 452.8 | 455.19 | 456.62 | 456.09 | 465.21 | none | none |"
+      },
+      "verdict": "Table S3b is right. About 20 Myr describes the main-reading steady and collection-density results. The shift differs under other histories and readings.",
+      "evidence": "The same table gives 437.16 Ma without Oman under the 25 Myr decline, a 28.05 Myr shift. The inclusive steady-rate result shifts from 447.20 to 455.06 Ma, or 7.86 Myr."
+    },
+    {
+      "kind": "number_mismatch",
+      "severity": "imprecision",
+      "confidence": "high",
+      "passage_a": {
+        "file": "studies/f3/manuscript/claims.csv",
+        "line": 28,
+        "quote": "the steady-rate limit stays within about 1 Myr of it on the other occurrence inventories and with the Bathurst Ludfordian anchor"
+      },
+      "passage_b": {
+        "file": "studies/f3/manuscript/text/supplement.md",
+        "line": 1243,
+        "quote": "on the reviewed inventory with the oldest find at 425.0 Ma, [427.17]{.C27 .V405} Ma"
+      },
+      "verdict": "The supplement and the ledger’s numerical values are right. The ledger’s one-million-year summary applies to the four inventories with the 426.7 Ma anchor.",
+      "evidence": "Inventory_symmetry_stage2_task4.csv gives 428.84 Ma for the primary reviewed case and 427.17 Ma with the Bathurst anchor, a difference of 1.67 Myr. The corresponding restored reviewed case gives 426.46 Ma."
+    },
+    {
+      "kind": "contradiction",
+      "severity": "imprecision",
+      "confidence": "high",
+      "passage_a": {
+        "file": "studies/f3/manuscript/text/supplement.md",
+        "line": 859,
+        "quote": "The frontier (S5.4) gives the ratio of later to earlier finding rate"
+      },
+      "passage_b": {
+        "file": "studies/f3/manuscript/text/supplement.md",
+        "line": 760,
+        "quote": "earlier/later recording intensity at which each candidate lineage age lies on the conservative 95% bound"
+      },
+      "verdict": "Table S9b gives the orientation of the reported frontier correctly. S5.8 compares the outside measures with its reciprocal.",
+      "evidence": "At 444 Ma with 48 finds and zero delay, Table S9b reports 0.124. Results (e) reports the same threshold as about eight times less often."
+    },
+    {
+      "kind": "contradiction",
+      "severity": "imprecision",
+      "confidence": "high",
+      "passage_a": {
+        "file": "studies/f3/manuscript/text/supplement.md",
+        "line": 703,
+        "quote": "Changes age support?"
+      },
+      "passage_b": {
+        "file": "studies/f3/models/loop3/out/suppression_sensitivity.csv",
+        "line": 1,
+        "quote": "modified_segment_overlaps_age_support"
+      },
+      "verdict": "The CSV field describes what Table S9’s Boolean records. It flags overlap between the selected segment and the fossil age support.",
+      "evidence": "Table S9 marks the 419.62 Ma case True even at a multiplier of 1, where the history, 428.84 Ma bound and midpoint p-value equal the baseline."
+    },
+    {
+      "kind": "crossref",
+      "severity": "crossref",
+      "confidence": "high",
+      "passage_a": {
+        "file": "studies/f3/manuscript/text/main.md",
+        "line": 109,
+        "quote": "The basin lay near the Ordovician South Pole, within the area\nof Hirnantian glaciation"
+      },
+      "passage_b": {
+        "file": "studies/f3/manuscript/text/supplement_figures.md",
+        "line": 3,
+        "quote": "Spore records by well and age from the Murzuq Basin, Libya"
+      },
+      "verdict": "Figure S2 does not illustrate the palaeogeography cited at the end of the Methods sentence.",
+      "evidence": "Both panels of Figure S2 concern the borehole samples or supply limits. Neither displays the palaeopole or the glaciation extent."
+    },
+    {
+      "kind": "crossref",
+      "severity": "crossref",
+      "confidence": "high",
+      "passage_a": {
+        "file": "studies/f3/manuscript/text/supplement.md",
+        "line": 232,
+        "quote": "Fig. S2 plots every chart-coded cutting by well and depth with its full stage enclosure."
+      },
+      "passage_b": {
+        "file": "studies/f3/manuscript/text/supplement_figures.md",
+        "line": 3,
+        "quote": "Age ranges of chart-coded samples of drill cuttings (rock chips) from five wells."
+      },
+      "verdict": "The caption describes Figure S2a correctly. The panel groups samples by well and plots their age supports.",
+      "evidence": "The panel has an age axis and evenly spaced sample rows. The plotting code in figures_main.py lines 202–208 sorts the rows within wells by age support. It does not use depth."
+    },
+    {
+      "kind": "crossref",
+      "severity": "crossref",
+      "confidence": "high",
+      "passage_a": {
+        "file": "studies/f3/manuscript/text/main.md",
+        "line": 324,
+        "quote": "that contrast can account for the gap\nbefore the oldest find with zero delay (figure 3*b*"
+      },
+      "passage_b": {
+        "file": "studies/f3/manuscript/text/figures.md",
+        "line": 5,
+        "quote": "Thin lines show three outside measures"
+      },
+      "verdict": "Figure 3b shows the single measures. The rock × spore calculation for all four counts is in S5.10, which the article also cites.",
+      "evidence": "The rendered panel has three individual proxy curves and no product curve. The four-count calculation is in combined_rulers.csv and C59."
+    },
+    {
+      "kind": "crossref",
+      "severity": "crossref",
+      "confidence": "high",
+      "passage_a": {
+        "file": "studies/f3/manuscript/text/supplement.md",
+        "line": 980,
+        "quote": "starting the interval at the Ludfordian, gives the same verdicts for rock, the spore share and\ntheir product (Table S16)."
+      },
+      "passage_b": {
+        "file": "studies/f3/manuscript/text/supplement.md",
+        "line": 995,
+        "quote": "Expected finds dated wholly within the Gorstian to Pridoli (419.62–426.7 Ma)"
+      },
+      "verdict": "Table S16 supports the Gorstian-onward comparison. It does not show the Ludfordian-onward rerun.",
+      "evidence": "The corresponding Ludfordian–Pridoli rows are in combined_rulers_placement.csv and support the stated verdicts."
+    },
+    {
+      "kind": "crossref",
+      "severity": "crossref",
+      "confidence": "high",
+      "passage_a": {
+        "file": "studies/f3/manuscript/text/supplement.md",
+        "line": 1079,
+        "quote": "equal to the zero-delay requirement of Results (e) for land-plant bodies at 454.41 Ma"
+      },
+      "passage_b": {
+        "file": "studies/f3/manuscript/text/main.md",
+        "line": 284,
+        "quote": "**(e) Older vascular-plant dates fit if early fossils were found less often, or recognisable bodies\nappeared later.**"
+      },
+      "verdict": "The arithmetic is right, but Results (e) does not report the 454.41 Ma land-plant body calculation.",
+      "evidence": "Methods (g) supplies the equation used for the comparison. The 13.39-fold land-plant result is in S5.11 and groups_inside.csv under C62."
+    },
+    {
+      "kind": "crossref",
+      "severity": "crossref",
+      "confidence": "high",
+      "passage_a": {
+        "file": "studies/f3/manuscript/text/for-agents.md",
+        "line": 298,
+        "quote": "It is quoted in Results (g)\n  and the Figure 2 legend."
+      },
+      "passage_b": {
+        "file": "studies/f3/manuscript/text/main.md",
+        "line": 285,
+        "quote": "halving the finding rate before the oldest find moves the limit\nto [431.0]{.C53 .V108} Ma"
+      },
+      "verdict": "The halving result is in Results (e). The Figure 2 pointer is correct.",
+      "evidence": "C53 identifies the same retrospective endpoint as 430.9800119 Ma before rounding."
+    },
+    {
+      "kind": "stale_wording",
+      "severity": "stale",
+      "confidence": "high",
+      "passage_a": {
+        "file": "studies/f3/manuscript/figures_main.py",
+        "line": 351,
+        "quote": "(b) Reductions that would fit, and outside rulers"
+      },
+      "passage_b": {
+        "file": "studies/f3/manuscript/text/figures.md",
+        "line": 5,
+        "quote": "Thin lines show three outside measures"
+      },
+      "verdict": "The caption uses the current term. The rendered Figure 3b title still says “outside rulers”.",
+      "evidence": "The wording appears in the committed fig3_requirements.png and the title string that generates it."
+    },
+    {
+      "kind": "stale_wording",
+      "severity": "stale",
+      "confidence": "high",
+      "passage_a": {
+        "file": "studies/f3/manuscript/text/for-agents.md",
+        "line": 23,
+        "quote": "rendering of this study (C01–C53)."
+      },
+      "passage_b": {
+        "file": "studies/f3/manuscript/claims.csv",
+        "line": 64,
+        "quote": "C63,supported"
+      },
+      "verdict": "The ledger now runs through C63. The guide’s read-order section retains the earlier endpoint.",
+      "evidence": "The guide itself cites C59–C63 in its inventory discussion."
+    },
+    {
+      "kind": "stale_wording",
+      "severity": "stale",
+      "confidence": "high",
+      "passage_a": {
+        "file": "studies/f3/manuscript/text/for-agents.md",
+        "line": 28,
+        "quote": "(a)–(h) with finding-led headings"
+      },
+      "passage_b": {
+        "file": "studies/f3/manuscript/text/main.md",
+        "line": 360,
+        "quote": "**(i) Branched plants give an older endpoint limit, and isolated early finds set conditional gap\nbenchmarks.**"
+      },
+      "verdict": "The article has nine Results subsections. The guide stops one subsection early.",
+      "evidence": "Results (i) contains the branched-plant comparison and the isolated-find benchmarks."
+    },
+    {
+      "kind": "stale_wording",
+      "severity": "stale",
+      "confidence": "high",
+      "passage_a": {
+        "file": "studies/f3/manuscript/text/for-agents.md",
+        "line": 158,
+        "quote": "for the four main figures"
+      },
+      "passage_b": {
+        "file": "studies/f3/manuscript/text/for-agents.md",
+        "line": 192,
+        "quote": "The main figures are `fig1_dispute`, `fig2_bound` and `fig3_requirements`"
+      },
+      "verdict": "The figure-numbering note is current. The provenance map retains the former count.",
+      "evidence": "Figures.md contains three main captions. The Murzuq figure is Figure S2."
+    }
+  ]
+}

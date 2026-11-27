@@ -112,7 +112,7 @@ def main():
             rows.append([r["baseline"].replace("pbdb_all", "PBDB density").replace("flat", "constant"), r["break_ma"],
                          r["older_multiplier"], r["modified_segment_overlaps_age_support"],
                          fmt(r), f"{float(r['midpoint_nominal_shape_p']):.3g}"])
-    table("suppression", ["Baseline", "Break (Ma)", "Older multiplier", "Changes age support?",
+    table("suppression", ["Baseline", "Break (Ma)", "Older multiplier", "Segment overlaps age support?",
                                       "Older bound (Ma)", "Midpoint shape p"], rows)
 
     rows = []

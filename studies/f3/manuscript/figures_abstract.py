@@ -29,7 +29,7 @@ FRONTIER = ROOT / "studies/f3/models/loop3/out/frontier.csv"
 RESULTS = ROOT / "studies/f3/models/out/m2_results.csv"
 DEPENDENCE = ROOT / "studies/f3/models/loop3/out/stage2_murzuq/dependence_sensitivity.csv"
 INPUTS = [FRONTIER, RESULTS, DEPENDENCE, Path(__file__)]
-HEADLINE = ("Older dates for living land plants fit the fossil record if early plants were found\n"
+HEADLINE = ("Older dates for living vascular plants fit the fossil record if early plants were found\n"
             "several times less often, or recognisable features evolved later.")
 
 INK, MUTED = "#2b2b2a", "#6b6a64"
